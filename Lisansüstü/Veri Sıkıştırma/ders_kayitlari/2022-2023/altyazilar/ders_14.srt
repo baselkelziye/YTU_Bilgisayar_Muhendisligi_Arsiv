@@ -1,0 +1,1655 @@
+1
+00:00:34,707 --> 00:00:36,027
+Merhaba arkadaşlar.
+
+2
+00:00:37,567 --> 00:00:38,527
+Merhaba hocam.
+
+3
+00:00:39,347 --> 00:00:50,307
+Geciktim çünkü Zoom'a bir türlü giremedim. İnterneti kontrol ettim, bir problem mi var diye yoktu. Sonra keyfi yerine geldi ve bağlandım.
+
+4
+00:00:51,807 --> 00:00:55,167
+Şimdi bu hafta son attığımız gençler bildiğiniz gibi.
+
+5
+00:00:58,167 --> 00:01:01,167
+Geriden gruba yazacağım ama...
+
+6
+00:01:01,811 --> 00:01:14,811
+Ea projesini önceden bitirenler varsa önümüzdeki bir haftada işte kaç kişi olursunuz, 2-3 bilemiyorum. Son günlerine doğru bakabilirim.
+
+7
+00:01:15,751 --> 00:01:28,751
+Ki yani kendi adıma o gün bu kadar kişiye nasıl bakacağım bilmiyorum. Çünkü son günü hemen hemen finalleri ilan etmek için de, girmek için de benim de zamana ihtiyacım oluyor.
+
+8
+00:01:29,331 --> 00:01:38,871
+Neyse o, sizlerle haberleşebiliriz. Şimdi bugün [öğrenci] vardı, semineri vermeyecekmiş, dersi bırakmış olabilir.
+
+9
+00:01:38,871 --> 00:01:55,551
+[kişisel bilgi]
+
+10
+00:01:56,275 --> 00:02:11,376
+Sonra [öğrenci] var mı? Şu an yok. Bir de ilk hafta [öğrenci] vardı. [öğrenci] sonra [öğrenci] seni alırım. Bakalım diğerlerinden de gelen olacak mı? Evet [öğrenci].
+
+11
+00:02:12,735 --> 00:02:13,896
+Yansıtayım hocam.
+
+12
+00:02:13,896 --> 00:02:18,396
+Tamam. Önce ekran paylaş. Bir yüzünü göreyim, hatırlayayım.
+
+13
+00:02:38,355 --> 00:02:38,855
+Ne oldu?
+
+14
+00:02:40,855 --> 00:02:49,295
+Hocam, bir saniye. İlk ben olacağımı düşünmediğim için hazırda değil de hemen açıyorum.
+
+15
+00:02:49,635 --> 00:02:53,355
+Vallahi ben de ilk seni düşünmüyordum. Başka isimler vardı ama.
+
+16
+00:03:15,828 --> 00:03:26,327
+Geldi değil mi? Evet, bir de tam ekran yaparsan sevinirim. Hemen videomu da başlatayım.
+
+17
+00:03:26,327 --> 00:03:30,827
+Vaporunu yükledin mi? Yükledim hocam. Tamamdır.
+
+18
+00:03:30,827 --> 00:03:35,827
+Sunum modunu alayım.
+
+19
+00:03:41,171 --> 00:03:55,111
+[kişisel bilgi]
+
+20
+00:03:55,520 --> 00:04:17,580
+Çalışması hakkında bilgiler veriyor olacağım. Samir Şevalva ve Gazi Al-Naymat tarafından kaleme alınmış bu makale. Türkçe olarak ardışık veri gruplamasına dayalı nesnenin interneti veri sıkıştırması diye adlandırabiliriz.
+
+21
+00:04:18,932 --> 00:04:29,232
+Öncelikle nesnenin interneti hepimizin de bildiği gibi ekonomi ve toplumun dijitalleşmesi açısından önemi gittikçe artmakta olan bir teknoloji.
+
+22
+00:04:29,232 --> 00:04:44,732
+Akıllı şehirler, sağlık, otomotiv vs. bütün endüstrilerde yer bulmaya başlayan ve yerini de gittikçe arttıran, kullanım alanı gittikçe artan bir teknoloji.
+
+23
+00:04:46,516 --> 00:04:55,716
+IoT büyük miktarda veri üretir, bu veriler işlenir, analiz edilir ve karar destek sistemlerinde kullanılır diye özetleyebiliriz.
+
+24
+00:04:59,355 --> 00:05:04,156
+Projemizin konusunun çıkış noktası IoT sensörlerindeki enerji tüketimi.
+
+25
+00:05:05,436 --> 00:05:12,136
+Nesnelerin internetinin sinir uçları olarak sensörleri tanımlarsak yanlış yapmış olmayız sanırım.
+
+26
+00:05:12,660 --> 00:05:31,840
+Sensörlerin çoğu pil ile çalıştığından dolayı ve biten pillerin değiştirilmesi hem maliyet hem de operasyon açısından zorluklar içerdiğini düşünecek olursak, enerjinin tasarrufu konusu sensörler açısından çok önemli bir konu.
+
+27
+00:05:32,307 --> 00:05:46,627
+Baktığımızda sensör enerji tüketimlerinin ortalama %80'i topladıkları verilerin baz istasyonlarına verilerin gönderilmesi, sunuculara gönderilmesi sırasında harcandığı görülmüş.
+
+28
+00:05:47,907 --> 00:05:56,587
+Bu nedenle sensörlerdeki veri sıkıştırılması enerji tasarrufu açısından çok önemli bir konu olmaktadır.
+
+29
+00:05:58,803 --> 00:06:12,543
+Sensörlerin veri sıkıştırma yöntemlerinde mevcut kullanılan, yaygın kullanılan üç taneye kısaca bakacak olursak, kompres sensing, sensör verilerini daha az ölçümde tepsil ederek verileri sıkıştıran,
+
+30
+00:06:12,896 --> 00:06:28,635
+Ünlü bir yöntem. Bu yöntemin en büyük sıkıntısı sıkıştırma algoritmasının karmaşık olmasından dolayı büyük bellik miktarı ve büyük enerji tüketimine yol açmaktadır.
+
+31
+00:06:29,459 --> 00:06:52,459
+Standart RBM bir derin öğrenme bazlı bir yöntem. Burada derin öğrenme eğitimleri sunucu tarafında yapılır ve basit bir ağ ile az parametre sayısı kullanarak verilerini sıkıştırmak üzere kurgulanmış bir yöntemdir.
+
+32
+00:06:57,459 --> 00:07:25,459
+Vesaire gibi konular sunucu tarafında halledildiği için sensörlerin sıkıştırmak için harcadığı verimlikte enerji ve kapasite çok da yüksek olmamaktadır. Bir de Stacked RBM var. Burada da derin eğri öğrenme teorisini biraz daha işin içine katarak, birden fazla katmanlar oluşturarak sıkıştırmayı daha iyi bilir.
+
+33
+00:07:25,459 --> 00:07:34,939
+Hale getiren bir yöntem. Birazdan karşılaştırmaları bu yöntemlerle yapacağımız için çok kısa değinmiş olduk.
+
+34
+00:07:37,039 --> 00:07:49,439
+Gelelim makalenin konusuna. Makalede yeni bir yöntem öneriliyor. Bu yöntemde sıkıştırma oranı sabitlenmez, veriye göre hesaplanır.
+
+35
+00:07:49,839 --> 00:08:06,299
+Basit işlemler kullanarak sıkıştırma yapılır. Basit işlemler olduğundan dolayı da kapasite daha az kullanılır ve enerji daha az tüketilir sıkıştırma sırasında diyebiliriz.
+
+36
+00:08:08,276 --> 00:08:29,375
+Peki, neye dayanıyor bu yöntem? Aslında sensör verilerine dönük bir sıkıştırma yöntemi. Çünkü sensör verileri çoğunlukla artışık veriler üretiyor ve artışık veriler arasındaki farklar çoğu zaman ihmal edilebilir seviyede oluyor.
+
+37
+00:08:29,375 --> 00:08:36,276
+Bu kadar farkın iletilmesinin sunucu ve aslında veri yönetilmesi.
+
+38
+00:08:36,275 --> 00:08:50,275
+Önötüme açısından çok bir anlamı olmadığı durumlarda bu veriler gruplanarak tek bir veri gibi gönderiliyor. Bu şekilde veri sıkıştırılması...
+
+39
+00:08:51,187 --> 00:09:04,187
+Sağlanmış oluyor. Peki, ihmal edilebilecek miktarı nasıl anlıyor diye soracak olursak, burada da bir aslında...
+
+40
+00:09:04,303 --> 00:09:25,503
+Elimizdeki sunucu üzerindeki bir eğitim verisi üzerinden bir değer hesaplayarak, burada da karelerin farkı şeklinde bir yöntem uygulayarak ihmal edilebilecek maksimum seviye, yani RMSST buradan hesaplanıyor.
+
+41
+00:09:27,572 --> 00:09:45,231
+Az önce söylediğim gibi elimizdeki eğitim verilerinin ardışık farklarının karelerinin kare kökü şeklinde alınıp buradan bir RMSSD değeri elde ediliyor.
+
+42
+00:09:55,572 --> 00:10:11,432
+mevcut veri RMSSD kadar büyükse, daha doğrusu ondan daha küçük bir fark var ise grupla şeklinde ve grupladığın sayıları da...
+
+43
+00:10:13,908 --> 00:10:25,888
+Sayı parametresinde tutarak gönder. Eğer daha büyük bir fark ise bunu yeni bir veri olarak al şeklinde basit bir algoritması var.
+
+44
+00:10:27,827 --> 00:10:46,527
+Bu algoritmada sıkıştırma için kullanılan algoritma elimizdeki verileri tek tek alıp, öncekiyle farkına bakıp, bu fark küçükse grupla yoksa yeni bir kayıt olarak kaydet diye özetleyebiliriz.
+
+45
+00:10:48,179 --> 00:10:59,059
+Sıkıştırılmış veri sunucu tarafından nasıl açılıyor diye baktığımızda aslında bir tane veri geliyor ve o veriden kaç tane gruplandığı geliyor.
+
+46
+00:10:59,859 --> 00:11:15,039
+Gruplandığı sayı kadar veriler tekrar ettiriliyor ve bu şekilde bir aslında kayıplı, ona da çok değinmemişim, kayıplı bir sıkıştırma algoritması sağlıyoruz.
+
+47
+00:11:16,179 --> 00:11:21,439
+Kaybın ise oranının küçük olacağı burada öngörülüyor.
+
+48
+00:11:26,163 --> 00:11:44,403
+Makalenin uygulaması, Interlab Wireless Sensor Network içerisindeki bir veri ile yapılıyor. Bu verinin içerisinde sıcaklık, nem, ışık, voltaj gibi veriler bulunmakta. Burada örnek olarak sıcaklık verileri alınmış.
+
+49
+00:11:44,403 --> 00:11:53,144
+Ve yapılan sıkıştırma üzerinden 3 tane kriter belirlenmiş. Bunlardan birisi compression ratio.
+
+50
+00:11:54,163 --> 00:12:14,464
+Compression Ratio aslında veri kaçta birine düşmüş diye özetleyebiliriz. Percentage of Rootman Mean Square ise çıktı verisiyle, orijinal veri arasındaki farkların yani kayıpların hesaplandığı bir yöntem.
+
+51
+00:12:22,163 --> 00:12:32,144
+Olmadığına dair bir çıktı. Quality Score ise Compression Rate'yonun PRD'ye oranı olarak hesaplanıyor.
+
+52
+00:12:34,676 --> 00:13:01,476
+Yapılan deneme sonucunda aslında diğer karşılaştırılan yöntemlerde CR değerleri sabit 10'da tutuluyor. Bizim algoritmamızda ise 11'e yakın bir değer elde edilmiş. Bu da oran olarak diğerlerinden daha iyi bir oran olarak söyleyebiliriz.
+
+53
+00:13:02,676 --> 00:13:23,796
+Verdiye baktığımızda bizim algoritmamızın oran olarak yine %2 civarında bir fark ile verileri ürettiği, daha doğrusu bu kadar bir kayıpla sıkıştırma ve açma sağladığı görülmüş.
+
+54
+00:13:23,796 --> 00:13:29,496
+İkisini oranladığımızda ise çok daha büyük bir fark görülüyor.
+
+55
+00:13:30,676 --> 00:13:32,436
+Yöntemleri nazaran.
+
+56
+00:13:35,155 --> 00:13:52,135
+Peki, makalenin çıkış noktası enerji tüketimini hesapladığımızda nasıl bir avantaj olduğuna bakacak olursak, yine bu rakamlar enerji tüketimine dair belli formüllerle hesaplanmış.
+
+57
+00:13:52,135 --> 00:14:03,095
+Burada alfa U veri gönderme, alfa D veri alma, beta ise bu işlem yapılır.
+
+58
+00:14:03,155 --> 00:14:13,155
+Harcanan sabit enerji diye düşünebiliriz. Beta değişen bir oran değil. Bizim veri gönderme üzerine...
+
+59
+00:14:15,508 --> 00:14:35,967
+Bu örneğe yoğunlaştığımız için oralara odaklanıyoruz. Burada Wi-Fi 3G ve LTE'de deneme yapılan orijinal veri ile gönderdiğimizde ne kadar veri harcandığını, hangi aşamada ne kadar veri harcandığını bakabiliriz yukarıdaki tablodan.
+
+60
+00:14:43,508 --> 00:14:53,508
+Enerji tüketimi farkını görebiliriz. Burada Wi-Fi'de ciddi bir aslında üç katına varan bir...
+
+61
+00:14:55,475 --> 00:15:16,895
+Daha doğrusu üçte birini düşüren bir yapı görüyoruz. Trici ve LTE'de ise beta değerleri, yani her halükarda harcanacak veri değeri daha büyük olduğundan dolayı oran olarak biraz daha düşük oranda tasarruf görüyoruz.
+
+62
+00:15:16,895 --> 00:15:22,135
+Ama yine de tasarruf edildiğini görüyoruz önerilen yönteme göre.
+
+63
+00:15:23,604 --> 00:15:27,124
+Sunumum bu kadar sorularınız varsa.
+
+64
+00:15:27,124 --> 00:15:38,264
+Çok özür dilerim. Ben bir ara sizlerin sitenizde bakıyordum da kaçırdın mı? Ne tür bir yöntem kullanılıyor? Bundan bahsettin mi?
+
+65
+00:15:42,063 --> 00:15:44,704
+Şuradaki algoritmalardan bahsettim.
+
+66
+00:15:44,704 --> 00:15:49,264
+Evet ama Root Min Square dedin. Bu hani şey algoritması.
+
+67
+00:15:49,971 --> 00:15:52,191
+Başarıyı ölçüyor.
+
+68
+00:15:53,471 --> 00:16:05,551
+Şöyle hocam, RMSSD burası. RMSSD'nin hesaplanması. RMSSD ihmal edilebilecek veri boyutunu aslında bulmak üzere.
+
+69
+00:16:05,551 --> 00:16:09,491
+Yani ardışık veriler... Buyurun hocam.
+
+70
+00:16:10,111 --> 00:16:15,231
+Tamam, onu anladım da veriyi azalttığın algoritma ne?
+
+71
+00:16:16,211 --> 00:16:19,291
+Senin değil de yazarların.
+
+72
+00:16:20,331 --> 00:16:26,971
+Hocam şöyle, şimdi elimizde diyelim ki ardışık 100 tane veri var.
+
+73
+00:16:27,651 --> 00:16:29,671
+Bu 100 tane de olduğunu düşünüyorum.
+
+74
+00:16:29,671 --> 00:16:37,671
+İlk 30 tanesi bu az önce hesapladığımız RMSSD'den daha düşük farklarla değişiyor.
+
+75
+00:16:40,211 --> 00:16:58,192
+Birisi 23,005 iken öbürü 23,004. Bakıyorum RMSSD'den daha küçük bir fark var. O zaman ben en son veriyi alıyorum sadece. Şurada da biraz şeyine bakabiliriz.
+
+76
+00:16:58,192 --> 00:17:03,451
+Anladım onu o zaman. Peki orijinalini açarken?
+
+77
+00:17:04,147 --> 00:17:07,307
+O zaman ben orijinaline ulaşamayacağım.
+
+78
+00:17:07,647 --> 00:17:18,087
+Evet, kayıplı bir sıkıştırma yöntemi bundan dolayı. Ben en son gelen veri üzerinden, şurada da sıkıştırmış veriyi aşma algoritmasını görebiliriz.
+
+79
+00:17:19,288 --> 00:17:31,807
+Bir tane elimde veri var. Az önceki örnekten gidecek olursak, ilk 30 tanesi birbirine çok yakındı ve ben o 30 taneyi bir tane veri olarak gönderdim. En son veriyi gönderdim ve yanına da 30 tanedir bu dedim.
+
+80
+00:17:32,147 --> 00:17:37,647
+Açarken de aynı veriyi 30 kere artı olarak diziyorum.
+
+81
+00:17:37,647 --> 00:17:59,407
+Tamam, şimdi oldu. Çünkü ayet verileri ben 50 tane veriyi diyelim ki ona düşürdüm. Tamam kayıplı ama yine elimde 50 tane veri olması lazım. Aynı görüntü sıkıştırmadaki renklerin değişik. Tamam, şimdik oldu. Demek ki tam o sıra şeye bakıyordum. Orası hepten gitmiş.
+
+82
+00:17:59,955 --> 00:18:09,096
+Peki sorusu olan var mı arkadaşınıza? Kimse sormaz. Senin tez konum neydi [öğrenci]?
+
+83
+00:18:10,675 --> 00:18:11,795
+[kişisel bilgi]
+
+84
+00:18:12,015 --> 00:18:14,875
+[kişisel bilgi]
+
+85
+00:18:14,975 --> 00:18:18,735
+[kişisel bilgi]
+
+86
+00:18:18,875 --> 00:18:19,596
+Başladın mı?
+
+87
+00:18:20,180 --> 00:18:25,900
+Hocam, projeyi bitirdim aslında ama bitirdiğim halini size göstermek istemiştim.
+
+88
+00:18:25,900 --> 00:18:27,460
+O sendin.
+
+89
+00:18:29,120 --> 00:18:31,200
+Ama raporu daha yazmadım.
+
+90
+00:18:32,100 --> 00:18:40,240
+Bitirdin de aptayı bana gösterirsin o zaman. Oldu ya bir eksik olur. O zaman ben şunu düzeltirsin derim.
+
+91
+00:18:40,580 --> 00:18:48,180
+Evet, tam onun için önden göstermek istiyorum. Raporu da daha hazırlamadım. Projeyi göstereyim, üzerine raporu hazırlayayım.
+
+92
+00:18:48,180 --> 00:19:10,640
+[kişisel bilgi]
+
+93
+00:19:11,796 --> 00:19:30,536
+Bunlar neyin peşindeler bu arkadaşlar bilmiyorum ama. [öğrenci]'e? Yok. [öğrenci] [öğrenci]? Yok. Peki, [öğrenci]?
+
+94
+00:19:30,536 --> 00:19:37,176
+Buradayım hocam. Tamam. Başlayayım mı?
+
+95
+00:19:38,867 --> 00:19:46,627
+Hayır, önce seni göreceğim. Tipik beğenirsem başla diyeceğim. Evet.
+
+96
+00:19:46,968 --> 00:19:47,647
+Merhaba hocam.
+
+97
+00:19:47,807 --> 00:19:49,268
+[kişisel bilgi]
+
+98
+00:19:49,667 --> 00:19:50,587
+[kişisel bilgi]
+
+99
+00:19:51,548 --> 00:19:54,248
+[kişisel bilgi]
+
+100
+00:19:55,307 --> 00:19:55,567
+Evet.
+
+101
+00:20:00,000 --> 00:20:05,920
+Seninkisi şey, daha böyle relax bir konu. İlk kağıttaki konularımıza benziyor.
+
+102
+00:20:06,279 --> 00:20:06,879
+Evet hocam.
+
+103
+00:20:07,680 --> 00:20:08,480
+Tamam.
+
+104
+00:20:09,259 --> 00:20:11,740
+Öyle olduğu için zaten baya sorumlu olacağım.
+
+105
+00:20:11,740 --> 00:20:13,299
+Sen konuyu hazırladın mı?
+
+106
+00:20:14,240 --> 00:20:16,799
+Yok hocam, raporu daha yüklemedim, hazırlamadım.
+
+107
+00:20:17,839 --> 00:20:19,039
+Ne zaman hazırlayacağım?
+
+108
+00:20:20,940 --> 00:20:27,180
+Ayın ikisine kadar herhalde zaman vardı şeyde. Bu akşam şey yaparım, ben yüklerim.
+
+109
+00:20:27,667 --> 00:20:54,647
+[kişisel bilgi]
+
+110
+00:20:55,604 --> 00:21:08,824
+Makalenin konusu compression of tech data compression. Pardon, yanlış mı yazmışım? Tech data sıkıştırma şeylerini mukayese ediyorum hocam.
+
+111
+00:21:08,824 --> 00:21:20,443
+Tamam, doğru. Okuyamadım o yüzden. Gerçi senin ki sonunda 100 interi küçük hafta şey yapmışsın, puntukta küçük. Evet, bu dört algoritmayı karşılaştırıyor.
+
+112
+00:21:20,948 --> 00:21:32,028
+Makale biraz hocam dediğiniz gibi relax bir makaleydi. İçerik olarak çok dolu değildi. Ben de doldurmak için elimden geleni yaptım.
+
+113
+00:21:32,548 --> 00:21:44,168
+Doldurmak için bu kadar çok emek harcamınıza gerek yok. Hocam ben bu makaleyi değiştireceğim. Hatta şunu da alabilirim uygun mudur diye de sorabilirsiniz. Hiçbir şey must değil.
+
+114
+00:21:46,516 --> 00:21:51,756
+Ama artık çok geç. Artık ne yaptıysam bir dinleyelim bakalım. Hatırlarız sen de.
+
+115
+00:21:52,416 --> 00:21:52,716
+Tamam.
+
+116
+00:21:53,375 --> 00:21:56,135
+Şu Elyas Kod'dan bahsetmedim dersse ben.
+
+117
+00:21:57,556 --> 00:21:58,296
+Aynen hocam.
+
+118
+00:21:59,796 --> 00:22:01,556
+Goldbach'dan.
+
+119
+00:22:02,476 --> 00:22:06,416
+Bu ikisi yeni teknikler gibi şey yapmışlar.
+
+120
+00:22:06,596 --> 00:22:07,776
+Yok, Elyas var.
+
+121
+00:22:08,456 --> 00:22:10,776
+Elyas Gamma var. İşte punctured olanı.
+
+122
+00:22:11,476 --> 00:22:15,056
+Bu Goldbach, inandım hiç duymadım yani.
+
+123
+00:22:16,676 --> 00:22:33,956
+Şöyle, bildiğiniz üzere veri sıkıştırma, storage space'i ve exchange time'ları internetten veri göndermede ki zamanı gönderecek veriyi azaltmak için sürekli üzerinde çalışılan bir alan.
+
+124
+00:22:35,236 --> 00:22:37,496
+Farklı algoritmalar çıkıyor sürekli.
+
+125
+00:22:38,067 --> 00:23:05,647
+Gördüğünüz gibi 1990'dan 2020'ye kadar internet kullanan insanların sayısı nasıl artmış? 2019'da dünyanın yarısından fazlası internete bir kere de olsa erişmiş olarak bir veri var burada. Böyle olunca da internetteki verinin sıkıştırılması önem arz ediyor. Ne kadar az veri gönderilirse o kadar trafik daha rahatlattırılıyor bu kadar fazla insan interneti kullanırken.
+
+126
+00:23:06,836 --> 00:23:19,436
+Şimdi bu makalede dört farklı algoritmanın sıkıştırma algoritmasından analize yapılmış. Bunlar Run-Length Encoding, Aritmatik Encoding, Punctured Alliance Code ve Goldback Code.
+
+127
+00:23:19,892 --> 00:23:28,531
+Bunların analizleri yapılmış. Ardından bu sıkıştırma algoritmaları karşılaştıralım. Hangisinin daha iyi olduğunu bulmak için.
+
+128
+00:23:29,531 --> 00:23:37,932
+Şu şekilde üç tane, bir tanesi 40 bit, bir tanesi 80 bit, bir tanesi de 120 bitten oluşan veriyi bu algoritmalarla sıkıştırmışlar.
+
+129
+00:23:38,071 --> 00:23:39,276
+Şimdi bu tabloyu...
+
+130
+00:23:39,571 --> 00:23:48,291
+Dolduracağız bunlarla sıkıştırarak ne kadar veriye düştüğünü göreceğiz ama ondan önce hemen bir her algoritmanın üstünden kısaca geçmek istiyorum.
+
+131
+00:23:49,611 --> 00:24:05,431
+Bildiğiniz üzere run link encoding her değeri bir run'a dönüştürüyor diyebiliriz. Run counter, run value'dan oluşan bir ikiliye dönüştürüyor verileri. Şu örnek üzerinden gidelim direkt.
+
+132
+00:24:06,259 --> 00:24:25,480
+Herkes biliyor zaten. Gördüğünüz gibi 9 farklı byte'ta gösterilen veriyi 9 kere bu byte diye göstererek veriyi sıkıştırabiliyoruz. Burada sıkıştırılmamış hali yaklaşık işte 81. Her bir veri için 1 byte dersek 81 byte harcıyorken sıkıştırılmış hali 44 byte harcıyor.
+
+133
+00:24:26,140 --> 00:24:29,940
+Artmetik Encoding'de bundan baya farklı burada.
+
+134
+00:24:31,188 --> 00:24:56,908
+Fır matematik giriyor. Sıfırla bir aralığına. Öncelikle verilen değerin içindeki karakterlerin probability'lerini buluyoruz. Şuradan şey yapalım. Şu değeri sıkıştırmak isteyelim arithmetic and coding ile. Önce probability'leri buluyoruz. Ardından bunları sıfırla bir arasındaki bir düzlemde her birini oransal bir şekilde paylaştırıyoruz.
+
+135
+00:24:57,652 --> 00:25:20,692
+Ardından ilk baştaki değeri alıyoruz. Bunu 0 ile 2 arasını genişleterek tekrar bu probabilitelere göre aynı oranda bölüyoruz. Ardından aynı şekilde E'ye yapıyoruz. E'nin aralığını alıp genişletip oranlara bölüp bir sonraki.
+
+136
+00:25:21,523 --> 00:25:40,364
+Karaktere geçiyoruz. Bu şekilde y'yi, ünlem işaretini yapınca bu sayı elimizde oluyor. Bu sayı ve bu değerler ile bu mesaj decrypt edilebiliyor buradan geri takip edilerek. Bu sayı bu aralık. Bunun sıkıştırılmış hali oluyor.
+
+137
+00:25:48,915 --> 00:26:06,155
+Birazcık değiştirilmiş hali. Çok verimli olduğunu da söylenemez. Şöyle bir karşılaştırma var. Eğer 127'den fazla value'muz varsa ortalama sıkıştırma 3.15 bit.
+
+138
+00:26:06,155 --> 00:26:14,155
+Burayı yanlış yazmışım. 3.15'ten 3.10'a düşüyor gibi bir...
+
+139
+00:26:14,900 --> 00:26:21,980
+Sonuca varılmış bu algoritmanın asıl makalesinde.
+
+140
+00:26:22,740 --> 00:26:27,700
+Elias Gamma Coding'i biliyorsunuz, Prefix şeyini kullanan bir sıkıştırma.
+
+141
+00:26:27,700 --> 00:26:40,700
+Puntured Elias'te bundan farklı olarak her değerin binary halinin tersi yazılıyor ve prefixlerden...
+
+142
+00:26:42,195 --> 00:27:03,215
+Prefiksler kısaltılıyor bu şekilde. Gördüğünüz gibi burada bazıları daha kısa, bazıları daha uzun vs. normal alias koda göre. Bir tane de Goldback Code diye bir algoritma var. Burada Conjuncture Teoriden çıkılmış bir algoritma.
+
+143
+00:27:10,067 --> 00:27:23,427
+Even Number'lar iki tane asal sayının toplamıdır diyor. Burada şimdi şu şekilde özetleyebiliriz. Öncelikle ilk adımda bir frekans analizi yapıp her değerinin frekansını buluyoruz.
+
+144
+00:27:24,827 --> 00:27:35,407
+Hatta şuradan göstereyim. Gördüğünüz gibi şu Good Morning tekstini sağ tarafta Goldback ile sıkıştırmış oluyoruz.
+
+145
+00:27:36,243 --> 00:27:59,223
+Burada frekansa alınmış her bir karakterin. Sonra sıralanmış bu şekilde, en fazla o kullanılmış. Öncelikle bunu bir şeyle gösteriyoruz. 2'in toplamı ile gösterecek şekilde bir geriye gidebilir miyim hocam?
+
+146
+00:28:00,211 --> 00:28:15,051
+Ekip Rhyme'ım diyor musun? Ben onu ne anlıyorum biliyor musun? Ekip Rhyme anlıyorum. Ekip Rhyme nedir diyorum. Ekip Rhyme anlıyorum. Ekip Rhyme. Ekip Rhyme diyorum.
+
+147
+00:28:25,652 --> 00:28:45,612
+Burada iki prime'ını buluyoruz bunların. Sonra iki prime'ına göre code word'u oluştururken bir kuralımız var. Code word'de iki adet bir olacak, bir biti olacak ve code word hep bir bitiyle bitecek. Buna göre burada bir prefiks oluşturuyoruz. Gördüğünüz gibi hepsinde iki tane var, hepsinde birle bitiyor.
+
+148
+00:28:45,612 --> 00:28:52,612
+Peki o prime'ların ne yardımı var? Yani iki tane prime'ı ayırdım, üç ve beş.
+
+149
+00:28:53,140 --> 00:28:56,980
+Bu üç ve beş code word oluşturulurken kullanılıyor mu?
+
+150
+00:28:59,300 --> 00:29:01,000
+Şu şekilde hocam.
+
+151
+00:29:04,884 --> 00:29:06,364
+Bilmiyorum tam olarak ya.
+
+152
+00:29:07,584 --> 00:29:09,724
+Ya herkes bir baksın bakalım.
+
+153
+00:29:10,544 --> 00:29:10,904
+Tamam.
+
+154
+00:29:11,424 --> 00:29:15,204
+Şimdi en bir, birinci sırada öyle bir formül var.
+
+155
+00:29:15,404 --> 00:29:19,884
+En artı üç, biri üçle çarptım, dört ikiyle çarptım, sekiz.
+
+156
+00:29:19,964 --> 00:29:22,824
+Sekiz, iki tane prime sayıdan oluşuyor.
+
+157
+00:29:23,244 --> 00:29:24,064
+Üç ve beş.
+
+158
+00:29:24,064 --> 00:29:29,544
+Şimdi bu kod word, buradaki kod wordlerin hepsi prefiks olmak zorunda.
+
+159
+00:29:29,744 --> 00:29:31,564
+Sonu birle bitecek dedin ama.
+
+160
+00:29:32,031 --> 00:29:42,531
+Ben oraya Primes diye bir kolon koyduysam, oradaki bilgiyi bir kullanmam gerekiyor. Yoksa niye koyayım? Mutlaka bir anlamı olması lazım.
+
+161
+00:29:42,531 --> 00:29:44,631
+Yani aslında şöyle.
+
+162
+00:29:51,859 --> 00:29:53,499
+Ben de tam olarak bilmiyorum hocam.
+
+163
+00:29:53,739 --> 00:30:00,039
+Bütün bir sınıf bakalım. Öyle bir şey çıkarabilir miyiz? Nasıl bir alakası var?
+
+164
+00:30:03,635 --> 00:30:16,535
+Bit çarpı frekans ne oluyor? Her biri kaçta çarpılıyor o? Frekansı da belli. 6. O da öyle çıkıyor. Şimdi bu code word. Peki bir önceki slide'da code word'ı nasıl çıkabilir?
+
+165
+00:30:16,535 --> 00:30:19,455
+Şöyle çıkartılıyor aslında.
+
+166
+00:30:20,084 --> 00:30:38,163
+Şimdi 3 ile 5 dedik ya burada. Her birinde 2 adet 1'i olacak. Her birinde 2 adet 1 biti olacak. Ve sonuncusu hep 1 ile bitecek. Şimdi bu primeları küçükten büyüğe doğru sıralarsak 3, 5, 7, 11, 13, 17 diye giderken 3 ilk primemiz.
+
+167
+00:30:41,268 --> 00:30:50,508
+Şimdi üçün olduğu yere bir yazıyorum. Üçten sonra hangi prime geliyor? Beş geliyor. Beşin olduğu yere de bir yazıyorum. Şimdi mesela burada üç, beş, yedi ya.
+
+168
+00:30:50,528 --> 00:30:58,128
+Üç var, beş yok, sıfır, yedi var. Üç yok, sıfır, beş ve yedi var. Niye söylemiyorsun? Biliyor musun da?
+
+169
+00:31:09,268 --> 00:31:11,788
+Başka makalelerden bulup şey yaptım.
+
+170
+00:31:14,708 --> 00:31:41,228
+Ben anladım. Elimdeki primeler var arkadaşlar. 3, 5, 7, 11, 17. O bit code workleri oluştururken 3 ve 5 ilk 2 de var. 3, 5, 7. 3 var, 5 yok, 0. 7 var, 3 yok, 0. 5 ve 7 var, 1, 1. 3 yerine 1 koymuş. 5 ve 7'nin yerine 0, 11'in yerine 1.
+
+171
+00:31:42,291 --> 00:31:44,892
+Ben anladım. Peki, devam edebilirsin.
+
+172
+00:31:44,892 --> 00:31:57,331
+Evet, bu şekilde kod veriler oluşturuluyor. Şifrelendiği zaman da işte görüldüğü gibi 96'dan 41'i neredeyse yarı yarıya bir düşüş olmuş bu tekst için veri boyutunda.
+
+173
+00:31:58,132 --> 00:32:06,412
+Bu tabloyu doldurunca da zaten böyle bir değer çıkıyor. Goldback hepsinde en iyi sırada olan oluyor.
+
+174
+00:32:08,692 --> 00:32:21,412
+Burada mesela ikiye katlamış direk verinin dağılımından dolayı. Genel olarak burada Goldback kazanmış oluyor diyebiliriz aslında. Ondan sonra da Artematic Encoding geliyor.
+
+175
+00:32:21,412 --> 00:32:34,412
+Punture Delice ve Run-Rale'ye çok iyi sonuçlar çıkartamıyor bu deneylerde. Şu şekilde tablo üzerinde incelersek de yine...
+
+176
+00:32:34,451 --> 00:32:47,951
+Mavi run length and golding'in ne kadar arttığını, veriyi arttırdığını görebiliriz. Bu şekilde yine compression ratio'ları görebiliyoruz. Burada da burada da görüldüğü gibi.
+
+177
+00:32:47,951 --> 00:32:59,251
+RLE hep aşağıda, goldback daha yukarıda genelde. Son veri hariç. Sonuç olarak da...
+
+178
+00:32:59,700 --> 00:33:13,720
+İnternette bu kadar resim, video ve dosya boyutu artarken sıkıştırma algoritmaları gerçekten önemli bir yer ediniyor bu durumda.
+
+179
+00:33:13,720 --> 00:33:22,159
+Çünkü hem storici hem de internetteki trafiği azaltmak için önem arz ediyorlar.
+
+180
+00:33:27,635 --> 00:33:42,635
+Yeni metotlara göre birazcık artık eski kaldığını veya eksperimentin yani sıkıştırma olmak istenen verinin çeşidine göre seçilerek Rayleigh'i daha iyi kullanabiliriz tabii ki de daha iyi algoritmaların çıktığını söyleyebiliriz.
+
+181
+00:33:44,475 --> 00:33:44,635
+Burada...
+
+182
+00:33:44,635 --> 00:33:53,475
+Bir paraya yine gireceğim [öğrenci]. Üç tane eksperimentin vardı ya 0, 1, 2. Onların içerikleri hakkında bilgi var mı?
+
+183
+00:33:54,036 --> 00:34:06,036
+Mesela tekst mi, sayılardan mı oluşuyor? Bugün RL'nin başarısını etkileyebilir. Bir veri seti diye bir şey var mı açıklama?
+
+184
+00:34:06,036 --> 00:34:11,336
+Hocam orada, şu sadece şeyim var.
+
+185
+00:34:11,827 --> 00:34:15,827
+Ama o bir forex, data demiş. Bir şeyi anlatırken kullanıyor.
+
+186
+00:34:15,827 --> 00:34:20,207
+Yok hocam yoktu ya. Yani onları, verileri...
+
+187
+00:34:20,207 --> 00:34:27,108
+Deneysel sonuçlar diye bir bölüm var mı? Sen bir oraya insene. O tabloların konulduğu bölüme.
+
+188
+00:34:28,807 --> 00:34:35,547
+Hah dur. Şu yukarıya çık. Buralarda acaba hani eksperiment dur. Burada da eksperiment.
+
+189
+00:34:36,692 --> 00:34:38,851
+Nerede ya? Eksperimentler nerede?
+
+190
+00:34:39,471 --> 00:34:47,372
+Şurada tanımlanıyor hocam eksperimentler. Orada da ondan bahsetmiyor. Şurada işte 40 bit, 80 bit ve 120 bit olarak.
+
+191
+00:34:47,612 --> 00:34:55,792
+Ama bu bit ne yani? Teknik bitlerinin olmasıyla şeyinki aynı değildir ki.
+
+192
+00:34:55,792 --> 00:35:03,552
+Evet, onları hiç yani vermemiş bile. Şurada başka araştırmalardan bahsetmiş.
+
+193
+00:35:05,108 --> 00:35:06,568
+Onlar da çok önemli değil.
+
+194
+00:35:10,579 --> 00:35:15,659
+Ama bak, text by compression diyor. Bunun başlığı neydi?
+
+195
+00:35:18,720 --> 00:35:19,840
+Text, text.
+
+196
+00:35:19,840 --> 00:35:37,380
+Text deyince, demek ki text ama doküman text olabilir. Her nedense text processing falan deyince hep karakterlerden de oluşan bir şey olarak anlarım. Sayıya değil de.
+
+197
+00:35:38,963 --> 00:35:42,543
+Ben direkt herhangi bir string olarak düşünmüştüm ama…
+
+198
+00:35:42,543 --> 00:36:04,543
+Acaba öyle mi? Her şeye text diyebilirim bir dosyaya. Ama genelde image compression, text compression diyorlar. Bunları ayırdıklarına göre text'te evet şeyler var. O yüzden rel başarısız olabilir. Çünkü arka arkaya tekrar eden karakterlerin gelmesi…
+
+199
+00:36:04,800 --> 00:36:18,639
+Normalde evet azdır. O yüzden RL'ye orada başarısız. Ama ben yine de böyle bir şeyde başarı ölçüyorsam, RL'de varsa RL'nin başarısız olduğu bir data içeriğini almam.
+
+200
+00:36:19,639 --> 00:36:27,260
+Yani evet daha fazla deney yapması lazımmış zaten de. Yapan kişi zaten hazırlayan herhalde öğrenciymiş hocam.
+
+201
+00:36:28,159 --> 00:36:31,539
+Bu nerede yayınlanmış? Size kaç yığına ait?
+
+202
+00:36:31,936 --> 00:36:33,635
+2017'ye ait.
+
+203
+00:36:33,976 --> 00:36:36,456
+2017, çok çok eski bir şey de değil.
+
+204
+00:36:36,456 --> 00:36:37,496
+Çok eski değil aslında.
+
+205
+00:36:37,496 --> 00:36:38,036
+İçeride bir şey.
+
+206
+00:36:39,556 --> 00:36:41,775
+International Journal ama.
+
+207
+00:36:42,175 --> 00:36:45,476
+Journal of Engineering and Technology.
+
+208
+00:36:47,275 --> 00:36:50,335
+Neyse, biz zaten sonucu şu an bir şey yapamayız.
+
+209
+00:36:51,275 --> 00:36:51,735
+Yani evet.
+
+210
+00:36:53,715 --> 00:36:55,655
+Sorusu olan var mı arkadaşlar?
+
+211
+00:37:00,563 --> 00:37:03,123
+Benim size bir sorum vardı.
+
+212
+00:37:03,643 --> 00:37:04,943
+Çok korkuyorum.
+
+213
+00:37:05,943 --> 00:37:26,943
+Aritmedik Enkoding'den bahsedince bizim bulduğumuz low ve high değerler arasındaki biti en düşük değeri almamız gerekiyor diye aklımda kalmış da sınavdaki sorunun cevabına baktığımızda low değer üzerinden hesaplanmıştı.
+
+214
+00:37:26,943 --> 00:37:28,523
+Onu sormak istedim.
+
+215
+00:37:28,563 --> 00:37:45,244
+Aslında low ve high değerler arasındaki bir sayıyı da alabilirsin kodlamak için. Ama genelde az bit low olan değer daha az bit de kodlanacağı için low'u kullanırız.
+
+216
+00:37:45,244 --> 00:37:54,603
+Anladım. Bizim örneğimizde aradaki bir değer daha düşük bit de kodlanabiliyordu. Ama şıklar o kötü yoktu hocam.
+
+217
+00:37:55,539 --> 00:37:57,539
+Mesela ben 3 ile...
+
+218
+00:37:57,539 --> 00:38:03,039
+0.825'ti low, high ise 0.85'ti.
+
+219
+00:38:03,440 --> 00:38:09,420
+Mesela 0825 low, 0823 almak.
+
+220
+00:38:09,440 --> 00:38:24,300
+O sayılar falan benim şu an aklımda değil. Sadece şöyle düşün. Aralık 3 ile 5 arasında diyelim. Küçük olanın bit sayısı her zaman büyük olandan daha azdır. Aynı bitle de yazılabilir.
+
+221
+00:38:25,043 --> 00:38:27,304
+Ama daha az olacağı kesin.
+
+222
+00:38:27,304 --> 00:38:38,723
+Yani sıfırdan sonraki değer olarak aldığımızda mesela yine 0825 083'ten daha az bitle kodlanabiliyor.
+
+223
+00:38:38,923 --> 00:38:40,884
+Değer olarak daha küçük olsa bile.
+
+224
+00:38:42,324 --> 00:38:47,324
+Sanki flottan sonra gelen değerin sayısının daha az olması daha çok etkilemez mi onu?
+
+225
+00:38:47,604 --> 00:38:55,544
+Evet, yani sayı değeri olarak değil de karakter değeri olarak. Ben size bir yazarım hocam isterseniz.
+
+226
+00:38:55,964 --> 00:39:04,184
+Ben şu an hiçbir şey anlamadım dediğimden benim çözüme bakmam lazım. Ne demek? Soruyu bile ben hatırlamıyorum şu an. Sorunun ne olduğunu.
+
+227
+00:39:04,184 --> 00:39:10,284
+O kadar çok soruyoruz ki siz şimdi sadece bu derse odaklandınız.
+
+228
+00:39:10,324 --> 00:39:25,184
+Burada mı, evde midir onların çözümleri? Onları da bilmiyorum ki. Dur bakayım. Bir saniye. Sorular nerede hazırlanmışsa çözümler oradaki bilgisayarda oluyor genelde.
+
+229
+00:39:36,659 --> 00:39:41,019
+Buradaki sorular 2022'nin soruları olarak kalmış.
+
+230
+00:39:42,179 --> 00:39:52,460
+Tamam hocam ben aslında cevabımı aldım. Aradaki bir değeri alabiliriz mi diye sormuştum zaten. Sınav sorusu ile alakalı da ben size yazarım isterseniz.
+
+231
+00:39:52,460 --> 00:40:01,400
+Tamam ben de bir bakarım. Evet arasındaki bir değeri alabilirsin. Maksimumu alamıyorsun unutmayın. Orası açık aralık parantezi.
+
+232
+00:40:01,744 --> 00:40:20,443
+Köşeli parantez, kapalı aralık, minimum, sonra maksimum aralığı derken köşeli parantez yok. Yani açık, o dahil olmayacak. O aralıkta bir sayı alabilirsin. Ama genelde kitaplarda ya da kod yazarken hep logo alırız.
+
+233
+00:40:21,124 --> 00:40:21,764
+Tamam hocam.
+
+234
+00:40:22,043 --> 00:40:22,523
+Tamam.
+
+235
+00:40:23,063 --> 00:40:23,983
+Hocam merhaba.
+
+236
+00:40:24,724 --> 00:40:33,324
+Hocam, sistemden cevap görüntüleme özelliğini açma şansınız var mı? Hem doğru cevapları görsek sistemden.
+
+237
+00:40:34,563 --> 00:40:48,224
+Ben onları açmayı sevmiyorum. Çünkü daha sonra ileride ben bu soruları yeniden kullanmam gerekebilir. Biraz değiştirerek kullanıyorum. Sürekli soru hazırla hazırla gerçekten çok yorucu.
+
+238
+00:40:48,788 --> 00:41:04,208
+Bir sonraki dönem başımıza ne geleceğini bilmiyorum ama takıldığınız soru varsa bakar, size açıklamaya çalışırım. Bu soruyu ama bir şey ne olmuş sormuştu, bana hatırlat, ben unuturum çünkü. Tamam mı?
+
+239
+00:41:04,748 --> 00:41:05,268
+Tamamdır.
+
+240
+00:41:05,847 --> 00:41:09,827
+Hocam, bir ekampayası gösterebilir miyim?
+
+241
+00:41:10,387 --> 00:41:10,908
+Göster.
+
+242
+00:41:15,572 --> 00:41:32,491
+[öğrenci]'un demek istediği sanırım hocam şu aralıktaki bir verinin ters oldu bu. Bu ikisi ters olmuş ama işte hangi veriyi gönderirken atıyorum en az float point bunda var ya bunu göndermek daha verimli olmaz mı diye şey yaptı herhalde.
+
+243
+00:41:33,331 --> 00:41:35,711
+Yani ben öyle anladım ben de merak ettim.
+
+244
+00:41:36,251 --> 00:41:52,072
+Unutmayın, plot bir sayı gönderilmiyor. Plot bir sayı olduğunu biliyorum. Ben her zaman noktadan sonrasını kullanıyorum. Ve bunu da sıfır nokta olacak şekilde yazıyorum.
+
+245
+00:41:54,172 --> 00:41:59,652
+Yani bu ters oldu da şöyle olsa bu baştakini göndermek mi daha şey oluyor mu anlamda?
+
+246
+00:42:00,851 --> 00:42:11,251
+Şimdi burası minimum, burası maksimum. Soruyu nereden? Bir bekleyin arkadaşlar, ben soruma da bakayım, tamam mı?
+
+247
+00:42:11,872 --> 00:42:17,912
+Yani şurada çözüm elimde yok, belki bir yerlerde bulurum. Ama yok, her şeyi evde hazırlamıştım.
+
+248
+00:42:19,831 --> 00:42:26,452
+Belki maillerin içerisinde kendime göndermişim de şey hazırlarken. Bakayım.
+
+249
+00:42:26,996 --> 00:42:45,856
+Ama unutmayın, ben aritmatik kodingde elimdeki metni sıfırla bir arasında bir sayıya sıkıştırıyorum. Ama onun zaten flot bir sayı olduğunu bildiğim için hep noktanın sağ tarafıyla işlem yapıyorum.
+
+250
+00:42:46,255 --> 00:43:03,755
+Aritmatik kodinki anlatırken, flow sayılarla o çarpma bölme yaparken problem yaşandığı için, zorluklar olduğu için integer sayı gibi düşünüp ilk dört dijiti alarak ve onu kaydırarak bir başka versiyonunu göstermiştim.
+
+251
+00:43:04,179 --> 00:43:27,760
+Aslında yazılmış olan aritematik kodinklerde büyük bir çoğunlukla o yöntemle kullanılır. Ama ben sınavdaki soruda low ve high'ları hesaplayarak gittim ama float olarak düşünmeyeceksiniz. Hep integer sayı olarak düşüneceksiniz. Çünkü o integer sayının noktadan sonrasının integer sayısının bit karşılığını alıyoruz.
+
+252
+00:43:28,403 --> 00:43:50,204
+Ve ben onun float olduğunu biliyorum. Yani 0.8125 diye bir şey varsa ben aslında 8125'in bit karşılığını kullanıyorum. Ama o aslında 0.8125. Yeri açarken onun 0.0 olduğunu bilerek açıyorum.
+
+253
+00:43:51,507 --> 00:43:57,288
+Bana mail at [öğrenci], ben onun çözümünü size gönderim. Tamam mı?
+
+254
+00:43:57,407 --> 00:43:58,847
+Tamamdır hocam, teşekkürler.
+
+255
+00:43:59,367 --> 00:44:09,907
+[kişisel bilgi]
+
+256
+00:44:10,167 --> 00:44:14,927
+[kişisel bilgi]
+
+257
+00:44:15,347 --> 00:44:39,668
+[kişisel bilgi]
+
+258
+00:44:40,407 --> 00:44:41,407
+[kişisel bilgi]
+
+259
+00:44:42,771 --> 00:44:48,172
+[kişisel bilgi]
+
+260
+00:44:49,331 --> 00:44:51,451
+[kişisel bilgi]
+
+261
+00:44:52,632 --> 00:44:53,072
+[kişisel bilgi]
+
+262
+00:44:53,971 --> 00:44:54,231
+[kişisel bilgi]
+
+263
+00:44:56,491 --> 00:45:02,931
+[kişisel bilgi]
+
+264
+00:45:04,531 --> 00:45:09,771
+[kişisel bilgi]
+
+265
+00:45:10,547 --> 00:45:12,827
+[kişisel bilgi]
+
+266
+00:45:13,107 --> 00:45:35,027
+Ama sorun bu değil. 8 Mayıs'ta vereceksin, işin olur o olur. İki tane arkadaşınız böyle bir geri bildirim yaptı. Bence bir tanesinin ki daha önemliydi. Niçin bana bir mail atmıyorsunuz? Bu zor bir şey mi? Bir satır yazmak.
+
+267
+00:45:35,443 --> 00:45:49,523
+Şöyle şimdi diğer sunumlarda gönüllülük yani o hafta kim sunmak istiyorsa o şekilde zannettim ben ama sonra dersleri sonradan izlediğimde sırayla gittiğinizi gördüm. Orada sıra ilk hafta bendeymiş. Aslında bilgim de sonradan oldu.
+
+268
+00:45:50,743 --> 00:45:54,703
+Demek ki seminer takvimi denilen şeyden bile haberin yok.
+
+269
+00:45:56,283 --> 00:45:56,983
+Evet biraz.
+
+270
+00:45:58,003 --> 00:46:04,923
+Peki, çok özür dilerim. Yani [öğrenci] soruyorum. Gelen mailleri de mi okumuyorsunuz?
+
+271
+00:46:07,563 --> 00:46:12,903
+Ben böyle bir şeyi kabul edemem. Böyle bir şeye inanmıyorum.
+
+272
+00:46:14,244 --> 00:46:19,183
+Hepimizin hayatında problemler ve yoğunluklar mutlaka vardır.
+
+273
+00:46:19,923 --> 00:46:23,755
+Ama mailini bile okuyamayacak kadar...
+
+274
+00:46:23,860 --> 00:46:34,920
+Yoğun olamazsın. Yani tuvalete bile cep telefonuyla giren bir milletiz biz. Ben bunu kabul etmiyorum. Üzgünüm.
+
+275
+00:46:35,920 --> 00:46:36,540
+Tamam hocam.
+
+276
+00:46:36,900 --> 00:46:37,460
+Tamam mı?
+
+277
+00:46:38,080 --> 00:46:39,220
+Tamam, teşekkürler.
+
+278
+00:46:39,640 --> 00:46:39,920
+Tamam.
+
+279
+00:46:40,659 --> 00:46:59,780
+[kişisel bilgi]
+
+280
+00:46:59,780 --> 00:47:07,880
+Yani bana önceden bilgi verirse inanın ben akşamın ya da bilmem neyin bir gün saatinde seni dinler.
+
+281
+00:47:08,192 --> 00:47:17,831
+Sonra sunumu sınıfla paylaşırım. Ben böyle hareket edebiliyorken sizlerin böyle davranması beni gerçekten üzüyor.
+
+282
+00:47:19,811 --> 00:47:27,492
+Haklısınız. Onun bahane sunup şey yapmak istemiyorum. Peki raporumu göndersem onu değerlendirebilirim.
+
+283
+00:47:27,512 --> 00:47:34,291
+Onun bir esprisi yok deriz. Sunum yapanların raporunu alıyorum. Peki buna hazırlanmaya nasıl vakit buldunuz?
+
+284
+00:47:36,275 --> 00:47:59,555
+[kişisel bilgi]
+
+285
+00:47:59,555 --> 00:48:03,815
+[kişisel bilgi]
+
+286
+00:48:04,244 --> 00:48:28,244
+[kişisel bilgi]
+
+287
+00:48:28,467 --> 00:48:34,927
+[kişisel bilgi]
+
+288
+00:48:35,827 --> 00:48:36,087
+[kişisel bilgi]
+
+289
+00:48:37,387 --> 00:48:38,228
+[kişisel bilgi]
+
+290
+00:48:38,887 --> 00:48:40,127
+[kişisel bilgi]
+
+291
+00:48:40,127 --> 00:48:53,547
+[kişisel bilgi]
+
+292
+00:48:54,647 --> 00:48:55,307
+Tamam hocam.
+
+293
+00:49:03,764 --> 00:49:18,943
+Raporu yüklemeyi hiç unutma tamam mı? Mutlaka en geç perşembeye kadar. Ya da hazırsan yükle senin işin çok yoğun. Mikrofonun kapını sen yüklemeyi de unutursun.
+
+294
+00:49:20,064 --> 00:49:22,584
+Tamam. Bugün içerisinde yükleyeceğim zaten raporumuz.
+
+295
+00:49:25,584 --> 00:49:30,384
+Başka var mı gelen aramıza bu hafta olup yok?
+
+296
+00:49:50,708 --> 00:49:56,127
+Hocam sesim geliyor mu? Evet geliyor. Tamam, şimdi ekran paylaşımı yapıyorum. Tamam.
+
+297
+00:49:58,768 --> 00:50:09,367
+Senin konun neymiş bakalım. Kaspishing saltırmışı, CNN, Combination Neural Network'ları kullandın, Image Compression yaptın.
+
+298
+00:50:12,367 --> 00:50:17,947
+Evet. Bir de tam ekran yapabilir misin? Çok küçük çünkü.
+
+299
+00:50:18,963 --> 00:50:19,463
+Tamam.
+
+300
+00:50:25,523 --> 00:50:26,003
+Evet.
+
+301
+00:50:31,411 --> 00:50:32,771
+Çok özür diliyorum.
+
+302
+00:50:35,291 --> 00:50:36,692
+Demin olmuştu.
+
+303
+00:50:48,563 --> 00:50:51,563
+Şu an oldu. Senin şimdi problem var mı?
+
+304
+00:50:53,063 --> 00:50:57,563
+Ekranım dondu da ben hareket edemiyorum. Bir saniye çok özür dilerim.
+
+305
+00:51:02,068 --> 00:51:03,088
+Küçük kalsın.
+
+306
+00:51:10,516 --> 00:51:27,775
+[kişisel bilgi]
+
+307
+00:51:31,572 --> 00:51:32,572
+Teşekkür ederim.
+
+308
+00:51:43,539 --> 00:51:45,019
+Görebiliyorsunuz değil mi? Sorun yok.
+
+309
+00:51:48,019 --> 00:52:00,420
+CAS, CNN görüntü, veri sıkıştırmada meydana gelen yapaylıkları burada artifekt olarak geçiyor. Bunları gidermek için bir yöntem önerilmiş.
+
+310
+00:52:00,420 --> 00:52:07,840
+Bugün bu makaleyi ben size analiz edeceğim ve oradaki çalışmaları, sayısal sonuçları ve tabloları size açıklamaya çalışacağım.
+
+311
+00:52:08,820 --> 00:52:13,220
+Bu arada küçük bir ayrıntı ama [öğrenci], İngilizce'de büyük iyi yok.
+
+312
+00:52:13,920 --> 00:52:14,380
+Evet, evet.
+
+313
+00:52:15,079 --> 00:52:16,620
+Tamam, hadi devam et.
+
+314
+00:52:17,280 --> 00:52:19,380
+Tamamdır, onu raporumda dikkat edeceğim.
+
+315
+00:52:23,380 --> 00:52:24,380
+Kayıplı...
+
+316
+00:52:24,380 --> 00:52:26,220
+Şöyle ilerliyorum.
+
+317
+00:52:29,940 --> 00:52:40,579
+Kayıplı görüntü sıkıştırma algoritmaları web üzerinden iletilen ve veri depolama ortamına kaydedilen görüntülerin boyutunu azaltmak için yaygın olarak kullanılmaktadır.
+
+318
+00:52:40,579 --> 00:52:50,739
+Ancak burada yüksek sıkıştırma oranları kullanıcı deneyimlerini yani kullanıcı tarafında görsel olarak yapaylıklara, bozulmalara neden olmaktadır.
+
+319
+00:52:51,539 --> 00:52:55,920
+Bu makalede bu problem için 12 katmanlı bir derin sinir ağı önerilmiştir.
+
+320
+00:52:57,235 --> 00:53:19,175
+Sıkıştırma yöntemleri kayıplı ve kayıpsız olarak var. Burada kayıpsız yöntemlerde görsel olarak karşı tarafta hiçbir sıkıntı yok. Ancak kayıplı yöntemler ters çevrilemez. Bir sıkıştırma işlevi olduğu için görsellikte bozulmalar meydana gelmektedir.
+
+321
+00:53:19,552 --> 00:53:33,812
+Özellikle yüksek sıkıştırma oranlarında sıkıştırılmış görüntü ile orijinal görüntü arasındaki farklar, uygulanan sıkıştırma şemasına özgü yapaylıklar görünür hale gelebilmektedir.
+
+322
+00:53:34,452 --> 00:53:43,452
+Sadece burada görünmesi hoş olmayan şeyler değil, aynı zamanda birçok düşük seviyeli görme algoritması üzerinde de olumsuz bir etkiye sahip olmaktadır.
+
+323
+00:53:44,532 --> 00:53:56,072
+Birçok sıkıştırma algoritması görüntüleri bloklar halinde döşer ve ayrıştırıcı bir dönüşüm ile yeniden incelemeye, uygulamaya ve ardından genel bir kayıpsız veri sıkıştırmaya dayandırmaktadır.
+
+324
+00:53:57,532 --> 00:54:04,112
+Burada JPEG kayıplı görüntü sıkıştırma en yaygın olarak kabul edilen standart haline gelmiştir.
+
+325
+00:54:04,820 --> 00:54:30,539
+Birçok yazılım kod dönüştürücüsü halka açık kaynaklıdır ve özel donanım hızlandırıcıları birçok kameraya yerleştirilmiştir. JPEG sıkıştırmalı görüntüler sosyal hayatımızda, daha doğrusu hayatımızın her alanında, tarihi belgelerde ve yasal soruşturmalarda kanıt olarak sunulabilen depolama cihazlarında yaygın olarak bulunur.
+
+326
+00:54:30,996 --> 00:54:41,396
+Görüntü sıkıştırma, kablosuz sensör sistemlerinde görsel bilgilerini sensör düğümlerinden merkezi depolama ve işleme alanlarına aktarılması için de kullanılmaktadır.
+
+327
+00:54:41,396 --> 00:54:52,396
+Bu sistemlerde veri iletilen düğümler, cihazlar piliyle çalışır ve yoğun bir güç tüketilmektedir.
+
+328
+00:55:05,940 --> 00:55:21,780
+Verilerin iletilmesi genellikle enerji açısından en pahalı kısımları ve güçlü sıkıştırma artifektlerinin ortaya çıkması pahasına gerekli iletim enerjisinin azaltılarak ve benzer zorluklar veri depolayan mobil cihazlarda da görülüyor.
+
+329
+00:55:33,172 --> 00:55:51,672
+Bu cihazlara yazılmadan önce sıkıştırılıyor ve görüntü iletildikten sonraki veri işleme alanında tabii ki enerji kısıtlamaları çok fazla olmuyor. İletilen veya depolanan görüntüleri açmak ve sonradan işlemek için çok daha fazla hesaplama gücü mevcuttur.
+
+330
+00:55:53,268 --> 00:56:05,307
+Derinli evlişimli sinir ağları, görüntü smithlandırma, nesne algılama ve anlamsal segmentasyon gibi görevlerde insan performansını çok aşarak bilgisayarla görme için önemli bir araç haline gelmiştir.
+
+331
+00:56:06,028 --> 00:56:12,428
+Buna ek olarak düşük seviyeli görüntü ve video işleme, regresyon görevleri için de önem kazanmaya başlamıştır.
+
+332
+00:56:17,907 --> 00:56:40,907
+Yapaylıkları gidermek için bir 12 katmanlı evlişimli derin sinir ağa mimarisi önerilmiş. Bu derin sinir ağını eğitmek için bir strateji sunulmuş ve LAV1 veri seti üzerinde kapsamlı değerlendirmeler sunularak ağın özellikleri vurgulanmış ve bunun için bu tasarım içinde.
+
+333
+00:56:41,407 --> 00:56:48,708
+Teknolojinin son ürünü, performansı da ortaya konarak diğer yöntemlerden üstünlükleri ortaya konmuştur.
+
+334
+00:56:53,108 --> 00:56:58,327
+Sıkıştırma yapaylıklarını bastırmaya yönelik algoritmalar mevcuttur.
+
+335
+00:56:59,648 --> 00:57:09,708
+Discrete Cosine Transform da bunun içerisinde yanılmıyorsam, onun dışında Block Matching and 3D Filtring algoritması geçiyor.
+
+336
+00:57:10,568 --> 00:57:16,968
+CR, CNN ve DRCN gibi ağlar da burada yer verilmiş.
+
+337
+00:57:18,195 --> 00:57:38,355
+Hatta bu ağlardaki çalışmalar başka makalelerden sayısal sonuçlar alınıp burada kendi tasarımlarıyla karşılaştırmak için kullanılmış. Birazdan tablo olarak size göstereceğim. Bir de ARCNN, Artifact Reduction Conventional Neural Network'ten bahsediliyor.
+
+338
+00:57:39,027 --> 00:58:00,288
+Esas karşılaştırma yapılan bu algoritma. Çünkü bu direkt bu yapaylıkları gidermek üzere eğitilmiş bir a. Eğer CNN özellikle JPEG sıkıştırma sonrası oluşan bloklaşma ve ekran gelişmeleri gibi yapaylıkları gidermeyi hedeflemektedir.
+
+339
+00:58:00,947 --> 00:58:02,628
+Sayfa çeviriyor musunuz sen?
+
+340
+00:58:06,356 --> 00:58:08,735
+Evet, çevirmeyi olmuş. Şu an çevirdim.
+
+341
+00:58:08,735 --> 00:58:09,315
+Evet.
+
+342
+00:58:14,356 --> 00:58:34,796
+Eğer CNN yapaylıkları azaltmak için yeniden eğitilen 4 katmandan daha derin bir 5 katmanlı ağ ve ayrıca farklı JPEG, kalite, quality faktör ve veri kümeleri için eğitilen ağlar arasında transfer öğrenme yöntemlerini kullanmışlardır.
+
+343
+00:58:36,628 --> 00:58:45,208
+Öncelikle eğer CNN'in veri seti ve yöntemini anlatıp sonra esas buradaki çalışmaya geçeceğim.
+
+344
+00:58:46,968 --> 00:58:49,048
+Altıncı sayfaya da geç.
+
+345
+00:58:56,052 --> 00:59:22,412
+Burada ERCN'deki veri setinden bahsetmek istiyorum. 500 veri setinden oluşuyor. 400 eğitim, 100'ü test veri seti olarak ayrılmış. Yine live bir veri kümesi kullanılmış. Ayrıca Twitter'dan da 5 test ve 40 eğitim verisi seçilerek 2 ayrı eğitim yapılmış.
+
+346
+00:59:22,900 --> 00:59:26,000
+Ve sonuçları sayısal olarak belirtilmiştir.
+
+347
+00:59:28,540 --> 00:59:34,920
+Burada bu makalede önerilen ağ mimarisine gelecek olursak.
+
+348
+00:59:36,080 --> 00:59:37,100
+Like değiştir.
+
+349
+00:59:37,660 --> 00:59:40,440
+Ben like'larına bakarak anlatmıyor musun?
+
+350
+00:59:41,960 --> 00:59:42,700
+Anlatıyorum.
+
+351
+00:59:43,620 --> 00:59:46,420
+Niye like'larında örtüşmüyor anlattıkları?
+
+352
+00:59:48,148 --> 00:59:51,488
+Az önce unutmuştum ama şu an geldi değil mi A-Mimarisi?
+
+353
+00:59:51,508 --> 00:59:52,348
+Evet, geldi.
+
+354
+00:59:54,408 --> 01:00:04,388
+Burada şekilde A ve D bloklarına kadar her iki konvolüsyonel katmandan oluşur.
+
+355
+01:00:05,208 --> 01:00:10,968
+A derinleştikçe kanal sayısı birden 128'e ve daha sonra 256'e kadar çıkar.
+
+356
+01:00:11,764 --> 01:00:23,023
+Çözünürlük 2x2 piksel CNN'de ortalama havuz katmanı Pol olarak geçiyor sanırım. Downsamping ile azaltılır.
+
+357
+01:00:25,344 --> 01:00:36,244
+Bu şekilde 12 katmanla bir konvolüsyönel led elde ediliyor ve bu ağ standart eğitim yöntemlerini kullanarak son teknoloji doğruluğa ulaşacak şekilde eğitiliyor.
+
+358
+01:00:36,847 --> 01:00:45,208
+Ortalama yol uzunluğunu azaltarak ağın en son teknolojisinin ötesinde doğruluğa yakın sonrasını sağlayan değişiklikler risklenmiştir.
+
+359
+01:00:45,208 --> 01:01:03,208
+Yol uzunluğunu azaltmak için her tam evrim katmanından sonraki daha yüksek çözünürlüklü ara sonuçlar önce bu çözünürlükle doğal olarak çıkarılan alt yüzey örneklerin birleştirilmesiyle bir sonraki katmanda geliştirilir.
+
+360
+01:01:03,519 --> 01:01:15,579
+Bunun A2 yönlü fayda sağlanması beklenmiştir. Birincisi yüksek çözünürlük çıktıklarının çıkartması. İkincisi ortak katmanları atlayarak A'nın ilk katmanların eğitilmesine yardımcı olmak şeklindedir.
+
+361
+01:01:20,083 --> 01:01:30,083
+Burada performans ölçütlerinden bahsetmek istiyorum. Çünkü çok sık olarak geçiyor ve kısaltma şeklinde bahsedeceğim.
+
+362
+01:01:31,143 --> 01:01:44,483
+Görüntüler ve diğer birçok sinyal arasındaki farkları değerlendirmek için en yaygın kullanılan performans ölçütleri ortalama karesel hata MSI ve yakından ilişkili tepe sinyal gürültü oranıdır.
+
+363
+01:01:44,483 --> 01:01:46,683
+PSNR
+
+364
+01:01:47,059 --> 01:02:04,440
+PSNR bozulmuş ve referans görüntü arasındaki yoğunluk farkının karesi üzerinde piksel bazında bulunan bir ortalamadır. PSNR tipik olarak decibel cinsinden ifade edilir ve mümkün olan maksimum sinyal değerlerinde normalize edilmiş MSI'dır.
+
+365
+01:02:14,708 --> 01:02:19,567
+Bu tarz eğitimlerde kullanılmış sayısal örneklerle birlikte karşılaştırması yapılacak biraz sonra.
+
+366
+01:02:22,527 --> 01:02:44,467
+Algılanan görsel kalitesiden farklı oldukları zaten bilinmekte. Ancak basitlikleri nedeniyle yaygın kullanım alanı bulunmamaktadır. PSNR ölçüsünün bir çeşidi de IPSNR'dır. Buna PSNR'ın başlangıçtaki bozuk görüntüye olan farklıdır. Dolayısıyla kalite gelişimini ölçer. Ayrıca farklı veri kümeleri arasında daha kararlıdır.
+
+367
+01:02:45,235 --> 01:02:58,155
+Popüler bir ayaklık yapısal benzerlik endeksini kullanmaktadır. Bu endeks, parlaklık kontrast ve görüntüdeki benzerliği değerlendiren üç kere çarpımının ortalamasıdır.
+
+368
+01:03:02,096 --> 01:03:12,195
+Burada kayıp fonksiyonu şu şekilde iki faza ayrılmış. Yeşil ve kırmızı eğriler test setindeki çıktı kaybıdır.
+
+369
+01:03:12,596 --> 01:03:30,435
+Sarı ve mavi eğitim setindeki kaybı göstermektedir. Sarı eğrinin çok ölçekli kaybı gösterdiğini ve şeklin yer aralığının açılması için 3 kat büyütüldüğünü unutmayalım. İnce ayar aşamasındaki bir epok 50 bin görüntü yerine 150 bin görüntü içer mektedir.
+
+370
+01:03:38,963 --> 01:04:02,024
+Live 1'i kullanmıştı ama bu tasarım için ImageNet'in 2013 veri seti kullanılmış. 396 bin eğitim ve 20 bin doğrulama veri bu şekilde ayrılmış. Renkli görüntüsünden oluşan büyük yardım olarak bilinen ve kamuya açık ImageNet 2013 veri seti.
+
+371
+01:04:02,612 --> 01:04:10,252
+120x120 piksellik kesikler alarak veri seti renkli görüntüler uzayına dönüştürülmüş ve sadece parlaklık kanalı kullanmış.
+
+372
+01:04:11,872 --> 01:04:21,572
+Ağın girişi daha sonra elde edilen tek kanallı görüntülerin sıkıştırmasıyla oluşulmuş ve değerlendirmeler için QDA, NL ve TORK tütfaklanıları kullanmış.
+
+373
+01:04:21,572 --> 01:04:25,292
+Titan X Max Bell GPU kullanmıştır.
+
+374
+01:04:27,476 --> 01:04:45,396
+Görüntüleri ağ beslemeden önce herhangi bir ön işlem uygulanmamıştır. Quality Factor 20 sıkıştırılmış giriş verisi için geliştirilmiş ve eğitim süresi azaltmak için ağları bundan başlayarak diğer kalite faktörleri için eğitilmiştir.
+
+375
+01:04:46,003 --> 01:04:56,704
+İleri geçiş için tek hassasiyetli kayan nokta işlevleri kullanılarak GTX 1080 ile 1.1 mpx bir ölçüm yapılmıştır.
+
+376
+01:04:58,824 --> 01:05:11,724
+Burada kendi eğitimi ve diğer algoritmaların eğitimleri ve parametreleri karşılaştırılmıştır tabloda.
+
+377
+01:05:12,659 --> 01:05:23,000
+Burada en yüksek, bu makalede önerilen tasarımın PCNR'ı, Desipel olarak en yüksek çıkmıştır. Burada görülüyor.
+
+378
+01:05:29,492 --> 01:05:35,492
+Kullanılan veri setlerinden burada örnekler vermiş ama ben gözlü görünür artifekler...
+
+379
+01:05:39,635 --> 01:05:52,575
+Var mı? Bir de sunmalar var. Şu maymunun adı vardı. Maint şeydi. Kadının eşyar budur hep bozultu olan.
+
+380
+01:05:53,795 --> 01:06:00,735
+Biraz var. Peki, tabloda QP diye bir kolon vardı.
+
+381
+01:06:01,475 --> 01:06:02,455
+Kualite Factor.
+
+382
+01:06:07,539 --> 01:06:28,539
+Ben bu makalede CNN'i anlatmış, CNN üzerinde bunu çalıştırmış ama CNN üzerinde bir takım değişiklikler mi yapmış onu tam anlayamadım. Yani o bir tane fikir gösterdin ya CNN işte şu kadar layer var, pooling, mulling.
+
+383
+01:06:28,992 --> 01:06:38,852
+Bu birazcık bana şey geldi, çok karışık gibi geldi. Yani buna baksan ben anlayamam bu mimariden bir şey.
+
+384
+01:06:39,352 --> 01:06:47,652
+Evet, burada derin sinir ağam eğitmek için farklı bir strateji uyguladıklarını söylüyor. Ama o kısım çok açılmamış.
+
+385
+01:06:51,603 --> 01:07:09,543
+Sen de anlamadın. Büyük ihtimalle anlamadın. Ben de anlamadım. Acaba ne yaptılar? Senin üzerinde nasıl bir değişiklik yaptılar? Sadece parametreler ya da hidden layer falan filan oynamadılar herhalde. Neyse. Peki sorusu olan var mı?
+
+386
+01:07:09,543 --> 01:07:12,663
+O şöyle aslında.
+
+387
+01:07:14,739 --> 01:07:24,239
+Katmanlar arasında bu aktivasyon katmanı için bir değişiklik yapılmıştı ama orayı tam özümseyemediğim için, yani tam anlayamadığım için size de açıklayamıyorum.
+
+388
+01:07:24,239 --> 01:07:33,000
+Doğrudur. Konuyu tam bilmeyince, yani CNN mimarisi bilmeyince orada anlatılanları anlamak da zor olur. Ona bir şey söyleyemem.
+
+389
+01:07:35,239 --> 01:07:38,000
+Evet. Teşekkürler.
+
+390
+01:07:39,572 --> 01:07:40,532
+Rica ederim.
+
+391
+01:07:40,731 --> 01:07:42,771
+[kişisel bilgi]
+
+392
+01:07:44,172 --> 01:07:45,251
+[kişisel bilgi]
+
+393
+01:07:46,612 --> 01:07:48,532
+[kişisel bilgi]
+
+394
+01:07:49,251 --> 01:07:55,271
+[kişisel bilgi]
+
+395
+01:07:55,852 --> 01:07:57,251
+[kişisel bilgi]
+
+396
+01:07:58,192 --> 01:08:01,912
+[kişisel bilgi]
+
+397
+01:08:03,251 --> 01:08:04,912
+[kişisel bilgi]
+
+398
+01:08:05,780 --> 01:08:11,039
+[kişisel bilgi]
+
+399
+01:08:11,820 --> 01:08:29,819
+[kişisel bilgi]
+
+400
+01:08:31,764 --> 01:08:37,603
+[kişisel bilgi]
+
+401
+01:08:38,644 --> 01:08:45,023
+[kişisel bilgi]
+
+402
+01:08:46,144 --> 01:08:55,384
+[kişisel bilgi]
+
+403
+01:08:55,891 --> 01:09:13,311
+[kişisel bilgi]
+
+404
+01:09:13,939 --> 01:09:25,920
+[kişisel bilgi]
+
+405
+01:09:25,920 --> 01:09:35,699
+[kişisel bilgi]
+
+406
+01:09:36,851 --> 01:09:41,851
+[kişisel bilgi]
+
+407
+01:09:41,851 --> 01:09:59,971
+[kişisel bilgi]
+
+408
+01:10:00,532 --> 01:10:16,891
+[kişisel bilgi]
+
+409
+01:10:17,779 --> 01:10:44,699
+[kişisel bilgi]
+
+410
+01:10:45,332 --> 01:11:10,172
+[kişisel bilgi]
+
+411
+01:11:10,996 --> 01:11:24,136
+Katıldığınız için teşekkür ediyorum. Önümüzdeki hafta size bir mail atacağım. Projede önceden gösterecek olanlar varsa, gösterirse çok sevinirim.
+
+412
+01:11:24,456 --> 01:11:36,175
+Rapor final günü yükleyebilirsiniz. O önemli değil. Bu seminere katılanlara bakarsam 21 ya da 22 kişi proje gösterecek.
+
+413
+01:11:36,884 --> 01:11:53,644
+Hadi olsun 20. Bu 20'ye 3 saat içinde bakmak birazcık zor. Ne kadar editirsem o kadar iyidir diyorum. Peki, hoşçakalın. Bir sonraki videoda kapatıyorum. Görüşürüz.
+
+414
+01:11:53,923 --> 01:11:55,684
+Görüşmek üzere.
