@@ -1,0 +1,2535 @@
+1
+00:01:44,403 --> 00:01:53,223
+Teşekkür ederim. Dersimi de biliyorsunuz. Başladık bu hafta.
+
+2
+00:01:54,403 --> 00:02:00,943
+Taze değil mi bu? Yani bir kıtlak bulduğu zaman. O? Aynı çöp.
+
+3
+00:02:02,164 --> 00:02:09,824
+Yani bir sonrakini alayım. Teşekkür ederim. Sağ olun.
+
+4
+00:13:51,892 --> 00:13:52,772
+Merhaba arkadaşlar.
+
+5
+00:13:57,203 --> 00:14:11,483
+Merhaba hocam. Merhaba. Merhaba [öğrenci], [öğrenci]. Merhaba hocam. Merhaba hocam. Merhabalar. Merhaba [öğrenci], [öğrenci]. Evet.
+
+6
+00:14:12,755 --> 00:14:36,795
+Şimdi ilk hafta hemen online derste şöyle bir kuralım var arkadaşlar. Ekrana baktığım zaman sizin profil resimlerinizi görmek istiyorum. Tabii ki kamera açmanızı beklemiyorum ama lütfen bağlanırken yani daha doğrusu zoom'u indirdiğinizde ayarlarda fotoğraf yükleme kısmı var oradan.
+
+7
+00:14:37,299 --> 00:14:52,339
+Fotoğrafınızı yüklersiniz. Browser'dan açtığınız zaman olmuyor. Bu özellik çalışmıyor bildiğim kadarıyla. Ama en azından yüklemiş olan arkadaşlar bu şekilde lütfen ayarlarını düzenlesin.
+
+8
+00:14:54,339 --> 00:15:01,980
+Evet, [öğrenci] merhaba. Evet, ilk [öğrenci]'in fotoğrafını gördüm. Teşekkürler [öğrenci].
+
+9
+00:15:03,572 --> 00:15:13,032
+Çünkü öğrencilerimi bir daha görünce az çok biraz hatırlarım belki diyorum. Sizden böyle profil fotoğrafı koymanızı istiyorum.
+
+10
+00:15:15,951 --> 00:15:20,892
+Öncelikle hepimize geçmiş olsun diyerek başlayacağım.
+
+11
+00:15:20,892 --> 00:15:22,892
+Türkiye'de...
+
+12
+00:15:23,091 --> 00:15:39,192
+Karmamaraş'ta yaşanan depremler ve sonrasında Hatay'da ve diğer illerde de yaşanan tüm depremlerde hepimiz çok üzüldük. Yakınlarını kaybeden arkadaşlarımız da vardır.
+
+13
+00:15:43,271 --> 00:15:46,371
+Başınız sağ olsun demek isterim tabii önce.
+
+14
+00:15:47,956 --> 00:15:55,096
+Umarım kısa zamanda bu yaralarımızı sarar ve normal hayatımıza dönmeyi başarırız.
+
+15
+00:15:56,036 --> 00:16:03,855
+Derslerde bu açıdan aslında biraz kendimizi bir şeylerle oyalamak iyi gelir diye de düşünüyorum.
+
+16
+00:16:03,855 --> 00:16:08,855
+O bölgedeki arkadaşlar için böyle bir ders...
+
+17
+00:16:09,652 --> 00:16:16,052
+Ve eğitim hayatına dönüşte eminim faydalı olacaktır bu sürecin geçmesinde.
+
+18
+00:16:18,152 --> 00:16:29,752
+Sevgili arkadaşlar, şu anda 22 kişi var derste. İlk hafta için iyi. Ben şöyle yavaş yavaş biraz konudan bahsedeyim.
+
+19
+00:16:31,251 --> 00:16:38,231
+Bilgisayarla görme dersinin amacı kamerayla alınmış olan görüntüler üzerinden.
+
+20
+00:16:39,539 --> 00:17:00,759
+Aynı insan gözünün çalıştığı gibi nesneleri algılayabilen, tanıyabilen ve bu algıladığı, tanıdığı nesneleri belli bir sınıfa vesaireye dahil etme, hatta segmente etme gibi işlemleri yapabilen algoritmaları çalışacağız.
+
+21
+00:17:03,283 --> 00:17:08,663
+Gerçek hayatta çokça örneklerini gördüğümüz bir konu bu.
+
+22
+00:17:10,324 --> 00:17:15,703
+Ve birazdan zaten size de soracağım. Ben de birkaç örnek göstereceğim.
+
+23
+00:17:18,043 --> 00:17:22,703
+Dersi iki bölüme ayırıyorum. Ben bu derste...
+
+24
+00:17:23,284 --> 00:17:41,304
+İlk bölüm klasik görüntü işleme konularından biraz bahsediyorum. Çünkü görüntü işlemenin temellerini bilmeden birdenbire bir deep learning'e girmenin bazı eksik tarafları olduğuna inanıyorum.
+
+25
+00:17:41,304 --> 00:17:45,304
+O yüzden dersin ilk bölümünde olabildiğince...
+
+26
+00:17:45,811 --> 00:18:06,931
+Temel yöntemlerden ve görüntü işleme yöntemlerinden bahsedeceğim. Bu 5-6 hafta kadar sürebilir. Bu haftayı da sayarsak 6 hafta. Sonrasında Deep Learning yöntemleri ile en az 4-5 haftada o konuda.
+
+27
+00:18:08,884 --> 00:18:30,223
+Bazı konular var, anlatmak istediklerim. Onları anlatacağım. Ve derste proje olacak. Proje dediğim aslında makale okuma ve bu makalede yapılan çalışmanın bir benzerini az da olsa, yapabildiğiniz ölçüde implemente etmenizi isteyeceğim.
+
+28
+00:18:32,627 --> 00:18:37,527
+Önce haftalara ve ders içeriğine şöyle bir bakalım.
+
+29
+00:18:41,167 --> 00:18:48,167
+Computer Vision dersi bahar yarı yılında pazartesi günleri saat 13-15.50 arasında yapılıyor.
+
+30
+00:18:49,044 --> 00:19:13,824
+Derste benim takip ettiğim iki tane kitap var ama tabii bunlarla sınırlı değil. Özellikle internet en büyük kaynağımız. Birincisi Gonzales'in çok meşhur bir Digital Image Processing kitabı var. Bunu en başta kaynak olarak vereceğim. Oldukça detaylı bir anlatım var bu kitapta.
+
+31
+00:19:17,044 --> 00:19:21,264
+Lenski'nin Computer Vision, Algorithms and Applications kitabı.
+
+32
+00:19:22,064 --> 00:19:28,464
+Tabii dediğim gibi internette en büyük üçüncü kaynak olarak burada söz edilebilir.
+
+33
+00:19:28,464 --> 00:19:41,464
+Ve az önce de belirttiğim gibi insan vücudundaki en önemli algılayıcılardan, duyu organlarından biri olan gözün yaptığı işi...
+
+34
+00:19:42,099 --> 00:20:00,000
+Ve tabii beyinle birlikte tek başına göz değil, bu işi yapabilen algoritmaları geliştirmeyi hedefliyoruz. Amacımız bu ve sonuçta bir bilgisayara, bir makineye görme duyusunu kazandırmaktır ana hedef.
+
+35
+00:20:00,000 --> 00:20:15,480
+Bu bir tıp doktorunun bir EKG işaretine bakarken verdiği karardan tutun da işte insansız araç, otonom araç dediğimiz araçlara kadar tüm alanlarda olabilir.
+
+36
+00:20:16,840 --> 00:20:25,019
+Dersde bilgisayar kullanacak mıyız? Evet, kullanacağız. Hem ödevlerimizde hem projemizde.
+
+37
+00:20:28,147 --> 00:20:35,027
+Belki ders sırasında bile ufak örnekler vermeye çalışacağım. Sizin de denemenizi isteyeceğim.
+
+38
+00:20:36,147 --> 00:20:40,027
+14 haftalık programa baktığımızda...
+
+39
+00:20:43,412 --> 00:20:55,031
+Az önce belirttiğim gibi ilk haftalar olabildiğince temel görüntü işleme konuları olacak demiştim. Bu hafta Introduction to Computer Vision diye bir sunum yapacağım.
+
+40
+00:20:55,031 --> 00:21:11,392
+Önümüzdeki hafta derste Python kullanacağım için Python'ın NumPy kütüphanesinin bir tutorialı var. Onun üzerinden girerek şöyle Python'ı tahmin ediyorum sınıftaki arkadaşların %80'i kullanıyordur.
+
+41
+00:21:11,412 --> 00:21:29,192
+Ama belki NumPy kütüphanesini kullanmıyor olabilirsiniz. Şöyle hızlıca bir NumPy tutorial ile Python kullanımı ve Image Formation, Image File Format konularını vereceğim.
+
+42
+00:21:31,539 --> 00:21:44,240
+Image Understanding, Intensity Transformation, Spatial Filtering and Noise Reduction gibi oldukça fazla konuyu aynı haftanın içerisinde anlatmaya çalışacağım.
+
+43
+00:21:44,880 --> 00:21:59,539
+Derste genelde şöyle bir yol izleyeceğiz. Ben ikinci hafta artık Python'ı anlattığım için, yani herkes bir Python platformunda bu collab olabilir veya kendi lokal bilgisayarınızda yüklediğiniz bir...
+
+44
+00:21:59,539 --> 00:22:15,379
+Benim derste anlattığım ve hadi şimdi siz de deneyin dediğim noktalarda vermiş olduğum kod parçaları ve üzerine sizin ekleyeceğiniz kod parçalarıyla işte bir intensity transformation'ı ders sırasında yapabilirsiniz.
+
+45
+00:22:15,379 --> 00:22:27,159
+Spatial filtering uygulamasını ya da bir noise reduction, gürültü azaltma işlemini yapabilirsiniz. Bunun için size böyle bir zaman vermeye çalışacağım.
+
+46
+00:22:27,539 --> 00:22:38,519
+Dördüncü hafta yine Image Enhancement'ın bir konusu aslında Image Sharpening yani görüntüyü keskinleştirme, netleştirme dediğimiz konu var.
+
+47
+00:22:39,599 --> 00:22:41,019
+Bundan bahsedeceğim.
+
+48
+00:22:41,019 --> 00:22:43,659
+Tabi burada kullandığımız filtrelerle.
+
+49
+00:22:43,968 --> 00:23:11,968
+Yavaş yavaş first derivative dediğimiz birinci türev yani işlem olarak baktığımızda gradient operatörü ve ikinci türev yani Laplacian operatörü gibi operatörleri image üzerinde bir filtre olarak kullandığımızda ne tür etkileri olduğunu hem teorik hem pratik olarak göreceğiz, konuşacağız.
+
+50
+00:23:11,968 --> 00:23:36,927
+Beşinci hafta yine oldukça fazla konu var. Burada hızlı hızlı geçeceğim. Bir Global Thresholding Operation'ından bahsedeceğim. Connected Component Labeling dediğimiz birbiriyle bağlantılı bileşenlerin etiketlenmesi işlemi var. Bu temel algoritmalar.
+
+51
+00:23:37,364 --> 00:23:44,784
+Dersin ilerleyen bölümlerinde ve belki yaptığınız test çalışmasında hep karşınıza gelecek konular olacak.
+
+52
+00:23:45,364 --> 00:23:51,483
+O yüzden böyle temelleri bilerek ilerlerseniz eminim çok daha faydalı olacaktır.
+
+53
+00:23:52,564 --> 00:24:08,163
+Morfolojik işlemler, mathematical morfoloji ve yine görüntü üzerinde half transform dediğimiz transform ile half transform for stride line detection or circle detection.
+
+54
+00:24:13,203 --> 00:24:22,844
+Bir çemberin daire şeklindeki bir yapının nasıl haf transformuyla tespit edilebileceğinden bahsedeceğiz.
+
+55
+00:24:22,844 --> 00:24:27,943
+Ve bununla bağlantılı bir konu olan Integro Differential Operator var.
+
+56
+00:24:40,596 --> 00:24:54,936
+Tespitinde kullanılmış bir algoritma. Ama bu algoritmanın daha sonra farklı alanlarda da nasıl kullanılabildiğinin örneklerini vereceğim ve bu bölümde beşinci haftada bununla ilgili de bir ödev vermiş olacağım.
+
+57
+00:25:08,403 --> 00:25:34,604
+Bu translation yani bir yerden bir yere transfer etme gibi işlemleri bunlar 3D transformation'ın altında yer alıyor. Bunları hızlıca vereceğim. Bu temelleri öğrenmek tekrar söylüyorum. İnanın yani hani pek çok noktada ya böyle bir iş burada da işinize işme yarar diyeceğiniz çözümler olarak ileride size yardımcı olacaktır diyorum.
+
+58
+00:25:35,188 --> 00:25:37,188
+Bu bölümde...
+
+59
+00:25:39,412 --> 00:25:55,731
+Interest Point Detection dediğimiz Harris Corner Detector ya da farklı SIFT gibi operatörlerle bir takım öz üniteliklerin tespiti nasıl yapılıyor onlardan bahsedeceğim.
+
+60
+00:25:55,731 --> 00:26:06,311
+Ama hemen şunu da söyleyeyim. Artık bu sözüne ettiğimiz teknikler biraz traditional teknik diye kalıyor. Yani geleneksel yöntemler diye kalıyor.
+
+61
+00:26:07,412 --> 00:26:15,412
+Yerine hemen 8. haftada Convolutional Neural Networklerden bahsedeceğim. Yani geleneksel...
+
+62
+00:26:15,635 --> 00:26:34,456
+Öz nitelik çıkartma yöntemlerinin yerine artık Future Extraction işleminin bir Convolutional Neural Network tarafından yapılabildiğini ve nasıl bu kadar başarılı olduklarının da analizini bu bölümde size vereceğim 8. haftada.
+
+63
+00:26:36,051 --> 00:26:42,471
+Deep Neural Network ve Max Pulling gibi operasyonları detaylı olarak anlatacağım.
+
+64
+00:26:42,471 --> 00:26:50,911
+Yani belki bunların pek çoğunu siz bir framework, hazır kullandığınız bir framework'ün içerisinde bulup kullanabiliyorsunuz.
+
+65
+00:26:51,011 --> 00:27:00,611
+Ama hangisi, nasıl çalışır, ne işe yarar, neden kullanıyoruz gibi soruların cevaplarını da burada tartışmış olacağız.
+
+66
+00:27:03,155 --> 00:27:11,875
+Aslında bakarsanız buradaki ilk 7 haftada bitiriyoruz geleneksel yöntemleri. Ondan sonra Deep Learning dediğimiz yöntemlere geçiyoruz.
+
+67
+00:27:12,056 --> 00:27:31,155
+Ve burada arada bir midterm exam olacak. 24 Nisan'da. Sonra 1 Mayıs'ta bir tatilimiz var sanıyorum. Resmi tatil. Ondan sonra kaldığımız yerden Deep Learning konularına devam edeceğim. Aktivasyon fonksiyonlarının çeşitleri var. Bunları konuşacağız.
+
+68
+00:27:31,155 --> 00:27:46,315
+Fully Connected Layer dediğimiz layer'ı ve Softmax katmanını ve bunların çeşitlerini yine bu hafta içerisinde konuşacağız.
+
+69
+00:27:58,703 --> 00:28:15,304
+Dropout işlemini ve bunun çeşitlerini, Data Augmentation ve Data Transfer Learning dediğimiz işlemleri ve bunların nasıl kullanıldıklarını yine 12. hafta içerisinde konuşacağız.
+
+70
+00:28:15,304 --> 00:28:26,703
+Bu dersin son iki haftası Project Presentation dedim ama muhtemelen bu haftalarda çok yetişmeyecek ama yetiştiği kadar...
+
+71
+00:28:26,703 --> 00:28:38,023
+Derste dinleyeceğiz. Yetişmeyen sunumları da video çekip benimle paylaşırsanız eğer, ders duvarına yükleyip herkesin oradan izlemesini sağlayacağız.
+
+72
+00:28:38,023 --> 00:28:48,943
+Dersin değerlendirmesinde bir tane yıl içi sınavımız olacak. Yüzde otuz. Başarı etkisi yüzde otuz.
+
+73
+00:28:53,872 --> 00:29:06,032
+İlk haftaların konularıyla ilgili olacak. Yüzde beş etkisi ve ikinci vereceğim ödev biraz daha kapsamlı olacak. O da yüzde on olacak etkisi.
+
+74
+00:29:06,708 --> 00:29:34,688
+Derste bir proje var demiştim. Proje aslında bir makale okuma şeklinde olacak. Size belli bir CVPR diye bir konferans var. O konferansın bildirilerinden birini seçip ilgi alanınıza giren bir tanesini bize derste hem detaylarıyla anlatmanız hem de varsa basit bir implementasyon sizin de yapmanız ve sunmanız şeklinde olacak.
+
+75
+00:29:34,708 --> 00:29:52,768
+Başarıya etkisi %15 olacak. Final sınavı %40. Zaten yönetmeliğin belirlediği bir oran bu. Onu biz değiştiremiyoruz. Genel olarak ders içeriğini bu şekilde özetleyebilirim.
+
+76
+00:30:00,000 --> 00:30:18,000
+Ben biraz öğrencilerimi tanıyım istiyorum. O yüzden hızlıca size söz vereceğim. Söz verdiğim kişi kamerasını açıp kendini tanıtacak. Ne istiyorum?
+
+77
+00:30:19,251 --> 00:30:33,091
+Hangi bölümde okuyorsunuz? Yüksek lisans doktora ne yapıyorsunuz? Lisansta ne yaptınız? Daha önce görüntü işlemeyle ilgili bir çalışma yaptınız mı? Bunlardan bahsetmenizi rica edeceğim.
+
+78
+00:30:37,091 --> 00:30:40,091
+Evet, şimdi [öğrenci]...
+
+79
+00:30:40,756 --> 00:30:42,996
+Nereye kaybettiğim? [öğrenci].
+
+80
+00:30:43,256 --> 00:30:44,395
+Aynen hocam, başlayabilirim.
+
+81
+00:30:44,415 --> 00:30:48,455
+Evet, benim ekranımda ilk sırada sen varsın. [öğrenci] seninle başlıyorum.
+
+82
+00:30:48,736 --> 00:30:51,836
+Kameramı açayım, görüntü biraz iyi olmayabilir ama ışıktan.
+
+83
+00:30:52,135 --> 00:30:57,935
+Tamam, sorun değil. Evet, simsiyah bir [öğrenci] görüyoruz. [öğrenci], seni dinliyoruz.
+
+84
+00:30:57,955 --> 00:30:58,875
+Şöyle daha iyi sanırım.
+
+85
+00:30:59,635 --> 00:31:01,675
+Işığım biraz kötü hocam idare ettik.
+
+86
+00:31:01,675 --> 00:31:04,875
+Evet, döndür kameranı. Benim de kötü ama şöyle dönelim.
+
+87
+00:31:04,875 --> 00:31:06,175
+Şu an daha iyi sanırım, aynen.
+
+88
+00:31:06,535 --> 00:31:06,795
+Evet.
+
+89
+00:31:07,035 --> 00:31:10,615
+[kişisel bilgi]
+
+90
+00:31:11,435 --> 00:31:15,815
+[kişisel bilgi]
+
+91
+00:31:16,695 --> 00:31:17,955
+Bu dönem kaçıncı dönemin?
+
+92
+00:31:18,515 --> 00:31:21,475
+[kişisel bilgi]
+
+93
+00:31:22,132 --> 00:31:42,711
+[kişisel bilgi]
+
+94
+00:31:43,271 --> 00:31:44,052
+Çalışıyor musun?
+
+95
+00:31:44,491 --> 00:31:45,392
+[kişisel bilgi]
+
+96
+00:31:46,132 --> 00:31:48,552
+Tamam, peki. Güzel başarılar [öğrenci].
+
+97
+00:31:48,771 --> 00:31:49,451
+Teşekkür ederim.
+
+98
+00:31:50,036 --> 00:31:53,316
+[öğrenci], [öğrenci].
+
+99
+00:31:54,456 --> 00:31:56,996
+Merhabalar, başlıyorum hemen ben de kamerayı.
+
+100
+00:31:57,776 --> 00:32:01,336
+Tamam. Sonra [öğrenci] sana söz vereceğim.
+
+101
+00:32:01,355 --> 00:32:03,096
+Dedi mi? Şu an çok iyi. Ses görüyorum.
+
+102
+00:32:03,096 --> 00:32:04,896
+Evet, evet. Gayet güzel, tamam.
+
+103
+00:32:05,375 --> 00:32:14,976
+Merhabalar, ben [öğrenci]. [kişisel bilgi]
+
+104
+00:32:15,892 --> 00:32:22,392
+[kişisel bilgi]
+
+105
+00:32:22,867 --> 00:32:50,867
+[kişisel bilgi]
+
+106
+00:32:50,867 --> 00:33:15,268
+İşlemede. O şekilde. Hazır framework kullandın. Evet. Aslında. Tamam. Teşekkürler [öğrenci]. Başarılar. [öğrenci]. Merhaba hocam. [öğrenci] demiştim. [öğrenci] oldu. Seni birazdan alacağım. Tamamdır. Evet.
+
+107
+00:33:16,115 --> 00:33:18,576
+Merhaba, sesim geliyordur umarım.
+
+108
+00:33:19,076 --> 00:33:19,875
+Evet, [öğrenci].
+
+109
+00:33:19,875 --> 00:33:39,556
+[öğrenci], [kişisel bilgi] Doktoramın ilk dersi. Lisansta ben de görüntü işlemeyle uğraşmıştım. Bilgisayarla görme araştırma laboratuvarı üniversitenizin sizlerin de önceliğini yaptığınız laboratuvarda birlikte çalışmıştık bilgisayarla görme üzerine.
+
+110
+00:33:40,115 --> 00:33:44,615
+Daha önceden böyle bir deneyim var yani. [kişisel bilgi]
+
+111
+00:33:45,895 --> 00:33:55,776
+Güzel. [öğrenci], [kişisel bilgi] Kaç yıl oldu çalışmayı yapalı? Dört sene?
+
+112
+00:33:55,776 --> 00:33:57,916
+[kişisel bilgi]
+
+113
+00:33:58,236 --> 00:34:03,956
+[kişisel bilgi]
+
+114
+00:34:03,956 --> 00:34:04,476
+Evet.
+
+115
+00:34:05,011 --> 00:34:08,751
+Tamam, hayırlı olsun. Teşekkür ederim hepinize. Sağ olun.
+
+116
+00:34:09,231 --> 00:34:11,451
+Evet. [öğrenci].
+
+117
+00:34:15,112 --> 00:34:16,331
+Merhaba hocam.
+
+118
+00:34:17,091 --> 00:34:17,612
+Merhaba.
+
+119
+00:34:18,831 --> 00:34:22,891
+Bunun Türkçe'yi o kadar iyi İngilizce ile konuşabilir miyim?
+
+120
+00:34:23,411 --> 00:34:24,391
+Yes, of course.
+
+121
+00:34:24,391 --> 00:34:29,891
+Okay. Thank you. [kişisel bilgi]
+
+122
+00:34:31,188 --> 00:34:34,847
+[kişisel bilgi]
+
+123
+00:34:34,847 --> 00:34:39,347
+[kişisel bilgi]
+
+124
+00:34:39,347 --> 00:34:45,188
+[kişisel bilgi]
+
+125
+00:34:45,188 --> 00:34:52,688
+I've also done a little bit on Computer Vision before.
+
+126
+00:34:52,688 --> 00:34:54,688
+That's why I'm taking the course.
+
+127
+00:34:54,688 --> 00:34:57,688
+So, that's where I'm at now.
+
+128
+00:34:58,900 --> 00:35:01,900
+Teşekkürler.
+
+129
+00:35:01,900 --> 00:35:08,900
+You didn't get any course related with computer vision, is that right?
+
+130
+00:35:08,900 --> 00:35:10,900
+No, I have.
+
+131
+00:35:10,900 --> 00:35:11,900
+You have?
+
+132
+00:35:11,900 --> 00:35:12,900
+Yes.
+
+133
+00:35:12,900 --> 00:35:19,900
+I have studied computer vision on my own before.
+
+134
+00:35:20,820 --> 00:35:30,820
+Evet, evet. Ve ne tür bir projelerin veya bir projelerin oluştuğunu oluşturdu?
+
+135
+00:35:45,492 --> 00:35:49,252
+Bu, a self-driving car engineering program. Bu, an online program,
+
+136
+00:35:49,252 --> 00:36:02,292
+where you use computer vision and image processing to control the mobility of a car on a road.
+
+137
+00:36:02,931 --> 00:36:12,372
+So we build a deep learning model, train it on images, images of a different...
+
+138
+00:36:33,076 --> 00:36:55,615
+I see. And your baccalaure degree is computer science, computer engineering? Computer engineering. Computer engineering. Okay, okay. [kişisel bilgi] Yeah, I see. Thank you, [öğrenci]. Thank you, sir. And [öğrenci], [öğrenci].
+
+139
+00:36:58,655 --> 00:36:59,695
+Merhaba hocam.
+
+140
+00:37:00,115 --> 00:37:01,295
+Merhaba [öğrenci].
+
+141
+00:37:02,435 --> 00:37:07,536
+Ben [öğrenci]. [kişisel bilgi]
+
+142
+00:37:08,115 --> 00:37:08,755
+Hangi bölüm?
+
+143
+00:37:09,876 --> 00:37:15,135
+[kişisel bilgi]
+
+144
+00:37:15,916 --> 00:37:19,996
+[kişisel bilgi]
+
+145
+00:37:20,475 --> 00:37:20,855
+Nerede?
+
+146
+00:37:21,475 --> 00:37:23,456
+[kişisel bilgi]
+
+147
+00:37:26,804 --> 00:37:32,564
+[kişisel bilgi]
+
+148
+00:37:33,344 --> 00:37:36,884
+[kişisel bilgi]
+
+149
+00:37:38,344 --> 00:37:50,384
+[kişisel bilgi]
+
+150
+00:37:52,824 --> 00:37:54,164
+Teşekkürler [öğrenci].
+
+151
+00:37:54,835 --> 00:37:58,415
+Yani bir şeyin var, tecrüben var. Güzel.
+
+152
+00:37:59,595 --> 00:38:02,835
+Çok ilgim de var. Bu konuyla devam etmekle istiyorum.
+
+153
+00:38:03,536 --> 00:38:04,855
+Tamam. Başarılar.
+
+154
+00:38:07,335 --> 00:38:10,175
+Evet. [öğrenci], [öğrenci].
+
+155
+00:38:14,164 --> 00:38:16,024
+Öncelikle merhabalar herkese.
+
+156
+00:38:17,644 --> 00:38:17,923
+Merhaba.
+
+157
+00:38:17,923 --> 00:38:23,384
+[kişisel bilgi]
+
+158
+00:38:23,604 --> 00:38:26,664
+[kişisel bilgi]
+
+159
+00:38:27,564 --> 00:38:31,064
+[kişisel bilgi]
+
+160
+00:38:33,064 --> 00:38:37,364
+[kişisel bilgi]
+
+161
+00:38:38,132 --> 00:38:54,952
+[kişisel bilgi]
+
+162
+00:38:57,072 --> 00:39:00,211
+Güzel. Başarılar diliyorum.
+
+163
+00:39:00,552 --> 00:39:01,271
+Teşekkür ederim.
+
+164
+00:39:01,271 --> 00:39:02,271
+İyi sena.
+
+165
+00:39:03,271 --> 00:39:03,572
+Peki.
+
+166
+00:39:05,715 --> 00:39:18,635
+[öğrenci]. Merhabalar hocam. Merhaba. Ben [öğrenci]. Adını doğru mu telaffuz ettim? Nasıl okuyoruz? [öğrenci] olarak okuyorum. [öğrenci].
+
+167
+00:39:19,059 --> 00:39:46,119
+[kişisel bilgi]
+
+168
+00:39:47,059 --> 00:40:01,359
+Ders alma sebebim NLP'de birkaç kesişim noktası var görüntü işlemiyle. Özel eklimitinden görüntü üretme ve terse, stable diffusion gibi konular var. Onlar ilgi mi çekiyor? O yüzden bu dersi aldım.
+
+169
+00:40:02,399 --> 00:40:10,599
+Güzel. [kişisel bilgi] Önden önden yüksek lisanstan ders alıyorsunuz. Hadi bakalım. Başarılar.
+
+170
+00:40:11,099 --> 00:40:11,939
+Teşekkürler hocam.
+
+171
+00:40:12,403 --> 00:40:19,304
+Evet, şimdi [öğrenci]-[öğrenci] ve [öğrenci] ondan sonra.
+
+172
+00:40:21,163 --> 00:40:22,684
+Merhaba hocam.
+
+173
+00:40:23,503 --> 00:40:23,804
+Merhaba.
+
+174
+00:40:24,563 --> 00:40:26,443
+Ben [öğrenci]-[öğrenci], [kişisel bilgi].
+
+175
+00:40:27,023 --> 00:40:31,063
+[kişisel bilgi]
+
+176
+00:40:32,344 --> 00:40:33,443
+[kişisel bilgi]
+
+177
+00:40:34,043 --> 00:40:37,224
+[kişisel bilgi]
+
+178
+00:40:37,684 --> 00:40:53,844
+[kişisel bilgi]
+
+179
+00:40:54,744 --> 00:40:58,104
+Güzel [öğrenci]. Çalışıyor musun?
+
+180
+00:40:58,804 --> 00:41:00,524
+[kişisel bilgi]
+
+181
+00:41:00,524 --> 00:41:03,364
+Tamam. Peki, başarılar.
+
+182
+00:41:05,300 --> 00:41:07,619
+[öğrenci].
+
+183
+00:41:11,668 --> 00:41:28,988
+Merhabalar, [öğrenci]. [kişisel bilgi]
+
+184
+00:41:29,768 --> 00:41:32,288
+Evet, peki [öğrenci]. Güzel.
+
+185
+00:41:32,788 --> 00:41:36,007
+[kişisel bilgi]
+
+186
+00:41:37,387 --> 00:41:40,527
+Üçüncü dönemin başarılar diliyorum [öğrenci].
+
+187
+00:41:40,627 --> 00:41:41,527
+Teşekkürler.
+
+188
+00:41:41,967 --> 00:41:44,587
+[öğrenci], sonra da [öğrenci].
+
+189
+00:41:48,436 --> 00:42:13,536
+Merhaba hocam. Görüntümü de açıyorum. Ben [öğrenci], [kişisel bilgi] Bu yüzden görüntü işleminin temellerini de tam öğrenerek devam etmek istiyorum.
+
+190
+00:42:15,411 --> 00:42:20,032
+[kişisel bilgi]
+
+191
+00:42:20,451 --> 00:42:21,851
+Çalışıyor musun?
+
+192
+00:42:22,331 --> 00:42:25,311
+[kişisel bilgi]
+
+193
+00:42:25,891 --> 00:42:28,511
+Güzel. Başarılar [öğrenci].
+
+194
+00:42:28,951 --> 00:42:29,951
+Teşekkür ediyorum hocam.
+
+195
+00:42:32,991 --> 00:42:33,711
+[öğrenci]?
+
+196
+00:42:34,471 --> 00:42:35,631
+Evet, soru şunlu.
+
+197
+00:42:36,148 --> 00:42:56,508
+[kişisel bilgi]
+
+198
+00:42:58,784 --> 00:43:05,124
+[kişisel bilgi]
+
+199
+00:43:05,124 --> 00:43:15,124
+[kişisel bilgi]
+
+200
+00:43:16,224 --> 00:43:20,484
+Biomedikalde. Evet. Anladım. Tamam.
+
+201
+00:43:20,927 --> 00:43:23,087
+Güzel. Başarılar [öğrenci].
+
+202
+00:43:23,528 --> 00:43:24,467
+Teşekkürler hocam.
+
+203
+00:43:24,467 --> 00:43:28,627
+[öğrenci]. Sonra [öğrenci].
+
+204
+00:43:32,532 --> 00:43:55,492
+[öğrenci]. Hocam, internet işe yapıyordum da affedersiniz. Merhaba herkese. [kişisel bilgi] Bu dersi almanın nedeni de o dersi çok sevmem. Biraz daha bu alanda ilerlemek istiyorum. Bu şekilde.
+
+205
+00:43:56,340 --> 00:44:01,840
+Çok iyi. Önden önden tamamlıyorsunuz. Hadi bakalım. Başarılar.
+
+206
+00:44:02,480 --> 00:44:03,640
+Teşekkürler hocam. Sağ olun.
+
+207
+00:44:04,240 --> 00:44:05,460
+Evet. [öğrenci].
+
+208
+00:44:07,320 --> 00:44:14,640
+[kişisel bilgi]
+
+209
+00:44:17,640 --> 00:44:22,240
+Birazcık bilgisayar kısmıyla da ilgileniyorum.
+
+210
+00:44:23,284 --> 00:44:46,704
+Birazcık keşif amaçlı hem de bilgisayar mühendislerinin gözünden de anlayabilmek, terimlerine hakim olabilmek için, o bakış aşısını kazanmak için bu dönem böyle bir dersi seçtim. [kişisel bilgi]
+
+211
+00:44:50,612 --> 00:45:03,511
+Çok güzel. Aslında makinecilerin de Vision tarafında, özellikle Robot Vision tarafında çok ihtiyaç duyduğu bir konu. Başarılar diliyorum.
+
+212
+00:45:04,251 --> 00:45:05,511
+Çok teşekkür ederim hocam.
+
+213
+00:45:07,271 --> 00:45:12,652
+Evet, [öğrenci], [öğrenci] ve [öğrenci].
+
+214
+00:45:13,851 --> 00:45:14,971
+Merhaba hocam, sesim geliyor mu?
+
+215
+00:45:15,192 --> 00:45:15,891
+Evet, geliyor.
+
+216
+00:45:18,559 --> 00:45:38,279
+[kişisel bilgi]
+
+217
+00:45:39,220 --> 00:45:43,079
+Anladım. Çok güzel. Doktorada kaçıncı dönemin?
+
+218
+00:45:43,779 --> 00:45:44,699
+[kişisel bilgi]
+
+219
+00:45:45,199 --> 00:45:45,960
+Çalışıyor musun?
+
+220
+00:45:46,547 --> 00:45:47,847
+[kişisel bilgi]
+
+221
+00:45:48,387 --> 00:45:49,207
+Aynı zamanda.
+
+222
+00:45:50,467 --> 00:45:51,108
+Kültürde.
+
+223
+00:45:51,967 --> 00:45:52,467
+Evet hocam.
+
+224
+00:45:53,087 --> 00:45:54,347
+Peki, başarılar.
+
+225
+00:45:54,787 --> 00:45:55,707
+Teşekkür ederim hocam.
+
+226
+00:45:57,047 --> 00:45:57,507
+[öğrenci].
+
+227
+00:45:59,188 --> 00:46:16,948
+Merhaba herkese. Benim adım [öğrenci]. [kişisel bilgi] Daha önce lisansta aldığım dersler için derin öğrenmeyle emir segment teşvimi ve klasifikasyon üzerine projeler yapmıştım ufak çaplı. Computer Vision alanında da daha geçmiş konuları öğrenmek için bu dersi aldım. Benim de bu şekilde hocam.
+
+228
+00:46:18,516 --> 00:46:26,556
+Güzel. Bu kaç oldu? Üçüncü lisans öğrencim. Başarılar diliyorum [öğrenci].
+
+229
+00:46:26,876 --> 00:46:27,296
+Teşekkürler.
+
+230
+00:46:27,296 --> 00:46:31,435
+[öğrenci] [öğrenci] ve ondan sonra [öğrenci].
+
+231
+00:46:31,891 --> 00:46:59,891
+[kişisel bilgi]
+
+232
+00:46:59,891 --> 00:47:05,471
+Videolar izledim ve çok ilgimi çekiyor daha doğrusu. Bu alanda çalışmak istediğim için de bu dersi aldım.
+
+233
+00:47:05,760 --> 00:47:32,380
+[kişisel bilgi]
+
+234
+00:47:33,760 --> 00:47:36,840
+Peki, başarılar diliyorum.
+
+235
+00:47:36,900 --> 00:47:37,700
+Teşekkür ederim.
+
+236
+00:47:39,280 --> 00:47:40,280
+[öğrenci].
+
+237
+00:47:42,320 --> 00:47:43,320
+Merhabalar.
+
+238
+00:47:44,780 --> 00:47:46,220
+Merhaba, [öğrenci].
+
+239
+00:47:46,900 --> 00:47:48,580
+Görünüyor mu?
+
+240
+00:47:49,120 --> 00:47:50,040
+Görünüyor.
+
+241
+00:47:50,800 --> 00:47:55,519
+[kişisel bilgi]
+
+242
+00:47:56,680 --> 00:47:59,860
+[kişisel bilgi]
+
+243
+00:48:00,884 --> 00:48:12,943
+[kişisel bilgi]
+
+244
+00:48:14,043 --> 00:48:20,763
+İlgin var, bir çalışmışlığın var mı? Bu konuda bir proje, bir şey yaptın mı?
+
+245
+00:48:21,056 --> 00:48:27,735
+Görüntü işlemi üzerine yapmadım. Daha çok derin öğrenme, makine öğrenmesi üzerine çalışmaları yaptım.
+
+246
+00:48:27,875 --> 00:48:30,036
+Yani farklı alanlarda uyguladın, öyle mi?
+
+247
+00:48:30,576 --> 00:48:30,996
+Evet.
+
+248
+00:48:31,735 --> 00:48:35,255
+Anladım. Peki, çalışıyor muydun?
+
+249
+00:48:35,255 --> 00:48:43,096
+[kişisel bilgi]
+
+250
+00:48:43,827 --> 00:48:47,288
+Anladım. Peki, başarılar [öğrenci].
+
+251
+00:48:47,807 --> 00:48:48,648
+Teşekkür ederim.
+
+252
+00:48:51,467 --> 00:48:54,867
+[öğrenci] sonra [öğrenci].
+
+253
+00:48:58,996 --> 00:49:15,496
+Merhaba hocam, ben [öğrenci]. [kişisel bilgi] Görüntü işleme ile ilgili daha önce ders almadım. Ama almam gerektiğini düşündüm. Derslerim bitecek artık.
+
+254
+00:49:16,148 --> 00:49:22,928
+Hı hı. Dedim doğal dil işlemeye gidiyorsun, hep o alandan gidiyorsun, çeşit olsun dedin, ne yaptın?
+
+255
+00:49:24,068 --> 00:49:30,128
+Yani hocam hem ikisinin işte birleştiği modeller birbirini besliyor o açıdan da düşündüm.
+
+256
+00:49:30,128 --> 00:49:36,108
+Hem optimizasyon yaparken hani görüntü işleme de yapmak durumundayız.
+
+257
+00:49:36,228 --> 00:49:40,128
+Yani görüntü modelleri de şey oluyor. Her şekilde ve...
+
+258
+00:49:40,659 --> 00:49:50,960
+Faydası olacağını düşündüm ve çok daha geniş uygulama alanları olabileceğini düşünüyorum. Şu anda da çok yaygın kullanılıyor bu alan ve daha da ilerleyeceğini düşünüyorum. O nedenlerle seçtim.
+
+259
+00:49:51,720 --> 00:49:54,000
+Güzel. Başarılar [öğrenci].
+
+260
+00:49:54,420 --> 00:49:55,300
+Teşekkürler hocam.
+
+261
+00:49:56,780 --> 00:49:57,659
+[öğrenci].
+
+262
+00:49:58,720 --> 00:50:03,960
+[kişisel bilgi]
+
+263
+00:50:04,371 --> 00:50:17,331
+[kişisel bilgi]
+
+264
+00:50:17,991 --> 00:50:19,291
+Kaçıncı dönemindi bu?
+
+265
+00:50:19,771 --> 00:50:20,451
+İkinci dönemin.
+
+266
+00:50:20,751 --> 00:50:24,011
+İkinci dönemin. Nerede çalışıyorsun?
+
+267
+00:50:24,011 --> 00:50:28,591
+[kişisel bilgi]
+
+268
+00:50:30,071 --> 00:50:30,351
+Evet.
+
+269
+00:50:31,507 --> 00:50:33,387
+Güzel, başarılar diliyorum.
+
+270
+00:50:33,447 --> 00:50:34,088
+Teşekkür ederim.
+
+271
+00:50:35,288 --> 00:50:39,407
+[öğrenci], [öğrenci].
+
+272
+00:50:43,907 --> 00:50:46,407
+Öncelikle hocam...
+
+273
+00:50:48,884 --> 00:51:03,884
+[kişisel bilgi]
+
+274
+00:51:04,628 --> 00:51:26,348
+[kişisel bilgi]
+
+275
+00:51:32,628 --> 00:51:43,628
+Bilgim yok. Görüntü işlemeyle de herhangi bir ilgim yok. Tamamıyla öğrenmek için bu dersi...
+
+276
+00:51:44,596 --> 00:51:50,235
+Aldım. Bahsedeceklerim bu kadar.
+
+277
+00:51:51,295 --> 00:51:56,735
+[kişisel bilgi]
+
+278
+00:51:56,735 --> 00:52:06,175
+[kişisel bilgi]
+
+279
+00:52:06,224 --> 00:52:08,184
+[kişisel bilgi]
+
+280
+00:52:09,184 --> 00:52:11,764
+Bir yerde çalışıyor musun [öğrenci]?
+
+281
+00:52:12,064 --> 00:52:12,924
+[kişisel bilgi]
+
+282
+00:52:13,864 --> 00:52:14,544
+[kişisel bilgi]
+
+283
+00:52:15,064 --> 00:52:25,464
+Bir de benim ayrıyeten de merak ettiğim bir şey vardı da eğer müsaadeniz varsa şu anda sorabilir miyim?
+
+284
+00:52:26,084 --> 00:52:26,704
+Tabii, buyurun.
+
+285
+00:52:27,155 --> 00:52:45,936
+Dersin en son iki hafta içerisinde sunum yapmamızı istiyorsunuz da. Acaba bu sunum açısından herhangi bir zamanlama kısıtı var mı? Çünkü eğer zamanlama kısıtı varsa benim onu aşmama gibi bir ihtimalim yok.
+
+286
+00:52:45,936 --> 00:52:51,755
+Yok onu dert etme canım. Video da yapabilirsin [öğrenci].
+
+287
+00:52:55,155 --> 00:52:59,715
+Aktarırım ama zamanlama açısından sadece bir şey var mı diye.
+
+288
+00:52:59,755 --> 00:53:08,735
+Onu biraz daha sana ek süre verebiliriz. Dert etme, rahat ol. Hepimizin şeyleri oluyor böyle hiç.
+
+289
+00:53:09,175 --> 00:53:09,655
+Evet, doğru.
+
+290
+00:53:10,655 --> 00:53:15,295
+[kişisel bilgi]
+
+291
+00:53:15,436 --> 00:53:15,815
+Sağ olun.
+
+292
+00:53:16,376 --> 00:53:18,476
+[kişisel bilgi]
+
+293
+00:53:18,916 --> 00:53:21,255
+[kişisel bilgi]
+
+294
+00:53:22,420 --> 00:53:23,659
+[kişisel bilgi]
+
+295
+00:53:23,659 --> 00:53:35,659
+[kişisel bilgi]
+
+296
+00:53:36,440 --> 00:53:39,860
+Anladım. Peki başarılar diliyorum [öğrenci].
+
+297
+00:53:39,960 --> 00:53:43,780
+Çok sağ olun.
+
+298
+00:53:43,780 --> 00:53:48,860
+Evet. Şimdi [öğrenci] gülmüş.
+
+299
+00:53:50,675 --> 00:53:53,235
+Merhaba hocam. Görebiliyorsunuz sanırım.
+
+300
+00:53:53,835 --> 00:53:55,395
+Evet, gördük.
+
+301
+00:53:55,496 --> 00:54:00,395
+[kişisel bilgi]
+
+302
+00:54:01,155 --> 00:54:03,496
+[kişisel bilgi]
+
+303
+00:54:04,875 --> 00:54:12,295
+[kişisel bilgi]
+
+304
+00:54:12,975 --> 00:54:15,295
+[kişisel bilgi]
+
+305
+00:54:15,507 --> 00:54:23,568
+[kişisel bilgi]
+
+306
+00:54:24,987 --> 00:54:28,827
+Anladım. Hazır bir framework kullandınız değil mi?
+
+307
+00:54:29,168 --> 00:54:32,307
+Evet, PyTorch kullanmıştım. O oyunu kendim yazmıştım.
+
+308
+00:54:32,728 --> 00:54:40,068
+Oyunu kendiniz yazdınız. Peki, çalışıyorum dedin. Yüksek lisanslı kaçıncı dönem?
+
+309
+00:54:40,507 --> 00:54:40,768
+İki.
+
+310
+00:54:40,768 --> 00:54:42,168
+İkinci dönem.
+
+311
+00:54:43,027 --> 00:54:45,087
+Peki. Başarılar.
+
+312
+00:54:45,707 --> 00:54:46,347
+Teşekkür ederim.
+
+313
+00:54:48,087 --> 00:54:50,587
+[öğrenci], [öğrenci].
+
+314
+00:54:54,612 --> 00:55:14,132
+Merhaba hocam. [öğrenci] ben. [kişisel bilgi]
+
+315
+00:55:15,912 --> 00:55:17,292
+Neredesin? İstanbul'da mı?
+
+316
+00:55:17,832 --> 00:55:20,972
+[kişisel bilgi]
+
+317
+00:55:21,440 --> 00:55:38,780
+[kişisel bilgi]
+
+318
+00:55:39,160 --> 00:55:42,700
+Çok güzel. Başarılar [öğrenci].
+
+319
+00:55:42,940 --> 00:55:43,580
+Teşekkür ederim.
+
+320
+00:55:44,920 --> 00:55:45,660
+Evet, [öğrenci].
+
+321
+00:55:47,820 --> 00:55:48,720
+Merhabalar hocam.
+
+322
+00:55:49,556 --> 00:56:02,456
+[kişisel bilgi]
+
+323
+00:56:02,996 --> 00:56:08,636
+[kişisel bilgi]
+
+324
+00:56:09,236 --> 00:56:13,596
+[kişisel bilgi]
+
+325
+00:56:14,256 --> 00:56:27,716
+[kişisel bilgi]
+
+326
+00:56:27,996 --> 00:56:30,996
+Görüntü tanımayla alakalı daha önce bir çalışma yaptım.
+
+327
+00:56:30,996 --> 00:56:46,736
+[kişisel bilgi]
+
+328
+00:56:47,396 --> 00:56:49,336
+Kiminle çalışıyorsun doktorada?
+
+329
+00:56:50,096 --> 00:56:51,796
+[kişisel bilgi], [öğrenci].
+
+330
+00:56:52,456 --> 00:56:56,716
+Güzel. Başarılar [öğrenci].
+
+331
+00:56:57,236 --> 00:56:58,056
+Teşekkür ederim hocam.
+
+332
+00:56:58,771 --> 00:57:00,592
+[öğrenci]
+
+333
+00:57:06,324 --> 00:57:07,264
+Geliyor mu hocam?
+
+334
+00:57:07,963 --> 00:57:08,804
+Evet, geliyor.
+
+335
+00:57:11,244 --> 00:57:30,384
+[kişisel bilgi]
+
+336
+00:57:31,059 --> 00:57:49,460
+[kişisel bilgi]
+
+337
+00:57:52,199 --> 00:57:54,919
+Lisans sizin şeyde mi? Neredeydi?
+
+338
+00:57:55,572 --> 00:58:14,152
+[kişisel bilgi] [öğrenci] ben seni hiç çıkaramadım. Ders almış mıydın benden? Yok hocam ben sizden hiç ders almadım. Denk gelmedik mi? Tamam. Peki. Başarılar diliyorum [öğrenci]. Sağ olun hocam. Teşekkürler.
+
+339
+00:58:15,152 --> 00:58:18,332
+[öğrenci]. Merhaba.
+
+340
+00:58:21,043 --> 00:58:27,443
+[kişisel bilgi]
+
+341
+00:58:28,483 --> 00:58:34,804
+[kişisel bilgi]
+
+342
+00:58:36,384 --> 00:58:42,764
+[kişisel bilgi]
+
+343
+00:58:43,572 --> 00:58:50,652
+Bu ders almanın sebebi aslında birazcık burada projeler yapmak istemem. Daha önce bir çalışmam olmadı. Öğrenmek ve proje yapmak istiyorum bu şekilde.
+
+344
+00:58:51,512 --> 00:58:52,192
+Çalışıyor musun?
+
+345
+00:58:53,012 --> 00:58:54,972
+[kişisel bilgi]
+
+346
+00:58:55,472 --> 00:59:03,392
+Evet veri mühendisi olarak demiştin az önce doğru. Evet. Peki yüksek lisanslı kaçıncı dönemin?
+
+347
+00:59:03,392 --> 00:59:08,192
+[kişisel bilgi]
+
+348
+00:59:08,559 --> 00:59:10,859
+[kişisel bilgi]
+
+349
+00:59:11,939 --> 00:59:14,499
+[kişisel bilgi]
+
+350
+00:59:14,819 --> 00:59:15,079
+Evet.
+
+351
+00:59:15,839 --> 00:59:17,419
+Peki. Başarılar [öğrenci].
+
+352
+00:59:17,739 --> 00:59:18,379
+Teşekkürler.
+
+353
+00:59:19,899 --> 00:59:25,659
+Ben sanki kimseyi atlamadım gibi düşünüyorum ama soracağım. Söz vermediğim kimse var mı?
+
+354
+00:59:30,771 --> 00:59:31,711
+Sanırım yok.
+
+355
+00:59:46,900 --> 01:00:08,519
+Evet, 25 kişi söz almış, konuşmuş ve 26 benimle beraber doğrudur. Kimseyi atlamamışım. Peki arkadaşlar, tanıştığımıza sevindim. Hepinize ayrı ayrı şöyle bir dinlemek istedim. Aranızda görüntüyle ilgili ya da vision tarafında biraz tecrübesi olanlar var.
+
+356
+01:00:09,204 --> 01:00:27,604
+Tecrübesi olmayanlar da var. O yüzden başta da belirttiğim gibi ders temelden başlayacak ve o şekilde ilerleyeceğiz. Bu arada ben şeyi de belirteyim. Hiç ben kendimden bahsetmedim. Ben de tanıtayım kendimi.
+
+357
+01:00:37,204 --> 01:00:54,963
+Doktoramı Bilgisayar Mühendisliği bölümünde yaptım. Hem yüksek lisansta hem de doktorada görüntü üzerine çalışmalar gerçekleştirdim. Bilgisayar Mühendisliği bölümünde öğretim üyesi olarak çalışmaya başladım Yıldız'da.
+
+358
+01:01:04,532 --> 01:01:28,952
+Yeni kurulmuş olan bir enstitü var. Sağlık Veri Araştırmaları ve Yapay Zeka Uygulamaları Enstitüsü. TÜSEP çatısı altında, Türkiye Sağlık Enstitüleri Başkanlığı altında. Burada biz sağlık verileri üzerine yapay zeka uygulamaları hem geliştirmeye çalışıyoruz hem de bu konuda araştırma, çalışma yapmak isteyen ekipleri yönlendiriyoruz.
+
+359
+01:01:32,340 --> 01:01:52,360
+Aslında Yıldız Teknik Üniversitesi'nden TÜSEB'e görevlendirme ile geçtim. Ve dediğim gibi bir buçuk yıldır burada çalışıyorum. Ama Yıldız'da ders vermeye, yüksek lisansla ders vermeye devam ediyorum. Yüksek lisanslarda master ve doktora öğrencilerim var. Yine onlarla çalışmalara devam ediyoruz.
+
+360
+01:01:52,947 --> 01:02:03,167
+Benimle çalışmak isteyen öğrencilere ağırlıklı olarak artık sağlık alanından uygulama yapmalarını istiyorum ve o alanda konu veriyorum.
+
+361
+01:02:05,460 --> 01:02:32,619
+Aslında şunu da söylemem gerekir ki, sağlık alanında çok fazla çözülebilecek problem var. Bilgisayarla geliştirilecek bu tür computer-aided diagnosis dediğimiz sistemler maalesef çok fazla yapılmamış. Bunun bir sebebi de tabii veriye ulaşımla ilgili yaşanan problemler. Bu problemler aşıldığı takdirde bu alanda çok güzel işler yapılabileceğine inanıyorum.
+
+362
+01:02:33,460 --> 01:02:52,519
+Ve şunu da ekleyeyim. Sohbete yazalım. Grandchallenge.org diye bir site var.
+
+363
+01:02:53,460 --> 01:03:09,460
+Arada tire olmayabilir bakın siz. Bu sitede aslında yarışmalara ait bir takım veriler yayınlanıyor ve çalışılan verilerin %90'ı neredeyse sağlık alanında.
+
+364
+01:03:09,880 --> 01:03:21,460
+Az önce belirttiğim konu hani çok fazla veriye ulaşım kolay olmuyor demiştim. En azından bu tür yarışma verileri aslında bakarsanız bize bir kapı.
+
+365
+01:03:21,460 --> 01:03:40,019
+Ve Proof of Concept bazı işleri bu küçük çapta veri üzerinde gerçekleştirmek ve bunun yapılabilirliğini görmek mümkün. Dolayısıyla buradan ilerlememiz çok olası görünüyor.
+
+366
+01:03:49,460 --> 01:04:17,460
+Bu sene ilk defa bir patoloji konusuna da girdik. Dijital patoloji, histopatoloji. Patoloji ile ilgili bu sözünü ettiğim sitede yine çok fazla veri var. Ama biz burada bir proje başlattık. Bu projede melanom bir cilt kanseri türü. Bu melanomla ilgili alınmış patoloji görüntüleri.
+
+367
+01:04:17,460 --> 01:04:30,099
+Görüntüleri üzerinden kanser evresi tahmini ve işte bir patoloğun yaptığı işi bilgisayara yaptırarak bu işin süresini kısaltmayı hedefliyoruz.
+
+368
+01:04:31,000 --> 01:04:39,539
+Şu anda bir patoloji, bir patolog bir hasta için neredeyse bir saat ile 90 dakika arasında zaman harcıyormuş.
+
+369
+01:04:39,539 --> 01:04:42,900
+Bir hasta için rapor yazabilmek için.
+
+370
+01:04:46,420 --> 01:05:11,180
+Patoloji görüntüleri, daha önce sadece mikroskop altında manuel olarak yapılan bu işlemi artık dijital tarayıcılarla 40 kat büyütme ile büyütülmüş görüntüleri kaydetmek ve bunun üzerinde patoloğun bu iş için harcadığı süreyi 15-20 dakikaya indirmek mümkün görünüyor.
+
+371
+01:05:11,180 --> 01:05:14,360
+Onlara yardımcı olacak bu tür araçlar.
+
+372
+01:05:14,420 --> 01:05:35,860
+Bunun bir diğer avantajlı tarafı da farklı şehirlerde ya da farklı ülkelerde yaşayan uzmanların da artık bu görüntüler üzerinde, dijital platforma taşınmış görüntüler üzerinde değerlendirme yapmaları, ortak rapor yazmaları mümkün hale gelebiliyor.
+
+373
+01:05:39,123 --> 01:06:03,703
+Az önce de belirttiğim gibi bu alanda çok fazla çözülecek problem var. İleride çalışmak isteyen arkadaşlar da olursa tavsiye ederim. Olabildiğince sağlık alanındaki problemleri kendinize test konusu olarak alabilirsiniz. Çok da faydalı olur. Hatta bunların zaman içerisinde bir ürüne dönüşme.
+
+374
+01:06:04,115 --> 01:06:13,516
+Bu ihtimali de artar. Yine bu kurumda başladığımda şunu gördüm. Tabii ki alandaki doktorlar buradaki ihtiyaçları görüyorlar.
+
+375
+01:06:14,739 --> 01:06:26,919
+Sektöre baktığımız zaman startupların çoğunun, sağlık alanında çalışan, bu tür sistemler geliştiren startupların çoğunun doktorlar tarafından kurulduğunu görüyorum.
+
+376
+01:06:29,719 --> 01:06:32,739
+Bilgisayar mühendislerinin de aslında burada...
+
+377
+01:06:34,387 --> 01:06:43,708
+Bir doktorla birlikte çalışarak kendi startuplarını kurmalarının da mümkün olduğunu belirtmek isterim.
+
+378
+01:06:44,768 --> 01:06:58,347
+Evet, şimdi ilk hafta için bir Introduction to Computer Vision diye bir sunum ile başlayacağım.
+
+379
+01:06:59,059 --> 01:07:04,280
+Bu arada ders notlarını Avisis üzerinden paylaşıyorum. Onu belirteyim.
+
+380
+01:07:08,916 --> 01:07:10,056
+Tam ekran oldu mu?
+
+381
+01:07:14,804 --> 01:07:15,564
+Evet hocam.
+
+382
+01:07:16,984 --> 01:07:17,784
+Teşekkürler.
+
+383
+01:07:22,184 --> 01:07:29,884
+Avesiz'de her hocanın biliyorsunuz kendi paylaşımlarıyla ilgili bölüm var. Oradan bu paylaşımları yapıyorum.
+
+384
+01:07:29,884 --> 01:07:37,504
+Hem ders içeriğini, ders tanıtım formunu hem de haftalık sunumları oradan yükleyeceğim.
+
+385
+01:07:41,108 --> 01:08:00,307
+Sizinle bir e-mail göndermek istediğimde de online Yıldız Edüter üzerinden ders duvarı veya oradan e-mail gönderme opsiyonunu kullanarak haberleşebilirim diye düşünüyorum. O kanalları deneyeceğim.
+
+386
+01:08:00,307 --> 01:08:02,307
+Şimdi...
+
+387
+01:08:04,659 --> 01:08:10,139
+Bu hafta şöyle bir ara versek mi acaba? Ne kadar oldu? Bir dakika, saate bakalım.
+
+388
+01:08:15,411 --> 01:08:21,711
+Evet, ben bir beş dakika ara vereyim arkadaşlar. Beş dakika sonra şu sunum üzerinden ilerleyelim.
+
+389
+01:08:22,532 --> 01:08:33,572
+Kapatmıyorum sunumu. Sadece şey yapıyorum. Kameramı ve mikrofonumu kapatıyorum. Beş dakika yeter mi? On dakika mı yapayım?
+
+390
+01:08:36,032 --> 01:08:37,471
+Beş dakika yeterli gibi hocam.
+
+391
+01:08:39,051 --> 01:08:42,572
+Peki. O zaman beş dakika diyoruz. Hadi bakalım. Görüşmek üzere.
+
+392
+01:08:43,636 --> 01:08:44,516
+Teşekkürler.
+
+393
+01:15:57,108 --> 01:16:04,048
+Evet, beş dakikamız doldu. Başlayabiliriz. Kimler burada? Elleri göreyim bakayım.
+
+394
+01:16:18,676 --> 01:16:27,316
+15 katılımcı parmak kaldırdı. 16 oldu. 30 kişiyiz. Öbürleri nerede? 17.
+
+395
+01:16:33,844 --> 01:16:36,384
+Neyse, yarıyı geçtik diyelim o zaman.
+
+396
+01:16:40,916 --> 01:16:45,836
+Evet, böyle bir de yoklama yapıyorum. Bir de ders biterken yoklama yapıyorum. Haberiniz olsun.
+
+397
+01:16:51,275 --> 01:16:53,896
+Katılımcıları bu şekilde bir yokluyorum.
+
+398
+01:16:54,956 --> 01:17:00,396
+Peki arkadaşlar, başlayabiliriz. Şunu şuraya alayım.
+
+399
+01:17:11,475 --> 01:17:38,475
+Sizi görmeden ders anlatmak çok zor, onu başta söyleyeyim. Çünkü genelde insanların yüzünü görerek ders anlattığınızda bir geri besleme oluyor ve kim anladı, ne kadar anladı az çok biraz fikir veriyor bize. Böyle biraz boşluğu anlatıyor gibiyim. Bu dönem tekrar böyle online ortamda ders anlattığım için üzgünüm.
+
+400
+01:17:39,412 --> 01:17:44,612
+Umarım dönemin ortasında tekrar yüz yüze ders yapmaya başlarız.
+
+401
+01:17:46,231 --> 01:17:57,352
+Ama ben sizi uyutmamak adına olabildiğince derste kısa tutup buna dikkat edeceğim.
+
+402
+01:18:00,340 --> 01:18:10,280
+Dersin başında sizinle tanışırken de az çok anladım ki herkesin bir parça görüntüyle ilgili bir şeyi var, dokunmuşluğu var.
+
+403
+01:18:12,760 --> 01:18:23,720
+Bu slide'da biz ne görüyoruz, bilgisayar ne görüyor şeklinde bir sayfa var ekranınızda.
+
+404
+01:18:24,307 --> 01:18:37,228
+Bir grayscale image verilmiş, gri tonlamalı ve sol tarafta verilmiş olan, siz benim mouse hareketlerimi görebiliyor musunuz? Yoksa ben şuradan bir şey mi açmalıyım?
+
+405
+01:18:38,307 --> 01:18:39,528
+Mouse hareketlerim görünüyor mu?
+
+406
+01:18:39,528 --> 01:18:40,208
+Görüyoruz hocam.
+
+407
+01:18:40,208 --> 01:18:40,868
+Evet, tamam.
+
+408
+01:18:49,363 --> 01:19:07,003
+Grayscale Image, her bir pikseli 8 bitle kodlanmış bir görüntü ve dolayısıyla 0.255 arasında değer alabilir. Sağ tarafta da gördüğümüz bunun işte decimal karşılığı diyebiliriz.
+
+409
+01:19:08,627 --> 01:19:25,347
+Tabi bu görüntü formatlarının çok çeşitli olduğunu biliyorsunuz. Binary Image, Grayscale Image, True Color Image, Index Color Image gibi değişik formları var. Bunları ayrıca ilerleyen haftalarda anlatacağım.
+
+410
+01:19:26,612 --> 01:19:53,092
+Bir bilgisayarla görme sisteminin bileşenleri nelerdir diyor. Klasik, benim önce bir kameram olacak. Burada gördüğümüz, görüntülediğim bir sahne olacak. Bu sahnenin bir ışığı olacak. Bu ışığın sahnedeki nesneler üzerine düşmesi ve aydınlatması ve buradan yansıyan ışığın kameraya ulaşması gerekiyor ki bu görüntü alınabilsin.
+
+411
+01:19:54,612 --> 01:19:58,752
+Bu bir statik imaj olabilir. Bu bir video.
+
+412
+01:20:00,000 --> 01:20:11,239
+Bir bilgisayara aktarıyoruz ve sonuçta bu sahnenin yorumlanması, değerlendirilmesi tümüyle bilgisayar ortamında gerçekleştiriliyor.
+
+413
+01:20:12,460 --> 01:20:19,079
+Şimdi burada bahsedeceğim konuları elektronikçiler daha kolay kavrayacaktır diye düşünüyorum.
+
+414
+01:20:19,079 --> 01:20:28,000
+Bir sampling ve quantization işlemi var. Biz bir görüntüyü belli bir çözünür...
+
+415
+01:20:28,000 --> 01:20:42,000
+Yani kaç satır, kaç sütundan oluşuyor, kaç pikselle bir görüntü alıyoruz. Bu bizim için sampling anlamına geliyor, örnekleme. Ve bu aldığımız her bir örneğin...
+
+416
+01:20:43,155 --> 01:20:49,296
+Her bir örneğin kaç bitle kodlanacağı kısmı da quantization kısmı oluyor.
+
+417
+01:20:51,095 --> 01:20:56,855
+Görüntü çözünürlüğü ne kadar yüksekse, görüntü kalitesi o kadar yüksektir.
+
+418
+01:20:57,195 --> 01:21:09,476
+Yani sol tarafta görmüş olduğunuz bu karelerin ne kadar sıksa, sağ tarafta oluşan görüntü o kadar az mozaikli hale gelecektir tahmin edersiniz ki.
+
+419
+01:21:09,476 --> 01:21:11,155
+Dolayısıyla burada...
+
+420
+01:21:11,155 --> 01:21:24,456
+Burada çözünürlük dediğimiz rezolüsyon önemli bir parametre. İkinci önemli parametre de kaç bitle kodlandığı yani quantization dediğimiz işlem oluyor.
+
+421
+01:21:29,235 --> 01:21:53,536
+Sample the 2D space on a regular grid demiş. Ben bir dijital görüntü oluştururken az önce belirttiğim gibi sampling yani örnekleme işlemi gerçekleştiriyorum kamera yardımıyla ve bu kameranın çözünürlüğü var. Ne kadar yüksek çözünürlüklü olursa bu sözünü ettiğimiz griddeki karelerin sayısı o kadar çok olacak.
+
+422
+01:21:57,235 --> 01:22:08,235
+Bir pikselin renk derinliği olarak kaç bitle kodlandığı kısmı var. Burada sınırlı bir...
+
+423
+01:22:09,427 --> 01:22:37,427
+Platformda çalışıyoruz. Yani ben 8 bitle kodlayacaksam 256 seçenek var. 256'ya bölmek zorundayım bütün o aydınlık seviyelerini. Dolayısıyla burada sözüne ettiğimiz örneklenmiş olan parlaklık değerini elimdeki mevcut parlaklık değerleri, sınırlı bir aralık içerisinde olan parlaklık değerlerinden hangisine en yakın ise onunla ifade etmem gerekir ki buna da kuantize.
+
+424
+01:22:37,427 --> 01:23:02,927
+Bu değişim işlemi deniyor. Burada ekranda gördüğümüz i ve j dediğimiz satır numaraları ve sütün numaralarını kodlayan bir matriz ve bu matrizin sol üst köşesini sıfıra sıfır kabul edip bu matrizin her bir gözünde yer alan sayıları da o pikseli temsil eden parlaklık değeri olarak
+
+425
+01:23:03,279 --> 01:23:05,019
+Düşünebilirsiniz.
+
+426
+01:23:08,119 --> 01:23:18,180
+Görüntü işlemenin adımlarında aslında sol taraftan başlayacağım. Dönerek sağ tarafa doğru ilerleyeceğim.
+
+427
+01:23:18,180 --> 01:23:23,180
+Image Requisition dediğimiz kısım görüntü toplama kısmı.
+
+428
+01:23:26,100 --> 01:23:39,600
+Elinizde bu imkan varsa, yani görüntüyü siz alıyorsanız ortamı siz hazırlıyorsunuz demektir. Mesela biz çalıştığımız bir projede işitme engelliler için bir...
+
+429
+01:23:41,456 --> 01:24:03,136
+İşaret dili tanıma sistemi oluşturmak istemiştik ve bu projede İşitme Engelliler Derneği'nden bize üç arkadaş geldi. Biz onlarla tabii yazarak iletişim kurduk ve Kine kamera ile video görüntüleri kaydettik. İşaret dilinde her bir kelimenin bir hareket karşılığı var.
+
+430
+01:24:07,604 --> 01:24:18,043
+Arka plandan tutun da işareti yapan kişinin kameraya olan uzaklığına kadar her türlü şeyi başta siz kurgulamak zorundasınız.
+
+431
+01:24:18,043 --> 01:24:32,224
+Yani görüntü toplama dediğimiz kısmı eğer kendi elimizde ise sahnenin aydınlığı, nesneye olan uzaklığınız vesaire gibi tüm bu konuları üzerinde düşünmüş olmanız gerekiyor.
+
+432
+01:24:32,584 --> 01:24:35,604
+Kişinin tüm bedenini bir video...
+
+433
+01:24:35,604 --> 01:25:00,164
+Karesini alacak mıyım? Yoksa sadece üst uzuvları göstermem yeterli midir? Buna karar vermem gerekiyordu. Dolayısıyla biz böyle bir çalışma gerçekleştirdik. Mesela burada önemli hususlardan biri Kinec kamera. İskelet sistemini görme ihtiyacı duyduğu için orada görüntünün bütün bedeni alacak şekilde kurgulanmış olması gerekiyor.
+
+434
+01:25:04,148 --> 01:25:30,968
+Görüntünün iyileştirilmesi. Eğer görüntüyü siz belli bir sahnede kendiniz ışıklandırarak alıyorsanız çok ideal koşulları sağlayabilirsiniz. Ama gerçek hayat böyle bir ideal koşul sunmuyor size. Gelen test görüntüleri veya veya train için, modeli eğitmek için size verilmiş olan görüntülerin de sizin tarafınızdan önce iyileştirilmesi ihtiyacı olabiliyor.
+
+435
+01:25:32,340 --> 01:25:52,500
+Bir Noise Reduction gibi gürültü azaltma yöntemlerine ihtiyaç duyabiliyoruz. Parlaklık değerlerinin düzeltilmesi işlemlerine ihtiyaç duyabiliyoruz. Color Image Processing'de yani ben bir renkli görüntüyle mi çalışıyorum yoksa grayscale bir image ile mi çalışıyorum?
+
+436
+01:25:52,500 --> 01:26:00,340
+Buna bakarak renkli görüntülerde her renk paleti için RGB renk paletleri üzerinde işlem yapabilirim.
+
+437
+01:26:00,340 --> 01:26:09,860
+Veya renkli görüntünün saklandığı farklı formatlar var. HSV, CLAP vesaire gibi.
+
+438
+01:26:12,500 --> 01:26:31,180
+Renk uzayları arasında bir takım dönüşümler yapma ihtiyacı duyabilirim. Color Image Processing kısmı yine çok zengin bir alan. Image Restoration kısmı var. Bu mesela yine benim bir şeyde master tezimde çalıştığım bir konuydu.
+
+439
+01:26:40,500 --> 01:27:04,460
+Ve yazılar üzerinde dökülmeler olabiliyor. Dolayısıyla elde ettiğiniz görüntüyü restore etme ihtiyacı duyuyorsunuz. Bu da bir nevi image enhancement'a benziyor ama ondan biraz daha farklılaşabiliyor. Bu noktada da ilginç çözümler ve problemler karşımıza çıkabiliyor.
+
+440
+01:27:06,195 --> 01:27:25,495
+Sağ tarafa doğru ilerlediğimde ben almış olduğum görüntüyü sonuçta bir yerde store edeceğim, depolayacağım. Bu depoladığım görüntünün ham şekilde saklanması mümkün veya sıkıştırılarak saklanması mümkün. Bunun üzerinde de çalışma yapmam gerekiyor.
+
+441
+01:27:34,195 --> 01:27:52,556
+Uygulayabiliyorsunuz. Çünkü görüntüde yapılan tüm sıkıştırma işlemleri kayıplı sıkıştırmadır. Ve görüntü kalitesini geriye dönüş olmaksızın kaybediyorsunuz sıkıştırma işlemi yaptığınızda. Dolayısıyla burada bir karar verilmesi gerekiyor.
+
+442
+01:28:02,195 --> 01:28:06,036
+Mesela ben hemen histopatoloji görüntülerinden bahsedeceğim.
+
+443
+01:28:06,036 --> 01:28:18,195
+Whole slide image yani bir camı taradığınız zaman 40 kat büyütme ile elde ettiğimiz görüntünün boyutu 38 GB oluyor.
+
+444
+01:28:18,595 --> 01:28:22,275
+Tek bir görüntünün 38 GB olduğunu düşünebiliyor musunuz?
+
+445
+01:28:22,615 --> 01:28:26,435
+Yani biz bu görüntüyü sıkıştırmadan saklamak zorundayız.
+
+446
+01:28:26,775 --> 01:28:30,195
+Tamam, güzel, sıkıştırmadık ama nasıl işleyeceğiz sorusu karşılık.
+
+447
+01:28:30,195 --> 01:28:49,175
+Orada da genelde uyguladığımız yöntemler, bunları bir ROE dediğimiz alanlara bölmek, region of interest yani ilgilendiğimiz bölgeleri çıkarmak olabilir veya görüntüyü yamalara bölerek kullanmak şeklinde değişik çözüm yöntemleri uyguluyoruz.
+
+448
+01:28:49,175 --> 01:28:55,175
+Ama sağlık görüntülerinde compression kullanmıyoruz. Diğer tarafta dediğim gibi...
+
+449
+01:28:55,695 --> 01:29:22,995
+Eğlence amaçlı, çekmiş olduğumuz fotoğraflar vs. bunların hepsinde sıkıştırma işlemi yapılabilir. Çünkü sıkıştırdığınız görüntü ile orijinal görüntü, ham hali arasında insan gözünün algılayamayacağı detaylar var. O detayları görmeseniz de olur. Yani sadece bakıp geçtiğiniz bir fotoğraftır. O yüzden burada sıkıştırma teknikleri yaygın olarak kullanılır.
+
+450
+01:29:23,604 --> 01:29:39,664
+Ve bu yine görüntü işlemenin üzerinde çalıştığı önemli konulardan biri. Aşağıya doğru indiğimiz zaman Image Segmentation, Representation Description ve Classification Recognition konuları gündeme geliyor.
+
+451
+01:29:43,988 --> 01:30:00,000
+Sınıflama işlemi yapabiliriz. Yani bir classification. Sadece ben görüntüyü veririm derim ki bu görüntüde görmüş olduğunuz, diyelim ki hepsi akciğer görüntüsü hastalıklı mıdır değil midir gibi bir.
+
+452
+01:30:00,000 --> 01:30:18,119
+Bir sınıflama yapıyor olabilirim. Buna classification diyoruz. Eğer ben bu vermiş olduğum görüntü üzerinde hastalıkta olan bölgeyi detect etmesini istiyorsam o zaman bunun adı object detection ya da detection methods diye geçiyor.
+
+453
+01:30:18,119 --> 01:30:28,000
+İlgili bölgeyi bir bounding box ile değil de piksel bazında işaretlemem gerekiyorsa burada da bir segmentation işlemi.
+
+454
+01:30:28,000 --> 01:30:37,739
+Yaptığımızı söyleyebiliriz. Yani görüntü üzerinde farklı çözümler ihtiyaca göre devreye sokulabiliyor.
+
+455
+01:30:39,796 --> 01:30:56,155
+Derste bu işin ABC'siyle başlayacağız dedik. Ben size dersin belli aşamalarında, mesela önümüzdeki hafta NumPy Tutorial'ı verdiğim zaman basit bir takım görüntüler vererek bunlar üzerinde bu işlemleri yapmanızı bekleyeceğim.
+
+456
+01:31:07,796 --> 01:31:27,296
+Bazen bu tarz çözümlere gidebiliyoruz. Image Enhancement dediğimiz başlık altında görüntüde var olan problemi algılayıp buna bir çözüm üretmemiz gerekiyor. Sol tarafta verilmiş olan bir aerial image var, bir hava fotoğrafı bu.
+
+457
+01:31:28,979 --> 01:31:48,619
+Ve çok aydınlık patlamış bir fotoğraf. Işık miktarı çok fazla. Arkaya doğru baktığımız zaman detaylar çok iyi görünmüyor. Böyle bir görüntü üzerinde Intensity Transformation dediğimiz işlemi gerçekleştirebiliyoruz.
+
+458
+01:31:56,979 --> 01:32:11,059
+Gamma parametresine göre ki buna gamma correction işlemi deniyor. Gamayı 3, 4 ya da 5 seçerek gitgide görüntünün daha koyu hale gelmesini sağlayabiliyorsunuz.
+
+459
+01:32:11,391 --> 01:32:34,511
+Şurada Gamayı bir seçmiş, üç seçmiş ve dört seçmiş. Böylece aslında az önce şu arka bölümde çok aydınlık olan kısım daha anlaşılır hale gelmiş. Özellikle şu bölümdeki detaylar burada daha seçilebilir hale gelmiş bu düzeltme işleminden sonra.
+
+460
+01:32:34,851 --> 01:32:39,371
+Dersin üçüncü ya da dördüncü haftası gibi bu Gamma Correction işlemleri.
+
+461
+01:32:39,391 --> 01:32:57,331
+Nasıl yapıldığını birlikte göreceğiz. Aslında Intensity Transformation ya da Gamma Correction dediğimiz işlem son derece basit bir dizi eğri yardımıyla yapılıyor. Bu dönüşüm eğrilerinin
+
+462
+01:32:58,899 --> 01:33:11,100
+Yatay eksenine baktığımız zaman input intensity level demiş. Dikey eksene baktığımız zaman ise output intensity level demiş. Buna R.
+
+463
+01:33:12,051 --> 01:33:29,751
+Yataydakine R diyor, dikeydekine S diyor. Ve bu şekilde baktığımızda şu ortada gamanın bir olduğu durum aslında identity yani giriş değeri neyse çıkışta da onu veriyor.
+
+464
+01:33:30,163 --> 01:33:40,343
+Girişteki bir parlaklık değerini eğriyle kesiştiriyorsunuz ve bunun outputta nereye denk geldiğine bakıyorsunuz. Birebir aynı gama 1 olduğunda.
+
+465
+01:33:41,844 --> 01:33:57,663
+Mesela gamanın 5 olduğu durum için bakalım. Lütfen değerlendirmemi dikkatli dinleyin. Input Intensity Level'ı L bölü 2 yani skala zaten L'ye kadar 0 L arasında ya da L-1 arasında.
+
+466
+01:34:05,728 --> 01:34:15,728
+0-255 arasındaki bir parlaklık değerinin tam ortadaki gri tonu anlamına geliyor. Ve bunu eğriyle kesiştirip...
+
+467
+01:34:15,956 --> 01:34:39,676
+Bu eğrinin y ekseninde nereye denk geldiğine baktığımızda şunu görüyoruz. Aslında sıfıra çok yakın bir noktaya geliyor. L bölü 2'ye gelmiyor. L daha sıfıra yaklaştırmış oluyoruz. Peki sıfır nedir? Burada sıfır siyahı, L bölü 2 ya da 255 beyazı gösteriyor.
+
+468
+01:34:43,956 --> 01:34:54,876
+Bu aralığın içerisinde ben tam ortadaki bir parlaklık değerini alıp bu gamma correction yöntemiyle ya da gamma eğrileriyle
+
+469
+01:34:55,252 --> 01:35:07,952
+Parlaklık değerini dönüştürdüğümde bunun outputta bana vermiş olduğu değer sıfıra yakın yani görüntü üzerinde koyulaşma etkisi yapacağı anlamına geliyor.
+
+470
+01:35:07,952 --> 01:35:21,852
+Ve ortadaki gamma eşit birin altında kalan şu sağ taraftaki tüm eğrilerin görevi bize verilmiş olan görüntüyü koyulaştırma görevi var.
+
+471
+01:35:22,420 --> 01:35:36,060
+Gamma 1'in üstünde kalan yani 0.65, 0.40 gibi değerler alan şu eğrilerin görevi ise burada baktığımız zaman mesela L bölü 2'yi nereye taşıyor? Daha.
+
+472
+01:35:36,543 --> 01:36:00,503
+Daha beyaza doğru taşıyor. Yani daha aydınlık hale getiriyor. Bu gama eğrileri görüntüdeki ihtiyaca göre koyulaştırma amaçlı ya da görüntüyü çok koyu olan bir görüntüyü açma, aydınlatma amaçlı kullanılabiliyor.
+
+473
+01:36:03,859 --> 01:36:20,159
+Dediğim gibi bununla ilgili zaten uygulamada yapacağız. Yine görüntüyü de iyileştirme amaçlı kullanabileceğimiz diğer bir yöntem Contrast Enhancement olabilir. Kontrast kavramını eminim çok duymuşsunuzdur ama burada biraz bunu yorumlayacağız.
+
+474
+01:36:20,159 --> 01:36:25,159
+Şu da görmüş olduğunuz görüntü.
+
+475
+01:36:32,692 --> 01:36:40,652
+Neyse, burada low contrast image, bir düşük kontrastlı görüntü. Bu görüntü bir polenin.
+
+476
+01:36:41,332 --> 01:36:55,592
+Büyütülmüş görüntüsü. Biliyorsunuz baharda, bahar aylarında polenler havada çok fazla oluyor ve bu bazı alerjik bünyeli insanları rahatsız ediyor. Bu polen görüntüsüydü hatırladığım kadarıyla.
+
+477
+01:36:55,592 --> 01:37:07,852
+Ve görüntü alınırken daha low contrast image yani düşük kontrastlı olarak alınmış. Şimdi düşük kontrastlı görüntü ne demek? Önce biraz onu yorumlayacağım.
+
+478
+01:37:09,332 --> 01:37:13,572
+Yine bir teknik bir bilgiden yararlanarak size anlatacağım.
+
+479
+01:37:13,572 --> 01:37:23,012
+Şöyle ki, bu düşük kontrastlı görüntünün low contrast image şurada yer alıyor.
+
+480
+01:37:23,692 --> 01:37:27,832
+Histogramına bakıyoruz. Burada gördüğümüz şey image histogramı.
+
+481
+01:37:29,252 --> 01:37:32,771
+Histogram kelimesini daha önce duymayan var mı?
+
+482
+01:37:38,228 --> 01:37:40,488
+Herkes biliyor histogramın ne olduğunu.
+
+483
+01:37:41,668 --> 01:37:46,828
+Peki, güzel. O zaman hızlıca bir tanımını yapayım, geçeyim.
+
+484
+01:37:46,828 --> 01:37:52,728
+Bu görüntü içerisindeki bütün parlaklık değerlerinin şu yata eksende olduğunu düşünelim.
+
+485
+01:37:52,928 --> 01:37:55,128
+Yani sıfır siyahla başlıyor.
+
+486
+01:37:55,551 --> 01:38:06,271
+255 beyaza kadar gidiyor. Her bir parlaklık değerinin bu görüntü içerisindeki kullanılma sıklığı ya da frekansını gösteriyor.
+
+487
+01:38:06,271 --> 01:38:17,331
+Ve düşük kontrastlı görüntü dediğimiz low contrast image için histograma baktığımız zaman gördüğümüz şey bu görüntü içerisinde hiç siyah yok.
+
+488
+01:38:17,831 --> 01:38:21,651
+Sol tarafta gördüğünüz gibi histogramın sol tarafında hiçbir çubuk yok.
+
+489
+01:38:22,323 --> 01:38:28,323
+Bu görüntü içerisinde hiç beyaz yok. Yani sadece dar bir...
+
+490
+01:38:28,815 --> 01:38:38,555
+Aralıktaki parlaklık değerleri sadece kullanılmış. Dolayısıyla bu tarz bir görüntüye düşük kontrastlı görüntü deniyor.
+
+491
+01:38:38,555 --> 01:38:47,675
+Tekrar söyleyeceğim. İçinde hiç siyah yok, içinde hiç beyaz yok. Tam siyah ve tam beyaz değerlerinin olmadığı bir görüntüden bahsediyoruz.
+
+492
+01:38:48,595 --> 01:38:55,195
+Bu görüntü düşük kaliteli bir görüntüdür ve bunu iyileştirmek için, bunu iyileştirmek için
+
+493
+01:38:56,020 --> 01:39:03,020
+Bizim bu dar bölgeye sıkışmış olan parlaklık değerlerini...
+
+494
+01:39:03,648 --> 01:39:20,547
+Açmamız gerekir. Bunu da yine Image Enhancement yöntemleriyle yapabiliyoruz ve şurada verilmiş olan görüntü High Contrast Image dediğimiz bir alttaki görüntüye dönüştürülebiliyor. Bu sözünü ettiğimiz iyileştirme tekniklerini kullanarak.
+
+495
+01:39:31,648 --> 01:39:48,828
+Programdaki bu dağılım sol tarafa yığılmışsa, yani sıfıra yakın bir bölgeye sıkışıp kalmışsa, bu görüntü bir koyu, dark image diye isimlendiriliyor.
+
+496
+01:39:48,927 --> 01:39:54,127
+Ve gördüğünüz gibi hiç beyaz bölgede bir piksel yok görüntü içerisinde.
+
+497
+01:39:59,648 --> 01:40:07,807
+Histogramından da anlaşılıyor. Dağılım, histogram erisinin sağ tarafında toplanmış.
+
+498
+01:40:11,283 --> 01:40:27,043
+Bir sol tarafta yani siyaha yakın bölgede piksel yer almıyor bu görüntü üzerinde. Bu tür bir görüntüye de çok parlak bir görüntü diyoruz. Yani beyaza çalan, patlamış, çok aydınlık bir görüntü diyebiliyoruz.
+
+499
+01:40:39,283 --> 01:40:54,219
+Yüksek kontrastlı olması istemediğimiz bir durum. Ve ideal olan şey aslında high contrast image, yüksek kontrastlı image. Bu görüntünün içerisinde hem siyah hem de beyaz piksellerin...
+
+500
+01:40:54,228 --> 01:41:21,268
+Olmasını bekliyoruz ki aralığı düzgün kullanmış olsun ve daha anlaşılır bir görüntü ortaya çıksın. Nitekim şurada hani böyle susamlı ekmek gibi galiba çok acıktım. Susamlı ekmek gibi noktalar olduğunu görüyorsunuz bunların üzerinde ama mesela düşük kontrastlı görüntüye baktığınızda bu detayları göremiyorsunuz. Anlatabiliyor muyum?
+
+501
+01:41:22,228 --> 01:41:28,327
+Bizim için high contrast image dediğimiz görüntünün olması.
+
+502
+01:41:30,467 --> 01:41:43,228
+Şimdi uygulama alanlarına geçelim. Tabii ben buraya birkaç uygulama alanı yazdım ama bunlarla sınırlı değil ve inanın çok fazla alanda uygulama yapılabilir ve yapılıyor.
+
+503
+01:41:44,627 --> 01:41:54,847
+Bunlarla sınırlı değil. Document Handling, burada Intelligent Document Recognition için bir uygulamadan bahsedebiliriz.
+
+504
+01:41:55,847 --> 01:42:01,828
+Tarayıcıdan geçirilmiş bir kağıt düşünün. Kağıdın üzerinde standart bir form olabilir bu.
+
+505
+01:42:01,828 --> 01:42:12,627
+Bu taranan doküman, bir OCR yani Optical Character Recognition dediğimiz bir algoritma.
+
+506
+01:42:12,627 --> 01:42:24,207
+Bitmadan geçiriliyor ve görüntüden tekste bir dönüşüm işlemi gerçekleştiriliyor. Böylece bu doküman üzerinde işte
+
+507
+01:42:25,568 --> 01:42:40,328
+Tekst olarak şuradaki bir C harfinin, L harfinin ya da K'nin ya da rakamların ASCII kodlarına ulaşabiliyoruz. Yani bu bir resim değil, artık bizim için bir metin haline geliyor.
+
+508
+01:42:40,328 --> 01:42:50,328
+Bu metni analiz ederek hangi bölümlerde tarih, hangi bölümlerde sayı var bunu analiz edip tespit edebiliyoruz.
+
+509
+01:42:53,568 --> 01:43:17,488
+Formatı olabilir gibi ya da formun üzerinde zaten bildiğimiz standart bazı başlıklar varsa mesela order date, mesela date ship gibi bu tarihleri yani ya da bu metni doküman üzerinde arayıp yerini bulabiliriz ve daha sonra onun altında girilmiş olan tarih bilgisini alarak
+
+510
+01:43:18,420 --> 01:43:34,300
+Extract ederek bu tarihi hangi formatta verildiyse önce onu çözümleyip, bilgisayarın anlayacağı hale getirip daha sonra bunu bir işlemde kullanabiliriz. O yüzden buna Intelligent Document Recognition deniyor.
+
+511
+01:43:34,300 --> 01:43:46,300
+Şimdi bir de robot proses dediğimiz işlemler var. Mesela bu amaçla kullanılıyor. İnsanın hayatını çok kolaylaştırıyor ve rutin yapılan bazı işlemler...
+
+512
+01:43:46,420 --> 01:43:57,420
+manuel olmaktan çıkartıp bilgisayar ortamında pratik bir şekilde ve hızlı bir şekilde ve doğru bir şekilde yapılmasını sağlayabiliyoruz.
+
+513
+01:43:58,800 --> 01:44:02,739
+Bir diğer uygulama alanı biyometrik tanıma olabilir.
+
+514
+01:44:03,100 --> 01:44:12,460
+Parmak izi, iris, yüz, burada bir ses, sesten insanları ayırt etme ya da tanıma olabilir.
+
+515
+01:44:14,015 --> 01:44:29,355
+El şekline bakarak tanıma ya da imza, el yazısı gibi yazılar üzerinden kişileri ayırt etme ve tanıma işlemi biyometrik tanıma için kullanılıyor.
+
+516
+01:44:29,355 --> 01:44:33,355
+Burada...
+
+517
+01:44:34,068 --> 01:44:50,247
+İki tane farklı uygulama alanı var aslında bir biyometrik tanımanın. Fingerprint Identification or Fingerprint Authentication. İkisi arasındaki fark nedir biliyor musunuz? Biri açıklayabilir mi?
+
+518
+01:44:58,003 --> 01:44:59,884
+Kimse söz almak istemedi.
+
+519
+01:45:00,083 --> 01:45:01,063
+Sesim geliyor mu hocam?
+
+520
+01:45:01,684 --> 01:45:03,224
+Evet. Kim konuşuyor?
+
+521
+01:45:03,863 --> 01:45:04,543
+[öğrenci] hocam.
+
+522
+01:45:05,043 --> 01:45:06,184
+[öğrenci]. Dinliyorum.
+
+523
+01:45:06,344 --> 01:45:14,523
+Hocam, birinde bu kişinin parmak izi sistemde kayıtlı olan parmak izi mi diye kontrol ediyoruz. Aynı olup olmadıklarını, leşetini etmediklerine bakıyoruz.
+
+524
+01:45:14,823 --> 01:45:21,543
+Diğerinde ise sistemde bulunan enten parmak izinden hangisi bu kişiye ait olduğunu bilmaya çalışıyoruz.
+
+525
+01:45:21,971 --> 01:45:39,511
+İkinci söylediğin Identification. İlk söylediğim Authentication. Güzel, teşekkür ediyorum. Sol tarafta verilmiş olan örnek bir Identification örneği. [öğrenci]'nin de söylediği gibi burada bire enlik bir karşılaştırma yapılıyor ve eşleştirme aranıyor.
+
+526
+01:45:49,971 --> 01:46:05,751
+Bu veri tabanındaki parmak izlerinden hangisiyle eşleşiyor diye bakıyor ve bulmaya çalışıyor. Buna kimliklendirme, identification diyoruz. Bunu şöyle de düşünebilirsiniz. Mesela bir olay yeri.
+
+527
+01:46:06,260 --> 01:46:34,260
+Parmak izleri olsun. Kişi bilinmiyor ama belki de suçluların kayıtlarındaki parmak izleriyle karşılaştırılarak herhangi bir olay yerinde adli bir şey, problem olduğunda toplanan parmak izinin bu veri tabanındaki bir parmak iziyle eşleşip eşleşmediğine bakılıyor ki burada bir tane parmak izi en tane parmak iziyle karşılaştırılıyor.
+
+528
+01:46:34,260 --> 01:47:01,480
+Bunun kimliği tespit edilmeye çalışılıyor. Burada identification işlemi yapıyoruz. Sağ taraftaki işlem ise bunu güvenlik amaçlı kullanıyor olabilirim. Bir iş yerinde kişiler giriş yaparken parmak izi ile giriş yapabilir. Böylece kaçta geldi, kaçta gitti bilgisi tutulabilir.
+
+529
+01:47:02,260 --> 01:47:08,740
+Bunu kimlik kartıyla yapmak yerine parmak izi kullanarak yapmanın avantajı ne olabilir?
+
+530
+01:47:15,539 --> 01:47:20,559
+Neden kimlik kartıyla girmiyor da parmak iziyle girsin istiyoruz?
+
+531
+01:47:22,799 --> 01:47:25,159
+Mesela, yorum.
+
+532
+01:47:27,259 --> 01:47:28,920
+Bir daha söyleyin.
+
+533
+01:47:30,163 --> 01:47:32,203
+Kopyalanması daha zor olabilir hocam.
+
+534
+01:47:33,203 --> 01:47:49,119
+Kopyalanması. Yani kopyalanma da dememiyor. Şöyle diyelim. Ben kartımı verdim. Arkadaşım kendi geçerken benim kimliğimi de bas ne olur dedim. Girdi. Ama aslında orada değil kendisi şu anda. Ama biyometrik tanımada...
+
+535
+01:47:49,119 --> 01:48:05,260
+Üstümüze taşıdığımız unique bir tanımlayıcı ve bunu bir başkasının alması, kullanması söz konusu değil ve aslına bakarsanız daha güvenli. Mesela mecliste oylama yapılırken parmak iziyle oylama yapıyorlar. Neden?
+
+536
+01:48:05,844 --> 01:48:33,764
+Biri diğerinin yerine oy kullanmasın diye. Buna benzer bir yapı aslına bakarsanız güvenliği daha yüksek bir yöntem diyebiliriz. O zaman burada çalışan sistem nasıl çalışıyor? Önce siz kim olduğunuzu söylüyorsunuz başta. Diyorsunuz ki işte ben bu kurumda çalışıyorum. Adım [öğrenci]. Ve sistemde benim kayıtlı önceki parmak izimle birebir karşılaştırmayı.
+
+537
+01:48:33,844 --> 01:48:58,923
+Ve one to one burada match dediği işlemi yapıyor. Dolayısıyla buradaki işlem daha kısa, hızlı bir sonuç dönebiliyor ve uyumlu olup olmadığını bize söylüyor. Bu işlemin adı da authentication yani kimlik doğrulama. Bunu da kimliklendirme, bunu da kimlik doğrulama diyebiliriz işleme.
+
+538
+01:49:01,747 --> 01:49:11,387
+Başka kullanım örneği, mesela aerial fotografi demiş. Bu şeyde de kullanılıyor, coğrafi bilgi sistemlerinde de kullanılıyor.
+
+539
+01:49:11,387 --> 01:49:19,547
+Kent güvenliği ya da işte kentteki yapılaşmayı takip etme amaçlı bu tür hava fotoğrafları çekiliyor.
+
+540
+01:49:19,707 --> 01:49:29,747
+Bunlar üzerinden aslında değişimlere bakılarak, binalar üzerinde bir değişim var mı yok mu gibi bunları yorumlayacak bir takım çalışma.
+
+541
+01:49:29,747 --> 01:49:39,667
+Trafik kameraları çok çok yaygın artık kullanılıyor. Hem araçları takip etme hem hız.
+
+542
+01:49:40,979 --> 01:49:56,359
+Tespit etme ya da ne diyelim şerit hatası ya da şerit içerisinde gidiyor gitmiyor kontrolünü yapmak için bu tür trafik kameraları yine mümkün.
+
+543
+01:49:56,359 --> 01:49:59,479
+Ama bunların her birinin başına bir insan oturtmak.
+
+544
+01:50:00,000 --> 01:50:10,660
+Ve gözle bunların takibini yapmak gerçekten çok yorucu bir iş. Bunların da yine bilgisayar yardımıyla yapıldığını hepimiz görüyoruz, biliyoruz.
+
+545
+01:50:13,235 --> 01:50:31,235
+Sporda kullanılabiliyor. Aslında buna benzer örnekler, Computer Vision uygulaması olarak görebiliyoruz. Oyuncuların performanslarını ölçmek için oyun içerisinde ne kadar topla, elinde top değmiş ya da…
+
+546
+01:50:32,564 --> 01:50:53,564
+Topa sahip olmuş gibi kontrolleri yapılabiliyor. Sağa içerisindeki hareketleri izlenebiliyor. Ve bunun üzerinden oyuncuların performansları ölçülebiliyor. Geçenlerde bir TÜBİTAK panelindeydim. Orada mesela sporla ilgili çözümlere inanılmaz, Computer Vision'la çok güzel, inanılmaz çözümler önermişler.
+
+547
+01:51:00,564 --> 01:51:24,564
+Şeyler yerleştirerek, saha içerisindeki hareketleri takip ediliyor. Hangi durumlarda antrenman sırasında mesela penaltı atışları yapıyorlar? Hangi durumlarda daha başarılı oluyor? Topu yakalayabiliyor kaleci? Bununla ilgili testler yapıyorlar. Bunların hepsini visionla yapmak ve...
+
+548
+01:51:25,492 --> 01:51:35,912
+Oyuncunun yine başarısını arttırmak için bir takım teknikler önermek mümkün görünüyor. Meraklı olan arkadaşlara duyurulur.
+
+549
+01:51:37,171 --> 01:51:48,511
+Microsoft Kinec kamera ve bunun artık sonrasında yeni gelişen başka kameralar da var ama bu da bir örnek olarak söylenebilir.
+
+550
+01:52:05,171 --> 01:52:24,571
+Bu eski bir uygulama, face detection artık kameralarımızda bile var. Çektiğimiz fotoğraflarda yüzleri tespit ediyoruz ve daha sonra face detection ayrı bir şey.
+
+551
+01:52:25,203 --> 01:52:40,203
+Face Recognition ayrı bir şey. Face Expression Recognition ayrı bir şey. Face Recognition yine oldukça başarılı ama çok zorlayıcı unsurlar var. Çünkü insanlar...
+
+552
+01:52:41,663 --> 01:52:50,863
+Saç şekli, gözlük veya sakal, bıyık gibi etkenlerle kendilerini çok hızlı değiştirebiliyorlar.
+
+553
+01:52:51,184 --> 01:52:59,264
+Dolayısıyla bu sistemlerin başarısı her geçen gün artıyor ama yine de bunlardan kaçmak hala mümkün.
+
+554
+01:52:59,264 --> 01:53:02,903
+Herkesi yakalayamadığını da tabii söylemeliyiz.
+
+555
+01:53:07,060 --> 01:53:24,600
+Yine çok üzerinde çalışılan konulardan biri. Neutral dediğimiz doğal duruş dışında yedi tane farklı duyguyu insan yüzünden anlamak hedefleniyor.
+
+556
+01:53:34,707 --> 01:53:52,747
+Evet, bir de mutlu diyeyim. Üç tane kolay ama diğerleri aslında çok da kolay değil. Mesela şaşkın, korkmuş ya da bezgin veya işte tiksinmiş bir şeyden diyebileceğimiz bazı yüz ifadeleri.
+
+557
+01:53:53,235 --> 01:54:16,036
+Birbirlerine çok benziyor ve çok kolay bir iş değil. Ama hani üç ya da dört tanesini ayırt et deseler yine biraz daha kolay yapılabilir görünüyor. Şaşkın, kızgın ve mutluyu. Hani biz çalıştık. Diğer yedi tanesini de çalıştık ama herkesin şu tiksinmiş yüz ifadesi.
+
+558
+01:54:16,819 --> 01:54:38,219
+Farklılık gösterebiliyor. Yani ya da üzgüne çok benzeyebiliyor. Veya işte burada bezgin yüz ifadesine yine çok benziyor. Dolayısıyla çok kolay bir şey değil aslında bunları sadece görüntüden ayırt etmek. Bilmiyorum belki bunun yanına ses katılabilir. Daha başarı artabilir bu durumda diye düşünüyorum.
+
+559
+01:54:42,292 --> 01:55:00,912
+Hand Posture ve Hand Gesture Recognition. Bu benim az önce söylediğim işaret dili için kullanılan teknikler. İşitme engellilerinin kullandığı Sign Language her ülkede değişiklik gösteriyor.
+
+560
+01:55:03,296 --> 01:55:24,296
+Turkish Sign Language Recognition diye bir çalışma yapmıştık. Ama normalde işaret dilinde her bir kelimenin bir hareket karşılığı var. Mesela üşüdüm demek. Şöyle ellerinizi böyle yapıyorsunuz, titriyor gibi bir ifadeye giriyorsunuz. Bu üşümek.
+
+561
+01:55:31,296 --> 01:55:52,396
+Tabii gibi böyle hareketler var ama bazı özel kelimeleri, özel isimleri anlatmak için fingerspelling dediğimiz harf hecelemeyi kullanıyoruz ve orada da A'dan Z'ye kadar her bir harfin burada gördüğünüz gibi bir el ile şekilleri var.
+
+562
+01:55:52,396 --> 01:55:56,896
+Bazıları kolay, bazıları çok ilişkilendiremiyoruz.
+
+563
+01:55:57,363 --> 01:56:02,224
+Ama Türk işaret dilinde harfler bayağı şekillerine benziyor.
+
+564
+01:56:03,224 --> 01:56:11,064
+Mesela B harfini şöyle yapıyor. İki tane yuvarlak yapıyor ki o B diyorsun. Anlamak kolay.
+
+565
+01:56:12,344 --> 01:56:20,144
+Ve biz bu finger spelling konusunu da yine bir doktora tezinde çalışmıştık. İlginç, güzel bir konu.
+
+566
+01:56:20,979 --> 01:56:36,099
+Smart Human Computer User Interfaces yani işitme engellinin karşı tarafta bir başkasıyla iletişimini kolaylaştırmak amaçlı araya bir bilgisayar yerleştirip bunun üzerinden ona çeviri yaptırabiliyorsunuz.
+
+567
+01:56:36,099 --> 01:56:48,979
+İşitme engellilerin translator'a ihtiyacı olduğunu belki duymamış olabilirsiniz. Hastaneye ya da mahkemelere gittiklerinde yanlarında bir çevirmene ihtiyaç duyuyorlar. Kendileri işaret ediyorlar.
+
+568
+01:56:48,979 --> 01:57:03,559
+Diliyle yapmış oldukları hareketleri çevirmen sesli olarak karşı tarafa iletiyor. Mesela bu noktada böyle bir işi bir cep telefonunun yapması o kişinin hayatını bayağı bir kolaylaştırır.
+
+569
+01:57:04,212 --> 01:57:18,912
+Tabii şunu sorabilirsiniz. Neden yazarak anlaşmıyor? Ben de aynı şeyi sormuştum en başta. Yazarak anlaşmak iletişimi çok yavaşlatıyor ve o yüzden maalesef çok da tercih edilmiyor tabii.
+
+570
+01:57:22,707 --> 01:57:26,467
+Human Activity Recognition, burada yine bir örnek.
+
+571
+01:57:26,467 --> 01:57:30,467
+İnsanların işte...
+
+572
+01:57:30,771 --> 01:57:52,012
+Bir takım aktivitelerini takip etmek için vision'dan yararlanılabiliyor. Bu kent izleme şehirlerdeki yerleştirilmiş kameralar üzerinden takip eden parkları vesaireyi takip eden kameralar üzerinden kişilerin anormal davranışlarının olup olmadığını izlemek mümkün.
+
+573
+01:57:58,771 --> 01:58:12,892
+Yaptıkları aktiviteyi anlayan bir takım yazılımlar üzerinde çalışılan konulardan. Medical Applications burada önemli örnekler var.
+
+574
+01:58:16,340 --> 01:58:34,539
+Cancer uygulamaları doğrudan fotoğraf ile cilt kanserinin teşhisine yönelik sistemler geliştirilmiş. Daha sonra mamografi görüntüleri üzerinde kanserin yine tespitine yönelik çalışmalar yapılmış.
+
+575
+01:58:44,340 --> 01:58:49,159
+Bu verilerle bir tıbbi uygulama veya yarışma yaptık.
+
+576
+01:58:49,159 --> 01:58:59,020
+Orada beyin tomografi görüntüleri üzerinde inme tespiti için bir veri toplandı.
+
+577
+01:59:01,539 --> 01:59:10,199
+Yaklaşık bine yakın örnek üzerinde bir tomografi kesitinde
+
+578
+01:59:10,644 --> 01:59:29,384
+İnmenin olduğu bölgenin piksel bazında segmentasyonun yapılması istendi. Tabii böyle bir işin yapılabilmesi için supervised learning yani eğiticili öğrenme, diğer bir deyişle etiketli veri ihtiyacı karşımıza çıkıyor.
+
+579
+01:59:38,547 --> 01:59:54,087
+Destek aldık. 10 tane radyolog bize BeyinBT görüntüleri üzerinde lezyonları işaretlediler ve veri setini hazırladılar. Sonuç olarak bu yarışmanın verisini de hemen sizinle paylaşayım.
+
+580
+02:00:06,484 --> 02:00:27,083
+Sağlık. Gov.tr Bu adreste Teknofest 2021 Stroke Dataset, inme veri setini ilk defa Sağlık Bakanlığı buradan yayınladı. Bunu kullanabiliyorsunuz herhangi bir çalışmada, bir tez.
+
+581
+02:00:27,572 --> 02:00:30,712
+Bir yayın vs. için kullanabiliyorsunuz.
+
+582
+02:00:42,579 --> 02:01:01,579
+MR görüntüleriydi galiba. Onun üzerinde 7 farklı hastalık için bunlar apandisit olabilir, pankreatit olabilir, böbrek taşı olabilir. Bu bölgede MR kesitleri var ve bu MR kesitleri üzerinden hastalıklı...
+
+583
+02:01:01,935 --> 02:01:20,635
+Bölgeyi detekt eden, bir bounding box ile işaretleyen bir sistem geliştirmesini istedik yarışmacılardan. Bunun verisi hazırlanıyor. Birkaç ay sonra aynı adreste, açıkverisaluk.gov.tr adresinde paylaşıma açılacak 2022 yarışmasıydı bu.
+
+584
+02:01:29,935 --> 02:01:52,955
+Hastalık seviyelerinin sınıflandırılmasına yönelik bir veri hazırlıyoruz. 10 bin tane örnek olacak içinde. Şu anda radyologlar bunların seçimi işlemini tamamladılar ve ilk verinin paylaşımını gerçekleştirdik.
+
+585
+02:01:57,935 --> 02:02:16,095
+Herhangi bir iş yapmadan önce sağlam bir veri, işaretlenmiş, kaliteli bir veri var mı, yok mu elimizde diye bakarak işe girmelisiniz. Yoksa çok zorlanırsınız. Çünkü verinin hazırlanması işi kendi başına sadece bir yıl sürebiliyor.
+
+586
+02:02:19,796 --> 02:02:28,596
+Ama tıbbi uygulama tarafında ihtiyaçlar çok fazla. Bunları görüp önden çözüm üreten kişiler de güzel işler yapıyor.
+
+587
+02:02:33,908 --> 02:02:49,168
+İlk zaman yapılan geleneksel çözümlerde, bilgisayarla görmede, Shift-Invariant Feature, Transform dediğimiz yöntemleri kullanarak,
+
+588
+02:02:51,699 --> 02:03:09,139
+Çözüm üretiliyordu. Döndürmeyle bağımsız, yani resmi görüntüyü döndürseniz de, farklı açılardan baksanız da, tanımada kullanabileceğiniz öz nitelikleri çıkarmayı hedefleyen yöntemler vardı ve bu yöntemler çok yavaş.
+
+589
+02:03:09,600 --> 02:03:23,380
+Bu örneğe çalışıyordu. Artık bu sözünü ettiğimiz yöntemlere hiç ihtiyaç duymadan CNN ile Convolutional Neural Networklerle bu işlemleri hızlı bir şekilde yapabiliyoruz.
+
+590
+02:03:37,600 --> 02:04:04,000
+2005 yılında pedestrian detection için kullandı araştırmacılar. Yani neredeyse bundan 10 sene önce yapılmış bir çalışmada. Görüntü içerisindeki yayaları tespit etmek amaçlı geliştirilmiş bir uygulamaydı. Ben bu şeyi, hoc feature'lerinin detaylarını bir parça size anlatacağım. Çünkü bu CVPR'da yayınlanmış olan bu makalede aslında insana güzel fikirler veriyor.
+
+591
+02:04:05,600 --> 02:04:32,660
+Çıkartmakla artık uğraşmayacaksınız. Hiç gerek yok. Ama burada kullanılan bazı yöntemler farklı bir noktada ya bak şöyle bir şey burada da işe yarar diyebilirsiniz. Onun için bu yöntemin ben biraz üzerinde konuşmak gerektiğini düşünüyorum. Şöyle bir 20 dakika falan anlatacağım. Hock Feature nedir? Ne işe yarar? Nasıl çıkartılır? diye ders içerisinde göreceğiz.
+
+592
+02:04:34,963 --> 02:04:52,743
+Bunlar geleneksel yöntemlerdi. Artık daha Deep Learning yöntemlerine doğru geçecek olursak, ilk olarak Pascal Visual Object Challenge diye bir yarışma düzenlendi 2006-2012 yılları arasında.
+
+593
+02:04:52,743 --> 02:05:01,463
+Burada gördüğümüz her bir sınıf için belli sayıda örnek verilerek 20 tane obje var burada.
+
+594
+02:05:03,475 --> 02:05:15,235
+Bu 20 tane obje için bir tanıma sistemi gerçekleştirilmesi istendi yarışma kapsamında.
+
+595
+02:05:18,836 --> 02:05:29,355
+Pascal Visual Object Challenge için her bir sınıfın ayrı ayrı başarısı ve ol dediği mavi ile verilen grafikte bunun başarısını görüyorsunuz.
+
+596
+02:05:29,355 --> 02:05:43,216
+Average Precision'da mavi ile verilmiş olan, mavi düz çizgiyle verilmiş olan başarı da yüzde kırklar seviyesinde kaldığını görüyoruz 2012 yıllarında.
+
+597
+02:05:44,115 --> 02:05:46,836
+En iyi tanıma yapan ise şu.
+
+598
+02:05:46,836 --> 02:05:51,016
+Şuradaki kesikli çizgi yeşil mi o? Yeşil galiba.
+
+599
+02:05:51,695 --> 02:05:52,916
+Aeroplane olabilir.
+
+600
+02:05:53,396 --> 02:05:57,576
+%65'miş en iyi tanınan sınıf o yıllarda.
+
+601
+02:05:58,076 --> 02:06:02,876
+Sonra ImageNet yarışmasını hepiniz duymuşsunuzdur.
+
+602
+02:06:02,876 --> 02:06:05,296
+Image Classification Challenge.
+
+603
+02:06:06,115 --> 02:06:08,756
+Bu yarışmada bin tane farklı obje var.
+
+604
+02:06:09,115 --> 02:06:11,556
+Pascal yarışmasında 20 taneydi.
+
+605
+02:06:12,399 --> 02:06:28,579
+Objelerin sayısı bine çıkartıldı ve bu neredeyse her bir sınıf için binden fazla örnek toplandı ve bir yarışma düzenlendi.
+
+606
+02:06:28,579 --> 02:06:36,399
+Large Scale Visual Recognition Challenge diye ImageNet yarışması dediğimiz yarışma bu.
+
+607
+02:06:38,868 --> 02:06:56,288
+Değerlendirmesi şöyle yapılıyor arkadaşlar. Burada bir görüntü verilmiş. Görüntüde bir şey var, bateri var. Steel drum. Grand truth olarak burada bateri olduğunu etiketlemiş bu görüntüyü etiketleyenler.
+
+608
+02:07:04,532 --> 02:07:23,932
+Bir tahmin hakkımız var diyeyim. Bu üçlü listenin içerisinde sizin tahmin ettiğiniz şey, işte ne diyelim tahmin ettiğiniz still drum, Grand Truth ile örtüşüyorsa eğer bunun doğru olduğunu kabul ediyor.
+
+609
+02:07:23,932 --> 02:07:32,532
+Bir de beş tane tahmin yapıp bu beşin içerisinde var mı yok mu diye bakıyor. Varsa yine doğru tahmin ediyoruz.
+
+610
+02:07:32,532 --> 02:07:35,232
+Top 1 ekürisi
+
+611
+02:07:35,699 --> 02:07:50,019
+Ve ilk beş içerisinde var mı şeklinde değişik değerlendirme şekilleri var. Diyelim ki siz beş tane tahmin yaptınız. İçinde still ram yok. O zaman diyor ki bu başarısız bir sınıflama işlemidir.
+
+612
+02:07:50,019 --> 02:08:01,219
+Ve bu yarışma 2014 yok. 2010'dan başlatmış. 2015 yılına kadar her sene düzenlenmiş.
+
+613
+02:08:03,699 --> 02:08:11,699
+Trafikte verilmiş olan error rate'leri gösteriyor. Hata oranlarını gösteriyor. İlk olarak...
+
+614
+02:08:12,463 --> 02:08:32,743
+2012 yılında AlexNet mimarisiyle ilk Deep Learning uygulaması burada karşımıza çıkıyor. Ve %25'ler seviyesinde olan hata oranını 16'ya kadar düşürmeyi başarıyor. Krizevski ve arkadaşları AlexNet dediğimiz mimariyle.
+
+615
+02:08:40,463 --> 02:08:56,343
+G.G.Net kullanan var, Google.Net kullanan var, ResNet kullanan var. 2015 yılında ResNet'i kullanan ya da geliştiren grup hata oranını %3.57'ye kadar düşürüyor.
+
+616
+02:09:05,844 --> 02:09:21,123
+ResNet ile %3.57'ye düşürdüğünde hatayı yarışma artık sonlandırılıyor ve iyi bir noktaya getiriyorlar Deep Learning modellerini.
+
+617
+02:09:22,452 --> 02:09:39,192
+Object Detection ve Image Captioning diye bir konu var. Image Captioning'i de duymuşsunuzdur. Görüntüde tespit edilen nesnelerle bir başlık yazıyorsunuz. Yani bunu metne dönüştürüyorsunuz.
+
+618
+02:09:39,692 --> 02:09:45,472
+Burada yine güzel bir örnek verilmiş. Her tespit edilen bounding box ile.
+
+619
+02:09:47,315 --> 02:10:03,735
+A man on a skateboard demiş ve bunu bir kırmızıyla yazmış. Burada kırmızıyla işaretli alanda a man on a skateboard diye görüyorsunuz. Sonra man riding a bicycle diyor. Arkada bulduğu her bir nesnenin.
+
+620
+02:10:04,020 --> 02:10:17,820
+Bir kelime ya da bir cümleyle ifade edildiğini görüyoruz. Bu çözüme de Image Captioning çözümü diyoruz. Bunlar karşılaştığımız örnekler.
+
+621
+02:10:23,859 --> 02:10:43,859
+Alternatif olarak Deep Learning'de Convolutional Neural Networkler geliştirildi. Buradaki Convolutional Neural Network'te arka arkaya kullanılan konvolüsyon katmanı, relu katmanı, pooling operasyonu gibi işlemlerin arka arkaya uygulanması ile kompleks...
+
+622
+02:10:44,159 --> 02:11:05,679
+Öz niteliklerin tespit edilmesi mümkün hale geldi. Bu kompleks öz nitelikler insan gözünün veya düşüncesinin türetemeyeceği öz nitelikler olduğu için daha başarılı sonuçlar üretebildi.
+
+623
+02:11:12,051 --> 02:11:32,192
+Evet, burada AlexNet mimarisinden biraz bahsetmişim. Temel olarak derse giriş için bunlar yeterlidir diye düşünüyorum. Bunlar gördüğümüz örnekler. Ama bunlarla sınırlı değil. Daha fazlası var.
+
+624
+02:11:40,532 --> 02:11:57,872
+Uygulamasında yüz tanıma sistemini kullandım. Elimde telefon kamerası ile yüzümün etrafında kamerayı döndürerek yüz tanıma uygulamasını da görmüş oldum. Hangi bankaydı şimdi hatırlamıyorum ama.
+
+625
+02:11:59,712 --> 02:12:01,452
+Halkbank olabilir.
+
+626
+02:12:02,899 --> 02:12:22,639
+Bu da ayrıca yakın zamanda test ettiğim örneklerden biriydi. Eminim sizin de günlük hayatta karşınıza buna benzer uygulamalar çıkıyordur. Bunların hepsi ticarileşmiş uygulamalar. Bu da ayrıca güzel.
+
+627
+02:12:23,507 --> 02:12:39,387
+Evet sevgili arkadaşlar, iki saati doldurduk. Bugünlük bu kadar yeter diyorum. Eklemek istediğiniz herhangi bir şey var mı? Bu uygulamalara örnek olarak hocam şöyle bir şey gördüm çok güzeldi dediğiniz bir şey varsa paylaşırsanız sevinirim.
+
+628
+02:12:46,644 --> 02:12:51,564
+[öğrenci], ekran paylaşımı mı yaptırdın? Ne oldu? [öğrenci]...
+
+629
+02:12:54,771 --> 02:12:56,192
+Yanlış oldu herhalde.
+
+630
+02:13:00,948 --> 02:13:26,748
+Peki, o zaman sevgili arkadaşlar haftaya NumPy Tutorial ile devam edeceğim. Sizinle ders öncesinde bunu paylaşırım. Şöyle bir göz gezdirirseniz iyi olur. Haftaya görüşmek üzere, hoşçakalın. Giderken, ayrılırken şöyle bir el kaldırıp el sallarsanız sevinirim. Bakayım kimler beni dinliyor şu anda.
+
+631
+02:13:28,500 --> 02:13:43,600
+18, 19, 20, 22 kişi el kaldırdı, parmak kaldırdı. 25 olduk. Çok güzel, harikasınız. Uyumuyormuş kimse, çok mutlu oldum. Hoşçakalın.
+
+632
+02:13:43,720 --> 02:13:46,360
+Teşekkür ederiz hocam.
+
+633
+02:13:47,740 --> 02:13:48,539
+Teşekkürler.
+
+634
+02:13:48,600 --> 02:13:50,079
+İyi günler, hoşçakalın.

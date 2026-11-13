@@ -1,0 +1,1891 @@
+1
+00:01:34,548 --> 00:01:42,028
+Böyle garip görünüyor aslında. Şu anda siz de oradan projeksiyonla onları görünce.
+
+2
+00:01:42,908 --> 00:01:48,628
+Evet, merhaba arkadaşlar. Olur kapıyı da kapatırsak daha iyi oluyor hatta.
+
+3
+00:02:04,052 --> 00:02:17,632
+Bunlar böyle uzun şey açıyor ya. Bir tanesi tamam. Bir tanesi. Arkası ile olsa iyi olur ama uykunuz geliyor değil mi? Karanlıkta da.
+
+4
+00:02:39,924 --> 00:02:43,183
+Convolutional Neural Networklerle devam edeceğiz.
+
+5
+00:02:45,183 --> 00:02:49,924
+Programa göre...
+
+6
+00:03:20,243 --> 00:03:27,384
+Dokuzuncu haftada ben bir sınav yazmıştım da onun tarihine bakacağım şimdi. 24 Nisan demişim.
+
+7
+00:03:28,276 --> 00:03:35,736
+Evet, yani bugün 10 Nisan, Interest Point Detection konusunu zaten önceki hafta yaptık.
+
+8
+00:03:36,216 --> 00:03:43,556
+Convolutional Neural Network and Deep Neural Network, Max Bullying, Softmax gibi işlem adımlarını konuşacağız.
+
+9
+00:03:43,556 --> 00:03:51,056
+Aktivasyon fonksiyonlarını konuşacağız. Yani 17. Nisan'ın konusuyla devam ediyoruz.
+
+10
+00:03:55,508 --> 00:04:07,968
+Sınav olacak. Bu ne demek? Aslında ben haftaya aktivasyon fonksiyonları, full connected layer, aslında bunları soft max'ı da bu hafta bitirmeyi düşünüyorum. Epey bir hızlanacağız.
+
+11
+00:04:09,228 --> 00:04:22,168
+Proje sunumlarına daha fazla vaktimiz kalacak gibi geliyor. Son üç hafta proje sunumu yapabiliriz bu durumda. Proje seçimiyle ilgili başladınız mı çalışma yapmaya? Henüz başlamadınız.
+
+12
+00:04:22,579 --> 00:04:24,939
+Bunu hızlandırmanızı tavsiye ederim.
+
+13
+00:04:29,939 --> 00:04:31,299
+Tabii ki.
+
+14
+00:04:31,299 --> 00:04:33,228
+Şimdi...
+
+15
+00:04:45,971 --> 00:04:59,971
+Şunun üzerinden konuşuyoruz. Bu plana göre aslında 10 Nisan'da biz Interest Point Detection konusunu anlatacağız demiştik ama Formalational Neural Network, Max Pulling bugün bunları anlatacağız. Biraz hızlı gidiyoruz.
+
+16
+00:05:00,991 --> 00:05:10,711
+24 Nisan'da bir yıl içi sınav olacak. Online yapılacak biliyorsunuz. Yıl içi sınavları için öyle karar alındı ama final bütünleme yüz yüze yapılıyor.
+
+17
+00:05:16,276 --> 00:05:34,495
+Aslına bakarsanız 1 Mayıs'ta tatil 8 Mayıs tarihinden itibaren, yok orada da Optimization Regularization anlatsam, son 3 hafta proje sunumları için, yani 15 Mayıs'ta proje sunumları başlayacak. 14 Mayıs'ta seçim hemen herkese.
+
+18
+00:05:38,495 --> 00:05:43,716
+Proje ile ilgili geçen hafta ne konuşmuştuk? Şöyle hızlıca üstünden geçelim.
+
+19
+00:05:44,064 --> 00:06:01,644
+CVPR diye bu alanın çok bilindik bir konferansı var. Computer Vision Paternical Mission konferansı. Çok seçici ve kaliteli makalelerin basıldığı bir konferans bu.
+
+20
+00:06:01,644 --> 00:06:09,644
+Ve her yıl yayınlanan bildiriler de sayfada paylaşılıyor.
+
+21
+00:06:10,963 --> 00:06:34,103
+Bu açıdan bir avantaj bence. Aramızda farklı branşlardan öğrenciler var. Yani sadece bilgisayar mühendisliği değil, makine mühendisliğinden, inşaattan hatta mekatronik mühendisliğinden, elektronik ve haberleşme bölümünden öğrenciler var.
+
+22
+00:06:34,495 --> 00:06:53,316
+Herkesin ilgi alanı, çalışmak istediği konu, uygulama yapmak istediği alan farklı olabilir. Ama bu konferansın içerisinde ki yaklaşık 150'ye yakın bildiri basılıyor diye biliyorum. Herkes kendine yakın, ilgi alanına girebilecek bir makale buradan seçebilir.
+
+23
+00:07:01,552 --> 00:07:24,552
+Bildirileri içerisinde arayıp kendi ilgili alanınıza giren bir konuyu seçmenizi istiyorum. Seçtiğiniz konu yani her konu bir öğrenci tarafından paylaşılabilir. O yüzden ne demiştim geçen hafta? Ders buvarında öğrenciler de paylaşım yapabiliyor. Seçtiğiniz bildirinin başlığını oraya yazın.
+
+24
+00:07:24,980 --> 00:07:42,120
+Ben de oradan takip edeyim ve her seçim yapan öğrenci de oradan önceki seçilen başlıklarla kendi seçtiğini kıyaslasın. Bir çakışma olmasın. İlk gelen alır. Yani ilk kim o sayfada o paylaşımı yapmışsa.
+
+25
+00:07:42,612 --> 00:07:56,711
+Konu onundur. İkinci defa aynı konuyu seçmeyin. Öyle bir ihtimal düşük ama ben şimdiden uyarayım. Çünkü çok fazla bildiri basılıyor. Hani çok örtüşme olmaz gibi düşünüyorum.
+
+26
+00:07:57,684 --> 00:08:12,324
+Peki projede ne yapmanızı bekliyorum? Okuduğunuz makaleyi iyice birkaç kez okuyarak anlamanızı ve ondan sonra onu özetlemenizi istiyorum. Artık bildirilerin çoğunda şöyle bir talep oluyor.
+
+27
+00:08:25,427 --> 00:08:34,548
+Tübbi veri seti kullanıyorduk ve öyle bir paylaşım iznimiz olmadığı için şey yapamadık, koyamadık herhangi bir tablok bir yerde. Sizde de öyleydi.
+
+28
+00:08:35,091 --> 00:08:57,071
+Şu anki yaptığımız çalışmalarda da çoğunlukla sağlıkla ilgilerilerde hastalardan onan formu alarak izin almak gerekiyor. Kişisel verimin kullanım kanununa göre. Bu izni aldıktan sonra paylaşım yapabiliyorsunuz. Hatta orada da paylaşacağınızı belirtmeniz gerekiyor. Yani çok ciddi açık bir onan formu olması gerekiyor.
+
+29
+00:09:02,163 --> 00:09:19,723
+Kurum, kişi yaptığı yayında bunu belirterek paylaşabiliyor. Bu bir avantaj aslında. Orada yapılan çalışmayı da, o çalışma için geliştirmiş olan kodu da görebiliyorsunuz. Bu bir şeyleri öğrenmek üstüne yeni bir şey eklemek anlamında da çok faydalı oluyor.
+
+30
+00:09:20,224 --> 00:09:47,663
+Sizden ricam önce makaleyi okuyun, anlayın, anlamaya çalışın. Gerekiyorsa referans verdiği yayınlara ulaşarak onları da kısaca gözden geçirip bir özet çıkartın. Ama geçen hafta da söyledim. 10 sayfalık bir makale okuyup bana 20 sayfa özet lütfen getirmeyin dedim. Yani o özet olmamış olur. Bire bir çeviri yapmış falan olursunuz ki onu istemiyorum.
+
+31
+00:09:48,436 --> 00:10:02,216
+Anladığımızı anlatmamızı, kendi cümlelerinizle yazmanızı istiyorum. Türkçe yazmanızı istiyorum. Yabancı öğrencilerimiz İngilizce özet yapabilir, onu belirtmiştim.
+
+32
+00:10:02,216 --> 00:10:13,956
+Ve yine eğer kod, data paylaşımı varsa bunlar üzerinde çalıştırarak iyi ki deneme kendisi yavru sınıfta paylaşabilirse çok mutlu oluruz.
+
+33
+00:10:14,644 --> 00:10:32,824
+Farklı alanda yapılmış çalışmaları da böylece bir arada görme fırsatı yakalarız proje sunumlarında. Planımız bu şekilde. Sınavla ilgili konuşmaya daha vaktimiz var. Çünkü önümüzdeki hafta da ders yapacağız. Orada konuşuruz.
+
+34
+00:10:33,940 --> 00:10:56,580
+Çoktan seçmeli olacak yani herhalde öyle görünüyor. Ama bir sorunun çokça versiyonunu üretiyorum. Dolayısıyla yüzde yüz aynı soru gelmez yani. Anlatabildim mi bilmiyorum. Yok öyle bir şey yani. Delirteyim.
+
+35
+00:11:01,491 --> 00:11:21,412
+Yapıyorum bunu diyorum ya, hazırlıyorum. Bir sorunun 4-5 versiyonunu üretiyorum. Dolayısıyla iyi bir çalışma oluyor. Biraz düşüyor orada şey. Hatta soru birbirine çok benzerken birden böyle yanılsa da biliyor. Bilmem anlatabildim ben.
+
+36
+00:11:22,035 --> 00:11:38,955
+Yani kendi yapabileceğiniz sorular, inanın o kadar keyif alacaksınız ki çözerken, hiçbir kimseye ihtiyacınız olmayacak, onu söyleyeyim. Ezber değil, bir iki matematiksel işlemle çözebileceğiniz sorular aslında.
+
+37
+00:11:38,955 --> 00:11:49,955
+Evet, şimdi ekran paylaştırma durdurdu.
+
+38
+00:11:51,731 --> 00:11:56,292
+Powerpoint'i çalam yok. Şeyi açmıştım.
+
+39
+00:11:57,292 --> 00:11:58,351
+Fotoğrı da açmıştım.
+
+40
+00:12:29,940 --> 00:12:32,800
+Doce adıyla nesliğe çirik duruyoruz.
+
+41
+00:12:54,163 --> 00:12:59,823
+Dersde bu işini açarken biraz zorlanıyorum. Şunları şöyle kaydır et falan.
+
+42
+00:13:00,903 --> 00:13:03,823
+Çekmek istiyorum. Bunun nedir kayboldu?
+
+43
+00:13:05,264 --> 00:13:07,943
+Böyle zorlanıyorum yani.
+
+44
+00:13:09,443 --> 00:13:12,983
+Neyse, yorunan kısmından anlatmaya çalışalım.
+
+45
+00:13:18,388 --> 00:13:20,108
+Daha yukarı çekilmeyim.
+
+46
+00:13:23,923 --> 00:13:24,923
+Evet.
+
+47
+00:13:40,115 --> 00:13:57,096
+Bu convolutional neural networklerde çok kullandığımız iki tane veri seti var. Onu şöyle hızlıca bir anlatayım. Ondan sonra bunları çokça kullanacağız zaten öncü çalışmalarda. O yüzden buradan başlayalım istedim.
+
+48
+00:13:57,620 --> 00:14:23,179
+Bir C-FAR data seti diye bir data seti var. Bu 10 demesi 10 tane kategori olmasından kaynaklı. Bunun 100 veya 1000 olanı da var. Yani 1000 farklı kategorinin olanı da var. Ama böyle basit çalışmalar için, yeni geliştirdiğiniz bir takım modelleri eğitmek için kullanabileceğiniz bir data set. C-FAR data seti.
+
+49
+00:14:25,620 --> 00:14:40,379
+Baktığımız zaman Airplane, Otomobil, Bird, Cat, Ear, Dog, Frog, Horse, Jeep, Truck diye kategori isimleriyle farklı ortamlarda çekilmiş fotoğraflar bunlar.
+
+50
+00:14:42,740 --> 00:14:51,479
+Etiketlerine baktığımız zaman şurada görebiliyorsunuz 10 Labels demiş. 10 tane kategori yani 10 tane sınıf ya da etiket var.
+
+51
+00:14:52,148 --> 00:15:14,067
+50.000 tane training image var. 10.000 tane test görüntüsü var. Toplam sample sayısı 60.000. Ve her bir görüntünün sayısı için 32x32x3 demiş RGB bir görüntü. Ve 3 renk paleti, renk kanalı olduğunu da görebiliyorsunuz.
+
+52
+00:15:14,932 --> 00:15:37,572
+Şimdi ikinciliği dataset de MNIST dataset'i diye bir dataset. Bunu çok güzel bir şey görmüştüm. Ben de bunu koydum. Programming has hello world, machine learning has MNIST demiş. Çok tatlı bir ifade bence. Nasıl programlama dilinde başlarken önce işte print deyip hello world yazdırırsak aslında…
+
+53
+00:15:38,131 --> 00:15:52,991
+Machine Learning ya da Computer Vision çalışmalarında da MNIST ile başlıyoruz. CIFAR'dan daha önce MNIST ile başlıyoruz. Çünkü MNIST dataset dediğimiz dataset. Burada da belirtildiği gibi...
+
+54
+00:15:52,991 --> 00:16:20,571
+National Institute of Standards and Technology Database diye bir kısaltması var. Bu data seti, Amerika Nüfus İdaresi tarafından toplanan formlar üzerinden çekilmiş data seti. Nüfus idaresinin de eskiden gittiğimiz zaman böyle bir form verirlerdi. Formun üzerinde böyle kareli kareli gözler olur. Oraya işte TC kimlik numaranızı ya da ÖSYM numaranızı yazarsınız.
+
+55
+00:16:20,991 --> 00:16:43,331
+O taşırmadan, o kutunun içerisine el yazısıyla işte bu numaraları giriyoruz. Bu Emris Datasetü'de dediğim gibi Amerika'da nüfus idaresinde böyle farklı işte milyon tane vatandaştan form üzerinde yazdıkları rakamlardan alınmış bir veri seti.
+
+56
+00:16:43,923 --> 00:16:56,764
+El yazısıyla rakamlar 0'dan 9'a kadar. Bunun da 10 tane klas var. Çünkü sınıf sayısı 10. Rakamları kullandığım için sadece. Ve gördüğünüz gibi grayscale ilişkiler bunlar.
+
+57
+00:16:56,764 --> 00:17:10,764
+Buradaki görüntünün özelliği de 28'e 28 bir matriz formunda grayscale olması. Fakat dataset de hakikaten böyle…
+
+58
+00:17:11,667 --> 00:17:16,667
+Nasıl bir yedi ya falan dediğiniz şeyler görebiliyorsunuz.
+
+59
+00:17:16,667 --> 00:17:23,667
+İşte burada baştaki beş biraz üçe de benziyor. Sanki böyle üçünü ezmiş başının gibi.
+
+60
+00:17:25,667 --> 00:17:34,667
+Zorlukları olan bir verise çünkü handwritten olduğu için yani bir matbaa karakteri değil de el yazısı olduğu için iş biraz daha zorlaşıyor.
+
+61
+00:17:34,996 --> 00:17:45,996
+Bu 28'e 28'lik matriz de grayscale bir piksel 8 bit ile kodlanmış ve gördüğünüz gibi ekstra renk kanalına ihtiyacı yok.
+
+62
+00:17:46,996 --> 00:17:52,996
+Bu data seti sağ tarafta gördüğünüz gibi ifade edebiliyoruz.
+
+63
+00:17:52,996 --> 00:17:59,756
+Çünkü 28 çarpıların matrizi bir vektörü ekledi.
+
+64
+00:18:00,051 --> 00:18:25,355
+Bu, bu
+
+65
+00:18:30,099 --> 00:18:50,899
+Bunu da bir tüm data seti bir matriz formunda da gösterebiliyorsunuz. Bu aslında işlemi daha efektif yapmamızı da sağlıyor. Her bir örneği bir defa da inform olarak vermek yerine bir matrizle vermek tüm data seti. Bu da bir yol.
+
+66
+00:18:51,827 --> 00:18:58,307
+Tabi burada grayscale image olması bir alantaj. Öbüründe biliyorsunuz RGB olduğu için zaten üç boyutlu.
+
+67
+00:18:58,307 --> 00:19:06,228
+Bir de onu sampulları bir vektöre koymaya çalıştığımızda daha kalmış bir yapı çıkıyor.
+
+68
+00:19:06,228 --> 00:19:09,268
+Grayscale'de o iş daha kolay yapılıyor.
+
+69
+00:19:09,268 --> 00:19:12,867
+Şimdi geçen hafta aslında biraz giriş yapmıştık.
+
+70
+00:19:12,867 --> 00:19:17,268
+Sağ taraftaki arkadaşlardan bakayım.
+
+71
+00:19:17,556 --> 00:19:19,755
+Mesaj falan yok galiba, değil mi?
+
+72
+00:19:21,195 --> 00:19:23,115
+Umarım sesim geliyordur.
+
+73
+00:19:26,259 --> 00:19:54,259
+Konvolisyon işlemiyle ilgili. Geliyor hocam sesine. Teşekkürler. Geçen hafta bir giriş yapmıştık. Zaten dersin başında da ben konvolisyon işlemini size epey detaylı anlatmıştım. Burada aslında üç boyutlu bir konvolisyon işlemi yapılıyor. Onu hemen vurgulayacağım. Geçen hafta da söylemiştim. Şimdi CIFAR data setinden gidecek olursak 32x32'lik görüntülerimiz var ve üç renk kanalı.
+
+74
+00:19:54,259 --> 00:20:06,639
+O zaman input'u burada gördüğünüz gibi 32x32x3 kullandığımız filtrenin boyutu da 5x5x3 bir filtre.
+
+75
+00:20:07,500 --> 00:20:17,139
+Ve bunu 3 boyutlu bir konvolisyon işlemi yapmış oluyorsunuz. Biz düzlemde yapmıştık. Burada 3 boyutta. Yani bütün renk kanalları üzerinde yapıyorsunuz.
+
+76
+00:20:18,867 --> 00:20:38,087
+Burada 5x5x3'lük bir filtre kullanmış. 5x5 olsa 25 gözü olacaktı. Bir de burada 3 ile çarptık. 75 tane gözü çarpıyorsunuz. Hepsini toplayıp bir değer elde ediyorsunuz ve onu da kernel'ın merkez noktası için output olarak yazıyorsunuz.
+
+77
+00:20:43,316 --> 00:21:03,576
+Bir padding işlemi yapmadığı için ve kullandığı filtrenin boyutu 5'e 5 olduğu için sağdan soldan, üstten alttan ikişer piksel kaybediyor ve 28x28x1'li bir output elde ediyorsunuz.
+
+78
+00:21:06,324 --> 00:21:22,683
+6 5x5 filtre, 6 separate activation map. Yani ben burada sadece bir tanesini verdim ama bu filtre masklarından 6 tane olsaydı, 6 tane böyle output üretecektim.
+
+79
+00:21:23,043 --> 00:21:25,023
+Ve dolayısıyla sözde dolayı bir şey oldu.
+
+80
+00:21:30,355 --> 00:21:47,556
+Her yıl çıktı, bir kernel'ın çıkısı olmuş olacak. Şekilde sadece bir tane filtrenin çıkısını görüyorsunuz. Buna da Activation Map deniyor literatürde.
+
+81
+00:21:48,723 --> 00:22:00,743
+Konvaryasyon işlemini yine geçen hafta konuşmuştuk. Hızlıca bakacak olursak. Burada iki tane örnek filtre vermiş. Bir tanesi diagonalde birileri algılıyor.
+
+82
+00:22:01,743 --> 00:22:13,784
+Şurada gördüğümüz gibi. İkinci filtre ise dikey doğrultuda birileri algılayacak şekilde tasarlanmış.
+
+83
+00:22:14,195 --> 00:22:35,455
+Bu iki ayrı filtreyi görüntü üzerindeki solda 6'ya 6'lık görüntü vermiş. Bunun üzerinde uyguladığımda, filtreyle örtüşen patenleri yakaladığında yüksek bir çıktı vermesini bekliyoruz. Yani daha belirgin bir orada pik yapmasını bekliyoruz.
+
+84
+00:22:39,059 --> 00:22:51,439
+Konvolüsyon filtresini görüntü üzerinde kaydırarak dolaştırdığında bu çıkışı oluşturabiliyoruz. Sonra ikinci filtreye geçiyor. Bunu da benzer şekilde uygulayıp sonucu alabiliyoruz.
+
+85
+00:22:56,531 --> 00:23:08,132
+Giriş görüntüsü üzerinde bu diagonal çizginin belirgin olduğu iki tane nokta var ki bu da zaten pik yaptığı gözler.
+
+86
+00:23:08,132 --> 00:23:14,211
+Görebiliyorsunuz. İki diagonal falan.
+
+87
+00:23:16,352 --> 00:23:20,912
+Çizimlerde kırmızıyı örttürmemişim o tarafa ama.
+
+88
+00:23:21,907 --> 00:23:25,107
+Şurayı da tamamlıyor tabii ki bunu üretebilmek için.
+
+89
+00:23:27,507 --> 00:23:36,787
+İkinci konvolisyon filtresi de dikey doğrultulu olanı algılıyor dedik ve bu konvolisyon sonucunun nasıl üretildiğini biliyorsun.
+
+90
+00:23:36,787 --> 00:23:40,907
+Değil mi? Bunu konuşmaya gerek yok. Sınavda böyle örnekler verebiliyoruz.
+
+91
+00:23:40,907 --> 00:23:47,907
+Biliyorum ki, kernel, bu da input image, lütfen bunun ürettiği output image'i bulun gibi.
+
+92
+00:23:50,932 --> 00:23:54,692
+3 metriklerim merak ettiklerim. Çok zorlamam yani.
+
+93
+00:23:57,771 --> 00:24:10,771
+Evet. RGB ve 3 renk kanalı olan görüntü üzerinde de filtrenin boyutunun 3 boyutlu olması gerektiğine lütfen dikkat.
+
+94
+00:24:10,771 --> 00:24:13,771
+Az önce örneklerinde konuştuk.
+
+95
+00:24:13,903 --> 00:24:25,983
+Yani 5x5x3 olacak. Yani her bir renk kanalı içinde maskın kat sayılarının ayrı ayrı olması gerekiyor.
+
+96
+00:24:25,983 --> 00:24:40,983
+Şimdi burada bir komolyon katmanının aşamaları verilir. Örnek yine C bar data seti 32x32x.
+
+97
+00:24:41,695 --> 00:24:53,695
+3. Bir konvolüsyon filtresi ve bir Rectified Linear Unit, RELU ekleyerek bir altıt ürettiyor sağ tarafta.
+
+98
+00:24:53,695 --> 00:25:01,695
+Diyor ki burada 6 tane 5x5x3 filtre uyguladım ve sağ taraftaki altıt ürettim.
+
+99
+00:25:01,695 --> 00:25:04,695
+Sağ taraftaki altıt da...
+
+100
+00:25:05,811 --> 00:25:29,851
+28x28x6 ve diyor ki bu üretmiş olduğu output için bir low-level feature'dir diyor. Yani bir katman, konvolüsyon işlemi var sadece. Bunun içinde ne olabilir? İşte edge detection gibi, diagonal, key doğrultuda çizgiler vs.
+
+101
+00:25:30,720 --> 00:25:52,300
+Detekt edilmiş olabilir. Bu tür öz niteliklere low level, düşük seviyeli öz nitelikler diyoruz ki bizim bugüne kadar handcrafted features dediğimiz, kendi ürettiğimiz öz niteliklerde hep bu tarz aklımıza gelen kenar, köşe vurma algoritmalarının çıkardığı sonuçlar var.
+
+102
+00:25:55,604 --> 00:26:16,784
+Bu katmanın arkasına bir konvizyon katmanı daha ekleyerek aslında midlerle ve hayal edilmiş bir kereksine daha yüksek sevgili ve insanın hayal edemeyeceği ama tanıma açısından saygılı olabildi örneğe de bulmayı sağlayalım.
+
+103
+00:26:16,784 --> 00:26:22,663
+Şimdi burada Golden Future diye ürettiği alt kereksinden tekrar bir tanıdık.
+
+104
+00:26:56,819 --> 00:27:05,819
+Bir tanesi, 28x18x16 türekliyordu. Bunlardan 6 tane ayrı fitre uyguladı.
+
+105
+00:27:05,819 --> 00:27:08,819
+Buradan 6 tane türekli geldi.
+
+106
+00:27:08,819 --> 00:27:14,819
+Şu doyguladığın bu maçın fitresini 5x5 çarpı aldı.
+
+107
+00:27:14,819 --> 00:27:19,819
+Bu konudaki altı bir sata bunun derinliğiyle ölçü.
+
+108
+00:27:24,307 --> 00:27:43,564
+10 tane çift süreçti. Burası 28'e geçimdeki bir beşe beşe bir çiftye sunanlılma ve tedbir yapmadığı göre yine baştan ve sondan içerisinde kaybedilmenin 17'e geçimdeki 24'e düştü. 24 çarpı 24 çarpı 126 süreç.
+
+109
+00:27:44,596 --> 00:27:55,596
+Ve bu işlem böyle devam ediyor. Biliyorsunuz şu an kullandığımız derin ağ yapısı içerisinde kompozisyon katmanlarının sayısı.
+
+110
+00:27:55,596 --> 00:28:02,596
+Yani ben yüzleri yüz elli denildi diye gördüm. Bu biraz makine yüzünü de alakalı.
+
+111
+00:28:02,596 --> 00:28:10,596
+Bu kadar katmana gerek var mı deniyorlar ve daha başarılı olduğunda görüyorlar. Bazen geri dönüş oluyor ama...
+
+112
+00:28:11,763 --> 00:28:22,163
+Sonuç olarak sağ tarafa doğru gittikçe, High Level Features dediği şey, yüksek seviyeli özültelikler aslında daha kompleks özültelikler olmuş olur.
+
+113
+00:28:23,667 --> 00:28:35,827
+Ve bu konvasyon işlemi içerisinde gördüğümüz her kapsının, yani 5x5x32 bitkilerin içerisinde 25x75 tane parametre var.
+
+114
+00:28:35,827 --> 00:28:46,427
+Ve bu parametreler aslında bizim derin ağ içerisinde bulmaya çalıştığımız en iyi parametre.
+
+115
+00:28:46,771 --> 00:28:59,051
+Dolayısıyla bunlar da değiştirilerek denilmiştir. Bir kere rastgele alınıyor da hep o kullanılıyor. Değiştirilerek hangisi daha iyiyse o seçiliyor ve onun üzerinden ilerliyor.
+
+116
+00:29:01,192 --> 00:29:10,091
+Bu konvolisyon işleminde biz kullanımda hep stride'ı bir kullanmıştık ama stride'ı kaptırabiliyorlar.
+
+117
+00:29:10,259 --> 00:29:18,259
+Burada örneğe vermiş, M input image size olsun ve bu da varsayımız 7'ye 7 olsun demiş.
+
+118
+00:29:18,259 --> 00:29:36,259
+Kütrenin boyutu ise 3'e 3, 6'lık kildi 5'e 5 demiş. Çünkü peddik yapmadığında ve stride 1 aldığında kaydırarak bu işlemi yaptığında elde edebileceği 5'e 5'lik bir çıktı oluyor.
+
+119
+00:29:36,756 --> 00:29:44,155
+Sol taraftan bir piksel, sağ taraftan bir piksel, üstten alttan birer piksel kaybediyoruz.
+
+120
+00:29:45,155 --> 00:29:55,756
+Strive'ı iki aldığımız zaman kaydedildiğimiz piksel bir piksel değil iki piksel sağa doğru kaydırıyorsunuz.
+
+121
+00:29:55,756 --> 00:30:01,756
+Aşağı doğru kaydırırken benzer şekilde iki piksel aşağıdan kaydırarak işlem yapıyorsunuz.
+
+122
+00:30:02,804 --> 00:30:14,483
+Tabii ve output will be 3x3 demiş burada. Bir öncekinde 5'e 5 iken burada 3'e 3'lük bir çıktı. Üretmiş oluyorum. Stride'ı 2 seçtiğimde.
+
+123
+00:30:16,243 --> 00:30:23,963
+Şimdi bununla ilgili gelin biraz böyle egzersiz yapıp bunu bir formüle oturtmaya çalışalım diyor.
+
+124
+00:30:26,483 --> 00:30:33,483
+Neyi bulmak istiyorum? Konvojisyon işleminin sonucunda Output Image Size'ı ne olur bulmaya çalışıyorum.
+
+125
+00:30:33,483 --> 00:30:50,483
+Yine, yani input image size'ı 7 alalım. Filtre boyutunu 3 alalım. Stride'ı 1, 2, 3 yaptığımızda, output ne olur? Bunu bulmaya çalışalım.
+
+126
+00:30:50,804 --> 00:31:14,984
+Sağda işlemi aslında bir formül üzerinden gösteriyor. Diyor ki, Image Size-Filter Size bölü 1, bölü 2, bölü 3. Ama bu bölme işlemin sonucunda da 1 ilave ediyorum. Bu 1'in ilave edilmesinin amacı ne?
+
+127
+00:31:17,940 --> 00:31:28,940
+Hayır. 3'e 3'lük ya da 5'e 5'lik bir kernel'ın şu tamamını çıkartıyorum. Merkez noktasını katmak için.
+
+128
+00:32:33,619 --> 00:32:35,619
+işlem de bu
+
+129
+00:32:38,019 --> 00:32:42,019
+burada sürekli edilmiş kaydırma miktarı
+
+130
+00:32:42,619 --> 00:32:44,619
+1 olup da ördüm
+
+131
+00:32:44,619 --> 00:32:46,619
+ben aynı dediğimizde 5 çıktı
+
+132
+00:32:48,619 --> 00:32:51,619
+2 kaydırma işlemin yanlarında 4
+
+133
+00:32:52,619 --> 00:32:56,619
+4, 2, 2, 6, 3, 3 oldu
+
+134
+00:32:56,619 --> 00:32:58,619
+şunda ise
+
+135
+00:32:58,619 --> 00:32:59,691
+burada işlem yaptık
+
+136
+00:33:00,915 --> 00:33:06,235
+Kıda tam beliremediği için zarmaz git demiş, tam oturmayabilir.
+
+137
+00:33:06,235 --> 00:33:10,795
+Yani kaydırışları için, yüksel kaydırışları için.
+
+138
+00:33:14,036 --> 00:33:23,036
+Bu üç bir output olabildiği için iki yapacak. Son tam örtmediği için bir görüntülü oradan bir output üretemeyiz diyebiliriz.
+
+139
+00:33:23,036 --> 00:33:26,036
+O zaman buradan bir output olabildi.
+
+140
+00:33:26,036 --> 00:33:32,908
+Out, bu iki saygı için input image'i gösteriyor.
+
+141
+00:33:43,220 --> 00:33:48,980
+Zaten Smajda da olan bir şey gel. N-F'te bu ne?
+
+142
+00:33:48,980 --> 00:33:57,620
+Bir iş görüntüsünü artırmış ve boyutunu çıkartıp, splayla bölüyoruz ve bir ekleyecek altını inip sayesinde hesaplayabiliyorum.
+
+143
+00:33:57,620 --> 00:34:00,140
+Bu bir formüle ortak istiyorum. Aslında
+
+144
+00:34:00,140 --> 00:34:02,780
+2-3
+
+145
+00:34:04,339 --> 00:34:17,739
+CNN yapısı tasarladığınızda nasıl bir çıkış alacağınızı bu formü üzerinden doğrudan bilgisayarda hesaplayıp görmeniz ve işlem yapmanız daha pratik hale geliyor.
+
+146
+00:34:18,939 --> 00:34:23,139
+Peki, şimdi biraz işlemi zorlaştıralım ve padding de ekleyelim.
+
+147
+00:34:25,340 --> 00:34:27,939
+Ve P'yi 1 aldığımda.
+
+148
+00:34:28,403 --> 00:34:40,403
+Yani giriş görüntüsünün etrafına sağdan, soldan, üstten ve alttan birer piksel eklediğinde, yani p eşit bir dediğinde ne olur ona bakıyor.
+
+149
+00:34:40,403 --> 00:34:47,403
+Yine input image size n olsun ve bunu 7'ye 7 üzerinden örnekleyelim.
+
+150
+00:34:51,284 --> 00:34:59,724
+Bu işlemi yaptığında 7'e 7 olan input image size 9'a 9 oldu diyor.
+
+151
+00:35:00,628 --> 00:35:13,988
+Birer arttırdım sağdan sonra üstten alttan. Yine filtre boyutumuz 3'e 3 olsun. Bu durumda elde edeceğim çıkış görüntüsü input image ile başlangıçtaki giriş görüntü boyutuyla aynı olmuş olacak.
+
+152
+00:35:13,988 --> 00:35:21,988
+Yani bunu sağlamak için ne kadar padding yapmam gerektiğini de önceden hesaplayıp ona göre ilerleyebilirim tabii ki.
+
+153
+00:35:24,088 --> 00:35:27,547
+Burada zero padding'i bir.
+
+154
+00:35:28,307 --> 00:35:43,307
+ve 2 aldığımda ama her dediği filtre boyutunu 5 iken 0-peding 2 yaptığımda ne olur şeklinde sormuştum. Bunu zaten birincisini az önce hesapladık. Ne diyebilirsiniz?
+
+155
+00:35:48,179 --> 00:36:02,179
+Burada formül üzerinden de aslında biraz çalışıyor. Filters of size f by f. Zero padding f eksi 1 bölü 2. Build reserve the output image size demiş.
+
+156
+00:36:02,179 --> 00:36:06,179
+Filtreler hep tek boyutta oluyor biliyorsunuz. 5'e 5.
+
+157
+00:36:06,643 --> 00:36:34,203
+7'e 7, 9'a 9 gibi. Bu tek sayıdaki filtrenin o tek şey aslında simetriyi kurmak için. Merkez pikselinin sağında ve solunda simetrik yapıda bir büyüklük olsun diye. Dolayısıyla burada ben filtre boyutu eksi 1 bölü 2 kadarlık bir heading işlemi yaparsam giriş görüntüsüne altı bir imit sayısı kurumuş olurum.
+
+158
+00:36:34,612 --> 00:36:49,932
+Bunu örnek üzerinden yapacak olursak, işte filtre 3'e 3 ise, siropa dingi 1 yaparsam, alt tip image size ne olur? Giriş görüntüsü ile aynı olur.
+
+159
+00:36:49,932 --> 00:36:55,932
+F filtre boyutu 5'e 5 iken, siropa dingi 1.
+
+160
+00:36:56,500 --> 00:37:08,500
+Soldan sağdan 2-2, üstten alttan 2-2 yaparsam yine output image size'ın giriş görüntüsüyle aynı boyutta olmuş olur.
+
+161
+00:37:08,500 --> 00:37:15,500
+Buradaki padding'in miktarını yukarıda gördüğümüz formüle hesapladık.
+
+162
+00:37:22,132 --> 00:37:26,832
+Giriş görüntüsüyle aynı boyutta olmasını sağlamış oldu.
+
+163
+00:37:34,643 --> 00:37:37,363
+Şimdi burada bir küçük egzersiz var.
+
+164
+00:37:37,844 --> 00:37:44,643
+Peki, input image volume. Bir de böyle üç boyutlu oldum arkadaşlar, buna volume demeye başlıyoruz.
+
+165
+00:37:46,243 --> 00:37:55,123
+32x32x3 bir input image volume var. 10 tane filtre diyor. 10 filtre is with the size of.
+
+166
+00:37:56,148 --> 00:38:09,387
+5x5x3, Stryd'e 1, Pedding'i 2 alarak ben işlem yaparsam eğer, Akut İmici'nin size ne olur?
+
+167
+00:38:10,887 --> 00:38:14,828
+Bir kere Pedding'i 2 yaparak neyi garantiledi?
+
+168
+00:38:16,403 --> 00:38:24,003
+Kayıp yok. Çıkış görüntüsü, giriş görüntüsü ile aynı boyutta olacak. Bunu garantiledi. Stride zaten 1 vermiş.
+
+169
+00:38:24,703 --> 00:38:32,703
+10 tane filtre ama zaten filtrelerin lütfen boyutlarına dikkat. Bunun derinliği ne kadarsa burada da o kadar derinlik var.
+
+170
+00:38:33,304 --> 00:38:42,903
+5x5x3. Strik kullanıyorum diyor ve bunlardan 10 tane. Demek ki 10 tane 32x32'lik altıt olacak.
+
+171
+00:38:43,188 --> 00:38:55,467
+Peki, elinizde 32x32x10 var. Üstüne ekleyelim. Ben yeni bir filtre uygulamak istiyorum. Size da 7x7 olsun.
+
+172
+00:38:57,467 --> 00:39:10,488
+Şimdi, önce şunu soracağım. 7x7x ne olacak? 10. Güzel. 1 bu. 2. Padding ne olacak? 3.
+
+173
+00:39:10,896 --> 00:39:16,456
+Süpersiniz, çok iyi gidiyor. Stride'ı da bir vereyim, tamam zorlaştırmayalım işi.
+
+174
+00:39:16,456 --> 00:39:28,896
+Output Image Size'ı, yani yine input image size ile aynı olsun istediğim için bu kuralları hemen baştan tık tık tık koyabiliyoruz, söyleyebiliyoruz. Güzel.
+
+175
+00:39:28,896 --> 00:39:33,896
+Gide 7 filtre dedim ya.
+
+176
+00:39:34,324 --> 00:39:44,124
+O yüzden. Burada 5 yazıyordu. Azıcık değişiklik yapalım dedik. Ona 7'ye 7 yaptık. Simetriden dolayı 3 koyduk. Güzel.
+
+177
+00:39:46,804 --> 00:39:54,943
+Number of parameters in this layer demiş. Bu katmanda kaç tane parametre olurum diye sormuş. Hadi bakalım.
+
+178
+00:40:03,315 --> 00:40:13,815
+10 tane filtre var. Her bir filtrenin boyutu 5x5x3. Sonra ne çıkıyor? Söyleyin.
+
+179
+00:40:13,815 --> 00:40:25,515
+750 doğru. Artı 10 var. O da nereden geliyor biliyor musunuz? Biz bu konvulsiyon işleminde hiç göstermiyoruz ama bir bias dedikleri bir değer ekleniyor.
+
+180
+00:40:28,788 --> 00:40:36,507
+Bir artıyor. Bu Bayez parametresi. Yani tüm konvobisyonun sonunda değerlere bir sabit sayı eklemek.
+
+181
+00:40:36,507 --> 00:40:48,188
+O B dediğimiz Bayez değeri O. Oradan geliyor. Bu konvobisyon işlemi de çok göstermiyor ama parametre hesabında mutlaka atılıyor. Aklınızda olsun.
+
+182
+00:40:50,327 --> 00:40:51,288
+Evet.
+
+183
+00:40:55,411 --> 00:41:21,211
+Burada bir summary yapmış. Güzel bir özet aslında. Bu özetin üstünden birlikte geçelim. Çünkü boyutları verirken böyle bir de farklı çözünürlükler tanımlamış. Diyor ki, accept the volume of image, volume of size yani bir giriş görüntüsünün boyutunu vermiş.
+
+184
+00:41:21,715 --> 00:41:30,856
+Width and Hate, W1 dediği genişliğini ve yüksekliğini veriyor ve depth veriyor görüntü için.
+
+185
+00:42:15,411 --> 00:42:17,411
+Bu vallamaj kutluğum.
+
+186
+00:42:21,411 --> 00:42:23,411
+Diyas, fakat ek anferin,
+
+187
+00:42:24,411 --> 00:42:25,411
+ebbi,
+
+188
+00:42:25,411 --> 00:42:26,603
+vallamaj kutluğum.
+
+189
+00:42:41,811 --> 00:42:43,811
+ise tek bir şey veriyorum.
+
+190
+00:42:44,652 --> 00:42:46,652
+Ağın bir şey vermedim.
+
+191
+00:43:09,748 --> 00:43:33,612
+Dediyorum ki, cihazın doğrulmak zorunda da büyük farklı terelin teknikleri de var. Yani bu parametreleri başta tanımlayıp, sonra diyor ki, Producers'e Volume of Size WVT gösteriyor.
+
+192
+00:43:33,619 --> 00:43:50,780
+Height için ve depth için yeni parametreler yazmış. Bu yukarıda uyguladığımız işlemin sonucunda çıkan boyutları gösteriyor. Buna göre W2, H2 ve D2'yi hesaplayabiliyor.
+
+193
+00:43:50,780 --> 00:43:58,800
+Aslında az önce örneğimi yaptık. Zaten burada sadece formül olarak ifade etmeye çalışıyor. Güzel bir örnek bence.
+
+194
+00:43:59,635 --> 00:44:27,532
+Yani bu özet diyelim, örnek demeyelim. Bu özet bence oldukça faydalı bir özet. Ne yapıyor? Diyor ki, böyle imicinden az önce de yapmıştık. Filter size'ını çıkartıyoruz ve stride'a bölüyoruz demiştik ve bir ekliyoruz demiştik. Burada padding işlemini koymuş, artı iki P diye. Yine stride'a böldük ve bir ekledik. Çok büyük bir fark yok gördüğümüzü. Ama neyin nereden, neden geldiğini...
+
+195
+00:44:28,148 --> 00:44:47,307
+Anlayabiliyoruz. Yüksükliği içinde aynı şekilde bu formül var ve D2 de burada filtre sayısından geliyor. Yani kaç tane böyle filtre uyguluyorum? Bu o yeni elde ettiğim output'un depth'ini gösteriyor, derinliğini gösteriyor.
+
+196
+00:44:48,107 --> 00:44:54,927
+With parameter sharing, it introduces F by F by D1 demiş.
+
+197
+00:44:55,476 --> 00:45:19,675
+Wait for a Total of, toplam kaç tane parametre ürettiğini hesaplamak için f çarpı f çarpı 1 çarpı k diyerek buradan toplam parametre sayısını buluyor. Filtre sayısı kadar bir Bayez değeri geliyor yine lütfen dikkat. Artık k diye onu eklememiz gerekiyor.
+
+198
+00:45:20,500 --> 00:45:24,859
+Bu da böyle bir özet olarak bir kenarda bulunsun.
+
+199
+00:45:27,279 --> 00:45:40,920
+Aslında uyguladığımız giriş filtresinin boyutunu seçerken, elde edeceğimiz alt tutun sayısını belirlerken bize yardımcı olacaktır.
+
+200
+00:45:42,420 --> 00:45:44,059
+Evet iyi, küçük bir ara verelim mi?
+
+201
+00:45:45,639 --> 00:45:47,059
+Saat 55 olmuş.
+
+202
+00:45:47,827 --> 00:46:15,407
+Basit bazı örneklerle devam ediyor. Aslında burada 1x1'lik bir komolysiyon işlemi diyor. Ne demek 1x1 komolysiyon işlemi diyorsunuz? Yani bir göz var sadece. Ama giriş görüntüsüne baktığınızda 56x56x64 olduğunu görüyorsunuz. Derinliğinin bunun ne olması lazım o zaman? 64. 1x1x64. Filtre neye benzer sizce? Sadece derinlikte bütün pikselleri toplayacak.
+
+203
+00:46:15,827 --> 00:46:20,827
+Onun kat sayılarla çarparak da bir koplayacak ve onun sonucunu verecek size.
+
+204
+00:46:20,827 --> 00:46:29,827
+Değil mi? Ve diyor ki burada bir çarpı delik bir konvolisyon işlemi, 32 tane böyle pikli olsun diyor.
+
+205
+00:46:29,827 --> 00:46:32,827
+Bunu bu giriş görüntüsüne uyguladığımızda ne elde ederiz?
+
+206
+00:46:36,827 --> 00:46:38,827
+56 çarpı 56.
+
+207
+00:46:40,115 --> 00:46:48,556
+Ama Depth ne oluyor, Derinlik ne oluyor? 64'tü giriş görüntüsünde 32 oldu. Neden? Çünkü titre sayısı olur.
+
+208
+00:46:50,096 --> 00:46:59,836
+Anlaşıldı mı ne demek istedim? Yani orada 1x1x64 aslında elimizdeki kernel'ın size.
+
+209
+00:47:03,731 --> 00:47:09,331
+İşe doğru olan derinliği ile çarpıyorsun bu kat sayıları ve oradan bir sayı üretiyorsun.
+
+210
+00:47:10,331 --> 00:47:15,132
+Bunlardan 32 tane olduğu için burası 32'ye çıkıyor.
+
+211
+00:47:17,932 --> 00:47:28,652
+Ve 1x1 olduğu için de sağdan soldan yenmiyor. 56x56 yine girişik görüntüsünün size ile aynı sonuç elde ediyoruz.
+
+212
+00:47:28,884 --> 00:47:31,443
+Evet, böyle arkadaşlar. Bir ara verelim ondan.
+
+213
+01:06:09,427 --> 01:06:19,028
+Online sınıfım 25 kişi olmuş. Arkadaşlar, bundan sonra daha çok geliyoruz. Sınıfta ders yapan sayısını arttıralım.
+
+214
+01:06:21,327 --> 01:06:23,068
+Duyabiliyor musunuz beni arkadaşlar?
+
+215
+01:06:24,468 --> 01:06:27,907
+Evet hocam, sesiniz geliyor. Meydan okumanızı da duyduk hocam.
+
+216
+01:06:29,128 --> 01:06:34,668
+Evet, bir challenge başlatıyoruz. Göreyim elleri kimler bilgisayarın başında?
+
+217
+01:06:36,083 --> 01:06:40,683
+Tabii öyle bağlanıp gitmekle olmuyor. Bir görelim gerçekte kaç kişi var?
+
+218
+01:06:43,284 --> 01:06:48,884
+Vay, 20 oldu. Çok iyi. 20 kişi parmak kaldırdı.
+
+219
+01:06:54,835 --> 01:06:59,655
+Teşekkür ediyorum arkadaşlar katılımınız için. Online ve yüzümüze.
+
+220
+01:07:03,891 --> 01:07:05,811
+Kıvıdımız yerden devam edelim.
+
+221
+01:07:18,483 --> 01:07:18,983
+Teşekkürler.
+
+222
+01:07:22,452 --> 01:07:22,952
+Evet.
+
+223
+01:07:26,324 --> 01:07:43,543
+Şimdi 1x1 konvolisyon filtresi böyle çok anlamsız görünüyordu ya, az önce 64 derinlikli bir input için bunu yaptığımızda aslında bir anlamı olduğunda konuşmuş olduk bu slide'da.
+
+224
+01:07:55,155 --> 01:07:59,735
+Komolyisyon katmanlarından örnekler koymuş bu slide'da. Benim de hoşuma gitti.
+
+225
+01:08:03,775 --> 01:08:15,275
+Birinci komolyisyon katmanının birinci komolyisyon aşaması, üçüncü komolyisyon katmanının ikinci aşaması. Düşünebilirsiniz bunu.
+
+226
+01:08:15,275 --> 01:08:19,076
+Biz az önce şeyi konuşmuştuk.
+
+227
+01:08:21,203 --> 01:08:29,123
+Katman sayısı arttıkça ve derinlik arttıkça aslında daha high level feature üretebiliyoruz demiştik.
+
+228
+01:08:29,644 --> 01:08:33,244
+Bunu aslında biraz görsele dökmüş. O açıdan anlamlı.
+
+229
+01:08:34,384 --> 01:08:41,923
+Şöyle açıklayabilirim. Burada input image olarak bir koltukta yatan bir köpek görüntüsü var.
+
+230
+01:08:42,963 --> 01:09:03,703
+Birinci katmanda komolysiyon işlemi uyguladığımızda, hatırlayın, derste iki tane basit filtre örneğim vardı. Diagonal çizgileri ve dikey çizgileri bulan. Burada da aslında benzer şeyler var. Kimi dikey çizgileri buluyor?
+
+231
+01:09:08,307 --> 01:09:19,368
+İşte böyle karar gibi şekilleri buluyor gibi insanın aklına gelebilecek daha basit low level feature dediğimiz featureler bunlar.
+
+232
+01:09:19,368 --> 01:09:33,648
+Mid level feature'a geçtiğimiz zaman burada biraz daha pattern yine birinci katmandaki kadar olmasa da bir pattern'in varlığı az çok anlaşılabiliyor.
+
+233
+01:09:36,435 --> 01:09:56,855
+Katman sayısı gittikçe ve derinleştikçe elde ettiği featurelere gözle baktığımız zaman anlamsızlaşıyor. Ama buna ben kompleks featureler diyorum. Yani bizim gözle belki orada varlığını çok ilişkilendiremediğimiz bir patern yakalama şansı oluyor.
+
+234
+01:10:00,372 --> 01:10:16,731
+Bu tür ağlarda katman sayısı arttıkça daha yüksek seviyeli öz nitelik üretme şansı oluyor. Yani derin ağ yapısı neden başarılı sorusunun birinci cevabı bu olabilir.
+
+235
+01:10:17,296 --> 01:10:24,436
+Bir cevap daha var. O çok enteresan bir konu. Bunu da ilerleyen slide'larda açıklayacağım.
+
+236
+01:10:24,436 --> 01:10:37,336
+Ama katman sayısının artması, yani bu ağ içerisindeki derinliğin artması bize daha faydalı özüntelikler üretebiliyor.
+
+237
+01:10:53,235 --> 01:11:12,556
+Hayır, bak burada şey var. Bunlardan onlarca zıplı bir arada düşün. Bu birinci katman da şöyle yapıyor. Birinci katman da önce işte diyelim ki burada ilk 8, 64 tane farkı fikre uygulamış.
+
+238
+01:11:13,652 --> 01:11:40,612
+Ve onun alt kutu. Sonra onun çıkarttığı alt kutu hemen peşinden yine konvolisyon bir diyor, bir tane daha koyuyor. Arka arkaya konvolisyon fikreleri. Sonra Relo ve Max Bulling ekliyorsunuz. Sonra konvolisyon üç ya da iki diye ekşim alıyor. Anlatabildim mi? Şunun yanındaki bir birin anlamı birinci katmanda ilk uygulanan 64 taneyi ayrı ayrı bence.
+
+239
+01:11:43,155 --> 01:12:00,495
+Evet, şimdi onlarla ilgili de örnek yapacağım. Mesela bir konvolüsyon, bir max pooling yapabilirsin. Ya da konvolüsyon, konvolüsyon, konvolüsyon, max pooling, relu yapabilirsin. Yani bu şekilde de farklı kullanabiliyorsun.
+
+240
+01:12:03,195 --> 01:12:06,216
+Şimdi burada şey örneğini vermiş.
+
+241
+01:12:11,444 --> 01:12:25,623
+Seafar Dataset'i, mesela Convolution, Relo ve Max Pulling kullanmış. Burada her bir aşamanın ürettiği öz nitelikleri görselleştirmeye çalışıyor.
+
+242
+01:12:25,623 --> 01:12:33,404
+Yani baktığınızda belli bir doğrultuda sanki bir takım çizgiler var gibi algılayabiliyorsunuz başlangıç katmanlarında.
+
+243
+01:12:35,636 --> 01:13:01,276
+İlerledikçe, mesela ben şuraya baktığım zaman, parazit gibi bir şey görüyorum. Hani vardır ya televizyonda anlamsız bir örneğe çıktığında oluşan şekli gibi, gözüm o ilişkiyi yakalayamıyor. Anlatabiliyor muyum? Ama bilgisayar diyor ki ben bu sistemi 100 epok, 300 epok eğitliyim de bu patternin anlamlı bir şey yakaladığını söylüyorum.
+
+244
+01:13:02,484 --> 01:13:11,944
+Anlatabiliyor muyum? Dolayısıyla burada high level teacher'dan pastım. Yani dikkat et insan gücünün algılayamadığı bir paten yakalama şansı oluyor.
+
+245
+01:13:13,444 --> 01:13:22,824
+Ve işte kaç tane? Bir, iki, üç, dört, beş, altı tane konvolisyon patlamı var mesela derinlik olarak baktığımda.
+
+246
+01:13:23,828 --> 01:13:32,828
+Ve işte arkasından bir yine Matpoli ve Klikon Neckler Layer ekleyerek bunun ürettiği...
+
+247
+01:13:35,859 --> 01:14:01,299
+Aktivasyon fonksiyonları ürettiği çıktı da hangi alt için 10 tane farklı sınıflardı, 10 tane farklı çıktı var. Hangisinde skoru daha yüksekse ki burada verdiği imk için doğru yakalamış. Birinci sırada otomobil, ikinci sırada kamyon demiş ama zaten belirli bir şekilde araba olduğunu tespit edebilmiş. Örnek.
+
+248
+01:14:02,452 --> 01:14:09,652
+Şimdi orada gördüğümüz Max Pulling'i hızlıca anlatayım. Max Pulling işlemi hepiniz biliyorsunuzdur tahmin ediyorum.
+
+249
+01:14:09,652 --> 01:14:22,652
+Max representation smaller and more manageable demiş. Küçültüyor. Görüntüyü küçültürken aslında burada daha yönetilebilir hale getirdiğini söylüyor.
+
+250
+01:14:22,652 --> 01:14:27,452
+Çünkü zaten giriş görüntüleri çok büyük. Görüntü üzerinde anlamı yitirmeden.
+
+251
+01:14:28,275 --> 01:14:37,576
+Bunu daha işlenebilir bir boyuta getiriyorsunuz. Bir nevi çözünürlüğünü düşürmek gibi değerlendirebiliriz.
+
+252
+01:14:37,576 --> 01:14:50,576
+Ne yapıyor? İşte ben bir filtre uyguladım. Bu diagonal çizgileri bulan bir filtre olsun. Bu filtrenin çıkısı dörde dört de hatırlarsam.
+
+253
+01:14:51,699 --> 01:15:06,699
+6'ya 6 giriş görüntüsü için bunu üretiyordu. Diyor ki bunu ikili ikili gruplara ayırıyorum ve bunun içerisinden maksimum olanını bu ikiye ikili bloğun çıktısı olarak kabul ediyorum.
+
+254
+01:15:06,699 --> 01:15:08,619
+Sağ perakta da aynı şekilde.
+
+255
+01:15:09,840 --> 01:15:14,420
+Eksi 3, eksi 1, sıfır, eksi 3 var. Bu bloğun en büyük.
+
+256
+01:15:14,547 --> 01:15:19,587
+Büyük sayısı 0 olacak. Bunun 3 olacak, bunun 1 olacak gibi.
+
+257
+01:15:23,252 --> 01:15:40,252
+Max Pulling işlemi bu şekilde. Mesela Max Pulling işlemini bir görüntü üzerinden açıklarken de şunu söylüyor. Aslında yaptığımız işlem Max Pulling'de bir subsampling işlemi gibi düşünebilir. Çünkü ne yapıyorsunuz? İkiye ikilik bir blok alıp bundan...
+
+258
+01:15:40,916 --> 01:16:03,916
+Bunu bire düşürüyorsunuz. Yani görüntüyü küçültmüş oluyorsunuz. Subsampling dediğimiz işlem. Neye göre küçültüyorsunuz? Blon içerisindeki en büyük sayını seçerek. Diyor ki benim elimde bir kuş görüntüsü var. Ben bunu subsampling yaptığımda, yani her 4 pikseli temsilen bir tane piksel seçtiğimde ne yapmış oluyorum? Küçültmüş oluyorum. Ve küçülttüğüm görüntüde de...
+
+259
+01:16:04,051 --> 01:16:09,171
+Sol tarafta görmüş olduğunuz nesneyi düzgün algılayabiliyorum aslında.
+
+260
+01:16:10,451 --> 01:16:17,611
+We can subsample the pixel to make image smaller, fewer parameters to characterize the image.
+
+261
+01:16:17,611 --> 01:16:25,171
+Daha az parametre ile görüntüyü karakterize etmek ya da temsil etmek mümkündür diyor.
+
+262
+01:16:25,171 --> 01:16:28,891
+İşte burada da az önce söylediğiniz işlem.
+
+263
+01:16:28,891 --> 01:16:30,411
+Max Pooling'i...
+
+264
+01:16:30,739 --> 01:16:42,260
+İki ekli bir Masculine piklesi ile stride'ı iki alarak, lütfen dikkat stride iki alarak yani örtüşme hiç yok.
+
+265
+01:16:42,260 --> 01:16:55,219
+Sağ taraftaki yani sol taraftaki input için en büyük sayıyı aldım 6. İkinci blok içerisinden 8. Buradaki blok içerisindeki en büyük sayı 3.
+
+266
+01:16:55,796 --> 01:17:09,476
+Ve burada dördü alıyor ve dörde dörtlük bir giriş görüntüsünden Max Pulling, iki ekilik Max Pulling işlemiyle sağda gördüğümüz iki ekilik alt kutuğunu üretmiş oluyoruz.
+
+267
+01:17:14,323 --> 01:17:16,403
+Geldik aktivasyon fonksiyonlarına.
+
+268
+01:17:17,503 --> 01:17:30,563
+Şimdi yapay sinir ağlarında derin öğrenme uygulamalarından önce en çok yaygın kullanılan sigmoid ve tanjant hiperbolik diye iki tane aktivasyon fonksiyonu var.
+
+269
+01:17:31,563 --> 01:17:37,563
+Aslında uyguladığımız komolysyon işleminden sonra ya da...
+
+270
+01:17:40,115 --> 01:17:58,636
+Filtreleri kullandıktan sonra elde ettiği çıkış işaretini belli bir aralığa sıkıştırmak için kullanılıyordu bu aktivasyon fonksiyonları. Sigmoid ve tangentik erbul birbirine benziyor. Biraz daha detaylı anlatacağım.
+
+271
+01:17:59,444 --> 01:18:13,444
+Deep Learning ile birlikte, H5B-Liner Unit dediğimiz bir Relu diye kısalttığımız bir aktivasyon fonksiyonu ve Leaky Relu dediğimiz bu sındıran demek.
+
+272
+01:18:13,444 --> 01:18:23,444
+Biliyorsun Leaky Relu, sındırma dediği işlemde şu normalde sıfır olan bölge yerini burada gördüğünüz gibi çok küçük bir noktarda.
+
+273
+01:18:25,108 --> 01:18:37,568
+Gelen input'u sisteme aktarıyor. Yani tam sık edamıyor. Veya işte Max Code'un evliliği değişik değişik türeleri de çıkmış.
+
+274
+01:18:37,568 --> 01:18:48,007
+Aktivasyon fonksiyonu, daha önceki süreçte kullanılan bu aktivasyon fonksiyonu yatay eksen input'u gösteriyor arkadaşlar.
+
+275
+01:18:52,819 --> 01:19:13,600
+Alt tutu görüyorsunuz ve giriş işareti sıfırken, sıkış işareti sıfırla bir arasına sıkıştırıyor alt tutu. Çünkü bakın alt tutta sıfır ile en küçük sıfır en büyük bir değerini almış.
+
+276
+01:19:13,600 --> 01:19:19,600
+Ve sıfır için yaklaşık 0.5 alt tut üretiyor.
+
+277
+01:19:20,020 --> 01:19:47,180
+Ve işte burada eksi altı, eksi altı yüz, eksi altı bin de olsa burada ürettiği şey sıkıştırıyor. Sağ tarafta ise sıfıra yakın diyelim. Yani o böyle paralel gidiyor gibi ama tabii ki çok küçük. Bu tarafta da benzer şekilde görüyorsunuz. Sıfır bir arasına sıkıştırıyor.
+
+278
+01:19:47,923 --> 01:19:57,224
+Eksi real value number, yani input olarak ben bu da eksi altı aralığının çifti ama bu dediğim gibi eksi altı yüz artı altı yüz aralığı da olabilir.
+
+279
+01:19:58,103 --> 01:20:09,443
+Gelen bütün bu geniş aralıktaki real value number dediği, bu bir kernel'ın altısı olabilir, bu bir free connected layer çıkışı gibi de olabilir.
+
+280
+01:20:09,443 --> 01:20:14,484
+Bunu alıyor ve sıkır bir arasına sıkıştırıyor.
+
+281
+01:20:15,028 --> 01:20:21,028
+Yani aslında, nasıl söyleyeyim, hassasiyetini ciddi oranında bozuyor.
+
+282
+01:20:26,771 --> 01:20:49,032
+Yani baktığımız zaman işi kolaylaştırmak için yapılmış gibi görünüyor ama bu tarz bir aktivasyon fonksiyonunun türev işlemi ya da bizim burada yapmış olduğumuz konvülüksiyon işleminden gelen A tutu öldürdüğünü söylüyor.
+
+283
+01:20:50,032 --> 01:20:54,471
+Böyle bir eksi altı yüzken adam onu sıfıra koyuyor yani. Hiçbir anlamı kalmıyor.
+
+284
+01:20:56,212 --> 01:21:18,692
+Dolayısıyla bu yakın samayı da engelleyen bir unsur olarak görüyor. Tanjant hiperbolik bunun çok benzeri. Az önce 0-1 aralığına 0-1 aralığına 0-1 aralığına bir fark yok. Yani sanki çift edilmiş gibi.
+
+285
+01:21:18,692 --> 01:21:22,252
+Düşünebilirsiniz. Yatarsınız. Scale edilmiş gibi.
+
+286
+01:21:22,836 --> 01:21:35,736
+Peki Relu ne yapıyor? Relu'nun avantajı şu, diyor ki ben işte bir komolyon işlemi ya da türev işleminden sonra Relu'yu çalıştırdığım zaman yataya giden input'u gösteriyor lütfen dikkat.
+
+287
+01:21:35,736 --> 01:21:48,175
+Sıfırdan başlayıp pozitif tarafta sağ tarafa doğru gittiğim zaman ne girerse o çıkıyor. Yani birebir aynı altı üretiyor ama
+
+288
+01:21:49,908 --> 01:21:55,548
+Sıfırdan küçük olan negatif değerler için hep sıfır yapıyor çıkışını.
+
+289
+01:21:56,827 --> 01:21:58,908
+Trains much faster demiş.
+
+290
+01:21:59,468 --> 01:22:08,827
+Yani daha önce görmüş olduğumuz sigmoid ve tangent hiperboleye göre bu aktivasyon fonksiyonunun avantajı daha hızlı yakınsı yolu olması.
+
+291
+01:22:08,968 --> 01:22:10,948
+Tren işlemini daha hızlı yapabiliyor.
+
+292
+01:22:11,307 --> 01:22:13,167
+Daha az sayıda epokla yapabiliyor.
+
+293
+01:22:14,484 --> 01:22:35,304
+Less Expensive Operation. Çünkü öbüründe bir sigmoid işlemi, bir tangent işlemi, yani bir hesaplama gücü gerektiriyordu. Bunda ise pozitif, negatif bakıyorum. Sayı negatifse sıfır yapıyorum, pozitifse ne geliyorsa onu altta gönder diyorum. Son derece basit bir işlem.
+
+294
+01:22:41,363 --> 01:22:50,363
+Buradan şeyi yapamıyoruz. Neyse. Prevents the Gradient Manishing Problems.
+
+295
+01:22:50,363 --> 01:23:04,363
+Şimdi, RELU'yu anlattık. Liki RELU'yu anlatmadık. Çünkü az önce zaten şurada söylemiştim. Tek farkı, negatif olan bölge için...
+
+296
+01:23:04,543 --> 01:23:14,863
+Diyor ki 0,0,0,1 gibi bir katsayla çarparak onu şey yapıyor. Az da olsa geçiriyor altta.
+
+297
+01:23:18,543 --> 01:23:27,123
+Flatten işlemi. Aslında flatten işleminin ne olduğunu söylemiştim. Bir matrisi vektöre dönüştürme işlemine flatten diyoruz.
+
+298
+01:23:27,423 --> 01:23:52,024
+Matriste gördüğüm değerleri belli bir düzen içerisinde satır satır mesela ya da sütun sütun olabilir. Bakış açımız neyse. Bunu bir vektöre taşıyorsak eğer, burada yapmış olduğumuz işlem, Platinum işlemi, eksi bir bir sıfır üç demiş. Bu satır doğrultusunda arayarak bunu bir vektöre yerleştiriyor.
+
+299
+01:23:53,268 --> 01:24:07,407
+Sonra Fully Connected Layer'dan biraz bahsedebiliriz. Şimdi konvolisyon işlemi bitti ve Feature Extraction işlemini yaptınız diyelim ki. Arkasından bir Fully Connected Layer bağlayacağım.
+
+300
+01:24:16,083 --> 01:24:40,884
+3.0 image demeyelim ona, bir output gelmiş olabilir. Biz bunu retin ettiğimizde 3.072x1 boyutlu bir vektöre dönüştürmüş oluyoruz. Bu input'u burada gördüğümüz gibi bir weight madresiyle çarparak bir output üretiyoruz.
+
+301
+01:24:42,815 --> 01:24:50,815
+Fully Connected Layer dediğimiz satmanda yapmış olduğumuz bu matriz vektör çarpımı işlemi,
+
+302
+01:24:52,815 --> 01:24:59,815
+W matrizinin içerisindeki parametreler bizim train ettiğimiz parametreler.
+
+303
+01:25:01,815 --> 01:25:06,380
+Sonuç olarak ben eğer T-FAR
+
+304
+01:25:07,572 --> 01:25:18,572
+10 tane kategoriye sahip veri sektiği için bu işlemi yapıyorsam üreteceğim alt kutum 10 uzunluklu olmalı.
+
+305
+01:25:18,572 --> 01:25:32,572
+O yüzden burada 1x10'luk bir alt kutusu gösterilmiş. Bunun üzerinden de hangi sınıf ne?
+
+306
+01:25:32,884 --> 01:25:58,744
+Skor almış, onu söylüyorsunuz. Burada W matrisinin boyutu 10x3072 sektörünün boyutu 1 satır 3072 yatay bir row vektör diyelim olarak tanımlanmış. Bu ise 10x3072.
+
+307
+01:25:59,231 --> 01:26:12,672
+10 satır 3072 sütundan oluşuyor. Yani matrisin bir satırını alıp x vektörüyle çarpıyorum. Bir alt üst üretiyorum. Bunlar da 10 satır var. 10 tane böyle alt üst üretiyorum.
+
+308
+01:26:22,739 --> 01:26:31,699
+Doğru, bunu vektör 1 satır, 3072 çarpı 1 olması lazım değil mi?
+
+309
+01:26:40,148 --> 01:26:58,188
+Evet, ama buradaki yazış şekliyle ters oluyor işte. Buradaki yazış şekliyle X vektörünü yazarken 3072 çarpı 1 yazması lazım. Çünkü W matrisinin 3072'sini böyle çarpacak. Bu satır alacak, bununla çarpacak. 3072 uzunluklu.
+
+310
+01:27:05,779 --> 01:27:29,779
+Bir Rol Vektör gibi, burada kalın vektör bir satır. 3072 sütun var gibi görünüyor. Çarpı bir yazması lazım şurada. Ya da orayı öyle yazması lazım. Yani şuradaki ifade şekli biraz ters aslında.
+
+311
+01:27:31,188 --> 01:27:43,327
+Yapacağı işlem orada 3072 uzunluklu bir satırı alıp sütunla çarpacak değil mi? Matris vektör çarpımı nasıl olur? Öyle düşünün. Onu demek istedim.
+
+312
+01:27:48,532 --> 01:27:55,592
+İşte, öyle yazılmaması gerekiyordu yani. Neyse. Efendim?
+
+313
+01:28:01,619 --> 01:28:03,595
+Bu da
+
+314
+01:28:49,684 --> 01:28:51,863
+Bu, şimdi parçalıkları örneklerle anlatacağız.
+
+315
+01:29:00,787 --> 01:29:15,987
+Burada tabi plasik yer, neural network için çalıştığım demiş. Bir soru geldi galiba. Sonuçta 10 çarpı, evet 10 çarpı 1 olacak. Evet doğru diyorsun Arman.
+
+316
+01:29:18,676 --> 01:29:25,736
+Şimdi burada kıskıca şeyden bahsedelim. Parametre sayısına yine vurgu yapmak için bu slide hazırlanmış.
+
+317
+01:29:25,736 --> 01:29:31,876
+Bu arada bu dersin slide'larında ben şey kullandım, onu söyleyeyim size, çok faydalı.
+
+318
+01:29:32,636 --> 01:29:39,556
+Stanford Üniversitesi'nin Computer Vision'la ilgili bir kursu var. CS231M.
+
+319
+01:29:50,484 --> 01:30:06,104
+Sınav sorularını paylaşıyorlar. Hafta hafta hem ödevlerini falan bütün süreci oradan görebiliyorsunuz. Oradan aldım. Ben de bir ara takip etmiştim o kursu. Çok faydalı.
+
+320
+01:30:06,104 --> 01:30:14,864
+Efendim? Yok, sınav sorularını paylaşmadılar. Ödevler var sadece ama ödevleri yapmaya çalışın. Çok güzel ödevler var.
+
+321
+01:30:16,212 --> 01:30:24,971
+Şimdi burada X'in kutu gösteriyor. Şurada bir hidden layer koymuş ve Y dediği de A kutu gösteriyor.
+
+322
+01:30:24,971 --> 01:30:39,452
+İşlem olarak biz az önce bir connected layer'da bir W matrisi ve X vektörü çarpımından bahsetmiştik. Burada onu göstermiş.
+
+323
+01:30:40,884 --> 01:31:03,884
+W1xxd1 dediği yine burada Bayes'i gösteriyor. Şuradaki sigma ise aktivasyonu gösteriyor. İlk W1 dediği ad sayılar input ile hidden layer arasında görünen bağlantıların ağırlıklarını gösteriyor.
+
+324
+01:31:08,372 --> 01:31:18,772
+Sigma, yine bir aktivasyon fonksiyonu. W2xH dediği ise hidden layer'daki düğümler, yani buradaki blade'ler.
+
+325
+01:31:18,772 --> 01:31:30,172
+Bunun W2 adresi şu hidden layer'ın çıkısından altta giden potlar üzerindeki blade'leri gösteriyor.
+
+326
+01:31:33,171 --> 01:31:45,811
+Diyor ki, bizim bu basit çizimimizde dört tane hidden layer'da, iki tane de alt layer'da olmak üzere toplam altı tane nöron var diyor.
+
+327
+01:31:45,811 --> 01:31:56,671
+Bu hesaplamaya input sayısı, inputdaki şeyler katılmıyor. Bunun üzerinden giderek toplam ağırlık sayısını hesaplamak istiyor.
+
+328
+01:31:57,140 --> 01:32:12,560
+Birinci matrisde, W1 matrisinde 3x4, 12 tane. İkinci W2 matrisinde ise 4x2, 8 tane weight var diyor ve bunların toplam sayısı 20'dir diyor.
+
+329
+01:32:12,560 --> 01:32:14,640
+Düğüm sayısı kadar.
+
+330
+01:32:15,123 --> 01:32:21,164
+Bayez gelecek. Oradan da bir 6 geliyor. 26 tane Learnable Parametre var.
+
+331
+01:32:21,644 --> 01:32:30,844
+Bu ufakı eğitirken sürekli train ettiğimiz ve güncellediğimiz parametre sayısı 26 çıkıyor.
+
+332
+01:32:36,948 --> 01:32:44,548
+Buradaki eğitim aşamasının nasıl gerçekleştiğini düşünüyorum.
+
+333
+01:32:44,548 --> 01:32:58,548
+Central Labeled Data deriz. Yani bizim elimizde etiketli bir veri var ama bunun içerisinden böyle bir batch, bir alt kime çıkartıyoruz ve bununla sistemi eğitiyoruz.
+
+334
+01:32:58,548 --> 01:33:02,508
+Forward it through the network, get predictions demek.
+
+335
+01:33:02,676 --> 01:33:13,935
+Bu parametrelerle bize vermiş olan input data ve elimizdeki parametrelerle bir tahminde bulunuyoruz.
+
+336
+01:33:14,316 --> 01:33:21,095
+Ve bu elde ettiğimiz tahmin sonucuyla gerçek sonuç arasındaki farka bakarak bir hata hesabı yapıyoruz.
+
+337
+01:33:21,456 --> 01:33:30,456
+Daha sonra bu hata üzerinden de bu ağ içerisindeki zeytleri güncelliyoruz hatayı azaltacak şekilde.
+
+338
+01:33:30,456 --> 01:33:36,456
+Burada bizim hata webimiz çıktı.
+
+339
+01:33:36,456 --> 01:33:45,456
+Objective function ya da post function olabilir. Bu durumda post'u minimize etmek ya da işte…
+
+340
+01:33:46,452 --> 01:34:12,532
+Yolumuz hedefi maksimize etmek gibi de düşünebiliriz. Bu minimum ya da maksimum fark farklılaşabiliyor. Hatay ise hatayı minimize etmek diyebiliriz kısaca. Bunu minimize edecek şekilde en optimize yoldan amacımız buradaki ağırlıkları güncellemek aslında. Önümüzdeki hafta onunla ilgili biraz daha şey vereceğim.
+
+341
+01:34:12,948 --> 01:34:28,548
+Bunu yaparken de, çok duymuşsunuzdur, Gradient-Sense algoritması en temel zorunda bu hatayı minimize edecek kat sayıları bulmamıza sağlayacağız.
+
+342
+01:34:28,548 --> 01:34:31,548
+Dediğim zaman size biraz daha detaylı anlatacağız.
+
+343
+01:34:44,148 --> 01:34:49,148
+Bu şekilde, kaldığı işlemede, nörden beri gibi gösteren bir X vektörüm var diyor.
+
+344
+01:34:49,148 --> 01:34:51,148
+Bu, bu tanış olması da,
+
+345
+01:34:51,148 --> 01:34:55,148
+hidden layer'ın katsayıları olabilir.
+
+346
+01:34:55,148 --> 01:34:59,148
+Buradaki W maddesi,
+
+347
+01:35:07,315 --> 01:35:25,796
+X vektörünün boyutuyla alakalı. 4 satır yük kutundan oluşan bir W madresim var. Ağırlıklar burada. Bu X vektörü. W madresiyle X vektörünün çarpı üzerine B'yi ilave edip, sonra çifti alarak.
+
+348
+01:35:44,851 --> 01:35:49,652
+Bu bir doğal dil işlemleri ne oluyordu?
+
+349
+01:35:58,260 --> 01:35:59,820
+Aklıma gelmedi. Neyse.
+
+350
+01:36:01,820 --> 01:36:06,160
+Kulu bir ifade midir? Negatif bir anlam mı taşıdık?
+
+351
+01:36:11,444 --> 01:36:17,144
+İpulasyon fonksiyonu sonucunda en büyük değeri hangisinin içine geçiyor? Sonun üzerinden kararı üretiyor.
+
+352
+01:36:18,084 --> 01:36:27,544
+Ama bu ham şekli, tabi bir softmax katmanının da geçirilmesi gerekiyor. Burada onu görmüyorsunuz.
+
+353
+01:36:29,324 --> 01:36:37,724
+Sadece bu slide, W matrisi x vektörü çarpımı ve Bayez eklenmesi işlemini temsil eden.
+
+354
+01:36:40,435 --> 01:36:50,435
+Top Max katmanıyla ilgili de. Burası biraz önemli. Az önce görmüş olduğumuz şu altlıklar.
+
+355
+01:36:51,435 --> 01:37:07,435
+Burada bu sayıda 3 tane, 3, 2, 2, 3, 4 tane sonuç var. Ama aslında buna baktığımız zaman yüzdesel bir ifade değil. Sadece 4 tane sayı içerisinde hangisinde en büyük?
+
+356
+01:37:10,355 --> 01:37:11,355
+Teşekkürler.
+
+357
+01:37:24,532 --> 01:37:26,891
+...bizde kaç veririz?
+
+358
+01:37:27,152 --> 01:37:28,052
+Hiç biliriz.
+
+359
+01:37:28,412 --> 01:37:30,271
+Daha düzdesel bir ifadeyle bunu
+
+360
+01:37:30,271 --> 01:37:31,891
+hemsil etmek istediğim zaman
+
+361
+01:37:31,891 --> 01:37:33,672
+Home-Mex Operation
+
+362
+01:37:33,672 --> 01:37:36,431
+bu amacı aslında bu.
+
+363
+01:37:37,011 --> 01:37:38,452
+Mesela birbiri
+
+364
+01:37:38,452 --> 01:37:40,311
+az önce
+
+365
+01:37:40,311 --> 01:37:41,452
+yanlış olup
+
+366
+01:37:41,452 --> 01:37:43,431
+konuşmak
+
+367
+01:37:43,431 --> 01:37:44,712
+varken
+
+368
+01:37:44,712 --> 01:37:46,712
+3.7, 5.1,
+
+369
+01:37:46,811 --> 01:37:48,212
+2.7 oluştu.
+
+370
+01:37:48,212 --> 01:37:49,351
+Ben bunu
+
+371
+01:37:49,779 --> 01:38:09,539
+Aslında şöyle yüzdeyken ifadeyle anlatabilirim. Bakın, bu 5.1 zaten en büyük olduğu için şu sunum için bir alt süre biliyorum ama yüzde kaç? Bunun cevabını yüzde 87 olarak bana söylüyor.
+
+372
+01:38:09,539 --> 01:38:16,039
+Şu sunum için normal olayısına göre de onun yüzdeyken normal olayısına çıkalım da 0.24.7.
+
+373
+01:38:16,851 --> 01:38:27,851
+Bu nasıl yapıyoruz? Ne değişik olduğumuz koryanın sözü görmeniz gibi akımış ve dönemelik değerlerle korya, yani seyirini gösteriyor.
+
+374
+01:38:27,851 --> 01:38:39,851
+O işlem bir önceki slide'a dönmüş olduğunuz madde ve 4 çarpı ile belli.
+
+375
+01:38:39,851 --> 01:38:41,612
+Evet, belli.
+
+376
+01:38:42,131 --> 01:38:47,611
+Evet, yaslıyım.
+
+377
+01:38:47,611 --> 01:38:54,539
+Yaslıyım.
+
+378
+01:38:58,836 --> 01:39:04,476
+en üzeri etliği ve ileri tüm skolar dıklamı yapabiliyor.
+
+379
+01:39:04,476 --> 01:39:06,235
+Yalnız işlem bu.
+
+380
+01:39:06,235 --> 01:39:14,476
+Solun en üzeri etliği formunda tüm değerleri soktan 24.5 gözü soktan verilir.
+
+381
+01:39:14,476 --> 01:39:16,636
+Ama son mesajını...
+
+382
+01:39:17,268 --> 01:39:36,707
+Görmemiş oluyorsunuz. Aslında bir nevi normalizasyon yapıyor. 0-1 arasında normalize edip yüzde olarak bunu göstermiş oluyorsunuz. Böyle bir faydası var. Yani şuradaki sonuca baktığımda 3.2, 5.1 böyle büyüklük olarak çok bir anlam ifade etmezken.
+
+383
+01:39:37,555 --> 01:39:45,755
+Tahtarak olarak buna birine yüzde seksen yedi demek, birine yüzde on üç demek daha belirgin bir hale getiriyor aslında sonucu.
+
+384
+01:39:48,715 --> 01:39:53,635
+Böyle burası softmax operation'ı da kısaca özetlemiş olduk.
+
+385
+01:39:55,675 --> 01:40:04,975
+Güzel bir sınav sorusu olabilir mesela. Böyle bir matriz vektörü verelim, derim ki hadi softmax altını hesaplayın gibi olabilir.
+
+386
+01:40:07,539 --> 01:40:23,079
+Serbest. Yani zaten online'dasınız, arkada matlabı bile açıp çalıştırabilirsiniz. Matriz vektör çarpımı elde yapmazsınız herhalde diye düşünüyorum. Çok pratik olur yani. Evet.
+
+387
+01:40:26,931 --> 01:40:39,931
+Topnex Operation'dan sonra... Ara mı vereyim? Burada biraz yeni architecture'larından bahsedeceğim. Bir yarım saat, 20 dakika. Devam edelim mi? Tamam.
+
+388
+01:40:39,931 --> 01:40:45,931
+Yani şu kapıyı kapatırsanız sevinirim. Ben burada farkında olmadan diğer yanımda kalıyorum sanki.
+
+389
+01:40:45,931 --> 01:40:46,931
+Sence yok.
+
+390
+01:40:46,931 --> 01:40:52,619
+Yok, cam açık kalsın, kapıyı kapatır. Teşekkür ederim. Sağ olun.
+
+391
+01:40:54,420 --> 01:41:08,399
+Bunu güncellemem lazım. Aslında buraya yeni birkaç mimari daha ekleyebilirim ama şu vermiş olduğum slide'da ilk Deep Neural Network örnekleriyle başlayıp ResNet'e kadar koydum.
+
+392
+01:41:09,399 --> 01:41:17,159
+Inception netler, belki bir sonraki slide'ımda vardı Inception. Efficient netlerden falan bahsedebilirim efendim.
+
+393
+01:41:17,159 --> 01:41:17,800
+Olur.
+
+394
+01:41:18,479 --> 01:41:20,439
+Olur tabii, Detection'dan.
+
+395
+01:41:21,395 --> 01:41:34,475
+Şimdi şöyle ilerleyelim. Aslında güzel bir özet. Yine bu Stanford Üniversitesi'ndeki kursda bahsedilmişti. Çok güzel karşılaştırarak anlatacağım.
+
+396
+01:41:34,475 --> 01:41:44,475
+ImageNet diye bir, biliyorsunuz, görüntü kütüphanesi var ve orada bin farklı kategori için...
+
+397
+01:41:44,528 --> 01:42:02,228
+Milyon tane görüntü toplanmış. Bu zengin bir kütüphane. Hepiniz duymuşsunuzdur ImageNet'i. Ve bu ImageNet kütüphanesi üzerinde bir yarışma düzenliyorlar. 2012'li yıllarda. Ama ondan öncesi de var.
+
+398
+01:42:16,180 --> 01:42:23,059
+Test Error Rate'i, hata oranı %15'e düşürmeyi başarıyor.
+
+399
+01:42:23,840 --> 01:42:29,199
+The next best entry achieved an error of 6 diyor.
+
+400
+01:42:29,199 --> 01:42:40,359
+Yani yarışmada ikinci olan adamın elde ettiği hata oranı %62 iken, yani neredeyse %10 farkla yeniyor ve başarılı oluyor.
+
+401
+01:42:41,268 --> 01:42:51,747
+Yarışmanın skorları 2.10'da başlamışız. Burada Şelo Dede'yi full ağ yapısı kullanılarak geliştirilmiş yapıcısınız.
+
+402
+01:43:07,572 --> 01:43:18,372
+Hatayı %16.4'e düşüyor. Şimdi sonraki yıllarda Deep Neural Network'ta yaygın kullanılmaya başlıyor.
+
+403
+01:43:18,372 --> 01:43:31,372
+First CNN Based Wiener Döneği, 2012'deki tabanlı bir dünya kullanılıyor. Sonraki yıllara bakacağız.
+
+404
+01:43:31,796 --> 01:43:47,796
+Arkadaşlar, bilgisayarın cevabı 2013-2014-2015 diye düşüyor. 2014'te, 17-19 ile ilgili modelle, hata ayı %7'ye düşürüyor.
+
+405
+01:43:47,796 --> 01:43:57,796
+Sonra bugün de %7'ye düşürüyor. Şunu bitiyor 2015'te. Neden bitiyor diyor.
+
+406
+01:43:58,676 --> 01:44:11,676
+Oranı 3.77 diye düşüyor. İnsanın hata oranının altında. İnsan yüzde beş hatayla tanıyabilirken, model yüzde üç kadar hatayla tanıyınca bir yarışma bitmiştir deniyor.
+
+407
+01:44:11,676 --> 01:44:24,676
+Yani bunun ötesi yok. İnsanlar da hata yapıyor. Yani birbirleriyle tutarlı olmuyorlar. Resmi hazırlayan adam biliyor ama insanlar o fotoğrafa baktığında bulamıyor, göremiyor onu.
+
+408
+01:44:26,644 --> 01:44:30,644
+Model daha iyi bir yolu.
+
+409
+01:44:30,644 --> 01:44:36,644
+İşte ilk geliştirilen AlexNet ile başlıyor burada.
+
+410
+01:44:36,644 --> 01:44:42,644
+Normalization, Convolution Mass-Buring Normalization işlem adımları ile.
+
+411
+01:44:52,692 --> 01:44:55,692
+Bakın artık nasıl hesaplandığını da biliyorsunuz.
+
+412
+01:44:55,692 --> 01:45:04,112
+Çünkü zaten 227-227 çarpı 3 yani renkli görüntüler.
+
+413
+01:45:09,779 --> 01:45:23,859
+Dörde iki yüz yirmi dörtmüş ve AlexNet gibi ilk çıkan mimariler kullanılmış arkadaşlar. On biri on bir, yediye yedi. Baya büyük filtreler kullanmışlar.
+
+414
+01:45:25,899 --> 01:45:32,500
+Diyor ki burada on bir doksan altı tane filtreyi Strydum'dan olarak kullanmış mesela.
+
+415
+01:45:32,859 --> 01:45:34,859
+Ve buna göre işte...
+
+416
+01:45:36,180 --> 01:45:58,940
+Volume size vs. hesaplamış. Size de güzel bir örnek olabilir. Ama artık dediğim gibi bunları çok rahat hesaplayabilirsiniz. Burada verilmiş olan büyüklükler üzerinden. Şurada 96 tane diyor. 55 TL'ydi. Bakın burada. Bunları bu şekilde bulabiliriz.
+
+417
+01:46:04,144 --> 01:46:10,744
+Biraz kazanmak için herhalde o yıllardaki makine gücü çok yüksek değil.
+
+418
+01:46:16,532 --> 01:46:32,672
+Bu en son softmax katmanında bir tane kategori için ürettiği skorları bir softmax işleminden geçirerek yüzdesel olarak ifade ediyor.
+
+419
+01:46:32,672 --> 01:46:38,444
+Sonra VGG.net 2015'te demiştik. Buradaki yapıda...
+
+420
+01:46:44,851 --> 01:46:52,331
+Mimari 9-9, 11-11 gibi fitk boyutları seçerken bu 2-3 seçiyor ama derinliği artıyor.
+
+421
+01:46:52,331 --> 01:47:01,211
+AlexNet Mimarisinde 5 tane konvolisyon katmanı varken, Recici'de bu katman sayısı...
+
+422
+01:47:05,844 --> 01:47:10,344
+Yarışmalı da galiba onun için bu sonuçlar.
+
+423
+01:47:12,344 --> 01:47:19,743
+Şunu söylüyor ve de, çok güzel bir tespit bence bu.
+
+424
+01:47:20,659 --> 01:47:35,680
+Why use smaller filters diyor. Neden daha küçük filtreler kullandık? Daha küçük filtre kullanıyor ama daha fazla katman ekliyor. Aslında daha fazla katman eklediğinizde aynı etkiyi elde ediyorsunuz diyor. Onu iddia ediyor.
+
+425
+01:47:46,739 --> 01:47:52,059
+Şimdi lütfen dikkat.
+
+426
+01:47:59,220 --> 01:48:01,420
+Burası kullanmaya eşdeğer olduğumuz.
+
+427
+01:48:05,140 --> 01:48:13,680
+Bu ilginç bir titri. Bir de parametre sayılarını karşılaştırıyor.
+
+428
+01:48:13,680 --> 01:48:31,680
+Diyor ki, 3'e 3'e 3 tane komolysiyon fitresi kullanmanın bana getireceği parametre sayısı ile 7'ye 7'lik bir tane kullanmanın bana getireceği parametre sayısına baktığım zaman aslında 7'ye 7 fitresi kullanmanın...
+
+429
+01:48:31,891 --> 01:48:43,731
+Parametre sayısı çok daha fazla çıkıyor. O zaman büyük filtrelerden gitmek yerine daha küçük ama daha çok sayıda filtre kullanmak daha efektif görünüyor.
+
+430
+01:48:43,731 --> 01:48:54,431
+Hesaplama maliyeti açısından. Çünkü aslında örttüğü alan yine arka arkaya uyguladığımız vakit aynı bölgeyi kapsayacak şekle geliyor.
+
+431
+01:48:55,011 --> 01:48:56,851
+Bilmem anlatabildim mi?
+
+432
+01:48:57,792 --> 01:48:58,692
+Efendim?
+
+433
+01:49:04,404 --> 01:49:10,404
+Ama çarpa 7'e 7'nin 49 c kare çıkıyor. Tamam mı?
+
+434
+01:49:12,404 --> 01:49:18,404
+Yani 3'e 3'lük filtre kullandığımda değil, parametre sayısına bak.
+
+435
+01:49:34,228 --> 01:49:46,208
+Ve parametre sayım da artıyor. Yani ikisi birden paralel olarak. Değil mi? Çünkü siz o parametreleri ne yapıyorsunuz? Optimize ediyorsunuz, iyileştiriyorsunuz. Daha iyi parametre arayışındasınız bir de.
+
+436
+01:49:46,208 --> 01:49:56,628
+Parametre sayısının az olması bir şeyin, ağın daha az kompleks olduğunun göstergesi. Anlatabiliyor muyum?
+
+437
+01:50:00,000 --> 01:50:10,500
+Vuraya vurgu yapıyor. Yani daha küçük filtre mi, daha büyük filtre mi kullanmak mantıklı. Buradan çıkan sonuç daha küçük filtre kullanarak ilerlemek daha mantıklıdır diyor.
+
+438
+01:50:10,500 --> 01:50:19,500
+Ve bunların işte parametre sayılarını hesaplamış. Mesela VGG16'nın toplam parametre sayısını çıkıyor.
+
+439
+01:50:19,500 --> 01:50:27,948
+Ve o günkü kullandığı Nvidia Titan Black GPU kullanmış.
+
+440
+01:50:28,500 --> 01:50:47,500
+Trained On 4 tanesini kullanmış. 2-3 weeks demiş. 3 haftaya kadar. Baya uzun. Biz burada bir gün eğitsek sıkılıyoruz elimizdeki makine gücüyle.
+
+441
+01:50:47,500 --> 01:50:54,500
+Hakikaten iyi bir hesaplayıcının olması işi kolaylaştırıyor tabii.
+
+442
+01:50:54,815 --> 01:50:57,515
+Bu da o zamanın en iyi makinesiydi herhalde.
+
+443
+01:50:58,416 --> 01:51:01,136
+Titan Black dediği.
+
+444
+01:51:01,596 --> 01:51:06,256
+Evet, sonra burada şuna uygun yapmış.
+
+445
+01:51:06,256 --> 01:51:12,435
+Hani burada 8 milyonuna başladı ya, DG16 ve Google Net'te Deeper Net örgütü.
+
+446
+01:51:12,435 --> 01:51:19,115
+Daha derin, daha katman sayısının arttığı modellere doğru düzüyor.
+
+447
+01:51:20,659 --> 01:51:45,940
+Şu ResNet mimarisi için 2015'de kuranlar mimaride katman sayısı 152. Yani oldukça büyük bir sayı aslına bakarsanız. Daha derin bir ağ yapısı oluşturmuş oluyor. Ve orada bu birebirlik konvolisyon filtrelerini de orada görüyoruz zaten. Google Net vermiş bu da.
+
+448
+01:51:49,492 --> 01:52:13,692
+Google Net'te Inception modülünü eklemiş ve Captified Error'ı 6.7 hesaplamış. Bu Inception işlemi bir başarı getiriyor gerçekten. Şurada birebirlik komolyisyon fitreleri.
+
+449
+01:52:14,420 --> 01:52:23,720
+Ve Prevues'leri de elde ettiği sonucu, mesela şu katmanı atlayıp sonraki katmana input olarak veriyor.
+
+450
+01:52:24,720 --> 01:52:26,420
+Çok önemli bir fark.
+
+451
+01:52:26,920 --> 01:52:33,420
+Çünkü inküleksiyon fikriyle önemli bir fark, önceki dönemde kullanılmayan bir yapı.
+
+452
+01:52:37,300 --> 01:52:57,099
+Residual Network dediğimiz ResNet mimarisinde de şey yapıyor, yani şu katmanda elde ettiği sonucu bir sonraki katmanda toplama ekleyerek bir farklılık getiriyor ve sonuçların iyi çıktığını görüyorlar. Artık enteresan şeyler böyle deneye deneye.
+
+453
+01:53:00,851 --> 01:53:16,851
+Bu rezidüel bloğu anlatmış. Rezidüel bloğu dediğim gibi katman belgede edilen sonucu iki tane komolysiyon katmanından geçirmiş. Bu sonucu iki yeri daki alt kutu alıyor ve buna ekvison.
+
+454
+01:53:17,851 --> 01:53:25,851
+Reznet mimarisinde bu var. Bu atlamalı yapıyı burada görüyoruz.
+
+455
+01:53:27,828 --> 01:53:35,068
+Curious Comparison vermiş. Enteresan.
+
+456
+01:53:48,884 --> 01:54:08,863
+Ayrıca dairelerin büyüğü ise parametre sayısını gösteriyor arkadaşlar. Yani daire ne kadar küçükse o kadar az parametresi var ve sola yakınsa o kadar az işlem gerektiriyor. Ne kadar yukarıya yakınsa o kadar başarılı. Ekrisi yüksekte.
+
+457
+01:54:09,876 --> 01:54:23,876
+O günkü bu içerisinde baktığımızda, Inception modelleri, parametre sayısının az olması ve işlem karmaşırının az olması nedeniyle Inception ve ResNet modelleri iyi görülüyor.
+
+458
+01:54:23,876 --> 01:54:30,876
+Şimdi günümüzde bir EfficientNetler var. Mesela onlarda da parametre sayısı oldukça az denildi.
+
+459
+01:54:30,876 --> 01:54:33,876
+Ve başarıları...
+
+460
+01:54:33,876 --> 01:54:35,876
+E-Net bulmuyoruz.
+
+461
+01:54:35,876 --> 01:54:37,579
+Yok.
+
+462
+01:54:43,891 --> 01:55:02,131
+Evet. Ben kerası kullanıyorum. Tabii bu Pensaflow ve Piano iki tane şir var altında. Pensaflow keras altında kullandığımı yapalım.
+
+463
+01:55:06,676 --> 01:55:07,564
+Evet.
+
+464
+01:55:17,076 --> 01:55:40,996
+Tahmin ediyorum hepinizin az çok bir deneyimi olmuştur. Cancer Flow kullanmışsınızdır. Ama biraz daha bilinçli kullanmak, o framework içerisindeki yapılan iş adımlarını takip etmek ve belki modifiye etmek için artık yavaş yavaş harekete geçebilirsiniz bence. Neyi neden seçtiğinizin farkına vararak.
+
+465
+01:55:41,395 --> 01:56:07,175
+İlerleyebilirsiniz diye düşünüyorum. Önümüzdeki hafta regularization işlemini anlatacağım. Dropout kavramını anlatacağım. Overfitting'i anlatacağım. Yani yine baya bir konumuz var. Sınavdan önceki son dersimiz de o olmuş olacak. Haftaya sınavın detaylarını konuşabiliriz.
+
+466
+01:56:07,923 --> 01:56:11,724
+Benim kıyam topraklar arkadaşlar.
+
+467
+01:56:13,503 --> 01:56:18,804
+Sonuçlandırdık zaten hepinizin bu tarafta deneyimi var diye düşünerek.
+
+468
+01:56:19,884 --> 01:56:22,203
+Sorunuz yoksa eğer dersi bitireceğim.
+
+469
+01:56:24,804 --> 01:56:28,703
+Online'daki arkadaşlar şöyle bir el sallayıp çıkabilirler dersten.
+
+470
+01:56:28,703 --> 01:56:34,884
+Şu anda derste 24 kişi varmış. Bakayım kaç kişi el kaldırıp buradayım diyor.
+
+471
+01:56:35,423 --> 01:56:44,984
+17, 18, 6 kişi. Peki. Haftaya görüşmek üzere. Hoşçakalın.
+
+472
+01:56:47,003 --> 01:56:48,123
+Görüşmek üzere hocam.
+
+473
+01:56:48,644 --> 01:56:49,703
+Teşekkürler.

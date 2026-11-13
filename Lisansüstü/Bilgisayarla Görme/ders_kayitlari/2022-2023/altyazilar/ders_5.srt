@@ -1,0 +1,2371 @@
+1
+00:07:28,211 --> 00:07:29,091
+Merhaba arkadaşlar.
+
+2
+00:07:32,851 --> 00:07:35,091
+Merhaba hocam.
+
+3
+00:07:37,251 --> 00:07:37,751
+Evet.
+
+4
+00:07:40,331 --> 00:07:50,591
+Herkes toplanana kadar bekliyorum. Beş dakika oldu. Şimdi yavaş yavaş başlayacağım. Beklerken de tabii bakıyorum. Siyah ekran, simler var, yüzler yok.
+
+5
+00:07:50,975 --> 00:08:02,975
+Tekrar hatırlatmak istedim. Bilgisayarında fotoğraf olmayanlar haftaya kadar koysun. Ondan sonra lütfen bir profil fotoğrafınız olsun Zoom ekranında.
+
+6
+00:08:04,776 --> 00:08:15,755
+Biraz birbirimizi tanıyalım. Uzaktan ders yapıyoruz ama olabildiğince hatırlatır diye düşünüyorum.
+
+7
+00:08:17,588 --> 00:08:30,588
+Evet sevgili arkadaşlar, zaman geçiyor. Herhalde bu artık beşinci hafta gibi oldu. Bu hafta size...
+
+8
+00:08:30,720 --> 00:08:45,019
+Matematiksel Morfoloji, bir binary imic üzerinde matematiksel morfoloji operatörlerinden ve sonra Grayscale Image'te benzer şekilde matematiksel morfoloji işlemlerinden bahsedeceğim.
+
+9
+00:08:45,019 --> 00:08:58,700
+Arkasından half transform dediğimiz bir transform ile bir görüntü içerisindeki line'ları detect etmek, line detection veya herhangi bir şekilde olabilir.
+
+10
+00:08:58,720 --> 00:09:20,980
+Bu bir circle detection amacıyla kullanılabilen bir half transform dediğimiz bir çözüm var. Eskiden feature engineering yaptığımız zamandan kalma yöntemler olmakla birlikte içindeki matematiğin ben hala değerli olduğuna inanıyorum ve bu matematiği görerek
+
+11
+00:09:21,427 --> 00:09:40,268
+Bu dersi ilerletirsek eğer siz bundan çok faydalanacaksınız diye düşünüyorum. Bu hafta ve önümüzdeki hafta Feature Engineering konusunu tamamlayacağım. Ondan sonra CNN, Convolutional Neural Network'lere doğru ilerleyeceğiz.
+
+12
+00:09:42,159 --> 00:09:59,679
+Ben matematiği çok seviyorum. Biraz o yüzden matematiğin üzerinde duruyorum. Dikkatinizi çekmek istiyorum belli noktalara. O yüzden olabildiğince yazarak, çizerek bu konuları anlatmaya gayret edeceğim.
+
+13
+00:09:59,679 --> 00:10:07,659
+Şimdi önce mathematical morfoloji konusuyla ilerleyelim.
+
+14
+00:10:13,076 --> 00:10:17,676
+Tifolojiyi bir şeyden anlatacaktık. Pardon.
+
+15
+00:10:23,796 --> 00:10:29,076
+Tabletten anlatınca şey kolay oluyor yazıp çizmek.
+
+16
+00:10:29,076 --> 00:10:31,956
+Bu yüzden buradan devam edelim.
+
+17
+00:10:33,636 --> 00:10:35,376
+Ve şöyle yapalım.
+
+18
+00:10:36,296 --> 00:10:37,876
+Binary Image Morfoloji.
+
+19
+00:10:39,256 --> 00:10:47,316
+Bu Microsoft beni öldürüyor. Her sene tekrar Product Activation istiyor.
+
+20
+00:10:47,796 --> 00:11:08,296
+Ben de uğraşamadığım için üzgünüm. Burada böyle bir Product Activation Failed diye bir açıklama görüyorsunuz. Yani var bir yerde aktivasyon kodu da şimdi onu bul, yaz, et falan bana biraz zor geldiği için o öyle orada duracak. Üzgünüm.
+
+21
+00:11:11,956 --> 00:11:19,475
+Konu başlığımız Binary Image Morfoloji. Hızlıca başlayalım. Burası zaten kolay bir alan.
+
+22
+00:11:23,916 --> 00:11:26,016
+Şöyle tablete geçtim.
+
+23
+00:11:29,276 --> 00:11:34,496
+Elimizde bir Binary Image var. Buna büyük B ile isim verdik.
+
+24
+00:11:34,496 --> 00:11:39,456
+Ve bir Structuring Element dediğimiz yapılandırma elemanı var. S.
+
+25
+00:11:40,275 --> 00:11:49,235
+Bu yapılandırma elemanı burada da belirtildiği gibi Can be any shape, circle or square etsektra demiş.
+
+26
+00:11:49,235 --> 00:11:53,735
+Buradaki yapılandırma elemanı farklı formlarda olabilir.
+
+27
+00:11:55,155 --> 00:12:06,115
+Bir diamond shape olabilir, şöyle bir yapının içerisinde bir circle olabilir ya da bir daire formunda olabilir.
+
+28
+00:12:06,899 --> 00:12:14,899
+Değişik formlarda bu yapılandırma elemanlarını tanımlamak mümkün.
+
+29
+00:12:14,899 --> 00:12:24,899
+S dediği, yine yapılandırma elemanının içerisindeki kat sayılar binary.
+
+30
+00:12:24,899 --> 00:12:27,899
+X a probe of binary image.
+
+31
+00:12:27,899 --> 00:12:31,899
+One pixel of s is designed.
+
+32
+00:12:32,371 --> 00:12:44,251
+As the origin, yani tanımladığımız yapılandırma elemanının mutlaka bir simetrik bir yapıda olması ve bir merkez noktasının olması isteniyor.
+
+33
+00:12:44,655 --> 00:12:52,415
+O yüzden böyle bir yapıda planlanması gerekiyor. Çünkü merkez nokta için bir output üretiyor. O yüzden.
+
+34
+00:12:53,235 --> 00:13:00,355
+Burada değişik örnekleri var. 3 satır 5 sütundan oluşan içi 1'lerle dolu dikdörtgen bir kutu şeklinde olabilir.
+
+35
+00:13:01,635 --> 00:13:03,235
+Birinin mikrofonu açıldı.
+
+36
+00:13:07,508 --> 00:13:22,508
+Tamam, şimdi kapandı. Bir disk formunda olabilir. Az önce dediğim gibi bu içi dolu bir disk yapısında olabilir. Veya bir ring, bir halka şeklinde olabilir. Bunlar...
+
+37
+00:13:22,672 --> 00:13:37,231
+Yapılandırma elemanlarına örnekler. Example of Structuring Elements demiş ve Blanks Represent Zeros demiş. Burada boş olan, işaretlenmemiş gözlerin sıfır olduğunu söylüyor.
+
+38
+00:13:37,940 --> 00:13:52,220
+Yapılandırma elemanlarının değişik formları olabilir. Artı şeklinde olabilir. Bakın burada gördüğümüz gibi. Ama tüm bu yapıları mutlaka bir matriz içerisine oturtup bir merkez noktası tanımlamanız gerekiyor burada olduğu gibi.
+
+39
+00:13:52,779 --> 00:14:03,840
+İçi tümüyle dolu üçe üçlük bir kare formunda olabilir. Yine bu zaten kare formunda olduğu için yani bir matrizin içerisine oturabildiği için sorun yok.
+
+40
+00:14:05,940 --> 00:14:24,980
+İnce bir çubuk şeklinde olabilir veya bir diamond shape olabilir. Bu diamond shape'i de yine bir şeyin içerisine oturtuyor. Dikdörtgen bir box'ın ya da matrisin içerisine oturtuyoruz ve bu matris ile aslında biz bütün işlemlerimizi gerçekleştiriyoruz.
+
+41
+00:14:33,940 --> 00:14:36,200
+CIS gibi yazmaya gerek yok.
+
+42
+00:14:39,572 --> 00:14:58,392
+Şimdi şeyde, matematiksel morfolojide iki tane temel operation'ımız var. Biri erosion, öpürü dilation. Erosion, aşındırmak demek ve shrinking or thinning operation dediği aşındırma, inceltme işlemini yapmak için kullanılıyor.
+
+43
+00:14:58,392 --> 00:15:06,652
+Ve hemen bir küçük örnek ile burada göstermek gerekirse, şurada gördüğümüz gibi bir dumbbell.
+
+44
+00:15:08,403 --> 00:15:21,824
+Küçük bir halter formu ve bunun üzerinde biz işlem yapacağımızı varsayalım. Bu bizim giriş görüntümüz olsun. Buna A matrisi demiş ve aşağıda gördüğümüz şekilde bunu bir matrisin içine yerleştirmiş.
+
+45
+00:15:21,824 --> 00:15:26,624
+B dediği ise bizim yapılandırma elemanımız.
+
+46
+00:15:28,463 --> 00:15:33,824
+Structuring Element dediğimiz yapı.
+
+47
+00:15:34,868 --> 00:15:38,648
+Bunu da yine bir matrisin içerisine koymuş. Şurada gördüğümüz gibi.
+
+48
+00:15:39,208 --> 00:15:43,168
+Erojin işlemi, yani aşındırma işleminde çalışma mantığı şu.
+
+49
+00:15:44,848 --> 00:15:55,327
+Yapılandırma elemanının merkez noktasını görüntünün içerisinde bir olan bir göz ile örtüştürüyoruz.
+
+50
+00:15:55,588 --> 00:16:00,668
+Yani şurası olsun. Bu gözle örtüştürdüğümüzde bunun örttüğü alan.
+
+51
+00:16:01,427 --> 00:16:14,587
+Yapılandırma elemanının örttüğü alan şu. Bu örttüğü alan içerisindeki bütün pikseller, yapılandırma elemanının içerisindeki piksel, yani bir olan piksellerle örtüşüyor ise,
+
+52
+00:16:14,587 --> 00:16:24,548
+bunu End Operation gibi düşünebiliriz. Bir ile biri Endlediğimiz zaman bir çıktı verir bize.
+
+53
+00:16:25,043 --> 00:16:37,323
+Dolayısıyla bu end işlemi sonunda elde ettiğimiz output 1 oluyorsa toplam kaç tane göz için? 5 tane göz için. Çünkü burada 5 tane gözde 1 var.
+
+54
+00:16:42,388 --> 00:16:47,107
+Altta görüntü üzerindeki pikseller arasında bir end operation yapıyor.
+
+55
+00:16:47,707 --> 00:16:54,867
+Ve bunların hepsinin sonucu eğer bir dönüyorsa, yani o birileri de bir daha endleyip bir elde edebiliyorsak,
+
+56
+00:16:54,867 --> 00:17:07,067
+diyoruz ki bu piksel aşınmaz kalır. Ama burada gördüğünüz gibi görüntünün, yani halterin sol üst köşesine, merkez noktasına oturttuğumda,
+
+57
+00:17:10,387 --> 00:17:22,847
+Ve batı yönündeki bölümlerinde örtüşme olmadığı için, yani görüntüde sıfır olduğu için, background olduğu için bu end işlemi sonucu sıfır verecek.
+
+58
+00:17:22,847 --> 00:17:36,467
+Ve sıfır verdiğinde bu piksel aşınacak. Dolayısıyla burada görüyorsunuz sağ taraftaki outputta bu piksel background piksel olarak alınmış. Sıfır gibi düşünebilirsiniz.
+
+59
+00:17:38,548 --> 00:17:53,728
+Tabi burada renk ve şey arasında bir tutarsızlık var gibi görünüyor ama lütfen sadece 0 ve 1'lere odaklanın. Neden beyaz, neden siyah diye bakmayın. Sadece 0-1 olarak düşünelim şu anda.
+
+60
+00:17:54,900 --> 00:18:09,240
+Ve bu şekilde bir background elde etmiş oluyoruz. Aslında burada yaptığımız işlemlerde eğer yani renk üzerinden de ya da parlaklık değeri üzerinden de yorum yapacak olursak şu piksellerin bir olması.
+
+61
+00:18:10,451 --> 00:18:19,511
+Veya görüntü üzerinde bu piksellerin bir olması beyaz foreground, siyah background gibi lütfen düşünün.
+
+62
+00:18:24,976 --> 00:18:44,976
+Aslında bir olan piksel, erosion işlemi sonunda o piksel aşınarak bir background pikseline dönüşüyor. Obje üzerindeki var olan o bölgeler aşındırılmış oluyor. Hangi bölgede örtüşme olur ve bu şey...
+
+63
+00:18:45,652 --> 00:19:02,251
+Aşındırmaz. Mesela şuraya örtüştürdüğüm zaman bu piksel için işlem yaptığımda bu pikselin örttüğü alandaki parlaklık değerleriyle yapılandırma elemanının bir olan gözleri arasında end işlemi yaptım.
+
+64
+00:19:02,251 --> 00:19:12,512
+Hepsi birbiriyle tuttu ve bir output üretti. Dolayısıyla bu piksel bakın burada görüyorsunuz aşınmamış oldu. Yani bir olarak.
+
+65
+00:19:12,912 --> 00:19:25,211
+Kaldı. Aşındırma işlemi dediğim gibi aslında basit bir end işlemiyle ifade edilebilir. Aklınızda kalması gereken şey bence bu.
+
+66
+00:19:26,891 --> 00:19:36,331
+İkinci işlemimiz pardon erosion işlemine devam ediyor burada. Güzel ilginç örnekler vermiş. Belki yorum yapmak açısından faydalı da olabilir.
+
+67
+00:19:41,107 --> 00:20:00,000
+Bir kare input imicim var. A matrisi diyelim buna. Şurada gördüğümüz şekil. Ve bir de yapılandırma elemanım var. Yapılandırma elemanının boyutları ise D bölü 4'e D bölü 4. Yani şu sol tarafta gördüğümüz şeyin.
+
+68
+00:20:00,000 --> 00:20:07,720
+Bu yüzden karenin her bir kenarından bir çeyrek alarak böyle bir yapılandırma elemanı çıkarmışız gibi düşünebilirsiniz.
+
+69
+00:20:08,340 --> 00:20:12,000
+Ve bunun merkez noktası. Merkez noktası o zaman ne olur?
+
+70
+00:20:12,159 --> 00:20:16,840
+Eğer bunun ebatları D bölü 4 ise D bölü 8'e falan karşı gelir.
+
+71
+00:20:17,299 --> 00:20:25,079
+Diyor ki bu görüntü üzerine bu yapılandırma elemanı ile aşındırma işlemi uygularsak eğer sağ taraftaki output'u elde ederiz.
+
+72
+00:20:25,079 --> 00:20:27,980
+Sağ taraftaki outputta ne görüyoruz? Bakın.
+
+73
+00:20:28,000 --> 00:20:33,679
+Bu dıştaki kesikli çizgi bize şeyi gösteriyor.
+
+74
+00:20:35,859 --> 00:20:57,639
+A görüntüsünün orijinal boyutunu gösteriyor. D'ye D'ydi. Ne kadar aşınmış kenarlarından? Şimdi bir de ona bakacak olursak. Şurası da D. Şu bölge D bölü 8 kadar soldan, sağdan, üstten ve alttan aşınma gerçekleşmiş.
+
+75
+00:20:57,639 --> 00:21:03,859
+Dolayısıyla 3D bölü 4 kadarlık bir bölge sadece output'a taşı.
+
+76
+00:21:03,859 --> 00:21:25,559
+Aşınma işleminin ölçekli olarak da bir ifadesini görmüş olduk. Aynı görüntüye diyor ki bu defa burada gördüğümüz şekilde bir çubuk şekliyle bir erojen aşındırma işlemi yapsak ne olurdu?
+
+77
+00:21:25,559 --> 00:21:29,799
+Çubuğun yüksekliği D, en iyiyse D bölü 4.
+
+78
+00:21:30,451 --> 00:21:44,552
+Şimdi lütfen hayal edin. Bu yapılandırma elemanını şunun içerisine oturtuyorsunuz. Şurayla tam örtüştü. Ama merkez noktası şurası. Ne yapar, neye benzer çıktı?
+
+79
+00:21:48,084 --> 00:22:04,423
+Kaydırdığım zaman bunu sadece şöyle bir çizgi çıkar değil mi? Sağ tarafta gördüğümüz gibi. Bu bizim output image'miz. Şununla elde ettiğimiz aşındırmayı gösteriyor.
+
+80
+00:22:04,423 --> 00:22:15,184
+Peki bu çizginin solunda ve sağında kalan boşlukların miktarı ne kadar olur o zaman? Bunun eni D bölü 4 ise eğer.
+
+81
+00:22:15,731 --> 00:22:24,351
+Burada D bölü 8 sol tarafta ve sağ tarafta D bölü 8'lik kadar bir mesafe kalacak.
+
+82
+00:22:24,351 --> 00:22:33,692
+Onun içinde sadece bir çizgi olarak ben Erosion işleminin sonucunu göreceğim diyorum.
+
+83
+00:22:35,731 --> 00:22:42,511
+Takip edemeyen var mı? Soru soramak isteyen varsa lütfen çekinmeden sorabilirsiniz.
+
+84
+00:22:47,571 --> 00:22:50,451
+Burada Erosion işlemine örnekler vermiş.
+
+85
+00:22:51,671 --> 00:23:00,692
+Using Erosion to Remove Image Components demiş ve A'da 486'ya 486 bir Binary Image vermiş.
+
+86
+00:23:00,811 --> 00:23:05,391
+Buna Wirebond Mask demiş. Bir baskılı devrenin arka yüzü bu.
+
+87
+00:23:07,119 --> 00:23:33,559
+Bu baskılı devrenin arka yüzünde image eroded using square structuring elements of size demiş ve 11'e 11, 15'e 15, 45'e 45 gibi değişik boyutlarda kare bir yapılandırma elemanı ile aşındırma işlemi uyguladığında sağ tarafa doğru gittikçe yapılandırma elemanının ebadı büyüyor.
+
+88
+00:23:33,559 --> 00:23:35,119
+O büyüdüğü için de.
+
+89
+00:23:35,119 --> 00:23:49,279
+En sonunda gördüğünüz şekilde artık bütün çizgiler yok olmuş. Sadece ortada bu şu bölüm aşındırarak sadece bunu taşıyabilmiş output image diyebiliriz.
+
+90
+00:23:49,279 --> 00:23:59,939
+Demek ki şu orijinal görüntüde bize verilmiş olan merkezdeki beyaz büyük alanın boyutları epey büyükmüş.
+
+91
+00:24:02,036 --> 00:24:08,175
+İşte sağdan soldan belli bir miktar aşındığı halde şöyle bir output üretebilmiş.
+
+92
+00:24:10,963 --> 00:24:22,723
+Geldik ikinci işleme. İki tane ana operation'ımız var demiştik. Buna da Dilation diyoruz. Dilation'ın aslında yayma demek. Growth or Tickling Objects in Binary Image demiş.
+
+93
+00:24:23,403 --> 00:24:32,803
+Şimdi yayma işlemi için ise yine örnek bir görüntü üzerinden gidiyor. D çarpı D boyutlarında bir input imicim var.
+
+94
+00:24:33,491 --> 00:24:42,192
+D bölü 4 boyutlarında bir yapılandırma elemanım var. Bu Structuring
+
+95
+00:24:43,991 --> 00:24:49,371
+element dediğimiz matriz ve bu da input image'im.
+
+96
+00:24:54,132 --> 00:25:01,491
+Şimdi bu giriş görüntüsüne bu yapılandırma elemanı ile yayma işlemi yap dediğimizde, yayma işleminin mantığı da şu.
+
+97
+00:25:02,331 --> 00:25:09,872
+Yapılandırma elemanının merkez noktasını yine görüntünün bir olan bir tane pikseliyle örtüştürüyor.
+
+98
+00:25:09,872 --> 00:25:16,271
+Ve bunun örttüğü bölgeyi tümüyle birlerle dolduruyor.
+
+99
+00:25:21,491 --> 00:25:34,871
+Arka taraftaki görüntüyle OR işlemini yaptığını düşünebilirsiniz. Zaten yapılandırma elemanının içerisinde 1 olduğu için bu OR Operation'ın sonucunda 1 çıktı verecek.
+
+100
+00:25:47,743 --> 00:26:10,743
+D bölü 8 kadar büyütecek ve resim büyümüş olacak, genişlemiş olacak. Yani sanki ben bunu şeye benzetiyorum. A matrisinde bir buz kütlesi var, eridi ve erime sonucunda etrafına doğru su bırakır ya, yayılır o su etrafına. İşte o işlem. Dylation Operatörü'nün şeyi...
+
+101
+00:26:11,296 --> 00:26:22,276
+İgzor operatörüne benziyor. Lütfen dikkat. Bu dilation işlemini gösteriyor morfolojik işlemlerde.
+
+102
+00:26:23,955 --> 00:26:44,415
+Aynı giriş görüntüsüne bu defa şurada gördüğümüz D yüksekliğinde bir çubuk ile yayma işlemini yaptığımızda ise üstten D bölü 2, alttan D bölü 2 kadar büyümüş, soldan sağdan D bölü 8 kadar büyümüş olduğunu görebilirsiniz.
+
+103
+00:26:45,875 --> 00:26:47,915
+Dylation'a örnek vermiş.
+
+104
+00:26:50,548 --> 00:26:54,087
+Hocam tekrardan anlatır mısınız? Hangi matematiksel işlem yapıyoruz?
+
+105
+00:26:54,728 --> 00:26:59,567
+Or. Matematiksel, lojik işlem. Or operatörünü hatırlıyor musunuz?
+
+106
+00:26:59,567 --> 00:27:02,048
+Evet hocam. Endin tersi.
+
+107
+00:27:02,268 --> 00:27:05,367
+Endin tersi. Ve şey diyor or işlemi.
+
+108
+00:27:07,923 --> 00:27:21,403
+Bir tane bile bir varsa içinde 0, 0, 0, 1, 1, 0 ve 1, 1 gibi girişler olduğunu düşünün. Sadece bunun için 0 verir, şunların her biri için 1 verir. Ama bu çok uymadı galiba ya.
+
+109
+00:27:30,900 --> 00:27:47,980
+Arka tarafta sıfır da olsa bir de olsa ben bunu bir yapıyorum. Yani yayma işlemindeki mantık bu. Şurada gördüğümüz yapılandırma elemanını görüntünün üzerine oturtuyorum. Sadece yapılandırma elemanının merkez noktası imicin.
+
+110
+00:27:49,172 --> 00:27:58,672
+Bu, parlaklığı bir olan değeriyle örtüşecek. Onun dışındaki gözleri birlerle dolduruyoruz ve böyle bir genişletme işlemi uygulamış oluyoruz.
+
+111
+00:27:59,211 --> 00:28:00,192
+Tamam hocam, teşekkür ederim.
+
+112
+00:28:00,884 --> 00:28:18,824
+Rica ederim. Şimdi Dilation Operation'a burada şey örneğini vermiş diyor ki bir teksti bir scanner'dan geçirdik ve taranmış görüntü üzerinde bazı böyle şeyler var. Çok net olmayan bölümler var.
+
+113
+00:28:18,824 --> 00:28:28,864
+Ve büyütüp baktığımız zaman mesela E harfinin, A harfinin üzerinde böyle kopukluklar olduğunu gördük diyor. Bu tür şeyleri.
+
+114
+00:28:28,884 --> 00:28:47,824
+Yani kötü taranmış bir görüntüyü aslında iyileştirmek için mesela bir dilation operatörü burada işe yarar diyor ve bu yayma işlemini yaptığında E harfinin ve A harfinin üzerindeki o kopuk bölgelerin kaybolduğunu gösteriyor.
+
+115
+00:28:47,824 --> 00:28:56,504
+Burada kullandığı yapılandırma elemanı da yine bizim az önce örnekte gördüğümüz artı şekline benzeyen.
+
+116
+00:28:56,768 --> 00:28:59,708
+Bir yapılandırma elemanı kullanmış.
+
+117
+00:29:01,887 --> 00:29:04,768
+Bu örnekler...
+
+118
+00:29:05,652 --> 00:29:22,711
+Çoğaltılabilir. Burada bir başka örnek. Bir binary image verilmiş. Sol tarafta buna B image demiş. Ve bir yapılandırma elemanı vermiş. 3'e 3'lük bir matriz. İçi birlerle dolu. Tam kare bir yapılandırma elemanı.
+
+119
+00:29:22,711 --> 00:29:33,652
+Ve bu yapılandırma elemanını kullanarak bir yayma işlemi yaparak sağ taraftaki görüntüyü elde ediyor. Az önceki mantıkla gidecek olursak şu bir...
+
+120
+00:29:33,652 --> 00:29:40,231
+Bir olan yapılandırma elemanın merkezini sol taraftaki imicin bir olan gözüyle örtüştürdük.
+
+121
+00:29:40,892 --> 00:29:43,751
+Sonra bunu şöyle bir matriz formunda çizdik.
+
+122
+00:29:43,751 --> 00:29:50,112
+O zaman ne olacak? Ben buraları hep birlerle dolduracağım. Bunlar bir değildi. Ben bunları bir yaptım.
+
+123
+00:29:50,692 --> 00:29:54,951
+Sonra kaydırıyorum. Bununla örtüştürüyorum. O zaman buraları bir yapıyorum.
+
+124
+00:29:55,531 --> 00:29:59,852
+Ama giriş görüntüsünün her bir olan pikseli için bu işlemi yapıyorum.
+
+125
+00:30:00,000 --> 00:30:09,480
+Ve böylece bunlar şu alan böyle doluyor. Mesela şunun için yaptığımda bu ve bu bölgede olacak. Keza buralarda olacak.
+
+126
+00:30:12,039 --> 00:30:17,660
+Bu yeni eklediğim pikseller mesela şunun için yaptığımda buraya da bir tane bir gelecek.
+
+127
+00:30:17,660 --> 00:30:18,940
+Buraya da gelecek.
+
+128
+00:30:19,200 --> 00:30:21,000
+Bunun için
+
+129
+00:30:21,299 --> 00:30:26,680
+Bir yapılandırma elemanı kullandığımda buraya ve buraya bir gelecek.
+
+130
+00:30:27,399 --> 00:30:29,779
+Tabi buraya da gelecek. Bunlar da eklenecek.
+
+131
+00:30:30,200 --> 00:30:36,240
+Gördüğünüz gibi şu nokta için işlem yaptığımda buraya, buraya, buraya birler ekliyorum.
+
+132
+00:30:36,240 --> 00:30:46,940
+Ve tam olarak az önce tarif ettiğimiz gibi hani böyle buzun erimesi gibi o kütlenin etrafına yayılmış bir genişleme işlemi oluyor.
+
+133
+00:30:48,884 --> 00:31:09,663
+Python kodu üzerinden zaten göstereceğim ama şimdi iki tane daha operation'ımız var. Bunlar tümüyle şeyden erosion ve dilation işlemlerinden türetilmiş opening ve closing dediğimiz operation'lar.
+
+134
+00:31:11,635 --> 00:31:19,355
+Opening için şu operatörü kullanıyor. Yani göstermek için şekil sembol olarak bunu seçmiş. Şu bir erosion işlemi.
+
+135
+00:31:22,836 --> 00:31:34,416
+Şu bir Dilation işlemi. Yani A dediğimiz giriş görüntüsüne önce bir aşındırma, sonra bir yayma.
+
+136
+00:31:36,692 --> 00:31:50,859
+İşlemi uygularsak eğer yaptığımız işlem opening olarak isimlendiriliyor. Opening işlemi ne sağlıyor bize? Aslında şöyle diyor. Mesela...
+
+137
+00:31:51,892 --> 00:32:08,932
+Bir takım ince dar böyle bağlantılar var. İki nesneyi birbirine bağlıyor ama aslında öyle bir şey görüntü üzerinde olmaması gerekiyor. Bunlar bir gürültüden kaynaklı olabilir. Bu tür iki nesneyi birbirine bağlayan ince çizgiyi varmış gibi görünen bölgeleri kopartıyor.
+
+138
+00:32:09,619 --> 00:32:27,059
+Görüntü üzerinde, nesnenin üzerinde şöyle çıkıntılar olabilir. Mesela bu çıkıntıları yumuşatmak için, Eliminate Stain Protrusion demiş, bu tür çıkıntıları yumuşatmak için yine kullanılan bir işlem, Opening Operation'ı.
+
+139
+00:32:27,731 --> 00:32:50,291
+Aklınızda tutmanız gereken şey şu. Opening için ne demiştik? Küçük bağlantıları koparıyor, böyle çıkıntıları temizliyor. O zaman bunun için neye ihtiyacım var? Erojina ihtiyacım var. Önce aşındırıyorum, sonra çok kayıp oluyor görüntü üzerinde ya. Hafif bir yayma işlemiyle aslında daha temiz bir çıktı elde ediyorum.
+
+140
+00:32:55,731 --> 00:33:05,731
+A giriş görüntüsüne önce bir dilation, arkasından bir opening işlemi uygulanıyor ve amaç...
+
+141
+00:33:07,508 --> 00:33:12,307
+Opening işleminin tam tersi, tam tersi bir işlem yapıyor.
+
+142
+00:33:12,468 --> 00:33:19,248
+Generally fuses narrow breaks. Yani iki tane nesne var. Aslında böyle birbirine bağlı olması gerekiyor.
+
+143
+00:33:19,248 --> 00:33:24,448
+Az önce E harfindeki kopukluğu hatırlayın. Gövde üzerinde parçalı gözüküyordu.
+
+144
+00:33:25,807 --> 00:33:32,427
+Bu tür kopuklukları birbirine bağlıyor, entegre ediyor.
+
+145
+00:33:33,364 --> 00:33:46,144
+Görüntü üzerinde küçük boşluklar varsa onları elimine ediyor, temizliyor. Ve feels gaps in the contour.
+
+146
+00:33:46,963 --> 00:34:13,764
+Çerçeve üzerinde ki yine boşlukları doldurmak için kullanılıyor diyor. Bunun da sembolü şuymuş. Bunları ezbere bilmenize gerek yok. Ama sadece hangisinden önce hangisini kullanıyorduk sırasını bilirseniz iyi olur. Opening için önce Erosion sonra Dilation. Closing'de ise bunun tam tersi. Burada değişik örnekler yapılmış.
+
+147
+00:34:14,387 --> 00:34:29,387
+Bu applications'ı da anlatmak istiyorum. Burayı lütfen dikkatli dinleyin. Benim çünkü çok ilgimi çekmişti. Medical Image Analysis'da kullanılmış ilk zamanlar. Verilmiş olan bir...
+
+148
+00:34:30,643 --> 00:34:46,643
+İşte bir BT görüntüsü, bir BT kesiti olabilir bu. Kesit üzerinde bir threshold operation'ı gerçekleştirmiş ve threshold işleminden sonra bir morfolojik işlem gerçekleştirerek görüntü üzerindeki hani...
+
+149
+00:34:47,603 --> 00:35:14,724
+Şu tarz bölgeleri temizlemiş aslında. Daha ana hatlarıyla şu bölümlerin görüntü üzerinde kalmasını sağlamış. Böyle bir örnek gösterebilirim. Ama endüstriyel bir tane uygulama var. Bu benim çok hoşuma gitmişti. Şöyle diyor, bir fabrika bu şekilde bir dişli üretiyor. Fakat üretilen dişlilerin üzerinde zaman zaman şu dişlerde kırıklar olabiliyormuş.
+
+150
+00:35:15,603 --> 00:35:16,831
+Bir tanesi kırık.
+
+151
+00:35:16,831 --> 00:35:21,211
+Ve yine keza şurada bir tanesinin dişlisinde kırık var. Görüyor musunuz?
+
+152
+00:35:21,692 --> 00:35:31,612
+Diyor ki bunu diyor aslında bir görüntü işlemeyle, bir üretim bandı üzerinde ben tarayarak görüntüleri bunu tespit edebilirim diyor.
+
+153
+00:35:31,612 --> 00:35:35,391
+Ve bunu tespit etmek için tümüyle morfolojik işlemler kullanıyor.
+
+154
+00:35:36,091 --> 00:35:38,511
+Müthiş hoşuma gitti bu.
+
+155
+00:35:39,291 --> 00:35:41,511
+Yine burada şeye dikkatinizi çekeceğim.
+
+156
+00:35:41,911 --> 00:35:43,652
+Background'ın siyah olduğunu.
+
+157
+00:35:47,635 --> 00:36:13,115
+Çünkü operatör tersi durumda çalışmıyor. Foreground objenin ise beyaz olması gerektiğine dikkat edin. Diyor ki burada bir aşındırma işlemi yapıyor. Hall ring dediği bir operatör ile sadece şu dişlilerin dört tane vida deliğinin olduğu merkezleri önce buluyor.
+
+158
+00:36:13,907 --> 00:36:16,768
+Ve sağ tarafta o merkezleri işaretliyor.
+
+159
+00:36:18,688 --> 00:36:20,847
+Bir morfolojik işlemle çıkıyor.
+
+160
+00:36:21,887 --> 00:36:28,568
+Sonra, Hall Mask ile bunu genişletiyor. Bunları büyütüyor.
+
+161
+00:36:30,448 --> 00:36:34,467
+Burada ne yapmış? Dylation işlemi yapmış. Burada bir erosion işlemi vardı.
+
+162
+00:36:34,467 --> 00:36:35,847
+Sonra,
+
+163
+00:36:37,331 --> 00:36:45,152
+Girişteki B görüntüsüyle elde ettiği B2'yi yani şuradaki B2'yi or işlemine tabi tutuyor.
+
+164
+00:36:45,152 --> 00:36:50,231
+Nedir yapmak istediği? Ortadaki o dört tane vida deliğini sildi.
+
+165
+00:36:50,711 --> 00:36:55,871
+Sadece bunun için iki tane operatör kullandı ve bunları buradan yok etmiş oldu.
+
+166
+00:36:56,152 --> 00:36:57,471
+Öncesinde onlar vardı.
+
+167
+00:36:59,692 --> 00:37:04,751
+Amaç yani nesnenin içerisindeki o detayları yok ettikten sonra
+
+168
+00:37:05,556 --> 00:37:30,056
+Bunun border'ını çıkartıyor. Şurada border çizgisini çıkartıyor. Daha sonra bu border ile B input görüntüsü arasında yine bir end işlemi yaparak sadece dişlinin o çıkıntılarının, dişlerinin olduğu bölgeleri
+
+169
+00:37:30,480 --> 00:37:44,447
+Görünür hale getiriyor end işlemiyle. Daha sonra bir dilation işlemi var. Burada görüyorsunuz çok ince ya. Onları bir tamamlıyor ve sadece şu iki tane...
+
+170
+00:37:44,447 --> 00:37:57,568
+Kopuk olan bölüm üzerinde aslında bu üretilen dişlinin kusurlu olduğu bölgeleri işaretlemeyi başarıyor.
+
+171
+00:37:57,568 --> 00:38:05,367
+Bu çok eski bir çalışma. Sadece morfolojik işlemleri kullanarak böyle bir şey yapması benim çok hoşuma gitmişti.
+
+172
+00:38:05,447 --> 00:38:10,528
+Güzel bir örnek bence morfolojik işlemlerin başarısını göstermek açısından.
+
+173
+00:38:13,043 --> 00:38:36,183
+Morfolojik işlemleri kullanarak boundary extraction yapabiliriz. Bir nesnenin sınır çizgilerini bulup çıkarmamıza yardımcı olur. Bu problem ya da bu örnek zaten ödevin sorularından birinde var. Bunu rahatlıkla yapabileceğinizi düşünüyorum.
+
+174
+00:38:39,507 --> 00:38:51,827
+Evet, matematiksel morfoloji ile ilgili benim söyleyeceklerim bunlar. Şimdi hızla bir şey yapalım. Python kodu üzerinden şöyle bir bakalım.
+
+175
+00:39:04,596 --> 00:39:10,315
+Ekran paylaşımı yapıyorum. Şuraya geçtim. Şu an Jüpiter ekranımı görüyor musunuz?
+
+176
+00:39:13,175 --> 00:39:17,596
+Görünüyor. Tamam, teşekkürler.
+
+177
+00:39:18,975 --> 00:39:24,596
+Matematiksel morfoloji ile ilgili bu anlatımları...
+
+178
+00:39:24,596 --> 00:39:27,456
+Hocam, pardon araya giriyorum da.
+
+179
+00:39:27,615 --> 00:39:29,596
+Ne oldu?
+
+180
+00:39:30,016 --> 00:39:31,636
+Light görünüyor hocam sadece şu an.
+
+181
+00:39:31,636 --> 00:39:34,275
+Binary English Morfoloji sunumunu görüyoruz.
+
+182
+00:39:34,876 --> 00:39:37,576
+Jüpiter gelmedi.
+
+183
+00:39:37,896 --> 00:39:38,695
+Hayır hocam.
+
+184
+00:39:40,136 --> 00:39:42,615
+Evet hocam ben de şeyi kastettim, pdf'yi kastettim.
+
+185
+00:39:42,815 --> 00:39:44,275
+Jüpiter diyorsanız o gelmedi.
+
+186
+00:39:44,596 --> 00:39:47,956
+Gelmedim. O zaman yanlış ekran paylaştık bir dakika.
+
+187
+00:39:49,796 --> 00:39:51,676
+Ders 5 Python.
+
+188
+00:39:52,195 --> 00:39:53,235
+Bunu paylaş dedim.
+
+189
+00:39:55,235 --> 00:39:56,996
+Bunu kapatmam mı gerekiyor acaba?
+
+190
+00:39:58,675 --> 00:40:00,135
+Hala aynı stekler görüyoruz.
+
+191
+00:40:02,215 --> 00:40:08,036
+Bir saniye. Ben şöyle yapayım o zaman. Önce buraya geçeyim. Bundan sonra.
+
+192
+00:40:27,923 --> 00:40:34,324
+Anladım, hala aynı görünüyor. Ben değiştiriyorum ama şuradan şeyi değiştirsin.
+
+193
+00:40:39,315 --> 00:40:44,635
+Powerpoint, pardon Google'ı açmam lazım. Şimdi olacak.
+
+194
+00:40:49,492 --> 00:40:51,312
+Oldu mu? Geldi yorumlar.
+
+195
+00:40:51,312 --> 00:40:53,772
+Tamam, teşekkürler.
+
+196
+00:40:54,832 --> 00:41:00,552
+Şimdi matematik ve morfoloji için bu anlattığımız bölümler böyle.
+
+197
+00:41:01,132 --> 00:41:03,432
+Burada bir tane basit örnek koydum ben.
+
+198
+00:41:04,852 --> 00:41:07,712
+Erosion, Shrink Sprite Regions diye.
+
+199
+00:41:08,731 --> 00:41:11,252
+Yine daha önce de oluşturmuştum.
+
+200
+00:41:11,252 --> 00:41:16,612
+2, 4, 5. 5'e 5'lik bir bright square.
+
+201
+00:41:17,204 --> 00:41:18,204
+Evet.
+
+202
+00:41:19,891 --> 00:41:33,991
+Oluşturdum. Yani sentetik bir imic oluşturuyorsunuz aslında. Beşe beşlik bir matrisin içerisinde üçe üçlük beyaz bir bölge var. Etrafında sıfırlarla çevrili siyah bir bölge var.
+
+203
+00:41:47,891 --> 00:41:52,891
+Bu şekilde işlemler, fonksiyonlar hazır. Bunları kullanıyorum.
+
+204
+00:41:52,891 --> 00:42:11,791
+Ve burada oluşturmuş olduğum Bright Square görüntüsüne yapılandırma elemanını 3'e 3'lük bir square, bir kare seçerek uyguladığımda nasıl bir output elde ederim diye hemen size soruyorum. Yorum yapabilir misiniz?
+
+205
+00:42:12,320 --> 00:42:32,659
+Üçü üçlük bir square yapılandırma elemanım var. Bright square dediğim matris ise beşe beş ve içinde görüyorsunuz şöyle üçü üçlük bir beyaz bölge var. Ne dersiniz? Erosion işlemi sonucunda ne çıkar?
+
+206
+00:42:32,659 --> 00:42:36,539
+Sadece en ortadaki nokta kalmaz mı?
+
+207
+00:42:36,880 --> 00:42:40,320
+Sadece bir tane beyaz nokta şu merkez için kalır, doğru mu?
+
+208
+00:42:40,320 --> 00:42:41,320
+Evet.
+
+209
+00:42:41,876 --> 00:42:49,876
+Güzel. Şimdi bu işlemi yaptığımızda elde ettiğimiz sonuç ortada bir tane beyaz kalıyor.
+
+210
+00:42:50,516 --> 00:42:56,796
+Şurada gördüğümüz sol taraftaki 5'e 5'lik matrisinin içerisindeki 3'e 3'lük beyaz bölge.
+
+211
+00:42:56,796 --> 00:43:06,215
+Sağ taraftaki ise bir tane beyaz pikseli gösteriyor. Dylation işlemini yine anlattık zaten detaylarıyla konuştuk.
+
+212
+00:43:06,356 --> 00:43:08,916
+Boundary Extraction'ı siz yapacaksınız.
+
+213
+00:43:09,876 --> 00:43:15,976
+Bir de grayscale anlattım. Az önce slide da yoktu. Mathematical Morphology for Grayscale Images.
+
+214
+00:43:15,976 --> 00:43:33,876
+Bunu da aslında şöyle çalıştırıyor. Grayscale Images için aşağıdaki ifadeye bakacak olursak, fx dediği şey bir grayscale imaj. Şurada verilmiş fx bir grayscale imajı gösteriyor.
+
+215
+00:43:34,547 --> 00:43:58,147
+Bx dediği yapılandırma elemanını gösteriyor. Bx dediği yapılandırma elemanını giriş görüntüsünün üzerine yerleştirdiği zaman merkez piksel için onun örttüğü alandaki en büyük değeri bulup, bir dakika, hayır en küçük değeri bulup özür dilerim.
+
+216
+00:44:00,916 --> 00:44:06,835
+Çünkü siyahlaştırdığını hatırlıyorum. Giriş görüntüsünün en küçüğünü seçiyor olması lazım.
+
+217
+00:44:06,835 --> 00:44:08,695
+Infdenotes Info mu?
+
+218
+00:44:16,755 --> 00:44:24,735
+Evet, doğru hatırlıyorum sanıyorum. Çünkü yukarıdaki örneğe de bakacak olursanız, sol tarafta bir giriş görüntüsü var.
+
+219
+00:44:25,940 --> 00:44:44,539
+Buna bir erosion işlemi uyguluyor ve eroded image'i ikinci şeyde yerleştirmiş koyulaştığını görüyorsunuz. Bu şu demek, kullandığı yapılandırma elemanı disk formunda ve çapı altı olan bir disk kullanmış.
+
+220
+00:44:53,940 --> 00:45:08,819
+Gözün yerine onu yerleştiriyor. Bu şekilde bir işlem ile greyscale üzerinde erosion işlemini yapıyor. Bu aslında bir order.
+
+221
+00:45:10,324 --> 00:45:27,264
+Sıralama tabanlı bir filtrenin ya da medyan filtrede hatırlarsınız bir mask var. Maskın örttüğü bölgedeki intensity değerlerini alıyorsunuz. Küçükten büyüye doğru dizip ortadaki değeri alıp output olarak veriyordunuz.
+
+222
+00:45:27,264 --> 00:45:37,024
+Bu medyan filtresinde ortadaki değeri seçmek yerine en küçüğünü seçmek yani minimum olanı seçmek gibi düşünebilirsiniz.
+
+223
+00:45:38,324 --> 00:45:59,224
+Bu medyan filtrede minimum filtresi ya da maksimum filtresi diye değişik isimler de alıyor. Oradan da karşılaştırabilirsiniz. Sağ tarafta verdiği ise Dilation Operator'un ya da Operation'ın sonucunu bize göstermiş.
+
+224
+00:46:05,684 --> 00:46:21,304
+Çok basit, çok böyle bir işe yaramaz gibi düşünebiliyorsunuz ama bazen hiç beklemediğiniz şekilde iyi sonuç verebiliyor. O yüzden bir kenarda dursun, aklınızda bulunsun, nasıl çalıştığını bir konuşmuş olalım.
+
+225
+00:46:24,244 --> 00:46:31,304
+Evet arkadaşlar, şu anda 41 kişi var derste. Ben bir ara vereceğim.
+
+226
+00:46:31,891 --> 00:46:35,331
+Sorunuz var mı? Buraya kadar anlattığım bölümle ilgili.
+
+227
+00:46:37,131 --> 00:46:43,411
+Aradan sonra size Huff Transformundan bahsedeceğim.
+
+228
+00:46:44,491 --> 00:46:55,331
+Orada biraz matematiğe gireceğiz ve ikinci ödev için...
+
+229
+00:46:56,052 --> 00:47:10,272
+Gerekli bir matematik var. O matematiği size anlatacağım. İkinci derste kaybolmayın. Çok önemli konular geliyor. Evet, 10 dakika ara. Yoklama yapacağım.
+
+230
+00:58:35,539 --> 00:58:41,619
+10 dakika oldu. Saat başı olmadı ama biraz erken bırakmıştık. Erken de başlayacağım.
+
+231
+00:58:43,099 --> 00:58:44,219
+Kimler burada?
+
+232
+00:58:47,179 --> 00:58:48,159
+Buradayım hocam.
+
+233
+00:58:50,099 --> 00:59:01,360
+Evet. Elleri görelim. 26, 27, 29. 29 katılımcı, 33 katılımcı, 34 katılımcı. El kaldırdı.
+
+234
+00:59:03,347 --> 00:59:12,688
+Derste kaç kişi var? 42 kişi var. 6 kişi yok. Evet.
+
+235
+00:59:17,043 --> 00:59:35,043
+Dersin sonunda ekranını kapatmayanları tespit ediyorum arkadaşlar. Üzülmeyin. Böyle de hafiyelik yaparım. Evet, bu kadar muhabbet yeter. Teşekkür ediyorum. Hepiniz buradasınız. Yani büyük çoğunluk burada diyelim.
+
+236
+00:59:48,724 --> 00:59:59,224
+Haf Transform demiştik. Haf Transform'u ben yine şöyle tablete bağlanıp oradan anlatayım.
+
+237
+01:00:16,467 --> 01:00:21,288
+Ekranımda, tablet ekranımda Half Transform yazıyor. Geldi mi?
+
+238
+01:00:22,148 --> 01:00:22,927
+Evet hocam geldi.
+
+239
+01:00:23,047 --> 01:00:23,447
+Evet, evet.
+
+240
+01:00:24,027 --> 01:00:25,067
+Tamam, güzel.
+
+241
+01:00:25,987 --> 01:00:30,407
+Şimdi arkadaşlar, dikkatli dinleyin. Çok enteresan şeyler var burada.
+
+242
+01:00:32,547 --> 01:00:34,407
+Half Transform ile amacımız...
+
+243
+01:00:36,019 --> 01:00:50,840
+Straight Line Detection, yani doğrunun tespit edilmesi, bir Circle Detection ya da farklı formlarda bir takım şekillerin detekt edilmesi için geliştirilmiş.
+
+244
+01:00:51,248 --> 01:01:09,248
+Ve bu konuları anlattıktan sonra buradan nereye bağlayacağım? Buradan şu Integro Differential Operator dediğim bir başlık var. Ona bağlayacağım. Bu enteresan bir konu. Dogman tarafından geliştirilmiş. O işte güzel matematik var dediğim yer orada.
+
+245
+01:01:10,835 --> 01:01:34,556
+Şimdi tabii Half Transform'da bayağı güzel bir matematik var. Ondan bahsedelim. Diyor ki Half Transform için Performed After Edge Detection, yani görüntü üzerinde bir line detect etmek istiyorsak ya da herhangi bir şekli detect etmek istiyorsak, önce şekli tanımlayan kenarların ortaya çıkartılmış olması gerekiyor.
+
+246
+01:01:34,556 --> 01:01:38,795
+Yani bir Edge Detection algoritmasından geçirmiş olmamız gerekiyor.
+
+247
+01:01:38,835 --> 01:01:44,635
+Ve bu işlemin arkasından
+
+248
+01:01:44,635 --> 01:01:52,155
+This is a technique to isolate the curves of a given shape, shapes in a given image.
+
+249
+01:01:53,215 --> 01:01:56,596
+Şimdi klasik half transformunda
+
+250
+01:01:57,204 --> 01:02:06,463
+Ne yapabiliyor? Can locate regular curves like stride lines, circles, paraboles, ellipse, etc.
+
+251
+01:02:07,144 --> 01:02:12,523
+Requires that the curve can be specified in some parametric form.
+
+252
+01:02:12,916 --> 01:02:27,756
+Yani benim aslında burada sözüne ettiğim bir line ya da bir circle için bunun parametrik formunu önce bir ortaya koymam gerekir. Sonra aramayı ona göre yapmam gerekir.
+
+253
+01:02:33,780 --> 01:02:47,060
+Avantajları neler? Eski bir teknik. Sadece dediğim gibi bilin bu matematiği diye anlatıyorum. Yoksa line'ı da circle'ı da ben deep learning'le tabii ki yapabilirim ama...
+
+254
+01:02:47,603 --> 01:02:58,663
+Buradaki matematiği öğrenmek açısından. Half Transform'unun avantajlı tarafları, Tolerant of Gaps in the Image demiş.
+
+255
+01:02:59,523 --> 01:03:07,083
+Yani şöyle bir line var ama line kopuklu çıkmış diyelim ki. Böyle parçalı görünüyor.
+
+256
+01:03:11,123 --> 01:03:24,323
+Size gösterebiliyor diyor. Buradaki meydana gelen boşluklar bir problem yaratmıyor diyor. Benzer şekilde it's relatively unaffected by no use demiş.
+
+257
+01:03:25,972 --> 01:03:38,912
+Bugün şeyin içerisinde edge detection'dan sonra böyle pek çok noktalar, ekstra bir takım şeyler olabilir, gürültüler olabilir. Görüntünün içerisinde bu da sonucu etkilemiyor diyor.
+
+258
+01:03:39,952 --> 01:03:51,512
+Ve it's also unaffected by occlusion in the image. Yani görüntü üzerinde bir örtüşme varsa, diyelim ki bu line'ın üzerinde bir tane de böyle bir daire var.
+
+259
+01:03:51,512 --> 01:03:53,972
+Yani buna rağmen bunu bulabilir.
+
+260
+01:03:53,972 --> 01:04:03,512
+Bunlar avantajlı tarafları. Peki, gelin biraz buradaki yapıdan ve matematikten bahsedelim.
+
+261
+01:04:05,012 --> 01:04:12,032
+Önce half transformu ile bir straight line detection işlemi yapmak istiyoruz.
+
+262
+01:04:12,492 --> 01:04:21,312
+Bir line aslında bir doğru, doğru denklemi ile ifade edilebilir ve bu doğru denklemi y eşit mx artı c şeklinde.
+
+263
+01:04:21,940 --> 01:04:36,040
+Yazılabilir. Şimdi bu şeyin, matematiksel doğru denkleminin bir dezavantajı var. Nedir bu dezavantaj? Diyor ki,
+
+264
+01:04:36,040 --> 01:04:40,340
+This representation fails in case of vertical lines.
+
+265
+01:04:41,715 --> 01:04:52,815
+Bilmiyorum, belki biliyordunuz. Matematikte bunu öğrenmişsinizdir ama ben bunu tekrar hatırladığımda, üzerinde biraz düşündüğümde vay dedim.
+
+266
+01:04:53,115 --> 01:04:57,996
+Yani bak burada fail ediyor. Ne demek istiyor? Şöyle düşünün lütfen.
+
+267
+01:04:57,996 --> 01:05:09,096
+X, Y düzleminde ben bir doğruyu Y eşit M, X artı C şeklinde yazabiliyorum. Doğru.
+
+268
+01:05:09,619 --> 01:05:34,139
+Ama mesela bu, yani ben şöyle bir doğru denklemi yazabilirim. Y eşit 3x artı 2. İşte nedir? X'e 0 verirsem y'si 2 çıkar. 1, 2 şuradan keser. Y'ye 0 verirsem x'i eksi 2 bölü 3 çıkar. Şöyle bir doğrudur bu.
+
+269
+01:05:34,612 --> 01:05:39,891
+Ya da ne bileyim mesela şöyle kalemimin rengini değiştireyim.
+
+270
+01:05:43,152 --> 01:05:53,451
+Kırmızı, mavi. Veya mesela şöyle olabilirdi. Y eşit 5 olsun.
+
+271
+01:06:00,244 --> 01:06:06,963
+Doğru ve bu y eşittir 5 dediğim doğrunun m değeri, m kat sayısı.
+
+272
+01:06:12,820 --> 01:06:27,320
+0, c'si ise 5'tir ve ben bunu bu şekilde yazabilirim. Peki ama şöyle bir soru sorsam size. Yine kalem rengini değiştirelim, yeşil yapalım.
+
+273
+01:06:39,539 --> 01:06:56,760
+Y eşittir mx artı c şeklinde yazılması mümkün müdür? Hayır. Değildir değil mi? Evet. İşte bu burada sözüne ettiği problem. Diyor ki y eşittir mx artı c dediğimizde disrepresentation fails in case of vertical lines diyor.
+
+274
+01:06:57,588 --> 01:07:12,368
+Ve normalde x eşittir 3 için ben şu doğruyu buraya çizdim gördüğünüz gibi. Ama bunun m'sini veya c'sini bulamıyorum. Çünkü böyle bir formda ifade edilemiyor bu doğru denklemi.
+
+275
+01:07:13,108 --> 01:07:25,328
+O zaman diyor ki, gelin diyor biz doğru ifade etmek için, prezente etmek için farklı bir matematiksel form kullanalım. Bunun adı Hesse Normal Form dediği bir form.
+
+276
+01:07:26,368 --> 01:07:31,348
+Peki bu ne yapıyor, nasıl çalışıyor? Hemen size ondan bahsedeyim.
+
+277
+01:07:39,764 --> 01:07:46,663
+Hesse Normal Form. Şu an ekranımda ben bir şey açtım. Hesse Normal Form yazıyor. Görüyor muyuz?
+
+278
+01:07:47,683 --> 01:07:47,943
+Evet.
+
+279
+01:07:48,523 --> 01:07:57,963
+Görüyorsunuz. Tamam, bunu biraz büyüteyim. Bakın şöyle bir, bunun üzerinde ben niye kalem oynatamadım onu anlamadım. Resim diye mi acaba?
+
+280
+01:07:59,183 --> 01:08:04,364
+Şuradan peni çalıştırırsak olacak belki. Bir saniye, az kaldı.
+
+281
+01:08:04,943 --> 01:08:25,943
+Bakayım. Ay yazabiliyorum. Süper. Hesse Normal Form. Burada bir tane doğru çizdim. Line L1. L1 doğrusu. Ve bu doğrunun x eksenini kestiği nokta A olsun. Y eksenini kestiği nokta B olsun.
+
+282
+01:08:31,252 --> 01:08:49,892
+Bu doğrunun üzerinde ben OLA üçgeni için bakıyorum. OLA dediğim, L burası. L noktası şu. Aslında orijinden geçen ve doğruya dik olan nokta L noktası. Tamam mı?
+
+283
+01:08:54,336 --> 01:09:19,496
+OLA üçgeni, şu kenarın adı O A aslında. Neyse. Bu L'nin orijinle yaptığı açı ya da şey X80'iyle yaptığı açı alfa. Ben kosünüs alfa için, kosünüs alfa için OLA üçgeni içerisinde kosünüs alfayı yazmak istersem eğer.
+
+284
+01:09:20,051 --> 01:09:22,112
+Karşı dik kenar.
+
+285
+01:09:27,347 --> 01:09:39,228
+P dediğim yer. Komşu dik kenar bölü hipotenüs olacak. Burada L noktasının orijine olan uzaklığı da P arkadaşlar.
+
+286
+01:09:39,228 --> 01:09:48,228
+O yüzden buna kosinüs alfaya P bölü OA dedik. OA dediğimiz mesafe de şurası.
+
+287
+01:09:55,380 --> 01:10:03,319
+Ben ya da işte şuradaki A noktasının uzaklığını P bölü kos alfa şeklinde yazabilirim.
+
+288
+01:10:03,319 --> 01:10:10,600
+OLB üçgeni için ise aşağıda gördüğünüz gibi OLB üçgeni içinde.
+
+289
+01:10:12,460 --> 01:10:14,539
+Şuradan kaydıralım.
+
+290
+01:10:15,899 --> 01:10:17,399
+Şekli kaybetmeden.
+
+291
+01:10:17,819 --> 01:10:20,139
+Sinüs alfayı yazmak istersem eğer.
+
+292
+01:10:20,860 --> 01:10:21,639
+Sin alfa.
+
+293
+01:10:24,212 --> 01:10:43,631
+Alfa açısı şurada. Şurası 90 eksi alfa. Lütfen dikkat. Şurası 90 eksi alfa. Burası 90 derece. O yüzden burası alfa. Sin alfayı yazacak olursam bu da karşı dik kenar P bölü hipotenüs.
+
+294
+01:10:46,100 --> 01:10:58,579
+Bir dakika, ob olacak hipotenüs. Dolayısıyla ob'nin uzunluğu p bölü sin alfa şeklinde yazılabilir diyoruz.
+
+295
+01:11:08,399 --> 01:11:13,199
+Artı Y bölü B eşittir. Bir şeklinde yazabiliyorum.
+
+296
+01:11:14,539 --> 01:11:23,899
+X bölü A dediğim A şu mesafe, B bu mesafe, bizim yukarıda hesapladığımız bu mesafeler.
+
+297
+01:11:35,380 --> 01:11:52,340
+A ve B yerine bunları yazarak, X bölü P bölü kosalfa, Y bölü P bölü sinalfa toplamı eşit bir şeklinde yazabiliyorum.
+
+298
+01:11:52,340 --> 01:11:56,579
+Doğru denklemini. Bunu düzenlediğim zaman,
+
+299
+01:11:57,203 --> 01:12:09,943
+Doğru denklemini bu hs normal form dediğimiz formda yazdığımızda x çarpı kosinüs alfa artı y çarpı sinüs alfa eşittir p şeklinde yazabiliyorum.
+
+300
+01:12:09,943 --> 01:12:17,283
+Burada sözüne ettiğimiz alfa açısı ve p değerine lütfen dikkat.
+
+301
+01:12:17,743 --> 01:12:20,603
+Şimdi şekil üzerinden tekrar göstereceğim.
+
+302
+01:12:21,123 --> 01:12:25,203
+Alfa açısı yani line'ı çizdik, l1 doğrusunu çizdik.
+
+303
+01:12:25,203 --> 01:12:51,343
+Çizdik. Şu bizim L1 doğrumuz. Bu L1 doğrusuna dik, orijinden geçen doğru parçası bu. Bunun doğruyu kestiği nokta L.
+
+304
+01:12:51,956 --> 01:13:16,896
+Bunun uzunluğu P ve bu doğrunun yatay eksenle yaptığı açı alfaydı. Bakın burada o zaman ben her doğru parçası için bu doğru parçasına dik olan ve orijinden geçen doğruyu çiziyorum. Bunun yatay eksenle yaptığı açı alfa açısı ve bunu kullanarak artık ben diyebiliyorum ki x cos alfa.
+
+305
+01:13:18,163 --> 01:13:35,843
+Y sin alfa eşittir. Rho da deniyor, P de deniyor. X cos alfa artı Y sin alfa eşit P şeklinde yeni bir formda, Hsenormal form dediğim formda doğru denklemini tanımlayabiliyorum.
+
+306
+01:13:35,843 --> 01:13:46,103
+Ve bu formda tanımladığım doğru denkleminde az önce gördüğümüz sorunu yaşamıyoruz. Yani nedir? Vertical, yani dikeyde bir doğru parçasını tanımlarken.
+
+307
+01:13:46,163 --> 01:13:59,563
+Ben bu tarz sorunlar yaşamıyorum. Ne olur dikeyde bir doğru olsa? Dikeyde bir doğru olsa. Bakayım bunu çizdim mi? Aşağıya bir yere koymuştum sanki. Çizmemişim. Şuraya çizelim.
+
+308
+01:14:09,492 --> 01:14:19,391
+Şöyle bir doğru. Bu doğrunun yani biz işte x'ye düzleminde az önce x eşittir 3 diye verdiğimiz line'ı düşünün lütfen.
+
+309
+01:14:21,131 --> 01:14:29,891
+Bunun alfa açısı nedir? P uzaklığı nedir diye sorsam.
+
+310
+01:14:35,828 --> 01:15:02,667
+3 olarak sayılır mı hocam? Evet, çok güzel gidiyorsun. Alfada? Son söz. Hayır. Hayır. Lütfen ezbere sallamayın. Hadi. 0. 0, teşekkür ediyorum. Doğru değil mi? Bakın ne güzel çıktı. Alfası 0, P'si 3 olan. Yani ben bunu yazarken o zaman ne yazıyorum? X cos 0 artı Y.
+
+311
+01:15:03,220 --> 01:15:14,720
+Sin sıfır eşittir 3. Sıfır derecenin kosünüsü 1'dir, sinüsü 0'dır. Dolayısıyla oradan ne oluyor? İfadeyi lütfen düzenleyin tekrar.
+
+312
+01:15:15,720 --> 01:15:29,059
+x kosünüs 0 1'dir, artı y çarpı sinüs 0'dır, eşit p. Ve buradan x eşittir, p'yi 3 almıştık.
+
+313
+01:15:29,408 --> 01:15:43,288
+X eşittir 3'ü yazabildiğimi görüyorsunuz. Doğru mu? Çok güzel. S normal form diye böyle bir matematiksel formda doğru parçasını ifade edebiliyoruz yani. Anlaşıldı mı yaptığımız iş?
+
+314
+01:15:49,395 --> 01:15:50,395
+Peki.
+
+315
+01:15:52,404 --> 01:15:55,444
+Hocam bu transform neden yapıyoruz ki?
+
+316
+01:15:56,543 --> 01:16:01,664
+Doğruyu, yani bir line'ı ifade etmek için bir denklem kullanacağım.
+
+317
+01:16:01,664 --> 01:16:11,204
+Ve bu denklemde, ya da şey diyelim matematiksel formu doğrunun benim yapacağım işe uygun olması lazım.
+
+318
+01:16:11,324 --> 01:16:17,244
+Half transformunda şimdi onu göreceksiniz. Ne avantaj sağladığını anlatacağım.
+
+319
+01:16:18,484 --> 01:16:28,764
+Ekran paylaşımı neredeyiz? Buradayız ama şeye geçmem lazım. Bir dakika. Şuradan ekranı değiştirelim.
+
+320
+01:16:32,884 --> 01:16:34,243
+Slide Show'a geçtim.
+
+321
+01:16:34,804 --> 01:16:35,603
+Geçtim mi?
+
+322
+01:16:36,324 --> 01:16:37,123
+Geçememişim.
+
+323
+01:16:38,724 --> 01:16:39,963
+Slide Show'a geçtim.
+
+324
+01:16:41,268 --> 01:16:41,987
+Geldisi.
+
+325
+01:16:42,007 --> 01:17:02,247
+Evet, geldi değil mi? Tamam, teşekkürler. Şimdi bundan sonra artık bir doğruyu ifade etmek için Hs normal formu kullanacağım diyorum ve x kosinus alfa, y sinüs ya da teta neyse eşittir ro demiş buna, re demiş ya da bu şekilde ifade ederek ilerleyeceğiz diyor.
+
+326
+01:17:07,572 --> 01:17:26,051
+Diyor ki, bir doğruyu göstermek için iki tane parametreye ihtiyacım var. Bu parametreler az önce nasıl bir şeydi? Doğrunun eğimi M, yani şuradaki denklemi kullanırsam eğer, doğrunun eğimini ve şu C kat sayısını biliyorsam ben doğruyu ifade edebiliyordum.
+
+327
+01:17:26,051 --> 01:17:33,672
+Burada benim bilmem gereken iki tane parametre var. Biri tete açısı, biri ro değeri ya da r değeri. Tamam.
+
+328
+01:17:34,079 --> 01:17:51,600
+Doğruyu ifade etmek için. Şimdi görüntü üzerinde ben line detect etmek istiyorum. Amacım bu. İki tane parametre yani rho ve teta dediğim iki tane parametre ve bunlar da bounded yani sınırları belli diyor.
+
+329
+01:17:53,619 --> 01:17:59,359
+Teta açısı kaç derece olabilir? 0, 180 derece aralığında olabilir.
+
+330
+01:18:00,059 --> 01:18:10,359
+İşte efendim, rho değeri ne olabilir? Görüntünün büyüklüğünü biliyorsak eğer, alabileceği uzaklık en fazla ne olabilir? Oradan tahmin edebilirim.
+
+331
+01:18:10,359 --> 01:18:14,859
+İki tane bounded parametrem var, sınırlı parametrem var.
+
+332
+01:18:16,243 --> 01:18:22,304
+Bu iki parametreyi akümülatör formunda tutarak bir oylama yapıyor.
+
+333
+01:18:22,703 --> 01:18:27,083
+Hangi rho ve teta değerini en fazla akümülatör üzerinde?
+
+334
+01:18:27,144 --> 01:18:29,224
+Akümülatör dediğimiz şey bir matriz.
+
+335
+01:18:29,863 --> 01:18:35,903
+İki boyutlu bu matriz üzerinde bir eksene rho'yu öbür eksene teta'yı yerleştirdiğinizi düşünün.
+
+336
+01:18:35,903 --> 01:18:42,343
+Rho'nun alabileceği bütün değerleri koyuyorsunuz matrisin bir boyutuna.
+
+337
+01:18:42,843 --> 01:18:44,243
+Diğer boyuta teta'nın alabileceği.
+
+338
+01:18:44,243 --> 01:19:05,323
+Bu matriz üzerinde matrizin içerisindeki gözlere oy atarak hangi göze en fazla oy geldiyse bundan faydalanarak doğruyu oluşturan ro ve teta değerini bulmuş oluyorsunuz.
+
+339
+01:19:05,663 --> 01:19:30,903
+Şimdi şekil üzerinden anlatayım. Bu şekilde bunu hakikaten çok güzel anlatıyor. Bunu ben Wikipedia'da görmüştüm. Bu anlatımı. Diyor ki, lütfen dikkatli dinleyin burayı. Şurada gördüğümüz üç tane nokta. Bir, iki, üç tane nokta var. Bakın şunlar. Ve bu üç tane noktadan geçen bir doğru var, bir line var ve biz bunu detekt etmek istiyoruz.
+
+340
+01:19:31,988 --> 01:19:41,268
+Bunun denklemini bulmak demek, bu doğrunun ro değerini ve teta açısını bulmak demek.
+
+341
+01:19:41,268 --> 01:19:53,648
+Yatayla yaptığı, yani o doğruya dik olan dikmenin yatay eksenle yaptığı açı ve bir de bunun orijini olan uzaklığı.
+
+342
+01:19:55,728 --> 01:19:56,268
+Şimdi bunu...
+
+343
+01:19:56,912 --> 01:20:07,631
+Bunu tespit edebilmek için az önce dedim ki size iki boyutlu bir akümülatör matrisi var ve bu matrisin içerisine oy atıyoruz dedim.
+
+344
+01:20:07,631 --> 01:20:10,631
+Diyor ki ben bu doğrunun...
+
+345
+01:20:12,340 --> 01:20:26,260
+Parametreleri olan teta açısını ve ro değerini, ro değerini, re değerini akümülatörde sınırlandırayım ve açıları burada gördüğümüz gibi 30'ar derecelik aralıklarla alayım.
+
+346
+01:20:26,260 --> 01:20:40,159
+0, 30, 60, 90, 120, 150. 180 dediğin açı zaten artık 0 derece ile aynı şeydir. Dolayısıyla onu yapmaya gerek yok. Demek ki 0, 180 aralığında.
+
+347
+01:20:40,340 --> 01:21:02,940
+Böyle belli aralıklarla açıyı örnekledim. Sampling işlemi yaptım. Distance dediğimiz şey de row'nun aldığı değerler. Şimdi diyor ki lütfen dikkat. Birinci nokta için işlem yapıyorum. Yani birinci nokta dediğim şu nokta. Bu nokta için işlem yapıyorum ve diyor ki bu noktadan sonsuz tane doğru geçebilir diyor.
+
+348
+01:21:03,796 --> 01:21:19,736
+Farklı açılarda sonsuz adet de doğru geçebilir. Ama ben buradan geçen doğruları 0, 30, 60, 90, 120 ve 150 dereceler ile sınırlandırayım ve 6 tane doğru geçireyim buradan diyor.
+
+349
+01:21:29,332 --> 01:21:45,471
+İfade edilmiş ve bunu açısı sıfır olan yeşille çizilmiş. Az önce örnekte de yapmıştık. Ona benziyor. Vertical bir line. Şurada yeşille çizilmiş. Şurada görüyorsunuz.
+
+350
+01:21:58,195 --> 01:22:16,775
+Buradan geçen doğru parçasının bu olduğunu varsayacak olursam, bunun R değeri ne olur? İşte bunun uzaklığı neyse o olur. Distansı 40'mış. 40 pikselmiş. Sonra 30 dereceyi alıyor. 30 derece de burada ne renk bakayım.
+
+351
+01:22:18,775 --> 01:22:24,775
+Navi yeşil. Renkler birbirine karıştı. Ben çok seçemedim.
+
+352
+01:22:25,971 --> 01:22:35,591
+Yeşil o değil mi? 30 derece. Bu 30 derece şeyle örtüştüğü için, mor çizgiyle örtüştüğü için galiba gözükmüyor.
+
+353
+01:22:37,492 --> 01:22:47,311
+Sonra, bir saniye. 60 derece alıyor. 60 derece de biraz daha iyi seçiliyor. Şu gördüğümüz.
+
+354
+01:22:47,311 --> 01:22:50,311
+60 dereceyi aldı.
+
+355
+01:22:54,228 --> 01:23:08,628
+30 derece şuradaymış yeşil. Şurada vermiş 30 dereceyi. Ondan sonra 60 dereceyi aldı. 60 derece zaten bizim aradığımız renkte zaten görüyorsunuz. Ne rengi o? Pembenin bir tonu.
+
+356
+01:23:21,140 --> 01:23:43,520
+Noktaya olan uzaklığı 82'ymiş. Açı 60 derece. 90 derece için yine buradan bir doğru geçtiğini varsayalım. Onu da kırmızıyla çizmiş. Şuradan geçiyor diyor. 120 dereceyle geçen şu sarıyla olan falan. Bu şekilde. Tabii ben çok kirletince ortalığı göremedik belki renkleri.
+
+357
+01:23:47,891 --> 01:23:50,859
+temizleyin. Biraz daha net görünsün.
+
+358
+01:23:54,868 --> 01:24:05,608
+Bu şekilde birinci noktadan geçen 2, 4, 6 tane doğru için bu doğrular 30'ar derecelik açılarla çizilmiş doğrular.
+
+359
+01:24:06,308 --> 01:24:09,927
+Rho değerlerinin ne olacağını hesaplıyor ve buraya yazıyor.
+
+360
+01:24:09,927 --> 01:24:11,508
+Sonra.
+
+361
+01:24:12,000 --> 01:24:21,720
+Aynı işlemi görüntü üzerindeki ikinci nokta için yapıyor ve ikinci nokta bakın burada sağ taraftaki ikinci çizimi kullanıyor bunun için.
+
+362
+01:24:21,720 --> 01:24:26,539
+Ve buradan da benzer şekilde 0
+
+363
+01:24:26,612 --> 01:24:39,952
+30, 60, 90, 120 ve 150 derecelik doğrular geçtiğini varsayalım. Sonsuz tane doğru geçirebilirim ama yani ben işte burada sadece seçtiğim doğruları geçirdiğimi varsayayım.
+
+364
+01:24:41,011 --> 01:24:49,332
+Bu durumda bunların R değerlerinin ne alacağını hesaplıyor. Yani x'ini, y'sini biliyorsunuz, açıyı biliyorsunuz, R değerlerini hesaplıyorsunuz.
+
+365
+01:24:49,332 --> 01:25:08,851
+Onun R değeri 60 derece için bakın yine 80.5 çıktı. Ve bu defa üçüncüye kaydırdı. Üçüncü nokta için yine 6 tane doğru geçirdi buradan. Bu 6 tane doğrudan 60 derece, tete açısı 60 derece olan için 80.
+
+366
+01:25:09,011 --> 01:25:27,492
+Bu matris de, akümülatör matrisi dediğimiz matris üzerinde, matrisin bir değeri teta'ya göre değişiyor. Matrisin öbür kenarı rho'ya göre değişiyor.
+
+367
+01:25:34,131 --> 01:25:40,011
+Pardon, 30, 60, 90 gibi değerler için oy vererek...
+
+368
+01:25:40,020 --> 01:25:48,520
+Tabii Rho'nun da 80 değeri için, şurada 80 gözü için en fazla oyu şu göz için aldığını görüyoruz.
+
+369
+01:25:48,520 --> 01:25:59,040
+İşte bu oylama mantığı üzerinden giderek görüntü üzerindeki şu line'ın üstündeki 3 tane noktayı biz sadece çizip gösterdik.
+
+370
+01:25:59,420 --> 01:26:04,200
+Buradan yine yüzlerce nokta geçiyor bu doğrunun üzerinden.
+
+371
+01:26:04,640 --> 01:26:07,300
+İşte bu akümülatöre bunların hepsi oy atıyor.
+
+372
+01:26:08,020 --> 01:26:28,060
+Ama doğru açıda olan yani bizim dediğimiz 60 derece eğime sahip o doğru için en fazla oyu aldığı için haf transformu buradan geçen doğrunun teta açısını ve ro değerini bularak bunu matematiksel olarak ifade edebilir hale getiriyor.
+
+373
+01:26:34,739 --> 01:26:53,600
+Distance dediği şeyde row değeri 60 derece için aldığı oy en fazla çıkıyor ve buradan bu değerlere sahip bir line'ı detect etmiş oluyoruz.
+
+374
+01:26:53,600 --> 01:26:57,819
+Çok kompleks bir iş aslında. Çünkü şöyle kompleks.
+
+375
+01:26:59,828 --> 01:27:20,208
+Şuradaki teta açılarını otuzar derece atlayarak yaptık. Ama daha hassas bir çözüm istiyorsak belki beşer derecelik aralıklarla bunu örnekleyip öyle arama yapmamız lazım. Ve bu kadar çok matematik, çok kompleks bir iş yükü getiriyor bilgisayara.
+
+376
+01:27:20,208 --> 01:27:26,347
+Ama vaktiyle çok kullandığımız yöntemlerden.
+
+377
+01:27:26,623 --> 01:27:52,923
+Biriydi bu da. Şimdi buradaki matematik şunun için önemli. Şimdi biz buradan yola çıkarak artık Circle Detection'da yapabiliyoruz. Circle Detection'da, bu da Line Detection için yapılması gereken işlem adımları. Circle Detection'da ise bir Circle'ın yine parametrik denklemini yazmam gerekiyor. Buna ihtiyacım var.
+
+378
+01:27:54,804 --> 01:27:55,684
+Öööö
+
+379
+01:27:56,180 --> 01:28:01,659
+x eksi a'nın karesi, y eksi b'nin karesi eşittir re kare.
+
+380
+01:28:02,180 --> 01:28:05,420
+a ve b şeyin merkez noktasını gösteriyor.
+
+381
+01:28:05,420 --> 01:28:07,180
+İşte circle'ın.
+
+382
+01:28:07,680 --> 01:28:09,979
+R ise yarı çapını gösteriyor.
+
+383
+01:28:10,159 --> 01:28:23,239
+Eğer a'yı b'yi sıfır alırsam ben orijinden geçen bir şeyin circle'ın, re yarı çapında bir circle'ın bu üç parametresiyle arama yapabiliyorum.
+
+384
+01:28:23,460 --> 01:28:24,180
+Diyor ki...
+
+385
+01:28:24,180 --> 01:28:30,319
+Az önce Line Detection'da akümülatör dediğimiz iki boyutlu bir matris vardı.
+
+386
+01:28:30,319 --> 01:28:38,600
+Ama ben bir Circle Detect etmek istiyorsam, burada kullanmam gereken akümülatörün size'ı üç boyutlu olması gerekir.
+
+387
+01:28:38,840 --> 01:28:43,780
+Çünkü üç tane parametrem var diyor. A, B ve R dediğimiz parametreler.
+
+388
+01:28:47,220 --> 01:28:48,040
+Öğ...
+
+389
+01:28:48,180 --> 01:28:53,220
+Ve bu şekilde bir Circle Detection işlemini de ifade edebiliyor.
+
+390
+01:28:53,220 --> 01:29:09,899
+Ve Hav Transform'unu kullanarak burada verilmiş olan bir görüntü üzerinde metal paraların önce bir Kenny Edge Detector ile kenarlarını belirliyor.
+
+391
+01:29:16,180 --> 01:29:21,820
+Haf Transform'u ile Circle Detection işlemini gerçekleştirebiliyorsunuz.
+
+392
+01:29:22,900 --> 01:29:26,860
+Bununla ilgili kodu birazdan paylaşacağım.
+
+393
+01:29:29,260 --> 01:29:40,880
+Bu Circle Detection'u da anlattıktan sonra ben aslında bu iki başlığı, oylama mantığını bir daha anlatabilir misiniz hocam?
+
+394
+01:29:40,880 --> 01:29:42,640
+Demiş [öğrenci].
+
+395
+01:29:43,155 --> 01:29:52,836
+Line Detection'da mı? [öğrenci]? Evet hocam. Line Detection'da. Tamam.
+
+396
+01:30:00,083 --> 01:30:17,663
+Şimdi başlama noktamız şuydu. Bir tane doğru var elimizde. Bu doğrunun üzerinde ben üç tane nokta.
+
+397
+01:30:21,844 --> 01:30:35,844
+Örnekleme yapıyorum. Gördüğünüz gibi. Ve aslında tabii ki ekranda ben buradan bir doğru geçtiğini biliyorum ama bunu bilgisayarın bulmasını istediğim için bu üç tane noktadan geçen...
+
+398
+01:30:37,971 --> 01:31:01,111
+Doğruları ayrı ayrı mercek altına alıp inceliyorum. Birinci nokta için işlem yaparken ve tüm noktalar için aslında teta açısını 6 tane farklı aralık için, değer için analiz ettim. Burada gördüğünüz gibi bu 6 tane farklı açı 30'ar derecelik steplerle artarak gidiyor.
+
+399
+01:31:05,971 --> 01:31:30,911
+Doğruyu, mesela bir numaralı noktadan geçen doğruları çiziyorum. Altı tane doğru çiziyorum. Bu tabloda gördüğünüz renklerle şekil üzerinde gördüğünüz renkler arasında bir ilişki var. Şöyle ki mesela 30 derece için söylüyorum. Burada 30 derece için bir numaralı noktadan geçen doğru bakın bu.
+
+400
+01:31:31,731 --> 01:31:46,431
+Ekranda işaretliyorum, görüyor musunuz? Bu doğruya bir dikme çizdiğimde, orijinden geçen bir dikme çizdiğimde, bunun yatay eksenler arasındaki açı 30 derece.
+
+401
+01:31:46,431 --> 01:31:57,152
+Ve bu 30 derecelik açıdaki bu dikmenin orijinal olan uzaklığı 69.6.
+
+402
+01:31:58,131 --> 01:32:02,851
+Pikselmiş. İşte hani oradan bir öklük distance yaparak bunu hesaplayabiliyorum.
+
+403
+01:32:03,507 --> 01:32:24,227
+Bunu tüm açı değerleri için bu şekilde hesaplıyorum ve lütfen dikkat edin. Mesela sıfır derece için bu bir numaralı noktanın, bu iki numaralı noktanın, bu da üç numaralı noktanın üstünden geçen altı farklı açıdaki doğruların R değerlerini gösteriyor.
+
+404
+01:32:31,123 --> 01:32:44,123
+İkinci noktadan geçen 0 derece 57 olmuş, öbürü 74 olmuş. Çok farklı değerler. Gitgide artıyor. Ama sadece 60 derece için baktığımızda...
+
+405
+01:32:47,956 --> 01:33:02,336
+60 derece için baktığımızda, yani şu değer için, R değeri 81, ikinci noktada R değeri 80.5, üçüncü noktada 80.6 çıkmış.
+
+406
+01:33:02,336 --> 01:33:14,315
+Dolayısıyla biz ne dedik bir matris oluşturuyoruz. Sağ tarafta gördüğünüz bu matrisin bir kenarı, bir boyutu teta açılarını tutuyor.
+
+407
+01:33:15,220 --> 01:33:25,620
+Yani 5 farklı açı vardı burada. 0, 30, 60, 90, 120 diye gidiyor. Ve 150.
+
+408
+01:33:27,507 --> 01:33:38,567
+Yani 6 tane satır var burada. Matrisin şurası, bu ekseni sütunlarına ise ro değerlerini koyduğumuzu düşünelim.
+
+409
+01:33:38,567 --> 01:33:53,067
+Ro değerlerini de bir şey yapıyorsunuz. 10-10 bölerek parçaladığınızı düşünün. 10'dan 20'ye, 20'den 30'a gibi aralıklar tanımladınız. Tamam mı?
+
+410
+01:33:53,119 --> 01:34:05,659
+Rö değerleri 10, 20, 30, 40 diye gidiyor. Ne kadar değer alabilir? İşte bu hesaplamalarda gördüğünüz en büyük sayı neyse diyelim ki 150, 150'ye kadar değer alacak.
+
+411
+01:34:06,068 --> 01:34:27,948
+Sonra bu tabloda gördüğümüz her bir satır için bu madrise bir oy atıyorsunuz. Mesela birinci nokta için şu tabloda sıfır derece gözüne gidiyorsunuz. Rolsu kırk olan göz için buranın değerini arttı bir yapıyorsunuz. Neyse değerini bir arttırıyorsunuz.
+
+412
+01:34:29,076 --> 01:34:47,015
+30 derece için gidiyorsunuz. 69.6 gözüne. 30 için gidiyorsunuz. 69.6 gözüne. Şuraya artı bir değer atıyorsunuz. Anlatabiliyor muyum? Bu akümülatörde, bu akümülatör içerisinde
+
+413
+01:34:48,148 --> 01:35:00,328
+Bu değerler başlangıçta hepsi sıfırdı. Siz bu hesaplamaları yaparak her bir göze puan, bir değer atıyorsunuz, bir arttırıyorsunuz gözü.
+
+414
+01:35:00,328 --> 01:35:06,328
+Ve diyor ki, doğrunun denklemi olan x cos...
+
+415
+01:35:08,083 --> 01:35:30,123
+Teta artı y sin teta eşit ro'ydu ya bizim doğru denklemimiz. Buradaki teta açısı 30 ro değeri 80 olan göz en çok oyu alır diyor. Çünkü bu doğrunun 1, 2, 3 nolu noktalardan geçen doğrunun
+
+416
+01:35:31,891 --> 01:35:38,171
+Hesse normal form dediğimiz formdaki parametreleri, teta ve ro değerleri bunlar.
+
+417
+01:35:39,131 --> 01:35:49,692
+Ve matris içerisinde, akümülatör matrisi içerisinde en çok oyu alan parametre üzerinden siz bunu yakalamaya çalışıyorsunuz.
+
+418
+01:35:49,971 --> 01:35:52,071
+Mantığı bu şekilde.
+
+419
+01:35:53,031 --> 01:35:55,511
+Hocam teta 60 olacaktı değil mi? Orada 30 yazdınız ama.
+
+420
+01:35:55,887 --> 01:35:57,887
+Evet, doğru diyorsun.
+
+421
+01:35:57,887 --> 01:36:00,987
+Tamam, tamam. Teşekkür ederiz.
+
+422
+01:36:02,987 --> 01:36:04,207
+Onu atlamışım, tamam.
+
+423
+01:36:08,115 --> 01:36:21,296
+Şimdi Circle Detection'da da dediğim gibi üç tane parametre var. Az önce Line'da iki parametremiz vardı ama Circle'da merkez noktası, çünkü şöyle düşünün Circle denkleminde.
+
+424
+01:36:21,296 --> 01:36:31,815
+Şurada A, burada B. Bu merkeze sahip R yarı çaplı bir Circle'ın denklemi bu.
+
+425
+01:36:32,176 --> 01:36:49,136
+Bunun o zaman merkez koordinatları dediğimiz A ve B değerleri var. Bir de R yarı çapı var. Dolayısıyla üç boyutlu bir matriz üzerinden bu aramayı yapacağız ve üç boyutlu bir akümülatörümüz olacak. Onun üzerinden oylama yapılacak diyebiliriz.
+
+426
+01:36:58,591 --> 01:37:10,931
+Tabii ki bulabilirsiniz ama tekrar söylüyorum nedir? Çok maliyetli bir iş. Yani işlem karmaşıklığı oldukça fazla. Çok zaman alan bir işlem olduğunu söyleyebilirim.
+
+427
+01:37:22,739 --> 01:37:26,259
+İntegro Differential Operatöründen bahsetmek istiyorum.
+
+428
+01:37:31,939 --> 01:37:49,479
+Iris Detection için aslında geliştirmiş Dogman dediğimiz araştırmacı bu çalışmayı yaptığı dönemde göz üzerinde, yani şu şekilde biyometrik tanıma için kullanılan bir göz görüntüsü üzerinde
+
+429
+01:37:50,484 --> 01:37:58,884
+İris ile gözün beyazını birbirinden ayırabilmek amaçlanıyor.
+
+430
+01:38:08,756 --> 01:38:15,015
+İris bölgesiyle beyazı birbirinden ayırabilecek bir çember oturtmaya çalışıyor.
+
+431
+01:38:15,536 --> 01:38:20,815
+Ve bunu bulmak amacıyla bu integral differential operatörü geliştirmiş.
+
+432
+01:38:21,655 --> 01:38:31,536
+Fakat kesinlikle half transformundan esinlendiği açık. O yüzden ben de konuyu hemen bunun peşinden anlatmak istedim.
+
+433
+01:38:33,152 --> 01:38:42,372
+Ve biz bunu epey kullandık çalışmalarımızda. Sadece biyometrik tanıma ve iris segmentation için değil,
+
+434
+01:38:43,123 --> 01:38:59,463
+Tıbbi görüntülerde omuz başı dediğimiz yuvarlak şekilli kemikleri segmente etmek için de bu matematikten faydalandık. Yani öğrendiğiniz bir matematiği farklı alanlarda da uygulayabiliyorsunuz.
+
+435
+01:39:11,123 --> 01:39:27,887
+Bana bir şey anlatmazdım. Fakat sonra bunlardan korkmak yerine bunlarla dost olmaya çalıştım ve anlamaya gayret ettim. Kesinlikle burada haf transformunu biliyor olmam...
+
+436
+01:39:27,887 --> 01:39:39,347
+Benim bunu anlamamı çok kolaylaştırdı. Neden? Şimdi bu çok kompleks görünen şu denklemi size anlatacağım ve inanılmaz ilginç gelecek.
+
+437
+01:39:40,068 --> 01:39:49,387
+Denklemin en core kısmından, en iç kısmından başlamam gerekiyor. Ve en iç kısmı dediğim yerde şu integral.
+
+438
+01:39:50,771 --> 01:39:55,611
+Şu integral işlemi içerisinde ne yapılıyor acaba? Lütfen dikkat.
+
+439
+01:39:56,311 --> 01:40:00,000
+İntegralde, bakın half transformunun 3 parametresi.
+
+440
+01:40:00,000 --> 01:40:15,279
+İntegral içerisinde, bu çemberin x0, y0 dediğim bir merkez noktası var. Ve bu çemberin r dediğim bir yarı çapı var.
+
+441
+01:40:20,532 --> 01:40:27,592
+İmij içerisinde gözün merkezini de bilmiyoruz. Merkez noktasının neresi olduğunu da bilmiyoruz.
+
+442
+01:40:27,992 --> 01:40:36,612
+R yarı çapının ne kadar olduğunu da bilmiyoruz. Bunları tamamen search ederek bulmaya çalışıyor, arıyor.
+
+443
+01:40:36,612 --> 01:40:44,052
+Yani olabilecek yerleri burası merkez noktası olsaydı diyerek ilerliyor.
+
+444
+01:40:44,612 --> 01:40:47,832
+Şimdi şöyle biraz detay vereceğim.
+
+445
+01:41:06,228 --> 01:41:26,627
+Elinizde böyle bir görüntü varsa ve biliyorsanız bu biyometrik tanıma için gözü fotoğrafıdır. Bunun merkezi olabilecek alanı az çok tahmin edebilirsiniz. Ben dedim ki ben burada bütün pikselleri merkez noktası olabilecek gibi düşünmeyeyim.
+
+446
+01:41:26,627 --> 01:41:33,927
+Ve görüntüyü aslına bakarsanız satır sütun doğrultusunda 3'e 3'lük bir matrise böleyim.
+
+447
+01:41:34,000 --> 01:41:43,239
+Ve bu matriz alanı içerisinde ortadaki bölgede merkezi arayayım. Yani şu bölgenin içerisinde olabilir merkez dedim.
+
+448
+01:41:43,239 --> 01:42:00,171
+Ve bunun içerisindeki her bir pikseli burada merkez noktası olsaydı, bunun etrafında R yarı çapıyla gezseydim,
+
+449
+01:42:00,340 --> 01:42:06,120
+Hangi pikseller benim üzerinden gezeceğim pikseller olurdu diye bakarım.
+
+450
+01:42:06,120 --> 01:42:14,120
+Ve bu eğer doğru noktaya merkezi oturtabilirsem ve doğru R yarı çapına sahip olursam,
+
+451
+01:42:15,300 --> 01:42:20,080
+aslına bakarsanız bu merkezin yarı çapını her seferinde büyüterek,
+
+452
+01:42:20,448 --> 01:42:33,788
+İşte R'yi önce olabilecek yarı çap görüntünün yine scale'ini bildiğim için diyebilirim ki 20 pikselle 100 piksel arasında değişebilir R yarı çapının uzunluğu.
+
+453
+01:42:33,788 --> 01:42:40,068
+Tamam, eğer ben bunu böyle bir aralığa sıkıştırabiliyorsam bunun üzerinde arama yapıyorum.
+
+454
+01:42:40,168 --> 01:42:48,448
+Diyorum ki burada bir merkez noktası var. Şöyle bir çember olabilirdi. Sonra bu çemberin üzerindeki her bir noktanın...
+
+455
+01:42:48,448 --> 01:42:55,168
+İnteklal ne demek? Toplamak demek. Parlaklık değerlerini üst üste topluyorum.
+
+456
+01:42:57,748 --> 01:43:09,048
+Merkezi X0, Y0 olan, yarı çapı R olan çemberin üstünden geçtiği bütün piksellerin intensity değerlerini, parlaklık değerlerini üst üste topluyorum.
+
+457
+01:43:15,572 --> 01:43:30,692
+Karanlık sıfıra yakın değerlerden oluşacak ve hep küçük sayılar olacak. Toplam da küçük olacak. Ne zaman ki bu çember siyahın dışına çıkar ve beyazın üstüne gelirse bu toplam büyür.
+
+458
+01:43:30,692 --> 01:43:36,771
+Çünkü bütün beyaz pikselleri üst üste topladığınızda toplam birdenbire artar.
+
+459
+01:43:37,652 --> 01:43:47,132
+Ama çember büyüdüğü için çevre uzunluğuna bağlı olarak da bir normalizasyona ihtiyacım var. Bu normalizasyonu da iki pi re'ye bölerek yapıyorum.
+
+460
+01:43:49,052 --> 01:44:01,512
+İntegralin ne iş yaptığını, neden çevre uzunluğuna bölerek bir normalizasyon yaptığımı herhalde şu bölümde anlaşılmıştır diye düşünüyorum.
+
+461
+01:44:04,627 --> 01:44:19,627
+Tekrar söylüyorum. Merkez noktasını bilmiyorsunuz. Dedim ya, burada X0 ve Y0 dediğimiz merkezi bilmiyorsunuz. Ve olabilecek her merkezi, burada bir göz...
+
+462
+01:44:20,564 --> 01:44:41,704
+Ne diyelim, göz bebeği varmış gibi düşünüp buradan bir çember çiziyorsunuz bu merkezden. Sonra bunun R yarı çapını büyüterek bu merkezlerin sayısını arttırıyorsunuz ve üst üste gelen pikselleri, üstüne geldiği, örttüğü piksellerin parlaklık değerlerini toplayarak kıyaslama yapıyorsunuz.
+
+463
+01:44:42,452 --> 01:44:52,731
+Ne zaman ki bu merkez noktası doğru noktaya gelir, yani gözün bebeğine tam doğru orta noktaya oturtursanız, çünkü biz ne yapıyoruz?
+
+464
+01:44:52,731 --> 01:45:02,192
+X0, Y0 olabilecek bütün pikselleri burası olabilir deyip bu aramayı yapıyoruz, bu toplama alıyoruz.
+
+465
+01:45:02,612 --> 01:45:10,452
+Ne zaman doğru yere denk gelirse, yani tam merkez noktasına denk gelirse, o durumda r yer çapını gitgide...
+
+466
+01:45:10,452 --> 01:45:17,252
+Büyüterek çizdiğim bu çemberler. Belli bir noktadan sonra R yarı çapını bir büyütüyorum.
+
+467
+01:45:17,716 --> 01:45:42,155
+Az önce siyah pikselleri toplarken bir büyüttüğümde gözün beyazına denk geliyor ve bütün beyaz pikselleri topluyorsunuz. O zaman beyaz pikseller hep 255 civarıydı ya. Bunlar üst üste toplandığı zaman birdenbire bir önceki çemberin üstündeki toplam ile bir sonraki çemberin üstündeki toplamlar bir pik yapıyor orada toplam değerleri.
+
+468
+01:45:45,460 --> 01:46:06,840
+Lütfen söylediklerimi kafanızda canlandırmaya çalışın. İşte ben bu toplamın nerede geçiş yaptığını bulmayı hedefliyorum. Sonra diyor ki, lütfen bu denklem tabii burada bitmedi. Şurada bakın ne diyor? D bölü DR diyor. Bunun anlamı ne?
+
+469
+01:46:12,115 --> 01:46:22,060
+Yani değiştirdiğimde üst üste aldığım toplamların farkını al diyor bana. Bu öyle güzel bir matematik ki arkadaşlar lütfen şöyle düşünün. Burada gözün...
+
+470
+01:46:22,579 --> 01:46:46,340
+R'ın şeysi var. Bu göz ve ben doğru noktadayım. Merkez noktam burası. Şimdi R yarı çapını gitgide büyütüyorum ve bunun üzerinden toplamlar alıyorum. Buradan toplam aldım. Buradan toplam aldım. Sonra büyüttüm bir de buradan toplam aldım. Bakın şurası R1, R2, R3, R4 olsun.
+
+471
+01:46:51,315 --> 01:47:11,995
+Diyor ki her R değeri arasında bir fark al diyor. Şuradaki D bölü D R'nin anlamı bu. Türev alıyorsunuz. Yani ben şu çember için bir toplam almıştım ya, bir sonra büyüttüğüm çember için toplam almıştım. Bu toplamlar arasında bir fark al diyor.
+
+472
+01:47:15,347 --> 01:47:25,307
+Ne zaman büyürse, en büyük değeri verirse, senin aradığın gözün merkez noktasıyla re yarı çapı odur diyor.
+
+473
+01:47:29,300 --> 01:47:52,579
+Gerçekten yani dogmanı ben burada çok takdir ettim. Bunu hani bakın benim burada size hikaye gibi anlattığım şeyi adam matematiksel dille yazmış. Matematik diliyle yazmış. Tabii daha Gauss fonksiyonunun niçin kullandığını anlatmadım. Oraya da geleceğim ama buraya kadar acaba beni takip edebildiniz mi diye sormak istiyorum.
+
+474
+01:47:55,444 --> 01:47:57,164
+Anlaşıldı mı söylediklerimi?
+
+475
+01:47:57,164 --> 01:48:04,384
+Hocam, bahsettiğiniz big, merkez noktası olmazsa bile büyüdükçe o da big olacak.
+
+476
+01:48:04,704 --> 01:48:15,964
+Atıyorum ki sağ üstte bir merkez noktası seçsek, orijinal göz bebeğin dışına çıktığımızda o da inanılmaz bir beyaz bölgeye tabi olacağız.
+
+477
+01:48:16,504 --> 01:48:21,724
+Ama buradaki kadar olamaz. Neden buradaki kadar olamaz? Lütfen şöyle düşünün.
+
+478
+01:48:22,163 --> 01:48:43,003
+Şimdi şekil üzerinden tekrar şurada bakın. Şu ikinci şekilden gidiyorum. Şöyle düşünün. Şimdi sizin eğer şurayı merkeze almış olsanız buradan çizeceğiniz çemberlerde de benzer bir şey olabilir ama çizdiğiniz çemberlerin bir yarısı siyaha geliyor, bir yarısı beyaza geliyor.
+
+479
+01:48:44,043 --> 01:48:45,163
+O da büyük değil mi?
+
+480
+01:48:45,703 --> 01:48:48,923
+Bu da büyük ama ben neyi arıyorum? En büyüğü arıyorum.
+
+481
+01:48:49,492 --> 01:48:54,172
+Bütün görüntü üzerinde en büyüğü arıyorum. Anlatabiliyor muyum?
+
+482
+01:48:54,579 --> 01:49:07,899
+Sen bunu evet büyük diye bir kenara yazabilirsin ama overall bütün pikseller için x0, y0'dır, yer değiştirdiğinde, farklı r yarı çapları için işlem yaptığında bulacağın en büyük bir tane olur.
+
+483
+01:49:07,899 --> 01:49:14,899
+O da en büyük aslına bakarsan doğru merkez noktası ve doğru yarı çapı yakaladığında olur.
+
+484
+01:49:15,279 --> 01:49:20,179
+Çünkü ancak o zaman tam siyahtan tam beyaza çıkıyorsun.
+
+485
+01:49:20,756 --> 01:49:21,876
+Anlatabiliyor muyum?
+
+486
+01:49:22,275 --> 01:49:22,956
+Evet hocam anladım.
+
+487
+01:49:23,076 --> 01:49:36,996
+Diğerinde yarısı siyah, yarısı beyaz falan oluyor. Yani evet onlarda da veriyor, bir pik yapıyor ama bizim esas aradığımız merkezdeki kadar büyük bir değişim, büyük bir fark yaratmıyor.
+
+488
+01:49:44,627 --> 01:49:46,947
+Benimle misiniz? Kayboldunuz mu?
+
+489
+01:49:48,267 --> 01:49:56,067
+Hocam şey sorabilir miyim? Dairenin içinde bir daire daha olduğunu düşünürsek o zaman iki daire mi çıkartacak yoksa içerideki daire mi gösterecek?
+
+490
+01:49:57,127 --> 01:50:00,000
+İşte bak çok güzel bir noktaya parmak bas.
+
+491
+01:50:00,000 --> 01:50:26,520
+Şimdi onu şey yapmak için zaten buradaki Gauss fonksiyonunu kullanıyor. Yani şöyle düşünün. İnsan gözü de olsa çok simetrik bir yapıya sahip değil. Yani gözün şu merkezinden doğru R yarı çapıyla bir çember çizdim. Ama öyle olabiliyor ki bu çemberle bir sonraki çember birbirine böyle milim farkla ikisi de büyük sonuç verebiliyor mesela. Çok birbirine de yakın sonuçlar veriyor.
+
+492
+01:50:27,188 --> 01:50:37,788
+O zaman da ne yapıyor biliyor musunuz arkadaşlar? Buradaki Gauss ile şu az önce dedim ya, farklı R değerleri için önce bir türev almıştık.
+
+493
+01:50:37,788 --> 01:50:47,868
+Yani bir önceki yarı çapla bir sonraki arasında bir delta iş yani işte türev işlemiye aldım, fark aldım.
+
+494
+01:50:48,243 --> 01:51:02,003
+Bu türev alınmış ifadeleri bir Gauss fonksiyonuna oturtuyor ve Gauss ile smoothing yapıyor. Yani olacak en doğru yeri bulabilmek için en son aşamada da...
+
+495
+01:51:06,260 --> 01:51:20,620
+Sigması çok büyük değil. Burada üç tane fark ya da dört tane fark üzerinden çalışan bir Gaussian smoothing işlemi ile bu şeyi, doğru noktayı bulmayı hedefliyor.
+
+496
+01:51:21,960 --> 01:51:31,200
+Bunu dediğim gibi yani hani insanın düşünmesi, hayal etmesi bu çözümü ayrı bir güzel.
+
+497
+01:51:33,492 --> 01:51:40,152
+Haf Transform'una kesinlikle çok fazla benziyor. Çünkü orada da bir arama uzayı var. Siz
+
+498
+01:51:40,560 --> 01:51:45,940
+Bu circle'ın merkez noktasını da bilmiyorsunuz, R yarı çapını da bilmiyorsunuz.
+
+499
+01:51:45,940 --> 01:52:02,940
+Dolayısıyla bunu ararken işte edge olarak gördüğümüz nokta ya da değişimin olduğu bölge, gözün siyahından beyazına çıktığımız nokta ve hangi R yarı çapıyla ben bu...
+
+500
+01:52:04,148 --> 01:52:15,587
+Merkezden uzak circle'ı çizdiğimde siyahtan beyaza çıkarımı bu R değerleri arasında fark alarak bulabiliyorsunuz.
+
+501
+01:52:16,927 --> 01:52:20,847
+Ve bunu bir de güzel matematik diliyle ifade edebiliyorsunuz.
+
+502
+01:52:22,247 --> 01:52:25,627
+Müthiş bir işlem bence.
+
+503
+01:52:25,627 --> 01:52:28,608
+Şimdi.
+
+504
+01:52:31,380 --> 01:52:57,480
+Biraz temizleyelim ortalığı. Çok karalamışız. Ben bu denkleme baktığımda tekrar söylüyorum. Şurada bir türev ile çember üzerindeki piksellerin toplamını alıyor. Her bir re yarı çapı için.
+
+505
+01:52:58,355 --> 01:53:20,795
+Farklı R yarı çapları ama merkezi aynı olan ve merkezi aynı X0, Y0 merkezli çemberlerin R1, R2 yarı çaplı olanlarını çizdiğinde bu farklı R yarı çapları arasında bu toplamların
+
+506
+01:53:21,203 --> 01:53:39,483
+Türevini alıyor, farkını alıyor. Ki değişim nerede en fazla? Nerede ben siyahtan beyaza çıktığımı bulmayı hedefliyor? Ve bunu doğru lokalize etmek için Gaussian smoothing ile bir smoothing işlemi gerçekleştiriyor.
+
+507
+01:53:39,483 --> 01:53:47,423
+Diyor ki, bunu maksimum yapan R, X0 ve Y0 değerini bulmak istiyorum diyor.
+
+508
+01:53:49,332 --> 01:53:57,712
+Bunu maksimum yapan merkez noktası ve R yarı çapını bulmayı hedefliyorum diyor.
+
+509
+01:53:57,712 --> 01:54:12,792
+Dogma'nın Integral Differential Operator'ı, bu biyometrik tanıma için kullanılan bir UBRIS data seti var.
+
+510
+01:54:16,884 --> 01:54:18,083
+Şey yapıyor.
+
+511
+01:54:22,260 --> 01:54:28,540
+Bu örneğe çalıştırabilirsiniz. Örnek bir veri seti olarak bundan bahsedebilirim.
+
+512
+01:54:29,300 --> 01:54:37,480
+Ubris Dataseti, şimdi size birazcık özelliklerini okuyayım. Ubris versiyon 1, versiyon 2 diye değişik versiyonları var.
+
+513
+01:54:38,640 --> 01:54:45,400
+241 tane göz için sol ve sağ toplam 1877 adet görüntü alıyor.
+
+514
+01:54:51,252 --> 01:54:57,012
+Görüntüler 200 çarpı 150 grayscale image. Bu versiyon bir veri tabanında.
+
+515
+01:55:02,012 --> 01:55:13,112
+Ve bu tabii aynı gözün neredeyse 6, 7, 6, 7 tane farklı görüntüsü var.
+
+516
+01:55:14,163 --> 01:55:23,543
+Birden fazla kez çekim var. Hatta bazılarını farklı zamanlarda çekmişler ki, insan gözü uyumuş, uyanık, şu bu olur diye.
+
+517
+01:55:23,543 --> 01:55:38,604
+Bunu güçlendirmek için böyle bir çalışma yapmışlar. Yani veri setini biraz challenging yapmaya çalışmışlar.
+
+518
+01:55:39,764 --> 01:55:47,123
+Ve bu veri setinde böyle gözleri çok yarı bakan, böyle yarı açık, yarı kapalı gözler de var.
+
+519
+01:55:48,323 --> 01:55:53,083
+Onun için de aslında bir takım çözümler öneriyorlar.
+
+520
+01:55:53,083 --> 01:56:00,884
+Benim bu anlattığım konuda şuraya kadar anlamadım dediğiniz nokta varsa tekrarlayacağım.
+
+521
+01:56:01,003 --> 01:56:03,583
+Yoksa biraz daha derinleştireceğim konuyu.
+
+522
+01:56:05,108 --> 01:56:09,668
+Sohbette soru soran var galiba. Anladık.
+
+523
+01:56:13,108 --> 01:56:16,088
+Tamam diyorsunuz. Soru yok anlaşılan öyle mi?
+
+524
+01:56:17,768 --> 01:56:20,168
+Peki o zaman şöyle bir şey sorayım ben.
+
+525
+01:56:20,468 --> 01:56:23,868
+Bakayım burada ben bir slide daha koymuşum. Bitti mi? Yok.
+
+526
+01:56:27,188 --> 01:56:36,188
+Lütfen şöyle bir göz hayal edin. Şimdi resmim de çok iyi değildir ama hadi bakalım bir göz çizeceğim. Şöyle bir göz çizdim.
+
+527
+01:56:37,648 --> 01:56:53,548
+Ve varsayalım ki gözün merkezi burada ve aslına bakarsanız göz böyle. Yani benim gördüğüm bölge çemberin iki kenarı sadece. Anlatabiliyor muyum çizimim anlatıyor mu bunu?
+
+528
+01:56:55,283 --> 01:56:56,663
+Öğneşe ölevi.
+
+529
+01:57:02,452 --> 01:57:16,292
+Şöyle bir göz ama bakın gözün bütün çemberini göremiyorsunuz. Yani gözün aslında çemberi şöyle üst göz kapağıyla alt göz kapağının altında kalıyor. Böyle bir case olabilir. Doğru mu?
+
+530
+01:57:28,532 --> 01:57:34,891
+Verimli çalışabilmesi için ne önerirsiniz?
+
+531
+01:57:36,332 --> 01:57:38,972
+Morfolojik işleme tabi tutabiliriz belki hocam.
+
+532
+01:57:39,672 --> 01:57:42,152
+Çemberi tamamlamak için o kesik noktaları.
+
+533
+01:57:42,492 --> 01:57:46,192
+Yok, yapamazsın. Maalesef. Oradan gitmiyor.
+
+534
+01:57:53,684 --> 01:58:10,123
+Bütün piksellerini tarıyorsunuz. Çemberin bütün çevresini tarıyorsunuz. Yani bütün işte dairenin kenarlarındaki bütün noktaları tarıyorsunuz ya. Ama burada bütün noktaları taramamanız daha doğru gibi.
+
+535
+01:58:19,855 --> 01:58:39,895
+Ben çemberin bu bölümünü ve bu bölümünü bu toplamın dışında bıraksam ve sadece gidip şu bölümlerini çemberin toplama katsam.
+
+536
+01:58:43,444 --> 01:58:56,904
+Daha başarılı olurum diye düşünüyorum. Neden? Çünkü her resim burada gördüğünüz gibi değil arkadaşlar. Burada baya baya gözünü cin gibi açmış adam.
+
+537
+01:58:56,904 --> 01:59:09,904
+Ve alt göz kapağı ile üst göz kapağı şeyi kapatmıyor, irisi kapatmıyor. Ama öyle görüntüler gelebilir ki bunlar...
+
+538
+01:59:10,868 --> 01:59:27,668
+Çok az görünüyor olabilir gözü. Ona rağmen sistem doğru çalışsın istiyorsam eğer. Şuradaki integral ve toplama işleminde bir iyileştirme yapabilirim. Ne önerirsiniz? Ne yapmalıyım?
+
+539
+01:59:36,083 --> 01:59:57,003
+İntegralde yaptığım şey neydi? Çemberin üstündeki tüm noktaların parlaklık değerlerini üst üste topluyorum. Bakın çember diyorum. Sadece yani bir dıştaki çizgiden bahsediyorum. Bu çizginin üstündeki tüm noktaların göz görüntüsü üzerindeki parlaklık değerlerini topluyorsunuz.
+
+540
+02:00:05,652 --> 02:00:11,771
+Üzerinde istediğiniz bölgeyi toplama alırsınız. Doğru mu? Nasıl yaparsınız? Düşünün.
+
+541
+02:00:22,963 --> 02:00:26,284
+Köşegenin en büyük değerini mi alıyordum.
+
+542
+02:00:29,619 --> 02:00:40,719
+Hocam, görünmeyen alanları çıkararak olabilir ya da yarı çap belediyelik açısal şekilde, integral'e dahil ederek toplayabiliriz kalan alanları, görüner kısım için.
+
+543
+02:00:42,920 --> 02:00:46,979
+Yaklaştın [öğrenci], teşekkürler. Hangi bölüm? Matematik mi?
+
+544
+02:00:47,539 --> 02:00:48,299
+Ben matematik mi?
+
+545
+02:00:48,948 --> 02:01:06,988
+Evet, matematikçiler. Harikasın. Şimdi matematikçiler bu konuda tabii ki bence hızlı cevap verecek diye düşündüm ben de. Lütfen şöyle düşünün. Bu çemberi çizerken, şimdi şekil üzerinden anlatayım mı?
+
+546
+02:01:20,467 --> 02:01:40,467
+Çemberin üstündeki tüm noktaların koordinatını da biliyorsunuz. Yani ben diyorum ki, işte 0 dereceden başla, birer derecelik açıyla R uzaklığa git, bu R uzaklığındaki noktaların toplamını al diyorum.
+
+547
+02:01:40,467 --> 02:01:42,707
+Ben açı veriyorum.
+
+548
+02:01:43,060 --> 02:01:58,039
+Yani diyorum ki işte 0 derece ya da işte 30 derece, 60 derece açıyla git, R'ye kadar uzağa git ve bu noktanın bana parlaklık değerini getir diyorum.
+
+549
+02:01:58,039 --> 02:02:09,940
+O zaman ne yapabilirim arkadaşlar? Bir bölge tanımlarım. Yani madem çemberin ben şöyle diyelim.
+
+550
+02:02:12,180 --> 02:02:17,560
+Mesela artı 45 eksi 45 aralığını tarayabilirim.
+
+551
+02:02:18,580 --> 02:02:22,360
+Şu tarafı, sol tarafta da yine bu bölgeyi tararım.
+
+552
+02:02:22,360 --> 02:02:29,640
+Ama çemberin şu bölgelerini, bu açı değerlerini hiç toplama katmam.
+
+553
+02:02:30,640 --> 02:02:37,760
+Çünkü oralar görünmüyor diye varsayıp sadece bunun üzerinden giderek ilerleyebilirim. Doğru mu?
+
+554
+02:02:39,731 --> 02:03:02,731
+Bu matematik çok güzel bir şey arkadaşlar. Çünkü dediğim gibi çemberi siz çiziyorsunuz. Kaç derece açıyla gidip çemberin üstündeki noktayı aldığınızı biliyorsunuz. Dolayısıyla dediğim gibi toplama sadece şu alanları koyup görünür olan bölgeler için bu işlemi yapabiliyoruz.
+
+555
+02:03:04,731 --> 02:03:06,991
+Hocam, denklem sana nasıl olur?
+
+556
+02:03:08,787 --> 02:03:30,731
+Denklemi üzerinde ben bir değişiklik yapmıyorum. Sadece uygulama sırasında şu R yarı çapıyla toplamı alırken çizdirdiğim çemberin...
+
+557
+02:03:32,115 --> 02:03:41,115
+Dediğim gibi sıfır dereceden başladım. Artı 45 eksi 45 aralığındaki kenarlarını sadece toplama alıyorum.
+
+558
+02:03:41,115 --> 02:03:46,896
+Yani şu bölgede işlem değişikliğim var. Onun dışındaki bölgede bir değişikliğim yok.
+
+559
+02:03:47,376 --> 02:03:53,636
+Ha şu olabilir, integral üzerinde R yarı çapına diyemeyiz ama burada tete açısı da vermemiş.
+
+560
+02:03:54,076 --> 02:03:57,003
+Şu ds artımları var ya, hani...
+
+561
+02:03:57,043 --> 02:04:19,923
+Bu aslında açı artışları demek. Değil mi? Ben çemberin üzerinde geziyorum bu DSS tepleriyle. Buna bir sınır getirmiş oluyorsunuz. Eksi 45 artı 45 derece için bu toplamı al diyorum. Bu tarafında da benzer şekilde artık kaça denk geliyor?
+
+562
+02:04:22,515 --> 02:04:34,435
+90 artı 45, 135'den, 135'den, 100, 215'e kadar olan açıyı kullan diyebilirim.
+
+563
+02:04:34,435 --> 02:04:40,815
+Yani şurada bir 90 derecelik açıyı, bir de buradaki 90 derecelik açıyı toplama katacağım.
+
+564
+02:04:41,136 --> 02:04:43,876
+Diğer bölgeleri toplama katmayacağım diyebilirim.
+
+565
+02:04:44,536 --> 02:04:46,015
+Yaptığım işlem bu aslında.
+
+566
+02:04:47,615 --> 02:04:47,876
+Tamam.
+
+567
+02:04:51,283 --> 02:05:01,723
+Y için limit koysak sadece X'i gezdirsek. Y'den kastınız ne? X0, Y0 noktası için mi dediniz?
+
+568
+02:05:06,931 --> 02:05:18,431
+Neyse, bunu biraz düşünün arkadaşlar. Yani ben bu, buradaki matematik dikkatimi çeken şey.
+
+569
+02:05:21,555 --> 02:05:26,015
+Bunları biliyor olmanız sizi bence bir adım öne getirecektir.
+
+570
+02:05:26,715 --> 02:05:30,995
+Farklı alanlarda böyle kestirme çözümler üretebiliriz.
+
+571
+02:05:31,955 --> 02:05:38,215
+Dogman bu Integro Differential Operatörü kullanarak iris tanımada oldukça başarılı.
+
+572
+02:05:38,215 --> 02:05:44,215
+Tabi önce irisi segmente ediyor yani buluyor. Ondan sonra onun üzerinde...
+
+573
+02:05:45,908 --> 02:05:54,008
+Doku, texture ile ilgili bilgi çıkartıyor ve bu texture'ın her insanda farklı olduğunu biliyorsunuz.
+
+574
+02:05:54,068 --> 02:05:58,468
+Biyometrik tanımada nasıl kullanılacağına dair bir takım ekstra işler yapıyor.
+
+575
+02:05:58,468 --> 02:06:11,668
+Ama bu sürecin ilk adımı iris segmentasyonu. O bölgenin arka plandan ayrılması ve işaretlenmesi şeklinde oluyor.
+
+576
+02:06:11,808 --> 02:06:13,368
+Bu ikinci ödeviniz olacak.
+
+577
+02:06:13,855 --> 02:06:32,135
+Python'da bunu kodlamanızı isteyeceğim. Bu yarım açık gözleri bile tanıyabiliyor. Hatta böyle gözün açık olan miktarı böyle nasıl söyleyeyim size hani görünen kısmı çok az olsa bile inanın irisi segmente edebiliyorsunuz. Öyle bir faydası da var.
+
+578
+02:06:39,859 --> 02:06:45,420
+Tanımayı başarabiliyor. Yapı bu şekilde.
+
+579
+02:06:46,000 --> 02:07:00,520
+Evet sevgili arkadaşlar, dersi biraz uzattım, farkındayım ama üçüncü saat yapmayacağım. Anlatacaklarım bu kadar bu hafta için. Sorunuz var mıdır bana? Tekrar sorayım.
+
+580
+02:07:07,252 --> 02:07:26,292
+Buradaki matematik bilgisayar mühendisliği öğrencileri için biraz zor geliyor farkındayım ama aslında çok şey kazandırıyor insana ve yüksek lisans doktora öğrencilerinin konuyu matematik dilinde ifade edebilmesi çok önemli.
+
+581
+02:07:27,152 --> 02:07:28,952
+Umarım size faydası olmuştur.
+
+582
+02:07:30,652 --> 02:07:32,172
+Hepinize iyi haftalar diliyorum.
+
+583
+02:07:32,948 --> 02:07:36,508
+Hocam bir şey sorabilir miyim? Önceki ödevle ilgili.
+
+584
+02:07:37,028 --> 02:07:38,528
+Buyurun sorun.
+
+585
+02:07:39,408 --> 02:07:47,568
+Size göndermemizi istediğiniz sadece Python kodu olarak mı yoksa açıklamaları ayrı bir şekilde bir rapor mu etmemiz gerekiyor?
+
+586
+02:07:47,688 --> 02:07:52,608
+Yani ben her Python kodunu açıklamalı bir şekilde yazmayı düşünmüştüm.
+
+587
+02:07:59,412 --> 02:08:16,472
+Metin ekleyebiliyorsunuz. Açıklamalarınızı oraya yazarsınız. Altına kod, kodu çalıştırıp sonuçlarını da mutlaka çalıştırılmış kod gönderin bana. Ben tekrar çalıştırmak zorunda kalmayayım. Sizin ürettiğiniz outputları orada doğrudan görebileyim istiyorum.
+
+588
+02:08:16,979 --> 02:08:41,899
+Tamamdır. Anladığım şekildeymiş. Teşekkür ederim hocam. Rica ederim. Lütfen doğrudan Python, PyCharm vs. kullanmayın. Jupyter Notebook'ta yazın. Çünkü bu çok pratik oluyor. Benim kontrol etmemi de çok kolaylaştırıyor. Bunu söylememe rağmen Python'da kod gönderen oluyor. Lütfen yapmayın. Değerlendirmeyeceğim. Jupyter'de yapalım. Olur mu?
+
+589
+02:08:43,028 --> 02:08:47,648
+Evet, tekrar iyi haftalar diliyorum hepinize. Hoşçakalın.
+
+590
+02:08:48,528 --> 02:08:55,088
+İyi günler hocam.
+
+591
+02:08:55,748 --> 02:08:56,268
+Güle güle.
+
+592
+02:08:57,268 --> 02:08:58,148
+İyi günler hocam.
+
+593
+02:08:59,108 --> 02:08:59,688
+İyi günler.

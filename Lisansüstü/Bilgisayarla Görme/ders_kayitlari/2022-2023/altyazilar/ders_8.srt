@@ -1,0 +1,1283 @@
+1
+00:00:00,244 --> 00:00:11,603
+3 dakika oldu. Teknik yapmak kadar sürdü yani. Tableti bağladım. Enidesk üzerinden bağlanabiliyor.
+
+2
+00:00:15,252 --> 00:00:21,752
+Bunu aç derken. Şimdi, jumda dersi de açtık.
+
+3
+00:00:22,752 --> 00:00:29,252
+Tahtayı kullanmak yerine tableti kullanayım. Uzaktan bağlanan arkadaşlar da eziyet çekmesin dedim.
+
+4
+00:00:29,252 --> 00:00:32,252
+2, 4, 6, 8, 9 kişiyiz bugün sınıfta.
+
+5
+00:00:35,251 --> 00:00:40,251
+Bayramdan sonra katılımın daha çok olacağını ümit ediyorum. Bakalım, göreceğiz.
+
+6
+00:00:55,636 --> 00:01:00,696
+Nereden başlayamazsınız? Oradan açsam daha patik olabilir.
+
+7
+00:03:17,716 --> 00:03:22,936
+Biz de yeni başlıyoruz [öğrenci]. Sağ ol. Bir ekran paylaşamadım.
+
+8
+00:03:31,891 --> 00:03:34,891
+Slide gözüküyor şimdi hocam ama başlangıç sayfası.
+
+9
+00:03:53,939 --> 00:03:55,240
+Şu an her şey yolundaki.
+
+10
+00:04:10,644 --> 00:04:15,343
+Uzaktan bağlanan arkadaşlar ekran paylaşımını görebiliyor mu?
+
+11
+00:04:16,663 --> 00:04:18,163
+Evet hocam, pdf'i görüyoruz.
+
+12
+00:04:18,163 --> 00:04:18,963
+Tamam.
+
+13
+00:04:20,923 --> 00:04:23,324
+Herkese merhaba tekrar.
+
+14
+00:04:25,504 --> 00:04:34,060
+Dün 17 Nisan 8. haftadayız. Önümüzdeki hafta...
+
+15
+00:04:35,699 --> 00:04:55,379
+İlk yıl içi sınavımız olacak ve online yapacağız. Alınan karar gereği bir test sınavı olacak online'da. Süre kısa olacak. Hızlı cevap vermeniz gerekecek. Soruları olabildiğince çeşitlendireceğim ve o şekilde sınavı gerçekleştireceğiz.
+
+16
+00:05:00,180 --> 00:05:21,400
+Zaten sonra bayramdan sonra bir haftada ders yapıyoruz. Arkasından da proje sunumları başlayacak. Bu arada ben online'da hem ikinci ödev için hem de proje için bir paylaşım yaptım. Bunu paylaştığım zaman size e-mail geliyor mu? Sistemde. Gelmiyor mu?
+
+17
+00:05:21,875 --> 00:05:46,855
+Ben sistem otomatik atıyordur diye haberdar etmedim ama online Yıldız Edüter'e de şu anda her ikisi açık. Proje için konu seçimi yapmamız gerekiyor. Ve ikinci ödev içinde 1 Mayıs son tarih diye hatırlıyorum. Proje içinde 15 Mayıs teslim tarihi. 15 Mayıs'ta aynı zamanda sunumlar da başlayacak.
+
+18
+00:05:48,531 --> 00:06:08,891
+Sunumları olabildiğince yine burada sınıfta yapacağız. Aslında ders oldukça kalabalık ama yetişmeyen ve benim söz veremediğim arkadaşların video çekip paylaşmasını istiyorum ders duvarında. Aynı konu seçiminde olduğu gibi.
+
+19
+00:06:18,004 --> 00:06:31,844
+Bu hafta Deep Learning'de, önceki hafta Cumulational Neural Network ve Feature Extraction konusunu konuştuk.
+
+20
+00:06:31,844 --> 00:06:41,324
+Arkasından Free Connected Layer aktivasyon fonksiyonu ya da Max Pulling işlemlerini konuştuk.
+
+21
+00:06:45,908 --> 00:06:52,028
+Dropout, Data Argumentation ve Transfer Learning konularını konuşacağız.
+
+22
+00:06:52,927 --> 00:07:00,447
+Size geçen haftada bahsetmiştim aslında ben bu dersin sunumunda.
+
+23
+00:07:00,447 --> 00:07:12,128
+Stanford Üniversitesi'nin CS-281 konulu bir dersi var. Oradan çok faydalandım. Bu Deep Learning ile ilgili konuları.
+
+24
+00:07:13,139 --> 00:07:33,800
+Videoları var, paylaşıyorlar. Ödevleri var, paylaşıyorlar. Ders notları var, paylaşıyorlar. Merak eden arkadaşlar oradaki sunumları da devamında izleyebiliriz. Bu konu başlıkları için işte üç saatimiz var bugün. Bunlar üzerinden devam edeceğiz.
+
+25
+00:07:34,259 --> 00:07:51,539
+Şimdi önce kısaca bir learning training yani eğitim örnekleri ile modelin eğitilmesi ve model parametrelerinin güncellenmesi işlemlerinden biraz bahsedelim.
+
+26
+00:08:00,307 --> 00:08:18,268
+Labeled Data dediği bir veri seçiminin küçük bir alt kümesi, batch dediğimiz bir alt kümesi var. Ama etiketli bir veriden bahsediyoruz. Bu bir classification için konmuş üret olabilir. Bu bir detection işlemi için.
+
+27
+00:08:18,720 --> 00:08:34,444
+Konmuş band box'lar ve yine etiketleri olabilir. Bu veri ile sistemi eğitmek istiyoruz ve bu veri seti ile network'te bir tahmin...
+
+28
+00:08:34,484 --> 00:08:40,163
+Yani elimizde başlangıçta bir W matrisi var.
+
+29
+00:08:40,163 --> 00:08:45,203
+Lake'lerin olduğu bir matris ve güncellemek istediğimiz parametrelerin olduğu bir matris.
+
+30
+00:08:45,203 --> 00:08:50,964
+Bu matris ile input vektörünü çarparak bir prediction elde ediyoruz.
+
+31
+00:08:50,964 --> 00:08:59,844
+Bu elde ettiğimiz tahmin sonucu ile labeled data'nın gerçek sonuçlarını karşılaştırarak hatayı hesaplıyoruz.
+
+32
+00:09:01,779 --> 00:09:15,779
+Hesaklamış olduğumuz hata üzerinden hatanın geriye yayılımı dediğimiz yöntem ile aslında yapmak istediğimiz şey model parametrelerini güncellemek ve daha...
+
+33
+00:09:16,692 --> 00:09:37,312
+İyi öğrenmiş, az hata yapabilen bir model elde etmek. Burada da network parametrelerinin güncellenmesi işlemi ve tekrar başa dönüp bu işlemlerin belli sayıda tekrarlanması sonucu modelin bu işi öğrenmesi sağlamıyor.
+
+34
+00:09:37,600 --> 00:10:00,000
+Burada eğer hata hesaplıyorsa hatayı minimize etmek, objective function varsa bunu maximize etmek dediğimiz işlemden söz edilebilir. Ama biz hep hata üzerinden gidiyoruz ve amacımız hatayı minimize etmek. Bu hatayı yani tahmin ettiğin sonuç ile gerçek sonuç arasındaki farka bakıyorum, hata buluyorum ve bu hata...
+
+35
+00:10:00,000 --> 00:10:12,000
+Bu konular üzerinden de bir sonraki iterasyonu da bunu azaltmak için model parametrelerini güncelliyorum. Yaptığım işi bu şekilde özetleyebilirim.
+
+36
+00:10:12,000 --> 00:10:14,000
+Tabi burada...
+
+37
+00:10:14,868 --> 00:10:41,208
+Model parametrelerinin, yani ağırlıkların güncellenmesi işinden bahsediyoruz. Bu güncelleme işlemini yaparken amacımız ne? Hatayı minimize etmek. Bunun için aslında bu W maddesi üzerinden bir türev alınıyor, gradiyent işlemi var. Ve bu hatayı minimize etmek için bu türev işlemin sonucunda.
+
+38
+00:10:41,648 --> 00:10:45,768
+Edeyip değer üzerinden güncellemeyi gerçekleştiriyorum.
+
+39
+00:10:46,567 --> 00:10:53,888
+Şimdi işlem adımlarını burada biraz daha detaylı konuşabiliriz. Şöyle bakalım.
+
+40
+00:10:55,327 --> 00:11:05,768
+İçerhalde da verdiğimiz örneklerden hatırlarsınız. Bir W rate madresimiz var. Bir X input vektörü mühbar.
+
+41
+00:11:06,207 --> 00:11:12,447
+Burada x input vektörü dediğimiz vektör. Bu da vermiş olduğumuz input imgine.
+
+42
+00:11:12,447 --> 00:11:16,447
+To input imgine.
+
+43
+00:11:18,655 --> 00:11:35,816
+Bir vektöre taşınması ile edebiliyor. Burada giriş görüntüsü dediğim görüntü 32x32x3'lük bir görüntü. Bunu flatten ediyorum ve bir vektöre yerleştiriyorum. Bu yerleştirmiş olduğum vektörün adı x vektörü.
+
+44
+00:11:35,816 --> 00:11:42,975
+Bunu gördüğümüz gibi bir w maddesi ile çarpıp
+
+45
+00:11:43,475 --> 00:11:55,475
+Bu matriz vektör çarpımından yine bir alt vektör elde ediyoruz. Bu elde ettiğimiz vektör de bizim skor dediğimiz değeri gösteriyor.
+
+46
+00:11:55,475 --> 00:11:59,675
+Şu bizim x vektörümüz, x int vektörümüz.
+
+47
+00:12:02,475 --> 00:12:05,475
+Burada gördüğümüz rate matrizimiz.
+
+48
+00:12:10,868 --> 00:12:18,168
+Ve bu ikisinin çarpımından S dediğimiz skolu ya da burada P dediğimiz fonksiyonu elde ediyoruz.
+
+49
+00:12:19,168 --> 00:12:22,168
+Şimdi bunların büyüklükleriyle ilgili de burada örnek vermiş.
+
+50
+00:12:22,168 --> 00:12:25,868
+32x32x3'lük bir input image.
+
+51
+00:12:30,355 --> 00:12:38,355
+Bunu ben bir Latin edilmiş vektöre taşıdığım zaman elde ettim vektör sayısı 3072x1 oluyor.
+
+52
+00:12:38,355 --> 00:12:45,355
+Bizim X vektörümüz yani input image'i taşıdığımız vektörü gösteriyor.
+
+53
+00:12:45,355 --> 00:12:49,355
+Büyüklüğü 3072x1.
+
+54
+00:12:49,908 --> 00:13:02,187
+Ve bunun önünde çarpmış olduğumuz Bayt maddesi ise neden 10 satırdan oluşuyor? Çünkü 10 tane farklı sınıf için sunut üretiyoruz.
+
+55
+00:13:02,187 --> 00:13:13,187
+Bunu CPARC, TEM dataset dediğimiz dataset'te 10 tane kategori vardı. Bu 10 kategori için.
+
+56
+00:13:15,892 --> 00:13:25,792
+Altı türetmek istiyoruz. O yüzden 10x1000, yani 3072 bir weight matlusumuz var.
+
+57
+00:13:25,792 --> 00:13:38,052
+Ve elde ettiğimiz skor vektörü 10x1 oluyor. Ve her bir satırda aslında tahmini y değerini hesaplamış oluyoruz.
+
+58
+00:13:38,368 --> 00:13:45,368
+Bunun diğer bir şekilde, G şapka dediğimiz, estimated output'u gösteriliyor.
+
+59
+00:13:51,956 --> 00:14:14,456
+Ama biz bunun için neyi biliyoruz aslında? Bu bir classification işleminde training fazı ve ben vermiş olduğum her intikörü kişinin gerçek etiketini de biliyorum. Yani Y değerini de biliyorum. Dolayısıyla gerçek Y değeriyle tahmini Y değerlerini karşılaştırarak buradan hata hesabı yapabiliyorum.
+
+60
+00:14:16,456 --> 00:14:17,176
+Şimdi.
+
+61
+00:14:17,844 --> 00:14:34,324
+Burada küçük bir örnek vermiş. Örnekte diyor ki işlemi biraz daha hani böyle tahtada yapılabilir. Sonunda gösterebilmek için küçültelim ve diyelim ki sadece 3 tane sınıfımız var.
+
+62
+00:14:43,316 --> 00:15:05,796
+X input Vector dediğimiz input image'i bir Platinum adrese taşıdığım zaman elde ettiğim input image vektörün 4x1 olsun.
+
+63
+00:15:10,163 --> 00:15:36,323
+Küçültük problemi ve bu durumda eğer benim x'i giriş vektörü 4 satır bir kütülden oluşuyorsa, bunun önünde kullanacağımız veit vektörü satır sayısını belirleyen şey, last sayısı, kaç tane sınıf olduğu bilgisi ve ikinci parametre olan bir satırda kaç parametre olduğu da x vektörün boyutuyla alakalı. O yüzden
+
+64
+00:15:36,916 --> 00:15:41,376
+Burada 3x4'lük bir weight maddesinden bahsediyoruz.
+
+65
+00:15:42,956 --> 00:15:55,376
+Başta kullandığımız 3 satır bilgisi sınıf sayısıyla ilişkili, 4 ise yani sütun sayısı ise x vektörünün boyutuyla alakalı.
+
+66
+00:16:02,100 --> 00:16:19,539
+Biliyorsunuz, binerce bir de matrisler büyük harfle vektörler küçük harfle gösteriliyor. Wx çarpma işlemini yaptıktan sonra bunu bir de b-byes dediğimiz byes vektörüyle şurada gördüğümüzü topluyoruz.
+
+67
+00:16:27,155 --> 00:16:38,815
+Buradaki üretmiş olduğumuz altlıkta sınıf sayısı kadar satırdan oluşmalı. O yüzden bu da 3x1'lik bir vektör olacak.
+
+68
+00:16:40,635 --> 00:16:49,215
+Şimdi işlemlerin nasıl yapıldığını göstermek için şöyle sayısal değerler koymuş buraya gördüğünüz gibi.
+
+69
+00:16:50,772 --> 00:17:03,572
+Biz bu input image'den elde ettiğimiz vektörü, stretch pixels into single column demiş, yani platin ettikten sonra şuraya yerleştirdik. Burada XE'yi görüyorsunuz zaten.
+
+70
+00:17:03,572 --> 00:17:10,532
+W matrisinin bir satırı ile XE vektörünün çarpımından
+
+71
+00:17:10,675 --> 00:17:18,476
+B değerini de ekleyerek şuradaki alt kutu elde ettim. Yani işte y1 dediğim skoru elde ettim.
+
+72
+00:17:18,476 --> 00:17:26,996
+Aynı giriş görüntüsü için bu defa ikinci kategori ya da sınıf için acaba ne değer hangi skoru üretir diye.
+
+73
+00:17:32,660 --> 00:17:39,980
+weight maklisinin ikinci satırıyla x vektörünü çarptım. Bayez değerini ekledim. Şu skoru elde ettim.
+
+74
+00:17:39,980 --> 00:17:50,900
+Burada biz üç sınıflı bir probleme bunu indirgedik dediğimizde diyor ki bu kategorilerin isimleri de cat, dog ve ship olsun.
+
+75
+00:17:50,900 --> 00:17:51,900
+Mesela.
+
+76
+00:17:52,051 --> 00:18:09,652
+Bu üç kategori için aslında benim input image için vermiş olduğum görüntü bir kedi görüntüsü iken elde etmiş olduğum tahmini değerlerde en büyük skor dol skoru oldu.
+
+77
+00:18:09,652 --> 00:18:18,051
+Bu da aslında burada yapılan hatayı gösteriyor. Yani benim için doğru olan sınırı kedi iken.
+
+78
+00:18:18,259 --> 00:18:24,759
+Burada en düşük skoru kedi sınıfı için aldığını görüyorsunuz.
+
+79
+00:18:24,759 --> 00:18:42,759
+Sonuçta ne yapması gerekiyor? Doğru sonucu bulana kadar şurada görmüş olduğunuz W madresini, W madresini güncellemesi ve doğru sonucu ya da doğruya en yakın sonucu verecek şekilde güncellemesi gerekiyor.
+
+80
+00:18:47,124 --> 00:18:50,584
+Uzaktan bağlanan arkadaşlar takip edebiliyor musunuz?
+
+81
+00:18:53,344 --> 00:18:54,344
+Evet hocam.
+
+82
+00:18:58,836 --> 00:19:07,155
+Şimdi burada loss function'ın nasıl hesaplandığını göstermek üzere bir örnek hazırlanmış.
+
+83
+00:19:07,155 --> 00:19:22,155
+Az önce matriste biz 3 tane sınıf için matris vektör çarpımını gösterdik ama tekrar 10 tane sınıf örneğine geri dönmüştü.
+
+84
+00:19:23,188 --> 00:19:37,128
+Loss Function ve Optimization aşamalarını göstermek amacımız. Diyor ki bizim elimizde bir tane giriş görüntüsü var. Şurada görmüş olduğumuz bir kez görüntüsünü aldım.
+
+85
+00:19:37,128 --> 00:19:50,448
+Ve bunu bir X vektörüne yerleştirdim. Elimde bir rate maddesi var. Başlangıçta bunu random olarak atıyoruz. Sonra içindeki parametreleri, güncelleri iyileştiriyoruz. Ve varsayalım ki bu.
+
+86
+00:19:50,996 --> 00:20:03,156
+Sözüne ettiğimiz W maddesi ile X vektörünün, X vektörünün çarpımı sonucunda elde ettiğiniz sonuçlar şurada gördüğümüz değerler olsun.
+
+87
+00:20:03,156 --> 00:20:10,256
+Yani 10 tane farklı sınıf için ürettiği skorları görüyorsunuz orada.
+
+88
+00:20:10,896 --> 00:20:15,456
+Bu skorlar içerisinde vermiş olduğum giriş görüntüsünün ben ışıklarını biliyorum.
+
+89
+00:20:16,468 --> 00:20:26,708
+Dolayısıyla benim hedefim aslında şunu en büyük yapmak ve diğer sınıflar için yaptığım hatayı elinize etmek.
+
+90
+00:20:26,708 --> 00:20:36,268
+Şimdi burada baktığımız zaman elde ettiğimiz skorlar içerisinde hangi sınıf için en büyük sonucu vermiş?
+
+91
+00:20:38,768 --> 00:20:43,488
+Yine burada görüyoruz, dog için en yüksek sonucu vermiş.
+
+92
+00:20:44,019 --> 00:21:03,019
+İkinci giriş görüntüsünde de, bir defa bir araba görüntüsü veriyor ve araba görüntüsü için X, İ vektörünü verip bunu W maddesiyle çarpıp bir skor elde ediyor. Bu skorları da 10 tane sınıf için buraya yerleştirmiş.
+
+93
+00:21:08,980 --> 00:21:20,559
+Elde ettiğimiz skorlara baktığımızda en büyük değer otomobil sınıfı için çıkmış. Zaten gerçek sınıfı da otomobil. Dolayısıyla burada doğru sonucu yakalamış.
+
+94
+00:21:20,559 --> 00:21:35,639
+Üçüncü verdiği görüntü bir kurbağa görüntüsü. Bunu da yine W maddesiyle çarpıp elde ettiği skorlara göre listelemiş.
+
+95
+00:21:36,339 --> 00:21:56,579
+Ben gerçek sınıf etiketini biliyorum. Gerçek sınıf etiketi için ürettiği skor eksi 4.24 olmuş. Ama en büyük skoru hangi sınıf için elde etmiş? Burada trafik için elde etmiş.
+
+96
+00:21:57,140 --> 00:22:05,540
+Dolayısıyla sadece bir tane sınıf için doğru sonuç elde etmiş, diğer iki tane sınıf için yanlış sporlar elde etmiş.
+
+97
+00:22:05,540 --> 00:22:13,460
+Biz bu işlemin sonunda elde etmiş olduğumuz spor değerleri için bir loss fonksiyonunu tanımlamamız gerekiyor.
+
+98
+00:22:13,960 --> 00:22:16,320
+Ve bu loss fonksiyonu ile diyor ki,
+
+99
+00:22:17,332 --> 00:22:30,492
+Bu loss fonksiyonu ile our unhappiness, sanctifies our unhappiness, yani memnuniyetsizliğimizi bu loss fonksiyonu ile ifade etmemiz gerekiyor.
+
+100
+00:22:30,492 --> 00:22:41,252
+Ve daha sonra bu loss fonksiyonuna göre bunu minimize etmeye yönelik bir işlem yapmamız gerektir.
+
+101
+00:22:41,652 --> 00:22:55,292
+Şimdi burada bir örneğin devamında şöyle bir şey vermiş. Diyor ki bizim elimizde bir XE giriş görüntüsü var ve bunun YE class label'ını biliyorum, etiketini biliyorum.
+
+102
+00:22:56,892 --> 00:23:04,292
+Bu gerçek skor bilgisinden de faydalanarak, yani bu şeyin gerçek değeri ve...
+
+103
+00:23:04,531 --> 00:23:15,931
+Hesapladığım skoru karşılaştırarak ne yapacağım? Bir loss hesaplayacağım. Burada farklı loss fonksiyonları kullanmak mümkün. SVM loss'un nasıl çalıştığını göstermiş burada.
+
+104
+00:23:28,756 --> 00:23:50,956
+Output Class'ımızı gösteriyor. GE sınıfı yani Output Class dışındaki her J klası için diyor. Her J klası için ürettiğim sporun gerçek sınıf etiketinin skoru arasındaki fark.
+
+105
+00:23:52,564 --> 00:24:07,744
+Alınacak. Buna bir ekleyerek bunu sıfırla karşılaştıracağım. Maksimum olan hangisiyse onu loss değeri olarak alacağım. Ama her sınıf içine değdiğim değeri üst üste toplayarak bu loss'u hesaplayacağım.
+
+106
+00:24:07,744 --> 00:24:15,124
+Ama loss iyi. Yani i klasi için sadece bunu elde ediyorum. Yani tek bir giriş görüntüsü için.
+
+107
+00:24:19,443 --> 00:24:36,384
+Kendi ait olduğu sınıf skoru dışında elde ettiği her bir klasın sınıf skorları ile gerçek sınıfın skoru arasındaki farkı hesaplıyorum. Bunları üst üste topluyorum. Formül bana bunu söylüyor. L-İ dediğim formül. Lost Formül fonksiyonunda.
+
+108
+00:24:40,500 --> 00:24:44,660
+Şurada bir de maksimum seçme işlemi var. Ona da dikkat.
+
+109
+00:24:44,660 --> 00:24:51,140
+Şimdi bu işlemin nasıl yapıldığını burada biraz daha detaylı anlatıyor. Her bir örnek görüntü için.
+
+110
+00:24:53,875 --> 00:25:08,615
+Suppose we have three training examples demiş. Bizim üç tane giriş görüntü var ve üç tane de sınıf etiketimiz var. Bunları bildiğimiz için sınıf etiketlerini söylüyoruz. Birinci giriş görüntüsü bir etiketik görüntüsü.
+
+111
+00:25:20,500 --> 00:25:43,339
+Skor vektörünü burada göstermiş. 3.2 vermiş. Kendi sınıfı için. Otomobil sınıfı için 5.1. Bunun için 1.7 vermiş. Diyor ki bunun dost fonksiyonunu bakın sağ tarafta birlikte hesaplayalım. Ne yapıyor? Demiştik ki...
+
+112
+00:25:43,731 --> 00:26:04,112
+J farklı GI için, yani kendi sınıf etiketi dışındaki diğer sınıflar için diyordu. J'nin her bir değeri için. J o zaman CAT sınıfını almayacak, CAR ve FOB'dan başlayacak. CAR için ürettiği skor 5.1.
+
+113
+00:26:04,980 --> 00:26:26,399
+Gerçek sınıf CAT sınıfıydı. Bunun skoru 3.2. 5.1-3.2 yaptı ve artı 1 diyerek şuradan bir değer elde etti. Bu sayıların toplamı 2.9 yaptı.
+
+114
+00:26:27,667 --> 00:26:44,228
+Sıfırla karşılaştırdı, sıfırla 2.9'u karşılaştırdı. Hangisi büyük? 2.9'u büyük. O zaman onu aldı. Kıradaki toplama koydu. Sonra diğer sınıf için, yani top sınıfı için, eksi 1.7 skor elde etti.
+
+115
+00:26:47,539 --> 00:26:56,259
+Gerçek sınıf skoru eksi 3.2. Onu çıkartacağız dedik. Ve bir ilave ettiğimizde eksi 3.9 elde ettik.
+
+116
+00:26:56,259 --> 00:27:11,860
+Pardon. Buradan elde ettiğim işlem sonucu eksi 3.9. Sıfırla karşılaştık. Maksimum olanı seçtiğim için sıfır geldi. Ve nos toplamı burada.
+
+117
+00:27:14,420 --> 00:27:28,480
+Gidermiş olduğum, şu test görüntü için elde etmiş olduğum kayıp 2.9 çıktı. Tamam mı? Bu işlemi her bir sınıf için bu şekilde tekrarlıyor.
+
+118
+00:27:29,480 --> 00:27:37,620
+Şimdi ikinci örnek görüntümüz otomobildi. Otomobil için aslında burada lütfen dikkat, güzel diye bir şey vermiş.
+
+119
+00:27:40,692 --> 00:27:48,412
+Sınıfı için en büyük değer elde etmiş. O zaman dostum burada sıfır çıkması gerekir ve bunu nasıl sağladığını göreceksiniz formülde.
+
+120
+00:27:51,251 --> 00:28:00,632
+W maddesiyle X vektörünü çarptığında, yani şu otomobil görünüşünün X vektörüyle çarptığında elde ettiği sonuçlar bunlar.
+
+121
+00:28:01,312 --> 00:28:07,011
+Şimdi SVM loss işleminde bunları yerine koyduğumuzda nasıl hesap geliyor lütfen lütfen.
+
+122
+00:28:08,564 --> 00:28:25,844
+Kendi sınıfı dışındaki her bir sınıf için, önce CAT sınıfı için, yürekliği skor ne? 1.3. Eksi 4.9 diyorum. Zaten eksi 4.9 dediğiniz anda en büyük skor zaten kendi sınıfı olduğu için sonuç negatif çıkacak.
+
+123
+00:28:26,504 --> 00:28:34,668
+Orada bir tane artı bir de var, lütfen ona da dikkat. Bu işlemin sonucunda sıfırla karşılaştırıyor ve…
+
+124
+00:28:34,804 --> 00:28:53,804
+Loss'u bu Car input image için Loss'u sıfır olarak hesaplamış oluyor. Üçüncü verdiği örnek bir pulbağa dönüşüydü. Bunun için
+
+125
+00:28:57,076 --> 00:29:13,395
+Sınıfının etiketi eksi 3.1'miş. Kendi sınıfı dışındaki her bir sınıf için ürettiği skora bakıyorum. 2.2 eksi 3.1. Eksi eksi 3.1. Tamam, lütfen dikkat.
+
+126
+00:29:14,776 --> 00:29:20,635
+Ve artı bir dediğinde bu işlemin sonucunda, burada bir işlem hatası yok mu? Bir kontrol edin.
+
+127
+00:29:31,443 --> 00:29:46,344
+Bir eksik değil mi toplamda? İkincisinde de aynı eksik var. Var mı? Yani orası 12.9 olacak sanıyorum. Ben de bugün fark ettim.
+
+128
+00:29:50,387 --> 00:29:59,587
+Neyse, yani sonuç olarak BOS hesabının burada da nasıl yapıldığını SBM-yosu göstermiş.
+
+129
+00:29:59,587 --> 00:30:07,987
+Diyor ki, biz şimdi 3 tane training example verdik, 3 tane eğitim örneği verdik. Bunların gerçek sınıflarını da biliyorduk.
+
+130
+00:30:08,087 --> 00:30:11,847
+Buradan BOS'u hesapladık.
+
+131
+00:30:14,747 --> 00:30:17,587
+İşlemin devam eden kısmında...
+
+132
+00:30:17,811 --> 00:30:24,311
+İşte tüm örnekler için bu loss hesaplanıyor.
+
+133
+00:30:24,311 --> 00:30:29,311
+And full training loss is the mean over all examples demiş.
+
+134
+00:30:30,132 --> 00:30:48,132
+I eşit 1'den M'e kadar buradaki M değeri tüm training sampullarını gösteriyor. Kaç tane eğitim örneği varsa. Her biri için üretmiş olduğumuz LOS değerini toplayıp bir ortalama hesaplıyor ve burada ortalama LOS'u 4.6 olarak bulmuş.
+
+135
+00:30:58,064 --> 00:31:15,124
+Aslında çok pratik yapmış, benim çok hoşuma gitti burada verdiği şey. X vektörü Y ve W maddesini input olarak veriyor. W ile X'i dot product'unu almış şurada.
+
+136
+00:31:19,251 --> 00:31:39,251
+Daha sonra, şurada, skor eksi, skor y artı bir işleminin sıfırla karşılaştırılması ve maksimum alınması işlemi var. Ama bunu aslında, skor vektörünün tüm birleşenleri için yapıyor.
+
+137
+00:31:41,251 --> 00:31:42,187
+Sonra,
+
+138
+00:31:42,355 --> 00:31:55,655
+Sadece ilgili Y gözünün, yani class label'ın olduğu gözü sıfırlıyor. Yani onu çünkü ne demiştik, formülü hatırlarsanız, gerçek sınıf dışındaki her bir sınıf için işlenmiş olur.
+
+139
+00:31:56,056 --> 00:32:03,576
+Aslında skoru o sınıf içinde evde ediyor ama sonra onun yerine sıfır yazarak orayı dışarıda bırakmış oluyor. Çünkü arkasından sandık.
+
+140
+00:32:03,859 --> 00:32:11,059
+Ya da ortalama alacak bu işlem için böyle kesilme bir yol yapmış, güzel yapmış, beğenmiş.
+
+141
+00:32:14,548 --> 00:32:27,048
+Biz burada neyi görmüş olduk? Aslında bir eğitim örneği için LOST nasıl hesaplanır? Ya eğitim data seti için ortalama LOST nasıl hesaplanır? Bunu görmüş olduk.
+
+142
+00:32:27,327 --> 00:32:40,687
+Sonraki adımda da artık neye geçmemiz gerekti? Evet, LOST'u biliyoruz. LOST'u minimize etmek için. Şuradaki LW dediği şey. LOST aslında W'ye bağlı. W değişken burada.
+
+143
+00:32:41,715 --> 00:32:59,295
+Bunu minimize etmek için W'ye göre bunun türevini alıyor. Buradaki türev işleminde sağ tarafta gördüğüm gibi şu W'ye göre türev işlemini alarak.
+
+144
+00:32:59,663 --> 00:33:12,284
+Aslında yapmak istediğimiz şey, stokastik gladiyen misal dediğimiz bir yaklaşım ile hatayı minimize edip en optimum yoldan W matrisini elde etmek.
+
+145
+00:33:12,284 --> 00:33:23,324
+Şimdi bununla ilgili ben buraya biraz şeyler ekledim. Bunları lütfen siz okuyun. Zaten herhalde başka derslerde de anlatılıyordur.
+
+146
+00:33:23,680 --> 00:33:36,680
+Stokastik Gradient Lisend yöntemine daha sonra bir takım yeni eklemeler ya da iyileştirmeler yapılarak bunlara bir momentum ekleme.
+
+147
+00:33:36,680 --> 00:33:43,680
+İşte bu da Edit Element dediğimiz Adagraph yöntemi.
+
+148
+00:33:44,435 --> 00:33:57,235
+Son zamanlarda yaygın kullanılan Adaptive Moment Estimation, Edomount Optimizer dediğimiz yöntemleri burada özetlemiş oluyor.
+
+149
+00:33:57,235 --> 00:34:07,036
+Bunların Python kodları ile birlikte burada verilmiş. Amacımız şu, baktığımız zaman
+
+150
+00:34:07,284 --> 00:34:32,844
+Her iplirasyonda şöyle görmüş olduğumuz reynin dosu gösteriyor. Maviyle verilmiş noktalar. Yatay eksende de bizim epoklarımız var. Bunun yavaş yavaş bir düşme eğilimi içerisinde olması beklediğimiz şey. Ama sağ tarafta verdiğimiz grafikte de
+
+151
+00:34:32,980 --> 00:34:45,239
+Eccurisy'yi göstermiş. Mavi ile verilmiş olan grafik eğitim datası için doğruluğu gösteriyor. Eccurisy'yi gösteriyor.
+
+152
+00:34:45,239 --> 00:34:58,239
+Ve EpoC sayısı arttıkça, gördüğünüz gibi Training Beta için Eccurisy artıyor. Ancak diğer tarafta validasyon datası için...
+
+153
+00:34:58,452 --> 00:35:25,652
+Vermiş olduğu grafiğe baktığımızda aslında çok da büyük bir artış göstermediğini söylüyor. Bizim amacımız eğitim örnekleri ile validasyon ya da test datası arasındaki bu uçurumu azaltmak, bunları birbirine yaklaştırmak.
+
+154
+00:35:26,068 --> 00:35:50,728
+Bu aradaki aralığın büyüyor olması bir problem. Bunun nedenleri konuşulabilir. Bu bir overfitting problemi olabilir. Bunun üstesinden gelmek için eğitim datasını arttırmak bir yol olabilir. Yani aşırı öğrenme problemi dediğimiz bir problemden de kaynaklanıyor olabilir.
+
+155
+00:35:51,699 --> 00:36:11,659
+Bunun üstesinden gelmek için, yani şu gepi düşürmek için dersin kalan bölümünde anlatacağımız kavramlar, mesela Loss fonksiyonuna regularization term dediği yeni bir terim ekliyor.
+
+156
+00:36:18,228 --> 00:36:26,427
+SBM
+
+157
+00:36:26,427 --> 00:36:36,228
+Bu, bunun sonuna yeni bir terim ekleyip, regularization term dediğimiz terim ekleyerek aslında bu aşırı öğrenmek probleminin işlesinden gelmek mümkün diyor.
+
+158
+00:36:36,228 --> 00:36:45,996
+Şimdi, regularization term burada vermiş. Add term to loss function.
+
+159
+00:36:46,739 --> 00:37:07,619
+Bu bizim az önce vermiş olduğumuz, nereden başlıyor? Şuradan, şuraya kadar olan kısım. Aslında az önce görmüş olduğumuz SBM-LOS'u gösteriyor, doğru mu? Bu ifade değil mi? Sadece başına iyi eşit bir denene kadar ortalama ifadesi eklenmiş. SBM-LOS'u gösteriyor.
+
+160
+00:37:09,940 --> 00:37:14,800
+Şimdi buna...
+
+161
+00:37:23,347 --> 00:37:28,847
+Evet, orayı da almam gerekti. Şimdi onu fark ettim. Şöyle yapmamız değil mi?
+
+162
+00:37:28,847 --> 00:37:36,347
+Tamam. Çünkü şu matriz çarpımını gösteriyor. Bu aradaki gerçekle arasındaki fark artı 1.
+
+163
+00:37:36,347 --> 00:37:44,847
+SBM-Law ve şu da Regularization Term dediği terimi gösteriyor.
+
+164
+00:37:51,092 --> 00:37:58,492
+Regulatör denilmiş. Önce L1, L2 Regulatör denilmiş. L2 norm Regulatör denilmiş.
+
+165
+00:37:58,492 --> 00:38:10,192
+Şu W madresi var ya arkadaşlar, bizim Bekleri tuttuğumuz madres. Bunun karesini, bu madresin karesini alıp ekliyor.
+
+166
+00:38:14,643 --> 00:38:40,403
+Aslında hani bir normal şeyde de var, distance hesabında da var. Hatırlar mısınız? L1 normal distance, L2 normal distance dediğiniz. L1 normal regularization dediğinizde ise bu weight matrisin içerisindeki tüm değerlerini absolut değerlerine sokuyor diyebilirim. Nasıl? Nasıl?
+
+167
+00:38:42,579 --> 00:38:54,579
+Gibi, işte o distansta kullandığımız şeyi hatırlıyor musunuz? Demiştim ya. Benzer bir yapı. Şimdi öplük distanst gibi karelerini alma var, öbüründe ise mutlak değerini toplama var.
+
+168
+00:38:54,579 --> 00:39:05,099
+Tamam mı? Sonra en son gösterdiği ise elastik ne dediği örnekte lütfen dikkat ikisini bir arada kullanın.
+
+169
+00:39:05,588 --> 00:39:30,748
+Loss fonksiyonuna böyle bir terim ekliyorsunuz aslında. Yaptığımız iş bu. Burada ikisini bir arada kullanırken L2 Regularization Term'ün başına bir beta katsayısı koymuş. Şuradaki L1 Regularization Term'in terimini doğrulan ediyoruz.
+
+170
+00:39:31,860 --> 00:39:48,260
+Bu yaptığı şey. Ve elastikler daha başarılı sonuçlar döndürmüş. Yani bunlar in common use demiş, yaygın kullanılan formları olarak bunları sıkılamış.
+
+171
+00:39:56,371 --> 00:39:59,172
+Sonra dropout'a geçiyor. Bir ara verelim mi?
+
+172
+00:40:02,451 --> 00:40:04,291
+Ara verelim. Sınıf çok sıcak.
+
+173
+00:40:05,291 --> 00:40:08,771
+Bir uyuma ihtimalimiz var böyle doğulunca.
+
+174
+00:40:09,731 --> 00:40:11,291
+Ben şöyle yapayım.
+
+175
+00:40:12,731 --> 00:40:14,451
+Böyle şimdi durup durayım.
+
+176
+00:40:15,012 --> 00:40:19,251
+Üzlemi de kurmak kolay olmuyor. Çok senkron çalışıyoruz şu anda.
+
+177
+00:40:27,668 --> 00:40:37,027
+Nereye? Onları mı? Bilgisayardan. Tableti Enides ile bağlıyorum. Şöyle bağlamadım. Cuma bağlamadım.
+
+178
+00:40:40,947 --> 00:40:42,447
+10 dakika ara arkadaşlar.
+
+179
+00:55:39,251 --> 00:55:43,951
+Evet, online'de bulunan arkadaşlar kimler bilgisayarının başında elleri göreyim.
+
+180
+00:55:50,547 --> 00:55:54,707
+13 katılımcı er kaldırdı. Biz kaç kişiyiz?
+
+181
+00:55:59,188 --> 00:56:10,708
+21 kişiyiz. 15, 16, 17, 4 kişi yok. Biri ben, 3. Tamam, peki teşekkür ediyorum arkadaşlar.
+
+182
+00:56:41,139 --> 00:56:52,360
+Evet, şimdi regularization term, yani loss fonksiyonunun sonuna bir regularization term eklemek.
+
+183
+00:56:56,083 --> 00:57:15,884
+Overfitting'i engellemek için kullanılan yöntemlerden biri. O hızlı yakın sama ve o aradaki train datası ile validasyon arasındaki açıklığı kapatmak için kullandığımız yollardan biri. Bunlardan bir diğeri de dropout işlemi.
+
+184
+00:57:16,596 --> 00:57:37,835
+Buna şöyle bir örnek vermiş. Aslında lütfen şöyle düşünün. Burada Free Connected Layer'daki düğümler şu an bu katmanda gördüğünüz. Bir diğer Free Connected Layer katmanı bu.
+
+185
+00:57:38,356 --> 00:57:46,116
+Ve bir katman daha ve son olarak Alt-To burada vermiş ama tabi tek bir çıkış için örnek vermiş.
+
+186
+00:57:46,116 --> 00:57:55,076
+Free Connected Layer 1, Free Connected Layer 2, 3 gibi düşünebilirsiniz ya da Hidden Layer gibi.
+
+187
+00:57:55,076 --> 00:57:59,716
+Sağ tarafta ise bu Dropout işlemi için diyor ki,
+
+188
+00:58:04,052 --> 00:58:22,052
+Zero Point Fargo is Common. Ben eğer yüzde ellisini bu düğümlerin sileceğim diyorsam, burada gördüğünüz gibi içine çarpı atılmış düğümler, drop edilen düğümleri gösteriyor.
+
+189
+00:58:31,731 --> 00:58:45,731
+Dışarıda bırakıyor. Free Connected Layer'ın birinci katmanında dört tane nod vardı. Bunlarla ikisini dışarıda bıraktı, drop etti.
+
+190
+00:58:45,731 --> 00:58:57,731
+Bu katmanda da benzer şekilde içi çarpıyla kapatılmış olan iki tane dışarıda bırakılmış düğüm olduğunu görüyorsunuz.
+
+191
+00:58:59,188 --> 00:59:08,188
+Bunun için de belli denemeler yapıyor ve hangi düğümleri dışarıda bırakması gerektiğini deneyerek karar veriyor.
+
+192
+00:59:08,188 --> 00:59:16,188
+Bunun için de kodu vermiş ve ben bu kodları da aslında incelemek gerektiğini düşünüyorum.
+
+193
+00:59:16,188 --> 00:59:22,059
+Çünkü optimum kod yazma anlamında çok faydası var bunları incelememizde görmenin.
+
+194
+00:59:22,291 --> 00:59:31,291
+Burada W maddesiyle X vektörünü çarpıp Bayez'e eklediği satırı görüyorsunuz.
+
+195
+00:59:44,755 --> 00:59:54,435
+Random bir matriz hazırlıyor. Yine şey, U1 dediği bir matriz hazırlıyor ve bu.
+
+196
+00:59:59,411 --> 01:00:19,911
+Random sayı üreticinin ürettiği değerler, işte P dediğimiz, şurada 0.5 verilmiş, 0.5'den küçükse, büyükse 0 yazacak şekilde bir işlemden geçirerek bir şey üretiyor.
+
+197
+01:00:21,940 --> 01:00:33,940
+Matris üretiyor ve bunu da H1 ile çarparak şu işlemi çok daha böyle optimize hale getirmiş. Benim o yapı orada çok hoşuma gitmişti. O yüzden bunu da size göstermek istedim.
+
+198
+01:00:36,539 --> 01:00:48,940
+Aslında H1 burada bir vektör değil mi? Büyük harfle yazmış ama şurada çarpma işlemini yapıyor, maksimum yolunu seçiyor.
+
+199
+01:00:55,411 --> 01:01:02,251
+İlginç geldi. Oradaki işlemden önce yapmamız gerekecek diye düşündüm ama sıkıldama işlemini ondan sonra yapmış.
+
+200
+01:01:04,171 --> 01:01:06,951
+Evet, orada o sıkı üretmeyecek demek.
+
+201
+01:01:07,711 --> 01:01:09,531
+Sıkı üretecek demek.
+
+202
+01:01:11,371 --> 01:01:22,971
+Yani şu W maddesiyle ikisi çarptıktan sonra elde ettiği dektör üzerinden bunu yapıyor. Farkındaysanız şurada.
+
+203
+01:01:23,443 --> 01:01:25,823
+Doğru mu? Trop işlemini.
+
+204
+01:01:30,452 --> 01:01:34,291
+İki katmanda da bunları nasıl yaptığını burada göstermiş.
+
+205
+01:01:35,192 --> 01:01:41,972
+Benim gibi kod üzerinden de görmek ilginç ve pratik çözümler üretebiliyorlar.
+
+206
+01:01:41,972 --> 01:01:45,572
+Benzer işlemi burada tekrar şurada yapmış mesela.
+
+207
+01:01:45,572 --> 01:01:51,092
+O2 için random vektör hazırlıyor.
+
+208
+01:01:51,092 --> 01:01:54,692
+Bununla çarparak ödüyoruz.
+
+209
+01:02:00,788 --> 01:02:27,907
+Dropout bir işlemini de bir şey olarak vermiş. Bu da anlam yüklemeye çalışıyor. Aslında her düğümün öğrendiği bazı, ne diyelim, görüntü üzerinde öğrendiği bazı bölümler var diyor. Ve mesela düğümlerden bir tanesi, Tizen Ear, kulağı var mı, kuyruğu var mı, kürkü var mı gibi parametreleri aslında öğreniyor diyor.
+
+210
+01:02:28,384 --> 01:02:39,664
+Ve siz aslında bunlardan bazılarını kapatarak bu işlemde belli şeylere öncelik vermiş oluyorsunuz.
+
+211
+01:02:39,664 --> 01:02:53,604
+Yani kediyi öğrenmek için hangi parametreler daha önemli ya da başka bir hayvanı öğrenmek için hangi parametreler daha önemli gibi bakarak bir skor üretiyorsunuz.
+
+212
+01:02:57,076 --> 01:03:13,655
+Neden iyi bir fikir olduğunu tartışıyor. Drop-out işlemini denemeye değerliyor ve gerçekten işlem sonucunda da başarıyı arttırdığını görüyoruz.
+
+213
+01:03:28,563 --> 01:03:35,563
+Tabi burada yine bu da öğrenilmesi gereken bir parametre diyor. Onun ayrıca yorumlamış.
+
+214
+01:03:35,563 --> 01:03:50,883
+Çünkü %50 bir şey üreteceksek, yani diyümü drop edeceksek bunların değişik kombinasyonları var. Hangi kombinasyon daha iyi sunuşuyoruz?
+
+215
+01:03:50,996 --> 01:04:05,996
+Mutlaka'nın datası üzerinde deneyerek en iyi kombinasyonu yine orada aranmanız gerekiyor. Dolayısıyla bu da yine bir model parametriyesi olarak sisteme ekleniyor.
+
+216
+01:04:05,996 --> 01:04:17,867
+Bunun test time'da nasıl olması gerektiğini de düşünmek gerekiyor. Mesela bunun için güzel bir şey gelmiş bu arada.
+
+217
+01:04:17,972 --> 01:04:31,772
+Normalde train datasında yapmış olduğumuz drop out işlemi test aşamasında dışarıda bırakmamız gerekiyor tabii ki. Bu işlemi de burada belirtmiş.
+
+218
+01:04:34,832 --> 01:04:38,092
+At this time all neurons are active always demiş.
+
+219
+01:04:41,300 --> 01:04:50,000
+We must scale the activation so that for each neuron output at test time equal to expected output at training time.
+
+220
+01:04:51,320 --> 01:05:00,640
+Test sırasında az önce train datasında yapmış olduğumuz o drop-out satırlarının buradan çıkarıldığını gösteriyor.
+
+221
+01:05:00,640 --> 01:05:06,440
+Buradaki P parametresiyle sadece bir scale işlemi yaptığını söylüyor.
+
+222
+01:05:06,815 --> 01:05:18,815
+Öbüründe 0.5 oranında nöron siliyordu. Burada ise test sırasında bunu sadece böyle bir scale parametresi gibi kullanıyor.
+
+223
+01:05:20,815 --> 01:05:33,815
+Dropout summary'de, train işleminde yapmış olduğu dropout'ı aşağıda da predict tarafında yani test işleminde
+
+224
+01:05:33,972 --> 01:05:46,592
+Yapmış olduğu Scale işlemine karşılık geldiğini özet olarak burada belirtmiş.
+
+225
+01:05:56,788 --> 01:06:14,228
+Evet, büyümleri sildik. Ama onda da şunu söylüyor, hangilerini sileceksin? Yani bunu, çünkü yukarıda train işlemi sırasında öğrendi, belli bir oranda bir şeyi geliştirdi.
+
+226
+01:06:24,179 --> 01:06:31,839
+Şurada tekrar bakacak olursak. Yani bunu bir scale ile karşılığı olması gerekir. Nasıl?
+
+227
+01:06:31,839 --> 01:06:34,839
+P parametresi.
+
+228
+01:06:34,839 --> 01:06:48,899
+P parametresi, evet. Yani silme oranı vardı ya en başta. Probability of keeping a unit active. Şurada söylediğim kısımda. Zaten başta belli bilir. Onunla sağlıyor.
+
+229
+01:07:05,523 --> 01:07:11,523
+Ama bir skelle de onu bir karşılığını koymaya çalışıyor. Yani nasıl söyleyelim?
+
+230
+01:07:15,219 --> 01:07:29,719
+Yok, dropout oranında var. Yani sen %20 uniklediysen yukarıda, onu %20 olarak aşağıda çarpan olarak koyuyorsun. 0-1-2 olarak koyuyor.
+
+231
+01:07:33,940 --> 01:07:53,559
+Nasıl? Input'a mı yapıyor? Şey yapıyor. Burada Click Connected Layer da yapıyor. Click Connected Layer'ın output'unu üretirken hepsini bir P ile ölçeklendiriyor. Çöküyor.
+
+232
+01:08:11,507 --> 01:08:23,108
+Evet, doğru. Ama test aşamasında oradaki drop ettiği şeyleri kullanmıyor. Artık o büyümlerin hepsini kullanıyor. Doğru mu?
+
+233
+01:08:23,108 --> 01:08:23,608
+Evet.
+
+234
+01:08:23,608 --> 01:08:24,608
+Kullanıyor hepsi.
+
+235
+01:08:40,916 --> 01:08:56,275
+Bu regularization işlemindeki yaptığı şeye benziyor zaten o da. Orada da amaç zaten onu sağlamaktı. Bir loss fonksiyonuna bir regularization term eklemesi de o amaçla yapılmış bir işlem.
+
+236
+01:09:06,144 --> 01:09:13,963
+Vakıplı, geliştirdikleri bir şey de bu aşamada iyi sonuç veren çözümlerden biri.
+
+237
+01:09:13,963 --> 01:09:15,524
+Tabii.
+
+238
+01:09:26,931 --> 01:09:30,351
+Hepsini katıyoruz. Yani bütün düğünleri işleme arıyor.
+
+239
+01:10:06,003 --> 01:10:08,224
+Testteyken değişmemiş.
+
+240
+01:10:16,851 --> 01:10:27,072
+Yani eğitimde hep bir amaç şey diyoruz ya, ezberlemesinin önüne geçmek. Yani o aşamada kullanılması, testte kullanılmamasının belki açıklaması bu olabilir.
+
+241
+01:10:35,764 --> 01:10:47,184
+Bunların hepsi de regularization demiş. Yani aslında iyi öğrenmeyi sağlamak ve düzenleme yapmak amacıyla bir diğer işlem de data augmentation.
+
+242
+01:10:47,184 --> 01:10:59,924
+Biz loss fonksiyonuna bir terim ekledik. Bu bir çözüldü. İkincisi dropout dediğimiz işlemi yaptık. Yani belli düğünleri kapattık, sildik.
+
+243
+01:11:00,307 --> 01:11:07,288
+Üçüncü olarak da yine eğitimde Data Augmentation dediğimiz yöntem. Bunu zaten hepiniz biliyorsunuz.
+
+244
+01:11:07,288 --> 01:11:17,427
+Bunu sanmıyorum. Deep Learning'de modellerin iyi öğrenebilmesi için çok fazla sayıda örneğe ihtiyacımız var.
+
+245
+01:11:17,548 --> 01:11:24,288
+Bu çok fazla sayıda örneği sağlamanın bir yolu da elimizdeki var olan...
+
+246
+01:11:24,595 --> 01:11:31,235
+Etiketli veriyi eğip, büküp, içine acık yeni tük atıp vs. çoğaltmak yolu.
+
+247
+01:11:31,235 --> 01:11:34,835
+Yani Ögmentation'da yaptığımız işlem bu.
+
+248
+01:11:36,695 --> 01:11:43,995
+Veri miktarını arttırmak için kullanabileceğiniz Ögmentation metotları.
+
+249
+01:11:44,075 --> 01:11:47,395
+Burada Transform Image demiş. Bir mirror olarak.
+
+250
+01:11:48,948 --> 01:11:52,948
+Y'ye göre virülü olarak elde edebilirim.
+
+251
+01:11:52,948 --> 01:11:54,948
+Hoizan Kulli Filipe demiş.
+
+252
+01:12:01,268 --> 01:12:11,407
+Yine Data Admonition'da Random Clops and Scales demiş. Yani bu ölçek farklılıkları da yine kullanılan yöntemlerden biri.
+
+253
+01:12:13,507 --> 01:12:26,827
+Clops'la yapıp görüntüyü, farklı parçaları da sisteme vermek. Renk üzerinde değişik oynamalar yapmak. Bunlar yine kullanılan yöntemlerden.
+
+254
+01:12:28,307 --> 01:12:33,307
+Translation, bizim dersin ilk haftalarında gördüğümüz...
+
+255
+01:12:33,587 --> 01:12:57,827
+Affine Transform vardı, hatırlarsanız. Translation, Rotation, Scaling, burada Stretching, Shearing, farklı şekillerde uzatma, şeklme gibi yöntemleri ve Lens Distortion dediği takım çözümleri de yine Data Augmentation için kullanmak mümkün diyor.
+
+256
+01:13:01,587 --> 01:13:13,028
+Görüntü eklemek, farklı kütle görüntüleri yani piksel bazında görüntüye, yani görüntü ekleyerek bunu yine bozmak mümkün.
+
+257
+01:13:15,167 --> 01:13:17,927
+Evet, buraya kadarki bölüm.
+
+258
+01:13:21,171 --> 01:13:47,791
+Ayrı. Bundan sonraki bölümde ise transfer yönlükten kısaca bahsedeceğim. Artık hemen hemen her framework'ın bir hazır eğitilmiş modeli var. Bu hazır eğitilmiş modelleri ön eğitimi model diye, pretrain model diye kullanabiliyoruz ve elimizdeki var olan veriyle bunun üzerine bu öğrenmiş olduğu parametreleri en azından sıfırdan başlamak yerine.
+
+259
+01:13:48,404 --> 01:13:53,904
+Daha hızlı yakınlamasını sağlamak için parametreleri kullanmak mümkün.
+
+260
+01:13:55,904 --> 01:14:03,203
+Transfer Learning'de, you need a lot of data if you want to train with convolutional neural networks demiş.
+
+261
+01:14:03,884 --> 01:14:12,404
+Dediğim gibi, elimizde çok fazla veri ihtiyacımız var ama az miktarda verimiz varsa, işte bu tarz ön eğitimin ağları kullanarak...
+
+262
+01:14:12,927 --> 01:14:19,327
+Bu az örnekle de bir model geliştirmek mümkün.
+
+263
+01:14:19,327 --> 01:14:27,327
+Burada mesela ImageNet üzerinde eğitilmiş bir modelden bahsediyor.
+
+264
+01:14:27,327 --> 01:14:30,923
+Şöyle.
+
+265
+01:14:34,195 --> 01:14:46,456
+Giriş görüntüsünün verildiği katman, iki tane konvolisyon katmanı, bir Max-Burn işlemi, iki konvolisyon bir Max-Burn işlemi. Bunları blok olarak tekrarlamış.
+
+266
+01:14:46,456 --> 01:14:56,495
+Şurada iki tane, aslında iki tane free connective layer ve bir altive layer denilir. Bir model vermiş.
+
+267
+01:15:00,500 --> 01:15:10,500
+Bu modeli ben ImageNet ile eğittim ve daha sonra kendi elimde bulunan daha küçük bir dataset için kullanmak istiyorum.
+
+268
+01:15:10,500 --> 01:15:27,119
+Yaptığım işlem, Small Dataset C Classes demiş. Sınıf sayısı C'ye düştü ama buradaki sınıf sayısı ImageNet'te 1000 tane kategori olduğu için 1000 tane
+
+269
+01:15:27,119 --> 01:15:41,600
+Alkut üretiyordu. Benim çıkış katmanımda ise sadece C tanesini olacak. Dolayısıyla sadece şu bölümü Reinitialize, Freeze and Train demiş.
+
+270
+01:15:52,051 --> 01:16:02,051
+Çıkış katmanının olduğu bölümde C sınıf sayısı için bu güncellemeyi framework üzerinde yapıyor.
+
+271
+01:16:03,252 --> 01:16:16,671
+Eğer diyor ki daha büyük birimiz varsa, bigger day facet, daha büyük birimiz varsa bu durumda aslında şurada gördüğümüz
+
+272
+01:16:17,007 --> 01:16:26,608
+Click Connected Layer'ı içine alan bölümü bu yeni veri setiyle güncellemek mümkün.
+
+273
+01:16:26,608 --> 01:16:36,608
+Alt tarafta öz nitelikleri oluşturduğu CNN katmanını sadece freeze ediyor, donduruyor.
+
+274
+01:16:44,287 --> 01:16:54,787
+modeli eğitiyor ve bu parametreleri güncelliyor. Tabi yine sınıf sayısı ona göre düzenlenmiş olmalı.
+
+275
+01:16:56,387 --> 01:17:10,948
+Burada ben bir örneği vermiştim. AlexNet'in ilk mimari örneklerden biri. Arka arkaya kullandığı konvolisyon katmanlarını ve klikonet layarı.
+
+276
+01:17:11,471 --> 01:17:36,631
+Derste size kullandığımız filtre boyutlarıyla ilgili hesaplamaların nasıl yapıldığından bahsetmiştim. Seçtiğim filtre sayısı, filtre boyutları ve formüle göre üreteceğimiz alt tutum boyutunun ne olması gerektiği gibi. Bunları artık gözünüz kapalı yapabiliyor olmanız gerekir bence.
+
+277
+01:17:39,507 --> 01:17:45,347
+Bayramdan sonraki hafta yapacağımız test sınavında bu tarz böyle pratik sorular sorabilirim.
+
+278
+01:17:46,427 --> 01:17:54,288
+İşte giriş görüntüsü şöyle, şu alt türetmek için hangi boyutta filtre kullanmam gerekiyor?
+
+279
+01:17:55,208 --> 01:18:03,247
+Veya böyle bir filtre var, böyle bir input var, çıkış görüntüsü ne boyutta oluyor gibi, böyle değişik sorular sorabilirim.
+
+280
+01:18:04,368 --> 01:18:12,148
+Kolay biliyorsunuz artık. Parametre sayısı sorabilirim. Bu katmandaki parametre sayısı nedir diyebilirim.
+
+281
+01:18:12,148 --> 01:18:26,048
+Hani konvolisyon katmanında filtre boyutlarını vesaire verip kaç tane trainable parametre olacak gibi sorular yine sorabilirim.
+
+282
+01:18:27,444 --> 01:18:51,284
+Sonra mesela sorulardan giriş olabilir. Büyük komolyon işleminde büyük filtre mesela 7'ye 7, 9'a 9 gibi ya da 11-11 filtre kullanmakla, 2-3 filtre kullanmak arasında fark nedir? Yani arka arka yondan 3 defa yapsam gibi. Bunları derste tartışmıştık hatırlarsanız.
+
+283
+01:18:55,252 --> 01:19:04,012
+Sorabileceğim sorular. Sonra tabii bunlar hep konuştuğumuz deep learning ile ilgili konular. Ama biz bir de neleri yaptık?
+
+284
+01:19:05,992 --> 01:19:16,051
+Comprimision'ın geleneksel çözümleri, error detection'lar vesaireler. Oradaki konularla ilgili yine sorular sorabilirim.
+
+285
+01:19:16,752 --> 01:19:18,811
+Histogram işlemeden başladık.
+
+286
+01:19:19,572 --> 01:19:27,192
+Contrast Enhancement gibi bayağı çeşitli konularda uzun uzun konuştuk.
+
+287
+01:19:30,772 --> 01:19:42,192
+Mesela bir konvoyisyon işlemi için fit ve kat sayıları verip basit bir görüntü üzerinde bunun ne alp üreteceğini sorabilirim.
+
+288
+01:19:45,268 --> 01:19:58,387
+Başka? Böyle değişik değişik ama zor değil. Kolay hızlıca yapabileceğiniz sorular olacaktır bunlar. Sınav süresi bir saati geçmeyecektir. Hatta bir saatten kısa bile olma ihtimali olabilir.
+
+289
+01:20:02,648 --> 01:20:10,387
+Burada mesela nasıl? Soru sayısı 10, 10-15 civarı herhalde.
+
+290
+01:20:12,916 --> 01:20:32,336
+Kaçta? Öyle olmasını düşünüyorum. 13'de başlarız. Ama bir değişiklik olursa saatte siz haberdar edin. Ne tür değişiklik olabilir? Bir yarım saat geç başvuru satın diyebilirim. Ama haber vereyim onu size. Zaten haberleştiniz.
+
+291
+01:20:35,252 --> 01:20:43,252
+Mesela softmax katmanı. Bu softmax katmanında yapılan işlemi yani bir sporun bir...
+
+292
+01:20:45,235 --> 01:21:04,395
+Klikonected Layer'ın alt katmanında ürettiği skorların softmax çıkışında nasıl probability'ye dönüştürüldüğü sayısal olarak bir problem veririm. Bunun yüzdesel parçalığını softmax çıkışını yazın diyebilirim. Hesaplama var orada. Hatırlarsanız geçen hafta bahsetmiştim.
+
+293
+01:21:05,524 --> 01:21:12,844
+O işlem ile onun bir yüzde ifade şekline dönüştürmeniz gerekiyor.
+
+294
+01:21:21,171 --> 01:21:26,851
+Başka? Benim aklıma gelenler bunlar. Sormak istediğimiz herhangi bir şey var mıdır?
+
+295
+01:21:30,612 --> 01:21:38,152
+Hocam, kusura bakmayın söylediyseniz kaçırmış olabilirim ama testte online katılabilme şansımız olacak mı yoksa?
+
+296
+01:21:39,271 --> 01:21:45,612
+Tabii ki sınav zaten uzaktan olacak. Yani şeyde online Yıldız Edüterinin...
+
+297
+01:21:48,391 --> 01:21:56,012
+Siz oradan sınava gireceksiniz. Yani pandemide nasıl... Tabii yeni öğrenci olan arkadaşlar buradaki sistemi bilmiyor olabilir.
+
+298
+01:21:56,012 --> 01:21:57,512
+Evet.
+
+299
+01:21:58,292 --> 01:22:09,891
+Derse katılır gibi sınava katılıyorsunuz değil mi arkadaşlar? Öyle olması lazım. Toprak, sen hatırlıyor musun? Derse girer gibi giriyorsunuz. Ne?
+
+300
+01:22:17,891 --> 01:22:24,692
+Sisteme girince karşılaştı geliyormuş arkadaşlar. Ben hep hoca tarafında soru hazırlayanım ya, öğrenci neymiş?
+
+301
+01:22:25,555 --> 01:22:27,315
+Tamam hocam, teşekkür ederim.
+
+302
+01:22:27,315 --> 01:22:30,835
+Arkadaşlara sordum, şu ekranı değil mi?
+
+303
+01:22:33,835 --> 01:22:35,635
+YouTube Online'dan mı?
+
+304
+01:22:56,467 --> 01:22:58,467
+İklam, buradan giriyorsunuz.
+
+305
+01:23:16,851 --> 01:23:18,851
+Şu anda açık olan...
+
+306
+01:23:22,036 --> 01:23:23,836
+Hocam sesiniz gidiyordu.
+
+307
+01:23:23,836 --> 01:23:26,775
+Ne dediniz duyamadım.
+
+308
+01:23:27,076 --> 01:23:29,536
+Sesiniz gitti de tekrar söyleyebilir misiniz?
+
+309
+01:23:31,136 --> 01:23:40,036
+Şu ekrana girdiğiniz zaman online Yıldız Editör ekranına bu etkinlik akışı dediği sayfada çıkıyor zaten.
+
+310
+01:23:40,724 --> 01:23:49,764
+Mesela şu anda açık ödev 2 ve proje görünüyor. Burada sınav modülü görünüyor olacak. Şu turkuaz renkli bölümlerden birinde.
+
+311
+01:24:05,203 --> 01:24:10,163
+Yok, sizde öyle. Bence tufat çıkıyor. Ekranda farklı terde de farkı mı?
+
+312
+01:24:13,763 --> 01:24:28,823
+Bu haftalık bu kadar. Önümüzdeki hafta sınav var. Sınavdan sonraki hafta size iki farklı Deep Learning uygulaması ile ilgili bir unit mimarisi bir de şey gösterebilirim.
+
+313
+01:24:31,604 --> 01:24:37,584
+YOLO mimarilerini konuşabiliriz. Peki, görüşmek üzere, hoşçakalın.
+
+314
+01:24:38,984 --> 01:24:41,004
+İyi günler hocam. Teşekkür ederiz hocam.
+
+315
+01:24:41,244 --> 01:24:42,024
+Teşekkürler hocam.
+
+316
+01:24:42,304 --> 01:24:44,444
+İyi günler hocam. Teşekkürler hocam. Sağ olun.
+
+317
+01:24:44,444 --> 01:24:45,564
+Pardon.
+
+318
+01:24:47,344 --> 01:24:47,783
+Biris.
+
+319
+01:24:48,384 --> 01:24:49,304
+Evet.
+
+320
+01:24:51,024 --> 01:24:51,824
+Hayır.
+
+321
+01:24:52,756 --> 01:25:00,916
+Iris Segmentation'a ödev olarak verdim size. Sadece o konuyu yani böyle eniboydu düşünün, şey yapalım.
