@@ -1,0 +1,1747 @@
+1
+00:00:53,716 --> 00:00:57,756
+Hocam tamam ben girdim. İsterseniz siz ayrılabilirsiniz.
+
+2
+00:01:29,043 --> 00:01:33,123
+Arkadaşlar, merhabalar. Ses geliyor mu? Bir problem var mı?
+
+3
+00:01:39,188 --> 00:01:51,468
+Ses geliyor mu? Geliyor, tamam. Biraz gecikme yaşadık. Biz sistemde sıkıntı yaşadık. O yüzden onunla uğraştık. Şu an tamamız herhalde.
+
+4
+00:02:10,963 --> 00:02:11,984
+Bunu paylaşalım.
+
+5
+00:02:21,747 --> 00:02:27,667
+Evet arkadaşlar, başlayalım. Yeteri kadar zaten geç kaldık ve bekleme yaşadık bu yüzden.
+
+6
+00:02:28,927 --> 00:02:36,787
+Geçen hafta ne yaptık? Oradan tekrar bir özet geçelim. Geçen hafta Boole cebri, Boole matematiğiyle alakalı bir giriş yapmıştık.
+
+7
+00:02:36,787 --> 00:02:42,407
+Aksiyonlar ve töremlere denmiştik. Esasında yapmak istediğimiz şey şuydu.
+
+8
+00:02:43,891 --> 00:03:06,311
+Bunları anlatmıştım değil mi arkadaşlar? Şimdi hem yüz yüze hem online olunca biraz böyle karışabiliyor. En son ben şurada kaldığımızı hatırlıyorum. Eğer yanlış hatırlıyorsam lütfen söyleyin. En son şu örneği yaptığımızı hatırlıyorum. Sadeleştirme örneğini. Ve bunu işte Demorgan kanunlarına göre.
+
+9
+00:03:07,156 --> 00:03:22,076
+Nasıl yazıyoruz, nasıl sadeleştiriyoruz, bunları üzerinde yap, bunlarla alakalı örnek çözdüğümüzü hatırlıyorum. Doğru mu acaba? Değil mi arkadaşlar? Bunları işledik yani şöyle geriye doğru gidelim.
+
+10
+00:03:26,003 --> 00:03:28,764
+Bu doğruluk tablosunu vesaire anlattık değil mi?
+
+11
+00:03:31,384 --> 00:03:37,923
+Lojik diagramını nasıl elde ettiğimizi, Boole cebri nasıl bulduğumuzu vesaire bunları anlattığımızı ben hatırlıyorum.
+
+12
+00:03:39,903 --> 00:03:43,223
+Bu teoremlere değinmiştik diye hatırlıyorum.
+
+13
+00:03:49,012 --> 00:03:53,551
+Bunları anlattım değil mi arkadaşlar? Bir dönük verirseniz.
+
+14
+00:03:58,707 --> 00:04:25,708
+Evet, tamam, teşekkür ederiz [öğrenci]. Bunları anlattım. İşte öncelik, işlem önceliğinden bahsettik. Aslında bu cebri bizim için önemli bir cebirdi. Şu yüzden bir sözler problem olsun veya size verilmiş bir lojik diagram olsun, bir lojik devre tasarımı olsun, bunlar aslında daha sade, daha az kapı ve daha az elektronik veya işte lojik diagram...
+
+15
+00:04:26,387 --> 00:04:51,168
+Daha az komplekse sahip lojik diyagram ile gösterilebilir demiştik. Boole cebri normalde bir F fonksiyonunun, bir çıktı fonksiyonunun, bir lojik problemin oluşması için gerekli olan hesaplanmış bir o fonksiyonunun Boole cebri sayesinde daha sade bir şeklinde gösterilmesi, matematikist olarak işlemlerle bunu yapmamız mümkündü demiştik.
+
+16
+00:04:51,795 --> 00:04:59,975
+Ve burada bazı teoremlerden bahsettik. Bunların kanıtını, bunlar nasıl bulunuyor, bunlara değinmiştik.
+
+17
+00:05:01,043 --> 00:05:16,144
+Ve hepsinde de arka planda aslında V veya kapılarının, tümleyen kapısının, bu üç kapının veya bu üç lojik operatörün işlem, yani mantıksal yaklaşımları vardı demiştik.
+
+18
+00:05:16,144 --> 00:05:26,543
+İşte X mesela örnek verecek olursak, işte normalde bir önermenin birle orla endlenmesi, aslında o önermenin kendisini söyleyecekti.
+
+19
+00:05:27,063 --> 00:05:29,024
+Vesair bunlara değinmiştik.
+
+20
+00:05:29,043 --> 00:05:34,984
+Bunları izah ettiğimiz için geçiyorum.
+
+21
+00:05:36,063 --> 00:05:40,103
+Hatta örnek yapmadık herhalde sizde, yanlış hatırlamıyorsam.
+
+22
+00:05:40,183 --> 00:05:44,543
+Bir iki örnek yapalım isterseniz, ondan sonra şu şeye geçelim.
+
+23
+00:05:46,084 --> 00:05:47,323
+Bunları izah ettik.
+
+24
+00:05:48,624 --> 00:05:51,043
+Canonical formlara sonra geçelim.
+
+25
+00:05:51,043 --> 00:05:52,764
+Bir örnek alıyorum.
+
+26
+00:06:27,668 --> 00:06:39,947
+Evet, bir iki örnek yapalım arkadaşlar. Ben soruyu yazacağım. Sizden biraz vakit bekleyeceğim. Sizin yapmanızı, uğraşmanızı isteyeceğim. Sonra işte yapmak isteyen kalemi vereceğim. Yapacak.
+
+27
+00:06:43,908 --> 00:06:45,968
+Biraz yukarıya yazdık, pardon.
+
+28
+00:07:05,300 --> 00:07:22,100
+Evet, bunun sade formu ne olabilir? Biraz uğraşalım. Teoremleri tekrardan bir hatırlayalım hızlıca, nasıl yapılıyor üzerinde. Biraz uğraşalım arkadaşlar. Sizden yapmanızı isteyeceğim bunu.
+
+29
+00:07:44,148 --> 00:07:47,427
+Yapmak isteyen varsa, el kaldırabilir arkadaşlar.
+
+30
+00:07:55,923 --> 00:07:58,644
+Size bir iki dakika vereceğim, sonra size...
+
+31
+00:08:37,395 --> 00:08:39,555
+Evet arkadaşlar, var mı yapmak isteyenler?
+
+32
+00:08:45,427 --> 00:08:48,947
+Size yetki verebiliyorum. Kalemle yapabilirsiniz.
+
+33
+00:09:10,035 --> 00:09:13,215
+Yok mu yapacak arkadaşlar? Bunları unuttuk mu?
+
+34
+00:09:36,532 --> 00:10:03,751
+O zaman bu örneği çözüp arkadaşlar yeni konuya geçiyorum. Belli ki çok alakalı değilsiniz. Lütfen bununla çalışıyoruz. Bu konuda kesinlikle örnek, soru vs. çözüyoruz. Çözmemiz gerekiyor. Çözüyorsanız tamam bekleyelim. Hani bir dönük alamayınca. Çözüm bu mu? Çözüm sanki doğru değil gibi ama bir bakarız.
+
+35
+00:10:05,076 --> 00:10:06,475
+İntroş
+
+36
+00:10:12,851 --> 00:10:14,572
+Yani ne yapmamız beklidir?
+
+37
+00:10:14,572 --> 00:10:16,011
+Bir ne yazmadım?
+
+38
+00:10:17,892 --> 00:10:19,491
+Adım adım yapalım.
+
+39
+00:10:24,307 --> 00:10:33,948
+Şunu şuraya dağıtarak zaten elde ettik değil mi? Sonra buraya baktığımızda B değil, ortak parantezinden alabiliriz. Değil mi? Aronun.
+
+40
+00:10:38,803 --> 00:10:53,803
+Artı A, artı A, C, D değil geldi. Şimdi burada şunu görmek lazım arkadaşlar. Şu kısım var ya, bu kısmı unutmadıysanız eğer, şu ara alt...
+
+41
+00:10:54,035 --> 00:10:57,755
+A artının dağıtma özelliğiyle açabilirdik.
+
+42
+00:10:58,635 --> 00:11:02,875
+Bunun kestirmeden bir cevabı, bir şey var.
+
+43
+00:11:03,155 --> 00:11:09,995
+Yani bir çıkacak olan değerin ne olacağı belli ama bu mantıkla oturtturmak daha doğru olabilir.
+
+44
+00:11:11,755 --> 00:11:17,215
+Şöyle yaparsanız A artı A değil, bize zaten bir verecektir ve O olmayacak.
+
+45
+00:11:17,715 --> 00:11:19,895
+A artı C değil gelecek buradan sahile.
+
+46
+00:11:24,980 --> 00:11:30,259
+D gelecek ve bunu da dağıtırsak, sen bakayım bunu söylememişsin, evet.
+
+47
+00:11:31,059 --> 00:11:40,279
+Bunu da dağıtırsak, B, A, artı C değil, B değil, artı, A, C, D gelecek diyeceğiz.
+
+48
+00:11:43,639 --> 00:11:51,680
+Buradan da daha çok gitmiyor. Hani tam ortak bandizan alıp B değilden A artı C yaparız ama yani.
+
+49
+00:11:52,340 --> 00:11:53,740
+Çok da bir yere gitmez orada.
+
+50
+00:11:58,196 --> 00:11:59,975
+Başka bir örnek daha yapıyorum.
+
+51
+00:12:00,175 --> 00:12:01,076
+Orası şimdi lütfen.
+
+52
+00:12:05,011 --> 00:12:05,991
+Bu akarın.
+
+53
+00:12:09,524 --> 00:12:10,364
+Şunu yapalım.
+
+54
+00:12:25,043 --> 00:12:27,403
+Evet, bu ne olur? Bu ne olur arkadaşlar?
+
+55
+00:14:00,724 --> 00:14:06,944
+A değil, A artı B mi? [öğrenci] yine bir yerde yanlışın var sanki. O kadar.
+
+56
+00:14:10,944 --> 00:14:21,663
+Evet. Amerika. Artık doğru mu telaffuz ettim bilmiyorum. Yapabilirsin, sana etkiyi vermeye çalışayım.
+
+57
+00:14:31,892 --> 00:14:34,451
+İzhani, şuan, sende eukera da.
+
+58
+00:15:57,716 --> 00:16:09,016
+Evet. Doğrudur. Şunu da görmekte fayda var arkadaşlar. Şu tarz hani, bir dakika, şu artıydı.
+
+59
+00:16:10,016 --> 00:16:20,975
+OR işlemi, yani bir tarafta OR'un inputlarından biri, bir taraftaki inputun içerisinde tümleyen şeklinde varsa, zaten şunun dağılma özelliğinden
+
+60
+00:16:21,491 --> 00:16:30,951
+Şuradaki A'yı sileceği için direkt bunu ezberlemek belki mantıklı değil ama şunu silip şu şekilde de yazabiliriz değil mi?
+
+61
+00:16:31,531 --> 00:16:42,231
+Bu bilgiyi de kullanabilirsiniz sonraki başka bir şeylerde ve bunu, şöyle üçünü birden dağıttı arkadaşınız ama belki de sadece B, C, A'yı ve B, C, C'deydi yazmak.
+
+62
+00:16:42,371 --> 00:16:48,211
+Şurası yine gidecekti ama şundan olmayacaktı yani boş yere şuradaki A gittiği için.
+
+63
+00:16:48,624 --> 00:16:55,084
+Ama tabii bu da şu an dağıttığı için onları zaten öteki tarafta olduğundan dolayı götürdü.
+
+64
+00:16:57,004 --> 00:17:06,503
+Ama mesela burada A değil de D olsaydı, bu AA'a gitmeyeceği için ekstra bir sonraki cycle'da başka bir şey yapması gerekecekti.
+
+65
+00:17:07,163 --> 00:17:10,344
+Ama yani şunu ilk başta görmek belki faydalı olur.
+
+66
+00:17:12,084 --> 00:17:23,423
+Tamam herhalde arkadaşlar, bu haftaki konuya geçelim. Bunlarla alakalı kesinlikle örnek sorular çözün. Çünkü bu kesinlikle gelecek bir konu.
+
+67
+00:17:27,635 --> 00:17:33,235
+Bir de seninkini silinir.
+
+68
+00:17:43,731 --> 00:17:51,851
+Evet, bugünkü konumuza geçelim arkadaşlar. Şimdi canonical form dediğimiz bir yapı var. Ona değineceğiz bugün. Niye kalem gelmiyor?
+
+69
+00:17:55,791 --> 00:17:59,851
+Nedir, ne değildir buna bakacağız. Sonra bunlar iki tane...
+
+70
+00:18:00,096 --> 00:18:22,956
+Canonical formumuz var. Bir tanesi minterm diye tabir ettiğimiz bir de maxterm diye tabir ettiğimiz iki gösterimde olacak. Bunların minterm ve maxtermlerin indeks bilgileri yani biz bir f fonksiyonu minterm ve maxterm şeklinde yazabileceğiz ve bunu yazarken indekslerine bakarak yazacağız. Onu göstereceğiz. Bu mintermleri ve maxtermlerin
+
+71
+00:18:23,347 --> 00:18:47,028
+Birden fazla f'in bir olduğu doğruluk tablolarında birleşik gösterimi söz konusu olacak ve biz buna sum of minterm yani som gösterimi bir de product of maxterm diye tablerttiğimiz pom gösterimiyle bütün bir probleme dayalı oluşturulmuş doğruluk tablosundaki bütün f'lerin kombinasyonunu bir f fonksiyonuyla göstereceğiz.
+
+72
+00:18:49,076 --> 00:18:56,615
+Ve bunların birbirine olan türevlerinden, yani birbirlerinin aslında birbirinin tümleyeni olduğundan bahsedeceğiz.
+
+73
+00:18:56,615 --> 00:19:06,456
+Şimdi canonical form diye tabir ettiğim şey aslında bool bir fonksiyonu, hepsini bir açalım, bool olarak bir f fonksiyonunu,
+
+74
+00:19:06,836 --> 00:19:11,256
+Normalde belli bir standartta göstermemize yarayan bir format.
+
+75
+00:19:12,976 --> 00:19:19,256
+İşte bunu çıkartacağımız yer tabii her bütün F fonksiyonlarının çıkarttığımız yer olan doğruluk tablosu.
+
+76
+00:19:19,936 --> 00:19:25,096
+Doğruluk tablosuna bir daha değinecek olursak, istersen şu boş açılmadan bir daha değinelim.
+
+77
+00:19:25,215 --> 00:19:26,536
+Neydi doğruluk tablosu?
+
+78
+00:19:27,155 --> 00:19:32,695
+Truth Table diye bahsettiğimiz bir tabloydu doğruluk tablosu ve bize şunu söylüyordu.
+
+79
+00:19:33,596 --> 00:19:34,695
+Problemdeki bütün...
+
+80
+00:19:34,836 --> 00:19:59,376
+X, Y, Z daha da fazla olabilir. Hatta sola koyalım. Yani birden fazla olan giriş değişkenlerinden o devre, lojik diyagramı veya o problemin bize bu X, Y, Z değerlerindeki çıktısı nedir? Çıktı 1 veya 0 olabilirdi. Yani doğruluyor mu, doğrulamıyor mu, önerme doğru mudur, değil midir?
+
+81
+00:20:00,000 --> 00:20:02,599
+O F fonksiyonu bizim için çiftliydi.
+
+82
+00:20:03,099 --> 00:20:14,460
+Ve biz doğruluk tablosundaki sol input diye tabir ettiğimiz şurası bizim için bütün değerlerin kombinasyonunun test edilmesiydi.
+
+83
+00:20:14,640 --> 00:20:16,039
+Neye göre? Output'a göre.
+
+84
+00:20:17,236 --> 00:20:36,635
+Bu bütün kombinasyonu oluşturmak için bir yaklaşım var demiştik. 2 üzeri 0, 2 üzeri 1 ve 2 üzeri 2 diye tabir ettiğimiz 2 üzeri 0, 1, 2 ve 4 olarak o kadar adım boyunca buradaki değerin değişmediği şeklinde yazılıyor.
+
+85
+00:20:36,716 --> 00:20:43,695
+Mesela 2 üzeri 0, 1 demek. 0 ile başladım, değiştirdim. Her bir stepte değiştirdiğim şekilde yazıyorum.
+
+86
+00:20:44,084 --> 00:21:02,364
+0 ve 1'i değiştirerek yazdım. İkinci adımda 0'la başladım. 2 step aynı. Çünkü 2 üzer 1'den 2. 2 step farklı. 2 adım aynı. 2 adım farklı. Burada 4 adım aynı. 0'dan başlayarak. 4 adım farklı.
+
+87
+00:21:03,092 --> 00:21:14,632
+Şu an bütün kombinasyonların, yani bu üç değişkenin ait birbiri içerisindeki bütün kombinasyonun olabilecek durumun sergilendiği bir input tablosu var sol tarafta.
+
+88
+00:21:15,012 --> 00:21:21,972
+Ve bu kombinasyona göre soru da, yani laf sende bir soru olabilir veya bir fonksiyon da olabilir.
+
+89
+00:21:22,152 --> 00:21:26,432
+Misal bir f belindi, dendi ki x artı y z dendi.
+
+90
+00:21:27,539 --> 00:21:34,900
+Şimdi buna uyacak ve ben buradaki kombinasyonu buna uyarladığımda elde ettiğim F'i buraya yazacağım.
+
+91
+00:21:35,796 --> 00:21:48,256
+Örnek verelim 0, 0. Buradan 0 gelecek. B kapısı olduğu için. Y de 0'mış zaten. Buradan da OR'ladığımda F'in 0 olduğunu görüyorum. Bu birinci kombinasyonu test ettim.
+
+92
+00:21:48,776 --> 00:21:58,916
+Bu da mesela Y, Z. Şimdi buradan direkt şu anlam çıkabilir aslında. OR kapısı olduğu için arada X'in benim 1 iken kesinlikle bu F fonksiyon 1 çıkacak zaten.
+
+93
+00:21:59,316 --> 00:22:26,615
+Yani şuraları ben 1, 1, 1, 1 yazabilirim. Değil mi? Çünkü X'in 1 olduğu durumlarda kesin 1 çıkacak. X'in 0 olduğu durumlarda da Y, Z'nin end kapısı olduğu için 1, 1 durumla bakmam lazım. Ve diğer bütün durumlarda 0 olan bir F fonksiyonundan bahsediyorum. Doğruluk tablosu bunu söylüyordu bize. Şimdi doğruluk tablosunu biz şu an bir F fonksiyonuna göre hazırlamış olduk. Ama
+
+94
+00:22:27,092 --> 00:22:37,452
+Canonical formlar bunu belli bir standarda sokacak. İşte bu F fonksiyonunu böyle göstermeyeceğiz. 3 değişkenin içerisinde bulunduğu şekliyle göstereceğiz.
+
+95
+00:22:38,067 --> 00:22:44,887
+Ve biz bunu normalde F fonksiyonu bir matematiksel fonksiyon gibi yazıyoruz ama biz bunu değişkenlerle gösterebileceğiz.
+
+96
+00:22:45,288 --> 00:22:50,907
+Veya tersten düşünelim, değişkenlerin verildiğini formülece edebileceğimiz bir yapıdır.
+
+97
+00:22:51,947 --> 00:22:55,347
+İki tane var, minterm ve maxtermler.
+
+98
+00:22:55,347 --> 00:22:59,187
+Şimdi minterm, şurayı bir silelim yere.
+
+99
+00:23:03,988 --> 00:23:08,148
+Boole cebri göstereceğimiz bir gösterim tarzı demiştik.
+
+100
+00:23:15,859 --> 00:23:28,859
+Peki neden biz bu kanonikasyon forma geçiyoruz? Şu yüzden. Şimdi iki devre var. İki tane dizayn edilmiş de olabilir veya iki tane F fonksiyonu var. Bu F fonksiyonu birbiri arasında kıyaslanabilmesi için
+
+101
+00:23:29,200 --> 00:23:57,200
+Bütün iki F fonksiyonunda açılmış şekliyle, yani içerisinde demin misal X artı Y, Z dedik ama burada Y, Z yok, burada da X yok hani iki tabirde. Hani bunları açılmış bir şekilde yazabilip işte başka bir devreyle Y artı Z ile kıyaslayabilmek için, şu an misal ikisini kıyaslayamıyorum hangisi daha kompleks diye. Çünkü yani düz mantıkla bunda iki kapı var, bunda da bir kapı var.
+
+102
+00:23:57,200 --> 00:24:11,940
+deyip kıyaslayabiliriz ama iki devre birbirine eşit mi değil mi kıyaslayamıyoruz. İkisini de canonical formda açarak açılmış şekillerini kıyaslayabiliriz. Biri bunun için lazım. İki de doğruluk tablosunda birebir kıyası olsun diye.
+
+103
+00:24:12,039 --> 00:24:24,720
+Mesela bunun birebir kıyası yok doğruluk tablosunda. Yani şunu bir yapan birden fazla değer var. Ama canonical formlarda biz her bir törme bir F fonksiyonu uyarlamış olacağız.
+
+104
+00:24:25,200 --> 00:24:31,180
+Doğru tablosunda birebir karşılığı olacak. Her bir tabirin, terimin.
+
+105
+00:24:33,400 --> 00:24:40,660
+İki şekilde kanalikalı formlar iki kullanımda kullanılıyor. İki gösterimde kullanılıyor diyelim.
+
+106
+00:24:40,760 --> 00:24:51,000
+Biri son diye tabi ettiğimiz sum of minterms, yani mintermslerin toplamı, bir adeti de maxtermslerin çarpımı şeklinde.
+
+107
+00:24:51,892 --> 00:24:57,632
+kullanılacak, kanunikul formlar. Burada zaten minterm ve maxterm, kanunikul gösterimler olacak bizim için.
+
+108
+00:24:58,072 --> 00:25:04,672
+Bunların bütün bir F fonksiyonu, şimdi dedik biz termden geliyor, yani bir adet ibare.
+
+109
+00:25:05,491 --> 00:25:26,032
+Şimdi orada birden fazla F'de bir değeri vardı deminki doğrult tablosunda. İşte o birden fazla birilerinin her birini biz minterm veya maxtermde gösterebileceğiz. Tekrar yazalım şuraya bir doğrult tablosunu, X, Y, Z, F. Demin hatırlarsanız, şuraları şöyle yazalım. Hepsini yazmayacağım.
+
+110
+00:25:31,988 --> 00:25:39,347
+Daha gidiyor tabii bu aşağıya. Ama hatırlarsanız şuralar sıfırdır, şuralar bir. Burada birden fazla bir var.
+
+111
+00:25:39,807 --> 00:25:49,248
+Canonical form veya minterm veya maxterm ile yazarken biz bunun her bir bire tekabül gelecek bir f fonksiyonu, f alt fonksiyonu yazacağız.
+
+112
+00:25:49,248 --> 00:25:55,128
+Ve bizim için genel olarak f'i tabir eden bu alt fonksiyonların birleşimi,
+
+113
+00:25:55,604 --> 00:26:23,604
+İki farklı birleşim gösterimiyle ya somla göstereceğiz ya pomla göstereceğiz. Yani ya sum of buradaki törmülajıları ya da product of max törmlerini kanıklı gösterimde ürettiğimiz min törm veya max törmlerin ya sum'ını toplamını ya da çarpımını şeklinde f fonksiyonumuzu oluşturacağız. Nasıl bir f fonksiyonu? Sadeleşmemiş, genelleşmiş bir f fonksiyonu. Yani bu cebriğine çok...
+
+114
+00:26:23,604 --> 00:26:27,484
+yani Boole cebri yapılabilecek F fonksiyonunu üretmiş olacağız.
+
+115
+00:26:29,244 --> 00:26:32,584
+Canonical formların gösterimi bu yüzden önemli.
+
+116
+00:26:32,744 --> 00:26:40,663
+Çünkü sadeleşmemiş iki devrimin F fonksiyonunu fiyaslamak ve doğrult tablosunda birebir oturtturmak için kullanılıyor.
+
+117
+00:26:41,584 --> 00:26:46,484
+Mintermlerden bahsedeceğiz. Mintermler aslında her bir değişkenin
+
+118
+00:26:47,092 --> 00:26:59,692
+O F fonksiyonu, deminki F fonksiyonunu V kapılarıyla üretmek demek. Örnek verecek olursak, direkt örnek üzerinden, 2'ye 2, yani daha doğrusu 2 değişkenli X ve Y olan,
+
+119
+00:27:01,791 --> 00:27:21,191
+X, Y ve Y olan iki değişkenli bir F fonksiyonunda X, Y, X, Y değil, X değil, Y veya X değil, Y değil olasılıklarının kombinasyonlarını olduğunu düşünelim. Bunların gösterimi arada çarpı şeklinde. Aslında bizim şu ana kadar yaptığımız şey bu, minterm.
+
+120
+00:27:21,683 --> 00:27:30,063
+Her bir f fonksiyonunda bire tekabül gelen değişkene bağlı f fonksiyonu çarpı şeklinde gösterilmesi bizim için minüt.
+
+121
+00:27:30,063 --> 00:27:43,503
+Deminki örneği tekrar yazalım. X, Y, Z ve f fonksiyonumuz var. Ana f fonksiyonumuz da şöyle bir şeydi zaten. Evet. Şuraya yazalım.
+
+122
+00:27:59,092 --> 00:28:20,672
+Evet, buydu ve burada da biz şöyle bir durum yazmıştık. Şu bir olacak, şunlar. Şimdi burada minterm dediğimiz şey, birilerin çarpı şeklinde yazılması. Yani benim için şu nedir? 0x değildir, değil mi? Çarpı y ve z'dir.
+
+123
+00:28:21,811 --> 00:28:36,091
+Şimdi baktığımızda X0, D'li 1 geldi, YZ'de 1, 1'den 1 verdi. Yani bu F fonksiyonun şu gösterimi benim için bunun, bu problemin şu satımına ait mintermüdür.
+
+124
+00:28:37,091 --> 00:28:38,771
+Şunu yazalım.
+
+125
+00:28:40,131 --> 00:28:42,571
+X, Y değil, Z.
+
+126
+00:28:44,692 --> 00:28:59,451
+Yanlış mı? Kaydırdım mı? Evet, kaydırdım. Şurası X, Y değil, Z bir artı. Şurası X, Y, Z değil. En altı da X, Y, Z bir artı.
+
+127
+00:28:59,451 --> 00:29:04,232
+Mesela bunların her biri minterm gösterimi demek oluyor şu an.
+
+128
+00:29:04,692 --> 00:29:11,092
+Deminki şu ana F fonksiyonu bu doğruluk tablosunu gösteriyor, çalışma prensibini.
+
+129
+00:29:11,511 --> 00:29:19,632
+Ama her bir olası durumdaki bir olma durumunun ayrıksa gösterimi benim için minterm'dür diyeceğim.
+
+130
+00:29:20,071 --> 00:29:21,731
+Bunlar mintermleri oluşturacak.
+
+131
+00:29:22,991 --> 00:29:24,092
+Burada var mı bir problem?
+
+132
+00:29:27,152 --> 00:29:28,592
+Tamam, yok herhalde.
+
+133
+00:29:32,051 --> 00:29:49,591
+Kaç tane minterm, şunları da yazabiliriz. Burası için de X, Y, Z. Normalde gösterimi bu ama bir olmadığı için benim için anlamsız. Mintermler, birilerin ait olduğu satırların mintermleri vardır.
+
+134
+00:29:50,091 --> 00:30:00,000
+Çünkü ben F'i sıfır olan satırlarla ilgilenmem mintermlerden. Tamam mı? Minterm dediğimiz, yani mesela şu denklem.
+
+135
+00:30:00,000 --> 00:30:20,740
+mintermleri benim için birre takabül gelen x, y, z kombinasyonlarıdır. Bunları yazarken de x değil y, z, x, y değil z tarzında sıfırları değil, birileri normal şekliyle yazıyoruz, değişkeni normal şekliyle yazıyoruz, f fonksiyonunu oluştururken.
+
+136
+00:30:22,163 --> 00:30:27,784
+Mintermler bunlar. Maxtermler ise VA kapılarıyla yazılır arkadaşlar.
+
+137
+00:30:29,244 --> 00:30:32,824
+Ve aslında VA kapılarıyla yazılıp, nerede bu?
+
+138
+00:30:33,824 --> 00:30:38,084
+Aynı mantıkla değili veya normal eşitli yazılabilir.
+
+139
+00:30:38,264 --> 00:30:39,984
+Ama bir farklılık var.
+
+140
+00:30:41,183 --> 00:30:42,964
+Tekrar aynı şeyimizi buraya yazalım.
+
+141
+00:30:42,964 --> 00:30:44,964
+F fonksiyonumuzu.
+
+142
+00:30:57,811 --> 00:31:04,071
+Mümkün olduğunca düzgün yazmayı süreçiyorum ama arkadaşlar, tablette biraz sıkıntılı.
+
+143
+00:31:10,836 --> 00:31:16,056
+Evet, şimdi mat, şunu da yazalım, bir çıkışımız bizim şunlardı.
+
+144
+00:31:20,051 --> 00:31:35,751
+Evet, bir f-moksiyonun max törnerini yazmak için biz bu sefer sıfıra dikkat ederiz. Sıfırlar bizim için önemlidir, birler değil. Ve burada sıfır elde edeceğimiz şekilde veya kapılarıyla yazarız.
+
+145
+00:31:36,435 --> 00:31:50,595
+Misal, burada X artı Y artı Z şeklinde yazacağız. Ama bunun sıfıra vermesi lazım. E şu an ben, yani burada değillerini bu sefer normal yazacağım.
+
+146
+00:31:51,355 --> 00:31:57,495
+Ya bunun çıktısı bir olacak, yani tersten düşünün. Normal birileri değil şeklinde yazmam lazım.
+
+147
+00:32:01,203 --> 00:32:11,243
+Bir, değil şeklinde yazdım. Sıfıra düştü ve buradan sıfır elde ettim. X, Y, Z sıfır, yani bunların değillerini yazarsam, OR olduğu için bir gelir.
+
+148
+00:32:12,243 --> 00:32:18,723
+Bunu istemediğimizden, yani sıfıra hedeflediğimiz için sıfıra göre veya kapılarıyla yazılır.
+
+149
+00:32:18,723 --> 00:32:25,503
+Şuna bakalım, X artı Y değil, artı Z şeklinde yazacağım.
+
+150
+00:32:26,804 --> 00:32:31,044
+Ki işte f fonksiyonun şu değer geldiğinde sıfır olsun.
+
+151
+00:32:32,984 --> 00:32:37,484
+Bunlar da arkadaşlar maxtermlerdir diyeceğim.
+
+152
+00:32:38,524 --> 00:32:42,203
+Bu f fonksiyonuna ait doğruluk tablosundaki maxtermlerdir.
+
+153
+00:32:46,451 --> 00:32:51,651
+Birbiri arasındaki piyasa baktığımızda, işte indeks dediğimiz şey burada biraz öne geliyor.
+
+154
+00:32:53,151 --> 00:32:59,071
+İşte sıfırınca, yani iki taberi, iki değişkenli yapıda sıfır sıfırı kastediyoruz.
+
+155
+00:32:59,731 --> 00:33:03,791
+Sıfır biri, bir sıfırı ve bir bir durumunu kastediyoruz.
+
+156
+00:33:04,291 --> 00:33:07,271
+Minterm'lerini yazacağım vakit X değil, Y değil.
+
+157
+00:33:07,827 --> 00:33:32,587
+O AND kapısıyla 0, 1'i işte X değil Y, 1, 0'ı X, Y değil, ötekisini de 1, 1'i de X, Y şeklinde yazarken, öteki tarafta 0, 0'ı normal, hani 0'a değil şeklinde yazmamız AND kapısında, OR kapısında 1, yani kendisini almak üzere yapacağım ki 0 çıksın.
+
+158
+00:33:36,307 --> 00:33:48,227
+0, 0 üzerine gideceğiz. Burada da hedef 1 olacak şekilde bu denklemi yazmamız lazım. Turbleri oluşturabilmek için.
+
+159
+00:33:54,132 --> 00:33:58,231
+Bu indeksler bize neyi söylüyor? Zaten demin dediğim yer burası.
+
+160
+00:33:58,372 --> 00:34:07,092
+Bir işte minterm'e göre tümleyeni olmayan, 0 ise tümleyeni alınmış şekliyle değişkeni gösterir.
+
+161
+00:34:07,511 --> 00:34:11,492
+Maxterm'de de 0 kendisini bir tümleyenini gösterecek. Neden?
+
+162
+00:34:11,652 --> 00:34:20,632
+Çünkü burada OR işlemi var, burada AND işlemi var ve AND'in sonu burada 1 olmalı, burada OR'un sonu 0 olmalı.
+
+163
+00:34:27,795 --> 00:34:35,556
+Evet, mesela bir 3 değişkenli örnek düşünürsek, X, Y, Z değişkenliğinin ismi.
+
+164
+00:34:36,235 --> 00:34:52,815
+İndeks 0'ı normalde 10 tabanında, ikilik tabanında 0, 0, 0 olan o değer, 3 değişkenliği anlamda mintermde, yani çarpımları şeklinde yazacaksak, X değil, Y değil, Z değil şeklinde.
+
+165
+00:34:53,280 --> 00:35:12,860
+Ama maxterm'de yazacaksak, X, Y, Z şeklinde uygulamamız lazım. Minterm 0'ı biz ufak M0 şeklinde gösterebiliriz. Bu şu demek, minterm 0 benim için yani X değil, Y değil, Z'nin bu F fonksiyonunda olduğunu söyler.
+
+166
+00:35:12,860 --> 00:35:20,684
+Yani kısaca ben şunu yazmak yerine M0 yazabilirim.
+
+167
+00:35:20,947 --> 00:35:33,027
+Öteki tarafta da şunu yazmak yerine, veya şöyle diyebiliriz, X artı Y artı Z yazmak yerine, büyük M sıfır yazabilirim.
+
+168
+00:35:36,884 --> 00:35:38,144
+Aynı şeyi söyler.
+
+169
+00:35:40,564 --> 00:35:42,024
+Bu örnek için.
+
+170
+00:35:43,724 --> 00:35:48,064
+Peki sizce minterm 6 ve maxterm 6'yı nasıl yazarız?
+
+171
+00:35:57,204 --> 00:36:06,663
+Evet, nasıl yazarız arkadaşlar? X, Y, Z bandında nasıl yazarız? Minterm 6'yı ve Maxterm 6'yı.
+
+172
+00:36:14,547 --> 00:36:16,547
+min6x
+
+173
+00:36:19,147 --> 00:36:23,947
+Şimdi min6, arkadaşının yazdığını bir analiz edelim.
+
+174
+00:36:26,827 --> 00:36:41,747
+Şimdi bu bir kere minterm değil. Neden? Çünkü OR işlemi yaptığımız için minterm olmuyor. Bu maxterm ifadesi. Minterm için benim AND işlemi kullanmam lazım.
+
+175
+00:36:42,195 --> 00:37:02,895
+Aynen. Yani X çarpı Y çarpı diyorum ama AND yani Z. Şimdi bu birbir birden M7. M6 için ben birbir sıfır vermem lazım. Bu olacak. Maxterm için ise X artı Y artı Z olacak.
+
+176
+00:37:03,539 --> 00:37:16,380
+Ve bunun da tam tersini düşünmem lazım. Ya ben 1, 1, 0 geldiğinde OR işleminden 0 çıkaracak nasıl bir tümleyen alabilirim? Bunu düşünmem lazım.
+
+177
+00:37:16,380 --> 00:37:31,059
+Şimdi normalde 1, 1 geldiğinde 0 yaptım, Z de 0 geldi ve bunları OR'ladığımda 0 elde ettiğim için maxterm gösterimi de böyledir diyeceğim.
+
+178
+00:37:31,764 --> 00:37:45,483
+Ve bunu, sonra geleceğiz herhalde, evet. Bunu bu şekilde çözümlemiş olacağım. Yani bir problemde biz minterm ve maxterm vererek de değişkeni bulabiliriz. Değişkenin durumlarını.
+
+179
+00:37:47,104 --> 00:37:58,344
+İşte sıfır için zaten bunlara değinmiştik. Sıfır için hepsinin tüm neyini maxterm'de ise normali, birbiri için hepsinin kendisi maxterm'de ise
+
+180
+00:37:58,804 --> 00:38:09,344
+Aslında değil gibi yapacağız. Mesela burada da 1, 1, 0, 0'da A değil artı, B değil artı, C artı, D değil olacak. Değil mi?
+
+181
+00:38:09,344 --> 00:38:19,163
+Çünkü amacımız şu maxtermlerde sıfır üzerine kurgulamak, mintermlerde de bir üzerine kurgulamak olacak.
+
+182
+00:38:22,963 --> 00:38:48,903
+Aslında bu ikisi arasında, bu iki minterm, maxterm tabirler arasında bir bağıntı var. Nedir o bağıntıda? Demorgan bağıntısı. Yani aslında işte birbirinin tümleyenleri bunlar. X çarpı Y'nin tümleyeni X değil, artı Y değildir. Yani aslında X çarpı Y'nin tümleyeni, yani minterm'in tümleyeni, maxterm'in kendisi oluyor.
+
+183
+00:38:49,460 --> 00:39:13,500
+Veya maxterm'ün tümleyeni, minterm'ün kendisini ifade ediyor. Böyle olunca da aslında MİM, şu maxterm'ü büyük M ile gösteriyoruz, minterm'ü ufak M ile gösteriyoruz arkadaşlar. Minterm, iyinci minterm, benim için iyinci maxterm'ün tümleyenidir veya tam tersidir diyebileceğim.
+
+184
+00:39:16,083 --> 00:39:25,384
+Örnek, mesela bir f1 fonksiyonu bu şekilde verilebilir. Bu ne demek? Benim öyle bir f1 fonksiyonum var ki, yazalım hatta.
+
+185
+00:39:26,675 --> 00:39:40,435
+Birincisi, yani üç tane kapı, yani üç term var, minterm veya maxterm. Bu termlerin OR kapısıyla bağlanmış bir gösterim, F fonksiyonu.
+
+186
+00:39:40,775 --> 00:39:49,595
+M1 demiş, yani birinci indeksteki termüm, mintermüm ne? Onu düşüneceğim. X, Y, Z diyelim. X, Y, Z.
+
+187
+00:39:50,483 --> 00:39:59,683
+Ufak m yazdığı için minterm şeklinde end kapılarıyla yaptım ve birinci olduğu için de 001 verisi gelmesi lazım yaptım.
+
+188
+00:39:59,683 --> 00:40:05,563
+Artı xyz artı xyz diyelim.
+
+189
+00:40:06,547 --> 00:40:15,587
+Dördüncü tüm şeyimiz, şurası 1-0-0 olması lazım. O zaman Y ile Z'nin tümleyeni gelmesi lazım ki bir çıktısı versin.
+
+190
+00:40:16,127 --> 00:40:25,107
+Yedinci minterm'ün 1-1-1 olması lazım. Hepsini normal yazdım. Şu an benim F1 fonksiyonum aslında söylenen fonksiyon bu.
+
+191
+00:40:25,107 --> 00:40:33,327
+Bu daha sadeleşir mi? Sadeleşir. Bundan sonra Boole cebri de normal lojik diyagrama giden sürece sokabiliriz.
+
+192
+00:40:34,547 --> 00:40:38,067
+mintermlerinden bir f-moksiyonu çıkartmayı bu şekilde ayarlayabiliriz.
+
+193
+00:40:39,447 --> 00:40:42,707
+Bunun dışındaki bütün mintermler de sıfır üretecek.
+
+194
+00:40:43,807 --> 00:40:49,827
+Yani bütün o üç girişli kombinasyonla f-moksiyonumuz sıfır olduğunu söylüyor bu.
+
+195
+00:40:51,407 --> 00:40:52,527
+Buna göre ayarladık.
+
+196
+00:40:56,307 --> 00:41:12,028
+Başka bir tane örnek, 5 tane değişken var. İkisi 9'u, 17'si ve 23'ü tanımlanmış. 5 değişken, minterm dediği için yazdım. Ve ikisi olduğu için de diğerleri şöyle ayrı kısa.
+
+197
+00:41:14,847 --> 00:41:22,087
+Şu an iki değerini gördüğümüz yaklaşım, yani minterm'ünü oluşturdu. Dokuzuncu dediğimiz.
+
+198
+00:41:24,755 --> 00:41:26,235
+Nebcim, nebcim nebcim nebcim.
+
+199
+00:41:32,980 --> 00:41:59,819
+Dokuzuncuyu da normalde 0-1, 0-0-1 şeklinde gideriz. Bu şekilde oluşturduk. 17'yi 16 artı 1 şeklinde gideriz. Şöyle oluşturduk. En sondakini de nasıl oluşturacağız? 23 olduğu için 16 artı 4 desek 20, bir de 3 deriz şöyle değil mi? 23 oluyor mu? Aynen oluyor. Yani şunlara gerek yok.
+
+200
+00:42:01,780 --> 00:42:08,800
+Bir de A, evet sadece B de olacak değil, C de olmayacak, o da 4 geliyor, 20-23. Şu şekilde.
+
+201
+00:42:09,715 --> 00:42:14,895
+oluşturabiliyor. Şu an bunun F fonksiyonu bu. Tabii sadeleşmesi gerekiyorsa sadeleşecek sonra.
+
+202
+00:42:15,115 --> 00:42:20,195
+Bu olacaktı veya sonradan işleyeceğimiz Karna haritaları ile bunu sadeleştirebiliriz.
+
+203
+00:42:20,795 --> 00:42:29,036
+Ama şu etapta bizim girişteki 5 değişkene göre kombinasyonunda F fonksiyonu 1 olduğu durumda oluşturduk.
+
+204
+00:42:29,036 --> 00:42:37,395
+Diğer F'ler bu 5 değişkene bağlı olarak oluşturacak doğrult tablosundaki diğer kombinasyonlarda F fonksiyonu
+
+205
+00:42:37,715 --> 00:42:38,695
+0 çıkacak.
+
+206
+00:42:42,324 --> 00:43:02,503
+Maxtermler ise büyük M ile gösteriliyor. Ve yine aynı indekste oluşturduğumuz yaklaşım. Yani F1'i misal oluşturmaya çalışalım. X, Z, Z değişkenleri ve yine 3 tane diyelim. X, Z, Z olsun. Evet, Y'de Y'ye kadar eklediğim gibi 3 tane var. Bu sefer X artı Y artı Z edelim.
+
+207
+00:43:07,155 --> 00:43:22,355
+Bu bir maxterm. Çarpı dedim, çünkü f fonksiyon öyle gidiyor. X artı Y artı Z maxterm çarpı dedim. X artı Y artı Z maxterm çarpı.
+
+208
+00:43:28,980 --> 00:43:35,480
+Evet, max dönümümü oluşturdum ama daha indisine göre bunların kabul diyagramlarındaki tümleyenlerini bulmam lazım.
+
+209
+00:43:35,940 --> 00:43:43,159
+Sıfır dediği için sıfır ingilizce'den sıfır elde etmenin tek bir yolu var. Sıfır sıfır sıfır geldiğinde direkt orlamak.
+
+210
+00:43:43,760 --> 00:43:54,300
+İkincisi bir sıfır sıfır olduğundan şöyle yapmak lazım ki bu iki geldiğinde ikinci değişken olan sıfır kavramı.
+
+211
+00:43:55,251 --> 00:44:04,251
+1, 0, 0 verisi geldiğinde ki, OR'ladığımızda 0 verisini elde edelim. 3 dediğimizde 1, 0, 0 olacak.
+
+212
+00:44:06,251 --> 00:44:11,251
+1, 1 bunu ters çevirdiğimizde, pardon ters mi oldu bir dakika.
+
+213
+00:44:14,251 --> 00:44:18,251
+Normalde 3 dediğimiz yapı bu. E burada bizim için diyor doğruymuş.
+
+214
+00:44:18,576 --> 00:44:23,775
+Böyle geldiği senaryoda bunu sıfır üretmesi lazım. Ve istediğimiz bir sıfır bir.
+
+215
+00:44:27,668 --> 00:44:32,188
+1, 0, 1 olduğundan dolayı 1'leri ters delim, 0'dan çıktım.
+
+216
+00:44:33,847 --> 00:44:39,847
+Altıda da 1, 1, 0 olacağı için 0, 0'a dönüştürmek için 1, 1 kısımlarını tümledim.
+
+217
+00:44:40,967 --> 00:44:44,088
+Şu an bunların her biri birer mantı törmü gösterir.
+
+218
+00:44:45,347 --> 00:44:50,728
+Ve M0, M0, M2 ile bunlar gösterilir.
+
+219
+00:44:51,315 --> 00:44:58,536
+Normalde işte binary bir şekilde gösterilmeyecekse, hafizel letter şeklinde de bu haliyle gösterilebilir.
+
+220
+00:45:03,827 --> 00:45:12,967
+Başka bir örnek. Burada da dört tane değişken olmuş. A artı B artı C artı D çarpı.
+
+221
+00:45:23,123 --> 00:45:46,284
+Evet, şimdi 3 dediğimiz şey, burada 0, 0, 1, 1 geldi senaryoda, bunları tümleyeceğim ki 0 elde edelim. 8'de de normalde şunu tümleyeceğim ki 0 elde edelim. 11'de de 8, 3 daha 11 yapacağından bunu tümleyeceğim ve 0 elde edeceğim.
+
+222
+00:45:46,943 --> 00:45:49,384
+Anlaşıldı mı minterm, maxterm arkadaşlar?
+
+223
+00:45:52,244 --> 00:46:10,724
+Bir problem yok herhalde. Bir beş dakika, on dakika ara verelim arkadaşlar. Devam edelim. Bir su işeyim, zaman kurudu. On dakika sonra devam ediyoruz. Saatimiz kaç? Üç geçiyor. Üç on üçte devam ediyoruz.
+
+224
+00:55:36,596 --> 00:55:38,956
+Evet arkadaşlar, başlayalım, devam edelim.
+
+225
+00:55:40,816 --> 00:55:43,755
+Evet, minterm ve maxtermler anlaşıldı muhtemelen.
+
+226
+00:55:44,016 --> 00:55:46,396
+Şimdi bütün kurguyu çünkü bunun üzerine yapacağız.
+
+227
+00:55:47,396 --> 00:55:49,695
+Bir dakika, tablette bir sıkıntı var.
+
+228
+00:56:16,788 --> 00:56:25,467
+Şimdi bir de bu mintermlerin ve maxtermlerin birleştirilerek bize bir F fonksiyonun tamamının gösterilmesini.
+
+229
+00:56:26,003 --> 00:56:47,843
+sağlayan yapılar var. Biri işte, demin aslında, hani lafzen bahsetmedik ama, örneklerin üzerinde görür, deminki örnekleri gösterirken aslında onlar uygulanmış örneklerdi bunlar. Mintermlerin toplamı, aslında bize o genel problemin, her bir f'i bir yapan mintermlerinin genel fonksiyonunu verecek.
+
+230
+00:56:54,003 --> 00:57:01,243
+Minterm'lerin toplamının, yani o doğruluk tablosundaki bir değerini veren minterm'lerin toplamının,
+
+231
+00:57:01,723 --> 00:57:05,823
+genel o doğruluk tablosunun oluşmasını sağlayan f fonksiyonunu vereceğiz.
+
+232
+00:57:06,463 --> 00:57:09,263
+Ve biz buna sum of minterm gösterimi diyeceğiz.
+
+233
+00:57:09,423 --> 00:57:10,783
+Yani som gösterimi.
+
+234
+00:57:13,943 --> 00:57:16,083
+Misal örnek vereyim bir denklem var.
+
+235
+00:57:16,303 --> 00:57:18,423
+f eşitliği x artı x değil y değil.
+
+236
+00:57:18,931 --> 00:57:46,931
+Şimdi bunu biz son olarak nasıl uyarlayabiliriz, nasıl gösterebiliriz, buna deneyeceğiz. Bir, ilk başta şunu bilmemiz lazım. Şimdi minterm ve maxterm ikisinde de girişte yani buradaki denklemdeki X ve Y'nin her bir termde, her bir terimde içermesi lazım. Yani biz deminki örnekte nasıl yapıyorduk şunları yaparken? M0 diyoruz.
+
+237
+00:57:46,931 --> 00:58:08,451
+M2, M3, M5 diyoruz. Ama her bir M'in içerisinde aslında, maxterm'in içerisinde giriş olan X, Y, Z'lerin bulunduğu gösterimi bu. Yani sıfır da olsa onlar, yani orada onların sadeleştirdikten sonra onlar kaybolacak da olsa bunların gösterilmesi gerekiyor. Minterm ve maxterm.
+
+238
+00:58:09,076 --> 00:58:25,936
+Şimdi burada da mesela sadeleşmiş böyle bir formül gelmiş ama bizim bunu son gösterimde gösterebilmemiz için, yani mintermlerin toplamı şeklinde gösterebilmemiz için bizim her iki tarafa da her iki minterm açılmamış versiyonu bulmamız gerekiyor.
+
+239
+00:58:25,936 --> 00:58:31,236
+Bunun için de normalde şurayı biliyorum ki ben, hani Y artı Y değil.
+
+240
+00:58:31,472 --> 00:58:37,612
+Nedir? Burası 1'dir. Yani bir taraf 0'sa öteki 1'dir. O kaideyle burası 1'dir.
+
+241
+00:58:38,052 --> 00:58:47,711
+Buraya bunu ekleyerek, bunu çarparak ben aslında ekstradan bir iki terim daha üretmiş oluyordum. X ve Y'ye bağlı olarak.
+
+242
+00:58:49,412 --> 00:58:51,692
+Şu an baktığımızda şurası bir minterm.
+
+243
+00:58:52,143 --> 00:59:02,343
+Şurası başka bir minterm, burası da başka bir minterm. Üç tane minterm var. Yani doğrult tablosunda bütün kombinasyonlarda üç tane satırın f değeri birmiş.
+
+244
+00:59:02,643 --> 00:59:12,043
+Ve ben bunları artı ile birbirine bağlayarak, mintermleri toplayarak son gösterimini yapmış oluyorum.
+
+245
+00:59:12,863 --> 00:59:18,163
+Some of minterm gösterimini bu hale getirmiş oluyorum.
+
+246
+00:59:18,963 --> 00:59:33,503
+Ve ben bunu, somu, demin olduğu gibi yazabilirim. Yani M ufak M, 1, 2, 3 gibi yazabilirim. Bu da tamamen buradaki minterm tabirlerindeki değerlere göre.
+
+247
+00:59:47,284 --> 00:59:53,284
+Şu şekliyle F fonksiyonunu tanımlayabilirim sum of minterm gösterimiyle.
+
+248
+00:59:53,944 --> 00:59:57,864
+Aslında şuradaki F ile buradaki F aynı şey.
+
+249
+00:59:58,944 --> 01:00:05,744
+Ama bu son gösterimi, bu da artık hani sadeleştirildikten sonraki gösterimi.
+
+250
+01:00:07,844 --> 01:00:10,924
+Başka bir böyle bir örnek olduğunu düşünelim.
+
+251
+01:00:11,443 --> 01:00:15,223
+Bunu nasıl yazarız, ne çıkar buradan, biraz uğraşın lütfen.
+
+252
+01:00:17,583 --> 01:00:20,123
+Son gösterimi nedir, mi şeklinde.
+
+253
+01:01:49,460 --> 01:01:51,100
+Var mı başka çözün arkadaşlar?
+
+254
+01:01:54,320 --> 01:01:56,520
+Ufak bir yanlış var [öğrenci]'a mı?
+
+255
+01:01:57,340 --> 01:01:58,200
+Çözeriz şimdi.
+
+256
+01:02:00,940 --> 01:02:02,220
+Ne yapacağız?
+
+257
+01:02:02,820 --> 01:02:05,240
+Bu belli ki üç değişkenli bir yapı.
+
+258
+01:02:05,320 --> 01:02:07,100
+Üç variable kullanmamız lazım.
+
+259
+01:02:07,600 --> 01:02:08,240
+Nedir bunlar?
+
+260
+01:02:08,480 --> 01:02:10,140
+A, B, B, C.
+
+261
+01:02:10,835 --> 01:02:33,635
+Şimdi ABC'ye göre açacağız. Nasıl açacağız? A, parantez içerisinde B artı B değil ve C artı C değil şeklinde. Bu tarafı da açacağım tabii. Ne ekleyeceğim buraya? A artı A değil'i ekleyip B değil çarpı C ile devam edeceğim.
+
+262
+01:02:35,923 --> 01:02:38,844
+Yani hepsini çarparsak, şöyle bir şey olacak.
+
+263
+01:02:39,104 --> 01:02:51,844
+A, B, C, artı, A, B, değil, C, artı, A, B, C, değil, artı, A, B, değil, C, değil.
+
+264
+01:02:52,043 --> 01:02:53,664
+Değil mi? Yanlış yapmadım muhtemelen.
+
+265
+01:02:54,583 --> 01:02:56,483
+Bu tarafa bakarsak da ne olacak?
+
+266
+01:02:56,724 --> 01:03:03,063
+A, B, değil, C, artı, A, değil, B, değil, C oluyor.
+
+267
+01:03:04,019 --> 01:03:24,060
+Şimdi bulmuş olduk aslında. Şimdi minterm, bunu ilk kontrol edeceğimiz şey şu, burada bakıyoruz var mı? Hani ABC'nin içerisinde bulunmadığı bir tabir yok, terim yok. Bu terimlerin her birine şimdi minterm mantığıyla bir M0123 neyse onları atayabiliriz.
+
+268
+01:03:24,539 --> 01:03:27,660
+İki tane aynı olan var, ikinci ve beşinci olan.
+
+269
+01:03:28,500 --> 01:03:30,380
+Bakıyoruz, şununla.
+
+270
+01:03:31,347 --> 01:03:40,228
+Bu aynı değil mi? O zaman bir tanesini alacağız. Yani bu ikisinin aynı olmasının pek bir önemi yok. Evet. O durumda doğru diyor. Bir tanesini alacağız.
+
+271
+01:03:42,107 --> 01:03:57,228
+Şimdi şurası M7 zaten. Yani 1, 1, 1 olduğunda 1 geliyor. Burası M6, şurası M5, şurası M4 değil mi? Yanlış hesaplamadım. 1, 0, 0, M4 olur.
+
+272
+01:03:57,780 --> 01:04:18,000
+1-0-1-M5 olur. En sonunda da, bu da mı M6? Yok. Burası 0-0-1-M1 olur. Değil mi? Yani şu an benim için minterm tabillerim bunlar mıdır? Sort edersek 1-4-5-6-7.
+
+273
+01:04:18,771 --> 01:04:38,092
+Minterm'lerim var. Yok [öğrenci], sıfırda bir yanlışım var. Yani minterm'lerini çıkarttım. Ve bu gösterimde yani artı ile gösterim minterm'lerin toplamı aslında benim için F fonksiyonunun son gösterimi diyeceğiz.
+
+274
+01:04:50,739 --> 01:04:55,500
+Tamam. Dupliketleri delete ediyoruz, no ediyoruz, neyse işte.
+
+275
+01:05:02,195 --> 01:05:08,255
+Şimdi böyle uzun uzun göstermekten ziyade M1, M4, M5, M6, M7 deminki örneğin cevabı.
+
+276
+01:05:08,635 --> 01:05:11,455
+Bunu daha matematiksel ve kısa bir gösterim mi var?
+
+277
+01:05:11,576 --> 01:05:13,815
+Zaten şu işaret toplam işareti.
+
+278
+01:05:14,495 --> 01:05:15,275
+Neyin toplamı?
+
+279
+01:05:16,775 --> 01:05:19,815
+M, yani mintermlerin toplamı demek.
+
+280
+01:05:20,015 --> 01:05:23,715
+Aslında şu bize son ifadesini izah ediyor.
+
+281
+01:05:24,255 --> 01:05:25,415
+Mintermlerin toplamı.
+
+282
+01:05:25,935 --> 01:05:29,455
+Parantez içerisine alıp buraya değerleri yazarak.
+
+283
+01:05:29,760 --> 01:05:34,800
+Soruyu direkt böyle de sorulabilir veya cevabı böyle de yazabilirsiniz. Yani ne demek bu?
+
+284
+01:05:35,200 --> 01:05:46,260
+ABC input kombinasyonlarına göre F'in 1 olduğu durumlar minterm 1, 4, 5, 6 ve 7'nin toplamıdır diyeceğiz.
+
+285
+01:05:46,771 --> 01:05:57,931
+Yani minterm 1'de 1 oluyor, minterm 4'te 1 oluyor, 5'te 6'da 7'de 1 oluyor ve genel F fonksiyonumda bunların sum'ı toplamıdır diye yorumlayacağız.
+
+286
+01:06:00,391 --> 01:06:02,231
+Var mı bir problem arkadaşlar?
+
+287
+01:06:11,347 --> 01:06:14,468
+Maxterm bir diğer gösterimde POS gösterimi.
+
+288
+01:06:15,248 --> 01:06:16,268
+Ay pom gösterimi.
+
+289
+01:06:17,028 --> 01:06:19,668
+Ne demek? Bu Maxterm'lerin çarpımı.
+
+290
+01:06:20,628 --> 01:06:29,148
+Aslında bizim şimdiye kadar V kapılarını, birden fazla F'in yaptığı V kapılarını biz V kapılarıyla birleştirdik.
+
+291
+01:06:29,268 --> 01:06:30,128
+Onu kastediyoruz.
+
+292
+01:06:32,467 --> 01:06:57,047
+Direkt şu örnekten gidelim. Misal, burada bir F fonksiyonu yine belirmiş. Biz bunu POM ile, yani maxtermlerin çarpımı şeklinde ve ben X ve Y, Z, Z de var burada. Z'ye göre bunu ilk başta maxtermlerini yazmam lazım. Ama maxtermlerin bir tarafında, yani daha doğrusu şöyle bir düşünürsek, bir tarafında
+
+293
+01:06:58,324 --> 01:07:07,923
+Yani çarpı o product, AND işlemlerindeki her bir terimin maxterm şeklinde yazılması lazım.
+
+294
+01:07:08,864 --> 01:07:18,644
+Yani bunu yine dağıtmamız lazım. Burada tek farkı dağıtmanın, şuradaki X artı yi dağıtacağız ilk başta, şurası bir olacak ve X artı yi kalacak.
+
+295
+01:07:18,644 --> 01:07:24,824
+Misal, maxterm dediğimiz şeyin birinci terminolojisi bu. Yani bu birinci terim olacak bizim için.
+
+296
+01:07:25,168 --> 01:07:33,387
+Ama Z değeri yok. Yani çünkü Z bir input. Bu bulduğumuz X artı Y değil, bu bir maxterm değil mi?
+
+297
+01:07:35,387 --> 01:07:39,407
+Ve maxtermde neye tekabül geliyor bu aslında? M kaç olur bu?
+
+298
+01:07:43,764 --> 01:07:44,924
+Ne olur arkadaşlar?
+
+299
+01:07:48,851 --> 01:07:50,111
+Bir olacak değil mi?
+
+300
+01:07:51,191 --> 01:07:53,531
+M1'e tekabül gelen bir maxterm.
+
+301
+01:07:54,011 --> 01:07:55,851
+Şimdi Z'yi de eklemek lazım.
+
+302
+01:07:56,031 --> 01:07:59,691
+Çünkü Z'nin, yani doğruluk tablosunda aslında bu şunu söylüyor bize.
+
+303
+01:08:00,171 --> 01:08:08,111
+Bu durumda bir olacak ama Z fark etmeksizin, Z'nin değişkenine göre iki farklı durumda da bir olacağını söylüyor.
+
+304
+01:08:08,211 --> 01:08:14,091
+Ama biz bunu pom şeklinde yazabilmemiz için Z'yi de ekleyerek bunu genellememiz lazım.
+
+305
+01:08:14,091 --> 01:08:16,011
+Şimdi Z...
+
+306
+01:08:16,115 --> 01:08:30,435
+Normalde işte mintermlerin üzerinden sum'unu yaparken artı etkisiz eleman olduğu için, yani daha doğrusu o terimi biz artıda yazıyorduk ki bir değer gelsin ve AND'lediğimizde bir anlam ihtiva etmesin.
+
+307
+01:08:30,755 --> 01:08:37,636
+Ama şu an burada biz bunu tam tersi AND'le yapmamız lazım ve bunu OR'la eklememiz lazım.
+
+308
+01:08:37,636 --> 01:08:44,036
+Yani şuranın sıfır çıkması ve bunun artıyla yani sonuçta maxterm şeklinde.
+
+309
+01:08:44,115 --> 01:08:58,515
+Buraya eklenmesi gerekiyor. Yani bu taraf 0 çıkacak ve buraya eklediğimizde bir etkisi olmayacak. Bunun için de Z'yi bu şekilde hazırladık ve çarptık.
+
+310
+01:08:58,515 --> 01:09:08,195
+Yani normalde X artı Y değil de Z'yi ve Z'yi çarptık. Şu an iki tane maxterm tabirimiz var.
+
+311
+01:09:08,560 --> 01:09:15,560
+Birincisi benim için, tabii burada bir dedik ama bu değişecek şimdi buna göre çünkü Z değişkeni yoktu burada.
+
+312
+01:09:25,235 --> 01:09:32,036
+3 değeri benim için ne olacak? Bunun maxtermlerini oluşturacak.
+
+313
+01:09:32,155 --> 01:09:38,555
+Ve ben bunları, 2 maxtermini, AND'lediğimde de form gösterimini yapmış olacağız.
+
+314
+01:09:38,735 --> 01:09:40,895
+Product of maxterm gösterimini.
+
+315
+01:09:41,915 --> 01:09:47,855
+Şunu hiçbir zaman unutmuyoruz. Maxtermlerini oluşturan terimler, sıfıra hedefler,
+
+316
+01:09:48,467 --> 01:09:58,927
+ve buranın 0 olduğu senaryo benim için maxterm'dür ve o da 0-1-1 olduğundan. Dolayı maxterm 3 ve maxterm 2 diyeceğim.
+
+317
+01:10:00,787 --> 01:10:19,567
+Bunu gösterirken de, hani deminki ufak m'leri gösterdiğimiz gibi, yani minterm'leri gösterdiğimiz gibi, FOM'u, büyük m2 çarpı, yani AND işlemi, büyük m3, yani maxterm 2 ve maxterm 3'ün, AND'lendiği F moşyonudur, diyeceğiz FOM gösterimine.
+
+318
+01:10:22,087 --> 01:10:27,868
+Başka bir örnek, bunun üzerinde uğraşalım arkadaşlar, biraz size bıraktım.
+
+319
+01:12:26,036 --> 01:12:27,515
+Uğraşıyor muyuz arkadaşlar?
+
+320
+01:12:31,636 --> 01:12:53,036
+Biraz uğraşmanızı istiyorum. 3-4 dakika vereceğim size bunun için. Bu güzel bir örnek. Lütfen uğraşalım. Hani burada bir şey görmeniz gerekiyor. Hani biraz spesifik bir örnek, güzel bir örnek. Maxterm ve minterm arasındaki farkı da anlatıyor aslında. Bunu ben minterm yapmak istesem misal basit, daha basit. Nedir? AC değil.
+
+321
+01:12:53,619 --> 01:13:14,299
+Normalde burada B eksikmişse çarpı B artı B değiller, buraya B'yi eklerim. B, C, A artı A değiller, buraya A'yı eklerim. A, B değil, C artı C değiller, C'yi eklerim değil mi? Sonra bunu dağıtarak aslında minterm'i bulmuş olurum.
+
+322
+01:13:14,771 --> 01:13:35,771
+Ve aslında zaten sum of olduğu için, hatta yapalım isterseniz, ABC değil, artı ABC değil, artı ABC, artı A değil, BC, artı A değil, B değil, C, artı A değil, B değil, C değil.
+
+323
+01:13:36,711 --> 01:13:39,532
+Aynı var mı tekerrür? Yok herhalde.
+
+324
+01:13:40,340 --> 01:14:03,800
+Görmediysem yok. Ve buradan da şunu çıkartırım. Ufak minterm, yani çarpımların toplamı şeklinde olduğu için de ne çıkartırım? Buradan bir gibi sıfırdan M6 artı M4 artı M7 artı M3 artı M1 artı M0'dı.
+
+325
+01:14:04,787 --> 01:14:25,607
+Gösterimde de deminki örnekte yapmıştık hatırlarsanız. Sıraya göre dizelsek 0, 1, 3, 4, 7, pardon 6 varmış. 6, 7 derim. Şu an bunun için F, A, B, C için son gösterimidir derim.
+
+326
+01:14:26,771 --> 01:14:37,211
+Şimdi ama bu son gösterimi, biz posu istiyoruz, pos gösterimi, şey pomu istiyoruz, yani product of maxtermini istiyoruz.
+
+327
+01:14:38,332 --> 01:14:39,611
+Bunu nasıl yaparız?
+
+328
+01:14:40,871 --> 01:14:46,451
+Şu an [öğrenci] senin de gösterdiğin son gösterimi, yani bizim de ekranda bulduğumuz gösterimi.
+
+329
+01:14:47,271 --> 01:14:50,691
+Bunun posunu, yani maxtermlerini hesaplamanızı istiyorum.
+
+330
+01:14:52,131 --> 01:14:53,851
+Şimdi bunu sileceğim mecburen.
+
+331
+01:14:59,667 --> 01:15:00,708
+Biraz uğraşın.
+
+332
+01:15:03,387 --> 01:15:09,167
+Evet [öğrenci], o mantık da öyle, doğru. Yani 0, 1, 3, 4, 6, 7'yi bulduk. Ne eksik?
+
+333
+01:15:09,667 --> 01:15:19,387
+0, 2, 5, evet 2 ile 5 eksik. Doğru. Yani şu kaydeyi zaten biz öğrenmiştik hatırlarsanız tekrardan.
+
+334
+01:15:19,387 --> 01:15:20,768
+M, N'in.
+
+335
+01:15:21,300 --> 01:15:30,319
+İşte N hangi bitse tüm N'e aslında benim için maxterm N'leri verecek demiştik değil mi?
+
+336
+01:15:30,579 --> 01:15:32,899
+Yani maxterm'ünü verecek, hadi N'i karıştırmayalım.
+
+337
+01:15:37,427 --> 01:15:44,567
+Yok, demin mini bulduk. Hayır. Demin mintermlerini bulduk, şu an maxtermini istiyorum.
+
+338
+01:15:49,684 --> 01:15:50,623
+Max Turner.
+
+339
+01:15:52,024 --> 01:15:56,804
+Beni de şüpheye koyuyorsun ama yok yani. Max Turner'ini istiyoruz.
+
+340
+01:16:02,100 --> 01:16:05,360
+Demin bulduğumuz bizim mintermlerdir.
+
+341
+01:16:07,500 --> 01:16:13,100
+Minterm dediğimiz şey, tekrardan x, y üzerinden gidelim isterseniz.
+
+342
+01:16:13,300 --> 01:16:17,600
+x, y artı x değil y gibi bir şey mesela örnek verin.
+
+343
+01:16:17,700 --> 01:16:24,159
+İki değişikler. Minterm dediğimiz şey, bizim şurada ufak meyle bir yapma durumu bunu.
+
+344
+01:16:25,159 --> 01:16:28,579
+Mesela şu senaryoda, pardon, m3 olacak.
+
+345
+01:16:29,524 --> 01:16:31,524
+ve M1 olacak.
+
+346
+01:16:37,747 --> 01:16:44,528
+Amerika'ya şey yaptın herhalde, yanlış yaptın çünkü bu sorunun cevabı ise yanlış.
+
+347
+01:16:50,484 --> 01:16:56,304
+Çünkü demin de dedik ya, normalde çıktığı biliyoruz da nasıl oraya ulaştığımızı yapmamızı istiyorum.
+
+348
+01:16:56,944 --> 01:17:07,784
+Normalde minterm'ün değili benim için maxterm'dü. Minter'leri demin ne bulduk biz? 0, 1, 2 yoktu herhalde.
+
+349
+01:17:08,724 --> 01:17:32,564
+3, yukarıda biri yazmıştı ama, 3, 4, 6 ve 7'yi bulduk. Bunun tümleyeni olan mintermler, çarpım şeklinde göstereceğiz, bunu ileriden göstereceğiz ama, şuraya da M, Büyük, M yazalım. Bunlar da bunun tümleyeni olan noktalardaki yerler olacak. O da benim için 0, 1, 2 ve 5 gelmesi bekleniyor şu an.
+
+350
+01:17:33,140 --> 01:17:38,240
+Ama bunu nasıl bulacağımızı, buradan çıkartacağımızı bir uğraşmanızı istiyorum.
+
+351
+01:17:40,520 --> 01:17:42,940
+Bir 3-4 dakika size bırakıyorum arkadaşlar.
+
+352
+01:20:32,532 --> 01:20:34,012
+Var mı arkadaşlar ceva?
+
+353
+01:20:44,212 --> 01:20:45,912
+Şunu görmekte fayda var.
+
+354
+01:20:48,332 --> 01:20:50,532
+Şöyle bir ibadeler hep yaptık.
+
+355
+01:20:51,852 --> 01:20:53,252
+Şöyle bir şey var mesela.
+
+356
+01:20:53,492 --> 01:20:54,192
+A, B, C.
+
+357
+01:20:54,872 --> 01:20:56,832
+Bunu çözerken ne yapıyorduk?
+
+358
+01:20:57,012 --> 01:20:58,992
+Şunu hep öğrenciler unutuyor.
+
+359
+01:21:00,551 --> 01:21:04,212
+Şu A artının her birine dağılma özelliği var.
+
+360
+01:21:07,731 --> 01:21:21,412
+[öğrenci], tamam o da, bir dakika o olamaz ki [öğrenci]. Yani arada artı mı olacak? ABC değilin arasında, misal. Sanki çarpı görüyorum, yani çarpı, yani şunu mu kastediyorsun?
+
+361
+01:21:26,036 --> 01:21:27,155
+Şunu mu kastediyorsun?
+
+362
+01:21:29,336 --> 01:21:32,935
+Tamam, sen yap istersen, ben sana vereyim, şöyle cevabı yazalım.
+
+363
+01:21:35,195 --> 01:21:36,675
+Pardon, şurası da çarpı olacak.
+
+364
+01:21:38,636 --> 01:21:40,536
+Ne yazmışsın? A değil.
+
+365
+01:21:43,536 --> 01:21:46,095
+Tamam, normalde hani dediğim gibi 1-0-1.
+
+366
+01:21:47,556 --> 01:21:48,576
+Bir saniye, doğru mu?
+
+367
+01:21:49,171 --> 01:21:53,871
+Ezberim de yok ama bu ikiye geliyor, şu kaça geliyor, yanlış mı yazdım ben? Yok.
+
+368
+01:21:55,051 --> 01:21:59,192
+Burası sanki 5 miydi, 6 miydi, tam hatırlamıyorum ama tamam budur muhtemelen.
+
+369
+01:21:59,992 --> 01:22:06,211
+Sen al kalemi istersen. Ama şuna bir kısaca değineyim. Şunu unutuyorsunuz hep arkadaşlar.
+
+370
+01:22:06,992 --> 01:22:15,551
+Normalde bunu bu şekilden yani A artı B çarpı C'den A artı B çarpı
+
+371
+01:22:15,956 --> 01:22:32,576
+A artı C formatını dağıtabiliyoruz. Bunu unutuyoruz genelde. Ama bu genelde maxterm işlemlerinde en çok kullanacağımız işlem. Yani dağıtım şekli. [öğrenci] alabiliyorsun kalemi herhalde. Alırsan çizebiliyor musun? Bir bakar mısın?
+
+372
+01:22:36,180 --> 01:22:36,659
+Evet.
+
+373
+01:23:45,140 --> 01:23:47,880
+[öğrenci] sen yapa dur ben geliyorum hemen bir kapıçak.
+
+374
+01:26:07,636 --> 01:26:28,756
+Evet arkadaşlar, şimdi bir bakalım. Şimdi şu kuralı bir kontrol edelim de, sonra [öğrenci], sonra bir üstünden geçelim. Bu da bir yaklaşım ama ben göstereceğim başka bir yaklaşım olacak. Ne yaptın? Dağıttın içeriği, tamam.
+
+375
+01:26:41,684 --> 01:26:51,844
+Tamam, bu da olabilir. Evet. Onu sonra tekrar dağıttım. O hale getirdim. Arkadaşlar, şu kaydayı kullandı [öğrenci]. O da güzel.
+
+376
+01:26:52,943 --> 01:26:59,984
+Bir F fonksiyonu, ne yazmıyorum. F fonksiyonunun, D'nin D'li kendisine eşittir.
+
+377
+01:27:00,467 --> 01:27:08,327
+Ve bu D'nin D'ni almamızın nedeni aslında biz bu canonical formları arasında dönüşüm sağlamak için de kullanabiliriz.
+
+378
+01:27:08,768 --> 01:27:16,727
+Sonuçta şunu biliyorum ben, A artı B'nin D'li aslında A değil çarpı B değildir.
+
+379
+01:27:18,207 --> 01:27:22,688
+Aslında ben artı, yani max önden minterm'e geçiş yapmış oldum.
+
+380
+01:27:24,307 --> 01:27:43,708
+Değil mi? Ya bu yaklaşımla biz aslında bu değilin değil'i kendisidir kuralını birleştirerek o şekilde çözebiliriz. Normalde F fonksiyonumuz vardı, değil değil aldı, ilk değil'i dağıttı ve içerisinde artık bir tır maxterm'e geçti. Sonra bu maxterm'in içerisinde şuradakini içler dışlar çarpımı yaparak
+
+381
+01:27:44,047 --> 01:27:52,407
+Tekrardan yazdı ve bunu oluşanlar tekrar işler dışlar şartım yaptı. Neden? Çünkü buradaki A değiller birbirini götürecek.
+
+382
+01:27:53,067 --> 01:28:06,487
+A değil çarpı A sıfır gelmiş kaydesiyle gidecek bunlar. Nihayetinde de sadece elimizde cevap olan bir de değdi olduğu için bunu tekrar dağıttığında max dön moduna geçmiş oldu.
+
+383
+01:28:07,768 --> 01:28:10,327
+Bu bir yaklaşım, bir değilde aslında şu vardı.
+
+384
+01:28:11,347 --> 01:28:13,568
+Şu ekranı bir silmem lazım gerçi de.
+
+385
+01:28:20,307 --> 01:28:23,667
+Demorgan kurallarını kullanmayıp da yapılabilirdi.
+
+386
+01:28:26,047 --> 01:28:28,007
+Pardon, onu sinir çektik neyse.
+
+387
+01:28:29,188 --> 01:28:31,907
+MemoTED'den, Clearable Draw diyelim.
+
+388
+01:28:34,967 --> 01:28:37,087
+Bir diğeri de şuydu arkadaşlar aslında.
+
+389
+01:28:38,188 --> 01:28:43,487
+Şu kaydede, demin şuraya yazdığım kaydede, şu ikisi, yani şu kısmı
+
+390
+01:28:44,148 --> 01:28:49,007
+Hepsini komple biz artıyla beraber şuna dağıtabiliriz.
+
+391
+01:28:49,427 --> 01:28:53,868
+Ve dağıtırken de zaten A var, A değiller vesaire birbirini bir şekilde götürüyordu.
+
+392
+01:28:54,708 --> 01:28:58,068
+Ve B'ler B değillerle beraber birbirini götürecekti.
+
+393
+01:28:58,128 --> 01:29:05,628
+Bu ikisini çarptığımızda iki tane farklı maksum gelecekti.
+
+394
+01:29:05,728 --> 01:29:08,927
+Tam olarak bir maksum değil çünkü hala sıkıntılar var.
+
+395
+01:29:10,644 --> 01:29:19,744
+İlk etapta hani şuradaki sağdaki değilleri normal içeride kullanarak yok etmeyi hedefleyeceğiz. Hedeflenmiş olacaktır.
+
+396
+01:29:19,744 --> 01:29:28,684
+Bu tarafa baktığımızda zaten şu A değilin şurayı yani şu kısmı tekrar şunun üzerinde dağıtırsın.
+
+397
+01:29:28,804 --> 01:29:32,043
+Yani şuradaki A, C değil ve B, C.
+
+398
+01:29:32,564 --> 01:29:59,864
+şeyinde yaparsa, şurada A'la A değil birbirine götürdüğünden sadece C değil kalacak. B, C kalacak ve A değil kalacak. Bu tarafta da B, şuradaki B'yi götüreceği için B değil, B, C ve A, C değil kalacak. Sonra bunlarda da tekrardan baktığımızda şuradaki C'ler birbirini tamamladığından C, C değiller gidecek. Bu tarafta da yine aynı şekilde C, C değiller peki şu C'yi götürecek. Pardon, şuradaki C değil.
+
+399
+01:30:00,000 --> 01:30:07,380
+Götürmüş olacak, yani şu artı C'yi şunun üzerine dağıtıyorsun. Şuradaki C artı da şunun üzerine dağıtıyorsun.
+
+400
+01:30:08,279 --> 01:30:15,440
+Yani şurada da gene A'yı A çarpı C diyeyim üzerine ve şunun üzerine dağıtıyorsun.
+
+401
+01:30:15,639 --> 01:30:21,239
+Yani burayı dağıtmasam da olur zaten götürmüyor. Ama şunu götürmek için sadece dağıtsak yeterli.
+
+402
+01:30:21,779 --> 01:30:28,039
+Bu şekilde çözüldüğünde de yine aynı sonucu elde ediyoruz. Aynı sonuca geliyoruz.
+
+403
+01:30:30,659 --> 01:30:36,799
+Anlaşıldı mı? Herhalde bir problem yok diye gidiyorum.
+
+404
+01:30:37,524 --> 01:30:52,744
+Buradan bahsetmiştik zaten birbirinin tümleyeni şeklinde olan iki tane yaklaşım bunlar aslında. Biri minterm gösterimi hangi indeksler senin minterm'i veren, maxterm'ler o indekslerin tümleyeni olan kısımlar demiştik.
+
+405
+01:30:57,555 --> 01:30:59,935
+Aynı şekilde, bunu da aynı şeyden bahsediyoruz.
+
+406
+01:31:04,916 --> 01:31:23,096
+Bir de bunların dışında, yani sop ve posun dışında karışık gösterimler de var. Yani ne sop ne pos diye tabir edebileceğimiz, mesela burası product of sum mı desem burada da bir product var. Burası sum of product desek burada da bir sum var.
+
+407
+01:31:23,096 --> 01:31:32,916
+Hani bunlar karışık gösterimler. Karışık gösterimler aslında bizim şu an sopa veya posa sokmaya çalıştığımız yaklaşımla tekrardan bu moda getirip çözülüyoruz.
+
+408
+01:31:32,916 --> 01:31:33,416
+de bilir.
+
+409
+01:31:40,884 --> 01:31:51,004
+Yani bu soklar postlardan sonra işte biz işte bul cebriyle sadeleştirme veya başka şekilde işte karna haritalarını yapacağız.
+
+410
+01:31:51,123 --> 01:31:56,904
+Karna haritalarını sadeleştirerek daha az kapıda aynı devreyi tasarlamaya çalışacağız.
+
+411
+01:32:00,595 --> 01:32:18,536
+Örnek verecek olursak, bir soru vereyim. Dendi ki F fonksiyonu mintermler, 1, 4, 5, 6, 7 olan bir F fonksiyonu oluşturduk. Bunu dizayn etmenin anlamı yok. Çünkü daha bu çok ham bir şekilde. İlk baktığımda ben şunu söyleyebiliyorum mesela şu kısım için.
+
+412
+01:32:19,444 --> 01:32:30,444
+Bakıyorum, ABC değil ve ABC. Şimdi, C'nin ne olduğunu bağımsız bir şekilde AB1, 1 geldiğinde zaten buradan 1 geliyormuş diyor, değil mi?
+
+413
+01:32:30,783 --> 01:32:37,844
+Denkten bunu söyleyecek fonksiyonu. Ama mintermlerine verildiği için 6, L değil, şu an mintermlerini yazmış oldum.
+
+414
+01:32:38,644 --> 01:32:42,156
+Ama ben bunu sadeleştirdim ve aslında...
+
+415
+01:32:42,484 --> 01:33:04,424
+Buradaki C'nin çok etkisi yok. Başka yerden C gelebilir ama şu an burada bir etkisi yok. Bunu simplify etmek, işte iki yöntemle mümkün dedik. Bir Boole'n cebriyle uğraştık, örnekler çözdük, bunu da çözebiliriz. İkincisi ise, birincisi bu, ikincisi ise haftaya işleyeceğimiz Karnaugh haritaları.
+
+416
+01:33:07,188 --> 01:33:12,047
+Bunu aslında daha sade hale getirmeyi amaçlıyoruz.
+
+417
+01:33:12,756 --> 01:33:35,376
+Daha az kapıda göstermeyi amaçlıyoruz. Mesela burada kullanırsak bunu direkt dizayn olarak oluştursak, 1, 2, 3, 4, 5, 6 tane NOT kapısı, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10 tane AND kapısı, 4 tane de OR kapısı bulunan bir devre diyagramına dönüyor ki gerek yok.
+
+418
+01:33:35,376 --> 01:33:40,756
+Baktığımızda bir NOT, bir OR, bir AND, bir OR kapısıyla biten bir.
+
+419
+01:33:40,756 --> 01:33:43,216
+yaklaşım var. Simplify edersin.
+
+420
+01:33:46,771 --> 01:33:55,891
+Yani şu soldaki kapıyı dizayn etmek yerine lojik diyagramı, biz sağdakiyle aynı F fonksiyonunu üreten daha sade formatı getireceğiz.
+
+421
+01:33:56,012 --> 01:34:03,851
+Soldaki ne için önemli? Şunun için, canonical formlar arası geçiş yaparak farklı bir sadeleştirmeyle farklı kapılar oluşturulabilir.
+
+422
+01:34:04,072 --> 01:34:14,771
+Onu ileride göreceğiz. Bir diğeri de farklı bir F fonksiyonunu veren, yani aynı F fonksiyonunu veren ama farklı bir sadeleşmiş yapının ana beyz, yani sadeleşme...
+
+423
+01:34:14,771 --> 01:34:22,871
+Önceki formunu kıyaslamak için kullanabileceğimiz, en açık gösterim tarzı olduğundan, klinikalı formlar önemli.
+
+424
+01:34:23,492 --> 01:34:28,832
+Burada da SOP dediğimiz productların SAM'ı şeklinde bir dizayn var.
+
+425
+01:34:29,332 --> 01:34:33,532
+Ama sağdaki bir SOP gösterim değil, bir sadeleşmiş gösterim.
+
+426
+01:34:36,851 --> 01:34:44,832
+Evet arkadaşlar, genel olarak biz SOP-POS gösterimlerini gördük bu derste. Bir aralarındaki farkları analiz etmeye çalıştık.
+
+427
+01:34:45,271 --> 01:34:54,412
+İşte bu matematiğiyle bunu daha simpler format nasıl getiririz? Bunun üzerine bir ders oldu birazdan. Bunlar üzerine durduk.
+
+428
+01:34:55,188 --> 01:35:09,887
+Şimdi bir sonraki derse aslında bu questionlar daha sade nasıl gösterilir? Karnaugh haritalarına değineceğiz, onunla göstereceğiz ve daha minimum bir devlet asamını üzerine bir hedeflememiz olacak, bir amacımız olacak.
+
+429
+01:35:11,347 --> 01:35:13,807
+Bu derste alakalı sorumuz var mı arkadaşlar?
+
+430
+01:35:17,876 --> 01:35:33,355
+Anlaşıldı mı her şey? Çünkü bir sonraki hafta, yani ne zaman oluyor? Labınız sizin ne zaman arkadaşlar? Cuma mı? Yo, çarşamba, değil mi? Çarşamba mı labınız? Yo, labınız bu hafta başlamıyor, değil mi? Haftaya mı başlıyor?
+
+431
+01:35:36,175 --> 01:35:42,476
+İlk labınız ne zaman? Lab sıfır değil de lab yeri söylüyorum. Program yayınlanmadı mı?
+
+432
+01:35:44,083 --> 01:35:45,804
+Sanki yayınlamış olmaları lazım.
+
+433
+01:35:52,307 --> 01:36:00,327
+İlk labınızdaki direkt bunlarla alakalı, lab sıfır değil, işte bu çarşamba başlaması lazım, ben de öyle biliyorum da.
+
+434
+01:36:00,327 --> 01:36:09,247
+Bu çarşamba labda sizin minterm ve maxterm'leri irdiremeniz gerekiyor, bunlarla alakalı olacaktır.
+
+435
+01:36:11,507 --> 01:36:19,788
+Sorumuz yoksa arkadaşlar, dersimiz bugünlük bu kadar yeterli diyoruz, dersi bitireceğim. Var mı sorumuz?
+
+436
+01:36:23,507 --> 01:36:28,807
+Yukarılarda bir paylaşıldı çete bakarsan o zaman. Sanki bir grup paylaşımı oldu sanki.
+
+437
+01:36:38,644 --> 01:36:46,764
+Arkadaşlar, sorumuz yoksa, hepinize iyi dersler, iyi başarılar, sağlıklı günler diliyorum. Görüşmek üzere, iyi çalışmalar.

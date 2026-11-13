@@ -1,0 +1,2271 @@
+1
+00:01:34,323 --> 00:01:35,423
+Merhaba arkadaşlar.
+
+2
+00:01:39,828 --> 00:01:40,948
+Sesim geliyor mu?
+
+3
+00:01:42,287 --> 00:01:43,268
+Geliyor hocam, merhaba.
+
+4
+00:01:44,008 --> 00:01:50,268
+Merhabalar. Biraz daha sayımız artsın, şöyle 3-4 dakika daha bekleyelim, dersimizde başlayalım, olur mu arkadaşlar?
+
+5
+00:05:50,067 --> 00:06:02,587
+Tekrar merhabalar arkadaşlar. Dersimize başlayalım isterseniz. Katılım sayısı biraz az gibi ama derslere zamanlı katılım önemli. Öncelikle onu hatırlatmak istiyorum arkadaşlar.
+
+6
+00:06:04,307 --> 00:06:13,007
+Şimdi seste bir sorun olmadığını düşünüyorum. Chat kısmına da yazabilirsiniz veya söyleyebilirsiniz.
+
+7
+00:06:13,007 --> 00:06:14,847
+Hocam bir sorun yok sesiniz geliyor.
+
+8
+00:06:15,327 --> 00:06:15,947
+Tamamdır.
+
+9
+00:06:16,336 --> 00:06:20,396
+Sesle bir sorun olursa anlatmaya devam ettiğim zaman hemen uyarın arkadaşlar.
+
+10
+00:06:21,536 --> 00:06:30,915
+Şimdi geçen hafta en son toplayıcı-çıkarıcı devreleri görmüştük. Bunlarla alakalı ödevlerimizi vermiştik.
+
+11
+00:06:31,176 --> 00:06:34,295
+Bakalım ödevlerde durumlar nelerdir?
+
+12
+00:06:37,716 --> 00:06:39,855
+Ödevlerimiz ne alemde bakalım?
+
+13
+00:06:41,596 --> 00:06:41,975
+Evet.
+
+14
+00:06:42,708 --> 00:06:48,788
+Açıklama kısmını okuyunuz demişim. Tamam, bunları da vermiş olduk.
+
+15
+00:06:54,196 --> 00:06:55,532
+Bakalım, bunu...
+
+16
+00:07:00,692 --> 00:07:10,172
+Şimdi arkadaşlar, bu haftada toplayıcı çıkarıcı devrensini biraz daha özelleşmiş, en son toplama çıkarma, adder-subtractor devreyesini görmüştük.
+
+17
+00:07:10,692 --> 00:07:23,271
+Şimdi bundan sonra biraz daha özelleşmiş, özellikle sayısal haberleşme, sayısal devrelerde çokça kullanılan, adını çokça duyacağınız devre, kombinezonsal devre elemanlarına geçiyoruz.
+
+18
+00:07:28,627 --> 00:07:33,847
+Seçiciler, multiplexer konusuna geçiyoruz. MUX olarak daha çok adlandırılıyor.
+
+19
+00:07:34,507 --> 00:07:43,668
+Gene itibariyle çizik olursak, bu devre elemanı 2 üzeri N girişli ve 1 çıkışlı bir devre elemanı.
+
+20
+00:07:44,867 --> 00:07:55,768
+Dolayısıyla çıkışına Z diyecek olursak, girişi de I0'dan I2 üzeri N-1'e kadar girişlerle.
+
+21
+00:07:56,884 --> 00:08:14,584
+Dolu. Bu durumda, burada, bu devrenin asıl amacı arkadaşlar, şu uçlardan birini çıkışa iletmek. Girişlerden birini çıkışa iletmek. Seçiyor yani. Girişlerden birini seçiyor ve çıkışa iletiyor.
+
+22
+00:08:15,091 --> 00:08:27,052
+Peki, hangi giriş seçeğini nasıl belirliyor arkadaşlar? Seçim uçları var. Bu seçim uçları da arkadaşlar, eğer 2 üzeri n tane giriş varsa, kaç tane seçme ucu olması lazım?
+
+23
+00:08:27,932 --> 00:08:42,552
+Sıfırdan n-1'e kadar toplam n tane seçim ucu olması lazım. Dolayısıyla biz örneğin n eşittir 0 verdiğimizde ne olmuş olacak arkadaşlar?
+
+24
+00:08:43,072 --> 00:08:53,272
+I0, N eşittir, burada sırasıyla verdiğimiz değerlere göre, alınan değerlere göre, 2 üzeri N tane değeri tamını tanımlayabiliyor.
+
+25
+00:08:53,751 --> 00:08:58,372
+Bu 2 üzeri N tane değerle beraber şu girişler seçilmiş oluyor arkadaşlar.
+
+26
+00:08:58,372 --> 00:09:10,052
+Örneğin, basit bir uygulama yapalım. Basit bir 4 çarpı 1 mux çizelim. Bir tane çıkışı olacak.
+
+27
+00:09:10,611 --> 00:09:26,031
+Kaç tane giriş olacak? Toplam 4 tane giriş olacak. I0, I1, I2, I3. Kaç tane seleksiyonci olacak? 2 tane seleksiyonci olacak. S1 ve S0 olmak üzere.
+
+28
+00:09:27,631 --> 00:09:38,231
+Eğer S1, S0'ın alabileceği değer sayısı kaç tane? Toplam 4 tane. 1, 0 ve 1, 1 olmak üzere. 0, 0 ise şayet.
+
+29
+00:09:38,644 --> 00:09:48,943
+I0'daki giriş, çıkışa aktarılıyor. Eğer 0, 1 ise, bunun sayısal değeri kaç arkadaşlar? Sayısal değeri.
+
+30
+00:09:51,943 --> 00:10:05,203
+1, 2, şöyle diyelim, 0'dan başlatalım. 0, 1, 2, 3. Örneğin, 1, 1 dediğimiz zaman, 3 değeri almış oluyor.
+
+31
+00:10:05,748 --> 00:10:14,948
+Şu girişteki çıkışı, çıkışı aktarmış oluyor. Basitçe yapısı bu. İçeride bir anahtar varmış gibi düşünün.
+
+32
+00:10:15,528 --> 00:10:23,168
+Sırasıyla o anahtarla beraber istediğimiz çıkışı ne yapmış oluyoruz?
+
+33
+00:10:23,807 --> 00:10:30,587
+Seçerek uçlarla şöyle seçerek dışarı aktarmış oluyoruz arkadaşlar.
+
+34
+00:10:33,107 --> 00:10:44,947
+Burada bu kısım anlaşıldı mı? Mox'ların çalışma mantığı 2 üzeri N girişli ve 1 çıkışlı bir devre elemanı N tende selection rücü var arkadaşlar.
+
+35
+00:10:46,847 --> 00:10:51,327
+Hemen bir örneğimizi yapalım bununla alakalı arkadaşlar.
+
+36
+00:10:51,327 --> 00:10:59,727
+Şimdi diyor ki bize, pardon şu kısımları bir silelim şöyle.
+
+37
+00:11:18,035 --> 00:11:21,316
+Örneğimize yoğunlaşalım.
+
+38
+00:11:22,115 --> 00:11:25,035
+Şimdi bize bir doğruluk tablosu veriyor arkadaşlar.
+
+39
+00:11:25,875 --> 00:11:33,655
+X1, X2, X3, X4 verilmiş.
+
+40
+00:11:34,295 --> 00:11:38,495
+Ve bunların doğruluk tablosu tanımlanmış.
+
+41
+00:11:38,495 --> 00:11:40,035
+Nereden itibaren?
+
+42
+00:11:40,255 --> 00:11:43,975
+0000, 00001.
+
+43
+00:11:44,532 --> 00:11:58,912
+0, 0, 1, 0, 0, 0, 1, 1 şeklinde. Bunları dörtlü grupları halinde yazacak olursak arkadaşlar şöyle kendimize doğruluk tablosunu oluşturalım.
+
+44
+00:11:59,912 --> 00:12:08,912
+0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0.
+
+45
+00:12:09,491 --> 00:12:12,991
+1-1, 1-1, çok yan yana yazdım bunları.
+
+46
+00:12:15,991 --> 00:12:16,751
+Şu bakalım.
+
+47
+00:12:17,711 --> 00:12:21,131
+1-1, 1-1, 1-1 ve 1-1.
+
+48
+00:12:21,951 --> 00:12:24,471
+Burada standart doldurmalarımızı yapıyoruz.
+
+49
+00:12:24,891 --> 00:12:33,871
+1-0, 1-1, 0-0, 0-1, 1-0, 1-1, 0-0, 0-1, 1-0, 1-1.
+
+50
+00:12:33,871 --> 00:12:36,111
+Şimdi bir doğruluk tablosu vermiş.
+
+51
+00:12:36,211 --> 00:12:36,692
+Demiş ki,
+
+52
+00:12:37,779 --> 00:12:44,480
+Benim çıkışım F, X1, X2, X3, X4.
+
+53
+00:12:44,899 --> 00:12:47,559
+Çıkışım şu şekilde tanınlanmış.
+
+54
+00:12:48,139 --> 00:12:57,279
+0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1 şeklinde.
+
+55
+00:12:58,519 --> 00:13:01,980
+Şu kısım tamamıyla 1 ile tanınlanmış.
+
+56
+00:13:02,388 --> 00:13:05,048
+Ve son kısımda sıfırlatılmamış.
+
+57
+00:13:05,168 --> 00:13:14,788
+Diyor ki burada arkadaşlar, bu devrede 4x1 mux kullanarak
+
+58
+00:13:20,851 --> 00:13:22,291
+F fonksiyonunu
+
+59
+00:13:25,844 --> 00:13:27,024
+gerçekliğimiz.
+
+60
+00:13:31,379 --> 00:13:40,039
+Burada da seçim ucu yerine X3 ve X4'ü kullanınız. Seçim uçları.
+
+61
+00:13:44,596 --> 00:13:49,995
+Ve bunu, bu fonksiyonu normalde ben seversem nasıl gerçekleştirirsiniz?
+
+62
+00:13:50,675 --> 00:13:56,175
+Önce bir Karnaugh haritası yaparsınız. Karnaugh haritası yaptıktan sonra ne yaparsınız?
+
+63
+00:13:56,615 --> 00:14:03,115
+Gerekli indirgemeleri yaptıktan sonra devreyi çizersiniz bilindik devre elemanları.
+
+64
+00:14:03,115 --> 00:14:08,915
+Fakat biz burada mux kullanarak yapın dediği için bunu,
+
+65
+00:14:10,464 --> 00:14:16,084
+Temelde mux kullanın diyor. Mux girişlerine de gerekli kapı elemanlarını bağlayacağız.
+
+66
+00:14:16,444 --> 00:14:25,144
+Farklı bir tasarım yöntemi kullanacağız burada da. Öncelikli olarak fonksiyonumuzu bir yazalım bakalım.
+
+67
+00:14:25,384 --> 00:14:30,944
+Fonksiyonu yazacak olursak arkadaşlar, ilk önce şu elemanı yazmamız lazım.
+
+68
+00:14:31,784 --> 00:14:37,364
+Ne diyeceğiz ona? X1'in D ile sırasıyla mintermlerini yazalım önce.
+
+69
+00:14:37,940 --> 00:15:03,660
+Bize Karnaugh'in kalitesi kullanın demedi. Mux'ları kullanarak gerçekleşme diyor. Önce şundan başlayalım. Mintermini yazalım. X1'in değili, X2'nin değili, X3, X4 üstü. Artı. İkinci 1'e geçiyorum. Mintermini yazdığıma göre. X1'in üstü, X2'nin üstü.
+
+70
+00:15:04,128 --> 00:15:30,368
+X3, X4, artı, şu 1'i yazalım. X1'in üstü, X1'in üstü, X2, X3'in üstü ve X4, artı. Sıradaki birimiz şu. X1'in üstü, artı, pardon, geri alalım.
+
+71
+00:15:52,179 --> 00:15:54,139
+Burası nedense kalmış bakalım.
+
+72
+00:15:56,219 --> 00:15:59,599
+Kombinezonsal devrelerim diye kalmış. Şuraları bir sileyim.
+
+73
+00:16:00,779 --> 00:16:04,239
+Bunlar demin silmiştim. Niye geldi bunlar tekrar? İlginç.
+
+74
+00:16:06,579 --> 00:16:08,999
+Biraz sonra tam bir temizleme yapalım ekranı.
+
+75
+00:16:35,988 --> 00:16:38,928
+Ekranda bir donma oldu, onu bekliyorum arkadaşlar.
+
+76
+00:16:49,652 --> 00:17:07,872
+Sıra bundaydık. X1'in değili, X1'in değili, X2, X2, X3 ve X4 şeklinde artı.
+
+77
+00:17:08,211 --> 00:17:14,452
+Sırasıyla gidiyorum. X1, X2'nin değili, X3'ün değili, X4'ün değili.
+
+78
+00:17:15,352 --> 00:17:16,892
+Sırasıyla mintermler.
+
+79
+00:17:17,491 --> 00:17:32,451
+Artı, X1, X2 üstü, X3 üstü, X4. Artı diyelim, şu son iki tane biri yazacağız.
+
+80
+00:17:45,395 --> 00:17:50,175
+X1, X2 üstü, X3, X4 şeklinde.
+
+81
+00:17:50,855 --> 00:17:57,036
+Burada asıl cümle şu, X3 ve X4 seçim uçları olsun diyor.
+
+82
+00:17:57,576 --> 00:18:04,795
+Hep bu sadeleştirmemi yaparken arkadaşlar, bunun, ben sonuçta şunu kullanacağım.
+
+83
+00:18:05,475 --> 00:18:07,335
+Bir mux yapacağım arkadaşlar.
+
+84
+00:18:08,375 --> 00:18:12,155
+Şurası S1 ucu, şurası S0 ucu arkadaşlar.
+
+85
+00:18:13,203 --> 00:18:16,423
+X3 ve X4'ü kullanacağım.
+
+86
+00:18:16,864 --> 00:18:42,864
+Şuna X3'ü, şuna X4'ü kullanayım. Şimdi tabii burada sıralı vermemiş kitaptaki örnekte. Normalde en ağırlıklı bit sola yazılır, en az ağırlıklı bit sağ tarafa yazılır. Ama burada indisler farklı bir şekilde vermiş. Buna muhakkak dikkat edin arkadaşlar. Buradaki en az ağırlıklı bit hangisi? X4. En ağırlıklı bit X1. Sırasıyla...
+
+87
+00:18:43,152 --> 00:19:01,032
+X3 ve X4'ü seçim ucu olarak kullanın demişler. Dikkat edin, 4x1 muhz kullandığımızda ise benim en az ağırlıklı girişim I0, en yüksek ağırlıklı girişim ise I3 olacak.
+
+88
+00:19:04,019 --> 00:19:11,960
+S0'a göre daha ağırlıklı baktığımda daha az ağırlıklı, daha ağırlı olanı önce yazıyorum.
+
+89
+00:19:12,699 --> 00:19:20,500
+Denk getiriyorum. Düşük ağırlıklı bitiyse S0'a getiriyorum. Ondan sonra Z çıkışını oluşturuyorum.
+
+90
+00:19:21,259 --> 00:19:25,679
+Şimdi ben demek ki X3 ve X4 ile seçim uçu yapacağıma göre
+
+91
+00:19:26,132 --> 00:19:35,572
+Demek ki o X3 ve X4'ün almış olduğu değerlere göre şu kapılarda oluşacak lojik devreleri vurmaya çalışacağım.
+
+92
+00:19:35,572 --> 00:19:40,692
+Dolayısıyla F dediğimde ilk önce şu parantezi almam lazım.
+
+93
+00:19:41,371 --> 00:19:49,092
+X3, X4, D'li.
+
+94
+00:19:49,811 --> 00:19:53,012
+X3'ün D'li.
+
+95
+00:19:53,471 --> 00:20:06,831
+X4 ve de X3, X4. Eğer bunların parantezine alırsam arkadaşlar, geri kalan ifade buradaki inputlara bağlayacağım ifadeler olmuş oluyor.
+
+96
+00:20:06,831 --> 00:20:20,692
+Yapmaya başlayayım. Önce ifademi X3, X4 üstü parantezine aldığımda arkadaşlar, ne çıkıyor?
+
+97
+00:20:22,099 --> 00:20:39,219
+X1, X1, X2 üstü ifadesi çıkıyor. O da nerede? X3, X4 üstü nerede vardı? Göstereyim size. Şurada.
+
+98
+00:20:40,819 --> 00:20:48,539
+Artı, bu sefer başka var mı X3, X4 üstü? Yok. Bu sefer X3 üstü.
+
+99
+00:20:49,779 --> 00:20:55,599
+X4 parantezine aldığımda ise, iki tane ifade var öyle.
+
+100
+00:20:56,599 --> 00:21:13,219
+X1'in üstü, X2, artı, X1, X2 üstü, X3'ün üstü, X4, X3'ün üstü, X4.
+
+101
+00:21:13,219 --> 00:21:14,719
+Bir tanesi şurada.
+
+102
+00:21:15,635 --> 00:21:21,695
+X3'ün üstü X4. Bir tanesi de burada arkadaşlar. Ortak parantezini aldım. Artık diyorum.
+
+103
+00:21:21,695 --> 00:21:42,375
+Bu sefer de X3 çarpı X4 üstü parantezini aldığımda ise X1, X2'nin değiliği artı X1, X2 üstü artı
+
+104
+00:21:43,188 --> 00:21:51,288
+X3, X4 parantezini aldığımda ise arkadaşlar, burada 3 tane ifade var. Bakın.
+
+105
+00:21:52,208 --> 00:21:56,988
+1, 2 ve 3 tane ifade var.
+
+106
+00:22:10,612 --> 00:22:15,492
+Artı, X1, X2 üstü şeklinde gidiyor.
+
+107
+00:22:16,672 --> 00:22:24,231
+Şimdi burada gerekli sadeleştirmeleri yaparsak şayet, önce bir sadeleştirmeye geçelim bakalım.
+
+108
+00:22:24,392 --> 00:22:30,032
+Şu parantez içlerine, sade olanları zaten sade bırakacağız.
+
+109
+00:22:31,112 --> 00:22:34,412
+Yazacak olursak, X3, X4.
+
+110
+00:22:34,996 --> 00:22:49,016
+Sadeleşti mi? Zaten en sade halinde. X1 çarpı X2 üstü, artı X3 üstü X4.
+
+111
+00:22:50,816 --> 00:22:53,196
+Baktığımızda ki buradaki ifade ne arkadaşlar?
+
+112
+00:22:53,196 --> 00:23:01,996
+Şuradaki ifade içerisi X1 ile X2'nin X1 ile
+
+113
+00:23:02,528 --> 00:23:07,208
+X2'nin XOR ifadesi. Öyle değil mi arkadaşlar?
+
+114
+00:23:08,947 --> 00:23:09,387
+Şimdi,
+
+115
+00:23:11,708 --> 00:23:13,427
+Devam edelim.
+
+116
+00:23:15,128 --> 00:23:19,947
+X3, X4 üstüne baktığımız zaman,
+
+117
+00:23:21,887 --> 00:23:24,548
+Biz burada, burada ne yapmış bakalım?
+
+118
+00:23:31,155 --> 00:23:44,556
+X3, X4 üstü, X3, X4 üstündeyse, ortak paranteze almış, şu şekilde, X2 ortak parantezine, çarpı,
+
+119
+00:23:49,076 --> 00:24:14,416
+X1'in değili, çarpı, X1, artı, pardon, artı. Burası da ne verecek arkadaşlar, şurası bizim için? 1 verecek. Sadece X2 kalmış olacak. Artı, devam edelim. X3, X4 parantezini aldığımızda, X3,
+
+120
+00:24:14,900 --> 00:24:20,680
+X4 parantezine getirdiğimizde ise, bunu bir şey yapalım.
+
+121
+00:24:22,519 --> 00:24:25,760
+X1 parantezini alalım önce.
+
+122
+00:24:26,760 --> 00:24:29,559
+X1'in değilinin parantezini alalım.
+
+123
+00:24:29,559 --> 00:24:39,000
+X2 üstü, artı X2, artı X1, X2 üstü.
+
+124
+00:24:40,243 --> 00:24:53,863
+Şurası ne olacak arkadaşlar? Burası da 1. Ondan sonra şu şekilde halletmiş olduk. Arkasından şöyle yapabiliriz.
+
+125
+00:24:53,863 --> 00:25:05,323
+X1 üstü artı X1 X1 X2 üstü parantezi. Bunu da dağıtacak olursak arkadaşlar.
+
+126
+00:25:08,019 --> 00:25:26,519
+X1 üstü artı X1 çarpı X1 üstü artı X2 üstü. Bu ne olacak arkadaşlar? Burası da hızlı kesim 1 verecek. Şu ifadenin içi X1 üstü artı X2 üstü olmuş olacak.
+
+127
+00:25:34,996 --> 00:25:47,476
+durumlarına göre benim çıkışım, I girişlerim, I girişlerim şu olacak. Örneğin şurası sıfırıncı, birinci, ikinci, üçüncü girişim olsun.
+
+128
+00:25:48,196 --> 00:26:00,176
+Yani sırasıyla I, X'ler, pardon oraya başka bir şey diyeyim. I, A diyeyim buraya. Şurası A olsun.
+
+129
+00:26:03,220 --> 00:26:07,520
+00, 01, 10 ve 11 alma durumda.
+
+130
+00:26:08,000 --> 00:26:13,280
+00 geldiğinde, bu toplamda hangisi çalışacak arkadaşlar 00 geldiğinde?
+
+131
+00:26:14,640 --> 00:26:16,180
+Şurayı şöyle yapayım.
+
+132
+00:26:16,300 --> 00:26:20,780
+00 geldiğinde sadece bu ifade arkadaşlar çalışacak.
+
+133
+00:26:21,420 --> 00:26:25,640
+Diğer bütün ifade, şunlar 0 olmuş olacak.
+
+134
+00:26:26,031 --> 00:26:32,171
+Dolayısıyla ilk ifade burada X1 çarpı X2'nin üstü oluyor.
+
+135
+00:26:32,991 --> 00:26:36,291
+İkinci ifade arkadaşlar hangisi çalışacak?
+
+136
+00:26:36,291 --> 00:26:38,271
+Sadece bu ifade çalışacak.
+
+137
+00:26:39,111 --> 00:26:43,671
+X1, XOR, X2 olmuş olacak.
+
+138
+00:26:44,871 --> 00:26:52,171
+Aynı şekilde buraya baktığımızda 1, 0 geldiğinde, bakın X3, 1 burası 0 olduğunda şayet.
+
+139
+00:26:52,723 --> 00:26:56,303
+Şurası da S1, S0 uçları olmuş oluyor.
+
+140
+00:26:57,323 --> 00:26:59,423
+X2'nin üstü gelmiş olacak.
+
+141
+00:27:00,023 --> 00:27:07,223
+1 artı 1 ile X1 artı X2'nin ikisinin de D ile gelmiş olacak.
+
+142
+00:27:08,003 --> 00:27:12,263
+Eğer çizecek olursam, şöyle bir devre olmuş olacak aslında.
+
+143
+00:27:14,303 --> 00:27:17,003
+4 çarpı 1 muksum olacak.
+
+144
+00:27:17,003 --> 00:27:19,003
+Bir tane çıkışım.
+
+145
+00:27:19,892 --> 00:27:27,892
+Şuraya S1 ucu, şurası S03'ü, şurası X3, X4. Birinci uca ne bağlanacak arkadaşlar?
+
+146
+00:27:29,892 --> 00:27:44,892
+X1 ile birinci uca baktığımda X1 ile X2'nin değili.
+
+147
+00:27:46,740 --> 00:28:13,740
+Ve çalışacak bir elema. Burası I0. I1 ne olacak arkadaşlar? Şöyle baktığımda, X1 ile X2'nin EXOR'u, I2, X2'nin D'li, burası ne olacak I3 arkadaşlar? X1'in D'li, şöyle yapabilirim onu da.
+
+148
+00:28:14,420 --> 00:28:22,880
+X1'in değili, X2'nin değili, bunlar toplanıyor. Şöyle.
+
+149
+00:28:27,412 --> 00:28:29,012
+Şöyle bağlanıyor arkadaşlar.
+
+150
+00:28:32,980 --> 00:28:56,639
+Bu soru anlaşıldı mı arkadaşlar? Bu soruyla ilgili sormak istediğiniz bir şey var mı? Gördüğünüz gibi 4 çarpı bir mux elemanıyla beraber bir fonksiyonu kullandık. Sadece girişlerindeki ifadeleri görüşe dayalı olarak azalttık ve devam etmiş olduk arkadaşlar.
+
+151
+00:28:59,796 --> 00:29:08,716
+Şimdi diğer bir sorumuza geçelim. Örnek 2 diyelim. Sorumuz var mıydı?
+
+152
+00:29:09,435 --> 00:29:10,855
+Hocam sesim geliyor mu şu anda?
+
+153
+00:29:11,516 --> 00:29:12,056
+Geliyor evet.
+
+154
+00:29:12,996 --> 00:29:19,776
+Hocam bu yukarıdaki yaptığınız işlemi anladım da biz burada tam olarak toplamamı da yaptık. Ne yaptık hocam burada tam olarak biz? Bu MOOC's da?
+
+155
+00:29:20,895 --> 00:29:24,316
+Bu MOOC's ile beraber şu fonksiyonu gerçekleştirdik biz.
+
+156
+00:29:24,915 --> 00:29:50,175
+Dedim ya en başta anlatırken, normalde biz böyle bir fonksiyon versem ben size, ne yapıyordunuz? Siz Karnaugh haritalarına ulaşıyordunuz. Karnaugh haritalarından indirgenmiş ifadeleri buluyordunuz. Onun yerine biz burada mintermler şeklinde yazdık. Aynı şurada olduğu gibi. Ondan sonra seçim uçları olarak bize söylemişlerdi. X3 ve X4'ü seçim ucu olarak belirleyin. Biz de X3-X4 parantezini alarak
+
+157
+00:29:50,511 --> 00:29:53,751
+O girişlerin nasıl yapılandırılması gerektiğini söyledim.
+
+158
+00:29:54,291 --> 00:30:02,671
+Bu 4x1 mux yerine sen Karnaugh haritalarıyla da indirgenmiş ifadeyi bulsan yine z ucundan aynı çıkışı alırsın.
+
+159
+00:30:04,271 --> 00:30:08,971
+Çok efektif bir devre mi? Değil belki ama aynı sonucu üretiyor.
+
+160
+00:30:16,435 --> 00:30:19,475
+Anlaşıldı mı? Anlaşıldı hocam.
+
+161
+00:30:21,135 --> 00:30:37,875
+Peki, eğer bu doğruluk tablosunda verilen ifadeyi bu sefer X3, X4 yerine, X3 ve X4 seçim ucu yerine X1 ve X2 ile yapın desem.
+
+162
+00:30:37,875 --> 00:30:43,955
+Hani seçim uçları böyle olsa. X1 daha anlamlı bir.
+
+163
+00:30:44,723 --> 00:30:52,443
+Onu S1'e yerleştirdim. Bunu da S0'a yerleştirdim. Bu sefer hangi parantezi almamız lazım arkadaşlar?
+
+164
+00:30:53,443 --> 00:31:02,644
+O parantezi alacağız ki o parantezin içindeki ifadeler benim şu kapılarımın girişindeki devreleri bana çıkarabilsin.
+
+165
+00:31:02,644 --> 00:31:11,764
+Bu sefer de arkadaşlar X1, X2'nin değili, X1, X2'nin değili,
+
+166
+00:31:12,723 --> 00:31:13,723
+Şöyle yapayım.
+
+167
+00:31:19,571 --> 00:31:30,751
+Şöyle, X2'nin, arkasından X1, X2'nin değili ve de X1, X2 parantezini alacak olursam arkadaşlar.
+
+168
+00:31:32,591 --> 00:31:35,672
+Bu ortak parantezi oluşturalım bakalım.
+
+169
+00:31:37,672 --> 00:31:46,271
+X1 üssü, X2 üssü parantezini aldığımda, X3,
+
+170
+00:31:47,347 --> 00:32:10,927
+X4 üstsü artı X3, X4, X1 üstsü, X2 parantezini aldığımda ise X3, X4 üstsü artı X3, X4 artı, devam ediyorum.
+
+171
+00:32:14,099 --> 00:32:22,160
+x1 x2 üstü parantezini aldım. x1 x2 üstü parantezini aldım. Şöyle yapalım bunu da alta indireyim.
+
+172
+00:32:26,644 --> 00:32:52,943
+Şunu doğru dürüst bir yazayım. F eşittir, artı, altına yazıyorum. X1, X2 üstü parantezini aldığımda da, X3, X4 üstü, artı, X3 üstü, X4, artı, X3, X4 üstü,
+
+173
+00:32:54,067 --> 00:33:09,648
+Artı, X3, X4, artı, X1, X2 parantezine aldığımda da, bakalım X1, X2 parantezine alabildiğim var mı burada?
+
+174
+00:33:10,848 --> 00:33:19,188
+X1, X2 parantezine aldığımda, bakalım, X1, X'e 0 yazmış yanımda, o yüzden bakıyorum.
+
+175
+00:33:20,403 --> 00:33:21,364
+Bakıyorum.
+
+176
+00:33:24,324 --> 00:33:28,423
+X1, X2 ikisinin de 1, 1 olduğu.
+
+177
+00:33:30,504 --> 00:33:33,444
+Şu sonlardakiler de olması lazım.
+
+178
+00:33:35,524 --> 00:33:38,744
+İkisinin de 1, 1 olduğu bir tane ifade olması lazım.
+
+179
+00:33:51,571 --> 00:33:57,391
+X1, X2. Bunun için hiçbir yerde yok, öyle değil mi?
+
+180
+00:34:03,859 --> 00:34:12,259
+Evet, x1, x2 üstü hiç yok. Dolayısıyla ne yapmam lazım buraya? Sıfır eklemem lazım.
+
+181
+00:34:13,779 --> 00:34:20,179
+Şimdi ortak paranteze alarak ilerlemeye devam edelim. Şuraları da bir sileyim.
+
+182
+00:34:22,880 --> 00:34:29,759
+Ortak paranteze alarak devam edelim. Şu fonksiyonu eşittir dedik.
+
+183
+00:34:31,827 --> 00:34:40,268
+Şöyle, X1 çarpı X2'nin üstü, X3 parantezini alıyorum şuraya arkadaşlar.
+
+184
+00:34:40,547 --> 00:34:45,768
+X3, X4 üstü, artı X4.
+
+185
+00:34:46,807 --> 00:34:48,827
+Ve yaptığım zaman ne oluyor arkadaşlar?
+
+186
+00:34:49,627 --> 00:34:50,988
+Şurası 1 olmuş oluyor.
+
+187
+00:34:51,648 --> 00:34:53,768
+Şurası sadece X3 kalmış oluyor.
+
+188
+00:34:55,608 --> 00:34:58,207
+Arkasından ikinciye geçelim.
+
+189
+00:34:58,931 --> 00:35:21,931
+X1 üstü X2. Burada hangi parantezi alalım arkadaşlar? X4 parantezini alalım. Şurada. X4 parantezini aldığımda X3 üstü artı X3. Burası da ne yapar? Burası da 1. Demek ki bu ifade X4 kaldı. Artı diyorum.
+
+190
+00:35:24,211 --> 00:35:29,291
+X1, X2 üstü, şurada ne yapacağız arkadaşlar?
+
+191
+00:35:31,051 --> 00:35:48,291
+X1, X2 üstü, önce şurada X3 üstü parantezini alırsam, X4 üstü artı X4 artı, şurada da X3 parantezini alayım, şuradaki ifade de.
+
+192
+00:35:49,043 --> 00:36:02,224
+X4 üstü artı X4, şöyle bir pantaz alınma, burası 1, burası, burası da 1. Peki, şurada ne kaldı geriye?
+
+193
+00:36:02,844 --> 00:36:14,144
+Burada ne kaldı? X3 üstü artı, artı X3. Bu da ne verecek? 1 verecek. Şu ise zaten 0 veriyordu.
+
+194
+00:36:14,996 --> 00:36:18,376
+Bu durumda sadeleştirelim bakalım.
+
+195
+00:36:19,776 --> 00:36:26,976
+X1, X2 üstü, şuradan çarpı X3, artı, şuradan ne gelecek?
+
+196
+00:36:27,876 --> 00:36:35,876
+X1 üstü, X2, şuradan X4 gelecek, artı, buradan ne geliyor arkadaşlar?
+
+197
+00:36:37,276 --> 00:36:40,516
+X1 üstü, pardon üstü yok.
+
+198
+00:36:41,076 --> 00:36:51,935
+X1, X2 üstü, çarpı 1, gelmiyor, artı, burada ne vardı? Artı burada bir sıfır ifadesi vardı.
+
+199
+00:36:54,016 --> 00:37:07,395
+X1, X2 ile sıfırı çarptığımız bir ifade. Bunun da şeyini yapacak olursak arkadaşlar, bu şekilde tablosunu yapacak olursak, X1, X2.
+
+200
+00:37:08,724 --> 00:37:24,724
+Şöyle, burası benim, I A'mı versin. Burası da A'nın değerleri, 0, 1, 2, 3. Burada 0, 0, 0, 1, 1, 0, 1, 1.
+
+201
+00:37:25,824 --> 00:37:34,444
+I A'ya ne geliyor arkadaşlar, 0'sa şayet, sadece şu geliyor, X3, şuraya X4.
+
+202
+00:37:35,956 --> 00:38:00,856
+Buna ne geliyor? X1x üstüne buna 1 geliyor. Buna ne geliyor? 0 geliyor. Eğer bunu çizecek olursak, bakın bu daha az maliyetli. Eğer seçim ucunu, seçim ucunu şöyle değil de, bakın bu devrenin eşiti neymiş? Aynen 4x1 mux varmış, bir çıkış ucu varmış. Bakın.
+
+203
+00:38:01,715 --> 00:38:16,795
+Eğer ben burada bunu X1, bunu X2 seçersem, şurası S1, şurası S0, girişin ilkinde X3, X4, şurada 1, burada 0 varmış.
+
+204
+00:38:16,895 --> 00:38:24,235
+Bakın, arkadaşlar tek bir MUX'la devreyi gerçekleştirmiş oldum. Bakın, burada bir sürü eleman yerleştirmiştim.
+
+205
+00:38:24,692 --> 00:38:45,351
+Oysa aynı ifadeyi seçim ucunu değiştirerek, bakın aynı bu ifadeyi seçim ucunu değiştirerek ekstra bir kapı kullanmadan sadece giriş uçlarını X3'ü, X4'ü buraya vererek I0, I1, I2 ve I3'ü vererek ne yapmış oldum?
+
+206
+00:38:45,351 --> 00:38:50,391
+Ta sadece bir mux kullanarak fonksiyonu gerçekleştirmiş oldum.
+
+207
+00:38:52,244 --> 00:39:07,484
+Benim bu durumda seçimim çok önemli. Yani seçim uçlarını belirleyebilmem çok önemli. Bir de arkadaşlar doğru ifade yazıyor. Mesela sınavlarda illa bu şekilde MUX sorusu gelmeyebilir kendimize sizlere.
+
+208
+00:39:19,572 --> 00:39:32,052
+Burada diyelim ki 1. Demek ki bu ne zaman 1 verecek? XY1 olduğu zaman 1 ile çarpılıyor.
+
+209
+00:39:32,712 --> 00:39:44,972
+Veya X üstü. Burada nasıl bir ifade olacak? XY1 örneğin. XY burası neydi? I1. Öyle değil mi? Ne zaman bu seçilecek?
+
+210
+00:39:45,780 --> 00:40:04,740
+X, Y üstü olduğu zaman seçilecek. Ne olmuş olacak bu? X üstü. Baktığımızda, niye aktarmış oluyor çıkışa? X üstüne aktarmış oluyor. Buna da dikkat edeceğiz arkadaşlar. Anlaştık mı? Şu şekilde ayrıca bir şekilde yazalım bunları.
+
+211
+00:40:04,740 --> 00:40:12,340
+Evet, şimdi bu anlaşıldıysa, dağıtıcılar demultiplexer.
+
+212
+00:40:12,916 --> 00:40:14,836
+Konusuna geçeceğim arkadaşlar.
+
+213
+00:40:16,636 --> 00:40:20,576
+Demultiplexer konu, bu konuyla ilgili anlamadığınız bir yer var mı arkadaşlar?
+
+214
+00:40:22,096 --> 00:40:25,155
+Hocam, son söylediğiniz yeri bir daha tekrar edebilir misiniz?
+
+215
+00:40:26,576 --> 00:40:31,076
+Yani bu tarz devrelerin seçiminde arkadaşlar, şuna dikkat edeceksiniz.
+
+216
+00:40:32,096 --> 00:40:37,115
+Ben I0 ucunu ne zaman seçmiş oluyorum burada?
+
+217
+00:40:39,115 --> 00:40:40,195
+I0 ucunu.
+
+218
+00:40:40,559 --> 00:41:03,559
+I0, şöyle demek lazım buradaki ifadede. I0 çarpı X üstü, X, Y üstünde seçmiş oluyorum. Artı I1, X, Y üstünde seçmiş oluyorum. Bunu demeye çalışıyorum. Anlaştık mı? I0'ın...
+
+219
+00:41:04,244 --> 00:41:12,144
+Fonksiyona katılabilmesi için ne olması lazım? X üstü Y'nin ikisinin de sıfır olduğu ifade lazım.
+
+220
+00:41:13,203 --> 00:41:20,043
+Artı I2 X üstü Y yani sıfır bir olduğu durum.
+
+221
+00:41:20,903 --> 00:41:23,344
+Burası, pardon burada yanlış yaptım herhalde.
+
+222
+00:41:24,123 --> 00:41:27,583
+Şurayı, şurayı baştan çığ.
+
+223
+00:41:28,083 --> 00:41:54,083
+Şöyle yapayım, baştan. Benim buradaki Z ifadem aslında şöyle de yazılabilir. Z ifadem, pardon bir gecikme oluyor. Z, Z ifadem, yani benim çıkışım. I0 çarpı, neyse o I0'daki ifade, onu koymanız lazım oraya. I0 çarpı.
+
+224
+00:41:54,643 --> 00:42:10,703
+X, Y üstü, X ve Y üstü. Yani anca şurasına 0, 0 gelirse I0, Z'de gözükecek. Artı, I1, I1'in çıkışta gözükmesi için ne olması lazım?
+
+225
+00:42:11,364 --> 00:42:15,103
+X, Y üstü, değil mi? Pardon.
+
+226
+00:42:22,608 --> 00:42:29,948
+I2'nin çıkışta gözükmesi için de X, Y üstü olması lazım. 1, 0 gelirse.
+
+227
+00:42:30,408 --> 00:42:36,648
+Buna 1, 0 gelecek ki, ben buradaki I2'yi görmüş olayım.
+
+228
+00:42:37,448 --> 00:42:49,888
+Artı I3, X, Y. Demek ki X, Y, Y, X'ine birden 1 gelirse, anca o zaman şuradaki I3'e bağlı ifade neyse, örneğin 0 ise 0.
+
+229
+00:42:50,708 --> 00:43:01,967
+X1 üstü artı X3 ise o. Neyse oraya bağlı ifade çıkışa yansıtılmış oluyor arkadaşlar. Anlaştık mı?
+
+230
+00:43:07,860 --> 00:43:09,420
+Herhangi bir soru gelmedi.
+
+231
+00:43:13,235 --> 00:43:20,056
+Ve bu durumda dağıtıcılar, burada dağıtıcılar.
+
+232
+00:43:23,795 --> 00:43:25,335
+Demultiplexers
+
+233
+00:43:29,556 --> 00:43:35,736
+Bunlar da kısaca arkadaşlar, DEMUS olarak adlandırılıyor arkadaşlar.
+
+234
+00:43:36,036 --> 00:43:41,216
+Deminki devre elemanının tam tersi mantığıyla çalışıyor bunlar da arkadaşlar.
+
+235
+00:43:42,296 --> 00:43:45,736
+Şöyle çizecek olursam, deminkinde kaça kaçtı?
+
+236
+00:43:45,736 --> 00:43:55,316
+2 üzeri N'den 1'eydi. Bu da 1 çarpı 2 üzeri N. Bir tane girişi var.
+
+237
+00:43:56,148 --> 00:44:13,467
+Çıkışta, yani bir tane girişi var, I girişi, çıkışlardan birine gönderiyor. Tam tersi mantıkla çalışıyor. Demek ki çıkışım Z0'dan Z2 üzeri N-1'e kadar gidiyor.
+
+238
+00:44:13,936 --> 00:44:18,976
+Dolayısıyla hangi çıkışa gittiğini kim belirleyecek? Bir seçim ucu belirleyecek.
+
+239
+00:44:19,436 --> 00:44:26,255
+2 üzeri N tane çıkış varsa demek ki SN, S0 olmak üzere.
+
+240
+00:44:27,076 --> 00:44:30,996
+Şöyle seçim uçları da bu şekilde belirtiliyor arkadaşlar.
+
+241
+00:44:31,996 --> 00:44:34,855
+S0, least significant bit.
+
+242
+00:44:35,795 --> 00:44:38,275
+SN, most significant bit olmak üzere.
+
+243
+00:44:40,436 --> 00:44:51,816
+least significant output, most significant output da Z2 üzeri n-1 olarak hesaplanabilir.
+
+244
+00:44:52,076 --> 00:45:00,996
+Peki, bu tam tersi mantıkla çalışan devre elemanı en baştaki derste belirtmiştim.
+
+245
+00:45:02,235 --> 00:45:03,816
+Dersin başında belirtmiştim.
+
+246
+00:45:07,827 --> 00:45:31,047
+Kullanılıyor demiştim. Özellikle sayısal haberleşme sistemlerinde basit bir santral yapısı burada tasarlanabilir arkadaşlar. Örneğin, şuraya 2 üzeri N çarpı bir mux oluşturalım.
+
+247
+00:45:34,003 --> 00:45:42,344
+I0'dan I2 üzeri N-1'e kadar telefon abonelerinin konuştuğu hatlar olsun.
+
+248
+00:45:43,104 --> 00:45:46,824
+Basit bir santral yapısı tasarlıyoruz şu anda size.
+
+249
+00:45:46,824 --> 00:46:00,584
+Tek bir hattımız var. Diğer tarafta ise 1 çarpı, 1 çarpı, 2 üzeri N'lik, demuks var.
+
+250
+00:46:02,643 --> 00:46:12,103
+Bakın, bunun da çıkışları Z0'dan Z2 üzeri N-1'e kadar gidiyor.
+
+251
+00:46:13,063 --> 00:46:20,003
+Şimdi ben I0'la aboneyi I0'la görüştürmeye çalışıyorum.
+
+252
+00:46:20,483 --> 00:46:23,643
+Ben 2 üzeri en inci aboneyi şununla görüştürmeye çalışıyorum.
+
+253
+00:46:23,744 --> 00:46:24,844
+Ve tek bir adım var.
+
+254
+00:46:25,643 --> 00:46:27,443
+Sırasıyla ne yapmam lazım arkadaşlar?
+
+255
+00:46:30,835 --> 00:46:46,576
+Şöyle bakacak olursam, şurası benim ortak bir seçici kanalım olursa, seçici, seçiciler, sanki bir burada iki tarafı da ayarlıyor.
+
+256
+00:46:46,576 --> 00:46:56,715
+S0'dan, şöyle baktığımda, S, N, Eksi 1, S0'dan.
+
+257
+00:46:57,204 --> 00:46:59,964
+SN-1'e kadar ayarlıyor.
+
+258
+00:47:01,824 --> 00:47:09,144
+Bakın, buradaki seçici, eğer iki taraflı düşüncek olursanız şöyle.
+
+259
+00:47:09,864 --> 00:47:16,364
+Örneğin buradaki 00 seçti, burada ise 00 seçti, 3 bitlik konuşalım.
+
+260
+00:47:17,224 --> 00:47:20,564
+Bu tarafta ise, bir saniye arkadaşlar.
+
+261
+00:47:43,476 --> 00:48:07,295
+Evet, şimdi bu tarafta seçici, arayan taraf bu olsun mesela, arayan taraf. Bizim seçici tarafımız diyor ki, sen 00'ın oğlu abone, yani şurası, arıyor. Bu hattı bu kullanacak, bunlar telefonu diğer şeyler, aboneler aramadı. Tek bir hat var burada, medium diyelim buraya.
+
+262
+00:48:08,019 --> 00:48:11,119
+Yani ortam, arama ortamı, kablo, fiber, neyse.
+
+263
+00:48:12,000 --> 00:48:15,139
+Ve de buradaki 4 nolu abone ile konuşmak istiyor.
+
+264
+00:48:16,019 --> 00:48:19,139
+Geliyor şöyle Z3.
+
+265
+00:48:19,956 --> 00:48:26,036
+Yani 4. abone, Z3 nolu abone, 0'dan başlayacak olursak 3 nolu aboneyle.
+
+266
+00:48:26,695 --> 00:48:31,235
+Sağ taraftaki seçicinin ne seçmesi lazım? 0, 1, 1 seçmesi lazım.
+
+267
+00:48:31,715 --> 00:48:37,936
+Demek ki burası sanki bir santral ara birimi. Biz buradan 0, 0 seçtiğimizde buna hak veriyoruz.
+
+268
+00:48:39,255 --> 00:48:45,295
+0, 0, 1 verdiğimizde Z3'e veriyoruz. Hat bunları aktarmış oluyor. 0, 0 seçildiği zaman.
+
+269
+00:48:45,811 --> 00:49:06,771
+MUX'da I0 dışarı bilgisini veriyor. Bu dışarıdan gelen bilgi ise burada seçilen 1, 1, 0. Yani 3 nolu abone. Burası least significant bit, burası most significant bit. 3 nolu abone bu hattı kullanmış oluyor. Daha sonra başka birine geçecek diyelim.
+
+270
+00:49:07,668 --> 00:49:29,907
+0, 1, 0'a geçti. Bu sefer 2'nin oğlu abone alıyor hattı. Kimle görüşmek istiyor örneğin? 1, 0, 1 ile görüşmek istiyor. 1, 0, 1 hangisi oluyor? Z5. Gördüğünüz gibi basit, analog, sayısal bir santral sistemi bu şekilde oluşturuyor arkadaşlar.
+
+271
+00:49:30,579 --> 00:49:51,859
+Bir multiplexer sistemi gibi hattı ilgili aboneleri. Bakın kaç tane abone var? 2 üzeri n-1 abone var. Şurada ne kadar abone var? 2 üzeri n-1 abone var. Santrale bağlı veya karşı taraftaki santrale bağlı bir abone sayısından bahsediyoruz arkadaşlar.
+
+272
+00:49:58,164 --> 00:50:08,484
+Yavaş yavaş, ALU tasarımına doğru gideceğiz. Aradaki konuları da anlatalım.
+
+273
+00:50:08,484 --> 00:50:16,484
+Şimdi saat 14.48 arkadaşlar, kod çözücüyü de anlatalım, ondan sonra devam edelim isterseniz.
+
+274
+00:50:18,384 --> 00:50:23,144
+Kod çözücü, kod çözücü.
+
+275
+00:50:24,659 --> 00:50:31,819
+Bu da arkadaşlar, decoder olarak adlandırılıyor. Bu da değişik bir kombinezonsal devre.
+
+276
+00:50:32,759 --> 00:50:42,359
+Kod çözü en bitlik bir sözcüğün kodunu çözüp olası en çok, iki üzeri en çıkış yolundan sadece birini aktif hale getiren bir kombinezonsal devre.
+
+277
+00:50:43,259 --> 00:50:51,599
+Açıklayacak olursam, örneğin, decoderler ise arkadaşlar, N çarkı iki üzeri N şekilde.
+
+278
+00:50:52,371 --> 00:50:55,891
+Yani N giriş var, 2 üzeri N tane çıkış var.
+
+279
+00:50:56,411 --> 00:51:03,791
+Ve çıkışlardan sadece birini şu belirtilen N tane bitin değerine göre belirlemiş oluyor.
+
+280
+00:51:04,051 --> 00:51:09,692
+Örneğin, 3 yapalım. 3 çarpı 8'lik bir dekodere.
+
+281
+00:51:10,591 --> 00:51:13,051
+Dekoder nasıl çalışıyor? Ona bakalım.
+
+282
+00:51:14,151 --> 00:51:19,131
+Önce girişler ve arkasından çıkışlar.
+
+283
+00:51:20,052 --> 00:51:30,052
+Bunları yapacak olursak şöyle, girişlerimiz X, Y, Z olsun, çıkışlarımız da D0.
+
+284
+00:51:33,251 --> 00:51:35,992
+Şöyle yapalım, D0 sonu alalım.
+
+285
+00:51:38,052 --> 00:51:42,092
+Kaç tane, 3 tane giriş olursa şayet kaç tane çıkış olmak zorunda?
+
+286
+00:51:42,835 --> 00:51:56,495
+8 tane çıkışı olmak zorunda. D7, D6, D5, D4, D3, D2, D1, D0 şeklinde. Şöyle bir devre elemanı arkadaşlar.
+
+287
+00:51:59,355 --> 00:52:10,395
+Burada şurası en yüksek bitimiz olsun. X yani input 2'miz, input 1'miz, input 0'miz.
+
+288
+00:52:11,059 --> 00:52:18,220
+İmput 2, input 1, input 0'ımız. X, Y, Z'yi verdik.
+
+289
+00:52:18,840 --> 00:52:27,460
+Çıkışımızda da arkadaşlar 4, 5, 6, 7, 8, D 0'dan D7'ye kadar gitmiş oluyor.
+
+290
+00:52:28,260 --> 00:52:36,460
+Şimdi burada şayet X, Y, Z girişinde 0, 0, 0 varsa arkadaşlar,
+
+291
+00:52:36,992 --> 00:52:51,532
+Bunun sayısal değeri ne? Sayısal değeri 0 değil mi? Sadece D01 verip diğerleri 0 veriyor arkadaşlar. Çıkışlardan sadece birini aktif ediyor.
+
+292
+00:52:52,292 --> 00:53:04,052
+Örneğin 5 verdi diyelim. Sayısal değer 5. 1-0-1 geldi diyelim buna. Yani 1-0-1 geldi. Bu durumda hangisi aktif oluyor arkadaşlar? 5 ne oldu değer?
+
+293
+00:53:04,628 --> 00:53:28,847
+1 oluyor. Şöyle çizelim bunu. Şöyle. Diğerlerinin hepsi 0 olmuş oluyor arkadaşlar. Aynı şekilde diyelim ki 7. 1, 1, 1 verdik diyelim. Durumda hangisi 1 oluyor sadece arkadaşlar? D7 çıkışı.
+
+294
+00:53:29,215 --> 00:53:46,715
+1 oluyor, diğer hepsi 0 olmuş oluyor. Dekoderin mantığı seçilen, verilen giriş değerine göre ilgili çıkışı arkadaşlar 1 yapmak. Bakın bunlar istenilen 1 oluyor, diğerleri 0 oluyor.
+
+295
+00:53:55,795 --> 00:54:20,495
+Sıfırlayan var. Yani burada da arkadaşlar X, Y, Z veriliyor. Bu da tümleyen çıkışlı olsun. Burada da arkadaşlar şöyle yapıyor. Örneğin 7 verdim diyelim. 7 verdim diyelim. Tümleyen çıkışlı da. O şu şekilde gösteriliyor. D0, D1.
+
+296
+00:54:21,427 --> 00:54:37,867
+D2, şöyle çıkışlarında tümleyen var, D3, D4, D5, D6, şöyle dışarı yapalım bunu da, D7 diyelim.
+
+297
+00:54:38,607 --> 00:54:44,467
+Burada da arkadaşlar tümleyen mantıkla çalışıyorsa şahit, örneğin 7 geldi diyelim.
+
+298
+00:54:45,331 --> 00:55:03,532
+7 geldi. Burası 0 oluyor, diğerlerinin hepsi 1 kalıyor. Bunda da normalde çıkışlar 0. Bunda ise normalde çıkışlar 1. Ama seçilen uç 0 olmuş oluyor. Örneğin, şuraya 7 verdim diyelim.
+
+299
+00:55:04,000 --> 00:55:31,179
+Sadece, 7 verdim diyelim, sadece D0, 0 olmuş oldu. Diğerlerinin hepsi 1'de kalmış oluyor. Tümleyen mantığıyla çalışıyor. Peki, normali bu. Bu da tümleyen çıkışla olmuş oluyor. Onu da şeyden, çıkışında tümleyen mantıkla çalışıyorsunuz bir lojik devre. Sonu şu şekilde gösteriyor. Yani 0 aktif. Aktif edildiğinde 0 üretiyor, 1 değil.
+
+300
+00:55:31,956 --> 00:55:40,456
+Bu ise ne üretiyordu arkadaşlar? Aktif edildiğinde ilgili giriş çıkışı 1 aktif, 0 aktif şeklinde düşünebilirsiniz.
+
+301
+00:55:42,255 --> 00:55:44,695
+Hemen bir tane örnek yapalım.
+
+302
+00:55:46,175 --> 00:55:46,816
+Örnek.
+
+303
+00:55:49,316 --> 00:55:53,816
+Tam toplayıcı devre.
+
+304
+00:55:56,148 --> 00:56:00,367
+Bu tam toplayıcı devrenin kaç tane girişi vardı arkadaşlar?
+
+305
+00:56:01,447 --> 00:56:03,427
+Bir kaç tane çıkışı vardı?
+
+306
+00:56:03,927 --> 00:56:05,467
+Bir toplam çıkışı vardı.
+
+307
+00:56:07,027 --> 00:56:08,628
+Toplam çıkışı.
+
+308
+00:56:09,628 --> 00:56:14,407
+Ve de bir de elde çıkışı vardı.
+
+309
+00:56:14,827 --> 00:56:15,547
+Hatırlarsanız.
+
+310
+00:56:16,547 --> 00:56:20,208
+Bu toplam çıkışı input olarak neleri alıyordu?
+
+311
+00:56:20,688 --> 00:56:23,447
+A, B, şöyle yazacak olursak.
+
+312
+00:56:24,436 --> 00:56:30,976
+A'yı B'ye alıyordu, bir de elde girişini alıyordu. Burası da toplam, burası da eldeydi.
+
+313
+00:56:31,456 --> 00:56:40,996
+Bir de elde girişini alıyordu. Elde çıkışı ise arkadaşlar, A'yı, B'yi ve elde girişini aynı şekilde alıyordu.
+
+314
+00:56:41,735 --> 00:56:44,496
+Peki toplam çıkışı ne zaman bir üretiyordu arkadaşlar?
+
+315
+00:56:47,235 --> 00:56:51,516
+1, 2, 4 ve 7 değerlerinde.
+
+316
+00:56:52,371 --> 00:56:56,672
+1 üretiyordu. Elde çıkışı ise ne zaman e üretiyordu?
+
+317
+00:56:58,831 --> 00:57:00,451
+3, pardon.
+
+318
+00:57:03,152 --> 00:57:09,592
+3, 5, 6 ve 7'de 1 üretiyordu.
+
+319
+00:57:10,351 --> 00:57:11,331
+Bakacak olursak.
+
+320
+00:57:12,411 --> 00:57:13,132
+Şöyle diyelim.
+
+321
+00:57:13,951 --> 00:57:16,572
+A, B, elde girişi.
+
+322
+00:57:17,451 --> 00:57:19,072
+Bu şekilde yapacak olursak.
+
+323
+00:57:19,072 --> 00:57:19,791
+Bakalım.
+
+324
+00:57:20,467 --> 00:57:41,167
+yerlerini tam toplayıcı verirsek, şu şekilde yaparsak, pardon, 4, bakalım, 1, 2, şu şekilde yapılırsak, elde girişi A, B, toplam elde.
+
+325
+00:57:42,420 --> 00:57:48,059
+0 0 0 0 0 1 0 1 0 1 0 1 1.
+
+326
+00:57:50,340 --> 00:57:59,280
+Baktığımızda 1 0 0 1 0 1 1 0 1 1 1.
+
+327
+00:58:00,539 --> 00:58:02,820
+Toplam ne zaman veriyordu arkadaşlar?
+
+328
+00:58:04,280 --> 00:58:08,680
+Bu da 1 1 yani 1 ve 2 de verdi.
+
+329
+00:58:09,652 --> 00:58:18,012
+Şuralar sıfır, bir de dört ve yedide verdi. Bir, bir.
+
+330
+00:58:19,472 --> 00:58:22,692
+Tabi burada elde girişini sona alırsanız farklı değerler çıkar.
+
+331
+00:58:23,372 --> 00:58:26,512
+A'yı başı alırsanız. Ona da dikkat etmeniz lazım.
+
+332
+00:58:26,652 --> 00:58:31,432
+Elde girişi ne zaman veriyormuş? Üçte bir veriyormuş.
+
+333
+00:58:32,307 --> 00:58:39,768
+Bir de 4, 5, 6, 7, 5, 6, 7'de 1 veriyormuş. Evet, hatırlarsanız aynı bu şekilde bulmuş olduk arkadaşlar.
+
+334
+00:58:40,647 --> 00:58:47,307
+Peki bunu kod çözücü devreyle yapmak mümkün mü? Mümkün. Çok basit bir şey var.
+
+335
+00:58:47,307 --> 00:58:52,387
+3x8, decoder.
+
+336
+00:58:54,867 --> 00:59:02,728
+Şöyle girişleri ayarlayacak olursam, elde girişi, burası most significant bit, burada da en ağırlıklı bitti.
+
+337
+00:59:04,187 --> 00:59:09,527
+A ve B, burası da list significant bit. Kaç tane çıkışı olacak arkadaşlar?
+
+338
+00:59:11,887 --> 00:59:18,567
+Sırasıyla 1 geldiğinde, 2 geldiğinde, 4 ve 7 geldiğinde, şuralara yani bakın.
+
+339
+00:59:19,155 --> 00:59:37,815
+Burası 0, 1, 2, 3, 4, 5, 6, 7. 1 geldiğinde 1 üretsin istiyoruz. Tamam. 2 geldiğinde 1 üretsin, 4 geldiğinde 1 üretsin. E tamam o zaman benim çıkışlarımı çok kolay belirleyebilirim ben.
+
+340
+00:59:45,940 --> 00:59:56,039
+D5, D6, D7. Demek ki ben burada 1, 2, 4 ve 7'in oğlu çıkışları.
+
+341
+01:00:13,811 --> 01:00:40,091
+4 girişli bir OR'la verirsem bu benim toplumum olmuş oluyor. İçlerinden bir uç bir olması durumunda çıkış bir oluyor. Aynı mantıkla 3, 5, 6 ve 7. 4 girişli bir OR'la elde girişini elde edebiliyorum.
+
+342
+01:00:41,715 --> 01:01:02,496
+4 girişli OR'u bunlar hani 2 girişli OR'lardan da yapabilirsiniz ama baktığımızda hani teorik olarak bu şekilde aynı fonksiyonu bir decoder ve 2 tane de 4 girişli OR elemanıyla gerçekleştirebiliyorum arkadaşlar.
+
+343
+01:01:05,172 --> 01:01:09,932
+Evet, buraya kadar bir sorunuz var mı arkadaşlar? Bir 10 dakika ara vereceğim.
+
+344
+01:01:12,352 --> 01:01:13,072
+Öbür türlü.
+
+345
+01:01:14,692 --> 01:01:15,852
+Sorumuz var mıydı?
+
+346
+01:01:17,512 --> 01:01:19,372
+[öğrenci], anlaşılıyor mu dersi? Nasıl gidiyor?
+
+347
+01:01:23,891 --> 01:01:28,791
+[öğrenci], iyi gidiyor mu ders?
+
+348
+01:01:31,431 --> 01:01:32,231
+Tamamdır.
+
+349
+01:01:33,911 --> 01:01:35,011
+[öğrenci] nasıl gidiyor ders?
+
+350
+01:01:40,371 --> 01:01:47,051
+[öğrenci]? [öğrenci] mı dinliyor, bilgisayar mı bakalım? Bilgisayar zannedersem. [öğrenci]?
+
+351
+01:01:48,911 --> 01:01:50,311
+İyi gidiyor hocam şu an.
+
+352
+01:01:50,931 --> 01:01:53,291
+Tamam, anlaşılmayan bir yer yok zannedersem.
+
+353
+01:01:56,471 --> 01:02:01,251
+Şimdi bir 10 dakika ara verelim, 15.10'da tekrar görüşmek üzere arkadaşlar.
+
+354
+01:11:58,387 --> 01:12:08,067
+Tekrar merhabalar arkadaşlar. Bir sorunuz yoksa eski slide'ları sileceğim. Yenisinden devam edeceğim arkadaşlar.
+
+355
+01:12:13,811 --> 01:12:25,252
+Şimdiki konumuz arkadaşlar, kodlayıcı, yani encoder olarak geçiyor arkadaşlar.
+
+356
+01:12:26,872 --> 01:12:36,051
+Şimdi, kod çözücü bu devrede arkadaşlar, kod çözücü devredenin tam tersi mantıkla çalışıyor.
+
+357
+01:12:41,844 --> 01:12:54,384
+N'e bir dönüşüm yapıyor arkadaşlar. Şöyle gösterebiliriz. Toplam input sayısı I0'dan I2 üzeri N-1'e kadar gidiyor.
+
+358
+01:12:55,003 --> 01:13:07,103
+Çıkışı ise Z0'dan ZN-1'e kadar gidiyor arkadaşlar.
+
+359
+01:13:08,020 --> 01:13:20,260
+2 üzeri N çarpı N. Bu kodlayıcı bir işareti başka bir lojik devre tarafından işlenebilecek şekle getiren devre olarak tanımlanıyor.
+
+360
+01:13:21,440 --> 01:13:32,260
+Özellikle sayı sistemler arasında dönüşüm yapan 16, 10 ve 8 tabanlı ikili sayı sistemine kodlayıcı devreler bu mantıkla çalışıyor.
+
+361
+01:13:32,260 --> 01:13:34,320
+Örnek olarak verecek olursak,
+
+362
+01:13:35,188 --> 01:13:53,007
+4x2, 4x2'lik bir encoder devresi nasıl çalışıyor ona bakalım. Girişlerimiz ve çıkışlarımız şeklinde tablosunu çizelim. Çalışma mantığını anlayalım.
+
+363
+01:13:55,315 --> 01:14:21,556
+I3, I2, I1, I0. Burası most significant bit, burası less significant bit. Çıkışlarımız ise X ve Y olarak tanımlayalım. Bir de bunun haricinde çıkışlarda hazır diye yani ready diye bir ucumuz bulunuyor arkadaşlar. Bakalım nasıl çalışıyormuş.
+
+364
+01:14:23,060 --> 01:14:34,940
+Şimdi 0-0 girişi için, 0-0-0 girişi için arkadaşlar, X ve Y'de Fi, belirsiz durumdalar.
+
+365
+01:14:35,480 --> 01:14:46,560
+Çünkü hazır durumu olmuyor bu durumda. Yani işlerin hepsine 0 uygulandığında hazır bir sonraki devreye aktarılacak Ready.
+
+366
+01:14:48,180 --> 01:14:57,300
+Ucu sıfırda olmuş oluyor. Karşıdaki devre, bu devrin çıkışının oluştuğunu, ready'nin bir olma durumunda algılıyor.
+
+367
+01:14:58,140 --> 01:15:12,380
+Örneğin, birler basama 0, 0, 0, 1 olduğunda, devre çıkışı 0, 0, biz buradan anlıyoruz ki, sıfırıncı basamağında değer var bunun.
+
+368
+01:15:13,280 --> 01:15:15,060
+Ve ready durumu 1'de.
+
+369
+01:15:17,171 --> 01:15:34,871
+Bunun ikiler basamağında bir olması durumunda ise arkadaşlar, ilk basamağındaki değerin yani sıfırlar basamağındaki değerin ne olduğu önemli olmadan anlıyoruz ki bunun birler basamağında değer var.
+
+370
+01:15:36,711 --> 01:15:37,991
+Çıkış bir.
+
+371
+01:15:39,444 --> 01:15:49,524
+Aynı şekilde 0, 1, 0, dörtler bası, pardon buralar fi. Yani buralara 1 de gelebilir, 0 da gelebilir. Demek bu.
+
+372
+01:15:50,484 --> 01:16:04,123
+Demek ki dörtler basamağında herhangi bir şekilde 1 olması durumunda, şurada ikinci basamağında, yani 1, 2, 0, 1, ikinci basamağında değer var manasında.
+
+373
+01:16:06,068 --> 01:16:24,988
+Bir de bir fi fi fi. Özellikle sayı dönüşümlerinde ne oluyor arkadaşlar? Hangi basamakta değer var? Bunun anlaşılması için kullanılan bir bir yapıp hangi basamağında değer olduğu maksimum değer taşıdığı
+
+374
+01:16:25,395 --> 01:16:30,795
+Bu şekilde belirlenebiliyor arkadaşlar. Bu durumda da çıkışımız 1 oluyor.
+
+375
+01:16:30,795 --> 01:16:43,795
+Demek ki devrenin kullanıldığı şeyler, çıkış ürettiği yerler şunlar, reddinin 1 olduğu yerler, şuralarda hangi basamaklarda en yüksek sayının bulunduğunu göstermiş oluyor.
+
+376
+01:16:45,135 --> 01:16:51,835
+0-0-0 durumunda da hazır değil, tamamıyla devrenin çıkışının 0 olduğunu görüyoruz arkadaşlar.
+
+377
+01:16:55,636 --> 01:17:14,615
+Bir sonraki devre elemanımız arkadaşlar, artık bu öğrendiğimiz sistemleri, hepsini bir arada kullanacağımız, hem aritmetik hem lojik işlemleri yapabildiğimiz aritmetik, lojik, unit.
+
+378
+01:17:15,615 --> 01:17:17,296
+Bunu çok duyacaksınız.
+
+379
+01:17:17,296 --> 01:17:18,176
+Alo.
+
+380
+01:17:19,667 --> 01:17:24,607
+Hem lojik işlemler hem aritmetik işlemlerin beraberce yapıldığı bir yapı.
+
+381
+01:17:24,967 --> 01:17:27,967
+Genel gösterim şekli şu şekildedir arkadaşlar.
+
+382
+01:17:28,627 --> 01:17:32,347
+Şöyle, V şeklinde bir yapıyla gösterilir.
+
+383
+01:17:34,027 --> 01:17:42,367
+Bunun uçlarından A sayısı ve B sayısı işlenecek iki tane sayım gönderildiğini düşünün en basit haliyle.
+
+384
+01:17:42,367 --> 01:17:44,027
+Ve de N bit.
+
+385
+01:17:45,087 --> 01:17:45,607
+Şöyle.
+
+386
+01:17:46,515 --> 01:18:00,335
+LOJİK işlemlerde bir okun etrafına şöyle N yazıldıysa, örneğin 8 yazıldıysa aslında oradan 8 bitlik şöyle terlerin gittiğini düşüneceksiniz.
+
+387
+01:18:00,435 --> 01:18:04,755
+Yani 8 bitin paralel bir şekilde taşındığını düşüneceksiniz.
+
+388
+01:18:05,695 --> 01:18:11,435
+Çıkışımız ise F, N bit olmak üzere hesaplanıyor arkadaşlar.
+
+389
+01:18:12,435 --> 01:18:21,456
+Genel olarak hangi tür işlemin bu alunun hangi tür işlem yaptığını belirtmek amacıyla işlem kodu.
+
+390
+01:18:23,536 --> 01:18:31,716
+İşlem kodu. Bu da arkadaşlar mbit. mbit olduğuna göre 2 üzeri m tane işlem tanımlanabilir.
+
+391
+01:18:31,915 --> 01:18:37,296
+Toplama, çıkarma, shift-bit, shift-write gibi işlemler yaptırılabilir.
+
+392
+01:18:37,775 --> 01:18:46,935
+Eğer bir toplama yapacaksak şayet, bu işlemin içinde toplam varsa, bir elde girişi, bir de elde çıkışının da tanımlanması lazım.
+
+393
+01:18:46,935 --> 01:19:01,775
+Bu dediğim gibi yavaş yavaş daha kompleks mimarilere geçiyoruz. Daha farklı, hepsini bir arada yaptırabileceğimiz, daha kompleks, kombinezonsal devreleri oluşturmaya çalışıyoruz.
+
+394
+01:19:03,347 --> 01:19:21,847
+Şimdi bir tane örnek vermişler kitabımızda. Örnek. Bu örnekte iki tane 4 bitlik veriyi alan ve bir tane elde girişi olan bu veriler üzerine 4 işlemden birini yapan bir alü tasarlanmak istiyor.
+
+395
+01:19:21,847 --> 01:19:27,688
+Örneğin veri girişleri. İki tane sayı var.
+
+396
+01:19:28,243 --> 01:19:32,644
+A sayısı ve B sayısı. İkisi de 4 bitlik sayıları üzerinde yapsın.
+
+397
+01:19:33,263 --> 01:19:40,644
+A3, A2, A1, A0, B3, B2, B1, B0 olmak üzere.
+
+398
+01:19:40,644 --> 01:19:49,423
+4 bitlik 2 sayı var. Bunun dışında elde girişi ve çıkışı var.
+
+399
+01:19:50,844 --> 01:19:54,783
+Yani elde girişi bir de elde çıkışı uçları olacak.
+
+400
+01:19:55,315 --> 01:20:06,495
+Bir de sonuç, output ucu olacak. O da F olarak belirtiyor. F3, F2, F1, F0 olmak üzere 4 bitlik çıkışı var.
+
+401
+01:20:07,355 --> 01:20:20,796
+Bir de bunların üzerinde 4 bitlik işlem kodu ise M ile gösteriliyor. M1, M0 girişleri var.
+
+402
+01:20:22,095 --> 01:20:34,295
+Ben bununla kaç tane işlem tanımlayabilirim? 2 üzeri M, M burada kaçtı? 2 olduğuna göre 4 işlem tanımlanabilir.
+
+403
+01:20:36,495 --> 01:20:46,915
+Peki, bu işlemler nelermiş bizden istenen? M, 1, M, 0 tanımlaması yapalım.
+
+404
+01:20:48,500 --> 01:21:06,520
+Şöyle açıklamasını da yapalım. İşlemi gösterelim. 0-0, 0-1, 1-0 ve 1-1 olmak üzere. 0-0'da çıkış şunu yapsın. A ile B'yi toplasın. Toplama yapıyor.
+
+405
+01:21:18,387 --> 01:21:29,787
+1, 0 yapıldığında ise F'in, F çıkışta A'nın değili, A'nın komplementi.
+
+406
+01:21:32,347 --> 01:21:39,967
+Yani A üzeri C işlemi yapılıyor. Yani 1'e tümleyen işlemi yapılıyor.
+
+407
+01:21:45,747 --> 01:22:00,608
+Bir bit, sağ öteleme, A, one bit, shift, right işlemi yapılıyor.
+
+408
+01:22:01,647 --> 01:22:05,147
+Peki bu one bit, shift, right işlemi nasıl gerçekleşecek?
+
+409
+01:22:05,147 --> 01:22:07,768
+Onunla biraz tanımını vermemiz lazım.
+
+410
+01:22:12,564 --> 01:22:27,724
+A1, A0 şeklinde tanımlandıysa çıkışım ne olacak? F3, F2, F1, F0. A0 bir shift, shift-right demek sağa doğru ötenmek.
+
+411
+01:22:28,123 --> 01:22:36,584
+A0 elde çıkışından çıkacak. A1, F0'a gelecek. A2, F1'e gelecek. A3, F2'ye gelecek.
+
+412
+01:22:37,076 --> 01:22:41,015
+Elde girişindeki değerse F3'e geçecek.
+
+413
+01:22:42,475 --> 01:22:47,796
+Çıkışlar buradan, girişleri ise elde girişinden alınmış olacak arkadaşlar.
+
+414
+01:22:49,296 --> 01:22:55,855
+Eğer size bunu tasarlayın denilse, şunu yapmanız lazım, ne kullanmamız lazım?
+
+415
+01:22:55,855 --> 01:23:04,296
+Burada bir tam toplayıcı, şunu da bir tam çıkarıcı, şurada bir tümleme işlemi yapıcı.
+
+416
+01:23:04,884 --> 01:23:14,304
+Şurada da bir öteleyici tasarımını bu kombinezonsal devrin içine koymamız gerekiyor.
+
+417
+01:23:14,304 --> 01:23:18,564
+Önce bir tam toplayıcı yapıyoruz.
+
+418
+01:23:21,404 --> 01:23:27,023
+Daha sonra yanına bir de tam çıkarıcı ekliyoruz.
+
+419
+01:23:33,587 --> 01:24:00,407
+Kümleyici, kombinezonsal devlet koyuyoruz. Konsept tasarımını yapacağız burada arkadaşlar. Bir tane de öteleyici bloğunu tasarlamamız gerekiyor. Bunun iki tane girişi var. A girişi ve B girişi. A girişi nereye geliyor? Bir buraya geliyor.
+
+420
+01:24:00,944 --> 01:24:15,024
+4 bit olarak. Çıkarıcıya gidiyor, 4 bit olarak. Başka neye gidiyor arkadaşlar? Tümleyiciye gidiyor, 4 bit olarak. Ve de öteleyiciye gidiyor, 4 bit olarak.
+
+421
+01:24:16,963 --> 01:24:27,124
+Benim B'de kullanacağım şey ise arkadaşlar, B değerimiz ise
+
+422
+01:24:27,796 --> 01:24:54,615
+Tam toplayıcıya gidiyor bir, 4 bitlik olarak. Bir de tam çıkarıcıya gidiyor, 4 bitlik olarak. Başka yok. Elde girişi nerelere gidiyor? Baktığımda elde girişi, onları da şöyle yapayım, elde girişi, elde girişi tümleyiciye gitmiyor, öteleyiciye gidiyor. Elde girişi, bu da 1 bit.
+
+423
+01:24:55,507 --> 01:25:07,548
+Tam çıkarıcıya gidiyor. Yani borç girişi şeklinde kullanılacaksa şayet şuraya gidiyor bir bit olarak.
+
+424
+01:25:08,188 --> 01:25:11,768
+Tam toplayıcıya gidiyor bir bit olarak.
+
+425
+01:25:15,796 --> 01:25:39,296
+Ve de arkadaşlar, bunlarda işlem yapılıyor. Yani şu kutularda tanımlanan işlem yapılıyor. Öncelikle bu hangi tür işlemin yapıldığını da seçebilmek için ne kullanmam gerekiyor? Sonuçta bu bir çıkış üretiyor öyle değil mi? 4 bitlik çıkışlar üretiyor şurada. 4 bitlik çıkışlarım var hepsinde işlem yapıldığı zaman.
+
+426
+01:25:40,212 --> 01:26:06,072
+4 bitlik çıkışlarım var. Peki bu 4 bitlik çıkışlardan hangisini kullanacağım? Ben 4 çarpı 1 mux değil mi? Baktığımda 4 çarpı 1 mux yapısını kullanacağım. Burada da seçim uçlarım benim m1 ve m0 olacak.
+
+427
+01:26:06,899 --> 01:26:14,739
+Dikkat edin, M1 ve M0 ile beraber ben bunlardan aslında 4 tane kullanmış olacağım.
+
+428
+01:26:14,939 --> 01:26:21,479
+4 tane şöyle baktığımda 4 tane mux kullanmış olacağım.
+
+429
+01:26:22,359 --> 01:26:30,279
+Dikkat edin, burada F3, F2, F1, F0.
+
+430
+01:26:30,519 --> 01:26:32,719
+Buradan da aynı şekilde F3.
+
+431
+01:26:33,171 --> 01:26:59,591
+F2, F1, F0. Aynı şekilde F3, F2, F1, F0, F3, F2, F1, F0. Dikkat edin, bu 4x1 mux'un her birinin kaç tane çıkışı olacak? Hepsinin 4 tane çıkışı olacak. Bunlar asıl F3, F2, F1 ve F0'lar olacak.
+
+432
+01:27:00,212 --> 01:27:07,092
+Bu M1, M3 de hepsine bağlı olacak. Hepsinde aynı şekilde M1, M0 bağlı olacak.
+
+433
+01:27:07,092 --> 01:27:16,592
+Verilen değere göre, dikkat edin, şu F3'le hepsi bir yere bağlanacak.
+
+434
+01:27:17,452 --> 01:27:23,572
+Seçilen M1, M0 değerine göre bu F3'ler asıl F3'e gönderilecek.
+
+435
+01:27:24,352 --> 01:27:25,332
+Veya F2'ler.
+
+436
+01:27:26,771 --> 01:27:45,511
+F2'ler nereye bağlanacak arkadaşlar? Bir arkadaki muxa bağlanmış olacak bunlar da. Böylece 4 katmanlı mux olacak. Bu 4 katmanlı muxun her birinin çıkışı örneğin 0-0 seçtim. 0-0 seçme durumunda ne olacak arkadaşlar?
+
+437
+01:27:53,268 --> 01:28:01,208
+Böylece ne olacak arkadaşlar? 0, 0 seçildiğinde benim için toplama işlemi vardı değil mi?
+
+438
+01:28:01,427 --> 01:28:02,588
+Toplama işlemi vardı.
+
+439
+01:28:02,588 --> 01:28:07,588
+Demek ki I0 girişinden sırasıyla...
+
+440
+01:28:07,588 --> 01:28:10,588
+Sırasıyla...
+
+441
+01:28:11,264 --> 01:28:21,604
+I0, F2'nin şeyi de buradan I0 seç, I, F2 de arkadakine bağlı, F1 de arkadakine bağlı, F0 en sondakine de bağlı.
+
+442
+01:28:21,884 --> 01:28:28,083
+I0'a bağlı olan şu tam toplayıcı işleme çıkışı aktarılmış olacak arkadaşlar.
+
+443
+01:28:28,083 --> 01:28:38,184
+Yani eğer böyle bir alü tasarlayacak olursanız en temelde 4 tane 4x1 mux.
+
+444
+01:28:39,380 --> 01:28:47,699
+Ondan sonra şu tam toplayıcı, tam çıkarıcı, tümleyici ve öteleyici çıkışlarında ne yapmanız lazım? Çıkışa koymanız lazım.
+
+445
+01:28:47,859 --> 01:28:54,840
+Bir de aynı zamanda belki burada şey yapılmamış, elde çıkışını yazmadık henüz.
+
+446
+01:28:55,500 --> 01:28:57,600
+Şuradan bir elde çıkışı olabilir.
+
+447
+01:28:58,060 --> 01:28:58,460
+Öyle değil mi?
+
+448
+01:28:59,399 --> 01:29:03,899
+Şuradan bir elde çıkışı olabilir.
+
+449
+01:29:05,171 --> 01:29:17,551
+Tümleyiciden olmayacak, affedersiniz. Bir de buradan bir çıkış olabilir. Bunların hepsini toplayıp, eğer elde çıkışı oluşuyorsa, elde çıkışı olarak elde ediliriz.
+
+450
+01:29:17,652 --> 01:29:28,952
+Tamamıyla bir konsept tasarım. Verilenlere göre aslında benim hangi kombinezonsal devreyi oluşturacağımı gösteren bir yapıyı çizmiş oldum.
+
+451
+01:29:31,155 --> 01:29:32,755
+Sorunuz var mıydı arkadaşlar?
+
+452
+01:29:35,755 --> 01:29:37,055
+Hocam, sesim geliyor mu?
+
+453
+01:29:37,575 --> 01:29:38,095
+Geliyor, evet.
+
+454
+01:29:39,435 --> 01:29:46,495
+Hocam, şu aşağıda mesela biz öteleyici işlemini kullanmak istiyoruz ama öteleyici işleminden elde çıkışı elde etmiyoruz.
+
+455
+01:29:46,495 --> 01:29:54,515
+Fakat toplama işleminden elde ediyoruz. O zaman bu aludaki elde çıkışı yine bir olarak göreceğiz.
+
+456
+01:29:57,140 --> 01:30:23,260
+Şimdi, öteleyiciden elde çıkışı kullanılacak. Aynı şekilde bakın, normalde bunların elde çıkışlarının oluşmadığını düşün. Yani elde çıkışını oluşturmayacak şekilde davranmamız lazım. Elde çıkışı nereden oluşuyorsa? 1, 0, 0, 0. Ama senin dediğin doğru. Eğer ben bunların hepsinin girişine bu işlemi verdiysem.
+
+457
+01:30:23,859 --> 01:30:28,979
+Öteleyici de çıkıtı üretebilir, tam toplayıcı da bunları koyduğum zaman toplanır diyorsun değil mi?
+
+458
+01:30:29,619 --> 01:30:30,119
+Evet hocam.
+
+459
+01:30:30,859 --> 01:30:39,339
+Onun yerine şöyle bir şey de yapabilirsin. Aynı şekilde MUX kullanabilirsin. Yani dört tane geliyor.
+
+460
+01:30:39,904 --> 01:30:51,724
+Buraya da bir tane mux ekleyebilirsin. Aslında dediğim gibi toplama işlemi kullanılmaz. 4x1 mux kullanılır. Onlar da buraya M0 ve M1 şeklinde yapılır.
+
+461
+01:30:51,724 --> 01:31:06,264
+Elde çıkışı oluşturulur. Doğru söylüyorsun. Şu elde çıkışı 0, I0'a, şurasınınkini 1'e, I1'e, şurada tümleyici de kullanılmıyor, şununkini de 3'e.
+
+462
+01:31:07,444 --> 01:31:11,044
+Kullanarak elde çıkışını bu şekilde yapabilirsin. Doğru söylüyorsun.
+
+463
+01:31:12,364 --> 01:31:22,244
+Kitapta orada toplama işini kullanmış ama tabii ki orada devrelerin sonuna sonuç üretmeyecek gibi bir yapının oturtulması gerekiyor ki anca o şekilde olur bu.
+
+464
+01:31:25,652 --> 01:31:26,672
+Anlaşıldı mı arkadaşlar?
+
+465
+01:31:27,631 --> 01:31:28,952
+Anlaşıldı hocam, teşekkür ederim.
+
+466
+01:31:29,452 --> 01:31:29,971
+Rica ederim.
+
+467
+01:31:31,032 --> 01:31:36,532
+Bir de artık çeşitli sonuçları elde ettik. Bunları göstermek istiyoruz diyelim.
+
+468
+01:31:37,452 --> 01:31:41,752
+Bu manada Seven Segment Display çok kullanılıyor arkadaşlar.
+
+469
+01:31:41,752 --> 01:31:45,752
+Seven Segment Display.
+
+470
+01:31:47,391 --> 01:31:52,011
+Hani şu görmüş olduğunuz hani bombaların üzerine koyuyorlar ya genellikle filmlerde.
+
+471
+01:31:52,564 --> 01:31:59,324
+Burada bakın 1, 2, 1, şöyle bakacak olursak şahit, biraz daha büyükçe çizeyim bunu.
+
+472
+01:32:00,344 --> 01:32:05,144
+8 tane LED ışığının bulunduğu bir yapı var.
+
+473
+01:32:06,344 --> 01:32:16,764
+Bakın, sırasıyla A, B, C, D, E, F ve G LED'leri diye düşünün bunları.
+
+474
+01:32:18,003 --> 01:32:29,224
+7 tane normalde LED var burada. Bazen bazılarının yanında şöyle bir nokta da konuluyor. Hani virgüllü işlemleri de göstersin diye. Ona hiç girmiyorum şu anda.
+
+475
+01:32:30,404 --> 01:32:44,003
+Burada aslında şu göstermiş olduğum çizgilerin her biri aslında bir diyot. Şöyle LED. Yani şurasına büyük geleyim. Artı, eksi, V diyot. V diyot büyükse...
+
+476
+01:32:45,011 --> 01:33:06,011
+Sıfırdan bir ışık üretiyor. Şöyle yapalım, bir ışık ürettiğini düşünelim. Dolayısıyla örneğin ben diyelim ki sıfırı yakmak istiyorum. Sıfır yakmak istediğimde sırasıyla şöyle bir girişim olması lazım. Eğer ben bunu kutulayacaksam şahit şöyle.
+
+477
+01:33:06,011 --> 01:33:08,612
+Şöyle kutulayacaksam.
+
+478
+01:33:11,667 --> 01:33:16,108
+Yaptım diyelim. Bunun içine bir sürücü devresi tamamlamam lazım.
+
+479
+01:33:17,068 --> 01:33:17,988
+Tanımlamam lazım.
+
+480
+01:33:18,667 --> 01:33:23,707
+Orada da örneğin ben bunu 4 bit ile ifade etmek istiyorum.
+
+481
+01:33:24,408 --> 01:33:27,408
+X1, X2, X3, X4.
+
+482
+01:33:28,127 --> 01:33:31,188
+Yani toplam 9, kaç tane değer yazabilirim ben burada?
+
+483
+01:33:31,787 --> 01:33:33,948
+10 tane sayıyı yazabilirim.
+
+484
+01:33:33,948 --> 01:33:36,779
+10 tane sayıyı yazabilmek için...
+
+485
+01:33:36,851 --> 01:33:55,872
+Kaç bite ihtiyacım var arkadaşlar? 3 bite olsa 2 üzeri 3, 8, 4 bite ihtiyacım var. 4 bitle beraber neleri elde ediyorum ben arkadaşlar? 4 bitle beraber 2 üzeri 4, 16 tane der. 6 tane boşa çıkmış oluyor.
+
+486
+01:33:59,956 --> 01:34:09,855
+Bu ledleri çalıştıran devreyi yapmak istiyorum. Sürücü devreyi. Bunun içerisinde bir sürücü devre var diye. Müsaadeniz arkadaşlar.
+
+487
+01:34:49,140 --> 01:34:57,120
+Evet arkadaşlar, ona şöyle bir şey yazabiliriz. Ne diyeceğiz? Doğrulu tablo, giriş ve çıkış tablosunu oluşturur.
+
+488
+01:34:57,120 --> 01:35:11,360
+Örneğin X1, X2, X3, X4. Bunlar giriş olarak tanımlansın. Çıkışlar ise toplam 7 tane olmak zorunda.
+
+489
+01:35:15,220 --> 01:35:20,200
+B, C, D, E, F ve G olsun.
+
+490
+01:35:21,380 --> 01:35:31,020
+Şimdi ben sıfır verdiğimde, bakın sıfır verdiğimde nelerin yanması lazım burada arkadaşlar baktığımda?
+
+491
+01:35:31,780 --> 01:35:38,760
+A, B, C, D, E ve F'nin yanması lazım öyle değil mi?
+
+492
+01:35:43,475 --> 01:35:48,175
+D, E, F. G'nin yanmaması lazım.
+
+493
+01:35:50,416 --> 01:36:00,296
+Sırasıyla böyle gidiyorum arkadaşlar. 0, 0, 0, 1. Bunun için 1 için ne lazım arkadaşlar? 1 için. Bakalım.
+
+494
+01:36:01,515 --> 01:36:10,055
+1 için sadece B ve C'nin yanması lazım. Yani oraya 1 veriyorum. 1 vermemdeki mantık şu arkadaşlar.
+
+495
+01:36:10,676 --> 01:36:22,895
+LED'in, LED sonuçta bu ABCD uçlarından, aslında bunu şöyle yazmam lazım benim, şöyle yapmam lazım.
+
+496
+01:36:23,476 --> 01:36:30,655
+Aslında biz burada 7 segment display'i yapmıyoruz arkadaşlar. 7 segment display buraya bağlı. Şöyle.
+
+497
+01:36:33,395 --> 01:36:35,796
+Bunun kaç tane girişi var?
+
+498
+01:36:36,916 --> 01:36:37,136
+A.
+
+499
+01:36:38,228 --> 01:36:44,527
+B, C, D, E, F ve G uçları var.
+
+500
+01:36:45,547 --> 01:36:51,107
+Surasıyla ben buraya vermiş olduğum sayı ilgili yere bağlayan şöyle
+
+501
+01:36:51,107 --> 01:36:58,647
+A, B, C, D, E, F ve G
+
+502
+01:36:59,123 --> 01:37:11,363
+Çıkışları var. Ben buradaki kombinezonsal devreyi tasarlıyorum. Kombinezonsal devre. Dolayısıyla buraya vermiş olduğum ondalık sayıyı bunun anlayacağı, yakabileceği kısımlara dönüştürmek istiyorum.
+
+503
+01:37:11,363 --> 01:37:15,943
+A'ya vermek ne demek? Aslında A ucu buraya bağlı, diyota bağlı.
+
+504
+01:37:16,384 --> 01:37:34,284
+Bunların hepsi ortak şeye bağlı, ground'a bağlı. Buraya bir vermek demek aslında 5 volt ver demek. 5 volt verdiğiniz zaman bu çalışmaya başlıyor. Burada sıfır varsa şayet, artı eksi V diyot sıfır olduğu için uygulanan gelin yanmıyor o uç.
+
+505
+01:37:35,060 --> 01:37:42,440
+1 vermek demek aslında o ledi A veya B şurada göstermiş olduğum ledleri yakmak demek.
+
+506
+01:37:43,080 --> 01:37:50,460
+1 verdiğimiz zaman B ve C'ye 1 vermeliyim. Diğerlerine 0 vermeliyim ki bu şekilde yapılsın.
+
+507
+01:37:50,460 --> 01:37:58,160
+Peki, en sonunda burada yazabileceğim en büyük sayı ne arkadaşlar? 1, 1, 1, 1. Öyle değil mi?
+
+508
+01:38:00,756 --> 01:38:27,435
+Pardon, özür dilerim. Burada yazabileceğim en büyük sayı 9, 1, 0, 0, 1. 9'u yazmak için ne yapmam lazım arkadaşlar? Şurayı ve şurayı yapmam lazım. Yani A, B, A, B, C'ye 1 vermem lazım, F'ye 1 vermem lazım, G'ye 1 vermem lazım.
+
+509
+01:38:27,988 --> 01:38:51,808
+Ve de D'ye bir vermem lazım. Öyle değil mi? Sadece ne yanmıyor orada? E yanmıyor. E'ye bir vermem lazım. Peki, bunun dışındaki değerler ne olacak arkadaşlar? Bunun dışındaki değerler 1, 0, 1, 0. Done. 1, 1, 1, 1, 1'e kadar olan kısımlar hepsi arkadaşlar don't care. Ne yanarsa yansın.
+
+510
+01:38:53,684 --> 01:38:56,884
+Yani ben öyle bir planlamalıyım ki bu şeyimi.
+
+511
+01:38:58,104 --> 01:39:01,244
+Sadece bu girişler verdiğinde ilgili şeyler yansın.
+
+512
+01:39:01,244 --> 01:39:07,804
+Sadece bunların girişini buradan vermeyi garanti aldırmaya lazım.
+
+513
+01:39:08,244 --> 01:39:16,644
+Bunun dışındaki durumların 10, 11, 12 yanmayacağına göre ben böyle bunları oluşturabilirim.
+
+514
+01:39:18,584 --> 01:39:21,003
+Tabii bakın böyle olması durumunda
+
+515
+01:39:21,460 --> 01:39:44,079
+Her bir çıkış için neyi elde etmem lazım? Benim Karnaugh haritalarını elde etmem lazım. Örneğin, A için Karnaugh haritasını elde edecek olursam, şöyle bir Karnaugh haritası oluşturmam lazımmış. Bakın, sadece biri için. Şöyle çiziyorum Karnaugh haritasını.
+
+516
+01:39:48,340 --> 01:40:01,279
+Şurası X1, X2, X3, X4, 00, 01, 10, 11, 10, 00, 01, 11, 10.
+
+517
+01:40:02,500 --> 01:40:05,560
+Burada arkadaşlar, şuralarda 1 varmış.
+
+518
+01:40:05,560 --> 01:40:08,440
+1, 1, 1, 1.
+
+519
+01:40:10,420 --> 01:40:13,720
+Şurası 1, şurası Fi.
+
+520
+01:40:16,020 --> 01:40:17,779
+Şurası da fi imiş, özür dilerim.
+
+521
+01:40:20,400 --> 01:40:21,680
+Şurası da fi imiş.
+
+522
+01:40:24,140 --> 01:40:25,539
+Şuralar hep fi imiş.
+
+523
+01:40:30,131 --> 01:40:32,091
+Bir de şuralarda bir varmış.
+
+524
+01:40:33,691 --> 01:40:35,891
+Bu durumda şöyle yapmış arkadaşlar.
+
+525
+01:40:36,491 --> 01:40:40,411
+Şuraları alabilmek için şuraya bir vermiş.
+
+526
+01:40:40,691 --> 01:40:41,611
+Şurası bir olmuş.
+
+527
+01:40:43,151 --> 01:40:45,451
+Peki, başka ne yapılabilir?
+
+528
+01:40:45,531 --> 01:40:47,051
+Burada büyük bir komşuluk yapılabilir mi?
+
+529
+01:40:47,051 --> 01:40:53,871
+Ben şunların hepsine bir versem, şuna pardon, şuna da bir versem, şuradan bir.
+
+530
+01:40:54,707 --> 01:41:05,248
+Üçüncü derece komşuluk elde etmiş oluyorum. Bir de şunları tanımlarsam, demek ki benim A değerim şu şekilde oluyormuş arkadaşlar.
+
+531
+01:41:05,248 --> 01:41:12,248
+X1 artı X2 X4 üstü
+
+532
+01:41:17,043 --> 01:41:18,667
+Arte...
+
+533
+01:41:22,996 --> 01:41:24,908
+Arkadaşlar, bu ne?
+
+534
+01:41:33,108 --> 01:41:38,127
+Kendimiz yapalım bakalım bunu. Şurası X1, tamam.
+
+535
+01:41:39,047 --> 01:41:40,167
+Hocam bir sorabilir miyim?
+
+536
+01:41:40,927 --> 01:41:42,108
+Evet evet sorabilirsin.
+
+537
+01:41:42,627 --> 01:41:46,947
+Biz A için yaparken A'nın sütununda sadece iki tane bir yok mu?
+
+538
+01:41:48,028 --> 01:41:52,407
+Bu aradaki değerleri atladım. Şuraya üç nokta koyayım, oraları siz tamamlayın.
+
+539
+01:41:53,076 --> 01:42:12,856
+Bak, 001 var, 9 var. Aradaki değerleri sen çıkarmış oluyorsun. Şu köşedekilere bakacak olursam, X2, X4 üstü. Şuraya bakacak olursam, X2, şuraya bakalım, X4.
+
+540
+01:42:20,435 --> 01:42:43,115
+X4 şeklinde oluşturabilirmişsin. Anlaştık mı? Demin arkadaşınızın sorduğu yerler, buraları ben atladım. Sadece bunları uygun şekilde, örneğin 0, 0, 1, 0 diyeceğim de ne yapman lazım 2 yakabilmek için? 2 için ne gerekir? Şunlar gerekir.
+
+541
+01:42:46,676 --> 01:43:02,216
+Yani A, B, G, A, B, G'ye bir vermen lazım ve de E ve D'ye, E ve D'ye bir vermen lazım. Diğerlerinin hepsi sıfır. Anlaştık mı?
+
+542
+01:43:05,971 --> 01:43:30,572
+Evet, böylece arkadaşlar bir dersimizin daha sonuna gelmiş durumdayız. Belki bir şey hatırlatmak lazım. Şimdi herhangi bir kombinezonsal devre var. Başka bir kombinezonsal devreye giriş yapıyor. Bunun çıkışı buraya giriş yapıyor. Çıkış bir.
+
+543
+01:43:31,188 --> 01:43:49,467
+Çıkış 2, giriş 1 örneğin. Şu şekilde bir bağlama yapılmaz arkadaşlar. Aynı çıkışla aynı girişe yapılmaz. Niye? Örneğin burası 1 verdi, burası 0 verdi. Bu ne demek? Burada düşük gerilim var, burada yüksek gerilim var demek. Şuradan tamamlanır devre.
+
+544
+01:43:59,028 --> 01:44:12,048
+Biz çıkışla, iki çıkışla da aynı yere ulaşmak istiyorsak kullanacağımız bir devre elemanı var arkadaşlar. Bunun adı buffer olarak adlandırılıyor.
+
+545
+01:44:12,048 --> 01:44:21,208
+Buffer. Türkçesi tampon olarak adlandırılıyor. Şu şekilde gösteriliyor arkadaşlar.
+
+546
+01:44:21,876 --> 01:44:49,096
+Şöyle NOT işareti gibi gösteriliyor. Pardon, NOT işareti. Şöyle ona benzer bir şekilde gösteriliyor. Şöyle şurası giriş, şurası çıkış. Burası iki türlü yapılabiliyor arkadaşlar. Şuradaki çıkış izni. Şurası çıkış izni veya enable.
+
+547
+01:44:50,484 --> 01:45:07,584
+Olarak da adlandırılıyor. Yani şu şekilde de yapılabiliyor bu. Şöyle. Çıkış izni bu sefer. Burası arkadaşlar birle çıkış izni veriyor. Burası birle çıkış izni veriyor.
+
+548
+01:45:08,500 --> 01:45:20,860
+Burası ise sıfırla çıkış izni veriyor. Yani ben bu devreye bir verdiğim zaman giriş çıkışı aktarılıyor. Buna ise sıfır verdiğimde giriş çıkışı aktarılıyor. Buna tampon deniyor arkadaşlar.
+
+549
+01:45:20,860 --> 01:45:24,620
+Eğer doğruluk tablosunu yapacak olursak,
+
+550
+01:45:29,268 --> 01:45:54,188
+Şununkine bakalım. Çıkış izni, ondan sonra giriş ve çıkış şeklinde tanımlayalım. Çıkış izni 0, 0, 1, 1 olduğu zaman, pardon.
+
+551
+01:45:55,060 --> 01:46:20,420
+Şurada da giriş 0, 1, 0, 1. Arkadaşlar, çıkış izni burada 0'dayken çalışıyor. Yani zero active. Çıkışı aynen elde edebiliyorsunuz. Çıkış izni varsa aynen giriş çıkışta gözüküyor. Eğer çıkış izni yoksa aynı buradaki gibi. Burası arkadaşlar yüksek empedans.
+
+552
+01:46:24,404 --> 01:46:26,744
+Burası da aynı şekilde yüksek empedans.
+
+553
+01:46:29,264 --> 01:46:34,144
+Ne demek arkadaşlar? Çıkışın yüksek empedans olması.
+
+554
+01:46:34,963 --> 01:46:41,364
+Şu demek, sizin böyle bir devrede çıkış için, örneğin şuradan bir Z çıkışınız var.
+
+555
+01:46:41,784 --> 01:46:46,584
+Bunu bufferladınız böyle. Şu ucuna da enable yaptınız. Dışarı vermek istiyorsunuz.
+
+556
+01:46:47,144 --> 01:46:49,844
+Enable eğer şuradaki sıfır aktif.
+
+557
+01:46:52,212 --> 01:47:12,092
+Burası da bir aktif. İki türlü tampon tanımlayabilirsiniz. İkisinden birini. Ben şimdi önce sıfır aktifi anlatıyorum. Eğer bir gelmişse, şuraya şey yapayım, bir gelmişse çıkışı vermiyor. Burayı yüksek empedans veriyor. Yüksek empedans demek ne demek?
+
+558
+01:47:13,587 --> 01:47:30,988
+Arada, yani şurada bir direnç var demek oluyor. Bu direncin çok yüksek olması ne demek? Benim farklı bir devrem var böyle. Bununla bir çıkış, aynı yere giriş yapacağım demek.
+
+559
+01:47:30,988 --> 01:47:38,719
+Buranın yüksek empedans olması demek, buradan akım geçmemesi demek. Buradan akım...
+
+560
+01:47:38,720 --> 01:47:51,979
+Geçmemesi demek. Bakın ikisi de aynı yere bağlandı. Bir ne oluyor, iki ne oluyor. Eğer burada yüksek empedans oluşuyorsa buradan akım akmayacak demektir. Yani akım bu şekilde atacaktır.
+
+561
+01:47:52,692 --> 01:48:19,412
+Aynı şekilde en büyük yüksek empedans nedir arkadaşlar? Buranın havayla dolması değil mi? Eğer ben bunu buradan kesersem o zaman da yüksek empedans, akım akmayacaktır buradan. Dolayısıyla siz tamponlarla aslında aynı yolu kullanan iki çıkıştan bir tanesini iptal etmiş oluyorsunuz. Yüksek empedans demek devreliği oradan koparmak demek.
+
+562
+01:48:19,760 --> 01:48:42,039
+Dolayısıyla çıkışı aktarmamak demek. Burada da bir enable demiştik. Bu da tam tersiyle çalışıyor. Çıkış izni, giriş ve çıkış şeklinde düşünelim. Bu da tam tersiyle çalışıyor. Eğer benim girişim 0-1, 0-1 şeklindeyse.
+
+563
+01:48:43,539 --> 01:49:02,380
+Buradayken çalışır arkadaşlar. Bakın bir, arada bir şey yok. Girişi aynen aktarıyoruz. Sıfır ve bir şeklinde. Burada çıkış izni olmadığı için sıfır olacaktır. Bu bir aktif çünkü. Yüksek empedans üretti. Tam tersi mantığıyla çalışan bir devre elemanı burada arkadaşlar.
+
+564
+01:49:04,756 --> 01:49:18,096
+Evet, bu dersimizde anlaştık mı arkadaşlar bu bufferlar? Dolayısıyla aynı hatta bağlanacak, ortak yola bağlanacak devre elemanlarında bir, ne kullanılır?
+
+565
+01:49:19,516 --> 01:49:29,996
+Tamponlar, bufferlar kullanılır. İki, pull-up dirençleri kullanılır. Bunu daha sonra anlatacağım, pull-up direnci.
+
+566
+01:49:31,060 --> 01:49:38,800
+Çıkışın open, kolektörlü yapıldığı bir yapı, elektronikle ilgili bir yapı. Sadece bilgi olarak bilmeniz yeterli şu anda.
+
+567
+01:49:40,360 --> 01:49:44,700
+Sorusu olan var mıydı bu derste anlattığım kısımlarla alakalı arkadaşlar?
+
+568
+01:49:49,235 --> 01:50:10,496
+Eğer sorusu olan yoksa bu haftalık bu kadar arkadaşlar. Haftaya tekrar görüşmek üzere. Kendinize çok iyi bakınız. Yine haftaya tekrar beğenme dersiniz olacak. Ondan sonra Hamza Hoca devam edecek. Kolay gelsin. Hepinize iyi haftalar diliyorum. İyi günler sağ olun.

@@ -1,0 +1,1571 @@
+1
+00:01:04,980 --> 00:01:06,260
+Merhabalar arkadaşlar.
+
+2
+00:01:11,123 --> 00:01:13,304
+Ses geliyor mu? Seste bir sorun var mı?
+
+3
+00:01:14,043 --> 00:01:15,203
+Ses geliyor hocam. Merhaba.
+
+4
+00:01:16,043 --> 00:01:22,323
+Tamamdır. Şöyle 2-3 dakika daha bekleyelim. Ondan sonra dersimize başlayacağız arkadaşlar.
+
+5
+00:01:23,603 --> 00:01:34,103
+Bu bölümde maliyet faktörü karmaşıklık hesabı konusunun üstünden kabaca geçtikten sonra, ondan sonra diğer kısımlara doğru ilerleyeceğiz arkadaşlar.
+
+6
+00:04:02,611 --> 00:04:21,512
+Evet arkadaşlar, tekrar merhabalar. Şimdi dersimize başlayalım. Gördüğüm kadarıyla katılım düşük ama biz gelen arkadaşlarımızla devam edelim. Sizlerin sorusu olduğundan istediğiniz zaman sorabilirsiniz. Şimdi bu kısımda arkadaşlar ekranımı görüyorsunuz değil mi?
+
+7
+00:04:26,963 --> 00:04:34,264
+Bu zamandır. Lojik devreler kitabındaki maliyet faktörü ve karmaşıklık hesabı kısmından biraz bahsedeceğim.
+
+8
+00:04:35,384 --> 00:04:45,444
+Şimdi, lojik devrelerde sayısal bir sistem tasarlanırken iki önemli tasarım unsuru var.
+
+9
+00:04:46,084 --> 00:04:52,264
+Bir tanesi maliyet, diğeri ise karmaşıklık hesabının iyi yapılması lazım.
+
+10
+00:04:53,139 --> 00:05:09,259
+Maliyet derken, mali maliyetleri, yani bizim fiziksel olarak devreyi gerçekleştirme maliyetlerimiz var. Bunun haricinde karmaşıklık kısmında ise daha çok çalışma hızı hesaba katılıyor.
+
+11
+00:05:09,259 --> 00:05:15,183
+Bunun haricinde arkadaşlar, devrede harcanan güç miktarı, tasarım süresi,
+
+12
+00:05:15,184 --> 00:05:27,084
+Uyumluluk, transistör sayısı, gerçeklenebilirlik gibi faktörler de tasarımda, bu lojik devrelerin tasarımda göz önünde bulundurulması gerekiyor.
+
+13
+00:05:28,264 --> 00:05:33,924
+Maliyet hesabında tasarım maliyeti ve gerçekleştirme maliyeti olarak iki açıdan ele alınıyor.
+
+14
+00:05:33,924 --> 00:05:41,424
+Tasarım maliyeti ve de üretim maliyeti olmak üzere iki tane temel.
+
+15
+00:05:43,507 --> 00:06:01,687
+Kalemimiz var bizim. Burada maliyet hesabında tasarım kısmında arkadaşlar. Bunun devrenin kurgulanmasından bahsedebiliriz. Burada M tasarım diyecek olursak, maliyet tasarım diyecek olursak.
+
+16
+00:06:11,252 --> 00:06:24,312
+Yardımcı araçlar, yani bizim bu devreyi gerçekleştirmek için simülasyonlar için kullandığımız, çizerken kullandığımız araçların maliyetleri de işin içine giriyor.
+
+17
+00:06:25,072 --> 00:06:38,412
+Üretim kısmında ise arkadaşlar, artık bunun fiziksel olarak gerçekleştirilmesi için harcanması gereken miktarı kastediyoruz.
+
+18
+00:06:38,911 --> 00:06:44,131
+Yani baktığımızda maliyet kalemlerimiz kabaca ne yapabiliriz arkadaşlar?
+
+19
+00:06:45,031 --> 00:06:51,471
+M maliyet, M tasarım, artı M üretim.
+
+20
+00:06:51,471 --> 00:07:01,251
+M üretim diyecek olursak arkadaşlar, burada M makine.
+
+21
+00:07:02,644 --> 00:07:15,124
+Bunları dizecek, artı M, yan giderler. Giderler derken elektrik, ne bileyim burayı havalandırıyorsunuzdur, soğutuyorsunuzdur gibi giderleri hesaba katabilirsiniz.
+
+22
+00:07:16,403 --> 00:07:25,264
+Diğer taraftan da arkadaşlar, karmaşıklık hesabına geldiğimizde iki tane temel kavram var.
+
+23
+00:07:25,943 --> 00:07:29,984
+Eleman karşı karmaşıklığı arkadaşlar, İngilizce komponent.
+
+24
+00:07:30,963 --> 00:07:32,084
+Complexiter
+
+25
+00:07:35,603 --> 00:07:39,843
+Zaman hız karmaşıklığı ise time kompleksti.
+
+26
+00:07:42,303 --> 00:07:48,463
+Şimdi burada da daha çok karmaşıklık hesabında dikkatinizi çekiyorsa arkadaşlar,
+
+27
+00:07:49,076 --> 00:08:03,036
+İki tane temel faktör var demiştik burada. Artık devrenin çalışmasıyla alakalı giderler, devrenin hızı ve içeriğiyle alakalı giderlerden bahsediyoruz arkadaşlar.
+
+28
+00:08:03,036 --> 00:08:12,975
+Eleman karmaşıklığında kullanılan tüm devre sayısı, tüm devre sayısı,
+
+29
+00:08:13,363 --> 00:08:17,204
+Farklı türde tüm devrelerin sayısı.
+
+30
+00:08:18,064 --> 00:08:22,043
+Farklı tüm devre sayısı.
+
+31
+00:08:22,743 --> 00:08:25,543
+Bundan niye bahsetmiştik farklı tüm devre sayısından?
+
+32
+00:08:26,043 --> 00:08:34,824
+Ne kadar benzer tüm devrelerle oluşturursak o kadar maliyetlerimiz düşecekti bizim diye daha önce konuşmuştuk hatırlarsanız.
+
+33
+00:08:34,824 --> 00:08:40,723
+Tüm devre uç sayısı.
+
+34
+00:08:42,292 --> 00:08:50,831
+Biliyorsunuz kabaca bir tabir edecek olursak, iki girişli elemanımız var, dört girişli elemanımız var.
+
+35
+00:08:51,912 --> 00:09:00,211
+Daima uç sayısı yüksek olan devrelerin maliyeti daha yüksek. Niye? Çünkü içerisinde daha çok transüstör barındırıyor.
+
+36
+00:09:00,211 --> 00:09:09,532
+Bunun haricinde arkadaşlar, zaman karmaşıklığında tüm devrenin, onu da farklı bir kalemle yazalım.
+
+37
+00:09:10,259 --> 00:09:12,259
+Tüm devrenin çalışma hızı
+
+38
+00:09:19,572 --> 00:09:37,632
+Onun haricinde gecikme gibi durumları hesaba katmalıyız. Örneğin, arka arkaya bir giriş uygulayalım. Şöyle, burada bunlar giriş olsun bir diğer devremize.
+
+39
+00:09:40,244 --> 00:10:00,004
+Gecikmeleri hesaplarken, bir, birinci seviyedeki, önce şuradaki girişlerin girildikten sonra, şuradaki gecikme miktarı, eğer bunlar farklı kapılardan oluşuyorsa bir, bir, iki, en yüksek gecikmeyi veren T gecikme eklenecektir.
+
+40
+00:10:05,711 --> 00:10:11,251
+1 ve 2'nin çıkışlarının gözlenmesi için geçen bir sürenin hesaplanması lazım.
+
+41
+00:10:11,956 --> 00:10:24,836
+Burada da örneğin bununki 15 milisaniye olsun, bununki 20 milisaniye olsun, A ve B'nin oluşması için geçen zamanı maksimuma göre alırız ki tamamıyla istediğimiz sonuç olsun.
+
+42
+00:10:24,836 --> 00:10:35,395
+Yani 20 milisaniye bir gecikme, arkasından ikinci seviye, gecikme de eknek devrinin toplam gecikmesi hesaba katılması lazım.
+
+43
+00:10:38,035 --> 00:10:46,635
+Tabii katman sayısı yani layer sayısı ne kadar artarsa o kadar gecikmelerin de hesaba katılması lazım.
+
+44
+00:10:46,795 --> 00:10:49,435
+Örneğin bir A girişi verdik diyelim.
+
+45
+00:10:49,955 --> 00:10:54,076
+Fakat onun öncesinde şurada bir B ve C girişi yaptık diyelim.
+
+46
+00:10:54,195 --> 00:10:58,035
+Bunlar alındı ve de işlendi.
+
+47
+00:10:58,895 --> 00:11:01,795
+Ondan sonra D ile alındı diyelim bir kapıyla beraber.
+
+48
+00:11:02,419 --> 00:11:12,539
+Bakın burada A için herhangi bir gecikme yok. Fakat şuradaki elemandan dolayı, örneğin bunda 15 mikrosaniye gecikmesi olsun.
+
+49
+00:11:13,379 --> 00:11:20,079
+ABC'nin şu ikinci layer'da, burası birinci layer, ikinci layer, üçüncü layer katman olarak.
+
+50
+00:11:21,059 --> 00:11:24,579
+Buradaki birinci layer'daki A'nın bir gecikmesi yok ama.
+
+51
+00:11:24,991 --> 00:11:31,251
+B ve C'nin elektriksel gecikmelerden bahsediyor mu? Hesaba katılması gerekir arkadaşlar.
+
+52
+00:11:32,951 --> 00:11:38,791
+Bunun dışında maliyet hesapları yaparken burada dediğimiz gibi tüm devre uç sayısı çok önemli.
+
+53
+00:11:39,631 --> 00:11:49,291
+Farklı tüm devre kullanımı bizim neyimizi arttırıyor. Her birbirine farklı farklı VCC ve Grand Truth'u çekiyoruz. Bunlar bizim için önemli.
+
+54
+00:11:51,443 --> 00:12:00,523
+Şimdi bundan sonraki kısımda arkadaşlar programlanabilir kombinezonsal devreler kısmı var.
+
+55
+00:12:00,523 --> 00:12:17,403
+Burada da arkadaşlar pro yani sadece programlanabilir yalnızca okunabilir bellekler, programlanabilir diziler ve programlanabilir lojik diziler olmak üzere 3 tane tipi var.
+
+56
+00:12:17,779 --> 00:12:40,160
+Ben bunların size bırakıyorum arkadaşlar. Bunu sınavda ben sormayacağım. Buranın bir özetini çıkartmanızı istiyorum. Onunla alakalı da ödevi şuraya koydum arkadaşlar. Derslerim, ödevler kısmında. Programlama Birliği Kombinezonsal Devreler bölümünün özeti el yazısı olarak.
+
+57
+00:12:40,563 --> 00:12:52,063
+Ne anlıyorsunuz? Temelde ne işe yarıyor? Bunları bir bu bölümü okuduktan sonra el yazısıyla yazıp pdf şeklinde pdf'e dönüştürüp bu yazdığınız ödevi.
+
+58
+00:12:52,483 --> 00:12:56,743
+Şekilleri bile elle çizebilirsiniz. Önemli olanı değil. Okunabilir olsa yeterli.
+
+59
+00:12:57,395 --> 00:13:01,596
+Temel mantığı anlayabilecek olursak yeterli bizim için.
+
+60
+00:13:02,235 --> 00:13:11,935
+Programlanabilir kombinezonsal devrelerde arkadaşlar, fiziksel olarak tek bir tüm devre içerisinde birçok VV ya veya NAT kapıları bulunan,
+
+61
+00:13:12,075 --> 00:13:21,855
+bunlar arasındaki bağlantıların uygun şekilde programlanmasıyla karmaşık bir lojik ifadenin tek bir tüm devreyle gerçekleştirilmesini sağlar.
+
+62
+00:13:25,395 --> 00:13:29,735
+Özel ne yapmıştık? Devreler yapmıştık. Geçen haftalardan hatırlayacağınız gibi.
+
+63
+00:13:30,375 --> 00:13:44,735
+Burada ise, madem böyle bir kombinezonsal devre tasarımı var, demek ki biz bunu hazır kapıları koyarsak, programlama mantığıyla gerekli uçları çıkartır, gerekli uçları bağlayacak olursak,
+
+64
+00:13:45,812 --> 00:13:53,851
+Hazır, genel kullanıma yönelik devreler oluşabilir. Bunlar da programlanabilir kombinezonsal devreler deniyor arkadaşlar.
+
+65
+00:13:54,731 --> 00:14:10,932
+Demin bahsettiğim tipleri var burada. Bunların temel mantıklarını, şu üçünün, yani programlanabilir, yalnızca okunabilir bellek, yani read-only memory, programlanabilir dizinler.
+
+66
+00:14:11,860 --> 00:14:27,599
+Ondan sonra programmable arrays, logic arrays, programlı bir lojik dizelde, logic arrays'ı özet şeklinde verseniz ve temel mantığını anlatsanız bizim için yeterli olacaktır arkadaşlar.
+
+67
+00:14:29,899 --> 00:14:31,179
+Ödev anlaşıldı mı arkadaşlar?
+
+68
+00:14:37,908 --> 00:14:38,508
+Bağırız.
+
+69
+00:14:44,980 --> 00:14:47,019
+Ölevi görebiliyor musunuz sistemde?
+
+70
+00:14:51,475 --> 00:14:56,636
+[öğrenci] görebiliyor musunuz sistemde ödevi? [öğrenci]?
+
+71
+00:14:58,496 --> 00:15:01,096
+Anlaşıldı hocam, baktım. Sistemde görebiliyorum.
+
+72
+00:15:01,576 --> 00:15:02,776
+Tamamdır, tamamdır.
+
+73
+00:15:03,576 --> 00:15:12,536
+Şimdi geldik. Bu kısımdan sonra, okey, [öğrenci] buradaymış. Bunu bir silelim.
+
+74
+00:15:13,376 --> 00:15:17,975
+Kuali temizledikten sonra asıl konumuza girelim.
+
+75
+00:15:19,635 --> 00:15:24,816
+Biliyorsunuz arkadaşlar, biz daha önce lojik devreleri ikiye ayırmıştık.
+
+76
+00:15:24,816 --> 00:15:27,795
+1. Kombinezonsal devreler.
+
+77
+00:15:32,467 --> 00:15:35,288
+Devreler ve ardışıl devreler.
+
+78
+00:15:39,923 --> 00:15:59,504
+İngilizce olarak arkadaşlar, kombinezonsal circuits olarak geçerken, buradaki ardışıl devrelerimiz ise arkadaşlar, bizim için hafızanın devreye girdiği, hafıza kısmının yer aldığı devreler.
+
+79
+00:16:00,275 --> 00:16:08,095
+Kombinezonsal devrelerde arkadaşlar kutumuzun içerisinde T anındaki giriş işlenip T anında çıkıyordu.
+
+80
+00:16:08,095 --> 00:16:27,155
+Fakat burada farklı bir şekilde T anında girişler ayrıca bu kutunun içerisinde bir hafıza biriminden durum bilgilerinde girilip durum diyelim bunların çıkış Y T zamanında
+
+81
+00:16:27,347 --> 00:16:40,887
+oluşturuluyor. Şunlara XT edersek. Yani girişlerimiz XT artı burada bizim durumlarımız var. D, T diyelim. Ve çıkışımız oluşuyor. Demek ki bir hafıza birimimiz var.
+
+82
+00:16:42,087 --> 00:16:42,447
+Burada.
+
+83
+00:16:45,447 --> 00:16:54,747
+Şimdi temel yapısını çizecek olursam ben bunun arkadaşlar. Bir ardışıl devre nelerden oluşuyor?
+
+84
+00:16:55,379 --> 00:16:57,540
+Ardışıl devrenin genel yapısı.
+
+85
+00:17:02,131 --> 00:17:20,211
+Genel yapısı diyelim. Bir kere bir kombinezonsal kısım bulunuyor. Yani içerisinde bu kombinezonsal devrenin içerisinde AND'ler, OR'lar, XOR'lar, XNOR'lar herhangi bir şey kullanılabilir. Burası kombinezonsal devre olsun.
+
+86
+00:17:20,211 --> 00:17:28,211
+Burada girişlerimiz var. Bu girişlerden kombinezonsal devrede çıkışlar oluşturuluyor.
+
+87
+00:17:30,740 --> 00:17:46,880
+Daha sonra bu çıkışlardan arkadaşlar bir de durum bilgilerinin saklandığı bir hafıza kısmı var.
+
+88
+00:17:46,880 --> 00:17:56,240
+Bu hafıza kısmı da şuradan besleniyor. Buna giriş olarak bir sonraki durumlar.
+
+89
+00:18:00,211 --> 00:18:18,672
+Yani T anında işlendi, T anında çıktı, T anında burası oluşuyor ama dikkat edin şu andaki girişler D, T, durum T anındaki işler o anda girirken burası bir sonraki.
+
+90
+00:18:19,700 --> 00:18:28,619
+zamanda çıkacak olan durum bilgileri verildiği için D, T artı 1. Buraya D, T artı 1 diyelim.
+
+91
+00:18:29,960 --> 00:18:38,599
+Çünkü burası ilerleyecek. Daha sonraki girişle beraber, T artı birinci girişle beraber incelenecek arkadaşlar.
+
+92
+00:18:40,740 --> 00:18:44,059
+Bizim ardışıl devrelerimiz arkadaşlar.
+
+93
+00:18:45,748 --> 00:18:51,288
+Ardışıl devrelerimiz iki türde olabilir arkadaşlar.
+
+94
+00:18:53,008 --> 00:18:59,327
+Bir tanesi mili makinesi olarak adlandırılıyor.
+
+95
+00:19:02,387 --> 00:19:10,708
+Diğeri ise arkadaşlar mur makinesi olarak adlandırılıyor.
+
+96
+00:19:11,667 --> 00:19:35,047
+Mini makinesinin özelliği şu arkadaşlar. Çizerek gösterirsek daha iyi olacak. Bir kombinezonsal devre kısmı bulunuyor. Şöyle girişimiz XT şeklinde gösteriliyor. Çıkış ZT şeklinde gösterelim.
+
+97
+00:19:36,147 --> 00:19:41,307
+Aynı anlattığım gibi bir durum bilgisinin saklandığı hafıza blue oluyor.
+
+98
+00:19:42,587 --> 00:19:47,967
+Şöyle, DT artı 1, yani bir sonraki durum var.
+
+99
+00:19:52,147 --> 00:20:04,127
+Durumlar ve de o anda işlenmek üzere, girişle beraber işlenmek üzere girdiğimiz durumlar.
+
+100
+00:20:05,467 --> 00:20:14,688
+Bu durumların ne olduğunu anlatacağım. Hafızadaki bir durum, devreye giriş olarak kullanılacak bir durum diye düşünebilirsiniz.
+
+101
+00:20:18,420 --> 00:20:28,920
+Şimdi, bunun haricinde, bir saniye, mur makinemiz var arkadaşlar.
+
+102
+00:20:29,300 --> 00:20:36,420
+Mur makinesinin farkı, yine bir kombinezonsal devre kısmı bulunuyor.
+
+103
+00:20:36,420 --> 00:20:43,740
+Ve çıkış, Z, T olarak adlandırılıyor.
+
+104
+00:20:44,660 --> 00:21:01,100
+Öncelikle şunu gösterelim. Mini makinesinde çıkış, Z, T anındaki çıkış nelere bağlı arkadaşlar? Eğer bir fonksiyon şeklinde yazacak olursak, girişe ve de o anki durumlara bağlı.
+
+105
+00:21:01,760 --> 00:21:11,460
+Peki, bir sonraki durum neye bağlı arkadaşlar? D, T artı bir ise hem D, T'ye T anındaki.
+
+106
+00:21:11,988 --> 00:21:19,347
+Duruma artı girişe bağlı. Bu mini makinesinin genel gösterimi.
+
+107
+00:21:20,347 --> 00:21:28,988
+Şimdi, mur makinesinde ise giriş arkadaşlar sadece durumlara bağlı. Farkı bu.
+
+108
+00:21:30,188 --> 00:21:34,847
+Yani, dt ile beraber, durumlarla beraber çıkışı oluşturuyoruz.
+
+109
+00:21:38,708 --> 00:21:59,968
+Girişim nerede işleniyor? Girişim varsa. Girişim de ayrı bir kombinezonsal devrede işleniyor. Şöyle XT şeklinde. Burası bir sonraki durumlar olmak üzere. Durumda saklanmak üzere bir sonraki durumlar.
+
+110
+00:22:05,011 --> 00:22:07,751
+D, T artı bir diyelim.
+
+111
+00:22:09,671 --> 00:22:15,771
+Bakın gördüğünüz gibi girişten gelen, girişteki işaret işleniyor.
+
+112
+00:22:16,311 --> 00:22:19,251
+Hafızada neyle beraber?
+
+113
+00:22:19,731 --> 00:22:24,591
+Çıkışla beraber saklanıyor işlenerek.
+
+114
+00:22:25,011 --> 00:22:26,531
+Buradan durumlar oluşuyor.
+
+115
+00:22:27,284 --> 00:22:54,284
+O durumlar sadece besliyor. Bakın burada ikisi birden varken yazalım. Z, T, mur makinesinde sadece neyin fonksiyonu? D, T'nin fonksiyonu. Bir sonraki durumlar ise arkadaşlar aynı mur makinesindeki gibi. Hem D, T'nin fonksiyonu artı, tabii şuraya artımızı yazmayalım.
+
+116
+00:22:55,539 --> 00:22:59,639
+Ve de XT'nin fonksiyonu arkadaşlar.
+
+117
+00:23:01,419 --> 00:23:02,799
+Bu kısım anlaşıldı mı?
+
+118
+00:23:02,799 --> 00:23:21,279
+Temel fark, mini makinesinde hem XT hem DT çıkış için etkili olurken, bizim Moore makinemizde sadece DT çıkış için etkili oluyor.
+
+119
+00:23:24,852 --> 00:23:26,951
+Temel mantık anlaşıldı mı arkadaşlar?
+
+120
+00:23:33,619 --> 00:23:35,559
+[öğrenci], anlaşıldı mı?
+
+121
+00:23:36,879 --> 00:23:37,959
+Anlaşıldı hocam.
+
+122
+00:23:38,499 --> 00:23:39,119
+Tamamdır.
+
+123
+00:23:39,759 --> 00:23:42,359
+Şimdi, devam edelim.
+
+124
+00:23:44,019 --> 00:23:48,199
+Bizlerin asenkron ve senkron ardışıl devrelerimiz var.
+
+125
+00:23:49,619 --> 00:23:51,579
+Ardışıl devrelerimizde arkadaşlar,
+
+126
+00:23:55,284 --> 00:23:57,904
+tiplerine göre ardışıl devreler
+
+127
+00:24:01,748 --> 00:24:10,448
+Asenkron ve senkron olmak üzere ikiye ayrılıyor arkadaşlar.
+
+128
+00:24:11,128 --> 00:24:16,328
+Şimdi asenkron dediğimizde şöyle bir giriş verelim.
+
+129
+00:24:16,428 --> 00:24:19,768
+Yani kafanızda canlanması için şöyle bir giriş verelim.
+
+130
+00:24:21,148 --> 00:24:24,848
+Hani kafanızda canlanması gereken kutu da şu olsun.
+
+131
+00:24:24,848 --> 00:24:26,668
+XT'ye giriliyor.
+
+132
+00:24:27,588 --> 00:24:28,768
+Burada asenkron.
+
+133
+00:24:30,579 --> 00:24:35,859
+Ardışıl devre olsun. Burası da çıkışımız, ZT çıkışımız olsun.
+
+134
+00:24:37,719 --> 00:24:42,579
+Bu benim çizmiş olduğum XT. XT'yi çizmiş oldum.
+
+135
+00:24:44,359 --> 00:24:57,219
+Burada asenkron devrelerde arkadaşlar, var olan değişikliğin çıkışlarına yansıtılma zamanları açısından bir sınıflandırılıyoruz.
+
+136
+00:24:58,195 --> 00:25:11,735
+Örneğin, asenkron şekilde davranış gösteriyor olması demek, herhangi bir değişiklik, bekletme olmaksızın sadece gecikmeler hesaba katılıyor.
+
+137
+00:25:12,455 --> 00:25:19,235
+Yani, girişteki değişikliğin yansıtılması için, örneğin girişte nerede bir değişiklik oluyor?
+
+138
+00:25:19,235 --> 00:25:23,895
+Bakın, birden sıfıra doğru geçiş oluyor. Belli bir gecikmeden sonra.
+
+139
+00:25:24,915 --> 00:25:27,875
+Şurası bizim için gecikme.
+
+140
+00:25:29,775 --> 00:25:35,816
+Çıkış ne zaman oluşuyor arkadaşlar? Bizim çıkışımız şuradan itibaren oluşuyor.
+
+141
+00:25:36,195 --> 00:25:40,635
+Burada da bir gecikme var. Çıkış gecikmesi şeklinde adlandırabileceğimiz.
+
+142
+00:25:41,975 --> 00:25:47,375
+Daha sonra bu ilerliyor. Çıkışta girişte bir daha bir değişiklik oluyor. Bakın şurada.
+
+143
+00:25:49,044 --> 00:26:04,604
+Girişte bir daha değişiklik. Belli bir gecikmeyle tabii ki. Belli bir gecikmesi var bunun. Şu gecikme 1 ve gecikme 2 birbirlerinden farklı uzunlukta olabilir arkadaşlar. Farklı uzunlukta olabilir.
+
+144
+00:26:06,744 --> 00:26:15,703
+Burada baktığımızda girişteki, bakın buradaki, şurası da ZT olsun.
+
+145
+00:26:16,884 --> 00:26:28,884
+Şurada bir değişim oldu. Devre ona göre bir tepki verdi, kaldı. Giri çıkışta bir daha bir çeşitli devrenin bu gecikmeler, asenkron, ardışıl devrelerde kullanılan...
+
+146
+00:26:30,928 --> 00:26:36,328
+Devre elemanları, kombinezonsal devredeki gecikmelerden falan kaynaklanıyor.
+
+147
+00:26:37,188 --> 00:26:42,548
+Ne oluyor arkadaşlar? Çıkışta bir daha değişiklik oldu. Yani şurada bir daha değişiklik oldu.
+
+148
+00:26:43,088 --> 00:26:51,548
+Belli bir gecikme var. Ne oluyor arkadaşlar? Şöyle buraya kadar ilerliyor. Bu gecikme oturduğu zaman.
+
+149
+00:26:52,243 --> 00:26:56,003
+Çıkışta tekrar bir değişiklik oluşmaya başlıyor.
+
+150
+00:26:56,843 --> 00:26:59,743
+Bunun da kendi içinde şöyle bir gecikmesi var.
+
+151
+00:26:59,843 --> 00:27:03,463
+Oluşma gecikmesi, çıkışın oluşma gecikmesi.
+
+152
+00:27:04,283 --> 00:27:05,223
+Şurada da vardı.
+
+153
+00:27:05,443 --> 00:27:08,943
+Girişin oluşma gecikmesi, şu kahverengiyle çizdiğim kısımlar.
+
+154
+00:27:09,663 --> 00:27:11,163
+Ve böylece ilerliyor.
+
+155
+00:27:17,619 --> 00:27:28,019
+Devrenin iç yapısıyla alakalı ne kadar bu layerler yüksek, çok layer içeriyorsa şu gecikme süreleri o kadar artıyor.
+
+156
+00:27:30,039 --> 00:27:35,339
+Senkron devrelerde ise arkadaşlar temelde bir saat işareti bulunuyor.
+
+157
+00:27:35,339 --> 00:27:36,179
+Şöyle.
+
+158
+00:27:38,339 --> 00:27:40,599
+Bu saat işaretlerinden de bahsedeceğim.
+
+159
+00:27:41,299 --> 00:27:42,759
+Şimdi bu saat işaretleri.
+
+160
+00:27:44,276 --> 00:28:03,836
+Arkadaşlar, lojik 1 ve 0 arasında giden bir kare dalga veya şöyle bir kare dalga veya şöyle eşit çizeyim onu, bir kare dalga veya impuls dalgası şeklinde düşünebilirsiniz.
+
+161
+00:28:03,836 --> 00:28:11,456
+Aslında dar bir impuls dalgası şeklinde düşünebilirsiniz. Aslında ideal olan nedir? Anlık bir atım yapması.
+
+162
+00:28:12,115 --> 00:28:27,435
+Ve de sen şu saniyelerde çalışacaksın. Yani bu atımın olduğu yerlerde. Peki bu atım neresi? Farklı uygulamalar var arkadaşlar. Bir, yükselen kenarda tetikleme denilebilir. Tam bu anda çalışmaya başlar.
+
+163
+00:28:27,435 --> 00:28:37,775
+Veya düşen kenar tetiklemeli bir yapıda olabilir. Veya bunun haricinde arkadaşlar seviye tetiklemeli olabilir. Bir.
+
+164
+00:28:38,355 --> 00:28:53,175
+Yükselen kenar, düşen kenar, bunlar kenar tetiklemeli yapılar. Bir de seviye tetiklemeli olabilir. Yani birdeyken çalışacak gibi yapabilirsiniz.
+
+165
+00:28:53,316 --> 00:29:02,936
+Tabii bu durumda saat işaretini biraz daha küçültmeniz lazım ki tam şu bir olduğu zamanlarda, yani şu bir olduğu zamanlarda çalışması lazım.
+
+166
+00:29:02,936 --> 00:29:05,836
+Veya tam tersi şeklinde de kurgulanabilir.
+
+167
+00:29:06,256 --> 00:29:24,316
+Düşük kenarda şey yapılabilir. Bu saat ters bir saat işareti uygulanır. Şöyle, yüksek kenarda değil de sıfır olduğu zamanlarda tetiklemesi veya çalışması sağlanabilir. Bu tamamıyla seçimle alakalı bir şey.
+
+168
+00:29:24,316 --> 00:29:32,436
+Ama genel gösterim olarak saat işareti bu şekilde gösterir. Aslında olması gereken budur. Impulse şeklinde bir etkidir.
+
+169
+00:29:33,299 --> 00:29:39,959
+Şurada bu impulsun oluşma süresi T neredeyse sıfıra doğru gitmesi lazım.
+
+170
+00:29:40,079 --> 00:29:41,879
+Ama gerçekte oluşturan işaret bu.
+
+171
+00:29:42,519 --> 00:29:48,579
+Bu işaretin de ya yükselen kenarında veya düşen kenarında tetiklenmesi beklenir.
+
+172
+00:29:49,379 --> 00:29:55,279
+Daha doğrusu devreye devredeki çalışma hafıza birimlerinin ve kombinezonsal devrelerinin
+
+173
+00:29:55,279 --> 00:29:59,259
+evet sen şu anda içeride ne durum varsa girişlerinde onları al.
+
+174
+00:30:00,000 --> 00:30:01,700
+Bu şeklinde uyarı veriyoruz aslında.
+
+175
+00:30:02,820 --> 00:30:05,019
+Şimdi bu bizim saat işaretimiz.
+
+176
+00:30:05,360 --> 00:30:06,440
+Saatimiz diyelim.
+
+177
+00:30:07,759 --> 00:30:11,220
+Peki bizim şöyle bir girişimiz var.
+
+178
+00:30:11,900 --> 00:30:13,400
+Şöyle uyguladık.
+
+179
+00:30:14,560 --> 00:30:15,120
+Geldi.
+
+180
+00:30:16,019 --> 00:30:18,340
+Ondan sonra burada değişikliyorum.
+
+181
+00:30:18,500 --> 00:30:20,800
+Bu da bizim giriş işaretimiz olsun.
+
+182
+00:30:21,580 --> 00:30:22,720
+Nerelerde tetikli?
+
+183
+00:30:22,720 --> 00:30:24,340
+Pardon arkadaşlar.
+
+184
+00:31:42,771 --> 00:32:10,091
+Kusura bakmayın arkadaşlar. Şimdi kaldığımız yerden devam edelim. Sequential devreleri geçmiştik. Bu biraz daha sayısal mantığı, sizin sayısal mantığınıza oturacaktır. Çalıştığı anlar arkadaşlar, bakın, şu yükselen kenarlarda çalıştığını düşünelim. Şu yükselen kenarlarda çalışması demek sadece o anlardaki bilgi geçerli oluyor devre için diye düşünebilirsiniz.
+
+185
+00:32:11,155 --> 00:32:31,836
+Çıkışı oluşturalım arkadaşlar. Çıkışı oluşturduğumuzda örneğin tam şuradan geldik diyelim şöyle. Bu bizim ZT'miz olsun çıkışımız. Ne olacak arkadaşlar? Tam şu senkron anına denk geldiği zaman devre bir çıkış üretecek.
+
+186
+00:32:37,652 --> 00:32:42,272
+Veya belli bir gecikmeyle beraber yukarı doğru çıkmaya başlayacak.
+
+187
+00:32:42,951 --> 00:32:47,332
+Burada da aynı şekilde devre, örneğin sıfırdan geliyor diyelim.
+
+188
+00:32:48,572 --> 00:32:51,032
+Tam şu anda değişime uğrayacak.
+
+189
+00:32:51,532 --> 00:32:55,552
+Belli bir gecikmeyle, şurada gecikmelerin olduğunu düşünelim şöyle.
+
+190
+00:32:56,552 --> 00:32:59,852
+Ya böyle, hep böyle yukarı doğru ben çekiyorum mu?
+
+191
+00:33:00,252 --> 00:33:04,812
+Ya olduğu gibi kalabilir, devrenin davranışına göre veya yukarı doğru da gidebilir.
+
+192
+00:33:05,779 --> 00:33:16,279
+Dediğim gibi senkronlama anı burada bizim için çok önemli. Tam o senkrondaki yani şu andaki, şu andaki girişler benim için önemli.
+
+193
+00:33:16,279 --> 00:33:25,099
+Onun dışında burada istediği kadar dönüşüm gerçekleştirsin giriş. Benim için önemli olan saat darbesinin...
+
+194
+00:33:25,140 --> 00:33:45,180
+Vurduğu zamanki, neresini iştah alıyorsan, burada yükselen kenarı almışım, başka bir uygulamada düşen kenar alınabilir veya seviye tetiklemeli bir yapı olabilir. Önemli olan o andaki senkronlama anının da girişlerde ne olduğu benim için önemli.
+
+195
+00:33:45,180 --> 00:33:49,180
+Evet, şimdi...
+
+196
+00:33:50,932 --> 00:34:07,031
+Bundan sonra bu ardışıl devre, daha doğrusu sequential, ardışıl onu söylemeyi unuttum, ardışıl devreler, sequential devreler olarak adlandırılıyor arkadaşlar.
+
+197
+00:34:08,552 --> 00:34:13,692
+Önemli olan, bakın, burada bir hafıza bloğu var.
+
+198
+00:34:14,420 --> 00:34:23,180
+Bu hafıza bloklarını nasıl kullanacağız? Burada neleri saklayacağız? Asıl soru bu bizim için.
+
+199
+00:34:24,220 --> 00:34:32,119
+Şimdi baktığımızda öncelikli olarak bu durumların içerisinde neler saklanıyor?
+
+200
+00:34:32,779 --> 00:34:39,980
+Örneğin bizim durumlarımız graf teorisinden de hatırlayacak nodlar şeklinde ifade ediliyor arkadaşlar.
+
+201
+00:34:42,003 --> 00:34:56,243
+0'dan 7'ye doğru saydığınızı düşünün. Ne oluyor arkadaşlar? 0, 1, 2, 3 şeklinde gidiyorsunuz. 7, 7'den sonra 0'a dönebilirsiniz. 7'den sonra kendinde kalabilirsiniz.
+
+202
+00:34:56,243 --> 00:35:00,304
+Burada dikkat edin 2'ye geçmek için.
+
+203
+00:35:01,076 --> 00:35:18,695
+Daha önce hangi nottan geçmeniz lazım? Birden geçmiş olmanız lazım. Yani sizin iki çıkışını üretebilmeniz için bir nodundan oraya geçmiş olmanız lazım. Bu bir saat darbesiyle gelir veya belli bir girişle beraber buluşturabilir.
+
+204
+00:35:18,695 --> 00:35:27,916
+Genel yapısı şu şekilde arkadaşlar nodlar arası geçiş için. Şurası durum N artı bir. Pardon.
+
+205
+00:35:28,788 --> 00:35:53,368
+Durum N diyelim oraya. Şöyle durum N, durum N artı bir diyelim. Bunun arasındaki geliş şu şekilde gösteriliyor. Giriş ve çıkış şeklinde şöyle slash ile beraber ayrılıyor. Örneğin bir gelirse sıfır çıkış üretsin devrede ve şu duruma geçsin şeklinde.
+
+206
+00:35:56,083 --> 00:36:05,063
+1 şeklinde adlandırıyor veya kendi içerisine dönecekse tekrar 0 gelince 0 çıkması lazım gibi.
+
+207
+00:36:05,743 --> 00:36:13,884
+Dikkat edin giriş kaç bitlikse örneğin burada 1 bitlik bir girişi için DN artı 1'e gidiyor.
+
+208
+00:36:14,644 --> 00:36:19,863
+Bir girişi varsa muhakkak 0 çıkışına göre de davranışını belirlemek lazım.
+
+209
+00:36:20,307 --> 00:36:35,907
+İki girişi varsa, X2, X1 şeklinde değişken olarak, 00, 01, 10 ve 11 gibi bütün girişlere karşı devrenin nasıl davranacağını bulmamız gerekiyor arkadaşlar.
+
+210
+00:36:36,988 --> 00:36:42,547
+Bunlardan, bakın bu graflardan baktığımızda, örneğin 7'ye.
+
+211
+00:36:43,155 --> 00:37:07,216
+Bir tane devre yapalım örneğin. Diyelim ki sıfırdan yediye sayan örnek, sıfırdan yediye sayan ve çıkışını tek sayılarda bir yapan devre. Deminki gibi sayacağız.
+
+212
+00:37:08,307 --> 00:37:16,007
+Tabi burada bir giriş yok. Her bir saat darbesi geldiğinde girişimiz bu bizim saat darbesi girişimiz.
+
+213
+00:37:16,007 --> 00:37:25,587
+Çıkışımız ise anca burada bir. Birden ikiye geçerken sıfır. İkiden bir saat darbesi bizim girişimiz.
+
+214
+00:37:26,324 --> 00:37:37,423
+Bir şeklinde yapılansak, bir de bunların arkadaşlar, graf şeklinde gösterilebildiği gibi, doğruluk tablosu da durum tablosu şeklinde yapılabiliyor.
+
+215
+00:37:37,423 --> 00:37:39,503
+Durum tablosu.
+
+216
+00:37:40,884 --> 00:37:45,043
+Durum tablosunda arkadaşlar, şimdiki durumlar,
+
+217
+00:37:49,652 --> 00:37:58,011
+Sonraki durumlar ve çıkış olmak üzere 3 kısım var.
+
+218
+00:37:59,532 --> 00:38:03,331
+Şimdiki durumlar Q, T.
+
+219
+00:38:04,372 --> 00:38:08,011
+Sonraki durumlar Q, T artı 1.
+
+220
+00:38:08,511 --> 00:38:11,492
+Çıkış ise Z şeklinde gösterildiğini düşünüyorum.
+
+221
+00:38:14,739 --> 00:38:18,719
+Sonraki durumları büyük ye şeklinde gösterildiği de oluyor.
+
+222
+00:38:19,719 --> 00:38:25,399
+Peki bizim şimdiki durumlarımızı saklayabilmemiz için örneğin sıfırdan 7'ye sayıyoruz.
+
+223
+00:38:25,519 --> 00:38:26,899
+Kaç bite ihtiyacımız var?
+
+224
+00:38:28,319 --> 00:38:31,259
+8 tane değişik durum var sıfırla 7 arasında.
+
+225
+00:38:31,739 --> 00:38:33,219
+Değil mi? 7'deyim, 3'deyim.
+
+226
+00:38:33,840 --> 00:38:35,559
+Toplam kaç bite ihtiyacım var?
+
+227
+00:38:37,259 --> 00:38:41,039
+A, B, C olmak üzere 3 bite ihtiyacım var.
+
+228
+00:38:41,376 --> 00:38:47,115
+Sonraki durumlar A, B, C. Bunlar sonraki durumların üstüne artı da koyabiliriz.
+
+229
+00:38:48,176 --> 00:38:49,936
+Genel olarak gösterecek olursak.
+
+230
+00:38:50,596 --> 00:38:54,056
+Tabloyu nasıl oluşturacağız? Mesela şurada çizdiğimiz tabloyu.
+
+231
+00:38:54,676 --> 00:38:57,316
+Örneğin şu anda sıfırdayım, sıfır nodundayım.
+
+232
+00:38:58,115 --> 00:38:59,676
+Bir saat darbesi geldi.
+
+233
+00:39:00,532 --> 00:39:07,092
+Mesela şuraya giriş de çizilebilir aslında. Burada sayma durumunda giriş yok. Bir saat darbesi belki düşünülebilir.
+
+234
+00:39:07,992 --> 00:39:15,992
+0-0'da bir saat darbesi geldi. Bir sonraki durumu ne? 1'e geçtim. Çıkışım ne olacak? 1 olacak.
+
+235
+00:39:16,912 --> 00:39:23,492
+0-0, 1 durumundayım. Bir saat darbesi geldi. Bir sonraki durumum ne? 2'ye geçeceğim. Çıkışım 0.
+
+236
+00:39:27,456 --> 00:39:42,936
+Saat darbesi geldi, 3'e geçtim, çıkışım 1. 3 durumundayım, saat darbem geldi, çıkışım 4'e geçti, 0 gibi ilerletebiliyoruz.
+
+237
+00:39:43,016 --> 00:39:54,036
+Buna da arkadaşlar, bu çizdiğimiz diagramlar, grafiklerle durum tablosu arasında geçişi yapabiliyoruz arkadaşlar.
+
+238
+00:39:54,643 --> 00:40:01,203
+Şimdi bir tane örnek yapalım hemen. Örneğimiz ne olsun? Örnek.
+
+239
+00:40:03,283 --> 00:40:11,983
+Basit bir şifreleme devresi yapın diyorlar bize. Devrenin bir girişi ve bir çıkışı olacak.
+
+240
+00:40:14,423 --> 00:40:20,563
+Ve de kendisine verilen şifre koduna göre çıkışı lojik bir yapması isteniyor.
+
+241
+00:40:21,043 --> 00:40:37,483
+Peki şifre ne? 1, 1, 1, 0 imiş şifremizde. Aslında şöyle düşünebilirsiniz. Buradan bir sayı akıyor. 1, 0, 1, 1, 0. Şöyle bir stream akıyor. T buraya doğru.
+
+242
+00:40:37,871 --> 00:40:50,931
+Artıyor. Önce 1 geliyor, sonra 0 geliyor. Ama ben yazı şeklinde yazarken 1, 1, 1, 0 şeklinde yazıyorum. Ama aslında beklediğim şu streaming içerisinde 1, 1, 1, 0'ın gelmesi.
+
+243
+00:40:50,931 --> 00:40:54,731
+Yani önce bu gelecek. T anında. T artı 1.
+
+244
+00:40:55,284 --> 00:41:05,824
+2, 3 şeklinde düşer misiniz? Yani şifremiz 1. Yazarken soldan sağa yazıyoruz ama stream ne yapıyor? Önce 1 gelecek, arkasından tekrar 1, sonra 1, 1 daha gelecek.
+
+245
+00:41:06,864 --> 00:41:16,824
+Şimdi bu şifre geldiğinde yani arda arda 3 tane lojik 1, sonra 0 geldiğinde çıkışın 1, aksi durumda çıkışın 0 olması isteniyor.
+
+246
+00:41:17,824 --> 00:41:20,744
+Şimdi burada kaç tane durum oluşacak?
+
+247
+00:41:21,811 --> 00:41:48,631
+Bakalım, ilerleyelim. Öncelikle sıfır durumundayız. Yani hiç bir bekliyoruz. Önce neyi bekliyoruz? Şu birin gelmesini bekliyoruz. Eğer bir gelmişse burası durum sıfır, bir gelmişse durum bire geçmiş olur. Durum bir, bir tane birin gelmiş olması durumu. Durum sıfırdayız. Bir gelmesini bekliyoruz. Örneğin başında sıfır olabilir.
+
+248
+00:41:49,619 --> 00:42:14,980
+Şöyle, sıfırdayız, bir gelmesini bekliyoruz. Bir geldiyse, arkadaşlar, ne yapıyoruz? Bir geldiyse, çıkışımız sıfır, D1'e gidiyoruz. Ama sıfır gelirse, kendimize dönmemiz lazım. Bakın, bir nottan girişin bütün olasılıklarının çıkması lazım. Bir geldi.
+
+249
+00:42:15,699 --> 00:42:34,420
+Bir daha bir gelirse, burası bir gelmiş durumu. Burası ne? D2. Bir daha bir gelmiş. Çıkışım ne arkadaşlar? Sıfır. Eğer D1'deyken sıfır gelseydi ne olacaktı?
+
+250
+00:42:34,420 --> 00:42:41,539
+Ben bir geldi, arkasına sıfır geldi, şey bozuldu. Şifre bozuldu.
+
+251
+00:42:41,844 --> 00:42:56,103
+Yani başa döneceğim. Bir daha 1'i bekleyeceğim burada. 0 gelirse çıkışım 0. Arkasından burası ise devirse 1-1 gelmiş durumu.
+
+252
+00:43:00,500 --> 00:43:03,720
+Arkasından bir daha bir gelirse.
+
+253
+00:43:05,960 --> 00:43:10,500
+D3. Burada bir, bir, bir gelmiş durumu.
+
+254
+00:43:12,360 --> 00:43:14,300
+Yani şifre tamamlanıyor.
+
+255
+00:43:15,660 --> 00:43:21,559
+Peki, benim iki durumumu ben yazmadım da bir gelirse çıkışım hala sıfır bir, bir.
+
+256
+00:43:21,559 --> 00:43:26,100
+Bakın şurada bir, bir, birim oluştu.
+
+257
+00:43:28,244 --> 00:43:33,063
+Şuradayken sıfır gelirse, bir bir gelinti arkasından bir bir sıfır gelirse ne oluyor?
+
+258
+00:43:33,923 --> 00:43:38,304
+Burada da büyü bozuluyor. Tekrar başa dönüp tekrar bir beklemem lazım benim.
+
+259
+00:43:38,704 --> 00:43:43,844
+Çünkü ben bir, bir, bir arkasından sıfırı bekliyor olacağım.
+
+260
+00:43:45,204 --> 00:43:50,744
+Buraya kadar geldik. Üçteyim. Burada iki durum söz konusu.
+
+261
+00:43:54,003 --> 00:44:20,224
+İki türlü şey yaparım. Çünkü ben son sıfırı bekliyorum. İki türlü durum söz konusu. Ya başa döneceğim şöyle. Sıfır geldi, çıkışın bir olacak. Veya state'i kilitleyeceğim. Evet, şifrem geldi deyip kendimi kapatacağım. Sıfır geldi, çıkışın bir diyeceğim. Dördüncü bir durum tanımlayacağım. Bundan sonra ne gelirse gelsin.
+
+262
+00:44:20,755 --> 00:44:41,935
+Çıkışın bir olacak. Bu tamamıyla tasarıma bağlı. Yani turuncu yoldan mı, yeşil mi yoldan gideceğiniz size bağlı. Orada problemin gerçekten iyi tanımlanması lazım. Bu başlangıca dönülmesi, başlangıç. Buradaysa bir kitleme durumu söz konusu.
+
+263
+00:44:43,027 --> 00:45:06,907
+Fakat burada bir şeye dikkat edelim. Sıfır gelince çıkışta yaptım. Peki bir gelirse D3'te ne olacak? Üç tane bir geldiyse bir tane daha bir gelirse ne olacak arkadaşlar? Sıfır bekliyordum şurada. Şurada sıfır bekliyordum. Sıfır gelirse bunlara gittim. Ama bunun yerine bir durumu oluşturdu ne olacak?
+
+264
+00:45:08,148 --> 00:45:25,208
+Bu bir son gelen bir birin altına en baştaki bir boşa düşmüş olacak. Bunun arkasına bir daha sıfır gelmesini bekleyeceğim. Bu sefer kendi üzerime katlanıyorum. Bir geldi, sonuç sıfır. Yani en son gelen hafızada bakın neyi tutmuş oluyoruz biz.
+
+265
+00:45:33,427 --> 00:45:46,367
+Benim şeyimi bozmuyor, şifremin yapısını bozmuyor. Ben şu sıfırın yerine bir gelirse şayet, şuradaki gibi, baştaki bir gitmiş, yeni üç tane birim burada oluşmuş oluyor.
+
+266
+00:45:49,067 --> 00:45:59,228
+Anlaştık mı arkadaşlar? Buradan da sonlu durum makinelerine, sonlu durum makinelerine geçiyoruz.
+
+267
+00:46:02,739 --> 00:46:05,199
+Sonlu durum makineleri nedir arkadaşlar?
+
+268
+00:46:07,059 --> 00:46:14,859
+Çıkışı elde etmek için belirli sayıda geçmiş bilgisine ihtiyaç duyan ardışıl devre uygulması.
+
+269
+00:46:14,859 --> 00:46:24,539
+Yani aynı bu şifre örneğinde çözdüğümüz gibi çıkışı elde etmek için belli sayıda geçmiş bilgisine ihtiyaç duyuyoruz burada.
+
+270
+00:46:30,228 --> 00:46:57,308
+Onunla alakalı bir tane daha örnek yapalım. Örneğim, örnek. Şimdi bu sefer de yine bir şifre makinesinden başlayalım. Şöyle makinenin içine geliyoruz. Bir stream akıyor burada. Burada 0, 1 sırasıyla. T böyle gidiyor. 0, 1, 1, 0, 1, 0. Başında.
+
+271
+00:46:57,907 --> 00:46:59,707
+1'ler 0'lar olabilir.
+
+272
+00:47:01,087 --> 00:47:04,367
+Ben neyi yakalamaya çalışacağım? Şunu yakalamaya çalışacağım.
+
+273
+00:47:05,787 --> 00:47:07,507
+Şu kısmı yakalamaya çalışıyorum.
+
+274
+00:47:08,907 --> 00:47:13,147
+Burası sonlu durum makinesi.
+
+275
+00:47:14,387 --> 00:47:16,047
+Sonlu durum makinesi neydi?
+
+276
+00:47:17,267 --> 00:47:18,107
+Arkadaşlar,
+
+277
+00:47:19,315 --> 00:47:28,855
+Çıkışı elde etmek için belli sayıda geçmiş bilgisine, aynı buradaki bakın, belli sayıda geçmiş bilgisine ihtiyacım var benim.
+
+278
+00:47:31,076 --> 00:47:32,996
+Sonlu durum makinesi diyoruz.
+
+279
+00:47:33,315 --> 00:47:35,215
+Şifremiz neymiş? Tersten okuyoruz.
+
+280
+00:47:35,315 --> 00:47:42,335
+Burada önce sıfır gelecek, sonra bir gelecek, bir gelecek, sıfır gelecek, bir gelecek ve sıfır gelecek.
+
+281
+00:47:45,588 --> 00:47:56,248
+Geldikten sonra da şöyle diyor. Geldikten sonra da daima bir üretsin diyor. Problemi bu sefer kendimiz iyi bir şekilde tanımlıyoruz.
+
+282
+00:47:57,708 --> 00:48:05,588
+Şimdi bunun durum tablosunu da oluşturacak olursak hem grafiğini çizelim hem durum tablosunu oluşturalım.
+
+283
+00:48:07,199 --> 00:48:33,119
+Durumlara şöyle 0, 1, 2 diyebiliriz arkadaşlar. Örneğin, ilk önce 0 bekliyorum. 1 gelirse ne yapacağım? Çıkışı 0 diyeceğim. 0 gelirse, ikinci duruma sayı adı verebilirim böyle. 1 diyebilirim burada. 0 gelirse, çıkışım 0. Yani benim şu ilk 0'ımı elde etmiş oldum. Yani 0 gelmiş olma durumu.
+
+284
+00:48:33,907 --> 00:48:44,887
+Bir daha sıfır gelirse ne yapacak arkadaşlar? Bir nolduruma geri döneceğim. Çünkü hala sıfır bekliyordum. Geldi, bir daha sıfır geldi, hala başlayayım.
+
+285
+00:48:46,288 --> 00:48:55,748
+Bir gelirse, bir gelirse arkadaşlar, iki nolduruma geçiyorum. Bir gelirse, çıkışım sıfır olmak üzere.
+
+286
+00:48:59,251 --> 00:49:16,791
+0 gelmiş olma durumuna geçiyorum. 0 gelirse, çıkışım 0, hala tekrar 0 var elimde. 1, 1, 0, 1, 0'ı bekleyeceğim bu sefer. Arkasından 3. duruma geçiyorum.
+
+287
+00:49:17,327 --> 00:49:35,768
+Üçüncü durumum için sıfır geldi, bir geldi, şöyle sıfır geldi, bir geldi, sıfır bir geldi. Bir daha bir gelirse çıkışım yine sıfır. Ama beklediğim şeyde ilerliyorum. Sıfır bir bir geldiği zaman ilerliyorum buradaki durumda.
+
+288
+00:49:35,768 --> 00:49:41,048
+Peki, buraya geldim. Üçteyim.
+
+289
+00:49:42,132 --> 00:50:05,711
+İkinin bütün şeylerini tamamladım. Tamamlaya tamamlaya gidiyorum. Sonra dördüncü duruma geçeceğim. Hangi durumda? 0, 1, 1, 0, 1, 1'i tamamladım. 0 gelirsem geçeceğim. 0 gelirsem sonuç benim için 0. Hala 0'dayım.
+
+290
+00:50:07,711 --> 00:50:08,431
+Beklediğim.
+
+291
+00:50:08,831 --> 00:50:30,851
+Dizi gerçekleşiyor. 0, 1, 1, 0. Çıkışım 0. Peki, 3'teyken 0 geldi. Tekrar 1 gelirse nereye gitmem lazım arkadaşlar? 0 çıkışını yaptım. Bir daha 1 gelirse burada ne olacak? Bir önceye mi döneceğim?
+
+292
+00:50:36,692 --> 00:50:38,412
+Bütün büyü bozuldu burada.
+
+293
+00:50:39,912 --> 00:50:42,392
+Tekrar sıfır bekleme durumuna gitmem lazım.
+
+294
+00:50:42,592 --> 00:50:51,112
+Yani şuraya sıfır gelirse, pardon özür dilerim, bir gelirse sıfır çıkışımdayım.
+
+295
+00:50:51,492 --> 00:50:54,331
+Sıfır ne olur? Çıkışa gitmem gerekiyor.
+
+296
+00:50:56,512 --> 00:51:00,092
+Dörtteyim. Beşe geçeceğim. Ne zaman?
+
+297
+00:51:00,788 --> 00:51:19,428
+0, 1, 1, 0'ım gelmişti. 1 bekliyorum. 1 gelirse çıkışım 0. Yani benim beklediğim kaçıncı? 1, 2, 3, 4 tane geldi. Sonraki şu 1 de gelmiş oldu. Değil mi arkadaşlar?
+
+298
+00:51:27,027 --> 00:51:48,867
+Pardon, 5'teyken, pardon şunu farklı renkli yapayım. Bir daha 0 gelirse, ne olacak arkadaşlar? 5'teyken bir daha 0 geldi diyelim. Çıkışım 1 olacak. Yani benim şu döngüm tamamlandı bakın.
+
+299
+00:51:54,447 --> 00:52:14,947
+Şifre tamamlandı, 1 yaptı ve kilensin istiyordum. Artık bundan sonra ne gelirse gelsin, çıkışım 1 olacak. Burada boş kaldı. 5'e kadar neleri elde etmiştim ben? 0, 1, 1, 0, 1. Peki, burada?
+
+300
+00:52:16,436 --> 00:52:26,756
+0 gelirse tamamlandı ve devre 1 sonucunu oluşturdu. Peki bir daha 1 gelme durumunda ne olur? Bir daha 1 gelse.
+
+301
+00:52:28,756 --> 00:52:40,816
+Ne olacak arkadaşlar? Büyü bozuldu mu? Tam anlamıyla bozulmadı. Şu son 3'lü aslında şurayı sağlıyor.
+
+302
+00:52:42,099 --> 00:52:48,880
+Hani dizinde sıfır bekliyorduk biz tamamlanması için ama bir gelince tam anlamıyla şifre bozulmuyor.
+
+303
+00:52:49,420 --> 00:52:54,599
+Şu tekrar başa, baştaki sıfır bir bir dizisi hazır sağlanmış oluyor.
+
+304
+00:52:54,599 --> 00:52:59,139
+Yani bizim şuraya gitmemiz yeterli oluyor.
+
+305
+00:52:59,259 --> 00:53:04,880
+Çünkü biz bunlardan sonra tekrar sıfır bir sıfırı oluşturmaya çalışacağız.
+
+306
+00:53:06,768 --> 00:53:17,748
+Bir daha 1 gelirse sonuç 0 ama başa dönmüyoruz 3 durumuna. Yani 0, 1, 1 gelmiş olma durumuna dönmüş oluyoruz arkadaşlar.
+
+307
+00:53:20,827 --> 00:53:27,788
+Bununla alakalı olarak bir tablo oluşturacak olursak arkadaşlar, tabloyu nasıl olacağız? Şöyle diyeceğiz.
+
+308
+00:53:37,780 --> 00:53:38,580
+Giriş
+
+309
+00:53:38,580 --> 00:53:42,780
+Bir sonraki durum
+
+310
+00:53:48,403 --> 00:53:54,483
+Ve de çıkış olmak üzere durum tablosunu bu şekilde oluşturacağız.
+
+311
+00:53:54,663 --> 00:53:55,723
+Peki burada neler var?
+
+312
+00:54:04,019 --> 00:54:18,019
+1, 1, 2, 2 şeklinde gidecek. Yani benim burada kaç durumum var? Bakın, 0'dan 6'ya kadar 6 tane değişik durum var. Niye çifter çifter yazdım? Çünkü girişlerim, yani X'im benim, 0 ve 1 alıyor.
+
+313
+00:54:18,019 --> 00:54:31,500
+0 ve 1 alıyor. Hem 0'daki hem 1'deki davranışına göre benim bunu çizmem lazım. Peki, 6 tane durumum varsa bunu ben kaç bitle, kaç bitle ifade edebilirim?
+
+314
+00:54:32,211 --> 00:54:38,791
+2 bit olsa 4 tane, 3 bit olsa 8 tane. Demek ki 3 tane saklamam gereken bit var.
+
+315
+00:54:39,231 --> 00:54:46,871
+D2, D1, D0. Yani durum bilgisi bitlerle saklanıyor arkadaşlar.
+
+316
+00:54:46,871 --> 00:54:55,271
+Örneğin ben burada 0-0 için normal 0-0 yazabilirim. 1-1 için 0-0-1.
+
+317
+00:54:57,139 --> 00:55:01,599
+Sonuçta bu nodların da kodlanması lazım. Öyle değil mi?
+
+318
+00:55:02,599 --> 00:55:11,239
+Baktığımda, böyle geldiğimde 2 için 0, 1, 0, 0, 1, 0 şeklinde gidiyor.
+
+319
+00:55:12,939 --> 00:55:17,439
+Bir sonraki duruma tablodan bakarak yazacak olursam ne yazmam lazım?
+
+320
+00:55:17,439 --> 00:55:19,439
+Buraya baktığımda.
+
+321
+00:55:21,300 --> 00:55:32,020
+Bir sonraki durum, yani burası Q durumu, burası Q plus durumu. Şöyle yazabiliriz, D2 plus, N1 plus, D0 plus şeklinde.
+
+322
+00:55:32,820 --> 00:55:41,880
+0, 0'dayken, 0 gelince nereye gitmiştim arkadaşlar? 0, 0'dayken, şöyle göstereyim, 0 gelince 1'e gitmiştim.
+
+323
+00:55:42,360 --> 00:55:46,860
+0, 0, 1 durumuna gitmiştim. Çıkışım neydi? 0.
+
+324
+00:55:49,235 --> 00:55:58,695
+Peki 0, 0'dayken 1 gelince nereye gitmiştim? Kendime kapanmıştım. 0, 0, 0 durumuna gitmiştim. Çıkışım 0'da.
+
+325
+00:56:00,516 --> 00:56:10,215
+1 durumundayım. 1 durumundayken 0 gelince 1 durumdayım. 0 gelince ne yapmıştım burada arkadaşlar? Kendime kapanmıştım.
+
+326
+00:56:10,976 --> 00:56:15,355
+Yani 0, 0, 1'e gitmiştim. Sonucum yine 0'dı.
+
+327
+00:56:16,532 --> 00:56:42,192
+Bir durumundayım. Sıfır gelir, bir gelince nereye gitmiştim arkadaşlar? Şurası. İki ne oldu duruma gitmiştim. Yani sıfır, bir sıfıra gitmiştim. Çıkışım ne? Sıfır. Bu şekilde bütün tabloyu oluşturuyoruz arkadaşlar. En sonundaki şöyle üç nokta koyayım. Şöyle altıncı durumdayım diyelim. Şuraları da uzatayım. Şöyle.
+
+328
+00:56:42,996 --> 00:57:09,135
+Siz gerisini tamamlarsınız. Şurası da 6. Şöyle diyelim, onu da şöyle kodladım. Burada iki tane değişik durum var. 0, 1 gelme durum var. 6'dayken, 1 gelme durumunda, 6'dayken hem 0 hem 1 gelme durumunda nereye dönüyorum? Yine 6'ya dönüyorum arkadaşlar.
+
+329
+00:57:09,907 --> 00:57:12,447
+Çıkışlarımda devamlı sıfır.
+
+330
+00:57:13,527 --> 00:57:14,507
+Gördüğünüz gibi.
+
+331
+00:57:16,627 --> 00:57:18,467
+Peki, şurayı da yazmam lazım.
+
+332
+00:57:19,827 --> 00:57:21,227
+5 durumundayım diyelim.
+
+333
+00:57:22,767 --> 00:57:24,547
+Yani sıfır, pardon.
+
+334
+00:57:26,147 --> 00:57:28,287
+1, 0, 1, 1, 0, 1.
+
+335
+00:57:29,947 --> 00:57:31,487
+Şurayı da yazayım.
+
+336
+00:57:32,867 --> 00:57:34,207
+Buraya sıfır 1 geldi.
+
+337
+00:57:35,007 --> 00:57:35,807
+5'teyken
+
+338
+00:57:37,364 --> 00:57:39,643
+Bir gelince nereye gitmiştim arkadaşlar?
+
+339
+00:57:40,583 --> 00:57:41,503
+Üçe gitmiştim.
+
+340
+00:57:42,563 --> 00:57:44,103
+Bir gelince üçe gitmiştim.
+
+341
+00:57:44,223 --> 00:57:45,103
+Sıfır, bir, bir.
+
+342
+00:57:45,884 --> 00:57:46,943
+Çıkışım sıfırdı.
+
+343
+00:57:47,643 --> 00:57:49,603
+Peki beşteyken sıfır gelirse?
+
+344
+00:57:50,384 --> 00:57:51,703
+Altıya gitmiştim.
+
+345
+00:57:52,223 --> 00:57:54,223
+Çıkışımda bir olmuştu.
+
+346
+00:57:55,143 --> 00:57:55,823
+Gördüğünüz gibi.
+
+347
+00:57:57,364 --> 00:58:03,063
+Kitabımızda arkadaşlar, eşdeğerlik tablosu ile durum indirgeme ile alakalı bir kısım var.
+
+348
+00:58:03,563 --> 00:58:06,043
+Kendiniz çalışırsınız o kısımlara.
+
+349
+00:58:09,748 --> 00:58:15,788
+durum sayısının indirgenmesi, yani durum tablosunun çok karmaşık olması durumunda. Bunu da gördük.
+
+350
+00:58:16,487 --> 00:58:24,748
+Eşdeğerlik tablosu ile durum indirgemek kısmı var. Bu tablolar çok büyük olduğunda tabii ki birbirine benzer girişleri,
+
+351
+00:58:25,147 --> 00:58:36,507
+sadece size durum tablosu ile verilen bir şeyde belli bir durumun tekrar ettiğini, kendinin aslında benzer, eşdeğer durumları olduğunu çıkarabilmek için.
+
+352
+00:58:36,864 --> 00:59:02,743
+Yapılıyor. Bunu geçelim. Standart, ne demiştik arkadaşlar? Dersin en başında benim bir kombinezonsal devre kısmım da var. Bu ardışıl devrede. Durum bilgilerim var ama bu durum bilgilerim hafıza birimlerinde. Bunlar flip-flop, ondan sonra REM, ROM gibi.
+
+353
+00:59:03,572 --> 00:59:10,672
+Ne kadar bit saklayacaksam ona kullanıyorum. En çok kullanıyor bu flip-flop. Bu bir bitlik bilgiyi saklıyor.
+
+354
+00:59:10,912 --> 00:59:19,152
+Örneğin şifre devresinde kaç tane flip-flop kullandık arkadaşlar? Bakın 3 tane flip-flop kullandık durumları saklayınca.
+
+355
+00:59:19,152 --> 00:59:28,932
+Her biri bir flip-flop, bir bit saklayınca bakın 1, 2, 3 bit saklamak bizim için yeterli. Onları bulmuştuk.
+
+356
+00:59:29,264 --> 00:59:53,964
+Bu kombinezonsal devre kısmında arkadaşlar standart elemanlar kullanıldığı gibi standart tasarım biçimlerinde burada flip-flop, tutucular var, tutucular, saklayıcı, registerlar, sayıcı gibi devre elemanları da bulunuyor arkadaşlar.
+
+357
+00:59:55,188 --> 01:00:04,487
+Flip-floplar dediğim gibi tek bitlik bilgiyi saklıyor. Aynı şekilde tutucular da yapıları farklı ama onlar da bir bitlik bilgiyi saklamak için kullanılıyor.
+
+358
+01:00:06,108 --> 01:00:09,527
+Saklayıcılar biraz daha böyle hani registerler bunlar.
+
+359
+01:00:11,795 --> 01:00:29,375
+Bunlar aslında flip-floplardan meydana geliyor. Belli bir uzunlukta, örneğin 4 bitlik, 8 bitlik registerlar oluşturuyor. Her biri bu registerların bağımsız olarak ne yapılabiliyor? Bilgilere çok ulaşılan bu durum bilgilerini saklayıcı.
+
+360
+01:00:29,876 --> 01:00:41,836
+Aynı zamanda sayıcılar var. Bunlarda da saklayıcılarda olduğu gibi en bitlik bir bilgi tutmanın yanısına her saat çevriminde içeriğini bir arttırıyor.
+
+361
+01:00:41,836 --> 01:00:52,836
+Bir sayıcılarda ise aynı register gibi düşün. Şöyle belli sayıda bits, en biti saklıyor. Fakat bir saat darbesi geldiğinde...
+
+362
+01:00:53,295 --> 01:00:58,175
+Biz mesela burada farklı durumlara geçiyorduk.
+
+363
+01:00:59,215 --> 01:01:02,096
+Orada ise sadece içeriğini bir arttırıyor.
+
+364
+01:01:02,295 --> 01:01:04,195
+Artı bir şeklinde.
+
+365
+01:01:04,755 --> 01:01:14,235
+Ona uygun devreler de bulunabiliyor arkadaşlar. Ona uygun problemler de kullanılıyor sayıcılarda da.
+
+366
+01:01:14,775 --> 01:01:30,295
+Onun dışında RAM-ROM gibi yapılar kullanılıyor. İşte RAM'ler, ROM'lar, PROM, EPROM, ECAREPROM, CAM, programlanabilir ardışıl diziler gibi çeşitli yapılar kullanılıyor arkadaşlar.
+
+367
+01:01:31,251 --> 01:01:41,112
+Şimdi önümüzdeki derslerde ardışıl devrelerde kullanılan flip-flop işaretlerinden bahsedeceğiz arkadaşlar.
+
+368
+01:01:41,811 --> 01:01:46,531
+Bu flip hafıza yapıları arkadaşlar bu saat yapılarıyla beraber çalışıyor.
+
+369
+01:01:46,531 --> 01:01:53,871
+Çünkü sizin T anınız burası, T artı bir anınız ise burası.
+
+370
+01:01:54,963 --> 01:02:02,163
+Yani çalışırken burada bir senkronlayıcı saat işaretine ihtiyacınız olacak.
+
+371
+01:02:03,183 --> 01:02:12,903
+Gördüğünüz gibi bizim artık düşen kenar mı, yükselen kenar mı neresini seçiyorsak belli bir periyodda çalışıyoruz arkadaşlar.
+
+372
+01:02:14,123 --> 01:02:17,663
+Örneğin geldik, belli bir periyodda çalışıyoruz şöyle.
+
+373
+01:02:18,743 --> 01:02:20,203
+Burası da T periyodunda.
+
+374
+01:02:20,755 --> 01:02:26,655
+T periyodu frekansın tersi, değil mi? Frekans periyodun tersi aynı zamanda.
+
+375
+01:02:27,435 --> 01:02:35,596
+Bu kısmı arkadaşlar darbe kısmı deniyor, darbe. Şuna da ise boşluk kısmı deniyor.
+
+376
+01:02:36,576 --> 01:02:45,295
+İdeal olan nedir? Darbenin sıfıra çok yakın olması, boşluğun ise neredeyse periyodun tamamını kaplamasıdır.
+
+377
+01:02:45,907 --> 01:02:52,707
+Genelde kullanılan, ben burada geniş geniş çizdim ama, saat işaretleri şu şekildedir.
+
+378
+01:02:54,627 --> 01:02:56,827
+Şöyle, yükselen kenardan.
+
+379
+01:02:56,827 --> 01:03:10,788
+Tabi belli bir T darbe bölü, T boşluk veya T darbe bölü, ondan sonra periyot gibi oranlar da verilir arkadaşlar.
+
+380
+01:03:11,376 --> 01:03:20,556
+Ki, hani saatle alakalı lojik devrelerde karşılaşırsanız, bu darbe, boşluk nedir? Bunları da bilmek lazım arkadaşlar.
+
+381
+01:03:22,236 --> 01:03:33,116
+Evet, bu haftalık bunları anlatacağız arkadaşlar. Dediğim gibi önümüzdeki hafta, flip-floplar, flip-flopların nasıl çalıştığıyla alakalı kısım.
+
+382
+01:03:33,556 --> 01:03:40,976
+Ondan sonra bu flip-flopları kullanacağımız ardışıl devre yapılarına doğru evrilmeye başlayacağız.
+
+383
+01:03:42,036 --> 01:03:43,916
+Sizlerin sorusu var mı arkadaşlar?
+
+384
+01:03:46,656 --> 01:03:56,576
+Hocam, şurada yukarıda grafta dörtten beşe geçerken bir yerine sıfır gelse ne yapacağız? Oraya atladık galiba ama.
+
+385
+01:03:56,996 --> 01:04:00,196
+Atladık mı oraya? Hemen bakalım. Neydi şeyimiz bizim?
+
+386
+01:04:01,619 --> 01:04:27,039
+Orada atlamış olabiliriz, evet. Dörtteyken sıfır gelsek. Bakalım. Sıfır, bir, bir, sıfır, bir gelmiş durum. Burada bizim istediğimiz neydi? Bakın, şöyle daraltayım. Sıfır, bir, bir, sıfır, bir gelmiş. Sıfır bekliyorum.
+
+387
+01:04:30,387 --> 01:04:56,067
+Bir bekliyorum. Pardon orası kaç? Sıfır bir. Bir. Pardon. Bir bekliyorum. Eğer bir değil de bunun yerine sıfır bir bir sıfır gelmişken sıfır gelse ne olacak arkadaşlar? Bütün boyu bozuldu. En azından şu beşten geçerken sıfır bir sıfır. En azından başını kullanabiliyorduk onu. Ama burada bütün büyü bozuldu. Nereye gitmemiz lazım bu durumda?
+
+388
+01:04:57,012 --> 01:05:24,452
+Sıfır gelmiş durumuna gitmemiz lazım. Öyle değil mi? Sıfır gelmiş, çıkış sıfır. Başa dönmemize gerek yok. Zaten sıfır bekliyorduk. Değil mi? Baştaki sıfır gelmiş. Yani buradaki sıfır artık benim yeni şifremin oluşacağı kısım. Sıfır, bir bir, sıfır, bir, sıfır. Bunu oluşturacak ilk sıfır gibi kabul ediyor. O yüzden bire gitmemiz gerekiyor.
+
+389
+01:05:27,443 --> 01:05:28,244
+Anlaşıldı mı?
+
+390
+01:05:29,244 --> 01:05:31,264
+Evet, anlaşıldı hocam. Teşekkürler.
+
+391
+01:05:31,304 --> 01:05:31,764
+Tamamdır.
+
+392
+01:05:32,371 --> 01:06:00,351
+Evet arkadaşlar, bu haftalık bu kadar. Haftaya tekrar görüşmek üzere. Bundan sonraki dersleri Hamza Hocamız gerçekleşecek eğer bir sağlık problemi olmazsa. Ben kendi kısmımla alakalı şeyleri bitirdim. Derse benim üzerimden bağlanacak büyük ihtimalle. Ben ona link göndereceğim. Orada girişlerde bir gecikme yaşanabilir ama Hamza Hocamızı ile devam edeceğinizi bilin. Siz standart buradan girmeye devam edeceksiniz arkadaşlar.
+
+393
+01:06:00,371 --> 01:06:11,831
+Arkadaşlar, kendinize çok iyi bakın, görüşmek üzere, hepinize iyi haftalar, ödevi unutmuyoruz arkadaşlar, anlaştık mı? Kolay gelsin.
