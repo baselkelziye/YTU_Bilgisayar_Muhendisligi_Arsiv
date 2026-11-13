@@ -1,0 +1,859 @@
+1
+00:00:14,516 --> 00:00:23,676
+Merhaba arkadaşlar. Kusura bakmayın. Biraz geciktim. Bir toplantı vardı son dakika. Erkeni de bitiremedim. Sesim geliyor değil mi?
+
+2
+00:00:26,515 --> 00:00:27,856
+Evet hocam geliyor.
+
+3
+00:00:28,416 --> 00:00:39,475
+Güzel. Evet. 26-27 artıyor. Bir iki dakika daha bekleyelim. Ufaktan başlayalım biz de. Ekranımızı paylaştıralım.
+
+4
+00:00:51,539 --> 00:01:01,180
+Evet arkadaşlar, hepiniz hayırlı cumala. Hızlı bir şekilde ara vermeden tahmin ediyorum, bira kadar bu işi bitiririz diye düşünüyorum.
+
+5
+00:01:02,980 --> 00:01:11,540
+Evet, miz. Geçen haftaki giriş kısmında dersin içerikleri...
+
+6
+00:01:12,084 --> 00:01:32,144
+Tekrar etmek gerekirse sadece bir final sınavımız olacak ama final sınavımızın tipiyle alakalı yüz yüze mi online mi yapacağız? Bunlarla alakalı Nisan ayında muhtemelen üniversite sonotusu gerekli kararı verecek. Bizlere de tebliğ edecektir diye düşünüyorum.
+
+7
+00:01:32,560 --> 00:01:54,460
+Bilgisayar Sistemleri ve Ağ Güvenliği Lisans Üstü Dersi, Bilgisayar Mühendisliği Lisans Programı'ndaki Bilgisayar nin üzerine inşa edilmiş bir dersmiş gibi düşünebiliriz. Dolayısıyla lisanstaki dersin üzerine konacağımız konuları içerecek bu ders.
+
+8
+00:02:16,723 --> 00:02:37,063
+Preregücüsit klasörünün içerisinde bilmeniz gereken hususlarla alakalı kısmın sunularını da, yani lisansla verdiğim dersin sunularını da koydum. Bunu en azından alıcı gözle bir incelerseniz bu dersi daha rahat bir şekilde anlamanıza faydalı olacaktır diye düşünüyorum.
+
+9
+00:02:44,692 --> 00:03:01,792
+Üç ana bölümden içeriyoruz. Birinci bölümde bilgisayar sistemlerinin güvenliğiyle alakalı yönetimsel hususları değerlendirdiğimiz ve altı alanın, altı chapter'ın bulunduğu bir kısım var.
+
+10
+00:03:01,792 --> 00:03:12,692
+Sonra şifrelemeyle alakalı açık anahtarlı şifreleme ve mesaj güvenliği ve bilgi güvenliğiyle alakalı lisansla verdiğimiz.
+
+11
+00:03:12,692 --> 00:03:24,692
+Üzerine protokolleri vereceğimiz süfteler. En son da güvenlik protokolleriyle bu dönemin dersini bitirmiş olacağız. Bu hafta ilk kısmımıza...
+
+12
+00:03:24,912 --> 00:03:41,912
+O da yönetim sorunları. Yani bilişim güvenliği ya da bilgisayar sistemlerinin güvenliğini nasıl yönetebiliriz? Bunlarla alakalı elimizde 6 tane, 6 hafta boyunca bunu...
+
+13
+00:03:42,355 --> 00:04:00,015
+Değerlendireceğiz. Bir sistemi bütüncül değerli sistem dediğimiz zaman işte kenarlardaki sunuculardan, kablosu sağla bağlanan cihazlardan ya da bilgisayarlardan, 7 yer donanımların.
+
+14
+00:04:00,852 --> 00:04:20,351
+Bu örneğin güvenliğini kastediyorum. Komple mesela bir Yıldız Teknik Üniversitesi'nin sisteminin güvenliği ya da bir firmada çalışıyorsanız firmanın genel güvenliği. Bunlarla alakalı bir güvenliği, bir sistemin güvenlik altına alabilmenin birinci yolu nedir?
+
+15
+00:04:21,076 --> 00:04:37,816
+Güvenlikle alakalı risklerin belirlenmesi ve bu risklerin değerlendirilmesi. Yani riskleri bilmezseniz, doğru ve yeterli şekilde güvenliği almanız da pek mümkün olmaz.
+
+16
+00:04:44,084 --> 00:05:04,624
+Peki, sonrasında riskleri değerlendirdikten sonra bir kısım riskleri sizin göze almanız gerekir. Bir kısım riskleri için yatırım yapıp o risklere karşı önlem alırsınız ve bazı riskleri de devredersiniz.
+
+17
+00:05:05,331 --> 00:05:31,831
+Nedir mesela? İşte mail sunucu vardır, mail sunucuyla alakalı risk vardır. Ne yaparsınız? Mail sunucuyla alakalı hizmeti siz gidersiniz. Mesela Google'dan alırsınız ya da Microsoft'tan alırsınız. Sonrasında ikinci aşamada, ki gelecek hafta onu vereceğiz, güvenlikle alakalı, risklerle alakalı nasıl bir güvenlik yapacaksanız bunların planlanması ve prosedürlerinin belirlenmesi.
+
+18
+00:05:32,223 --> 00:06:00,223
+Değil mi? Sonrasında sadece bilgisayar ve bilişim sistemi güvenliği dediğin zaman herkesin aklına işte lojik taraftaki güvenliklerin alınması gerekiyor. Ama sadece lojik taraftaki güvenliği almak yetmiyor ki. Mesela bir sürücüyle alakalı firewall koydunuz, işte güvenlik şeyleri aldınız, IDS'ler, IPS'leri aldınız, şudur budur. Ama fiziksel olarak birisi gelip orada bir yangın çıkardığı zaman.
+
+19
+00:06:00,223 --> 00:06:12,244
+Ya da fiziksel olarak sonuçtaki diski aldığı zaman ya da kabloyu çektiği zaman ya da fiberoptik kabloyu kestiği zaman ne oluyor? Sisteminiz gene güvenli. Dolayısıyla fiziksel ve altyapı güvenliği de bir.
+
+20
+00:06:12,576 --> 00:06:34,396
+Bu güvenlik sorunu ve toplam sistemin güvenliğiyle değerlendirirken bunu da dikkate almanız gerekiyor. Sonrasında bir bilgisayar sisteminin hem kullanını hem bakımını yapanı hem güvenliğini sağlayanı insan olduğuna göre insan kaynakları güvenliği de bir başka husus olarak karşımıza çıkıyor.
+
+21
+00:06:35,028 --> 00:06:57,728
+Sonrasında güvenlikle alakalı listeleri değerlendirdik, planları, prosedürleri yaptık, altyapıyı da değerlendiren insanları. Peki bunları güvenlik anahtar teslimi teslim edilen ve yap unut şeklinde bir husus değil ki. Güvenliklerin 7.24 denetlenmesi gerekir. Denetimle alakalı mekanizmaların oluşturulması gerekir.
+
+22
+00:06:58,132 --> 00:07:17,632
+Sonrasında da en sonunda ise bunlarla alakalı, eğer bir güvenlikle alakalı bir husus oluştuğu zaman bunların yasal sonuçları ve yasal takipleri ve etik hususları da vermiş olacağız. Evet, güvenlik ve risk değerlendirmesi.
+
+23
+00:07:17,632 --> 00:07:24,031
+Bu haftaki içeriğimizde ne var? Önce BİTİ güvenlik yönetiminden bahsedeceğiz.
+
+24
+00:07:25,588 --> 00:07:49,588
+Neleri içeriyor? Hangi kavramlar dahil? Sonra kurumsal bağlamda, kurumsal bağlam yani bir sistem olarak kurumsal bağlam ve okumuruma ait güvenlik politikalarını incelemiş olacağız. Sonra güvenlik risk değerlendirmesini yapacağız. Nasıl yapılır? Sonrasında risk değerlendirmesi yapıldıktan sonra...
+
+25
+00:07:50,963 --> 00:08:07,144
+Detaylı, güvenlik, risk analizlerinin üzerine duracağız. Risk analizleri nasıl yapılır? En sonunda da bir vaka çalışması, bir maden firması olduğunu düşünelim. Gümüş Yıldız, Silverstar maden firmasının için.
+
+26
+00:08:08,339 --> 00:08:18,279
+Görev tanımı kapsamında bir risk değerlendirmesini bu hafta içeriği olarak gördüklerimize göre bu risk değerlendirmesi nasıl yapılıyor?
+
+27
+00:08:18,639 --> 00:08:23,459
+Bunu vererek bu haftaki konumuzu tamamlamış, bitirmiş olacağız.
+
+28
+00:08:24,180 --> 00:08:29,339
+Peki, BİT güvenliği yönetimine biraz bakış, genel bakış.
+
+29
+00:08:29,339 --> 00:08:32,339
+Peki, güvenlik dediğimiz zaman önce...
+
+30
+00:08:35,731 --> 00:09:01,231
+Aşağıdaki üç tane soruyu cevaplamamız gerekir. Dolayısıyla Bilgisayar Sistemleri'nin güvenliği aslında bu üç soruya veren cevabın bir süreci. Yani birinci sorumuz ne? Hangi varlıkların korunması gerekir? Yani bizim bir firmamızda, bir kurumda her varlığın korunmasına gerek yok ya da bir yatırım yapılmasına gerek yok.
+
+31
+00:09:01,600 --> 00:09:16,960
+Hangi varlıkları korumamız gerekiyor? Tamam. Ve bu korumamız gereken varlıklara karşı hangi tehditler var? Tamam. İkinci soru bu. Varlıkları belirlememiz gerekiyor.
+
+32
+00:09:17,344 --> 00:09:27,304
+Korunması gereken varlıklara hangi tehditler var ve bu tehditlere karşı ne yapılabilir? Nasıl korumak için nasıl tedbirler alınabilir?
+
+33
+00:09:27,304 --> 00:09:36,464
+Dolayısıyla kritik varlıkların uygun maliyetli, önemli bir şekilde yeterince korunması sağlanır.
+
+34
+00:09:37,144 --> 00:09:41,304
+Dolayısıyla öyle bir maliyet çıkar ki eğer bu varlıktan daha büyük maliyete…
+
+35
+00:09:42,004 --> 00:10:04,663
+Çıkıyorsa o zaman korumanın anlamı yok ki. Yitsin yenisini alırım. Mesela araba düşünün. Araba aldınız. 300 bin liraya. Kasko yaptıracaksınız. 100 bin lira. Kasko bir bedeli var. Düşünürsünüz ya 100 bin lira yermeye değer mi? Eğer işte kapalık aracınız varsa işte iyi bir sürücü olduğunuzu düşünüyorsanız.
+
+36
+00:10:06,419 --> 00:10:33,199
+O zaman bu parayı vermezsiniz. Dolayısıyla uygun maliyetle yeterince korunması gerekir. Ve kuruluşta koruma gerektiren her varlık için güvenlik risk değerlendirmesi. Yani bu korunmam gereken varlığa ne tür riskler var ve bu risklerin olma olasılığı nedir? Bunun değerlendirilmesi gerekir. Ve belirlenen riskleri azaltmak için.
+
+37
+00:10:33,683 --> 00:10:51,624
+Hangi yönetimsel, operasyonel ve teknik kontrollerin gerekli olduğuna karar vermek için gerekli bilgilerin sağlanması. Dolayısıyla güvenlik yönetim dediğimiz zaman bu bize bunları sağlar.
+
+38
+00:10:52,463 --> 00:11:00,264
+Peki, her şeyimiz standart. Güvenlikle alakalı ne standardı var? İSO 27 bin standart. Öyle değil mi?
+
+39
+00:11:00,628 --> 00:11:13,748
+Ne var? İstor 27.000 var. Bilgi güvenlik yönetim sistemlerine genel bakış ve terimleri tanımlıyor. 2016 yılında yayınlanmış bir standart.
+
+40
+00:11:14,080 --> 00:11:39,039
+2021, 2027.001 var. 2013 yılında tanımlanmış bir standart. Bilgi güvenliği yönetimsel sistemlerinde gereksinimler. Yani belgelenmiş bir güvenlik sisteminin kurulması, uygulanması, işletilmesi, izlenmesi, gözden geçirilmesi, sürdürülmesi ve iyileştirilmesi için gereksinimleri içeriyor.
+
+41
+00:11:39,988 --> 00:11:59,687
+ISO 27002 var yeni 2013'te. Bilgi güvenliği yönetimi için uygulama kurallarını tanımlıyor ki bu standart eskiden ISO 17799 olarak biliniyordu. Daha sonra 2013 yılında 27002 olarak yeniden isimlendirildi ve standart edildi.
+
+42
+00:11:59,687 --> 00:12:07,988
+ISO 27003 var. 2010 yılında yayınlandı. Bilgi güvenliği yönetim sistemi uygulama kılavuzu.
+
+43
+00:12:07,988 --> 00:12:20,728
+Bir bilgi güvenliği yönetimi spesifikasyonlarının ve tasarımının başlangıcından uygulama planlarının üretilmesine kadar olan süreci detaylandırıyor.
+
+44
+00:12:20,728 --> 00:12:22,768
+ISO 27004 var.
+
+45
+00:12:23,412 --> 00:12:39,212
+Bu, bilgi güvenliği yönetimi ölçme bağlamında kuruluşların bilgi güvenliği yönetim sisteminin süreçlerinin ve kontrollerinin etkilerini, ölçümlerine ve raporlamalarına yardımcı olmak için bir rehberlik sağlıyor.
+
+46
+00:12:39,212 --> 00:12:51,212
+ISO 27005 var, 2011 yılında yayınlanan bilgi güvenliği yisk yönetimini tanımlıyor. Eskiden bu 13.335'e 3 ve 4...
+
+47
+00:12:51,412 --> 00:13:09,192
+Bu üçün ve dördün yerini almıştır. ISO 27006 var, 2015 yılında yayınlanan. Bu da bilgi güvenliği yönetim sistemlerinin denetimi belgelendirilmesini sağlayan kuruluşlar için gereklilikleri tanımlanmış oluyor. Bir rehberlik sağlıyor.
+
+48
+00:13:09,192 --> 00:13:19,192
+Dolayısıyla bilgi güvenliğiyle, güvenlikle alakalı standartlar 27000 serisinde tanımlanmıştır. Bunların...
+
+49
+00:13:19,412 --> 00:13:30,452
+Dokümanlarını yine internete yazarsanız ayrıntılarıyla elde edebilirsiniz. Peki, bizim bu haftaki konumuz bilgi güvenlik yönetimi.
+
+50
+00:13:31,059 --> 00:13:52,999
+Bilgi güvenlik ya da bilgi teknolojileri güvenlik yönetimi deyince ne anlıyoruz? Uygun düzeyde gizlilik, bütünlük, kullanılabilirlik, hesap verilebilirlik, özgünlük ve güvenilirlik elde etmek, el önce elde etmek ve sonrasında sürdürmek için.
+
+51
+00:13:53,812 --> 00:14:17,552
+Kullanılan bir süreçler bütünüdür. Bütü güvenlik yönetimi işlevleri neyi içerir? Önce bir, kurumsal bilgi güvenlik hedeflerinin, stratejilerinin ve politikalarının belirlenmesine gerekir. Yani yönetimsel olarak önce üst akıl olarak stratejilerin ve politikaların belirlenmesi gerekir.
+
+52
+00:14:18,772 --> 00:14:35,352
+Kurumsal BİTİ güvenlik gereksinimleri için, gereksinimlerinin belirlenmesi gerekir. Önce stratejileri ve politikaları belirledik. Sonrasında bir kurumsal olarak güvenlik gereksinimlerinin belirlenmesi gerekir.
+
+53
+00:14:35,352 --> 00:14:43,352
+Sonra kuruluş içindeki BİTİ varlıklarına, kuruluş içindeki BİTİ varlıklarına.
+
+54
+00:14:49,779 --> 00:15:03,840
+Yönelik güven işleri gerekir. Sonrasında riskleri belirleme ve analiz etme. Tehditleri belirledik. Tehditlerin riskleri belirledik. Sonrasında uygun güvenlik önlemlerinin belirlenmesi gerekir.
+
+55
+00:15:04,244 --> 00:15:20,004
+Sonrasında kuruluş içindeki bilgi ve hizmetleri maliyet etkin bir şekilde korumak için gerekli olan koruma önlemlerinin uygulamasının ve işleyişinin belirlenmesi, bizlenmesi gerekir.
+
+56
+00:15:20,004 --> 00:15:29,264
+Sonra aldık ama çalışanlarımız bakımında bir güvenlik farkındalık programı ile.
+
+57
+00:15:29,711 --> 00:15:40,711
+Geliştirilmeli ve bu uygulanmalıdır. Dolayısıyla bütün çalışanların güvenlik stratejilerinden, politikalarından, risklerden haberdar edip güvenliğin...
+
+58
+00:15:42,196 --> 00:15:55,316
+Önemini kavraması, farkında olması ve güvenlik için üzerine düşenleri bilmesi gerekir ki yapmaması durumunda sorumluluğu tutulabilsin ve sonuçlarına katlansın.
+
+59
+00:15:55,316 --> 00:16:09,836
+Sonrasında bu politikaları her şeyi aldık, tedbirlerimizi de aldık. Olur da güvenlikle alakalı olayları, güvenlik olaylarını algılama ve bu güvenlik zafiyetten olaylarına karşı
+
+60
+00:16:10,196 --> 00:16:23,016
+Tepki alma, reaksiyon vermenin de belirlenmesi. Dolayısıyla güvenlik yönetimi top down etkisi yani en tepeden tırnağı.
+
+61
+00:16:27,860 --> 00:16:51,500
+Bütün güvenlikle alakalı her süreçin içine aldır. Ne içeriyor yönetim? Yukarıdan girdi olarak güvenlik politikaları ve organizasyonel bağlamlar, işte politikalar, stratejiler girdi olarak giriyor. Peki bizim burada neyimiz var? Analiz seçeneklerimiz var.
+
+62
+00:16:54,868 --> 00:17:01,708
+Formal, informal, formal ve bütünleşik yöntemlerden bir tanesiyle analiz ediyoruz.
+
+63
+00:17:02,451 --> 00:17:28,632
+Belirliyoruz. Sonrasında bunun gerçeklenmesi ve akabinde takip edilmesi süreçleri var. Yani bakımı değişik. Eğer güvenlikle alakalı güncelleme gerekirse bunların değişim yönetimi ve olaylara karşı müdahale hususlarını da ele alması gerekiyor.
+
+64
+00:17:30,259 --> 00:17:31,179
+Bu bir çevre.
+
+65
+00:17:35,827 --> 00:17:59,148
+İlgiye ilgili birleşenlerimiz var ve bilgi güvenliği ihtiyaçlarımız var ve bilgi güvenliği ihtiyaçlarına göre ve ilgili birleşenlerden gelen girdilere göre bir güvenleme, güvenlik plana yapılması gerekir.
+
+66
+00:17:59,148 --> 00:18:00,088
+Tamam mı?
+
+67
+00:18:00,627 --> 00:18:12,287
+Planlamayı yaptık. Sonra bunu icra edeceğiz. Kontrol edeceğiz. Kontrol ederken de, bir dakika arkadaşlar, şuna cevap vereyim.
+
+68
+00:18:48,660 --> 00:19:09,539
+Yine yönetimsel olarak bu sefer ilgili birleşenlerle sonuçları sonra bu güvenliğin yönetimi. Eğer bununla alakalı hususlar var ise de bunu değişiklik yaparak yönetmelikse yönetmelik, yönetimsel emirse emir.
+
+69
+00:19:09,872 --> 00:19:25,412
+Bu reaksiyonları alıp bunların uygulanmasını, bu planın uygulanmasını sağlamak. Uygulanırken de uygulamada çıkan sonuçlara göre de yeniden planlama, yeniden icra ve bu çevrim devam ediyor. Giden bir çevrim.
+
+70
+00:19:28,915 --> 00:19:38,975
+Kurumsal bağlamda güvenlik politikaları nedir? Düzenli olarak bu politikalar sürdürülür ve günün ihtiyaçlarına göre güncellenir.
+
+71
+00:19:40,755 --> 00:19:54,235
+Periyodik güvenlik incelemeleri yapılması gerekir. Planladık, tedbirleri aldık ama süreç içerisinde sorunlar var mı periyodik ve değişen?
+
+72
+00:19:54,708 --> 00:20:21,048
+Teknik ve teknolojiler ve değişen risklere göre de bu güncelleme yapılması gerekir. Bilgisayar Sistemleri'nin organizasyondaki rolünü ve önemi de incelenmesi. Önce kuruluşun bilgi güvenliğinin incelenmesi gerekir. Nedir? Hedefler. Yani bilgi güvenliği olarak hangi hedeflere ulaşmak istiyoruz?
+
+73
+00:20:22,420 --> 00:20:40,299
+BİT'i güvenliğiyle alakalı istenen sonuçlar, gerekli stratejiler, bu hedeflere ulaşmak için takip edilmesi gereken stratejiler ve politikalar, yani yapılması gerekenler. Bunlar güvenlik politikaları bağlamında.
+
+74
+00:20:40,627 --> 00:21:07,408
+Peki, güvenlik politikalarında çözüm bulması ya da adreslenmesi gereken hususlar ne? Bir, hedeflerin iş, yasal ve düzenleyici gerekliliklerle ilişkisi de dahil olmak üzere, yani yapılan iş, hukuki bunu bağlayan yönetmelikler, yönelgiler, kanunlar da dahil olmak üzere güvenlik politikadaki amaç ve kapsamın belirlenmesi.
+
+75
+00:21:08,819 --> 00:21:25,559
+Bilgi teknolojileri güvenliğindeki gereksinimlerin belirlenmesi, sorumlulukların belirlenmesi, hangi tür risk yönetim yaklaşımı yapacağız, baseline mi yapacağız, informal mi, formal mi ya da bütünleşik mi bunların belirlenmesi.
+
+76
+00:21:34,291 --> 00:21:49,172
+Bunun kazanımların yapılması ve gerekli eğitimlerinin verilmesi, genel personel sorunları belirlenmesi ve yasal yaptırımla güvenliğin sistem geliştirmeye entegrasyonları.
+
+77
+00:21:50,740 --> 00:22:11,220
+Güvenliği alınacak bilgilerin sınıflandırılması. Yani niye sınıflandırıyoruz? Çünkü güvenlik risklerine karşı sonuçları da farklı olacak bu bilginin durumuna bağlı olarak. Acil durum ve iş güvenliği planlamalarının yapılması gerek. Olay aygılama ve işleme süreçleri.
+
+78
+00:22:12,115 --> 00:22:22,895
+Politikanın nasıl ve ne zaman gözden geçireceği ve kontrolünün onu nasıl değiştireceğinin de belirlenmesi gereken bir husus.
+
+79
+00:22:22,895 --> 00:22:33,215
+Peki, güvenlikle alakalı işlemleri yapılırken asıl birinci hususumuz ne? Yönetimin destek. Öyle değil mi?
+
+80
+00:22:33,599 --> 00:22:41,339
+Bu işin bir yönetim desteği sağlanması gerekiyor. BİT güvenlik politikası üst yönetim tarafından desteklenmeli.
+
+81
+00:22:41,339 --> 00:22:49,859
+Gel hocam. Bir dakika arkadaşlar. 15-20 dakika bir ara verelim. Devam ediyoruz.
+
+82
+00:36:28,371 --> 00:36:38,172
+Tekrar merhaba arkadaşlar. Tekrar ekranımızı paylaştıralım. Ve kaldığımız yerden devam edelim.
+
+83
+00:36:38,172 --> 00:36:50,612
+Şimdi dedik ki, güvenlik yönetimi öncelikle riskin belirlenmesi ve riskin değerlendirilmesiyle başlıyor.
+
+84
+00:36:52,052 --> 00:37:14,860
+Sürecin kritik birleşenidir riskin değerlendirmesi. Çünkü varlıkların tespiti ve o varlıklar kurumsal olarak her varlığın bir güvenlik almamıza gerek olmayabilir. Dolayısıyla o varlıkların üzerindeki risklerin değerlendirilmesi gerekiyor. İdeal olarak...
+
+85
+00:37:15,764 --> 00:37:43,664
+Kurumdaki her kurumsal varlığın incelenmesi gerekir. Ama bu pratikte pek mümkün olmayabilir. Ama ideali her varlığın incelenmesi gerekir. Bir kuruluşun BT altyapısına yönelik riskleri belirleme ve azaltmaya yönelik yaklaşımları içeri risk değerlendirmesi. Dört tip risk değerlendirmesinden bahsediyoruz. Baseline dediğimiz temel, informal.
+
+86
+00:37:43,764 --> 00:37:49,244
+Yani gayri resmi ayrıntılı risk, formal ve bütünleşik.
+
+87
+00:37:51,304 --> 00:38:08,064
+Temel yaklaşım. Buradaki amaç en yaygın tehditlere, en yaygın bilinen tehditlere karşı koruma sağlamak için üzerinde anlaşmaya varılan kontrolleri, yani bilinen yaygın kontrolleri uygulamaktır.
+
+88
+00:38:08,628 --> 00:38:23,927
+Daha fazla güvenlik önlemi için iyi bir temel oluşturur. Yani başlangıçtır aslında. Endüstrenin en iyi uygulamalarını kullanır. Best practice dediğimiz. Ucuz ve kolaydır.
+
+89
+00:38:25,775 --> 00:38:45,735
+Yaygınlaştırabilir. Aynısını best practice olarak buraya da uygulabilirsiniz. Başka yere de uygulayabilirsiniz. Riske maruz kalmalardaki değişikliklere özel bir önlem vermez. Genel best practice'leri içeri daha fazla veya daha az güvenlik sağlayabilir.
+
+90
+00:38:46,579 --> 00:39:12,300
+Bazı kurumlarda yeterince güvenlik sağlarken bazı kurumlarda çok az güvenlik getirebilir. Genellikle daha yapılandırılmış yaklaşımları uygulamak için kaynakları olmayan küçük kuruluşlar için önerilir temel yaklaşım. Küçük ve gayri resmi yaklaşım informal.
+
+91
+00:39:14,164 --> 00:39:28,164
+BT sistemindeki üzerinde resmi olmayan yani formal olmayan fragmatik bir risk analizi yürütmeye içerir informal yaklaşım ve bu yaklaşımı sağlayan analistin...
+
+92
+00:39:29,268 --> 00:39:53,264
+Bilgi ve uzmanlığından yararlanır. Yani işi güvenlik olan değil, bir analistin kendi bireysel bilgi ve uzmanlığından faydalanır. Oldukça hızlı ve ucuzdur. Çünkü bir kişinin ya da bir analistin bilgi ve uzmanlığını temel yaklaşımın ele almadığı güvenlik açıkları ve riskler hakkında...
+
+93
+00:39:53,264 --> 00:40:10,724
+Yargıda bulunabilir, bunlar için alabilir ve bazı riskler yanlış değerlendirilebilir uzmanın bilgi ve yaklaşımlarına bağlı olarak ve analizin görüşlerine göre çarpık ve analizin görüşlerine göre de zamanla değişebilir.
+
+94
+00:40:15,572 --> 00:40:42,572
+Küçük ve ortak ölçekli kuruluşlardan için uygundur. Temel gibi best practice'leri içermiyor. Daha özel kuruma yapılabiliyor ama gene informal olduğu için analistin bilgi ve uzmanlığıyla sınırlı. O yüzden temel gibi küçük ve ortaklığı çekilerde kuruluşlar için uygulanması önerilir.
+
+95
+00:40:43,764 --> 00:40:57,764
+Detaylı risk analizi bu en kapsamlı yaklaşımdır. Resmi yapılandırılmış süreci kullanarak değerlendirilir. Dolayısıyla...
+
+96
+00:40:58,164 --> 00:41:15,104
+Kaç aşamada değerlendireceği varlıklara yönelik tehditler ve güvenlik açıklarının belirlenmesi, riskin oluşma olasılığının ve sonuçlarının tanımlanması gibi detaylı ayrıntıları içeri.
+
+97
+00:41:17,104 --> 00:41:21,324
+Bu detaylı risk analizi zaman alır.
+
+98
+00:41:22,804 --> 00:41:24,724
+Haynak gerekir maddi.
+
+99
+00:41:25,268 --> 00:41:45,088
+Kaynak ve uzmanlık, değişik uzmanlık alanları bakımından maliyetli, temel ve informalına göre maliyetlidir. Ve bu detaylı analiz ne için gerekli? Bir, sizin varlıklarınızın değeri ve yaptığınız iş nedeniyle.
+
+100
+00:41:45,684 --> 00:42:10,484
+Bir ticaret sitesi yönetiyorsunuzdur, bir bankasınızdır. Dolayısıyla bazı yasal gereklilikler de gerekebilir. Ve iş için kritik olan BT sistemlerine sahip yetkili kuruluşlar nedir? Bir ISP için gereklidir. Bir TÜ Telekom operatörü için, TÜXEL'dir, TELSİM'dir, Vodafone'dur ya da diğer başka kuruluşlar için gereklidir. Tamam mı?
+
+101
+00:42:12,628 --> 00:42:26,068
+Şimdi gelelim bütünleşik yaklaşım. Combined. Temel, informal, resmi olmayan ve ayrıntılı list analizi yaklaşımı unsurlarını birleştirir.
+
+102
+00:42:38,356 --> 00:42:44,216
+Önemli sistemlerde uygulanan korunma kontrollerini incelemek ve ayarlamaktır.
+
+103
+00:42:44,216 --> 00:42:51,615
+Yaklaşım, tüm sistemlerde uygun temel güvenlik önlemlerinin uygulanmasıyla başlar.
+
+104
+00:42:52,256 --> 00:43:05,456
+Ardından, yüksek risk seviyelerine maruz kalan veya organizasyonun iş hedefleri için kritik olan sistemler yüksek seviyeli risk değerlendirmesinde belirlenir.
+
+105
+00:43:05,844 --> 00:43:27,724
+Daha sonra kontrollerin gereksinimlerini daha doğru bir şekilde yansıtacak şekilde nispeten hızlı bir şekilde uyarlamak amacıyla kilis sistemler üzerinde muhtemelen anında gayri resmi bir risk değerlendirmesi yapmak için bir karar mekanizması olarak kullanılabilir.
+
+106
+00:43:31,360 --> 00:43:35,880
+Yöntemin bütünleşiği olarak düşünebiliriz arkadaşlar.
+
+107
+00:43:37,180 --> 00:43:49,220
+Detaylı güvenlik risk analizinde bir BT kuruluşunun, BT sistemlerinin güvenlik risklerinin en doğru şekilde değerlendirmesini sağlar.
+
+108
+00:43:49,220 --> 00:43:54,300
+Ama en yüksek maliyetlidir.
+
+109
+00:43:54,900 --> 00:44:16,900
+Başlangıçta savunma güvenliği endişelerini ele almaya odaklanır. Çünkü ne tür bir riskimiz var? Yaptığımız iş kaynaklı olabilir, bankayızdır, güvenlik risklerimiz vardı ya da bir telekom operatör üstümüzdür. Başlangıçta güvenlik endişelerini ele almaya odaklanır ve genellikle bu güvenliği detaylı risk analizi...
+
+110
+00:44:17,487 --> 00:44:34,268
+Devlet kurumları ile ilgili işletmeleri tarafından zorunluluk kırıldığı için istenir. Yani bankalar için minimum güvenlik gereksin nedeniyle bu tür detaylı risk analizi kanunlu bir zorunluluk olarak istenir.
+
+111
+00:44:34,268 --> 00:44:44,287
+Peki, detaylı risk analizinde ne var? Birincide varlıkların belirlenmesi.
+
+112
+00:44:45,396 --> 00:44:59,576
+Sonrasında detaylı risk analizi nedir? Tehditlerin belirlenmesi, kaynaklar ve olaylar üzerinde bu tehditlere göre kaynakların, varlıkların, zayıflıklarının belirlenmesi.
+
+113
+00:45:00,052 --> 00:45:15,052
+Bu zayıflıkların kullanılarak güvenlik riskine maruz kalması, güvenlik zafiyetine maruz kalması olasılıklarının belirlenmesi, bu olması durumunda...
+
+114
+00:45:16,179 --> 00:45:28,859
+Kuruma getireceği etkinin belirlenmesi ve buna göre de gerekli tedbirlerin, risklerin kararlarak tedbirlerin alınması gibi kapsamlı bir çalışmayı içermektedir arkadaşlar.
+
+115
+00:45:28,859 --> 00:45:34,859
+Şimdi gelelim risk analizinde bağlamı oluşturulma.
+
+116
+00:45:36,403 --> 00:45:58,184
+İlk adım nedir bağlama oluşturmak için? Risk değerlendirmesinin temel parametrelerinin belirlenmesi. Sonra incelenecek varlıkların tanımlanması. Birinci adım bu. Önce risk değerlendirmesiyle ilgili parametreler, sonra incelenecek varlıklar.
+
+117
+00:45:59,380 --> 00:46:24,380
+Kuruluşun faaliyet gösterdiği siyasi ve sosyal ortamı araştırmak gerekir. İkinci aşamada. Nedir? Bağlamı belirledik, varlıkları tanımladık. Sonra yasalar ve düzenleyici kısıtlamalar, yönetmelikler, yönergeler ya da firmanın misyonları, politikaları, stratejileri. Sonra kuruluşun...
+
+118
+00:46:25,076 --> 00:46:44,716
+Riske maruz kalması için temel, yani o riske maruz kalması için bir temel oluşturmak gerekir ki bu riski temeli olacak. Maruz kalması durumunda neler olacağının bağlamını oluşturup güvenlik tetbirinin alınması.
+
+119
+00:46:50,356 --> 00:47:04,276
+Kabul edilebilir olarak gördüğü risk seviyesi nedir? Bazı riskleri için herhangi bir yatırıma gerek görmeyebilir. Bazı riskleri devredebilir, bazı riskleri de içinde yatırım yapabilir.
+
+120
+00:47:05,972 --> 00:47:29,731
+Organizasyonel risk kavramında nedir? Daha az zafiyetli ve daha çok zafiyetliye göre belirlenir. Mesela nedir? Tarım, tarımsal eğitim, medya, ticaret, iletişim. Bakın dikkat ederseniz sağa doğru gittikse daha riske karşı daha duyarlı.
+
+121
+00:47:30,099 --> 00:47:49,039
+Bankacılık ve finans, devletin kuruluşları, iletişim, sağlık, üretim, dikkat ederseniz bu inşaat ve tarıma göre daha riske karşı ya da saldırıya karşı daha duyarlıdır diyebiliriz.
+
+122
+00:47:51,179 --> 00:47:52,779
+Amacımız...
+
+123
+00:47:53,748 --> 00:48:13,467
+Varlığın, kurumun sahip olduğu varlıklara karşı oluşabilecek riskleri minimize itmek. O durumda bizim varlığın tanımlamamız gerek. Nedir varlık? Bizim için değerli olan şey varlıktır. Korunması gereken şey de varlık. Dolayısıyla son birleşen.
+
+124
+00:48:14,003 --> 00:48:35,384
+İncelenecek varlıkları belirlemektir. Önemli varlıkları belirlemek için organizasyonun ilgili alanlardaki kişilerin uzmanlığından faydalanır. Tamam mı? Bu tür personeller kimlerden faydalanacağıyla alakalı bu tür personellerin belirlenmesi gerekir.
+
+125
+00:48:41,780 --> 00:48:55,500
+Varlık kapsamında. Çünkü kuruluş için bir değeri vardır ve kuruluşun hedefine başarılı bir şekilde ulaşması için bu varlığın bir katkısı bulunur.
+
+126
+00:48:57,280 --> 00:49:04,500
+Termin öğrenciye geldiğimiz zaman güvenlik risk analizi ve güvenlikle alakalı kullanacağımız...
+
+127
+00:49:05,172 --> 00:49:18,431
+Terminolojileri de bir belirleyelim. Nedir? Entity, varlık, koruma gerektiren, sahibine değer katan bir sistem kaynağı veya yeteneği varlık olarak tanımlanır. Tehdit, threat.
+
+128
+00:49:18,804 --> 00:49:36,184
+Bir tehdit kaynağının bazı varlıklardaki bir güvenlik açığından yararlanma potansiyeli tehditti. Bu, meydana gelmesi durumunda varlığın güvenliğini tehlikeye atabilir ve varlığın sahibine zarar verebilir.
+
+129
+00:49:42,195 --> 00:50:05,132
+Uygulanmasında veya işitilmesinde ve yönetiminde bazı tehditler tarafından kullanılabilecek bir zayıflık ya da kusur olarak tanımlanır güvenlik açığı. Risk ise belirli bir tehditin bir varlığa yönelik bazı açıklardan yararlanma olasılığı ile varlığın sahibine...
+
+130
+00:50:05,684 --> 00:50:13,224
+Yol açan zararlı sonuçlarının büyüklüğünün birleşimi olarak hesaplanan kayıp potansiyelidir.
+
+131
+00:50:14,224 --> 00:50:25,996
+Şimdi varlığımızı tanımladık. Analiz yöntemimizi belirdik. Şimdi tehdit. Tehdit nedir? Bir varlığın...
+
+132
+00:50:26,260 --> 00:50:49,360
+Uygun düzeyde temel güvenlik hizmeti sunmasını engelleyecek herhangi bir şeydir. Dolayısıyla varlık bir tehdit, varlığın gizliliğine tehdittir, bir üzere olabilir. Varlığın bütünlüğü kullanılabilirliği.
+
+133
+00:50:49,876 --> 00:51:10,056
+Sorgulanabilirliği, özgünlüğü ya da güvenirliği üzerine ulaşabilecek bu beşliğe, altılığı aslında zafiyete uğraşabilecek varlık üzerinde bunun gitmesini sağlayacak her şey tehdit olarak tanımlanabilir.
+
+134
+00:51:11,195 --> 00:51:16,175
+Tehditin kaynakları neden olabilir? Doğal olarak yani Allah'tan gelen.
+
+135
+00:51:17,364 --> 00:51:39,344
+Olabilir. İnsan yapımı tehdit olabilir. Ya da kazar olabilir. Mesela diyelim ki bir veri merkeziniz var. Veri merkezinde deprem nedeniyle değil mi? Sel nedeniyle ya da soğuktan kış nedeniyle.
+
+136
+00:51:41,364 --> 00:51:59,583
+Bilgisayar oluşursa bu doğal nedenlerdir. Eğer birisi yangın çıkardıysa ya da başka bir şey, insan yapımı bilerek ya da bilmeyerek ve insan kazara olabilir ya da kasıtlı oluşabilir.
+
+137
+00:52:00,583 --> 00:52:04,684
+İnsani tehditlerin değerlendirmesine dikkate alınanlar nedir?
+
+138
+00:52:05,523 --> 00:52:25,123
+Bu insanın bu tehdidi vermesindeki motivasyonu niye yapıyor? Ve kabiliyeti, yeteneği insana ve bu tehdidi yaparkenki kullandığı kaynaklar, ne tür enstrümanları, yazılımları kullanıyor?
+
+139
+00:52:33,940 --> 00:52:41,940
+Bu kaynak üzerine, bu varlık üzerine saydırma ve caydırıcılık. Yani bunu yaparsam...
+
+140
+00:52:41,983 --> 00:53:05,083
+Sonuçları ne olacak ve bu sonuçlar bu kişinin varken yapmamasını sağlayabilecek cahidricilikte mi? Bunlar dikkat edilmesi gereken hususlar. Kuruluş tarafından tecrübe edilen herhangi bir önceki saldırı deneyimi de dikkat alınarak hem sonuçlar hem de güncellemeler buna göre yapılabilir.
+
+141
+00:53:05,083 --> 00:53:06,263
+Peki.
+
+142
+00:53:07,284 --> 00:53:27,324
+Güvenlik açığı nedir? Ya da güvenlik açığının tanımlanması. Kuruluşun, BİT sistemlerindeki veya süreçlerindeki istismar edilebilir kusurları veya zayıflıkları. Değil mi güvenlik kusurları? Bunları bileceğiz ki bunları ortadan kaldıracağız.
+
+143
+00:53:27,795 --> 00:53:33,675
+Tehditin kuruluşa uygulanabilirliğini ve önemini belirler bu güvenlik açıkları.
+
+144
+00:53:34,015 --> 00:53:41,515
+Ve bir varlığa risk oluşturmak için tehdit veya güvenlik açığı kombinasyonlarına ihtiyaç var.
+
+145
+00:53:41,515 --> 00:53:51,235
+Çünkü varlık olacak, varlığa tehdit olacak ve bu tehdit gerçekleştirecek kişinin kullanacağı bir güvenlik açığı olacak.
+
+146
+00:53:51,615 --> 00:53:52,515
+Ve çıktısı da...
+
+147
+00:53:52,820 --> 00:54:15,099
+Nasıl ve nereden gelebileceğine dair kısa açıklamalarla birlikte tehdidin veya güvenlik açıklarının bir listesi olmalıdır. Güvenlik açıklarını tanımlamadan. Yani ne tür zafiyetler var, neler olur, sonuçları ve bunların listesi güvenlik açığı tanımlama kasla kapsamında.
+
+148
+00:54:16,340 --> 00:54:31,219
+Risk analizine gelince, mevcut kontroller göz önüne alındığında, varlığa yönelik olarak tanımlanan her tehditin gerçekleşme olasılığıdır risk analizi belirlenmesi.
+
+149
+00:54:34,068 --> 00:54:59,768
+Sonucun belirlenmesi gerekir risk analizinde. Tehdit var ve bu tehdit meydana geldi. Ne tür sonuçlar doğurur? Maliyeti ne olur? Her tehdit için genel bir risk derecesi türetilir. Yani bu tehditin oluşma riski. Olasılık tehdidi oluşur. Bu da kuruluş için bir maliyet.
+
+150
+00:55:00,884 --> 00:55:17,884
+Kesin olasılıkları ve gerçekçi maliyetleri belirlemek her zaman mümkün değildir. Ama analizde tahmini bir hesaplamalar bulunması gerekir. Niceliksel değil, niteliksel değerlendirmeler.
+
+151
+00:55:17,884 --> 00:55:25,664
+Yani kuantatif, niteliksel değerlendirmeler.
+
+152
+00:55:27,603 --> 00:55:41,763
+Mevcut kontrollerin analizi, sistem var, riskler analizik ve mevcut kontrollerin analizi, tehditleri en aza indirmeye çalışmak için kullanılan mevcut kontrollerin tanımlanması gerekir.
+
+153
+00:55:41,763 --> 00:55:52,703
+Güvenlik kontrolleri şunları içerir, yönetimsel kontroller, operasyonel kontroller, tehdit, teknik kontroller, süreçler ve prosedürlerdir.
+
+154
+00:55:53,615 --> 00:56:04,776
+Bilgi almak için mevcut kontrollerin, kontrol listelerinin kullanılması ve önemli organizasyon personelleriyle de görüşülmesi gerekir.
+
+155
+00:56:07,056 --> 00:56:18,376
+Gelelim. Dedik ya, değerlendirme, risk değerlendirmesi. Önce risk olasılığını belirlememiz gerekiyor. Değil mi?
+
+156
+00:56:18,751 --> 00:56:37,831
+Varlığımız var, risk var, riskin olasılığı. Beşli seviye var. Bir, nadiren. Yani sadece istinasi durumlarda ortaya çıkabilir ve böyle bir şey olursa tüh, şanssızlık oldu gibi değerlendirilebilir. İki, olası olmayan.
+
+157
+00:56:38,291 --> 00:56:46,971
+Mevcut kontroller ve koşullar altında böyle bir şey olmaz ama bazen Murphy kuralı gereği bazen olabilir.
+
+158
+00:56:48,231 --> 00:56:56,371
+Tamam. Dolayısıyla tühden bir tık sık ama hala olası olmayan mümkün.
+
+159
+00:56:57,371 --> 00:57:05,351
+Bir süre sonra ortaya çıkabilir. Ancak olmama olasılığı kadar olma olasılığı da vardır. Yani 50-50.
+
+160
+00:57:05,940 --> 00:57:10,240
+Dış etkilerden dolayı oluşumu kontrol etmek zordur.
+
+161
+00:57:11,320 --> 00:57:21,580
+Büyük ihtimalle, dört, muhtemelen bazı durumlarda ortaya çıkar ve gerçekleşirse şaşırmamak gerekir.
+
+162
+00:57:21,936 --> 00:57:35,276
+Ve neredeyse kesin, olmaz certain dediğimiz çoğu durumda ve kesinlikle er geç gerçekleşmesi beklenen riskler için kullanılır. 1'den 5'e kadar.
+
+163
+00:57:36,896 --> 00:57:42,736
+Peki bunun risk sonuçlarını, riski 1'den 5'e kadar değerlendirdik ama.
+
+164
+00:57:43,476 --> 00:58:10,096
+Risk sonuçlarını da değerlendirmiş. O da altılı kademe. Bir mesela önemsiz. Böyle bir risk oluştu, başımıza geldi. Sonucu önemsiz. Ne dedi ki önemsiz? Genellikle tek bir alanda küçük bir güvenlik ihlali sonucudur. Etki muhtemelen birkaç günden az süre ve züde düzeltilmesi için yalnızca küçük harcamalar gerekir.
+
+165
+00:58:10,739 --> 00:58:35,259
+İki, küçük etki, small. O da nedir? Bir veya iki alanda güvenlik ihlalinin sonucudur. Etki muhtemelen bir haftadan az sürecektir ve yönetim müdahalesi olmaksızın, yani üst yönetim müdahalesi olmaksızın segment veya proje düzeyinde ele alınabilir ve o düzeyde çözümlenebilir.
+
+166
+00:58:37,331 --> 00:58:57,111
+Sınırlı, sistematik ve muhtemelen devam eden güvenlik ihlallerinin sonucudur. Etki muhtemelen iki haftaya kadar sürebilir ve genellikle yönetim müdahalesi gerektirecektir ve yine de proje veya ekip düzeyinde ele alınabilir.
+
+167
+00:59:10,260 --> 00:59:34,460
+4 ya da 8 hafta sürebilir. Proje düzeyinde değil, daha üst düzeyden gereklidir. Katastrofik felaket 5 büyük sistematik ihlalin sonucudur. Etki 3 veya daha ay veya daha fazla sürebilir ve eksikliklerin giderilmesi için üst yönetimin etkinlik süresince müdahale etmesi gerekir.
+
+168
+00:59:35,503 --> 00:59:50,683
+Bilgilendirmesi ya da doğrudan yönetimi birebir müdahale etmesi gerekir ve sonucunda iş kaybı ya da kuruluşa ciddi zararları verebilir.
+
+169
+00:59:51,043 --> 00:59:59,683
+Kıyamet günü Doomsday dediğimiz altı, büyük sistematik güvenlik ihlallerinin birden çok örneğinin...
+
+170
+01:00:00,000 --> 01:00:22,199
+olması durumundadır. Etkisi belirlenemez. Yani komple tükkanı kapatıp da gidilebilir. Üst yönetimin şirketi gönüllü yönetime veya gönüllü yönetmediğimiz bir şeye, kayyuma veya büyük yeniden yapılandırma sürecine kadar gidilmesi gerekebilir.
+
+171
+01:00:26,867 --> 01:00:37,327
+Buna göre olasılıklar ve konseküvenslere bakarsak, risk ekstrem, yüksek, orta ve düşük diye.
+
+172
+01:00:37,791 --> 01:01:02,331
+Tanımlayabiliriz. Olasılık neredeyse kesin büyük ihtimalle mümkün, olası olmayan ve nadiren dersek kıyamet günü katastrofik, ciddi, orta ve küçük sonuçlarına göre riskin tanımını yaparsak ekstrim bir yönetici direktör tarafından ayrıntılı araştırma ve yönetim planlaması gerektirir ekstrimde.
+
+173
+01:01:05,791 --> 01:01:20,231
+Ancak yönetim ve planlama üst düzey proje ve ekip liderlerince yapılabilir. Ortada mevcut özel izleme ve müdahale prosedürlerle yönetilebilir. Düşükte ise rutin prosedürlerle yönetilebilir.
+
+174
+01:01:20,231 --> 01:01:25,231
+Buna göre olasılık ve sonuçlara baktığımız zaman neredeyse kesin de...
+
+175
+01:01:25,619 --> 01:01:42,920
+Sonuçları kıyamet günü katastrofik ciddi ve ortada ekstrimdir. Yani üst düzey yönetimin ayrıntısı araştırması gerekir. Diğer ikisinde ise yüksektir. Yönetimin dikkati gerekir ama alt planlama ekip liderlerince yapılabilir.
+
+176
+01:01:43,299 --> 01:01:52,839
+Büyük ihtimallede olanlarda kıyamet günü katastrofik ciddi de ekstrimken orta ve düşükte yüksek tanımlayabilir. Önemsizde de.
+
+177
+01:01:53,268 --> 01:02:15,467
+Orta. Tamam mı? Mümkün de gene aynı. Nadiren de sadece kıyamet gününde ekstrimken katastrofike ciddi de yüksek. Orta da orta ve diğerinde de düşük tanımlanabilir. Risk kaydı.
+
+178
+01:02:20,083 --> 01:02:43,864
+Her bir varlık için bir risk kaydının tutulması gerekir. Varlığımız ne? Mesela internet router. Mesela varlığımız ne? Data center'ın zarar görmesi, riskel zarar görmesi. Tehdit nedir ya da güvenlik açığı? Dışarıdan hacker saldırısı öyle değil mi? Var olan kontroller nedir?
+
+179
+01:02:44,467 --> 01:03:02,288
+Var olan kontrolümüz. Yönetici şifresi, çünkü kullanıcı adı şifreyle giriyor. Olmalısılığı nedir? Mümkündür. Çünkü niye? Şifreyi kırma algoritmaları eğer basit şifreler ya da aynı şifreyi birden fazla kullanıcı sistemde kullanılıyorsa mümkündür.
+
+180
+01:03:02,288 --> 01:03:09,727
+Sonucu ortadır. Yani yönlendiriciyle sistemin internetin bozulması ama sonucuya bağlı olmadığı için.
+
+181
+01:03:10,324 --> 01:03:33,884
+Sonuç ortadır. Risk seviyesi yüksektir. Yani yöneticinin bilgilendirmesiyle ama ekip liderleriyle sözünüp risk önceliği bir numaradır. Çünkü niye? Olmalısılığı daha sıktır ve etkisi yüksektir. Sonuç ortadır. Verim merkezinin zarar görmesi nedir mesela? Kaza sonucu yangın çıkması, deprem olması, su baskın olması.
+
+182
+01:03:34,516 --> 01:03:50,376
+Var olan kontrol, herhangi bir kontrol yok. Ya da yangın sözdürme cihazları var. Başka bir şey ya da suyla alakalı gerekli tedbirleri alınmış diyelim.
+
+183
+01:03:50,735 --> 01:04:09,735
+Öncelikle felaket kurtarma planı yok. Yani bir veri merkezine bir şey olursa yeni suçrayı aktarabiliriz. Öyle bir şey yok. Ama olmalısı nedir? Çok nadirdir. Yani mümkün olmayandır. Ama sonucu nedir? Ciddidir. Dolayısıyla risk seviyesi yüksek ama üstteki...
+
+184
+01:04:15,219 --> 01:04:18,839
+Risk önceliği olarak önce risk kaydını oluşturmak gerekiyor.
+
+185
+01:04:20,115 --> 01:04:45,496
+Risk yönetiminin değerlendirilmesine bakarsak, riskin seviyeleri ve maliyetlerine göre baktığımız zaman, eğer riskin seviyesi düşükse daha az maliyetli yapılırken, eğer riskin etkisi ekstremse, yüksekse, dolayısıyla treatment tedavinin implement edilmesi ve bunun için de maliyet de yukarıya doğru artacak demektir.
+
+186
+01:04:45,496 --> 01:04:47,396
+Buna göre dikkat ederseniz.
+
+187
+01:04:48,115 --> 01:05:09,675
+Maliyeti, optimum bir maliyet hesabı gerekecektir risk yönetiminde. Peki, risk çözümleme alternatifleri neler? Bu riskleri nasıl çözümleyebiliriz? Birincisi, risk-i kabulü. Yani,
+
+188
+01:05:10,228 --> 01:05:25,228
+Derir ki iş nedeniyle normalden daha yüksek bir risk düzeyi kabul edilebilir. Nedir mesela? Veri merkeziniz var. Meri merkezine karşı, yangına karşı, yangın sözlüğü ve bununla alakalı tedbir almayabilirsiniz.
+
+189
+01:05:28,371 --> 01:05:54,731
+Ya da mesela web sitesinde anketlerin ya da forumların ya da kukillerinle alakalı bir tedbir almayabilirsiniz. Riski kabul edersiniz. Risken kaçınabilirsiniz. Bu nedir? Riski oluşturabilecek faaliyetleri yapmama, bırakma. Ya da mail ile alakalı bir risk var. Ama mail hizmeti vermiyorum. Mesela dosya paylaşımıyla alakalı bir risk var. Dosya paylaşmıyoruz.
+
+190
+01:05:55,572 --> 01:06:11,652
+Risken kaçınabilirsiniz. Risk oluşturabilecek faaliyetten vazgeçme. Risk transferi. Riskin sorumluluğunu üçüncü tarafa verme. Yani meyusun ucuzluğunu devretme ya da risk oluşturabilecek mesela güvenlikle alakalı bir güvenlik firması ile anlaşma.
+
+191
+01:06:11,652 --> 01:06:15,652
+Ya da mesela bir network yönetim ile alakalı bir...
+
+192
+01:06:20,884 --> 01:06:21,864
+Bir dakika arkadaşlar.
+
+193
+01:08:04,500 --> 01:08:12,579
+Evet arkadaşlar, riskin sonucu durumunda kuruluş üzerine etkiyi azaltmak için risk altındaki varlıkların yapısı ve kullanımı değiştirilebilir.
+
+194
+01:08:12,579 --> 01:08:19,340
+Dosya paylaşım sistemi kurduğumuz ama o dosyaya bazı güvenli dosyaları mesela koymayız.
+
+195
+01:08:19,680 --> 01:08:26,680
+Ya da olma olasılığını azaltırız. Bunlar riskle alakalı tözüm yöntemleri.
+
+196
+01:08:27,380 --> 01:08:46,800
+Şimdi gelelim bir vaka çalışmasına. Dedik ya, silvesar, gümüş yıldız madenlerimiz var. Bu madenleri aslında bu haftalarda maden, bir madencilik faaliyeti yapıyor. Gürezel bir madencilik operasyonu. Maden çıkartıyor ve bunu pazarlıyor.
+
+197
+01:08:52,819 --> 01:09:13,219
+Hem de özel bir yazılım var. Çünkü yaygın yazılım, e-mailler, sunucular var, muhasebe programları, ERP'ler ama özel yazılımlar da var. Maden çıkarken bunlarla alakalı SCADA'lar üzerine yazılımlar, raylı sistemler, kontrol sistemleri, aydınlatma, havalandırma özel yazılımlar da var.
+
+198
+01:09:15,283 --> 01:09:31,904
+Sağlık ve güvenlikle ilgili nedir? Mesela havalandırma sistemi ya da mesela asansör kontrolleri, elektrik bunlar doğrudan güvenlikle ilgili. Ve önceden özellikle bu tür sistemler izole kapalı bir ağda çalışırken.
+
+199
+01:09:35,475 --> 01:10:00,000
+Bunların tekrar tek ağda olmasının gerekli güvenlik tedbirleri alınır ise mümkün olabileceğine karar verilmiş. Artık izole bir ağda artık çalışmıyor. Ve bütünleşik bir yaklaşıma karar verildi. Yani detaylı bir risk analiz değil de hem informal hem formal hem baseline biraz onlara karar verildi.
+
+200
+01:10:00,000 --> 01:10:19,904
+Ve uzmanlar olarak da sizlerin, bizlerin bu işi yapalım dedik. Madencilik endüstrisi ve spektrum daha az riskli tarafta. Çünkü niye? İşe ticaret dönmüyor. Yani kişiye özel, donanım özel yazılımlar var. Ama...
+
+201
+01:10:19,904 --> 01:10:31,724
+Yasal gereklilikler, Allah vermesin, madende bir göçme olursa ya da bir havalandırmada bir sıkıntı olursa, yasal zorunluluklar var. Ve yönettim.
+
+202
+01:10:32,115 --> 01:10:53,716
+Yönetim orta ve düşük riskleri kabul ediliyor. Yüksek riskler için tedbir almak istiyor, para harcamak istiyor. Tamam mı? Dolayısıyla siz risk analizi yapıp hangisi orta, hangisi düşük, hangisi yüksekse buna göre önceliklere göre sıralayacak bir risk analiz raporu sizden talep edildi.
+
+203
+01:10:58,036 --> 01:11:22,656
+Bileşenlerle konuşarak detaylı bir varlıkları belirleyeceğiz. Nedir varlıklarımız? Mesela skadalarımız var. Özel donanımlar var. Skada düğümlerinin ve ağın güvenilirliği ve bütünlüğü. Çünkü niye? Esnem bunlar harici bir ağdayken şimdi tek ağda var. İkincisi depolanan dosya ve veri tabanı bilgilerinin bütünlüğü.
+
+204
+01:11:29,108 --> 01:11:48,228
+Finansal Sistemi'nin kullanılabilirliği ve bütünlüğü, yani Availability ve Integrity'si, bakım üretim sisteminin kullanılabilirliği ve bütünlüğü ve e-posta hizmetinin kullanılabilirliği ve bütünlüğü. Bütün başka aklımıza gelen bir varlık yok. Analizimiz de burada.
+
+205
+01:11:56,479 --> 01:12:22,859
+Güvenlik tehdidi. Var olan kontroller, katmanlı bir güvenlik duvarımız var ve katmanlı bir sunucularımız var. Olma olasılığı nedir? Nadiren. Çünkü firewallumuz var, sunucularımız var, kullanıcı adı ve şifreyle. Ama sonucu nedir? Ciddidir. Ve primer işimiz bizim madencilik olduğuna göre risk seviyesi yüksek.
+
+206
+01:12:23,252 --> 01:12:47,172
+Ve öncelikli olarak çözmemiz gereken husus bu. İkincisi, depolanan dosya ve veritabana bilgileri. Nedir, kime ne kadar ürünü satmışız, hangi personimiz ne tür bilgileri var, kayıtları var, sağlık bilgileri var, parasal maddi bilgiler var, maddi ve mali bilgiler var. Nedir tehdit? Bozulma, hırsızlık ve bilgi kaybı.
+
+207
+01:12:47,507 --> 01:13:08,159
+Neyimiz var olan kontrol? Güvenlik durarımız var. Olma olasılığı nedir? Bilgisayar ve yazılım mümkün. Nadir değil mümkün. Sonucu nedir? Ciddi. Ve risk seviyesi nedir? Ekstrem, en yüksek. Çünkü niye? Verilerimiz kaybolur ise, kime ne kadar verdik ciddi bize bir...
+
+208
+01:13:08,159 --> 01:13:32,279
+Sorun oluşturacak güvenlik risk seviyesi ki de finansal sistemin kullanılabilirliği, yani BRP sistemimiz var, bunun kullanılabilirliği. Sisteme nedir? Dışarıdan saldırılar var ya da kullanan kişilerin yapabileceği hatalar. Gene güvenlik duvarımız var. Olmalısıyla mümkün, ciddi ve sonucu yüksek.
+
+209
+01:13:33,363 --> 01:14:00,363
+Risk önceliği üçüncü sırada. Bu öncelik tamamen o firmaydaki durumlara göre, çünkü ona göre diyor ya, orta ve yüksek ve şeye yatırım yapacak, düşük ve ortaya yatırım yapmıyor. Tamam. Bakım üretim sisteminin kullanılabilirliği. Sistem etkileyen doğrudan saldırılar. Üretim bandının olmalısı mümkün ama sonucu...
+
+210
+01:14:01,587 --> 01:14:11,967
+Küçük işi yavaşlayabilir ya da bir iş belki durabilir ama risk seviyesi orta. Posta hizmetleri, direkt iyi bir posta saldırılar.
+
+211
+01:14:12,500 --> 01:14:37,300
+Olma olasılığı neredeyse kesin. Çünkü çalışan profili çok düşük. Güvenlik, zafiyeti, olma olasılığı çok yüksek. Dolayısıyla neredeyse kesin. Ama sonucu ne? Düşük. Çünkü niye? Adamın e-mailleri. Eğer e-mailler üzerinde fazla detaylı şirketle alakalı bilgiler içermemişse fazla da risk oluşturmayacak demektir.
+
+212
+01:14:38,228 --> 01:15:05,108
+Böylelikle seviyelendirdik ve firmanın yöneticilerini sunduk. Firma yöneticileri der ki bu seviyelere göre ben şunlara şunlara yatırım yapıyorum, bunlara bunlara yatırımı yapmıyorum. Bunu da riski göze alıyorum diye bir... Evet arkadaşlar, böylelikle risk yönetimini bu hafta tamamlamış olduk.
+
+213
+01:15:05,876 --> 01:15:12,036
+Bitirelim mi isterseniz? Gelecek hafta devam ederiz. Soru soran var mı arkadaşlar?
+
+214
+01:15:16,884 --> 01:15:18,664
+Teşekkür ederiz hocam. Yok sağ olun.
+
+215
+01:15:18,664 --> 01:15:35,104
+Bu haftaki sunumun da hem İngilizcesini hem Türkçesini web sayfama koydum. Gelecek haftayı da yine koymuş olurum. Bu şekilde devam ederiz. Gelecek hafta görüşmek üzere. Hepinize hayırlı cumalar ve iyi hafta sonları.
