@@ -1,0 +1,3559 @@
+1
+00:00:42,932 --> 00:00:59,072
+Merhabalar, günaydın. Geçen haftadan [öğrenci] kalmıştı, konusunu anlatacak olan. Bir de [öğrenci].
+
+2
+00:01:05,072 --> 00:01:10,072
+Başka geçen hafta konu anlatacak olan veya...
+
+3
+00:01:10,548 --> 00:01:12,548
+Bu haftaya kalmış olan...
+
+4
+00:01:13,548 --> 00:01:15,548
+Merhaba hocam, biz de anlatabiliriz.
+
+5
+00:01:16,388 --> 00:01:17,668
+[öğrenci].
+
+6
+00:01:20,027 --> 00:01:22,788
+Sizin konunuzu ne zaman belirlemiştik?
+
+7
+00:01:24,408 --> 00:01:25,867
+Efendim, seslendiyemadım hocam da.
+
+8
+00:01:28,468 --> 00:01:37,788
+Tamam. Önce [öğrenci], [öğrenci] ve sonra [öğrenci], [öğrenci] burada yok galiba henüz.
+
+9
+00:01:38,516 --> 00:01:40,796
+Buradayım hocam, sesim geliyor mu?
+
+10
+00:01:40,996 --> 00:01:57,996
+Geliyor, tamam. O zaman bir beş dakika sonra [öğrenci] başlasın anlatmaya. Sonra [öğrenci]. Bu şekilde devam ederiz sonra.
+
+11
+00:02:00,136 --> 00:02:02,176
+Hocam geçmeden bir şey danışabilir miyim?
+
+12
+00:02:02,176 --> 00:02:02,816
+Tabii.
+
+13
+00:02:05,408 --> 00:02:09,228
+Sunumlarını ne zaman yapacağız belli bir tarifleri demiş miydiniz?
+
+14
+00:02:10,187 --> 00:02:28,468
+Bugün hazır olan arkadaşlarınız yapmaya başlayabilir. Onun için işte önce arkadaşlarınızın şeyini bekliyorum. Bir de haftaya olmazsa ek bir şey de belirleyebilirim ama daha kısa olacak onlar.
+
+15
+00:02:30,675 --> 00:02:34,075
+Kağıtta da toparlayabiliriz diye düşünüyorum.
+
+16
+00:02:34,895 --> 00:02:35,735
+Teşekkür ederim.
+
+17
+00:02:35,735 --> 00:02:46,575
+Yani bugün anlatmak isteyen sırayla anlatabilir. Önce [öğrenci] anlatacak, sonra isteklilere göre devam ederiz.
+
+18
+00:02:51,060 --> 00:02:57,199
+O zaman şimdi ben bir bardak su alıp geliyorum. Başlayalım.
+
+19
+00:05:21,843 --> 00:05:24,744
+[öğrenci], başlayabilirsin.
+
+20
+00:05:25,364 --> 00:05:27,584
+Tamam hocam, şimdi ekran paylaşıyor.
+
+21
+00:05:27,823 --> 00:05:28,144
+Tamam.
+
+22
+00:05:34,803 --> 00:05:36,323
+Şu an ekran gözüküyor mu?
+
+23
+00:05:36,443 --> 00:05:37,443
+Görünüyor, evet.
+
+24
+00:05:38,383 --> 00:05:38,623
+Tamam.
+
+25
+00:05:46,991 --> 00:05:57,391
+Herkese merhaba. Ben için seçtim. Makali olan Startuplarda Yazılım Mühendisi Hedefleri, Zorlukları ve Uygulamalarına İlçim Birleriyle Modelini anlatacağım.
+
+26
+00:05:58,672 --> 00:06:13,651
+Genel olarak bu çalışmamda 6 kategoriyeli sınıflandırabiliriz giriş, start-up, yaşam döngüsü modeli, araştırma yöntemi, veri toplumu ve analizi, çalışma sonuçları analizi ve sonuç olarak
+
+27
+00:06:14,100 --> 00:06:16,480
+Bu sunum ilerleyecek.
+
+28
+00:06:17,840 --> 00:06:23,620
+Giriş olarak kısaca startuplar nedir? Yazılım startupları özellikle nedir? Onun hakkında bilgilendireceğim.
+
+29
+00:06:24,300 --> 00:06:28,900
+Yazılım startupları, yazılım odaklı ürünler geliştiren ve pazarlayan küçük şirketlerdir.
+
+30
+00:06:30,040 --> 00:06:39,120
+Bu makale, bu çalışma, startupların farklı mühendislik sürekli alanlarının nasıl kullandığını ve kullanılan uygulamaların startupların yaşam döngüsü boyunca nasıl değiştiğini anlamaya başlatmaktadır.
+
+31
+00:06:39,475 --> 00:06:49,696
+Bu çalışmayla birlikte, özellikle yazıcı startupların kullanabileceği, temel alabileceği bir model geliştirme amaçlanmıştır.
+
+32
+00:06:50,975 --> 00:06:55,375
+Startuplar, ürün kalitesi yerine pazara çıkma süresine öncelik verir.
+
+33
+00:06:55,956 --> 00:06:58,915
+Ekipler genelde küçüktür, özellikle başlangıç ekipleri.
+
+34
+00:07:00,316 --> 00:07:05,755
+Başlangıç da küçük olup sonrasında daha fazla artma gözükmüştür.
+
+35
+00:07:06,112 --> 00:07:28,352
+kendi kendine motive ederken mühendislik uygulamının gayri resmidir. Startup şirketleri yüksek başarısız oranlarıyla tanınır. Özellikle mesela Avrupa'da gözlemlenen sayılara göre %77 ile %90 arasında startup şirketlerinin başarısızlık oranı gözükmektedir.
+
+36
+00:07:28,788 --> 00:07:34,528
+Yüksek başarısızlık oranı sınırlı kaynaklar ve paydaşYazılım geliştirme zorluğuyla rakiplanır.
+
+37
+00:07:34,963 --> 00:07:43,783
+Daha önceki çalışmalar, startupların genellikle en iyi mühendislik uygularını takip etmediğini ve mühendislik konusunda rastgele bir yaklaşım benimsektiğini göstermektedir.
+
+38
+00:07:43,944 --> 00:07:59,324
+Yani belli bir yazılım proje yönetimi olmadan genelde bir ürün çıkarma amacıyla kurulup sonrasında nasıl bir ilerleme sağlamadığına göre yapıldığından başarısız ve sonuçlanan bir sürü start-up şirketi bulunmaktadır.
+
+39
+00:08:00,591 --> 00:08:02,591
+Bu çalışmada özellikle...
+
+40
+00:08:03,411 --> 00:08:11,031
+Belki de daha az kişilerle çalışıldığı için daha da teknik kişiler bir araya gelen ekiplerden.
+
+41
+00:08:11,475 --> 00:08:29,415
+Hani büyük projelerde bir ekip yapısı oluşturuluyor. Proje yönetimi, zaman planı, kaynak planı. Burada bir şekilde biz teknik algoritmamızla başlayalım. Ürünü çıkaralım. Kaygısı olduğu için sanıyorum.
+
+42
+00:08:39,475 --> 00:08:55,375
+Çalıştıkları alanlar da çok etkili oluyor. Özellikle yazılım start-up'ı oluyor ama yazılımcı olmayıp yazılımla biraz bir bağlantısı olanlar da gözükecek mesela. Onların da başarısını söyleyecek.
+
+43
+00:08:55,375 --> 00:09:07,475
+Şimdi bu makalede bir yaşam döngüsü modeli oluşturuluyor. Bu yaşam döngüsü modelinde dört tane temel kategoriye göre sınıflanırılabilir.
+
+44
+00:09:07,475 --> 00:09:35,475
+Bir süreç olarak aslında. Bir başlangıç ürünün fikrinden kişi karışı yapıp ilk müşteriye ilk ürün sürümünün yapıldığı aşama. Bunda ilk ürün sürümünün çok kaliteli olması gerekmiyor. Sadece müşteriye gözüküp kullanabileceği kadar bir erişkiline sahip bir ürünün çıkması gerekiyor bunda. Stabilizasyon ilk ürün sürümünden ölçeklendirme için hazırlığa kadar olan aşama başlıyor.
+
+45
+00:09:35,475 --> 00:09:40,776
+Bu dört aşamada bir startup ürünün ekstra kaba gerektirmeden kullanılmaya son verilmeliğine emin olmayı amaçlar.
+
+46
+00:09:41,496 --> 00:09:45,316
+Büyüme ise istenen pazar payını ve büyüme hızını elde etmeyi yöneliktir.
+
+47
+00:09:45,895 --> 00:09:51,415
+Olgunlukta pazar payını koruma ve operasyonlarını optimize amacıyla bir kuruluşa dönüşür.
+
+48
+00:09:52,415 --> 00:09:58,516
+Bu dört aşamada da bir startup'ın olması gereken şeyler bir aktif kalması gerekiyor.
+
+49
+00:10:00,000 --> 00:10:16,080
+Çalışılan şey aktif kalmaya çalışıyor. Bir sonraki aşamaya ilerlemeye çalışıyor. Yani bu dört aşamadan başlangıçtan sonra stabilizasyona, sonra büyümeye, sonra olgunluğa geçmesi gerekiyor. Bu tarz bir ilerleme yapması gerekiyor.
+
+50
+00:10:16,580 --> 00:10:27,080
+Hissederler kar için başka bir şirket tarafından satın alınmaya çalışıyor. Bu her zaman olmak zorunda değil. Sadece bu da aynı zamanda olgunluk sırasında hedeflenen...
+
+51
+00:10:28,000 --> 00:10:53,500
+Bu hedeflenen bazı hedeflardan biri. Bu aşamaların herhangi birinde bir startup kapatılabilir veya durdurabilir. Bu makalede gözlemlenen startuplar dört tane kategori olarak sınıflandırılmış, bazıları aktif, bazıları duraklatılmış, bazıları satın alınmış ve bazıları da kapatılmış hatta. Kapatılan startup'lara da bu çalışma yapılmış.
+
+52
+00:10:55,412 --> 00:11:12,652
+Bu genel olarak şamasını gösteriyor. İşte bahsettiğim gibi ilk başta dört tane kategori yani modelin şeysi olarak gözüküyor. Bunlarda da işte aktif, kapatılmış, duraklatılmış veya satın alınmış gibisinden bu tarz şekilde gözüküyor.
+
+53
+00:11:19,440 --> 00:11:41,660
+Mesela örnek olarak bu şeyler, beyaz olanlar, şey konumunu gösteriyor. Bir dakika, şurada daha iyi anlatabilirim. Beyaz baloncuklar iyi ve istenen durumları gösteriyor. Gölgeli baloncuklar istenmeyen durumları gösteriyor. Oklar durumlar arasındaki olası gelişleri gösteriyor. Şurada şöyle anlatılıyor.
+
+54
+00:11:47,347 --> 00:11:58,087
+Noktalı taraflar ise gözükmeyen, bu çalışma sırasında gözükmeyen ama olabilir düşüncesiyle tasarlanan senaryolardan bahsediyor.
+
+55
+00:11:58,087 --> 00:12:06,467
+Burada mesela anladığım kadarıyla mesela buradaki 8, 18, 17 gibi gözüken şeyler şirket sayısını da gösteriyor aslında.
+
+56
+00:12:07,168 --> 00:12:10,967
+Mesela stabilizasyonda 18 tane şirket gözlemlenmiş.
+
+57
+00:12:11,312 --> 00:12:27,371
+Gibisinden. Bunlar ise bir senaryoları gösteriyor. Belki başlangıçta başka bir tarafından satın alınabilir gibisinden. Belki pek olası gibi değil zaten. Böyle bir şey de aslında yok ama bir senaryoları gösterilmiş.
+
+58
+00:12:38,004 --> 00:12:50,384
+Hedef olarak daha küçük gözükmüş. Sonrasında özellikle odaklanan şeyin marketing, büyüme ve maintenance focus olarak daha fazla odaklandığı gözükmüş.
+
+59
+00:12:52,144 --> 00:12:59,024
+Araştırma yöntemi olarak ilk başta kullandıkları bu makale için kullandıkları vaka anket yöntemi kullanmışlar, case-door method.
+
+60
+00:12:59,543 --> 00:13:04,444
+Genelsel anketlere karşı da daha zengin bir toplayma yeteneği ve daha fazla durumu inceleme alanları sağlamış.
+
+61
+00:13:04,820 --> 00:13:09,480
+Bu ilk durum anket tarafından toplanan veriler anket enstrümanı kapsamıyla sınırlı.
+
+62
+00:13:09,800 --> 00:13:12,920
+Sadece yani yaptıkları anket sınırlı bir şey.
+
+63
+00:13:13,480 --> 00:13:16,860
+Araştırma sorular olarak genel olarak şöyle başlamışlar.
+
+64
+00:13:17,216 --> 00:13:27,235
+Başlangıç şirketlerinde yazılım mühendisiyle ilgili hangi tasarımlar, hangi desenler, birbiri bir patronlar tespit edilmiş o tarz bir soru sormuş.
+
+65
+00:13:27,395 --> 00:13:37,696
+Buradaki sorulmasının nedeni başlangıç şirketlerinin hangi yazılım mühendisi uygulamalarını kullandığı ve birbiri uygulamaları kullanma veya kaçıma motorasyonu ne olduğu hakkında çok az bir ilgi bulunmaktadır.
+
+66
+00:13:37,696 --> 00:13:45,216
+Yani genelde aslında start-up şirketleri ilk kurulduğu zaman da belli bir dokumentasyon gibi bir şeyle yapılmadığından dolayı.
+
+67
+00:13:45,216 --> 00:14:11,076
+Dokumentasyon hazırlanmadığından dolayı da böyle bir zorluk çıkıyor. Bir start-up da başlangıçta takip edeceğimiz nasıl bir şey olmalı gibisinden. Bu çalışmanın da bir yanmaca aslında bir dokumentasyon oluşturmak, bir model oluşturmaktır yani. Araştırma sorularında mühendislik uygulamaların kullanımını şekillendiren hedeflerin ve zorlukların anlaşılması aşağıdakiler için önemlidir.
+
+68
+00:14:11,423 --> 00:14:24,063
+Yaygın olarak kullanılan uygulamaların uygunluğunu değerlendirmek, belli zorlukları aşmak ve belli hedefleri gerçekleştirmek için yeni mühendisliği uygulamaları tasarlamak, başlangıç bağlamada yazılımı yoğun mühendisliğinin bir planını sunmak.
+
+69
+00:14:25,299 --> 00:14:44,339
+Sonra bu makale de zaten 3 tane temel sorun değil, temel kategoriye göre ele alıyor startupları. Hedefler, zorluklar, uygulamaları, kategorilere göre startupları.
+
+70
+00:14:46,035 --> 00:14:55,275
+Ayırıyor birbirlerinden. Yani ayırıyor ve aynı zamanda ortak yönlerini bulmaya çalışıyor. Bununla göre de hedefler zorlukları ve uygulamaları bulunuyor.
+
+71
+00:14:55,923 --> 00:15:18,443
+Veri toplama analizi olarak bir iç inceleme ve dış inceleme olarak iki şey kullanmışlar. İç inceleme kendi incelemeleri oluyor. Soruların kapsamını ve akışını birliğim için yazarlar arasında gerçekleştirilen bir de dış inceleme olarak yazılım startup araştırma ağının 10 üyesinden bir de bir yandan yaptıkları çalışmanın ne kadar doğru olduğuna dair bir dış inceleme gerçekleştirmişler.
+
+72
+00:15:18,816 --> 00:15:42,995
+En sonunda anket olarak 10 bölüm, 85 üst düzey soru ve 285 alt soru olarak bir anket oluşturmuşlar. Bu anketi oluştururken bu önceden bahsettiğim vaka anket yöntemini kullanıp aynı zamanda teori oluşturma yöntemiyle birlikte bu ikisini birleştirerek kendilerine göre bir yöntem uygulamışlar.
+
+73
+00:15:43,539 --> 00:15:57,199
+Burada genel olarak çalışmamızda startupların yazılım mühendisliği uygulamını nasıl gerçekleştirdiğine dair birinci bir veri toplanık amacıyla geliş bir hedefle başlıyoruz gibi yazılım ürünleri geliştiren start-up şirketleri incelemeyi hedefliyoruz.
+
+74
+00:15:57,559 --> 00:16:00,539
+Ve mümkün olduğu bir örnekleme türüne ulaştırmaya amaçlıyoruz.
+
+75
+00:16:08,755 --> 00:16:10,875
+Bu adımları incelemişler.
+
+76
+00:16:12,500 --> 00:16:24,699
+Ve sonunda daha önceden de söylediğim gibi 85 tane soru ve 285 tane alt sorudan oluşuyor. Bunların kategorisinde soruları böyle ayırmışlar.
+
+77
+00:16:24,699 --> 00:16:40,500
+İşte toplam 10 kategori, 10 konuya göre ayırmışlar. Bunlar start-up demografisi, ürün demografisi, katılım demografisi, takım demografisi, gereksin mühendisliği yazılım imarisi, kullanıcı arayüzü tasarımı, gereksin pratikleri, kalite güvenlikleri ve proje yönetimi oluşuyor.
+
+78
+00:16:40,500 --> 00:16:55,500
+Bu çalışmada mesela ilginç olan bir şey var. Bizim aslında bu proje yönetimi dediğimiz zaman çoğu şey hep bir arada aldığımız bir şey ama burada proje yönetimi daha farklı bir tanımla ilerlemişler.
+
+79
+00:16:55,500 --> 00:17:01,500
+Onu da zaten sonrasında anlatacağım. Sadece proje yönetimini...
+
+80
+00:17:01,971 --> 00:17:14,592
+Bu startup oluşurken veya bu modelde ilerlerken bir parçası olarak görmüşler. O yüzden bildiğimiz proje yönetimine biraz daha aykırı bir belki görüş olabiliyor.
+
+81
+00:17:15,271 --> 00:17:23,971
+Anketin dağıtımı ve veri toplamı olarak toplamda 369 katılımcı anketi yanıtlamaya başlıyor. Ama bu 369 kişiden...
+
+82
+00:17:24,544 --> 00:17:33,544
+Kimisi yanıtları doğru vermiyor veya kimisi katılıma devam etmiyor. Çünkü bu tek bir şeyde...
+
+83
+00:17:34,996 --> 00:17:53,176
+Tek bir anketle, yani tek bir zamanda yapılan bir şey değil, bir süreç olarak yapılmış bir çalışma. Bazı katılımcılar sürekli de devam etmiyor. Başlangıç olarak bir kez başlayıp sonrasında yanıt vermeye başlıyorlar. Anketin yanıt oranı %23, yani 84'lü geçerli olarak kabul ediyor bu çalışmada.
+
+84
+00:17:53,176 --> 00:18:00,836
+Evet, soru sayısı da fazla olduğu için tamamının cevaplanmaması da doğal.
+
+85
+00:18:02,996 --> 00:18:11,636
+Bir de bazıları startup olarak başlayıp sorulara da tam doğru cevap verebileceklerini de olamayabilir.
+
+86
+00:18:11,636 --> 00:18:17,276
+Bazıları, çünkü yeni startup şirketleri oluyor. Bazıları ise hani büyümekte olan bir startup şirketi oluyor.
+
+87
+00:18:19,036 --> 00:18:28,416
+Büyümekte olan bir startup şirketine bu anket sorulduğunda, anketlerde bazılarında hani siz başlangıç olarak ne yaptığınız gibisinden sorular oluyor.
+
+88
+00:18:28,876 --> 00:18:30,996
+Ve o startup şirketleri de çok acı...
+
+89
+00:18:30,996 --> 00:18:51,676
+Kapsam iyi olabildiğinden dolayı. Sadece kendi akıllarından hatırladıklarıyla cevap vermeye çalışıyorlar. O da ne kadar doğru, ne kadar yanlış, o da belli bir kontrole giriyor. O yüzden %23'ü kabul edilir. 84'ü geçiyor ola kabul ediliyor.
+
+90
+00:18:56,115 --> 00:19:08,796
+Anketler arasındaki sorularında değişkenler arasındaki ilişkilerin şansa bağlı olmadığını test etmek için ki Square testi kullanılıyor.
+
+91
+00:19:09,796 --> 00:19:17,715
+Tip 1 hataları önlemek için kesin testleri özellikle 10.000 örnek tabloya dayanan ve varsayımına dayanan istediksel anlamlı monte Carlo testi kullanılıyor.
+
+92
+00:19:18,715 --> 00:19:23,715
+İlşilendirmelerin gücünü incelemek için de Cramer'ın V testi kullanılıyor.
+
+93
+00:19:24,211 --> 00:19:33,152
+Kikare ile sorular arasındaki ilişkiler mi?
+
+94
+00:19:33,152 --> 00:19:46,391
+Evet, Kikare ile sorular arasındaki ilişkiler mi? Yani o konuda hakkında çok fazla detaylı bilgi vermemişler. Kikare hakkında. Ben biraz araştırma olarak yapmıştım. Ama yani anladığım Kikare ile sorular arasında.
+
+95
+00:19:46,832 --> 00:20:10,912
+Verdikleri cevaba göre ki kare kullanıyorlar. Belli bir değerin altındaysa kabul etmiyorlar. Bir değerli bir şey olarak kabul etmiyorlar. O yüzden cevap olarak kabul etmeyip onu atıyorlar. Eğer belli bir değerin yukarısındaysa o zaman kendi modellerine bu şeyi iletebiliyorlar.
+
+96
+00:20:11,380 --> 00:20:16,760
+Yani herhalde şey değil mi? İki farklı soru var.
+
+97
+00:20:18,355 --> 00:20:29,716
+Birine olumlu, birine olumsuz cevap verdiyse çok ilişkisi dolayısıyla anketin doldurusuna güvenilmiyor gibi mi oluyor acaba?
+
+98
+00:20:30,435 --> 00:20:41,155
+Yani evet, evet aynen öyle. Çünkü startup şirketlerinin daha önce söylediğim gibi bazıları çok konuyu anlamadan cevap verenler olabiliyor.
+
+99
+00:20:42,144 --> 00:20:50,124
+Belli bir startup, belli bir kurum, şirket gibi belli şeylere de sahip olamayabiliyor.
+
+100
+00:20:50,304 --> 00:20:56,183
+Yani 3-4 kişiden oluşan bir ekip olduğundan dolayı da bazen bu tarz bir zorluklar çıkıyor.
+
+101
+00:20:56,864 --> 00:21:04,284
+O yüzden böyle bir test, belli bir baraj gibi bir şey yapmak istemişler.
+
+102
+00:21:04,884 --> 00:21:28,844
+Sonra bu makalede özellikle konuşulan ülke kategoriden bahsedeceğim. Bu hedefler, uygulamalar ve zorluklar olarak. Hedefler, bir çabanın yönlendirildiği, azur edilen bir sonuçta tanımlayan kalıplardır. Yani hedefler sonrasında bilinçli kalite hedefi nedir tarzıyla ilerleniyor. Uygulamalar ise startupların yaşam döngüsü aşamalarında ilerlemelerine yardımcı olan mühendislikler faaliyetleridir.
+
+103
+00:21:29,491 --> 00:21:36,291
+Zorluklar ise yazım mühendisliği uygulamını gerçekleştirme ve işlem dönküsü akşamlarında ilerleme konusunda karşılaşılan güçlüklerdir.
+
+104
+00:21:37,991 --> 00:21:43,511
+Bu açıklama şekli arasında izlenme birliği sağlamak için bulgular şu şekilde sırlanıyor.
+
+105
+00:21:43,511 --> 00:21:51,771
+Bir sonraki sunumda bir şekil olacak. Orada hedefler, zorluklar ve uygulamalar bunlarla gösteriliyor.
+
+106
+00:21:52,091 --> 00:21:54,711
+GX, Gol Hedef olarak.
+
+107
+00:21:56,243 --> 00:22:07,824
+CX'de zorluklar oluyor, uygulamalarda practices oluyor. Zorluklarda challenges, bir an kelimenin ne olduğunu bulamadım.
+
+108
+00:22:08,903 --> 00:22:15,044
+Challenges'ın G'si. Her çubun sağ üst köşesinde bulguyu formüle etmek için kaç durumun temel alanında gösteriliyor.
+
+109
+00:22:15,044 --> 00:22:21,044
+Bu daha önce gösterilen modelle oluşturulan, yani bu...
+
+110
+00:22:21,647 --> 00:22:48,788
+Şirketlere sorularak oluşturulan bir şema, bir şekil. Bu şirketleri de 6 tane kategoride aslında sıralıyor aynı zamanda. Bir hangi alanda çalıştığına dair. Bu da örnek olarak gözüküyor işte. Birincisi takım, ikincisi gereksinimler ve analizi gibisinden. Burada işte siyah olarak gösterilenler hedefler oluyor.
+
+111
+00:22:49,683 --> 00:22:56,783
+Bu kare ile gösterilenler uygulamalar oluyor. Yuvarlak ile gösterilenler ise zorluklar oluyor.
+
+112
+00:22:57,268 --> 00:23:13,288
+Bu her aşamada, işte stabilizasyon, büyüme veya maturity aşamasında hangisinde, hangi alanda hangisinin gözlemlendiğine dair böyle bir kema kurulmuş.
+
+113
+00:23:13,288 --> 00:23:18,668
+Sağ üst köşesinde de kaç tane şirkette bu şeyler gözükmüş gibisinden.
+
+114
+00:23:19,059 --> 00:23:26,659
+Böyle bir şema yapılmış. Bu devamlı zaten. Bu toplam 6 tane kategori, aynı zamanda 6 kategoriye sıralıyor.
+
+115
+00:23:27,220 --> 00:23:46,660
+Şurada mesela şöyle bir şeyden bahsediliyor. Eğer mesela hedef ve uygulama aynı yerde gözükenler, mesela dahili ekip performansı mentiklerini kullanın gibisinden bir şey gözlemlenenler şunu anlatıyor. Bir de uygulamak kullanımıyla hedefin başarılması arasında bir ilişki olduğunu gösteriyor.
+
+116
+00:23:47,220 --> 00:24:03,019
+Bu aşağıdakinde ise bir tane zorlukla bir uygulamadan bahsediyor. Bunda da bazı zorluklar uygulamayla örtüşebiliyor. Mesela buradaki örnek gibi bir geri bildirim döngüsü oluşturun, müşteri gelişi uygun çalışmasını yönlendirir.
+
+117
+00:24:03,240 --> 00:24:11,700
+Bunda belli bir uygulama kullanmayı denendi ancak bunun zor olduğu gösteriyor. Gerçi bu sadece tek bir tane şeyde gözlemleniyor.
+
+118
+00:24:13,683 --> 00:24:34,504
+Sadece buna ait bir şey de isteyebiliriz. Bir de bu geçerlilik sorunu daha önce bahsettiğim gibi aslında anket hakkındaki geçerlilik sorunundan bahsediyor. Her bölümün sonunda uygulagörlerin öğrenilen en önemli dersler hakkında düşünücülerini yakalamak için bir dahaki sefere neyi farklı yapardın sorulmuş.
+
+119
+00:24:35,028 --> 00:24:43,167
+Katılımcı yanlığı ise yanıtların kalitesi büyük ölçüde katılımcıların havasına ve geçiş olayları yeniden oluşturma yeteneğine bağlıdır.
+
+120
+00:24:43,167 --> 00:24:59,988
+Yani bir dokumentasyon özellikle oluşturmamış olan startuplar, biz 3 ay önce başlatmış olduğumuz startupları nasıl zorluklar yaşadık, nasıl şeyler yapmalıydık gibisinden tamamen hafızaya bağlı olarak yapıldığından dolayı böyle bir sorunlar çıkabiliyor.
+
+121
+00:25:00,468 --> 00:25:03,028
+Yanıtların çoğu nispeten yeni deneyimleri içermekte.
+
+122
+00:25:03,028 --> 00:25:21,188
+Burada katılımcıların çalıştıkları alanların şeysini göstermişler. Bazıları yazılımla ilgili alanlar şu sahada gözüküyor ve yazılım olmayan mühendisli alanlar şu şekilde daha koyu renkte gözüküyor.
+
+123
+00:25:22,516 --> 00:25:39,196
+Bir solda ise bu alan hakkındaki çalışma ile startupları karşılaştırması oluyor. Mesela startupların ilk başlangıçta daha çok yazılımcılarla başladığı gözüküyor.
+
+124
+00:25:39,196 --> 00:25:45,355
+Yani bu araştırma yazılım startupları ile ilgili olduğundan dolayı daha doğal oluyor.
+
+125
+00:25:45,844 --> 00:26:00,703
+Katılımcının %43'ü startuplarındaki uzman kalanının yazılım mühendisi olmadığını belirtmiş ama. Anket, deneyimleri yakalamak ölçülerin şansını azaltmak için çoktan seçmeli, Dikert ölçüye ve servis metin içeren bir karışım sunuyor.
+
+126
+00:26:01,584 --> 00:26:10,283
+Bu startupların çoğu da Avrupa ve Güney Amerika'daki startupları içerirken, Kuzey Amerika ve Asya'daki startuplar temsil edilmemiş.
+
+127
+00:26:11,059 --> 00:26:20,159
+Bu bir Likert örneği olarak koydum. Yani Likert soru örneği olarak aklımıza canlatsın diye böyle bir şey koydum.
+
+128
+00:26:21,099 --> 00:26:23,019
+Çalışma sonuçlarının analizi olarak.
+
+129
+00:26:23,635 --> 00:26:35,915
+2004 ile 2011 arasında kurulan startuplardan oluştuğu göstermektedir. Bu yandaki bir Gantt şartı olarak da gözüküyor. Burada şirketler aslında birbireyle bağlantılı olarak gözüküyor.
+
+130
+00:26:36,076 --> 00:26:46,076
+Yani aynı şirketin kapandığı veya şey olduğu gibi gözükmemiş. Sadece bir tarih olarak göstermişler aslında. Yani çoğunun operasyonel olduğunu göstermek istemişler.
+
+131
+00:26:46,076 --> 00:26:51,635
+Belli bir kapanan ve belli bir duran şeyler var ama çoğunlukla bu şirketlerin...
+
+132
+00:26:51,635 --> 00:26:59,695
+Yönetimi, çoğu operasyonelmiş. 9 tanesi düzgün cevaplayamadıklarından dolayı buradan da çıkarılmış.
+
+133
+00:27:01,815 --> 00:27:12,395
+Çoğunluğu anket yapıldığı sırada ürünleri üzerinde aktif olarak çalışan startuplardan oluşurken 24'ü kapanmış ve duraklatılmış veya başka şirketler tarafından satın alınmıştır.
+
+134
+00:27:13,215 --> 00:27:15,596
+Yönetimi, çoğu da kuruculardan oluşuyor.
+
+135
+00:27:16,884 --> 00:27:32,283
+Çalışma sonuçlarının analizi 6 süreç alanında yapılandırılıyor. Bu da daha önce gösterdiğim o şemada takım, gereksiz mühendisi, değer, kalite güvencesi, mimari ve tasarım ve proje yönetimi olarak ayırmışlar.
+
+136
+00:27:32,283 --> 00:27:42,283
+Daha önceden bahsettiğim gibi bu çalışmada proje yönetimi ayrı olarak ele alınmış. Daha sonra daha detaylı anlatacağım. Proje yönetimi tanımını da başka bir...
+
+137
+00:27:43,700 --> 00:27:54,020
+Yerden tanılandığından dolayı böyle bir şekilde yapılmış. Anket yapısı Software Engineering Body of Knowledge ve Startuplardaki Mühendis Kuyularının taksonomisinden isimlenmiştir.
+
+138
+00:27:54,516 --> 00:28:08,155
+Bunları sırayla buradaki şeyleri anlatacağım. Takım süreci alanı diye başlayacağım. Şuradaki sırayla anlatacağım. Hepsini tekrar tekrar anlatmayacağım. Sadece önemli olan tarafları seçerek anlatmayacağım.
+
+139
+00:28:09,076 --> 00:28:15,256
+Sürende doldu. Diğer arkadaşlarını da anlatacak. İstersen genel bir sonuç ver.
+
+140
+00:28:17,140 --> 00:28:26,980
+Tamam. Yani takım süreci alanını... Peki o zaman çok hızlı anlatmaya çalışayım. Bu hedef olarak ilk başta 4-8 kişi olup genelde süreci arttırmaktır.
+
+141
+00:28:26,980 --> 00:28:43,852
+Yani sürekli, pardon, takım sayısını arttırmaktır ve takımı oluştururken belli alandaki çalışanları almak gerekiyor. Bir de bu takımı...
+
+142
+00:28:43,923 --> 00:28:51,403
+Özellikle yönetirken insanların daha iyi ele alması gerektiğinden bahsediyor. Bu zorluklarda bahsediyor.
+
+143
+00:28:51,807 --> 00:29:00,627
+Bir tane bu zorluklarda bir şey göstermek istiyorum. Yorumlardan biri şuydu, bu İsveç'te yapılan bir araştırma ama yorumlardan biri şuydu, tüm kurucuların başka işleri vardı.
+
+144
+00:29:00,748 --> 00:29:11,488
+Üç profesör ve Türkiye'de bir iş sahibi birisi. İletişim eskiliği vardı. Yani takım sürecinde önemli olan şey takım iletişimi de gerekiyor deniyor.
+
+145
+00:29:11,948 --> 00:29:18,208
+Uygulama olarak iki senaryo belirleniyor. Ortak deneyim olmayan kişilerden yeni bir ekip oluşturuluyor.
+
+146
+00:29:19,807 --> 00:29:23,048
+Birlikte çalışmış olan bir ekip tekrar toplanılıyor.
+
+147
+00:29:23,867 --> 00:29:27,928
+Çıkarıdan ders takım oluşturma erken devamde yapımız gereken tamamen bir faaliyettir.
+
+148
+00:29:28,647 --> 00:29:31,728
+Verimli takım çalışması için önemli mühendis ve alan uzmanlığı.
+
+149
+00:29:32,276 --> 00:29:47,796
+Gereksin mühendisliği sürekli alanından bahsedeceğim biraz. Bunda ise hedef olarak hangi yazılımlar, hangi uygulamalar kullanıldığına dair bunun üzerine bir gereksinim çalışması yapılması gerekiyor. Minimum işlevli ürünün kapsam belirlenmesi gerekiyor kısaca.
+
+150
+00:29:48,176 --> 00:29:57,796
+Zorluklar, aktif veya kapanmış startuplardan gelen yanıtlar karşılaştırıldığında ilk kaynaklar örneğin beyin fırtınası gereksinimlerinin icadı en popular gereksinim kaynaklarıdır.
+
+151
+00:29:58,696 --> 00:30:00,000
+Biraz daha hızlı geçelim.
+
+152
+00:30:00,000 --> 00:30:04,419
+Yanıtlar, startupların farklı gereksinim kaynaklığının kullandığını göstermektedir.
+
+153
+00:30:06,899 --> 00:30:13,079
+Bu gereksinim mühendisliğinde startuplar müşterilerden talep etmemek için gözlem ve görüşmeler yaptıklarını bildiriyor.
+
+154
+00:30:14,059 --> 00:30:23,919
+Bunda da çıkarılan ders olarak, gereksinim analizi bir özelliğin ne kadar çok müşteri tarafından faydalı bulunacağına odaklanarak özelliğin ne zaman iklanması gerektiğini belirlemek için yönetilir.
+
+155
+00:30:24,039 --> 00:30:26,579
+Aslında önemli olan gelenek bu konu budur.
+
+156
+00:30:26,932 --> 00:30:39,852
+Değer oda aslında bu tüm hedefleri kapsıyor. Bunda herhangi bir uygulamadan bahsetmiyor veya herhangi bir zorluktan bahsetmiyor. Hedefleri belirlemekten bahsediyor aslında. Baskın görüş müşteri perspektifidir.
+
+157
+00:30:41,523 --> 00:31:05,763
+Ben biraz fazla geçmeye çalışacağım. En az iki değer perspektifinin önemli olduğu gözükmekte. Başlangıçlar müşteri değeri, iki pazar değeri. Yani hedef olarak bunlar bulunmalı diyor. Olgunluk aşamasındayız. Finansal ve farklılaşma hedefi olmalı aslında. Kalite hedefler ve test süreci alanı. Bunda ise kullanılan uygulamanın ne kadar şey olduğuna dair.
+
+158
+00:31:06,548 --> 00:31:15,488
+Bu kalitesi olduğuna dair ve bu kalitesinin nasıl devam ettirilene dair bir alan aslında.
+
+159
+00:31:16,908 --> 00:31:21,748
+O zaman ben genel olarak şu kalan derse doğrudan geçeyim.
+
+160
+00:31:22,188 --> 00:31:28,548
+Sonuç olarak potansiyel olarak disip eden küçük ürünler ve erken benimseyenler kusurlara karşı daha toleranslı olması nedeniyle
+
+161
+00:31:28,548 --> 00:31:31,587
+Daki kalitin yeni kullanan şirketlerde bir yeni kaynağı olmadığını gösteriyor.
+
+162
+00:31:32,019 --> 00:31:47,640
+Bakım bir startup'ın yaşam döngüsü boyunca artan bir endişe kaynağıdır. Hatta başlangıç zamanında bakım çok önemli olmayıp özellikle maturity zamanında çok önemli oluyor veya stabilization'dan başlayıp...
+
+163
+00:31:48,307 --> 00:31:53,807
+Bu olgunlaşma ve maturity kısmında çok önemli yer katlıyor.
+
+164
+00:31:54,387 --> 00:31:59,567
+Mimari ve tasarım süreci. Mimari de ise bu kullanılan teknolojinin aslında ne olduğuna dair.
+
+165
+00:32:11,316 --> 00:32:23,876
+Uzmanlık sahibi olduğuna göre de önemli. Ben doğrudan şu çıkarılan dersi göstereyim. Başlangıç şirketleri istikrarlı teknolojileri seçerek ve bu teknolojileri ilişkin en iyi uygularını takip ederek teknolojileri sıkı en azaltır.
+
+166
+00:32:24,396 --> 00:32:33,016
+Bulgular kullanıcı arayüzü tasarımı önemli faaliyet olduğunu göstermektedir. Bu mimari tasarım sürecinde özellikle anlatmak istediğim şuydu.
+
+167
+00:32:33,536 --> 00:32:38,296
+Kullandıkları mimarinin mesela ne kadar yeni, bazı startuplar şöyle başlamış.
+
+168
+00:32:38,559 --> 00:32:51,219
+Ama kullanılan mimarinin ne kadar yeni olduğuna dair, yani mesela biz ne kadar yeni bir programlamada kullanırsak o kadar müşteriye daha erkekliği, düşücesiyle başlayan startuplar olmuş.
+
+169
+00:32:51,679 --> 00:33:00,519
+Ama o kullandıkları yazılım dilinin yeniliği de aynı zamanda sorunları da çıkarıyor ve onun hakkında dokumentasyon azlığını da gösteriyor.
+
+170
+00:33:00,519 --> 00:33:06,559
+O da büyük bir sorun olduğundan dolayı o tarz bir başlangıcın bir zorluk olduğundan bahsediyoruz.
+
+171
+00:33:06,559 --> 00:33:14,443
+Yani onun için de çok yepyeni bir şey çekerek tam tersi riske girilmiş oluyor.
+
+172
+00:33:14,612 --> 00:33:34,412
+Ayrı olarak proje yönetimi bu. Bu, Agri-to-Project Management Body of Knowledge kitabından tanım olarak yapılıyor. Planlama ve kontrol, kaynak kullanımı, optizmeler ve belli hedeflere ulaşmak istedimler. Önemli. Mühendislik tuvaletlerinin planlanması ve kontrolüyle ilgilenir diye tanınlanmış proje yönetimi aslında.
+
+173
+00:33:36,468 --> 00:33:46,528
+Şuradaki kralen ders olarak net hedeflerini, kaynak ve takvini kontrol edin. Startup yaşam dönüşü boyunca ilerleme izlemek için önemli olduğunu göstermekte. Planlama ve kontrol eksikliği, bütçeyle zaman aşamına yol açıyor.
+
+174
+00:33:46,647 --> 00:33:47,827
+Fırsatların bakar gamısını yöntem.
+
+175
+00:33:47,847 --> 00:33:52,508
+En son cümleni söyle. Çünkü diğer arkadaşlarını anlatacak.
+
+176
+00:33:52,607 --> 00:33:55,107
+Tamam hocam. Sonuç olarak, zaten sonuçta geldim.
+
+177
+00:33:55,107 --> 00:33:59,508
+Daha sonra bana daha fazla bilgi verebilirsin ama süren bitti artık.
+
+178
+00:33:59,968 --> 00:34:03,548
+Tamam hocam. Sonuç olarak bu makale 84 yazılımla.
+
+179
+00:34:04,336 --> 00:34:06,036
+Startup'ı ile çalışılmış.
+
+180
+00:34:07,955 --> 00:34:17,275
+Startuplarda yazılım mühendisliği uygulamın kurumsal şifrelerden potansiyel olarak temel farkı ve zorluğu tüm süreç alanındaki uygulamın gelişimi bir kere de küçük bir hata payildiği yönetmektedir.
+
+181
+00:34:17,275 --> 00:34:19,755
+Nerede çıkmıştı?
+
+182
+00:34:21,555 --> 00:34:35,416
+IEEE transactions on software olarak bir tane journals and magazines de çıkmıştı.
+
+183
+00:34:35,956 --> 00:34:38,855
+Tamam. 2019 mu?
+
+184
+00:34:39,476 --> 00:34:43,155
+Evet, yanlış hatırlamıyorsam 2019 olması lazım.
+
+185
+00:34:43,336 --> 00:34:43,576
+Tamam.
+
+186
+00:34:45,355 --> 00:34:49,136
+Şimdi şeye bakıyordum, sen nerede çalışıyordun diye.
+
+187
+00:34:50,132 --> 00:34:59,432
+[kişisel bilgi]
+
+188
+00:35:00,271 --> 00:35:10,231
+[kişisel bilgi]
+
+189
+00:35:10,231 --> 00:35:18,132
+Evet hocam, yani bu çalışma zaten benim ilgimi hani startuplar olarak çekmişti. Benim şirket bir startup değil ama yine de ben...
+
+190
+00:35:18,132 --> 00:35:22,311
+[kişisel bilgi]
+
+191
+00:35:22,552 --> 00:35:26,952
+Evet, anladım. Bu başka şirketler üzerinden de çok.
+
+192
+00:35:27,952 --> 00:35:29,872
+Evet, teşekkürler.
+
+193
+00:35:30,212 --> 00:35:30,992
+Teşekkür ederim.
+
+194
+00:35:31,832 --> 00:35:32,912
+[öğrenci].
+
+195
+00:35:33,731 --> 00:35:35,032
+Evet hocam, sesim geliyor mu?
+
+196
+00:35:35,632 --> 00:35:36,052
+Geliyor.
+
+197
+00:35:36,532 --> 00:35:37,872
+Tamamdır, ekran paylaşımıyla.
+
+198
+00:35:37,872 --> 00:35:38,712
+Tamam.
+
+199
+00:35:40,592 --> 00:35:42,472
+Bu arada şey sorayım.
+
+200
+00:35:45,652 --> 00:35:49,012
+Makale sunumlarının sonlandı herhalde bakıyorum.
+
+201
+00:35:50,472 --> 00:35:51,492
+Çoğunuz sundunuz.
+
+202
+00:35:55,092 --> 00:35:55,532
+Evet.
+
+203
+00:36:04,500 --> 00:36:05,739
+Devam edebilir miyim hocam?
+
+204
+00:36:06,179 --> 00:36:06,439
+Evet.
+
+205
+00:36:07,019 --> 00:36:08,059
+Tamamdır.
+
+206
+00:36:08,599 --> 00:36:15,099
+Merhaba arkadaşlar. Bugün size fiş bonyot tanarak yazarım sektöründeki risklerin değerlendirmesini analiz edeceğim.
+
+207
+00:36:15,099 --> 00:36:21,179
+Bu makale 2019 yılında Aytra Bu İyi tarafından yayınlanmış bir konferans makalesi.
+
+208
+00:36:21,619 --> 00:36:39,619
+Bu makaleyi tercih etmek için de Fişbon yöntemi daha önce duymamış olmamdı. Makaleyi inceledikçe, yani Fişbon Diagramı olarak da geçiyor. Baya ilgimi çekmişti. O yüzden bu makaleyi tercih ettim. Genel olarak içerikler şu şekilde olacak. Makale üzerinde de aynı şekilde işliyor. Fişbon Diagramı'nın ne olduğunu, ana...
+
+209
+00:36:39,860 --> 00:37:00,260
+Planmasını anlatacağım. Daha sonrasında yazılım sektöründeki risklerin tanımını sınıflandırmasını yapacağız. En sonunda risklerin anket verileri üzerinde bir değerlendirmesini yapıp en sonunda fiziki olarak, neteliksel ve nice olarak değerlendireceğiz. Daha sonrasında da FISHBON üzerinde değerlendirmeyi yerleştireceğiz. Genel olarak FISHBON değerli anlamından başlayalım.
+
+210
+00:37:01,043 --> 00:37:27,603
+Hem fişman alenize olarak da geçiyor hem fişman diagramı olarak da geçiyor. Türkçe karşılığı işte balık kılçıya diagramı. Şekildeki görselde de gördüğünüz gibi şu şekilde işliyor. Benim bir problemim, bir olayım var. Sayı belirliyorum. Ve bunun neden olanları, ana atlarını tanımlayarak alt başlıklar halinde. Genel olarak net bir tanımı yok ama benim kendim oluşturduğum bir tanım şu şekilde. Bir problemim veya riskin olası nedenlerine tanım.
+
+211
+00:37:28,436 --> 00:37:36,036
+Bu işin kullanılan görsel bir araçtır. Hemin basit tüm nedenlerini ve aralarındaki ilişkiyi net bir şekilde belirlemek için kullanıldı.
+
+212
+00:37:37,135 --> 00:37:41,596
+Sebep-sonuç diagramı olarak da geçiyor açıkçası diagram.
+
+213
+00:37:42,155 --> 00:37:48,436
+Aslında fiş konu diagramın ana özelliği şu. Normalde benim bir problemim var. Bu problemin ana nedenini...
+
+214
+00:37:49,108 --> 00:38:12,347
+Saklanmak da evet ama sağda solda düşük olan nedenleri de yapmak gerekiyor. Ve bu Fishbone diagramı bize bunu görsel olarak sunuyor. Diğer şekilde baktığımızda mesela ana atlarına gitmiş olacağız. Bu ana atlar şu şekilde. Problemin nedenlerini bulmaya çalışırken genelde bu durumda fayda olan balıkçının ana atları aşağıda sıralanmıştır.
+
+215
+00:38:13,012 --> 00:38:38,192
+İşte ne var burada? İnsan faktörü, metot, araçlar, makineler, malzemeler. Anaatlar, aslında bu diagram ortaya çıktığında insanlar belli bir şablon üzerinde ilerlesin diye oluşturulmuş anaatlardır. İlla her sektörde bu anaatla kullanmamız gerekmiyor. Mesela ben kalite analizi yapacağım, kalite değerlendirmesi yapacağım vakit. Gidip kendi mesela ölçüm diye bir anaat oluşturabilirim.
+
+216
+00:38:38,739 --> 00:38:44,420
+Çünkü kalitenin amacı ölçüm yapmaktır ve onu ana alt başlık altında gösterebilirim.
+
+217
+00:38:45,760 --> 00:38:46,820
+Peki bu nasıl uygulayın?
+
+218
+00:38:48,400 --> 00:38:52,460
+Fishbone Teknenin uygulanması, bir tane örnek görsel buldum internette.
+
+219
+00:38:52,460 --> 00:38:55,940
+Burada şu şekilde uygulayın. Diyor ki benzin israfa, benim ana.
+
+220
+00:38:56,619 --> 00:39:04,579
+Onun soluna bir ok çiziyorum ve bunun aynı şablondan tutanmış, işte metot, makine, malzeme, insan gibi ana başlıklarını oluşturuyorum.
+
+221
+00:39:04,847 --> 00:39:08,527
+Daha sonrasında kendi ekibimle beraber, bunları değerlendiriyorum.
+
+222
+00:39:08,527 --> 00:39:14,327
+Benzin israfını, tut kategorisinde, şeylerin de sebebi ne denem?
+
+223
+00:39:14,327 --> 00:39:18,088
+İşte ne var? Yanlış iltesi kullanımak, burada görüyorsunuz.
+
+224
+00:39:18,088 --> 00:39:21,847
+Peki bu yanlış iltesi kullanımına neden olan durum ne? Duymamak.
+
+225
+00:39:21,847 --> 00:39:28,007
+Aynı şekilde motoru duymamanın için ne? Duymamak. Çok yürültülü müzik. Bu dallanabilen bir olay.
+
+226
+00:39:28,148 --> 00:39:38,148
+Bu tabii bir yerde kesmek gerekir çünkü bunun sonunu alamayız. Alt başlıklar oluşturduktan sonra, ekibinle beğenmeyi...
+
+227
+00:39:38,148 --> 00:39:39,588
+Ben ki sıralaması önemli.
+
+228
+00:39:40,884 --> 00:39:44,443
+Şeyler, faktörlerden başlayacağız değil mi?
+
+229
+00:39:44,884 --> 00:39:46,104
+Efendim hocam?
+
+230
+00:39:46,704 --> 00:39:55,384
+Hani bu şeylerin etki faktörlerinin önemli olanından başlayarak sıralayacağız veya bir şeyle gideceğiz.
+
+231
+00:39:55,644 --> 00:40:00,000
+Evet hocam, yani daha sonrasında işte biz bunu psikanalize...
+
+232
+00:40:00,000 --> 00:40:03,820
+Üzerinde de yerleştirip önceliklendiriyoruz. Daha sonrasında değerlendiriyoruz.
+
+233
+00:40:03,920 --> 00:40:08,720
+İşte sallıyorum. Benzin israfının en büyük nedeni olan durum yükselip olarak makine değerlendiriyoruz.
+
+234
+00:40:08,720 --> 00:40:09,000
+Evet.
+
+235
+00:40:09,720 --> 00:40:15,599
+Makine mesela işte aracın sıkıntılı olması 80'dir. Metotları diyelim insan faktörü.
+
+236
+00:40:16,460 --> 00:40:20,920
+Daha sonrasında bunu puanlayacağız. Ama makale üzerinde bunu yapmış açıkçası.
+
+237
+00:40:21,440 --> 00:40:25,160
+Ben kendi kısımlarımda işleyeceğim vakit bunlara dahil etmeyi düşünüyorum.
+
+238
+00:40:26,452 --> 00:40:53,592
+Daha sonrası için ekibimle beraber sorunlarımı edelendiriyorum, beyin fırtıklısı yapıyorum, geriye dönüyorum, çöze çöze tamamlamış oluyor. Genel olarak iş, on yöntemi bu şekilde. Peki faydası ne? En başta da söyledim. Asıl faydası şu. Bir probleme karşı tek bir noktadan bakmak, esneklikle yaklaşma, farklı çözüm arama ve yetkinlikle.
+
+239
+00:40:55,092 --> 00:41:11,371
+Tek bir nokta açısından ana sebebe bakmak yerine diğer sebeplere de bakıyoruz. Onları da çözüm sağlayalım çözebiliyorsak. Daha sonrasında bu makaloslarının şunu yapıyorlar, Fişman Yönetimi adı çok güzel. Bir de risklerin tanımını yapıyorlar. Yani risk sürecini halletiyorlar.
+
+240
+00:41:11,371 --> 00:41:21,251
+Yani ne var bu risk yönetimi süreci? Risklerin tanımını, risklerin sınavını ve risklerin değerlendirmesi olarak 3 kısım işliyorlar. Risk yönetimi süreci daha fazla.
+
+241
+00:41:21,619 --> 00:41:31,559
+Aslında ne var? Sınıflandık, çözüm etme, izleme, takip, diğer kısımları işlemedik. Sadece ilk kısım işliyoruz.
+
+242
+00:41:31,559 --> 00:41:32,239
+Evet.
+
+243
+00:41:33,439 --> 00:41:46,339
+Ne yapıyoruz? Bir tanımlandırıyoruz. Daha sonrasında bunları belli bir kalıbı alarak sınıflandırıyoruz. Ondan sonra makaleye yazan Pakistanlı arkadaşlar, kendi Pakistanlı yazılım şirketlerini...
+
+244
+00:41:46,963 --> 00:41:58,963
+Bu riskleri gönderiyorlar. Diyorlar ki bize bunu kendi yazılım riskleri yaşadığını aynı zamanda bu riskleri de gönderiyoruz.
+
+245
+00:42:00,963 --> 00:42:05,963
+Sınıflandırmasını yapalım. İşte ne var? Schedule riskler var. Zaman riskleri yani.
+
+246
+00:42:05,963 --> 00:42:12,963
+Yani yanlış görev kaydaşımla, beklenme içerisinde gerçekleşmesini veya engel olan bir çeşitli.
+
+247
+00:42:13,907 --> 00:42:21,907
+Peki buna kaç kategori yayılmış? Dört kategori yayılmış. Neler var? Zaman kambini, kaynak tahsisini, yani zamanın planlama aşamasının kutuma.
+
+248
+00:42:21,907 --> 00:42:32,907
+Kaynak tahsisi mi? Kaynak takım şekli, yani sal takıma yeterince kaynak ayırmak için, o takım için devam etmemesi o takım bazında.
+
+249
+00:42:32,907 --> 00:42:39,907
+Proje karmaşıklığının artması, pardon, proje karmaşıklığının haşina okulması yani.
+
+250
+00:42:40,980 --> 00:42:46,320
+Ve proje kapsamının değişmesi, daha doğrusu genişlemesi zaman artacak.
+
+251
+00:42:48,000 --> 00:42:53,780
+Peki bir sonraki ne var? Bütçe risk. Gerçekçi olmayan bütçe tahminin, finansal sorumluluğu, çanlık riskler.
+
+252
+00:42:55,059 --> 00:43:01,659
+Dediğim gibi, planlama kısmının, kısımdan kaynaklı bütçe tahminin çeşidi oluşturuyor.
+
+253
+00:43:02,280 --> 00:43:07,539
+Maliyetin aşaması, bizim, bizim, bizim, bizim, bizim, bizim, bizim, şey kullanması, kaynaklı.
+
+254
+00:43:08,980 --> 00:43:17,300
+Proje kapsamını da aynı şekilde, bu iki zaman riskinde bütçede de kapsamın genişlemesi hem bütçeyi hem zamanda etkili.
+
+255
+00:43:17,300 --> 00:43:21,980
+Daha sonrasında ne var? Operasyonel risklerim var.
+
+256
+00:43:21,980 --> 00:43:28,980
+Bunlar da benim yazılım kapsamında süreç standartlanmasından veya izlenmesinden kaynaklanam.
+
+257
+00:43:28,980 --> 00:43:34,980
+Yalnız süreç uygulaması, çelişen öncelikler, işim eksiklik yetersizlik.
+
+258
+00:43:35,188 --> 00:43:55,188
+Yanlış süreç uygulanmasında proje yönetimi yetersizliğinden veya uygulamasından kaynaklı olarak proje kapsamında yanlış modellerin kullanması veya öncelikli belirlenmemesi, dağılışı veya öncelikli belirlenmemesi, proje planlaştırmasını, tüketin doğru çalışması ve dönemesi.
+
+259
+00:44:01,715 --> 00:44:15,035
+Bunda genel olarak çözdük. Müşter genelik değişimlerinde ne var? Müşteri isterli genelik değişimlerinde kaynaklı, düşenmesi çok. Müşteri eksik.
+
+260
+00:44:15,035 --> 00:44:24,015
+Proje kapsamı benim teknolojimin proje kapsamını. Aslında benim çalıştığım sektörde farklı zaman.
+
+261
+00:44:24,436 --> 00:44:51,195
+En çok karşılaştığım şey teknolojinin eksikliği. Yani ben işlerin, işleri, zınım çektiği, biraz düşünme etmeye çalışıyorum. Açıkçası biz bu liste çok karşılaşıyoruz. Bunlar sonrasında ne var? Tamam, riskleri sınıflandı. Şimdi de diyorum ben bunu Pakistan'daki şirketlere ilginç şirketi.
+
+262
+00:44:51,923 --> 00:44:53,923
+Ve bana bunları bir değerlendirin.
+
+263
+00:44:53,923 --> 00:44:55,923
+İşte bu birisi.
+
+264
+00:44:55,923 --> 00:44:58,923
+Genel olarak soru soruyor.
+
+265
+00:44:58,923 --> 00:45:04,923
+İşte diyor ki zaman değiştirme, bütçe değiştirme, teknik riskimi değiştirme, operasyonel kısmı değiştirme falan.
+
+266
+00:45:04,923 --> 00:45:07,923
+En çok benim dikkatimi çeken kısım teknik risk.
+
+267
+00:45:07,923 --> 00:45:12,923
+Teknik riskle baktığım zaman neredeyse yüzde oranında gerçekleştiğini söylüyor.
+
+268
+00:45:12,923 --> 00:45:14,923
+Kendi projelerimde.
+
+269
+00:45:19,987 --> 00:45:34,987
+Sıkıntılı bir oran açıkçası. Çok açıkçası ben... Ama diğer bir kısma baktığımız zaman, kısmının değişmesi 16.6'ta bana göre de çok düşük bir oran. Çünkü ben açıkçası sonuç sanayi...
+
+270
+00:45:34,987 --> 00:45:45,867
+...çok biraz uçuk olur. Deadline'lar biraz böyle tutmayacak. Hale bu süreç neredeyse 5 proje'den 4 süreç uzuyor.
+
+271
+00:45:46,036 --> 00:45:47,776
+Hiç de istemez. Bu bana çok küçük geldi.
+
+272
+00:45:47,896 --> 00:45:48,536
+Çıkkısı 56.
+
+273
+00:45:48,776 --> 00:45:55,236
+Sonra bu riskleri belirledikten sonra tekrar anketlerde şu soruyu soruyorlar.
+
+274
+00:45:55,236 --> 00:45:58,336
+İşte zaman riskinin oluşmasının ana sebebi ne?
+
+275
+00:45:58,656 --> 00:46:01,256
+Ana sebebi kısmı da aslında root causus olarak geçiyor.
+
+276
+00:46:01,336 --> 00:46:02,956
+Root causus analiz diye geçiyor.
+
+277
+00:46:03,416 --> 00:46:04,236
+Bir problemim var.
+
+278
+00:46:04,776 --> 00:46:07,056
+Anasabim tek özellik ne?
+
+279
+00:46:09,204 --> 00:46:20,204
+İşte yine soruyor sorular. Burada en çok olan 6.7. Arkadaşlar buradaki planlar 100 üzerinden hesaplam. Planın dışında oluşma olasılığını.
+
+280
+00:46:20,204 --> 00:46:34,092
+Yani buna en çok zaman değişmasına. En az da işte kaynaklanmış.
+
+281
+00:46:37,396 --> 00:46:42,856
+Bir sonraki içerisinde, sonra neredesin bir işte bu 3.0.
+
+282
+00:46:42,856 --> 00:46:48,596
+Başdaki kısım 3.0.
+
+283
+00:46:48,596 --> 00:46:52,196
+En çok uçan bir parayı.
+
+284
+00:46:52,196 --> 00:46:55,596
+Personel bir sonraki şey bu.
+
+285
+00:46:55,596 --> 00:47:00,596
+İşte 7.6.
+
+286
+00:47:06,036 --> 00:47:08,036
+En azda yıkıtır size.
+
+287
+00:47:10,036 --> 00:47:12,036
+Karakası bu, şunu da sök.
+
+288
+00:47:12,036 --> 00:47:32,036
+En başta planlama aşamasını yaparsak, projenin riskinin azalma olakası da çok. Yani şuraya bak. Çok. Aynı zamanda düşeğine tahmin ediyoruz.
+
+289
+00:47:33,684 --> 00:47:43,684
+Eğer biz başlangıcı ilk açsak, skip, branda tıkalım. Daha sonrasında,
+
+290
+00:47:43,684 --> 00:47:48,684
+İkisi de çok.
+
+291
+00:47:48,684 --> 00:47:52,684
+İnternet bağlantında problem var galiba.
+
+292
+00:47:52,684 --> 00:47:56,684
+Hocam şu an şirket, belki onu kaynam.
+
+293
+00:47:56,684 --> 00:47:58,684
+Hı hı.
+
+294
+00:48:08,340 --> 00:48:12,780
+Evet, şimdi bu anket verilerini özetle.
+
+295
+00:48:12,780 --> 00:48:13,560
+Tamam.
+
+296
+00:48:14,720 --> 00:48:20,600
+Daha işte burada der ki, sizin değişmesi, fikrim ve sizleri, bunlar da çok önemli değil.
+
+297
+00:48:22,060 --> 00:48:28,660
+Sonra şu şekilde, benim en başta tanıdığım Pişko Mikrofoni'nin riskleri işliyorum.
+
+298
+00:48:29,700 --> 00:48:29,880
+Hadi.
+
+299
+00:48:34,739 --> 00:48:38,739
+Anaht olarak yaklaştırıyoruz. Benim programım ne yazılmıyor.
+
+300
+00:48:39,739 --> 00:48:40,739
+Risklerim ne?
+
+301
+00:48:41,739 --> 00:48:43,739
+Ve bunu da işte sallıyorum. İşte zaman.
+
+302
+00:48:45,739 --> 00:48:46,739
+İşte kaynakların
+
+303
+00:48:49,739 --> 00:48:50,739
+geçmesi
+
+304
+00:48:51,739 --> 00:48:53,739
+zaman tamamen geçmiş olmalı.
+
+305
+00:48:54,739 --> 00:48:56,739
+Daha sonrasında şunu yapıyorum.
+
+306
+00:48:57,739 --> 00:48:58,739
+Nereden iyi?
+
+307
+00:49:00,436 --> 00:49:18,436
+Bu konuda bir sonraki videoda yapıyorum. İşte senle risklerim kaybede. Buna ne yapıyorum? Anket alarak, bu konuda yerleştirdim. Teknik risklerim de benim. İkisi de yürü.
+
+308
+00:49:22,356 --> 00:49:28,956
+Sonuçtaki değerlendirmeleri göster istersen. Oradan takip edelim.
+
+309
+00:49:29,675 --> 00:49:35,816
+Tamam, buraları geçiyorum. Burada tek tek değerlendirilmiş oluyor. En sonunda da buraya nücel olarak risk değerlendirmesi yapıyor.
+
+310
+00:49:35,816 --> 00:49:37,436
+Biraz iyileşti sesinde.
+
+311
+00:49:37,436 --> 00:49:37,936
+Evet.
+
+312
+00:49:39,036 --> 00:49:48,516
+Tamam, kusura bakmayın. Zaten bu son slide'ın dediğim gibi en başta makale kısmını, kısımları genel olarak değerlendiriyorlar.
+
+313
+00:49:49,139 --> 00:50:00,179
+En son kısmı şey yapmıyor açıkçası, pişpon yöntemi üzerinde eklemiyerek göstermiyor. Kısmı da işte ben kendi proje kapsamında pişpon yöntemi olarak eklemeyi düşünüyorum.
+
+314
+00:50:01,380 --> 00:50:12,760
+Ve işte şuradaki kısmı nijel olarak, pardon, mesela o değerli listeleri ben nijel olarak koranlıyorum. Zaten şu olayı okuyor. Olasılık seviyem var. Bunların çarpım da bana ekmesini.
+
+315
+00:50:13,599 --> 00:50:16,099
+Proje yönetimi kısmındaki bilgi kullanılan bir bilgi.
+
+316
+00:50:16,692 --> 00:50:24,692
+İşte sal ve 0.0 zaman riskim 3 oranının en çok karşılaştığım
+
+317
+00:50:24,692 --> 00:50:31,692
+0.75.75.6'lık yani 0.0 da bana eksi
+
+318
+00:50:31,692 --> 00:50:40,619
+Hale ben bu iş boyunca yerleştirmek için baktığım zaman benim en çok şu kısımda teknik risklerimde
+
+319
+00:50:40,916 --> 00:50:43,355
+Çok yüksek bir şey sallıyor, dağıtmış olacak.
+
+320
+00:50:43,835 --> 00:50:51,695
+Evet, sallıyorum çok fazla kullanmak, bir teknik olaylarda kullanılmaması lazım.
+
+321
+00:50:51,695 --> 00:50:59,376
+Şöyle aslında, dediğim gibi oranlar yakınmış, manketler alınmış ama yerleştirilmediği için ben onu devam ettirmedim.
+
+322
+00:50:59,516 --> 00:51:07,795
+Bakaylı hocam, kendim oluştum. Ama baktığım için işte bu plan yaptığımız zaman yüzde lise olarak toplayalım.
+
+323
+00:51:08,275 --> 00:51:19,455
+%100 üzerinden değerlerden de %7'nin üzerinde olacak. Sonuç çıkaracak aslında. En azıda çıkacak durumda bak zaman %7'nin çok altında çıkaracak.
+
+324
+00:51:19,755 --> 00:51:29,855
+[öğrenci] ben ne odaklanmam gerekecek? İlk başta teknik sistemimi çözmeye odaklanacağım. Daha sonrasını işte operasyonlar bütçeyi riskimi çözeceğim. En sonunda çözmemizden zaman.
+
+325
+00:51:29,855 --> 00:51:31,855
+Bu şekilde.
+
+326
+00:51:34,132 --> 00:51:36,251
+Kusura bakmayın, şey için, ihtiyacı için.
+
+327
+00:51:37,611 --> 00:51:38,611
+Teşekkürler.
+
+328
+00:51:53,012 --> 00:52:10,152
+Şimdi bu proje sunumlarına geçelim şimdi. [öğrenci], sen anlatacaktın. Başka proje sunumunu anlatmak isteyen var mı?
+
+329
+00:52:10,152 --> 00:52:11,451
+Ben anlatabilirim.
+
+330
+00:52:17,076 --> 00:52:19,036
+[öğrenci] senden mi geldi ses?
+
+331
+00:52:19,096 --> 00:52:20,135
+Yok, [öğrenci] Hocam.
+
+332
+00:52:20,436 --> 00:52:30,956
+Tamam, evet. O zaman [öğrenci] şimdi anlatacak. Bir beş dakika ara verelim. [öğrenci]'la başlayalım, olur mu?
+
+333
+00:52:31,875 --> 00:52:32,675
+Tamamdır Hocam.
+
+334
+01:06:14,387 --> 01:06:23,148
+Hocam merhaba. Baştan önce bir şey söyleyebilir miyim?
+
+335
+01:06:23,588 --> 01:06:23,867
+Tabii.
+
+336
+01:06:25,068 --> 01:06:30,048
+Biz de makale sunumu yapacaktık da. Dersin başında söylemiştik aslında.
+
+337
+01:06:31,448 --> 01:06:35,887
+[öğrenci], [öğrenci]'la birlikte sunacaktınız.
+
+338
+01:06:36,320 --> 01:06:38,420
+Evet, [öğrenci]'la birlikte sunacağız.
+
+339
+01:06:39,800 --> 01:06:48,380
+Sizin şeyinizi bana atar mısınız en son kararlaştırdığınız konunuzu? En son mail attınız herhalde.
+
+340
+01:06:49,160 --> 01:06:52,760
+Evet, mail atmıştık makaleleri.
+
+341
+01:06:52,760 --> 01:07:00,920
+Bana anlatırken onu atarsınız. O zaman şimdi [öğrenci]'ı mı dinleyelim baştan söylediğim için?
+
+342
+01:07:04,755 --> 01:07:05,596
+Fark etmez hocam.
+
+343
+01:07:05,596 --> 01:07:19,655
+Tamam, o zaman siz anlatın hızlıca. Nasıl bölüştüyseniz konuyu arka arkaya anlatın.
+
+344
+01:07:20,655 --> 01:07:21,296
+Tamam hocam.
+
+345
+01:07:25,635 --> 01:07:28,376
+Önce hanginiz başlayacaksınız?
+
+346
+01:07:29,476 --> 01:07:30,496
+[öğrenci] başlayacağım.
+
+347
+01:07:30,615 --> 01:07:31,336
+Ben başlayacağım.
+
+348
+01:07:31,336 --> 01:07:32,096
+Tamam.
+
+349
+01:07:51,315 --> 01:08:06,695
+Merhabalar öncelikle. Nisan 2020 IT Play Access'te yayınlanan küçük ölçekli bir yazılım geliştirme şirketinde çevik süreçlerinin ölçülmesi ve iyileştirilmesi başlıklı makaleyi sunacağız bunu sizlere.
+
+350
+01:08:12,596 --> 01:08:19,595
+Çevik geliştirme metodolojileri günümüzde her türden yazılım geliştirme şirketi tarafından yaygın olarak menüsenmektedir.
+
+351
+01:08:20,615 --> 01:08:31,576
+Sektör araştırmaları neredeyse tüm kuruluşların çevik yöntemleri bir dereceye kadar kullandığını ve bunların yarısından fazlasının yazılım geliştirme yönelik olan yaklaşımlarının çevik yöntemleri olduğunu göstermektedir.
+
+352
+01:08:32,275 --> 01:08:51,536
+Çevik projelerinin yönetimi özellikle ECOBİLAR söz konusu olduğunda zorlayıcı olabilmekte. Product Owner ve Scrum Master için zorluk iki yönlü aslında. Yazılım ürün kalitesini güvence altına almak ve ekip süreçlerinin etkinliğini korumak, yani performansını korumak ekiplerin.
+
+353
+01:08:54,612 --> 01:09:08,032
+Bu makalenin kapsamı, COVID-19 bir şirkette çevik yazılım geliştirme sürecini ölçen bir dizi metrik ve bu metriklerin ticari ürünlüğün geliştirilmesinde Scrum hekimine nasıl yardımcı olduğuna ilişkin bir tartışma ortaya koymak.
+
+354
+01:09:08,752 --> 01:09:13,351
+Metrikler, Kurebis, Avrupa Birliği...
+
+355
+01:09:13,971 --> 01:09:27,871
+Avrupa Birliği'ce fonlanan QBRAWIS isimli bir tool'un bir araştırmacı ekibiyle Polonyalı küçük ölçekli bir yazılım şirketinin bir ticari ürünün geliştirmesi için birlikte çalışma sırasında oluşturulmuş.
+
+356
+01:09:27,992 --> 01:09:33,751
+Yani aslında Action Research eylemcisi sırasında ortaya çıkmış bir makale bu.
+
+357
+01:09:36,992 --> 01:09:40,631
+QRAWIS projesi Avrupa Birliği tarafından fonlandı demiştim.
+
+358
+01:09:42,228 --> 01:09:47,167
+3 araştırma ortağı ve 4 şirketin yer aldığı Endüstri Akademik İşbirliği ile yapılan bir proje.
+
+359
+01:09:47,708 --> 01:09:54,188
+Çevik Yazılım Meteorolojisinin yazılım ve proje yönetim süreçlerini iyileştirmek için yenilikçi yöntemler ve araçlar önermiş bir proje.
+
+360
+01:09:54,188 --> 01:09:59,188
+Bu revist yaklaşımı çeşitli kaynaklardan yazılım repositorileri.
+
+361
+01:10:00,000 --> 01:10:10,079
+Proje yönetimi araçları, sistem kullanım ve hizmet kalitesi kaynaklarından veri toplanması ve analiz edilmesine dayanmakta. Bu alttaki resimle de gözlemleyebiliyoruz bunu.
+
+362
+01:10:12,340 --> 01:10:40,000
+Karar verici yapı, yani aslında isterlerin belirleyen, işte product owner, isterlerin belirlenmedikten sonra aslında geliştirme süreci oluyor. Bu geliştirme sürecinde işte belli kaynaklar, mesela GitLab gibi, Jira gibi bu kaynaklardan geliştiricilerin ürettikleri datalar, proje yönetimi, proje sırasında, projenin geliştirme açısından geliştiricilerin ürettiği kaynaklar, bu
+
+363
+01:10:40,340 --> 01:10:56,020
+Kuyruvis projesi kullanılarak proje yöneticilerinin takım liderleri gibi proje yönetiminde görevli olan insanların verileri analiz edip projenin daha iyi yönetilebilmesini sağlayabildiği bir yapı var burada.
+
+364
+01:10:58,387 --> 01:11:16,387
+Bu proje sonunda kürobit aracı doğmuş. Bu araç kitapta da mevcut şu anda. Bunun ana modülleri veri toplama, veriyi modelleme ve analiz, stratejik karar verme. Bu stratejik karar verme pozisyonda da dediğim gibi...
+
+365
+01:11:17,300 --> 01:11:31,920
+Proje yöneticilerinin analizi için bir görselleştirme sunuyor aslında. Burada data sağlayıcılarında, SonarCube gibi, Statik Analiz, Jetsin, Jitkins gibi, Jira gibi araçlar yer alıyor. Devam edebiliriz.
+
+366
+01:11:33,684 --> 01:11:46,668
+Araştırma metolojisinde makale 70-90 kişi çalışan sayısına sahip Polonyalı merkezli bir yazılım firmasının depo ve üretim süreçlerinin kontrolü için geliştirdikleri...
+
+367
+01:11:47,028 --> 01:12:07,468
+Yazılım raporlanıyor. Yazılım ve hep davamlı bir yazılım. Firma hakkındaki bilgiler ise şu şekilde. Firma yazılım geliştirme projesinde Scrum'ı kullanıyor. Her gün 7 ila 10 geliştirici yazılımın dağıtılması veya ürüne yeni özellikler eklemek üzerine çalışıyor. Scrum ekibi Sprintin son gününde haftalık sprint toplantıları düzenleniyor.
+
+368
+01:12:08,243 --> 01:12:16,783
+Scrum sonrasında da review, geçmişin değerlendirmesi, bir sonraki sprint için planlama yapılıyor. Bu şirkette çalışma metodesi böyle.
+
+369
+01:12:22,868 --> 01:12:32,927
+Şimdi ekibin Scrum takımlarının ihtiyaçları var. Ekibin süreç performansını izlemek, yeni özellikler eklerken önünün kalitesini sağa tutmak, speed boncuk alan görevleri iyileştirmek gibi.
+
+370
+01:12:33,927 --> 01:12:46,548
+Bu ihtiyaçların çözüm için yapılan araştırmadaki hedef ise, hedef-soru metrik yaklaşımını uygulayarak süreç metriklerini, COBİ'lerde Scrum ekibinin çevik süreç performanslarını izlemek ve tahmin ederek analiz etmek aslında.
+
+371
+01:12:50,036 --> 01:13:05,396
+Seçilen araç, yani bu projenin geliştirme sırasında geliştiricilerin ürettikleri veriler reanaliz etmek için kullanılan araç GitLab kullanılıyor. Yani GitLab Repositörsindeki veriler baz alınarak.
+
+372
+01:13:07,123 --> 01:13:17,703
+Açıklamak gerekirse, BitTab diğer özelliklerin yanı sıra repo yönetimi ve iş uyu takibine odaklanarak yazılım geliştirme yaşam döngüsünün tamamına destek sağlayan açık kaynaklı ve tabanlı bir araç.
+
+373
+01:13:18,103 --> 01:13:27,683
+BitTab şirketin tüm projelerinde yaygın olarak kullanılıyor ve özellikle Scrum ekibi geliştirme sırasının ekip tarafına izlenen süreci en iyi yaratabilecek araç olduğunu onaylıyor.
+
+374
+01:13:27,683 --> 01:13:29,683
+Yani aslında bu...
+
+375
+01:13:30,304 --> 01:13:32,683
+Yazılım geliştirme ortamı bir anlamda.
+
+376
+01:13:33,603 --> 01:13:34,384
+Evet hocam.
+
+377
+01:13:35,123 --> 01:13:42,863
+Bu pilot bir uygulama olduğu için de araştırmacılar diyor ki sizin verilerinizi biz bu platform üzerinden takip edelim.
+
+378
+01:13:43,363 --> 01:13:52,443
+Buradan girdiğiniz verileri Q-Rubis denen uygulamayı kullanarak size görselleştirme gibi bir olanak sağlayın diyor.
+
+379
+01:13:53,804 --> 01:13:56,144
+Buradan sonrasınızı [öğrenci] arkadaşımla anlatabilir.
+
+380
+01:14:08,884 --> 01:14:33,564
+Şimdi [öğrenci] arkadaşımızın anlattığı gibi GitHub dediğimiz açık kaynaklı yazılım. Bu yazılımda işte belli veriler toplanıyor. Yazılım yaşam dönüşü boyunca. Bu veriler neler? Belirli görevler açılıyor. Bu görevlere işte esayin edilen yani bu görevleri geliştirecek kişiler.
+
+381
+01:14:33,952 --> 01:14:46,112
+Bu görevlerin başlangıç ve bitiş zamanları, tahmin edilen zamanları gibi bazı veriler toplanıyor. Bu veriler Elastic Search denilen bir özel bir dizinde saklanıyor.
+
+382
+01:14:49,332 --> 01:15:00,791
+Bu veriler CureVis aracına aktarılarak görselleştiriliyor. Burada da grafiklerini görüyorsunuz. Test sürecinde veya işte
+
+383
+01:15:01,587 --> 01:15:07,108
+Açılan işuların genel olarak grafiği.
+
+384
+01:15:10,188 --> 01:15:22,608
+Gittab'tan toplanan bu veriler daha sonra, işte Q-Rabit'i aktardıktan sonra Elasticsearch'ın bir aracı olan Kibana ile görselleştiriliyor.
+
+385
+01:15:23,448 --> 01:15:28,387
+Buradaki grafikte de açılan bu görevler.
+
+386
+01:15:29,203 --> 01:15:36,523
+Görevlerin takibi yapılıyor. Bu görevlerin işte belirli aşamalarda ne kadar süre durdukları görselleştiriliyor.
+
+387
+01:15:41,076 --> 01:15:56,876
+Süreç metriklerinin tanımı, eylem araştırma döngüsünün eylem alma aşamasında Scrum ekibi ve araştırma ekibi, çevik geliştirme süreçlerini değerlendirmek için GitHub tabanlı süreç metriklerini aday olarak gördüklerini tartışmış.
+
+388
+01:15:57,395 --> 01:16:09,796
+Scrum ekibi adaymetrik seti için şu gözlemleri sağlamıştır. İlerleme ve izlemek için kullanılan bir dizi kavram var. TAS dediğimiz görevler.
+
+389
+01:16:10,260 --> 01:16:35,319
+Bu görevler yazılım geliştirme sürecindeki belirli kişileri adının görevler oluyor. Issue ve bug dediğimiz yeni görevlerin oluşturulması ve belirli açılan hatalar oluyor. Efort dediğimizde kaynak ve çabaların ne kadar kaynak yönetimine çıkıyor.
+
+390
+01:16:36,340 --> 01:16:48,239
+Geliştirme durumları arasındaki geçişler bu şey, görevlerin açılma durumları, tamamlanma durumu ve kapanma durumlarını gösteriyor.
+
+391
+01:16:49,159 --> 01:17:00,659
+Efort dediğimiz tahminle ilgili ekipteki kaynak planlamasındaki doğruluğu baz alıyor. Yani doğruluğun iyileştirilmesini sağlıyor.
+
+392
+01:17:01,844 --> 01:17:10,604
+Bu kavramlar temel olarak iki açıdan analiz ediliyor. Sayısal ve zaman boyutu, yani sayısal bellerin ve zamana göre karşılaştırılması.
+
+393
+01:17:12,724 --> 01:17:17,363
+GitHub belleri kullanılarak bu metrikler ölçülebilir olmalı aynı zamanda.
+
+394
+01:17:19,084 --> 01:17:23,904
+Bu ilkeleri göz önünde bulunan ekip 25 aday metrikten oluşan bir öneri oluşturuyor.
+
+395
+01:17:24,595 --> 01:17:43,495
+Diğer birçok ölçüt ilgi çekici görünse de eylem araştırma ekibi belirli ölçütlere göre kategorileri ayırıyor bunları. Genel ölçütler, görev tahmin metrikleri, görev uygulama ölçümleri, hata düzeltme ölçümleri, test ölçümleri ve bu kategorilere girmeyen diğer metrikler. Bu metrikleri birazdan göstereceğim.
+
+396
+01:17:45,076 --> 01:17:54,636
+Bu metriklerin değerlendirilmesi sırasında karşılık gelen süreç metriklerinin kullanılmasının 3 araştırma sorusu üzerindeki etkisini rapor ettiyor.
+
+397
+01:17:55,716 --> 01:18:03,576
+Bu etkiler süreç performansının izlenmesi, ürün kalitesi seviyesini korunması, spiklans sırasında görev tahminlerinin iyileştirilmesi.
+
+398
+01:18:06,899 --> 01:18:15,500
+Bu metriklere göre de süreç performansı ve ürün kalitesinin grafiğe dökülüyor.
+
+399
+01:18:16,539 --> 01:18:24,180
+Burada süreç performansında gelişme gözlemlenirken ürün kalitesinde sabit bir durum söz konusu.
+
+400
+01:18:24,299 --> 01:18:30,459
+Bunun sebebi de zamanla kodun geliştirilmesi sırasında yeni özellikler eklenirken
+
+401
+01:18:30,783 --> 01:18:50,224
+Bir yandan da kodun kalitesinin iyileştirilmeye çalışılması sağlanırken, yeni özellikler eklendiği için burada araştırma ekibi diyor ki, ürün kalitesinin sabit durmasının normal olduğunu gözlemlemiştir.
+
+402
+01:18:56,884 --> 01:19:19,804
+Metrikler oluşturuluyor. Scrum Master ve projeden bir geliştirici ile KiroHibis projesinden 3 araştırmacının katıldığı bir oturum gerçekleştiriliyor. Bu oturum sonucunda genel ölçütler, görev tahmin ölçütleri, görev tam ölçütleri gibi ölçütler burada listeleniyor.
+
+403
+01:19:23,028 --> 01:19:43,288
+GitLab'ta bulunan bu süreç panosunun görünümü bu şekilde. Bütün görevlerin takibi, etiketlendirilmesi gibi ölçütler, açık görevler, backlogdaki görevler, şu an çalışmaya devam eden görevler, meşgul göster gibi görevler.
+
+404
+01:19:43,568 --> 01:19:47,847
+Kırmızılar bitmiş olanlar mı? Yoksa problemi mi işaret ediyor kırmızılar?
+
+405
+01:19:48,787 --> 01:20:09,167
+Fırmızılar dediğimiz, bug yazıyor bunlar. Bunlar bug olanları gösteriyor. Yeni özelliklerin açılması açık kısma denk geliyor. İşte bugları, görevleri kategorilendiriyor aslında etiketlere göre.
+
+406
+01:20:09,427 --> 01:20:11,247
+Yeşiller, bitmiş olanlar mı?
+
+407
+01:20:13,011 --> 01:20:19,011
+Yeşiller evet bitmiş olan. Sprint'e göre bitmiş olan. Evet.
+
+408
+01:20:21,011 --> 01:20:32,011
+Bu araştırmanın sonucunda şunlara varılıyor. Çalışmanın en önemli katkısı çok ihtiyaç duyulan çözümlerden biri olan yazın geçtirme sürecinin her aşamasının performansını izlemektir.
+
+409
+01:20:34,644 --> 01:20:55,664
+İkinci olan da firma için en büyük fayda yeni özellikler eklerken çözümün sistemin istikrarı üzerindeki olumlu etkisidir. Yani aslında bu daha önce bahsettiğim koda yeni özellikler eklenmesine rağmen, çalışma büyümesine rağmen kod kalitesi korunmaya devam ediyor.
+
+410
+01:20:56,467 --> 01:21:12,207
+Üçüncü olan da görev tahmini gösterişmek için kullanılan mekanizmalar. Örneğin görevleri canlı olarak izlemek. Yani bu aşamada da Scrum ekibi bütün görevin genel hatlarıyla hangi aşamada olduğunu görebiliyor.
+
+411
+01:21:14,387 --> 01:21:28,707
+Tamamlanan görevlerin vesaire analizini yapabiliyor ve ileriki görevleri daha tutarlı bir şekilde, daha iyileştirilmiş bir şekilde atamasını yapıyor. Bu şekilde bizim sunumuz.
+
+412
+01:21:30,707 --> 01:21:32,387
+Evet, teşekkürler.
+
+413
+01:21:49,811 --> 01:21:55,611
+Evet, şimdi projelere geçebiliriz artık. [öğrenci] seni dinleyebilirsin.
+
+414
+01:21:56,391 --> 01:21:56,971
+Tabi hocam.
+
+415
+01:21:58,231 --> 01:22:03,412
+Bu arada bana [öğrenci]'ın sorduğu bir soru vardı, onu söyleyeyim.
+
+416
+01:22:04,332 --> 01:22:11,731
+Şimdi makalelerinizde sunumunu yaptınız. Yaptıktan sonra bana gönderiyorsunuz sunumlarınızı.
+
+417
+01:22:13,011 --> 01:22:16,731
+IEEE formatında da yazmanızı istemiştim.
+
+418
+01:22:17,087 --> 01:22:28,948
+Bunu ne zaman göndereceksiniz? Son tarihi 4 Haziran Pazartesi olsun. Çünkü 5'inden itibaren sınavlar başlıyor.
+
+419
+01:22:28,948 --> 01:22:31,948
+Sizin sınavınız...
+
+420
+01:22:33,779 --> 01:22:36,719
+Paylaştı herhalde arkadaşlar değil mi?
+
+421
+01:22:36,719 --> 01:22:38,680
+İkinci hafta sanırım hocam.
+
+422
+01:22:38,719 --> 01:22:39,739
+İkinci hafta, evet.
+
+423
+01:22:42,239 --> 01:22:47,399
+İlk sınav haftası başlayacağı gün sona ersin.
+
+424
+01:22:47,659 --> 01:22:50,979
+Yani dördü akşamı bitecek şekilde.
+
+425
+01:22:52,319 --> 01:23:01,139
+Ben şeyde yer açarım diyordum ama benim Gmail adresime, isterseniz yazayım [öğrenci] anlatırken.
+
+426
+01:23:01,503 --> 01:23:06,123
+Şeye, buraya.
+
+427
+01:23:10,244 --> 01:23:15,023
+Hocam, sınav zamanınızda test mi etsek, öyle uygunluğu nasıldır acaba?
+
+428
+01:23:16,824 --> 01:23:18,203
+Sınav zamanında mı?
+
+429
+01:23:19,244 --> 01:23:20,923
+İkinci hafta olarak belirlemişim.
+
+430
+01:23:20,923 --> 01:23:24,404
+İkinci hafta ama onlara bakmam falan biraz şey.
+
+431
+01:23:27,220 --> 01:23:33,700
+O yüzden sınavlar başlayacağı gün teslim etmeniz daha uygun.
+
+432
+01:23:37,427 --> 01:23:39,688
+Sonra sınavlarınızı falan okuyacağım ya.
+
+433
+01:23:53,460 --> 01:23:57,340
+Yani 5 Haziran sabahına kadar atabilirsin.
+
+434
+01:24:03,283 --> 01:24:23,384
+Şeyde yer açarım diyordum ama açmadım. Gmail'den atabilirsiniz bana. Final sınavı olacağım. Gerçi henüz size vize sonuçlarınızı söylemedim ama önümüzdeki hafta söylerim herhalde.
+
+435
+01:24:28,851 --> 01:24:31,271
+Şimdi dinleyebiliriz kalsın.
+
+436
+01:24:36,307 --> 01:24:43,068
+Başka sorunuz var mı şeylerle ilgili? Projeler, kurallar?
+
+437
+01:24:43,708 --> 01:24:49,087
+Hocam, projelerin son gönderim tarihi ne zamandı? O da mı aynı gün?
+
+438
+01:24:50,467 --> 01:24:57,667
+Projeleri aslında sunumlarına başladınız. Ayrı bir formatı falan yok onun.
+
+439
+01:25:03,539 --> 01:25:07,100
+Tamamlamış olalım.
+
+440
+01:25:11,252 --> 01:25:18,172
+Yani, 30'u 31'inde tamamlamış olalım onu.
+
+441
+01:25:21,811 --> 01:25:23,791
+Mail mi atacağız yine onları da hocam?
+
+442
+01:25:24,572 --> 01:25:28,032
+Ona şey açayım, online yıldızda.
+
+443
+01:25:29,092 --> 01:25:30,731
+Tamam hocam, teşekkürler.
+
+444
+01:25:31,211 --> 01:25:32,291
+Ben teşekkür ederim.
+
+445
+01:25:35,311 --> 01:25:40,351
+Onun deadline'ını ne diyelim, onu da 1 Haziran koyalım.
+
+446
+01:25:50,612 --> 01:25:52,231
+Hocam bir şey sorabilir miyim ben de?
+
+447
+01:25:52,871 --> 01:25:53,112
+Tabii.
+
+448
+01:25:54,252 --> 01:25:57,112
+Makale sunumları bu hafta son mu? Haftaya yapabiliyor muyuz?
+
+449
+01:25:58,371 --> 01:25:59,672
+Bu hafta bitirdik.
+
+450
+01:26:01,311 --> 01:26:06,332
+[öğrenci] Bey'le biz varız. Biz sonradan katıldık. Kusura bakmayın. Bugün sunumu yapabilir miyiz biz de?
+
+451
+01:26:08,652 --> 01:26:11,051
+Sizin konunuzu belirlemiş miydik?
+
+452
+01:26:11,431 --> 01:26:11,771
+Evet.
+
+453
+01:26:18,644 --> 01:26:22,424
+Şimdi bu iki arkadaşınız sonsun. Ondan sonra bakalım.
+
+454
+01:26:24,184 --> 01:26:27,664
+Şey size bir kontrol edeyim. Önümüzdeki haftaya aktarırız.
+
+455
+01:26:28,463 --> 01:26:33,304
+Yazılım proje yönetimlerinde makine öğrenmesi yöntemleriyle gerçekleme bizim konumuz.
+
+456
+01:26:35,644 --> 01:26:38,764
+Tamamdır. O zaman ben arkadaşlardan sonra sizden haber bekliyorum.
+
+457
+01:26:40,384 --> 01:26:40,644
+Tamam.
+
+458
+01:26:41,404 --> 01:26:42,164
+Teşekkürler.
+
+459
+01:26:46,484 --> 01:26:49,043
+Evet, [öğrenci], nihayet seni dinliyoruz artık.
+
+460
+01:26:50,024 --> 01:26:51,224
+Başlıyorum hocam, izninizle.
+
+461
+01:26:51,224 --> 01:26:52,244
+Teşekkür ederim.
+
+462
+01:26:52,916 --> 01:26:59,796
+Sayın hocam, değerli arkadaşlar, bugün yazılım proje yönetimindeki belirlediğim projemin proje planına anlatacağım.
+
+463
+01:27:00,476 --> 01:27:06,756
+Hocam, öncelikle bu neden bu projeyi seçtiğime ve hangi projeyi seçtiğime anlatarak başlamak istiyorum.
+
+464
+01:27:07,496 --> 01:27:14,855
+[kişisel bilgi]
+
+465
+01:27:16,851 --> 01:27:28,371
+C-Shop.net MVC eğitimi aldıktan sonra bizden bir web site proje tasarlamamızı istediler. Bu projenin başarısına göre şirkete alım süreci olacaktı stajyerler arasında.
+
+466
+01:27:29,031 --> 01:27:39,211
+Ben de o şirketin belirlediği proje konularından biri olan web site tasarımının gerçekleştirdiği projeyi anlatacağım. Bunun proje planını anlatacağım sizlere.
+
+467
+01:27:40,787 --> 01:27:57,467
+Projem öncelikle giriş olarak projenin tanımı ve amacından bahsetmek istiyorum. Bu e-ticaret sistemin kullanıcıları çevrilmiş olarak alışış yapılmasını sağlayan bir web uygulamasıdır. Özellikle bu COVID salgının daha sonra popülaritesi artmış bir üründür.
+
+468
+01:27:59,091 --> 01:28:16,551
+Bu sistemlerin, ürünleri kataligüze edilmesiyle hızlı ve kolay alışveriş imkanı sağlamaya amaçlar bu e-ticaret sistemleri. Ödeme ve iade işleminin kolona oynanması, zaman tasarrufu, trafik gibi ulaşım sorunun kurtulmasıyla sağlaması kullanıcıları birçok amaç sağlamaya hedefler. Bu sistemin kapsamı nedir?
+
+469
+01:28:17,203 --> 01:28:40,983
+Sistemde iki farklı ad sistem vardı. Bir kullanıcı değil, yönetici olmak üzere. Yöneticiler yani admin diye belirttiğimiz sisteme kullanıcı ismi ve parola kullanarak giriş yapar. Bu adminin ürün eklemi, ürün sinimi, ürün güncellemi, kullanıcı kayıtlarını ve değerlendirmeni onaylama aktiviteleri vardır. Normal kullanıcılar ise ürünleri inceleyebilir fakat satın alma işlemi için sisteme kayıt olmaları gerekmektedir.
+
+470
+01:28:45,203 --> 01:28:52,703
+Giriş yapar. Sistemi kayıt olan kullanıcılar ürün inceleme, sepet oluşturma, satın alma ve ürün değerlendirme işlemlerini yapabilmektedir.
+
+471
+01:28:53,923 --> 01:29:02,503
+Bu projenin temeli sıfırdan başlayan bir projedir. Herhangi bir başka bir projenin devamı değildir veya ilişkili olduğu farklı bir proje bulunmamaktadır.
+
+472
+01:29:03,184 --> 01:29:07,003
+Projenin gereklili ve geleceği konusunda ekip için uzlaşma sağlanmıştır.
+
+473
+01:29:07,444 --> 01:29:23,324
+Şimdi işlevsel gereksinimlerden bahsetmek istiyorum öncelikle. Bu da aslında hocam geçen dönem yaptığım SLS belgesinde bulunan işlevsel ve işlevsel olmayan gereksinimler. Önemli kullanıcı bu proje kısmında, proje gereksinimler modülleri ayrılarak inceleyecektir.
+
+474
+01:29:23,744 --> 01:29:35,304
+Kullanıcı kayıt modülü, kullanıcı sepet oluşturmak, sepetteki ürünleri satın alınmak için sisteme kayıt olmalıdır. Kayıt modülündeki gerekli olan şeyler ad, soya, e-mail adresi, doğum adresi.
+
+475
+01:29:35,444 --> 01:29:58,044
+Don tarihi ve adres şeklindedir. Ürün modülü, ürünler kategülleri aylarak kullanıcının seçimine göre ana sayfada istenilir. Ürünler tür, marka, fiyat ve benzer özelliklere göre fikirlenilir. Kullanıcının istediği ürünlerin adet, türü, fiyat seçimini belirtten sonra sepete ekler. Sepette istediği ürünleri görüntüleyebilir ve belirlediği adet miktarı ile topra müjde görüntülenir.
+
+476
+01:30:00,532 --> 01:30:13,312
+Satın alma modülünde sepetteki ürünlerine satın alma işlemi başlatılığında ödeme sayfasına yönlendirilir. Kullanıcı teslim ve ödeme bilgilerini gider. Teslimat adresi ve kredi kartı bilgileri fatura oluşturur ve kullanıcının e-post adresine gönderilir.
+
+477
+01:30:14,323 --> 01:30:32,384
+Yönetici modülünde ise, yöneticinin daha önce bahsettiğim gibi ürün ekleme özelliği vardır. Silme, güncelleme gibi bu ürün değerlendirmelerinin onaylama, uygunsuz değerlendirmeleri de engelleyebilme yetkisi vardır. Kullanıcı ekleme ve silme yetkisine sahiptir admin modülü.
+
+478
+01:30:33,492 --> 01:30:53,792
+İşletsel olman gereksinimler ise aslında çoğu projede aynı olan şey de nedir? Performanstır. Yani yılda 360 ve 24 saat kullanıma hazır olmalıdır. Birden çok kullanıcı aynı anda sisteme güvenli bir şekilde bu siteden hizmet almalıdır. Sistem çarpışma yönelmek ve yanıt vermek için yetenece hızlı yanıt verebilmelidir.
+
+479
+01:31:01,492 --> 01:31:06,232
+Herhangi bir veri tabanında değişiklik meydana geldiğinde veri tabanı anlık güncelleyebilmelidir.
+
+480
+01:31:07,692 --> 01:31:12,992
+Görünüm ve kullanım gereksinimleri, tabi ki de basit ve sade bir uygulama ekranı olmalı.
+
+481
+01:31:14,472 --> 01:31:22,812
+Web arayüzü arama, talep ve işlemleri yenileme ve diğer çevrim içi veri tabanlarıyla bağlantı sağlayacaktır.
+
+482
+01:31:23,472 --> 01:31:26,652
+Web arayüzü farklı tarayıcılarda tabi ki de düzgün çalışmalıdır.
+
+483
+01:31:27,024 --> 01:31:43,444
+Diğer önemli bir husus olan güvenlik. Kullanıcının şifresi unutma durumunda sistem ve müşterinin e-post adresini gerektiren bir sıfır mekanizması sunmalıdır. Sistem yetkilendirme işlemlerinden sonra veri tabanlarının güncelleme işlemini yalnızca kütüphane, personel ve sistem yöneticisi tarafından erişilebiliyor olmalıdır.
+
+484
+01:31:48,564 --> 01:31:57,164
+7, 8, 10 veya üzeri işitim sistemlerinde çalışması beklenmektedir. Sisteme erişim için personele izin verilebilmektedir.
+
+485
+01:31:58,484 --> 01:32:11,203
+Kullanılabilir gereksinimler ise burada genel e-ticaret sitesinin belirlediği genel kurallardan olan 14 yaşından büyük kişilerin gelebilmesi basitlerinden özel bir gereklilik yoktur.
+
+486
+01:32:11,844 --> 01:32:18,583
+Sistem tutarlı ve kullanıcı dostu bir kullanıcı arayüzüne sahip olmalı ve kendi kendine açıklayıcı olmalıdır.
+
+487
+01:32:18,684 --> 01:32:21,564
+Yani herhangi bir karmaşık bir şey olmalıdır arayüzde.
+
+488
+01:32:21,564 --> 01:32:24,703
+Arayüz hata yapmaktan kaçınmaya yardımcı olmalıdır.
+
+489
+01:32:26,484 --> 01:32:32,083
+WebR 100'ü için çoğu kullanıcı taracıların genel kullanımına aşina olduğuna özel bir eğitim gerekmez bu hususta.
+
+490
+01:32:33,904 --> 01:32:39,243
+Operasyonlar gereksinimlerde ise sistem farklı internet taracılarının doğru şekilde kullanılmalıdır.
+
+491
+01:32:39,243 --> 01:32:43,623
+Ve çoğu veri tabanı database ile de uyumlu olmalıdır.
+
+492
+01:32:44,224 --> 01:32:47,724
+Legal gereksinimlerde ise kişisel bilgiler tabii ki de korunmalıdır.
+
+493
+01:32:47,864 --> 01:32:50,923
+E-ticaret sistemi krede standartları ile uyumlu olmalıdır.
+
+494
+01:32:51,247 --> 01:33:17,107
+Burada önünün grafik arayüzlerini göstermek istedim. Yani ana sayfa, mesela ana sayfada ürünler. Herhangi bir ürüne tıkladığımızda ürün bilgileri. Yine sipariş vermek istediğimde sipariş detay ekranları. Alışveriş sepetinin olduğu ekran. Burada admin panelinde işte adminin siparişleri görebildiği ekran. Yine siparişin detayını burada statüsünü güncelleyebilir admin keza.
+
+495
+01:33:19,347 --> 01:33:35,007
+Genel anlamda ekran kısımları bu şekildeydi. Bu ekip yapısı, tabii ki normalde bu projeyi ben tek başıma geliştirdim ama bu projenin daha büyük olduğunu varsayarsak gerekli olan kişiler ve bunların görevi nedir diye bir ekip tablosu olarak görüşürüz.
+
+496
+01:33:35,007 --> 01:33:47,347
+Bu proje yöneticisi olmalı. Bu proje yöneticisi, proje planı yapılması, olası klöjelerle görüşebilmesi görevindedir. Grafik ve tasarım uzmanı, projenin tasarımının yapılmasında görevindedir. Programcı uygulaması.
+
+497
+01:33:47,347 --> 01:33:54,307
+Kulama kodunun yazılması, projenin analiz edilmesini, test ekip de projenin test edilmesinde görevli olacaktır.
+
+498
+01:33:55,636 --> 01:34:04,256
+Proje planının kabul ve kısıtları sistem proje başlangıcından itibaren en fazla 3 ay sonra son kullanıcıya açık hale gelmelidir.
+
+499
+01:34:04,796 --> 01:34:09,536
+Mevcut ekip ile yazılım geliştirme süreci tamamlanacaktır. Sistem güvenliği en üst seviyede olmalıdır.
+
+500
+01:34:09,536 --> 01:34:15,676
+Üyelerin sistemi aktif olarak kullanılacağı varsayılır. Kullanıcıların adları ve şifreleri bulunmalıdır.
+
+501
+01:34:16,536 --> 01:34:23,576
+Kullanıcının kaydı yoksa, ürünü sepete ürün eklemek isterse kayı sayfasına yönlendirilmeli.
+
+502
+01:34:23,636 --> 01:34:41,416
+Bu çoğu yine ticaret sitesinin aynı anda en fazla 10 veya 15 ürün satın alınabilir. Sistemde aynı anda 10 bin kullanıcıya hizmet verilebilir. Ödeme işlemi sadece kredi kartıyla gerçekleştirebilir. Uygulama platformuna bağsız olarak çalışmasını sağlayacak şekilde programlamlıdır.
+
+503
+01:34:42,547 --> 01:34:52,947
+Yazılım geliştirme süreç modeli olarak ben waterfall modelini tercih etmiştim. Bunun da sebebi de anlaşılması ve uygulanması kolay olduğu için ve küçük, biraz daha küçük projeler için daha ideal.
+
+504
+01:34:53,347 --> 01:34:59,287
+Ve müşteri prototip sunma zorunluluğu yok. Bu yüzden waterfall yazılım süreç modelini tercih ettim.
+
+505
+01:34:59,467 --> 01:35:07,467
+Ve gözden geçirme kuralları ise her bir adımda izleme ve kontrol yapılacak. Yani analiz, tasarım, gerçekleştirme, test. Ve bunlar sonuçta raporlanacaktır.
+
+506
+01:35:07,887 --> 01:35:10,507
+Yine proje planımızda olması gerek.
+
+507
+01:35:10,547 --> 01:35:13,487
+İş Kırılım Yapısı, Waterfall Modeline göre.
+
+508
+01:35:14,367 --> 01:35:19,567
+Bu arada bir şeye gireyim. Kabul ve kısıtlar dedin ya [öğrenci].
+
+509
+01:35:19,747 --> 01:35:20,287
+Evet hocam.
+
+510
+01:35:21,647 --> 01:35:28,587
+Genellikle kabuller ayrı, kısıtlar ayrı söylenmeli.
+
+511
+01:35:30,387 --> 01:35:48,768
+Yani olumlu olarak şöyle olduğunu kabul ediyoruz, varsayıyoruz. Diğeri de projede şöyle şöyle kısıtlarımız var, sınırlarımız var. Konu açısından ya da teknik olanaklarımız açısından.
+
+512
+01:35:57,395 --> 01:36:19,955
+Varsayıyoruz. Bir problem çıkmayacağını varsayıyoruz. Kısıtlarda ise ekibimizde beş kişi var ama bir kişinin şu tarihten itibaren izinli olacağı kısıtını biliyoruz gibi. İkisi farklı listelenir.
+
+513
+01:36:20,455 --> 01:36:21,735
+Tamamdır hocam. Teşekkür ederim.
+
+514
+01:36:21,735 --> 01:36:22,795
+Evet.
+
+515
+01:36:24,212 --> 01:36:32,432
+Burada aktivite listesini waterfall modeline göre oluşturdum. Burada iş kralının listesini görmekteyiz.
+
+516
+01:36:32,432 --> 01:36:38,672
+Yani toplam 80 gün olarak, biraz daha büyük bir proje olarak düşündüğüm için 80 gün olarak bunu belirttim.
+
+517
+01:36:38,732 --> 01:36:44,432
+Önce bir gereksinimlerin belirlenmesi olarak, daha sonra analiz ve bu analizin içinde fizibiliteler,
+
+518
+01:36:44,572 --> 01:36:48,192
+bunun da bir adlı olarak zaman, ekonomi ve teknik fizibilite olarak ayırdım.
+
+519
+01:36:48,672 --> 01:36:52,212
+Daha sonra tasarım aşaması. Bu tasarım aşamasında iki ana...
+
+520
+01:36:52,212 --> 01:37:20,192
+Açılık, ön tasarım ve ayrıntılı tasarım olarak belirtildi. Tasarımdan sonra gerçekleştirme. Bu gerçekleştirmede yine iki ana işlemde yapılacak. Veri tabanı modelleme ve arayüz modelleme olarak. Yani backend ve frontend kısmı diyebiliriz. Daha sonra kodlama aşaması gittikten sonra test bölümüne yapıyoruz. Testi de dört farklı test olarak birim, bütünlük, sistem ve kullanıcı test olarak yapılacaktır. Ve en sonunda bakım olarak bu iş kırılması.
+
+521
+01:37:20,212 --> 01:37:29,892
+Daha sonra yine olması gereken bir işe olarak Gantt şamasını da, bu az önce belirttiğim iş kırılım lisesini Gantt şaması olarak da şu şekilde görebilmekteyiz.
+
+522
+01:37:30,952 --> 01:37:37,972
+Her biri alt adım olarak. Bu bittiğinde bu başlayacak şekilde tasarlanmıştır Gantt şaması.
+
+523
+01:37:39,572 --> 01:37:41,772
+Daha sonra projenin bütçesi.
+
+524
+01:37:42,292 --> 01:38:01,872
+Projenin bütçesi olarak bir adet bilgisayar olarak belirtildi, 40 bin lira olarak. Bir sunucu kiralama, bu e-ticaret sistemi sunucusu kiralama. Bir personel olarak, iş gücün ihtiyaç anlamında. Bir de 50 bin lira olarak da yazılımsa ihtiyaçları olarak toplam 135 bin lira olarak bir proje bütçesi belirtilmiştir.
+
+525
+01:38:01,872 --> 01:38:10,292
+Yine olması gereken kısaltı, klas diagramlı olarak bu şekilde belirtildi. Aslında şunu daha detaylı olarak yüz kes diagramlarında da gösterebilirim.
+
+526
+01:38:10,292 --> 01:38:22,452
+Hangi kişinin ne iş yaptığını görmek için. Mesela örneğin kullanıcının kayıt oluşturmaları ad, soyad, e-mail, adrese, telefon gerekliliğini, admin kişinin de bu kayıtı onaylama.
+
+527
+01:38:23,252 --> 01:38:35,012
+görevinde olduğunu burada belirtiyoruz. Daha sonra kullanıcının satın alma olarak, satın almada teslimat adresi ve kredi kartı bilgilerinin girmesi gerektiğini ve ödeme onayının olması gerekiyoruz daha sonra.
+
+528
+01:38:35,892 --> 01:38:44,231
+Yine kullanıcının ürün değerlendirmesi, yöneticinin onayıyla listelendiğini, yani ana sayfaya düştüğünü burada göstermek istiyoruz.
+
+529
+01:38:44,231 --> 01:38:50,012
+Ürün değerlendirmede, özür dilerim bu zaten ürün değerlendirmeydi. Genel durum olarak da şöyle bir şey gösterebiliriz.
+
+530
+01:38:51,252 --> 01:39:07,972
+Proje üye olma, sisteme giriş yapma, ürünleri sepete atma, satın alma ve değerlendirme işlemlerini yapabilir. Admin ise kullanıcı kaydı doğrulama, ürün ekleme, ürün sünme, ürün güncelleme ve bu değerlendirmeleri onaylama.
+
+531
+01:39:08,851 --> 01:39:11,131
+Gibi işlerini yapabilmektedir.
+
+532
+01:39:12,091 --> 01:39:15,532
+Tabii ki de her projemizde bir risk planı olması gerekir.
+
+533
+01:39:16,131 --> 01:39:20,891
+Hangi durumun, hangi riskin projemizde gerçekleştirme olasılığı nedir?
+
+534
+01:39:21,251 --> 01:39:24,711
+Ve projemize olan etkisi bu tabloda belirtilmiştir.
+
+535
+01:39:24,832 --> 01:39:27,551
+Örneğin çalışanların ayrılması %20 olasılıktır.
+
+536
+01:39:28,271 --> 01:39:30,351
+Proje etkisi 4 olarak belirtilmiştir.
+
+537
+01:39:30,471 --> 01:39:35,192
+Buna önlem olarak da proje başında yedek çalışan bulunması belirtilmiştir.
+
+538
+01:39:35,192 --> 01:39:36,851
+Bütçe yetersizliği olarak.
+
+539
+01:39:36,851 --> 01:39:43,912
+Bunun da olasılığı %10 etkisi 3 olarak belirtilmiştir. Önlem olarak da olasılığı yatırım cilalda görüşmeler olarak belirtildi.
+
+540
+01:39:44,532 --> 01:39:51,551
+Sistemin az sayıda kişi tarafından kullanılması bu en büyük, risk olarak en büyük iş olarak belirtildi.
+
+541
+01:39:51,891 --> 01:39:59,431
+Bunun da proje etkisi 4. Bunun da önlem olarak reklam çalışmalarına önlem verilir. Pazarlama için ayrılan bütçe genişletilebilir.
+
+542
+01:40:00,275 --> 01:40:16,775
+Olarak belirtildi ve hosting servisi problemleri. Bunun da olasılığı düşük, %5 etkisi ama yüksektir. Bunun da önlem olarak sistemin yedeklenmesi ve alternatif hosting servislerinin belirlenmesi olarak belirtilmiştir risk tablosunda.
+
+543
+01:40:17,675 --> 01:40:24,496
+Son olarak projenin kapatılması. Proje başlangıcında tahmin edinilenlerle sonuçlar karşılaştırılacaktır.
+
+544
+01:40:28,275 --> 01:40:38,975
+50.000'den tüm veriler sulacaktır ve çalışanların performans arasında raporları oluşturulacaktır. Bu şekilde proje planı kapatılmış oldu hocam.
+
+545
+01:40:39,975 --> 01:40:41,815
+Dinediğiniz için çok teşekkür ederim.
+
+546
+01:40:42,235 --> 01:40:42,996
+Teşekkür ederim.
+
+547
+01:40:50,420 --> 01:41:13,720
+Evet, böylece proje sunumlarına da başlamış olduk. Bunlar dediğim gibi sizin bitirme projeleriniz ya da yaptığınız projeler, çalıştığınız iş yerinde yürüttüğünüz projelerin proje planı ve gereksinim analizi belgesinin hazırlanması şeklinde olacaktı.
+
+548
+01:41:15,119 --> 01:41:30,720
+[öğrenci]'ınki bir ilk örnek olmuş oldu. Bir de bu hafta [öğrenci] anlatacağım demişti değil mi? Evet hocam anlatabilirim. Tamam. Paylaşıyorum ekranımı hemen.
+
+549
+01:41:37,524 --> 01:41:38,724
+Geldi herhalde değil mi?
+
+550
+01:41:38,944 --> 01:41:39,104
+Evet.
+
+551
+01:41:40,724 --> 01:41:47,084
+Tamamdır. Merhaba arkadaşlar. İsmim [öğrenci]. Ben de size Beautify ismini verdiğim projemden biraz bahsedeceğim.
+
+552
+01:41:47,988 --> 01:42:02,747
+Neden bu proje? Çünkü ilgim olan bir alan. Kendimde ilgilendiğim için ve böyle bir eksiklik, açıklık olduğunu düşünüyorum Türkiye piyasasında. Dolayısıyla böyle bir proje geliştirdim.
+
+553
+01:42:03,547 --> 01:42:09,547
+Projemizin amacı aslında şu, kimyasal maddeleri her zaman, her gün etrafımızda görüyoruz.
+
+554
+01:42:10,163 --> 01:42:19,524
+Belki bilinçli olarak, belki de farkında olmadan pek çoğunda kullanıyoruz. Özellikle burada kozmetik ürünlerden, kozmetik ürünlere değineceğim ben.
+
+555
+01:42:20,064 --> 01:42:26,724
+Fakat bunların aslında içeriklerini tam olarak bilmiyoruz. Dolayısıyla aslında cildimize ne sürdüğümüzün de çok farkında değiliz.
+
+556
+01:42:27,384 --> 01:42:31,444
+Dolayısıyla aslında Beautify mobil uygulaması.
+
+557
+01:42:31,891 --> 01:42:45,992
+QR kodunu, bar kodunu okuttuğunuz ürünlerin içeriklerini listeleyebileceğiniz, çeşitli ürünleri kıyaslayabileceğiniz ve kendi kişisel tercihleriniz doğrultusunda aslında kişiselleştirebileceğiniz bir uygulama.
+
+558
+01:42:50,047 --> 01:43:11,047
+Veri setimiz Türkiye Cumhuriyeti Sağlık Bakanlığı'nın aslında ürün takip sistemi. Bu ürün takip sisteminde şu an Türkiye'de gördüğünüz tüm ürünler bulunmak zorunda zaten. Eğer Sağlık Bakanlığı'ndan onay almış bir şekilde yasal bir yolla piyasaya sürüldüyse bu ürün takip sisteminde ürünlerin...
+
+559
+01:43:11,252 --> 01:43:19,392
+Hem içindekiler kısmının aslında bir görüntüsü var. Hem de ürünlerin hem ambalajlarını hem barkodlarını listeleyebiliyorsunuz.
+
+560
+01:43:19,764 --> 01:43:44,264
+Projenin kapsamından biraz bahsedeyim. Dediğim gibi aslında burada bu bilinçsiz kullanımın önüne geçmek ve bir takım daha özel ihtiyaçları olan, pek çok içeriğe alerjisi olan ya da hamile olduğu için ya da farklı özel durumlarından dolayı bazı ürünleri, bazı içerikleri kullanmaması gereken insanların aslında faydalanacağı bir uygulama geliştirmeyi hedefliyoruz.
+
+561
+01:43:47,764 --> 01:44:15,664
+Bir, Önüç yazılım geliştirici, bir veritabanı admini, bir tasarımcı ile birlikte çalışacağız. Öncesinde de aslında bir dermatologdan bir danışmanlık hizmeti alacağız. Çünkü biz içindeki içerikler kısmını listeleyebiliyoruz ürün takip sistemi aracılığıyla. Fakat bunların hangisinin bizim cildimiz için faydalı olduğunu, hangisinin zararlı olduğunu ya da hangi ürün içerikleri kimlerin kullanabileceğini ve kullanamayacağını bilemeyeceğimiz için bir de tabii ki danışmanlık aldığımız bir kısım.
+
+562
+01:44:15,764 --> 01:44:40,764
+olacak. Konküsyöner gereksinimlerimize geçelim. Tabii ki bu senin bitirmede falan yaptığın bir proje mi? Yoksa sadece şu anda geliştirmeyi düşündüğün bir şey mi? Bu sadece şu an yani bu ders kapsamında aslında aklıma gelen bir fikir. Yani bununla ilgili farklı bir çalışmam daha önce olmamıştı. Öyle bir şey de değil hocam. Bitirme projesi falan da değil.
+
+563
+01:44:43,764 --> 01:44:45,764
+değiştireceksen bazı
+
+564
+01:44:47,252 --> 01:44:56,612
+Söyleyeyim, sadece kadın araştırmacıları arasında destek projeleri falan var.
+
+565
+01:44:57,592 --> 01:45:08,252
+Evet, evet hocam. Aslında bence gerçekten çok güzel bir fikir. Benim de şey, yani bilmiyorum, bu proje çok uzun zamandır aklımda. Başka bir dersimde daha aslında bu fikirden faydalanmıştım.
+
+566
+01:45:08,492 --> 01:45:15,252
+Bir türlü geliştirmek çok nasip olmadı tabii, ciddi bir ekip işi. Ama şey, inşallah bir gün yani bunu kafaya koyalım.
+
+567
+01:45:16,467 --> 01:45:34,247
+Faksiyonel gereksinimlerden bahsedecek olursak tabii ki ilk yani en büyük amaçlarımızdan biri bu içerikleri listeleyebilmek, ayrıştırabilmek, sonrasında fayda ve zararları kullanıcılara listeleyebilmek ya da bir takım alerjenleri yine kullanıcılara listeleyebilmek.
+
+568
+01:45:34,667 --> 01:45:44,247
+Sonrasında ürünleri kıyaslayabilmek. Yani atıyorum siz bir güneş kremi arıyorsanız iki üç ürünü birbiriyle kıyaslayabilirsiniz.
+
+569
+01:45:44,467 --> 01:45:52,447
+Özellikleri açısından. Kendinize ait bir profil oluşturabilmelisiniz. Kendi tercihlerinizi de belirleyebilmelisiniz. İşte bu noktada.
+
+570
+01:45:52,948 --> 01:46:15,168
+Aslında alerjiniz olan bazı içerikleri bloklayabilmelisiniz ya da kullanmaktan memnun olduğunuz bir takım içerikleri favorileri ekleyebilmelisiniz. Önerilerde bulunabilme tabii ki bu uygulamanın mutlaka olması gereken özelliklerinden bir tanesi. Sizin ihtiyaçlarınız doğrultusunda size ürün önerisinde bulunabilme.
+
+571
+01:46:20,275 --> 01:46:31,615
+Kesinlikle olması gereken özelliklerden. Bu ürünleri kullanan insanlar aslında aynı bir forum gibi burada birbirleriyle kendi fikirlerini ürünleri kullandıktan sonra paylaşabilmeliler.
+
+572
+01:46:32,115 --> 01:46:37,515
+Ara yüzü de kendi istekleriniz ve ihtiyaçlarınız doğrultusunda kişiselleştirebilmeniz gerekir.
+
+573
+01:46:37,515 --> 01:46:45,996
+Yani sanki bir makyaj çantasıymış gibi ya da sanki bir kendi evinizdeki, banyonuzdaki bir dolabın içeriği gibi.
+
+574
+01:46:46,555 --> 01:46:48,275
+Bunu kendi istek ve ihtiyaç...
+
+575
+01:46:48,275 --> 01:47:09,275
+Başlarınız doğrultusunda kişiselleştirebilmeniz gerekiyor ve favori ürünlerinizi de kaydedebilmelisiniz ki bunları sonrasında tekrar listeleyebilin. Bir de fonksiyonel olmayan bir takım gereksinimler var. Kolay, hızlı bir arayüz olması, oyunlaştırılmış bir arayüz olması da tabii ki bir artı olacaktır. Çünkü böylelikle daha dikkat çekici ve...
+
+576
+01:47:10,100 --> 01:47:20,000
+Daha kullanım açısından daha keyifli bir uygulama olacak. Burada dediğim gibi mesela bir makyaj malzemesi rafı gibi bir görüntü aslında kullanıcı için ilgi çekici olacaktır.
+
+577
+01:47:20,819 --> 01:47:32,359
+Tabii ki kullanıcı ait verilerinin güvenliğinin sağlanması. Çünkü burada kişisel ve medikal veriler olacak. Dolayısıyla bunların şifreli bir şekilde ve ilgili prosedürlere uygun şekilde saklanması gerekiyor.
+
+578
+01:47:33,199 --> 01:47:41,139
+iOS veya Android platformlara uyumluluk da tabii ki çok önemli. Çünkü pek çok farklı platformda bu uygulamayı kullanacak kullanıcılar vardır.
+
+579
+01:47:41,599 --> 01:47:48,819
+Küçük bir slot analizi yaptım. Güçleyenlerimiz tabii ki hızlı aksiyon alan bir kadro ve mobil yazım geliştirmede tecrübeli.
+
+580
+01:47:48,819 --> 01:47:56,819
+Fakat zayıf yanlarda bu ürün takip sisteminde paylaşılmış olan içerikler OCR teknolojisiyle
+
+581
+01:47:58,260 --> 01:48:19,319
+Ayrıştırılacağı için bu konuda biraz tecrübesizlik var maalesef ekipte. Fırsatlara baktığımızda Türkiye piyasasında bir rakibi yok. Amerikan piyasasında bir rakibi var fakat orada da Türkiye'de satılan ürünler yok. Dolayısıyla benzer bir uygulama var ama bize rakip olduğunu söylemek çok doğru olmaz.
+
+582
+01:48:26,260 --> 01:48:28,319
+Trend haline gelmesi de bizim için bir fırsat.
+
+583
+01:48:28,880 --> 01:48:30,720
+Tehditlerde tabii ki kur dengesiz değil.
+
+584
+01:48:30,720 --> 01:48:37,739
+Çünkü bu bizim hem bir takım teknolojik maliyetlerimizi artıracak, hem maaş gibi bir takım maliyetlerimizi artıracak.
+
+585
+01:48:38,079 --> 01:48:40,020
+Dolayısıyla bu da tehditlerimizden bir tanesi.
+
+586
+01:48:40,500 --> 01:48:47,359
+Metodoloji olarak da çevik bir yazılım geliştirme metodolojisi benimsemek faydalı olacaktır diye düşünüyorum.
+
+587
+01:48:47,960 --> 01:48:49,720
+Extreme programming olabilir mesela.
+
+588
+01:48:51,347 --> 01:49:07,807
+İki haftalık kısa süreli sprintler dahilinde bu daha özgün, daha küçük ekipler yani ön uç geliştirme ayrı bir şekilde, arka uç geliştirme ayrı bir şekilde olacak şekilde çalışıp bu iki haftalık sprintlerin sonunda da değerlendirme toplantıları yapılacak.
+
+589
+01:49:08,927 --> 01:49:19,347
+Bu gerekli testleri de her sprint sonunda yapmayı aslında planlıyoruz. Dolayısıyla devamlı bir geliştirme ortamı sağlanacak. Hatalarda erken fark edildiği.
+
+590
+01:49:19,347 --> 01:49:39,807
+Bu hataların felaket edilmesi için gereken maliyet de düşecek. Test odaklı bir yazılım geliştirme sistemi olduğundan da aslında dediğim gibi daha az hata oluşmasını yani projenin production ortama, canlı ortama alınmadan önce bütün hataların neredeyse elimle edilmesini öngörüyoruz.
+
+591
+01:49:47,347 --> 01:49:59,068
+Yol geliştirici, tasarım uzmanı, veritabanı admini, pazarlama uzmanı ve iş analistinden oluşuyor. Burada proje yöneticisi aslında proje planını yapacak. Sponsor işbirliği reklam görüşmelerini tamamlayacak.
+
+592
+01:50:00,000 --> 01:50:03,800
+Bu süresince de aslında toplantıları takip edecek ve planlayacak.
+
+593
+01:50:04,340 --> 01:50:11,159
+Mobil yazılım geliştiriciler uygulamanın yayınlanacağı mobil platformların gereksinlerini belirleyip mobil uygulamayı geliştirecek.
+
+594
+01:50:11,779 --> 01:50:16,380
+Arka uçta kullanıcı talepleri ve verileri işlemek için arka plan oluşturulacak.
+
+595
+01:50:16,500 --> 01:50:18,779
+API'ler ve entegrasyonlar tasarlanacak.
+
+596
+01:50:19,600 --> 01:50:22,500
+Hata ayıklama ve test süreçleri gerçekleştirilecek.
+
+597
+01:50:23,020 --> 01:50:25,460
+Örneşte de kullanıcı arayüzü geliştirilecek.
+
+598
+01:50:28,000 --> 01:50:34,079
+Ayrıca çalışacak şekilde optimize edilmesi ve yine kullanıcı deneyiminin geliştirilmesi sağlanacak.
+
+599
+01:50:34,779 --> 01:50:42,619
+Tasarım noktasında kullanıcının aslında gördüğü ve interaktif bir şekilde muhatap olduğu ekran ve arayüzler tasarlanacak.
+
+600
+01:50:43,220 --> 01:50:48,340
+Bir prototip oluşturulacak tabii ki ve kullanıcı deneyiminin geliştirilmesi sağlanacak.
+
+601
+01:50:48,340 --> 01:50:55,100
+Veri tabanı adminimizde veri tabanı tablolarını ve ilişkilerini tasarlayacak, veri tabanını kuracak.
+
+602
+01:50:56,000 --> 01:51:01,920
+İki veri tabanına performansını optimize edecek. Belli bir aşamadan sonra çünkü ciddi bir yük binecektir veri tabanına da.
+
+603
+01:51:02,560 --> 01:51:09,279
+Pazarlama uzmanı da rekabet ve rakip ürün analizini yapacak. Pazarlaması testini oluşturacak ve kampanyaları yönetecek.
+
+604
+01:51:09,279 --> 01:51:16,600
+İş analisi de gereksinim süreç analizini yapacak ve sistem analizini yapacak. Bu şekilde bir organizasyon şeması var.
+
+605
+01:51:17,140 --> 01:51:20,619
+Proje planına geçecek olursak da şöyle biraz büyüteyim.
+
+606
+01:51:24,307 --> 01:51:45,728
+Başlangıç ve analiz aslında 10 anı, tahtalık en önemli aşamalardan bir tanesi. Çünkü eğer gereksinim analizlerini, rakip analizlerini verimli bir şekilde tamamlayabilirsek aslında geliştirme aşaması, test aşamaları daha kolay geçecektir. Bu kısım bence gerçekten bir projede en önemli noktalardan bir tanesi.
+
+607
+01:51:45,728 --> 01:51:51,828
+Bu başlangıç ve analiz kısmı tabii ki gereksinim analizini, kapsam verilenmesi, rakip ürün analizini kapsıyor.
+
+608
+01:51:52,307 --> 01:52:00,048
+Tasarım noktasında da kullanıcı arayüzü, veritabanının tasarlanması ve mobil arayüz geliştirmesi var. Bu da 8 haftalık bir süreyi kapsayacak.
+
+609
+01:52:00,648 --> 01:52:08,088
+Geliştirme noktası da 12 hafta olarak planlandı. Burada ön ve arka oyu tasar geliştirilecek. Veritabanı entegrasyonu sağlanacak.
+
+610
+01:52:08,088 --> 01:52:15,088
+Test noktasında da birim ve entegrasyon testleri yapılacak. Sonrasında da hata düzeltme çalışması yapılacak tabii ki.
+
+611
+01:52:15,636 --> 01:52:20,016
+Lansmanda da projenin canlıya alınması ve geri bildirim süreçleri.
+
+612
+01:52:20,659 --> 01:52:48,659
+İş kralım listemizde aslında bu şekilde. Başlangıç ve analiz kısmında önce gerekli sınav analizini tamamlayacağız. Sonra kapsamı belirleyeceğiz. Ve bir proje başlangıç toplantısı yapacağız. Tasarım noktasında da web kullanıcı arayüzünü tasarlayacağız. Veri tabanını. Sonra da mobil arayüzü tasarlayacağız. Geliştirmede de ön ve arka uç geliştirme devam edecek. Veri tabanı entegrasyon sağlanacak. Test noktasında birim ve entegrasyon testi. Sonra da hata düzeltmeler yapılacak. Lansmanda da zaten...
+
+613
+01:52:48,659 --> 01:52:53,340
+Projenin canlıya alınması ve kullanıcılardan geri bildirim alınması sağlanacak.
+
+614
+01:52:53,920 --> 01:53:02,380
+Pazarlama noktasında pazarlama stratejileri uygulanacak ve tabii ki yeni işbirlikleri ve yeni kampanya süreçleri takip edilecek.
+
+615
+01:53:02,380 --> 01:53:08,199
+En sonunda da aslında bir proje tamamlandıktan sonra bir bakım onarım fazla olması gerekiyor.
+
+616
+01:53:08,840 --> 01:53:14,380
+Çünkü belli bir kullanımdan sonra bir bakım ihtiyacı ya da yeni versiyonların çıkarılması gerekecektir.
+
+617
+01:53:15,520 --> 01:53:16,380
+Burada kullanıcı taleplerinin...
+
+618
+01:53:16,659 --> 01:53:21,539
+Yeni özelliklerin eklenmesi değerlendirilecek proje ekibi tarafından.
+
+619
+01:53:22,119 --> 01:53:24,340
+Bu iki performans iyileştirmeleri sağlanacak.
+
+620
+01:53:25,716 --> 01:53:49,196
+Burada risklerimizden biraz bahsedelim. Veri sızıntısı gerçekleşmesi riski var tabii ki. Kullanıcılara ait kişisel ve medikal veriler var çünkü uygulamamızda. Bunun etkisi tabii ki yüksek olacaktır şirket için. Nasıl peki toparlayabiliriz? İşte yedeklerden geri döndürebiliriz verileri ve tabii ki daha sağlam veri güvenliği ve şifreleme politikaları izlememiz gerekir.
+
+621
+01:53:49,716 --> 01:54:17,056
+Kullanıcıların yanlış bilgilendirilmesi de bizim için çok yüksek bir risk olacaktır. Burada bir takım yani tıbbın tabii ki gelişmesiyle bazı doğru bilinenler aslında sonradan yanlış olabilir. Bizim de bu noktada çok hızlı bir şekilde aksiyon almamız gerekir. Dolayısıyla aslında referans kaynakları ve referans olarak kullandığımız kişileri titizlikle seçmemiz lazım ve tekrar tekrar sürekli değerlendirmemiz lazım.
+
+622
+01:54:17,716 --> 01:54:22,436
+Ve güncellemleri takip edebilmek adına da geri bildirime önem vermemiz gerekiyor.
+
+623
+01:54:23,036 --> 01:54:27,456
+Pazarlama sürecinde istenen hedef kitleye ulaşılamaması da bir risk. Bu da orta seviyede bir risk.
+
+624
+01:54:27,855 --> 01:54:35,916
+Hedef grubumuz aslında 18-60 yaş grubu kadınlar. Bu kitleye yeterince hitap edemeyip yeterli kullanıcı sayısına ulaşamayabiliriz.
+
+625
+01:54:36,416 --> 01:54:44,775
+Burada da aslında pazarlama sitecilerini tekrar gözden geçirerek sosyal medya, dijital reklamcılık gibi marka işbirliklerine ağırlık vermemiz lazım.
+
+626
+01:54:45,844 --> 01:55:02,064
+Ürün özelliklerinin kullanıcı beklentilerinin karşılamaması da orta düzeyde bir risk. Burada da kullanıcılara daha fazla titredilme ve kişiselleştirme imkanı sunmamız lazım. Bir chatbot aracılığıyla örneğin hem biraz oyunlaştırmak da adına kullanıcılardan geri bildirim alabiliriz.
+
+627
+01:55:02,304 --> 01:55:13,043
+Teknik sorunlar yaşanabilir. Bu da düşük maliyetli bir risk bizim için. Uygulamada donma olabilir, kesilmeler olabilir, bir takım teknik problemler yaşanabilir.
+
+628
+01:55:13,844 --> 01:55:23,543
+Aslında kritik bir hata ortaya çıkması durumunda nasıl toparlayacağımızla ilgili bir felaket kurtarma senaryomuzun her zaman hazır ve güncel olması lazım.
+
+629
+01:55:24,503 --> 01:55:33,384
+Sürekli ve düzenli olarak aslında testler gerçekleştirerek de hata oluşma ihtimalini, canlı ortamda hata oluşma ihtimalini en aza indirmeyi hedefliyoruz.
+
+630
+01:55:34,003 --> 01:55:52,403
+Bir diğer düşük riskimiz de proje maliyetinin %10 aşılması. Burada bahsettiğimiz gibi kurun dengesizliğinden ya da bir takım sebeplerden dolayı, öngöremeyen sebeplerden dolayı donanım maliyetleri artabilir. Burada da çeşitli sponsorluk, marka işbirliği gibi.
+
+631
+01:55:53,811 --> 01:56:06,011
+Anlaşmalarla proje gelirini artırmamız lazım. Ya da bu konuda da başarısız olursak premium kullanıcılarla ait olan iyilik ücretlerine %5 artırma yöntemine gidebiliriz.
+
+632
+01:56:06,319 --> 01:56:34,299
+Burada ufak çaplı bir bütçe hesaplaması var. Tabii ki bilgisayara ihtiyaç duyuluyor. Sunucu maliyetleri, bir takım yazılım maliyetleri var. Ama en büyük giderimiz tabii görüldüğü gibi burada 8 kişi çalıştığı için maaşlar. Bir de bir defaya mahsut olmak üzere bir dermatologdan aldığımız bir danışmanlık ücreti olacak. Tabii ki projenin ilerleyen fazlarında bunun da tekrarlanması gerekebilir. Ama en azından başlangıçta bu şekilde bir bütçe çıkıyor.
+
+633
+01:56:34,319 --> 01:56:39,299
+karşımıza. Sürdürülebilir olması için de projenin tabii ki aslında
+
+634
+01:56:39,956 --> 01:57:03,695
+Nasıl bu hayata devam, yani bu projenin nasıl hayata devam edeceğini bir değerlendirmemiz lazım. Birinci gelir kaynağımız tabii ki premium üyeliklerden alacağımız üyelik ücretleri. Burada kullanıcılar ne kadar kapsamlı bir filtrelemeye sahip olmak istiyorsa ya da ürünü ne kadar kişiselleştirmek istiyorsa tabii ki bu fiyat ona göre artacak. İkinci yöntem de marka işbirlikleri.
+
+635
+01:57:05,363 --> 01:57:18,163
+Çok çeşitli kozmetik ürünlere dair firmalara dair ürünler olacağı için burada bu firmalarla reklam kampanyaları yönetilerek gelir arttırması hedeflenebilir.
+
+636
+01:57:18,923 --> 01:57:26,443
+Üçüncü yöntemse reklam yerleştirme. Bu tabii ki aslında kullanıcı deneyimini biraz azalttığı için çok tercih edilecek bir yöntem değil.
+
+637
+01:57:32,532 --> 01:57:41,912
+Sosyal medyada paylaşılan reklamları uygulamanın içerisinde de kullanıcılara gösterebiliriz.
+
+638
+01:57:42,311 --> 01:57:51,572
+Dördüncü yöntem de uygulama aracılığıyla elde edilen medikal ya da kullanıcı tercihlerini kapsayan kişisel verilerin anonimleştirilerek araştırmalarda kullanılması.
+
+639
+01:57:54,131 --> 01:58:06,931
+Legal bir yöntem. Bu verileri anonimleştirdiğiniz sürece 3. parti diğer firmalarla paylaşabiliyorsunuz. Tabii ki burada da dikkatli olunması gerek. Kolay bir süreç değil çünkü.
+
+640
+01:58:07,444 --> 01:58:13,963
+Son yöntem de aslında alanında uzman dermatologlar olabilir, makyaj sanatçıları olabilir, cilt bakım uzmanları olabilir.
+
+641
+01:58:14,844 --> 01:58:34,163
+Bu insanlarla aslında çevrim içi veya yüz yüze etkinlikler, seminerler, toplantılar düzenleyerek bu etkinlikleri duyurup sonra bu uygulamayı kullanan katılımcılara da belli cüzi ücretler karşılığında bu etkinlikleri düzenleyerek buradan da bir gelir artırımı yöntemine gidilebilir.
+
+642
+01:58:36,372 --> 01:58:40,192
+Benim anlatacaklarım bu kadardı. Sorularınız varsa alabilirim.
+
+643
+01:58:40,892 --> 01:58:43,052
+Evet, teşekkürler [öğrenci].
+
+644
+01:58:43,512 --> 01:58:44,312
+Ben teşekkür ederim.
+
+645
+01:58:44,452 --> 01:58:45,052
+Merhaba hocam.
+
+646
+01:58:47,132 --> 01:58:48,652
+Merhaba, sesim geliyor muyum?
+
+647
+01:58:49,372 --> 01:58:50,112
+Geliyor.
+
+648
+01:58:52,692 --> 01:59:04,131
+Bizim de uygun haberimiz vardı ya bu bitime proje, projenizle birlikte böyle rapor düzenleyeceksiniz demiştiniz.
+
+649
+01:59:04,692 --> 01:59:08,731
+Ama bizim sorunuz böyle azı olmadı. Sadece raporun desteği bulamayacağım.
+
+650
+01:59:11,231 --> 01:59:13,532
+Yani konu seçeceklerimi.
+
+651
+01:59:19,296 --> 01:59:20,695
+Anlattık.
+
+652
+01:59:21,036 --> 01:59:23,515
+Hayır, proje konumuzu.
+
+653
+01:59:23,515 --> 01:59:25,515
+Proje konumuzu.
+
+654
+01:59:33,235 --> 01:59:37,456
+İsterseniz yazarak sorun sorumuzu.
+
+655
+01:59:43,667 --> 01:59:45,427
+Sorunuzu yazarak sorun.
+
+656
+01:59:45,427 --> 01:59:48,787
+Hocam,
+
+657
+02:00:05,363 --> 02:00:14,283
+Evet, bu hafta başka projesini anlatacak olan var mıydı?
+
+658
+02:00:25,811 --> 02:00:34,391
+Hocam ben bir soru sorabilir miyim? Bu proje tanım dökümanımızı sanırım sisteme mi yükleyecektik? Siz az önce bahsettiniz de ben o sırada kaçırdım.
+
+659
+02:00:34,412 --> 02:00:43,532
+Proje tanım dökümanınızı şimdi önümüzdeki hafta sunumunuzun son şeyi olacağı için.
+
+660
+02:00:43,988 --> 02:00:52,988
+1 Haziran'a kadar şeyde de açmadım henüz. Onu da Gmail mailime atabilirsiniz.
+
+661
+02:00:55,468 --> 02:01:00,668
+Zaten hani sizler dokümandan anlattınız. Bu kapsam yeterli benim için.
+
+662
+02:01:03,028 --> 02:01:03,748
+Tamamdır.
+
+663
+02:01:04,068 --> 02:01:06,428
+Tamam. Teşekkürler.
+
+664
+02:01:08,115 --> 02:01:21,515
+Bu, [öğrenci] bir şey soracağım. Bu projeyi şeyde mi, kodunu oluşturmak için nesney yönelik analiz dersinde mi kullanmıştın?
+
+665
+02:01:21,515 --> 02:01:28,556
+Yok hocam, bunun kodu oluşturulmadı da, yanlış hatırlamıyorsam şey dersi.
+
+666
+02:01:35,667 --> 02:01:38,827
+Yazılım mühendisliği değil, o lisans dersi.
+
+667
+02:01:38,887 --> 02:01:47,087
+Yok yok, yüksek lisansta yine. Herhalde evet, etik ve araştırma yöntemleri gibi bir dersimiz var mı hocam? Orada olmuş olsa gerek.
+
+668
+02:01:47,487 --> 02:01:48,447
+Tamam, tamam.
+
+669
+02:01:48,787 --> 02:01:50,947
+Yani bunun koduna dair bir çalışma yapılmadı.
+
+670
+02:01:51,447 --> 02:01:52,547
+Daha başlayamadım.
+
+671
+02:01:52,887 --> 02:01:56,768
+Evet, çok derinlemesine hazırlanmış bir maliyet raporu bile var hocam.
+
+672
+02:01:57,608 --> 02:02:00,447
+Aslında bu şey olabilir yani.
+
+673
+02:02:02,644 --> 02:02:25,304
+Tabii hani o tür şeyler bir bitirme projesi ise fikir olarak yani Sanayi Bakanlığı, TÜBİTAN, başlangıç şeyi falan hani bu tür şeyler ilginç geliyor. Sağlık açısından da endüstriyi etkileyecek. Hani onlara böyle bir proje teklifini de hazırladığın için.
+
+674
+02:02:28,212 --> 02:02:32,592
+Startup projelerde veya şeylerde destek veriyor.
+
+675
+02:02:33,652 --> 02:02:41,192
+Ben de her sene niyetleniyorum ama hiç olmuyor. İnşallah ama şey sizin dediğiniz gibi ona biraz önem göstereceğim yani.
+
+676
+02:02:41,932 --> 02:02:44,392
+Tamam. Oldu. Teşekkürler.
+
+677
+02:02:44,452 --> 02:02:45,332
+Ben teşekkür ederim.
+
+678
+02:02:46,932 --> 02:02:47,652
+Şimdi.
+
+679
+02:02:54,100 --> 02:03:10,579
+[öğrenci], sizin teklifinizi geç yaptınız, belli bir düşük puandan başlayarak mı anlatın demiştim. Bir şey oldu galiba.
+
+680
+02:03:18,515 --> 02:03:21,956
+Konusu iletmiştik size ama ben mi yanlış hatırlıyorum?
+
+681
+02:03:24,855 --> 02:03:27,795
+Teklif mailinizi bana ulaştırır mısınız?
+
+682
+02:03:28,335 --> 02:03:29,576
+Tabii, atayım hemen hocam.
+
+683
+02:03:37,043 --> 02:03:37,963
+Hocam merhaba.
+
+684
+02:03:41,779 --> 02:03:54,939
+Hocam, benim de projem vardı proje için size mail atmıştım ama onay maili dönmemiştiniz bana. Makale için dönmüştünüz, yer için dönmemiştiniz. Ama ben projeyi hazırlayıp size göndermiştim.
+
+685
+02:03:55,659 --> 02:04:03,180
+Proje için ben onay vermedim çünkü konu, herhangi bir konu sizin belirleyeceğiniz bir konu olabilir dedim.
+
+686
+02:04:04,100 --> 02:04:07,340
+Tamam, ben projeyi hazırlayıp size makale vermeyeceğim.
+
+687
+02:04:08,243 --> 02:04:17,463
+Yok hocam, projeyi hazırladım, şeyini hazırladım, dokümanını ama sunmak için hazır değilim. Yani haftaya seçtiğimi uygunsa haftaya sunabilirim.
+
+688
+02:04:17,583 --> 02:04:21,243
+Tamam, haftaya, bunlar daha kısa sürdüğü için haftaya dinleyebilirim.
+
+689
+02:04:22,443 --> 02:04:23,684
+Tamam hocam, teşekkür ederim.
+
+690
+02:04:34,804 --> 02:04:36,444
+1 Haziran.
+
+691
+02:04:39,024 --> 02:04:45,703
+Ben hepsini beraber size göndermiştim hocam. Makaleyi, sunumu ve bu projeyi de göndermiştim. Üçünü beraber.
+
+692
+02:04:46,144 --> 02:04:49,323
+Tamam. O testin mailine bakarım.
+
+693
+02:04:50,144 --> 02:04:51,384
+Tamamdır hocam. Teşekkürler.
+
+694
+02:04:56,756 --> 02:05:02,176
+Evet, [öğrenci] sizi de dinleyelim o zaman. Ben sonra bakarım gönderdiğiniz şeye.
+
+695
+02:05:07,444 --> 02:05:16,564
+Tamam hocam, önce ben başlıyorum. Üç tane makalemiz vardı bizim. Ben iki tanesinin analizini yapacağım. Bir tanesinin de [öğrenci] Bey analizini yapacak.
+
+696
+02:05:19,564 --> 02:05:21,283
+Hemen ekran paylaşıyorum.
+
+697
+02:05:35,252 --> 02:05:36,652
+Ekranım geliyor değil mi hocam?
+
+698
+02:05:37,032 --> 02:05:37,311
+Evet.
+
+699
+02:05:38,311 --> 02:05:46,252
+Tamam. Şimdi bizim üç projemiz var. Bir tanesi genel olarak yazılım proje yönetiminde makine öğrenimi tekniklerinin...
+
+700
+02:05:47,252 --> 02:06:04,572
+kullanımı üzerine genel bir araştırma yapmış. Mevcut tüm makaleleri dokümente etmiş bir tablo üzerinde karşılaştırmasını yapmış. Diğer makalemiz makine öğrenimi teknikleri kullanarak yazılım proje yönetiminde risk analizi yapmış.
+
+701
+02:06:12,404 --> 02:06:16,344
+Karşılaşan sorunları makine öğrenimi teknikleriyle yine modellemiş.
+
+702
+02:06:18,564 --> 02:06:22,664
+Şimdi üçünde de belirli sorular var.
+
+703
+02:06:22,664 --> 02:06:35,744
+İlk makalemizde proje yönetimi planlama değerlendirmesinin üzerine mevcut araştırmalar ve çalışmalar nelerdir ve burada kullanılan teknikler ne derece etkili ve verimli bir şekilde kullanılabilir.
+
+704
+02:06:36,467 --> 02:06:58,267
+Bunlar üzerine çalışılmış. Makale genel olarak 70-80 tane çalışmanı böyle modellemiş, kullanılan yöntemler, bazılarında kullanılan yöntemler belirtilmemiş ama üzerinde yürütülen çalışmalar ve bu makalelerin en son katkıları dokümante edilmiş.
+
+705
+02:06:59,796 --> 02:07:05,976
+Bunları detaylı olarak anlatayım mı yoksa sadece buradan yapılan çıkarımlardan bahsedeyim?
+
+706
+02:07:10,260 --> 02:07:10,859
+Hocam?
+
+707
+02:07:21,555 --> 02:07:23,036
+Hocam beni duyabiliyor musunuz?
+
+708
+02:07:28,500 --> 02:07:29,119
+Açık.
+
+709
+02:07:48,500 --> 02:07:51,320
+Hocam beni duyabiliyor musunuz? Sesim geliyor mu?
+
+710
+02:07:52,200 --> 02:07:53,120
+Duyuyorum şimdi.
+
+711
+02:07:53,560 --> 02:07:55,020
+Tamam, teşekkür ederim.
+
+712
+02:07:55,820 --> 02:08:02,120
+Dedim ki tüm karşılaştırmaları tablo üzerinde açıklayayım mı yoksa buradan yapılan çıkarımları mı anlatayım?
+
+713
+02:08:08,840 --> 02:08:13,140
+Anlatabilirsiniz şeyi. Yani özet olarak bir bahsedin.
+
+714
+02:08:14,280 --> 02:08:14,620
+Tamam.
+
+715
+02:08:15,923 --> 02:08:21,923
+Şimdi yazılım projesi değerlendirmesinde makine öğrenimi kullanımının faydalarında...
+
+716
+02:08:22,163 --> 02:08:41,583
+Tüm bu 60-70 tane incelenen makalelerden şu sonuçlar çıkartılıyor. Risk yönetiminde makine öğrenimi kullanımının faydalarından bahsediliyor. Risk değerlendirmesi ve risk kontrolünün daha yönetilebilir ve daha tahmin edilebilir bir hale geldiğini.
+
+717
+02:08:42,923 --> 02:08:49,184
+Tahmin maliyeti değerlendirme modeliyle ilgili faydalardan bahsediliyor.
+
+718
+02:08:50,163 --> 02:08:54,844
+Kalite güvencesinin daha yüksek olduğundan bahsediliyor.
+
+719
+02:08:56,463 --> 02:09:15,663
+Global olarak farklı lokasyonlarda, farklı platformlar üzerinde yazılım projeleri gerçekleştirilirken, kişiler arasındaki o daha koordinasyonun daha yönetilebilir, daha hızlı ve daha sağlıklı ilerlediğinden bahsediliyor.
+
+720
+02:09:17,235 --> 02:09:23,496
+Burada birkaç isim vermek gerekirse şöyle anlatmak istiyorum.
+
+721
+02:09:32,756 --> 02:09:55,896
+Proje başarısı ve başarısızlığının tanımı bu literatürde çokça bahsedilmiş. Burada Hüks ve diğerleri projenin performans ve başarısızlık değerlendirmesinin performans faktörleri arasında ayrım yaparken projeler için ilerleme faktörleri projelerde performansa katkıda bulunan girdiler olarak kabul edilmiştir.
+
+722
+02:10:00,000 --> 02:10:17,760
+Anlaşmaya varılan yani hemfikir olan bir zaman çizelgesi olan, istenen sonuçların net olarak belirlendiği, sınırlarının çizildiği, seçilen kaynaklarının da karakterize edilebilen bir proje olmasını savunmuştur.
+
+723
+02:10:20,719 --> 02:10:23,579
+Alaat Vani yanlış okumadım inşallah.
+
+724
+02:10:24,692 --> 02:10:47,511
+Bu kişi proje sonucunun kalitesi gerekli özellik ve işlevlerden daha az veya daha iyi. Proje sonucunun kalitesini bağladığı belirli parametreler var yine. O da aynı şekilde sınırları net çizilmiş bir proje paydaşları iyi.
+
+725
+02:10:47,988 --> 02:11:10,007
+İyi belirlenmiş, proje ihtiyaçları net olarak ortaya konulmuş, proje takvimi net olarak belirlenmiş, riskleri ve yedek planlarının net olarak ortaya konulduğu bir proje planının, yazılım proje planının daha başarılı olacağını savunmuştur.
+
+726
+02:11:14,644 --> 02:11:33,644
+Yaptıkları anket üzerinden verileri oluşturmuş ve modellemeleri yapmışlardır. Bir kısmı ise direkt deneysel olarak var olan araştırmalardaki parametreleri deneysel olarak arttırmış, azaltmış, makine öğrenimi eğitimine sokmuş ve orada elde ettiği...
+
+727
+02:11:34,260 --> 02:11:42,560
+Eccuracy değerlerini, ROG, F1 skor değerlerini arttırıp azaltarak deneysel olarak çalışmalarını yürütmüşlerdir.
+
+728
+02:11:50,355 --> 02:12:15,435
+Bir diğer makalemiz şu iki soruya cevap aramaktadır. Hangi yazılım risk faktörleri Global Software Development alanı için gereklidir ve risk tahminini önemli ölçüde ötküler bu soruya cevap aramıştır. Bunun için de en iyi makine öğrenimi tekniklerini araştırmıştır.
+
+729
+02:12:21,908 --> 02:12:36,548
+Çalışmanın amacı bu faktörler arasındaki ilişkileri bulmak için deneysel veri analizi kullanarak bir yazılım projesinin genel başarısızlığını veya başarısızlığını etkileyen en önemli yazılım geliştirme faktörlerini belirlemek.
+
+730
+02:12:37,268 --> 02:12:42,688
+Lojistik regresyon, karar ağacı, random forest, destek vektör makinesi.
+
+731
+02:12:43,123 --> 02:12:53,703
+KNYK'ın komşuluk ve Naiv Bayez gibi makine öğrenimi, sınıflandırma tekniklerini, kullanan risk tahmin modellerini geliştirmek ve karşılaştırmaktır.
+
+732
+02:12:55,028 --> 02:13:19,028
+Bu çalışmanın bulguları şu şekildedir. Global Software Development'da yazılım projesini etkileyen en önemli 18 faktör listelenmiş ve deneyler, lojistik regresyon ve random forest modellerinin sırasıyla en yüksek, %89'du birisi yanlış hatırlamıyorsam, diğeri %85, accuracy değerleri aldığı sonucuna varmışlardır.
+
+733
+02:13:22,163 --> 02:13:27,163
+Öncelikle bu makalede önceki...
+
+734
+02:13:28,115 --> 02:13:53,516
+Yine makalelerden 66 sanıyorum makale üzerinde çalışmalar yapılmış. Burada 6 tane önemli parametre bulunmuştur. Yine burada da proje paydaşlarını belirlemek ve onlardan fikir almak, ihtiyaçları belirlemek, proje sınırlarını belirlemek, gereksinimler için standart şablonlar hazırlamak.
+
+735
+02:13:54,963 --> 02:14:07,963
+Gereksinim, listelediğimiz gereksinim standartlarının karşılanıp karşılanmadığını kontrol etmek ve her ihtiyacı benzersiz bir şekilde tanımlamanın bu makalelerden elde edilen sonuçlardır.
+
+736
+02:14:08,043 --> 02:14:18,503
+Bir de bunu yaptığı çalışmalarla makine öğrenimi modeli geliştirip ve sonuçlarla bu altın maddeyi karşılayıp karşılamadığını tekrar test ediyorlar.
+
+737
+02:14:20,564 --> 02:14:28,083
+Bu makalede 56 uzman görev almıştır. Ankete dayalı bir çalışma yapılmış.
+
+738
+02:14:30,884 --> 02:14:42,564
+Bu şekilde gördüğünüz Atropos modeli olarak adlandırılıyor. Atropos modelini ben ilk defa burada gördüm. Bu da aynı şekilde veri toplama, projenin özelliklerini...
+
+739
+02:14:42,899 --> 02:14:49,380
+Netleştirme, projenin tarihsel gelişimi, geçmişi varsa bunları saklama.
+
+740
+02:14:50,387 --> 02:15:12,847
+Potansiyel risklere ilişkin tavsiyeler risk yönetimi ve izleme şeklinde bir tablo oluşturulmuş. Bir finans şirketinin 153 yazılım projesi temel alınarak toplanmıştır bu veriler. Modelin değerlendirme metrikleri %73'lük bir kabul oranı ve %83'lük bir doğruluk oranı göstermiş ve bu sonuçlar 18 uzman tarafından da değerlendirilmiştir.
+
+741
+02:15:21,716 --> 02:15:28,395
+Bu tabloda ise bir yazılım projesinde bir risk tahmini yapılmıştır.
+
+742
+02:15:33,524 --> 02:15:45,224
+Fazlar şu şekildedir. Literatür taraması, veri kümesi seçimi, veri kümesinde ön işleme yapılma, modelleme, deneysel olarak değerlendirme ve risk tahmin sonuçları ele alınmıştır.
+
+743
+02:15:48,824 --> 02:15:58,384
+Burada üç ana adım izlenmiştir. Birleştirme adımı, filtreleme adımı, kategorizasyon adımı yapılmıştır.
+
+744
+02:16:07,252 --> 02:16:31,512
+Veri toplama prosedürü ve modeli oluşturmak için kullanılan veri setinin tanımlayıcı analizi açıklanmaktadır. Veri seti bir anket çalışması ve çeşitli küresel bölgelerden yazılım şirketleri ve uzmanlarla yapılan görüşmeler yoluyla toplanmıştır. Ana hedef, dış kaynak kullanımı konusunda kapsamlı deneyime sahip olan Global Software Development yöntemini hali hazırda kullanan kuruluşlara odaklanılmıştır.
+
+745
+02:16:32,084 --> 02:16:36,944
+Veri seti 140 yazılım projesinden elde edilen bilgilerden oluşmuştur.
+
+746
+02:16:40,819 --> 02:17:08,819
+18 ana faktör burada toplanmıştır. Projenin kimliği, bölgesi, iş, yapılan iş, deneyim şirketin türü, gereksinimi, gereksinim netliği, proje kapsamı, gereksinimde olabilecek değişiklikler, proje planlaması, proje boyutu, proje yönetimi, iletişim, maliyet, taahhüt, modern teknolojiler, roller ve sorumluluklar, vasıflı personeller, organizasyonel istikrar, dil ve...
+
+747
+02:17:08,819 --> 02:17:27,079
+Kültür, zaman farkı, ilerleme, ekip boyutu, metodoloji ve proje durumu. Bu 1800 parametre ile bir, bu az önce bahsettiğim makine öğrenimi yöntemleriyle bir model oluşturulmuş ve eğitime tabi tutulmuştur.
+
+748
+02:17:29,876 --> 02:17:42,536
+Parametreler arasında bir ilişki kurulmuş, bir korelasyon oluşturulmuş ve buna göre en yüksek doğruluk hangi modelde ve hangi yöntemde elde edilmiştir buna çalışılmıştır.
+
+749
+02:17:54,708 --> 02:18:01,988
+Burada gereksinim faktörleri, yani ihtiyaç faktörleri, belirsizlik, değişiklik, kapsamı…
+
+750
+02:18:01,988 --> 02:18:03,908
+Risk faktörleri için değil mi?
+
+751
+02:18:04,308 --> 02:18:12,628
+Evet, risk faktörleri için bu parametreler belirlenmiş ve bir tabloya dökülmüş.
+
+752
+02:18:25,811 --> 02:18:30,211
+Burada kullanılan yöntemlerden ve çıkan sonuçlardan kısaca bahsetmek istiyorum.
+
+753
+02:18:46,548 --> 02:18:47,948
+Bağlantı mı kesildi?
+
+754
+02:18:49,268 --> 02:18:50,388
+Hocam duyabiliyor musunuz beni?
+
+755
+02:18:50,808 --> 02:18:51,087
+Evet.
+
+756
+02:18:52,628 --> 02:18:53,768
+Şimdi duyuyorum.
+
+757
+02:18:53,768 --> 02:19:07,848
+Tamam hocam. Burada yapılan işlemler, önce de bahsetmiştim. Ön işleme, özellik dönüşümü, özellik seçimi, veri kümesinin bölünmesi, %80 eğitim ve %20 test için ayrılmış.
+
+758
+02:19:08,399 --> 02:19:16,079
+Modeller, lojistik regresyon, KNN, Random Forest, Naive Bias gibi yöntemler.
+
+759
+02:19:16,799 --> 02:19:18,319
+Laktanızda ilerletmediniz.
+
+760
+02:19:40,788 --> 02:19:47,688
+Diğer sunuma geçiyor hocam da burayı ben anlatayım dilerseniz siz ve arkadaşlarım dinlesin olur mu?
+
+761
+02:19:48,608 --> 02:19:48,868
+Nasıl?
+
+762
+02:19:52,755 --> 02:19:55,216
+Nasıl yaylaşmıştınız?
+
+763
+02:19:56,835 --> 02:19:59,075
+Bundan sonraki makaleyi [öğrenci] Bey anlatacak.
+
+764
+02:19:59,175 --> 02:19:59,395
+Tamam.
+
+765
+02:20:01,235 --> 02:20:07,675
+Ben bunu toparlayayım kısaca. Modellerimizi ayarladık. Modeli beslemek için eğitim.
+
+766
+02:20:07,675 --> 02:20:09,815
+[öğrenci] Bey bundan sonrası mı anlatacak?
+
+767
+02:20:10,615 --> 02:20:15,015
+Ben yöntemi de bitirdikten sonra [öğrenci] Bey diğer makaleye geçecek.
+
+768
+02:20:18,772 --> 02:20:26,332
+Algoritmayı seçtik, eğitimi yaptık, modeli beslemek için eğitim ve hükümesini kullandık, modeli test ettik.
+
+769
+02:20:26,992 --> 02:20:28,652
+Slides'inizi ilerletmediniz.
+
+770
+02:20:30,652 --> 02:20:36,692
+Bir saniye, parlaşımı durdurup tekrar yapayım.
+
+771
+02:20:46,932 --> 02:20:48,252
+Şimdi görebiliyor musunuz?
+
+772
+02:20:48,952 --> 02:20:49,252
+Evet.
+
+773
+02:20:53,672 --> 02:21:05,811
+Hesaplamalarımızı yaptık. Sonra hesaplamadan sonra doğruluk ölçümleri ve çıkan sonuçları, F1 score, accuracy gibi değerleri karşılaştırdık.
+
+774
+02:21:32,595 --> 02:21:33,775
+Bir saniye.
+
+775
+02:21:35,896 --> 02:21:38,556
+Bu makale nereden?
+
+776
+02:21:41,907 --> 02:21:50,707
+Bu makale Advanced Computer Science, International Journal Advanced Computer Science dergisinde yayınlanmış.
+
+777
+02:21:55,956 --> 02:21:59,076
+Türkçe halini nasıl oluşturdunuz?
+
+778
+02:21:59,995 --> 02:22:01,036
+Onu ben oluşturdum.
+
+779
+02:22:07,891 --> 02:22:08,851
+Devam ediyorum.
+
+780
+02:22:15,860 --> 02:22:17,860
+Bu eğitimlerden sonra...
+
+781
+02:22:18,860 --> 02:22:20,940
+Efendim?
+
+782
+02:22:22,780 --> 02:22:26,000
+O web adresini görmeye çalışıyorum da.
+
+783
+02:22:27,283 --> 02:22:46,743
+Anladım. Bu eğitimler tamamlandıktan sonra değerler karşılaştırılıyor ve ECURC ve F1Score değerleri en yüksek gelen lojistik regresyon ve Random Forest yöntemlerinin yazılım projelerinde risk analizinde en yüksek doğruluğu verdiği gözlemlenmiştir.
+
+784
+02:22:47,412 --> 02:22:55,932
+Gelecek çalışmalar ise veri setinin arttırılıp, bulguların genelleştirilip, makine öğrenim algoritmalarının doğruluğunun arttırılması şeklinde olmuştur.
+
+785
+02:23:11,316 --> 02:23:14,195
+Şimdi bir diğer makale şu şekilde.
+
+786
+02:23:19,059 --> 02:23:26,139
+Bu Etiyopya'da gerçekleştirilen işlem adımlarından sonra oluşturmuş bir makale.
+
+787
+02:23:27,040 --> 02:23:30,200
+Bozduin'in anlatacağı makale mi?
+
+788
+02:23:30,239 --> 02:23:30,779
+Evet, doğru.
+
+789
+02:23:33,639 --> 02:23:35,319
+O mu anlatacak bunu?
+
+790
+02:23:35,319 --> 02:23:35,500
+Evet.
+
+791
+02:23:36,500 --> 02:23:37,139
+Tamam.
+
+792
+02:23:39,279 --> 02:23:41,159
+O zaman devam etsin.
+
+793
+02:23:41,599 --> 02:23:42,700
+Tamam, merhabalar hocam.
+
+794
+02:23:44,275 --> 02:23:46,236
+Arkadaşlar, merhaba.
+
+795
+02:23:47,695 --> 02:24:00,795
+Etiyopya'da gerçek veriler üzerinde yazılım projelerinin işlevselliği zamanlaması, bütçe yönetimi ve riskleri proje yönetimi bilgi alanları hakkında bilgi eksikliği nedeniyle düzgün yönetilememektedir.
+
+796
+02:24:02,484 --> 02:24:18,024
+Özellikle belirtmek için literatür taraması yapılmış. Başarısızlık alanları belirlemek için belirsizlik, tutarlılık, ölçülebilirlik, uygulanabilirlik kriterleri kullanılarak değerlendirilmiştir.
+
+797
+02:24:20,543 --> 02:24:24,783
+Proje yöneticisi, proje ve şirket bağlamı.
+
+798
+02:24:25,299 --> 02:24:40,880
+çerçevesinde ele alınmış, 443 kayıt ve 9 öz nitelik kullanılmıştır. Veri kümesi deneylerle hazırlanmak için gürültü giderme ve eksik verilerin yönetimi gibi adımlar tekrarlanmıştır.
+
+799
+02:24:41,559 --> 02:24:50,700
+Destek vektör makinesi tekniğinin başarısız proje yönetimini tahmin etmede diğer algoritmalara göre daha etkili olduğu görülmektedir.
+
+800
+02:24:56,564 --> 02:24:58,184
+Çok özür dilerim bir saniye.
+
+801
+02:24:59,984 --> 02:25:18,564
+Test verileri üzerine modellerin karşılaştırılması tablosunda, KN yakın komşuları, lojistik reglasyon, destek vektörler makinası, karar ağaçları ve Navi Bayez yöntemleri tabloda gösterilmiştir.
+
+802
+02:25:21,459 --> 02:25:33,379
+Destek vektör makinesi %82 doğru tahmin edilmiş. En yüksek sonuçla ulaşılmıştır.
+
+803
+02:25:33,860 --> 02:25:36,319
+Destek vektör makinesi nedir?
+
+804
+02:25:43,891 --> 02:25:46,072
+Diğerleriyle farkı nedir?
+
+805
+02:25:48,491 --> 02:25:49,391
+Kocama çıkıyorum.
+
+806
+02:26:03,123 --> 02:26:04,443
+Hocam duyabiliyor musunuz?
+
+807
+02:26:04,943 --> 02:26:05,664
+Evet, evet.
+
+808
+02:26:08,683 --> 02:26:14,443
+Yani sınıflandırma problemlerinde kullanılan gözetimli öğrenme yöntemlerinin biri hocam.
+
+809
+02:26:19,763 --> 02:26:24,763
+Yani üstünlüğü nedir diğerlerine göre? Farklılığı?
+
+810
+02:26:25,603 --> 02:26:33,504
+Hocam, küçük ve orta gerçekli veri setleri için daha uygundur diğerlerine yasladığımızda.
+
+811
+02:26:39,572 --> 02:26:40,832
+Evet, devam edin.
+
+812
+02:26:41,531 --> 02:26:42,351
+Tamam hocam.
+
+813
+02:27:08,788 --> 02:27:22,868
+Yazılım projelerinde başarısızlığı önlemenin bir yolu, yazılım proje yöneticilerinin beceri boşluklarını dolduracak proje yönetimi alanındaki bilgi birikimin arttırmaktadır.
+
+814
+02:27:24,407 --> 02:27:28,407
+Çünkü bilgi alanlarının yazılım proje yönetimiyle ilgili kilit konulardır.
+
+815
+02:27:29,528 --> 02:27:33,868
+Etiyopya'da yazılım projeleri profesyoneller tarafından yönetilmektedir.
+
+816
+02:27:35,956 --> 02:27:48,855
+İşlevselliği, zamanlaması, bütçe yönetimi ve riskleri, proje yönetimi bilgi alanları hakkında bilgi eksikliği nedeniyle düzgün bir şekilde yönetilememektedir.
+
+817
+02:27:56,211 --> 02:28:05,952
+Proje yöneticilerine belirli bir proje için proje yönetimi, bilgi alanlarının başarısızlığını tahmin etmede yardımcı olmayı amaçlamaktadır.
+
+818
+02:28:06,831 --> 02:28:19,011
+Sonuç olarak özellikleri belirtmek için bir literatür taraması yapılmış ve daha sonra başarısız bilgi alanlarını tahmin etmede en önemli özellikleri keşfetmek için belirsizlik,
+
+819
+02:28:19,360 --> 02:28:24,960
+tutarlılık, ölçülebilirlik ve uygulanabilirlik kriterleri kullanılarak değerlendirilmiştir.
+
+820
+02:28:25,560 --> 02:28:34,500
+Son olarak başarısız proje yönetimi, bilgi alanları tahmin etmek için bir makine öğrenimi modeli geliştirilmiştir.
+
+821
+02:28:35,319 --> 02:28:36,760
+Model 3 faktör içeriyor.
+
+822
+02:28:38,960 --> 02:28:42,620
+Proje yöneticisi bağlamı, proje bağlamı ve şirket bağlamı.
+
+823
+02:28:42,943 --> 02:28:53,603
+Bu araştırma çalışmasında proje yönetimi bilgi alanlarının başarısızlığını tahmin etmek için toplam 443 kayıt ve 9 öz nitelik kullanılmıştır.
+
+824
+02:28:53,703 --> 02:29:01,203
+Veri kümesini deneylere hazırlamak için gürültü giderme ve eksik değerlerin yönetimi gerçekleştirilmiştir.
+
+825
+02:29:01,203 --> 02:29:08,083
+Modeli oluşturmak için karar ağaçları, lojistik regresyon, New Bias, K en yakın.
+
+826
+02:29:08,531 --> 02:29:13,971
+KAYA'ya yakın komşu ve destek vektör makinesi gibi makine öğrenme algoritma kullanmıştır.
+
+827
+02:29:14,051 --> 02:29:15,511
+Zaten bunu tekrar etmiştim hocam.
+
+828
+02:29:16,031 --> 02:29:21,031
+Geliştirilen modelin performansı değerlendirmek için doğruluk, keskinlik ve geri çağırma kullanılmış.
+
+829
+02:29:21,031 --> 02:29:33,331
+Modelin performansı ya da sonuçları proje yönetimine ilişkin 9 nitelik ve 10 bilgi alanın değerlerini içeren gerçek verileri karşılaştırılarak değerlendirilmiştir.
+
+830
+02:29:33,747 --> 02:29:42,467
+Sonuçlar, destek vektör makinesi, teknenin başarısız proje yönetimi tahmin etmedi. Diğer algoritmalara göre daha etkili olduğu gözlemlenmiştir.
+
+831
+02:29:50,195 --> 02:30:00,000
+Bu proje yöneticilerine yardımcı olmak amacıyla projelerin başarısını önceden belirlemek ve raporlamak için çeşitli amperik...
+
+832
+02:30:00,000 --> 02:30:15,040
+Ampirik araştırmalar yürütmek ve derin öğrenme yaklaşımlarını kullanarak birden fazla başarısız proje veri kümesini değerlemek ve bu verileri sonuçlarımızla karşılaştırmak, proje yönetimi, bilgi alanlarının başarısızlığını tahmin etmek üzerine çalışmaktayız.
+
+833
+02:30:15,719 --> 02:30:24,020
+Ampirik araştırmalar gerçek dünya verilerine dayanarak projelerin farklı bilgi alanlarında ne kadar başarılı olduğunu analiz etmek için yapılan çalışmalardır.
+
+834
+02:30:24,659 --> 02:30:35,659
+Bu çalışmalar, proje yönetimi süreçlerinin etkinliğini değerlendirmek, iyileştirme fırsatlarını belirlemek ve gelecekteki projeler için öngörülerde bulunmak amacıyla yapılır.
+
+835
+02:30:36,399 --> 02:30:42,799
+Serin öğrenme yaklaşımları, karmaşık virüs etlerindeki kalıpları ve ilişkileri öğrenmek için kullanılan makine öğrenme yöntemleridir.
+
+836
+02:30:42,799 --> 02:30:43,799
+Bu yaklaşımlar,
+
+837
+02:30:44,852 --> 02:30:53,051
+Projelerin geçmiş başarısızlık verilerini analiz ederek, proje yönetimi, bilgi alanlarının başarısızlıkla ilişkisini belirlemeye çalışır.
+
+838
+02:30:53,731 --> 02:31:03,852
+Örneğin, projelerde risk yönetimi, zaman yönetimi, mali yönetim veya kalite yönetimi alanları ne kadar etkili olduğunu değerlendirebilir ve başarısız risk tahmini.
+
+839
+02:31:04,435 --> 02:31:26,716
+etmek için belirli bilgileri kullanabiliriz. Çalışmalarımızda farklı projelerden elde ettiğimiz başarısızlık veri kümesini derleyerek, derin öğrenme algoritmalarını kullanarak bu verileri analiz ediyoruz. Bu analizler sonucunda proje yönetimi bilgi alanlarının başarısızlıkla olan ilişkisini belirlemeye çalışıyoruz. Bu sayede proje yöneticilerine belirli bir projede
+
+840
+02:31:27,476 --> 02:31:41,096
+Hangi bilgi alanlarının zayıf olduğunu ve başarısızlık riskini en aza indirmek için hangi alanlara odaklanmaları gerektiklerini önceden tahmin etme ve raporlama imkanı sunmayı hedefliyoruz.
+
+841
+02:31:41,236 --> 02:31:42,515
+Evet, teşekkürler.
+
+842
+02:31:42,916 --> 02:31:44,376
+Hocam ben teşekkür ediyorum.
+
+843
+02:31:44,996 --> 02:31:48,256
+Yani keşke biraz daha iyi hazırlansaydınız.
+
+844
+02:31:48,816 --> 02:31:51,336
+Haklısınız hocam bu konuda.
+
+845
+02:31:51,336 --> 02:31:53,096
+Evet, tamam. Teşekkür ederim.
+
+846
+02:31:53,096 --> 02:31:54,816
+Ben teşekkür ediyorum hocam.
+
+847
+02:32:01,907 --> 02:32:03,887
+Evet, bugün dersi tamamlıyoruz.
+
+848
+02:32:13,012 --> 02:32:17,672
+Diğer arkadaşlar haftaya proje planlarını sunacaklar.
+
+849
+02:32:26,067 --> 02:32:29,227
+Plan sınavı yapacağız belirtilen tarihte.
+
+850
+02:32:35,731 --> 02:32:39,131
+Evet, bugün için dersi tamamladık.
+
+851
+02:32:39,572 --> 02:32:46,691
+Ben bir şey sorayım mı? Tüm finaller yanlış hatırlamıyorsan online olacak galiba.
+
+852
+02:32:47,891 --> 02:33:03,011
+Evet, bu hafta öyle duyuruldu bize de. Biz de tabii bize şimdiye kadar çok kesin yüz yüz edendiği için hep derslerde yüz yüz olacak. Ona göre çalışın diyorduk bu hafta.
+
+853
+02:33:03,343 --> 02:33:07,884
+Böyle bir karar geldi. Dolayısıyla online olacak.
+
+854
+02:33:09,963 --> 02:33:15,703
+Vize gibi mi yapmayı düşünüyorsunuz? Vize de sorduğunuz gibi açık soru gibi mi?
+
+855
+02:33:16,984 --> 02:33:20,304
+Onu karar vermedim henüz.
+
+856
+02:33:20,843 --> 02:33:23,063
+Tamam hocam. Teşekkürler.
+
+857
+02:33:23,603 --> 02:33:24,384
+Teşekkürler.
+
+858
+02:33:25,183 --> 02:33:25,923
+Hocam merhaba.
+
+859
+02:33:26,932 --> 02:33:35,252
+[öğrenci], bu tez için bakabildin mi?
+
+860
+02:33:36,147 --> 02:33:55,307
+Şöyle hocam, öncelikle internette yerli yabancı kaynakları araştırdım. Göktez merkezine girdim sitesine. Orada da zaten karşılaştığım üç tane kod simelleri içeren tez vardı. Onlar da Yunus Emre Hoca tarafından danışmanlığı yapılmış.
+
+861
+02:33:55,307 --> 02:33:59,487
+Yunus Emre çalışıyor bu konuda, Mehmet Hoca çalışıyor.
+
+862
+02:34:00,000 --> 02:34:09,700
+Onların şeylerini de bulabilirsin. Diğer üniversitelerde de hangi üniversitelerde olabilir?
+
+863
+02:34:12,100 --> 02:34:15,159
+Orta Doğu'da belki çalışan vardır.
+
+864
+02:34:18,399 --> 02:34:22,979
+Yani her üniversitede çok fazla çalışan yok bu konularda.
+
+865
+02:34:24,060 --> 02:34:26,680
+Ege Üniversitesi'nde olabilir, Orta Doğu'da olabilir.
+
+866
+02:34:28,147 --> 02:34:33,167
+Bir kere de bir ara çalışan vardı. Özyeyim de olabilir.
+
+867
+02:34:34,835 --> 02:34:55,355
+Yani şöyle araştırdığım ve tez merkezinde gördüğüm tezler genellikle metric based detection. Yani makine öğrenmesini kullanarak Türkiye'de öyle bir şeye rastlamadım o sitede. Makine öğrenmesi yönetimleri kullanılarak karar vermiyor otomatize şekilde algoritma.
+
+868
+02:34:55,355 --> 02:35:02,355
+Bir tanesi Bayesian Belief Network kullanıyordu. Diğerleri belli threshold değerlerinden istatistiksel çıkarımlı.
+
+869
+02:35:02,835 --> 02:35:20,315
+Kapsamlarla bu kod küsuru vardır ya da yoktur şeklinde çıkarımlarda bulunuyordu. Bazı çalışmalarda makaleler tool'lar kullanıyordu direkt olarak. Tool'ların içine gömülü algoritmalar var elbet ama makine öğrenmesiyle ilgili bir tool vardı.
+
+870
+02:35:20,816 --> 02:35:30,855
+O da zaten bu konuda çok az sayıda çalışma yapan birinin hazırladığı bir toolmuş. Fontana mıydı? Öyle bir İtalyan birisi.
+
+871
+02:35:30,855 --> 02:35:40,620
+İşte onlara rastladım. Ben de Ulusal Tez Merkezi'nde makine öğrenmesi kullanılarak koltüsümerlerin tespitini...
+
+872
+02:35:40,788 --> 02:35:46,348
+Yapan bir şey bulamadım. Herhangi bir test çalışması bulmadım.
+
+873
+02:35:46,728 --> 02:35:51,808
+Mehmet Hoca'nın da vardı. Kod Simen'le ilişkili doktorat tezi galiba Mehmet Aktaş'ın.
+
+874
+02:35:53,459 --> 02:36:03,879
+Ona şu an gördüklerimde Yunus Emre Hoca'nın vardı. Siz de danışmanım alabileceğinizi belirtmiştim.
+
+875
+02:36:03,879 --> 02:36:16,399
+Hani tekrarlı olmasın diye danışmanın olurum. Ama hani isim belirlerken başka hocaların yaptırdıklarıyla tekrarlı olmasın diye bunlara bakmanı istedim.
+
+876
+02:36:16,755 --> 02:36:25,675
+Ona göre isim belirleyelim o zaman. Yazabilirsin önerdiğin şeyleri.
+
+877
+02:36:25,675 --> 02:36:31,415
+Yani ben şöyle düşünüyorum. Enstitüte online sistemi var direkt olarak.
+
+878
+02:36:31,891 --> 02:36:41,731
+Danışman talebinde size herhangi bir bilgi vermeden atmak istemedim. Orada tez başlığı vesaire belirlenip direkt size gidiyor.
+
+879
+02:36:41,731 --> 02:36:49,731
+Önce mail ile biz kararlaştıralım başlığı. Ona göre sen başvuruyorsun. Ben onaylıyorum.
+
+880
+02:36:50,164 --> 02:37:06,164
+Evet, şimdilik şöyle düşündüm. Buraya da hatta ders sırasında birkaç başlık ne olabilir diye düşündüm. Yani öncelikle İngilizce ve Türkçe seçeneği var. Hani tezleri biz nasıl yazabiliyoruz? Onlar yabancı, uyruklu öğrenciler için midir?
+
+881
+02:37:15,072 --> 02:37:35,072
+Literatüre de geçmesi açısından Türkçe olsun diyorum. Onu şey yaparız yani tekrar mail ile sen bana teklif edebileceğin isimleri yaz. Konuyu anladım çünkü. Hani bu içerik ve konuda tekrarlı olmayalım.
+
+882
+02:37:37,523 --> 02:37:43,783
+Ona göre sen birkaç alternatif yaz bana, onun üzerinden konuşuruz tekrar.
+
+883
+02:37:44,363 --> 02:37:52,583
+Tamamdır hocam. Ben o zaman başlık önerilerimi size maille aktaracağım. Duruma göre siz dönüş yaparsınız. Sonra enstitü sistemi üzerine.
+
+884
+02:37:52,583 --> 02:37:53,804
+Sistemden sen gireceksin.
+
+885
+02:37:53,923 --> 02:37:55,083
+Tamamdır hocam.
+
+886
+02:37:55,103 --> 02:37:58,743
+Ama belirlediğimiz konuya girelim ki hani şey olmaz.
+
+887
+02:37:59,164 --> 02:38:00,743
+Peki hocam. Teşekkür ederim.
+
+888
+02:38:01,243 --> 02:38:02,503
+Tamam. Kolay gelsin.
+
+889
+02:38:02,743 --> 02:38:03,203
+Sağ olun.
+
+890
+02:38:03,763 --> 02:38:08,843
+Evet, dersi bitiriyorum. Başka sorusu olan var mıydı?

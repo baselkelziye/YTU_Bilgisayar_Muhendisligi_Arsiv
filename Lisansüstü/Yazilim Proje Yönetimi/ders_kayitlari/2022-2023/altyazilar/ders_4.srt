@@ -1,0 +1,2611 @@
+1
+00:00:28,371 --> 00:00:29,652
+Merhabalar, günaydın.
+
+2
+00:00:32,451 --> 00:00:33,671
+Günaydın hocam.
+
+3
+00:00:34,332 --> 00:00:48,332
+Daha önce konuşmadığımız mail ile bana makale önerisi gönderen arkadaşlarla isterseniz değerlendirme yapalım bir 10 dakika.
+
+4
+00:00:49,891 --> 00:00:51,531
+Daha sonra derse başlayalım.
+
+5
+00:00:51,987 --> 00:00:56,747
+Hocam merhaba, ben yeniden göndermiştim de, ismim [öğrenci].
+
+6
+00:00:58,067 --> 00:01:02,268
+Evet, şimdi bakayım bir yandan.
+
+7
+00:01:06,587 --> 00:01:08,468
+Konumda hocam, Kokomo 2.
+
+8
+00:01:08,608 --> 00:01:10,087
+Kokomo ile, evet.
+
+9
+00:01:10,447 --> 00:01:12,447
+Evet, onun yazılım proje yönetimi.
+
+10
+00:01:13,524 --> 00:01:18,003
+Kullanımını şey yapmak istiyordum da, makaleyi de yollamıştım sizi.
+
+11
+00:01:18,003 --> 00:01:20,204
+Evet, evet bakıyorum şu anda.
+
+12
+00:01:22,723 --> 00:01:28,003
+2019 makalesi, IEEE bir...
+
+13
+00:01:29,492 --> 00:01:32,072
+Konferans şeyi herhalde.
+
+14
+00:01:32,752 --> 00:01:39,332
+Evet hocam, konferansta yayınlanmış. Bayağı geniş çattı bu makale. Onun içerisinden sunmak istiyordum.
+
+15
+00:01:39,892 --> 00:01:46,252
+Evet, evet. Yani bu sene için bunu alan olmadı bu konuyu.
+
+16
+00:01:50,252 --> 00:01:50,652
+Olur.
+
+17
+00:01:54,548 --> 00:01:57,867
+Yazılım ölçümü bu şeyin içinde çünkü.
+
+18
+00:02:08,563 --> 00:02:11,183
+Tamam, seninkini bu şekilde belirledik o zaman.
+
+19
+00:02:11,823 --> 00:02:13,403
+Tamamdır hocam, teşekkür ederim.
+
+20
+00:02:14,003 --> 00:02:14,704
+Merhaba hocam.
+
+21
+00:02:15,704 --> 00:02:16,363
+Evet, enes.
+
+22
+00:02:16,363 --> 00:02:17,204
+Sesim geliyor değil mi?
+
+23
+00:02:17,584 --> 00:02:18,983
+Geliyor, geliyor, evet.
+
+24
+00:02:18,983 --> 00:02:29,623
+Ben de atmıştım hocam size. Benimki de software effort estimation ile alakalı iki makale önerisine bulunmuştum. İkisi de aslında konu olarak aynı, farklı.
+
+25
+00:02:30,292 --> 00:02:34,112
+Machine Learning teknikleri uygulayarak kesinlikle çalışıyorlar.
+
+26
+00:02:34,651 --> 00:02:46,352
+Olur. Dediğim gibi yazılım ölçümü bu hem Software Engineering'in bir alf konusu hem de yazılım proje yönetimiyle ilişkili.
+
+27
+00:02:49,412 --> 00:02:52,312
+Hangi yılda yayınlanmış ona bakıyorum.
+
+28
+00:02:53,312 --> 00:02:54,951
+Promagda yayınlanmış.
+
+29
+00:02:57,460 --> 00:03:00,419
+Biri 2018 hocam, biri 2017. Yanlıştır.
+
+30
+00:03:00,419 --> 00:03:01,560
+Evet, gördüm.
+
+31
+00:03:02,259 --> 00:03:22,939
+Yani bu 2000'li yıllardan beri incelenen bir konu. Farklı yeni yaklaşımları içererek hep yapay zeka modellerinin bu konuda kullanılması ile ilgileniyor.
+
+32
+00:03:22,939 --> 00:03:30,259
+Bizim de bu konularda 2005-2007 aralarında bir yayınlıyoruz.
+
+33
+00:03:30,259 --> 00:03:34,219
+Yıllarımız olmuştu. O zamanlarda daha fazla ilgileniyordum bu konuyla.
+
+34
+00:03:34,219 --> 00:03:36,219
+Tamam.
+
+35
+00:03:43,699 --> 00:03:52,620
+Makine öğrenmesi teknikleriyle yazılım efor tahmini diyorum o zaman.
+
+36
+00:03:53,340 --> 00:03:53,599
+Tamam.
+
+37
+00:03:56,079 --> 00:03:59,719
+Hocam, bir soru sorabilir miyim?
+
+38
+00:04:00,000 --> 00:04:00,240
+Evet.
+
+39
+00:04:00,819 --> 00:04:03,319
+Ben ilk dersim bu ders.
+
+40
+00:04:04,099 --> 00:04:05,819
+[öğrenci]'i aldığım için online.
+
+41
+00:04:06,319 --> 00:04:07,099
+Beni aldı.
+
+42
+00:04:07,764 --> 00:04:14,783
+Evet, bu siz konuştuğunuz konuyu yeni diyorum. Bir asla mı var?
+
+43
+00:04:17,963 --> 00:04:18,803
+Evet.
+
+44
+00:04:21,303 --> 00:04:27,343
+Yani şey ne, konu ne? Şu an yeniyim. O yüzden siz konuştuğunuz konuyu şu an anlayamadım.
+
+45
+00:04:27,824 --> 00:04:32,884
+Kodumuz şu. Şimdi sizin iki tane projeniz olacak derste.
+
+46
+00:04:33,391 --> 00:04:55,391
+Bir tanesi yüksek lisans dersi olduğu için bir konuda ki bu konuyu da makaleleri karıştırıp buluyorsunuz. Özellikle üniversitenin bu IEEE'de ve...
+
+47
+00:05:15,156 --> 00:05:32,996
+Bir çalışma hazırlıyorsunuz, bunu sunuyorsunuz ve bir akademik formatta yazıyorsunuz. Bu akademik formatı da geçen haftaki derste tekrar vermiştim adını, IEEE formatı.
+
+48
+00:05:34,708 --> 00:05:39,248
+Bu bir çalışma adetinizi yorumlamak mı?
+
+49
+00:05:40,128 --> 00:05:47,568
+Bir makale hazırlıyorsunuz. Bu makalenin konusunu da önümüzdeki haftaya kadar belirlemeniz lazım.
+
+50
+00:05:49,468 --> 00:05:51,668
+Bir literature review gibi bir şey mi oluyor?
+
+51
+00:05:51,908 --> 00:05:56,068
+Evet. Literatür araştırması.
+
+52
+00:05:56,948 --> 00:05:58,108
+Hocam, merhaba.
+
+53
+00:06:00,108 --> 00:06:01,388
+Bana aferin ol.
+
+54
+00:06:01,908 --> 00:06:05,548
+Hocam, ben bir saniye mail atmıştım bak falanla ilgili.
+
+55
+00:06:09,927 --> 00:06:13,387
+Ben sana cevap vermedim herhalde.
+
+56
+00:06:14,228 --> 00:06:15,447
+Evet, affeyzullah.
+
+57
+00:06:17,267 --> 00:06:21,007
+Hangi konuları önermiştin? Bulamadım şu.
+
+58
+00:06:21,007 --> 00:06:29,208
+Hocam, izlenmemiştim. Kendi mailimden atmıştım, okul mailinden.
+
+59
+00:06:29,971 --> 00:06:35,991
+Yani bulamadım. Belki, şey, SPM falan düşmüş olabilir. Bakıyorum tekrar bulamadım.
+
+60
+00:06:40,011 --> 00:06:46,511
+İkinci proje var demiştiniz. Kusura bakmayın sizi buldum. İkinci proje de ne olacak acaba?
+
+61
+00:06:49,451 --> 00:06:51,051
+İkinci proje...
+
+62
+00:06:51,060 --> 00:06:52,579
+Kürüvansel mi soruyorsun?
+
+63
+00:06:53,079 --> 00:06:53,740
+Evet, evet.
+
+64
+00:06:53,740 --> 00:07:18,740
+Bir tanesi makale hazırlama, bir tanesi de bir yazılım geliştirme projesinin proje planını gerçekleştirip bunu gereksinim analizi ve tasarımda takibini yapmak. Yani kod geliştirmeye geçmeseniz bile gereksinim analizi ve...
+
+65
+00:07:19,060 --> 00:07:40,319
+Tasarım aşamalarında işte modellemesini yapıp gereksinim analizi, yöskes diagramlarını çizip o aşamadaki süreçte planınızın ne ölçüde gerçekleştiğini takip edilmesi. Yani bir tanesi uygulama projesi, bir tanesi literatür review projesi.
+
+66
+00:07:41,159 --> 00:07:42,459
+Anladım, teşekkür ederim.
+
+67
+00:07:43,959 --> 00:07:44,579
+Hocam,
+
+68
+00:07:46,016 --> 00:07:57,336
+Meilenizi okuyorum. Kastamonu, Ankara, Yulaburgaz, İzmir. Evet, evet buldum buldum. Hangi konuyu?
+
+69
+00:07:59,255 --> 00:08:07,055
+Konu hocam. Kastamonla ilişkili. Kuranla ilişkili. İki hafta dinledim.
+
+70
+00:08:07,507 --> 00:08:27,727
+Bu metodoloji olarak acayip de, acayip projesiyle ilişkili şeyler de çok var. Yani diğer arkadaşlarınızla çok fazla çakışacak.
+
+71
+00:08:29,108 --> 00:08:49,347
+Bu şeyin influence'ı, projelerde, proje geliştirirken acayil metodunda bulunan Scrum'un daha fazla etkisi yani projelerde onunla ilgili Joponya'da yayınlanmış.
+
+72
+00:08:49,347 --> 00:08:55,307
+Evet, gördüm gördüm de. Daha önce başka arkadaşlarınıza da verdim bu konuyu.
+
+73
+00:08:56,724 --> 00:08:57,943
+Aynı asıl hocam.
+
+74
+00:08:58,744 --> 00:09:05,764
+Efendim, yani çok tenzerini vermişim. Başka bir konu bulmanız iyi olur.
+
+75
+00:09:07,203 --> 00:09:09,084
+Aynı konu değildir hocam ya.
+
+76
+00:09:10,683 --> 00:09:20,864
+Evet, yani Ecail'in etkisi, Ecail'in özel bir konudaki etkisi çok fazla vermişim.
+
+77
+00:09:21,620 --> 00:09:24,660
+Başka bir konu daha bulmaya çalışın.
+
+78
+00:09:26,060 --> 00:09:28,759
+Bu hocam bu hafta son değil miydi?
+
+79
+00:09:30,500 --> 00:09:34,840
+Önümüzdeki haftaya yeni gelen arkadaşlarınızla öteleme yaptım.
+
+80
+00:09:36,000 --> 00:09:38,519
+Tamam, o zaman 2-3 sene makara yollayacağım.
+
+81
+00:09:39,860 --> 00:09:57,960
+Çok fazla tekrar oluyor çünkü. [öğrenci], evet senin de mailini buldum şimdi. Evet aynı makale hatta. Influence of Agile Metodoloji, Scrum, On Project Management.
+
+82
+00:09:58,960 --> 00:10:07,419
+Bugün sabah bir tane daha gönderdim hocam size. İki tane daha makale incelemiştim farklı. Bir tanesi Agile'dan ayrışıyor.
+
+83
+00:10:08,371 --> 00:10:10,351
+Digital Assets diye başlayan.
+
+84
+00:10:14,772 --> 00:10:15,812
+Söylemedi bana.
+
+85
+00:10:17,172 --> 00:10:19,372
+Bugün sabah gönderdim mail hocam.
+
+86
+00:10:22,472 --> 00:10:25,692
+Mailin içine de PDF olarak eklemiştim.
+
+87
+00:10:25,692 --> 00:10:27,412
+Bir dakika.
+
+88
+00:10:34,676 --> 00:10:36,176
+Bugün atmışsınız.
+
+89
+00:10:36,656 --> 00:10:37,176
+Evet.
+
+90
+00:10:50,995 --> 00:10:52,096
+Aha, evet.
+
+91
+00:10:59,860 --> 00:11:04,920
+Bu Digital Assets nerede yayınlanmıştı? Bir dakika buldum.
+
+92
+00:11:23,091 --> 00:11:40,091
+Bu şöyle çok data-driven projelerin yönetimi ve proje bazı çalışmalar için bazı sayısal değerler vermiş.
+
+93
+00:11:40,091 --> 00:11:48,631
+2020'de yayınlanmış. Bu bir başlangıç için güzel.
+
+94
+00:11:49,139 --> 00:11:57,559
+Bunu destekleyen başka makalelerde bulursanız, biraz daha kapsamlı olur. Konu olarak uygun.
+
+95
+00:11:59,019 --> 00:12:02,699
+Anladım hocam. Yine benzer konuda farklı bir makale daha eklerseniz.
+
+96
+00:12:02,699 --> 00:12:13,919
+Evet, daha iyi olur. Çünkü data driving konusu gerçekten bu son yıllarda özellikle veri bilimi konusundan.
+
+97
+00:12:14,227 --> 00:12:31,388
+Çalışmalar çok fazla oluyor. Bu tür projeler çok fazla. Sektörde de, şirketlerde bununla ilişkili bölümler var. Bunu başka yayınlarla da destekleyip genişletirseniz iyi olur.
+
+98
+00:12:35,059 --> 00:12:37,799
+Konu tamam, konuyu onayladım.
+
+99
+00:12:38,219 --> 00:12:41,620
+Tamam, yine makale bulunmayı yine size gönderiyor olurum.
+
+100
+00:12:42,759 --> 00:12:52,740
+Yani bununla bir başlayın çalışmaya. Sonra eklemeler yapabilirsiniz. Başka makaleler de çıkmıştır bu data-driven projeler konusunda.
+
+101
+00:12:54,120 --> 00:12:57,199
+Tamam. Teşekkür ederim.
+
+102
+00:13:02,451 --> 00:13:06,951
+Merhaba hocam. Geçen hafta dersi de konuştuk. Makale üzerinde.
+
+103
+00:13:12,132 --> 00:13:13,672
+[öğrenci]'in.
+
+104
+00:13:19,124 --> 00:13:30,543
+Belirledik. [öğrenci]'nin belirledik. [öğrenci]'in belirledik. [öğrenci]'in belirledik. Evet. [öğrenci].
+
+105
+00:13:30,543 --> 00:13:36,163
+Merhaba hocam. Geçen hafta makaryanın konusunu söylemiştim. [öğrenci] Bey.
+
+106
+00:13:36,755 --> 00:13:46,635
+Çetten yazdı. Akabinde tekrar size, aynı konuymuş bizim. Ben tekrar yeni konu belirlemeye çalıştım. Bulamadım da en kısa zamanda değiştirip atmaya çalışacağım.
+
+107
+00:13:46,795 --> 00:13:51,235
+Tamam. Önümüzdeki haftaya kadar uzattım zaten şeyleri.
+
+108
+00:13:51,875 --> 00:14:03,035
+Çok teşekkür ederim. Büyük ihtimalle aynı makaleymiş. Benzer çalışan arkadaş yok herhalde ben kendi göze ihtiyaçtan dolayı onu seçtim demiştim de. Aynısı olsa değiştirmem gerekecek.
+
+109
+00:14:03,423 --> 00:14:08,423
+Yani o konu neydi konu?
+
+110
+00:14:08,423 --> 00:14:18,623
+Hocam bizim şirket, bu white labeling yapmaya başlamıştı. Onun proje yönetimiyle alakalı bir makale bulmuştum da. Ama direkt makale birebir örtüşüyormuş.
+
+111
+00:14:18,823 --> 00:14:19,303
+Anladım.
+
+112
+00:14:19,403 --> 00:14:21,663
+Ben de teşekkür ederim.
+
+113
+00:14:22,004 --> 00:14:23,563
+Mecbur değiştireceğim sanırım.
+
+114
+00:14:24,403 --> 00:14:41,783
+Evet, evet. Yani şöyle, başka bir makale bulursan, eğer şirkette de bu konuda çalışmalarınız varsa, başka bir makaleyle de sen yola çıkabilirsin. Aynı gün sunarsınız konu birlikteliği olduğu için.
+
+115
+00:14:42,543 --> 00:14:44,024
+Tamamdır hocam, çok teşekkür ederim.
+
+116
+00:14:44,244 --> 00:14:45,624
+Tamam, kolay gelsin.
+
+117
+00:14:49,107 --> 00:14:55,768
+Evet, [öğrenci], [öğrenci] sen bir şey söyleyeceksin herhalde. Sen bana göndermiştin şey.
+
+118
+00:15:03,604 --> 00:15:05,244
+El kaldıranlardan?
+
+119
+00:15:06,324 --> 00:15:08,764
+Hocam, biz göndermiştik iki kişi.
+
+120
+00:15:09,424 --> 00:15:10,403
+[öğrenci]?
+
+121
+00:15:10,804 --> 00:15:11,224
+Evet.
+
+122
+00:15:12,964 --> 00:15:14,804
+Binle göndermiştiniz.
+
+123
+00:15:16,364 --> 00:15:17,804
+Efendim? Duyamadım.
+
+124
+00:15:18,584 --> 00:15:20,484
+İki kişi gönderdik diyorsun da.
+
+125
+00:15:22,204 --> 00:15:24,604
+İki tane makale gönderdin.
+
+126
+00:15:24,804 --> 00:15:28,564
+Yok, üç tane makale göndermiştik. İki kişi yapmak için hocam.
+
+127
+00:15:29,564 --> 00:15:30,903
+[öğrenci]'la birlikte.
+
+128
+00:15:31,539 --> 00:15:33,719
+[öğrenci] katılıyor mu derslere?
+
+129
+00:15:34,499 --> 00:15:34,859
+Evet.
+
+130
+00:15:54,227 --> 00:15:56,727
+Aksesten bulmuşsunuz.
+
+131
+00:16:01,620 --> 00:16:08,480
+Peki, bu üç makaleden hangisini uygulamalarınızla destekleyebileceksiniz?
+
+132
+00:16:10,960 --> 00:16:17,840
+Bir tanesi, yeni bir metodoloji, AZ model öneren.
+
+133
+00:16:24,724 --> 00:16:28,244
+Hocam, ikinci makaleyi düşünmüştük ama.
+
+134
+00:16:28,704 --> 00:16:29,183
+Bakayım.
+
+135
+00:16:29,484 --> 00:16:30,864
+İkinci gönderdiğimiz.
+
+136
+00:16:46,964 --> 00:16:49,704
+Bu da mı ITP akses'de? Evet.
+
+137
+00:17:00,563 --> 00:17:03,663
+Yeni bu da ecel proseslerle ilişkili.
+
+138
+00:17:26,836 --> 00:17:27,531
+Ö
+
+139
+00:17:32,372 --> 00:17:37,372
+Üçüncü konunuz neydi? Üçüncü attığınız konu?
+
+140
+00:17:43,476 --> 00:17:47,496
+Merhaba hocam, ben [öğrenci]. Sesim gelmedi herhalde biraz önce.
+
+141
+00:17:48,316 --> 00:17:49,256
+Evet, evet.
+
+142
+00:17:51,836 --> 00:17:56,476
+Üçüncü konumuz da risk...
+
+143
+00:17:56,476 --> 00:17:59,256
+Riskle ilişkili mi?
+
+144
+00:17:59,276 --> 00:18:02,236
+Aynen, riskle ilişkili. Yazılım geliştirmeler riskle ilişkili.
+
+145
+00:18:03,356 --> 00:18:03,716
+Evet.
+
+146
+00:18:16,884 --> 00:18:23,844
+Bu ölçme konusunu hangi yollarla şey yapıyor ona bakıyorum.
+
+147
+00:18:53,844 --> 00:19:03,204
+IEEE Access'den verdiğim başka bir konu daha vardı. Risk.
+
+148
+00:19:16,531 --> 00:19:19,371
+Tamam, bu ikinci konuyu inceleyin o zaman.
+
+149
+00:19:21,371 --> 00:19:22,411
+Tamam hocam.
+
+150
+00:19:41,107 --> 00:19:44,867
+Tamamdır. [öğrenci] ile [öğrenci].
+
+151
+00:19:45,708 --> 00:19:46,028
+Değil mi?
+
+152
+00:19:46,028 --> 00:19:46,967
+Evet.
+
+153
+00:19:56,147 --> 00:20:02,127
+Evet, [öğrenci], sen de mail göndermiştin.
+
+154
+00:20:10,900 --> 00:20:11,820
+Evet hocam.
+
+155
+00:20:12,300 --> 00:20:13,980
+Geçen hafta göndermiştin.
+
+156
+00:20:16,740 --> 00:20:19,500
+Geçen hafta göndermiştin galiba değil mi?
+
+157
+00:20:19,960 --> 00:20:20,800
+Evet hocam.
+
+158
+00:20:23,320 --> 00:20:27,300
+Bu üçünden en çok hangisi sana daha yakın geldi?
+
+159
+00:20:29,900 --> 00:20:34,580
+Açıkçası proje yönetimi uygulamaları önerisi daha yakın geldi.
+
+160
+00:20:38,836 --> 00:20:41,456
+Proje yönetimi uygulamalarını
+
+161
+00:20:47,347 --> 00:20:52,847
+Hangi şeyden bulmuştum? Henüz mailini göremedim de o yüzden bakıyorum.
+
+162
+00:20:54,147 --> 00:21:01,887
+IEEE Transactions on Engineering Management dergisinde. 2022 yılında yayınlanmış bir makale.
+
+163
+00:21:01,887 --> 00:21:02,827
+Evet.
+
+164
+00:21:04,607 --> 00:21:09,987
+İçinde baktığım kadarıyla farklı uygulamaların karşılaştırması var.
+
+165
+00:21:15,635 --> 00:21:19,576
+En son da hibrit yöntemleri önerdiğini gördüm [öğrenci].
+
+166
+00:21:21,315 --> 00:21:22,235
+Evet.
+
+167
+00:21:28,019 --> 00:21:29,740
+Engineering Management'da.
+
+168
+00:21:30,519 --> 00:21:30,800
+Evet.
+
+169
+00:21:35,476 --> 00:21:38,176
+Önerdiklerinin içinde üçüncüsü mü?
+
+170
+00:21:39,736 --> 00:21:41,536
+Hemen bakayım hocam eğlime.
+
+171
+00:21:49,715 --> 00:21:51,995
+İkincisi.
+
+172
+00:21:53,096 --> 00:21:53,375
+Tamam.
+
+173
+00:21:59,827 --> 00:22:06,648
+Evet, [öğrenci] sen bu hafta tekrar, evet, [öğrenci] seninle tamamladık.
+
+174
+00:22:07,067 --> 00:22:08,447
+Tamam hocam, teşekkür ederim.
+
+175
+00:22:10,148 --> 00:22:13,387
+Merhaba hocam, evet şey, geçen hafta bir görüşmüştük sizinle.
+
+176
+00:22:13,768 --> 00:22:21,347
+Bu waterfall ve agile metotlarının kıyaslanmasıyla ilgili bir makale atmıştım ama çok benzer olmasını ben de istemiyorum ben diğer arkadaşlarla da.
+
+177
+00:22:21,827 --> 00:22:27,347
+Daha çok risk management'a odaklanan iki çalışma daha ilettim. Size ikisi de...
+
+178
+00:22:27,827 --> 00:22:42,427
+2001'de basılmış olsa gerek, yanlış hatırlamıyorsam, evet 2021 görüyorum. İkisi de olabilir. Zaten şey, biri aslında kaynak atamasına karar verilmesiyle ilgili incelenmiş bir çalışma.
+
+179
+00:22:43,188 --> 00:22:50,688
+Çok fazla projenin yürütüldüğü ortamlarda özellikle. İkincisinde biraz Ejel metodolojisi de var.
+
+180
+00:22:51,668 --> 00:22:54,268
+Ne zaman attın bu teklifi?
+
+181
+00:22:54,608 --> 00:22:59,988
+Dün attım hocam. Saat kaçmış görebiliyor muyum? 15.34'te dün.
+
+182
+00:23:01,011 --> 00:23:04,011
+İlk gönderdiğim de SPAM'e düşmüştü bende.
+
+183
+00:23:04,611 --> 00:23:05,791
+Öyle mi? Aslında şey...
+
+184
+00:23:05,791 --> 00:23:08,011
+G-mail'e mi yoksa...
+
+185
+00:23:08,991 --> 00:23:14,811
+G-mail'e atmışım. G-mail'e atmışım. Kendi öğrenci mailimden ama hocam. Hani o şekilde belki.
+
+186
+00:23:15,231 --> 00:23:15,491
+Tamam.
+
+187
+00:23:22,099 --> 00:23:24,399
+Evet, evet şimdi buldum. Tamam.
+
+188
+00:23:35,347 --> 00:23:38,248
+Ek var diye mi düştü acaba, CPM'e onu da bilmiyorum ama.
+
+189
+00:23:38,248 --> 00:23:41,008
+Bilemiyorum, belli olmuyor bazen.
+
+190
+00:23:43,207 --> 00:23:51,107
+Şimdi, bu Waterfall ve Ecai'yle ilişkin, ha tamam.
+
+191
+00:23:52,768 --> 00:23:53,988
+Evet, iki tane.
+
+192
+00:23:55,087 --> 00:23:56,107
+Aynen iki tane.
+
+193
+00:23:56,748 --> 00:24:00,288
+Ek konsept diye başlayan var, bir de diğeri var.
+
+194
+00:24:01,299 --> 00:24:04,519
+Hangisi seni daha çok tercih ettiğin ona göre bakayım önce.
+
+195
+00:24:06,239 --> 00:24:10,779
+Hocam, Enhan's diye başlayana sanki daha çok aslında beğendim gibi.
+
+196
+00:24:11,439 --> 00:24:12,559
+Tamam, bakıyorum.
+
+197
+00:24:22,963 --> 00:24:30,283
+Aslında çok fazla projenin yürütüldüğü ortamları incelediği için biraz daha gerçek hayata, daha yakın gibi geldi bana ama.
+
+198
+00:24:54,355 --> 00:24:56,035
+Evet, risk yönetimini
+
+199
+00:25:11,604 --> 00:25:19,944
+Evet, bir journal, international journal of advanced computer science and application.
+
+200
+00:25:39,635 --> 00:25:47,455
+Evet, özellikle kaynak yerleştirmeyi optimize etmek üzere risklerin yönetilmesi. Tamam bu konu olur.
+
+201
+00:25:48,296 --> 00:25:51,296
+Tamam hocam, tamamdır. Ben de not ediyorum. Teşekkürler.
+
+202
+00:26:05,491 --> 00:26:08,511
+Evet. [öğrenci] senin kimi kaldı bir de?
+
+203
+00:26:09,791 --> 00:26:11,731
+Evet hocam ben pazar günü göndermiştim ama.
+
+204
+00:26:12,571 --> 00:26:13,131
+Bakalım.
+
+205
+00:26:15,571 --> 00:26:17,951
+Sen Yıldız mailime gönderdin herhalde.
+
+206
+00:26:17,951 --> 00:26:19,311
+Evet aynen. Evet evet.
+
+207
+00:26:20,391 --> 00:26:25,471
+Bir tane makale göndermiştim ama yani eğer uygun değilse bu hafta tekrardan bakabilirim.
+
+208
+00:26:25,471 --> 00:26:28,831
+Biraz ekip yönetimiyle alakalı bir makale, genel bir şey.
+
+209
+00:26:28,951 --> 00:26:31,851
+Onu temel alıp üzerine çalışırım diye dikmişim ama.
+
+210
+00:26:56,147 --> 00:26:59,687
+Bu nerede yayınlanmıştı? Şu anda bulamadım.
+
+211
+00:27:00,548 --> 00:27:03,927
+IEEE'de vardı hocam. Link ile birlikte göndermişim size ama.
+
+212
+00:27:08,500 --> 00:27:14,240
+Neyse, çok geriye gittim. Bir konferans yayını herhalde.
+
+213
+00:27:15,579 --> 00:27:21,200
+Evet hocam. Biraz temel bir şey ama onun üzerine ekleyip birkaç makale daha birleştirip.
+
+214
+00:27:21,200 --> 00:27:22,039
+Neydi konusu?
+
+215
+00:27:23,039 --> 00:27:30,420
+Yani ekip liderinin rolü aslında, duygusal olarak bu ekip yönetimi, IT, software development.
+
+216
+00:27:30,836 --> 00:27:34,635
+Applying Emotional, Team Coaching to Software Development diye geçiyor.
+
+217
+00:27:34,955 --> 00:27:38,695
+Team Coaching dediğine göre özellikle Eceal projelerde.
+
+218
+00:27:39,336 --> 00:27:40,296
+Evet hocam, aynen.
+
+219
+00:27:42,003 --> 00:27:54,723
+Koç ne iş yapıyor? Bunu o zaman şöyle, çalıştığın yerde de bunun örneklerini filan bulabiliyor musun? Ecel mi çalışıyorsunuz?
+
+220
+00:27:55,064 --> 00:28:02,784
+[kişisel bilgi]
+
+221
+00:28:02,784 --> 00:28:09,263
+Onları ekleyip bir de daha yeni şeyler de bulup.
+
+222
+00:28:09,811 --> 00:28:32,071
+Bu konuda. Mesela şeyler filan da var. Çok fazla yayın var bu konuda. Ecel Koç proje yöneticisi farkı nerede başlıyor, nerede bitiyor, hangisinin görevi bununla ilişkili genişletebilirsin.
+
+223
+00:28:33,431 --> 00:28:34,131
+Tamam hocam.
+
+224
+00:28:35,731 --> 00:28:37,131
+Bir dakika şimdi buldum.
+
+225
+00:28:38,612 --> 00:28:40,672
+Nerede çıkmış ona bakıyorum.
+
+226
+00:28:42,211 --> 00:28:43,211
+2021'de.
+
+227
+00:28:52,084 --> 00:28:54,324
+IEEE Software'da çıkmış.
+
+228
+00:28:55,164 --> 00:28:57,344
+Evet, 2021 yılında yayınlandı.
+
+229
+00:28:57,584 --> 00:28:58,824
+Evet, tamam, uygun.
+
+230
+00:28:59,984 --> 00:29:01,864
+Tamam, teşekkür ederim. İyi günler.
+
+231
+00:29:24,692 --> 00:29:26,211
+Evet, seninkini de onayladım.
+
+232
+00:29:28,291 --> 00:29:29,211
+Teşekkürler.
+
+233
+00:29:30,731 --> 00:29:33,331
+Bu konuda hemen başlayabilirsiniz çalışmaya.
+
+234
+00:29:33,331 --> 00:29:41,711
+Evet, isterseniz diğer arkadaşlarınızın şeyini bozmayalım.
+
+235
+00:30:10,451 --> 00:30:14,751
+Evet, sadece [öğrenci]'inkine bakamadık.
+
+236
+00:30:17,971 --> 00:30:22,491
+Tamam, bir de benimkine bakabildiniz mi? Ben yolladım ama.
+
+237
+00:30:23,871 --> 00:30:25,451
+[öğrenci], [öğrenci].
+
+238
+00:30:39,955 --> 00:30:40,455
+Evet.
+
+239
+00:30:41,455 --> 00:30:46,495
+Ben 3 konu yollamıştım. Geçen pazar yollamıştım.
+
+240
+00:30:46,935 --> 00:30:52,875
+Evet, gördüm. Nerede yayınlanmıştı bunlar? Ona bakıyorum.
+
+241
+00:30:54,095 --> 00:30:59,795
+Hepsi IEEE'de vardı. Adreslerini de yollamıştım mailde.
+
+242
+00:31:01,935 --> 00:31:04,675
+Evet, buldum.
+
+243
+00:31:11,508 --> 00:31:12,368
+Şimdi
+
+244
+00:31:16,980 --> 00:31:36,180
+Startup projeler de ilginç ama bu başka derslerinizde falan da bu blockchain kavramı şey bu ikinci konuyu gerçekleştirmen daha uygun olur [öğrenci].
+
+245
+00:31:38,339 --> 00:31:41,180
+Arkadaşlarının da daha çok ilgisini çekebilir.
+
+246
+00:31:47,827 --> 00:31:52,687
+İkinci yolladım galiba bir konferans da olabilir.
+
+247
+00:31:52,847 --> 00:31:53,788
+Konferans yazısı da olabilir.
+
+248
+00:31:55,327 --> 00:32:01,967
+Acez diye bir konferans. Kaç sayfalık ona bakıyorum.
+
+249
+00:32:03,859 --> 00:32:26,940
+8 sayfadı da ilk yolladığım 26 sayfa bir makamaydı. O daha startuplarla ilgili, daha detaylı bir çalışma olmuş. Birden fazla startup'ın ortak olarak buldukları metotları genellemişler. Dört tane şey ayırabiliriz gibisinden. O bana ilginç gelmişti ama o olmazsa ikinciye de olur.
+
+250
+00:32:31,347 --> 00:32:32,548
+Yani...
+
+251
+00:32:44,564 --> 00:32:47,244
+Bu da sistematik review gibi bir şey galiba.
+
+252
+00:32:49,423 --> 00:32:56,104
+Blockchain temellerde. Tamam, o zaman sen birincisi diyorsan öyle olsun.
+
+253
+00:32:57,264 --> 00:33:00,064
+İkisi de uygun bana göre.
+
+254
+00:33:01,444 --> 00:33:10,864
+Bu da arkadaşların için dinlemesi daha iyi olur diye düşünmüştüm ama
+
+255
+00:33:11,443 --> 00:33:25,623
+Yani hocam, blockchain de yapabilirim. Biraz daha sadece araştırmam gerekecektir. Bu 8 cycle gold'an dolayı daha detaylı bir araştırma yapmam gerekecek büyük ihtimalle. Onu yapabilirim yani benim için sorun olmaz.
+
+256
+00:33:39,988 --> 00:34:05,848
+Tamam, o zaman birinci buldun diyelim. Ona daha çok hedeflermiş gibisin. Bu hem de geniş bir bakale. Bunu incelemen uygun olabilir. Eğer konu bulamamış olan bir arkadaşınız varsa daha sonrasında, bu ikinci blockchain ile ilişkili olanı da ona verebilirim.
+
+257
+00:34:07,667 --> 00:34:08,627
+Uygun mudur?
+
+258
+00:34:12,115 --> 00:34:13,496
+Benim için uygundur hocam.
+
+259
+00:34:14,135 --> 00:34:21,155
+Tamam. O zaman aslında birinciyi diyorum. Bu IEEE Transsection on Software Engineering'den olan.
+
+260
+00:34:31,764 --> 00:34:49,904
+O zaman [öğrenci] sana hep çok kullanılmış olan bir konuyu önermiştin. [öğrenci] sen [öğrenci]'a gönderebilir misin? Veya ben de gönderebilirim. Senin bulduğun ikinci şeyi.
+
+261
+00:34:50,564 --> 00:34:50,864
+Tamam.
+
+262
+00:34:51,044 --> 00:34:54,724
+İkinci konuyu da [öğrenci] yapsın.
+
+263
+00:34:55,364 --> 00:34:55,824
+Tamam.
+
+264
+00:34:56,904 --> 00:34:58,444
+Tamam mı [öğrenci]?
+
+265
+00:35:17,460 --> 00:35:21,480
+Buraya da not ettim. İkinci konusunu [öğrenci]'a verdik.
+
+266
+00:35:29,972 --> 00:35:34,652
+[öğrenci] sana da cevap vermemiştim galiba.
+
+267
+00:35:36,012 --> 00:35:38,492
+Cevap göndermiştim neyse, geldi galiba.
+
+268
+00:35:40,612 --> 00:35:42,112
+Cevap vermiş miyim?
+
+269
+00:35:42,632 --> 00:35:43,771
+Yok, dönüş yapmadım.
+
+270
+00:35:51,603 --> 00:35:58,183
+Sesin geliyor. Sesin geliyor da ben baktığım için konuşmadım şu anda.
+
+271
+00:36:09,331 --> 00:36:11,051
+Sen ne zaman göndermiştin?
+
+272
+00:36:11,711 --> 00:36:13,051
+Pazar günü göndermiştim hocam.
+
+273
+00:36:25,108 --> 00:36:28,528
+Okul mailine göndermiştim. Şahsi kendi mailimden.
+
+274
+00:36:29,688 --> 00:36:30,008
+Evet.
+
+275
+00:37:00,179 --> 00:37:02,579
+Göneksiz postalar, tüm bir baktım.
+
+276
+00:37:22,420 --> 00:37:24,640
+[öğrenci].
+
+277
+00:37:27,520 --> 00:37:29,860
+Tekrar gönderebilir misin bana?
+
+278
+00:37:30,480 --> 00:37:31,539
+Tamamdır hocam.
+
+279
+00:37:32,020 --> 00:37:36,840
+Dersin sonunda konuşuruz. Şimdi derse başlarız.
+
+280
+00:37:37,100 --> 00:37:37,820
+Tamamdır hocam.
+
+281
+00:37:38,920 --> 00:37:41,420
+[öğrenci], senin...
+
+282
+00:37:50,164 --> 00:37:53,084
+Sen de geç göndermişsin seçimini.
+
+283
+00:38:03,731 --> 00:38:07,131
+Evet, iki tane şey göndermişsin, konferans yayını.
+
+284
+00:38:16,179 --> 00:38:17,579
+Seninle
+
+285
+00:38:25,364 --> 00:38:27,203
+Konuşmuş muyduk bunun üzerine?
+
+286
+00:38:40,500 --> 00:38:55,779
+Evet, o zaman senin mailini biraz daha inceleyeyim [öğrenci]. Ondan sonra sana cevap vereceğim. Bu konferans yayınlarına bir bakayım, ona göre karar veririz.
+
+287
+00:38:58,340 --> 00:39:06,779
+Evet, şu anda bayağı bir şey yaptık, belirledik konuları.
+
+288
+00:39:09,235 --> 00:39:13,515
+[öğrenci], sen de bana sonra gönderirsin. Ona göre konuşuruz.
+
+289
+00:39:14,655 --> 00:39:16,416
+Hocam, gün içerisinde göndersen olur mu?
+
+290
+00:39:16,416 --> 00:39:17,536
+Olur, olur.
+
+291
+00:39:18,355 --> 00:39:18,695
+Olur.
+
+292
+00:39:18,916 --> 00:39:19,456
+Teşekkür ederim.
+
+293
+00:39:20,275 --> 00:39:25,496
+Tamamdır. Yani bu arada başka dergilere de bakarsan yenileyebilirsin de.
+
+294
+00:39:27,195 --> 00:39:31,416
+Çünkü bulamadım zaten senin şeyini, mailini şu anda.
+
+295
+00:39:32,576 --> 00:39:35,416
+Tamamdır. O zaman...
+
+296
+00:39:36,275 --> 00:39:40,815
+Şimdi devam edelim derse. Daha doğrusu başlayalım.
+
+297
+00:39:40,815 --> 00:39:43,815
+Son bir soru sorabilir miyim?
+
+298
+00:39:43,835 --> 00:39:44,795
+Kirobel, evet.
+
+299
+00:39:45,755 --> 00:39:53,555
+Belki de geçen haftalarda cevap vermiştiniz bu sorularıma. Daha geri gidip bakmadığım için soruyorum.
+
+300
+00:39:54,635 --> 00:39:59,815
+Bu arkadaşlardan onertli konulara bana şey geldi, böyle software...
+
+301
+00:40:00,000 --> 00:40:06,180
+Development ve Management alanında olması gerektiğini anladım. Böyle mi olacak?
+
+302
+00:40:06,380 --> 00:40:14,860
+Tabii ki. Bu seminer dersi değil. Software Project Management konusu kapsamında.
+
+303
+00:40:15,411 --> 00:40:35,951
+Bununla ilgili önceden verdiğim bazı dergiler vardı. Bunlar olabilir. Siz de bulabilirsiniz. Başka arkadaşlarınız konferanslardan filan da bulmuştu. Zaten ben dersin konu kapsamını verdim. O kapsam için de eski dersleri de tekrar dinleyerek bulabilirsin.
+
+304
+00:40:36,724 --> 00:40:43,884
+Anladım. Bir de bu iki proje aynı makale üzerinde mi olacak ya da ikinci proje ayrılma olacak?
+
+305
+00:40:43,944 --> 00:40:54,024
+Aynı zamanda ayrı. İkinci proje tamamen senin bulacağın bir uygulama konusunun yani bir yazılımın planını geliştirmek olacak.
+
+306
+00:40:54,904 --> 00:40:56,224
+Anladım. Teşekkür ettim.
+
+307
+00:40:56,224 --> 00:41:02,344
+Evet. Şimdi bir şey paylaşayım.
+
+308
+00:41:04,115 --> 00:41:05,336
+Scrum paylaşıyor.
+
+309
+00:41:29,588 --> 00:41:44,908
+Evet, bu derste daha çok izleyeceğim bir kitap. Bunun üzerinden gideceğim biraz.
+
+310
+00:42:02,739 --> 00:42:10,319
+Information Systems Project Management kitabı, Amacom yayınlarından.
+
+311
+00:42:30,132 --> 00:42:37,552
+Bu kitap özellikle geçen haftalarda iki tane şey söylemiştim.
+
+312
+00:42:38,372 --> 00:42:44,632
+Project Management Body of Knowledge ve Software Engineering Body of Knowledge.
+
+313
+00:42:44,632 --> 00:42:54,552
+İki siteyi bu konularda çalışırsanız, çalışma hayatınızda da sürekli takip edin diye.
+
+314
+00:42:55,539 --> 00:43:17,239
+Bu kitap eski bir kitap ama proje yönetimini özellikle bilgi sistemleri geliştirmede adım adım nasıl izleyeceğimizi ve hangi aşamalardan geçerek
+
+315
+00:43:17,615 --> 00:43:40,735
+Proje yönetiminde işlemleri gerçekleştireceğimizi belirten bir kitap. Bu konuda çok fazla kitap var ama özellikle bu temel konuları daha iyi işlediği için seçtiğim bir kitap.
+
+316
+00:43:41,172 --> 00:43:50,112
+Burada Amacom yayınlarından Jolion Halos'un kitabı.
+
+317
+00:43:55,411 --> 00:44:02,612
+Dediğim gibi eski bir kitap ama Information Systems Project Management.
+
+318
+00:44:02,612 --> 00:44:22,771
+Bu burada bilgi teknolojileri projelerinde özellikle bu işin dağıtımına kadar, teslimine kadar gerçekleşen işlerin yönetimi.
+
+319
+00:44:23,251 --> 00:44:27,872
+Bunu belirtiyor.
+
+320
+00:44:29,192 --> 00:44:42,251
+Ve bu kitap çerçevesinde öncelikle proje dediğimiz zaman proje nedir?
+
+321
+00:44:43,711 --> 00:44:46,311
+Projenin katılımcıları kimlerdir?
+
+322
+00:44:46,804 --> 00:45:03,403
+Proje dediğimiz zaman proje kapsamında bir çalışmanın olması gerekenleri nelerdir? Bunları anlatıyor.
+
+323
+00:45:03,887 --> 00:45:15,887
+Ve proje yönetimi dediğimiz zaman proje yönetiminin, projenin anlaşılması öncelikle bir giriş aşamasında.
+
+324
+00:45:19,215 --> 00:45:44,695
+Projenin anlaşılması, tanımlanması, daha sonra planlanması. Yani hemen plana başlamıyoruz. Nasıl ki hemen yazılım geliştirmeye başlamıyorsak, plandan önce de koduyu anlamak proje konusunu ve projeyi tanımak, tanımlamak.
+
+325
+00:45:46,963 --> 00:46:12,403
+Ve daha sonra da projenin alanını tanımak, projede gerçekleştirilecek süreç yapısını tanımak, bundan sonra da bilgi sistemi geliştirme yaşam döngüsünü belirlemek ve sonra projenin planlanması aşamasına geçiliyor.
+
+326
+00:46:14,164 --> 00:46:41,463
+Ve burada da proje running, proje running'de de nasıl izleyeceğiz? Planı yaptık ama plan orada durmayacak. Plan sürekli izlenecek. Özellikle agile projelerde bu izleme aşaması planı yenilemek gibi belirtilen bir şey.
+
+327
+00:46:41,940 --> 00:46:45,460
+Yani planını da sürekli güncelleyebiliyoruz.
+
+328
+00:46:53,139 --> 00:47:13,519
+Daha sonra da projenin çalıştırılması ve projenin kapatılması. Projenin kapatılması da ayrı bir adım diyebiliriz. Yani proje yönetimi aşamalarını göreceğiz bu kitapta ve bu proje yönetimi aşamalarının içinde de
+
+329
+00:47:14,643 --> 00:47:22,983
+Hem bu kitaptan hem de yazılım mühendisliği kitaplarından yazılım geliştirme.
+
+330
+00:47:23,423 --> 00:47:44,184
+Süreç adımlarını plana nasıl aksettireceğimiz ve nasıl takip edeceğimizle ilişkili başka kaynaklardan da ekler yapacağım. Özellikle Pressman'ın Software Engineering kitabında eklemeler olacak bu noktada.
+
+331
+00:47:51,380 --> 00:48:12,940
+Bir proje yönetimi dediğimizde proje yöneticisi nedir? Proje yöneticisinin görevleri nelerdir? Proje nedir?
+
+332
+00:48:13,376 --> 00:48:39,816
+Özel teknikler, yardımcı materyaller neler kullanacağız? Başarılı bir proje nedir? Başarılı bir proje bir üçgen sınırları, yani üç ayaklı bir yapı proje başarısı.
+
+333
+00:48:40,467 --> 00:49:00,347
+Proje başarısında bir bütçe, bir iş listesi yani zaman yönetimi, iş listesinin zamana aksettirilmesi, bir de alan var.
+
+334
+00:49:00,347 --> 00:49:06,807
+Yani projede sınırlarımız nasıl belirtilmişti?
+
+335
+00:49:07,168 --> 00:49:15,307
+Bu sınırlar kapsamında gerçekleştirmemiz gereken bütün işleri gerçekleştirdik mi?
+
+336
+00:49:15,307 --> 00:49:23,987
+İşte bunların hepsini yapmış olmak projeyi başarılı kılacaktır.
+
+337
+00:49:30,291 --> 00:49:33,751
+İş listesi ve alan.
+
+338
+00:49:34,751 --> 00:49:40,291
+Üçü bunlar projenin başarılı olduğunu gösteren metrikler.
+
+339
+00:49:41,911 --> 00:49:51,691
+Proje çalıştırıldığında müşteri beklediği faydaları elde etti mi?
+
+340
+00:49:58,132 --> 00:50:19,291
+Sonucundaki geliştirilen yazılım bize çalıştırma süresince aynı faydayı sağladığıma, yani kalite konusunda da bir olurluluk almamız gerekiyor.
+
+341
+00:50:25,043 --> 00:50:31,763
+Bir üçgen olarak tanımlarsak, bu üçgenin içinde de kalite kavramı var.
+
+342
+00:50:35,411 --> 00:51:02,831
+İstenilen kalitede yazılım, istenilen işleri yapıyor mu? Yani kapsam, scope, alan. İstenilen zamanda gerçekleştirildi mi? İstenilen bütçeyle, planlanan bütçeyle gerçekleştirildi mi? Bu elemanların hepsi sağlanmışsa,
+
+343
+00:51:03,219 --> 00:51:19,379
+Projemiz için başarılı bir projedir diyebiliriz. Proje neden fail eder? Birçok hatalı proje hikayeleri vardır.
+
+344
+00:51:30,335 --> 00:51:42,596
+100 milyona yaklaşır ve daha da geçmesi gerekirse işin bitmesi için o zaman bu proje için başarılı diyemeyiz.
+
+345
+00:51:42,596 --> 00:51:52,655
+Ama yine de zamanında bitmişse ve istenilenlerin hepsini yapmışsa
+
+346
+00:51:53,903 --> 00:52:05,903
+Baştan fark edilemeyen maliyetler çıkmış. Bunlar da sağlanabilmişse ekonomik şeyler...
+
+347
+00:52:07,027 --> 00:52:16,287
+Ekonomik olarak bunları karşılayacak yolları bularak bunu da sağlamıştık yine başarılıdır diyebiliriz.
+
+348
+00:52:16,287 --> 00:52:31,207
+İşte biz projeyi anlama ve projeyi tanımlama derken biz zaten bunları nasıl ifade edeceğimizi önce baştan bulacağız.
+
+349
+00:52:34,911 --> 00:52:52,011
+Projenin başarısı hakkında konuşacağız. Mesela projeyi tanımlamak derken, proje sponsoru, sponsordan daha önceki derslerde bahsetmiştim.
+
+350
+00:52:52,011 --> 00:52:56,011
+Sponsor, proje...
+
+351
+00:52:56,128 --> 00:53:06,748
+Projenin parasını ödeyen, projeyi mali olarak destekleyen, projeyi kullanacak ekibin içindeki kişilerdir diyebiliriz.
+
+352
+00:53:07,860 --> 00:53:33,140
+Bir büyük şirkette yazılım birimine iş istendiğinde yazılım biriminden bu yazılımı hangi departman kullanacaksa o departmanın yöneticisi diyelim ki muhasebe birimine bir yazılım üretilecekse muhasebe departmanının başındaki kişi yöneticisi projenin sponsorudur.
+
+353
+00:53:33,140 --> 00:53:35,860
+Üst yönetime çünkü bu bilgi verecektir.
+
+354
+00:53:35,860 --> 00:53:37,920
+Projenin başarısı hakkında.
+
+355
+00:53:42,020 --> 00:53:56,560
+Proje alanının tanımlanmasını da yine bu müşteri tarafındaki grupla birlikte gerçekleştirmemiz gerekir.
+
+356
+00:53:58,560 --> 00:54:01,680
+Başarılı proje.
+
+357
+00:54:02,143 --> 00:54:19,143
+Ve başarısız proje dediğimizde, başarılı proje, şimdi bu bölümü özetleyelim, başarılı proje, 3 sac ayağını unutmuyorsunuz.
+
+358
+00:54:22,867 --> 00:54:39,307
+Alan, scope. İkincisi, budget, bütçe. Üçüncüsü de schedule, özellikle zaman listesi, belirli temel işleri.
+
+359
+00:54:39,764 --> 00:55:01,563
+Belirli zamanlarda gerçekleştirebildik mi? Proje süresini aştık mı? Bunların hepsi olumluysa çok başarılı bir proje. Fakat belirli bir süre kullandıktan sonra da aynı kalitede kalabiliyor mu? O zaman karar veriyoruz projenin başarılı olduğunu.
+
+360
+00:55:03,443 --> 00:55:26,824
+Mesela proje zamanında bitti, istenilen bütçeyle bitti, istenilen işleri yapıyor. Projeyi kullanmaya başladık. Proje 3 ay sonra başta planlanmayan bir veri tabanı aksaklığı yüzünden çok hızlı bir şekilde verimi düştü, yavaşladı.
+
+361
+00:55:27,280 --> 00:55:44,520
+Yani kalitesinde sorun var. O zaman bu proje için de başarılı diyemeyiz. Ama süresini biraz aştı, biraz bütçeyi aştı ama senelerce kullanılan bir yazılım elde edildi. Buna başarılı proje diyebiliriz.
+
+362
+00:55:56,692 --> 00:56:08,132
+Hataları kurtararak devam edildi. Buna göre de projeye başarılıdır veya başarısızdır diyoruz. Kalitesi de önemli.
+
+363
+00:56:09,051 --> 00:56:16,831
+Şimdi projeler niçin fail eder? İşte burada birçok madde var.
+
+364
+00:56:17,588 --> 00:56:43,588
+Müşterinin ilgili oluşu, müşterinin yardım etmesi, projenin içinde bulunması, proje sürecinin iyi seçilmiş olması, hangi süreç modeli, proje elemanlarının iyi yerleştirilmesi, proje planına düzgün hareket edilmesi, projedeki alt yüklenicilerin...
+
+365
+00:56:44,608 --> 00:57:10,928
+İyi yönetilmemesi, ilk başta planlanmamış olması, dışarıdan çalıştırılan firmaların gibi birçok nedenden fail edebilir. Bunların içinde en önemli faktör de projenin fail etmesinde projeye üst yönetimin sahip çıkması.
+
+366
+00:57:11,603 --> 00:57:24,864
+Proje üst yönetimi bir projeyi destekliyorsa o projenin imkanları daha iyidir ve daha başarılı olabilir.
+
+367
+00:57:24,864 --> 00:57:32,864
+Ama proje üst yönetimden destek bulmuyorsa bu durumda proje için...
+
+368
+00:57:34,099 --> 00:57:39,000
+Bir takım zorluklar çıkabilir.
+
+369
+00:58:01,856 --> 00:58:09,896
+Ve kalite. Ama neden başarısızlık olur? Bunlar da az önce söylediklerim.
+
+370
+00:58:11,896 --> 00:58:21,556
+Şimdi proje için bir kontrol aşaması oluşturulur.
+
+371
+00:58:28,980 --> 00:58:49,340
+Projeye bir kontrol aşaması oluşturmamız gerekiyor. Yani projedeki gereksinimler proje raporlamasıyla ortaya çıkacak. Durum raporları oluşturmalı. Hangi sıklıkla oluşturmalı?
+
+372
+00:58:49,907 --> 00:59:16,527
+Eskalasyon yapısı oluşturmalı. Projeden ve projede gerçekleşen işlerden, zorluklardan hem yöneticinin ekibin içindeki yapılardan erken haber olması hem de projedeki işleyiş mekanizmasından
+
+373
+00:59:16,980 --> 00:59:42,199
+Yönetimin haberdar edilmesi ve proje yöneticisinin üst yönetime haber vermesi, proje yöneticisinin de ekipten sürekli bilgi alması durumun nasıl gittiğiyle ilişkili.
+
+374
+00:59:42,639 --> 01:00:01,779
+Bütün bunlar projenin başarısını etkiler. Yani projenin kontrolü. Projeden sürekli durum raporu alınması gerekiyor ama tabii ki bu sıklık da önemli. Bu baştan belirlenecek bir şey.
+
+375
+01:00:10,516 --> 01:00:18,996
+Projeyle ilişkili bilgilendirmeyi üst yönetime zamanında yapmak gerekiyor.
+
+376
+01:00:20,435 --> 01:00:26,195
+Şimdi proje, dedik ki proje nedir?
+
+377
+01:00:37,940 --> 01:01:01,119
+Ya da yeni bir model deneme gibi bir şey olabilir. Bir projenin olması için gerekli kriterler belirtilmiş burada. Proje tanım kriterleri. Bir defa basit bir tanım yapalım. Ondan sonra kriterlere geçelim. Basit bir tanım.
+
+378
+01:01:03,088 --> 01:01:18,728
+Dediğimiz şey, birden fazla aktivitesi olan, yani alt işleri olan ve bu alt işlemlere bölebileceğimiz iş.
+
+379
+01:01:19,119 --> 01:01:37,119
+Bir yeni ürün ya da yeni bir iş, yeni bir aktivite gerçekleştirmeyi gerektiriyorsa, genellikle birden fazla kişi çalışıyorsa ama en önemlisi tek kişi de yürütebilir bir projeyi.
+
+380
+01:01:38,119 --> 01:01:47,119
+Birden fazla alt işinin olması bu işlerin bir hedef.
+
+381
+01:01:47,119 --> 01:01:52,380
+Bir hedef doğrultusunda ve
+
+382
+01:01:52,784 --> 01:02:12,184
+Başı, sonu belli bir yapıda olması gerekir. Yani zaman önemli bir projenin yapısında bir başlangıç süresi bir de bitiş süresi olacak.
+
+383
+01:02:20,784 --> 01:02:46,304
+Ve bir yenilik içerecek. Mesela bir telekom şirketi sürekli yaptığı bir iş, işte faturaları gönderiyor, basılıyor, gönderiyor. Her ay bir yazılım çalışıyor. Sonuçta şeyler üretiliyor, faturalar dağıtılıyor. Bu bir proje midir? Değil.
+
+384
+01:02:49,043 --> 01:02:51,703
+Sizin çok fazla zamanınızı alan bir şey.
+
+385
+01:02:51,703 --> 01:02:57,703
+Bir bilgisayarınızı...
+
+386
+01:03:00,019 --> 01:03:25,179
+İşte yeni bir işletim sistemini yüklüyorsunuz, çalışır hale getiriyorsunuz veya işte bir temizlik yapıyorsunuz bilgisayarınıza. Bu sizin çok vaktinizi alıyor ama bir proje değil. Rutin bir iş. Ama ne zaman proje olur ve ne tip işler? Bu bir teknik iş de olabilir, sosyal bir uygulama da olabilir.
+
+387
+01:03:28,019 --> 01:03:54,500
+Her ay basılan telekomdaki faturalara bir değişiklik isteği gelirse, işte faturalarda amblem değişecek veya bir şey yazılacak, yeni bir ekleme yapılacak fatura formatına. İşte bu bir proje.
+
+388
+01:03:54,927 --> 01:04:19,007
+Bunun bir başlangıç süresi var. Mesela önümüzdeki ay fatura basımına kadar bu değişiklik olmalı dendiği zaman aralıklarla bu eklentinin yapılması, yeni bir yazılım versiyonunun oluşturulması şeklinde bir planlama yapılması gerekir.
+
+389
+01:04:21,715 --> 01:04:31,856
+Mesela sadece bir yazılım üretmek, bir köprü yapmak, bu teknik işler projedir diyemeyiz.
+
+390
+01:04:48,403 --> 01:05:10,403
+Dağıtıma çıkması. Bunun için de rakip firmaların çıkışı da belli ise bu reklam kampanyasının başlangıcı bitişi, başlangıç zamanı belli, bitiş zamanı belli. O bitiş zamanı hele ki geçirilemez bir şeyse o zaman...
+
+391
+01:05:11,923 --> 01:05:17,243
+Bu tam bir proje olacaktır ve bir hedefi var.
+
+392
+01:05:17,684 --> 01:05:42,204
+Mesela seçim çalışmaları bir proje ve zaman hedefli bir proje. O süreyi geçtiği zaman bir anlamı kalmayacak. Aynı şekilde sizin projeleriniz, işte ne zaman bitiyor ders yılı, projenin deadline'ı ne zaman, o zamanı geçtikten sonra bir kıymeti kalmayacak.
+
+393
+01:05:45,684 --> 01:06:09,384
+Bu projelerimizde, bu tür projelerde zaman, kaynak ve bütçe, zaman, alan dediğimiz zaman, sizin hedefiniz zamanında bitirmek projeyi. Biraz eksik de yapsanız.
+
+394
+01:06:09,952 --> 01:06:25,231
+Biraz efor yani bütçe, iş zamanı, iş gücü olarak geçiyor burada. Biraz fazla da çalışsanız önemli olan zamanında bitirmek. Haziranda bitirirseniz bir kıymeti yok.
+
+395
+01:06:27,635 --> 01:06:36,096
+Evet, şimdi bakalım bu tanımlamalardan yola çıkarak proje tanım kriterlerini kitapta nasıl vermiş?
+
+396
+01:06:36,096 --> 01:06:53,896
+İkiden fazla insan kapsıyorsa bu aktiviteler, aktiviteler iki haftadan daha fazla iş gücü gerektiriyorsa, yani bunlar mutlaka olacak şeyler değil ama genellikle projelerde olabilen şeyler.
+
+397
+01:06:54,804 --> 01:07:21,063
+Bir risk içeriyorsa ve bu riskin takip edilmesini gerektiriyorsa bu aktivitelerin fail etmesi önemli bir etki yaratacaksa
+
+398
+01:07:24,179 --> 01:07:41,519
+Projelerde genellikle birliktelik, birlikte çalışma da vardır. Tek bir departmanı değil, bazen birden fazla departmanı.
+
+399
+01:07:44,179 --> 01:07:55,019
+Koordinasyonunu gerektirebilir. Hatta dışarıdan iş ortakları olabilir. Yeni bir teknoloji kapsayabilir.
+
+400
+01:07:56,919 --> 01:08:05,939
+Ve normal iş adımlarının, normal iş alanının dışına düşer buradaki aktiviteler.
+
+401
+01:08:10,960 --> 01:08:13,660
+Projedir diyebiliriz.
+
+402
+01:08:16,020 --> 01:08:32,680
+Ve projelerde temel şeyimiz, başlangıç tarihi, bitiş tarihi ve alt aktiviteleri de başlangıç bitiş tarihlerine ayırabiliyorsak.
+
+403
+01:08:33,011 --> 01:08:55,591
+Proje tanımında vardır. Sonunda bir hedefin olması gerekir proje tanımının içinde. Bunların dışında, bu temel şeylerin dışında, bunlar da proje tanımında olabilir.
+
+404
+01:09:02,484 --> 01:09:18,484
+Mesela burada da yine benim verdiğim örnekleri burada da var. Bir donanımın upgrade edilmesi, işte belir dönemlerden sonra…
+
+405
+01:09:19,988 --> 01:09:45,087
+Belli yazılımların kurulumunun yapılması, rutin işler ama şey değil, proje değil, projenin amacı, riskleri, zaman dağıtım süresinin belirlenmesi.
+
+406
+01:09:45,583 --> 01:10:06,163
+gibi hedefleri vardır. Proje ofisi dediğimiz zaman, Project Management Office, proje yöneticisi ve bununla beraber çalışanlar, proje yönetim ofisinden söz edebiliriz.
+
+407
+01:10:09,619 --> 01:10:24,619
+Burada Ecel Koç ve bütün ekibin birlikte çalışması, yani bütün katılan, projede iş yapan herkes...
+
+408
+01:10:26,804 --> 01:10:35,164
+Aynı zamanda proje yönetim ofisi gibidir diye de tanımlama yapılır ama yine de sektörde de görüyoruz.
+
+409
+01:10:35,164 --> 01:10:40,083
+Ecel projelerde de bir proje yöneticisi var.
+
+410
+01:10:42,083 --> 01:10:49,264
+Yönetimle, üst yönetimle proje ekibi arasında.
+
+411
+01:10:51,923 --> 01:10:56,664
+İşlemlerin sürdürülmesini sağlayan.
+
+412
+01:11:02,612 --> 01:11:22,791
+Proje Life Cycle, Project Development Life Cycle, Project Management dediğimiz zaman, proje yönetimi ve System Development Life Cycle arasında bir ilişki var.
+
+413
+01:11:24,307 --> 01:11:46,448
+Proje adımlarımız, projede gerçekleştireceğimiz işler, bilgi sistemi geliştirme, özellikle de yazılım geliştirme işlerinde iş adımlarımız, yazılım geliştirme süreç modelimize göre olması gereken adımlar olacaktır.
+
+414
+01:11:52,083 --> 01:12:08,503
+Proje yöneticisi bunu ayarlayacak. Proje yönetimi ve yazılım geliştirme adımlarını.
+
+415
+01:12:19,231 --> 01:12:33,271
+Ve projenin gerçekleştirilmesi, projeyle alt projelerin ilişkisi bunların hepsinden sorumlu olan kişidir proje yöneticisi.
+
+416
+01:12:34,731 --> 01:12:46,451
+Proje yöneticisi, proje lideri gibi sorumluluklar tanımlanabilir.
+
+417
+01:12:47,252 --> 01:12:59,152
+Bir proje dediğimiz zamanda başlangıcı ve sonu açıkça belirlenmiş aktiviteler dizisidir.
+
+418
+01:13:14,355 --> 01:13:30,456
+Bu bir hizmet de olabilir. Az önce dediğim gibi bir ürünün tanıtımı, pazarlama süreci gibi sosyal bir iş de olabilir.
+
+419
+01:13:32,135 --> 01:13:37,515
+Somut bir iş de olabilir. Bir yazılımın geliştirilmesi, bir köprünün yapılması gibi.
+
+420
+01:13:38,292 --> 01:13:58,292
+Projede yeni bir uygulama sisteminin üretilmesi veya zenginleştirilmesi veya sosyal bir işin mesela bir…
+
+421
+01:14:03,252 --> 01:14:20,172
+Üniversitede diyelim ki bir konferans hazırlıyoruz. Konferansın yapıldığı günler diyelim ki Nisan'ın 15 ile 20'si arasında veya 15 ile 18 arasında bir konferans düzenleyeceğiz.
+
+422
+01:14:20,576 --> 01:14:28,735
+Sadece üç gün sürecek konferans ama bu konferansın hazırlığı en az sekiz ay önce başlamalı.
+
+423
+01:14:28,735 --> 01:14:48,576
+İşte adım adım konferansın çalışanlarının, organizasyon komitesinin belirlenmesi, konferansın yerinin belirlenmesi, program komitesinin belirlenmesi, sonra bildiri gönderme duyurusunun hazırlanması.
+
+424
+01:14:48,576 --> 01:15:16,275
+Bu duyurunun ardından bildirilerin kabul edilmesi, bildirilerin program komitesine gönderilmesi, değerlendirilmesi süreci, kabul edilen bildirilerin duyurulması, kabul edilen bildirilerin tam metninin alınması ve bunlar bildiri gönderenler için süreç, bir de organizasyon süreci var.
+
+425
+01:15:16,576 --> 01:15:40,576
+İşte davetli konuşmacı listesi, program listesi, aynı zamanda oturumlar var mı yoksa tek oturum mu gidiyor? Bütün bunların planlanması, sosyal etkinlikler olacak mı, bunlar neler olacak? İkramlar neler olacak? Bütün bunlar bir konferansın...
+
+426
+01:15:43,475 --> 01:16:10,155
+Olduğu süre 3 gün ise bütün bunlar 8 ay süren işler ve birbiriyle biri bittiğinde diri yeri başlayacak uygulamalar. Bunların zamanlaması, planlanması bir proje. Çünkü yeni bir iş yapılıyor. Bu da bir projedir.
+
+427
+01:16:13,300 --> 01:16:29,280
+Proje konusunda sorunuz var mı? Proje tanımı, proje nedir, ne değildir konusunda? Kafanızda oturtamadığınız bir şey var mı? Sorunuz var mı?
+
+428
+01:16:46,355 --> 01:17:03,935
+Evet, bu kitap temel proje yönetimini gösteriyor. Dediğim gibi Project Management Body of Knowledge'de Project Management Enstitü'nün sayfasında
+
+429
+01:17:04,500 --> 01:17:14,920
+Bu proje yönetim adımlarıyla ilişkili, ecel projelerle ilişkili yeni güncel yaklaşımlar bulabilirsiniz.
+
+430
+01:17:15,199 --> 01:17:25,260
+Ama proje yönetiminin temel ilkelerini bu temel kitap gösterdiği için bu kitabı tercih ediyorum.
+
+431
+01:17:26,059 --> 01:17:29,500
+Dediğim gibi farklı yazarlar tarafından...
+
+432
+01:17:29,680 --> 01:17:42,899
+Üretilmiş çok sayıda Software Project Management, Information System Project Management gibi pek çok kitap var.
+
+433
+01:17:47,520 --> 01:17:54,280
+Ben bu kitabı izliyorum ve temel bilgileri veriyorum.
+
+434
+01:17:55,444 --> 01:18:02,324
+Dediğim gibi değişikliklere de farklı kaynaklardan zaman zaman bakabileceğiz.
+
+435
+01:18:05,876 --> 01:18:21,175
+Şimdi proje yönetiminde genel yapı nedir? Bunun üzerinde duralım biraz. Bunu biraz büyüttüm.
+
+436
+01:18:31,872 --> 01:18:44,032
+Bir defa proje planlama eşittir, proje yönetimi değil. Bu şekle baktığımızda ilk onun anlaşılmasını istiyorum.
+
+437
+01:18:56,992 --> 01:19:16,771
+Projenin çalıştırılması ve izlenmesi. Şuradan başlıyoruz. Önce projeyi anlama. Şöyle başlıyoruz. Projeyi anlama, projeyi tanımlama, projeyi planlama ve projeyi çalıştırma.
+
+438
+01:19:23,667 --> 01:19:37,427
+Yetenekleri ve özellikle proje yönetim yetenekleri. Biz bu şekli nasıl gördük ilk dersimizde? Üç daire şeklinde.
+
+439
+01:19:39,567 --> 01:19:45,768
+Sadece genel yönetimi bilmek ve proje yönetim tekniklerini bilmek.
+
+440
+01:19:48,756 --> 01:20:02,676
+Bir projeyi yönetmek için yeterli değil. Üçüncü bir halka daha var. O da alan konusunda da bilgi sahibi olmak. Yani yazılım konusunda.
+
+441
+01:20:16,159 --> 01:20:21,119
+Bir kişinin inşaat projesini yönetmesi daha doğru.
+
+442
+01:20:22,319 --> 01:20:34,500
+Burada proje yönetimi ofisinde, pardon proje yönetimi enstitüsünde de zaman zaman değişik fikirler ortaya çıktı.
+
+443
+01:20:36,119 --> 01:20:40,500
+Şu şekilde görüldüğü gibi genel yönetim bilgisi olan...
+
+444
+01:20:41,076 --> 01:20:54,176
+Proje yönetimi yetenekleri kazanmış olan bir kişi her projeyi yönetebilir. Bu çok başarılı değil.
+
+445
+01:20:54,640 --> 01:21:22,020
+Daha sonraları bundan da sapma oldu. Yani bilgisayar mühendisliği yazılım geliştirme yönünde bilgisi olmayan bir kişi bir yazılım geliştirme projesini genel yönetim yeteneği varsa, proje yönetim yetenekleri de varsa iyi yönetemez.
+
+446
+01:21:22,384 --> 01:21:41,384
+Çünkü zaman planı yaparken, kaynak planı yaparken, kimin hangi yetenekteki kişinin hangi işte görevlendirileceğini, hangi işin minimum ne kadar süreceğini...
+
+447
+01:21:41,460 --> 01:22:06,860
+Bilebilmesi için yazılım geliştirme konusunda bilgi sahibi olması gerekir. Veya bir köprü yapımında çalışıyorsa bu işlerin her bir alt aktivitenin ne kadar süreceğini, hangi kişilerin bunu yapabileceğini bilmesi için bu konuda yeteneğinin bilgisinin olması gerekir.
+
+448
+01:22:08,307 --> 01:22:30,148
+Üçüncü bir yetenek gerekliliği daha var. Şimdi tekrar proje yönetiminin alt adımları konusuna bakarsak, projenin anlaşılması, projenin tanımlanması, projenin planlanması, plan sırasında proje yönetimi yetenekleri.
+
+449
+01:22:30,591 --> 01:22:40,711
+Ve projenin çalıştırılması aslında projenin kontrolü, izlenmesi demek de daha doğru olabilir.
+
+450
+01:22:42,771 --> 01:22:49,831
+Biz bunu bir tane daha yani dört başlık değil, kitapta dört başlık altında toplanmış.
+
+451
+01:22:49,831 --> 01:22:53,731
+Projeyi kapatmak da running'in bir parçası olarak alınmış.
+
+452
+01:22:57,583 --> 01:23:21,863
+Risk yönetimi, geçmiş arşiv hikayeleri çok fazla önem kazandıkça biten projelerin kapatılması sırasında yapılacak işlerde ayrı bir boyut kazanmış. O yüzden beş adımdan bahsedeceğiz biz hep. Projenin anlaşılması, projenin tanımlanması.
+
+453
+01:23:22,996 --> 01:23:46,416
+Projenin planlanması, projenin izlenmesi ve projenin kapatılması olmak üzere. Yani running'in içinde almış bitirişinde ama bitirme sırasında çok sayıda arşiv bilgisinin oluşturulması aşaması da yer alıyor.
+
+454
+01:23:48,307 --> 01:24:05,068
+Şimdi bugün bu kitabın giriş aşamasını yaptık. Bundan sonraki aşamalar neler olacak? Hangisinin içinde neler var? Birazdan bunların üzerinde duracağız.
+
+455
+01:24:14,963 --> 01:24:24,344
+Sorusu olan var mı? Proje tanımı ile ilişkili, projelerle ilişkili.
+
+456
+01:24:31,604 --> 01:24:32,844
+Sorunuz var mı?
+
+457
+01:24:37,652 --> 01:24:39,152
+Evet, o zaman
+
+458
+01:24:39,152 --> 01:24:43,872
+Şimdiden itibaren
+
+459
+01:24:53,203 --> 01:24:54,804
+10 dakika ara veriyoruz.
+
+460
+01:40:57,971 --> 01:41:05,952
+Evet, derse devam edebiliriz. Tekrar ekran paylaşımını sağlıyorum.
+
+461
+01:41:12,467 --> 01:41:20,328
+Evet, şimdi herkes katıldı değil mi derste?
+
+462
+01:41:22,328 --> 01:41:23,047
+Evet, tamam.
+
+463
+01:41:23,047 --> 01:41:24,448
+Tamamdır.
+
+464
+01:41:26,228 --> 01:41:38,828
+Şimdi biz az önce proje yönetimi dediğimiz zaman hangi alt başlıklardan oluşuyor? Bunun üzerinde durduk. Projenin anlaşılması.
+
+465
+01:41:39,264 --> 01:41:52,923
+Projenin tanımlanması, projenin planlanması ve projenin takip edilmesi, kontrolü, izlenmesi, proje running.
+
+466
+01:41:53,503 --> 01:42:00,243
+Projenin kapatılmasını da bu kitap running'in içinde almış ama bunu ayrıca inceleyeceğiz demiştim.
+
+467
+01:42:01,108 --> 01:42:09,908
+Projenin anlaşılması dediğimiz zaman hangi işlemler var projenin anlaşılması içinde?
+
+468
+01:42:09,908 --> 01:42:16,128
+Şimdi bunları görelim.
+
+469
+01:42:17,668 --> 01:42:22,268
+Proje backgroundı anlaşıldı mı?
+
+470
+01:42:26,579 --> 01:42:54,419
+Farklı yanları anlaşıldı mı? Proje politikaları anlaşıldı mı? Projenin oyuncuları kimler? Yani projede hangi roller var? Mesela bütün bir yazılım geliştirme projesi ise bu arada yazılım proje yönetiminde her proje sıfırdan bir yazılımın geliştirilmesi olmayabilir.
+
+471
+01:42:54,579 --> 01:43:07,319
+Bir yazılım sisteminin satın alınması ve customization işleminin yapılması da bir proje olabilir.
+
+472
+01:43:07,319 --> 01:43:17,819
+Veya sadece bir firmaya bakımının gerçekleştirilmesi olabilir.
+
+473
+01:43:19,315 --> 01:43:30,576
+Bu yüzden projenin sınırları, projenin yapısı nedir? Bu farklı olabilir.
+
+474
+01:43:31,167 --> 01:43:52,127
+Projenin tanımlanmasında projede dağıtılacaklar neler? Yani projede dağıtılacaklar ya da teslim edilecekler demek daha doğru. Projede neler teslim edilecek? Biz bunu sektörde şey görürüz genellikle kaynak kod verilecek mi, verilmeyecek mi?
+
+475
+01:43:52,627 --> 01:44:16,627
+Ama bunun dışında bazı anlaşmalarda projenin tasarımla ilişkili model elemanları, SRS belgesi, gereksinim analizi sonucunda oluşturulan projedeki diğer belgeler, test...
+
+476
+01:44:17,876 --> 01:44:38,336
+CASE'ler hangi veriyle test edildi. Bunlar da proje teslim belgeleri arasında yer alabilir. Proje planı, proje riskleri gibi çok farklı belgeler de.
+
+477
+01:44:39,956 --> 01:44:52,676
+İstenebilir. Mesela sadece kodun teslim edilmesi değil, IR modeli, veri tabanı modeli bunların hepsi teslim edilecekler arasında olabilir.
+
+478
+01:44:54,456 --> 01:45:00,956
+Alan yapısı hem sistemin yapısı...
+
+479
+01:45:01,844 --> 01:45:11,104
+Hem sistem alanı hem de proje alanı. Yani sistem alanı ve proje alanı üzerindeki farklılıklar üzerinde duracağız.
+
+480
+01:45:11,104 --> 01:45:25,899
+Bu teslim edilecekler, yani işi isteyen firmaya...
+
+481
+01:45:26,003 --> 01:45:32,263
+Veya departmana teslim edilecekler nelerdir?
+
+482
+01:45:36,404 --> 01:45:48,664
+Yarı teslim edilen şeyler nasıl gözden geçirilecek? Bu da önemli bir soru. Gözden geçirme işlemi nasıl olacak?
+
+483
+01:45:48,664 --> 01:46:02,304
+Yani biz waterfall aşamalarıyla gidersek, her bir modelde farklı bu aşamalar. Bunları yazılım geliştirme süreç modellerinde gördük.
+
+484
+01:46:04,948 --> 01:46:15,328
+Müşteri tarafından kontrol edilmesi nasıl olacak? Gözden geçirme nasıl olacak? Bunların da planlanması, tanımlanması gerekiyor.
+
+485
+01:46:17,328 --> 01:46:25,308
+Müşteri ekibi nasıl bir yapıda? Bu yapının da tanımlanması gerekir.
+
+486
+01:46:29,619 --> 01:46:37,440
+Proje anlamada yapılan işler, proje tanımlamada yapılan işler. Şimdi geldik projenin planlanmasına.
+
+487
+01:46:37,440 --> 01:46:52,659
+Yani az önce demiştim, nasıl ki yazılım geliştirmede hemen kodu yazmıyorsak planlamada da hemen plan adımlarımızı gerçekleştirmiyoruz.
+
+488
+01:46:53,020 --> 01:46:54,659
+Önce bir proje nedir?
+
+489
+01:46:55,252 --> 01:47:05,492
+Projenin beklandığı nedir? Yani hikayesi ne? Bu bir ekip üyesinden mi çıktı bu fikir? Yoksa yukarıdan mı?
+
+490
+01:47:06,036 --> 01:47:23,076
+Verildi yönetim tarafından mı? Ya da bir iş sırası dahilinde mi sıra şimdi bu işe geldi de bir proje isteniyor? Bunlar hep projenin anlaşılmasında. Kimler rol oynuyor?
+
+491
+01:47:24,083 --> 01:47:42,943
+Yani sistem analisti mi var, kod geliştirici mi var, veri tabanı uygulayıcısı mı var, bu projenin şeyleri kimler, müşteri tarafı nedir, müşterinin önceliği nedir, projenin anlama aşamasında bunların üzerinde duracağız hep.
+
+492
+01:47:44,467 --> 01:48:00,967
+Proje planlama aşamasında önce riskleri tanımlayacağız. Projenin riskleri nelerdir? Projenin kabulleri ve kısıtları nelerdir? Aslında önce kabul ve kısıtları belgeleyip sonra riskleri tanımlamak daha doğru.
+
+493
+01:48:11,155 --> 01:48:14,456
+Aktiviteler arasında bağlılık var mı?
+
+494
+01:48:17,115 --> 01:48:26,876
+Gereken işin tahmini, yani ne kadar iş gücü gerektiriyor?
+
+495
+01:48:27,996 --> 01:48:35,355
+Ve bunların kaynakların atanması, işe eleman atamada bu kaynak atamaya giriyor.
+
+496
+01:48:35,355 --> 01:48:37,615
+Ve seviyelendirilmesi.
+
+497
+01:48:38,228 --> 01:49:03,488
+İş listesinin milestone'larla eşleştirilerek bakılması, müşterinin gereksinimleriyle iş listesinin bakılması, proje bütçesinin oluşturulması, gerçekleştirmenin planlanması.
+
+498
+01:49:03,984 --> 01:49:13,984
+Ve iletişim nasıl sağlanacak bunun planlanması ve proje planının tam olarak hazırlanması.
+
+499
+01:49:13,984 --> 01:49:16,984
+Proje planlama aşamasında...
+
+500
+01:49:17,171 --> 01:49:31,551
+İşte şurası mesela bir madde proje planının hazırlanması. Ama proje planında neler var ve hangi işler yapılıyor projeyi planlamak için? Bu da önemli.
+
+501
+01:49:43,796 --> 01:50:09,536
+Belki önümüzdeki hafta, belki daha sonraki hafta şunları da göreceğiz. Bu aşamada proje planının yapılması aşamasında belki diğer derslerdeki çalışmalarıyla
+
+502
+01:50:11,091 --> 01:50:16,091
+Ders yardımcılığı aşamasındaki çalışmalarıyla.
+
+503
+01:50:16,991 --> 01:50:17,811
+Şimdi bakıyorum.
+
+504
+01:50:19,371 --> 01:50:22,572
+[öğrenci], buradasın değil mi?
+
+505
+01:50:26,963 --> 01:50:28,203
+Evet hocam, buradayım.
+
+506
+01:50:29,543 --> 01:50:38,604
+Bu aşamada önümüzdeki hafta veya daha sonraki hafta, önümüzdeki hafta da bunları ayrıntılı olarak göreceğiz.
+
+507
+01:50:40,724 --> 01:50:49,583
+Önümüzdeki hafta dersin sonunda ya da ondan sonraki haftanın başında olması belki daha iyi.
+
+508
+01:50:50,100 --> 01:51:04,440
+Senden bu sistem analizi dersinde anlattığın projek, MS Project konusunda bilgi vermeni isteyeceğim o derste yaptığın uygulamayı.
+
+509
+01:51:06,060 --> 01:51:06,819
+Tamam hocam.
+
+510
+01:51:07,940 --> 01:51:15,000
+Zamanı konusunda konuşuruz nasıl istersen. Önümüzdeki hafta dersin sonunda da olabilir.
+
+511
+01:51:15,667 --> 01:51:16,527
+Tamam hocam.
+
+512
+01:51:16,547 --> 01:51:18,987
+Bundan sonraki haftada başında olabilir.
+
+513
+01:51:21,307 --> 01:51:28,247
+Evet, şimdi demek ki projeyi anlama. Teşekkür ederim [öğrenci].
+
+514
+01:51:30,836 --> 01:51:37,155
+Projenin anlaşılması, projenin tanımlanması, projenin planlanması gerekiyor.
+
+515
+01:51:37,655 --> 01:51:48,376
+Ve planı oluşturmak için de önce bu işlemleri yapıp sonra tüm proje planını ancak hazırlayabileceğimizi görüyoruz.
+
+516
+01:51:58,515 --> 01:52:22,855
+Bir şey var, yazılım proje planı nasıl yazılır, plan dökümanı nasıl oluşturulur? IEEE software standartları içinde plan dökümanının nasıl hazırlanacağı da alt başlıklar halinde veriliyor.
+
+517
+01:52:26,323 --> 01:52:50,023
+Projenin çalıştırılması. Projenin çalıştırılması dediğimizde aslında bunu PMI'ın adımlarında running the project değil de tracking project.
+
+518
+01:52:50,576 --> 01:53:01,855
+Projenin izlenmesi ve kontrol edilmesi, kontrol ve tracking olarak da görebiliriz.
+
+519
+01:53:02,996 --> 01:53:14,315
+Plana göre projedeki ilerlemelerin izlenmesi, izleme sırasında ne yapılıyor?
+
+520
+01:53:14,771 --> 01:53:33,692
+Acaba etkin bir ekip oluşturduk mu? Acaba bütçeyi, iş listesini uygun oluşturduk mu? Bunları takip edebiliyor muyuz?
+
+521
+01:53:36,431 --> 01:53:39,692
+Tahminlerle gerçekleşenler arasında...
+
+522
+01:53:40,467 --> 01:54:05,087
+Bir kıyaslama gerçekleştirmemiz gerekiyor. Her aşamada, ki milestone diyoruz biz bunlara, kilometre taşları. Her kilometre taşında projemiz bizim planımıza uygun gidiyor mu? Bütçeyi aştık mı?
+
+523
+01:54:05,747 --> 01:54:28,087
+Zamanı aştık mı? Aştıysak B planımız ne olacak? Bunları takip etmemiz gerekiyor. Running the project aşamasında. Riskleri yönetebiliyor muyum? Proje yöneticisinin hep soruları olacak bunlar. Zaman problemleri çözebilir miyim?
+
+524
+01:54:28,756 --> 01:54:56,756
+Bu alan değişiklikleri her zaman için olacaktır. Proje bittikten sonra bile. Bu alan değişiklikleri için müşterinin istekleri olacaktır. Yani daha planlama aşamasında bile ilk alan tanımının dışında şunu da istiyoruz, bunu da istiyoruz, bu böyle olmayacaktı, yanlış anlatılmış gibi şeyler olacak.
+
+525
+01:54:56,756 --> 01:55:07,556
+Bunları yönetebiliyor muyuz? Kaliteyi yönetebiliyor muyuz?
+
+526
+01:55:13,971 --> 01:55:30,572
+Daha alt ayrıntıdaki yönetim işlemlerini yönetebiliyor muyuz? Bir de alt yükleniciler, subcontractor olarak burada tanımlanan alt yükleniciler var. Yazılım geliştirmede de artık çok kullanılıyor.
+
+527
+01:55:41,971 --> 01:56:04,451
+İçerik yönetimi, bunlar başka birisine verilebilir. Bunlarla ilişkiler, bunların sözlerini yerinde tutmaları, yerine getirmeleri, kontrolü önemli. Bunlarla iletişim önemli.
+
+528
+01:56:04,992 --> 01:56:11,711
+Teslim edilecekleri zamanında teslim ediyorlar mı? Zamanında teslim etmeleri için ne yapmamız gerekiyor?
+
+529
+01:56:13,451 --> 01:56:22,911
+Müşterinin beklentilerini karşılayabiliyor muyuz? Anlayabiliyor muyuz? Bu takip edilmeli.
+
+530
+01:56:23,032 --> 01:56:28,492
+Yani müşteri de hep şeyde tutulmalı. Zaten ecail de içinde tutuyoruz.
+
+531
+01:56:28,979 --> 01:56:51,060
+Toplantılar, ekip toplantıları düzgün yapılıyor mu? Etkin yapılıyor mu? Bunları daha etkinleştirmek için ne yapmamız gerekir? Proje durum raporları düzgün olarak veriliyor mu?
+
+532
+01:56:55,551 --> 01:57:16,171
+Zamanında bütün ilerlemeleri kaydedebiliyor muyuz? Takip edebiliyor muyuz? En sonunda da proje kapatma işini burada şey almış, başarılarımızı kutluyor muyuz ekip olarak?
+
+533
+01:57:16,884 --> 01:57:39,984
+Tabii ki kapatma projenin kapatılması sadece başarıları kutlanması ya da başarısızlıklara üzülmek değil, kayıt altına almak. Bir proje bitti, bu projeden izlenimler, bu projedeki kazanımlar, bu projeden kaynaklanan sorunlara nasıl çözüm bulduk?
+
+534
+01:57:40,372 --> 01:57:57,032
+Projedeki riskleri nasıl takip ettik? Bunlarla ilişkili bilgilerin kaydedilmesi. Ayrıca başka bir önemli bir şey, closing the project olarak da ayrı bir madde olarak ele alacağım bunu.
+
+535
+01:58:07,667 --> 01:58:24,527
+Elde edilen ürünün sonuçta büyüklüğü nedir, kaç botluk bir şey veya işlevsel olarak büyüklüğü nedir kalite dersinde görmüştük bu büyüklük ölçümlerini.
+
+536
+01:58:24,527 --> 01:58:28,967
+Bunların hesaplanması.
+
+537
+01:58:29,492 --> 01:58:32,831
+gerçekleştirilir.
+
+538
+01:58:34,032 --> 01:58:41,811
+İşte bu şey, proje yönetimi yol haritası diyoruz buna.
+
+539
+01:58:41,811 --> 01:58:51,091
+Bu kitapta da Project Management Roadmap, proje yönetimi yol haritası olarak verilmiş.
+
+540
+01:58:52,072 --> 01:58:54,572
+Buna istediğiniz tanımı verebilirsiniz.
+
+541
+01:58:54,751 --> 01:58:55,951
+Proje yönetim.
+
+542
+01:58:56,692 --> 01:59:22,612
+Aşamaları, proje yönetim adımları diyebilirsiniz. Burada bugün en çok bilmeniz gereken de proje planlamanın, proje yönetiminin bir alt başlığı olduğu, proje planlamanın dışında projenin anlaşılması, projenin tanımlanması.
+
+543
+01:59:23,220 --> 01:59:37,720
+Daha sonra projenin planlanması ve projenin çalıştırılması yani izlenmesi ve kontrolü da projenin yönetimi içindeki adımlardan birisidir.
+
+544
+01:59:37,720 --> 01:59:48,688
+Ve burada eksik olan da bir madde daha, projenin closing the project, projenin kapatılması. Bu roadmap aslında...
+
+545
+01:59:48,688 --> 02:00:15,107
+Bir checklist olarak bizim elimizde bulunacak. Sizin yaptığınız işlerde de işte projenin farklılığı anlaşıldı mı, projenin backgroundı anlaşıldı mı, projenin politikaları anlaşıldı mı, müşterinin önceliği anlaşıldı mı? Bunların hepsi projedeki gerçekleşen.
+
+546
+02:00:15,444 --> 02:00:40,344
+İşlemlerdir diyebiliriz. Bu kitapta bu şekilde verilmiş. Biz de derslerimizde bu çerçevede inceleyeceğiz. Bunlara ek olarak yazılı mühendisliği, Presman'ın yazılı mühendisliği kitabından da
+
+547
+02:00:40,671 --> 02:00:43,691
+eklemelerimiz olacak.
+
+548
+02:00:46,691 --> 02:01:01,551
+Şimdi, bu projeyle ilişkili anlama aşamasında neler yapıyoruz?
+
+549
+02:01:07,028 --> 02:01:27,648
+Bu proje niçin yapılıyor? Yani müşteri ne bekliyor? Bu iş verildi bize. Sonuçta ne isteniyor? Projenin bir tarihçesi var mı? Projedeki oyuncular kimler? Ve müşterinin önceliği nedir? Öncelikten ne kastediyoruz acaba burada?
+
+550
+02:01:30,836 --> 02:01:35,676
+Proje önceliği için bir tahminde bulunacak var mı?
+
+551
+02:01:37,676 --> 02:01:38,636
+[öğrenci]?
+
+552
+02:01:40,395 --> 02:01:48,136
+Hocam, burada şey olarak düşünebilir mi? Mesela kimisi maliyetini minimumda tutup hedefli olabilir.
+
+553
+02:01:48,136 --> 02:01:52,935
+Evet, evet. Müşteri önceliği.
+
+554
+02:01:54,612 --> 02:02:03,112
+Acaba mesela az önce bir örnek verdim. Sizin bu dersteki projelerinizde öncelik nedir?
+
+555
+02:02:05,311 --> 02:02:07,051
+Sürenin aşılmaması.
+
+556
+02:02:07,332 --> 02:02:17,252
+Evet, sürenin aşılmaması. Bu süreyi hatta aynı şeye örnek vermiştim. Süreyi aşmamak adına daha fazla iş gücü kullanabilirsiniz.
+
+557
+02:02:18,131 --> 02:02:38,072
+Birazcık belki süre yetişmedi, biraz kısabilirsiniz, bazı maddeleri daha kısa yazabilirsiniz ama modellemede biraz daha eksikleriniz olabilir ama önemli olan bitirmeniz, bir yerde ayrıntıya girip tamamlamamak en kötüsü.
+
+558
+02:02:38,484 --> 02:03:02,264
+Evet, müşteri önceliği dediğimizde, müşteri önceliğinden kastımız proje başarı faktörlerinden, başarı indikatörlerinden, göstergelerinden, zaman, bütçe, iş gücü veya ve kapsam.
+
+559
+02:03:02,612 --> 02:03:17,931
+Ve kalite. Bunların içinde önceliği nedir müşterinin? Onu anlayıp ona göre planlarınızın yapılması önceliğimiz olacaktır.
+
+560
+02:03:21,939 --> 02:03:28,559
+Evet, şimdi birkaç soru daha sorayım. [öğrenci] duyuyor musun?
+
+561
+02:03:32,692 --> 02:03:33,391
+[öğrenci].
+
+562
+02:03:34,391 --> 02:03:35,912
+Evet hocam, duyuyorum.
+
+563
+02:03:36,711 --> 02:03:43,192
+[öğrenci], sen bize proje tanımı yapar mısın? Proje nedir?
+
+564
+02:03:46,692 --> 02:03:54,652
+Proje geliştirilmek istenen sistemdir. Ekip tarafından.
+
+565
+02:04:00,595 --> 02:04:01,555
+Sesim geliyor mu?
+
+566
+02:04:11,475 --> 02:04:11,875
+Hallo?
+
+567
+02:04:17,076 --> 02:04:17,895
+Sesin geliyor.
+
+568
+02:04:22,931 --> 02:04:24,931
+Şu an geliyor değil mi sesim?
+
+569
+02:04:26,591 --> 02:04:27,391
+Evet, benim geliyor.
+
+570
+02:04:27,891 --> 02:04:31,912
+Pardon, ben demden beri konuşuyorum ama sesim kapatmışım, elim çarpmış.
+
+571
+02:04:33,252 --> 02:04:40,851
+Şöyle, proje yapılması gereken iştir dedin.
+
+572
+02:04:41,712 --> 02:04:42,332
+Evet.
+
+573
+02:04:43,851 --> 02:04:46,511
+Başka hangi özelliklerinin olması gerekiyor?
+
+574
+02:04:50,420 --> 02:04:52,260
+Bir işe proje dememiz için.
+
+575
+02:04:55,220 --> 02:04:58,300
+[öğrenci], sen ekleme yapar mısın?
+
+576
+02:05:05,043 --> 02:05:10,483
+Projede daha eklenmesi gereken derken neyi kastetliyorsunuz tamamlamadır hocam.
+
+577
+02:05:10,563 --> 02:05:12,523
+Yani proje tanımını sen yap bir de.
+
+578
+02:05:15,523 --> 02:05:30,644
+Proje yani belli bir iş veya uygulamanın tamamlanması için, belli bir iş veya uygulama için yapılan planlamadır diyeceğim.
+
+579
+02:05:32,275 --> 02:05:44,595
+Aslında bir, başlı başına bir iş. Proje tanımında olması gereken ne var? [öğrenci] sen söyler misin?
+
+580
+02:05:46,555 --> 02:05:50,795
+Evet hocam, şöyle en az iki kişiden oluşması gerekiyordu galiba.
+
+581
+02:05:51,795 --> 02:05:59,635
+Yani bu hani bir liste vermiştik. Olabilir maddelerden bir tanesi ama olmasa da olur.
+
+582
+02:06:00,564 --> 02:06:06,644
+Mesela size tek kişilik projede veriyoruz. Esas önemli olan şey nedir?
+
+583
+02:06:08,979 --> 02:06:11,000
+Bir probleme çözüm alabilir mi hocam?
+
+584
+02:06:11,380 --> 02:06:12,779
+Bir probleme çözüm.
+
+585
+02:06:12,979 --> 02:06:15,500
+Veya işte bir tasarlamak istenen, beklenen.
+
+586
+02:06:15,859 --> 02:06:18,880
+Evet ama rutin bir iş olmamalı tabii ki.
+
+587
+02:06:20,319 --> 02:06:23,500
+Belirli bir süreye kirliçerinde tamamlanması gerekiyor.
+
+588
+02:06:23,519 --> 02:06:32,039
+Belirli bir başlangıç süresi ve bitiş süresi. Kesin başlangıç süresi ve beklenen bir bitiş süresi olmalı.
+
+589
+02:06:32,532 --> 02:06:54,652
+Alt aktiviteleri olmalı. Yani tek bir iş değil genellikle. Alt aktivitelere bölünmeli ve yeni bir şey içermeli. Mesela şeyi örnek vermiştim. Telekom şirketinde her ay gelen faturalar var. Bunlar hazırlanmış, basılıyor.
+
+590
+02:06:55,055 --> 02:07:22,975
+Her ayki basım işlemi bir proje değil. Ama bu faturalara bir yeni ek, bir değişiklik formatında bir değişiklik yapma işi bir proje. İşte yeni fatura basılana kadar bitecek bir formattaki değişiklik işi. Ne olacak? Bu değişikliği yapmak için alt aktiviteler belirlenecek.
+
+591
+02:07:23,055 --> 02:07:25,996
+Her birinin başlangıç bitiş süreleri belli olacak.
+
+592
+02:07:27,555 --> 02:07:36,996
+Ve bunların tamamlanması için tek bir yol ya da farklı yollar denenerek tamamlanacak.
+
+593
+02:07:38,996 --> 02:07:44,115
+Bir de bir hedefi yerine getirecek.
+
+594
+02:07:44,511 --> 02:07:57,492
+Dolayısıyla bittiği zaman dışarıdan görünen ya bir somut ürün, ya bir hizmet, ya bir sosyal olay tamamlanmış olacak.
+
+595
+02:07:57,492 --> 02:08:08,572
+İşte bunlara da örnek verdik. Bir konferansın hazırlığının yapılması ve konferansın düzenlenmesi.
+
+596
+02:08:11,475 --> 02:08:21,796
+Piyasaya çıkması, pazarlama alanında bir çalışma yapılması gibi örnekler verdik.
+
+597
+02:08:28,659 --> 02:08:37,859
+Söz isteyen mi var? [öğrenci], sen bu unuttuğun için mi kaldı?
+
+598
+02:08:39,239 --> 02:08:41,920
+Şey unuttu, bir sürü gitmiyor ya.
+
+599
+02:08:42,760 --> 02:08:45,139
+Tamam, tamam. O sorunun ile onu bulursun.
+
+600
+02:08:46,779 --> 02:08:47,479
+Tamam hocam.
+
+601
+02:08:48,239 --> 02:08:48,539
+Tamam.
+
+602
+02:08:49,760 --> 02:08:52,519
+Makala bulmuştum, size göndermiştim.
+
+603
+02:08:52,779 --> 02:08:52,979
+Evet.
+
+604
+02:08:53,423 --> 02:08:58,423
+Yani proje ile ilişkili tanımda...
+
+605
+02:08:58,739 --> 02:09:17,800
+Bir işi, bir ürünü, bir sosyal uygulamayı, bir hedefi yerine getirmek var. Bir de net başlangıç süresi ve net bitiş süresi olmalı. Alt aktiviteleri olmalı.
+
+606
+02:09:26,739 --> 02:09:38,819
+Birden fazla alt işi, birden fazla çalışanı, hatta birden fazla departmanı ilgilendiren çalışmalar olduğunu görüyoruz.
+
+607
+02:09:44,180 --> 02:10:07,460
+Fazla kişi çalışmalıdır, mutlaka şu sayıdan fazla kişi çalışmalıdır gibi şeyler yok ama genellikle görülenler ve alt aktivitelerinin olması, net başlangıç bitiş zamanının olması ve bir hedefi yerine getirmesi en önemli özellikleri oluyor proje tanımının.
+
+608
+02:10:08,979 --> 02:10:12,899
+Bugünle ilişkili sorunuz var mı?
+
+609
+02:10:16,692 --> 02:10:39,171
+Öncelerim zorunluyorsa ben makala gösteriyordum. Siz bana için bir makala göndermişsiniz. Arkadaş bana yazdı. Sonra birçok makala buldum. Ben Scrum'la ilgili çalışmak istemiştim. Çünkü acayi ile en çok kullanılan metodoloji olarak.
+
+610
+02:10:40,851 --> 02:10:45,351
+düşünmüştüm. Onca da, bu süreçte proje yönetimi dersleri aldım.
+
+611
+02:10:46,291 --> 02:10:50,971
+Aklımda kalmış Scrum olarak.
+
+612
+02:10:52,971 --> 02:11:01,391
+Bu benim gelecekteki proje yönetimi ile ilgili, yaşayabileceğim en iyi konulardan olabilecek çalışmıştım.
+
+613
+02:11:01,391 --> 02:11:04,331
+Benim günlerden bir metabı var hocam.
+
+614
+02:11:05,351 --> 02:11:07,152
+Onun üzerinde zaman çalışıyorum.
+
+615
+02:11:08,979 --> 02:11:15,259
+Super Engineering Process and Metodology and Blockchain.
+
+616
+02:11:16,519 --> 02:11:20,479
+Evet, evet. O konuyu yapmanı istiyorum. Blockchain de önermek istiyorum.
+
+617
+02:11:20,479 --> 02:11:21,079
+Tamam, tamam.
+
+618
+02:11:21,159 --> 02:11:25,799
+Tamam.
+
+619
+02:11:28,539 --> 02:11:29,299
+Evet.
+
+620
+02:11:31,299 --> 02:11:34,039
+Konularınız konusunda sorusu olan var mı?
+
+621
+02:11:40,243 --> 02:11:42,344
+Büyük bir çoğunuzla konuştuk bugün.
+
+622
+02:11:47,347 --> 02:11:54,187
+Evet, bitirebiliriz o zaman dersi. Sorunuz var mı? Tekrar soruyorum. [öğrenci] burada mısın?
+
+623
+02:11:58,612 --> 02:12:00,292
+[öğrenci] çalışır.
+
+624
+02:12:06,323 --> 02:12:08,783
+Sesini açamıyor musun? [öğrenci] çağrı.
+
+625
+02:12:12,467 --> 02:12:16,967
+Evet, evet. Sesini açamıyorsun herhalde.
+
+626
+02:12:25,011 --> 02:12:32,611
+Senin [öğrenci] çalışır, sana cevap vermiştim konunla ilişkili.
+
+627
+02:12:42,579 --> 02:12:51,579
+Evet, bugün için bitiriyoruz dersi. Sorusu olan varsa dersi kapatmadan.
+
+628
+02:12:52,260 --> 02:12:53,600
+Hocam bir şey sorabilir miyim?
+
+629
+02:12:53,859 --> 02:12:54,399
+Tabii ki.
+
+630
+02:12:55,260 --> 02:12:59,800
+İki kişi yaptığımız zaman da yine üç makale üzerinden gidiyoruz. Daha fazla mı yapalım?
+
+631
+02:13:01,019 --> 02:13:03,279
+Siz kiminle çalışacaksınız?
+
+632
+02:13:04,059 --> 02:13:05,340
+[öğrenci].
+
+633
+02:13:05,779 --> 02:13:14,739
+Evet, şimdi daha kapsamlı bir konu seçin o zaman. Siz henüz seçmediniz değil mi? İlk defa mı geliyorsunuz?
+
+634
+02:13:15,340 --> 02:13:20,939
+Yok, derslere geliyorum da konu seçtik ama makale seçme konusunda biraz zorlanıyoruz.
+
+635
+02:13:22,219 --> 02:13:25,939
+Makale tekliflerinizi yapın bana bu hafta içinde.
+
+636
+02:13:27,188 --> 02:13:29,307
+Tamam, gün içerisinde ben size göndereceğim hocam.
+
+637
+02:13:29,608 --> 02:13:42,188
+Tamam, yani biraz daha kapsamlı olsun. Böyle birbirini takip eden, aynı konu içinde birbirini takip eden bölümler olsun. Yani ikiniz aynı şeyi anlatmayın da bölümlerinizi ayırın.
+
+638
+02:13:43,228 --> 02:13:44,167
+Tamam hocam, teşekkür ederim.
+
+639
+02:13:44,167 --> 02:13:45,948
+İyi günler.
+
+640
+02:13:47,228 --> 02:13:50,747
+Evet, iyi haftalar diliyorum. Dersi bitiriyorum.
+
+641
+02:13:51,188 --> 02:13:53,728
+Bir şey soruyorsun? Tamam.
+
+642
+02:13:54,752 --> 02:14:06,471
+Pardon, ben bir şey sormak istiyorum. Kısa bir şey sormak istiyorum. Benim makalemle arakalı bir şeydi de. Startup'taki belli bir modellerle ilgili bir makaleydi benimki.
+
+643
+02:14:06,752 --> 02:14:08,332
+Evet, yazmışım buraya.
+
+644
+02:14:09,112 --> 02:14:15,891
+O makale üzerine daha fazla eklememi istediğiniz bir şey var mıydı? Yani önceki çalışmalarını…
+
+645
+02:14:15,891 --> 02:14:17,332
+Çok kapsamlı bir şey.
+
+646
+02:14:17,775 --> 02:14:21,636
+Onu bize anlatabilmen yeterli.
+
+647
+02:14:22,055 --> 02:14:22,636
+Tamam hocam.
+
+648
+02:14:23,136 --> 02:14:28,076
+Örnekler filan var. Bakalım nasıl olacak? İlerledikçe çalışman konusu.
+
+649
+02:14:28,756 --> 02:14:29,015
+Tamam.
+
+650
+02:14:29,596 --> 02:14:32,096
+Tamamdır. İyi haftalar diliyorum.
+
+651
+02:14:33,576 --> 02:14:34,115
+İyi haftalar.
+
+652
+02:14:34,115 --> 02:14:36,015
+Teşekkürler hocam. İlerle iyi haftalar.
+
+653
+02:14:36,336 --> 02:14:38,176
+Teşekkürler. Sağ olun.
