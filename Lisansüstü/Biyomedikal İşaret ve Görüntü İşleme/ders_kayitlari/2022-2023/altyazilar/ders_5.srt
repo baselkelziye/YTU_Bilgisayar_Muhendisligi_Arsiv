@@ -1,0 +1,1687 @@
+1
+00:00:11,923 --> 00:00:12,603
+Merhaba hocam.
+
+2
+00:00:15,564 --> 00:00:17,364
+Merhabalar arkadaşlar.
+
+3
+00:00:20,243 --> 00:00:21,823
+Merhaba hocam.
+
+4
+00:00:26,324 --> 00:00:28,324
+Nasılsınız, iyisiniz?
+
+5
+00:00:30,324 --> 00:00:32,323
+İyiyiz hocam, nasılsınız?
+
+6
+00:00:32,323 --> 00:00:33,323
+Sağlısınız.
+
+7
+00:00:34,323 --> 00:00:36,323
+[öğrenci] senden başlayalım.
+
+8
+00:00:38,323 --> 00:00:40,323
+Merhaba hocam.
+
+9
+00:00:40,323 --> 00:00:43,323
+Merhabalar, ekran paylaşımı da yapabilirsin.
+
+10
+00:00:43,323 --> 00:00:46,219
+Tamam, paylaşalım.
+
+11
+00:00:53,555 --> 00:00:54,655
+Şu an görünüyor mu hocam?
+
+12
+00:00:54,915 --> 00:00:55,676
+Görünüyor, evet.
+
+13
+00:00:56,756 --> 00:00:56,975
+Tamam.
+
+14
+00:00:58,155 --> 00:01:00,095
+Hocam şöyle bir özet geçeyim ben.
+
+15
+00:01:00,695 --> 00:01:05,835
+Ben şu Covid datasında çalışıyordum.
+
+16
+00:01:08,896 --> 00:01:12,415
+Bununla ilgili bir tane şey bulmuştum.
+
+17
+00:01:14,176 --> 00:01:15,835
+Vapers with Code'da.
+
+18
+00:01:18,735 --> 00:01:20,615
+Sadece şu oradan bakayım.
+
+19
+00:01:21,087 --> 00:01:43,407
+Papers with Code'da bir tane çalışma bulmuştum hocam. O çalışma üzerinden yerliyordum. Şu çalışma. Şimdi bu çalışmada şey kullanılıyordu, Coco Veri Tabanı kullanılıyordu. Coco Veri Tabanı'nda 80 tane sınıf var hocam.
+
+20
+00:01:43,763 --> 00:02:08,543
+Bu 80 tane sınıf için Graph Neural Network çalıştırıyorlardı. Ben de bu çalışmanın kodlarını bulup onu implement etmeye çalışıyordum. Kendi problemimi. Şöyle bir sorunla karşılaştım. Şimdi kodları implement ederken şeyi fark ettim.
+
+21
+00:02:09,780 --> 00:02:32,719
+Şurada, Adjacency Matris diye bir matris var bu Graph Convolutional Networklerde. Bu Adjacency Matris'in de nasıl oluşturulduğundan biraz bahsetmiştim. Hani aşağı yukarı biliyorum nasıl oluşturulduğunu ama bu proje için nasıl oluşturulduğunu tam anlayamadım. Bunu dışarıdan ekliyor projeye.
+
+22
+00:02:37,331 --> 00:02:59,032
+Pickle dosyası var. Bu Pickle dosyasında adjacency matrisi dışarıdan import ediyor. Dolayısıyla bunun önceden oluşturulmuş olması gerekiyor. Nasıl bir matris bu? Kaça kaç bir matris bu? 80'e 80 bir matris hocam. Bu şekilde bir yapısı var. Böyle buldum. Bunun sınıf bazında bizde kaç sınıf var?
+
+23
+00:03:02,259 --> 00:03:21,199
+Seçtiğim dataset'te 4 tane sınıf vardı. O zaman sen de 4'e 4 bir matris oluşturacaksın. Rastgele değerlerle başlat. Ondan sonra sınıfların kaç tane... Yaklaşık bu Adj-Jessins matris, sınıfların birbirleriyle olan ilişkisini gösteren bir matris diye tahmin ediyorum.
+
+24
+00:03:23,092 --> 00:03:32,232
+Dolayısıyla ona benzer matrisleri oluştursana mesela. Tamam. Ben de işte hocam onu şey yapacaktım. Hani rastgele mi oluşturayım yoksa belli bir anlamı var mı?
+
+25
+00:03:32,252 --> 00:03:41,292
+Rastgele yap. Ondan sonra mesela orada okuduğunda mesela bu değerleri nasıl elde etmiş? Onu bir oku olmadı.
+
+26
+00:03:41,743 --> 00:03:54,324
+Ondan sonra başka bir yöntemle kendimiz şu Adjil sin matrisi oluşturabilir miyiz? Mesela bir ön sınıflandırıcıya verip onlarla beraber hemen bakıyorum.
+
+27
+00:04:01,460 --> 00:04:01,960
+Hmm.
+
+28
+00:04:07,027 --> 00:04:12,407
+Şimdi bu connection'ları gösteriyor. Şeyler arasındaki, nodlar arasındaki, sınıflar arasındaki.
+
+29
+00:04:14,447 --> 00:04:18,327
+Bunu nasıl oluşturabiliriz? Biraz bunun üzerine bir kafa yormak lazım.
+
+30
+00:04:19,548 --> 00:04:33,487
+Şimdi sınıflar arası, sınıfların mesela bir kümeleme yapıp sınıf merkezlerinin birbirine olan uzaklıklarını mesela adjacent simatrisi verebiliriz. Bir de bu.
+
+31
+00:04:33,908 --> 00:04:52,528
+Mesela bu Adjacency Matrice'inin eleman sayısı kaç olacak? Toplam kullandığımız sample sayısı mı? Bunları kullanarak bir şey Adjacency Matrice oluşturma şey yaparız. Ne demiş burada?
+
+32
+00:05:00,980 --> 00:05:14,259
+Bu çalışmada hocam galiba görüntüdeki sınıf içeren nesnelerin, mesela insan, top, tenis raketi gibi bunları herhalde...
+
+33
+00:05:14,259 --> 00:05:22,300
+Biz burada da bakabiliriz mesela şeyle bakabiliriz. Evet, küme merkezlerinin uzaklıklarını mesela bir şekilde koyabiliriz belki buraya.
+
+34
+00:05:23,668 --> 00:05:43,267
+Başka bir Graph Conditioned Network kodu yok mu? İlla bunda mı çalışmak zorundayız? Benim aklıma ilk gelen şey Graph Adjacency Matrisi oluşturmada rastgele bir başlatırız. Ondan sonra bu Adjacency Matrisi geliştirebilir miyiz iteratif olarak? Onlara bakardım mesela.
+
+35
+00:05:43,987 --> 00:05:59,787
+Ama önemli olan programın çakmaması için, bu Adderjans'ın matrisinde toplam kaç eleman olmalı? Onların dağılımının değişmesi. Mesela rastgele başlatırım. Her seferinde rastgele başlatarak bir bakarım mesela.
+
+36
+00:05:59,787 --> 00:06:01,787
+Tamam.
+
+37
+00:06:04,372 --> 00:06:16,852
+Ve de bizde 4 tane sınıf varsa şahit, sağlıklı sınıfın haricindeki diğer sınıfların birbirleri olan ilişkileri gibi çıkarılabilir mesela.
+
+38
+00:06:18,692 --> 00:06:25,092
+Hocam ben o konuda bir araştırma yapayım. Adjacency Matrix'i nasıl oluşturabilecek mi dair?
+
+39
+00:06:25,092 --> 00:06:27,331
+Oradan bir tekrar...
+
+40
+00:06:27,331 --> 00:06:30,532
+Mesela ne demek? What is Adjacency Matrix Design?
+
+41
+00:06:31,540 --> 00:06:37,540
+İnteryar Design, Asimansiz, Table, Dead, Show, Space, Shoot, Dizim, Aminity, Each Other Plan.
+
+42
+00:06:37,540 --> 00:06:39,540
+Buraya bir bakayım.
+
+43
+00:06:41,540 --> 00:06:46,540
+Bunu bir araştır. Sanki bununla alakalı bir çözüm bulabilecek gibi duruyoruz ya.
+
+44
+00:06:46,540 --> 00:06:51,540
+Bibiyle alakalı sınıfları yükseltiyoruz bağlantısını diye düşünüyorum.
+
+45
+00:06:53,540 --> 00:06:54,540
+Tamam hocam.
+
+46
+00:06:55,091 --> 00:06:59,891
+Burada nasıl kullanmış mesela, Additions'ın maddesi ben yükledim falan diyor mu?
+
+47
+00:06:59,891 --> 00:07:07,091
+Bu makalede nasıl bahsettiğine bakmadım da hocam. Hani kodlardan ilerledim.
+
+48
+00:07:07,091 --> 00:07:16,492
+Yani koddan, ben senin yerine olsam şey yaparım, tam oraya geldiği zaman koddan çektiği zaman 80 sınıfa nasıl bir şey yapmış mesela?
+
+49
+00:07:16,627 --> 00:07:23,708
+Onu bir plot ettirebilir misin? Two Dimensional bir çektikten sonra bir bakabilir miyiz oraya?
+
+50
+00:07:24,468 --> 00:07:27,067
+Hani kod da oraya kadar gelsin be.
+
+51
+00:07:27,788 --> 00:07:31,388
+Oraya kadar çalışır. Orada şey koy.
+
+52
+00:07:31,708 --> 00:07:36,427
+Evet. Debug moduna girebiliyorsun değil mi? Oraya kadar çalıştırabiliyorsun.
+
+53
+00:07:37,300 --> 00:07:49,180
+Şu anda çalışacak şekilde ayarlamadım hocam. Kole üzerinden çalıştırabilirim. Ben olsam mesela öyle gelirim. Yükledikten sonra nasıl bir matrizmiş bu? Ona bir bakarım mesela.
+
+54
+00:07:49,180 --> 00:08:02,040
+Tamam hocam. O şekilde bakayım ben de. Kodları incelediğim zaman bir şu satırı biliyorum.
+
+55
+00:08:03,732 --> 00:08:23,132
+Generate A diye bir şey var. Fonksiyon var. Generate A ne yapıyor? Bu Generate A hocam, Class Number'ı alıyor. 80. T diye bir threshold var muhtemelen. Bir de Adjacency File var. Bu Adjacency File işte şurada gösterdiğim.
+
+56
+00:08:23,132 --> 00:08:30,492
+Aldo onu Adjacency File alıyor. Şu file'ı alıyor. Niye Pickle diye bir şey kullanmış orada. Kütüphane çağırmış.
+
+57
+00:08:31,028 --> 00:08:40,188
+Bu muhtemelen hocam. Önceden oluşturulmuş bir matriz. Ki ben bunu açtım. Açtıktan sonra şunu elde ettim zaten.
+
+58
+00:08:40,528 --> 00:08:42,508
+Bunu iki boyutlu çizdirebiliyor musun mesela?
+
+59
+00:08:44,868 --> 00:08:45,508
+Efendim hocam?
+
+60
+00:08:46,048 --> 00:08:48,048
+Bunu iki boyutlu çizdirebiliyor musun acaba?
+
+61
+00:08:50,048 --> 00:08:51,048
+Ona hiç bakmadım hocam.
+
+62
+00:08:51,048 --> 00:08:56,048
+Resim gibi mesela bunu bir çizdirsene bize. Metlab'de veya şeyle Python'da.
+
+63
+00:08:56,403 --> 00:09:14,824
+Load ettir bunu. Kendin de bir bak bakalım. Nasıl bir maktos oluşuyormuş? Merak ettim. Her bir satırı kaydırsana şöyle bir mesela. Mesela satırların maksimum olduğu yerler var herhalde. Bir de diğer sınıflara belli ufak bağlantıları var anladığım kadarıyla.
+
+64
+00:09:14,824 --> 00:09:23,064
+Bir de şey hocam, buradaki şeyler belki number ile alakalıdır. Bir de number output'u var buna.
+
+65
+00:09:25,011 --> 00:09:29,011
+Her bir sınıftaki şey sayısı mı bu?
+
+66
+00:09:29,011 --> 00:09:35,011
+Bunu tam olarak bilmiyorum hocam. Onu bir kontrol ederdim ben senin de olsa.
+
+67
+00:09:35,475 --> 00:09:59,975
+Yani uyuşuyorsa bunlar, demek ki sınıftaki sample dağılımıyla alakalı bir şey. Mesela bir satırda o sınıfa, örneğin 14. satır, 5968 tane mi mesela o satıra diğer sınıflarla olan bağlantısını buluyor. Yani onu anlamaya çalışırım, ona göre kendim oluştururum. Yani noveltisi o olur belki senin çalışmanın. Bu farklı bir problemi uyarlar.
+
+68
+00:10:00,000 --> 00:10:05,000
+Bu örneğe bakalım.
+
+69
+00:10:10,259 --> 00:10:12,639
+Tamam hocam, ben bunu araştırayım.
+
+70
+00:10:14,779 --> 00:10:23,959
+Evet, tamam. Sırada kim var? [öğrenci]. Seninle en son konuşacaktık. [öğrenci]?
+
+71
+00:10:26,059 --> 00:10:27,059
+Merhaba hocam.
+
+72
+00:10:27,619 --> 00:10:28,239
+Merhabalar.
+
+73
+00:10:28,979 --> 00:10:36,499
+Hocam ben bazı çok bir şey yapamadım. Benim resimde bir resimde 50.
+
+74
+00:10:36,980 --> 00:10:41,180
+500 tane fücre var diyelim. Ben ondan tamamen yeni bir imaj dosyası yaptım.
+
+75
+00:10:41,180 --> 00:10:47,480
+İşte boyutlarını 24'ye 24'ye sabitleyip resmete vereceğim. Bir CNN algoritmasına vereceğim.
+
+76
+00:10:47,480 --> 00:10:51,480
+Orayı hiç tam anlayamadım. Sen resimleri mi birleştirdin dedin?
+
+77
+00:10:51,480 --> 00:10:53,480
+Resimleri ayırdım.
+
+78
+00:10:53,480 --> 00:10:55,480
+Ayırdın? Evet.
+
+79
+00:10:55,480 --> 00:10:57,480
+Pech'lerle ayırdın değil mi?
+
+80
+00:10:57,480 --> 00:11:01,480
+Aynen, pech'lerle ayırdım. Onu bir CNN modeline vereceğim.
+
+81
+00:11:02,196 --> 00:11:05,855
+Öyle düşünüyorum. Bunu geçen hafta yapacaktım.
+
+82
+00:11:06,576 --> 00:11:13,696
+Yani, CNN'i baştan mı oluşacaksın yoksa hani,
+
+83
+00:11:13,696 --> 00:11:17,235
+standart transfer verme yöntemlerini kullanacak mısın?
+
+84
+00:11:17,235 --> 00:11:19,355
+Standart bir model kullanacağım herhalde.
+
+85
+00:11:19,764 --> 00:11:30,024
+Orada farklı yöntemler kullan. Inception, EfficientNet, RestNet, DanceNet gibi kullan. Ondan sonra Semisupervised'e doğru kayman gerekiyor değil mi?
+
+86
+00:11:30,024 --> 00:11:32,743
+Aynen. Evet. Ondan sonra bunu gördükten sonra Semisupervised'e doğru kayman gerekiyor.
+
+87
+00:11:32,743 --> 00:11:43,043
+Final haftası geliyor. Arkadaşlar, bizim final sınavımız ne zaman olacak? Demin şeyde açıktı. İkinci hafta değil mi?
+
+88
+00:11:44,103 --> 00:11:46,683
+İkinci hafta çarşamba veya perşembeydü sanırım.
+
+89
+00:11:47,056 --> 00:11:53,420
+Hemen bakıyorum.
+
+90
+00:11:58,580 --> 00:12:23,260
+Bizim lisans üstü sınavımız arkadaşlar, ikinci hafta çarşamba günü saat 14'te. Çarşamba günü, perşembe değil dikkat edin. Önümüzdeki hafta çarşamba günü final sınavımız var. Final sınavı arkadaşlar, bunun tarihleri doğru mu?
+
+91
+00:12:24,148 --> 00:12:35,268
+Final sınavımız arkadaşlar saat 14'te başlıyor çarşamba günü 18 Ocak'ta. Herkes gelsin. Çünkü orada yazıl sınav yapacağım. Oldu mu?
+
+92
+00:12:38,087 --> 00:12:39,768
+Konu kapsamın olacak hocam?
+
+93
+00:12:40,087 --> 00:12:43,627
+Konu bizim anlattığımız teorik kısım vardı ya. O kısım olacak.
+
+94
+00:12:44,727 --> 00:12:45,908
+İşlemli kısımlar.
+
+95
+00:12:46,487 --> 00:12:47,727
+Evet, evet, evet. Aynen.
+
+96
+00:12:47,727 --> 00:12:47,807
+Evet.
+
+97
+00:12:52,500 --> 00:12:56,500
+Sırada kim gösteriyor? Ondan sonra biraz hızlanman gerekiyor.
+
+98
+00:12:56,500 --> 00:13:03,211
+Çünkü, neler yapacaksınız, bence bu haftayı iyi değerlendirin derim ben size.
+
+99
+00:13:07,155 --> 00:13:23,735
+Ben bu arada şeyi de söyleyeyim arkadaşlar. Bizim final sınavımızda notlar ne olursa olsun yüksekte alabilirsiniz. Şey de yapabilirsiniz. Perşembe günü hemen ertesi günü şeyleri göstermez. Yine ders saatinde dersimiz olacak bizim.
+
+100
+00:13:24,244 --> 00:13:46,184
+Yani önümüzdeki perşembe de dersimiz olacak. Yani projeleri göstermeye devam edeceğiz. 12'si perşembe de devam edeceğiz. Ve de 19'u perşembe de devam edeceğiz. Yani çarşamba finalden bir gün sonra tekrar proje gösterimleri tekrar olacak arkadaşlar.
+
+101
+00:13:46,932 --> 00:14:03,852
+Biliyorsunuz, ne demiştim? Ekstra süre kazandırmak için size. Finallerde bitmemiş projeleri geçirmeyeceğim. Onları BÜT için DC ile BÜT'e aktaracağım. Bir hafta daha kazanmış olacağız. Anlaştık mı?
+
+102
+00:14:07,852 --> 00:14:09,932
+Evet, [öğrenci]'ı da geçtik.
+
+103
+00:14:11,732 --> 00:14:12,172
+Evet.
+
+104
+00:14:12,628 --> 00:14:37,228
+Kim var? [öğrenci]. Merhaba hocam. Merhabalar. Hocam ben pek bir şey yapmadım. O yüzden sanırım yorum yapmam doğru olmaz. Yani birkaç... Arkadaşlar ben genel olarak söyleyeyim size. Ders olmayınca biraz gevşeme hissediyorum herkesle.
+
+105
+00:14:37,696 --> 00:14:51,155
+Hani seneye bir online yapmayacağım, bu kolaylığı sağlamayacağım büyük ihtimalle. Herkes ders yokmuş gibi algılayıp bir şey yapmıyor. Dönem sonunda boşuna bir yarım döneminizi geçirmiş olmayın.
+
+106
+00:14:53,395 --> 00:14:56,915
+Önümüzdeki hafta da yoktunuz. Geçen hafta yok. Geçen hafta.
+
+107
+00:14:56,915 --> 00:15:04,435
+15'inde en son katılmışsınız. 20 gün geçmiş. 20 günde hiçbir şey yapılmamış. Sıfır.
+
+108
+00:15:05,299 --> 00:15:10,240
+Yani denedim birkaç da elle tutulur değil hocam.
+
+109
+00:15:11,299 --> 00:15:19,899
+Yani yaptıklarınızı en azından anlatın ki ben sizi başka yerlere yönlendireyim veya yöntemsel olarak yönlendireyim diye söyledim bunları.
+
+110
+00:15:20,100 --> 00:15:23,460
+Hocam siz bana şey demiştiniz, self-aware wise demiştiniz.
+
+111
+00:15:25,587 --> 00:15:47,727
+Ben senin yanında olsam önce transfer öğrenme yöntemleriyle elimdeki dataset yüzde kaç klasifikasyon oluyor onu bir denerim ön başta. Ondan sonra self-supervised yöntemlerine geçiş yaparken ne sorunlarla karşılaştığını ben senin bilirsem seni ona göre hem yöntemsel olarak yenileyebilirim hem de farklı şeyleri gönderebilirim.
+
+112
+00:15:48,371 --> 00:15:51,771
+Hocam bence Self-supervised biraz ağır geldi bana.
+
+113
+00:15:52,251 --> 00:15:54,211
+Şu an söylememek lazım bunu.
+
+114
+00:15:55,391 --> 00:15:55,831
+Öyle mi?
+
+115
+00:15:56,371 --> 00:16:01,891
+Yani Self-supervised illa ben konu değiştirilebilir dedim.
+
+116
+00:16:03,572 --> 00:16:09,531
+Dolayısıyla Self-supervised olmayınca ilk başta bir transfer öğrenme yöntemlerini bir dene bakalım.
+
+117
+00:16:09,731 --> 00:16:11,052
+Önce bir data setini tanıt.
+
+118
+00:16:11,731 --> 00:16:26,071
+Ondan sonra kaç sınıftan oluşuyor, ne yapıyor? Normalde ben bunu transfer öğrenmeyle yapsam ne elde edeceğim? Bunlara bir bakalım. Ondan sonra bu konuyu bir şey yaparız. Gidişatını tekrar belirleriz.
+
+119
+00:16:27,591 --> 00:16:28,691
+Tamam, teşekkürler.
+
+120
+00:16:36,115 --> 00:16:48,975
+Evet. Kim vardı? [öğrenci]. Merhaba hocam. Ben ekran içeyim. Evet [öğrenci].
+
+121
+00:16:52,788 --> 00:17:15,596
+Geldi mi yolunca? [öğrenci] paylaşımı başlatıldı diyor. Ben tamamdır. Code kısmına geçtim. Burada ilk kısmına segmentasyon model... Hangi dataset ile çalışıyordun sen? İndirdim zaten. Bir saniye hangi dataset ile çalışıyordun? Nucleek dataset demişsiniz. İki çınları...
+
+122
+00:17:16,468 --> 00:17:26,468
+Nucleek. İçinde iki tane dataset vardı. Biri hem autodata, diğeri ırhacı, lamp bezlerle alakalı bir dataset. Tamam.
+
+123
+00:17:28,468 --> 00:17:34,468
+Güzel. Burada kütüphaneleri import ettim. Sen segmentation yapıyorsun değil mi?
+
+124
+00:17:34,468 --> 00:17:40,428
+Datasetten bir tane örnek çıktı gösteriyorum. Tamam. Evet, segmentation. Tamam.
+
+125
+00:17:43,667 --> 00:17:51,507
+Burada kodlar var. Benim diplop demiştiniz de ben diğerlerine de bakmak için şu şekilde buraya tanımladım bunları.
+
+126
+00:17:52,248 --> 00:18:00,147
+Sen farklı farklı şeyleri tanımladın. Segmentation yöntemleri tanımladın. PSP.NET'i tanımladın.
+
+127
+00:18:03,147 --> 00:18:08,807
+Altı tane. Sonra bunların training'ini yine aldım.
+
+128
+00:18:12,596 --> 00:18:18,596
+Şurada ufak bir sıkıntıyla karşılaştım. Vücuda, Autof Memory diye. Bunu çözemedim.
+
+129
+00:18:19,596 --> 00:18:33,596
+Bilgisayarda mı çalışıyorsun? Acaba bunu şeye yüklesen, Google CalleB'ye yüklesen acaba senin bilgisayarın hafızası mı yetmiyor?
+
+130
+00:18:37,907 --> 00:18:42,268
+Bilgisayar hafızası derken GPU hafızası mı yoksa normal SSD olarak mı?
+
+131
+00:18:42,268 --> 00:18:46,228
+Hayır hayır, şey söylüyorum. RAM ve de GPU hafızası.
+
+132
+00:18:46,228 --> 00:18:48,667
+Çünkü şey kullanıyor, GPU kullanıyor.
+
+133
+00:18:48,667 --> 00:18:51,788
+Onu demek istiyorum. Acaba Google Kolebek'e...
+
+134
+00:18:51,788 --> 00:18:55,307
+Aslında 4 GB şey var.
+
+135
+00:18:55,307 --> 00:18:59,307
+Şöyle yapabilirsin, hafızayı da sorun yaratan...
+
+136
+00:18:59,471 --> 00:19:08,031
+Mesela görüntüyü yükledin, işledin. Eski görüntü kalmasın mesela. Eski mesela hafıza yönetimini iyi yapabilmek lazım.
+
+137
+00:19:08,571 --> 00:19:20,531
+Burada problem Nvidia. Cuda'yı kullandığı için Nvidia spesifik bir metot. Dolayısıyla Nvidia değilse ekran kartı bu hatayı alıyor.
+
+138
+00:19:20,692 --> 00:19:22,311
+Nvidia ekran kartı kapatması lazım.
+
+139
+00:19:24,311 --> 00:19:25,991
+Nvidia ekran kartı mı?
+
+140
+00:19:26,612 --> 00:19:38,731
+Ama onu bir kontrol etsen sanki ben de benzer hatayı aldım, onları judaların hepsini remove ettim, çalıştı bende. Bir denersen istersen. Kusura bakmayın, araya girdim ama.
+
+141
+00:19:38,731 --> 00:19:44,532
+Ne yaptın, ne yaptın? Zaten amaç bu. Hep beraber şey yapabilmek, beraber konuşabilmek zaten.
+
+142
+00:19:44,711 --> 00:19:46,632
+Hocam, bende bir tavsiye de bulunabilir miyim?
+
+143
+00:19:46,912 --> 00:19:47,092
+Tabii.
+
+144
+00:19:47,572 --> 00:19:52,932
+Buradaki batch size'ı düşürürse muhtemelen biraz daha belki sonuç alabilir çünkü.
+
+145
+00:19:53,471 --> 00:20:01,471
+4 GB GPU hafızası, Batch Size 32 olduğu için belki yetersiz geliyordur.
+
+146
+00:20:01,471 --> 00:20:02,471
+Evet.
+
+147
+00:20:02,471 --> 00:20:12,319
+Batch Size'ları biraz azalt. İkincisi eğer senin şu anda arka planında...
+
+148
+00:20:12,319 --> 00:20:30,160
+Arka planında şey varsa şayet, gereksiz mesela kullanıp kenarda tuttuğun, hafızada tuttuğun şeyler varsa, bu GPU'nun hafızasından mı veriyor hatayı yoksa normal senin kendi RAM'iyle mi alakalı onu da tam bilemiyorum şu anda.
+
+149
+00:20:30,160 --> 00:20:33,120
+Yani GPU yazıyor aşağıda da.
+
+150
+00:20:33,120 --> 00:20:34,319
+Bakayım nerede?
+
+151
+00:20:34,319 --> 00:20:36,319
+Ha, CUDA AutoCMEM'i.
+
+152
+00:20:36,319 --> 00:20:38,319
+Ha, CUDA. Ha, CUDA mi olmadı.
+
+153
+00:20:39,188 --> 00:20:59,948
+Dediğim gibi Google Colab'e de bunu biraz uyarlayabilirsin. Orada çalıştır mesela bunu. Nispeten bu hafıza sorunlarını gidip hiç bu tarz böyle şeyi Google Colab'de bu tarz böyle şeyi alan oldu mu? Bu tarz bir hata alanı oldu mu Google Colab'de çalışan çalışıp da?
+
+154
+00:20:59,948 --> 00:21:06,428
+Hocam, Google Colab'de 12 GB GPU hafıza alanı var.
+
+155
+00:21:07,188 --> 00:21:15,188
+Eğer batch size yükseltirseniz 12 GB'den fazla olursa yine orada da böyle hata veriyor.
+
+156
+00:21:15,188 --> 00:21:21,100
+Tamam. Peki Kegel'ın notebook'unu kullanan var mı?
+
+157
+00:21:24,788 --> 00:21:29,788
+Oradan ben tavsiyem bir çalıştır mesela bu 16'yi indirdiğin halinde.
+
+158
+00:21:32,788 --> 00:21:34,788
+Yine aynı atayla çalıştırdım şu an.
+
+159
+00:21:35,788 --> 00:21:38,788
+Sen bunu bir Google Kolebe bir tanı, şey yapsana.
+
+160
+00:21:43,892 --> 00:21:46,092
+Tamam, onu daha sonra yapayım.
+
+161
+00:21:46,932 --> 00:21:50,971
+Çalışıyordu galiba şu anda değil mi? Daha patlamadı gerçi.
+
+162
+00:21:54,579 --> 00:22:00,079
+Evet, çalışıyor şu anda. Progrest ediyor ama yavaş çalışıyor herhalde değil mi?
+
+163
+00:22:03,700 --> 00:22:08,420
+Yok, tanımlanmış Yıldız yok. Hata verdiğim ben.
+
+164
+00:22:08,980 --> 00:22:10,700
+Ya bu tarz şeyler hatalar...
+
+165
+00:22:11,892 --> 00:22:39,892
+Bu tarz hataları, önce Google Colab'e bir taşı bunu, öyle bir bak. Ondan sonra bu tarz böyle hataları özellikle proje yaparken hataları bir araştırın. Yani sizinle benzer hataları alanlar var mı? Veya işte bu hatayı yazıp mesela backtrace edip hafıza sorunları nasıl giderilmiş onlara bir bakılabilir. Olmadı eğitim datasetini biraz düşürün.
+
+166
+00:22:39,892 --> 00:22:44,412
+Orada fazlalık oluşturuyorsa gibi.
+
+167
+00:22:47,572 --> 00:22:53,332
+Genelde boyut düşürme yönelik çalışmalar yapılmış. Denedim olmadı o da.
+
+168
+00:22:55,772 --> 00:23:04,872
+Bunu bir Google Kolebe kaşıyıp bana bir sonucu bildirsene bu problemin üstünden. Ama hızlı ol. Diğer perşembeyi bekleme. Mail atabilirsin.
+
+169
+00:23:06,451 --> 00:23:08,052
+Tamam, ben olarak atayım.
+
+170
+00:23:08,052 --> 00:23:10,932
+Tamam, yani bu sorunu hızlıca çözmemiz lazım.
+
+171
+00:23:13,572 --> 00:23:15,172
+Evet, [öğrenci] dedi.
+
+172
+00:23:20,180 --> 00:23:23,180
+Hocam bana mı seslendi acaba internetin kötü de?
+
+173
+00:23:24,180 --> 00:23:25,180
+Efendim?
+
+174
+00:23:26,180 --> 00:23:30,180
+Bana mı seslendi acaba internetin kötü de?
+
+175
+00:23:30,180 --> 00:23:33,180
+Evet evet, size seslenmiştim.
+
+176
+00:23:45,236 --> 00:23:47,236
+Ekranım geldi mi acaba hocam?
+
+177
+00:23:47,236 --> 00:23:49,236
+Geldi, evet.
+
+178
+00:23:51,236 --> 00:23:57,236
+Ben size bir tane makale göstermiştim. Onun üzerinden çalışmayı planladığımı söylemiştim.
+
+179
+00:23:57,236 --> 00:24:07,236
+SparkMac'de Data Set'imizde çalışmayı planladığım kod olarak.
+
+180
+00:24:08,307 --> 00:24:20,908
+İlk önce Keras'taki algoritmaların performansına bakıp öyle diplormi kısmını seçtim. Ne yapabilirim diye. Bir de filtr uyguladım. Yani ön işlem olarak.
+
+181
+00:24:30,127 --> 00:24:38,788
+Tek tek denemek istedim ama biraz yavaş çalışıyor. O yüzden tam performans şu an algılayamadım.
+
+182
+00:24:38,788 --> 00:24:41,867
+Kegel'ın GPU hizmeti vardı değil mi?
+
+183
+00:24:41,867 --> 00:24:43,367
+Evet, sandaş bir yol.
+
+184
+00:24:43,367 --> 00:24:47,087
+[öğrenci], sen Kegel kullanıyorsun. Nasıl, memnun musun?
+
+185
+00:24:48,367 --> 00:24:50,867
+Hocam, yavaş.
+
+186
+00:24:50,867 --> 00:24:51,867
+Yavaş mı?
+
+187
+00:24:51,867 --> 00:24:55,367
+Yani şöyle göstereyim. Açtığımdan beri...
+
+188
+00:24:55,571 --> 00:25:05,291
+Görüşme katıldığından beri 3 tane, 4. ye yetmiş, eğitiyor. Sonuçları alabilirim.
+
+189
+00:25:05,291 --> 00:25:12,731
+Fark etmez. Sen konuştukları başladıktan genel olarak derin öğrenme yöntemleri yavaş çalışıyor canım. Onda bir sorun yok.
+
+190
+00:25:12,731 --> 00:25:16,411
+Önemli olanı patlamadan çalıştırabiliyor musun?
+
+191
+00:25:20,435 --> 00:25:23,755
+Patlamadan çalıştık.
+
+192
+00:25:26,015 --> 00:25:31,655
+İnternetin çok kötü. Zannedersem arka planda çalıştığı için. Hani şimdi çalıştırmasayın.
+
+193
+00:25:31,655 --> 00:25:33,075
+İşte daha iyi olurdu.
+
+194
+00:25:34,535 --> 00:25:39,015
+Şu an sesini duyamıyorum. Maalesef. Yani çok kesintili geliyor.
+
+195
+00:25:39,955 --> 00:25:44,559
+Hani en azından internet kullanımını biraz böyle...
+
+196
+00:25:44,559 --> 00:26:00,339
+Kullanıyorsa, sömürüyorsa bu en azından kegel arka tarafta onunla alakalı sorun olabilir mi acaba? Veya internet bağlantı mı kötü? Çok duyamadık [öğrenci]. Çalışmaya devam ediyorsun anladığım kadarıyla.
+
+197
+00:26:04,147 --> 00:26:05,147
+[öğrenci] gitti.
+
+198
+00:26:06,627 --> 00:26:07,467
+Şu anda
+
+199
+00:26:07,467 --> 00:26:09,627
+Evet.
+
+200
+00:26:09,627 --> 00:26:10,567
+Bacağım duyabiliyor muyum?
+
+201
+00:26:11,047 --> 00:26:11,947
+Evet, duyuyorum.
+
+202
+00:26:12,147 --> 00:26:12,667
+Duyuyor musunuz?
+
+203
+00:26:13,087 --> 00:26:13,827
+Evet, duyuyorum.
+
+204
+00:26:16,307 --> 00:26:19,307
+Duyuyorum ama sonra kesiliyor anladığım kadarıyla.
+
+205
+00:26:19,867 --> 00:26:20,627
+Şu an duymuyorum.
+
+206
+00:26:24,180 --> 00:26:26,180
+O zaman da...
+
+207
+00:26:26,180 --> 00:26:30,180
+Yani cep telefonundan falan bağlayıp... Ekranı da şu an görebiliyor musunuz?
+
+208
+00:26:30,180 --> 00:26:33,180
+Ekranı görüyoruz, evet.
+
+209
+00:26:33,180 --> 00:26:35,180
+Deneyeyim mi hocam?
+
+210
+00:26:39,700 --> 00:26:42,519
+Kapıyor musun? Yani kafamayı mı deneyeceksin? Onu anlamadım.
+
+211
+00:26:43,600 --> 00:26:46,720
+Sesim hala kesin.
+
+212
+00:26:47,840 --> 00:26:51,740
+Eğer bağlayabiliyorsan cep telefonundan bağlı geçici olarak.
+
+213
+00:26:53,960 --> 00:26:56,380
+Çünkü çok anlaşılmıyor ne dediğim.
+
+214
+00:26:59,340 --> 00:27:02,340
+Ben de başka arkadaşa geçeyim o sürede.
+
+215
+00:27:03,940 --> 00:27:05,660
+Evet [öğrenci], duyur musun?
+
+216
+00:27:07,092 --> 00:27:21,231
+Merhaba hocam. Merhaba. Ekran paylaşımını kapatabilirsin. [öğrenci]. Ben paylaşıyorum şimdi. Tamam. [öğrenci] kapayabilirsin ekran paylaşımını.
+
+217
+00:27:26,036 --> 00:27:27,415
+Ekranım geldi mi acaba?
+
+218
+00:27:31,496 --> 00:27:34,056
+Ekran paylaşımını kapatmam lazım.
+
+219
+00:27:44,948 --> 00:27:46,567
+Evet, seninki geldi şu anda.
+
+220
+00:27:47,088 --> 00:28:06,788
+Benim data setimden bahsedeyim hocam. Geçen hafta katılamadım ben. Geçtiğimiz bu haftada yaptıklarımı anlatayım. Brex data setiydi benimki. Breast Cancer üzerine. 7 ayrı sınıf vardı içinde. Ensemble Deep Learning ile sınıflandırma yapmak şeklinde ilerleyecektim.
+
+221
+00:28:12,948 --> 00:28:35,008
+İşte uygulayabileceğim yöntemleri ve daha önce yazılmış makaleleri, kodları açıkçası biraz karışık geldi. Bir yandan onu incelerken bir yandan da transfer learning metotlarını uygulamaya çalıştım. Google Colab'de yazıyordum ama biraz yavaşlığıma, yani sistemde bir yavaşlık oldu benimkinde.
+
+222
+00:28:40,948 --> 00:29:04,228
+Drive'dan alıyordum ben dataları. Ama Drive'a yüklediğim hali zip şeklinde değildi. Ben normal yüklemiştim. Normal yükleyince sanırım o biraz yavaşlığa sebep oluyormuş. Bu şekilde yazılmış birkaç şey okudum. Hani zip olarak yükleyip Drive'a. Oradan sonra Kolebe zip olarak burada unzip yaptığımız zaman daha hızlı oluyormuş.
+
+223
+00:29:04,588 --> 00:29:07,548
+Hani kendi RAM'ini kullandıktırıyorsun ona.
+
+224
+00:29:07,968 --> 00:29:08,948
+Evet sanırım o şey.
+
+225
+00:29:08,948 --> 00:29:17,900
+Böyle olduğu için çok yavaştı. Belki şeyle de ilgili olabilir. Şurada yaptığım...
+
+226
+00:29:18,324 --> 00:29:37,884
+Yani şu sayısıyla da ilgili olabilir belki. Batch size ve Epo sayısıyla ilgili de olabilir ama tam böyle hani uyguladığım üç tane transfer learning metoduna koduna baktım. VGG, RESTnet ve Inception. Yani hiçbirinde henüz bir sonuç alamadım.
+
+227
+00:29:38,336 --> 00:29:44,476
+Bu yavaşlıktan dolayı çok, yani bir tane batch'in bile tamamlanması bayağı uzun sürüyordu.
+
+228
+00:29:44,476 --> 00:29:53,596
+Bu şeyi deneyeceğim, tekrar zip şeklinde yükleyip Google Collab'da unzip olarak dosyaları okutmayı Rem'den.
+
+229
+00:29:54,996 --> 00:29:59,096
+Onun yanında işte Ensemble Deep Learning metodunu da araştırıyorum.
+
+230
+00:30:00,000 --> 00:30:13,400
+Karli'yi biraz baz aldım az önce gösterdiğim. Yani onun kodları birazcık karışık geldi ama elimden gelince yetiştirebildiğim kadar ona da bakacağım. Süreniz de az kaldı onun da farkındayım.
+
+231
+00:30:13,400 --> 00:30:19,039
+Aslında baktığımızda bu haftamız var. İki haftamız var.
+
+232
+00:30:19,571 --> 00:30:23,951
+3 haftamız var. Bütünlemeler ne zaman olacak acaba?
+
+233
+00:30:24,531 --> 00:30:26,751
+Sınavımız 2 hafta sonra sanırım hocam.
+
+234
+00:30:26,751 --> 00:30:45,652
+Evet, evet. Sınavdan bir gün sonra göstermeye devam edeceğiz. Bütünlemeleri de kullanacağımızı düşünürsek şayet. Bakalım. Bütünlemeleri de kullanacağımızı düşünürsek.
+
+235
+00:30:48,884 --> 00:31:04,504
+30 Ocağa kadar vaktimiz var yani. Yani 27'sine kadar vaktimiz var. Neredeyse bir ayımız var arkadaşlar. Yani bugünden itibaren 1, 2, 3 haftamız, özür dilerim 3 haftamız var.
+
+236
+00:31:07,744 --> 00:31:14,564
+Kütüklüme sınavları 28 Ocak'ta bitiyor. Biz de hadi 27'sini de yaptık diyelim toplantımızı.
+
+237
+00:31:15,251 --> 00:31:26,051
+Ve de 27'sinde, 27'sine kadar neredeyse 3 haftamız var. 3 haftada dünyanın şeyi yapılır. Yani moralleri bozmaya da gerek yok. Çalışmaya devam.
+
+238
+00:31:26,516 --> 00:31:39,376
+Evet, yani şeye devam ediyorum. Transfer Learning kısmını biraz anladım hocam ama Ensemble Deep Learning'i onu tam olarak uyarlayabilecek miyim ondan emin değilim. Ama onunla ilgili yazılmış makale kodlarına da bakıyorum.
+
+239
+00:31:39,376 --> 00:31:54,496
+Evet, yani bu en azından klasifikasyon sonuçlarını birleştireceğimiz bir Ensemble yaklaşımlarına bir çalışırız. Onun dışında Deep Ensemble yazıldığın zaman çok güzel anlatan siteler falan da var. Yani Tours Data Science, Medium Org gibi veya değişik modeller.
+
+240
+00:31:54,516 --> 00:32:17,816
+Bu konuda bir bakıver. Tamam mı? Tamam hocam. Bakacağım onlara da. Her hafta toplanıyoruz. Sakın gecikmeyin diye. Bir şey yapmasanız bile muhakkak gelin şeye. Tamam. Toplantıya. Evet. Başka. Teşekkürler. Sağ olun. Sırada kim vardı? [öğrenci] bağlanabildim mi? Bağlandım hocam.
+
+241
+00:32:53,203 --> 00:32:56,703
+Herhalde bağlantım kötü anladığım kadarıyla [öğrenci].
+
+242
+00:33:04,180 --> 00:33:05,196
+Evet,
+
+243
+00:33:08,531 --> 00:33:10,531
+Hocam memnun duyabiliyor musunuz?
+
+244
+00:33:10,531 --> 00:33:16,531
+Ses şimdi geldi ama konuşmaya başlıktan sonra gitti. Bir daha konuşur musun?
+
+245
+00:33:16,531 --> 00:33:19,500
+Tekrar gidiyor.
+
+246
+00:33:23,251 --> 00:33:30,251
+Eğer remi dolduysa, arka planda bir şeyler çalışıyorsa onunla alakalı bir problem olabilir.
+
+247
+00:33:35,763 --> 00:33:42,363
+[öğrenci] düştü şu anda. [öğrenci] [öğrenci].
+
+248
+00:33:48,500 --> 00:33:49,740
+[öğrenci]
+
+249
+00:33:56,692 --> 00:33:58,347
+Sesin gelmiyor.
+
+250
+00:34:10,675 --> 00:34:19,735
+[öğrenci], bak bir şey yazmış, bir not yazmış. Colab'da runtime'ı GPU'ya aldınız mı? Yavaşlık ondan kaynaklanıyor olabilir mi?
+
+251
+00:34:19,956 --> 00:34:37,056
+Evet, runtime'ı GPU'ya ayarladım. Hatta daha yüksek şeyine de geçtim. Belki ondan mı oluyor diye. Ama o bir çözüm olmadı henüz. Resimleri tekrar bitirmeye çalışacağım başka şekilde. Eğer çözerse sorunu. Teşekkür ederim.
+
+252
+00:34:37,056 --> 00:34:37,996
+Tamamdır.
+
+253
+00:34:38,547 --> 00:34:47,547
+Evet, sen gösteriyorsun herhalde. Evet, ben gösteriyorum. Sesimi alabiliyorsunuz ama. Evet, evet.
+
+254
+00:34:47,547 --> 00:35:00,547
+Demin de sesim gelmedi de. Tekrardan ben alayım hocam. Size bir tane makale göstermiştim ben. Onun üzerinden gideceğimi söylemiştim.
+
+255
+00:35:01,844 --> 00:35:13,243
+FUTURE kısmında iki tane algoritmayı birleştirip onu Machine Learning kısmına sunuyor. PCA ile belli özellikleri alıp veriyor.
+
+256
+00:35:13,243 --> 00:35:21,644
+Spark Map'ta kullanıyordu. Veri set olarak. Ben de aynısını kullandım. Ben kendimi kodlamaya başladım.
+
+257
+00:35:23,219 --> 00:35:28,619
+Sen buradaki kodlardan yararlanıyorsun ama kendi şeyini uyarlayacaksın değil mi?
+
+258
+00:35:28,619 --> 00:35:30,619
+Yok hocam, onların kodu değil.
+
+259
+00:35:30,619 --> 00:35:31,819
+Tamam.
+
+260
+00:35:31,819 --> 00:35:33,219
+Yok onların kodu değil.
+
+261
+00:35:33,219 --> 00:35:34,619
+Tamam.
+
+262
+00:35:34,619 --> 00:35:36,619
+Aldım veriyi.
+
+263
+00:35:36,619 --> 00:35:41,219
+Fitrelemeyi uyguladım.
+
+264
+00:35:41,219 --> 00:35:44,219
+Ondan sonra geldim.
+
+265
+00:35:46,228 --> 00:35:52,868
+Keras'taki algoritmaları, Diplormic algoritmaların performansına bakıp algoritmaları seçtim.
+
+266
+00:35:55,128 --> 00:36:05,168
+Onların üzerinden çalıştırdım. Sonra özellik çıkarımına geçtim. Özellik çıkarımda şu an tek tek deniyorum. Nasıl bir sonuç alacağım diye birleştirmedim algoritmaları.
+
+267
+00:36:07,028 --> 00:36:10,347
+Sonra Scalor'ı buladım. PCA ile baktım.
+
+268
+00:36:12,532 --> 00:36:17,212
+Ondan sonra da Machine Learning kısmına geçtim. Orada parametre ile iyileştirdim.
+
+269
+00:36:19,292 --> 00:36:28,731
+Ve şu an sonuçları alıyorum. Tek tek deneyip bunları, sonra Diplormik kısımlarını birleştirip deneyip ondan sonra kendine bir model oluşturabilir miyim ona bakacağım.
+
+270
+00:36:29,932 --> 00:36:32,811
+Diplormik ile birleştirmek için. Bu şekilde.
+
+271
+00:36:32,811 --> 00:36:37,172
+Tamamdır. Kolay gelsin o zaman sana da.
+
+272
+00:36:37,172 --> 00:36:38,612
+Teşekkür ederim.
+
+273
+00:36:38,880 --> 00:36:42,740
+Şimdi ekranı kapayabilirsin. [öğrenci] [öğrenci].
+
+274
+00:36:43,880 --> 00:36:47,320
+Evet hocam. Ses geliyor mu? Ses geliyor evet.
+
+275
+00:36:47,320 --> 00:36:49,200
+Evet hocam.
+
+276
+00:36:58,068 --> 00:37:07,268
+Evet hocam, geçen hafta ben katılmadı. Huzur bakmadım hocam. Çok bir acil durum. O yüzden katılmadı.
+
+277
+00:37:07,268 --> 00:37:18,148
+Hocam, bir dataset öncedeki aldık. Bu dataset'i aldık. Sizin başka bir dataset verdik. Şöyle bir dataset.
+
+278
+00:37:18,148 --> 00:37:19,828
+Bak dataset'ini de aldın. Tamam.
+
+279
+00:37:22,643 --> 00:37:34,163
+Herhalde classification yapıyoruz, öyle yapıyoruz. Ama sizden o yönde bekliyoruz. Hatta öyle bir devam ediyoruz acaba.
+
+280
+00:37:34,163 --> 00:37:40,023
+Yani test, training bunlar iki klasifier, bunlar dört klasifier var.
+
+281
+00:37:41,183 --> 00:37:48,043
+Şöyle yapabilirsin. Bunlar da muhakkak data augmentation yap. Data sayıları az çünkü.
+
+282
+00:37:48,496 --> 00:38:01,036
+Data Augmentation muhakkak yap. Ondan sonra Training Set ve Test Set olarak ayırma bunu. K-Fold Cross Validation yap.
+
+283
+00:38:01,036 --> 00:38:05,536
+Bir dakika, onları yazıyorum. Başka bir Data Set değil mi hocam?
+
+284
+00:38:05,536 --> 00:38:13,636
+Yok, başka Data Set değil. K-Fold Cross Validation yap. K-Fold Cross Validation'ı biliyorsun değil mi?
+
+285
+00:38:13,636 --> 00:38:16,036
+K-Fold Cross Validation
+
+286
+00:38:16,403 --> 00:38:18,523
+Model mı yok, [öğrenci]?
+
+287
+00:38:29,748 --> 00:38:30,948
+K5 seç.
+
+288
+00:38:31,428 --> 00:38:35,048
+Evet. Hocam o zaten aşağıya var bizde. Bakıyoruz hocam. Şöyle.
+
+289
+00:38:37,788 --> 00:38:42,268
+Şöyle. KFOT. Bir dakika hocam. Şöyle.
+
+290
+00:38:43,108 --> 00:38:52,668
+Yok o %10 validation yapmış. Ben bunu istemiyorum. Normal metot değil de KFOT uygula sen burada. Tamam mı?
+
+291
+00:38:53,268 --> 00:38:58,188
+Hocam, top-fold, cross-fold, normal, şu, şu istedemiyor mu?
+
+292
+00:38:58,588 --> 00:38:59,788
+Evet, evet, onu uygula.
+
+293
+00:39:00,288 --> 00:39:01,268
+Onu uygulamak, tamam.
+
+294
+00:39:02,768 --> 00:39:06,468
+Hocam, o zaman şunlar yapıyoruz.
+
+295
+00:39:07,228 --> 00:39:13,028
+Onlar performans metrikleri, yani sınıflandırma sonucunu bulduğun şeyleri. Onları da kullan.
+
+296
+00:39:13,028 --> 00:39:20,268
+Onlar da F1, F-measure ile accuracy, precision, recall'u bulsan yeterli.
+
+297
+00:39:20,755 --> 00:39:22,615
+Enkription ve
+
+298
+00:39:22,615 --> 00:39:25,295
+Google Net kullanıyoruz mu?
+
+299
+00:39:26,036 --> 00:39:26,955
+Inception
+
+300
+00:39:26,955 --> 00:39:33,115
+Efficient Net
+
+301
+00:39:33,115 --> 00:39:35,255
+Dance Net ve Rest Net
+
+302
+00:39:35,255 --> 00:39:37,135
+Bir laf hocam yazıyorum.
+
+303
+00:39:37,475 --> 00:39:39,975
+Dance Net ve Rest Net
+
+304
+00:39:39,975 --> 00:39:41,635
+Rest Net
+
+305
+00:39:41,635 --> 00:39:43,695
+Ve Rest Net
+
+306
+00:39:43,695 --> 00:39:47,096
+Bir de Enception
+
+307
+00:39:48,083 --> 00:39:50,003
+Bir de şeftli.
+
+308
+00:39:51,864 --> 00:39:52,223
+Tamam.
+
+309
+00:39:52,663 --> 00:39:56,344
+Efficient net.
+
+310
+00:39:56,443 --> 00:39:58,483
+Onları da kullan bakalım.
+
+311
+00:39:58,483 --> 00:39:59,783
+Efficient net.
+
+312
+00:40:00,000 --> 00:40:01,319
+Tamam, onlar bakıyoruz.
+
+313
+00:40:01,559 --> 00:40:04,759
+[öğrenci] sen daha önce hiç makine öğrenmesi dersi aldın mı?
+
+314
+00:40:05,279 --> 00:40:06,179
+İyi hocam, almadı.
+
+315
+00:40:07,500 --> 00:40:11,440
+Yani ben YouTube'dan ders bakıyoruz, orkıyoruz.
+
+316
+00:40:11,440 --> 00:40:13,879
+O yüzden biraz ağır bir ders.
+
+317
+00:40:14,500 --> 00:40:16,879
+Evet, şeyi söyleyeyim.
+
+318
+00:40:17,359 --> 00:40:20,839
+Sen bu Python'da kodlama yapabilecek misin?
+
+319
+00:40:22,719 --> 00:40:24,619
+Yaparız hocam, yaparız. Sıkıntı yok.
+
+320
+00:40:25,076 --> 00:40:29,215
+Tamam, sıkıntı yok da sürenin sonu geldi. Biraz sıkıntı yap bence.
+
+321
+00:40:29,555 --> 00:40:32,215
+Evet, evet. Önen zamanın doğru.
+
+322
+00:40:32,215 --> 00:40:33,915
+Evet, tamamdır.
+
+323
+00:40:34,555 --> 00:40:35,375
+İnşallah hocam.
+
+324
+00:40:36,475 --> 00:40:41,935
+Evet, hadi bakalım. Başka kim vardı görüşmediğiniz? [öğrenci]'le daha en son görüşeceğim.
+
+325
+00:40:43,015 --> 00:40:46,475
+Başka konuşmak isteyen var mı? Konuşamadığım şu anda var mı?
+
+326
+00:40:48,035 --> 00:40:49,715
+Atlamış olduğum yanlışlıkla.
+
+327
+00:40:51,827 --> 00:41:07,268
+Arkadaşlar, önümüzdeki hafta ders olacak. Final zamanı ders olacak. Finalin ikinci haftasında da ders olacak. Çarşamba günü sınav olacak. O günde gelip sorular sorabilirsiniz. Hiç sorun yok arkadaşlar. Tamam mı?
+
+328
+00:41:08,724 --> 00:41:17,583
+Hocam bir şey soracağım. Gelecek hafta 18'de bu ayında final sınavı bahsatıyorsunuz.
+
+329
+00:41:17,583 --> 00:41:32,684
+Evet, önümüzdeki hafta 12 Ocak'ta ders olacak. Online Yıldız Ettr'den. 18'inde sınavımız var. 100'e. 19'unda yine online olarak şeyleri.
+
+330
+00:41:35,059 --> 00:41:38,659
+Bizim çalışmaların toplantısı devam edecek.
+
+331
+00:41:38,699 --> 00:41:46,860
+Devam edecek. Hocam bir şey söyleyeceğim. Sınav için konular ne konular?
+
+332
+00:41:47,800 --> 00:41:54,239
+İlk başta ilk 8 haftada, 9 haftada gördüğümüz teore kısımlar var ya, o kısımların hepsi.
+
+333
+00:41:54,239 --> 00:42:00,300
+Yani sinyal işleme, görüntü işleme ve de makine öğrenmesinin temel konseptleri.
+
+334
+00:42:00,788 --> 00:42:04,148
+Anladım, anladım. Tamam. Uğudabesler Onca'daki aldık. Tamam.
+
+335
+00:42:04,408 --> 00:42:06,428
+Evet. İyi, teşekkür ederim.
+
+336
+00:42:06,728 --> 00:42:15,508
+Tamamdır. Herkes çıkabilir arkadaşlar. Sorusu olan varsa sorusu olabilir. Olmadı. [öğrenci] ile görüşeceğim ayrıca.
+
+337
+00:42:16,508 --> 00:42:19,288
+Hocam pardon. Ben bir şey soracaktım da.
+
+338
+00:42:19,288 --> 00:42:19,688
+Tabii.
+
+339
+00:42:21,168 --> 00:42:25,168
+Haftaya 12 Ocak'ta.
+
+340
+00:42:25,199 --> 00:42:34,159
+Saat 1'de benim sınav gözetmenliğim var da, görevim var. Size raporlasam daha sonra mail olarak göndersem olur mu?
+
+341
+00:42:34,159 --> 00:42:36,839
+Yok şey yapabiliriz. Yani kaçta bitiyor görevin?
+
+342
+00:42:38,324 --> 00:42:46,824
+Şimdi şöyle hocam, saat 1'de gözetmenliğim başlıyor. Muhtemelen 1.5 saat civarında sürer.
+
+343
+00:42:46,824 --> 00:42:52,324
+Hemen arkasından yaparız. O gün 1 gün öncesinden yazışırız, ona göre konuşuruz yine o gün.
+
+344
+00:42:52,324 --> 00:42:53,824
+Tamam, tamam hocam.
+
+345
+00:42:53,824 --> 00:42:58,324
+1.5, 3 desek, 3'te falan görüşürüz. 3-3.5'ta görüşürüz yani.
+
+346
+00:42:58,324 --> 00:43:00,324
+Tamam hocam, teşekkürler.
+
+347
+00:43:00,324 --> 00:43:04,324
+Onu da şey yaparız, ben sana standart şeyi gönderirim.
+
+348
+00:43:04,596 --> 00:43:10,976
+Ne derler? Benim Zoom linkini gönderdim. Onun üzerinden konuşuruz.
+
+349
+00:43:11,456 --> 00:43:12,936
+Tamam hocam. Teşekkürler. Sağ olun.
+
+350
+00:43:13,115 --> 00:43:14,356
+Tamamdır. Kolay gelsin.
+
+351
+00:43:15,576 --> 00:43:19,316
+Evet, çıkabilirsiniz arkadaşlar. [öğrenci] Bey kalabilir.
+
+352
+00:43:20,536 --> 00:43:21,096
+İyi günler.
+
+353
+00:43:21,356 --> 00:43:23,916
+Bu arada günler diliyorum. Kolay gelsin çalışmalarınızda.
+
+354
+00:43:23,936 --> 00:43:24,416
+Kolay gelsin.
+
+355
+00:43:24,416 --> 00:43:31,036
+Muhakkak bir şeyler yapın. Yetiştirin takandığınız yerleri bileyim ki ona göre yönlendireyim sizi. [öğrenci] lütfen devam.
+
+356
+00:43:37,364 --> 00:43:47,904
+Evet, evet. Şöyle ekranımı da açayım isterseniz. Şimdi ekranımı görebiliyor musunuz? Evet, evet görüyorum.
+
+357
+00:43:49,284 --> 00:43:56,004
+Ya şeyin, geçen hafta ben özellikle Unet'i çalıştırmıştım, TransUnet.
+
+358
+00:43:56,724 --> 00:44:15,284
+Bunu da özellikle bir tane organ bulmuştu. Bunun nedeni nedir diye baktık. Sonra bunu bakın demiştiniz. Ben biraz onu inceledim. Şeylerin epok sayısıyla şeyi hızlı olsun diye biraz daha yavaş çalıştırdığım için öğrenmesi olmamış.
+
+359
+00:44:24,724 --> 00:44:31,204
+Apple 100 ve batch sizeımı da değiştirince farklı organları da bulmaya başladı.
+
+360
+00:44:32,004 --> 00:44:37,284
+Sonra birazcık daha image size daha da arttırayım diye olacak dedim.
+
+361
+00:44:38,024 --> 00:44:40,384
+Biraz daha detay çıktı.
+
+362
+00:44:40,644 --> 00:44:44,463
+Burada farklı organlar farklı etiketlerdeydi değil mi?
+
+363
+00:44:44,504 --> 00:44:44,744
+Evet.
+
+364
+00:44:44,744 --> 00:44:45,804
+Onlar da bulmaya başladın.
+
+365
+00:44:45,884 --> 00:44:50,804
+8 tane organ var şeyin içerisinde, data setin içerisinde.
+
+366
+00:44:51,347 --> 00:45:07,507
+Bu bölgenin içerisinde, Grand Tour'da baktığımız zaman dört tane organ tespit etmesi gerekiyor. Temel görünmüş, şuralar biraz yanlış çıkmış ama onların tabii şeyini bilemedim çok. Öyle farklı bir şey çıktı.
+
+367
+00:45:07,507 --> 00:45:12,307
+Bir son post-processing yaparız olmadı bunun üzerinden daha sonra.
+
+368
+00:45:12,851 --> 00:45:27,692
+Sonra ne yaptım? Asıl gendi ya benim. Diğer bu dataset'te neler var acaba ona bir bakalım demiştik. Onlara şöyle baktım ama genle alakalı herhangi bu dataset kullanan, genle alakalı çok bir şey bulamadım.
+
+369
+00:45:39,407 --> 00:45:41,748
+Unet++, Unet3++
+
+370
+00:45:42,387 --> 00:45:47,508
+Güncel bölütleme algoritmalarından devam et istersen.
+
+371
+00:45:47,608 --> 00:45:53,748
+Peki burada kendi katkımı ne yapabilir? Onu ben zaten bulmaya çalışıyorum. Orada şöyle bir şey yaptım.
+
+372
+00:45:53,748 --> 00:46:01,508
+Belki şöyle bir şey yapılabilir. Hani bu bölütleme yapıldıktan sonra, hani bölütleme sonuçları tam istediğim Grand Tourat'a tam benzemez çıkıyor ya.
+
+373
+00:46:01,887 --> 00:46:10,387
+Burada mesela şey uygulanabilir. Ekstra bir yöntemleseni yormayalım. Post Processing olarak neler yapılabilir? Buna bakılabilir.
+
+374
+00:46:10,387 --> 00:46:17,188
+Örneğin, burada Post Processing yöntemi olarak Markov Random Fields.
+
+375
+00:46:19,539 --> 00:46:29,019
+Random Fields ile görüntünün son bulduğun bölütleri, burada orijinal görüntüyü kullanıyor ve senin bölütlediğin görüyü kullanıyor.
+
+376
+00:46:29,019 --> 00:46:40,279
+Acaba mesela şurada delik var görüyorsun en sağ altta. Mesela onu orijinal görüntüye bakarak kapamaya çalışacak mesela etrafında daha çok farklı bölütler olduğu için.
+
+377
+00:46:40,279 --> 00:46:46,940
+Mesela bundan yararlı Markov Random Fields ise bir bakabilirsin. Post Processing yöntemi olarak.
+
+378
+00:46:47,284 --> 00:47:06,244
+Bu arada ben paralelde şunu yap. Aslında biraz moralini bozan yerlerden biten süratçı oldu. Şimdi genle birleştirmeye çalışınca işte Sigen'i inceledim. Sigen'i inceledim bu arada. Şimdi Sigen biraz şey yapmıştı. Onları da bir anlatayım isterseniz de. Hatta şeyi de var.
+
+379
+00:47:08,563 --> 00:47:17,043
+Çözüm önerim de vardı da. Sonra buraya da odaklanabiliriz. Şimdi SIGEN'de özellikle Conditional Gen'lerde şey güzeldi.
+
+380
+00:47:19,327 --> 00:47:36,107
+Biyo, generate ediyor bazılarını. Ondan sonra kendisi dataset ile birleştirecek bir şey bulmaya çalışıyor. Bu hoş bir algoritma, güzeldi. Ama tabi buranın kodlarını içerisine giremem, bir şey yapamam dedim. Peki burada kendimce ne yapabilirim? Singen sen koşuma gitti.
+
+381
+00:47:36,107 --> 00:47:39,007
+Singen'i bir uygula bakalım önce.
+
+382
+00:47:39,007 --> 00:47:42,967
+Singen'de de şöyle bir şey yapsam.
+
+383
+00:47:43,248 --> 00:48:11,127
+Bu kayda değer bir sonuç çıkartır mı aslında? Şimdi Singen Sec şunu yapıyor. Eğer elimizde dataset yoksa, düzgün bir şekilde, bir tane imaj alıyor. Single imaj. Bu imajdan kendisi en tane sentetik imaj üretiyor. Bu sentetik imajları masklarıyla birlikte üretiyor. Böylece bunu training için kullanabiliyoruz. Ben acaba dedim ki, bu tarafta şöyle bir şey yapsam mı?
+
+384
+00:48:11,248 --> 00:48:18,167
+Bir tane mesela bunu yapmaya çalıştım bu hafta. Yetiştirmeye çalıştım. Bunu yetiştiremedim. Ondan birazcık moralim bozuldu.
+
+385
+00:48:18,167 --> 00:48:29,847
+Şimdi mevcut işlediğim, train ettiğim bir tane dataset'in içerisinden bir imajı alayım. Bu imajla Singen'i çoğaltayım. Sentetik imajlar üreteyim. Bunu TransUnit'e tekrar uygulayayım.
+
+386
+00:48:39,248 --> 00:48:43,527
+Benç size, hani kaliteli bir görüntü ürettirecek.
+
+387
+00:48:43,987 --> 00:48:52,268
+Bir yapı kurgulayabilir miyiz acaba? İlla Singen yerine, Singen 5 olarak sadece tek bir görüntü haricinde daha fazla görüntü de alabiliyor mu acaba?
+
+388
+00:48:52,268 --> 00:48:57,607
+Singen'in, sanırım işte o sin'i özellikle single image üzerine yapıyoruz.
+
+389
+00:48:57,607 --> 00:49:02,607
+O şeye de baktım aslında var mı öyle birden fazla setten kendisi generate eden diye.
+
+390
+00:49:02,607 --> 00:49:06,647
+Herhangi bir gun ile kendin oluşturabilirsin. Şeye baksana bir.
+
+391
+00:49:06,647 --> 00:49:10,367
+Sel gun gibi bir şeyler var mı onlara bir bakalım.
+
+392
+00:49:10,367 --> 00:49:11,987
+Bir aşağı inirse 13 ne olur?
+
+393
+00:49:11,987 --> 00:49:13,987
+Bir şeye baksana be.
+
+394
+00:49:13,987 --> 00:49:15,987
+[öğrenci].
+
+395
+00:49:15,987 --> 00:49:19,987
+Yani 13 nolu şeye bir bakar mısın, geri döner misin slide'ta?
+
+396
+00:49:19,987 --> 00:49:20,987
+Yok.
+
+397
+00:49:20,987 --> 00:49:23,987
+Mesela ben orada Grand Truth'lara bakıyorum mesela.
+
+398
+00:49:23,987 --> 00:49:25,419
+Grand Truth'lar...
+
+399
+00:49:25,619 --> 00:49:30,940
+Bunu biraz hızlı olsun diye ben şeyleri çok düşük koydum.
+
+400
+00:49:30,940 --> 00:49:34,380
+Olabilir, tamam. Çok düşükmamış gibi gördüm de o yüzden.
+
+401
+00:49:34,380 --> 00:49:43,440
+Yok, düşük burası. Burada da UNED algoritmasını kullanıyor. Önce küçükten başlayıp büyüterek devam ediyor.
+
+402
+00:49:44,140 --> 00:49:53,380
+Büyüttükçe tabii zaman fazla oluyor. Dolayısıyla bitmedi bir türlü. Ben de özellikle bitsin diye...
+
+403
+00:49:53,619 --> 00:50:14,360
+Size'ları küçülttüm biraz. Batch Size'lar küçük olunca EQS'i düşük oldu. Ama bunu şeye taşıyabilirsem eğer, Cagle gibi, Collapse gibi bir yere taşıyabilirsem belki oradan şey yapabilirim. Ama onu da nasıl taşıyacağım? İşte biraz benim buralarda biraz sıkıntım var.
+
+404
+00:50:15,476 --> 00:50:17,476
+Ne peyye, ne peyye, ne uğraştın.
+
+405
+00:50:17,476 --> 00:50:21,076
+Şimdi damları düşünmeyelim. Bu ikinci planımız olsun.
+
+406
+00:50:21,076 --> 00:50:23,476
+Öncelikle iyi bir bölükleme yapabiliyor muyuz?
+
+407
+00:50:23,476 --> 00:50:24,476
+Marko.
+
+408
+00:50:24,476 --> 00:50:36,875
+Sivinyunet, Sivinyunet, Unit 3+, Unit++ bunları bir yapalım. Arkasından Markov Random Field uygulayalım bunlara.
+
+409
+00:50:36,875 --> 00:50:43,076
+Tamam. Bunlara Markov Field'a sonra da Post Processing yapalım. Bir tane çalıştırıp Markov'u uygulamaya çalışayım.
+
+410
+00:50:43,076 --> 00:50:43,476
+Tamam.
+
+411
+00:50:43,476 --> 00:51:05,635
+Tamam. Budur yani benim biraz derdim. Maalesef. İmaj almaya çalıştım hep siyah çıktı. O zipli imajları bir türlü çıkartamadım içerisinden. Bölükleyemedim. İçindeki imajları çıkartamadım yani. Deli oldum.
+
+412
+00:51:06,032 --> 00:51:08,032
+Moralim bozuldu açıkçası.
+
+413
+00:51:08,032 --> 00:51:13,032
+Yok moral bozuldu. Zaten bu tarz projeler hep böyle gidiyor. Yani doğası bunun.
+
+414
+00:51:13,032 --> 00:51:23,032
+Top sektiriyor buralarda. E tabi ya Python da benim için yeni. Biraz siz başta demiştiniz zaten. Bu dersin zor kısmı, challenge tarafı burası.
+
+415
+00:51:23,032 --> 00:51:26,032
+E buralarda tabi zorlanıyorum açıkçası. Belki işte...
+
+416
+00:51:26,032 --> 00:51:30,032
+E çok güzel. Zaten zorluktan bir öğrenim doğuyor ya zaten.
+
+417
+00:51:30,675 --> 00:51:33,675
+Zorluktan doğuyor öğrenim.
+
+418
+00:51:33,675 --> 00:51:42,675
+Ama güzel. Bu arada gerçekten bana bir şey kattı. Onu geçemesem de güzel bir ders.
+
+419
+00:51:42,675 --> 00:51:46,675
+Şu anda güzel bir şey. Önemli olan şeyleri yapın yani.
+
+420
+00:51:47,380 --> 00:51:51,320
+Bu konuda rahatlıkla yaparsınız diye düşünüyorum inşallah.
+
+421
+00:51:51,320 --> 00:52:00,240
+Tamam. Post Processing için ben özellikle önümüzdeki haftaya bir kayda değer bir şey çıkartmaya çalışayım. Öyle devam edeyim o zaman. Tamam. Teşekkür ediyorum. Çok sağ olun.
+
+422
+00:52:00,260 --> 00:52:02,640
+Kolay gelsin. Görüşmek üzere. İyi çalışmalar.

@@ -1,0 +1,5115 @@
+1
+00:00:03,859 --> 00:00:10,820
+Sağ olun.
+
+2
+00:00:10,820 --> 00:03:07,150
+Arkadaşlar hoş geldiniz.
+
+3
+00:03:07,150 --> 00:03:11,150
+Bugün dolu bir gündemimiz var.
+
+4
+00:03:11,150 --> 00:03:14,150
+Ödevinizden konuşacağız.
+
+5
+00:03:14,150 --> 00:03:17,150
+2 tane yeni konu üzerine konuşacağız.
+
+6
+00:03:17,150 --> 00:03:20,150
+Belki vakit kalırsa sınavların üzerine konuşacağız.
+
+7
+00:03:20,150 --> 00:03:24,150
+Öncelikle sınav haftanız bitti.
+
+8
+00:03:24,150 --> 00:03:28,150
+Geçmiş olsun. Umarım başarıyı da atlatmışsınızdır.
+
+9
+00:03:28,150 --> 00:03:31,150
+Bizim geçen hafta bu dersle ilgili yapmış olduğumuz
+
+10
+00:03:31,150 --> 00:03:35,150
+ve bizli sınavı ile ilgili yorumda bulunmak istiyen, görüş aktarmak istiyen var mıdır?
+
+11
+00:03:35,150 --> 00:03:46,189
+Herhangi bir problem yaşayan, sıkıntısı olan.
+
+12
+00:03:46,189 --> 00:03:50,189
+Peki, sınavla ilgili bir şey mi?
+
+13
+00:03:50,189 --> 00:03:53,189
+Hocam, şey, merhaba.
+
+14
+00:03:53,189 --> 00:03:57,189
+Hiç itiremedim ben kendi adıma. Diğer arkadaşlarım nasıldı?
+
+15
+00:03:57,189 --> 00:04:03,189
+Bilmiyorum ama süre az geldi benim için.
+
+16
+00:04:03,189 --> 00:04:06,189
+Başka tabii ki yorum yapmak isteyenlere söz verebilirim ama
+
+17
+00:04:06,189 --> 00:04:10,189
+süre tam sınırdaydı. Çok az olduğunu düşünmüyorum.
+
+18
+00:04:10,189 --> 00:04:13,189
+Çoğu soruya çok hızlı cevap verebileceğinizi düşünüyorum ama
+
+19
+00:04:13,189 --> 00:04:19,189
+belki final sınavında bir tık daha süreyi uzun tutma şansımız olur.
+
+20
+00:04:19,189 --> 00:04:24,980
+Başka yorum yapmak isteyen?
+
+21
+00:04:24,980 --> 00:04:32,829
+Soruların zor olmadığını düşünüyorum.
+
+22
+00:04:32,829 --> 00:04:37,829
+Peki, başka bir yorum olmadığına göre hemen ödevinize geçelim.
+
+23
+00:04:37,829 --> 00:04:41,829
+Ödevinizle ilgili hemen paylaşıyorum.
+
+24
+00:04:41,829 --> 00:04:50,680
+Şu anda görüyorsunuz ikinci ödeviniz bunu sisteme yükleyeceğim.
+
+25
+00:04:50,680 --> 00:04:52,680
+Ama üzerinden bir geçmek istedim.
+
+26
+00:04:52,680 --> 00:04:57,680
+Şu ana kadar yaptığımız bütün adımları içeriyor.
+
+27
+00:04:57,680 --> 00:05:00,680
+Artı bazı ekstra istekler var.
+
+28
+00:05:00,680 --> 00:05:06,680
+Bütün konularımızı da burada bir şekilde aslında pratik yapmış olacaksınız.
+
+29
+00:05:06,680 --> 00:05:11,680
+Kullanıcı giriş ekranına ihtiyaç duyuyoruz ve kullanıcı kayıt ekranına ihtiyaç duyuyoruz.
+
+30
+00:05:11,680 --> 00:05:16,680
+Burada özellikle yapılan aksiyonlar başarılı olduğunda
+
+31
+00:05:16,680 --> 00:05:21,680
+mesajlarla bilgilendirmeniz bekleniyor ilgili kullanıcıyı.
+
+32
+00:05:21,680 --> 00:05:25,680
+Hangi bilgilerin alınacağı kayıt ekranından yazılmış durumda,
+
+33
+00:05:25,680 --> 00:05:30,680
+şifrelerin eşleşmemesi durumunda hata mesajı üretmeniz gerekiyor.
+
+34
+00:05:30,680 --> 00:05:38,680
+Aynı zamanda aynı ismini bir kullanıcı varsa sistemde onun da hata mesajını vermeniz gerekiyor.
+
+35
+00:05:38,680 --> 00:05:44,680
+Tabii burada artık kullanıcı bilgilerini kalıcı bir alana taşımanız gerekecek.
+
+36
+00:05:44,680 --> 00:05:47,680
+İlk etapta böyle başlamamıştık hatırlıyorsanız.
+
+37
+00:05:47,680 --> 00:05:53,680
+Şimdi normal bir array list olarak yarattığımız kullanıcı bilgilerini
+
+38
+00:05:53,680 --> 00:06:00,680
+artık SQLite ya da dosya yapısında kalıcı olarak saklamanızı bekliyorum.
+
+39
+00:06:00,680 --> 00:06:03,680
+Üçüncü ekran menu ekranı.
+
+40
+00:06:03,680 --> 00:06:08,680
+Bu menu ekranında soru ekle, soru listele, sınav oluştur, sınav ayarları gibi
+
+41
+00:06:08,680 --> 00:06:13,680
+faaliyetlerin bulunduğu bir ekran olacak ve bu ekran üzerinden ilerleyeceksiniz.
+
+42
+00:06:13,680 --> 00:06:17,680
+Tabii bu ekstra bir ekran yapmak zorunda değilsiniz.
+
+43
+00:06:17,680 --> 00:06:23,680
+Yaratacağınız uygulamada farklı şekillerde menu ekranı tasarlayabilirsiniz.
+
+44
+00:06:23,680 --> 00:06:26,680
+İlla bir aktivite olmak zorunda değil.
+
+45
+00:06:26,680 --> 00:06:29,680
+Tablar yaratabilirsiniz.
+
+46
+00:06:29,680 --> 00:06:33,680
+Floating action button kullanarak oradan seçebilirsiniz.
+
+47
+00:06:33,680 --> 00:06:35,680
+Yukarıda action bar'ı kullanabilirsiniz.
+
+48
+00:06:35,680 --> 00:06:39,680
+Yani değişik aksiyonlar yapmak isteyen arkadaşların önü açık.
+
+49
+00:06:39,680 --> 00:06:44,680
+Ama ben temel daha yeni öğreniyorum diyen için bir ekran tasarlamanız ve
+
+50
+00:06:44,680 --> 00:06:52,680
+ilgili image, ikon kullanımı ile bu menüleri desteklemeniz güzel olacaktır.
+
+51
+00:06:52,680 --> 00:06:58,680
+Soru ekleme ekranında daha önce başladığımız bir soru ekleyeceksiniz.
+
+52
+00:06:58,680 --> 00:07:00,680
+5 tane şık ekleyeceksiniz.
+
+53
+00:07:00,680 --> 00:07:02,680
+Doğru cevabın ne olduğunu.
+
+54
+00:07:02,680 --> 00:07:08,680
+Ve istenirse ilgili soruya resim, ses veya video dosyası
+
+55
+00:07:08,680 --> 00:07:11,680
+eklenebiliyor olacak.
+
+56
+00:07:11,680 --> 00:07:14,680
+Bu özelliği de getirmenizi bekliyorum.
+
+57
+00:07:14,680 --> 00:07:20,680
+Bu bilgiler isterseniz veri tabanında isterseniz dahil iberlekte
+
+58
+00:07:20,680 --> 00:07:22,680
+saklanabilir olacak.
+
+59
+00:07:22,680 --> 00:07:27,680
+Bir başka ekrandayız ise daha önce recycle review ile başladığımız ekranda
+
+60
+00:07:27,680 --> 00:07:30,680
+soruları getireceksiniz sistemde kayıtta olan.
+
+61
+00:07:30,680 --> 00:07:37,680
+Bu soruları hem buradan silebiliyor olacaksınız hem de tıklayarak yeni bir
+
+62
+00:07:37,680 --> 00:07:41,680
+ekrana geçiş yapıp soruyla ilgili güncelleme yapabiliyor olacaksınız.
+
+63
+00:07:41,680 --> 00:07:50,680
+Yani recycle review'dan bir soru seçtiğinizde onun sorunun metnini,
+
+64
+00:07:50,680 --> 00:07:55,680
+şıkları ve doğru cevabı değiştirebileceğiniz bir ekran oluşturuyor.
+
+65
+00:07:55,680 --> 00:07:58,680
+Olmanızı bekliyorum.
+
+66
+00:07:58,680 --> 00:08:05,680
+Burada silme sırasında bir dialog box çıkartıp emin misiniz diye bir soru
+
+67
+00:08:05,680 --> 00:08:07,680
+sormanız gerekiyor kullanıcıya.
+
+68
+00:08:07,680 --> 00:08:11,680
+Genel olarak bu ekranda bu şekilde.
+
+69
+00:08:11,680 --> 00:08:13,680
+Devam edelim.
+
+70
+00:08:13,680 --> 00:08:15,680
+Sınav ayar ekranı.
+
+71
+00:08:15,680 --> 00:08:19,680
+Burada bugün konuşacağız share preferences yapısını.
+
+72
+00:08:19,680 --> 00:08:28,680
+Bu ekran üzerinden sınav süresini, soru puanını, zorluk düzeyini ve benzeri
+
+73
+00:08:28,680 --> 00:08:33,679
+bilgileri saklamanızı istiyorum share preferences yapısında.
+
+74
+00:08:33,679 --> 00:08:35,679
+Bunlar varsayılan ayarlar olacak.
+
+75
+00:08:35,679 --> 00:08:40,679
+Bir sınav oluşturduğunuzda bu ayarlar share preferences'tan okunacak.
+
+76
+00:08:40,679 --> 00:08:46,679
+Ve buna göre share preferences'tan gelen değerleri isterseniz sınav
+
+77
+00:08:46,679 --> 00:08:53,679
+ekranında yeniden değiştirip sınavı yeni belirleyeceğiniz ayarlarla
+
+78
+00:08:53,679 --> 00:08:56,679
+oluşturabiliyor olacaksınız.
+
+79
+00:08:56,679 --> 00:08:58,679
+Bunu yapmanızı bekliyorum.
+
+80
+00:08:58,679 --> 00:09:01,679
+Zorluk düzey 2 ile 5 arası dedim.
+
+81
+00:09:01,679 --> 00:09:03,679
+Sebebi şu.
+
+82
+00:09:03,679 --> 00:09:09,679
+Hazırladığınız sorularda zorluk düzey 2 olduğunda 2 şık gelmesini bekliyoruz.
+
+83
+00:09:09,679 --> 00:09:12,679
+Bir doğru bir yanlış cevap olarak.
+
+84
+00:09:12,679 --> 00:09:18,679
+Zorluk düzey 5 ise 5 şık birden geliyor olacak sınav sorularını oluştururken.
+
+85
+00:09:18,679 --> 00:09:24,679
+Sınav oluşturma ekranında, ayarlar ekranında oluşturduğunuz parametreleri değiştirme
+
+86
+00:09:24,679 --> 00:09:27,679
+şansınız olacak sınava özel olarak.
+
+87
+00:09:27,679 --> 00:09:31,679
+Burada 2 şık, 5 şık durumu açıklanmış durumda.
+
+88
+00:09:31,679 --> 00:09:34,679
+Oluşturulan sınavı kaydedebiliyor olacaksınız.
+
+89
+00:09:34,679 --> 00:09:37,679
+Metin formatında kaydetmenizi bekliyorum.
+
+90
+00:09:37,679 --> 00:09:43,679
+Metin formatında kaydettiğiniz dosyayı da yine kendi uygulamanız üzerinden
+
+91
+00:09:43,679 --> 00:09:47,679
+herhangi bir seçeceğiniz WhatsApp olabilir, sinyal olabilir,
+
+92
+00:09:47,679 --> 00:09:55,679
+bir mesajlaşma uygulaması üzerinden paylaşabilecek bir kod üretmenizi bekliyorum.
+
+93
+00:09:55,679 --> 00:09:59,679
+Ödevin süresi önümüzdeki hafta çarşamba gece yarısına kadar.
+
+94
+00:09:59,679 --> 00:10:03,679
+Zaten büyük bir çoğunluğunu yapmış olmanızı bekliyorum.
+
+95
+00:10:04,679 --> 00:10:07,679
+O yüzden ödevin süresinin yeterli olacağını düşünüyorum.
+
+96
+00:10:07,679 --> 00:10:09,679
+Bayramdan önce teslim almış olacağım.
+
+97
+00:10:09,679 --> 00:10:15,679
+Ödevi teslim ederken kaynak kodları APK dosyasını gitaba yükleyeceksiniz
+
+98
+00:10:15,679 --> 00:10:19,679
+ve 3 ila 5 dakikalık bir video çekeceksiniz.
+
+99
+00:10:19,679 --> 00:10:25,679
+Bunu genelde YouTube üzerinde bu videoyu saklayabilirsiniz.
+
+100
+00:10:25,679 --> 00:10:27,679
+Onun linkini paylaşabilirsiniz.
+
+101
+00:10:27,679 --> 00:10:31,679
+Sonunda da yaptığınız uygulamayı ekranları gezerek
+
+102
+00:10:31,679 --> 00:10:35,679
+neler yapabildiğini, neler yapamadığını anlatıyor olacaksınız.
+
+103
+00:10:35,679 --> 00:10:39,679
+Videonun başında kendinizi tanıtmanız,
+
+104
+00:10:39,679 --> 00:10:42,679
+kısaca arkasından uygulamanızı anlatmanız
+
+105
+00:10:42,679 --> 00:10:46,679
+ve sonunda da uygulamanın neyi yapamadığını,
+
+106
+00:10:46,679 --> 00:10:50,679
+eğer yetiştiremediğiniz bir şey varsa bunu söylemenizi bekliyorum.
+
+107
+00:10:50,679 --> 00:10:56,679
+Bu link bilgilerini içeren PDF'i de sisteme
+
+108
+00:10:56,679 --> 00:10:58,679
+Online Yıldız Eliteleri'ne yükleyeceksiniz.
+
+109
+00:10:58,679 --> 00:11:00,679
+Herhangi bir raporlama beklemiyorum.
+
+110
+00:11:00,679 --> 00:11:02,679
+Ekranları koymanızı beklemiyorum.
+
+111
+00:11:02,679 --> 00:11:06,679
+Videoda düzgün bir şekilde anlatmanız,
+
+112
+00:11:06,679 --> 00:11:10,679
+kaynak kodları ve APK dosyasını gitaba yüklemeniz önemli.
+
+113
+00:11:10,679 --> 00:11:14,679
+Öte yandan bir nokta daha var.
+
+114
+00:11:14,679 --> 00:11:19,679
+Bunu anlayamadım ama gene de vurgulamak istediğim bir nokta.
+
+115
+00:11:19,679 --> 00:11:22,679
+Ödevini GitHub'da paylaşmak için
+
+116
+00:11:22,679 --> 00:11:25,679
+heyecandan yanıp tutuşan arkadaşlara sesleniyorum.
+
+117
+00:11:25,679 --> 00:11:28,679
+Ödevinizi teslim süresinden önce
+
+118
+00:11:28,679 --> 00:11:32,679
+GitHub'da publik şekilde paylaşmayınız.
+
+119
+00:11:32,679 --> 00:11:36,679
+Herhangi bir şekilde bunu kötüye kullanan başka bir arkadaşınız olursa
+
+120
+00:11:36,679 --> 00:11:38,679
+siz de bundan etkileneceksiniz.
+
+121
+00:11:38,679 --> 00:11:42,679
+O yüzden ödevinizi teslim ettikten bir gün sonra
+
+122
+00:11:42,679 --> 00:11:46,679
+private olan erişimi publik hale getireceksiniz.
+
+123
+00:11:46,679 --> 00:11:50,679
+Bu şekilde ödevinizi de
+
+124
+00:11:50,679 --> 00:11:54,679
+başkaları tarafından erişilebilir kılmış olacaksınız.
+
+125
+00:11:54,679 --> 00:11:57,679
+Genel hatlarıyla bu şekilde
+
+126
+00:11:57,679 --> 00:12:02,679
+arayüz tasarımlarınız kullanacağınız UI'lardan puan alacaksınız.
+
+127
+00:12:02,679 --> 00:12:05,679
+Harika bir arayüz tasarımı beklemiyorum.
+
+128
+00:12:05,679 --> 00:12:09,679
+Tutarlı, dengeli, bakıldığında
+
+129
+00:12:09,679 --> 00:12:13,679
+hızlıca her şey oraya yerleştirilmiş olmayan
+
+130
+00:12:13,679 --> 00:12:17,679
+bir planla oluşturulmuş arayüzler bekliyorum.
+
+131
+00:12:17,679 --> 00:12:25,679
+Bütün aktivitelerde yepyeni UI komponatları kullanmanız gerekmiyor.
+
+132
+00:12:25,679 --> 00:12:30,679
+Ama ilgili yerlerde farklı UI komponatları kullanmanız
+
+133
+00:12:30,679 --> 00:12:34,679
+ekstra puan kazanmanızı sağlayacaktır.
+
+134
+00:12:34,679 --> 00:12:43,539
+Deyip sorusu olan var mı diye soruyorum.
+
+135
+00:12:43,539 --> 00:12:47,779
+Evet, [öğrenci].
+
+136
+00:12:47,779 --> 00:12:52,779
+Hocam soru sınavı TXT olarak, [öğrenci] olarak kaydedilmesini istemiştiniz.
+
+137
+00:12:52,779 --> 00:12:55,779
+Ondan sonra kaydettikten sonra
+
+138
+00:12:55,779 --> 00:12:58,779
+Whatsapp'a gönderilmesini söylemişsiniz de
+
+139
+00:12:58,779 --> 00:13:03,779
+normal kullanıcı ve soruları, sınavları veri tabanında
+
+140
+00:13:03,779 --> 00:13:07,779
+SQLite'de saklamamızda bir sıkınca yok değil mi?
+
+141
+00:13:07,779 --> 00:13:09,779
+Hayır yok.
+
+142
+00:13:09,779 --> 00:13:13,779
+Ama bunu kendinizin yapmış olması kritik.
+
+143
+00:13:13,779 --> 00:13:15,779
+Eğer kendiniz yapmadıysanız
+
+144
+00:13:15,779 --> 00:13:18,779
+herhangi bir şekilde bunu bir yerden alıyorsanız
+
+145
+00:13:18,779 --> 00:13:20,779
+onu puan olarak değerlendirmeyeceğim.
+
+146
+00:13:20,779 --> 00:13:21,779
+Teşekkürler.
+
+147
+00:13:21,779 --> 00:13:26,340
+Evet [öğrenci].
+
+148
+00:13:26,340 --> 00:13:30,340
+Hocam arkadaşın sorduğu soruyu zaten soracaktım anda teşekkürler.
+
+149
+00:13:30,340 --> 00:13:34,340
+SQLite ile ilgili olarak ben SQLite anlatmadım.
+
+150
+00:13:34,340 --> 00:13:38,340
+Bilen arkadaşlarımızın kullanmasına müsaade ediyorum.
+
+151
+00:13:38,340 --> 00:13:41,340
+Ama bilmeyen arkadaşlar zorunlu değiller.
+
+152
+00:13:41,340 --> 00:13:43,340
+Dosya formatını da saklayabilirler.
+
+153
+00:13:43,340 --> 00:13:48,029
+Bugün zaten bunları konuşuyor olacağız.
+
+154
+00:13:48,029 --> 00:13:53,970
+Başka sorusu var mı?
+
+155
+00:13:53,970 --> 00:13:54,970
+Peki.
+
+156
+00:13:54,970 --> 00:13:56,970
+Hadi bu kısmı bu kadar.
+
+157
+00:13:56,970 --> 00:14:01,970
+Dökümanı bugün ya da en geç yarın öğlene kadar
+
+158
+00:14:01,970 --> 00:14:03,970
+sisteme yüklemiş olacağım.
+
+159
+00:14:03,970 --> 00:14:08,970
+Önümüzdeki hafta çarşamba gece yarısına kadar da süreniz olacak.
+
+160
+00:14:10,970 --> 00:14:13,970
+Bu kısmı artık kapatabiliriz.
+
+161
+00:14:20,659 --> 00:14:28,879
+Şimdi hemen Android programlamada
+
+162
+00:14:28,879 --> 00:14:30,879
+çok önemli bir yere sahip olan verileri
+
+163
+00:14:30,879 --> 00:14:34,879
+programlamayla ilgili konumuzu anlatmaya başlayalım.
+
+164
+00:14:34,879 --> 00:14:37,879
+Bir kısmını aslında hızlıca görmüştük.
+
+165
+00:14:37,879 --> 00:14:40,879
+Şimdi önümüzdeki hafta ve bir sonraki hafta
+
+166
+00:14:40,879 --> 00:14:44,879
+dersimiz olamayacağı için 19 Mayıs ve bayram nedeniyle
+
+167
+00:14:44,879 --> 00:14:47,879
+iki haftamız biliyorsunuz kayıp olacak.
+
+168
+00:14:47,879 --> 00:14:51,879
+Bugün mümkün olduğu kadar tempolu bir şekilde gidip
+
+169
+00:14:51,879 --> 00:14:56,879
+size fazla kayıp yaşamayacağınız şekilde
+
+170
+00:14:56,879 --> 00:14:58,879
+konuları anlatmak istiyorum.
+
+171
+00:14:58,879 --> 00:15:02,879
+Bu geçtiğimiz gördüğümüz birkaç tane slide var.
+
+172
+00:15:02,879 --> 00:15:03,879
+5-6 tane slide.
+
+173
+00:15:03,879 --> 00:15:08,879
+Onların da üzerinden geçip önce file management'la ilgili
+
+174
+00:15:08,879 --> 00:15:11,879
+veri saklamayla ilgili kısımları tamamlayacağım.
+
+175
+00:15:11,879 --> 00:15:18,879
+Arkasından sensörlerle ilgili bilgileri sizlere aktarıyor olacağım.
+
+176
+00:15:18,879 --> 00:15:22,879
+Sonrasında da bugün öğrendiklerimizi pratik edebileceğiniz
+
+177
+00:15:22,879 --> 00:15:24,879
+kısma geçiyor olacağız.
+
+178
+00:15:24,879 --> 00:15:29,879
+Belki uygun olursak sınav soruların üzerinden de birlikte geçeriz.
+
+179
+00:15:29,879 --> 00:15:36,879
+Şimdi dört tip veri saklama yönteminden bahsedebiliriz.
+
+180
+00:15:36,879 --> 00:15:40,879
+App-specific storage dediğimiz uygulamaya ait bilgilerin
+
+181
+00:15:40,879 --> 00:15:43,879
+saklanması iki türlü saklayabiliyorsunuz.
+
+182
+00:15:43,879 --> 00:15:47,879
+Bunu bir dahili bellekte, iki harici bellekte.
+
+183
+00:15:47,879 --> 00:15:49,879
+Bunların detayını konuşuyor olacağız.
+
+184
+00:15:49,879 --> 00:15:54,879
+İkinci yapabileceğiniz bellekte veri saklama modeli shared storage.
+
+185
+00:15:54,879 --> 00:16:03,879
+Burada video, fotoğraf, ses ve diğer farklı belge türlerini de
+
+186
+00:16:03,879 --> 00:16:06,879
+shared storage üzerinde saklayabiliyor olacaksınız.
+
+187
+00:16:06,879 --> 00:16:10,879
+Bunlar için kullanılan çeşitli API'ler ve framework'lar var.
+
+188
+00:16:10,879 --> 00:16:15,879
+Preferences yani kişisel ayarlar, uygulama ayarları,
+
+189
+00:16:15,879 --> 00:16:20,879
+oyun ayarları gibi daha basit primitif verileri key value şeklinde
+
+190
+00:16:20,879 --> 00:16:23,879
+shared preferences yapısında saklıyor olacaksınız.
+
+191
+00:16:23,879 --> 00:16:27,879
+Hem shared preferences API var hem de preferences API var.
+
+192
+00:16:27,879 --> 00:16:29,879
+İkisi birbirinden farklı.
+
+193
+00:16:29,879 --> 00:16:32,879
+Biraz sonra onu da yorumluyor olacağız.
+
+194
+00:16:32,879 --> 00:16:36,879
+Son olarak da özellikle structured veriyi,
+
+195
+00:16:36,879 --> 00:16:39,879
+birbirleriyle ilişkisi bulunan veriyi saklamak için
+
+196
+00:16:39,879 --> 00:16:46,879
+yine internal storage'da saklanan veri tabanı, yapısını kullanıyor olacağız.
+
+197
+00:16:46,879 --> 00:16:50,879
+SQLite en alt katvanda yer alıyor.
+
+198
+00:16:50,879 --> 00:16:54,879
+Bir üst katvanda Room library'sini kullanarak
+
+199
+00:16:54,879 --> 00:17:01,879
+SQLite'ın erişimini ve oradan bilgi alışverişini kolaylaştırma şansına sahipsiniz.
+
+200
+00:17:01,879 --> 00:17:04,880
+Tabii bunlara ek olarak bir de Firebase'den bahsedebiliriz.
+
+201
+00:17:04,880 --> 00:17:08,880
+Ve Firebase özelindeki durumu genelleştirdiğimizde
+
+202
+00:17:08,880 --> 00:17:12,880
+verileri network tarafında, sunucu tarafında
+
+203
+00:17:12,880 --> 00:17:14,880
+saklama opsiyonumuzdan bahsedebiliriz.
+
+204
+00:17:14,880 --> 00:17:17,880
+Yani lokalde veri saklamak ve network üzerinde
+
+205
+00:17:17,880 --> 00:17:19,880
+ya da cloud'da veri saklamak seçeneği var.
+
+206
+00:17:19,880 --> 00:17:26,880
+Firebase Google'ın sunduğu aslında çok karmaşık olmayan
+
+207
+00:17:26,880 --> 00:17:29,880
+ve cloud tarafında verilerinizi saklayıp
+
+208
+00:17:29,880 --> 00:17:33,880
+uygulamanızın yükünü azalttığınız ve aynı zamanda
+
+209
+00:17:33,880 --> 00:17:40,880
+verilerinizin herhangi bir şanssızlık durumunda, silinmesi durumunda
+
+210
+00:17:40,880 --> 00:17:43,880
+orada depolanmasını sağlayabileceğiniz bir yapım.
+
+211
+00:17:43,880 --> 00:17:45,880
+Şimdi sorular var.
+
+212
+00:17:45,880 --> 00:17:48,880
+Bu soruları daha önce de görmüştünüz.
+
+213
+00:17:48,880 --> 00:17:50,880
+İşte ne kadarlık bir alana ihtiyacınız var.
+
+214
+00:17:50,880 --> 00:17:57,880
+Verinizin güvenlik seviyesinin ne derece olmasını istiyorsunuz.
+
+215
+00:17:57,880 --> 00:18:02,880
+Veriniz özel mi ya da ne tür bir veri saklamayı düşünüyorsunuz gibi
+
+216
+00:18:02,880 --> 00:18:07,880
+bu tür sorulara vereceğiniz cevaplar hangi tercihi yapacağınızı
+
+217
+00:18:07,880 --> 00:18:09,880
+size söylüyor olacak.
+
+218
+00:18:09,880 --> 00:18:12,880
+Örneğin paylaşılabilir bir içerikten bahsediyorsak
+
+219
+00:18:12,880 --> 00:18:17,880
+o zaman shared storage'u kullanmak, çok gizli bir veriden bahsediyorsak
+
+220
+00:18:17,880 --> 00:18:24,880
+daha çok internal storage'da preferences, veri tabanı ve dosya yapısını kullanmak
+
+221
+00:18:24,880 --> 00:18:30,880
+veya oyun gibi kritik bilgiyi arz etmeyen ama büyük boyuttaki uygulamaları
+
+222
+00:18:30,880 --> 00:18:34,880
+ise external storage'da saklamayı tercih ediyor olacağız.
+
+223
+00:18:34,880 --> 00:18:36,880
+Şimdi yine bu tabloyu da görmüştük.
+
+224
+00:18:36,880 --> 00:18:40,880
+Burada get files'dir ve get cache'dir olmak üzere internal storage'da
+
+225
+00:18:40,880 --> 00:18:43,880
+iki tür de directory'i oluşturabiliyorsunuz.
+
+226
+00:18:43,880 --> 00:18:45,880
+Bir tanesi kalıcı bilgileri saklamak,
+
+227
+00:18:45,880 --> 00:18:47,880
+diğeri geçici bilgileri saklamak için.
+
+228
+00:18:47,880 --> 00:18:53,880
+Bunun karşılığı external drive için get external files'dir
+
+229
+00:18:53,880 --> 00:18:55,880
+ve get external cache'dir.
+
+230
+00:18:55,880 --> 00:19:03,880
+App specific files'lar uygulamayı kaldırdığınızda otomatik olarak siliniyor.
+
+231
+00:19:03,880 --> 00:19:08,880
+O yüzden buna dikkat etmeniz ve bunu unutmamanız gerekiyor.
+
+232
+00:19:08,880 --> 00:19:15,880
+Bunun ötesinde biraz önce bahsetmiş olduğumuz shared storage'u ikiye ayrılıyor.
+
+233
+00:19:16,880 --> 00:19:21,880
+Shareable media files'ları media store API üzerinden.
+
+234
+00:19:21,880 --> 00:19:28,880
+Bunun dışındaki PDF netvork üzerinden indirilen dosyalar ise
+
+235
+00:19:28,880 --> 00:19:33,880
+storage access framework üzerinden erişilebiliyor.
+
+236
+00:19:33,880 --> 00:19:38,880
+Şimdi burada read external storage ve write external storage olmak üzere
+
+237
+00:19:38,880 --> 00:19:43,880
+iki tane temelde izinden bahsediyoruz.
+
+238
+00:19:43,880 --> 00:19:45,880
+Buna bir tane daha izin eklenmiş durumda.
+
+239
+00:19:45,880 --> 00:19:50,880
+Bu izin nedir diye sorsam bilen var mı?
+
+240
+00:19:50,880 --> 00:20:02,680
+Manage external storage.
+
+241
+00:20:02,680 --> 00:20:05,680
+Üçüncü izin de manage external storage.
+
+242
+00:20:05,680 --> 00:20:08,680
+Developer Android'e girerseniz orada göreceksiniz.
+
+243
+00:20:08,680 --> 00:20:14,680
+Bu zamana kadar read ve write external storage'da
+
+244
+00:20:14,680 --> 00:20:22,680
+genel bir uygulamaların dosyalarına erişimle ilgili bir yapı vardı.
+
+245
+00:20:22,680 --> 00:20:34,680
+Manage external storage ile birlikte dosya bazında size erişim hakkı ayarı yapma imkanı sağlandı.
+
+246
+00:20:34,680 --> 00:20:39,680
+Buna ek olarak manage external storage ek olarak scoped external storage dediğimiz
+
+247
+00:20:39,680 --> 00:20:51,680
+sizin belli bölgeleri erişime açmanızı sağlayacak yeni bir yapılanma içerisinde Android 10 ve 11 ile birlikte bu yetenekler geldi.
+
+248
+00:20:51,680 --> 00:21:03,680
+11 ile gelen bu özellik özellikle 10 ile de gelen internal storage'daki bilgilerin şifrelenmesi özelliği
+
+249
+00:21:03,680 --> 00:21:13,680
+bu iki özellik birleşince Android tarafındaki security seviyesi bir tık daha iyi yönetilebilir ve bir tık daha güvenli hale gelmiş oldu.
+
+250
+00:21:13,680 --> 00:21:15,680
+Tekrar söylüyorum.
+
+251
+00:21:15,680 --> 00:21:22,680
+Manage external storage özelliği size dosya bazında genel olarak yönetim imkanı sağlıyor.
+
+252
+00:21:22,680 --> 00:21:24,680
+Detaylarını okuyup öğrenebilirsiniz.
+
+253
+00:21:24,680 --> 00:21:31,680
+Bunun ötesinde bir de scoped storage yönetiminden bahsediyoruz.
+
+254
+00:21:31,680 --> 00:21:42,680
+Yani belli noktalara özellikle external storage'da erişim yeteneği kazandırarak bütün external storage'a okuma ve yazma vermek yerine
+
+255
+00:21:42,680 --> 00:21:48,680
+external storage'daki dosya özelindeki izinleri yönetebiliyorsunuz.
+
+256
+00:21:48,680 --> 00:21:58,680
+Bir de Android 10 ile birlikte gelen internal storage'daki tüm verilerin şifrelenerek saklanması özelliğinin önemli özellikleri olduğunu vurgulayalım.
+
+257
+00:21:58,680 --> 00:22:06,680
+Burada tabii key value şeklinde saklayacağınız birçok veri var.
+
+258
+00:22:06,680 --> 00:22:10,680
+Bunun için de özellikle shared preferences yapısını kullanıyoruz.
+
+259
+00:22:10,680 --> 00:22:21,680
+Bu shared preferences yapısıyla dosyaya ulaşmadan biraz daha hızlı veri okuma yazma işini tamamlamış oluyorsunuz.
+
+260
+00:22:21,680 --> 00:22:29,680
+Bu kısımda uygulamayı kaldırdığınızda uygulamayla birlikte silinen dosyalar arasında yer alıyor.
+
+261
+00:22:29,680 --> 00:22:35,680
+Ve yine korunaklı bir alan diğer uygulamalar tarafından shared preferences'a gelişme şansınız olmuyor.
+
+262
+00:22:36,680 --> 00:22:44,680
+Shared preferences'a geldiğiniz zaman göreceksiniz tek bir shared preferences dosyası ya da mide'den fazla shared preferences dosyası yaratabilirsiniz.
+
+263
+00:22:44,680 --> 00:22:47,680
+Bunun detaylarını biraz sonra konuşuyor olacağız.
+
+264
+00:22:47,680 --> 00:22:53,680
+Ve ilişkissel veriyi ise SQLite üzerinde saklıyor olacağız.
+
+265
+00:22:53,680 --> 00:22:58,680
+Daha çok room libraries'ini kullanarak erişim sağlıyor olacağız.
+
+266
+00:22:58,680 --> 00:23:03,680
+Yine bu bölgede güvenli bölge olarak karşımıza çıkıyor.
+
+267
+00:23:04,680 --> 00:23:10,680
+Internal storage ve external storage arasındaki farkı artık biliyorsunuz.
+
+268
+00:23:10,680 --> 00:23:14,680
+Özellikle external file storage korunaksız bir bölge dedik.
+
+269
+00:23:14,680 --> 00:23:32,680
+USB olarak Android telefonunuzu USB storage olarak enable ettiğinizde o anda çalışan external storage ile yüklü bir uygulamanız varsa bloklanıyor ve uygulama iptal ediliyor.
+
+270
+00:23:32,680 --> 00:23:40,680
+O yüzden aklınızdan çıkarmayın, bir telefonu bağladınız, o sırada bir şey yapıyordunuz ve o uygulama external storage ile çalışıyorsa,
+
+271
+00:23:40,680 --> 00:23:52,680
+telefon masterç konumuna geçtiği için oradaki çalışan uygulamalar Android işletim sistemi tarafından bloklanıyor ve kapatılıyor.
+
+272
+00:23:52,680 --> 00:23:56,680
+Çünkü artık telefonunuz bir hard drive moduna geçmiş oluyor.
+
+273
+00:23:56,680 --> 00:24:00,680
+Bu yüzden oraya yüklediğiniz uygulamalar biraz kritik uygulamalar.
+
+274
+00:24:00,680 --> 00:24:09,680
+Yani çok sıklıkla kullanmanız bir uygulamayı oraya yüklemek zaman zaman bu tür hesaba katılmayan sıkıntıları yaratma ihtimali var.
+
+275
+00:24:09,680 --> 00:24:17,680
+Ama bir güvenlik söz konusuysa ve çoğunlukla uygulamaları internal file storage'a yüklemeniz tavsiye ediliyor.
+
+276
+00:24:17,680 --> 00:24:29,680
+İsterseniz, biraz sonra yine göreceksiniz, kullanıcının uygulamayı external storage'a yüklemesi yönünde bir ayar Android manifesti ekleyebiliyorsunuz.
+
+277
+00:24:29,680 --> 00:24:35,680
+Bunu ister oraya doğrudan adres olarak yani external storage'a hedef olarak gösterebiliyorsunuz.
+
+278
+00:24:35,680 --> 00:24:39,680
+İsterseniz auto deyip bu seçeneği kullanıcıya bırakabiliyorsunuz.
+
+279
+00:24:39,680 --> 00:24:51,680
+Ama kullanıcı her halükarda external file storage'a siz böyle bir yazılımcı olarak yükleme tavsiyesinde bulunsanız da sonradan yerini değiştirme şansına sahip
+
+280
+00:24:51,680 --> 00:24:59,680
+ya da internal storage'un yükleme alanı olarak seçme hakkına sahip bunun üzerinde bir değiştik yapma şansınız yok.
+
+281
+00:24:59,680 --> 00:25:08,680
+Bir de tabii uygulamaların verilerini paylaşmak için kullandığımız bir content provider yapısı var.
+
+282
+00:25:08,680 --> 00:25:20,680
+Bu content provider yapısını özellikle rehber uygulaması, SMS mesajları noktasında kullanıyor olacağız.
+
+283
+00:25:20,680 --> 00:25:30,680
+Buna eğer vaktimiz kalırsa bayrandan sonraki derslerimizle bakmaya çalışacağız yakından.
+
+284
+00:25:30,680 --> 00:25:38,680
+Buradaki bilgiler aslında hepsi bildiğiniz bilgiler. O yüzden bunların üzerinde çok fazla durmuyorum.
+
+285
+00:25:38,680 --> 00:25:47,680
+Konuştuğumuz bilgiler. Tabi bu size bahsetmiş olduğum manifestte ekleyebileceğiniz install location kısmı.
+
+286
+00:25:47,680 --> 00:25:57,680
+Bu noktada prefer external yazdığınız zaman otomatik olarak hedefinizi external storage olarak belirlemiş oluyorsunuz.
+
+287
+00:25:57,680 --> 00:26:06,680
+Özellikle file'lar konusunda her biri bir stream olduğu için açtığınız işiniz biten tüm file'leri kapatmanız gerektiğini
+
+288
+00:26:06,680 --> 00:26:14,680
+C'de olduğu gibi bir kez daha hatırlatayım. Yoksa ciddi bir performans düşüklüğü yaşama ihtimaline söz konusu.
+
+289
+00:26:14,680 --> 00:26:21,680
+Bir cihazdaki bu emülatör de olabilir. Bağladığınız fiziksel bir cihaz da olabilir.
+
+290
+00:26:21,680 --> 00:26:29,680
+Bilgileri erişmek için device file explorer özelliğini kullanıyorsunuz Android Studio'nun.
+
+291
+00:26:29,680 --> 00:26:41,680
+Bu sayede telefonunuzun içerisindeki klasörlerde gezinip oraya ürettiğiniz bir file, telefon içinde üretilen bir file'ı bilgisayarınıza
+
+292
+00:26:41,680 --> 00:26:48,680
+alma şansına sahipsiniz. Böyle bir imkanda var device file explorer'ı kullanarak.
+
+293
+00:26:48,680 --> 00:27:03,140
+Shared preferences yapısı bahsettiğim gibi primitif veritiflerini sakladık. Bu uğruna slot, integer, long ve primitif veritifi arasında sayılan ama
+
+294
+00:27:03,140 --> 00:27:07,140
+aslında bir obje formatına saklanan string var biliyorsunuz.
+
+295
+00:27:07,140 --> 00:27:16,140
+Aslında yani teknik olarak primitif bir data değil, obje formatında oluşturuyoruz string'i.
+
+296
+00:27:16,140 --> 00:27:27,140
+Ama bu da çok sık kullanılan bir yapı olduğu için key value şeklinde XML dosyası kullanarak shared preferences API üzerinden
+
+297
+00:27:27,140 --> 00:27:34,140
+özellikle bu key value bilgilerini saklama şansına sahipsiniz.
+
+298
+00:27:34,140 --> 00:27:41,450
+Yine SQLite database'den bahsetmiştik RuneRivers'ini kullandığımızda.
+
+299
+00:27:41,450 --> 00:27:50,299
+Şimdi gelelim internal storage ve external storage'taki unutmamanız gereken noktaları.
+
+300
+00:27:50,299 --> 00:27:56,299
+Internal storage sürekli erişilebilir, external storage sadece fiziksel olarak orada olduğu sürece erişilebilir.
+
+301
+00:27:56,299 --> 00:28:00,299
+Ya da herhangi bir SD card ile sorun olmadığı sürece.
+
+302
+00:28:00,299 --> 00:28:04,299
+Şu önemli noktayı da vurgulamakta fayda var.
+
+303
+00:28:04,299 --> 00:28:13,299
+Internal storage dahili bellek olarak geçse de kendi üzerinde external storage alanı yaratma şansınız var.
+
+304
+00:28:13,299 --> 00:28:17,299
+Yani fiziksel olarak SD card olmak zorunda değil.
+
+305
+00:28:17,299 --> 00:28:27,299
+Bazen size farklı firmalar internal storage üzerinde external bir alan yaratma imkanı veriyor.
+
+306
+00:28:28,299 --> 00:28:37,299
+Bu da özellikle ekstra bir SD card takılmayan telefonlarda dahili fiziksel olarak dahili belleyin.
+
+307
+00:28:37,299 --> 00:28:41,299
+Hem dahili hem de harici olarak kullanılmasına imkansız oluyor.
+
+308
+00:28:41,299 --> 00:28:46,299
+Bu şekilde herkesin genel olarak erişebileceği bir alan yaratıyorsunuz.
+
+309
+00:28:46,299 --> 00:28:55,299
+Bu da şu demek nasıl hard disklerde volümlar var siz parçaları ayırabiliyorsunuz diskinizi.
+
+310
+00:28:55,299 --> 00:29:08,299
+Burada da eğer internal storage'da bir external alan yaratıldıysa hem bu external alan hem de SD card'daki external alan iki farklı volüm olarak erişilebilir durumda oluyor.
+
+311
+00:29:08,299 --> 00:29:12,299
+Ve sizin buna göre bir yönetim sergilemeniz gerekiyor.
+
+312
+00:29:12,299 --> 00:29:17,299
+Yani tek bir external storage var diye düşünmek çok doğru değil.
+
+313
+00:29:17,299 --> 00:29:19,299
+Buna dikkat etmek gerekiyor.
+
+314
+00:29:20,299 --> 00:29:40,299
+İşte uygulamayı kaldırdığınızda tüm uygulamaya ait dosyaların silinmesiyle diğer tarafta get external files dir kullanarak yarattığınız dosyalar aslında sistem tarafından kaldırılıyor.
+
+315
+00:29:40,299 --> 00:29:43,299
+Bunu da mümkün kılabiliyorsunuz.
+
+316
+00:29:43,299 --> 00:29:58,299
+Yani external storage'da da silinmesini istediğiniz dosyalar olacaksa bunu ilgili directory metodunu çağırarak oluşturduğunuz directory'nin sonradan uygulama kaldırılığında silinmesini sağlayabiliyorsunuz.
+
+317
+00:29:58,299 --> 00:30:07,299
+Onun dışında işte APK boyutu büyük olanlar external storage'a daha çok kurulması bekleniyor.
+
+318
+00:30:07,299 --> 00:30:10,299
+Bu arada şu ufak detayını da vermekte fayda var.
+
+319
+00:30:10,299 --> 00:30:24,299
+Bir kurulumdan bahsediyorsak aslında bu APK dosyasının external storage'a yerleştirilmesi açıldıktan sonraki dosyaların yine internal alana eklenmesi ile sonuçlanıyor.
+
+320
+00:30:24,299 --> 00:30:33,299
+Yani siz external storage'a kurdum diye düşündüğünüz bir uygulamanın aslında APK kısmını external storage'a yerleştirmiş oluyorsunuz.
+
+321
+00:30:33,299 --> 00:30:44,299
+Belki public olacak directory'leri oraya koymuş oluyorsunuz ama diğer bütün uygulamaya ait spesifik olan uygulama spesifik dostlar gene internal storage'da bulunuyor.
+
+322
+00:30:44,299 --> 00:30:49,299
+Şimdi read-write operasyonlarını konuşalım.
+
+323
+00:30:49,299 --> 00:30:55,299
+GetFileStory kullanarak file objesi üzerinden bir file yaratabiliyorsunuz.
+
+324
+00:30:55,299 --> 00:31:01,299
+Bunun dışında farklı yöntemler de var tabii ki.
+
+325
+00:31:01,299 --> 00:31:03,299
+File name'i veriyorsunuz.
+
+326
+00:31:03,299 --> 00:31:10,299
+File name'i verdiğinizde open file output metodunu kullanarak doğrudan dosyaya erişme şansınız var.
+
+327
+00:31:10,299 --> 00:31:15,299
+İster yarattığınız file üzerinden bunu gerçekleştirelim file objesi.
+
+328
+00:31:15,299 --> 00:31:22,299
+İsterseniz burada open file output metodunu kullanarak açmak istediğiniz dosyaya erişin.
+
+329
+00:31:22,299 --> 00:31:26,299
+Bu noktada burada bir file output stream görüyorsunuz.
+
+330
+00:31:26,299 --> 00:31:29,299
+Biraz sonra file input stream göreceksiniz.
+
+331
+00:31:29,299 --> 00:31:37,299
+Bu output stream ve input streamler üzerinden genellikle Java'da olduğu gibi işleri yürütüyoruz.
+
+332
+00:31:37,299 --> 00:31:39,299
+Write metodu var.
+
+333
+00:31:39,299 --> 00:31:41,299
+Close metodu var.
+
+334
+00:31:41,299 --> 00:31:43,299
+Flash metodu var mesela.
+
+335
+00:31:43,299 --> 00:31:56,299
+F-Flash metoduyla siz berleğe yazmış olduğunuz bilginin bu flash metodunu çağırdığınızda gidip storage'a yani ikinci berleğe yazılmasını sağlıyorsunuz.
+
+336
+00:31:56,299 --> 00:32:00,299
+Öbür türlü asenkron bir yapıda bu bilgiler aktarılıyor.
+
+337
+00:32:00,299 --> 00:32:08,299
+Flash'ı çağırmazsanız işletim sistemi uygun olduğu zaman berlektan bilgileri alıp ikinci berleğe yazıyor.
+
+338
+00:32:08,299 --> 00:32:15,299
+Ama flash'ı çağırdığınızda o anda doğrudan senkron bir şekilde verileri ikinci berleğe kaydedebiliyorsunuz.
+
+339
+00:32:15,299 --> 00:32:19,299
+Try-catch mekanizmasının önemini bir kez daha hatırlatmakta fayda var.
+
+340
+00:32:19,299 --> 00:32:21,299
+Java'dan çok iyi biliyorsunuz.
+
+341
+00:32:21,299 --> 00:32:39,299
+Ama burada da özellikle dosya işlemlerinde dosyanın olmaması, açılamaması vesaire gibi durumlar çok sık karşımıza çıkma potansiyeli barındırdığı için mutlaka bir try-catch mekanizmasını dosya işlemlerinde implemente etmeniz gerekiyor.
+
+342
+00:32:39,299 --> 00:32:48,299
+Tabii ki programınızın sorun yaşadığında bu sorunu minimum şekilde atlatması için yoksa böyle bir zorunluluk yok.
+
+343
+00:32:48,299 --> 00:32:53,650
+Ama programınız crash edecektir bunu implement etmezseniz.
+
+344
+00:32:53,650 --> 00:33:00,650
+Şimdi burada gördüğünüz gibi iki farklı yapıdan bahsetmiştik.
+
+345
+00:33:00,650 --> 00:33:07,650
+Bir tanesinde file objecti kullanarak bir dosya oluşturma imkanımız var.
+
+346
+00:33:07,650 --> 00:33:16,650
+Bir diğeri de hemen altındaki doğrudan dosya ismini vererek kontekst üzerinden open file output metodunu çağırarak
+
+347
+00:33:16,650 --> 00:33:20,650
+bir dosya oluşturup içerisine bilgiyi aktarabiliyorsunuz.
+
+348
+00:33:20,650 --> 00:33:27,650
+Hemen altındaysa okuma için yarattığımız objeleri görüyorsunuz.
+
+349
+00:33:27,650 --> 00:33:29,650
+File input stream var bir tane.
+
+350
+00:33:29,650 --> 00:33:32,650
+Okuyacağımız dosya ismini veriyoruz.
+
+351
+00:33:32,650 --> 00:33:34,650
+Önce streami yaratıyoruz.
+
+352
+00:33:34,650 --> 00:33:40,650
+Sonra stream reader'ı kullanarak burada hangi formatta okuyacağımız vesaire bu tür detayları veriyoruz.
+
+353
+00:33:40,650 --> 00:33:53,650
+Sonra satır satır okuyarak nal görüne kadar bilgiyi string boiler üzerinden birleştirerek elde ediyoruz ki bu çok basit bir yapı.
+
+354
+00:33:53,650 --> 00:34:01,650
+Bu sitelerin en sonunda parcelayable ve serializable interfacelerini konuşacağız.
+
+355
+00:34:01,650 --> 00:34:03,650
+Bunlar da bizim için değerli.
+
+356
+00:34:03,650 --> 00:34:17,650
+Özellikle objeye kaydederken, objeleri bütün halinde kaydedebilmek için bunlardan faydalanıyor olacağız binary formatta dosya saklamak için.
+
+357
+00:34:17,650 --> 00:34:26,650
+İki tür genelde dosya saklıyoruz binary formatta ve text formatında olmak üzere ama yeni tip dosyalardan da bahsediyor olacağız.
+
+358
+00:34:26,650 --> 00:34:30,650
+Özellikle Android'in yeni desteklemeye başladı.
+
+359
+00:34:30,650 --> 00:34:42,650
+Temel yapıyı yani binary ve text formatını değiştirmediği ama tür olarak yönetilebilir başka dosyaları da işin içine kattığını biraz sonra görüyor olacaksınız.
+
+360
+00:34:42,650 --> 00:34:58,650
+Cache dosyalarınız özellikle daha sonradan silinmesinin bir sıkıntı yaratmayacağı ve kalıcı olarak kalmasının gerekli olmayan dosyaları mutlaka cachedir ile yarattığınız dairektiri de saklayın.
+
+361
+00:34:58,650 --> 00:35:05,650
+İşte yüksek boyutta bir dosya indirdiniz diyelim ki, uygulamanız internet üzerinden bir dosya indirdi.
+
+362
+00:35:05,650 --> 00:35:17,650
+Burayı içindeki bilgiyi işledikten sonra o dosyadan kurtulmanız gerekiyorsa onu getdir ile değil getcachedir ile yaratmanız çok daha sağlıklı.
+
+363
+00:35:17,650 --> 00:35:28,650
+İlk berlekte olduğunda silinecek alan cachedirektirler ve sizin periodik olarak temizleyebileceğiniz alan da cachedirektirler.
+
+364
+00:35:28,650 --> 00:35:34,650
+Diğer tarafta tek tek dosyaları kontrol etmeniz gerekecektir normal bir direktirde.
+
+365
+00:35:34,650 --> 00:35:40,650
+Bunu yapmaya gerek yok. O yüzden cachediri temizlemekte fayda var. [öğrenci]?
+
+366
+00:35:40,650 --> 00:35:47,090
+Hocam işletim sistemi kendisi cachedirektiri ne zaman temizliyor?
+
+367
+00:35:47,090 --> 00:35:58,090
+Özellikle belli alan yetmeme durumunda işletim sistemi bunları temizliyor.
+
+368
+00:35:58,090 --> 00:36:04,090
+Ama bunu bir garbuç kolektör kadar sık çalışan bir yapı olarak düşünmeyin.
+
+369
+00:36:04,090 --> 00:36:12,090
+Bu ikinci berlekte olduğu için daha çok berleğinizin internal storage olarak konuşuyorum.
+
+370
+00:36:12,090 --> 00:36:22,090
+Yetmemeye başladığı noktada bu işlemleri gerçekleştiriyor. Düşündüğünüz kadar yani garbuç kolektör kadar sık gerçekleşmiyor.
+
+371
+00:36:22,090 --> 00:36:26,090
+Yani belli bir oranı doldurmuş olmanız gerekiyor.
+
+372
+00:36:26,090 --> 00:36:33,090
+Mesela hocam telefon kapatıp açıldığı zaman yapıyor mu mesela öyle durumlarda?
+
+373
+00:36:33,090 --> 00:36:42,090
+Bununla ilgili özel bir bilgim yok. Telefon açıp kapatıldığı zaman cache'i boşaltıp boşaltmamıyla ilgili.
+
+374
+00:36:42,090 --> 00:36:45,619
+Buna bir bakmam gerekiyor.
+
+375
+00:36:45,619 --> 00:36:47,619
+Peki hocam teşekkürler.
+
+376
+00:36:47,619 --> 00:36:50,619
+Cached file'larını siz de temizleyebiliyorsunuz tabi.
+
+377
+00:36:50,619 --> 00:36:54,619
+Doğrudan cached file'ın kendisini verip delayed metodu ile temizleyebilirsiniz.
+
+378
+00:36:54,619 --> 00:37:01,619
+Ya da ilgili konteksteki cached file ismini verip delayed file metoduna parametri olarak aktarabilirsiniz.
+
+379
+00:37:01,619 --> 00:37:03,619
+İki tane farklı yöntem var.
+
+380
+00:37:03,619 --> 00:37:09,619
+Öte yandan bulunduğunuz konteksteki dosyaları listelemek isteyebilirsiniz.
+
+381
+00:37:09,619 --> 00:37:11,619
+Bunun için file list metodunu kullanıyorsunuz.
+
+382
+00:37:11,619 --> 00:37:19,619
+Bir de iç içe directory, nested directory yaratmak istediğiniz zaman getFileStore ile önce bir directory yaratıyorsunuz.
+
+383
+00:37:19,619 --> 00:37:33,619
+Sonra o directory'i yeni yaratmak istediğiniz directory yani dosya isminin olduğu yere pas ederek o directory'nin altında bir dosya yaratılmasını sağlayabiliyorsunuz.
+
+384
+00:37:33,619 --> 00:37:37,619
+getFileStore konuştuk, getCache'dir dedik.
+
+385
+00:37:37,619 --> 00:37:44,619
+İki farklı internal da alanda directory yaratmamızı sağlayan metod var.
+
+386
+00:37:44,619 --> 00:37:57,619
+Burada tabi özellikle bunların birer file obje döndürdüğünü söylemekte fayda var.
+
+387
+00:37:57,619 --> 00:38:02,619
+Buna göre dönen değeri değerlendirmeniz gerekiyor.
+
+388
+00:38:02,619 --> 00:38:16,039
+Size bahsetmiş olduğum fiziksel storage alanı ile ilgili birden fazla external storage olması durumundan bahsetmiştim.
+
+389
+00:38:16,039 --> 00:38:22,039
+Bu noktada sizin volume'lara erişmeniz gerekiyor.
+
+390
+00:38:22,039 --> 00:38:26,039
+Bu volume'lara 0,1,2,3 diye erişebiliyorsunuz.
+
+391
+00:38:26,039 --> 00:38:38,039
+Bu bilgi ise context üzerinden getExternalFiles'dir dediğimizde size external storage volume'lar dönüyor.
+
+392
+00:38:38,039 --> 00:38:41,039
+Eğer üç tane varsa üç tane dönüyor.
+
+393
+00:38:41,039 --> 00:38:50,039
+Eğer iki tane varsa iki tane, bir tane varsa da bir tane 0,1,2,3 diye external volume'larına erişebiliyorsunuz.
+
+394
+00:38:50,039 --> 00:38:59,039
+Burada da external'daki cache file'leri temizlemekle ilgili komutları görüyorsunuz.
+
+395
+00:38:59,039 --> 00:39:07,039
+Tabi yazma okuma işlemi gerçekleştireceğiniz zaman
+
+396
+00:39:07,039 --> 00:39:19,420
+özellikle çalıştığınız telefonun hafızasının ne kadar olduğunu bilmediğiniz için ve herkesin hangi limitlerde kullandığını bilmediğiniz için
+
+397
+00:39:19,420 --> 00:39:26,420
+genel olarak bir storage'ın donuluğu noktasında bir kontrole ihtiyacınız var.
+
+398
+00:39:26,420 --> 00:39:42,420
+Yazma işlemi yapmadan önce application context üzerinden özellikle storage manager'ın sahip olduğu o andaki alan bilgisini alarak
+
+399
+00:39:42,420 --> 00:39:49,420
+burada kontrol yaptıktan sonra yazma işlemini gerçekleştirmeyi tercih edebilirsiniz.
+
+400
+00:39:50,420 --> 00:39:53,420
+Get Alicatable Bytes beysini alıyorsunuz.
+
+401
+00:39:53,420 --> 00:40:04,420
+Eğer alınan boyut sizin yazmayı düşündüğünüz boyut ya da belirlediğiniz boyuttan büyükse sorun yok demektir.
+
+402
+00:40:04,420 --> 00:40:06,420
+İşleme devam ediyorsunuz.
+
+403
+00:40:06,420 --> 00:40:14,420
+Bu kontrolleri programınızın birer parçası, uygulamanızın birer parçası yapmanız değerli.
+
+404
+00:40:14,420 --> 00:40:24,420
+Bunlar ilk etapta uygulama geliştirirken çok dikkat edilmez ama zaman içerisinde uygulamanızı gerçek kullanıcılarla tanıştırdığınızda
+
+405
+00:40:24,420 --> 00:40:29,420
+kullanıcılardan bununla ilgili olumsuz yolunlar alabilirsiniz.
+
+406
+00:40:29,420 --> 00:40:32,420
+İşte durup dururken uygulamam sonlandı vesaire gibi.
+
+407
+00:40:32,420 --> 00:40:41,420
+Aslında o kişi muhtemelen internet storage limitlerinde kullanıyordur ve bir kontrol yapılmadığı için bu tür sorunların oluşma olasılığı mevcut demektir.
+
+408
+00:40:41,420 --> 00:40:57,230
+Şimdi bu noktada dosyaları external storage kaydetme noktasında özellikle iki tür dosya türünden bahsediyoruz.
+
+409
+00:40:57,230 --> 00:41:00,230
+Public ve private fire'lar olmak üzere.
+
+410
+00:41:00,230 --> 00:41:11,230
+Özellikle resim, video gibi indirilen dosyaların public fire'lar altında incelenmesi gerektiğini söyledik.
+
+411
+00:41:11,230 --> 00:41:20,230
+Bu noktada sizin bir external storage'a dosya kaydedebilmeniz için bir izin almanız gerekiyor.
+
+412
+00:41:20,230 --> 00:41:29,230
+Burada write external storage ya da oradan bir dosya okuyacaksanız read external storage izinden alınmış olması çok önemli.
+
+413
+00:41:29,230 --> 00:41:43,230
+Ama Android 11 ile birlikte gelen manage external storage özelliğini de yeni API'ler için uygulama geliştirecek arkadaşların dikkate alması gerekiyor.
+
+414
+00:41:43,230 --> 00:41:55,230
+Daha izole, daha güvenliği artırılmış storage alanları ve dosya erişim imkanlarını sunmak için kullanıcılara.
+
+415
+00:41:55,230 --> 00:42:05,230
+Bu noktada bir external storage'a bir şey yazmak ya da okumak istiyorsanız oranın erişilebilir olduğunu kontrol etmeniz gerekiyor.
+
+416
+00:42:05,230 --> 00:42:13,230
+Bunun için environment sınıfı üzerinden external storage'ın state bilgisini alıyorsunuz.
+
+417
+00:42:13,230 --> 00:42:26,230
+State bilgisinin media mounted olup olmadığını ya da media mounted read only ya da yazılabilir olup olmadığını kontrol etmeniz gerekiyor.
+
+418
+00:42:26,230 --> 00:42:36,230
+Bu özellikleri kontrol etmezseniz stcut o anda çıkartıldıysa yine problem oluşma durumu söz konusu olacaktır.
+
+419
+00:42:36,230 --> 00:42:46,230
+Şimdi altta iki tane kod var. İkisindeki fark nedir diye hemen sorayım size hızlıca.
+
+420
+00:42:46,230 --> 00:42:49,230
+Çok net bir şekilde görebileceğiniz farkı.
+
+421
+00:42:49,230 --> 00:43:05,670
+İsimlerinden de belli [öğrenci].
+
+422
+00:43:05,670 --> 00:43:12,670
+Hocam birinde external storage'ın public yani ana klasörünü alıyoruz.
+
+423
+00:43:12,670 --> 00:43:18,670
+Diğerinde de daha önce tanımladığımız bir external storage klasörüne işlem yapıyoruz.
+
+424
+00:43:18,670 --> 00:43:30,670
+Ya son bölüm düzelteyim daha önce tanımladığımız demeyelim de özel yarattığımız klasörü ve uygulamaya ait bir alanda yarattığımız klasörü kullanıyoruz.
+
+425
+00:43:30,670 --> 00:43:34,670
+Bir tarafta her uygulamaya açık resimler saklamak için yapıyoruz bunu.
+
+426
+00:43:34,670 --> 00:43:45,670
+Diğer tarafta ise sadece o uygulama özelinde saklanacak yani sağ tarafta bir directory yapısı dosya yapısı yaratmış oluyoruz.
+
+427
+00:43:45,670 --> 00:43:54,670
+Ve bu sayede uygulama silindiği zaman buradaki özel alan da otomatik olarak remove edilmiş oluyor.
+
+428
+00:43:54,670 --> 00:44:00,670
+Bu kodlar üzerinden hızlıca geçiyorum çok üzerinde çok durmuyorum.
+
+429
+00:44:00,670 --> 00:44:03,670
+Bunlar zaten developer Android com'da var.
+
+430
+00:44:03,670 --> 00:44:13,670
+Hızlıca baktığınızda 5 dakikada çok rahat anlayabileceğiniz kodlar önemli olan temelde ne tür Android'deki tüf noktaların olduğunu konuşmak.
+
+431
+00:44:13,670 --> 00:44:19,670
+Bunlara erişebilirsiniz developer Android com üzerinden.
+
+432
+00:44:19,670 --> 00:44:32,670
+Şimdi get free space, get total space gibi bizim için o andaki belleğin durumunu döndüren metotlar da var.
+
+433
+00:44:32,670 --> 00:44:35,670
+Bunları kullanmak önemli.
+
+434
+00:44:35,670 --> 00:44:38,670
+Geri geldiği zaman biraz önce de göstermiştik.
+
+435
+00:44:38,670 --> 00:44:43,670
+Diğer bahsettiğimiz bilgiler zaten tekrar eden bilgiler.
+
+436
+00:44:43,670 --> 00:44:45,670
+Burada şöyle bir şey var.
+
+437
+00:44:53,670 --> 00:45:01,670
+Yani burada aslında biraz önce [öğrenci]'in sorduğu sorunun da cevabını bulmuş oluyoruz.
+
+438
+00:45:02,670 --> 00:45:09,670
+Cache dir'deki dosyalar sıkışılmadığı sürece temizlenmiyor.
+
+439
+00:45:09,670 --> 00:45:14,670
+Bunun temizliğinden sorumlu olan aslında yazılımcı.
+
+440
+00:45:14,670 --> 00:45:27,670
+O yüzden yazılımcının yapmadığı bir noktada sizin girip nasıl bilgisayarınızda webinizin cachelerini temizliyorsunuz
+
+441
+00:45:27,670 --> 00:45:35,670
+böyle bir otomatik ayar seti diyorsunuz 30 günde bir temizle diye bu tür kullanımda temizlenmesi gerekiyor.
+
+442
+00:45:35,670 --> 00:45:38,670
+Buradaki geçici directory alanı.
+
+443
+00:45:38,670 --> 00:45:44,210
+Şimdi gelelim share storage tarafına.
+
+444
+00:45:44,210 --> 00:45:47,210
+Share storage tarafında aslında iki tane noktaya değinmiştik.
+
+445
+00:45:47,210 --> 00:45:55,210
+Bir tanesi media contenti, diğeri ise dosyalar ve diğer doküman tipleri olarak bahsettik.
+
+446
+00:45:55,210 --> 00:45:59,210
+İşte buna PDF ya da kitap formatlarını örnek olarak veriyoruz.
+
+447
+00:45:59,210 --> 00:46:09,210
+Media Store API, media contentlerine erişimi, storage access framework ise diğer tipteki dosyalara erişimi mümkün kılıyor.
+
+448
+00:46:09,210 --> 00:46:12,210
+Ama 11 ile birlikte gelen yeni bir özellik var.
+
+449
+00:46:12,210 --> 00:46:21,210
+Özellikle data set kullanımının yaygınlaşması, machine learning uygulamaların yaygınlaşması, yapay zekanın yaygınlaşmasıyla
+
+450
+00:46:21,210 --> 00:46:40,210
+bir uygulamanın karar verebilmesi için, öğrenebilmesi için gerekli verilere erişmesi adına yeni bir data set erişimini mümkün kılan Blob Store Manager API ortaya konmuş.
+
+451
+00:46:40,210 --> 00:46:53,210
+Ve bu sayede siz ABC uygulamalarının telefonunuza yüklediğiniz bir data sete ortak bir noktadan erişmesini bu API ile mümkün kılabiliyorsunuz.
+
+452
+00:46:53,210 --> 00:46:57,210
+Önemli bir ihtiyaçta aslında giderilmiş oluyor.
+
+453
+00:46:57,210 --> 00:47:02,210
+Standartlaşmada bu şekilde sağlamış oluyor.
+
+454
+00:47:02,210 --> 00:47:11,210
+Medya contentleri bir tarafta, işte PDF kitap vesaire, diğer dosya tipleri bir tarafta.
+
+455
+00:47:11,210 --> 00:47:21,210
+Bir de özellikle machine learning tarafına, data science tarafına hizmet edecek data setlere erişim için bir API daha ortaya konmuş oluyor.
+
+456
+00:47:21,210 --> 00:47:23,210
+O da bir tarafa geçmiş oluyor.
+
+457
+00:47:23,210 --> 00:47:26,210
+Evet şimdi 14.47 oldu.
+
+458
+00:47:26,210 --> 00:47:30,210
+Her zamanki gibi belli sıklıklarda ara veriyoruz.
+
+459
+00:47:30,210 --> 00:47:34,210
+Şimdi de bunu yapacağız. 14.47-15'de bir araya geleceğiz.
+
+460
+00:47:34,210 --> 00:47:36,210
+Shared Preferences'ı anlatacağım.
+
+461
+00:47:36,210 --> 00:47:40,210
+Shared Preferences'dan sonra Parts Label Serializable'ı anlatacağım.
+
+462
+00:47:40,210 --> 00:47:44,210
+Sonra da bu konuyla ilgili varsa sorularınız yanıplıyor olacağım.
+
+463
+00:47:44,210 --> 00:47:46,210
+Görüşmek üzere arkadaşlar teşekkür ederim.
+
+464
+00:47:46,210 --> 01:00:13,269
+Evet arkadaşlar kaldığımız yerden devam edeceğiz şimdi.
+
+465
+01:00:13,269 --> 01:00:19,099
+En son Shared Storage'da saklayabileceğimiz yapıları konuşmuştuk.
+
+466
+01:00:19,099 --> 01:00:21,099
+Şimdi Shared Preferences'a geçiyoruz.
+
+467
+01:00:22,099 --> 01:00:33,099
+Shared Preferences daha basit tipteki verileri, anahtar, değer, key value mantılda saklamak için bize sunulmuş bir API.
+
+468
+01:00:33,099 --> 01:00:45,099
+Temelde Get Shared Preferences'la Get Preferences olmak üzere iki şekilde bize dosya yaratma imkanı sağlıyor.
+
+469
+01:00:45,099 --> 01:00:53,099
+Get Preferences'ta bize sadece o aktiviteye ait bir tane Shared Preferences yaratma imkanı veriyor.
+
+470
+01:00:53,099 --> 01:00:59,099
+Get Shared Preferences'ta ise iki tane bilgi alıyor.
+
+471
+01:00:59,099 --> 01:01:06,099
+Bir tanesi kontekst bilgisi, diğeri de yaratacağımız Shared Preferences dosyasının ismi.
+
+472
+01:01:06,099 --> 01:01:17,099
+O yüzden Get Shared Preferences mantılını kullanarak istediğiniz kadar Shared Preferences, farklı türde Shared Preferences dosyası oluşturma şansına sahipsiniz.
+
+473
+01:01:17,099 --> 01:01:23,099
+Biri bir dosya yaratıyor, diğeri birden fazla dosya yaratmanızı sağlıyor.
+
+474
+01:01:23,099 --> 01:01:34,099
+Burada Shared Preferences'ta hangi tür bilgileri saklayabileceğiniz özellikle ve ne şartlarda saklayabileceğiniz Saved Instant State'den farkı nedir?
+
+475
+01:01:34,099 --> 01:01:38,099
+diye bir karşılaştırma tablosu var.
+
+476
+01:01:38,099 --> 01:01:52,099
+Daha çok kalıcı veriyi Session'lar arasında da kullanabilmek adına, özellikle uygulama kaldırıldığında, device tekrar reboot olduğunda kullanabilmek adına ortaya atılmış bir yapı.
+
+477
+01:01:52,099 --> 01:01:58,099
+Kalıcı veri saklama yöntemi.
+
+478
+01:01:58,099 --> 01:02:06,099
+Bunun dışında sizin yapacağınız ödevde de olduğu gibi, örneğin bir ayarlarla ilgili bir kayıt yaptınız.
+
+479
+01:02:06,099 --> 01:02:09,099
+Bu kaydı başka bir aktivitede kullanabiliyorsunuz.
+
+480
+01:02:09,099 --> 01:02:21,099
+Size böyle bir imkan sağlıyor ve dosyanın karmaşık yapısındansa bir hash mantığında olduğu gibi key value ile erişim sağlıyor.
+
+481
+01:02:21,099 --> 01:02:29,099
+Bu da çok hızlı bir şekilde verinin dosya okuma sırasındaki performansını arttırmış oluyor.
+
+482
+01:02:29,099 --> 01:02:33,099
+Öte yandan Saved Instant State'ı hatırlıyorsunuz.
+
+483
+01:02:33,099 --> 01:02:36,099
+Session'lar arası birileri taşımak gibi bir durum yok.
+
+484
+01:02:36,099 --> 01:02:42,099
+Sadece device'i çevirdiğinizde device'ın bulunduğu aktivite onDestroy oluyor.
+
+485
+01:02:42,099 --> 01:02:46,099
+Sonra tekrar onCreate ile işleme alınıyordu.
+
+486
+01:02:47,099 --> 01:02:54,099
+Bu noktada bundle objesinde duran bilgiyi tekrar kullanma şansına sahip oluyorsunuz.
+
+487
+01:02:54,099 --> 01:02:55,099
+Save Instant State'te.
+
+488
+01:02:55,099 --> 01:02:59,099
+Gelelim okuma ve yazma shared preferences'ta nasıl yapılıyor çok kolay.
+
+489
+01:02:59,099 --> 01:03:01,099
+Önce bir context bilgisi alıyorsunuz.
+
+490
+01:03:01,099 --> 01:03:05,099
+Sonra bir tane shared preferences objesi yaratıyorsunuz.
+
+491
+01:03:05,099 --> 01:03:10,099
+Bunun modunu da mode private olarak seçmeniz isteniyor sizden.
+
+492
+01:03:11,099 --> 01:03:21,099
+Aşağıda gördüğünüz yapıda birinde shared preferences'ta yani üst kısımdaki yaratılmış dosya var.
+
+493
+01:03:21,099 --> 01:03:25,099
+Shared preferences'ta ise sadece modu gönderiyorsunuz.
+
+494
+01:03:25,099 --> 01:03:28,099
+Herhangi bir dosya ismi paylaşmanız gerekmiyor.
+
+495
+01:03:28,099 --> 01:03:31,099
+İki tane farklı kullanım şeklini görüyorsunuz.
+
+496
+01:03:31,099 --> 01:03:36,099
+Burada bir edit işlemi yapabilmeniz için shared preferences'ta
+
+497
+01:03:36,099 --> 01:03:44,099
+o ilgili sınıf üzerinden bir editor yaratıyorsunuz.
+
+498
+01:03:44,099 --> 01:03:50,099
+İlgili shared preferences objesinin de edit metodunu çağırıyorsunuz.
+
+499
+01:03:50,099 --> 01:03:57,099
+Put int aynı daha önce gördüğünüz mantıkla ve get int işte put float ile yazma ve okuma yapabiliyorsunuz.
+
+500
+01:03:57,099 --> 01:03:59,099
+Burada önemli bir farklılık var.
+
+501
+01:03:59,099 --> 01:04:01,099
+Commit ve apply arasında.
+
+502
+01:04:02,099 --> 01:04:06,099
+Bu noktada size sorayım iki tane ifade var.
+
+503
+01:04:06,099 --> 01:04:08,099
+Commit ve apply.
+
+504
+01:04:08,099 --> 01:04:26,679
+Bunlar arasındaki fark nedir diye sorayım.
+
+505
+01:04:26,679 --> 01:04:28,679
+Evet [öğrenci].
+
+506
+01:04:28,679 --> 01:04:34,059
+Hocam apply üzerinde bir değişiklik yapmak istediğimizde
+
+507
+01:04:34,059 --> 01:04:39,059
+bu değişikliği geçici bölgeye aktarırken apply kullanıyoruz.
+
+508
+01:04:39,059 --> 01:04:42,059
+Ve bütün değişikliklerimizi yapıp bitirmek istediğimizde de
+
+509
+01:04:42,059 --> 01:04:47,059
+bunu commit diyerek artık tamamen geçici bölgeden kalıcı bölgeye geçmesini sağlıyoruz.
+
+510
+01:04:47,059 --> 01:04:49,059
+Çok güzel doğru tanımlaman.
+
+511
+01:04:49,059 --> 01:04:52,059
+Bizim bunun için kullandığımız iki tane ifade var.
+
+512
+01:04:52,059 --> 01:04:58,059
+Bu şekilde bilgiyi doğrudan olması gereken yere yazmakla
+
+513
+01:04:58,059 --> 01:05:03,059
+belirli bir zaman sonra oraya yazmak arasında. Nedir o?
+
+514
+01:05:03,059 --> 01:05:08,300
+Nasıl yani hocam?
+
+515
+01:05:08,300 --> 01:05:10,300
+Yaptığımız değişikliği geçici olarak.
+
+516
+01:05:10,300 --> 01:05:12,300
+Belirlinin aktarılması için de bunu çok kullanırız.
+
+517
+01:05:12,300 --> 01:05:17,300
+Şöyle şöyle çalışıyor deriz ya da veri şu şekilde aktarılıyor deriz.
+
+518
+01:05:17,300 --> 01:05:23,579
+Anında yapmakla belli bir süre sonra yapmak arasındaki fark.
+
+519
+01:05:23,579 --> 01:05:26,579
+Planlı değişim onu çıkarır mı?
+
+520
+01:05:26,579 --> 01:05:28,579
+Synchron veya synchron?
+
+521
+01:05:28,579 --> 01:05:29,579
+Evet.
+
+522
+01:05:29,579 --> 01:05:36,579
+Commit, synchron olarak verinizin herhangi bir şekilde geçici belnekte
+
+523
+01:05:36,579 --> 01:05:41,579
+yani daha doğrusu birincil belnekte kalmadan doğrudan yazılmasını sağlıyor.
+
+524
+01:05:41,579 --> 01:05:47,579
+Apply ise verinizin o andaki uygunluğa bağlı olarak
+
+525
+01:05:47,579 --> 01:05:52,579
+önce belneye yazılmasını sonra ikinci belneye aktarılmasını sağlıyor.
+
+526
+01:05:52,579 --> 01:05:55,579
+Yani aradaki fark biri synchron biri asynchron çalışıyor.
+
+527
+01:05:55,579 --> 01:05:58,579
+Ne zaman kritik?
+
+528
+01:05:58,579 --> 01:06:06,579
+Örneğin o veriyi hemen başka bir nesne ya da aktiviti kullanacaksa
+
+529
+01:06:06,579 --> 01:06:08,579
+commit etmek gerekir.
+
+530
+01:06:08,579 --> 01:06:13,579
+Ama aciliyeti yoksa ve o anda daha kritik yapılması gereken işler var
+
+531
+01:06:13,579 --> 01:06:17,579
+ve işletim sisteminin kontrolünde uygun olan bir zamanda yazılması isteniyorsa
+
+532
+01:06:17,579 --> 01:06:24,579
+o zaman Apply'i çağırmanız ve asynchron bu işi yönetmeniz yeterli olacaktır.
+
+533
+01:06:24,579 --> 01:06:29,579
+Çünkü yazılacak veri büyüdükçe bu işi synchron yapmak
+
+534
+01:06:29,579 --> 01:06:35,579
+ilgili prosesin ya da thread'in diğer hizmet alacak
+
+535
+01:06:35,579 --> 01:06:39,579
+process veya thread'leri bekletmesine serviyet verecektir.
+
+536
+01:06:39,579 --> 01:06:44,579
+Apply ile yaptığınız zaman o zaman anında yazma zorunda olmadığı için
+
+537
+01:06:44,579 --> 01:06:46,579
+böyle bir sıkıntı olmayacaktır.
+
+538
+01:06:46,579 --> 01:06:54,579
+Şimdi tabii put ile yazdığımızı söyledik get ile de bilgiyi alıyoruz.
+
+539
+01:06:54,579 --> 01:06:58,579
+Aşağıdaki kod parçasına baktığınızda gene bir shared preferences tanımlanmış.
+
+540
+01:06:58,579 --> 01:07:04,579
+Get preferences üzerinden erişilmiş shared preferences'a.
+
+541
+01:07:04,579 --> 01:07:09,579
+Ve iki tane satır var. Bu iki satır ne yapıyor olabilir?
+
+542
+01:07:09,579 --> 01:07:25,730
+Çok basit bir cevabı var.
+
+543
+01:07:25,730 --> 01:07:33,010
+Evet [öğrenci].
+
+544
+01:07:33,010 --> 01:07:38,480
+Kayıtlı olan en yüksek skoru almaya çalışıyor.
+
+545
+01:07:38,480 --> 01:07:44,480
+Alamazsa da onun default value'su önceden atanmış bir default value değerini
+
+546
+01:07:44,480 --> 01:07:47,480
+eğer bulamazsa da o default value değerini alıyor.
+
+547
+01:07:48,480 --> 01:07:53,480
+Teşekkür ederim. Eğer aradığınız key shared preferences'ta yoksa
+
+548
+01:07:53,480 --> 01:08:00,480
+bir hata dönmemesi ya da olmadığında default bir değer atama yapabilmeniz için
+
+549
+01:08:00,480 --> 01:08:07,480
+oluşturulan iki satırlık kod bir tanesinde ilgili sabitlerin olduğu
+
+550
+01:08:07,480 --> 01:08:11,480
+resources dosyasından değer getiriliyor default value değişkenle.
+
+551
+01:08:11,480 --> 01:08:16,479
+Diğerinde ise get int ile shared preferences sistem değer okunmaya çalışılıyor.
+
+552
+01:08:16,479 --> 01:08:23,479
+İlk parametremiz değerin okunacağı key ne olduğu parametresi.
+
+553
+01:08:23,479 --> 01:08:28,479
+İkinci parametre ise eğer değer okunamazsa varsayılan değerin ne olarak
+
+554
+01:08:28,479 --> 01:08:35,479
+atanacağı o da biz önceki satırdan gelmiş olan bilgi aslında oldukça kolay bir yapısı var.
+
+555
+01:08:35,479 --> 01:08:41,479
+Şimdi gelelim uygulamalar arasında veri paylaşımına.
+
+556
+01:08:41,479 --> 01:08:45,479
+Shared preferences ile ilgili kısmasını tamamladık.
+
+557
+01:08:45,479 --> 01:08:48,479
+Birkaç tane daha metot var ama çok da kritik.
+
+558
+01:08:48,479 --> 01:08:54,479
+Pardon evet birkaç tane daha metot var onu hemen şurada kayma olmuştu onu söyleyeyim.
+
+559
+01:08:54,479 --> 01:08:59,479
+Burada bu metotlar çok kritik değil ama hatırlatmakta fayda var.
+
+560
+01:08:59,479 --> 01:09:08,479
+Contains metodunu çağırarak ilgili keyin olup olmadığını kontrol edebiliyorsunuz.
+
+561
+01:09:08,479 --> 01:09:10,479
+Böyle bir özelliği var.
+
+562
+01:09:10,479 --> 01:09:14,479
+Onun dışında tüm değerleri get all ile alabiliyorsunuz.
+
+563
+01:09:14,479 --> 01:09:20,479
+İlgili almak istediğiniz değerin tipini belirterek diğer metotları tanımlayabiliyorsunuz.
+
+564
+01:09:20,479 --> 01:09:24,479
+Şimdi bu slide aslında bir önceki slide olması gerekiyor.
+
+565
+01:09:24,479 --> 01:09:26,479
+Burada bir kayma olmuş.
+
+566
+01:09:26,479 --> 01:09:30,479
+Gelelim veriler uygulamalar arasında veri aktarımına.
+
+567
+01:09:30,479 --> 01:09:41,479
+Şimdi veri aktarımı yaparken hatırlarsanız intenti kullanıyorduk ve hangi aksiyonu o veri ile ilgili yapılmasını istediğimizi belirliyorduk.
+
+568
+01:09:41,479 --> 01:09:45,479
+Sonra da ilgili bilgimizi buraya yerleştiriyorduk.
+
+569
+01:09:45,479 --> 01:09:51,479
+Burada doğrudan ilk örnekte bir string bilgisi yerleştirilmiş.
+
+570
+01:09:51,479 --> 01:09:58,479
+Zaten verinin tipi de set type ile text plane olarak default olarak assign edilmiş.
+
+571
+01:09:58,479 --> 01:10:04,479
+Aynı şekilde aşağıda da benzer bir örneği görüyorsunuz.
+
+572
+01:10:04,479 --> 01:10:15,479
+Bu sefer işin içine CreateChooser eklenmiş ve bu veriyi işleyebilecek olan uygulamaların seçeneğini bize getiriyor.
+
+573
+01:10:15,479 --> 01:10:20,479
+Tabii text contenti göndermenin dışında binary content de göndermek isteyebiliriz.
+
+574
+01:10:20,479 --> 01:10:31,479
+Bunu bir resim contenti göndermek istediğimiz zaman URI tanımlamış olduğumuz objeyi ekliyoruz.
+
+575
+01:10:31,479 --> 01:10:39,479
+Ve bunun bir JPEG objesi olduğunu söyleyip extra string'e bunu koyarak karşı tarafa gönderebiliyoruz.
+
+576
+01:10:39,479 --> 01:10:44,479
+Tabii bunlar hep hazır kullanımlar kolaylaştırmak için.
+
+577
+01:10:44,479 --> 01:10:52,479
+Ama kendi özel customized objelerinizi de bu intentlere yükleyip karşı tarafa gönderme şansına sahipsiniz.
+
+578
+01:10:52,479 --> 01:11:00,479
+Bunun öncesinde bu custom objelerden önce aslında şunu söylemekte fayda var.
+
+579
+01:11:00,479 --> 01:11:04,479
+URI göndereceksiniz diyelim ve birden fazla göndereceksiniz.
+
+580
+01:11:04,479 --> 01:11:07,479
+Bir array list yaratıyorsunuz URI tipinde.
+
+581
+01:11:07,479 --> 01:11:13,479
+Bu URI tipindeki array liste ilgili göndermek istediğiniz URI'lere ekliyorsunuz.
+
+582
+01:11:13,479 --> 01:11:23,479
+Ve karşı tarafa putParsableArrayListExtra metodunu kullanarak buradaki birden fazla URI'yi karşı tarafa gönderebiliyorsunuz.
+
+583
+01:11:23,479 --> 01:11:29,479
+Tanımlamış olduğumuz image tipi burada yıldız ile bütün image'leri kapsadığımızı söylüyoruz.
+
+584
+01:11:29,479 --> 01:11:38,479
+Bu bütün image'leri gösterebilecek olan uygulamalar varsa ve bunu gönderebilecek olan uygulamalar varsa gösterebilecek yanlış oldu.
+
+585
+01:11:38,479 --> 01:11:46,479
+Gönderebilecek uygulamalar varsa ki mail uygulamaları bu yönde uygulamalar onlar bizim karşımızda seçenek olarak çıkıyorlar.
+
+586
+01:11:46,479 --> 01:11:49,479
+Şimdi tabii bu bilgileri karşı tarafa gönderdik.
+
+587
+01:11:49,479 --> 01:11:55,479
+Ama gönderdiğimiz activity'nin de bu bilgileri karşılaması gerekiyor.
+
+588
+01:11:55,479 --> 01:12:00,479
+Burada bizim seçtiğimiz ActionSendMultiple'di.
+
+589
+01:12:00,479 --> 01:12:10,479
+Bu noktada bu MyActivity'nin intent filter'ları arasında ActionSend de var.
+
+590
+01:12:10,479 --> 01:12:17,479
+Hem image'leri gönderebildiğini bütün image'leri gönderebildiğini söylüyor hem de plain text'leri gönderebildiğini söylüyor.
+
+591
+01:12:17,479 --> 01:12:31,479
+Artı bir de aslında multiple gönderim de yapabildiğini söylüyor ve bunun için farklı türdeki image'leri birden fazla image türünü birlikte gönderebileceğini söylüyor.
+
+592
+01:12:31,479 --> 01:12:45,479
+Peki bunun manifestinde bu şekilde bir tanımlama yapılmış Java kodunda ne var diye bakacak olursak gelen bir kere intent'in karşılanması gerekiyor.
+
+593
+01:12:45,479 --> 01:12:53,479
+Get internet alıyorsunuz. Sonra Action bilgisinin alınması gerekiyor ve ilgili tip bilgisinin alınması gerekiyor.
+
+594
+01:12:53,479 --> 01:12:56,479
+Bundan sonra bir karşılaştırma var. Neden böyle?
+
+595
+01:12:56,479 --> 01:13:03,479
+Çünkü bu activity birden fazla action yapabileceğini ve birden fazla tip için yapabileceğini söylüyor.
+
+596
+01:13:03,479 --> 01:13:14,479
+Ve sizin gelen hangi uygulamadan gelen bir activity'niz olduğunu bilmediğiniz için internetin nereden geldiğini bilmemiz için bunların kontrolünü yapmanız gerekiyor.
+
+597
+01:13:14,479 --> 01:13:24,479
+İşte burada aldığınız aksiyon action send'e eşitse bununla ilgili handle send text tipine de bakarak metodunu çağırıyorsunuz.
+
+598
+01:13:24,479 --> 01:13:33,479
+İşte action send'e eşitse ama true image'sa o zaman handle send image çağırıyorsunuz metodunu.
+
+599
+01:13:33,479 --> 01:13:43,479
+Eğer action send multiple aksiyonu geldiyse de ilgili handle send multiple images metodunu çağırıp bütün bu metodları aşağı tanımlıyorsunuz.
+
+600
+01:13:44,479 --> 01:13:56,479
+Ki hepsini yapabiliriz dediğiniz aksiyonlar için mutlaka birer karşılayabilecek bir metod olsun bunların mutlaka tanımlanmış olması gerekiyor.
+
+601
+01:13:56,479 --> 01:14:03,479
+Bu sayede uygulamalar arasında veriyi değiştokuş etmiş oluyorsunuz.
+
+602
+01:14:03,479 --> 01:14:08,479
+Burada da bu bahsettiğimiz ilgili metodları görüyorsunuz.
+
+603
+01:14:08,479 --> 01:14:13,750
+Evet buraya kadar sorusu olan var mı?
+
+604
+01:14:13,750 --> 01:14:23,079
+Uygulamalar arası veri taşınması için yöntemleri de konuşmuş olduk.
+
+605
+01:14:23,079 --> 01:14:28,079
+Şimdi gelelim serializable ve parcelable interface'lerine.
+
+606
+01:14:30,079 --> 01:14:35,079
+Bu interface'ler hakkında kıyas yapabilecek bilgiye sahip olan var mı?
+
+607
+01:14:35,079 --> 01:14:38,079
+Ne için kullanıyoruz [öğrenci]?
+
+608
+01:14:40,079 --> 01:14:45,079
+Bu interface'leri, objeleri dosyaya kaydetmek için kullanıyoruz.
+
+609
+01:14:45,079 --> 01:14:53,079
+Farkları da şu bildiğim kadarıyla serializable Java'nın sahip olduğu bir interface.
+
+610
+01:14:53,079 --> 01:14:56,079
+Parcelable da Android'in getirdiği bir interface.
+
+611
+01:14:56,079 --> 01:15:04,079
+Parcelable Android için daha otomize edilmiş olduğu için Android'lerde daha iyi performans sağlıyor bize serializable'a göre.
+
+612
+01:15:04,079 --> 01:15:08,079
+Onun dışında işletçi olarak bir farkları yok diyebiliyorum.
+
+613
+01:15:08,079 --> 01:15:12,079
+Peki teşekkür ederim. Söyletlerinin çoğunluğu doğru bir tane düzeltme yapacağım sadece.
+
+614
+01:15:12,079 --> 01:15:22,079
+Serializable ve parcelable sadece dosyaya yazmak için değil, aynı zamanda objeleri intemp üzerinden taşıma sırasında paketlemek için de kullandığımız interface'ler.
+
+615
+01:15:22,079 --> 01:15:32,079
+Arkadaşınızın söylediği gibi serializable standar Java interface'si basit, daha fazla garbuç üreten biraz daha yavaş çalışan bir yapı.
+
+616
+01:15:32,079 --> 01:15:36,079
+Parcelable ise Android SDK tarafından sunulan bir yapı.
+
+617
+01:15:36,079 --> 01:15:45,079
+Biraz daha kompleks implementasyonu, daha az bir garbuç üretiyor, daha hızlı ve bir custom kod yazmanız bekleniyor.
+
+618
+01:15:45,079 --> 01:15:54,079
+Şimdi bununla ilgili aratırsanız internette çok farklı serializable ve parcelable karşılaştırmaları göreceksiniz.
+
+619
+01:15:54,079 --> 01:16:10,079
+Temelde bu hız mevzusu farklı testler yapılarak aslında burada olduğu gibi serializable slow'dur, parcelable faster diye yani hızlıdır diye bir kesim genelleme yok.
+
+620
+01:16:10,079 --> 01:16:19,079
+Çünkü birkaç özel durum için aslında testler yapılmış ve görülen şu olmuş.
+
+621
+01:16:19,079 --> 01:16:34,079
+Serializable, marshal ve unmarshal dediğimiz parçaların bir araya getirilmesi ve parçalara ayrılması kavramında bütün sorumluluğu JVM'e bırakıyor.
+
+622
+01:16:34,079 --> 01:16:42,079
+Ama parcelable'da parselleri siz oluşturuyorsunuz yani custom olarak oluşturuyorsunuz.
+
+623
+01:16:42,079 --> 01:16:50,079
+Bu, customize etmek aslında işin hızlanması yönünde önemli bir avantaj sağlıyor parcelable'a.
+
+624
+01:16:50,079 --> 01:17:06,079
+Ve şu bilgide değerli, serializable ile parcelable'a karşılaştırdığınızda ne kadar çok obje yazarsanız parcelable'ın performans açısından o kadar fark yarattığını görüyorsunuz.
+
+625
+01:17:06,079 --> 01:17:15,079
+Yani birkaç obje gönderecekseniz ya da bir yere kaydedecekseniz aslında aralarındaki fark o kadar da büyük değil.
+
+626
+01:17:15,079 --> 01:17:23,079
+Ama obje sayısı arttığında aralarındaki fark da açılıyor ve parcelable önemli derecede avantaj sağlıyor.
+
+627
+01:17:23,079 --> 01:17:30,079
+Bu noktada serializable'ın da custom edilme imkanı var.
+
+628
+01:17:30,079 --> 01:17:37,079
+Ama basit bir yapı olduğu için ve işi bizim adımıza kolaylaştırdığı için genelde olduğu gibi kullanmayı tercih ediyoruz.
+
+629
+01:17:37,079 --> 01:17:46,079
+Ve çok büyük objeler, çok fazla obje yazmayacaksak aslında serializable işimizi görüyor.
+
+630
+01:17:46,079 --> 01:18:04,079
+Ama taşıdığımız verinin boyutu, miktarı, sayısı arttıkça o zaman kendi parcelimiz oluşturup parcelable üzerinden implemente etmek aslında daha akıllıca bir hal almış oluyor.
+
+631
+01:18:04,079 --> 01:18:11,079
+İkisi de intent objesi kullanarak veri aktarmak için kullandığımız yapı.
+
+632
+01:18:11,079 --> 01:18:20,079
+Serializable daha çok dosyaya yazmak için kullandığımız bir yapı ama parcelable da bir alternatif olarak karşımıza çıkıyor.
+
+633
+01:18:20,079 --> 01:18:24,079
+Çok basit bir örnek üzerinden paylaşayım.
+
+634
+01:18:24,079 --> 01:18:27,079
+Burada normal bir details isimli bir sınıf var.
+
+635
+01:18:27,079 --> 01:18:32,079
+Burada isim, yaş ve telefon numarası bilgisi var.
+
+636
+01:18:32,079 --> 01:18:37,079
+Herhangi bir parcelable'a özel hiçbir bilgi yok. Getterlar ve Setterler ve Constructor var.
+
+637
+01:18:37,079 --> 01:18:40,079
+Standard bir Java kodu.
+
+638
+01:18:40,079 --> 01:19:02,460
+Ama bu kodu parcelable tarafında biraz daha özelleştirdiğimizde burada bir kere parcelable interface'ini implement etmemiz gerekiyor burada görmüş olduğunuz.
+
+639
+01:19:02,460 --> 01:19:18,460
+Hemen arkasından bir Constructor oluşturmamız gerekiyor ve buraya bir parsel tipinde bir obje aktarmamız gerekiyor ki buradaki ilgili bilgileri okumak adına bu işlemi gerçekleştirelim.
+
+640
+01:19:18,460 --> 01:19:21,460
+Öncelikle bu Constructor'u tanımlıyorsunuz.
+
+641
+01:19:21,460 --> 01:19:24,460
+Arkasından bir tane Creator yaratmanız gerekiyor.
+
+642
+01:19:24,460 --> 01:19:30,460
+Bu Creator'a objenizin hangisine faayet olduğu bilgisini veriyorsunuz.
+
+643
+01:19:30,460 --> 01:19:36,460
+Tabi bunu da genelleştirme imkanınız var ama özelle yapmak performansı daha da arttırıyor.
+
+644
+01:19:36,460 --> 01:19:46,460
+Burada CreateFromParsel'i çağırarak bu noktada aslında parselin oluşmasını gerçekleştiriyorsunuz.
+
+645
+01:19:46,460 --> 01:19:55,460
+Parseli yazdığınız nokta ise biraz önce ilgili bilgiyi aldığınız nokta burası demiştik Constructor aktardığınız nokta.
+
+646
+01:19:55,460 --> 01:20:08,460
+Parseli yazdığınız noktada WriteToParsel metodunu implement etmeniz gerekiyor ve buradaki Death.WriteString ile bütün etribütlere yazma işlemini gerçekleştiriyorsunuz.
+
+647
+01:20:08,460 --> 01:20:14,460
+Bu sayede Creator'ınız aracılığıyla tek tek bütün parselleri oluşturuyorsunuz.
+
+648
+01:20:14,460 --> 01:20:24,460
+Bu metodun içinde ise her seferinde Constructor'a refer ediyorsunuz ve Constructor'a refer ettiğiniz zaman da buradaki ilgili parsel bilgilere alınıyor.
+
+649
+01:20:24,460 --> 01:20:39,460
+Aslında obje bilgileri yaratılmış oluyor ve en sonunda da burada görmüş olduğunuz new array ismindeki, details tipindeki array listinizi oluşturuyorsunuz.
+
+650
+01:20:39,460 --> 01:20:50,460
+Parselabel interface'ini kullanarak aslında çok da zor olmayan, kompleks denilen ama serializable'da bunların hiçbiri yok yapıyı kurmuş oluyorsunuz.
+
+651
+01:20:50,460 --> 01:20:54,460
+Şimdi gelelim nasıl aktarılıyor Android tarafında.
+
+652
+01:20:54,460 --> 01:21:05,460
+Şimdi işte bir butona bastınız, buton içerisinde ilgili bilgileri aldınız, gerekli tos mesajları ürettiniz.
+
+653
+01:21:05,460 --> 01:21:12,460
+Bunun hemen arkasından bir tane details isimli değişken tanımlıyorsunuz.
+
+654
+01:21:12,460 --> 01:21:22,460
+Şurada görmüş olduğunuz ve bunu Intent put extra deyip information deyip details olarak koyabiliyorsunuz.
+
+655
+01:21:22,460 --> 01:21:30,460
+Biraz önce aslında farklı bir örneğin de görmüştük, onu da bir kez daha googlemakta fayda var.
+
+656
+01:21:30,460 --> 01:21:37,460
+Put parselabel extra metodu da çağrılabilir, put parselabel array list extra metodu da çağrılabilir.
+
+657
+01:21:37,460 --> 01:21:51,460
+Bunlarla da ilgili intentinize yüklemeyi yapıp karşı tarafa parselabel ile ürettiğiniz objeyi gönderebiliyorsunuz.
+
+658
+01:21:51,460 --> 01:21:58,689
+Karşı taraf parselabel'ı nasıl alıyor?
+
+659
+01:21:58,689 --> 01:22:06,689
+Gene get intent ile bir metod çağırıyorsunuz. Get parselabel extra'yı çağırıyorsunuz.
+
+660
+01:22:06,689 --> 01:22:16,689
+Hangi parseli açmak istediğiniz bilgisini burada information olarak veriyorsunuz ve gelen bilgiyi details tipindeki studenta aktarıyorsunuz.
+
+661
+01:22:16,689 --> 01:22:22,689
+Sonra student üzerinden o activity'deki ilgili alanlara set etmiş oluyorsunuz.
+
+662
+01:22:22,689 --> 01:22:37,689
+Böylece bir activity'den diğer activity'ye tek tek bütün hepsini put extra ile yerleştirmek yerine bir objeyi, objeler array listini bu şekilde aktarma şansına sahip oluyorsunuz.
+
+663
+01:22:37,689 --> 01:22:51,689
+Özellikle biz ilk dönemde person'u yarattığımızda activity'ler arasında bunu nasıl aktaracağız noktasındaki sorunun cevabı da böylece karşınıza gelmiş oluyor.
+
+664
+01:22:51,689 --> 01:23:03,100
+Android tarafındaki serialization'a da bakalım. Burada sadece serializable interface'ini implement etmeniz yeterli.
+
+665
+01:23:03,100 --> 01:23:14,659
+Diğer kısımlarda herhangi bir özel bir farklılık yok. Böyle bir objeyi de save etmek için yapılan işlemler.
+
+666
+01:23:14,659 --> 01:23:20,659
+Önce person tipinde bir sınıftan objeyi yaratıyorsunuz, ilgili değerleri set ediyorsunuz.
+
+667
+01:23:20,659 --> 01:23:36,659
+Ondan sonra iki tane aslında temelde metod çağırıyorsunuz. Bir tanesi objeyi save eden metod. Bunun için object output stream yaratıyorsunuz daha önce olduğu gibi.
+
+668
+01:23:36,659 --> 01:23:43,659
+Burada devamı var, name of file output stream şeklinde devam ediyor. Bunlar çok standart kullanılan terimler.
+
+669
+01:23:43,659 --> 01:23:49,659
+Write object dediğiniz zaman otomatik olarak objeyi binary dosyanıza yazmış oluyorsunuz.
+
+670
+01:23:49,659 --> 01:24:00,659
+Size bahsettiğim flash metodu, flash metodu bütün bilgilerin o anda senkrom bir şekilde dosyaya yazılmasını sağlıyor.
+
+671
+01:24:00,659 --> 01:24:08,659
+Ve bu noktada ilgili bilginin binary dosyaya kaydedilmiş olmasını sağlamış oluyorsunuz.
+
+672
+01:24:08,659 --> 01:24:13,659
+Save object metodu içerisinde sizin tarafınızdan yazılmış.
+
+673
+01:24:13,659 --> 01:24:20,659
+Öte yandan dosyadan bir okuma yapacaksınız. Bu sefer object input stream'i kullanıyorsunuz.
+
+674
+01:24:20,659 --> 01:24:26,659
+Yine file input stream üzerinden, buradaki adımlar birazcık iç içe yapılmış durumda.
+
+675
+01:24:26,659 --> 01:24:33,659
+Daha önceki örneklerde hatırlarsanız önce file input stream'i tanımlıyoruz, sonra object input stream'i tanımlıyoruz. Birbiriyle ilişkiler duyuyorduk.
+
+676
+01:24:33,659 --> 01:24:43,659
+Read object ile okumayı yapıyoruz ve okuduğumuz bilgileri şurada gördüğünüz person'a aktarmış oluyoruz.
+
+677
+01:24:43,659 --> 01:24:50,659
+Burada doğrudan hangi bölgeden okuma yapılacağı bilgisayar verilmiş. Bu da yapılabilir ya da kontekst üzerinden de yapabilirsiniz.
+
+678
+01:24:50,659 --> 01:24:58,659
+Böylece yazdığınız object bilgileri otomatik olarak person'a aktarılıyor.
+
+679
+01:24:58,659 --> 01:25:04,659
+Sonra da bunu stamp out print elenle ekrana bastırmış oluyorsunuz.
+
+680
+01:25:04,659 --> 01:25:07,659
+Command line'ın olduğu yerde görüntülemiş oluyorsunuz.
+
+681
+01:25:07,659 --> 01:25:14,659
+Evet arkadaşlar, parsed label ve serializable arasındaki farklar da bu kadar.
+
+682
+01:25:14,659 --> 01:25:27,659
+Her ikisi de sıklıkla kullanılan yapılar ve dosya yazma ve okuma sırasında faydalanabileceğimiz yapılar olarak object yazma ve okuma sırasında karşımıza çıkmış oluyor.
+
+683
+01:25:27,659 --> 01:25:37,079
+Buraya kadar sorusu olan var mı?
+
+684
+01:25:37,079 --> 01:25:43,079
+Bir sorunuz yoksa o zaman hemen.
+
+685
+01:25:43,079 --> 01:25:51,079
+Önce saat 3.25 oldu. Android Stüdyolarımızı açalım.
+
+686
+01:25:51,079 --> 01:25:56,079
+Ben bu sırada size bir de kod parçası göstereyim.
+
+687
+01:25:56,079 --> 01:26:09,979
+Onun üzerinden geçtikten sonra biraz Android Stüdyolar üzerinde ilerleyelim.
+
+688
+01:26:09,979 --> 01:26:15,270
+Evet [öğrenci] bu sorumlar sanırım.
+
+689
+01:26:15,270 --> 01:26:21,270
+Hocam bu ödeler halinde bir de projemiz olacak mı?
+
+690
+01:26:21,270 --> 01:26:23,270
+Evet dönem projeniz olacak tabi.
+
+691
+01:26:23,270 --> 01:26:26,270
+Şu ana kadar bir ödev vermiştim bu ikinci ödeviniz oluyor.
+
+692
+01:26:26,270 --> 01:26:28,270
+Bir de dönem projesi vereceğim.
+
+693
+01:26:28,270 --> 01:26:42,130
+Onu da muhtemelen sizin 19 Mayıs haftanız tatili olduğu için yani 19 Mayıs'ta ders yapılmayacağı için ondan birkaç gün önce vermiş olurum diye tahmin ediyorum.
+
+694
+01:26:42,130 --> 01:26:51,130
+Yani bayramın bitişiyle, bayram zamanında dönem projenizi verip bu sene finallerden önce dönem projelerini toplamayı planlıyorum.
+
+695
+01:26:51,130 --> 01:26:56,130
+Sizden genelde bu yönde bir talep geliyor finaller dönemine kalmaması yönünde.
+
+696
+01:26:56,130 --> 01:27:03,130
+O yüzden yaklaşık bir üç haftalık, dört hafta sonluk bir süreniz olacak.
+
+697
+01:27:03,130 --> 01:27:07,140
+Aldım hocam teşekkür ederim.
+
+698
+01:27:07,140 --> 01:27:09,140
+Rica ederim.
+
+699
+01:27:09,140 --> 01:27:16,939
+Şimdi hemen ekranı paylaşım yapayım.
+
+700
+01:27:16,939 --> 01:27:26,260
+Evet şu anda muhtemelen görebiliyorsunuzdur diye tahmin ediyorum ekranımı.
+
+701
+01:27:26,260 --> 01:27:30,260
+Şuradan bir emülatörü de aktif hale getirmeye çalışayım.
+
+702
+01:27:30,260 --> 01:27:34,260
+Şimdi shared preferences ile konuşmuştuk.
+
+703
+01:27:34,260 --> 01:27:40,260
+Shared preferences ile ilgili bir kod parçamız var.
+
+704
+01:27:40,260 --> 01:27:48,260
+Biraz sonra inşallah Android emülatörü de sorun çıkarmadan gelirse onda da ekranı sizlerle paylaşıyor olacağım.
+
+705
+01:27:48,260 --> 01:27:55,260
+Bu noktada şimdi özellikle onCreate metodu üzerinden başlayalım.
+
+706
+01:27:55,260 --> 01:28:09,859
+Burada şu kısımda bir önceki aktiviteden gelen, internet ile gelen hangi kullanıcı bilgisi olduğunu okuyoruz.
+
+707
+01:28:09,859 --> 01:28:14,859
+Yani mesela giriş yaptınız, ABC kullanıcısı ile giriş yaptınız.
+
+708
+01:28:14,859 --> 01:28:21,859
+O zaman bu bilgiyi current user name değişkenine almış oluyorsunuz bu satırdaki kodla.
+
+709
+01:28:21,859 --> 01:28:26,859
+Sonra define variables kısmı var ki aslında bu zaten default.
+
+710
+01:28:26,859 --> 01:28:28,859
+FindView bayağı id ile gerçekleşiyor.
+
+711
+01:28:28,859 --> 01:28:30,859
+Burası artık sizin için bir sorun değil.
+
+712
+01:28:30,859 --> 01:28:33,859
+Sonra getSharedPreferences metodunu çağırıyoruz.
+
+713
+01:28:33,859 --> 01:28:37,859
+GetSharedPreferences metodunda önce bir context bilgisi alıyoruz.
+
+714
+01:28:37,859 --> 01:28:48,859
+Sonra context bilgisi aldıktan sonra getSharedPreferences ile o kullanıcıya ait olan, o kullanıcı ismi ile bir getSharedPreferences dosyası açıyoruz.
+
+715
+01:28:48,859 --> 01:28:54,859
+Sonra açtığımız dosyayı edit moduna geçiriyoruz ve bir tane editor tanımlıyoruz.
+
+716
+01:28:54,859 --> 01:29:17,859
+Bundan sonra kullanıcının boy bilgisini ekranda yer alan, kilo bilgisini, yaş bilgisini, kadını erkek cinsiyet bilgisini ve o uygulamadaki ayar ekranlarından biri olan gece modu bilgisini okuyoruz.
+
+717
+01:29:17,859 --> 01:29:27,859
+Okuyoruz. Nereden okuyoruz? GetSharedPreferences bilgisinden bizim şu anda burada tanımlamış olduğumuz değişkenleri okuyoruz.
+
+718
+01:29:27,859 --> 01:29:32,859
+Sonra ne yapıyoruz? Okuduğumuz değerleri ilgili ekrandaki alanlara set ediyoruz.
+
+719
+01:29:32,859 --> 01:29:40,859
+Bu UI komponatlar, farklı komponatlar, kullanılan değişik komponatlar var.
+
+720
+01:29:40,859 --> 01:29:41,859
+Onlarla set ediyoruz.
+
+721
+01:29:41,859 --> 01:29:45,859
+Şimdi aslında bu ekranı göstermek istiyorum ama Android emulatoru hala açılmadı.
+
+722
+01:29:45,859 --> 01:29:57,399
+Sonra burada işimiz tamamlanıyor şu noktada.
+
+723
+01:29:57,399 --> 01:30:07,399
+Burada yaptığımız getSharedPreferences'taki bilgileri alıp ekrandaki ilgili UI komponatları ne olduğu noktaya set etmek.
+
+724
+01:30:07,399 --> 01:30:09,399
+Bir de listener'lar var.
+
+725
+01:30:09,399 --> 01:30:12,399
+Listener'ları set etmeniz gerekiyor.
+
+726
+01:30:12,399 --> 01:30:17,399
+Göreceksiniz eğer emulator açılırsa bir tane seek bar var.
+
+727
+01:30:17,399 --> 01:30:24,399
+Bu seek bar'ı takip edebilmeniz için seek bar change listener'ı aktif hale getirmemiz gerekiyor ve birden fazla var bu.
+
+728
+01:30:24,399 --> 01:30:30,399
+Bir tane buton var. Bu butonu takip etmeniz bekleniyor.
+
+729
+01:30:30,399 --> 01:30:44,399
+İşte bu butonuna bastığınızda bilgileri alıyorsunuz ekrandaki, şuradaki ve bunları ilgili editör değişkenine ekliyorsunuz.
+
+730
+01:30:44,399 --> 01:30:49,399
+Ve en sonunda editörü commit ile shared preferences'a yazıyorsunuz.
+
+731
+01:30:49,399 --> 01:30:51,399
+Aslında bu kadar basit.
+
+732
+01:30:51,399 --> 01:30:57,399
+Sizin yapacağınız ödevdeki shared preferences ekranında bu okumama yazma işleminden sorumlu olacak.
+
+733
+01:30:57,399 --> 01:31:16,399
+Aynı zamanda sınav oluştur ekranında da bu bahsetmiş olduğum bilgileri default olarak set edilmiş olan bilgileri shared preferences'tan sınav oluştur ekranına getiriyor olacaksınız, okuyor olacaksınız.
+
+734
+01:31:16,399 --> 01:31:24,399
+Şimdi emulator açılmadığı için benim bununla ilgili bir kontrol yapmam gerekiyor.
+
+735
+01:31:24,399 --> 01:31:32,399
+Bir herhalde problem var. Bu sırada sizden ricam siz lütfen ayarlar ekranına başlayın.
+
+736
+01:31:32,399 --> 01:31:39,399
+İşte sınav süresi, sorunun puanı, zorluk seviyesi gibi.
+
+737
+01:31:39,399 --> 01:31:42,399
+O sırada ben bu problemi düzelteyim.
+
+738
+01:31:42,399 --> 01:31:46,399
+Size birkaç tane daha göstermek istediğim nokta var.
+
+739
+01:31:46,399 --> 01:31:50,399
+İlişkilendirmek istediğim ekran görüntüsü ile oradan kaldığımız yerden devam edelim.
+
+740
+01:31:50,399 --> 01:31:54,399
+Şimdi ayarlar ekranını yazmaya başlayabilirsiniz arkadaşlar.
+
+741
+01:31:54,399 --> 01:31:58,770
+Evet [öğrenci].
+
+742
+01:31:58,770 --> 01:32:04,770
+Hocam ödevle ilgili bir soru soracaktım da ben şu an aklıma takıldı başta aklıma gelmemişti.
+
+743
+01:32:04,770 --> 01:32:19,770
+Şimdi biz kullanıcıları bir kere login olduktan sonra uygulama kapansa da veya cihazı kapattığımızda tekrar açtığımızda otomotif olarak login olması gerekiyor mu yoksa her uygulama açıldığında tekrar login olmamız mı gerekecek?
+
+744
+01:32:20,770 --> 01:32:24,770
+Her seferinde login ekranından giriş yapmanızı bekliyorum.
+
+745
+01:32:24,770 --> 01:32:27,770
+Tamam bir şey daha soracaktım hocam.
+
+746
+01:32:27,770 --> 01:32:32,770
+Şimdi sorular ekleyeceğiz veya sınavları ekleyeceğiz.
+
+747
+01:32:32,770 --> 01:32:40,770
+Bu sorular ve sınavlar her kullanıcıya özel mi olacak yoksa farklı kullanıcılar girdiğinde de aynı sorular ve sınavları görebilecek mi?
+
+748
+01:32:40,770 --> 01:32:51,770
+Güzel soru her kullanıcı kendi sınavını tanımlayabiliyor olması gerekiyor ve her kullanıcı kendi sorularını tanımlayabiliyor olması gerekiyor.
+
+749
+01:32:51,770 --> 01:32:53,770
+Yani ortak bir havuz olmayacak.
+
+750
+01:32:53,770 --> 01:32:55,770
+Tamamdır hocam çok teşekkürler.
+
+751
+01:32:56,770 --> 01:32:57,770
+Rica ederim.
+
+752
+01:32:57,770 --> 01:33:00,770
+Ben şunu da sizinle paylaşmak istiyorum.
+
+753
+01:33:00,770 --> 01:33:15,770
+Özellikle bu uygulamayı tasarlarken ve anlatırken eğer düşmeniz gereken notlar varsa ilgili komentler ve dikkat çekilmesi gereken notlar var.
+
+754
+01:33:15,770 --> 01:33:18,770
+Lütfen videoda da bu notları ön plana çıkartın.
+
+755
+01:33:18,770 --> 01:33:22,770
+Bazen çünkü bir tasarım yapmış oluyorsunuz.
+
+756
+01:33:22,770 --> 01:33:27,770
+Onunla ilgili detay bilgiye sahip olmadığımız için neden öyle olduğunu anlayamıyoruz.
+
+757
+01:33:27,770 --> 01:33:29,770
+Bunu lütfen bizimle paylaşın.
+
+758
+01:33:29,770 --> 01:33:33,210
+[öğrenci].
+
+759
+01:33:33,210 --> 01:33:37,210
+Hocam bir de şeyle ilgili bir soru takıldı benim kafama da.
+
+760
+01:33:37,210 --> 01:33:43,210
+Şimdi ilk başta soruyu yeni soru oluşturduğumuz zaman bir aktivite üzerinden soruyu oluşturuyoruz.
+
+761
+01:33:43,210 --> 01:33:51,210
+Sonra Recycler View üzerinden soruları görüntülerken soruyu düzenlemek için yine farklı bir aktiviteye gönderiyoruz ya.
+
+762
+01:33:51,210 --> 01:33:52,210
+Evet.
+
+763
+01:33:52,210 --> 01:33:55,210
+Ama aynı aktivite üzerinden yapsak olur mu?
+
+764
+01:33:55,210 --> 01:33:56,210
+Olur.
+
+765
+01:33:57,210 --> 01:34:00,210
+Ben kolay olması için bunu önerdim.
+
+766
+01:34:00,210 --> 01:34:03,210
+Ama yapmak isteyenler aynı aktivite üzerinden yapabilirler.
+
+767
+01:34:03,210 --> 01:34:34,260
+Tamam hocam sağ olun.
+
+768
+01:34:34,260 --> 01:34:36,260
+Önemli bir şey daha söylemek istiyorum arkadaşlar.
+
+769
+01:34:36,260 --> 01:34:43,260
+Yaratacağınız sorular özellikle mantıklı sorular olması gerekiyor.
+
+770
+01:34:43,260 --> 01:34:45,260
+Şıkları A, B, C, D yazmayın.
+
+771
+01:34:45,260 --> 01:35:02,260
+Denemek için bahseleri hızlıca yapabilirsiniz ama bana yapacağınız sunumda çekeceğiniz videoda gönderdiğiniz APK içerisinde mutlaka ve mutlaka mantıklı başlıklar, mantıklı bilgiler olmasını bekliyorum.
+
+772
+01:35:02,260 --> 01:35:11,260
+Hızlıca hazırlarken test ederken sorun yok ama en son toparladığınız nokta da bunlar düzgün olsun.
+
+773
+01:35:11,260 --> 01:35:12,260
+Lütfen buna özen gösterin.
+
+774
+01:35:12,260 --> 01:53:50,560
+Arkadaşlar şimdi bir ara verelim.
+
+775
+01:53:50,560 --> 01:53:55,560
+Saat 4-5 geçe önce sınav sorularınızı çözeceğim.
+
+776
+01:53:55,560 --> 01:54:00,560
+Ondan sonra da sensörlerle ilgili bazı bilgiler aktaracağım.
+
+777
+01:54:00,560 --> 01:54:02,560
+Saat 4-5 geçe görüşmek üzere.
+
+778
+01:54:02,560 --> 02:05:31,310
+Arkadaşlar yeniden merhaba.
+
+779
+02:05:31,310 --> 02:05:41,310
+Şimdi emüleatörle ilgili sorunumu çözemedim ama harici bir telefon bağlantısı yaptım.
+
+780
+02:05:41,310 --> 02:05:50,310
+Bu sınavla ilgili soruları birlikte yanıtlayalım istiyorum.
+
+781
+02:05:50,310 --> 02:05:57,310
+Ondan sonra bir önceki konumuzla ilgili emüleatörle göstereceğin orayı göstereceğim.
+
+782
+02:05:57,310 --> 02:06:01,310
+Sonra da kaldığımız yerden devam edeceğiz.
+
+783
+02:06:01,310 --> 02:06:07,609
+Şimdi ekran paylaşımı yapayım.
+
+784
+02:06:07,609 --> 02:06:09,609
+Soruları görebildiğinizi tahmin ediyorum.
+
+785
+02:06:09,609 --> 02:06:14,609
+Bu soru akıllı telefonlar üzerinde güvenlik çözümü olarak kabul edebilecek 5 madde yazınız demiştim.
+
+786
+02:06:14,609 --> 02:06:18,609
+Neler olabilir de hemen bana kim cevap vermek ister?
+
+787
+02:06:18,609 --> 02:06:33,039
+Akıllı telefonlar üzerinde güvenlik çözümlerini konuşuyoruz arkadaşlar.
+
+788
+02:06:33,039 --> 02:06:35,039
+5 madde yazmanızı rica etmiştim.
+
+789
+02:06:35,039 --> 02:06:38,039
+Neler olabilir diye soruyorum.
+
+790
+02:06:38,039 --> 02:06:40,989
+Ekran?
+
+791
+02:06:40,989 --> 02:06:43,989
+Uygulama izinleri yönetimi olabilir.
+
+792
+02:06:43,989 --> 02:06:45,989
+Ekran kili de olabilir.
+
+793
+02:06:45,989 --> 02:06:47,989
+Evet.
+
+794
+02:06:47,989 --> 02:06:51,989
+Sistemsiz verişimi kısıtlamak için OM kilidi olabilir.
+
+795
+02:06:51,989 --> 02:06:53,989
+Şu an aklıma bunlar geliyor.
+
+796
+02:06:53,989 --> 02:06:55,989
+Tamam peki.
+
+797
+02:06:55,989 --> 02:07:07,989
+Yüz tanıma, fingerprint, ekran kilidi, uygulama izinleri yazabileceğiniz seçenekler de dahili.
+
+798
+02:07:07,989 --> 02:07:14,989
+Berlek'te dosyaların saklanması gibi her işlemin ayrı sanal makine üzerinde çalıştırılması gibi
+
+799
+02:07:14,989 --> 02:07:22,989
+Android'in bize sağlamış olduğu, iOS'un bize sağlamış olduğu çeşitli güvenlik önlemleri var.
+
+800
+02:07:22,989 --> 02:07:26,989
+Bunlardan 5 tanesini yazmanız yeterliydi.
+
+801
+02:07:26,989 --> 02:07:33,989
+Aşağıdaki cihazlara mobile teknolojileri kullanma oranına göre fazladan aza doğru sıralayınız dediğimde
+
+802
+02:07:33,989 --> 02:07:39,550
+ne söylemek istersiniz?
+
+803
+02:07:39,550 --> 02:07:43,550
+Hızlı hızlı gidelim de biri bir şey söylesin.
+
+804
+02:07:43,550 --> 02:07:45,550
+İlerleyelim.
+
+805
+02:07:45,550 --> 02:07:47,550
+Diğer konularda vaktimiz kalsın.
+
+806
+02:07:47,550 --> 02:07:53,840
+Farklı bir kişi olsun lütfen.
+
+807
+02:07:53,840 --> 02:07:55,840
+Tek tek seçmek zorunda bırakmayın beni.
+
+808
+02:07:55,840 --> 02:07:57,840
+Herkes bir şey söylesin.
+
+809
+02:07:57,840 --> 02:08:02,460
+Bu iş bitirelim.
+
+810
+02:08:02,460 --> 02:08:04,460
+[öğrenci] o zaman söylesin.
+
+811
+02:08:04,460 --> 02:08:14,039
+[öğrenci].
+
+812
+02:08:14,039 --> 02:08:16,039
+[öğrenci] söylesin.
+
+813
+02:08:16,039 --> 02:08:23,100
+[öğrenci].
+
+814
+02:08:23,100 --> 02:08:28,199
+Peki [öğrenci]?
+
+815
+02:08:28,199 --> 02:08:30,199
+Hocam sesim geliyor mu?
+
+816
+02:08:30,199 --> 02:08:32,199
+Geliyor.
+
+817
+02:08:32,199 --> 02:08:43,199
+Telefon, tablet, araba, masaüstü bilgisayar, televizyon, sunucu bilgisayar diye düşünmüşüm.
+
+818
+02:08:43,199 --> 02:08:46,199
+Tamam şimdi bunun tek bir cevabı yok.
+
+819
+02:08:46,199 --> 02:08:56,199
+Ben kısaca telefon, tablet, televizyon, araba, masaüstü bilgisayar ve sunucu bilgisayar olarak sıralamayı yaptım.
+
+820
+02:08:56,199 --> 02:08:58,199
+Farklı kombinasyonlar olabilir.
+
+821
+02:08:58,199 --> 02:09:04,199
+Sunucu bilgisayarın en sonunda yer alması gerektiğini söyleyebiliriz.
+
+822
+02:09:04,199 --> 02:09:07,199
+Tabletle telefonun da en başta yer alması gerektiğini söyleyebiliriz.
+
+823
+02:09:07,199 --> 02:09:11,199
+Onun dışında farklı sıralamalar yapılabilir.
+
+824
+02:09:11,199 --> 02:09:12,199
+Bir sonraki soru.
+
+825
+02:09:12,199 --> 02:09:17,199
+Mobil web yaklaşımı ile geliştirilen bir uygulamanın güvenliği, nokta nokta güvenliğine bağlıdır.
+
+826
+02:09:17,199 --> 02:09:19,199
+Kim söylemek ister?
+
+827
+02:09:19,199 --> 02:09:26,189
+[öğrenci]?
+
+828
+02:09:26,189 --> 02:09:30,189
+Kullanılan web taraycısına göre güvenliğine bağlı.
+
+829
+02:09:30,189 --> 02:09:31,189
+Teşekkür ederim.
+
+830
+02:09:31,189 --> 02:09:34,189
+Kullanılan web browser, tarayıcı güvenliğine bağlıdır.
+
+831
+02:09:34,189 --> 02:09:36,189
+Bazıları web yazmış.
+
+832
+02:09:36,189 --> 02:09:39,189
+Web herhangi bir şekilde bir puan almayacak maalesef.
+
+833
+02:09:39,189 --> 02:09:44,189
+Çünkü web dediğiniz zaman oradan tarayıcı kelimesini anlamıyorsunuz.
+
+834
+02:09:44,189 --> 02:09:47,470
+[öğrenci]?
+
+835
+02:09:47,470 --> 02:09:51,470
+Hocam Android WebView demiştim ben. Doğru oldun mu?
+
+836
+02:09:51,470 --> 02:09:54,470
+Kısmen.
+
+837
+02:09:54,470 --> 02:09:59,470
+Yani 5 puanın 5'ini birden alamazsın.
+
+838
+02:09:59,470 --> 02:10:01,470
+Barış?
+
+839
+02:10:01,470 --> 02:10:04,470
+Hocam ben de web servisinin güvenliğine bağlı olur demiştim.
+
+840
+02:10:04,470 --> 02:10:11,470
+Sonuçta tarayıcıdan ziyade bence arka plandaki servisin güvenliği daha önemli diye düşündüm.
+
+841
+02:10:11,470 --> 02:10:13,470
+Maalesef üzgünüm.
+
+842
+02:10:13,470 --> 02:10:22,470
+Ama mobil web yaklaşımı ile geliştirilen bir uygulamanın birinci tarayıcı güvenliği web browser üzerinden ölçülüyor.
+
+843
+02:10:22,470 --> 02:10:26,470
+Bu birçok karakteri böyle ifadeyle. Dersi de bunu anlatmıştık.
+
+844
+02:10:26,470 --> 02:10:28,470
+Teşekkür ederim hocam.
+
+845
+02:10:28,470 --> 02:10:29,470
+Teşekkür ederim.
+
+846
+02:10:29,470 --> 02:10:30,470
+Evet.
+
+847
+02:10:30,470 --> 02:10:46,119
+Mobil uygulamaların test süreçlerinde gerçek bir cihaz temin edilemediğinde Android için [öğrenci]?
+
+848
+02:10:46,119 --> 02:10:50,119
+Android için emülatör, iOS içinse simülatör demiştim.
+
+849
+02:10:50,119 --> 02:10:54,500
+Evet doğru teşekkür ediyorum.
+
+850
+02:10:54,500 --> 02:10:58,500
+Android işletim sisteminin kararlığı en son sürümü hangisidir?
+
+851
+02:10:58,500 --> 02:11:06,529
+Evet hızlı hızlı arkadaşlar farklı kişiler lütfen derse katılın bekliyorum.
+
+852
+02:11:06,529 --> 02:11:14,319
+[öğrenci]?
+
+853
+02:11:14,319 --> 02:11:16,319
+[öğrenci]?
+
+854
+02:11:16,319 --> 02:11:25,489
+[öğrenci].
+
+855
+02:11:25,489 --> 02:11:33,140
+Evet [öğrenci] chatten yazmış 11 doğru cevap olacaktı.
+
+856
+02:11:33,140 --> 02:11:40,140
+Android işletim sistemi temel olarak Android Application Package yani APK paket yapısını kullanır.
+
+857
+02:11:40,140 --> 02:11:50,140
+Ancak Android Application Bundle sayesinde son yıllarda farklı cihazlar için sadeleşmiş paketler üretilebilmektedir.
+
+858
+02:11:50,140 --> 02:11:58,479
+Android SDK yardımı ile toplamda 6 farklı platform için uygulama geliştirilebilir.
+
+859
+02:11:58,479 --> 02:12:00,479
+Nelerdir bunlar?
+
+860
+02:12:00,479 --> 02:12:02,479
+1
+
+861
+02:12:02,479 --> 02:12:04,479
+Saat
+
+862
+02:12:04,479 --> 02:12:05,479
+2
+
+863
+02:12:05,479 --> 02:12:07,479
+Telefon
+
+864
+02:12:07,479 --> 02:12:08,479
+3
+
+865
+02:12:08,479 --> 02:12:09,479
+Kromos
+
+866
+02:12:09,479 --> 02:12:11,479
+4
+
+867
+02:12:11,479 --> 02:12:13,479
+IoT Things
+
+868
+02:12:13,479 --> 02:12:14,479
+5
+
+869
+02:12:14,479 --> 02:12:19,680
+Arabalar
+
+870
+02:12:19,680 --> 02:12:20,680
+6
+
+871
+02:12:20,680 --> 02:12:26,130
+Evet [öğrenci]?
+
+872
+02:12:26,130 --> 02:12:28,130
+Giyilebilir Cihazlarım hocam.
+
+873
+02:12:28,130 --> 02:12:30,130
+Evet giyilebilir cihazlar.
+
+874
+02:12:30,130 --> 02:12:33,130
+Pardon giyilebilir cihazlar değil saati söyledik zaten.
+
+875
+02:12:33,130 --> 02:12:35,130
+Ha onun için de mi söyledi tamam.
+
+876
+02:12:35,130 --> 02:12:36,130
+Tabi.
+
+877
+02:12:36,130 --> 02:12:43,560
+Hocam Android Studio'da 5 farklı kategori çıkıyordu ben o yüzden 5 dedim.
+
+878
+02:12:43,560 --> 02:12:48,560
+Android Studio'da 5 farklı kategori çıkıyordu istersen Android Studio'ya birlikte bakalım mı?
+
+879
+02:12:52,560 --> 02:12:54,560
+Developer Android Go.
+
+880
+02:12:54,560 --> 02:12:56,560
+Buradan girelim.
+
+881
+02:12:56,560 --> 02:13:08,140
+Evet şimdi bakalım burada neler var?
+
+882
+02:13:08,140 --> 02:13:11,989
+Ekran.
+
+883
+02:13:11,989 --> 02:13:13,989
+Araba.
+
+884
+02:13:13,989 --> 02:13:15,989
+Akıllı televizyon.
+
+885
+02:13:15,989 --> 02:13:17,989
+Akıllı saat.
+
+886
+02:13:17,989 --> 02:13:19,989
+Kromos.
+
+887
+02:13:19,989 --> 02:13:21,989
+IoT Things.
+
+888
+02:13:21,989 --> 02:13:23,989
+Bir de burada olmayan ne var?
+
+889
+02:13:23,989 --> 02:13:25,989
+Cep telefonu ve tableti.
+
+890
+02:13:25,989 --> 02:13:27,989
+Doğru mu?
+
+891
+02:13:27,989 --> 02:13:33,609
+Ekran orada mısın?
+
+892
+02:13:33,609 --> 02:13:35,609
+Mikrofonu kapalıymıştı hocam.
+
+893
+02:13:35,609 --> 02:13:37,609
+Evet şimdi anladım.
+
+894
+02:13:38,609 --> 02:13:40,609
+Evet şimdi anladım.
+
+895
+02:13:40,609 --> 02:13:45,609
+Toplamda 6 farklı platform için geliştirmeyi yapabiliyorsunuz.
+
+896
+02:13:45,609 --> 02:13:47,609
+Devam edelim.
+
+897
+02:13:47,609 --> 02:13:55,609
+Android telefonu üzerinde bir uygulamayı test etmek için öncelikle geliştireceği modunu etkinleştirmek gerekir.
+
+898
+02:13:55,609 --> 02:14:01,609
+Android işletim sisteminde her işlem kendi sanal makinesinde çalışır.
+
+899
+02:14:01,609 --> 02:14:05,609
+Bu sayede ilgili uygulamanın kodu diğer uygulamalardan izole bir şekilde çalışır.
+
+900
+02:14:05,609 --> 02:14:11,609
+Android uygulaması geliştirmek için 4 adet temel bileşen kullanılabilir.
+
+901
+02:14:11,609 --> 02:14:18,609
+Activity, Service, Content Provider ve Broadcast Receiver.
+
+902
+02:14:18,609 --> 02:14:24,609
+Aşağıdaki temel bileşenlerden hangisi intent yardımıyla çağırılamaz.
+
+903
+02:14:24,609 --> 02:14:32,609
+Service, Activity, Broadcast Receiver, Content Provider ve hiçbiri cevap Content Provider.
+
+904
+02:14:32,609 --> 02:14:43,229
+Bir uygulamanın yeteneklerini tanımlamak için Intent Filter anahtar sözcüğü kullanılır.
+
+905
+02:14:43,229 --> 02:14:55,090
+Kaynak kimlik bilgileri saklamak için Android işletim sistemi r.java dosyasını üretir.
+
+906
+02:14:55,090 --> 02:15:02,069
+Nokta nokta metodu çağırıldığında Activity görünür hale gelir.
+
+907
+02:15:02,069 --> 02:15:07,069
+OnStart metodu çağırıldığında Activity görünür hale gelir.
+
+908
+02:15:07,069 --> 02:15:13,279
+Bir el kaldıran olduğu hal [öğrenci] evet.
+
+909
+02:15:13,279 --> 02:15:20,279
+Hocam bu cevapları sistemde otomatik olarak mı düzenleyeceksiniz yoksa kendiniz kontrol edeceksiniz?
+
+910
+02:15:20,279 --> 02:15:23,279
+Çünkü ben r.javaya slash r-file yazdım da.
+
+911
+02:15:23,279 --> 02:15:25,279
+Arjava slash r-file için.
+
+912
+02:15:25,279 --> 02:15:26,279
+Tamam.
+
+913
+02:15:26,279 --> 02:15:27,279
+Tek tek kontrol ediyorum.
+
+914
+02:15:27,279 --> 02:15:28,279
+Teşekkür ederim.
+
+915
+02:15:28,279 --> 02:15:32,279
+Bir soru daha mı var?
+
+916
+02:15:32,279 --> 02:15:35,279
+Barışma sorusu var.
+
+917
+02:15:35,279 --> 02:15:38,279
+Hocam ben bu soruyu şu şekilde düşündüm.
+
+918
+02:15:38,279 --> 02:15:41,279
+OnStart metodu çağırıldığında görünür hale gelir.
+
+919
+02:15:41,279 --> 02:15:47,279
+Görünür hale gelindiğinde OnStart metodun içindekiler çalışılır diye düşündüğüm için.
+
+920
+02:15:47,279 --> 02:15:57,869
+Start Activity yaptığından bunu soruda acaba bir anlamsal olarak farklılık olabilir mi?
+
+921
+02:15:57,869 --> 02:16:02,869
+Start Activity metodu çağırıldığında bir Aktivity'den başka bir Activity'ye gidiyoruz doğru mu?
+
+922
+02:16:02,869 --> 02:16:04,869
+Evet hocam.
+
+923
+02:16:04,869 --> 02:16:08,869
+Evet yani o yüzden hani Activity'nin görünür hale gelmesiyle ilgili
+
+924
+02:16:08,869 --> 02:16:15,869
+Start Activity metodunun çok da ilişkili olduğunu düşünmüyorum.
+
+925
+02:16:15,869 --> 02:16:18,869
+Sadece o iletmeyle ilgili bir görevi yerine getiriyor.
+
+926
+02:16:18,869 --> 02:16:28,439
+Anladım hocam ama yani bu OnStart metodu çağırıldığında görünür hale gelir cümlesi bana pek doğru gelmedi yine de.
+
+927
+02:16:28,439 --> 02:16:32,440
+O yüzden hani farklı şeyler düşünmek zorunda kaldım da sınav esnasında.
+
+928
+02:16:32,440 --> 02:16:36,440
+Ne dememiz lazım mesela? Ne desek daha doğru?
+
+929
+02:16:36,440 --> 02:16:42,440
+Bence Activity görünür hale geldiğinde OnStart metodu çağırılıyor diye düşünüyorum.
+
+930
+02:16:42,440 --> 02:16:48,440
+Çünkü hep bu şekilde geliştirmelerimizi yapmıştık.
+
+931
+02:16:48,440 --> 02:17:01,940
+Geliştirmelerini yaptığımızda biz kıyafetini giydiriyorduk ama görünür hale gelmesi OnStart metodunun çalışmasıyla başlıyor doğru mu?
+
+932
+02:17:01,940 --> 02:17:03,940
+Aslında evet ama...
+
+933
+02:17:03,940 --> 02:17:08,940
+Ya şimdi [öğrenci] hani bunu nereden aldığına bağlı olarak değişir.
+
+934
+02:17:08,940 --> 02:17:13,940
+Eğer böyle bir yorumun varsa bana mail olarak yaz bakarım kontrol edelim sonra.
+
+935
+02:17:13,940 --> 02:17:15,940
+Peki hocam teşekkür ederim.
+
+936
+02:17:15,940 --> 02:17:16,940
+Güzel.
+
+937
+02:17:16,940 --> 02:17:23,940
+Bildirim geldiğinde o anda kullandığınız uygulamaya ait Activity ekranı aşağıdaki metotlardan hangisini çağırır?
+
+938
+02:17:23,940 --> 02:17:25,940
+OnPause metodunu çağırır.
+
+939
+02:17:25,940 --> 02:17:30,940
+Bildirim gelir ve uygulama arka planda gözükmeye devam eder.
+
+940
+02:17:30,940 --> 02:17:32,940
+O yüzden de OnPause metodunu çağırır.
+
+941
+02:17:32,940 --> 02:17:42,940
+Egzemel dosyasında tanımlanan yeni bir değişkinin isminin önünde Add Artı ID karakterleri yer almalıdır.
+
+942
+02:17:42,940 --> 02:17:47,940
+Bir restoranda menüye her hafta değişik yemekler eklenmektedir.
+
+943
+02:17:47,940 --> 02:17:54,940
+Bu restoranın normal uygulamasına yemekleri listelemek için Recycler View yapısı kullanmak uygun olacaktır.
+
+944
+02:17:54,940 --> 02:18:02,940
+Öte yandan bu yapıyı gerçekleyebilmek ve veriyi aktarabilmek için programcına mutlaka yeni bir adapter yazması gerekecektir.
+
+945
+02:18:02,940 --> 02:18:12,940
+Android işletim sisteminde alt seviye kodlama yapabilmek için temel geliştirme yazımlarına ek olarak Android NDK yüklenmesi gerekir.
+
+946
+02:18:12,940 --> 02:18:26,940
+Bir anlık mesajlaşma uygulamasında bir arkadaşa rehberden bir kişinin telefon miksini göndermek istemese ilgili Intent StartActivityForResult metodu üzerinden aktarılmalıdır.
+
+947
+02:18:26,940 --> 02:18:31,940
+Aşağıdakilerden hangisi intent objesinin taşıdığı bir aksiyon olamaz.
+
+948
+02:18:31,940 --> 02:18:40,940
+ActionSetAlarm, ActionImageCapture, ActionPick, ActionView hiçbiri cevap hiçbiri.
+
+949
+02:18:40,940 --> 02:18:44,940
+Evet bu kadar sorularımız ve cevaplarımız.
+
+950
+02:18:44,940 --> 02:18:50,069
+Barış'ın bir sorusu var ona dönelim.
+
+951
+02:18:50,069 --> 02:18:52,069
+Hocam pardon elim havada kalmış.
+
+952
+02:18:52,069 --> 02:18:58,069
+Tamam peki. Evet sınav sorularınız bu şekildeydi, cevapları da bu şekildeydi.
+
+953
+02:18:58,069 --> 02:19:14,379
+Şimdi burayı tamamladığımıza göre artık bir sonraki adıma geçebiliriz.
+
+954
+02:19:15,379 --> 02:19:28,290
+Şu anda aslında size göstermek istediğim ekranı, ayarlar ekranını gösterebiliyorum.
+
+955
+02:19:28,290 --> 02:19:32,290
+Biraz önce size, şunu da aşağıya alalım.
+
+956
+02:19:32,290 --> 02:19:38,290
+Biraz önce size GetIntent'le kullanıcı isminin getireldiğini söylemiştim.
+
+957
+02:19:39,290 --> 02:19:42,290
+Yolunuz gibi burada görüyorsunuz.
+
+958
+02:19:42,290 --> 02:19:45,290
+Kullanıcı adı Cenar yazıyor.
+
+959
+02:19:45,290 --> 02:19:55,290
+Burada XML tarafına bakacak olursanız, XML tarafında TextView, RadioGroup, RadioButton tanımlamaları var.
+
+960
+02:19:55,290 --> 02:19:57,290
+TextView var gene.
+
+961
+02:19:57,290 --> 02:20:01,290
+Aşağı taraflara indiği zaman da SeekBar'ları göreceksiniz.
+
+962
+02:20:01,290 --> 02:20:05,290
+Bunlar farklı UI komponenter, Button var.
+
+963
+02:20:05,290 --> 02:20:10,290
+Ve bu noktada bir tane ScrollView tanımlanmış.
+
+964
+02:20:10,290 --> 02:20:21,290
+Sonuç itibariyle bu ekrana baktığınız zaman bu ekranın üzerinde ayarlarda farklı UI komponenter oluşturulmuş.
+
+965
+02:20:21,290 --> 02:20:28,290
+Sizden de beklenen mümkünse farklı UI komponenter kullanmanız eğer buna uygun bir yapınız varsa.
+
+966
+02:20:28,290 --> 02:20:30,290
+Geri dönelim buraya.
+
+967
+02:20:30,290 --> 02:20:41,920
+Bu noktada buradaki Güncelli butonuna bastığımızda aşağıda yer alan Update butonuna
+
+968
+02:20:41,920 --> 02:20:48,920
+buradaki bilgilerin yazıldığından bahsetmiştik Share Preferences tarafına.
+
+969
+02:20:48,920 --> 02:20:52,920
+Örneğin şu anda bunları değiştirdim ama Güncelli'ye basmadım.
+
+970
+02:20:52,920 --> 02:20:55,920
+Geri gidiyorum, tekrar tıklıyorum.
+
+971
+02:20:55,920 --> 02:20:58,920
+Gördüğünüz gibi değerler 0, 0, 0 geliyor.
+
+972
+02:20:58,920 --> 02:21:00,920
+Bunları değiştik yapıyorum.
+
+973
+02:21:00,920 --> 02:21:03,920
+Güncelli diyorum, geri gidiyorum.
+
+974
+02:21:03,920 --> 02:21:09,920
+Tekrar aynı ekrana girdiğimde bu değerler olması gerektiği gibi Share Preferences'tan geliyor.
+
+975
+02:21:09,920 --> 02:21:12,920
+Bu değerleri nerede almıştık hatırlarsanız?
+
+976
+02:21:12,920 --> 02:21:15,920
+GetSharePreferences metodu yazmıştık bir tane.
+
+977
+02:21:15,920 --> 02:21:23,920
+Bunun içerisinde GetString ile editor üzerinden almıştık ve ilgili komponatları set etmiştik.
+
+978
+02:21:23,920 --> 02:21:27,920
+SeekBar'ları set ederken SetProgress metodunu kullandık.
+
+979
+02:21:27,920 --> 02:21:31,920
+Bu değerleri alıp oraya assign ettik.
+
+980
+02:21:31,920 --> 02:21:35,920
+Bu noktada SetOnCheckedChangeListener var.
+
+981
+02:21:35,920 --> 02:21:37,920
+Bu da bir compound buton olan.
+
+982
+02:21:37,920 --> 02:21:47,920
+Burada görmüş olduğunuz şu kısmı bizim için takip etmemizi sağlıyor.
+
+983
+02:21:47,920 --> 02:21:51,920
+Bu noktada bunun set edilip edilmediğini kontrol etmemiz gerekiyor.
+
+984
+02:21:51,920 --> 02:22:00,920
+Öte yandan SeekBar'larla ilgili takibimizi yapmak için yukarı bir interface'i implement ettik.
+
+985
+02:22:00,920 --> 02:22:04,920
+SeekBar.OnSeekBarChangeListener.
+
+986
+02:22:04,920 --> 02:22:11,920
+Yani her bir SeekBar için ayrıca bir tane butonlarda olduğu gibi Anonymous klas yaratmayı tercih etmedik.
+
+987
+02:22:11,920 --> 02:22:19,920
+Onun yerine bu interface'i implement ettik ve OnProgressChange metodunu buraya yazdık.
+
+988
+02:22:19,920 --> 02:22:21,920
+Buraya ilgili SeekBar geliyor.
+
+989
+02:22:21,920 --> 02:22:23,920
+Çünkü 3 tane farklı SeekBar var.
+
+990
+02:22:23,920 --> 02:22:34,920
+Onlardan hangisinin geldiği bilgisini aldıktan sonra ilgili SeekBar'ın değerini set edilme işlemini gerçekleştirmeyi burada sağlamış oluyoruz.
+
+991
+02:22:34,920 --> 02:22:46,920
+Onun dışında tabi ki SetListener'lar bölümünde SetOnSeekBarChangeListener'ları da set etmemiz gerekiyor ki bu ekranda yapılan değişiklikler takip edilebilsin.
+
+992
+02:22:46,920 --> 02:22:51,920
+Evet bu da görmüş olduğunuz kod parçaları.
+
+993
+02:22:51,920 --> 02:22:57,920
+Saat tarafta gördüğünüz ekrana ait olan işlerin takip edilmesi için kullandığımız kod parçaları.
+
+994
+02:22:57,920 --> 02:23:04,920
+Şimdi şuradan bir tane NoteEkle ekranı açıyorum.
+
+995
+02:23:04,920 --> 02:23:06,920
+Bu da bir tane Notepad gibi düşünebilirsiniz.
+
+996
+02:23:06,920 --> 02:23:08,920
+Onun koduna geçiyorum.
+
+997
+02:23:08,920 --> 02:23:17,920
+Bu noktada eğer herhangi bir burada bir değer yazıldıysa kaydedildi ise o getiriliyor.
+
+998
+02:23:17,920 --> 02:23:18,920
+Kaydet diyorum.
+
+999
+02:23:18,920 --> 02:23:20,920
+Yeri çıkıyorum.
+
+1000
+02:23:20,920 --> 02:23:27,920
+Tekrar NoteEkleye bastığında buradan dosyadan kaydedilmiş değeri bize getiriyor.
+
+1001
+02:23:27,920 --> 02:23:30,920
+Koda bakalım.
+
+1002
+02:23:30,920 --> 02:23:36,920
+Kod tarafında yine ilgili kullanıcının ismi alınıyor GetIntent ile.
+
+1003
+02:23:36,920 --> 02:23:39,920
+Daha sonra FileInputStream tanımlanıyor.
+
+1004
+02:23:39,920 --> 02:23:50,920
+FileInputStream'e OpenFile metodu ile ilgili kullanıcıya ait olan dosyada yer alan dosya erişimi için onun ismini kullanıyoruz.
+
+1005
+02:23:50,920 --> 02:23:53,920
+Çünkü her bir kişiye ait farklı dosya isimleri var.
+
+1006
+02:23:53,920 --> 02:23:56,920
+Sonra bir InputStreamReader tanımlıyoruz.
+
+1007
+02:23:56,920 --> 02:23:58,920
+Bir BufferedReader ve StringMuilder'leri tanımlıyoruz.
+
+1008
+02:23:58,920 --> 02:24:04,920
+Örnekte kullandığımız gibi bu noktada karşı taraftan bir okuma gerçekleştiriyoruz.
+
+1009
+02:24:04,920 --> 02:24:12,920
+Okuduğumuz bilgiyi de şurada görmüş olduğunuz SetText ile ekrana yazdırıyoruz.
+
+1010
+02:24:12,920 --> 02:24:19,920
+OnCreate çalıştığı zaman dosyadan bu kod üzerinden text bilgisini almış oluyor.
+
+1011
+02:24:19,920 --> 02:24:39,920
+Öte yandan tabi bir de buraya yazmış olduğumuz bilgiyi değiştirmek istediğimizde kaydete bastığımızda çalışacak bir metoda ihtiyacımız var.
+
+1012
+02:24:39,920 --> 02:24:41,920
+Neresi oda?
+
+1013
+02:24:41,920 --> 02:24:47,920
+Burada bizim için tanımlanmış olan SaveNoteIntoStorage metodu var.
+
+1014
+02:24:47,920 --> 02:24:52,920
+Bu metod aslında bizim için bir OutputStream açıyor.
+
+1015
+02:24:52,920 --> 02:24:59,920
+Yine CurrentUserName üzerinden o OutputStream'in hangi dosyayla ilişkilendirilmesi gerektiğini bize söylüyor.
+
+1016
+02:24:59,920 --> 02:25:08,920
+Sonra Write metoduyla buradaki Notepad içerisindeki EditText alanında yer alan string bilgi alınıyor.
+
+1017
+02:25:08,920 --> 02:25:11,920
+Ve sonra Byte'den üşütülerek saklanıyor.
+
+1018
+02:25:12,920 --> 02:25:17,920
+Bu noktada mutlaka kapatmanız gerektiğinden bahsetmiştik.
+
+1019
+02:25:17,920 --> 02:25:23,920
+Ve işlem yapıldığında, kaydetten dinde de burada bir not kayıt edildi diye bir Toast mesajı çıkıyor.
+
+1020
+02:25:23,920 --> 02:25:30,920
+Sizin de ödevinizde özellikle yapılan işlemler sonunda bilgilendirme mesajları üretmeniz önemli.
+
+1021
+02:25:30,920 --> 02:25:32,920
+Yukarıda bir DelayIt butonu var.
+
+1022
+02:25:32,920 --> 02:25:40,920
+DelayIt butonuna bastığınızda hem buradaki ekrandaki değerleri siliyor hem de bunu gidip dosyaya kalkıyor.
+
+1023
+02:25:40,920 --> 02:25:46,920
+Sadece burayı silip temizleyip dosyaya kaydetmeyebilir de bu şekilde bir yapı tercih edilmiş.
+
+1024
+02:25:46,920 --> 02:25:53,920
+Update butonuyla ilgili olarak da sadece bir tane metod var yukarıda tanıdığımız.
+
+1025
+02:25:53,920 --> 02:25:54,920
+O çağırıyor.
+
+1026
+02:25:54,920 --> 02:25:56,920
+Biraz önce o metoda konuştuk.
+
+1027
+02:25:56,920 --> 02:26:03,920
+Buradaki değerlerin dosyaya gidip yazılmasından sorumlu olan bir metod.
+
+1028
+02:26:03,920 --> 02:26:06,920
+Bu kadar basit aslında.
+
+1029
+02:26:06,920 --> 02:26:18,920
+Sizin yapacağınız tarafta da buna ek olarak soruları saklama noktasında sterilizable ya da parsable tercih edebilirsiniz.
+
+1030
+02:26:18,920 --> 02:26:25,920
+Bu sizin tercihiniz ama farklı şekillerde de implementasyonlar mümkün olabilir.
+
+1031
+02:26:25,920 --> 02:26:29,920
+Buraya kadar sorusu olan var mı bu iki örnekle ilgili olarak?
+
+1032
+02:26:29,920 --> 02:26:33,920
+User Settings Activity ve Notepad Activity ile ilgili olarak.
+
+1033
+02:26:33,920 --> 02:26:35,920
+Saat 16.26 oldu.
+
+1034
+02:26:35,920 --> 02:26:53,579
+Sensörlerle ilgili de birazcık konuşmak istiyorum.
+
+1035
+02:26:53,579 --> 02:26:58,579
+O yüzden sensörlerle ilgili olan slide'ı şimdi sizlerle paylaşacağım.
+
+1036
+02:26:58,579 --> 02:27:02,579
+Şu anda görebildiğinizi tahmin ediyorum.
+
+1037
+02:27:02,579 --> 02:27:38,440
+Şimdi bizim için tabii veriyi saklamak çok önemliydi.
+
+1038
+02:27:38,440 --> 02:27:41,440
+Bir de veriyi toplamak var.
+
+1039
+02:27:41,440 --> 02:27:43,440
+Bu kısmı da çok önemli.
+
+1040
+02:27:43,440 --> 02:27:45,440
+Ve biliyorsunuz insanın beş duyusu var.
+
+1041
+02:27:45,440 --> 02:27:49,440
+Telefonlar için de ortamla ilgili bir karar verebilmek adına,
+
+1042
+02:27:49,440 --> 02:27:59,440
+ortamdan bilgi toplaması ya da telefondaki farklı kaynaklardan gelen bilgiyi saklaması oldukça önemli.
+
+1043
+02:27:59,440 --> 02:28:07,440
+Örneğin bizim kullanabileceğiniz sensörler arasında sıcaklık sensörü var.
+
+1044
+02:28:07,440 --> 02:28:09,440
+Yakınlık sensörü var.
+
+1045
+02:28:09,440 --> 02:28:11,440
+Işık sensörü var.
+
+1046
+02:28:11,440 --> 02:28:13,440
+Farklı sensör tipleri var.
+
+1047
+02:28:13,440 --> 02:28:19,440
+Bu sensör tipleri için başka neler söyleyebiliriz, hangi sensörler olduğunu söyleyebiliriz bir telefon üzerinde.
+
+1048
+02:28:19,440 --> 02:28:21,440
+Evet, [öğrenci].
+
+1049
+02:28:21,440 --> 02:28:23,440
+Basınç sensörü olabilir hocam.
+
+1050
+02:28:23,440 --> 02:28:31,360
+Basınç sensörü, güzel.
+
+1051
+02:28:31,360 --> 02:28:33,360
+Başka?
+
+1052
+02:28:33,360 --> 02:28:35,360
+[öğrenci]?
+
+1053
+02:28:35,360 --> 02:28:44,719
+Işık sensörü olabilir hocam.
+
+1054
+02:28:44,719 --> 02:28:46,719
+Başka?
+
+1055
+02:28:46,719 --> 02:28:48,719
+Işık sensörü olabilir hocam.
+
+1056
+02:28:48,719 --> 02:28:54,559
+Evet, başka.
+
+1057
+02:28:54,559 --> 02:28:56,559
+Peki, devam edelim.
+
+1058
+02:28:56,559 --> 02:29:02,559
+Yılma ölçer, jiroskop, ekran çözüte de.
+
+1059
+02:29:02,559 --> 02:29:04,559
+Proximity sensör vardı, yakınlık sensörü.
+
+1060
+02:29:04,559 --> 02:29:06,559
+Yakınlık sensörü.
+
+1061
+02:29:06,559 --> 02:29:08,559
+Gibi birçok sensörümüz var.
+
+1062
+02:29:08,559 --> 02:29:14,559
+Bize Android Sensör Framework'ü, bu sensörlerin listesini,
+
+1063
+02:29:14,559 --> 02:29:24,559
+bu sensörlerin rangelerini, bu sensörlerin ne kadar sıklıkla veri toplayabileceği gibi bilgileri paylaşıyor.
+
+1064
+02:29:24,559 --> 02:29:36,559
+Tabi bu sensörleri ek olarak kullandığımız kamera, mikrofon, wifi üzerinden gelen paket bilgileri gibi başka sensör bilgileri de var.
+
+1065
+02:29:36,559 --> 02:29:48,559
+Artı fiziksel sensörleri ek olarak telefonumuzun kalenderinde olan bilgiler, SMS bilgileri, bunların hepsi teknik olarak birer sensör bilgisi.
+
+1066
+02:29:48,559 --> 02:29:58,559
+Ama bunları fiziksel sensörler olmadığı için daha çok sanal sensörler olarak adlandırıyoruz.
+
+1067
+02:29:58,559 --> 02:30:02,559
+Android bize iki tip sensör kullanımı aslında sağlıyor.
+
+1068
+02:30:02,559 --> 02:30:08,559
+Biri hardware yani donumsal sensörler, diğeri de yazımsal sensörler.
+
+1069
+02:30:08,559 --> 02:30:12,559
+Yazımsal ve donumsal sensör arasındaki fark nedir diye sorayım.
+
+1070
+02:30:12,559 --> 02:30:30,219
+Yazımsal ve donumsal sensör arasındaki fark nedir?
+
+1071
+02:30:30,219 --> 02:30:45,219
+Donumsal sensör, donum parçaları üzerinden, oradan gerçekleşen aksiyonun elektriksel dönüşümü sağlanıp bu bilginin bize aktarılmasıyla elde ettiğiniz bir sensör.
+
+1072
+02:30:45,219 --> 02:30:55,219
+Yazımsal sensör ise, donumsal sensörlerin bilgilerini kullanarak bize sayısal değer oluşturan bir aslında yazılım.
+
+1073
+02:30:55,219 --> 02:30:59,219
+Fiziksel sensörler, Travia.
+
+1074
+02:30:59,219 --> 02:31:03,590
+Ben bir soru soracaktım hocam.
+
+1075
+02:31:03,590 --> 02:31:04,590
+Tabii.
+
+1076
+02:31:04,590 --> 02:31:15,590
+Telefonların lokasyon bilgisini bize vermesi, Android uygulamalarının lokasyon bilgisini alması yazılımsal sensör mü sayılıyor acaba?
+
+1077
+02:31:15,590 --> 02:31:19,590
+Lokasyon bilgisini bize sağlayan farklı kaynaklar var.
+
+1078
+02:31:19,590 --> 02:31:24,590
+Bunlardan bir tanesi GPS, Global Positioning Systems diye.
+
+1079
+02:31:24,590 --> 02:31:26,590
+GLONASS var.
+
+1080
+02:31:26,590 --> 02:31:32,590
+Bunlar uydular ile haberleşerek bize lokasyon bilgisini sağlıyorlar.
+
+1081
+02:31:32,590 --> 02:31:39,590
+Bu şekilde bilgi alındığında doğal olarak bu sensörler hardware olarak çalışıyor.
+
+1082
+02:31:39,590 --> 02:31:44,590
+Ama sadece uydular üzerinden lokasyon bilgisi almıyoruz.
+
+1083
+02:31:44,590 --> 02:31:57,590
+Access Point'lar, baz istasyonlarından da topladığımız veriyle biz aslında o veriyi lokasyon verisi olarak siz kullanıcılara sunuyoruz.
+
+1084
+02:31:57,590 --> 02:32:03,590
+Bunların hepsi genelde hardware sensörler olarak geçer.
+
+1085
+02:32:03,590 --> 02:32:07,590
+O yüzden yazılım sensörleri olarak adlandırmıyoruz bu sensörleri.
+
+1086
+02:32:07,590 --> 02:32:09,590
+Teşekkürler hocam.
+
+1087
+02:32:09,590 --> 02:32:11,590
+Rica ederim. Ekran bir sorun var sana.
+
+1088
+02:32:11,590 --> 02:32:15,590
+Hocam yazılım sensörleri örnek verebilir misiniz diye soruyorum.
+
+1089
+02:32:15,590 --> 02:32:17,590
+Tabii hemen sırası geliyor.
+
+1090
+02:32:17,590 --> 02:32:19,590
+Yavaş yavaş ilerleyelim.
+
+1091
+02:32:19,590 --> 02:32:31,590
+Burada 20 ölçer, sıcaklık sensörü, çevresel, yerçekimi sensörü, jiroskop, ışık sensörü birçok sensör tipini görüyorsunuz.
+
+1092
+02:32:31,590 --> 02:32:39,590
+Bunların içerisinde mesela linear 20 ölçer software olarak genelde implement edilen bir sensör.
+
+1093
+02:32:39,590 --> 02:32:47,590
+Neden linear acceleration hardware olarak implement ediliyor da genellikle software olarak implement ediliyor diye sorayım.
+
+1094
+02:32:47,590 --> 02:33:06,329
+İvme ölçer kendisi bir doğranımsal sensör olarak telefonumuzda yer alıyor zaten.
+
+1095
+02:33:06,329 --> 02:33:15,329
+Standart bir ivme ölçer bilgi verirken yerçekimi ivmesini de hesaba katarak bilgi veriyor.
+
+1096
+02:33:16,329 --> 02:33:19,329
+Fiziksel bir sensör, doğranımsal bir sensör.
+
+1097
+02:33:19,329 --> 02:33:28,329
+Bu sensöre ek olarak bir tane daha doğranımsal sensör koyup linear acceleration olarak çalıştırmak çok anlamlı değil.
+
+1098
+02:33:28,329 --> 02:33:42,329
+Yapılan şey normal bir ivme ölçerden yerçekimi ivmesi arındırılarak yazılımsal olarak linear acceleration yani yerçekinden bağımsız bir ivme ölçer hesabı yapılıyor
+
+1099
+02:33:42,329 --> 02:33:46,329
+ve bize yerçekiminin olmadığı bir değer döndürülüyor.
+
+1100
+02:33:46,329 --> 02:33:54,329
+O yüzden ekstradan bir doğranımsal sensör telefondan üzerinde genelde yer almıyor.
+
+1101
+02:33:54,329 --> 02:34:08,329
+Bir telefonu yukarıdan aşağıya bıraktığınız zaman düşen pozisyonda olan bir cihazın ölçüceyi ivme ölçer verisi nedir arkadaşlar?
+
+1102
+02:34:08,329 --> 02:34:14,899
+Evet [öğrenci].
+
+1103
+02:34:14,899 --> 02:34:17,899
+Yerçekimi ivmesine eşit olması lazım.
+
+1104
+02:34:17,899 --> 02:34:23,899
+Normal bir ivme ölçer mi yoksa linear?
+
+1105
+02:34:23,899 --> 02:34:29,489
+Bilmiyorum.
+
+1106
+02:34:29,489 --> 02:34:35,489
+Yani işin içinde yerçekimi ivmesi var mı yok mu?
+
+1107
+02:34:35,489 --> 02:34:38,489
+Yani ivme ölçer bunu ölçüyor mu ölçmıyor mu?
+
+1108
+02:34:38,489 --> 02:34:41,489
+Düşüş halindeyse evet olması lazım.
+
+1109
+02:34:41,489 --> 02:34:45,489
+Yok yok, düşüş halinde düşüş halinde olmama durumunu tartışmıyoruz.
+
+1110
+02:34:45,489 --> 02:34:51,489
+Bir telefon bilgi olarak verdiği ivme ölçer bilgisinde yerçekimi ivmesini kullanıyor mu kullanmıyor mu?
+
+1111
+02:34:51,489 --> 02:34:56,920
+Yani dolaylı olarak kullanmıyor mu?
+
+1112
+02:34:56,920 --> 02:34:59,920
+Şimdi bunu tam anlatamadım sanırım.
+
+1113
+02:34:59,920 --> 02:35:03,920
+İki tip ivme ölçer bilgisi veren sensörden bahsediyoruz.
+
+1114
+02:35:03,920 --> 02:35:06,920
+Bir tanesi işin içinde yerçekimi ivmesini de katıyor.
+
+1115
+02:35:06,920 --> 02:35:09,920
+Size verdiği bütün değerlerinde yerçekimi ivmesi de var.
+
+1116
+02:35:10,920 --> 02:35:19,920
+Yerçekimi ivmesi var demek bir telefonu bir masa üzerine koyduğunuzda 3 tane X'e ne olduğunu düşünürsek bu 3 X'nin göstereceği değerler ne olur?
+
+1117
+02:35:19,920 --> 02:35:25,120
+X, Y, Z değerler olur.
+
+1118
+02:35:25,120 --> 02:35:28,500
+Yani [öğrenci]?
+
+1119
+02:35:28,500 --> 02:35:30,500
+Ben hiç anlamadım galiba hocam.
+
+1120
+02:35:30,500 --> 02:35:33,500
+Ben de birazcık öyle olduğunu düşünüyorum [öğrenci].
+
+1121
+02:35:33,500 --> 02:35:42,500
+Yani sadece hareket etmediğini düşünürsek masada olduğunu düşünürsek sadece yerçekimi ivmesi Y'e X'nin de 10 olacak.
+
+1122
+02:35:42,500 --> 02:35:43,500
+Tamam.
+
+1123
+02:35:43,500 --> 02:35:46,500
+Yani bir eksen 9.81 diğer eksenler 0 gösterir değil mi?
+
+1124
+02:35:46,500 --> 02:35:49,500
+İşin içinde yerçekimi ivmesi dahilse.
+
+1125
+02:35:49,500 --> 02:35:53,290
+Değilse [öğrenci]?
+
+1126
+02:35:53,290 --> 02:35:56,690
+Değilse?
+
+1127
+02:35:56,690 --> 02:35:59,690
+Yerçekimi ivmesini yoksa ne gösterir eksenler?
+
+1128
+02:35:59,690 --> 02:36:03,510
+Hepsi 0 olmaz mı o zaman?
+
+1129
+02:36:03,510 --> 02:36:04,510
+Evet hepsi 0 olur.
+
+1130
+02:36:04,510 --> 02:36:09,510
+Yani type accelerometer dediğimiz şey 9.81 0.0 gösteriyor.
+
+1131
+02:36:09,510 --> 02:36:14,510
+Linear acceleration dediğimiz sensörse 0.0.0 gösteriyor.
+
+1132
+02:36:14,510 --> 02:36:16,510
+Şimdilerdeki fark anlaşıldı mı?
+
+1133
+02:36:16,510 --> 02:36:17,510
+Şu an anladım hocam.
+
+1134
+02:36:17,510 --> 02:36:18,510
+Tamam.
+
+1135
+02:36:18,510 --> 02:36:36,819
+Şimdi bu doğrultuda type accelerometer yani yerçekimi ivmesini işin içine katan sensörden veri ölçtüğümüzü düşünürsek yukarıdan aşağıya düşen bir telefonun ivmesi ne olacaktır?
+
+1136
+02:36:36,819 --> 02:36:40,520
+Gösterdiğin ivme.
+
+1137
+02:36:40,520 --> 02:36:42,520
+Düşüş eksenindeki.
+
+1138
+02:36:42,520 --> 02:36:44,520
+Evet [öğrenci].
+
+1139
+02:36:44,520 --> 02:36:49,520
+Yerçekimini kattığımız olanda 10 diğerinde 0 gözükecek.
+
+1140
+02:36:49,520 --> 02:36:51,520
+Yerçekimi olan da?
+
+1141
+02:36:51,520 --> 02:36:54,520
+Yani 10 dediğin 9.81 de gözükecek.
+
+1142
+02:36:54,520 --> 02:36:58,729
+Hayır maalesef cevap doğru değil.
+
+1143
+02:36:58,729 --> 02:37:03,729
+Düşüşte olan bir telefon yerçekimi ile birlikte hareket ettiği için ivmesi 0 olur.
+
+1144
+02:37:03,729 --> 02:37:12,930
+Barış anlaşıldı mı?
+
+1145
+02:37:12,930 --> 02:37:13,930
+Evet anladım hocam.
+
+1146
+02:37:13,930 --> 02:37:18,930
+Yani telefon hareket halinde ve yerçekimi ivmesi ile birlikte hareket ediyor.
+
+1147
+02:37:18,930 --> 02:37:30,930
+Bu yüzden görece telefonun düştüğünü, oradaki ivme değerinin o eksendeki sıfıra yaklaştığın zaman bir telefonun düşüş yaşadığını anlayabilirsiniz.
+
+1148
+02:37:30,930 --> 02:37:32,930
+Şimdi bundan neden önemli?
+
+1149
+02:37:32,930 --> 02:37:42,930
+Günlük hayatta telefonun hareketleri, kişinin hareketlerini anlayabilmek için çok sık kullanılacağı da saatleri.
+
+1150
+02:37:42,930 --> 02:37:46,930
+İşte kişi o anda yürüyor mu, arabayla mı hareket ediyor, düştü mü?
+
+1151
+02:37:46,930 --> 02:37:48,930
+Özellikle düştü mü noktasında.
+
+1152
+02:37:48,930 --> 02:37:55,930
+Örneğin IOS'un bu noktada çok ciddi derecede biliyorsunuz bir iddiası var.
+
+1153
+02:37:55,930 --> 02:37:59,930
+Bir şey olduğu zaman başınıza bir şey geldiği zaman biz bunu anlıyoruz.
+
+1154
+02:37:59,930 --> 02:38:03,930
+Fake bir düşmemi, gerçek bir düşmemi olduğunu tespit edebiliyoruz gibi.
+
+1155
+02:38:03,930 --> 02:38:13,930
+Bunlar için çeşitli, tabi arka planda yapılması gereken işler var ama ilk önce ivme ölçer ve jiroskop verilerinden, sensörlerinden veri toplanması gerekir.
+
+1156
+02:38:13,930 --> 02:38:16,930
+İvme ölçerle jiroskopun farkı nedir arkadaşlar?
+
+1157
+02:38:16,930 --> 02:38:31,209
+Bir tanesi bir eksen doğrultusunda yaptığınız hareketin ivmelenmesini ölçer.
+
+1158
+02:38:31,209 --> 02:38:37,209
+Diğeri bir eksen etrafında dönüş hızınızı ölçer.
+
+1159
+02:38:37,209 --> 02:38:46,209
+İşte biri metre bölü saniye karayken, diğeri radyen bölü saniye cinsinden birime sahiptir.
+
+1160
+02:38:46,209 --> 02:38:51,209
+Sıcaklık sensörü Celsius olarak bilgi üretir.
+
+1161
+02:38:51,209 --> 02:38:57,209
+Onun dışında ışık sensörü lüks cinsinden değer üretir.
+
+1162
+02:38:57,209 --> 02:39:03,209
+Manyetometre testa cinsinden, mikro testa cinsinden üretir.
+
+1163
+02:39:03,209 --> 02:39:12,209
+Basınç sensörü bar ya da paskal cinsinden değer üretir.
+
+1164
+02:39:12,209 --> 02:39:15,209
+[öğrenci]'nın bir sorusu var.
+
+1165
+02:39:15,209 --> 02:39:22,520
+Hocam telefonun landscape'ini değiştirdiğimiz zaman bunu algılıyor.
+
+1166
+02:39:22,520 --> 02:39:26,520
+Burada jiroskop sensörünü mü kullanıyor?
+
+1167
+02:39:26,520 --> 02:39:29,520
+Daha çok orientation sensörünü kullanıyor.
+
+1168
+02:39:29,520 --> 02:39:37,520
+Orientation sensörü ise senin söylediğin gibi jiroskoptan ve aksolometreden faydalanarak bilgi üreten bir sensör.
+
+1169
+02:39:37,520 --> 02:39:39,520
+Software bir sensör.
+
+1170
+02:39:39,520 --> 02:39:42,520
+Özellikle hardware bir sensör değil.
+
+1171
+02:39:42,520 --> 02:39:47,520
+Temelde fiziksel kullandığı sensörler jiroskop ve aksolometre.
+
+1172
+02:39:47,520 --> 02:39:57,520
+Bu sayede telefonunuzun yatay mı dikey mi konumda olduğunu anlayıp ekran düzenlemesini buna göre yapıyor.
+
+1173
+02:39:57,520 --> 02:40:11,520
+Bunun gibi yakınlık sensörü mesela mesafeyi size santimetre cinsinden verebilir ya da daha kabaca uzak yakın şeklinde veren sensörler de var.
+
+1174
+02:40:11,520 --> 02:40:15,520
+Son dönemdeki gelişen sensörler daha detaylı bilgi veriyorlar.
+
+1175
+02:40:15,520 --> 02:40:21,520
+Burada bu sensör sayesinde telefonunuzun konuşurken ekranının kapatılmasını sağlayabiliyorsunuz mesela.
+
+1176
+02:40:21,520 --> 02:40:23,520
+Kulağınızda götürdüğünüzde.
+
+1177
+02:40:23,520 --> 02:40:27,520
+Proximity sensör yakınlaştığını anlayıp ekranı kapatıyor.
+
+1178
+02:40:27,520 --> 02:40:34,520
+Hem enerjisine sarfı sağlıyor hem de yanlışlıkla tuşa basılmasının önüne geçilmiş oluyor.
+
+1179
+02:40:34,520 --> 02:40:38,520
+Bu sensörlerle yapılabilecek çok fazla şey de iş var.
+
+1180
+02:40:38,520 --> 02:40:47,520
+Bunlara yeni geldiği zaman vaktimiz olursa biraz daha konuşacağız ama biz Android tarafında bunu yönetmek için nelere sahibiz bunlara bakalım.
+
+1181
+02:40:47,520 --> 02:40:49,520
+Dört temel yapıdan bahsediyoruz.
+
+1182
+02:40:49,520 --> 02:40:52,520
+Sensör manager üzerinden hizmet alacağız.
+
+1183
+02:40:52,520 --> 02:40:58,520
+Bir sensör klası yaratıp istediğimiz sensörü tanımlayacağız.
+
+1184
+02:40:58,520 --> 02:41:07,520
+Sensör event ile gerçekleşen aksiyonları takip edeceğiz ve bilgiyi sensör event üzerinden alacağız.
+
+1185
+02:41:07,520 --> 02:41:19,520
+Sensör event listener da bizim için sensör tarafında herhangi bir değişim gelişim olursa bunu yakalamak için hazırda bekleyecek olan listenerımız.
+
+1186
+02:41:21,520 --> 02:41:25,520
+Şimdi mutlaka bir location manager'da da olacağı gibi göreceksiniz.
+
+1187
+02:41:25,520 --> 02:41:32,520
+Sensör manager kullanarak bir yapı bir obje oluşturmamız gerekiyor.
+
+1188
+02:41:32,520 --> 02:41:39,520
+Sensör manager üzerinden bir hizmet almak istediğimizi burada küçük kod parçası ile söylüyoruz.
+
+1189
+02:41:39,520 --> 02:41:48,520
+Sonra cihazınızdaki ya da yüklü cihazdaki hangi sensörler olduğunu anlamanın yolu getSensorList metodunu çağırmak.
+
+1190
+02:41:48,520 --> 02:41:50,520
+Sensör manager'e ait olan.
+
+1191
+02:41:50,520 --> 02:41:56,520
+Type all derseniz bütün sensörler listenize dönecektir.
+
+1192
+02:41:57,520 --> 02:42:08,520
+Specifik bir sensör tipini söylerseniz type magnetic field gibi, type temperature, type axiometri gibi o sensör veya sensör bilgileri dönecektir.
+
+1193
+02:42:08,520 --> 02:42:12,520
+Diyebilirsiniz ki ya imi ölçelerden bir tane olmaz mı?
+
+1194
+02:42:12,520 --> 02:42:15,520
+Niye biz bunun listesine vurdum.
+
+1195
+02:42:15,520 --> 02:42:21,520
+Bazı tarafı onlarda bazı sensörlerden bir tane değil birkaç tane oluyor.
+
+1196
+02:42:21,520 --> 02:42:30,520
+O yüzden zaman zaman aynı tipteki sensörlerden birkaç tane olduğunu göreceksiniz.
+
+1197
+02:42:30,520 --> 02:42:39,520
+getResolution, getMaximumRange, getPower gibi metotlarla o sensöre ait spesifik bilgileri alabiliyorsunuz.
+
+1198
+02:42:39,520 --> 02:42:41,520
+Hangi üretici tarafına üretilmiş.
+
+1199
+02:42:41,520 --> 02:42:52,520
+Çünkü bu sensörün aslında spekleri hakkında da bize bir bilgi veriyor ve yapacağımız bazı uygulamalarda buna ihtiyaç duyuyoruz.
+
+1200
+02:42:52,520 --> 02:42:56,520
+Bu kontörleri yapmak gerekiyor.
+
+1201
+02:42:56,520 --> 02:43:04,520
+Bu noktada örneğin sensör manager üzerinden gravity sensörü var mı diye bakıyoruz.
+
+1202
+02:43:04,520 --> 02:43:08,520
+Varsa bunların üreticilerine bakmışız.
+
+1203
+02:43:08,520 --> 02:43:17,520
+Google'a ait olduğunu düşündüğümüz noktada başka versiyonu kaç diye kontrol etmişiz vesaire bu tür kontörler yapabiliyoruz.
+
+1204
+02:43:17,520 --> 02:43:27,520
+Hemen altında işte aksiyonometri sensörü var mı yok mu bunu kontrol ediyoruz.
+
+1205
+02:43:27,520 --> 02:43:33,520
+Eğer herhangi bir şekilde aksiyonometri sensörü yoksa bununla ilgili
+
+1206
+02:43:33,520 --> 02:43:39,520
+eğer bizim uygulamamız sensörle ilgili bir iş yapıyorsa gerekli önlemleri burada almamız gerekiyor.
+
+1207
+02:43:39,520 --> 02:43:44,520
+Bizim için iki tane kritik metot var onSensorChanged ve onAccuracyChanged.
+
+1208
+02:43:44,520 --> 02:43:55,520
+onSensorChanged metodu sensörde değer üretildikçe o değerlerin sizin tarafınıza aktarılmasını sağlıyor
+
+1209
+02:43:55,520 --> 02:44:09,520
+ve siz de burada görmüş olduğunuz sensör event tipindeki objenizin ismi ne ise onun .values isimli attribute'undan ilgili göze gidip değerini alıyorsunuz.
+
+1210
+02:44:09,520 --> 02:44:20,520
+Örneğin ışık sensörünün sadece bir eksene olduğu için 0 üzerinden bilgi alırken aksiyonometre 3 tane eksene sahip olduğu için
+
+1211
+02:44:20,520 --> 02:44:26,520
+0,1,2'den x,y,z eksenlerine ait bilgiyi okuyabiliyorsunuz.
+
+1212
+02:44:26,520 --> 02:44:38,520
+onAccuracyChanged ise sensörünüzün okuma hassasiyetiyle ilgili bir değişiklik söz konusuysa size onu döndürüyor.
+
+1213
+02:44:38,520 --> 02:44:45,520
+Bu sensörünüzde bir bozulma vesaire yaşandığında tespit etmek açısından faydalı olabilecek bir metod.
+
+1214
+02:44:45,520 --> 02:44:59,520
+Mutlaka dinleme yapıyorsanız, bir sensörden gelen bilgileri takip etmek istiyorsanız o sensörü registre etmeniz gerekiyor dinlemek istediğiniz.
+
+1215
+02:44:59,520 --> 02:45:07,520
+İşte burada light sensörü registre edilmiş ve ne sıklıkla dinlemek istediğinizi de belirtmeniz gerekiyor.
+
+1216
+02:45:07,520 --> 02:45:15,520
+Örneğin bazı sensörler 20-23 ajeroskop gibi saniyede 100-200 defa değer üretirler ve bizim için kritiktir.
+
+1217
+02:45:15,520 --> 02:45:24,520
+Ama ışık sensörü saniyede bir dinlense de çok büyük problem oluşturmaz.
+
+1218
+02:45:24,520 --> 02:45:33,520
+O yüzden burada dinleyeceğiniz sensörü ve ne kadar sıklıkla dinlemek istediğinizi de burada belirtiyorsunuz.
+
+1219
+02:45:34,520 --> 02:45:44,520
+Bazı sensörler ne sıklıkla dinlemek istediğiniz verisini alırken bazı sensörler bu veriyi almıyor sadece değişiklik olduğunda size bildirim yapıyorlar.
+
+1220
+02:45:44,520 --> 02:45:50,520
+Ama sonuçta takip edeceğiniz sensörü mutlaka registre etmeniz gerekiyor.
+
+1221
+02:45:50,520 --> 02:46:09,520
+Artı bu sensörleri kullanırken registre ettikten sonra diyelim ki uygulamadan çıktınız ya da artık o sensörü kullanmayacağınız, faydalanmayacağınız bir noktadasınız mutlaka registre etmeniz lazım.
+
+1222
+02:46:09,520 --> 02:46:13,520
+Yani uygulamadan çıktınız diye kendi kendine alınma registre olmuyor.
+
+1223
+02:46:13,520 --> 02:46:34,520
+O yüzden uygulama aktivitedeki state'iniz değişiyorsa, pausa stop'a düşüyorsanız o state'lerde gereksiz kaynak tüketmemek için sensör manager üzerinden unregister işlemini gerçekleştirmeniz sizden bekleniyor.
+
+1224
+02:46:34,520 --> 02:46:52,520
+Bir sensör yoksa ve sizin uygulamanız buna mutlaka ihtiyaç duyuyorsa onu manifestte daha önce kamerada olduğu gibi uses feature ile tanımlamalı ve bir kahret özelliği true yapmalısınız.
+
+1225
+02:46:52,520 --> 02:47:03,520
+Böyle olunca üzerinde iyi mi ölçer olmayan uygulamalar sizin, daha doğrusu telefonlar sizin uygulamanızı görmüyor bunu true yaparsanız.
+
+1226
+02:47:03,520 --> 02:47:18,520
+Bunu false yaparsanız bunun bir özellik olduğunu karşı tarafı söylüyorsunuz ama bunun must olmadığını, sadece ihtiyaç olduğunu, yine uygulamanızın hizmet vermeye devam edebileceğini ama bazı özelliklerin eksik olacağını belirtmiş oluyorsunuz.
+
+1227
+02:47:18,520 --> 02:47:31,520
+O yüzden false ile true arasındaki fark bu şekilde ihtiyaç duyuyorsanız mutlaka true required özelliğini set etmeniz gerekiyor.
+
+1228
+02:47:31,520 --> 02:47:51,829
+Şimdi burada sensörlerin sampling frequency ve verileri aktarma modları var, sürekli veri aktaranlar var, veri değiştiği zaman aktaranlar var ve bir seferlik aktaranlar var.
+
+1229
+02:47:51,829 --> 02:47:57,829
+Bunların detayı 9 ile birlikte birazcık Android 9 ile birlikte değişti.
+
+1230
+02:47:57,829 --> 02:48:07,829
+Bunların detayını aslında 3 hafta sonraki dersimizde konuşuyor olacağız çünkü bugün saat 16.47 oldu, bir giriş yapmış olduk sensörlere.
+
+1231
+02:48:07,829 --> 02:48:16,829
+En azından sensörlerden okuma yapabilecek, sensörlerle ilgili bir iş yapabilecek noktaya kabaca gelmiş oldunuz.
+
+1232
+02:48:16,829 --> 02:48:18,829
+Bundan sonrası biraz daha detay bir ilgi olacak.
+
+1233
+02:48:18,829 --> 02:48:23,829
+2 hafta dersimiz yok tatiller nedeniyle.
+
+1234
+02:48:23,829 --> 02:48:29,829
+Önümüzdeki hafta çarşamba akşamına kadar ödev testini yapmanız bekleniyor sizden.
+
+1235
+02:48:29,829 --> 02:48:35,829
+Hemen akabinde dönem projenizi veriyor olacağım.
+
+1236
+02:48:35,829 --> 02:48:47,829
+Dönem projenizi erken konular anlatılmadan vereceğim için ki bu sizden gelen talep doğultusunda bazı konuları görmemiş olacaksınız ama dönem projenizde bu konular yer alacak.
+
+1237
+02:48:47,829 --> 02:48:54,829
+O yüzden dönem projenizi yaparken birazcık araştırma yapmanız gerekiyor olacak.
+
+1238
+02:48:54,829 --> 02:48:57,829
+Sorunuz varsa alayım [öğrenci].
+
+1239
+02:48:57,829 --> 02:49:03,829
+Hocam dönem projesi bu geliştirdiğimiz uygulama üzerine ekleyeceğimiz bir yapıda mı olacak?
+
+1240
+02:49:03,829 --> 02:49:05,829
+Hayır tamamen yeni bir uygulama olacak.
+
+1241
+02:49:05,829 --> 02:49:06,829
+Tamam teşekkürler.
+
+1242
+02:49:06,829 --> 02:49:07,829
+Rica ederim.
+
+1243
+02:49:07,829 --> 02:49:08,829
+Evet [öğrenci].
+
+1244
+02:49:08,829 --> 02:49:12,829
+Hocam o 2 haftayı nasıl telafi edeceğiz ya da edebileceğiz mi?
+
+1245
+02:49:12,829 --> 02:49:18,829
+Biraz daha bu uygulama yaptığımız zamanlardan kısacağız derste.
+
+1246
+02:49:18,829 --> 02:49:27,829
+Mümkün olduğunca konu anlatımıyla geri kalan 3 haftayı ilerliyor olacağız konuları yetiştirmek adına.
+
+1247
+02:49:27,829 --> 02:49:39,879
+Yani pratik yapma işi dersin dışına biraz taşacak ve biraz daha ders dışında uygulamalarınızı inklemente ediyor olacaksınız.
+
+1248
+02:49:39,879 --> 02:49:41,879
+Örnekleri yapıyor olacaksınız.
+
+1249
+02:49:41,879 --> 02:49:49,879
+Bundan sonraki süreçte anlatacağımız konularla ilgili ek özellikler de şu andaki uygulamanıza eklenecek.
+
+1250
+02:49:49,879 --> 02:49:54,879
+O yüzden şu andaki uygulamayı geliştirmeye devam ediyor olacağız.
+
+1251
+02:49:54,879 --> 02:49:59,879
+Dersde az bir süre bile olsa dersin dışında bunu da tamamlamanızı sizden bekliyor olacağım.
+
+1252
+02:49:59,879 --> 02:50:03,860
+Başka sorusu olan?
+
+1253
+02:50:03,860 --> 02:50:07,739
+Evet [öğrenci].
+
+1254
+02:50:10,219 --> 02:50:19,219
+Hocam ben biraz konu dışı olabilir ama kontekstin tam olarak ne olduğunu anlayamadığımda onu merak etmiştim.
+
+1255
+02:50:19,219 --> 02:50:24,219
+Bazı yerlerde activity'i de pas edebiliyoruz çünkü kullanılan fonksiyonlarda.
+
+1256
+02:50:24,219 --> 02:50:28,219
+Bazı yerlerde getContext diye bir fonksiyon çağırmamız gerekiyor.
+
+1257
+02:50:28,219 --> 02:50:31,219
+Tam olarak kontekst nesnesi ne oluyor?
+
+1258
+02:50:31,219 --> 02:50:34,219
+Şimdi şöyle 2 temel noktada bulunabiliyorsunuz.
+
+1259
+02:50:34,219 --> 02:50:37,219
+Bir tanesi activity, bir tanesi de uygulamanın kendisi.
+
+1260
+02:50:37,219 --> 02:50:46,219
+Siz activity'ye özel bir iş çıkarmak istiyorsanız yani activity'nin içerisinde kalmak istiyorsanız oradaki konteksti kullanıyorsunuz.
+
+1261
+02:50:46,219 --> 02:50:59,219
+Ama genel olarak uygulama kontekstinde kalmanız ve onunla ilgili yapılacak işleri Android işletim sistemine paslıyor olmanız doğru olanı.
+
+1262
+02:50:59,219 --> 02:51:01,219
+Bu da iyi sağlıyor bize.
+
+1263
+02:51:01,219 --> 02:51:17,219
+Sizin activity'nizin yapabileceği yeteneklerin ne olduğunu, işletim sisteminin neye müsaade edeceğini, hangi noktalara erişebileceğini, hangi activity için iş görmesi gerektiğini işletim sistemine siz kontekst üzerinden bildirmiş oluyorsunuz.
+
+1264
+02:51:17,219 --> 02:51:20,219
+Yani ben şu uygulama için bir talepte bulunuyorum.
+
+1265
+02:51:20,219 --> 02:51:27,219
+Ben bu activity için şu işlemin takip edilmesini bekliyorumu bu kontekst bilgisi üzerinden söylüyorsunuz.
+
+1266
+02:51:27,219 --> 02:51:54,739
+Yani işletim sistemine nerede olduğunuzu ve işletim sisteminde karar verirken hangi uygulamada ya da hangi activity'de bulunduğunu bilmesi gerektiği için sizin uygulamanızda bu application kontekstini mutlaka ya da activity kontekstini pas etmeniz gerekiyor işletim sistemindeki ilgili sınıfların metotlarına.
+
+1267
+02:51:54,739 --> 02:51:59,739
+Anladım yani bir nevi yazılımsal konumumuz gibi.
+
+1268
+02:51:59,739 --> 02:52:02,739
+Evet, kabaca öyle söyleyebiliriz hani.
+
+1269
+02:52:02,739 --> 02:52:04,739
+Anladım, teşekkür ederim.
+
+1270
+02:52:04,739 --> 02:52:22,739
+Çünkü eğer bu bilgiye sahip olmazsa işletim sistemi hangi activity için, hangi özelliği yapabileceğini, o andaki o activity'nin işte Android Manifest'lik intent filter mesela tanımlıyorsunuz, onun activity'ye mi ait olduğu, uygulamaya mı ait olduğu,
+
+1271
+02:52:22,739 --> 02:52:35,739
+uygulamanın kaç tane intent filtre sahip olduğu, o anda gelen activity'nin, talebinin ne olduğu, bunların hepsi hangi konteksten geldiği, o bilginin geri döndüğünde tekrar nereye döneceği bilgilerini kontekst üzerinden taşıyorsunuz.
+
+1272
+02:52:35,739 --> 02:52:49,379
+Başka sorusu olan, peki hepinize iyi bayramlar, iyi tatiller.
+
+1273
+02:52:49,379 --> 02:52:57,379
+Hem [öğrenci], hem de 19 Mayıs Gençlik Bayramınızı özellikle kutluyorum.
+
+1274
+02:52:57,379 --> 02:53:00,379
+Sağlıklı günlerde görüşmek üzere diyorum.
+
+1275
+02:53:00,379 --> 02:53:09,379
+Sorularınız olursa, yorumlarınız olursa ya da bir bugünkü gibisinden ilgili bildirmek istediğiniz bir şey olursa bana mail ile erişebilirsiniz.
+
+1276
+02:53:09,379 --> 02:53:11,379
+Kendinize çok iyi bakın.
+
+1277
+02:53:11,379 --> 02:53:13,379
+Görüşmek üzere arkadaşlar.
+
+1278
+02:53:13,379 --> 02:53:16,379
+Teşekkürler hocam, size iyi bakın.
+
+1279
+02:53:16,379 --> 02:53:18,379
+İyi bayramlar hocam, görüşmek üzere.

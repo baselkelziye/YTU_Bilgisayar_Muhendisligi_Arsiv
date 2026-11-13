@@ -1,0 +1,1391 @@
+1
+00:01:14,932 --> 00:01:16,412
+Sesim geliyor mu arkadaşlar?
+
+2
+00:01:17,412 --> 00:01:19,171
+Evet hocam.
+
+3
+00:01:19,171 --> 00:01:32,311
+Tamam o zaman bugünkü terse başlayabiliriz. İlk paperımız 10 numara. Zen and the Art of Virtualization.
+
+4
+00:01:33,772 --> 00:01:40,852
+Şimdi burada bir sanallaştırma ortamından bahsediliyor Zen.
+
+5
+00:01:41,939 --> 00:01:56,340
+Ve yazıldığı dönemde, ortaya çıktığı dönemde mevcut olan diğer sanallaştırma ortamlarıyla, Virtual Machine Monitor ile farkları ve benzerlikleri ortaya konuluyor.
+
+6
+00:01:56,719 --> 00:01:59,620
+Tabii ki daha çok avantajları üzerinden gidiliyor.
+
+7
+00:01:59,620 --> 00:02:06,620
+Bu paperda, başlangıçta, literatür taramasında...
+
+8
+00:02:07,475 --> 00:02:27,055
+Referans alınmış bir başka çalışma daha var. Denali ismiyle geçiyor. O çalışmaya göre farkları neler? Birkaç maddede bunu vurgulamışlar. Kim bunu anlatmak ister? Yine el kaldırarak gidiyoruz arkadaşlar.
+
+9
+00:02:42,996 --> 00:02:47,576
+Evet [öğrenci], söyle bakalım. Sen ilke kaldırdın.
+
+10
+00:02:51,027 --> 00:02:53,027
+Dinliyorum seni.
+
+11
+00:02:53,027 --> 00:02:55,027
+Evet hocam.
+
+12
+00:02:55,027 --> 00:02:59,027
+El kaldırdın, o yüzden ilk sen kaldırdın, sana söz verdim.
+
+13
+00:02:59,027 --> 00:03:01,027
+Tamam hocam.
+
+14
+00:03:11,539 --> 00:03:19,479
+ve XA Remote Control'ın virtual machinesi
+
+15
+00:03:19,479 --> 00:03:22,739
+Şerine, bir dakika.
+
+16
+00:03:22,739 --> 00:03:23,739
+Bir dakika.
+
+17
+00:03:23,739 --> 00:03:27,579
+Bu paperi için bir soru var.
+
+18
+00:03:27,579 --> 00:03:30,939
+Bir soru var.
+
+19
+00:03:30,939 --> 00:03:34,539
+Bir paperi bir soru var.
+
+20
+00:03:34,539 --> 00:03:38,539
+Bir diğer workin bir tanesi.
+
+21
+00:03:39,540 --> 00:03:41,040
+ve XA Remote Control,
+
+22
+00:03:38,656 --> 00:03:47,656
+And the paper clearly states what the differences are. I was asking about those differences.
+
+23
+00:03:48,435 --> 00:03:49,336
+Pardon canım.
+
+24
+00:03:50,216 --> 00:03:50,456
+Okey.
+
+25
+00:03:52,735 --> 00:03:58,115
+Visan, sıra sende. İkinci sıra, sen el kaldırmıştın. Dinliyorum.
+
+26
+00:04:00,256 --> 00:04:01,096
+Evet.
+
+27
+00:04:07,027 --> 00:04:09,867
+[öğrenci], o zaman sen konuş.
+
+28
+00:04:10,547 --> 00:04:25,507
+Tamamdır hocam, selamlar. Komoditeyi, işletim sistemi desteği verdiğinin not almışım hocam. Bu büyük ihtimalle farklardan biri. Bir de performanstan ve kullanışlılıktan taviz vermeden genelde bunu yaptığına çok değilmişlerdi. Bu ikisidir diye düşünüyorum.
+
+29
+00:04:26,727 --> 00:04:27,408
+Anladım.
+
+30
+00:04:27,987 --> 00:04:50,707
+Tam da paperın girişindeydi bu. Daha fazla aslında temel olarak dört tane farktan bahsediliyor. Performansa yönelik olarak fark var ama daha spesifik olarak performansdan neyin anlaşıldığı, hangi noktanın anlaşıldığı söyleniyor.
+
+31
+00:04:54,548 --> 00:04:57,187
+Dinliyorum [öğrenci]. Söyleyelim.
+
+32
+00:04:57,548 --> 00:05:15,628
+Bir de bir şey daha not almıştım. Dört madde deyince dikkatimi çekti. Çok anlam ifade etmediği için en başta onu söylemek istememiştim. Paravirtualization yüksek performansa değinilmişti. Kaynak dağıtımından bahsedilmişti yine. Üst katmanda çalışan işletim sisteminden gizlemeden bahsediliyor bu noktada.
+
+33
+00:05:16,307 --> 00:05:35,807
+Bu, daha çok uygulama çalıştırabilmek için işletim sisteminin destek vermesi gerekiyor. Yani daha çok uygulamanın desteklenmesi için işletim sisteminin destek vermesi gerekiyor. Bunu not almışım. Bir de uygulamaların zen altında çalışması yine çok kritik buna değinilmişti. Dört madde de bu şekildeydi.
+
+34
+00:05:36,531 --> 00:05:50,443
+Bunlar zen mimarisini ortaya atarken veya geliştirirken bunu geliştirenlerin nelere önem verdiği, hangi noktaların temel tasarım prensibi olarak...
+
+35
+00:05:50,867 --> 00:05:59,807
+Ele alındığıyla alakalı. Ama işte Denali'nin çalışmasını da hemen hemen neredeyse bu maddeler üzerinden giderek şey yapıyor.
+
+36
+00:06:00,548 --> 00:06:05,888
+Bunu şey yapabiliriz. [öğrenci] sen de bir şeyler söyleyeceğiz. Hadi sen de söyle.
+
+37
+00:06:06,548 --> 00:06:10,188
+Ondan sonra bir sonraki soruya geçeyim.
+
+38
+00:06:10,188 --> 00:06:34,188
+Ben nasıl direkt o bölümdeki kısmı okuyacaktım da. Mevcut EBR'ı hedeflenmez ve bu nedenle mimar özellikleri VMR'a yüzünden çıkarılabilir. İkinci olarak tek bir konuk işletim sistemi içinde uygulama çoğullamasını veya çoklu adres alanlarına destekleme sorununu ele almaz. Her sanal makine tek kullanıcılığı, korumasız bir işletim...
+
+39
+00:06:34,548 --> 00:06:52,548
+Ancak zemde aksine tek bir sanal makine binlerce değiştirilmiş kullanıcı seviyesindeki prosesi çoğalayabilir. Üçüncü olarak, deneli mimarası sanallaştırma katmanındaki bellek yönetiminde yaşanan eksikliklerden ötürü VMMM tüm paging işlemlerini diskten almaktadır.
+
+40
+00:06:53,548 --> 00:07:01,028
+Bu da bir performans sıkıntısı. Az önce [öğrenci]'in söylediği performans sıkıntısının temel noktası burası.
+
+41
+00:07:01,620 --> 00:07:14,860
+Peki, şimdi başka bir soruya geçiyoruz. Burada para virtualization'a özellikle önem verilmesi gerektiğinden bahsediliyor. Hiç baktınız mı para virtualization nedir?
+
+42
+00:07:17,360 --> 00:07:20,099
+What is para virtualization?
+
+43
+00:07:34,836 --> 00:07:36,076
+Merak etmediniz mi ya?
+
+44
+00:07:42,355 --> 00:07:45,436
+[öğrenci] galiba önce el kaldırdı.
+
+45
+00:07:46,495 --> 00:07:46,675
+Evet.
+
+46
+00:07:48,436 --> 00:07:58,776
+Hocam, virtualization olarak iki çeşit virtualization'dan bahsediliyor. Birisi full veya true virtualization, diğeri de para virtualization.
+
+47
+00:07:59,184 --> 00:08:18,924
+True Virtualization'da donanımı olduğu gibi sanal makinelere yansıtmak söz konusu. Para Virtualization'da ise donanımı farklılaştırarak daha küçük kaynaklar halinde sanal makinelere aktarıldığını anladım ben.
+
+48
+00:08:19,411 --> 00:08:26,871
+Peki bir örnekle bunu açıklayabilir misin? Yani doğru yolda gidiyorsun, açıklaman yanlış değil de bir örnekle bunu söyleyebilir misin acaba?
+
+49
+00:08:27,572 --> 00:08:36,451
+Yani işlemci veya bellek olarak tüm belleği sanal makinelere paylaştırmaktansa, çoğaltmaktansa, multiplexin yöntemiyle,
+
+50
+00:08:36,451 --> 00:08:44,491
+belli parçalara bölerek her virtual machine için, yani sanal makine için, o belleğin belli bir kısmı görünür hale getiriliyor.
+
+51
+00:08:46,995 --> 00:09:11,635
+Peki, diğer taraftan şöyle bir şey desem mesela. Bir giriş-çıkış cihazı var. Bu giriş-çıkış cihazını, donanımsal bütün özelliklerini yazılımla üst katmana yansıtıyorum. Üst katman aslında bir yazılımla muhatap olduğunun farkında değil. Onu bir fiziksel donanımmış gibi kullanıyor. O zaman bu senin az önce söylediğin şeye göre hangi kategoriye girer?
+
+52
+00:09:16,596 --> 00:09:17,836
+Full mü, para mı?
+
+53
+00:09:19,436 --> 00:09:20,175
+Para.
+
+54
+00:09:21,135 --> 00:09:43,675
+Bence full. Eğer işletim sisteminden gelen o cihaz için bir giriş çıkış isteğini alıp alt tarafta zaten VMM kontrolünde olan bir cihazın VMM kapsamındaki device driver'ına paslayabiliyorsam o zaman ne oluyor? Para virtualization oluyor.
+
+55
+00:09:45,139 --> 00:09:45,899
+Evet hocam.
+
+56
+00:09:46,279 --> 00:09:58,799
+Aslında sen bunu söyledin de farklı şekilde sorunca niye diğer türlü cevap verdin çok merak ettim. Senin sözünün terse çevrilmiş haline soru şeklinde sana sordum.
+
+57
+00:09:59,720 --> 00:10:00,500
+Evet hocam.
+
+58
+00:10:01,919 --> 00:10:03,279
+Anlaştık mı şimdi [öğrenci]?
+
+59
+00:10:03,599 --> 00:10:04,819
+Evet hocam anlaştık.
+
+60
+00:10:04,819 --> 00:10:09,819
+Yani yazılımla bir donanımı birebir replike ediyorsam...
+
+61
+00:10:10,548 --> 00:10:25,587
+Ve bu replikasyonu da işletim sistemine sunuyorsam, işletim sisteminin de bunun bir yazılım olduğunu anlamaması için her türlü tedbir alıyorsam o zaman bu bir full bir çözleşim. Ama tabii ki bunun maliyeti çok yüksek.
+
+62
+00:10:28,467 --> 00:10:51,647
+O donanıma gelen I.O. isteğini basit bir translation'dan geçirip zaten ben o donanımı kullanıyorum. Yani VMM veya VMM'in üzerinde çalıştığı Host Operating System'da onun Device Driver'ı var. O Device Driver'a map ediyorsam ve o yani request'ı translate edip o şekilde gönderiyorsam o zaman para visualization oluyor.
+
+63
+00:10:52,080 --> 00:11:06,060
+Bunun maliyeti daha düşük. Yani bir isteği, benzer bir isteği ve yine aynı kategoride farklı ama benzer özellikler taşıyan bir isteğe dönüştürmüş oluyor. İş daha kolay ilerliyor.
+
+64
+00:11:06,060 --> 00:11:16,060
+Peki, şimdi bu zenin...
+
+65
+00:11:17,587 --> 00:11:36,947
+Kullanımında önemli olan şeylerden bir tanesi de Application Binary Interface, ABI demişler. ABI'dan ne anlıyoruz? ABI'ın önemi ne? [öğrenci], soruyu sormadan el kaldırdın. Hadi cevapla bakalım.
+
+66
+00:11:40,211 --> 00:11:42,032
+Abi nedir? diye sordum.
+
+67
+00:11:42,471 --> 00:11:49,971
+Evet, abi nedir? diye sordum. Aynen öyle. Soruyu bilir. Yani sen sorudan önce el kaldırdın. Müthişti, evet.
+
+68
+00:11:50,491 --> 00:11:54,211
+Yok yani, abiden bahsettiğinde hemen yani...
+
+69
+00:11:54,772 --> 00:11:59,231
+Abi değil işte. Abi. A-B-I. Application by Nami.
+
+70
+00:12:00,403 --> 00:12:04,384
+Hocam, isterseniz sorayım. Ben yine elikaldım.
+
+71
+00:12:04,384 --> 00:12:10,664
+Başka arkadaşlara fırsat edelim. Tamam, süper. Evet, diğer arkadaşlar.
+
+72
+00:12:11,844 --> 00:12:14,884
+Cevabı biliyorum hocam. İsterseniz.
+
+73
+00:12:15,564 --> 00:12:18,484
+Tamam, biliyorsan söyle bakalım. Peki, nedir?
+
+74
+00:12:18,724 --> 00:12:27,344
+Hocam, yani I will talk in English. To make it more clear, I will try to explain in my way.
+
+75
+00:12:27,892 --> 00:12:35,812
+When we compile a code we get the DLLs and the source code that is being compiled we get DLL.
+
+76
+00:12:36,572 --> 00:12:39,932
+And that DLL needs to be recognized by the XAN system.
+
+77
+00:12:40,772 --> 00:12:46,832
+And they are saying that the DLL of the compiled applications needs not to be changed.
+
+78
+00:12:47,347 --> 00:12:54,347
+Her
+
+79
+00:12:57,748 --> 00:13:12,248
+Bu, [öğrenci], it is not just limited to DLL's dynamic load libraries. It is binary compatibility, it means.
+
+80
+00:13:12,248 --> 00:13:19,508
+So, you have the source code, you compile it and you get the binary executable.
+
+81
+00:13:19,508 --> 00:13:20,148
+Yeah.
+
+82
+00:13:20,148 --> 00:13:23,888
+Application binary interface.
+
+83
+00:13:24,368 --> 00:13:31,368
+Yani, bu konuda bir kodak var,
+
+84
+00:13:31,368 --> 00:13:36,368
+ve bu konuda bir kodak var.
+
+85
+00:13:36,368 --> 00:13:40,368
+Bu konuda bir kodak var.
+
+86
+00:13:40,368 --> 00:13:45,368
+Bu konuda ABI'nin bir kodak var.
+
+87
+00:13:45,460 --> 00:13:52,980
+So, the author's main concern, one of the main concerns was to maintain this compatibility
+
+88
+00:13:52,980 --> 00:14:00,900
+because otherwise you have to recompile or retranslate the executable.
+
+89
+00:14:00,900 --> 00:14:08,680
+You have to recompile the source code to obtain another executable or you have to translate the executable.
+
+90
+00:14:13,460 --> 00:14:15,920
+concerns, primary goals.
+
+91
+00:14:18,279 --> 00:14:18,639
+But
+
+92
+00:14:18,639 --> 00:14:22,040
+in the paper there is also
+
+93
+00:14:22,040 --> 00:14:25,340
+a mention of the cost of porting
+
+94
+00:14:25,340 --> 00:14:27,500
+of an operating system to ZEN.
+
+95
+00:14:28,300 --> 00:14:29,660
+Bir işletim sisteminin
+
+96
+00:14:29,660 --> 00:14:32,100
+ZEN ortamına aktarılmasının
+
+97
+00:14:32,100 --> 00:14:33,600
+maliyetinden bahsediliyor.
+
+98
+00:14:34,139 --> 00:14:35,420
+Bundan ne kastediyorlar?
+
+99
+00:14:43,956 --> 00:14:54,456
+Niye böylesınız arkadaşlar? Hiç el kalkmıyor. Sayınız da bayağı bir azalmış. [öğrenci], evet, dinliyorum.
+
+100
+00:14:54,456 --> 00:15:10,456
+In the cost of Portugal, one off to Xen. To better understand this section, actually, we need to talk about the intention of this paper. They try to make a Xen as a...
+
+101
+00:15:10,740 --> 00:15:17,439
+İntrofayar OS, bu da kanıda 100 OSSYS.
+
+102
+00:15:17,439 --> 00:15:21,099
+Ve bilgisayar, bu da farklı OSSYS,
+
+103
+00:15:21,099 --> 00:15:27,339
+bu da kanıda Windows XP, Linux ve NetBCD.
+
+104
+00:15:27,339 --> 00:15:32,839
+Bu da, bu da kanıda da kanıda da kanıda da kanıda da kanıda.
+
+105
+00:15:32,839 --> 00:15:35,039
+Bu da, bu da kanıda da kanıda.
+
+106
+00:15:35,248 --> 00:15:43,228
+Bu bir şey, bir şey de
+
+107
+00:15:43,228 --> 00:15:45,128
+ve yönetim. Çünkü farklı sistemlerle
+
+108
+00:15:45,128 --> 00:15:48,308
+ve farklı sistemlerle
+
+109
+00:15:48,308 --> 00:15:50,248
+bir şey, bir şey de
+
+110
+00:15:50,248 --> 00:15:53,248
+bir şey, bir şey.
+
+111
+00:15:53,248 --> 00:15:56,248
+[öğrenci].
+
+112
+00:15:56,248 --> 00:15:58,248
+Merhaba hocam.
+
+113
+00:15:58,248 --> 00:15:59,248
+Merhaba.
+
+114
+00:15:59,764 --> 00:16:11,764
+Bu, Hüjo?
+
+115
+00:16:11,764 --> 00:16:19,764
+No, I am talking about the cost of porting an operating system to Zen.
+
+116
+00:16:19,764 --> 00:16:23,764
+About cause of design.
+
+117
+00:16:25,524 --> 00:16:31,163
+Bu konuda da bir konuda,
+
+118
+00:16:31,163 --> 00:16:35,724
+Windows XP, Linux, NetPSP,
+
+119
+00:16:35,724 --> 00:16:36,724
+ZAM'ı ne?
+
+120
+00:16:36,724 --> 00:16:41,724
+Bu konuda?
+
+121
+00:16:41,724 --> 00:16:43,323
+Sorry?
+
+122
+00:16:43,323 --> 00:16:45,323
+Konuda?
+
+123
+00:16:45,323 --> 00:16:48,748
+Bu konuda?
+
+124
+00:16:49,875 --> 00:17:00,596
+Here, the cost means what you have to do in order to be able to run the operating system under Xen.
+
+125
+00:17:01,596 --> 00:17:13,016
+For example, providing virtual device drivers or modifying how memory management is done in the operating system.
+
+126
+00:17:13,016 --> 00:17:14,235
+Okay?
+
+127
+00:17:14,875 --> 00:17:15,776
+Okay, good job.
+
+128
+00:17:17,971 --> 00:17:29,692
+Evet, bu paper ile alakalıydı. Şimdi 11 numarayı geçebiliriz arkadaşlar. 11 numara neymiş?
+
+129
+00:17:31,692 --> 00:17:40,152
+Disco running commodity operating systems on scalable multiprocessors.
+
+130
+00:17:42,804 --> 00:17:45,423
+Commodity Operating System nedir arkadaşlar?
+
+131
+00:17:53,364 --> 00:17:54,324
+Evet [öğrenci].
+
+132
+00:17:55,224 --> 00:18:00,564
+Hocam, ticari olarak kabul görmüş güvenilir işletim sistemleri olarak geçiyordu araştırdığımda.
+
+133
+00:18:00,980 --> 00:18:24,519
+Binary formda bize sunulan, install edilebilir formda bize sunulan değil mi? Hani gidip de satın alabiliyorsun kutusunda veya internetten download edebiliyorsun. Kendine herhangi bir şey yapmak zorunda değilsin. Okey, commodity'den kastettiğimiz bu. Cevabın doğru. Peki, bu paper'ın amacı ne?
+
+134
+00:18:26,259 --> 00:18:36,659
+Yani bu Commodity Operating Systemları Scalable Multi-Processor'da run etmek neyi sağlayacak? Yani neyi incelemişler burada?
+
+135
+00:18:40,051 --> 00:18:45,511
+[öğrenci], önce sen kaldırdın elini galiba. Dinliyorum. Yes, [öğrenci].
+
+136
+00:18:48,391 --> 00:18:58,531
+This paper presents an alternative approach for constructing the system software for these large computers.
+
+137
+00:18:58,531 --> 00:19:05,611
+Rather than making extensive change the existing operating system.
+
+138
+00:19:07,092 --> 00:19:25,292
+So, can you summarize in just one sentence your answer?
+
+139
+00:19:25,292 --> 00:19:31,332
+We can, I mean, we can do, I mean, the layer.
+
+140
+00:19:31,796 --> 00:19:39,076
+...akt like virtual machine monitor in the multiple copies of community operating system.
+
+141
+00:19:40,615 --> 00:19:41,256
+Okay.
+
+142
+00:19:43,355 --> 00:19:46,655
+Somebody else to answer this question?
+
+143
+00:19:47,576 --> 00:19:48,056
+[öğrenci]?
+
+144
+00:19:50,163 --> 00:20:13,003
+Merhaba hocam. Bu makalede ölçeklenebilir bilgisayarların donanım olarak yazılımdan daha ileride gittiğinden bahsediliyor. Yani yazılımların daha geç geliştirildiğinden, bu donanımlara uygun yazılımların daha geç geliştirildiğinden bahsediyor. Bu sebeplerden dolayı bu donanımlardan, bu yeniliklerden yeterince faydalanmıyor.
+
+145
+00:20:13,556 --> 00:20:26,596
+Bu gecikmeyi önlemek adına bu donanımlarda çalışacak bir yazılım, disco yani sanal makine şeklinde çalıştırılabilecek bir disco yazılımı geliştiriliyor.
+
+146
+00:20:26,596 --> 00:20:38,636
+Bunun üzerinde de iris olması gerekiyor. Bir işletim sistemi var. İrix işletim sistemi, komoditi işletim sistemi olarak sanal makinelerde kullanılıyor.
+
+147
+00:20:39,155 --> 00:21:05,455
+Amaç burada güncel yazılımların bu donanımlar üzerine çalıştırılabilmesi. Ama direkt çalıştırılabilmek için modifikasyonlar gerekiyor. Bu donanıma uyumlu hale getirilmesi gerekiyor bu güncel yazılımların. Buna gerek kalmadan sanal makine üzerinden direkt olarak değiştirilmeden, modifiye edilmeden çalıştırılması amacıyla Disco İşletim Sistemi, yani Disco Sanal Makine Monitörü geliştirilmiş.
+
+148
+00:21:05,971 --> 00:21:20,551
+Tamam. Ama şimdi bak, [öğrenci], sen de söyledin, az önce [öğrenci] da söyledi. Duymak istediğim, yani paperda da adreslenen ve benim duymak istediğim kritik bir keyword var. Onu ikiniz de söylemediniz.
+
+149
+00:21:22,291 --> 00:21:23,852
+Scalable multiprocessor.
+
+150
+00:21:25,587 --> 00:21:42,347
+Onunla ilişkili bir şey. Bu key word'u söylemek isteyen var mı? [öğrenci], I want to hear this specific key word. If you want to answer that, then okay.
+
+151
+00:21:44,467 --> 00:21:45,947
+Merhaba hocam, Kola gelsin.
+
+152
+00:21:45,947 --> 00:21:46,887
+Merhaba.
+
+153
+00:21:47,667 --> 00:21:59,448
+Hocam, I understand of this article, the authors went to design hardware, hardware, user pilot to run application and operating system.
+
+154
+00:21:59,448 --> 00:22:13,268
+Just a second, you didn't listen to me. I am asking for a specific keyword, which is one of the main points of this article, of this paper.
+
+155
+00:22:14,132 --> 00:22:21,412
+I do not want you, not just you, all of you, not to summarize the paper.
+
+156
+00:22:21,652 --> 00:22:24,052
+I want to hear this keyword.
+
+157
+00:22:24,812 --> 00:22:24,912
+Okay?
+
+158
+00:22:26,052 --> 00:22:30,592
+This is an alternative to something else.
+
+159
+00:22:30,932 --> 00:22:31,292
+[öğrenci].
+
+160
+00:22:34,163 --> 00:22:41,463
+Büyük çaplı ortak bellek kullanımı gerektiren işlemcilerin yönetimini kolaylaştırmak için de tasarlanmış.
+
+161
+00:22:42,104 --> 00:22:48,723
+Ama Keyword'ı istiyorum [öğrenci]. Bak o kadar güzel etrafında dolaşıyorsunuz ki Keyword. [öğrenci].
+
+162
+00:22:50,304 --> 00:22:54,203
+Non-Uniform Memory Access özelliği kazandırmak için.
+
+163
+00:22:54,867 --> 00:23:05,648
+Ben mi yanlış paper açtım? Yanlış paperdan geliyorum. İnanılır gibi değil. Yani biri daha vardı. [öğrenci] sen mi el kaldırmıştın?
+
+164
+00:23:05,908 --> 00:23:13,367
+Evet hocam. Çok güvenmediğim gibi demiştim. İki keyword hocam. Sadece onları söyleyeceğim. Scalability ve Flash geçiyor.
+
+165
+00:23:14,128 --> 00:23:19,388
+Ama bir de Distributed Operating System geçmiyor mu bir yerlerde? Distributed yapı geçmiyor mu?
+
+166
+00:23:20,980 --> 00:23:32,899
+İçletim sistemlerini bu Scalable Multi-Processor Architecture üzerinde distributed hale getirmek yerine
+
+167
+00:23:33,263 --> 00:23:40,343
+Bunun için işletim sistemlerinde çok ciddi değişiklik yapılması lazım. Değil mi mevcut halleriyle?
+
+168
+00:23:40,343 --> 00:23:49,163
+Halbuki oturmuş işletim sistemleri var. Ancak bunlar single processor veya bu kadar büyük scalable ortamlar için değil.
+
+169
+00:23:49,783 --> 00:23:55,043
+Onun yerine buradaki yazarlar neyi öneriyorlar?
+
+170
+00:23:55,311 --> 00:24:18,192
+Diyorlar ki, bakın sizin önünüzde de paperlar açıktır diye tahmin ediyorum. Figür 1, Architecture of Disco. Alt tarafta neler var arkadaşlar? Processing elementler var. PEP, bir sürü processing element var. Bunlar bir interconnect ile birbirine bağlı ve doğal olarak NUMA mimarisi.
+
+171
+00:24:19,155 --> 00:24:42,835
+Her processing elementin kendi lokal memorisi var ama diğer memorilere de erişebiliyor. Fakat o kadar şey değil. Üzerinde ne yapmışlar? Bir sanallaştırma katma, yani disco dedikleri ve bakın üst tarafta da kutu kutu OS, OS, OS, SMP OS, Symmetric Multiprocessing OS veya TIN OS.
+
+172
+00:24:47,155 --> 00:25:02,535
+Ne diyelim size? İki işlemci, dört işlemci. Çok fazla değil. Yani simetrik multiprocessing'te böyle onlu rakamları telaffuz etmiyoruz veya yüzlü rakamları telaffuz etmiyoruz.
+
+173
+00:25:02,535 --> 00:25:07,075
+Halbuki burada şey yapıyoruz. Ne derler hemen?
+
+174
+00:25:08,307 --> 00:25:25,167
+Daha fazla processing elementi olan, çok daha rahat ölçeklenebilir bir donanım, scalable multiprocessor mimarisinin hızlı bir şekilde utilize edilmesini sağlamak için. Anlaştık mı?
+
+175
+00:25:29,076 --> 00:25:35,576
+Ve bunun için de virtual machine monitörlere referans veriyor. Bu zaten vardı diyor.
+
+176
+00:25:43,188 --> 00:26:10,628
+Peki, Virtual Machine Monitor kavramı, yani Disco'da bunlardan bir tanesi. Bu, evet bir taraftan hızlıca şeyi, bu Scalable Multi-Processor ortamı kullanmamızı, çabucak kullanmamızı sağlayacak, daha kolay kullanmamızı sağlayacak. Ama diğer taraftan da bazı sıkıntıları da olacak, çözmemiz gereken problemler de olacak.
+
+177
+00:26:11,155 --> 00:26:18,316
+Bu problemler nelerdir? Başlık şeklinde istiyorum.
+
+178
+00:26:22,259 --> 00:26:23,880
+Kim cevap veriyor ki?
+
+179
+00:26:42,163 --> 00:26:42,824
+Evet [öğrenci].
+
+180
+00:26:43,304 --> 00:26:53,284
+Hocam, doğrudan cevap olmayabilir belki ama. Disco sayesinde ortak protokoller üzerinden ilişim sağlanarak sorunlar çözülmüş genel itibariyle.
+
+181
+00:26:54,864 --> 00:27:00,263
+Sorun gördüğüm kadarıyla birden fazla protokol olması ve bunun çeşitli dinlen kaynaklanıyor.
+
+182
+00:27:03,263 --> 00:27:06,344
+Peki, başka cevap vermek isteyen var mı?
+
+183
+00:27:12,019 --> 00:27:17,019
+Evet, Hüçer. Hüçer, [öğrenci]. Hüçer, [öğrenci]. Hüçer, [öğrenci]. Sorry.
+
+184
+00:27:17,019 --> 00:27:19,692
+Evet. [öğrenci], [öğrenci]. No problem [öğrenci].
+
+185
+00:27:19,763 --> 00:27:45,995
+Bu, birçok birç
+
+186
+00:28:08,948 --> 00:28:13,307
+Ben, aslında, bu sorunlarla ilgili bir sorun var.
+
+187
+00:28:13,307 --> 00:28:17,307
+Överhead, resursmanagement ve communication,
+
+188
+00:28:17,307 --> 00:28:19,708
+ve data sharing.
+
+189
+00:28:19,708 --> 00:28:21,708
+Evet.
+
+190
+00:28:21,708 --> 00:28:25,988
+Överhead ve virtualizasyon değil mi?
+
+191
+00:28:25,988 --> 00:28:28,708
+Ve resursmanagement...
+
+192
+00:28:31,708 --> 00:28:47,412
+Ne yapıyoruz?
+
+193
+00:28:58,099 --> 00:29:00,099
+Evet, [öğrenci].
+
+194
+00:29:00,099 --> 00:29:12,099
+We already know that different operating systems have different resources that need to be recognized by the DISCO.
+
+195
+00:29:12,099 --> 00:29:22,099
+So in order to know which resource management needs to handle, the DISCO will need to handle those necessities.
+
+196
+00:29:22,963 --> 00:29:28,003
+Bu, bu durumlar, monitörlerle anlatmaya çalışan birleştirme işlemiyorsan,
+
+197
+00:29:28,003 --> 00:29:31,163
+without the knowledge of the operating system.
+
+198
+00:29:33,203 --> 00:29:40,203
+I understand you, [öğrenci], but could you please give some more specific answer?
+
+199
+00:29:45,715 --> 00:30:03,596
+Bu bir örnek olarak, bu örnek olarak, bu örnek olarak, bu örnek olarak, bu örnek olarak, bu örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir örnek olarak, bir ör
+
+200
+00:30:07,667 --> 00:30:13,548
+Maybe I can get an example outside the paper because now I forgot the examples.
+
+201
+00:30:13,548 --> 00:30:22,827
+If your example is the same, represents the same as given in the paper, then I will accept it, no problem.
+
+202
+00:30:23,488 --> 00:30:26,927
+Okay, no, it's not the same. Thank you.
+
+203
+00:30:30,836 --> 00:30:34,816
+Var mı arkadaşlar başka cevap vermek isteyecek?
+
+204
+00:30:51,476 --> 00:30:52,156
+Evet [öğrenci].
+
+205
+00:30:53,336 --> 00:30:57,216
+Hocam, kaynak yönetimi için CPU diyebilir miyiz?
+
+206
+00:30:59,796 --> 00:31:07,355
+Şimdi şöyle, paperda anlatılmak istenen şey şu, ister CPU'de, ister memori'de, ister IODE.
+
+207
+00:31:08,355 --> 00:31:15,816
+Ancak Virtual Machine Monitor ilgili çalıştırdığı işletim sisteminin ne yaptığını bilmiyor.
+
+208
+00:31:16,596 --> 00:31:42,936
+Instructionlar geliyor. O Instructionlar ya doğrudan çalıştırılıyor ya da sanallaştırmaya bağlı olarak değiştirilerek çalıştırılıyor. Ancak sonrasında bir bakıyorsun ki arka arkaya çalıştırılan Instructionlar üst taraftaki işletim sistemindeki bir busy loop'a dengü düşüyor. Yani aslında o anda işletim sisteminin yapacağı hiçbir şey yok. Bir idle busy wait run etmekte.
+
+209
+00:31:43,412 --> 00:31:57,192
+Ve sen Virtual Machine Monitor olarak bunu gerçekleştirmek adına kaynak tüketmektesin. Bunu yapmayabilirdim. Çünkü zaten yukarıda işletim sistemi o anda boşa vakit geçiriyor. Çünkü başka yapacağı hiçbir şey yok.
+
+210
+00:31:57,556 --> 00:32:24,556
+Virtual Machine Monitor bunun farkına varmadığı zaman, bunun farkına varmasını sağlayacak bir özellik olmadığı zaman, para virtualization'ın devreye girme noktalarından biri de bu, bunu fark edebilmek ve ona göre davranmak. O zaman sen alt taraftaki işlemci kaynağını da boşa harç atmış oluyorsun. Virtual Machine Monitor de boşa çalışmış oluyor. Resource Management'tan yazarların kastettiği şey bu.
+
+211
+00:32:29,076 --> 00:32:36,175
+Benim sizden beklediğim şey buydu. Cevap bu şekildeydi.
+
+212
+00:32:47,251 --> 00:32:54,851
+Peki şimdi başka bir şey sorayım. Bu bir numaralı şekilde NUMA architecture'ından bahsediliyor.
+
+213
+00:32:56,711 --> 00:33:08,411
+Peki, Disco Memory Management'ta NUMA mı yapıyor yoksa nasıl bir yaklaşım yapıyor?
+
+214
+00:33:10,711 --> 00:33:12,211
+Evet [öğrenci].
+
+215
+00:33:13,715 --> 00:33:19,836
+İlham verenlerle alakası, NUMA.
+
+216
+00:33:33,395 --> 00:33:43,675
+Peki, bu durumda aslında denediği şey ne? Özellikle yaklaşımında önem verdiği nokta ne?
+
+217
+00:33:46,395 --> 00:33:47,495
+Yes, we are.
+
+218
+00:33:48,531 --> 00:34:10,811
+Hujam, Disco used a combination of innovative emulation of the DMA engine and the standard distributed file system protocols to support a global buffer catch that with the transparency shared across all virtual machines.
+
+219
+00:34:13,076 --> 00:34:28,336
+They showed how the approach provided a simple solution to the scalability, reliability and normal management problems otherwise faced by the system software of larger scale machines.
+
+220
+00:34:30,476 --> 00:34:31,436
+Okay.
+
+221
+00:34:33,596 --> 00:34:37,804
+You talked about the general...
+
+222
+00:34:38,195 --> 00:34:45,195
+DİSKO'ya bakma.
+
+223
+00:34:45,195 --> 00:34:50,195
+Ama bu sorunlar çok iyi soru.
+
+224
+00:34:50,195 --> 00:35:00,195
+Maksim [öğrenci]'un da DİSKO'ya bakma.
+
+225
+00:35:28,019 --> 00:35:30,019
+That was the question.
+
+226
+00:35:44,244 --> 00:35:47,403
+Arkadaşlar, bir sonraki paperımıza geçelim diyorum.
+
+227
+00:36:03,092 --> 00:36:16,092
+Virtualizing I.O. Devices on VMware Workstations Hosted Virtual Machine Monitor. Tarih ne? 2001. Bundan 20 sene öncesi.
+
+228
+00:36:30,612 --> 00:36:32,292
+Sanallaştırılması.
+
+229
+00:36:44,563 --> 00:36:50,104
+Evet, bunu nasıl yapıyor?
+
+230
+00:36:54,164 --> 00:36:55,664
+Var mı cevap verecek olan?
+
+231
+00:37:35,507 --> 00:37:39,007
+[öğrenci]. Merhaba.
+
+232
+00:37:41,007 --> 00:37:45,127
+Yüklü işletim sistemi değiştirmek yerine kullanıcı düzeyinde bir V mi?
+
+233
+00:37:46,907 --> 00:37:49,047
+Sesin çok boğuk geliyor bir şekilde.
+
+234
+00:37:49,627 --> 00:37:50,987
+Biraz açayım hocam, az alabilir.
+
+235
+00:37:51,728 --> 00:37:52,127
+Lütfen.
+
+236
+00:37:52,547 --> 00:37:53,028
+Şu an iyi mi?
+
+237
+00:37:53,608 --> 00:37:54,367
+Şu an daha iyi.
+
+238
+00:37:54,827 --> 00:37:55,087
+Tamam.
+
+239
+00:37:56,587 --> 00:38:02,387
+Yüklü işletim sistemini değiştirmek yerine kullanıcı düzeyinde V mi yap var, onu çalıştırıyor.
+
+240
+00:38:02,784 --> 00:38:13,204
+Bu işte doğrudan yüksek performanslı JFO sanallaştırma yapıyor. İşte bu şekilde çalışıyoruz. Yani kısaca.
+
+241
+00:38:14,364 --> 00:38:16,423
+Biraz daha açabilir misin peki kısayı?
+
+242
+00:38:16,423 --> 00:38:17,124
+Biraz daha.
+
+243
+00:38:20,043 --> 00:38:20,444
+Şimdi.
+
+244
+00:38:23,364 --> 00:38:24,564
+Ne diyebilirim başta.
+
+245
+00:38:25,463 --> 00:38:27,604
+Hocam işte kısaca böyle verin mi?
+
+246
+00:38:33,907 --> 00:38:41,488
+Aslında hocam bu çalışma şey normal, VMware'ın kendi dokümanı böyle manueli gibi bir şey.
+
+247
+00:38:43,108 --> 00:38:46,947
+Hani kendi çalışma sistemi, klasik sanal makine mantığını anlatıyor.
+
+248
+00:38:48,568 --> 00:38:57,488
+İşte onu da bir uygulama yoluyla yaptığını normal bir işletim sistemi yerine herhangi bir uygulamayı bilgisayarımıza açar gibi çalıştıkabiliyoruz diyor.
+
+249
+00:38:58,927 --> 00:39:00,927
+Hani en özet halini bu şekilde söyleyebilirim şu an.
+
+250
+00:39:02,003 --> 00:39:27,343
+Anladım. Şimdi bir VM monitör yükleniyor değil mi? Virtual Machine Monitor yükleniyor. Workstation'ın kendisi. Bu işlemciyi sanallaştırmaya yarıyor. Yani işlemciyi farklı guest operating sistemler arasında bölümlendirmeye yarıyor.
+
+251
+00:39:28,275 --> 00:39:52,655
+Ama diğer taraftan da bir uygulama sunuyor bize. Bu uygulama Host Operating System içerisine yüklenmiş ekstra device driverların virtual machineler tarafından kullanılabilmesini sağlıyor.
+
+252
+00:39:53,396 --> 00:40:05,176
+Yani bir taraftan CPU tarafında virtualization varken, diğer tarafta IO tarafında böyle bir para virtualization var gibi bir şey var. İkisi bir arada sanki.
+
+253
+00:40:09,235 --> 00:40:12,335
+Aradaki farkı şey yapabiliyor muyuz?
+
+254
+00:40:15,827 --> 00:40:24,867
+İki yaklaşım bir arara. Mesela I.O. cihazlarını sanallaştırmak ya buradaki esas paper'ın konusu.
+
+255
+00:40:24,867 --> 00:40:40,867
+Şunu yapıyorlar. Mevcut donanımın sanal bir karşılığını yazılımla işletim sistemine sunmak yerine...
+
+256
+00:40:43,059 --> 00:41:07,239
+Kendilerinin daha rahat destekleyeceği bir device driver'ını işletim sistemine yükletiyorlar. Böylece bu device driver'ı doğrudan şu iki numaralı şekilde görüldüğü üzere host operating systemdaki driver'ları kullanabilir hale geliyor.
+
+257
+00:41:08,788 --> 00:41:14,907
+Ve daha rahatlıyor ortalık. Önemli bir şey bu.
+
+258
+00:41:27,059 --> 00:41:32,039
+Sanki kendi kendime konuşuyorum gibi geliyor şu anda ama emin olamadım. Kimseden bir yorum gelmiyor.
+
+259
+00:41:38,356 --> 00:41:45,256
+Siz bunları okudunuz değil mi? Şey yaptınız. Bakın dört numaralı bir şekle bakarsanız.
+
+260
+00:41:51,059 --> 00:41:53,059
+Dört numaralı şekilde
+
+261
+00:42:00,083 --> 00:42:09,483
+Bir network paketinin yol gönderilmesi ve bir network paketinin alınmasında izlenen yol gösterilmiş.
+
+262
+00:42:11,563 --> 00:42:21,483
+Burada VM Driver ve VM App aslında iki numaralı şekilde gösterilmiş olan...
+
+263
+00:42:22,835 --> 00:42:35,135
+VMAPP ve VM Driver. VMAPP ve VM Driver ne tarafta? Host Operating System'da. Biz buna Helper Application diyoruz.
+
+264
+00:42:35,699 --> 00:42:58,419
+Sanallaştırmaya yardımcı olsun diye. Driverlarda Host Operating System'ın içerisinde bu application bu driver'a daha rahat, daha kolay onun anlayacağı dille erişiyor. Ama dikkat edin, hem VMAPP, hem VM Driver, hem de VM Monitor yeşil ile işaretlenmiş. Çünkü bunlar birbirleriyle paslaşabiliyorlar.
+
+265
+00:43:00,884 --> 00:43:18,264
+Dört numaralı şekle gidecek olursak, Guest Operating System, Intel Mimarisi'nden bahsediyoruz. İşte Intel Mimarisi'nin en temel şeylerinden biri, Out Instruction'a, IO portlarına In-Out Instruction'larıyla erişiyor.
+
+266
+00:43:20,340 --> 00:43:46,539
+IOPORT'una OUT instruction ile eriştiğinde Virtual Machine Monitor'a yakalanıyor. Çünkü niye? OUT, privilege bir instruction. Virtual Machine Monitor bunu VM Driver'a paslıyor. Oradan VM Application bunu alıp ilgili Driver'a yönlendiriyor.
+
+267
+00:43:48,659 --> 00:43:59,699
+İlgili driver da denk düşen, işte burada Ethernet olduğunu varsayıyoruz. O Ethernet kartında bu out instruction'ı gerçekleştiriliyor.
+
+268
+00:44:01,019 --> 00:44:15,199
+Tam tersi Ethernet hardware'inden interrupt geliyor. Host tarafında Ethernet driver'ı devreye giriyor. Bu Ethernet driver'ı VMNet driver'ı tetikliyor.
+
+269
+00:44:16,211 --> 00:44:36,772
+VMNet Driver'ı VMAPP'yi tetikliyor. VMAPP gerekli işleri, bufferdan memoriye bunun alınması, şey yapılması bunu gerçekleştiriyor. Oradan VMM'e paslıyor. VMM bu sefer Guest Operating System'da bir interrupt oluşturuyor.
+
+270
+00:44:37,684 --> 00:44:47,344
+Guest Operating System da bunun sanki bir in veya out instruktionı sonrasında oluşmuş bir interrupt olduğunu zannediyor.
+
+271
+00:44:51,668 --> 00:45:07,768
+Sonrasında işte yine Gas Operating System bir sonraki ini veya out yapıyor. Aynı yöntemle ilerleniyor. Virtual Machine Monitor'a gidiliyor. Virtual Machine Monitor VM Driver'a gidiyor. VM Driver VM AFP'ye gidiyor.
+
+272
+00:45:15,699 --> 00:45:34,900
+I.O. cihazlarıyla alakalı işlemlerin gerçekleştirilmesi için host tarafında bir driver var. Ama bu driver aynı zamanda host tarafında çalışan bir uygulamayla birlikte bu işi yapıyor.
+
+273
+00:45:35,679 --> 00:45:39,139
+I.O. aslında host tarafında gerçekleştiriliyor.
+
+274
+00:45:40,755 --> 00:45:47,576
+Sonucu VMM üzerinden, Virtual Machine Monitor üzerinden Gas Operating Sistema yansıtılıyor.
+
+275
+00:45:48,195 --> 00:45:54,675
+Veya tam tersi Gas Operating Sistema alınan şeyler Host Operating Sistema yansıtılıyor.
+
+276
+00:45:55,496 --> 00:46:04,235
+Buradaki şey buydu. Sonrasında da bakın oluşan gecikme.
+
+277
+00:46:04,788 --> 00:46:16,788
+5 numaralı şekle bakarsanız, o dönem için 2001'den bahsediyoruz. 733 MHz'lik bir işlemcide...
+
+278
+00:46:21,748 --> 00:46:45,748
+Mikroseconds spent along the path in the host and virtual machine monitor worlds processing and out instruction issued by the guest operating system to a virtual AMD lens network interface card that initiates a physical network packet transmission on a 733 MHz CPU machine.
+
+279
+00:46:49,748 --> 00:46:53,516
+Out'un başladığı andan...
+
+280
+00:46:54,900 --> 00:47:18,480
+Tekrar sonlanmasına kadar neymiş? 31.63 mikrosaniyelik bir gecikme oluyor. Yani normalde alt instrakşını bunlar çok çok daha hızlı. Ama bakın 4.45 mikrosaniye kontekst switch'ten gidiyor. VM application'ının gerekli şeyleri yapması 1.23.
+
+281
+00:47:19,119 --> 00:47:39,199
+VMNet Driver'ı 17.55, sonra geri dönüşte VMApplication'ın diğer işleri yapması 2.97. Yani şeyin devreye girmesi oldukça kısa. Mikrosaniyenin, bir mikrosaniyenin altında 0.57, topladığımızda aslında bir mikrosaniye.
+
+282
+00:47:40,099 --> 00:47:46,119
+Out'tan dolayı bir çümleşine girilmesi, monitöre girilmesi ve sonra geri dönülmesi.
+
+283
+00:47:47,219 --> 00:47:49,643
+Burada da bununla alakalı...
+
+284
+00:47:53,811 --> 00:48:06,091
+Alt katarı toplam zaman, yüzde kaçı nerede gidiyor, nasıl dağılıyor falan onları göstermişler.
+
+285
+00:48:11,507 --> 00:48:21,007
+Farklı boyutta paketler için hangi hızlara erişilebiliyor, ne yapılabiliyor, ne şekilde.
+
+286
+00:48:21,887 --> 00:48:31,807
+Trueput vs. Data Size and Transmiting. Native olanla C olan arasındaki fark.
+
+287
+00:48:43,284 --> 00:48:46,003
+Burada sadece ben konuştum neredeyse. İlginç.
+
+288
+00:48:53,268 --> 00:48:57,387
+Sonraki paperı söylemeye korkuyorum. Burada durum ne olacak diye merak ediyorum.
+
+289
+00:48:57,387 --> 00:49:09,327
+Evet, Virtual Machine ve Linux konteynerları arasındaki performans karşılaştırması.
+
+290
+00:49:14,675 --> 00:49:19,536
+Oradasınız değil mi arkadaşlar? Dinliyorsunuz mu?
+
+291
+00:49:20,415 --> 00:49:30,735
+Evet. Peki. Bu paperın kontribüüsünleri neler?
+
+292
+00:49:39,092 --> 00:49:40,092
+Evet [öğrenci].
+
+293
+00:49:41,032 --> 00:49:49,572
+Hocam, en öncelikli olarak native ve sanal makinelerin karşılaştırmasına güncel bir versiyon eklemek amacıyla makalenin yazıldığını gördüm.
+
+294
+00:49:50,372 --> 00:49:52,112
+İlk kontribüsyon amacı bu şekilde.
+
+295
+00:49:53,112 --> 00:50:00,000
+İçerik olarak baktığımızda ise konteyner tabanlı yaklaşımla sanal makineler arasında özellikle bir karşılaştırma.
+
+296
+00:50:00,000 --> 00:50:26,280
+Buradaki konteyner dokarın mesela endüstri standartlı olarak şu an bize sağlamış olduğu yapı ve bunun karşılığında daha önceden de kullanmış olduğumuz sanal makine yaklaşımı. Bunların arasında bir karşılaştırma yapılmış. Özellikle taski izolasyonu olsun, iş yükleri arasındaki kaynak dağıtımının gözetimi olsun bu konularda incelemeler yapıldığını görüyorum. İkin olarak bu şekilde hocam.
+
+297
+00:50:26,996 --> 00:50:32,135
+Peki burada hangi, [öğrenci] sen de bir şey söyleyeceksin galiba. Evet, dinliyorum.
+
+298
+00:50:32,816 --> 00:50:44,735
+Ben de şey diyecektim hocam. Konteyner açısından dakır kullanmışlar. CPU, bellek, depolama ve network kaynakları bakımından farklı iş yükleriyle sınamışlar.
+
+299
+00:50:44,735 --> 00:50:50,735
+Ve sonunda konteynerın sanal makine teknolojisini eşit veya ondan daha iyi olduğu sonucuna direkt varmışlar.
+
+300
+00:50:52,135 --> 00:50:52,615
+Anladım.
+
+301
+00:50:52,884 --> 00:50:56,624
+Peki hangi sanatlaştırma ortamını kullanıyorlar?
+
+302
+00:51:14,739 --> 00:51:16,839
+[öğrenci] daha önce öyle kaldırdı galiba.
+
+303
+00:51:17,839 --> 00:51:25,119
+Hocam, Linux üzerinde KVM sanallaştırma, sananma yine monitörünü kullanıyorlar.
+
+304
+00:51:30,132 --> 00:51:31,431
+KVM'yi kullanıyorlar hocam.
+
+305
+00:51:31,692 --> 00:51:37,831
+Tamam işte KVM'nin farkı ne? Mesela az önce Zen gördük. Zen'den KVM'nin farkı ne?
+
+306
+00:51:41,492 --> 00:51:57,012
+KVM, tip 1 Hypervisor olarak tanımlanmış burada Linux sistemi üzerinde çalışan tip 1 Hypervisor. Yani modifiye edilmeden, misafir işletim sistemi, guest operating sistemler modifiye edilmeden çalıştırılabiliyor bu şekilde Linux üzerinde.
+
+307
+00:51:59,592 --> 00:52:05,832
+Yani ayrıca KVM'nin diğer bir düzey özelliği de karmaşıklığı ve overheadleri yani ek yükleri.
+
+308
+00:52:06,324 --> 00:52:09,463
+Azaltmak için işlemcideki donanım sananlaştırma özelliğini kullanıyor.
+
+309
+00:52:10,204 --> 00:52:20,144
+İşlemcideki özellikleri. Çünkü zen ortaya çıktığında o dönemde henüz işlemcilerde sananlaştırma özellikleri yok değil mi?
+
+310
+00:52:21,724 --> 00:52:22,264
+Evet hocam.
+
+311
+00:52:22,264 --> 00:52:29,264
+Aynen. Peki hangi kategorilerde...
+
+312
+00:52:29,556 --> 00:52:51,136
+Karşılaştırma yapıyorlar. Performans karşılaştırması. İşlem CPU, bellek band genişliği, bellek gecikmesi ve network band genişliği ve bir de IO band genişliği gibi karşılaştırma parametrelerine bakıyorlar hocam.
+
+313
+00:52:54,324 --> 00:53:02,543
+Burada özellikle farklı bir yük daha var. Farklı bir tip daha var. Onu da inceliyorlar.
+
+314
+00:53:07,027 --> 00:53:08,187
+Onu bilemeyeceğim hocam şu anda.
+
+315
+00:53:08,667 --> 00:53:12,567
+Tamam, yani sen cevaplayamıyorsan belki başka arkadaşın cevap ver.
+
+316
+00:53:20,500 --> 00:53:44,500
+Evet arkadaşlar, HPC yazıyor fark etmiyor musunuz? High Performance Computing. Normalde sanallaştırma HPC'nin baş düşmanıdır. Değil mi? Araya bir katman koyuyorsunuz. İşler öyle veya böyle yavaşlıyor. Ama bunu da...
+
+317
+00:53:45,523 --> 00:53:48,364
+Hesaba katmışlar, onu da incelemişler.
+
+318
+00:53:49,204 --> 00:53:51,103
+Linpec dedikleri.
+
+319
+00:53:54,963 --> 00:54:21,784
+Bakın ne görmüşler? Çok ilginç. Bence önemli olan noktalardan bir tanesi bu. Linpec, Native'de 290.8, Docker ortamında 290.9, KVM Untuned'da 241.3, KVM Tune'da 284.2 vermiş.
+
+320
+00:54:22,771 --> 00:54:42,491
+Şimdi Native ile Docker hemen hemen aynı. Yani onlar istatistiki ölçüm oynamaları. Yani 290.8 ile 290.9. Ama KVM'i Tune ettiğiniz zaman sadece %2 performans kaybınız var. Bu da çok önemli bir şey.
+
+321
+00:54:43,155 --> 00:54:56,175
+Yani sanal ortamlarda da high performance computing yapabilirsiniz anlamına geliyor bu. Onun için illaki Bayer Metal'e ihtiyacınız yok.
+
+322
+00:54:59,699 --> 00:55:06,699
+Burada bakın Pxz var. Pxz neye denk düşüyor? Pxz.
+
+323
+00:55:17,172 --> 00:55:18,132
+Süper P ismi hocam.
+
+324
+00:55:19,331 --> 00:55:19,811
+Efendim?
+
+325
+00:55:21,211 --> 00:55:23,072
+Pardon, parmak kaldırmadım ama.
+
+326
+00:55:24,112 --> 00:55:25,231
+Süper P ismi hocam.
+
+327
+00:55:25,992 --> 00:55:27,211
+[öğrenci] sen misin?
+
+328
+00:55:27,411 --> 00:55:27,811
+[öğrenci], evet.
+
+329
+00:55:28,411 --> 00:55:32,012
+PX sıkıştırma, kompres, ankompres.
+
+330
+00:55:36,755 --> 00:55:43,335
+Cloud workload'larında bol miktarda o dönemde yaptıkları incelemelerde gördükleri şeylerden biri.
+
+331
+00:55:43,335 --> 00:55:55,335
+Bakın, burası esas çarpıcı. Yani düşünsenize sananlaştırma işlemci performansını...
+
+332
+00:55:58,547 --> 00:56:14,967
+Matematiksel işlemler anlamında işlemci performansını çok fazla etkilemiyor. Aslında gerçek. Çünkü niye? Özel memori erişimiyle alakalı, I.U. erişimiyle alakalı instrakşınlarda sanallaştırma katmanı devreye giriyor.
+
+333
+00:56:14,967 --> 00:56:26,467
+Onun haricinde aritmetik, lojik işlemlerde, floating point işlemlerde sanallaştırma katmanı devreye girmiyor. Ve neyi anlayabiliyoruz bu paperın bize?
+
+334
+00:56:26,547 --> 00:56:51,187
+Bu tarz yüklerde konteyner kullanıyorsak zaten hiç etkilenmiyoruz. KVM kullanıyorsak da tabii aynı şeyi mesela Zen falan içinde yapmak lazım. Çok az etkileniyoruz. Yüzde iki. Ama diğer taraftan sıradan bir workload, yani bir şeyin kompres edilip unkompres edilmesi.
+
+335
+00:56:52,307 --> 00:57:02,327
+Ve bunu da bakın örnekte 1 gigabaytlık Wikipedia dosyası, dump'u üzerinden şey yapmışlar.
+
+336
+00:57:08,851 --> 00:57:33,171
+32 thread üzerinden yapmışlar. %22% point daha düşük bir performans, şey percent point değil özür dilerim, percent point olarak %14 ama oransal olarak %22 daha düşük bir performans elde etmişler şeyde KVM'de.
+
+337
+00:57:33,780 --> 00:57:45,860
+Docker'da ise %4'lük bir düşüklük elde etmişler. Random Access'de hemen hemen aynı. Dikkat edin.
+
+338
+00:57:45,860 --> 00:57:58,860
+Diğer tarafta Stream Instruction'lara. Bunlar Intel işlemcisinde özellikle vektör işlemlerinin hızlıca yapılması adına...
+
+339
+00:57:59,251 --> 00:58:19,571
+olan instruction'lar, add, copy, scale, try it. Yani hem vektör hem de matriz işlemlerinin hızlandırılması. Bakın onlarda da neredeyse hiçbir fark yok. Hatta keyviyeni tün etmemişler bile.
+
+340
+00:58:21,492 --> 00:58:30,872
+Yani orada tune edilmesi durumunda ters bir sonuç almışlar. Untuned versiyonda elde edilen sonuçlar hemen hemen aynı çıkmış.
+
+341
+00:58:39,315 --> 00:58:46,036
+Burada işte network konfigürasyonlarını, şeyleri falan göstermişler. Evet.
+
+342
+00:58:55,123 --> 00:58:57,003
+İyice sessizleştiniz arkadaşlar.
+
+343
+00:59:03,315 --> 00:59:06,495
+14 ne? Farklı bir konuya geçiyoruz.
+
+344
+00:59:30,771 --> 00:59:48,391
+İsterseniz şöyle yapalım. 14 ve 15'i ben size bırakayım. Çünkü diğerlerini siz bana bıraktınız neredeyse tamamını. Haftaya... Durun bakayım. Neleri size ödev olarak vermişim. Bir saniye. Onları da saat 3 gibi aktif olacak. Yayınladım.
+
+345
+01:00:14,708 --> 01:00:36,847
+16, 17 ve 18'i vermişim. Evet, 14, 15 sizde. Ama yani beni hayal kırıklığına uğrattınız arkadaşlar ya. Çok temel yerlerimden sordum, şey yaptım. Daha çok beni konuşturuyorsunuz, ilginç. Sizlerin konuşmasını istiyorum.
+
+346
+01:00:42,291 --> 01:00:58,751
+14-15 sizde. 10-11-12-13'ü tartıştık. Tartışabildiğimiz kadar. Önümüzdeki hafta içinde 16-17-18 var arkadaşlar.
+
+347
+01:01:01,043 --> 01:01:04,883
+Hepinize iyi bir hafta diliyorum. Haftaya görüşmek üzere.
+
+348
+01:01:04,883 --> 01:01:08,223
+Görüşmek üzere hocam.

@@ -1,0 +1,2071 @@
+1
+00:00:26,707 --> 00:00:28,683
+Günaydın arkadaşlar.
+
+2
+00:00:44,723 --> 00:00:47,043
+9.05 geçe başlayalım arkadaşlar.
+
+3
+00:00:49,123 --> 00:00:50,183
+5 dakika sonra.
+
+4
+00:00:57,460 --> 00:00:58,740
+Açın Englishman'sa.
+
+5
+00:06:03,220 --> 00:06:23,140
+Evet, tekrardan günaydın arkadaşlar. İki şey olmuşuz. Peki, ilk önce haftalık içeriye bakalım. Geldi mi ört belgesi? Haftalık içeriye alıyoruz. Geldi, tamam, güzel.
+
+6
+00:06:23,920 --> 00:06:48,120
+Şimdi bugün 6 Nisan. Evet, genetik algoritmalara bakacağız. Birinci ödevinizi vereceğim. Bir de şu kısma dikkat çekmek istiyorum. Sınavlar çok çok büyük ihtimalle online olacağı için onların ağırlıkları epey bir düşük olacaklar. Ödevleriniz ve projeniz asıl not bileşenlerinizi oluşturacak.
+
+7
+00:06:48,627 --> 00:07:01,627
+Bugün dediğim gibi iki ödeviniz var. Bu iki ödevden bir tanesini bugün size dersin sonunda anlatacağım. Tamam mı? Bunları da şimdiden istedim.
+
+8
+00:07:05,627 --> 00:07:09,627
+Peki, o zaman geçebiliriz artık.
+
+9
+00:07:13,204 --> 00:07:19,019
+İlk önce şeyi anlatacağım konuları, ondan sonra...
+
+10
+00:07:25,620 --> 00:07:33,920
+Ödeyeyim diyeceğim. Şimdi arkadaşlar, geçen hafta lokal arama algoritmalarından bahsetmiştik, hatırlıyorsunuzdur.
+
+11
+00:07:33,920 --> 00:07:39,920
+Şimdi lokal arama algoritmalarının geçen haftaya kadar gördüğümüz...
+
+12
+00:07:40,884 --> 00:08:05,744
+algoritmalardan bazı benzerlikler var, bazı farklılıklar var. Benzer olan noktalarından bir tanesi de sezgisel olmasıydı. Sezgisel algoritmalarda görmüştük. Sezgisselden kastımız neydi? O anda bulunduğumuz durfun hedefe olan uyumunu, uzaklığını, yakınlığını tahmin etmemizi sağlayan bir fonksiyon, bir bilgi.
+
+13
+00:08:06,612 --> 00:08:22,272
+Lokal Arma Algoritmanı bu manada sezgisel arma algoritmanıydı. Ama lokal arma algoritmanını diğer, dediğim gibi geçen hafta ne kadar görüntü, algoritmanın hepsini ayan çok daha temel bir farklılık vardı. Neydi bu? Hatırlıyor musunuz?
+
+14
+00:08:28,884 --> 00:08:30,884
+Hocam optimal değildi galiba.
+
+15
+00:08:30,884 --> 00:08:34,884
+Yok canım, optimal olmayan algoritmalarda daha önce görüştük.
+
+16
+00:08:39,604 --> 00:08:51,744
+Muhtemelen değiller. Evet, doğru. Ama başka bir çok daha kritik bir şey var. Ne tür problemleri çözüm buldukları açısından farklardır.
+
+17
+00:09:01,620 --> 00:09:17,019
+Şöyle bir şey arkadaşlar, daha önceki algoritmanın hepsine bir başlangıç noktası bize veriliyor, bir hedef noktası bize veriliyor ve bu ikisi arasında bir pet bulmamız istenir. Yani problemin çözümü o petti.
+
+18
+00:09:17,395 --> 00:09:39,243
+Tamam. Başı belli, sonu belli. Pettin zaten operatörler dizisi olacaktı. En iyi şey A7'den B7'e giden yol size lazım. Ya da işte bir problemi şu durumdan şu duruma dönüştürmek için hangi operatörle uygulamamız gerekiyor? Bunlar size lazım. Böyle birçok örnek görmüştük, örnek uygulama yapmıştık. Fakat...
+
+19
+00:09:41,235 --> 00:09:58,155
+Lokal Arama'a göçmenin bu anlarda farklıydı. Nasıl bir şeydi? Bize bir başlangıç ve bitiş verilmiyordu. Sadece istenilen duruma dair bazı özellikler söyleniyordu ki o özellikleri biz sezgi olarak kullanacağız.
+
+20
+00:10:00,000 --> 00:10:26,720
+Yani yine diğer algoritmarda olduğu gibi başlangıç durumundan başlayacağız. Bir hedefe doğru ilerleyeceğiz. Ama burada kullanıcının bizden istediği şey, oraya nasıl vardın falan sonuca dair. Sonuca dair nasıl bir yoldan ilerledin oraya, orasını kullanıcı ilgilendirmiyor. Kullanıcı diyor ki bana şu özelliklere sahip bir durum bul diyor.
+
+21
+00:10:27,220 --> 00:10:45,820
+Tamam mı? Şu şartı sağlayan, şu fonksiyonu minimize eden vs. vs. Bir durum bul bana diyeyim. Derdi bu. Yoksa o durumu nasıl buldun falan orası ilgilenmiyor. Lokal ve mağazorup'un hepsi bunu yapmaya çalışıyorlar.
+
+22
+00:10:46,868 --> 00:11:05,328
+Hafızası sadece mevcut durumu tutup onu düzeltmeye çalışmaktan çalışıyorlar ve çok az hafıza gereksinleri var. Şimdi bunların işte bir tane örneği en vezir problemini böyle tanımlamıştık. Kullanıcının tek derdi ne? İşte en tane veziri, en çarperlik bir satranç tahtasına hiçbir veziri birbirini tezgu etmeyecek şekilde yerleştir.
+
+23
+00:11:05,775 --> 00:11:26,355
+Bunu istiyor kullanıcı bizden ve bunu nasıl çözdüğümüz, yine burada da bir yerden rast verip başlayacağız, adım adım adım ilerleyecek ve belki en son çözüm bulacak ama kullanıcı bizden sadece son durumu istiyor. Nereden başladın, nasıl ilerledin, hangi operatörleri kullandın falan onlar hiç ilgilendirmiyor. Sadece çözüm odaklı.
+
+24
+00:11:27,539 --> 00:11:41,539
+Burada kullanılan temel algoritma, lokal algoritma algoritmanın hepsinin en temeli tepe tırmanma süreci. Eğer bir fonksiyonu maksimize etmeye çalışıyorsanız, tam tersini yapıyorsanız da, o zaman da yokuş ilme falan diyebisinden düşünebilirsiniz.
+
+25
+00:11:43,039 --> 00:11:48,491
+Her zaman şimdiki durumu en fazla geliştiren yönde adım at. Şey bu.
+
+26
+00:11:52,340 --> 00:12:01,220
+Özelliği bu. Yoğun misiste Everest'dan tırmanmaktan bahsetmiştik. Niye yoğun misistiyordu? Çünkü çok fazla etrafımızı görmüyoruz. Gerçekten.
+
+27
+00:12:03,540 --> 00:12:09,220
+Bu çok fazla etrafımızı göremiyor olmamızın bir...
+
+28
+00:12:12,220 --> 00:12:14,019
+Nasıl diyeyim?
+
+29
+00:12:17,524 --> 00:12:40,524
+Yani bütün alanı görüp, o olandaki en yüksek zirveyi görüp oraya doğru hareket etmek mümkün mü? Olabilir mi? Gerçek hayatta mümkün olabilecek bir şey belki. Bütün alanı görüp, bütün alana dair en yüksek bölgeyi görüp oraya doğru gitmek. Bu olabilecek bir şey mi? Evet, olabilecek bir şey. Ama...
+
+30
+00:12:40,720 --> 00:12:59,019
+Bilgisayar dünyasındaki oluşturacağımız problemlerde bütün alanı görüp bütün alanın içerisinde en iyi yani global manadaki optimum noktaya gitmek bizim uğraşacağımız problemlerde pek mümkün bir şey değil.
+
+31
+00:12:59,720 --> 00:13:03,720
+Çünkü bizim uğraşacağımız problemler genelde iki boyutta olmayacak.
+
+32
+00:13:04,244 --> 00:13:24,364
+Çok büyük bir arama uzayından bahsetmemiz gerekecek. Buralarda bizim bütün alanı değerlendirip hareket etmemiz mümkün değil. Yapabileceğimiz maksimum bir şey, bulunduğumuz bir noktadan başlayacağız. Bulunduğumuz noktadan bizi iyileştiren yöne doğru hareket adımlar atmaya çalışmak olacak.
+
+33
+00:13:25,043 --> 00:13:38,864
+Burada tepe tırmanma yapımıza bunu görmüştük, nasıl çalıştığını. Daha sonra bunun takıldığı yerlerden bahsetmiştik. Yani tepede olduğunu zannettiğimizde aslında tepede olmayabileceğimizden bahsetmiştik. Sekiz veziri çözmek için bunu kullanmıştık.
+
+34
+00:13:39,251 --> 00:13:58,711
+Performansların çok çok iyi olmayabileceğinden bahsetmiştik ve alternatif olarak da işte random listar. En temel yaklaşım bu. Çünkü lokal arama algoritmalarının tamamı neye bağımlılar? Başlangıç durumuna bağlılar. Başlangıç durum değiştirdiklerini de değiştirdiğinizde vardığınız yer değişiyor.
+
+35
+00:13:58,711 --> 00:14:07,251
+Yani buradan çok rahat gözüküyor. Yani buradan başlasanız mesela buraya varacaksınız. Şuradan başlasanız belki tepeye varacaksınız. Buradan başlasanız buraya varacaksınız. Onu birazcık sağlıyorum.
+
+36
+00:14:07,251 --> 00:14:19,251
+Bu tarafa başlayacaksınız. Yani şunu demeye çalışıyorum. Mesela şuradan başlayırsanız varacağınız yer, şuradan başlayırsanız varacağınız yer bundan çok farklı var.
+
+37
+00:14:19,251 --> 00:14:32,747
+Devletin olanma için düşünürseniz. Biri işte buraya gidecek, bir tanesi buraya gidecek. O yüzden farklı çözümlere erişmek için, farklı çözümlere erişmek için
+
+38
+00:14:33,491 --> 00:14:39,151
+Farklı başlangıçları kullanmak en çok tercih edilen yollarından bir tanesi.
+
+39
+00:14:42,740 --> 00:14:48,399
+Peki, başka bir şey var ya, benzetimle tavlama. Bu benzetimle tavlama biraz daha şeydi, ne diyelim?
+
+40
+00:14:52,139 --> 00:15:01,480
+Her zaman iyileştirme yapmak yerine, ara sıra konforumuzu bozan, kötüleştirme de yapan şeylere izin vermek.
+
+41
+00:15:01,919 --> 00:15:08,899
+Bunu biraz gerçek hayattan da konuşmuştuk. Herkes derler yani, konforumuzdan çıkmanız lazım.
+
+42
+00:15:09,519 --> 00:15:20,159
+Sürekli sizi iyiye götüren şeyden bir miktar biraz kötüye götürsün. Biraz daha yoğursunuz sizi. Rahatınız biraz bozulsun ki ondan sonra daha iyi bir şeyler olur belki.
+
+43
+00:15:21,939 --> 00:15:29,199
+Dolayısıyla benzetimli tavlamada bu fikri aslında birazcık savunuyor. Çıktığı noktadan da bahsetmiştik biraz işte demirin soğuması.
+
+44
+00:15:29,615 --> 00:15:52,115
+noktasında. Sürekli iyileştirme değil de ara sıra kötü yöne gitmeli. İzin versek acaba daha iyi olur. Üçüncü atendir ise çok daha farklıydı. Daha niye bir kişi göndeririz? Bir sürü kişilerine. Ve daha geniş bir alanda bulunan, tarama yapabilsinler.
+
+45
+00:15:55,475 --> 00:16:20,235
+Bugünkü işleyeceğimiz konu aslında bu fikrinin üzerine yine dayanıyor. Yani paralel tepe tırmanmanın üzerine oturan bir fikir. Buradakinden birazcık daha farklı bir mekanizmayla yeni bireyleri, yeni çözümleri sadece şey yapıyor, üretiyor. Onun haricinde temel yapı sahibi.
+
+46
+00:16:21,043 --> 00:16:36,803
+Şimdi geçen hafta bunlardan bahsetmiştik, bozuk televizyondan bahsetmiştik. Bozuk televizyonda işte kasayla televizyonun farkı neydi hatırlıyor musunuz? Sizin sesinizi biliyordum. Kasayla televizyonun farkı neydi?
+
+47
+00:16:41,716 --> 00:16:44,035
+Hocam, birinde değişimi görebiliyorduk.
+
+48
+00:16:44,436 --> 00:16:47,255
+Yani ne demekti o? Ne var elimizde?
+
+49
+00:16:49,556 --> 00:16:50,395
+Değişimi?
+
+50
+00:16:51,035 --> 00:16:53,716
+Yani mesela düğmeleri işte.
+
+51
+00:16:53,735 --> 00:16:56,855
+Değiştirdiğimiz zaman. Evet, tamam. Neyi görebiliyorduk?
+
+52
+00:17:00,615 --> 00:17:03,115
+Televizyon ekranındaki değişimi görüyoruz değil mi?
+
+53
+00:17:03,115 --> 00:17:06,496
+Televizyon ekranındaki değişim bize neyin ipucunu veriyor?
+
+54
+00:17:07,731 --> 00:17:32,491
+Görüntü iyileşiyor mu, kötüleşiyor mu? Aslında sezgi veriyor değil mi bize? İyiye doğru ben iyi olan bir şeyden ne kadar uzağım, ona yaklaşıyor muyum, uzaklaşıyor muyum? Aslında o bilgiyi veriyor bize değil mi? Ekrana bakıp oradan bir iyilik almak. Ama kasada böyle bir durum yoktu. Kasaya baktığımız zaman şeyi göremiyoruz. Kasayı açmaya yaklaştığımda uzaklaştığımda onu göremiyoruz.
+
+55
+00:17:32,832 --> 00:17:52,372
+Onu göremediğimiz için burada serisi arama yapmak mümkün değil, kör arama yapmamız gerekiyordu. Ama bunu açmak için mesela eski tıp kasarlı falan, filmler falan olur böyle steteskop falan kullananlar. Dinlerler kasayı. O kasayı dinlemeyişi de aslında neydi? Sezgi alma. İçeride işte bir ses duyup bazı bir şeyleri hedefe yaklaştık mı uzaklaştık mı falan onu anlamak için.
+
+56
+00:17:52,884 --> 00:18:01,523
+Çünkü Sezgiler aslında problemi daha iyi çözmemizi sağlamıyorlardı. Ne yapıyorlardı? Problemi daha hızlı çözmemizi sağlıyorlardı hatırlıyorsunuz.
+
+57
+00:18:01,523 --> 00:18:16,644
+Değil mi? Şimdi bunlardan da bahsetmiştik. Bir tane problemle çözmüştük hatta bununla alakalı. Bir alanı taramaktan bahsetiyorduk. Bunu bitirmiştik.
+
+58
+00:18:17,332 --> 00:18:20,412
+Şimdi bugün kaldığımız yerden devam edelim.
+
+59
+00:18:31,220 --> 00:18:33,480
+Geldi mi genetik algoritmaların slide'ı arkadaşlar?
+
+60
+00:18:34,599 --> 00:18:35,160
+Gözükecek.
+
+61
+00:18:38,000 --> 00:18:46,079
+Şimdi, genetik algoritmaların bir kendi jargonları var.
+
+62
+00:18:48,140 --> 00:18:52,220
+Hani çözüm diye ifade ettiğimiz şeyleri onlar işte şey diyorlar.
+
+63
+00:18:53,660 --> 00:18:57,039
+Kromozom, birey diyorlar. Biz durum falan da diyorduk.
+
+64
+00:18:57,460 --> 00:19:03,759
+Dolayısıyla kromozom ve birey diye bir şey görürseniz bu aslında bir çözüm önerisi.
+
+65
+00:19:03,759 --> 00:19:05,300
+Yine şeydeki gibi.
+
+66
+00:19:07,720 --> 00:19:10,940
+Lokal arma, diğer lokal armağar boyutlarında olduğu gibi.
+
+67
+00:19:12,220 --> 00:19:15,759
+Genetik algoritma evrim mekanizmasına dayanıyor, evrim yaşamasına dayanıyor.
+
+68
+00:19:15,960 --> 00:19:17,599
+Amaç uygunluk fonksiyonunu.
+
+69
+00:19:18,836 --> 00:19:40,135
+FİTNES fonksiyonu diyeceğiz buna. Ki bizim sezgisel fonksiyonumuz bu olacak. Yani iyiliği, o çözümün iyiliği bizim açımızdan. O fonksiyonu maksimizasyon ya da minimizasyon, optimizasyon yani maksimilerini bulmak ya da minimum değerini bulmak. Bunun için kullanılıyor. Aynen diğer lokal arama algoritmaları olduğu gibi. O yöneğin fonksiyonu zaten.
+
+70
+00:19:43,124 --> 00:19:59,983
+Toplumdaki, burada toplum diye bir şey diyor ya da popülasyon falan diye de geçiyor bu. Birden fazla bireyden oluşan yapıdan bahsediyoruz. Yani mesela Parayel Tepe Tırmanı'da tek bir tane dağcı yerine K tane dağcı gönderiyordu ki o K tane dağcı dedi.
+
+71
+00:20:00,000 --> 00:20:24,119
+Bizim burada, işte bireyler, çözüm önerilerimiz, kromozomlarımız diye düşünüyor. K tanesi de bir popülasyon oluşturuyor aslında. K tane bireyden oluşan bir popülasyon. O kümeye toplum diyor. Toplumdaki ya da popülasyon diyor. Toplumdaki er kromozom bireyin durumunun ne kadar iyi olduğunu gösteren fonksiyonun büyük değer, iyi uygun değer olarak değerlendirilir. Ya da şey de olabilir, tersini de yapabilirsiniz.
+
+72
+00:20:25,140 --> 00:20:45,880
+Minimizasyon yapıyorsanız küçük olan iyi der diyebilsiniz. K-AD rastgele üretilmiş kromozom durum çözüm hipoteziyle başlıyor. Bu durumlar hükümesinde popülasyon deniyor. Şimdi burası K-AD rastgele üretilmiş kromozomlarla başlaması şeyle aynı. Paraletepe tırmanma, orada da K-AD bir başlıyor.
+
+73
+00:20:46,420 --> 00:20:52,680
+Kronozomlar ya da durumlar sıralayalı sırası hareket hükümeleriyle temsil edilir. Genelde seyreden birisi sıfırlarla oluştur. Tamam.
+
+74
+00:20:52,680 --> 00:20:54,680
+Şimdi...
+
+75
+00:20:58,708 --> 00:21:16,347
+Parayeltepe tırmanmayı hatırlarsak, K tane elimizde çözüm vardı. Bunlardan gidilebilecek yeni çözümler buluyorduk. Onların içerisinden de uydurduk fonksiyonu göre yine K tanesini seçiyorduk. K tane başlayıp K taneyi bitiriyorduk. Ondan sonra o K tane yeni durumlar oluşturduk.
+
+76
+00:21:24,980 --> 00:21:46,779
+Farklı oldukları tek kısım, K tane bireyden yeni K tane bireyin üretilmesi kısmı. Onun haricinde mekanizma aynı. Sadece bu üretim süreçlerinde farklılık var. Üretim süreçlerinde neler var? Bir seçme işlemi var, birazdan göreceğiz. Bir crossover işlemi var, bir de mutasyon işlemi var.
+
+77
+00:21:48,403 --> 00:22:00,543
+Şimdi buna göre, bu deminki ifade ettiğimiz şeyleri içeren bir şeyi görelim. Yapıyı görelim. Algorithmısını görelim daha doğrusu.
+
+78
+00:22:04,627 --> 00:22:26,707
+Popülasyonu alıyor içeri, fitness fonksiyonu alıyor. Dönüş olarak da bir bireyi döndürecektir. Toplumun içerisinden bir bireyi. Input dediğim gibi population, episode of individuals. Başlangıç için bireylerde oluşan bir küme. Buna popülasyonu dediğimiz gibi her bir bireyin iyiliğini, çözümün iyiliğini gösteren bir değer.
+
+79
+00:22:26,707 --> 00:22:31,927
+Repeat until, ne demiş? Until some individuals is fit enough.
+
+80
+00:22:32,468 --> 00:22:53,427
+Bazı ya da en azından bir birey yeterince iyiyse, yeterince iyi olana kadar veya daha önceden tanınmış olduğumuz bir zaman artık geçene kadar bu repeat antin içerisinde kalıyor sürekli.
+
+81
+00:22:58,324 --> 00:23:24,523
+Şimdi, repeat antennin içerisindeki yapıya bakarsak, bir new population'da bir şey oluşturmuş. Buna empty set demiş, boş bir kime oluşturmuş. Sonra for loop, işte i'den size population'a kadar dönen bir yapısı var. Şurası, şu gördüğünüz gibi for loop'u. Bu bittikten sonra population'a new population, yani new population'ı burada üretiyor aslında.
+
+82
+00:23:25,236 --> 00:23:46,135
+Görüceğiz nasıl ürettiğini. Ondan sonra New Population'ın popülasyonu atıyor. Yani bir önceki nesil öldürüp onun yerine yeni nesil getiriyor. Her bir grupun içerisinde. Peki burada ne oluyor şimdi ona bakalım. Birden size popülasyon. Yani bunun içerisine kaç kez girecek bu? Popülasyonun içerisine kaç tane birey varsa o kadar kez girecek.
+
+83
+00:23:46,740 --> 00:24:13,279
+Bunun sonuna baktığımızda aslında bir tane çocuk üretilecek ve bu çocukta new population'a eklenecek. Yani bunu işte size population kadar yaptığımızda bu kadar tane child'ı ne yapmayacak olsun? New population'a eklemiş olacak. New population başlangıçta sıfırdı, boştu daha doğrusu. Bu an bittiğinde şu an itibariyle new population içerisinde popülasyonun büyüklüğü kadar ne var? Çözüm var. Yeni çözümler var.
+
+84
+00:24:13,715 --> 00:24:38,115
+Devam edelim. Şimdi burada ne yapılıyor? Bir selection işlemi var bakın. Popülasyondan, bireylerin içerisinden bir seçim yapmaktan bahsediyor. Random diyor. Random selection aslında çok çok doğru ifade. Yani tamamen random değil daha doğrusu öyle söyleyelim. Neye göre random? Fitness fonksiyonuna göre random.
+
+85
+00:24:41,236 --> 00:25:01,236
+Nasıl yapacağız bunu? Fitnes, boksana göre tamamen randım demek şu olurdu. Şimdi biz şunu yapmaya çalışıyoruz. Burada iki tane birey seçeceğiz. Tamam mı? Bu bireylerden bir tane çocuk üreteceğiz. Daha sonra çocuğun mutasyona uğratacağız ve bu mutasyona uğramış bir ya da uğramış çocuğa artık bir olasılıkla popülasyon içerisine...
+
+86
+00:25:01,460 --> 00:25:25,980
+Atacağız, atacağız. Dolayısıyla burada aslında bir sonraki nesli oluşturacak olan bireylerin seçimi işlemi var. Yani elinizde yüz tane birey var. Bu yüz tane bireyden yeni yüz tane birey oluşturacaksınız. Bu oluşturma sürecine acaba bu neslin hangi elemanlara katılsınlar?
+
+87
+00:25:27,443 --> 00:25:37,564
+Mantıken şöyle bir şey, hani biz bir fitness fonksiyonu optimize etmeye çalışıyoruz. Dolayısıyla fitness fonksiyonu yüksek olanları almak mantıklı olabilecektir. O çözümler daha da iyilesinler diye.
+
+88
+00:25:38,099 --> 00:25:47,639
+Peki tamam, bunu nasıl yapacağız? Tamamen rastgele seçim yapsak, bir ilerleme görmeyiz rastgele bir seçim yaptığımızda.
+
+89
+00:25:47,819 --> 00:25:53,119
+Tamamen rastgele bir seçim yaptığımızda. Onun yerine burada bir fitness fonksiyonundan bahsediyoruz.
+
+90
+00:25:53,119 --> 00:26:02,179
+Fitness fonksiyonu, bahsettiğimiz gibi bir direğin iyiliğini gösteren kısım. Fitness fonksiyonunun değerine göre ne yapıyorsunuz?
+
+91
+00:26:05,268 --> 00:26:14,548
+%60 olsak da şunu seçeceğim, %70 olsak da şunu seçeceğim. Fena falan gibisinden bir şeyler söylüyorsunuz. Dediğim gibi, onun yazdığından detayına geleceğiz.
+
+92
+00:26:14,548 --> 00:26:22,947
+Dolayısıyla buradaki random selection tamamen randomization değil. Fitness fonksiyonuna göre random selection. Burada iki tane birey seçtik.
+
+93
+00:26:23,316 --> 00:26:37,816
+Elimizdeki popülasyona diyelim 100 tane şey vardı, birey vardı. Burada iki tanesi seçtik. Bu ikisinden bir tane çocuk üreteceğiz. Daha sonra bu çocuk küçük bir olasılıkta mutasyona uğratacağız ve daha sonra bu çocuğu new popülasyona ekleyeceğiz.
+
+94
+00:26:39,635 --> 00:26:47,816
+Bu iş repeat until olduğu sürece nesiller boyu devam ediyor. Yani şurada şu işlemin.
+
+95
+00:26:48,884 --> 00:26:55,463
+Bir kere yapılması, öyle söyleyeyim, yani şu dediğim için işlerin bir kere yapılması, bir neslin oluşturulması anlamına geliyor.
+
+96
+00:26:55,463 --> 00:27:03,144
+İşte New Population'la empty setlerine sonra New Population'a oluşturulur, sonra Population New Population'a dönüştü. Bir sonraki nesle dönüştü.
+
+97
+00:27:03,524 --> 00:27:07,703
+Bu yüzden burada her bir geçişimiz bir nesil geçişi anlamına geliyor.
+
+98
+00:27:08,180 --> 00:27:16,660
+Repeat Antibiden çıktık. En sonunda da elimizdeki popülasyonun en iyi bireyi hangisi ise onu output olarak gönderiyoruz.
+
+99
+00:27:17,620 --> 00:27:21,340
+Palatepe tırmanmanıyla oldukça benzer olduğundan bahsetmiştik.
+
+100
+00:27:21,340 --> 00:27:30,080
+Tek aslında fark bu K tane bireyden yeni K tane bireyin üretim süreçleri aslında birbirinden farklı.
+
+101
+00:27:30,200 --> 00:27:33,900
+Onun haricinde ana fikirleri ne varıncaya kadar aynıdır.
+
+102
+00:27:35,635 --> 00:27:55,635
+Şimdi, geçen hafta 8 Vezir'den bahsetmiştik. Tepe tırmanmayla çözmüştük. Şimdi bunu genetik algoritmayla gerçekleşeceğiz. Genetik algoritmayla bunu yaparken...
+
+103
+00:27:56,435 --> 00:28:12,816
+Her bir bireyimizi, yani şu gördüğümüz şey bir tahta aslında, bir satranç tahtası. Neyi ifade ediyor şu satranç tahtası? İkinci, birinci sütunun ikinci satırında vezir varmış. Dört neyi ifade ediyor?
+
+104
+00:28:14,291 --> 00:28:41,011
+İkinci satırın dördüncü sütununda vezir varmış. Buradaki yedi ne ifade ediyor? Üçüncü sütunun yedinci satırında vezir varmış. Aslında bu bir tahta. Sekiz tane vezirin her bir sütunda bulundukları satır indislerini gösteriyor. Böyle dört tane rastgele çözümüne başlıyorum. Şimdi buradaki şeyi tamamen göreceğiz. Bütün buradaki sürecin tamamını şuradaki örneğin üzerine göreceğiz.
+
+105
+00:28:41,587 --> 00:28:53,947
+Dört tane bireyden oluşan bir popülasyonum var. Ve ben dört tane bireyden yeni dört tane birey oluşturacağım artık. Şu en maçta... Pardon.
+
+106
+00:29:07,155 --> 00:29:19,695
+Yani şu popülasyondan, dört tane bireyden oluşan popülasyondan yeni şu dört tane yine bireyi oluşturacağım. O oluşturma sürecinden bahsediyoruz şu an.
+
+107
+00:29:22,455 --> 00:29:26,935
+Şimdi ilk yapılan işlem, fitness fonksiyonunu hesaplanalım.
+
+108
+00:29:27,183 --> 00:29:46,483
+Her bir birek için fitness fonksiyonu. Burada uygunluk fonksiyonu şöyle tanımlanmış. Birbirini tehdit etmeyen, eden değil bakın, birbirini tehdit etmeyen vezir çiftlerin sayısı. Birbirini tehdit etmeyen vezir çiftlerin sayısı minimum 0, maksimum zarar 28 tane olacaktır. Yani 8'in ikili kombinasyonundan.
+
+109
+00:29:49,584 --> 00:30:16,283
+Minimum 0, maksimum 28 olabilir bu değer. Bakın, birbirini tehdit etmeyenlerle çiftliğiniz sayısı. Dolayısıyla biz burada bu sayı ne yapmaya çalışıyoruz? Maksimum yapmaya çalışıyoruz. Görüyor musunuz? Tehdit edenleri olsaydı o zaman onu minimum yapmaya çalışıyoruz. Ama burada şu anda maksimum yapmaya çalışıyoruz. Dolayısıyla burada bizim amacımız erişebilirsek, fitness focus'un 28 olduğu bir tahtayı bulmak. Şeyimiz bu.
+
+110
+00:30:16,723 --> 00:30:33,723
+Hayalimiz bu. Peki bunu yaparken ben nasıl bir şey yapacağım? Şimdi burada fitness fonksiyonlarına göre bunlar hesaplanmışlar. İşte bunda 24 tane tekli etmeyen varmış. Bunda 23 tane, bunda 20 tane, bunda 11 tane tekli etmeyen varmış sadece. Şimdi bu değerleri ben...
+
+111
+00:30:33,951 --> 00:31:00,451
+Fitnes fonksiyonu değerlerini seçilme olasılıklarına dönüştüreceğim. Seçilme olasılıklarını dönüştürürken, toplamları bir etsin diye hepsini toplamına burada bölmüşüz. Ve şurada gördüğümüz %31, %29, %26, %14 olasılıklarının seçilme olasılıklarını belirlemiş oldum. Seçilme olasılıklarını belirlikten sonra yapacağımız işlem ne olacaktır? Tahmin edebileceğiz. Seçme. Daha sonra seçmişiz.
+
+112
+00:31:00,948 --> 00:31:13,587
+Seçme işlemi yaptığımızda birinci birey bir kez çıkmış, ikinci birey iki kez çıkmış, üçüncü birey bir kez çıkmış, dördüncü birey hiç çıkmamış. Hiç seçilmemiş. Peki olsun, olabilir.
+
+113
+00:31:15,028 --> 00:31:21,248
+Çünkü %31 dediğimiz ya da %14 dediğimiz kesin çıkmaz falan diye bir şey kastetmez.
+
+114
+00:31:21,347 --> 00:31:25,627
+Rastgele mesela olası %29 olan %31 ondan daha fazla çıkmış.
+
+115
+00:31:25,728 --> 00:31:30,387
+%31 olan bir kere çekilmişken %29 olan iki kere çekilmiş.
+
+116
+00:31:31,127 --> 00:31:31,927
+Olabilir böyle şeyler.
+
+117
+00:31:32,627 --> 00:31:54,495
+Peki, şimdi bu olasılıklara göre seçimlerini yaptık. Bunları şimdi eşleyeceğiz. Bu ikiniz eş olun, bu ikiniz eş olun. Eşledikten sonra crossover yapacağız. Crossover şurada rastgele bir bölme seçip, o bölmeden işte solundaki ve sağındakiler birleştirip iki tane yapıyı korumak. Şurada iki tane çölük batıp bu iki...
+
+118
+00:31:54,496 --> 00:32:00,695
+Ebeveyn diyelim, Parent diyelim ikisinden. İki tane çocuk, bir tanesini sol tarafı, bir tanesini sağ tarafıyla birleşmiş görüyor musunuz?
+
+119
+00:32:01,576 --> 00:32:07,296
+Dolayısıyla böyle ikilerde iki tane çocuk daha ürettik. Peki ondan sonra ne vardı? En sonda
+
+120
+00:32:08,296 --> 00:32:12,695
+Small Rundum Probability'den çarp muta edecek. Bir de mutasyon üretiyoruz.
+
+121
+00:32:13,096 --> 00:32:20,296
+Mutasyonun bir oranı olması lazım. Yani işte ne bileyim, bizde 10 falan salgı, bizde 10 yüksek belki ama.
+
+122
+00:32:20,692 --> 00:32:22,271
+Burada 10 desek.
+
+123
+00:32:26,163 --> 00:32:52,644
+Elimizdeki bütün rakamları %10'la değiştirelim. Bunu söylemek istiyor aslında. Elimizde 32 tane rakam var. 8 tane her birbirinin içerisinde. Bunun %10'la 3 tane mesela rakamı değiştirmişiz. Değiştirmek dediğim ne demek? Rastgele başka bir sayıda değiştirmek. Mesela 5'i burada gitmiş, 1'i yapmış. Burada gitmiş, 7'i 2 yapmış. Burada gitmiş, 1'i 7 yapmış. Tamamen rastgele mutasyon soracağım.
+
+124
+00:32:54,195 --> 00:33:15,692
+Bu mesela 8 Vezir'de çaprazlama nasıl bir şeye karşılık geliyor? Yani şurada şöyle kol bacak değişimi yapalım dedik de bu gerçekten nasıl bir şeye karşılık geliyor? Bu iki tahtada, sol taraftaki tahtı elde ettiriyor. Görüyor musunuz? Şey bu. Daha iyi mi olmuştur, daha kötü mi olmuştur? Orası ayrı bir meclis. Ama elde iki tane şöyle çok...
+
+125
+00:33:15,859 --> 00:33:43,259
+Tahta var. Bu ikisinden üretilen bir tane çocukların bir tanesi bu aslında. Aslında bir tane daha çocuk üretilebilir mi? Evet. Nasıl? Yeşiller üzerinden bile orada. Yani sarıda üzerinden, yeşiller üzerinden. Ne yapabilirsiniz rahatlıkla? Yeni bir tahtada üretebilirsiniz. Şurada mesela öyle yapılmış. İki bireyden iki şeyi üretilmiş. Görüyor musunuz? Bazen algoritmada şey yapabiliyorlar. Tek bir tane de üretebiliyorlar. Tamamen deneme yanılmayla ilerleyen bir süreç probleme bazlı olarak.
+
+126
+00:33:44,500 --> 00:33:46,240
+Şimdi devam edelim.
+
+127
+00:33:46,860 --> 00:33:48,440
+Hocam bir şey sorabilir miyim geçmeden?
+
+128
+00:33:48,940 --> 00:33:49,220
+Tabii.
+
+129
+00:33:49,900 --> 00:33:52,200
+Şu şey, genetik kısımda.
+
+130
+00:33:53,180 --> 00:33:54,000
+Yedinci sayfada.
+
+131
+00:33:56,140 --> 00:34:03,360
+Hocam burada ilk kısımdan ikinci kısma geçerken, mesela birinciyle ikinciyi çaprazladık.
+
+132
+00:34:04,339 --> 00:34:08,019
+Daha sonra dördüncüyü kullanmadık, ikinciyle üçüncüyü kullandık ya.
+
+133
+00:34:08,519 --> 00:34:08,800
+Evet.
+
+134
+00:34:09,300 --> 00:34:12,359
+Bu tamamen rastgele bir seçim mi olasılığına göre?
+
+135
+00:34:13,139 --> 00:34:17,840
+Aynen öyle, tamamen rastgele. Rastgele dört tane bireyi seç bana diyorsun şu olasılıklarla.
+
+136
+00:34:18,519 --> 00:34:21,960
+Yani aslında şey falan da olabilir, bir ile üç de olabilir, bir ile dört de olabilir.
+
+137
+00:34:22,000 --> 00:34:25,619
+Tabii canım, tabii tabii. Olabilir yani bunların sırasının bir anlamı yok.
+
+138
+00:34:27,239 --> 00:34:27,559
+Anladım.
+
+139
+00:34:29,940 --> 00:34:43,400
+Teşekkür ettim. Rica ederim. Şimdi burada seçim türlerinde yapacağımız şey aslında şöyle bir şeyden bahsedeyim.
+
+140
+00:34:48,436 --> 00:34:50,436
+Deminki durumu bir düşünelim.
+
+141
+00:34:54,643 --> 00:35:04,643
+Demin ki dört tane bireyde olan durumu düşünüyorum tamam mı? Dört tane birey var elimizde. Bu dört tane birey için ben diyelim ki şeyleri hesapladım.
+
+142
+00:35:07,643 --> 00:35:13,643
+Fitness fonksiyonunu hesapladım. Demin işte 29-24 falan gibi bir şeyler çıkmıştı ama mesela diyelim ki şöyle olsun.
+
+143
+00:35:25,204 --> 00:35:50,684
+Mesela böyle olsaydı bu dört tanesi. Yani birinci birinin iyiliği doksan, ikinci birinin iki, üçüncüsün ki beş, dördüncüsün ki dört. Böyle olsa. Ben burada, burayı bilerek zaten böyle yaptım toplamları yüz etsin diye ediyor değil mi? Ediyor. Bu aslında doksansa seçilme olası ne olacaktır bunun? Yüzde doksana karşılıklayacaktır değil mi?
+
+144
+00:35:52,596 --> 00:36:07,096
+Bu da %2'ye karşılık gelecek. Bu da %5'e karşılık gelecek. Bu da %3'e karşılık gelecek. Tamam.
+
+145
+00:36:07,096 --> 00:36:18,596
+Şimdi iyi güzel de ben bu olasılıklarla seçim yaparsam, mesela bunların isimini de verelim. Buna A diyelim mesela. A bireyi olsun. Bunlar B bireyi diyelim.
+
+146
+00:36:18,867 --> 00:36:23,467
+Buna C birey diyelim, buna da D birey diyelim.
+
+147
+00:36:23,467 --> 00:36:24,467
+Tamam.
+
+148
+00:36:25,667 --> 00:36:29,867
+Ben burada, yandaki olasılıklara göre seçim yaparsam ne görürüm?
+
+149
+00:36:29,867 --> 00:36:31,867
+Neler seçilir sizce?
+
+150
+00:36:33,043 --> 00:36:46,304
+Hep A seçilir hocam ben. Değil mi? Hep A seçilir. Yüzde doksanlık bir şey. Peki, A seçilir. Peki tamam A seçilir. A seçersem ben mi? Diyelim ki A sallıyorum. Demin ki örneklerden bir tanesi olur. Ne benzeymiş?
+
+151
+00:36:46,304 --> 00:36:54,063
+Gülçük. 2, 8, 1, 5, 6. Ne kalmıyorum? 4 kalmeli. Mesela A böyle bir şey olsun. Tamam mı?
+
+152
+00:36:55,699 --> 00:37:02,699
+Şimdi burada a dört tane a olacak. Dört tane a olursa şöyle bir şey göreceğiz biz aslında.
+
+153
+00:37:07,279 --> 00:37:13,699
+Burası yeterli şimdi. Bu ikisini de eşledik diyelim ki. Bu ikisini ben neresinden bölersem böleyim.
+
+154
+00:37:14,299 --> 00:37:15,880
+Çaprazlama yaptığımda ne elde edeceğim?
+
+155
+00:37:17,359 --> 00:37:18,439
+Aynı iş. Efendisinin.
+
+156
+00:37:18,931 --> 00:37:45,152
+Kendisine ezel miyim? Yani burada mesela iki tane çözüm çaprazlanmasında iki tane yeni çözüm elde edildi değil mi? Ama bu yapıda ikisi de birbirinin aynısıysa, bunlar ne olacaklar? Farklı şeyler üretemeyecekler. Dolayısıyla böyle bir seçim yapma durumunuz varsa, o zaman crossover'ın bir şeyler yapma şansını ne yapıyorsunuz? Azaltıyorsunuz epey de.
+
+157
+00:37:45,523 --> 00:37:47,963
+İşiniz tamamen mutasyona kalıyor.
+
+158
+00:37:49,963 --> 00:38:02,003
+Şimdi buna, bu yani fitness değerine direkt bağlı olarak olasılık hesaplama yaklaşımına reddekeri seçim deniyor.
+
+159
+00:38:02,203 --> 00:38:03,783
+Demin konuştuğumuz mevzu bu.
+
+160
+00:38:04,783 --> 00:38:08,203
+Bir diğer türümüz var ki o sıralama seçimi.
+
+161
+00:38:08,203 --> 00:38:10,243
+Sıralama seçiminde fark şu.
+
+162
+00:38:11,764 --> 00:38:16,943
+Yine benim elimde şunlar var. Olsun.
+
+163
+00:38:25,588 --> 00:38:44,888
+Yani yine fitness değerleri böyle olsun. Orasına karışma. Şöyle bir şey yapacağım. En düşük olanından başlayarak ona bir diyeceğim. Ondan büyüse iki diyeceğim. Ondan büyüse üç diyeceğim. Ondan büyüse de dört diyeceğim. Tamam mı?
+
+164
+00:38:46,148 --> 00:38:52,568
+Şimdi bunlara göre bir olasılık vereceğim. Bir, iki, üç, dörde göre.
+
+165
+00:38:53,172 --> 00:39:08,012
+Bilgi üçlere göre olasılık verdiğimde şöyle bir şey yapmaktan bahsediyorum aslında. Dördü bölelim. Bir artı iki artı üç artı dörden. Tamam mı? Burada da yine aynı şekilde.
+
+166
+00:39:25,972 --> 00:39:28,891
+Tam o şükür içi, pardon.
+
+167
+00:39:30,572 --> 00:39:31,612
+Bierz,
+
+168
+00:39:32,372 --> 00:39:38,380
+büç,
+
+169
+00:39:44,755 --> 00:39:46,755
+%40.
+
+170
+00:39:48,516 --> 00:39:52,255
+Bu %10 olacak.
+
+171
+00:39:53,175 --> 00:39:58,915
+Bu %30 olacak.
+
+172
+00:39:59,775 --> 00:40:03,455
+Bu da %20 olacak.
+
+173
+00:40:04,947 --> 00:40:15,807
+Şimdi bakın, aynı fitness değerlerini kullandık burada da, burada da. Reddekir seçiminde fitness değerleri direkt alakalı olarak bunları seçim olasılıklarına hesapladık.
+
+174
+00:40:15,807 --> 00:40:29,827
+Burada ise aslında ilk önce belirle biz sıraladık. İyiliklerine göre. Daha sonra en kötü olanı en düşük rakamı verdik. En yüksek olanı en büyük rakamı verdik.
+
+175
+00:40:30,387 --> 00:40:54,547
+Ve bu 1-2-3-4'e bağlı olarak seçim olasılıklarını hesaplık. Yani böyle bir seçim çok şey oluyor. Nasıl söyleyeyim? Herkes aynı dağın etrafında yani optimizasyon yüzeyinin çok dar bir alanına herkes sıkışmış hale gelebiliyor. Böyle bütün herkesin şey olduğunda, eşit bir halde olduğunda.
+
+176
+00:40:54,911 --> 00:41:01,131
+Ama çaprazlama işle biraz daha iş ne yapabiliyor? Farklı farklı yerlere gidebilmesini sağlıyor.
+
+177
+00:41:01,131 --> 00:41:11,351
+Kaldı ki, atıyorum bir önceki parent'ın öğrenmiş olduğu bilgiyi siz burada bir miktar bozarak oluşturmaya çalışıyorsunuz.
+
+178
+00:41:11,351 --> 00:41:14,351
+Oluşturmaya çalışıyorsunuz değil mi? Faydalanıyorsunuz öyle bir şey.
+
+179
+00:41:15,751 --> 00:41:17,631
+Diyelim. Peki.
+
+180
+00:41:17,684 --> 00:41:44,944
+Bu neye sağladı? Aradaki farkların majinalden çok daha ufak tefek olmasını sağladı. Bu çeşitliliği arttırmak için bir yaklaşım aslında sıralama seçimi. Reddekeri ise çeşitliliği arttırmak değil de iyi olan kazansın hep her seferinde. Ona odaklanan bir yapı olarak düşünebiliriz. Bu ikisi aslında şey arttırır.
+
+181
+00:41:45,684 --> 00:41:47,684
+Bu stride bunu anlatıyorlar.
+
+182
+00:41:49,144 --> 00:41:50,684
+Hocam ben bir şey sorabilir miyim?
+
+183
+00:41:50,844 --> 00:41:51,184
+Evet.
+
+184
+00:41:51,864 --> 00:41:58,224
+Ya mesela ne olursa olsun mesela A ile mesela B'yi çaptanlamak çok verimsiz değil mi yani?
+
+185
+00:41:58,384 --> 00:42:01,004
+Burada başka bir algoritma kullanmaktan mantıklı değil mi?
+
+186
+00:42:01,604 --> 00:42:03,024
+Biri %90, biri %5.
+
+187
+00:42:06,036 --> 00:42:20,315
+Şimdi biri %90, biri %5 iken bunları çaprazlamak mantıklı mı değil mi? Zaten iyi bir şey çıkmıyorsa bir sonraki seçimde ne olacak o? Gidecek. Yani 90 ile kimi çaprazlayalım? Bana onu söyle.
+
+188
+00:42:21,036 --> 00:42:26,155
+İşte kimi çaprazlarsak çaprazlayalım, 90'dan düşük bir şey çıkacak. Niye onu şey yapıyoruz ki?
+
+189
+00:42:27,219 --> 00:42:43,059
+Ama işte şey olma ihtimali var, ne derler ona, daha iyi bir şey ortaya çıkma ihtimali üzerinde biz zaten duruyoruz. Tamam mı? Yani %90'ı daha da, yani bu %90 değerini daha da iyileştirebilir miyiz? Ona odaklanmaya çalışıyoruz.
+
+190
+00:42:43,639 --> 00:42:51,119
+Dediğim gibi böyle bir durum da çok çok büyük ihtimalle aile biz neyi çaprazlarsak çaprazlayalım, bu iyi bir şey olmayacaktır değil mi?
+
+191
+00:42:51,860 --> 00:42:56,139
+Yani burada sanki bir tanesi çok iyi bir yerde, ötekiler de çok aşırı derecelik kötü der.
+
+192
+00:42:56,139 --> 00:42:57,139
+Değil mi?
+
+193
+00:42:57,139 --> 00:42:58,139
+Evet.
+
+194
+00:42:58,139 --> 00:43:03,579
+Burada çaprazlamakta çok fazla bir şey muhtemelen çıkmayabilir. Orada nereden çıkacak bu sefer belki?
+
+195
+00:43:03,579 --> 00:43:05,579
+Çıkabilirse...
+
+196
+00:43:05,579 --> 00:43:07,420
+Daha kötü çıkabilir.
+
+197
+00:43:07,420 --> 00:43:11,779
+Yok yok, çaprazlamanın haricinde başka ne mekanizması vardı? Mutasyon vardı.
+
+198
+00:43:11,779 --> 00:43:16,619
+A'yı mutasyona uğratırsak acaba daha iyi bir şeyler olur mu? Ne diyecek bu zaman iş? Anlatıldı değil mi?
+
+199
+00:43:16,619 --> 00:43:18,420
+Aynen, ben öyle yaparım.
+
+200
+00:43:19,699 --> 00:43:33,699
+Tamam işte, ödevde bakarsınız artık bu tarz bir şeylere. Ödevimiz bunlarla alakta olacak çünkü. Peki, farklı olsuzdansız için bu algorit bir şey zaten bundan kendinizde bakarsınız.
+
+201
+00:43:33,699 --> 00:43:46,699
+Şimdi gezgin satıcı problemine geçeceğiz ama gezgin satıcı problemine geçmeden önce bir ara verelim. Saat 9.43, bir 12'de çıkartımız olsun. 9.55.
+
+202
+00:43:47,860 --> 00:43:48,619
+Selam.
+
+203
+00:43:58,675 --> 00:44:01,755
+Az sonra görüşmek üzere arkadaşlar.
+
+204
+00:55:00,115 --> 00:55:02,476
+Tekrardan merhaba arkadaşlar.
+
+205
+00:55:10,195 --> 00:55:24,035
+Şimdi lokal arama problemlerinin en ünlü denilen biriyle devam edeceğiz. Gezgin satıcı problemi.
+
+206
+00:55:26,415 --> 00:55:33,535
+Bu aslında adı üstünde bir gezgin satıcı var. Yani gitmek istediği belli şehirler var.
+
+207
+00:55:34,228 --> 00:55:40,667
+O şehirlerin hepsine gitmek istiyor. Ama hangi sırada gitmesi gerekiyor? Onu bulmak istiyor.
+
+208
+00:55:41,187 --> 00:55:50,527
+Amacı da giden toplam yolun minimum olması. Çok da fazla benzin harcamadan, çok da fazla zaman harcamadan gitmek istiyor.
+
+209
+00:55:50,947 --> 00:55:59,187
+Şeyimiz bu, problemimiz bu. Yani evimizde en tane şehir var. Bu en tane şehri hangi sırada biz birleştirelim? Nasıl bir rota bulalım ki?
+
+210
+00:55:59,679 --> 00:56:06,667
+Bu rotanın uzunluğu minimum olsun. Problem bu. Şimdi ben bunu...
+
+211
+00:56:10,963 --> 00:56:27,983
+Genetik algoritma ile çözmeye kalkarsan nasıl bir şeyler olabilir? Her türlü lokal arma algoritma çözebilirim. İlla şey yapmak zorunda değilim. Ama onunla şimdilik çözeceğiz.
+
+212
+00:56:31,380 --> 00:56:50,340
+Önce biz de mesela diyelim ki 8 tane şehir olsun. 8 tane şehri de şurada gördüğümüz Silist 1 ve Silist 2 gibisinden bunlar her birer iki tane çözüm önerisi. Birinci çözüm önerisi diyor ki mesela 3. Noğlu şehirden başta oradan 5'e git, 5'den 7'ye git, 7'den 2'ye git falan şeklinde bunu söylüyor. İkinci çözüm önerisi diyor ki işte böyle git.
+
+213
+00:56:51,380 --> 00:57:10,380
+Peki, bu her bir çözüm önerisinin iyiliğini nasıl hesaplayacağız? 3 ile 5'in arasındaki mesafe, artı 5 ile 2 arasındaki mesafe, artı 7 ile 2 arasındaki mesafe. Bunların hepsini topladığınızda şu yolun uzunluğu aslında bu çözüm önerisi için bizim fitness fonksiyonumuz, fitness değerimiz olacak.
+
+214
+00:57:10,963 --> 00:57:25,003
+Bu şekilde bunları ne yapabiliriz? Çıkartabiliriz. Mesela burada bir örnek verilmiş. Bu herhalde Amerika olması lazım. Kırk tane nokta var burada bakın. Kırk tane nokta var. Diyelim ki sizin bir popülasyonunuz var. Popülasyonunuzun büyütüğü yüz olsun.
+
+215
+00:57:27,699 --> 00:57:45,599
+Elimizde çözüm önerisi var. Her bir çözüm önerisi, kırk tane noktadan bahsettiğim için birden kırka kadar olan sayıların rastgele karıştırılmış halinden oluşuyor. Her bir çözüm önerisi böyle bir yapıda olmak zorunda. Bütün şehirlerden geçmesi gerekiyor çünkü çözümleri.
+
+216
+00:57:46,643 --> 00:58:13,943
+Peki, burada gördüğümüz şeyler neyi ifade ediyorlar? Şimdi bu sürecin en başında, yani daha birinci nesil diyelim, tamam rastgele bir şekilde oluşturulmuş birinci nesildeki en iyi bireyin ifade ettiği çözüm. Bu belli bir zaman geçmiş değil mi? İşte atıyorum ellinci nesil. Elli neslin içerisindeki en iyi bireyin çözümü bu. Bu da mesela belki yüzüncü nesil içerisindeki en iyi bireyin çözümü.
+
+217
+00:58:14,324 --> 00:58:41,104
+Gördüğünüz gibi zaman içerisinde epey bir iyileşme olduğunu görebiliyorsunuz gözünüzde. Bu bulduğumuz şeyden daha iyisi olabilir mi falan onu birazdan konuşacağız. Çok çok bir ihtimalle olabilir. Peki o zaman hani bunu yapmak mümkün gibi gözüküyor genetik alivoltumayla. Fakat birazcık düşündüğümüz gibi problemle karşı karşıya kalıyoruz. Ne o problem? Crossover. Şimdi crossover'ı normal standart haliyle uyguladırsak bu problemde,
+
+218
+00:58:42,132 --> 00:58:58,832
+Mesela Stilist 1 ve Stilist 2'nin bunlar olduğunu düşünelim ve buradan böldüğümüzü düşünelim. İşte burası ve burası bir şey oluşturacak. Neden ona? Bir çocuk oluşturacak. Şurası ve şurası bir çocuk oluşturacak. Bu çocukları burada görüyorsunuz.
+
+219
+00:58:59,284 --> 00:59:26,704
+Bu çocukların bir problemi var. Ne onlar? Bu çözüm listelerin problemi var. Bunlar çözüm önerisi değiller bir kere. Niye? Çözüm önerisi olabilmesi için her şeyden geçmeleri gerekiyor. Bunlar her şeyden geçmiyorlar. Görüyor musunuz? Mesela yukarıdaki 2'den geçmiyor, aşağıdaki 3'den geçmiyor. Burada 3'den 2 kez geçmiş. Yani standart bir crossover işlemi yapmaya kalkarsanız eğer, burada ne yapamıyorsunuz? Çözüm üretemiyorsunuz. Yani.
+
+220
+00:59:27,284 --> 00:59:48,644
+Çaylıklar bir çözüm olmuyor. Tamam mı? Ve böyle ilerlememiz mümkün değil. O zaman crossover işlemini ne yapmamız gerekiyor? Değiştirmemiz lazım. Peki nasıl değiştireceğiz crossover? Başka bir crossover türü. Uniform crossover. Uniform crossover da yapılan şu.
+
+221
+00:59:49,076 --> 01:00:00,275
+Parent 1 ve Parent 2'den, bakın, Child 1 ve Child 2 üreteceğiz. Bunu yapmak için Parent 1 ve Parent 2'nin, burada 10 şehirden oluşan 2 tane rota var.
+
+222
+01:00:01,012 --> 01:00:25,392
+Bir tane bir template oluşturuyor şu alta. Uzunluğu şeylerle aynı, önerilerle aynı. İçin 0 ve 1'lerden rastgele oluşturulmuş bir şekilde. Burası 0 ve 1'ler, şurası tamamen rastgele. Şöyle bir şey yapıyorum. Template'deki 0'lar için P1 ve P2'nin yerlerini değiştiriyorum. 1'ler için aynı oluyor. Mesela 1 ise T, o zaman A, E, çağrı da aynen kopyalıyorum. 0 ise yerleri değişiyor.
+
+223
+01:00:25,775 --> 01:00:36,215
+Birisi aynen kopyanıyor, birisi aynen kopyanıyor, sıfırsa yerleri değişiyor. Görüyorsunuz. Bu şekilde. Peki bunu yaptığımda bu gezginli satıcıya bir çözüm oldu mu böyle bir şey yaptığımda?
+
+224
+01:00:39,923 --> 01:00:50,699
+Olmadı hocam. Olmadı bu da olmadı. Çünkü çarpıcıyla görüyorsunuz C ile C tekrar ediyor. Çarpıcıyla E ile E tekrar ediyor. Dolayısıyla bunlar bizim yine...
+
+225
+01:00:50,739 --> 01:01:17,139
+İstediği şeyi çözemedim. Başka bir şey, sıra tavanlı crossover. Sıra tavanlı crossover başlangıcı uniform crossover'a benziyor. Yani şu 0, 1'den oluşan bir template oluşturması kısmı aynı. Bir template oluşturuyor biraz kere. Sonra çarp 1 için bakın çarp 1 için ne yapıyor? Template'de, template'de 1 olan indislerin, template'de 1 olan indislerin pvp2 değerlerini alalım.
+
+226
+01:01:21,204 --> 01:01:29,704
+Birdekileri diyor, birdekileri aldık. Şu bir, şu bir, sonra şu bir değil mi? Peki aldım.
+
+227
+01:01:29,704 --> 01:01:38,104
+Çağat bin aynı indisine koy. Sonra şuraya B yazdım, şuraya C yazdım, şuraya da F yazdım. Tamam yaptık. Peki iyi. Tamam.
+
+228
+01:01:38,104 --> 01:01:47,904
+Çağat bin'de bazı boşluklar kaldı. Evet kaldı doğru. Template'de sıfır olan, template'de sıfır olan, template'de sıfır olan indislerin
+
+229
+01:01:47,983 --> 01:02:13,703
+Ne onlar? İşte A0, D0, E0 bir de G0 değil mi? Sıfır olan indislerin. Parent 1'lik değerlerinden aldım. A, D, E, G. Peki bu A, D, E, G'yi ne yapacağım bakın. Bu hissedikleri Parent 2'deki sıralarına göre diz. Yani A, D, E, G'yi Parent 2'deki sıralara yani Parent 2'de hangisi önce giriyor mesela? İlk önce E'ye giriyor değil mi? Görüyor musunuz?
+
+230
+01:02:14,228 --> 01:02:40,527
+İlk önce E gelmiş. A, D, E, G'den ilk önce hangisi gelmiş? E gelmiş. Ondan sonra hangisi gelmiş? D gelmiş. Bakın D gelmiş. Sonra G gelmiş, en sonunda A gelmiş. Yani bunların sırasını değiştirelim. Adek, Edgar diye bir şey oldu. Tamam mı? Bu sıra bu sıraya dönüştürüm. Daha sonra da bu bulduğum şeyleri çarp birim boşluklarının bu sıraya doldu. Bakın şuralara bunları almış. Bunu buraya atmış.
+
+231
+01:02:41,300 --> 01:02:53,519
+Buraya atmış. Bunu buraya atmış. Bunu da buraya atmış. Şahit iki içinde çok benzer bir prosedür. Peki bu bir çözüm mü bizim gezgi satıcımıza?
+
+232
+01:02:55,280 --> 01:03:04,120
+Evet çözüm. Niye çözüm? Çünkü tüm her tarafı ulaşmış oluyor aynı zamanda. Hem de değişiklik. Şehirler tekrar etmiyor.
+
+233
+01:03:05,856 --> 01:03:29,196
+Şeylerini tekrar etmemesinin garanti altına alıyor. Nasıl garanti altına alıyor? Bakın, parent 1 ile child 1 tamamen bir kısmı olduğu gibi aynı yerde duruyor. Bakın, B, C ve F'sini düşünün. Onlar aynı yerde. Geri kalanlar ise sadece yerleri değişmiş haldeler. Yerlerini karıştırıyor sadece. Başka bir şey yapmıyor.
+
+234
+01:03:29,523 --> 01:03:42,463
+Kendini karıştırdığı için, yani parent ikiden parent bire bir aktarım söz konusu değil. Yani A ile E'nin yeri mesela burada şununla şunun yerini değiştirelim gibisinden bir şey yapılmıyor burada.
+
+235
+01:03:42,831 --> 01:04:03,532
+Tamam mı? Burada kendi içinde bütün değiştirmeler yapılıyor. Parent 1'in kendi içinde değişiklikler yapılarak çarp 1 oluşuyor. Parent 2'nin kendi içinde değişiklikler yapılarak çarp 2 oluşuyor. Bu sayede tekrarlı şehirler bizim için geçerli olmuyor burada. Tamam mı?
+
+236
+01:04:03,851 --> 01:04:04,911
+Hocam bir şey söylemeyeyim burada.
+
+237
+01:04:05,311 --> 01:04:05,572
+Tabii.
+
+238
+01:04:06,063 --> 01:04:12,264
+Hocam şimdi burada tamam, kendi içinde değişiklik yapıyoruz da, bu değişikliğin çokluğun azlığını biz doğruluğa göre mi belirliyoruz?
+
+239
+01:04:12,503 --> 01:04:15,983
+Veya da azlığa göre mi belirliyoruz, minimumluğa göre mi? Bir de şey soracağım.
+
+240
+01:04:15,983 --> 01:04:18,463
+Neyini dedim, bir daha söylesin. Neyini belirliyoruz?
+
+241
+01:04:19,083 --> 01:04:22,764
+Sonuçta biz template'le rastgele sıfırlar birler oluşturduk.
+
+242
+01:04:22,784 --> 01:04:23,063
+Evet.
+
+243
+01:04:23,304 --> 01:04:29,304
+Tamam, benim belki şeyim çok düşüktü. Sonucum çok düşüktü. Yani düşeği çok yakında, minimuma.
+
+244
+01:04:29,811 --> 01:04:37,172
+Şunu mu demek istiyorum? Parent 1'in başarısı mesela çok düşük, Parent 2'nin ki de çok düşük. Öyle mi diyorsun?
+
+245
+01:04:37,172 --> 01:04:43,372
+Yok, Parent 1 mesela çok yüksek. Template öyle bir geldi ki 0-0-0 geldi. Hepsini karıştırdık gitti yani.
+
+246
+01:04:43,372 --> 01:04:46,092
+Tamam, evet.
+
+247
+01:04:46,092 --> 01:04:50,251
+O zaman işte şey olmamış oluyor. Öncekine göre başarım artmamış oluyor aslında.
+
+248
+01:04:52,467 --> 01:05:16,387
+Olabilir. Evet, doğru diyorsun. Mesela bununla alakalı birkaç şeyden bahsedeceğim birazdan. Şart 1 ve şart 2 illaki parent 1 ve parent 2'den daha iyi olacak diye bir şart var mı? Yok. Temennimiz o mu? Evet. Ama bunu garanti altına alıyorum bu algoritmalar. Hiçbir şekilde almıyorlar. Tamam mı?
+
+249
+01:05:16,916 --> 01:05:25,316
+Dolayısıyla hani illaki ilerleme olacak diye bir şey yok burada. Şart yok. Tamam mı?
+
+250
+01:05:25,316 --> 01:05:36,716
+Ha bu ilerlemeyi sağlamak için ekstradan algoritmalara eklemeler yapılabilir mi? Evet yapılabilir. Bunun da bir örneğini göreceğiz zaten.
+
+251
+01:05:37,936 --> 01:05:41,396
+Tamam hocam bir de bir şey daha soracağım. Biz iki tane kullanıyoruz ya burada P&P P&2.
+
+252
+01:05:41,940 --> 01:05:49,940
+Bunun da hani şeyi yok. Öncesinde mesela ne yapıyorduk? Çaprazlıyorduk falan. İkisini. Burada çaprazlama da yok aslında. O zaman iki taneye de ihtiyaç yok gibi duruyor yani.
+
+253
+01:05:51,900 --> 01:05:57,539
+İki taneye ihtiyaç var çünkü karıştırırken peron ikideki sırasını kullanarak karıştırıyor.
+
+254
+01:06:00,360 --> 01:06:01,319
+He anladım.
+
+255
+01:06:02,719 --> 01:06:08,079
+Tamam, rastgele karıştırmıyor onları bak. Gördün mü? Peron ikideki sıralarına göre izliyor.
+
+256
+01:06:11,347 --> 01:06:13,347
+Anlamıyorum, sağ ol.
+
+257
+01:06:15,347 --> 01:06:17,347
+Yoksa...
+
+258
+01:06:22,347 --> 01:06:25,344
+Bu da hastalık olmam ama neyse, bakalım.
+
+259
+01:06:25,344 --> 01:06:33,743
+Şimdi, yoksa dediğin gibi, hani Parent 2'yi hiç kullanmıyor olsak, o zaman böyle ikili olmalarının bir manası olmaz.
+
+260
+01:06:33,864 --> 01:06:42,903
+Parent 1'den direkt şeyle, nedenle ona kendi içine değişikliklerle şey yapabiliriz, yeni çaytlar oluşturabiliriz.
+
+261
+01:06:42,903 --> 01:06:44,063
+Peki.
+
+262
+01:06:52,275 --> 01:07:17,475
+Şimdi burada bir problem, gezginli satıcı problemi, Mona Lisa versiyonu. Burada arkadaşlar 100 bin tane nokta var. Kimi yerler daha yoğun, kim yerler daha seyrek görebiliyorsunuz bunu. 100 bin tane noktayı elini kaldırmadan birleştiriyoruz. 100 bin noktayı elimizi kaldırmadan birleştiriyoruz.
+
+263
+01:07:20,052 --> 01:07:39,052
+Yani aslında 100 bin şehirli bir gezgin satıcı problemi bu. Tamam mı? Şunu birazcık daha büyütürsem daha net belki görürsünüz ne olup bittiğini burada. Görüyor musunuz? Yani tık tık tık tık bunların hepsi böyle birleştirmiş. 100 bin tane şehir var. Yani şurada mesela...
+
+264
+01:07:44,692 --> 01:07:57,071
+Burada kırk tane nokta için bu işlem yapılmıştı. Kırk tane belirli nokta için bu işlem yapılmıştı. Burada ise yüz bin tane nokta için bu işlem yapılmıştı.
+
+265
+01:08:11,764 --> 01:08:21,604
+Mümkün mü? Daha iyi bir çözüm bulunabilir. Ama mesela şundan emin olun. Benim bulduğum çözüm en iyi çözüm. Mesela böyle bir şeyi bu problem için söyleyebilir misiniz?
+
+266
+01:08:23,863 --> 01:08:25,824
+Söyleyemeyiz büyük ihtimalle. Niye?
+
+267
+01:08:26,984 --> 01:08:37,604
+Çünkü biz uzayda herhangi bir olasılığı, bir başladığımız noktadan geçtiğimiz herhangi bir şehre geldiğimiz anda diğer bütün olasılıkları elemiş oluyoruz ama...
+
+268
+01:08:38,323 --> 01:08:43,203
+Hani geri dönüp başka bir yerden gitsek belki daha iyi bir tanesini bulabilecektik ama geri gidemeyeceğimiz için.
+
+269
+01:08:43,203 --> 01:08:52,063
+Doğru, tamam. Yani bundan daha iyi bir, mesela bulduğumuz çözümden daha iyi bir çözüm olmadığını kanıtlamamız için ne yapmamız lazım?
+
+270
+01:08:52,563 --> 01:08:55,023
+Geri dönüp diğer yolları da denememiz lazım.
+
+271
+01:08:55,263 --> 01:09:00,323
+Bütün olasılıkları ortaya koymamız lazım değil mi? Bütün olasılıkları. Kaç tane olasılık var burada?
+
+272
+01:09:01,903 --> 01:09:02,224
+Çok.
+
+273
+01:09:02,983 --> 01:09:04,843
+Ne kadar? Sayısı belli.
+
+274
+01:09:07,188 --> 01:09:24,708
+Yüz bin çarpı dokuz yüz doksun yok. Kaç oluyor? Yüz bin üzeri yüz bin bence. Hayır. Yüz bin faktörü elden. Yüz bin faktörü. Yüz bin faktörün ne demek olduğunu hayal edin.
+
+275
+01:09:28,404 --> 01:09:32,524
+O kadar tane şeyi deneyeme ihtimaliniz var mı? Hiçbir şekilde yok.
+
+276
+01:09:33,324 --> 01:09:37,924
+Dolayısıyla bulduğunuz bir çözümün en iyi çözüm olduğunu bilmek mümkün değil böyle bir programda.
+
+277
+01:09:37,924 --> 01:09:45,244
+Hadi 40 faktörü falan belki hesaplarsınız. Anlatabilirim. Ama 100 bin tane nokta oluşan bir şey var elinizde.
+
+278
+01:09:46,224 --> 01:09:51,064
+Burada bulduğunuz çözümün en iyi çözüm olduğunu asla ama asla bilemeyeceksiniz.
+
+279
+01:09:52,083 --> 01:10:00,543
+Hocam ben şey söyleyebilir miyim? Mesela küçük uzayda denendi algoritma. En iyi yolu buluyor. Biz o zaman varsayamaz mıyız?
+
+280
+01:10:00,983 --> 01:10:02,743
+Bir daha söyle. Bir daha söyleyebilir misin?
+
+281
+01:10:03,183 --> 01:10:07,503
+Ufak uzayda en iyi çözüm bulan algoritma için büyük uzaylarda da en iyi çözüm buluyor diyemez miyiz?
+
+282
+01:10:07,503 --> 01:10:15,983
+Hayır. Bu NP tarzında bir problem. Yani en faktörelten şey var. Olası durum var.
+
+283
+01:10:16,319 --> 01:10:22,899
+Orada küçük uzayda iyi çalışan bir şey, büyük uzayda da en iyisini bulacak falan gibisinden bir şey.
+
+284
+01:10:22,899 --> 01:10:30,359
+Ki kaldı ki küçük uzayda da en iyisini bulduğunu garanti edemeyiz ki. Nasıl edeceksin onu?
+
+285
+01:10:30,639 --> 01:10:37,299
+Yani şey hocam mesela işte algoritmayı 100 bin tane şeyde örnekte çalıştırdım. Her biri işte 40 elemanlıydı falan.
+
+286
+01:10:38,199 --> 01:10:43,479
+Ondan sonra işte hepsinde de biliyorum yani şey, en iyi durumu biliyorum, en iyi yolu biliyorum. Hesapladım.
+
+287
+01:10:43,807 --> 01:11:03,468
+Yine emin olamazsın. Emin olamazsın. Emin olamazsın. Emin olamazsın, öyle söyleyeyim. Muhtemelen iyi bir algoritman vardır. Bulduğun çözüm muhtemelen iyi olacaktır. Ama buradaki mevzu şu, bir çözüm, yani bulduğun çözüm en iyi çözüm olduğunu bilmek mümkün mü? Bundan bahsediyorum ben.
+
+288
+01:11:05,468 --> 01:11:10,568
+Bunun pratikte bir anlamı var mı? Çok da fazla yok. Ne demek istiyorum?
+
+289
+01:11:11,199 --> 01:11:20,019
+Böyle problemi optimal çözümüne kimin ihtiyacı olur ki?
+
+290
+01:11:20,435 --> 01:11:45,175
+Yani, ne yapmak istersiniz siz? 5-10 dakikada yeterince iyi bir çözüm elde edip yolunuza devam etmek istersiniz. Mesela şimdi gezgin satıcı için düşünelim. Gezgin satıcı diyor ki bana bir tane rota çiz diyor. Siz de diyorsunuz ki, bir dakika bekle sana bir tane rota çizeceğim. Sonra bekliyor, veriyorsunuz. Ya diyorsunuz ki mesela işte,
+
+291
+01:11:46,387 --> 01:11:53,967
+Bir ay daha bekle. Sana bu bulduğum rotadan daha iyi. Ne bileyim ben, belki 3-5 kilometre daha kısa bir rota bulacağım.
+
+292
+01:11:54,515 --> 01:12:13,475
+Mesela diyebilirsiniz, kabul eder mi? Büyük ihtimalle etmez. Yani pratik manada düşünürsek yeterince uygun, pratik zamanında, kabul edilebilir bir çözümle hareket etmek gerçek hayatta olan şey bu.
+
+293
+01:12:15,252 --> 01:12:39,792
+Lokal arama algoritmalarının amacı zaten bu. Lokal arama algoritmaları arama uzayının çok çok büyük olduğu durumlarda kullanıcılara yeterince iyi bir çözümü kabul edilebilir bir zamanda sunmayı hedefliyorlar. Optimal çözüm sunmak gibisinden bir vaatleri zaten yok olamaz. Anlatabildim mi?
+
+294
+01:12:42,804 --> 01:12:45,923
+Yani tasarım amaçları o değiliz. Öyle söyleyeyim.
+
+295
+01:12:57,011 --> 01:12:57,871
+Devam edelim.
+
+296
+01:13:01,332 --> 01:13:02,372
+Başka bir problem.
+
+297
+01:13:03,271 --> 01:13:05,192
+Şöyle bir fonksiyonumuz var elimizde.
+
+298
+01:13:05,412 --> 01:13:08,612
+fx eşitir kosinus x bölü 3 çarpı sinüs x bölü 4.
+
+299
+01:13:09,532 --> 01:13:12,271
+Bu fonksiyonun, size bu fonksiyonu verir.
+
+300
+01:13:12,352 --> 01:13:16,572
+Bu fonksiyonun 0, 1, 2, 3, 4, 5 bölü 128 tane değer var.
+
+301
+01:13:16,672 --> 01:13:21,372
+Bu 128 tane değerden hangisi için maksimum olduğunu bulmak istiyorum.
+
+302
+01:13:22,836 --> 01:13:27,396
+Bu 128 tane değerden hangisi için bu fonksiyonun maksimum olduğunu bulmak istiyorum.
+
+303
+01:13:28,056 --> 01:13:42,536
+Şimdi bu şeye baktığımızda, fonksiyonun kendisine baktığımızda, çizdirip baktığımızda, lokal arama algoritmaları için hiç güzel bir şey olmadığını fark edebiliyor musunuz?
+
+304
+01:13:44,175 --> 01:13:46,595
+Uzay olmadığını fark edebiliyor musunuz?
+
+305
+01:13:48,155 --> 01:13:49,556
+Lokal arama algoritmaları için.
+
+306
+01:13:50,355 --> 01:14:06,355
+Çok sayıda lokal maksimum var, görüyor musunuz? Ve minimum var, bir sürü. Çok küçüklük değişiklikler, sonuçları çok fazla etkilecekler vs. Dolayısıyla optimizasyon yapmak için hiç çok güzel bir fonksiyon yok elimizde.
+
+307
+01:14:06,771 --> 01:14:33,352
+Peki ama hani yapabiliriz, yapabiliriz tabii ki. Şimdi bu 128 tane farklıları temsil etmek için işte bir v0 ve binary karşılıklarını düşünürsek bu dört tane sayı düşünemez. Bu dört tane sayı işte üç mesela burayı gösteriyor. Bu yüz küsur işte buralarda bir yeri gösteriyor falan. Böyle bu dört tanesiyle başlayıp adım adım adım adım bu dört taneden yeni dört tane falan böyle bulup ilerlemek mümkün. Crossover'ında falan da problem yok bunun. Demin ki bahsettiğiniz gibi gezgin satıcı da olduğu gibi.
+
+308
+01:14:34,771 --> 01:14:37,292
+değere yani bu erişebiliriz.
+
+309
+01:14:37,792 --> 01:14:39,091
+Ama zaten burada bu
+
+310
+01:14:39,091 --> 01:14:40,832
+128 tane değer olduğu için
+
+311
+01:14:40,832 --> 01:14:42,671
+arama uzayı zaten çok küçük.
+
+312
+01:14:42,891 --> 01:14:45,011
+128 tane farklı değer var. Tam sayıda
+
+313
+01:14:45,011 --> 01:14:46,891
+bunlar. O zaman
+
+314
+01:14:46,891 --> 01:14:48,572
+zaten hepsini deneme şansımız var.
+
+315
+01:14:48,872 --> 01:14:50,952
+Herhangi bir sıkıntı yok. Ama
+
+316
+01:14:50,952 --> 01:14:53,072
+hani fonksiyon otomizasyonu
+
+317
+01:14:53,072 --> 01:14:55,112
+burada bunu bir örnek olarak verdim. Gerçekte
+
+318
+01:14:55,112 --> 01:14:56,692
+bir tane fonksiyon böyle mi olmaz?
+
+319
+01:14:56,931 --> 01:14:57,051
+Tamam.
+
+320
+01:14:58,471 --> 01:14:59,792
+Tam sayıda olmaz.
+
+321
+01:15:00,404 --> 01:15:15,424
+Tek parametreye sahip olmaz. Tek parametre değil de mesela iki parametre işin içine girdiği zaman, X ve Y için bunları yaptığınızda bir anda arama uzayı 128x128'e dönüşüyor.
+
+322
+01:15:16,020 --> 01:15:37,240
+Tam sayı için yapsanız bile. Tam sayıdan kurtulmaya kalkarsanız o zaman işte iyice, tabii orada illaki bir precision değeri kullanmanız gerekecek. Çünkü kromozonların boyutunu bir şekilde tanımlamanız gerekiyor. Yani bir güden sonra kaç basamak gidilecek falan gibisinden bir şey kesinlikle tanımlamanız lazım. Yoksa sonsuz uzunlukta bir şey tanımlayamazsınız.
+
+323
+01:15:37,747 --> 01:15:52,667
+Dolayısıyla burasını birazcık daha çözünürlüğünde arttırmak ya da daha da fazla fonksiyonla parametre eklemek yani sadece x için değil de x-y ikilisi ya da x-y z üçlüsü falan gibisinden durumlarda bunların 3'ünün birden optimum olduğu yeri.
+
+324
+01:15:53,203 --> 01:16:12,543
+Bulmaya çalıştığımızda işler ne olacak? Giderek uzay, bütün uzayları taramak imkansız hale gelecek. İmkansız hale geldiği durumda da ne yapacaksınız? Lokal ara maligotmanları kullanacaksınız. Lokal ara maligotmanlarla genetik ağırlıkları mesela arka yönteminde bilir misiniz? Evet, kullanabilirsiniz. Diğerlerinde kullanabilirsiniz.
+
+325
+01:16:13,363 --> 01:16:17,163
+Bunu geçelim. Bu sekiz taş buna bakarsanız siz.
+
+326
+01:16:17,876 --> 01:16:32,596
+Genetik arvurganın performansına etkilen birçok faktör var. Bunlardan bir tanesi işte popülasyon ne kadar büyük olursa hesaplama kanmışlık o kadar fazla oluyor ama çeşitliği hala tutabiliyorsunuz. Mutasyon oranı, bu biraz şeye benziyor mutasyon oranı.
+
+327
+01:16:41,524 --> 01:16:50,024
+Bir sıcaklık diğeri vardı, böyle şey sağlıyordu. Kötüleşme olursa da kabul etme üzerine bir şeydi. Mesela başlangıçta...
+
+328
+01:16:53,908 --> 01:17:06,827
+Kötüleşme olursa da kabul etme ihtimali daha yüksekken zaman içerisinde onu yavaş yavaş azaltıyor. Yani ancak iyileşme olursa kabul edilir. Burada da mutasyonlar aslında başlangıçta yüksek genelde kabul edilir, alınır. Daha sonra zaman içerisinde azaltılır.
+
+329
+01:17:07,199 --> 01:17:23,439
+Mutasyon da bir şekilde neyi sağlıyor? Bulunduğunuz yerden daha kötü bir yere gitmek gibi bir şey de olabilir. Mutasyon yaptığınızda iyileştirdi, kabul edeyim, iyileştirmedi, reddedeyim gibi bir şey yok hatırlarsanız.
+
+330
+01:17:32,944 --> 01:17:37,524
+İyileşme yoksa reddediyorum falan gibi bir mekanizma bakın genetik algoritmanın içerisinde yok.
+
+331
+01:17:40,844 --> 01:17:50,844
+Anca ne var? İşte bu sonda bulduğunuz şeylerde seçilmezse mesela bir şey, o zaman o artık bir sonraki nesne ne yapamaz? Kendisini aktaramaz. Öyle bir şey olur.
+
+332
+01:17:56,756 --> 01:18:09,716
+Mutasyon oranı dediğim gibi. Koronazal 1'le benzemeyen başlarında hala çözüm noktanın uzağında bulunuyorsa mutasyon işleri genetik algoritma sıkıştığı yerden kurtarabilir. Yani mesela şöyle bir örnek vereyim.
+
+333
+01:18:18,739 --> 01:18:32,119
+Şöyle bir pembe dağımız var mesela diyelim ki. Bizim bütün bireylerimiz mesela bu küçük dağın üstünde verse.
+
+334
+01:18:38,119 --> 01:18:40,139
+Ya da işte hepsi birden.
+
+335
+01:18:51,188 --> 01:18:57,188
+Böyle bir tane. Düzlüğe denk geldilerse. Hepsi bir an burada.
+
+336
+01:18:59,188 --> 01:19:06,188
+Buralarda crossover falan çok fazla işe yaramayabilir. Bu durumda işe bizim mutasyon gibisinden operatörler kullanabilir.
+
+337
+01:19:06,188 --> 01:19:12,188
+Yani zaten genetik algoritmaların iki tane operatörü çok. Yani seçmeyi de bir operatör sayabilir misiniz?
+
+338
+01:19:12,188 --> 01:19:17,188
+Sayabilir misiniz de. Ama aslında değişiklik yapan crossover ve mutasyon.
+
+339
+01:19:17,203 --> 01:19:26,163
+Birinin işe yaramadığında diğerinin müdahale etmesi mümkün hale geliyor aslında. Değişik iki tane mekanizmasının olmasının öyle bir avantajı var.
+
+340
+01:19:32,948 --> 01:19:43,268
+Kaç noktadan çaprazlama yapılacağı, çaprazlama sonucunda evlenen bireyleri nasıl değerlendireceği, durumun nasıl kodlandığı, fitness fonksiyonu, bunların hepsi genetik albördünün performansına etkiliyorlar.
+
+341
+01:19:44,688 --> 01:19:54,248
+Pozitif yönleri işte lokal maksimum ve pilotlardan kurtulabilirler. Kurtulurlar değil, kurtulabilirler sadece. Pozitif yönleri doğal temelde olduğu söyleniyor.
+
+342
+01:19:54,248 --> 01:19:59,768
+Negatif yönü ayarlanabilir, çok fazla parametresi var. Bunu anlamış.
+
+343
+01:20:00,000 --> 01:20:10,239
+Buradaki çok fazla hiperparametre aslında, öyle şöyle hiperparametre sahip. Bir problemde gösterdiği başarı başka bir problemde tekrarlaması zor o yüzden. Yani çok fazla şeye bağlı olduğu için.
+
+344
+01:20:11,699 --> 01:20:20,479
+Bazı problem türleri için iyi ama tepe tırmanmaya farklı başlangıçlarla tekrarlamaktan ya da paraya tepe tırmanmaktan daha iyi olduğuna dair matematiksel bir kanıt yok.
+
+345
+01:20:20,479 --> 01:20:27,600
+Bazı problemleri yetkili çözebiliyor ama diğerleri de bazı problemleri genetik ayırtlarından dair çözebiliyor.
+
+346
+01:20:30,292 --> 01:20:51,292
+Geçen hafta problem çözmüştük. Bir alanı tarasın ama minimum dönsün, dönme açılarını küçüklük yapsın. Bu sayede hızlı gidebilsin. Belki bir drone'un...
+
+347
+01:20:55,220 --> 01:21:09,100
+Aslında bir tek drone dedi. Yani yer aracı için de aynı şeyi düşünebilirsiniz. Ne kadar keskin dönüşler yaparsanız hızınızı o kadar ne yapmanız gerekir? Düşünmeniz gerekir. Ne kadar smooth hareket ediyorsanız o kadar hızlı hareket edebilirsiniz.
+
+348
+01:21:10,480 --> 01:21:16,960
+Bununla alakalı bir örnek yapmış. İşte hareketler arasındaki açı miktarı az olsun, yumuşak dönüşler yapsın.
+
+349
+01:21:20,275 --> 01:21:29,615
+Geniş bir alanı geçsin. Böyle iki tane şeyimiz vardı. Bunu genetik algoritmada da geçe yapabilir miydik? Evet, burada onu görüyoruz.
+
+350
+01:21:32,195 --> 01:21:43,755
+Tabii geçen sefer tepe tırmanmanı şöyle bir şey yapmıştık. Bir yerden başlamıştık, onu iyileştiremediğimiz kadar iyileştirmiştik. İyileştiremediğimiz noktada tekrardan random restart yapmıştık.
+
+351
+01:21:47,444 --> 01:21:51,444
+Tek bir çözümle başlamayacağız. P-ADET çözümle başlayacağız.
+
+352
+01:21:55,444 --> 01:22:00,444
+Ve G-Kesişe çözümlerden çaprazlama mutasyonuna geri P-ADET çözümle giriyor.
+
+353
+01:22:00,444 --> 01:22:02,444
+Çaprazlama iki noktadan yapmışız.
+
+354
+01:22:02,444 --> 01:22:08,444
+Rütülen çözümlerin iyilik değerleri hesaplanmış. Yeni nesilli alırken, bakın şöyle enteresan bir şey yapmışım.
+
+355
+01:22:09,444 --> 01:22:13,420
+Eski neslin bir kısmını ve yeni neslin bir kısmını almışım.
+
+356
+01:22:13,876 --> 01:22:35,816
+Orjinal algoritmalar eski nesilin bir kısımını almak veren gibisinden bir şey yok. Burada ne yapmışım ben? Eski nesilden iyi olanları hala içeride tutmuşum popülasyonun içerisinde. Onları bir nesil daha yaşamak bir şeyi vermişim. Yeni üretilen nesilin tamamı değil, onun da bir kısmını almışım. Onların da belki en ilk kısmını almışımdır. Koda bakıp anlaşılabilirim.
+
+357
+01:22:36,500 --> 01:22:58,039
+Şimdi burada şu grafikte aslında şunları görüyoruz. Çeşitli hiperparametre derler. Beş bin büyüklüğün popülasyondan bahsediyorum. Mutasyonunu 0.01, G202 noktadan çaprazda ve yapılmış yeni nesil eski ve yeni nesilin en iyi yarılarını tutmuşuz.
+
+358
+01:22:58,452 --> 01:23:04,192
+Geri kanları bırakmışız. Bu mesela başlangıçtaki 5000 tane çözümden rastgele seçen birisi.
+
+359
+01:23:04,192 --> 01:23:22,891
+Bu, pardon, burada süreç ilerlerken 200 nesil ilerletmişim. 200 nesil ilerlerken kırmızı olan kısım popülasyondaki bütün bireylerin nesiller boyunca ortalama iyilikleri, fitnessleri.
+
+360
+01:23:25,716 --> 01:23:45,056
+O neslinin içerisindeki en iyi bireyin fitnesi. Burada fitnes şey, ne kadar küçük o kadar iyi. Bu da işte en son 200. adımda popülasyonumuzun içerisindeki en iyi 5000 tane, en iyi sayeniz ise onu burada görüyorsunuz.
+
+361
+01:23:45,747 --> 01:24:03,688
+Bu dediğim gibi bir uygulaması. Bu da zaten onun karşılığı, şu gibi rakamlar falan. Görebilirsiniz ki bu yaptığı hareket falan. Şöyle başlıyor. Şuradan başlıyor. Birbiri buradan başlıyor. Yedi, yedi, yedi, yedi. Şöyle yeterli. Birbirinden başladı gözükmüyor. Daha düz ben çizdim.
+
+362
+01:24:03,688 --> 01:24:13,268
+Bu bir uygulamaydı. Şimdi başka bir uygulama. İki nokta arasında yol bulmaktan bahsedeceğiz bu sefer.
+
+363
+01:24:13,663 --> 01:24:36,703
+Ve iyilik fonksiyonumuzu 3 tane vereceğim. Birincisi minimum açığım, ikincisi maksimum ağım. Üçüncüsü ise vardığınız yerin hedefe yakınlığı. Yani ben bir başlangıç noktasına bir hedef noktasına gideceğim. Mümkün olduğu kadar çok yer gezerek gideceğim. Ama aynı zamanda da dönüşlerim de smooth olacak.
+
+364
+01:24:36,703 --> 01:24:39,203
+Böyle.
+
+365
+01:24:41,300 --> 01:25:08,940
+Bir şeyim var. Burada yine çok benzeyen bir yapıyla çözümlere gitmişiz. Burada bulunan bazı çözümler var. Mesela işte şuradan bir yerden başlamış, şöyle gitmiş, sonra böyle gitmiş, sonra böyle gitmiş, sonra kaymış, şöyle şöyle şöyle. Amaç bu noktadan bu noktaya gitmek. Niye dümdüz gitmiyor diye soracaksınız. Yani buradaki amacımız dümdüz gitmek değil zaten. Buradaki amacımız mümkün olduğu kadar çok yer gezer, devriye atıyorsunuz mesela öyle söyleyelim.
+
+366
+01:25:09,747 --> 01:25:15,747
+Her bir adımınızın da süresi belli. Belli sayıda adım atmanız gerekiyor. Öyle düşünün.
+
+367
+01:25:15,747 --> 01:25:24,747
+Ve ben bunu nasıl atarsam en fazla yer gezerim. Aynı yerden bir daha geçmem gibi.
+
+368
+01:25:24,747 --> 01:25:31,747
+Bu işi yaparken de minimum miktarda açı dönmesiyle bu işi yapacak diyebilirsiniz.
+
+369
+01:25:31,747 --> 01:25:33,747
+Burada çeşitli bir cihar var.
+
+370
+01:25:34,771 --> 01:25:38,311
+Bulduğu çözümler var. Bunun korkarına bakarsınız.
+
+371
+01:25:40,971 --> 01:25:46,731
+Yani bir A notasından bir B notasından bir PET bulmak için de genetik algoritmayı kullanabilir misiniz?
+
+372
+01:25:46,731 --> 01:25:49,532
+Evet, kullanabilirsiniz. Burada onu da görmüş oluyorsunuz.
+
+373
+01:25:52,032 --> 01:25:58,012
+Yilik fonksiyonu nasıl birleşir? Şimdi şöyle bir şey gördü. Üç tane fitness fonksiyonu, üç tane birleşeni var dedi.
+
+374
+01:25:58,100 --> 01:26:07,000
+Daha önce iki birleşenliği olabildiğinden bahsediyorum. Teknisi zaten hep insanlar. En azından bir tane birleşenliğinin olması lazım.
+
+375
+01:26:08,460 --> 01:26:18,100
+Ama fikir burada ne? Birden fazla birleşeni birleştirebiliyoruz. Ama bu birleştirme işleminde biraz dikkatli olmak lazım.
+
+376
+01:26:18,100 --> 01:26:22,100
+Nasıl dikkatli? İşte bir tane şeyi...
+
+377
+01:26:24,115 --> 01:26:48,115
+Minimum yaparken, öndeki şey maksimum yapıyorsak, onları toplarsak çok da makul bir hareket yapmamış oluruz. Bir tanesi arttırmak, bir tanesi azaltmak istediğim iki şeyi toplayıp hareket edersek o çok çok iyi bir şey olmaz. Ya da mesela ölçekleri aynı değilse etkileri bunların direkt olarak farklılaşır. Yani bir tane mesela...
+
+378
+01:26:51,283 --> 01:27:01,463
+Mesela açı, atıyorum, bütün süreç boyunca gezindiği açılar, mesela beş yüzle beş bin arasında değişiyor olsun.
+
+379
+01:27:01,463 --> 01:27:15,283
+Maksimum alanda, gezdiği alan sayısı da elli, sıfırla elli arasında olsun. Bir tanesi beş binlerden başlıyor, bir tanesi elliden başlıyor. Bunları toplamaya kalkarsanız, ne yapmış olursunuz? O beş binlik olanın etkisini...
+
+380
+01:27:15,408 --> 01:27:23,768
+Arttırmış olursunuz kesinlikle. Bunu istiyor da olabilirsiniz ama bile iste yapıyorsanız sıkıntı yok ama yanlışlıkla yapıyorsanız kötü bir şey.
+
+381
+01:27:25,068 --> 01:27:36,808
+Ölçekler halinde ise etkileri farklılaşır, normalize etmek gerekir. Min-maxları birbirine dönüştürmeniz lazım. Bir tanesinin minimizasyonu, bir tanesinin maksimizasyonu aynı anda yapmasanız tek bir yapıyla kurmak zor.
+
+382
+01:27:39,699 --> 01:27:50,340
+Ama ağırlıklı işlem gerekebilir mi? Önemli bir dereceleri farklıysa evet olabilir. Bu da olmayacak bir şey değil. Toplama çıkarma maksimali, minimum gibisinden yapılabiliyor.
+
+383
+01:27:58,963 --> 01:28:03,463
+Şimdi son iki slide'ımız kaldı. Ondan sonra zaten ödeve geçeceğim.
+
+384
+01:28:06,184 --> 01:28:16,123
+Şimdi genetik algoritmadan bahsettik. Şimdi bahsedeceğim şey genetik programlama. Ve bu genetik algoritma değil.
+
+385
+01:28:16,783 --> 01:28:20,943
+Tamam mı? Yani isimlerine benziyorlar ama aynı şey değiller.
+
+386
+01:28:22,724 --> 01:28:25,603
+Şimdi genetik programlama şöyle bir şey.
+
+387
+01:28:28,467 --> 01:28:40,067
+Acaba genetik algoritmlar program yazabilirler mi? Bunun üzerine çalışmaların olduğu bir alan. Yani tamamen bağımsız iki tane alan değil.
+
+388
+01:28:41,667 --> 01:28:47,667
+Peki genetik program da neymiş? Programlama dillerindeki her geçerli program bir parse 3 ile ifade edilebilir.
+
+389
+01:28:47,667 --> 01:28:54,067
+Yani işte compiler dediğimiz şey ne yapıyor? Onu parçalıyor değil mi? Ağacı oluşturuyor parse 3'yi.
+
+390
+01:28:54,931 --> 01:29:07,072
+Elimizde en adet program ya da ağaç olsa bunları kullanıp yeni programlar üretebiliriz. Ne demek istiyor? Mesela şimdi şu ağacı düşünün. Bu bir ağaç. Bu da başka bir ağaç. Bu da başka bir işlem ağacı. Bu da başka bir işlem ağacı. Görebiliyor musunuz?
+
+391
+01:29:08,292 --> 01:29:17,351
+Ben burada ne diyelim? Kolbacak değişimi yapabilir miyim? Mesela işte.
+
+392
+01:29:18,131 --> 01:29:25,391
+Öteki tarafta seçtiğim bir yeri değiştirerek. Mesela burada o yapılmış. Şu gördüğümüz şey.
+
+393
+01:29:30,963 --> 01:29:42,644
+Şu gördüğünüz şey şuraya aktarmış. Şu gördüğünüz kısım ise şuraya aktarmış.
+
+394
+01:29:46,131 --> 01:30:03,851
+Bunu tabii burada işte şu x kare artı y bölü iki gibisinden bir matematikte ifade içeriyor bu. Bu da yine benzer bir şey içeriyor. Bu ikisinden yine iki tane matematikte ifade etmiş oluyoruz.
+
+395
+01:30:06,851 --> 01:30:13,771
+Mesela burada, kutlayarak kullanmış bir sayı üretin.
+
+396
+01:30:14,292 --> 01:30:20,292
+Yeni crossover mutasyonun yeni ağaçları üretiliyor. Tabi burada hani şeyler birbirinden farklı olabilirler.
+
+397
+01:30:20,292 --> 01:30:26,292
+Yapmanız gereken crossover tipleri, mutasyon tipleri birbirinden farklı olması gerekebilirler.
+
+398
+01:30:26,292 --> 01:30:34,292
+Ama dediğim gibi hani özünde yine o crossover mutasyonu içeren değişikler yapabilirsiniz.
+
+399
+01:30:34,292 --> 01:30:39,292
+Ve bir ağacın üstünde bu sefer bunları gerçekleştiriyorsunuz o zaman. Bir dizinin üzerinde değil, öyle söyleyeyim.
+
+400
+01:30:39,667 --> 01:30:51,467
+Çünkü program yazmaya çalışıyoruz burada. Program program yazmaya çalışırken de, bu parse 3 üzerinde bütün birleşiklikler yapılabiliyor.
+
+401
+01:30:58,355 --> 01:30:59,976
+Şimdi bu...
+
+402
+01:31:03,859 --> 01:31:13,639
+Şu sayıları kullanarak şu sayı üret gibisinden bir problemden biraz daha soru ne olabilir? Mesela 10 elemanla herhangi bir dizi sıralacak kodu üret.
+
+403
+01:31:16,579 --> 01:31:29,859
+Genetik programlamayla. Bu biraz daha zor bir şey. 10 elemanla herhangi bir dizi sıralacak kodu üretmek. Peki burada şeyi söyleyeyim size. Burada bir...
+
+404
+01:31:30,131 --> 01:31:38,291
+Program var yazdınız ve bunu veriyorsunuz. O programın fitness fonksiyonu ne olacak?
+
+405
+01:31:49,619 --> 01:31:51,019
+Yani neye göreleledik?
+
+406
+01:32:02,963 --> 01:32:25,023
+Aslında şurada yazıyor bakın. Yani mesela şöyle bir şey yapabilirsiniz. 10 elemanlı bir sürü dizi oluşturuyorsunuz. Sizin programınız bu bir sürü diziden, işte kadet görevden yüzde kaşının başardığına göre ne yapabilirsiniz? Uygunluğu kullanabilirsiniz. Bunu kullanabilirsiniz. Peki.
+
+407
+01:32:28,115 --> 01:32:55,916
+Burada bazı problemler karşımıza çıkacak. Mesela onları geçmeden önce, mesela biraz daha zor ne? En elemanlı bir zil sıralayan kodu yöntem. Bu biraz daha zor bir şey. Onun elemanlığı üretmeye göre, o en elemanlığı üretmek. Burada kopya çekme ihtimali daha yüksek ama burada kopya çekme ihtimali biraz daha yüksek. En zorun herhangi bir görev tanımını koda dönüştürmek. Bu da günümüzde yavaş yavaş genetik programlamaya da...
+
+408
+01:32:56,020 --> 01:33:00,700
+Olmasa bile bu taşlar yapılmaya çalışılabiliyorsunuz.
+
+409
+01:33:00,700 --> 01:33:03,740
+Yani başarılar da elde edilmeye başlandı.
+
+410
+01:33:05,420 --> 01:33:10,180
+Genetik programlamaya bu işleri yapmaya kalktığınızda nasıl sorunlar ortaya çıkıyor?
+
+411
+01:33:14,140 --> 01:33:19,580
+Mesela, uyguluk fonksiyon olarak karret görevden kaçını başardığını kullansak,
+
+412
+01:33:19,580 --> 01:33:22,060
+10 yöremin 7'sini başaralım.
+
+413
+01:33:23,283 --> 01:33:30,903
+Dokuzun başına göre daha mı görür? Burası soru işareti. Mesela şöyle bir şey düşünün.
+
+414
+01:33:32,343 --> 01:33:36,123
+Sıralama yapan bir kod var elinizde, küçükken böyle sıralama yapıyor.
+
+415
+01:33:38,223 --> 01:33:45,543
+Kodun içerisindeki minnacık bir değişiklik bile, bakın şu kadar minnacık bir değişiklik bile.
+
+416
+01:33:46,739 --> 01:33:56,739
+10 görevden 10'unu yapabiliyorken, 10 görevden 0'unu yapabilir konuma düşüyo. Anlatabildim mi? Büyü küçüktür, yaparsanız hiç gider.
+
+417
+01:34:05,427 --> 01:34:09,188
+Aynı işi yapan konular gerekirse konulukları oluşabiliyorlar vesaire vesaire.
+
+418
+01:34:12,367 --> 01:34:12,707
+Peki.
+
+419
+01:34:15,207 --> 01:34:21,967
+Benim bugün ders anlamında anlatacaklarım bu kadar. Şimdi gelelim ödevinize.
+
+420
+01:34:29,587 --> 01:34:33,747
+Ödebilece erişebildiniz değil mi? Şu anda online diziatörde görebiliyor olmanız lazım.
+
+421
+01:34:33,747 --> 01:34:34,467
+Baktınız mı?
+
+422
+01:34:34,467 --> 01:34:35,467
+Ödebilecek.
+
+423
+01:34:35,467 --> 01:34:36,947
+Tamam, güzel.
+
+424
+01:34:36,947 --> 01:34:41,987
+Ödebilecek konusu, genetik algoritma ya da tepe tırmanma. İkisinden bunu kullanabilirsiniz.
+
+425
+01:34:41,987 --> 01:34:45,827
+Önemli değil. Metin sınıflandırma yapacağız.
+
+426
+01:34:45,827 --> 01:34:48,068
+Metin sınıflandırma nasıl edeceğiz?
+
+427
+01:34:48,068 --> 01:34:53,347
+İki sınıfı en az 100 örnek içeren metin sınıflandırma veri küresi bulmuşsun.
+
+428
+01:34:53,347 --> 01:34:55,747
+İyi, bulduk. Tamam.
+
+429
+01:34:56,627 --> 01:35:19,568
+Mesela burada sınıflandırma veriklimesi olduğu için bunlar belli bir şekilde sınıflandırılması yapılmış, etiketlendirmesi yapılmış olmalı. Yani olumlu metinler var, olumsuz metinler var mesela. Spor metinleri var, ekonomi metinleri var mesela. Bunun gibi böyle veriklimesi oluşturuyorsunuz. Buluyorsunuz. Peki ne yapacağız? Derdimiz ne?
+
+430
+01:35:20,659 --> 01:35:44,220
+Genetik algoritma, ne de işte lokal armayla, bu gelen bir metnin sınıfını bulmaya çalışacağız. Bu birazcık garip geliyor. Yapacağımız şey şu. Bireylerimiz bakın, en adet kelime içen bir liste ne olacaklar? İlk kısmı birinci sınıfa, son kısmı ise ikinci sınıfa ait olmayı ifade edecek. Yani atıyorum sizin eliniz on olsun mesela.
+
+431
+01:35:44,916 --> 01:35:55,435
+10 tane kelimeden oluşacaksınız, bir bireyiniz. Bunun ilk 5'i birinci sınıfı ifade eden kelimeler, ikinci 5'i ise ikinci sınıfı ifade eden, yani iki sınıf dedik ya.
+
+432
+01:35:57,195 --> 01:36:09,855
+Mesela burada örnek bir birey mesela güzel ve harika, müthiş, sonra mesela berbak kötü falan beğenme olacak. Ne olursa o birey 100 örneği, bakıştık ne yapacağız bunu kullanarak böyle bir bireyiniz olduğunu düşünün, tamam mı?
+
+433
+01:36:11,123 --> 01:36:20,043
+Yüz örneği, yüzten örneğiniz var ya, bu kelimeleri içermelerine göre sınıflandıracak ve bir sınıflandırma başarısını elde edecektir. Bu başarı deri fitness fonksiyon olarak kullanılacaktır.
+
+434
+01:36:21,083 --> 01:36:31,583
+Yani mesela, peki, sınıflandırmada metnin içerisinde bir kelimenin kaçının birinci sınıfa, kaçının ikinci sınıfa ait listeleri olduğu bulunarak bu değerlere göre işlem yapılabilir.
+
+435
+01:36:36,180 --> 01:37:01,100
+O metnin içerisinde buradaki kelimelerin ne kadarı var? O sınıfa dair, o sınıfı ifade eden kelimeler. Yani birinci taraf dediğim gibi birinci kısım A sınıfı ya da birinci sınıfı ifade ediyor. İçinci kısım B kısım ya da iki sınıfı ifade ediyor. Buradaki kelimelerden ne kadarı bu metnin içerisinde var? Buradaki kelimelerden ne kadarı bu metnin içerisinde var? Bunların arasındaki farka göre siz sınıflandırmayı ne yapabilirsiniz, gerçekleştirebilirsiniz.
+
+436
+01:37:01,587 --> 01:37:03,967
+Berberlik durumunda sıfır rastgele seçebilirsiniz.
+
+437
+01:37:05,347 --> 01:37:08,807
+Başlangıçta kelimeler tüm bireylerden rastgele seçilerek atanacak.
+
+438
+01:37:08,948 --> 01:37:15,547
+Süreç boyunca krosover rastgele kelime değiştirme gibi işlemle uygulayarak bireylerin fitness değeri yükseltilmeye çalışılacak.
+
+439
+01:37:16,448 --> 01:37:20,108
+Bireylerin kelime listeleri genetik algoritma, etabitim, anlayı optimize edilecek.
+
+440
+01:37:21,307 --> 01:37:26,488
+Kelime listeleri bakın. Nasıl optimize edeceksiniz?
+
+441
+01:37:27,220 --> 01:37:38,939
+Crossover burada olur mu? Olur. Ama kendi içlerinde, yani birinci kısmının içinde, yoksa birinci kısımda ikinci kısımın arasında Crossover yaparsanız çok iyi bir hareket olmaz.
+
+442
+01:37:38,939 --> 01:37:50,779
+Ama kendi içlerinde, yani iki tane bireyin birinci kısımları arasında Crossover yaptırabilirsiniz. Ya da ne yaptırabilirsiniz ki onu da sağlam şekilde yapmanız gerekecek.
+
+443
+01:37:52,051 --> 01:38:16,171
+Elinizde bir sözcük listesi olacak. Bu sözcük listesinin içerisinden rastgele bir şeyler seçip buradaki rastgele bir şeyler de değiştireceksiniz. Mutasyonunuzda bu şekilde yapmanız gerekecek. O sözcük listesi nereden gelecek? Bu yüz tane örneğin sözlerini oluşturursunuz zaten. Bunun içerisinde geçen bir kelime. Sözlerini oluşturup umutlu olarak hareket edebilirsiniz.
+
+444
+01:38:18,579 --> 01:38:22,720
+Denemelerde aşağıdaki İPAR-PAR-BETER yazdıklarını inceleyeceksiniz.
+
+445
+01:38:22,720 --> 01:38:27,720
+Listenin uzunluğu, popülasyon, büyük bir mutasyon oranından ikilerinizi seçeceksiniz.
+
+446
+01:38:27,720 --> 01:38:35,579
+Dere soruşlarınızı vs. vs. yapmanız gereken şeyler, rapor var, videosu var vs. vs.
+
+447
+01:38:35,579 --> 01:38:39,720
+O tam tekmin bir ödeminiz var.
+
+448
+01:38:42,163 --> 01:38:56,884
+Burada iki kişilik gruplar halinde çalışabilirsiniz. Maksimum iki kişilik gruplar halinde çalışıyorsunuz. 27 Nisan'a kadar, yaklaşık üç hafta yakında bir zamanınız var. Var mı sorunuz arkadaşlar? O da bile alakalı.
+
+449
+01:38:59,024 --> 01:39:03,884
+Hocam genetik algoritmaları hiç kullanmadan, yani şey yapabiliriz değil mi? Sadece...
+
+450
+01:39:04,372 --> 01:39:06,372
+Tepe Tırmanmayla da yapabileceğiz ödevi aslında.
+
+451
+01:39:06,372 --> 01:39:10,372
+Yapabilirsiniz, evet yapabilirsiniz. Sadece Tepe Tırmanmayla da olur.
+
+452
+01:39:12,372 --> 01:39:14,372
+Evet, başka?
+
+453
+01:39:16,372 --> 01:39:18,372
+Hocam hangi dilde yazacağız ödevi?
+
+454
+01:39:18,372 --> 01:39:19,884
+Üstüleri dilde.
+
+455
+01:39:23,091 --> 01:39:25,091
+Programlama dili olarak.
+
+456
+01:39:25,091 --> 01:39:27,091
+Abi işte istediğiniz dili.
+
+457
+01:39:27,091 --> 01:39:28,091
+Tamam hocam.
+
+458
+01:39:29,091 --> 01:39:31,091
+Yani oraya bir kısıt getirmiyorum.
+
+459
+01:39:32,091 --> 01:39:34,091
+Hocam, genelde hangisi tercih ediyor dillerin?
+
+460
+01:39:35,091 --> 01:39:38,091
+Dillerin genelde hangisi tercih ediliyor?
+
+461
+01:39:38,091 --> 01:39:39,091
+Evet.
+
+462
+01:39:39,091 --> 01:39:41,091
+Bidik durumlarız.
+
+463
+01:39:42,091 --> 01:39:44,091
+Valla yani...
+
+464
+01:39:47,091 --> 01:39:49,091
+Ben böyle bir şey için...
+
+465
+01:39:54,131 --> 01:40:00,871
+Herhalde şey çok basit olur burada ya. C ile falan yazmak çok daha hızlı, basit olur.
+
+466
+01:40:01,911 --> 01:40:03,411
+Tamam, benim sana.
+
+467
+01:40:04,611 --> 01:40:12,611
+Ama ne bileyim işte. Burada çünkü hani metinsel yani string işlemleri şu durdurur çok kompleks şeyler falan değiller.
+
+468
+01:40:12,611 --> 01:40:19,731
+O yüzden böyle çok sağlam NLP kütüphanelerini içeren bir Python falan kimsinden bir şey kullanmanıza gerek yok.
+
+469
+01:40:19,731 --> 01:40:21,031
+Onu demek istiyorum.
+
+470
+01:40:21,076 --> 01:40:25,176
+S ile falan çok hızlı bir şekilde gerçekleyebilirsiniz bence.
+
+471
+01:40:29,332 --> 01:40:29,851
+Başka?
+
+472
+01:40:34,420 --> 01:40:49,600
+Hocam, projeden bağımsız şeyi sorabilir miyim? Ödeden bağımsız daha doğrusu. Hani sizleriniz ya, vizelerin ağırlığı düşecek. Bunlarla akıllı tekrar bir ağırlık açıklayacak mısınız? Yoksa... Yok, vizelik belli zaten. Yani şeyi gösterdim.
+
+473
+01:40:50,340 --> 01:41:01,279
+Siz demişsiniz ya, online olacağı kesin olduğu için işte vizelerin ağırlığı düşük olacak gibisinden konuştunuz dersin başında. Evet, o zaten kesin. Zaten söyledim. Ne olduğunu söyledim.
+
+474
+01:41:02,579 --> 01:41:04,579
+Şöyleyirsiniz, ben kaçırmayacağım kusura bakmayın.
+
+475
+01:41:07,579 --> 01:41:13,579
+Bizim sınav tarihi 20 Nisan değişebilir gözüküyordu. 20 Nisan bayrama geliyor büyük ihtimalle.
+
+476
+01:41:13,579 --> 01:41:15,579
+Belki o biraz şey...
+
+477
+01:41:15,579 --> 01:41:17,387
+Bir saniye.
+
+478
+01:41:24,435 --> 01:41:35,775
+Şu anda şey görüyorsunuz değil mi? Şurası 20 Nisan, burası değişebilir noktasında bayrama gelmiyor bu yalnız bayrama geliyor.
+
+479
+01:41:36,516 --> 01:41:37,775
+Cuman mı başlıyor ne?
+
+480
+01:41:39,876 --> 01:41:41,775
+Bayrama gelmiyor bugün parayla.
+
+481
+01:41:42,716 --> 01:41:45,036
+Hocam, gizli haftası galiba 9. hafta oldu da.
+
+482
+01:41:46,136 --> 01:41:51,076
+Ha işte o değişirse o değişebilir yani şurası değişebilir. Yani onu deneyim gibi orası değişebilir.
+
+483
+01:41:51,859 --> 01:41:54,159
+Ödev teslimi değişir mi peki?
+
+484
+01:41:54,939 --> 01:41:58,519
+Yok canım, ödev teslimi değil. Ödev teslimi 3 hafta vermişim.
+
+485
+01:41:58,519 --> 01:42:00,819
+Yok, şöyle diyorum. 9. hafta vize haftası.
+
+486
+01:42:00,819 --> 01:42:01,859
+Tamam.
+
+487
+01:42:01,859 --> 01:42:03,859
+9. hafta ödev teslimi.
+
+488
+01:42:03,859 --> 01:42:04,859
+Tamam.
+
+489
+01:42:04,859 --> 01:42:12,859
+O aynı olabilir. Bir sonraki hafta zaten şey yapsak gibisinden. Çünkü bir hafta zaten vize haftasından geliyor ya.
+
+490
+01:42:12,859 --> 01:42:17,859
+Hayır, zaten 3 hafta zamanınız var. Onu demeye çalışıyorum.
+
+491
+01:42:17,859 --> 01:42:18,859
+Anladım, anladım.
+
+492
+01:42:18,996 --> 01:42:37,756
+Tamam. Öyle bir teslim. Tarihiniz, vize tarih değişse bile değişmez. Onlar için. Tamam mı? Şimdiden yapın. Yani vize bu zaman olacakmış gibi bir haftada zaten zor olur. Yani şimdiden bu durum yaparsanız yapın, teslim edin.
+
+493
+01:42:39,896 --> 01:42:45,056
+Şey şu, şu anda ağırlıktaş. Görebiliyor musunuz? Demin soran birisi vardı ama.
+
+494
+01:42:45,876 --> 01:42:46,416
+Tezki hocam.
+
+495
+01:42:55,764 --> 01:42:56,264
+Tamam.
+
+496
+01:43:00,467 --> 01:43:02,087
+Sağ olun, duruyorum. Sağ olun.
+
+497
+01:43:02,087 --> 01:43:03,227
+Rica ederim.
+
+498
+01:43:03,967 --> 01:43:09,227
+Peki, o zaman arkadaşlar, bugünlük dersimiz bu kadar.
+
+499
+01:43:11,887 --> 01:43:13,927
+Merak ettiğiniz bir şey var mı?
+
+500
+01:43:13,927 --> 01:43:16,007
+Çetten birkaç bir şeyler sormuşlar.
+
+501
+01:43:18,707 --> 01:43:20,467
+Olarsa masap grubu var.
+
+502
+01:43:38,323 --> 01:43:44,763
+[öğrenci]. [öğrenci]. Bir soru sorabilir miyim? Sor.
+
+503
+01:43:46,143 --> 01:43:52,723
+Merhaba hocam. [kişisel bilgi]
+
+504
+01:43:53,063 --> 01:43:53,803
+Hoş geldiniz.
+
+505
+01:43:54,723 --> 01:44:01,863
+Şey soracaktım, vize sınavları nasıl oluyor ki bizde? Orada öyle bir şey yoktu da ondan merak ettim.
+
+506
+01:44:02,739 --> 01:44:04,960
+Normal sınav gibi mi yoksa?
+
+507
+01:44:05,220 --> 01:44:08,260
+Evet, evet normal sınav. Ama online olacak.
+
+508
+01:44:11,000 --> 01:44:14,079
+Yani online dediğim, bu online yedizli çerçeği var ya.
+
+509
+01:44:14,619 --> 01:44:15,180
+Evet, evet.
+
+510
+01:44:15,180 --> 01:44:21,220
+Oraya bağlayacaksınız sınava. Karşınıza sorular çıkacak. Onlara cevap vereceksiniz.
+
+511
+01:44:22,452 --> 01:44:24,172
+Anladım hocam. Teşekkür ederim.
+
+512
+01:44:24,172 --> 01:44:30,312
+Artabilir mi? Ama onların ağırlığı düşükler bak. Asıl önemli olanlar bu yapacağı ödevler ve projeler.
+
+513
+01:44:30,312 --> 01:44:32,292
+Bir tane ödev ve final projesi.
+
+514
+01:44:32,852 --> 01:44:33,172
+Tamam.
+
+515
+01:44:34,172 --> 01:44:35,312
+Anladım hocam. Teşekkür ederim.
+
+516
+01:44:35,472 --> 01:44:36,132
+Rica ederim.
+
+517
+01:44:43,283 --> 01:44:55,463
+Başka bir şey yok yani. Peki o zaman arkadaşlar, hepinize katılmanız için teşekkür ediyorum. Önümüzdeki hafta aynı saatte. İspesle görüşmek üzere. Hoşçakalın. Sağlıcakla kalın.
+
+518
+01:44:56,003 --> 01:44:58,843
+İyi günler hocam.
