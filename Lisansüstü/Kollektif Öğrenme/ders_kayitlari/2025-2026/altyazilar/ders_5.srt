@@ -1,0 +1,4995 @@
+1
+00:00:16,884 --> 00:00:18,884
+Günaydın arkadaşlar.
+
+2
+00:00:20,884 --> 00:00:22,884
+Günaydın hocam.
+
+3
+00:00:24,884 --> 00:00:26,884
+Nasılsınız, iyisiniz?
+
+4
+00:00:31,667 --> 00:00:33,667
+İyiyiz, hayır yaşlıydınız.
+
+5
+00:00:33,667 --> 00:00:35,667
+Ben deyim, teşekkür ederim.
+
+6
+00:00:35,667 --> 00:00:42,667
+Şimdi şu anda 15 kişiyiz. Neyse, buradan başlayalım.
+
+7
+00:00:58,484 --> 00:01:02,764
+Bu sefer alttan başlaya başlayabiliriz diye konuşmuştuk.
+
+8
+00:01:05,183 --> 00:01:10,764
+Acele olan arkadaşlar da, acele derken ders olan arkadaşlar da var.
+
+9
+00:01:11,424 --> 00:01:13,424
+Neyse, bir şekilde ayarlayacağız.
+
+10
+00:01:13,924 --> 00:01:19,463
+Şimdi arkadaşlar, süremizi yine 5-6 dakika ile sınırlı tutmaya çalışalım.
+
+11
+00:01:20,564 --> 00:01:23,944
+Yetiştirmek için, yani şu andaki rakamlara göre bir sıkıntı gözükmüyorlar.
+
+12
+00:01:24,756 --> 00:01:28,776
+Sonradan gelenler de olabilir diye söylüyorum.
+
+13
+00:01:30,676 --> 00:01:34,415
+Şimdi o zaman [öğrenci], buradasın [öğrenci].
+
+14
+00:01:35,496 --> 00:01:37,856
+Seninle başlayalım.
+
+15
+00:01:38,256 --> 00:01:39,835
+Hocam biz grubuz da.
+
+16
+00:01:40,376 --> 00:01:40,636
+Tamam.
+
+17
+00:01:40,636 --> 00:01:46,036
+Ben bir beş dakikaya falan ekranımı açabileceğim ama biz ikinci sunsak olur mu?
+
+18
+00:01:46,115 --> 00:01:48,876
+Çünkü ben fakülte yetişmeye çalışacağım. Şu an satılayım.
+
+19
+00:01:50,867 --> 00:02:01,867
+Peki, tamam. Söylersiniz. Bir daha döneriz. [öğrenci] burada değil herhalde, değil mi? [öğrenci]. [öğrenci].
+
+20
+00:02:07,540 --> 00:02:26,460
+Peki, [öğrenci]. Buradayım hocam. Evet, [öğrenci]. Seni dinleyelim. Tek başına o zaman. [öğrenci] ile beraber yapacağız hocam. [öğrenci] ile. Evet hocam, birlikte yapacağız. Tamam, peki. Dinleyelim sizi. Tamamdır.
+
+21
+00:02:29,939 --> 00:02:31,319
+Dikkat paylaşımı yapayım mı?
+
+22
+00:02:32,199 --> 00:02:32,839
+Tabii tabii.
+
+23
+00:02:44,147 --> 00:02:45,687
+Evet, siz de görüyoruz.
+
+24
+00:02:50,132 --> 00:03:07,132
+Ödevin ne olduğunu hatırlıyoruz. Standartta GRP'yoda ödül fonksiyonu var. Doluk bir tanesi formatta. Bunun yanına 4 tane yeni birleşenler tasarlamamızı istemiştik.
+
+25
+00:03:07,132 --> 00:03:14,924
+Ve bu sayede 5 tane model eğitilecekti. Farklı ödül fonksiyonlarına sahip. Eğiteceğiniz modeli de zaten vermiştim.
+
+26
+00:03:14,963 --> 00:03:30,084
+Hangi veri kümesinin kullanılabileceğine dair bir şey söylemiştim. Eğitim ve test büyüklüklerini de söylemiştik. Bir de modeller ettikten sonra iyilerini de merge ederek bir de böylesini de deneyelim demiştik.
+
+27
+00:03:30,084 --> 00:03:41,063
+Kabaca şeyimiz bu. Zamandan kazanmak için bunu söylüyorum. Siz bu kapsamda ne yaptıklarını anlatabilirim. Peki, başlayabilirsiniz arkadaşlar.
+
+28
+00:03:42,996 --> 00:03:51,396
+Merhabalar, ben [öğrenci]. Bugün arkadaşım [öğrenci] ile birlikte sunumuzu yapacağız. Ben başlıyorum.
+
+29
+00:03:54,336 --> 00:04:04,796
+Veri setimizi biz yorumların mantıksal anınız gerektiren spesifik konu başlıklarına filtreleyerek daralttık. Görse atıta bulunan anahtar kelimeyi ilçelen soruları dışladık.
+
+30
+00:04:05,171 --> 00:04:18,072
+Daha sonra bir prompt hazırladık. Verimize uygun olacak şekilde. Bu bizim örnek özelliklerimiz. Verimize buna benzer bir şey vermesine sağlık. Şu şekilde promptumuz.
+
+31
+00:04:19,532 --> 00:04:27,351
+Buraları da hızlıca geçeyim o zaman. Konu ve bölüm dağılımımız bu şekilde. Tabloda görüldüğü gibi. Biz 1000 tane training datasından 500 tane test datasıyla çalıştık.
+
+32
+00:04:27,923 --> 00:04:33,043
+Veri setimizi prompt ve ground truth olacak şekilde Xtune'dan hazırladık.
+
+33
+00:04:33,043 --> 00:04:42,803
+Daha sonra ödülü fonksiyonlarına geçtik. Burada formatı, XMR benzeri etiket protokolünün tam uyum sağlamasını garanti etmesini sağladı Greg XControl'u ile.
+
+34
+00:04:43,423 --> 00:04:45,943
+Şurada da onun kodu olacaktı. Şu şekilde.
+
+35
+00:04:48,627 --> 00:05:09,788
+Eğer uyuyorsa, 1 puan, uyumuyorsa, 05 puanla cezalandırdık. Doğrulukta ise modelin Grand Truth'a uygun cevap vermesini sağlamaya, yakalamaya çalışmasını sağladık. Eğer biliyorsa 2 puan, bilmiyorsa, 1 puanla cezalandırdık. Ama formata uygun değilse, etiket bulunmuyorsa da, 05 puanla da cezalandırdık.
+
+36
+00:05:10,163 --> 00:05:30,243
+Daha sonra biz yine olarak bağlı çadaklı bir ödül fonksiyonu tasarladık. Burada modelin neden sonuçlu çeşitli olmasını ve mantıksal geçişler yapmasını teşvik etmeye çalıştık. Eğer bir tane kullanıyorsa 0-2 puanla, en az iki tane kullanıyorsa 0-5 puanla ödüllendirdik. Yine kullanmıyorsa herhangi bir etiket, 0 puan da vermişsin sağlık.
+
+37
+00:05:30,783 --> 00:05:34,283
+Yani bir bağlayışlar kümeniz var, doğru mu anlıyorum?
+
+38
+00:05:34,283 --> 00:05:36,243
+Evet, bakalım. Evet, şurada.
+
+39
+00:05:37,139 --> 00:05:39,139
+Çünkü oysa...
+
+40
+00:05:39,139 --> 00:05:42,620
+Bunlardan birini içeriyorsa iyi bir şey yapmış demin diyorsunuz.
+
+41
+00:05:42,620 --> 00:05:45,579
+En az bir tane kullanıyorsa ve iki tane kullanıyorsa.
+
+42
+00:05:46,279 --> 00:05:48,659
+Formata uymuyorsa bu sıfı fan olarak değerlendirdik.
+
+43
+00:05:49,199 --> 00:05:53,180
+Cevap temizliği olarak da modelimizin tek bir şık cevabını vermesini sağlamayı düşünün.
+
+44
+00:05:53,471 --> 00:06:05,151
+Yani sağlamasını sağladık. Eğer cevap uygun veriyorsa, yani tek bir harf olarak ve bunlardan birisine eşleşiyorsa 0-5 puan olarak hasarladık.
+
+45
+00:06:05,971 --> 00:06:06,891
+Anlayamadım bunu.
+
+46
+00:06:08,331 --> 00:06:09,651
+Onu şöyle göstereyim.
+
+47
+00:06:10,548 --> 00:06:21,288
+Eğer modelimiz bize cevap etiketleri arasında direkt böyle şıkkı vermesini istedik. Cevap şudur vs. veya direkt bize şıkkın dışında herhangi bir bilgi vermesini engellemeye çalıştık açıkçası.
+
+48
+00:06:23,708 --> 00:06:27,788
+Yani soruyu görünce direkt cevap şudur mu dediniz?
+
+49
+00:06:27,987 --> 00:06:33,268
+Hayır, onu açıklıyor düşünce kısımda. Ama cevap etiketleri arasında bize sadece cevap vermesini sağlamaya çalıştık.
+
+50
+00:06:33,627 --> 00:06:34,788
+Bu format değil mi zaten?
+
+51
+00:06:35,603 --> 00:06:45,983
+Formatımız aslında şu şekilde. Önce düşünmesini de sağlarız. Yani şöyle düşünce etiketler arasında. Diyoruz ki bize şu açıklamayı da ver ama cevabı da ver.
+
+52
+00:06:45,983 --> 00:06:49,004
+Eğer yanlış kurulamasıysa.
+
+53
+00:06:49,963 --> 00:06:58,123
+Yok tamam [öğrenci]. Bir formata dair bir şeyiniz var. Bu cevap temizliğinin formattan farkını anlayamadım. O da bir format değil mi?
+
+54
+00:06:58,644 --> 00:06:59,544
+Doğru mu anlıyorum?
+
+55
+00:06:59,924 --> 00:07:04,723
+Yani sadece aslında cevap etiketleri arasında tek bir şıkkın cevabını vermesini sağladık.
+
+56
+00:07:04,843 --> 00:07:08,924
+Yani model düşünceler arasında düşünecek ve bize bir tane cevap vermesini sağladık.
+
+57
+00:07:08,944 --> 00:07:10,044
+Peki formatta ne var?
+
+58
+00:07:12,223 --> 00:07:15,684
+Formata uyumda ne veriyorsunuz? Yani formata uyumda neyi kontrol ediyorsunuz?
+
+59
+00:07:16,484 --> 00:07:20,524
+Formatı önce düşünce etiketleri var mı ve cevap etiketleri var mı? Şurada.
+
+60
+00:07:24,276 --> 00:07:25,776
+Peki, tamam.
+
+61
+00:07:30,516 --> 00:07:36,636
+Daha sonra düşünmesini sağlamaya çalıştık. Burada bunun amacı da Karnışık Soru'yu tek bir cüneli geçitirmesinden ziyade.
+
+62
+00:07:37,055 --> 00:07:57,375
+soruyu denemesine adil etmesine zorluk. Eğer 400 karakter kullanıyorsa ve üstün de 0,5 puan ödüller. Uzun düşünsün dediniz yani. Evet, bunu yanlış yanlış anlıyorsun. Bu 0,1 olacak. Eğer 200 ise de 0,25 puan. Mantıksal akışta ise yani giriş analiz sonuç. Yine burada da bizim bir sequential şeyimiz var.
+
+63
+00:07:57,747 --> 00:08:13,348
+Eğer bunlardan herhangi biriyle ilgili, yani en az giriş ve sonuç birlikte varsa 0-4 puanla, en az bir tane sonuçla bağlıysa 0-2 puanla, eğer yok kullanmadıysa 0 puanla ödülenmesi sağladık.
+
+64
+00:08:13,348 --> 00:08:22,348
+Kulandığımız modelimiz Cosmos modeli, 750 milyon parametreye sahip büyük bir DIN modeli. Bu şekilde benim anlayacaklarım. Şimdi gençler çalışmalara geçeceğiz.
+
+65
+00:08:24,052 --> 00:08:26,112
+Kapatayım mı yoksa? Sen ekran paylaşım yapar mısın?
+
+66
+00:08:27,292 --> 00:08:29,352
+Fark etmez bana. Nasıl istersen.
+
+67
+00:08:30,132 --> 00:08:30,391
+Tamam.
+
+68
+00:08:33,908 --> 00:08:48,128
+Bu kısımda ödül fonksiyonlarını farklı kombinleri ile beraber kullandık. 5 tane zaten bizim özelleştirdiğimiz, yani 4 tanesini kendimiz geliştirdiğimiz, totalde 5 tane özelleşmiş ödül fonksiyonlarımız vardı.
+
+69
+00:08:48,128 --> 00:09:01,128
+Burada tüm modellerde format ve doğruluk ödülleri ortak tutuldu. Base'den bir model olarak. Daha sonra diğer hazırladığımız ödül fonksiyonları bunun üzerine eklenerek farklı modeller, 5 tane model oluşturuldu.
+
+70
+00:09:01,908 --> 00:09:04,668
+Birazcık aşağıya inebilir misin? Tabloyu tam görelim.
+
+71
+00:09:05,331 --> 00:09:26,592
+Birinci kısımda model baseline kısmında format accuracy demiştik. Zaten format ve doğruluğu baseline olarak aldık. Diğerleri bunun üzerine geliyor. Doğru formatta ve doğru cevap vermesinin üzerine cevap etiketinin içerisinde gürültü barındırmayan, direkt sadece cevabın olduğu tekrar bir ödül fonksiyonumuz vardı. Bunu ekledik.
+
+72
+00:09:26,592 --> 00:09:33,331
+Üçüncü modelde mantıksal nedenlik, neden sonuç ilişkisini açıklayabileceği şekilde cevap vermesini istemiştik.
+
+73
+00:09:33,331 --> 00:09:39,831
+Ödül fonksiyonumuzda. Bunu format ve ekürüsü ile beraber kullandığımız kombinasyon bu.
+
+74
+00:09:40,731 --> 00:09:47,471
+Dördüncü modelimizde ise giriş gelişme sonuç olarak kullanan ödül fonksiyonumuzu üzerine ekledik.
+
+75
+00:09:47,831 --> 00:09:55,511
+Beşincisinde ise derinlemesine analiz yaptığımız düşünce zinciri kurulan bir model oluşturmuş olduk.
+
+76
+00:10:00,244 --> 00:10:27,924
+Bütün hepsini tamamen bir fine tuning içerisine sokmak yerine Lora Tekniği ile beraber kullandık. Bunu yaparken amacımız şuydu. Zaten çok büyük bir dil modeli var ve eğitim sürelimimiz çok uzun sürüyordu. O yüzden de modelin ağırlıklarını freeze edip üzerine tekrar bazı değişiklikler yapmayı hedefledik. Aynı zamanda bu bizim mevcut modelimizin bildiği doğru şeylerin de değiştirilmesini engellemiş.
+
+77
+00:10:28,244 --> 00:10:30,844
+Oldu aslında. Biraz daha aşağıya çekebiliriz.
+
+78
+00:10:32,064 --> 00:10:35,783
+Burada, çok azıcık yukarı gelebilir misin?
+
+79
+00:10:36,884 --> 00:10:42,464
+Nam Generation'ımız 16'ydı. Burada düşünce zinciri birbirinden farklı.
+
+80
+00:10:43,024 --> 00:10:49,024
+Tek seferde 16 tane cevap 1 girdiği için 16 ayrı cevap üretmesini istedik.
+
+81
+00:10:50,803 --> 00:11:00,523
+Aynı zamanda model çıktığıları tek kritere göre değil, farklı formatlara göre ilgili ödül fonksiyonlarıyla beraber çalıştırılarak değerlendirilmiş oldu.
+
+82
+00:11:01,183 --> 00:11:07,603
+Hiperparametre değişikliklerimiz çok büyük değil. Yine bunun sebebi de dediğimiz gibi modellimiz çok büyük.
+
+83
+00:11:07,723 --> 00:11:17,803
+Üzerinde yaptığımız değişikliklerle de iyi eğitim yaparken aslında biraz kısa zamanda daha iyi sonuç getirebileceğimiz şekilde değişiklikler yaptık.
+
+84
+00:11:18,803 --> 00:11:22,123
+Kayıtı çok düşük tuttuk. Çünkü mevcut bilgilerini unutmamız.
+
+85
+00:11:22,123 --> 00:11:24,083
+6 dakikayı açtık şu anda.
+
+86
+00:11:24,443 --> 00:11:27,663
+Tamam hocam. O zaman sonuç kısmına gelelim mi? Nasıl isterseniz.
+
+87
+00:11:28,363 --> 00:11:29,403
+Gelelim, evet.
+
+88
+00:11:30,563 --> 00:11:40,643
+Hocam, genel olarak bizim şöyle bir sorunumuz oldu. Bu problemle ilgili midir? Onu çok bilmiyoruz ama kayıplarımız eksiyle artı üzerinde 0 civarında dolaştı.
+
+89
+00:11:40,643 --> 00:11:43,435
+Ve öğrenmesi de aslında...
+
+90
+00:11:44,467 --> 00:11:54,207
+Öğrenmede gerçekleştirmemiş oldu. Hatası yüzde yüz olmuş oldu. Ama daha sonra bunların kombinasyonunu kullandığımızda, en alta gelelim.
+
+91
+00:11:54,611 --> 00:12:16,851
+Nihai olarak merge ettik bu iki modeli. Hangi modeli? Mantıksal ve analitik olanları merge ettiğimiz zaman o zaman işte gerçekten biraz bir öğrenme %6 doğruluk ve format hatası %84'e kadar düştü. Diğerleri tekilken sıfırdı ama merge ettiğimiz zaman bu zayıf modellerden yine bir öğrenme elde etmiş olduk sonuç olarak.
+
+92
+00:12:18,196 --> 00:12:28,556
+Bir de en azından modellerin herhangi bir şekilde yani sıfır civarında bir eğitim aşamasında kayıp vermemesini de engellemeye çalıştık. Yani sürekli bir değer vermesini, bir değer üretmesini sağlamaya çalıştık açıkçası.
+
+93
+00:12:30,596 --> 00:12:34,115
+Peki, peki. Tamam arkadaşlar, teşekkür ediyorum.
+
+94
+00:12:34,776 --> 00:12:36,156
+Biz teşekkür ederiz hocam.
+
+95
+00:12:36,635 --> 00:12:38,776
+Hocam, biz geldik bu arada.
+
+96
+00:12:41,776 --> 00:12:43,255
+Tamam, başlayın.
+
+97
+00:12:45,844 --> 00:12:47,844
+Ekran paylaşıyorum.
+
+98
+00:12:48,844 --> 00:12:50,188
+Tamam.
+
+99
+00:13:09,779 --> 00:13:19,379
+Merhabalar, biz de 4 Ensembles modelleri olarak 4 model çalıştık. Bu şekilde biliyorsunuz,
+
+100
+00:13:19,379 --> 00:13:29,279
+YTOC-GPT modelini kullandık. Merge Kit ile bulduğumuz en iyi 2 sonucu birleştirerek yola devam ettik. Biz
+
+101
+00:13:39,764 --> 00:14:00,323
+Biz burada ön işlemede bu şekilde bir filtre uyguladık. Metne göre, metinden, paragraf, parçaya göre gibi mantıksal şeyler yaparak daha sonra muhakeme yapabileceği, yüzdesi, oranı, ortalaması, en az, en çok gibi ifade içeren soruları seçmeyi amaçladık. Daha çok matematiksel ifadeler.
+
+102
+00:14:00,923 --> 00:14:05,903
+Eğitim, test ayrımı 1000 soru, train 500 soru test olarak ayırdık.
+
+103
+00:14:06,463 --> 00:14:07,764
+Prom format olarak...
+
+104
+00:14:07,764 --> 00:14:11,764
+Format olarak da Chain of Toad talimatını verdik. Adım adım düşünmesini sağladık.
+
+105
+00:14:11,764 --> 00:14:19,596
+Format olarak da cevap şudur. Yani cevap A cevap B gibi format vermesini istedik.
+
+106
+00:14:20,916 --> 00:14:29,316
+Bizim oluşturduğumuz ödül fonksiyonlarında ise birincisi, birinci senaryoda standart ve dengeli bir fonksiyon kurmayı amaçladık.
+
+107
+00:14:29,316 --> 00:14:43,255
+Eğer doğruysa bir, formatı da doğruysa 05 alacağı şekilde bir şey tasarladık. Bunda en fazla bir buçuk ödül alabileceği bir şey yaptık.
+
+108
+00:14:48,916 --> 00:15:11,456
+Ödül puan almasını sağladık. Diğer ödül fonksiyonumuzda ise burada format ağırlıklı bir şey istedik. Format doğruysa 1, yanlışsa cevap doğru veya yalnızsa fark etmeden 1 vermesini, format doğruysa 1, değilse eksi 1 vermesini cezalandırmasını sağladık.
+
+109
+00:15:16,916 --> 00:15:31,495
+formatlı bir şey tasarladık. Eğer doğruysa 2, format doğruysa 02 verebileceği. Fakat hem yanlış hem de formatsız ise de eksi 05 ile cezalandırmayı tercih ettik burada.
+
+110
+00:15:32,115 --> 00:15:49,716
+Diğer dördüncü fonksiyonumuzda ise akıl yürütme uzunluğunu kullandık aslında. Burada daha uzun bir şey daha doğrusu bizim istediğimiz kriterler arasında 10 ile 120 token arasında ise 0.5 puanla ödüllendirdik. 120 token'dan büyükse cezalandırdık.
+
+111
+00:15:49,716 --> 00:15:59,895
+10 takımdan düşükse de daha düşük olduğu için de 0.5 ile cezalandırmayı tercih ettik. Burada da bu şekilde bir senaryo var.
+
+112
+00:16:00,115 --> 00:16:07,296
+En fazla max 1.8 alabiliyor. 1.8. Minimum da 0 alabiliyor.
+
+113
+00:16:08,307 --> 00:16:33,107
+Diğer bir ödül fonksiyonumuz ise gürültülü cezalı. Bunda ise ekür ise doğruysa cevap 1 veriyoruz. Format doğruysa 0,5 veriyoruz. Eğer birden fazla cevap veriyorsa bunu 0,5 ne kadar fazla veriyorsa onu 0,5 ile çarpıp o kadar azaltıyoruz. Yani cezalandırıyoruz.
+
+114
+00:16:33,567 --> 00:16:44,567
+Burada mesela üç tane cevap ise bir tane doğru cevabı verdiği için 0,5 ekledik. İki tane fazla cevap verdiği için de 0,5 azaltmış olduk.
+
+115
+00:16:44,567 --> 00:16:49,567
+Kullandığımız hiperparametreler bu şekilde hocam.
+
+116
+00:16:49,567 --> 00:16:54,567
+Buraya geçiyorum. En sonunda...
+
+117
+00:16:54,567 --> 00:16:57,567
+Bir seferde kaç tane cevap üretiyorsunuz?
+
+118
+00:16:57,567 --> 00:16:58,567
+Dört tane hocam.
+
+119
+00:16:58,567 --> 00:17:00,567
+Ha dört tane. Tamam.
+
+120
+00:17:01,011 --> 00:17:04,011
+Bedsize birer birer gittiniz. Tamam peki.
+
+121
+00:17:05,011 --> 00:17:17,011
+Burada Base modelde gördüğünüz üzere, %4'ten en fazla Merge de R0 artı R4 ödül fonksiyonumuzda en iyi birleşmeyi burada yakaladık.
+
+122
+00:17:17,011 --> 00:17:23,011
+Hem Ecurus anlamında hem format anlamında her ikisinde yakaladığını görmektesiniz.
+
+123
+00:17:23,011 --> 00:17:27,531
+R0'ın aslında şöyle...
+
+124
+00:17:28,915 --> 00:17:41,235
+R0'ın, evet, ekürüz sesi daha fazla. R4'ün de şu şekilde formatı fazla. İkisini de dengeli bir şekilde alıp bu şekilde mörç etmiş olduk.
+
+125
+00:17:41,235 --> 00:17:51,795
+Burada da grafiksel gösterimini görüyorsunuz aslında. Base'de çok 0, 0'dı. Yani 1000'de 4'ü göstermiyor bile yani grafikte.
+
+126
+00:17:51,955 --> 00:18:01,435
+bu şekilde Merge'de yükseklere ulaştı. Aslında çoğunda bu şekilde formatı yakadı. R3 de sadece formatı kaybedip sıfırladı.
+
+127
+00:18:04,884 --> 00:18:09,884
+Bir tane çıktısını koydunuz mu bir yere? Bir soru için verdiği.
+
+128
+00:18:09,884 --> 00:18:12,963
+Bir görsek onu.
+
+129
+00:18:20,435 --> 00:18:44,135
+Yakınlaştıramadım. Şöyle iki parmağını açarak. İstersen sağ üstte üç noktadan da sayfayı büyütebilirsin. Şu üç nokta var ya, Relange to Update yazıyor sağ üstte. Yok bende o görünmüyor ki. Ben sunayım istersen. Ben sunayım mı? Tamam. Kapatabilirsin sen sunumunu.
+
+130
+00:18:59,092 --> 00:19:01,092
+Bir dakika. Şurayı bir ayarlayın.
+
+131
+00:19:03,412 --> 00:19:05,232
+Evet. Şimdi sunuyorum.
+
+132
+00:19:07,092 --> 00:19:08,392
+Şöyle aldım.
+
+133
+00:19:12,819 --> 00:19:27,139
+Geldim ekranım. Geldi. Tamamdır. Hemen geliyorum oraya hocam. Böyle evet. Şimdi biz burada şu şekilde iyi mi hocam gözüküyor mu? Biraz daha büyüksen.
+
+134
+00:19:27,988 --> 00:19:29,488
+Şöyle. Tamam.
+
+135
+00:19:29,748 --> 00:19:37,208
+Tamam. Biz burada neyi amaçladık? Tez kümesinden rastgele seçilen 5 soru üzerinde davranışını niteliksel olarak incelemeye amaçladık.
+
+136
+00:19:37,508 --> 00:19:49,208
+Modal kaç soru yaptı? Nasıl cevap veriyor? Hatalar nasıl? Gerçekten öğrendiği şey gerçekten çıkarım mı yoksa ezbere dayalım mı çıktı veriyor? Bunu merak ettik.
+
+137
+00:19:49,208 --> 00:19:55,367
+Burada neredeyse model gördüğünüz gibi tüm örneklerde cevap X şeklinde formatı koruyor.
+
+138
+00:19:55,988 --> 00:19:59,567
+Format hizalama açısından başarılı olduğunu gösteriyor. Benim buraya kameram geldi.
+
+139
+00:20:00,000 --> 00:20:26,799
+Ama gördüğünüz gibi, ben bunları tek tek bir ID 125-114-71 için satır satır biraz incelemesini yapacağım. Burada ID 125 yani ilk satırda, ROV 0'da görüldüğü üzere aslında burada cevabı doğru formatta bulmasına rağmen tekrarlı, gürültülü, temiz olmayan bir çıktı sunuyor bize. Yani modelle söylemesi gerektiğini aslında öğrenmiş ama nasıl söylemesi gerektiğini tam olarak öğrenememiş gürültü verdiği için.
+
+140
+00:20:28,000 --> 00:20:41,519
+Bir de C şıkkına aşırı eğilim olduğunu görüyoruz. Yani burada aslında bazı sorularda belki de şans eseri doğru cevabı verirken bazılarında açıkça cevap A iken cevap C veya D iken C şeklinde. Hani her soruyu gerçekten çözmek yerine.
+
+141
+00:20:42,067 --> 00:20:57,407
+Eğitim setimizde en sık ödüllendirilen, davranış olan bu güvenli stratejiyi öğrenmiş olabileceğini gösteriyor belki de. Dolayısıyla burada bir modelin doğru cevabı üretmesi ya da her zaman doğru muhakeme yaptığı anlamına da gelmiyor. Buradan bu sonuca varabiliriz.
+
+142
+00:20:58,087 --> 00:21:09,248
+Yani formatı koruyor ama bazen mesela matematiksel hesaplarda da, şu yayın işbirleri de göreceksiniz, o hesaplarda bazen hesap yapmadan da tahmin ediyor. Buradan benim çıkarımım ne derseniz,
+
+143
+00:21:10,067 --> 00:21:30,087
+Evet, hizalamış, formatı öğrenmiş ama reasoning derinliğimiz dediğimiz o R3'tü zannediyorsam [öğrenci], doğru mu? Orada her durumda garanti altını almamış. Yani doğru sonuca ulaşma sürecini yeterince cezalandırmıyor ya da ödüllendirmiyor olacağımıza da işaret olabilir bu. Geçeyim mi hocam buraya?
+
+144
+00:21:30,727 --> 00:21:32,367
+Geçelim, mesela 8 dakika oldu.
+
+145
+00:21:32,367 --> 00:21:34,627
+Evet, tamamdır. Biraz küçültebilir miyim?
+
+146
+00:21:34,927 --> 00:21:35,227
+Evet.
+
+147
+00:21:35,807 --> 00:21:38,067
+Yani biz burada şuna da baktık aslında. Başka?
+
+148
+00:21:38,067 --> 00:21:48,528
+Hangi görsellerle biz bunu size daha net sunabiliriz diye. Burada bir radar grafik oluşturduk. Burada modelin doğruluğu, format uyumu ve hızı açısından çok kriterli performansını karşılaştırıyoruz.
+
+149
+00:21:49,107 --> 00:21:54,548
+Merge'ye baktığınız zaman burada 3x'ende en yüksek değerlere ulaştığı için en geniş alanı oluşturmuş.
+
+150
+00:21:54,548 --> 00:22:03,307
+Bu da modelin sadece doğruluğu değil, aynı zamanda da format tutarlığı, üretim hızını koruyarak da en dengeli performansı gösterdiğini sunuyor.
+
+151
+00:22:03,407 --> 00:22:06,067
+Diğerlerinde de yine raporda inceleyeceğiniz...
+
+152
+00:22:06,067 --> 00:22:32,387
+Tekil formatlarda da nasıl, ödüllerde de nasıl bir şey, başarı sergilediğini görebilirsiniz. Diğerine geçecek olursak, modellerin eğitim süresi ve maliyetiyle alakalı bir doğruluk ilişkisine baktık. Burada aslında eğitim süresi, yani merge şu sol üstte göreceksiniz, sıfır, R0 ve R4'ümüz. Neredeyse sıfır eğitim süresiyle en yüksek doğruluğu ulaşarak grafikteki en ideal bölgeye ulaştığını görebilirsiniz.
+
+153
+00:22:34,067 --> 00:22:44,907
+Modelin sıfırdan eğitilmemesi süre açısından baktığımız zaman, önceden eğitilmiş R0, R4 modellerin ağırlıklı birleştirilmesinin aslında burada süreyi minimuma indirmesini kanıtlar nitelikte.
+
+154
+00:22:44,907 --> 00:22:57,048
+Aslında çok fazla GPU maliyeti biz çünkü bu modeli bir 10 kere falan çalıştırdık ve çok fazla gerçekten GPU maliyeti çıkıyor. Pro'lar, Pro Plus'lar satılındı.
+
+155
+00:22:57,307 --> 00:23:01,907
+Bu Merge Model sayesinde de maliyet çok oluşturulmadan performansı...
+
+156
+00:23:02,067 --> 00:23:06,508
+Maksimize etmeyi sağlayan en verimli yöntemlerden birisi olduğunu söyleyebiliriz.
+
+157
+00:23:06,947 --> 00:23:10,947
+Ama tabii merge edeceğim modelleri eğitmen gerekiyor.
+
+158
+00:23:11,167 --> 00:23:11,867
+O eğitim.
+
+159
+00:23:11,867 --> 00:23:12,847
+Bir şey var değil mi?
+
+160
+00:23:13,307 --> 00:23:14,667
+Doğru. İlk eğitim aşamasında.
+
+161
+00:23:15,104 --> 00:23:42,803
+Doğru hocam. Burada şöyle bir, bize ilk bakışta bu tablo çok değerler açısından bir tuhaf geldi. Çünkü değerler çok yüksek denemeye çalışıyor burada. Hani biz nasıl bir grafik verebiliriz diye literatürdeki makalelerden inceledik hocam. Burada aslında performansı matematiksel olarak yüzdesel artışını yeni değer ekürüsü üzerinden yapıyor hocam. Yeni değer eksi, eski değer böyle eski değer çarpı 100 yaptığımızda mesela base model için başarı 0.4'tü. Eğitilen merge modelinde 24.2'ydi arkadaşım anlattı size.
+
+162
+00:23:43,104 --> 00:24:11,104
+Hesaplamada 24.2-0.4 ekürüsüler farkı böyle 0.4 eşittir 59.5. Yani sonucun %59.50 oranında arttığını gösteriyor. Bu da aslında şunu gösteriyor. Model birleştirmenin yani yalnızca dengeli performans değil, aynı zamanda da maksimum yöreli kazanıma da ulaştığını gösteriyor burada. Yine bakarsanız R3 bizim reasoning düşünce odaklı ödül fonksiyonumuzdu. Yani o diğerlerine oranla düşük yüzdesel artış gösteriyor.
+
+163
+00:24:11,104 --> 00:24:22,703
+Bunun nedeni de çünkü o reasoning'in teşvik eden ödül yapısının verimli çıkarımdan ziyade aslında uzun ama etkisiz çıktılara yönlendirmesi olarak ben bunu yorumlayabilirim size hocam.
+
+164
+00:24:23,539 --> 00:24:26,299
+Yani burada sonuç olarak ne diyebilirim?
+
+165
+00:24:26,299 --> 00:24:28,419
+[öğrenci] son cümleni alalım.
+
+166
+00:24:28,699 --> 00:24:40,619
+Tamam hocam. Genel olarak şunu söyleyebilirim. Bizim base modelimiz format kısıtlı, çoktan seçmeli görevler için yetersiz ama işte bu GRPO hesaplamamız da modelin görevin niyetine uygun hale getiriyor.
+
+167
+00:24:40,619 --> 00:24:51,539
+Yani çalışmanın aslında temel ipotezi doğrulanmış oluyor hocam. Son olarak başka hani GRPO modelimiz evet hizalamada güçlü ama en kararlı, genellenebilir performans, çoklu ödül...
+
+168
+00:24:51,539 --> 00:24:58,919
+Bu merge model ile daha dengelenmesiyle elde edilmektedir. Hipotezimiz doğrulanmıştır diyerek bizi dinlediğiniz için teşekkür ediyorum.
+
+169
+00:24:59,019 --> 00:24:59,959
+Noktalıyorum hocam.
+
+170
+00:25:00,099 --> 00:25:02,279
+Teşekkürler arkadaşlar. Sağ olun.
+
+171
+00:25:14,996 --> 00:25:16,996
+[öğrenci].
+
+172
+00:25:21,715 --> 00:25:32,715
+[öğrenci] Buradayım hocam. Evet, seni dinleyelim [öğrenci]. Tek başa olsun. Evet, tek başa olsun. Peki, dinliyoruz seni.
+
+173
+00:25:36,339 --> 00:25:38,339
+Ekran geldi herhalde.
+
+174
+00:25:38,339 --> 00:25:41,339
+Geldi. Evet, geldi.
+
+175
+00:25:41,339 --> 00:25:43,339
+Tamam.
+
+176
+00:25:43,339 --> 00:25:55,339
+Şimdi ben konuları seçmek için bazı keyfaklar seçtim. Bunları bölüm ya da konu kısmından filtreleyerek bu soruları direkt çektim.
+
+177
+00:25:55,339 --> 00:25:59,339
+Sonrasında direkt ödül konusyonlarına geçeyim.
+
+178
+00:26:02,099 --> 00:26:14,099
+0 ya da 1 olarak verdim. Yani ödül ve cezae. Bende sadece ilk harfine bakıyor. Direk cevabı istiyoruz aslında doğruluk ve formatta.
+
+179
+00:26:16,099 --> 00:26:25,099
+Bu standart fonksiyon, doğruluk ve format olan. Diğer 4 fonksiyon ise ilki düşünce zinciri var bende de.
+
+180
+00:26:26,895 --> 00:26:35,055
+Fazla uzunsa, yani 5 karakterden uzunsa kademeli olarak bir ceza veriyoruz aslında.
+
+181
+00:26:36,155 --> 00:26:39,915
+Diğer ödül fonksiyonu ise kısa olması, öz olması.
+
+182
+00:26:40,715 --> 00:26:41,895
+Burada da...
+
+183
+00:26:42,495 --> 00:26:47,015
+Şeyi anlayamadım, kademeli olarak ceza veriyoruz derken orasını tam yakalayamadım.
+
+184
+00:26:47,135 --> 00:26:48,655
+Yani uzun olursa ceza mı veriyorsun?
+
+185
+00:26:49,395 --> 00:26:55,556
+Pardon, bunu yanlış söyleyelim. Düşünce zincirinde uzun olmasını istiyoruz. Yani karakterin daha fazla olmasını istiyoruz.
+
+186
+00:26:56,395 --> 00:26:59,836
+Böyle bir gün de ondan sonra ceza veriyoruz. Peki tamam.
+
+187
+00:26:59,836 --> 00:27:14,996
+Aynen. Şunu anlattım yavaş. Yani burada concisenes dediğimizde de özlülük, kısalık, ödül fonksiyonundaysa karakter uzunsa, 3 karakterden uzunsa ceza veriyoruz. Yani her bir karakter için.
+
+188
+00:27:15,700 --> 00:27:21,900
+Ama bu zaten şey olmuyor mu? Tek seferde cevabı söyleye denk gelmiyor mu bu?
+
+189
+00:27:23,779 --> 00:27:28,539
+Yani aslında benzer ama uzattıkça cezalandırıyoruz.
+
+190
+00:27:31,480 --> 00:27:34,500
+Ötekisinde 1-0 gibi.
+
+191
+00:27:35,559 --> 00:27:39,840
+Aynen. Orada daha net bir şey var. Burada kademeli bir ceza sistemi var.
+
+192
+00:27:39,840 --> 00:27:40,559
+Peki.
+
+193
+00:27:41,491 --> 00:27:59,211
+Diğer bir ödül fonksiyonu ise model eğer tekrarlarsa cevabı A, A, A gibi mesela. Burada da yine net bir ceza veriyoruz. Yani tekrar varsa cezalandırıyoruz gibi bir model burada da ödül fonksiyonumuz.
+
+194
+00:27:59,631 --> 00:28:01,911
+Nasıl yapıyorsun onu? Tekrarladığını nasıl anlıyorsun?
+
+195
+00:28:02,708 --> 00:28:21,788
+Bunu şeyle bakıyorum, regex ile bakıyorum. Aşağıda zaten şeyleri de göstereceğim nasıl bakıyorum diye. Diğer bir öde fonksiyonu ise cevap a şeklinde bir kalıpla cevabı vermesini istiyorum. Bunu da yine regex ile bakıyorum aslında.
+
+196
+00:28:23,288 --> 00:28:27,167
+Bu da yine, yani bunların çok büyük bir isim format değil mi?
+
+197
+00:28:28,948 --> 00:28:38,208
+Evet hocam. Aslında çok fazla türetemediğim için biraz yapay zekadan destek almaya çalıştım. Ödül fonksiyonlarını türetirken o da çok daha biraz genelde söyledim.
+
+198
+00:28:38,228 --> 00:28:44,628
+Ama yapay zekanın söylediği şeyleri değerlendirmedin mi hiç? Bunlar hep birbirinin aynısı şeyler kardeşim. Sen niye bunları bana söylüyorsun demedin mi?
+
+199
+00:28:45,348 --> 00:28:51,128
+Evet, söyledim ama yani farklı şeyler türetmekte biraz sorun yaşadığı için o da.
+
+200
+00:28:51,536 --> 00:28:56,816
+Tamam, sen öğreteceksin o zaman işte. Yani yapay zekanın yetmediği yerde doğal zekayı kullanacaksın.
+
+201
+00:28:57,716 --> 00:29:03,916
+Evet, ben de işte biraz kandı için o noktada. Yani ödül fonksiyonu türetmekte biraz zorlandım.
+
+202
+00:29:05,076 --> 00:29:07,216
+Peki, devam edelim.
+
+203
+00:29:09,356 --> 00:29:11,896
+Direkt sonuçlara geliyorum.
+
+204
+00:29:12,956 --> 00:29:15,216
+Şöyle, dost fonksiyonlarım...
+
+205
+00:29:15,635 --> 00:29:29,635
+Aslında bende de 0 etrafımda takılıyor gibi bir sonuç elde ettim. Mesela kısalık fonksiyonu için kademeli bir ceza veriyorduk. Burada bayağı 1'e yaklaşanlar oldu.
+
+206
+00:29:29,635 --> 00:29:42,635
+Ama genelinde eksi 0.0'larda yani 0 etrafında loss fonksiyonları sonuç olarak elde etmiş oluyorum.
+
+207
+00:29:43,188 --> 00:29:45,768
+Sonuçlar neyi gösteriyor bize?
+
+208
+00:29:47,328 --> 00:30:04,268
+Yani sonuçlar şunu gösteriyor. Verdiğimiz ödüllerde kayıplar azalıyor. Yani eksiye gidiyor. Ama çok fazla da ödül kazanamadığı için çok fazla da kayıp olmuyor. Yani çok fazla iyi sonuç da elde edemiyor.
+
+209
+00:30:04,648 --> 00:30:07,848
+Başlangıçta neydi ki? Eksiye gidince azaldı diyorsun.
+
+210
+00:30:08,756 --> 00:30:29,395
+Stabil bir azalma da görmüyorum ben burada. Evet, tam net bir sonuç göremiyoruz. Bazen ödül alıyor, bazen alamıyor. O yüzden bir eksiye geliyor, bir artıya geçiyor gibi. Grafiklerde zaten ziktaf şeklinde sonuçları elde ediyoruz.
+
+211
+00:30:32,692 --> 00:30:43,692
+Test etme sırasında ceva paha şeklinde RGX'e alıyorum. Direkt başlamış şeklinde yine RGX'e. Bunlara aslında RGX'e bakıyorum.
+
+212
+00:30:45,692 --> 00:30:59,692
+Yine Chain of Talk'ta da uzun kalıp olup olmadığına bakıyorum. Bir de ben bu modelleri ensemble yapayım dedim. Birlikte baksınlar burada nasıl bir sonuç elde ederiz diye.
+
+213
+00:30:59,796 --> 00:31:18,196
+Bunu bir de Ensemble ettim. Merge etmek için de. Bunun aşağıda da sonucunu göstereceğim. En iyi iki modelinde Path kullanarak yaptım ben. Diğer Merge Kids Kollektif sorun çıkartıyordu. O yüzden Path'i kullandım.
+
+214
+00:31:20,435 --> 00:31:34,035
+Şöyle bir sonuç elde ediyoruz. Bu ikisinin tekrarlı sonuç verip vermeme fonksiyonu ve kısalıkla ilgili olan fonksiyonu birleştirince, %16 şeklinde bir doğruluk çıkıyor.
+
+215
+00:31:34,035 --> 00:31:41,796
+Hepsini birleştirip sonuç elde ettiğimizde ise, enstambalamda %12 şeklinde bir sonuç elde etmiş oluyoruz.
+
+216
+00:31:41,796 --> 00:31:46,675
+Standard, Base'in performansı ne kadar burada?
+
+217
+00:31:47,124 --> 00:31:49,516
+%10. Yani en dışı kokalıyor.
+
+218
+00:31:52,564 --> 00:31:55,783
+Yüzde 10, aynı soruların yüzde 10'la doğru cevap verdi, değil mi?
+
+219
+00:31:56,443 --> 00:31:57,903
+Evet, doğruluk.
+
+220
+00:31:59,503 --> 00:32:02,923
+Peki bunu nasıl yorumlarsın? Yani buradaki yüzde 10'a değeri iyi bir değer mi?
+
+221
+00:32:04,503 --> 00:32:10,844
+Kesinlikle değil. Çünkü yani aslında formatı uydurmaya çalışıyorum.
+
+222
+00:32:11,892 --> 00:32:25,892
+Biraz kabul edilebilir gibi ama biz bunu direkt cevaplasaydık zaten 5'lik %20 ihtimalimiz olacaktı. Ama biz bunları sürekli ceza vermeye çalıştığımız için zorlukta düşmüş oluyor.
+
+223
+00:32:28,892 --> 00:32:29,892
+Gibi yorumladığımda.
+
+224
+00:32:30,892 --> 00:32:31,892
+Peki.
+
+225
+00:32:32,892 --> 00:32:36,892
+Yani bu kadar. Dinlediğiniz için teşekkür ediyorum.
+
+226
+00:32:38,963 --> 00:32:40,963
+Teşekkürler [öğrenci].
+
+227
+00:32:42,963 --> 00:32:44,963
+Ben teşekkür ederim hocam.
+
+228
+00:32:44,963 --> 00:32:47,963
+Peki. Bence çok fazla yararlanma bundan sonra.
+
+229
+00:32:47,963 --> 00:32:49,963
+Tamamdır hocam.
+
+230
+00:32:50,963 --> 00:32:54,963
+Hadi yararlanın tabii ki de. Düzgün yararlanın.
+
+231
+00:32:54,963 --> 00:33:05,803
+Hocam ödül fonksiyonanlığı süretmekte çok fazla bir şey sunmadığı için ben de üstüne çok katamadım. O yüzden üzgünüm.
+
+232
+00:33:05,844 --> 00:33:08,244
+Birçin.
+
+233
+00:33:13,940 --> 00:33:15,436
+Teşekkürler.
+
+234
+00:33:19,827 --> 00:33:21,307
+[öğrenci]
+
+235
+00:33:28,019 --> 00:33:44,559
+[öğrenci]. Alo hocam. Mikrofonu hemen açamadım da. [öğrenci]. [öğrenci]. Tek başına mısın? Evet, tek başına. Evet, seni dinliyoruz [öğrenci].
+
+236
+00:34:04,276 --> 00:34:26,256
+Buraları şey geçeyim aynısı zaten. Burada ben modeli eğitirken şeyde çok sorun yaşadım. Doğrudan modelin üzerinde ödül fonksiyonunu çalışarak eğitmeye çalıştığımda soru cevap ikillerimi azalttığımda bile çok uzun saatler aldı onu. Ya benim kodlamamda sorun oldu.
+
+237
+00:34:26,804 --> 00:34:34,403
+O yüzden LoRa kullanarak biraz modeli küçültmeye çalıştım. Master Hesaplama maliyetini.
+
+238
+00:34:34,403 --> 00:34:43,604
+Burada biraz fazla maliyeti düşürmeye çalıştığım için biraz performansımdan da düştü.
+
+239
+00:34:43,860 --> 00:34:57,039
+Ödül fonksiyonlarında standart olarak doğruluk ve format üzerinden ödüllendirme yaptım. Eğer doğruluk ve formatı verdiğim promptlarda aynıysa...
+
+240
+00:34:57,039 --> 00:34:59,340
+Onu bir gösterebilir misin? Doğruluk ve formatını sözü.
+
+241
+00:35:00,780 --> 00:35:04,340
+Onu kodakitmem lazım ama...
+
+242
+00:35:18,579 --> 00:35:25,059
+Doğruluk formatına promptlarımda şu şekilde cevap gelmesi gerekiyor.
+
+243
+00:35:25,059 --> 00:35:26,819
+Ekran gözükmüyor.
+
+244
+00:35:26,980 --> 00:35:30,340
+Pardon hocam, sanırım sadece pencere paylaşmışım.
+
+245
+00:35:30,340 --> 00:35:35,099
+Ekran paylaştım.
+
+246
+00:35:35,300 --> 00:35:39,119
+Evet, şu anda gözüküyor.
+
+247
+00:35:39,668 --> 00:35:51,648
+Burada promptlarında sonuna cevabı şu şekilde verdiği ekleme yapmıştım. Burada regx'le eğer verdiyse bu cevabı bu şekilde bir puan verecek şekilde düşündüm.
+
+248
+00:35:51,648 --> 00:36:04,427
+Ve diğerinde de formatta da üretici cevabın içerisinde cevap varsa yarım puan verecek şekilde format ve doğruluğu ölçmeye çalıştım.
+
+249
+00:36:05,204 --> 00:36:06,204
+Burada...
+
+250
+00:36:06,204 --> 00:36:08,204
+Eccurisy'yi nasıl örüştün biraz öyle.
+
+251
+00:36:08,659 --> 00:36:32,139
+Ecurisi Reward'da hocam, bize verdiği cevapta şu RegEx ile cevap kısmını aradım. Prompt'ta böyle söylemesini istediğim için. Burada verdiği cevap neyse, yani içerisindeki doğru cevabı verdiyse bu cevabın, RegEx'ten dönen yerde bir puan vermeye çalıştım.
+
+252
+00:36:36,659 --> 00:36:41,219
+Bu kısmı ürettiği cevabın içerisinde var mı yok mu ona bakmaya çalıştım.
+
+253
+00:36:41,900 --> 00:36:48,980
+Burada düşünme kısmındaysa böyle çeşitli keywordler denedim.
+
+254
+00:36:50,019 --> 00:36:54,759
+Çünkü bu nedenle açıklamaya yöneltmeye çalıştım modeli.
+
+255
+00:36:54,759 --> 00:37:03,460
+Eğer böyle ürettiği cevapta bunlar varsa ne kadar çok açıkladıysa o kadar çok puan almasını sağlamaya çalıştım.
+
+256
+00:37:04,275 --> 00:37:26,175
+Reson'a kısmında. Bu soft match şeyde aslında cevabını uzatmaya çalıştım. Yani daha açıklama yapabilmesini sağlamak için cevabı belli bir uzunluğun üzerindeyse az bir puan vererek onun cevabını uzatmaya çalıştım.
+
+257
+00:37:29,523 --> 00:37:46,083
+Yanlış tahmin etmesin ya da modelin sanırım gibi kelimeleri kullanmasını cezalandırarak acaba tersi yönden doğruluğunu arttırabilir miyim diye düşünmüştüm.
+
+258
+00:37:46,703 --> 00:37:50,603
+Bunu birkaç farklı şekilde etiketler denedim.
+
+259
+00:37:54,195 --> 00:38:13,856
+Modelin verdiği cevabın formatını etiketli bir formata çekerek daha doğru veri, daha doğrusu cevabını yapılı üreteceği için daha doğru cevaplar verebilirim acaba diye böyle bir etiket, paterne yakın satmaya çalıştım cevaplarını.
+
+260
+00:38:13,856 --> 00:38:16,396
+Genel olarak ödül fonksiyonları bu şekilde.
+
+261
+00:38:17,715 --> 00:38:19,416
+Bilginiz mi eleştirip kullanıyorsun bunları?
+
+262
+00:38:20,316 --> 00:38:20,655
+Burada.
+
+263
+00:38:21,300 --> 00:38:38,080
+Her birinde, aslında modeli doğrudan hepsine etmediğim için aslında Lora Adapter kullanarak aslında her bir adapterda bu ödül fonksiyonlarının bir tanesini kullanarak sonuç üretmeye çalıştım.
+
+264
+00:38:38,760 --> 00:38:39,940
+Bir tanesini kullanarak mı?
+
+265
+00:38:40,500 --> 00:38:50,820
+Yani bu şey, yani Base Adaptive Accuracy Format'ın üstüne, yani Resonink ya da işte bunların her biri nasıl etki ediyor diye.
+
+266
+00:38:52,099 --> 00:38:55,960
+Sonuçta Base'in üstüne ekleyerek gidiyorsun yani.
+
+267
+00:38:56,099 --> 00:38:57,940
+Evet, Base'in üstüne ekleyerek.
+
+268
+00:38:57,960 --> 00:39:00,599
+Tek başına dedin de tek başına olmaz yani.
+
+269
+00:39:00,599 --> 00:39:04,500
+Peki, anladım. Tamam, şimdi sunuma devam edebilirsin.
+
+270
+00:39:05,012 --> 00:39:20,052
+Burada Ensemble kısmındaysa hocam, modelin tamamı elimde olmadığı için MergeKit'le birleştirmek yapamadım. O yüzden adapter'ların ağırlıklarının ortalamalarını alarak bir modele ulaşmaya çalıştım.
+
+271
+00:39:33,012 --> 00:39:40,012
+Eğitim yaptıktan sonra, modeli oraya ettikten sonra o yeni çıkan matrisleri tekrardan modele eklemen gerekiyor.
+
+272
+00:39:40,112 --> 00:39:44,972
+Nihai modeli elde etmen için. Başka bir tarafta kullanabilmen için öyle bir şey yapmadım. Peki.
+
+273
+00:39:45,532 --> 00:39:55,231
+Evet hocam, o yüzden birleştirmedik. Galiba yanlış şey yaptım. Burada DNS olarak çok başarı elde edemedi. Performansım çok düşüktü.
+
+274
+00:39:58,231 --> 00:40:00,000
+Burada uyguladım ödül fonu.
+
+275
+00:40:00,000 --> 00:40:27,940
+Ödül fonksiyonlarım kötü etki etti. Burada benim fonksiyon tasarımından dolayı da olduğunu düşünüyorum biraz da. Bir de muhtemel soruları verirken prompt kısmında da cevabını şöyle ver kısmını daha da düzgün yapabilirdim. Bir de galiba modeli uzun eğitemediğim için de yakın sayamadı. Aslında ödül fonksiyonlarından eğitim boyunca puan alıyordu.
+
+276
+00:40:28,000 --> 00:40:51,980
+Ama çok uzun olmadığı için de sanırım çok yakın sayamadı. Bir de burada sorunu oldu. Ödül fonksiyonlarının şurada cevapları olması lazım. Önlük slide'da birazcık ters koymuşum ama hocam şuradan gösterip geriye döneyim. Burada cevapları şu şekilde vardı modeller genel olarak ama bu temel model.
+
+277
+00:40:52,400 --> 00:41:15,699
+Diğer model, temel model en iyisi olduğu için buraya bunu koydum. Diğer modellerde bununla aynı fakat daha az doğru cevap var. Burada modeller doğru cevabı mesela açıklama olarak verse bile, mesela cevap iki nokta deyip cevabı vermediği için ben doğru cevabı yakalayamadım. O yüzden çok fazla boş cevap vermiş gibi gözüktü modeller.
+
+278
+00:41:20,400 --> 00:41:36,980
+Bu uzunluğuna zorladığımda aslında cevabında C iş bölümü diye söylüyor ama ben burada cevap 2 nokta şeyini vermediği için model bana onu yakalayamadım. O yüzden ölçüm metrim aslında çok güvenilir olmadı.
+
+279
+00:41:38,820 --> 00:41:43,980
+Burada çok uzun yazmasını engellediğimde de doğru şey...
+
+280
+00:41:44,916 --> 00:42:06,676
+Özellikle uzun da sorular olduğunu fark etmemiştim. Uzun sorular olunca ben kısa yazdırmaya zorladığımda aslında modeli başarısızla yapmış oldum biraz. Burada cezalandırma kısmını cezalandırma için yaptığım ödül fonksiyonu çok düzgün olmadı o yüzden yaklaşım olarak.
+
+281
+00:42:07,016 --> 00:42:09,396
+Yani sorulara bakmadan ödül fonksiyonlarını tasarladın.
+
+282
+00:42:09,715 --> 00:42:17,235
+Hocam sorulara bakmıştım ama uzun sorular bu kadar fazla olduğum şey görmemiştim. Daha doğrusu denk gelmedim.
+
+283
+00:42:17,780 --> 00:42:31,440
+Soruları inceledim de. Burada başta sanırım bahsetmeyi unuttum. Ben de arkadaşlar gibi aslında soruları belli keywordlarla filtrelemeye çalıştım. Konu kolonunu kullanarak.
+
+284
+00:42:31,440 --> 00:42:44,039
+Mesela içerisinde matematik geçiyorsa ekle gibi. Daha doğrusu biraz daha yorum isteyen konuları etiket olarak deneyip çıkartmaya çalıştım.
+
+285
+00:42:45,780 --> 00:42:54,360
+1700-1900 soru gibi bir şeye indim. Orada da zaten 1000 tanesini 300 test gibi kullanmaya çalıştım.
+
+286
+00:42:55,619 --> 00:42:58,000
+Bir Lost grafiğin nasıl? Onu gösterebilir misin?
+
+287
+00:42:59,659 --> 00:43:06,159
+Doğrudan Lost grafiği çizdirmedim ama eğitim içerisinden gösterebilirim.
+
+288
+00:43:06,159 --> 00:43:07,079
+Görükemedim.
+
+289
+00:43:09,179 --> 00:43:11,480
+Tabii hangi veri onu da bilmiyoruz.
+
+290
+00:43:15,731 --> 00:43:19,231
+Burada output'um bozulmuş mu?
+
+291
+00:43:23,891 --> 00:43:37,691
+Burada aslında hocam arasındaydı ama nedense şu anda? Peki tamam. Teşekkürler [öğrenci]. Burada hocam sonuçlar bu şekilde daha aslında öde fonksiyonlarını daha iyi yapmam lazımdı.
+
+292
+00:43:38,260 --> 00:44:03,860
+Bir de sanırım Adap, Lore kullanmak biraz dilin yeteneklerini bozduğuma şey oldu sanırım. Çünkü dili hiç eğitmeden önce aslında az çok cevaplara uyum sağlayabilirken Lore sonrasında biraz bu formata uyamamaya başladı. O yüzden orada da galiba bir sorun var. Genel olarak böyle çıkarımlarım bir şekilde olur hocam.
+
+293
+00:44:04,916 --> 00:44:07,016
+Peki, teşekkürler [öğrenci].
+
+294
+00:44:07,236 --> 00:44:08,436
+Ben teşekkür ederim.
+
+295
+00:44:17,876 --> 00:44:19,215
+[öğrenci].
+
+296
+00:44:24,755 --> 00:44:26,556
+Peki, [öğrenci].
+
+297
+00:44:31,603 --> 00:44:45,183
+[öğrenci]. Buradayım hocam. Geliyor musunuz? Geliyor. Tek başa mısın? Yok hocam. [öğrenci] ile birlikteyiz. Merhaba hocam. Merhaba. Sözdükle konuşuyorum.
+
+298
+00:44:51,188 --> 00:44:52,428
+Ekranım görünüyor mu?
+
+299
+00:44:53,508 --> 00:44:54,008
+Evet.
+
+300
+00:44:55,408 --> 00:45:00,108
+Hocam öncelikli olarak bu kısımları hızlıca geçebilirim aslında.
+
+301
+00:45:00,788 --> 00:45:01,128
+Lütfen.
+
+302
+00:45:01,988 --> 00:45:06,348
+MMLU veri setini kullandık burada. Seçilen konuların soru dağılımı bu şekilde.
+
+303
+00:45:06,628 --> 00:45:10,148
+Tabii ki burada konu filtrelemesi de yaptık.
+
+304
+00:45:10,148 --> 00:45:15,268
+Çünkü bilgi ve ezbere dayılı soruların bulunmaması için.
+
+305
+00:45:19,347 --> 00:45:44,347
+Burada ödü fonksiyonlarının tasarımını anlatmak istiyorum. Standart, doğruluk ve format uygunluk ödülerin yanı sıra modele özgü yetenekler kazandırmak için bir takım ödü fonksiyonları tanımladık burada. Örneğin muhakeme odaklı ödü fonksiyonumuzda. Modeli sadece temin etmesini değil, aynı zamanda akıl yürütmesini de istedik. Bunun için de...
+
+306
+00:45:44,847 --> 00:45:54,728
+Modeli bu nedenle, çünkü gibi bağlaçlar ekleyerek ödüllendirmesini istedik. Bağlaç kullanımında 0.5 puan aldı.
+
+307
+00:45:57,108 --> 00:46:23,288
+Bu nedenle çünkü gibi bağlaşılar kullanıldığı zaman ama çıkarım yaptığı zaman mesela A çıkı doğrudur. Çünkü gibi çıkarımlarda da 0.3 olarak puanlandırdık. Burada kısa ve öz modelimiz var. Burada modelin gereksiz tekrarlardan kaçınmasını istedik aslında. Doğru cevabı daha az. Tokun kullanarak verirse daha yüksek puan aldı. Kendini eğer tekrar ederse ceza alıyor.
+
+308
+00:46:25,108 --> 00:46:34,528
+Kelime arasında tam puan olarak ödüllendirdik ve daha sonrasında kademeli bir düşüş oluyor. Yüzden daha fazla bir token'a cevap verirse 0 puan oluyor.
+
+309
+00:46:34,528 --> 00:46:37,528
+Burada dürüst öberisizlik...
+
+310
+00:46:37,780 --> 00:47:05,740
+Leward fonksiyonumuzda. Halüsinasyonu azaltma istedik burada. Yani uydurmasındansa bilmiyorum demesi daha iyi olur diye düşündük. Yanlışlıkların neden yanlış olduğunu açıkladığı durumları da ödüllendirdik. Şık elemesine bir puan verdik. Mesela aşık olamaz gibi ifadelere. Belirsizliği de bilmiyorum gibi ifadeleri, emin değilim gibi ifadeleri 0.5 olarak burada.
+
+311
+00:47:05,780 --> 00:47:07,780
+Bu konuda sınıflandırdık.
+
+312
+00:47:07,780 --> 00:47:16,780
+Dilsel kalitede aslında daha çok Türkçe dil biksi kurallarına uyum sağlayıp sağlamadığına baktık.
+
+313
+00:47:16,780 --> 00:47:28,780
+Cümlenin uygun bir noktaların işaretiyle bitip bitmemesine göre örneğin noktaların işareti ünlem gibi ifadeyle bitiyorsa 1 puan verdik bitmiyorsa da 0 puan alıyor model.
+
+314
+00:47:31,923 --> 00:47:37,364
+Kısımla ilgili de özet bir tablo oluşturduk. Bundan sonraki kısım için arkadaşım [öğrenci] anlatacak.
+
+315
+00:47:39,043 --> 00:47:41,103
+Ekran paylaşımını ben anlıyorum.
+
+316
+00:47:41,103 --> 00:47:41,643
+Dört dört dört.
+
+317
+00:47:44,123 --> 00:47:45,123
+Geldi mi ekran?
+
+318
+00:47:48,583 --> 00:47:49,463
+Gözüküyor mu ekranın?
+
+319
+00:47:49,963 --> 00:47:50,783
+Evet, geldim.
+
+320
+00:47:50,783 --> 00:47:52,403
+Tamam hocam.
+
+321
+00:47:52,943 --> 00:48:07,403
+Hocam, burada model performanslarını incelediğimizde, ilk modelimiz muhakeme modeli dediğimiz, ortalama bir, yani ortalama dediğim yani diğer dört model arasına baktığımızda bunların yine hani oldukça çükü de loss değerlerine baktığımızda, hani 0.1 ile x 0.2 arasında değiştiğini görüyoruz.
+
+322
+00:48:07,403 --> 00:48:14,864
+Yani aslında diğerlerine bakarak ortalama yani başarısı. İkinci modelimiz en yüksek başarıyı veren bu kısa cevap veren model.
+
+323
+00:48:15,463 --> 00:48:20,943
+Eksi 0.4'lere kadar bu görselde de görüyoruz. Şu kısımlarda inmiş yani.
+
+324
+00:48:20,943 --> 00:48:26,483
+14. adında falan. Loss'un buralara kadar düşün görünen. Eksi Loss işte ödüllendirilmiş yani.
+
+325
+00:48:27,027 --> 00:48:53,887
+Burada bunun sebebi biraz aşağıda da göreceğiz. Modelin şey yaptığı kısımlarda çokça, yani model kısa olmadığında, diğer modellerde model soruyu ve promptu tekrar ediyor. Hatta bittikten sonra yeni soru oluşturuyor. Bu da zaten performans yerlere iniyor böyle olunca. Kısa modelde en azından bunun önüne geçiyoruz. İnandığım performans yükselmesede. Hani bu şeyden soruyu tekrarlama ya da yeniden soru oluşturma gibi şeylerin önüne geçmiş oluyor.
+
+326
+00:48:55,027 --> 00:48:57,427
+Bir tık daha iyi bir performans gösteriyor.
+
+327
+00:48:58,068 --> 00:49:23,068
+Bu halistinasyon görmesine geldiğimiz modelin de performansı çok yüksek değil. Çünkü aslında zor yani hem ekürüsü tutturup hem de bilmediği sorularda bilmiyorum deyip alınmaya çalışması ortalama bir başarı da yine. En düşük başarıyı hani D-Wings kurallarını kontrol ettiğimiz model verdi. Bunda da ama 0.1 ile 0.2 arasında değişti dostlar. Bunda da ama yine şey var. Test kümesi o kadar değişken ki farklı bir...
+
+328
+00:49:23,284 --> 00:49:35,364
+Soruyu test ettim. Mesela buna çok uygun yani. Dil bilgisayar kurallarına çok uymuş, çok güzel cümle kurmuş, devam ettirmiş bir model de var mesela. Ekörüsü düşük olsa da. Biraz hani testin şeyle de değişiyor. Test örneğiyle de.
+
+329
+00:49:36,211 --> 00:49:59,971
+Burada işte 4 sonucu karşılaştırıldığımız bir tablo var. Bunu hemen şeyden sonra yapmıştık, model eğitimi bittikten sonra. O yüzden merge model yok. Yani merge model de vardı aslında. Dosya yolunu tanımarken bir hata olmuştu. Modelleri kaybetmemek için ben hepsini hani izlik olarak indirdim. O yüzden işte farklı bir şeysi de vardı. Hani ticikli bir karşılaştırılması da mesela. Burada da mesela tam tersi reasoning şey verip diğer modellere hani merge ile kıyasladığımızda.
+
+330
+00:50:00,000 --> 00:50:27,199
+Kötü şey verdi, sonuç verdi. Bu maalesef biraz şeyle alakalı. Test kümemiz, normalde biz de 500 soru olarak ayırmıştık test kümesini ama şey yetmediği için, dolanımımız yeterli olmadığı için bunlar sadece 20 sorularla yapılmış testler. O yüzden test şeysi biraz düşkü. Bunu arttırsak birazcık daha başarılarının artacağını düşünüyoruz. Hatta başlattık ya, ben 250 soruyla falan da ama hem internet sorunları, internet test edildiği için hem GPU hatası aldığımız için.
+
+331
+00:50:28,000 --> 00:50:32,659
+Eğitimde mi 20 soru, testte mi 20 soru?
+
+332
+00:50:32,659 --> 00:50:42,619
+Yok, yok hocam. Teste eğitim bitti. Sonra test var. 500 soruyu da başlattık ama çok uzun sürdüğü için bunlar 20 sorularla alınabilen sonuçlar.
+
+333
+00:50:42,619 --> 00:50:51,400
+500 soruyla test edemelik. Eğitim ile şey, 1000 soruyla yapıldı. Aynı şekilde sadece seste böyle şeyler var. Farklı olmalı.
+
+334
+00:50:52,436 --> 00:51:02,876
+Aşağıda, burada da sonuçları yorumladığımızda, dediğimiz gibi kısa modelin en iyi ekülüsü verdiğini görüyoruz.
+
+335
+00:51:02,876 --> 00:51:08,076
+Aynı zamanda şöyle bir şey de var, şunu da göstermek istiyordum.
+
+336
+00:51:08,496 --> 00:51:13,235
+Ben mesela bu eğitim bitikten sonra kaliteyi arttırmak için farklı eğitimler denedik.
+
+337
+00:51:13,956 --> 00:51:19,416
+Burada mesela formatın aslında %94 başarılara kadar çıktığı senaryolarımız vardı ama doğruluk hiç artmıyordu.
+
+338
+00:51:19,775 --> 00:51:45,255
+Sürekli ödül fonksiyonlarını falan değiştirerek, denemeler yaparak. Tabii eğitim bitmeden sürekli dur dur, tekrar dene şeklinde ilerlemiştik. Burada mesela doğruluğu arttırmak için yaptığımız senaryolar da oldu. İşte modeli cezalandıralım ve şeyi düşsün. Eğer tag içinde bir cevap vermiyorsan düşünce tagı içinde ceza alsın. Bu sefer model cevap vermeyi falan bıraktı. Böyle olduğu için onu ilerletemedik.
+
+339
+00:51:46,931 --> 00:51:51,931
+Aşağıdaki çıktı görselimiz var. Burada promptumuz da ilk başta daha basit.
+
+340
+00:51:51,931 --> 00:51:55,931
+Prompt'in içinde örnek bir soru koymamız birazcık arttırdı.
+
+341
+00:51:55,931 --> 00:52:00,931
+Yani müzelerin verdiği cevapları iyileştirdi ama tekrar eden şeylerin çok fazla olduğunu görüyoruz.
+
+342
+00:52:00,931 --> 00:52:04,931
+Yani soruyu tekrar etme, prompt tekrar etme. Modelde çok fazla var.
+
+343
+00:52:04,931 --> 00:52:07,931
+Burada şöyle bir şey yapamadık. Model gerçekten ne çıktı veriyor diye.
+
+344
+00:52:07,931 --> 00:52:14,931
+Hani veri setindeki sorular aslında zor sorular olduğu için de modelin öğrenmesi bayağı zor oluyor.
+
+345
+00:52:14,931 --> 00:52:32,652
+Burada kendi söylediğimiz basit soruya ne cevap veriyor? Modeller nasıl cevap verir? Bunları bir kıyaslayalım için. Basit bir soru. Ali'nin yaşı, Ayşe'nin yaşında iki katıdır. Ayşe'nin yaşında kaç yaşındadır? Mesela böyle bir şey yapsak ne çıktı verir diye düşündük. Burada işte görüyoruz. O bayağı hepsinde şey yapmış model.
+
+346
+00:52:33,108 --> 00:52:46,188
+Pek bir şey sağlayamamış yani mantıklı cevap. Normalde düşünce takı açması gerekirken işte sistem diye bir şey açmış. İşte sonucu böyle vermiş. Bazılarında hiç zaten tak açmamış. O yüzden de hani iki üç taglar olmadığı için çok düşük geliyor.
+
+347
+00:52:46,771 --> 00:53:09,112
+Bunları mesela çok farklı. Bir tık daha bu muhakime modelinin farklı bir cevabında yine testinde karşıma çıkan vardı aynı soru için. Şey yaptığı bir cevabı da vardı mesela. İşte o onun iki katı yaşında olmalıdır. O yüzden 12'dir demiş. Mesela ikili takmak yerine ikiyle toplamış. Hani bir tık böyle yaklaştığı ama işte yine de tam tutturamadığı örnekler de var.
+
+348
+00:53:09,748 --> 00:53:16,128
+Direkt test kümesinden bir soru için bir örneğe bakıyoruz şekil altıda. Rastgele bir soru alındı.
+
+349
+00:53:16,596 --> 00:53:41,436
+Burada da Merge modelin cevabı var. Çünkü bu en dikkatçikten cevap onun cevaplarından bir tanesiydi. Burada aslında Merge modelimiz şuradaki şeyde vardı. Daha kötü cevap, daha kötü sonuç veriyor. Daha peki modellerden. Birleştirirken token yapısı falan bozuldu muhtemelen. Burada çünkü kendi olmayan taglar açıyor. İşte B tagları. Zaten açıklarda olmayan bir cevabı veriyor, uyduruyor.
+
+350
+00:53:42,068 --> 00:54:08,068
+Yine rastgele seçtiğimiz bir soru için bu kimya sorusu olarak geldi. Mesela şeyimiz, Dil Bilgis modelimiz şu şekilde bir cevap vermiş. Böyle çok güzel bilimsel terimlerle, cümle yapısı gayet güzel, noktalamalar falan tam böyle okunabilir cümle. Ama aslında cevabın içerikle alakası yok. Yani bu soruya cevap vermiyor ne kadar düzgün bir formatta olsa da. Böyle soruncusu bir karar var ama böyle tamamen aslında uydurma yani kendi içinde.
+
+351
+00:54:08,563 --> 00:54:28,563
+Bu dönemelerimiz doğrultusunda bizim önerilerimiz daha bunu geliştirebilmesi için veri setinin daha kolay bir veri setiyle bence değiştirilebilir. Sonuçta ne kadar kolay bir alt kime seçmeye çalışsak da oldukça zor sorular geliyor. Ve kullandığımız Waze modeli değiştirebiliriz. Bu GPT-2'nin Large modeli aslında oldukça...
+
+352
+00:54:28,947 --> 00:54:40,387
+Zayıf bir model, daha güçlü modellerle belki değiştirilebilir. Ayrıca biz mesela dört cevap üretmiştik eğitim doğrusunda. O cevap sayılarını arttırarak da performanslarda artış yaşanabileceğini düşünüyoruz.
+
+353
+00:54:41,147 --> 00:54:41,847
+Teşekkürler hocam.
+
+354
+00:54:42,248 --> 00:54:43,807
+Peki, teşekkürler arkadaşlar.
+
+355
+00:54:49,619 --> 00:55:03,699
+Ve şevvali. Peki, [öğrenci] okumuş burada mı? Evet buradayım. Evet, [öğrenci] seni dinliyoruz. Tek başı olsun. Evet, tek başı olsun.
+
+356
+00:55:28,019 --> 00:55:45,019
+Şimdi ben de işte klasik LoRa kullandım. Ondan sonra GeoP kullanarak, yöntemi kullanarak eğittim. Aynı şekilde ben de chat GPT'ye sordum. Bilgi ağırlıklı tabloda verilen konular kalacak şekilde.
+
+357
+00:55:56,403 --> 00:56:06,864
+Öncelikle bölüm kaldı, sample kaldı. Daha sonrasında bir adet eğitim ve beş adet test verilse kullandım.
+
+358
+00:56:08,523 --> 00:56:16,724
+Dizayn ettiğim ödül mekanizmalar çok değil, performans göstermedi ama önce nasıl yaptığımı anlatayım.
+
+359
+00:56:16,724 --> 00:56:21,724
+İşte temel ödül mekanizmasında doğruluğunu kontrol ediyor. Ayrıca formatta...
+
+360
+00:56:21,887 --> 00:56:45,788
+Bu cevabı doğru bir biçimde ifade edip etmediğini kontrol ediyor. Ayrıca belki galiba sanırım gibi emin olmadığını belirten tanımlamaları kullanmıyor. Çünkü ne kadar model şey olsa bile zaten elelemlerin olayı bir şey bilmediğini söyleyememesi. O yüzden ben bunu belirtmemesinin daha iyi olduğunu düşündüm.
+
+361
+00:56:47,315 --> 00:56:59,195
+İlk özür mekanizması olarak, model sadece yalnızca bir cevap oluşturup devam etmesini önlemek için daha öncesinde bir açıklama var mı diye kontrol ediyor.
+
+362
+00:56:59,315 --> 00:57:03,815
+Ve bu açıklamada 7 kelimeden kısa ise model cezalandırılıyor.
+
+363
+00:57:04,275 --> 00:57:16,395
+İkinci olarak entropi hesaplıyor ve belli bir eşit derecesinin üstünde olmasını sağlıyor. Bu sayede aynı kelimeleri tekrar tekrar kullanmasını engellemek istedim.
+
+364
+00:57:16,395 --> 00:57:29,635
+Üçüncü olarak da model tarafından çıktıların cevaplarının, frekanslarının belli bir derecenin altında tutmak istedim.
+
+365
+00:57:30,900 --> 00:57:55,040
+Ben batch size olarak 4 kullandım. 0.7'nin üzerinde cevapların aynı çıkması aslında aynı anda 3 sorunun da aynı cevapla gelmesi, aynı doğru cevaba sahip olması. Bunun da olasılığı düşük olduğu için modelin daha değişik cevaplar vermeye itileceğini düşündüm. Temel kanım bu yöndeydi.
+
+366
+00:57:55,456 --> 00:58:15,576
+Son olarak da modelin ürettiği cevaplarda kullanılan kelimelerin soru metiniyle örtüşmesini sağlamak istedim. Çünkü ekonomiyle alakalı bir soru cevaplıyorsa o zaman ekonomik terimler kullanması lazım. Ki bu baya kötü etkiledi modeli. Kontrolden önce de üç karakterden kısa kelimeleri çıkartmıştım.
+
+367
+00:58:20,864 --> 00:58:29,864
+Örnek verdiği cevapları. Bu şekilde kötü cevaplar verdi model.
+
+368
+00:58:31,864 --> 00:58:38,864
+Bunları incelediğimizde aslında performans olarak kötü verse bile...
+
+369
+00:58:39,219 --> 00:59:05,239
+Ödül mekanizmalarının doğalarının dışına çıkmadığını görebiliyoruz. Mesela temel model, evet gerçekten de model nasıl cevap vermesi gerektiğini öğrenmiş. Sadece çok sayıda cevap veriyor. Ya da açıklama modeli işte daha uzun cevaplar vermesini de sağlamış temel modelden. Entropi modelinde de yine bu şekilde tekrarlardan kaçınmış. Yani yine çok saçma sapan şeyler söylemiş ama.
+
+370
+00:59:05,811 --> 00:59:08,871
+Yine de daha farklı kelimeler kullanmış birazcık daha.
+
+371
+00:59:09,791 --> 00:59:16,231
+Bias modelinde ise bu sefer cevapların aynı olmamasını direkt cevap vermeyerek sağlamış.
+
+372
+00:59:16,711 --> 00:59:18,591
+Ama yine de artık cevaplar aynı değil.
+
+373
+00:59:19,871 --> 00:59:25,531
+Ondan sonrasında benzerlik modelinde de işte yaptığım hatalardan birisi de bu.
+
+374
+00:59:25,531 --> 00:59:28,591
+Direkt olarak soruyu kopyalamayı öğrenmiş onun yerine.
+
+375
+00:59:29,051 --> 00:59:30,531
+Hatta bazı sorularda...
+
+376
+00:59:30,771 --> 00:59:44,531
+Soruyu kopyalıyor, cevabını veriyor. Sonra soruyla alakalı benzer sorular soruyor. Mesela Türkiye'nin başkenti neresidir? Tekrar yazıyor Ankara. Sonra Türkiye'nin en kalabalık şehri hangisidir? İstanbul diye devam ediyor bu şekilde.
+
+377
+00:59:45,751 --> 00:59:57,351
+Daha sonrasında ortalama ödül, test ettiğimizde ortalama ödül ve alınabilecek maksimum ödül şeylerini karşılaştırdığımızda aslında temel model, açıklama model ve bias model.
+
+378
+00:59:58,068 --> 01:00:24,068
+Aynı ödülü alıyor. Çünkü açıklama model ve boyas modelden herhangi bir ceza almamış. Yani aslında bu da öğrendiğini gösteriyor ne kadar kötü öğrense bile. Entropi modelinde de bir artış var. Çünkü daha farklı kelimeler kullandığı için. Benzerlik modelinde ama diğerlerine kıyasla daha kötü bir ödülü almış. Bunun temel sebebi model büyük ihtimalle erkenden direkt olarak soruyu...
+
+379
+01:00:24,688 --> 01:00:35,907
+Cevap kopyalamayı öğrendiği için bundan dolayı diğer format ve ödülü hiçbir şekilde bakmadan habire tekrarlamayı öğrenmiş yani.
+
+380
+01:00:37,108 --> 01:00:39,447
+Bir saniye [öğrenci], bir saniye bekleyeceğim seni.
+
+381
+01:01:07,476 --> 01:01:13,395
+Yalnız şeyi anlamadın benzerlikte zaten soruyu kopyalamayı öğrendiyse niye puan alamamış ki?
+
+382
+01:01:14,576 --> 01:01:23,635
+Çünkü ben büyük ihtimalle benzerlik modeli benzerliğin ödülünü biraz fazla verdim. Formatla aynıydı.
+
+383
+01:01:24,467 --> 01:01:39,307
+Ödüller. Bu yüzden de formatı takip edeceğini, benzerliği takip etmeyi tercih etmiş. Yani hiç doğru cevap vermenin ödülünü tadamamış aslında büyük ihtimalle. O yüzden bu şekilde kaldığını düşünüyorum.
+
+384
+01:01:50,387 --> 01:02:12,387
+İki modeli birleştirsem, mesela benzerlik modeliyle temel modeli birleştirsem ve benzerlik modeli acaba sadece soruyu cevaplamaktansa aynı zamanda şıkkı söylemeyi de öğrenebilir mi diye bir test etmek istedim. Ne kadar aldığım performanslar kötü olsa bile. Ödül puanı birazcık daha arttı temel modele göre. Yani...
+
+385
+01:02:13,460 --> 01:02:36,380
+Büyük ihtimalle aralarında doğru, şık, şudur şeklinde verdiği cevaplar da var. Ama büyük ihtimalle yine çoğu zaman tekrar ediyor soruyu. Soruya verdiği cevap zaten, yani şu örnek soruya verdiği cevap yine aslında değişmemiş bu örnek için. Yine tekrar etmeyi tercih etmiş bu şekilde.
+
+386
+01:02:39,539 --> 01:02:43,799
+Sen burada modere soruyu ve seçenekleri veriyorsun. Sonra devam ettir diyorsun değil mi?
+
+387
+01:02:43,799 --> 01:03:00,679
+Evet, aynı zamanda promptta da şu soruyu al, cevabı şu şekilde ver ve ondan önce bir açıklama yap diye prompt girdim.
+
+388
+01:03:02,519 --> 01:03:05,579
+Peki, doğruluk oranlarına ölçtün mü hiç?
+
+389
+01:03:06,132 --> 01:03:20,492
+Doğruluk oranlarını ölçmedim. Ama yani zaten aynı anda birden fazla ışık verdiği için yani modelin de kendisinde kafası karışık. O yüzden ölçmeyi tercih etmedim.
+
+390
+01:03:23,956 --> 01:03:42,936
+Sonuç olarak baya kötü bir performans modeller görüldüğü üzere. O yüzden ben de bunların hangi çözümler yapılabileceğini düşündüm. Birincisi Temel Düz mekanizmasındaki formatın daha detaylandırması. Çok basit bir kontrol koyduğum için.
+
+391
+01:03:44,692 --> 01:04:09,172
+Bunu habire tekrar etmeyi öğrenmiş model. Epo sayısını 3 yapmıştım. Bunun bu model için biraz fazla olduğunu fark etmedim. O yüzden de model biraz overfit olup yani bir şeyleri anlatmaktansa sanki her şeyi unutmuş ve sadece benim ödül mekanizması ile eğittiğim şeyleri yapmaya odaklanmış gibi davranıyor. Aslında öyle davranabilirim.
+
+392
+01:04:09,684 --> 01:04:28,804
+Açıklama kısmında varlığı kontrol ederken aynı zamanda cevap kısmıyla farklı olmasını da kontrol edilmesini de eklenebilir. Çünkü aslında uzatıyor ama bu uzatmayı yine aynı şeyleri tekrar ederek yapıyor. Entropi değerinin de sınırdan fazla olması değil, aynı zamanda düşük olmasını da eklemeyi...
+
+393
+01:04:29,844 --> 01:04:47,324
+Olabilir. Başka bir çözüm. Çünkü evet yani farklı kelimeler kullan ama çok da aşırı derecede farklılaşma ki böyle bir örnekte böyle bir şey gözükmüyor. Yine çok benzer kelimeler kullanmış ama yine de performansı arttırmak için kullanılabilir.
+
+394
+01:04:56,467 --> 01:05:11,228
+Hiçbir etkisi yok. En kötü cevabı bu veriyor diyebiliriz. Benzerlik ödülü mekanizmasında da sonradaki kelimeleri direkt olarak kontrol ettiğim için zaten tekrar etmeye başlamış.
+
+395
+01:05:11,228 --> 01:05:21,228
+Yani üç hafiften kısa kelimeleri çıkartmış olsam bile diğer kelimelerin çoğu kaldığı için bunu tekrar etmiş direkt. Onun yerine bunların filtrelenip...
+
+396
+01:05:24,115 --> 01:05:30,835
+Bu soruda terimle ile alakalı kullanılan cevapları ve kelimeleri tekrar etmesini isteyebilirim.
+
+397
+01:05:31,476 --> 01:05:34,596
+Bu şekilde geliştirilebilir diye düşünüyorum. Teşekkür ederim.
+
+398
+01:05:43,059 --> 01:05:44,680
+Telefonunuz açık değil hocam.
+
+399
+01:05:46,980 --> 01:05:48,820
+Teşekkür ederim [öğrenci].
+
+400
+01:05:50,820 --> 01:05:54,760
+Evet, şimdi [öğrenci].
+
+401
+01:05:59,891 --> 01:06:05,132
+Tek başına mısın? Evet, peki. Peki, başlayabilirsin [öğrenci].
+
+402
+01:06:09,811 --> 01:06:10,891
+Geldi mi ekranım?
+
+403
+01:06:11,411 --> 01:06:11,911
+Geldi.
+
+404
+01:06:16,432 --> 01:06:23,552
+Selamlar. Ben de çoğu arkadaş gibi CHPO ve Dora kütüphanelerini kullanarak eğittim.
+
+405
+01:06:23,552 --> 01:06:34,552
+Bu neğer bir soru için 4 çabalık ürettim. 5 sayısım 1. Learning eğitim 5 çarpı 10 üzeri eksi 6'ydı.
+
+406
+01:06:37,172 --> 01:06:44,612
+Aslında performanslerim bu şekilde. Oynarken de ben eylemden yardım oldum.
+
+407
+01:06:44,672 --> 01:06:45,351
+Lütfen öyle bir şey.
+
+408
+01:06:46,851 --> 01:06:48,711
+Sesin çok derinlerden geliyor.
+
+409
+01:06:49,431 --> 01:06:50,231
+Şu an daha iyi mi?
+
+410
+01:06:50,791 --> 01:06:51,572
+Evet, daha iyi.
+
+411
+01:06:52,351 --> 01:07:00,172
+Tamam. Önce bir ön işleme kısmına girdim. Disting buradaki kategorileri seçtim. Matematik, mantık.
+
+412
+01:07:00,884 --> 01:07:23,703
+Fizik, istatistik vesaire gibi konuları filtreledim. Yaklaşık buradan 5000 soru çıktı. Bunun içinden işte rastgele 1000 tane test, 1000 tane eğitim, 500 tane soruyu seçtim. En çok aslında eğitim dışında düşünsel olarak yorulduğum kısım benim bu prompt seçimi kısmı oldu.
+
+413
+01:07:24,884 --> 01:07:45,884
+Başta ben birkaç akşın yaptığı gibi böyle bir instruction veriyordum. Aslında şu şekilde formatlar, düşünce, etiket altında, kendini açıkla vs. gibi. Ama bunların hiçbirinden base modelde başarılı bir cevap alamadım. Yani takip edemiyordu, tekrar ediyordu, formatı tekrar ediyordu, etiket yazıp duruyordu. O yüzden...
+
+414
+01:07:46,547 --> 01:08:07,027
+Talimat tabanlı yöntemden vazgeçtim. Örnek bir basit soru yazdım. Peşine gelen eğitim sorusunu yazdım. Ondan sonra düşünce teki açıp tamamlamayla devam etsin diye düşündüm. Benim Sistem Prompt'un bu şekilde basit bir başkent sorusu var. Sonra soruyu formatlıyor.
+
+415
+01:08:07,572 --> 01:08:27,752
+Ardından analiz deyip yine bu örnekteki bir düşünce tekniği açıp bırakıyor. Ondan sonrasında modelin tamamlamasını bekliyoruz. Burada model tamamlayıp yedi soru da yazabiliyor. Kaç kere debak ettim. Böyle bir ihtimalle var ama elde edebileceğim en iyi şey bu oldu. Onu söyleyebilirim.
+
+416
+01:08:28,692 --> 01:08:31,632
+Birkaç kere buraya verebilirdin? Öyle şey denedin mi hiç?
+
+417
+01:08:32,532 --> 01:08:33,471
+Ne verebilirdim?
+
+418
+01:08:34,100 --> 01:08:38,620
+Birkaç tane soru verebilirdin. Öyle bir şey denedin mi hiç?
+
+419
+01:08:39,440 --> 01:08:43,040
+Örnek soru olarak.
+
+420
+01:08:44,620 --> 01:08:48,940
+Aklıma gelmedi aslında. Belki çok daha iyi olurmuş.
+
+421
+01:08:48,960 --> 01:08:52,399
+Yani pattern'ı anlaması için onu demeye çalışıyorum.
+
+422
+01:08:53,579 --> 01:08:58,260
+Bu örnek sorudan beş tane sonra yine analiz düşünce şeklinde bıraktım.
+
+423
+01:08:58,336 --> 01:09:10,476
+Yok, yok, yok. Hayır. Yani sonuçta cevaba kadar gittin. Ondan sonra bir tane daha, bir tane daha. Yani hani yapıyı, pattern'ı olduğu gibi böyle görebilmesi için. Anlatabildim mi?
+
+424
+01:09:11,956 --> 01:09:23,476
+Ya ben bir sorunun pattern'ı anlayabileceğini düşündüm. Aslında ilk başta hem örnek vardı hem komutlar vardı şu şekilde, bu şekilde. Komutlar işi çok bozuyordu. O yüzden sadece örnek soru.
+
+425
+01:09:23,828 --> 01:09:25,768
+Ve ardından işte...
+
+426
+01:09:25,768 --> 01:09:29,268
+Anladım işte. Örnek sorudan birkaç tane daha verseydin demek istiyorum.
+
+427
+01:09:29,388 --> 01:09:33,628
+Onu demek istiyorum. Yani hani bu yapıyı da, yani işte Türkiye'nin başkenti neresi aşağı kadar geldi.
+
+428
+01:09:34,368 --> 01:09:37,548
+Yani cevabın sonuna kadar geldi. Ondan sonra yeni bir tane daha soru.
+
+429
+01:09:38,728 --> 01:09:39,708
+Aynı şekilde.
+
+430
+01:09:40,404 --> 01:10:02,564
+Bunun iyi gibiyken buna zaten baya bir GPU kredimi şey yaptığım için artık Prompt'la çok fazla oynayacak şeyim kalmadı. Aslında siz İnference sorunca arkada hemen hazırlamaya çalıştım. Ama herhangi bir aktif GPU yine bulamadım. Ne Colab'da ne Cagle'da. O yüzden son modelimin de İnference'ı aslında şu an hazırda elimde yok.
+
+431
+01:10:02,564 --> 01:10:04,904
+Peki tamam, devam edelim.
+
+432
+01:10:07,347 --> 01:10:29,847
+Benim için aslında iki farklı cevap açtırıcı var. Biri gevşek bir katı. Modellerin doğruluk değerlendirmesinin aslında gevşeyi kullandım. Burada kapanış etiketi olmasa da ben cevap doğru aldım. İşte cevap A, doğru ışık B, yanıt C, çözüm A gibi formatları da kabul ettim.
+
+433
+01:10:30,452 --> 01:10:38,311
+Ya da metnin sonunda tek başına bir harf duruyorsa, anlatıp anlatıp A dediyse bu da benim için doğrudur dedim.
+
+434
+01:10:38,872 --> 01:10:43,352
+Böyle bir gevşek bir doğrulandırma var. Bunu ödül fonksiyonlarında da kullandım.
+
+435
+01:10:43,352 --> 01:10:49,551
+Bir de katı ayrıştırıcım var. Bu da sadece bu net formatı kabul ediyor.
+
+436
+01:10:49,792 --> 01:10:55,551
+Bir ödül fonksiyonunda ve ayrıca formatta ne kadar ayarladık onu ölçmekte kullandım.
+
+437
+01:11:00,659 --> 01:11:22,412
+İlk ödül fonksiyonu aslında standart baz doğruluk. Ben herhangi bir ödül fonksiyonunda negatif puan vermedim. Model çöküyordu. Birkaç kere böyle bir deneme yaşadım. O yüzden hepsinde en kötü sıfır alıyor. Burada aslında standartta tam puanı...
+
+438
+01:11:22,452 --> 01:11:41,731
+Gerçek cevabı verdiği zaman oluyor. Ama işte format puanı, teselli puanı ya da hiçbir şey yoksa başarısız veren bazı doğruluk fonksiyonu var. Peşine düşünce zincirini puanlayan bir ödül fonksiyonu var. Bu da hiçbir cevabı yoksa bir puan vermiyor.
+
+439
+01:11:43,152 --> 01:11:46,752
+Beş dakikayı doldurduk. Biraz daha hızlanabilirsen sevindim.
+
+440
+01:11:47,104 --> 01:12:11,064
+Yine dediğim gibi düşünce etiketleri ve düşünce etiketlerin içindeki uzunluk ve yine cevap doğruysa bonus verip ya da yanlışsa puan düşürüp düşünceye göre bir puan veren ödül fonksiyonu var. Kısa ve özgür sayısı cevaplara odaklanan bir ödül fonksiyonu var. Bu da işte doğru ve kısa sayısı çok puan veriyor. Doğru ama çok uzunsa biraz daha az.
+
+441
+01:12:11,507 --> 01:12:29,208
+Yanlış ama kısaysa yine teselli puanını veriyor. Mantıksal bağlaşları arayan uzun bir sistem var ama birkaç örnek verdim. Yaklaşık 40-50 tane mantıksal bağlaşları içermeye göre puanladığım bir ödül fonksiyonu var.
+
+442
+01:12:29,811 --> 01:12:40,672
+Bir de ilk başta bahsettiğim katı format ayrıştırıcı da kullanan, gerçekten kutsuzsuz formatı öncelikli bir ödül fonksiyonu vardı.
+
+443
+01:12:41,731 --> 01:12:46,612
+Burada tekil öğrenci başarıları benim genelde çok yüksek çıkmadı.
+
+444
+01:12:47,712 --> 01:12:53,311
+Burada en başarılı sonucu az ve öz cevaplara odaklanan model elde etti.
+
+445
+01:12:53,311 --> 01:12:56,091
+Yüzde on iki nokta dört doğrula. Bunu dediğim gibi Luz.
+
+446
+01:12:56,627 --> 01:13:07,847
+Gevşek ayıştırıcıyla ölçtüm doğruluk. En strik modelde zaten format başarısına 160'a kadar yükseldi bu amacına uygun çalıştı.
+
+447
+01:13:08,607 --> 01:13:13,187
+Thinkink ve standart modeller çok da iyi doğruluk sonucu vermedi.
+
+448
+01:13:14,887 --> 01:13:21,747
+Peşine modelleri birleştirdim. Doğru kolamına göre sıralayıp en yüksek 2, en yüksek 3.
+
+449
+01:13:22,260 --> 01:13:26,760
+Bir de dörtleri denedim. Standart'ı dışarıda bıraktım. Thinking'i dışarıda bıraktım.
+
+450
+01:13:27,760 --> 01:13:43,260
+Burada ilk en iyi doğruluk oranı sağlayan iki ensemble. Yüzde 12.2 bir doğruluk sağladı. Formatta da Strik kadar başarılı olmasa da hepsi yüzde 30 civarlarında format başarısına ulaştı.
+
+451
+01:13:44,243 --> 01:14:11,343
+Son olarak aslında ensemble modeller bireysel başarıda kısa öz modelin gerisinde kaldı. Çok ufak gerisinde kaldı ama onu geçmeyi başaramadı. Çok başarılı bir ensemble kurduğunu söyleyemem. En iyi format başarısından da uzaklaştı. Aslında %60'lık bir format başarımız vardı ama ensembl'larda, %133, %135'lerde kaldı.
+
+452
+01:14:12,307 --> 01:14:30,908
+Ama yine bence Bayes modele göre daha iyi bir noktaya geldiğini düşünüyorum. Bu ödü fonksiyonuyla eğitimden sonra. Çünkü Bayes model Dibak'ta gerçekten cevap bile üretemeyebiliyordu. Yüzde 12-13'te iyi olması...
+
+453
+01:14:30,908 --> 01:14:33,188
+Örneğe cevapları var mı Meneş?
+
+454
+01:14:34,288 --> 01:14:37,328
+Bayes modelin Diba vardı.
+
+455
+01:14:37,792 --> 01:14:38,592
+Hazırda.
+
+456
+01:14:38,992 --> 01:14:44,311
+Yani modellerin her mesajı. Şu soru için modeller şöyle cevaplar verdiler falan gibisinden bir şeyler var mı?
+
+457
+01:14:46,892 --> 01:14:54,252
+Eğitilmişin yok maalesef. Onu hazırlamaya çalıştım ama base modelin var mesela şu şekilde.
+
+458
+01:14:55,052 --> 01:14:59,552
+Bu sistem promptu. İşte Fransa Mahalli İdare gibi bir şey soruyor.
+
+459
+01:15:00,435 --> 01:15:11,975
+Sistem Prompt'la verdiği cevap ise dümdüz cevabı verip, ondan sonra soru Türkiye'de vergi veren ilk gibi bir şey yazıp duruyor.
+
+460
+01:15:13,435 --> 01:15:23,355
+Başka bir örnek soru da analiz şey. İlk önce cümle kurup, ondan sonra düşünce tabını kapatabiliyor.
+
+461
+01:15:23,891 --> 01:15:29,711
+Ama ondan sonra kendisi soru üretmeye başlıyor. Durmayabiliyor genel olarak.
+
+462
+01:15:29,711 --> 01:15:33,591
+Mesela bu formattan geçiyor.
+
+463
+01:15:33,591 --> 01:15:37,891
+Bu cevap cevap şeyini aldık. Ama yine doğru cevabı vermemiş oldu.
+
+464
+01:15:37,891 --> 01:15:39,291
+Gerçek cevap veya.
+
+465
+01:15:39,291 --> 01:15:46,891
+Sadece mesela kısa öz ödül fonksiyonu aslında bunu engellemeye başlıyor bir noktada bu kadar şey üretmesini.
+
+466
+01:15:46,891 --> 01:15:47,819
+Anladım.
+
+467
+01:15:47,923 --> 01:16:14,043
+Ama eğitilmiş modelin dediğim gibi inferans yok ama şeyde var. Ben Hugging Face'de repostör oluşturdum. Oraya attım. Aslında ensembleri de öyle kurdum. Çünkü farklı farklı platformlarda eğittim. En son kendi repostörümden çekip birleştirdim. Yapabilirim 1-2 gün içinde. Kredim geri gelirse. GPU kredim. Ama şu an yapamıyorum.
+
+468
+01:16:14,463 --> 01:16:22,344
+Anladım. Peki, teşekkürler [öğrenci]. Ben teşekkür ederim.
+
+469
+01:16:23,623 --> 01:16:32,003
+[öğrenci]. Buradayım hocam. Tek başına mısın? Yok hocam, [öğrenci]'le birlikte yapacağım.
+
+470
+01:16:33,363 --> 01:16:40,844
+[öğrenci]'in söylediği ne? [öğrenci]. Peki, başlayabilirsiniz.
+
+471
+01:16:42,195 --> 01:17:05,356
+Şöyle yapsam gelecek mi? Geldim şu an hocam. Şu anda görüyorum, evet. Bu girişse de hocam geçiyoruz direkt. Verisletimden başlayalım. [öğrenci] başlayacağım.
+
+472
+01:17:05,356 --> 01:17:05,936
+Ben başlayayım.
+
+473
+01:17:07,859 --> 01:17:24,059
+Herkesin yaptığı gibi, veri setinde bazı ufak oynamalar yaptık. 40.000'den fazla soru vardı. Burada, çıkarım ağırlıklı alt kümeyi seçerken şöyle bir şey düşündük. Bunları seçelim. Altta bölüm bazı doğrudan bir seçim yaptık başta.
+
+474
+01:17:24,212 --> 01:17:30,432
+Fakat içine biraz tuz sorularını da eklemek istedik. Onları da merak ettik açıkçası performansla nasıl etkileyeceklerini görmek için.
+
+475
+01:17:30,432 --> 01:17:35,972
+Anahtar kelime bazlarımı yaptık diğer arkadaşlarımızın yaptığı gibi. Bir de şunu yaptık.
+
+476
+01:17:35,972 --> 01:17:43,212
+Belki bir miktarda uzunluk kontrolü yapalım ki çıkarın arasındaki sorular daha fazla gelsin. Bilgisayar sular genelde daha kısa olabilir diye düşündük.
+
+477
+01:17:43,212 --> 01:17:46,604
+Bugünün sonunda 8000 tane soru oldu elimizde.
+
+478
+01:17:46,739 --> 01:18:11,779
+Bundan da veri setimizi oluşturduk. Altta da veri setinin dağılımı var. YGS, KBTF gibi sınavların dağılımları görülüyor. Diğer verilerin dağılımları var. Burada önemli olan şey şu bence, anlatmamız gereken şey. Şıkların dağılımı mümkün olduğunca dengeli yaptık. Eğer ki bir şık daha baskın olup da belki performansla yanıtıcı bir şey gösterebiliriz. Mümkün olduğunca dengeli bir cevap dağılımını gözettik burada. Bu şekilde baksın.
+
+479
+01:18:15,028 --> 01:18:42,168
+Hocam biz 5 tane şey yaptık herkes gibi. Şu kısımlara geçiyorum. Bunları sonra anlatacağım zaten. Bütün ödül fonksiyonlarında şu 5 tane şeyi kontrol ediyoruz. Birincisi spam penaltısı. Bu her cevap için, yani modern üreti her cevap için cevabın içinde spam var mı yok mu diye kontrol ediyor. Örnek veriyorum açıklama açıklama açıklama yazmasın diye mesela böyle bir koruma var. İkincisi
+
+480
+01:18:42,707 --> 01:19:02,608
+Aynı cevabı birden fazla şık yazmasın diye. Mesela ABCDE yazıp, direkt çünkü bypass edebilir yani sistemi. Bunda cezası var. Doğru cevap verirse 2 puan kazanıyor. Formatı veremezse eksi 2 puan kaybediyor. Ve çok kısa cevap verirse de eksi 1 puan kaybediyor.
+
+481
+01:19:03,252 --> 01:19:22,231
+Burada ayrıca biz engram tekrar kontrolü de yaptık. Örnek veriyorum çünkü çünkü çünkü gibi tekrarlamasını da aslında bir yandan engellemek istedik. İlk fonksiyonumuz format ve doğruluk. Normalde burada ben XML tabanlı şeyi denemiştim.
+
+482
+01:19:25,108 --> 01:19:35,348
+Açıklama cevabını, XML formatında yazma edilmiştim ama ona hiç uymuyor. Daha sonra daha basit bir format oluşturayım diye sadece açıklama ve cevap şeklinde daha basit bir format oluşturdum.
+
+483
+01:19:35,348 --> 01:19:47,368
+Burada mevcut olmasının az getirisi var. Doğru sırada verirse biraz daha puan kazanıyor. Doğru cevap verirse çok puan kazanıyor gibi.
+
+484
+01:19:47,368 --> 01:19:51,268
+Bu kısım zaten biraz önce bahsetmiştik.
+
+485
+01:19:53,908 --> 01:20:18,668
+Kısa cevap ve doğruluk üstüne bir fonksiyon. Bu fonksiyon da 7 ile 30 kelime arasında cevap vermesini bekliyoruz. Burada biraz gradiyan şeklinde yani 7'den az kelime verdiği zaman direkt sabit bir ceza almıyor. Eksik yazdığı kelime başına ceza alıyor. 30'dan fazla yazdığı zaman da kelime başına ceza alıyor.
+
+486
+01:20:19,988 --> 01:20:21,988
+Burada aslında daha kısa cevaplar vermesini bekledik.
+
+487
+01:20:21,988 --> 01:20:22,988
+Modelin.
+
+488
+01:20:22,988 --> 01:20:27,988
+Üçüncü fonksiyonumuz uzun cevaplar vermesi.
+
+489
+01:20:27,988 --> 01:20:32,988
+Burada 20 ile 100 kelime arasında bir cevap vermesini bekledik.
+
+490
+01:20:32,988 --> 01:20:41,988
+Bir önceki fonksiyonundaki gibi az kelime verirse ceza ve çok kelime verirse ceza olacak şekilde.
+
+491
+01:20:41,988 --> 01:20:43,988
+Dördüncüsü.
+
+492
+01:20:45,076 --> 01:21:08,515
+Türkçe karakter kullanmanın ödülünü yaptık hocam. Çünkü mesela şey yazabiliyordu, örneği var mı? Mesela düşündüğüm yerine dusunduğum yazıyor ya da işte I yazması gereken yerine I yazıyor hep vesaire öyle sormuşlarla karşılaştım. Böyle bir fonksiyon yazmanın işte modelin performansını iyileştirebileceğini düşündüm Türkçe aracısından.
+
+493
+01:21:09,300 --> 01:21:19,480
+Ve QWX gibi şeyleri de belli bir yüzde'den çoksa ona da ceza veriyor. Türkçe karakter oranı da yüzde üçten büyükse ona göre ceza veriyor.
+
+494
+01:21:21,700 --> 01:21:32,700
+Burada bir örneği var. Mesela 35 karakterin dördü şeymiş. Türkçe arflerdenmiş. Ona göre yüzde on bir almış ve ödül almış gibi.
+
+495
+01:21:33,860 --> 01:21:35,920
+Beşincisi de bağlaç kullanımı.
+
+496
+01:21:36,372 --> 01:21:45,372
+Bu bağlaş listesi var oluşturduğumuz. Bağlaş listesinden kullandığı bağlaş sayısına göre ödül kazanıyor. Çok fazla kullanırsa da ceza alıyor.
+
+497
+01:21:46,372 --> 01:21:58,372
+Burada aslında en garip kontrolü burada önemli oluyor. Çünkü 4'ten fazla birbirini tekrarlanmaya başlarsa ceza alsın diye uğraştık.
+
+498
+01:22:03,315 --> 01:22:26,336
+Fonksiyonlarımızın özeti. Eğitim sürecimizde LoRa ve GRP'yi kullandık. 4 Generation yaptık her şey için. Step için. 512 token uzunluğunda ve 0.8 temperature belirledik. Bunu şeyden dolayısıyla biraz çok koymak istedim. Model çok fazla başarılı eğitilmedi. O yüzden biraz farklı şeyler denesin. Entropisi artsın.
+
+499
+01:22:27,123 --> 01:22:32,243
+Ona göre belki daha iyi sonuçlar bulabilir diye fazla vermek istedim.
+
+500
+01:22:32,764 --> 01:22:36,604
+Burada yine öğrenme reyeti var. Burada çok fazla öğrenmiş yok.
+
+501
+01:22:36,604 --> 01:22:40,043
+Buraya yazmamışım ama LoRa parametreleri de
+
+502
+01:22:40,043 --> 01:22:46,323
+bu Kozmoz'un model kardında yazan parametrelerin yarısı gibiydi.
+
+503
+01:22:46,323 --> 01:22:48,884
+Çünkü LoRa'yı da...
+
+504
+01:22:49,332 --> 01:22:52,332
+Arttırmak ona göre biraz şeyde arttırıyor ister istemez.
+
+505
+01:22:52,332 --> 01:22:58,332
+Lora'nın parametrelerini arttırmak, arama uzayını da arttırdığı için oradaki parametrelerin yarısını kullandım.
+
+506
+01:22:58,332 --> 01:23:00,332
+Kullandık.
+
+507
+01:23:00,332 --> 01:23:08,332
+Loss grafiklerine baktığımız zaman aslında biraz dengesiz bir şey görüyoruz. Özellikle bu yeşil olan, simple olan.
+
+508
+01:23:08,332 --> 01:23:10,332
+Biraz yaklaştırabilirim.
+
+509
+01:23:12,595 --> 01:23:24,595
+Biraz dengesiz gittiklerini görüyoruz ve diğer yazdığımız fonksiyonlar da sıfır noktasına gelip burada dalgalanmış aslında. Bu aslında biraz modelin öğrenmekte zorlandığını da gösteriyor bize.
+
+510
+01:23:24,595 --> 01:23:39,735
+Yani böyle belli bir ivmeyi yakalasa ve öyle gitse bir şeyler öğrene diyebiliriz ama biraz rastgele geziniyor gibi aslında tam bulamamış. Hangi ödülü ne yaparsam ödülü alırım gibisinden.
+
+511
+01:23:40,127 --> 01:24:06,127
+Tam olarak bulamamış yani. Ödül kısmında da aslında simple modeli, simple'dan kastır ilk formatla doğruluk üzerine olan fonksiyon. O fonksiyonla eğitilmiş model en yüksek ödülleri almış. O da çok fazla sıfırın üzerinde alamamış. Hep negatif ödül almış. Burada negatif ödül vermek belki...
+
+512
+01:24:06,676 --> 01:24:25,176
+Öğrenmesini engellemiş de olabilir. Çünkü örnek veriyorum bu aşağı fonksiyonlar aslında formata uyması için prompta verdik. Yani şu formata uy diye. Ama ödülünde yok formata uymak. O yüzden bundan kaçmış ya da bunu öğrenememiş de olabilir.
+
+513
+01:24:33,555 --> 01:24:41,455
+Aldığı ödüller gibi düşünebiliriz yani. Yine bu yukarıdaki Lost grafiğine benziyor biraz. [öğrenci] devam edebilir buradan.
+
+514
+01:24:42,420 --> 01:25:03,819
+Bir alt madde de tüm sonuçlardan bahsedeceğiz ama model birleştirme kısmından daha önce bahsetmek istedik. Biz burada en iyi performans gösteren iki modeli SimpleMata ve LongPed olarak gördük. Başarıları çok yüksek değil açıkçası. Baya düşük ama %6.8 ve %4.4 değerler aldık. Bu ikisini de aradıklarını eşit oranda birleştirerek sonuçları aşağıda elde ettik.
+
+515
+01:25:04,243 --> 01:25:12,243
+Bizim beklediğimiz tabi bunun ikisinin ortalaması olabilir diye düşünmüştük başta başarılarda ama, Merge modelin başarısı açıkçası daha düşük oldu.
+
+516
+01:25:12,243 --> 01:25:19,851
+%5.60 beklerken %4'e düştü. Yani yaklaşık olarak %30 daha düşük bir sonuç elde ettik burada doğruluk anlamında Merge modelde.
+
+517
+01:25:21,747 --> 01:25:27,987
+Genel sonuç tablomuzda böyle. 5 tane eğittiğimiz model var. 1 tane ölç edilmiş model. Ayrıca eğitmediğimiz bazen model var.
+
+518
+01:25:27,987 --> 01:25:36,987
+Bazen modelde %3.4 ekürsümüz var. Simple Long ve bu ikisinin birleşiminden oluşan Merge model daha iyi performans gösteriyor.
+
+519
+01:25:36,987 --> 01:25:44,747
+Fakat diğer 3 tane edit fonksiyonumuz daha kötü performans gösteriyor. Format anlamında da çok başarılı sonuçlar elde edemedik.
+
+520
+01:25:46,676 --> 01:25:56,036
+Aslında bu grafiğin üstteki tablonun aynısı. Gördüğünüz gibi diğerlerine göre daha fazla almış.
+
+521
+01:26:01,316 --> 01:26:13,316
+Bu grafiğe baktığımız zaman aslında bu da öğrenmekte zorlandığını gösteriyor bizim modellerimizin. Çok fazla dalgalı olması ve belli bir şeyi takip etmemesi.
+
+522
+01:26:13,555 --> 01:26:35,756
+Bir yerden sonra yakasaması vs. öğrenmekte zorlandığını gösteriyor. Ödülün ne olduğunu anlamasını zorlaştırıyor diye düşünüyorum. Çünkü mesela bu şeyleri koymadan önce, spam korumalarını koymadan önce test etmiştim ve cevap cevap yazıp spam yapmayı ve ödül almayı anlamıştı. Ama korumayı ekleyince sanırım çok kapasitesi yetmedi.
+
+523
+01:26:39,764 --> 01:26:50,583
+Bütün şeylerin hitmap yani elde ettiğimiz sonuçların hitmap diyebiliriz. En iyi sonucu burada işte Ecclice bazında simple vermiş vesaire. Çok üstüne durmuyorum.
+
+524
+01:26:52,340 --> 01:26:54,340
+[öğrenci] bahsetmek ister misin buradan?
+
+525
+01:26:54,340 --> 01:27:00,340
+En başarılı modelin simple modelden ondan bahsetmiştik. Belize'nin iki katı daha iyi skor verdi bir de.
+
+526
+01:27:00,340 --> 01:27:07,340
+En başarısız da bu bağlaştırıp kullandığımız ödül fonksiyonu oldu. Bu da reward hekikten kaynaklandığını düşünüyoruz.
+
+527
+01:27:07,340 --> 01:27:13,340
+Çünkü altta bir örnek çıktı var. Dolayısıyla sonuç olarak altta bir örnek bir çıktı olsun.
+
+528
+01:27:13,340 --> 01:27:20,340
+Baktığımız zaman bağlaşları kullanıyor. 5 tane bağlaş var. 1.5 puan alıyor, yüksek bir puan alıyor ama bu herhangi bir mantık içermiyor.
+
+529
+01:27:20,340 --> 01:27:36,819
+Yani bir mantığı olmuyor bu şeyin. Dolayısıyla bu esas doğru cevap hedefinden çok ve yan hedefe odaklandığını düşünüyoruz. O yüzden bu fonksiyonun başarısız olduğunu düşünüyoruz. Modelleri birleştirdiğimiz zaman da çok istediğimiz bir iyi bir sonuç alamadık açıkçası.
+
+530
+01:27:36,819 --> 01:27:45,819
+Bu demin bahsettiniz. Yol mevzusunda Word Hacking denilen mevzu bu. Yani ödülü memnun etmek ama ürettiği şeyin...
+
+531
+01:27:46,068 --> 01:27:48,528
+Temel manada istediğimiz şey olmaması.
+
+532
+01:27:48,528 --> 01:28:01,368
+Peki, GRP'nin içerisinde modelin bozulmasını engelleyen bir referans noktası var.
+
+533
+01:28:01,368 --> 01:28:03,868
+Bu, Kier Divergence mevzusu.
+
+534
+01:28:03,868 --> 01:28:12,068
+Orasının etkisi sanki çok azal kalmamış gibi bir durum var sanki.
+
+535
+01:28:12,275 --> 01:28:27,275
+Orada modelin kendi ürettiği şeyleri çok bozmak gibisinden şeyler genelde o engellemek için oradaki o kirlinin kat sayısı arttırılır mesela. Sonrası için söylüyorum bunu temelde.
+
+536
+01:28:27,275 --> 01:28:35,836
+Hani modeli bozmadan ürettiği metnin hala anlamlı bir metin olmasını sağlayan kısım birazcık orası temelde.
+
+537
+01:28:36,627 --> 01:28:41,047
+Ona da daha sonra bakabilirsiniz. Peki, başka söylemek istediğiniz bir şey var mı arkadaşlar?
+
+538
+01:28:41,387 --> 01:29:00,387
+Burada hocam ben kendimce bir yorum yapmak istiyorum. Biz aslında bu kadar düşük ekorisi almayı beklemedik. Ben bu kadar düşük aldığım için çok uğraştım ekorisi yükseltmek için. Maksimum %13 falan aldım bir kere. Ama o da hani biraz başlangıç da oluşan seedle alakalı biraz şansa aldı yani %13'ü de.
+
+539
+01:29:00,851 --> 01:29:28,452
+Ben bunu biraz eğitim şeyde, yani bizim kullandığımız veri setindeki bilgileri tam bilmemesiyle alakalı olduğunu düşünüyorum. En sonunda mesela bir örneğimiz var şeyde. Burada bir örnek koyduk. Mesela cevabı, modelin çıktısı bu sorunun cevabı doğru seçenekte gizlidir. Yani hiç konuyla alakasız böyle alakasız cevaplar vermeye daha meyilli gibi anladım ama dediğiniz gibi bu KL parametresiyle de alakalı olabilir yani.
+
+540
+01:29:29,300 --> 01:29:38,200
+Yok, sadece dediğin şeyde haklılık payı var. Zaten soruların içerisinden bir filtreleme yapın diye en başta uyamamın sebebi temelde buydu.
+
+541
+01:29:38,900 --> 01:29:48,760
+Yani modelin bilgisi zaten çok sınırlı. O yüzden bilgi tabanla bir şeyleri sormak çok da makul bir şey olmayacaktır bu modeli.
+
+542
+01:29:48,760 --> 01:29:52,560
+Yani GLPO ile neyi keşferecek bilmediği şeyi? Anlatabildim mi demek istediğimi?
+
+543
+01:29:52,740 --> 01:29:53,640
+Anladım hocam.
+
+544
+01:29:54,260 --> 01:29:54,560
+Peki.
+
+545
+01:29:55,060 --> 01:29:57,060
+Teşekkürler.
+
+546
+01:30:01,619 --> 01:30:02,880
+Evet, hidayet ayın.
+
+547
+01:30:06,579 --> 01:30:12,439
+Hocam ben yetiştiremediğim için sadece dinleyici olarak katılmıştım toplantıya.
+
+548
+01:30:12,500 --> 01:30:14,800
+Gerçi, teşekkür ederim. [öğrenci].
+
+549
+01:30:18,547 --> 01:30:32,768
+Kerim [öğrenci]. Buradayım hocam. Seni de ön çağırdı yoktum demin ama neyse. Peki, evet. Tek başına mısın? Evet hocam, tek başımayım. Peki. Evet, seni dinliyoruz [öğrenci]. Tekrar paylaşıyorum hocam. Bir dakika.
+
+550
+01:30:42,963 --> 01:30:44,223
+Geldi mi hocam Ekino'nun?
+
+551
+01:30:45,663 --> 01:30:47,823
+Geliyor. Geliyor, geldi.
+
+552
+01:30:48,803 --> 01:30:57,963
+Hocam, az önce de bahsetmiştiniz. En önemli şeylerden biri veriyi temizlemek. Ben ilk başta ona odaklandım. İlk başta veriyi yükledikten sonra...
+
+553
+01:30:58,355 --> 01:31:21,235
+Herhangi bir veri tekrarı var mı ona baktım. Sonra ardından bazı sorularda açıklama olduğunu, bazı sorularda hiç açıklama olmadığını fark ettim. Bu sorulardan açıklama olanları listeledim. Sonrasında bazı sorularda resim olduğu için resimsiz soruları almak istedim. Onun yanı sıra açıklama kısmında da çok kısa açıklaması olan soruları elde edelim.
+
+554
+01:31:26,355 --> 01:31:40,855
+Matematik, geometrik, fizik gibi alanları da eledim. Aynı zamanda ileri matematik sorularını da eledim. Onun haricinde soruları ararken de bağlaç analizi yaptım. Keyword analiz yaparak soruları listeledim.
+
+555
+01:31:41,619 --> 01:32:09,619
+Gereksiz Stringleri temizledim. Ardından da elimde daha güzel bir veri seti oldu. Sonra bu veri setinde 5 farklı fonksiyon uyguladım. İlkinde Base olarak doğruluk ve format üzerinde. İkincisinde farklı bir şey deneyerek semantik bir embedding model üzerinde o açıklamayla cevap arasındaki vektoral analize göre bir...
+
+556
+01:32:09,619 --> 01:32:12,500
+puan veren bir fonksiyon tanımladım.
+
+557
+01:32:13,380 --> 01:32:17,720
+Üçüncü de ne kadar rezini yapabildiğine dair bir fonksiyon tanımladım.
+
+558
+01:32:18,180 --> 01:32:25,460
+Çünkü ancak bundan dolayı gibi keywordler kullanıyorsa nasıl rezini yaptığına dair bir fonksiyon tanımladım.
+
+559
+01:32:25,460 --> 01:32:27,099
+Dördüncüsünde
+
+560
+01:32:29,235 --> 01:32:36,796
+Elenimin verdiği cevaba ne kadar güvendiğini ve hangi kelimeleri kullandığını analiz ettim.
+
+561
+01:32:37,676 --> 01:32:42,376
+Beşincide de bu dördünün ağırlıklı ortalamasıyla bir fonksiyon tasarladım.
+
+562
+01:32:43,235 --> 01:32:48,195
+Dediğim gibi ilkinde sadece cevap ve formatın uyumluluğuna bakıyor.
+
+563
+01:32:48,976 --> 01:32:55,916
+İkincisinde semantik oluşturan açıklamayla bu verilen cevap arasındaki
+
+564
+01:32:56,399 --> 01:33:14,239
+Vektörel benzerliğe bakıp bir puan atıyor. Üçüncü de, HEDM ne kadar resining yapabiliyor, ne kadar resining bağlıcı kullanmış onları analiz ediyor. Ne kadar düşünce sistemini kullanmış onları analiz ediyor.
+
+565
+01:33:16,243 --> 01:33:35,203
+Dördüncü de aynı şekilde cümle içinde kesinlikle mesela açıkça gibi kesinlikle geçiyorsa aynı şekilde ona göre puan veriyor. Zaten beşinci de bunların dördünün ağırlıklı ortalaması ile bir tahmin yapıyor. Burada benim eğitirken aldığım bazı çıktılar var hocam. Onları göstermek istiyorum.
+
+566
+01:33:41,855 --> 01:34:06,295
+Evet, Reward'da hafif yükselmeler oldu. Lost'da aşırı dalgalanmalar oldu. Aynı şekilde RF5'de ilginç bir şekilde bir süreden sonra tabana battı ve düz bir şekilde devam etti. Hiç bir şey ilerleme göstermedi. Ölce fonksiyonunda hiçbir artış olmadı 500 adım boyunca.
+
+567
+01:34:07,315 --> 01:34:12,716
+Aynı şekilde Training Loss da bir süreden sonra düz bir şekilde ilerledi.
+
+568
+01:34:14,516 --> 01:34:20,315
+RF1'de de ilk başta küçük rebordlardan başlayıp dalgalı bir şekilde arttı.
+
+569
+01:34:21,516 --> 01:34:26,315
+RF2'nin de Loss'u bu şekilde dalgalandı.
+
+570
+01:34:29,503 --> 01:34:36,503
+Daha stabil bir reward. Çok az bir artış oldu. Genel anlamda stabil ilerleme gösterdi.
+
+571
+01:34:36,503 --> 01:34:44,503
+Bir de aldığım bazı çıktıları göstereceğim size sorulara uyguladığım zaman.
+
+572
+01:34:48,916 --> 01:34:59,736
+Şöyle, RF1'de doğruluğu kontrol ettiği için herhalde bir süre sonra sadece şıklardaki cevapları tekrar etmeye başladı cümle içinde.
+
+573
+01:35:00,056 --> 01:35:03,076
+Ve madde madde bunları sıralı bir şekilde tekrar etti.
+
+574
+01:35:04,296 --> 01:35:11,776
+Aynı şekilde RF2'de de semantik benzerliğe baktığımız modelde de cidden uzun bir açıklama yaptı.
+
+575
+01:35:11,916 --> 01:35:14,076
+Soruyu çözerken uzunca düşündü.
+
+576
+01:35:16,659 --> 01:35:33,720
+Buradaki Arap 3'te de bağlaçları kullanmaya özen göstermesini istemiştik. Bunun için de daha sonra, sonuç olarak gibi bağlaçların sayısında bir artış oldu. Maalesef test edemedim ona zamanım olmadı. Buraya kadar ilerleyebildim hocam.
+
+577
+01:35:36,559 --> 01:35:39,300
+Anladım. Peki, teşekkürler [öğrenci].
+
+578
+01:35:40,899 --> 01:35:41,859
+Ben teşekkür ederim.
+
+579
+01:35:50,547 --> 01:35:51,687
+[öğrenci].
+
+580
+01:35:56,819 --> 01:36:08,899
+[öğrenci] [öğrenci] demiştik. [öğrenci]. [öğrenci].
+
+581
+01:36:14,260 --> 01:36:23,539
+[öğrenci]. Buradayım hocam. Evet, [öğrenci] mısın? [öğrenci]'la beraberim hocam.
+
+582
+01:36:23,539 --> 01:36:28,819
+[öğrenci] paylaşayım.
+
+583
+01:36:33,235 --> 01:36:34,215
+Başlayabilirsiniz.
+
+584
+01:36:38,899 --> 01:37:03,899
+Okey. Hocam bu yöntem ve veri seti kısmına atlıyorum. Biz de merge model hariç toplam 5 farklı karakterle model ettik. Her birine farklı görevler verdik. Base model bizim aslında kontrol grubumuz. Ona özel bir görev vermedik. Sadece standart.
+
+585
+01:37:06,463 --> 01:37:22,023
+Düşünme odaklı modelimiz. Modelin cevaplarında neden-sonuç ilişkisi kurmasına teşvik eden ve buna dair ödül skorları veren bir modelle. Çünkü bu yüzden düşünelim gibi kelimeler kullanırsa ödül verdik yani.
+
+586
+01:37:29,619 --> 01:37:52,279
+Madde olarak, maddesal olarak cevap verirse veya birinci, ikinci, birinci adım, ikinci adım tarzı cevaplar verirse burada puan verdik. Öteki modelimiz polite model, kebar model. Cevabı verirken işte sonuç şudur, sonuç cevap gibi belli kalıplar kullanarak.
+
+587
+01:37:52,884 --> 01:38:13,984
+Nazik bir formatta sunmasını istedik. EPSI modeli de bu aralarında bütün diğer ödül fonksiyonu çalıştırıldığı model. En zor görevi olan model. Hem düşünüyor hem adım adım gidiyor hem de kibar olmasını bekliyorduk. Böyle ödül verdik yani ona.
+
+588
+01:38:14,996 --> 01:38:29,235
+Bütün örneğe fonksiyonlar aynı anda değindik. Modellerin en son merge edilmesinde de birazdan muazak aşamda bahsedecek. Bunların arasından test skora en yüksek olan iki modelin ağırlıklarını alıp ağırlıkların ortalamasını aslında birleştirdik.
+
+589
+01:38:29,235 --> 01:38:40,635
+Yüzde elli yüzde elli. Şöyle ben buradaki yukarıda gördüğünüz modellerin merge hariç performanslarını anlatayım size.
+
+590
+01:38:42,131 --> 01:39:03,651
+Aslında şöyle, burada biraz karışık bir loss şey var. Burada şu şekilde göstereyim. Step fonksiyonu, sarı çizgi, adım adım modeli. Eğitim boyunca en düşük kaybı o verdi. Yani madde madde yazma görevini aslında çok kolay öğreniyoruz ve daha stabil kalıyor.
+
+591
+01:39:07,123 --> 01:39:11,123
+Tüm görevleri aynı anda yapmaya çalışan mavi model ile daha yüksek losslar elde ettik.
+
+592
+01:39:11,123 --> 01:39:16,123
+Reward değerlerinde de en yüksek ödülü Base model topladı.
+
+593
+01:39:16,123 --> 01:39:25,123
+Bunun ödülü fonksiyonu daha basitti. Sadece formatı tutturması, formatı tutturuyoruz ödül verdik gibi mantık gitti burada.
+
+594
+01:39:25,123 --> 01:39:33,123
+Burada da düşünen model ve kibar model daha düşük sonuçlar aldı.
+
+595
+01:39:34,292 --> 01:39:38,452
+Herhalde biraz daha karmaşık formatlar olduğu için.
+
+596
+01:39:43,380 --> 01:40:00,819
+Burada az önce de bahsettiğim gibi en yüksek test ekürsisini kibar ve total modelde aldığımız için birleştirilmiş modeli yani merge modeli bu ikisini birleştirerek yaptık. Bundan sonrasında Muazza arkadaşım anlatacak.
+
+597
+01:40:02,119 --> 01:40:04,019
+[öğrenci] paylaşımını alabilir miyim [öğrenci]?
+
+598
+01:40:05,219 --> 01:40:06,000
+Vereyim.
+
+599
+01:40:17,043 --> 01:40:29,244
+Merhabalar, ben de [öğrenci]. Devam edeceğim hemen kaldığımız yerden. Model EQ'lerimiz ise şu şekilde. Gördüğünüz gibi bayağı yüksek bir EQ oranlarına eriştik biz burada.
+
+600
+01:40:29,779 --> 01:40:36,219
+Neredeyse bütün modellerde %30'un üzerinde bir başarı elde ettik.
+
+601
+01:40:36,719 --> 01:40:40,460
+Aslında biz burada ilk başta şüphelenmedik çok ve devam ettik.
+
+602
+01:40:40,979 --> 01:40:48,800
+Kibar model ve birden fazla fonksiyona sahip olan modeli birleştirerek bir de onların ölçümünü görmek istedik.
+
+603
+01:40:49,219 --> 01:40:52,639
+Birleştirilmiş modelde de accuracy beklediğimiz şekilde arttı.
+
+604
+01:40:52,639 --> 01:40:57,639
+Fakat daha sonra bu accuracy'lerin birazcık fazla yüksek olduğunu düşünerek
+
+605
+01:40:57,779 --> 01:41:05,539
+Örneklerden biraz detaya indik ve örneklerin genel olarak şu şekilde karşımıza çıktığını gördük.
+
+606
+01:41:06,319 --> 01:41:14,340
+Biz soruyu ve seçenekleri verdiğimizde model genel olarak seçenekleri tekrar etmeye odaklanmış.
+
+607
+01:41:14,340 --> 01:41:18,719
+Yani cevap olarak çok fazla seçeneklerin tekrarı var.
+
+608
+01:41:21,268 --> 01:41:46,107
+Burada iki farklı yanlış veyahut iki farklı hata yaptığımızı fark ettik. Öncelikle eküristlerin bu kadar yüksek çıkmasının nedeni biz doğru cevabın, cevabın içerisinde olup olmadığına odaklanmışız. Dolayısıyla model tekrar ettiğinde aslında biz bunu bir doğru cevap olarak sayıyoruz. Bunu tekrar gözden geçirdiğimizde ve eküristleri tekrar ölçtüğümüzde
+
+609
+01:41:46,355 --> 01:42:05,996
+Büyük oranda Eccuris değerlerimiz düştü. Yine de birleştirilmiş modelin iki farklı modelden daha yüksek bir başarıya ulaştığını söyleyebiliriz. İkinci hatamız ise burada seçeneklerin tekrar etmesi kısmı. Neden tekrar ettiğini biraz düşündüğümüzde şu şekilde bir sonuca vardık.
+
+610
+01:42:14,355 --> 01:42:24,435
+Sürekli olarak fazla cevap veren veya doğru cevabı herhangi bir şekilde veren modeller ödül aldı.
+
+611
+01:42:24,595 --> 01:42:26,855
+Fakat hiçbir şekilde ceza fonksiyonu almadı.
+
+612
+01:42:27,255 --> 01:42:29,775
+Ceza değeri almadı.
+
+613
+01:42:30,595 --> 01:42:33,735
+Dolayısıyla model bir yerden sonra şunu fark etmiş olmalı.
+
+614
+01:42:34,195 --> 01:42:40,876
+Bütün seçenekleri verirsem her türlü ben geri dönüş olarak belirli bir oranda ödül alabiliyorum.
+
+615
+01:42:42,195 --> 01:42:48,755
+Bunu fark ettiği için de aslında neredeyse bütün modellerimiz papan gibi tekrar etmeye başladı seçeneklerimizi.
+
+616
+01:42:48,755 --> 01:42:55,135
+Ve dolayısıyla iyi bir şekilde sonuç alamadık.
+
+617
+01:42:56,735 --> 01:43:06,695
+Yani cevap şudur, doğruluğu değerlendirme, oradaki doğruluğu kriterinizi niye değiştirmediniz peki?
+
+618
+01:43:07,175 --> 01:43:08,075
+Bunu gördüğünüz halde.
+
+619
+01:43:08,756 --> 01:43:19,376
+Hocam şöyle, biz aslında ilk başta [öğrenci] ile iki kişi olduğumuz için bunun avantajını kullanalım diye iki farklı uçtan yürüttük projeyi.
+
+620
+01:43:19,696 --> 01:43:25,816
+Yani iki farklı denklemlerle farklı iki model eğittik.
+
+621
+01:43:26,515 --> 01:43:49,915
+Birinde cezalandırma sistemi vardı. Oradaki dengede de cezalandırmayı fazla abartmışız sanırım. Orada da model hiçbir şekilde cevap vermemeye başladı. Orada da sanırım en azından ödül alamıyorsam cevap almayayım diye model sessiz bir modele dönüştü. Yani ne sorarsak cevap vermemeye başladı.
+
+622
+01:43:50,739 --> 01:43:55,779
+Dolayısıyla biz burada biraz daha fazla başarı görünce buraya odaklandık.
+
+623
+01:43:57,579 --> 01:44:02,579
+Anladım. Sonra da o başarının bir neden? [öğrenci] olduğunun farkına vardınız.
+
+624
+01:44:03,000 --> 01:44:05,559
+Evet, onun da bir aslında hata olduğunu fark ettik.
+
+625
+01:44:05,559 --> 01:44:05,979
+Anladım.
+
+626
+01:44:06,159 --> 01:44:14,359
+Biraz teknik problemler de yaşadık hocam eğitirken. O yüzden tekrar eğitme işlemine de maalesef giremedik.
+
+627
+01:44:15,091 --> 01:44:21,351
+Biraz nedensel bir boyuta yaklaşalım dedik en sonunda hocam. Yani...
+
+628
+01:44:21,779 --> 01:44:27,459
+Sadece ödül verdiğimizde çok fazla tekrara düştüğünü ve ödül almak için her şeyi yapabileceğini gördük.
+
+629
+01:44:27,459 --> 01:44:38,959
+Fazla ceza verdiğinde de çok fazla sessizliğe büründüğünü, en azından ödül alamıyorsam cezada almayayım mantığıyla cevap veremediğini tespit etmiş olduk.
+
+630
+01:44:39,979 --> 01:44:45,019
+Eğittiğimiz modellerinde cevapları çok kısıtlı şekilde başarı verdi bize.
+
+631
+01:44:45,939 --> 01:45:03,599
+Hocam aslında bu ikinci tabloda gördüğünüz başarı kriterlerini değiştirdiğimiz zaman yani mesela işte bütün cevaplar varsa veya işte cevap şudur diye belirtmiyorsa diye tekrar test ölçtüğümüzde burada %10'lara düştü.
+
+632
+01:45:04,159 --> 01:45:09,720
+Evet, yani ölçümde bir farklılık yaptık hocam. İlk başarı oranları şöyleyken bu seviyeye düştü.
+
+633
+01:45:14,355 --> 01:45:16,355
+Peki, teşekkürler arkadaşlar.
+
+634
+01:45:16,355 --> 01:45:18,355
+Teşekkürler.
+
+635
+01:45:20,355 --> 01:45:22,355
+[öğrenci].
+
+636
+01:45:28,051 --> 01:45:29,051
+[öğrenci]
+
+637
+01:45:35,220 --> 01:45:37,920
+[öğrenci].
+
+638
+01:45:38,779 --> 01:45:40,340
+Merhaba hocam, buradayım.
+
+639
+01:45:41,319 --> 01:45:42,720
+Evet, [öğrenci] tek başına mısın?
+
+640
+01:45:43,399 --> 01:45:44,079
+Evet hocam.
+
+641
+01:45:44,739 --> 01:45:46,739
+Peki, dinliyoruz seni.
+
+642
+01:45:48,779 --> 01:45:50,220
+Ekranım geldi mi hocam?
+
+643
+01:45:55,796 --> 01:45:56,176
+Geldi.
+
+644
+01:46:03,412 --> 01:46:21,312
+Ben de bu çalışmada ödül fonksiyonları, farklı ödül fonksiyonları tasarladım. Model tamamen eğitmeden Lora'yla bir düzenleme yaptım ve farklı ödül fonksiyonlarını ve en sonunda da Ensemble Merge yaklaşımını kullandım.
+
+645
+01:46:23,192 --> 01:46:28,252
+Standart GRPO'da doğruluk ve çıktı formatı ele alınıyordu.
+
+646
+01:46:29,619 --> 01:46:42,079
+Benim yaptığım çalışmada da yine veri setini temizlemek için 15 farklı bölüm seçtim. 1500 örnek kullandım. 1000'in eğitim 500'ünü test olarak ayarladım ödevde söylediği gibi.
+
+647
+01:46:47,699 --> 01:47:09,259
+5 farklı model oluşturdu. M0 zaten standart modeldi. M1 ve M4 modellerde farklı ödül fonksiyonlarıyla değerlendirilen modeller oldu. Modellerin eğitimleri aynı, farklı ödül fonksiyonları ve değerlendirme davranışları sergilediler.
+
+648
+01:47:10,644 --> 01:47:27,164
+M1 model için format çıktısı A ve E şeklinde mi, A, B, C, D, ışıklarından mı oluşuyor ona baktım. Eğer öyleyse %60 ve gerçekten tek bir harften mi oluşuyor? Buna da %40 ağırlık vererek M1 modeli oluşturdum.
+
+649
+01:47:27,164 --> 01:47:38,504
+M2 modelde formatım yine A ve E şıklarından mı oluşuyor? Bu %50 etkiledi ve çıktım kısa bir çıktı mı ona bakıyor oldum ikinci.
+
+650
+01:47:38,644 --> 01:47:40,684
+Ödülü kullanacağım M2 modelde.
+
+651
+01:47:40,804 --> 01:47:42,824
+Bunu anlayamadım [öğrenci].
+
+652
+01:47:45,084 --> 01:47:52,624
+Çıktı, harf sayım kısa mı diye baktım. 5 harften kısaysa ödülü ona göre belirledim hocam.
+
+653
+01:47:52,684 --> 01:48:00,104
+5 harften kısaysa belli bir ödül miktarı, işte bir harften daha kısaysa belli bir ödül miktarı belirledim.
+
+654
+01:48:00,104 --> 01:48:03,744
+M1 ile M2'nin farkı ne? Oraya anlayamadım.
+
+655
+01:48:04,083 --> 01:48:19,844
+M1 model çıktığının gerçekten bir harften oluştuğuna bir harften oluşuyor ve A, B, C, D şıkkında çıktım üretiyor ona bakıyor. M2 modelde çıktığımız kısama ona bakan ödül fonksiyonuyla eğitilmiş bir model.
+
+656
+01:48:20,224 --> 01:48:21,203
+Aynı şey değil mi bu?
+
+657
+01:48:24,123 --> 01:48:26,963
+Format değişik olabilir, çıktı daha uzun olabilir.
+
+658
+01:48:31,220 --> 01:48:36,560
+Çıktığımın daha uzun olması durumunda farklı değerlendirilen bir model.
+
+659
+01:48:38,520 --> 01:48:38,820
+Peki.
+
+660
+01:48:40,620 --> 01:48:49,980
+M3 modelde de yine anlamsız metinler var mı? Çıktım, boş mu, değil mi? Boş cevap verdi mi? Onu kontrol eden bir model.
+
+661
+01:48:50,500 --> 01:48:52,000
+Dördüncü modelim de birleşik...
+
+662
+01:48:52,000 --> 01:48:53,140
+Ben bunu da anlayamadım.
+
+663
+01:48:54,579 --> 01:49:10,199
+Boş çıktı verdiğim olu kontrol eden bir model hocam. Şuradan anlatsam daha iyi olacak acaba. Boş olmama, kısalık olma durum gibi ödüller üzerinden anlatsam daha uygun olacak herhalde hocam. Birinci ödül fonsiyonum.
+
+664
+01:49:10,199 --> 01:49:18,199
+Bir daha aynı yere dönmeyelim de. Boş olmamayla mesela çok kısa olması...
+
+665
+01:49:19,347 --> 01:49:24,748
+Geçersiz ve çıktı üretip üretmediğine bakıyor. Boş olmama dediğim şey hocam.
+
+666
+01:49:25,460 --> 01:49:47,560
+Geçersiz bir çıktı, üretti mi? Benim belirlediğim promptta soru ve cevaplar şıklı olarak oluşturuldu. ABCD şeklinde. Buna uygun mu değil mi yoksa geçersiz mi? Geçersizse ona göre cezalandırıyor. Yani sıfır puan veriyor. Eğer geçerli bir durumdaysa ödül olarak bir değerini veriyor.
+
+667
+01:49:53,460 --> 01:50:00,000
+Eğer beş harften kısaysa 0.8 puan verirken, eğer bir harf veya...
+
+668
+01:50:00,000 --> 01:50:08,880
+Ondan azsa, yani bir harf eşitse bir puan veriyor. Bundan daha uzunsa, beş harftan daha uzunsa sıfır cezasını veriyor.
+
+669
+01:50:09,800 --> 01:50:18,980
+Dördüncü modelim de birleşik ödül modeli. Bunda da çıktığım formata uygun mu ve kısalık var mı?
+
+670
+01:50:18,980 --> 01:50:24,840
+Yani çıktığımdaki kısalık değeri nasıl? Bu ikisini birlikte ele alan birleşik bir ödül fonksiyonu tanımladım.
+
+671
+01:50:28,000 --> 01:50:49,740
+A'larsa 1 ya da 0 gibi puanlama veriyor. Son olarak da Ensemble yaklaşımını kullandım. Yani tek bir modelin yaptığı yorumdan ziyade birleşik olarak kullandığımızda M1-M4 modellerin çıktılarını kullandığımızda nasıl bir sonuç elde ediyoruz onu inceledim.
+
+672
+01:50:51,123 --> 01:51:02,963
+Ekürülere baktığımda en yüksek ekürüyü M4 modelde buldum. Yani format ve kısalık birlikte sağlandığımı bunu kontrol ettiğimizde en yüksek ekürüye ulaştığımızı gördüm.
+
+673
+01:51:03,844 --> 01:51:05,183
+Ekürüsü nasıl hesaplıyorsun?
+
+674
+01:51:09,344 --> 01:51:17,683
+Bu modelleri eğittikten sonra modelle göre doğru davranışı belirledi mi buna göre?
+
+675
+01:51:18,676 --> 01:51:26,316
+Onun bir kodunu açar mısın? Nasıl yaptın? Doğruluğu nasıl hesapladın?
+
+676
+01:51:33,203 --> 01:51:34,723
+Ya da bir örnek çıktın falan var mı?
+
+677
+01:51:35,263 --> 01:51:38,823
+Örnek çıktı, almadım hocam.
+
+678
+01:51:39,303 --> 01:51:42,383
+Niye? Hiç incelemedin mi model nasıl çıktılar geliyor diye?
+
+679
+01:51:43,303 --> 01:51:52,883
+Direkt ben sonuçlara odaklandım. Sonuçlar üzerinden tablolara odaklanarak gittim.
+
+680
+01:51:53,003 --> 01:51:54,343
+İyi bir bakış açımız mı sence?
+
+681
+01:51:54,343 --> 01:51:57,443
+Evet, biraz daha incelemem, kurcalamam gerekiyordu.
+
+682
+01:52:01,171 --> 01:52:02,651
+Peki tamam bir kodu aç bakalım.
+
+683
+01:52:03,611 --> 01:52:05,151
+Ha gelmemedim ekşama.
+
+684
+01:52:05,391 --> 01:52:07,431
+Yok yok şans, senin sunum gözüküyor.
+
+685
+01:52:07,431 --> 01:52:08,651
+Tamam.
+
+686
+01:52:23,028 --> 01:52:27,807
+Gelmiş olması lazım. Evet, evet geldi. Doğruluğu nasıl kontrol ediyorsun burada?
+
+687
+01:52:34,003 --> 01:52:41,863
+Test, iki soru üzerinden testi ölçtüm uzun sürdüğü için. Ekvilleri de burada hesapladım hocam.
+
+688
+01:52:44,604 --> 01:52:54,024
+M0'a M1 M2 oluşturduğum modeller üzerinden bir eğitim model üzerinden test verilerinde doğruluk hesabı yaptım.
+
+689
+01:52:55,884 --> 01:52:59,703
+Ve aldığı puanları da burada hesapladım.
+
+690
+01:53:00,423 --> 01:53:01,203
+Nasıl yapıyor buna?
+
+691
+01:53:02,676 --> 01:53:17,996
+Yani ekürü hesaplarken burada her modeli tek tek 200 örnek üzerinden hesapladı. Ardından da aldığı ödülleri hesapladım.
+
+692
+01:53:19,256 --> 01:53:20,996
+Nasıl hesaplıyor işte onu soruyorum.
+
+693
+01:53:23,056 --> 01:53:27,396
+Ekürü'yü modelin çıktılarına göre hocam. Modelin davranışına göre hesaplıyor.
+
+694
+01:53:33,108 --> 01:53:41,428
+Lost'lar üzerinden. Burada eğittim. Burası biraz uzun süren bir aşamaydı. O yüzden tekrar başa dönmedim. Yani farklı şeyleri o yüzden denemedim aslında.
+
+695
+01:53:42,168 --> 01:53:51,468
+Tek Epoch üzerinden ilerledim. Oluşturduğum model üzerinden de test verileri üzerinden doğrulukları hesapladım.
+
+696
+01:53:52,368 --> 01:53:54,588
+Doğrulukların hangi fonksiyonu hesaplıyor?
+
+697
+01:53:55,608 --> 01:53:57,428
+Buradaki ACC fonksiyonu.
+
+698
+01:54:02,452 --> 01:54:03,692
+ACC fonksiyon mu?
+
+699
+01:54:04,771 --> 01:54:12,771
+Pardon, değeri. ACC değerine atılıyor. Yani buradaki kodu hazır kullanılmasında hocam.
+
+700
+01:54:16,152 --> 01:54:18,792
+Peki. Peki, teşekkür ederim.
+
+701
+01:54:20,792 --> 01:54:22,971
+Devam edebilirim sonuçlara.
+
+702
+01:54:23,511 --> 01:54:24,172
+Edebilirsin.
+
+703
+01:54:27,731 --> 01:54:52,192
+Ardından, ekürü ve revert değerlerinden sonra tabloları çizdirmeye başladım. M4'ün en yüksek sonuç verdiğini gördüm. Ensembol yaklaşımı M1 ile M4'ün davranışına göre şekillenen bir modeldi. Ama M4'ü yani tekil modeli geçemediğini burada gözlemlere başlatım oldu.
+
+704
+01:54:52,192 --> 01:54:54,032
+Ensembol nasıl oluşturuldu?
+
+705
+01:54:55,731 --> 01:55:05,992
+Bir kişinin cevabından çok dört modelin cevabını ele alarak oluşturduğum bir yaklaşımdı. Ortalama yaklaşım.
+
+706
+01:55:06,592 --> 01:55:09,152
+M1 ile M4 dedin ama yanlış mı anladım ben?
+
+707
+01:55:09,612 --> 01:55:12,892
+M1, M2, M3, M4. M1 ile M4 arası demek istedim.
+
+708
+01:55:14,192 --> 01:55:17,132
+Tam nasıl oluyor yani orada? Ensembl cevabı nasıl hediye ediliyor?
+
+709
+01:55:17,939 --> 01:55:22,439
+Sen bilir canım, bu dört modelin cevabı üzerinden oluşturuluyor hocam.
+
+710
+01:55:22,960 --> 01:55:26,059
+Nasıl oluşturuyor? Bunlar string veriyor her biri.
+
+711
+01:55:27,340 --> 01:55:30,139
+Doğruluklar üzerinden ortalama bir değer çıkarıyor.
+
+712
+01:55:36,275 --> 01:55:43,495
+Modellerin cevapları şunlarken Ensemble'ın cevabı şudur, nasıl belirleniyor? Onu demek istedim.
+
+713
+01:55:43,495 --> 01:55:58,215
+Reverse Kur'ları ile ağırlıklandırarak bir birleştirme işlemi yapılıyor. Çıktık karar düzeyinde gerçekleştirilen bir işlem. Hesaplama için Ensemble modelini kullandım.
+
+714
+01:56:00,715 --> 01:56:03,055
+Buradaki kodların ne kadarını sen yazdın?
+
+715
+01:56:04,115 --> 01:56:09,315
+Yapay zekadan destek aldım ama kodları tek tek irdeledim hocam.
+
+716
+01:56:17,140 --> 01:56:42,460
+Sonuçlara biraz odaklandım. Yani neden böyle yaptığına. M2 model yine rework konusunda, ödül konusunda en yüksek bize ödülü veriyor. Ama ekürüyle bunun doğru orantılı artmadığını gözlemledim şu son tabloda. M2 modelin doğruluk oranı düşük olsa da en yüksek ödüle sahip olduğunu.
+
+717
+01:56:43,315 --> 01:57:03,496
+Gözlemledim. Sonuçlarımı bu şekilde oluşturdu. Sonuç olarak da belki EPOC sayısı arttırılırsa ya da bu fonksiyonlar biraz daha özelleştirilir sayısı arttırılırsa daha iyi sonuçlar elde edebileceğimi fark ettim.
+
+718
+01:57:06,536 --> 01:57:09,876
+Ensemble'un kararları birleştirerek mi yaptın sen yani?
+
+719
+01:57:11,028 --> 01:57:16,908
+Revert değerlerini birleştirerek yaptım. Revert skorlarını ağırlandırarak birleştirdim.
+
+720
+01:57:19,307 --> 01:57:23,648
+Bu ne demek? Orasını anlayamıyorum. Revert değerlerini birleştirerek yaptım demek ne demek?
+
+721
+01:57:27,588 --> 01:57:31,208
+Dört tane model var. Bu dört tane modelin hepsini birden mi birleştirdin?
+
+722
+01:57:32,408 --> 01:57:34,728
+M1, M2, M3, M4 modeli.
+
+723
+01:57:35,668 --> 01:57:38,208
+Ne birleştirdin? Tek bir model mi oluşturdun?
+
+724
+01:57:38,676 --> 01:57:45,016
+Evet, tek bir yaklaşım. Yani dördü birden nasıl sonuç verirdi gibi.
+
+725
+01:57:50,323 --> 01:57:52,623
+Peki [öğrenci], tamamdır. Teşekkür ederim.
+
+726
+01:57:53,523 --> 01:57:54,723
+Teşekkür ederim hocam.
+
+727
+01:58:03,060 --> 01:58:17,880
+[öğrenci] [öğrenci]. Buradayım hocam. Tek başına mısın? Evet. Evet, seni dinliyoruz. Ekran geldi mi? Geldi.
+
+728
+01:58:19,123 --> 01:58:46,663
+Başlangıç kısımlarını zaten geçiyorum. Seçtiğim erin kümesini anlatmak istiyorum. Öncelikle nasıl bir alt küme seçtiğimi. Alt kümeyi bilgi ağlıktan çok çıkarma ağlıktı seçmemiz gerektiğini ödev istiyordu bizden. Bu sebeple tek tek bölümler ve konular TXT'si oluşturdum data set içinden. Böylelikle KPSS denemeleri, KPSS bölümündeki sözel mantık sayısal mantık gibi ve YGS denemelerindeki Türkçe sorularla matematik ve geometri sorularını.
+
+729
+01:58:47,123 --> 01:58:52,804
+Dato set olarak aldım. Toplam 1509 adet Dato oldu. Öncelikle bunları shuffle ile...
+
+730
+01:58:52,804 --> 01:58:55,323
+Geometri sorularını almak iyi bir hareket edin.
+
+731
+01:58:56,844 --> 01:59:00,804
+Belki daha çok, sözel olarak sorduğu için...
+
+732
+01:59:00,804 --> 01:59:02,023
+Öyle mi? Sözel olarak mı soruyor?
+
+733
+01:59:02,363 --> 01:59:09,304
+Sözel olarak sorduğu için, üçgenin iç açılarından, matematiksel denklemlere yakın olduğu için tercih ettim.
+
+734
+01:59:09,384 --> 01:59:12,023
+Bütün sorular öyle değildi ama...
+
+735
+01:59:12,023 --> 01:59:14,603
+Hayır, orada görsel falan da olan yok mu sorular?
+
+736
+01:59:15,188 --> 01:59:20,188
+Görsel sorular da vardı ama çoğu sözel.
+
+737
+01:59:21,728 --> 01:59:22,068
+Peki.
+
+738
+01:59:23,747 --> 01:59:31,747
+Sonrasında toplam 1509 adet dataya ulaştım. Sonrasında bunlara öncelikle bir shuffle yaptım. Dataları karıştırdım.
+
+739
+01:59:32,851 --> 01:59:59,911
+Ardından etiketle ve veri temizleme yaptım. Çünkü datada doğru cevaplar 0-4 arasındaydı. Ben bunu A ve E'ye çevirmek istedim öncelikle. Sonrasında ise geçersiz veya eksik cevaba sahip örnek var mı diye kontrol ettim. Ya da seçenek sayısı eksik olan sorular var mı diye baktım. Bu tarz sorular yoktu. O yüzden eğitim ve test verimi böldüm. Bölerken de oran koruyacağı, statified bir yöntem.
+
+740
+02:00:00,180 --> 02:00:05,300
+Bu şekilde sergileyerek tüm şıkları train ve test set'e eşit dağıttım.
+
+741
+02:00:05,300 --> 02:00:07,779
+Ki bir yere ağırlık yapmasın şıklar diye.
+
+742
+02:00:09,699 --> 02:00:12,659
+Sonrasında SOS Parvise Fine Tuning uyguladım.
+
+743
+02:00:12,880 --> 02:00:18,100
+Bunun uygulamamın amacı, modern soru cevap bağlamını öğrenmesi ve belirlenen açıklı formatına alıştırılması.
+
+744
+02:00:18,199 --> 02:00:19,239
+Ana hedefim aslında buydu.
+
+745
+02:00:19,891 --> 02:00:33,252
+Üç farklı format çıktısı tasarladım. Öncelikle tek harf olmasını istedim. Sadece A, B, C gibi yazsın. Ya da cevap A yazsın istedim. Ya da JSON formatında yazmasını istedim.
+
+746
+02:00:34,072 --> 02:00:45,092
+Sonrasında CRPO modellerinde, CRPO ile amacım burada SFT'de yaptığım eğitimden sonra gördüm ki format başarılı bir şekilde öğreniyor.
+
+747
+02:00:45,391 --> 02:00:58,212
+Başa oranı çok yüksek ama cevaplar tek bir şıkkaya yöneldi. Yani sürekli aynı cevabı veriyor. Yani model burada aslında biraz kolaya kaçıp formattan garanti puanı alayım ama cevabı bulmaya çalışmayayım.
+
+748
+02:00:59,592 --> 02:01:07,811
+Yönelmiş. Bunu işte öncelikle baseline ödül fonksiyonumda doğru cevabı 0.9, doğru formatı 0.1 ödül puanı verdim.
+
+749
+02:01:08,372 --> 02:01:22,212
+Ama bu durum yine CRP'ye baseline ödül fonksiyonu için de benzer geldi. Sonrasında bunu düzeltmek için, tek şıkka çöken bu modeli düzeltebilmek için bazı alternatif ödül fonksiyonları geliştirdim.
+
+750
+02:01:22,676 --> 02:01:37,896
+İlk olarak çeşitlilik sağlamasını istedim. Eğer çeşitli sorular verirse, yani bir prompta ben dört cevap üretiyordum. Eğer ki dört tane aynı üretmezse cevabı 0.25 adet değerinde bir ödül puanı vermesini istedim.
+
+751
+02:01:38,736 --> 02:01:49,016
+İkinci alternatif modelimde ise aslında buna benziyor ama sadece dördü farklı değilse değil de cevapların olasılık dağılımına göre bir puan vermesini istedim.
+
+752
+02:01:49,264 --> 02:02:16,144
+Üçüncüde ise bir format için çeşitlilik yaptım. Yani alternatif 1'deki doğruluk için yaptığım çeşitliliği burada format için sağlamak istedim. Dördüncüde ise bir cezalandırma yaptım. Eğer ki model tüm sorulara aynı cevabı verirse bir ceza alsın ki aynı cevabı vermekten kaçınmasını istedim. Bu dört alternatif modeli geliştirdim. Sonrasında ise modelleri birleştirme aşamasına geldim.
+
+753
+02:02:16,692 --> 02:02:43,791
+Modelleri birleştirirken tabii öncesinde hem baseline hem de alternatif modellerin çıktılarını, test sonuçlarını aldım. Buna göre bu oranda birleştirdim. Çünkü bütün alternatif modeller de dahil hepsinde maalesef şey oldu. Aynı cevaba tek bir şıkka çökme durumunu yaşadım. Sonuç olarak %0.19'a yakın yani 5'li bir oranda bir doğruluk geldi. Aslında bu tek bir şıkka çöktüğü için oldu.
+
+754
+02:02:44,564 --> 02:02:51,564
+Merch'de ise şöyle bir farklılık oldu. Sadece alternatif bir modelim C şıkkına çöktü ama diğer modelleri...
+
+755
+02:02:51,564 --> 02:02:55,804
+Şimdi bu SFT sonrasında bir çökme olmuyor mu burada asıl?
+
+756
+02:02:56,423 --> 02:02:58,043
+Evet, SFT sonrasında.
+
+757
+02:02:58,764 --> 02:03:01,923
+Yani o SFT'de muhtemelen model overfit oldu.
+
+758
+02:03:02,484 --> 02:03:19,003
+Sen de onu olduğu yerden çıkartamıyorsun. Yani bir lokal minimuma çöktü. Sen de onu oradan hareket ettiremiyorsun. O zaman SFT'yi ya çok daha az yapacaktın mesela ya da SFT yapmadan bu işi yapacaktın.
+
+759
+02:03:19,923 --> 02:03:21,923
+Anlatabildim mi? Demek istediğim.
+
+760
+02:03:22,684 --> 02:03:25,323
+Çözmeye çalıştım ama çözemedim onu.
+
+761
+02:03:26,944 --> 02:03:27,583
+Anladım.
+
+762
+02:03:29,524 --> 02:03:38,744
+Sonuçlar bütün her şeyi ancağı verdiği zaman da zaten çıkış olarak cevap C'dir dediği zaman zaten böyle bir sonuç görmüş oluruz.
+
+763
+02:03:39,344 --> 02:03:40,204
+Evet, aynen öyle.
+
+764
+02:03:40,204 --> 02:03:46,004
+Anladım. Ama dediğim gibi yani o başta çökmüş olduğunda fark etmişsin. Ona göre niye bir şeyi yapmadın ki?
+
+765
+02:03:46,244 --> 02:03:46,423
+Evet.
+
+766
+02:03:47,764 --> 02:03:51,444
+Orası aslında çok daha iyi olurdu bence.
+
+767
+02:03:52,104 --> 02:03:55,384
+Evet, onu çözmeye çalıştım ama çözemedim. Uğraştım gerçekten.
+
+768
+02:03:56,340 --> 02:04:10,759
+SFT yapmadan da devam edebilirdin. O da bir olasılık ya. Badem SFT ile olmuyor, buradan gidelim bari diye. Peki, teşekkürler. Ben teşekkür ederim.
+
+769
+02:04:20,851 --> 02:04:28,851
+[öğrenci]? Buradayım hocam. Tek başına mısın? Tekim.
+
+770
+02:04:38,228 --> 02:05:01,228
+Öncelikle, çıkarım yapabilmesi için modeli Verisett'in bir fitneden geçirdim. Fitnede kullandığım şeylerde genelde paragraf soruları gibi sadece soruya batarak çıkarım yapabildiği soruları içeriyor. Sadece paragraf değil de.
+
+771
+02:05:05,140 --> 02:05:10,140
+Bunları içeriyorsa aldın.
+
+772
+02:05:10,140 --> 02:05:29,140
+Aşağıdaki bu kısımdakiler ise bunlar alınmadılar. Matematiksel vs. sayısal şeyler varsa, kaçtır, eşittir vs. bunları almadık. Böylece 1753 soru tespit ettik.
+
+773
+02:05:29,555 --> 02:05:41,555
+Bunlardan 1000 tanesi eğitim, 500 test için ayırdım. 6 tane completion oluşturuyor prompt başına. 700 adım eğittim.
+
+774
+02:05:41,555 --> 02:05:56,555
+Maksimum prompt uzunluğu da 512 verdik. 4'ün de eğitti. 2x10-6. Modelden beklenen formatı soracağım. Cevap.
+
+775
+02:05:57,043 --> 02:06:14,743
+Seçenek numarası neden? Şeklinde. Bu promptu verilirken şöyle verdim. Verilen çoktan seçmeyi soru dikkatliyle söz verilirken soru, seçenekler. Daha sonra da cevap formatı. Yani bu az önce gösterdiğim şey. Daha sonra da bir örnek verdim.
+
+776
+02:06:14,743 --> 02:06:17,963
+O biraz ters olmuş [öğrenci]. Nasıl olacak?
+
+777
+02:06:18,863 --> 02:06:23,103
+Yani ilk önce neden ondan sonra cevabın olması daha doğal değil mi?
+
+778
+02:06:25,108 --> 02:06:29,707
+Ya ben kendim de genelde böyle cevap verdiğim bir şey.
+
+779
+02:06:30,207 --> 02:06:34,847
+Öyle olamaz ki nasıl öyle cevap veremezsin ki nasıl yani? İlk önce düşünmeden nasıl cevap vereceksin?
+
+780
+02:06:36,188 --> 02:06:40,648
+O zaman cevabı uyduruyorsun. Yani cevabı uygun neden üretirsin o zaman?
+
+781
+02:06:43,587 --> 02:06:44,648
+Öyle değil mi?
+
+782
+02:06:44,648 --> 02:06:51,467
+Ya ben hani model şey yazarak mı düşünüyorum yani?
+
+783
+02:06:52,047 --> 02:07:05,007
+Önemli. Evet, aynen öyle. Sonuçta Next Talk'un Prediction, yani sonrasını tahmin ediyor, tamam mı? Yani şimdi sorudan sonra direkt cevabın ne olduğunu tahmin etme olası çok çok düşük değil mi mesela düşünürsek?
+
+784
+02:07:07,572 --> 02:07:20,572
+Onun yerine hani şu şöyledir, bu böyledir, bu böyledir. Dolayısıyla doğru cevap şudur. Anlatabiliyor musun? Bu Next Token Prediction ile eğitilmiş bir model için çok daha yapması kolay bir davranış değil mi?
+
+785
+02:07:20,572 --> 02:07:22,572
+Evet, doğru.
+
+786
+02:07:22,572 --> 02:07:27,572
+Peki, böyle yaptın. Sonra?
+
+787
+02:07:27,572 --> 02:07:32,572
+Revert funksiyonları var işte hocam. Format Revert var.
+
+788
+02:07:35,444 --> 02:07:43,064
+Verdiği cevapta cevap geçiyorsa belli bir ödül oluyor. Cevaptan sonra seçeneğin numarasını yazmışsa belli bir ödül oluyor.
+
+789
+02:07:43,064 --> 02:07:56,344
+Az önceki o verdiğim, promtada gösterdiğim formata uyuyorsa, RegExpo, tam 1 puan alıyor. Aksa halde hiç uymuyorsa, x0.5 alıyor.
+
+790
+02:07:56,344 --> 02:08:01,344
+Daha sonra accuracy var işte. Verdiği cevap doğruysa...
+
+791
+02:08:01,747 --> 02:08:15,987
+Gerçek cevabı da aynıysa bir puan alıyorum. Eğer numarayı içeriyorsa 0.3 alıyoruz. Bunu da teşvik etmek için ekledim.
+
+792
+02:08:15,987 --> 02:08:29,587
+Bunun yanında da çok uzatırsa bağlamından kopabilir gibi düşündüğüm için virgül sayısını verdiği cevaplarda az tutmaya.
+
+793
+02:08:30,260 --> 02:08:50,560
+Bunu teşvik etmeye çalıştım. İkiden aşağı ise belli bir ödül alıyor. İkiden fazlaysa, birgül sayısı çok dallanacağı için bunu istemedim. 0.2 eksi yiyor. Buradan en düşük kalacağı tabiri Word'de eksi bir. Yani daha düşük kalamıyor.
+
+794
+02:08:51,760 --> 02:08:56,260
+Birde Word Count Reward diye bir şey ekledi.
+
+795
+02:08:57,300 --> 02:09:00,880
+Burada da işte kelime alimeleri saydın.
+
+796
+02:09:01,319 --> 02:09:07,340
+Aynen, 3 ile 30 arasında olmasını teşvik ettim diyeyim.
+
+797
+02:09:07,340 --> 02:09:20,520
+Bir de işte nokta. Çok fazla cümle kullanmamasını için 2 veya 2'den küçük sayıda nokta kullanırsa daha etkili olacağını düşündüğümüzde örneği.
+
+798
+02:09:23,699 --> 02:09:32,180
+Karakter uzunluğu var. 512 zaten vermiştim. Maksimum çıkaracağı cevap bu kadardı.
+
+799
+02:09:32,900 --> 02:09:38,180
+Bu ne kadar ters olan puan, ne kadar az verirse o kadar ödül alıyor.
+
+800
+02:09:38,180 --> 02:09:49,900
+Bu öyle bir ekledim. Daha sonunda, burada baktığımızda bu ortalama aldığı ödülleri gösteriyor.
+
+801
+02:09:50,195 --> 02:10:07,195
+Bu, Reward Fonksiyonu'na yazılıyor. Bunların 700 stepte, formatın yaklaştığını bile. Dolayısıyla formata uymaya başlıyor.
+
+802
+02:10:16,627 --> 02:10:39,627
+Tam deri yaklaşamıyor. İkinci de işten nokta sayısına uyması vs. Orada da yine oyuncusu görüyoruz. Üçte de kırmızı olan virgül gösteriyor. Dördüncü de kırmızı olan bird count gösteriyor. Yeşil ve mavi tabi. Burada da uyumaya yaklaştırılıyor.
+
+803
+02:10:40,979 --> 02:10:50,779
+5'te de karakter hızırını kırmızı olan. O da yine uyuyor. 700 steps yolunda bu ödüllere, bu kurallara uyuyor aslında.
+
+804
+02:10:54,676 --> 02:11:06,676
+Format ve Accuracy Rebirth Fonksiyonunun kullandığı modelde, bu Base için aslında hepsi kullanılmaktadır. Format için 0.6, Accuracy ise 0.4 vermişiz.
+
+805
+02:11:07,676 --> 02:11:14,676
+Test sonuçlarına baktığımızda, bu kullanılan ödül fonksiyonları gösterelim.
+
+806
+02:11:20,340 --> 02:11:32,340
+500 tane soru var. 500'ün de tam formatlı yıla. Cevap şu, sonra da bir açıklama bekliyoruz aslında. Ona uymuş görünüyor.
+
+807
+02:11:34,340 --> 02:11:47,307
+Format Ecurus'u ve koma kullandığımız modelde 0.2 Ecurus'u vermiş. Yani %20 bir doğruluğa erişmiş burada.
+
+808
+02:11:47,699 --> 02:11:57,579
+Ben de buradan 3'ünü seçtim. 0.196, 0.2 ve zaten bir de Base Noter.
+
+809
+02:11:57,579 --> 02:12:04,340
+Kollektif Öğrenme dersi. Bunları birleştirince, bunları tabi hepsine ağırlıkla verdik.
+
+810
+02:12:04,340 --> 02:12:12,020
+0.3, 0.3, Kollektif Öğrenme dersi için 0.2, karakter uzunluğu için 0.2 verdik.
+
+811
+02:12:15,347 --> 02:12:25,747
+Şu sağ en alttaki gibi oldu sonuçta. Yine virgülü, formatı yine çok iyi öğrendiğini görebiliyoruz.
+
+812
+02:12:25,747 --> 02:12:35,028
+Bir an ben anlamadım. Birleştirme dediğin şeyi o zaman sen reward fonksiyonlarının içerisindeki birleşenleri birleştirmişsin.
+
+813
+02:12:35,847 --> 02:12:36,847
+Aynen, ben öyle yaptım.
+
+814
+02:12:37,408 --> 02:12:39,068
+Ama öyle değildi ödev değil mi?
+
+815
+02:12:44,627 --> 02:12:46,627
+Yani o şekilde yapmamızı.
+
+816
+02:12:47,427 --> 02:12:53,568
+Ama öyle değildi. Sonuçta merge yapman gerekiyordu. Yani modelleri birleştirmen gerekiyordu.
+
+817
+02:12:56,188 --> 02:12:58,407
+Peki, tamam. Devam edelim.
+
+818
+02:13:02,407 --> 02:13:03,847
+Yani bu ödül...
+
+819
+02:13:04,787 --> 02:13:13,787
+Fonksiyonlarıyla model eğitimimizi de Snod'da 19. Daha düşük geldi. Sadece 1,1. Daha düşük bir şey elde ettim.
+
+820
+02:13:17,787 --> 02:13:27,787
+Aslında New World'lerin az önceki o fonksiyonu grafiklerde şunu gördüğümüze göre aslında New World'lere uyuyor. Öğrendiğini görebiliyordum.
+
+821
+02:13:29,787 --> 02:13:31,787
+Step arttıkça...
+
+822
+02:13:32,020 --> 02:13:37,900
+Soğumda belli bir dire yaklaşıyor. Onu söyleyebiliriz.
+
+823
+02:13:38,460 --> 02:13:42,640
+Yani formatı öğreniyor ama cevaplar hala rastgele düzeyinde tabii ki.
+
+824
+02:13:43,220 --> 02:13:43,500
+Evet.
+
+825
+02:13:44,420 --> 02:13:44,700
+Peki.
+
+826
+02:13:44,920 --> 02:13:55,980
+Ben burada daha çok kelimeleri filtrelemektense modelin verdiği cevaplarda.
+
+827
+02:13:56,627 --> 02:14:08,907
+Bu modeli de sınırlandığını düşündüm. Sınırlandığını düşündüm ki çok şey yapmadım. İfade varsa ceza fonksiyonu oluşturmadım.
+
+828
+02:14:08,907 --> 02:14:23,187
+Bence şöyle bir şey olsa, yapay zeka API'yi kullanılsaydı bu şekilde değerlendirilseydi belki de daha etkili olabilirdi diye düşünüyorum.
+
+829
+02:14:26,644 --> 02:14:28,644
+Peki, teşekkür ederim Runa.
+
+830
+02:14:55,155 --> 02:14:56,155
+[öğrenci]
+
+831
+02:15:03,252 --> 02:15:14,432
+[öğrenci]? Buradayım hocam, ben hemen ekran paylaşıyorum. Tamam. Tek başınasın. Evet. Tamam.
+
+832
+02:15:25,076 --> 02:15:37,276
+Şimdi aslında ben de arkadaşlara benzer şeyler denedim. Farklı olan yerlerden bahsedeyim hızlıca. Ben Reword fonksiyonlarımı şöyle, daha çok Regex odaklı tasarladım açıkçası.
+
+833
+02:15:38,316 --> 02:15:50,176
+İlk önce şey aklıma geldi, Reword'leri de basit, belki sentences similarity bulan, cosine similarity bulan daha küçük modeller ekleyeyim ama orası biraz runtime olarak çok yüklü geldi.
+
+834
+02:15:50,996 --> 02:15:58,595
+O yüzden iki temel ödül kullandım. Birisi format, diğeri doğruluk zaten. İşte format belirli teklerin arasındakini arıyor.
+
+835
+02:15:58,595 --> 02:16:09,996
+Eccurcy'de doğru cevabı verip veremediğini direkt tek harfi üzerinden kontrol ediyor. Bir de mantık ödülü ekledim. İşte o da böyle çünkü dolayısıyla buna göre gibi aslında.
+
+836
+02:16:10,260 --> 02:16:30,800
+Düşünce zincirinin oluşup oluşmadığına dair bir ödül veriyor. Söylemeyi unuttum. Ben de arkadaşlar gibi işte matematik, fizik gibi daha akıl yürütebileceği alanlar üzerine fitreleyerek başladım deriz etine. O yüzden bir tık aslında böyle akademik dili de skorlayan bazı ödül fonksiyonları ekledim.
+
+837
+02:16:32,755 --> 02:16:41,275
+Step by Step çözebiliyor mu? Yine regex odaklı, ilk olarak sonuçta adım gibi keywordler geçiyor mu? Buna göre pozitif bir ödül veren.
+
+838
+02:16:41,275 --> 02:16:49,835
+Veya akademik bir dil kullanmış mı? Yine regex odaklı dolayısıyla buna göre incelendiğinde gibi çok kullanılan ifadeleri kullanmış mı?
+
+839
+02:16:49,835 --> 02:17:00,755
+Bir de negatif ödül ekledim buraya. Özgüven ve kesinlik odaklı mı konuşuyor? Yoksa sanırım belki emin değilim gibi şeyler, keywordlerde, kelimelerde üretiyor mu diye.
+
+840
+02:17:00,755 --> 02:17:05,355
+Genel olarak, bir de şöyle bir sorun yaşadım.
+
+841
+02:17:05,747 --> 02:17:15,147
+Aslında bir sorun değilmiş, arkadaşlar dinlerken anladım ama ben Cosmoz modeliyle çalışırken format başarısını çok düşük aldım.
+
+842
+02:17:15,147 --> 02:17:21,347
+Sonra da şöyle düşündüm, beş şıklı bir problemi zaten yanıtlamaya çalışıyor.
+
+843
+02:17:21,347 --> 02:17:29,147
+%5'in altında format başarısı var. Eccursi'ye bakıldığında da yine %3'ün %4 civarlarındaydı.
+
+844
+02:17:31,252 --> 02:17:59,132
+%20 başarıdır diye düşündüm. O yüzden tasarladığım ödül fonksiyonların da faydası olmadı. Aslında minimal düzeyde oldu. Lossları çok düşüremezsem de bile. O yüzden Rebirth fonksiyonlarımı daha büyük bir model üzerinde test ettim. Ödevi teslim etmek. Bir de acaba çok temelde yanlış bir şey yapıyorsam buradan anlarım diye düşünerek. O yüzden ben 7 milyar parametreli başka bir model üzerinde test sonuçlarımı paylaşacağım.
+
+845
+02:17:59,252 --> 02:18:01,899
+Burada tabii ki...
+
+846
+02:18:02,131 --> 02:18:26,951
+Daha büyük parametreli bir model olduğu için daha sonuçları iyi veriyor. Ama tasarladığım mantığa göre ilk önce ham halini herhangi bir eğitim yapmadan doğruluğu %24 olarak hesapladım. Formatı da %44 olarak. Sonra sadece format ve ekürsi reward fonksiyonlarıyla beraber eğittiğim model de 43.96'ya çıktı.
+
+847
+02:18:27,987 --> 02:18:32,987
+Burada en iyi sonucu ben bu düşünce zinciri... Çok pardon.
+
+848
+02:18:34,515 --> 02:18:44,916
+Düşünce Zinciri Revert fonksiyonu üzerinden aldım. Çok büyük fark etmiyor ama burada emin olmaya çalıştığım şey, hakikaten Base modeli geçebiliyor muyumdu?
+
+849
+02:18:44,916 --> 02:19:00,916
+Geekti, Cosmos modelinde çok düşük geldiği için. Daha sonra daha ağır, böyle Citric, XML yapısını kurgulayan, işte tekle başlayıp tekle biten gibi daha katı bir format kuralı koyduğumda çok yükselmedi.
+
+850
+02:19:01,587 --> 02:19:14,268
+Ama şu Model D olarak bahsettiğim, yani aslında şurada bahsettiğim, ben bunun en iyi sonuçları vereceğini düşünerek tasarlamıştım açıkçası. Özellikle KPSS soruları üzerinden ve cevapları üzerinden olduğu için.
+
+851
+02:19:14,268 --> 02:19:27,187
+Ama çok düşündüğüm gibi olmadı. Sanırım burada Reward fonksiyon sayısının 5 olduğu için, yani biraz diğerlerine göre fazla olduğu için, burada aşırı kısıtlamaya düştüm ve performansın düştüğünü gözlemledim.
+
+852
+02:19:29,587 --> 02:19:35,268
+Diğer verdiğiniz yanıtlardan anladım. Ben de şu yanlışı yapmışım. Ben de ilk önce cevabı vermesini istedim Prompt'ta.
+
+853
+02:19:36,211 --> 02:19:44,711
+İlk önce cevabını vermesini istediğim için muhtemelen burada daha yüksek sonuçlar alabilirmişim Cosmos modelinde. Onu alamamışım.
+
+854
+02:19:44,711 --> 02:19:52,211
+Ama genel olarak Reword fonksiyonlarımı şu şekilde RegEx odaklı kurmaya çalıştım. Keyword by keyword ilerledim.
+
+855
+02:19:52,211 --> 02:20:01,711
+Testleri de tüm 500 tane test kümesi içerisinden random seçerek yapmaya çalıştım.
+
+856
+02:20:02,675 --> 02:20:04,635
+Genel olarak anlatacaklarım bu şekilde.
+
+857
+02:20:06,635 --> 02:20:15,795
+Peki, teşekkürler [öğrenci]. Yani o cevabı ilk ver demek, dediğim gibi birazcık zor bir şey istiyorsanız anlatabildim mi?
+
+858
+02:20:15,795 --> 02:20:21,835
+Yani çünkü o sorudan sonra doğru şıkkın, next token prediction olası da düşük bir şey.
+
+859
+02:20:22,615 --> 02:20:26,835
+Hani normalde oradan sonra bir mantık yürütmesi gerekecektir.
+
+860
+02:20:27,935 --> 02:20:29,036
+Anladık. Peki.
+
+861
+02:20:29,780 --> 02:20:35,740
+Teşekkür ederim. O dediğiniz şeyi değiştirip tekrar deneyeceğim. Ben de merak ettim sonuçları. Teşekkür ederim.
+
+862
+02:20:44,884 --> 02:20:45,844
+[öğrenci].
+
+863
+02:20:48,024 --> 02:20:49,463
+Ne olur hocam? Sesim geliyor mu?
+
+864
+02:20:49,804 --> 02:20:51,324
+Geliyor. Tek başına mısın?
+
+865
+02:20:51,703 --> 02:20:53,724
+Yok hocam. [öğrenci] [öğrenci]'le yaptık.
+
+866
+02:20:54,923 --> 02:20:59,103
+[öğrenci] [öğrenci]'le beraber. Evet. Buyurun arkadaşlar.
+
+867
+02:20:59,760 --> 02:21:06,159
+Sen paylaşırsan, hatta sen anlat hızlıca. Eksi kalan bir yer varsa ben tamamlayayım hemen arkadan.
+
+868
+02:21:06,159 --> 02:21:19,400
+Tamam, öyle yapalım. Merhabalar hocam. Biz de aynı şekilde şeyleri geçelim diye düşünüyoruz. Bu veri kısmını ve GRPO kısmını. Sadece veriyle alakalı bir şey söylemek istiyorum hocam.
+
+869
+02:21:20,340 --> 02:21:27,760
+Veriyle biz modelin daha iyi çıkarım yapabilmesi amacıyla, bilgi odaklı soruları aradan ayıklamak amacıyla keywordler...
+
+870
+02:21:27,760 --> 02:21:39,760
+Filtreleme işlemi gerçekleştirdik. Aynı şekilde biz de modeli eğitirken hocam full file tuning yapmak yerine Lora kullandık. Böylece eğitim süresini hızlandırmaya başladık.
+
+871
+02:21:42,239 --> 02:21:54,239
+Eccuracy, format, antikopi, single choice, confidence ve length rewardlarımız var. Hızlıca onların üstünden geçelim istiyorum. Zaten ilk olarak Eccuracy'den başlayalım.
+
+872
+02:21:55,667 --> 02:22:19,667
+Doğruluk durumunda 4 puan veriliyor, yanlış durumda da 0. Ne tür puan veriliyor? Formatta dikkat çekmek istediğim önemli bir husus var. Formatı %100 tutturursa çok yüksek bir puan veriyoruz ama formatı tutturamasa bile, formatı yakın şeyler verdiğinde de yine teşvik etmek istedik ki model en azından bir şekilde formata yakınlaşmaya devam edebilsin diye.
+
+873
+02:22:20,595 --> 02:22:33,315
+Antikopi rewardumuz da bizim. İlk başta çıktılarımıza baktığımızda hocam bazı çıktılarımızın şey yaptığını gördük. Prompt'u kopyaladığını ya da prompttan bazı içerikler aldığını gördük.
+
+874
+02:22:33,315 --> 02:22:41,315
+Bunu önlemek amacıyla hocam böyle bir ödül fonksiyonu yazdık. Mesela prompt aynen kopyalanıyorsa negatif bir şekilde cezalandırdık.
+
+875
+02:22:42,275 --> 02:22:48,415
+Ya da prompttaki kelimelerin uyuşma oranlarına göre bu ceza oranlarını değiştirdik diyebiliriz hocam.
+
+876
+02:22:48,852 --> 02:23:12,612
+Bir de Single Choice Reward diye bir şey ekledik. Bunu eklememize sebep bir de hocam, mesela biz RegEx'de cevapları çekiyoruz ya, ilk cevabı çektiğimiz şey aslında modelin yazmış olduğu ilk sayı. Bu nedenle modeli sadece tek bir sayı üretmek üzerine teşvik etmek istedik. Böylece çektiğimiz, cevap olarak kabul ettiğimiz şeyin en azından daha...
+
+877
+02:23:12,612 --> 02:23:16,172
+Siz de o zaman cevabı ilk önce istiyorsunuz, doğru mu anlıyorum? Şıkkı.
+
+878
+02:23:16,659 --> 02:23:17,520
+Evet hocam.
+
+879
+02:23:17,520 --> 02:23:26,520
+Biz hocam orada, burada konuşulurken fark ettik hocam. Biz şey olarak düşündük hocam, eğer cevap kısa olursa hani direkt...
+
+880
+02:23:27,139 --> 02:23:34,079
+Yok yok, kısalından bahsetmiyorum. Şunu demek istiyor. Format olarak istediğiniz şey ilk önce cevabı vermesi mi, şıkkı vermesi mi?
+
+881
+02:23:34,388 --> 02:24:01,648
+İlk istediğim bir şey hocam, cevap yazıp şıkkı vermesi. Biz ama direkt düşünce adımına atladık. Burada hata yaptığımız kısım oldu. O yüzden şunu demek istiyorum. Sanki kısa yazarsa daha çabuk ve daha hızlı sonuca ulaşacakmışız gibi düşündük. Düşünmeyi biz direkt atladık. İlk önce cevabı alıp sonra düşünme gibi bir şey yapmadık da. Düşünme adımına direkt atlamış olduk. Bugün burada konuşulmaları dinlerken fark ettim. O biraz hata oldu aslında.
+
+882
+02:24:30,388 --> 02:24:53,388
+Handicapta şu hocam, bunu çok abartırsak da modelin halestirasyon yaşamı riski de artıyor. O yüzden burada dengeli bir yaklaşım da sergilemek önemli diye düşünüyoruz. Bir de Lank Troward'umuz var. Biz hocam, aslında muhakeme sürecini burada kısmış olduk Lank Troward'la birlikte. Çünkü şöyle bir şey oldu. Aslında biz token sayısını küçültürsek acaba cevaba...
+
+883
+02:24:54,772 --> 02:25:18,092
+Formata daha uyumlu bir şey yakalayıp cevapları daha uygun çekebilir miyiz diye düşündük. Biraz formata destek de verebilir bu kısım. Kısa cevap önerildikçe formata daha yakınlaşabiliriz. Böylece cevabı daha iyi çekebiliriz diye düşündük. O yüzden de token sayısını azaltmaya yönelik bir teşvik yaratmak amacıyla Length Award'u yerleştirdik ama bu dediğim gibi çok doğru da olmadı diye düşünüyorum.
+
+884
+02:25:22,335 --> 02:25:37,095
+Şey hocam, şöyle bir şey var. Biz model içerisinde, siz de konuşmaların arasında bahsettiğiniz KL Divergence hatası da içeriye CRPO.
+
+885
+02:25:37,255 --> 02:25:43,075
+Hani modelden, orijinal referans modelden çok fazla uzaklaşmaması için. Biz hocam oradaki beta parametresini birazcık küçülttük.
+
+886
+02:25:43,471 --> 02:26:02,951
+Model biraz uzaklaşsın istedik. Bizim en azından istediğimiz formata daha çok uyum sağlaması için birazcık modelin kendisini unutmasını desteklemek istedik. Ona da bildirmek istiyorum. Buradan sonrasını istersen [öğrenci] senden anlatabilirsin. Devamlı edebilirim.
+
+887
+02:26:02,951 --> 02:26:08,031
+Olur. Model birleşme de ağırlıklarda farklı bir şey vermek istiyorum. Hepsinin ağırlıklarını eşit almıştık değil mi?
+
+888
+02:26:09,075 --> 02:26:13,015
+Evet, hepsinin hariklerini eşit aldık. Yani DRTS kullandık hocam biz.
+
+889
+02:26:15,376 --> 02:26:15,995
+Birleştirmeden.
+
+890
+02:26:16,995 --> 02:26:21,195
+Evet, ya direkt istersen şeyle geçebiliriz buradan. Sonuçlara geçelim istersen.
+
+891
+02:26:21,456 --> 02:26:21,715
+Tabii.
+
+892
+02:26:22,115 --> 02:26:24,855
+Çok fazla bu tercami. Yukarıda bir şey var mıydı kaçırdığımız?
+
+893
+02:26:25,492 --> 02:26:27,152
+Sen değerlendirme metrikleri.
+
+894
+02:26:27,171 --> 02:26:35,891
+Değerlendirme de bunlara baktık. Bizim asıl burada baktığımız şey akuresiyle formatı doğru muydu? Asıl ona odaklandık. Sonuçlarda şey geldi.
+
+895
+02:26:37,111 --> 02:26:53,351
+Bayes'in formatı 500 test önünde formatı okey olan 24'tü. Korekta 6 geldi. Burada şunu söyleyeyim. Biz aslında çok fazla deneme yaptık. Burada sadece daha iyi olarak koyduk. Cevaplarına bakarak söylüyorum bunu. Çünkü mesela şey oldu oldu.
+
+896
+02:26:53,492 --> 02:26:58,492
+Format Okey'de 438 gördük biz. 500 test örneğinde format tutturduğu oldu.
+
+897
+02:26:59,156 --> 02:27:06,196
+Hep cevaplar şey, öğrettiği cevaplar. Cevap sıfır, cevap bir, cevap sıfır, cevap böyle bir bias oluşu.
+
+898
+02:27:07,196 --> 02:27:16,696
+Ki Kollektif answer sayısı da fazla eden işte 40'larda falandı. Ama dediğim gibi sanırım bir model eğitimde hata yaptığımız için çok fazla bias cevaplar geldi.
+
+899
+02:27:16,696 --> 02:27:22,696
+O yüzden onları buraya yazmadık. Farklı bir şey öğrettiği sonuçları buraya aktardık.
+
+900
+02:27:23,700 --> 02:27:39,700
+Çalışlar aşağı yukarı aynı geldi. Bizde çok fazla iyileşme olmadı. Sadece işte length fonksiyonunda format ve cevap sayısı biraz daha altı. Hepsini birleştirdiğimiz zaman çok anlamlı bir fark olmadı bizde. Bunun sebebi olarak da...
+
+901
+02:27:40,115 --> 02:28:05,335
+Yani kullandığımız word fonksiyonlarında hata olabilir. Belki verdiğimiz oputta da hata olabilir. Nesim dediği gibi başta belki medensel bir gün alsaydık daha iyi sonuçta elde edebilirdik. Bir de bizim tabii korrekli değerlendirmemiz direkt şeye bağlıydı. Cevabı doğru verdi mi vermedi mi? Yoksa bazı cevaplarda şey yapıyordu. Doğru seçeneği söyledi. Ama onu cevap olarak vermiyordu. Ya atıyorum cevap Ankara cevap bir diye vermiyor.
+
+902
+02:28:06,067 --> 02:28:18,227
+Ona bakmadık. Direkt cevap 1 ver dedik. Kuresimiz bu şekilde hesapladık. Onun dolayı düşük geldiğini söyleyebilirim. Eğer onlara da baksaydık biraz da korrek sayısı artabilirdi diye düşünüyorum. Bu şekilde.
+
+903
+02:28:19,227 --> 02:28:31,707
+Biz korrekleri değerlendirirken direkt formatı da doğru vermesi şeklinde bir kısıtla doğruluğu değerlendirdik aslında. O yüzden biraz burada düşük gözüküyor ama [öğrenci]'ın dediği gibi aslında daha yüksek gelebilirdi hocam.
+
+904
+02:28:33,427 --> 02:28:46,427
+Tabi, zaten format diye bir şey olsun, istiyor olmamızın bir sebebi de çok kabaca user'ın ötesinde bizim accuracy dediğimiz şeyi çok basit bir şekilde ölçebilmemiz temelde.
+
+905
+02:28:46,427 --> 02:28:49,003
+Orası da işin içerisinde.
+
+906
+02:28:49,075 --> 02:28:49,555
+Evet.
+
+907
+02:28:50,095 --> 02:28:50,355
+Peki.
+
+908
+02:28:50,775 --> 02:28:52,216
+Sizin mi sorunuz var mı hocam?
+
+909
+02:28:52,376 --> 02:28:54,755
+Bu arada ben şeyden bahsetmek istiyorum.
+
+910
+02:28:55,216 --> 02:28:59,415
+Buradaki performanslar çok yakın olduğu için hocam birleştirmede aslında hepsinin ağırlıklarını bir verdik.
+
+911
+02:28:59,515 --> 02:29:04,876
+Normalde biz teklik performansları göre bu veytay'ı ayrılacaktık birleştirme sırasında.
+
+912
+02:29:04,876 --> 02:29:08,876
+Ama hepsi benzer yakınlıkta geldiği için hepsini bir verip...
+
+913
+02:29:09,620 --> 02:29:11,620
+Öyle birleştirmeye karar verdik.
+
+914
+02:29:11,620 --> 02:29:14,620
+Peki, tamamdır. Teşekkür ediyorum arkadaşlar.
+
+915
+02:29:14,620 --> 02:29:16,620
+Biz teşekkür ederiz hocam.
+
+916
+02:29:16,620 --> 02:29:17,620
+Teşekkür ederiz hocam, görüşmek üzere.
+
+917
+02:29:17,620 --> 02:29:18,620
+Teşekkür ederiz hocam.
+
+918
+02:29:18,620 --> 02:29:19,620
+Sağ olun.
+
+919
+02:29:19,620 --> 02:29:21,620
+[öğrenci] burada mı?
+
+920
+02:29:26,708 --> 02:29:27,708
+[öğrenci].
+
+921
+02:29:31,507 --> 02:29:33,164
+[öğrenci].
+
+922
+02:29:36,275 --> 02:29:37,355
+[öğrenci]
+
+923
+02:29:41,172 --> 02:29:46,172
+[öğrenci]? Hocam, benim çalışmam yok. Benim arkadaşları dinlemeye gidiyorum.
+
+924
+02:29:46,172 --> 02:29:51,172
+Yok, anladım. Peki. [öğrenci] yok. [öğrenci]?
+
+925
+02:29:51,172 --> 02:30:03,172
+Buradayım hocam, paylaşıyorum hemen. Tamamdır. Tek başınasın. Aynen öyle. Peki. Ekranım geldi mi?
+
+926
+02:30:06,515 --> 02:30:33,136
+Bir saniye. Evet geldi. Duydu. Sen de is. Tamam. Biraz tabii hızlı geçeceğim ben de. Burada ben de genel olarak herkesin yaptığı gibi işte MMLEU subset seçtim ve bunu çıkarım ağırlıklı konuları filtreledim içerisinden. 1500'ü yayırdım ve sabit bir çekirdek eklemek istedim ki daha sonraki günlerde yine bunun üzerinde çalışacağım zaman tekrarlanabilirlik olsun diye.
+
+927
+02:30:35,316 --> 02:30:55,716
+Ödül fonksiyonlarında da bütün hepsinde ortak kullanılan Accuracy bir de format var. Burada işte Accuracy Reward'da mesela doğru cevabı, doğru etiketi yakalıyorsa ödüllendiriyor. Bir veriyor mesela. Ds0. Formatta da hem akıl yürütme hem de doğru cevap varsa ödüllendiriyoruz.
+
+928
+02:31:01,811 --> 02:31:22,332
+Akıl yürütme var. Bunu aslında biraz bilerek eklemek istedim. Çünkü reward taking örneği çıkacak mı diye denemek istedim. Burada da işte belli bir cevap uzunluğu var. Diyelim işte 200 karakterden fazlaysa buna artı puan veriyoruz. Değilse eksi puan oluyor.
+
+929
+02:31:24,451 --> 02:31:25,951
+Diğeri de bağlaç.
+
+930
+02:31:26,548 --> 02:31:42,828
+Modelin bağlaç kullanmasını istedik. Belli bağlaçları filtreledik. Burada da kullandığı her bir bağlaç için ekstra puan oluyor. Ama tabii onu da bir yerde sınırlandırmak için maksimum şu kadar puan toplayabilirsin diye bir önlem aldık.
+
+931
+02:31:43,731 --> 02:32:07,572
+Üçüncüsünde de burada tekrar cezası. Aslında bu birinci ve ikincisinin yaptığı davranışı durdurabilsin, daha iyi akürüsü yakalayabilsin diye böyle bir şey yapmak istedim. Burada mesela kullandığı kelimelerin bağımsızlığına bir unique ratio diye bir eşik değeri belirleyip bu eşik değeri açtıysa artı puan verdim. Diğer türlü eksi puan aldı.
+
+932
+02:32:10,195 --> 02:32:32,195
+Bir mantıksal tutarlılık aradım. Burada da işte arka arkaya cümleler sıralayabiliyorum, düşünüyorum diye denemek istedim. Kullandığı nokta sayısını baz aldım burada da. Kurduğu cümle sayısını yani. İşte o cümleden daha fazla cümle kurduysa artı puan değilse eksi puan aldı. Bir de ben de Ensemble model denemek istedim ekstra olarak.
+
+933
+02:32:32,884 --> 02:32:50,664
+Burada mesela şu yukarıdaki 4 tane ödül fonksiyonunu birleştirdim. Her biri için bir puan toplayıp, bir puan üretip, sonucunda da bu puanları toplayıp tek bir karar veriyor ve bu şekilde en iyi sonucu yakalayabilir miyim diye düşündüm.
+
+934
+02:32:52,404 --> 02:32:55,504
+Öyle olduğunu da gördüm birazdan. Anlatacağım.
+
+935
+02:32:58,799 --> 02:33:13,639
+Tüm modelleri tek tek direkt Bayesian üzerinden ürettim. Çünkü mesela arka arkaya eğitim yaptığımız zaman şöyle olduğunu fark ettim. Bir fine-tune moduna girip diğer modellerin üstüne ekleye ekleye avantaj kazanıyordu.
+
+936
+02:33:15,559 --> 02:33:20,799
+Kullandığım parametreler de burada. Burada mesela işimi sağlam almak için...
+
+937
+02:33:21,236 --> 02:33:35,076
+Bir takım save steps'ler, logging steps'ler ekledim ki çıktığı execution boyunca takip edeyim bir sorun varsa ona göre önlem alayım diye. Çok zaman kaybettim çünkü ödevi yaparken. Bir taraftan da drive'a kaydetmek istedim checkpoint olarak.
+
+938
+02:33:36,836 --> 02:33:44,095
+Burada mesela işte max tabi 300 seçtim. Bunu daha fazla seçmek, overfitting'e daha az seçmek, underfitting'e sebep olabiliyordu.
+
+939
+02:33:46,355 --> 02:34:02,075
+Ve en önemlisi GRPO'nun en önemli parametresi olan Num Generation'da 8 olarak belirledim. Burada işte kaç farklı çıktı üreteceği buna göre işte karşılaştırmalı öğrenme yapabilmesi açısından değerlendirmede bulundum.
+
+940
+02:34:02,375 --> 02:34:12,955
+Eğitim sonuçlarında da burada rapordaki her şeyi koymadım buraya. Sadece önemli olarak düşündüğüm iki tane sonucu karşılaştırmak istedim. Burada mesela
+
+941
+02:34:13,396 --> 02:34:20,435
+Bu ilk model, model 1 dediği bizim bu aslında reward hacking örneği, bu çıkarımsal akıl yürütme sonucu.
+
+942
+02:34:21,515 --> 02:34:31,095
+Burada mesela kolaya kaçtığını görüyoruz modelin. Topladığı ödüllerde bir anda bir ivme kazandığını, sadece ödül kazanmaya odaklandığını görüyoruz.
+
+943
+02:34:31,995 --> 02:34:34,015
+Görevi optimize etmek yerine.
+
+944
+02:34:34,484 --> 02:34:54,284
+Altta daha böyle dengeli bir model var. Dengeli sonuçlar çıkaran. Bu da işte tekrar cezası modeli. Yani aslında bu reward hekinge dur diyen model. Bu yüzden bu ikisini buraya koymak istedim. Burada da işte davranışsal olarak en azından görevi anlamaya çalıştığını anlıyoruz.
+
+945
+02:34:55,540 --> 02:35:05,100
+Buranın sonucunda da şöyle bir şey öğrendim. Yüksek ödül demek, başarı demek değil. Önemli olan davranış, modelin nasıl davrandığı.
+
+946
+02:35:06,780 --> 02:35:14,260
+Test ve Merge kısmına geçtiğimde de burada işte 3 tane performans metriyi kullandım. Cevapların doğru olup olmadığı için Accuracy.
+
+947
+02:35:14,804 --> 02:35:23,944
+Cevap formatının uyumlu olup olmadığını görmek için format rate. Bir de aslında totalde bu ikisinin ne kadar etkili olduğunu anlamak için bir efektif skor kullandım.
+
+948
+02:35:24,884 --> 02:35:27,504
+Modelin istenen şekilde cevap verip vermediğini görmek için.
+
+949
+02:35:28,963 --> 02:35:36,484
+Burada şu yandaki tabloda baktığımızda Merge öncesi tüm modellerin performansını görüyoruz.
+
+950
+02:35:37,075 --> 02:35:46,575
+Burada bu 5 dediğim benim ensemble modelim. Tahmin ettiğim gibi işe yaradı. Her modelin en iyi taraflarını alabildiği tek bir modele aşırı odaklanmak yerine.
+
+951
+02:35:48,235 --> 02:35:51,095
+Bu üçüncü de tekrar cezası veren model.
+
+952
+02:35:53,255 --> 02:36:02,315
+Şurada mesela bu ikinci ve birinci dediğimiz bizim bu bağlaçlara falan takılıp ya da işte çıkarımları uzatan modeller. Bunlar mesela Bayes modelin.
+
+953
+02:36:02,611 --> 02:36:20,611
+Standart GRP'nin altında kaldı. Çıkarımlara çok takıldığı için. Bunlar ilgimi çekmişti. Devamında bu 5. ve 3. modeli ağırlıklı ortalama ile birleştirdim. Bunu yaparken de alfa beta parametreleri kullandım.
+
+954
+02:36:20,611 --> 02:36:26,207
+Alfa dediğim şu en yüksek çıkan Ensemble modelin ağırlığı.
+
+955
+02:36:26,208 --> 02:36:41,828
+Beta'da ikinci olan bu tekrar cezası olan modelin. Burada eşit vermek istemedim açıkçası ağırlıkları. Çünkü daha iyi sonuç elde ederim diye düşünüp en iyi çıkan modele bir tık daha fazla ağırlık vermek istedim. O yüzden 0.6'ya 0.4 denedim.
+
+956
+02:36:42,868 --> 02:36:54,608
+Ve de tekrar test ettiğimde Merge modeli, bu sefer hatta ekstradan model anlamda mı diye bir Wilson 95 güven aralığı etmemek istedim emin olmak için.
+
+957
+02:36:55,688 --> 02:37:01,547
+Tekrar test ettiğimde Aküris oldukça arttı. Çünkü burada formatın bir anda %100 yakalandığını gördüm.
+
+958
+02:37:02,627 --> 02:37:07,747
+Bunu da aslında Ensemble modelin çalışma mantığına ve ağırlıkları iyi ayarladığıma bağlıyorum.
+
+959
+02:37:09,012 --> 02:37:19,972
+Format artınca otomatik olarak Accuracy Peak yapmış oldu. Ve aynı zamanda bu Wilson aralıklarının tam ortasına falan denk geldiği için de anlamlı bir sonuç elde ettiğimi düşündüm.
+
+960
+02:37:20,915 --> 02:37:35,235
+Genel karşılaştırma tablosunda da işte bu Accuracy, Format Rate ve bu ikisinin çarpımından oluşan efektif skoru gördüğümüzde burada aslında bu yüksek pik yapmasının sebebinin dediğim gibi format uyumluluğunun yakalamış olması olduğunu gördüm.
+
+961
+02:37:35,775 --> 02:37:42,315
+Ve ödevinde genelinde öğrendiğim şeylerden biri format uyumluluğunun Accuracy'den daha değerli olduğuydu.
+
+962
+02:37:43,515 --> 02:37:44,255
+Bu kadar hocam.
+
+963
+02:37:46,868 --> 02:37:51,087
+Teşekkürler, duygu. Sağ olun. Rica ederim.
+
+964
+02:37:57,332 --> 02:37:58,636
+Bir iki
+
+965
+02:38:09,332 --> 02:38:13,432
+[öğrenci] yok herhalde. [öğrenci].
+
+966
+02:38:14,592 --> 02:38:16,452
+Buradayım hocam. Selamlar.
+
+967
+02:38:16,472 --> 02:38:17,772
+Tek başına mısın? Merhaba.
+
+968
+02:38:17,872 --> 02:38:18,752
+Evet, tek başımayım.
+
+969
+02:38:19,432 --> 02:38:19,792
+Tamam.
+
+970
+02:38:21,892 --> 02:38:23,112
+Paylaşıyorum ekranı.
+
+971
+02:38:23,112 --> 02:38:23,172
+Bakın.
+
+972
+02:38:27,172 --> 02:38:32,112
+Pardon.
+
+973
+02:38:36,275 --> 02:38:55,475
+Evet hocam, ben hızlıca yaptığım çalışmalardan bahsedecek olursam. Öncelikle veri tarafında ilk etapta konu üzerinden ilerlemek istedim aslında. O konu üzerinden ilerlemek, yani çıkarımsal konuları belirlerken bazı başlıkları belirledim.
+
+974
+02:38:55,475 --> 02:39:03,895
+Toplam 788 tane konu vardı ve bunları 88'e indirip böyle bir ilk etapta konu bazlı bir filtreleme yapmak istedim.
+
+975
+02:39:04,275 --> 02:39:14,175
+Yarımsal veri seti elde etmek amaçlı. Daha sonra veri setinde bir durum fark ettim. Konularla sorular ve cevapların eşleşmediği durumlar var.
+
+976
+02:39:14,772 --> 02:39:34,632
+Örneğin, Almanca yazıyor ama yanında vergiyle ilgili bir soru var ve cevapları var. Daha sonra o yüzden bu sebeple tam bir filtreleme yapamayacağımı anladım oradan. Nedense böyle bir durum yaşadım da. Ve siteden de kontrol ettim de öyle olduğunu gördüm.
+
+977
+02:39:35,392 --> 02:39:38,132
+Doğru, öyle bir problem var.
+
+978
+02:39:38,132 --> 02:39:41,472
+Evet, o yüzden ben de konuyu bıraktım.
+
+979
+02:39:42,772 --> 02:39:50,672
+Yanılacağını düşünerek içinde örneğin bilgisayar programlamaya girişte Almanca soru geliyordu vesaire gibi şeyler oluyordu.
+
+980
+02:39:51,232 --> 02:39:57,032
+O yüzden skorlama yöntemine gittim. Soru içeriğine göre skorlama yapmaya başladım.
+
+981
+02:39:57,032 --> 02:40:07,292
+Orada da aslında mantıksal bağlaçlar adında bir tane değişken oluşturdum.
+
+982
+02:40:08,755 --> 02:40:17,456
+Daha böyle açıklayıcı, açıklamaya yönelik, devamında daha böyle nedenselliği tetikleyen kelimeleri bir araya getirdim.
+
+983
+02:40:17,907 --> 02:40:39,907
+Bu matematik sembollerini bir araya getirdim. Yine çıkarımsal verileri elde edebilmek için. Bir de aslında ezber göstergeleri olan bazıları tabii ezber göstergesi değil ticari gibi örneği ama soru setini gözle incelediğimde tespit ettiğim bazı keywordler oldu. Bunları belirledikten sonra...
+
+984
+02:40:40,051 --> 02:41:08,051
+Burada puanlama sistemine gittim. Mantıksal bağlaçlarda her eşleşmeye artı 2 puan, matematiksel ifadelerde artı 1,5 puan. Soru uzunluğuna da bir puan verdim. Çünkü uzun cevap dönüyorsa eğer, hani nedenselliği kovalıyordur gibi düşünerekten, hem basit bir tabirle. Ama tabii burada da 100 karakter sınırı. Hani 100 karakterde 1 artı 1 puan verecek şekilde ve maksimum 3 puan.
+
+985
+02:41:08,051 --> 02:41:17,051
+Bu şekilde bir limitleme yapmış oldum. Ezber ifadelerde yer alıyorsa eğer her ezber ifade içinde eksi 3 puan yazılacak şekilde veri setini...
+
+986
+02:41:17,940 --> 02:41:44,680
+Böyle bir limitlemeye gittim. Ve aslında bunu yaptığımda 1900 satıra indirmiş oldum. Ciddi bir iniş oldu. Tabi burada bir de treş olduğum vardı. Hani skorlarda. Aslında bunun sayesinde biraz da 1900'e indirmiş oldum. İlk başlarda biraz küçük başlamıştım. 3 gibi. 7'ye kadar çıktım. Ve baktım 1900'de daha mantıktı. Ve daha şey bir verisi.
+
+987
+02:41:48,115 --> 02:42:15,255
+Ondan sonra bunu yaptıktan sonra tabii gene içeride bazı olmaması gereken konular vardı. Örneğin bunlar dikkatimi çeken şeyler olmuştu. Yabancı yani Türkçe olmayan sorular vardı içeride ve onlar da bu gruplar altında toplanıyordu. Onları da son bir filtrelemiş oldum. Tabii main fonksiyonunu da yönettim bunların hepsini sıralı bir şekilde.
+
+988
+02:42:17,587 --> 02:42:26,507
+İstenmeyen konuları attım. Bir setlerin istenilen seviyede kırmayı da daha sonra her konuda...
+
+989
+02:42:26,611 --> 02:42:44,551
+Eşit, aslında her konudan soru olsun istedim. Gerçi 1900 örneğe indiğim için aslında çok bir önemi kalmamıştı. Direkt kırpma vesaire de yapabilirdim bununla ilgili. Ama yine de dengeli olması, belli bir konulara yığılma olması, o konuda çok öğrenmesini istemediğim için modelin.
+
+990
+02:42:44,551 --> 02:42:54,591
+Yine de bir subset data diye bir fonksiyon, get subset data diye bir fonksiyon oluşturdum. O da konu bazlı. Sorulara gerçek kayma.
+
+991
+02:42:54,611 --> 02:43:07,611
+Yine de bir anlamı yok ama yine de bir şafollama yöntemi gibi kullanmış oldum bunda. Daha sonra model train aşamasına geçtim. Burada...
+
+992
+02:43:08,340 --> 02:43:18,340
+Reward Function'larda bir base'im var tabii ki de. Base'de accuracy ve format olarak kurguladım.
+
+993
+02:43:18,340 --> 02:43:31,500
+Onun dışındakileri matematiksel açıdan kontrol eden, matematiksel ifadeler barındıran içerikleri daha çok ödüllendiren bir fonksiyonu geliştirdim.
+
+994
+02:43:32,180 --> 02:43:36,340
+Logical ifadeler yer alanları ayrıca ödüllendiriyor.
+
+995
+02:43:36,340 --> 02:43:51,620
+Bu burası config fonksiyonu bu arada hocam. Aşağıda bir döngü var. O döngü buradan isimlerini alıyor ve fonksiyonların isimlerini alıyor ve geri dönüyor ilgili modelin.
+
+996
+02:43:53,000 --> 02:43:55,700
+GRPO adımına geri dönüyor.
+
+997
+02:43:56,700 --> 02:44:02,900
+Burada da strict ve groundingde de fonksiyonları da göstereyim hocam.
+
+998
+02:44:05,940 --> 02:44:27,420
+Grounding'te de cevaplarla verilen cevabın, yani modelin ürettiği cevapla gerçek cevabı, yani prompta verilen, pardon, soru içerisindeki ile üretilen cevabın içerisinde geçen kelime sayılarının birbiriyle ilişkin mi, yani benzer sayıda ne kadar çok kelime geçiyor bunları.
+
+999
+02:44:27,987 --> 02:44:46,887
+Saydıran bir reward fonksiyonu geliştirmiş oldum. Onun dışında tekrarlı bir kelime geçiyor mu? Çünkü model bazen arda arda böyle aynı kelimeyi tekrarlayabiliyordu. Ve onu tespit etmek amaçlı bunu biraz ceza veren pozisyonda bir.
+
+1000
+02:44:47,316 --> 02:45:07,216
+Reward fonksiyonu olarak konumlandırmış olduk. Böylelikle bir de şeyden bahsedecektim. Burada aslında uzunluğu da, hani şeyde de olduğu gibi az önce sonra eyleme aşamasında da olduğu gibi uzunluk içinde ayrıca bir reward mekanizması kurgulamış olduk.
+
+1001
+02:45:07,876 --> 02:45:13,316
+Burada aslında eğitim aşamasında prompt ile ilgili birçok deneme yaptım.
+
+1002
+02:45:14,388 --> 02:45:23,007
+İlk etapta One Shot'ı denedim aslında. Örnek bir soru. Hatta onu şeyde denemiştim. Olan, OLEP'te.
+
+1003
+02:45:24,288 --> 02:45:26,788
+Hiç iyi hatırlıyorum. Görebilirsem.
+
+1004
+02:45:28,724 --> 02:45:42,404
+OneShot şeyini, bir tane örneğini yazdırıp böyle sebebiyle şey olarak ödü. Bu Tinkink'i kullanmıştım ama GPT-2 olduğu için Tinkink tag'i olmayacağını düşünerek daha sonra kaldırmıştım bu denemelerimde.
+
+1005
+02:45:42,404 --> 02:45:53,964
+Ve iki işte total promptu diye asıl soruyu sordum. Prompt'la birlikte birleştirip denediğim bir aşama olmuştu.
+
+1006
+02:45:56,724 --> 02:46:02,324
+Büyüttüğü için hem eğitim süreni etkiliyordu hem de böyle çok değmemişti.
+
+1007
+02:46:02,504 --> 02:46:07,884
+Hani elde ettim çıktı ya. O yüzden ben de farklı yöntemlere gitmeye karar verdim.
+
+1008
+02:46:08,404 --> 02:46:12,244
+Orada ilk etapta şöyle düşündüm. Soruyu verdim, seçenekleri verdim.
+
+1009
+02:46:12,704 --> 02:46:16,044
+Doğru cevabı söyledim ve bir görev ataması yaptım.
+
+1010
+02:46:16,904 --> 02:46:19,804
+Hani soru burada cevabı bu.
+
+1011
+02:46:20,284 --> 02:46:24,204
+Bunun arasındaki nedenselliği bul şeklinde bir görev.
+
+1012
+02:46:24,659 --> 02:46:35,759
+Kısmım oldu. Ve sonunda da cevap formatında veriyi dön şeklinde alacak şekilde çalıştırmış oldum prompt.
+
+1013
+02:46:42,355 --> 02:46:46,595
+Zaten herkesi bilora ve georpi. Evet hocam.
+
+1014
+02:46:46,615 --> 02:46:49,236
+7,5 dakika oldu. Tamamdır.
+
+1015
+02:46:49,236 --> 02:46:51,396
+Tamam, biraz hızlanabilirsen sevinirim.
+
+1016
+02:46:52,296 --> 02:47:07,576
+Tamamdır. Değerlendirme aşamasına aslında. Model Evolution kısmında da bu belirlediğim 5 reward function'ı aslında bir de metrik olarak buraya yansıtmak istedim. Her birini, fonksiyonunu tanımladım.
+
+1017
+02:47:08,180 --> 02:47:21,459
+Ve test aşamasında kullanılmak üzere bunu vermiş oldum. Onun çıktısını direkt göstereyim. Hatta şey gösterecektim. Kısaca ondan bahsedeyim hocam. Eğitirken şeyi kullandım.
+
+1018
+02:47:21,459 --> 02:47:31,739
+Dora'nın bu WISE & BASIS teknolojisiyle olan entegrasyonunu kullanarak aslında o türeğin aşamasındaki grafiklerin oluşmasını sağladım.
+
+1019
+02:47:34,899 --> 02:47:37,719
+Bu değildi, şuydu. Hatırlıyorum.
+
+1020
+02:47:39,188 --> 02:47:47,887
+Los'a bakacak olursak kabaca artan bir seviyede gidiyor ama yine de çok dalgalı bir tutarlılığı olmayan bir seviyede gidiyor.
+
+1021
+02:47:48,427 --> 02:47:53,768
+Ve burada da her adımda aslında her rewardun nasıl çalışmış olduğunu da görüntüleyebiliyoruz.
+
+1022
+02:47:53,768 --> 02:47:59,007
+Keza sunucuda nasıl bir makinede yükü olduğunu da görüyoruz.
+
+1023
+02:47:59,587 --> 02:48:01,608
+Hemen sunuca da geçeyim.
+
+1024
+02:48:02,247 --> 02:48:07,188
+Sonuçta da formatla ilgili neden aslında eğitim aşamasında...
+
+1025
+02:48:07,188 --> 02:48:14,868
+Bir sıkıntısı yoktu. Orada farklı farklı değerler üretebiliyordu. Ama test aşamasında nerede hata yaptığını bulamadım. Hepsi aynı sıfır çıktı.
+
+1026
+02:48:15,627 --> 02:48:22,028
+Kürsüleri de aynı çıktı. Fakat matematik, logik ve grounding gibi alanlarda farklılaşmaya başladılar.
+
+1027
+02:48:22,028 --> 02:48:31,788
+Ben de burada her kategorideki en iyi modeli seçerek 3 tane modelin mörçlenmesini sağladım.
+
+1028
+02:48:33,139 --> 02:48:41,759
+Yüksek güç modelin onu da buradaki kod bloklarıyla yine tokenizer'ları kullanarak sağladım hocam.
+
+1029
+02:48:45,203 --> 02:48:46,904
+Onun sonucu ne oldu? Merge'ün?
+
+1030
+02:48:48,963 --> 02:48:51,144
+Merge'ü çalıştamadım.
+
+1031
+02:48:52,843 --> 02:48:53,984
+O eksik kaldı.
+
+1032
+02:48:55,384 --> 02:48:59,823
+Anladım. Peki [öğrenci]. Teşekkür ediyorum.
+
+1033
+02:49:12,948 --> 02:49:28,827
+[öğrenci]. Merhaba hocam. Merhaba [öğrenci]. Tek başa mısın? Evet. Peki. Dinleyelim seni. Aslında arkadaşları dinlerken yaptığım hatalarım fark ettim ama ben yine de anlatmak istiyorum.
+
+1034
+02:49:30,879 --> 02:49:35,860
+Şimdi veri hükümesiyle oluşturduk. İlk olarak veri hükümesi oluşturması için bahsetmek istiyorum.
+
+1035
+02:49:35,860 --> 02:49:44,139
+Şimdi burada zaten CRP sistemi üzerinden yaptığımızdan dolayı daha mantıksal, ezbere dayağı olmayan veri seti oluşturduk.
+
+1036
+02:49:44,260 --> 02:49:50,420
+Bu yüzden de resimde gördüğünüz gibi konular üzerinden bir veri seti oluşturdum.
+
+1037
+02:49:50,500 --> 02:49:53,620
+Tabii bin eğitim test, beş yüz test verisi.
+
+1038
+02:49:54,015 --> 02:50:00,015
+Her biri eşit dağılımlarla oluştuldu. Tabloda yaptığım çalışmaların hepsini anlatmak istiyorum.
+
+1039
+02:50:00,595 --> 02:50:07,815
+Şimdi ilk olarak, accuracy dediğim şey burada aslında bir baseline. Doğruysa bir, yanlışsa sıfır şeklinde değer olacak.
+
+1040
+02:50:08,415 --> 02:50:14,615
+Soft accuracy'de ise yanlışa sıfır değil de daha toleranslı bir yaklaşım verecek aslında.
+
+1041
+02:50:15,355 --> 02:50:22,075
+Şimdi burada şöyle bir şey var. Ben accuracy'de train ve testa ayrımına baktığımızda,
+
+1042
+02:50:28,595 --> 02:50:34,296
+Bunlara göre daha farklı. Ondan bahsetmeden önce bunu anlatayım.
+
+1043
+02:50:37,075 --> 02:51:01,796
+İşte Train'de 0.21, Test'de 0.22, SoftTech Üniversitesi'de de 0.33, 0.34. Şimdi Confidence Probe'tan bahsetmek istiyorum. Burada yapmaya çalıştığım şey şu. Şimdi elelemlerin çıktısı aslında birer olasılıksal ifade, olasılıksal vektör. Ve MMLU gibi bir veri setinde bir vektör içerisinde mesela ABCD ifadelerinde olasılıksal karşılıklarım var.
+
+1044
+02:51:05,075 --> 02:51:21,495
+A, B, C'de üzerinden mesela A doğru olsun, A yüzde 20 olsun, B ise yüzde 40 olsun mesela. Confidence Probability'de doğruluktan ziyade işte o güven skorunu inceliyor. O 0.40'a güven duyuyor. Çünkü onu seçmiş oluyor model.
+
+1045
+02:51:33,075 --> 02:51:48,235
+Bu modelin doğruluk yanlışlığı üzerinden değerlendirdim. Yani doğruysa bir, yanlışlık sıfır şeklinde değerlendirdim. Yani aslında buradan şey anlayabiliriz. Ben doğru yaptığım soru da, çok güven duyduğum soru her zaman doğru değil aslında.
+
+1046
+02:51:48,595 --> 02:52:10,636
+Buradan aslında bunu gördüm. Daha sonrasında marjine baktığımızda, marjin dediğimiz şey de şu, aynı örnek üzerinden gidelim. A doğru olsun, A ifadesi mesela 0.3 olsun, B ifadesi de 0.2 olsun. Aslında doğruyla diğer yanlışlar arasındaki en yüksek yanlış olasılığı arasındaki farkı ölçecek.
+
+1047
+02:52:14,100 --> 02:52:31,100
+Marjina sadece doğru olanı değil, aynı zamanda diğerlerinden daha yüksek güvende seçmesini isteyen bir yaklaşım. Mesela ben yanlış olan bir şeye doğru versem cevabım eksi çıkacak. Yani cezalandıracakken doğru olan bir şeye...
+
+1048
+02:52:31,283 --> 02:52:53,283
+Yanlış dediğimde, aksine doğru olan bir şeyi seçtiğimde de ödüllendirecek bir ölçü. Mesela A doğru dedik, B yanlış dedik. 0.6 ya 0.3 olsun mesela. Sonucunda 0.6-0.3'ten 0.3 ödül verdim aslında. Ama genele baktığımızda sonuçlarımızın eksi çıkmasından da görüleceği gibi genel olarak...
+
+1049
+02:52:54,260 --> 02:53:18,280
+Doğru olan bir şeye yanlış. Normalde doğru cevap A olmasına rağmen B demiş yani. Buradan da bunu anladım aslında. Doğruyu seçmemiş, sürekli yanlışa yönelmiş gibi. Entropi penaltı dediğim ceza mekanizmasında da, şimdi burada entropi hesaplıyorum aslında. Her bir cevabın kendi içindeki tarlılıklarına bakıyorum.
+
+1050
+02:53:23,252 --> 02:53:51,252
+Trainede direkt bunu az önce dediğim şeyi ölçerken, testi ise doğruysa bir, yanlışsa eksi bir şeklinde ver, o şekilde ortalama bir testi vardı hesapta edildim. Daha sonrasında Entropy Penalty'e baktığımız zaman da şimdi el elemden çıkan o ABC'de ışıkların her birinin bir olasılıksal karşılıkları var ve olasılık şarkı elen olasılık dediğimiz aslında toplamları, bütün ifadenin...
+
+1051
+02:53:51,252 --> 02:54:04,252
+Genel entropiyi verecek. Mesela %100 dolar ıslıklı A desin, 1 çarpı L1'den 0 yani düşük belirsi, çok belirli bir seçim yapmış olacak. Burada yine doğruyu seçmiyorum aslında. Daha çok...
+
+1052
+02:54:05,652 --> 02:54:20,572
+Belirsiz değil. Diğer cevaplarla arasındaki ilişkiye bakıyorum. Bu ceza fonksiyonunda da. Günün sonunda baktığımız zaman, 0.95 gibi bir durum oluyor. Burada şöyle bir durum var bize.
+
+1053
+02:54:23,412 --> 02:54:43,432
+Ben mesela entropide en düşük ne olabilir mesela? Hepsine yüzde 25 olasılıkla güvense. O zaman 0.25 çarpı 4 gibi bir ifade olur. O da 1.36 olur. Aslında bu eksi 1.8 ile 0 arasında şu an bu değer.
+
+1054
+02:54:43,824 --> 02:54:50,704
+Bu yüzden 1.38'e bölersek aslında aynı bunun gibi bir aralıkta olur ki bu da eksi 0.69'a denk geliyor.
+
+1055
+02:54:50,704 --> 02:55:00,463
+Yani bir fallback yaparken aslında benzer sonuçlar elde etmiş oldum testle. Ensemble sonucum da burada aslında şuna karşılık dönüyor.
+
+1056
+02:55:00,595 --> 02:55:18,375
+Şimdi ben ensemble sonucunda şu üç tane değer üzerinden ensemble ettim. Tabi bu tam bir başarım değil. Şu an ensemble'da yapmaya çalıştığım şey, ekür isminin, soptekür isminin bir de bu değerlerin kendi içindeki dinami üzerinden kontrol ediyorum.
+
+1057
+02:55:28,180 --> 02:55:43,079
+Bu şekilde bütün soruları değerlendirdiğimde elde ettiğim soru da bu şekilde. Dediğim gibi eksik olduğum şeyleri anladım arkadaşlarımın dinlediğim kadarıyla. Onları da ödevden bağımsız olarak üzerine gideceğim.
+
+1058
+02:55:46,548 --> 02:55:47,108
+Bu şekilde.
+
+1059
+02:55:48,007 --> 02:55:56,268
+Peki [öğrenci] sana şeyi soracağım. Buradaki ekürisi dediğin şey doğru cevaplama oranı mı şu anda?
+
+1060
+02:55:56,468 --> 02:55:58,887
+Yoksa senin hesapladığın fonksiyon üzerinden çıkan bir şey mi?
+
+1061
+02:55:59,688 --> 02:56:03,227
+Benim fonksiyon üzerinden çıkardığım bir şey. Aslında o baseline de denilme.
+
+1062
+02:56:04,587 --> 02:56:08,987
+Ama buradaki ekürisi doğru ışıkı bulma olası da mı?
+
+1063
+02:56:10,487 --> 02:56:12,927
+Aynen. Doğru ise bir, yanlış ise sıfır diyorum aslında.
+
+1064
+02:56:13,940 --> 02:56:14,659
+Anladım.
+
+1065
+02:56:16,460 --> 02:56:18,120
+Aynen. Bezay o şekilde.
+
+1066
+02:56:19,079 --> 02:56:21,440
+Peki. Teşekkürler [öğrenci].
+
+1067
+02:56:21,520 --> 02:56:22,300
+Rica ederim hocam.
+
+1068
+02:56:28,531 --> 02:56:36,131
+Şimdi arkadaşlar, bir beş dakika ara verelim. Ondan sonra devam edeceğiz. Saat on iki, on iki beş kişi devam edelim, tamam mı?
+
+1069
+02:56:38,771 --> 02:56:40,691
+Birkaç kişi daha kaldı herhalde.
+
+1070
+02:56:41,652 --> 02:56:45,332
+Onlarla devam edeceğiz. Dediğim gibi on ikiye beş kalara kadar bir ara verelim, tamam mı?
+
+1071
+02:56:45,332 --> 02:56:47,652
+Bıcım, bir tırağına çıkabilir mi?
+
+1072
+02:56:47,652 --> 02:56:48,771
+Efendim?
+
+1073
+02:56:48,771 --> 02:56:50,691
+Bıcım, bir tırağına çıkabilir mi?
+
+1074
+02:56:50,691 --> 02:56:52,131
+Anlamadım yani.
+
+1075
+02:56:52,852 --> 02:56:55,212
+Sunumunu bu trenler çıkabilir mi diye sormuşum hocam.
+
+1076
+02:56:55,212 --> 02:56:57,892
+Çıkabilir, evet evet çıkabilir. Teşekkür ederim hocam.
+
+1077
+02:56:58,372 --> 02:56:58,812
+Sağ olun.
+
+1078
+03:05:36,180 --> 03:05:37,180
+Arkadaşlar,
+
+1079
+03:05:42,260 --> 03:05:45,760
+Sesim geliyor değil mi? Geliyor hocam.
+
+1080
+03:05:56,788 --> 03:05:58,788
+[öğrenci], senle mi devam edin?
+
+1081
+03:05:58,788 --> 03:06:01,788
+Ben yapmamıştım hocam.
+
+1082
+03:06:01,788 --> 03:06:10,476
+Tamam yani, durma dönüp dönüp duruyorum, kusura bakma. [öğrenci]. [öğrenci].
+
+1083
+03:06:13,556 --> 03:06:33,536
+[öğrenci] sen de yapmamıştın değil mi? Evet hocam. Tamam. [öğrenci], [öğrenci]? Ben sundum hocam zaten. Sen de sunmuştun. O zaman kimse kalmamış. Ben yanlış mı görüyordum? Sizlerden sunmak çok olan yok değil mi başka o zaman? Peki.
+
+1084
+03:06:34,388 --> 03:06:35,668
+Tamam o zaman arkadaşlar.
+
+1085
+03:06:35,748 --> 03:06:37,507
+Yapılırsa dinleriz diye kaldım hocam.
+
+1086
+03:06:37,628 --> 03:06:55,448
+Anladım, anladım. Tamam, teşekkür ederim. Yani birazcık tabii ki ödev zor bir ödevdi. Zorlandıkça herkes bir şeyler öğrendi diye düşünüyorum. Yani bir şeyler katması açısından da değerli bir ödevdi diye düşünüyorum. Neyse.
+
+1087
+03:06:56,115 --> 03:06:58,256
+Peki arkadaşlar, teşekkür ederiz.
+
+1088
+03:06:58,756 --> 03:07:02,796
+Müsaitsiniz ben hızlıca bir sunum yapabilirim. Ancak müsait olun, kusura bakmayın.
+
+1089
+03:07:04,256 --> 03:07:05,355
+Peki, tabii ki.
+
+1090
+03:07:05,736 --> 03:07:07,136
+Kusura bakmayın, hemen geldim.
+
+1091
+03:07:08,036 --> 03:07:13,396
+Hocam dediğiniz gibi ders, ödevini biraz zorladan olabildiği kadar sunmaya çalışacağım sizlere.
+
+1092
+03:07:14,236 --> 03:07:14,576
+Tamam.
+
+1093
+03:07:15,576 --> 03:07:23,275
+Bir de chat'e biri yazmıştı sanırım en son ben sunabilir miyim demiş ama sanırım şu an mitingde görünüyor.
+
+1094
+03:07:24,976 --> 03:07:28,316
+Evet, [öğrenci] dinliyoruz seni. Tek başına mısın?
+
+1095
+03:07:28,936 --> 03:07:37,976
+Evet hocam, tek başımayım. Aslında [öğrenci] Hocamızla yapmaya çalıştık da çok beceremedik birlikte. Ama [öğrenci] Hocamız da vardı. O kendisi harit geçim etti galiba.
+
+1096
+03:07:38,696 --> 03:07:46,336
+Şimdi, hocam, Bebird SM'de yaklaşımı ile aslında grup relatif polise otomizasyonunu uygulamaya çalıştığımız bir ödev oldu.
+
+1097
+03:07:46,336 --> 03:07:52,936
+Enalp konusunda biraz uzağım olabildiğince destek almaya çalıştım. En nihayetinde çoğu arkadaşımızın kullandığı gibi.
+
+1098
+03:07:52,976 --> 03:08:08,216
+Lura'yı kullanıp buradaki dört farklı senaryoda ödül senaryolarını karşılaştırmaya çalıştık. Dört senaryolar dediğimiz gibi işte birden fazla şık belirtilmemesi, çelişki ifadelerini üretmemesi, gereksiz uzun cevapları vermemesi, belirli bir cevap formatına uymasını beklemek gibiydi.
+
+1099
+03:08:20,976 --> 03:08:48,976
+İnfer Keyword'lerle beraber alt kümeleri, çıkarımlarla beraber ağırlıklı olarak alt kümeleri seçmeye çalıştık. Burada iki aşamalı bir süreç ilerletmeye çalıştım. Çok uzun sürüyordu ve işte Collab'de yapmaya gayret ettim bu çalışmayı. Olabildiğince işte hem stepleri düşürmeye çalıştım ya da fine tuning yaparak da hızlı ilerlemesini önceledim. Öncelediğim kadarıyla da çok güzel bir akürsi almamış olabilirim. Hatta akürsiler elde etmemiş bile olabilirim emin değilim.
+
+1100
+03:08:49,587 --> 03:08:57,267
+Burada baktığımızda 1000 tane örnek seti ve 500 tane eğitim, 1000 tane 500 tane test seti üzerinden devam ediyor olduk.
+
+1101
+03:08:57,687 --> 03:09:01,267
+Baktığımızda işte dediğimiz gibi Low Rank Adaptation gibi yöntem kullandık.
+
+1102
+03:09:01,267 --> 03:09:10,867
+Bu yöntemin devamında çalışmaların sonuçlarında 4 tane M0'dan M4'e kadar farklı ödül senaryoları vardı, tasarımlar.
+
+1103
+03:09:10,967 --> 03:09:15,247
+Bunlar dediğimiz gibi standart ödül. İlki, burada baseline olarak baz alıyoruz.
+
+1104
+03:09:15,687 --> 03:09:17,327
+İkincisi tekşik ödüllü.
+
+1105
+03:09:17,587 --> 03:09:25,067
+İkin üçüncüsü uzunluk cezası, Lang PN6, dördüncüsü tutarlılık ödülü.
+
+1106
+03:09:25,387 --> 03:09:30,407
+İşte aynı cevapta hem A hem C ifadelerinin geçmemesi gibi, eğer ki geçerse cezalandırılması gibi.
+
+1107
+03:09:30,887 --> 03:09:36,807
+Sonrasında da yapılandırılmış gerekçe ödülü. Son senaryomuz da buydu Structure Regional.
+
+1108
+03:09:36,807 --> 03:09:43,887
+Sonrasında deney kurgusunda baktığımızda işte Lora'yı kullanarak bu veri seti üzerinde çalışmaları başlatmaya çalıştım.
+
+1109
+03:09:44,167 --> 03:09:45,387
+İki yüzlük örnek alabildim.
+
+1110
+03:09:45,587 --> 03:09:52,487
+Her bir küme için. İki yüzlük örneklerden işte step size'ını ilk 60 yaptım ama 60 çok yüksekti.
+
+1111
+03:09:52,487 --> 03:09:59,007
+Yani bitirebildim ama bu sefer çok hata aldığımdan onu 30'a indirmek zorunda kaldım.
+
+1112
+03:09:59,227 --> 03:10:04,907
+30'la en son yaptığımı hatırlıyorum. 60'la bitirdim bir arada ama sonrasında çok sonucu ulaşamadım hatırlıyorum.
+
+1113
+03:10:05,007 --> 03:10:07,907
+30'luk steplerle beraber modelimi eğittim.
+
+1114
+03:10:08,404 --> 03:10:11,404
+Baktığımızda aslında süreçte...
+
+1115
+03:10:11,404 --> 03:10:20,384
+Bir de o da şey söyleyeyim [öğrenci], bu Number of Generations'ı 2 yapmışsın. Şimdi o tabii çok makul bir rakam değil.
+
+1116
+03:10:21,268 --> 03:10:43,528
+Yani CRPO için, yani iki tane cevap üretsin bir soru için diyorsun ve ona göre bir şeyler versin diyorsun. Ama bu grup polisi mevzusu olduğundan dolayı oradaki cevap sayısının biraz fazla olması gerekiyor. Anlamlı bir şeyler. Çünkü zaten modern çok şey yapamıyor. İki tane cevabı ürettiği zaman o iki cevaptan herhangi bir tanesinin doğru olmalısını düşük ya birazcık. Anlatabildim mi?
+
+1117
+03:10:49,268 --> 03:10:53,627
+Bu olayı sen 12 seçtin. Onu da tahmin edebiliyorum.
+
+1118
+03:10:53,711 --> 03:11:07,152
+Peki tamam. Ama yani hani normal bir yaratıyor da böyle iki falan gibisinden bir şey kullanmak iyi değildir. Yani en azından bir sekiz falan gibisinden bir şey kullanmak daha makuldür. O da aklınızda olsun. Peki devam edelim.
+
+1119
+03:11:07,572 --> 03:11:15,832
+Ya hocam aslında doğrusunu söylemek gerekirse ben bugün sabah saat sekize kadar bile bununla alakalı model eğitmeye çalışıyordum, anlamaya çalışıyordum ama elimden bu kadarı geldi.
+
+1120
+03:11:15,832 --> 03:11:21,471
+Yani inanın ki arkadaki teorik bilgiyi anladım desem, bunu aktarabiliyorum desem bile hiç böyle bir savunmam yok.
+
+1121
+03:11:21,711 --> 03:11:44,832
+Onu açıkça belirtmek isterim. Ama en nihayetinde burada sunmuş sizlere mahcup olmamak adına bugün sunumu başlattım. Nasıl arzu edersiniz değerlendirmeyi sizlere bırakıyorum. En nihayetinde hocam aslında sonuca gelmek gerekirse sonuçta ödüllerin aslında çok ince farklarla bir senaryolar arasında çok ince farklar olduğunu görüntüleyebildim.
+
+1122
+03:11:44,832 --> 03:11:48,771
+Burada arkadaşlarımda mesela ekürüs yeme grafiklerini görebildim.
+
+1123
+03:11:49,711 --> 03:12:04,691
+Vardı her biri için ama ben de baktığımda aslında sonuçların farklılıkların arasında çok ince farklarla anlamlı davranışlar çıkartmaya, bu farklardan anlamlı bir nitelik çıkarmaya çalıştım ama işte Number of Generation'da 2 olunca bunların da ne kadar anlamlı olacağı sorgulanır biraz.
+
+1124
+03:12:04,691 --> 03:12:17,031
+O yüzden süreçte baktığımızda bu haliyle modelin cevap için verdiği değerlerin aslında 0.27 ile 0.29 arasında değiştiğini görebiliyoruz.
+
+1125
+03:12:17,711 --> 03:12:24,211
+Bu şekilde multi-ensor rate metriğini değerlendirdiğimizde bu sonucu elde ediyor gibi oluyor.
+
+1126
+03:12:24,691 --> 03:12:28,652
+Peki bir soru için birden fazla cevap alıp, yani şunu demek istiyorum.
+
+1127
+03:12:28,791 --> 03:12:33,211
+Aynı soru için bu 4-5 tane modelin çıktılarını alıp inceledin mi?
+
+1128
+03:12:35,171 --> 03:12:36,131
+İnceleyemedim hocam.
+
+1129
+03:12:37,412 --> 03:12:41,511
+Model nasıl çıktı alıydı onu inceledin mi? Nasıl alıp türetti?
+
+1130
+03:12:42,912 --> 03:12:44,332
+Hemen bakayım hocam.
+
+1131
+03:12:45,907 --> 03:12:58,528
+Yani altta baktığımda... Hocam onları hiç print etmedim. O yüzden şu an görüntüleyemiyorum.
+
+1132
+03:12:59,528 --> 03:13:01,007
+Peki inceleyelim mi? Baktın mı?
+
+1133
+03:13:01,487 --> 03:13:04,827
+Yok hocam bakmadım. Yok bakmadım bence. Bakmıyorum.
+
+1134
+03:13:07,028 --> 03:13:09,028
+Peki o ekürüseleri falan nasıl hesapladın?
+
+1135
+03:13:11,695 --> 03:13:29,115
+Yani aslında burada da şeyden, yapay zekadan destek aldığımı söylemek gerekir. Çünkü hani bunların değerlendirmesini yapmak için en hızlı çözümde nasıl değerlendirebilirim, en iyi model hangisidir diye araştırma yaptığımda promptlara o şekilde girip değerlendirme yaptım.
+
+1136
+03:13:31,316 --> 03:13:32,935
+Anladım. Peki.
+
+1137
+03:13:34,164 --> 03:13:38,364
+Peki, teşekkürler [öğrenci]. Ben teşekkür ederim hocam. Sura bakmayın.
+
+1138
+03:13:38,884 --> 03:13:47,644
+Estağfurullah. Evet, başka sonu, benim çok olan var mı? Biz varız hocam.
+
+1139
+03:13:54,291 --> 03:14:00,771
+Bir saniye, arkadaşım giriyor şimdi. İnternetinde kokma oldu da.
+
+1140
+03:14:03,652 --> 03:14:11,931
+Hocam arkadaşımın link elemesinde gözükmüyor.
+
+1141
+03:14:15,091 --> 03:14:17,771
+Gönder ona linki göndermiyor musun?
+
+1142
+03:14:18,739 --> 03:14:21,699
+Benim bilgisayarımdan sunalım hocam. Yan yanayız zaten.
+
+1143
+03:14:22,059 --> 03:14:22,819
+Tamam canım.
+
+1144
+03:14:23,420 --> 03:14:24,819
+Tamam ekran paylaşıyorum.
+
+1145
+03:14:33,971 --> 03:14:36,332
+Üst kısımları ben de hızlıca geçeyim.
+
+1146
+03:14:39,332 --> 03:14:42,332
+Şu anda ekranda bir şey görmüyoruz.
+
+1147
+03:14:43,451 --> 03:14:44,652
+Paylaştım aslında.
+
+1148
+03:14:47,791 --> 03:14:49,072
+Geldim mi hocam?
+
+1149
+03:14:49,912 --> 03:14:52,091
+Evet, şimdi gördüm. İsimler neydi?
+
+1150
+03:14:53,572 --> 03:14:56,252
+[öğrenci].
+
+1151
+03:15:01,459 --> 03:15:03,459
+Tamam, başlayabilirsiniz.
+
+1152
+03:15:03,459 --> 03:15:14,459
+Tamam hocam, şu geliş kısımlarını geçiyorum. Literatürde de kısaca pekiştirmeli öğrenme, ödül tasarımı ve kalibrasyon kavramlarına değinmiştik.
+
+1153
+03:15:14,459 --> 03:15:22,251
+Biz de modeli baştan sona eğitmek yerine Lore kullandık.
+
+1154
+03:15:22,772 --> 03:15:39,012
+Modelin çok küçük bir kısmını, yaklaşık %16'sını eğittik. Bunu da özellikle CPU ortamında çalışabilmek için yaptık. Yani GPU olmadan da bu yöntem uygulanabiliyor mu onu görmek istedik.
+
+1155
+03:15:40,452 --> 03:15:45,572
+Ödül fonksiyonlarına gelirsek, bir tane temel ödülümüz var. Uylanamayacağını da gördünüz mü?
+
+1156
+03:15:46,572 --> 03:15:49,572
+Evet hocam.
+
+1157
+03:15:50,739 --> 03:16:17,439
+Uzun sürdüğünü bayağı bir gördük. Ödül fonksiyonlarına gelirsek bir tane temel ödülümüz var. Doğruluk ve formatı dikkate alan baseline. Bunun üzerine dört farklı davranı çekledik. Bir tanesi daha kısa ve net cevapları ödülüyor. Bir tanesi muhakeme yapısını yani mantıksal bağlaç kullanımını teşvik ediyor. Bir tanesi kalibrasyona odaklanıyor.
+
+1158
+03:16:18,004 --> 03:16:36,144
+Model doğruysa emin olsun, yalnızsa da eminmiş gibi davranmasın istedik. Bir diğeri de çeşitlilik. Modelin hep aynı şıkkı seçmesini engellemeye çalışıyor. Bunları hem tek tek denedik hem de çıktıkları birleştirerek bir ensemble oluşturduk.
+
+1159
+03:16:36,915 --> 03:16:52,255
+Deneysel kurguda da özellikle tanımadığımız tüm ödül fonksiyonlarını adil bir şekilde karşılaştırabilmeye dikkat ettik. Bu yüzden bütün modelleri aynı başlangıç koşulları ile eğittik. Aynı ver hükümesi, aynı model mimarisi ve aynı eğitim.
+
+1160
+03:16:52,623 --> 03:17:12,164
+Tek fark sadece ödül fonksiyonunun kendisi olmuş oldu. Eğitim sürecini tamamen CP ortamında gerçekleştirdik. Zora kullandığımız için de hem bellek ihtiyacını düşürdük hem eğitimi pratik hale getirdik. Toplam eğitim süresi her model için yaklaşık 2 saat sürdü.
+
+1161
+03:17:13,084 --> 03:17:15,084
+Bu Maxinevi Tokens 6 demek ne demek?
+
+1162
+03:17:26,291 --> 03:17:27,511
+Açılayım, masamın.
+
+1163
+03:17:28,072 --> 03:17:28,471
+Masamın.
+
+1164
+03:17:32,084 --> 03:17:58,804
+Bunları siz yapmadınız mı? Biz yaptık. Yani en fazla 6 token uzunluğunda çıktı üretebiliriz demiştik diye hatırlıyorum. Niye? Çoktan seçme sorular için yani ideal olması için. Peki sufficient for short prompts bu sekmen lenght ne? 128.
+
+1165
+03:18:09,843 --> 03:18:23,043
+Yani soruyu 128 tokuna kadar oku, daha fazlasını dikkate alma demiş olabiliyoruz aslında. Öyle düşünmüştük.
+
+1166
+03:18:25,043 --> 03:18:26,763
+Peki, tamam devam edelim.
+
+1167
+03:18:30,723 --> 03:18:33,763
+Doğruluk ve format uyumuna da ek olarak...
+
+1168
+03:18:34,004 --> 03:18:50,764
+Expectative Calibration Error, MCNMR testi ve Bootstrap güven aralıklarını kullandık. Böylece hangi ödül fonksiyonunun gerçekten anlamlı bir fark yarattığını daha net görebildik. Sonuç kısmında arkadaşım anlatacak.
+
+1169
+03:18:59,123 --> 03:19:01,043
+Merhaba hocam. Merhaba.
+
+1170
+03:19:01,043 --> 03:19:04,743
+Burada biz... Bir dakika.
+
+1171
+03:19:07,092 --> 03:19:23,631
+Burada tüm metrikleri birlikte değerlendirdiğimizde en iyi performansı çeşitlilik ödülü verdi. %56.4 doğruluk elde etti ve kalibrasyondan yaklaşık 2.7 daha yüksek.
+
+1172
+03:19:23,631 --> 03:19:30,452
+Ve aynı zamanda format uyumu da en yüksek olan model de bu.
+
+1173
+03:19:33,907 --> 03:19:51,627
+Yani model cevapları büyük oranda beklediğimiz formatta üretiyor. Kalibrasyon tarafında ilginç bir tane sonuç elde ettik. Biz aslında kalibrasyon ödülünün kalibrasyon tarafından bekliyorduk.
+
+1174
+03:19:51,627 --> 03:19:59,867
+Ama sonuçlara baktığımızda en düşük ECEI değeri çeşitlilik modelinde çıktı.
+
+1175
+03:20:01,791 --> 03:20:27,131
+Kalibrasyon diagramında bunu daha net görüyoruz. Baseline modeli özellikle yüksek güven seviyelerinde çok fazla üst güvenle davranıyor. Sesim geliyor mu? Evet hocam geliyor. Şimdi bu istatistikler testlerden önce biraz daha yukarı çıkabilir misin? Ekranda.
+
+1176
+03:20:28,595 --> 03:20:34,475
+En yüksek dolu %52. Buradaki nasıl hesaplanıyor?
+
+1177
+03:20:34,475 --> 03:20:38,315
+Hocam...
+
+1178
+03:20:44,275 --> 03:20:45,355
+Yani şey.
+
+1179
+03:20:49,396 --> 03:20:55,236
+Burada işte sınıflandırdık, öyle doğrulamayı hesapladık.
+
+1180
+03:20:56,576 --> 03:20:57,796
+Neyi sınıflandırdınız?
+
+1181
+03:20:59,296 --> 03:21:00,908
+Yani şey...
+
+1182
+03:21:01,043 --> 03:21:14,824
+Mesela test setinde 500 tane soru varsa eğer model bunlardan 260 tanesini mesela doğru cevapladıysa yani ekürüzcisi %10.
+
+1183
+03:21:14,824 --> 03:21:20,344
+Doğru cevapladığını nasıl hesaplıyorsunuz? Doğru cevapladığını nasıl ölçüyorsunuz?
+
+1184
+03:21:21,664 --> 03:21:25,184
+Toplam soru sayısına göre.
+
+1185
+03:21:27,092 --> 03:21:46,092
+Anlayabiliyorum. Model bir output veriyor. Modelinizin output'u atıyorum. Doğru cevap şıkkı şudur mu? Nasıl bir output veriyor? Modelinizin çıktığını gösterebilir misiniz?
+
+1186
+03:21:46,092 --> 03:21:53,092
+Hocam, bir dakika. Onlar benim laptopumda. Gösterebiliriz.
+
+1187
+03:21:55,476 --> 03:22:01,796
+Ben bağlansam biraz bekletsem olur mu? Kod benim laptopumda da.
+
+1188
+03:22:04,296 --> 03:22:08,476
+Yani bağlan tamam, sen bağlan. Arkadaşın o sırada cevap versin.
+
+1189
+03:22:09,256 --> 03:22:13,956
+Hocam doğru tahmin sayısı bölü toplam soru sayısı diye.
+
+1190
+03:22:15,667 --> 03:22:34,667
+Onu anlıyorum da, nasıl hesapladınız? Sonuçta bir string veriyor ya, doğru mu? Bu stringi nasıl değerlendiriyorsunuz da doğru cevap şudur, yanlış cevap şudur diyorsunuz?
+
+1191
+03:22:41,075 --> 03:22:46,975
+Hocam işte her soru için modelden bir tane nihayet cevap aldık.
+
+1192
+03:22:48,155 --> 03:22:50,895
+Nihayet cevap dediğin şey şöyle bir şey. Nasıl bir şey?
+
+1193
+03:22:51,035 --> 03:22:57,455
+Hangi şıkkı olduğunu işte. Hangi şıkkı olduğunu seçeneklerden hangisi olduğunu.
+
+1194
+03:22:58,415 --> 03:23:02,175
+Sizin model tek bir şey mi yaratıyor? Sizin model tek bir şık mı yaratıyor?
+
+1195
+03:23:03,956 --> 03:23:25,576
+Evet, bir tane. A, E arasındaysa. Evet işte bir taneyi seçiyor işte. A ile E arasında bir cevap verilse yeterli tane. Onlardan bir tanesini seçiyor işte. Hiç yoksa ya da format bozultu yanlış hesap, yanlış kabul ediyor.
+
+1196
+03:23:28,979 --> 03:23:35,039
+Peki tamam, bir model bir çıktık. Bağlanıyorsun değil mi şu anda? Çünkü kodu bir görmek istiyorum ben de.
+
+1197
+03:23:48,180 --> 03:23:57,300
+Hocam, biraz şey, yani linki de online Yıldız'la paylaşmadığınız için ben bir dakika maili açmam gerekiyor.
+
+1198
+03:23:58,560 --> 03:24:01,360
+İşte nasıl? Bir dakika.
+
+1199
+03:24:02,380 --> 03:24:03,360
+Ben atıyorum sana.
+
+1200
+03:24:03,860 --> 03:24:05,220
+Linki evet, bir dakika bana.
+
+1201
+03:24:05,820 --> 03:24:09,900
+Hocam, bir kişi daha sunsa ben bu o sırada kodumu açsam olur mu?
+
+1202
+03:24:15,283 --> 03:24:20,743
+Geliyor mu sesi? Hocam benim sesim geliyor mu?
+
+1203
+03:24:20,743 --> 03:24:24,183
+Tamam, geliyor geliyor. Başka sunum yapacak olan kimse var mı?
+
+1204
+03:24:27,763 --> 03:24:29,763
+Yok, sizi bekliyoruz. Tamam mı?
+
+1205
+03:24:30,763 --> 03:24:32,763
+Tamam, tamam, tamam.
+
+1206
+03:24:32,763 --> 03:24:37,763
+Biz öldünce hemen atınız.
+
+1207
+03:24:44,819 --> 03:24:52,500
+Hocam zip dosyasını size göndersen olur mu? Olmaz. Olmaz. Tamam.
+
+1208
+03:25:52,755 --> 03:25:54,775
+Benim sayfamı görüyor musunuz?
+
+1209
+03:25:55,076 --> 03:25:56,036
+Evet, görüyorum şu anda.
+
+1210
+03:26:01,075 --> 03:26:05,075
+Ama modelin bir çıktısını görebilir miyiz? Yani bir tane çıktısını en azından.
+
+1211
+03:26:06,575 --> 03:26:07,515
+Evet, bir dakika.
+
+1212
+03:27:11,379 --> 03:27:16,119
+Anlayamadım.
+
+1213
+03:28:02,739 --> 03:28:08,219
+Ben anlayamıyorum ya.
+
+1214
+03:28:22,219 --> 03:28:24,239
+Sesinizden anlayamıyorum ama.
+
+1215
+03:28:33,747 --> 03:28:42,627
+Hocam, kodlarımız gitmiş galiba. Outputları biz tablo olarak kaydetmiştik ama kodlarımız şu an.
+
+1216
+03:28:42,627 --> 03:28:48,387
+Hocam, bir ödünür mü?
+
+1217
+03:28:49,387 --> 03:28:50,427
+Neyi?
+
+1218
+03:28:53,247 --> 03:28:54,127
+Sayfamı.
+
+1219
+03:28:55,667 --> 03:28:57,087
+Şu anda sayfayı görüyorum da.
+
+1220
+03:28:59,167 --> 03:29:00,768
+Ekranı görüyorum daha doğrusu.
+
+1221
+03:29:13,811 --> 03:29:16,811
+Arkadaşımın bilgisayarında kollektif bir kişi galiba.
+
+1222
+03:29:16,811 --> 03:29:21,172
+Şey, alt tutları sadece tablo olarak yazmış.
+
+1223
+03:29:23,311 --> 03:29:25,592
+O yüzden kollektif bir kişi bulamadım.
+
+1224
+03:29:32,500 --> 03:29:36,219
+Peki arkadaşlar, ödevi yaparken başka bir araçtan faydalandınız mı?
+
+1225
+03:29:39,891 --> 03:30:06,192
+Evet hocam. Neyden faydalandınız? Hocam, Curser'den yardım aldım. Neyden? Curser. Duyamıyorum ki sesinizi. Curser'den faydalandınız. Siz ne yaptınız peki Curser'ın yaptığından ayrıca?
+
+1226
+03:30:11,059 --> 03:30:13,059
+Yani, Körsüm ne yaptı, siz ne yaptınız?
+
+1227
+03:30:28,340 --> 03:30:33,340
+Bazı kısımları ile verdim ama kısımları değerlendirebilir.
+
+1228
+03:30:33,340 --> 03:30:39,340
+Ne yaptınız? Anlatın bana işte. Cursor şunu yaptı, biz de onun üstüne bunu yaptık diye anlatabilir misiniz?
+
+1229
+03:30:54,484 --> 03:31:05,964
+Hocam, değerlendirmenin nasıl değerlendireceğini, tasarımı falan olan hepsini biz yaptık.
+
+1230
+03:31:07,584 --> 03:31:08,404
+Nasıl yani?
+
+1231
+03:31:08,404 --> 03:31:12,184
+Kodun yazmasında yardım aldık.
+
+1232
+03:31:13,012 --> 03:31:22,092
+Neyin nasıl ölçüldüğünü falan onları biz yaptık. Nasıl değerlendirmesi gerektiğini biz yaptık.
+
+1233
+03:31:22,471 --> 03:31:23,252
+Nasıl yaptınız?
+
+1234
+03:31:24,072 --> 03:31:27,332
+Kod yazımında ondan yardım aldık.
+
+1235
+03:31:27,332 --> 03:31:31,412
+Nasıl yaptınız? Nasıl değerlendirmesi gerektiğini nasıl söylediniz?
+
+1236
+03:31:49,268 --> 03:32:03,047
+Hocam, metin olarak biz ona söyledik ne yapması gerektiğini. Sonra da final cevap öğretmesini istedik.
+
+1237
+03:32:05,448 --> 03:32:07,087
+Prompt verdiniz yani?
+
+1238
+03:32:07,667 --> 03:32:08,087
+Evet.
+
+1239
+03:32:10,087 --> 03:32:11,188
+Böyle olur mu arkadaşlar?
+
+1240
+03:32:18,611 --> 03:32:31,252
+Hocam, benim laptopum 2 gün açık kaldı her demse. Biz bir türlü kodu çalıştıramadık aslında.
+
+1241
+03:32:31,252 --> 03:32:43,091
+Hatta sonunda bile birkaç kısımda ben birkaç tane yanlış yaptım. Başka bir şey bekliyordum, başka bir şey oldu.
+
+1242
+03:32:43,247 --> 03:32:48,567
+O yüzden birkaç kısmı yanlış yaptık biz. Çok şey yapmaya çalıştık ama...
+
+1243
+03:32:48,567 --> 03:32:54,007
+İnsanların geldin fonksiyonunun arasında olacağını biz karar verdik.
+
+1244
+03:32:54,007 --> 03:33:04,688
+Tasarladık, kalibrasyon çeşitlilik bunları ödüleri eklemeyi biz tasarladık.
+
+1245
+03:33:04,688 --> 03:33:10,287
+Tasarladık derken metin olarak yazdınız. Böyle mi?
+
+1246
+03:33:19,059 --> 03:33:30,819
+Peki arkadaşlar, tamamdır.
+
+1247
+03:33:33,219 --> 03:33:41,500
+Evet, tamam. Başka sunum yapacak olan yok herhalde, değil mi? Tamamdır.
+
+1248
+03:33:41,500 --> 03:33:46,139
+Peki arkadaşlar, teşekkür ediyorum. Herkese iyi günler diliyorum.
+
+1249
+03:33:48,115 --> 03:33:52,956
+Görüşürüz hocam. İyi günler, iyi haftalar. İyi günler hocam, görüşürüz.
