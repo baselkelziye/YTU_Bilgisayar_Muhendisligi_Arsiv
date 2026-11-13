@@ -1,0 +1,1127 @@
+1
+00:05:36,468 --> 00:05:38,888
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:06:02,899 --> 00:06:05,779
+Evet, geliyor. Yazmışlar, sağ olun.
+
+3
+00:06:08,199 --> 00:06:09,759
+Bu hafta
+
+4
+00:06:13,043 --> 00:06:16,363
+context-free dillerin özelliklerini göreceğiz.
+
+5
+00:06:25,300 --> 00:06:28,060
+İngilizce anlatmak gerekiyor.
+
+6
+00:06:29,819 --> 00:06:36,240
+So, this week, we will see properties of context-free languages.
+
+7
+00:06:40,403 --> 00:06:46,644
+One property is that context-free languages are closed under union.
+
+8
+00:06:47,824 --> 00:06:49,723
+What does that mean?
+
+9
+00:06:50,723 --> 00:07:06,303
+It means that if you have two context-free languages like L1 and L2, and if you take the union of these, that is also context-free.
+
+10
+00:07:18,228 --> 00:07:19,388
+As an example,
+
+11
+00:07:33,267 --> 00:07:45,347
+As an example, let's look at these languages. L1, A to the end, B to the end. And its grammar is this.
+
+12
+00:07:51,060 --> 00:08:14,639
+L2, W, and W's reverse. Its grammar is this. And the set union is just this one. You have the union there.
+
+13
+00:08:15,827 --> 00:08:22,747
+And we can take the union of the grammar by this.
+
+14
+00:08:27,379 --> 00:08:38,759
+Basically, we are introducing a new initial variable, S, and we are saying that S produces S1 or S2.
+
+15
+00:08:39,539 --> 00:08:40,440
+Very simple.
+
+16
+00:09:02,899 --> 00:09:08,539
+So, in general, you do that.
+
+17
+00:09:11,600 --> 00:09:19,244
+If you have a union, you introduce a new start variable and then...
+
+18
+00:09:34,644 --> 00:09:42,024
+And then you put an oar between these grams.
+
+19
+00:10:23,475 --> 00:10:28,655
+So, context-free languages are closed under concatenation 2.
+
+20
+00:10:31,296 --> 00:10:43,495
+So, given two languages, L1 and L2, if you concatenate them, we get another context-free language.
+
+21
+00:10:47,059 --> 00:10:49,279
+Let's look at an example for this.
+
+22
+00:10:55,283 --> 00:11:01,963
+We have the same languages, A to the N, B to the N, W and W is reverse.
+
+23
+00:11:07,124 --> 00:11:15,804
+To concatenate these grammars, as you see, it's very simple.
+
+24
+00:11:15,804 --> 00:11:20,464
+Again, you are introducing a new start variable.
+
+25
+00:11:22,064 --> 00:11:29,564
+And then first grammar one, or first start variable, then second start variable.
+
+26
+00:11:30,504 --> 00:11:32,443
+You are concatenating them.
+
+27
+00:11:46,227 --> 00:11:58,827
+Now, star operation, as you know, star operation is just concatenation, but infinite number of concatenations.
+
+28
+00:12:09,491 --> 00:12:14,432
+Concatenation of L with itself, so it should be context-free.
+
+29
+00:12:19,572 --> 00:12:24,971
+Now, how do you do that from the grammar side?
+
+30
+00:12:28,432 --> 00:12:34,412
+Let's say we have this language, A to the N, B to the N, and this grammar is here.
+
+31
+00:12:36,532 --> 00:12:37,011
+Now,
+
+32
+00:12:40,724 --> 00:12:48,204
+From the set side, we are just writing this star to get the clean star.
+
+33
+00:12:49,304 --> 00:12:51,364
+Now, what do we do here?
+
+34
+00:12:52,104 --> 00:12:58,564
+We introduce a new start variable, S1.
+
+35
+00:12:59,724 --> 00:13:02,304
+Original start variable was S.
+
+36
+00:13:04,484 --> 00:13:06,464
+And we say that
+
+37
+00:13:10,676 --> 00:13:19,536
+You can concatenate S with S1 as many as you want.
+
+38
+00:13:20,216 --> 00:13:22,796
+And S1 also produces null.
+
+39
+00:13:23,456 --> 00:13:26,476
+And that will help you to stop whenever you want.
+
+40
+00:13:26,796 --> 00:13:27,136
+Right?
+
+41
+00:13:38,004 --> 00:13:40,604
+So, that would be your star operation.
+
+42
+00:13:53,556 --> 00:14:04,396
+Now, context-free languages are not always closed under all operations.
+
+43
+00:14:05,576 --> 00:14:17,576
+One very, maybe interesting one is, context-free languages are not closed under intersection.
+
+44
+00:14:22,772 --> 00:14:34,772
+So, if you have two languages, L1 and L2, which are context-free, their intersection may or may not be context-free.
+
+45
+00:14:39,443 --> 00:14:43,023
+It can be context-free, but it doesn't have to.
+
+46
+00:14:59,764 --> 00:15:10,663
+As an example, so we have this language A to the N, B to the N, C to the M, L1.
+
+47
+00:15:10,663 --> 00:15:16,063
+And L2 is A to the N, D to the M, C to the M.
+
+48
+00:15:18,743 --> 00:15:23,104
+And we have their grammars here, so they are context-free.
+
+49
+00:15:26,388 --> 00:15:28,327
+So, this one and this one.
+
+50
+00:15:33,011 --> 00:15:35,011
+Now, their intersection...
+
+51
+00:15:39,508 --> 00:15:43,548
+A to the N, B to the N, C to the N.
+
+52
+00:15:43,908 --> 00:15:52,128
+So the first language has A and B, same number, same number of A's and B's.
+
+53
+00:15:52,948 --> 00:15:57,807
+And the second language has same number of B's and C's.
+
+54
+00:15:59,427 --> 00:16:05,587
+And their intersection would be same number of A's, B's and C's.
+
+55
+00:16:10,836 --> 00:16:25,195
+Now, this is not context-free because context-free languages can have two things, two related values.
+
+56
+00:16:25,475 --> 00:16:37,475
+So, if you have number of A's and number of B's, context-free language can do that, can produce that.
+
+57
+00:16:37,908 --> 00:16:43,768
+So, number of A's and number of B's can be related to each other.
+
+58
+00:16:44,948 --> 00:16:46,087
+They can be the same.
+
+59
+00:16:47,288 --> 00:16:49,208
+Context-free languages can do that.
+
+60
+00:16:49,208 --> 00:16:57,748
+But if you have three related values, they cannot do it.
+
+61
+00:17:02,035 --> 00:17:10,355
+Here, number of A's, number of B's, and number of C's should be related in this intersection.
+
+62
+00:17:11,496 --> 00:17:14,115
+So, it cannot be context-free.
+
+63
+00:17:27,028 --> 00:17:30,107
+Another negative one is complement.
+
+64
+00:17:30,387 --> 00:17:35,607
+So again, context-free languages may or may not be.
+
+65
+00:17:37,528 --> 00:17:46,748
+So if L is context-free, its complement may or may not be context-free.
+
+66
+00:17:47,128 --> 00:17:49,288
+It can be, but it doesn't have to.
+
+67
+00:18:00,852 --> 00:18:03,272
+Again, we have an example here.
+
+68
+00:18:11,059 --> 00:18:15,519
+We have the same languages as previous examples.
+
+69
+00:18:18,519 --> 00:18:19,019
+And
+
+70
+00:18:28,019 --> 00:18:29,900
+What is this example about?
+
+71
+00:18:39,443 --> 00:18:42,263
+So we have languages L1 and L2.
+
+72
+00:18:43,203 --> 00:18:45,223
+We are taking their complement.
+
+73
+00:18:46,604 --> 00:18:49,723
+We are unioning them.
+
+74
+00:18:50,523 --> 00:18:59,223
+And remember, union is closed under, sorry, context-free languages are closed under union.
+
+75
+00:18:59,963 --> 00:19:03,344
+And then we are taking another complement.
+
+76
+00:19:05,172 --> 00:19:12,672
+So here on this side, we have three operations, one union and two complements.
+
+77
+00:19:12,672 --> 00:19:17,352
+And that gives us this intersection.
+
+78
+00:19:19,152 --> 00:19:25,592
+And remember, intersection doesn't have to be context-free.
+
+79
+00:19:27,188 --> 00:19:37,307
+And in fact, we get to this, for this example, we get to this intersection, A to the N, B to the N, C to the N, which is not context-free.
+
+80
+00:19:39,208 --> 00:19:45,268
+And on this side, we only used two operations, union and complement.
+
+81
+00:19:46,548 --> 00:19:54,508
+We know that union is, sorry, we know that context-free languages are closed under union.
+
+82
+00:19:55,955 --> 00:20:01,556
+So that means the culprit, the bad guy, is complement, right?
+
+83
+00:20:02,735 --> 00:20:07,255
+Context-free languages are not closed under complement.
+
+84
+00:20:24,692 --> 00:20:30,532
+So, let's look at intersection of context-free languages and regular languages.
+
+85
+00:20:37,011 --> 00:20:39,491
+So, okay.
+
+86
+00:20:40,731 --> 00:20:47,172
+Intersection of one context-free language and one regular language is context-free.
+
+87
+00:20:47,411 --> 00:20:48,591
+So this is interesting.
+
+88
+00:20:49,511 --> 00:20:53,031
+Remember, intersection of context-free languages.
+
+89
+00:20:57,428 --> 00:21:00,388
+is not necessarily context-free.
+
+90
+00:21:01,708 --> 00:21:09,448
+But if you have one context-free language and one regular language, their intersection is context-free.
+
+91
+00:21:30,259 --> 00:21:36,259
+So, here, what we will do is...
+
+92
+00:21:45,011 --> 00:21:48,011
+We have two machines and I think...
+
+93
+00:22:09,779 --> 00:22:11,723
+So, we will show that...
+
+94
+00:22:18,579 --> 00:22:33,839
+We will show that the intersection of a context-free language and a regular language is context-free by constructing a pushdown automata that accepts that intersection.
+
+95
+00:22:38,804 --> 00:22:53,184
+And we will say that this new pushdown automata, M, will simulate these machines in parallel.
+
+96
+00:22:55,923 --> 00:22:59,704
+So machine one is a context-free language.
+
+97
+00:23:02,704 --> 00:23:05,384
+It accepts language L1.
+
+98
+00:23:05,940 --> 00:23:10,940
+M1'in bir anlamı var.
+
+99
+00:23:10,940 --> 00:23:15,788
+M2'in bir anlamı var.
+
+100
+00:23:22,771 --> 00:23:32,471
+And if we can construct a pushdown automata that accepts both,
+
+101
+00:23:38,516 --> 00:23:52,876
+That means if we can construct a pushdown automata that accepts the intersection, that means intersection is context-free.
+
+102
+00:23:53,396 --> 00:24:00,036
+Now, why do we have an N here, not just pushdown automata, but N PDA?
+
+103
+00:24:01,556 --> 00:24:03,135
+Let me check that.
+
+104
+00:24:43,827 --> 00:24:44,228
+So,
+
+105
+00:25:21,652 --> 00:25:25,952
+So, we have a DPDA.
+
+106
+00:25:28,172 --> 00:25:32,072
+We will not show you that. We will skip it.
+
+107
+00:25:33,271 --> 00:25:38,172
+But it's a deterministic version of pushdown automata.
+
+108
+00:25:39,284 --> 00:25:45,044
+And the pushdown automata we have seen in this class is non-deterministic.
+
+109
+00:25:45,704 --> 00:25:50,244
+So NPDA is non-deterministic pushdown automata.
+
+110
+00:25:50,604 --> 00:25:53,084
+The pushdown automata we have already seen.
+
+111
+00:25:54,184 --> 00:25:56,804
+I think this is not something new.
+
+112
+00:26:05,011 --> 00:26:08,411
+So you can just think NPDA as PDA.
+
+113
+00:26:24,084 --> 00:26:24,503
+So,
+
+114
+00:26:29,460 --> 00:26:33,180
+How are we going to do this? So we have M1.
+
+115
+00:26:35,780 --> 00:26:39,059
+It has transitions like this.
+
+116
+00:26:39,960 --> 00:26:46,800
+From Q1 to Q2, you transition if you read A from the input.
+
+117
+00:26:47,720 --> 00:26:50,660
+And since this is a pushdown automata, there is a stack.
+
+118
+00:26:52,320 --> 00:26:54,800
+You pop B.
+
+119
+00:26:56,243 --> 00:26:58,923
+And push C to the stack.
+
+120
+00:26:59,264 --> 00:27:02,443
+So the stack, so these three are the conditions.
+
+121
+00:27:03,963 --> 00:27:06,103
+You should be on Q1.
+
+122
+00:27:06,903 --> 00:27:09,923
+You should see A from the input.
+
+123
+00:27:10,583 --> 00:27:14,144
+And you should see B at the top of stack.
+
+124
+00:27:14,344 --> 00:27:21,023
+In that case, you transition to Q2 and copy and push C.
+
+125
+00:27:24,660 --> 00:27:31,660
+And remember, M2 is a regular languages machine, so it's just a...
+
+126
+00:27:47,700 --> 00:27:55,600
+Deterministic Finite Automata, or Non-Deterministic Finite Automata.
+
+127
+00:27:55,600 --> 00:28:07,039
+Basically, if you are on P1, and if you read A, you have to transition to P2.
+
+128
+00:28:17,076 --> 00:28:30,815
+Now, in our new pushdown automata, M, we will construct transitions like this.
+
+129
+00:28:31,315 --> 00:28:40,755
+We will have state labels that come from M1 and M2.
+
+130
+00:28:41,200 --> 00:28:46,079
+So Q1 is from M1, P1 is from M2.
+
+131
+00:28:47,840 --> 00:28:50,400
+Similarly, we will have Q2, P2.
+
+132
+00:28:51,200 --> 00:28:57,200
+And we will transition from Q1, P1.
+
+133
+00:28:58,660 --> 00:29:08,200
+If we see A again on the input, and if we see B on the stack, at the top of the stack,
+
+134
+00:29:09,364 --> 00:29:15,443
+In that case, we will push C and transition to Q2P2.
+
+135
+00:29:18,836 --> 00:29:20,316
+So, it's quite simple.
+
+136
+00:29:23,036 --> 00:29:25,956
+How you merge these is quite simple.
+
+137
+00:29:31,508 --> 00:29:34,807
+Basically, you match these, right?
+
+138
+00:29:38,387 --> 00:29:48,668
+If you see A on both sides, you can merge the states like this.
+
+139
+00:29:51,048 --> 00:29:55,668
+And you can just write pushdown automata's transition.
+
+140
+00:30:25,811 --> 00:30:27,431
+What else do we have?
+
+141
+00:30:30,991 --> 00:30:33,471
+If you have null transitions,
+
+142
+00:30:45,203 --> 00:30:49,963
+So, you transition without reading anything.
+
+143
+00:30:55,092 --> 00:31:11,972
+Then, for each state of deterministic finite automata, or finite automata, or finite automaton, you prepare this.
+
+144
+00:31:38,867 --> 00:31:41,467
+You also merge initial states.
+
+145
+00:31:42,467 --> 00:31:48,467
+So, initial state of M1, initial state of M2.
+
+146
+00:31:48,728 --> 00:31:50,687
+These are Q0 and P0.
+
+147
+00:31:51,367 --> 00:31:54,708
+So, you merge them in a new initial state.
+
+148
+00:31:57,827 --> 00:32:00,647
+Its label is Q0, P0.
+
+149
+00:32:24,564 --> 00:32:27,324
+You also merge final states.
+
+150
+00:32:27,324 --> 00:32:31,224
+So this is the final state of pushdown automata.
+
+151
+00:32:32,744 --> 00:32:37,564
+These are final states of finite automaton.
+
+152
+00:32:42,804 --> 00:32:49,144
+And here we can have more than one final state in finite automata.
+
+153
+00:32:50,224 --> 00:32:58,664
+If you have more than one final state in pushdown automata, we can manipulate the pushdown automata a bit.
+
+154
+00:33:00,304 --> 00:33:05,584
+And we can have a pushdown automata with single final state.
+
+155
+00:33:07,584 --> 00:33:10,264
+And what we do is we merge.
+
+156
+00:33:16,852 --> 00:33:27,192
+That final state of pushdown automaton with every finite automaton final state.
+
+157
+00:34:10,068 --> 00:34:12,828
+As an example, we have this L1.
+
+158
+00:34:15,387 --> 00:34:18,988
+It's a context-free language.
+
+159
+00:34:23,987 --> 00:34:40,167
+The accepted strings are W and W2, W1 and W2 concatenated, such that length of W1 is equal to length of W2.
+
+160
+00:34:41,547 --> 00:34:50,707
+And W1 comes from the alphabet AB, W2 comes from the alphabet CD.
+
+161
+00:34:55,764 --> 00:34:59,083
+And our pushdown automata is like this.
+
+162
+00:35:00,083 --> 00:35:05,204
+We have Q0, Q1, Q2, Q3.
+
+163
+00:35:06,083 --> 00:35:08,824
+We have these null transitions.
+
+164
+00:35:10,623 --> 00:35:14,564
+We have these loops over Q1 and Q2.
+
+165
+00:35:15,564 --> 00:35:19,404
+And we have these transitions on them.
+
+166
+00:35:21,083 --> 00:35:22,304
+These rules.
+
+167
+00:35:34,291 --> 00:35:39,971
+And our regular language is this guy, L2.
+
+168
+00:35:41,612 --> 00:35:46,351
+And the language is, what is it?
+
+169
+00:35:47,192 --> 00:35:50,371
+It's a concatenation of A and C.
+
+170
+00:35:54,452 --> 00:36:08,311
+So, there will be, and here we call it M2, and its transition graph is this.
+
+171
+00:36:08,311 --> 00:36:15,792
+We have this P0, it's the accept state, initial state, final state, everything.
+
+172
+00:36:17,231 --> 00:36:19,172
+And on it, we have this loop.
+
+173
+00:36:21,940 --> 00:36:25,239
+Now, these two will have intersection, right?
+
+174
+00:36:25,239 --> 00:36:48,340
+So, since L1 has A in its alphabet on W1 side and C in the alphabet on W2 side, and L2 has A and C as the alphabet,
+
+175
+00:36:50,835 --> 00:36:55,735
+There will be some strings that are same.
+
+176
+00:36:58,195 --> 00:37:01,355
+So there will be an intersection.
+
+177
+00:37:04,155 --> 00:37:14,835
+Now let's try to write an automaton for that intersection.
+
+178
+00:37:16,179 --> 00:37:20,179
+It will be a pushdown automata.
+
+179
+00:37:24,211 --> 00:37:26,471
+Hmm, interesting.
+
+180
+00:37:26,471 --> 00:37:27,032
+So,
+
+181
+00:37:33,172 --> 00:37:39,572
+The intersection is A to the N, C to the N, N larger than 0, very cool.
+
+182
+00:37:45,012 --> 00:37:45,992
+So,
+
+183
+00:37:50,068 --> 00:37:51,948
+We have states...
+
+184
+00:37:58,387 --> 00:37:59,427
+Like this.
+
+185
+00:37:59,427 --> 00:38:11,307
+So, label, the state label comes from pushdown automata and finite automaton.
+
+186
+00:38:14,228 --> 00:38:20,108
+And we have the transitions.
+
+187
+00:38:29,460 --> 00:38:35,139
+Just like we described previously, so we have an intersection.
+
+188
+00:38:49,235 --> 00:39:01,595
+So, we say that M simulates in parallel M1 and M2, meaning simulates, meaning it does the same thing.
+
+189
+00:39:03,675 --> 00:39:13,115
+So, if M1 pushes something to stack, M has a stack too, and it pushes there.
+
+190
+00:39:14,291 --> 00:39:20,011
+If M2 has a transition, M has a transition too.
+
+191
+00:39:21,632 --> 00:39:24,851
+It has a transition that does the same thing.
+
+192
+00:39:25,851 --> 00:39:39,851
+As such, at the end, M accepts stringW if and only if M1 and M2 accepts it.
+
+193
+00:39:44,436 --> 00:39:46,396
+This simulation is important.
+
+194
+00:39:46,396 --> 00:40:01,096
+We will see that later in this course, some machines can simulate others, especially Turing machines.
+
+195
+00:40:01,296 --> 00:40:03,615
+We will learn Turing machines.
+
+196
+00:40:04,756 --> 00:40:10,016
+We will see that they can simulate others quite easily.
+
+197
+00:40:21,012 --> 00:40:46,251
+So, in a way, we have proved that if since M is a non-deterministic pushdown automata, the intersection is accepted by M, so intersection is context-free.
+
+198
+00:41:05,364 --> 00:41:14,483
+Let's see why these can help us. Let's see some applications of these.
+
+199
+00:41:18,228 --> 00:41:22,427
+So, this is also, this has a name, regular closure.
+
+200
+00:41:24,547 --> 00:41:35,188
+So, if a context-free language and a regular language are intersect, that is a context-free language.
+
+201
+00:41:35,587 --> 00:41:37,167
+This is called regular closure.
+
+202
+00:41:48,563 --> 00:42:00,103
+Let's see. Here we have to prove that this language is context-free. What is that language? We have A to the N, B to the N.
+
+203
+00:42:01,224 --> 00:42:15,203
+But N is not 100 and N is 0 or more. So N can be 0 to infinite, anything except 100.
+
+204
+00:42:15,891 --> 00:42:16,451
+Right?
+
+205
+00:42:17,971 --> 00:42:19,431
+Anything except 100.
+
+206
+00:42:19,731 --> 00:42:23,091
+So we want to prove that this is context-free.
+
+207
+00:42:29,043 --> 00:42:29,403
+Ok.
+
+208
+00:42:36,371 --> 00:42:44,692
+Now, we know that, we already know that A to the N, B to the N, and larger zero is context-free.
+
+209
+00:42:46,371 --> 00:42:50,692
+We can write a pushdown automata for it or we have already...
+
+210
+00:42:56,692 --> 00:43:01,211
+We can write a pushdown automata or we can write a grammar.
+
+211
+00:43:08,659 --> 00:43:14,319
+Now, we know that this language L1 is regular.
+
+212
+00:43:16,319 --> 00:43:21,380
+And what is it? A to the 100, B to the 100 is regular.
+
+213
+00:43:26,659 --> 00:43:31,500
+Why? Because this is a finite language, right?
+
+214
+00:43:32,307 --> 00:43:53,847
+You can prepare a finite automata, right? You can have Q0, Q1, up to Q100. And these can all be for A's, right?
+
+215
+00:43:59,443 --> 00:44:02,923
+So, these first hundred.
+
+216
+00:44:08,916 --> 00:44:17,376
+State will be for As, and then another 100 states, right?
+
+217
+00:44:19,376 --> 00:44:27,676
+For Bs, 100 or 99, I'm not sure.
+
+218
+00:44:29,115 --> 00:44:36,336
+So I think you have 99 transitions here.
+
+219
+00:44:37,012 --> 00:44:43,072
+You have 99 transitions here, one transition from A's to B's.
+
+220
+00:44:43,072 --> 00:44:48,472
+So, if you have 199 states,
+
+221
+00:44:53,076 --> 00:44:57,496
+That will be enough, right?
+
+222
+00:44:57,496 --> 00:45:04,836
+So that will be an automaton, finite automaton that accepts this language.
+
+223
+00:45:05,456 --> 00:45:06,556
+So this is regular.
+
+224
+00:45:13,619 --> 00:45:16,939
+Since this is regular, its complement is regular.
+
+225
+00:45:26,356 --> 00:45:41,996
+And now you can take the intersection of this context-free language and this complement, which is regular, and you can obtain this.
+
+226
+00:45:47,251 --> 00:45:57,551
+The intersection will have all the strings except a to the 100, b to the 100.
+
+227
+00:46:00,032 --> 00:46:02,391
+And it will be context-free.
+
+228
+00:46:03,992 --> 00:46:12,112
+Now, we have proved that a language is context-free just by using these rules, right?
+
+229
+00:46:12,724 --> 00:46:18,144
+This is regular, this is context-free, their intersection is closed.
+
+230
+00:46:22,144 --> 00:46:38,083
+So these rules can help us in proving whether a language is context-free or not, or a language is regular or not, etc.
+
+231
+00:46:58,036 --> 00:47:01,456
+Now, another application.
+
+232
+00:47:04,256 --> 00:47:09,135
+Now, this time we will prove that L is not context-free.
+
+233
+00:47:10,135 --> 00:47:11,336
+And what is L?
+
+234
+00:47:12,536 --> 00:47:20,836
+We have a W where number of A's, number of B's, and number of C's are equal.
+
+235
+00:47:23,860 --> 00:47:25,739
+And remember, I said that.
+
+236
+00:47:26,019 --> 00:47:37,119
+So if you have two things, two numbers, related numbers, context-free languages do that.
+
+237
+00:47:39,519 --> 00:47:42,360
+Context-free grammars can produce it.
+
+238
+00:47:42,579 --> 00:47:45,440
+Context-free pushdown automata can accept it.
+
+239
+00:47:47,440 --> 00:47:51,100
+But if you have three related values,
+
+240
+00:47:52,019 --> 00:47:58,340
+Context-free grammars cannot produce it, pushdown automata cannot accept it.
+
+241
+00:47:58,340 --> 00:48:09,060
+So that kind of language, this kind of language where three values are related is not context-free in general.
+
+242
+00:48:11,119 --> 00:48:13,300
+But how do we prove this?
+
+243
+00:48:23,443 --> 00:48:25,355
+Well, um...
+
+244
+00:48:28,724 --> 00:48:29,684
+Let's see.
+
+245
+00:48:34,387 --> 00:48:38,087
+We have our L already. It's this guy.
+
+246
+00:48:40,587 --> 00:48:52,007
+And now we introduce a regular language. This guy. A to the star, B to the star, T to the star. This is regular.
+
+247
+00:48:55,068 --> 00:48:59,407
+Now, if L was context-free,
+
+248
+00:49:01,780 --> 00:49:12,380
+Its intersection with this regular language would give this language and it would be context-free.
+
+249
+00:49:14,880 --> 00:49:23,140
+But we already know that this is not context-free. A to the N, B to the N, C to the N is not context-free. We know it.
+
+250
+00:49:24,820 --> 00:49:27,619
+We proved it in our previous slides.
+
+251
+00:49:29,235 --> 00:49:35,055
+So, this is like a proof by contradiction, right?
+
+252
+00:49:36,555 --> 00:49:45,935
+If L was context-free, A to the N, B to the N, C to the N would be context-free, but it is not.
+
+253
+00:49:46,635 --> 00:49:50,036
+So, L should not be context-free, right?
+
+254
+00:49:51,155 --> 00:49:54,076
+We are using a proof by contradiction here.
+
+255
+00:50:14,068 --> 00:50:23,128
+So, this was the end for this slide.
+
+256
+00:50:23,128 --> 00:50:37,128
+So, as a summary, knowing these closure properties, whether a family of...
+
+257
+00:50:37,748 --> 00:50:48,128
+Languages, like context-free languages or regular languages, are closed under various operations or not.
+
+258
+00:50:49,128 --> 00:51:02,948
+Under various operations, helps us improving whether a language is context-free or regular or not.
+
+259
+00:51:05,235 --> 00:51:13,956
+With this, we are finishing context-free properties and next is Turing machines.
+
+260
+00:51:18,135 --> 00:51:20,515
+I will stop here today.
+
+261
+00:51:23,715 --> 00:51:28,036
+We will start Turing machines next week.
+
+262
+00:51:31,251 --> 00:51:58,391
+And if you, I announced your grades, exam one grades, and if you need to check your paper somehow, this week I will not be in the office, but next week, I hope that after the next week's class, you can visit me and check your papers.
+
+263
+00:52:01,556 --> 00:52:03,735
+Evet, bu hafta bu kadar arkadaşlar.
+
+264
+00:52:06,735 --> 00:52:08,476
+Haftaya devam edeceğiz.
+
+265
+00:52:11,376 --> 00:52:13,056
+Konuşacağımız bir şey var mı?
+
+266
+00:52:14,135 --> 00:52:16,155
+Sınavlarınızı ilan ettim.
+
+267
+00:52:17,315 --> 00:52:19,435
+OBS'de görmüş olmanız lazım.
+
+268
+00:52:22,315 --> 00:52:27,556
+Bir 10 tane kadar öğrencinin sınav notu...
+
+269
+00:52:30,068 --> 00:52:47,548
+İlan edilmemiş olabilir. Çünkü orada listede ismi olmayan numaralar var. Bazı numaralar var, listede yok. Sanırım birileri numarasını yanlış girmiş, kodlamış.
+
+270
+00:52:57,076 --> 00:53:06,355
+Kişiler, gelecek haftaki dersten sonra, gelecek haftaki dersi yüz yüze yapmak istiyorum.
+
+271
+00:53:08,096 --> 00:53:17,036
+Gelecek haftaki dersten sonra sınıfı ofisime gelip kağıtlarını kontrol edebilirler veya bulabilirler.
+
+272
+00:53:30,804 --> 00:53:36,624
+İkinci vize yaklaşıyor. İkinci vizede pushdown automata dahil olacak.
+
+273
+00:54:06,804 --> 00:54:10,384
+Yine context-free grammarların özellikleri olacak.
+
+274
+00:54:12,684 --> 00:54:18,804
+Yani Turing makinesi öncesi, Turing makineleri öncesi sınavda olacak.
+
+275
+00:54:19,283 --> 00:54:21,844
+Turing makineleri dahil olmayacak ikinci vizeye.
+
+276
+00:54:24,384 --> 00:54:26,384
+Bir sorumuz var mı?
+
+277
+00:54:28,523 --> 00:54:30,384
+İkinci vize...
+
+278
+00:54:33,619 --> 00:54:34,779
+Ne zaman olacak?
+
+279
+00:54:45,492 --> 00:54:49,952
+16 Mayıs, 16 Mayıs ders saatinde olacak gibi gözüküyor.
+
+280
+00:54:51,252 --> 00:54:55,731
+Yani önümüzdeki hafta değil, sonraki hafta ikinci vize olacak arkadaşlar.
+
+281
+00:54:59,411 --> 00:55:03,051
+Başka soracağınız bir şey var mı? Konuşacağımız bir şey var mı?
+
+282
+00:55:07,476 --> 00:55:09,876
+Peki, haftaya görüşürüz arkadaşlar.

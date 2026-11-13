@@ -1,0 +1,3231 @@
+1
+00:07:31,283 --> 00:07:34,543
+Arkadaşlar merhabalar, günaydın, sesim geliyor mu?
+
+2
+00:07:56,692 --> 00:08:00,072
+Teşekkür ederim.
+
+3
+00:08:11,636 --> 00:08:30,816
+Dersimiz hesaplama kuramı. Normalde İngilizce. Ben de İngilizce anlatacağım ama şunu söyleyeyim. Ders kitabı bu.
+
+4
+00:08:33,875 --> 00:08:39,115
+Introduction to the Theory of Computation, Michael Sipser, 3rd edition.
+
+5
+00:08:43,124 --> 00:08:44,124
+Ön.
+
+6
+00:09:01,268 --> 00:09:03,988
+Bir ders yapalım, sonra sorularınızı alırız.
+
+7
+00:09:04,708 --> 00:09:16,108
+So, the main book is Introduction to the Theory of Computation by Michael Sipser.
+
+8
+00:09:17,848 --> 00:09:20,268
+We are using the third edition.
+
+9
+00:09:28,788 --> 00:09:34,967
+So, what is this course about? It's about computation models.
+
+10
+00:09:44,436 --> 00:09:52,936
+What kind of computation are possible in certain different computation models?
+
+11
+00:09:54,635 --> 00:09:57,536
+Certain different computers, if you will.
+
+12
+00:09:58,855 --> 00:10:01,096
+That's our question.
+
+13
+00:10:02,936 --> 00:10:04,844
+And we will...
+
+14
+00:10:08,436 --> 00:10:13,896
+We will analyze these computation models.
+
+15
+00:10:18,163 --> 00:10:21,244
+İzlediğiniz için çok kolay.
+
+16
+00:10:21,244 --> 00:10:26,244
+Ve turing makinesi konularına geçirelim.
+
+17
+00:10:26,244 --> 00:10:29,244
+Çok güçlü.
+
+18
+00:10:43,091 --> 00:10:44,491
+Bu...
+
+19
+00:10:53,299 --> 00:11:18,559
+When we want to have a computer, usually it should have a CPU or processing unit, central processing unit, and a memory where the central processing unit
+
+20
+00:11:19,124 --> 00:11:21,203
+Can write or read.
+
+21
+00:11:22,203 --> 00:11:22,543
+So,
+
+22
+00:11:27,508 --> 00:11:28,348
+In addition,
+
+23
+00:11:34,035 --> 00:11:36,835
+You may have the program memory.
+
+24
+00:11:40,947 --> 00:11:45,467
+The variables, et cetera, of the program.
+
+25
+00:11:45,467 --> 00:11:47,927
+And you may have temporary memory.
+
+26
+00:11:50,327 --> 00:11:53,908
+You can have input and output devices.
+
+27
+00:12:03,700 --> 00:12:19,379
+Now, let's say you have this function x3 and you want to calculate this result x3.
+
+28
+00:12:21,971 --> 00:12:32,172
+So, the program memory might be something like compute x times x, then compute x square times x.
+
+29
+00:12:40,115 --> 00:12:45,576
+And first, the input is x.
+
+30
+00:12:46,995 --> 00:12:48,375
+Input is 2.
+
+31
+00:12:48,675 --> 00:12:51,175
+In the input, x is, let's say, 2.
+
+32
+00:12:58,484 --> 00:13:01,524
+Now, in the temporary memory, memory,
+
+33
+00:13:09,748 --> 00:13:15,168
+First, this first instruction is run.
+
+34
+00:13:16,608 --> 00:13:19,148
+2 by 2 is 4.
+
+35
+00:13:21,728 --> 00:13:31,088
+And then that result is multiplied by 2.
+
+36
+00:13:31,248 --> 00:13:36,848
+So the other instruction, the second instruction is run.
+
+37
+00:13:40,019 --> 00:13:42,019
+And the result is obtained.
+
+38
+00:13:44,019 --> 00:13:52,019
+And finally, somehow, this result is written to output.
+
+39
+00:13:59,796 --> 00:14:00,396
+No.
+
+40
+00:14:12,724 --> 00:14:19,304
+CPU ve program memory together is also called an automaton.
+
+41
+00:14:24,052 --> 00:14:39,471
+In the automaton, we can describe an automaton using states and transitions.
+
+42
+00:14:56,275 --> 00:14:59,195
+Now, there are different kinds of automata.
+
+43
+00:15:01,415 --> 00:15:11,755
+And usually, we distinguish them by the type of temporary memory they have.
+
+44
+00:15:18,707 --> 00:15:26,627
+For example, in finite automata, there is no temporary memory.
+
+45
+00:15:30,740 --> 00:15:39,299
+And in pushdown automata, there is a memory, but it's based on a stack.
+
+46
+00:15:39,899 --> 00:15:41,480
+So there is a stack memory.
+
+47
+00:15:42,759 --> 00:15:51,899
+And in a Turing machine, we have the most versatile memory, which is random access memory.
+
+48
+00:15:52,659 --> 00:15:55,720
+So you can access anywhere in the memory.
+
+49
+00:15:56,916 --> 00:15:59,816
+Without any limiting rules.
+
+50
+00:16:06,803 --> 00:16:07,243
+So,
+
+51
+00:16:11,764 --> 00:16:26,284
+If you have more flexible memory, that results to more solution of more computational problems.
+
+52
+00:16:34,995 --> 00:16:35,516
+No.
+
+53
+00:16:41,043 --> 00:16:50,043
+As we told before, in a finite automaton, there is no temporary memory, no memory at all.
+
+54
+00:16:51,584 --> 00:16:59,543
+It cannot write, erase, read from a memory. It can just read from the input.
+
+55
+00:17:04,923 --> 00:17:08,304
+Now, this is very simple.
+
+56
+00:17:09,779 --> 00:17:12,619
+So, we cannot use this as a computer, right?
+
+57
+00:17:12,859 --> 00:17:24,099
+This is not a computer in the sense that you cannot run like Windows or you cannot play games usually.
+
+58
+00:17:26,039 --> 00:17:30,259
+The reason is the computing power is small.
+
+59
+00:17:32,559 --> 00:17:34,900
+But these are still useful.
+
+60
+00:17:36,723 --> 00:17:48,163
+You can use them in simple computation, like the ones in elevators, vending machines, lexical analyzers.
+
+61
+00:17:49,443 --> 00:18:00,644
+And you might ask, why don't we just give it a lot of memory? Why do we think about finite automaton?
+
+62
+00:18:02,516 --> 00:18:05,836
+A finite otomatum is cheaper, right?
+
+63
+00:18:09,176 --> 00:18:21,615
+So, you want to develop machines in the cheapest way.
+
+64
+00:18:21,615 --> 00:18:24,456
+And if you have an elevator,
+
+65
+00:18:27,796 --> 00:18:30,776
+A cheap finite automaton is enough.
+
+66
+00:18:32,056 --> 00:18:46,576
+For an elevator, for a simple elevator, you will not put there an expensive computer there, right?
+
+67
+00:18:47,175 --> 00:18:48,876
+You want to make it cheap.
+
+68
+00:18:49,596 --> 00:18:52,936
+So you will not put a temporary memory.
+
+69
+00:18:54,612 --> 00:19:04,832
+And then the question becomes, without this temporary memory, what kind of problems this finite automaton can solve?
+
+70
+00:19:15,380 --> 00:19:20,820
+Another type of automaton we will see is a pushdown automaton.
+
+71
+00:19:22,080 --> 00:19:25,100
+Now, this one has a temporary memory.
+
+72
+00:19:27,580 --> 00:19:31,720
+But its memory is a stack.
+
+73
+00:19:32,720 --> 00:19:37,820
+Meaning, you can push at the top, let's say.
+
+74
+00:19:38,820 --> 00:19:41,660
+And you can pop from the top.
+
+75
+00:19:42,259 --> 00:19:49,659
+Before accessing the top one, top item there, you cannot access the one below.
+
+76
+00:19:50,460 --> 00:19:50,639
+Okay.
+
+77
+00:19:50,980 --> 00:19:54,940
+You can only read or write at the top.
+
+78
+00:19:56,019 --> 00:20:01,820
+So it has a memory, but the memory has a limit, limitation.
+
+79
+00:20:02,279 --> 00:20:03,139
+It's stack.
+
+80
+00:20:04,599 --> 00:20:08,619
+So this is somewhat more powerful.
+
+81
+00:20:10,291 --> 00:20:15,072
+It may be used for parsers, for example, for programming languages.
+
+82
+00:20:28,147 --> 00:20:32,327
+Now, the third type we will see is a Turing machine.
+
+83
+00:20:34,067 --> 00:20:37,048
+This has a random access memory, RAM.
+
+84
+00:20:38,708 --> 00:20:45,927
+Meaning, the CPU can access anywhere in the memory, anytime.
+
+85
+00:20:46,527 --> 00:20:47,728
+There are no limits.
+
+86
+00:20:50,163 --> 00:20:55,743
+And it has a lot of random access memory. Theoretically, the memory is infinite.
+
+87
+00:20:58,023 --> 00:21:08,844
+Now, this is very powerful, right? This is the best computing power we know. This has the best computing power we know.
+
+88
+00:21:08,844 --> 00:21:13,503
+We can run any algorithm on this, right?
+
+89
+00:21:16,211 --> 00:21:24,152
+These models, Turing machine models or modern computers.
+
+90
+00:21:34,195 --> 00:21:44,415
+So, obviously, as we say, the power of these automata are different.
+
+91
+00:21:45,056 --> 00:21:50,615
+If you have a simple problem, a finite automata is enough.
+
+92
+00:21:51,536 --> 00:21:57,556
+If you have a more complex problem, maybe a pushdown automata is enough.
+
+93
+00:22:03,539 --> 00:22:11,380
+Maybe a Turing machine is the best. You cannot solve it with finite automata or pushdown automata.
+
+94
+00:22:17,971 --> 00:22:24,192
+Now, we said that Turing machine is the most powerful among these.
+
+95
+00:22:24,911 --> 00:22:35,271
+Now, the question is, can Turing machines solve all computational problems?
+
+96
+00:22:36,491 --> 00:22:39,192
+Can all algorithms...
+
+97
+00:22:39,988 --> 00:22:48,068
+Can we solve all the problems we have, all computational problems we have with Turing machines?
+
+98
+00:22:49,508 --> 00:22:55,128
+And you might expect the answer to be yes, but it is not.
+
+99
+00:22:56,347 --> 00:23:06,248
+Maybe surprisingly, we cannot solve every problem, every computational problem we have.
+
+100
+00:23:07,124 --> 00:23:12,364
+Turing makinesi, with the most powerful makinesi we have.
+
+101
+00:23:12,483 --> 00:23:16,184
+So, there are some unsolvable problems.
+
+102
+00:23:18,104 --> 00:23:22,403
+And we will prove this theoretically.
+
+103
+00:23:34,771 --> 00:23:59,172
+If we have time, we will also talk about complexity, time complexity of computational problems. Usually, we don't have time for this. So, the P problems, P comes from polynomial. These can be solved in polynomial time.
+
+104
+00:24:01,268 --> 00:24:05,728
+And there are NP-complete problems.
+
+105
+00:24:07,487 --> 00:24:11,387
+And NP comes from non-deterministic polynomial.
+
+106
+00:24:16,403 --> 00:24:21,043
+Non-deterministic polynomial time complete problems.
+
+107
+00:24:22,923 --> 00:24:28,403
+These are believed to take exponential times.
+
+108
+00:24:29,704 --> 00:24:32,244
+Exponential time to be solved.
+
+109
+00:24:33,584 --> 00:24:35,604
+We are not sure.
+
+110
+00:24:37,244 --> 00:24:43,043
+We believe, most researchers believe, they take exponential time.
+
+111
+00:24:51,539 --> 00:24:57,019
+Any questions from this part? There were some chat questions.
+
+112
+00:25:07,220 --> 00:25:12,500
+Bazı arkadaşlar, bir hatadan dolayı, online yıldızda dersleri göremiyormuş.
+
+113
+00:25:13,679 --> 00:25:14,980
+O zaman şöyle yapalım.
+
+114
+00:25:16,980 --> 00:25:18,860
+Ben bir link üreteyim.
+
+115
+00:25:22,579 --> 00:25:24,700
+Çete yapıştırıyorum.
+
+116
+00:25:25,440 --> 00:25:26,659
+Invite linkine.
+
+117
+00:25:29,748 --> 00:25:34,668
+O invite linkini arkadaşlarınıza gönderebilir misiniz?
+
+118
+00:25:45,619 --> 00:25:46,679
+Teşekkürler.
+
+119
+00:26:26,420 --> 00:26:28,180
+Slide'ı bitirmiş olduk.
+
+120
+00:27:27,604 --> 00:27:42,224
+Slide'ları paylaşmayacağım ben. Slide'lar kitabı çok yakından takip ediyor. Kitaptan çalışabilirsiniz.
+
+121
+00:28:05,587 --> 00:28:08,347
+[öğrenci] da bir soru sormuş olabilir.
+
+122
+00:28:09,628 --> 00:28:10,587
+[öğrenci].
+
+123
+00:28:42,867 --> 00:28:47,548
+Okay, let's continue with the slides.
+
+124
+00:28:48,587 --> 00:28:54,788
+These slides, these first slides are not that hard.
+
+125
+00:28:54,788 --> 00:29:01,827
+And some of the things that we will talk about, you already know.
+
+126
+00:29:05,428 --> 00:29:07,908
+So, let's move on.
+
+127
+00:29:11,347 --> 00:29:20,548
+So, this course has some mathematics. Let's talk about, let's review what mathematics we need to know.
+
+128
+00:29:23,927 --> 00:29:34,059
+You need to know sets, functions, relations, graphs, and proof techniques. I believe you know most of these, but...
+
+129
+00:29:34,132 --> 00:29:42,852
+Let's review them just for at least forgetting the terminology, remembering the terminology.
+
+130
+00:29:46,192 --> 00:29:50,512
+Sets are collections of elements.
+
+131
+00:29:51,632 --> 00:29:55,112
+So A is a set that has one, two, three.
+
+132
+00:29:55,332 --> 00:29:56,592
+B is another set.
+
+133
+00:30:02,163 --> 00:30:15,983
+We have in, the symbol in, so one is in A, meaning it's a member of A, and not in, so not a member of B.
+
+134
+00:30:29,523 --> 00:30:31,663
+Summarize all of the members.
+
+135
+00:30:32,983 --> 00:30:38,163
+If our set is infinite, obviously we cannot write all of them.
+
+136
+00:30:38,983 --> 00:30:48,864
+So somehow we may put these three dots or somehow we may describe the set.
+
+137
+00:30:48,864 --> 00:30:49,203
+So.
+
+138
+00:30:55,763 --> 00:30:57,263
+Universal set
+
+139
+00:31:02,836 --> 00:31:13,016
+Is the set that has all possible members or elements?
+
+140
+00:31:17,236 --> 00:31:26,436
+And we have the usual set operations like union, intersection, difference.
+
+141
+00:31:30,516 --> 00:31:35,195
+The complement of a set is written this way.
+
+142
+00:31:37,556 --> 00:31:43,736
+It's all the elements not in A, but in universal set, right?
+
+143
+00:31:45,376 --> 00:31:48,956
+Complement of the complement is the original set.
+
+144
+00:31:52,536 --> 00:31:57,776
+For example, in the integers universal set,
+
+145
+00:31:58,804 --> 00:32:03,484
+Complement of even integers is odd integers.
+
+146
+00:32:06,364 --> 00:32:09,024
+De Morgan has nice rules.
+
+147
+00:32:09,024 --> 00:32:12,164
+So, what is it?
+
+148
+00:32:13,224 --> 00:32:20,064
+Complement of the union is intersection of the complements.
+
+149
+00:32:21,556 --> 00:32:26,895
+And complement of the intersection is union of the complements.
+
+150
+00:32:31,604 --> 00:32:46,364
+The empty set, sorry, the empty set or null set is shown this way or this way. There are no elements in an empty set.
+
+151
+00:32:49,364 --> 00:32:56,144
+So union of empty set or any set with any set is the set itself.
+
+152
+00:32:56,852 --> 00:33:01,632
+Intersection of any set with empty set is empty set.
+
+153
+00:33:05,211 --> 00:33:10,692
+Any set difference, empty set is the original set.
+
+154
+00:33:11,812 --> 00:33:17,432
+Empty set difference, any set is empty set.
+
+155
+00:33:18,692 --> 00:33:19,152
+And
+
+156
+00:33:19,892 --> 00:33:25,052
+This is nice. Complement of empty set is universal set.
+
+157
+00:33:29,332 --> 00:33:53,092
+So, this is the subset notation, set A and set B. B has all the elements in A. This is a subset. A proper subset is B has all the elements in A and more.
+
+158
+00:34:02,675 --> 00:34:14,836
+Disjoint sets meaning they don't have disjoint sets. Disjoint sets don't have common elements. Intersection is empty.
+
+159
+00:34:18,612 --> 00:34:35,492
+When we talk about set cardinality, we talk about, we mean number of elements in a set, and we show it with this signature, or with this notation.
+
+160
+00:34:37,771 --> 00:34:45,412
+Basically, it's just set size. So, cardinality of this set is three. We have three elements there.
+
+161
+00:34:49,523 --> 00:34:55,923
+PowerSet is a set of set.
+
+162
+00:34:56,403 --> 00:35:03,364
+It's basically the set of all subsets of S, of the set itself.
+
+163
+00:35:03,364 --> 00:35:16,884
+So if your set is ABC, empty set is there, original set is there, and all possible subsets are there too.
+
+164
+00:35:17,972 --> 00:35:24,292
+So, how many subsets do we have there?
+
+165
+00:35:25,692 --> 00:35:29,931
+We have 2 to the cardinality of set, right?
+
+166
+00:35:30,012 --> 00:35:32,212
+Number of elements in the set.
+
+167
+00:35:32,212 --> 00:35:35,292
+So, in this case, we have 3 elements.
+
+168
+00:35:36,032 --> 00:35:38,231
+So, 2 to 3 is 8.
+
+169
+00:35:39,192 --> 00:35:44,292
+We have 8 elements in the power set.
+
+170
+00:35:48,692 --> 00:35:53,452
+A Cartesian product gives us another set.
+
+171
+00:35:54,572 --> 00:35:58,192
+Let's say A is 2, 4, B is this one.
+
+172
+00:35:58,192 --> 00:36:05,771
+The Cartesian product is written this way and gives us another set.
+
+173
+00:36:08,192 --> 00:36:15,291
+And the elements of this new set are pairs from original.
+
+174
+00:36:15,923 --> 00:36:16,644
+Sets.
+
+175
+00:36:18,163 --> 00:36:22,384
+So, the first element comes from the first set.
+
+176
+00:36:23,063 --> 00:36:27,184
+Second element comes from the second set.
+
+177
+00:36:29,943 --> 00:36:34,363
+And how many elements we have in a Cartesian product?
+
+178
+00:36:35,563 --> 00:36:38,463
+Well, you can easily calculate that.
+
+179
+00:36:38,996 --> 00:36:44,096
+It's cardinalty of the first set times cardinalty of the second set.
+
+180
+00:36:44,355 --> 00:36:47,695
+So we have two elements here, three elements here.
+
+181
+00:36:48,576 --> 00:36:51,775
+The Cartesian product will have six elements.
+
+182
+00:36:53,756 --> 00:36:58,556
+You might have more than two sets in a Cartesian product.
+
+183
+00:37:00,395 --> 00:37:04,815
+And you can imagine writing these.
+
+184
+00:37:06,516 --> 00:37:08,416
+With more than two sets.
+
+185
+00:37:08,775 --> 00:37:14,195
+So, if you have three sets, you will have triples, right?
+
+186
+00:37:15,096 --> 00:37:15,576
+Etc.
+
+187
+00:37:22,387 --> 00:37:33,007
+Now, functions are mappings. They map from a domain set to a range set.
+
+188
+00:37:35,807 --> 00:37:42,788
+And they set, they map the elements from the domain set.
+
+189
+00:37:43,572 --> 00:37:46,452
+to the elements in the range set.
+
+190
+00:37:46,972 --> 00:37:53,632
+So we say f of 1 is a, meaning f maps 1 to a.
+
+191
+00:37:55,572 --> 00:37:59,032
+We also write this way.
+
+192
+00:38:00,731 --> 00:38:08,632
+So this notation means we have a function and its domain is a, range is b.
+
+193
+00:38:16,532 --> 00:38:27,612
+Now, if A is the whole domain, sorry, I had a mistake actually.
+
+194
+00:38:28,471 --> 00:38:37,431
+So F is from A to B, means F maps from A to B, but it doesn't necessarily mean A is the domain.
+
+195
+00:38:43,956 --> 00:38:47,596
+We say that f is a total function.
+
+196
+00:38:49,876 --> 00:38:53,416
+Otherwise, f is a partial function.
+
+197
+00:39:09,556 --> 00:39:16,796
+Now, relations are similar to sets, similar to functions, sorry.
+
+198
+00:39:26,835 --> 00:39:30,655
+It's related to items, right?
+
+199
+00:39:31,675 --> 00:39:34,275
+And again, it is a set.
+
+200
+00:39:34,715 --> 00:39:36,076
+A relation is a set.
+
+201
+00:39:37,815 --> 00:39:40,635
+And it has these pairs.
+
+202
+00:39:42,875 --> 00:39:47,335
+The relation has these pairs.
+
+203
+00:39:48,755 --> 00:39:51,615
+X1 is related to Y1.
+
+204
+00:39:51,855 --> 00:39:54,036
+X2 is related to Y2.
+
+205
+00:39:54,900 --> 00:39:58,199
+And we have different relations.
+
+206
+00:39:58,360 --> 00:40:04,659
+For example, a relation might be larger than.
+
+207
+00:40:06,560 --> 00:40:10,480
+So then 2 is larger than 1.
+
+208
+00:40:11,860 --> 00:40:19,400
+So in the larger than relations set, 2 and 1 is a pair.
+
+209
+00:40:20,199 --> 00:40:21,119
+Like this.
+
+210
+00:40:34,291 --> 00:40:47,211
+Now, if a relation has these properties, if it is reflexive, symmetric, and transitive, we call it an equivalence relation.
+
+211
+00:40:49,351 --> 00:40:55,851
+And what are these?
+
+212
+00:40:59,956 --> 00:41:04,596
+X is related to the X in this relation.
+
+213
+00:41:06,836 --> 00:41:15,476
+Symmetric means if X is related to Y, then Y is related to X.
+
+214
+00:41:27,635 --> 00:41:30,496
+X is also related to Z.
+
+215
+00:41:33,195 --> 00:41:37,715
+An equivalence relation example is equal.
+
+216
+00:41:40,675 --> 00:41:42,975
+So this is an equivalence relation.
+
+217
+00:41:43,155 --> 00:41:45,056
+Y, X is equal to X.
+
+218
+00:41:45,675 --> 00:41:49,855
+If X is equal to Y, Y is equal to X.
+
+219
+00:41:50,452 --> 00:41:55,052
+If x is equal to y and y is equal to z, x is equal to z.
+
+220
+00:41:55,372 --> 00:42:00,572
+So, this is equal is an equivalence relation.
+
+221
+00:42:17,748 --> 00:42:39,368
+Now, an equivalence class is a set, and it's all the y that x is related to. That will be equivalence class of x.
+
+222
+00:42:40,820 --> 00:42:45,460
+For example, let's say you have this relation somehow.
+
+223
+00:42:48,100 --> 00:42:51,060
+And one is related to what?
+
+224
+00:42:51,760 --> 00:42:54,980
+One is related to itself.
+
+225
+00:42:55,940 --> 00:42:58,760
+One is related to two.
+
+226
+00:43:00,039 --> 00:43:02,079
+What else? Nothing else.
+
+227
+00:43:02,079 --> 00:43:05,340
+So the equivalence class of one.
+
+228
+00:43:09,492 --> 00:43:13,512
+is two and one.
+
+229
+00:43:18,804 --> 00:43:26,764
+Obviously, the relation we are talking about, R, should be an equivalence relation, by the way.
+
+230
+00:43:29,903 --> 00:43:32,923
+So, what is the equivalence class of 3?
+
+231
+00:43:33,644 --> 00:43:40,564
+Well, 3 is equal to 3, and 3 is equivalent to 4.
+
+232
+00:43:41,463 --> 00:43:44,764
+So, 3 and 4 are...
+
+233
+00:43:45,588 --> 00:43:49,628
+The elements in equivalence class of 3.
+
+234
+00:44:02,931 --> 00:44:27,591
+Now, again, graphs are just sets, but we have two sets here. We have a vertex set. So this is the set of vertices. A, B, C, E, D. These are in this set.
+
+235
+00:44:29,460 --> 00:44:38,720
+And then we have the set of edges, and edges pair these nodes.
+
+236
+00:44:38,720 --> 00:44:43,819
+So, we have an AB edge, this one.
+
+237
+00:44:45,819 --> 00:44:50,980
+We have a, let's say, BE edge, right?
+
+238
+00:44:51,739 --> 00:44:52,739
+This one.
+
+239
+00:44:56,820 --> 00:44:57,480
+Etc.
+
+240
+00:44:57,700 --> 00:45:03,020
+So, these two sets together is a graph.
+
+241
+00:45:03,020 --> 00:45:08,619
+And we can visualize that as you see with these drawings.
+
+242
+00:45:14,931 --> 00:45:20,591
+Sometimes we just write everything on the graph.
+
+243
+00:45:21,291 --> 00:45:24,571
+We call that a labeled graph.
+
+244
+00:45:25,471 --> 00:45:28,931
+So we write the node names on it.
+
+245
+00:45:29,671 --> 00:45:31,351
+We write the edges.
+
+246
+00:45:32,831 --> 00:45:34,692
+Sorry.
+
+247
+00:45:35,571 --> 00:45:36,531
+That was a mistake.
+
+248
+00:45:37,111 --> 00:45:39,551
+A labeled graph has edge labels.
+
+249
+00:45:46,963 --> 00:46:05,304
+So, on each edge, you have a label. Maybe these are cities in a country, maybe these are the distances, etc. It depends on the application.
+
+250
+00:46:08,947 --> 00:46:17,847
+So, in a labeled graph, your edges has a third thing.
+
+251
+00:46:19,607 --> 00:46:24,467
+And that will be the label, A, B, and its label.
+
+252
+00:46:34,643 --> 00:46:43,623
+Now, on the graphs, we can define some operations. One of those operations is walk.
+
+253
+00:46:46,003 --> 00:46:51,963
+So, a walk is a sequence of adjacent edges.
+
+254
+00:46:52,963 --> 00:46:55,623
+So, let's say you start from E.
+
+255
+00:46:58,771 --> 00:47:11,731
+You go with ED, then from DC, and then from C to A, right? A, D, C, A. So this is a walk.
+
+256
+00:47:14,791 --> 00:47:18,532
+We need to have adjacent edges here.
+
+257
+00:47:32,052 --> 00:47:42,152
+Now, a path is a walk, but there are no repeated edges.
+
+258
+00:47:48,340 --> 00:48:03,600
+So, let's say you go this path and you come back and now you repeat this edge here.
+
+259
+00:48:05,740 --> 00:48:08,740
+That would not be a path, right?
+
+260
+00:48:09,640 --> 00:48:10,760
+For a path,
+
+261
+00:48:14,643 --> 00:48:17,223
+We don't want a repeated edge.
+
+262
+00:48:19,243 --> 00:48:28,463
+Now, a simple path, in addition to edges, nodes are not repeated too, right?
+
+263
+00:48:29,223 --> 00:48:32,083
+No node is repeated in a simple path.
+
+264
+00:48:42,579 --> 00:48:52,479
+Now, a cycle, that's a walk from a node to itself.
+
+265
+00:48:53,340 --> 00:48:56,659
+And we call the original node base here.
+
+266
+00:48:57,059 --> 00:49:00,219
+So, let's say base is B.
+
+267
+00:49:01,099 --> 00:49:05,960
+You go there, from there to C, then to A.
+
+268
+00:49:06,460 --> 00:49:08,840
+And now, you return back to B.
+
+269
+00:49:09,780 --> 00:49:14,560
+That means you walked on a cycle.
+
+270
+00:49:16,780 --> 00:49:25,680
+And in a simple cycle, only the bass note is repeated, just this first one.
+
+271
+00:49:27,400 --> 00:49:32,020
+No other notes are repeated in a simple cycle.
+
+272
+00:49:41,204 --> 00:49:55,324
+Now, an earlier tour, it's a cycle, but it contains each edge once.
+
+273
+00:49:55,324 --> 00:50:00,744
+So, you cover all of these edges somehow.
+
+274
+00:50:02,583 --> 00:50:05,324
+So, this is a sometimes...
+
+275
+00:50:12,563 --> 00:50:15,844
+Sometimes you will see puzzles about this, right?
+
+276
+00:50:16,783 --> 00:50:20,283
+They will not say earlier tour, but they will ask for it.
+
+277
+00:50:22,983 --> 00:50:29,884
+So somehow you need to go over each edge and you need to return back to your base.
+
+278
+00:50:32,344 --> 00:50:33,783
+That's an earlier tour.
+
+279
+00:50:39,092 --> 00:50:50,072
+Okay, so let's give a break till 10 o'clock. Let's give a 10 minutes break.
+
+280
+01:04:22,324 --> 01:04:26,684
+Tekrar merhabalar arkadaşlar. Sesim geliyor değil mi?
+
+281
+01:04:38,164 --> 01:04:39,204
+Peki, teşekkürler.
+
+282
+01:04:44,628 --> 01:04:54,228
+So, we were talking about graphs and some operations on the graphs.
+
+283
+01:05:04,755 --> 01:05:16,935
+So, we talked about graphs, labeled graphs, walks, paths, cycles, earlier tours.
+
+284
+01:05:19,516 --> 01:05:27,496
+And now, Hamiltonian cycle is a cycle, obviously.
+
+285
+01:05:31,155 --> 01:05:43,155
+What kind of cycle it is? It is a simple cycle that contains all nodes.
+
+286
+01:05:44,615 --> 01:05:58,215
+So, all of the nodes must be in it, but it must be simple, meaning you don't repeat.
+
+287
+01:05:59,572 --> 01:06:01,952
+Any edge?
+
+288
+01:06:03,892 --> 01:06:05,752
+Was it edge or node?
+
+289
+01:06:08,672 --> 01:06:09,632
+Node.
+
+290
+01:06:10,412 --> 01:06:10,731
+Okay.
+
+291
+01:06:11,172 --> 01:06:17,172
+So in a simple cycle, only base node is repeated.
+
+292
+01:06:19,931 --> 01:06:22,952
+So it is a Hamiltonian cycle.
+
+293
+01:06:23,092 --> 01:06:24,971
+It is a cycle that
+
+294
+01:06:26,164 --> 01:06:33,664
+Only the bass is repeated, but it contains all the notes.
+
+295
+01:06:41,715 --> 01:06:51,715
+There are some operations or some problems on graphs.
+
+296
+01:06:52,715 --> 01:06:56,576
+For example, finding all simple paths.
+
+297
+01:06:57,856 --> 01:07:00,235
+So let's say C is the origin.
+
+298
+01:07:02,856 --> 01:07:08,675
+You know CA and CE are simple paths.
+
+299
+01:07:10,579 --> 01:07:14,579
+Now, from A, you can go to B.
+
+300
+01:07:16,799 --> 01:07:23,839
+So, that means CA, AB is another simple path.
+
+301
+01:07:23,999 --> 01:07:26,239
+Remember, CA was a simple path.
+
+302
+01:07:28,359 --> 01:07:31,719
+And CE was a simple path.
+
+303
+01:07:31,999 --> 01:07:35,419
+But since from E, you can go to B and D,
+
+304
+01:07:38,164 --> 01:07:44,284
+You will add those to the list of simple paths. So you have this list, right?
+
+305
+01:07:49,780 --> 01:07:55,240
+And then from B, you can go to E.
+
+306
+01:07:57,160 --> 01:08:00,300
+So here you are adding B E.
+
+307
+01:08:04,052 --> 01:08:13,232
+Here, we are on B, but we have already visited E, so we are not adding B, E here.
+
+308
+01:08:22,292 --> 01:08:23,311
+ve so on.
+
+309
+01:08:27,412 --> 01:08:36,811
+Now, trees are graphs, but they have some special limitations.
+
+310
+01:08:38,612 --> 01:08:45,012
+One of them is a tree has no cycle.
+
+311
+01:08:49,043 --> 01:08:55,343
+And we usually have this root tree.
+
+312
+01:09:03,891 --> 01:09:04,587
+DFA
+
+313
+01:09:08,659 --> 01:09:20,340
+If you can reach a node from another node, this node is called parent and this is called child.
+
+314
+01:09:24,724 --> 01:09:34,283
+And if a node does not have any child, we call it a leaf, leaf node. So these are leaf nodes.
+
+315
+01:09:48,435 --> 01:09:51,715
+With trees, we also talk about levels.
+
+316
+01:09:53,456 --> 01:09:57,135
+So, the root node is on level zero.
+
+317
+01:09:59,475 --> 01:10:12,815
+The next level is the, the next level includes the nodes that we can reach from node, from root directly.
+
+318
+01:10:13,775 --> 01:10:15,355
+So, these guys.
+
+319
+01:10:17,268 --> 01:10:29,408
+And the next level have the nodes you can reach from previous level.
+
+320
+01:10:29,688 --> 01:10:31,468
+So it goes on like that.
+
+321
+01:10:32,408 --> 01:10:36,148
+So you might have level 1, level 2, level 3.
+
+322
+01:10:37,628 --> 01:10:41,388
+Now, on this example,
+
+323
+01:10:43,091 --> 01:11:06,511
+The height of the tree is 3. 3. 3. So, y. 1, 2, 3. So, basically, to the deepest leaf,
+
+324
+01:11:09,811 --> 01:11:13,851
+You can reach by three edges.
+
+325
+01:11:16,551 --> 01:11:19,391
+So that means the height is three.
+
+326
+01:11:36,916 --> 01:11:53,916
+Now, a binary tree, in a binary tree, each node have exactly two children.
+
+327
+01:11:55,916 --> 01:12:01,256
+Binary. B, you know, it means two in English.
+
+328
+01:12:02,536 --> 01:12:03,532
+So you have...
+
+329
+01:12:03,859 --> 01:12:06,420
+Two children for each note.
+
+330
+01:12:11,283 --> 01:12:12,503
+So, these were
+
+331
+01:12:12,503 --> 01:12:17,503
+about graphs and trees.
+
+332
+01:12:25,587 --> 01:12:28,887
+We will talk about some proof techniques.
+
+333
+01:12:36,212 --> 01:12:40,432
+We will talk about proof by induction and proof by contradiction.
+
+334
+01:12:41,932 --> 01:12:46,792
+There are some other proof techniques that we will not talk here.
+
+335
+01:12:47,792 --> 01:12:52,672
+For example, there is proof by construction.
+
+336
+01:12:56,132 --> 01:12:57,792
+Those are very simple.
+
+337
+01:13:00,292 --> 01:13:02,792
+You can find those in the book.
+
+338
+01:13:04,724 --> 01:13:08,184
+Take a look at the book.
+
+339
+01:13:10,284 --> 01:13:18,384
+In the exams, you are responsible from both the book and the slides.
+
+340
+01:13:19,024 --> 01:13:25,064
+So everything we tell you in the slides and everything in the book.
+
+341
+01:13:29,779 --> 01:13:37,159
+In the book, from the chapters we finish, will be in the exam, can be in the exam.
+
+342
+01:13:40,019 --> 01:13:43,439
+Burayı Türkçe de söyleyeyim, kaçmasın.
+
+343
+01:13:46,879 --> 01:13:51,340
+Burada iki tane ispat tekniğinden bahsedeceğiz.
+
+344
+01:13:52,399 --> 01:13:54,539
+Ama başka ispat teknikleri var.
+
+345
+01:13:55,507 --> 01:14:13,747
+Onları kitapta bulabilirsiniz. Kitaptan bakın onlara. Sınavlarda hem kitaptan hem de derslerden, canlı derslerde söylediklerimizden, anlattıklarımızdan mesulsünüz, sorumlusunuz.
+
+346
+01:14:17,011 --> 01:14:29,511
+Her ikisi de hem kitaptaki bilgiler, işlediğimiz bölümlerdeki kitaptaki bilgiler hem de bizim burada anlattıklarımız sınavlarda çıkabilir arkadaşlar.
+
+347
+01:14:40,404 --> 01:14:44,244
+So, let's first look at proof by induction.
+
+348
+01:14:47,064 --> 01:14:53,084
+So, for that, let's first look what induction is.
+
+349
+01:14:57,971 --> 01:15:04,011
+So, let's say we have some statements, P1, P2, P3, etc.
+
+350
+01:15:07,231 --> 01:15:17,851
+And this says, if we know for some B, that P1, P2, up to Pb are true,
+
+351
+01:15:20,891 --> 01:15:23,371
+and we also know that
+
+352
+01:15:24,340 --> 01:15:39,579
+For any k larger than equal to b, p1, p2 up to pk imply p k plus 1, then every pi is true.
+
+353
+01:15:41,720 --> 01:15:43,900
+This is called induction.
+
+354
+01:15:50,579 --> 01:15:55,420
+Now, in Kruv by induction, you use induction.
+
+355
+01:15:57,119 --> 01:15:59,219
+How do you do that?
+
+356
+01:16:00,380 --> 01:16:16,039
+First, you determine, you recognize an inductive basis, meaning you find some statements, P1, P2 up to Pb, that are true.
+
+357
+01:16:18,228 --> 01:16:26,148
+Then, you also specify or determine an inductive hypothesis.
+
+358
+01:16:30,195 --> 01:16:47,916
+In this hypothesis, you assume that for any k equal or larger than b, p1, p2, pk are true.
+
+359
+01:16:50,056 --> 01:16:57,416
+So these are, so far, you are just assuming things.
+
+360
+01:16:59,380 --> 01:17:02,760
+Or you are finding things so far.
+
+361
+01:17:03,680 --> 01:17:14,520
+Now in the last step, you actually need to show that Pk plus 1 is true.
+
+362
+01:17:15,319 --> 01:17:20,199
+While you are showing this, you can use these assumptions.
+
+363
+01:17:30,100 --> 01:17:53,260
+Let's inspect an example on this. Let's say, you have this theorem. What does it say? A binary tree of height n has at most 2 to the n leaves.
+
+364
+01:17:58,547 --> 01:18:06,847
+So, as an example, in this image, we have a tree of height tree.
+
+365
+01:18:09,127 --> 01:18:11,887
+And this is a binary tree.
+
+366
+01:18:12,807 --> 01:18:19,367
+So, that means it can have maximum two nodes.
+
+367
+01:18:23,956 --> 01:18:28,695
+One or two child nodes for each parent.
+
+368
+01:18:30,596 --> 01:18:31,956
+It can have...
+
+369
+01:18:34,556 --> 01:18:40,176
+So, its nodes can have two children, maximum.
+
+370
+01:18:43,476 --> 01:18:47,775
+And how many leaves do we have in this example?
+
+371
+01:18:48,336 --> 01:18:51,216
+One, two, three.
+
+372
+01:18:52,884 --> 01:18:55,684
+4, 5, 6.
+
+373
+01:18:57,144 --> 01:19:00,304
+So 2 to the 3 is 8.
+
+374
+01:19:01,963 --> 01:19:03,703
+Here we have 6.
+
+375
+01:19:03,963 --> 01:19:06,504
+So it's less than 8.
+
+376
+01:19:09,524 --> 01:19:14,644
+Now, we can kind of see that.
+
+377
+01:19:17,283 --> 01:19:19,644
+But how do we prove it?
+
+378
+01:19:22,515 --> 01:19:28,775
+How do we prove that a binary tree of height n has at most 2 to the n leaves?
+
+379
+01:19:30,536 --> 01:19:33,595
+Let's prove this by induction.
+
+380
+01:19:35,755 --> 01:19:46,195
+Let's say Li is the maximum number of leaves of any subtree at height i.
+
+381
+01:19:48,051 --> 01:19:52,832
+So, maximum number of leaves of any subtree.
+
+382
+01:20:01,043 --> 01:20:06,783
+So, if this is a tree, this is a sub-tree.
+
+383
+01:20:07,984 --> 01:20:09,923
+This is another sub-tree.
+
+384
+01:20:31,475 --> 01:20:34,735
+Now, what do we want?
+
+385
+01:20:38,963 --> 01:20:44,884
+We want to show that Li is less than or equal to the i.
+
+386
+01:20:47,224 --> 01:20:49,743
+That's what we want to prove.
+
+387
+01:20:54,707 --> 01:21:09,907
+And in our inductive basis, let's check when we were talking about trees, did we define what subtree is? No, we didn't.
+
+388
+01:21:29,971 --> 01:21:34,931
+Let me check what a subtree is.
+
+389
+01:22:22,131 --> 01:22:34,991
+It says a subtree of a binary tree is a tree that consists of a node in tree and all of its nodes descendants.
+
+390
+01:22:37,731 --> 01:22:43,931
+The original tree is also a subtree of itself.
+
+391
+01:22:53,235 --> 01:22:55,148
+D
+
+392
+01:23:01,171 --> 01:23:03,311
+Sorry.
+
+393
+01:23:03,311 --> 01:23:14,851
+So as we said, any node and all of its descendants, meaning its children and children of the children, etc.
+
+394
+01:23:15,131 --> 01:23:20,211
+All of these, all of their descendants is a subtree.
+
+395
+01:23:21,811 --> 01:23:28,351
+And one thing is, the tree itself is a subtree.
+
+396
+01:23:36,819 --> 01:23:46,739
+So, how are we formulating our problem? Sorry for this.
+
+397
+01:23:48,920 --> 01:23:58,920
+So, we are saying that Li is the maximum number of leaves of any subtree at height i.
+
+398
+01:24:00,979 --> 01:24:02,315
+And...
+
+399
+01:24:03,572 --> 01:24:18,712
+At height zero, here at the root, that's the subtree that will have maximum number of leaves.
+
+400
+01:24:24,148 --> 01:24:31,148
+Now, we want to show that li is...
+
+401
+01:24:37,460 --> 01:24:39,219
+Less than 2 to the i.
+
+402
+01:24:40,979 --> 01:24:46,279
+So, inductive basis is L0 is 1.
+
+403
+01:24:46,779 --> 01:24:48,500
+That's the root node.
+
+404
+01:25:00,307 --> 01:25:08,207
+So, at height 0, we only have the root node.
+
+405
+01:25:20,372 --> 01:25:23,492
+Now, we will have an assumption.
+
+406
+01:25:29,792 --> 01:25:34,672
+We will assume that for all i from 0 to k,
+
+407
+01:25:38,579 --> 01:25:41,159
+Li is less than 2 to the i.
+
+408
+01:25:43,180 --> 01:25:57,260
+And our induction step is we need to show that L k plus 1 is also less than 2 to the k plus 1.
+
+409
+01:25:58,039 --> 01:26:00,940
+And we can use this information.
+
+410
+01:26:06,355 --> 01:26:15,115
+We can use the fact that inductive basis is true and we can use our assumptions and inductive hypothesis.
+
+411
+01:26:29,235 --> 01:26:30,675
+So, what does this say?
+
+412
+01:26:34,195 --> 01:26:38,915
+This is height k and this is height k plus 1.
+
+413
+01:27:00,884 --> 01:27:05,203
+Li is smaller than or equal to 2 to the i.
+
+414
+01:27:07,523 --> 01:27:08,304
+Sorry.
+
+415
+01:27:10,484 --> 01:27:21,283
+So here we assumed on this part number of nodes is 2 to the i or less.
+
+416
+01:27:29,555 --> 01:27:31,536
+Number of leaves, actually, sorry.
+
+417
+01:27:41,844 --> 01:27:45,064
+So, I is K here.
+
+418
+01:27:45,804 --> 01:27:53,344
+So, on this part, number of leaves is 2 to the K or less.
+
+419
+01:28:01,492 --> 01:28:14,652
+Now, in the induction step, we actually need to show that our theorem is true for k plus one.
+
+420
+01:28:19,475 --> 01:28:32,475
+So, how are we going here? We are saying that number of leaves at k plus 1 can be maximum number of leaves in k.
+
+421
+01:28:34,315 --> 01:28:42,175
+Why? Because for each node, we can have maximum 2 children.
+
+422
+01:28:45,268 --> 01:28:52,507
+So, number of leaves in k plus one, level k plus one.
+
+423
+01:28:58,899 --> 01:29:03,299
+is 2 times LK or less.
+
+424
+01:29:05,299 --> 01:29:11,340
+And we know that LK is smaller than or equal to 2 to the K.
+
+425
+01:29:14,219 --> 01:29:26,239
+That means LK plus 1 is smaller than or equal to 2 times 2 to the K, which is 2 to the K plus 1.
+
+426
+01:29:29,779 --> 01:29:31,959
+So, this is our induction step.
+
+427
+01:29:32,959 --> 01:29:42,379
+We proved that L k plus 1 is less than or equal to 2 to the k plus 1.
+
+428
+01:29:43,379 --> 01:29:50,420
+And that finalizes our induction, proved by induction.
+
+429
+01:30:10,644 --> 01:30:16,043
+This is somehow related to recursion.
+
+430
+01:30:21,716 --> 01:30:27,676
+Some functions are recursive.
+
+431
+01:30:30,296 --> 01:30:36,156
+So you can define the function using itself.
+
+432
+01:30:37,156 --> 01:30:44,816
+So f of n, for example, is f of n minus 1 plus f of n minus 2.
+
+433
+01:30:48,404 --> 01:30:52,944
+You define f of 0 and f of 1.
+
+434
+01:30:54,604 --> 01:31:03,164
+Now you can calculate f of 2 from this, then f of 3, then f of 4.
+
+435
+01:31:14,963 --> 01:31:17,523
+Initial values, right?
+
+436
+01:31:18,144 --> 01:31:21,884
+If you change these initial values, everything changes.
+
+437
+01:31:29,332 --> 01:31:32,132
+Now, that was proved by induction.
+
+438
+01:31:36,532 --> 01:31:46,652
+Another proof that we will use a lot in this course is proof by contradiction. We will use this a lot.
+
+439
+01:31:50,231 --> 01:31:56,731
+So here we want to prove that the statement P is true.
+
+440
+01:31:57,952 --> 01:31:58,212
+Okay.
+
+441
+01:31:59,311 --> 01:32:02,412
+What we do is we assume that
+
+442
+01:32:02,899 --> 01:32:04,119
+P is false.
+
+443
+01:32:06,939 --> 01:32:12,599
+So we want to prove that it is true, but we assume it is false.
+
+444
+01:32:13,979 --> 01:32:21,379
+And somehow, we arrive at an incorrect conclusion.
+
+445
+01:32:24,379 --> 01:32:26,760
+Therefore, P must be true.
+
+446
+01:32:37,779 --> 01:32:51,460
+As an example, let's say your theorem is square root of 2 is not rational. This is not a rational number.
+
+447
+01:32:53,960 --> 01:32:55,860
+What is a rational number?
+
+448
+01:33:01,971 --> 01:33:03,832
+Let's remember that.
+
+449
+01:33:36,180 --> 01:33:55,760
+So, it says that in mathematics, a rational number is a number that can be expressed as the quotient of, quotient or fraction of two integers, a numerator P and a non-zero denominator Q.
+
+450
+01:34:17,235 --> 01:34:18,220
+DFA
+
+451
+01:34:22,931 --> 01:34:29,092
+In a rational number, you have two integers.
+
+452
+01:34:33,332 --> 01:34:36,252
+Here, for example, we have 3 and 7.
+
+453
+01:34:40,572 --> 01:34:50,952
+Every integer is rational because every integer can be written as some value divided by 1.
+
+454
+01:34:58,355 --> 01:35:01,976
+So, we call the upper value numerator.
+
+455
+01:35:04,315 --> 01:35:09,935
+And the value below it is denominator.
+
+456
+01:35:10,615 --> 01:35:10,935
+Sorry.
+
+457
+01:35:13,576 --> 01:35:16,395
+And denominator must be non-zero.
+
+458
+01:35:21,427 --> 01:35:23,167
+So, this is a rational number.
+
+459
+01:35:23,948 --> 01:35:27,868
+So, a rational number means you have two integers.
+
+460
+01:35:29,148 --> 01:35:32,887
+And the below integer is not zero.
+
+461
+01:35:41,108 --> 01:35:51,048
+Now, we need to know what we want to prove, right? So, we learned what rational is.
+
+462
+01:35:52,988 --> 01:35:59,887
+Now, we need to prove that square root of 2 is not rational.
+
+463
+01:36:01,208 --> 01:36:05,048
+So, that means it is not a...
+
+464
+01:36:06,996 --> 01:36:13,676
+You don't have two numbers like N and M, right?
+
+465
+01:36:17,427 --> 01:36:20,207
+With no common factors.
+
+466
+01:36:21,407 --> 01:36:26,127
+So what we will do here is we will go with proof by contradiction.
+
+467
+01:36:26,528 --> 01:36:33,547
+So we will assume by contradiction that square root of 2 is rational.
+
+468
+01:36:35,207 --> 01:36:37,647
+We will assume it is rational.
+
+469
+01:36:40,467 --> 01:36:45,207
+And then we will somehow, we need to reach to an...
+
+470
+01:36:45,427 --> 01:36:49,228
+We need to reach to a contradiction.
+
+471
+01:36:53,524 --> 01:37:04,144
+Now, if it is rational, we should have two integers, n and m, that have no common factors.
+
+472
+01:37:06,884 --> 01:37:15,424
+So, something like 3 over 2, right?
+
+473
+01:37:21,619 --> 01:37:25,420
+3 ve 2 do not have a common factor.
+
+474
+01:37:25,619 --> 01:37:31,059
+So, 6 over 4, let's say.
+
+475
+01:37:35,220 --> 01:37:37,680
+This is not a rational number.
+
+476
+01:37:47,444 --> 01:38:00,004
+Well, actually, let's say this can reduce to, simplify to, this can be simplified to 3 over 2, which does not have a common factor.
+
+477
+01:38:17,460 --> 01:38:19,840
+Let's look at the definition again.
+
+478
+01:38:32,340 --> 01:38:32,760
+So.
+
+479
+01:38:38,420 --> 01:38:40,539
+Rational number is real.
+
+480
+01:38:49,076 --> 01:38:53,076
+A real number that is not rational is called irrational.
+
+481
+01:39:04,627 --> 01:39:10,167
+You can use equivalence relations, equivalent classes.
+
+482
+01:39:23,796 --> 01:39:28,476
+Rational numbers together with addition and multiplication form a field.
+
+483
+01:39:53,043 --> 01:39:56,804
+Okay, this is important. Irreducible fraction.
+
+484
+01:39:56,804 --> 01:40:17,503
+So it says that every rational number may be expressed in a unique way as an irreducible fraction a over b, where a and b are co-prime integers.
+
+485
+01:40:18,420 --> 01:40:22,720
+O'', what does that mean? They don't have a common factor.
+
+486
+01:40:24,300 --> 01:40:26,200
+And B is larger than 0.
+
+487
+01:40:28,020 --> 01:40:32,700
+This is often called the canonical form of the rational number.
+
+488
+01:40:32,700 --> 01:40:33,120
+So,
+
+489
+01:40:44,435 --> 01:40:45,435
+So...
+
+490
+01:40:55,859 --> 01:40:58,819
+Embedding of integers, equality.
+
+491
+01:41:04,979 --> 01:41:10,779
+A over B is equal to C over D, if and only if AD is equal to BC.
+
+492
+01:41:11,479 --> 01:41:18,840
+If both fractions are in canonical form, then A equal to C, B equal to D.
+
+493
+01:41:22,039 --> 01:41:28,299
+Ordering, addition, subtraction, multiplication, inverse, division, exponential.
+
+494
+01:41:30,515 --> 01:41:33,315
+Continued fraction, et cetera, et cetera.
+
+495
+01:41:40,532 --> 01:41:41,952
+Organ construction.
+
+496
+01:41:47,475 --> 01:41:49,975
+Properties, Countability.
+
+497
+01:41:57,043 --> 01:41:57,443
+Okay.
+
+498
+01:42:00,003 --> 01:42:17,843
+So, what really important for our lecture was, for our slide was, I think, this irreducible, sorry, irreducible fraction section.
+
+499
+01:42:23,475 --> 01:42:34,615
+expressed in a unique way as an irreducible fraction, A over B, irreducible, where A and B are coprime integers.
+
+500
+01:42:34,615 --> 01:42:48,056
+So coprime means, sorry, if the only positive integer that divides A,
+
+501
+01:42:48,479 --> 01:42:55,979
+B does not divide B and vice versa. There is no common factor. They are co-prime.
+
+502
+01:43:02,131 --> 01:43:21,811
+So, to a number to be a rational number, it must, it should be, we should be able to express it in a unique way as an irreducible fraction a over b, where a and b are co-prime integers and b is larger than zero.
+
+503
+01:43:22,731 --> 01:43:28,451
+So, it should have a canonical form. This is often called the canonical form.
+
+504
+01:43:30,260 --> 01:43:33,539
+A rational number must have a canonical form.
+
+505
+01:43:34,680 --> 01:43:37,600
+So let's go back to our slide.
+
+506
+01:43:43,699 --> 01:43:59,180
+So, we will use that information that if a number is rational, it must have a canonical form.
+
+507
+01:43:59,539 --> 01:44:09,500
+So, there must be two integers, n and m, that have no common factors, right?
+
+508
+01:44:12,372 --> 01:44:22,852
+Since square root of 2 is rational by our assumption, it must have these two integers.
+
+509
+01:44:24,692 --> 01:44:27,711
+But we will show that this is not impossible.
+
+510
+01:44:28,072 --> 01:44:29,112
+This is not possible.
+
+511
+01:44:30,971 --> 01:44:32,992
+So how do we go?
+
+512
+01:44:33,172 --> 01:44:34,211
+Let's look at this.
+
+513
+01:44:36,595 --> 01:44:43,395
+We assumed square root of 2 is equal to some n divided by some m.
+
+514
+01:44:44,395 --> 01:44:52,435
+We take the square of both sides and rewrite the equation.
+
+515
+01:44:53,775 --> 01:44:58,615
+That means 2 times m square must be equal to n square.
+
+516
+01:44:59,935 --> 01:45:01,515
+What does that mean?
+
+517
+01:45:01,515 --> 01:45:03,975
+That means n square is even.
+
+518
+01:45:05,619 --> 01:45:07,380
+Because we have a 2 here.
+
+519
+01:45:08,899 --> 01:45:10,220
+So n square is even.
+
+520
+01:45:12,739 --> 01:45:21,180
+So that means we can write n square as 2 times some k, whatever k is.
+
+521
+01:45:22,460 --> 01:45:27,319
+So we are writing n square as 2k.
+
+522
+01:45:27,659 --> 01:45:31,159
+So, sorry, we are writing n as 2k.
+
+523
+01:45:33,076 --> 01:45:37,976
+Because if n square is even, n is also even.
+
+524
+01:45:40,056 --> 01:45:44,695
+And now n square becomes 4k square.
+
+525
+01:45:46,076 --> 01:45:54,015
+And then if we simplify, we have m square equals to 2k square.
+
+526
+01:45:57,844 --> 01:46:08,884
+Now, if M is M square is even like this, then M is even too.
+
+527
+01:46:10,564 --> 01:46:16,764
+So M can be written as 2 to the P, 2 times some P.
+
+528
+01:46:18,203 --> 01:46:25,103
+So that means whatever N we think of,
+
+529
+01:46:29,140 --> 01:46:33,159
+There will be an M with a common factor of 2.
+
+530
+01:46:35,840 --> 01:46:46,120
+So we cannot find a canonical form for this number.
+
+531
+01:46:47,239 --> 01:46:51,700
+That means we have a contradiction here.
+
+532
+01:46:51,700 --> 01:46:55,540
+So that means this number is not.
+
+533
+01:46:57,555 --> 01:46:58,695
+Rational.
+
+534
+01:47:10,579 --> 01:47:15,659
+Okay, this was mathematical preliminaries.
+
+535
+01:47:42,003 --> 01:47:45,064
+Now we will talk about languages.
+
+536
+01:47:49,779 --> 01:48:04,619
+Before that though, let's have a break. Let's gather at 11 o'clock. Let's have a break up to 11 o'clock.
+
+537
+02:05:46,355 --> 02:05:48,235
+Arkadaşlar merhabalar tekrar.
+
+538
+02:05:50,576 --> 02:05:52,636
+Sesim geliyordur herhalde.
+
+539
+02:06:22,260 --> 02:06:24,200
+Talk about languages.
+
+540
+02:06:29,460 --> 02:06:37,920
+In this course, when we talk about language, language is just a set.
+
+541
+02:06:39,539 --> 02:06:41,760
+It's just a set of strings.
+
+542
+02:06:44,539 --> 02:06:46,440
+So what is a string?
+
+543
+02:06:46,860 --> 02:06:52,780
+A string is a sequence of symbols from some alphabet.
+
+544
+02:06:54,780 --> 02:06:55,780
+So...
+
+545
+02:06:57,171 --> 02:07:01,171
+Let's say our alphabet is this.
+
+546
+02:07:01,691 --> 02:07:05,211
+So it has English letters.
+
+547
+02:07:05,531 --> 02:07:07,871
+Let's say A, B, C, D up to Z.
+
+548
+02:07:10,251 --> 02:07:11,871
+Sigma is our alphabet.
+
+549
+02:07:13,572 --> 02:07:21,251
+Now, cat, dog, house are some strings in this.
+
+550
+02:07:23,764 --> 02:07:25,523
+Obtained from this alphabet.
+
+551
+02:07:27,264 --> 02:07:35,103
+And together, if we construct a set from these, they are a language.
+
+552
+02:07:42,131 --> 02:07:49,631
+We will use these languages to describe our computation problems.
+
+553
+02:07:49,631 --> 02:07:55,992
+So, for example, primes, let's say, is a set.
+
+554
+02:08:07,956 --> 02:08:12,015
+And let's say 2, 3, 5 are prime numbers.
+
+555
+02:08:14,095 --> 02:08:26,496
+And determining whether a number is a prime is a problem, we can describe this problem as,
+
+556
+02:08:35,315 --> 02:08:37,215
+is an element of this set.
+
+557
+02:08:39,055 --> 02:08:44,495
+So, instead of asking whether, let's say, this number, I don't know.
+
+558
+02:08:48,435 --> 02:08:54,376
+323. I don't know whether it is prime or not.
+
+559
+02:08:54,376 --> 02:08:58,755
+But let's say, is this number prime?
+
+560
+02:08:59,935 --> 02:09:01,815
+Finding that is a problem.
+
+561
+02:09:03,275 --> 02:09:10,235
+We will instead say, is this number in the primes set?
+
+562
+02:09:11,636 --> 02:09:18,556
+Or in the language of primes. Remember, language will be just a set of strings.
+
+563
+02:09:21,376 --> 02:09:27,716
+So, similarly, even numbers is a language.
+
+564
+02:09:35,828 --> 02:09:40,448
+So, a computation will be translated to set membership.
+
+565
+02:09:41,788 --> 02:09:43,668
+Is number x prime?
+
+566
+02:09:45,828 --> 02:09:50,748
+Instead, we will say the equivalent set membership problem.
+
+567
+02:09:53,308 --> 02:09:57,708
+Is x in the primes language?
+
+568
+02:10:02,420 --> 02:10:09,760
+So, let's first talk about alphabets and strings.
+
+569
+02:10:12,239 --> 02:10:18,000
+An alphabet is a set of symbols that we can use to construct strings.
+
+570
+02:10:18,180 --> 02:10:24,700
+For example, sigma, let's say sigma is the alphabet A and B.
+
+571
+02:10:28,627 --> 02:10:36,608
+Using these symbols in the alphabet, we can construct strings.
+
+572
+02:10:38,387 --> 02:10:46,128
+So A is a string, AB is another string, ABBA is another string, etc.
+
+573
+02:10:47,188 --> 02:10:51,548
+We can assign these to string variables.
+
+574
+02:10:52,188 --> 02:10:57,968
+So U will be AB, V will be BBB, AAA, et cetera.
+
+575
+02:11:03,507 --> 02:11:04,108
+Um,
+
+576
+02:11:08,212 --> 02:11:14,412
+An example alphabet would be decimal numbers alphabet.
+
+577
+02:11:14,412 --> 02:11:18,231
+So these are numbers from 1 to 9.
+
+578
+02:11:19,271 --> 02:11:22,692
+With those, you can create decimal numbers.
+
+579
+02:11:26,872 --> 02:11:33,132
+You can have a binary numbers alphabet, which is 0 and 1.
+
+580
+02:11:34,003 --> 02:11:37,743
+And with those, you can construct binary numbers.
+
+581
+02:11:43,859 --> 02:11:54,479
+Similarly, you can have unary numbers alphabet. Maybe this is new to you.
+
+582
+02:11:57,819 --> 02:12:05,920
+We only have one symbol in this alphabet, one. And we need to write everything using one.
+
+583
+02:12:07,979 --> 02:12:10,479
+For example, three.
+
+584
+02:12:12,148 --> 02:12:18,507
+We represent that with three ones in unary numbers.
+
+585
+02:12:20,087 --> 02:12:23,867
+So number of ones is the actual number.
+
+586
+02:12:34,163 --> 02:12:39,443
+So there are some string operations we need to define.
+
+587
+02:12:41,183 --> 02:12:46,143
+Concatenation is when you concatenate two strings.
+
+588
+02:12:46,143 --> 02:12:54,764
+So let's say W is from A1 to N and V is from B1 to Bm.
+
+589
+02:13:00,020 --> 02:13:07,100
+v's concatenation will be, first you will write the symbols in v.
+
+590
+02:13:12,851 --> 02:13:18,451
+And then, right after them, you will write the symbols in V.
+
+591
+02:13:19,451 --> 02:13:23,831
+This whole thing is your concatenated string.
+
+592
+02:13:31,091 --> 02:13:38,691
+So, the reverse operation, we use capital R for that, WR.
+
+593
+02:13:40,371 --> 02:13:44,291
+We are writing the symbols in reverse order.
+
+594
+02:13:52,243 --> 02:14:02,023
+These strings have length, lengths, and it's just the number of symbols in the string.
+
+595
+02:14:03,203 --> 02:14:11,463
+So we use this notation for length of strings.
+
+596
+02:14:12,684 --> 02:14:17,283
+For example, length of ABBA is four.
+
+597
+02:14:24,275 --> 02:14:34,735
+You can guess that length of concatenation is length of, some of the length of concatenated strings.
+
+598
+02:14:44,916 --> 02:14:48,876
+Now, there is an empty string. It is defined.
+
+599
+02:14:52,275 --> 02:14:56,456
+This is a string with no letters.
+
+600
+02:14:58,115 --> 02:15:06,636
+In our class, we will use epsilon or lambda for empty string.
+
+601
+02:15:07,315 --> 02:15:14,136
+Sometimes I will say empty string, sometimes I will say null string.
+
+602
+02:15:17,652 --> 02:15:23,872
+It has no elements in it, so its size is zero.
+
+603
+02:15:25,252 --> 02:15:33,612
+You can concatenate it with other strings, and the result will be original string.
+
+604
+02:15:35,431 --> 02:15:44,931
+And you can put it anywhere in the string, and the result will be like you are getting rid of this year, right?
+
+605
+02:15:47,699 --> 02:15:49,079
+This is an empty string.
+
+606
+02:15:57,268 --> 02:16:05,707
+A substring of a string is a subsequence of consecutive characters.
+
+607
+02:16:05,707 --> 02:16:15,247
+So in ABBAB, the starting AB is a substring.
+
+608
+02:16:17,707 --> 02:16:23,868
+Notice that the whole string itself is a substring of itself.
+
+609
+02:16:25,203 --> 02:16:29,703
+Also, empty string is a substring of itself.
+
+610
+02:16:32,783 --> 02:16:36,703
+We can define prefix and suffixes.
+
+611
+02:16:39,043 --> 02:16:44,484
+Prefix is a substring that starts from the beginning.
+
+612
+02:16:46,420 --> 02:16:53,000
+So here, A is a prefix, AB is a prefix, ABB is a prefix, etc.
+
+613
+02:16:54,000 --> 02:16:56,020
+All of these are prefixes.
+
+614
+02:16:57,240 --> 02:17:04,240
+And of course, the original string itself is a prefix of itself.
+
+615
+02:17:05,100 --> 02:17:07,520
+Similarly, with suffixes,
+
+616
+02:17:11,092 --> 02:17:16,432
+B is a suffix, AB is a suffix, BAV is a suffix.
+
+617
+02:17:17,432 --> 02:17:28,371
+So, the strings that end with the end, the same end of the string is suffix substrings.
+
+618
+02:17:31,452 --> 02:17:37,051
+And empty string is a prefix and suffix.
+
+619
+02:17:50,579 --> 02:18:10,959
+Sometimes we will use this exponent v to the n, w to the n. Here w is not a number. Remember, w is a string. So that means it's not the mathematical.
+
+620
+02:18:11,763 --> 02:18:26,563
+Exponent. It's just concatenation. The number of concatenations we have. For example, Abba to 2 will mean we will write Abba twice.
+
+621
+02:18:30,995 --> 02:18:38,915
+By definition, the power 0 will mean empty string.
+
+622
+02:18:41,475 --> 02:18:46,555
+So, abba to 0 is empty string or null string.
+
+623
+02:18:52,115 --> 02:18:54,275
+The star operation
+
+624
+02:18:58,324 --> 02:18:59,144
+Uhhh...
+
+625
+02:19:03,956 --> 02:19:13,136
+We use this usually for alphabets with alphabets or let's say you have this alphabet AB.
+
+626
+02:19:14,476 --> 02:19:24,376
+The star operation gives you all possible strings from that alphabet.
+
+627
+02:19:29,332 --> 02:19:32,351
+Any number of times, in any order.
+
+628
+02:19:34,412 --> 02:19:39,072
+So, this is an infinite set, as you might imagine.
+
+629
+02:19:41,412 --> 02:19:43,351
+Empty set is in it.
+
+630
+02:19:43,711 --> 02:19:45,412
+Sorry, empty string.
+
+631
+02:19:45,912 --> 02:19:47,311
+Null string is in it.
+
+632
+02:19:48,231 --> 02:19:51,152
+And then A, B, AA, AB, etc.
+
+633
+02:19:51,391 --> 02:19:55,171
+So, you can imagine this is an infinite, very large.
+
+634
+02:19:56,500 --> 02:19:59,360
+Not very large, infinite set.
+
+635
+02:20:04,340 --> 02:20:10,139
+The plus operation is very similar to star operation.
+
+636
+02:20:10,139 --> 02:20:16,439
+The only difference is that in the plus operation you don't have null string.
+
+637
+02:20:19,420 --> 02:20:23,020
+In star operation you have null string in the set.
+
+638
+02:20:23,880 --> 02:20:26,040
+In plus operation you don't.
+
+639
+02:20:32,147 --> 02:20:40,967
+Now, we will talk about languages over some alphabets.
+
+640
+02:20:40,967 --> 02:20:53,247
+And when we say over some alphabet sigma, it means we are talking about any subset of sigma star.
+
+641
+02:20:55,636 --> 02:21:01,576
+So, sigma star is all possible strings.
+
+642
+02:21:03,195 --> 02:21:20,835
+Now, a subset of this can be the empty set, the set with only null string, or anything like A, AA, AB, etc.
+
+643
+02:21:20,835 --> 02:21:22,835
+Or any...
+
+644
+02:21:24,084 --> 02:21:25,604
+Union of these things.
+
+645
+02:21:25,824 --> 02:21:31,884
+So, you will just select something from this star.
+
+646
+02:21:33,224 --> 02:21:35,984
+And that will be your language.
+
+647
+02:21:45,940 --> 02:21:50,639
+We will look at some more language examples.
+
+648
+02:21:51,639 --> 02:21:59,220
+For example, sometimes we define languages with these rules.
+
+649
+02:22:01,220 --> 02:22:04,340
+So here, let's say alphabet is sigma.
+
+650
+02:22:05,420 --> 02:22:11,100
+An infinite language over this alphabet might be A to the n, B to the n.
+
+651
+02:22:11,763 --> 02:22:15,003
+Where n is larger than or equal to 0.
+
+652
+02:22:16,383 --> 02:22:22,804
+So, we are using the same n here, a to the n, b to the n.
+
+653
+02:22:22,863 --> 02:22:23,783
+What does that mean?
+
+654
+02:22:24,843 --> 02:22:30,163
+It means number of a's and number of b's are same.
+
+655
+02:22:31,163 --> 02:22:36,703
+So, if n is 0, then no a's, no b's.
+
+656
+02:22:38,835 --> 02:22:40,295
+NullString.
+
+657
+02:22:41,536 --> 02:22:44,695
+So NullString is in this language.
+
+658
+02:22:45,595 --> 02:22:51,795
+So we can obtain elements of this language by changing n.
+
+659
+02:22:53,855 --> 02:22:55,795
+And n is an integer.
+
+660
+02:22:56,275 --> 02:22:59,855
+We don't write here usually, but n is an integer.
+
+661
+02:23:00,995 --> 02:23:04,355
+So a, b, a, a, b.
+
+662
+02:23:05,108 --> 02:23:11,067
+Here A is 2, sorry, N is 2, here N is 5, et cetera.
+
+663
+02:23:12,027 --> 02:23:14,407
+These are all in the language.
+
+664
+02:23:26,227 --> 02:23:39,707
+So, as another example, we can give prime numbers. Remember, those are divisible only by one and itself, no other number.
+
+665
+02:23:41,307 --> 02:23:43,707
+Our alphabet is...
+
+666
+02:23:47,379 --> 02:23:48,819
+0 to 9.
+
+667
+02:23:50,859 --> 02:23:53,819
+And the language, let's say, primes.
+
+668
+02:23:54,679 --> 02:24:04,000
+Now, we can just write all primes, which is very, very hard to write.
+
+669
+02:24:04,639 --> 02:24:07,619
+Because nobody knows all primes, right?
+
+670
+02:24:07,779 --> 02:24:10,259
+They are calculating, they are finding them.
+
+671
+02:24:11,156 --> 02:24:15,676
+But there is no rule that gives you all the primes.
+
+672
+02:24:17,515 --> 02:24:23,676
+So, one way is just you will describe it.
+
+673
+02:24:23,676 --> 02:24:35,676
+So, primes are x such that x is in this alphabet, x is...
+
+674
+02:24:36,340 --> 02:24:39,020
+A string in this alphabet star.
+
+675
+02:24:39,959 --> 02:24:42,279
+And X is prime.
+
+676
+02:24:42,940 --> 02:24:45,260
+So we are just describing it.
+
+677
+02:24:49,139 --> 02:24:56,459
+You can describe even and odd numbers as languages, but similarly.
+
+678
+02:25:03,028 --> 02:25:10,328
+In addition, you can write some operations as languages.
+
+679
+02:25:13,328 --> 02:25:15,548
+This is interesting, isn't it?
+
+680
+02:25:16,407 --> 02:25:23,128
+For example, let's say, let's do this on unary numbers.
+
+681
+02:25:23,128 --> 02:25:24,907
+It's easier in this case.
+
+682
+02:25:25,968 --> 02:25:28,308
+Or alphabet will be 1.
+
+683
+02:25:29,492 --> 02:25:34,652
+Plus Psi symbol, plus symbols, and equals symbol.
+
+684
+02:25:36,992 --> 02:25:46,572
+Now, addition will have these triples, X, Y, and Z.
+
+685
+02:25:50,739 --> 02:26:06,880
+And X will be 1 to the M, N, sorry, Y will be 1 to the M, Z will be 1 to the K, and N plus M is K.
+
+686
+02:26:08,459 --> 02:26:11,760
+And M are larger than or equal to 0.
+
+687
+02:26:15,347 --> 02:26:24,047
+11 plus 111, so 2 and 3, is equal to 5.
+
+688
+02:26:25,667 --> 02:26:29,027
+This is in the addition language.
+
+689
+02:26:30,247 --> 02:26:34,308
+So you can think of this as a valid addition.
+
+690
+02:26:38,675 --> 02:26:43,935
+Now, this is not a valid addition, right? It's not in the addition language.
+
+691
+02:26:47,987 --> 02:26:52,887
+So, the addition language is these valid additions.
+
+692
+02:26:53,887 --> 02:26:55,628
+It has these valid additions.
+
+693
+02:26:55,927 --> 02:27:00,707
+And obviously, it's an infinite language or set.
+
+694
+02:27:05,236 --> 02:27:09,816
+Similarly, you can define the squares language.
+
+695
+02:27:11,116 --> 02:27:14,916
+Let's say you have this one, again, unary numbers.
+
+696
+02:27:15,175 --> 02:27:17,956
+We will use unary numbers in the alphabet.
+
+697
+02:27:17,956 --> 02:27:24,596
+And sharp as the power symbol, let's say.
+
+698
+02:27:26,656 --> 02:27:31,195
+And x sharp y.
+
+699
+02:27:31,600 --> 02:27:33,260
+will be in this set.
+
+700
+02:27:33,979 --> 02:27:39,440
+And x is 1 to the n, y is 1 to the m.
+
+701
+02:27:40,979 --> 02:27:44,319
+And m is n's square.
+
+702
+02:27:49,043 --> 02:28:03,384
+For example, so the squares set or language includes these valid squareings, let's say.
+
+703
+02:28:04,603 --> 02:28:15,384
+So 2, power of 2 is 4. 2 and 4 is in the squares. So 4 is 2 square, if you will.
+
+704
+02:28:16,915 --> 02:28:25,255
+But 3 and 4 is not in squares because 4 is not square of 3.
+
+705
+02:28:27,175 --> 02:28:40,255
+So the squares language includes all these pairs. It gives you all numbers and their squares with this notation.
+
+706
+02:29:29,843 --> 02:29:36,383
+Okay, [öğrenci] has a question.
+
+707
+02:29:37,483 --> 02:29:43,983
+Hocam, what is the difference between alfabet and alfabet with star?
+
+708
+02:29:50,388 --> 02:29:52,308
+Let's go back to that slide.
+
+709
+02:30:01,876 --> 02:30:04,335
+Alphabet only has the symbols.
+
+710
+02:30:05,056 --> 02:30:05,355
+Sorry.
+
+711
+02:30:14,611 --> 02:30:31,651
+Alphabet only has the symbols, let's say A and B. Alphabet with a star is all the strings that you can obtain using these symbols.
+
+712
+02:30:33,907 --> 02:30:39,407
+So, A is there, AA is there, AB is there, BA is there, et cetera.
+
+713
+02:30:39,407 --> 02:30:49,427
+Every string that you can obtain using these symbols are in this set.
+
+714
+02:30:50,907 --> 02:30:56,467
+And it also includes empty string too.
+
+715
+02:31:08,531 --> 02:31:08,971
+Okay.
+
+716
+02:31:16,691 --> 02:31:34,111
+Now, these are sometimes confused. We have an empty language and, sorry. Neye basıyorsan pat oraya atlıyor farede.
+
+717
+02:31:51,476 --> 02:31:57,296
+So we have two things similar to each other, or you can confuse.
+
+718
+02:31:58,296 --> 02:32:04,496
+One is empty language, and the other is empty string.
+
+719
+02:32:08,835 --> 02:32:12,195
+Empty set or empty language is just a set.
+
+720
+02:32:18,195 --> 02:32:24,755
+Empty string is a string with no symbols.
+
+721
+02:32:26,876 --> 02:32:31,095
+And you can write a language with empty string.
+
+722
+02:32:31,716 --> 02:32:33,716
+And it is not empty.
+
+723
+02:32:34,135 --> 02:32:35,975
+So the language is not empty.
+
+724
+02:32:36,475 --> 02:32:38,056
+So these are different things.
+
+725
+02:32:38,056 --> 02:32:39,995
+For example,
+
+726
+02:32:45,747 --> 02:32:48,907
+Size of empty set is 0.
+
+727
+02:32:51,487 --> 02:32:56,627
+But size of set with empty string is 1.
+
+728
+02:32:58,067 --> 02:33:02,687
+Because it has an element in it, even though it is empty.
+
+729
+02:33:05,127 --> 02:33:08,407
+So you are counting empty string.
+
+730
+02:33:16,724 --> 02:33:26,023
+So with this empty string and empty set, you need to remember these things.
+
+731
+02:33:27,363 --> 02:33:33,844
+So for example, a set with an empty string is not empty set.
+
+732
+02:33:35,063 --> 02:33:41,523
+And set size is for empty strings, empty sets, zero.
+
+733
+02:33:44,884 --> 02:33:48,804
+When you have empty string there, you add 1.
+
+734
+02:33:50,783 --> 02:33:54,923
+But the length of empty string itself is 0.
+
+735
+02:33:55,923 --> 02:33:58,263
+Right? There are no symbols in it.
+
+736
+02:34:08,180 --> 02:34:13,700
+Now, remember that languages are sets.
+
+737
+02:34:14,659 --> 02:34:22,300
+That means you have all the usual set operations that you can use with languages.
+
+738
+02:34:22,300 --> 02:34:30,620
+So you have your union, intersection, difference, complement.
+
+739
+02:34:35,316 --> 02:34:41,936
+These are all just like sets, set operations.
+
+740
+02:34:43,896 --> 02:34:46,495
+As languages are sets.
+
+741
+02:34:51,347 --> 02:34:56,768
+Now, there are some other new operations.
+
+742
+02:34:57,148 --> 02:35:01,488
+For example, you can define reverse of languages.
+
+743
+02:35:04,488 --> 02:35:14,427
+Reverse of languages are strings, are the set of strings that are reverse of the original set.
+
+744
+02:35:14,427 --> 02:35:18,488
+So let's say you have a set AB.
+
+745
+02:35:20,211 --> 02:35:27,171
+In its reverse, you have ba, right?
+
+746
+02:35:27,671 --> 02:35:30,331
+The reverse of this string.
+
+747
+02:35:30,331 --> 02:35:36,432
+So you have the reverse of all strings in the original set, right?
+
+748
+02:35:46,804 --> 02:35:51,623
+You can also define concatenation of sets or languages.
+
+749
+02:35:52,623 --> 02:36:02,263
+So this will include all the strings from each set concatenated.
+
+750
+02:36:04,263 --> 02:36:11,024
+So let's say you have the set A, ABBA as L1.
+
+751
+02:36:12,404 --> 02:36:15,463
+And L2 is BAA.
+
+752
+02:36:16,684 --> 02:36:27,583
+Now with A, you need to write all the concatenations in the other set.
+
+753
+02:36:27,583 --> 02:36:36,043
+So AB, A, AA, right?
+
+754
+02:36:38,451 --> 02:36:46,531
+Then now in the first set you have AB. With that you write all concatenations.
+
+755
+02:36:48,991 --> 02:36:58,051
+So you have, so how many elements will this have? This is 3 by 2, 6 elements, right?
+
+756
+02:36:58,631 --> 02:37:03,691
+It's somehow similar to Cartesian product.
+
+757
+02:37:16,468 --> 02:37:18,907
+So this was concatenation of languages.
+
+758
+02:37:23,407 --> 02:37:26,700
+Now, you can define...
+
+759
+02:37:29,971 --> 02:37:31,791
+The power of a set.
+
+760
+02:37:33,752 --> 02:37:42,811
+And this is similar to concatenation, but you are concatenating N of the same set, right?
+
+761
+02:37:42,811 --> 02:37:51,231
+So AB to 3 means you are concatenating 3 of AB.
+
+762
+02:37:52,152 --> 02:37:56,051
+So you will first concatenate these two.
+
+763
+02:37:56,755 --> 02:38:01,195
+Then, with that, you will concatenate this last one.
+
+764
+02:38:01,916 --> 02:38:06,556
+If you want to define based on concatenation.
+
+765
+02:38:10,515 --> 02:38:25,995
+There is a special case here, by definition, L to the zero is defined as the set with empty string.
+
+766
+02:38:27,595 --> 02:38:34,575
+So whatever language you have, it's zero power is just this, by definition.
+
+767
+02:38:44,435 --> 02:39:10,835
+So, let's see. We have this language, A to the end, B to the end. What is its power to? Well, you have one AB, right, from first L, and then you will have another AB set from the second L, but N and M,
+
+768
+02:39:12,147 --> 02:39:14,987
+don't need to be same.
+
+769
+02:39:15,167 --> 02:39:23,567
+So you might have ABs with N1 from the first set, 2 from the second set, etc.
+
+770
+02:39:23,808 --> 02:39:26,207
+So maybe something like this.
+
+771
+02:39:27,968 --> 02:39:31,367
+AABB can come from first L.
+
+772
+02:39:34,268 --> 02:39:37,707
+AABBB can come from second L.
+
+773
+02:39:46,675 --> 02:39:57,315
+Now, one step further, you can define star of these languages.
+
+774
+02:39:58,036 --> 02:40:04,995
+This is sometimes read as clean star, or we can say this as star closure.
+
+775
+02:40:06,995 --> 02:40:09,995
+So, star is...
+
+776
+02:40:10,388 --> 02:40:18,368
+You are unioning, you are taking the union of L to the 0, L to the 1, L to the 3.
+
+777
+02:40:19,848 --> 02:40:27,768
+So it's a huge, huge set.
+
+778
+02:40:29,268 --> 02:40:33,968
+And what does it give you?
+
+779
+02:40:38,260 --> 02:40:39,860
+Concatenations
+
+780
+02:40:49,716 --> 02:40:51,416
+Of this language.
+
+781
+02:40:52,515 --> 02:40:59,136
+So, all the concatenations in the strings, of the strings in this language.
+
+782
+02:41:00,256 --> 02:41:04,275
+So, now string is there again, because we have L0.
+
+783
+02:41:06,495 --> 02:41:12,096
+Then, L1 is itself, let's say, L itself.
+
+784
+02:41:13,175 --> 02:41:14,636
+Now, L2.
+
+785
+02:41:16,308 --> 02:41:19,228
+You are concatenating two L's.
+
+786
+02:41:21,108 --> 02:41:30,087
+So you can have AA, four B's, A and BB, BB and A.
+
+787
+02:41:31,427 --> 02:41:31,708
+Right?
+
+788
+02:41:32,708 --> 02:41:42,188
+Now L3, now you will concatenate L1 and L2.
+
+789
+02:41:43,956 --> 02:41:44,476
+Right?
+
+790
+02:41:45,675 --> 02:41:48,495
+And those will be here.
+
+791
+02:41:50,576 --> 02:41:55,716
+L4 will be concatenation of this guy with L3.
+
+792
+02:41:57,175 --> 02:42:08,195
+So, at the end, you have all possible concatenations of the strings.
+
+793
+02:42:11,347 --> 02:42:15,067
+And any number of all possible concatenations.
+
+794
+02:42:22,772 --> 02:42:45,512
+Now, positive closure is very similar to clean star or what was it? Star closure. So positive closure is similar to star closure. It's just that in the positive closure, you don't have this guy.
+
+795
+02:42:49,876 --> 02:42:52,896
+You don't have empty string there.
+
+796
+02:43:04,628 --> 02:43:11,068
+Ok, with this, we finished languages today.
+
+797
+02:43:16,211 --> 02:43:35,051
+Next lecture, we will see DFAs, deterministic finite automata, and NFAs, non-deterministic finite automata, and we will continue.
+
+798
+02:43:36,891 --> 02:43:38,711
+Do you have any questions?
+
+799
+02:43:40,711 --> 02:43:43,211
+We are ending this lecture here.
+
+800
+02:43:48,275 --> 02:44:04,675
+Yine son bir konuşalım. Michael Sipser'in kitabı var, Theory of Computation diye. Üçüncü versiyonu ders kitabınız.
+
+801
+02:44:08,115 --> 02:44:17,115
+Derste bizim anlattıklarımız slide'lar ve ders kitabındaki ilgili bölümlerdeki her şeyden sorumlusunuz sınavlarda.
+
+802
+02:44:19,095 --> 02:44:25,815
+İki vize, bir final 30-30-60 ağırlıklı yapacağız. Ödev yok.
+
+803
+02:44:28,216 --> 02:44:32,815
+Devam mecburiyeti var. İlk ders olduğu için...
+
+804
+02:44:33,363 --> 02:44:43,263
+Bu ders yoklama almamış olacağım. İlk ders harici %70 devam mecburiyetiniz var. İlk ders yoklama almayacağım.
+
+805
+02:44:48,523 --> 02:44:55,003
+Ekle çıkarlar devam ediyor. Ekleyenler oluyor, çıkaranlar oluyor. İlk ders yoklama almıyorum o yüzden.
+
+806
+02:44:59,731 --> 02:45:04,511
+Başka konuşacağımız bir şey var mı? Soracağınız bir şey var mı dersle ilgili?
+
+807
+02:45:09,108 --> 02:45:16,528
+Slide'ları vermiyorum. Zaten slide'lar kitaba çok paralel gidiyor. Kitaptan çalışırsınız.
+
+808
+02:45:22,004 --> 02:45:28,044
+Peki öyleyse sanırım bir soru yok. Haftaya görüşürüz arkadaşlar. Başarılar diliyorum.
