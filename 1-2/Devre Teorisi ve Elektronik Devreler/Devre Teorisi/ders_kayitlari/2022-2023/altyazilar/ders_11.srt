@@ -1,0 +1,2611 @@
+1
+00:01:59,891 --> 00:02:00,932
+Arkadaşlar, merhaba.
+
+2
+00:02:09,139 --> 00:02:14,899
+Bu haftaki ders akışımız içerisinde, geçen haftada kalan konuyla devam ediyordular.
+
+3
+00:02:15,859 --> 00:02:19,619
+Bu konunun ismi, Fazer Gösterimi aslında.
+
+4
+00:02:21,779 --> 00:02:32,019
+Daha önceki haftalarda hatırlayacak olursanız, RL, RC ve RLC devreleri için zaman boyutunda devre çözümlerinin yerine getirmiştir.
+
+5
+00:02:39,828 --> 00:02:42,828
+Zaman boyutunda çözümlemelerini gerçekleştirmiştik.
+
+6
+00:02:42,908 --> 00:02:47,987
+RL ve RC devreleri için bu 1000 dereceden bir diferansiyel denklam çözümlemesi kabul ediyordu.
+
+7
+00:02:48,707 --> 00:02:53,027
+Veya RLC devreleri için 2000 dereceden bir diferansiyel denklam çözümlemesi kabul ediyordu.
+
+8
+00:02:55,168 --> 00:03:07,388
+Bu çözümlemeleri yerine getirirken, kaynaklı ve kaynaksız olmak şartıyla seri ve paralel RLC devrelerini en son olarak çözümlemiştik.
+
+9
+00:03:07,828 --> 00:03:11,367
+Sonrasında da bu fazör gösterimine doğru bir geçiş yapmıştık.
+
+10
+00:03:12,147 --> 00:03:13,328
+Temel olarak...
+
+11
+00:03:21,972 --> 00:03:34,812
+Şimdi şey kontrolü bitti sanırım. Sorularla alakalı bazı şıklarda değişiklikler yapmak zorunda kalıyor. Yani sizi etkileyen bir şey değil de, yanlışlıkla bir şıklı doğru cevap olarak işaretlenmişiz.
+
+12
+00:03:34,872 --> 00:03:47,512
+Halbuki cevap şıklarında bulunan farklı bir şıklı olarak cevaplı gibi değişiklik düzeltmeleri yapmakla uğraşıyoruz şu anda. Onu tek tek yapmak biraz zor oluyor. Yani süresiz adı o yüzden dolayı.
+
+13
+00:03:48,051 --> 00:03:57,611
+Herkese farklı sırada rastgele sorular geldiği için, kimin, hangi öğrencinin kaç numaralı sorusunun şıkkını değiştireceğinize tek tek bakma soru oluyor.
+
+14
+00:03:57,611 --> 00:04:04,611
+O yüzden Uzem'den soruların incellenmesiyle ilgili veya bu atamayla ilgili bir istekte bulunduk.
+
+15
+00:04:04,691 --> 00:04:08,971
+Onu cevapladıkları zaman biz de izleleri açıklamış oluyor.
+
+16
+00:04:09,620 --> 00:04:17,620
+Oradan sizi etkileyen veya durumu değiştiren bir şey yok. Sadece sonucu açıklamakla ilgili sizi geçtiren bir süreç olmuş oldu.
+
+17
+00:04:19,620 --> 00:04:22,620
+Yani yine tekrar etmiş olayım, yakın zamanda açıklamış oldu.
+
+18
+00:04:24,620 --> 00:04:26,620
+Fazörlerle ilgili durumdan bahsediyoruz.
+
+19
+00:04:26,620 --> 00:04:31,468
+Şimdi zaman boyutunda biz RLJ devresini çözdüğümüzde,
+
+20
+00:04:31,475 --> 00:04:38,855
+Tüm zaman aralığı için, yani eksi sonsuzdan artı sonsuza tüm zaman aralığı için bir çözüm elde etmiş oluyoruz.
+
+21
+00:04:39,415 --> 00:04:45,175
+Bu zaman aralığı için, eksi sonsuzda artı hafta arasındaki zaman aralığında ise özel bölgeler vardı.
+
+22
+00:04:45,276 --> 00:04:55,776
+Bunlardan birisi, devrenin uzun süre boyunca bilisayar şartlarda kaldığı ve daha sonrasında bir durum değişimini, anahtarlı durum değişimini olduğu ana kadar ki süreç.
+
+23
+00:04:56,564 --> 00:05:11,564
+Daha sonra durum değişiminin olduktan sonraki devrenin kendi elemanlarının işte RL, RLC veya RLC elemanların üzerindeki depolanmış olan enerji veyahut da
+
+24
+00:05:12,211 --> 00:05:16,851
+Doğal çözümünden kaynaklı bir süreç, yani 5 toğluk bir süreç bahsetmiştik.
+
+25
+00:05:17,451 --> 00:05:30,692
+Ve sonrasında da pratikte 5 toğdan artı sonluğa kadar geçen, yine devreleri uzun süre boyunca cinsi şartlarda kaldığı senaryo şeklinde her 3 özel bölge içinde genel bir çözümü elde edebiliyorduk.
+
+26
+00:05:31,072 --> 00:05:35,231
+Fazör çözümü ise, fazör çözümü diye bahsedeceğimiz şey ise özel bir çözüm.
+
+27
+00:05:35,956 --> 00:05:53,036
+Fazör yaklaşımında biz devrenin geçici hal analiziyle ilgilenmiyoruz. Geçici hal analizi neydi? Devrenin durum değiştirdikten sonra 5 to o kadarlık pratikte ama bu gerçekte sonuza kadar devam ediyor yine o etki ama pratikte 5 to o kadarlık.
+
+28
+00:05:53,072 --> 00:06:03,672
+Diyebiliriz. Bu durum değişiminden 5 tora kadar süreye kadar geçen geçici hal analiziyle ilgilenmiyor sürekli sinizoidal hal veya fazör gösterim dediğimiz çözümleme.
+
+29
+00:06:04,711 --> 00:06:16,072
+Neyle ilgileniyor öyleyse? Devrede bir sinizoidal kaynak var. Zorlayıcı kaynağımız zaman domenindeki çözümlerde olduğu gibi bir birim basamak veya birisi...
+
+30
+00:06:16,244 --> 00:06:30,064
+kaynaklar değil. Bir sinizoidal işaret, bir sinizoidal işaretin belli bir frekansı var. Dolayısıyla devrede sürekli hal analizini yürütmeye çalışıyoruz. Ne demek bu? Durum değişimi oldu.
+
+31
+00:06:30,064 --> 00:06:40,244
+Geçici haller durum değişiminden 5 doğaya kadar geçti. Biz bu 5 doğadan, pratikte 5 doğadan sonraki zamanla ilgili devrenin davranışını incelemeye çalışıyoruz.
+
+32
+00:06:41,684 --> 00:06:47,664
+Bu durumda fazör analizi dediğimiz sürekli hal analizi oldukça faydalı oluyor diyebiliriz.
+
+33
+00:06:47,744 --> 00:06:57,004
+Çünkü artık devrede geçici haller kalmadığı için zorlayıcı çözümün etkisi var. Zorlayıcı çözümün etkisini de doğrudan fazör yaklaşımıyla görmemiz mümkün.
+
+34
+00:06:57,004 --> 00:07:04,664
+Yine fazör yaklaşımının önemli bir özelliği sürekli halde ilgilendiğimiz durum yine aklımıza kalmak şartıyla.
+
+35
+00:07:08,384 --> 00:07:33,704
+R için bahsetmemize gerek yok gerçi ama kapasite ve endüstans elemanlarının tanım bağıntıları zaman boyutunda her ne kadar ki diferansiyel denklem şeklinde veriliyor olsa da bu elemanların tanım bağıntılarını biz fazla uzayına geçirdiğinizde yani farklı bir uzaya geçirdiğinizde bu diferansiyel denklemler artık biner denklemlere dönüşecek. Yani biner denklemimizi nereden gördük dersimiz içerisinde.
+
+36
+00:07:34,932 --> 00:07:47,884
+Şurada gördük, zaman boyusunda bir trenç elemanının davranışı doğrusal bir denklemle tekrar ifade edilebiliyordu. Dolayısıyla artık biz pazör uzayına geçtiğimizde...
+
+37
+00:07:48,019 --> 00:08:03,019
+tüm elemanların tanım bağıntısını lüner denklemler halinde verebiliyoruz. Bunun anlamı da şu, fazör uzayında sanki her şey dirençmiş gibi davranabilir. Dolayısıyla direnç ise, fazör uzayında serileri koplayarak eşdeğer direnci bulabiliriz.
+
+38
+00:08:03,019 --> 00:08:11,919
+Yine fazör uzayında birbirine paralel bir şekilde bağlı kapasite, endüktan, direnç elemanlarının yine tanım bağıntılarını veya
+
+39
+00:08:11,920 --> 00:08:20,560
+Fazör uzayındaki direnç karşılığı olan empedans değerleri, daha sonra daha detaylı bir şekilde göreceğiz ama kabaca tanım olarak vermek gerekirse,
+
+40
+00:08:21,880 --> 00:08:32,920
+direnç, kapasite ve enlüktans elemanlarının fazör uzayında direnç karşılığı olarak tanımlayabildiğimiz parametresi,
+
+41
+00:08:33,908 --> 00:08:44,908
+Empedans olarak geçiyor. Dolayısıyla birbirine paralel bağlı empedansları da tıpkı paralel bağlı dirençler gibi kullanıp bunların eşdeğer empedansını hesaplayabiliyor olacak.
+
+42
+00:08:44,908 --> 00:08:52,528
+Yine döneceğiz dersimizin başından itibaren görmüş olduğunuz tüm devre çöğrenlerini fazör uzayında da uygulayabiliyor olacak.
+
+43
+00:08:53,687 --> 00:08:59,427
+Buradaki uygulama adımlarımızı yine geçen hafta da konuştuğumuz ama kabaca şu şekilde olacak.
+
+44
+00:09:00,052 --> 00:09:08,211
+Eleman tanım bağlantılarımızı fazör uzayına geçireceğiz. Artık devre şemamız fazör uzayında karşımızda oluyor olacak.
+
+45
+00:09:08,211 --> 00:09:12,552
+Devremizi fazör uzayındaki değerlerle çözeceğiz. Yani her şeyi dirençmiş gibi çözeceğiz.
+
+46
+00:09:13,152 --> 00:09:19,692
+Veya direnç demeyelim de onu artık empedans diyelim. Her değeri empedans değeriyle çözeceğiz.
+
+47
+00:09:19,872 --> 00:09:23,148
+Daha sonrasında ilgilendiğimiz...
+
+48
+00:09:23,508 --> 00:09:44,948
+Değişken, bu bir elemanın gerilim veya akım olabilir. Fazör uzayında bunu elde edeceğiz. Daha sonra, asıl yapmak istediğimiz, elde ettiğimiz fazör uzayındaki değeri tekrar zaman boyutuna döndürmek. Bunu döndürdüğümüzde de aslında ilgilendiğimiz değişkenin zaman boyutundaki fonksiyonunu veya değişimini elde etmiş olacağız.
+
+49
+00:09:51,508 --> 00:09:58,828
+uzayından zaman uzayına dön. Bunun avantajı nerede? Avantaj dönüştürmek kolay. Yani zamandan
+
+50
+00:09:58,828 --> 00:10:04,528
+fazöre geçmek kolay. Fazordan zamana geçmek kolay. Ama bize sağladığı en büyük avantaj
+
+51
+00:10:04,528 --> 00:10:11,307
+zaman boyutunda differansiyel denklem çözmek yerine fazör uzayında lineer denklemler çözüyor.
+
+52
+00:10:11,307 --> 00:10:14,908
+Dolayısıyla burayı basitleştiriyor aslında bu yaklaşım.
+
+53
+00:10:15,572 --> 00:10:27,852
+Geçen hafta bu noktada kalmıştık. Karmaşıklayılarla ilgili tanımlarımızı vermiş ve toplama, çarpma, çıkartma, bölme ve gösterim tipleri üzerinde durmuştuk.
+
+54
+00:10:27,852 --> 00:10:31,692
+Yine bu haftaki ders akışımızdan bahsetmek gerekirse...
+
+55
+00:10:31,923 --> 00:10:39,364
+İki saatlik bir dersimiz olacak. Daha sonrasında RLC devrelerinin zaman boyutunda çözümle ilişkin bir tane uygulamamız olacak.
+
+56
+00:10:39,844 --> 00:10:49,264
+Kübra hocanız her iki grubada ortak olarak bu uygulamayı yapıyor olacak. Buna ilişkin de örneğimiz olsun diye istedik.
+
+57
+00:10:50,644 --> 00:10:58,223
+Bunu da söylemiş olayım. Şimdi bu haftanın konusuyla ilgili devam edebilmek anına ekran paylaşımıyla başlayalım.
+
+58
+00:11:00,052 --> 00:11:02,052
+Hem de tekrar etmiş oluruz.
+
+59
+00:11:03,712 --> 00:11:04,832
+Zaten özür dilerineceğim.
+
+60
+00:11:05,692 --> 00:11:10,332
+Şimdi hatırlayacağımız üzere zaman boyutunda çözünürme yapmak istediğimiz zaman.
+
+61
+00:11:11,772 --> 00:11:12,912
+Şunu da söyleyelim.
+
+62
+00:11:13,592 --> 00:11:18,052
+Büyük ihtimalle derslerimizde biz hani...
+
+63
+00:11:18,803 --> 00:11:31,403
+Bir RLC devresi ile karşılaştığımızda, paralel veya seri RLC devresi ise, burada alfa, omega, sıfır değerleri nasıl hesaplanır, hangi durumlarda çözüm nasıl önerilir, onları kapaca veriyor oluruz diye düşünüyorum.
+
+64
+00:11:32,043 --> 00:11:40,163
+Bunları çok ezberlemeye gerek yok. Bunları nasıl kullanacağımızı değerlendirmemiz gerektiği üzerine kafa yormamız daha anlamlı olur.
+
+65
+00:11:41,243 --> 00:11:46,303
+Dolayısıyla zaman boyutunda çözümü karmaşık ve zor olan devrelerle uğraşıyoruz.
+
+66
+00:11:46,720 --> 00:11:57,720
+İkinci dereceden diferansiyel denklemler karşımıza çıkıyor. Halbuki biz bu devreleri pazör uzayına geçirerek cebirsel bir takım denklemler haline getirip çözebiliyoruz.
+
+67
+00:11:57,720 --> 00:12:06,720
+Ne tür şeylerle karşılaşacağız? Örneğin, karşılaşacağımız devrelere örnek yapış şu şekilde karşımıza çıkabilir. Bir simzöyler kaynak var.
+
+68
+00:12:06,720 --> 00:12:12,720
+Şimdi burada değişik bir şeyler yazıyor. Onu daha görmemiş olabilir veya fark etmemiş olabilir. Geçen hafta fark etmeyen arkadaşlar.
+
+69
+00:12:12,960 --> 00:12:15,960
+Bir kaynağımız var. Bu kaynağımız simzloylar bir kaynağı.
+
+70
+00:12:16,500 --> 00:12:20,500
+Burada bir kutuyla ifade edilmiş bir elemanımız var.
+
+71
+00:12:21,220 --> 00:12:23,680
+Bu elemanın ne olduğunu bilmiyoruz ama bunun bir...
+
+72
+00:12:23,679 --> 00:12:49,199
+Karmaşık sayı ve fazör gösteriminde karmaşık sayıya tekabül eden bir empedans değeri var. Bir direnç değeri var. Buna ilişkin empedans değeri var. Bir kapasite elemanımız var. Bunun C değerini biliyoruz ama bu C değerine karşılık bir empedans hesaplanmış. Yine endüptans ve direnç elemanının içinde benzer şekilde hesaplanmış. Belki bu da dikkatinizi çekecek şeylerden birisi. Direnç elemanının değeri neyse?
+
+73
+00:12:49,716 --> 00:12:56,975
+Fazör uzayındaki empedansı da aynı şey. Ama kapasitör ve endüptans elemanları için farklı bir takım değerler geliyor.
+
+74
+00:12:57,696 --> 00:13:09,916
+Bununla birlikte bir veya birden fazla elemandan oluşan bir devre alt glonu da bir karakteristik olarak, giriş çıkış karakteristiği olarak bu şekilde karmaşık bir sayı olarak ifade etmek de mümkün.
+
+75
+00:13:10,475 --> 00:13:15,836
+Dolayısıyla karşımıza çıkacak, fazör uzayında karşımıza çıkacak devre kabaca buna benzer bir yapı olacak.
+
+76
+00:13:16,467 --> 00:13:25,368
+Kaldı ki devremizin sinizoylar bir kaynak olduğunu söylemiştik. Hani bir sinizoylar kaynaksa bunun zaman domenindeki karşılığının ne tür bir şey olmasını bekliyoruz?
+
+77
+00:13:25,368 --> 00:13:39,268
+İşte A çarpı, A çarpı sinüs, Omega t artı pi gibi bir şey olacak mesela değil mi? A, Omega ve pi, der değer alması olacak.
+
+78
+00:13:43,412 --> 00:13:48,412
+Bu şekilde bir karmaşık sayı gösterimi elde edeceğim. Bunun azı adetlerini konuşacağız birazdan.
+
+79
+00:13:49,412 --> 00:13:55,412
+Dolayısıyla zaman boyutundan, hazır uzayına geçtiğimizde karşılaşacağımız yapı böyle bir devre oldu.
+
+80
+00:13:55,412 --> 00:14:04,412
+Buna baktığınızda artık direnç elemanı diye bir şey yok, kapasite elemanı diye bir şey yok, endüktans elemanı diye bir şey yok. Her şey...
+
+81
+00:14:05,107 --> 00:14:13,107
+Bütün elemanların bu sinizoidal yani AC kaynaktaki akıma karşı göstermiş olduğu direnç evrenin isim empedansı.
+
+82
+00:14:15,107 --> 00:14:17,107
+Artık her elemanın bir empedansı vardır.
+
+83
+00:14:17,107 --> 00:14:31,107
+Empedans aslında mesela VL diyeceğimiz fazör zülayındaki bu eleman üzerindeki gerilim düşümü bölü, bu eleman üzerinden geçen akım, empedans veya
+
+84
+00:14:32,115 --> 00:14:44,015
+Empedans diyelim şimdi. Empedans, L diye ifade edeceğimiz değer olacak. Bakın, fazör uzayında bu elemanın, enduktans elemanının tanım bağımsızı biner bir hale geldi.
+
+85
+00:14:57,491 --> 00:15:19,471
+DİT bölü DT şeklinde verebiliyoruz değil mi? Bir diferansiyel denklendir. Halbuki burada fazla uzayına geçtiğimizde bir neler denkleme dönüşmüş oldu. Dolayısıyla artık dediğimiz gibi direnç yok, kapasite yok, endüstans yok. Her şey bir empedans değeri ve bu empedans aslında direnç gibi davranıyor.
+
+86
+00:15:21,531 --> 00:15:23,851
+Direnç değeri gibi, direnç gibi davranıyor.
+
+87
+00:15:25,940 --> 00:15:32,300
+Yani birbirine seri empedansları toplayıp bunun eşdeğer direncini hesaplayabiliriz, empedansını hesaplayabiliriz.
+
+88
+00:15:32,940 --> 00:15:40,100
+Veya birbirine paralel iki tane empedans var. Bunları kutlu dirençlerin paralel olması gibi bir araya toplayabiliriz.
+
+89
+00:15:41,560 --> 00:15:46,320
+Veya burada bu devre üzerinde, empedanslar üzerinden
+
+90
+00:15:49,908 --> 00:15:57,908
+düğüm denklemleri yazabiliriz. Veya bu empedans değerlerini kullanarak çevre akımları yöntemiyle devre çözülmesi gerçekleştirebiliriz.
+
+91
+00:15:57,908 --> 00:16:02,908
+Ama eninde sonunda ne olmuş olacak? Her şey karmaşık sayı isimlerinden verilmiş.
+
+92
+00:16:02,908 --> 00:16:08,908
+Yani mesela biz I1 değeri ile ilgileniyorsak, I1 değeri kabaca şöyle bir şey olacak.
+
+93
+00:16:08,908 --> 00:16:15,908
+Mesela bir A kat sayısı ve bir açı değeri ile bunu çözmüş olacağız.
+
+94
+00:16:16,275 --> 00:16:29,575
+Şimdi bunu I1 dediğimiz fazör değerine, bu bir fazör uzayındaki karşılık, bunu zaman domeynine, zaman boyutuna geçirmek istediğimizde I1, T'yi bulmamız gerekiyor.
+
+95
+00:16:30,055 --> 00:16:38,275
+Buraya nasıl geçeceğiz? Bunun için burada bulunmayan saklı bir parametre var, onu da kullanacağız. O da şu bilgi, onun bilgisi de şuradan geliyor.
+
+96
+00:16:38,899 --> 00:16:57,899
+Eğer ki devremizde bir adet sinzöyder kaynak varsa veya birden fazla da varsa aynı frekansday salar. Bu durumda devremizdeki tüm elemanların zaman boyutundaki salınımı kaynak frekansında olur.
+
+97
+00:16:59,251 --> 00:17:08,172
+Dolayısıyla biz buradan buraya geçerken A'yı ve P'yi doğrudan kullanacağız ama bir de bu kaynağımızın başta ne demiştik?
+
+98
+00:17:08,471 --> 00:17:15,971
+Mesela B diyelim, B çarpı sinüs, Omega T artı P demiştik veya buna teta diyelim şimdi karışmasın.
+
+99
+00:17:16,471 --> 00:17:21,551
+Şuradaki Omega bilgisi tüm elemanların salınım değerini belirleyen bir şey.
+
+100
+00:17:21,551 --> 00:17:26,612
+Dolayısıyla bir de burada gizli olarak saklamış olduğumuz Omega değerini de getirdiğimizde,
+
+101
+00:17:27,008 --> 00:17:32,008
+Bu i1 değerli fazör uzayında zaman boyutuna geçirebilmiş olacağız.
+
+102
+00:17:32,008 --> 00:17:40,008
+Dolayısıyla kabaca daha tanımları vermeden bile ne ile karşılaşabileceğimizi tanımlamış oluyorduk.
+
+103
+00:17:40,008 --> 00:17:47,008
+Buradaki devrele bu örneği geçen hafta atlamıştık. Bu örneğe şimdi detaylı bir şekilde bakalım.
+
+104
+00:17:48,276 --> 00:18:04,396
+Burada şunu göreceğiz aslında. Devremizde 3 tane eleman, 1 tane kaynağımız var. Kaynağımızın belirli bir frekans değeriyle çalıştırılığı durumda. Önce 5 kHz'lik bir f değeriyle çalıştıracağız. Daha sonra da 50 kHz'lik bir f değeriyle çalıştıracağız.
+
+105
+00:18:08,564 --> 00:18:20,244
+Omega t diye vermiştik, izoidal fonksiyonun denklemini. Dolayısıyla burada Omega dediğimiz şey, yani açısal hız, aynı zamanda 2Pi f'e eşit.
+
+106
+00:18:20,244 --> 00:18:25,164
+Değil mi? Bunu nasıl hatırlayacağız? Açısal hızımız Omega ise,
+
+107
+00:18:26,195 --> 00:18:38,755
+Bir tam periyot zamanında bu 2 pi'lik bir zamana ulaşır. Değil mi? Dolayısıyla omega dediğimiz şey 2 pi radyan, yani 360 derece bölü bir periyottur.
+
+108
+00:18:39,215 --> 00:18:45,295
+Periyot dediğimiz şey de aslında bir bölü periyotta ne demek bu? Saniyede kaç kere bu periyot tekrarlanır?
+
+109
+00:18:45,295 --> 00:18:51,775
+Bir bölü t'de frekans eşit. Dolayısıyla bu da aynı zamanda 2 pi f olarak yazılabilir.
+
+110
+00:18:52,435 --> 00:19:00,435
+Bunu da hatırlamış olalım. Bu devrimizi nasıl kullanacağız, nasıl analiz edeceğiz, nereye bakacağız?
+
+111
+00:19:00,435 --> 00:19:11,435
+Kaynak frekansımızı 5 kHz olarak ayarladığımızda, şurada çıkış gerilimi dediğimiz, yani endikans elemanı üzerindeki bu gerilime bir bakacağız.
+
+112
+00:19:11,435 --> 00:19:16,435
+Bu gerilim değerinin bizim frekans değerimizle ilişkisi nedir ona bakacağız.
+
+113
+00:19:17,423 --> 00:19:27,103
+Devremize 5 kHz uyguladığımızda çıkış frekansı nasıl? 50 kHz'lik bir frekansla kaynağımız tuttuğumuzda çıkış değerimiz nasıl değişiyor diye bakacağım.
+
+114
+00:19:28,683 --> 00:19:33,743
+Şimdi bunu yürüttüğümüzde simülasyon olarak çözdüğümüzü varsayalım.
+
+115
+00:19:34,703 --> 00:19:37,283
+Elde edeceğim ilk sonuç bu 5 kHz'lik durum için.
+
+116
+00:19:38,063 --> 00:19:41,644
+Bakın, osiloskop kullanımında şöyle yapmışız.
+
+117
+00:19:45,140 --> 00:19:52,340
+İki tane kanalı var. Bu kanallardan artı ve eksi, artı ve eksi olarak işaretleyebileceğimiz tuşları var.
+
+118
+00:19:52,340 --> 00:20:04,740
+Kanallarımızdan CH1 ve CH2'yi şu şekilde bağlamışız. Kanal 1'in artısı bir timsah krop var. Şuraya tutturmuşuz. Eksisini de şuraya tutturmuşuz.
+
+119
+00:20:05,140 --> 00:20:11,140
+Kanal 2'nin arkasını şuraya tutturmuşuz, Kanal 2'nin eksisini de getirip şuraya tutturmuşuz.
+
+120
+00:20:11,140 --> 00:20:19,140
+Dolayısıyla Kanal 1'de ölçtüğümüz gerilim Ground'a göre Vs yani giriş gerilimimizi ölçüyoruz.
+
+121
+00:20:19,140 --> 00:20:29,140
+Kanal 2'de neyi ölçüyoruz? Yine sıfır, Ground gerilimimize göre Endurance'ın diğer ucundaki gerilim, yani Vsfır'ı ölçüyoruz.
+
+122
+00:20:32,084 --> 00:20:41,124
+İşaretimiz kanal 2'de çıkış işaretimiz mevcut olmuş oluyor. Şimdi bu devreye baktığımızda, çıkışlara baktığımızda şöyle bir şey dikkatimizi çekiyor.
+
+123
+00:20:41,124 --> 00:20:54,124
+Şimdi giriş işareti için, giriş işareti sarıyla işareti. Bir periyot, yani bir kare, iki kare, üç kare, dört kare ve beş kare. Bir tepe beş karelik yer kalkıyor.
+
+124
+00:20:55,028 --> 00:21:00,708
+Şeye bakalım şimdi, çıkış işaretimizde, çıkış işaretimizde bir buradan, sıfırdan ne kadar atla oluyorum?
+
+125
+00:21:01,327 --> 00:21:11,788
+Bir kare, iki kare, üç kare, dört kare ve beş kare. Bunun anlamı şu, giriş işareti, bir de kareler ne kadarlık şeye karşılık geliyor?
+
+126
+00:21:11,988 --> 00:21:21,488
+Yirmi mikrosaniye, yani şuradaki her bir kare yirmi mikrosaniye imiş. Biz bir tepeyi saydık ama bir periyod iki tane tepeden oluşur.
+
+127
+00:21:23,028 --> 00:21:50,387
+Şöyle yazalım. Yani şu anda giriş ve çıkış işaretlerinin frekansını buraya ya, periyotlarını bulmaya çalışıyoruz. Bir tam periyot iki tepeden oluşur. Her tepede dört tane kare var ve her karemiz yirmi mikrosaniye. Buna göre bizim işaretimizin, yani giriş işaretimizin neyini bulmuş olduk? Giriş işaretimizin periyot değerini bulduk. Saniye cinsinden bulmamız lazım. Ne yapıyor bu?
+
+128
+00:21:54,259 --> 00:22:20,039
+Birin mikrosaniye demiştik. Kabaca yani. Ha beş pardon, çok üzüldüm. Bunlar beşmiş. Her bir tepede beş tane var. Çıkan tepe ve inen tepe. Dolayısıyla on iki yüz mikrosaniye gibi bir şey yaptı değil mi? İki yüz mikrosaniye. Yani iki yüz çarpı on üzeri eksi altı saniye yaptı. Bu bizim periyodumuz. Bunun frekansı ne?
+
+129
+00:22:20,500 --> 00:22:46,019
+F, bir bölü T idi. Dolayısıyla, bir bölü, iki yüz çarpı, on üzeri eksi altı. On üzeri altı yukarı çıktı. On üzeri altı bölü iki yüz. Şöyle yapalım. On üzeri altı, eksisi kalmadı artık. Bunu bin ve on üzeri üç diyelim. Bölü iki yüz. Şurada beş kaldı. Yani beş bin hertz. Yani beş kilo hertz oldu.
+
+130
+00:22:46,548 --> 00:23:06,304
+Giriş işaretimiz 5 kHz. Çıkış işaretimiz nasıl? Çıkışta benzer şekilde. Çıkış işaretimizin periyoduna bakalım. Çıkış işaretimizde bir periyodu iki tepeden oluşuyor. Her tepede 5 tane yatay kare var. Her karemiz 20 mikrosanede. Dolayısıyla bu da...
+
+131
+00:23:06,304 --> 00:23:33,443
+200 çarpı 10 üzeri eksi altı saniye teriyodun azal. Yani çıkışımız da 5 güre. Az önce söylemiştik ya, sinizoidal bir kaynağımız varken, geçici hal analizini bir kenara bıraktığımız zaman, yani devrede kaynak yeterince uzun bir süre boyunca bulunuyorsa, devremizdeki tüm elemanların salınımı aynı kaynak frekansımızın açısal hızında olur veya onun frekansı da çalışır.
+
+132
+00:23:33,811 --> 00:23:40,911
+Dolayısıyla bu hız, frekans bilgisi, kaynağımızın frekans bilgisini ayırıp bir kenarda tutabiliriz devreyi çizerken.
+
+133
+00:23:40,971 --> 00:23:45,751
+Yani fazör hesabında bu omega değerini ayırıp tutacağız.
+
+134
+00:23:47,271 --> 00:23:49,831
+Burada neyi görmüş olduk? İki şeyi görüyoruz.
+
+135
+00:23:50,831 --> 00:23:56,171
+Kaynak frekansımız neyse, çıkış işaretimizin frekansı da aynı değerde.
+
+136
+00:23:56,171 --> 00:23:59,891
+Bir, bunu gördük. İkincisi, bu devre özelinde.
+
+137
+00:24:00,500 --> 00:24:07,259
+Giriş yenliğimizin oldukça baskılanmış, sönümlenmiş bir hali çıkış olarak bize geliyor.
+
+138
+00:24:07,819 --> 00:24:10,579
+Şimdi bu devreyi bir de bu açıdan ele alalım.
+
+139
+00:24:11,179 --> 00:24:21,059
+Şimdi devremiz eğer ki DC şartlarda çalışıyor olsaydı, yani burada bir F değerimiz var ama bu F değeri sıfıra doğru gidiyor olsaydı bunun anlamı ne olacaktı?
+
+140
+00:24:21,599 --> 00:24:25,240
+Vs bir DC kaynak olacak, yani frekansımız sıfır olacak.
+
+141
+00:24:25,940 --> 00:24:51,660
+Düşük frekanslarda devre nasıl çalışıyor diye bakacağız. Bu durumda kapasite elemanı nasıl çalışıyor? Açık devre elemanı olarak. Yani burada bir DC kaynak var. Burada bir direncimiz var. Kapasite elemanı açık devre olarak çalışıyor. Endüktans elemanı da kısa devre olarak çalışıyor. Böyle baktığımız zaman bu devrenin şu uçları arasında okuyacağımız gerilim değeri ne olur?
+
+142
+00:24:53,107 --> 00:24:54,768
+Ve A ne olur?
+
+143
+00:25:00,627 --> 00:25:08,687
+tel üzerinde bir gerilim düşümü olmayacağı için sıfır olur. Demek ki bu devre düşük frekanslarda Vout'ta sıfır gerilim üretiyor.
+
+144
+00:25:09,507 --> 00:25:15,447
+Yani gidiş işaretimiz neyse, mesela ben buraya 10 voltluk bir DC işaret bile uygulasam, çıkışta sıfır çıkıyor.
+
+145
+00:25:16,307 --> 00:25:24,667
+Bunun anlamı şu, düşük frekanslı işaretleri baskılıyor, onları süzüyor, onların geçmesine izin vermiyor.
+
+146
+00:25:24,667 --> 00:25:27,167
+Şimdi tersini düşünelim.
+
+147
+00:25:27,988 --> 00:25:46,627
+Eğer ki frekansımız sonsuza doğru gitmiş olsaydı, F dediğimiz değer sonsuza doğru gitmiş olsaydı, yani bu durumda da eşdeğer elemanlar için kapasite elemanı bir sefer açık devre değil, kısa devre elemana doğru dönüşecek.
+
+148
+00:25:47,148 --> 00:25:53,288
+En diktans elemanımız ise açık devreye doğru dönüşecek. Bu durumda devremizi sözelim. Kaynağımız var.
+
+149
+00:25:53,715 --> 00:25:57,316
+Çok yüksek frekanslı bir kaynak. İşte direncimiz var.
+
+150
+00:25:58,115 --> 00:26:01,115
+Kapasite elemanı kısa devre elemana dönüştürüm.
+
+151
+00:26:01,556 --> 00:26:04,915
+Enjuksans elemanımız açık devre elemana dönüştürüm.
+
+152
+00:26:05,435 --> 00:26:12,316
+Bu durumda ben şu uçlardaki gerilimi ölçmek istediğimde, bir gerilim kaynağı da neyi göreceğim burada ben?
+
+153
+00:26:31,380 --> 00:26:53,760
+Aslında çiftleri bir şey olmuş. Burada göreceğimiz değer aslında kabaca yine sıfıra doğru gitmiş oluyor. Bunun anlamı şu, yine burada gelin düşünme olmadığı için, bunun anlamı şu, bu RLC devremiz, çıkış bölü giriş değerimizi,
+
+154
+00:26:54,291 --> 00:27:06,451
+Bir grafik olarak çizsek, düşük frekanslarda 0 değerine sahip, yüksek frekanslarda 0 değerine sahip ama ara bir frekans değerinde geçişe izin verecek şekilde çalışan bir devre.
+
+155
+00:27:06,531 --> 00:27:12,171
+Yani bu bir band geçiren bir kütle gibi çalışacak.
+
+156
+00:27:13,907 --> 00:27:41,907
+Kabaca bu şekilde çalışacağız. Yani bu RLC devresi olduğu için iki tane özel noktası var, kesim noktası var. Bunlardan birisini de geçirmeye başlıyor, diğerinde de kesmeye başlıyor. Kabaca belirli bir frekans-bans aralığını geçiren, bunun dışındaki frekanslar içerisinde ise sönümlendiren bir devre gibi çalışacağız. Dolayısıyla bu devreden iki şeyi tekrar hatırlayalım. Birincisi, giriş frekansımız neyse, devremiz uzunca bir süre boyunca...
+
+157
+00:27:41,907 --> 00:28:03,127
+Söyden işaretle sürüldüğü vakit çıkış işaretimizin frekansı da bu değerde oluyor. İkincisi, bu devremiz düşük genlikleri filtrelemiş ama orta frekanstaki değerlere bakalım. Şimdi orta frekanstaki değerleri bayağı korumuş. Bu örneğimizde
+
+158
+00:28:03,604 --> 00:28:15,604
+Giriş frekansımızı 50 kHz civarında, yani orta bir frekans rengine doğru çektiğimizde, devrenin giriş ve çıkışı arasındaki değerleri bize gösteriyor. Yine hem giriş hem de çıkışın...
+
+159
+00:28:16,016 --> 00:28:42,256
+Frekansları aynı. Bu da 50 kHz, bu da 50 kHz savunum gösteriyor. Fakat artık çıkış gerilimimizin genliği, giriş genliğimizde çok yaklaşmış. Yani sönümlemesi çok azalmış, süzmesi çok azalmış. Bunu olduğu gibi geçiriyor. Demek ki bu orta frekanslarda neredeyse olduğu gibi geçirdiğini söyleyebiliriz. Bir başka dikkatimizi çekecek noktada, burada çok belli olmuyor ama yine de işaret edelim.
+
+160
+00:28:42,708 --> 00:28:53,768
+Bu işaretimizin tepe noktası burası, buradaki işaretimizin de tepe noktası burası. Normalde bu ne anlama geliyor? Bu iki işaretimiz arasında bir faz farkı var.
+
+161
+00:28:55,368 --> 00:29:01,488
+Dolayısıyla biz RLC devrelere baktığımızda çıkış işaretimizde faz farkı oluşma ihtimali yüksek.
+
+162
+00:29:04,915 --> 00:29:23,915
+kompakt bir şekilde yine burada görebiliyoruz. Bakın buradaki pas farkı azalmış. Buradaki tepe noktamız şurada, buradaki tepe noktamız burada. Yani kabaca şu kadarlık bir pas farkı var. Ama düşük frekanslarda bu pas farkı da artmış. Demek ki bizim...
+
+163
+00:29:24,852 --> 00:29:32,032
+Bu tür RLC devrelerini analiz ederken, fazör uzayında da görünen 3 şeyimiz, 3 tane noktaya dikkat etmemiz lazım.
+
+164
+00:29:32,172 --> 00:29:40,012
+Birincisi, değişen frekansla, değişen kaynak frekansıyla giriş ve çıkış arasındaki genlik orantısı değişiyor.
+
+165
+00:29:40,512 --> 00:29:44,951
+İkincisi, yine giriş ve çıkış genlikleri arasındaki faz değeri değişiyor.
+
+166
+00:29:45,512 --> 00:29:52,852
+Üçüncüsü ise, uzun süre boyunca aynı sinizoylar kaynakla süzülen devrelerde tüm elemanları...
+
+167
+00:29:52,852 --> 00:29:57,752
+salınımı kaynak frekansında oluyor. Bu üç noktaya dikkat etmeniz lazım efendim.
+
+168
+00:30:02,291 --> 00:30:03,411
+Burada şimdi
+
+169
+00:30:07,347 --> 00:30:21,187
+Yani burada daha fazörü anlatmadan bu şekilde bir çözüm yapmak zor ama ne ile karşılaşacağımı ifade edebilmek adına kaynağımızın zaman boyutuna bu şekilde verdikten sonra buna ilişkin kaynağın fazör gösterimi şu olmuş olacak.
+
+170
+00:30:21,187 --> 00:30:34,187
+Bu 1 çarpı E üzeri J0 aynı zamanda şuna tekabül ediyor. Mesela birim çember çizelim. Birim çember üzerinde 0 açıda 100, R değeri 100 olan.
+
+171
+00:30:34,559 --> 00:30:47,679
+Uzaklığı yüz olan bir nokta. Yani kompleks düzlemde bu neye karşılık gelir? 100 artı 0 J sayısına karşılık gelir veya J ile atacak olursak 100 değerine karşılık gelir.
+
+172
+00:30:48,359 --> 00:30:56,559
+Daha sonrasında burada bir düğüm mantığından hareketle işte buraya bir V0 değeri diyelim devremizi çözeceğiz.
+
+173
+00:31:01,491 --> 00:31:11,412
+Ondan sonra, artı V0 bölü, empedans C, artı V0 bölü, empedans L, eşittir sıfır olacak.
+
+174
+00:31:12,032 --> 00:31:15,812
+Buradan bir denklemi çözüp, V0'ı yine fazör uzayında bulabiliriz.
+
+175
+00:31:16,231 --> 00:31:20,971
+Elde ettiğimiz değer şu, kabaca fazör uzayında böyle bir değer olsun. Bu ne demek?
+
+176
+00:31:21,552 --> 00:31:24,292
+Fazör gösterimlerinden hangisine tekabül ediyor bu?
+
+177
+00:31:24,980 --> 00:31:38,559
+Karnışık sayıları 3 farklı şekilde gösterebiliyoruz. A artı J B şeklinde veya R çarpı E üzeri J P şeklinde veya son olarak da R ve P şeklinde ifade ediyorduk.
+
+178
+00:31:39,079 --> 00:31:46,500
+Bu kartezyen gösterimli, şu eksponansiyel gösterimli, şu da kolar gösterimli.
+
+179
+00:31:46,500 --> 00:31:51,299
+Dolayısıyla burada eksponansiyel gösterimli verilmiş bir değer. Bunun karşılığı neydi?
+
+180
+00:31:51,791 --> 00:32:10,112
+Kartezyan koordinatlarda yazmak istiyorsak, yani 0.25 çarpı E üzeri 40 yüzlüğü gibi verilen bir karmaşık sayıyı, biz bu neydi? Eksponansiyel veya üstel formattaydı. Bunu kartezyan formata çevirmek istersek ne yapacaktık?
+
+181
+00:32:17,107 --> 00:32:31,947
+40 şeklinde ifade edecektik. Y değerimizde 0.25 çarpı sinüs 40 şeklinde ifade edecektik. Daha sonrasında da kartrejan gösterimdeki karşılığımız x artı j y şeklinde yazacaktık.
+
+182
+00:32:33,227 --> 00:32:41,147
+Bu şekilde sonucu elde ettikten sonra, fazör değerimizi elde ettikten sonra, burada
+
+183
+00:32:41,715 --> 00:32:45,215
+Bunu tekrar zaman boyutuna geri çevirmemiz lazım.
+
+184
+00:32:45,215 --> 00:32:51,016
+Bunu zaman boyutuna çevirirken dikkat edecek olursanız buraya gelen frekans değeri
+
+185
+00:32:51,251 --> 00:33:01,631
+Bizim baştaki kaynak frekans değerimizin aynısı. Bunun haricinde genlik ve faz açısı değerleri burada ürettiğimiz değerle belirleniyor.
+
+186
+00:33:02,111 --> 00:33:08,031
+Ne var mesela burada dikkat edeceğimiz? 40 derecelik bir faz açısı. Oradan faz açısı farklı olarak gelmiş.
+
+187
+00:33:08,172 --> 00:33:14,891
+Çünkü başta bizim şurada vermiş olduğumuz giriş kaynağımızın fazör gösteriminde herhangi bir açı değeri yok.
+
+188
+00:33:14,971 --> 00:33:19,172
+Faz açısı yok. Orada sıfırmış. Şimdi 40'lık bir artı 40'lık bir değer gelmiş.
+
+189
+00:33:19,251 --> 00:33:28,751
+İkinci olarak buradaki genlik değerimizi de doğrudan kullandık. Burada volt olarak verilmiş 0.25 volt ama burada milivolt olarak verilmiş. Dolayısıyla 250 milivolt.
+
+190
+00:33:29,871 --> 00:33:37,511
+Dolayısıyla devre çözümünde ilgilendiğimiz değerin fazör gösterinin genliğini doğrudan, faz açısını doğrudan kullanıyoruz.
+
+191
+00:33:37,631 --> 00:33:46,291
+Bir de getirip kaynağımızın frekans değerine ise onu koyduğumuz zaman ilgilendiğimiz değerin fazör karşılığına geçmiş oluyor.
+
+192
+00:33:50,195 --> 00:33:55,336
+Kompleks sayılarla ilgili olarak kompleks sayının, bunu geçen hafta yapmıştık, biraz hızlıca buraya ilerleyeceğim.
+
+193
+00:33:56,016 --> 00:34:03,395
+Kök eksi bir, biz J olarak ifade ediyoruz. Karmaşık sayılar Z ile gösteriliyor. Z sayısının bir real ve imajiner kısmı var.
+
+194
+00:34:03,895 --> 00:34:12,576
+Yani kabaca şöyle görselleştiriyoruz. Z sayısı kompleks sayılardan bir kompleks sayılar kümesine ait bir eleman olması gerektiğini,
+
+195
+00:34:12,576 --> 00:34:17,576
+Z'nin real kısmı ve Z'nin imajiner kısmından bahsedebiliyorduk.
+
+196
+00:34:17,907 --> 00:34:32,007
+Yine bu açıyı, şurada L değeri var kaybolmuş. Yine bu aynı sayı, Z sayımızı fazör gösteriminde veya polar koordinatlarda veya eksponansiyel konuda yazmak mümkündü.
+
+197
+00:34:32,587 --> 00:34:42,747
+Bu devremizdeki tüm eleman değişiklenleri için kullanabileceğimiz bir gösterimde. Bunları yine iki boyutlu bir vektör olarak da kullanabileceğimizi söylemiştik.
+
+198
+00:34:45,172 --> 00:34:49,851
+Dolayısıyla vektör toplaması gibi işlemler burada geçerliydi.
+
+199
+00:34:49,851 --> 00:34:57,851
+Yine eşlenik kavramından bahsetmiştik. Eşlenik kavramı da real eksene göre karmaşık sayının simetriyini, ayna görüntüsünü almak gerekli.
+
+200
+00:34:57,851 --> 00:35:04,972
+Yine kartrezyen koordinatlarda toplama, çıkartma işlemlerini yapmıştık.
+
+201
+00:35:04,972 --> 00:35:09,572
+Daha sonrasında yine çarpma işlemini kartrezyen koordinatlarında yürütmüştük.
+
+202
+00:35:10,675 --> 00:35:28,675
+bölme işlemini kartezan koordinatlarda yapmıştık. Daha sonrasında da çarpma ve bölme işlemlerini ilişkin olarak bunların polar koordinatlarda ve eksponansiyel gösterimde nasıl yürütüldüğünü ele almıştık.
+
+203
+00:35:30,675 --> 00:35:36,460
+Tabaca bunlara bakmıştık diye hatırlıyorum. Nerede bitirmiştik şöyle yönünü?
+
+204
+00:35:38,643 --> 00:35:41,043
+Devre çözümlerine daha gelmememiz de bitmiş.
+
+205
+00:35:41,683 --> 00:35:43,844
+Çözümleri kaydırıp tekrar bakalım.
+
+206
+00:35:50,547 --> 00:35:55,847
+Kabaca özetçe, geçen haftanın konusundan özetçe şunu da mutlaka aklımızda tutmamız gerekiyor.
+
+207
+00:35:56,627 --> 00:36:04,167
+Bölme ve çarpma işlemlerini kanunçı sayılarda yürütmek istiyorsak bunları polar veya da eksponansiyel konuda yürütmek, çarpma ve bölme için daha kolay.
+
+208
+00:36:04,768 --> 00:36:10,867
+Toplama ve çıkartma işlemlerini ise kartezzen kozimatlarda veya kartezzen gösteriminde yapmak daha pratik oluyordu.
+
+209
+00:36:14,728 --> 00:36:16,867
+Dolayısıyla örneğin bir...
+
+210
+00:36:17,632 --> 00:36:35,831
+Fazör uzayında bir güç hesabı yapmak istiyorsak ve elimizdeki bir gerilim değerimizi fazör uzayına V ve Fi kolay gösterimiyle akım değerimizde küçük İ ve Theta ile geçirmişsek, bir güç hesabı yapmak istiyorsak bu fazör uzayında büyük V ile büyük Y'ın çarpımı demek.
+
+211
+00:36:36,572 --> 00:36:40,731
+Dolayısıyla bunların çarpımı da kabaca şöyle gösteriyoruz. V ve küçük İ'nin çarpımı.
+
+212
+00:36:41,268 --> 00:36:46,547
+Faz açısı olarak da Fi artı çeta olarak bunu göstermek mümkündür.
+
+213
+00:36:48,547 --> 00:36:57,228
+Burada Öler formülüne bir ara değinmiştik. Öler formülünün çıkarılmasıyla ilgili olarak tekrar hatırlatalım.
+
+214
+00:36:57,228 --> 00:37:02,908
+Şimdi normalde Öler formül şunu diyor, yani şuradaki formülümüz bizim...
+
+215
+00:37:04,436 --> 00:37:12,376
+Eksponansiyel formüle, Cartesian form arasındaki geçişi sağlayan denklem. Bunu nasıl elde ediyoruz? Burada detayına girebileceğim ama tabaca bahsedenelim.
+
+216
+00:37:12,376 --> 00:37:24,656
+E üzeri x fonksiyonunun Taylor açılımını yazıyoruz. Daha sonra x yerine j theta değerini, jx de olabilir.
+
+217
+00:37:31,764 --> 00:37:50,764
+Bu durumda şöyle terimler çıkacak. X'in 0. dereceden bir A kat sayısı, A1 diyelim, artı, A2, A0, A1 diye gelse, X'in 1. dereceden değeri, artı, A2, X'in 2. dereceden değeri gibi böyle terimler gelecek.
+
+218
+00:37:50,764 --> 00:37:54,764
+A'ları falan nasıl bulacağımı şu anda girmiyorum. Dolayısıyla bizim...
+
+219
+00:37:55,219 --> 00:38:08,480
+Jθ'nın 0. dereceden, Jθ'nın 1. dereceden, Jθ'nın 2. dereceden, Jθ'nın 3. dereceden, Jθ'nın 4. dereceden gibi üstlerinin karşılıklarına ihtiyacımız var.
+
+220
+00:38:09,012 --> 00:38:33,672
+Jθ'nın 0. dereceden karşılığı 1, Jθ'nın kendisi. Kareyi aldığımız zaman, eksi teta kare yapacak. Bu değerin küpü Jθ küp olacak. 4. derecelerine baktığımızda da teta üzeri 4 şeklinde bir terim karşımıza gelecek. Yani J-1.
+
+221
+00:38:35,155 --> 00:38:58,316
+Şurada bir eksi daha olacak, onu atlamışım. J, eksi bir, eksi J ve bir. Dörtlük periyotlarda tekrarlayan değerler olmuş olacak. Dolayısıyla biz aynı işlemi yine cos x için Taylor açılımı elde edip x yerine j theta yazdığımızda ve yine sin x için
+
+222
+00:38:58,751 --> 00:39:03,072
+Taylor açılımı yaptığımızda ve yine x yerine j theta yazdığımızda şunu göreceğiz.
+
+223
+00:39:03,992 --> 00:39:16,072
+Eksponansiyel formun Taylor açılımında x yerine j theta koyduğumuzda tek terimler sinür j theta'nın Taylor açılımına karşılık gelecek.
+
+224
+00:39:16,692 --> 00:39:26,992
+Çip terimler, yani 0-2-4 numaradaki terimleri ayırıp topladığımızda, o da kosünüsün, kosünüs yi tetanın t'ler açılımına karşılık gelecek.
+
+225
+00:39:27,152 --> 00:39:33,012
+Dolayısıyla, detaya girmemekle birlikte t'ler açılımları üzerinden bu denklemi elde edebiliyoruz.
+
+226
+00:39:33,072 --> 00:39:42,312
+Bu da dediğim gibi, eksponansiyel formdan, kartezyen forma bizi karmaşık sayı gösteriminde geçiren bir durum.
+
+227
+00:40:09,715 --> 00:40:23,695
+Şimdi Z dediğimiz karmaşık sayı, A artı, A mı diyelim işte, A diyelim işte, J, B şeklinde yazılabilen, kartel eden sayı olduğu gibi, aynı zamanda şu şekilde de yazılabilir demiştik.
+
+228
+00:40:23,695 --> 00:40:33,775
+E üzeri J, T, T olarak da yazılabilir demiştik. Dolayısıyla bizim Z dediğimiz karmaşık sayının bir genliği var. Bu genlik neye eşit?
+
+229
+00:40:34,452 --> 00:40:55,552
+R'ye eşit değil mi? R aynı zamanda neye eşit? R dediğimiz şey de şuna eşit olmuş oluyor. R dediğimiz şey de A kare artı B karenin küküne eşit olmuş oluyor. Dolayısıyla bunlar arasında dönüşümü yazmak mümkün.
+
+230
+00:41:01,715 --> 00:41:02,715
+Kabaca bahsetmiştik.
+
+231
+00:41:02,715 --> 00:41:03,715
+Tamam.
+
+232
+00:41:03,715 --> 00:41:04,715
+İler diyorum.
+
+233
+00:41:09,268 --> 00:41:16,668
+Yine bir karmaşık sayının real ve imajiner kısımları verildikten sonra buna ilişkin bir de faz açısından bahsedelim.
+
+234
+00:41:16,907 --> 00:41:18,488
+Faz açısı nasıl bulunuyordu?
+
+235
+00:41:19,168 --> 00:41:24,568
+Yine karmaşık sayımız Z karmaşık sayımız A artı J B şeklinde yazılmışken,
+
+236
+00:41:25,347 --> 00:41:33,907
+bunun faz karşılığı yani yine aynı sayıyı R çarpı E üzeri J theta şeklinde yazmaya çalıştığımızda ki theta değeri nasıl bulunuyor diye bakacak olursak,
+
+237
+00:41:37,396 --> 00:41:40,715
+Ark tanjantı olarak yazılabilir diyorum.
+
+238
+00:41:42,776 --> 00:41:44,816
+B bölü A'nın ark tanjantı olarak yazılabilir.
+
+239
+00:41:44,816 --> 00:41:46,876
+Onun şekil üzerinde de şöyle görelim.
+
+240
+00:41:47,115 --> 00:41:51,215
+Mesela karmaşık sayımız şuymuş, 4 artı 3j.
+
+241
+00:41:51,996 --> 00:41:54,036
+4 artı 3j sayısıymış.
+
+242
+00:41:54,296 --> 00:41:57,615
+Biz bunun katasını bulmak istiyoruz, yani faz açısını bulmak istiyoruz.
+
+243
+00:41:58,135 --> 00:42:04,796
+Ne yapacağız? Karşı taraf 3, komşu taraf 4, yani 3 bölü 4'ün ark tanjantı olarak bu açıyı
+
+244
+00:42:04,896 --> 00:42:06,016
+Bulmamız mümkün.
+
+245
+00:42:06,916 --> 00:42:07,576
+Devam ediyorum.
+
+246
+00:42:11,891 --> 00:42:13,891
+Aynı sorunun devamı.
+
+247
+00:42:21,396 --> 00:42:26,756
+Yine çarpmaya ilişkin bir örnek. Geçen hafta bunu detaylı yapmıştım. O yüzden yine bölmeye ilişkin de.
+
+248
+00:42:26,756 --> 00:42:40,796
+Yalnız şunu hatırlayalım. İki tane karmaşık sayının eksponansiyel gösterimindeki veya fazör gösterimindeki değerlerini çarpacak olursak, genlik değerleri çarpılıyor, faz değerleri toplanıyor.
+
+249
+00:42:42,900 --> 00:42:52,900
+Aynı iki karmaşık sayının polar koordinatlardaki karşılıkları Z1 ve Theta1 ile Z2, Theta2 ile ifade edildiği şekilde iken,
+
+250
+00:42:53,600 --> 00:42:55,400
+bu iki olması lazım, yanlış yazılmış.
+
+251
+00:42:57,000 --> 00:43:03,400
+Bu şekilde ifade edildi iken, Z1 bölü Z2 karmaşık sayı işlem sonucu,
+
+252
+00:43:04,532 --> 00:43:09,852
+Genlikler bölünecek, faz açıları birbirinden çıkartılacak. Aslında bunu hayal etmek çok kolay.
+
+253
+00:43:10,652 --> 00:43:16,012
+Eksponansiyel bir terim olduğu için yukarı çıkarken E üzeri eksi j teta 2 olarak çıkıyor bu.
+
+254
+00:43:16,532 --> 00:43:25,672
+Dolayısıyla aynı taban doldukları için toplanırken de j parantezini aldığımızda teta 1 eksi teta 2 olarak şunlar da yanlış yazılmış yine.
+
+255
+00:43:26,128 --> 00:43:39,488
+teta 1 ekli teta 2 olarak karşımıza çıkmış oluyor. Bu da zaten eksponansiyel formdaki polar değerimiz veya açı fazla açısı değerimiz olduğu için bu ikisinin farkını alarak işlemi pratik bir şekilde yapabiliriz diyorum.
+
+256
+00:43:40,488 --> 00:43:48,168
+Bir örnek üzerinden ilerlemeye çalışalım. Şimdi burada şeyi bilmiyoruz daha. Nedir onun adı?
+
+257
+00:43:48,596 --> 00:43:59,195
+İşte bize zaman domeninde bir kaynak verilmişti. O kaynağın fazör uzayına nasıl geçirildiğini daha bilmiyoruz. Ama bu fazör değerleri elimizdeyken biz devreyi çözebilir miyiz? Ona bakacağız.
+
+258
+00:43:59,195 --> 00:44:14,876
+Bunun için devremiz bir kaynak var, bir de endüktans elemanı var. Endüktans elemanının empedans değeri bu şekilde, pardon bu biliamper değeriymiş, akım değerimiz.
+
+259
+00:44:15,059 --> 00:44:25,059
+bu şekilde verilmiş. İ ile üzerinden geçen akım bu şekilde verilmiş. Bizden bu endüktans elemanın üzerindeki gerilim değerini zaman domeyinde bulmamız isteniyor.
+
+260
+00:44:25,059 --> 00:44:36,059
+Şimdi biz biliyoruz ki, fazör uzayına geçtiğimiz zaman artık endüktans, kapasite diye bir şey yok. Her eleman aynı kutu şeklinde yazılabilir ve bunların artık empedansı var.
+
+261
+00:44:37,059 --> 00:44:38,923
+Bunların empedansı var.
+
+262
+00:44:40,980 --> 00:44:43,980
+Bu empedans değerini nasıl bulacağız?
+
+263
+00:44:46,980 --> 00:44:56,980
+Eleman üzerine uygulanan bir akım değerimiz var. Eleman üzerindeki gerilim değerimiz var. Bunları birbirine oranlayacak olursak, biz buradaki empedans değerini bulabiliriz.
+
+264
+00:44:56,980 --> 00:45:03,980
+Bu empedans değerini şeyden hatırlayalım, yani R'de nasıl yapıyorduk? V bölü I şeklinde yapıyorduk.
+
+265
+00:45:03,980 --> 00:45:05,980
+Ya zaman boyutunda şöyle küçük.
+
+266
+00:45:05,980 --> 00:45:07,980
+V bölü I şeklinde yapıyorduk.
+
+267
+00:45:08,788 --> 00:45:11,188
+Aynı şey fazör uzayında da geçerli.
+
+268
+00:45:12,288 --> 00:45:17,447
+Fazör uzayındaki empedansın gösterimi E ile yazdım ama Z, büyük Z ile ifade ediliyor.
+
+269
+00:45:17,447 --> 00:45:19,288
+Bu empedans değerimiz.
+
+270
+00:45:19,508 --> 00:45:24,427
+Empedansın gösterimi büyük Z ile yapıyor.
+
+271
+00:45:24,528 --> 00:45:29,108
+Dolayısıyla biz ZL değerimizi bulabilmek için ne yapacağız?
+
+272
+00:45:35,956 --> 00:46:00,056
+karşılığını birbirine oranlayacağız. VL değerimiz neymiş? Eksi 3 köküç artı 3J şeklinde bir gerilim. Onun milivolts mertebesinde. Akım değerimizde 1 artı köküç J şeklinde yine miliamper mertebesinde bir değer. Milliler birbirini gösterecek. Dolayısıyla elde ettiğimiz empedans değeri yine Ohm cinsinden olmuş olacak.
+
+273
+00:46:01,876 --> 00:46:11,336
+Şimdi buradaki hesabı nasıl yürütebiliriz? Bunu yapabilmek için birinci işlem buradaki değerlerin her birinin fazör karşılığını hesaplamak olabilir.
+
+274
+00:46:11,496 --> 00:46:16,656
+Veya şöyle de yapabiliriz. Burayı alt tarafın eşleniğiyle çarpalım.
+
+275
+00:46:17,656 --> 00:46:20,556
+Alt tarafın eşleniğiyle çarpalım. Ne elde edeceğiz burada?
+
+276
+00:46:21,556 --> 00:46:23,016
+Şöyle işlemlemeye çalışalım.
+
+277
+00:46:23,656 --> 00:46:26,096
+Eksi 3 kök 3 artı 3y.
+
+278
+00:46:26,771 --> 00:46:30,771
+çarpı 1-3j olacak.
+
+279
+00:46:32,291 --> 00:46:48,231
+Çarptığımız zaman, 3-3, artı 9j, artı 3j, sonrasında da artı 3-3 değeri gelmiş olacak.
+
+280
+00:46:52,724 --> 00:47:13,464
+Köküç, eksi, J'lerden de eksi geldiği için artı oldu. Bunlar gitti. Üst tarafta 12 J kaldı. Alt tarafa bakalım. Alt tarafta da eşleniyle çarptığımız için, işte eksi köküç J, artı köküç J, onlar birbirini götürecek. Birincinin karesiyle ikincinin karesinin toplamı olacak.
+
+281
+00:47:20,083 --> 00:47:33,083
+Bir de eksimiz var burada. Aslında eksi köküç J'nin karesini yazmış olacağız. O da eksi 3 J kare. O da eksi 1. Dolayısıyla 3 değere gelmiş olacak buradan.
+
+282
+00:47:33,803 --> 00:47:38,583
+Dolayısıyla aşağıda da 4. Böldüğümüz zaman 3 J değerini elde etmiş olacağız.
+
+283
+00:47:40,723 --> 00:47:43,903
+3 J değerini. Şunun altına da şey yazalım bu alttakine.
+
+284
+00:47:44,403 --> 00:47:51,604
+1 artı köküç J ile neyi çarptık? Bunun eşlenmeyi çarptık. Yani 1 eksi köküç J'yi çarptık.
+
+285
+00:47:51,704 --> 00:48:00,284
+Erdettiğimiz değer 3J. Bu 3J değerimizin zaman domenindeki karşılığını şu anda bulamayız.
+
+286
+00:48:00,284 --> 00:48:03,144
+Ama en azından empedans karşılığını bulabildik.
+
+287
+00:48:08,947 --> 00:48:20,468
+Zaten ne bekliyoruz? Bir endüstans elemanı için, pür imajiner bir empedans değeri bekliyorduk, onunla uyumlu olduğunu gördük.
+
+288
+00:48:20,728 --> 00:48:29,568
+Veya şunu yapabiliriz, zaten VL bölü IL hesabını yapacağız yani.
+
+289
+00:48:30,268 --> 00:48:36,468
+Dolayısıyla üst tarafta gerilim değerimize ilişkin fazör değeri var, alt tarafta da akım değerimize ilişkin fazör değeri var.
+
+290
+00:48:36,851 --> 00:48:42,731
+Bu karmaşık sayı katilacan değeri var diyelim. Buna karşılık fazör değerini hesaplayacağız.
+
+291
+00:48:44,072 --> 00:48:51,092
+Yani bu ne yapıyor? 3 köküçün karesiyle 3'ün karesini topluyoruz. Bunların kökünü alıyoruz.
+
+292
+00:48:51,092 --> 00:49:04,491
+Yani 9, 27 artı 9'un kökü 6 yapar. Yani buna karşılık gelen genelik 6. Faz açısı değerimiz ne? 3 bölü eksi 3 köküçü art tanjantı.
+
+293
+00:49:07,027 --> 00:49:24,227
+Ark tenjantı, ne yapıyor bu? 1 bölü köküç, eksi 1 bölü köküç. Şeye çizelim bunu, birim çembere, 1 bölü köküç, 2 değeri var.
+
+294
+00:49:28,867 --> 00:49:31,607
+Şöyle bir açı değerine karşılık gelecek, burası,
+
+295
+00:49:32,096 --> 00:49:38,055
+30 derece olan bir değer. Yani baktığımız zaman 60 derecede köküç, burada 1 olmuş olacak.
+
+296
+00:49:38,675 --> 00:49:44,275
+Art tanjantına baktığımızda da karşı bölü komşudan 1 bölü, eksi köküç değeri olmuş olacak.
+
+297
+00:49:44,435 --> 00:49:48,195
+Dolayısıyla burası da 150 derece olarak bulunabilir. Zaten burada da öyle değil.
+
+298
+00:49:48,755 --> 00:49:59,515
+Alt tarafa geldiğimizde, alt tarafın genliğine 1 artı köküçün karesi, yani 1 artı 3 onun kökü, 1 artı köküçün karesi, bunun kökü 2 yapacak.
+
+299
+00:50:00,000 --> 00:50:23,819
+Fas açısına baktığımızda da, Köküç bölü bir arkanjan, bu açımızda 60 derece yapacak. Dolayısıyla 2'ye 60. Dolayısıyla bunlar üzerinden işlemi yürüttüğümüzde de ne olacak? 3'e 90 olmuş olacak. Biz ne bulmuştuk? 3J bulmuştuk. 3J ile 3'e 90 aynı şey mi ne dersin?
+
+300
+00:50:34,612 --> 00:50:35,672
+Harfli gibi duruyor.
+
+301
+00:50:40,596 --> 00:50:46,436
+Polar gösterilendeki karşılık ya, ne demek yani bu? Şu demek.
+
+302
+00:50:49,956 --> 00:50:56,416
+Merkezden 90 derece yapan doğru üzerinde, burası 0 derecemiz, 90 derece şurası.
+
+303
+00:50:57,556 --> 00:51:03,016
+Dolayısıyla şu açıda, merkezden 3 birim ötede, şurası da 3 birim.
+
+304
+00:51:03,380 --> 00:51:16,760
+Dolayısıyla bizim işaret ettiğimiz nokta burası. Burası imajiner eksen, burası real eksen. Dolayısıyla bu pür bir imajiner sayı. Bu imajiner sayımızda ne? 3J'ye karşılık geliyor. Dolayısıyla aynı şeyi bulduğumuzu göstermiş olduk.
+
+305
+00:51:16,760 --> 00:51:27,960
+Veya göstermek adına bunun eksponansiyel form karşılığını yazalım. 3 çarpı E üzeri J 90. Partizyen koordinata çevirelim. 3 parantezinde.
+
+306
+00:51:28,431 --> 00:51:41,271
+cos90 arttı, j çarpı, sin90, cos90, sin91, dolayısıyla şuradan j geldi. Demek ki bu da 3j olarak karşımıza çıkmış oldu.
+
+307
+00:51:42,331 --> 00:51:46,331
+İşlem olarak da eşitliğini bu şekilde görmüş olduk.
+
+308
+00:51:47,051 --> 00:51:49,291
+Var mı buraya kadar olanlarla ilgili sormak istediğini?
+
+309
+00:51:51,471 --> 00:51:53,491
+Varsa arada kesip bölebilirsiniz.
+
+310
+00:52:03,155 --> 00:52:30,476
+Güç hesabıyla ilgili burada bir denklem var. Yine gücün V çarpı İ olarak verildiği bir senaryoyla karşılaşıyoruz. Ama özel bir durum, fazör gösteriminde normalde zaman boyutunda V İ diye bir gücü hesaplıyorduk ya, fazör gösteriminde güç dediğimiz şey, gerilimin fazörüyle ilgili elemanın içindeki gerilimin fazörüyle akım değerinin
+
+311
+00:52:31,380 --> 00:52:33,380
+Eşleniği üzerinden bulundu.
+
+312
+00:52:33,980 --> 00:52:42,620
+Buna göre, biz gerilim değeri olarak bize böyle bir karmaşık sayı, akım değeri olarak böyle bir karmaşık sayı verirmişse, biz bunun akım değerinin eşleniğini alıyoruz.
+
+313
+00:52:42,720 --> 00:52:43,580
+Eşlenik ne demek?
+
+314
+00:52:44,360 --> 00:52:58,120
+Eşlenik şu demek, mesela A artı B, C şeklinde ise, Z değerimin, Z'nin eşleniği A artı A eksi B, C şeklinde yazılabiliyor.
+
+315
+00:52:58,867 --> 00:53:04,748
+Dolayısıyla karmaşık sayının kat sayısını eksi yapacağız. Eksi 7 yapacağız.
+
+316
+00:53:05,648 --> 00:53:14,568
+Dolayısıyla bu şekilde yazdıktan sonra elde etmiş olduğumuz değer, iki tane kartelijen formülündeki karmaşık sayının çarpımı olarak bu şekilde elde ediliyor.
+
+317
+00:53:15,728 --> 00:53:17,608
+Veya şunu yapabiliriz.
+
+318
+00:53:25,940 --> 00:53:41,300
+dönüp fazör gösterimindeki veya polar koordinattaki karşılığını hesaplayabiliriz. Bunun için ne yapacağız? 17 ile 51'in sıfıra sıfıra olan öfküzü uzaklığını hesaplayacağız. Daha sonrasında da fazör açısı olarak da
+
+319
+00:53:46,036 --> 00:53:54,435
+Karmaşık sayımızın kür karmaşık sayı kısmının kat sayısıyla, pür imajiner kat sayımız arasındaki oranın arsancancını alacağız.
+
+320
+00:53:54,435 --> 00:54:02,435
+Dolayısıyla elde ettiğimiz değer, böyle bir doğrudan polar gösterim değerine ulaşacak.
+
+321
+00:54:02,435 --> 00:54:08,036
+Üçüncü alternatif 3'e 4'ciğinin polar gösterimini elde edeceğiz.
+
+322
+00:54:08,351 --> 00:54:17,351
+Şöyle bir değere tekabül ediyor. Daha sonrasında 6-7J'nin kolay gösterimini elde edeceğiz. O da böyle bir değer yapıyor.
+
+323
+00:54:17,351 --> 00:54:24,351
+Ve bunları birbiriyle çarpacağız. Birbiriyle çarptığımız zaman elde edeceğimiz sonuç kabaca
+
+324
+00:54:25,043 --> 00:54:32,143
+Küsratlar önemli değil ama birbirine eşit olmuş oluyor. Yani üç farklı yöntemle bu çarpma işlemini yürütmemiz mümkün.
+
+325
+00:54:32,643 --> 00:54:37,303
+Hala bir karmaşık sayılarda işlemler nasıl yapılır kabaca onlara bakar durumdayız.
+
+326
+00:54:37,923 --> 00:54:46,243
+Daha zaman boyutundan fazör boyutuna bu şeyler nasıl geçer, değişkenler nasıl geçer daha ona bakmamış olduk.
+
+327
+00:54:51,027 --> 00:55:03,647
+Şimdi önemli konulardan birisi de sürekli sinizoidal hal analizi veya sürekli hal analizi yaparken ve kaynağımız sinizoidal işaretken ki özetçe bunun adı sürekli sinizoidal hal.
+
+328
+00:55:06,068 --> 00:55:14,168
+Bu durumda kaynağımızı tanımamız lazım. Yani sinzoydar bir işaretin ne tür parametreleri var onları tanımamız lazım.
+
+329
+00:55:14,427 --> 00:55:21,367
+Aynı frekansta iki tane işaret gördüğümüzde, grafik olarak çizdiğimizde bunlar arasındaki farkları ifade edebilmemiz lazım.
+
+330
+00:55:22,487 --> 00:55:24,068
+Onunla ilgili olarak da...
+
+331
+00:55:31,539 --> 00:55:34,939
+Direkt hangi tür parametreler var onlara bakarak başlayalım.
+
+332
+00:55:36,339 --> 00:55:48,199
+Sinizoydar bir işaretin kendini ne kadar sürede bir tekrarladığına ilişkin olarak 3 tane parametremiz var. Bunlardan birisi periyod, birisi frekans, birisi de açısal frekans.
+
+333
+00:55:49,419 --> 00:55:51,859
+Bunları şöyle ifade edelim.
+
+334
+00:55:56,884 --> 00:56:08,503
+2PF şeklinde, 2PFT şeklinde yazdığımız bir fonksiyon olsun. Burada F değerimiz doğrudan frekansa karşılık geliyor.
+
+335
+00:56:10,423 --> 00:56:19,804
+Bununla birlikte yine aynı işareti A çarpı sinüs omega T şeklinde yazabiliriz. Buradaki omega T de açısal frekansa karşılık geliyor.
+
+336
+00:56:22,260 --> 00:56:29,080
+Periyot ne? Periyot da az önce de söylemiştik. Frekansın çarpmaya göre tersi. Şöyle değerlendirelim.
+
+337
+00:56:29,760 --> 00:56:35,860
+Periyot, birimi saniye cinsinden. Frekansın birimi, frekansın birimi hertz cinsinden.
+
+338
+00:56:36,780 --> 00:56:45,600
+Dolayısıyla periyot diyor ki, bir işaretin, periyodik bir işaretin kendini tekrarlamaya başlaması için geçmesi gereken süre periyot.
+
+339
+00:56:46,195 --> 00:56:52,815
+Frekans ise bir saniyede bu işaret kendini kaç kere tekrar eder? Buna ilişkin bir parametre.
+
+340
+00:56:55,135 --> 00:56:57,895
+Dolayısıyla mesela şöyle çizecek olursak.
+
+341
+00:57:06,931 --> 00:57:10,931
+Bu işaretimizin bir periyodunu çizmeye çalışalım. Mesela şuradan seçtim.
+
+342
+00:57:13,111 --> 00:57:19,611
+Bu işaretimizin bir periyodu şu kadarlık bir yer miydi? Yoksa şu kadarlık bir yer miydi?
+
+343
+00:57:24,659 --> 00:57:52,320
+İşaret kendini tekrar etmeli değil mi? Yani sıfırda daha sonra giderek artan değerler almalı. Burası değil yani. Evet, sıfırda ama giderek azalıyor. Demek ki burası periyodun bitişi değil. Periyodun bitişi burası. Buradan sonra işaret yine artan değerler alıyor. Dolayısıyla bir periyodumuz böyle. Dolayısıyla sinizoidal bir işaretin bir periyodu için bir çıkan tepe, bir inan tepeyi tam olarak geçmem lazım. Ama aynı zamanda ben periyodu şöyle de tanımlayabilirim.
+
+344
+00:57:52,755 --> 00:57:59,296
+Bir tepe başlangıcından diğer tepe başlangıcına kadar olan geçen sürede yine bir periyodtur.
+
+345
+00:58:00,516 --> 00:58:10,356
+Dolayısıyla bu key pointleri dikkate alarak, yani işaretin yata ekseni kestiği veya tepe noktalar gibi değerleri dikkate alarak periyod değerlerini görmek mümkün.
+
+346
+00:58:13,036 --> 00:58:17,456
+Periyodun çarpmaya göre tersi de frekans olarak karşımıza çıkıyoruz zaten.
+
+347
+00:58:18,900 --> 00:58:36,460
+Peki bu işaretin başka ne tür özellikleri var? İşaretin taramış olduğu, bu sefer dikeyde taramış olduğu range bakıyor olacağız. Buradaki değişim miktarı bizim için önemli olabilir. Örneğin, işaretlerimizden birisi şu oldu.
+
+348
+00:58:42,228 --> 00:58:48,668
+Birisi bu olsun. Bir periyot boyunca şöyle çizilmiş olsun. Buradan devam ediyor. İkinci işaretimiz de şöyle bir şey oldu.
+
+349
+00:58:55,635 --> 00:59:04,996
+Böyle bir işaretimiz oldu. Bu A, bu da B sinyalimiz. A ve B arasında bir frekans farkı var mı?
+
+350
+00:59:09,076 --> 00:59:11,076
+veya bir periyot farkı var mı?
+
+351
+00:59:14,835 --> 00:59:19,516
+Bunlar arasında herhangi bir frekans veya periyod farkı yok.
+
+352
+00:59:19,516 --> 00:59:24,076
+Her ikisi de tepe noktadan bir sonraki tepeye aynı anlarda ulaşıyor.
+
+353
+00:59:24,076 --> 00:59:26,076
+Bunların frekantları aynı.
+
+354
+00:59:41,588 --> 01:00:06,368
+Frekansları aynı, periyotları aynı. Fark nerede? Bu işaretin başlı maksimum geldiği için. Yani biz A işareti için baktığımızda burada mesela A çarpı sinüs 2PFT işaretine bakarken B için baktığımızda B çarpı sinüs yine 2PFT. Frekansları aynı ama B dediğimiz değer A'dan küçük bir değer olarak karşımıza çıkmış oluyor.
+
+355
+01:00:07,380 --> 01:00:14,380
+Dolayısıyla bu genlik değerimiz bizim sinizoidal işaretle başa gelen çarpım değeri olarak karşımıza çıkıyor.
+
+356
+01:00:14,380 --> 01:00:21,380
+Sinizoidal işaretler için bir de tepeden tepeye genlik değeri var. Tepeden tepeye genlik değeri şundan dolayı önemli.
+
+357
+01:00:21,380 --> 01:00:29,380
+Bizim sinizoidal işaretimizin üzerine bir de DC işaret bilmiş olabilir. Normalde eğer bir DC işareti yoksa,
+
+358
+01:00:30,068 --> 01:00:52,968
+Sinizolidar işaretinin ortalama değeri ne olması lazım? Sıfır olması lazım değil mi? Bakın şöyle bakalım. Çeyrek periyot boyunca artıda kalmış, çeyrek periyot boyunca ekside kalmış, çeyrek periyot boyunca ekside kalmış, çeyrek periyot boyunca artıda kalmış. Bunları net olarak topladığımızda sıfır yapar.
+
+359
+01:00:55,791 --> 01:01:18,871
+Saf sinizoidal işaretin, Saf sin işaret, ortalaması sıfır. Ama biz bu işareti, yani V diye bir işaret üretsek ve buna desek ki A çarpı siniz 2PFT artı C diye sabit bir değer vermiş olsa bu işaretimizin şekli şöyle olacak.
+
+360
+01:01:25,364 --> 01:01:32,923
+Bu da şu demek, işaretimizin ortalaması burası ya, bu işaretin ortalaması C miktar boyunca ötelenmiş olacak.
+
+361
+01:01:33,423 --> 01:01:46,943
+Dolayısıyla bu şekilde ötelenmiş bir sinyalin yatay eksenize kesiştiği bir değer olmayacağı için, 0 yatay eksenin referansına göre bir genlik gerilim değeri veya genlik değeri okumak zor olacak.
+
+362
+01:01:47,083 --> 01:01:48,043
+O zaman ne yapıyoruz?
+
+363
+01:01:48,467 --> 01:01:59,587
+O zaman bu işaretin tepeden tepeye genlik değerini kullanıyoruz. Bunun tepeden tepeye genlik değeri 2A'lık bir alan tarıyor.
+
+364
+01:01:59,587 --> 01:02:12,707
+Bir de işaretlerimizin etkin değerini tanımlayabiliyoruz. Bu da Routman Square değeri olarak karşımıza çıkıyor. Bunun anlamı da şu. Bir sinizoidal işareti.
+
+365
+01:02:13,076 --> 01:02:39,155
+Bir elemana uyguladığımızda, bu bir kaynak olsun, bir direnç elemanına uyguladığımızda, burada direnç elemanı üzerinde harcayacağımız güç, şuna eşit olsun dersek eğer, bir DC kaynakla aynı dirence, yine bir tüketim yapacak olursak, güç harcaması yapacak olursak, DC kaynak durumunda elde ettiğimiz güç,
+
+366
+01:02:39,827 --> 01:02:43,108
+Bizim sinizoydar işaretinin RMS değeri oluyor.
+
+367
+01:02:44,668 --> 01:02:56,968
+Tekrar etmek gerekirse, bir sinizoydar işaretinin bir direnç elemanı üzerinde harcadığı güç, bunu not ettik, hesapladık, not ettik.
+
+368
+01:02:57,311 --> 01:03:09,911
+Eğer ki aynı gücü bir DC kaynakla harcamak istiyorsa, bu DC değerimiz bizim sinizoydar işaretimizin efektif değeri, yani root-in-square değeri olmuş oluyor.
+
+369
+01:03:12,211 --> 01:03:17,871
+DC offset'ten az önce bahsetmiş olduk, ortalama değerimizi yükselten bir etken.
+
+370
+01:03:19,027 --> 01:03:34,688
+Kabaca ondan da bahsetmiş olduk. Son olarak bir de sinizoylar işaretleri, bir dilden ayıran bir başka parametrede faz açısı. Yine iki tane işaretimiz olsun. Şöyle çizelim bunları. Bir tanesinin tepe değeri şöyle başlattı.
+
+371
+01:03:39,443 --> 01:03:58,403
+Diğerinin tepe noktası da şurada başlar. Frekansları da aynı değil tabii ki. Frekansları aynı ama bunların tepe noktaları birazcık kaymış. Her ikisinin periyodu aynı olsun. Bunun periyodu da T, bunun periyodu da T.
+
+372
+01:04:01,492 --> 01:04:10,152
+Tepe noktaları aynı zamana denk gelmiyor. İşte bu durumda da aslında yine A ve B sinyalleri için şunu yapmış olduk.
+
+373
+01:04:10,152 --> 01:04:24,092
+A sinyalimiz, bir büyük A çarpı sinüs, 2PF'de frekansları aynı olduğu için, artı P1, diğer tarafta da B eşittir, genlikler de farklı, onu da yazalım.
+
+374
+01:04:25,684 --> 01:04:37,204
+2PF'de artı Fi2 gibi bir değere karşılık gelmiş oluyoruz. Fi1 ve Fi2 birbirinden farklı. Bunun anlamı da şu, yatay eksende bunları kaydırmış oluyoruz.
+
+375
+01:04:37,324 --> 01:04:50,584
+2PF'de şu artı olacak yanıt verici. Zamanda fonksiyonu kaydırmış oluyoruz. Yani hiçbir faz farkı vermemiş olsaydık da, bir başka gösterimde şöyle yapalım. Elimizde bir sinyal var.
+
+376
+01:04:51,476 --> 01:05:08,476
+Şöyle değişim gösteren bir sinyal. Bunu A çarpı sinüs 2PFT olarak işaret edelim. Ben bu fonksiyonu birazcık kaydıracak olursam, yani tepe değeri şuradan başlayacak şekilde kaydıracak olursam, bu durumda
+
+377
+01:05:13,108 --> 01:05:17,328
+Bu şekilde kaydırdığında şunu yapmış oluyor. A üstü diyelim. Şuna A üstü diyelim.
+
+378
+01:05:18,068 --> 01:05:26,168
+A çarpı sinüs 2PFT-90 derece. Mesela bunu 90 derece kaydırmış olur.
+
+379
+01:05:26,748 --> 01:05:30,188
+Yatay eksende sağa doğru 90 derece kaydırmış olur.
+
+380
+01:05:30,308 --> 01:05:37,428
+İşte bu fonksiyonu komple yatay eksende zamana göre kaydıran parametrenin adı P faz açısı farkı.
+
+381
+01:05:39,731 --> 01:05:42,731
+İki işaret arasında bir faz açısı farkı var.
+
+382
+01:05:46,099 --> 01:05:54,559
+Bunun dışında genlikleri aynı, frekansları aynı. Bu iki çizimi birbirinden ayıran tek şey, iki sinyal arasındaki faz açısı farkı diyoruz.
+
+383
+01:05:55,220 --> 01:06:08,920
+Dolayısıyla bu şekilde genlik ve frekansı aynı olmak zorunda değil ama frekansı aynı olan işaretler için kim önde, kim arkada ona ilişkinde bir yorum yapabilir hale geliyor.
+
+384
+01:06:09,460 --> 01:06:12,640
+Buraya kadar olanlarla ilgili sormak istediğiniz bir şey var mı arkadaşlar?
+
+385
+01:06:20,947 --> 01:06:25,128
+Burada bunların her birine ilişkin birer örnek var. Ben detaylı anlatmış oldum.
+
+386
+01:06:28,588 --> 01:06:30,248
+Bir şundan bahsedebiliriz.
+
+387
+01:06:31,708 --> 01:06:35,288
+Fazör gösterimi veya fazör çözümlemesi neden önemli?
+
+388
+01:06:36,268 --> 01:06:41,268
+Günümüzde şehir şebeke gerilimleri AC sinyal olarak dağıtılıyor.
+
+389
+01:06:42,815 --> 01:06:49,015
+Kullanılan pek çok haberleşme modülasyonu AC sinyaller, sinizoidal sinyaller üzerinden çalışıyor.
+
+390
+01:06:49,955 --> 01:06:59,235
+Yine pek çok karmaşık sinyal, sinizoidal işaretlerin bir nevi lineal toplam şeklinde yazılabiliyor.
+
+391
+01:06:59,395 --> 01:07:02,775
+Dolayısıyla Fruyer analizi de burada devreye girdiğinde.
+
+392
+01:07:03,395 --> 01:07:06,815
+Farklı sinyalleri siniflerin toplam şeklinde ifade edebiliyoruz.
+
+393
+01:07:07,188 --> 01:07:26,408
+Dolayısıyla tek bir sinizoylar kaynak için devreyi çözdüğümüzde elimizde şöyle bir tool olmuş oluyor. Farklı gerilim kaynakları için birden fazla kere bu analizini tekrarlayıp aynı yol ile genel çözümü elde edebiliriz anlamına geliyor.
+
+394
+01:07:32,052 --> 01:07:45,512
+Pek çok ülkede şehir şebeke geriliminin frekansı 60 Hz olarak uygulanıyor. Bizde ve Avrupa'da ise 50 Hz olarak uygulanıyor. Bunun etkisini şöyle görebilirsiniz belki.
+
+395
+01:07:46,260 --> 01:08:02,180
+Bir EKG cihazının düzgün bir görüntü verebilmesi için monitöründe, eğer Türkiye'de bağlı bir cihaz da bu, bu cihazın 50 Hz civarında notch filtre deniliyor, çentlik filtre.
+
+396
+01:08:02,900 --> 01:08:13,480
+50 Hz civarındaki şehir şebeke gürültüsünü elemesi lazım, bunu süzmesi lazım. Aynı durum işte Amerika'da kullanılan bir cihaz için 60 Hz.
+
+397
+01:08:14,099 --> 01:08:18,539
+Dar bandında bir süzme gerçekleştirmesi gerekiyor diyebiliriz.
+
+398
+01:08:23,475 --> 01:08:48,615
+İşte omega değerimizden, açısal frekansdan da bahsetmiştik. Bunun derecesi radyan veya derece cinsinden olabilir. Bir de şeyi hatırlayalım, şunu hatırlayalım. Bir tam tur, bir çemberin tam turu 360 derece veya 2 pi radyan olarak veriliyor. Dolayısıyla radyan ve derece arasındaki dönüşümü buradaki doğru orantı şeklinde yapabiliriz.
+
+399
+01:08:50,863 --> 01:09:05,083
+360 derece ise, 180 derece veya 60 derece kaç radyandır dediğimizde, x ise 60 çarpı 2 pi bölü 360 değerinden, ne oluyor bu?
+
+400
+01:09:05,263 --> 01:09:09,703
+6 oluyor. Dolayısıyla pi bölü 3 değerimi,
+
+401
+01:09:10,163 --> 01:09:15,403
+Bizim aradığımız 60 dereceye karşılık gelen radyan karşılığı olarak bulunabiliyor.
+
+402
+01:09:15,903 --> 01:09:17,644
+Yine şu hesabı da yapabiliriz.
+
+403
+01:09:18,123 --> 01:09:28,724
+Açısal hızımız, açısal frekantımız, az önce yapmıştık gerçi bunu ama, açısal frekantımız Omega, tam bir periyod zamanında bunun 2P'yi kadarlık yer taraması lazım.
+
+404
+01:09:29,283 --> 01:09:35,543
+P dediğim şeyde 1 bölü F olduğu için yine şu formülü bu mantık çerçevesinde de elde edebiliyoruz.
+
+405
+01:09:41,011 --> 01:09:44,332
+Tepeden tepeye genlik, genlik değeri ne demek?
+
+406
+01:09:45,871 --> 01:10:00,652
+Anlık değerler, instantaneous yani anlık genlik ise şu şekilde, anlık genlik dediğimiz zaman, mesela elimizde bir simzöyler fonksiyon var, bir simzöyler fonksiyonun belirli bir T0 anındaki genlik değeriyle ilgileniyor.
+
+407
+01:10:01,412 --> 01:10:05,931
+Dolayısıyla T yerine T0 değerini koyuyoruz. T0'da bildiğimiz sayısal bir değer.
+
+408
+01:10:06,452 --> 01:10:10,452
+Sonucu sayısal olarak elde ettiğimiz bir senaryoya karşılık gelmiş oluyor.
+
+409
+01:10:14,832 --> 01:10:18,731
+Ortalama değer ve DC Offset'e bakacak olursak,
+
+410
+01:10:19,188 --> 01:10:35,587
+Normalde az önce bahsetmiştim, tekrar etmiş olalım. Saf sinüze ödel bir işaretin bir periyot boyunca ortalaması sıfır değerine sahiptir. Ortalamayı nasıl bulacağız? Örneğin elimizde bir VT sinyalimiz var. A çarpı sinüs omega T şeklinde yazılmış bir sinyal.
+
+411
+01:10:49,460 --> 01:10:51,620
+Lafında kalan, kalan olarak yapacağız.
+
+412
+01:10:52,920 --> 01:10:55,560
+Bu şekildeki bir işaret için de şöyle yapabiliriz.
+
+413
+01:10:55,620 --> 01:10:58,060
+Sinis şeklinde olduğu için A sabit.
+
+414
+01:10:59,220 --> 01:11:03,140
+Neyin türevi sinis yapar?
+
+415
+01:11:04,460 --> 01:11:07,280
+Kosünüsün, dolayısıyla eksi kosünüs, omega t.
+
+416
+01:11:07,399 --> 01:11:08,960
+Bir de baş tarafa omega gelecek.
+
+417
+01:11:09,120 --> 01:11:11,700
+A çarpı omega, kosünüs, omega t yapacak.
+
+418
+01:11:11,800 --> 01:11:14,260
+Hangi aralıkta? Sıfırla t aralığında.
+
+419
+01:11:14,260 --> 01:11:16,940
+Bir periyot olunca sıfır verdiğimiz zaman
+
+420
+01:11:17,779 --> 01:11:20,779
+Burada elde edeceğimiz değer ne olmuş oluyor?
+
+421
+01:11:20,779 --> 01:11:23,779
+Eksi A omega oldu.
+
+422
+01:11:23,779 --> 01:11:31,779
+T değerini verdiğimizde de T'de tam bir periyod, yani tam bir periyoda karşılık geldiği zaman omega çarpı T 2P idi.
+
+423
+01:11:31,779 --> 01:11:39,779
+Dolayısıyla cos 3 2P yine bir, eksi A çarpı omega, ola işte sıfır değerini ortalamada bulmuş olacağız.
+
+424
+01:11:41,203 --> 01:11:49,543
+Ortalama değerimiz herhangi bir sinyali, ilgili bir periyodu boyunca olan, altında kalan alalım. Yani integral olarak ifade edebiliriz.
+
+425
+01:11:50,064 --> 01:11:59,543
+Eğer ki bu sinyale bir DC kaynak veya DC offset eklenmişse, B gibi bir offset eklenmişse, bu durumda ortalama değerimiz B olarak çıkacak.
+
+426
+01:12:01,183 --> 01:12:03,023
+Onu da şöyle gösterelim.
+
+427
+01:12:03,439 --> 01:12:22,519
+Burada mesela şu şekle baktığımızda bir sinizoylar işaretimiz var. Bu kosünüs sıfırdan başladığı için bir siniz şeklinde bir işaret bu. Bunun ortalama değeri 5'e çıkmış. Demek ki bunun DC bileşeni 5. Grafiğe bakarak bunu da söylemek mümkün.
+
+428
+01:12:29,876 --> 01:12:31,396
+Şunu söyleyeceğiz.
+
+429
+01:12:33,175 --> 01:12:37,775
+Normalde Root-Minr-Square-Error tanımı şu şekilde yapılıyor.
+
+430
+01:12:39,235 --> 01:12:43,136
+İşaretin karesinin bir periyot boyunca olan
+
+431
+01:12:48,916 --> 01:13:07,256
+Az önceki denklemde 1 bölü T'yi unutayım. Çok özür dilerim. Az önceki denklemde onu tekrar gelelim. Ortalama hesabını yazarken, ortalama B derken 1 bölü T, VT, DT olarak düzeltelim. Şurada 1 bölü T'yi tekrar getirmemiz lazım.
+
+432
+01:13:10,963 --> 01:13:18,984
+Root-Minus-Square-Error dediğimiz formülde ise işaretin karesinin bir periyot boyunca olan ortalamasının kökü.
+
+433
+01:13:20,043 --> 01:13:30,844
+Bunun karşılığı bu işareti, VT işareti, bu AC işareti bir direnç elemanı uyguladığımızda harcanan gücü,
+
+434
+01:13:31,279 --> 01:13:38,000
+Bir DC kaynakla sağlamak istediğinizde bu DC kaynağın değeri ne olması gerekiyor sorusunun cevabı aslında.
+
+435
+01:13:38,079 --> 01:13:42,279
+Rudmin Square değeri buna karşılık geliyor.
+
+436
+01:13:43,039 --> 01:13:48,319
+Sinizoidal kaynaklar için bu tepe değerinin bir bölü kök içine karşılık geliyor.
+
+437
+01:13:48,884 --> 01:14:02,164
+Bir bölüm köküsüne karşılık geliyor. Onu da ispatlayabilmek için, V dediğimiz değer, A çarpı sinüs omega t veya kosinüs diyelim, sinüs omega t şeklinde bir işaretse,
+
+438
+01:14:03,204 --> 01:14:12,963
+bunun karesini aldığımızda, A kare çarpı sinüs kare omega t gibi bir sinyal çıkar. Bunun bir periyot boyunca olan integralini alıp,
+
+439
+01:14:16,020 --> 01:14:23,180
+t ile oranlayıp, yani karesinin ortalamasını alıp, kökünü alacak olursak, burada sinüs kare yerine şunu yazmamız lazım.
+
+440
+01:14:23,180 --> 01:14:30,420
+Hatırlayacak olursanız, sin x artı x nasıl yazılabilir?
+
+441
+01:14:36,115 --> 01:14:37,956
+İçten bir, bir sosluktan ne var?
+
+442
+01:14:39,355 --> 01:14:40,935
+Şöyle bitirelim.
+
+443
+01:14:42,195 --> 01:14:47,595
+Kos kare x artı sin kare x kire eşit bildiğiniz gibi.
+
+444
+01:14:48,996 --> 01:14:57,536
+Dolayısıyla bir bu terimiz var. İkincisi de kosünüs x artı x'e baktığımızda ne diyebiliriz?
+
+445
+01:14:57,615 --> 01:15:00,256
+Kosünüs x artı x şu şekilde yazılabilir.
+
+446
+01:15:02,355 --> 01:15:12,515
+Eksi sin kare x'ti. Dolayısıyla bu ikisini birleştirdiğimizde, neye tekabül edecek? Her iki tarafı sinüsün kalması lazım.
+
+447
+01:15:15,075 --> 01:15:17,715
+Karşı taraflarda kaldı, şunlar gitti.
+
+448
+01:15:19,235 --> 01:15:25,395
+2 sin kare x oldu. 1 eksi kosinik 2 x bölü 2.
+
+449
+01:15:26,163 --> 01:15:33,963
+sin kare x olarak yazılabilir. Dolayısıyla ikinci dereceden bir sinüs konfisyonundan, birinci dereceden bir sinüs konfisyonuna indirilmiş olur.
+
+450
+01:15:33,963 --> 01:15:43,963
+Dolayısıyla şuradaki iki değerlerinden bir bölü kökü değeri buradan geliyor kabaca.
+
+451
+01:15:44,144 --> 01:15:58,243
+Dolayısıyla artık şurada cos2x'in bir integrali var. Onu hesapladığımız zaman da, yani sizin güzel işaretlerle her zaman için genlik değerimiz, bizim için A olan değer, A böyle köküklük bir RMS değerini.
+
+452
+01:15:58,836 --> 01:16:12,555
+Hesaplamış olacağız. RMS değerleri bu şekilde hesaplamış olacağız. Çıkardık yani sinüs karenin integralini almak zor olduğu için sinüs kareyi cos2x cinsinden yazmış olduk. Onun integralini almamız gerekiyor diye hatırlatmış olalım.
+
+453
+01:16:17,811 --> 01:16:19,331
+Fazla açısıyla ilgili durum.
+
+454
+01:16:21,471 --> 01:16:29,711
+Şimdi arkadaşlar, kısa bir ara verebilir miyiz? 5 dakika kadar veya 25 geçe diyelim.
+
+455
+01:16:30,531 --> 01:16:32,431
+Bir sorunuz var mı buraya kadar? Onu alayım.
+
+456
+01:16:32,591 --> 01:16:37,231
+Yoksa 25 geçe tekrar başlamabilir. Bir 20 dakikalık bir ara vereceğim, kısa bir ara vereceğim.
+
+457
+01:16:37,791 --> 01:16:38,431
+Var mı sorunun?
+
+458
+01:16:40,971 --> 01:16:43,171
+Buraya kadar olan verilmiş sorunuz var mı arkadaşlar?
+
+459
+01:17:02,131 --> 01:17:05,211
+Tori yoksa bir ara ver, 25 geçe tekrar dönmüş olalım.
+
+460
+01:24:56,724 --> 01:24:59,644
+Tekrar merhaba arkadaşlar. Kaldığımız yerden devam edelim.
+
+461
+01:25:00,684 --> 01:25:10,304
+En son faz açısı özelliğine, yani sinizoidal işaretlerin faz açısına ilişkin özelliklerini konuşacağız.
+
+462
+01:25:10,304 --> 01:25:18,984
+Bununla ilgili olarak kaldığımız yere değil de birazcık aşağılara ilerleyeceğiz ve iki tane sinizoidal işaretimiz.
+
+463
+01:25:19,224 --> 01:25:23,664
+Faz açısını karşılaştırabilmek için bunların mutlaka aynı frekanslı olması lazım.
+
+464
+01:25:24,275 --> 01:25:30,755
+Bunlar arasındaki faz açısını karşılaştırabilmek için izlememiz gereken adımlar buradaki adımlar.
+
+465
+01:25:32,275 --> 01:25:58,655
+Dikkat edeceğimiz hususlar şunlar. İki tanesini, Zoyler işaretinin fazla açısını karşılaştırabilmek için, ki bu da neticede bu işaretlerden hangisi önde, hangisi geride, İngilizce olarak lead önde, lock geride kalmak anlamında, bunlardan hangisi önde, hangisi geride onu tahmin edebilmek, söyleyebilmek açısından mutlaka bunların frekans değerlerinin aynı olması gerekiyor.
+
+466
+01:26:00,275 --> 01:26:23,655
+Bu iki sinyali de aynı trigonometrik fonksiyon olarak, ya ikisini de kosünüs veya ikisini de sinüs olarak yazmamız lazım. İşaretlerin genlikleri negatif olmayacak arkadaşlar. Eğer negatifse, mesela eksi 2 çarpı sinüs omega t şeklinde bir fonksiyonsa, bu eksiyi uygun trigonometrik dönüşümler yaparak,
+
+467
+01:26:25,376 --> 01:26:33,736
+içeride gelinmemiz lazım. Mutlaka gerilim değerimiz pozitif olacak. Ona göre dönüşüm yapmamız lazım. Eğer ki
+
+468
+01:26:34,868 --> 01:26:52,928
+İki işaretin faz farkına baktığımızda bu değer 180'den büyük çıkıyorsa yine trigonometrik dönüşümler yaparak 0-180 arasında kalacak şekilde bu faz farkına sağlayan yine trigonometrik dönüşümler yapmamız lazım.
+
+469
+01:26:52,928 --> 01:27:02,868
+Bunların tamamını sağladıktan sonra mesela A sinyali ile B sinyalinin birbirine göre faz farkını ifade etmek istiyorsak birincinin faz farkına baktığımızda
+
+470
+01:27:02,868 --> 01:27:28,308
+İkinci'nin faz açısını çıkartıp faz farkını elde ediyoruz. Demek ki kurallarımız karşılaştırabilmek için sinyallerin aynı frekansla olması lazım. Her ikisinin de aynı trigonometrik fonksiyon cinsinden ifade edilmesi lazım. Genlik olarak negatif bir değer varsa bunun uygun trigonometrik fonksiyonlarla kaybolması lazım, kaybedilmesi lazım.
+
+471
+01:27:28,851 --> 01:27:35,891
+Yine aradaki çıkan fark 180 dereceden fazlaysa trigonometrik dönüşümlere devam edip,
+
+472
+01:27:37,171 --> 01:27:51,251
+0-180 arasında bir faz farkı veren forma indirgememiz lazım. Son olarak da faz farkı dediğimiz şey, her iki sinyalin birbirlerine göre faz açılarını birbirinden çıkartmamız olarak değerlendireceğimiz bir senaryo.
+
+473
+01:27:51,251 --> 01:27:56,952
+Şimdi buna ilişkin olarak şöyle bir örneklerimiz var. Şöyle çıkarak tekrar geri gelmeye çalışalım.
+
+474
+01:28:05,203 --> 01:28:23,923
+Buralarda aslında tam ara verilmişlik karşılığı yok. Şöyle yapacağım. Şöyle yapacağım. Elimizde iki tane sinyal var. B1 ve B2 sinyallerimiz var. Biz bunlar arasındaki pasparkını bulmaya çalışıyoruz.
+
+475
+01:28:24,384 --> 01:28:46,703
+Birinci karşılaştığımız durum ne burada arkadaşlar? İşaretlerden birisi sinüs formunda, diğerisi kosünüs formunda verilmiş. Her ikisini aynı formatta yazabilmemiz gerekiyor. Bunun için sinüsü kosünüse çevireceğiz. Sinüs ve kosünüs arasındaki ilişki nasıl? Şöyle bakalım. Bir üçgenimiz olsun.
+
+476
+01:28:48,020 --> 01:28:52,520
+Bu bizim x değerimizde, yani biz sinif x dediğimizde sinif x neye eşit?
+
+477
+01:28:53,520 --> 01:28:56,680
+Karşı bölü komşu, yani a bölü b değerine eşit.
+
+478
+01:28:57,460 --> 01:29:00,500
+A bölü b, aynı zamanda neye eşit?
+
+479
+01:29:01,120 --> 01:29:06,420
+Şurası 90-x açısı, dolayısıyla sinif 90-x de
+
+480
+01:29:06,899 --> 01:29:19,199
+A bölü B'ye, yani o da simül fixation. Fakat burada dikkat edin, eksi 90 var. Şimdi onu nasıl sağlayacağım? Onu da yine birim çember çizelim arkadaşlar. Şöyle bir birim çember çizelim.
+
+481
+01:29:20,880 --> 01:29:30,679
+Bu birim çember üzerinde şöyle bir alfa açımız olduğunu varsayalım. Bu alfa açısına karşılık, birim çember ya bu, bunun
+
+482
+01:29:31,283 --> 01:29:48,983
+Dikey eksene iz düşümü bizim sinüs alfa değerimizdir değil mi? Bu sinüs alfa değeri aynı zamanda ben bu sefer gelip de 180 derecelik bir çıkma yapacak olursam yine bu da aynı değere karşılaştırıyor.
+
+483
+01:29:48,983 --> 01:29:52,923
+Dolayısıyla ben şunu söyleyebilirim. Sinüs alfa eşittir.
+
+484
+01:29:53,823 --> 01:30:17,203
+180-alpha diyebiliriz. Dolayısıyla ben burada alfa yerine 90-x yazarsam, yani sinüs 90-x de ne eşit olmuş olacak? Sinüs 180-90 artı x'e eşit olmuş olacak. Onu da düzenleyecek olursak sinüs x-90'a eşit olmuş olacak.
+
+485
+01:30:21,043 --> 01:30:31,443
+Ne yaptık orada? Bir şeyi yanlış yaptık mı? Şu kosmüs olacaktı çok özür dilerim.
+
+486
+01:30:31,443 --> 01:30:34,443
+Bu kosmüs olacaktı.
+
+487
+01:30:34,443 --> 01:30:39,443
+Kosmüs yükseştik. Şunu tekrar düzenlememiz lazım.
+
+488
+01:30:42,836 --> 01:30:44,456
+Yanlış yapmışız. Şöyle yapalım.
+
+489
+01:30:47,456 --> 01:30:51,156
+Şu elde ettiğimiz bilgi dursun. Daha sonra seçim kullanacağız.
+
+490
+01:30:51,876 --> 01:30:57,936
+Yani sinüs alfanın sinüs 180 eksi alfaya eşit olmadığıma.
+
+491
+01:30:58,776 --> 01:31:01,736
+Aynı şeyi kosünüs için yapmaya çalışalım.
+
+492
+01:31:03,776 --> 01:31:05,736
+Kosünüs 90 eksi x.
+
+493
+01:31:06,292 --> 01:31:17,292
+Yine sinüs yükse eşit. Yine birim çember üzerinde hareket edecek olursak, bizim alfa açımız varken bunun pusilüsü birkaç daha buraya denk geliyor.
+
+494
+01:31:17,292 --> 01:31:31,292
+Bu yine aynı zamanda eksi alfa açılık bir durum içinde yine yatay eksen de aynı yere denk geliyor. O zaman şunu söyleyebilirim bir başka renklem.
+
+495
+01:31:31,667 --> 01:31:55,827
+Kosünüs alfa eşittir. Kosünüs eksi alfa. O zaman biz alfa yerine 90-x'i koyduğumuzda yani kosünüs 90-x, aynı zamanda şuna eşit olacak. Kosünüs x-90 eşit olacak. Burada yapmış olduğumuz işlem bu. Sinüsü kosünüse çevirirken
+
+496
+01:31:56,404 --> 01:32:03,124
+İçerideki açımızdan 90 derece çıkarttığımızda bunu elde etmiş oluyoruz. Buraya kadar geldik.
+
+497
+01:32:03,124 --> 01:32:12,004
+Yani V1 sinyalinin alt çarptıkçı şeklinde bir işareti. 40 derecelik ifade farkı var ama şu yine açıya tekabül ediyor.
+
+498
+01:32:12,004 --> 01:32:16,800
+Bu bizim açısal frekansımız, şu bizim faz açımız.
+
+499
+01:32:16,800 --> 01:32:22,300
+Buna eksi 90 derecelik bir faz açısı ekleyerek sinüsü kosülüte çevirebiliriz.
+
+500
+01:32:22,300 --> 01:32:29,300
+Oysa elimizde 6x kos bir değer var, 20 açısalt frekansında.
+
+501
+01:32:29,300 --> 01:32:37,500
+V2'ye baktığımızda sıkıntı nerede burada? V2'nin önünde bir negatif işareti var. Bunu kaybetmemiz lazım. Bunu nasıl yapacağız?
+
+502
+01:32:37,500 --> 01:32:41,300
+Bunu da yine birim çembere gidiyoruz. Birim çemberde bakalım.
+
+503
+01:32:44,307 --> 01:32:49,307
+Şurada bir alfa değerimiz var. Bunun kosinüsü şuradaki değer.
+
+504
+01:32:49,307 --> 01:32:57,307
+Ben gelip burada 180 derecenen alfa kadar açık aldılarak
+
+505
+01:32:57,743 --> 01:33:03,183
+Yine bunun yatay eksene iz düşmüne bakacak olursa, yani bu açı ne yapıyor şuradaki açımız?
+
+506
+01:33:03,763 --> 01:33:05,543
+180-alpha yapıyor.
+
+507
+01:33:06,203 --> 01:33:11,203
+Bu değer, şuradaki değerimiz, bu a ise, buradaki değerimiz eksi a.
+
+508
+01:33:11,203 --> 01:33:13,203
+Dolayısıyla şunu yazabiliriz.
+
+509
+01:33:16,303 --> 01:33:19,543
+Kosünüs alfa eşittir, eksi.
+
+510
+01:33:20,500 --> 01:33:26,300
+Cosinus 180-alfa veya eksiyi şuraya da getirebilirim.
+
+511
+01:33:26,300 --> 01:33:36,300
+Demek ki bir cosinus işaretinin önünde eksi varsa onu çevirebilmek için açılardan 180'i çıkartmamız gerekiyor.
+
+512
+01:33:36,300 --> 01:33:43,899
+Fakat burada 180, alfa-180 yapılmış. Ona da bakalım. Yine aynı şekilde bu değil de
+
+513
+01:33:44,047 --> 01:33:49,367
+Eğer ki ben şöyle bir açı kaldırırsam, yani şuradan baktığımızda da bu neye tekabül edecek?
+
+514
+01:33:50,528 --> 01:33:57,167
+Eksi, eksi, 180 eksi alfaya. Yani alfa eksi 180 eksi tekabül ediyor.
+
+515
+01:33:57,268 --> 01:34:03,207
+Bu da aynı zamanda kosünü alfa eksi 180 eksi eşit.
+
+516
+01:34:04,028 --> 01:34:06,608
+Bunu niçin? Şunu kullanmadık da bunu kullanıyoruz.
+
+517
+01:34:07,104 --> 01:34:15,104
+Çünkü, T teriminin, yani bu açısal frekans teriminin negatif gelmesini istemiyoruz. O da pozitif gelecek şekilde.
+
+518
+01:34:15,104 --> 01:34:23,104
+Çünkü o negatif gelirse, birisi 20 açısal frekanslı olacak, öbürü eksi 20 açısal frekanslı olmuş. O da konuda işleniyorum.
+
+519
+01:34:23,104 --> 01:34:32,811
+Dolayısıyla, içerideki açıdan 180'i çıkarttığımızda, baştaki eksiden kurtulabiliyoruz. O zaman nereye indirgedik?
+
+520
+01:34:34,420 --> 01:34:51,239
+İşaretlerimizin birisi, işaretlerimizden birisi şu, diğeri de şu. Bunlar arasındaki açı farkına baktığımızda ne diyeceğiz?
+
+521
+01:34:51,239 --> 01:35:01,119
+Eksi 50, eksi, eksi 160. Sonuç ne çıkıyor? 110 çıkıyor. Demek ki pozitif çıktığına göre V1,
+
+522
+01:35:01,524 --> 01:35:17,964
+işaretimiz, V2'nin önünde ne kadar? 110 derece kadar önünde demiş. Aynı işlemi, ortak trigonometrik fonksiyon sinüs olacak şekilde de yapabiliriz. Şurada çıkartmış olduğumuz formüller çerçevesinde bunu yürütmemiz mümkün olacak.
+
+523
+01:35:22,547 --> 01:35:40,788
+Dolayısıyla şu yukarıdaki örneklerin hepsi bu kural çerçevesinde ve adımlar çerçevesinde kullanabileceğimiz işler. Dolayısıyla orayı tekrar etmiyorum. Burada da özetli dönüşüm tablosu mevcut.
+
+524
+01:35:44,307 --> 01:35:47,768
+Şimdi ne kadar söyleyemiz kaldı? Çok ilham edilmiş. Tamam mı?
+
+525
+01:35:50,260 --> 01:35:54,380
+Fazör gösterimini nasıl yapacağımızı ifade etmeye çalışalım.
+
+526
+01:35:58,380 --> 01:36:12,319
+Burada bir karmaşık sayı olarak yine hep başta kişiye dönüyoruz ama bir fazör gösteriminde bir genlik ve faz açısı farkı vardı. Bu karteliler konulaktlarda X ve Y'ye denk geliyordu.
+
+527
+01:36:13,555 --> 01:36:23,315
+Eğer ki bir fazör gösterimimizin veya polar gösterimimizin açısı sıfırsa bu işaret saf real sayı oluyor.
+
+528
+01:36:31,028 --> 01:36:37,168
+90 gibi bir değer olursa bu durumda da saf, imajiner bir sayı olmuş oluyor.
+
+529
+01:36:37,168 --> 01:36:47,168
+Yine baktığımız zaman eğer ki buradaki genlik değerimizi biz her zaman pozitif olacak şekilde seçmeyi bir kural olarak getirirsek,
+
+530
+01:36:47,608 --> 01:36:59,028
+bu durumda eksi 180 faz açısına sahip veya eksi 180 derece faz değerine sahip bir fadör gösterimi de aslında bunlar pozitif.
+
+531
+01:36:59,028 --> 01:37:06,887
+Pozitif real sayılarken 180 derece faz açısına sahip olan da bir negatif real sayı olmuş olacak.
+
+532
+01:37:11,572 --> 01:37:22,312
+Bununla birlikte eğer ki fazla açımız 90 derece ise bu bir pozitif, bir saf imajiner sayı olmuş olacak.
+
+533
+01:37:22,312 --> 01:37:25,772
+Yani imajiner ve real eksenlere göre.
+
+534
+01:37:26,304 --> 01:37:47,444
+Dikey eksene denk gelen, dikey ekseniz yarısına denk gelen bir sayı olacak. Eğer ki genlik değerimiz pozitif olduğunu kabul edecek olursak, faz açımızda eksi 90 derece ise, bu durumda da eksi JA şeklinde, yani yine saf imajiner ama saf negatif bir imajiner sayı temsil etmiş olacak.
+
+535
+01:37:56,979 --> 01:38:15,899
+Şimdi en önemli nokta, yine bu gösterimlerle ilgili, bir zaman boyutundaki işareti fazör uzayına geçirip tekrar geri getirebilir miyiz? Bunlar arasındaki ilişki nasıl tanımlanır ona bakmaya çalışacağız.
+
+536
+01:38:15,899 --> 01:38:22,739
+Eğer ki elimizde şu şekilde sinizoidal bir işaret varsa,
+
+537
+01:38:26,484 --> 01:38:30,564
+Bu işarete ilişkin olarak fazör gösterimi şu şekilde hesaplanacak.
+
+538
+01:38:31,464 --> 01:38:35,944
+İşaretin açısal frekansını ayrı bir yere not edeceğiz.
+
+539
+01:38:37,144 --> 01:38:44,764
+Daha sonra bunun fazör gösterimini, ki polar koordinatlarda olacak bu, polar koordinatlarda.
+
+540
+01:38:44,764 --> 01:38:53,704
+Şöyle elde edeceğiz. Bizim genlik değerimiz Vm, açı değerimiz de fi şeklinde bunu ifade edebiliyor olacak.
+
+541
+01:38:54,292 --> 01:39:04,712
+Sabaca bu şekilde yazmamız mümkün. Peki tersine bunu nasıl hesaplayacağız? Yani elimizde bir pazar gösterim değeri varsa bunun RL'deki karşılığı ne?
+
+542
+01:39:05,184 --> 01:39:19,123
+Eğer ki biz her zaman için, zaman dolayındaki karşılığına diye bakacağız ise, eğer bu dönüşümde biz kosünüsler üzerinden ilerliyorsa ona göre bir dönüşüm yapacağız.
+
+543
+01:39:19,724 --> 01:39:27,123
+O da şu demek yani aslında, biz bu sinyali açarak yardımda ne olur? Şuradaki değer olur değil mi?
+
+544
+01:39:27,984 --> 01:39:30,884
+Vm çarpı kosünüs fi artı c çarpı sinüs.
+
+545
+01:39:31,347 --> 01:39:48,587
+fi şeklinde bir değer olur. İşte buradan da real sayılara geçebilmek için şunu yapmamız gerekiyor. Bunun real kısmını alacağız. Yani real, vm, e'leri, j, pi'sini alacağız. Bu bize hangi parametreleri verecek?
+
+546
+01:39:54,068 --> 01:40:18,788
+fi şeklinde bir şey verecek. Bunun yanında şu dışarı almış olduğumuz terimi de buraya getirmemiz gerekiyor. Bu terimi de nasıl getireceğiz? E üzeri omega t olarak getireceğiz. Dolayısıyla o dışarıda tutmuş olduğumuz terimi de birleştirdiğimizde, elimizde fazör varken bunun zaman boyutundaki karşılığı şu olmuş olacak.
+
+547
+01:40:22,260 --> 01:40:26,860
+Bunu içeri atıyoruz. Yani zaten real bir değer olduğu için içeri atabiliriz.
+
+548
+01:40:27,380 --> 01:40:34,700
+Vm çarpı evceli j fi artı omega t olmuş olacak.
+
+549
+01:40:35,960 --> 01:40:37,720
+Buna j'miz de var burada.
+
+550
+01:40:39,100 --> 01:40:41,039
+Dolayısıyla şöyle paranteze alabiliriz.
+
+551
+01:40:41,880 --> 01:40:43,740
+Bunun real kısmına baktığımızda da
+
+552
+01:40:44,148 --> 01:40:50,807
+Vm çarpı, posinus, omega t artı, pi şeklinde yazmış olacağız.
+
+553
+01:40:51,988 --> 01:40:57,488
+Dolayısıyla elimizde zaman boyutunda bir sinyal varsa onu fazöre nasıl dönüştüreceğimizi konuştuk.
+
+554
+01:40:57,868 --> 01:41:03,608
+Fazör boyutunda bir sinyal varsa onu da zaman boyutuna nasıl dönüştüreceğimizi konuşmuş olduk.
+
+555
+01:41:03,707 --> 01:41:08,688
+Burada fazör uzayında görülmeyen bir açısal frekans değerimiz var.
+
+556
+01:41:09,047 --> 01:41:18,327
+Onu not ettik, sakladık bir yerde ve fazörden geri dönerken E üzeri J omega T çarpanıyla tekrar bunu denkleme ekledik.
+
+557
+01:41:19,988 --> 01:41:25,427
+İçeride, yani fazör uzayında denkleme çözerken her şeyi şunun parantezine almış oluyoruz.
+
+558
+01:41:25,787 --> 01:41:32,768
+Dolayısıyla bu J omega t parametresiyle ilgilenmemize gerek yok devre çözümlemesini yaparken.
+
+559
+01:41:32,908 --> 01:41:37,528
+Ama fazör uzayından zaman boyutuna dönerken tekrar bununla çarpmamız gerekiyor.
+
+560
+01:41:53,140 --> 01:41:57,739
+Az önce dönüşümle ilgili anlattığımız sıralar burada. Bu yine önemli olduğu için tekrarlayalım.
+
+561
+01:41:58,260 --> 01:42:02,859
+Zaman boyutunda bir değerimiz varsa, yani şurada gördüğünüz gibi
+
+562
+01:42:08,020 --> 01:42:23,120
+Vm çarpı kosinüs omega t fi şeklinde bir kaynağımız varsa, bu kaynağımızın fazör uzayındaki karşılığı genlik değerimiz Vm ve faz açısı değeri olarak yazılabiliyor.
+
+563
+01:42:23,980 --> 01:42:30,600
+Eğer ki kaynağımızı sinüs sinüsünden yazmışsak, bu durumda bu sinüsü kosinüse çevirelim ve öyle ele alalım.
+
+564
+01:42:31,315 --> 01:42:37,315
+Sinüsü kosünüse çevirebilmek için ne yapmamız gerekiyordu? Az önce bulmuştuk. Şunları diyeceğiz.
+
+565
+01:42:38,255 --> 01:42:42,775
+Sinüs x, kosünüs 90-x'e eşitti.
+
+566
+01:42:44,095 --> 01:42:55,755
+Kosünüs 90-x'e eşitti. O da, bir kos alfa değerimiz buradayken, şöyle eksi açıdaydı.
+
+567
+01:42:58,355 --> 01:43:03,795
+Pardon, kosünüs x-90'a eşitti.
+
+568
+01:43:04,455 --> 01:43:16,315
+Dolayısıyla biz burada, sinüs omega t artı fi şeklinde bir değerle karşılaşmışsak bunu, kosünüs omega t artı fi eksi 90 olarak da yazabiliriz.
+
+569
+01:43:16,756 --> 01:43:21,756
+ve vm katsayısı var başlarında.
+
+570
+01:43:21,756 --> 01:43:26,256
+Dolayısıyla şimdi buna ilişkin olarak fazör gösterimini hesaplayacağımız zaman,
+
+571
+01:43:26,256 --> 01:43:32,256
+şuradaki açısal frekansı not ediyoruz ve geri kalan faz açısında pi eksi 90 olmuş oluyor.
+
+572
+01:43:32,256 --> 01:43:39,256
+Gördüğünüz gibi iki parametre, birincisi genlik, ikincisi faz açısı değerimiz. Bunları fazör hesabında kullanıyoruz.
+
+573
+01:43:40,020 --> 01:43:45,360
+Arkadaşlar, bir iki dakika rica ediyorum. Hemen acil bir şey var herhalde. Döneceğim birazdan.
+
+574
+01:44:39,667 --> 01:44:42,587
+Özür dilerim tekrar, bir acil bir konu olmuş olmalıydı.
+
+575
+01:44:43,547 --> 01:44:44,907
+Telefon gelmişti.
+
+576
+01:44:45,567 --> 01:44:50,527
+Şimdi dolayısıyla bizim zaman boyutundaki bir fonksiyonumuzun
+
+577
+01:44:50,832 --> 01:44:59,572
+Fazör uzayındaki karşılıkları bunlar. Bu ne için geçerli? Bir kaynağımız var. Sinüs şeklinde bir kaynağımız var. Onlara karşılık fazör gösterimlerini yazmakta.
+
+578
+01:44:59,972 --> 01:45:10,412
+Kosünüs şeklinde ise zaten dedik ki fonksiyonumuz zaman boyutunda kosünüs ise doğrudan genlik ve faz açısı değerini burada fazör gösteriminde kullanacağız.
+
+579
+01:45:10,412 --> 01:45:18,252
+Eğer zaman domeninde sinüzeyler bir değerse sinüsü kosünüse çevireceğiz. Dolayısıyla aralarında eksi 90 derecelik faz farkı var.
+
+580
+01:45:18,832 --> 01:45:37,852
+90 yazdığımızda, buradaki faz açısı fi idi ama kosüzü ile çevirdiğimizde fi eksi 90 olacak. Onu yazdığımızda yine bu dönüşümü yapabiliyoruz. Bu dönüşümü gerilim kaynakları için yapabildiğimizde, akım kaynakları için de yapabildiğimizde, sinzo eder konusyonlar. Dolayısıyla kaynak dönüşümlerini bu şekilde yapmış olmamız gerekiyor.
+
+581
+01:45:40,020 --> 01:45:46,960
+Bu nedir? Devremizdeki kaynakların, sinzörüler kaynakların fazör gösterimdeki karşılıklarını bu şekilde elde ediyor olacak.
+
+582
+01:45:50,868 --> 01:46:02,588
+Fazör uzayında arkadaşlar, yine zaman boyutundan farklı olarak gösterim itibariyle büyük harflerle biz yazıyor olacağız, büyük harflerle bunları gösteriyor olacağız.
+
+583
+01:46:03,568 --> 01:46:12,308
+Kitap basımında ise koyu harflerle ifade ediliyor olacak. O noktada fazör ve zaman boyutundaki değerleri birbirinden ayırt ediyor olacaksınız.
+
+584
+01:46:12,308 --> 01:46:16,768
+Zaten AC sinyal analizi olduğu için DC ile karışmayacağını düşünüyorum.
+
+585
+01:46:18,868 --> 01:46:26,628
+Bir örnek olarak bakacak olursak, elimizde bir sayısal değer itibariyle bir kaynağımız var.
+
+586
+01:46:29,968 --> 01:46:41,228
+Bu kaynağımıza karşılık biz fazör gösterimini hesaplamak istersek, ne yapacağız? Bunu kosünüze çevirelimiz lazım.
+
+587
+01:46:44,435 --> 01:46:57,795
+Kosinus 90-x'e eşitti ve de bunu aynı zamanda içerinin tekrar negatifini alabiliyorduk. Kosinus 90-x'e eşitti. Yani kosinus x-90'a eşitti. Burada bunu yapıyoruz.
+
+588
+01:46:58,475 --> 01:47:08,195
+Bizim sinüs işaretimiz 3 çarpı sinüs 100t artı 20 olduğu için bunun yerine 3 çarpı kosinüs
+
+589
+01:47:08,564 --> 01:47:22,164
+İçerideki değerimiz ne? 100t artı 20 eksi 90. Yani 3 çarpı kosünüs 100t eksi 70 oluyor. Bunun fazör karşılığı da şu olacak arkadaşlar.
+
+590
+01:47:23,124 --> 01:47:28,564
+Üçgenlik değerimiz eksi 70 faz açımız. Demek ki bunun fazör gösterimi...
+
+591
+01:47:28,591 --> 01:47:44,591
+3'e eksi yetmiş olacak. Bu ne demek? Bu fazör uzayına geçtiğimizde biz bu B kaynağımıza ilişkin, VST kaynağımıza ilişkin büyük VST'imizi 3 çarpı E üzeri J eksi yetmiş olarak da yazabiliriz.
+
+592
+01:47:44,591 --> 01:47:55,371
+Veya şöyle de yapabiliriz. VST kaynağımızı 3 çarpı kosünüs eksi yetmiş artı J çarpı yine 3 de gelecek.
+
+593
+01:47:55,904 --> 01:48:05,344
+Sinüs, eksi 70 olarak kartezyen konuda veya polar konuda veya polar konu şu veya eksponansiyel konuda ifade edebilirim.
+
+594
+01:48:08,148 --> 01:48:20,047
+Bir başka örneğimiz var, ona da bakalım. Yani yine kaynağı, fazöre nasıl geçirdiğimize ilişkin. Bu sefer bir akım kaynağına ilişkin sinizoidal değer var. Bunu fazör değerine geçirmeye çalışacağız.
+
+595
+01:48:20,047 --> 01:48:35,207
+Yani fazör uzayına geçirmeye çalışacağız. Elimizdeki sinyal 7x7x100. Sinüsü posinüse çevirirken burada eksi 90 yaptığımızda değeri karşılıyorduk. Fakat baktığımızda eksi 190 oldu.
+
+596
+01:48:35,731 --> 01:48:47,752
+Eksi yüz doksan olduğu için bunu eksi yüz seksen artı yüz seksen aralığına getirmeye çalışacağız. Onu nasıl yaparız? Onu şöyle bakalım şimdi.
+
+597
+01:48:57,939 --> 01:49:04,239
+Şöyle bir açı değerimiz var. Bunun kosünüsü ile ilgileniyoruz. Bu kosünüs değeri aynı zamanda neye eşit?
+
+598
+01:49:05,159 --> 01:49:20,719
+Bakın, şurası mesela alfa açımız ya. Kosünüs 180 artı alfa dediğimiz bir değer şurası. Bu aynı zamanda ne eşitmiş? Kosünüs 180 eksi alfaya eşitmiş.
+
+599
+01:49:22,996 --> 01:49:41,195
+Şurası alfa olmak şartıyla. Ve bu da aynı zamanda şuna eşit. Burası alfa ise, bu da aynı zamanda eksi olacak. Eksi, kosünüs alfaya eşit. Bunlar hepsi de birbirine eşit. Dolayısıyla elde ettiğimiz faz değeri,
+
+600
+01:49:41,631 --> 01:49:51,072
+Eğer 180 artı 180 artı 180 aralığında değilse, bunu bu aralığa çekecek dönüşümleri yapmamız lazım. Bir çerçevede dönüşümleri yapmamız lazım.
+
+601
+01:49:52,511 --> 01:49:55,431
+Dolayısıyla ilk dönüşümümüzü yaptığımızda ne oluyor bakalım?
+
+602
+01:49:56,931 --> 01:50:00,831
+180 eksi alfa anlamlı değil. Dolayısıyla eksi alfayı yapalım.
+
+603
+01:50:02,331 --> 01:50:04,631
+180 artı alfa dediğimize göre,
+
+604
+01:50:07,539 --> 01:50:24,960
+180 artı alfa dediğimde göre tersten de yapabiliriz bunu. Şu açı içinde düşünebiliriz. Şu açı içinde. Bu da ne olmuş oldu? Kosünür eksi 180 eksi alfa. Bu neye eşit? Kosünür.
+
+605
+01:50:25,492 --> 01:50:36,532
+180 eksi alfaya, o da eksi kosülüs alfaya eşit. Bu şekilde de yazabiliriz. Yani eksi açıdan da yazabiliriz. O zaman bizim buradaki alfa değerimiz ne olmuş oluyor?
+
+606
+01:50:49,427 --> 01:50:57,768
+7 çarpı kosinüs 350 t'yi aynı işaretini korumak şartında, eksi 10 şeklinde yazabiliriz buradaki eksi işaretimiz geldiği için.
+
+607
+01:51:01,307 --> 01:51:03,127
+O da şuradaki işlem.
+
+608
+01:51:06,771 --> 01:51:25,532
+180 alfamız eksi 10'u eksi 10 şeklinde yazdığımızda 170 derece. Yani şuradaki eşitliği kullandığımızda buradaki alfamızda şuradaki alfayı 10 olarak bulduk ya, bunun yerine kosünüs 180 eksi alfa yazdığımızda da 170 dereceyi burada elde edebiliyoruz bu faz açısını.
+
+609
+01:51:31,764 --> 01:51:43,704
+Açısal frekansımız pozitif bir değer, yani ilk başladığımız uygun. Genlik değerimiz pozitif, artık bunu fazöre geçirebiliriz. Genlik değerimiz 7, baz açısı 170, bunu bu şekilde geçirmiş olduk.
+
+610
+01:51:47,507 --> 01:51:59,807
+Örnekler var. Bu örneklerde, Fazör gösterim ile, yani Polar gösterim ile, Kartezyan gösterim arasında geçişi nasıl yapacağımızı söylüyor.
+
+611
+01:51:59,807 --> 01:52:07,007
+5 artı 3 J'lik bir gerilim kaynağımız varsa, bunun Fazör gösterimi şöyle yapacağız.
+
+612
+01:52:07,007 --> 01:52:09,007
+5'e 3
+
+613
+01:52:12,916 --> 01:52:20,576
+Şuradaki açı değerini bulmamız lazım. Dolayısıyla alfa dediğimiz değer, arktanjan 3 bölü 5.
+
+614
+01:52:21,975 --> 01:52:35,895
+Bunu bulacağız. Bu 31 dereceye tekabül ediyormuş. Bununla birlikte R değerimizde 3'ün karesi artı 5'ün karesinin kare kökü 25, 9, 34, kök 34 gibi bir değer.
+
+615
+01:52:36,615 --> 01:52:39,655
+5 nokta sektörü için tekabül ediyormuş. Benzer şekilde
+
+616
+01:52:40,275 --> 01:52:52,376
+Elimizde bu şekilde bir empedans değeri varsa, bunun kalite eden koordinatlarındaki karşılığını bulmak istiyorsak, o zaman aslında elimizde şu var.
+
+617
+01:52:56,148 --> 01:53:05,908
+Şu mesafemiz 0.472 imiş, şuradaki açımız da 32 derece imiş. Biz buradaki x ve y'yi bulmak istiyoruz.
+
+618
+01:53:06,048 --> 01:53:12,588
+x dediğimiz değer ne olacak? 0.472 çarpı posinus 32 olacak.
+
+619
+01:53:13,188 --> 01:53:18,408
+y dediğimiz değer de 0.472 çarpı sinüs 32 olacak.
+
+620
+01:53:18,408 --> 01:53:23,908
+Bunlardan birlikte sürettiğimiz karmaşık sayımızı hesapladığımız değerler çarşımsızı.
+
+621
+01:53:24,148 --> 01:53:28,307
+İz çarpı j, y olarak yazabiliriz bir değer olmuş olacak arkadaşlar.
+
+622
+01:53:29,847 --> 01:53:32,007
+Diğer örneklerde benzer şekilde öğütülen.
+
+623
+01:53:33,507 --> 01:53:35,268
+Bunu sonlandırıyorum.
+
+624
+01:53:50,836 --> 01:53:53,996
+Ama onları zaten bahsetmiştik.
+
+625
+01:53:56,195 --> 01:53:56,775
+Bir de
+
+626
+01:54:01,332 --> 01:54:11,452
+Özel fonksiyonlar var. Özel fonksiyonlar kısmen gündeme gelmişti aslında. Hamza hocanız anlatmıştı ortak ders kılığında, onu hatırlıyorum.
+
+627
+01:54:16,083 --> 01:54:27,704
+Ama tekrar burada bakmak gerekirse. Özel fonksiyonlar şunlar. Normalde biz sinizoydar fonksiyonu aldığımız zaman bir sürekli fonksiyon ve sonsuz kere süreblenebilir bir fonksiyon.
+
+628
+01:54:28,184 --> 01:54:44,083
+Fakat bazı özel fonksiyonlara ihtiyacımız var ve genel çözümü sağlayabilmek adına bu sonsuz derecede süreblenebileyeyen fonksiyonları da veya bir kere dahi olsa süreksizlik içerdiği için integral veya sürebe alınamayan...
+
+629
+01:54:44,083 --> 01:55:00,344
+Bu konusiyonlarında uygun şekilde sisteme tanımlanması gerekiyor. Bunun için bir tanımlama yapılmış durumda. Bunlardan birincisi bir impuls konusiyonu. İmpuls konusiyonu temel olarak belirli bir T anında, T0 anında
+
+630
+01:55:02,515 --> 01:55:26,515
+Bu şekilde gösterimini yaptığımız ve delta t-t0 şeklinde tanımladığımız bir fonksiyon. Bunun açılımı da şu demek, bu fonksiyon t0 olmadığı yerlerde 0 değerine sahip, bu t eşittir t0 olduğu anda da bir değerine sahip olarak bunu tanımlayabiliriz.
+
+631
+01:55:32,404 --> 01:55:38,204
+Hatta onu tek değer olarak değil de, integral bir olaylar şekilde tanımlanıyormuş.
+
+632
+01:55:38,304 --> 01:55:39,264
+Onu da düzeltelim.
+
+633
+01:55:41,084 --> 01:55:43,464
+Önce birim basamak fonksiyonundan başlayalım.
+
+634
+01:55:44,084 --> 01:55:48,404
+Birim basamak fonksiyonu daha önce de gördük ki, belirli bir...
+
+635
+01:55:48,724 --> 01:56:01,203
+t0 değerine kadar 0'da kalıyor. Daha sonra 1 değerine çıkıyor ve 1 değerinde kalıyor. Bu fonksiyonu tanımlamak istediğimiz zaman u bilim basamak fonksiyonu temsil eden değer t-t0.
+
+636
+01:56:03,060 --> 01:56:17,340
+Bu t, t0'dan küçükse, bu referans değerimizden küçük, t zamanlarında değil, fonksiyon çıktısı 0, fonksiyonun t0'dan büyük zamanlardaki çıktısı da 1 olacak şekilde verilebiliyor.
+
+637
+01:56:17,460 --> 01:56:24,660
+Bu, anahtar kafamı açmaya tekabül eden bir fonksiyon. Bu fonksiyonu kullanarak biz şöyle bir grafikle sürebiliriz.
+
+638
+01:56:26,836 --> 01:56:31,735
+Şöyle bir grafik de çizebiliriz. Bu grafiği elde edebilmek için de ne yapmamız lazım?
+
+639
+01:56:35,572 --> 01:56:49,851
+1-U, T-T, R0 dememiz lazım. 1'den çıkartmamız lazım. 1'den çıkarttığımızda 1-0, 1 gelecek. Buralar 1, 1-1 dediğimizde 0 olacak. Dolayısıyla bu şekilde yön değiştirmesini yapabiliriz.
+
+640
+01:56:49,851 --> 01:57:02,492
+İşte bu bilim basamak fonksiyonunun türevini aldığımızda, şuralarda türev değerimiz 0, buralarda türev değerimiz 0 ama şurada sonsuz büyük bir türev değeri var. İşte bu da impuls fonksiyonunu oluşturuyor.
+
+641
+01:57:03,060 --> 01:57:03,700
+Diyelim.
+
+642
+01:57:06,220 --> 01:57:09,940
+Bir bu noktada bitireceğim arkadaşlar.
+
+643
+01:57:10,160 --> 01:57:16,240
+Çünkü son saatimizde RLC Örneği çözeceğiz demiştik.
+
+644
+01:57:16,340 --> 01:57:19,180
+Onunla ilgili olarak bir link paylaşacağız.
+
+645
+01:57:19,180 --> 01:57:21,180
+Dersten şu anda...
+
+646
+01:57:33,684 --> 01:57:44,564
+Şimdi şöyle yapalım. Diğer grubun devam eden dersine katılacağız arkadaşlar. Problem çözümü için. Dersi burada sonlandıralım.
+
+647
+01:57:50,100 --> 01:57:58,940
+Ben size katılım linkini göndereyim. Google Plasyon'da duyulmuş ama burada da chatten yazayım. Oraya katılacaksınız.
+
+648
+01:58:12,948 --> 01:58:17,367
+Adresinden neydi bunun adı? Problem çözümü.
+
+649
+01:58:22,931 --> 01:58:26,891
+Problem çözümüne katılabilirsiniz. Biz bu haftaki dersimizi orada bitirmiş olacağız.
+
+650
+01:58:28,152 --> 01:58:34,771
+Bir saat kadar problem çözümü olacak. Daha sonrasında da LAV'la ilgili duyulur, takip edersiniz.
+
+651
+01:58:34,872 --> 01:58:39,052
+Kimler katılacak, katılmayacak ve nasıl geçinmeyecek. Ona ilişkin bir hüzeler olur.
+
+652
+01:58:39,692 --> 01:58:45,712
+Bunun dışında bugünlükki dersle ilgili sonuç istediğiniz bir şey varsa onu alalım. Yoksa da dersimiz sonlandı.
+
+653
+01:58:58,836 --> 01:59:02,996
+Herkese iyi günler diliyorum arkadaşlar. Haftaya görüşmek üzere.

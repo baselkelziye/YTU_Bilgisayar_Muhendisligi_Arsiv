@@ -1,0 +1,3283 @@
+1
+00:02:45,171 --> 00:02:51,912
+Arkadaşlar merhaba, chat ekranında da yazdım ama dersimiz saat 1.30'da başlayacak. Sözlü olarak da ileteyim istedim.
+
+2
+00:26:55,059 --> 00:26:57,119
+Arkadaşlar, merhabalar. Duyabiliyor musunuz?
+
+3
+00:26:59,659 --> 00:27:01,619
+Duyuyoruz hocam.
+
+4
+00:27:02,619 --> 00:27:17,919
+Merhabalar. Bu haftalık biraz geç başlama durumunda kaldık. Hem ders içerikleriyle ilgili hem lablarla ilgili bir düzenleme yapmamız gerekti. Onu netleştirmek adına birazcık çalıştık. Şimdi onları da hazırlamış olduk.
+
+5
+00:27:18,483 --> 00:27:24,923
+Şimdi ismin berkanuslu bu dönemki devre teorisinin grup 1'ini birlikte götüreceğiz.
+
+6
+00:27:25,543 --> 00:27:31,263
+Aslında dersimiz grup 1 ve grup 2 ortak bir şekilde ilerleyecek. Sınavlarımız da ortak olacak zaten.
+
+7
+00:27:31,923 --> 00:27:39,483
+Konuları da benzer şekilde anlatacağız ve sürekli karşı taraftaki hocayla da, grup 2'deki hocayla da birbirimizi check ederek...
+
+8
+00:27:39,731 --> 00:27:46,091
+Yerlerimizi netleştirip ilerlediğimiz noktadaki konularını da netleştirip birlikte ilerliyor olacağız zaten.
+
+9
+00:27:47,412 --> 00:27:52,511
+Dolayısıyla sene sonundaki çantla yine iki grup birlikte olacak.
+
+10
+00:27:53,811 --> 00:27:59,372
+Kabaca şimdi devre teorisi dediğimiz zaman ne düşünmeliyiz? Ondan biraz bahsedelim.
+
+11
+00:27:59,372 --> 00:28:06,311
+Şimdi biliyorsunuz neticede elektriksel veya manyetik olarak tüm durumları açıklayan
+
+12
+00:28:06,740 --> 00:28:29,740
+Teori aslında dalga teorisi, elektromanyetik dalga teorisi. Ama elektromanyetik dalga teorisi bünyesinde bir dalga denkleminin çözümünü gerektiriyor. Yani bu ne demek? Hem zamana bağlı hem de konuma bağlı, x, y, z'ye bağlı olarak diferansiyel bir denklem olarak karşımıza çıkıyor. Ve bunu büyük ölçeklerde çözmek gerçekten problematik, uğraştırıcı bir süre.
+
+13
+00:28:30,324 --> 00:28:56,244
+Bunun yerine ne önerilmiş? Bunun yerine daha soyut katmanlarla, layerlarla birlikte bir soyutlama mantığı önerilmiş. Bu soyutlama mantığı temelde şöyle çalışıyor. Basit bir takım elemanlardan daha karmaşık elemanlara doğru gittiği haliyle seviye seviye bunları soyutlamış ve birer Blackbox kara kutu tanım olarak vermiş durumda.
+
+14
+00:28:57,587 --> 00:29:16,327
+Bu mantık. Örneğin buna göre bir direnç elemanı dediğimiz zaman aslında elektromanyetik alan veya dalga teorisiyle birlikte çözülebilecek bir denklemken, temel olarak uçlarına uygulanan gerilim ile üzerinden geçirdiği akımı direnç değeriyle orantılı olacak şekilde tanımlanmış bir soyutlama söz konusu.
+
+15
+00:29:16,327 --> 00:29:22,107
+Bu mesela birinci derece bir soyutlama. Daha üst seviyelerdeki soyutlamalar nasıl oluyor? İşte bunların.
+
+16
+00:29:22,516 --> 00:29:28,776
+Lojik dersi alacaksınız ileride. Lojik devreler dersinde göreceğiniz kapılar seviyesinde soyutlanması söz konusu.
+
+17
+00:29:29,396 --> 00:29:37,615
+Yani bir lojik devre kapısına baktığımız zaman içerisinde pek çok transistör ve kapasite gibi elemanlar barındıran bir yapı.
+
+18
+00:29:38,655 --> 00:29:45,336
+Yine bir üst seviyeye çıktığımız zaman artık bunların entegre devre mantığında soyutlanmış halleri mevcut.
+
+19
+00:29:45,936 --> 00:29:48,936
+Yani artık bir alo devresi düşündüğümüz vakit.
+
+20
+00:29:49,279 --> 00:30:04,079
+İçerisinde pek çok kapıdan oluşan bir yapı ama yine bunu da bir Black Box mantıkla düşündüğümüz zaman A girdisi ile B girdisi, binary sayılar bunlar. Bunları toplayıp sonuç olarak yine bir binary sayı üretiyor. Dolayısıyla bir üst seviyede de bunu tanımlamak mümkün.
+
+21
+00:30:08,655 --> 00:30:21,336
+Mikro işlemci seviyesinde, daha üste çıkartarak mikro denetleyici seviyesinde, yine üste çıkartarak alt sistemler seviyesinde, bir üste çıkartarak sistem seviyesinde bunları tanımlamak ve soyutlamak mümkün.
+
+22
+00:30:21,836 --> 00:30:31,455
+Dolayısıyla devre teorisi dediğimiz yapı da en temel fiziki gerçeklik olan buradaki elektromanyetik dalga teorisinden gelen çözümlemeleri bir seviye ilerlettiğimiz.
+
+23
+00:30:31,903 --> 00:30:41,923
+Tekil basit soyutlama mantığındaki devre elemanlarına dönüştürdüğümüz ve buradaki davranışları tanımladığımız yapı olarak karşımıza çıkan bir yapı.
+
+24
+00:30:42,144 --> 00:30:51,403
+Biz dersimiz içerisinde temel basit devre elemanlarını tanıyacağız. Bunların davranışlarını DC ortamda, DC kaynaklar varken inceliyor olacağız.
+
+25
+00:30:52,788 --> 00:31:11,788
+Sonrasında enerji depolayan elemanlarla ilgili olarak konumuz ilerleyecek. Daha sonrasında da tüm bu görmüş olduğumuz elemanların artık AC bir gerilim kaynağı veya besleme ile mevcut bulunduğu durumdaki davranışlarını inceleyeceğiz. Sonra diyeceğiz ki...
+
+26
+00:31:12,276 --> 00:31:20,956
+Bütün bu devrelerin zaman domenindeki yani zamana bağlı çözümlemeleri zor oluyor. Hakikaten diferansiyel denklemler işin içine girmeye başlayacak.
+
+27
+00:31:21,756 --> 00:31:28,276
+Belirli bir noktada. Daha sonrasında da bu çözümlemeleri fazör uzayı dediğimiz bir uzayda gerçeklemeye çalışacağız.
+
+28
+00:31:28,276 --> 00:31:37,396
+Fazör uzayı aslında temel olarak sabit frekanslı bir sinizoidal kaynak olduğu vakit devre elemanlarının davranışları
+
+29
+00:31:37,779 --> 00:32:01,200
+Basit bir şekilde tanımlanabiliyor. Basit bir denklemle tanımlanabiliyor ve bunları artık böyle zamana bağlı bir diferansiyel denklem olarak ifade etmeye gerek kalmıyor. Bu durumda da artık AC analizi, AC devre analizini, fazör dediğimiz mantık çerçevesinde incelemeye çalışacağız. Dolayısıyla dersimiz içerisinde göreceğimiz konular temel olarak bunları kapsayacak.
+
+30
+00:32:01,652 --> 00:32:09,471
+Tabi devre teorisi dediğimiz zaman karmaşık bir devrenin çözümüne ilişkin olarak çeşitli teoremler var devre teorisinde.
+
+31
+00:32:10,332 --> 00:32:13,592
+Çözümlemeyi basitleştirmek yönünde kullanacağımız yaklaşımlar bunlar.
+
+32
+00:32:14,432 --> 00:32:24,432
+Bu devre teoremlerini hem zaman domeninde yani zamana bağlı denetlemlerde verdiğimiz senaryoda hem de fazor uzayına geçtiğimiz zaman tekrarlayarak üzerinden geçeceğiz.
+
+33
+00:32:25,268 --> 00:32:35,648
+Dolayısıyla bir karmaşık devreyi nasıl ele almalıyız? Hangi çözüm yöntemi hangi devre için uygun? Bu gibi durumları artık analiz edebiliyor olacağız.
+
+34
+00:32:35,648 --> 00:32:49,728
+Yine dersimiz kapsamında kazanacağım yeteneklerden birisi de şu olacak. Hep anlattığımız noktalar hep analize ilişkindi. Analiz şu demek, bize bir devre veriliyor. Bu devrenin davranışını çözümlemeye çalışıyoruz. Bu analiz.
+
+35
+00:32:50,612 --> 00:33:14,632
+Ama bir de şu noktadan değerlendireceğiz devre teorisini. Tasarım noktasında da, dizayn noktasında da değerlendireceğiz. Yani problemlerimiz kapsamında bazı tasarım problemleri olacak. Bu tasarım problemine ilişkin olarak bir öncül vereceğiz, bir gereksinim vereceğiz. Bu gereksinimi sağlayacak devreyi tasarlamakta yine dersimiz kapsamında edineceğimiz kabiliyetlerden birisi. Buna örnek vermek gerekirse.
+
+36
+00:33:15,220 --> 00:33:32,960
+Örneğin elimizde 12 voltluk bir kaynak var. Bizim ihtiyacımız olan 5 voltluk bir gerilim değeri. Bu 12 voltluk kaynaktan 5 voltluk gerilim değerini nasıl elde edebiliriz? En basit mantıkta bir gerilim bölücü devreyle bunu elde etmek mümkün. Ama gerilim bölücü, yani dersimiz kapsamında buraya kadar söyleyebilmemiz yeterli olacak.
+
+37
+00:33:40,564 --> 00:33:54,364
+Aslında gerilim bölücüyle bu 5 voltluk elde ettiğimiz senaryonun oldukça enerji kaybeder, güç sarfiyatı yüksek olan bir senaryo olduğunu göreceğiz. Bunun yerine yine elektronik devreleri de bunun üzerine eklediğimiz zaman daha verimli.
+
+38
+00:33:55,164 --> 00:33:57,923
+Gerilim bölücüleri nasıl oluştururuz onları görmüş olacağız.
+
+39
+00:34:08,019 --> 00:34:16,920
+Bilgi ekleyerek devam eden dersler, bunları bu şekilde de değerlendirirseniz sizin için daha faydalı olur diye düşünüyorum.
+
+40
+00:34:16,920 --> 00:34:22,440
+Genel olarak dersin içeriği ve derste beklentimiz bu şekilde diye özetleyebilirim.
+
+41
+00:34:23,059 --> 00:34:27,500
+Şimdi bu aşamada resmi olarak oluşturduğumuz bizim ders tarzı formumuz var.
+
+42
+00:34:28,436 --> 00:34:38,496
+Onu sizinle paylaşayım ve onun üzerinden konuşalım. Orada da dersin nasıl işleneceği değerlendirme yöntemlerini tanımlamaya çalıştık. Onlar üzerinden ilerlemeye çalışalım.
+
+43
+00:34:46,003 --> 00:34:55,183
+Şimdi bunu aynı zamanda Zoom'dan, chat ekranından da paylaşayım. Şu anda katılan arkadaşlar bunu buradan indirebilirler.
+
+44
+00:35:04,275 --> 00:35:07,275
+Bunu kapatmamız lazımmış.
+
+45
+00:35:09,955 --> 00:35:11,355
+Tıklayı öndürüyorum.
+
+46
+00:35:15,764 --> 00:35:21,064
+Chat ekranından arkadaşlar dosyayı paylaştım. İndirebiliyor musunuz? Bir kontrol ederseniz sevinirim.
+
+47
+00:35:28,275 --> 00:35:35,195
+Tamam, süper. Ben ekran paylaşımı üzerinden de bunu sizle paylaşayım ve üzerinde konuşalım.
+
+48
+00:35:46,516 --> 00:35:59,175
+Şimdi sizler için ilk defa mı online ders olmuş oldu? Bunu bir sorayım. Geçen dönem yoktu herhalde değil mi? Sizler de çoğunlukla birinci sınıf olduğunuz için ilk defa bir online ders olmuş oluyor değil mi?
+
+49
+00:35:59,576 --> 00:36:05,815
+Geçen dönem bazı derslerimiz online'dı. Hazırlık okuyan arkadaşlar da geçen sene online eğitim gördü ibret olarak.
+
+50
+00:36:05,815 --> 00:36:13,775
+Tamam, teşekkürler bilgi için. Şöyle paylaşmış olalım.
+
+51
+00:36:14,547 --> 00:36:23,607
+Evet, şimdi arkadaşlar, şu şeyi kontrol etmediydim yalnız ya. Laf saatimiz ne zaman görünüyor acaba? Dersten sonra görünüyor değil mi?
+
+52
+00:36:24,787 --> 00:36:25,507
+Evet hocam.
+
+53
+00:36:25,807 --> 00:36:26,427
+Tamam, süper.
+
+54
+00:36:26,835 --> 00:36:43,375
+Şimdi bizim dersimizle ilgili olarak arkadaşlar, burada bir eksik bilgi var, daha onu oluşturamadık, onu oluşturunca tekrar size ileteceğim. Bir Google Classroom grubumuz olacak. Her iki ders grubu da orada kayıtlı olacak ve dersle ilgili sunumları...
+
+55
+00:36:43,827 --> 00:36:59,887
+Orada paylaşacağız. Duyuruları, lab duyurularını orada paylaşacağız. Dolayısıyla bu oluştuktan sonra sizden ricam yine duyurularla iletmiş olacağız. Google Classroom grubuna da katılmanız ama bu aşamada onu tam belirlemedik. Asistan arkadaşlar belirledikten sonra size ileteceğiz.
+
+56
+00:37:01,780 --> 00:37:14,560
+Şimdi dersimizle ilgili olarak haftalık plana baktığımızda bir hafta Ramazan bayramı tatiline gidiyor. Sonraki hafta, dokuzuncu hafta vize haftası olarak belirlenmiş. Biz de bu şekilde yazdık.
+
+57
+00:37:14,560 --> 00:37:22,600
+Bunun dışında tam yapısal olarak veya tam isim olarak, haftalık olarak işleyeceğimiz konulara bakacak olursak.
+
+58
+00:37:22,931 --> 00:37:44,091
+Temel olarak devre teorisine bir giriş. Daha sonrasında burada yük, akım ve gerilim kavramlarına bakıyor olacağız. Ohm yasasını inceleyeceğiz. Direnç kavramı nedir, özdirenç nedir, iletkenlik nedir, öziletkenlik nedir gibi kavramlara bakacağız. Daha sonrasında Kirchhoff kanunlarını inceleyeceğiz. Seri paralel devrelere bakacağız. Akım-gerilim bölücü devreleri inceleyeceğiz.
+
+59
+00:37:44,851 --> 00:37:56,072
+Sonrasında ise yine bahsetmiş olduğumuz teoremlerden hareketle düğüm ve çevre denklemlerini oluşturma ve devre çözümlemesi üzerinde duracağız.
+
+60
+00:37:56,072 --> 00:38:05,271
+Yine ilerlediğimiz bir sonraki haftada kaynak dönüşümleri, linearlık, Thevenin-Norton eşdeğerlikleri maksimum güç teoremleri üzerinde duracağız.
+
+61
+00:38:05,907 --> 00:38:30,907
+Sizin de göreceğiniz üzere bir kısa sınavımız burada mevcut. Kısa sınavımız yine online yıldız edi TR üzerinden tanımlayacağımız bir sınav olacak. Bunun tam içeriğiyle ilgili olarak daha sonra duyuru yaparız ama daha önceki uyguladığımız şekliyle çoktan seçmeli bir sınav ama çoktan seçmeli olmasının amacı şu, en azından elde ettiğiniz sonucu doğrulamak açısından bir...
+
+62
+00:38:31,668 --> 00:38:51,128
+Size çıktı üretmek ama sadece işaretleyerek değil, devreye ilişkin çözümü de ayrı bir kağıtla yapmanızı rica edeceğiz ve bunu da yine sistem eklememizi rica ediyor olacağız. Daha önceki senelerde bu şekilde uygulayıyorduk. Bu sene de kabaca bu şekilde uygulayabiliriz ama farklılık olduğu zaman dediğim gibi tekrar iletişimde olacağız o konuyla ilgili.
+
+63
+00:38:57,172 --> 00:39:06,851
+Kuvvetlendirici, Operational Amplifier olacak. Şimdi buraya kadar gelen noktada biz temel olarak bir direnç elemanı üzerinden bu teoremleri anlatıyor olacağız.
+
+64
+00:39:07,492 --> 00:39:13,771
+Fakat devre teorisi dersi N-terminali herhangi bir devre elemanı için tanımlanabilir.
+
+65
+00:39:13,771 --> 00:39:23,572
+İşte bu işlemsel kuvvetlendirici de bu şekilde tanımlayabileceğimiz bir çok terminali bir devre olacak. Benzer şekilde oradaki teoremler nasıl uygulanıyor?
+
+66
+00:39:24,179 --> 00:39:31,460
+İşte devrenin, işlemsel kuvvetlendiricinin tanım bağımsından hareketle nasıl çözünürlüğü yapılır, onun üzerinde duruyor olacağız.
+
+67
+00:39:32,460 --> 00:39:40,659
+Daha sonrasında pasif elemanlar üzerinde devam ettiğimiz noktada enerji depolayan elemanlara bakıyor olacağız.
+
+68
+00:39:40,799 --> 00:39:48,259
+Enerji depolayan elemanlardan kapasite ve enüktans elemanlarını inceleyeceğiz. Bunların DC davranışları üzerinde duracağız.
+
+69
+00:39:48,916 --> 00:39:58,796
+Bu DC davranışlarını incelerken uzun süre boyunca kaynak beslemesinde bulunan devreleri incelemekten bahsediyoruz.
+
+70
+00:39:58,936 --> 00:40:05,056
+Yani bu RL ve RC devreleri aslında iki şekilde davranış gösteriyor.
+
+71
+00:40:06,032 --> 00:40:31,632
+Bunlara kaynağı bağladığımız andaki geçici hal davranışları mevcut. Bir de sürekli hal davranışları mevcut. Sürekli hal davranışları şu demek, uzunca bir süre boyunca kaynak bağlı kaldıktan sonraki devre davranışını incelemek demek. Dolayısıyla öncelikli olarak sürekli hal durumlarını inceliyor olacağız. Daha sonraki hafta ise bunların geçici hal durumlarını inceliyor olacağız. Ne demek?
+
+72
+00:40:32,083 --> 00:40:45,923
+İşte RL devremiz var. Bunda herhangi bir kaynak yok. Kaynağa bağladığımız andaki davranışı nasıl olur? Bir ilkin enerjisi varsa nasıl olur, yoksa nasıl olur? Bunları inceleyeceğiz temel olarak.
+
+73
+00:40:46,387 --> 00:40:53,027
+Daha sonrasında da benzer bir tasarımı ve senaryoyu RLC devreleri üzerinden inceliyor olacağız.
+
+74
+00:40:53,567 --> 00:41:00,288
+Baktığınız zaman RL ve RC devreleri birinci dereceden diferansiyel denklem çözümleri üreten devreler.
+
+75
+00:41:01,027 --> 00:41:05,127
+RLC devreleri de ikinci dereceden diferansiyel denklem çözümü üreten devreler.
+
+76
+00:41:05,867 --> 00:41:10,288
+Fakat biz bunları ele alırken hani diferansiyel denklemler görmemiş olacağız ama
+
+77
+00:41:11,347 --> 00:41:23,907
+Bunları yine kapsam olarak nasıl çözümleniyor, çözüm önerileri nasıl yapılır bunları vererek yani altyapıyı tanımlayarak devre teorisindeki karşılıklarını vermeye çalışacağız.
+
+78
+00:41:24,563 --> 00:41:49,243
+Buraya kadar olan analizlerimiz hep DC analiz olmuş olacak aslında. Kaynaklarımız DC ikenki davranışlar. RLC'de belki farklı kaynakları da ele alıyor olacağız ama genel olarak DC kaynaklar üzerinde işlem yapmış olacak. Bundan sonraki kısım ise kaynaklarımızın artık sinizoidal veya AC bir takım kaynaklar olduğu durumdaki devre davranışlarının analizine yönelik olarak olacak.
+
+79
+00:41:50,099 --> 00:42:13,639
+Gördüğünüz üzere bir ikinci kısa sınavımız da tanımlı burada. Bu ikinci kısa sınavla ilgili olarak da şöyle söyleyelim, ya da her iki kısa sınavla ilgili de şöyle söyleyelim. Kısa sınavın olacağı haftaya kadarki konular dahil. Yani ilk dört haftanın konusu kısa sınav bire dahil. Yani o hafta gördüğümüz konudan sınavda bir şey çıkabilir manasını söylüyorum.
+
+80
+00:42:14,164 --> 00:42:34,464
+Vizemiz yine ilk 7 haftanın konuları dahil. Kısa sınav 2'ye ise 10, 11 ve 10, 11, 12, 13. haftalar dahil. Yani kısa sınavdan, vizeden sonraki konular dahil olmuş olacak. Son olarak da final sınavımız bütün konular kapsam dahilinde olmuş olacak.
+
+81
+00:42:39,027 --> 00:42:55,407
+Devre elemanlarının AC analize geçtiğimizdeki temel tanım bağıntıları nasıl değişiyor? Öncelikli olarak onları inceleyeceğiz. Daha sonrasında devreler üzerinde, karmaşık devreler üzerinde çözümlemeler nasıl yapılıyor? Onlara bakacağız.
+
+82
+00:43:02,420 --> 00:43:19,380
+AC kaynak varkenki durumlarını inceliyor olacağız. Son olarak süzgeçlerle ilgili vaktimiz yeterse, süzgeç tasarımı ve süzgeçlerin analiziyle ilgili olarak, filtre tasarımı ve analiziyle ilgili olarak bir haftalık konumuz olacak.
+
+83
+00:43:19,380 --> 00:43:27,880
+Şimdi temel olarak eğitim-öğretim yönetmeliğinde belirtildiği üzere, işte teorik derslerde %70 devam ve
+
+84
+00:43:28,307 --> 00:43:43,208
+Lab derslerinde %80 devam zorunluluğu var. Bunu tam nasıl uygulayacağız bu dönem için çok emin değilim ama bunu bir ön bilgi olarak yazmış oldum. Sizlerden de derslere online de olsa devam etmenizi bekliyoruz.
+
+85
+00:43:43,867 --> 00:43:52,467
+Tabii şu imkan var, onu da ölçülemez. Onu da ölçülmesi mümkün değil. Dersleri daha sonradan izleme durumu olabilir bazı arkadaşlarımız için doğal olarak.
+
+86
+00:43:52,880 --> 00:43:56,220
+Bunun da ölçülemediğini bilerek hareket etmeye çalışacağız.
+
+87
+00:43:57,420 --> 00:44:02,240
+Dersimizle ilgili olarak kullanacağımız temel kaynakları burada not ettim arkadaşlar.
+
+88
+00:44:03,980 --> 00:44:08,860
+Şunun adedi yanlış yazılmış, lab adedi 10 olması lazım. Siz de düzeltirsiniz.
+
+89
+00:44:10,940 --> 00:44:19,220
+10 adet labımız olacak. Şimdi dersin değerlendirilmesiyle ilgili olarak duruma bakacak olursak bir tane ara sınavımız var, vizemiz var.
+
+90
+00:44:19,827 --> 00:44:31,347
+İki adet kısa sınavımız var. Kısa sınavlar vizelerden önce olduğu için, online yıldız edu TRS sistemindeki bir sınav mantığı devre teorisi için temel olarak neye benziyor?
+
+91
+00:44:32,148 --> 00:44:38,967
+Kısa sınav zamanında bunu temel olarak tecrübe etmiş olacağız. Vize için en azından bu tecrübeyle girmiş olacağız arkadaşlar.
+
+92
+00:44:40,608 --> 00:44:47,047
+Tabi ders içerisinde örnek çözümlerimiz olacak, teori sonrasında.
+
+93
+00:44:47,635 --> 00:45:01,015
+Ama sınav olarak, sınavda bir sonraki soruya geçme, cevap verme, geriye dönme gibi kurallar nasıl oluyor, onu yaşayarak görmek daha pratik olduğu için bu şekilde bir uygulamamız da olacak.
+
+94
+00:45:01,175 --> 00:45:08,675
+Önce kısa sınavda bir tecrübe edineceğiz. Daha sonrasında vizede bir tecrübeyle vizemizi yapıyor olacağız.
+
+95
+00:45:08,675 --> 00:45:11,836
+Şimdi lab olarak 10 tane lab var şeklinde tanımladık.
+
+96
+00:45:14,260 --> 00:45:35,200
+Katkısı toplamda %30. Ara sınav %20 katkı yapıyor. Kısa sınavlarımız her biri 5. Totalde %10 katkısı var. Final sınavları tüm dersler için %40 katkı sağlıyor. Dolayısıyla değerlendirme yöntemimiz bu şekilde. Yıl içi %60, yıl sonu %40 olacak şekilde bir değerlendirmemiz mevcut.
+
+97
+00:45:36,083 --> 00:45:42,823
+Laboratuvarlarla ilgili olarak da kabaca lab konuları bu şekilde olmasını planladık.
+
+98
+00:45:43,943 --> 00:45:51,384
+Burada öncelikli olarak ders kapsamında kullanacağımız simülasyon ortamı, hem Mac hem Windows için kurulumu mevcut olan bir simülasyon ortamı.
+
+99
+00:45:52,104 --> 00:45:54,844
+Öncelikli olarak lab sıfır olarak bunu işaretledik.
+
+100
+00:45:55,423 --> 00:46:00,963
+Kullanacağımız LTSPICE, bu bir freeway ücretsiz bir program.
+
+101
+00:46:03,603 --> 00:46:28,103
+Bir tanıtım yapacak asistan arkadaşlar. Örneklerle bunu zenginleştirecekler. Daha sonrasındaki haftalarda gittikçe artan karmaşıklıkta bir konu akışımız var. Öncelikli olarak Ohm kanun üzerinde, daha sonra Kirchhoff kanunları üzerinde, daha sonra çevre ve düğüm denklemleri ve teoremi üzerinden ilerleyeceğiz.
+
+102
+00:46:28,659 --> 00:46:34,199
+Sonrasında Thevenin ve Norton süperpozisyon maksimum güçü içeren bir lab haftamız var.
+
+103
+00:46:35,420 --> 00:46:44,019
+Sonrasında işlemsel kuvvetlendirici, Opamp, Operational Amplifier dediğimiz devre elemanına ilişkin bir tasarım var.
+
+104
+00:46:44,279 --> 00:46:48,779
+Sadece burada direnç elemanlarıyla birlikte kullanıldığı bir sanayi olacak.
+
+105
+00:46:49,500 --> 00:46:55,299
+Daha sonrasında RC ve RL devrelerine ilişkin olarak birer deney haftamız var.
+
+106
+00:46:55,827 --> 00:47:12,948
+Daha sonrasında RLC devrelerine ilişki bir deney haftamız var. Son olarak analog bilgisayar olarak yazdık ama bu aslında işlemsel kuvvetlendiricinin enduktans ve kapasite elemanlarıyla birlikte kullanıldığı senaryolara karşılık gelen bir hafta olarak tanımlamış olduk.
+
+107
+00:47:12,948 --> 00:47:21,827
+Bu kabaca bu şekilde tanımladık. Eğer bir değişiklik olursa akışta yine sizi de bilgilendiriyor olacağız ama genel akışımız kabaca bu şekilde.
+
+108
+00:47:22,335 --> 00:47:43,135
+Lab'ın işleyişiyle ilgili olarak da düşüncemiz şu. Lab günleri perşembe günleri zaten. Lab gününden belirli bir süre önce soruyu ilan etmeyi düşünüyoruz. Lab sorusunu. Lab sorusuna ilişkin devre simülasyon çözümlemesini yapmanızı bekliyoruz.
+
+109
+00:47:48,079 --> 00:47:57,000
+Devreyi işlemler üzerinden, el ile çözerek de, hesap üzerinden çözerek de oluşturmanızı bekliyoruz.
+
+110
+00:47:57,260 --> 00:48:03,079
+Ve oluşturmuş olduğunuz simülasyon dosyası ve yapmış olduğunuz çözümlemeyi,
+
+111
+00:48:04,739 --> 00:48:15,239
+Online Yıldız Editede'de tanımlayacağımız LAB sınavına veya LAB'la ilgili olarak tanımlamış olduğumuz alana yüklemenizi isteyeceğiz.
+
+112
+00:48:15,795 --> 00:48:38,995
+Daha sonrasında bu yapılan yüklemeler incelenecek, ısılan arkadaşlar tarafından her hafta yaklaşık bizim hesap ettiğimiz kadarıyla 45 kişi rastgele seçilerek o konuyla ilgili olduğu, o haftanın konusuyla ilgili olarak yapmış olduğu çalışmayı sözlü olarak anlatmak üzere laf saatinde online toplantıya çağrılacak.
+
+113
+00:48:39,891 --> 00:48:48,371
+Kabaca baktığımız zaman, her hafta 45 kişi, 10 hafta lablar olduğu vakit 450 kişi kadar bir kontrol edilir.
+
+114
+00:48:48,371 --> 00:48:57,871
+Yani aşağı yukarı herkes en az 2 kere, ortalamada 2 kere rastgele bir şekilde lab haftası için sözlü sınavına çağrılmış olacak.
+
+115
+00:48:58,511 --> 00:49:05,411
+Bununla birlikte yüklemiş olduğunuz simülasyon dünyası ve çözümlemelerimiz yine asistan arkadaşlar tarafından ikizlikle inceleniyor olacak.
+
+116
+00:49:06,003 --> 00:49:24,304
+Dolayısıyla hem sözlü hem de yapmış olduğunuz simülasyon ve çözülmeme dolayısıyla puan alıyor olacaksınız. Birinci haftayla ilgili olarak özel bir işlem yok. Bu temel olarak katılım dolayısıyla puan alacağınız bir senaryo gibi düşünebilirsiniz.
+
+117
+00:49:26,403 --> 00:49:33,344
+Dolayısıyla bizim ders akışımız kabaca bu mantık çerçevesinde ilerliyor olacak arkadaşlar.
+
+118
+00:49:33,840 --> 00:49:40,860
+Dersin işlenişiyle, puanlanmasıyla ve değerlendirilmesiyle ilgili bir sorunuz var mı bu aşamada?
+
+119
+00:49:55,699 --> 00:50:05,960
+Yoksa arkadaşlar, şimdi bu haftanın konusu olan sunumla birlikte devam edeceğim. O yüzden ekran paylaşımını değiştiriyorum.
+
+120
+00:50:28,403 --> 00:50:41,503
+Lab'la ilgili sormuştunuz, şeyi açtığımda. Lab'lar şimdi 10 hafta olduğu için kabaca hesap edecek olursak, 2 hafta bayram tatili ve vize dolayısıyla gidiyor.
+
+121
+00:50:42,344 --> 00:50:51,564
+10 haftada Lab var, 12 hafta. Yani ilk 2 hafta Lab olmayacak. Lab tatilde bir şeyimiz yok ama 3. haftadan itibaren LTS Spice tanıtımıyla birlikte.
+
+122
+00:50:52,275 --> 00:50:58,595
+başlıyor olacağız. Dolayısıyla onunla ilgili soru sormuş arkadaşlar vardı. Onu da cevaplamış olalım bu şekilde.
+
+123
+00:51:00,595 --> 00:51:02,735
+Şunu da açalım.
+
+124
+00:51:23,284 --> 00:51:25,003
+Tekrar sunumu başlatıyorum.
+
+125
+00:51:28,443 --> 00:51:28,804
+Evet.
+
+126
+00:51:29,684 --> 00:51:31,304
+Ekranı görebiliyorsunuz umarım.
+
+127
+00:51:33,043 --> 00:51:34,463
+Evet hocam, görebiliyoruz.
+
+128
+00:51:34,824 --> 00:51:35,064
+Tamam.
+
+129
+00:51:35,743 --> 00:51:44,443
+Bu ilk konular, temel konular, işte kullanacağımız birimler, ölçüm birimleri neler olmalı, işte bunlar arasındaki ilişkiler nasıl tanımlanıyor.
+
+130
+00:51:45,804 --> 00:51:47,284
+Sonrasında yine...
+
+131
+00:51:47,795 --> 00:52:05,036
+Temel tanımlar nelerdir? Onların üzerinde durduğumuz bir slide olacak. Bu kaç slide'dan oluşuyordu? 68 slide ama biraz hızlı geçeceğiz zaten temel olarak bildiğiniz şeyler olduğu için ama arada sormak istediğiniz bir şey olursa yine bölüp sorabilirsiniz.
+
+132
+00:52:08,095 --> 00:52:11,135
+VP grup linki dediğimiz nedir?
+
+133
+00:52:15,315 --> 00:52:18,175
+Hocam, dersin WhatsApp grubunun linkini soruyor.
+
+134
+00:52:18,175 --> 00:52:25,496
+Dersin WhatsApp grubuna ne gerek var ya? Dersin Google Classroom grubu var. Gayrı resmi gruplara katılmayalım arkadaşlar.
+
+135
+00:52:28,095 --> 00:52:30,456
+Arkada WhatsApp grubunda neler dönüyor hocam?
+
+136
+00:52:34,612 --> 00:52:35,112
+Evet.
+
+137
+00:52:39,476 --> 00:52:41,416
+Şimdi şöyle devam edelim.
+
+138
+00:52:46,612 --> 00:53:13,372
+Şimdi temel olarak biz dersimiz kapsamında da SI birim sistemini kullanıyor olacağız. Yani bu SI birim sistemi dediğimiz şey temelde uzunluk için metre birimini kullanacağız. Kütle için kilogram, zaman için saniye, akım için amper, sıcaklık için kelvin, yük için kolom değerleri bizim için önemli. Bunlar temel birimler.
+
+139
+00:53:14,387 --> 00:53:31,087
+Bir soruyla karşılaştığımız zaman, örneğin bir öz direnç değerini hesaplamayla ilgili bir durumla karşılaştığımızda, öz direnç değerini hesaplarken birimleri metre, ondan sonra metre kare gibi.
+
+140
+00:53:31,615 --> 00:53:38,715
+Değerler olmasına dikkat edeceğiz. Farklı bir birimde verilmiş değerler varsa bunları uygun birimlere dönüştürmemiz gerekiyor.
+
+141
+00:53:39,355 --> 00:53:47,175
+Yine birimleri ifade ederken çok küçük ve çok büyük birimleri de temel birim cinsinden ifade etmek mümkün.
+
+142
+00:53:47,315 --> 00:53:55,876
+Fakat bunu ifade ederken bir ön ek kullanılıyor. Bu ön ekler ve karşılık gelmiş olduğu çarpan etkileri nelerdir diye bakacak olursak,
+
+143
+00:53:59,615 --> 00:54:06,015
+Birlik bir ölçünün karşılığı 600 km veya 600 milyon mm olarak verilebilir.
+
+144
+00:54:06,876 --> 00:54:12,735
+Bu mm, metre ve kilometre arasındaki bağıntı temel olarak bildiğimiz bir şey, temel olarak kullandığımız bir şey.
+
+145
+00:54:12,835 --> 00:54:14,675
+Aralarında biner kat var.
+
+146
+00:54:15,456 --> 00:54:19,895
+Fakat daha üst ve daha küçük birimlere bakacak olursak bunlar nasıl değişiyor?
+
+147
+00:54:20,675 --> 00:54:26,555
+Şöyle ki, örneğin bizim temel birimimiz metre cinsinden bir şey olsa,
+
+148
+00:54:27,123 --> 00:54:39,583
+Aşağı doğru indikçe, daha küçük birimlere indikçe, Desimetre, Santimetre, Milimetre, Mikrometre, Nanometre, Pikometre, Santo ve Atto metre şeklinde bunları isimlendirebileceğiz.
+
+149
+00:54:39,583 --> 00:54:50,903
+Bizim için sıklıkla karşılaşacağımız 10 üzeri eksi 3 artı 3 mertebesindeki değişiklikler. Yani şunlar daha çok önemli. İşte metre, milimetre.
+
+150
+00:54:51,603 --> 00:55:02,923
+Binde biri, milimetrenin binde biri mikrometre, binde biri nanometre, binde biri pikometre gibi pikometreye kadar genel olarak kullanıyoruz.
+
+151
+00:55:03,103 --> 00:55:11,583
+Ama ders kapsamında geçiyor demek istiyorum yani. Daha sonrakiler yine özel alt birimler, çarpanlar.
+
+152
+00:55:18,559 --> 00:55:23,819
+Tera, Peta ve Egza olarak bunlar bin kat şeklinde ilerleyecek şekilde ilerliyor.
+
+153
+00:55:24,819 --> 00:55:31,099
+Yine 10 katı, 100 katı içinde deka ve hekto önekleri kullanılıyor.
+
+154
+00:55:31,099 --> 00:55:37,500
+Dolayısıyla buradan aklımızda kalması gereken SI birim sistemini kullanacağız.
+
+155
+00:55:38,159 --> 00:55:42,079
+Tanımladığımız her bir değişken SI birim sistemine bağlı olacak.
+
+156
+00:55:42,260 --> 00:55:44,480
+Dolayısıyla bir SI birimini hesaplarken
+
+157
+00:55:44,927 --> 00:55:54,307
+Ona ilişkin bir hesap yaparken kullanacağımız diğer birimlerinde temel birimler cinsine dönüştürülmesi gerekiyor. Onu tekrar hatırlatmış olalım.
+
+158
+00:55:57,568 --> 00:56:07,108
+İşte burada da o bahsettiğim duruma ilişkin bir örnek. Örneğin, hız dediğimiz değişken, mesafe bölü zaman şeklinde tanımlanıyor.
+
+159
+00:56:07,603 --> 00:56:22,803
+Örneğin, verilen bir örnekte 4000 metrelik bir mesafeyi bir dakikada kat eden bir objenin hızı nedir diye sorulduğunda, burada eğer bir çıktı birimi verilmemişse, metre bölü saniye cinsinden bunu düşünmek lazım.
+
+160
+00:56:22,923 --> 00:56:32,603
+Ama burada bir çıktı birimi verilmiş, kilometre bölü saat cinsinden bu isteniyor. Dolayısıyla kilometre bölü saat cinsine bunu dönüştürebilmek için ilgili dönüşümleri yapmamız gerekiyor.
+
+161
+00:56:36,563 --> 00:56:38,203
+Bunu da nasıl yapacağız?
+
+162
+00:56:39,063 --> 00:56:43,184
+İşte 4000 metre kaç kilometre yapar?
+
+163
+00:56:43,623 --> 00:56:45,743
+4 kilometre yapar.
+
+164
+00:56:46,583 --> 00:56:48,363
+1 dakika kaç saat?
+
+165
+00:56:48,663 --> 00:56:49,663
+1 bölü 60 saat.
+
+166
+00:56:49,804 --> 00:56:55,083
+Dolayısıyla buradaki hızımızın 240 kilometre bölü saat olduğunu söyleyebiliriz.
+
+167
+00:56:55,163 --> 00:56:58,943
+Dolayısıyla bizden istenen bir birim varsa ona dönüştürmemiz lazım.
+
+168
+00:56:59,360 --> 00:57:06,980
+Eğer bir özel birim belirtilmemişse de SI birim sistemindeki temel birimler cinsinden bunları yazmamız gerekiyor.
+
+169
+00:57:08,320 --> 00:57:10,320
+Şunu şöyle yapabiliyor muyduk?
+
+170
+00:57:12,100 --> 00:57:13,800
+Buraları geçiyorum.
+
+171
+00:57:19,507 --> 00:57:41,007
+Şimdi bizim kullandığımız bir hızlıca bahsetmek gerekirse kullandığımız bazı ölçüler ve birimler aslında bir takım başka birimlerin veya fiziki gerçekliklerin bir özet olarak karşımıza çıkıyor.
+
+172
+00:57:42,007 --> 00:57:45,188
+Bunlardan birisi metre tanımı.
+
+173
+00:57:47,635 --> 00:57:55,956
+İşte metre tanımının veya kilogramın tanımına baktığımız zaman bir fiziki gerçekliğe bağlı olarak tanımlandığını görüyoruz.
+
+174
+00:58:12,275 --> 00:58:21,415
+1000 katı kilogram olarak tanımlanıyor. Bu standart bir tanım. Bu şekilde standart tanımlar üzerinden oluşturulmuş durumda bazı birimler.
+
+175
+00:58:22,275 --> 00:58:37,235
+Metre uzunluk cinsi içinde benzer bir durum söz konusu olabilir. Veya saniyeye baktığımızda da saniye aslında bir günün işte belirli bir orandaki değeri olarak tanımlanmış ilk başta.
+
+176
+00:58:37,715 --> 00:58:46,935
+Fakat daha sonra bu tanımın çok mükemmel olmadığı görülünce farklı bir tanım üzerinden gerçekleşmiş.
+
+177
+00:58:46,935 --> 00:58:59,655
+O da bir elektromanyetik dalganın, pardon bir sezyum atomunun titreşimiyle alakalı olarak tanımlanmış.
+
+178
+00:59:01,376 --> 00:59:08,836
+İşte belirli bir miktardaki titreşimi aslında bir saniye olarak tanımlanmış durumda. Niye bu şekilde bir tanım söz konusu?
+
+179
+00:59:08,836 --> 00:59:16,836
+Sezyum atomunun bu miktarca ki yani 9 milyar kere titreşimi stabil bir...
+
+180
+00:59:17,268 --> 00:59:33,068
+Yani ortam şartlarına veyahut da bulunduğu yere göre çok değişiklik göstermiyor. Stabil bir durum ve standart bir tanım oluşturuyor. Bu sebeple bazı fiziki gerçeklikleri temel alan tanımlamalarımız söz konusu diyebiliriz.
+
+181
+00:59:34,427 --> 00:59:43,648
+Yine kullanacağımız denklemlerde ve hesaplamalarda neye dikkat etmemiz lazım? Önemli noktadan birisi de
+
+182
+00:59:43,679 --> 00:59:54,119
+Hangi mertebeye kadar bir precision veyahut da yuvarlama yapmalıyız? Bu yuvarlamayı nasıl tanımlamalıyız? Bunun üzerinde durmak gerekiyor.
+
+183
+00:59:54,939 --> 01:00:09,039
+Şimdi yuvarlamayla ilgili olarak biliyorsunuz veya temsille ilgili olarak işte ilgili ondalık basamak 5 ve üzerinde ise yuvarlama yaptığımızda bir önceki basamağı, bir yüksek anlamlı basamağı bir arttırarak ilerleyebiliyoruz.
+
+184
+01:00:09,039 --> 01:00:11,039
+Eğer 0 ile 4 arasındaysa.
+
+185
+01:00:11,072 --> 01:00:32,192
+Bunu bir yüksek anlamlı basamağı olduğu gibi bırakarak ilerleyebiliyoruz. Bunlar hassasiyet açısından bizim kullanabileceğimiz bir yaklaşım. Siz de derslerimizde karşılaştığımız çözümlemelerde veya soru çözümlemelerinde benzer hassasiyete dikkat ederseniz uygun olur.
+
+186
+01:00:39,039 --> 01:00:55,539
+O beklediğimiz hassasiyetten biraz uzaklaşmış oluyoruz. Eğer çok küçük değerlerle uğraşıyorsak da bunları yine en az iki anlam biriminde bırakacak şekilde hesaplamalarınızı yapmanız uygun olur. Onu hatırlatmış olalım.
+
+187
+01:00:56,920 --> 01:01:00,579
+Bunu geçiyorum. Bununla ilgili siz de incelersiniz.
+
+188
+01:01:02,036 --> 01:01:27,056
+Yine bilimsel gösterimle ilgili olarak bahsetmiş olduğum çok büyük ve çok küçük sayıların gösterimiyle ilgili olarak baktığımız senaryoda temel olarak en azından bir birler basamağı bulunan, daha sonrasında da ondalıktan sonra da en az iki anlam basamağı olacak şekilde çarpı on üzerili şeklinde ifade ettiğimiz senaryolar üzerinden ilerlemek daha.
+
+189
+01:01:27,503 --> 01:01:32,063
+hassasiyet açısından bizim için önemli. Sizlerin de buna dikkat etmenizi bekliyorum.
+
+190
+01:01:32,063 --> 01:01:46,743
+Yani az önce söylediğim buna ilişkindi. En azından birler basamanda bir değeri bulunan, sonrasında da ondalıktan sonra da en az iki anlam basamağı bulunan ve sonrasında da orijinal değeri koruyabilmek adına 10 üzeri.
+
+191
+01:01:47,092 --> 01:01:52,752
+Çarpı 10 üzerili bir terimle birlikte bulunan bilimsel gösterim üzerinden hareket etmek önemli.
+
+192
+01:01:52,912 --> 01:01:56,672
+Burada 10 üzerili gösterimlerle, bilimsel gösterimlerle ilgili işlem birimleri var.
+
+193
+01:01:56,811 --> 01:01:59,912
+Zaten bu bildiğiniz bir durum olduğu için ilerliyorum.
+
+194
+01:02:03,771 --> 01:02:08,231
+Şimdi geldiğimiz noktada temel olarak, sağa kontrol ederek bakalım.
+
+195
+01:02:09,392 --> 01:02:13,552
+Geldiğimiz noktada temel bir takım kavramları tanımlayarak ilerlemeye çalışalım.
+
+196
+01:02:14,164 --> 01:02:18,884
+Şimdi bahsetmiş olduğumuz bir soyutlama kavramı vardı dersin başında hatırlayacak olursanız.
+
+197
+01:02:19,704 --> 01:02:30,543
+Aslında bütün çözümlemelerin temelinde devre teorisine ilişkin veyahut da daha yüksek seviyedeki bütün çözümlemelerin temelinde elektromanyetik dalga teorisi çözümlemeleri mevcut.
+
+198
+01:02:30,896 --> 01:02:54,896
+Fakat devre karmaşıklaştıkça veya kullanılan elemanlar büyüdükçe genişledikçe buradaki davranışları modellemek elektromanyetik dalga açısından zorlaşıyor. Çok karmaşık bir yapı haline geliyor. O yüzden dolayı seviye seviye soyutlamalar var. Dolayısıyla artık bir direnç elemanını bir dalga denklemiyle çözmek yerine onu bir kara kutu olarak düşünüp...
+
+199
+01:02:55,476 --> 01:03:12,615
+Belirli değer aralıklarındaki davranışını inceleyip bununla ilgili deney yapıldıktan sonra bunun lineer bir eleman olduğu ve uçlarındaki gerilim değeriyle, uçlarındaki gerilim değeriyle üzerinden akan akımın elemana bağlı olarak sabit bir değer olduğu görülüyor.
+
+200
+01:03:12,615 --> 01:03:20,615
+İşte bu bir seviye soyutlama. İşte bunun gibi de sistemi soyutlayarak anlattığımız senaryolar var. Onlardan birisi de.
+
+201
+01:03:20,960 --> 01:03:44,739
+Akım, elektrik akımı. Elektrik akımı dediğimiz şey aslında şöyle kabaca özetlenebilir. Neticede bir gerilim farkı oluşan senaryoyu düşündüğümüzde bu şu demek. Elektronlar belirli bir bölgede daha yoğun, belirli bölgede daha az yoğun. Dolayısıyla aslında bu elektrik potansiyeli
+
+202
+01:03:47,123 --> 01:03:50,783
+elektronların yer değiştirmesi sonucunda eşitleniyor.
+
+203
+01:03:51,303 --> 01:03:58,363
+Elektron dediğimiz eleman negatif yüklü bir eleman olduğu için aslında eksi yükler az olduğu tarafa doğru gidiyor.
+
+204
+01:03:58,363 --> 01:04:09,443
+Bunu tersten düşünecek olursak, sanki sanal bir pozitif yük varmış da elektron akımının ters yönünde ilerler gibi bir durum oluşuyor.
+
+205
+01:04:09,887 --> 01:04:25,307
+Dolayısıyla bunu değerlendirdiğimizde aslında bu soyutlama seviyesinde, gerçekteki olan durum tam bu şekilde özetlenemez tabii ama, bu soyutlama seviyesinde elektronların akış yönüyle elektrik akımının yönünün ters olduğunu söyleyebiliriz.
+
+206
+01:04:25,307 --> 01:04:32,807
+Dolayısıyla biz bir devreyi tanımlarken elektronlar negatif terminalden pozitif terminale doğru akıyor olurken,
+
+207
+01:04:33,119 --> 01:04:38,280
+elektrik akım yönünü pozitif terminalden negatif terminale doğru tanımlıyor olacağız.
+
+208
+01:04:39,840 --> 01:04:44,420
+Yine şurada şeye bakacaktım bir saniye.
+
+209
+01:04:55,188 --> 01:05:09,547
+Şimdi burada elektronların tamamen serbest olarak bir noktada bulunması söz konusu olamayacağı için, yani serbest elektronlar evet var ama bunlar genel tanım itibariyle bir atom çevresinde bulunan elektronlar.
+
+210
+01:05:09,547 --> 01:05:16,427
+Dolayısıyla bu artı yüklediğimiz şey de aslında elektronların diğer terminale doğru gittiği durumda.
+
+211
+01:05:16,496 --> 01:05:25,956
+Yüksüz kalan atomların, yani elektronlarını kaybeden atomların oluşturmuş olduğu sanal pozitif potansiyeli ifade ediyor.
+
+212
+01:05:25,956 --> 01:05:41,755
+Dolayısıyla artı terminalden, pozitif terminalden elektrik akımı dediğimiz şey sanal olarak düşündüğümüzde aslında atomların pozitif yüklü olarak, net pozitif yüklü olarak kaldığı bir senaryoya karşılık geliyor.
+
+213
+01:05:42,579 --> 01:05:53,940
+Elektrik akımını şöyle de düşünebiliriz. Yine bir analoji kurmak gerekirse. Bir potansiyel farka ihtiyacımız var. Bunu nasıl düşünebiliriz?
+
+214
+01:05:53,940 --> 01:06:08,940
+İşte bir fiziki olarak kinetik ve potansiyel enerji ikilisiyle bunu düşünebiliriz. Potansiyel enerjinin oluşabilmesi için bir seviye farkına ihtiyacımız var. Bu seviye farkını düşündüğümüz vakit.
+
+215
+01:06:09,556 --> 01:06:21,556
+Bu seviye farkı ne kadar yüksek ise, burada akan suyun yere çarptığı andaki hızı o oranda değişebilir netice itibariyle. Dolayısıyla burada baktığımızda da...
+
+216
+01:06:21,775 --> 01:06:32,315
+Analojiyi şöyle kuracağız. Potansiyel enerjinin yüksek olması aslında bir elemanın uçlarına uygulamış olduğumuz elektrik potansiyeliyle ilişkili.
+
+217
+01:06:33,035 --> 01:06:38,355
+Bu elektrik potansiyeli ne kadar yüksekse bu eleman üzerinden akacak akım da o kadar yüksek olacak.
+
+218
+01:06:38,355 --> 01:06:45,075
+Dolayısıyla böyle bir analoji üzerinden bunu değerlendirebiliriz. Bu analojiyi bir adım daha ileri götürmek gerekirse,
+
+219
+01:06:47,219 --> 01:07:02,920
+Şöyle de diyebiliriz, dökeceğimiz su miktarı ne kadar fazla ise, birin başına akacak akım da o kadar fazla olur veya dökülen su da o kadar fazla olur dan hareketle, serbest elektron miktarının fazla olması elektrik akımını arttıracak bir durum.
+
+220
+01:07:03,039 --> 01:07:12,219
+Bu neyle ilişkili? Bu kullanılan elemanın kendi öz direnç değeriyle ilişkili bir durum. Yani elektronlarını serbest bırakmaya ne kadar...
+
+221
+01:07:12,820 --> 01:07:16,480
+Açık, buna göre değişen bir senaryo.
+
+222
+01:07:16,815 --> 01:07:44,575
+Yine uygulanan gerilim farkı ne kadar yüksekse bu da akacak akımı yine arttıran bir sanayi. Dolayısıyla burada iki birimden bahsedebiliriz. İki temel özellikten bahsedebiliriz. Bunlardan birisi elektronlar ne kadar serbest. İkincisi ise bu elektronları hareket ettirmek üzere ne kadarlık büyük bir potansiyel uyguluyoruz, ne kadar yüksekten bırakıyoruz gibi eşdeğer düşünebilirsiniz.
+
+223
+01:07:44,815 --> 01:07:49,815
+Bu ikisinin birlikte gerçekleştiği durum elektrik akımını etkiliyor diyebiliriz.
+
+224
+01:07:50,735 --> 01:07:52,455
+Az önce söylediğim şeyin devamı.
+
+225
+01:07:57,427 --> 01:08:01,387
+Dolayısıyla burada şunu düşünelim, şuradan hareketle söyleyelim.
+
+226
+01:08:02,527 --> 01:08:11,367
+Bir elektrik potansiyeli aslında birim yükü belirli bir miktar hareket ettirmek için harcanması gereken enerji.
+
+227
+01:08:11,367 --> 01:08:12,367
+Dolayısıyla...
+
+228
+01:08:12,672 --> 01:08:38,912
+Bu potansiyel enerjiyi standart bir şekilde tanımladıktan sonra adı üzerinde zaten bakın, belirli bir miktar yükü, belirli bir miktar hareket ettirmek için harcanması gereken enerji. Dolayısıyla ne kadar yüksek bir potansiyel uyguluyorsak, sabit bir mesafede o kadar fazla yükü hareket ettirebiliriz. Tersten düşünecek olursak, aynı miktardaki yükü daha uzun mesafeler hareket ettirebiliriz. Dolayısıyla potansiyeli.
+
+229
+01:08:39,328 --> 01:08:44,248
+Bu şekilde hayal etmemiz anlaşılması açısından önemli diyebilirim.
+
+230
+01:08:45,068 --> 01:08:54,087
+Yine devrelerimizde kullanacağımız bir tanımlama var. O da referans değerimiz, referans gerilim değerimiz.
+
+231
+01:08:54,888 --> 01:08:57,148
+Bu da şuradan hareketle ortaya çıkıyor arkadaşlar.
+
+232
+01:08:57,648 --> 01:09:07,188
+İki ayrı devre sistemi olduğunu varsayalım. Bu iki devre sisteminde de her birisi kendi içerisindeki referans gerilim değerine göre tanımlı durumda.
+
+233
+01:09:08,087 --> 01:09:19,387
+Örneğin, şöyle düşünelim, iki elektrik devresi yapısında birinin referans değeri görece birbirleriyle karşılaştırdığımızda diğerine göre daha yüksekte olabilir.
+
+234
+01:09:24,047 --> 01:09:47,827
+gerilim değerini tanımlar durumda. Burada göstermiş olduğumuz seviyede ikinci devre içindir. Referans gerilim değeri ikinci devre içerisindeki bütün gerilimleri, eleman gerilimleri buna göre hesaplanar durumda. Bu temel olarak şuradan ortaya çıkıyor. İki terminalli bir eleman düşünün. Yani bir direnç elemanını düşünün. Bu direnç elemanının her iki ucu için bir gerilim seviyesi tanımlamak mümkün.
+
+235
+01:09:48,435 --> 01:10:02,036
+Ama buradaki yaklaşımımız şu şekilde oluyor. Bu elemanın uçlarından birisini referans olarak kabul ettiğimizde diğer terminalin gerilimi aslında bu elemanın uçlarına uygulanmış olan gerilimi bize vermiş oluyor.
+
+236
+01:10:02,635 --> 01:10:11,475
+Bunu tüm elemanlar için yaydığımızda aslında birbiriyle seri veya paralel bağlı tüm elemanlar için sadece şunu yapmamızın yeterli olduğunu görüyoruz.
+
+237
+01:10:12,083 --> 01:10:22,264
+Tüm devre elemanları için tek bir sabit referans tanımlayıp bütün terminal gerilimlerini bu sabit referansa göre ifade etmemiz mümkün.
+
+238
+01:10:22,764 --> 01:10:32,203
+Nereden geldik buraya? Her bir eleman kendi terminalinin, kendisinin terminallerinden birisini referans alarak diğer terminali tanımlıyordu.
+
+239
+01:10:32,683 --> 01:10:37,344
+Ama karmaşık bir devre oluşturduğumuzda referanslar birbirleriyle ilişkili bir hale geliyor.
+
+240
+01:10:37,876 --> 01:10:44,876
+Çok sayıda referans koymak yerine tek bir referans koyup bütün gerilimleri buna göre tanımlamak mümkün oluyor.
+
+241
+01:10:45,775 --> 01:10:48,956
+Bunu şuradaki analojiyle de şöyle tanımlayalım.
+
+242
+01:10:50,355 --> 01:11:05,615
+Örneğin bıraktığımız top işte şu seviyeden şu seviyeye düşecek. Bu bizim gerilim potansiyelimiz. İki terminal arasındaki gerilim farkı. Ama bu gerilim farkı aslında başka bir referansa göre tanımlanmış olabilir. Bu bizim ground dediğimiz referans.
+
+243
+01:11:05,615 --> 01:11:12,255
+Fakat biz topu buradan buraya bıraktığımız için bu topun hızını belirleyen şey şu ikisi arasındaki fark.
+
+244
+01:11:12,595 --> 01:11:40,595
+Dolayısıyla burada iki farklı potansiyel yapısından bahsetmiş oluyoruz. Bu noktanın genel referansa göre gerilimi bir düğüm gerilimi olarak tanımlanır. Şu noktanın genel referansa göre gerilim bir düğüm gerilimi olarak tanımlanır. Bu ikisi arasındaki fark ise elemanının terminalleri arasındaki gerilim farkı olarak tanımlanır. Bu iki kavram bizim için önemli. Yani düğüm gerilimi ile elemanın uçları arasındaki gerilim farkı olarak tanımlanır.
+
+245
+01:11:40,595 --> 01:11:59,471
+Gerilim kavramı bizim için önemli. Tanımlamış olduğumuz referans gerilimi ne kabul ediyoruz? Sıfır kabul edebiliriz. Çünkü netice itibariyle referans gerilimi 10 volt da seçmiş olsak, bütün gerilimler bu referansa göre tanımlanacağı için hepsinden 10 çıkartmamız gerekiyordu. İşlem olarak...
+
+246
+01:11:59,471 --> 01:12:13,531
+Elde ettiğimiz sonuç olarak bir değişikliğe sebebiyet vermiyor ama ekstradan her bir eleman için, her bir düğüm için 10 volt çıkartmamız gerekiyor. Dolayısıyla bununla uğraşmak yerine sabit referansı 0 volt kadımladığımızda bu problemi çözmüş oluyoruz.
+
+247
+01:12:13,876 --> 01:12:36,275
+Ama bir başka problem de şurada var. İlk verdiğim örneğe düşünün. Burada bir devre var. Burada başka bir devre var. Bunlar birbirleriyle bağlı değiller. Birinin sabit referansı bu seviyede mutlak olarak, diğerinin sabit referansı referans gerilim ise bu seviyede. Baktığımız zaman bu devre için, birinci devre için bu referans geriliminin sıfır kabul ettiğimde bu devreyi çözebiliyorum.
+
+248
+01:12:36,671 --> 01:13:02,111
+İkinci devre içinde şu seviyeyi 0 gerilim volt olarak kabul ettiğini bu devreyi de çözebiliyorum. Fakat bu iki devre birbiriyle bağlantılı hale geldiğinde bir problem var değil mi? Çünkü artık iki farklı referans sistemim olmuş oluyor. Bu iki farklı referans sistemini gidermek adına aklınıza ne gelir? Nasıl bunları bu iki referans sistemi arasındaki farkı giderebiliriz? Ne dersiniz? Var mı fikri olan?
+
+249
+01:13:11,636 --> 01:13:38,076
+Soruyu tekrarlayalım. Referans gerilim değerimiz bir devrede ki tüm düğümleri kendisine göre tanımladığımız, ondan ne kadar yüksekse o seviyede tanımladığımız bir gerilim değeriydi. Fakat iki ayrı devremiz olsa, bu devrelerin gerilimlerine, referans gerilimlerine baksak bunlar arasında bir bağlantı yok şurada. Birinci devremizin gerilim seviyesi şurada mutlak olarak, ikinci devremizin gerilim seviyesi mutlak olarak burada.
+
+250
+01:13:38,547 --> 01:13:44,507
+Biz birinci devreyi buradaki sabit referansımıza göre, sıfır kabul ettiğimiz referansa göre çözebiliriz. Sıkıntı yok.
+
+251
+01:13:45,127 --> 01:13:50,108
+İkinci devremizi de burada sabit kabul ettiğimiz, sıfır volk kabul ettiğimiz gerilime göre çözebiliriz. Yine sıkıntı yok.
+
+252
+01:13:50,108 --> 01:13:58,547
+Ama bu iki devre birbirine kaskat bağlanacak olsa, birbirleriyle ilişkili olarak bir gerizi çıktı şeklinde bağlanacak olsa, şu anda iki farklı referans değerim var.
+
+253
+01:13:59,887 --> 01:14:01,467
+Bu problemi nasıl giderebiliriz?
+
+254
+01:14:02,003 --> 01:14:03,564
+Ne dersiniz, fikriniz var mı?
+
+255
+01:14:03,724 --> 01:14:06,423
+Yüksek olan arasında bir farkı hepsinden çıkarırız.
+
+256
+01:14:06,943 --> 01:14:10,963
+Yani aralarında ilk başta 10 fark varsa yüksektekini hepsinden çıkarabiliriz.
+
+257
+01:14:11,183 --> 01:14:15,804
+Ama hesap olarak, evet, yani devrelerden birisi için bu çıkartma işlerini yapalım dedi.
+
+258
+01:14:17,083 --> 01:14:23,564
+Ama şu var, yani bu birinci devre için bunu sıfır kabul ediyorum, ikinci devre için bunu sıfır kabul ediyorum.
+
+259
+01:14:23,564 --> 01:14:28,363
+İkisi için de farklı bir referans, iki ayrı referans kullanmama gerek yok.
+
+260
+01:14:29,043 --> 01:14:32,623
+Bunu da düşünelim. Sanki bir evrensel kelimesi geldi bir yerden.
+
+261
+01:14:33,083 --> 01:14:38,323
+Aynen hocam. Evrensel iki devrenin dışında bir referans değeri belirleyebiliriz.
+
+262
+01:14:38,523 --> 01:14:43,564
+O zaman üç tane referansımız oldu. Birinci devrenin referansı, ikinci devrenin referansı, bir de evrensel referansı oldu.
+
+263
+01:14:44,703 --> 01:14:48,043
+İşte bir ve ikinin referansını evrensele göre...
+
+264
+01:14:48,336 --> 01:14:51,435
+Ona göre düzenleriz.
+
+265
+01:14:51,916 --> 01:14:52,896
+Ama ben şunu istiyorum.
+
+266
+01:14:53,816 --> 01:14:59,656
+Bunun sıfır kabul ettiği ile bunun sıfır kabul ettiği devreleri kaskat bağladığımda da ikisinde de sıfır olsun.
+
+267
+01:14:59,816 --> 01:15:01,376
+Tek bir referans olsun istiyorum.
+
+268
+01:15:02,275 --> 01:15:03,296
+Hocam ortası olsun.
+
+269
+01:15:04,216 --> 01:15:08,756
+Ortasını aldığımızda tüm elemanlardan yarısı kadar çıkartmamız lazım.
+
+270
+01:15:09,395 --> 01:15:13,275
+Bir tarafı negatif, bir tarafı pozitif alsak yani. Mesela az olan Thevenin.
+
+271
+01:15:13,675 --> 01:15:35,595
+Yine hepsinden çıkartmamız lazım. Chatteki cevap doğru. Doğru mu bakayım? Tam doğru değil ama çok yaklaşmışız. Bunlardan birisini referans almamız gerekiyorsa bu ikisini birbirine bağlarız. İkisi de aynı seviyeye gelir. Yani devrelerimiz şöyleydi ya referans olarak. İkisinin ground'unu birbirine bağladığımız zaman ikisi aynı seviyeye gelir ve devre çalışır hale gelir.
+
+272
+01:15:35,988 --> 01:15:49,507
+Dolayısıyla karşılaşacağımız, pratikte karşılaşacağımız problemlerden birisini çözmüş oluruz. Yani referans değeri, referans gerilim seviyesi farklı olan devre bloklarıyla çalışıyorsa bunları ortak referansa getirmek için grantlarını birleştiriyoruz arkadaşlar.
+
+273
+01:15:50,948 --> 01:15:57,828
+Temel olarak yapmamız gereken bu. Dolayısıyla çetteki cevabı, doğru cevabı çok yaklaşmış olarak kabul edebiliriz.
+
+274
+01:15:59,123 --> 01:16:00,843
+Bu noktadan devam edelim.
+
+275
+01:16:00,923 --> 01:16:03,763
+Hocam, Ground'larını birleştirmek ne demek tam olarak? Anlayamadım.
+
+276
+01:16:04,343 --> 01:16:15,003
+Şu demek, şöyle, iki referans sisteminde çalışan devremiz vardı ya, birisinin GND'sini, diğerinin GND'sini kabloyla bağlıyoruz. Pratikteki karşılığı bu.
+
+277
+01:16:16,343 --> 01:16:17,003
+Evet, tamamdır.
+
+278
+01:16:18,023 --> 01:16:20,003
+Hocam, bağlayınca ne oluyor tam olarak?
+
+279
+01:16:20,823 --> 01:16:24,243
+Bağlayınca, şimdi mutlak olarak bunlar şu gerilim seviyelerinde ya.
+
+280
+01:16:25,492 --> 01:16:27,992
+İkisini bağladığımızda ikisi aynı seviyeye geliyor.
+
+281
+01:16:33,779 --> 01:16:50,699
+Normalde hani şey olabilir mesela birisi yüklü kalmıştır, bir kondansatör yüklü kalmıştır. Görece mutlak gerilim değeri olarak diğerlerinden daha yüksek seviyede dolaşıyordur. O da bu devrenin referansını ettiliyordur. Bunda öyle bir şey yoktur. Fakat ikisi de aynı mantıkla çalışabilir durumdalar.
+
+282
+01:16:51,559 --> 01:16:58,380
+Yani bunların aralarındaki referans farkı bizim için önemli değil diyelim. Onu yok etmek istiyoruz diyelim. O zaman bu ikisini...
+
+283
+01:16:58,399 --> 01:17:04,699
+GND'lerini birleştiriyoruz, sabit referanslarını birleştiriyoruz bir kablo ile ve bunlar aynı referans düzeyine geçiyorlar.
+
+284
+01:17:06,000 --> 01:17:14,259
+Demek istediğim şu, şu ikisi arasındaki gerilim farkı bir şey ifade etmiyor bizim için. Bir anlamı yok, onu yok etmemiz lazım. Bu şekilde yok edebiliyoruz.
+
+285
+01:17:19,412 --> 01:17:22,252
+Az önce konuştuğumuz seviyelerde.
+
+286
+01:17:23,432 --> 01:17:27,211
+Şimdi bir adım daha ilerlemiş olalım. Saat da kontrol edelim bu arada.
+
+287
+01:17:28,891 --> 01:17:36,912
+Bizim dersimiz kapsamında karşılaşacağımız şematik ve gerçekte karşılığı olan devre elemanlarından birazcık bahsedelim.
+
+288
+01:17:38,092 --> 01:17:44,252
+Bunlar temel olarak iki grup bizim için önemli.
+
+289
+01:17:44,916 --> 01:18:03,916
+Bunlardan ilki aktif elemanlar, diğeri pasif elemanlar. Bu iki eleman grubu arasındaki temel farkı şöyle düşüneceğiz arkadaşlar. Aktif elemanlar devreye güç veren elemanlardır. Pasif elemanlar ise güç tüketen elemanlardır. Dolayısıyla notasyon olarak...
+
+290
+01:18:04,404 --> 01:18:11,224
+Hesap yaptığımızda güç değeri negatif çıkan elemanlar, biraz sonra bunun nasıl olduğunu göreceğiz.
+
+291
+01:18:11,824 --> 01:18:19,744
+Güç değeri negatif çıkan elemanlar aktif elemanlar, güç değeri pozitif çıkan elemanlar, pasif elemanlar olarak değerlendirebiliriz.
+
+292
+01:18:20,584 --> 01:18:28,044
+Bu önemli. Aktif eleman dediklerimiz neler? Aktif eleman dediklerimiz bağımsız kaynaklar, bağımsız güç kaynakları.
+
+293
+01:18:28,044 --> 01:18:31,364
+Bu güç kaynakları dediğimiz şeyler neyi içeriyor?
+
+294
+01:18:31,792 --> 01:18:33,912
+gerilim ve akım kaynaklarını içeriyor.
+
+295
+01:18:34,452 --> 01:18:39,572
+Şimdi bu noktada gerilim kaynağı dediğimiz eleman, teorik olarak ideal durumda şu.
+
+296
+01:18:40,352 --> 01:18:41,631
+İdeal durum için bahsediyorum.
+
+297
+01:18:42,711 --> 01:18:51,572
+Bir gerilim kaynağını devreye bağladığımızda, ucundan çekilen akım ne kadar değişirse değişsin,
+
+298
+01:18:52,152 --> 01:18:58,492
+devreye ayarlamış olduğumuz gerilim değerini sabit bir şekilde uygulayabilen eleman.
+
+299
+01:18:59,123 --> 01:19:25,243
+Dolayısıyla bir gerilim kaynağı sisteme, devreye sabit gerilim değerini verir. Ama uçlarındaki akım değeri bağlandığı devreye göre değişir. Bu çok önemli bir nokta. Tekrar edeyim. İdeal durumdaki gerilim kaynağının devreye vermiş olduğu gerilim değeri sabittir. Ama ucundan çekilen akım değeri bağlandığı devreye göre değişir.
+
+300
+01:19:26,739 --> 01:19:44,840
+Bu önemli. Akım kaynağı da benzer şekilde. Akım kaynağı da bağlı olduğu devreye sabit bir akım değeri verir. Akım değeri uygulayabilir. Fakat bu elemanın uçlarındaki gerilim değeri bağlı olduğu devreye göre değişir. Devre tarafından belirlenir. Böyle söylersek daha doğru olur.
+
+301
+01:19:45,219 --> 01:19:53,239
+Dolayısıyla bu bağımsız kaynaklar için devreye sağlamış oldukları akım veya gerilim değerleri sabit bir.
+
+302
+01:19:53,652 --> 01:20:13,211
+Gerilim kaynağı için gerilim sabit, akım kaynağı için akım değeri sabit. Fakat bunların diğer birimi, yani gerilim kaynağının ucundan çekilecek akım bağlı olduğu devreye göre belirlenir. Akım kaynağı için de bağlı olduğu devreye göre uçlarındaki gerilim değeri belirlenir. Bunu diğer elemanlar belirlenir.
+
+303
+01:20:13,211 --> 01:20:17,351
+İkinci grup aktif elemanlarımız bağımlı kaynakla.
+
+304
+01:20:18,100 --> 01:20:24,760
+Bu bağımlı kaynakları da dört başlık altında inceleyebiliriz. Burada iki başlık altında verilmiş ama dört başlık altında inceleyebiliriz.
+
+305
+01:20:25,659 --> 01:20:32,680
+Bağımlı kaynak dediğimiz temel olarak bir akım kaynağı o gibi çalışabilir veya bir gerilim kaynağı gibi çalışabilir.
+
+306
+01:20:33,319 --> 01:20:40,420
+Fakat bu elemanın devreye vermiş olduğu, örneğin gerilim kaynağı için düşünelim, bağımlı gerilim kaynağının devreye sağlamış olduğu gerilim değeri,
+
+307
+01:20:44,307 --> 01:20:46,548
+Akım veya gerilim değeriyle belirlenebilir.
+
+308
+01:20:49,908 --> 01:20:55,548
+Current dediğimiz şey akım, Voltage dediğimiz şey potansiyel fark, gerilim.
+
+309
+01:21:00,372 --> 01:21:09,832
+Şimdi bağımlı kaynaklarla ilgili devam ediyorduk. Bağımlı kaynak devreye gerilim veriyor olabilir, sabit gerilim veriyor olabilir. Bu bir bağımlı gerilim kaynağıdır.
+
+310
+01:21:10,592 --> 01:21:15,311
+Veya bağımlı kaynak devreye bir akım sağlıyor olabilir. Bu da bağımlı bir akım kaynağıdır.
+
+311
+01:21:16,152 --> 01:21:26,012
+Geldiğimiz vakit bağımlı kaynağın değeri bizim devremizdeki başka bir koldaki, başka bir noktadaki akım veya gerilim değerine bağlı olarak ortaya çıkabilir.
+
+312
+01:21:26,431 --> 01:21:28,791
+O zaman bağımlı kaynaklarımız dört çeşit.
+
+313
+01:21:30,211 --> 01:21:32,211
+Gerilim kontrollü gerilim kaynağı.
+
+314
+01:21:32,311 --> 01:21:41,032
+Devrenin başka bir noktasındaki gerilim değerinin değerine bağlı olarak, onunla orantılı olarak bağlı olduğu noktaya sabit gerilim sağlayan bir eleman.
+
+315
+01:21:41,592 --> 01:21:44,072
+Veya akım kontrollü gerilim kaynağı.
+
+316
+01:21:44,752 --> 01:21:50,912
+Devremizin herhangi bir noktasındaki akım değerine orantılı bir şekilde bağlı olduğu noktaya akım sağlayan bir eleman.
+
+317
+01:21:51,412 --> 01:22:02,692
+Veya akım kaynağı için, current source için gelelim. Gerilim kontrolü akım kaynağı ve akım kontrolü akım kaynağı olabilir. Bu dört farklı bağımlı kaynağımız mevcut.
+
+318
+01:22:03,412 --> 01:22:14,652
+Pasif elemanlara baktığımızda bunlar direnç, kapasite ve endüktans elemanları. Baktığımız zaman bunlar ilkin bir enerjiye sahip olabilirler. Özellikle kapasite ve endüktans için bahsediyorum.
+
+319
+01:22:15,252 --> 01:22:25,731
+İlkin enerjiye nasıl sahip olur? Kapasite yüklü olarak devreye bağlanmışsa, enduktans bir ilk akıma sahip olarak devreye bağlanmışsa, bunlar ilkin enerjiye sahip olabilir.
+
+320
+01:22:25,932 --> 01:22:35,792
+Ama net olarak bunlar enerji tüketen elemanlar. Bu solda görmüş olduğunuz sütun bizim temel elemanlarımız, temel iki grubumuz.
+
+321
+01:22:36,712 --> 01:22:40,212
+Yine devremizde kullanabileceğimiz ölçüm cihazları mevcut.
+
+322
+01:22:40,724 --> 01:22:44,944
+Ölçüm cihazlarımız ampermetre ve voltmetre olarak karşımıza çıkıyor.
+
+323
+01:22:45,724 --> 01:22:54,664
+Şimdi temel olarak bunların yapısını incelediğimizde ampermetre ilgili koldan geçen akımı ölçtüğümüz eleman.
+
+324
+01:22:55,664 --> 01:22:56,684
+Buna odaklanalım.
+
+325
+01:22:57,564 --> 01:23:03,904
+Devredeki herhangi bir koldan geçen akımı ölçmek istiyorsak bu eleman nasıl bağlanması lazım?
+
+326
+01:23:07,572 --> 01:23:09,131
+Seri bağlanması lazım.
+
+327
+01:23:09,271 --> 01:23:10,752
+Seri bağlanması lazım, evet.
+
+328
+01:23:11,512 --> 01:23:13,231
+Seri bağlanması gereken bir eleman.
+
+329
+01:23:13,332 --> 01:23:14,471
+Yani biz şöyle düşünelim.
+
+330
+01:23:15,252 --> 01:23:20,352
+Daha önce görmedik ama ders kapsamında daha önceki bilginiz serçevesinde biliyorsunuzdur diye düşünüyorum.
+
+331
+01:23:20,432 --> 01:23:22,952
+Çok kötü bir kaynak çizdim.
+
+332
+01:23:23,131 --> 01:23:26,551
+Bir tane direnç ve geri döndük.
+
+333
+01:23:27,432 --> 01:23:29,032
+Bu da bizim referansımız olsun.
+
+334
+01:23:29,844 --> 01:23:35,664
+Ben şu koldaki akımı ölçmek istiyorum. Bu koldaki akımı ölçmek istiyorsam yapacağım işlem şu oluyor.
+
+335
+01:23:36,564 --> 01:23:44,644
+Buraya seri olarak bir ampermetre bağlıyorum. Yani devreyi kopartıyorum. Uçlarına şuradaki kabloyu kopartıyorum.
+
+336
+01:23:44,724 --> 01:23:50,844
+Pratiklik karşılığı. Araya bir ampermetre bağlıyorum. Ve bu koldan geçen akımı ölçebiliyorum.
+
+337
+01:23:58,036 --> 01:24:12,355
+İç direnci ne olmalı arkadaşlar? Yani bu ölçülecek akımı değiştirmesi gerektiği için, evet sıfır, ideal durumda iç dirence sahip olması gerekiyor. Çok doğru.
+
+338
+01:24:12,355 --> 01:24:22,515
+Aynı şey voltmetre için bakalım. Voltmetre de temel olarak arkadaşlar iki terminal arasındaki gerilim farkını ölçüyor. Örneğin şu direnç elemanı için bakacak olursak.
+
+339
+01:24:22,836 --> 01:24:34,576
+Bu direnç elemanın uçları arasındaki gerilim farkını ölçmek istiyorsak, bu elemanın bu şekilde bağlanması gerekiyor. Paralel bir şekilde bağlanacak demek ki elemanın uçları arasındaki gerilimi ölçmek için.
+
+340
+01:24:34,576 --> 01:24:48,736
+Bu durumda biliyoruz ki akım en düşük direnç üzerinden geçmeyi tercih eder. Bizim bu şekilde bir gerilim ölçümü yapabilmemiz için voltmetre cihazımızın iç direncinin nasıl bir şey olması lazım?
+
+341
+01:24:50,676 --> 01:24:54,536
+Akımın geçmeyeceği kadar yüksek olması lazım. Çok zor geçecek şekilde.
+
+342
+01:24:54,536 --> 01:25:01,855
+İdeal olarak düşündüğümüzde sonsuz olması lazım değil mi? Yüksek, sonsuz bir iç dirence sahip olması gerekiyor.
+
+343
+01:25:02,736 --> 01:25:10,536
+Peki, bu durumda az önce yapmış olduğumuz tanımlamalar çerçevesinde ampermetremiz...
+
+344
+01:25:12,083 --> 01:25:23,244
+Ne demiştik? İç direnci sıfır olacak. İç direnci sıfır olarak kabul ettiğimiz ideal durumdaki elemanımız nedir? Belki şu anda ismini vermedik ama ekranda mevcut.
+
+345
+01:25:28,979 --> 01:25:34,359
+Bir kablo gibi düşünebilir. Kablo gibi düşünebilir değil mi? Kabloyu ideal durumda iç direnci sıfır olarak kabul ediyoruz.
+
+346
+01:25:34,939 --> 01:25:42,600
+Bu durumda arkadaşlar ampermetre için ne demiştik? İç direnci sıfır olmalı. Yani bu bir kısa devre eleman gibi çalışıyor.
+
+347
+01:25:43,619 --> 01:25:49,719
+Kısa devre eleman. Kısa devre ne demek? Yani kablo gibi çalışıyor.
+
+348
+01:25:50,699 --> 01:25:55,939
+Voltmetre için ne dedik? İç direnci sonsuz dedik. İç direncinin sonsuz olması da aslında voltmetre
+
+349
+01:25:56,627 --> 01:26:11,688
+Bir açık devre eleman gibi çalışıyor. Yani şu şekilde gösterebiliriz. İki terminalli bir eleman, ortası açık. Yani bağlantıyı koparmış bir eleman gibi düşünebilir. Bu da açık devre eleman. Dolayısıyla burada bu slide'dan edindiğimiz bilgi.
+
+350
+01:26:12,180 --> 01:26:31,760
+Ampermetre ve voltmetre nasıl bağlanacak temel olarak onları tartışmış olduk. Ampermetre ve voltmetrenin iç dirençleri ne olmalı onları tartışmış olduk. Ve son olarak voltmetre ve ampermetrenin eşdeğer devre karşılıkları nedir onları konuşmuş olduk. Ampermetrenin kısa devre eleman, voltmetrenin açık devre eleman gibi çalıştığını konuşmuş olduk.
+
+351
+01:26:32,095 --> 01:26:57,855
+Yine bu devremiz üzerinden hareket edecek olursak, bu devremizde global bir referansımız var. Yani 0 volt kabul ettiğimiz bir groundumuz var. Bu ground neyi belirliyordu? Örneğin şu noktadaki gerilimimiz, V1 gerilimi, neye göre tanımlı? Şuradaki grounda göre tanımlı, sabit referansımız var. Yine buradaki V2 gerilimimiz de şuradaki grounda göre tanımlı.
+
+352
+01:26:58,292 --> 01:27:07,932
+Bu tanımlama çerçevesinde voltmetrenin ölçücüye gerilim neye göre belirlenir? Artı, eksi diyecek olursak neye göre belirlenir?
+
+353
+01:27:09,731 --> 01:27:13,012
+V1 ile V2 arasındaki fark olarak tanımlanır.
+
+354
+01:27:13,752 --> 01:27:22,752
+İşte bu düğüm gerilimi ile elemanın terminalleri arasındaki gerilim farkını tam olarak şekil üzerine böyle görmüş oluruz.
+
+355
+01:27:23,188 --> 01:27:34,627
+Yine karşılaşacağımız devre elemanlarından birisi kablo elemanı. Kablo elemanını idealde sıfır iç dirence sahip bir kısa devre elemanı olarak düşünüyoruz.
+
+356
+01:27:35,768 --> 01:27:43,327
+Özellikle AC devre analizinde düğmelerle karşılaşacağız. Düğmelerin gösterimi temel olarak şöyle oluyor arkadaşlar.
+
+357
+01:27:43,327 --> 01:27:47,927
+Yine iki terminalli bir eleman. Şöyle iki terminalli bir eleman.
+
+358
+01:27:48,271 --> 01:28:11,031
+Örneğin, bunun ucunda bir ark var, bir çember var ve işte t eşittir 0 şeklinde bir ibare var. Bunun anlamı şu, eksi sonsuzdan t eşittir 0 eksi, 0 üzeri eksi anına kadar bu anahtar açık, yani bağlantı yok, t eşittir 0 anında anahtar kapalı konuma geliyor.
+
+359
+01:28:11,507 --> 01:28:17,587
+Burada switchlerle ilgili açık ve kapalı kavramı karışabilir. O yüzden bunu farklı şekillerde de ifade etmeye çalışacağım.
+
+360
+01:28:21,140 --> 01:28:26,539
+Şimdi burada bir chatte bir soru vardı sanırım voltmetrenin gerilimiyle ilgili olarak.
+
+361
+01:28:27,360 --> 01:28:33,640
+Pilin artı kısmı veya eksi kısmı bizim için önemli değil. Bizim için önemli olan voltmetrenin referans yönleri.
+
+362
+01:28:33,640 --> 01:28:38,220
+Artı ve eksisini voltmetreyi hangi yönde bağlamışsa bunun ölçücüye girelim.
+
+363
+01:28:39,460 --> 01:28:43,220
+Hangi iki terminali birbirinden çıkartmamız gerektiğini belirliyor.
+
+364
+01:28:43,859 --> 01:29:07,679
+Burada şeyi bilemeyiz, baştan bilemeyiz. Yani bu düğüm, V1 düğümü bir kaynağa yakın olduğu için bunun pozitif olma durumu mutlaka mümkün olmayabilir. Yani devremiz sadece bu kadar olduğunda evet V1 daha büyük olacak ama şeyi düşündüğümüzde, karmaşık bir devreyi düşündüğümüzde V2 de başka bir taraftan daha yüksek bir kaynağa, akım kaynağına yakın olabilir.
+
+365
+01:29:11,600 --> 01:29:14,360
+O gerilimin pozitif veya negatif olduğunu belirlemiyor.
+
+366
+01:29:14,963 --> 01:29:42,963
+Bu devre elemanı özelinde de voltmetrenin pratikte iki tane ucu var. Kırmızı ve siyah uçları var. Kırmızı uç artı ölçme referansı, siyah uç eksi ölçme referansı. Dolayısıyla biz bir elemanın bir ucuna kırmızı probu, bir ucuna siyah probu bağlamışsak bizim ölçtüğümüz şey kırmızı ucu bağladığımız düğümdeki gerilimden siyah ucu bağladığımız düğümdeki gerilimi çıkarttığımız haldeki elde ettiğimiz son.
+
+367
+01:29:42,963 --> 01:30:01,244
+Ama demek istediğim şu, bu düğümün, V1 düğümün gerilim kaynağına yakın olması onu daha büyük veya daha pozitif yapmaz. Devrenin sadece bu kısmını biliyorsak, devremiz karmaşık bir devre ise, başka akım kaynakları varsa, bu görüntüden farklı sonuçlar çıkabilir.
+
+368
+01:30:05,908 --> 01:30:15,927
+Hemen bir sonraki terminalden daha düşük gerilime sahip olabilir. Voltmetrenin ölçtüğü şey negatif olabilir. Onunla ilgili bir ön bilgimiz veya beklentimiz olmaması lazım.
+
+369
+01:30:17,747 --> 01:30:27,868
+Son olarak karşılaşacağımız cihazlardan birisi de sigorta elemanı. Sigorta elemanı temel olarak şöyle gösteriliyor.
+
+370
+01:30:32,148 --> 01:30:40,208
+Direnç elemanı gibi işaret ediliyor. Bunun üzerinde ne kadarlık bir akım değerine dayanabildiği belirtiliyor.
+
+371
+01:30:40,948 --> 01:30:49,548
+Temel olarak yapmış olduğu işlem akım koruması. Yani devremizi biz tasarlarken belirli akım değerleriyle çalışacak şekilde ayarladık diyelim.
+
+372
+01:30:49,548 --> 01:30:51,468
+Fakat bir takım dürültülerden.
+
+373
+01:30:51,760 --> 01:31:17,280
+Anlık yüklemelerden, çeşitli sebeplerden dolayı devreye sağlanan akım bir anda artacak olsa bu devre elemanlarına tekil olarak zarar verebilir. Böyle bir durumda akım değerimizin belirli limiti geçtiği durumda sigortanın kırılmasıyla birlikte devredeki akım sağlayan eleman ayrılmış oluyor. Dolayısıyla devrenin geri kalanındaki elemanları korumuş oluyoruz.
+
+374
+01:31:17,619 --> 01:31:24,359
+Baktığımız zaman sigorta elemanı normalde bir açık, kısa devre elemanı olarak çalışıyor.
+
+375
+01:31:25,000 --> 01:31:34,359
+Fakat sisteme taşıyabileceğinden daha fazla akım sağlandığı durumda ise sigorta yanarak bir açık devre eleman haline geliyor.
+
+376
+01:31:35,799 --> 01:31:44,260
+Temel olarak çalışma mantığı bu. Dolayısıyla bu koruma özelliğini sağlamak adına koruyacağı elemana sigortanın nasıl bağlanması gerekir? Ne dersiniz?
+
+377
+01:31:45,268 --> 01:31:47,547
+Seri mi bağlanması gerekir?
+
+378
+01:31:47,587 --> 01:31:50,087
+Evet, seri olarak bağlanması gerekir. Çok da var.
+
+379
+01:31:52,587 --> 01:31:55,127
+Şimdi bir sonrakiyle devam edelim.
+
+380
+01:31:57,247 --> 01:32:05,387
+Temel olarak bu anlattığımız, az önceki slide'da anlattığımız konular ama özellikle şematik gösterimlere dikkat edelim arkadaşlar.
+
+381
+01:32:06,195 --> 01:32:13,155
+Kaynaklardan bahsetmiştik, bağımsız kaynaklardan. Bu bağımsız kaynaklardan birisi gerilim kaynağı olabilir demiştik.
+
+382
+01:32:13,636 --> 01:32:18,775
+Gerilim kaynağına ilişkin olarak şematik gösterimler şu ikisinden herhangi birisi olabilir.
+
+383
+01:32:19,835 --> 01:32:23,036
+İkisi de geçerli, ikisi de DC kaynak olduğunu ifade ediyor.
+
+384
+01:32:24,243 --> 01:32:35,743
+Yine bu DC kaynağa ilişkin olarak şu gösterimimiz için uzun çizgi pozitif terminali pil için veya DC kaynak için kısa çizgi ise negatif terminali gösteriliyor.
+
+385
+01:32:37,123 --> 01:32:45,523
+Yuvarlak içerisindeki şematik gösterimde ise mutlaka artı ve eksi terminallerin hangisi olduğunun belirtilmesi gerekiyor.
+
+386
+01:32:46,363 --> 01:32:48,324
+Buyrun.
+
+387
+01:32:48,851 --> 01:32:56,871
+Pil içerisinde elektronlar eksiden artıya doğru mu gidiyor, artıdan eksiden artıya doğru mu akım sırasında? Hangi tarafa doğru akım oluyor?
+
+388
+01:32:56,891 --> 01:33:02,371
+Elektronlar eksiden artıya doğru gidiyor olarak kabul edebiliriz.
+
+389
+01:33:02,371 --> 01:33:05,371
+Şimdi şey için devre içerisinde.
+
+390
+01:33:06,131 --> 01:33:12,992
+Yani bu pili bir dirence bağladığımızda, kablo üzerinde bunun eksi terminalden artı terminale doğru gittiğini düşünelim.
+
+391
+01:33:13,332 --> 01:33:20,271
+Sen özellikle pilin içerisindeki bu davranış nasıldır diye soruyorsan, artı terminalimiz elektronları itiyor zaten.
+
+392
+01:33:20,412 --> 01:33:26,912
+Dolayısıyla artıdan eksiye doğru da elektronların akımı içeride oluyor diye varsayabiliriz.
+
+393
+01:33:29,391 --> 01:33:32,971
+Hocam, yani akımla elektronların yönü zıt oluyor o zaman.
+
+394
+01:33:33,391 --> 01:33:38,391
+Evet, şu anki tanımlamış olduğumuz soyutlama seviyesinde.
+
+395
+01:33:41,072 --> 01:33:44,391
+Hocam bir kez daha tekrar edebilir misiniz? Pek anlayamadım ama.
+
+396
+01:33:45,851 --> 01:33:49,771
+Şimdi şu anki, şöyle çizerek gösterelim.
+
+397
+01:33:55,123 --> 01:34:06,844
+Şimdi ne diyoruz? Biz akımımız bu yönde akıyor dedik değil mi? Elektron, elektrik akımı bu yönde. Fakat elektron akımı bunun tersi yönde. Yani elektronlarımız bu yönde ilerliyor.
+
+398
+01:34:08,123 --> 01:34:19,304
+Kaynağın içerisine baktığımızda ise bu akımı, yani elektronların net yer değiştirmesinin pozitif terminalden negatif terminale doğru olduğunu söyleyebiliriz.
+
+399
+01:34:21,844 --> 01:34:40,503
+Eksi yükleri itecek diye kabul edersek, içerideki elektron net yer değişimini pozitiften negatife doğru olduğunu söyleyebiliriz. Bu da dışarıdaki bağlı elemanda veyahut da kablo üzerindeki elektron akımını akım yönünün tersinde oluşturmuş olacak.
+
+400
+01:34:44,275 --> 01:34:45,275
+Tamam mı?
+
+401
+01:34:50,323 --> 01:35:09,623
+Devam ediyorum. Yine bağımsız akım kaynağı için şematik gösterim. Burada gördüğünüz şekilde yuvarlak içerisinde bir ok işareti mevcut. Bu ok işareti akım yönünü, yani bu elemanın devreye sağlamış olduğu akımın yönünü belirtiyor.
+
+402
+01:35:11,703 --> 01:35:17,563
+Dolayısıyla bu akım kaynağını bu şekilde ifade edebiliriz.
+
+403
+01:35:18,676 --> 01:35:20,435
+Bir sonraki elemanlara geçelim.
+
+404
+01:35:24,307 --> 01:35:38,387
+Şöyle, daha önceki senelerde ders İngilizce olarak açılıyordu. Slider İngilizceydi. Sınavlar da İngilizce oluyordu. Bu sene ders herhalde Türkçe olarak açıldı. Doğru mu? Siz kaydolurken nasıl gördünüz?
+
+405
+01:35:40,148 --> 01:35:45,648
+Ders Türkçe olarak açıldı diyebiliyorum. Dolayısıyla sınavları da Türkçe olarak yapıyor olacağız arkadaşlar.
+
+406
+01:35:50,771 --> 01:35:57,112
+Time Wording dediğimiz neyle ilgiliydi? Hangi konudaydı?
+
+407
+01:36:10,771 --> 01:36:14,852
+Hocam DC ya da Time Waring diyor ya, o Time Waring ne oluyor?
+
+408
+01:36:16,551 --> 01:36:21,072
+O şey, AC kaynaklarla ilgili, o AC kaynakların gösterimi şu anda yok.
+
+409
+01:36:22,532 --> 01:36:26,932
+Zamana göre değişen bir kaynak. Şöyle ifade etmeye çalışalım.
+
+410
+01:36:27,692 --> 01:36:32,291
+Mesela elimizde bir gerilim kaynağımız olsun. Bu sisteme bir gerilim değeri sağlıyor.
+
+411
+01:36:32,768 --> 01:36:56,228
+İşte T eşit belirli bir anda açıldı diyelim. Bunun sisteme sağladığı gerilim değeri sabit bir V0 değeri. Bu zamana göre değişmeyen sabit bir gerilim değeri. Zamana göre değişen ise örneğin bir sinzöyden işaret olabilir. Şöyle zamana göre değişen bir işaret olmuş olur. Bu işaretimiz DC bir işaretken şurada görmüş olduğunuz işaret bir AC işaret.
+
+412
+01:37:00,703 --> 01:37:12,583
+O zaman içerisinde şu şekilde bir gösterim oluyor. Yine aynı şekilde AC bir gerilim kaynağımız varsa onun da AC olduğunu belirtmek adına şematik olarak bu şekilde gösteriyoruz.
+
+413
+01:37:13,543 --> 01:37:21,023
+Dersimizin büyük bir çoğunluğu DC kaynak olarak ilerleyecek. Daha sonra AC kaynakları geçiyor olacağız. Aralındaki temel fark bu.
+
+414
+01:37:25,268 --> 01:37:28,727
+Hocam o zaman Time Waring AC mi oluyor?
+
+415
+01:37:29,628 --> 01:37:30,727
+AC oluyor, evet.
+
+416
+01:37:31,327 --> 01:37:32,327
+Tamam, teşekkür ederim.
+
+417
+01:37:33,028 --> 01:37:33,507
+Rica ederim.
+
+418
+01:37:42,163 --> 01:37:53,724
+Bu yine ders şeyde, ilk slide'da bahsettiğimiz şey, bir bağımsız kaynağın devreye sağladığı değer, mesela bağımsız bir gerilim kaynağının devreye sağladığı gerilim değeri fix.
+
+419
+01:37:54,228 --> 01:38:01,268
+Ama bu elemanın ucundan çekilen akım diğer devre elemanlarından belirleniyor. Onlar tarafından belirleniyor.
+
+420
+01:38:01,268 --> 01:38:06,208
+Aynı şekilde bağımsız bir akım kaynağının da sisteme vermiş olduğu akım değeri sabit, fix.
+
+421
+01:38:06,748 --> 01:38:13,728
+Ama bu elemanın uçlar arasındaki gerilim değeri sabit değil, bağlı olduğu elemanlara göre değişiklik gösteriyor.
+
+422
+01:38:14,323 --> 01:38:27,623
+Dolayısıyla şunu varsaymayacağız. Bir bağımsız gerilim kaynağının uçları arasındaki gerilim değeri de sabit, sağladığı akım değeri de sabit diye her devrede sabit olur diye bir beklentimiz olmaması gerekiyor.
+
+423
+01:38:28,663 --> 01:38:33,943
+Bir örnek üzerinden verecek olursak, 3 amperlik bir gerilim kaynağımız var.
+
+424
+01:38:36,063 --> 01:38:41,243
+Öyle bir elemanımız var ki bu eleman 1 voltluk gerilim düşümüne sebebiyet veriyor.
+
+425
+01:38:49,460 --> 01:38:59,060
+Bunu incelediğimiz vakit akım kaynağının sağlamış olduğu akım yönüne dikkat edecek olursak, burada da artık referans yönlere geldik.
+
+426
+01:38:59,060 --> 01:39:02,180
+Akım kaynağımızın sağlamış olduğu...
+
+427
+01:39:02,996 --> 01:39:12,416
+Akım yönüne bakacak olursak, eleman sabit bir şekilde 1 voltluk gerilim düşümüne sebep olduğu için, şu anki haliyle, bu şu anlama geliyor.
+
+428
+01:39:13,216 --> 01:39:17,716
+Bağlı olduğu eleman, akım kaynağının uçları arasındaki gerilim değerini belirledi.
+
+429
+01:39:18,076 --> 01:39:23,596
+Paralel oldukları için burada da 1 voltluk bir terminaller arasındaki gerilim düşümü söz konusu.
+
+430
+01:39:24,735 --> 01:39:27,115
+Sisteme sağladığı akım değeri 3 amper.
+
+431
+01:39:27,655 --> 01:39:29,876
+Dolayısıyla burada baktığımızda bakın.
+
+432
+01:39:30,256 --> 01:39:47,296
+Şu akım kaynağı için konuşacak olursak, akım kaynağı özelinde, kaynağın gerilim referans yönlerinin eksi yönünden girip pozitif yönüne doğru ilerleyen bir akım değeri söz konusu.
+
+433
+01:39:47,296 --> 01:39:52,136
+Şurada eleman için bakacak olursak, bu durumda ise,
+
+434
+01:39:52,851 --> 01:40:19,072
+Sisteme sağladığı akım açısından düşünecek olursak. Bu durumda da bunu şöyle düşünebiliriz. Bu aradaki kat etmiş olduğu gerilim farkı ne kadar? Eksi 1 volt. Eksi 1 voltluk bir potansiyel kat ediyor ve bunu 3 amper üzerinden sağlıyor. Dolayısıyla bu elemanı incelediğimizde bu elemanın gücü eksi 3 amper volt çıkıyor.
+
+435
+01:40:19,636 --> 01:40:42,196
+Amper volt dediğimiz şey aslında bir güç birimi, yani watt cinsinden bir birim. Dolayısıyla eksi 3 wattlık bir değere sahip olduğunu görüyoruz. Bu şu demek, nedir bunun adı? Güç değeri negatif çıkan bir eleman, devreye enerji sağlayan bir elemandır. Dolayısıyla buradan hareketle şunu söyleyeceğiz.
+
+436
+01:40:45,203 --> 01:40:57,943
+Bağımsız kaynakların güç değerleri bu şekilde negatif çıkabilir. Bunun sebebi bu elemanın uçlar arasındaki gerilim farkını diğer elemanlarının belirlemesi. Bu da zaten doğal bir durum.
+
+437
+01:40:57,943 --> 01:41:10,463
+Ve bir başka noktada devreye güç sağlayan elemanlar negatif güç değerine sahip, güç harcayan elemanlar ise pozitif güç değerine sahip. Şimdi şunu da inceleyelim. Aynı kol üzerinden devam eden bir akım.
+
+438
+01:41:10,800 --> 01:41:17,980
+3 amper. Bu sefer burada kırmızıyla işaretli olan elemanın artı gerilim referansından, eksi gerilim referansına doğru gidiyor.
+
+439
+01:41:18,540 --> 01:41:27,480
+Dolayısıyla bu 3 amperlik değer kaç voltluk bir yer değiştirmeye sahip? 1 volt. Pozitif olarak 1 voltluk bir yer değiştirmeye sahip.
+
+440
+01:41:27,980 --> 01:41:37,080
+Dolayısıyla buradaki senaryoyu incelediğimizde de 3 wattlık bir güce sahip olduğunu fakat pozitif olduğu için
+
+441
+01:41:37,492 --> 01:41:39,332
+Bu eleman güç tüketiyor.
+
+442
+01:41:41,132 --> 01:41:42,652
+Güç tüketir.
+
+443
+01:41:44,452 --> 01:41:47,152
+Buradaki eleman ise güç sağlar.
+
+444
+01:41:51,572 --> 01:41:57,632
+Totalde baktığımızda eksi 3 watt burada var, 3 watt burada var, ikisini topladığımızda 0 watt.
+
+445
+01:41:57,752 --> 01:42:06,152
+Yani sisteme sağlanmış olan enerji ile tüketilen enerji toplam olarak 0 olmuş oluyor, enerjinin korunumunu sağlamış oluyor.
+
+446
+01:42:07,412 --> 01:42:12,091
+Burada özellikle neye dikkat etmiş olduk bu slide'da tekrar hatırlatmak gerekirse.
+
+447
+01:42:12,872 --> 01:42:17,152
+Bir bağımsız kaynağın uçlar arasındaki gerilim farkını diğer elemanlar belirler.
+
+448
+01:42:18,131 --> 01:42:29,911
+Bağımsız kaynakların güç değeri hesaplanırken negatif değer çıkması normal. Bu negatif değer sisteme enerji sağladığını, güç sağladığını gösterir.
+
+449
+01:42:29,911 --> 01:42:44,111
+Ama birden fazla kaynağın olduğu bir senaryo için, özel durumdan bahsediyorum, birden fazla kaynağın olduğu bir durum için bir bağımsız kaynağın gücü pozitif çıkabilir. Bunun anlamı nedir? Ne dersiniz?
+
+450
+01:42:47,828 --> 01:42:50,288
+Hocam soruyu tekrar edebilir misiniz?
+
+451
+01:42:50,608 --> 01:43:11,288
+Sorayım. Buradaki örnekte bağımsız kaynağımızın gücü negatif çıktı. Ve burada hep bu şekilde negatif çıkacak. Ama öyle bir senaryo olabilir ki, karmaşık, çok sayıda bağımsız kaynağın olduğu bir senaryoda incelediğimiz, odaklandığımız spesifik bir bağımsız kaynağın güç değeri pozitif olabilir. Bunun anlamını öndet.
+
+452
+01:43:14,068 --> 01:43:16,188
+Yok, devreye ters bağlanmıştır, değilim.
+
+453
+01:43:19,891 --> 01:43:22,011
+Ve pratikte buna bir örnek verebilir misiniz?
+
+454
+01:43:23,851 --> 01:43:29,011
+Tekrar sorayım isterseniz. Belki tam ifade edememiş olabilirim.
+
+455
+01:43:30,271 --> 01:43:41,131
+Birden fazla bağımsız kaynağın bulunduğu karmaşık bir devrede, bağımsız kaynaklardan birisinin veya birkaçının güç değeri pozitif çıkabilir.
+
+456
+01:43:42,572 --> 01:43:45,492
+Bunun anlamı nedir? Bir, ikincisi.
+
+457
+01:43:45,920 --> 01:43:48,139
+Pratikte buna bir örnek verebilir misiniz?
+
+458
+01:43:53,395 --> 01:43:57,775
+Güç tüketiyorsa belki şarj olabilen bir şey olabilir, elektrik kullanarak.
+
+459
+01:43:57,775 --> 01:44:07,836
+Her ikisine de cevap almış olduk. Bir pil düşünün, şarj edilebilir bir pil. Normalde bir LED'e bağladığınız zaman sisteme enerji veriyor ve LED'i yakıyor.
+
+460
+01:44:08,095 --> 01:44:17,195
+Fakat şarj cihazına bağladığınızda pilin üzerindeki gerilim farkı hala mevcut ama o şarj oluyor. Yani enerji tüketiyor. Dolayısıyla bu mümkün.
+
+461
+01:44:17,716 --> 01:44:25,815
+Karmaşık bir devrede bağımsız kaynaklardan birinin gücü pozitif çıkabilir. Bu onun şarj olduğu anlamına veya güç tükettiği anlamına geliyor.
+
+462
+01:44:25,936 --> 01:44:32,376
+Pratiklik karşılığı da temel bir örnekte şarj olan, şarj edilebilir piller buna bir örnek olarak verilebilir.
+
+463
+01:44:36,979 --> 01:44:40,699
+Evet, Powerbank örneği de gelmiş zaten. O da doğru bir cevap.
+
+464
+01:44:46,323 --> 01:45:05,123
+Az önce yapmış olduğumuz işlemi akım kaynağı üzerinden bunun negatif bir güce sahip olduğunu görmüştük. Yine güç harcayan, güç tüketen eleman içinde bunun pozitif bir gerilim olduğunu gördük ve toplamların sıfır olduğunu ifade etmiştik.
+
+465
+01:45:05,652 --> 01:45:07,852
+Saati kontrol edelim bu arada.
+
+466
+01:45:08,752 --> 01:45:10,332
+Ara vermeyecek miyiz?
+
+467
+01:45:10,652 --> 01:45:11,912
+Ara vereceğiz.
+
+468
+01:45:13,032 --> 01:45:14,692
+Bir buçukta başladık.
+
+469
+01:45:15,352 --> 01:45:16,672
+Beş geçe gibi düşünüyordum.
+
+470
+01:45:16,771 --> 01:45:17,532
+Birazcık geçmiş.
+
+471
+01:45:18,532 --> 01:45:21,252
+O zaman bunu geçelim.
+
+472
+01:45:21,392 --> 01:45:23,412
+Son olarak şuradaki şeyleri bir söyleyelim.
+
+473
+01:45:23,872 --> 01:45:27,731
+Bağımlı kaynaklar için şematik gösterimden bahsedelim.
+
+474
+01:45:27,892 --> 01:45:30,172
+Ondan sonra ara verelim arkadaşlar.
+
+475
+01:45:30,739 --> 01:45:37,480
+Şimdi bağımsız kaynaklar, az önce hatırlayacağınızları yuvarlak bir şematik gösterime sahipti.
+
+476
+01:45:38,020 --> 01:45:44,960
+Bağımlı kaynaklar ise devrede kullandığımızda bu şekilde bir eşkenar dörtgen yapısında çiziliyor olacak.
+
+477
+01:45:44,960 --> 01:45:48,960
+Dolayısıyla bunların eğer bu bir gerilim kaynağı ise...
+
+478
+01:45:49,235 --> 01:45:58,495
+Artı ve eksi terminalleri işaretleniyor. Bu bir bağımlı akım kaynağı ise devreye sağlamış olduğu akım yönü bir ok işaretiyle gösterilmiş oluyor.
+
+479
+01:45:58,595 --> 01:46:07,055
+Toplamda dört çeşit olduğunu söylemiştik. Bu gerilim kaynağının örneğin değeri devrenin herhangi bir yerindeki, onu şöyle çizelim,
+
+480
+01:46:07,995 --> 01:46:15,835
+devremizin herhangi bir yerindeki bir I1 akımının bir K katsayısıyla çarpımı şeklindeyse bu şu demek.
+
+481
+01:46:16,627 --> 01:46:24,347
+Bu bizim gerilim kaynağımızın sağladığı gerilim. Bu şu demek, akım kontrollü bir gerilim kaynağımız var demek.
+
+482
+01:46:25,148 --> 01:46:39,148
+Veyahut da devremizin başka bir yerindeki gerilim değeriyle bağlantılı olarak, oransal olarak bir gerilim değeri üretiliyorsa, bu da gerilim kontrollü gerilim kaynağı olarak karşımıza çıkıyor.
+
+483
+01:46:39,148 --> 01:46:43,487
+İngilizceleri de ilki için Current Controlled Voltage Source.
+
+484
+01:46:44,020 --> 01:46:49,720
+İkincisi için de şu örnek için de voltage control, voltage source olarak karşımıza çıkıyor.
+
+485
+01:46:50,380 --> 01:46:53,239
+Aynı şeyi bağımlı akım kaynakları için de yapabiliriz.
+
+486
+01:46:53,239 --> 01:47:05,920
+Burada da eğer ki kaynağımız bir devremizin herhangi bir yerindeki tanımlı olan bir I2 akımına bağlı olarak bağlı olduğu yerde bir akım değeri üretiyorsa,
+
+487
+01:47:06,579 --> 01:47:10,539
+bu akım kontrollü, akım kaynağı yani current control, current source.
+
+488
+01:47:10,931 --> 01:47:26,612
+Veya aynı eleman devremizin başka bir gerilindeki gerilim değerine bağlı olarak bir akım değeri üretiyorsa, bu da gerilim kontrollü akım kaynağı olarak fonksiyon gösteren bağımlı kaynağı ifade etmiş oluyor arkadaşlar.
+
+489
+01:47:27,652 --> 01:47:29,671
+Şimdi bu noktada bir ara vereceğim.
+
+490
+01:47:31,828 --> 01:47:41,807
+Şöyle ara için bir 15 dakika ara verelim. Dolayısıyla 3'ü 5 geçer arkadaşlar. Kaldığımız yerden devam edelim. Buraya kadar olanlarla ilgili bir sorunuz var mı?
+
+491
+01:47:49,363 --> 01:47:55,743
+Cönben, sigortaların çalışma prensibini soracaktım ama sonraki sayfalarda geleceğiz herhalde ona tekrardan.
+
+492
+01:47:59,223 --> 01:48:11,643
+Temel olarak çalışma mantığı bunların belirli bir, yani çok detayına girmeyeceğiz. Sadece şematik gösteriminden bahsedeceğiz. Daha detaylı bir sorun varsa alabiliriz ama bunun sadece şematik karşılığı nedir onu ifade etmek için kullanacağız bu flight'ı.
+
+493
+01:48:12,443 --> 01:48:13,823
+Tamam.
+
+494
+01:48:20,404 --> 01:48:34,084
+Son bu bağımlı kaynaklara tekrar dönelim. Öyle bir istek var. Bir ara verelim arkadaşlar. Aramız 3'ü 7 geçeye kadar devam etsin. 3'ü 7 geçeye devam edelim kaldığımız yani.
+
+495
+02:01:21,076 --> 02:01:22,436
+Arkadaşlar merhaba tekrar.
+
+496
+02:01:24,276 --> 02:01:31,716
+Şimdi aradan önceki slide'dan slide tekrar ederek devam etmemizi istemiştiniz.
+
+497
+02:01:32,916 --> 02:01:35,056
+Şimdi şöyle yapalım onun için.
+
+498
+02:01:36,404 --> 02:01:38,944
+Mesela elimizde şöyle bir devre yapısı olsun.
+
+499
+02:01:39,444 --> 02:01:41,484
+Hocam bir şey sorabilir miyim?
+
+500
+02:01:41,544 --> 02:01:42,144
+Kusura bakmayın.
+
+501
+02:01:42,384 --> 02:01:43,084
+Böldüm ama.
+
+502
+02:01:43,463 --> 02:01:47,164
+Hocam birkaç slide önce volt hesaplaması yaptık ya biz.
+
+503
+02:01:47,544 --> 02:01:48,824
+Güç hesaplaması daha doğrusu.
+
+504
+02:01:49,164 --> 02:01:49,364
+Evet.
+
+505
+02:01:50,084 --> 02:01:53,524
+Ondan neden eksiyle artı topladığımızda sıfır oluyor?
+
+506
+02:01:54,044 --> 02:01:55,664
+Onu bir açıklayabilir misiniz?
+
+507
+02:01:55,844 --> 02:01:57,604
+Arkadaşlarla konuştuk ama pek anlayamadık.
+
+508
+02:01:58,931 --> 02:02:04,532
+Tamam, şöyle izah etmeye çalışayım. Şimdi burada, bu şekildi değil mi bahsetmeniz?
+
+509
+02:02:23,539 --> 02:02:47,539
+Varsayımsal olarak kullandığımız bir eleman. Bu elemanın uçları arasındaki gerilim farkı, gerilim düşümü 1 volt olarak sabit. Şu anki devrede sabit. 1 volt olarak gerçekleşiyor. Nasıl ölçmüşüz bunu? Devrenin uçlarına, işte voltmetreyi bağlamışız, kırmızı probu buraya bağlamışız, siyah probu buraya bağlamışız ve 1 volt pozitif bir gerilim düşümü ölçmüşüz.
+
+510
+02:02:48,148 --> 02:03:00,988
+Dolayısıyla bu iki elemanlı devre birbirine paralel şekilde bağlı devreler, elemanlar. Dolayısıyla buradaki akım kaynağı içinde üzerindeki gerilim düşümü verilen yönlerde 1 volt olarak gerçekleşir.
+
+511
+02:03:06,387 --> 02:03:12,148
+Veya bu devre için akımı sağlayan kaynak buradaki 3 amperlik bağımsız akım kaynağı.
+
+512
+02:03:12,507 --> 02:03:17,748
+Dolayısıyla bu kol üzerinde işaret etmiş olduğum yönde 3 amperlik bir akım akacak.
+
+513
+02:03:17,748 --> 02:03:19,748
+Bu durumda...
+
+514
+02:03:20,404 --> 02:03:32,344
+Bu akım kaynağını incelediğimizde, bu akım kaynağının gerilim yönlerine dikkat edecek olursanız, eksi yönünden artı yönüne doğru bir akım söz konusu.
+
+515
+02:03:32,463 --> 02:03:38,524
+Dolayısıyla bu elemanın akım ve gerilim değerlerini çarptığımızda, biz bu elemanın güç değerini buluruz.
+
+516
+02:03:38,884 --> 02:03:45,043
+Dolayısıyla bu elemanın verilen referans yönlerindeki akımı 3 amper,
+
+517
+02:03:46,131 --> 02:04:00,331
+Ama bu elemanın verilen akım yönündeki gerilim düşümü, eksi 1 volt. Dolayısıyla vermiş olduğumuz referans yönlerde, bu elemanın gücü, eksi 3 watt olarak hesaplanabiliyor.
+
+518
+02:04:00,731 --> 02:04:10,391
+Aynı durumda, şu elemanla ilgili olarak bakalım. Akım yönümüz, akım kaynağının sağladığı akım dolayısıyla, bu eleman için bu yönde akacak değil mi?
+
+519
+02:04:11,283 --> 02:04:25,003
+Bu yönde akacak. Dolayısıyla bu eleman için özelinde incelediğimizde, bu elemanın gerilim referans yönleri için artısından eksisine doğru bir akım söz konusu.
+
+520
+02:04:25,003 --> 02:04:27,003
+Dolayısıyla bu elemanın...
+
+521
+02:04:27,444 --> 02:04:51,144
+Şuradaki kırmızı elemanın gücünü hesaplamak istediğimizde ne kadarlık bir akım var? 3 amperlik bir akım var. Bu 3 amperlik akım referans yönüyle gerilim referans yönünü birlikte düşündüğümüzde gerilim referans yönünü dikkate aldığımızda 1 volt pozitif bir durum söz konusu. Dolayısıyla bu elemanın gücü 3 watt olarak hesaplanıyor.
+
+522
+02:04:55,444 --> 02:05:19,764
+3 wattlık güç sağlıyor. Buradaki eleman ise 3 wattlık güç tüketiyor. Pozitif çıktığı için. Dolayısıyla bu ikisinin toplamı şu kapalı çevrim içerisinde şöyle bir çevre alalım. Bu çevre içerisinde tek bir güç üreten eleman, tek bir güç tüketen eleman olduğu için zaten beklentimiz, enerjinin korunduğu dolayısıyla burada güç toplamının sıfır olması.
+
+523
+02:05:20,256 --> 02:05:42,316
+Bunu da sağlıyor zaten. Eksi 3 watt ile 3 watt'ı topladığımızda 0 watt. Yani bu kapalı çevre içerisine dışarıdan herhangi bir enerji girip dışarıya herhangi bir enerji çıkmadığı için bu kapalı çevrim içerisindeki güç toplamının 0 olması lazım. Onu sağlamış oluyor. Bu şekilde tekrar etmiş olayım. Yeterli oldu mu bu şekliyle?
+
+524
+02:05:43,936 --> 02:05:45,336
+Evet, tamam. Sağ olun.
+
+525
+02:05:45,856 --> 02:05:46,996
+Tamam, teşekkürler.
+
+526
+02:05:49,011 --> 02:06:14,011
+Şimdi diğer slide'ımıza geçelim. O da şununla ilgiliydi. Bunu açıklamak için de şöyle bir yapı kuralım. Yani devrenimizin herhangi bir başka tarafındaki kaynak veyahut da akım gerilim değerleri için dediğimiz şey anlaşılmıyor herhalde. Şöyle bir devre düşünelim. Bu bir bağımsız gerilim kaynağı. Burada bir direnç değerimiz var.
+
+527
+02:06:14,547 --> 02:06:18,287
+Daha sonrasında işte bir başka direnç değerimiz burada.
+
+528
+02:06:20,927 --> 02:06:28,207
+Daha sonra burada bir bağımlı akım kaynağımız var.
+
+529
+02:06:30,667 --> 02:06:32,867
+İşte burada bir başka direncimiz var.
+
+530
+02:06:34,307 --> 02:06:35,787
+Daha sonra son olarak da
+
+531
+02:06:41,395 --> 02:06:42,375
+Şöyle yapalım.
+
+532
+02:06:44,495 --> 02:06:47,275
+Böyle bir bağımlı gerilim kaynağımız var.
+
+533
+02:06:47,775 --> 02:06:51,295
+Şuradaki akım değerimizi I1 olarak tanımlayalım.
+
+534
+02:06:52,115 --> 02:06:57,495
+Şu elemanın gerilim düşümünü V1 olarak tanımlayalım.
+
+535
+02:06:58,155 --> 02:07:06,615
+Dolayısıyla şuradaki akım kaynağımızı K önceden belli bir sabit değer çarpıp V1 şeklinde tanımlayacak olursak.
+
+536
+02:07:06,927 --> 02:07:14,927
+Bu elemanımız aslında gerilim ile başka bir noktadaki gerilim değeri ile değişen akım değeri sağlayan bir eleman.
+
+537
+02:07:14,927 --> 02:07:24,948
+Bu devre için şuradaki gerilim değerimiz sabit. Dolayısıyla bu elemanın sisteme sağlamış olduğu akım değeri V1'e bağlı olarak belirlenmiş durumda.
+
+538
+02:07:25,028 --> 02:07:31,927
+Benzer şekilde şuradaki gerilim kaynağımıza bakacak olursak, bunu da M çarpı İ1 diyecek olursak,
+
+539
+02:07:32,948 --> 02:07:45,108
+Bu gerilim kaynağımız bağımlı bir kaynak. Devremizin başka bir noktasındaki, başka bir kolundaki akım değerinde orantılı bir şekilde devreye gerilim sağlıyor. Bu noktada şurada çizmiş olduğumuz eleman.
+
+540
+02:07:45,503 --> 02:07:50,003
+gerilim kontrolü bir akım kaynağı, akım kaynağı olduğunu ok işaretinden anlıyoruz.
+
+541
+02:07:50,563 --> 02:07:55,243
+Buradaki elemanımız ise akım kontrolü bir gerilim kaynağı olmuş oluyor.
+
+542
+02:07:55,243 --> 02:08:04,563
+Buradaki değişkenleri yer değiştirmiş olsaydık, yani akım kaynağımız N çarpı,
+
+543
+02:08:04,787 --> 02:08:10,167
+I2 gibi bir gerilim olmuş olsaydı, bu durumda akım kontrollü, akım kaynağı olmuş olurdu.
+
+544
+02:08:10,727 --> 02:08:26,447
+Şuna baktığımızda da, bu gerilim kaynağımıza baktığımızda da, T çarpı V2 gibi bir şey olmuş olsaydı, bu devrenin sağlamış olduğu gerilim, elemanın sağlamış olduğu gerilim, o da gerilim kontrollü bir gerilim kaynağı olarak karşımıza çıkmış olurdu.
+
+545
+02:08:26,447 --> 02:08:27,767
+Bu net oldu mu şimdi?
+
+546
+02:08:35,572 --> 02:08:36,992
+[öğrenci] sormuştu.
+
+547
+02:08:44,020 --> 02:08:46,720
+Şimdi devam edelim.
+
+548
+02:08:49,040 --> 02:08:53,860
+Şimdi pasif eleman dediğimiz elemanlar, bu pasif elemanlarımız nelerdi?
+
+549
+02:08:54,620 --> 02:08:58,340
+İşte direnç, endüktans ve kapasite elemanlarıydı.
+
+550
+02:08:59,620 --> 02:09:03,060
+Direnç elemanının herhangi bir enerji depolama özelliği yok.
+
+551
+02:09:03,240 --> 02:09:08,060
+Ama bir kapasite elemanının daha önceden depolamış olduğu bir enerji söz konusu olabilir.
+
+552
+02:09:08,220 --> 02:09:11,480
+Bunu nasıl yapıyor? Daha önceden kapasiteyi yüklemişizdir.
+
+553
+02:09:11,923 --> 02:09:13,903
+yük sahibidir.
+
+554
+02:09:14,563 --> 02:09:17,523
+Belirli bir yüke sahiptir. Onu devreye o haliyle bağlamış olur.
+
+555
+02:09:17,623 --> 02:09:19,663
+Dolayısıyla bir ilkin enerjisi olabilir.
+
+556
+02:09:20,543 --> 02:09:23,384
+Endüktans da benzer şekilde. Endüktansın da aslında
+
+557
+02:09:23,384 --> 02:09:28,963
+o an için, neticede sargılardan oluşuyor, o an için sargılarda dolaşan akımından dolayı bir
+
+558
+02:09:28,963 --> 02:09:31,023
+ilkin enerjisi olabilir.
+
+559
+02:09:31,783 --> 02:09:35,563
+Bu ilkin enerjiyi devreye bağladığımızda
+
+560
+02:09:35,563 --> 02:09:38,803
+o ilk koşulla devrede etki gösterebilir.
+
+561
+02:09:39,252 --> 02:09:57,872
+Dolayısıyla şunu söyleyebileceğiz. Pasif elemanlar genel olarak enerji tüketen elemanlardır. Anlık olarak bir güç depolaması söz konusu olabilir ama nihai olarak enerji tüketen elemanlar olarak karşımıza çıkacaklar.
+
+562
+02:09:59,212 --> 02:10:01,532
+Hocam bir şey sorabilir miyim?
+
+563
+02:10:01,892 --> 02:10:02,272
+Buyurun.
+
+564
+02:10:03,912 --> 02:10:06,512
+Pil akım kaynağı mı oluyor, volt kaynağı mı oluyor?
+
+565
+02:10:07,380 --> 02:10:11,820
+Pil dediğimiz şey, ideal olmayan bir gerilim kaynağı.
+
+566
+02:10:14,380 --> 02:10:16,940
+Yani pil üzerinde ne yazar?
+
+567
+02:10:17,332 --> 02:10:35,472
+3 volt veya 1.5 volt yazar. AA kalem pillerde 1.5 volt yazar. Bu ideal olsaydı, ideal durumda çalışsaydı devreye her zaman için 1.5 voltluğun gerilim sağlayacağı anlamına gelecekti.
+
+568
+02:10:35,472 --> 02:10:42,792
+Halbuki bunlar ideal olmayan kaynaklar. İdeal olmayan kaynak ne demek? Kaynağın bir iç direnci var.
+
+569
+02:10:43,188 --> 02:11:07,988
+İç direnç ne yapıyor? Sen ondan fazla bir akım çekmeye çalıştığın zaman, fazlaca bir gerilim çekmeye çalıştığın zaman, bu iç direnç, o çekilmeye çalışılan gerilim veya akımın belirli bir kısmını enerji olarak tüketiyor. Dolayısıyla tam olarak o gücü dışarıya aktaramıyor. Belirli bir kısmı ısı olarak içeride harcanmış oluyor.
+
+570
+02:11:08,532 --> 02:11:14,192
+Dolayısıyla pil dediğimiz şey de bir gerilim, bağımsız bir gerilim kaynağı diyebiliriz. Ama ideal olmayan.
+
+571
+02:11:16,912 --> 02:11:23,212
+Hocam, peki gerilim kaynağı pil oluyor ya, akım kaynağı ne oluyor?
+
+572
+02:11:24,692 --> 02:11:34,972
+Akım kaynağı temel olarak devreye sabit akım kas sağlayabilecek devreler. Bunlar elektronik devreler olarak karşımıza çıkıyor. Akım aynası gibi bir eleman var.
+
+573
+02:11:35,380 --> 02:11:36,640
+Bu akım aynası,
+
+574
+02:11:39,412 --> 02:12:07,391
+Akım aynası dediğimiz devre elemanı veya elektronik eleman, elektronik devre diyelim. Belirli bir noktadaki akım kaynağını başka bir noktaya birebir kopyalayabiliyor diyeyim. Çok genel bir tabirle. Dolayısıyla bu sisteme baktığımızda o nokta için, aynaladığı nokta için sabit bir akım değeri sağlamış oluyor. Yani genel anlamda bir akım kaynağını böyle pil gibi göremiyoruz.
+
+575
+02:12:07,412 --> 02:12:22,011
+Özel bir durumlarla sağlanıyor. Veyahut da akım kaynağını özel power supply'lar var. O power supply'larla sağlayabiliyoruz temel olarak. O da aslında ayarlı.
+
+576
+02:12:22,311 --> 02:12:23,731
+Tamamdır, teşekkür ederim hocam.
+
+577
+02:12:26,228 --> 02:12:48,247
+Giremeyeceğimiz için bu dönem. Onları kullanamayacağız ama güç kaynakları var. Bu güç kaynakları sabit akım modunda veya sabit gerilim modunda çalışabiliyor. Onlar da sabit akım modunda çalıştığında bir bağımsız akım kaynağı gibi düşünebiliriz. Sabit gerilim modunda çalıştıklarında da bağımsız gerilim kaynağı olarak düşünebiliriz onlarda.
+
+578
+02:12:58,739 --> 02:13:14,880
+Şimdi [öğrenci]'in bir yorumu vardı. Sanırım az önceki cevap buna da cevap olmuştur diye düşünüyorum. Bir gerilim dolayısıyla, gerilim kaynağı yapısı özelliği itibariyle bir şeye akım kaynağı diyemiyoruz.
+
+579
+02:13:15,539 --> 02:13:39,560
+İdeal durum için bahsettiğimizde devreye o gerilim değerini fiks olarak sağlaması lazım. İdeal olmayan durumda ise sağlayamayı vaat ettiği gerilim değerinden biraz daha çekilen akımıyla birlikte değeri düşen bir durum. Ama ikisini birbirine karıştırmayalım. Yani bir sabit olmayan gerilim kaynağı iç direnci dolayısıyla bir akım kaynağıdır diye değerlendirilemez.
+
+580
+02:13:48,787 --> 02:13:57,447
+Yine devre tasarımında veya devre analizinde kullandığımız pasif elemanların gösterimi, şematik gösterimleriyle devam edecek olursak arkadaşlar.
+
+581
+02:13:58,487 --> 02:14:07,347
+Direnç elemanı, rezistör. Sembolü bu şekilde gördüğünüz üçgen yapı. Birimi, Ohm. Ohm birimine sahip.
+
+582
+02:14:08,587 --> 02:14:11,427
+Gösterimi de şu şekilde, yine gördüğünüz gibi.
+
+583
+02:14:11,920 --> 02:14:21,340
+Endüktans elemanı şematik olarak, işte bu sargıları ifade etmek şeklinde yarım çemberlerle ifade edilen bir şematik gösterime sahip.
+
+584
+02:14:22,719 --> 02:14:37,059
+SI birim sistemindeki birimi Henry. Kapasite elemanı gösterimi bu şekilde iki tane karşılıklı plakayı ifade edecek şekilde bir gösterime sahip. Birimi Farad.
+
+585
+02:14:37,555 --> 02:14:43,835
+Şimdi bu elemanları şematik gösterimlerinden hareketle şöyle bir soru sormak istiyorum.
+
+586
+02:14:44,895 --> 02:14:57,695
+Endüktans elemanının uçlarına bir gerilim kaynağı bağlayacak olursak, bu durumda endüktans elemanının iki terminali arasındaki gerilim düşümü ne kadar olur?
+
+587
+02:15:04,243 --> 02:15:20,203
+gerilim kaynağı bağladık diyelim. Bu endüktans elemanının uçlarına bir voltmetre bağladık. Bağladığımız kaynak DC bir kaynak. Bu voltmetreyi bağladığımız zaman burada ölçeceğimiz değer ne olur? Ne dersiniz?
+
+588
+02:15:29,747 --> 02:15:30,827
+Değişken olmaz.
+
+589
+02:15:32,768 --> 02:15:35,988
+Yok, değişken olmuyor.
+
+590
+02:15:37,507 --> 02:15:39,268
+Hocam sıfır olabilir mi?
+
+591
+02:15:39,891 --> 02:16:04,831
+Evet, cevap olarak da chatte de geldi. Evet, sıfır cevabı doğru. Şimdi bir endüktans elemanına bir DC kaynağı bağlayıp belirli bir süre bekledikten sonra, onu söylemedim soruda ama şimdi söylüyorum. Belirli bir süre bekledikten sonra endüktans elemanının uçlarındaki gerilimi ölçtüğümüzde DC kaynak bağlamışız. Yalnız dikkat edin. Sıfır gerilim değerini ölçeriz.
+
+592
+02:16:07,891 --> 02:16:21,391
+Bu yapısını görüyorsunuz. Bir tel var. Sarılmış şekilde ama neticede bu bir tel. Dolayısıyla DC şartlarda kısa devre gibi davranacağını da gösteriyor. Bu şematik gösterimden bunu da aklımıza getirebiliriz arkadaşlar.
+
+593
+02:16:23,731 --> 02:16:27,891
+AC kaynak olsa durum değişir. AC kaynak olduğu vakit bu bir...
+
+594
+02:16:29,391 --> 02:16:42,131
+AIC direnç gösterir duruma geliyor. O AIC dirence göre geçirdiği akım zamana bağlı olarak farklılık gösteriyor. Ama AIC şartlarla ilgili konuşuyoruz şu aşamada.
+
+595
+02:16:42,391 --> 02:16:43,772
+Hocam, bir şey sorabilir miyim?
+
+596
+02:16:44,092 --> 02:16:44,432
+Buyurun.
+
+597
+02:16:44,432 --> 02:16:47,211
+AIC de neden direnç gösteriyor Norton?
+
+598
+02:16:48,628 --> 02:17:09,148
+Çünkü enduktans elemanının üzerinden geçen akımı ile uçları arasındaki gerilimin integrali arasında bir doğrusal ilişki var. Bundan dolayı bu bir AC işarette bu eleman bir direnç benzeri bir davranış gösteriyor.
+
+599
+02:17:09,940 --> 02:17:18,360
+DC şartlarda buna direnç olarak isim veriyoruz fakat AC şartlarda buna endüktans diyoruz.
+
+600
+02:17:20,100 --> 02:17:22,940
+Empedans diyoruz, çok özür dilerim. Empedans diyoruz.
+
+601
+02:17:23,440 --> 02:17:24,360
+Bu empedans...
+
+602
+02:17:25,940 --> 02:17:41,720
+Yani direnç benzeri davranışı gösteriyor. Bunun sebebi de temelde bu elemanın tanım bağıntısına baktığımızda bu elemanın üzerinden geçen akımı ile bunun gerilimindeki değişimin toplamı aralarında doğrusal bir ilişkiye sahip.
+
+603
+02:17:41,720 --> 02:17:53,720
+Dolayısıyla AC işarette gerilim değişiyor. Gerilim değiştikçe akım da bunu geriden takip edecek şekilde değişim gösteriyor. Dolayısıyla akımla gerilim arasında bir...
+
+604
+02:17:53,940 --> 02:18:20,400
+Fark oluşuyor. Bu fark da direnç benzeri bir davranışa sebep veriyor. Aynı şey kapasite içinde geçerli. Şimdi ona da belki soru gelirse değiniriz. Ama benim ilk sormak istediğim şu. Elimizde bir kapasite var. Buna bir DC işaret bağlıyoruz ve belirli bir süre bekliyoruz. Sonra geliyoruz. Kapasite elemanının uçlarına bir voltmetrinin problarını bağlıyoruz. Ölçeceğimiz gerilim değeri ne olur?
+
+605
+02:18:27,540 --> 02:18:28,560
+Sıfır olmaz.
+
+606
+02:18:30,760 --> 02:18:32,140
+Sonsuz da olmaz.
+
+607
+02:18:33,580 --> 02:18:36,780
+V olur. Yani V dediğimiz de şu.
+
+608
+02:18:37,480 --> 02:18:43,760
+Kapasite elemanının uçlarına kaç voltluk bir gerilim kaynağı bağladıysak o değeri görürüz.
+
+609
+02:18:44,180 --> 02:18:47,740
+Yani DC şartlarda yine DC bir kaynak bağlamıştık.
+
+610
+02:18:49,200 --> 02:18:52,800
+Elemanın şematik gösterimi açık bir devre gibi zaten.
+
+611
+02:18:52,800 --> 02:18:54,800
+Dolayısıyla bu açık devrenin...
+
+612
+02:18:55,092 --> 02:19:15,532
+Karşılığı aslında biz götürüp gerilim kaynağının uçlarını ölçüyoruz. Buradan herhangi bir akım geçmeyeceği için gerilim düşümü de olmayacak uzun süre bağladıktan sonra. Dolayısıyla aslında biz şu terminalle, bu terminalle biraz multimetre probu bağladığımızda anlamı şu, gerilim kaynağının uçlarını ölçüyoruz. Yani gerilim kaynağının değerini görürüz.
+
+613
+02:19:15,532 --> 02:19:22,532
+Buradan çıkaracağımız sonuç da bu şematik gösterimler, enduktans ve kapasite elemanları için görmüş olduğumuz şematik gösterimler.
+
+614
+02:19:23,092 --> 02:19:28,172
+Aynı zamanda bu elemanların DC kaynaktaki davranışını da tanımlıyor.
+
+615
+02:19:28,752 --> 02:19:31,952
+Endüktans elemanı DC şartlarda kısa devre gibi davranır.
+
+616
+02:19:32,352 --> 02:19:35,712
+Kapasite elemanı DC şartlarda açık devre gibi davranır.
+
+617
+02:19:36,312 --> 02:19:37,812
+Bunları da not etmiş olalım arkadaşlar.
+
+618
+02:19:40,952 --> 02:19:46,672
+Yine karşılaşacağımız elemanlara ilişkin şematik gösterimlerden devam edecek olursak.
+
+619
+02:19:47,156 --> 02:20:02,216
+Sistemimizdeki elektriksel bağlantıyı tamamlamak üzere kullanmış olduğumuz kablo elemanı var. Kablo elemanını sürekli çizgi olarak gösteriyoruz. İdeal durumda bunların sıfır iç dirence sahip olduğunu varsayıyoruz.
+
+620
+02:20:05,876 --> 02:20:18,876
+Düğümünü göstermek adına veya sabit referansı göstermek adına, farklı gösterimler var. Biz dersimiz kapsamında şuradaki gösterimi kullanacağız. Diğer gösterimler...
+
+621
+02:20:19,136 --> 02:20:39,276
+Analog Ground, Digital Ground veya farklı iki sistem arasındaki şase durumu gibi farklı referansları da ifade edebiliyor. Yani karmaşık sistemlerde birden fazla ground olabilir. Bizim dersimiz kapsamında kullanacağımız sabit referans burada görmüş olduğunuz durumu ifade ediyor.
+
+622
+02:20:47,379 --> 02:21:08,939
+Bir kontağı var. Bu kontak açık durumda veya kapalı durumda olabilir. Buradaki açık ve kapalı durumları ters anlaşılabilir. Aslında açık derken anahtarın açık olması, kapalı derken anahtarın kapalı olması veya kapalıdan kasıtayan yolun tamamlanması, yolun kesilmesi şeklinde karşımıza çıkıyor.
+
+623
+02:21:09,587 --> 02:21:33,628
+Sigorta elemanına baktığımızda da yine farklı gösterimler söz konusu. Bu gösterimlerin hepsi sigorta elemanına dair. Temelde sigorta elemanı az önce bahsettiğimiz gibi bir akım koruması sağlar. Devreye taşıyabileceğinden daha yüksek bir akım sağlandığında sigorta yanarak devreyi korumaya çalışır.
+
+624
+02:21:36,979 --> 02:21:39,020
+Bunları geçiyorum.
+
+625
+02:21:41,939 --> 02:21:48,259
+Şimdi kablolarla ilgili olarak, pratik sistemlerde kablolamanın çok önemi var tabii.
+
+626
+02:21:49,020 --> 02:21:53,860
+Yüksek akım kullanması muhtemel olan durumlarda uygun.
+
+627
+02:21:54,255 --> 02:22:11,036
+taşıyıcılığa sahip kabloların kullanılması gerekiyor. Örneğin bir yüksek akım sağlayan lipopilden bir sisteme akım ve gerilim sağlayacak olursanız, çekeceği akımı taşıyabilmek adına uygun genişlikte, uygun kesit alanına sahip kablolar kullanmak lazım.
+
+628
+02:22:11,036 --> 02:22:19,095
+Burada da standartlar var. Bunlardan en bileni AWG standardı. Bu standarda göre, verilmiş olan numaraya göre,
+
+629
+02:22:19,667 --> 02:22:45,727
+Kablonun kalınlığı değişiyor, taşıyabileceği akım değeri değişiyor. Eğer bu standartlara uyulmazsa şöyle sonuçlarla karşılaşılabilir. Uzun süre çalışan bir devre sisteminde hafiften bir yanık kokusu oluşabilir. Bu yanık kokusu aslında taşıyabileceğinden çok daha yüksek değerlerde akım taşıyan kabloların bu dış kaplamalarında oluşan ısınma dolayısıyla duyulmuş olduğumuz kokular aslında.
+
+630
+02:22:46,420 --> 02:23:00,139
+Dolayısıyla kullanılacak, geliştirilecek sistemdeki akım değerlerini belirleyerek güvenlik açısından bunların uygun kesitteki ve taşıma kapasitesindeki kablolar olarak seçilmesi gerekiyor.
+
+631
+02:23:00,299 --> 02:23:05,939
+Burada bu standartlara ilişkin olarak kesit boyutları ve isimlendirmelerine yer verilmiş durumda.
+
+632
+02:23:08,079 --> 02:23:09,079
+Geçebiliriz.
+
+633
+02:23:24,755 --> 02:23:39,416
+Yine sabit referansla ilgili olarak daha önce konuştuğumuz gibi bu her bir elemanın, çok terminalli bir elemanın terminallerinden birisini referans tutup diğer bütün gerilimleri buna göre tanımlamak mümkün.
+
+634
+02:23:39,515 --> 02:23:48,255
+Tıpkı potansiyel enerjide olduğu gibi potansiyel enerjide potansiyel değer bir yer referansına göre belirleniyor.
+
+635
+02:23:48,255 --> 02:23:51,456
+Burada da benzer şekilde çok terminalli bir elemanın.
+
+636
+02:23:51,860 --> 02:23:58,659
+uçlarındaki gerilim değerleri seçmiş olduğumuz bir düğümdeki bir uçtaki gerilime göre tanımlanabilir.
+
+637
+02:23:59,860 --> 02:24:03,460
+Buradan şöyle bir sonuç çıkıyor. O sonucu size sorayım.
+
+638
+02:24:04,620 --> 02:24:09,560
+İki terminalli bir elemanın kaç adet tanım bağıntısı olması gerekir sizce?
+
+639
+02:24:09,920 --> 02:24:16,340
+Tanım bağıntısı dediğimiz şey bir elemana ilişkin olarak uçlarındaki akım gerilim değerlerini ifade etmiyor.
+
+640
+02:24:19,188 --> 02:24:23,207
+İki terminalli bir eleman için kaç adet tanım bağıntısına ihtiyaç duyarız.
+
+641
+02:24:30,195 --> 02:24:32,915
+Ne dersiniz? Buradaki anlattığımız konuyla alakalı.
+
+642
+02:24:46,164 --> 02:24:47,324
+Var mı? Bir yorum.
+
+643
+02:24:58,484 --> 02:25:05,283
+Genel olarak sahip olduğunuz bir bilgiden hareket de soralım. Bir direnç elemanı için kaç tane tanım bağımsız gerekiyor?
+
+644
+02:25:09,811 --> 02:25:13,112
+gerekiyor derken bir direnç elemanı için kaç tane tanım bağıntısı var?
+
+645
+02:25:20,948 --> 02:25:40,808
+Bir tane yok mu arkadaşlar? Yani gerilim bölü akım değeri, yani elemanın uçları arasındaki gerilim düşümünü elemanın üzerinden geçen akıma böldüğümüzde o eleman için sabit bir değer elde ederiz. Ben gerilimi arttırsam da akım da artıyor. İkisinin oranı sabit. Dolayısıyla bu iki terminalli eleman için tek bir tanım bağıntısı yeterli.
+
+646
+02:25:41,716 --> 02:26:01,636
+3 terminalli olsaydı 2 tane tanım bağıntısı yeterli olacaktı. 10 uçlu bir, 10 terminalli bir eleman için 9 tane tanım bağıntısı yeterli olacak. Mesela 10 terminalli eleman için 9 tane tanım bağıntısı var. 10. tanım bağıntısını aslında normalde beklentimiz her uç için bir tane tanım bağıntısı olması gerekli değil.
+
+647
+02:26:11,540 --> 02:26:15,860
+Hocam, tanım bağıntısını bir kez daha açıklayabilir misiniz? Tam anlayamadım da.
+
+648
+02:26:16,479 --> 02:26:18,920
+Şöyle, şunu demek ki, tanım bağıntısı dediğimiz şu.
+
+649
+02:26:19,327 --> 02:26:35,628
+Mesela direnç elemanını düşünelim. Direnç elemanın iki tane ucu var. Biz normalde bu elemanı tanımlayabilmek için bu ucundaki gerilim değeriyle bu ucundaki gerilim değerini ve buradan akan akımla buradan akan akımla birbirlerine oranlı birbirleriyle ilişkili şekilde yazmamız lazım.
+
+650
+02:26:35,628 --> 02:26:42,347
+Bize öyle bir denklem lazım ki V1, I1, V2, I2 değerlerinin içeren bir denklem olması lazım.
+
+651
+02:26:42,804 --> 02:26:56,923
+İki tane giriş akım gerilim değeri var, iki tane çıkış akım gerilim değerleri var. Ama biz biliyoruz ki buradan giren akım, buradan çıkan akım eşit olacak. Dolayısıyla I1, I2'yi eşit bir tane tanım bağıntısını dolarak eledik.
+
+652
+02:26:59,440 --> 02:27:25,420
+V1 ve V2 için iki ayrı tanım bağıntısına gerek var mı? Yok. Biz V1-V2 yani bu ikisi arasındaki gerilim farkı ile buradan akan akımı oranladığımızda bir bağıntıyla sistemi çözmüş oluyoruz. Bizim iki tane tanım bağıntısına ihtiyacımız var. Girişler için bir bağıntı, çıkışlar için bir bağıntı. Fakat sadece giriş yönündeki veya bu ikisinin arasındaki farka bağlı olarak bir tanım bağıntısı yazmamız yeterli oldu.
+
+653
+02:27:25,775 --> 02:27:42,576
+İhtiyaç duyduğumuz ama yazmadığımız ikinci tanım bağıntısı ise şuydu aslında. Biz buradaki V2 gerilimini referans kabul ettik, sıfır kabul ettik neyse buna göre buradaki girişteki V1 gerilimini tanımladık. Dolayısıyla bize tek bir tanım bağıntısı yeterli oldu.
+
+654
+02:27:43,036 --> 02:27:51,536
+Genelleştirecek olursak N terminale sahip bir eleman için N-1 adet ayrık tanım bağıntısı veya formül yeterli.
+
+655
+02:27:52,147 --> 02:28:02,847
+N. tanım bağıntısı da bu terminallerden bir tanesini 0 volt referans olarak seçtiğimiz için 10. tanım bağıntısı da arka tarafta gizli bir şekilde ortaya çıkmış oluyor.
+
+656
+02:28:02,968 --> 02:28:06,887
+Ben burada kastettiğim buydu. Referans seçme dolayısıyla.
+
+657
+02:28:07,443 --> 02:28:19,363
+N elemanlı bir devre elemanı, N elemanlı değil, N terminalli bir devre elemanına ilişkin olarak N-1 adet uç bağıntısı, tanım bağıntısı bizim için yeterli oluyor.
+
+658
+02:28:19,463 --> 02:28:24,884
+Tanım bağıntısı dediğimiz şey de, direnç elemanı için V bölü I eşittir R denklemi.
+
+659
+02:28:26,164 --> 02:28:31,384
+Yani bunun davranışını, uçlarındaki akım ve gerilim ilişkisini tanımladığımız bir denklem.
+
+660
+02:28:32,435 --> 02:28:49,315
+Kapasite elemanı, mesela direnç elemanı için şu şekilde yazmıştık. Uçlarındaki akan akım, iki terminal arasındaki gerilim düşümüne oranladığımda sabit bir değer veriyor. Bu direnç elemanı için kullandığımız tanım bağımsı.
+
+661
+02:28:49,315 --> 02:28:54,396
+Kapasite elemanı için de şu şekilde yazabiliriz bunu.
+
+662
+02:28:56,396 --> 02:28:57,315
+Q eşittir.
+
+663
+02:28:58,388 --> 02:29:13,808
+C çarpı V diye yazabiliriz. Burada Q'yu da aslında zamana bağlı olarak birikimli akım değeri olarak düşünecek olursak, IDT eşittir C çarpı V diye yazabiliriz.
+
+664
+02:29:13,868 --> 02:29:21,628
+Bu da kapasite elemanının tanım bağımsı. Nedir kapasitenin tanım bağımsı? Bu elemanın uçlarında akan akım değeriyle,
+
+665
+02:29:22,064 --> 02:29:26,384
+Bu elemandaki gerilim düşümü ne şekilde ilişkili? Bunu veren denklem.
+
+666
+02:29:27,304 --> 02:29:31,484
+Kapasite elemanı da iki terminalli bir eleman. Terminal iki tane ucu olması demek.
+
+667
+02:29:32,164 --> 02:29:34,103
+Dolayısıyla bunun için tek denklem yeterli.
+
+668
+02:29:34,923 --> 02:29:43,484
+Arkada görmediğimiz veya varsaydığımız ikinci denklemle, ikinci denklemde burada terminallerden birisini V2'yi sıfır olarak kabul ettik.
+
+669
+02:29:45,587 --> 02:29:50,468
+İki terminal arasındaki gerilim farkı olarak tanımladık. Bunu kastediyordum burada.
+
+670
+02:29:54,067 --> 02:29:55,427
+Biraz uzanmış oldu.
+
+671
+02:29:57,968 --> 02:30:01,788
+Ne var burada başka? Zaten bahsettiğim bir şey.
+
+672
+02:30:05,523 --> 02:30:12,603
+Şimdi burada bahsetmiş olduğumuz genel elemanlardan hareketle şunları da hatırlayalım ve söyleyelim arkadaşlar.
+
+673
+02:30:13,463 --> 02:30:18,903
+Bir kablo elemanı ideal durumda sıfır iç dirence sahip bir eleman olarak düşündük.
+
+674
+02:30:18,903 --> 02:30:26,883
+Dolayısıyla kablo elemanının sisteme bağlı olsun, ayrık olsun.
+
+675
+02:30:27,283 --> 02:30:34,164
+Herhangi iki noktası arasındaki ölçmüş olduğumuz gerilim değeri her zaman için sıfırdır. Bunu şöyle görelim.
+
+676
+02:30:35,283 --> 02:30:37,004
+Bir tane örnek devremiz var mı?
+
+677
+02:30:38,504 --> 02:30:47,804
+Mesela burada şu bir kablo elemanı. Bu kablo elemanının şu iki ucu arasındaki gerilim değerine baktığımızda
+
+678
+02:30:48,308 --> 02:31:04,028
+Bunu sıfır olarak göreceğiz. Buradan kastettiğim süreklilik varken, kablo elemanı sürekliyken, yoksa şu iki uç arasında ölçtüğümüzde zaten bu eleman 1 voltluk gerilim düşümüne sebep oluyor. Bu kablo ile alakalı bir durum değil. Onu kastetmiyorum.
+
+679
+02:31:05,927 --> 02:31:07,988
+Yine devam edecek olursak.
+
+680
+02:31:12,404 --> 02:31:31,224
+Bir gerilim kaynağı, genel kurallar olarak mutlaka aklımızda kalması gereken nokta, bir gerilim kaynağı yazılı olan değerini, ideal durumdaki gerilim kaynağı, belirtilmiş olan değerinde bağlı olduğu devreye o noktalarda, bağlı olduğu noktalarda gerilim düşümü sağlar.
+
+681
+02:31:32,324 --> 02:31:35,224
+Benzer şekilde akım kaynağı da bağlı olduğu devreye...
+
+682
+02:31:35,987 --> 02:32:02,608
+Sahip olduğu değerin mertebesinde devreye o noktadan akım değeri sağlar. Referans değerimiz her zaman 0 volt olarak almak mantıklı. 0 volt olarak almak zorunda değiliz ama 0 volt olarak almanın avantajından bahsetmiştik. Eğer 0 volt olarak almıyorsak, referansımızı 10 volt olarak kabul ediyorsak, her bir düğümün referansa göre farkını alıp gerçekte aradaki ne kadar değişik olmuş.
+
+683
+02:32:03,092 --> 02:32:10,612
+Aslında eleman sayısı kadar bir çıkartma işlemiyle uğraşmamız gerekiyor. Eğer sıfır kabul etmiyorsak onu tekrar hatırlamış olalım.
+
+684
+02:32:14,612 --> 02:32:16,212
+Saatimiz kaç oldu? 36.
+
+685
+02:32:19,412 --> 02:32:22,092
+Şimdi elektrik akımı ve...
+
+686
+02:32:24,819 --> 02:32:30,520
+Direnç elemanı üzerindeki etkisinden bahsetmek gerekirse, bu da bizi Ohm kanununa götürüyor arkadaşlar.
+
+687
+02:32:30,719 --> 02:32:32,520
+Şimdi ona ilişkin olarak konuya bakalım.
+
+688
+02:32:34,059 --> 02:32:44,520
+Daha önce de konuştuğumuz üzere elektrik akımı, akım dediğimiz şey yüksek bir potansiyelden düşük bir potansiyele doğru gerçekleşen bir durumdur.
+
+689
+02:32:46,040 --> 02:32:51,840
+Ve elektrik akımı daha düşük dirençli yolu tercih eder.
+
+690
+02:32:52,308 --> 02:33:16,168
+Daha serbestçe geçebileceği yolu tercih eder. Bu durumdan dolayı çözmüş olduğumuz devrelerde şuna dikkat etmeliyiz. Bir paralel bağlı direnç yapısı varken daha yüksek dirençten daha düşük akımın, daha düşük dirençten daha yüksek akımın geçmesi aslında bizi pratikte kontrol edebileceğimiz bir duruma karşılık gelmiş oluyor.
+
+691
+02:33:16,852 --> 02:33:41,691
+Yine bir direnç elemanı özelinde bunu düşünecek olursak, bir direnç elemanının uçlarına bir gerilim kaynağı bağladığımızda, gerilim kaynağının değerini arttırsak akımın arttığını, gerilim kaynağını düşürsek akımın azaldığını ve bu artış ve azalışın, akımdaki artış ve azalışın gerilim kaynağındaki artış ve azalışla birebir orantılı olduğunu görüyoruz.
+
+692
+02:33:42,195 --> 02:33:58,995
+Bu durumda ise şunu ortaya çıkartmış oluyoruz. Bir direnç elemanı için uçlarına uygulanmış olan gerilim ile bu elemanın üzerinden akan akımın o eleman için sabit bir değer verdiğini görüyoruz. Bu değer o elemanın direnç değeri olarak tanımlanıyor.
+
+693
+02:34:01,075 --> 02:34:10,075
+Aynı elemandan daha uzun bir parça kullansam değişiyor, daha kısa bir parça kullansam azalıyor, daha uzun parça kullansam artıyor.
+
+694
+02:34:10,595 --> 02:34:15,235
+Kesit alanını düşürdükçe artıyor, kesit alanını arttırdıkça azalıyor.
+
+695
+02:34:15,235 --> 02:34:26,223
+Dolayısıyla bu deneylere baktığımızda da o eleman için direnç değerinin bir takım özgül, o elemana, o materyale özgül bir takım...
+
+696
+02:34:26,224 --> 02:34:34,524
+Birimlerle, değişkenlerle değiştiğini, bir kısmının ise fiziki özellikleriyle değiştiğini görüyoruz.
+
+697
+02:34:35,164 --> 02:34:51,184
+Yani direnç değerine baktığımızda uzunluk, kesit alanı gibi dışsal etkiler ve öz direnç dediğimiz kullanılan malzemenin kendi özelliğinden dolayı ne kadarlık bir elektron serbest bırakma kabiliyetine sahip gibi öz direnç değeriyle alakalı olarak
+
+698
+02:34:51,796 --> 02:34:56,855
+Hesaplandığını söyleyebiliriz. Dolayısıyla Ohm kanununa buradan dokunmuş olduk.
+
+699
+02:35:03,123 --> 02:35:20,123
+Ama yine şunu da söyleyelim. Elektrik akımıyla ilgili olarak baktığımız noktada tekrar oluyor ama önemli olduğu için söylemek lazım. Elimizde bir gerilim kaynağı varsa bu gerilim kaynağı üzerinden geçen akımı kim belirler arkadaşlar?
+
+700
+02:35:25,203 --> 02:35:40,384
+Gerilim kaynağımız var, devreye bağladık. Bir direnç cisiyle bağlı bir şekilde çalışıyor. Karmaşık bir devremiz var. Hepsi pasif elemanlar, sadece gerilim kaynağımız aktif eleman. Bu gerilim kaynağı üzerinden geçecek akımı belirleyen nedir?
+
+701
+02:35:40,963 --> 02:35:42,183
+Direnç belirlemez mi?
+
+702
+02:35:51,443 --> 02:36:05,603
+Üzerinden geçecek akımı belirleyemiyor. Önemli olan nokta bu. Ama akım kaynağı için tersi söz konusu. Akım kaynağının özelliği zaten devreye o belirtilmiş olan miktarınca akım sağlayabilmesi.
+
+703
+02:36:05,940 --> 02:36:14,159
+Burada da tersini düşünecek olursak, akım kaynağının üzerindeki gerilim düşümünü bağlı olduğu devredeki diğer elemanlar belirliyor.
+
+704
+02:36:14,280 --> 02:36:23,799
+Yani şöyle bir ön kabulümüz olmasın kesinlikle. Bir gerilim kaynağının akım ve gerilim değeri bulunduğu devreden bağımsız olarak sabittir. Böyle bir şey yok.
+
+705
+02:36:24,500 --> 02:36:33,000
+Gerilim değeri sabittir, evet, ideal durumda. Ama o kaynağın, gerilim kaynağının üzerinden geçen akım değeri bağlı olduğu devreye göre değişir.
+
+706
+02:36:34,004 --> 02:36:46,344
+Aynısını akım kaynağı için düşünecek olursak, akım kaynağının sağladığı akım ve üzerindeki gerilim düşümü her devre bağlı olduğu her devre için aynı değildir.
+
+707
+02:36:47,860 --> 02:36:54,580
+Akım kaynağının devreye sağlamış olduğu akım, devre ne olursa olsun fixed, sabit, üzerinde yazan değer.
+
+708
+02:36:55,200 --> 02:37:03,800
+Ama bu eleman üzerindeki, yani akım kaynağı, bağımsız akım kaynağı üzerindeki gerilim düşümü bağlı olduğu diğer devre elemanlarıyla belirlenmiş oluyor.
+
+709
+02:37:03,800 --> 02:37:06,520
+Bu noktaları tekrar hatırlamış olduk.
+
+710
+02:37:07,180 --> 02:37:11,800
+Şimdi bu noktada bir yük kavramı var. Yük kavramı nedir diye bakacak olursak.
+
+711
+02:37:13,203 --> 02:37:24,324
+Yük kavramı, pozitif yüklü atom mertebesindeki pozitif yüklü ve negatif yüklü parçacıklardaki etkileşimi tanımlayan bir kavram.
+
+712
+02:37:25,144 --> 02:37:35,043
+Bir elektronun taşımış olduğu yük miktarı 1.6x10-19kolomb miktarınca tanımlanmış olan bir yapı.
+
+713
+02:37:35,456 --> 02:37:53,896
+Burada bir notasyon bilgisi var. Bu notasyon bilgisini genelleştirerek söyleyelim. Biz dersimiz boyunca kullanacağımız gerilim, akım, yük gibi kavramları eğer büyük harflerle yazıyorsak V, I ve Q gibi
+
+714
+02:37:54,451 --> 02:38:10,491
+Bu şekilde yazıyorsak, bunlar zamana göre değişmeyen anlamında kullandığımız DC koşulları ifade edecek. Eğer ki kullandığımız değişkeni şu harflerle yazıyorsak, bu durumda da zamana bağlı olarak değişen.
+
+715
+02:38:10,995 --> 02:38:26,915
+Zamana bağlı olarak değişenleri de şöyle göstermiş olun. Bazen parantez içerisindeki T düşürülerek kullanılabiliyor. Bunlar ise zamana bağlı değişen değerleri ifade ediyor. Onu tekrar ifade etmiş olalım.
+
+716
+02:38:27,455 --> 02:38:37,876
+Buradaki Q değeri de DC durumdaki bir yük değerini veya küçük Q ise zamana bağlı olarak değişen durumdaki yük miktarını ifade ediyor diyebiliriz.
+
+717
+02:38:41,203 --> 02:39:05,583
+Peki akımla yük arasındaki ilişki ne? Akımla yük arasındaki ilişki şu, birim zamandaki net yük değişimi akım olarak isimlendiriliyor. Yani bizim bir kapalı çevrimimiz olsa bu çevre içerisine dışarıdan giren ve içeriden dışarıya doğru çıkan yüklerin birim zamandaki net miktarı akım olarak isimlendiriliyor.
+
+718
+02:39:06,036 --> 02:39:12,456
+Şimdi ne demiştik? Yük birimi kolomb olarak ifade etmiştik. Zaman birimi saniye olarak ifade etmiştik.
+
+719
+02:39:12,995 --> 02:39:19,495
+Buradan çıkan işlem sonucundaki elde etmiş olduğumuz akım birimi de amper birimiyle ifade ediliyor.
+
+720
+02:39:20,195 --> 02:39:23,515
+Vermiş olduğumuz tanımın matematiksel karşılığı ne olacak?
+
+721
+02:39:24,216 --> 02:39:33,195
+Birim zamandaki net yük değişimi yani delta Q bölü delta T olarak ifade edebiliriz bunu ayrık zamanda.
+
+722
+02:39:33,631 --> 02:39:41,412
+Fakat bunu sürekli bir zamana bağlı, sürekli bir fonksiyon olarak ifade ettiğimizde de diferansiyel olarak bunu ifade edebiliriz.
+
+723
+02:39:41,511 --> 02:39:46,791
+Birim zamandaki net yük değişimi bize akımı veriyor.
+
+724
+02:39:47,331 --> 02:39:51,631
+Aynı formülü diferansiyel olarak yazabildiğimiz gibi integral formda da yazabiliriz.
+
+725
+02:39:52,631 --> 02:39:56,612
+İntegral formda yazarken şöyle hareket edeceğiz.
+
+726
+02:40:00,000 --> 02:40:11,639
+T2 zaman aralıklarında akımdaki toplam değişim yük olarak ifade ediliyor arkadaşlar. Dolayısıyla bunun integral formunda yazılmış halde bu şekilde.
+
+727
+02:40:11,779 --> 02:40:17,159
+Yani şöyle düşünebilirsiniz. D, T'yi karşı tarafa alıp her iki tarafın integralini aldığımızı düşünün.
+
+728
+02:40:17,639 --> 02:40:23,959
+Bu durumda akımın zamana göre integrali net yük miktarını veriyor olacak.
+
+729
+02:40:26,484 --> 02:40:47,064
+Dolayısıyla şu anda ne yapmış olduk? Yük tanımını vermiş olduk. Sonrasında akım tanımını yük'e bağlı olarak vermiş olduk. AC ve DC kavramları ne? Birazcık bunlar geçti konu içerisinde ama ifade etmek gerekirse şöyle ifade edelim.
+
+730
+02:40:47,507 --> 02:41:04,667
+DC dediğimiz Direct Current yani zamana bağlı olarak değişmiyor. Zaman değişse de değeri sabit. Örneğin şöyle bir şey yazdığımızda bir gerilim kaynağımız var. Bu gerilim kaynağımızın değeri 1 volt. V1 isimli bir gerilim kaynağı var. Bunun değeri 1 volt.
+
+731
+02:41:05,023 --> 02:41:11,523
+Zaman ne olursa olsun, hangi zamanda bakarsan bakayım, bunun gerilim değeri 1 volt olarak karşımıza çıkıyor.
+
+732
+02:41:12,223 --> 02:41:19,004
+Yine DC şartlarda kullandığımız tüm değişkenleri büyük harflerle ifade ediyorduk.
+
+733
+02:41:19,103 --> 02:41:20,304
+Onu da hatırlatmış olalım.
+
+734
+02:41:20,923 --> 02:41:22,644
+AC durum ne?
+
+735
+02:41:22,883 --> 02:41:26,463
+AC durum ise Alternating Current olarak isimlendiriliyor.
+
+736
+02:41:26,623 --> 02:41:30,984
+Yani zamana bağlı olarak değişen değişkenleri ifade ediyor.
+
+737
+02:41:33,023 --> 02:41:37,963
+Burada zamana bağlı değişkenleri ifade ederken küçük harf kullanıyoruz.
+
+738
+02:41:37,963 --> 02:41:59,563
+Ve şu şekilde örneğin V1T sinyalini 10 çarpı, 16 oldu ama, sinüs 2PF, F'i de belli belirtelim, 1000 olsun, 1000T.
+
+739
+02:42:00,404 --> 02:42:04,424
+Artı, Pi bölü 2 diye yazabiliriz mesela.
+
+740
+02:42:05,704 --> 02:42:07,344
+Bu, zamana bağlı olarak değişiyor.
+
+741
+02:42:07,443 --> 02:42:09,424
+Çünkü, T'ye bağlı bir fonksiyon.
+
+742
+02:42:10,084 --> 02:42:11,584
+Bu şekilde ifade edebiliriz.
+
+743
+02:42:12,224 --> 02:42:19,904
+Şimdi bu AC kaynağı tanımladık ama, bu AC kaynağın ne tür özellikleri olabilir, ona bir değinmek istiyorum şimdi.
+
+744
+02:42:21,144 --> 02:42:22,064
+Şöyle yapalım.
+
+745
+02:42:42,644 --> 02:42:57,004
+Şimdi şöyle bir senaryoyla karşılaşabiliriz arkadaşlar. Mesela şu iki sinyal arasındaki fark nedir onu sormuş olalım. Bir bu var, ikincisi ise şöyle.
+
+746
+02:43:01,139 --> 02:43:02,899
+Çok uygun bir konuları başlıyor.
+
+747
+02:43:07,156 --> 02:43:08,616
+İkincisi de şöyle olsun.
+
+748
+02:43:13,843 --> 02:43:15,531
+Niye çilemedin bunu?
+
+749
+02:43:23,028 --> 02:43:24,448
+İkincisi de böyle olsun.
+
+750
+02:43:25,867 --> 02:43:27,387
+Bu ikisi arasında ne fark var?
+
+751
+02:43:31,219 --> 02:43:51,799
+Bir de birincinin denklemini şöyle yazayım. Birincinin denklemiş olsun. 5 çarpı sinüs mesela 5t sinüs 10t olsun. Tamamen attım. Bu birincisinin denklemi. Birincinin denklemi nasıl bir şey olabilir?
+
+752
+02:44:08,628 --> 02:44:17,567
+Evet, denklem olarak [öğrenci] cevabı doğru, kabaca. Evet. Ama bu formülize etsek nasıl bir şey olabilir?
+
+753
+02:44:20,087 --> 02:44:28,847
+Yine şunun içerisinde de ikinci şey içerisinde 5 çarpı sinüs 10t gibi bir terim var mı? Yok mu? Ne dersiniz?
+
+754
+02:44:39,123 --> 02:44:41,984
+Evet, var. Peki, aradaki farkı oluşturan şey ne?
+
+755
+02:44:54,227 --> 02:45:17,387
+Bir real sayı eklenmiş, güzel. Evet, cevap gelmiş, çok güzel. Bir sabit değer eklenmiş, evet. Buradaki sabit değerimiz, evet, bu 1, 10, herhangi bir sayı olabilir genel olarak ama biraz daha spesifik bakacak olursak, minimum noktayı sıfıra taşımış. Dolayısıyla bu işaretimiz ne ile ne arasında değişiyor? Eksi 5 ile 5 arasında değişiyor, değil mi?
+
+756
+02:45:18,451 --> 02:45:42,951
+Eksi 5 ile 5 arasında değişiyor. Minimum değeri sıfıra taşıyabilmek için spesifik olarak bahsetmek gerekirse buna artı 5 diye bir eleman eklenir. Bu artı 5 dediğimiz değer bu işaretin DC bileşeni. Bu ise AC bileşeni. Yani karşımıza öyle işaretler çıkabilir ki bu işaretin içerisinde bir DC bileşen ve bir AC bileşen birlikte yer alabilir.
+
+757
+02:45:46,484 --> 02:46:10,963
+Şu işaretimizin DC bileşeni kaç? Görüldüğü üzere 0. Dolayısıyla bunun DC bileşeni 0. DC bileşenin bir başka tanımı da şu. İşaretin bir periyottaki ortalaması.
+
+758
+02:46:21,268 --> 02:46:30,847
+Şu alttaki işarete baktığımızda bir periyot boyunca bu işareti alacak olursak, şuradan şuraya kadar gitti, bu periyodun yarısında pozitif, yarısında negatif.
+
+759
+02:46:31,128 --> 02:46:36,028
+Altında kalan alanları topladığımızda zaten sıfır. Yani sinüzoidal bir işaretin ortalaması sıfırdır.
+
+760
+02:46:36,028 --> 02:46:44,028
+Ama yukarıdaki işaretimizin ortalaması, sinüs bileşeninki sıfır, DC bileşeninki beş. Dolayısıyla bu işaretin komple...
+
+761
+02:46:44,244 --> 02:46:56,783
+ortalaması 5 volt olmuş oluyor. Bu ikisi bir AC-DC işaret arasındaki temel farklardan birisi. Bir başka örnek verelim. Yine şöyle çizmeye çalışalım.
+
+762
+02:46:56,783 --> 02:46:59,704
+Şunu.
+
+763
+02:47:01,384 --> 02:47:03,543
+Aa çok güzel şansımıza.
+
+764
+02:47:12,948 --> 02:47:17,368
+Şöyle bir işaretimiz olsun, ikinci işaretimiz. Yine birinci işaretimizi şöyle yazıyoruz.
+
+765
+02:47:18,868 --> 02:47:26,427
+Şu birinci işaretimiz, 5 çarpı sinüs 10t gibi bir işaret bu.
+
+766
+02:47:28,288 --> 02:47:29,887
+Şu ikinci işaretimiz nasıl bir şey?
+
+767
+02:47:32,768 --> 02:47:35,168
+Frekansı değişti değil mi bunun frekansı?
+
+768
+02:47:36,128 --> 02:47:39,448
+Genliği de değişmiş, genliğini değiştirmeyecektim aslında. Şöyle yapayım.
+
+769
+02:47:47,219 --> 02:47:55,040
+O çok mümkün olmuş. Neyse, ikisi de var olsun. Tamam. Ondan kaçamadık. Şu ikinci işaretimizin denklemi nasıl bir şey?
+
+770
+02:48:01,907 --> 02:48:23,367
+Evet, cevap kesinlikle doğru. Hem bunun, bakın alttaki işaret eksi 5 artı 5 arasında değişirken, üstteki işaret 10 çarpı, mesela 10, 5 farklı bir değere kadar gidiyor. Daha yüksek bir değere kadar dalgalanıyor. Birincisi bu, sinüs. Ama şey içerisinde baktığımızda da bunun frekansı yavaşlamış.
+
+771
+02:48:24,180 --> 02:48:31,239
+Yavaşlamış, frekansı yavaşlamış. O zaman şuradaki değerimizin de bir küçülmesi lazım. Yani 5T gibi bir şey olacak.
+
+772
+02:48:31,959 --> 02:48:40,979
+Yani sıfırla 2P arasındaki değeri geçmesi T'nin değişimiyle daha uzun süre alıyor. Yani bir periyodu tamamlaması artık daha uzun süre alıyor.
+
+773
+02:48:41,619 --> 02:48:47,200
+Dolayısıyla bu da frekansımızın değiştiği bir senaryoya karşılık geliyor. Bir başka örnek çizelim şimdi.
+
+774
+02:48:54,100 --> 02:48:55,520
+Aynısını aldım.
+
+775
+02:49:00,020 --> 02:49:00,979
+Şöyle koydum.
+
+776
+02:49:03,380 --> 02:49:04,460
+Görebildiniz değil mi?
+
+777
+02:49:06,040 --> 02:49:08,020
+Birazcık kaydedeyim. Bu işareti aldım.
+
+778
+02:49:10,360 --> 02:49:11,580
+Şöyle koydum.
+
+779
+02:49:12,659 --> 02:49:13,560
+Pardon nasıl koyayım?
+
+780
+02:49:14,060 --> 02:49:15,560
+Şöyle koyalım mesela daha net.
+
+781
+02:49:18,000 --> 02:49:25,120
+Birinci işaretimizin denklemi yine 5 çarpı sinüs işte 10T gibi bir şey.
+
+782
+02:49:26,420 --> 02:49:29,100
+Peki şu ikincinin denklemi nasıl bir şey?
+
+783
+02:49:32,628 --> 02:49:59,087
+Ne dersiniz? Frekansı değişmedi. Genliği değişmedi. Evet. Bir miktar kaydı. İşaretimiz bir miktar kaydı. Nerede kaydı? Zamanda kaydı. Zamanda kayma faz açısı olarak karşımıza çıkıyor. Dolayısıyla bu 5 çarpı sinüs 10T artı fi gibi bir değere tekabül ediyor. Fi değeri şunu getiriyor. Normalde biz
+
+784
+02:50:00,000 --> 02:50:20,540
+T eşittir sıfırdayken sinüs sıfırı elde ediyorduk. Fakat bu sefer T eşittir sıfırdayken sinüs fi'yi elde ediyoruz. Dolayısıyla sinüs sıfıra gelebilmek için T'nin biraz daha zaman geçirmesi lazım. Yani bunlar birbirini ilerili gerili bir şekilde takip ediyor. Ama genlikleri aynı, frekansları aynı. Sadece zamanda bir fi kadar kaymaları var.
+
+785
+02:50:20,540 --> 02:50:27,040
+Fi kadar kaymaları var. Başka neyi konuşabiliriz burada?
+
+786
+02:50:27,924 --> 02:50:37,644
+DC bileşenini söyledik, frekansını söyledik, genliği söylemiş olduk. Dolayısıyla genel olarak bir sizörünen işaretteki dört farklı parametreyi ifade etmiş olduk arkadaşlar.
+
+787
+02:50:38,864 --> 02:50:41,103
+Tekrar slide'larımıza geri dönelim.
+
+788
+02:50:44,603 --> 02:50:54,943
+Şimdi ne yapmıştık başta? Yük demiştik, akım demiştik. Peki voltaj ne? Gerilim potansiyel nedir diye bakacak olursak.
+
+789
+02:50:55,247 --> 02:51:05,067
+Potansiyel aslında bir birim yükü belirli bir miktar hareket ettirecek enerji birimi.
+
+790
+02:51:06,067 --> 02:51:15,608
+Bir miktar, bir yükü, bir birim yükü belirli bir mesafe ilerletecek olan enerji birimi.
+
+791
+02:51:16,275 --> 02:51:23,736
+Aslında onun potansiyelini belirtiyor. Potansiyel ne kadar yüksekse, o yükü, bir birimlik yükü o kadar fazla mesafe hareket ettirebilir.
+
+792
+02:51:26,515 --> 02:51:36,255
+Dolayısıyla bunu tanımlarken potansiyel farkı, enerjideki değişim ve yükteki değişimle bunu ifade edebiliriz.
+
+793
+02:51:36,255 --> 02:51:39,255
+Birim zamandaki, pardon, birim yükü.
+
+794
+02:51:39,796 --> 02:51:58,015
+Belirli bir miktar boyunca hareket ettirmek için harcadığımız güç dediğimizde veya enerji dediğimizde potansiyel farkını oluşturabiliyorsak potansiyel aslında enerjinin, DW enerjinin değişimi, yükteki değişime oranı şeklinde ifade edebileceğimiz bir senaryoya karşılık geliyor.
+
+795
+02:51:58,015 --> 02:52:00,775
+Bunu bir adım daha ileri götürecek olursak,
+
+796
+02:52:02,772 --> 02:52:08,912
+Gücü nasıl tanımlayacağız? Güç de normalde bildiğimiz şekliyle birim zamandaki enerji tüketimiydi.
+
+797
+02:52:09,512 --> 02:52:17,992
+Dolayısıyla birim zamandaki enerji tüketimini açacak olursak, bunu DQ ile çarpıp bölecek olursak ve yeniden düzenleyecek olursak,
+
+798
+02:52:17,992 --> 02:52:28,812
+birim zamandaki potansiyel değişimi ve birim zamandaki akım miktarı, yani gerilim çarpı akım,
+
+799
+02:52:29,167 --> 02:52:33,387
+Güç olarak hesaplayabileceğimiz bir denklem olarak karşımıza çıkıyor.
+
+800
+02:52:33,907 --> 02:52:43,148
+Daha önceki slaytlarda gücün akım çarpı gerilim olduğunu, eksi 3 watt artı 3 wattlık slaytta değinmiştik ama burada tam tanım olarak vermiş oluyoruz.
+
+801
+02:52:43,148 --> 02:52:46,768
+Güç dediğimiz şey, birim zamandaki tüketilen enerji.
+
+802
+02:52:47,347 --> 02:52:54,148
+Dolayısıyla onu DQ ile çarpıp ürüp 7'den yazacak olursak, birim zamandaki net yük değişimiyle,
+
+803
+02:52:54,548 --> 02:53:00,728
+Birim yük için harcanan güç miktarını ifade ettiğimiz iki denklem birisi gerilim, birisi akım.
+
+804
+02:53:00,848 --> 02:53:06,828
+Dolayısıyla gücü elektriksel olarak akım çarpı gerilim olarak ifade etmemiz mümkün.
+
+805
+02:53:07,828 --> 02:53:14,368
+Son olarak da enerji neydi? Enerji, belirli bir zaman aralığında harcamış olduğumuz toplam güçtü.
+
+806
+02:53:14,927 --> 02:53:19,708
+Dolayısıyla gücün belirli bir zaman aralığındaki integrali enerjiyi verecek.
+
+807
+02:53:20,115 --> 02:53:26,216
+Bu gücü de yazarken gerilim çarpı akım şeklinde de yazmamız mümkün. Dolayısıyla onları düzenleyebiliriz.
+
+808
+02:53:28,135 --> 02:53:30,916
+Bir sonraki slide'lara geçmeyi burada bırakalım.
+
+809
+02:53:32,036 --> 02:53:35,335
+Buraya kadar olanlarla ilgili sormak istediğiniz bir soru var mı arkadaşlar?
+
+810
+02:53:36,475 --> 02:53:37,475
+Onu alalım varsa.
+
+811
+02:53:42,644 --> 02:54:00,904
+Google Classroom oluşturduktan sonra size duyuru olarak da ileteceğim. Sonrasında bütün slide'larımızı Google Classroom üzerinden paylaşıyor olacağız. Yine dersle ilgili bir şey sormak istediğinizde Classroom üzerinden sorabileceksiniz.
+
+812
+02:54:01,327 --> 02:54:23,187
+Herkesin gördüğü bir ortam olduğu için soruyu bir kere sorup cevabı bir kere verip çokça kişinin sorusunu yanıtlamış olmak mümkün. O yüzden dolayı böyle bir şey tercih ediyoruz. Yine lablarla ilgili olarak bütün duyuraları da yine Google Classroom üzerinden devam ettiriyor olacağız. Bunu da tekrar hatırlatmış olayım. Sormak istediğiniz bir şey var mı arkadaşlar? Tekrar sormuş olayım bu arada.
+
+813
+02:54:25,808 --> 02:54:27,487
+Hocam ben bir şey sorabilir miyim?
+
+814
+02:54:27,487 --> 02:54:28,108
+Buyurun.
+
+815
+02:54:28,595 --> 02:54:44,275
+Genel olarak dersle alakalı. Hocam ders bir tıp, bilmiyorum benim için mi, biraz ağır geldi ama bu derste hani özellikle terimler ve formüler konusunda hani önerebileceğiniz bir şey var mı? Ya da dersi daha iyi anlamamız için çalışabileceğimiz kaynaklar var mı önerebileceğiniz ekstradan?
+
+816
+02:54:45,172 --> 02:55:10,572
+Ekstradan şunu söyleyebilirim. Dersin referans kaynaklarımızı işaret etmiştim ya ders tanıtım formunda. Oradaki referans kaynakları okulumuz Türk Akademi miydi? Öyle bir şeye üye. Oradan yayın evlerinin ders kitapları online olarak erişilebiliyor. Oradan yararlanabilirsiniz. Yani ders kitapları oldukça anlatım olarak.
+
+817
+02:55:10,992 --> 02:55:26,092
+Başarılı kitaplar, onlardan faydalanabilirsiniz. Türkçe kaynak olarak da referans olarak kullanmış olduğumuz kitapların Türkçe'ye çevrilmiş halleri var. Onları kullanabilirsiniz. Yani bu ilk ders şundan dolayı biraz karmaşık gelmiş olabilir.
+
+818
+02:55:26,963 --> 02:55:41,943
+Çokça girişe ilişkin, introduction'a ilişkin çokça terimimiz var. Ondan dolayı böyle hissedilmiş olabilir. Daha sonraki derslerde daha fokuslu bir şekilde ilerleyeceğiz. Daha derli toplu olacak, onu söyleyelim.
+
+819
+02:55:48,691 --> 02:55:50,471
+Var mı arkadaşlar başka bir sorumuz?
+
+820
+02:55:56,724 --> 02:56:10,763
+Yoksa teşekkür ediyorum arkadaşlar. Haftaya görüşmek üzere. Lablarla ilgili gelişmeler oldukça, klasmumla ilgili değişmeler oldukça ben de bunları duyuruyor olacağım. Herkese iyi günler. Haftaya görüşmek üzere arkadaşlar.
+
+821
+02:56:11,384 --> 02:56:12,884
+İyi günler hocam. Görüşürüz.
