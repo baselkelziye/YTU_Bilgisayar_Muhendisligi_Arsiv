@@ -1,0 +1,987 @@
+1
+00:00:02,676 --> 00:00:07,435
+Olu, su
+
+2
+00:11:20,403 --> 00:11:22,144
+Merhaba arkadaşlar, sesim geliyor mu?
+
+3
+00:11:23,624 --> 00:11:25,583
+Evet hocam, günaydın.
+
+4
+00:11:26,364 --> 00:11:26,963
+Günaydın.
+
+5
+00:11:28,943 --> 00:11:30,563
+Evet, uzun bir ara oldu.
+
+6
+00:11:32,283 --> 00:11:35,604
+Önce bayram tatili, sonrasına vaftası.
+
+7
+00:11:35,604 --> 00:11:41,004
+İki hafta sonra tekrar görüştük. Hepinize hayırlı cumalar diliyorum.
+
+8
+00:11:42,703 --> 00:11:45,463
+Bu haftaki dersimize hızlıca başlayalım.
+
+9
+00:11:46,196 --> 00:11:57,196
+Önce ekranımızı paylaşalım bakalım. Evet. Şunu küçültelim. Şunu büyültelim. Tamam.
+
+10
+00:12:05,460 --> 00:12:06,379
+Evet arkadaşlar.
+
+11
+00:12:10,196 --> 00:12:27,716
+Hatırlayacağınız gibi yönetimsel hususlara başlamıştık. Altı haftalık bir konuydu. İşte madem biz güvenliği bir bütüncül olarak değerlendireceğiz. O yüzden güvenlik yönetimi üzerinde birazcık duralım dedik.
+
+12
+00:12:36,559 --> 00:12:49,919
+Dijital olarak ya da network ortamında tehdit altında olabilecek bir firmanın güvenlik değerlendirmesi, risk değerlendirmesi, nasıl yapılır? Fiziksel altyapı güvenliği insan kaynakları.
+
+13
+00:12:50,323 --> 00:13:15,683
+Ve güvenliği nasıl garanti altına alınır? Bunları geçmiş haftalarda tamamladık. En son güvenlik denetimi ya da auditing konusunu vermiştik. Şimdi yönetimle alakalı son husus ne arkadaşlar? Yasal, hukuki. Çünkü insanlar güvenlikle alakalı tedbirleri niye alır?
+
+14
+00:13:17,076 --> 00:13:42,756
+Çünkü varlığı üzerinde varlığını kaybetmemek için. Kendisi için değerli olan bir patent olabilir, bir çalışması olabilir, bir müşteriyle alakalı bilgiler olabilir, mali kayıtları olabilir. Bunları kaybetmemek için yapar. Ama bunun bir de yasal güvencesi olması gerekir. Dolayısıyla tedbirleri alır ki olur da bir şey olduğu zaman yasal olarak haklarını savunabilsin.
+
+15
+00:13:45,395 --> 00:13:58,395
+Güvenlikle alakalı tedbirler yasal bir zorunluluk olduğu için alınmak zorundadır. Mesela bir bankasınızdır ya da bir belediyesinizdir. Dolayısıyla kamunun bilgilerini...
+
+16
+00:13:59,220 --> 00:14:18,100
+Siz tutuyorsunuzdur. Dolayısıyla başkalarınız altına ait bilgileri, varlıkları zarara uğramasını önlemek adına hukuki yükümlülükleriniz vardır. Dolayısıyla bu hafta biz yasal ve etik hususları irdelemiş olacağız.
+
+17
+00:14:19,160 --> 00:14:24,660
+Önce siber suçlar ve bilgisayar suçlarını hukuki olarak tanımlayacağız.
+
+18
+00:14:27,572 --> 00:14:49,892
+Dünyada nasıl tanımlanıyor, Türkiye'de nasıl tanımlanıyor? Fikri ve sınayi mülkiyet haklarından bahsedeceğiz. Patentlerden, trademarklardan bahsedeceğiz. Sonra mahremiyet kavramını verip en son etik hususlarla bu haftaki içeriğimizi tamamlanmış olacağız.
+
+19
+00:14:51,923 --> 00:15:06,923
+Bilgisayar suçları, Amerikan Adalet Sisteminde yani Adalet Bakanlığı bilgisayar suçlarını bilgisayarın oynadığı role bağlı olarak üç ana kısımda değerlendirmektedir.
+
+20
+00:15:13,331 --> 00:15:32,751
+Saldırı hedef olduğu suçlar nedir? Mesela bilgisayarınız vardır, veri sisteminiz vardır. Onun içerisindeki verinin bütünlüğüne ya da sistemin bütünlüğüne, tuttuğunuz verinin gizliliğine, mahremetine veya kullanabilirliğine yönelik saldırılardır.
+
+21
+00:15:37,011 --> 00:15:50,091
+Saldırın hedefi doğrudan bilgisayar sistemi ya da bilgisayar kendisi ya da bilgisayarın iç içeriği olan saldırılardır. İkinci tür saldırılar depolama aygıtı olarak bilgisayarın olduğu saldırı.
+
+22
+00:15:51,011 --> 00:16:03,731
+Mesela nedir? Aslında hedef bilgisayar değildir. Bilgisayarın içerisinde gizli bilgiler vardır. Nedir mesela? Kişilere ait paralolar vardır.
+
+23
+00:16:03,892 --> 00:16:16,772
+Kredi kartı bilgileri vardır. Ya da çalışanların sicil bilgileri vardır. Sağlık bilgileri vardır. Şirkete özel bilgiler vardır. Ya da tersi.
+
+24
+00:16:17,135 --> 00:16:42,735
+Siz depolanacak aygıtta, siz yasal olarak suç olanları depoluyorsunuzdur. Bu pornografik görüntüler olabilir, korsal ticari yazılımlar olabilir. Bunları depolamak ve dağıtmak için kullanıyorsunuzdur. Dolayısıyla bu da ikinci tür suç oluşturuyor. Birisi bilgisayarın hedef olduğu suçta, ikincisi depolama aygıtı olarak bilgisayar.
+
+25
+00:16:43,827 --> 00:17:02,467
+Sisteminize, bilgisayarınızda yasal olmayan içerik bulunduruyorsunuz. Bu suçlar ikinci kategori. Üçüncü kategori ise iletişim aracı olarak bilgisayarın kullanıldığı suçlar. Nedir mesela? Dolandırıcılık, kumar, çocuk pornografisi.
+
+26
+00:17:03,251 --> 00:17:18,092
+Reçeteli ilaçların ya da kontrollü maddelerin, alkolün, silahın yasa dışı çevrim olarak satılması. Bu da iletişim aracı olarak bilgisayarın kullanıldığı suçlardır.
+
+27
+00:17:18,092 --> 00:17:19,231
+Depolamak.
+
+28
+00:17:20,051 --> 00:17:37,091
+Ayrı suç kategorisinde bunu dağıtmak olarak bilgisayarı kullanmak ayrı suç kategorisinde. Dolayısıyla Amerika bilgisayar suçlarını bilgisayarın oynadığı role bağlı olarak 3 grupta değerlendirmektedir.
+
+29
+00:17:41,940 --> 00:18:05,612
+Türkiye'de işler nasıl işliyor? Türk Ceza Kanunu açısından siber suçlar. Amerika'daki gibi üç temel ayrım yok ama TCK'da bu siber suçlar Türk Ceza Kanunu'nda değişik maddelerinin değişik bentlerinde, değişik maddelerde ve...
+
+30
+00:18:05,715 --> 00:18:20,935
+Bazı maddelerin değişik benden de tanımlanmış. Ama dediğim gibi Amerika'daki gibi bir kesin bir ayrım söz konusu değil. Mesela bilişim sistemine girme suçu. TCK madde 243'te tanımlanmış.
+
+31
+00:18:31,316 --> 00:18:34,675
+TCK madde 224'te tanımlanmış.
+
+32
+00:18:36,296 --> 00:18:45,875
+Banka veya kredi kartının kötüye kullanılması 245'te yasak cihaz ve program kullanma suçu.
+
+33
+00:18:45,875 --> 00:18:48,875
+O da 245A'da.
+
+34
+00:18:49,776 --> 00:18:52,276
+Müstehcenlik ayrı bir suç.
+
+35
+00:18:52,592 --> 00:19:06,572
+O da 226'da, pornografi 226'da tanımlanmış. Dolayısıyla Amerika'daki gibi öyle ayrım yok. Değişik maddelerin, değişik bendelerin de ayrı ayrı tanımlanmış suçlar.
+
+36
+00:19:06,572 --> 00:19:12,012
+Peki, siber suçlar. Avrupa Konseyi'nde nasıl?
+
+37
+00:19:16,627 --> 00:19:26,548
+Avrupa Konseyi tarafından geliştirilmiş ve Amerika Birleşik Devletleri ve Türkiye dair 43 devlet tarafından onaylanmış bir akt var.
+
+38
+00:19:27,827 --> 00:19:31,387
+Buna göre siber suçlar nasıl kategorilenmiş?
+
+39
+00:19:31,987 --> 00:19:35,447
+Birinci madde iki de yasa dışı erişim tanımlanmış.
+
+40
+00:19:35,447 --> 00:19:39,008
+Diyor ki, bir bilgisayar sisteminin tamamına.
+
+41
+00:19:39,347 --> 00:19:58,147
+Veya herhangi bir kısmına hak olmaksızın erişim suçtur diyor yasa dışı erişim olarak. Bunun suçu tanımlıyor ama ülkeden ülkeye ne kadar ceza verildiğiyle alakalı ülkten ülkeye değişiyor. Ama bu akt tanımlanmış.
+
+42
+00:20:02,003 --> 00:20:28,003
+Mesela marka 3'te yasa duşu durdurma, bir tür bilgisayar verisini taşıyan bir bilgisayar sisteminde elektromanyetik emisyonlar da dahil olmak üzere, yani fiziksel müdahaleler de dahil olmak üzere, bilgisayar verilerinin bir bilgisayar sistemine, sistemden veya bilgisayar sisteminin içerisinden kamuya açık olmayan aktarımlarının
+
+43
+00:20:28,980 --> 00:20:48,079
+Teknik olarak kesilmesi, yani iletişimin engellenmesi. Madde 24'te ise veriye müdahale tanımlanmış suç olarak. Bilgisayar verisinin haksız yere zarar görmesi, silinmesi, bozulması. Madde 5'te sisteme müdahale.
+
+44
+00:20:51,604 --> 00:21:04,044
+Bilgisayar verilerine girilerek, iletilerek, zarar vererek, silerek, bozarak, değiştirerek veya gizleyerek bir bilgisayar sisteminin işleyişini hak olmaksızın engellemek.
+
+45
+00:21:04,627 --> 00:21:28,827
+Madde 7'de bilgisayarlarla alakalı sahtecilik tanımlanmış bilgisayar kullanılarak nedir? Bilgisayar verilerinin girilmesi, değiştirilmesi, bilgisayardaki silinmesi veya gizlenmesi verilerin doğrudan okunabilir veya anlaşılıp olmadığına bakılmaksızın yasal amaçlar doğrultusunda gerçekmiş gibi değerlendirilmesine.
+
+46
+00:21:29,332 --> 00:21:40,332
+Veya üzerinden işlem yapılması amacıyla gerçek olmayan verilerle sonuçlandırılmasına sebebiyet vermek bilgisayarla sahtecilik olarak tanımlanmış.
+
+47
+00:21:55,731 --> 00:22:05,211
+Satılması nedir mesela? İki ile beş maddeler uyarınca belirlenen suçlarda herhangi birini işlemek amacıyla cihazlar.
+
+48
+00:22:06,251 --> 00:22:13,731
+Madde sekizde bilgisayarla ilgili dolandırıcılık. Başka bir kişinin malına...
+
+49
+00:22:14,288 --> 00:22:24,268
+Aşağıdaki şekillerde kaybetmese sebebiyet vermek. Nedir mesela? Bilgisayar verilerinin herhangi bir girişi değiştirilmesi veya silinmesi.
+
+50
+00:22:24,268 --> 00:22:38,407
+Ya da bir bilgisayar sisteminin işleyişine hileli ve dürüst olmayan bir şekilde kendisi veya başka birisi için ekonomik bir fayda kazanmak amacıyla herhangi bir şekilde müdahalesin.
+
+51
+00:22:39,284 --> 00:22:50,764
+Madde 9'da çocuk pornografisiyle ilgili suçlar nedir mesela? Bir bilgisayar sistem aracılığıyla bu çocuk pornografisini dağıtmak, amacıyla çocuk pornografisi üretmek.
+
+52
+00:22:51,251 --> 00:23:10,731
+Bilgisayar Sistem aracıyla çocuk pornografisi sunmak ve sağlamak, bunları dağıtmak, iletmek, kendisi veya başkası adına bilgisayar sistem aracıyla çocuk pornografisi temin etmek, bilgisayar sisteminde veya bilgisayar veril toplama ortamında çocuk pornografisi bulundurmak, suç madde 9'da.
+
+53
+00:23:10,731 --> 00:23:17,371
+Madde 11'de ise yardım ve yataklık, teşöbbüs veya yardım veya yataklık.
+
+54
+00:23:17,875 --> 00:23:36,796
+Bu sözleşmenin ilgili maddeleri uyarınca belirlene, yani birden ona kadar maddeler boyunca belirlene, suçların herhangi birinin bu tür bir suçun işlenmesi niyetiyle yardım ve yataklık etmek de suç olarak tanımlanmış arkadaşlar.
+
+55
+00:23:36,796 --> 00:23:42,036
+Peki, şuna niye kusulamıyorum? Bir dakika arkadaşlar.
+
+56
+00:23:59,635 --> 00:24:19,855
+Sert'in 2007'de E-Suç izleme anketinin sonuçlarına bir bakalım arkadaşlar. Bunların işte en çok olanlarının işlenen net yüzdesi içeriden mi geliyor, dışarıdan mı geliyor ya da konumu belirsiz.
+
+57
+00:24:27,347 --> 00:24:53,327
+Oluşturuyor ve bunların yüzde kırk altısı dışarıda. Bilgileri, sistemleri veya ağlara yetkisiz erişimin yüzde otuzu dışarıdan yüzde yirmi beşi. Burada dikkat edersek dışarıdan, içeriden oranları ya da belirsiz olanlarına göre en çok ne taraftan gelmektedir? Mesela web sitesi tahribatının yüzde on dördü dışarıda.
+
+58
+00:24:54,804 --> 00:24:55,628
+Tamam.
+
+59
+00:24:59,155 --> 00:25:04,215
+GASP %9 ve diğer de tanımlanmış durumda.
+
+60
+00:25:07,215 --> 00:25:19,395
+Yasada uygulamada zorluklar. Bu kadar güzel, siber suçlar yaygın. Peki, niye hala yaygın ve önlem alınamıyor?
+
+61
+00:25:21,140 --> 00:25:35,400
+En basit, en temel sebebi kolluk kuvvetlerinin bilgisayar ve ağ saldırıları üzerindeki caydırıcı etkisi, cezayı tutuklama ve konuşturmanın başarı oranıyla ilişkidir.
+
+62
+00:25:38,771 --> 00:25:57,771
+Bunun için de başarılı olabilmesi için kolluk kuvvetlerinin huşu yakalaması lazım ve hükücü olarak cezalandırması lazım. Ama biz neden bahsediyoruz? Bir networkten bahsediyoruz. İnternet dediğimiz zaman ağların ağı. Dolayısıyla normalde global bir...
+
+63
+00:25:58,451 --> 00:26:25,391
+Mekanizmadan bahsediyoruz ve VPN'lerle şunlarla bunlarla konumu gizlemeden. Dolayısıyla kolu kuvvetinin yaşadığı zorluklar ne? Önce bu tür suçlarla mücadele konusunda bilgili ve deneyimli personel eksikliği bence en temel sebebi bu. İkincisi bunları araştırabilecek yeterli derecede teknoloji altyapısının ve bütçesinin eksikliği.
+
+64
+00:26:26,612 --> 00:26:50,612
+Bu iki ana sebep. Bunun yanında siber suçların doğası gereği küresel. Yani saldırı dünyanın herhangi bir noktasından gelebilir. Ve diyelim ki ise bir saldırı oldu. Nereden geldi? Kuzey Korodan geldi ya da işte Rusya'dan geldi. VPN kullandı oradan buradan geldi. Dolayısıyla bu suçlu yakalayabilmek için...
+
+65
+00:26:51,251 --> 00:27:04,235
+Uzak ülkelerdeki kolluk kuvvetleriyle işgüdü, birliği ve eşgüdüm halinde bunu ve bunu real time yapman lazım. Bunun eksikliği. Yakalayamazsan...
+
+66
+00:27:05,076 --> 00:27:28,135
+İletim ile cesaretlenir doğal olarak. Siber Suçlar Sözleşmesi, suçlar için ortak bir terminoloji ve yasaların küresel olarak uyumlu hale getirilmesi için bir çerçeve sunmaktadır ki biraz önce o liste dediğimiz Avrupa Birliği tarafından hazırlanan ve Amerika dair 43 ücret tarafından kabul edilen, tamam da dünyada 43 tane ülke yok ki.
+
+67
+00:27:29,491 --> 00:27:36,971
+Evet değil mi? Dolayısıyla suçların tanımlanması, sonra ülkelerdeki yasalarla bu suçların cezalandırılması gerek.
+
+68
+00:27:38,032 --> 00:27:40,791
+Peki, gelinim siber suçlar.
+
+69
+00:27:45,011 --> 00:28:01,011
+Sibel suçluların adaleti teslim etmedeki başarısızlık, dolayısıyla sayılarının ve cesaretlerinin ve operasyonların küresel ölçeğinin artmasına sebebi olmuştur.
+
+70
+00:28:08,703 --> 00:28:28,703
+Sayıları çok fazla. Hatta botlarla, zombilerle hiç haberiniz olmadan bir haliyle siz de saldırıya alet olabiliyorsunuz. Dolayısıyla siper suçlarım. Şimdi mesela adi suçlarda polisler ne yapar ya da kollu kuvvetleri suçlu profili oluşturur.
+
+71
+00:28:36,819 --> 00:29:02,240
+Ama siper suçların kesin bir profili yok. Ve daha çok bunlar genç ve çok bilgisayar meraklısı olma eğilimindeler ve bilgisayarı kullanıyorlar, kafaları çalışıyor ve bu bilgisayardaki bu yeteneklerini bir kısmı gelir elde etmek için değil, kendi bir yeteneklerini göstermek için yapıyor.
+
+72
+00:29:06,996 --> 00:29:24,115
+Profil oluşturmak için daraltamıyorsun davranışsal özelliklerin aralığı geniş ve muhtemel şüphelilere işaret edebilecek hiçbir siber suçlu veri tabanı da şu ana kadar maalesef mevcut değil arkadaşlar.
+
+73
+00:29:26,935 --> 00:29:28,155
+Bir de öbür tarafına bakalım.
+
+74
+00:29:34,451 --> 00:30:00,000
+Siber suçluların başarısından ve kolluk kuvvetlerinden başarısızlığından etkileniyor. Dolayısıyla bir kabullenmişlik var. Mesela ransomware'ler ya da fit diye yazılımlar ne yapıyor? Sisteme giriyor, verilerinizi şifreliyor. Eee verileriniz gitti, ne yapacaksınız? Kuzu kuzu gidiyorsun, parayı ödüyorsun. Bu kuruluşun çoğu saldırganları önleme...
+
+75
+00:30:00,000 --> 00:30:18,960
+Bu yüzden teknik, fiziksel ve insan faktörü kaynaklarına yeterince yatırım yapmamışlar. Çünkü tamam ciddi paralar harcamışlar ama siber güvenlikle alakalı her zaman en son düşünülmüş ve çoğu zamanda saldırı oluncaya kadar ihmal edilmiş durumdalar.
+
+76
+00:30:25,296 --> 00:30:46,436
+Ve hukuki sorumlulukla ilgili endişeler nedeniyle ihbar oranı da düşük. Yani saldırı gerçekleşiyor. Yatırım yapmamışsınız. Sonra aman ben saldırıya uğradım, müşterimin gözünde kötü hale gelirim beklentisiyle ihbar dahi etmiyor. Sineye çekiyorlar arkadaşlar.
+
+77
+00:30:51,476 --> 00:31:08,156
+Biz burada nasıl kollu kuvvetleriyle çalışılmalı? Bunun üzerinde de üst düzey yönetim, yani firmaların kurumlarının üst düzey yönetimi ve güvenlikle alakalı yöneticiler yasa uygulamalarını bir kaynak ve araç olarak görmelidir.
+
+78
+00:31:08,156 --> 00:31:18,916
+Yani güvenlik tedbirlerinin bir parçası da aslında yasa ve yasaların uygulamaları, yasa yönetmelik ve bunların uygulamaları. Dolayısıyla yönetim ne yapmalı?
+
+79
+00:31:20,051 --> 00:31:35,951
+Bir, nasıl adli bir soruşturma süreci oluşturulur? Yasalarda ne tür haklarımız var ve bunu takip etmek için ne tür teknik alaçlardan bilgiler ihtiyacımız var? Bunları anlamalı.
+
+80
+00:31:40,596 --> 00:31:57,596
+Yani bilirkişilerin, hakimlerin soruşturma sürecinde ihtiyaç duyacağı girdileri de anlamalı ki onları tedarik edebilmeli ve mağdurun da soruşturma ve olumlu katkı sağlayabileceğini farkına varmalıdır.
+
+81
+00:31:58,096 --> 00:32:06,096
+Yani mağdur olduğunu söyleyebilmeli ki bunlarla alakalı araştırma ve takip yapılabilirsin.
+
+82
+00:32:06,675 --> 00:32:12,895
+Şimdi bir başka konuya gelelim. Entelektüel property ile.
+
+83
+00:32:16,403 --> 00:32:21,183
+Bu neler? Patentler, ticari markalar ve copyrightler.
+
+84
+00:32:21,963 --> 00:32:28,624
+Değil mi? Şimdi, başlayalım. Copyright ya da telif hakları Türkçesi.
+
+85
+00:32:28,624 --> 00:32:42,963
+Bir fikrin somut veya sabit ifadesini korur. Bir fikrin somut ya da sabit ifadesini korur. Amca fikrin kendisini korumaz copyright.
+
+86
+00:32:43,263 --> 00:33:00,603
+Ve yaratıcı, yani bu fikrin oluşturucusu aşağıdaki durumlarda copyright'i, telif hakkını talep edebilir ve ulusal bir devlet telif hakkı ofisinde bunun dosyalanmasını sağlayabilir.
+
+87
+00:33:00,603 --> 00:33:08,563
+Nedir bu senin telif hakkı alınması için? Bir, bu çalışma orijinaldir ve benimdir.
+
+88
+00:33:11,412 --> 00:33:36,392
+Oluşturucu bu orijinal fikri somut bir forma sokmuştur. Bunu ne yapar? Uluslararası copyright'ta ofisinde bunu tescil ettirir. Ettirdiği zaman bu fikrin oluşturucunun kendisi olduğunu ve fikrin kendisini değil, sabit, somut ifadesini koruma altına alır.
+
+89
+00:33:36,688 --> 00:33:50,468
+Ama o fikir başkaları tarafından aksesine kullanılabilir mi? Kullanılabilir. Yaptıktan sonra karşı hukuki mücadele vermek gerekir. Peki, tehlif hakkı neleri verir? Tehlif hakkı sahibi.
+
+90
+00:33:51,635 --> 00:34:14,315
+Bunu ihlale karşı korunan bir minhasır haklara sahiptir. Nedir? Tehlif hakkı kendi ürettiğini çoğaltma hakkı vardır. Değişiklik yapma hakkı vardır. Dağıtım hakkı vardır. İsterse herkese gösterme ya da herkese açık yerde görüntüleme hakkı vardır. Peki neler tehlif hakkı olabilir?
+
+91
+00:34:19,539 --> 00:34:46,420
+Birincisi edebi çalışmalar, romanlar, hikayeler, şiirler, müzikal eserler, dramatik eserler, pandonimler ve karagrafik eserler, resim, grafik, heykel çalışmaları, hareketli resimler ve diğer görsel işçisel eserler, ses kayıtları, mimari işler.
+
+92
+00:34:47,155 --> 00:35:10,476
+Ve yazılım. Yazılım biraz komik gelir arkadaşlar. Yazılımda bir şey yazdığınız zaman bunu roman gibi copyright alabilirsiniz. Ama ne derece konur o da şeydir. Gidersiniz biraz alanları değiştirirsiniz. Ondan sonra aynı işi öğrendikten sonra başka türlü yapabilirsiniz. Dolayısıyla yazılım işi hala sıkıntı.
+
+93
+00:35:15,956 --> 00:35:35,956
+Patent, mucide, o işle alakalı bir mülkiyet hakkı verir. Ve başkalarının bu buluşu ilgili ülkede, yani Amerika Birleşik Devletleri, Amerika'da, Türkiye'de almışsa, Türkiye'de yapmasını, yani o iş icat edilen yapmasını, kullanmasını ve satmasını...
+
+94
+00:35:37,780 --> 00:35:43,840
+Veya buluşu başka bir ülkeye ithal etmesini engelle.
+
+95
+00:35:44,740 --> 00:35:58,920
+Tamam. Ne tür patentler var? Bir fayda patenti var, faydalı model. Herhangi bir yeni veya kullanışlı süreç, makine, imalat ürünü ya da madde bilişimi faydalı patent alabilirsiniz.
+
+96
+00:36:04,307 --> 00:36:21,688
+Üsüslü, caycanlı tasarım ödülü ya da bitki. Herhangi bir farklı ve yeni bitki çeşidini keşfedip veya eşeğsiz olarak onu yeniden üretirseniz bunu da kendinize patentleyebilirsiniz.
+
+97
+00:36:23,148 --> 00:36:25,907
+Şimdi gelelim trademark, marka tesciline.
+
+98
+00:36:28,884 --> 00:36:45,844
+Bu çok karşılaşıyoruz arkadaşlar. Bir kelime, isim, sembol veya adidas'ın, Coca-Cola'nın, Mercedes'in. Bunlar ne kullanılır bu markalar? Mal ticaretinde kullanılır ve bu marka malların kaynağını gösterir.
+
+99
+00:36:46,192 --> 00:37:08,972
+Onları başkalarından ayırır ve ticari marka, trademark hakları neleri içerir, neler kullanabilir? Başkalarının kafa karıştıracak kadar benzer olanların kullanılmasını önler trademark. Mesela nedir? Sony var, bir de Sunni var. Öyle değil mi? İnsanın hakkında...
+
+100
+00:37:08,980 --> 00:37:35,559
+Çift ne koydu, farklıları oluşturdu falan filan. Ancak başkalarının aynı malları üretmesi veya aynı mal ve hizmetleri açıkça farklı bir marka adında satmasını engellemez. Yani bir sürü kopiler var ama aynısını üretebilirsiniz ama markası test edilmesi gider yakalarsanız toplattırabilirsiniz ya da karşı dava açabilirsiniz ama fiili olarak, fiziksel olarak bunu
+
+101
+00:37:36,019 --> 00:37:37,079
+Engellemez.
+
+102
+00:37:38,460 --> 00:37:39,300
+Peki.
+
+103
+00:37:43,539 --> 00:38:00,779
+Şuraya kadar anlattıklarımız genel ifadeler. Peki, bağ ve bilgisayar güvenliği ile ilgili fikri mülkiyet hakları nedir? Ağ ve bilgisayar güvenliği bağlamında ilgili bir dizi fikri mülkiyet biçimi vardır. Mesela yazılı.
+
+104
+00:38:02,068 --> 00:38:15,168
+Ticari yazılım satıcılar tarafından üretilen programlar, paylaşılan yazılımlar, dahili kullanım için kuruluş tarafından oluşturulan tescilli yazılımlar ya da kişiler tarafından üretilen yazılımlar.
+
+105
+00:38:16,908 --> 00:38:18,547
+Fikri bir mülkiyet hakları kapsamında.
+
+106
+00:38:19,860 --> 00:38:46,680
+Yani potansiyel ticari içerikler, mesela nedir? Bir sürü e-ticaretler nedir? Verileri topluyor, müşteri eğilimleri, veritabağınları oluşturuyor. Bunlar da parayla satılıyor. Bunlar da mülki haklar çerçevesinde. Ses, video dosyaları, multimedya ve eğitim yazılımları, web sitesi içerikleri veya diğer tüm orijinal dijital çalışmalar, dijital içerik, algoritmalar.
+
+107
+00:38:47,956 --> 00:39:02,056
+Nedir? Patetlenebilir bir algoritma. Mesela RSA, açık anahtarlama, şişleme algoritması ya da şifreleme ya da başka algoritmalar. Bunlar da fikri sinayi haklar çerçevesinde koruma halkından alınabilir arkadaşlar.
+
+108
+00:39:06,099 --> 00:39:19,199
+Şimdi bu haklarla alakalı ABD'de yasa var. 1998'de kanunlaşan DMCA yani Dijital Millenium Tehlif Hakları Yasası. Bu neyi sağlıyor 98'de yasa?
+
+109
+00:39:19,659 --> 00:39:28,199
+Dijital tehlif hakları korunan materyallerin korunmasını güçlendirmek için Vipo yani Dünya Fikri Mülkiyet Örgütü.
+
+110
+00:39:29,300 --> 00:39:54,119
+İle anlaşmaları vurguluyor. Orayla bağlantı veriyor. Ve tehlif hakkı sahiplerinin tehlif haklarıyla korunan eserlerini korumak için teknolojik önlemler almayı da teşvik ediyor. Nedir mesela? Başvurarak esere erişimini engelleyebiliyor. Ya da eserin kopyalarının bulunup toplanmasını sağlayabiliyor.
+
+111
+00:39:56,052 --> 00:40:12,032
+Önlemleri atlamaya karşı yasak girişimler de var. Mesela engelleme girişimlerinin hem cezayı hem de hukuki yaptırımlar. Sizin ikine ulaşmasına ilgili yaptırımlar da mevcut.
+
+112
+00:40:13,212 --> 00:40:18,311
+Dijital ortamda terli farklarını korumak için başvurulabilecek yöntemler Türkiye'de.
+
+113
+00:40:19,795 --> 00:40:47,036
+Biraz önceki ABD'deydi. Bakın burada arkadaşlar. Şimdi Türkiye'de bir hukuk davası açabilirsiniz. Üç tane hukuk davası. Birisi tecavüzün kaldırılması, refi davası, tecavüzün meni durdurulması davası ve maddi ve manevi tazminat davaları. Bunlar hukuki olarak açılabileceğiniz davalar. Aynı zamanda eza davaları da var.
+
+114
+00:40:47,507 --> 00:41:05,067
+Bununla alakalı ilgili madde Türk Ceza Kanunu'nda bir eseri hak sahibi kişinin yazılı izni olmaksızın işleyen, değiştiren, her türlü işaret, ses veya görüntülünün nakline yarayan araçlarla umumu ileten, yayınlayan.
+
+115
+00:41:05,907 --> 00:41:32,707
+Hissel kullanım amacı dışında elinde bulunduran ya da depolayan kişi hakkında bir yıldan beş yıla kadar hapis ve adli para cezası hükmolunur. Bu yasaya isnaden de bu dijital ortamdaki sizin algoritmanızı, patentinizi, faydalı modelinizi ile alakalı ceza davası da açabilirsiniz arkadaşlar.
+
+116
+00:41:32,707 --> 00:41:33,907
+Bu da Türkiye'deki.
+
+117
+00:41:33,907 --> 00:42:00,747
+Peki, dijital milenyum vardı ya buradaki telif hakları yasası. Bunun muafiyetleri neler? Belirli eylemler dijital milenyum mülkiyet hakları hükümlerinden ve aşağıdakiler de dahil diğer telif hakları yasalarından muaf. Nedir mesela? Adil kullanım.
+
+118
+00:42:01,811 --> 00:42:29,011
+Muaf. Tersine mühendislik bir ürün aldı. Onun tersine mühendislikle siz bire bire aynısını değil. Bu muaf. Şifreleme araştırmaları. Siz bir algoritma geliştirdiniz. O algoritmanın zayıflığını araştırıyorsunuz. Benim terif hakkım var. Arkadaş sen bunun zayıflığını araştıramazsın. Değil. Bu algoritma ile alakalı güvenlik testleri.
+
+119
+00:42:29,427 --> 00:42:43,768
+Ve kişisel mahremiyetler, terlif hakları yasası kapsamında değil. Yani başkalarının patentli ürünlerini siz güvenlik testine de tabi tutabilirsiniz, şifreleme de yapabilirsiniz.
+
+120
+00:42:47,059 --> 00:43:09,059
+Geliştirmeye de çalışabilirsiniz. Yani araştırmanın önüne engel değil arkadaşlar. Ve DCMA'nın, DMCA'nın meşru güvenlik ve şifre araştırmalarını engellediğine dair önemli endişeler de mevcut. Böyle olmasına rağmen. Çünkü inovasyonun ve akademik özgürlüğün bastırılmasını veya...
+
+121
+00:43:09,456 --> 00:43:32,996
+Açık kaynaklı yazılım geliştirmesini tehdit altında olduğunu hissettiriyor bu mülkiyet yasası. Yani ne yapıyor? Microsoft diyor, dava açıyor. Bu Linux'ta open source kullanamazsınız. Benimkine benzedi. Sen işte browser yazamazsın tarzında bazı gereksiz davalarla uğraşılabiliyor bu DCMA ile.
+
+122
+00:43:35,344 --> 00:43:39,204
+Dijital Haklar Yönetimi yani Digital Right Management.
+
+123
+00:43:43,251 --> 00:43:54,572
+Dijital halk sahiplerinin açıkça tanınlanmasını ve çalışmalar için öngörüler ödemeyi almasını sağlayan sistem ve prosedürlerdir.
+
+124
+00:43:54,572 --> 00:44:04,412
+Türkiye'de BSA var biliyorsunuz. Eğer telif aktarı ya da trademarklı ya da lisanslı yazılımları kullanırsanız gelir size tepenize.
+
+125
+00:44:04,891 --> 00:44:09,572
+Tek bir DRM standartı ve mimarisi yok. Buradaki amaç...
+
+126
+00:44:10,159 --> 00:44:23,139
+Eksitsiz içerik yönetimi yaşam döngüsü için mekanizmalar üretmekti ve dijital içerik türleri platformları ortamları içinde kalıcı içerik korunması sağlar arkadaşlar.
+
+127
+00:44:24,359 --> 00:44:27,139
+Şimdi gelelim mahremiyete.
+
+128
+00:44:29,172 --> 00:44:48,172
+Mahremiyet aslında, yani kişisel gizlilik, mahremiyet, bilgisayar güvenliğiyle örtüşür ve toplanan ve saklanan bilgi ölçeğinde ciddi bir artış var. Mahremiyet ne önemli arkadaşlar? Şöyle bir örnek verelim. Şu anda her yerde...
+
+129
+00:44:49,235 --> 00:45:06,775
+Bizimle alakalı bilgiler toplanıyor. Ve KVKK ile izinler veriyoruz, vermiyoruz, reklam mailleri alıyoruz, gidiyoruz mesela bir mağazada indirimden yararlanmak için bile kişisel bilgilerimizi talep ediyorlar. Öyle değil mi?
+
+130
+00:45:10,708 --> 00:45:34,908
+Nereler toplanıyor? İşte kolluk kuvvetleri tarafından toplanıyor, ulusal güvenlik tarafından toplanıyor ya da ekonomik teşvikler ya da indirimler, işte şunlar bunlar yararlanmak için toplanıyor. Dolayısıyla bireyle bu kişisel bilgilere ve yaşamlarıyla ilgili özel ayrıntılara erişim ve bunların kullanımı konusunda giderek daha fazla bilinçlenmeye başladı.
+
+131
+00:45:35,411 --> 00:45:58,951
+İlk başlarda Facebooklarda şurada burada, şuraya geziyorum, buraya geziyorum diye vardı ama şu anda insanların endişesi var. Bu resimler ne olacak? Mahremiyetten taviz vermenin boyutuyla ilgili endişeler mahremiyet haklarının güçlenmesine yönelik çeşitli yasal ve teknik yaklaşımlara yol açmıştır arkadaşlar.
+
+132
+00:46:02,612 --> 00:46:20,492
+Koruma Direktifi var. Bu 1998'de kabul edildi. Burada diyor ki kişisel bilgileri işlerken üye devletlerin temel gizlilik haklarının korunduğundan emin olması gerekir.
+
+133
+00:46:30,068 --> 00:46:54,828
+Aşağıdaki ilkeler etrafında veri koruma direktifi nedir? Fark etme. İşler verilerin toplandığının sizin farkında varıyor olmanız lazım. Verileriniz toplanıyor ve bunun toplandığına razı olmanız. Veriler tutarlı olmalı. Kimler erişebiliyor? Güvenli bir şekilde saklanmalı.
+
+134
+00:46:58,835 --> 00:47:07,275
+Transfer edileceği bilinmeli ve hangi uygulamalarda kullanılacak bu? Bunları bilmesi gerekiyor.
+
+135
+00:47:07,275 --> 00:47:17,476
+Geçsel veri sahibi. Bununla alakalı 1974 yılında ABD'de bir verilerin gizliliği yasası var.
+
+136
+00:47:21,652 --> 00:47:28,932
+Bu verilerin yasası da federal kurumlar tarafından toplanan ve kullanılan kişisel bilgilerle ilgili işlemleri kapsıyor.
+
+137
+00:47:28,932 --> 00:47:34,992
+Aynı zamanda bireylerin tutulan kayıtları belirlenmesine izin veriyor.
+
+138
+00:47:35,932 --> 00:47:36,932
+Ve bireylerin kayıtlarının...
+
+139
+00:47:37,780 --> 00:47:47,500
+Başka amaçları için kullanılmasını yasaklamasına izin veriyor ve bireylerin kayıtları erişimine ve kayıtları uygun şekilde düzeltmesine ve değiştirilmesine izin veriyor.
+
+140
+00:47:47,500 --> 00:48:00,600
+Ve ajansların kişisel bilgileri uygun şekilde toplamasını, muhafaza etmesini ve kullanmasını sağlıyor ve bireyler için özel bir bu konuyla alakalı dava hakkı oluşuyor.
+
+141
+00:48:03,027 --> 00:48:24,087
+Peki Türkiye'de gizlilik ne? ABD'de 1974, işte gördünüz burada Avrupa Birliği'nde 98, 2016 tarihli, 66-98 sayılı kişisel verileri korunma kanunu, KVKK.
+
+142
+00:48:29,972 --> 00:48:44,932
+Başta özel hayatın gizliliği olmak üzere kişilerin temel ve hak ve özgürlüklerini korumak ve kişisel verileri işleyen gerçek ve tüzel kişilerin yükümlülükleriyle uyacakları kuralları, usul ve kuralları düzenliyor.
+
+143
+00:48:45,844 --> 00:48:50,244
+Özel ve genel kişisel verilerin işlenmesinin şartlarını belirliyor.
+
+144
+00:48:50,844 --> 00:48:56,043
+Kişisel verilerin silinmesi, yok edilmesi ve anonim hale getirilmesiyle ilgili hususları belirliyor.
+
+145
+00:48:56,043 --> 00:49:02,324
+Kişisel verilerin aktarılması veya yurt dışına çıkartılmasıyla alakalı hususları belirliyor.
+
+146
+00:49:03,063 --> 00:49:07,963
+Veri sorumlusunun aydınlatma yükümlülüğünü tanımlıyor.
+
+147
+00:49:08,364 --> 00:49:13,324
+Veri sahibinin haklarını, veri güvenliğiyle ilgili yükümlülükleri ve
+
+148
+00:49:14,835 --> 00:49:26,915
+Sorunlarda başvurucu, şikayet ve veri sorumluluğuyla ilgili cezai hususları tanımlıyor. 2016 sayılı KVKK kanunu.
+
+149
+00:49:26,915 --> 00:49:30,315
+Peki, gelelim standart dokümanlara.
+
+150
+00:49:33,907 --> 00:49:58,288
+İlk aklımıza gelen ISO 27002. ISO 27002'de nasıl tanımlanıyor? Bir kuruşun kişisel olarak tanımlanabilir bilgilerin geziliği ve korunmasına yönelik veri politikası geliştirilmeli ve uygulanmalıdır. Bu politika kişisel olarak tanımlanabilir bilgilerin işlenmesine dahil olan tüm kişilere iletilmelidir.
+
+151
+00:50:00,000 --> 00:50:23,799
+Bu politikaya ve ilgili tüm mevzuat ve düzenlemelere uyum, uygun yönetim yapısı ve kontrolü gerektirir. Genellikle bu en iyi şekilde yöneticilere, kullanıcılara ve hizmet sağlayıcılara bireysel sorumlulukları ve izlenmesi gereken özel prosedürler konusunda
+
+152
+00:50:24,288 --> 00:50:46,288
+Rehberlik etmesi gerekirken gereken bir gizlilik görevlisi gibi bir sorumluluk işinin alınmasıyla elde edilir, kişisel olarak tanımlanabilir, bilgilerin işlenmesi ve gizlilik ilkeleri konusunda farkındalığın sağlanması sorumluluğu ile ilgili mevzuat ve düzenlemelere uygun olarak bu ele alınmalıdır.
+
+153
+00:50:46,996 --> 00:50:58,755
+Bunu kim söylüyor? ISO 27002 döküman. Dolayısıyla böyle bir sertifik alacaksanız bunları sizin de sağlıyor olmanız gerekiyor.
+
+154
+00:51:07,443 --> 00:51:09,283
+Kaçıncı slide'dayız arkadaşlar?
+
+155
+00:51:11,344 --> 00:51:12,423
+29.
+
+156
+00:51:14,203 --> 00:51:18,723
+Evet, devam ettik. Bittiği zaman bırakırız arkadaşlar.
+
+157
+00:51:18,723 --> 00:51:33,304
+Peki, gizlilik ve veri gözetimi ne? Büyük şirketlerin, hükümetlerin ve kollu kuvvetlerinin talepleri, kişisel mahremiyete yönelik yeni tehditler yaratmıştır. Niye?
+
+158
+00:51:33,856 --> 00:52:00,916
+Çünkü güvenliği sağlamak için her yere kameralar konuyor, parmak azıyla giriş var, turnikalar var, kartlar var, çalıştığımız yerlerde var. Dolayısıyla analiz için bilimsel ve tipi araştırma verilerinin toplanması, kolluk kuvvetleri, veri gözetimi, özel kuruluşlarının tarafından profil oluşturma, bu bilimsel araştırma, halk sağlığı, ulusal güvenlik, kolluk kuvvetleri.
+
+159
+00:52:06,996 --> 00:52:22,456
+Ve kaynağının verimli kullanımı gibi alanlarda faydalı sonuçlara olanak sağlarken bu verilerin toplanması, bireylerin mahrumiyet haklarına saygı duymaya da devam etme arasında bir çelişki oluşturur.
+
+160
+00:52:22,456 --> 00:52:31,360
+Çünkü ne kadar çok veri toplarsam kolluk kuvvetleri daha rahat işini yapacaktır. Dolayısıyla daha güvenli bir ortamda...
+
+161
+00:52:31,360 --> 00:52:55,560
+Sağlıkla alakalı verilerimiz ne kadar çok işlenirse hasta olmadan bizimle ilgili gerekli tedbirlerin alınması sağlanabilecektir. Hak sağlığı ve olsal güvenlik açısından bir sürü fayda varken kişisel verilerin bu kadar elde ediliyor olması arasında ve verilerin mahremiyetine, birey mahremiyetine de ciddi bir tecavüz olacak demektir.
+
+162
+00:52:59,360 --> 00:53:17,324
+Halka açık ve sosyal medya sitelerinin kullanımındaki hızlı artıştır. Dolayısıyla bu siteler, bireyler ve onların diğer bireyler ve kuruluşlarla etkileşimleri hakkındaki büyük miktarda veri toplar bunlar ve analiz eder ve bunları...
+
+163
+00:53:17,876 --> 00:53:36,236
+Paylaşır ve birçoğunda ticari amaçlı kullanır. Birçok kişi fotoğraflar, durum güncellemeleri dahil olmak üzere büyük miktarda kişisel verilerini bilerek ve isteyerek yükler. Facebook'a, Twitter'a, Instagram'a bir sürü yere.
+
+164
+00:53:36,672 --> 00:53:50,531
+Bu veriler potansiyel olarak mevcut ve gelecekteki işverenler, sigorta şirketleri özel dedektikler ve diğerleri tarafından bireyle ilgili etkileşimlerde kullanılabilir.
+
+165
+00:53:50,711 --> 00:53:52,592
+Nedir? Mesela sen bugün bir şeyler paylaştın.
+
+166
+00:53:54,132 --> 00:54:04,852
+10 yıl sonra gireceğin işte geçmişe dönük sizin bilerek ve isteyerek paylaştığınız bilgiler başınıza bela olabilir arkadaşlar.
+
+167
+00:54:10,324 --> 00:54:28,964
+Gelelim gizliliğin korunmasına. Gizliliği korumak için hem politika hem de teknik yaklaşımlar gerekli. Teknik yaklaşımlar açısından veritabanı güvenliği için geliştirilen teknik mekanizmalar kullanılarak bilgi sistemlerinde depolanan verilerin gizliliğinin korunması gerektiği.
+
+168
+00:54:29,811 --> 00:54:56,192
+Kısmen ele alınabilir ama sosyal medya sızlığı ile ilgili olarak teknik kontroller de olmalı. Nedir bundan? Bireylere ilişkin verileri kimlerin görülebileceğini yönetmek için uygun gizlilik ayarlarının bu sosyal medya operatörleri tarafından sağlanması, bir kişiye referans verildiğinde veya başka bir kişinin içeriğinin etiketlendiğinde bu etiketlenen kişiye bildirim sağlayacak mekanizmalar verilmesi.
+
+169
+00:54:56,623 --> 00:55:15,643
+Mesela size bir resim paylaşıyor, siz 10 kişi arkadaşlara resim çekmişiz, Antalya'da bir resmimiz var. Antalya'da sen 9 kişiden biri paylaşıyorsun ama 10 kişiden biri, geri kalan 9 kişinin de mahremiyetini suistimal ediyorsun. Dolayısıyla etiketlediğiniz bu kişiye de bildirim gitmesi gerekir.
+
+170
+00:55:20,980 --> 00:55:30,320
+Sürekli bunlar değişmekte ve bu mekanizmaya ayak uydurmaya çalışan kullanıcılar için de ciddi zorluklar oluşturmaktadır.
+
+171
+00:55:30,699 --> 00:55:35,340
+Ve özellikle o kadar çok veri birikiyor ki şu anda sosyal medya ve diğerlerinde.
+
+172
+00:55:35,340 --> 00:55:47,259
+Büyük veri analizinde mahremiyet endişelerini yönetmek için başka bir yaklaşım, analiz için araştırmalara veya diğer kuruluşlara verilmeden önce verileri anonimleştirmek.
+
+173
+00:55:47,635 --> 00:55:58,336
+Kişisel olarak tanımlayıcı bilgileri kaldırmak gerekmektedir. Aksi halde kişisel mahremiyetin sorunu oluşturacak demektir.
+
+174
+00:55:58,336 --> 00:56:14,916
+Veri geziliğinde politik açısından gizliği korumak için uygun kısıtlamaların uygulanmasını sağlayarak büyük verilerin kullanımını ve yeniden kullanımını yönetmek için kanunları yönetmelikleri yönergeleri ihtiyaç vardır.
+
+175
+00:56:15,668 --> 00:56:28,328
+Nedir bu mesela? Kendi verenizi kullanmayla alakalı razı olmak. Katılımcıların araştırmalara katılımı hakkında bilinçli karar alabileceğini sağlamak.
+
+176
+00:56:29,448 --> 00:56:42,528
+Gizlilik ve mahremiyet. Mahremiyet, bireylerin kişisel bilgilere kimlerin erişebileceğini bilmesi. Gizlilik ise bilgiye yalnızca yetkili kişilerin ulaşabilmesi ilkesi.
+
+177
+00:56:43,059 --> 00:57:00,719
+Tamam mı? Mülkiyet ve yazarlık, verilerin kimin sorumlu olduğunu ve bir bireyin hangi noktada kişisel verilerini kontrol etme hakkından vazgeçtiğini bilmesi gerekir ve bilgi paylaşımı.
+
+178
+00:57:02,036 --> 00:57:20,076
+Araştırmanın sosyal faydalarının değerlendirmesi bağlamında da veri eşleştirme ve bir kaynaktan veya araştırma projesinden alınan verilerin başka bir kaynakla yeniden kullanılmasından kaynaklanan sosyal faydalar yönetim ve gözetimde diğer husus.
+
+179
+00:57:20,076 --> 00:57:28,776
+Şimdi gelelim son kısmımıza etik yani ahlaki hususlara etik. Belirli eylemlerin.
+
+180
+00:57:30,291 --> 00:57:45,531
+Yazarları ve yararları ve zararları ile bu eylemlerin amaçlarının ve hedeflerinin doğruluğu ve yanlışlığı ile ilgili bir ahlaki ilkeler sistemidir. Etik.
+
+181
+00:57:45,531 --> 00:57:56,132
+Tamam mı? Gizlilik ve güvenlik sorunları yaratan bilgi ve ekonomik iletişim birçok olası kötü kullanımı ve kötüye kullanımı.
+
+182
+00:57:56,639 --> 00:58:24,259
+Sebebiyet vermiştir. Dolayısıyla mahremiyetler tarafından geliştirilen, medeniyetler tarafından geliştirilen temel etik ilkeleri geçerlidir. Nedir bunlar? Bilgisayarları ve bilgisayarların çerçeveleri benzer susuzluğunda daha önce mümkün olmayan faaliyetlerin ölçeği, daha önce üzerinde anlaşmaya varılmış birçok etik kuralın oluşturulmadığı yeni türde kuruluşların oluşturulması şu anda.
+
+183
+00:58:24,639 --> 00:58:39,739
+Karşılaştırılmaz sorunlardır. Ve etik hiyerarşi burada en üstte ünvan itibar. Altta profesyonelizm ve iç profesyonelizm de en altta bu etik piramidi görebilmek mümkün.
+
+184
+00:58:39,739 --> 00:58:50,659
+Peki, bilgisayarla alakalı etik hususlar neler? Bilgisayar kullanımından kaynaklanan etik hususlar bir, bilgi depoları ve bilginin işlenmesi.
+
+185
+00:58:51,347 --> 00:59:12,707
+İki, yeni form ve yeni varlık türlerinin bu mevcut bilgilerinden üretilmesi, eylem araçları ve yıldırma ve aldatma sembolleri, teknolojiyi anlayan, kullanan ve erişim iznine sahip olanların bunlar üzerinde bir etkisi, gücü vardır.
+
+186
+00:59:13,907 --> 00:59:17,087
+Peki, mesleki ve etik sorumluluklar neler?
+
+187
+00:59:17,619 --> 00:59:35,579
+Mesleki sorumlulukları etik veya ahlaki sorumluluklarla dengeleme endişesi. Bir bilgi işlem veya bir tü uzmanı karşılaşabileceği etik türler neler? Bir profesyonel olarak etik görev işverene sadakatle çalışmaktır.
+
+188
+00:59:39,476 --> 00:59:53,815
+Boş boş oturmamak, ıslık çalmamak, halka veya açıkça şirkete zarar verebilecek bir durum oluşturmamak ve şahsi çıkar sağlamamak.
+
+189
+00:59:58,675 --> 01:00:16,155
+Etik davranışları gruplandırırsak, etik kesin yasalar ve gerçekler dizisi değil. Eki bazen mesela şöyle olabiliyor. Bazı şeyler yasal hukuki olabiliyor ama ahlaki olmuyor.
+
+190
+01:00:17,012 --> 01:00:39,231
+Bazen de ahlaki bir şey yapmaya çalışıyorsunuz. Yasalar engel oluyor. Dolayısıyla etik kesin olarak yasalar veya gerçeklercisi değildir. Ve birçok alan etik belirsizlikler sunabilir size. Ama birçok profesyonel topluluk aşağıdakileri yapabilen etik davranışlar kurallarını benimsemiştir. Nedir mesela?
+
+191
+01:00:40,275 --> 01:00:59,815
+Davranışı olarak çalışan için olumlu ve bir uyarıcı olun ve karşınıza güvenin aşılayın. Eğitici olun, destek olun, caydırıcı olun yanlışlıklara karşı ve bir disiplin aracı olun ve mesleğin kamusal imajını geliştirin.
+
+192
+01:01:01,175 --> 01:01:06,275
+Yapmayı imajına zarar vermeyin. Bunlar da etik kurallar arkadaşlar.
+
+193
+01:01:08,820 --> 01:01:14,160
+Bunları okumaya gerek yok. Boş vaktinizde sizler okursunuz.
+
+194
+01:01:16,220 --> 01:01:24,220
+Evet arkadaşlar, bu haftaki anlatacağımız yönetimsel sorunlarla alakalı son konu bu.
+
+195
+01:01:24,220 --> 01:01:26,220
+Haftaya...
+
+196
+01:01:26,512 --> 01:01:44,872
+İleri şifreleme, önce haftaya genel bir şifrelemelerle ilgili bir giriş yapacağız. Sonra ilerisinde hem açık anahtarı şifreleme hem de tek anahtarı şifreleme ve diğer güvenlikle alakalı hususları devamında vereceğiz.
+
+197
+01:01:44,872 --> 01:01:46,932
+Sediğiniz bir şey var mı arkadaşlar?
+
+198
+01:01:55,347 --> 01:01:58,867
+Ses çıkmıyor. Uyuduk mu arkadaşlar?
+
+199
+01:01:58,947 --> 01:01:59,827
+Yok hocam, yok.
+
+200
+01:02:00,628 --> 01:02:02,087
+Hocam, buradayız.
+
+201
+01:02:02,788 --> 01:02:09,547
+Bir de şunu söyleyeyim arkadaşlar. Final sınavıyla alakalı bana herhangi bir şekilde gelen bir şey yok.
+
+202
+01:02:09,547 --> 01:02:10,547
+Ama...
+
+203
+01:02:11,219 --> 01:02:28,759
+Birçok kişiler online girdi, alıştı. Belki şunu yapabiliriz. Eğer mevzuat izin verirse bilmiyorum. İlla yüzde yapacaksanız, yüzde sınav yapacağız ama online'de yapabilirsiniz derler ise sınavımızı online yaparız. Tamam mı arkadaşlar?
+
+204
+01:02:29,579 --> 01:02:35,759
+Hocam çok iyi olur. Ben şu anda kendi ülkemdeyim. Biraz oraya gelmek zor olur. Evet hocam.
+
+205
+01:02:36,403 --> 01:02:57,643
+Benim niyetim o. Şu anda herhangi bir kısıtlama söylemiyorlar. Ben sekreterlikle öğrenileceğim. Ama eğer yapabilirsem sınavı online gerçekleştirmiş olacağız. Normalde vize sınavlarına olduğunuz muhtemelen bazı derslerde. Onun gibi final sınavında olmuş olacaksınız.
+
+206
+01:02:58,364 --> 01:02:59,743
+Çok teşekkür ederim hocam.
+
+207
+01:03:01,235 --> 01:03:12,415
+Hepiniz İstanbul'da değilsiniz. Nerelerdesiniz arkadaşlar? Dağıldınız her yere. İstanbul güzel. Özellikle bahar mevsiminde. Hepinize gelmenizi tavsiye ederim.
+
+208
+01:03:13,016 --> 01:03:16,895
+Hocam bir şey söyleyeceğim. Sınav yapacak ya da proje yapacak.
+
+209
+01:03:17,715 --> 01:03:20,855
+Sınav sınav. 60 tane kişiye nasıl proje yaptırayım?
+
+210
+01:03:20,855 --> 01:03:21,596
+Tamam zor.
+
+211
+01:03:22,395 --> 01:03:28,715
+Zor zor. Yani sen çözüm öner. Proje yapalım ama sınavı yüzde de yapsak.
+
+212
+01:03:29,043 --> 01:03:54,063
+Online'de yapsak true-false sınavı olacak arkadaşlar. 20 ya da 25 tane soru soracağım. Ve yabancıların da doğru anlayabilmesi adına metnin hem İngilizcesi olacak hem Türkçesi olacak ki yanlış bir şey yapmayalım. En azından sınav kritiktir. Anlamada zorluk çekerek yanlışı işaretlemeyin diye. Anlaştık.
+
+213
+01:03:54,483 --> 01:04:02,324
+Anlaştık hocam. Yani yüzde de olsa sorduğum soruların hem İngilizcesini hem Türkçesini aynı anda bulacaksınız.
+
+214
+01:04:04,324 --> 01:04:11,304
+Hocam tarihin ne zaman bulacak? Tarihi bilmiyorum arkadaşlar. Ne zaman ilan ederlerse o zaman olacak.
+
+215
+01:04:12,224 --> 01:04:20,164
+Önümüzde dört hafta daha var. Bu onuncu hafta muhtemelen Mayıs biter, Haziran'ın başı gibi olur yani sınavla.
+
+216
+01:04:22,643 --> 01:04:24,344
+Teşekkürler hocam.
+
+217
+01:04:24,903 --> 01:04:26,703
+Başka sorunuz var mı arkadaşlar?
+
+218
+01:04:26,703 --> 01:04:27,663
+Sorular true false şeklinde mi olacak?
+
+219
+01:04:28,223 --> 01:04:28,623
+Efendim?
+
+220
+01:04:29,103 --> 01:04:31,123
+Sorular true false şeklinde mi olacak?
+
+221
+01:04:31,324 --> 01:04:32,143
+Evet, evet.
+
+222
+01:04:33,223 --> 01:04:34,183
+Teşekkürler hocam.
+
+223
+01:04:34,364 --> 01:04:35,623
+İki şıklı olacak yani.
+
+224
+01:04:36,683 --> 01:04:40,884
+Ama yani hepsini true yaparım, geçersim derseniz yanılırsınız.
+
+225
+01:04:40,983 --> 01:04:43,023
+Çünkü true false sayısı eşit olur arkadaşlar.
+
+226
+01:04:45,503 --> 01:04:48,023
+Ama online yaparsak...
+
+227
+01:04:48,211 --> 01:05:04,551
+True-False'da belli bir süre olur. Mesela iki saat içerisinde yarım saat veririz. Ama soruları geriye dönmenize müsaade etme. Şirket kurup gereksiz yer ortalamayı yükseltme emek adına. Tamam mı arkadaşlar?
+
+228
+01:05:07,291 --> 01:05:12,692
+Hocam, can you repeat the information in English, please?
+
+229
+01:05:13,531 --> 01:05:14,451
+About exam?
+
+230
+01:05:15,027 --> 01:05:16,127
+Evet, please.
+
+231
+01:05:16,327 --> 01:05:32,827
+So, the exam, I have no idea about the exam, whether it's going to be face-to-face or online. But if the institute let me make it online, I prefer it online, okay? I won't force you to make it face-to-face.
+
+232
+01:05:34,287 --> 01:05:42,827
+If, inşallah online, bence de, inşallah, there will be no problem, then the exam will be...
+
+233
+01:05:43,123 --> 01:05:55,943
+Online, online system, online Yıldız Edutya, you know it. I think one of the main midterm exam took place in online system. Okay?
+
+234
+01:05:55,943 --> 01:05:56,943
+Okay.
+
+235
+01:06:21,811 --> 01:06:22,931
+will learn.
+
+236
+01:06:24,192 --> 01:06:25,511
+Thank you very much.
+
+237
+01:06:25,971 --> 01:06:27,831
+I think 15th week is final
+
+238
+01:06:27,831 --> 01:06:29,092
+exam week.
+
+239
+01:06:29,672 --> 01:06:31,572
+So in I think June
+
+240
+01:06:31,572 --> 01:06:33,511
+we are going to have
+
+241
+01:06:33,511 --> 01:06:34,491
+final exam.
+
+242
+01:06:35,891 --> 01:06:37,652
+Okay hocam. Thank you very much.
+
+243
+01:06:37,951 --> 01:06:39,851
+See you everybody. See you next week.
+
+244
+01:06:40,331 --> 01:06:41,172
+Have a good Friday.
+
+245
+01:06:41,871 --> 01:06:42,471
+Thank you.
+
+246
+01:06:42,471 --> 01:06:43,592
+İyi günler hocam.
+
+247
+01:06:44,791 --> 01:06:46,271
+Görüşmek üzere arkadaşlar.
