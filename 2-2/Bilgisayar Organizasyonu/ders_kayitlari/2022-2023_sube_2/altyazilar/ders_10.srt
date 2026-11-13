@@ -1,0 +1,2035 @@
+1
+00:06:09,139 --> 00:06:11,120
+Merhaba arkadaşlar, sesim geliyor mu acaba?
+
+2
+00:06:12,479 --> 00:06:13,319
+Geliyor hocam siz.
+
+3
+00:06:14,039 --> 00:06:14,979
+Teşekkür ederim.
+
+4
+00:06:31,028 --> 00:06:34,807
+Saat iki olduğuna göre derse başlayabilirim.
+
+5
+00:06:36,248 --> 00:06:40,528
+Derse başlamadan önce sizin sormak istediğiniz herhangi bir şey var mıdır?
+
+6
+00:06:47,379 --> 00:06:52,240
+Hocam, ikinci ödev de vardı sanırım bu derste. O ne zaman verilecek hiç belli mi?
+
+7
+00:06:53,480 --> 00:06:59,420
+Ya bu ikinci ödevi son hafta veya son haftadan önceki hafta paylaşıyoruz.
+
+8
+00:06:59,680 --> 00:07:03,839
+Aslında olabildiğince önce vermeye çalışıyoruz ama orada şöyle bir şey var.
+
+9
+00:07:03,920 --> 00:07:06,439
+Verilecek ödev son haftaki konularla ilgili olacak.
+
+10
+00:07:07,519 --> 00:07:13,019
+Ondan dolayı o dersler işlenmeden onun ödevini paylaşma durumu da olmadığından.
+
+11
+00:07:14,196 --> 00:07:20,616
+Yaklaşık 10 sene yapıldığı gibi biraz geç bir ödev olacak. Onu söylemek isterim.
+
+12
+00:07:22,676 --> 00:07:24,036
+Anladım hocam. Teşekkürler.
+
+13
+00:07:25,036 --> 00:07:26,056
+Ben de teşekkür ederim.
+
+14
+00:07:27,236 --> 00:07:30,036
+Şimdi ekran paylaşım yaparak başlıyorum.
+
+15
+00:07:32,036 --> 00:07:34,676
+En başta kitabı istiyorsanız şöyle göstereyim.
+
+16
+00:07:35,136 --> 00:07:38,136
+Morris Manon'un kitabından takip ettiğimizi söylemiştik.
+
+17
+00:07:39,764 --> 00:07:56,644
+Computer Design Fundamentals. Sırasıyla bunları gördük aslında. Kombinasyonel, lojik devreler. Şuradaki bütün çizimler size tanıdık gelecektir. Bunların hepsini ders slide olarak kullandık.
+
+18
+00:08:04,468 --> 00:08:07,427
+Registerlar, register transferleri nasıl yapılır?
+
+19
+00:08:08,668 --> 00:08:14,807
+Hafıza birimlerinden bahsettik. RAM, ROM nedir? Bunların çeşitleri nelerdir?
+
+20
+00:08:15,788 --> 00:08:21,408
+Computer Design Basic'te aslında Single Cycle Computer mimarisini inşa ettik.
+
+21
+00:08:21,408 --> 00:08:25,355
+Ve bunun son hali olarak da...
+
+22
+00:08:27,411 --> 00:08:51,408
+En son şuraya kadar gelmiştik. Single cycle computer mimarisinde tek çevrimde verilen bir kodun çıkışı nasıl yapılabilir? Adam bir assembly kodu verdi. Bu assembly kodu verildikten sonra assembler bildiğiniz üzere bunu bir 16 bitlik...
+
+23
+00:08:51,408 --> 00:08:59,728
+Komuta çeviriyordu. Bu sayılar pars edilerek çözümleme devresine giriyordu.
+
+24
+00:09:00,587 --> 00:09:12,268
+Ve bu çözümleme devresinde çıkan kontrol lojiklere göre ALU'nun nasıl çalışacağı, hangi MUX'un nasıl seçileceği otomatik olarak belirlenmiş oluyordu.
+
+25
+00:09:14,707 --> 00:09:29,008
+Bu belirtilen komutusun durumuna göre program counter'ın arttırılma, ötelenme gibi ya da başka bir sayı atanma gibi durumlar dikkate alınabiliyordu şeklinde konuşmuştuk.
+
+26
+00:09:42,548 --> 00:09:44,248
+ilgili konuşacağız.
+
+27
+00:09:45,788 --> 00:09:48,508
+Şu kısmı tekrar göstermek istiyorum.
+
+28
+00:09:48,728 --> 00:10:00,367
+Aslında bu gösterilen bir yapıda çoğunlukla mikro işlemci dediğimiz şey gri ile ifade edilen bölge olmuş oluyor.
+
+29
+00:10:02,676 --> 00:10:25,536
+Tek başına çalışabilmesi biraz mümkün değil gibi. Neticede bir yerlerden verileri okuyup verileri yazmasına ihtiyaç duyuyor. Bunun için bir data memory söylemiştik. İşte bu bir RAM olabilir veya işte diskten okuyabilir bunu. Yani bir hard diskten okumak isteyebilir veri gibi. Çeşitlendirebiliriz.
+
+30
+00:10:28,019 --> 00:10:34,379
+Buna paralel bağlı başka donanımlar da olabilir şeklinde biraz daha genişletelim.
+
+31
+00:10:35,220 --> 00:10:45,559
+Çünkü bildiğiniz üzere bilgisayar mimarisinde bilgisayarlarımızın kasasına bağlı farklı giriş çıkış birimleri söz konusu.
+
+32
+00:10:45,559 --> 00:10:52,559
+İşte kimisi bilgisayarına mouse klavye kesinlikle bağlıyor. Bunlar dışarıdan bir...
+
+33
+00:10:53,427 --> 00:11:02,567
+Giriş cihazı aslında, input device olarak geçiyor. Çoğunlukla biz tıkladığımızda bir bilgi karşı tarafa, yani kasa içerisine gönderiyoruz.
+
+34
+00:11:03,448 --> 00:11:12,427
+Onun dışında printerler var, hard diskler var, ekranlar var derken aslında bilgisayarımızın...
+
+35
+00:11:13,587 --> 00:11:33,107
+Çok daha donanımı olduğu taraf çoğunlukla bağladığımız giriş çıkış cihazlarıyla da ilişkili oluyor. Dolayısıyla şu address out ve data out'un aslında bütün device'ların girişine kadar gittiğini düşünebilirsiniz. Bir an için aklınızda camlandırabilirsiniz.
+
+36
+00:11:34,107 --> 00:11:39,107
+Şimdi bu device'larla haberleşme nasıl yapılıyor? Bunlar hangi?
+
+37
+00:11:40,019 --> 00:11:51,160
+Yollarla ifade ediliyor. Bunları göreceğiz. Bir şey var, ayrım var. En başta onu konuşmak istiyorum. Mikro işlemci ile mikro denetleyici arasındaki farkı size söylediler mi?
+
+38
+00:11:56,179 --> 00:11:58,460
+Ben herhangi bir derste pek hatırlamıyorum hocam açıkçası.
+
+39
+00:11:58,879 --> 00:12:03,259
+Tamam, şimdiye kadar görmemiş olmanız da doğal. Onu şöyle ifade edelim.
+
+40
+00:12:03,259 --> 00:12:13,000
+Mikro eşitlemci içerisinde arkadaşlar sadece şu gri kısımla ifade edilen datapath yapısı bulunur.
+
+41
+00:12:13,700 --> 00:12:18,096
+Yani bir mikro eşitlemcinin tek başına çalışması mümkün değildir ki...
+
+42
+00:12:18,096 --> 00:12:36,115
+Kendi bilgisayarınızı eğer açıp bakarsanız bir anakart üzerine montelenmiş işlemci göreceksiniz. İşlemci kısmı ayrıdır, soğutucusunu falan görürsünüz. Onun dışındaki bölgeler aslında bilgisayarın diğer ihtiyacı olan işte hafıza birimi gibi birleşenleri içerir.
+
+43
+00:12:36,820 --> 00:12:45,080
+Mikro denetleyiciler ise, mikro işlemciler çoğunlukla böyle performans gerektiren işlemlerde kullanırlar.
+
+44
+00:12:45,400 --> 00:12:57,360
+İşte bilgisayar gibi vesaire gibi. Mikro denetleyiciler ise biraz daha böyle ev işleri için kullanabileceğiniz gömülü sistemlerde bulabilirsiniz.
+
+45
+00:12:57,980 --> 00:13:03,460
+İşte bir robot süpürgenin içinde bir mikro işlemci değil, mikro denetleyici vardır. Arasındaki fark?
+
+46
+00:13:03,988 --> 00:13:25,668
+Bir yonga altında sadece şu gri yapı değil diğer kısımları da içerir. Yani o yonganın altında aslında bellek de vardır. Farklı giriş çıkış birimleri de vardır. Küçük bir şekilde paketlenmiştir. Çünkü çok fazla performansa ihtiyaç duyulmaz o gibi şeylerde.
+
+47
+00:13:25,668 --> 00:13:28,228
+Yer olarak böyle ifade edelim.
+
+48
+00:13:28,624 --> 00:13:36,644
+Şu an gerçi mikrodenetleyicilerin de geldiği son noktada aslında bayağı iyi performanslar elde edildi görüyoruz.
+
+49
+00:13:36,744 --> 00:13:45,604
+İşte akıllı saat yapıyor adam. Sonuçta bir anakart koymak olmaz. Her şeyi küçük bir yonga içerisine gömmesi lazım.
+
+50
+00:13:46,163 --> 00:13:53,544
+Bu durumda mikro işlemci değil, mikrodenetleyici yapısını kullanarak ilerliyor şeklinde söyleyebiliriz.
+
+51
+00:13:55,091 --> 00:13:57,912
+Bu konuda bir açıklama yaptık.
+
+52
+00:14:01,051 --> 00:14:05,771
+Giriş-çıkış birimleri arkadaşlar gerçekten çok önemli birimler.
+
+53
+00:14:07,091 --> 00:14:15,291
+Bunun sebebini az önce verdiğimiz robot süpürgeden yapabiliriz. Bir robot süpürge tasarlanacak sonuçta diyelim.
+
+54
+00:14:18,484 --> 00:14:23,544
+Kendi yolunu belirleyebilmesi için mutlaka dışarıdan bir bilgiye ihtiyaç duyacak.
+
+55
+00:14:24,943 --> 00:14:31,663
+Bu ne olabilir? İşte lazerle, lazer paternler atıp karşı taraftan lazerin dönme süresine bakabilir.
+
+56
+00:14:31,804 --> 00:14:38,224
+Bu sayede ne kadar mesafede olduğunu etrafı tarama yoluyla anlayabilir.
+
+57
+00:14:38,224 --> 00:14:42,724
+İşte ne olabilir? Mesela etrafına butonlar eklenir.
+
+58
+00:14:44,019 --> 00:14:57,019
+Bir yere temas etme durumunda o butona basılı olur ve bu sayede çarptığını anlayabilir gibi. Ne kadar donatırsanız bir robotu aynı şekilde bunun gelişmiş hali olarak bir...
+
+59
+00:14:58,899 --> 00:15:10,919
+Sürücüsüz araç mantığını da düşünebilirsiniz. Sürücüsüz araçlarda artık elliye yakın üzerinde sensör bulunuyor. Kamerasından tutun, lidarına vesairesine kadar.
+
+60
+00:15:11,219 --> 00:15:21,039
+Tüm bunları dikkate aldığınızda giriş çıkış bizim gerçekten her zaman anlamamız gereken ve yorumlamamız gereken bir yapı olmuş oluyor.
+
+61
+00:15:21,179 --> 00:15:24,739
+Şimdi bu giriş çıkış birimleriyle iyi haberleşmemiz lazım ki.
+
+62
+00:15:25,395 --> 00:15:36,395
+Dışarıdan gelen bilgiyi içeriye aktaralım. Yani biz sürekli bilgisayar, bilgisayar mantığında konuşuyoruz ama sonuçta bir gömülü sistemde bir bilgisayar gibi düşünebiliriz.
+
+63
+00:15:37,395 --> 00:15:45,395
+Ve sadece kompüter yapısında olmayan bilgisayarları da bu işin içine dahil edebiliriz.
+
+64
+00:15:53,395 --> 00:15:59,195
+Tanımlarken smart verilmesini kullandığımız tüm yapılar bunun içerisinde bürebilir.
+
+65
+00:16:01,375 --> 00:16:13,535
+Şimdi biz genel konuştuk ama biraz daha yine bilgisayar donanımı mimarisi başlığında birimler nasıl çalışıyor bunları incelemeye çalışacağız.
+
+66
+00:16:15,827 --> 00:16:42,867
+Nasıl çalıştığını en başta incelememiz lazım. Klavye bildiğiniz üzere tuşlardan oluşuyor. Burada nasıl çalıştığını şimdi ben size izah etmeye çalışayım. Şu gördüğünüz bir klavye arkadaşlar. Şöyle bunun tamamı klavye içerisindeki kalan donanım gibi düşünün. Sonra bir kablo çıkıyor işte sizin USB portunuza giriyor. Bundan sonrası artık bilgisayarda düşünebilirsiniz.
+
+67
+00:16:43,635 --> 00:16:52,175
+Şimdi, bunun tamamını silmeye çalışacaktım.
+
+68
+00:16:56,980 --> 00:17:12,940
+Aslında burada bir tarama mantığıyla işlem dönüyor. Yani siz klavye sonuçta bir giriş cihazı yani input output device başlığı altında input device'a denk geliyor.
+
+69
+00:17:13,619 --> 00:17:18,779
+Dolayısıyla siz bir şey bastığınız durumda bunun karşı tarafa bir sinyal olarak iletilmesi lazım.
+
+70
+00:17:19,619 --> 00:17:22,079
+Basıldı ve hangi tuşun basıldığı bilgisi.
+
+71
+00:17:22,576 --> 00:17:28,135
+Basıldı bilgisi bir durum bilgisi olarak düşünebilirsiniz.
+
+72
+00:17:28,316 --> 00:17:41,976
+Tıpkı ALU'da işlem yaptıktan sonra zero, carry ve overflow bayraklarının set olması gibi, burada da bir tuşa bastığında bir bitin bir olması, yani basıldı sinyalinin gitmesi gibi bir şey var.
+
+73
+00:17:44,115 --> 00:17:48,255
+Gerçekten hangi tuşa basıldığının bilgisinin karşı tarafa gitmesi durumu var.
+
+74
+00:17:48,255 --> 00:18:06,435
+Tabii ki bunu mikro işlemci sürekli bu yapıyı kendi yani bizim donanımızın içerisindeki gerçek işleri yapan bilgisayarın içerisindeki CPU gidip de sürekli klavyeyle ilgilenme durumuna gidemez.
+
+75
+00:18:06,576 --> 00:18:08,135
+Bunun sebebini söyleyebilir misiniz?
+
+76
+00:18:09,523 --> 00:18:16,763
+Neden burada CPU yerine başka bir mikrocontroller kullanarak bu iş yapılıyor?
+
+77
+00:18:20,884 --> 00:18:21,824
+Yolun var mı?
+
+78
+00:18:29,299 --> 00:18:51,519
+Peki, ben söyleyeyim. Şimdi burada CPU dediğimiz şey burada bir bilgisayar kasası veya anakartı. Düşünün ne demiştik? Bu buradan bir kabloya, buraya bağlanıyor. Normalde şurada mikro kontrol olmayabilirdi ama CPU'nun zaten kendine göre pek çok işi var.
+
+79
+00:18:51,988 --> 00:18:58,028
+İşte ne yapacak? Aritmetik işlemler yapacak, bir algoritma koşturuyorsunuzdur. Bunlarla ilgilenmesi lazım.
+
+80
+00:18:58,847 --> 00:19:07,128
+Bir de sürekli gidip burada butona basıldı mı basıldı mı deyip bu tarama işini yapmasına gerek yok.
+
+81
+00:19:07,128 --> 00:19:18,347
+Bu sebepten de siz buraya bir tane mikro denetleyici koyuyorsunuz ve bu bağımsız bir şekilde, CP'den bağımsız bir şekilde sürekli olarak basılıp basılmadığını kontrol edip
+
+82
+00:19:18,516 --> 00:19:41,596
+şey yapıyor, kendi içerisinde deneme yapıyor. Nasıl bir yapıda bunu kontrol ediyor onu söyleyelim. Bakın burada mikrocontroller'dan 7 tane bit çıkıyor dışarı. 3 tanesi dekodera geliyor. Dekodera 3 geldiğine göre 2 üzeri 3'ten 8 tane satırı bu adam seçemiş.
+
+83
+00:19:42,579 --> 00:19:58,559
+8 tane satırı seçebilir. Okey. Burada da 4 bit var. Burada da 4 bit olduğuna göre dışarıdan gelen kaynaklardan, 254 tane kaynaktan bir tanesini alıp çıkışa aktarabilir.
+
+84
+00:20:00,259 --> 00:20:05,119
+Şimdi buradaki çalışma stratejisi nasıl olacak? Onu ifade etmeye çalışalım.
+
+85
+00:20:07,700 --> 00:20:12,460
+Diyelim ki, decoder'ın sıfırıncısı buradan başlıyor, yedincisi buraya kadar gidiyor.
+
+86
+00:20:13,159 --> 00:20:16,480
+Yine multiplexer'ın sıfırıncısı buradan başlıyor.
+
+87
+00:20:18,259 --> 00:20:21,579
+Nasıl diyelim, ters mi oldu? Yok. Fark etmez.
+
+88
+00:20:22,019 --> 00:20:27,340
+Nokta nokta, iki üzeri on, iki üzeri dört eksi bire kadar da buraya gidiyor.
+
+89
+00:20:28,852 --> 00:20:35,912
+Şimdi en başta bir mikrocontroller hangi butona basıldığına dair anlaması gerekiyor. Peki bunu nasıl anlayacak?
+
+90
+00:20:36,472 --> 00:20:50,311
+Dekoder üstünde herhangi bir hattı enerjilendirecek. Enerjilendiği durumda eğer butona basılırsa buton burada MUX tarafına doğru o sinyali iletmiş olacak.
+
+91
+00:20:50,512 --> 00:20:55,572
+Butona basılmadıysa herhangi bir iletme söz konusu olmayacak. Şimdi bakın bir deneme yapalım.
+
+92
+00:20:56,596 --> 00:21:23,016
+Şimdi tarama mantığında en başta sıfırdan başladım. Sıfırı enerjilendirdim yani. Benim dekodurun sıfırını enerjilendirmem için ne vermem lazım? Sıfır, sıfır, sıfır vermem lazım. Verdim dekodura. Bu kısım bir, geri kalanlar lojik sıfır olacak şekilde enerji gitti. Yani şu hat üzerinde bir var ya da beş volt var ya da üç nokta üç volt var. Artık lojik bir seviyesi neyse o var.
+
+93
+00:21:23,796 --> 00:21:33,076
+Sen gidip şuradaki bir butona bastığın zaman burada kısa devre etmiş oluyorsun ve bu bir sinyali MOOCs'un girişine kadar gitmiş oluyor.
+
+94
+00:21:34,155 --> 00:21:42,036
+O zaman ne olacak? Ben burada bir tanesini seçip sonra MOOCs'da her birine gelmiş mi diye bakmam lazım.
+
+95
+00:21:43,635 --> 00:21:47,695
+Bakın şu an mesela sıfırıncı decoder çıkışını seçtim.
+
+96
+00:21:49,044 --> 00:22:03,423
+MUX'un sıfırıncı kanalını alıyorum. Mikro kontrolürle okuyorum. Okudum. Sıfır mı? Sıfır. Evet, tamam basılmamış o zaman. Şurada belki de Z harfi vardı. Basılmadığı için bir şey yapmadık.
+
+97
+00:22:03,759 --> 00:22:26,539
+Bunun yanına geliyorum. Şuradaki butona bakacağım. 0 mı? 0. Basılmadı. Peki bunun yanına nasıl geliyorum? Hemen onu şöyle izah edebiliriz. Bu decoder şu an hep 0.00'da kalıyor sabit bir şekilde. Tarama mantığı olduğu için MOOC'sa ben buraya sırayla şey veriyorum. İşte en başta 0.00 verdim. Şuna baktım.
+
+98
+00:22:27,284 --> 00:22:45,284
+Sonra 0, 0, 0, 1 verdim. Buna bakıyorum. Bunun seviyesini okudum. Mikrocontroller içerisinde değerlendirdim. 0 mı? 0. O zaman devam edebilirim. Bu arada buna hep devam etmem lazım zaten. Çünkü bir adam bir butona değil, birden fazla butona basıyor da olabilir.
+
+99
+00:22:48,564 --> 00:23:13,144
+Şurada 15. butona hatta geldik. 15. hatta bu adam buraya basılmış. Dolayısıyla bir bilgisi mikro kontroller içerisinde gidiyor. Bu adam kendi içerisindeki tabloda decoder'ın 0, 0, 0 ve multiplexer'ın 15 olduğu durum için hangi karaktere denk geldiğini biliyor.
+
+100
+00:23:13,748 --> 00:23:19,367
+Dolayısıyla artık bunu bilgisayara bilgi olarak gönderebilir şeklinde yorumlayabilirsiniz.
+
+101
+00:23:20,807 --> 00:23:24,488
+Şimdi bu kadar anlattıktan sonra size soru sormuş olayım.
+
+102
+00:23:25,827 --> 00:23:34,288
+Bu klavyenin bir taraması, tam tüm hücreleri taraması kaç döngüyle gerçekleşebilir?
+
+103
+00:23:36,508 --> 00:23:40,148
+Kaç kez dönmemiz lazım bunu okuyabilmemiz için?
+
+104
+00:23:42,516 --> 00:23:43,756
+2x16 mı hocam?
+
+105
+00:23:44,916 --> 00:23:58,996
+Evet, 8x16. Kaç tane aslında buton varsa her birini ayrı ayrı kontrol ettiğimiz için 8x16 kadar MOOC çıkısını gelip kontrol etmemiz lazım.
+
+106
+00:23:59,936 --> 00:24:07,235
+Ve en sonunda kontrol etme sonrasında da değerleri işte butona basıldı, kimlere basıldıysa bu bilgiyi göndermemiz lazım.
+
+107
+00:24:07,235 --> 00:24:08,096
+Bakın bu bir tur.
+
+108
+00:24:08,915 --> 00:24:18,816
+Bu belki çok kısa sürede gerçekleşecek bir şey. Belki değil. Neden çok kısa sürede gerçekleşiyor? Mikro işlemci adı üstünde mikrosaniyeler cinsinde bu işi yapıyor.
+
+109
+00:24:20,235 --> 00:24:24,076
+Sizin insan doğası gereği klavyeyi o kadar hızlı kullanma imkanınız yok zaten.
+
+110
+00:24:25,215 --> 00:24:30,796
+Yani bu zaten çok hızlı bir şekilde okunuyor ve bir tur okuma sonrasında bir kez...
+
+111
+00:24:30,836 --> 00:24:39,336
+Bu bilgi gönderildikten sonra bir kez daha okuma işine giriyorsunuz. Bu yüzden bu böyle sürekli olarak okunup karşı tarafa gönderilecek oluyor.
+
+112
+00:24:39,336 --> 00:24:56,336
+Siz bir butona mesela Word'de deneyebilirsiniz. Bir butona basılı tuttuğunuz sürece o her tarama sonrasında gelen bilgiyle ekrana Word dosyasında ZZZZ harfleri sürekli basılabiliyor, basılı oluyor durumda.
+
+113
+00:24:58,132 --> 00:25:13,531
+Hocam, peki var mı hani klavyeden klavyede şey farklı mesela renkürüm? Şu klavye 1 milisaniyede tarama yapıyor. Şu 0.1 milisaniyede tarzı bir veri var mı mesela genel olarak?
+
+114
+00:25:13,971 --> 00:25:20,132
+Ya onu klavyeye aldığın klavyenin özelliklerine bakarak şey yapabilirsin. Genel olarak öyle bir şey yok.
+
+115
+00:25:20,652 --> 00:25:21,831
+Bir standart yok bu alanda.
+
+116
+00:25:22,091 --> 00:25:26,851
+Evet yok. Yani şu mikro kontrollerin clock frekansı çok önemli mesela.
+
+117
+00:25:29,231 --> 00:25:32,211
+Ve işte tuş sayısı falan da önemli.
+
+118
+00:25:32,932 --> 00:25:36,692
+Ama bunlar ne olursa olsun belirli bir standartta zaten.
+
+119
+00:25:36,971 --> 00:25:40,791
+Sen istesen de o kadar hızlı şekilde hareket edemezsin elinden.
+
+120
+00:25:41,236 --> 00:25:50,896
+Yani klavyenin sana yetişememe durumu hiçbir zaman olamaz. En kötü bir klavyeyi alsam dahi bu söz konusu. Çünkü çok basit bir birim.
+
+121
+00:25:52,476 --> 00:26:02,836
+Bunu aslında sürme işi diyoruz. Drive etme. Burada satırı seçip sütunları sürüyoruz. Sırasıyla kontrol ediyoruz.
+
+122
+00:26:04,627 --> 00:26:19,727
+Ve onun sonrasında işlem sonucunu çekiyoruz. Oldukça basit bir şey ve bizim aynı zamanda bilgisayar donanımlarında gösterdiğimiz donanım birimleriyle açıklanabilecek şeyler. Bunu söyleyebiliriz.
+
+123
+00:26:20,387 --> 00:26:31,567
+Tabii ki burada bir aslında hem mekanik hem elektronik bir sistem var. Çünkü buton mesela mekanik bir şey. Sizin ona basmanın sonrasında bir şeyler oluyor.
+
+124
+00:26:32,819 --> 00:26:45,960
+Bir yandan da arka planda elektronik bir şey dönüyor. Giriş-çıkış birimleri her zaman böyle ya elektronik ya mekanik olacak diye bir şey yok. Gördüğünüz gibi hibrit bir şey de olabilir. İkisinin karışımı gibi.
+
+125
+00:26:52,019 --> 00:27:12,019
+Sonra, klavye ile ilgili söyleyeceğimiz şey bu kadar. Hardisk ile ilgili ufak konuşabiliriz. Tabii ki bizim anlatacağımız şeyler genelde SSD değil, Hardisk üzerine kurulu. Yani bu aslında...
+
+126
+00:27:12,756 --> 00:27:27,855
+Elektromekanik olarak manyetik disklerde bilginin tutulduğu durumu konuşuyoruz. Şurada örnek vermek açısından gösterebiliriz. İşte şu ekranda görüldüğü gibi bir şey var.
+
+127
+00:27:28,339 --> 00:27:41,619
+Bir manyetik disk var. Manyetik diski gösteren şurada bir iğne var. Manyetik iğne diyelim. Bunun ucu aslında okumanın veya yazmanın yapılacağı kısmı gösteriyor.
+
+128
+00:27:42,739 --> 00:27:52,879
+Adı üstünde manyetik disk olduğu için aslında bir veriyi yazarken veya okurken elektromanyetik bir alan uyguluyor ve o sahilde bilgiyi değiştiriyor gibi düşünebilirsiniz.
+
+129
+00:27:56,339 --> 00:28:03,819
+Aslında o diskin dıştan içe doğru farklı halkalar halinde ayrıldığını görüyorsunuz.
+
+130
+00:28:07,316 --> 00:28:21,296
+Bir sektör olmuş oluyor ve sektörün başlangıç ve bitiş noktaları da var. Bu başlangıç noktalarına track diyoruz. Mesela şuradan başlayıp şuraya kadar geliyormuş.
+
+131
+00:28:21,736 --> 00:28:28,355
+Manyetik iğne de burada ilgili yerlerde gezinerek aslında okumayı veya yazmayı yapabiliyor.
+
+132
+00:28:29,332 --> 00:28:51,592
+Bir elektromanyetik bir cihaz olduğu için aslında günümüzde çok fazla tercih edilmeme sebebi de var ama fiyatı çok uygun durumda. Yani SSD ile aslında her işi çözebilirsin tabii ki çözmeye çalışıyorsun ama hard disklerin de boyutlarına göre fiyatları çok uygun olduğu için onlar tercih ediliyor.
+
+133
+00:28:57,460 --> 00:29:16,080
+Başlığı kullanılmış. Birleşenleri gösteriliyor. Şöyle sektörleri görebilirsiniz. Şuradaki bunun ucundaki iğne bu halkalar arasında gezinerek veri okuma işini gerçekleştirecek.
+
+134
+00:29:16,692 --> 00:29:29,632
+Siz buna çok yakınlaşırsanız, siz normalde görmezsiniz, çok yaklaşırsanız o zaman belki mikroskopla falan o çizgileri görme imkanınız var. Yani sektörleri görme imkanınız var.
+
+135
+00:29:31,635 --> 00:29:39,276
+Tabii ki bu iş mekanik bir iş. Bunu sürebilecek bir elektronik bileşen de olmalı.
+
+136
+00:29:39,895 --> 00:29:48,435
+Neticede dışarıdan bunu bir hafıza birimi gibi gördüğünüz durumda dışarıdan adres bilgisi, okuma yazma isteği bilgisi.
+
+137
+00:29:49,236 --> 00:30:16,136
+Ve veri bilgisi gelebilir. Şey yazmak istiyorsan veri göndereceksin. Diyeceksin ki işte 5 numaralı adrese 10 değerini yaz. Şimdi bu adamın şu başlığı kullanarak hemen 5 numaralı adresin konumunu alması gerekiyor ve burada ilgili değeri yazması için de bir elektromanyetik alan uygulaması gerekiyor. İşte bu işleri yürütebilmek adına bir kart yapılmış durumda.
+
+138
+00:30:16,915 --> 00:30:43,096
+Bu kartı görebiliyorsunuz. Detaylı bilgi isteyenler sonradan bakabilir de tabii ki. Şöyle gösterelim. Aslında bu manyetik başlık gördüğünüz üzere elektromanyetik alanı bu şekilde uyguluyor ve oradaki ilgili bitin üzerinde bulunduğu bitin değişimini oraya bir alan uygulayarak şey yapabiliyor, halledebiliyor.
+
+139
+00:30:44,948 --> 00:30:46,428
+Şeklinde konuşabiliriz.
+
+140
+00:30:49,028 --> 00:30:52,988
+Tabii ki ilgisi olanlar bu konuda daha fazla devam edebilir, bakabilir.
+
+141
+00:30:54,668 --> 00:30:58,548
+Sonra ekranlarla ilgili konuşma durumumuz da var.
+
+142
+00:30:58,748 --> 00:31:01,908
+Ekran aslında hem bir giriş hem de çıkış birimi olabilir.
+
+143
+00:31:02,268 --> 00:31:07,548
+Yani bir dokunmatik ekransa mesela bastığınızda o bilgiyi göndermiş oluyorsunuz.
+
+144
+00:31:07,548 --> 00:31:10,548
+O da size sürekli bilgi gösterdiği için bir...
+
+145
+00:31:10,816 --> 00:31:13,636
+Çıkış cihazı şeklinde de düşünebilirsiniz.
+
+146
+00:31:14,516 --> 00:31:28,256
+Burada en eski monitörlerde, CRT monitör denilen monitörlerde aslında çoğunlukla böyle arkaya doğru uzadığını görürsünüz monitörlerin veya eski televizyonun.
+
+147
+00:31:28,256 --> 00:31:34,976
+Bunun sebebi en arkada bir elektron demeti ya da elektron tabancası olması.
+
+148
+00:31:36,339 --> 00:31:55,539
+Özellikle renkli bir ekranda çalışıyorsanız, 3 tane ana rengi kullanarak, bunları birleştirerek farklı renkler oluşturabiliyor oluyor. Bu 3 temel renk kırmızı, yeşil, mavi. Bu görüntüleme teknolojisinde sık kullanılan bir şey. Kameralarda ve telefonlarınızda kullanılıyor.
+
+149
+00:31:56,339 --> 00:32:09,159
+Burada, yalnız elektron tabii ki buradan fırlatılıyor. Bu elektronun gidip ilgili yere düşmesi lazım. Mesela bir tarama mantığında önce bu pikseli, bu bölgeyi basmak istiyorsunuz.
+
+150
+00:32:12,852 --> 00:32:21,092
+Belirli bir yönlendirme plakalarıyla yönlendirerek hop bunun yukarı doğru düşmesini sağlayabiliyorsun.
+
+151
+00:32:21,592 --> 00:32:35,132
+Yine bu plakaları sürekli tarayacak şekilde farklı enerjilendirdiğinizde aslında sırayla o değerleri buradan tüpten çıkan elektron tabancasından çıkan değerleri sırasıyla burayı
+
+152
+00:32:36,115 --> 00:32:45,096
+Basarak taramış oluyorsunuz. Bu yaptığımız işte aslında ekranı sürmek oluyor. Yine Drive ismiyle ifade ediliyor.
+
+153
+00:32:47,155 --> 00:32:59,915
+Şurada monitörlerle ilgili bir şey var. İşte belki buradan gösterebiliriz. Şu CRT monitör, cathode rate tüp diye geçiyor.
+
+154
+00:33:00,596 --> 00:33:09,955
+Bu eski aslında ekranlar bu şekilde çalışıyor ama yine de bunun nasıl çalıştığını göstermemiz lazım. Genel yapıyı bir anlayalım.
+
+155
+00:33:12,096 --> 00:33:17,536
+Şurada elektron tabancasını görüyorsunuz. Elektron tabancasındaki şeyleri.
+
+156
+00:33:19,188 --> 00:33:25,328
+Sürekli aşağı yukarı yönde yönlendirerek bu ışınları ilgili yere basmasını sağlayabiliyorsunuz.
+
+157
+00:33:25,468 --> 00:33:28,868
+Tabii ki bunu süren bir devre var içerisinde.
+
+158
+00:33:29,888 --> 00:33:36,948
+Monitörler sadece cutoff rate değil, LCD olarak da çoğunlukla günümüzde de zaten böyle bulunuyor.
+
+159
+00:33:37,448 --> 00:33:45,328
+Bunun en büyük avantajı tabii ki çok dar bir ince olması, daha az güç tüketmesi gibi şeyler.
+
+160
+00:33:46,003 --> 00:34:03,003
+Bunun mantığında da arkadaşlar aslında arka planda bir background light denilen bir şey var. Yani burada bir arka planda ışık basıyor. Bu ışık farklı polarizasyon kısımlarından geçerek...
+
+161
+00:34:03,200 --> 00:34:27,180
+Dikey ve yatay polarizasyon. Aslında bu biraz cathode raytli tüpteki CRT monitördeki gibi yönlendirme mantığıyla. Arkadan gelen ışığı manipüle ederek, yönlendirerek burada ilgili rengin çıkmasını sağlıyorsunuz. Paralel bir şekilde bunu yapıyorsunuz. Bu güzel bir şey oluyor dolayısıyla. En önde de bunun görüntüsü çıkmış oluyor.
+
+162
+00:34:29,460 --> 00:34:41,819
+Siz en arka tarafta plüoresan kullanırsanız başka oluyor. LED kullanırsanız başka oluyor. Yani background illumination dediğimiz arkada vereceğin ışığı kaynağı ne olacak?
+
+163
+00:34:42,399 --> 00:34:54,220
+Plüoresan kullanırsanız sizin daha önceki monitörleriniz de iki gibi olur. İşte LED monitör dediğimiz şey aslında arkada ışığı gerçekten daha kaliteli ve parlak.
+
+164
+00:34:54,612 --> 00:35:22,032
+vermesi için LED kullanılmasından kaynaklı diyebiliriz. Burada var mı onunla ilgili bir şey diye bakıyorum. Evet. Burada da aynı şeyi söylemiş. Bir background, backlight panel var. Arka plan ışığı. İşte bu LCD veya feloresan olabiliyor. Onun hemen önüne bir tane vertical polarizer ve şuraya da
+
+165
+00:35:22,612 --> 00:35:46,832
+Nerede? Bakıyorum. Horizontal polarizer veriyor. Böylelikle gelen ışığın dike ve yatay yöndeki bileşenlerini buralara enerjiler vererek ayarlayabiliyoruz ve bu sayede istediğimiz rengi istediğimiz piksele basmasını sağlayabiliyoruz. Bunları da isteyenler araştırabilirler diye söylüyorum.
+
+166
+00:35:49,139 --> 00:35:50,279
+Şöyle bir bakıyorum.
+
+167
+00:35:52,439 --> 00:35:54,460
+Sorusu olan varsa bu arada alabilirim.
+
+168
+00:35:59,411 --> 00:36:00,531
+Peki, yok galiba.
+
+169
+00:36:03,192 --> 00:36:11,131
+Şimdi bunların hepsi arkadaşlar CPU'nun data bası, adres bası ve kontrol bası üzerine bağlı.
+
+170
+00:36:11,131 --> 00:36:18,491
+Yani sizin bilgisayarınızın işlemcisi bunların her biriyle iletişime geçmek zorunda.
+
+171
+00:36:19,891 --> 00:36:22,131
+Bunlarla doğrudan iletişime geçmek yerine...
+
+172
+00:36:23,027 --> 00:36:27,188
+Arada bir interface denilen modül bulunuyor.
+
+173
+00:36:28,688 --> 00:36:41,907
+Bunun fiziksel karşılığı aslında sizin anakartınızda bir klavyeyi bağladığınızda o kablonun anakarttaki bağlandığı yeri ifade edebiliriz.
+
+174
+00:36:42,708 --> 00:36:54,648
+Burada mesela keyboard'tan sorumlu bir interfaz donanımı var. Bu donanım sayesinde CPU'ya biz bilgi göndermiş oluyoruz. Yani şöyle bir şey biraz daha açalım.
+
+175
+00:36:55,708 --> 00:37:09,327
+Keyboard kendi üzerinde biliyorsunuz mikro denetleyici var. Bu bilgi hazır olduğu zaman interfase aktarıyor. Interfase de CPU'nun boşta olduğu bir zamanda bu bilgiyi gönderiyor.
+
+176
+00:37:09,876 --> 00:37:29,496
+Diğer türlü nasıl olacaktı? İnterfays işin içinde olmasaydı bu bilgi keyboard üzerinde sürekli olacaktı. Ama belki CPU'nun çok önemli işleri var. Algoritma koşturuyor vesaire. Keyboardla ilgili bir şeyle uğraşmak istemiyor veya printer mesela. Yani çok acil bir şey olmadıkça printerla ilgilenmek istemiyor.
+
+177
+00:37:30,099 --> 00:37:52,760
+Bu durumda işte interfaşin olmaması böyle bir problem oluşturacak. Print üzerinde bu bilgi kalmaya devam edecek. Belki burada yeni bilgiler de gelecek ama depolanacak alan olmadığı için sıkıntılar oluşacak durumu var. Bu yüzden mutlaka interfaş var. Şimdi bunun daha iyi aklınızda bulunması için bir anakart size açayım dedim.
+
+178
+00:37:54,547 --> 00:37:59,728
+Mesela burada bir anakart var. Bu anakartın işlemcinin bağlanacağı yer mevcut.
+
+179
+00:38:00,667 --> 00:38:07,487
+İşte ne demiş? Şurada Intel bir şey var. Şurada RAM'leri bağlamak için bir bölge var.
+
+180
+00:38:08,127 --> 00:38:15,568
+PCI slotları var. Bir de gördüğünüz üzere USB portları var şuralarda.
+
+181
+00:38:16,788 --> 00:38:38,127
+Şuralarda USB portları vardır diye düşünüyorum. Şöyle var, evet. Şunun aslında yandan görünmüş hali bu, alt taraftaki gibi. Peki bu USB'yi buraya bağladığımızda bu bilgi nereye gidecek? Bakın şurada 2x0, iki tane USB'nin interface entegresi var.
+
+182
+00:38:38,612 --> 00:38:54,432
+İşte bu interfej dediğimiz şey yani bildiğiniz bir şey. Yazılım değil, donanımsal bir birim. Aslında oraya gidip orada bekliyor oluyor bilgiler. Ve gerektiği zaman CPU'ya gönderilecek gibi oluyor diyelim.
+
+183
+00:38:56,372 --> 00:39:03,811
+Hocam, doğru mu anladım diye teyit etmek için soruyorum da, bu interfej sayesinde interhap mekanizması mı düzenlenmiş oluyor aslında?
+
+184
+00:39:04,788 --> 00:39:23,728
+Benim aklıma öyle geldi. Interrupt da yapabilirsin. Pulling ile yine çekebilirsin. Pulling mantığını anlatacağız birazdan. O şekilde seçebilirsin. Veya DM gibi bir yöntemle de aktarabilirsin. Interface burada çeşitlilik sağlıyor senin dediğin gibi. İstediğin yapıyı kurgulayabilirsin bu durumda.
+
+185
+00:39:31,315 --> 00:39:40,495
+İşlemciyi olacak bir işlem çalıştırdığınızda klavyenizde bir şey yazıyorsunuz. Ekrana düşmüyor. İşlemci boşa düştüğünde mesela aralardan mesela harfler geliyor.
+
+186
+00:39:41,315 --> 00:39:45,315
+Evet, doğru. Doğru. Bizim bunu söylediğimiz şey...
+
+187
+00:39:46,132 --> 00:40:06,752
+Evet, doğru. Şöyle bizim söylediğimiz şeyi ben genelleştiriyorum ve bunu isterseniz öyle de yapabilirsiniz şeklinde ifade edelim. Şu anki durumda keyboard için dediği şey söz konusu. Gerçi interruptta da aynı şey olabilir mi? Interrupt'ın önceliğine bağlı olarak da değişebilir.
+
+188
+00:40:07,248 --> 00:40:13,807
+O durum. Şimdilik o kısmı bir rafa kaldıralım. Buradaki işleyişi anlayalım. Sonra haberleşme kısmına geçeceğiz.
+
+189
+00:40:14,887 --> 00:40:21,408
+Burada dolayısıyla interfaz bir aracı gibi düşünebilirsiniz. Burada şey yanlış yazılmış bu arada.
+
+190
+00:40:23,368 --> 00:40:31,807
+Şu olmayacaktı. Tek yönlü bir ok olması lazım. Çünkü keyboarddan input device adı üstünde bir kişi bir şey giriyor. Bu bilgi...
+
+191
+00:40:31,920 --> 00:40:48,960
+Arayüze aktarılıyor. Bu arayüzde aslında database'a bir değer göndermek durumunda. Okun yönünü takip ederseniz. Hepsi adres bası ve database'ı paylaşıyor. Dolayısıyla burada çok önemli bir durum söz konusu.
+
+192
+00:40:49,840 --> 00:40:58,820
+Herkes burada bir anda, bunu da bir input output device gibi görebilirsiniz. Manyetik diski veya hard diski.
+
+193
+00:41:00,275 --> 00:41:10,675
+Diyelim ki CPU şey yapmak istiyor, manyetik distten bir şey okumak istiyor. O zaman nasıl bir yol çizmesi lazım? Bu kadar karmaşık bir yapıda.
+
+194
+00:41:11,515 --> 00:41:26,775
+Neticede her birinin bir adresi olması lazım aslında. Her bir device'in bir adresi bulunması lazım. Bunun bir adresi var diyelim. X1 adresi, X2 adresi, X3, X4 adresi. O zaman ben bu adres basıp üzerinde X4'ü çıkacağım.
+
+195
+00:41:27,284 --> 00:41:45,724
+Ve bu manyetik diskle ilgili ne yapmam gerektiğini de control bus üzerinden söylemem lazım. Mesela manyetik disk için ne yapmam gerektiği bu. Aslında bir read write bir şey olabilir belki. Bitini göndermem gerekebilir. Okuyacağımı yazacağımı. Yazmak istiyorum. O zaman data bus'ı da çıkabilirsin.
+
+196
+00:41:46,504 --> 00:41:53,884
+Dolayısıyla bir kere adres bus'a X4'ü gören tüm herkes ne diyecek?
+
+197
+00:41:54,387 --> 00:42:08,148
+Ben değilim diyecek, ben değilim diyecek, ben değilim, bu benim diyecek. O zaman ne olacak? Bu bilgiyi çekebiliyor olacak. Bu şekilde çalışacak diyebiliriz.
+
+198
+00:42:15,123 --> 00:42:17,003
+Bunun üzerinden yine konuşuyor olacağız.
+
+199
+00:42:18,663 --> 00:42:23,083
+Bu interfesin iç yapısına epeyce bir konuşma durumumuz var.
+
+200
+00:42:25,083 --> 00:42:26,083
+Ve...
+
+201
+00:42:26,083 --> 00:42:28,923
+Bir dakika bakalım.
+
+202
+00:42:36,884 --> 00:42:43,963
+Interface'in iç yapısı şu şekilde gibi düşünebilirsiniz.
+
+203
+00:42:45,843 --> 00:42:49,563
+Yani bu kutuyu biz burada interface olarak görüyoruz.
+
+204
+00:42:50,203 --> 00:42:53,543
+Peki bu interface hangi birleşenlerden oluşuyor?
+
+205
+00:42:54,223 --> 00:42:58,703
+Bir kere CPU ya da işlemciye gidecek tarafı bunun sol tarafı.
+
+206
+00:42:59,203 --> 00:43:01,703
+HVD'ye bağlanacak tarafı da sağ tarafı.
+
+207
+00:43:02,291 --> 00:43:28,851
+Şimdi giriş çıkış birimlerinde neler olabilir? Ona bir düşünmemiz lazım. Bir kere port A ve port B gibi iki farklı port olabilir. Şimdi bu port kısmı aslında interfeysi dış dünyaya veri sağlayan kısmı gibi düşünebilirsiniz. Burada tabii ki iki farklı şey var. Register bulunuyor.
+
+208
+00:43:29,460 --> 00:43:43,360
+Bu şey olabilir mesela register 8 bitlik bir register olabilir. Port A register 8 bitlik olabilir. Burada giriş veya çıkış olarak belirli şeyleri programlayabilirsiniz.
+
+209
+00:43:44,403 --> 00:43:51,103
+Ne olabilir mesela? Sen bunu öyle bir devre bağladın ki bu port ucuna, bu port A ucuna.
+
+210
+00:43:51,864 --> 00:44:03,223
+İşte sıfırıncı, birinci, ikinci, üçüncü, dördüncü ve işte sekize kadar, yediye kadarki tüm kabloları her birini bir LED'e bağladın.
+
+211
+00:44:05,324 --> 00:44:10,723
+Her birinde bir LED olduğu için sen duruma göre istediğinde bunu yakmak istiyorsun.
+
+212
+00:44:11,152 --> 00:44:32,112
+İstediğinde söndürmek istiyorsun. Mesela şimdi o zaman bu portu sen çıkış olarak aslında kullanıyorsun. Başka durumda sen burada belki işte bir klavye gibi bir şey ya da 7 tane 8 tane buton bağlamak isteyebilirsin. 8 tane butonun sonuçları da buraya gelebilir.
+
+213
+00:44:32,980 --> 00:44:53,000
+Her bir butona basılıp basılmadığına dair bilgi gelebilir. O zaman buradaki portu input olarak mesela tanımlamış olabilirsin ya da tanımlaman gerekir. Dolayısıyla şey port A dediğiniz zaman aklınıza hemen şey gelmesi lazım. Girişi veya çıkışı ayarlanabilen bir birim.
+
+214
+00:45:00,980 --> 00:45:16,879
+Ayarlayabilirsin. Mesela burada bir LED yakmak istiyorsan o zaman mesela birisi sönük, birisi yanmış olsun, birisi sönük, birisi yanmış olsun, birisi sönük, birisi yanmış olsun diye bir şey ayarlamak istiyorsun.
+
+215
+00:45:16,879 --> 00:45:18,879
+Diyelim.
+
+216
+00:45:20,532 --> 00:45:44,952
+Şöyle bunu en yüksek anlamlı bitten itibaren şuraya daha düzgün bir şekilde ezeyim. 7. 6. 5. 4. 3. 2. 1. ve 0. bitler. Birisi sönüp, birisi yanmasını istiyorsun. Birisi sönsün, birisi yansın. Sönsün, yansın, sönsün, yansın istiyorsun mesela. Bu durumda bu ne olur? Şu kısım 4, 5 olur. Şu kısım da 5 olur.
+
+217
+00:45:45,940 --> 00:46:02,420
+Dolayısıyla bu 55H, sen port A register'ına 55H'ı yazdığın zaman, butonlar onun ucuna bağlı olan butonlar doğrudan bir yanıp diğeri sönecek hali gelmiş oluyor.
+
+218
+00:46:03,079 --> 00:46:12,680
+Çok basit bir mantık var dolayısıyla ama bunu yapmadan önce mutlaka burada bir çıkış donanımı olduğunu söylemen lazım. Bu kısım çok kilit.
+
+219
+00:46:13,300 --> 00:46:25,900
+Yani konfigüre etmen lazım. Port A'yı konfigüre etmen için de bakın burada bir kontrol register var. Sen bu kontrol register'ına en başta bir bilgi yazman lazım.
+
+220
+00:46:27,180 --> 00:46:38,900
+Diyelim ki kontrol register'ı şurada bulunuyor biliyorsunuz. Bunun iki tane biti var diyelim içerisinde. Sıfırıncı bit A portunun.
+
+221
+00:46:41,043 --> 00:47:06,623
+input ya da output olması durumunu seçiyor. Birinci portta işte B portunun input ya da output olma durumunu seçiyor. Ben biraz basit anlatmak için bu şekilde örnek veriyorum. O zaman ne yapman lazım? Senin bir kere bu IO device'i en başta ayağa kaldırabilmen için işte dışarıdan bir bilgi geleceksin.
+
+222
+00:47:07,411 --> 00:47:12,931
+Bu bilgide önce şu şekilde bir giriş vermen lazım.
+
+223
+00:47:13,611 --> 00:47:19,571
+Chip select'i seçmen gerekiyor ki bu interfejsi aktif hale getiresin.
+
+224
+00:47:20,471 --> 00:47:22,291
+O da nereden tanımlı oluyordu?
+
+225
+00:47:23,371 --> 00:47:25,651
+Her bir device'in farklı bir adresi vardı.
+
+226
+00:47:26,431 --> 00:47:34,751
+Sen buraya mesela X4 adresini çıktığın zaman X4 bununla ilişkili olduğunu anlayıp bunun chip select'ini bir yapıyor aslında.
+
+227
+00:47:35,347 --> 00:47:58,687
+İnterfays kısmında öyle bir durum söz konusu. Aklınızda canlanması açısından biraz daha iyi bir şekilde anlatalım. Şuradan bir adres bas geliyor. 8 bitlik belki bir adres geliyor. Bu adres bas, şurada bir adres çözücü devreye girecek.
+
+228
+00:48:02,195 --> 00:48:08,195
+Ve bu adres çözücü devrenin çıkışlarından bir tanesi chip select'in ucuna bağlı olacak.
+
+229
+00:48:08,855 --> 00:48:23,975
+Böylelikle adresi çözdüğünde buradaki ilgili interfeisin adresiyle eşleşiyor mu eşleşmiyor diye kontrol edip eşleşiyorsa eğer bu ilgili interfeisi aktif hale getirmesi gerekiyor.
+
+230
+00:48:25,043 --> 00:48:31,104
+Onun dışında okuma ya da yazma yapacağı bilgisi şunlar zaten kontrol bas üzerinden sağlanacak.
+
+231
+00:48:31,704 --> 00:48:33,224
+Kontrol bas üzerinden.
+
+232
+00:48:33,764 --> 00:48:36,983
+Kimisi böyle iki farklı şeyde alabilir.
+
+233
+00:48:37,423 --> 00:48:39,104
+Kimisi de tek bir giriş alabilir.
+
+234
+00:48:39,844 --> 00:48:42,084
+Read write diye geçer şöyle.
+
+235
+00:48:43,543 --> 00:48:49,644
+Tek bir girişle de sıfır verdiğinde yazma, bir verdiğinde okuma yapacak şekilde çalışabilir.
+
+236
+00:48:49,784 --> 00:48:50,384
+Fark etmez.
+
+237
+00:48:51,188 --> 00:49:02,847
+Bir de bu adam dışarıdan iki tane register alıyor. Bu register yine adres çözümleme devresi içerisinden çıkacak değerlerle bağlantılı olacak.
+
+238
+00:49:02,847 --> 00:49:14,847
+Bu sayede de aslında adamın verdiği adresin belirli bir kısmını alıp işleyip bu...
+
+239
+00:49:15,092 --> 00:49:24,092
+İnterfeysle bu adam ne yapmak istiyor? Bunu anlayacak ve ona göre işleme alacak. Buraya kadar sorusu olan var mı?
+
+240
+00:49:25,652 --> 00:49:33,832
+Hocam diyelim ki mesela iki tane klavye bağlanıyor bir cihaza. İkisi aynı interfeyse mi bağlanıyor yoksa ayrı birinin kendi interfeysi mi var?
+
+241
+00:49:35,092 --> 00:49:46,372
+Aslında interfaz yongası ikisini de idare ediyor o durumda. Yani USB interfaz entegresi onlara farklı adresler vermiş oluyor.
+
+242
+00:49:47,592 --> 00:49:48,952
+Tamamdır, anlatım hocam.
+
+243
+00:49:52,563 --> 00:49:54,763
+Tamam, başka soru da olan var mı?
+
+244
+00:50:00,340 --> 00:50:03,739
+Şimdi burada bu şekilde söyledik.
+
+245
+00:50:05,559 --> 00:50:08,440
+Evet, register'ları konuşalım dedik.
+
+246
+00:50:08,847 --> 00:50:30,867
+Port A register'ı, Port B register'ı bu adam dışarıya çıkacak, atıyorum butonların hangilerini yakacak, hangilerini söndürecek. Bununla ilgili bir bilgi olabilir veya dışarıdaki butonları hangilerine basıldı, hangilerine basılmadı. Bu bilgiyi bir input bilgisi olarak alabilir. Bunlar buralarda. Dışarıdan gelen bilgiler dolayısıyla buralarda tutuluyor.
+
+247
+00:50:31,447 --> 00:50:36,067
+Veya dışarıya yazılacak bilgiler, kontrol edeceğimiz bilgiler.
+
+248
+00:50:37,043 --> 00:50:45,903
+Bu A ve bu B portunu nasıl kullanacağımızın bilgisini Control Rejister içerisinde en başta set etmemiz lazım.
+
+249
+00:50:47,463 --> 00:50:52,884
+Bir de Status Rejisteri var ki bu çoğunlukla işte Keyboard'un durumunu tutar.
+
+250
+00:50:53,704 --> 00:50:56,064
+Bizim Status Flex gibi düşünebilirsiniz.
+
+251
+00:50:57,064 --> 00:50:59,704
+İşte Keyboard'a basıldı mı basılmadı mı?
+
+252
+00:51:00,043 --> 00:51:03,903
+Bunun bilgisini öğrenmek istiyorsam Status Rejisteri okumam lazım.
+
+253
+00:51:04,659 --> 00:51:18,799
+Bunu okumak için de ne vermem lazım? Cip selekte bir vermem lazım. Şuna bir, buna bir verirsem bakın otomatik olarak aslında ilgili bilgi şeye bağlanmış oluyor.
+
+254
+00:51:18,999 --> 00:51:23,879
+Statüs rejistörü üzerine bağlanmış oluyor ve onun bilgisini çekebiliyor oluyorsunuz.
+
+255
+00:51:25,259 --> 00:51:30,299
+Yine aynı şekilde kontrol rejistörü okuyabilirsin, yazabilirsin. Onun bilgisini zaten şurada sağlayacaksın.
+
+256
+00:51:31,731 --> 00:51:41,512
+Eğer 0, 1 verirsen bu durumda şuraya bağlamış oluyorsun ve ister yazma, ister okuma durumunu buradan ayarlayabiliyorsun.
+
+257
+00:51:43,132 --> 00:51:44,972
+Şeklinde söyleyelim.
+
+258
+00:51:48,884 --> 00:51:54,423
+Bakayım, atlamayacak şekilde tüm her şeyi söylemek istiyorum.
+
+259
+00:51:56,023 --> 00:52:00,123
+Tuşa basılı olma durumu, statüs registri üzerinden. CPU'ya aktarılabilir dedik.
+
+260
+00:52:04,115 --> 00:52:14,695
+Evet, şimdi mesela şu durumda diyelim ki klavyeden biz sürekli bir butona basıldı mı basılmadı mı mantığında bir şey yapmak istiyoruz.
+
+261
+00:52:15,735 --> 00:52:23,755
+Bu durumda klavyeye basıldıysa da klavyede basılan şeyin bilgisini almak istiyoruz. Bir durumun bilgisini almak istiyoruz.
+
+262
+00:52:23,755 --> 00:52:26,235
+Bu durumda yapmamız gereken ilk şey.
+
+263
+00:52:27,092 --> 00:52:53,132
+Şu olacak, status register'ını kontrol edeceğiz. Sürekli olarak buradan okuma yapacağımı, yazma yapmayacağımı belirteceğim ve şuralara bir bir, bir vereceğim. Bakın şu bir bir bir üçlüsü ve ondan sonra şuraya okuma, buraya yazma yapmayacağımı, okuma yapacağımı söyleyeceğim. Söyledim ve artık bu bilgi bana geldi.
+
+264
+00:52:53,811 --> 00:53:14,192
+Basıldı mı diye bakıyorum, basılmadı. 0 dönüyor bana, status register'a. Basıldı mı okuyorum, 0. Okuyorum, 0. Basılmadı demek ki. Şu an yaptığım şey aslında pooling mantığı. Yani sürekli olarak CPU şey yapıyor, sürekli olarak kontrol ediyor gibi düşünün. Interfesi kontrol ediyor bu arada.
+
+265
+00:53:15,635 --> 00:53:28,635
+İnterfeiste neden basıldığı bilgisi gelmiyor? Çünkü klavye mantığında düşünecek olursanız bu bir tarama süresi alıyor. Taramak bir süre alacak. 5 mil saniye de olsa sonuçta bir süre alıyor.
+
+266
+00:53:28,635 --> 00:53:41,435
+Bu süre boyunca ilk çalıştırdığınız hiçbir şeye basmadınız. Dolayısıyla sıfır olarak zaten koşullanmış durumda. Sen buraya bir şey bastın, tarama bittikten sonra bu bilgiler gönderilecek.
+
+267
+00:53:41,775 --> 00:53:55,596
+Gönderildikten sonra, interfaz üzerinde bu bilgi gelmiş oluyor ve interfaz de işte buradaki port A üzerine bağlıysa bu bilgi burada set olmuş oluyor.
+
+268
+00:53:55,596 --> 00:54:06,516
+Yani port A içerisinde neye basıldığı bilgisi var. Belki işte bunların ASCII karakterleri, ASCII karşılığı olacak.
+
+269
+00:54:09,523 --> 00:54:14,883
+Şey yapabilecek. Hangi butona bastığını anlama imkanı olacak.
+
+270
+00:54:19,123 --> 00:54:20,403
+Sorusu olan var mı?
+
+271
+00:54:28,628 --> 00:54:36,528
+Bir de şu adres çözümleme devresi nasıl çalışıyor, nasıl kurgulamamız lazım bunu anlatalım.
+
+272
+00:54:38,108 --> 00:54:46,608
+Şimdi bir kere çoğunlukla adres bas 8 bit olmaz daha fazla olur ama ben hadi 8 bitlik bir bas gibi düşüneyim.
+
+273
+00:54:47,251 --> 00:55:12,692
+Yani aslında 8 bitlik bir işlemci mimarisi olduğunu düşünüyorum. Yani databası da 8 bit bu adamın, adres bası da 8 bit. Oldukça basit bir mikro işlemci demek ki. Bu adam 8 tane şey gönderiyor, bit gönderiyor. Sen bu 8 biti alıp çözümleyip şeyi sağlaman lazım. Şu ilgili işi sağlaman lazım.
+
+274
+00:55:13,268 --> 00:55:36,448
+Şurada şeyi siliyorum. Bunları siliyorum. Mesela adam. Önce şeyi belirlememiz lazım bu arada. Buradaki bu interfaysin adresini, bu cihazın adresini belirlememiz lazım. Ne diyebiliriz? İşte 20.
+
+275
+00:55:38,387 --> 00:56:03,787
+22H diyelim mesela. Buranın adresi buymuş. Açacak olursak da 0 0 1 0 0 0 1 0'mış. Bunun adresi bu. Adam da gerçekten bu adresi buraya yazmış olsun. 0 0 1 0 0 0 1 0 dışarıdan bilgi olarak geldi.
+
+276
+00:56:05,300 --> 00:56:31,880
+Siz bunu nasıl pars edeceksiniz ve chip select'in çalışmasını sağlayacaksınız. Bu kısımda arkadaşlar şöyle bir mantık var. Adam eğer 8 bitlik bir adres yapısına sahipse, bunun tamamı 8 bit ise, 8 bitin son 2 biti, en düşük anlamlı 2 biti yani, aslında R0,
+
+277
+00:56:32,628 --> 00:56:44,648
+RS0 ile RS1'i gösteriyor oluyor. Geri kalan 6 biti ise, chip select için kullanabilecek bir bilgi oluyor. Bu kısım çok önemli bir kısım.
+
+278
+00:56:45,208 --> 00:56:59,648
+Yani bizim şey üzerinde düşünecek olursak, şu son iki bilgi, bir sıfır dediği şey, aslında RS0'ın sıfır olma durumu,
+
+279
+00:56:59,891 --> 00:57:12,112
+RS1'in de 1 olma durumunu gösteriyor. Bu durumda ne olacak? RS1 0, bu 0. Eğer chip selecte gelirse, control register ile ilgili bir işlem yapmak istiyormuş demek ki adam. Onu anlıyorum.
+
+280
+00:57:13,251 --> 00:57:22,411
+Geri kalanların olması durumunda chip selecte aktif hale getirmek istiyorum. Bunu nasıl yaparım? Bakın bu da şöyle yapılıyor.
+
+281
+00:57:27,219 --> 00:57:32,019
+Adres 4, adres 3, adres 2 gibi düşünün.
+
+282
+00:57:33,599 --> 00:57:40,860
+Adres 7'nin bilgisi adres 7'nin değilini alıp getiriyorum.
+
+283
+00:57:42,400 --> 00:57:45,619
+Adres 6'nın değilini alıp getiriyorum.
+
+284
+00:57:46,516 --> 00:57:59,516
+Bunun için bir minitörüm aslında oluşturmuş gibi olacağım. Adres 5'in kendisini getiriyorum. Adres 4'ün değilini getiriyorum. Adres 3'ün değilini getiriyorum.
+
+285
+00:57:59,516 --> 00:58:07,516
+Ve adres 2'nin değilini getiriyorum. Bunların hepsini bir AND kapısına uygularsam,
+
+286
+00:58:07,635 --> 00:58:16,715
+Artık bunun çıkışı bir chip select ile bağlanabilir oluyor. Şu an aslında adret çözücü devreyi tasarlamış olduk. Çok basit olduğunu görebiliyorsunuz.
+
+287
+00:58:18,576 --> 00:58:27,976
+Buradaki adres 1 olarak giden otomatik olarak RS1'e bağlanacak. Adres 0 olarak giden otomatik olarak RS0'a bağlanacak.
+
+288
+00:58:29,556 --> 00:58:48,396
+Geri kalan adreslerde adres çözücüye girecek. Mesela bu eğer doğru bir şekilde gelirse, tam benim şeyle uygun bir adreste gelirse, sıfır verilecek değili bir, sıfır verilecek değili bir, AB zaten bir. Bunların değilleri de bir geleceği için çipserek de aktif hale geçirmiş oluyor.
+
+289
+00:58:49,536 --> 00:58:55,715
+Yani bu interfeyse seçtim, ben bu cihazla çalışmak istiyorum anlamına gelmiş oluyor.
+
+290
+00:58:56,755 --> 00:58:58,576
+Bu kısım okey mi? Anlaşıldı mı?
+
+291
+00:59:05,012 --> 00:59:05,952
+Bir cevap yok.
+
+292
+00:59:11,188 --> 00:59:13,768
+Hocam, çok minik üzerinden geçebilir miyiz temel olarak?
+
+293
+00:59:14,147 --> 00:59:16,807
+Bir tane örnek çözelim o zaman, öyle yapacağınıza.
+
+294
+00:59:19,047 --> 00:59:22,867
+Bakın, bir tane örnek çözüyorum. Şuraya bir tane CPU çizdim.
+
+295
+00:59:23,788 --> 00:59:26,268
+CPU, bir tane burada bir interfaz var.
+
+296
+00:59:28,768 --> 00:59:32,047
+Bu interfaz, keyboard'un interfazı. Interface 1 dedik.
+
+297
+00:59:32,467 --> 00:59:56,547
+Burada ona paralel bağlı başka bir interfej var. Buna da iki, belki bu da ekrana bağlı. Çok önemli bir şey değil. Sonuçta bu adamın bir adres bası var. Bu adres basları paylaşıyorlar. Bir tane şöyle kırmızıyla çizelim. Bir tane data bası var. Data baslarını paylaşıyorlar. Bir tane de kontrol bası var. Kontrol baslarını paylaşıyorlar.
+
+298
+01:00:00,019 --> 01:00:25,480
+adreslerini söylüyorum. 5CH ve 7A, 7A'da demeyeyim, 7C'ydi galiba, 7CH dedim. Şimdi bunların açılımlarını söyleyecek olursak, siz de kontrol edin, ben bazen hata yapıyorum. 010C dediğine göre 1101 mi oluyor? Ne dersiniz?
+
+299
+01:00:32,052 --> 01:00:34,112
+C, 1, evet doğrusu.
+
+300
+01:00:34,672 --> 01:00:37,792
+Hocam, 1, 1, 0, 0 mı? 1, 1, 0, 1 mi? Kafam karışıyor.
+
+301
+01:00:38,292 --> 01:00:40,192
+1, 1, 0, 0 galiba.
+
+302
+01:00:42,692 --> 01:00:43,211
+Tamam.
+
+303
+01:00:45,512 --> 01:00:54,892
+Bu da aynı şey olacak o zaman. Ama 7 olacak bu kısmı. 0, 1, 1, 1, 1, 1, 0, 0. C kısmı zaten aynı olacak.
+
+304
+01:00:57,211 --> 01:00:58,552
+Adresleri bunlarmış yani.
+
+305
+01:00:59,284 --> 01:01:15,184
+Şimdi, dolayısıyla bu adam 8 bitlik bir yapıya sahip. 8 bitlik, adres 8 bitlik bir şey yapısına sahip. Onu görebiliyorsun adam egzadesimal olarak 2 bitle göstermiş durumda.
+
+306
+01:01:18,644 --> 01:01:22,144
+Buradaki mesela interab 1 ile ne yapmak istiyor?
+
+307
+01:01:22,675 --> 01:01:37,215
+Bunu anlamak istiyorsan, RS0 burada 0 oluyormuş. RS1 de 0 oluyormuş. Bu durumda iki sınırda 0 olma durumunda ne yapacak? Port A register ile ilgili bir işlem yapmak istediğini anlıyor.
+
+308
+01:01:39,895 --> 01:01:48,935
+Bir dakika. Yok, bu kısımlar önemli değil. Bu kısımlar önemli değil. Kafam karıştı ilk etapta.
+
+309
+01:01:49,556 --> 01:01:57,615
+Bu adamın adresi, asıl chip select'i aktif hale getirecek adresi aslında bunun sol tarafındaki kısım.
+
+310
+01:01:58,756 --> 01:01:59,796
+Bunu söylemiş olalım.
+
+311
+01:02:01,336 --> 01:02:04,356
+Şunlar önemli bir şey ifade etmiyor.
+
+312
+01:02:05,076 --> 01:02:05,996
+Bu da aynı şekilde.
+
+313
+01:02:07,036 --> 01:02:11,256
+Bunun sol tarafındaki 6 bit önemli olmuş oluyor.
+
+314
+01:02:11,256 --> 01:02:13,135
+Şimdi ben buraya geldim.
+
+315
+01:02:15,155 --> 01:02:16,796
+Diyelim ki ne gireyim.
+
+316
+01:02:18,291 --> 01:02:39,911
+5E'yi adres hattı üzerinden çıktım. 5E'yi parse edecek olursak 0, 1, 0, 1, 1, 1, 1, 1 şeklinde F, pardon F diye. Kafa karıştı olmasın F olsun.
+
+317
+01:02:39,911 --> 01:02:45,731
+Bu şekilde dönüştü. Şimdi bu adam bununla ne yapmak istiyor onu anlayacağım.
+
+318
+01:02:46,096 --> 01:02:55,295
+Bu hatta bunu koyuyorsa en düşük anlamlı biti RS0'ı gösteriyor. Onun öncesi RS1'i gösteriyor demektir.
+
+319
+01:02:55,795 --> 01:03:05,275
+Buna göre bu 1-1 çiftinde bu adam demek ki status register üstünden durumu okumak istiyor. Belki keyboard'a basılıp basılmadığını okumak istiyor. Tamam.
+
+320
+01:03:06,235 --> 01:03:10,956
+Peki geri kalan şuradaki bilgisi hangi cihazla eşleşiyor?
+
+321
+01:03:12,148 --> 01:03:23,648
+Yukarıdaki ile işleşiyor mu? Evet. Bununla işleşiyor mu? Hayır. O zaman interface 1 ile iletişime geçmesi gerekecek. Buna göre de bir chip select seçmesi lazım.
+
+322
+01:03:24,708 --> 01:03:37,828
+Yani chip select oluşturucu bir devre tasarlamak lazım. Bunu nasıl tasarlayabiliriz? Mesela buraya bir enkoder bağlayabiliriz belki.
+
+323
+01:03:44,659 --> 01:04:05,699
+Veya şöyle de yapabiliriz. Şuradaki biti aynen alıp, bunu aynen alıp, şunu aynen alıp, buradan gelenin değilini alıp, bunu aynen alıp, bunun değilini alıp, bunları end kapısına bağlayıp bir çıkış oluşturma durumumuz mümkün.
+
+324
+01:04:09,364 --> 01:04:21,264
+Bir şey vardı. Bir örneği hatırlamaya çalışıyorum arkadaşlar. Hemen örneğe bakayım. O örneği bulduğum zaman şey yapacağım. Size çözeceğim birazdan.
+
+325
+01:04:27,411 --> 01:04:30,931
+Enkodernu vardı orada diye düşündüm. Bakıyorum.
+
+326
+01:04:32,871 --> 01:04:35,911
+Dekoder. Dekoderm kullanılmış. Tamam.
+
+327
+01:04:41,972 --> 01:04:47,792
+Şimdi bu şifreyi çözmek için bir dekoder kullanmak istesek nasıl bir şey kullanabiliriz?
+
+328
+01:04:48,272 --> 01:04:53,492
+Mesela bazı dekoderler var ki tek enable'u yok. 3 tane enable'u var.
+
+329
+01:04:53,492 --> 01:04:56,492
+Bu enable...
+
+330
+01:04:57,172 --> 01:05:15,432
+Enable 3, Enable 2, Enable 1 bitleri oluyor. Bir de bunların ABC şeklinde girişleri oluyor. Dekoder kısmında. Eğer Enable'dan hepsine bir bir bir vermezsem çıkış hiçbir şekilde üretmiyor. O yüzden bunlara bir bir bir verilmesi lazım.
+
+331
+01:05:15,432 --> 01:05:23,232
+Şimdi bakıyorsun en önemli farklılığın olduğu kısım neresi? Şu ikisini de ikisini yan yana yazayım.
+
+332
+01:05:23,860 --> 01:05:47,860
+Hangisine basıldığını anlamaya çalışıyoruz ya. Birisi bu, birisi 0, 1, 1, 1, 1, 1. Şimdi düşünüyorum, şu üçü de bir, şu üçü de bir. O zaman ben bu ikisinden herhangi birisi geldiğinde herhangi bir interfeysi seçmem lazım. Birinci interfeysi veya ikinci interfeysi. O durumda ben bunun...
+
+333
+01:05:48,947 --> 01:06:10,627
+Kaçıncı bit oluyor? Şu I adres 7, adres 6, adres 5, adres 4, adres 3, adres 2. Demek ki adres 3, adres 2 ve adres 4'ü buraya versen o zaman bu enkoder bu durumlarda her ikisinde de 1-1-1 olduğu için aktif hale geçmiş oluyor.
+
+334
+01:06:10,827 --> 01:06:16,407
+Diğer durumda başka bir interfeste olmadığı için pasif halde yani çalışmıyor olacak.
+
+335
+01:06:16,884 --> 01:06:22,384
+Peki bunlardan ABC şeyine girişler nasıl olacak?
+
+336
+01:06:22,664 --> 01:06:31,684
+İşte buraya A7'yi, buraya A6'yı, buraya A5'i koyarsam o durumda C en düşük anlamlı bu arada.
+
+337
+01:06:31,684 --> 01:06:33,544
+Bu da ona göre şey yapıyor.
+
+338
+01:06:37,619 --> 01:06:58,603
+1.0'da ikinci çıkışı bu adam aktif hale getirecek. Bu adamda ise 0.1.1'de üçüncü çıkışı aktif hale getirecek. Yani ben bu adres çözümleyici devrede ikinci kısmı interap 1'in chip seleğine bağlarsam, 3'te de...
+
+339
+01:07:00,724 --> 01:07:10,264
+İkinci interfesin chip select ucuna bağlarsan o zaman ilgili şekilde interfesi ya da cihazı seçmiş oluyorum otomatik olarak.
+
+340
+01:07:12,384 --> 01:07:14,963
+Burada bir sorunuz varsa alabilirim.
+
+341
+01:07:27,059 --> 01:07:33,579
+Peki, soru yok galiba. Bir 10 dakika ara verelim arkadaşlar. 10 geçe tekrar devam ederiz.
+
+342
+01:17:46,771 --> 01:17:49,231
+Evet. Geliyor mu arkadaşlar sesin?
+
+343
+01:17:50,851 --> 01:17:52,011
+Geliyor hocam.
+
+344
+01:17:52,731 --> 01:17:55,884
+Tamam. Dolayısıyla sizin...
+
+345
+01:17:59,604 --> 01:18:08,023
+Sizin adres basınıza, data basınıza ve kontrol basınıza, 3 farklı basınıza bağlı bir sürü farklı arayüzler olabilir.
+
+346
+01:18:09,283 --> 01:18:16,884
+Bu arayüzlerin her biri bir giriş çıkış birimiyle ilgilenebilir.
+
+347
+01:18:17,587 --> 01:18:27,907
+Bir adresi olacak dolayısıyla o adresini söyledikten sonra o adrestekinin chip select'i 1, geri kalanları 0 olacak şekilde bir adres çözümleyici devresi bulunuyor.
+
+348
+01:18:28,688 --> 01:18:32,327
+Ve bu sayede iletişime geçebiliyor CPU bunlarla.
+
+349
+01:18:33,368 --> 01:18:37,407
+Şimdi şeyi anlamaya çalışayım. Genel yapıyı anladık.
+
+350
+01:18:39,147 --> 01:18:41,323
+Aslında şu anda biraz...
+
+351
+01:18:44,020 --> 01:18:58,020
+Adres çözümleme mantığı üzerine kafa yoğurmuş gibi olduk. Ama gördüğünüz üzere iki farklı haberleşme durumu var. Birincisi keyboard. Bir taramayı yapıp...
+
+352
+01:18:58,771 --> 01:19:12,431
+İnterfays'e bu bilgiyi aktarmak durumunda. İnterfays üzerinde sürekli registerlar üzerinde o bilgi saklanıyor ve CPU istediği durumda buraya gidip bu bilgiyi çekebilme imkanı var.
+
+353
+01:19:13,152 --> 01:19:20,731
+Aynı şekilde CPU mesela ekrana bir şey bastıracak olduğu zaman teker teker kendi tarama yapmıyor.
+
+354
+01:19:20,971 --> 01:19:23,731
+CPU hop interfays'e atıyor bu bilgiyi.
+
+355
+01:19:24,047 --> 01:19:32,827
+İnterfays üzerinden CRT display belirli aralıklarla çekip o tarama işlemini kendi yapmış oluyor diye söyleyebiliriz.
+
+356
+01:19:33,327 --> 01:19:38,167
+Dolayısıyla iki farklı haberleşme mevcut. Birincisi interfays ile CPU arasında bir haberleşme.
+
+357
+01:19:38,768 --> 01:19:44,708
+Diğeri ise interfays ile keyboard ya da giriş çıkış birimleri arasındaki haberleşme.
+
+358
+01:19:44,708 --> 01:19:51,648
+Şimdi biz burada bir şey yapalım. Genel olarak.
+
+359
+01:19:52,015 --> 01:20:04,935
+İnterfeste CPU arasında haberleşmeyi ifade etmeye çalışalım. Böyle bir haberleşme yaklaşımına ihtiyaç var. Çünkü az önce de söylediğimiz gibi CPU her zaman boşta olmuyor.
+
+360
+01:20:05,375 --> 01:20:13,415
+Çoğunlukla hatta çalışıyor oluyor. Hangi durumda nasıl kullanılsa iyi olabilir. Bununla ilgili farklı stratejiler.
+
+361
+01:20:13,939 --> 01:20:22,180
+Geliştirilmiş. Bunları söyleyelim. Tabii ki avantaj, dezavantajları var. Hepsini birlikte değerlendiriyor olacağız. Şimdi birincisi şu.
+
+362
+01:20:24,180 --> 01:20:30,920
+Şu. Bir stroke denilen bir kontrol işareti var. Bir de database zaten bulunan bir şey.
+
+363
+01:20:32,139 --> 01:20:37,239
+Source unit veri üreten birim. Destination unit ise.
+
+364
+01:20:37,615 --> 01:20:54,296
+Veriyi alan birim şeklinde düşünebilirsiniz genel olarak. Bu genel isimlendirmiş. Siz buna ne derseniz ona göre değişebilir. Mesela source unit burada işte şu an için ne diyelim bir in keyboard diyelim. Şu anda salladım.
+
+365
+01:20:57,355 --> 01:21:00,796
+Destination unit de burada interfase denk gelsin.
+
+366
+01:21:01,300 --> 01:21:27,180
+Veya CPU da olabilir. Şu an için. Interface arada olmadığı durumda CPU'yu da yazabiliriz. Genel olarak bu veriyi elde eden birim nasıl olacak da karşıya bu veriyi iletecek? Şimdi birinci yol bu. Birinci yolda aslında stroke control işareti var. Bu işareti almak isteyen kişi oluşturuyor.
+
+367
+01:21:27,988 --> 01:21:40,972
+Bakın, şurada bir yükselen kenara oluşmuş. Oluştuktan sonra, source unit, database'a o bilgiyi bırakıyor. Bakın, source...
+
+368
+01:21:41,076 --> 01:21:50,835
+Bir destination unit strobe işaretini üretir. Bu bir belirli uzunlukta kare dalga ya da dikdörtgensel darbeyi düşünebilirsiniz.
+
+369
+01:21:51,456 --> 01:22:01,995
+Bu darbeyi source unit yükselen kenarına aldıktan sonra veriyi hemen basa çıkıyor ve bu bası destination unitin almasını bekliyor.
+
+370
+01:22:02,595 --> 01:22:04,815
+Bakın basa çıktığı aralık burası.
+
+371
+01:22:06,836 --> 01:22:23,636
+Bu şekilde gerçekleşiyor. Sonuçta strobun bitmesinin ardından şunun düşen kenarının düşüğün kenarının belirli bir süre sonrasında da database'dan source unit datayı kaldırıyor.
+
+372
+01:22:23,636 --> 01:22:34,512
+Yani aslında source strobun yükselen kenara ben bu veriyi almak istiyorum, veriyi bas açık demek oluyor. Düşen kenarı ise...
+
+373
+01:22:34,511 --> 01:22:52,191
+Aldın, alacağımı şu aralıkta okudun. Artık kapatabilirsin demiş oluyor. Bunu destination initiated transfer şeklinde ifade edebiliriz. Burada peki sıkıntı ne olabilir sizce? Ne dersiniz?
+
+374
+01:23:02,292 --> 01:23:03,432
+Var mı gı fikriniz?
+
+375
+01:23:14,068 --> 01:23:25,448
+Bakın burada Source Unit'e Destination Unit şöyle bir şey diyor. Ben bu bilgiye erişmek istiyorum diyor ama belki de Source Unit'in içerisindeki bilgi eski bir bilgi.
+
+376
+01:23:26,568 --> 01:23:34,728
+Aslında güzel olan şey ne? Source Unit'in işini bitirdikten sonra Destination Unit'e bitirdim, yeni bilgi var, al demesi.
+
+377
+01:23:36,007 --> 01:23:38,427
+Dolayısıyla burada öyle bir dezavantaj var.
+
+378
+01:23:39,252 --> 01:24:01,971
+Doğrudan ben okumak istiyorum diyor. Karşı tarafında çıkmasını bekliyor. Ama veri hazır mı, değil mi onu bilemiyoruz. Burada öyle bir soru işareti var. İkincisinde, source initiated transfer. Source dediğim şey neydi? Keyboard mesela. Keyboard şunu diyor. Hiçbir şey söylemeden data basa veriyi çıkıyor. Bakın, önce.
+
+379
+01:24:02,707 --> 01:24:25,867
+Bir tur keyboard taramasını tamamladı. Tüm veriyi basa çıktı. Sonra bastan çıktığından emin olduktan sonra belirli bir müddet sonra da strop üretmiş oluyor. Bu stropu ürettikten sonra Destination'ın da bunu almasını bekliyor bu aralıkta. Bakın Destination'a hiçbir söz hakkı yok.
+
+380
+01:24:27,283 --> 01:24:44,923
+Yani buradaki şuraya keyboard, buraya CPU dersek, burada bu adam bunu alıyor mu almıyor mu hiç bilmiyorsunuz. Dolayısıyla bu da B, Source Initiated Transfer'in bir dezavantajı olmuş oluyor.
+
+381
+01:24:45,716 --> 01:24:55,316
+Klavyede tuşa bastığında CPU'ya data bassa stroke işareti üretiyor. Karşı tarafında almasını bekliyor demiştik.
+
+382
+01:24:57,336 --> 01:25:06,236
+Şimdi bunların daha advanced versiyonları var, daha iyi versiyonları var. Onlar da 3. ve 4. versiyon olarak burada bulunuyor.
+
+383
+01:25:06,916 --> 01:25:11,916
+Şimdi biraz da onlara bakalım. Aslında daha çok kontrol işareti kendi aralarında paylaşırlarsa
+
+384
+01:25:12,851 --> 01:25:19,832
+Tırnak içerisinde kendi aralarında daha çok diyalog kurabilirlerse o zaman daha kontrollü bir yapı oluşabilir.
+
+385
+01:25:21,931 --> 01:25:27,631
+Bunun Destination Initiative transfer versiyonu nasıl olabilir?
+
+386
+01:25:29,152 --> 01:25:34,791
+Şimdi öncelikle Destination Unit yani CPU. Şuna da Keyboard diyelim.
+
+387
+01:25:38,323 --> 01:25:47,543
+Destination unit bir request atıyor, talep atıyor. Ben veriyi istiyorum diyor. Bakın yükselen kenarını görebilirsiniz.
+
+388
+01:25:51,283 --> 01:25:59,543
+Yükselen kenarı gördükten sonra, keyboard bu bilgiyi alır almaz, databasa hemen veriyi çıkıyor.
+
+389
+01:26:00,523 --> 01:26:06,703
+Veriyi çıktıktan bir süre sonra da veriyi çıktım bilgin olsun diye karşı tarafa cevap veriyor.
+
+390
+01:26:08,463 --> 01:26:10,623
+Arkasından şunları takip edebilirsiniz bakın.
+
+391
+01:26:11,144 --> 01:26:13,683
+Önce request geldi, sonra adam veriyi çıktı.
+
+392
+01:26:14,183 --> 01:26:17,003
+Veri bu aralıkta var, databas üzerinde.
+
+393
+01:26:17,779 --> 01:26:33,559
+Sonra ben bunu çıktım diye bir mesaj gönderdi. Bu mesajı aldıktan sonra artık her şey yolunda gibi düşünüyor CPU ve request'i düşen kenara bırakıyor, bitiriyor.
+
+394
+01:26:34,195 --> 01:26:46,136
+Bu aralıkta, şu ikisinin aralığında bu bilgiyi okuyor. Okuduktan sonra, reply de zaten belirli bir süre sonra otomatik olarak sonlanmış olacak.
+
+395
+01:26:47,275 --> 01:26:59,036
+Burada bir bu tür haberleşme stiline handshaking ismi veriliyor. Aslında bir eş sıkışma yöntemi gibi karşılıklı bir diyalog söz konusu olduğu için bu geçerli.
+
+396
+01:27:00,595 --> 01:27:11,715
+Tekrar söylüyoruz. Destination unit veriyi talep ediyor. Source unit request'i alır almaz veriyi basa çıkıyor. Sonra veriyi çıktım diye reply gönderiyor.
+
+397
+01:27:13,475 --> 01:27:25,335
+Reply gönderiyor. Request kesilince de reply da sonlanmış oluyor. Böylelikle bu iş bir paket göndermiş oluyorsunuz. Bir veri bası, data basında bir veriyi paylaşmış oluyorsunuz.
+
+398
+01:27:25,335 --> 01:27:27,916
+Bunun bir de Source Initiative versiyonu var.
+
+399
+01:27:28,595 --> 01:27:45,535
+Kaynak, keyboard, en başta verisi hazır olur olmaz. Bunu database'a çıktı. Database'a çıktıktan sonra da source unit benim verim hazır diyerek CPU'yu dürtüyor.
+
+400
+01:27:50,452 --> 01:28:09,472
+Destination'da ben müsaitim şeklinde bir ve almaya başladım şeklinde bir sinyal gönderiyor. Bu sırada da şu ikisinin aralığında aslında veri transfer edilmiş oluyor. Bunların her biri tabii ki kullanılabilir yöntemler.
+
+401
+01:28:13,235 --> 01:28:19,615
+Bu sayfadakiler, handshating barındıranlar, her biri farklı bir amaç için kullanılabilir. Bunu söyledim.
+
+402
+01:28:20,815 --> 01:28:21,916
+Sorusu olan var mı burada?
+
+403
+01:28:27,444 --> 01:28:29,024
+Sayımız da 6'ya düşmüş.
+
+404
+01:28:32,544 --> 01:28:37,784
+Buraya kadarki kısımlar hep aslında paralel bus'lardı.
+
+405
+01:28:39,184 --> 01:28:41,464
+Paralel interfazlerle ilgilendik.
+
+406
+01:28:41,764 --> 01:28:42,304
+Sebebi ne?
+
+407
+01:28:42,664 --> 01:28:43,884
+Database diyoruz bakın.
+
+408
+01:28:44,104 --> 01:28:46,464
+Burada belki 8, belki 32 bit var.
+
+409
+01:28:47,384 --> 01:28:50,524
+Yani 32 tane kablo aslında karşı tarafa bağlı.
+
+410
+01:28:51,252 --> 01:29:03,192
+Dolayısıyla veri çıkıyor ya burada. Şu aralıkta veri çıktığı durumda aslında 32 kabloda ilgili veriler güncellenerek karşı tarafa aktarılmış oluyor. Buna paralel haberleşme ismi veriyoruz.
+
+411
+01:29:04,492 --> 01:29:15,332
+Database şeklinde paylaşıyor. Bakın burada da bir paralel haberleşme var. Sebebi ne? Bu da database üzerinden interfeyslere veri aktarımı var. Paralel bir haberleşme söz konusu.
+
+412
+01:29:17,971 --> 01:29:44,171
+Paralel olarak haberleşmek durumunda değil, seri haberleşme de yapılabilir ki çoğunlukla keyboarddan interfeise yapılan haberleşme stili, şu ikisi arasındaki stili seri haberleşme ile oluyor. Neden? Çünkü tek bir kabloya gidip bilgisayara bağlıyorsunuz. Bu tek bir kablo ile iletilmiş oluyor. Zaten USB arayüzü de seri bir arayüzdür diye söylüyorum.
+
+413
+01:29:45,524 --> 01:29:59,043
+Seri haberleşmenin avantajı, şimdi şöyle gösterebiliriz ikisini. İki tane mikro denetleyici bir bir arasında haberleştirmek istiyorsunuz ya da iki mikro işlemciyi ya da bir interfaz ile bir mikro denetleyici fark etmez.
+
+414
+01:30:01,364 --> 01:30:10,503
+Aralarına 32 tane hat çekerseniz bunların her biri verileri paralel olarak karşıya geçer ve paralel haberleşme olur.
+
+415
+01:30:11,731 --> 01:30:18,212
+Ama yoksa bir kablo üzerinden bunu gönderirsen 32 bitlik veriyi o zaman da seri haberleşme yapmış oluyorsun.
+
+416
+01:30:19,132 --> 01:30:26,792
+Peki nasıl oluyor da 32 bitlik veriyi tek kabloda iletebiliyorum veya 8 bitlik veriyi tek kabloda iletebiliyorum?
+
+417
+01:30:26,792 --> 01:30:32,152
+Bu arada çok affedersiniz arkadaşlar.
+
+418
+01:33:31,315 --> 01:33:44,635
+Affedersiniz arkadaşlar. Bölüm başkan yardımcısı olduğum için böyle ekstra dekanlıktan falan aranma durumu oluyor. O sırada sizi bekletiyorum. Kusura bakmayın. Ben devam edeyim.
+
+419
+01:33:44,635 --> 01:33:57,715
+Şimdi seri haberleşme durumunda size şu soruyu sorayım. Yukarıda 32 biti aynı anda 1 Aralık'ta gönderebilme durumu var ama seri haberleşmeyle bunu nasıl yapabiliriz? Kim söyleyebilir?
+
+420
+01:34:11,923 --> 01:34:38,044
+Cevap yok. Ben söylemiş olayım. Şimdi karşı tarafın sizin ne ilettiğini, nasıl ilettiğini anlamanız için bazı şeylere ihtiyaç var. Bir kere bu karşılıklı haberleşebilmek için iki kablo olmak zorunda. Tek kablo da demeyeyim, iki kablo. Birisi bunun transmit'i, diğeri de receive'i. Bu transmit edecek, iletecek. Bu da dolayısıyla receive edecek, alacak.
+
+421
+01:34:38,496 --> 01:34:47,695
+Bu transmit edecek, bu da receive edecek gibi böyle iki farklı kablo olmuş olacak. Kim kime veri aktaracak, onunla ilişkili bir şey de var tabii ki.
+
+422
+01:34:49,155 --> 01:35:00,136
+En başta, bakın burası çok önemli, aslında iki mikrodenetleyicin ya da iki işlem biriminin de belirli bilgileri paylaşıyor olması lazım.
+
+423
+01:35:00,136 --> 01:35:05,316
+Hangi hızla haberleşecek, başlangıç ve bitiş koşulları neler olacak?
+
+424
+01:35:06,323 --> 01:35:22,623
+Sonra bir pakette göndereceğim bit sayısı kaç olacak? Her iki tarafta protokolü kullanacağım seri haberleşme protokolünü biliyor olması lazım. Bunun gibi bir düşünce var.
+
+425
+01:35:28,275 --> 01:35:31,875
+Bir şeyi karşı tarafa gönderecek diyelim şu kanal üzerinde.
+
+426
+01:35:32,515 --> 01:35:37,115
+Ve 8 bitlik bir data paketini göndereceğini her iki tarafta biliyor.
+
+427
+01:35:37,995 --> 01:35:39,355
+Buna göre konfigüre edildi.
+
+428
+01:35:40,655 --> 01:35:48,795
+Bu durumda bakın hattı veri göndereceğini söylemek adına hattı sıfıra çekti.
+
+429
+01:35:49,716 --> 01:36:02,596
+Bu aslında start bit yani başlayacağım anlamına geliyor. Karşı taraf bunu alınca bu adam normalde database ya da haberleştiğim kablo 1'de duruyordu.
+
+430
+01:36:02,596 --> 01:36:16,796
+Bunu sıfıra çekti. Demek ki haberleşme başlıyor diyerek kendi hazırlığını yapacak. Bunu gördükten sonra artık her biti teker teker arka arkaya zaman bölmeli şekilde yolluyor oluyor adam.
+
+431
+01:36:17,268 --> 01:36:37,448
+En başta aslında en düşük anlamlı biti gönderecek LSB. Sonra onun yanındaki biti gönderdi. Bakın her biri bir aslında zaman aralığında gönderiliyor. Bunu da lojik seviyeyle ifade ediyor. Önce LSB ya da sıfırıncı biti gönderdi. Birinci biti gönderdi. İkinci bit.
+
+432
+01:36:37,908 --> 01:36:47,628
+3. biti gönderdi, 4. biti gönderdi, 5. biti gönderdi, 6. biti gönderdi ve 7. biti gönderdi.
+
+433
+01:36:48,668 --> 01:36:56,307
+Sen bunu alıp ters çevirip sayının kaç olduğuna bakabilirsin. Neden? Çünkü en yüksek anlamda burası olduğu için böyle yazmak gerekiyor.
+
+434
+01:36:56,307 --> 01:37:02,768
+0, 0, 1, 1. Dolayısıyla bu kaç oldu?
+
+435
+01:37:05,939 --> 01:37:09,340
+Şu kısımda 8, 10 yani A.
+
+436
+01:37:10,036 --> 01:37:34,416
+Burası da 3. A3 baş değerini sen elde etmiş oluyorsun. Sana bu bilgi gelmiş oluyor. Peki burada sonlanacağını nereden biliyor? Birincisi 8 biti de aldı. 8 biti aldıktan sonra bundan sonra stop bitinin gelmesini bekliyor. İki tane eğer lojik bir varsa bazen bir tane de kural olarak koyulabiliyor. Bu durumda haberleşmem bitecek şeklinde konuşuyor.
+
+437
+01:37:34,996 --> 01:37:36,956
+Öyle bir protokol var.
+
+438
+01:37:37,376 --> 01:37:39,155
+Buna haberleşme protokolü diyoruz.
+
+439
+01:37:39,896 --> 01:37:47,676
+Seri haberleşmede iki tarafta ortak bir clock paylaşmadığı için asenkron bir şekilde haberleşmiş oluyorlar.
+
+440
+01:37:47,676 --> 01:37:53,256
+Yani kendi içlerinde bir senkron durum söz konusu değil.
+
+441
+01:37:53,416 --> 01:38:01,615
+Eğer bir de bunun dışında adam karşı tarafa clock sinyalini paylaşırsa o zaman senkron bir haberleşme haline dönüşebilir.
+
+442
+01:38:02,131 --> 01:38:10,311
+O zaman işte çok hızlı, çok daha yüksek sayılarda verileri arka arkaya gönderebilirsiniz.
+
+443
+01:38:10,931 --> 01:38:25,591
+Ama siz clock paylaşmazsanız burada, o zaman burada az önce bahsettiğim gibi küçük küçük paketler halinde bir hata olmaması adına daha temkinli bir şekilde veriyi karşı tarafa göndermeniz lazım.
+
+444
+01:38:26,532 --> 01:38:28,131
+Bunun altını çiziyorum özellikle.
+
+445
+01:38:29,524 --> 01:38:46,184
+Senkron haberleşmede her iki taraf da aynı clocklarla haberleşiyor. Az önce söylediğiniz gibi paketler daha uzun oluyor ama asenkron haberleşmede daha kısa paketler halinde gönderiyor diye söyleyebiliriz.
+
+446
+01:38:46,899 --> 01:39:06,140
+Bakın mesela burada bir örnek var. Bu güzel bir örnek. İzleyebilirsiniz bunu. CPU var. Şurada bir interfeys var. Bakın interfeysin de mutlaka bir mikro kontrolörü oluyor. Çünkü onu da yönetecek bir şey olması lazım. Keyboard kısmında bir mikro kontrolör var.
+
+447
+01:39:10,228 --> 01:39:18,947
+Keyboard, clock ile karşı tarafa bağlanmış. Dolayısıyla bunun cloku, bunun clona bağlandığına göre bu adam senkron bir haberleşme yapıyor.
+
+448
+01:39:19,367 --> 01:39:28,827
+Clock paylaşımı varsa senkron haberleşme. Ground'u bağlamış, power'u bağlamış güç kablosunu ve bunun dışında bir de seri veriyi bağlamış.
+
+449
+01:39:29,407 --> 01:39:37,747
+Power ile ground zaten çoğunlukla bulunur. Clock var olabilir, bazen olmayabilir. Burada var, o zaman senkron haberleşme diyeceğiz, senkron.
+
+450
+01:39:38,547 --> 01:39:45,487
+Karşı tarafa tek bir kablo aktarılıyor. O zaman senkron seri haberleşme ismini vereceğiz.
+
+451
+01:39:46,607 --> 01:39:58,607
+Demek ki neymiş? Klavye, interfaz tarafına bilgisini senkron olarak ve seri haberleşme ile gönderiyormuş diye söylüyoruz.
+
+452
+01:40:03,604 --> 01:40:09,724
+İnterfays arasındaki haberleşme mutlaka burada asenkron olmak zorunda.
+
+453
+01:40:10,924 --> 01:40:18,644
+Çünkü CPI'nın tek işi buradaki interfayslerle haberleşmek değil. Onu söylemiş olalım.
+
+454
+01:40:20,224 --> 01:40:22,684
+Sorunuz var mı herhangi bir sormak istediğiniz bir şey?
+
+455
+01:40:33,971 --> 01:40:50,192
+Bir de USB hub'lar var biliyorsunuz. Aslında sizin burada bir tane, iki tane USB portunuz oluyor. Ama siz bunu çoğullamak istiyorsunuz. Hop bir hub alıyorsunuz. O şekilde çoğullayabiliyorsunuz.
+
+456
+01:40:51,539 --> 01:41:06,500
+Bunlar arkadaşlar aslında yaklaşık 128 tane USB portuna kadar çıkartabiliyorsunuz. Bu her biri için ayrı bir adres tanımlıyor. Dolayısıyla sizin işinizi çözebiliyor.
+
+457
+01:41:06,500 --> 01:41:15,920
+Tabii ki USB hub'ı eğer çok yüksek hızlı yapıları aynı anda kullanmak istiyorsanız böyle bir şeye imkan vermeyecektir.
+
+458
+01:41:19,024 --> 01:41:45,703
+Altında joystick de olsun, mouse de olsun, mikrofon olsun, speaker olsun falan gibi böyle daha basit görece işler varsa onlarda sorun olmaz. Mesela çok yüksek hızlı bir kamera, iki kameraya aynı anda USB hub'a bağlarsanız, istediğiniz kadar güç verseniz dahi o veri çok yoğun geleceği için USB haberleşme hızının üstüne çıkar. Limitleri zorladığınız için de veri aktarımı kesilir bir anda.
+
+459
+01:41:46,323 --> 01:41:54,103
+Böyle bir şey yaşadığım için söylüyorum. Basit işler yapıyorsanız buradaki gibi sorun yok diyebiliriz.
+
+460
+01:41:55,683 --> 01:42:05,763
+Şu kısımları geçtim. Evet, gelelim şeye. Veri okumak istediğimde pooling mantığında nasıl veri okuyabilirim?
+
+461
+01:42:05,763 --> 01:42:11,663
+Bu kısma gelelim. Şu an şöyle bir durum düşünün arkadaşlar.
+
+462
+01:42:15,315 --> 01:42:29,615
+Var, interface var. Interface'in altında data register ve status register diye bir şey var. Burada bir flag var ve IO device'da ilgili durum var mı yok mu, buton basıldı mı basılmadı mı diye onu kontrol etme durumumuz olabilir.
+
+463
+01:42:30,995 --> 01:42:34,075
+Şeklinde bilgiler olduğunu söyledik.
+
+464
+01:42:35,455 --> 01:42:38,175
+Interface'de ready kısmı varmış.
+
+465
+01:42:39,215 --> 01:42:40,235
+Tamam, bir de acknowledge.
+
+466
+01:42:41,332 --> 01:42:43,352
+Kısmı varmış demiş. Tamam, okey.
+
+467
+01:42:44,432 --> 01:42:48,392
+Şimdi buradaki algoritmaya göre ilerlersek nasıl çalışacak onu görelim.
+
+468
+01:42:53,747 --> 01:43:18,627
+CPU, interfaceden keyboard bilgisini çekmek istiyor. Ne yapacak? Tabii ki status register'ı önce basıldı mı basılmadı mı diye kontrol edecek. Sürekli buna göre bir konfigürasyon yaptı. Keyboard'un bağlı olduğu adresi seçmesi lazım öncelikle. Atıyorum 50H adresini seçecek şekilde adres basa çıktı.
+
+469
+01:43:19,347 --> 01:43:24,047
+Ve burada okuma yapacağını söyledi, yazma yapmayacağını söyledi.
+
+470
+01:43:24,467 --> 01:43:26,988
+Status register'ını oku dedi. Okudu.
+
+471
+01:43:27,768 --> 01:43:29,907
+CPI içerisinde çekti data bus üzerinden.
+
+472
+01:43:30,587 --> 01:43:32,947
+Ve bunun en düşük anlamda bitine bakacak.
+
+473
+01:43:33,887 --> 01:43:35,507
+Flag bit diyelim buna.
+
+474
+01:43:36,167 --> 01:43:39,688
+Bu flag bit 0 ise butona basılmadığı anlamına gelir.
+
+475
+01:43:40,387 --> 01:43:43,347
+Veya interfaz üzerinde güncellenmemiş olabilir belki.
+
+476
+01:43:43,347 --> 01:43:46,228
+Sen bunu eğer pooling mantığıyla yapıyorsan.
+
+477
+01:43:46,612 --> 01:44:13,011
+Sürekli bunu kontrol etmen gerekir. Statüs rejisine bak, flag bitini check et. Var mı? Yok. Var mı? Yok. Sürekli burada dönüyorsun. Sürekli sorguluyorsun. Yani CPU'nun işi gücü yok sanki tırnak içerisinde. Bu adam bu işle uğraşıyor gibi oluyor. Tamam. Sonra ne olacak? Eğer basıldıysa flag 1 olacak. Flag 1 olunca o zaman basıldığını bildiğin için
+
+478
+01:44:13,716 --> 01:44:22,615
+Data register içerisinde bu adamın bir data register var şurada. Bu bilgi aslında neyi basıldığı söylüyor. ASCII karakteri var burada.
+
+479
+01:44:22,615 --> 01:44:30,836
+Keyboard'un. Okuyorsun, bunu, bu veriyi memoriye aktarıyorsun.
+
+480
+01:44:32,884 --> 01:44:36,923
+Daha sonra onunla ilgili bir işlem yapıyorsan onu yapabilirsin.
+
+481
+01:44:37,863 --> 01:44:42,724
+İşte keyboard işte şuna basıldıysa programı sonlandır falan diyebilirsin. O başka bir şey.
+
+482
+01:44:44,283 --> 01:44:54,884
+Sonra operasyon bitti mi? Hayır. Sürekli olarak sen keyboardta basılan şeyi ekrana yazdıracaksan sürekli olarak bu döngü dönüyor oluyor.
+
+483
+01:44:55,283 --> 01:45:09,323
+Dolayısıyla burada aslında yazdığınız şey algoritma biraz efektif olmamış oluyor. Bunu söyleyebiliriz. Peki bunun daha efektif versiyonu nasıl olurdu? Yorum yapmak isteyen var mı?
+
+484
+01:45:14,931 --> 01:45:19,391
+Bugün bayağı kötüyüz. Çok az kişi var ve yorum da gelmiyor.
+
+485
+01:45:22,091 --> 01:45:23,791
+Orada mısınız diye sorayım.
+
+486
+01:45:26,231 --> 01:45:27,631
+Buradayız hocam, dinliyoruz.
+
+487
+01:45:28,271 --> 01:45:32,331
+Tamam. [öğrenci]'den emin olduk. Sorun yok.
+
+488
+01:45:34,231 --> 01:45:35,591
+Yazıyoruz. [öğrenci] burada.
+
+489
+01:45:43,604 --> 01:46:10,644
+Aslında dersin başına doğru bir arkadaşın söylemişti. Biz bunu böyle sürekli CPU yoruyor. CPU'nun zaten kendi üzerinde yapması gereken pek çok iş var. Bu biraz onun işlerine göre amelilik gibi kalıyor tırnak içerisinde. Dolayısıyla burada acaba interrap tabanlı bir veri aktarımı yapsak nasıl olurdu şeklinde bir düşünceye gidebiliriz. 19'da var demişim, yok.
+
+490
+01:46:11,796 --> 01:46:36,536
+Chapter 10'un 19'unda. Chapter 10'a gidelim. Chapter 10. Şunun mu? 19. slide'a bakalım. Yok, burada da yok. Şöyle bir sonraki de bakalım. Burada da Chapter 10 yok. Neden öyle yaptık?
+
+491
+01:46:44,051 --> 01:46:45,372
+Belki burada görürüz.
+
+492
+01:46:47,692 --> 01:46:48,771
+Hah, süper.
+
+493
+01:46:50,192 --> 01:46:56,152
+Bir interrap konfigürasyonunda CPU nasıl çalışıyordu? Bunu söyleyelim.
+
+494
+01:46:56,292 --> 01:46:58,891
+Dışarıdan interraplar gelebilir, farklı kaynaklardan.
+
+495
+01:47:00,051 --> 01:47:06,492
+Hangi kaynaktan gelirse gelsin, CPU'nun aslında girişine geliyor.
+
+496
+01:47:07,631 --> 01:47:09,971
+CPU'ya bir giriş olarak geliyor.
+
+497
+01:47:10,868 --> 01:47:28,868
+Bir de her komutu işlettikten sonra o komutun bitiminde bir bit oluşuyor. Bununla bitti. Bir de siz kendi içerisinde enable interrupt bitini bir yaparsanız o zaman işte interruptta düşmüş oluyorsunuz.
+
+498
+01:47:35,507 --> 01:47:57,927
+Interrupt oluşturmuş oluyorsunuz. Bakın, Interrupt'ı, CB'ü ben Interrupt için hazırım sinyali verdi. Buradaki bilgi de aslında pek çok kaynaktan gelebilir ya, bunlardan hangisi en öncelikli ise onun Interrupt vektör adresini gönderiyor. Çok affedersiniz.
+
+499
+01:48:39,764 --> 01:48:46,764
+Evet, buna binaen arkadaşlar, şimdi şöyle bir yapı üzerinde konuşabiliriz.
+
+500
+01:48:49,764 --> 01:48:52,084
+Şöyle diyelim bakalım.
+
+501
+01:49:03,380 --> 01:49:13,760
+Bu kesme yapısını isterseniz arkadaşlar şöyle yapalım. Bugün katılımcı sayısı da çok az oldu. Kesme yapısını da şu anda bırakalım şu kısımdan.
+
+502
+01:49:15,619 --> 01:49:27,460
+Muhtemelen bununla ilgili benim bir ek ders yapmam gerekecek. Şimdi dekanlıktan da çağırıyorlar. Maalesef burada dersi bırakmak durumundayım ama mutlaka ders yapacağım bu kısmı, yapacağım, bitireceğim yani.
+
+503
+01:49:28,083 --> 01:49:54,983
+Bunu ben size daha sonradan paylaşıyor olacağım. Buraya kadar herhangi bir sorunuz olursa siz benimle daha sonra da paylaşabilirsiniz. Maillerim her zaman açık durumda. Dersin ne zaman yapılacağını da klasm üzerinden size paylaşırım diye düşünüyorum. Özellikle müsait olduğunuz bir aralık var mı diye ders programından bakacağım. Ona göre ilerleyebiliriz.
+
+504
+01:49:59,188 --> 01:50:00,728
+Katılımınız için teşekkür ederim.
+
+505
+01:50:02,008 --> 01:50:03,908
+Biz teşekkür ederiz hocam. İyi günler.
+
+506
+01:50:04,328 --> 01:50:05,708
+İyi günler hocam.
+
+507
+01:50:07,848 --> 01:50:10,628
+[öğrenci] yazmış. Slayt'ta var.
+
+508
+01:50:11,488 --> 01:50:16,248
+Notunuzu belki gündermek istedim. Tamam. Teşekkür ederim [öğrenci]. Şimdi yazdığını gördüm.
+
+509
+01:50:18,488 --> 01:50:19,307
+İyi günler hocam.
