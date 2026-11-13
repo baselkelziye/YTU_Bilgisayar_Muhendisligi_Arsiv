@@ -1,0 +1,3191 @@
+1
+00:00:26,963 --> 00:00:28,103
+Arkadaşlar,
+
+2
+00:00:33,140 --> 00:00:35,140
+Günaydın hocam.
+
+3
+00:00:35,820 --> 00:00:39,039
+Hadi bakalım, iyisiniz. İnşallah.
+
+4
+00:00:41,019 --> 00:00:42,100
+İyi hocam, siz nasılsınız?
+
+5
+00:00:42,820 --> 00:00:47,799
+[kişisel bilgi]
+
+6
+00:00:49,060 --> 00:00:55,400
+Şimdi elimde bir liste var ama önemli değil. Şu an katılanlardan sunumu olan var mı içinizde?
+
+7
+00:00:57,588 --> 00:00:58,347
+Benim var.
+
+8
+00:00:58,828 --> 00:01:16,048
+[öğrenci]. Tamam [öğrenci], senle başlayalım istersen. Bir kameranı aç. Önce bir şeyimi hatırlayayım. 15 dakikalık da süremiz var biliyorsunuz. Bakayım. Sağdan da baktım, soldan da baktım. Tam çıkaramadım. Tamamdır. Hadi başlayalım.
+
+9
+00:01:18,908 --> 00:01:20,707
+Raporunu koydun değil mi Drive'a?
+
+10
+00:01:21,487 --> 00:01:22,748
+Sonundan sonra yükleyeceğim.
+
+11
+00:01:22,748 --> 00:01:23,508
+Tamam, okey.
+
+12
+00:01:31,891 --> 00:01:32,491
+Evet.
+
+13
+00:01:38,739 --> 00:01:40,019
+Sonunu görebiliyorsunuz değil mi?
+
+14
+00:01:40,120 --> 00:01:42,639
+İyiyim, görüyorum. Ters bir durum olunca söylerim.
+
+15
+00:01:43,219 --> 00:01:54,280
+Tamam. Merhaba, ben [öğrenci]. Bugün size Multileared Image Representation makalesini anlatmaya çalışacağım elinden geldiğince.
+
+16
+00:01:56,099 --> 00:02:06,240
+Sonunun akışı bu şekilde olacak. Öncelikle kısa bir özetle başlayıp, daha sonra basamaklı sıkıştırma, rezicol kavramı, kullanılan yöntem.
+
+17
+00:02:06,739 --> 00:02:15,639
+Bütçe tahsisi, en iyi temel fonksiyon çözüm seçimi. Daha sonrasında yapılan bir örnek ve genel deneyler ve sonuçlardan bahsedeceğim.
+
+18
+00:02:17,980 --> 00:02:26,219
+Bu makalede pürüzsüz ve dokulu özelliklerin bir karışımını içeren görüntüleri verimli bir şekilde kodlama sorunu ele alınmış.
+
+19
+00:02:27,519 --> 00:02:31,659
+Görüntü kodlama problemine çok katmanın temsiliyle yeni bir çözüm sağlanmış.
+
+20
+00:02:32,307 --> 00:02:42,288
+Bir görüntünün pürüzsüz bölgeler katmanı, dokular katmanı gibi tutarlı katmanların bir süper pozisyonlarına ayrılmış görüntü.
+
+21
+00:02:43,288 --> 00:02:54,028
+Oluşturulan bu yeni paradigma da hem uzamsal çözünürlük açısından hem de yeniden yapılandırma kalitesi açısından ölçeklenebilir olma avantajı sunmuş.
+
+22
+00:02:56,532 --> 00:03:20,272
+Çok katmanlı sıkıştırma algoritması görüntünün kendisine ve önceki sıkıştırmadan kaynaklanan artıklara, yani bunlara rezidual demişler, arda arda uygulanan bir dizi sıkıştırmadan oluşuyor. Giriş görüntüsünün Wavled Bases, yani dalgacık bazında sıkıştırılmasıyla bir başlangıç yaklaşımı elde ediliyor.
+
+23
+00:03:20,883 --> 00:03:36,703
+Bu ilk yaklaşım görüntünün genel şeklini koruyor ve yoğunluk komşanındaki eğilimi yakalıyor. Daha sonra deneylerde gösterileceği gibi bu ilk katman orijinal görüntünün bir karikatürünü veya bölümlemesini sağlıyor.
+
+24
+00:03:49,300 --> 00:04:10,520
+Fark hata hesaplanıyor. Bu sıkıştırma hatası da bize ilk kalıntı, yani ilk rezidüel veriyor. Rezidüeller dokulardan oluşuyor. Ve bu rezidüeller daha sonra dalgacık paketleri veya yerel trigonometrik tabanlarla sıkıştırılıyor. Bu resmin özelliğine göre değişiyor.
+
+25
+00:04:12,500 --> 00:04:28,360
+Birinci rezidüel sıkıştırıldığında, yani İmgis'e bir sıkıştırma uyguladık ve bir artık elde ettik, bir rezidüel elde ettik. Daha sonra bu rezidüel sıkıştırıldığında ikinci rezidüelimiz de birinci rezidüelin sıkıştırma hatası olarak tanımlanıyor.
+
+26
+00:04:29,819 --> 00:04:37,659
+Algoritmada daha fazla yapı içermeyen bir rezidüelle ulaşana kadar artışık rezidüelleri sıkıştırmaya devam ediyor.
+
+27
+00:04:40,084 --> 00:04:46,524
+Yönteme girecek olursak, burada çok fazla matematiksel olarak karışık olmayacak.
+
+28
+00:04:46,524 --> 00:05:03,183
+Başlangıç kütüphanesi olarak L0 seçmişler.
+
+29
+00:05:03,183 --> 00:05:05,744
+Tek bir girişimgeye, tek bir wavelet.
+
+30
+00:05:06,228 --> 00:05:18,947
+Sıkıştırma uyguluyorlar. Daha sonra bir sıkıştırmayla R03'ü sıkıştırmışım diye ve R1, ondan kalan artı rezidüeli elde ediyorlar.
+
+31
+00:05:20,187 --> 00:05:28,627
+Daha sonra ikinci katmanda da bu kalan artı bir sıkıştırma yapıyorlar ve başka bir artı elde ediyorlar.
+
+32
+00:05:32,019 --> 00:05:39,639
+İlk sıkıştırmayla diğer artın sıkıştırmasını toplayarak sıkıştırılmış himgeyi elde ediyorlar. Basit indirgecek olursak eğer.
+
+33
+00:05:45,139 --> 00:05:58,879
+Bütçe tahsisi burada, bu çalışmada belli bir bit per piksel belirlemişler kendilerini bir sıkıştırma için. Daha sonra bu bütçeyi katmanlar arasında paylaştırma yaklaşımına.
+
+34
+00:05:59,379 --> 00:06:02,259
+Burada bütçe dediği nedir? İngilizce'de ne yazılmış?
+
+35
+00:06:03,319 --> 00:06:09,139
+Budget olarak vermiş. Direkt bütçe yani şey, böyle...
+
+36
+00:06:09,459 --> 00:06:15,360
+Slug'da ileride deneylerine değineceğim. Bits Perfect Pixel belirliyorlar kendilerine.
+
+37
+00:06:15,479 --> 00:06:21,719
+Yani daha az pikselle ifade edebilmek mi bütçeden tasavvuf yapar gibi?
+
+38
+00:06:22,120 --> 00:06:32,719
+Sıkıştırma belirleyip bu katmanlar arasında bu bütçeyi nasıl paylaştıracağız onu tahsis etmek için. Burada da iki farklı yaklaşım var.
+
+39
+00:06:33,396 --> 00:06:48,056
+Dalgacık bazında kolay sıkıştırabilen resimler, yani daha böyle düz ve smooth olan resimler için bit bütçesinin ana kısmı dalgacık katmanına tahsis ediliyor.
+
+40
+00:06:48,056 --> 00:06:55,676
+Veya böyle tekstür içeren, belli bir doku içeren resimlerde de ana kısım doksal katmana tahsis ediliyor bütçenin ana kısmı.
+
+41
+00:06:58,259 --> 00:07:05,459
+Burada soldaki Lena resmi daha böyle smooth veya düz bir resme örnek verilebilir.
+
+42
+00:07:06,079 --> 00:07:12,120
+Burada Wavelet sıkıştırmaya daha fazla bütçe tahsis ediliyor.
+
+43
+00:07:12,539 --> 00:07:14,459
+Sağdaki resim ise Roof resmi.
+
+44
+00:07:15,159 --> 00:07:20,860
+Burada daha çok texture olduğu için, bu çatının kiremitleri belli bir doku oluşturduğu için
+
+45
+00:07:25,396 --> 00:07:30,396
+Doksal katmana daha çok bit ayrılıyor sıkıştırmada.
+
+46
+00:07:35,764 --> 00:07:46,344
+Burada A'da gördüğümüz ilk katman yani R0 üstü, yani imgenin ilk wavelet sıkıştırmayla elde edilen, sonrasında dekod edildikten sonra elde edilen görüntü.
+
+47
+00:07:47,164 --> 00:07:53,404
+Burada B'de gördüğümüz ise bu görüntünün sıkıştırıldıktan sonra kalan kalıntısının tekrar sıkıştırılması.
+
+48
+00:07:53,404 --> 00:08:01,264
+Ama bu sefer wavelet değil de diğer sıkıştırma yöntemini kullanıyorlar şu an.
+
+49
+00:08:02,644 --> 00:08:05,724
+Aklıma gelmedi. Dalgacık değil de.
+
+50
+00:08:06,484 --> 00:08:07,524
+Delgacık.
+
+51
+00:08:07,724 --> 00:08:10,484
+Lokal kosin, yerel kosin'e sıkıştırması yapıyorlar.
+
+52
+00:08:11,864 --> 00:08:14,084
+İkinci arttıktan arttığa kalan kısma.
+
+53
+00:08:14,284 --> 00:08:17,884
+Ki böyle dokuları da işleyebilmek adına.
+
+54
+00:08:19,604 --> 00:08:21,324
+Burada C'de ikinci rezücül.
+
+55
+00:08:21,324 --> 00:08:27,324
+Yani birinci, şunun tekrar sıkıştırılmasıyla kalan...
+
+56
+00:08:29,076 --> 00:08:56,436
+Burada artık bir şey ifade etmiyor. Bir tane daha sıkıştırma yapmak. Çünkü burada gürültü görünüyor. Dolayısıyla iki tane sıkıştırma kullanmışlar. Örnek olarak bunu vermişler. Deneylerde üç farklı resmi kullanmışlar. Resimlerin özellikleri çok detaya girmeyeceğim. Üç resmin özelliği de şu şekilde. Her biri 8 bits per piksel. 512 ve 512 resimler.
+
+57
+00:08:57,011 --> 00:09:12,551
+Kendi geliştirdikleri yöntemi kıyaslamak için de kendilerinden önce en iyi performans veren Said ve Perlman'ın Speed dalgacı kodlayısıyla karşılaştırma yapmışlar.
+
+58
+00:09:15,291 --> 00:09:20,551
+Elde ettikleri sonuçlar bu şekilde. Buradaki değerler...
+
+59
+00:09:21,620 --> 00:09:26,200
+PSNR yani Peak Signal Noise Rush'ı yüksek olması daha iyi.
+
+60
+00:09:30,035 --> 00:09:46,835
+Farklı bit seviyeleri için. Daha önce Bitspur Pixel önceden belirleniyor demiştim. Şuradaki sıkıştırma reyetini önceden belirleyip, bu ayrı sıkıştırma değerlerinde ne kadar performans aldıklarını kıyaslamışlar.
+
+61
+00:09:54,035 --> 00:10:04,395
+Seçmelerin nedeni de buradaki resimlerin sıkıştırılması zor. Çünkü geniş ve düz bölgeler ve uzun salon desenlerinin bir karışımını içeriyorlar.
+
+62
+00:10:05,775 --> 00:10:16,635
+Yani mesela burada hem gökyüzünü baz alacak olursak daha smooth, daha düz bir bölge ama çatıya alacak olursak da daha böyle tekstürlü, yani dokusal bir bölge olarak şey yapabiliriz.
+
+63
+00:10:16,716 --> 00:10:20,716
+Yine aşağıdaki palyaço resminde de duvarkalı daha böyle dokusal.
+
+64
+00:10:21,104 --> 00:10:29,344
+Ama şu aynanın çevresi veya paryosonun eline baktığımızda daha düz, smooth bölge.
+
+65
+00:10:35,251 --> 00:10:45,091
+Speed algoritmasıyla daha önceki yapılan çalışmayla karşılaştırdıklarında daha önce elde edilen başarı PSNR cinsinden 23.77 desibel.
+
+66
+00:10:45,691 --> 00:10:53,271
+Kendi elde ettikleri ise 25.23. Bu görüntüleri böyle verdim ama detaylara bakınca daha iyi anlaşılıyor.
+
+67
+00:10:54,131 --> 00:11:01,251
+Çatı detaylarını kendi geliştirdikleri yöntemde daha iyi ifade edebilmişler. Daha önceki yöntemde çatının detayları...
+
+68
+00:11:02,063 --> 00:11:18,059
+Kaybolmuş burada. Soldaki şekilde görülebileceği gibi. Daha sonra Barbara fotoğrafı üzerinde denemişler. Yine daha yüksek bir başarı elde etmişler. Yine detaylara bakıldığında...
+
+69
+00:11:21,107 --> 00:11:28,567
+Pantolondaki bu periyodik doku multilayer kodlayıcıda daha iyi korunmuş.
+
+70
+00:11:28,847 --> 00:11:34,847
+Masa örtüsü üzerindeki doku da yine aynı şekilde daha iyi korunmuş.
+
+71
+00:11:35,207 --> 00:11:41,507
+Fakat buna rağmen bu resimde Barbara'nın yüzünde bazı bozulmalar görünüyor.
+
+72
+00:11:41,507 --> 00:11:47,311
+Bunun da nedeni kullandığı baş örtüsündeki dokusal yapı ve yüzünün çok...
+
+73
+00:11:47,312 --> 00:11:51,912
+Daha smooth bir yapıda olması ve aradaki karışımdan kaynaklanıyor.
+
+74
+00:11:51,912 --> 00:11:57,752
+İkisinin yakın yerlerde bir arada olduğu şeylerde çok da iyi bir temsillik sağlamamış.
+
+75
+00:11:57,752 --> 00:12:01,752
+Ama yine sıkıştırma açısından bakarsak daha iyi bir artıdan sergilemiş diyebiliriz.
+
+76
+00:12:03,752 --> 00:12:12,872
+Son olarak da palyaço resmi üzerine demişler. Bu palyaço resmi literatürü de daha Wavelet dostu bir resim olarak biliniyormuş.
+
+77
+00:12:14,131 --> 00:12:26,572
+Bu imge için de dalgacık paketleri ikinci katmanı kodlamak için yerel kosin transforma göre daha iyi bir kütüphane olduğunu belirlemişler.
+
+78
+00:12:27,471 --> 00:12:32,411
+PSN'ler açısından çok az fark var ama daha iyi kendi önerdikleri yöntem.
+
+79
+00:12:41,076 --> 00:12:59,076
+Gölgeye bakacak olursak, dalgacı kodlayıcı tarafından biraz lekelenmiş görünüyor ama tekstür olarak bakacak olursak, duvar kağıdının sol üst kısmına baktığınızda daha önceki yöntemde bunun biraz kaybı dokusunun kaybolduğunu görüyoruz.
+
+80
+00:12:59,975 --> 00:13:05,216
+Kendi önerdikleri algoritmada bu yapının korunduğunu görebiliriz.
+
+81
+00:13:05,683 --> 00:13:23,624
+Genel olarak çok katmanlı algoritma, dalgacık kodlayıcı tarafından yeniden oluşturulan görüntüden, görsel kalite açısından, sıkıştırma açısından çok farklı olmasa da görsel kalite olarak daha iyi bir performans sağlamış oluyor.
+
+82
+00:13:25,644 --> 00:13:31,224
+Benim sunum bu kadardı. Elinden geldiğince basit elindirgeyi sunmaya çalıştım. Biraz eski bir makale.
+
+83
+00:13:31,956 --> 00:13:54,736
+Evet, ama bu Vervid Transform'un, Discrite Cosan Transform'un yerine kullanılan bir yöntem. JPEG'te de kullanılıyor. Başarısı DCT'ye göre daha yüksek ama arkasında tabii o Speed falan denilen şeyde ağaç tabanlı bir ilerlemesi var.
+
+84
+00:13:59,956 --> 00:14:13,376
+[kişisel bilgi]
+
+85
+00:14:13,376 --> 00:14:24,976
+[kişisel bilgi]
+
+86
+00:14:27,059 --> 00:14:36,319
+[kişisel bilgi]
+
+87
+00:14:46,131 --> 00:14:59,631
+Paylaşım yapıyorsun. Sonra [öğrenci] seni alacağım. Ben demin [öğrenci]'u görmüştüm. Vardı [öğrenci]. Neyse bakarız kim varsa artık.
+
+88
+00:15:04,436 --> 00:15:05,676
+Şu an ekranım geldi mi?
+
+89
+00:15:06,176 --> 00:15:07,255
+Yok, henüz gelmedi.
+
+90
+00:15:14,004 --> 00:15:16,923
+Nasıl yapıyorsun? O [öğrenci]'i paylaşımdan mı?
+
+91
+00:15:16,923 --> 00:15:17,444
+Evet.
+
+92
+00:15:23,187 --> 00:15:36,648
+Daha önce hiç ekran paylaşmadığım için... Tamam, şöyle ekran paylaş yaptığında çıkan pencereler var ya, onlardan Screen'e bas. Sonra Screen'den kendi PowerPoint'ini aç.
+
+93
+00:15:39,187 --> 00:15:46,947
+Hocam, Macbook kullanıyorum aynı... Oooo, Macs'e problem yaşanıyor. Aynı şeyleri vermedi.
+
+94
+00:15:49,908 --> 00:15:51,548
+Bana gönder, ben açayım.
+
+95
+00:15:52,668 --> 00:15:56,707
+Sistemi yüklemiştim. Sistemde vardı. Atayım hemen size de.
+
+96
+00:15:56,707 --> 00:16:04,207
+Dur bakayım. Onu oradan indirmek. Nereye adres vermiştim? Şimdi onu bile unuttum.
+
+97
+00:16:06,988 --> 00:16:10,788
+Dahtçalının altında mı verdim? Yok.
+
+98
+00:16:12,668 --> 00:16:14,288
+Sen mail olarak atar mısın?
+
+99
+00:16:15,087 --> 00:16:15,388
+Tamam.
+
+100
+00:16:19,316 --> 00:16:23,895
+Ben de şimdi havalı havalı açarım dedim ama dur bakalım ben neler yaşayacağım?
+
+101
+00:16:36,052 --> 00:16:36,932
+Daha gelmedi.
+
+102
+00:16:39,412 --> 00:16:45,532
+Otamadım hocam. Bu sırada benden sonraki arkadaş yapsa ben size atsam olur mu hocam?
+
+103
+00:16:45,712 --> 00:16:58,052
+[kişisel bilgi]
+
+104
+00:16:58,732 --> 00:17:00,372
+[kişisel bilgi]
+
+105
+00:17:00,820 --> 00:17:03,220
+[kişisel bilgi]
+
+106
+00:17:03,800 --> 00:17:04,820
+[kişisel bilgi]
+
+107
+00:17:04,880 --> 00:17:08,940
+[kişisel bilgi]
+
+108
+00:17:09,620 --> 00:17:11,760
+[kişisel bilgi]
+
+109
+00:17:11,760 --> 00:17:16,240
+[kişisel bilgi]
+
+110
+00:17:17,240 --> 00:17:20,420
+Ben de hazırlanıyordum birazdan ama yapayım.
+
+111
+00:17:20,420 --> 00:17:21,480
+Olduğu kadar.
+
+112
+00:17:21,780 --> 00:17:22,579
+Olduğu kadar artık.
+
+113
+00:17:25,620 --> 00:17:26,380
+Oldu.
+
+114
+00:17:27,571 --> 00:17:29,011
+Tamam, burada başlatayım şu an.
+
+115
+00:17:30,251 --> 00:17:32,851
+Bir de full screen yaparsam ben daha iyi görüyorum.
+
+116
+00:17:33,692 --> 00:17:34,851
+Şu an nasıl hocam?
+
+117
+00:17:34,991 --> 00:17:35,611
+Evet, şimdi iyi.
+
+118
+00:17:35,611 --> 00:17:36,351
+Tamam.
+
+119
+00:17:38,011 --> 00:17:43,391
+Benim anlatacağım konu aslında mobil uygulamalarda.
+
+120
+00:17:44,115 --> 00:18:00,455
+Veri sıkıştırma ile alakalı bir konu. Makale Endonezya'da Telkom Üniversitesi'nde bir çoraştırmacı hazırlamış bunu. Konferanstan çıkan notları paylaşmışlar aslında öyle söyleyeyim.
+
+121
+00:18:04,531 --> 00:18:16,791
+Makale araştırmasında 3 algoritma üzerinde durulmuş aslında. 4 yöntem uygulanmış. Bunun sonuçları paylaşılmış makalede.
+
+122
+00:18:16,791 --> 00:18:23,791
+Bu 4 yöntemle sadece aritmetik kodlama kullanılarak, mode to front ve aritmetik kodlama kullanılarak.
+
+123
+00:18:24,480 --> 00:18:32,460
+Barros-Weller dönüşümü ve aritmetik kodlama ve üçünü sırasıyla aynı anda kullanarak yapmışlar.
+
+124
+00:18:33,639 --> 00:18:49,460
+Veri olarak da hadis uygulaması kullanmışlar aslında. Hadis uygulamasını mobil uygulamalarda tekste olarak tuttuklarını görmüşler ve oradaki hadis uygulamasını kullanarak...
+
+125
+00:18:50,067 --> 00:18:55,228
+Onu nasıl sıkıştıracaklarını, ne kadar boy indirebileceklerini ölçmeye çalışmışlar burada.
+
+126
+00:18:59,412 --> 00:19:12,812
+Mobil cihazlarda ya da cep telefonu uygulamalarında diyeyim ben. Burada hala metin dosyaları kullanan farklı uygulamalar da varmış ama bu araştırmada örnek olarak o hadis uygulamasını almışlar.
+
+127
+00:19:13,592 --> 00:19:22,192
+Aynı zamanda cep telefonları küçük mobil uygulamalar ve özellikle TX'de kullanın uygulamalarda.
+
+128
+00:19:22,640 --> 00:19:39,560
+Kapasite ve bellek büyük bir sorun oluyormuş. Onu kullanmamak için, daha doğrusu belliği fazla harcamamak adına düzgün bir sıkıştırma kullanmak istemişler.
+
+129
+00:19:40,980 --> 00:19:55,640
+Yine iki tür sıkıştırma var. Burada ondan da bahsetmiştim. Kayıplı, kayıpsız sıkıştırma. Bu üç yöntemde, sırasıyla da olsa hepsi kayıpsız sıkıştırma adı altına geçiyor. Aynı anda kullanımı da aynı şekilde. Bundan bahsedilmiş makalede.
+
+130
+00:19:59,140 --> 00:20:07,720
+Biraz şeyden bahsetmiş, hadis kitabından ya da çevirisinden bahsetmiş. 32 bölüm diyor ama 32 kitaptan oluşuyor aslında.
+
+131
+00:20:08,144 --> 00:20:11,844
+Kaç sayfa? Baya bir sayfa olduğunu söylediler toplamda.
+
+132
+00:20:11,864 --> 00:20:17,124
+Ben bir şey sorabilir miyim [öğrenci]? Bu hadis madis diyorsun. Yani bu hangi dilde yazılmış?
+
+133
+00:20:17,884 --> 00:20:21,144
+Şöyle, çevirisi aslında, bahasa çevirisi kullanılmış İngilizce olarak.
+
+134
+00:20:21,144 --> 00:20:30,744
+Tamam. Yoksa dedim hani alfabeler değişik olunca resim olarak alıp onları mı sıkıştırıyor dedim ama aritmatik koding var. Tamam peki.
+
+135
+00:20:31,344 --> 00:20:35,624
+Aynen. Aslında bahasa çevirisi diye geçiyor oradaki şeyinde de.
+
+136
+00:20:36,144 --> 00:20:43,844
+O çeviriyi kullanmışlar. Son iki şeyinde de blok halinde yapmışlar aslında sıkıştırmalı.
+
+137
+00:20:43,943 --> 00:20:51,744
+1024-2048-4096-8192 şeklinde 4 blok halinde sıkıştırma yapmışlar.
+
+138
+00:20:52,704 --> 00:20:57,943
+Sadece aritmetik kodlama ve şey de yapmamışlar aslında bunu. Neyse, ilerleyen slidelarda onun şeyi var.
+
+139
+00:20:59,476 --> 00:21:25,516
+Burada amaç iki tane soruyu cevaplandırmak aslında ama makale içerisindeki soruya dair çok fazla bir şey yok. Sadece ilk soru vardı. Baharası çevirisinde metin dosyası sıkıştırmasında bu kombinasyonun performansını ölçmek amacı bu makalenin aslında. Ama sıkıştırma sonucu mobil cihazla nasıl çalıştırılabilir konusunda çok fazla değinmemiş demeyeceğim. Not bulamadım hiç. Ama makale başında bu iki soruyu yazarak geçmiş.
+
+140
+00:21:26,996 --> 00:21:50,456
+Aritmetik kodlamasını derste biraz gördük. Ben yine kısaca bahsedeyim. Burada Fatima, boşluk AS olarak bu kelimeyi sıkıştırma örneği olarak vermiş. Bu sıkıştırma da işte ilk önce alfabeye göre diziyor, space olarak. Bunların sıklığını çıkartıyor. Bu sıklıklarına göre rençler oluşturuyor sırasıyla.
+
+141
+00:21:56,948 --> 00:22:05,168
+Şu iki algoritmayı kullanarak, daha doğrusu soldaki algoritmayı kullanarak bu kelimelerin şeylerini çıkartıyor.
+
+142
+00:22:06,188 --> 00:22:08,688
+Aritmati kodlamak yani zaten bu değil mi?
+
+143
+00:22:09,128 --> 00:22:11,128
+Normal aritmati kodlamak. Çok bir şey değil.
+
+144
+00:22:13,628 --> 00:22:15,788
+Sonra değerlerini çıkartıyor bu şekilde.
+
+145
+00:22:17,619 --> 00:22:42,839
+Motor Front Kotlam'a da zaten aslında bir indeksleme hareketi var. Hani onu da yine derste görmüştük. İşte yine alfabeye göre kendi kartları çıkartıyor şeyi, diziyor kelimeyi. O kelimeye göre işte verilen list üzerinden indeksleme yapıyor. İndeksleme yaparak da sola kaydırıyor aslında. Yazdığı değeri en sola alıyor. Yeniden indeksleme yapıyor bu şekilde.
+
+146
+00:22:43,923 --> 00:23:08,619
+Burada da kullandığı encoding ve decoding'lerin algoritmalarını vermişler. İşte Barros-Weller dönüşüm var. Burada da yine algoritma vermişler. Burada da, daha önce arkadaşlar anlatmıştı belki, bir kelimenin tüm şeylerini çıkartıyor. Ulaşabilecek yapısını. Sonra bunu...
+
+147
+00:23:08,723 --> 00:23:30,663
+Sıkıştırma oranı olarak da şöyle bir formülüze vermiştir. Bizim derslerinde kullandığımız formülden aslında sıkıştırma oranı işte sıkıştırmış dosyanın boyutu, orijinal dosyanın boyutunu bölünme bunun yüzde çarpımı.
+
+148
+00:23:32,019 --> 00:23:46,640
+Deneyde dediğim gibi üç algoritma kullanılmış, dört yöntem kullanılmış. Dört yöntem işte algoritma, aritmetik kutlama, barosvalar dönüşüm, aritmetik kutlama ve bu üçünün beraber kullanımı.
+
+149
+00:23:47,380 --> 00:23:58,420
+Kullanılacak veriyi de bu şekilde çıkarmışlar. Yaklaşık dokuz tane dosya olarak oluşturmuşlar. Bunların byte'larını çıkarmışlar.
+
+150
+00:23:59,412 --> 00:24:10,412
+Sadece aritmetik kodlama kullanılarak böyle bir veri elde etmişler.
+
+151
+00:24:10,412 --> 00:24:13,412
+Böyle bir çıktı elde etmişler.
+
+152
+00:24:13,412 --> 00:24:23,412
+Böyle bir çıktı elde etmişler daha doğrusu. Size'da en iyi değer olarak 58.9'luk bir sıkıştırma yapmışlar.
+
+153
+00:24:23,892 --> 00:24:46,312
+Bunu en büyük sayıza değerlemişler. Almışlar, öyle söyleyeyim. En kötüsünü ise en düşük sayıza almışlar aritmetik kodlamı da. Önce multi front son aritmetik kodlama kullandıklarında ise biraz yükselmiş değer aslında. %36.30'a kadar yükselmiş.
+
+154
+00:24:49,172 --> 00:24:53,172
+Ama burada en yüksek size değil, arada bir size de bu değeri yakalamışlar.
+
+155
+00:24:53,172 --> 00:24:57,591
+Büyük ihtimal tekrarlayan sayısı belki de çok fazlaydı bilemiyorum.
+
+156
+00:25:02,771 --> 00:25:07,192
+Yine o Baros-Weller'la aritmetiği aynı anda, yani aynı anda değil miyim?
+
+157
+00:25:07,251 --> 00:25:12,471
+Önce Baros-Weller'ı sonra aritmetiği koltama yaptıklarında ise yine dört boyutla bölmüşler.
+
+158
+00:25:12,551 --> 00:25:14,132
+Dört blok halinde yapmışlar.
+
+159
+00:25:15,471 --> 00:25:42,591
+En iyi değeri 59 noktasında, şeyden daha yüksek bir değer almışlar. Montifront'tan daha yüksek bir, daha düşük daha diyeyim bir sıkıştırma yapmışlar. 76 oranında da bir en düşük sıkıştırma var. Son olarak da 3'ünü sırasıyla kullandıkları zaman %32'lik bir sıkıştırma yakalamışlar.
+
+160
+00:25:43,476 --> 00:25:59,196
+En iyi sıkıştırma aslında bu şekilde yakalamışlar. Bu şekilde yakaladıkları için de aslında metin sıkıştırmalarının bu yöntemin doğru olacağını düşünmüşler. Öyle söyleyebilirim. Bu çift değerleri hepsinin.
+
+161
+00:26:01,523 --> 00:26:13,203
+Sonuç olarak şöyle bahsetmişler. Sırasıyla Barros-Willer, mutlu front ve aritmetik kodlamak olarak sıkıştırma yapmak en iyi sorucu verdiğini bulmuşlar.
+
+162
+00:26:13,203 --> 00:26:23,144
+Yani söylemişler daha doğrusu makalede. Barros-Willer dönüşümü daha büyük blok boyutunda daha iyi sıkıştırma yakaladığını.
+
+163
+00:26:25,491 --> 00:26:41,512
+Söylemişler aynı şekilde. Cep telefonu uygulaması için de bu üç sıkıştırma algoritması ile ilgili yöntemle beraber kullanılmış aslında. Bundan şey yapmışlar. Benim slide'ım bu kadar hocam. Doküman zaten çok kısaydı makale.
+
+164
+00:26:42,836 --> 00:26:46,776
+[kişisel bilgi]
+
+165
+00:26:47,116 --> 00:26:49,036
+[kişisel bilgi]
+
+166
+00:26:49,536 --> 00:26:52,016
+[kişisel bilgi]
+
+167
+00:26:52,436 --> 00:26:59,976
+[kişisel bilgi]
+
+168
+00:26:59,976 --> 00:27:08,056
+Move to front'u gösterdim. Şimdi BBP'de move to front'da aynı kategoride iki tane yöntem.
+
+169
+00:27:10,836 --> 00:27:25,196
+Bu coding'in önüne koyduklarında aslında ne yapmaya çalışıyorlar? Aritmetik kodlamalarını koyarken. Yani niye başarıları yükseliyor? Bu yöntemler ne sağlıyor?
+
+170
+00:27:25,196 --> 00:27:35,276
+Bu yani barosaylar da aslında harfleri yan yana koymaya çalışıyorlar. Kelime içerisinde harfleri yan yana koymaya çalışıyorlar.
+
+171
+00:27:35,892 --> 00:28:00,051
+Tamam. Hepinize söyleyeyim. Nasıl görüntü sıkıştırma üzerine çalıştığımız vakit, öncesinde işte resmen üzerinden diskret kosan ya da bir wave geçirerek bir transform ediyorsak birbirine yakın pikselleri yan yana gelecek şekilde ya da aynı piksel değeri vermek üzere bir işlemler yapıyoruz.
+
+172
+00:28:03,892 --> 00:28:14,892
+Bu metin de arka arkaya gelen karakterleri, yani normal bir metinde karakterler arka arkaya gelmez. Ama daha iyi bir sıkıştırma yapabilmek adına...
+
+173
+00:28:16,019 --> 00:28:36,860
+Metinler üzerinde ya da cümle ya da kelimeler üzerinde bir takım işlemler yapıp o cümlede ya da kelimede arka arka aynı karakterler varsa bunları böyle yan yana koymaya çalışıyorlar ki daha iyi bir sıkıştırma performansı elde edilsin diye bir nevi metinler üzerindeki transform yöntemleri.
+
+174
+00:28:36,860 --> 00:28:41,039
+Peki teşekkür ederim [öğrenci]. [öğrenci]'a sorusu olan var mı?
+
+175
+00:28:42,451 --> 00:28:57,051
+Büyük bir sessizlik. Evet, yok. [öğrenci] kayboldun mu? Buradasın. Şimdi ben deneyeceğim bakalım ne olacak. Ekran paylaşımı diyorum.
+
+176
+00:29:00,788 --> 00:29:07,028
+Diyorum ama büyük bir ihtimalle göremeyeceksiniz şu an. Görüyor musunuz?
+
+177
+00:29:08,887 --> 00:29:09,407
+Geldi.
+
+178
+00:29:10,208 --> 00:29:10,827
+Gelmedi mi?
+
+179
+00:29:11,427 --> 00:29:11,927
+Geldi.
+
+180
+00:29:11,927 --> 00:29:22,968
+Tamam. Tamam. Okey. Bunu full screen yapayım. Yaptım. Evet [öğrenci] başlayabilirsin. İnşallah senle senkron giderim.
+
+181
+00:29:23,443 --> 00:29:45,384
+Ben burada kayıpsız veri sıkıştırmayı anlatacağım. Kayıpsız veri sıkıştırmada benim incelediğim makale değildi aslında. Bir konferans sunumuydu. Bu konferans sunumunda transformer kullanmışlar. Yani transformer kullanımının veri sıkıştırma etkileri üzerine bir çalışma yapmışlar.
+
+182
+00:29:47,803 --> 00:29:50,023
+Bir sonraki sayete geçebilir miyiz hocam?
+
+183
+00:29:53,140 --> 00:30:17,820
+Geçtim. Galiba. Geçmiyor mu? Geçmedi. Ben yürütüyorum ama geçmedi. Korktum, başıma geldi. Şimdi yeniden çıktım. Ekran paylaşımı diyorum. Tamam, şuradan sıklına geçtim. Paylaş dedim. Şimdi? Şimdi geldi. Tamam. Bu istediğin sayfa mı? Evet.
+
+184
+00:30:18,740 --> 00:30:43,160
+Bu transforma dediğimiz zaten Türkçeleştirilmiş hali transformatörler. Yapay sinir ağları ve LSTM, kısa uzun akış diagramlarında zaten günümüzde sıkça kullanılmaya başlamışlardı. Doğal dil işlevi ve makine çevirilmesi ve dil modellemede çok sık olarak kullanılıyor bunlar. Transformatörler.
+
+185
+00:30:45,940 --> 00:30:46,579
+Hocam.
+
+186
+00:30:47,139 --> 00:30:47,379
+Niye?
+
+187
+00:30:48,259 --> 00:31:10,940
+Tamam, buradayız. Transformatörlerin yapay sinir ağlarında kullanılması daha iyi ve daha başarılı bir sonuç almak için kullanılmaya başlanmış. Normalde yapay sinir ağlarında ve LSTM'de iyi ve hızlı başarılı sonuçlar elde ediliyor. Ancak transformer yokken...
+
+188
+00:31:11,988 --> 00:31:17,888
+Sıkıştırma algoritmaları uygulanırken çok büyük zaman kayıpları ve problemler ortaya çıkıyor.
+
+189
+00:31:18,008 --> 00:31:24,528
+Bunu gidermek adına bu çalışmada transformatör kullanımının öne çıkarılması üzerine doğurmuştur.
+
+190
+00:31:29,364 --> 00:31:31,003
+Bir sonrakine devam edebilir miyiz hocam?
+
+191
+00:31:31,723 --> 00:31:34,503
+Kayıpsı sıkıştırma bir slide'ı var. Geçeyim mi?
+
+192
+00:31:34,683 --> 00:31:35,044
+Geçelim.
+
+193
+00:31:39,344 --> 00:31:45,943
+Tekrar bir geri gelebiliriz. Kayıpsı sıkıştırmayı kısaca ne demek olduğunun üzerinden geçeceğim.
+
+194
+00:31:45,943 --> 00:31:54,064
+Orijinal bir verinin mükemmel şekilde herhangi bir kayıp olmadan sıkıştırılmasını sağlayan aygı etmelerdir.
+
+195
+00:31:54,644 --> 00:31:56,544
+Burada herhangi bir verinin kaybolmaması.
+
+196
+00:31:56,943 --> 00:32:19,923
+Bu temel amaçtır. Bunun için geçmişten günümüze kadar birçok algoritma kullanılmıştır. Bunun zaten bir örneğini istatistiksel sıkıştırma yöntemleri olarak derste zaten işlemiştik. Bunun daha geliştirilmiş hali olaraktan PAQ günümüzde sıkça kullanılmaktadır. Bu bir algoritmalar dizisi şeklinde yapmaktadır bu PAQ.
+
+197
+00:32:21,715 --> 00:32:35,955
+Bunun da bir üstü olarak da günümüzde artık yapay sinir modelleri üzerinde bu şekilde çalışmalarla daha iyi sıkıştırmalar nasıl elde edilebilir şeklinde bir düşünce hakim ve bunun üzerine de burada çalışmalar yapılmış.
+
+198
+00:32:38,132 --> 00:33:05,572
+PQ8'de kullanılan el yapımı istatistikler çalışmalar yapay sinir ağlarında da aynı şekilde kullanılıyor. Ancak bu çalışmada bunun yerine transformatörler kullanarak yapılması planlanmış. Bu el yapımı istatistiksel çalışma dediğimiz, daha önceden çalışılıp hazırlanmış dokümanlardan bahsediyor. El yapımından kasıt bu. Bizim buradaki asıl yapmak istediğimiz bunları bu şekilde kullanmamak.
+
+199
+00:33:06,132 --> 00:33:09,991
+İnanın kendisi öğrenmesi üzerine bir çalışma yapılıyor.
+
+200
+00:33:10,652 --> 00:33:22,251
+Buradaki durum şu şekilde. Transformatörler hafızalı, bir önceki işlemin hafızasını tuttuğundan dolayı bir şekilde kendi öğrenmesini istiyoruz.
+
+201
+00:33:23,827 --> 00:33:39,948
+Çalışmayı da kendisi yapmasını planlıyoruz. Tabii bu durumda bunun dezavantajı eğitim kısmında yavaş ve kadarsız olması. Bu çalışmada bu kadarsızlığın dengelenip hızlandırılması amaçlanmış.
+
+202
+00:33:42,963 --> 00:34:01,024
+Kısaca sıkıştırma yöntemlerinden bahsedeceğim burada. İstatistiksel sıkıştırma yöntemleri. Burada kayıpsız veri sıkıştırma için kullanılan en popüler yöntemdir eskiden beligelen. Zaten bunu işlemiştik derste de ve zaman üzerinde farklı çalışmalar da geliştirilmiştir.
+
+203
+00:34:04,884 --> 00:34:20,384
+PAQ tabanlı sıkıştırma yöntemleri de daha popüler olmuştur. Burada bir algoritmalar dizini var ve veriyi bit düzeyinde sıkıştırma işlemini yapıyor. Her veri için kullanılması en büyük avantajı. Bu farklı farklı...
+
+204
+00:34:21,043 --> 00:34:46,363
+alanlarda farklı farklı şekillerde kullanıldığı için 1'den 8'e kadar ve değişik isimler farklı yöntemler şeklinde bu PQ sıkıştırma yöntemlerini yapmışlardır. Bunlar çok iyi sıkıştırma yapabilen yöntemlerdir. Ancak dezavantajı çok yavaştır ve maliyeti fazladır. Bundan dolayı da sinirler tabanlı sıkıştırma yöntemleri de ön plana çıkmıştır.
+
+205
+00:34:50,003 --> 00:35:00,764
+Kayıpsız sıkıştırma yapmak için iki temel unsur önemli yapay sinir ağları kullanıldığında. Bunlardan birisi tahmin edici, diğeri de entistropi kodlama şeması.
+
+206
+00:35:08,052 --> 00:35:25,851
+Fikriyle ortaya atılmıştır. Bunun üzerindeki çalışmalarla bu gelişmiştir. Bizim bu modelimizde işlediğimiz Transformer X-Large modeli geliştirmiş bu çalışmayı yapanlar. Ve bu modeli bazı deneysel işlemlerden sonra geliştirme üzerine çalışma yapmışlardır.
+
+207
+00:35:26,452 --> 00:35:48,352
+Modeldeki ağırlık ve sınıflandırıcı bilgileri kendi oluşturdukları yapay zeka modelini çok fazla detaylandırmamışlar. Sadece bunun üzerindeki yapılan değişikliklerle nasıl bir sonuç ele aldıklarını ortaya çıkarmışlar. Burada katmanlar arası farklı dikkat sürelerinin zamanları üzerine durulmuştur.
+
+208
+00:35:55,188 --> 00:36:04,007
+Alınan dikkat süresi, K'ncı katmanda ilk 6 katın K katı kadar olacak şekilde sınırlandırıldığında olan durumlar incelenmiştir.
+
+209
+00:36:06,748 --> 00:36:17,188
+Sıkıştırma aşamasında genellikle yapay sinir ağlarında bir token sıkıştırıldıktan sonra tekrar üzerinden geçilmediği...
+
+210
+00:36:19,188 --> 00:36:35,628
+Yapay Zeka modelleri var. Ancak burada tekrar sıkıştırılmış modelin üzerinden tekrar geçilerek, bunun tekrar eğitime sokularak nasıl bir sonuç alacağı da tekrar incelenmiş. Bunun da daha verimli olduğu sonuçları ortaya çıkmıştır.
+
+211
+00:36:44,755 --> 00:37:04,935
+Eğitim modeli geçmemektedir. Bunun dezavantajı olarak da daha fazla alan ve memori kullanımı mevcut. Burada bir örnek var.
+
+212
+00:37:05,331 --> 00:37:29,871
+Ngramlar kullanılıyor ayrıca input değeri verilerekten bu kendi geliştirdikleri modelde. Bu ilk olarak Ngramları modele verdiklerinde nasıl bir değişim olduğunu inceliyor. Buradaki değerler, bunları ifade etmiyor, buradaki asıl değerler kullanılan algoritmaların Bitpur karakter üzerindeki sıkıştırma yüzdelerini göstermiş.
+
+213
+00:37:31,635 --> 00:37:48,476
+Algoritmamız tekrar üzerinden yinelemeden sıkıştırma yaptığı zaman 1.33'lük tekrar yinelemeli yaptığı zaman 1.20'lik bir sıkıştırma başarısına sahip olan bir durum. Bunu en son tekrar üzerinden geçeceğim.
+
+214
+00:37:51,539 --> 00:38:08,099
+Burada çalışma yapılırken MWiX8 dataset'i kullanılmış. 100 MB'lık bir veri setiyle çalışma yapılmış. Bunun ön hazırlık olarak metindeki sadece büyük harfler küçük harfe çevrilmiş.
+
+215
+00:38:08,099 --> 00:38:13,739
+Bunun ön hazırlığında 12, 18 ve 24 katmanlı.
+
+216
+00:38:14,096 --> 00:38:31,375
+İki yüz elli altı beşiz on iki ve bin yirmi dört gizli boyutu olan transformatörlerle çalışmalar yapılmıştır. Burada bu sonuçlardan ortaya çıkan sonuç olarak on iki katmandan sonrasında herhangi bir iyileştirme görünmediğinden on iki katman ideal olarak kabul edilmiş.
+
+217
+00:38:41,940 --> 00:39:02,480
+Modelin daha büyük olması, verinin daha büyük olması, modelin daha iyi sonuç vermesini ortaya çıkarmıştır. Biraz önce bahsettiğim gibi katman sayısını arttırmak başarıyı arttırmadığı için 12 katmanın en başarılı olduğu ortaya çıkmış ve 12 katmanın kullanılması tavsiye ediliyor bu çalışmaya göre.
+
+218
+00:39:09,940 --> 00:39:19,559
+Daha fazla bellek alanı kullanılmakta. Eğer yeterli bir makine ve cihazımız varsa tabii ki daha büyük olanlar tavsiye edilmekte.
+
+219
+00:39:22,139 --> 00:39:30,559
+Bu çalışmadaki öğrenme oranına etkisi olarak model eğitimi ilerledikçe...
+
+220
+00:39:30,931 --> 00:39:53,051
+Başarılı oranı giderek arttığı tespit ediliyor. Tabi burada da daha çok verinin gelmesiyle beraber daha çok eğitim almış oluyor. Tabi burada sıkıştırmayı daha başarılı kılıyor. Veri setinin ön işleme sokulması ve başlangıç olarak input olarak en gram verilmesi ufak tefek iyileştirmeler yaptığı izlemleniyor.
+
+221
+00:39:57,139 --> 00:40:13,679
+Bitpull karakter, büyük küçük harf ön işlemi yapıldıktan sonra iyileştirme olduğu ortaya çıkıyor. Engramları input olarak vermek ise 0.025 bitpull karakterlik iyileştirme sağladığı sonucu ortaya çıkmış.
+
+222
+00:40:25,012 --> 00:40:46,472
+0.05 bitper karakter kadar iyileştirme olduğu görülüyor. Tabii bizim bu örneğimizde 0.13'lük bir düşüş gözlemlenmiş. Bu da tabii deneysel olduğundan dolayı bellek bir sınırlaması olmadığından dolayı böyle bir oran var. Ama ortalamaya bakıldığı zaman 0.05 bitper.
+
+223
+00:40:46,804 --> 00:40:53,443
+Karakter kadar bir iyileştirme olduğu sonuçları bize verilmiştir. Dinlediğiniz için teşekkür ederim.
+
+224
+00:41:02,291 --> 00:41:05,652
+Kimle konuşmuştu? [öğrenci] sen miydin?
+
+225
+00:41:05,751 --> 00:41:06,652
+Evet, benim hocam.
+
+226
+00:41:07,652 --> 00:41:15,031
+[öğrenci], hem seni dinlemeye çalıştığım bir yandan acayip sıcak bu oda, bir yandan slide'ı sana uydurmaya çalışıyorum.
+
+227
+00:41:15,031 --> 00:41:25,031
+Birazcık aklım karıştı. Yani kabaca burada hangi yönteme vurgu yapılmış bir sempozyum çalışması dedin ama...
+
+228
+00:41:25,619 --> 00:41:30,220
+Burada istatistiksel yöntemler temel alınaraktan yapay sinir.
+
+229
+00:41:30,220 --> 00:41:33,280
+Belirtmemiş değil mi? İstatistiksel yöntemler diyor.
+
+230
+00:41:33,659 --> 00:41:33,840
+Evet.
+
+231
+00:41:35,300 --> 00:41:36,039
+Peki, tamam.
+
+232
+00:41:36,539 --> 00:41:45,579
+Kendi yapay sinirarları üzerinde bir çalışma yapmışlar. Kendine bir model geliştirmişler. Bu modelin geliştirilmesi üzerine çalışmalar. Nasıl çalışmalar?
+
+233
+00:41:45,579 --> 00:41:51,980
+[kişisel bilgi]
+
+234
+00:41:52,563 --> 00:41:53,503
+[kişisel bilgi]
+
+235
+00:41:54,203 --> 00:41:55,783
+[kişisel bilgi]
+
+236
+00:41:57,783 --> 00:41:58,703
+[kişisel bilgi]
+
+237
+00:41:59,483 --> 00:42:01,563
+[kişisel bilgi]
+
+238
+00:42:02,463 --> 00:42:03,663
+[kişisel bilgi]
+
+239
+00:42:03,683 --> 00:42:04,603
+[kişisel bilgi]
+
+240
+00:42:05,863 --> 00:42:07,523
+[kişisel bilgi]
+
+241
+00:42:08,283 --> 00:42:15,343
+[kişisel bilgi]
+
+242
+00:42:16,163 --> 00:42:18,203
+Evet [öğrenci], bir paylaş.
+
+243
+00:42:25,172 --> 00:42:26,972
+Su yüklemeyi unutmayın arkadaşlar.
+
+244
+00:42:34,771 --> 00:42:39,771
+[öğrenci], sesini kurdun. Hadi.
+
+245
+00:42:46,643 --> 00:43:02,563
+Aşağıda paylaş var, ekran paylaşımı. Evet, ekranı paylaşmaya çalışıyorum ama. Çıkan menülerde screen var, o screen'e basıp hangi dosyunu açacaksan onu açıklikleyeceksin.
+
+246
+00:43:07,027 --> 00:43:12,627
+Hocam benim ayarlardan değiştirmem gerekiyormuş da isterseniz başka bir arkadaş yapsın.
+
+247
+00:43:12,927 --> 00:43:16,947
+[kişisel bilgi]
+
+248
+00:43:17,367 --> 00:43:18,367
+[kişisel bilgi]
+
+249
+00:43:18,367 --> 00:43:18,627
+[kişisel bilgi]
+
+250
+00:43:20,067 --> 00:43:21,787
+[kişisel bilgi]
+
+251
+00:43:23,787 --> 00:43:25,387
+[kişisel bilgi]
+
+252
+00:43:27,647 --> 00:43:28,507
+[kişisel bilgi]
+
+253
+00:43:29,127 --> 00:43:29,487
+[kişisel bilgi]
+
+254
+00:43:29,867 --> 00:43:31,607
+[kişisel bilgi]
+
+255
+00:43:31,667 --> 00:43:33,007
+[kişisel bilgi]
+
+256
+00:43:33,027 --> 00:43:33,207
+[kişisel bilgi]
+
+257
+00:43:34,003 --> 00:43:44,344
+[kişisel bilgi]
+
+258
+00:43:44,344 --> 00:43:46,023
+Ben inanamıyorum.
+
+259
+00:43:49,556 --> 00:43:51,556
+Tamam, geliyor.
+
+260
+00:43:53,056 --> 00:43:55,056
+Bir de full screen yap.
+
+261
+00:43:59,284 --> 00:44:11,684
+Geldim mi? Tamam. Merhabalar herkese. Benim makalemin konusu yürültü güdeyici otomatik kodlayıcıları kullanarak denetimsiz cümle sıkıştırma.
+
+262
+00:44:12,244 --> 00:44:24,943
+Burada makalede orijinal cümlelere gürültü eklenerek eğitilen modelin bilgisayar doğruluğu ve anlamı korunması noktasında denetimsiz cümle sıkıştırma konusunda çalışılıyor.
+
+263
+00:44:25,844 --> 00:44:29,704
+Doğruluğu değerlendiriliyor ve farklı çalışmalarla karşılaştırmalar yapılıyor.
+
+264
+00:44:30,043 --> 00:44:33,264
+Pardon ben bir şey soracağım. Cümleyi mi sıkıştırıyoruz?
+
+265
+00:44:33,704 --> 00:44:34,264
+Evet hocam.
+
+266
+00:44:35,155 --> 00:44:37,916
+Cümleler sıkıştırılarak metin sıkıştırılıyor.
+
+267
+00:44:38,256 --> 00:44:38,756
+Evet, aynı.
+
+268
+00:44:39,155 --> 00:44:42,756
+Peki cümleleri neden bozmaya çalışıyorlar? Bahsedecek misin ondan?
+
+269
+00:44:43,176 --> 00:44:45,216
+Evet hocam, gürültü eklemek vs.
+
+270
+00:44:45,316 --> 00:44:45,916
+Tamam, bilmiyorum.
+
+271
+00:44:47,135 --> 00:44:51,036
+Burada makalede bahsedilen bazı kavramlardan bahsedeceğim.
+
+272
+00:44:51,716 --> 00:45:00,276
+Sentence Compression, yani cümle sıkıştırma, gereksiz bilgiler kaldırılarak orijinal cümlenin derilisi ve önemli içeriğini koruyarak daha kısa bir cümle üretiliyor.
+
+273
+00:45:00,980 --> 00:45:12,699
+Unsupervised Learning'de etiketlenmemiş veri üzerinden bilinmeyen bir yapıyı tahmin etmek için kullanılan bir makine öğrenmesi tekniği. Burada girdi verisinin hangisinin faaliyet olduğu belirsiz.
+
+274
+00:45:13,152 --> 00:45:34,731
+Denoising Auto Encoder'da, yani gürültü gideci, otomatik kodlayıcıda giriş değeri olan verileri bilerek bozarak denetimsiz bir şekilde eğitilmiş sinir ağlarıdır. Model çıktısı olarak orijinal bozulmamış veri noktasını tahmin etmek için cümlelere gürültü eklenerek genişletiliyor ve otomatik kodlayıcı bu şekilde eğitiliyor.
+
+275
+00:45:36,755 --> 00:45:44,795
+Bu yazıda sinirsel metin özetleme teknikleri çıkarımsa özetlemeye odaklanarak cümle sıkıştırma görevine uygulanıyor.
+
+276
+00:45:45,755 --> 00:45:57,056
+Gürültülü bir giriş dizisinden sözcüğe çıkarma ve yeniden sıralama konusunda eğitilmiş bir basit bir gürültü giderme otomatik kodlayıcı metik modeli ele alınıyor burada.
+
+277
+00:45:57,684 --> 00:46:07,064
+Orijinal anlamını koruyan Mühendisliği metinlerinde daha kısa dizilerini oluşturarak etkili cümle seçilmeyi öğrenebileceğini gösteriyorlar.
+
+278
+00:46:07,824 --> 00:46:18,704
+Modeller hala hem dil bilgisi hem de anlam hatalarına eğilimli oluyor ama bunun eşleştirilmiş derlemleri olan bağımlılığını azaltmak için de güçlü bir adım olduğuna inanıyorlar.
+
+279
+00:46:20,824 --> 00:46:24,564
+Burada eğitim ve modelden bahsedeceğim.
+
+280
+00:46:25,748 --> 00:46:44,228
+Makalede cümle sıkıştırma uygulanan eğitim adımları şöyle. Editive Noising yapılıyor önce. Burada bir referans cümlesi veriliyor. Giriş cümlesini uzatıyor ve karıştırıyor. Ardından da orijinal referans cümlesini kurtarmak için modüle eğitiyor.
+
+281
+00:46:44,735 --> 00:46:55,536
+Editive Sampling'de veri setinden rastgele cümleler örneklemiyor ve ardından her birinden değiştirilmeden birkaç kelimeyi örneklemiyorlar.
+
+282
+00:46:55,536 --> 00:47:06,776
+Daha sonra yeni örneklenen kelimeleri referans cümlesine ekliyorlar. Tamamen denetimsiz öğrenmeye uyuması için de modeli eğitirken kelime örneklemini herhangi bir örneğe eklenmiyor.
+
+283
+00:47:11,443 --> 00:47:19,883
+Şu aşamada o da. Burada da elde edilen kelime dizilerini karıştırıyorlar ve yeni gücümle elde ediyorlar.
+
+284
+00:47:22,003 --> 00:47:29,883
+Sonrasında da gürültü giderici, otomatik kodlayıcıya bunu veriyorlar ve eğitime sokuyorlar.
+
+285
+00:47:33,652 --> 00:47:53,172
+Burada belirli bir kelime grubunu, bilgisayar bir cümleye sıralamanın tıpkı olarak birçok yolu var. Modelin orijinal cümleyi daha iyi kurtarmasına yardımcı olmak için bu modele önceden eğitilmiş bir införsant modeli kullanılarak oluşturulan orijinal cümleyi gürültülü bir införsant cümlesi de sağlanıyor.
+
+286
+00:47:53,679 --> 00:48:09,980
+İnfersent modeli şöyle, daha uzun bir öncül metni ve daha kısa bir hipotez metni verildiğinde modelin önermesinin hipotezi gerektirip gerektirmediğini, çelişkili olup olmadığını veya hipoteze karşı nötr olup olmadığını belirlemek için eğitiliyor.
+
+287
+00:48:12,319 --> 00:48:14,819
+Kullanılan veri setinden bahsedeyim.
+
+288
+00:48:15,135 --> 00:48:31,315
+Burada kullanan veri seti haber makameleri. Ana cümleler, yani uzun cümleler ve başlıklar, yani kısa cümleler şeklinde inceleniyor. Yaklaşık 3.8 milyon eğitim örneği ve 400 bin de validation örneği işleniyor.
+
+289
+00:48:31,807 --> 00:48:54,627
+Metin özetleme görevi için de açıklamalı giga word kullanılıyor. Eğitimde yalnızca veri kimesindeki referans çoğunları kullanılıyor. Tüm modeller için globe kelime yerleştirmeleri kullanılıyor. Burada vektörleme işlemleri yapıyor. Kelime darcı da referanslarda en sık kullanılan 20 bin kelimeden oluşuyor.
+
+290
+00:48:55,251 --> 00:49:03,751
+Kodlayıcı ve kod çözücü de 512 hizli bilimi çeren 3 katmanlı LSM'lerle ekliyor.
+
+291
+00:49:03,751 --> 00:49:08,751
+Base Size 128 olarak belirleniyor ve modeller eğitiliyor.
+
+292
+00:49:10,996 --> 00:49:25,396
+Eğitim sonrasındaki sonuçlara bakacak olursak, önce bir rok puanlarına göre değerlendiriliyor. Burada birinci ve üçüncü sıradakiler başka makaleden aldıkları sonuçlar. Onlarla karşılaştırma yapıyorlar.
+
+293
+00:49:28,916 --> 00:49:47,596
+Bu tabloda işte ROG puanlarına bakıyorlar. Daha yüksek puan daha iyi demek anlamına geliyor. Buradaki F8W girişin sadece 8 kelimesi alınıyor anlamına geliyor. Sonra Inversant cümle yerleştirmelerini dahil edince genelde ROG puanları iyileşiyor.
+
+294
+00:49:48,244 --> 00:49:59,244
+Burada ama ROG puanlarının tamamen doğrudan karşılaştırmasını tamamen yeterli görmüyorlar. O yüzden başka metriklere de bakıyorlar.
+
+295
+00:49:59,244 --> 00:50:05,244
+Sonrasında ROG Ablation çalışması yapıyorlar. Bu tabloda...
+
+296
+00:50:05,715 --> 00:50:26,895
+Raporluyorlar sonuçlarını. Farklılaştırdıkları üç bileşenin, yani attention kullanıma, bigram kullanıma ve bigram karıştırma dizilerin ve sentence embedding dahil edildiğinde ROG tarafında ölçülen modelin performansına olumlu katkı duyduğunu gözlemliyorlar.
+
+297
+00:50:27,231 --> 00:50:36,811
+Üçünü de içeren modelin, yani hepsi yapıldığında işlemlerin en yüksek rok puanlarını aldığını söylüyorlar.
+
+298
+00:50:39,471 --> 00:50:44,411
+Bir sonraki değerlendirme metrikleri de cümlelerin uzunluğuna bakıyorlar.
+
+299
+00:50:49,268 --> 00:50:55,887
+Girim etmeni 16 ile 30 arasında bir de 31 ile 45 arasında kelime olacak şekilde ölçüyorlar.
+
+300
+00:50:56,647 --> 00:51:02,347
+Tabii ki de beklendiği gibi uzun cümlelerdense daha kısa cümlelerde daha iyi performans gösteriyor.
+
+301
+00:51:02,347 --> 00:51:04,027
+Rokman veri daha yüksek çıkıyor.
+
+302
+00:51:06,567 --> 00:51:13,687
+Sonrasında bir de genel insanlara soruyorlar, insan değerlendirmesine soruyorlar. En doğrunun bu olacağına inanıyorlar.
+
+303
+00:51:14,164 --> 00:51:24,724
+Burada da ana dili İngilizce olan 6 kişiden, 5 modelden rastge seçilmiş özetleri değerlendirmelerini istiyorlar. Bu tabloda da bunların ortalamasını veriyorlar.
+
+304
+00:51:25,724 --> 00:51:32,983
+Inversant cümle yerleştirmeleri olan ve olmayan modeller şeklinde iki katı gönderdiği ayırıyorlar.
+
+305
+00:51:33,423 --> 00:51:41,184
+Bu küritörlerin her biri de birden beşe kadar ölçekleniyor. Cümleler iki ay küritöre göre değerlendiriliyor.
+
+306
+00:51:41,184 --> 00:51:48,184
+Özetim, dil bilgisi bir de orijinal cümlenin bilgisini ne kadar iyi koyduğu, yani anlamını ne kadar iyi koyduğuna bakıyorlar.
+
+307
+00:51:49,344 --> 00:51:57,724
+Niceliksel değerlendirmenin insan değerlendirmesiyle pek olma olmadığını göz anlıyorlar. Burada sonuçlar çok küçük çıkıyor. Diğerlerinde çok yüksek çıkmıştı.
+
+308
+00:52:00,403 --> 00:52:17,684
+Burada dört tane örnek cümle veriyor. Modelin girdileri, temel gerçekleri, hedef özetleri bir de çıktıların birkaç örneğini gösteriliyor. Çıktığı cümlelerin genellikle iyi şartlandırmış olduğunu ama bazen kusur bir şekilde verilmesine sahip olduğunu gözlemleniyor.
+
+309
+00:52:18,143 --> 00:52:28,063
+Mesela örnek 1'de modelin orijinal anlamını yakalayan bir bilgisi özeti oluşturmak için en ödün bilgileri çıkardığı gösteriliyor.
+
+310
+00:52:29,183 --> 00:52:37,623
+İkinci örnekte hedefe yönelik düşük ROG puanlarına rağmen çıktımın girdi metnini doğru bir şekilde özetlediği bir örneği gösteriyor.
+
+311
+00:52:38,343 --> 00:52:42,143
+Bu durumda her iki modelde de girdinin temel anlamını yakalıyor aslında.
+
+312
+00:52:42,900 --> 00:53:07,440
+Örnek 3'de modellere eğitimde tamamen karıştırılmış kelimeler verilmesine rağmen çıkarımda bazı karmışık terimleri kurtarabildiğini gösteriyor. Bu örnek aynı zamanda modelin bir hatasını da gösteriyor. Şurada loss kelimesi var. Bu mesela iki infersence cümlede. Bu kayıp oluyor. Yani cümle tamamen değişmiş oluyor aslında. Bu da bir hatayı çıkarıyor ortaya.
+
+313
+00:53:08,115 --> 00:53:24,876
+Dördüncü örnekte de daha uzun cümlelerde modelleri bazen anlamı tam olarak yakalayamayacağımı gösteriyor. Bu durumda Inversions'ın modelleri için çıktığı bir bilgisayar ve anlamlı olsa da orijinal gibiden farklı bir anlamı kılıyor. Tamamen farklı bir anlamı geliyor bu cümle.
+
+314
+00:53:27,507 --> 00:53:37,487
+Son olarak deneylerde gürültü gireyici otomatik kodlayıcıların kötü koşullan denilmiş girdilerden bile iyi koşullu metin oluşturmayı hızlı öğrendiğini biliyorlar.
+
+315
+00:53:37,876 --> 00:54:05,876
+Otomatik kodlayıcıların tamamen karıştırılmış ve gürültülü sözcük cümlelerinden bile okunabiliyor cümleleri kurtarma becerisi olduğunu görüyorlar. Gürültü gidiyici otomatik kodlayıcıların bilgisayar açısından doğru ancak anlamsız veya girişten anlantılı olarak farklı diziler çıkardığı bazı durumları gözlemliyorlar. İnsan değerlendirmesine dayanarak hem denetimsiz hem de denetimli yöntemlerin hala etkili cümle sıkıştırma ve özetleme konusunda yeterli kaldığı kanısına var.
+
+316
+00:54:05,876 --> 00:54:09,876
+Anlayacaklarınızı çok teşekkürler.
+
+317
+00:54:13,811 --> 00:54:41,052
+Teşekkürler [öğrenci]. Yalnız ben çok anlamadım bu çalışmayı. Yani şeyi anlayamadım. Cümleyi neden bozuyorlar sıkıştırma yaparken? Ve ne kadar bozulduğunu anlamak için rok şeylerine bakıyorlar, metriklerine. Ben halen anlayamadım. Yani cümleyi bozuyor, sıkıştırıyor. Açtığında cümle orijinal haline dönüyor mu?
+
+318
+00:54:41,619 --> 00:54:49,079
+Orijinal haline döndürmeye çalışıyorlar aslında. O verdiğim örnek cümlelerde de sonuçlarına bakıyorlar. Neler çıkardıklar.
+
+319
+00:54:49,079 --> 00:54:51,720
+Baktım onlara da öyle çok iyi dönmüyor.
+
+320
+00:54:51,720 --> 00:55:01,360
+Evet, dediğim gibi zaten insan değerlendirmesine göre bayağı farkları var. İnsanda mesela 3,87 idi ortalama, diğerlerinde 20 küsür, 30 küsür civarında.
+
+321
+00:55:01,360 --> 00:55:09,619
+Yani niye böyle bir çalışmayla uğraşıyorlar? Ben onu anlamadım. Bir metnide kayıplığı sıkıştırma pek değil yani.
+
+322
+00:55:09,619 --> 00:55:19,300
+Yani tercih edilmeyen bir şey. Yapılmaz. Niye yapmaya çalışıyorlar? Altında yatan şey nedir? Onu açıkçası anlamadım. Peki sorunuz var mı [öğrenci]'ya?
+
+323
+00:55:20,559 --> 00:55:32,019
+[öğrenci]. [öğrenci]. Bir dakika dur. Evet. [öğrenci]. Sırada çünkü [öğrenci] var. Onu işaretledim de o yüzden. Evet. Yokmuş [öğrenci]. [öğrenci] hazır mısın?
+
+324
+00:55:32,019 --> 00:55:33,159
+Hazırım hocam.
+
+325
+00:55:33,780 --> 00:55:52,280
+Seni hatırlayalım mı? Hatırlatmış mıydın kendini? Yok, açayım. Ekranım için. Tamam. Tamam [öğrenci]. Okey. Hazırsın. Tamam. Başla bakalım. Sonra da [öğrenci] gelsin.
+
+326
+00:55:55,040 --> 00:55:56,540
+Ekranım gözüküyor mu?
+
+327
+00:55:56,540 --> 00:55:57,240
+Gözüküyor.
+
+328
+00:56:02,483 --> 00:56:10,684
+Herkese tekrar merhaba. Ben de Fabrice Bellart'ın sinir ağları ile kayıpsız veri sıkıştırma makalesinin özetini yapacağım sizlere.
+
+329
+00:56:11,884 --> 00:56:16,104
+Kayıpsız data sıkıştırma geleneksel tahmin yaklaşımını kullanıyor.
+
+330
+00:56:17,264 --> 00:56:24,523
+ST değerinin tahmin olasılık vektörünü hesaplamak için sinir ağlarından yararlanılıyor.
+
+331
+00:56:25,780 --> 00:56:41,600
+Bilinen değerler S0'dan ST-1 sembollerinin değerleri. Bunlardan yarı çıkarak da ST'nin gerçek değeri yaklaşık eksi log 2 tabanının üzerinde PST bitli aritmetik kodlayıcı kullanılarak şifreleniyor.
+
+332
+00:56:42,260 --> 00:56:53,680
+Dikodır simetrik olduğu için de parametreleri iletmeye gerek olmuyor. Enkodır ve Dikodır modellerini de aynı şekilde güncelleyerek devam ediyorlar.
+
+333
+00:56:55,620 --> 00:57:01,452
+Eğer ön işleme yoksa sıkıştırmada...
+
+334
+00:57:01,460 --> 00:57:23,440
+STT konumundaki byte'ı temsil ediyor ve N0'dan Ns-1'e kadar 256 farklı sembol değeri alabiliyor. Ön işleme varsa da her sembol bir dizi input girdiği byte'ını temsil eder. Daha büyük modeller için yaklaşık 16.000 semboldan alışan bir sözlük kullanılıyor.
+
+335
+00:57:25,108 --> 00:57:34,847
+Çeşitli modellerin yakın sıvı hızlarını göstermek için bir dönemde eğitim gerçekleştirilmiştir. Yani örnekler sinir ağlarından sadece bir kez geçirilmiş.
+
+336
+00:57:35,860 --> 00:57:54,740
+Bu makalenin içeriğinde de uzun kısa süreli bellek yani Long Short Term Memory ve Transformer modeline dayalı Sinera modelleri kullanılarak kayıpsız veri sıkıştırıcıları gösteriliyor, karşılaştırılıyor ve önerilerde bulunuyor geliştirmek için.
+
+337
+00:57:55,284 --> 00:58:06,924
+Bu iki modelde hızlı bir eğitim yakınlaması elde etmek için kullanılıyor. Performanslar da Envik 8 ve Envik 9 veri setleri kıyaslamasında değerlendiriliyor.
+
+338
+00:58:08,104 --> 00:58:12,884
+Uzun süreli hafıza modeli de geri besleme bağlantılarına sahip bir model.
+
+339
+00:58:14,224 --> 00:58:17,924
+Her hücrenin önceki katmanda karşılığındaki hücrenin...
+
+340
+00:58:18,496 --> 00:58:28,736
+Çıktısı ve sembolün değerini input olarak alıyor. Bir LSTM hücresinde elte adet katmandan oluşur şekilde.
+
+341
+00:58:30,835 --> 00:58:53,295
+Alex Graves'in Generating Sequence with Recurrent Neural Network modelindeki modele benzer bir model kullanılıyor. Ancak hücre denklemlerinde değişiklik yapılıyor. Hücreye çıktı varyantını kullanmak için. Bu önemli bir değişiklik çünkü geleneksel STM'den farklı olarak hücre durumu sınırlandırılıyor.
+
+342
+00:58:58,835 --> 00:59:09,295
+Bu dönemlerinde sadeleştirmeye gidilebiliyor. Layer norm ile de katmanlar normalize edilerek performansta iyi yönde bir fark yapılıyor.
+
+343
+00:59:12,295 --> 00:59:14,495
+Overfitting kavramı var.
+
+344
+00:59:15,827 --> 00:59:30,028
+Görünmeyen veriler için genelleme performansını olumsuz etkileyen bir sorun. Genelde sebebi de dengesiz veri kümelerinden ve modeli eğitim verilerine çok yakın olan model parametrelerin başlatılmasından kaynaklanıyor.
+
+345
+00:59:30,028 --> 00:59:39,268
+Bunu düzeltmek için de dropout teknik kullanılır. Bu da eğitim sırasında gizli birimleri rastgele bırakmakla gerçekleştiriliyor.
+
+346
+00:59:43,827 --> 00:59:48,347
+Overfitting olma olasılığı çok düşük gözüküyor. Bu yüzden dropout kullanılmaz.
+
+347
+00:59:50,708 --> 00:59:57,168
+Modelin eğitimde de 20 zaman adımlı ardışık segmentlere düzenli olarak geri yazılım uygulanıyor.
+
+348
+00:59:57,168 --> 01:00:02,887
+Yani eğitim bölümünün ilk durumları önceki bölümün son değerlerine ayarlanacak şekilde.
+
+349
+01:00:03,443 --> 01:00:16,023
+Edim Optimizasyonu kullanılarak da farklı olarak örgütlerinden parametrelerin her birinin öğrenme onaranlarının yanı sıra momentum değişiklikleri de ön bellekte saklanmış oluyor.
+
+350
+01:00:18,243 --> 01:00:29,023
+Tabloda parametreler gösterilmiş. Ek olarak da girdi yerleştirmeleri olmadan da parametre sayısı listeleniyor. Bunun sebebi de...
+
+351
+01:00:29,456 --> 01:00:41,336
+Girdi yerleştirmelerinde bilgi işlem maliyeti ihmal edilebilir olduğu için. Bellek stonunda da modeli değerlendirmek ve eğitmek için ayrılan toplam bellek gözüküyor.
+
+352
+01:00:42,796 --> 01:00:47,816
+Small model denilen küçük modelde uygulamaların hızlarının karşılaştırmalarında kullanılacak.
+
+353
+01:00:54,132 --> 01:01:09,832
+Öbüründen farklı olarak iki girdi şeklinde gerçekleşiyor. Giriş verilerinin her biri bir bölümünün öneminin farklı şekilde ağırlıklandıran, kendi attention mekanizması denilen dikkat mekanizmasını benimseyen bir derin öğrenme modeli bu da.
+
+354
+01:01:09,832 --> 01:01:17,152
+Sıralı giriş verilerini işlemek için tasarlanıyor ve tüm girişler bir kerede yapılıyor.
+
+355
+01:01:17,487 --> 01:01:29,967
+Dikkat mekanizması da giriş dizisindeki herhangi bir konum için bağlam dağılıyor. Yine LSTM'de olduğu gibi Transformer hücreleri de L adet katmandan oluşuyor.
+
+356
+01:01:31,807 --> 01:01:40,467
+Jamie Carbonell ve arkadaşlarının Attentive Language Models Beyond the Fixed Land Context modeline benzer bir şekilde.
+
+357
+01:01:41,012 --> 01:01:57,831
+Ama değişiklik olarak da göreli gömmeler yerine öğrenilen gömmeler kullanılıyor. Bunun sebebi de hem daha basit olması ve bu kullanımdan sonra Rami Alfor'un makalesindeki sonuçtan çok daha iyi bir sonuç elde edildiği görülüyor.
+
+358
+01:01:58,532 --> 01:02:04,711
+LSTM ile aynı şekilde overfitting olasılığı çok az. Bu yüzden dropout'a gerek duyulmuyor.
+
+359
+01:02:06,612 --> 01:02:23,592
+Eğitimi de farklı olarak 64 adımla ardışık segmentlerde bir backpropagation kullanılır. 64 ek zaman adanlamasıyla da 128 adım olarak dikkat hesaplamasında bulunuyor. Yine ödüm optimizasyonu kullanılır.
+
+360
+01:02:25,907 --> 01:02:43,547
+Parametre olarak 8 adet attention başlığı oluyor ve öğrenme oranına doğrusal olarak azaldığı görülüyor. İlk ve son değerleri göstermiş burada Learning Break'te. Gene 7 değerleri olmadan parametre sayısı da parametreler arasında.
+
+361
+01:02:45,547 --> 01:02:47,587
+Şimdi Enkoder ve Decoder.
+
+362
+01:02:49,235 --> 01:02:58,735
+Simetrik demiştik, aynı model üzerinde güncelleme yapılıyor diye. Bunun için bir özel C kütüphanesi gerekiyor. Bu NC kütüphanesi oluşturuluyor.
+
+363
+01:02:58,735 --> 01:03:12,195
+Her CPU ve işletim sisteminde belirleyici sonuçlar aldığımızdan emin olmak için nokta işlemlerine bağlı, harici kitaplıklara bağlı olmayan bir kitaplık kullanılıyor.
+
+364
+01:03:12,788 --> 01:03:39,147
+Bundan sonra da ön işlemcilere ilgili bakılmış. Küçük bir LSTM modeli için bir anlamlı karşılaştırma yapmakta Brian Kunol'un çalışmasındaki CMX Metin Ön İşlemcisini ve yine aynı çalışmadaki LSTM kompresi kullanılıyor.
+
+365
+01:03:39,599 --> 01:03:52,500
+Yaklaşık 45 bin kelimelik önceden oluşturulmuş bir sözlükte kelimeler 1 ile 3 byte arasında benzersiz bir kodla değiştiriliyor. Burada kaçış kodlarıyla tüm büyük harfler küçük harflere dönüştürülmüş.
+
+366
+01:03:55,299 --> 01:04:04,719
+İkinci ön işlemci olarak da alt kelime tabanlı ön işlemci kullanılıyor. Bu daha büyük modellerde geçerli. Her sembolü bir byte dizisi temsil ediyor.
+
+367
+01:04:05,780 --> 01:04:14,579
+Tüm büyük harfleri, küçük harfleri kaçış kodlarıyla dönüştürmek için giriş verileri üzerinden bir ilk geçiş yapılıyor.
+
+368
+01:04:14,579 --> 01:04:24,380
+Bu kaçış kodu da öncesinde bir boşluk olmadığında kelimenin öne sonra arkasına boşluk gelecek şekilde bir kaçış kodu eklenerek gerçekleşiyor.
+
+369
+01:04:24,980 --> 01:04:44,440
+Bu şekilde belirli bir kelime için daha az değişkene sahip ve kelime boyutunun azaltılmış hali elde ediliyor. İkinci geçişte de byte-check kodlamasından esinlenerek iyi seçilmiş iki sembol birleştirilerek yine lemeli olarak kelime dağarcığına yeni bir sembol eklenilmiş.
+
+370
+01:04:46,516 --> 01:04:54,336
+Sözlük ayırıcıları hakkında herhangi bir varsayımda bulunmadığı için ikinci geçiş herhangi bir dilde çalışabiliyor.
+
+371
+01:04:55,635 --> 01:05:03,135
+Birleştirilecek semboller de sıfırıncı dereceden entropi indirgemesini maksimize edilerek seçilmiş.
+
+372
+01:05:04,076 --> 01:05:08,876
+Ayrıca frekanslarda belirli bir eşiğin altında bulunduğunda sembolleri kaldırılır.
+
+373
+01:05:10,164 --> 01:05:16,164
+Modeller için yaklaşık 16.000 sembolden oluşan bir sözlük kullanılıyor.
+
+374
+01:05:35,059 --> 01:05:59,639
+CMYX tarafından yapıldığı görülüyor. 1.19 oranıyla en düşük orana sahip aynı zamanda 1.56 ile de sıkıştırma hızı en hızlı model. Enmig 8'e bakıldığında. Enmig 9 içinde yine aynı şekilde 0.93 ile en düşük orana sahip en başarılı sıkıştırma modelidir.
+
+375
+01:06:01,460 --> 01:06:15,359
+Bu önerilen yeni modeller son teknoloji dil modelleriyle doğrudan karşılaştırılamıyor. Çünkü üzerlerinde yapılan değişikliklerde biz mesela tüm veri üzerinden sadece tek bir geçiş, tek bir eğitim veriliyor.
+
+376
+01:06:15,359 --> 01:06:19,359
+Ve BPB hesabı da tüm veriler...
+
+377
+01:06:19,967 --> 01:06:46,527
+Tüm veriler üzerinde yapılıyor. Halbuki son 5 MB üzerinde yapılması gerekirken. Sıkıştırılmış sonuçlarda ön işleme sözlüğünün boyutu da dikkate alınmıyor. LSTM ve Transformers için bakıldığında dekomprasyon hızı sıkıştırma hızından yavaş olduğu görülüyor. Buna rağmen uygulama hızı yine onlara benzer bir model olan LSTM'den çok daha hızlı.
+
+378
+01:06:47,411 --> 01:06:56,931
+Hızı iyileştirmek için daha optimize edilmiş matriz çarpma uygulamasından veya daha büyük parti boyutudan bahsedilebilir.
+
+379
+01:06:58,251 --> 01:07:06,931
+CMYX'ın performansına ulaşılamadı ancak bu kadar basit bir modelle yine de iyi performans elde edildiği görülmüş.
+
+380
+01:07:08,724 --> 01:07:26,543
+LSTM ve Transformer'ı kendi içinde kıyaslayacak olursak, dosya offsetine göre sıkıştırma oranını değişiminin, Transformer modelinin aynı aralıktaki bir dizi parametreyle LSTM modelinden daha düşük bir yakınlama hızına sahip olduğu görülüyor burada.
+
+381
+01:07:26,543 --> 01:07:33,563
+Grafikte kırmızılar Transformer ve mavilerde LSTM'nin oranını gösterecek şekilde.
+
+382
+01:07:34,016 --> 01:08:00,876
+Transforma modelini daha iyi yapmak için birkaç deney daha yapılması lazım. Bunun üzerinde araştırmalar yapılması gerek diye belirtmişler. Sonuç olarak bu yapılan tüm işlemlerde en sık kitaplığı sayesinde gerçekleşiyor. Bunu görülmüş. LSTM tabanlı kayıpsız bir sıkıştırmanın pratik bir uygulaması sunulmuş.
+
+383
+01:08:01,268 --> 01:08:18,667
+LSTM yavaş ama açıklaması basit bir kod olduğu görülüyor. Benzer sıkıştırma oranı veren sıkıştırıcılara kıyasla bellek tüketimi yine makul bir düzeyde. Özel bir donanım uygulamasından büyük ölçüde faydalanabilir diyor.
+
+384
+01:08:18,667 --> 01:08:29,268
+Örnek olarak da daha büyük modeller kullanmak, daha iyi bir gradient optimize edici kullanmak, hiperparametreleri ayarlayarak veya ön işlemciyi geliştirerek sıkıştırmak.
+
+385
+01:08:29,268 --> 01:08:36,547
+Sıkıştırma oranını iyileştirmek için hala birçok fırsat olduğu görülmüş. Dinlediğiniz için teşekkür ederim.
+
+386
+01:08:37,868 --> 01:08:47,788
+[kişisel bilgi]
+
+387
+01:08:48,532 --> 01:08:55,012
+[kişisel bilgi]
+
+388
+01:08:55,012 --> 01:08:56,412
+[kişisel bilgi]
+
+389
+01:08:56,412 --> 01:08:58,051
+[kişisel bilgi]
+
+390
+01:08:58,051 --> 01:08:59,532
+[kişisel bilgi]
+
+391
+01:09:01,532 --> 01:09:03,252
+[kişisel bilgi]
+
+392
+01:09:04,051 --> 01:09:05,372
+[kişisel bilgi]
+
+393
+01:09:07,572 --> 01:09:10,291
+[kişisel bilgi]
+
+394
+01:09:10,971 --> 01:09:12,851
+[kişisel bilgi]
+
+395
+01:09:13,291 --> 01:09:13,932
+[kişisel bilgi]
+
+396
+01:09:13,992 --> 01:09:15,152
+[kişisel bilgi]
+
+397
+01:09:18,292 --> 01:09:35,952
+[kişisel bilgi]
+
+398
+01:09:36,891 --> 01:09:42,032
+[kişisel bilgi]
+
+399
+01:09:42,032 --> 01:09:44,612
+[kişisel bilgi]
+
+400
+01:09:45,039 --> 01:09:58,639
+[kişisel bilgi]
+
+401
+01:09:59,039 --> 01:10:00,020
+On dakika da on dakika olsun hocam.
+
+402
+01:10:01,079 --> 01:10:02,500
+İyi tamam, on dakika olsun.
+
+403
+01:10:03,579 --> 01:10:05,159
+Tamam hocam, yirmi geçe görüşmek üzere.
+
+404
+01:10:06,260 --> 01:10:07,340
+Ooo, on iki oldu.
+
+405
+01:10:08,119 --> 01:10:11,500
+Dokuz geçiyor hocam, düzlemiştim ya. Tamam, fark etmez bir dakika.
+
+406
+01:10:13,971 --> 01:10:15,112
+Sesiniz gitti hocam.
+
+407
+01:10:16,112 --> 01:10:18,992
+Tamam uzatmayalım. On dakikamız var dedim.
+
+408
+01:10:19,871 --> 01:10:20,891
+Tamam hocam. Teşekkürler.
+
+409
+01:17:18,996 --> 01:17:25,416
+Erken mi geldim, geç mi geldim bilmiyorum. Kayağıma yayındayım. Gözlüğümü değiştiriyorum.
+
+410
+01:17:26,896 --> 01:17:35,416
+[kişisel bilgi]
+
+411
+01:17:36,576 --> 01:17:39,695
+[kişisel bilgi]
+
+412
+01:17:40,180 --> 01:17:43,479
+[kişisel bilgi]
+
+413
+01:17:43,860 --> 01:17:45,979
+[kişisel bilgi]
+
+414
+01:17:46,300 --> 01:17:47,620
+[kişisel bilgi]
+
+415
+01:17:47,899 --> 01:17:48,239
+[kişisel bilgi]
+
+416
+01:17:48,239 --> 01:17:52,120
+[kişisel bilgi]
+
+417
+01:17:52,280 --> 01:17:53,079
+[kişisel bilgi]
+
+418
+01:17:53,079 --> 01:17:53,620
+[kişisel bilgi]
+
+419
+01:17:54,319 --> 01:17:55,479
+[kişisel bilgi]
+
+420
+01:17:55,899 --> 01:17:57,120
+[kişisel bilgi]
+
+421
+01:17:57,524 --> 01:18:01,904
+[kişisel bilgi]
+
+422
+01:18:02,164 --> 01:18:03,144
+[kişisel bilgi]
+
+423
+01:18:03,304 --> 01:18:09,884
+[kişisel bilgi]
+
+424
+01:18:10,244 --> 01:18:10,604
+[kişisel bilgi]
+
+425
+01:18:11,004 --> 01:18:14,404
+[kişisel bilgi]
+
+426
+01:18:15,123 --> 01:18:19,764
+Evet. Ben DNA kullanarak sismik veri sıkıştırma makalesini anlatacağım size.
+
+427
+01:18:19,764 --> 01:18:22,184
+Ama bir aç ekranını aç, görmüyorum.
+
+428
+01:18:23,923 --> 01:18:25,564
+Pardon hocam, ben direkt başladım.
+
+429
+01:18:26,184 --> 01:18:26,524
+Tabii.
+
+430
+01:18:28,543 --> 01:18:29,684
+Şimdi geldi mi size?
+
+431
+01:18:30,703 --> 01:18:32,684
+Diyenen ne ki şimdi? Diyenen ne?
+
+432
+01:18:33,184 --> 01:18:36,203
+Yapay sinir ağa hocam aslında. Bu şekilde yazmışlar.
+
+433
+01:18:36,503 --> 01:18:40,764
+D-N, D-N'in kısaltılmışı. Neural Network. D-N acaba?
+
+434
+01:18:42,444 --> 01:18:44,024
+Neydi hocam? Bir saniye.
+
+435
+01:18:44,024 --> 01:18:45,123
+Uzak bakalım.
+
+436
+01:18:48,404 --> 01:18:50,224
+Değil mi anlatacağım aslında?
+
+437
+01:18:50,564 --> 01:18:51,544
+Tamam. Tamam. Evet.
+
+438
+01:18:51,984 --> 01:18:53,964
+Doğru, öyle bir paper var, okey.
+
+439
+01:18:54,324 --> 01:18:56,604
+Evet. Şu an tam ekran mı sizde?
+
+440
+01:18:57,268 --> 01:18:59,447
+Ne? Tam ekran mı şu an sizde sunum?
+
+441
+01:18:59,467 --> 01:19:01,467
+Tam ekran değil. Şu an?
+
+442
+01:19:01,907 --> 01:19:02,727
+Evet, tam ekran.
+
+443
+01:19:02,827 --> 01:19:14,347
+Tamam. Konu başlıklarım önce sismik verinin ne olduğundan bahsedeceğim. Sonra bu alandaki daha önceki çalışmalar hangi yöntemleri kullanmış ondan bahsedeceğim. Sonra bu makalenin ne yaptığından bahsedeceğim. Bir de sonuçları size göstereceğim.
+
+444
+01:19:14,947 --> 01:19:24,768
+Sismik veri, yer altındaki yüzey bileşenleri hakkında bilgi almak için toplanan veriler. Yani yakıt ve gaz kesimi için yapılıyor aslında bu çalışmalar. Belli aralıklarla sensörler yerleştiriyorlar.
+
+445
+01:19:25,268 --> 01:19:45,287
+Veri altındaki sinyalleri de verişleme merkezine gönderiyorlar. Bu veriler çok büyük alan kapladığı için verişleme merkezine gönderme yüksek bir bant genişliği gerektiriyormuş. Bunun önüne geçmek için de sıkıştırma algoritmaları kullanıyorlar. Daha önce kullanılan yöntemler ve şu anki yöntem aslında tüm sıkıştırma yöntemleri ikiye ayrılıyor. Kayıpsız ve kayıplı sıkıştırma olarak.
+
+446
+01:19:45,712 --> 01:19:59,412
+Kayıpsız sıkıştırma deneyen yöntemlerde en fazla integer değerler için 5'e bir sıkıştırma. Yani 5'lik veriyi 1'e sıkıştırma. Fluat değerler için 2'ye bir sıkıştırma kazanmışlar. Bu da çok yüksek bir değer değil aslında. Hala da veri yüksek bir alan kaplıyor diye belirtmişler makarada.
+
+447
+01:20:00,000 --> 01:20:22,399
+Daha yüksek bir sıkıştırma performansı için kayıplı sıkıştırma kullanıyorlar. Kayıplı sıkıştırma da kaybı en aza indirmeye çalışıyorlar tabii ki. Önemli bir çalışma olduğu için. Her kayıplı sıkıştırma algoritmasında da üç adım var. Dekorolasyon, kuantalama ve kodlama. Zaten kuantalama ve kodlama bütün sıkıştırma algoritmalarında aşağı yukarı görüntü sıkıştırma vesaire de var. Dekorolasyonu ben ilk defa burada duydum, gördüm.
+
+448
+01:20:23,091 --> 01:20:50,332
+O da sinyalin içindeki otokorelasyon ve sinyalin diğer yönlerini koruyarak çapraz korelasyonu azaltmaya çalışan bir yöntemmiş. Burada üç tane ayrı yöntem kullanılıyor. Dalgacıklar, lokal trigonometrik fonksiyonlar ve bu ikisinin kombinasyonları. Aslında bütün algoritmalarda bunlar var. Sadece bu algoritma için geçerli değil. Bazıları kombinasyonlarını kullanıyor, bazıları dalgacıkları kullanıyor, bazıları da trigonometrik fonksiyonları kullanıyor. Bu çalışmalı dalgacıklar kullanılarak gerçekleştirmişler bütün sıkıştırmaları.
+
+449
+01:20:51,091 --> 01:21:02,971
+Kuantama ve kodlamada da bir önceki adımdan elde edilen artıklar dediğimiz aslında redundancy dediğimiz kısım ve kat sayıları fixed-stent encoding veya variable-line encoding ile kodlamaya çalışıyorlar.
+
+450
+01:21:03,475 --> 01:21:21,076
+Aslında buradaki ana fikir şu, tüm veriyi göndermekten size bir yapay sinirağ eğitelim diyorlar. Yapay sinirağının var yansı, çıktı var yansı, bizim verimizin girdikleri var yansı daha düşük olacak her zaman. O yüzden sıkıştırmayı daha basite indirgemiş olacağız diye düşünüyorlar. Bu yüzden bir yapay sinirağ modeline giriyorlar.
+
+451
+01:21:21,971 --> 01:21:44,931
+DNA kullanarak sıkıştırmada en eksi bir adımdaki bilgileri kullanarak sürekli recursive olarak eninci adımı tahminleme üzerine çalışıyorlar. Tahmin gerçek arasındaki farklılıklar az önce söylediğim gibi artık olarak gönderiliyor. Artıkların varyansı orijinal örneklerden daha düşük bir varyansa sahip. Artıkları Hufman'la dekodlamayı deniyorlar. Hani variable length dediğim kısım aslında o. Bir de fixed length deniyorlar. Sonuçların ikisini de birazdan göreceğiz.
+
+452
+01:21:45,395 --> 01:22:05,395
+Mimari bu şekilde. İmput verisinin belli bir sayıdaki input verisiyle önce modeli eğitiyorlar. Daha sonrasında bu eğitim için kullanıkları verilerini direkt gönderiyorlar alıcı tarafına. Daha sonra model ağırlıklarını gönderiyorlar. Artık bundan sonra iki tarafta da mimari oluşturulduğunda K-Mins algoritmasıyla kuantalama yapıyorlar. Kuantalama değerleri de Huhman Encoding ile kodlayıp gönderiyorlar.
+
+453
+01:22:06,644 --> 01:22:33,404
+Alıcı tarafında ise iki tane yöntem kullanılmış. Önce LPG dediğim Linear Prediction yapan modeller. Burada Mean Square Fitting Regresyon Yardımıyla tahminleme yapmışlar. Ama Linear modellerin böyle karmaşık ilişkilere sahip olan verileri modellemede çok başarılı olmadığını görmüşler. Bir de normalize ederek başarıyı arttırmaya çalışmışlar. O normalizasyonda da her trace, yani arka arkaya gönderilen her iz kendi içinde normalize edilmiş.
+
+454
+01:22:34,644 --> 01:22:49,144
+Son olarak tahminleme de, sol taraftaki mimari aslında en tahmin sırası. Yani her zaman bir önceki modelin bir önceki çıktısıyla artık değeri bir sonraki gönderim için input olarak aslında modele girdi olarak veriliyor.
+
+455
+01:22:49,963 --> 01:22:56,864
+Gizli katman sayısı artışça da Gradvan Manishing problemi ile karşılaşmışlar. Zaten bu bütün yapay siniralları modellerine karşılaşılan bir problem.
+
+456
+01:22:56,864 --> 01:23:02,644
+Yani aslında çok detaylı olarak mimariye girmemişler. Ben modelinde open source kaynağı varsa, open source verisi...
+
+457
+01:23:02,644 --> 01:23:06,184
+Bu modeli de open source olarak yayınlamışlar hocam.
+
+458
+01:23:06,547 --> 01:23:16,328
+Burada şey görüyorum, normal bildiğimiz birden H tane Hidon'a olan bir nano network var. Full connected bağlanmış. Başka da bir şey görmüyorum.
+
+459
+01:23:16,648 --> 01:23:25,948
+Evet, evet. Zaten mimariyi anlatırken de tamamen şundan bahsediyorlar. İşte inputtan gelenler ağırlıklarla çarpılır, Hidon'a gönderilir. Hidon'a da ağırlıklarla çarpılır, toplanır.
+
+460
+01:23:26,427 --> 01:23:26,688
+Evet.
+
+461
+01:23:27,168 --> 01:23:30,168
+Aslında düz bir yapay sindira modeli yani anlattıkları model.
+
+462
+01:23:30,248 --> 01:23:31,148
+Çok tatmanlı.
+
+463
+01:23:31,748 --> 01:23:32,208
+Evet, evet.
+
+464
+01:23:33,876 --> 01:23:43,556
+Daha sonrasında bu artık kodlama ve Fuhman kodlama denemelerinde Fixed Land Encoding'i de denemişler, Fuhman'da denemişler. İkisinin de başarısını ölçmüşler.
+
+465
+01:23:44,180 --> 01:24:07,580
+Deneysel sonuçlarda onu görelim. Deneyler East Texas Veri Seti üzerinde gerçeklenmiş. Veri Seti Open Source olarak var ama model Open Source olarak bulunmuyor. Her trace 0-1 arasında normalize edilmiş gönderimden önce. Veri Setini 3'e ayırmışlar. 3'ü de eşit büyüklükte olan parçalar. Eğitim, çapraz gerçekleştirme bir de test olarak. Reconstruction ölçümü için de CNR kullanmışlar. Signal Noise Ratio oranını kullanmışlar.
+
+466
+01:24:08,275 --> 01:24:27,416
+Burada sonuçları görebiliyorsunuz. LPC dediğimiz linear model. DNN dediğimiz de yapay sinir haken de oluşturduları modelle yaptıkları ölçümler. Bu 16-32-64 kuantalamadaki seviye sayısı. 5-10-15 diye burada ayrılmış olanlar da data segmenti. Yani bir gönderimde kaç tane datanın gönderileceği.
+
+467
+01:24:28,032 --> 01:24:42,832
+Burada 23'e birden 42-43'e çıktığını görebiliyoruz aslında. Hepsi neredeyse iki katına çıkmış. Signal Noise Ration'un yüksek olması da şu demek aslında. Signaldeki gürültü oranının geçikte düşmesi demek. Daha verimli bir sıkıştırma yaptıklarını gösteriyor.
+
+468
+01:24:43,572 --> 01:24:57,172
+Burada gönderilen veri, yukarıda gördüğümüz orijinal veri. Diğer tarafta Reconstruction'dan geçtikten sonra çıkarılan veri. Bu aradaki fark da, şurada gördüğünüz kadar aslında çok küçük bir fark. Yani başarılı bir sıkıştırma gerçekleştirdiklerini burada gösteriyorlar.
+
+469
+01:24:59,028 --> 01:25:17,967
+Burada da Hufman kullanarak aslında bu işi ne kadar başarılı hale getirdiklerini göstermeye çalışmışlar. Bu üniform koding'te 7.8, 7.6 gibi başarılar elde edilmiş. Diğerlerinin hepsinde neredeyse 7'lik bir fark var. Yani hepsinde 7 arttırmış sıkıştırma oranını.
+
+470
+01:25:19,507 --> 01:25:34,648
+Sonuçta gerçek veri setleri üzerinde DNA'nin LPC'den çok daha başarılı olduğu görülmüş. Çünkü karmaşık ilişkilerine sahip bütün verilerde aslında sadece bu sismik verilerde değil, bütün karmaşık verilerde yapay sinir ağları ilişkileri daha iyi modelleyebiliyor. Bunu görmüşler.
+
+471
+01:25:34,887 --> 01:25:46,608
+Fixed Land Enkoning yerine Hufman kodlama yaparak da ortalama kod çoğucuklarının daha kısa olmasını sağlamışlar. Çünkü daha sık gönderilen sinyal yükseklikleri daha düşük bitle ifade ediliyor aslında burada.
+
+472
+01:25:47,507 --> 01:25:51,568
+Yüksek bir bozulma olmaksızın da 40'tan fazla CNR'e ona bir sıkıştırma ile elde etmişler.
+
+473
+01:25:51,568 --> 01:25:56,408
+Yani sunumun başını hatırlıyorsunuzdur. İntecir değerleri için 2'ye 1, Fluat değerleri için 5'e 1'den.
+
+474
+01:25:56,847 --> 01:26:01,268
+Şu an 40'tan fazla CNR üzerinde, 40 üzerindeki CNR'la ona bir sıkıştırmaya geldik.
+
+475
+01:26:02,347 --> 01:26:04,007
+Çalışma bu şekilde hocam. Teşekkür ederim.
+
+476
+01:26:04,247 --> 01:26:06,908
+Ödüm şeyi açabilir misiniz? Şeman vardı ya.
+
+477
+01:26:07,688 --> 01:26:08,087
+Efendim?
+
+478
+01:26:08,608 --> 01:26:11,047
+Şeman vardı nasıl çalıştığını gösteren.
+
+479
+01:26:12,028 --> 01:26:12,507
+Şu mu hocam?
+
+480
+01:26:13,108 --> 01:26:15,148
+Bu muydu? Bundan başka yok muydu?
+
+481
+01:26:15,367 --> 01:26:15,948
+Şu vardı bir de.
+
+482
+01:26:15,967 --> 01:26:22,068
+Bu, bu. Şimdi ben şöyle bakacağım. Input datam benim sismik datam.
+
+483
+01:26:22,068 --> 01:26:22,327
+Evet.
+
+484
+01:26:23,247 --> 01:26:33,747
+Önce onun üzerinde bir işlem yapıyor. Bu kuantalama işlemleri şu kare kodun içindeki değil mi? Predictive training ve residual encoding kısmı.
+
+485
+01:26:33,787 --> 01:26:34,867
+Şu kısım hocam, evet.
+
+486
+01:26:35,412 --> 01:26:45,652
+Tamam, kuantaladı, enkot etti. Enkot edilmiş şey bu, predictor setup, data segment. Bu da en değerlerini kaç kaç böldüğü.
+
+487
+01:26:45,771 --> 01:26:46,072
+Evet.
+
+488
+01:26:46,252 --> 01:26:50,971
+Konfetans işlemi yaptı ve açtı. Peki, senin projen ne?
+
+489
+01:26:52,212 --> 01:26:53,752
+Benim projem Fufman Hocam.
+
+490
+01:26:54,431 --> 01:27:02,632
+Bir de demin bir şey söyledin. Bunu ben deneyecektim ama Fufman'da açık değil dedi. Onu cümleni bir daha alabilir miyim?
+
+491
+01:27:03,007 --> 01:27:14,028
+Hocam ben makalede çok modeli anlayamadığım için, open source ise eğer proje diye, projeyi aradım. Projenin kaynak kodunu aradım. Onu bulamadım, onu söylemiştim aslında. Deneyecektim hani sıkıştırma ne kadar başarılı diye.
+
+492
+01:27:14,828 --> 01:27:21,087
+Tamam, tamam peki. Teşekkür ederim. Sorusu olan var mı bu arada? Yok.
+
+493
+01:27:22,228 --> 01:27:23,028
+Teşekkürler hocam.
+
+494
+01:27:23,028 --> 01:27:30,328
+[kişisel bilgi]
+
+495
+01:27:31,028 --> 01:27:39,968
+[kişisel bilgi]
+
+496
+01:27:40,627 --> 01:27:43,147
+[kişisel bilgi]
+
+497
+01:27:43,527 --> 01:27:45,347
+[kişisel bilgi]
+
+498
+01:27:45,707 --> 01:27:46,427
+[kişisel bilgi]
+
+499
+01:27:46,447 --> 01:27:47,087
+[kişisel bilgi]
+
+500
+01:27:48,247 --> 01:27:51,547
+[kişisel bilgi]
+
+501
+01:27:51,887 --> 01:27:52,147
+[kişisel bilgi]
+
+502
+01:27:52,327 --> 01:27:52,707
+[kişisel bilgi]
+
+503
+01:27:52,967 --> 01:27:57,967
+[kişisel bilgi]
+
+504
+01:27:58,487 --> 01:28:00,867
+[kişisel bilgi]
+
+505
+01:28:02,323 --> 01:28:12,603
+[kişisel bilgi]
+
+506
+01:28:12,603 --> 01:28:18,043
+[kişisel bilgi]
+
+507
+01:28:18,183 --> 01:28:25,283
+[kişisel bilgi]
+
+508
+01:28:25,823 --> 01:28:26,883
+Çok sıcak hocam.
+
+509
+01:28:26,996 --> 01:28:49,836
+Peki. Tabii sizin gelpazeniz yok. Benim konum işte XR görüntülerinin konuluşunun rekür ürünler networklarla sıkıştırılması aslında. Burada motivasyonları, bunların medikal görüntülerin işte datası çok büyük. Bizim bunları bir insanlara göndermemiz lazım. Çünkü...
+
+510
+01:28:50,003 --> 01:29:08,523
+Yeterli sayıda sağlık çalışanımız yok. Bir kişiye bunları gönderelim. Bunu yorumlasın. Fakat gönderirken bunu sıkıştırmamız gerekecek. Dataset üzerinde, belli bir dataset üzerinde önerilen yöntemlerden daha iyi bir şekilde sıkıştırabilir miyiz? Aslında araştırdığı konu bu.
+
+511
+01:29:08,703 --> 01:29:10,923
+Ama polis'e sıkıştırma yapıyorlar değil mi?
+
+512
+01:29:11,384 --> 01:29:12,743
+Yok, kayıplı hocam burada.
+
+513
+01:29:12,743 --> 01:29:18,003
+Peki, ben her zaman ondan korkarım. Mesela şu GR filminde küçücük bir...
+
+514
+01:29:18,003 --> 01:29:19,003
+Evet.
+
+515
+01:29:19,003 --> 01:29:21,804
+O da olmadık bir lezyon.
+
+516
+01:29:22,143 --> 01:29:22,443
+Evet.
+
+517
+01:29:22,663 --> 01:29:23,823
+Adam onu yok etti.
+
+518
+01:29:24,483 --> 01:29:26,823
+Baktı doktor, tırın tırın civrin dedi.
+
+519
+01:29:27,859 --> 01:29:41,380
+Evet. Bunu araştırıyorlar aslında. Doğru diyorsunuz. İşte burada CHEST X-Ray 8 datasetini kullanıyorlar. Burada 8 farklı sınıf var. Her biri farklı birer hastalığı temsil ediyorlar.
+
+520
+01:29:41,380 --> 01:29:55,859
+İşte veri kümesini oluştururken burada görüntülerden kroplar alarak başlamışlar. 1024'de 1024 bu resim. İşte 128'lik ve 256'lik iki tip de kroplar almışlar. İşte bu ikisi için de birbirleriyle karşılaştırmışlar.
+
+521
+01:29:55,859 --> 01:30:18,539
+Daha sonrasında işte bu.
+
+522
+01:30:19,188 --> 01:30:27,068
+Vah hocam, içinden çok anladığımı söyleyemem fakat hastalığın bulunduğu bölgeler işte bu şekilde gösterilmiş burada.
+
+523
+01:30:28,347 --> 01:30:29,407
+Bunu çizen kim?
+
+524
+01:30:30,028 --> 01:30:31,967
+Bu dataset'in kendisinden aldım.
+
+525
+01:30:32,268 --> 01:30:33,627
+Peki, tamam.
+
+526
+01:30:34,195 --> 01:30:53,435
+İşte daha sonrasında 21 örnek train için, doğrulama için 1000 örnek ve test için 500 örnek almışlar. Burada eğitirken işte hastalıktan bağımsız olarak biz feature'lar öğretmemiz gerektiği için de bunu biz shuffle edelim demişler. Yani veriyi shuffle etmişler. Bir crop, bir train de kalırken bir crop testi kalmış olabilir.
+
+527
+01:30:54,136 --> 01:31:02,195
+Model şeması bu şekilde aslında. Üst tarafta gördüğümüz kısım encoder kısmı, alt taraftaki ise decoder kısmı. Şu aslında bizim...
+
+528
+01:31:02,195 --> 01:31:30,195
+Sıkıştırdığımız tensor yapısı oluyor. Burada ilk işlemde demişler ki biz basit feature'ları biz burada çok önem veriyoruz aslında. Bu çalışmanın da diğerlerinden ayrılan kısmı o. O yüzden bunu iki katmanda yapalım. Bir pooling yapıp konvolisyon uygulayalım. Bir de konvolisyon uygularken strike uygulayalım demişler. İki kere bir ilk seferde feature çıkarıp bunların ortalamasını almışlar. Şu noktayla gösterdi.
+
+529
+01:31:30,195 --> 01:31:46,136
+İki tensörünün aslında ortalaması oluyor. Daha sonrasında bunu aranan konvolüsyona gönderiyorlar. Bu aranan konvolüsyon aslında başka bir makalede önerilen bir şey, yapı. O da bu makale. Orada işte bildiğimiz bizim LSTM yapısında.
+
+530
+01:31:46,931 --> 01:32:14,131
+Buradakileri inputları ağırlıklarla çarparak devam ediyorduk. Fakat burada ağırlıklarla çarpmayalım da giren görüntülere konvolüsyon işlemi uygulayalım diyerek başlıyor. Bu bildiğimiz LSTM'in formülü aslında bizim kullandığımız. Bu kodu, daha açıklayıcı olması için koydum bunu. Inputu alıyor, konvolüsyon uyguluyor. Hidden'dan gelen de konvolüsyon uygulayıp gate'leri alıyor. Gate'leri işte dört parçaya bölüyor hepsiyle ayrı ayrı uygulamamak için. Yani daha hızlı, efektif çalışması için.
+
+531
+01:32:14,931 --> 01:32:42,931
+Aktivasyon fonksiyonları uygulayıp, cell ve hidden state'leri oluşturup bir sonraki adıma geçiliyor. Yani buradan aslında tekrardan buraya veriliyor. Şöyle düşünelim, burada 128'e 128'lik bir input aldığında, burada yarıya düşüyor. 64-64 oluyor. Burada 32-32, 16-16 ve burada en sonunda 8-8'lik bir çıktı oluyor. Yani 128'den 16'da birine düşmüş oluyor. Burada da bunu göstermişler. Daha sonrasında işte bu 16'da birine düşmüş.
+
+532
+01:32:42,931 --> 01:33:10,931
+Tensörü sıkıştırılmış olarak alıp decompressora yolluyoruz. Buradaki beta parametresi de bunun aslında compression ratio'yu ayarlayan kısım oluyor. Burada beta eşitleri 256 bölü R gibi bir formülasyon var aslında. Yani R dediğimiz şey bizim compression ratio'umuz. Yani bunu iki alırsak betamız işte 252, 256 bölü 2'den 128 olacak gibi düşünebiliriz. İşte bu compression ratio ile oynayarak aslında ne kadar...
+
+533
+01:33:10,931 --> 01:33:34,011
+sıkıştırdıklarına bakmışlar. Daha sonrasında işte burada dik kompresiona giriyor. İşte konvoyasyonu uyguluyor. Tekrardan burada iki parça olarak gitmiş. Aranan konvoyasyonu yukarıdaki gibi uygulayıp burada yine average'larını alıp burada depth to space uyguluyor. Yani bu ne demek oluyor? İşte buradan bir reshape yaparak aslında yüzey alanını genişletiyor.
+
+534
+01:33:34,612 --> 01:33:45,752
+Yani burada işte 8'de 8'lik Depth to Space yaptığında burada 16'ya 16'lık bir kısım geçmiş oluyor. Fakat işte burada Depth'ten kaybediyoruz. Nasıl 512'ye girdiysek 4'te 1'ine düşüyor.
+
+535
+01:33:46,547 --> 01:34:12,667
+Bu şekilde işte burada tekrardan 128'lik bir input için kompres ettik, dekompres ettik. Yine 128'lik bir görüntü elde etmemiz bekleniyor. İşte burada kullandıkları ölçüm metrikleri peak signal tünür yaşıyor. Burada aslında bilmemiz gereken şey min square error payda olduğu için işte bunun büyük olması daha iyi bir şey. Structural similarity index matrix burada bir diğer metrik de bu. Burada da aynı şekilde diğer ile olduğu gibi büyük olması daha iyi.
+
+536
+01:34:13,104 --> 01:34:32,423
+Sonuçlara baktığımızda 128'e 128'lik imiciler için compression ratio işte 2, 4 ve 8 için yapmışlar burada. Bu Toderici dediği bu aslında bir önceki çalışma bizim biraz önce gördüğümüz bir önceki çalışması. Bunun ondan daha iyi sonuçları aldığını söylüyor. Burada mesela JPEG 2000 daha iyi bir sonuç veriyor compression ratio 2 iken.
+
+537
+01:34:32,752 --> 01:34:50,131
+Fakat işte compression ratio arttıkça 2.000'de geçiyor. Aslında burada işte şey demek istiyorlar, dataset üzerinde biz genel yöntemlere göre daha iyi sıkıştırma yapabiliriz böyle derin öğrenme yöntemleriyle. Hatta işte burada compression ratio 8 iken signal to break ratio arasında baya bir fark var.
+
+538
+01:34:54,899 --> 01:35:19,099
+İyi öbürüne göre, 256'lık görüntüler için. Hatta farkındaysanız işte neredeyse değişmemiş bir sonuçlar. Bir başka bahsettiği şey ise bizim yaptığımız çalışma diyor ki daha önceki çalışmalara göre gözle görünür bir şekilde daha iyi sonuç veriyor. Burada önceki çalışmaya işte bulanık sonuçlar verirken bizimkisi daha net bir sonuç veriyor diye bahsetmişler bu şekilde aslında.
+
+539
+01:35:20,299 --> 01:35:21,559
+Teşekkür ederim.
+
+540
+01:35:22,323 --> 01:35:32,963
+Bu arada içinizde hiç learning'i kullanarak önceden deneyimleri vardır. Proje konusu seçen oldu mu? Sen ne aldın [öğrenci]?
+
+541
+01:35:32,963 --> 01:35:41,083
+Ben Hufman aldım hocam. Ben alacaktım fakat garantisi olmadığı için başarılı başarılı. Bir de eğitim süreçlerini hiç daha önce şey yapmadım.
+
+542
+01:35:41,143 --> 01:35:47,383
+Aslında geneyim kazanırdım. Yani neyse artık yolu çıkmışsındır. Bitti mi projen?
+
+543
+01:35:48,020 --> 01:35:49,840
+Şu an %80'indeyim hocam.
+
+544
+01:35:49,940 --> 01:36:15,440
+[kişisel bilgi]
+
+545
+01:36:16,243 --> 01:36:39,003
+[kişisel bilgi]
+
+546
+01:36:39,423 --> 01:36:45,003
+[kişisel bilgi]
+
+547
+01:36:46,579 --> 01:36:48,880
+[kişisel bilgi]
+
+548
+01:36:48,880 --> 01:37:13,079
+[kişisel bilgi]
+
+549
+01:37:13,460 --> 01:37:16,819
+[kişisel bilgi]
+
+550
+01:37:18,340 --> 01:37:28,159
+[kişisel bilgi]
+
+551
+01:37:28,279 --> 01:37:37,000
+[kişisel bilgi]
+
+552
+01:37:37,488 --> 01:37:45,448
+[kişisel bilgi]
+
+553
+01:37:46,288 --> 01:37:50,988
+Ben valla zaten mümkün olduğu kadar öyle kısa tuttum. Çok bir şey de çıkartmadım hocam. Şöyle açıyorum.
+
+554
+01:37:51,728 --> 01:37:55,707
+Sesini biraz yükselt lütfen. Ben duyamıyorum. 95'e getirdim artık.
+
+555
+01:37:58,488 --> 01:37:59,608
+Şimdi nasıl hocam?
+
+556
+01:37:59,847 --> 01:38:00,047
+İyi.
+
+557
+01:38:00,707 --> 01:38:01,028
+İyi mi?
+
+558
+01:38:01,619 --> 01:38:10,199
+BVT Browse Weller Transform olarak geçiyor. Üç bölüm üzerinde incelemeye çalıştık. Ön bilgi, amaç ve örnekler üzerinde.
+
+559
+01:38:11,123 --> 01:38:37,843
+Aslında biraz da data içerisine girmeye çalıştım burada. Weller tarafından daha önce yayınlanmış bir çalışma var. O çalışmadan sonra 1994 yılında Kaliforniya'da tekrar geliştiriliyor. Yeni bir sistem. Sadece kelimelerin sıkıştırılması üzerine ilerleniyor, veri sıkıştırma üzerinde. Aslında çok kolay ve ücretsiz bir derleme. Birçok alanda da kullanılıyormuş hayatımızda, onu öğrenmiş olduk.
+
+560
+01:38:38,323 --> 01:38:39,804
+Asıl amacı...
+
+561
+01:38:39,804 --> 01:38:47,224
+Niye üzülüyor? Aslında bakıyorsun çok basit diyorsun. Niye bunları biz yapamıyoruz peki? Basit bile yapamıyoruz düşünsenize.
+
+562
+01:38:47,828 --> 01:39:09,468
+Aynen öyle hocam. Burada mesela ona çok dikkat ettim. Hatta incelerken bu Michael Browse ve David Bell'leri bayağı bir inceledim. Hani bir sürü projeleri var. Sadece bu konu üstünde değil. Orada bayağı bir çalışma yapmışlar. Bir şey incelerken başka bir şey buluyorlar. O yapmışken başka bir şey buluyorlar diye. Öyle bir devam etmişler ama ben bunu özellikle söylüyorum hocam. Yıllardan...
+
+563
+01:39:09,468 --> 01:39:10,968
+Sen bunu incele yeter.
+
+564
+01:39:11,828 --> 01:39:12,088
+Evet.
+
+565
+01:39:15,572 --> 01:39:34,391
+Bununla alakalı karakter dizilerine göre aslında burada bir hedef şöyle, bir kelime var. Bu kelimeyi alıp bir önceki karaktere göre alıp bunları kodluyorlar. Zaten bunda derste, aslında Hufman'ın bir çeşidi gibi bir şey diyebiliriz baktığınız zaman mantık olarak aynı mantıkta dizileniyor.
+
+566
+01:39:35,028 --> 01:39:56,288
+Tekrar eden karakterleri aslında kısaltıyor ve onları dönüştürüyor. Bir öncekilerle beraber çekiyor. Ama en önemli dönüşüm bunların orijinal karakterinin dışında herhangi bir depolamaya gerek kalmıyor. Yani önceden bir şey göndermesine gerek kalmıyor bu projede, bu kelimelerde, bu algoritmada öyle diyeyim. Bu sayede de verimlilik en kolay şekilde artıyor.
+
+567
+01:40:00,000 --> 01:40:28,000
+Bu şekilde bloklara ayrılmış biri giriyor. Sonra MTF dediğimiz, bu MTF'yi de biraz araştırdım. Burada konuya yer vermedim ama. Multi-front teknolojisi bu gene kodiklerde. MTF'ye dönüştürüyor. Buradan Hufbe veya aritmatik kodlama üzerinden aslında bir sıkıştırmış veri bloğu iletiliyor. Tekrar sıkıştırmış veri bloğu ters şekilde geliyor. Yani sıkıştırma ve açma yapılıyor. Sadece gönderilen karakterle. Karşı tarafın neyle çözümsemeyi yapmanı...
+
+568
+01:40:28,000 --> 01:40:34,079
+İstediğini söylemesi yeterli. Ayrıca herhangi bir proje gerektirmiyor.
+
+569
+01:40:34,963 --> 01:40:40,203
+En çok kullanılan, bulunan örnek buydu. Buna özellikle girdim. Abra Kadabra.
+
+570
+01:40:40,223 --> 01:40:41,103
+Abra Kadabra.
+
+571
+01:40:41,443 --> 01:40:56,063
+Abra Kadabra. Kullanılanlardan bir tanesi. Burada zaten her seferinde bir tanesini alıp bir alta çeviriyor. Sonu atıyor, tekrar başa alıyor. Sonu alıp tekrar atıyor. Diğeri tarafta tersten. Bakıldığı zaman beşinci de A1 sonucuna ulaşılıyor.
+
+572
+01:40:56,528 --> 01:41:09,808
+B'di, geri çözüm dönsemesinde. İlk çözüm dönsemesinde de zaten aşağı kadar her karakterle gidiyor. Aslında beşinci de gelen sonuç B dizisinde baktığımız zaman daha rahat anlaşılıyor.
+
+573
+01:41:11,328 --> 01:41:12,668
+Acaba anladılar mı?
+
+574
+01:41:15,008 --> 01:41:16,268
+Anlamayan var mı arkadaşlar?
+
+575
+01:41:17,395 --> 01:41:19,555
+Hocam siz o kadar çok anlattınız ki bunun derste.
+
+576
+01:41:19,815 --> 01:41:21,755
+Hayır, ben BVT'yi anlatmadım.
+
+577
+01:41:22,095 --> 01:41:25,076
+Yok, BVT değil de mantık Hufman'la çok yakın hocam.
+
+578
+01:41:25,175 --> 01:41:26,535
+Ya ben bildiğim zaman falan var.
+
+579
+01:41:26,535 --> 01:41:41,515
+Mesela A'yı dedin ki, karakteri alıp sonra koyuyor. İkinci birinci oluyor. Alıyor onu sonra koyuyor. İkinci olan birinci sıraya geçiyor. Dın dın dın bunu yaptı. B kısmında ne yapıyor? Bunu anlamadılar bence.
+
+580
+01:41:42,292 --> 01:42:10,072
+B kısmında hocam şöyle, aslında önceden yapılan çözümlemeyin en alta bakarsanız A'nın en altı sırasıyla B'nin en altı sırasına. Bunlar açılımına aynı şekilde nerede denk geldiğini. Üst tarafta da önceki kodlamanın, yani şu alt tarafta bakarsanız alttan üçüncüyle üsttekiyle eşleşiyor. Bunun dizilerinin çözümlemesi, karşı tarafa giden sonuçların A1 denilen beşinci satırdaki çözümsemesi oluyor. Hani beşinci satırda A1.
+
+581
+01:42:10,292 --> 01:42:19,452
+Bunu şuradan açmamın sebebi buydu. Aslında bunu bilerek koydum. Çünkü bu olmadan onu anlamak çok zor oluyor. Sadece ona bakınca o nereden geliyor diye.
+
+582
+01:42:19,512 --> 01:42:20,612
+Tamam, buradan anlat.
+
+583
+01:42:21,268 --> 01:42:39,288
+Soldaki girdi çıktısı demin dediğiniz gibi aslında. Birinci, yani bir ilk sıradaki ikinci, ikinci sıranın birincisi oluyor. Üçüncü sıradaki ikinci, üçüncü sıranın birincisi oluyor gibi bir kodlama var örneklerde girdi dizisinde. Fakat sıra bul çıktısında 6-9-7 diye karışık geliyor.
+
+584
+01:42:43,636 --> 01:42:58,536
+Tüm örneklerde Çıktız dizisi aynı şekilde beşinci satırda görüyor. Eğer gelen veri BVT diyorsa size birisi, alacağınız Girit dizisinin ilk ana metni Sırabul Çıktız'ın da beşinci dizi olarak geliyor.
+
+585
+01:42:59,235 --> 01:43:05,016
+Bu Sırabul Çıktız'ı o B dizinin ise aslında bu biraz daha rahat oluyor. İkisini yan yana koyduğunuz zaman şununla.
+
+586
+01:43:05,395 --> 01:43:13,256
+Şuradaki beşinci dizi, burada da A1, A5 yani aslında sıralanmış girdi, beşinci, birinci dizi almış oluyor gibi bir durum söz konusu.
+
+587
+01:43:14,963 --> 01:43:30,904
+Sonuç olarak da sıkıştırmış veri bloklara ayrılıyor. Her blok için BVT dönüşümü uygulandı burada özellikle. Burada bir fark var. 11 byte değil 100 kilobyte çıktı. Daha fazla veri gibi olduğu gibi dönüştü ama burada BZIP denilen BVT ve FUFAN kodlaması kullandık.
+
+588
+01:43:42,963 --> 01:43:52,124
+Kodlama metodu aslında. Bunlara göre, geleneksellere göre çok daha fazla aslında etkin olmuş oldu. Ve teşekkür ediyorum hocam.
+
+589
+01:43:53,304 --> 01:43:54,444
+Çok kısa oldu.
+
+590
+01:43:55,824 --> 01:43:58,844
+Hocam sadece kelime olunca resim yok bir şey yok. Suslayamadım yani.
+
+591
+01:43:58,844 --> 01:44:05,104
+Ben mesela şöyle söyleyeyim. Sana bir kelime versen bunu BTT'den rahatlıkla geçirebilir misin?
+
+592
+01:44:06,836 --> 01:44:10,376
+Geçiririm hocam. Mantık olarak anladım zaten.
+
+593
+01:44:10,816 --> 01:44:12,176
+Tamam. Önemli olan o.
+
+594
+01:44:12,916 --> 01:44:16,735
+Evet. Ondan dolayı dedim. Birçok yerde kullanıyormuşuz.
+
+595
+01:44:16,735 --> 01:44:18,176
+Ama haberin yok.
+
+596
+01:44:19,496 --> 01:44:20,816
+Teşekkür ederim hocam.
+
+597
+01:44:21,316 --> 01:44:22,735
+Peki. Teşekkür ederim.
+
+598
+01:44:23,396 --> 01:44:27,735
+Şimdi bir tasımın yapan arkadaşlar lütfen raporlarını koysun.
+
+599
+01:44:28,148 --> 01:44:56,148
+Bir de size daha önce söylediğim gibi final tarihinde projelerinizle bakacağım. Fakat çok kişi olduğumuz için bunları yetiştirmem zor olur. Diğer sınavlarınızla da çıkışabilir. Önceden projesini bitirenler bana gösterebilir. Ben birkaç kişi oldukça onlara bir saat dilimi veririm. Bugün iki arkadaşımızın projesine bakacağım. Yalnız projesine bakacağım ama proje raporunu sistemden sınav...
+
+600
+01:44:56,148 --> 01:45:17,568
+Oyunu yükleyeceksiniz ki bir sınav evrakı olarak onu kullanabileyim. Sınav evrakı dedim, ad soyadınızı yazıp, projenizin ne yaptığından bahsedip, girişim şurdu, çıkışım şu oldu, şu sonuçları aldım diye bir sonuç raporu teslim edeceksiniz. O kadar.
+
+601
+01:45:17,568 --> 01:45:22,268
+Şimdi ilk projesini bana göstermek istiyan [öğrenci]'tu.
+
+602
+01:45:22,771 --> 01:45:23,712
+Merhaba hocam.
+
+603
+01:45:24,032 --> 01:45:34,112
+Merhaba. Arkadaşların da seyretmesinde, izlemesinde bir mahsur yoktur. Sonra derler ki öğrenciye şey geçti, torpil.
+
+604
+01:45:34,752 --> 01:45:36,292
+Tabii hocam, açıyorum ben şimdi.
+
+605
+01:45:36,292 --> 01:45:39,851
+Tamam, aç. Önce bir konu neydi? Ondan bir bahset.
+
+606
+01:45:40,311 --> 01:45:43,072
+Hufman'dı hocam. Hufman'la resim sıkıştırma.
+
+607
+01:45:45,572 --> 01:45:46,771
+Şimdi ben...
+
+608
+01:45:46,771 --> 01:45:47,252
+Ne asıllandın?
+
+609
+01:45:48,032 --> 01:45:48,372
+Efendim?
+
+610
+01:45:49,011 --> 01:45:54,631
+Yani Hufman'dan önce resimde herhangi bir şey kullandın mı? Resim sayısını azaltma var mı?
+
+611
+01:45:54,631 --> 01:46:05,811
+Hayır hocam, ben size şöyle ekranlar üzerinden hazırlayayım. Şu şekilde bitmak, üç tane resmim var. Resim boyutlarımıza da şöyle bakalım.
+
+612
+01:46:06,420 --> 01:46:12,420
+1 megabyte, 2 megabyte ve 700 kilobyte'lik 3 tane resim örnek olarak aldım.
+
+613
+01:46:12,420 --> 01:46:13,220
+Tamam.
+
+614
+01:46:14,100 --> 01:46:25,079
+Uygulamam bu şekilde. İlk etapta ben resmi sıkıştırıyorum. Sonra sıkıştırdığım resmi açıyorum. Sıkıştırdığım resme ait kod tablosunu burada gösteriyorum.
+
+615
+01:46:25,200 --> 01:46:33,900
+Frequency'ye göre en sık kullandığımız sembolü en küçük, en az kullandığımıza en yüksek verdiğim şekilde ve
+
+616
+01:46:34,271 --> 01:46:58,692
+Hufman kütüğümüzü çizmeye de çalıştım burada. Kütük derken neyi anlatıyorsun? Ağacı mı? Tri mi? Ağacı. Şimdi başlayalım. Tamam, şu gemiyi seçelim. Şimdi gemiyi seçtik, sıkıştırma işlemini yaptık. Burada bir yüzde dörtlük sıkıştırma oranı sağladık.
+
+617
+01:46:59,028 --> 01:47:05,688
+Giriş inputtaki iki değerimiz buydu. Çıkan değerimiz bu.
+
+618
+01:47:07,048 --> 01:47:11,188
+Devam edelim. Şuradan lokasyonu sıkıştırayım.
+
+619
+01:47:12,688 --> 01:47:18,588
+Burada bir %19'luk sıkıştırma oranı sağladık. Bu tarafta hocam görüyorsunuzdur.
+
+620
+01:47:19,796 --> 01:47:29,976
+Bu 593 kilobayta düştü. Orijinal 735'ti. Şuradaki 2305'ti, 2213'e düştü. Son olarak şuradaki...
+
+621
+01:47:29,976 --> 01:47:31,216
+Top tablosunu görelim.
+
+622
+01:47:32,155 --> 01:47:40,816
+Hemen gösteriyorum. Burada %31'lik bir başarı sağladık. 1104 kilobaytı, 765'e düştü.
+
+623
+01:47:40,836 --> 01:47:45,676
+Tamam, çünkü en son yaptığını daha iyi sıkıştırma yapmış ya.
+
+624
+01:47:45,676 --> 01:47:46,195
+Evet.
+
+625
+01:47:47,188 --> 01:47:48,688
+Kod tablom burada hocam.
+
+626
+01:47:52,948 --> 01:48:18,448
+En kısa kaç bit var kullanmışsın? Şöyle. Şuradan hemen sort da yapabiliriz. Şurası var hocam. Kaç biti o? 4, 5. 5. 5 biti. Kaç tane farklı renk var? Ağaçta kaç tane düğüm varsa yaprak. İşte yaprak sayalım. Şimdi orayı da şöyle açayım hocam.
+
+627
+01:48:26,868 --> 01:48:28,807
+Bu çizerken ne kullandın?
+
+628
+01:48:29,468 --> 01:48:42,008
+Kalmaz. Şuradan aslında kütükten bakarsak şöyle aslında en sola geleyim. Biraz yoğun olduğu için hocam resimde çizerge çok büyük oldu.
+
+629
+01:48:42,008 --> 01:48:53,008
+Onun başında bir quantization işlemi yapmış olsaydın, yani renk sayını azaltmış olsaydın başarın yükselecek miydi?
+
+630
+01:48:54,387 --> 01:48:57,387
+Renk sayımı azalsaydı muhakkak yükselecekti.
+
+631
+01:48:57,387 --> 01:49:00,387
+Peki, niye azaltmayı düşünmedin mesela?
+
+632
+01:49:00,387 --> 01:49:05,387
+Oynamadım. Ben direkt orijinal resim üzerinden hareket ettim.
+
+633
+01:49:05,387 --> 01:49:20,387
+Şimdi şurada da hocam bakın çizelgeyle ilgili de test edecek olursak, 210 sembolümüz, bu pikselden çektiğimiz değer, işte 0-0 böyle ilerleyerek gidiyor. En yoğun kullanılıyor.
+
+634
+01:49:21,395 --> 01:49:23,735
+Kod tablosundan da bakarsak.
+
+635
+01:49:28,372 --> 01:49:30,912
+210'a alırsam buradan.
+
+636
+01:49:35,283 --> 01:49:36,043
+Şunun gibi.
+
+637
+01:49:36,743 --> 01:49:41,243
+Evet. Peki şu en iyi sıkıştırmayı vererek şimdi dekompres edelim.
+
+638
+01:49:43,064 --> 01:49:48,904
+Şimdi dekompres için seçtik. Üç tanesi vardı. Hangisini dekompres edelim?
+
+639
+01:49:48,923 --> 01:49:50,743
+En iyi 38 vapan vardı ya.
+
+640
+01:49:51,123 --> 01:49:51,344
+Şu.
+
+641
+01:49:51,804 --> 01:49:52,144
+Evet.
+
+642
+01:49:54,484 --> 01:49:57,623
+Buna da geri gelen diye bir isim verelim.
+
+643
+01:50:01,108 --> 01:50:04,948
+Komprest'teki hız oranı dekomprest'te maalesef yok.
+
+644
+01:50:05,387 --> 01:50:10,967
+Yoktur. Burada header ağacı nasıl gönderdi?
+
+645
+01:50:12,115 --> 01:50:13,276
+Nasıl yani hocam?
+
+646
+01:50:13,776 --> 01:50:18,656
+Şimdi dekompres yapan tarafın yeniden kotlara ihtiyacı var.
+
+647
+01:50:18,656 --> 01:50:19,136
+Tabii.
+
+648
+01:50:19,156 --> 01:50:21,916
+Ağacı mı gönderdin yoksa kotları mı?
+
+649
+01:50:22,256 --> 01:50:29,316
+Yok bir alfabeyi orada oluşturduk hocam. Her sembol için hani frügensi değeriyle olan kısmımızı en başta muhafaza ettim.
+
+650
+01:50:30,156 --> 01:50:33,256
+Tekrar geri gönderirken de oraya kotları gönderdim.
+
+651
+01:50:34,516 --> 01:50:35,056
+Kotları?
+
+652
+01:50:35,436 --> 01:50:35,716
+Evet.
+
+653
+01:50:37,203 --> 01:50:39,303
+Heder'ın birazcık şişti tabii.
+
+654
+01:50:39,923 --> 01:50:40,143
+Tabii.
+
+655
+01:50:40,643 --> 01:50:41,183
+Şişer.
+
+656
+01:50:41,963 --> 01:50:45,723
+Burada başarı boyutunda da bilmiyorum ilgisi var mı?
+
+657
+01:50:47,003 --> 01:50:51,823
+Aslında başarıların daha yüksek olması gerekir ama sen şey yapmadın.
+
+658
+01:50:51,823 --> 01:50:55,883
+Yani gözümün algılamadığı resimli renkler de var orada.
+
+659
+01:50:56,003 --> 01:51:00,823
+Sen onları çıkarmış olsaydın daha az eğilmiş olacaktın ve daha başarılı olacaktın.
+
+660
+01:51:02,068 --> 01:51:09,868
+Tabii yok, ben hiç çıkarmadım. Tek oynadığım burada şeydi, orada da hatta başarı boyutu düştü, onunla mı ilgili bilmiyorum.
+
+661
+01:51:09,868 --> 01:51:17,668
+Mesela şu MK olan resim, hani %31 başarı olan resimde hiç boyut küçültmesi yapmadım.
+
+662
+01:51:17,668 --> 01:51:26,968
+Ama şu gemi olan resim normalde 4,5 MB'lik bir resimdi. Ben orada bir %50 küçültme yaptım Paint'te.
+
+663
+01:51:29,716 --> 01:51:35,236
+Proklamla yaptın. Hazır kod tool ile yaptın.
+
+664
+01:51:35,236 --> 01:51:47,396
+Evet, evet. Onun için ben kod yazmadım. Normal, direkt bir tool ile yaptım. Orada bir %50 küçültme yaptım. 2 megabayta düşürdüm. Onu sıkıştırdığımda %4 aldım. Bilmiyorum onunla mı ilgili.
+
+665
+01:51:47,792 --> 01:51:51,372
+Tamam, geri gelen diyebilir miyim? Tabii ki onunla ilgilidir.
+
+666
+01:51:51,732 --> 01:51:59,692
+Şimdi geri gelen diye adlandırdığım resim bu hocam. 1104 kilobay. Orijinalim de burada, MK olan. O da 1104.
+
+667
+01:51:59,712 --> 01:52:01,232
+Tamam, geri geleni bir açalım.
+
+668
+01:52:01,352 --> 01:52:02,512
+Bu orijinal hali.
+
+669
+01:52:04,500 --> 01:52:12,839
+Bir de neden iyi sıkıştırıldı? Şu karlara bak. O kadar sıralı renkler var ki siyah beyazı gibi.
+
+670
+01:52:13,199 --> 01:52:14,779
+Tabii beyazı orada, siyahı.
+
+671
+01:52:15,139 --> 01:52:32,359
+Yine de aslında o mavide de çok farklı tonlar vardır. Sadece gözüm şey yapmıyor. Ben şu an burada üç tane renk görüyorum. Çok daha iyi sıkıştırılması gerekir. Belki dört renk olabilir. Ama burada çok daha fazla renk var. İşte gözüm ayırt edemediği için.
+
+672
+01:52:32,500 --> 01:52:37,199
+Koronization yapıp renkleri azaltıyoruz. Bir de kodunu açar mısın?
+
+673
+01:52:37,979 --> 01:52:38,500
+Tabii ki.
+
+674
+01:52:40,879 --> 01:52:44,679
+Şu header'ı oluşturduğun yeri bir gösterebilir misin?
+
+675
+01:52:46,159 --> 01:52:48,000
+Burada hocam şöyle.
+
+676
+01:52:48,179 --> 01:52:49,739
+Biraz kodunu büyütme imkanın var mı?
+
+677
+01:52:50,139 --> 01:52:50,500
+Efendim?
+
+678
+01:52:50,979 --> 01:52:52,519
+Biraz kodu büyütsem.
+
+679
+01:52:53,876 --> 01:53:09,655
+Kontoları. Bunu nereden Zoom yapılıyor? Yapamıyor mu? Bunu maalesef yapamıyorum hocam. Ben kodları size göndereyim mi mail olarak? Hiç kodları gönderme istemiyorum. Bir header'ın nerede olduğunu bana göster.
+
+680
+01:53:15,539 --> 01:53:18,260
+Üzerine bir tarah header'ın olduğu yerin
+
+681
+01:53:23,315 --> 01:53:28,155
+Hedir burada mı? Şimdi maviye kaldı. Çünkü maviyle hiç anlamıyorum.
+
+682
+01:53:30,416 --> 01:53:36,596
+Hocam aşama aşama anlatayım isterseniz sizi. Çünkü ben her bir aşamada prosedürlere...
+
+683
+01:53:36,596 --> 01:53:40,576
+Hedir'e dedin ya şeyleri koyuyorum. Kodları gönderiyorum.
+
+684
+01:53:41,684 --> 01:54:09,124
+Şimdi şöyle, ben burada piksel değerlerini okuyorum. Okuduğum her bir değer için, sembol için. Sonra bunun flügensiyasını ölçüyorum ve bir tablo oluşturuyorum. Sonra oluşturduğum tablo üzerinde bir sort işlemi gerçekleştiriyorum. En yoğun kullanılan ve en az kullanılan şeklinde. Burada bir ağacımızı oluşturuyoruz. Sonra bu ağaç üzerinden de, geri tekrar gönderdiğimde de bunun üzerinden geri dönüyorum.
+
+685
+01:54:10,003 --> 01:54:10,944
+Yanlış bir ifade.
+
+686
+01:54:10,963 --> 01:54:13,764
+Ağacı mı koyuyorsun? Ağaç bilgisini mi?
+
+687
+01:54:13,984 --> 01:54:14,264
+Evet.
+
+688
+01:54:14,884 --> 01:54:16,684
+Ama demin öyle söylemedin işte.
+
+689
+01:54:17,623 --> 01:54:18,604
+Yanlış ifade ettim.
+
+690
+01:54:18,604 --> 01:54:20,104
+Ben öyle anladım.
+
+691
+01:54:20,743 --> 01:54:22,344
+Yok, yanlış ifade ettim hocam.
+
+692
+01:54:22,344 --> 01:54:26,444
+[kişisel bilgi]
+
+693
+01:54:26,904 --> 01:54:27,463
+[kişisel bilgi]
+
+694
+01:54:31,155 --> 01:54:36,855
+[kişisel bilgi]
+
+695
+01:54:38,176 --> 01:54:39,756
+[kişisel bilgi]
+
+696
+01:54:40,155 --> 01:54:42,135
+[kişisel bilgi]
+
+697
+01:54:42,155 --> 01:54:42,395
+[kişisel bilgi]
+
+698
+01:54:43,076 --> 01:54:43,756
+[kişisel bilgi]
+
+699
+01:54:44,435 --> 01:55:00,076
+[kişisel bilgi]
+
+700
+01:55:00,515 --> 01:55:05,735
+[kişisel bilgi]
+
+701
+01:55:05,735 --> 01:55:12,435
+[kişisel bilgi]
+
+702
+01:55:12,435 --> 01:55:21,255
+[kişisel bilgi]
+
+703
+01:55:21,955 --> 01:55:29,055
+[kişisel bilgi]
+
+704
+01:55:29,495 --> 01:55:33,375
+[kişisel bilgi]
+
+705
+01:55:35,923 --> 01:55:40,024
+[kişisel bilgi]
+
+706
+01:55:40,583 --> 01:55:41,864
+[kişisel bilgi]
+
+707
+01:55:42,404 --> 01:55:44,184
+[kişisel bilgi]
+
+708
+01:55:47,764 --> 01:55:50,324
+Evet, sen ne yaptın? Aynısı mı?
+
+709
+01:55:50,324 --> 01:55:52,724
+Evet, benim de Huhman.
+
+710
+01:55:52,724 --> 01:55:55,923
+Seninki de Huhman, seninki de görüntü.
+
+711
+01:55:55,923 --> 01:55:56,923
+Evet.
+
+712
+01:55:56,923 --> 01:55:57,923
+Okey.
+
+713
+01:55:57,923 --> 01:56:00,244
+O konuda bayağı alan var.
+
+714
+01:56:00,244 --> 01:56:04,084
+Şimdi benim çalışmam üç kısımdan oluşuyor.
+
+715
+01:56:04,084 --> 01:56:07,604
+İlk kısımda öncelikle şey buldum.
+
+716
+01:56:07,604 --> 01:56:11,764
+Ne olursun, büyüt göremiyorum. Tamam, ha şimdik oldu.
+
+717
+01:56:11,764 --> 01:56:13,764
+İnternette...
+
+718
+01:56:14,195 --> 01:56:30,555
+İnternette hazır kodları buldum, inceledim. Dört adet. Bunları derledim. Acaba bir eksik bir şey yapıyor muyum gibisinden. Burada onlar var. Daha sonra o kısım bittikten sonra bir kufman altyapısını oluşturmak istedim.
+
+719
+01:56:30,895 --> 01:56:53,496
+Hufman'da sadece dosyayı sıkıştıran bir özellik ekledim. Şu anda aşağıya gelmedim, grafik sıkıştırma. Herhangi bir dosya düşünün. Herhangi bir dosyanı alıp ben başlığını oluşturuyorum. Ben başlığı header'ımı şey şeklinde oluşturuyorum. Sembol, tekrar addedin. Decoder onu tekrar çözüyor. Şurada şeyde de gösterdim.
+
+720
+01:56:57,300 --> 01:56:59,500
+Sıkıştırmış benim header'larım bu şekilde.
+
+721
+01:57:00,100 --> 01:57:05,920
+[öğrenci], bu pideyip mi gösteriyorsun? Ne olur biraz büyüt. İnan göremiyorum. Çok iyi.
+
+722
+01:57:07,180 --> 01:57:11,019
+Bu şey işte, header oluşturuyorum ya, header'ın yapısı.
+
+723
+01:57:11,600 --> 01:57:18,460
+Anladım. Görüntünün boyunu koydun, adeti koydun, neler var, tablonu koydun, tekrar ödü. Okey.
+
+724
+01:57:19,123 --> 01:57:30,623
+Enkoder, işte bunu yazıyor. Decoder da okuyor. Şurada mesela enkoder'ı göstersem. Bu dördü işte hazır bulduğum kodlar. Bu benim hazırladığım kod. Şunu da büyüteyim.
+
+725
+01:57:36,148 --> 01:57:47,587
+Encode kısmında WriteHeader ile şu şekilde yazıyorum.
+
+726
+01:57:48,707 --> 01:57:49,707
+Tamam.
+
+727
+01:57:49,707 --> 01:57:56,707
+Evet. Şimdi bununla ilgili denemeler yaptım. Bir de denememi göstereyim hemen. Bu dosya sıkıştırma ile ilgili.
+
+728
+01:57:57,467 --> 01:57:59,467
+İşte basit bir örnekle başladım.
+
+729
+01:58:00,307 --> 01:58:01,948
+Şu dosyayla başladım.
+
+730
+01:58:01,948 --> 01:58:03,507
+İşte sıkıştırdım.
+
+731
+01:58:03,699 --> 01:58:13,699
+Bunlar hep oluşturduğu ara dosyalar. Bir kere çalıştıktan sonra ara dosyaları oluşturuyorum. Ben de aynı şekilde ağacı oluşturuyorum.
+
+732
+01:58:15,699 --> 01:58:28,699
+Hatta parametrik ayar ekledim. Her adım için ağacın ekliyorum. Bu ilk durum, ikinci durum, üçüncü durum, dördüncü durum.
+
+733
+01:58:28,884 --> 01:58:31,663
+Yalnız sen görüntü sıkıştırma yapıyorum dedin.
+
+734
+01:58:31,983 --> 01:58:35,903
+Evet, evet. Bu altyapısı o zaman görüntü sıkıştırma geçiyor.
+
+735
+01:58:35,903 --> 01:58:36,043
+Tamam, okey.
+
+736
+01:58:37,083 --> 01:58:50,023
+Bu şey olarak internette dosya sıkıştırma kodu çok da karşılaştırmak istedim. Daha sonra görüntü sıkıştırma özelliği istedim. Görüntü sıkıştırmaya geçiyorum o zaman. Vaktimizi harcamayalım.
+
+737
+01:58:50,420 --> 01:59:15,600
+Bunu yaptıktan sonra görüntü sıkıştırmış. Bu dosya sıkıştırmaydı. Dosyanın başlığı ve içeriğini oluşturuyordum. Görüntü sıkıştırmada şöyle bir yapı oluşturdum. Şimdi Bitmap'imiz var. 256 denk paletli Bitmap üzerinde çalıştım. Konu oydu zaten. Başlık ve bir noktadan sonra restore bilgisi başlıyor. Bunları ikiye böldüm. Daha sonra bu asıl Bitmap edilir.
+
+738
+01:59:16,532 --> 01:59:31,432
+İlişmedim. Hiçbir işlem yapmadım. Daha sonra Raster bilgisini önceki hazırladığım mekanizmayla yine aynı şekilde oluşturdum. Raster'ın kendi başlığı oluştu. O Sembol Frekans Bilgisayar Sıkıştırma. Daha sonra da geriye açtım.
+
+739
+01:59:32,432 --> 01:59:40,212
+Bu şekilde bir yapı oluşturdum. Örneğin bu abitmap dosyasını bir hendri oluşturuyorum. Bir kontent, şu isimlendirmeyi kullanıyorum.
+
+740
+01:59:40,948 --> 01:59:46,547
+Daha sonra bunu denemeye başladım. Şuradan göstereyim.
+
+741
+01:59:46,547 --> 01:59:49,948
+Bu file, file sıkıştırma. Şimdi Image.
+
+742
+01:59:49,948 --> 01:59:58,547
+Şimdi öncelikle basit bir örnekle başladım. Şu örnekle. Bitmap'im şuydu.
+
+743
+02:00:07,764 --> 02:00:26,724
+Dediğim gibi parametrik ayarım var. Adım adımda yapabiliyorum. Şu 0,1 verdiğim kodlar. Son aşamaya geldiğimde bütün ağaç oluşuyor. Bitmap'te 64 adet piksel varmış.
+
+744
+02:00:34,707 --> 02:00:37,707
+Gerçek orjinal renklerimiz orada kullandıklarınız.
+
+745
+02:00:37,707 --> 02:00:42,707
+Evet, evet. Gerçek orjinal renkler. Hatta şöyle bir çalışma yaptım.
+
+746
+02:00:49,427 --> 02:00:51,427
+Bu güzel oldu, beğendim bayağı.
+
+747
+02:00:51,427 --> 02:00:53,427
+Havalısın yani.
+
+748
+02:00:53,427 --> 02:00:54,091
+Evet.
+
+749
+02:00:58,036 --> 02:01:05,715
+Bu şekilde de oluşturuyorum. Daha sonra basit bir örnek olduğu için siz ilk ödevde şöyle bir şey vermişsiniz.
+
+750
+02:01:11,507 --> 02:01:24,507
+Şunu vermiştiniz, bunu denedim. Bir de program çalıştırırken, bu tek dosya yeterli, diğer hepsi geçici dosyalar. Bir de report adlı dosya oluşturuyorum.
+
+751
+02:01:24,507 --> 02:01:31,507
+Burada şey, bütün debug bilgisi gibi. Yani işte öncelikle bir Color Table'ı basıyorum.
+
+752
+02:01:32,507 --> 02:01:36,331
+Peki o resmin sıkıştırılmış hali hangi dosya?
+
+753
+02:01:36,467 --> 02:01:42,287
+O resmi sıkıştırılmış hali. Şuradan bakayım. Burada şeyisi de var zaten.
+
+754
+02:01:50,836 --> 02:01:56,836
+133 dakika kompres edilmiş 50'ye düşmüş.
+
+755
+02:01:56,836 --> 02:02:03,836
+Evet ama bu avantajlıydı. O Lena resimlerinde bu kadar başarı elde edilmiş. Bunda beyaz çok fazlaydı.
+
+756
+02:02:03,836 --> 02:02:10,836
+Pardon bir şey söyleyeceğim. Şu kompres edilmiş 50 kW ya, bunun başında header bilgisi de var mı?
+
+757
+02:02:10,836 --> 02:02:13,836
+Yok, hayır. Sadece şu.
+
+758
+02:02:13,836 --> 02:02:15,836
+Data kısmı.
+
+759
+02:02:16,724 --> 02:02:23,984
+Evet, şuradan göstereyim. Şu kompres edilmemiş hali dedim, şu da kompres edilmiş hali.
+
+760
+02:02:23,984 --> 02:02:38,124
+Bu şeye baktığımızda entropilerini hesapladım, karşılaştım. Çok yakın değerler çıktı olması gerektiği gibi ideal entropilerin hepsinde biraz daha fazla değerler çıktı.
+
+761
+02:02:41,268 --> 02:02:51,448
+İşte basit bir histogram oluşturuyorum. İşte dediğim gibi Lena resimleri daha düzgün dağılmıştı. Onda o kadar başarılı sonuçlar elde edemedim. Buna da baktığımızda.
+
+762
+02:02:52,507 --> 02:02:54,547
+Ama Lena kaç renkli Lenaydı?
+
+763
+02:02:56,228 --> 02:03:05,427
+Evet, o 256 renkli. Onda histogramını göstereyim. Bayağı düzgün bir dağılım var. Ve de çok şeyler var. Bunda beyaz sembolü.
+
+764
+02:03:06,068 --> 02:03:10,667
+Tek uzunluk kodu atan bir durumda.
+
+765
+02:03:20,435 --> 02:03:22,435
+Burada da aynı şekilde...
+
+766
+02:03:22,435 --> 02:03:26,435
+İşte 6 tane ağaca mı yerleştirecek şimdi?
+
+767
+02:03:26,435 --> 02:03:33,435
+Ama hocam, bunlar oluşturduğum sabit yayıncılar. Yani şey, basıyorum. Son hali şu...
+
+768
+02:03:33,435 --> 02:03:34,699
+Korkmayayım.
+
+769
+02:03:38,612 --> 02:03:50,791
+Yani o verdiği örnek resimde 133 bin piksler var. Zaten 72. Beyaz da ona tek bir kod vermişti. Daha sonra verdiği kaybelendi gibi bir renk var. Ona 4 uzunluklu bir kod vermiş.
+
+770
+02:03:51,091 --> 02:04:00,731
+Tamam, şimdi onlara geç. Şu sıkıştırılmış Lena'yı bir açar mısın? Yani orijinal dekompres eder misin?
+
+771
+02:04:03,667 --> 02:04:07,248
+Öncelenekaları de kompres zaten etmişsin burada.
+
+772
+02:04:07,248 --> 02:04:13,467
+Evet, tekrar çalıştırabilir mi? Çok uzun sürmüyor. 10 saniye falan sürüyor.
+
+773
+02:04:13,467 --> 02:04:15,868
+Evet, burada şey yaptığımızda...
+
+774
+02:04:15,868 --> 02:04:19,868
+...fark...
+
+775
+02:04:24,243 --> 02:04:34,243
+Bunun da entropisi 8 bite yakın. Zaten 8 bit olunca herhangi bir sıkıştırma yapılıyor. Kendisi 8 bit zaten.
+
+776
+02:04:34,243 --> 02:04:40,243
+Lenan'ın 262 binden 258 bine indiriyor.
+
+777
+02:04:40,243 --> 02:04:49,243
+Instagram'ına baktığımızda şu şekilde, en çok 214 gözündeki değer var.
+
+778
+02:04:49,716 --> 02:04:59,436
+Bayağı da birbirine yakın değerler. Son adımda şey yapıyorum, orijinal dosya ve sıkıştırılan dosya aynı mı diye.
+
+779
+02:05:00,036 --> 02:05:02,036
+Evet, ben bunu görmek istiyorum.
+
+780
+02:05:02,855 --> 02:05:05,596
+Evet, burada kodum. Şurada.
+
+781
+02:05:09,115 --> 02:05:11,615
+Sende de decompress uzun sürüyor mu?
+
+782
+02:05:11,615 --> 02:05:17,216
+Yok, sürmüyor. 10 saniye falan sürüyor.
+
+783
+02:05:24,180 --> 02:05:31,000
+Şu compare file, iki dosyayı tamamen aynı mı diye byte byte bakıyor son adında.
+
+784
+02:05:32,000 --> 02:05:40,480
+Kodumun da basit olduğunu düşünüyorum. Şöyle göstersem, programı açayım.
+
+785
+02:05:40,480 --> 02:05:45,340
+Bu simple'ı şöyle yapıyor. Eleni tekrar sıkıştırayım mı?
+
+786
+02:05:45,340 --> 02:05:50,880
+Yok, gerek yok. Her şeyi senin yapmış olduğun zaten açık belli.
+
+787
+02:05:50,963 --> 02:06:17,064
+Bu kodum şu şekilde, hangi dosyayı seçiyorum. ReportTxt'e istatistik bilgimi atıyorum. Bitmap'ı açıyorum. Bitmap'in Color Table'ına Log Dosyamı atıyorum. Dosyayı burada ikiye bölüyorum. Şuradaki ikiye bölme meselesi. Öncelikle ikiye bölüyorum.
+
+788
+02:06:17,652 --> 02:06:30,652
+Başlı kısmını şey yapıyorum. Daha sonra öbür kısmını bit bazında bitpacking yapıyorum. Bitpackinglerimi şu bitreader ve bitwriter yapıyor.
+
+789
+02:06:30,851 --> 02:06:42,051
+İşte tek bir byte'a buffer olarak kullanıyor. 8 byte olduğunda yazılıyor. Yani bit okuma yazma işlemi yapıyorum şurada.
+
+790
+02:06:43,891 --> 02:06:46,791
+Tamam [öğrenci]. Teşekkür ediyorum sana da.
+
+791
+02:06:47,511 --> 02:06:48,551
+Ben teşekkür ederim.
+
+792
+02:06:48,571 --> 02:06:55,271
+Sınav günü o hazırladığın bir tane rapor gösterdin ya herhalde o rapor. Onu bana sınav evrakı olarak sunarsın.
+
+793
+02:06:55,851 --> 02:07:02,791
+Evet, evet. Bunlar işte dediğim bir şeyden, kokain programdan çıkardığım bir işleri kullandım.
+
+794
+02:07:02,811 --> 02:07:03,671
+Tamam, peki.
+
+795
+02:07:03,911 --> 02:07:05,071
+Tamam, çok teşekkür ederim.
+
+796
+02:07:05,071 --> 02:07:07,671
+Rica ederim. Başka gösterecek olan kimse var mı?
+
+797
+02:07:08,787 --> 02:07:32,547
+Yok. Dediğim gibi final haftasını bilmiyorum ama önceden bitirenler olursa bana mail atıp akşam saati bile olabilir. Çok hızlı bir şekilde bakarım ki final günü daha az kişiye bakayım. Tamam o zaman bir sorunuz yoksa dersimizi bugün burada bitiriyoruz. Aslında son dersimiz. Finalde görüşmek üzere diyorum. Hoşçakalın.
+
+798
+02:07:34,207 --> 02:07:36,087
+İyi günler hocam.
