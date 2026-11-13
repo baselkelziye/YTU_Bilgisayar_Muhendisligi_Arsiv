@@ -1,0 +1,539 @@
+1
+00:00:14,451 --> 00:00:16,071
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:17,992 --> 00:00:20,071
+Evet hocam.
+
+3
+00:00:21,711 --> 00:00:22,711
+Tamam, süper.
+
+4
+00:00:24,352 --> 00:00:26,852
+Kaç kişi katılmış onu anlamaya çalışıyorum.
+
+5
+00:00:26,852 --> 00:00:29,271
+27, 29 artıyor.
+
+6
+00:00:29,451 --> 00:00:30,112
+Tamam, 30.
+
+7
+00:00:38,612 --> 00:00:41,572
+Hiçbir şey oldunuz bu dersin. Böyle kırka doğru gidiyoruz. Hayır olsun.
+
+8
+00:00:42,951 --> 00:00:45,212
+Hocam en son altmış yedi görmüştüm ben ama.
+
+9
+00:00:46,252 --> 00:00:47,072
+Altmış yedi.
+
+10
+00:00:49,612 --> 00:00:58,772
+Evet. Sanırım o dönem tek zorunlu alma şansımız vardı. Ondan dolayı yığımı olmuş olabilir.
+
+11
+00:01:00,152 --> 00:01:03,531
+Olmuş olabilir değil, olmuş altmış yedi yani.
+
+12
+00:01:03,531 --> 00:01:04,072
+Evet.
+
+13
+00:01:05,268 --> 00:01:11,308
+Çok iyi. Lisans üstü dersinde lisans derslerine kafa tutacağız desenize. Helal olsun.
+
+14
+00:01:12,068 --> 00:01:12,728
+Evet hocam.
+
+15
+00:01:13,188 --> 00:01:18,908
+70'ler falan, 90'lar oluyordu. Çok iyi. Çünkü arkadaşlarımız gelmeye devam ediyor.
+
+16
+00:01:20,228 --> 00:01:21,647
+Amfi derslerini hatırladık hocam.
+
+17
+00:01:23,248 --> 00:01:24,688
+Efendim duyamadım, pardon.
+
+18
+00:01:25,367 --> 00:01:26,888
+Amfi'deki dersleri hatırladık.
+
+19
+00:01:26,888 --> 00:01:27,448
+Aynen.
+
+20
+00:01:31,091 --> 00:01:41,331
+Bunları düşünerek zaten hani kafa tutacağız dedim lisans üstünde. Evet, bugüne kadar 67 kişiyle ders yapmamıştım. Bu da benim için bir ilk olacak. Süper.
+
+21
+00:01:43,831 --> 00:01:56,091
+Ama neyse, 37'de kaldı arkadaşlarınız. Neyde çıkartırsak 36. Şimdi sonuç olarak bu bir lisans üstü dersi. Burada...
+
+22
+00:01:56,128 --> 00:02:21,228
+Hem master seviyesinde hem de doktora seviyesinde alıyorsunuz bu dersi. Ondan ötürü normal lisans dersine göre size düşen sorumluluk çok daha fazla. Dersimiz ileri işletim sistemleri. Ancak baktığımızda işletim sistemleri kavramının ortaya atıldığı zamandan günümüze kadar
+
+23
+00:02:21,647 --> 00:02:33,487
+İşletim Sistemleri açısından önemli dönüm noktalarına belgelemiş veyahut da bunları anlatmış olan yayınlar üzerinden gideceğiz.
+
+24
+00:02:34,267 --> 00:02:41,968
+Herhangi bir özel ders kitabımız yok. Çünkü çok geniş bir yelpazeyi işleyeceğiz.
+
+25
+00:02:43,731 --> 00:03:09,391
+Erişim haklarından tutun, donanımın daha iyi kullanılması, sanallaştırma, prosesler arası haberleşme, aynı donanım içerisinde yapılması, farklı donanımlar arasında, araya network katmanın sokulması, proseslerin veyahut da threadlerin bir sistemden bir başka sisteme göç ettirilmesi aklınıza gelebilecek.
+
+26
+00:03:10,867 --> 00:03:24,867
+Modern işletim sistemleri olarak tariflediğimiz işletim sistemlerinde kullandığımız çoğu da artık masa üstündeki, laptopumuzdaki hatta cep telefonumuzdaki...
+
+27
+00:03:25,524 --> 00:03:42,092
+Anışageldiğimiz özellikler haline gelmiş olan özelliklerin nasıl ortaya çıktığını, nasıl araştırıldığını, nasıl şekillendirildiğini bunları gözden geçireceğiz. Bunları yaparken de dediğim gibi bir...
+
+28
+00:03:42,451 --> 00:03:56,471
+Bir kitaba, bir textbook'a bağlı kalmayacağız. Bunların ortaya atıldığı dönemde bu çalışmaları yapan araştırmacıların yayınları üzerinden gideceğiz.
+
+29
+00:03:57,751 --> 00:04:09,231
+Sizler için derlemiş olduğum yaklaşık bir 40-43 tane yayın var, paper. Bunların uzunluğu 10 sayfa olanı da var.
+
+30
+00:04:09,711 --> 00:04:31,711
+20'ye yakın olanı da var. Bu şekilde değişiyor. Dersin haftaları içerisinde sizlere bunları işte 14 hafta, 2 haftamızı sınavlar, vizeler ve diğer şeyler için ayırdığımızı düşünce bulursak 12 hafta, 10-12 haftalık bir...
+
+31
+00:04:31,923 --> 00:04:48,624
+Bu döneme bu yayınları yayacağım. Bu da yaklaşık bazı haftalar 4, bazı haftalar 5 yayının okunması, incelenmesi, araştırılması, daha derinlemesine araştırılması anlamına geliyor.
+
+32
+00:04:51,220 --> 00:05:02,180
+Bunların bazıları günümüzde referans yayın olmasına rağmen kendi içlerinde de çok değerli başka yayınlara referans veriyorlar, atıfta bulunuyorlar.
+
+33
+00:05:02,899 --> 00:05:10,579
+Ondan ötürü orada ortaya, o paperlarda ortaya konulmuş olan kavramları daha iyi anlayabilmemiz, daha iyi tartışabilmemiz için.
+
+34
+00:05:11,699 --> 00:05:33,199
+Referanslarına da bakmak gerekiyor. Sizin ders kapsamındaki temel göreviniz bu olacak. Her yayın için, her hafta incelemeniz gereken, her yayın için o yayındaki temel katkı nedir? Kontribüşüm diyoruz. Bunu çıkartacaksınız.
+
+35
+00:05:33,779 --> 00:05:49,759
+Neler incelenmiş o katkının sağlanması için ortaya aslında bir tez gibi düşünün, bir hipotez atılmış olması lazım. Ortaya atılan o hipotez ne? Ne ispatlanmaya, ne gösterilmeye çalışılmış.
+
+36
+00:05:49,759 --> 00:05:53,759
+Bu hangi yöntemler kullanılarak?
+
+37
+00:05:54,016 --> 00:06:09,716
+Ne şekilde bir teorik veyahut da pratik akış izlenerek gerçekleştirilmiş? Hangi sonuçlar elde edilmiş? Mevcut durumla başarı anlamında nasıl karşılaştırma yapılmış?
+
+38
+00:06:12,531 --> 00:06:39,831
+İyi mi, kötü mü anlamında durumu nasıl iyileştiriyor? Bir taraftan bazen çünkü şeyler olabiliyor ya, bir şeyi iyileştirirken başka bir taraftan da taviz vermeniz gerekebiliyor. Belki daha kötüleşebiliyor. Bunlar ve sonunda da bunların elde edilmesine rağmen hala da açıklar var mı? Future work, ileride neler yapılabilir? Bunlar ne olarak?
+
+39
+00:06:40,435 --> 00:06:53,035
+Listelenmiş, isimlendirilmiş. Bu tarz her yayınla alakalı yine bir yayın formatında sizden özet isteyeceğim. En az...
+
+40
+00:06:53,235 --> 00:06:59,636
+İki sayfa bir özet. Bu da şu anlama geliyor. Bir buçuk, iki sayfa bir özet. Bu da şu anlama geliyor.
+
+41
+00:06:59,636 --> 00:07:12,636
+Her hafta dört paper okuyorsanız, sonucunda bunlardan az önce söylediğim başlıklarda elde ettiğiniz bilgileri kendi cümlelerinizle...
+
+42
+00:07:13,184 --> 00:07:37,783
+Kendi fikirlerinizle beraber yorumlayarak, kendi cümlelerinizi ortaya koyarak her biri için bir buçuk, ikişer sayfalık özetler çıkartacaksınız. Aynen bir yayın formatında olacak. Yani bir abstraktı olacak, bir introduction olacak. Ondan sonra genel neyin nasıl yapıldığını az önce söylediğim maddeleri...
+
+43
+00:07:38,708 --> 00:07:57,088
+Adresleyen bir kısmı olacak. En sonunda da konklujum olacak. Ve bunu teslim edeceksiniz. Böylece yani sonuçta bu 40-43 tane yayın için siz de 1,5-2'şer sayfalık 40-43 tane özet yazmış olacaksınız.
+
+44
+00:08:02,483 --> 00:08:19,043
+Beraber gözden geçirebilme, inceleyebilme şeyimiz olacak. Şimdi derse aktif katılımınız gerekiyor. Sayının yüksek olması belki o noktada biraz sıkıntı oluşturabilir ama çok büyük sorun olmaz diye düşünüyorum.
+
+45
+00:08:19,803 --> 00:08:28,944
+Çünkü şu anda bile derse başlığı da o kadar zaman oldu. 44 kişiye eriştik. Her zaman bir fire oluyor. Aktif katılım niye önemli?
+
+46
+00:08:29,716 --> 00:08:43,716
+Bu size verdiğim, incelemenizi istediğim yayınlar üzerinde hazırladığınız ve teslim ettiğiniz, sizin özetlerinize bağlı olarak aklınıza takılan...
+
+47
+00:08:43,956 --> 00:09:01,755
+Sormak istediğiniz, tartışmak istediğiniz noktalar varsa onları hep beraber tartışacağız. Ben bir moderatör olarak veya karar verilemeyen öyle midir, böyle midir noktasında bu aslında şu şekildedir diye açıklayan kişi olarak yer alacağım.
+
+48
+00:09:01,755 --> 00:09:11,755
+Sizin lisansüstü öğrenci olmanızdan ötürü bu yaptığınız incelemelere hakim olmanızı değerlendireceğim. Ne kadar...
+
+49
+00:09:11,956 --> 00:09:18,235
+Kendinizi bu konuda bilgilendirdiğinizi ölçeceğim. Her ders aslında bunun bir göstergesi olacak.
+
+50
+00:09:19,515 --> 00:09:24,956
+Yani şey, şimdi bu hafta bu konuşmaların, bu açıklamaların sonrasında ben size...
+
+51
+00:09:25,460 --> 00:09:45,000
+İlk dört tane inceleyeceğiniz paper'ı göndereceğim. Bu da şu anlama geliyor. Haftaya biz buluştuğumuz zaman bunlar üzerinden konuşuyor olacağız. Az önce söylediğim başlıkları tartışıyor olacağız ve bunları siz başlatacaksınız. İşte şurada şöyle vardı, burada böyle vardı diye.
+
+52
+00:09:49,716 --> 00:10:12,216
+Şey noktalarda, öyle mi böyle mi çelişkili noktalarda son noktayı koyan kişi şeklinde olacağım. Siz ne kadar çok aktif olursanız, ne kadar çok derse katkıda bulunursanız, ne kadar çok özeti hakkıyla olması gereken formatta teslim ederseniz, her hafta dersle alakalı o kadar puan toplamış olacaksınız.
+
+53
+00:10:16,659 --> 00:10:31,120
+Ölçümleme noktasında işte zaten birincil ve esas önemli olan ölçümleme kriterimiz bu. Teslim edilecek olan özetler. Onlar üzerinden ana puanlama gerçekleşecek.
+
+54
+00:10:41,299 --> 00:11:01,679
+İşlenmiş olan, o ana kadar size özetini çıkartmanız için vermiş olduğum ve derste de tartıştığımız paperlar üzerinden sorular soracağım. Bunlar sonuçta sistemin el verdiği her türlü formatta olabilir. Test formatında olabilir.
+
+55
+00:11:02,323 --> 00:11:15,763
+Basit soru cevap formatında olabilir. Veyahut da o paperlarda tariflenmiş bir problem çözümünün farklı parametrelerle sizin tarafınızdan gerçekleştirilmesi şeklinde olabilir.
+
+56
+00:11:16,643 --> 00:11:23,323
+Böylece ilan edilen herhalde yine 8. hafta olur enerken. Öbürü de...
+
+57
+00:11:23,764 --> 00:11:47,764
+12. veya 13. hafta olur bilemiyorum. İkincisi genelde hocalara bırakılıyor. O haftalarda da vizeleri gerçekleştireceğiz. Sonrasında da zaten dönem bitmiş olacak dersin. Son şeyi gelecek. Finalde de bütün dönem boyunca teslim ettiğiniz özetlerden artı yine...
+
+58
+00:11:48,820 --> 00:12:00,580
+Dönem içerisinde az önce tariflediğim olacağınız sınava benzer bir sınavla dönem sonundaki sınavdan alacağınız notla dönemi kapatmış olacağız.
+
+59
+00:12:01,320 --> 00:12:05,640
+Durum bu şekilde. Üzerine basa basa söylüyorum. Sorumluluk sizde.
+
+60
+00:12:06,515 --> 00:12:19,275
+Özetleri hazırlarken özen göstermeniz gerekiyor. Kendi fikirlerinizi okuyup da anladığınız ve buna bağlı kafanızda oluşan fikirlerinizi kağıda dökmeniz gerekiyor.
+
+61
+00:12:19,275 --> 00:12:32,796
+Hazır kaynakları kopyalama ve yapıştırma yöntemiyle kullanmamanız gerekiyor. Herhangi bir kaynak kullandığınızda bunu mutlaka atıfla belirtmeniz gerekiyor.
+
+62
+00:12:34,515 --> 00:12:50,015
+Ondan esinlenme fikir almanın ötesine geçmemeli. Benzer cümleler tabii ki olabilir. Ama bu cümlelerin sayısı bir paragrafın tamamı kadar olmamalı. Bir cümle, iki cümle olur.
+
+63
+00:12:50,015 --> 00:12:54,015
+Bu arada özellikle...
+
+64
+00:12:54,644 --> 00:13:16,484
+Rahat edin, daha kolay şey olsun diye İngilizce terimleri kullanarak Türkçe hazırlayabilirsiniz özetleri. İngilizce hazırlayacaksınız diye bir kural yok. Ama terimlerde bir de onları Türkçe'ye çevirelim. Karşılığı şu muydu, bu muydu diye zorlanmamanız adına özetlerinizi Türkçe şeklinde hazırlayabilirsiniz. Ona da bir itirazım yok.
+
+65
+00:13:21,491 --> 00:13:37,692
+Benzerlikler olduğunda tartışmaya gerek kalmadan benzerlik belirli bir şeyi açtığı zaman o özet, o ödev kabul edilmez pozisyona düşüyor. Ondan puan alamamış oluyorsunuz. Sizinse alacağınız her puan çok değerli.
+
+66
+00:13:47,539 --> 00:14:06,239
+Sene içi, sene sonu ağırlıkları geçerli olacak. Bir farkı olmayacak. Yani normal dönemde de uyguladığımız gibi %60'a %40 şeklinde olacak. Ama bilemiyoruz bazen senato bir karar alıyor, bunları değiştirebiliyor. Öyle bir şey olursa onu da hep beraber öğreniriz.
+
+67
+00:14:09,043 --> 00:14:21,443
+Durumumuz bu. Bu arada ödev teslimlerinden zaten sizlerin dersine kadar katılımda bulunduğunuz ortaya çıkıyor.
+
+68
+00:14:21,443 --> 00:14:24,443
+Ama bu online sistem aynı zamanda...
+
+69
+00:14:24,659 --> 00:14:44,659
+Bu konuda sizlerin katılım bilginizi de veriyor. Hafta bazında katılım bilginizi de veriyor. Tabii ki sanal ortamda katılımın nasıl olduğu tamamen tartışılabilir. Yani sisteme login olmak da bir katılım. Login olup aktif olarak soru sorup cevap vermek de bir katılım. Benim beklentim...
+
+70
+00:14:45,299 --> 00:15:03,679
+Bu paperları inceleyip özetleri çıkarttıktan sonra az önce de söyledim üzerine basa basa. Sizin aktif katılımınız yönünde. Yine de verdiğiniz ödevleri değerlendirirken aynı zamanda sistemdeki katılım durumunuza da bakacağım.
+
+71
+00:15:04,628 --> 00:15:32,628
+Yani şu bana çok adil gelmiyor. Nasıl olsa hocanın verdiği dersi ben dinleyip ödevi dersi daha sonra dinleyip şey yaparım. Paper'ın özetini de hazırlarım. Onları veririm. Ama sonra tartışılacağı hafta olmama çok gerek yok. Sonra onu nasıl olsa yine offline dinler, şey yaparım. Bu bana çok adil gelmiyor. Yani o tartışma kısmında, discussion kısmında, fikir alışverişi kısmında olmanız sizin bu...
+
+72
+00:15:32,628 --> 00:15:47,708
+Bu dersten maksimum fayda sağlamanızı, sağlamanızı önayak olacak şeylerden biri, noktalardan biri. O yüzden olmanız gerektiğini düşünüyorum. Ama tabii ki karar sizin. Nasıl yönetmek isterseniz o şekilde yönetirsiniz.
+
+73
+00:15:53,940 --> 00:16:04,060
+Açıklayacağım. Hem gidişatıyla, hem içeriğiyle, hem değerlendirmesiyle. Unuttuğumu düşündüğünüz veya aklınıza takılan başka bir şey varsa sorun onları cevaplayayım.
+
+74
+00:16:13,971 --> 00:16:15,531
+Kimsede hiç soru yok mu arkadaşlar?
+
+75
+00:16:19,611 --> 00:16:27,051
+O zaman size topluca e-mail gönderebiliyorum sistemden.
+
+76
+00:16:27,811 --> 00:16:38,791
+Önümüzdeki hafta için hazırlayacağınız dört tane özetin orijinal yayını ile alakalı bilgileri size sistemden göndereceğim.
+
+77
+00:16:40,596 --> 00:16:59,376
+Bu hafta bu bilgileri sizinle paylaştım. Girişi bu şekilde yaptık. Zaten dersin işleyişinden dolayı aslında ikinci hafta başlayacağız. Sizin tesliminizi yapıp bir sonraki haftaya hazırlanmış olmanız gerekiyor. Hepinize iyi günler, iyi haftalar diliyorum. Umarım güzel bir dönem olur.
+
+78
+00:16:59,855 --> 00:17:00,796
+Merhaba hocam.
+
+79
+00:17:01,676 --> 00:17:02,176
+Merhaba.
+
+80
+00:17:03,251 --> 00:17:10,991
+Evet, ben gireyim. Hocam başını kaçırmış olabilirim ama şey soracaktım, ödevleri sisteme yükleyeceğiz değil mi haftalık olarak?
+
+81
+00:17:11,491 --> 00:17:18,811
+Tabii ki. Sisteme ben size vereceğim, siz de sisteme orada yükleme seçeneği var ya, oraya yükleyeceksiniz.
+
+82
+00:17:19,311 --> 00:17:19,592
+Tamam.
+
+83
+00:17:20,243 --> 00:17:21,103
+Teşekkür ederim.
+
+84
+00:17:21,103 --> 00:17:47,043
+Mail de göndermenize gerek yok. Sadece sizden ricam, sisteme yüklerken lütfen öğrenci numaranız olsun. Çünkü sistemde sürekli güncelleme yapıyorlar. Sürekli bir şeyler değişiyor. Bazen dosyaların isimleri böyle UUID formatında görünüyor. Bazen sizin numaralarınızla görünüyor. Bazen başka türlü görünüyor.
+
+85
+00:17:48,243 --> 00:18:06,243
+İndir dediğimiz zaman çok ciddi zaman harcıyoruz sonrasında. Ama siz ödevlerinize isim olarak kendi numaralarınızı verirseniz eğer o ayıklama, filtreleme açısından faydalı oluyor. Bununla alakalı...
+
+86
+00:18:07,327 --> 00:18:21,188
+İyileştirme yönünde dileklerimizi ilgili teknik arkadaşlara, teknik ekklilere ilettik. Umarım ara dönemde o düzeltmeler, iyileştirmeler yapılmıştır. O sıkıntıları yaşamayız. Bir soru daha vardı galiba.
+
+87
+00:18:22,195 --> 00:18:23,895
+Evet hocam, ben soracaktım. Merhaba.
+
+88
+00:18:24,076 --> 00:18:25,435
+Selam [öğrenci], neler?
+
+89
+00:18:25,816 --> 00:18:26,895
+Sağ ol hocam, nasılsınız?
+
+90
+00:18:27,215 --> 00:18:28,236
+Ben de iyiyim, sağ ol.
+
+91
+00:18:29,316 --> 00:18:37,516
+Hocam, dönem içerisindeki derslerde incelediğimiz paperlar üzerinden bir tartışma olarak mı geçecek dersler yoksa konu anlatımı vesaire?
+
+92
+00:18:37,516 --> 00:18:45,096
+Hayır, tartışma olarak zaten yorumları ben açmak için, belki konuyu açmak için bir iki soru sorabilirim.
+
+93
+00:18:45,596 --> 00:18:50,195
+Diyelim ki bugün dört tane paper verdim. Dördünden de zaten kafam...
+
+94
+00:18:50,195 --> 00:19:16,195
+Bu konuda onları okuduysanız, özetini çıkarttıysanız, arka taraftaki referanslara baktıysanız, cevaplamanızı beklediğim sorular var. Fikrinizin olmasını beklediğim sorular var. Ben belki bunlardan bir iki tanesini ortaya atabilirim. Orada sizlerin o tartışmaya girerek onu genişletmenizi, her paper için bir 10 dakika, 15 dakika tartışsak, 4 paper için...
+
+95
+00:19:16,723 --> 00:19:27,603
+Bir saat, baktığınızda diğer şeyleriyle bir buçuk saat kaliteli bir şey olur, yorum olur. Güzel bir şey olur. Böylece herkes belirli bir seviyeye gelmiş olur.
+
+96
+00:19:29,063 --> 00:19:30,883
+Anladım. Binazarı şeklinde geçecek.
+
+97
+00:19:31,123 --> 00:19:32,363
+Evet, aynen.
+
+98
+00:19:33,743 --> 00:19:34,883
+Teşekkür ederim hocam.
+
+99
+00:19:35,103 --> 00:19:36,644
+Ben teşekkür ederim. Sağ olasın.
+
+100
+00:19:37,587 --> 00:19:44,948
+Hocam peki bir şey sorabilir miyim? Bu yayın formatında olacak dediniz ya özetler için. Herhangi bir dergi tercihiniz var mı?
+
+101
+00:19:44,948 --> 00:19:59,948
+Yani şöyle, bu iki kolon şeklinde IEEE'nin formatları oluyor ya, o formatta sanki yayına gidecekmiş gibi o disiplinle yazmanızı, o cümle...
+
+102
+00:20:00,000 --> 00:20:04,400
+yapısıyla yazmanızı, o raporlama yazısıyla referanslarına
+
+103
+00:20:05,759 --> 00:20:33,759
+şeylerine dikkat ederek, atıflarına, her türlü şeyine dikkat ederek yazmanızı istiyorum. Yani şey şeklinde istemiyorum. Burada yazarlar şunu yapmışlar işte ben şunu gördüm. Anladığım kadarıyla şey değil böyle bir günlük kıvamında değil. Bu çalışmada şu konu üzerine çalışılmıştır. Ortaya atılan fikir budur. Mevcut durumda yaşanan problemler şu şekilde verilmiştir. Şu referanslara baktığımız zaman da orada bu problemlerin...
+
+104
+00:20:33,759 --> 00:20:47,840
+Yani şunlar olduğu anlaşılmıştır. İşte buna çözüm olarak şu alternatifler sunulmuştur. Bunlar da böyle incelenmiştir diye tam bir yayın formatında onu dile getirmenizi istiyorum.
+
+105
+00:20:47,840 --> 00:21:01,759
+Okuduklarınızı, yani dediğim gibi bazıları 10 sayfa, bazıları 20 sayfa. Yani ama paper okumanın da bir yolu var, bir yöntemi var. Önce hızlıca bir apsalama.
+
+106
+00:21:01,759 --> 00:21:02,720
+...astrakta bakıyoruz.
+
+107
+00:21:03,460 --> 00:21:04,480
+Ondan sonra...
+
+108
+00:21:04,480 --> 00:21:07,319
+...conclusion'da neler var, neler yok onlara...
+
+109
+00:21:07,319 --> 00:21:10,299
+...sonrasında introduction, literatür taraması...
+
+110
+00:21:10,299 --> 00:21:11,920
+...kullanılan yöntemler derken...
+
+111
+00:21:11,920 --> 00:21:13,660
+...böyle yavaş yavaş derinde iniyoruz.
+
+112
+00:21:14,240 --> 00:21:15,920
+Tabii bundan sırasında...
+
+113
+00:21:15,920 --> 00:21:17,799
+...bunları yaparken notlar alıyoruz.
+
+114
+00:21:17,980 --> 00:21:19,079
+Öyle midir, böyle midir?
+
+115
+00:21:19,839 --> 00:21:22,299
+Yani her bir paper için...
+
+116
+00:21:22,299 --> 00:21:24,299
+...herhalde benim kanaatimce...
+
+117
+00:21:26,036 --> 00:21:45,036
+Bir buçuk iki saat harcarsınız incelemesini. Bir buçuk iki sayfalık bir yazıyı da o incelemeyi doğru yaptıktan sonra çok uzun sürmez. Yani yarım saat kırk dakika içerisinde toparlayabilirsiniz kafanızda fikir oluştuktan sonra. Biraz yazma hızınıza bağlı. Sonrasında da üzerinden...
+
+118
+00:21:45,551 --> 00:22:09,811
+İşte bir yazım hatası yaptım mı, noktası virgülü, paragrafı doğru mu diye geçerseniz öyle biter. Yani çalışma şeyinize bağlı olarak 4 paper için 4 günün işte böyle 2 saatini, 3 saatini ayırmak da olabilir veya bir güne hepsini nasıl istiyorsanız, şey yapıyorsanız bir günde dördünde bitireceğim şeklinde de olabilir.
+
+119
+00:22:12,192 --> 00:22:31,872
+Önceden başlayın, son ana bırakmayın, çok zorlanmayın. Çok da böyle aşırı zorlanacağınız şeyler olmayacak bence. Bazılarını biliyorsunuz, kullanıyorsunuz da, günlük hayatınızın da parçası ama işte nereden çıkmış, nasıl çıkmış, seçenekleri neydi o dönemi de anlamak gerekiyor.
+
+120
+00:22:37,119 --> 00:22:59,599
+Dünyanın kendisinin teknolojik olarak gelişimi ortaya konuyor. Akademik dünyanın teknolojiye olan katkısı birbirlerini nasıl etkiliyorlar, nasıl böyle bir itici güç şeklinde bugünkü hale geliyor. Sonuçta bir taraftaki bir teknolojik gelişim başka bir tarafta farklı şeyleri ortaya çıkartıyor falan. Yani güzel bir şey.
+
+121
+00:23:01,811 --> 00:23:17,111
+Gelişimini de görmüş olacağız. Onu da kavramış olacaksınız. Klasik lisanstaki işletim sisteminden daha farklı, daha derinlemesine, bence daha eğlenceli bir bilgi dağarcığına sahip olacaksınız her şeyle beraber.
+
+122
+00:23:18,251 --> 00:23:19,432
+Teşekkürler hocam.
+
+123
+00:23:20,551 --> 00:23:23,471
+Ben teşekkür ederim. Var mı başka soru arkadaşlar?
+
+124
+00:23:24,180 --> 00:23:36,759
+Hocam merhaba. Ben de bir şey rica ettim de. Paperleri göndereceğim dediniz ya mail olarak. Onlarla birlikte geçen senelerden örnek bir paper ve onun başarılı bir özetini de paylaşabilmeniz mümkün olur mu?
+
+125
+00:23:36,759 --> 00:23:46,519
+Hani şey için söyledim. Çalışacağımız paper için değil de. Başlıkları, formatı ve kullanılan dili daha iyi anlayabilmemiz için.
+
+126
+00:23:47,251 --> 00:24:06,932
+Siz kendiniz o disiplininizi oluşturun. Öyle bir paylaşabileceğim örneğim yok açıkçası. Yani zaten paperları okuduğunuz zaman bunlar uluslararası olarak belirli seviyedeki dergilerde veya o seviyenin üzerindeki dergilerde kabul edilmiş olan yayınlar.
+
+127
+00:24:15,251 --> 00:24:25,751
+Onu da öğreneceksiniz. Hatta ben size şunu söyleyeyim, paperlardan bir tanesi bilimsel paper nasıl yazılmalı paper. Bence onu önce okursunuz. Onu da sizinle paylaşacağım.
+
+128
+00:24:26,471 --> 00:24:28,192
+O zaman güzel. Teşekkür ederim.
+
+129
+00:24:28,192 --> 00:24:40,751
+Evet, yani orada öyle bir şey de var. O da çok güzel. Nasıl ifade edilmelidir? Böyle bir paper da var aralarında. Onu da başlayabilirsiniz mesela isterseniz.
+
+130
+00:24:42,324 --> 00:24:43,344
+Tamamdır. Çok sağ olun.
+
+131
+00:24:47,004 --> 00:24:48,544
+Var mıydı başka soru?
+
+132
+00:24:56,915 --> 00:25:06,276
+Tamam o zaman arkadaşlar. Bu haftalık bu kadar. Hepinize iyi haftalar, güzel bir dönem, sağlıklı bir dönem diliyorum. Haftaya görüşmek üzere.
+
+133
+00:25:07,875 --> 00:25:11,536
+Görüşmek üzere hocam.
+
+134
+00:25:11,956 --> 00:25:12,756
+Görüşmek üzere.
+
+135
+00:25:13,375 --> 00:25:13,875
+İyi günler.
