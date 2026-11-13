@@ -1,0 +1,795 @@
+1
+00:00:04,051 --> 00:00:09,751
+Ylva, Bjarne, Ylva, Björn Farsson, hvað er það er að hérna sætti?
+
+2
+00:00:09,751 --> 00:00:11,271
+Ylva, hvað er það?
+
+3
+00:18:32,660 --> 00:18:33,840
+Günaydın arkadaşlar.
+
+4
+00:18:39,284 --> 00:18:41,644
+Günaydın hocam.
+
+5
+00:18:42,364 --> 00:18:45,704
+Hepinizin geçmiş Ramazan bayramını kutlarım.
+
+6
+00:18:46,984 --> 00:19:00,324
+Bayram sonrası hepimiz tatil olmayı beklerken, Perşembe-Cuma normal mesai günü oldu ve biz de Allah'tan rektörlük Perşembe ve Cuma'yı online ders yapabilirsiniz.
+
+7
+00:19:00,324 --> 00:19:06,864
+Sizlerin en azından bir kısmınızın okula dönmek gibi bir sorunu ortadan kalkmış oldu.
+
+8
+00:19:08,723 --> 00:19:24,683
+Aslında kısa bir kısım. Hatırlıyorsanız ön koşul kısmında bir numaralı kriptografik tool'lar var. Şifreleme tool'ları. O kısımda anlatmıştık. Burada hızlıca bir tekrar etmiş olacağız.
+
+9
+00:19:34,740 --> 00:19:59,740
+İmciye incelemiştik. Yönetimsel hususlar hatırlarsanız bir sistem güvenliği derken bunun sadece lojik tabanda bilgisayar sisteminin güvenliği olmadığı, işte firewalllarla ya da uygun donanım ya da cihazlarla kontrolünden daha ziyade sistem güvenliğinin bu sistemi...
+
+10
+00:20:00,000 --> 00:20:14,779
+Oluşlan tüm bileşenleri, donanım bileşenleri, yazılım bileşenleri yanında insan kaynakları, bina, altyapı dahil olmak üzere nasıl bir güvenliği, nasıl bütüncül el alabiliriz onları incelemiştik.
+
+11
+00:20:14,779 --> 00:20:26,720
+Onlarla alakalı da alt hafta en son kanuni ve etik hususlarla bu kısmı bitirdik. Şimdi bir başka kısma giriş yapacağız.
+
+12
+00:20:28,884 --> 00:20:36,304
+O da, görebiliyoruz değil mi arkadaşlar?
+
+13
+00:20:40,852 --> 00:20:42,211
+Evet, gözüküyor hocam.
+
+14
+00:20:44,792 --> 00:20:56,852
+İkinci kısım, aslında üçüncü kısım, Outline Introduction kısmıyla beraber üçüncü kısım, şifreleme algoritmaları kısmına...
+
+15
+00:20:57,460 --> 00:21:21,380
+Geçmiş olacağız. Biraz önce dediğim gibi normalde lisans düzeyinde anlattığımız bilişim sistemleri güvenliği dersinin devamı olarak üzerine bina ettiğimiz için bilişim sistemleri güvenliği dersinde birinci konu olarak kriptografik tool'lar kısmında ön bilgileri ayrıntılı şekilde vermiştik.
+
+16
+00:21:21,728 --> 00:21:34,268
+Merak ediyorsanız o sunuyu tekrar hızlıca bakabilirsiniz. Bu algoritmalarda hatırlarsanız şifrelemeyi 2.
+
+17
+00:21:34,900 --> 00:21:50,140
+Ana grupta yapmıştık. Birincisi simetrik şifreleme, ikincisi asimetrik şifreleme. Burada ikisinin biraz hatırlatma babında, biraz üzerine neler koyabiliriz babında tekrar hızlıca üzerinden geçmiş olacağız.
+
+18
+00:21:50,140 --> 00:22:00,840
+Bu bölümde şifre, simetrik şifreleme ve mesaj geziliği üzerine durmuş olacağız.
+
+19
+00:22:01,940 --> 00:22:17,120
+Hatırlayacağınız gibi ya da bir önceki koşulsunun da dikkat ederseniz şifreleme kısmı özellikle tek şifreleme kısmı en eski şifreleme yöntemi.
+
+20
+00:22:25,140 --> 00:22:33,900
+Tek şifreleme algoritması ve yaygın olarak tek şifreleme yöntemi olarak karşımıza çıkıyor.
+
+21
+00:22:35,420 --> 00:22:37,600
+Nelerden bahsedeceğiz?
+
+22
+00:22:38,500 --> 00:22:43,940
+Simetrik şifreleme ve mesaj gizliliğinden bahsedeceğiz.
+
+23
+00:22:48,948 --> 00:22:56,948
+Bunun üzerine lisans üzerindeki şifreleme algoritmalarında DESK.
+
+24
+00:22:57,491 --> 00:23:18,871
+ve Trides hatırlarsanız, onun üzerine onlardaki eksiklikleri çözebilmek adına neydi onlardaki eksiklikler? Birincisi, text size'ının ve anahtar boyutunun kısa olması ve dolayısıyla günümüzdeki bilgisayar algoritmalarındaki, bilgisayar donanımlarındaki hızlı gelişmeler nedeniyle
+
+25
+00:23:19,796 --> 00:23:35,816
+Bunun artık ihtiyacı karşılamıyor olması nedeniyle bir yarışma, competition yapılmıştı hatırlarsanız. Burada da yine biraz bahsedeceğiz.
+
+26
+00:23:35,816 --> 00:23:41,276
+Bunun üzerine AES, Advanced Encryption Standard.
+
+27
+00:23:44,276 --> 00:23:59,416
+Amacı hem tekst boyutunu hem de şifreleme boyutunu, anahtar boyutunu arttırmak amacımız ve daha güvenli bir şifreleme algoritması ortaya koyabilmek.
+
+28
+00:23:59,416 --> 00:24:02,251
+Günümüzde...
+
+29
+00:24:02,259 --> 00:24:26,799
+İlk başlangıçta teksterimiz belli boyutta mesajlar olarak iletiliyor. Dolayısıyla deste 64 kilobit tekst boyutu, 54 bit anahtar boyutu yeterli olabiliyorken ya da IS'de 128 bit.
+
+30
+00:24:27,215 --> 00:24:49,255
+Tekst boyutu ya da 128-256 bitlik anahtar boyutu yeterli olabiliyorken şu anda aslında mesajların paketler şekli değil de bir akış şeklinde olduğunu ve sürekli bir veri transferinin olduğunu ve güvenliğin de bu akan veri üzerinde olduğunu düşünürsen.
+
+31
+00:24:50,067 --> 00:25:17,008
+Buna alternatif çözümler üretmek babında. Block Chipper'lar yani Block Şifreleme algoritmaları ki normal mevcut algoritmaların kullanılarak büyük verileri küçük bloklara 64 bit ya da 128 bitlik küçük bloklara ayırarak nasıl şifreneceği ya da Stream Chipper dediğimiz akış şifreleme.
+
+32
+00:25:17,587 --> 00:25:36,327
+Veri üretilirken bitfiles şifreleme ve onlarla alakalı RS4, RC4 algoritmalarını ve blok modları burada hızlıca görmüş olacağız.
+
+33
+00:25:37,248 --> 00:25:44,187
+Şimdi geriye dönüş bir hatırlatma baktığımız zaman simektrik şifreleme.
+
+34
+00:25:45,748 --> 00:26:06,088
+Ayrıca alışına gelmiş ya da traditional ya da conventional şifreleme de diyoruz. Ya da gizli anahtarlı şifreleme ya da tek anahtarlı şifreleme literatürde simetrik şifreleme için kullandığımız isimler.
+
+35
+00:26:07,059 --> 00:26:30,420
+1970'lere kadar tek alternatif şifrelemede. Çünkü 1970'lere kadar, 1970'ler niye deadline? 1970'lerde public anahtarlama ya da çift anahtarlamalı şifreleme ya da asimetrik şifreleme teorileri ilk yayınlanmış oluyor.
+
+36
+00:26:34,132 --> 00:26:48,012
+Tek alternatif değil, asimetrik ve simetrik şifreleme olarak iki tane yaygın var ama hala yaygın şekilde kullanılan şifreleme yöntemi simetrik şifreleme.
+
+37
+00:26:52,500 --> 00:27:01,980
+Asimetrik şifrelemenin tercih nedenleri, asimetrik şifrelerinin tercih nedenleri ya da hibrit kullanmayla alakalı ayrıntıları.
+
+38
+00:27:01,980 --> 00:27:12,279
+Önceki Cryptographic Tool chapter'ında bir numaralı prerequisit'teki sunum. Orada ayrıntılarıyla görebilirsiniz.
+
+39
+00:27:18,036 --> 00:27:43,876
+Beş tane içeriği var. Aslında bütün şifrelemelerin beş tane içeriği var diye düşünebiliriz. Bir tane plain text dediğimiz bizim düz metnimiz yani mesajımız. Şifrelenmemiş mesajımız. Sonra şifreleme algoritmamız. Sonra şifreleme algoritmasına göre kullanacağımız.
+
+40
+00:27:44,564 --> 00:28:09,384
+Anahtarımız, niye öyle anahtar önemli, anahtar büyüklüğü? Çünkü şifreli algoritmaları çoğunlukla hem desen hem tridesin hem mearesin algoritmaları zaten yaygın bir şekilde biliniyor, kullanılıyor. Düz metni aynı algoritmayla farklı output vermesindeki tek kritik nokta kişiye özel anahtar.
+
+41
+00:28:09,748 --> 00:28:27,788
+Dolayısıyla anahtar temel yapı. Dolayısıyla bir haliyle anahtarın çözülmesi durumunda hem sonraki şifrelenmiş metinler hem de önceki şifrelenmiş metinlerin hepsini aynı anahtarla çözebilmemiz mümkün.
+
+42
+00:28:29,364 --> 00:28:51,824
+Algoritma, plain text ve şifreyle şifrelenmiş, cheaper text ya da şifreli metin. Sonra bunlar hedefe ulaştığımız zaman aynı anahtar ve çiftinin alıcı tarafında da olması gerekiyor ve şifre çözme algoritması.
+
+43
+00:28:57,140 --> 00:29:01,920
+Beş içerikten, beş bileşenden oluşuyor diyebiliriz.
+
+44
+00:29:03,599 --> 00:29:09,599
+Şifreleme, değişik şifrelemeleri, değişik sınıflandırma yöntemleri var.
+
+45
+00:29:09,599 --> 00:29:18,300
+Ama temel itibariyle sınıflandırma üç birbirinden bağımsız yönde gruplandırılabilir.
+
+46
+00:29:22,880 --> 00:29:40,680
+Düz metinden şifreli metine geçişte kullanılan transformasyon dönüşüm yöntemi nedir mesela? Bir transformasyon yöntemi bir substitution ya da yerine koyabiliriz.
+
+47
+00:29:49,619 --> 00:30:09,619
+Eleman tarafından yer değiştiriliyor. Buna substitution yöntemi diyoruz. İkincisi ise transposition. Bu yer değiştirme değil, yerini değiştirme. Dolayısıyla aynı metin içerisindeki geçen elementlerin...
+
+48
+00:30:10,451 --> 00:30:28,412
+Belli bir algoritmaya göre yerini değiştirme. Dolayısıyla şifreleme, düz metinden şifreleme geçiş yöntemi olarak, yer değiştirme ve yerini değiştirme olarak, iki yöntem olarak ayrılabilir.
+
+49
+00:30:38,099 --> 00:30:51,440
+Eğer hem alıcı tarafında hem de verici tarafında aynı anahtar kullanılıyor ise buna simetrik şifreleme diyoruz.
+
+50
+00:30:53,395 --> 00:31:14,016
+Eğer alıcı taraftaki anahtar farklı, verici taraftaki anahtar farklı ise, yani bir anahtarla şifrelenip diğer anahtarla şifre açılabiliyor ise, yani şifrelenmiş metinden düz metin elde ediliyorsa, buna da asimetrik şifreleme demiş oluyoruz.
+
+51
+00:31:18,703 --> 00:31:36,523
+Parametreler ve özellikler dediğim gibi bir numaralı Kriptografik Tool sunumunda mevcut. Burada hızlıca özetlemek gerekirse, burada anahtar çiftinden istenen bazı kriterler var.
+
+52
+00:31:40,819 --> 00:31:59,480
+Bir anahtarı kullanarak diğer anahtarın üretilemiyor olması gerekiyor. Bu anahtar çiftinden istenen bir özellik. Diğeri ise herhangi bir anahtar her iki amaçla ayrı ayrı kullanılabiliyor olması gerekiyor.
+
+53
+00:32:05,920 --> 00:32:24,059
+Şifreyi çözmeniz lazım. Yani aynı anahtarla hem şifreleyip hem de şifreyi çözmeniz mümkün değil. Ama herhangi bir anahtar hem şifrelemek için kullanılabilir hem de gelen şifrelenmiş metni çözmek için kullanılabilir.
+
+54
+00:32:24,660 --> 00:32:40,519
+Bir başkası ise aslında bu anahtar çifti başka bir şifreyle, unique olması başka bir şifreyle aynı sonuçlar elde edilemiyor olması gerekiyor.
+
+55
+00:32:40,519 --> 00:32:45,400
+Dolayısıyla kullanılan anahtara bağlı olarak da iki grupta.
+
+56
+00:32:46,259 --> 00:33:10,139
+Değerlendiriyoruz şifreleme algoritmalarını. Tek anahtarlı simetrik şifrelemeler, çift anahtarlı asimetrik şifrelemeler. Bu bizim şifrelemeyi sınıflandırdığımız ikinci boyut. Üçüncü boyut ise Brain Text düz metin işleminde şifreleme yönteminin kullanılış biçimi.
+
+57
+00:33:10,579 --> 00:33:27,179
+Eğer bizim metnimiz büyük bir metinden oluşuyor ise, biz şifrelemeyi iki türden yapabiliriz. Birincisi, bizim şifreleme algoritmamız belli büyüklükteki metni.
+
+58
+00:33:28,307 --> 00:33:42,168
+Alıyordur. İşte DES'te 64 bit, AIS'te 128 bit ve biz bundan büyük metinlerimizi bu 64 bit ya da 128 bitlik bloklara bölüyoruzdur.
+
+59
+00:33:51,059 --> 00:34:07,420
+Kullandığı bir şifreleme üretici algoritmamıza tek bir şifreyle girip onun ürettiği anahtarları kullanarak şifreliyorduk. Buna blok şifreleme diyoruz. Yani blok şifreleme. Diğeri ise akış.
+
+60
+00:34:08,052 --> 00:34:29,832
+Akış şifreleme aslında bloklara bölme gibi bir husus konusu değil. Betin veri girerken bitwise şifrelemeyi bahsediyoruz. Dolayısıyla şifreleme algoritmaları 3 bağımsız boyutta 3 farklı şekilde sınıflandırılabilir.
+
+61
+00:34:34,099 --> 00:34:50,960
+Ters çerçeveden bakmaya. Elinizde bir şifrelenmiş algoritma var ya da şifrelenmiş metni çözmek istiyorsunuz. Hedef bu.
+
+62
+00:35:01,856 --> 00:35:25,636
+Amacımız burada nedir? Algoritmayı ve anahtarı bulmak. Şifreleme algoritmalarını sınıflandırırken, buradaki tabloda aslında kripto analiz saldırılarının ne kadarlık veri elimizde varken,
+
+63
+00:35:26,291 --> 00:35:33,051
+Ne kadar zorlukla karşılaşırız aslında. Buradaki sınıflandırma yöntemi bu.
+
+64
+00:35:33,431 --> 00:35:40,991
+En zoru, elimizde sadece şifrelenmiş bir metin var.
+
+65
+00:35:42,612 --> 00:35:46,211
+Şifreli bir metin var. Biz bu metinin ne olduğunu bilmiyoruz.
+
+66
+00:35:46,551 --> 00:35:51,731
+Bildiğimiz tek şey var. O da ne? Algoritma.
+
+67
+00:35:52,596 --> 00:36:15,216
+Elimizde sadece çift eteks var. İnkıpsın algoritması, şifreleme algoritması biliniyor. Fakat bu şifreleme algoritmasına ile anahtarla alakalı hiçbir bilgimiz yok. Şifrelenmiş metinle alakalı da hiçbir bilgimiz yok.
+
+68
+00:36:18,963 --> 00:36:26,403
+Kripto analiz yöntemi bu. Elimizde hiçbir şey yok. Sadece algoritmayı biliyoruz. O kadar.
+
+69
+00:36:27,563 --> 00:36:36,583
+Bunun tek çözüm yöntemi ne? Algoritmayı bildiğimize göre şifrenin boyutunu da biliyoruz demektir.
+
+70
+00:36:39,827 --> 00:36:57,287
+Ice kullanıyorsa 128 ya da 256. Bit, worst case dediğimiz zaman aslında buna kullanılabilecek tek yöntem kaba kuvvet saldırısı, brute force attack.
+
+71
+00:37:05,760 --> 00:37:22,920
+Uygulamak ve şifrelenmiş algoritmayı zaten biliyorduk. Şifrelenmiş teksti bu şifreni anahtar, brute force saldırısıyla elde ettiğimiz anahtarla tek tek deneyerek çözmeye çalışmak.
+
+72
+00:37:34,835 --> 00:37:53,195
+Çözünceye kadar bilgi zaten değersiz hale gelmiş oluyor. İkincisi ise, ikinci aşama bilinen bir düz metin.
+
+73
+00:37:53,195 --> 00:37:57,036
+Burada neyimiz var aslında?
+
+74
+00:37:59,507 --> 00:38:26,567
+Düz metinle alakalı bilgiye sahibiz. Çıpırt ekstor elimizde düz metinle alakalı bilgiye sahibiz demektedir. Biliyoruz ki bu bir PostScript döküman, PDF dökümanı. Ya da biliyoruz ki bu bir XML dökümanı. Biliyoruz bu HTML dökümanı. Peki bu bize ne sağlar?
+
+75
+00:38:27,923 --> 00:38:43,323
+Algoritmamız var elimizde. Elimizde şifrelenmiş metnimiz var. Anahtarı bilmiyoruz.
+
+76
+00:38:43,731 --> 00:38:56,992
+Her bir muhtemel anahtarı yapmak yerine burada aslında biliyoruz ki PostScript dokümanlar belli bir metinler, belli bir bilinen standart header'larla başlıyor.
+
+77
+00:38:57,112 --> 00:39:03,931
+Ya da XML'ler standart header'larla başlıyor. Ya da HTML'ler standart header'larla başlıyor.
+
+78
+00:39:07,539 --> 00:39:20,000
+Karşılığı gelen şifrelenmiş metinleri de bildiğimiz için aslında bu şifrelenmiş bazı kısımlar ve metinler bize neyi sağlayacak?
+
+79
+00:39:21,119 --> 00:39:32,140
+Brute Force saldırısı gibi geniş spektrumda anahtar aramayı değil, daha özel, daha kısa alanda anahtar aramayı kolaylaştıracak.
+
+80
+00:39:34,739 --> 00:39:44,659
+Böyle bir yapı varsa elimizde, yani bilgiyi elde etmişsek bu sefer anahtarı bulma ihtimalimiz birazcık daha kolaylaşıyor.
+
+81
+00:39:44,659 --> 00:40:00,000
+Üçüncüsü ise, biz plain text'i, yani düz metini bilmiyoruz. Onun daha fazlasını biliyoruz. Bazı mesaj bilinen bir düz metini.
+
+82
+00:40:00,000 --> 00:40:24,779
+Evet, mesaj ve onun şifrelenmiş çiftleri elimizde var. Bu durumda hatırlarsanız Plantex'in yapısını, Pioscript mi, HTML mi yapısını bilerek belli header'lardan yola çıkmaya çalışıyorduk ama ikincisinde daha öteye gitmişiz. Bizim elimizde bir mesajın kendisi ve onun şifrelenmiş hali çiftleri var.
+
+83
+00:40:27,315 --> 00:40:49,395
+Ne sağlar bize? Anahtar boyutunu daha da kısıtlandırma ve dolayısıyla anahtara daha kolay ulaşabilme yöntemi var.
+
+84
+00:40:54,547 --> 00:41:14,547
+İki tanesi çok da yaygın kullanılan yöntem değil ama onlarda da yapılabilir. Nedir mesela? Belli metinlere karşı şifrelenmiş halleri elinizde var. Bununla alakalı...
+
+85
+00:41:14,643 --> 00:41:28,583
+Çözüm Plain Text gibi şifrelenmiş, bilinen bir şifreleme aynı yöntem. Ya da belli bir tekst, mesajın tamamı değil, mesajın içerisindeki belli bir tekstin biliyor olması.
+
+86
+00:41:40,820 --> 00:42:00,300
+Yöntemi diye bir şey yok aslında. Encryption aslında şifreleme güvenli kabul edilebilir. Sadece iki şartla. Yüzde yüz güvenli. Yani öyle bir algoritma buldum ki bunun çözülebilmesi sıfır ihtimal. Böyle bir şey yok.
+
+87
+00:42:03,376 --> 00:42:09,956
+Hesaplaması olarak güvenli kabul edebilmemiz için iki ana kriterimiz var. Birincisi,
+
+88
+00:42:13,427 --> 00:42:28,688
+Şifreyi çözme bedeli eğer bilginin bedelini geçiyor isen bu şifreleme algoritması kılamaz, kabul edilebilir.
+
+89
+00:42:28,807 --> 00:42:37,787
+Yani siz şifreyi çözmek için harcadığınız para bilginin kendisinden daha pahalı ise kimse şifreyi çözmek için uğraşmaz demektir.
+
+90
+00:42:41,523 --> 00:42:52,427
+Şifreyi çözmek için harcayacağınız zaman eğer bilginin faydalı olduğu zaman diliminden fazla ise...
+
+91
+00:42:53,940 --> 00:43:12,820
+Yine şifreleme algoritması hesaplamasal olarak güvenli kabul edebiliriz. Dolayısıyla bu üçün ikisi bize bir şifrelemenin güvenli ya da güvensiz olduğu ile alakalı bilgiyi bize verecektir.
+
+92
+00:43:12,820 --> 00:43:16,659
+Şimdi gelelim blok çifreler.
+
+93
+00:43:17,268 --> 00:43:35,387
+Blok şifreleme. Blok şifreleme ile alakalı birçok simetrik blok şifreleme algoritmaları, bunun içerisine DES ve IS'i de dahil edebiliriz.
+
+94
+00:43:36,576 --> 00:43:55,756
+1973 yılında IBM'in tarafından önerilen, Horst Festel tarafından önerilen network'ü ağı kullanıyor. Bu çok basit bir blok yapı.
+
+95
+00:44:05,139 --> 00:44:28,719
+Şifrelemenin tekrar edilmesi anlamına geliyor. Bu Festel, IBM'in 1973 yılında önerdiği blok şifreleme ağı grafiğini incelersek, bu aslında 2W bit boyutunda bir metin kabul ediyor.
+
+96
+00:44:32,947 --> 00:45:00,447
+İkiyi ayırıyoruz. Sağ tarafı W boyutunda, sol tarafı W boyutunda ve R eşit T eşit T sıfır anında iki W bitimiz, bit büyüklüğündeki bloğumuz, R sıfır dediğimiz sağ taraftaki T sıfır anının bileşeni ve L sıfır dediğimiz sol taraftaki anının bileşeni.
+
+97
+00:45:01,652 --> 00:45:19,492
+Ne yapıyoruz arkadaşlar? Sağ taraftaki kısmı T1 anında K1 anahtarı ile F şifreleme algoritması ile şifreliyoruz.
+
+98
+00:45:19,492 --> 00:45:27,371
+Sağ tarafını. Tamam mı? Sol tarafında şifreleme yok. Sonra sol tarafını...
+
+99
+00:45:27,699 --> 00:45:53,119
+Sağ tarafındaki şifrelenmiş çifre tekst ile egzorluyoruz. Sonra sol tarafındaki çıkışı sağ tarafa, sağ tarafı ise şifrelenmemiş halini ise sol tarafa alıyoruz. Ve dolayısıyla birinci round tamamlanmış oluyor. Bu roundı en kere tekrar ediyoruz.
+
+100
+00:45:54,579 --> 00:46:14,699
+Nedir en kere? En kere tekrar ettiğimiz zaman tipik olarak Fresnel'de en eşittir 16. W boyut eşittir standartlarda 128 bit. Anahtar boyutu ise yine 128 bit IS kullanıyorsak eğer 3DS kullanıyorsak.
+
+101
+00:46:15,023 --> 00:46:26,463
+56 bit anahtar boyutu, DES boyu kullanıyorsak, 64 bit de text boyutu.
+
+102
+00:46:27,403 --> 00:46:34,783
+Sonrasında bir sonraki adımda hatırlarsanız bir öncekinde bitwise eksorlanmış hali sağa geçti.
+
+103
+00:46:35,224 --> 00:46:39,764
+Yine W boyutunda şifrelenmemiş hali sola geçti.
+
+104
+00:46:42,099 --> 00:47:06,279
+Bir sonraki roundta, bir sonraki anahtarla bu sefer bitwise eksorlanmışı şifreliyoruz. Sonra diğeriyle bitwise eksorlayıp tekrar yer değiştiriyoruz. Bu yer değiştirme işlemi n kere devam ediyor. Sonrasında n işlemin sonucunda bizim elimize 2W bit boyutunda şifrelenmiş.
+
+105
+00:47:06,672 --> 00:47:22,791
+Metin çıkmış oluyor. Bu algoritma ya da bu network 1973 yılında IBM Fistel tarafından önerilmiş bir network.
+
+106
+00:47:22,791 --> 00:47:28,511
+Şimdi Blockchipper yapısına biraz bakalım.
+
+107
+00:47:31,764 --> 00:47:55,684
+Blog şifreleme nelerden oluşuyor? Bir önceki network'ü de dikkat edersek. Birincisi, birden fazla kere yapılıyor. Dolayısıyla round sayısı önemli. İkincisi, hangi tür yöntemi kullanacaksınız? Yani yer değiştirme mi kullanacaksınız şifrelemek için?
+
+108
+00:47:56,079 --> 00:48:01,720
+Yoksa Permutasyon işlemi mi kullanacaksınız anahtarla?
+
+109
+00:48:03,139 --> 00:48:08,800
+Aşamalara bakabiliriz. Blok boyutumuz var. Blok şifrelemede tipik olarak bu.
+
+110
+00:48:09,179 --> 00:48:20,859
+128 kilobit. Anahtar boyutu yine 128. Tipik olarak 128 bit.
+
+111
+00:48:23,219 --> 00:48:43,639
+Yanlış yazılmış burada, onu düzeltin. Tipik olarak 16 round alt anahtar üretme algoritması. Bu önemli. Dikkat ederseniz bir önceki network'te K1'den K'ine kadar bir alt anahtarlarımız var.
+
+112
+00:48:44,371 --> 00:48:58,991
+Peki alt anahtarları random üreteceğiz? Hayır. Biz bir alt anahtar üretme algoritması kullanıyoruz. Bu üretme algoritması input olarak bizim simetrik anahtarımızı kullanıyor.
+
+113
+00:48:58,991 --> 00:49:10,251
+Bu algoritmanın özelliği şu, aynı anahtar için aynı alt anahtarları üretecek. Farklı anahtar için farklı.
+
+114
+00:49:10,900 --> 00:49:35,760
+Anahtarları üretmesi gerekiyor. Sonrasında round fonksiyonları, şifrelemenin software tabanlılımı olduğu, hardware tabanlılımı olduğu ve analizin kolaylığı. Bunlar Blockchipper'den istenenler. Analizin kolaylığı aslında
+
+115
+00:49:37,012 --> 00:49:53,972
+Birazcık kafa karışıklığı olarak aklınıza gelebilir. Niye? Çünkü şifreleme algoritması ne kadar az biliniyor ise o kadar güvenlidir. Mantığı aslında yanlış arkadaşlar.
+
+116
+00:50:06,228 --> 00:50:12,188
+Bug'lardan arınmış bir algoritmadan söz ediyoruz.
+
+117
+00:50:13,708 --> 00:50:20,807
+Şimdi gelelim kullanılan simetrik şifreleme algoritmalarının.
+
+118
+00:50:23,387 --> 00:50:29,007
+Birinci algoritmamız DES, Beta Encryption Standard.
+
+119
+00:50:31,987 --> 00:50:50,847
+En yaygın kullanılan simetrik şifreleme yöntemi. 1977'de National Bureau of Standards, daha sonra bunun adı NIST, National Institute of Standards and Technology haline dönüştürüldü.
+
+120
+00:50:59,027 --> 00:51:26,607
+Dökümanları açık bir standart. 1977 yılında Data Encryption standartı olarak yayınlandı. FIPSPAP 46 adında bunu internetten de bulabilirsiniz. Bu yaygın olarak kullanılan bir standart. Dolayısıyla Data Encryption'ın ders kısaldırması kullanıldığı gibi diğer Data Encryption algoritm olarak da kullanılıyor.
+
+121
+00:51:28,019 --> 00:51:52,159
+Plaintex 64 bitlik veriyi alıyor. Anahtar boyutu 56 bit. Yine outputumuz ise yine 64 bit. 64 bit düz metin alıyor. 56 bitlik anahtarla yine 64 bitlik şifreleme metnini elde ediyor.
+
+122
+00:51:52,864 --> 00:52:14,884
+Fistel Network'ünde çok az değişikliklerle kullanılıyor. Ancak bilgisayar teknolojinin gelişmesi ile verinin boyutunun 126 bit olması ve anahtar boyutunun da 56 bit olması aslında kaba kuvvet saldırısında bilgisayardaki
+
+123
+00:52:15,572 --> 00:52:38,012
+Şifreleme deneme hızının artması ile aslında DES algoritmasının hiç şifreyle alakalı hiçbir şey bilmesek bile makul bir sürede çözülebileceği ortaya çıktı. Dolayısıyla ilk akla gelen bunu nasıl iyileştirebiliriz?
+
+124
+00:52:38,900 --> 00:52:55,619
+İlk akla gelen, eğer ben şifreleme işini aynı algoritmayla ama farklı şifrelerle üç kere yapar isem, şifrelemeyi daha güvenli hale getirebilirim mantığıyla.
+
+125
+00:52:55,619 --> 00:52:59,539
+Yola çıkıldı ve trible des, tri des.
+
+126
+00:53:00,148 --> 00:53:16,527
+İlk önce finansal uygulamalar için ANSI standart olarak X917 olarak 1985 yılında kullanılmaya başlandı.
+
+127
+00:53:21,619 --> 00:53:39,299
+Yaygınlaştırıldı. Genel bir standart haline getirildi ve 46'ya 3 olarak NIS tarafından PAP 46'ya 3 olarak standartı yayınlandı. Nasıl çalışıyor? Aslında çok basit çalışması.
+
+128
+00:53:49,780 --> 00:54:07,780
+K1, K2, K3, E, D ve E. E, İnkription algoritması, D, Decryption algoritması olduğunu yapalım. Şifreleme kısmında ne yapıyoruz? Plain Text'i, K1 şifresiyle şifreliyoruz.
+
+129
+00:54:13,684 --> 00:54:27,684
+Dikrit yapmaya, yani şifresini çözmeye çalışıyoruz. Başka bir şifre çözme algoritması ile. Bu aslında farklı anahtar kullandığımız için bu da aslında şifreleme gibi. Sonra onun çıktısını...
+
+130
+00:54:28,052 --> 00:54:51,392
+K3 anahtarıyla tekrar şifreleme algoritmasıyla şifreliyoruz. Dolayısıyla bizim outputumuz C. Ne oldu? Anahtar boyutumuz K1 56 bit, K2 56 bit, 3 çarpı 56 ne yaptı? 150, 18, 168 bit anahtar boyutumuza ulaşmış oldu. Şifrelemeyi çözmeyi nasıl yapıyoruz?
+
+131
+00:54:51,824 --> 00:55:11,244
+C, çipırteks elimize geldiği zaman K3 anahtarıyla şifreyi çözüyoruz. B output'u geliyor. Sonra K2 anahtarıyla şifreliyoruz. A output'u geliyor. Sonra K1 anahtarıyla decrep ediyoruz. Aslında temel yapı çok basit.
+
+132
+00:55:19,155 --> 00:55:33,476
+Karşımıza çıkıyor. Ama 1970'lerde bu algoritma geliştirildiği için özellikle bilgisayarla geliştirmelerde biraz hantal kalıyor.
+
+133
+00:55:40,083 --> 00:55:44,583
+Bazı dezavantajları var.
+
+134
+00:55:44,583 --> 00:56:07,364
+Ve 1997 yılında NIST bir yarışma yapıyor. Bu yarışmada ki amaç şu, Trides uzun vadeli kullanım için uygun bir çifreleme algoritması değil. Çünkü niye? Bilgisayarla geliştirmeye pek uygun değil.
+
+135
+00:56:09,556 --> 00:56:36,696
+Önerisi de şu Nistin, öyle bir algoritma önerin ki güvenliği en az trides kadar olsun, daha verimli çalışsın, simetrik blok çipır algoritması olsun, yani dese alternatif olsun.
+
+136
+00:56:37,300 --> 00:56:43,920
+Ve veri boyutu en az 128 bit olsun.
+
+137
+00:56:43,920 --> 00:56:56,000
+Ve anahtar boyutu ise 128, 192 ve 256 bit daha büyük anahtarla kullanılabilsin.
+
+138
+00:56:57,440 --> 00:56:59,280
+Yarışma yapılıyor.
+
+139
+00:56:59,731 --> 00:57:20,471
+İlk roundda 15 tane önerilen yöntem kabul ediliyor ve ikinci rounda geçiriliyor. İkinci roundda bu 15 yöntem 5'e düşürülüyor ve 2001 yılında Jandile'in algoritması AES.
+
+140
+00:57:20,980 --> 00:57:34,239
+NIST tarafından Advanced Encryption Standard ISO olarak kabul ediliyor ve 2001 yılında FIPS 197 standardı olarak bu yayınlanıyor.
+
+141
+00:57:34,804 --> 00:57:50,403
+Bunlarla alakalı AES, Trides ve DES karşılaştırmaları yine ön koşuldaki bir numaralı sunumda mevcut. Burada sadece hızlıca bir özet geçmek istedim arkadaşlar.
+
+142
+00:58:03,411 --> 00:58:20,552
+Yayınlandıktan sonra encryption ve decryption nasıl yapılıyor? Aslında yine aynı mantıkla her bir roundda yer değiştirme bitleri dört işlemden geçiyor.
+
+143
+00:58:30,911 --> 00:58:52,512
+Kolomlar karıştırılıyor. Sonra anahtarla, anahtar ekleniyor, anahtarla şifreniyor ve bu on kere yapılmış oluyor. Tersi de gene on kere yapılarak şifre çözülmüş oluyor.
+
+144
+00:58:58,384 --> 00:59:22,048
+Daha açık hali. İşte sağa ve sola kaydırma işlemleri. Sonra kolomların kaydırma işlemleri. Anahtarla egzorlanması ve şifrelenmiş halinin çıkartılması. Peki, substitution işlemleri nasıl yapıyor? Xbox kullanılıyor. X ve Y düzleminde her bir...
+
+145
+00:59:22,047 --> 00:59:44,587
+Bir çiftine 0-0 ne olur? 63 olarak yer değiştiriliyor. Bu gördüğünüz gibi hexadecimal bir yapı. S-Box, bu da bunun inverse X-Box. Yani geriye dönüşteki sapsı tüşünün tersi. Bu tablo kullanılarak.
+
+146
+00:59:45,556 --> 00:59:48,195
+Şifreleme çözülmüş oluyor.
+
+147
+00:59:48,195 --> 01:00:02,935
+Shift işlemleri ise aslında her bir bireysel bitim diğer kalımlarla ayırma işlemi olarak yapılıyor.
+
+148
+01:00:03,036 --> 01:00:03,935
+Dolayısıyla ne yapılıyor?
+
+149
+01:00:05,396 --> 01:00:23,396
+İkincisi bir kere kaydırılıyor. İkincisi iki kere, üçüncüsü üç kere kaydırılarak sola kaydırıldığı zaman başa, işte sondaki başa geliyor. O şekilde kaydırma işlemleri yapılarak karıştırıyoruz aslında. Terse döndüğümüz zaman da bu işlemi...
+
+150
+01:00:24,436 --> 01:00:43,856
+Tersten yapıyoruz. Bu ayrıntıları eğer şifreleme ile çalışacak arkadaşlar varsa ayrıntılarını kitaplardan bakabilir. Sadece fikir vermesi bakımından yapıyoruz. Kolonun karıştırılması her bir kolon bireysel olarak giriyor.
+
+151
+01:00:44,467 --> 01:00:58,048
+Ve bitwise olarak bunlar karıştırılmış oluyor. Sonrasında ise basit bir egzorlama işlemiyle, anahtarla biz bunu egzorluyoruz.
+
+152
+01:00:58,048 --> 01:01:11,768
+Buraya kadar anlattıklarımız Block Chipper'lardı. Şimdi gelelim Stream Chipper'lara ya da Akış Şifreleme ya da Sürekli Şifreleme.
+
+153
+01:01:16,340 --> 01:01:41,280
+Burada blok şifrelemede bilgiler, veriler, tek blok blok girerken burada proses işlemi her bir input giriş elemanı için sürekli olarak yapıyor. Anahtar ise sözde random, pesude random bit jeneratörü. Bu pesude random bit jeneratörü ile alakalı bilgiler de gene.
+
+154
+01:01:42,675 --> 01:02:01,175
+Bir önceki dediğim bir numaralı kriptografik tool sunumunda mevcut. Burada bakabilirsiniz. Pisto Random Jeneratör'den istenen özellikle. Anahtar çiftine göre random numaralar sürekli random numara üretiyor.
+
+155
+01:02:01,632 --> 01:02:23,992
+Aynı algoritma hem alıcı tarafında hem verici tarafında var. Anahtar da hem alıcı tarafında hem verici tarafında. Dolayısıyla aynı anahtarla aynı üretilmiş anahtar serisine sahip ve bu anahtarla da basit stream olarak egzorlamada ibaret.
+
+156
+01:02:26,356 --> 01:02:50,556
+Simetrik çıpırların 3 GHz'lik prosesördeki performanslarına bakarsak, işte stream çıpırlar, RC4 128 bit ya da RC4 192 bitlik anahtar boyutuna ya da 256 bitlik anahtar boyutuna göre performansları dikkat ediyorsanız.
+
+157
+01:02:54,003 --> 01:03:19,003
+Stream Chipper, ikinci taraf ise ve üçüncü taraf ise Block Chipper'lar, Electronic Codeput veya CBC, Continuous CBC'yi kullanarak şifrelerime dikkat ediyorsanız RC algoritmaları ya da Stream Chipper'lar, True Put'u.
+
+158
+01:03:20,052 --> 01:03:45,012
+Daha yüksek. Bu da aslında bizim sim çıpların niye tercih edildiğini göstermiş oluyor. Bunlarla alakalı AC4'ün nasıl şifrelenmesiyle alakalı blok, diagramlar, yapılar karşımıza çıkıyor.
+
+159
+01:03:47,827 --> 01:04:04,508
+Block Chipper mod operasyonlarında elektronik codebook ECB. Aslında bu her bir 64 bitlik Bloint Text için kullanılan, aynı anahtar için kullanılan bir kod ayrıntıyı vereceğiz.
+
+160
+01:04:04,880 --> 01:04:24,460
+Chipper Block Cloning dediğimiz aslında bu 64 bitlik plain text için üretilen 64 bitlik Chipper Text, egzorlama işlemi için büyük bu ya da Chipper Feedback, Output Feedback ve Counter CTC kullanılan operasyon yöntemleri.
+
+161
+01:04:24,460 --> 01:04:29,500
+Bunlarla alakalı ayrıntıya gidersek, Electronic Codebook en basit.
+
+162
+01:04:29,940 --> 01:04:46,940
+Burada plain textler B-bit, bir zaman diliminde B-bit işlemle yapılıyor. Codebook her bir B-bit blok için cheaper text üretilmesinde kullanılıyor.
+
+163
+01:04:50,847 --> 01:05:15,148
+Rapidit'i kullandığı için ve metin içerisinde de aynı tekste, aynı codebook'un geliriyle aynı çift blokların oluşması ve bu durumda da simetrik şifrelemeden, biraz önceki kriptografik analiz turlarında anlatırken, şifrelenmiş ile düz çift çiftçinin ne kadar fazla elimizde olması.
+
+164
+01:05:15,699 --> 01:05:21,619
+Bizim anahtarı bulmaya konusunda fayda olacağını düşündüğümüzden burada nasıl yapılıyor?
+
+165
+01:05:26,483 --> 01:05:44,823
+Çok fazla geliyorsa bunu codebook içerisinde farklı blok tarafından kullanılması için takip ediliyor. Ona göre farklı bir codebook bloğu kullanmış oluyor. Nasıl çalıştığıyla alakalı yapı, CBC botlarının çıpır blok çayning yapısı.
+
+166
+01:05:45,300 --> 01:05:56,300
+İnkription Yapısı ve Decryption Yapısı burada geliyor. Input thtt bir anında p1 bloğu ile codebook dört numara giriyor.
+
+167
+01:05:57,680 --> 01:06:10,420
+Exorlanıyor. Kbit ile şifrelenip output bir sonraki exorlama amacıyla kullanılıyor ve aynı şifreyle bizim encrypt edilmiş oluyor.
+
+168
+01:06:12,628 --> 01:06:38,048
+Bu da ise S-Bit Chipper Feedback modunda 64-bit bit çiftlerle şifrelemenin nasıl yapıldığı, bu ise Counter-CTR moduyla blok şifrelemenin nasıl yapıldığıyla alakalı durumlar.
+
+169
+01:06:38,900 --> 01:07:00,520
+Simetrik şifrelemede ana yapımız ne arkadaşlar? Anahtar. Bizim elimizde tek bir anahtarımız var. Ve bizim kabulümüz ne? Bu anahtarın güvenli yolla paylaşıldığı. Öyle değil mi?
+
+170
+01:07:00,916 --> 01:07:09,775
+Eğer anahtarımız bir başka kişi tarafına ele geçirilmiş ise bizim şifrelememizin pratik bir anlamı kalmamış oluyor.
+
+171
+01:07:11,076 --> 01:07:22,295
+Dolayısıyla bizim anahtar dağıtımı şifreleme ile alakalı ana koşulumuz.
+
+172
+01:07:22,295 --> 01:07:25,516
+Anahtarın güvenli bir şekilde dağıtılması.
+
+173
+01:07:27,827 --> 01:07:42,427
+Nasıl dağıtabiliriz? Nasıl yöntemlerimiz var? Burada dört tane yöntem var. Diyelim ki A ve B çiftimiz var. A ile B arasında güvenli bir iletişimden bahsediyoruz.
+
+174
+01:07:48,115 --> 01:08:08,135
+Anahtar A ile B arasında A tarafına fiziksel olarak verilmesi gidip A anahtarını elden, A'nın B'ye anahtarını elden teslim etmesi. Elden teslim ettiği için ve güvenli bir şekilde de ettiği için bu fiziksel dağılım birinci yöntem.
+
+175
+01:08:14,291 --> 01:08:30,152
+Güvenli bir dağıtıcı üzerinden yapılması. Dolayısıyla güvenli bir üçüncü parti dağıtılacak. A ile B'ye bu anahtarı güvenli bir şekilde fiziksel olarak dağıtıyor.
+
+176
+01:08:41,395 --> 01:08:57,395
+Bir sonraki kullanıcı anahtarı eski anahtarıyla şifreleyip gönderebilir. Ya da üçüncü parti A ve B'ye bu anahtarları şifreli olarak gönderebilir.
+
+177
+01:08:58,735 --> 01:09:07,195
+Şimdi bununla alakalı otomatik anahtar dağıtım yönteminden bahsedebiliriz.
+
+178
+01:09:07,828 --> 01:09:30,768
+A ile B'miz var. A ile B birinci aşamada anahtar dağıtımıyla alakalı bir başvurusu var. Dolayısıyla bir güvenlik servisi koşuyor. Bu başvuru anahtar yok. Ama A ile B arasında bir güvenli bir iletişim kurulmasından söz ediyoruz.
+
+179
+01:09:33,235 --> 01:09:46,136
+Anahtar dağıtım merkezine güvenli bir taleb üzerinden diyor ki ben B ile iletişime geçmek istiyorum. Bana anahtar sağla.
+
+180
+01:09:47,515 --> 01:09:56,175
+Sonra birinci adımda bu talebi yapıyor. Güvenlik servisi talebi anahtar dağıtım merkezine diyor.
+
+181
+01:10:01,140 --> 01:10:23,380
+Hem B'ye bu anahtarı güvenli bir şekilde, çifleri bir şekilde bu ejentler vasısıyla gönderiyor. Dolayısıyla artık A ve B'de sadece her ikisinde anahtar dağıtım merkezi tarafından dağıtılmış anahtarımız var. Dördüncü aşama artık basit. O anahtarla.
+
+182
+01:10:24,243 --> 01:10:33,443
+Blok şifreleme yapabilir, stream şifreleme yapabilir fark etmiyor. Aynı algoritmayı kullanıyorlar. Aynı anahtar Generation algoritmasını kullanıyorlar.
+
+183
+01:10:33,971 --> 01:10:51,891
+A şifreliyor, B'ye gönderiyor. B geldiği zaman bunu dikrip ediyor, şifreyi çözüyor. Bir daha kendisi bir mesaj göndermek istediği zaman A'ya. Bu sefer aynı anahtarla B şifreliyor, A'ya gönderiyor ve böyle çift kanallı iletişim sağlanmış oluyor.
+
+184
+01:10:51,891 --> 01:10:58,492
+Bu aslında arkadaşlar hızlı bir chapter oldu.
+
+185
+01:10:59,091 --> 01:11:09,611
+Bayramdan sonra da sizi fazla açıkçası sıkmak istemiyorum. İsterseniz burada bırakabiliriz.
+
+186
+01:11:10,631 --> 01:11:24,031
+Soracağınız bir şey var mı arkadaşlar? Haftaya bir aksilik olmaz ise haftaya Cuma günü yani ayın 13. haftası.
+
+187
+01:11:24,979 --> 01:11:51,399
+Cuma günü dersimiz yüz yüze. Bu yüz yüze dersimizde bu güvenlikle alakalı dokümanlarınızı hazırladığınız dokümanı, 30 puan üzerinden hazırladığınız dokümanı burada toplayacağım. Gelmezseniz vermemiş olacaksınız. Dolayısıyla bunları hazırlayan arkadaşların özellikle gelmesini tavsiye ediyorum.
+
+188
+01:11:53,587 --> 01:12:01,608
+Soracağınız bir şey var mı arkadaşlar? Burada kapatabiliriz dersi isterseniz. Sormak istediğiniz herhangi bir şey var mı?
+
+189
+01:12:02,427 --> 01:12:03,907
+Yok. Teşekkür ederiz.
+
+190
+01:12:04,448 --> 01:12:17,907
+Hepinize tekrar geçmiş bayramınız kutlu olsun. Pandemiden de inşallah kurtuluyoruz. Birinin altına düşersek maskeleri komple atacağız. Öyle gözüküyor. İnşallah Allah bir daha böyle bir...
+
+191
+01:12:18,387 --> 01:12:21,327
+İmtihanla bizi imtihan etmez diyorum.
+
+192
+01:12:24,979 --> 01:12:31,459
+Hepinize haftaya yüz yüze görüşmek üzere. Bir yüzünüzü görelim, bir yüzle tanışmış olalım.
+
+193
+01:12:33,199 --> 01:12:34,459
+Teşekkürler hocam.
+
+194
+01:12:34,959 --> 01:12:36,579
+Teşekkürler hocam. Görüşürüz.
+
+195
+01:12:36,579 --> 01:12:37,699
+Teşekkürler hocam, iyi günler.
+
+196
+01:12:37,939 --> 01:12:38,819
+Güler hocam.
+
+197
+01:12:38,899 --> 01:12:40,139
+Görüşürüz.
+
+198
+01:12:40,559 --> 01:12:42,379
+Görüşmek üzere, iyi hafta sonu.
+
+199
+01:12:42,379 --> 01:12:43,340
+Görüşmek üzere hocam.
