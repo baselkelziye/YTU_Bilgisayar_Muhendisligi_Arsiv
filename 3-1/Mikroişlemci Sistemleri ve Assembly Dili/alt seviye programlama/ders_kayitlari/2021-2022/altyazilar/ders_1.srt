@@ -1,0 +1,4535 @@
+1
+00:02:27,475 --> 00:02:31,936
+Arkadaşlar merhaba. Bu kadar çok [öğrenci] olmasının bir sebebi var mı?
+
+2
+00:02:36,948 --> 00:02:40,168
+Hocam bize link attı da arkadaş sabahki derse girmedik.
+
+3
+00:02:41,548 --> 00:02:43,548
+Anladım. İsimleri değiştirsenize.
+
+4
+00:02:46,028 --> 00:02:52,508
+Şeyden hemen böyle ikonun üstünde hemen üç nokta var. O üç noktadan isim değiştirebiliyorsunuz.
+
+5
+00:04:43,187 --> 00:05:08,908
+Şimdi link olarak gelen arkadaşlar için bir şeyi hatırlatayım. Yani burada dersleri saat saat bölmüşler. Eskisi gibi üç saat bölmüyorlar. Yani bu durumda her saatin başında belki yeniden bir link göndermemiz veya sizin linklerinizi güncellemeniz gerekebilir. Haberiniz olsun. Tamam mı? Şimdiden bir söylemiş olayım. Sonra dersin birinci saatin sonuna doğru bir deneriz ona.
+
+6
+00:05:11,827 --> 00:05:21,967
+Bu arada sabahki yüz yüze dersi, derse gelemeyen arkadaşlar için ben OBS üzerinden de şimdi linki gönderiyorum.
+
+7
+00:05:22,247 --> 00:05:24,767
+Yani bazı arkadaşlarınızdan link alarak gelmişsiniz.
+
+8
+00:05:25,387 --> 00:05:33,247
+Yani mümkünse şunu da rica etsem WhatsApp gruplarından Furkan hocanızın grubuna da bu ders linkini gönderebilir misiniz?
+
+9
+00:05:35,603 --> 00:05:42,983
+Online ders şu anda Alt Seviye Programlama, Grup 3 dersi şu linktedir diye. Onu da gönderebilirseniz sevinirim.
+
+10
+00:05:55,475 --> 00:05:57,036
+Şu şeyleri bir ayarlayayım.
+
+11
+00:07:36,435 --> 00:08:03,716
+Merhaba arkadaşlar. Geçen hafta dedik bir yarım saat belki geç başlayabiliriz diye. Geçen haftada biraz parça parça olmuştu hatırlayacak olursanız. Online Yunduz Ede TR'ye giremeyince toplantı üzerinden dersi biraz geç başlatmıştık. Kayıt olması falan da biraz sıkıntıydı. Şimdi biraz böyle geçen haftadan özellikle hatırımızda kalması gereken şeyleri böyle bir 15-20 dakika kadar bir hatırlayalım. Tekrar üzerinde duralım ve böylelikle de.
+
+12
+00:08:04,052 --> 00:08:28,572
+buçuk gibi gelecek olan arkadaşlar da tam vaktinde gelmiş olsun. Bugün birkaç şeyi deneyeceğiz. Saatlere bölmüşler dediğim gibi. Her bir ders saatinde link değişiyor mu? Bir ona bakacağız. İkincisi, ders sonunda eğer bir süreye izin veriyorlarsa dersimizi belki yarım saat başlatmayı bu hafta için deneyecektik. Ama dediğim gibi şimdi tam ondan emin olamadığımız için yarım saatte kaybolmasın.
+
+13
+00:08:28,879 --> 00:08:33,379
+Bu ilk 15-20 dakikaya, böyle geçen haftanın biraz tekrarıyla geçirelim.
+
+14
+00:08:33,379 --> 00:08:42,379
+Sonuna doğru da bu haftanın konusuyla ilgili biraz fazladan süre kullandırıyormuş sistem, onu bir test etmiş oluruz.
+
+15
+00:08:42,379 --> 00:08:45,379
+Şimdi ekran paylaşayım.
+
+16
+00:08:46,379 --> 00:08:49,379
+Şunu da ufaltalım.
+
+17
+00:08:50,379 --> 00:08:53,379
+Şunu da amgeri yapalım.
+
+18
+00:08:56,563 --> 00:08:59,823
+Şimdi görünüyor herhalde ekran, değil mi arkadaşlar?
+
+19
+00:09:01,563 --> 00:09:03,124
+Hocam başlamadan bir şey sorabilir miyim?
+
+20
+00:09:03,503 --> 00:09:03,803
+Buyur.
+
+21
+00:09:04,703 --> 00:09:08,923
+Şey soracağım, slide'ları paylaşmayacağınızı söylememişsiniz de geçen hafta.
+
+22
+00:09:09,183 --> 00:09:13,743
+Slide'ları daha Furkan Hocanızla konuşmadım, bir konuşayım onunla da, ondan sonra net çökeceğim, olur mu?
+
+23
+00:09:14,524 --> 00:09:16,144
+Tamam hocam, sağ olun. Ekranda gözüküyor.
+
+24
+00:09:16,663 --> 00:09:17,884
+Tamam, teşekkür ederim.
+
+25
+00:09:18,292 --> 00:09:28,612
+Şimdi arkadaşlar, bizim açımızdan 8086 SMD tarafıyla ilgili olarak en önemli konulardan birisi bu yaz maçların durumu.
+
+26
+00:09:29,971 --> 00:09:32,112
+Hemen şuradan bir comment tool alayım.
+
+27
+00:09:38,112 --> 00:09:41,432
+Şimdi bizim için yaz maçların durumu önemli.
+
+28
+00:09:45,395 --> 00:10:01,375
+Şimdi kullandığımız yazmaç gruplarına baktığımız zaman 3 farklı grubumuz var. Bunlardan bir tanesi genel amaçlı yazmaçlar. Genel amaçlı yazmaçlar temel olarak yapacağımız herhangi bir işlemde kullanabileceğimiz yazmaçlar gibi düşünebilirsiniz. Yani biz bunlara erişebiliyoruz. Bunlara.
+
+29
+00:10:01,875 --> 00:10:21,235
+kod içerisinde erişip bir takım manipülasyonlar yaptığımızda aslında istediğimiz görevi yerine getirebiliriz. Bir tanesi hariç, bir tanesine özel dikkat etmemiz lazım. SP yazmacı. Ama onun dışında bunlar genel amaçlı yazmacılar zaten. Adı üzerinde genel amaçlı yazmacılar. Şimdi birazcık şöyle büyütüp yaklaşalım.
+
+30
+00:10:24,628 --> 00:10:42,468
+Burada AX dediğimiz yazmaç bizim açımızdan akümülatör yazmacı olarak karşılaştığımız yazmaçtı. Hatırlayacak olursanız. Akümülatör olarak isimlendiriyorduk. Akümülatör olmasının amacı bu 16 bitlik akümülatör. AL'yi de 8 bitlik akümülatör olarak isimlendirebiliriz.
+
+31
+00:10:46,131 --> 00:10:56,672
+Akümülatör olmanın özelliği neydi? Akümülatör için özel donanım, özel instruction'lar var. Aynı işlemi AX veya AY üzerinden yaparsam daha hızlı gerçekleşiyor.
+
+32
+00:11:01,268 --> 00:11:24,067
+az sayıda bit ile ifade edilen komutlar karşımıza çıkıyor. Genel kullanımı, ismi akümülatör olmakla birlikte genel kullanımı data işlemlerinde, veri işlemlerinde kullanabileceğimiz bir yazmaçtı hatırlayacak olursanız. Bununla birlikte div, mul gibi işlemlerde gizli operant olarak çalışıyorlardı. Ve ayrıca input, output işlemlerinde
+
+33
+00:11:24,659 --> 00:11:37,439
+varsayılan operant olarak kullanılıyordu. Yani bir input output işlemi yapmak istediğimizde, IO cihazına bir şey yazmak, okumak istediğimizde, AX ve AL'den başka bir yazmaçla bunları gönderemiyoruz veya okuyamıyoruz.
+
+34
+00:11:38,439 --> 00:11:43,319
+IO kısmı özellikle arkadaşlar mikro işlemciler dersinde.
+
+35
+00:11:43,892 --> 00:11:54,432
+çokça IO komutu üzerinde duracağız. Ama bu assembly tarafında, alt seviye programlama tarafında IO'nun sadece IO komutlarının sadece bir giriş işini yapıyor olacağız.
+
+36
+00:11:55,392 --> 00:12:11,232
+BX yazmacına baktığımız zaman ismi Base Register'da hatırlayacaksınız. Base Register dediğimiz kısım aslında bir tablo gibi düşünelim. Hafıza alanında bir tablo oluşturduğumuzu düşünelim. Bir array olabilir veya bir matris olabilir.
+
+37
+00:12:11,731 --> 00:12:18,231
+Bu tablonun başlangıcını gösteren değer BX olacak şekilde çalışıyor, bir fonksiyon gösteriyor.
+
+38
+00:12:19,111 --> 00:12:22,652
+Ama BL ve BH'in böyle bir fonksiyonu yok, sadece BX'in var.
+
+39
+00:12:23,091 --> 00:12:27,251
+Bunun anlamı şu, biraz sonra göreceğiz dersimizde.
+
+40
+00:12:27,331 --> 00:12:32,432
+Köşeli parantez içerisinde biz hafıza gözlerine erişebiliyor olacağız.
+
+41
+00:12:32,551 --> 00:12:35,872
+Buraya yazdığımız değere göre 10 numaralı gözle erişebiliyor olacağız.
+
+42
+00:12:36,371 --> 00:12:41,371
+Köşeli parantez içerisinde sadece BX yazabiliriz. BH ve BL yazamayız bu grupta.
+
+43
+00:12:42,091 --> 00:12:46,991
+Yine köşeli parantez içerisinde SE, DI kullanılabilir.
+
+44
+00:12:47,672 --> 00:12:56,031
+Veya BX, SE, DI'nin herhangi bir varyasyondaki toplamı ve sabit bir değer, yine köşeli parantez içerisinde sabit bir değer,
+
+45
+00:12:56,031 --> 00:13:00,091
+bir hafıza gözünü işaret etmek açısından kullanılabiliyor olacak.
+
+46
+00:13:00,331 --> 00:13:03,131
+Ama AX'i köşeli parantez içerisinde kullanamayız.
+
+47
+00:13:03,456 --> 00:13:09,956
+BL, BH, AH, işte D, L, D, H gibi bir 8 bitlik yazmacı köşeli parantez içerisinde kullanamayız.
+
+48
+00:13:10,956 --> 00:13:13,936
+CX'i benzer şekilde kullanmamız mümkün değil.
+
+49
+00:13:14,256 --> 00:13:18,235
+Dolayısıyla BX'e baktığımız zaman BX yazmacının amacını ne olarak ifade edebiliriz?
+
+50
+00:13:19,475 --> 00:13:23,655
+Temelde yine genel amaçlı bir yazmacı olduğu için veri işlemlerinde kullanabiliriz.
+
+51
+00:13:30,707 --> 00:13:37,187
+bir toplu verinin başlangıç adresini işaret etmek adına bu kullanılıyor olacak.
+
+52
+00:13:38,487 --> 00:13:42,647
+SI ve DI yazmaçlarına baktığımızda bunlar Source Index
+
+53
+00:13:42,647 --> 00:13:46,987
+ve Destination Index
+
+54
+00:13:51,091 --> 00:13:54,812
+şeklinde isimlendirdiğimiz iki yazmaçta bir soru var galiba bakalım.
+
+55
+00:13:58,644 --> 00:14:22,104
+Belki bunu anlatmadık. Tekrar söyleyelim. Şimdi yazmaç, register dediğimiz şey bir bellek elemanı aslında. Bellek elemanı bilgisayar içerisindeki bellek birimlerini veya hafıza birimlerinin hiyerarşisinden bahsedebiliriz. Bu hiyerarşi çerçevesinde neler var diye bakacak olursak şöyle şuraya çizmeye çalışayım bunu. Şöyle bir saniye.
+
+56
+00:14:30,932 --> 00:14:33,892
+Şimdi bu tarafta mikro işlemcinin kendisi var.
+
+57
+00:14:34,692 --> 00:14:35,771
+Biraz büyük çizelim.
+
+58
+00:14:39,792 --> 00:14:44,351
+İşte bu tarafta başka bir birim var, ön bellek.
+
+59
+00:14:46,312 --> 00:14:49,552
+Hatta ön belleğin belki bir kısmını şöyle yapsak bile olur.
+
+60
+00:14:50,292 --> 00:14:51,372
+Şöyle çizsek bile olur.
+
+61
+00:14:57,491 --> 00:14:59,271
+Sonra ana hafıza var.
+
+62
+00:15:02,707 --> 00:15:03,947
+Main Memory var.
+
+63
+00:15:06,067 --> 00:15:07,227
+Sonra da
+
+64
+00:15:07,227 --> 00:15:10,947
+ikinci depo birimleri var.
+
+65
+00:15:14,451 --> 00:15:35,391
+İşte buradan kastedilen RAM, buradaki Cache ismi. Burada da işte diskler falan var. Hard disk, CD falan olabilir. Mikro işlemci içerisindeki bulunan hafıza birimlerinin ismi ise arkadaşlar, bunlar yazmaç veya register İngilizcesi.
+
+66
+00:15:36,851 --> 00:15:43,532
+Şimdi bunlara baktığımız zaman maliyet açısından üretim maliyeti, birim üretim maliyeti bu tarafa doğru artıyor.
+
+67
+00:15:50,355 --> 00:15:52,775
+Bu tarafa doğru giderken ise
+
+68
+00:15:52,775 --> 00:15:57,895
+buna ne diyelim?
+
+69
+00:15:59,336 --> 00:16:01,475
+Hafıza birim adedi.
+
+70
+00:16:05,011 --> 00:16:12,771
+veya hafıza kapasitesi diyelim. Herhangi bir mikro işlemci sistemde genel olarak hafıza kapasitesi bu tarafa doğru artıyor.
+
+71
+00:16:12,891 --> 00:16:20,011
+Yani mesela şöyle düşünün, işte 10 terabaytlık veya petabaytlık diskler olabilir veri tutmak için.
+
+72
+00:16:20,491 --> 00:16:24,971
+RAM'ler ise işte 64 GB, işte 16 GB mertebelerinde.
+
+73
+00:16:25,571 --> 00:16:28,691
+Cache'ler işte kilobayt belki megabayt mertebelerinde.
+
+74
+00:16:32,628 --> 00:16:57,168
+işte 64 bitlik veya işte kaç taneyse, her biri 64 bit olan işte yüzden daha az sayıda yaz maç var. Şimdi üretim maliyeti bu tarafa doğru arttığı için bunlardan çok sayıda kullanmak mümkün olmuyor. Neticede bir mühendislik yapıp bunun işte alınabilir bir şey olması lazım. Ticari bir ürün olabilmesi açısından. Dolayısıyla bellek.
+
+75
+00:16:57,471 --> 00:17:10,592
+belge hiereççisi içerisinde yazmaç dediğimiz yapı, mikro işlemcinin içerisine yer alan, tek tek adreslenebilen, yani ismiyle adreslenebilen, ismiyle adreslenebilenden kasıt, ismiyle erişilebilen.
+
+76
+00:17:14,259 --> 00:17:15,400
+Hafıza birimleri.
+
+77
+00:17:19,099 --> 00:17:27,940
+Bir mikro işlemcinin içerisinde neler var? Mikro işlemcinin içerisine baktığımız zaman, işte bu şekilde bellek birimleri var, ki bunlar yazmaç.
+
+78
+00:17:29,480 --> 00:17:31,000
+Bir kontrol birimi var.
+
+79
+00:17:34,000 --> 00:17:36,059
+İşte alusu vardı hatırlayacak olursanız.
+
+80
+00:17:37,619 --> 00:17:41,400
+Ve içeride bunlar arasındaki bağlantıyı sağlayan bir takım yollar var.
+
+81
+00:17:42,195 --> 00:17:56,895
+Dolayısıyla bir mikro işlemcinin iç yapısı bu, kabaca. Bu iç yapı içerisindeki yazmaç ve register da ismiyle erişilebilen ve adreslenebilen yüksek hızlı hafıza birimleri olarak ifade edebileceğimiz yapılar.
+
+82
+00:17:59,275 --> 00:18:04,476
+Biz de SMD dili içerisinde bunlara isimleriyle erişebiliyor olacağız.
+
+83
+00:18:06,036 --> 00:18:29,896
+Source Index ve Destination Index'teydik. Bunların anlamı ne diye bakacak olursak. Nasıl ki BX bir tablonun veya array'in başlangıç adresini tutuyorsa, SI ve DI da burada bir gözü indislemek için kullanıyor. Yani başlangıçtan itibaren ne kadar ötede bunu ifade etmek için kullanıyor. O zaman ben bir hafıza gözü içerisindeki tutulmuş olan tablonun belirli bir gözüne erişmek istersem.
+
+84
+00:18:30,644 --> 00:18:54,784
+BX artı SEI şeklinde buna erişebilirim. Yani BX'de başlayan tablonun SEI indisindeki veri şeklinde bunu düşünebilirsiniz. Burada SEI yerine DI da yazılabilir. Dolayısıyla bunlar biraz indeks yazmacı. CX'e bakacak olursak bu count register olarak tanımlanıyordu. Count register'dan kastedilen ise, kaç kişi olmuş? 47, çok az kişi olmuş.
+
+85
+00:18:55,988 --> 00:19:00,648
+Gelmiyor insanlar. Şuradan gönderebilmiş miyiz? Mesajı da göndermişiz ama.
+
+86
+00:19:04,248 --> 00:19:16,028
+Count register, bu döngüsel işlemlerde kullanılan bir yazmaç. Genel olarak veri işlemlerinde kullanabilirim. Evet ama özel olarak, spesifik olarak döngü işlemlerinde kullanabildiğim bir yazmaç.
+
+87
+00:19:16,827 --> 00:19:22,268
+CX ve CL'yi özel olarak belirli döngü işlemlerinde kullanabiliyorum. DX adı üzerinde data.
+
+88
+00:19:22,771 --> 00:19:35,011
+register. Veri işlemlerinde kullanabilirim. Ama tıpkı AX'de olduğu gibi, div ve mul işlemlerinde gizli operant ve IO işlemlerinde varsayılan operant olarak kullanılıyor.
+
+89
+00:19:35,891 --> 00:19:43,031
+SP, stack pointer. Hatırlayacak olursanız. BP de base pointer.
+
+90
+00:19:45,652 --> 00:19:49,872
+Stack pointer ve base pointer bunlar yığınla ilgili yazmaçlardı.
+
+91
+00:19:50,072 --> 00:19:51,731
+Yığınlarla ilgili yazmaçlardı.
+
+92
+00:19:52,231 --> 00:19:58,251
+Temel amacımız burada SP ile mikro işlemci tarafından otomatik olarak güncellenen bir yazmaç SP.
+
+93
+00:19:58,251 --> 00:20:10,251
+Herhangi bir yığın işlemi yaptığımda ne mesela push komutu çalıştırdığımda, pop komutu çalıştırdığımda, call fonksiyonu çalıştırdığımda, interrupt fonksiyonu çalıştırdığımda,
+
+94
+00:20:10,612 --> 00:20:28,572
+Ondan sonra return fonksiyonu çalıştırdığımda gibi, yığınla ilgili herhangi bir işlemi çalıştırdığımda, yığındaki en üstteki anlamlı veriyi göstermek adına stack pointer ilgili bir değeri alıyor arkadaşlar. Yani otomatik olarak güncelleniyor.
+
+95
+00:20:30,711 --> 00:20:32,251
+İlgili değeri alıyor.
+
+96
+00:20:33,932 --> 00:20:34,612
+BP de
+
+97
+00:20:34,991 --> 00:20:48,871
+Yine yığınla ilgili bir yaz maç. Ama bu SP'den farklı. SP'yi mikro işlemci değiştirirken BP'yi değiştirmiyor. Dolayısıyla yığın içerisinde, şimdi SP artacak, azalacak ya.
+
+98
+00:20:49,215 --> 00:21:17,175
+Ben belirli bir anda yığın içerisindeki, belirli bir offsetteki veriye erişmek istiyorsam, bana o an için sabit bir referans lazım, bir çapa lazım. Bu çapayı BP ile oluşturuyoruz. O anda, o anlık olarak SP değerini BP'ye kopyalıyorum. Artık yığında bir şeyler daha eklense bile hiç önemli değil. Ben bu sabit referansıma göre ne kadar geride aradığım veri varsa bunu BP eksi bir şey deyip aradığım veriye erişiyorum her zaman için. Kullanımı bu şekilde.
+
+99
+00:21:17,215 --> 00:21:31,875
+Bunun haricinde arkadaşlar ikinci grup yazmaçlarımız yığın yazmaçlarıydı. Şimdi yığın yazmaçları ve bu şekilde genel amaçlı yazmaçları bir arada gördüğümüz zaman şunu hatırlamamız lazım. Hemen tekrar şurayı açalım.
+
+100
+00:21:44,372 --> 00:21:45,451
+Şunu hatırlayalım.
+
+101
+00:21:46,892 --> 00:21:52,912
+8086 için 16 bitlik yazmaçları var demiştik.
+
+102
+00:21:54,231 --> 00:21:58,172
+Fakat 20 bit adres yolu var demiştik.
+
+103
+00:21:59,472 --> 00:22:08,672
+Dolayısıyla burada ortaya çıkan problem 16 bitlik yazmaçları kullanarak 20 bitlik bir adres yolunu nasıl oluşturabiliriz? Bu problem vardı.
+
+104
+00:22:09,652 --> 00:22:33,052
+Burada optimizasyon yapılıp şu sonuca varılmış, işte Intel tarafından. Demişler ki, biz yazmaçları, veri erişiminde kullanacağımız yazmaçları, segment yazmaç grubu ve offset yazmaç grubu diye ikiye ayıralım. Her birisi işte 16 bitlik yazmaçlar zaten. Bizim kullanabileceğimiz bütün yazmaçlar 16 bitlik bu arada maksimum kapasite olarak.
+
+105
+00:22:38,451 --> 00:22:43,632
+Şimdi bu durumda 20 bitlik adresi oluşturmak adına şunu önermişler.
+
+106
+00:22:43,791 --> 00:22:54,351
+Segment grubundan kullanacağımız yazmacı 10 hexadesimalle çarparsak, yani bunu da hexadesimalle olarak yazmışsak sonuna bir tane sıfır koymak demek.
+
+107
+00:22:54,351 --> 00:23:01,172
+Bunu offset yazmacıyla toplayalım ve bu şekilde 20 bitlik bir değer oluşturalım dermiş.
+
+108
+00:23:02,132 --> 00:23:09,471
+Segment grubu yazmaçlar arkadaşlar, stack segment, code segment, data segment ve extra segment olarak isimlendiriliyor.
+
+109
+00:23:09,471 --> 00:23:17,512
+Ve önemli bir nokta, herhangi bir segment yazmacı sadece belirli tip offset yazmaçlarıyla çalışıyor, başkalarıyla çalışamaz.
+
+110
+00:23:18,192 --> 00:23:22,471
+Örneğin data ve extra segment grubu, bunlar veriye ilişkin...
+
+111
+00:23:23,023 --> 00:23:37,864
+segment veya kodumuz içerisinde değişkenlerimizi tanımladığımız veri kesimine ilişkin bir başlangıç adresini gösteren bir yazmaç grubu. Bunlar sadece BX, SE ve DI ile çalışıyor.
+
+112
+00:23:40,364 --> 00:23:42,943
+BX, SE ve DI ile çalışıyor.
+
+113
+00:23:44,703 --> 00:23:49,884
+Kod segment dediğimiz kesim yazmacı ise sadece instruction pointer ile
+
+114
+00:23:50,223 --> 00:24:16,023
+olarak isimlendirdiğimiz bir yazmaçla çalışıyor. Biraz sonra söyleyeceğiz onu. Bir de stack segment var. Bu da base pointer veya stack pointer yazmaçlarıyla birlikte çalışıyor. Yani stack segment IP ile çalışmıyor kesinlikle. Şimdi şu bize neyi gösteriyor? Bir işte veri kesimi, veri kesiminde bir tanımladığımız değişkenin adresine.
+
+115
+00:24:19,763 --> 00:24:25,143
+bu şekilde oluşturabiliriz. Bu bize neyi sağlıyor? Bir sonraki adımda
+
+116
+00:24:30,644 --> 00:24:32,003
+çalıştırılacak olan
+
+117
+00:24:32,003 --> 00:24:37,084
+komutun adresini sağlıyor.
+
+118
+00:24:39,144 --> 00:24:44,803
+Bu ikili bize ne sağlıyor? Stack pointer ve base pointer'ın stack segmentle kullanılması.
+
+119
+00:24:45,403 --> 00:24:47,723
+Bu da yığın işlemlerinde, yığında,
+
+120
+00:24:49,844 --> 00:24:52,543
+işte yığının en üstünü gösteriyor, öyle diyelim.
+
+121
+00:24:56,276 --> 00:24:58,036
+en üst adresini gösteriyor.
+
+122
+00:25:01,296 --> 00:25:08,796
+Dolayısıyla bunları ikili bir şekilde kullanarak az önce bahsettiğimiz 20 bitlik adres değerlerini oluşturabiliyor oluyoruz.
+
+123
+00:25:09,056 --> 00:25:11,616
+Bu önemli bir nokta. Bunu tekrar hatırlamış olalım.
+
+124
+00:25:13,236 --> 00:25:18,376
+İşte buradaki bahsedeceğimiz yığın yazmaçları doğrudan bunlarla ilişkili.
+
+125
+00:25:19,028 --> 00:25:44,528
+Bu noktada aslında yazacağımız herhangi bir assembly kodunun temel olarak üç parçadan oluşacağını söylemiş olduk. Bunu şimdi açıkça da ifade edelim. Bu bizim yazacağımız bir assembly kodu olsun. Bu üç parçadan oluşacak. Bunlardan bir tanesi bizim verilerimizi takladığımız data segment olacak. Bir tanesi yürütülecek olan kodları saklayan.
+
+126
+00:25:45,491 --> 00:25:48,091
+kod segment olacak. Bir de
+
+127
+00:25:48,091 --> 00:25:58,871
+çeşitli dallanmalarda veyahut da fonksiyon çağırmalarda kullanacağımız bir yığın alanı olacak. Yığın hafıza alanı. Bu da
+
+128
+00:25:58,871 --> 00:26:06,891
+stack segment olarak isimlendirecek. Dolayısıyla bizim yazacağımız programlar bu üçünü içerecek. Bu üç alanı içerecek.
+
+129
+00:26:07,955 --> 00:26:24,955
+Burada DS ve ES ikisi de veri alanında farklı alanları göstermek için kullanılan yazmaç grupları. Dolayısıyla ikisi de veriye ilişkin olduğunu hatırlatmış olalım. Dolayısıyla burada kesim yazmaçlarını da bu şekilde hatırlatmış olduk.
+
+130
+00:26:32,211 --> 00:26:35,832
+Şimdi bir de Instruction pointer'ımız var demiştik. Instruction pointer
+
+131
+00:26:43,635 --> 00:27:09,135
+Instruction pointer temelde bir offset yazmacı. Bu arkadaş bir offset yazmacı. Offset tipinde bir yazmac. Bunun birlikte kullanıldığı segment yazmacı, kod segment. Bu ikisi birlikte sıradaki yürütülecek olan kodun Instruction'ın adresini gösteriyor. IP değeri otomatik olarak mikro işlemci tarafından güncelleniyor arkadaşlar. Dolayısıyla örneğin sıradaki yürüteceğimiz komut 3 byte ise
+
+132
+00:27:10,003 --> 00:27:15,583
+o komut yürütüldükten sonra IP değeri 3 arttırılıyor, otomatik olarak arttırılıyor.
+
+133
+00:27:17,003 --> 00:27:20,583
+Dolayısıyla bu yazmacı da hatırlamış olalım.
+
+134
+00:27:21,803 --> 00:27:23,303
+Şimdi bir de bayraklarımız vardı.
+
+135
+00:27:23,423 --> 00:27:27,663
+Bayrak tarafında isimleriyle birlikte yazalım.
+
+136
+00:27:27,663 --> 00:27:29,624
+İlki carry flag.
+
+137
+00:27:30,443 --> 00:27:37,343
+Bu işaretsiz işlemlerde taşma varsa.
+
+138
+00:27:38,195 --> 00:28:03,855
+Tamam mı? İşaretsiz sayılarla ilgili yaptığımız işlemlerde taşma varsa carry flag bir değerini alıyor. Parity flag, hızlıca bahsetmek gerekirse ismini yazalım. Parity. Parity flag temelde şu şekilde fonksiyon gösteriyor. Bunun odd parity veya even parity versiyonları var. Eğer odd parity kullanıyorsak, mesela 8 bitlik bir değerimiz olsun.
+
+139
+00:28:05,364 --> 00:28:07,364
+Şöyle şurada göstereyim.
+
+140
+00:28:07,364 --> 00:28:10,251
+Sekiz bitlik bir değerimiz olsun.
+
+141
+00:28:14,195 --> 00:28:32,215
+Eğer parity ile bunu göndereceksek veya buna ilişkin bir parity hesabı yapacaksak, şurası parity bitimiz, burası datamız. Eğer odd parity kullanıyorsak şu şekilde çalışacak arkadaşlar. Örneğin datamız 1, 0, 1, 0, 1, 1, 1, 1 şeklinde bir veri olsun.
+
+142
+00:28:33,036 --> 00:28:38,915
+Buradaki data kısmında birilerin sayısına bakıyoruz. 1, 2, 3, 4, 5, 6 tane 1 var.
+
+143
+00:28:39,571 --> 00:28:59,831
+Kural şu, eğer odd parity kullanıyorsak, odd parity kullanıyorsak, parity bitiyle birlikte birlerin sayısı tek olmalı. O zaman odd parity'ye göre buradaki parity hesaplanan parity bitinin değeri 1 oluyor arkadaşlar. Parity bitiyle birlikte sayalım, 1, 2, 3, 4, 5, 6, 7 tane 1. Tek sayıda 1 sağladı.
+
+144
+00:29:00,307 --> 00:29:07,367
+Aynı veri için çift pariti hesaplayalım. Yani 1, 0, 1, 0, 1, 1, 1, 1 ve değeri için.
+
+145
+00:29:09,668 --> 00:29:14,807
+Yine pariti hesabı yapacağız. Ama bu sefer even pariti kullanıyorsak ne olacak?
+
+146
+00:29:15,008 --> 00:29:23,567
+Birlerin sayınızı çift olmalı. Pariti bitiyle birlikte, data ve pariti bitleriyle birlikte toplam birlerin sayısı çift olmalı.
+
+147
+00:29:24,403 --> 00:29:32,044
+1, 2, 3, 4, 5, 6 var zaten. Dolayısıyla burada bu hesaplanan even parity durumunda hesaplanan değer 0 oluyor.
+
+148
+00:29:32,584 --> 00:29:35,624
+Mesela bu nerede kullanılıyor? Seri haberleşmede kullanılıyor genel olarak.
+
+149
+00:29:36,884 --> 00:29:42,243
+Karşı tarafa veriyi gönderirken yanında bir de kendi hesapladığımız parity'yi gönderiyoruz.
+
+150
+00:29:43,124 --> 00:29:49,844
+Karşı tarafta gelen veriden kendi parity'sini hesaplıyor. Benim gönderdiğim parity ile kendi hesapladığını karşılaştırıyor.
+
+151
+00:29:51,667 --> 00:30:03,028
+şunu varsayıyor, bozulma yoktur diye varsayıyor. Ama bir farklılık varsa o gelen veriyi çöpe atıyor. Çünkü orada bir bozulma olmuş, bu anlaşılıyor. Paritinin anlamı ve kullanımı bu şekilde.
+
+152
+00:30:04,427 --> 00:30:06,627
+Oksalary flag, bir sonraki.
+
+153
+00:30:10,612 --> 00:30:13,432
+auxiliary flag temelde şöyle düşünebiliriz arkadaşlar.
+
+154
+00:30:17,587 --> 00:30:18,539
+Şimdi
+
+155
+00:30:26,132 --> 00:30:36,872
+8086 native olarak 8 bit ve 16 bitlik işlemleri destekliyor. Ne demek bu? 8 bitlik çarpma yapabilir, bir de 16 bitlik çarpma yapabilir.
+
+156
+00:30:37,811 --> 00:30:45,791
+Auxiliary flag şu işe yarıyor, daha küçük veri gruplarında, yani 4 bitlik veri grupları arasında
+
+157
+00:30:46,996 --> 00:31:09,796
+herhangi bir işlem sonucunda elde taşması var mı yok mu bunu kontrol ediyor. Örneğin ben burada 16 bitlik iki tane sayıyı, bu 32 bit mi oldu? Yok bunlar 4, 8, 16 bitlik bir binary sayım var burada. İlk 4 bitinle ilgili bir toplama işlemi yaptığım zaman bunu farklı bir sayıyla toplama işlemi yaptığım zaman örneğin
+
+158
+00:31:10,195 --> 00:31:35,496
+İlk 4 bitlik gruptan, ikinci 4 bitlik bir duruma bir elde var mı yok mu? Bu auxiliary flag ile tutuluyor. Benzer şekilde diğer bir gruptan, yine buradan da 4 bitlik durum, benzer bir şey burası için geçerli. Bu 4 bitlik kısımlardan elde olup olmadığını ifade etmek adına, yani hangi çerçevede yapıyorsak 8 bitlik veya 16 bitlik çerçevede, bu şekilde 4 bitlik kısımdan
+
+159
+00:31:35,839 --> 00:32:01,480
+bir elde alıp olmadığını tutan bir bayrak. Bu daha çok BCD işlemleriyle alakalı. O yüzden o konu geldiğinde tekrar bakarız onlara. Bir başka bayrağımız zero flag. Zero flag işlem sonucu sıfırsa, işlem sonucu sıfır ise bir değerini alır. Bu sign flag.
+
+160
+00:32:02,579 --> 00:32:09,579
+Sign flag zaten TUS komplement kullandığımıza göre 8 bit veya 16 bitlik değerin en yüksek anlamlı biti direkt sign flag'i oluşturuyor.
+
+161
+00:32:10,339 --> 00:32:11,459
+TF trap flag.
+
+162
+00:32:13,539 --> 00:32:15,459
+Trap flag de temelde...
+
+163
+00:32:22,675 --> 00:32:26,175
+Yani bir takım bilgi soruları da sorarız.
+
+164
+00:32:27,115 --> 00:32:29,836
+Ama temel olarak assembly kodları yazacağız.
+
+165
+00:32:29,995 --> 00:32:33,015
+Örneğin, nasıl diyeyim?
+
+166
+00:32:34,995 --> 00:32:38,215
+Modüler programlamaya yönelik olarak bir işlem yaptıracağız.
+
+167
+00:32:38,336 --> 00:32:42,015
+Burada ana yordamı ve yardımcı yordamı yazdırma isteyeceğiz.
+
+168
+00:32:42,755 --> 00:32:45,475
+Temel olarak bu şekilde olacak ama bunları da bilmek gerekiyor.
+
+169
+00:32:45,575 --> 00:32:46,955
+Bunları niçin bilmek gerekiyor?
+
+170
+00:32:47,359 --> 00:33:04,799
+Örneğin, biraz sonra komutlara bakacağız. Komutlara baktığımız zaman, mesela adres üzerinden, memori adresi üzerinden değer alabilir diye göreceğiz. Ama memori değer üzerinden, şunu bilmeliyiz ki, köşeli parantez içerisinde memori adresleri gösteriliyor ve köşeli parantez içerisinde sadece BX yazılabilir. Eğer bunu bilmiyorsak,
+
+171
+00:33:04,819 --> 00:33:17,019
+Memory adresinden bir değer okumak istediğimiz zaman DX de bunu okumaya çalışabiliriz. İşte bu da bir hatalı komut olmuş olacak. Dolayısıyla SM'li komutlarını doğru kullanabilmek adına da bunlara ihtiyaç var.
+
+172
+00:33:18,159 --> 00:33:29,179
+Trap flag'e geldiğimiz zaman trap flag temelde şu andan bilmiyorum onu nasıl yapacağımızı. Test mi, klasik mi? Ona sonra karar vereceğiz.
+
+173
+00:33:29,683 --> 00:33:54,624
+Trap flag ile ilgili olarak şöyle bir durum var. Bu daha çok debug amacıyla kullanılıyor. Ne demek bu? Eğer trap flag bir olarak set edilmişse, eşittir bir olarak set edilmişse, her bir instruction'dan sonra belirli tipte bir kesme oluşuyor. Ben o kesme içerisinde gidip yaz maçları ekranda gösterebilirim. Bu ne demek? Adım adım kodu çalıştırmaya karşılık gelen bir senaryo aslında.
+
+174
+00:33:55,284 --> 00:33:57,364
+IF Bayrı Interrupt Flex
+
+175
+00:34:01,332 --> 00:34:20,032
+Interrupt flag de eğer IF eşittir 1 olarak set edilmişse bu donanımsal kesmeler enable edilmiş demek. Yani dışarıdan herhangi bir donanım aracından bize gelen kesme istekleri değerlendirilebilir anlamına geliyor. DF dediğimiz Direction flag de.
+
+176
+00:34:22,739 --> 00:34:34,779
+Bu daha çok Katar işlemlerinde kullanılıyor. Katar işlemi düşük adresten yüksek adrese doğru mu yoksa yüksek adresten düşük adrese doğru azalta azalta veya arttıra arttıra mı yapılacak? Onu belirleyen bir yazmaç.
+
+177
+00:34:35,539 --> 00:34:41,739
+OF burada önemli. OF ve CF, carry flag ve overflow flag bizim için önemli arkadaşlar.
+
+178
+00:34:42,979 --> 00:34:44,239
+Overflow bayrağı.
+
+179
+00:34:45,780 --> 00:34:58,800
+Overflow'da arkadaşlar, bakın, carry nasıl ki işaretsiz işlemlerde taşmayı belirtiyorsa, Overflow'da, dikkat edin, işaretli, işaretli sayı işlemlerinde.
+
+180
+00:35:03,380 --> 00:35:09,859
+işaretli sayı işlemlerindeki taşmayı, overflow bayrağı tutmuş oluyor. Tamam mı? Bu çok önemli bir nokta.
+
+181
+00:35:12,220 --> 00:35:14,819
+Şimdi birazcık şunu küçülterek devam edelim.
+
+182
+00:35:20,692 --> 00:35:27,692
+Bundan bahsettik, bahsettik, bahsettik, evet.
+
+183
+00:35:37,139 --> 00:35:42,899
+Şimdi bir de diğer mikro işlemciler de, daha güncel ve yeni işlemcilerdeki bu durumlar nasıl değişiyor?
+
+184
+00:35:43,239 --> 00:35:46,259
+Şimdi bizim dersimiz kapsamındaki 16 bitlik bir mikro işlemci.
+
+185
+00:35:46,319 --> 00:35:52,960
+Peki 32 bitlik bir mikro işlemci için, mikro prosesör için yazmaçlar nasıl tanımlanıyor ve isimleniyor?
+
+186
+00:35:53,079 --> 00:35:58,439
+Bu 32 bitlik yazmaçlar, 8386'dan itibaren mevcut olan bir durum.
+
+187
+00:35:58,931 --> 00:36:21,111
+Burada E2 ile birlikte Extended AX gibi yazmaç grupları tanımlanmış. Yani bir yazmaç, 32 bitlik bir yazmacı düşünecek olursak, bunu şöyle genişliğini 32 bit olarak verelim. Bunun düşük anlamlı ve yüksek anlamlı 16 bitlik kısımları var. Biz bunlardan sadece düşük anlamlı 16 bitlik kısmı erişebiliyoruz.
+
+188
+00:36:25,940 --> 00:36:29,840
+Bu kısmı AX. Hatta bunu çizerken şöyle çizsem daha iyi olacaktı.
+
+189
+00:36:33,039 --> 00:36:40,420
+AX yazmacımız bu. Bunun düşük anlamlı 16 bitlik kısmına ismen erişebilirim. Bu AX olarak isimlendiriliyor.
+
+190
+00:36:41,020 --> 00:36:48,079
+Bu AX'in de kendi içerisindeki düşük anlamlı, yüksek anlamlı 8 bitlerine tek tek erişebilirim. AL ve AH olarak.
+
+191
+00:36:48,692 --> 00:37:02,572
+Şu en baştaki 32 bitlik, bu 16 bitlik, bunlar 8'er bitlik yazmaçlar yine. Dolayısıyla burada göreceğimiz 32 bitlik yazmaçlarda bir extended kavramıyla birlikte değerler geldiğini görüyoruz.
+
+192
+00:37:03,512 --> 00:37:13,372
+SI ve DI yine kullanılırken 32 bitlik halleriyle kullanılacak. Yani artık 32 bitlik bir mimari de SI veya DI isimli yazmaçlar yok.
+
+193
+00:37:13,372 --> 00:37:15,252
+E, SI, E, DI var.
+
+194
+00:37:17,076 --> 00:37:29,615
+Tamam, bu önemli bir nokta. Çünkü biz size yaptıracağımız uygulamalarda, yani güncel mesela Visual Studio'da bir assembly koduyla Cip kodu arasında bir veri paylaşımı ve fonksiyonelite sağlamanızı isteyeceğiz.
+
+195
+00:37:30,096 --> 00:37:38,516
+Orada 32 bitlik bir program derliyorsanız, program içerisinde hafıza gözlerine erişirken köşeli parantez içerisinde S, I yazamıyorsunuz.
+
+196
+00:37:38,516 --> 00:37:44,336
+Onu söylemek istedim. Veya köşeli parantez içerisinde BX yazamayacaksınız bu sefer.
+
+197
+00:37:44,916 --> 00:37:46,476
+Şunu çarpı atalım.
+
+198
+00:37:47,256 --> 00:37:53,736
+EBX yazmanız gerekecek veya köşeli parantez içerisinde ESI gibi bir şey yazmanız gerekecek.
+
+199
+00:37:53,876 --> 00:37:54,956
+Tamam mı? Bu önemli bir nokta.
+
+200
+00:37:56,176 --> 00:38:00,836
+Yine farklı olarak FS ve GS isimli iki tane daha yazmaç var.
+
+201
+00:38:00,976 --> 00:38:08,376
+Bunlar temel olarak bu protected mode ve virtual mode'a doğru bakan kısımlarda fonksiyon gösteren yazmaçlar.
+
+202
+00:38:08,820 --> 00:38:35,659
+Yani programın çalıştığı hafıza bölgesi sadece ona ayrılacağı için bir tablo üzerinden değerler alınıyor. Adres değerleri, özel adres değerleri o tablo üzerinden alınıyor. O tablolara ilişkin satır değerleri burada FS ve GS yazmaçlarında tutuluyor. Onun dışındaki yazmaçlar Extended'lar hariç, EP'ye de dikkat edelim. Artık IP diye bir yazmaç yok. E-IP var. Extended Instruction Pointer var.
+
+203
+00:38:36,032 --> 00:38:48,311
+diğer yazmaçlar, tanıdığımız yazmaçlar. Bir sonraki aşamada bir de 64 bitlik mikro işlemci için Intel ailesinin isimlendirme nasıl oluyor diye bakabiliriz.
+
+204
+00:38:49,252 --> 00:38:53,311
+Burada genel amaçlı yazmaçlar için temelde...
+
+205
+00:38:54,324 --> 00:39:03,524
+64 bitlik olanlar, başına bir R eki gelerek, RAX olarak veya benzer şekilde RBX, RCX şeklinde isimlendiriliyor.
+
+206
+00:39:03,704 --> 00:39:05,604
+C'yi yazmamışım, yani yazmışım şuradan.
+
+207
+00:39:06,524 --> 00:39:13,064
+Bunun istersek, düşük anlamlı 32 bitine EAX olarak erişebiliyoruz.
+
+208
+00:39:13,492 --> 00:39:25,432
+İstersek bu EAX'in düşük anlamlı 16 bitine AX olarak erişebiliyoruz. İstersek AX'in düşük ve yüksek anlamlı 8 bitlerine AH ve AL olarak erişebiliyoruz.
+
+209
+00:39:25,872 --> 00:39:31,992
+Dolayısıyla 64 bitlik yazmaçların 64 bitlik versiyonları R2 ile birlikte tanımlanmış durumda.
+
+210
+00:39:32,811 --> 00:39:40,492
+Burada ek olarak genel amaçlı yazmaçlar, 8 adet daha genel amaçlı yazmaçlar daha mevcut.
+
+211
+00:39:40,947 --> 00:39:44,947
+Ayrıca günümüzde çeşitli vektör yazmaçları falan var.
+
+212
+00:39:51,315 --> 00:40:12,315
+şeklinde bektörel yazmaçlar da var. Burada ifade edilmemiş. Dolayısıyla 64 bitlik durum içinde bu senaryo söz konusu. Bir de şunu hatırlayalım. 8086 dersimiz kapsamındaki 8086 real modda çalışıyor arkadaşlar. Real mod dediğimiz yapı herhangi bir...
+
+213
+00:40:13,396 --> 00:40:24,496
+program, mesela bizim yazacağımız program, 8086'nın 1 megabyte kapasitesindeki hafıza uzayının herhangi bir noktasına, istediği herhangi bir noktasına erişebilir.
+
+214
+00:40:25,695 --> 00:40:32,556
+Tamam, böyle bir özellik, real mode bunu ifade ediyor. Bunun haricinde diğerlerini geçtim, tamam.
+
+215
+00:40:42,164 --> 00:40:44,764
+kaç kişi olmuşuz bakalım 43'te kalmışız.
+
+216
+00:40:49,780 --> 00:40:51,280
+Böyle yapacağız, kaybolmuş.
+
+217
+00:40:52,820 --> 00:40:57,820
+Şimdi bu haftaki konumuz arkadaşlar, 8086'nın komut yapısı.
+
+218
+00:40:59,079 --> 00:41:03,640
+Bununla ilgili olarak karşılaşacağımız format, şurada ifade edilen format.
+
+219
+00:41:03,760 --> 00:41:08,240
+Biraz daha düzgün bir şekilde anlatmak gerekirse veya farklı bir şekilde anlatmak gerekirse,
+
+220
+00:41:09,240 --> 00:41:10,220
+şöyle şuraya çıkalım.
+
+221
+00:41:11,380 --> 00:41:29,800
+Bizim 8086 instruction setine baktığımızda çeşitli özel kelimeler var. Bu özel kelimeler aslında birer komutu temsil ediyor. Yürütülecek komutları temsil ediyor. Komut grubunun ana ismini temsil ediyor. Mesela bunlar ADD. Şuraya yazalım.
+
+222
+00:41:30,815 --> 00:41:37,875
+INC, INC, MOV gibi adından ne yapacağı anlaşılan kısaltmalar.
+
+223
+00:41:38,095 --> 00:41:40,995
+Mesela ADD komutu toplamaya karşılık geliyor.
+
+224
+00:41:41,175 --> 00:41:48,415
+INC, increment, MOV, MOV, yani veri aktarma, veri taşıma gibi karşılıkları var.
+
+225
+00:41:48,535 --> 00:41:51,895
+Bu tür kısaltmaları arkadaşlar, minemonik deniyor.
+
+226
+00:41:53,576 --> 00:41:58,035
+Dolayısıyla her bir komuta karşılık bir minemonik gösterimimiz olacak.
+
+227
+00:41:58,420 --> 00:42:08,559
+Herhangi bir assembly dilinde, assembly ile ilgili yazılmış bir programa baktığımızda, minemoniklerden ve operantlardan oluşan bir yapı göreceğiz.
+
+228
+00:42:09,059 --> 00:42:15,539
+Biz dersimiz kapsamında Microsoft Assembler kullanacağız.
+
+229
+00:42:23,635 --> 00:42:47,576
+8086, MASM sintaksına göre, şu neyi unutmuşum burada, bu sintaksa göre şu şekilde çalışabilir. Komutların bazıları sıfır operant alıyor. Hiç operant almayan komutlarımız var. Veya bir operant alan komutlarımız var. Ve iki operant alan komutlarımız var. 8086 için sadece bu üç durum geçerli. Bundan dolayı
+
+230
+00:42:47,668 --> 00:43:10,635
+Bu opsiyonel bir durum olduğu için, opsiyonel durumları şöyle curly brace'lerle ifade edeceğim. Şöyle diyeceğim, operant bir virgül. Bu bir opsiyonel durum veya bir başka opsiyonel durum, komple bunların hepsi opsiyonel olabilir. Operant iki. Yani bu durumda...
+
+231
+00:43:10,675 --> 00:43:32,675
+Eğer şu kısımı dediğimiz gibi opsiyonel olarak kullanmadık, burayı kullandık, o zaman minamonik ve tek operant. Yani tek operantlı komutları bu şekilde ifade etmiş olacağız. Eğer iki operant varsa, birinci operant opsiyonu, ikinci operant opsiyonu da aktif yapacağım. Dikkat edin, bu operantlar birbiriyle virgülle ayrılıyor. Tamam mı? Virgülle ayrılıyorlar burada.
+
+232
+00:43:35,603 --> 00:43:45,364
+Bazı durumlar için bu sintaksı bir adım daha ilerletmek gerekirse, bazı durumlarda arkadaşlar, komutların başında bir etiket olduğunu göreceğiz.
+
+233
+00:43:48,563 --> 00:43:55,483
+Etiket veya label olduğunu göreceğiz. Label kullanımı etiketten sonra iki nokta üst üste verilerek kullanılıyor.
+
+234
+00:43:55,903 --> 00:44:01,043
+Her zaman kullanmak durumunda değilim ama bazı durumlarda kullanabiliyoruz, kullanmamız gerekebilir.
+
+235
+00:44:01,824 --> 00:44:03,163
+Onu da opsiyon olarak verdim.
+
+236
+00:44:03,539 --> 00:44:17,580
+Veyahut da bir yorum satırı yazmak istiyoruz. Yorum satırını yazabilmek için de arkadaşlar noktalı virgülden sonra herhangi bir satırda noktalı virgülden sonra yazacağım her şey yorum olarak değerlendiriliyor.
+
+237
+00:44:17,580 --> 00:44:25,880
+Tamam mı? Yorum olarak değerlendiriliyor. Dolayısıyla etiket kullanımı nerede geçerli? Örneğin şöyle bir komut yürütelim.
+
+238
+00:44:30,835 --> 00:44:56,695
+Sonra increment SE dedik. Sonra CMP, işte A1 dedik. Şu da A1 etiketi olsun. Burada bir sonsuz döngü oluşturduk. Bakın, yukarıdan geldi kod, buraya girdi, toplama işlemi yaptı, SEI'yi arttırdı, sonra tekrar buraya döndük. Yine kaldığı yerden toplamaya devam ediyor. Sürekli olarak toplamaya devam ediyor. Bu etiket kullanımının karşılığı bu şekilde.
+
+239
+00:44:57,300 --> 00:45:04,099
+En genel anlamda bir komutu da görmek istersek şunu genişletelim. İşte A1 dedik, etiket koyduk.
+
+240
+00:45:05,219 --> 00:45:11,019
+Add dedik, AX virgül, SI dedik, şuraya da noktalı virgül koyduk ve yorumumuzu yazıyoruz.
+
+241
+00:45:12,840 --> 00:45:20,559
+AX üzerinde toplama. Bu da yorum satırı olarak değerlendirilen kısım.
+
+242
+00:45:23,443 --> 00:45:39,124
+göreceğimiz instruction sintaksı bu şekilde arkadaşlar. En genel anlamda bu şekilde. Burada onu ifade ediyor zaten. Temel olarak bahsetmek gerekirse.
+
+243
+00:45:39,827 --> 00:45:47,307
+8086'da hiç operant almayan komutlar var, tek operant alan komutlar var veya iki operant alan komutlar var.
+
+244
+00:45:47,847 --> 00:45:56,008
+Üç operantlı bir durum 8086 için yok ama 8086'nın üst serilerinde üç operantlı instruction'lar da var.
+
+245
+00:45:56,008 --> 00:46:01,148
+Bizim ilgilendiğimiz ders kapsamındaki 8086'da üç operantlı bir komut yok.
+
+246
+00:46:02,324 --> 00:46:16,943
+Genel olarak işlemler sağdan sola doğru tanımlı. Bunun anlamı ne? Bunun anlamı şu. Mesela ADD komutu için bakalım. Biraz farklılaştıralım onu. ADD AX, BX diyelim.
+
+247
+00:46:18,344 --> 00:46:25,784
+Burada şu bizim birinci operant olarak isimlendirdiğimiz yapı. Şu da ikinci operant.
+
+248
+00:46:27,668 --> 00:46:52,988
+Burada yapılacak işlem ve atama, nereye atama yapılacak? Şu şekilde belirleniyor. Sağdan sola dönemem karşılığı şu. İşlem sonucu birinci operanda tekrar atanıyor. Yani bu işlem sonucunda AX ile BX'i topluyoruz. AX ve BX bunlar birer yazmaç. İkisini topluyoruz. İşlem sonucu AX'e yazılıyor. Bu işlem sonucunda BX'in değeri değişmez, BX değişmez.
+
+249
+00:46:54,164 --> 00:46:55,984
+Çünkü onun üzerine bir atama yok.
+
+250
+00:46:57,224 --> 00:47:01,544
+Ama AX yazmacının değeri bu ikisinin toplamı olacak şekilde güncellenir.
+
+251
+00:47:02,764 --> 00:47:07,684
+Dolayısıyla eğer iki operandımız varsa işlem sonucu birinci operanda saklanıyor.
+
+252
+00:47:07,784 --> 00:47:13,504
+Yine özel bir durum operandların tipleri aynı olmalı.
+
+253
+00:47:14,684 --> 00:47:18,404
+Veya bunu uygun komut dönüşümüyle düzeltmemiz gerekiyor.
+
+254
+00:47:18,504 --> 00:47:20,884
+Komut dönüşümü sözde komutlar daha sonranın konusu.
+
+255
+00:47:21,619 --> 00:47:28,039
+Ama şimdilik kendi alanımızla ilgili olarak, gördüğümüz kadarıyla ilgili olarak bundan bahsetmek gerekirse.
+
+256
+00:47:30,299 --> 00:47:32,879
+Şuna bir mouse bulmam lazımmış.
+
+257
+00:47:50,099 --> 00:48:16,399
+enteresan bir şey büyütemiyorum. Neyse. Şunu kastediyoruz. Add komutunu kabacak ne olduğunu biliyoruz toplamaya karşılık. Burada biz eğer ki şunu yaparsak arkadaşlar, mesela add komutunu BX ve AX üzerinden çalışırsak bunda sıkıntı yok. Çünkü AX'de 16 bitlik yazmak, BX'de 16 bitlik yazmak. Dolayısıyla tip uyumu var. Ama şunu yapmaya çalışırsam, add deyip
+
+258
+00:48:16,596 --> 00:48:25,196
+AL, BX dersem, burada bunu derlemeye çalıştığım zaman, bize Assembler Type Miss Match hatası verecek.
+
+259
+00:48:26,816 --> 00:48:35,096
+Type Miss Match hatası verecek. Çünkü AL 8 bitlik bir yazmaç iken, BX 16 bitlik bir yazmaç.
+
+260
+00:48:35,516 --> 00:48:39,456
+Bunu aynı zamanda şurada da görüyoruz. Şöyle durumlarda da görüyoruz. Mesela,
+
+261
+00:48:40,148 --> 00:48:55,907
+Bir değişken tanımlamasını yapacak olursak bu SMD dilinde. Mesela var bir isimli bir değişken tanımlaması yaptık. Bunun tipini DB olarak tanımladık ve işte 35H olarak verdik.
+
+262
+00:48:56,755 --> 00:49:23,895
+Bu bir değişken tanımlaması. Veri kesiminde yazılacağımız veya karşılaşacağımız senaryolardan birisi bu. Şu değişken ismi, değişkenin tipi, bu da değeri. Bunun anlamı şu, C'de sanki var bir int var bir eşittir 35h şeklinde bir tanımlama yapmışız gibi düşünün. Karşılığı buna denk geliyor. Değişkenimiz var. Tipi define byte dediğimiz için aslında bunu yine çar olarak düşünelim.
+
+263
+00:49:25,364 --> 00:49:43,124
+8 bitlik bir değer tanımladık ve değeri de 35. Ben aşağılarda bir yerde kodum içerisinde MOV, AX virgül, var bir yaptığım zaman da yine arkadaşlar, Assembler Type Mismatch diyecek. Niye? Bu şekilde diyecek.
+
+264
+00:49:44,179 --> 00:49:50,899
+Çünkü var 1 dediğimiz değişken, bakın burada 8 bitlik bir değer değişken olması itibariyle.
+
+265
+00:49:51,479 --> 00:49:54,119
+AX ise 16 bitlik bir yazmaç.
+
+266
+00:49:55,559 --> 00:49:59,239
+İşte bu durumda yine type mismatch ile karşılaşmış oluyoruz arkadaşlar.
+
+267
+00:50:01,639 --> 00:50:03,359
+Burada ifade edilen bu.
+
+268
+00:50:04,899 --> 00:50:07,219
+Şimdi komutlarımıza bir bakacak olursak.
+
+269
+00:50:20,083 --> 00:50:35,683
+Arkadaşlar, şeyi paylaştınız değil mi? Furkan hocanızın grubuyla da dersin online linkini onu paylaştıysanız iyi olur. WhatsApp gruplarınızdan falan paylaşırsanız şöyle participantsdan bakalım.
+
+270
+00:50:46,931 --> 00:50:48,632
+Var herhalde belirli bir grup arkadaş.
+
+271
+00:50:49,391 --> 00:50:55,871
+Şimdi bir de arkadaşlar, veri aktarım komutlarına bakmaya artık başlayacağız.
+
+272
+00:50:55,871 --> 00:51:00,012
+Fakat öncesinde karşılaşacağımız bir takım kısaltmalar var.
+
+273
+00:51:00,132 --> 00:51:01,371
+O kısaltmalardan bahsedelim.
+
+274
+00:51:01,451 --> 00:51:04,112
+Eğer herhangi bir yerde, şimdi şematik gösterimler olacak.
+
+275
+00:51:04,271 --> 00:51:05,152
+Şunun gibi mesela.
+
+276
+00:51:06,012 --> 00:51:09,492
+MOV komutunu kullanırken şematik gösterimlerimiz olacak.
+
+277
+00:51:09,632 --> 00:51:12,572
+Bu şematik gösterimlerle neyi ifade ediyoruz onları söyleyeceğim.
+
+278
+00:51:13,043 --> 00:51:17,003
+ACC şeklinde bir kısaltma görüyorsak arkadaşlar, bu akümülatör için.
+
+279
+00:51:17,443 --> 00:51:24,563
+Yani 8 bitlik durumlarda AL, 16 bitlik durumlarda AX'e karşılık geldiğini ifade etmiş oluyoruz.
+
+280
+00:51:25,443 --> 00:51:34,123
+Herhangi bir yerde REG diye bir kısaltma görürsek, bu register'ın kısaltması, herhangi bir 8 bitlik, 16 bitlik, herhangi bir yazmaç olabilir.
+
+281
+00:51:38,387 --> 00:51:47,667
+AH, . . . veya 16 bitlikler, CS, DX, AX, hepsi herhangi bir 16 bitlik yazmacı ifade ediyor.
+
+282
+00:51:48,747 --> 00:51:53,567
+RECB ile ifade ettiğimiz register byte, bunlar sadece 8 bitlik yazmaçlar.
+
+283
+00:51:53,647 --> 00:52:01,467
+Yani AL, AH, BL, BH, . . . . gördüğümüz 8 bitlik yazmaçları sadece ifade ediyor.
+
+284
+00:52:04,115 --> 00:52:24,115
+Bu ise sadece 16 bitlik yazmaçları. Yani AX, BX, CX, DX. Genel olarak konuştuğumuz için CS, DS, ES, SS gibi stack segment yazmaçları da dahil olmak üzere herhangi bir 16 bitlik yazmacı ifade ediyor.
+
+285
+00:52:27,923 --> 00:52:35,443
+segment yazmacı. Bu sadece işte CS, SS, DS ve ES. Başka zaten segment yazmacımız yok.
+
+286
+00:52:36,224 --> 00:52:44,264
+SEG, ESREC dediğimiz zaman şunları kastediyoruz. MEM dediğimiz zaman arkadaşlar bir memory, bellek adresinin içeriğini kastediyoruz.
+
+287
+00:52:44,264 --> 00:52:49,764
+Burada aklımızda tutmamız gereken durum, memory de, bir hafıza da.
+
+288
+00:52:50,291 --> 00:53:16,632
+biz bir adresi işaret ediyoruz. O adresin içeriğindeki veriye erişmeye çalışıyoruz. Bunu 8086'da MASM, Microsoft Assembler'da köşeli parantez ile gerçekleştiriyoruz. Köşeli parantez bir hafıza erişimine karşılık geliyor. Bu bir hafıza erişimini ifade ediyor. Yani içeriğindeki değer neyse hafızanın o numaralı gözüne erişmeye çalışıyoruz.
+
+289
+00:53:17,396 --> 00:53:44,936
+Burada içeriye yazdığımız şey aslında bir offset değeri oluyor. Dolayısıyla bir segment yazmacıyla da birlikte kullanılacak. Eğer ki biz bir veri işlemi yapıyorsak, veri işlemi yapıyorsak varsayılan segment yazmacımız, kesim yazmacımız DS oluyor. Dolayısıyla DS'nin offset'ine gidiyorum. Offset kadar uzağına gidiyorum ve o hafızaya erişiyorum.
+
+290
+00:53:45,556 --> 00:53:50,855
+veya yığınla ilgili yığın için işlem yapıyorsam yığında varsayılan kesim
+
+291
+00:53:50,855 --> 00:53:58,115
+stack segmentti. Stack segmentin offset kadar ilerisine gidiyorum ve oradaki veriye
+
+292
+00:53:58,115 --> 00:54:02,755
+girişiyorum. Burada offset olarak belirttiğimiz şey arkadaşlar neler olabilir?
+
+293
+00:54:05,916 --> 00:54:11,715
+Offset olarak belirttiğimiz şey bir sabit sayı olabilir. Mesela köşeli parantez içerisinde 100 haş.
+
+294
+00:54:12,403 --> 00:54:34,203
+Bu ne demek? İlgili kesim yazmacının gösterdiği adresten 100 hexadecimal byte daha ötedeki veri demek. 100 hexadecimal offsetindeki veri demek. Yani köşeli parantez içerisinde bu şekilde sabit bir değer yazabiliriz veya BX yazmacını yazabiliriz. BX'in değeri neyse
+
+295
+00:54:34,675 --> 00:54:40,595
+İlgili kesim yazmacının BX kadar ötesindeki adresteki veriyi al demek bu.
+
+296
+00:54:41,315 --> 00:54:44,715
+Veya köşeli parantez içerisinde DI kullanabilirim.
+
+297
+00:54:45,395 --> 00:54:48,375
+Veya köşeli parantez içerisinde SI kullanabilirim.
+
+298
+00:54:48,995 --> 00:54:52,735
+Veya köşeli parantez içerisinde BX artı SI kullanabilirim.
+
+299
+00:54:53,395 --> 00:54:57,195
+Veya köşeli parantez içerisinde BX artı DI kullanabilirim.
+
+300
+00:54:57,536 --> 00:55:02,496
+Veya köşeli parantez içerisinde SI artı DI kullanabilirim.
+
+301
+00:55:03,096 --> 00:55:11,336
+Veya köşeli parantez içerisinde BX artı SI artı DI deyip yanlarına bir de sabit değer de ekleyebilirim.
+
+302
+00:55:12,336 --> 00:55:20,135
+Dolayısıyla köşeli parantez içerisinde veri için özellikle veri erişimi için yazabileceğimiz sadece bunlarla sınırlı.
+
+303
+00:55:20,635 --> 00:55:24,876
+Dolayısıyla köşeli parantez içerisinde CX yazarsanız hata.
+
+304
+00:55:25,248 --> 00:55:30,428
+veya köşeli parantez içerisinde AX yazarsanız hata olmuş oluyor arkadaşlar. Tamam mı?
+
+305
+00:55:32,568 --> 00:55:34,968
+Şimdi devam edelim.
+
+306
+00:55:36,168 --> 00:55:39,608
+i data olarak ifade ettiğimiz şey arkadaşlar immediate data.
+
+307
+00:55:43,284 --> 00:55:54,524
+Immediate Data'dan kastedilen sabit değer. Bakın ne gibi bir örnek mesela? Şurada memory ile karışma ihtimali yüksek olduğu için karşılaştırmalı olarak verelim.
+
+308
+00:56:01,172 --> 00:56:09,771
+Örneğin, şunu dersek, MOV, AX virgül, köşeli parantez, 100H dersek, bu başka bir şey.
+
+309
+00:56:11,251 --> 00:56:18,331
+MOV, AX virgül, virgül, 100H dersek, bu başka bir şey.
+
+310
+00:56:19,192 --> 00:56:24,591
+Buradaki işlem bir hafıza işlemi, buradaki işlem bir imidiyet işlemi.
+
+311
+00:56:26,675 --> 00:56:41,635
+Bu alttaki işlem sonucunda AX'e 100H değeri atanır. Burada ise AX'e 100H adresinin içeriye atanır. Veya şunu şöyle düşünelim.
+
+312
+00:56:47,956 --> 00:56:53,776
+Bunu da bu şekilde düşünelim. Bakın, i, y, bu da bir atama yapıyoruz.
+
+313
+00:56:55,816 --> 00:57:04,016
+İşte belirli bir referanstaki içerik, A bir adres gösterir. Çünkü bu bir pointer'dır. Dizinin kendisini düşünün. Pointer'a karşılık gelir.
+
+314
+00:57:04,755 --> 00:57:10,856
+Bunun 10 ötesindeki değeri al, 10 byte veya 10 integer ötesindeki değeri al, i, y atar.
+
+315
+00:57:10,856 --> 00:57:15,276
+İşte bu tam olarak şuna karşılık geliyor. Burası ise,
+
+316
+00:57:15,648 --> 00:57:23,188
+i, y, 10 değerini ata. O da şu, 100H değeri burada atamış. Şöyle değiştirelim, 100H. Şunu da.
+
+317
+00:57:30,835 --> 00:57:35,596
+Böyle yaparsak tam olarak buna karşılık gelmiş oluyor. Aralarındaki fark bu yani tam olarak.
+
+318
+00:57:37,715 --> 00:57:43,175
+Şimdi displacement dediğimiz, displacement 8 ve 16 olarak ifade ettiğimiz değerler ise arkadaşlar,
+
+319
+00:57:43,915 --> 00:57:51,596
+az önce hatırlayacak olursanız bir tane etiket örneğimiz vardı. Etiket örneği nerede? Şuradaki örnek.
+
+320
+00:57:53,815 --> 00:57:55,016
+Ooo iyice küçüldü oldu.
+
+321
+00:58:03,539 --> 00:58:06,059
+Etiket örneğimizi hatırlayacak olursanız arkadaşlar,
+
+322
+00:58:08,120 --> 00:58:10,200
+Burada şu örnek için bahsediyorum.
+
+323
+00:58:14,867 --> 00:58:22,867
+etiketimiz var. Burada bir koşulu dallanma var. Burada normalde şunu yapmıyor SMLR veya program şunu yapmıyor. Burada
+
+324
+00:58:22,867 --> 00:58:34,587
+JMP A1 dedik ya, kod içerisinde A1 etiketini arayıp mutlak olarak ona dallanmıyor. Yaptığı işlem şu, kodu derlerken, derlerken şunu yapıyor derlenirken.
+
+325
+00:58:34,587 --> 00:58:37,727
+A1 etiketi nerede? Şu adresle. Bunun adresi belli.
+
+326
+00:58:39,795 --> 00:59:01,076
+Biz bu komutu nerede çalıştırıyoruz? Adres 1, adres 2 diyelim. Adres 2. Aralarında ne kadar fark var? Aralarındaki farkı buraya yazıyor. Yani burada aslında JMP geride olduğu için eksi 10 gibi bir değer var. JMP eksi 10. Bunun anlamı ne? 10 byte gerideki komuta git demek. Veya şöyle olabilirdi.
+
+327
+00:59:01,780 --> 00:59:16,240
+ilerideki bir yere dallanmak istiyorsak, JMP 20, yani 20 byte ötedeki komuta git gibi komut verebilirdik. Dolayısıyla burada bu tür dallanma komutları hesaplanırken, derlenirken mutlak olarak
+
+328
+00:59:16,592 --> 00:59:42,592
+adres değeri tutulmuyor veya mutlak olarak o satır değeri tutulmuyor. Komutun çalıştırıldığı satırdan görece ne kadar ileri veya geri gitmem gerektiği hesaplanıp tutuluyor. Bu da işte displacement olarak hesaplanıyor. Dolayısıyla geri veya ileri dallanma durumum olduğu için burada işaretli sayı olarak displacement ifade ediyoruz. Eğer ki bu yapacağımız işlem
+
+329
+00:59:42,976 --> 00:59:58,635
+0, x128 ile x127 arasında, yani 8 bitlik bir alan içerisine sığıyorsa, bu Near Jump olarak isimlendiriliyor veya Near Dallanma olarak isimlendiriliyor. Bu 8 bit işaretli sayıya sığıyor.
+
+330
+01:00:02,516 --> 01:00:28,596
+Yani yapacağım işlem ya en fazla eksi 128 adım olur. Yani 128 adım geriye gidebilirim veya 120 adım ileri gidebilirim. Near tipindeki komutlarda veya far tipinde komutlar var. Bunlar 16 bit işaretli sayıya sığan dallanmaları gerçekleştiriyor. Yani burada da eksi kaçtı değerlerimiz?
+
+331
+01:00:28,943 --> 01:00:54,344
+32768, 32768'den, 32767'ye kadar olan aralıkta bir dallanma sağlıyor. Burada displacement'tan kastedilen bu. Bir de destination ve source var. Destination ve source'u şöyle düşünebilirsiniz arkadaşlar. Mesela bir MOV komutunu çalıştıralım. İşte yazalım.
+
+332
+01:00:54,344 --> 01:00:56,064
+MOV
+
+333
+01:00:56,916 --> 01:01:18,795
+AX, BX. Burada sağdan sola doğru atama olduğu için bunu kaynak olarak veya source olarak isimlendiriyoruz. Bu tarafsa hedef veya destination olarak isimlendiriyoruz.
+
+334
+01:01:23,251 --> 01:01:39,812
+AX'e BX değeri atanacağı için bu kaynaktan bu hedefe atama yapıldığı anlamında operant 1 ve operant 2'ni için bu şekilde bir isimlendirme de söz konusu olmuş oluyor arkadaşlar.
+
+335
+01:01:40,492 --> 01:01:46,412
+Şimdi bu noktada bir ara verelim. Bundan sonra veri aktarım komutlarıyla başlıyor olacağız. Tamam.
+
+336
+01:01:46,412 --> 01:01:48,672
+Buraya kadar olanlarla ilgili bir sorunuz var mı?
+
+337
+01:01:53,460 --> 01:01:55,820
+Buraya kadar olan kısımla ilgili bir sorunuz var mı?
+
+338
+01:02:00,659 --> 01:02:04,439
+Hocam, benim var aslında da, belki kaçırmış olabilirim diye emin olamadım.
+
+339
+01:02:04,759 --> 01:02:05,119
+Sorun, sorun.
+
+340
+01:02:05,179 --> 01:02:08,719
+MOV yaparken bir derine derine bir aktarma yapıyor ya.
+
+341
+01:02:09,259 --> 01:02:09,459
+Evet.
+
+342
+01:02:09,459 --> 01:02:14,500
+Onun için bir, üçüncü şey gerekmiyor değil mi hocam, bir register ya da yazmak?
+
+343
+01:02:16,099 --> 01:02:21,619
+Şöyle şimdi, mesela bilgisayar donanımı dersinden belki bu bilgiyi getirdik, değil mi?
+
+344
+01:02:22,356 --> 01:02:43,636
+bilgisayar donanımında bizim gördüğümüz sistem veya inşa ettiğimiz sistem MIPS tarzındaki sistemlerdi. Bunlarda komutlar 3 operant alıyordu. Mesela bir MOV ADD işlemi için konuşalım. ADD diyorduk, R1, R2 ve R3 şeklinde 3 operant alıyordu.
+
+345
+01:02:48,851 --> 01:03:13,511
+atama yapılan kısım oluşturuyordu. R2 ile R3'te işleme giren operantları oluşturuyordu. Bu şekilde olduğu vakit bir üçüncü operanta evet ihtiyaç var ama bizde yani 8086 tarafına baktığımızda ise burada atama işlemi mesela ADD, ADD bir de şeyde bakalım. Şöyle gelelim. Yine aynı tarafa yazalım.
+
+346
+01:03:16,659 --> 01:03:42,839
+8086 tarafında ise ADD komutunu çalıştırdığımızda sadece iki operant var. Bunun anlamı da şu, işlem yapılıyor. Evet, AX ve BX toplanıyor. Ama işlem sonucu nereye saklanıyor? İşlem sonucu birinci operanda yine saklanıyor. Operant bir. Dolayısıyla işlem sonucu AX'e saklanıyor. Varsayılan olarak bu şekilde. Böyle olduğu için üçüncü bir operanda gerek yok 8086.
+
+347
+01:03:43,827 --> 01:03:44,988
+Teşekkürler hocam.
+
+348
+01:03:45,208 --> 01:03:45,648
+Rica ederim.
+
+349
+01:03:46,528 --> 01:03:47,827
+Var mı arkadaşlar başka sorum?
+
+350
+01:03:52,403 --> 01:04:14,643
+Ben ekran paylaşımı yapmadan anlatmışım herhalde. Göstermek istediğim şuydu aslında. Ben burayı gösteriyorum diye anlattım da. MIPS sistemde 3 operant var. İşleme giren operantlar ve işlem sonucunun aktarıldığı operant. Ama 8086'da evet bunlar işleme giriyor ama işlem sonucu tekrar birinci operantla saklanıyor.
+
+351
+01:04:14,996 --> 01:04:21,755
+Bu durumda bu komut sonrasında BX'in değeri değişmiyor, AX'in değeri güncellenmiş oluyor. İkisini toplam olarak güncellenmiş oluyor.
+
+352
+01:04:30,003 --> 01:04:35,903
+Ders bu linkten mi devam edecek? Hemen bir kontrol edelim onu. Burayı bir F5 diyelim.
+
+353
+01:04:41,043 --> 01:04:42,324
+Şimdi burada da
+
+354
+01:04:43,603 --> 01:04:45,643
+Ben bir tıklayayım bakalım ne geliyor.
+
+355
+01:04:49,811 --> 01:04:57,692
+Yani şu anda burası kesilmediğine göre arkadaşlar, burası kesilmediğine göre buradan devam edebiliriz diye anlıyorum ben. Tamam.
+
+356
+01:04:59,831 --> 01:05:10,852
+Buradan devam edebiliriz diye anlıyorum. Eğer bir şey olursa onu da göndereyim mi? Büyük ihtimalle kapanmayacaktır. Buradan devam ederiz.
+
+357
+01:05:10,852 --> 01:05:16,811
+Şimdi başka sorumuz yoksa bir ara vereceğim. Aradan sonra da veri aktarım komutlarıyla devam edeceğiz arkadaşlar.
+
+358
+01:05:17,492 --> 01:05:19,412
+Tamam, soru var mı? Tekrar sormuş olayım.
+
+359
+01:05:21,512 --> 01:05:23,072
+Linki de tekrar atalım.
+
+360
+01:05:23,652 --> 01:05:26,792
+Hocam, o verdiğiniz örnekte iki tane fark neyden dolu oluşuyor?
+
+361
+01:05:26,952 --> 01:05:32,672
+Bir tanesinde hani üç tane yaptık, bir tanesinde ise iki tane değer yerdik.
+
+362
+01:05:32,812 --> 01:05:34,512
+İkisini toplayıp bir tanesine şey yaptık.
+
+363
+01:05:35,172 --> 01:05:37,532
+Evet, burada mimari kaynaklı farklılık var.
+
+364
+01:05:37,652 --> 01:05:40,612
+MIPS dediğimiz sistem başka bir mikro işlemci ailesi.
+
+365
+01:05:40,980 --> 01:06:07,859
+Biz 8086 ile ilgileniyoruz ya, dersimizin kapsamı 8086 ya. Bizim ilgilendiğimiz mimaride iki operant var. İşlem sonucu da birinci operanda aktarılıyor. Bu bizi bilgisayar donanımında gördüğümüz yapı da MIPS ailesiydi. Onlarda ise üç tane operant oluyor işlemli komutlarda ve birinci operant sonucun saklandığı register yazmaç oluyor.
+
+366
+01:06:08,532 --> 01:06:21,192
+Farklı bir mikro işlemci ailesi var. Evet, orada üç tane operant var. Ama bizim kullandığımız ders kapsamındaki 8086 mimarisinde iki operant yeterli. İşlem sonucu da birinci operanda saklanıyor.
+
+367
+01:06:22,012 --> 01:06:32,331
+Hani bu sol taraf 8086'nın bir varyasyonu değil. Farklı bir mikro işlemci ailesinde üç operantla gerçekleşen durum da böyle oluyor demek için de söyledim onu.
+
+368
+01:06:36,851 --> 01:06:38,851
+Yine ekranı paylaşmamışım.
+
+369
+01:06:40,851 --> 01:06:41,851
+Buydu.
+
+370
+01:06:43,251 --> 01:06:45,851
+Şimdi şu linki almaya çalışalım. Nasıl alacağız?
+
+371
+01:06:50,260 --> 01:06:52,260
+Şundan alabiliyor muyuz acaba?
+
+372
+01:06:56,371 --> 01:07:00,291
+Yani benim gördüğüm linkle sizin gördüğünüz link farklı olabilir arkadaşlar.
+
+373
+01:07:01,172 --> 01:07:04,612
+Yani ben linke tıkladığım zaman burayı kapatmak zorunda kalıyorum.
+
+374
+01:07:05,851 --> 01:07:07,672
+Siz hala buradasınız değil mi?
+
+375
+01:07:08,192 --> 01:07:12,652
+Yani dolayısıyla tekrar deneyeyim bakayım kapatmadan almak mümkün mü?
+
+376
+01:07:13,652 --> 01:07:14,711
+Yok kapatmam gerekiyor.
+
+377
+01:07:14,791 --> 01:07:16,371
+Kapatınca zaten bir anlamı yok.
+
+378
+01:07:18,851 --> 01:07:20,052
+Aynı linkten devam edelim.
+
+379
+01:07:20,152 --> 01:07:20,532
+Olur mu yani?
+
+380
+01:07:20,592 --> 01:07:23,231
+Şimdi direkt almak bir sıkıntı doğurabilir linki.
+
+381
+01:07:23,827 --> 01:07:25,268
+Aynı linkten devam edelim.
+
+382
+01:07:33,139 --> 01:07:38,419
+Tamam, şimdi başka bir sorumuz yoksa arkadaşlar bir 15 dakika ara verelim, 20 geçe devam edeceğiz, tamam?
+
+383
+01:21:43,956 --> 01:21:47,036
+Evet, arkadaşlar, merhaba tekrardan. Kaldığımız yerden devam edelim.
+
+384
+01:22:00,083 --> 01:22:26,763
+Şimdi veri aktarım komutları ile başlıyoruz. İlk veri aktarım komutumuz MOV kısaltması MOV. Şimdi temel olarak şunu düşünebiliriz. Veri aktarımı olduğu için sınavlarda falan şu şekilde yazılıyor. Eğer böyle yazarsak çizerim. Kısaltması MOV, MOV data veri aktarımı için.
+
+385
+01:22:27,184 --> 01:22:37,684
+bir source ve bir destination'dan oluşan iki adet parametre alıyor. Yaptığı işlem, sourcedaki içeriği destination'a aktarmak.
+
+386
+01:22:39,084 --> 01:22:46,324
+Şimdi burada belirli bir takım özellikler var. Bunlardan ilki şu. Bakın ne diyor?
+
+387
+01:22:46,863 --> 01:22:52,024
+MOV komutuyla birlikte destination ve source memory olamaz. Yani ne demek bu?
+
+388
+01:22:53,304 --> 01:22:54,543
+Ekranı görüyorsunuz değil mi?
+
+389
+01:22:55,475 --> 01:23:00,895
+şu diyor ki şu olamaz diyor. Ne mesela? Bu çok kalıncaymış.
+
+390
+01:23:07,412 --> 01:23:32,051
+Bir tane memory adresi yazıyorum. 100H, virgül ikinci operant olarak da ikinci bir memory adresi yazıyorum. Bu arkadaşlar geçerli valid bir komut değil. Tamam mı? Neden? Geçen haftaki konuştuğumuz konuları hatırlayın. Neden valid değil? Cevap vermek isteyen var mı? Cevap verebilir miyiz? Neden valid bir komut değil bu?
+
+391
+01:23:36,532 --> 01:23:37,512
+Var mı fikri olan?
+
+392
+01:23:40,332 --> 01:23:41,051
+Var mı?
+
+393
+01:23:43,612 --> 01:23:44,532
+Parantez var.
+
+394
+01:23:47,172 --> 01:23:49,791
+Yok. Şimdi bakın ne diyor?
+
+395
+01:23:53,092 --> 01:23:59,172
+Yazmaç kullanılmadığından dolayı aslında cevap, doğru bir cevap olarak kabul edebiliriz.
+
+396
+01:24:00,307 --> 01:24:25,368
+Şimdi parantez meselesiyle ilgili olarak gelecek olursak. Şimdi ne diyor burada? Memoryden memoriye aktarım olmaz diyor. Biz memoriye erişimini nasıl yapıyoruz demiştik. Köşeli parantez içerisinde yapıyoruz demiştik. Köşeli parantez içerisinde yazdığımız değer şu memorinin adresi oluyor. Yani buraya yazmış olduğumuz offset değeri ilgili memori adresine karşılık geliyordu. Dolayısıyla ben memori işlemi yapmak istiyorsam mutlaka köşeli parantez kullanacağım.
+
+397
+01:24:26,260 --> 01:24:38,540
+Peki neden hafızadan hafızaya veya IO'dan hafızaya, hafızadan IO'ya, IO'dan IO'ya bu şekilde bir taşıma yapamıyoruz daha en genel anlamında? O da şuydu arkadaşlar hatırlayacak olursanız, geçen hafta da bahsetmiştik.
+
+398
+01:24:38,540 --> 01:24:51,220
+Üç tip veri aktarımı vardı. Bunlardan bir tanesi polling'ti, bir tanesi interrupt'tı, bir tanesi de DMA kontrolcüsüydü. Hatırladık mı bunları? Üç veri aktarım tipi vardı.
+
+399
+01:24:54,100 --> 01:25:16,820
+DMA'da zaten mikro işlemci devrede değildi. Geri kalan iki tanesinde de her halükarda bir IO biriminden veya memori biriminden yine bir başka IO veya memori birimine aktarma yapmak isterken bu doğrudan olmuyordu. Nasıl oluyordu peki bu? Nasıl oluyordu?
+
+400
+01:25:17,363 --> 01:25:36,884
+Bir kere veri mikro işlemciye okunuyordu, ondan sonra aktarılıyordu. Dolayısıyla aynı anda iki memori biriminin birbiriyle haberleşebileceği bir durum hiçbir zaman için yok. Geçen hafta bundan bahsetmiştik. Dolayısıyla veri aktarım komutlarından MOV komutuyla ilgilendiğimiz vakit,
+
+401
+01:25:38,228 --> 01:26:03,387
+Burada, memory birimleri arasında veri aktarım olmaz. Yani şurada işaretlemiş olduğumuz üzere, iki hafıza birimi arasında işlem geçerli değil. Başka neymiş? Bir de bakın, bir destination'ımız segment yazmacı ve yine source'umuz bir segment yazmacı olamazmış. Şimdi onu şuraya yazalım. Ne demek istiyoruz? Yine yapalım.
+
+402
+01:26:05,427 --> 01:26:07,547
+Bir segment yazmacı söyleyin bana.
+
+403
+01:26:14,260 --> 01:26:16,440
+Bir tane segment tipinde bir yazmaç.
+
+404
+01:26:21,363 --> 01:26:22,503
+Az önce gördük ya.
+
+405
+01:26:25,023 --> 01:26:26,483
+SS mesela. Tamam.
+
+406
+01:26:27,243 --> 01:26:28,783
+Bir tane daha söyleyin.
+
+407
+01:26:30,063 --> 01:26:31,343
+O da CS olsun.
+
+408
+01:26:33,643 --> 01:26:34,163
+Tamam.
+
+409
+01:26:35,183 --> 01:26:35,963
+Şimdi burada
+
+410
+01:26:36,564 --> 01:26:51,264
+Ne diyordu bize kural? İki tane segment yazmacı arasında veri aktarımı yapamayız. Dolayısıyla arkadaşlar, bu komutta valid değil. Ama fonksiyonel olarak, cs'nin içeriğini ss'ye aktarabilirim. Onu nasıl yapabiliriz? Var mı fikri olan?
+
+411
+01:26:51,796 --> 01:27:01,695
+Yani bunu CS'nin içeriğini SS'ye bir sefer de bu şekilde aktaramıyorum. Ama CS'nin içeriğini SS'ye aktarmak istersen bir şeyler yapabilirim. Nasıl yapabilirim sizce?
+
+412
+01:27:02,216 --> 01:27:06,176
+Hocam iki işlem yapsak yani CS'ye başka bir şey aktarıp onu da SS'ye.
+
+413
+01:27:06,695 --> 01:27:15,996
+Evet tam olarak bu şekilde yapmamız gerekiyor. Ara bir şey kullanacağız. Temp yazmaç kullanacağız. Ara bir temp yazmaç kullanacağız. O da AX olsun mesela.
+
+414
+01:27:16,467 --> 01:27:26,368
+Peki, AL kullanabilir miydik orada? Temporary Register olarak. Veri aktarımında ara geçiş için AL'yi kullanabilir miydik? Yani şunu yapabilir miydik?
+
+415
+01:27:34,036 --> 01:27:36,515
+Buna benzer bir şey yapmak istiyoruz değil mi hedef olarak?
+
+416
+01:27:37,316 --> 01:27:39,195
+Peki burada AL'yi kullanabilir miyiz?
+
+417
+01:27:39,676 --> 01:27:43,236
+Evet, AL'yi kullanamayız çünkü AL 8 bitlik bir yazmaç.
+
+418
+01:27:44,015 --> 01:27:45,476
+Niye AL'yi kullanamıyoruz?
+
+419
+01:27:47,115 --> 01:27:48,656
+8 bitlik yazmaç kullanamıyoruz.
+
+420
+01:27:48,836 --> 01:27:50,316
+O da şundan dolayı arkadaşlar.
+
+421
+01:27:50,935 --> 01:27:53,536
+CS ve SS dediğimiz yazmaçlarımız bizim.
+
+422
+01:27:54,536 --> 01:27:56,275
+Bunlar 16 bitlik yazmaçlar.
+
+423
+01:27:56,275 --> 01:27:57,716
+Ne demiştik?
+
+424
+01:27:58,015 --> 01:28:23,595
+tip uyumunu sağlamamız gerekiyor. Tip uyumunu sağlayabilmek için burada AX ve yine benzer şekilde AX üzerinden veri aktarımı yapmamız gerekiyor. Dolayısıyla buraya ilişki diyeceğimiz bu. Üçüncü bir valid olmayan durum örneği destination bir segment yazmacı source bir immediate data olamazmış. Ne demek bu? Şöyle kaydıralım.
+
+425
+01:28:24,724 --> 01:28:25,623
+Bu da şu demek.
+
+426
+01:28:30,003 --> 01:28:53,963
+MOV, data segment bölü, virgül, 100H. Bu komut valid değilmiş. Doğrudan doğruya bir segment yazmacına immediate değer, yani sabit bir değer atayamıyoruz. Bunu da yapmak istersek az önceki gibi işlemi ikiye bölmemiz gerekiyor. Önce AX'e 100H veya BX de olabilir. Burada herhangi bir 16 bitlik genel amaçlı yazmaç kastediyoruz.
+
+427
+01:28:54,416 --> 01:29:00,336
+Daha sonra MOV, DS, AX komut ikilisini çalıştırmamız gerekiyor.
+
+428
+01:29:01,516 --> 01:29:05,716
+Ve üçüncü bir durumda Destination ve Source aynı tipte olmalıdır.
+
+429
+01:29:05,796 --> 01:29:08,036
+Onun örneklerini baştan beri veriyoruz zaten.
+
+430
+01:29:08,695 --> 01:29:09,416
+İşte ne vardı?
+
+431
+01:29:10,816 --> 01:29:14,275
+MOV, AL, DX şeklinde bir komut.
+
+432
+01:29:14,376 --> 01:29:15,136
+Bu valid değil.
+
+433
+01:29:15,716 --> 01:29:15,956
+Neden?
+
+434
+01:29:16,716 --> 01:29:21,596
+Çünkü DX 16 bitlik, AL 8 bitlik.
+
+435
+01:29:21,872 --> 01:29:26,112
+Bunu değerlemeye çalışırsak, Assembler bize type mismatch hatası verecek.
+
+436
+01:29:28,731 --> 01:29:32,572
+Aynı durum variable için de geçerli demiştik hatırlayacak olursanız.
+
+437
+01:29:33,332 --> 01:29:34,731
+Onu da hatırlayalım şimdi tekrar.
+
+438
+01:29:39,060 --> 01:29:53,960
+yazdığımız kodun belirli bir kısmında şununla karşılaşabiliriz. Var bir, define byte 12 mesela. Bu, veri kesiminde karşılaşacağımız bir değişken tanımlama.
+
+439
+01:30:06,452 --> 01:30:32,332
+Type mismatch hatası alacağız. Çünkü değişkenimiz byte tipinde tanımlanmış, 8 bit olarak tanımlanmış. Burada atamak istediğimiz yazmaç ise 16 bitlik bir yazmaç. Bundan dolayı yine Type mismatch olacak. Bu örnek neye ilişkin? Değişken tip uyumuna da dikkat etmek gerekiyor.
+
+440
+01:30:34,036 --> 01:30:35,275
+Hocam, burada bir şey sorabilir miyim?
+
+441
+01:30:35,655 --> 01:30:36,216
+Tabii, buyurun.
+
+442
+01:30:36,775 --> 01:30:40,036
+Üçte 12 yazmışız ya, 12 bit olarak atamadım, 8 bit.
+
+443
+01:30:42,195 --> 01:30:45,216
+12 desimal bir değer, yanında hex yazmamışız ya.
+
+444
+01:30:45,996 --> 01:30:46,536
+Anladım.
+
+445
+01:30:46,935 --> 01:30:53,036
+Yani bunun karşılığı A10, B11, C12, bu 0CH.
+
+446
+01:30:54,036 --> 01:30:56,036
+Kaldı ki şunun da yazsam da sıkıntı yoktu.
+
+447
+01:30:56,095 --> 01:30:58,195
+12H yazsam da bu kaç bitlik?
+
+448
+01:30:58,560 --> 01:31:06,360
+12H yazalım, 0000100100, binary olarak değil mi? Yine 8 bite sığıyor, bu da sığıyor.
+
+449
+01:31:07,260 --> 01:31:07,900
+Anladım hocam.
+
+450
+01:31:12,083 --> 01:31:34,863
+Şimdi devam edelim. MOV komutunun hangi versiyon varyasyonları var ona bakıyoruz. MOV komutunun bir immediate data'yı herhangi bir yazmaca atama versiyonumuz varmış. Şimdi onu şöyle getirelim. Önce tamamını bir silelim tekrar.
+
+451
+01:31:40,851 --> 01:31:46,192
+Ne yapacaktık bakalım? Register Immediate Data örneği vereceğiz. Burada örneğimiz şöyle bir şey olsun.
+
+452
+01:31:46,192 --> 01:31:51,692
+MOV, CH,
+
+453
+01:31:56,115 --> 01:31:56,876
+ne olsun?
+
+454
+01:31:59,435 --> 01:32:01,156
+Mesela 300 diyelim.
+
+455
+01:32:02,236 --> 01:32:03,236
+Veyahut da
+
+456
+01:32:03,236 --> 01:32:06,015
+MOV, AX virgül
+
+457
+01:32:06,015 --> 01:32:08,456
+ondan sonra
+
+458
+01:32:08,456 --> 01:32:10,996
+1, 2, 3, 4, hex olsun.
+
+459
+01:32:12,115 --> 01:32:14,275
+MOV, BL virgül
+
+460
+01:32:14,275 --> 01:32:17,896
+A olsun.
+
+461
+01:32:19,976 --> 01:32:21,136
+MOV
+
+462
+01:32:23,731 --> 01:32:26,192
+dx virgül eksi bir olsun mesela.
+
+463
+01:32:27,951 --> 01:32:28,211
+Tamam.
+
+464
+01:32:28,672 --> 01:32:30,271
+Bu şekilde dört tane örnek verdik.
+
+465
+01:32:30,371 --> 01:32:32,311
+Bunların validlik durumlarını inceleyelim.
+
+466
+01:32:33,172 --> 01:32:34,531
+En sonuncudan başlayalım.
+
+467
+01:32:34,711 --> 01:32:37,791
+En sonuncuda dx'deki değer ne olur arkadaşlar?
+
+468
+01:32:41,587 --> 01:32:43,127
+hexadecimal olarak.
+
+469
+01:32:59,539 --> 01:33:00,539
+duyamadım.
+
+470
+01:33:14,355 --> 01:33:16,595
+Yorum var ama duyamıyorum arkadaşlar ya.
+
+471
+01:33:16,855 --> 01:33:25,636
+Bir daha tekrarlayabilir misiniz? Şimdi ses geldi.
+
+472
+01:33:34,068 --> 01:33:36,228
+16 tane 1 olmayacak mı?
+
+473
+01:33:36,587 --> 01:33:45,747
+Evet, 16 tane 1. Yani eksi 1'in tuz konflament karşılığı olacak. O da aslında F, F, F, F, H olacak. Tamam mı?
+
+474
+01:33:46,708 --> 01:33:51,427
+Bu 4 tane 1 burada, 4 tane 1, 4 tane 4 tane, 16 tane 1 olacak yani. Evet, bu.
+
+475
+01:33:52,068 --> 01:33:54,768
+Şunun karşılığında BL'deki değerimiz ne olur?
+
+476
+01:33:58,868 --> 01:34:22,608
+Ne yapmışız burada? A karakterini atamışız. Yani A'nın ASCII karşılığı. O da desimal olarak 65'te değil mi? Bu değer ataması olacak. Şurada ne var? AX'e 1, 2, 3, 4, H atanmış. Peki bu atama valid mi? 4, 8, 12, 16 bit. Bu da 16 bit. Sıkıntı yok. Peki şunu yapmış olsaydık?
+
+477
+01:34:23,091 --> 01:34:30,011
+MOV, AX, 1 demiş olsaydık. Bunda sıkıntı var mı? Çünkü bu 16 bit değil de 8 bite sığıyor.
+
+478
+01:34:31,912 --> 01:34:34,072
+Yani 16 bit adam 8 alır herhalde.
+
+479
+01:34:34,912 --> 01:34:38,712
+Değil mi? Kesinlikle. Bunu ama şöyle gösterirsek daha anlaşılır olur.
+
+480
+01:34:39,051 --> 01:34:45,931
+Şöyle yaparsak aslında bir değerini 16 bite tamamlayıp önünü sıfırlarla doldurup AX'e atıyor.
+
+481
+01:34:46,372 --> 01:34:47,652
+Şuna gelelim. Buna ne dersiniz?
+
+482
+01:35:11,315 --> 01:35:13,416
+Evet, bu ilk satırdakine ne dersiniz?
+
+483
+01:35:21,492 --> 01:35:23,492
+Hocam C8 bitmiyor.
+
+484
+01:35:24,492 --> 01:35:25,492
+Evet.
+
+485
+01:35:25,492 --> 01:35:28,492
+300'e zaten 12 C ediyor, hexerlisi ben olarak.
+
+486
+01:35:29,492 --> 01:35:30,492
+Değazılıyor.
+
+487
+01:35:31,492 --> 01:35:33,492
+Ama bir şey düşünelim şimdi.
+
+488
+01:35:34,492 --> 01:35:37,492
+8 bitlik değerler kaçla kaç arasında?
+
+489
+01:35:40,492 --> 01:35:41,492
+0,255.
+
+490
+01:35:41,492 --> 01:35:43,492
+Evet, demek ki burada sığmıyor.
+
+491
+01:35:44,212 --> 01:36:05,032
+Yani alabileceği range, değer atanabilecek range'in dışında bir değer atamaya çalışıyoruz. 8 biti aşıyor yani şuradaki değer. Tamam mı? Dolayısıyla bu uygun bir atama değil. Tamam mı? Aynı şeyi şurada da düşünün. Mesela MOV, BL virgül, 100H. Şimdi 100.
+
+492
+01:36:06,003 --> 01:36:11,963
+maktığın zaman, eğer bir şeye dikkat etmezsen, sığar gibi, 0,255 arasında gibi düşünüyorsun ama,
+
+493
+01:36:12,483 --> 01:36:23,703
+hexadesimal olarak verilmiş bu, 100H. Aslında bu, şu, şu, şu diye düşündüğünde, 0,0.
+
+494
+01:36:24,123 --> 01:36:29,403
+Yani bu 8 bitten daha büyük bir değer. Bunda da hata oluşur, tamam mı? Şunda da.
+
+495
+01:36:30,771 --> 01:36:34,731
+bunda da atama sırasında hata oluşur.
+
+496
+01:36:35,171 --> 01:36:37,811
+Hexadesimal'da iki karakterden daha çok olmaması lazım.
+
+497
+01:36:38,372 --> 01:36:42,931
+Kesinlikle. Hexadesimal bir değer atıyorsak, iki karakter zaten 8 bit yapıyor.
+
+498
+01:36:43,431 --> 01:36:45,612
+İki karakterden fazla olmaması lazım. Kesinlikle.
+
+499
+01:36:47,271 --> 01:36:52,591
+Dolayısıyla birinci örneğimizin valid ve hatalı örneklerini vermiş olduk.
+
+500
+01:36:53,112 --> 01:36:57,471
+İkinci örneğimiz, MOV, MEM, IDATA. Hemen şimdi ona bakalım.
+
+501
+01:36:59,060 --> 01:36:59,940
+Ah, birçok.
+
+502
+01:37:04,404 --> 01:37:22,324
+Memory'e bir sabit değer atacağız. Memory'yi nasıl gösteriyorduk? Şöyle gösteriyorduk mesela. Bu ne demekti? İlgili segmentin 100 offsetindeki değer, adres içeriğine bir atama yapacağız ve bir sabit ataması yapacağız. Şöyle bir atama yapalım. 12H.
+
+503
+01:37:24,004 --> 01:37:28,624
+Şimdi, bu, burada bir belirsizlik var mı?
+
+504
+01:37:31,572 --> 01:37:35,212
+bir belirsizlik var. O belirsizlik nedir? Öyle sorayım meyahut da.
+
+505
+01:37:43,220 --> 01:37:44,780
+Hocam, 100 haşın kapasitesi mi?
+
+506
+01:37:45,680 --> 01:37:47,880
+100 haşın kapasitesi dedik.
+
+507
+01:37:48,840 --> 01:37:52,440
+Aslında hani dersin başında, birinci derste bir kabulümüz vardı.
+
+508
+01:37:53,220 --> 01:37:58,800
+Ve aksi belirtilmediği sürece her bir hafıza gözü 8 bit olarak ifade etmiştik, değil mi?
+
+509
+01:37:59,680 --> 01:38:03,480
+Dolayısıyla bununla alakalı bir durum olabilir ama şunu söyleyeyim oradaki durum için.
+
+510
+01:38:03,855 --> 01:38:24,615
+Eğer ki ben buraya bir word atmak istersem, bu adrese bir word da atabilirim. Onu da şöyle atıyorum. Elimdeki word'u şöyle düşün. Mesela 1, 2, 3, 4, h. Bu 16 bitlik bir değer değil mi? Ben bunu 100 h'a yazmak istersem, şöyle yazıyor. Bu 100 h'ın içeriği olsun. Bu da 101 h olsun.
+
+511
+01:38:25,268 --> 01:38:42,528
+8086 little ending formatındaydı ya, ne demekti o? Eğer bir byte'dan daha büyük veriler varsa, verinin düşük anlamlı byte'ın düşük adrese yazıyordu. 34 taşı buraya koyuyordu. Bir sonraki byte'ı da bir yüksek adrese koyuyordu. Şu şekilde koyuyordu. Dolayısıyla evet haklısın.
+
+512
+01:38:42,863 --> 01:38:59,183
+her bir adres gözünün kapasitesi 8 bit, 1 byte. Ama 1 byte'dan daha büyük verileri de bu mantık çerçevesinde yazabiliyoruz. Bir sonraki byte'da bir sonraki adrese yazılıyor bu sayede. Bu şekilde. Tamam mı? Dolayısıyla tam olarak aradığımız cevap o değil.
+
+513
+01:39:02,996 --> 01:39:19,195
+Burada bakın az önceki yaptığımız örnekte bir senaryo vardı. Şurada hangisinde? Bakın AX'e 1 atamıştık ama bu atamayı başına 0 koyarak tamamlamıştı. Neden? Çünkü bunun 16 bitlik bir veri olduğunu biliyorduk. Eğer burada şunu çalıştırmış olsaydık.
+
+514
+01:39:20,083 --> 01:39:39,384
+MOV, AL'ye virgül bir çalıştırmış olsaydık, bu durumda bunun 8 bitlik olduğunu bildiği için AL'ye 0, 1 haş atacaktı. Yani 16 bitlik bir değer değil de 8 bitlik bir değer atacaktı. Şurada 16 bitlik bir değer ataması yaptı. Bununla ilişkili bir durum var. Ne dersiniz?
+
+515
+01:39:47,380 --> 01:39:49,940
+Hocam, 12 haşın başına 0 mı koymamız lazım?
+
+516
+01:39:50,539 --> 01:39:55,840
+İşte 12 haşın başına 0 koymalı mıyız, koymamalı mıyız? Onu bilmiyoruz. Belirsizlik orada.
+
+517
+01:39:56,340 --> 01:40:03,180
+Yani buradaki değeri 0, 0, 12 haş olarak mı değerlendirsin istiyoruz yoksa 12 haş olarak mı değerlendirsin istiyoruz?
+
+518
+01:40:03,180 --> 01:40:07,560
+Yani Word mü, byte işlemi mi yapıyoruz? Buradaki belirsizlik bu.
+
+519
+01:40:08,020 --> 01:40:24,380
+Mesela yukariki komutlarda yaptığımız işlemin, mesela şunda word işlemi olduğunu anlıyoruz. Çünkü AX var. Bunun da byte işlemi olduğunu anlıyoruz. Çünkü AL var. Şunda AL var. Burada AX var. Mouse'u görüyorsunuz değil mi? Mouse'da gösteriyorum ama.
+
+520
+01:40:26,484 --> 01:40:27,104
+Gözüküyor.
+
+521
+01:40:27,863 --> 01:40:52,583
+Bunun 16 bitlik olduğu belli, bunun da 8 bitlik olduğu belli. Ama buraya geldiğimiz zaman, burada bu işlemde ben 16 bitlik işlem mi kastediyorum, yoksa 8 bitlik işlem mi kastediyorum, belli değil. Bunun açık bir şekilde ifade edilmesi lazım. Bunu açık şekilde ifade edebilmek için şuraya bir tanımlayıcı koyuyoruz. Dolayısıyla buradaki komutumuz MOV, WORDPTR,
+
+522
+01:40:53,524 --> 01:41:16,884
+word pointer olarak düşünün. 100H, 12H şeklinde olduğu vakit artık ben şunu kastettiğimi belirtmiş oluyorum. Veya MOV byte PTR dersem, 100H, 12H dersem, burada da şunu kastettiğimi ortaya çıkmış oluyor.
+
+523
+01:41:18,515 --> 01:41:45,095
+Yani artık işlem tipini açıktan belirtmiş oldum. Eğer açıktan belirtmesem, word işlemi yapacağım, byte işlemi yapacağım, belirli olmuyor. Şimdi yukariki işlemi çalıştırdığımızda hafızadaki yerleşim şu şekilde oluyor. Burası 100H olsun, burası da 101H olsun. Bu komutu çalıştırmadan önce buralarda FF, FF olsun. Tamam mı?
+
+524
+01:41:46,003 --> 01:42:11,564
+Bu komutu çalıştırdıktan sonra, yani 12H'ı 100H adres içeriğine Word olarak ata dediğim zaman, bu FF'i siliyor. Bu 12H'ı 16bite tamamladık. Yani şu sayı oldu. Bunun düşük anlamlı byte'ı 12H. FF'i sildi, 12H yazdı. Bu sayının yüksek anlamlı byte'ı 00H. Bunu sildi, buraya da 00H yazdı.
+
+525
+01:42:11,988 --> 01:42:27,927
+Word pointer dediğimiz zaman hafızadaki karşılığı bu. Peki byte pointer olarak bu işlemi el alırsak ne oluyor? O zaman da onu da şöyle gösterelim. Burada da yine hafıza alanımızı şöyle iki adres bölgesi olarak yazalım. 100H ve 101H.
+
+526
+01:42:38,771 --> 01:43:06,152
+100H adres içeriğine byte olarak 12'yi koydu. Dolayısıyla burada 100H'daki FF'i silip buraya 12H'ı koydu ve işlemi bitirdi. 101H'daki değeri değiştirmedi, ona dokunmadı. Dolayısıyla WordPtr, bytePtr diyerek açık bir şekilde WordByte işlemi bunu belirtmiş oluyoruz. Bunlara karşılık hafızadaki yerleşimde belirttiğimiz şekilde oluyor. Burası anlaşıldı mı arkadaşlar? Önemli bir nokta çünkü.
+
+527
+01:43:07,636 --> 01:43:08,936
+Hocam bir şey sorabilir miyim?
+
+528
+01:43:09,116 --> 01:43:09,396
+Buyurun.
+
+529
+01:43:10,036 --> 01:43:14,316
+Hocam buradaki FF önceden yapılmış bir işlem tarafından atanmış bir şey mi hocam?
+
+530
+01:43:14,316 --> 01:43:22,096
+Evet, daha önceden bir işlem sonucunda veya ilk hafıza açıldı rastgele değerler vardı, bunlar vardı. O şekilde düşünelim onu.
+
+531
+01:43:24,696 --> 01:43:25,616
+Initial değerleri.
+
+532
+01:43:27,276 --> 01:43:31,276
+Hocam bu memory erişimi yapıyoruz ya köşeli parantezde. Bu pointerla aynı işlem mi?
+
+533
+01:43:32,116 --> 01:43:32,876
+Aynı işlem.
+
+534
+01:43:38,228 --> 01:44:05,228
+Tamam mıyız? Şimdi bir sonraki komuta bakalım. MOV, register to register işlemi yapabiliyormuşuz. MOV, register to register işlemi. Yani ne gibi işlemler? MOV, AX virgül, BX yapabiliriz. MOV, DL virgül, CL yapabiliriz. L. Veya MOV,
+
+535
+01:44:05,971 --> 01:44:11,311
+AH, CX yapabilir miyiz? Ne dersiniz?
+
+536
+01:44:14,804 --> 01:44:16,344
+Miss match olmaz mı?
+
+537
+01:44:17,104 --> 01:44:24,203
+Şu en son yazdığımızda 8 bit, segment yazmaçlarının 16 bit olduğunu hatırlamamız gerekiyor.
+
+538
+01:44:24,304 --> 01:44:26,083
+Dolayısıyla burada atama hatası var.
+
+539
+01:44:26,743 --> 01:44:30,904
+Diğerleri için 16 biti 16 biti, 8 biti 8 biti atama yapmıştı.
+
+540
+01:44:30,963 --> 01:44:33,043
+Dolayısıyla bunlar geçerli işlemler.
+
+541
+01:44:33,144 --> 01:44:36,423
+Peki yine belki hatırlamamız gereken bir durum.
+
+542
+01:44:37,923 --> 01:44:39,944
+SI ile ilgili bir işlem yapacağım.
+
+543
+01:44:40,724 --> 01:44:50,944
+SEI'ya bir değer atacağım. Yine yazmaç üzerinden, şurada da bir yazmaç yazmam lazım. Buradaki yazmaç tipinin ne olması lazım? Byte mi, word mi olması lazım? Ne dersiniz?
+
+544
+01:44:57,971 --> 01:44:58,971
+ne dersiniz?
+
+545
+01:45:04,275 --> 01:45:05,395
+İkisi de olabilir ama.
+
+546
+01:45:06,556 --> 01:45:12,936
+Şimdi kuralımız neydi? Yaz maçlarda, yaz maç atamalarında tipimizin, tip değerlerinin uyumlu olması lazım.
+
+547
+01:45:13,115 --> 01:45:14,596
+SI kaç bitlik bir yaz maç?
+
+548
+01:45:15,155 --> 01:45:16,155
+16 değil mi?
+
+549
+01:45:16,615 --> 01:45:22,556
+16 bitlik. O zaman burada sadece 16 bitlik bir yaz maç kullanabiliriz. 8 bitlik bir yaz maç kullanamayız.
+
+550
+01:45:22,556 --> 01:45:26,855
+Yani burada yapabileceğimiz şey, MOV.
+
+551
+01:45:27,188 --> 01:45:35,127
+SI'ya, AX, BX, DX gibi 16 bitlik bir yazmaçtan değer atayabiliriz. Başka bir yerden de değer atayamayız.
+
+552
+01:45:40,659 --> 01:45:41,779
+Bir sonraki işlem,
+
+553
+01:45:41,779 --> 01:45:44,819
+Memory Register işlemi.
+
+554
+01:45:56,595 --> 01:46:08,695
+Memory to register. Bir daha bakalım neydi? Memory to register. Tamam. MOV, mesela, BX virgül, hep 100H yazmayalım.
+
+555
+01:46:18,292 --> 01:46:36,752
+Bunu yazabiliyoruz, değil mi? Peki bunun şundan bir farkı var mı? Neredeydi o? Şundan bir farkı var mı? Mesela word pointer, byte pointer belirtmemiz gerekti ya burada, memoriye sabit bir değer atarken. Burada öyle bir durum gerekli mi sizce?
+
+556
+01:46:46,036 --> 01:46:47,916
+Değil. Neden değil peki?
+
+557
+01:46:49,856 --> 01:46:52,536
+Burada herhangi bir tip belirtecine gerek yok. Neden?
+
+558
+01:47:00,051 --> 01:47:04,771
+Evet, zaten biz burada BX'i harici bir şekilde belirtmişiz.
+
+559
+01:47:09,331 --> 01:47:10,711
+Ayraç derken
+
+560
+01:47:15,028 --> 01:47:16,167
+Var, var, evet, var.
+
+561
+01:47:20,020 --> 01:47:39,680
+köşeli parantez var burada. Çünkü bir memori adresinin içeriğini yazmaca atacağız. Burada yapılan işlem tipi BX kullanıldığı için 16 bitlik bir işlem olduğu bariz bir şekilde belli. Peki şunu bakalım şimdi. Bu işlemi, bu işlem yürütülmeden önce hafızadaki yerleşim şöyle olsun.
+
+562
+01:47:46,387 --> 01:47:52,248
+250H adresi, 251H adresi, 252H adresi olsun.
+
+563
+01:47:55,208 --> 01:48:01,467
+Burada ABH var, burada 1, 2H var, burada 3, 4H var.
+
+564
+01:48:03,948 --> 01:48:11,547
+Bu ilk hafıza değerleriyle bu komut yürütüldükten sonra BX'in içeriği ne olur diye soralım.
+
+565
+01:48:17,268 --> 01:48:19,148
+1, 2, A, B, H mı oluyor hocam?
+
+566
+01:48:20,108 --> 01:48:22,328
+1, 2, A, B, H oluyor. Evet.
+
+567
+01:48:22,688 --> 01:48:37,528
+Little End'in formatı kullanıldığından dolayı bu 16 bitlik bir değer ve diyoruz ki 250H adresinden itibaren, yani şu adresten itibaren yerleşik olan 16 bitlik veriyi al.
+
+568
+01:48:38,068 --> 01:48:42,188
+Bu adresten itibaren yerleşik olan 16 bitlik veri şu ikisinden oluşuyor.
+
+569
+01:48:42,787 --> 01:48:51,527
+Ve biz 8086'da little and informatı kullandığımız için 250H adresindeki değer bizim verimizin düşük anlamlı baytını oluşturuyor.
+
+570
+01:48:52,167 --> 01:48:57,648
+251H'daki değer ise bizim verimizin yüksek anlamlı baytına karşılık geliyor.
+
+571
+01:48:58,287 --> 01:49:02,307
+Dolayısıyla cevap 1, 2, A, B, H şeklinde gerçekleşmiş oluyor.
+
+572
+01:49:03,551 --> 01:49:08,771
+yine benzer şekilde aynı hafıza içeriği varken biz şu komutu çalıştırsaydık.
+
+573
+01:49:15,252 --> 01:49:30,972
+Bu komut sonucunda da, yani bu içerik varken, bu komutu çalıştırsaydık, bu durumda da AL'ye atanacak değer, 250H'den itibaren 1 byte'lık değer. O da AB'nin kendisi. Dolayısıyla ABH değeri atanmış olacaktı arkadaşlar.
+
+574
+01:49:32,472 --> 01:49:39,192
+8 bitlik ve 16 bitlik örneği bu şekilde yapmış olduk. Bir sonraki örneğimiz bunun tersi yönünde. Yani
+
+575
+01:49:40,212 --> 01:50:06,432
+tersi yönünde derken burada hafızadan yazmacı aktardık. Tersi de geçerli. Yapılabiliyor yani. Ne demek o? Ben şunu da yapabilirdim. MOV, 250H, BX de diyebilirdim veya MOV, 250H, AL diyebilirdim. İkisi de geçerli.
+
+576
+01:50:07,091 --> 01:50:09,391
+Birinci komut çalıştırıldığında
+
+577
+01:50:16,083 --> 01:50:23,163
+Şu komut çalıştırıldığında hem 251'deki değer güncelleniyor hem de 250'deki değer güncelleniyor.
+
+578
+01:50:24,163 --> 01:50:27,184
+Bu alttaki komut 8 bitlik komut çalıştırıldığında ise
+
+579
+01:50:27,184 --> 01:50:32,923
+250H, 251H olsun.
+
+580
+01:50:33,684 --> 01:50:38,923
+Bu komut çalıştırıldığında ise sadece 250H'daki değer güncellenmiş oluyor doğal olarak.
+
+581
+01:50:42,579 --> 01:50:47,720
+Bunları yaptık. Bir başka komutumuz, MOV, S, REC, REC. Bunun örneğini vermiştik zaten.
+
+582
+01:50:52,724 --> 01:51:07,724
+tersi de var herhalde. Şu ikisini ele alalım. Segment yazmacına bir başka yere yazmaçtan atama yapabiliriz veya segment yazmacı değerini alıp okuyabiliriz. Yani şu ikisi valid.
+
+583
+01:51:18,323 --> 01:51:39,543
+cs, SI diyebilirim. Bu bir segment yazmacı, bu genel amaçlı bir yazmaç, bir register. Dolayısıyla ileri yönde ve geri yönde atama yapmamız mümkün. Bir de ortadaki değer var, ona bakalım. Memory'den segment yazmacını atamak mümkünmüş. Onun örneğinde şöyle düşünelim.
+
+584
+01:51:44,467 --> 01:51:58,748
+20H şeklinde. Peki buradaki işlemin özellikle tipini belirtmek gerekirse buradaki işlemin tipi nedir arkadaşlar? 8 bit, 16 bit. Az önce de söylemiştik.
+
+585
+01:52:04,307 --> 01:52:07,248
+Aynı şekilde şuradaki işlemin de tipini söyleyebilirsiniz.
+
+586
+01:52:21,011 --> 01:52:21,891
+ne derseniz
+
+587
+01:52:26,228 --> 01:52:29,787
+soldaki segment yazmacı var diye 16 bit. Evet, doğru.
+
+588
+01:52:32,188 --> 01:52:32,787
+Sağdaki
+
+589
+01:52:39,667 --> 01:53:04,228
+Sağdaki de segment yazmacı olduğu için bu da, evet, DS, data segment, o da bir segment yazmacı, bu da 16 bitlik bir işlem. Bunun farkında olursak sıkıntı yok. Geriye ne kaldı? Bir de register'dan, onu da tam halini şuraya yazalım örneğini, MOV, 20H, DS. Yine bu işlem de,
+
+590
+01:53:05,076 --> 01:53:15,836
+16 bitlik bir işlem olduğu için hem 20H hem de 21H DSD'deki düşük anlamlı 8 bit ve yüksek anlamlı 8 bit ile doldurulmuş oluyor arkadaşlar.
+
+591
+01:53:17,015 --> 01:53:21,836
+Dolayısıyla bu veri aktarım komutlarından MOV komutunu tamamlamış oluyoruz.
+
+592
+01:53:23,195 --> 01:53:26,596
+MOV ile ilgili sormak istediğiniz bir şey var mı? Bir sonrakine geçeceğim.
+
+593
+01:53:27,636 --> 01:53:29,756
+Hocam, memorilere 8 biter mi oluyor?
+
+594
+01:53:30,676 --> 01:53:38,355
+varsayılan olarak bizim dersimiz kapsamında bir hafıza gözünün kapasitesi bir byte, yani 8000.
+
+595
+01:53:45,908 --> 01:53:47,888
+Şimdi başka bir soru varsa onu da alalım.
+
+596
+01:53:54,163 --> 01:53:57,344
+Yoksa load efektif adrese geçiyoruz şimdi arkadaşlar.
+
+597
+01:53:58,284 --> 01:54:02,623
+Load efektif adresi güzelce inceleyelim.
+
+598
+01:54:03,444 --> 01:54:07,364
+LEA kısaltmasıyla tanımlı bir komut load efektif adres diyor.
+
+599
+01:54:08,503 --> 01:54:10,844
+Bu nasıl çalışıyormuş bakın.
+
+600
+01:54:10,844 --> 01:54:13,904
+Bir tane memori içeriye alıyor.
+
+601
+01:54:14,364 --> 01:54:18,344
+Bu bir adres olabileceği gibi.
+
+602
+01:54:18,899 --> 01:54:23,919
+Aynı zamanda bir değişken de olabilir. Zaten çoğunlukla değişken üzerinden kullanılıyor.
+
+603
+01:54:25,079 --> 01:54:33,399
+Karşı tarafta da bir 16 bitlik yazmaç birinci operant olarak kullanılıyor.
+
+604
+01:54:34,619 --> 01:54:35,859
+Yaptığı işlem neymiş?
+
+605
+01:54:35,859 --> 01:54:44,139
+Vermiş olduğumuz değişkenin, parametre olarak vermiş olduğumuz değişkenin kendi segmentindeki offset değerini hesaplayıp
+
+606
+01:54:44,500 --> 01:54:46,699
+Bu verdiğimiz birinci operanda atıyor.
+
+607
+01:54:47,800 --> 01:54:48,579
+Şimdi bu ne demek?
+
+608
+01:54:48,979 --> 01:54:50,340
+Şöyle çizerek gösterelim.
+
+609
+01:54:56,404 --> 01:55:22,543
+Şöyle düşünelim, bu bizim hafıza bölgemiz olsun. Bu hafıza bölgesi içerisinde bizim hani bahsetmiştik ya, programlarımızın 3 tane segmente ihtiyacı var. Veri kesimine, kod kesimine ve yığın kesimine ihtiyacı var. Bu bellek alanı içerisinde bizim tanımladığımız mesela data segment alanı şurada gösterdiğimiz kısım olsun, kırmızıyla işaretlediğimiz kısım olsun. Mesela bunun hemen peşine
+
+610
+01:55:23,315 --> 01:55:28,315
+kod segment yerleşik olsun. Bunun hemen peşine de
+
+611
+01:55:28,315 --> 01:55:43,315
+yığın yazmacı yerleşik olsun. Burası işte yığın. Burası kod kesimimiz. Burası da bizim veri kesimimiz olsun.
+
+612
+01:55:43,315 --> 01:55:49,315
+Veri kesimi içerisinde biz ne yapıyoruz? Değişkenler tanımlıyoruz. Bir sürü değişken tanımladık.
+
+613
+01:55:49,600 --> 01:56:00,480
+Bu değişkenlerden bir tanesi de sırası geldiği yer itibariyle veri kesimi içerisinde belirli bir bölgeye yerleşmiş oluyor.
+
+614
+01:56:01,740 --> 01:56:07,420
+Load Effective Address dediğimiz komut, ilgilendiğimiz değişkenin
+
+615
+01:56:08,020 --> 01:56:33,819
+kendi kesimi içerisinde, veri kesiminde tanımladık ya, kendi kesimi içerisinde başlangıç adresinden itibaren ne kadar uzaklıkta olduğunu, ne kadar offsette olduğunu bize veriyor. Bu aynı zamanda bunun, bu ve değişkenin pointer'ını veriyor gibi düşünebilirsiniz. Bir nevi pointer'ın adresini diyelim. Pointer deyince karışacak çünkü. Bunun adresini veriyor.
+
+616
+01:56:34,644 --> 01:56:53,403
+bu değişkenin, ilgilendiğimiz bu değişkenin adresini bize veriyor. Bunun temel kullanım amacı şu arkadaşlar. Büyük boyutlu bir takım veriler tanımladığımız zaman bunları byte byte manipüle etmek istediğimiz zaman load efektif adres çok kullanışlı oluyor.
+
+617
+01:56:54,036 --> 01:57:07,675
+Dikkat edeceğimiz bir nokta, offset değeri. Burada başlangıçtan itibaren offset değerini veriyor demiştik ya, bu offset değeri 16 bitlik olabileceği için yani baştan itibaren mesela bizim verimiz şu en son kısımda da olabilirdi.
+
+618
+01:57:08,795 --> 01:57:17,175
+En son kısımda da olabilirdi. Dolayısıyla olası en kötü durum senaryosunda F, F, F, F olabilir mesela.
+
+619
+01:57:17,811 --> 01:57:25,992
+Dolayısıyla bu offset dediğimiz değer 16 bitlik bir değerdir. Ondan dolayı buradaki atama 16 bitlik bir yazmaca yapılıyor.
+
+620
+01:57:26,891 --> 01:57:32,412
+Şimdi dediğimiz gibi bunun load efektif adresle aldığımız değer bir adres olduğu için
+
+621
+01:57:33,779 --> 01:57:51,779
+Biz tekrar bu veriye erişmek istediğimizde köşeli parantez içerisinde kullanacağız bunu. Dolayısıyla load efektif adres ile load efektif adres komutuyla bir değişkenin adresini aldığımız zaman bunu atacağımız değişkenin BX, SI veya DI gibi
+
+622
+01:57:52,404 --> 01:58:02,104
+bir köşeli parantez içerisinde yazılabilir, yazmaç olması faydalı olur. Çünkü neticede köşeli parantezle o değişkene erişmeyi çalışacağız.
+
+623
+01:58:03,684 --> 01:58:07,264
+Şöyle bakalım. Buna ilişkin bir örneği şöyle verelim.
+
+624
+01:58:10,707 --> 01:58:14,367
+Şimdi veri kesiminde şu şekilde birtakım tanımlamalar yapmış olalım.
+
+625
+01:58:20,564 --> 01:58:23,043
+Bunu şöyle göstermiştim, bir saniye.
+
+626
+01:58:25,264 --> 01:58:26,983
+Hemen o örneği de bulayım.
+
+627
+01:58:29,323 --> 01:58:31,304
+Sabahki dersler nasıl yaptıysak aynı yapalım.
+
+628
+01:58:42,963 --> 01:58:49,403
+Şimdi bu ekranda görmüş olduğunuz yapı arkadaşlar, gerçek bir data segment tanımlaması.
+
+629
+01:58:50,483 --> 01:58:58,963
+Bunu şöyle düşünebilirsiniz, şu başlangıçta bu data segmentin veya kullandığımız segmentin ismi DataSG isimli bir segmentmiş.
+
+630
+01:58:59,823 --> 01:59:09,543
+Burası segment tanımlamaya başladığımız, yani parantezi açtığımız yer, şurası da segment tanımını bitirdiğimiz, parantezi kapadığımız yer.
+
+631
+01:59:10,163 --> 01:59:20,043
+İçeride dört tane değişken tanımlamışız. Bunların yerleşimine bir bakalım. Öncelikli olarak bunları hafızada yerleştirmeye bir çalışalım.
+
+632
+01:59:20,043 --> 01:59:21,043
+Tamam mı?
+
+633
+01:59:23,063 --> 01:59:28,523
+Dolayısıyla şimdi az önceki çizdiğimiz yapıya benzer bir yapı çizeceğiz.
+
+634
+01:59:30,283 --> 01:59:32,264
+Biz bu tanımlamayı yaptıktan sonra
+
+635
+01:59:33,427 --> 01:59:58,587
+Programımızı Assembler'dan geçirdik ve programımızı çalışabilir hale getirdik diye egze oluştu. Programımızı çalıştırdığımız zaman programımızda gerekli olan data segment, kod segment ve stack segment, yin segmenti işletim sistemi tarafından uygun boş alanlara yerleştiriliyor. Yani benim data segment değerim kod çalıştırılırken belirleniyor. Dikkat etmemiz gereken bir nokta bu.
+
+636
+02:00:00,000 --> 02:00:07,439
+ben programı çalıştırdığımda bana data segment için şöyle bir alan ayrıldı diyelim. Tamam mı?
+
+637
+02:00:12,051 --> 02:00:19,152
+çizemiyorum bunu ama neyse. Şimdi burada şunu iki alana ayırmak istiyorum. Şurayı.
+
+638
+02:00:23,475 --> 02:00:28,435
+Bu bütün hafızayı göstersin, bu bütün hafızayı göstersin, şu iki çizgi.
+
+639
+02:00:30,996 --> 02:00:38,515
+Bütün hafızayla ilgilendiğim için aslında benim fiziki adres değerim var, yani 20 bitlik adresim var.
+
+640
+02:00:40,615 --> 02:00:44,496
+Bir de ilgilendiğim segment içerisindeki kısım var.
+
+641
+02:00:44,796 --> 02:00:47,815
+Benim data segmentimde programım çalıştırıldıktan sonra
+
+642
+02:00:48,340 --> 02:00:52,480
+Şu aralığa yerleştirilmiş olsun örneğin. Bu aralığa yerleştirilmiş olsun. Tamam mı?
+
+643
+02:00:54,020 --> 02:00:55,380
+Şimdi bunu açıp bakalım.
+
+644
+02:00:56,980 --> 02:01:00,900
+Baktığımız zaman fiziki adres olarak burada kaç tane değere ihtiyacımız var?
+
+645
+02:01:01,000 --> 02:01:04,640
+2, 4, 6, 8 tane değere ihtiyacımız var. Bakalım dönemine çalışalım.
+
+646
+02:01:11,188 --> 02:01:13,188
+birazcık daha alanımız büyüsü.
+
+647
+02:01:22,387 --> 02:01:45,507
+gösterme amaçlı olarak düşünün. Bize tanımlanan data segment şurada kalın çizgilerle çizdiğim alan olsun. Programım yüklendikten sonra gösterim amaçlı olarak bu şekilde yaptım. Bu alan bize ayrılan kısım olmuş olsun. Bunun fiziki olarak adreslerine baktığımız zaman mesela en düşük adresimiz
+
+648
+02:01:45,971 --> 02:02:00,511
+010000H, 20 bitlik bir değer. Buna karşılık geliyor ilk adresim. İkinci adresim, bir sonraki adresim 20 bitlik olarak 0100100H, 20 bitlik fiziki adres buna karşılık geliyor. Nokta nokta nokta diye gidiyor.
+
+649
+02:02:13,076 --> 02:02:39,755
+şu adres 0000H offseti. Tamam mı? Şu adres. Bu adres, bu data segmentin yani DSN'in 0000H offseti. Ama bu ilgilendiğim data segmentin 0000H offseti fiziki adres olarak şuna denk geliyor. Neden? Çünkü data segment değerim 0100H'mış.
+
+650
+02:02:40,435 --> 02:02:55,435
+Bunu 10H ile çarptım. 010000 oldu. Ona 1 ekledim. Offset değerim de 00001'di. 01001H oldu. 20 bitlik fiziki adresim bu. Ama benim ilgilendiğim...
+
+651
+02:02:55,828 --> 02:03:01,968
+Şimdi program daha hafızaya yüklenmeden DS değerim belli olmadığı için belirsiz bir değerle uğraşmak istemiyorum.
+
+652
+02:03:02,408 --> 02:03:08,408
+O yüzden dolayı buradaki değişkenleri hep bu başlangıç adresine göre offsetler şeklinde tanımlıyorum.
+
+653
+02:03:09,288 --> 02:03:15,048
+İlk tanımlamamızı yaptık. A sayısı define word 13 decimal değeri.
+
+654
+02:03:15,956 --> 02:03:23,895
+Bu değeri hafızaya yerleştirmek istesek ne yapacağız? Hafızada mesela sıfır offsetinden itibaren yukarı doğru da adresler artıyor.
+
+655
+02:03:25,175 --> 02:03:34,975
+Adresler artıyor. Dolayısıyla 13 desimal değerini, A sayısı değişkenini ben hafızaya yerleştirmek istesem hafızaya nasıl yerleşir?
+
+656
+02:03:48,051 --> 02:04:13,971
+Yine şu adres 00001 offsetim. Şu adres 00002H offsetim. Şu 00003H offsetim. 00004H offsetim. 4 bu. 5H. 6H.
+
+657
+02:04:14,707 --> 02:04:29,347
+Bu da 0, 0, 0, 7, H, offset'im. Tamam. Buraya bu değerler nasıl yerleşecek? Var mı cevabımız? A sayısıyla başlayalım. A sayısı nasıl yerleşecek?
+
+658
+02:04:29,347 --> 02:04:32,327
+0, 0.
+
+659
+02:04:38,963 --> 02:04:43,164
+00, doğru. 13'ün desimal, hexadesimal karşılığını hesaplarsa.
+
+660
+02:04:44,784 --> 02:04:49,484
+Şimdi [öğrenci]'un yazdığına cevabım, bir küçük araya girip bir şey söyleyebilir miyim?
+
+661
+02:04:50,083 --> 02:04:53,131
+[öğrenci]'un yazdığı cevaba ilişkin olarak, yani...
+
+662
+02:04:53,363 --> 02:05:12,903
+veri kesiminde bir tanımlama yapıyoruz. Bunların bir instruction karşılığı yok. Bu doğrudan 0013 veya 13 decimal değerimizi doğrudan binary karşılık olarak getirip yerleştireceğiz şimdi. Dolayısıyla bunlar komutla gerçeklenmiyor. Şimdi alalım cevabı.
+
+663
+02:05:16,500 --> 02:05:18,460
+13 desimali nasıl yerleştiriyoruz?
+
+664
+02:05:44,884 --> 02:05:51,243
+O zaman 0, D, 0, 0.
+
+665
+02:05:52,503 --> 02:05:56,783
+Değil mi? Bu şekilde yerleşmesi lazım. Çünkü define word, 16 bitlik bir değer.
+
+666
+02:05:57,583 --> 02:06:02,023
+0, 0, 0, D. Şunlar 0 olduğunu şöyle göstereyim. Bu D.
+
+667
+02:06:03,163 --> 02:06:09,023
+Sonra B sayısını yerleştirelim. Bu sırada A sayısı dediğimiz şey adres olarak nereyi gösteriyor?
+
+668
+02:06:12,148 --> 02:06:15,208
+Buraya karşılık geliyor. Yani sıfır offsetine karşılık gelecek.
+
+669
+02:06:16,048 --> 02:06:25,328
+B sayısı. Bundan sonraki gelen boşluktaki iki tane byte gözüne, iki tane hafıza gözüne 15 değerini yerleştirmeliyiz.
+
+670
+02:06:25,428 --> 02:06:26,688
+Yazacağımız değer ne olmalı?
+
+671
+02:06:27,168 --> 02:06:27,628
+Sıfır F.
+
+672
+02:06:30,568 --> 02:06:34,748
+Yüksek anlamlı kısımları boş olduğu için yine sıfır olarak onları da yazdım.
+
+673
+02:06:35,380 --> 02:06:55,559
+Bir tane GCD diye bir değişkenimiz varmış. Word tipinde tanımlı ama değerini bilmiyoruz veya initial değer atamamışız. Bunun anlamı şu, buralarda initialization sonrasında hafızada rastgele değerler ne varsa onlar kalsın. Çünkü ben buradan değer okumayacağım, direkt buraya değer yazacağım anlamına gelir bu.
+
+674
+02:06:56,559 --> 02:07:00,559
+Bir sonraki değişkenim deneme. Şöyle yazalım, şu B sayısıydı.
+
+675
+02:07:04,083 --> 02:07:29,943
+Şu GCD dediğimiz değişken. Şuradan itibaren de deneme isimli değişkenim yerleşecek. Denemede eksi birmiş. Eksi bir olduğuna göre buralara ne yazmalıyız? Word tipinde. Evet, hepsi F olacak şekilde. GCD negreden iki hücre aldı çünkü Word tipinde. Aynı şeyi burası için de sorabilirdik. 13 byte'a sığıyor.
+
+676
+02:07:30,368 --> 02:07:43,508
+ama VizWord'a yerleştirmişiz gibi. Tamam mı? Onun cevabı orada. Dolayısıyla burada deneme değişkenine bizim atacağımız değerler FF, FF şeklinde olacak. Şimdi.
+
+677
+02:07:44,000 --> 02:07:49,799
+Veri kesimindeki tanımlamaya karşılık hafızayı, hafızadaki yerleşim bu şekilde oldu.
+
+678
+02:07:49,859 --> 02:07:51,500
+Herhangi bir makine kodu karşılığı yok.
+
+679
+02:08:34,644 --> 02:08:40,264
+Bu komutların çalıştırılması sonucunda BX, S ve D değerleri hangi değerleri alır?
+
+680
+02:08:47,731 --> 02:08:48,572
+Ne dersiniz?
+
+681
+02:09:01,876 --> 02:09:02,996
+Var mı yorumu olan?
+
+682
+02:09:08,115 --> 02:09:27,235
+Yani işte onları söyleyin bana. İşte hepsini yazdım buraya. Her birisi kaç byte? Her birisini yazdım buraya. Bak A sayısı buradan itibaren başlıyor. İki tane göz kaplamış. B sayısı buradan başlıyor. İki tane göz kaplamış. GC'de buradan başlıyor. İki tane göz yer kaplamış. Deneme buradan başlıyor. İki tane göz yer kaplamış.
+
+683
+02:09:28,155 --> 02:09:32,735
+Ve bunların offset değerleri de yani adresler de burada yazıyor.
+
+684
+02:09:45,779 --> 02:09:51,859
+Ben tam olarak load effective adres, BX A sayısı dediğimizde BX'e ne atamalıyız, onu bekliyorum.
+
+685
+02:09:53,800 --> 02:09:55,319
+Bana değer söylemeniz lazım.
+
+686
+02:09:57,599 --> 02:09:59,460
+BX bir tane değer alacak çünkü.
+
+687
+02:10:00,819 --> 02:10:03,359
+Evet, BX sıfır değerini alacak. Neden?
+
+688
+02:10:08,979 --> 02:10:09,979
+Ne da?
+
+689
+02:10:20,595 --> 02:10:21,775
+Evet, kesinlikle.
+
+690
+02:10:22,255 --> 02:10:26,475
+Load efektif adres, değişkenin tanımlı olduğu segmentte
+
+691
+02:10:33,587 --> 02:10:42,627
+Hayır, A sayısının bu 0, 0, 0, H değerinde 0, D var. 0 değeri yok, dikkat et. 0, D var burada. 13'tü ya, 0, D var.
+
+692
+02:10:43,787 --> 02:10:50,807
+A sayısı tanımlı olduğu segment içerisinde başlangıçtan itibaren ne kadar uzakta? Başlangıç zaten burası.
+
+693
+02:10:50,967 --> 02:10:56,967
+Bakın, şurası başlangıç yeri. Bu data segmentin başlangıcı burası. Başlangıçtan ne kadar uzakta? 0 uzakta.
+
+694
+02:10:57,344 --> 02:11:02,444
+tam olarak [öğrenci]'in dediği gibi sıfır uzakta. Dolayısıyla değeri sıfır.
+
+695
+02:11:02,884 --> 02:11:10,244
+SI hangi değeri alacak? SI'da B sayısı tanımlanmış olduğu segment. Bu data segment içerisinde.
+
+696
+02:11:10,344 --> 02:11:15,644
+Yani başlangıçtan itibaren ne kadar uzakta? Sıfır, bir, iki byte ötede.
+
+697
+02:11:16,095 --> 02:11:42,575
+iki offset ötede. O zaman SI'nin değeri de 0, 0, 0, 2H olacak. DI'nin değeri ne olacak? Load efektif adresi DI deneme dediğimiz zaman deneme değişkeni kendi tanımlanmış olduğu segmentte başlangıçtan itibaren ne kadar uzaktaysa 0, 1, 2, 3, 4, 5, 6 offset ötede. O zaman DI değeri de 0, 6H olmuş olacak arkadaşlar.
+
+698
+02:11:43,007 --> 02:11:45,447
+Şimdi burada ben şunu yaparsam
+
+699
+02:11:45,447 --> 02:12:09,187
+Şöyle diye, MOV AL, BX dersem ve MOV DX, DI dersem ne oluyor? Bir de bunlara bakalım. Tamam mı? Önce şuna bakalım. Şu alttakine bakalım. Tamam mı?
+
+700
+02:12:10,195 --> 02:12:13,155
+MOV DX, DI dersem ne oluyor?
+
+701
+02:12:15,235 --> 02:12:16,775
+Şununla ilgileniyoruz.
+
+702
+02:12:17,615 --> 02:12:21,435
+Şimdi burada bir köşeli parantez olduğuna göre hafıza erişimi var.
+
+703
+02:12:22,015 --> 02:12:23,395
+Hangi adrese erişiyorum?
+
+704
+02:12:23,891 --> 02:12:50,372
+Bu tanımlı olan, kullandığım data segmentin, bu veri erişimiyle ilgili olduğu için, şurada aslında data segmentin DI'sına erişiyorum demektir bu. DS burada varsayılan segment yazmacı çünkü bu erişimde. DS burasıydı, şuydu, başlangıcı şurasıydı. Bunun 6 offset ötesine gidiyorum. 6 offset ötede ne var? 0, 1, 2, 3, 4, 5, 6. Şu varmış.
+
+705
+02:12:51,028 --> 02:13:16,488
+Burası 6 offset ötede. Buradan başlayarak ne okumayılayım? 16 bit büyüklüğünde bir değer okumalıyım. Buradan başlayan 16 bitlik değer şu ikisini de kapsar. Little Ending formatında bunları yan yanına yazacak olursak bu işlem sonucunda, bu işlem sonucunda DX'e atınacak değer FFFH olacaktır. Tamam mı? Burası net mi arkadaşlar?
+
+706
+02:13:17,268 --> 02:13:26,187
+Ne yaptık o zaman? Bir değişkenim vardı. O değişkenin referansını veya adresini aldım. O adres üzerinden erişim yaptım.
+
+707
+02:13:30,676 --> 02:13:53,956
+Tekrar söyleyelim. Load effective address. Şöyle şuradan gidelim. Load effective address. İki tane operant alıyor. Operantlardan bir tanesi bir 16 bitlik yazmaç olabilir. İkincisi ise bir adres veya değişken olabilir. Yaptığı işlem şu. İlgili değişken, ilgili değişken.
+
+708
+02:13:54,515 --> 02:14:20,796
+Kendi segmenti içerisinde, bu segment, bu segment içerisinde bir tane değişken tanımladım. Değişkenim bu. Bu yukarı doğru adresler artıyor. Burası segmentin sıfırı olsun. Bu segment içerisinde, bu değişken, segmentin başlangıcından itibaren ne kadar uzaktaysa o değeri veriyor. Bak burada ne oldu şimdi? Yerleştirdik hafızaya. Segmentin başlangıcı şurasıydı, şu göz.
+
+709
+02:14:21,427 --> 02:14:27,488
+A sayısı zaten en başta. Önce A sayısını, sonra B sayısını, sonra GC'deyiz, sonra denemeyi yerleştirdik.
+
+710
+02:14:27,988 --> 02:14:35,087
+A sayısı bu segmentin en dibinde. Dolayısıyla segmentin başlangıcıyla arasındaki fark sıfır.
+
+711
+02:14:36,188 --> 02:14:41,568
+B sayısı segmentin iki offsetinde. Yani önce bir word yerleştirdim, sonra B sayısını yerleştiriyorum.
+
+712
+02:14:42,207 --> 02:14:46,768
+Sıfır offset, bir offset, iki offset. Başlangıçtan iki uzakta yer alıyor.
+
+713
+02:14:50,260 --> 02:15:16,739
+değişkeni saklamıyor. Sadece başlangıçtan itibaren ne kadar uzakta olduğunu. Bakın burada yazdım zaten. BX'de A sayısı 13'tü. BX'de 13 değeri yok. BX'de başlangıçtan itibaren ne kadar uzakta oldu. Yani sıfır uzaklıkta. Sıfır değeri var. Aynı şey B sayısı için de yaptık. B sayısının değeri S'ı da saklanmıyor. Yani burada yaptığımız işlem şey değil.
+
+714
+02:15:17,140 --> 02:15:18,800
+Bu bir MOV işlemi değil.
+
+715
+02:15:20,740 --> 02:15:28,040
+Şunu yapsaydık mesela, MOV, BX, A sayısı demiş olsaydık, bu aslında şu demek.
+
+716
+02:15:31,507 --> 02:15:51,587
+A sayısı offset olarak sıfırda ya, bu buna karşılık geliyor. MOV, BX, 0 demek. O da bu işlem sonucunda BX'de 13 değeri oluşurdu. Evet. Ama biz MOV işlemi yapmıyoruz. Bizim yaptığımız işlem efektif adresini alıyoruz. Yani başlangıçtan itibaren ne kadar ötede olduğunu alıyoruz.
+
+717
+02:15:52,467 --> 02:16:00,147
+Dolayısıyla B sayısının değeri 15 ama load efektif adres SI, B sayısı dediğimde SI'ye 15 yüklenmiyor.
+
+718
+02:16:00,767 --> 02:16:08,907
+B sayısı tanımlı olduğu segment içerisinde başlangıçtan ne kadar uzaktaysa o uzaklık değeri, 2 değeri alınıyor, offset değeri alınıyor.
+
+719
+02:16:11,527 --> 02:16:14,447
+Bu SI pointer gibi mi işlev görüyor bundan sonra?
+
+720
+02:16:15,647 --> 02:16:17,527
+İşte evet tam olarak onu söyleyeceğim.
+
+721
+02:16:17,939 --> 02:16:36,119
+Mesela siz bir değişken tanımladıktan sonra onun adresini bir pointera atasanız, o pointer tipini de char'a dönüştürseniz, int'den char'a dönüştürseniz, artık 8 bitlik olarak verilere erişirseniz ya, burada da tam olarak onu yapacağız. Şu ikinci örnekte de tam olarak onu yapacağız.
+
+722
+02:16:42,868 --> 02:17:04,247
+hangi segmentteki? DS segmentindeki DI offsetine, yani segmentimizin başlangıcı buydu. Buradan DI'daki değer 6, 6 offset ileri gittim, şurayı buldum. Bu adres ve bundan bir sonraki adresi alacağım çünkü DX 16 bittik bir işlem. Bu iki adres içerisindeki Littleland Informatik'indeki değeri DX'e atadım.
+
+723
+02:17:07,188 --> 02:17:16,368
+Evet, olurdu. Soru şu, SI yerine CX olsa olur muydu? Köşeli parantez içerisinde CX kullanamayacağımız için şu ikinci kısmı yapamazdık.
+
+724
+02:17:22,579 --> 02:17:36,560
+Dolayısıyla gittik, 16 bitlik değeri aldık, DX'e atadık. Şimdi şuna bakalım, şu işlemi nasıl yapacağız diye bakalım. Şöyle aşağı kaydım. BX'te ne var?
+
+725
+02:17:37,012 --> 02:18:04,412
+A sayısı var, A sayısının adresi var, öyle düşünelim. BX'de A sayısının adresi var. Kendi segmentine göre görece adresi var. Yani başlangıçtan itibaren ne kadar offsette olduğu bilmesi var. BX'deki değerimiz yani sıfır. Ben şu işlemi yaptığım zaman, BX'de sıfır var ise, şu köşeli parantezin anlamı, ilgili data segmentin BX offsetine git. Yani data segmentin sıfır offsetine git.
+
+726
+02:18:04,755 --> 02:18:06,236
+O zaman şuradayım ben.
+
+727
+02:18:07,615 --> 02:18:11,295
+Buradan itibaren AL olduğu için bir byte'lık işlem yap.
+
+728
+02:18:11,456 --> 02:18:12,736
+Yani sadece şunu al.
+
+729
+02:18:13,795 --> 02:18:18,376
+Bu işlem sonucunda AL'ye arkadaşlar 0DH atanır.
+
+730
+02:18:19,195 --> 02:18:19,376
+Tamam.
+
+731
+02:18:20,376 --> 02:18:21,635
+Dolayısıyla ne yaptık bakın.
+
+732
+02:18:21,635 --> 02:18:29,635
+Veri kesiminde word olarak tanımlanmış değişkenlerin ben gidip
+
+733
+02:18:30,324 --> 02:18:32,623
+bir byte parçasına erişebildim.
+
+734
+02:18:34,064 --> 02:18:36,684
+Mesela burada şu da geçerli bir senaryo.
+
+735
+02:18:41,940 --> 02:18:57,500
+küçülteyim, o da görüntüye girsin. Şunu da yapabilirdik. MOV, AH virgül, BX artı bir de diyebilirdik. Bu durumda ne olacaktır? Tahmininiz nedir?
+
+736
+02:19:01,396 --> 02:19:04,036
+AH'a atanacak değer. Hangi adres gözü?
+
+737
+02:19:04,616 --> 02:19:05,676
+Sıfır mı atanır hocam?
+
+738
+02:19:06,396 --> 02:19:09,716
+Sıfır atanır ama şu adres gözünden dolayı sıfır atanır.
+
+739
+02:19:10,076 --> 02:19:10,195
+Tamam.
+
+740
+02:19:12,436 --> 02:19:15,216
+Evet, birinci adres gözü. Kesinlikle birinci adres gözü.
+
+741
+02:19:15,716 --> 02:19:20,596
+Dolayısıyla artık ben load efektif adres kullandığım zaman büyük bir veriyi
+
+742
+02:19:20,979 --> 02:19:33,939
+küçük çanklara bölüp her birisine ayrı ayrı erişebiliyorum ve istersen belirlediğim sabit referansa göre burada sabit bir değer ekleyerek sabit referansı load effective address BX ile oluşturmuştuk.
+
+743
+02:19:34,759 --> 02:19:40,219
+Oluşturdum sabit referansa göre sabit değerlerle ileri geri o byte ile ilerleyebilirim.
+
+744
+02:19:44,211 --> 02:19:55,412
+Birinci adres gözü, 00H. Buradaki her bir gözde sadece iki tane hexadesimal basamak yazmışız. Yani bunların her birisi sekiz bit.
+
+745
+02:19:58,711 --> 02:20:05,871
+Birinci adres gözü. Arkadaş onu sormadı galiba. Şu en soldaki adres sırası var ya 00H, 00H.
+
+746
+02:20:06,611 --> 02:20:08,231
+Evet. Onu sordu yani.
+
+747
+02:20:09,731 --> 02:20:11,111
+00H, şu olacak.
+
+748
+02:20:11,827 --> 02:20:12,448
+Şurası.
+
+749
+02:20:14,628 --> 02:20:15,268
+Tamam.
+
+750
+02:20:15,948 --> 02:20:17,487
+Doğru yani. Evet. 0, 0, 1H.
+
+751
+02:20:17,747 --> 02:20:24,487
+Yani şuradaki değer, şuradaki değer, offset değeri olarak 0, 0, 0, 1H olmuş olacak.
+
+752
+02:20:25,507 --> 02:20:26,507
+Yani şurası olacak.
+
+753
+02:20:31,987 --> 02:20:51,987
+yazabiliriz ama işte bir yazdığımız zaman kodu statikleştirmiş oluyoruz. Ben eğer ki bu şekilde statikleştirdikten sonra gelip de değişkenlerin başına bir de x sayısı yazarsam yazamadım. Her an yazabilirim.
+
+754
+02:20:54,987 --> 02:20:56,587
+Yahu gitmiyor ya.
+
+755
+02:20:57,811 --> 02:21:00,731
+Gelip de değişkenlerin başına bir de Allah Allah.
+
+756
+02:21:02,051 --> 02:21:09,932
+X sayısı define byte 2 dersem, senin yaptığın bütün statik hesap kayar.
+
+757
+02:21:10,191 --> 02:21:12,871
+Ondan dolayı load efektif adresi kullanmak anlamlı.
+
+758
+02:21:13,351 --> 02:21:20,652
+Yani kodun bakımı ve iyileştirmesi gibi konular söz konusu olduğu vakit bunu kullanmak lazım.
+
+759
+02:21:27,092 --> 02:21:31,432
+Tamam, şimdi orayı çözdük şimdilik. Dolayısıyla load effective adresinin özelliği bu.
+
+760
+02:21:33,992 --> 02:21:38,572
+Bu herhalde anlaşılmıştır diye düşünüyorum. Önemli bir konu çünkü.
+
+761
+02:21:40,652 --> 02:21:41,672
+Buyurun tabii ki.
+
+762
+02:21:42,231 --> 02:21:45,731
+Hocam bu belle yazma işlemini nasıl yapıyor hocam?
+
+763
+02:21:46,051 --> 02:21:49,772
+İstrakşin yani bu yapmadan direktmen nasıl yazıyor mesela hafızaya?
+
+764
+02:21:50,675 --> 02:21:55,195
+Şu kısım mı? Şununla ilgili olan mı? Şununla ilgili olan mı? Değişkenlerle ilgili.
+
+765
+02:21:55,195 --> 02:21:56,415
+Aynen orası hocam. Aynen orası.
+
+766
+02:21:56,655 --> 02:22:11,295
+Bunu, şimdi mesela biz bunu yazarken aşağıda bir tane kod segmentimiz var. Bunun başı sonu. O öyle işaret etsin. Bir de yığın segmentimiz oluyor. Tamam mı? Bunlar bunun başlangıç sonları olsun.
+
+767
+02:22:12,635 --> 02:22:14,255
+CodeAssembler'dan geçerken
+
+768
+02:22:14,708 --> 02:22:35,648
+data segment için tıpkı bizim yaptığımız gibi bu şekilde karşılıklar hesaplanıp hazırlanıyor ve işletim sistemi bizim için data segment değeri olarak nereyi ayarlamışsa oradan itibaren bu belirlenmiş olan değerler yani burada yaptığımız tanımlamaya göre oluşan değerler direkt birebir yazılıyor, hafızaya yazılıyor.
+
+769
+02:22:35,648 --> 02:22:42,168
+Bir instruction çalıştırmadan direkt o hafızaya yükleniyor.
+
+770
+02:22:45,940 --> 02:22:54,240
+o hafıza seçiliyor, oraya belirli bir değer gönderiliyor. Hafıza bir sonraki değer seçiliyor, oraya belirlediğimiz mesela 00 değeri gönderilmiş. Sırasıyla gönderilmiş oluyor.
+
+771
+02:22:54,760 --> 02:23:01,340
+Kod kısmında da yazmış olduğumuz instrakşınların makine kodu karşılıkları hesaplanıyor. Bunlar da tek tek yazılıyor.
+
+772
+02:23:01,340 --> 02:23:09,060
+Mesela bir ROM entegresine değer atabilmek için veya ROM entegresini programlayabilmek için özel cihazlar var.
+
+773
+02:23:09,556 --> 02:23:33,216
+Oradan belki örnek verirsem daha net olur. O cihaza yerleştirdiğiniz zaman çipi programlama uçlarında uygun koşullama gerilimleri oluşturularak programlama moduna geçiriliyor. Bu programlama moduna geçirildikten sonra adres uçlarında hangi göze değer yazmak istiyorsak o adres değeri oluşturuluyor. Data uçlarından da ilgili değer gönderiliyor. Bu şekilde programlanmış oluyor.
+
+774
+02:23:35,059 --> 02:23:47,159
+Bizim çalıştırdığımız programlar da genellikle diskten RAM'e kopyalanıp RAM tarafında çalıştırılıyor. Dolayısıyla benzer bir süreç bizim çalıştırdığımız programlar için de geçerli olmuş oluyor.
+
+775
+02:23:52,691 --> 02:23:56,471
+Load efektif adresle ilgili var mı başka soracağımız bir şey?
+
+776
+02:24:08,115 --> 02:24:10,076
+Yok herhalde. Bakayım tekrar.
+
+777
+02:24:10,975 --> 02:24:17,835
+Yoksa arkadaşlar, şimdi ikinci bir, benzer bir komut seti daha var. LDS ve LES.
+
+778
+02:24:19,316 --> 02:24:38,355
+Bunlar da aslında benzer şekilde, load efektif adrese benzer şekilde çalışıyor. Fakat load efektif adreste ne yaptık? Bakın dikkat edin, aldığımız değer, ilgilendiğimiz değişken bizim zaten kullandığımız veri kesimindeydi. Yani yakındaki bir adreste.
+
+779
+02:24:39,123 --> 02:24:48,543
+bizim kullandığımız veri kesiminden adres çektik. Peki, bizim kullanmak isteyeceğimiz veri başka bir veri kesiminde ise, çok uzaktaysa ne yapacağız?
+
+780
+02:24:49,243 --> 02:24:55,423
+O zaman işte bizim data segment değerimizi de değiştirip o uzaktaki segmenti işaret etmemiz lazım.
+
+781
+02:24:55,543 --> 02:24:59,004
+Yani bunun görsel olarak açıklamasını şöyle ifade edebiliriz.
+
+782
+02:25:02,763 --> 02:25:04,004
+Örneğin bizim...
+
+783
+02:25:04,691 --> 02:25:31,831
+Hafıza alanımız bu. Hafıza alanına yerleşen kodumuz burada. Biz veri segmenti olarak da bunu kullanıyoruz diyelim. Şu alanı kullanıyoruz. Bu alan içerisindeki bir değişkeni ben işaret etmek istersem, onun adresini almak istersem sadece başlangıçtan itibaren olan uzaklığını almam yeterli. Çünkü DS aynı zaten. DS hep aynı, değişmiyor. Bu load efektif adresi için olan senaryo.
+
+784
+02:25:32,275 --> 02:25:57,655
+İkinci senaryoda ise, hani ne demiştik, 8086'da herhangi bir program, herhangi bir hafızaya erişebilir. Benim kullandığım segment burası ve benim tanımladığım değişken de bunun içerisinde şurada bir değişken veya kod parçam burada olsun. Bu benim data segmentim. Bu data segmentin içerisi, kullandığım data segmentin erişimi şu kadar.
+
+785
+02:25:58,611 --> 02:26:18,611
+Bu kadar. Yani offset değerini ne kadar değiştirirsem değiştireyim. Sıfırdan FFF'e kadar değiştirirsem bu aralıkta gezebiliyorum. Ama benim erişmek istediğim, benim şurada çalışan kodumun erişmek istediği veri çok daha uzaktaki bir veri, çok uzak bir adresteki veri, şuradaki veri. Buna erişmek istersem ne yapacağım? O zaman bu data segment...
+
+786
+02:26:19,252 --> 02:26:27,072
+DS yazmacı burayı gösterecek şekilde burayı derken bunun başlangıç adresini gösterecek şekilde güncellemeliyim.
+
+787
+02:26:27,572 --> 02:26:35,632
+ve aynı zamanda bu başlangıç adresine göre ne kadar uzakta yer alıyor veri offset değeri olarak da bunu göstermeliyim.
+
+788
+02:26:36,632 --> 02:26:47,412
+LDS ve LES'nin çıkış mantığı bu. Çok uzaktaki bir veriye erişmek istersem benim segment renci içerisinde olmayan bir veri demek bu. O zaman DS'yi de değiştireceğim.
+
+789
+02:26:47,827 --> 02:26:55,167
+veya segment değerimi değiştireceğim daha genel konuşacak olursak. O zaman LDS ve LES'yi kullanıyor. Bakın nasıl çalışıyormuş?
+
+790
+02:26:57,167 --> 02:27:05,707
+Vermiş olduğum değişken veya adres değeri diyelim bu sefer. Vermiş olduğum adres değerini, içeriğini bir yazmaca atıyor.
+
+791
+02:27:06,927 --> 02:27:15,347
+Benim vermiş olduğum değişkenden sonra gelen Word'ü de DS'ye atıyor. Bakın hem DS'yi hem de bir offset değeri alması söz konusu.
+
+792
+02:27:15,731 --> 02:27:18,731
+Bunu şöyle düşünebiliriz, yine örnekle vermek gerekirse.
+
+793
+02:27:19,871 --> 02:27:22,131
+Veri kesiminde şöyle bir tanımlama yapmış olalım.
+
+794
+02:27:22,851 --> 02:27:24,252
+Önce offset'i alacaktı.
+
+795
+02:27:47,540 --> 02:27:55,180
+Bu arada, tanımladığımız sabitler, eğer ki bir karakterle bitiyorsa, başlıyorsa, başına sıfır koymamız lazım.
+
+796
+02:27:55,299 --> 02:27:58,000
+Assembler hata vermemesi için, onu hatırlatmış olayım.
+
+797
+02:27:58,680 --> 02:28:02,840
+Veri kesiminde böyle bir tanımlama yaptık, diyelim, tamam mı? Burası bizim veri kesimimiz.
+
+798
+02:28:03,620 --> 02:28:11,340
+Bizim amacımız da, şu segmentle, ABCD segmentinin, 1, 2, 3, 4 offsetinde olan veriyi, adresini biliyorum bunun,
+
+799
+02:28:11,340 --> 02:28:15,040
+bu veriye erişmek istiyorum, kodum çalışırken. O zaman şunu yapıyorum.
+
+800
+02:28:15,443 --> 02:28:39,583
+lds, bx virgül, uzak offset diyorum. Bu komutu çalıştırdığımız zaman, vermiş olduğum değişken adresim neyse, onun içeriğini, bakın orada içeriğini alıyor. Köşeli parantez mem demiş. Dolayısıyla verdiğim değişkeni bx'e atacak öncelikli olarak. Bu durumda bx'e 1, 2, 3, 4, h atanır.
+
+801
+02:28:39,987 --> 02:28:54,187
+ve aynı zamanda ne yapıyordu bakın? DS'ye de bir sonraki word değeri atanıyor. Bir sonraki word değerim ABCD. DS'ye de ABCDH atanıyor. Fakat benim şu kodum,
+
+802
+02:28:55,156 --> 02:29:02,195
+Benim bu kodum normalde işte hafızaya yerleştiği zaman 100HDS değeriyle başlamıştı.
+
+803
+02:29:02,515 --> 02:29:05,175
+Yani benim veri kesimim falan 100H segmentindeydi.
+
+804
+02:29:05,556 --> 02:29:08,335
+Ben ama ne yapmak istiyorum açık bir şekilde belirterek?
+
+805
+02:29:09,015 --> 02:29:13,376
+ABCD segmentinde 1, 2, 3, 4 offsetindeki bir veriye erişmek istiyorum.
+
+806
+02:29:13,835 --> 02:29:15,256
+Ona artık nasıl erişebilirim?
+
+807
+02:29:15,476 --> 02:29:18,556
+Bakın DS değeri ve segment offset değerim değişti.
+
+808
+02:29:19,175 --> 02:29:19,995
+Şöyle erişeceğim.
+
+809
+02:29:20,371 --> 02:29:47,252
+Oradaki değer bir byte olsun. Mesela orada ifade edilen bir byte ile ilgileniyorum. AL, BX dediğim zaman şuraya kadar, şu LDS komutu çalışana kadar DS 100H civarlarındaydı. Bu komut çalıştıktan sonra ABCDH oldu. Dolayısıyla şurada ABCDH segmentinin BX offsetindeki veriyi AL'ye okumuş oldu.
+
+810
+02:29:47,584 --> 02:29:51,044
+LDS bu şekilde çalışıyor arkadaşlar. Bununla ilgili soru var mı?
+
+811
+02:30:07,347 --> 02:30:08,628
+Var mı sorumuz arkadaşlar?
+
+812
+02:30:11,268 --> 02:30:11,547
+Tamam.
+
+813
+02:30:12,148 --> 02:30:13,887
+L, E, S de benzer şekilde.
+
+814
+02:30:14,567 --> 02:30:16,987
+L, E, S de bakın nasıl çalışıyor.
+
+815
+02:30:16,987 --> 02:30:18,867
+L, E, S de ise
+
+816
+02:30:18,867 --> 02:30:22,247
+bu sefer
+
+817
+02:30:22,247 --> 02:30:25,587
+vermiş olduğumuz adresteki
+
+818
+02:30:25,587 --> 02:30:27,487
+değeri alıp
+
+819
+02:30:27,487 --> 02:30:29,867
+bir offset yazmacına atıyor.
+
+820
+02:30:29,948 --> 02:30:31,327
+Offset yazmacı için atıyor.
+
+821
+02:30:31,744 --> 02:30:54,024
+Bir sonraki Word'ü de ekstra segment atıyor. Tek farkı bu. Birisinde ES, diğerisinde DS kullanılıyor. Bu iki komutu peş peşe nerede kullanabiliriz? Bir Katar işleminde, dizi işleminde bir kaynaktan bir başka hedefe veri aktarımı yapmak istersek uzak aralıklı birini LDS ile belirtirim, birini LES ile belirtirim ve bu şekilde diğer ikisini de ortaya çıkartmış oluruz.
+
+822
+02:30:54,024 --> 02:30:57,024
+Bir sonraki komutumuz arkadaşlar Exchange komutu.
+
+823
+02:30:58,004 --> 02:31:21,644
+Exchange komutu, temelde swap işlemi için kullanılıyor. İki adet operandı var. Bu iki operandı birbiriyle yer değiştirmek için kullanılıyor. İki adet register üzerinden çalışabilir. Yani xchg, AX, BX geçerli bir komut. Ama xchg, AL, BX geçerli değil. Çünkü tip uyumsuzluğu var.
+
+824
+02:31:22,992 --> 02:31:39,752
+Memory ile yazmaç arasında da swap işlemi yapmamız mümkün. İleri ve geri yönlü olarak bunu yapmamız mümkün. Yine veri aktarım komutlarından bir de translate komutumuz var. Translate byte komutumuz var. Bu komut xlat ve xlat b. İkisi de aynı anlama geliyor.
+
+825
+02:31:40,752 --> 02:31:48,332
+Bu aslında şöyle düşünebiliriz. Elimizde bir lookup table var. Elimizde bir lookup table var. Adresler bu tarafa doğru artsın.
+
+826
+02:31:49,108 --> 02:32:00,968
+Burada tablonun, lookup table'ın başlangıç adresini BX gösterecek şekilde, lookup table'ın ilgili satırını da AL'ye işaret edecek şekilde çalışan bir örnek.
+
+827
+02:32:01,688 --> 02:32:09,308
+Bu operant almayan bir komut. Ben burada xlat diye komut çalıştırabiliyorum. xlat komutu çalıştırabiliyorum. Herhangi bir operandı yok.
+
+828
+02:32:12,415 --> 02:32:38,855
+AL ve BX'de uygun değerleri üretmiş olmam gerekiyor. BX'i, Lookup Table'ın başlangıç adresini, AL'yı de Lookup Table'daki ilgili indisi belirleyecek şekilde vermem gerekiyor. Bu sayede aslında fonksiyonel olarak sanki data segmentin BX artı AL offsetindeki değeri almış gibi bir fonksiyon gösteriyor. Ama dikkat edin, BX artı AL'yı yazamayız.
+
+829
+02:32:39,136 --> 02:33:04,775
+bir memory adreslemesi olarak. Fakat BX artı AL hesabını yapıp köşeli parantez içerisine bir sayı olarak mikro işlemci bunu koyuyor. Lookup Table'dan veri almak için kullandığımız komut. Bu sayede veri aktarım komutlarını tamamlamış oluyoruz. Bir sonraki komut setimiz aritmetik komutlar arkadaşlar. Genel olarak bir tanımlarına bakalım.
+
+830
+02:33:07,283 --> 02:33:15,183
+ADD işlemi toplama adı üzerinde. Toplama dediğimiz zaman, bir soru var galiba bakalım.
+
+831
+02:33:19,891 --> 02:33:27,272
+Dediğim gibi, bunu bir diğer gruptan hocamıza da sorup, ondan sonra söyleyeceğim. Şimdi daha konuşma fırsatımız olmadı.
+
+832
+02:33:29,332 --> 02:33:35,351
+Toplama dediğimiz zaman, mesela, ADD, AX, BX.
+
+833
+02:33:35,987 --> 02:33:50,407
+iki tane operant var. Bu iki operantı topluyor. AX artı BX işlemini yapıyor. Nereye atıyor peki bunları? Vermiş olduğumuz birinci operanda atamayı gerçekleştiriyor. Toplama işlemi bu şekilde. İkinci işlemimiz eldeli toplama.
+
+834
+02:33:53,347 --> 02:33:55,347
+İngilizcesiyle Edwitt Carey.
+
+835
+02:34:02,932 --> 02:34:16,572
+Bu ne yapıyor? ADC, AX, BX dersek, bunun yaptığı işlem, AX ile BX'i topluyor, bir de bunlara kerefilek değerini ekliyor ve bunu tekrar AX'e atıyor.
+
+836
+02:34:17,412 --> 02:34:22,891
+Burada bir önceki işlemden, eğer elde bayrağı üretilmişse, bu kerefilek bir bitlik bir değer.
+
+837
+02:34:22,891 --> 02:34:25,012
+Bir bitlik bir değer.
+
+838
+02:34:26,036 --> 02:34:37,816
+diğer iki operanda ekleyip AX'e atıyor. Eğer bir önceki işlemden elde üretilmemişse, carry flag sıfır değerini alırdığı için sıfır değeriyle, üçüncü bir işlemde sıfır değeriyle toplanmış gibi oluyor.
+
+839
+02:34:39,515 --> 02:34:45,896
+Subtract işlemi arkadaşlar, çıkartma. Burada tuz komplement işlem yapılıyor.
+
+840
+02:34:52,275 --> 02:35:02,815
+AX, BX demişsek, bunun anlamı şu, AX artı, eksi BX işlemi demek. TUS komplement olarak bu şekilde işlem yapıbı.
+
+841
+02:35:10,708 --> 02:35:13,888
+Bu da subtraction with borrow.
+
+842
+02:35:18,388 --> 02:35:20,388
+Orada yazamadım. Şuraya yazayım.
+
+843
+02:35:23,700 --> 02:35:28,980
+Yani bu şeyde çok düzgün yazılıyor da burada PDF üzerinde yazılmıyor.
+
+844
+02:35:34,548 --> 02:35:38,868
+eldeli çıkartma. Hani normalde şunu yaparız ya, mesela decimal çıkartma yapacağız.
+
+845
+02:35:42,675 --> 02:36:08,995
+çıkartmayı yapacağız. Şu en düşük anlamlı decimal basamaklara baktık. 5'den 9 çıkmıyor. Dolayısıyla bir anlamlı basamaktan buraya değer aldık. Eksi bir şeklinde diyelim. Buradaki değer sanki bir yüksek basamaktan geldiği için 15 gibi değerlendirdik. 15'den 9 çıkarttık. 6 kaldı. Elde aldığımız için burada artık 1 kaldı. 1'den de 7 çıkmaz. Dolayısıyla bir üst basamaktan yine değer almamız lazım.
+
+846
+02:36:09,471 --> 02:36:25,891
+artı on gibi on birden yedi çıktı, dört, burada da sıfır kalmıştı. Dolayısıyla bu şekilde işlem yapıyoruz ya, tıpkı bunun gibi bir üst basamaktan bir girdiğe artı on değerine veya işte ilgili basamak değerine ihtiyacımız var mı yok mu bunu tutan bir şey terim barof.
+
+847
+02:36:26,331 --> 02:36:34,111
+Bunu da CF bayrağımız toplama işlemlerinde elde görevi görürken veya keriş görevi görürken
+
+848
+02:36:34,868 --> 02:36:37,368
+çıkartma işlemlerinde Barov görevini görüyor.
+
+849
+02:36:37,828 --> 02:36:38,008
+Tamam.
+
+850
+02:36:41,907 --> 02:36:48,647
+İnkrement ve decremente baktığımız zaman, increment artı bir, decrement eksi bir ilgili değerden çıkartıyor.
+
+851
+02:36:49,427 --> 02:36:53,527
+Neg işlemi, sayının tuz komplement negatifini hesaplıyor.
+
+852
+02:36:54,747 --> 02:36:57,087
+Yani verdiğimiz parametrenin negatifini hesaplıyor.
+
+853
+02:36:58,367 --> 02:37:03,187
+CMP compare, aslında saptırakla aynı işlemi yapıyor.
+
+854
+02:37:03,948 --> 02:37:06,788
+Fakat saptırakta işlem sonucu saklanır.
+
+855
+02:37:07,540 --> 02:37:23,980
+Compare'de işlem sonucu saklanmıyor, sadece bayraklar güncelleniyor. Subtract'da hem işlem sonucu saklanıyor, hem de bayraklar güncelleniyor. Aritmetik işlemlerde bayraklar da değişir çünkü. Compare'de işlem yapılıyor ama işlem sonucu saklanmıyor, sadece bayraklar uygun şekilde güncelleniyor.
+
+856
+02:37:32,147 --> 02:37:34,447
+EMUL işaretli sayı çarpması.
+
+857
+02:37:38,611 --> 02:37:48,951
+Div, işaretsiz sayı çarpması, şey bölmesi, i-div, işaretli sayı bölmesi.
+
+858
+02:37:54,355 --> 02:37:56,075
+Şimdi biraz bunların detayına bakalım.
+
+859
+02:38:05,172 --> 02:38:14,952
+ADD komutunun addition olduğunu söylemiştik. İki tane operandı var, destination ve source. İşlem sonucunda toplama yapıyor ve toplama sonucunda tekrar birinci operanda yazılıyor.
+
+860
+02:38:16,452 --> 02:38:24,092
+ADD işlemi bir register ve immediate data ile yapılabilir. Bunun anlamı ne? Şöyle kaydırıp bir dinleyelim.
+
+861
+02:38:32,468 --> 02:38:39,868
+Birinci işlemimiz neydi? Registered Immediate Data. Yani neyi kastediyoruz? ADD işlemiydi.
+
+862
+02:38:50,708 --> 02:38:56,168
+Register ile immediate işlemi yapacağız. AX, 1 diyebiliriz mesela.
+
+863
+02:38:59,008 --> 02:39:07,407
+Ama şunda sıkıntı olacaktır. ADD, BL, 300 dediğimiz zaman 8 bitlik bir işlem kastediyoruz.
+
+864
+02:39:07,648 --> 02:39:11,988
+Fakat burada 8 bite sığmayan bir değer var. Bundan dolayı sıkıntı olur.
+
+865
+02:39:13,028 --> 02:39:15,087
+İkinci bir komut grubumuz ADD'in.
+
+866
+02:39:15,636 --> 02:39:21,456
+bir memory adresi ve immediate data kullanılarak yapılması var. Burada dikkat edeceğimiz bir nokta var.
+
+867
+02:39:22,536 --> 02:39:34,056
+add 100h, 12h dedik. Bu işlem için arkadaşlar, az önce konuştuğumuz, birinci derste konuştuğumuz bir durum vardı.
+
+868
+02:39:34,056 --> 02:39:37,556
+Ben burada 100h ve 12'yi toplarken,
+
+869
+02:39:37,951 --> 02:39:46,971
+Word işlemi yapmak istiyorum, byte işlemi yapmak istiyorum. Burada bir belirsizlik var. Dolayısıyla bunun yerine şunu kullanmalıyız.
+
+870
+02:39:48,271 --> 02:39:59,551
+Word PTR, mesela 100H, 12H veya byte işlemi yapacaksak açık bir şekilde belirtmemiz lazım.
+
+871
+02:40:04,308 --> 02:40:21,248
+1,12h şeklinde açık bir şekilde byte işlemi, word işlemi yapacağımı belirtmem gerekiyor. İki tane register arasında işlem yapabilirim. Add deyip, DX, AX şeklinde komut çalıştırabilirim.
+
+872
+02:40:25,203 --> 02:40:41,324
+Veya register memory arasında işlem yapabilirim. Yani o da şu örneklerini görmüştük. 100H, AX. AX kullandığım için 16 bitlik bir işlem yapmak istediğim belli. Dolayısıyla bu bir Word işlemidir gibi işlemler yapmamız mümkün.
+
+873
+02:40:48,147 --> 02:41:05,587
+yapılan işleme bir önceki işlemden varsa carry değerini de ekliyor. İki tane operant var. Operantları topluyoruz. Ama bunlara bir de carry flag değeri ekleniyor. Bir bitki carry flag değeri ekleniyor. Yine çalıştırılma mantıkları benzer şekilde var.
+
+874
+02:41:06,004 --> 02:41:23,664
+Immediate data'yı register ekleyebiliyoruz. Immediate data'yı bir memory hafıza adres içeriğine ekleyebiliyoruz. Ama burada yine tipini belirtmemiz lazım. WordPtr, WhitePtr olarak. İki yazmaç arasında işlem yapabiliriz. Memory ile yazmaç arasında işlem yapabiliriz. Register ile memory arasında işlem yapabiliriz.
+
+875
+02:41:24,051 --> 02:41:39,731
+Şimdi bu noktada şunu yapacağız arkadaşlar. Bir örnek kodlama yapmaya çalışacağız. Buraya kadar gördüğümüz komutlar bu örneği yapabilmek için yeterli. Sorumuz şu. Şurayı temizleyelim. Sorumuz şu.
+
+876
+02:41:44,755 --> 02:41:49,955
+bir değişken tanımlaması yapıyoruz. Bir kere bir adım geri atıp şunu hatırlayalım.
+
+877
+02:41:50,536 --> 02:42:02,835
+8086 mikro işlemcisi arkadaşlar, hatırlayacağınız üzere, 8086 mikro işlemcisi 8 bit operantları almışsa 8 bitlik toplama yapar.
+
+878
+02:42:03,396 --> 02:42:09,036
+16 bitlik operant almışsa 16 bitlik operantı donanımsal olarak yapabiliyor. Donanım da bunu yapabiliyor.
+
+879
+02:42:09,523 --> 02:42:36,804
+Fakat şuna gelelim. Biz 32 bitlik değişkenler üzerinde toplama yapmak istersek ne yapacağız? Bunun için bizim bir kütüphane oluşturmamız lazım. Yani bunu donanım toplam olarak sağlamıyor. Biz burada bir akıllı yaklaşım sergileyerek mevcut donanımsal olarak desteklenen komutları kullanıp 32 bitlik iki sayıyı toplamaya çalışacağız. Şimdi bunun için şöyle bir işlem yapacağımızı, tanımlama yapacağımızı varsayalım. Birazcık şunu büyütelim.
+
+880
+02:42:42,739 --> 02:42:51,340
+var bir dediğimiz değeri arkadaşlar bir define double word olarak tanımlıyorum. Yani word dediğimiz şey neydi?
+
+881
+02:42:54,559 --> 02:42:59,380
+Bu da word yazmadan şu şekilde tanımlıyorduk yanlış olmasın. DD şeklinde tanımlıyorduk.
+
+882
+02:43:00,680 --> 02:43:04,819
+32 bitlik bir değer tanımlayacağım. Yani buradaki değerimiz ne olsun mesela?
+
+883
+02:43:06,319 --> 02:43:08,619
+6, 7, 8, 9, H olsun.
+
+884
+02:43:12,531 --> 02:43:14,151
+Word bu olmadı mı? Dur bakayım.
+
+885
+02:43:17,051 --> 02:43:23,531
+Define Double var. 32 bitlik değer. 6, 7, 8, 9, A, B, C, D, H olsun.
+
+886
+02:43:24,511 --> 02:43:30,471
+1, 2, 3, 4, 5, 6, 7, 8 tane hexadecimal var. Dolayısıyla bu bir 32 bitlik değer.
+
+887
+02:43:31,611 --> 02:43:35,331
+Yine var 2'yi alalım. Onu da Double Word olarak tanımlayalım.
+
+888
+02:43:40,147 --> 02:43:43,128
+1, 2, 3, 4, H olarak tanımlayalım.
+
+889
+02:43:43,707 --> 02:43:46,147
+Şimdi sorumuz şu, bir ara sorumuz.
+
+890
+02:43:46,747 --> 02:43:51,987
+2 tane 16 bitlik veriyi toplarsam, bu değer kaç bitlik bir çıktı ya sağır?
+
+891
+02:43:54,227 --> 02:43:57,167
+2 tane 16 bitlik verinin toplamı kaç bite sağır?
+
+892
+02:43:58,167 --> 02:43:58,587
+17.
+
+893
+02:43:59,407 --> 02:44:04,768
+17 bitlik bir değişkenimiz olmayacağı için, onu 32 bit diyelim, tamam mı?
+
+894
+02:44:05,268 --> 02:44:30,327
+32 bit hesa. Benzer şekilde 32 bitlik iki tane değişkeni topladığımızda da aslında bizim ihtiyacımız olan ne kadarlık bir değişken olacak? 64 bitlik bir değişken olacak. Evet, bu 64 bitlik değişkeni de define quad word şeklinde, yani şu define double word için DD kullandık.
+
+895
+02:44:32,755 --> 02:44:43,475
+quad word içinde, DQ komutlarını kullanacağız. Bunu da var 3 diyelim, 3. bir değişken ve bunu da 0 olarak initialize edelim.
+
+896
+02:44:45,235 --> 02:44:54,275
+Tamam, değişkenlerimizi bu şekilde tanımladım. Şimdi burada sorumuz şu, 32 bitlik 2 tane değişkeni toplamak için yürüteceğimiz komutlar neler olur arkadaşlar?
+
+897
+02:44:54,275 --> 02:44:56,015
+Ne yapmalıyız?
+
+898
+02:44:57,716 --> 02:45:01,876
+sistem donanımsal olarak 8 bit veya 16 bitlik toplamaları destekliyor.
+
+899
+02:45:09,427 --> 02:45:10,387
+Ne yapabiliriz?
+
+900
+02:45:12,247 --> 02:45:18,647
+Şu ana kadar gördüğümüz verik aktarım ve aritmetik komutlar bu işlemleri yapmak için yeterli.
+
+901
+02:45:21,207 --> 02:45:22,527
+Ne yapmalıyız?
+
+902
+02:45:34,004 --> 02:45:37,164
+Öncelikli olarak bunların hafıza yerleşimine bir bakalım.
+
+903
+02:45:47,636 --> 02:46:01,416
+Şimdi programım derlendi, hafızaya yüklenmiş olsun. Hafızanın başı burası veya fark etmez herhangi bir yer olabilir. Data segmentte burası bizim var birim başlangıç adresi burası olsun mesela.
+
+904
+02:46:06,835 --> 02:46:09,835
+Şöyle şunu uzatmamız lazım aşağı doğru.
+
+905
+02:46:12,235 --> 02:46:14,036
+Kaç tane byte içeriyor?
+
+906
+02:46:14,036 --> 02:46:18,835
+Bir, iki, yani kırmızıyla işaretlersek daha iyi olur.
+
+907
+02:46:18,835 --> 02:46:25,835
+Bir, iki, üç, dört tane byte bunda var, dört tane byte de aşağıdakinde var. Dolayısıyla
+
+908
+02:46:25,835 --> 02:46:30,827
+üç, dört göz var bir için kullanılacak.
+
+909
+02:46:31,731 --> 02:46:34,772
+var 2 için yine 4 göze ihtiyacımız var.
+
+910
+02:46:35,051 --> 02:46:37,172
+2, 3, 4.
+
+911
+02:46:39,272 --> 02:46:46,031
+Var 3 için ise bu QuadWord olduğuna göre 64 bitik 8 tane göze ihtiyacımız var.
+
+912
+02:47:02,675 --> 02:47:04,355
+Küçüklük şöyle yapalım.
+
+913
+02:47:08,211 --> 02:47:13,211
+var 2 şurayı gösteriyor, var 3 burayı gösteriyor.
+
+914
+02:47:30,515 --> 02:47:35,515
+Bu tanımlamalara göre bu hafıza alanına yerleşim nasıl olacak bir ona bakmaya çalışalım şimdi.
+
+915
+02:47:39,015 --> 02:47:44,675
+Var 1'in şuraya doğru adreslerin yükseldiğini varsayalım. Adres değerlerimiz artıyor.
+
+916
+02:47:45,675 --> 02:47:54,415
+Var 1'i yerleştirelim. Şimdi en düşük adresten itibaren en düşük anlamlı byte yerleşecek. CDH. Ondan sonra ABH.
+
+917
+02:47:55,283 --> 02:48:02,963
+Sonra 89H, sonra da 6-7H değerleri yerleşti. Sonra var 2 yerleşiyor, en düşük anlamlı byte'ından itibaren.
+
+918
+02:48:04,083 --> 02:48:17,664
+3-4H, 1-2H, CDH ve ABH yerleşti. Sonra ise quad word olarak 8 tane hafıza gözüne 0 değeri yerleşecek. Yani 0-0, 0-0.
+
+919
+02:48:20,500 --> 02:48:30,099
+2, 3, 4, 5, 6, 7, 8 şeklinde yerleşimi sağladık. Hafızadaki yerleşim bu tanımlamaya göre bu şekilde oluyor arkadaşlar.
+
+920
+02:48:30,099 --> 02:48:47,380
+Şimdi sorumuz neydi? Sorumuz şuydu. 32 bitlik var 1 ve var 2 değişkenlerini toplayarak
+
+921
+02:48:49,652 --> 02:48:55,631
+sonucu var 3 64 bitlik
+
+922
+02:48:59,219 --> 02:49:01,119
+var 3 değişkenine
+
+923
+02:49:06,708 --> 02:49:08,268
+Atayan kodu yazınız.
+
+924
+02:49:08,788 --> 02:49:09,907
+SM'li kodunu yazınız.
+
+925
+02:49:16,979 --> 02:49:18,699
+Ne dersiniz bununla ilgili?
+
+926
+02:49:29,043 --> 02:49:31,043
+Evet, ne dersiniz bununla ilgili?
+
+927
+02:49:36,468 --> 02:49:38,968
+Var mı bir yorumunuz? Nasıl yapalım? Nasıl ilerleyelim?
+
+928
+02:49:56,691 --> 02:49:58,131
+Var mı bir yorumunuzda arkadaşlar?
+
+929
+02:50:06,708 --> 02:50:25,488
+Şimdi [öğrenci]'in cevabına karşılık gelerek iki sayıyı toplayalım dedik ama bu sayılar 32 bitlik sayılar. 8086'da 32 bitlik bir toplama işlemi yok. Ya 16 bitlik ya da 8 bitlik kabul ediyor. Byte byte toplayabiliriz kesinlikle. Bu bir cevap olabilir.
+
+930
+02:50:25,935 --> 02:50:43,935
+Ama bunu daha pratik olmak üzere wordler üzerinden de yapabiliriz. Yani biz buradaki sayılarımızı, şöyle farklı bir renk için, şöyle yeşil diyelim.
+
+931
+02:50:47,572 --> 02:50:53,511
+Buradaki değişik değerlerimizi şu şekilde 16 bit 16 bit ayırıp
+
+932
+02:50:56,884 --> 02:51:18,363
+birinci sayının 16 bitiyle düşük anlamlı, ikinci sayının düşük anlamlı 16 bitini toplayıp, buradan gelen eldeyi, yüksek anlamlı 16 bitlerin toplamına katıp, eğer buradan da bir elde çıkıyorsa, bunu da tutup toplamda 33 bite taşıyacak olan toplama sonucunu 64 bitlik değişkene aktarmamız mümkün olabilir.
+
+933
+02:51:18,363 --> 02:51:20,363
+Şimdi bunu...
+
+934
+02:51:20,595 --> 02:51:47,315
+byte'lar üzerinden değil de word'lar üzerinden yapalım. Yani byte'lar üzerinden yapmak da pratik ama byte'lar üzerinden yaptığımız zaman işlem uzuyor. Bir de aslında onu döngüleri falan gördüğümüz zaman daha anlamlı olacak. Şimdi şey üzerinden gidersek, nedir onun adı, 16 bit üzerinden gidersek daha pratik olur. Şimdi öncelikli olarak daha önce gördüğümüz komutlarla birlikte bunların 16 bit'lik bir versiyonunu oluşturmaya çalışalım. 16 bit'lik kısımlarını toplamaya çalışalım. Nasıl yapacağız?
+
+935
+02:51:48,595 --> 02:51:56,036
+komutlar bunlar için yeterli. Var 1'in ve var 2'nin 16 bitlik düşük anlamlı kısımlarına erişmek istiyoruz. Nasıl yaparız?
+
+936
+02:52:06,644 --> 02:52:08,043
+Nasıl yapabiliriz arkadaşlar?
+
+937
+02:52:09,364 --> 02:52:11,984
+Daha önce benzer bir komutu gördük, işledik.
+
+938
+02:52:12,064 --> 02:52:17,884
+O komutumuz işte yüksek boyutlu bir verinin belli bir takım byte'larına erişmemizi sağlıyordu.
+
+939
+02:52:18,324 --> 02:52:20,144
+Şimdi benzer bir durumu burada da yapacağız.
+
+940
+02:52:20,263 --> 02:52:21,024
+Hangi komuttu o?
+
+941
+02:52:26,548 --> 02:52:45,888
+Load Effective Adres yapacağız. Doğru, Uf'un söylediği doğru. Peki bunu nasıl yapalım? Elimizde 3 tane değişken var. 3 tane değişken için biz 3 tane data segmentin default varsayılan offset yazmaçları ile bunların başlangıç adreslerini alalım. Yani şöyle yapalım.
+
+942
+02:52:53,652 --> 02:53:18,831
+var 3 diyelim. Daha sonra load efektif adres diyelim, SI virgül var 1 diyelim. Load efektif adres diyelim, DI virgül var 2 diyelim. Şimdi bu durumda bu yapmış olduğumuz tanımlamaya göre BX şurayı gösteriyor, SI burayı gösteriyor, DI da burayı gösteriyor.
+
+943
+02:53:20,435 --> 02:53:37,435
+Şimdi, eğer ki biz var birin düşük anlamlı 16 bitini, yani wordünü okumak istiyorsak aslında şunları okumamız lazım değil mi? Bunu nasıl alabiliriz? Bunu bir değişkene alacağız. Nasıl alabiliriz bu kısmı?
+
+944
+02:53:39,835 --> 02:53:43,255
+Kojeli parantez, S1-1 olur mu?
+
+945
+02:53:44,180 --> 02:54:07,979
+SE zaten direkt bunun başlangıç adresini gösteriyor. Direkt SE'yi kullanabiliriz. Adres yukarı doğru artıyor ya, ona dikkat edin. Hep aşağıdan yukarı doğru çizmedim, özellikle çizmedim. Yukarı doğru arttığı için, direk burası SE artı bir zaten. Eğer bu adresten itibaren ben bir Word'ü okursam, zaten bu ikisini alacak, değil mi? Dolayısıyla cevabımız doğru. Şunu yapalım, MOV.
+
+946
+02:54:08,371 --> 02:54:21,231
+ax virgül köşeli parantez, SI dediğimiz zaman, ax'in içeriği ne olmuş oldu? ax'in içeriği var birin düşük anlamlı byte oldu. Yani düşük anlamlı word oldu. abc'de h oldu.
+
+947
+02:54:22,351 --> 02:54:31,091
+Yapacağım işlem neydi? var birin düşük anlamlı 16 bitiyle var ikinin düşük anlamlı 16 bitini toplamaktı. Nasıl toplarız bu ikisini?
+
+948
+02:54:41,652 --> 02:54:43,891
+Şimdi normalde ben hedefim neydi?
+
+949
+02:54:45,412 --> 02:54:52,332
+İşte az önce siyahla işaretlediğim alanla, şimdi de kırmızıyla işaretlemiş olduğum alandaki wordleri toplamakta.
+
+950
+02:54:52,332 --> 02:55:00,272
+Ama hatırlayalım, şey kısmında işlemlerde çizemedim bir türlü bir daha çiziyorum.
+
+951
+02:55:01,172 --> 02:55:16,591
+Ama işlemlerde iki tane memori adresini aynı anda kullanamayacağım için değişkenlerden bir şey, adreslerden bir tanesini yazmaca aldım, AX aldım. Ama ikincisi için böyle bir şeye gerek yok, onu hatırlatayım. O zaman hangi komutu kullanabiliriz burada?
+
+952
+02:55:20,172 --> 02:55:20,992
+Add kullansak?
+
+953
+02:55:21,711 --> 02:55:25,992
+Direkt add kullanalım, güzel. İşlem sonucu gene AX'de saklansın.
+
+954
+02:55:26,484 --> 02:55:32,684
+AX ile neyi toplamak istiyorum şimdi? Şunu toplamak istiyorum. Bunun karşılığı nedir? AX ile bunu nasıl birleştirebilirim?
+
+955
+02:55:33,284 --> 02:55:34,344
+Köşeli parantez DI.
+
+956
+02:55:35,104 --> 02:55:50,524
+Kesinlikle. Köşeli parantez DI yaptığımız zaman bunu okuduk. Peki bunun karşılığı nedir? AX ile artık A, B, C, D, H ile 1, 2, 3, 4, H değerlerin toplamı var. Şu var 2'nin
+
+957
+02:55:52,020 --> 02:56:15,559
+least significant 16 biti, şu da var birin least significant 16 biti. Dolayısıyla istediğim değerleri elde ettim. Hasbelkader bu toplama işlemi sonucunda bir carry flag oluşmuşsa bu da bana lazım. Çünkü buradan çıkan eldeği bir sonraki basamaklara aktaracağım. Yani geneli düşünelim. Sadece bu sayılar için değil.
+
+958
+02:56:16,051 --> 02:56:33,231
+Bizim yazacağımız kütüphane herhangi bir 32 bitlik iki tane sayı toplayabilmeli. Bunu şu spesifik örnek içinde çalıştıracağız gibi düşünün burada yazdıklarımızı. Tamam mı? Dolayısıyla eğer bu işlem sonucunda carry varsa bu bize lazım. Evet, bir sonraki adımda ne yapacağız?
+
+959
+02:56:38,548 --> 02:56:40,548
+Başka bir şey sorabilir miyim? Buyurun.
+
+960
+02:56:41,288 --> 02:56:44,728
+Carry flag şu an 1 oldu değil mi? Bizim ekstra bir şey yapmamıza gerek yok yani.
+
+961
+02:56:45,408 --> 02:56:48,468
+Şu anda carry flag 1 olmadı ama başka 1.
+
+962
+02:56:48,468 --> 02:56:49,108
+Elde varsa ayrı.
+
+963
+02:56:49,908 --> 02:56:54,528
+Elde varsa 1 oluyor. Otomatik olarak 1 oluyor. Mikro işlemci bunu ayarlıyor. Bizim bir şey yapmamıza gerek yok.
+
+964
+02:56:57,288 --> 02:56:59,588
+Evet, bir sonraki işlemde ne yapmalıyız?
+
+965
+02:57:12,564 --> 02:57:14,404
+Var 3'e yazılması gerekiyor mu hocam?
+
+966
+02:57:15,543 --> 02:57:22,363
+Var 3'e yazabiliriz. Şu iki işlem sonucu direkt var 3'te oluşacak. İsterseniz onu da yapabiliriz. O da olabilir.
+
+967
+02:57:28,115 --> 02:57:33,736
+Nasıl yazabiliriz? Bu işlem sonu. Yani isterseniz toplamaları bitirelim, ondan sonra yazalım. Öyle de olabilir.
+
+968
+02:57:48,147 --> 02:57:56,147
+Şimdi bir de ne yapacaktık arkadaşlar? Şimdi de bunların yüksek anlamlı byte'larını toplayacağız ama aşağıdan da bir carry varsa onu da kaybetmeyelim diyoruz değil mi?
+
+969
+02:57:57,147 --> 02:57:59,915
+O zaman şunu ben birazcık aşağı kaydıracağım.
+
+970
+02:58:21,363 --> 02:58:35,584
+Şurayı biraz aşağı kaydıracağım. Şimdi de isterseniz, bakın burada nasıl ki var birin düşük anlamlı byte'ını aldıysak, bir de var birin yüksek anlamlı byte'ını da alalım. Onu da dx'e alalım. Olur mu? Şöyle yapalım yani.
+
+971
+02:58:38,084 --> 02:58:43,584
+MOV, dx virgül. Şimdi ne diyeceğiz? Köşeli parantez içerisinde.
+
+972
+02:58:50,548 --> 02:59:17,928
+SI artı 2, evet. SI burası, artı 2'si şurası. SI artı 2 burası. Bizim aradığımız değer de bu zaten. SI artı 2 dediğimiz zaman. Bu genel geçerli bir durum. Herhangi bir 32 bitlik sayı için geçerli bir durum. DX'de de şimdi, DX'de var birin yüksek word'u var. Yüksek word'unu aldık.
+
+973
+02:59:20,115 --> 02:59:26,275
+Şimdi, burada toplama işlemimizi yaptık.
+
+974
+02:59:28,836 --> 02:59:32,935
+Düşük anlamlı wordleri topladık. Buradan bir elde oluşmuş olabilir.
+
+975
+02:59:34,316 --> 02:59:40,396
+Warbir'in yüksek anlamlı word'ü de elimizde. Şimdi ne yapacağız? Bir sonraki adımda ne yapacağız?
+
+976
+02:59:41,456 --> 02:59:46,435
+Yüksek anlamlı wordleri toplayıp elde varsa onu da eklememiz lazım. Bunun için ne çalıştırmalıyız?
+
+977
+02:59:47,347 --> 02:59:52,188
+Hocam, ADD'yi direkt bir üst tarafa yazsak, yani zaten varsa bir, yoksa sıfır ya.
+
+978
+02:59:53,307 --> 02:59:54,047
+Nereye yazalım?
+
+979
+02:59:54,647 --> 02:59:57,768
+Yani bu AX'den yukarıya mı oluyor?
+
+980
+02:59:58,207 --> 02:59:58,747
+Şuraya mı?
+
+981
+03:00:00,167 --> 03:00:01,907
+Yok, toplama işleminden sonra.
+
+982
+03:00:04,707 --> 03:00:06,567
+Nasıl yani? AX'e mi atlayayım?
+
+983
+03:00:07,907 --> 03:00:11,387
+Yani en son DX'de hangisine toplayacağız tüm sayıyı?
+
+984
+03:00:12,084 --> 03:00:16,204
+tüm sayı var 3 isimli 64 bitlik değişkene yazacağız geri.
+
+985
+03:00:18,355 --> 03:00:35,956
+Şu anda ama şöyle yaptık. Şu ana kadar şöyle yaptık. AX'de düşük anlamlı wordlerin toplamını tuttuk. DX'de de yüksek anlamlı wordlerin toplamını tutmayı hedefliyoruz. Daha sonra AX, DX ve 32 bitlik toplamdan bir elde varsa onların hepsini varış değişkenine yazmayı hedefliyoruz.
+
+986
+03:00:36,256 --> 03:00:40,176
+O zaman Kerry ile yüksek anlamları toplarsak herhalde olur.
+
+987
+03:00:40,176 --> 03:00:44,036
+Kesinlikle. Aynen doğru. O zaman Edwitt Kerry diyeceğim.
+
+988
+03:00:44,691 --> 03:00:49,791
+DX ile DX'de şu vardı. Neyi toplamalıyım arkadaşlar?
+
+989
+03:00:53,291 --> 03:00:55,631
+Artan şey toplamak hangisi oluyor?
+
+990
+03:00:56,172 --> 03:01:05,752
+Hangisi işte. Var 2'nin yüksek anlamlısını toplayacağım. Şurayı toplayacağım ya. Var 2'nin yüksek anlamlısı şurası. Bunu neye göre referans edebiliriz?
+
+991
+03:01:06,752 --> 03:01:11,811
+DI artı 2 ile değil mi? DI'dan 2 ötede çünkü. Tıpkı şurada olduğu gibi.
+
+992
+03:01:12,755 --> 03:01:36,755
+DI artı 2 ile toplarsak, DX'de, carry flag, yani bu carry flag de düşük anlamlı word toplamından geliyordu. Ondan sonra var 1'in düşük anlamlı kısmı artı, pardon yüksek anlamlı kısmı diyecektik. Var 1'in yüksek anlamlı kısmı ve var 2'nin yüksek anlamlı word kısımlarını topladık, DX'e atadık.
+
+993
+03:01:37,299 --> 03:01:45,759
+Peki bu işlem sonucunda da yani şu ikisini topladıktan sonra keriği de bir önceki word'ten gelen keriği de eklediğimizde bir elde daha oluşabilir.
+
+994
+03:01:46,259 --> 03:01:50,259
+Bu da 32 bitlik toplamın sonucunda oluşan eldedir. Bunu nereye yazacağız?
+
+995
+03:01:52,459 --> 03:01:59,579
+Şimdi elimizde AX var, DX var. AX, 32 bitlik toplamanın düşük anlamlı word'üne denk geliyor.
+
+996
+03:01:59,579 --> 03:02:04,619
+Yani ben AX'i aslında getirip şu bölgeye yazmak istiyorum. Amacım şu.
+
+997
+03:02:08,275 --> 03:02:35,335
+Çünkü oluşan 64 bitlik toplamın en düşük word değeri AX'de saklı ve yeri de burası. Daha sonra gelen değeri de, şu mavi yapalım, daha sonra gelen değeri de şuraya yazmak istiyorum. Yani DX'teki değeri buraya yazmak istiyorum. Şuraya AX yazacağım. Şuna DX diyeyim. Şuna AX diyelim. Daha sonra bu 32 bitlik işlem, yani şu işlem sonucunda bile elde oluşabilir.
+
+998
+03:02:35,760 --> 03:02:38,140
+Onu da şuraya yazmak istiyorum.
+
+999
+03:02:42,355 --> 03:02:55,255
+Çünkü elde varsa bir, elde yoksa sıfır. Bir tane byte'e sığabilir bu. Değil mi? Bunları aktarmayı nasıl yapacağız şimdi? Bu aktarmayı yaparken carry flag bozulur mu, bozulmaz mı gibi sorular var. Ne dersiniz?
+
+1000
+03:02:55,855 --> 03:02:58,595
+Köşeli parantez, BX artı dört yapsak?
+
+1001
+03:03:00,415 --> 03:03:04,815
+Baştan başlayalım. En düşük anlamlıdan itibaren yazmaya başlayalım demek diyeyim ben de.
+
+1002
+03:03:06,815 --> 03:03:08,235
+Şu AX'den başlayalım.
+
+1003
+03:03:12,852 --> 03:03:15,871
+AX'i oluşturduğumuz AX'i yerine yazacağız. Nasıl yazarız?
+
+1004
+03:03:24,915 --> 03:03:26,515
+AX yerine değil mi zaten şu an?
+
+1005
+03:03:27,175 --> 03:03:28,555
+AX, AX'te.
+
+1006
+03:03:29,675 --> 03:03:30,175
+Anladım.
+
+1007
+03:03:30,175 --> 03:03:36,055
+AX'i, AX'teki değeri, var 3 değişkenin en düşük anlamlı word yerine yazmam lazım.
+
+1008
+03:03:36,195 --> 03:03:37,695
+Hafızada var 3 tutuluyor ya.
+
+1009
+03:03:38,495 --> 03:03:41,255
+Hafızada en düşük anlamlı word'üne bunu aktaracağım. Nasıl yaparım?
+
+1010
+03:03:44,788 --> 03:03:45,988
+MOV mu kullanacağız?
+
+1011
+03:03:46,468 --> 03:03:46,748
+Evet.
+
+1012
+03:03:47,468 --> 03:03:47,788
+MOV
+
+1013
+03:03:51,412 --> 03:03:52,811
+Hafızaya bir şey atacağım.
+
+1014
+03:03:53,731 --> 03:03:54,951
+Köşeli parantez BX mi?
+
+1015
+03:03:55,572 --> 03:03:58,551
+Köşeli parantez BX, AX.
+
+1016
+03:03:58,891 --> 03:04:05,871
+Bu komutu çalıştırdığım zaman burada yeşile işaretlemiş olduğumuz alana bu AX'deki değer aktarılmış oluyor.
+
+1017
+03:04:08,871 --> 03:04:12,871
+AX'de toplama yaparken neden ADC kullanmadık?
+
+1018
+03:04:13,791 --> 03:04:14,152
+Çünkü
+
+1019
+03:04:16,819 --> 03:04:26,679
+En düşük anlamlı wordleri topluyoruz. En düşük anlamlı wordlere dışarıdan şöyle, dışarıdan bir tane elde gelmiş olamaz. Ondan dolayı.
+
+1020
+03:04:31,283 --> 03:04:42,724
+en düşük anlamlı wordleri, en düşük anlamlı byteları, en düşük anlamlı double wordleri toplama imkanımız olsaydı, onlara dışarıdan bir elde gelemeyeceği için orada ADC'ye gerek yok.
+
+1021
+03:04:42,724 --> 03:04:44,884
+Şimdi
+
+1022
+03:04:49,236 --> 03:04:51,916
+Tamam, kapanmadıysa güzel, devam ediyor zaten dersimiz.
+
+1023
+03:04:56,371 --> 03:05:11,391
+Şimdi sırada ne yapacağız? Şimdi şu DX içerisinde bulunan, DX içerisinde tutmuş olduğumuz yüksek anlamlı word'lerin toplam değerini var'ın bir sonraki anlamlı word kısmına yazacağız. Nasıl yazacağız?
+
+1024
+03:05:12,211 --> 03:05:15,631
+MOV köşeli parantez, BX artı iki virgül DX mi?
+
+1025
+03:05:16,352 --> 03:05:23,551
+Kesinlikle. İki ötede olduğunu kontrol edelim. Sıfır, bir, iki. Evet. Şuradan. BX bu sıfır offset, bir offset, iki offset.
+
+1026
+03:05:24,275 --> 03:05:39,675
+kontrol etmiş olalım. MOV, BX artı 2, virgül, DX. Şimdi de ders biraz sonra bitecek. Bir 5-10 dakika daha yapacağız, bitireceğiz arkadaşlar.
+
+1027
+03:05:44,084 --> 03:05:59,184
+Şimdi son olarak şu yüksek anlamlı wordleri topladığımda oluşan bir elde varsa onu bir sonraki alana aktaracağız. Bir sonraki alana aktarmamız gerekiyor. Onu nasıl yaparız şimdi?
+
+1028
+03:06:05,268 --> 03:06:19,087
+şu kırmızıyla işaretlediğimiz yere yüksek anlı yani DX'deki değerle DI artı 2'nin içerisinde topladığımızda oluşan bir elde varsa onu aktarmamız lazım. Onu bu kırmızıyla belirttiğimiz alana nasıl aktarabiliriz?
+
+1029
+03:06:21,167 --> 03:06:23,528
+Hocam bu toplama komutu vardı ya ADC.
+
+1030
+03:06:24,007 --> 03:06:24,327
+Evet.
+
+1031
+03:06:24,667 --> 03:06:27,167
+O iki tane operant alıyor. O sıkıntı olur arayla ama.
+
+1032
+03:06:27,628 --> 03:06:29,587
+Bir dene bakalım. Belki çalışır.
+
+1033
+03:06:30,995 --> 03:06:33,415
+Yani sıfırla bir şey toplasak olur mu?
+
+1034
+03:06:33,415 --> 03:06:35,835
+Kesinlikle. Tam olarak aradığımız cevap bu.
+
+1035
+03:06:39,376 --> 03:06:45,376
+Demek ki bu son değeri atmak için de ADC, keri varsa ekleyecek. Nereye ekleyecek peki bunu?
+
+1036
+03:06:47,475 --> 03:06:50,635
+Köşeli parantez BX artı 4, 4'e ekleyeceğiz.
+
+1037
+03:06:51,876 --> 03:06:57,175
+BX artı 0, BX artı 1, BX artı 2, BX artı 3, BX artı 4. Kesinlikle.
+
+1038
+03:06:58,675 --> 03:07:09,255
+bx artı dörde ekleyecek. Neyle toplayacağız buradaki değeri? İçerideki değer sıfır zaten. Initialize ederken sıfır olarak initialize etmiştik. Neyle toplamamız lazım bu içeriği?
+
+1039
+03:07:09,755 --> 03:07:10,275
+Sıfırla.
+
+1040
+03:07:10,935 --> 03:07:15,435
+Sıfırla. Araya bir aralık bıraktım. Farkındasın. Niçin?
+
+1041
+03:07:23,636 --> 03:07:49,896
+bir hafıza bölgesiyle sabit bir değeri topladığımızda yaptığımız işlemin tipi belirli değildir değil mi? Bundan dolayı buraya bir işte byte ptl yazmamızda fayda var. Bunu da belirtelim. Dolayısıyla burada her bir renk kendi alanındaki varüç bölgesine değer atamasını sağlayan kodları oluşturmuş oluyor. Yani burada dikkat edeceğimiz nokta neymiş dolayısıyla?
+
+1042
+03:07:50,355 --> 03:07:56,355
+8086 donanımsal olarak sadece 8 bitlik ve 16 bitlik işlemleri destekliyor.
+
+1043
+03:07:56,855 --> 03:08:01,595
+Daha büyük veri boyutlarıyla ilgili işlem yapmak istediğimiz zaman bizim kendi kütüphanemizi oluşturmamız lazım.
+
+1044
+03:08:02,115 --> 03:08:05,736
+Buradaki spesifik örnekte 32 bitlik bir toplama işlemi yapmaya çalışıyoruz.
+
+1045
+03:08:06,195 --> 03:08:14,876
+Dolayısıyla burada düşük anlamlı wordlerin toplamından bir elde gelebilir.
+
+1046
+03:08:15,891 --> 03:08:29,711
+Bunu dikkate almalıyız. Onu şurada görüyoruz. İkincisi, bu ADD'yi bir sonraki anlamlı Word'e taşıdık, Word toplamına taşıdık ama buradaki Word toplamından da bir ADD oluşabilir. Onu da dikkate almalıyız. O da şurada.
+
+1047
+03:08:30,451 --> 03:08:40,131
+İşlem sonuçlarını bir hafıza bölgesine, bir değişkene yazmamız istenebilir. Onun için de uygun işlemi yapmamız, atamaları yapmamız lazım. Peki size sorum şu.
+
+1048
+03:08:40,559 --> 03:08:50,500
+Ben burada ADC işlemi yaptım. Yani yüksek anlamlı wordleri topladım. Bir carry oluştu. Ondan sonra MOV işlemleri çalıştırıyorum. Burada carry bozulmayacak mıydı?
+
+1049
+03:08:54,739 --> 03:08:55,979
+Buna niye dikkat etmedik?
+
+1050
+03:08:58,760 --> 03:09:00,800
+Kerry hafıza tutuluyor mu yoksa?
+
+1051
+03:09:01,700 --> 03:09:08,479
+Kerry tıpkı AX, BX gibi ayrı bir yazmacımız var. Flag yazmacı, bayrak yazmacı.
+
+1052
+03:09:08,840 --> 03:09:14,360
+Bu bayrak yazmacının bit olarak bit bit adreslenebilir bir tane gözü bayrak yazmacı.
+
+1053
+03:09:14,479 --> 03:09:15,639
+Kerry bayrağı.
+
+1054
+03:09:16,308 --> 03:09:20,427
+Toplamayı yaptıktan sonra başka işlemler etkilemiyor onu herhalde toplama haricinde.
+
+1055
+03:09:21,347 --> 03:09:27,108
+Heh, evet. Güzel bir nokta. Şimdi onun da tam olarak karşılığını şurada göstereyim arkadaşlar.
+
+1056
+03:09:27,927 --> 03:09:35,988
+Bakın, veri aktarım komutları için bu veri aktarım komutları bayrakları etkilemiyor. Bundan dolayı
+
+1057
+03:09:36,404 --> 03:09:54,423
+Biz burada CARI oluşturan bir işlem yaptıktan sonra MOV komutları çalıştırsak da bu işlemde şuradaki ADC işleminde oluşan CARI bu diğer iki MOV işleminden dolayı bozulmayacağı için bu kırmızıyla yazmış olduğumuz işlemde CARI korunmuş oluyor. Bu da önemli bir noktamız.
+
+1058
+03:09:55,644 --> 03:09:59,763
+Tamam, bu şekilde 32 bitlik iki sayıyı.
+
+1059
+03:10:00,000 --> 03:10:03,920
+donanımsal olarak desteklenen komutları kullanarak gerçekleştirmiş oldum.
+
+1060
+03:10:04,260 --> 03:10:06,260
+İlk başta söylenen bir çözüm vardı.
+
+1061
+03:10:06,379 --> 03:10:08,840
+Kesinlikle daha pratik olan yöntem o.
+
+1062
+03:10:09,319 --> 03:10:12,340
+Byte bazında, yani kaç byte'lık bir veriyse,
+
+1063
+03:10:12,860 --> 03:10:17,200
+o kadar adım boyunca dönerek, her seferinde de bir sonraki adrese giderek,
+
+1064
+03:10:17,760 --> 03:10:20,760
+işlemlerimizi yapmamız, döngüsel olarak yapmamız mümkündü.
+
+1065
+03:10:21,843 --> 03:10:31,224
+Fakat daha döngüleri falan görmediğimiz için kabaca bu şekilde bunu yapabildiğimizi ifade etmiş olalım. Bununla ilgili sorunuz var mı?
+
+1066
+03:10:35,924 --> 03:10:37,924
+net bir şekilde anlaşılmıştır umarım.
+
+1067
+03:10:38,424 --> 03:10:39,444
+Hocam bir şey diyeceğim.
+
+1068
+03:10:39,784 --> 03:10:40,084
+Buyurun.
+
+1069
+03:10:40,444 --> 03:10:47,924
+Eğer bu toplama eksimi devam etmiş olsaydı, bu içerideki olan bilgi tekrardan silinip yerine başka bir şey mi yazılacaktı?
+
+1070
+03:10:48,984 --> 03:10:49,944
+Öyle mi devam edecekti?
+
+1071
+03:10:50,515 --> 03:10:54,515
+Nasıl yani? Burada başka bir takım aritmetik işlemler olsa mıydı sonrasında?
+
+1072
+03:10:54,835 --> 03:10:56,315
+Aynen, aynen öyle olmuş.
+
+1073
+03:10:56,536 --> 03:11:08,175
+Tabii, aritmetik işlemler bayrakları etkiliyor. Bozabilir, sıfır yapabilir, bir yapabilir bilmiyoruz ama şuraya kadar bizim yazdığımız kodla bu ADC satırına kadar biz hep kontrollü bir şekilde geldik.
+
+1074
+03:11:08,315 --> 03:11:14,015
+Carry'i bozulmayacak şekilde veya istediğimiz şekilde carry üretilmiş şekilde biz hep devam ettik.
+
+1075
+03:11:14,288 --> 03:11:40,468
+Ama kontrolsüz bir şekilde eğer yani mesela yazdığımız kodu debug yapıyoruz beklediğimiz sonucu vermiyor. Büyük ihtimalle özellikle carry flag ile falan ilgili bir işlemse arada yaptığımız bir işlem aritmetik bir işlem olup carry flag'i bozmuş olabilir. O aritmetik işlemin yerini uygun şekilde kaydırdığınız zaman çalışır hale gelebilir. Dolayısıyla böyle geriye doğru dönüp debug yapmak gerekebilecek bu senaryolarda. Ama sizin de dediğiniz gibi
+
+1076
+03:11:40,847 --> 03:11:49,787
+Araya mesela şu MOV'lardan önce bir tane aritmetik işlem girmiş olsaydı yüksek anlamlı Word'lerin toplamından elde ettiğimiz Kerry'i bozmuş olurduk.
+
+1077
+03:11:56,308 --> 03:11:57,728
+Var mı başka soru arkadaşlar?
+
+1078
+03:11:59,668 --> 03:12:01,508
+Hocam şu an iki tane 32 biti topladık.
+
+1079
+03:12:01,948 --> 03:12:05,628
+Şu an 40 bit'e kadar herhalde yerimiz var ama bunu tekrar nasıl okuyabiliriz?
+
+1080
+03:12:05,628 --> 03:12:08,248
+8 bit'e kadar zaten normalde destekliyor.
+
+1081
+03:12:08,648 --> 03:12:09,588
+Ayrı ayrı mı almamız lazım?
+
+1082
+03:12:10,608 --> 03:12:13,588
+Yani bunları mesela 64 bit'lik bir değişkenimiz.
+
+1083
+03:12:13,668 --> 03:12:18,648
+Şurada yazdık ya varlığa gösterilen ve yazdığımız sıfır yazdığımız yere kadar alanı kaplıyor aslında.
+
+1084
+03:12:19,103 --> 03:12:31,563
+Bu 64 bitlik bir değişken olarak burada duruyor. Ben bunun istersem 16 bitlik kısımlarını tek tek okuyup yine buradaki kütüphanede yaptığımız gibi, yazmış olduğunuz kütüphanede yaptığımız gibi işleme sokabilirim, değerlendirebilirim.
+
+1085
+03:12:31,643 --> 03:12:38,623
+Ama dediğim gibi bunları işleme sokabilmek için 8 bit veya 16 bitlik kısımlarını tek tek manipüle etmem gerekiyor.
+
+1086
+03:12:39,203 --> 03:12:44,943
+Ama bu hafızada 64 bitlik bir veri olarak duruyor. Peş peşe.
+
+1087
+03:12:46,291 --> 03:12:49,731
+Tek başına yine anlam ifade etmiyor. Bizim işlemimiz lazım.
+
+1088
+03:12:50,391 --> 03:12:54,711
+Tek başına hafızada 64 bit peş peşe yerleşik olduğu için bir anlamı var.
+
+1089
+03:12:55,172 --> 03:13:00,032
+Ama işleme sokabilmek adına tek tek byte byte veya word word manipüle etmemiz lazım.
+
+1090
+03:13:00,672 --> 03:13:01,291
+Anladım hocam.
+
+1091
+03:13:03,891 --> 03:13:05,912
+Burada başka sorumuz var mı?
+
+1092
+03:13:08,971 --> 03:13:10,811
+Büyük küçük harfe duyarlı değil.
+
+1093
+03:13:16,275 --> 03:13:30,815
+Ama okunabilirlik adına arkadaşlar, bütün instructionları büyük harflerle yazarsanız daha pratik oluyor. Hem benim açımdan hem sizin açınızdan. Öyle anlaşalım. Sınavlarda falan bütün instructionları, yazmaçları ve değişkenleri büyük harflerle yazalım.
+
+1094
+03:13:42,036 --> 03:13:50,796
+anlatacağım. Evet, MOV büyük harfle çalışır normalde ama bir tipografi sağlamak adına dediğim gibi hepsi büyük harflerle olsun.
+
+1095
+03:13:51,315 --> 03:13:59,755
+Kodlarınızı sınavda yazarken. Bu MASM'de yani ortamın denenmesi falan biraz daha ileriki aşamada anlatacağımız konular.
+
+1096
+03:14:00,595 --> 03:14:09,175
+O yüzden şimdi ona girmeyelim. Çünkü MASM'de çalıştırabilmek için işte veri kesimi, kod kesimi, yığın kesimi hepsini tanımlamak gerekiyor.
+
+1097
+03:14:09,683 --> 03:14:31,083
+Onları biraz egze programa doğru bırakalım. Ama ilerleyen aşamada şunu yapacağız. Debug diye bir toolumuz var. Debug toolunu kullanarak satır satır kod çalıştırabiliyoruz. Ama onda da değişken tanımlamasını yapamıyoruz. Dolayısıyla arada tekrar bunlara döneceğiz diyeyim. Şimdilik ama yeri değil daha. MASM için.
+
+1098
+03:14:33,363 --> 03:14:39,863
+Başka bir sorumuz var mı arkadaşlar? Yoksa birazcık daha devam edeceğim. Bir iki dakika daha hızlıca. Var mı sorumuz?
+
+1099
+03:14:45,587 --> 03:14:50,927
+Çok hızlı bir iki bir şey daha söyleyeyim. Ondan sonra bitirelim. Çünkü diğer gruplarda biraz daha ileriye gittik.
+
+1100
+03:14:53,027 --> 03:15:06,167
+Aritmetik komutlardaydık. ADC ve ADD komutlarını işledik. Burada subtraction çıkartma komutu ve SBB subtraction width barrow komutu.
+
+1101
+03:15:06,579 --> 03:15:21,780
+Tıpkı ADD ve ADC'de olduğu gibi çalışıyor. Bir tanesi Keri'yi veyahut da Elde'yi, Barov'u dikkate almadan işlem yapıyor. Ve yaptığı işlemler TUS Komplement Aritmetik'te gerçekleşiyor.
+
+1102
+03:15:22,515 --> 03:15:38,456
+SBB'ye baktığımızda subtraction with bar of işlemi ise bar of değerini de dikkate alarak işlem yapıyor. Bizim az önce 32 bitlik toplamada oluşturduğumuz kütüphane gibi 32 bitlik iki sayıyı çıkartmak için de benzer bir kütüphane oluşturabiliriz.
+
+1103
+03:15:38,456 --> 03:15:50,495
+Orada da düşük anlamlı word için subtraction komutunu çalıştırırken yüksek anlamlı word için SBB komutunu çalıştırıp 32 bitten taşan durumu da tekrar kontrol etmemiz gerekiyor.
+
+1104
+03:15:50,515 --> 03:16:04,796
+arkadaşlar. Bu şekilde ifade edelim. Yine aritmetik komutlara devam edecek olursak, INC, increment komutu, bir tane operant alıyor. Yaptığı işlem operant değerini bir arttırıp aynı operanda geri yazıyor.
+
+1105
+03:16:05,216 --> 03:16:20,376
+İnkrement komutu bir yazmaç üzerinde kullanılabilir, 8 bit veya 16 bitlik bir yazmaç üzerinde kullanılabilir. Eğer memori adresiyle birlikte kullanılıyorsa burada işlem tipini açıkça ifade etmemiz gerekiyor. Bunu hemen bir örnekle ifade edelim.
+
+1106
+03:16:25,363 --> 03:16:51,363
+Hafıza bölgesi için şöyle bir senaryo olsun. 100H içerisindeki değerimiz FFH olsun. Buradaki değerimiz de 00H olsun 101'deki değerimiz. Eğer ki biz Increment 100H komutunu çalıştırmaya çalışırsak burada tip belirtmediğimiz için hata verecek. Dolayısıyla bunun yerine şunu kullanmalıyız.
+
+1107
+03:17:01,683 --> 03:17:07,323
+Word tipinde bir işlem yapmak istiyorsam açıkça belirtmeliyim veyahut da byte tipinde bir işlem yapmak istiyorsam
+
+1108
+03:17:11,028 --> 03:17:13,028
+Bunu da açıkça belirtmem gerekiyor.
+
+1109
+03:17:13,128 --> 03:17:19,987
+Eğer bu initial durum için bu komutu çalıştırırsak, çıktı durumunda hafıza gözlerimiz şu şekilde yerleşir.
+
+1110
+03:17:21,327 --> 03:17:26,247
+Ne istiyoruz? 100H'dan itibaren yerleşik olan Word.
+
+1111
+03:17:26,327 --> 03:17:28,247
+Yani şu iki değeri birlikte ele alıyor.
+
+1112
+03:17:28,647 --> 03:17:35,427
+Yani 00FF değerini bir arttırıyor ve 0100 değerini elde ediyor.
+
+1113
+03:17:35,827 --> 03:17:47,167
+düşük anlamlı wordümüz yine 100haşa yazılacak. 00h. 01 yüksek anlamlı byte'ımız da 01h da 101h adresine yazılmış olacak.
+
+1114
+03:17:47,688 --> 03:17:53,827
+Word.ptr ile bu şekilde. Eğer aynı hafıza bölgesinin initial durumu byte pointer için kullanacak olursak,
+
+1115
+03:17:55,048 --> 03:18:02,387
+bu durumda hafızadaki yerleşim şu şekilde oluyor. 100h içerisinde ve 101h içerisindeki değerlerimiz şu şekilde.
+
+1116
+03:18:02,868 --> 03:18:14,768
+100H'daki byte'ı aldım, 1 arttırdım. FF'i 1 arttırırsam 256 olur. Bir tane elde var. Carry flag 1 olarak set edildi ama 8 bitlik kısmıyla ilgileniyorum. O 0, 0H.
+
+1117
+03:18:15,727 --> 03:18:29,567
+101H'daki değeri de değiştiremiyoruz. Çünkü 8 bitlik işlem yaptığımız için elde ettiğimiz sonuç bu oluyor. Bakın fark nerede? 101H'daki değerlerde. Yukarıdakinde carry flag'te 0 değeri oluşurken
+
+1118
+03:18:29,871 --> 03:18:40,912
+Aşağıda 8 bitlik işlem sonucunda FF'e 1 ekledim, 256 işaretsiz sayılarda taşma oldu 8 bitte. Dolayısıyla Carry Flag 1 olarak set edilmiş oluyor.
+
+1119
+03:18:42,471 --> 03:18:47,752
+İnkrement işlemi bu şekilde. Dikrement benzer şekilde sadece parametresini bir azaltıyor.
+
+1120
+03:18:48,511 --> 03:18:55,511
+Yazmaç üzerinden ve memori üzerinden işlem yapılabilir. Memori üzerinden işlem yapılıyorsa PTR gerekli.
+
+1121
+03:18:56,371 --> 03:19:06,611
+Negate işlemine bakacak olursak, negate işlemi vermiş olduğumuz parametrenin eksisini hesaplıyor. Eksili değerini hesaplıyor. Tuz komplement aritmetikte eksilisini hesaplıyor.
+
+1122
+03:19:08,391 --> 03:19:18,491
+Compare işlemi, aslında temelde yapmış olduğu işlem, sub işlemi. Sub işlemiyle aynı. Fakat sub işleminde işlem sonucu saklanıyordu.
+
+1123
+03:19:23,827 --> 03:19:27,007
+Ama CMP işleminde işlem sonucu saklanmıyor.
+
+1124
+03:19:33,012 --> 03:20:00,000
+işlem yapılıyor, işlem sonucu saklanmıyor, sadece bayraklar etkileniyor. Dolayısıyla buradaki CMP komutunun temeldeki kullanım amacımız bir sonraki adımdaki koşullu dallanma komutları için bayrak koşullarını oluşturmak. Ne tür koşullar? İşaretli ve işaretsiz sayılar açısından birinci operant ikinci operanttan büyük mü? Büyük eşit mi? Eşit mi? Küçük eşit mi? Küçük mü? Gibi sorulara...
+
+1125
+03:20:00,000 --> 03:20:04,180
+true, false şeklinde cevap verebileceğimiz koşulları oluşturmak için diyebiliriz.
+
+1126
+03:20:05,260 --> 03:20:09,379
+Compare işleminin çalışabildiği mantıklar verilmiş durumda.
+
+1127
+03:20:14,299 --> 03:20:18,340
+Bu son dört komutta bir sonraki haftaya kalsın arkadaşlar.
+
+1128
+03:20:19,619 --> 03:20:23,799
+Çarpma ve bölme komutları, işaretli çarpma, işaretsiz çarpma komutları var.
+
+1129
+03:20:23,920 --> 03:20:24,379
+Bunlar da.
+
+1130
+03:20:24,768 --> 03:20:51,467
+Haftaya kalsın. Buraya kadar geldiğimiz nokta ile ilgili sormak istediğiniz bir şey var mı? Ne yaptık bu hafta? Temel olarak bu hafta yapmış olduğumuz işlem veri aktarım komutlarını tamamladık. Aritmetik komutları da tamamlamak üzereyiz. Burada temel olarak gördüğümüz nokta tip uyumluluğuna dikkat etmeliyiz. Bazı operantlarımız açık bir şekilde verilirken bazıları gizli operant olarak veriliyor. Bunlara dikkat etmemiz gerekiyor.
+
+1131
+03:20:51,855 --> 03:21:14,355
+Size ben duyuru olarak Instruction Set'i de ileteceğim. Bu Instruction Set üzerinden sınavda yanınızda getireceğiniz Instruction Set'ten bahsediyorum. Bir PDF dosyası. Çıktı alıp geleceksiniz. Bunun da nasıl kullanılabildiğini yavaş yavaş denemeye başlayalım diyeceğim. İleriye yönelik olarak. Sizin genel olarak sormak istediğiniz bir şey var mı bu haftayla ilgili?
+
+1132
+03:21:21,268 --> 03:21:22,488
+Var mı sorunuz arkadaşlar?
+
+1133
+03:21:27,156 --> 03:21:43,816
+Sorumuz yoksa dersi kapatıyorum. Tamam, peki, teşekkürler. Dersi kapatıyorum. Haftaya kaldığımız yerden aritmetik komutların çarpma ve bölme komutlarından devam ediyor olacağız. Herkese iyi akşamlar arkadaşlar. Haftaya görüşmek üzere.
+
+1134
+03:21:58,004 --> 03:21:59,184
+Haftaya görüşeceğiz.

@@ -1,0 +1,3699 @@
+1
+00:04:49,331 --> 00:04:50,351
+Arkadaşlar, merhabalar.
+
+2
+00:04:56,500 --> 00:05:19,839
+Geçen haftaki dersimizin son, pardon, hatırlayacak olursanız, geliştirme ortamımızın kurulması ile ilgili bir takım bilgilerden bahsetmiştik. Bunu deneyen oldu mu? Yani DOSBOX grup içerisine derleme araçlarımızı koyup, daha sonra da işte yine geçen haftalarda vermiş olduğumuz kodları derleyebilen oldu mu?
+
+3
+00:05:26,451 --> 00:05:32,052
+Evet, obje dosyası oluşturamadık denmiş. Tamam, peki. Başka deneyen var mı?
+
+4
+00:05:36,660 --> 00:05:39,980
+değerlemeler ile ilgili deneme yapabilen başka arkadaş var mı?
+
+5
+00:05:50,036 --> 00:05:51,036
+Başka yok herhalde.
+
+6
+00:05:52,696 --> 00:05:58,036
+Peki şimdi şöyle yapalım. Normal, standart olarak şimdi kullandığınız işletim sistemini
+
+7
+00:05:58,036 --> 00:06:04,536
+Windows, Linux veya MacOS olabilir. Şimdi hepsi için zannedersem DOSBox'ın versiyonu var.
+
+8
+00:06:05,755 --> 00:06:09,915
+Bir kontrol edeyim hemen DOSBox kurulumuyla ilgili olarak.
+
+9
+00:06:14,899 --> 00:06:25,299
+Linux, MacOS ve Windows versiyonları var. Ben şimdi Windows tarafındaki karşılığıyla anlatacağım ama diğerlerinde de kabaca aynı.
+
+10
+00:06:25,299 --> 00:06:29,699
+Şimdi şöyle bir ekran paylaşımı yaparak başlayayım.
+
+11
+00:06:33,875 --> 00:06:44,075
+Şimdi Dostbox'ı kurduktan sonra arkadaşlar, şu arada iki tane bizi ilgilendiren kısım var. Bir tanesi programın kendisi, bir de Options.
+
+12
+00:06:45,215 --> 00:06:56,235
+Options yani bunun özelliklerini ayarladığımız kısmı. Bu Options'da yapmış olduğum ayarlamayı ben şöyle birazcık kaydırıp geri alacağım. Daha sonra ne olduğunu söyleyeceğim ama size.
+
+13
+00:06:56,235 --> 00:07:01,115
+Tabii ki. Şunları bir comment out yapalım önce.
+
+14
+00:07:04,596 --> 00:07:09,196
+Şimdi bu haliyle Dostbox'ı çalıştırdığınızı bu default kurulu hali gibi düşünebilirsiniz.
+
+15
+00:07:09,456 --> 00:07:12,915
+Burada birazcık tekst boyutunu büyütebilmek için de bir şey yapmıştım.
+
+16
+00:07:13,016 --> 00:07:16,475
+Onu da söyleyeyim. Bir yerlerde yazıyordu, onu bulmuştum.
+
+17
+00:07:16,475 --> 00:07:25,776
+Şunu yaptım. Şu iki satırda değişiklik yaptım. Bunlar sonucunda işte biraz daha font büyümüş oldu.
+
+18
+00:07:25,875 --> 00:07:28,196
+Eğer ihtiyacınız varsa bu şekilde kullanabilirsiniz.
+
+19
+00:07:28,947 --> 00:07:35,187
+Şimdi aslında bu haliyle şurada gördüğünüz haline bir DOS emulatörü arkada çalışıyor.
+
+20
+00:07:36,827 --> 00:07:47,028
+Bununla birlikte biz lokalimizdeki bir klasörü de buraya bağlamak isteyeceğiz ve hatta bu klasör içerisinde, lokalden bağladığımız klasör içerisinde bizim bu executable'larımız falan olsun istiyoruz.
+
+21
+00:07:47,908 --> 00:07:54,528
+Onu ben şöyle ayarladım. C altında DOSBox isimli bir klasörüm var. Bunun içerisinde yine alt klasörler oluşturdum.
+
+22
+00:07:54,867 --> 00:08:21,747
+Size vermiş olduğumuz binary'leri de ben 1000 klasörün içerisinde açtım. Hatta ben direkt açma şeklinde değil, sıfırdan kurulum yaparak da yapmış olabilirim ama kabaca aynı hesap diyeyim. Bununla birlikte benim ASM dosyalarım da şuradaki MASM klasörümün içerisinde. Şimdi bu yerel dizini DOSBox tarafında gösterebilmek için kullanmamız gereken bir komut seti var. Ondan bahsedeyim. Mount diyoruz.
+
+23
+00:08:22,067 --> 00:08:31,067
+C diyoruz. C veya herhangi bir harf olabilir. Bu Dostbox'ta vereceğimiz yerel klasörün hangi dizine bağlanacağını gösteriyor.
+
+24
+00:08:31,947 --> 00:08:39,367
+Ve daha sonra da yereldeki dizinin ismini veriyoruz. Dostbox olarak yazdım. Şu bende de Dostbox çünkü. C altında Dostbox.
+
+25
+00:08:39,508 --> 00:08:44,427
+M-A-S-M'nin üzerinde şurayı bağlamak istiyorum ben. Bu klasörü bağlamak istiyorum.
+
+26
+00:08:44,980 --> 00:08:52,100
+Enter dedikten sonra bakın, bu yereldeki klasörüm şeyde, DOSBOX tarafında C dizini olarak tanındı.
+
+27
+00:08:52,879 --> 00:08:56,519
+C dizine geçebilmek için C 2.3 süsü de yazıp C dizine geçiyorum.
+
+28
+00:08:56,620 --> 00:09:02,759
+Daha sonra burada dir directory list çalıştırdığımda klasör içeriğini burada görebiliyorum.
+
+29
+00:09:02,759 --> 00:09:06,759
+Benim executable'larım bin klasörü içerisindeydi.
+
+30
+00:09:07,539 --> 00:09:30,859
+Burada onları görebiliyorum. Yine CDM, ASM içerisinde de yine directory list çalıştırdığımda benim ASM dosyam ve derlediğim dosyal. Ben bu şekilde bir yapı oluşturdum. Siz şunu yapabilirsiniz. Direkt DOSBox altında bütün executable'larınızı buraya açarsınız. Bağladığınız klasör altına açarsınız. Bütün ASM dosyalarını da yine aynı klasöre koyarsanız pratik olur diyebilirim.
+
+31
+00:09:31,539 --> 00:09:39,539
+Şimdi burada bizim için önemli olan neler var? Onlardan bahsedeyim. Bizim için önemli olan executable'lar şunlar arkadaşlar.
+
+32
+00:09:39,740 --> 00:09:48,199
+Bir, masm, ikincisi link. Eğer com tipi programlarla çalışıyorsak, exe to com da bizim için önem arz ediyor.
+
+33
+00:09:48,340 --> 00:09:52,319
+Son olarak da debug bizim için önemli. Yani doğrudan kullanacağımız programlar bunlar.
+
+34
+00:09:53,172 --> 00:10:07,172
+Bunları nasıl kullanacağız? Yani şu an itibariyle DOSBox'a bir klasör bağladık. Bu klasör içerisinde de bizim derleyeceğimiz ya da derlemek için kullanacağımız Executable'larla SM'de...
+
+35
+00:10:07,283 --> 00:10:14,903
+Source kodlarımız mevcut. Burada yapmış olduğumuz bu mount işlemini yeniden DOSBox başlattığımızda kayboluyor.
+
+36
+00:10:15,144 --> 00:10:22,104
+Göreceksiniz. Tekrar Z'ye düştük. Bunu her seferinde elle yapmak yerine şunu yapabiliyoruz.
+
+37
+00:10:23,104 --> 00:10:29,323
+Bu tekrar göstereyim. DOSBox Options'ı açtığımızda, DOSBox Options'ı açtığımızda
+
+38
+00:10:29,716 --> 00:10:46,816
+En altta auto-exec kısmını vermiş. Auto-exec kısmında az önce çalıştırdığımız komutları birer satır halinde yazarsak bu artık her Dostbox açıldığında otomatik olarak run edecek ve bizi C dizininle geçirip orada bekleyecek.
+
+39
+00:10:47,283 --> 00:11:08,043
+Burada yaptığımız işlem yine mount komutu çalıştırıyoruz. C dizinine bağlayacak. Neyi bağlayacak? Yereldeki bu klasörü bağlayacak. Daha sonra da C dizinine geçişi sağlayacak. Bu iki komut söz konusu burada. Tekrar görelim şimdi bunlar açıkken. Bakın bu komutları otomatik olarak çalıştırdı. C dizinine düştük. Hızlı bir şekilde bunu sağlamış olduk.
+
+40
+00:11:13,268 --> 00:11:36,408
+Şunları yapacağız arkadaşlar. Onu nasıl ifade edeyim? Şimdi şeye geçelim şurada. CDMASM içerisine geçelim. Benim source dosyalarım bunun içerisindeydi. Hemen şuradan da bakalım. MASM içerisinde. Mesela deneme isimli dosyamızla ilgili işlem yapacak olalım. Burada deneme ASM dosyasını açtığım zaman.
+
+41
+00:11:37,203 --> 00:12:03,483
+Bunun bir tane işte exit tipi program olduğunu görüyoruz. Bu exit tipi programı işte nasıl değerleyeceğiz adım adım şimdi onlara bakalım. Elimizde deneme.asm var. Yani derlemeye çalıştığımız dosya bu olsun. Şimdi bununla ilgili olarak öncelikle bizim executable'ımız neredeydi? C dizinin de bin klasörü altındaki masm. Ben de bu şekilde tablo tamamladığım zaman zaten masm.exe geldi.
+
+42
+00:12:03,936 --> 00:12:30,615
+Executable buradaydı bende. Ve ben şu anda C'nin MASM klasörü altındayım. Benim aradığım deneme ASM burada. Şimdi bunu Assembler'dan geçireceğim. Deneme.ASM'yi derliyorum. Derlediğim zaman bana öncelikli olarak obje dosyasının ismini ne olarak vereyim diye sordu. Eğer bir isim vermezsem bunu deneme obje olarak isimlendirecek zaten. Güzel. Daha sonra LST uzantılı dosya oluşturayım mı diyor.
+
+43
+00:12:31,412 --> 00:12:39,312
+bir değer vermezseniz burada bunu oluşturmuyor. Dolayısıyla biz bunu oluşturmasını istediğimiz için deneme.lst uzantısını verdik.
+
+44
+00:12:39,512 --> 00:12:47,412
+CRF uzantılı dosyayı oluşturmasın dedik. Bu sayede herhangi bir hata ve warning almadan derlememizi gerçekleştirdik.
+
+45
+00:12:48,152 --> 00:12:56,512
+Bu işlem sonucunda arkadaşlar, derleme işlemi sonucunda bizim için önemli olan, anlamlı olan buradaki deneme obje isimli dosya.
+
+46
+00:12:56,512 --> 00:12:58,372
+Bir obje dosyası oluşturduk artık.
+
+47
+00:12:58,995 --> 00:13:10,956
+Daha büyük projelerde birden fazla source dosyasının derlenerek elde edildiği obje dosyalarının bir arada linklenmesi sonucunda executable'lar oluşturulabilir.
+
+48
+00:13:11,635 --> 00:13:20,296
+Şu anda bizim bir tane var. İlerleyen derslerde anayordan, alt yordan bunları ayrı dosyalarda ayarlayıp verebiliyor olacağız ama şimdilik tek bir obje dosyamız var.
+
+49
+00:13:20,296 --> 00:13:23,995
+Bunu linklemek için de şunu çalıştıracağız. Link.exe'yi çalıştırmamız lazım.
+
+50
+00:13:26,323 --> 00:13:36,104
+1000 altındaydı. Buna girdi olarak, şeyi vermemiz lazım, OBJ dosyasını vermemiz lazım, girdi olarak. Bunu verdikten sonra,
+
+51
+00:13:36,563 --> 00:14:04,563
+işte derli J ve linkli J dosyanın adı ne olacak? Default olarak deneme egze demiş. O yüzden bunu enter'la geçiyorum. Map dosyasını oluşturmamış ama ben oluştursun istiyorum. Onun için de deneme.map diye veriyorum. Library oluşturmasın onu geçtim. Dolayısıyla bu haliyle linkleme işlemini de yaptık. Şimdi ilk adımda obje usul dosya oluşmuştu. Şimdi ise egze uzantılı dosyamız oluştu. Bu noktada artık bu deneme egzeyi çalıştırabilirim.
+
+52
+00:14:04,563 --> 00:14:15,183
+çalıştırdık ve bitti. Herhangi ekrana bir yazdırması olmadığı için hızlı bir şekilde sonlandırdı. Ama yaptığı işlem nedir diye bakacak olursak bu dosyanın. İki tane mi açtı bundan?
+
+53
+00:14:16,464 --> 00:14:25,724
+Bir tane açmış, tamam. Bunun yaptığı işlem kabaca şu. A sayısı, B sayısı var. Bir de sonuç diye bir wordümüz var. Ne yapıyor bu kod içerisinde bakalım?
+
+54
+00:14:32,596 --> 00:14:35,995
+BL ile sürekli olarak çarpıyor.
+
+55
+00:14:36,316 --> 00:14:38,696
+Veya BX ile sürekli olarak çarpıyor.
+
+56
+00:14:38,816 --> 00:14:43,775
+Yani BX'i kendisiyle loop sayısı kadar çarpıyor.
+
+57
+00:14:43,855 --> 00:14:44,635
+Loop sayısı da ne?
+
+58
+00:14:44,716 --> 00:14:45,395
+B sayısı kadar.
+
+59
+00:14:45,515 --> 00:14:49,076
+Yani bunun yaptığı işlem 2 üzeri 10 değerini hesaplama.
+
+60
+00:14:49,076 --> 00:14:56,076
+2 üzeri 10 değerini hesaplayıp sonlandırılan bir örnek kod olduğunu söyleyebiliriz.
+
+61
+00:14:57,364 --> 00:15:01,464
+Şimdi burada derlerken izleyebileceğimiz bir başka yol daha var arkadaşlar.
+
+62
+00:15:02,624 --> 00:15:10,764
+SM'li aşamasında şöyle noktalı virgül koyarsak varsayılanları doğrudan kabul ederek yani varsayılanlar neydi?
+
+63
+00:15:11,844 --> 00:15:14,564
+Varsayılanları yukarıda görebiliriz.
+
+64
+00:15:15,484 --> 00:15:16,403
+Pardon.
+
+65
+00:15:16,824 --> 00:15:18,304
+Obje dosyası için öneri yapıyor.
+
+66
+00:15:18,903 --> 00:15:20,084
+LST'yi üretmiyor.
+
+67
+00:15:21,076 --> 00:15:37,796
+CRF'yi üretmiyor. Yine aynı şekilde linkleme aşamasında da gelip yine noktalı virgül koyarsak varsayılanları kabul ederek doğrudan linkleme işlemini de tamamlamış oluyor. Bu iki işlem sonucunda elimizde obje ve egze isimli uzantılı dosyalar oluşmuş oluyor.
+
+68
+00:15:38,156 --> 00:15:46,796
+Değerleme aşamaları bu şekilde. Bir sonraki adımda ise şuna bakabiliriz.
+
+69
+00:15:47,731 --> 00:16:08,851
+debug programına bakabiliriz. Eğer comtipi program kullanacaksak bu aşamada oluşturduğumuz egzeyi tekrar com'a dönüştürmemiz gerekecek ama şu aşamada o daha sonranın işi olduğu için ona girmiyorum. Bir de debug sürecine bakalım. Debug aslında adım adım kodlarımızı çalıştırabildiğimiz, yani tam adı üzerinde debug yapabildiğimiz bir program.
+
+70
+00:16:09,364 --> 00:16:17,704
+Yine bende C'nin 1000'in altında debug ismiyle mevcut. Neyi debug ediyoruz? Deneme.exe'yi debug edeceğiz.
+
+71
+00:16:18,404 --> 00:16:24,064
+Şimdi, exe'yi debug etmeye başladığımız zaman düştüğümüz komut satırı böyle bir satır.
+
+72
+00:16:24,724 --> 00:16:33,784
+Burada debugla ilgili olarak kullanabileceğimiz tool'lara bakmak istersek veya komutlara bakmak istersek help'i soru işaretiyle mevcut.
+
+73
+00:16:34,163 --> 00:16:55,264
+soru işaretinde bize her kısmını iletmiş durumda. Bizim için önemli olanlar şu anda inceleyeceğimiz assemble, dump, fill veya enter diyelim, enter, go, ondan sonra proceed, register ve trace ve son olarak da unassemble komutları.
+
+74
+00:17:01,395 --> 00:17:20,715
+P, T ve U komutlarını kullanarak farklı farklı işlemler yapıyor olacağız. Örneğin şu anda biz R komutunu kullanarak şu anda yazmaçların durumlarını inceleyebiliriz. R komutu yazmaçların durumlarını incelememizi sağlıyor. Şimdi buradaki değerlere baktığımızda arkadaşlar.
+
+75
+00:17:21,907 --> 00:17:30,067
+mevcut haliyle, işte AX yazmacındaki değer, şu anda daha hiçbir kod çalıştırmadım. Yani o şeyi açalım şuradan, deneme ASM'yi açalım.
+
+76
+00:17:33,427 --> 00:17:42,367
+Deneme ASM içerisinden hiçbir kod çalıştırmadık daha. Bu haliyle programımız hafızaya yüklendiği haliyle
+
+77
+00:17:42,771 --> 00:18:08,271
+programımız devreye girdi, çalıştırıldı işletim sistemi tarafından ve daha hiçbir komut yürütülmeden, yani şu başta, baş tarafında ilk komutumuz PushDS zaten, bakın onu gösteriyor zaten sıradaki komut olarak. Daha hiçbir komut yürütmeden şu anda registerların durumlarına bakabiliyoruz. Bununla ilgili olarak bakın, DS'de bir değer var, stack segment değer var, CS'de değer var. Bunlar exit tipi programın.
+
+78
+00:18:08,627 --> 00:18:20,548
+mevcut olması gereken aslında segmentlere, bu segmentlerin birer hafıza bölgesine yerleştirilmesi gerekiyor. Onları görüyoruz. Yine genel amaçlı yazmaçlarda bir takım değerler var. Onları görüyoruz.
+
+79
+00:18:21,728 --> 00:18:29,447
+CS ve ÜP ikilisi şu anda bir sonraki komutu gösteriyor. Yani kod segment olarak 76E hexadecimal ve 0 offsetinde
+
+80
+00:18:29,807 --> 00:18:39,248
+O adrese gittiğimizde, bakın orada bu ifade edilmiş, sıradaki komutun makine kodu karşılığı ve bu komutun minemonikle verilmiş hali.
+
+81
+00:18:39,487 --> 00:18:47,748
+Sıradaki komutumuz push.dse'ymiş. Yani biz CS'nin IP offsetindeki kodu çalıştırdığımızda aslında push.dse'yi çalıştıracağız. Bunu görüyoruz burada.
+
+82
+00:18:48,427 --> 00:18:53,327
+Ek olarak R'ye bastığımızda bir de, R komutunu çalıştırdığımızda bir de şurada bayrak değerlerini görüyoruz.
+
+83
+00:18:53,327 --> 00:18:56,427
+Bayrak değerlerini okuduğumuzda no overflow.
+
+84
+00:18:57,556 --> 00:19:19,936
+Direction flag up yönünde, ileriye doğru. Enable interrupt, interruptlar enable edilmiş. Sonuç pozitif, yani sign flag pozitif değer gösteriyor. Zero flag sıfır değerinde, no zero. No auxiliary flag. Parity odd, odd parity şeklinde flag set edilmiş ve no carry durumu var. Carry yok.
+
+85
+00:19:22,067 --> 00:19:28,007
+Herhangi bir yazmacı değiştirmek istediğimizde ise, R komutundan sonra o yazmacın ismini veririz.
+
+86
+00:19:28,067 --> 00:19:36,827
+Mesela, R, AX dediğimizde, AX'in güncel değerini gösterdi ve daha sonra bize hangi değeri yüklemek istediğimizi soruyor.
+
+87
+00:19:36,967 --> 00:19:40,827
+Biz bunu 1, 1, 1, hexadesimal olarak, 16 bitlik değer olarak yazdık.
+
+88
+00:19:41,487 --> 00:19:45,708
+Tekrar registerlara baktığımızda, AX yazmacına bu değerin yüklendiğini görebiliyoruz.
+
+89
+00:19:46,132 --> 00:19:59,811
+veya işte DX yazmacına, RDX dediğimizde DX yazmacının değerini de 1 olarak set etmemiz mümkün. Burada gördüğünüz gibi DX yazmacını 1 olarak set edebildik. Burada stack pointer aslında önemli.
+
+90
+00:20:00,000 --> 00:20:20,359
+siteyi hatırlayacak olursanız, yığının içerisinde, yığın için ayrılmış en uzak adresi gösteriyordu stack pointer. Dolayısıyla yığının en uzak adresini gösteriyor. Yığına bir şeyler biz push ettikçe, bu SP değeri gittikçe küçülecek. Tamam mı? Gittikçe küçülecek. Onun haricinde başka ne diyebiliriz?
+
+91
+00:20:20,756 --> 00:20:35,635
+R ile ilgili durumlar bunlar. Adım adım, yani R'nin amacı da temel olarak her bir komutu çalıştırdıktan sonra, nedir onun adı? Yaz maçlarda oluşacak değerleri kontrol etmek için bu komutu kullanabiliyoruz. De bak ekranında.
+
+92
+00:20:37,336 --> 00:20:45,115
+Kaç kişiyiz bir bakalım. Yeni gelen arkadaşlardan Dostbox'ta değerleme çalıştırabilen oldu mu?
+
+93
+00:20:46,867 --> 00:20:49,768
+Geçen hafta konuşmuştuk, çalıştırabilirseniz iyi olur diye.
+
+94
+00:20:51,367 --> 00:20:52,567
+Çalıştırabilen olur mu bundan?
+
+95
+00:20:59,539 --> 00:21:00,920
+Evet cevap yok.
+
+96
+00:21:05,779 --> 00:21:30,880
+Yani derleyebildik ve dabak işlemlerini de belki geçen hafta bahsetmiştim çok kısa bir kısmından, trace ve register'lardan. O noktada deneme şansımız olduysa güzel sevindim. Tamamdır. Şimdi deneyememiş arkadaşlar için de tekrar gitmekte fayda var yalnız. Dolayısıyla R komutunun kullanımını bu şekilde ifade edebiliriz. İkinci bir komutumuz arkadaşlar T komutu. T komutu trace.
+
+97
+00:21:33,428 --> 00:21:57,548
+t komutu trace'den geliyor. Yani bir adım yürütmek anlamında. Yani bizim sıradaki komutumuza bakın. Şöyle komutları yukarı kaydırayım. Sıradaki komutumuz pushdse. Pushdse'yi yürüttüm. Bir sonraki komutum artık xor, AX, AX'i gösteriyor. Bakın. Instruction pointer nasıl değişti? Bire gelmiş. Niye bire geldi? Ona bakalım şimdi. Instruction pointer başta kod yüklendiğinde sıfır değerine sahipti.
+
+98
+00:21:58,067 --> 00:22:19,148
+Bizim sırada çalıştırdığımız komut, 1 byte'lık bir komut. Dolayısıyla bu komutu çalıştırdığımızda, instruction pointer 1 artacak. Yani ulaşacağı değer 1'e gelecek. Bu kod segmentin 1 değerinde bunu almış olacağız ve bir sonraki komutu gösteriyor olacak. Bir sonraki komutumuzu da çalıştıralım, trace edelim.
+
+99
+00:22:21,491 --> 00:22:33,551
+Bu arada bir soru işaretine bakıp Trash'e bir bakmak istiyorum. Trash'le birlikte bakın. Trash'le birlikte adres değeri de verebiliyormuşuz. Yani belirli bir adreste de çalıştırmamız mümkünmüş.
+
+100
+00:22:33,971 --> 00:23:00,551
+Şimdi R'de kaldığımız yere bakalım tekrar. Push AX satırına geldim. Tekrar bunu da trace ettim. Şimdi bu şekilde adım adım adım adım şeyi çalıştırabiliyoruz. Kodu adım adım çalıştırıp her bir çalıştırmadan sonra da R komutuyla birlikte. Traceden sonra zaten şeyi gösteriyor bize. İçerikleri gösteriyor. Bu şekilde içeriği izleyebiliyoruz. Bu aşamada bir başka komut olan D'ye geçelim arkadaşlar. D, dump komutu.
+
+101
+00:23:01,044 --> 00:23:26,644
+dump komutu bize şunu sağlıyor. Herhangi bir hafıza alanını bizim önümüzde listeliyor. Mesela şunu yapalım. Code segmentin 0 offsetinden itibaren dump edelim. Bakın gördüğümüz değerler neler? 1E hatırlayacak olursanız push ds'ye karşılık geliyordu. 3 3 C 0 şurada yazıyor zaten. Yukarıda kalmış ama. 3 3 C 0.
+
+102
+00:23:27,443 --> 00:23:28,723
+Neye karşılık geliyor?
+
+103
+00:23:29,364 --> 00:23:32,624
+3, 3, C, 0, 50 hatta. Şu 3'ü zannedersem.
+
+104
+00:23:33,344 --> 00:23:33,864
+Yok, pardon.
+
+105
+00:23:34,304 --> 00:23:35,304
+3, 3, C, 0,
+
+106
+00:23:36,364 --> 00:23:38,144
+XOR, AX, AX'e denk geliyor.
+
+107
+00:23:39,144 --> 00:23:40,403
+Daha sonraki komut ise,
+
+108
+00:23:41,423 --> 00:23:43,723
+B, 50, 50PUSH, AX,
+
+109
+00:23:45,003 --> 00:23:47,344
+MOV, AX, VIRGÜL, DATA, SG komutuda.
+
+110
+00:23:47,892 --> 00:23:50,032
+o da B8, 6D, 07.
+
+111
+00:23:50,352 --> 00:23:52,072
+B8, 6D, 07.
+
+112
+00:23:52,132 --> 00:24:00,612
+Yani biz kod segmentin makine kodu karşılıklarını ürettiği, sakladığı kısımdan itibaren görebiliyor durumdayız şu anda.
+
+113
+00:24:00,772 --> 00:24:07,192
+Dump komutunu bir segment ve bunun offset şeklinde ifade ettiğimizde bu şekilde içeriği görebiliyoruz.
+
+114
+00:24:07,192 --> 00:24:09,652
+İstersek bunu şöyle de çalıştırabilirdik.
+
+115
+00:24:09,752 --> 00:24:14,712
+Dump deyip kod segment değerine şu anda 07, 6E, 07.
+
+116
+00:24:15,412 --> 00:24:40,771
+x86 e değerinde. Bunun 0, 0, 0, 0 offsetine de bakabiliriz. Doğrudan sayı da yazabilirdik ama cs ile kullanmak daha pratik. Bu aşamada şeye de bakalım. Biz programı başlattık, çalıştırdık, şuraya kadar geldik. Bu üç komutu çalıştırdık. Bu üç komut aslında yığına bir şeyler attı. Yığına atılan değerler neydi? Onları da tekrar görmek adına şöyle yapacağım şimdi. Tekrar çalıştıralım.
+
+117
+00:24:41,395 --> 00:25:08,275
+run diyelim. Şimdi push DS, şu anda DS'nin değeri 0,7, 5A. Trace ettiğim zaman, yığına 0,7, 5A'yı atması lazım. XOR AX, AX, daha sonra tekrar AX'i sıfırladı, bunu da yığına atacak. Dolayısıyla yığında da ikinci attığı değer 0 olmalı. Şimdi sorumuz şu, yığına bakabilir miyiz? Yığına, bu yığına attığımız şeyleri görebilir miyiz? Yığın hafıza bölgesini inceleyebilir miyiz dump'la? Onu nasıl yapacağız?
+
+118
+00:25:08,672 --> 00:25:17,911
+yine dump deyip, şeyi hatırlayalım yalnız, şunu hatırlayalım, bir şey hatırlamamız lazım. Bunu söyleyeyim.
+
+119
+00:25:27,412 --> 00:25:29,412
+Let me see the gizas...
+
+120
+00:25:35,092 --> 00:25:35,592
+A.
+
+121
+00:26:00,596 --> 00:26:13,896
+değişmiş, arayüz değişmiş. Evet, şimdi burada şundan bahsedeceğim. Şimdi yığınımız bizim buradaki hafıza bölgesi olsun.
+
+122
+00:26:13,896 --> 00:26:18,916
+Stack segment değerimiz, SS değerimiz bu segmentin başlangıç adresini gösteriyor.
+
+123
+00:26:19,476 --> 00:26:47,096
+Stack pointer da, şöyle geri alalım, stack pointer da bunun sıradaki boş gözünü gösteriyor. Yani şu anda aslında şuraya gösterecek stack pointer. Biz yığına push komutuyla bir şey attığımızda, stack pointer öncelikli olarak artı iki artacak, bir sonraki word yani sıradaki boş gözü yığının dibini veya en üst adresini gösterecek. Bu arada yığının içerisinde yüksek adres burası, düşük adres burası şeklinde ifade edelim. Bizim çalıştırdığımız komuta göre az önce dsi yığına attı.
+
+124
+00:26:47,476 --> 00:26:53,635
+Sonra bunu attıktan sonra stack pointer yine boş adresi gösteriyor.
+
+125
+00:26:54,355 --> 00:27:20,695
+geldik buraya, bir sonraki boş adrese, yine bir şey push ettik. Buraya yazdı, yazdığı değer, AX değerini yazdı ve o 0 değerine sahip aslında. Daha sonra yine stack pointer 2 arttı, şu anda yine boş yeri gösteriyor. Yani bizim yığında görmeyi beklediğimiz şey anlamlı olarak yığının en dibinde veya en yüksek adresinde az önce attığımız data segment değeri o ki neye eşitti? 075A'ya eşitmiş. Şurada 075A değeri var.
+
+126
+00:27:21,076 --> 00:27:32,375
+Bir sonraki değerimizde AX'de 0, 0, 0. Şuradaki değerimizde bu değer olması lazım. Bunları görmek istiyoruz. Bunun için yığın adresini dump etmeliyiz. Bunu nasıl yapacağız?
+
+127
+00:27:35,816 --> 00:27:38,175
+Anlı mı Fikri Ola? Şu ana kadar gördüklerimizde.
+
+128
+00:27:53,971 --> 00:28:11,711
+Şimdi, bakın, çok yaklaştık ama cevap bu değil. Data segment, şey, stack segmentin sıfırı değil. Stack segmentin, burası bakın, en uzak adresi. Burası en uzak adresi, burası en düşük adresi. Yani sıfırı burası aslında. Ama biz daha oraya ulaşmadık.
+
+129
+00:28:14,372 --> 00:28:21,451
+Stack segmentin SP'sinden itibaren bakabiliriz. Evet, yani şu anda stack segmentin SP'si buraya ulaştı ya.
+
+130
+00:28:21,776 --> 00:28:34,316
+dump ettiğimiz zaman bu adresten itibaren, bu adresten itibaren daha yükselen adreslere doğru bize gösterecek. Dolayısıyla şu anki stack pointer offsetine bakmamız anlamlı. Çok güzel. Ona bakalım şimdi. Dump edelim.
+
+131
+00:28:35,175 --> 00:28:42,556
+Stack segmentin ama ikinci kısmı offseti immediate değer olarak yani sabit değer olarak yazmamız lazım. SP'de yazan değer neyse onu yazdım. 24.
+
+132
+00:28:43,476 --> 00:28:50,416
+Şimdi bakın, 24 adresi sıradaki boş gözü gösteriyor. Yani şu boşluğu gösteriyor aslında stack pointerımız. 24 burası.
+
+133
+00:28:52,156 --> 00:29:02,416
+Yığının en üstünde, şimdi üstten şu boş gözden itibaren gelecek olursak, şuradan itibaren gelecek olursak, sırada görmeyi beklediğimiz değer AX'deki 00 değeri. Onu görebiliyor muyuz? Bakın şurada.
+
+134
+00:29:02,956 --> 00:29:09,196
+00 değerini gördük. Onun sonrasında ne var? DS değerini görmeliyiz. O da 07 5A'ya eşit.
+
+135
+00:29:09,556 --> 00:29:16,635
+Onu görebiliyor muyuz? Aaa, ters gelmiş. Yanlışlık var herhalde değil mi? Niye ters geldi acaba? Neyi yanlış yapmış olabiliriz?
+
+136
+00:29:20,948 --> 00:29:28,388
+Bizim görmeyi planladığımız şey 07, 5A idi ama 5A 07'yi gördük. Neyi ters yaptık acaba? Var mı fikri olan?
+
+137
+00:29:32,660 --> 00:29:33,039
+Hadi.
+
+138
+00:29:34,600 --> 00:29:38,860
+Uzağa doğru gittiği için 07'yi daha uzakta görmüş mü deriz acaba?
+
+139
+00:29:39,819 --> 00:29:51,440
+Evet, yani buradaki cevap aslında 8086 Lidlendi'in formatında veri sakladığı için verinin düşük anlamlı kısmı düşük adreste, yüksek anlamlı kısmı yüksek adreste.
+
+140
+00:29:51,559 --> 00:29:56,920
+Dolayısıyla biz Word olarak şunu değerlendirdiğimiz vakit aslında buradaki Word değeri 075A.
+
+141
+00:29:57,000 --> 00:29:59,019
+Yani tam olarak görmek istediğimiz değer aslında.
+
+142
+00:30:00,000 --> 00:30:05,500
+Dolayısıyla buradaki cevap LittleAndy'in formatında saklandığı için herhangi bir problem yok şeklinde olmalıydı.
+
+143
+00:30:05,980 --> 00:30:08,620
+Bu yığını dump etmek bizim için nerede önemli?
+
+144
+00:30:09,299 --> 00:30:17,659
+Yığın dump'ı şurada önemli, stack dump'ı şurada önemli. Örneğin biz Alt Yordamlı ve Alt Yordamlılara parametre aktardığımız örneklere geçeceğiz.
+
+145
+00:30:17,779 --> 00:30:24,599
+Ve yığın üzerinden parametre dönüyor olacağız. Recursive programlar inceliyor olacağız. Yığın üzerinden parametre aktaran recursive programlar inceliyor olacağız.
+
+146
+00:30:24,599 --> 00:30:32,599
+Bu durumlarda programımızın doğru çalışmadığını anlamak üzere yığını dump etmemiz gerekecek. Yığını içeriğine bakmamız gerekecek.
+
+147
+00:30:33,099 --> 00:30:36,799
+Bunun için de buradaki dump komutunu kullanıyor olacağız arkadaşlar.
+
+148
+00:30:37,299 --> 00:30:43,359
+ve ikinci bir özellikle şu anda daha gerçekleştiremedik ama biraz sonra söyleyeceğim onu da.
+
+149
+00:30:48,439 --> 00:30:50,359
+Bunda niye ok işareti var acaba?
+
+150
+00:30:52,019 --> 00:30:52,339
+Neyse.
+
+151
+00:30:53,240 --> 00:31:01,599
+İkinci bir özellikle data segment içerisinde tanımlamış olduğumuz değişkenler ve işte sonucu sakladığımız bir takım değişkenler oluyordu hatırlayacak olursanız.
+
+152
+00:31:01,599 --> 00:31:03,519
+Veya şimdi tekrar göreceğiz biraz sonra.
+
+153
+00:31:03,903 --> 00:31:10,644
+Dolayısıyla kabaca söylemek gerekirse, tanımladığımız değişkenler ve değer atadığımız değişkenlerin içeriğini de kontrol etmek istiyor olabiliriz.
+
+154
+00:31:11,043 --> 00:31:17,443
+Bu durumda da yine, x'i d deyip, ds'nin sıfır offsetinden itibaren inceliyor olacağız.
+
+155
+00:31:17,443 --> 00:31:23,604
+Ama şu aşamada daha bizim ayarladığımız, kurduğumuz data segmente ulaşamadık.
+
+156
+00:31:23,884 --> 00:31:26,403
+Onun bir sebebi var, şimdi onu bir anlatayım isterseniz.
+
+157
+00:31:27,644 --> 00:31:28,583
+Şöyle ki,
+
+158
+00:31:37,619 --> 00:31:39,619
+silmesi de her şey karışmış.
+
+159
+00:31:48,627 --> 00:31:53,787
+Şimdi şöyle ki arkadaşlar, biz aslında az önce de gördünüz, komut satırındaydık.
+
+160
+00:31:55,467 --> 00:31:58,607
+Komut satırındaydık, burada kendi programımızı çalıştırdık.
+
+161
+00:31:58,707 --> 00:32:01,627
+İşte deneme.exe dedik, programımızı çalıştırdık.
+
+162
+00:32:02,047 --> 00:32:05,547
+Bu senaryoda aslında devrede işletim sistemi vardı.
+
+163
+00:32:05,707 --> 00:32:11,047
+İşletim sistemi geçici olarak bizim programımıza, yani deneme isimli programımıza
+
+164
+00:32:11,508 --> 00:32:23,087
+işlemi devretti. Daha sonra bizim programımız sonlandıktan sonra tekrar işletim sisteminde kaldığımız yere döndük. Böyle bir akış gerçekleşti. Tekrar onu görmek istersek şöyle yapabiliriz. Quit diyelim.
+
+165
+00:32:23,763 --> 00:32:51,263
+deneme egzeyi çalıştırdık. Çalıştı. Çok hızlı bir şekilde çalıştı. Herhangi bir çıktısı yoktu programımızın. Göremedik. Tekrar işletim sistemine döndük. Ama bu aşama içerisinde şunlar gerçekleşti. Bizim bu deneme isimli programdan tekrar geri dönebilmemiz adına bir takım gereklilikler var. Onları yerine getirmemiz gerekiyor. Bir kere bizim deneme isimli programımız egze tipinde bir programdı. Egze tipindeki programlar için bir gereklilik şartı var. Bu şu.
+
+166
+00:32:51,763 --> 00:32:54,763
+Ana yordan olmalı.
+
+167
+00:32:56,263 --> 00:32:57,723
+Mutlaka olmalı.
+
+168
+00:33:04,500 --> 00:33:09,500
+Demek ki egze tipi programlarda bir tane ana yordam olmalı ve ana yordamımız far tipinde olmalı.
+
+169
+00:33:14,451 --> 00:33:42,011
+Bir yordamın far tipinde olması ne demek? Far tipinde olması şu demek, şöyle çizerek göstermeye çalışayım yine. Mesela örneğin şu anda işletim sistemimiz şuralarda çalışıyor. Bir CS1 ve IP1 değeri alarak buralarda çalışıyor. Ama bizim ya çalıştıracağım, bu işletim sisteminin şu anda bulunduğu nokta olsun. İlgili kod satırı olsun. Bizim programımız ise şurada yerleşik. Ve bunun da CS2 ve IP2 şeklinde.
+
+170
+00:33:42,432 --> 00:33:44,395
+Ya zavadam.
+
+171
+00:33:45,523 --> 00:34:11,923
+IP2 şeklinde farklı bir segment ve offset değeri var. İşte işletim sistemi bu şekilde uzaktaki bir programı çağırmak istediği zaman buradaki kod segment değerinin CS'ye yüklenmesi gerekiyor. Buradaki offset değerinin de Instruction Point'e yüklenmesi gerekiyor. Bu şekilde hem CS hem de IP değerlerinin değiştiği durumlar far tipinde fonksiyon çağırma olarak geçiyor veya far tipinde yordam çağırma olarak isimlendiriliyor.
+
+172
+00:34:12,788 --> 00:34:19,828
+Dolayısıyla işletim sistemine dönebilmek, arkadaşlar, bir küçücük bir ara rica ediyorum, bir saniye.
+
+173
+00:34:38,963 --> 00:34:55,663
+Dolayısıyla, az önce dediğimiz nokta neydi? İşletim sisteminden bizim programımıza, far tipindeki bir programa dallanabilmek için, bu fiziki olarak yakın da olabilir ama far tipinde olduğu için, hem CS'nin hem de Instruction Pointer'ın farklı değerle yüklenmesi gerekiyor.
+
+174
+00:34:56,144 --> 00:35:05,824
+Dolayısıyla çağırırken böyle, geri dönerken de aynı şey geçerli. Yani burada CS1 ve IP1'in yerine,
+
+175
+00:35:06,096 --> 00:35:22,596
+CS2 ve IP2 kullanılmaya başlandı. Şimdi bunlar bu şekilde değişti. Ama geri dönebilmek için de tekrar işletim sisteminde kaldığım yere dönebilmek için de tekrar CS1 değerinin ve IP1 değerinin geri yüklenmesi gerekiyor. Bunları nasıl sağlayacağız onu söyleyelim şimdi.
+
+176
+00:35:35,827 --> 00:35:57,947
+egze tipi bir program çalıştırıldığında işletim sistemi DSY'ye işletim sistemi dönüş CS1 değerini yükleyip şunu bekliyor. Bunu yüklüyor ve sonrasında da egze'den şunu bekliyor. Egze'den DSY'nin 0 offsetine dönmesini bekliyor.
+
+177
+00:36:02,483 --> 00:36:18,403
+Burada kastedilen şu, işletim sistemi data segmenti, işletim sistemi egzeyi çağırırken, çağırırken, kendi segment değerini, kod segment değerini ds'ye yükleyip egzeyi çağırıyor.
+
+178
+00:36:19,103 --> 00:36:24,083
+Egze'den de şunu bekliyor, return ederken data segmentin sıfırına dönmelisin diyor.
+
+179
+00:36:24,823 --> 00:36:29,863
+İşte data segmentin sıfırı, ds'de ne var? cs, kendi cs değeri var.
+
+180
+00:36:30,324 --> 00:36:39,524
+ve offset olarak da 0 offsetine dönüyor. Yani aslında bizim yığına DS ve 0 değerlerini atmamız gerekiyor. Bunun için kod tarafında ne yapmıştık bakın.
+
+181
+00:36:40,384 --> 00:36:51,284
+Kod tarafında DS ile bizde başladığımız için, işletim sistemi dönüş segment değeri bize DS ile verildiği için onu yığına attık. Güzel. Ama yığına bir de 0 değeri atmamız lazım. O 0 atma işlemini de şurada yapıyoruz.
+
+182
+00:36:52,043 --> 00:36:56,864
+AX'i sıfırladıktan sonra bunu yığına atarak yığına bir de 0 değeri göndermiş oluyoruz.
+
+183
+00:36:57,300 --> 00:37:18,900
+Dolayısıyla biz bu aşamada şunu yaptık. Bu CS ve IP değerlerini ki bunlar neymiş? Bizim EXE programımızın içine geldiğimizde DSD ve 0 offsetinde olduğu her iki taraf tarafından anlaşılarak kabul edilmiş durumda. Dolayısıyla bu dönüş adreslerimiz bunlarmış. Bunları yığına attık. Peki dönüş nasıl sağlanıyor? Dönüş de şununla sağlanıyor arkadaşlar.
+
+184
+00:37:19,560 --> 00:37:23,320
+EXE tipi programın dönüşü REDF ile yapılmış. REDF ne demek?
+
+185
+00:37:25,300 --> 00:37:26,020
+RETV
+
+186
+00:37:31,380 --> 00:37:33,140
+RETV şu demek arkadaşlar.
+
+187
+00:37:37,076 --> 00:37:53,076
+RETV çalıştırıldığı zaman o sırada stack pointer veya yığın diyelim, yığının en üstünde hangi değer varsa bunu alıyor, instruction pointerı atıyor, bir sonraki değeri de alıyor, bunu kod segment atıyor.
+
+188
+00:37:53,715 --> 00:37:57,715
+Biz exitip programın hemen başında yığına ne koymuştuk?
+
+189
+00:37:58,132 --> 00:38:01,931
+bir DS koymuştuk, bir de 00 offset'i koymuştuk.
+
+190
+00:38:02,351 --> 00:38:06,572
+EXE program çalışırken yığına bir şeyler attıysak, o kadar şeyi geri çektik.
+
+191
+00:38:06,971 --> 00:38:12,132
+Ve şu anda REDF satırına geldiğimizde, sıradaki yığının en üstündeki değer 00 değeri.
+
+192
+00:38:12,612 --> 00:38:20,132
+REDF çalıştırılırken bunu çekti, IP'ye 0 attı, bir adım daha çalıştırdı, CS'ye de...
+
+193
+00:38:20,179 --> 00:38:45,519
+DS'deki değeri attı. DS'de zaten işletim sistemine dönüş segment değeri vardı. Dolayısıyla biz bu yığını attığımız, yani Push DS ve Push AX ki bu sırada AX'deki değer 0, 0'dı. Bu iki değeri yığını atıp, RETFE ile bunları yığından çekerek dönüşü sağlamış olduk. Dolayısıyla şunu demek istiyorum.
+
+194
+00:38:46,003 --> 00:38:51,863
+Bizim programımız çalıştırılırken, bakın debug aşamasındaki durumlarına bakalım tekrar, trace edelim.
+
+195
+00:38:52,703 --> 00:39:02,463
+Şu aşamada DSD görmüş olduğumuz 075A değeri aslında bizim işletim sistemimize dönüş için gerekli olan segment değerine saklıyor.
+
+196
+00:39:02,463 --> 00:39:07,264
+Daha bizim kodumuzda tanımlamış olduğumuz, yani şurada tanımlamış olduğumuz segment,
+
+197
+00:39:07,795 --> 00:39:31,996
+daha data segment olarak görünmüyor. Daha data segment olarak bunu tanımlamadık kodumuzda. Yani kodun akışı içerisinde bu daha gerçekleşmedi. O nerede gerçekleşiyor? O da şurada gerçekleşiyor arkadaşlar. Bakın şuraya kadar DSD'deki değerimiz işletim sistemine dönüş değeriydi. Şuradan itibaren DSD'yi bizim tanımladığımız bu segmenti gösterecek şekilde değiştiriyoruz. Onu nasıl yapmışız?
+
+198
+00:39:32,596 --> 00:39:53,336
+Tanımladığımız segmentin ismini AX'e almışız. Daha sonra da bu AX değerini DS'ye kopyalamışız. Bunu doğrudan yapamamışız. Çünkü hatırlayın segment yazmaçlarına immediate değer atayacak bir instrakşonumuz yoktu. Ancak segment yazmaçlarına başka yazmaçlardan değer atayabiliyorduk. Dolayısıyla bunu dolan başlı olarak iki adımda sağlayabiliyoruz.
+
+199
+00:40:00,000 --> 00:40:19,480
+segmentimiz, data segment fonksiyonunu bu kod için görmeye başlıyor. Şimdi onları tekrar trace edelim. Şimdi bu MOV AX 7, 6D aslında şu satıra denk geliyor. Şu satıra denk geliyor. Onu da trace bir adım çalıştıralım ve son olarak DS değerine bakın. DS değeri artık arkadaşlar.
+
+200
+00:40:20,532 --> 00:40:37,072
+bizim burada tanımladığımız segmenti, data segment olarak kullanmaya başladı. Şimdi bir başka sorumuz, buraya kadar geldikten sonra artık data segmentten bizim burada tanımladığımız değişkenleri görebilir miyiz? Onun için ne yapacağız?
+
+201
+00:40:39,832 --> 00:40:45,792
+Bu aşamada artık bizim değişkenlerimizi görebilmemiz mümkün. Değişkenlerimizi nasıl göreceğiz?
+
+202
+00:40:47,532 --> 00:40:47,992
+Artı mı?
+
+203
+00:40:56,659 --> 00:40:57,679
+Nasıl göreceğiz?
+
+204
+00:41:09,588 --> 00:41:10,148
+Yani
+
+205
+00:41:10,148 --> 00:41:12,548
+Nasıl görebiliriz?
+
+206
+00:41:17,811 --> 00:41:40,971
+Buraya kadar olan kısım net mi arkadaşlar? Kod yürütmeye başladığı anda bizdeki DS değeri farklı bir şey gösteriyor. Buradaki data segmenti göstermiyor. Ancak ve ancak şu satırlar çalıştırıldıktan sonra artık DS bizim değişkenlerimizle tanımladığımız bu segmenti işaret etmeye başladı. Bu aşamada data segment içeriğini görmek aslında basit. Dump ediyoruz.
+
+207
+00:41:43,092 --> 00:41:48,452
+dump ediyoruz. Neyi? Data segmentin sıfır offsetinden itibaren olan hafıza bölgesini dump ediyoruz.
+
+208
+00:41:48,612 --> 00:41:53,091
+Dump ettiğimiz zaman gördüğümüz değerler bakın. İlk başta bir A sayısını...
+
+209
+00:41:53,427 --> 00:42:20,008
+tanımlamışız. Değeri 2 byte. Şurada 2 değerini 1 byte olarak görüyoruz. Daha sonra 10 değeri var. 0, 1 byte olarak burada o mevcut. Daha sonra bir tane word tanımlamışız. 0 değerine sahip. Yani 2 byte'lık yer bu kaplayacak. Şunlar bizim tanımladığımız sonuç değişkeni. Daha sonra birazcık ne olduğunu bilmediğimiz 0, 0, 0 değerleri var. Sonra da şurada tanıdık bir bölge başlıyor. Burası neresi? Şu tanıdık bölge neresi?
+
+210
+00:42:24,275 --> 00:42:25,615
+Az önce de bakmıştık.
+
+211
+00:42:29,652 --> 00:42:42,751
+kod segmentin kendisi değil mi? Onu bir de nereden doğrulayabiliriz? Bakın, 0, 6, E'nin 0 offseti aynı zamanda 0, 6, D'nin 10 offsetine eşittir.
+
+212
+00:42:43,132 --> 00:42:52,371
+Dolayısıyla şuradan itibaren bizim kod segmentimiz başladı. Bu şu anlama geliyor. Şuraya kadar bizim için anlamlı veriler varken, buradan sonrası çöp veri.
+
+213
+00:42:52,371 --> 00:42:55,612
+Bu çöp verinin oluşmasının sebebi de kabaca şu.
+
+214
+00:42:56,019 --> 00:42:59,179
+Burada, kullanmış olduğumuz para kelimeleri.
+
+215
+00:42:59,635 --> 00:43:27,275
+Para kelimeleri bir hizalama tipi. Bunun byte, word ve page şeklinde farklı versiyonları var. Para demek 16'nın tam katlarına bu segmentleri hizala demek. Yani 16'nın tam katından itibaren bu segmenti başlar. 16'nın tam katından itibaren kod segmenti başlar. Buradaki içerik, şu içerik 16 byte'lık alandan çok daha az yer kapladığı için toplamda 1, 2, 4 byte'lık yer kaplıyor. Değil mi? Bu 4 byte'lık...
+
+216
+00:43:27,380 --> 00:43:43,440
+alandan sonraki kısım bir sonraki 16'nın katına kadar çöp değerli dolu. Yani şurada şuraya kadar olan bölge boş, kullanılmayan alan. Bunun sebebi de bir sonraki segment olan kod segmentin para hizalaması ile başlıyor olması.
+
+217
+00:43:44,659 --> 00:43:48,760
+Peki şimdi tekrar şeye gelelim. Kodumuzu ilk başlattığımız anda
+
+218
+00:43:50,099 --> 00:44:04,760
+Data segmentin sıfırını dump edersem bu değerlerimi görürmüyor. A, B ve sonuç değerlerimi görürmüyor. Doğal olarak göremeyiz değil mi? Çünkü şu anda işletim sisteminin o andaki hangi kod satırındaysak onları görüyoruz.
+
+219
+00:44:05,679 --> 00:44:13,480
+Onları görüyoruz. Onu da nasıl ifade edelim? Onu da unassembly komutuyla inceleyebiliriz.
+
+220
+00:44:14,708 --> 00:44:22,688
+bir makina kodu, bir hafıza adresinden itibaren yerleşik olan bir makina kodunu alıp bunun minemonik hallerini bize gösteriyor.
+
+221
+00:44:22,848 --> 00:44:28,148
+Burada vereceğimiz adres işletim sistemine dönüş adresini merak ettik. Oraya bir bakalım.
+
+222
+00:44:29,668 --> 00:44:42,008
+Bakın burada bir interab kolu var. Daha sonra işte hizalamalar biraz karışmış. Şundan sonrası anlamlı değil zaten. Bu int 20'den sonrası anlamlı değil.
+
+223
+00:44:42,771 --> 00:45:08,552
+Dolayısıyla orada farklı bir takım komutlar var. Tekrar kuyutla çıkıp bunu sonlandırabilir miyiz? Sonlandırabilir miyiz? Şimdi yeniden başlatıyorum. Trace ettim. Birkaç adım çalıştırdım. XOR, DX, DX. Bu da kodumuzun ana kısmı. Burada başka neyi inceleyelim? Bir onu hemen kontrol edelim. Neye bakabiliriz?
+
+224
+00:45:13,043 --> 00:45:23,183
+trace'e baktık. Enter'a bakabiliriz. Enter bu noktada arkadaşlar. Mesela nereye kadar gelmiştik register'larda? Data segmentimizi tanımladık.
+
+225
+00:45:23,487 --> 00:45:43,167
+Enter deyip Data Segment'in 0 offsetine gelecek olursam, bakın Data Segment'in 0 offsetinde A sayısı vardı. A sayısını 2 değeriyle tanımlamıştık ama gelip bunu değiştirmek istiyorsam Enter deyip adres veriyorum. Adres burada karşıma geldi. Mevcut içeriği 2, onu bekliyordum zaten. Bunu 12 olarak değiştirdim.
+
+226
+00:45:43,860 --> 00:45:49,980
+Bu noktada tekrar biz dump edip data segmentin sıfırından itibaren bakarsak az önce değiştirdiğimiz değeri görüyoruz.
+
+227
+00:45:50,019 --> 00:45:54,259
+Dolayısıyla enter ile tek tek byteları değiştirme imkanımız mevcut.
+
+228
+00:45:55,099 --> 00:46:01,659
+Bununla birlikte örneğin elimizde yine dump edip kod segmentin sıfırından itibaren gösteri.
+
+229
+00:46:02,835 --> 00:46:19,835
+source kodu olmayan bir obje dosyası olsun veya bir egze programı olsun. Burada ne iş yapıldığını anlayabilmek adına unassembly'yi çalıştırabiliriz. Unassembly dediğim gibi az önce de görmüştük. Burada daha net bir şekilde ifade etme şansımız olacak yalnız. Verilen makine kodlarının
+
+230
+00:46:20,436 --> 00:46:41,536
+minemonik karşılıklarını bize dönüyor olacak. Bunun için an assembly deyip, CS'nin 0 offsetinden itibaren bakacak olursak, bakın, kod karşılığımız burada birer birer elde edilmiş oldu. Bunları tek tek görmüş oluyoruz. Yine bununla birlikte, G komutunu kullanacak olursak,
+
+231
+00:46:42,739 --> 00:47:09,419
+G komutu verilen belirli bir adrese kadar kodun baştan itibaren çalışmasını sağlayıyor. Örneğin burada kod segment içerisindeki bir C offsetine kadar yani loop satırına kadar bu kodu koşturmak istiyorsam bakın baştan itibaren bu satıra kadar kod koştu. Bundan sonra loop'un ilk adımındayım. Bu loop'u kırmak istiyorsam P komutuyla proceed diyorum. Loop bitene kadar çalışıyor. Looptan sonraki komuta düştüm. Bakın loop 10 kere döndü.
+
+232
+00:47:10,291 --> 00:47:30,751
+B'den dolayı 10 kere döndü. Döndükten sonra çıktı bir sonraki komut satırında kaldım. Yani bunu step in, step out gibi görsel debug programlarındaki fonksiyonu atlayıp, fonksiyonu çalıştırıp bitirip sonra sonucunu gördüğümüz debug adımlarına benzetebilirsiniz.
+
+233
+00:47:38,291 --> 00:47:44,892
+satıra gelmemizi sağlayan bir komut bu da. Yine başka atladığımız bir komut var mı onu kontrol edelim.
+
+234
+00:47:46,472 --> 00:47:49,352
+Bir de assembly var, assembly'ye bakalım demiştik.
+
+235
+00:47:50,512 --> 00:47:59,012
+Assembly tarafında ise, CS'nin 0 offsetinden itibaren, assembly deyip bir adres verdikten sonra bize şu satıra getiriyor.
+
+236
+00:47:59,012 --> 00:48:04,012
+Biz burada artık istediğimiz komutları yazabiliyoruz. Burada assembly komutları yazabiliyoruz.
+
+237
+00:48:06,228 --> 00:48:32,947
+Yani bunu debug şey içerisinde değil de quit diyelim. Herhangi bir parametre vermeden de yapabiliriz. Debug, xd'yi çalıştıralım. Şu anda register değerlerimize bakalım. Şu anda boş bir yerdeyiz. Code segment ve IP değerlerimiz mevcut. Ben burada assembly dediğim zaman benim için işte şu anda mevcut olan boş hafıza bölgesinden itibaren yazabileceğim. Komutlar belli. Mesela MOV AX,12.
+
+238
+00:48:33,523 --> 00:48:40,763
+CMP AX, 13. Ondan sonra Jump Equal
+
+239
+00:48:40,763 --> 00:48:53,403
+Jump Equal 108 diyelim. Zaten aynı satıra geliyormuş. Onu tekrar o zaman geri alalım.
+
+240
+00:48:56,343 --> 00:48:59,483
+Eksi A kaçıncı satır? 106'dan itibaren.
+
+241
+00:49:00,052 --> 00:49:17,072
+Burada jump equal, iki satır sonraya gidiyor. Oraya bir komut daha yazacağım. 109 olsun. Jump equal, 109. Yani eğer eşitlik varsa 109. satıra atlayacak. Eğer yoksa burada bir NOPE olsun. 109. satırda da başka bir NOPE olsun. Yani böyle bir kod çalıştırmış olayım.
+
+242
+00:49:17,460 --> 00:49:28,340
+Yazdığım kodu görebilmek adına, şu anki CS değerinin 100 offsetinden itibaren bakalım. Yazdığım komutlar şunlar aslında. MOV, CMHP, JUMP0, ECUL yazmıştım. NOP NOP.
+
+243
+00:49:28,628 --> 00:49:54,648
+Birisi 108'de, birisi 109'da. Bakın bu şeyi sanki M8086'da satır satır yazıyormuş gibi bir durum. Bundan sonrakiler anlamsız tabii. Hafıza bölgesinde rastgele yer alan değerlere göre an assembly edip kendi dil yapısına göre onlara karşılık bir şeyler üretmeye çalıştı. Ama logical olarak bunlar mantıklı komutlar değil. Benim yazdıklarım şu üstteki komutlardı. Dolayısıyla assembly adımlarını da yürüterek çalıştırdığımız zaman elde edeceğimiz sonuç bu.
+
+244
+00:49:55,284 --> 00:50:08,824
+Şimdi tekrar soru işaretiyle bakalım neleri gördük. Assembly'i kabaca gördük, dump'u gördük, enter'ı gördük, go'yu gördük, proceed'i gördük, register'ı gördük, trace'i gördük, unassemble'yı gördük.
+
+245
+00:50:08,903 --> 00:50:12,884
+Dolayısıyla bizim için önemli olan komutları kabaca görmüş olduk arkadaşlar.
+
+246
+00:50:13,144 --> 00:50:19,604
+Bir şeyi deneyelim şimdi. Bu programımızı çalıştırıp sonuç olarak ürettiği değeri görmeye çalışalım.
+
+247
+00:50:20,019 --> 00:50:39,500
+G diyelim, kod segmentin 1C'sine kadar çalıştıralım. Bu loop satırına kadar bizi getiriyordu. Şuradaki loop satırına kadar getiriyordu. Çalıştırdık. Daha sonra yine proceed ile devam edelim. Loop'u kıralım. Loop'u kırdığımızda loop'un sonrasındaki komuta geldik. Ve bu da zaten değeri.
+
+248
+00:50:40,436 --> 00:51:04,936
+Sonuç isimli değişkenimize yazıyordu. Bu değeri de bir kere çalıştırdık, bu komutuda çalıştırdık. Şu anda artık Red F satırına kadar gelmiş olduk. Veya şunu da diyebilirdik, Go deyip program her Go dediğimizde baştan itibaren çalıştırıyor. Kod segmentin Red F kaçıncı satırdaymış? 21. satırda. Red F satırına kadar kodu çalıştırdım. İşletim sistemine dönmeden durdurdum ki şu anda mevcut data segment falan inceleyebileyim diye.
+
+249
+00:51:05,344 --> 00:51:10,963
+Eğer işletim sistemine geri döndükten sonra bakmaya çalışırsam artık onlara erişemez olurum çünkü.
+
+250
+00:51:11,704 --> 00:51:15,764
+Bu durumda yine data segmenti dump edelim ve elde ettiğimiz sonuçları inceleyelim.
+
+251
+00:51:16,463 --> 00:51:18,063
+Normalde ne bekliyoruz arkadaşlar?
+
+252
+00:51:18,963 --> 00:51:22,043
+2 üzeri 10 yani 1024 bekliyoruz.
+
+253
+00:51:22,123 --> 00:51:24,903
+1024 için bakalım neye karşılık geliyordu?
+
+254
+00:51:28,403 --> 00:51:32,103
+1024 değerinin 488 decimale karşılık gelmesi lazım.
+
+255
+00:51:33,172 --> 00:51:58,031
+Şimdi bakalım burada iki değerimiz mevcut. A değeri 10, B değerimiz burada mevcut. Sonuç isimli değişkenimiz bir word olarak ne hale gelmiş? 0400, Lidl Endian olarak okuduğumda word olarak 0400, yani 400 hexadecimal değerini de burada görmüş oluyoruz. Dolayısıyla sonuçlarımızı kontrol etmek için de bu mantığı kullanmamız mümkün arkadaşlar.
+
+256
+00:51:58,996 --> 00:52:07,076
+Kabaca debug kullanımını bu şekilde ifade edebilirim. Siz daha detaylı bir şekilde bunları da inceleme fırsatınız olacak zaten.
+
+257
+00:52:08,215 --> 00:52:14,375
+Bununla ilgili sormak istediğiniz bir şey var mı debug kısmıyla ilgili olarak veya derleme çalışma ortamının kurulmasıyla ilgili?
+
+258
+00:52:15,235 --> 00:52:22,275
+Siz de bir yandan deniyorsunuzdur diye düşünüyorum ayrıca. Var mı bunlarla ilgili takıldığınız veya sormak istediğiniz bir şey?
+
+259
+00:52:35,572 --> 00:52:38,371
+Yoksa arkadaşlar, 12 dakika kadar ara verelim.
+
+260
+00:52:40,231 --> 00:52:41,971
+Yani ne olmuş oluyor?
+
+261
+00:52:43,351 --> 00:52:45,172
+50 geçe, şey 50 geçe değil.
+
+262
+00:52:46,851 --> 00:52:48,992
+Sağdaki yazılar dediğin neydi acaba?
+
+263
+00:52:50,311 --> 00:52:50,931
+Bir daha açalım.
+
+264
+00:53:11,795 --> 00:53:14,995
+Daha sonra dump edip, data segmentin sıfırından itibaren bakmış.
+
+265
+00:53:15,096 --> 00:53:22,655
+Şu sağdaki şeyler ise, mesela biz bir değişken tanımlayacak olsak, şöyle göstereyim, Q diyelim.
+
+266
+00:53:23,895 --> 00:53:27,395
+Şu kodumuz içerisinde bir tanımlama yapalım, şimdi anlam kazanacak bak.
+
+267
+00:54:09,235 --> 00:54:36,275
+Gördüğün gibi bu sağ taraftaki kısımlar bu dump ettiğimiz verinin ASCII karşılıklarını da burada gösteriyor bir yardımcı olarak. Eğer ASCII bir dizi varsa, bir dosya adı varsa hemen oradan görebilesin diye sağlanmış durumda. Biz değişken olarak bir tane de şey tanımlamış olduk burada. Bir karakter dizisi tanımlamış olduk. Karakter dizimizde yine hafızada. Nerede, nereye kaçtı?
+
+268
+00:54:36,820 --> 00:54:50,000
+ASCII kodlarıyla tutuluyor. Dolayısıyla bu ASCII kodlarına karşılık gelen ASCII karakterler de yanlarında görünmüş oldu. Bunun amacı da bu. Tamam, başka bir şeyimiz yoksa arkadaşlar saat 5'te devam edeceğiz. Tamam.
+
+269
+00:54:54,420 --> 00:55:06,120
+varsa sormak istediğiniz sorun veya işte aradan sonra sorabilirsiniz. Aradan sonra da şeye geçeceğiz. Sözde komutlara geçeceğiz.
+
+270
+00:55:14,516 --> 00:55:17,916
+Tamam, soru yok herhalde. Saat 5'te devam ediyoruz.
+
+271
+01:05:42,931 --> 01:05:46,052
+Evet arkadaşlar, tekrar merhaba. Şimdi kaldığımız yerden devam edelim.
+
+272
+01:05:46,731 --> 01:05:50,731
+Geçen haftadan kalan bir konu vardı aslında, sözde komutlar. Onlardan bahsedeceğim şimdi.
+
+273
+01:05:51,572 --> 01:05:53,052
+Tekrar paylaşarak başlayalım.
+
+274
+01:05:53,811 --> 01:06:02,132
+Şimdi sözde komutlar dediğimiz komutlar arkadaşlar aslında pseudokoment veya pseudokomut olarak da geçiyor.
+
+275
+01:06:02,971 --> 01:06:05,931
+Bunlar aslında temel olarak kendi başlarına...
+
+276
+01:06:06,771 --> 01:06:11,192
+makine kodu karşılığı olmayan, yani bunların herhangi bir makine kodu karşılığı yok.
+
+277
+01:06:11,672 --> 01:06:16,172
+Ama Assembler tarafında anlamlı kelimeler, yani Assembler'ın özel kelimeleri,
+
+278
+01:06:16,572 --> 01:06:21,291
+8086 instruction setin özel kelimeleri değil, Assembler'ın özel kelimeleri.
+
+279
+01:06:21,432 --> 01:06:25,112
+Bunlardan geçen haftalar içerisinde sıklıkla kullandığımız örneğin,
+
+280
+01:06:25,552 --> 01:06:27,992
+define byte veya define word gibi kelimeler.
+
+281
+01:06:28,112 --> 01:06:31,932
+Baktığınız zaman Intel'lerin 8086 instruction setini incelediğinizde,
+
+282
+01:06:32,512 --> 01:06:34,492
+DB, DW gibi bir komut yok.
+
+283
+01:06:34,771 --> 01:06:59,072
+Ama bu ne yapıyor? Bizim bir takım verileri tanımlamamızı, veri tipleri oluşturmamızı mümkün hale getiriyor. Dolayısıyla bu tür ve bunun gibi komutlar, sözde komutlar olarak geçiyor. Bunların etkisi compile time zamanında ortaya çıkıyor. Run time sırasında etki edenler ise sadece ve sadece instruction'ların kendisi. Bu sadece derleme aşamasında kullanılan.
+
+284
+01:07:01,108 --> 01:07:15,047
+Normalde nasıl tanımlanıyor? İşte tanımlayabilmek için giriyorsun hafıza bölgesinin bir alanına bir değer yazıyorsun. Ama bu tanımlamayı dediğimiz gibi define word ve define byte üzerinden gerçekleştiriyor. Daha toplu bir şekilde yapmamızı sağlayalım.
+
+285
+01:07:16,179 --> 01:07:42,179
+Şimdi sözde komutlara kabaca bakmak gerekirse dediğimiz gibi bunların makine kodu karşılıkları yok. Assembly programı tarafında veya Assembler tarafında bir anlamı var. Bunun burada kodların düzenlenmesi, daha efektif bir şekilde yazılabilmesi, daha pratik şekilde kod yazılabilmesi açısından anlamı var. Ama bir makine kodu karşılığı yok. Makine kodu karşılığı olan sadece minemonikler yani instruction sette yazılı olan
+
+286
+01:07:42,900 --> 01:07:51,115
+8086 komutları. Bu sadece bunların makine kodu var. Şimdi kabaca çok genel olarak bakmak gerekirse bir kısmı
+
+287
+01:07:51,476 --> 01:07:59,695
+Derleme sırasında oluşan yardımcı dosya, LST uzantılı dosya üzerindeki düzenlemeyi sağlayan bir takım sözde komutlar var.
+
+288
+01:07:59,796 --> 01:08:08,576
+Örneğin biz page komutuyla birlikte yanına vermiş olduğumuz iki parametre oluşacak olan LST uzantılı dosyanın kaç satır, kaç tutun her sayfada olacağını belirtiyor.
+
+289
+01:08:08,576 --> 01:08:18,235
+Veya title komutu LST uzantılı dosyada programın başlığı veya açıklamasıyla ilgili bir takım ifadelerle yer vermemizi mümkün kılıyor.
+
+290
+01:08:19,060 --> 01:08:30,140
+Bu düzenleme ile alakalı sözde komutlar. Örneğin bizim deneme.asm dosyamıza bakacak olursak, bunun da en başında bir tane page sözde komuta olduğunu görüyoruz.
+
+291
+01:08:30,760 --> 01:08:42,560
+Bu değerlendiği vakit, işte oluşan bir LST uzantılı dosya oluyor. Bu LST uzantılı dosya aslında değerleme sonucuna ilişkin olarak bize bir bakış yapmamızı sağlıyor.
+
+292
+01:08:42,996 --> 01:08:52,255
+Bakın burada page 80-60 olduğu için her sayfada 80 satırdan sonra page feed veriyor.
+
+293
+01:08:54,255 --> 01:09:01,255
+Sütunlarımızda 60 sütundan oluşuyor, 60 karakterden oluşuyor, 60 karakterden sonra da line feed karakteri geliyor.
+
+294
+01:09:01,255 --> 01:09:04,716
+Yani biz bunu print preview'da incelemeye çalışsak.
+
+295
+01:09:09,268 --> 01:09:18,108
+Burada tam beklediğimiz gibi olma. Tabi arada başka şeylerde, sublime'dan dolayı bir şeyler daha geldi ama onu tekrar şöyle vazgeç deyip şeyden bakalım.
+
+296
+01:09:20,108 --> 01:09:21,647
+Bu da ne yaşmış onu?
+
+297
+01:09:25,524 --> 01:09:37,824
+Tekrar bir daha bir deneyelim. Notepad'de bakalım. Bunda da print preview yok herhalde zaten. PDF'e denesek.
+
+298
+01:09:47,444 --> 01:09:51,444
+Herhangi bir şeyde yazdırmak istemiyoruz. Webplay diyelim.
+
+299
+01:10:02,387 --> 01:10:05,208
+Tamam, ben de PDF olarak yazdırmayı denedim.
+
+300
+01:10:08,167 --> 01:10:11,788
+Yok, yine burada da font sayımız neyse ona göre yazdırdı.
+
+301
+01:10:11,847 --> 01:10:15,868
+Aslında bu tam printerdan çıkacak şekilde bir karşılığı var.
+
+302
+01:10:16,028 --> 01:10:21,387
+Bizdeki fontumuz büyük olduğu için o size gösterebilmek için NotPent'in fontunu büyütmüştüm.
+
+303
+01:10:21,887 --> 01:10:22,847
+O ona göre yazdırdı.
+
+304
+01:10:22,847 --> 01:10:25,927
+Yani bu arka tarafta printerdan çıkacak şekliyle.
+
+305
+01:10:26,256 --> 01:10:33,476
+ilgili olarak bir etki oluşturuyor diyebiliriz. Yani bu şekil ve gösterimle alakalı bir durum netice itibariyle.
+
+306
+01:10:34,576 --> 01:10:44,136
+Yine bir başka sözde komut grubu, şurada segmentleri tanımladığımız komut grubu. Bu grup içerisinde segmentin başlangıcı ve bitişi işaret ediliyor.
+
+307
+01:10:44,136 --> 01:10:49,396
+Bizim okunmamız açısından ve değerlendirmemiz açısından anlamlı.
+
+308
+01:10:51,155 --> 01:10:56,435
+COMTP programların 100H adresinden itibaren başlamasını sağlayan bir sözde komut.
+
+309
+01:10:56,956 --> 01:11:02,896
+SUM, kod içerisinde işte kod segment, data segment, stack segment'e karşılık gelecek.
+
+310
+01:11:03,896 --> 01:11:09,716
+Biz hangi isimli segmenti ifade ediyoruz onu kullanmamızı sağlayan bir yardımcı kelime.
+
+311
+01:11:10,131 --> 01:11:15,631
+Veri tanımlamaları zaten hatırlıyorsunuz. Define byte, define word, define double word, define quad word, echo.
+
+312
+01:11:16,291 --> 01:11:22,931
+Tıpkı C'deki define macrosu gibi, define macrosunda bir değişken ve sayısal değer veriyorduk.
+
+313
+01:11:23,492 --> 01:11:28,031
+Değerleme öncesinde bütün define değerlerini o sayısal değerle değiştiriyordu hatırlayacak olursanız.
+
+314
+01:11:28,131 --> 01:11:29,691
+Bu da tamamen ona karşılık bir değer.
+
+315
+01:11:29,811 --> 01:11:36,631
+Örneğin bir adres bölgesiyle ilgili işlem yapıyoruz ama o adres bölgesini detaylı bir şekilde hatırlamak zorunda kalmayayım.
+
+316
+01:11:38,131 --> 01:11:43,691
+değişken ismiyle, geçici bir değişken ismiyle ifade edeyim ve her yerde onu yazayım.
+
+317
+01:11:43,791 --> 01:11:48,711
+Derleme öncesinde bu değer uygun şekilde değiştirilsin istiyorsam, ECU kullanıyorum.
+
+318
+01:11:49,331 --> 01:11:51,992
+Duplicate'i hatırlayacak olursanız kullanmıştık yine.
+
+319
+01:11:52,671 --> 01:11:56,171
+Aynı veriyi tekrarlı olarak tanımlayabilmek adına kullandığımız bir...
+
+320
+01:11:56,275 --> 01:12:03,956
+sözde komutlu. TypeDef yeni bir tip tanımlamamızı sağlıyor. PTR'yi yine hatırlarsınız Word, PTR, Byte, PTR ile ilgili olarak.
+
+321
+01:12:24,275 --> 01:12:36,895
+örneğin word tipindeki bir veriye byte byte erişmemizi mümkün kılıyor veyahut da byte'lardan oluşan bir diziyi bir word veya double word olarak değerlendirmemizi mümkün kılan bir yapı. Detayını biraz sonra göreceğiz.
+
+322
+01:12:38,255 --> 01:12:48,456
+Yine prosedürlerin başlangıç ve bitişlerini işaret eden sözde komutlar mevcut. Şunu belki şöyle detaylı bir şekilde anlatmak mümkün olur. Şöyle kaydıralım.
+
+323
+01:12:51,380 --> 01:12:54,380
+Burada external ve public'ten kastedilen şu arkadaşlar.
+
+324
+01:12:56,720 --> 01:12:59,960
+Şöyle diyelim. Örneğin elimizde iki dosyamız var.
+
+325
+01:13:01,620 --> 01:13:02,600
+İki dosyamız var.
+
+326
+01:13:03,880 --> 01:13:10,140
+Bu birinci dosya bir egze tipi bir program derlemek üzere egze şablonuna sahip.
+
+327
+01:13:11,380 --> 01:13:13,319
+Bu bir nokta asm olsun.
+
+328
+01:13:14,020 --> 01:13:15,840
+Bu da iki nokta asm olsun.
+
+329
+01:13:15,840 --> 01:13:17,760
+Bunun içerisinde biz
+
+330
+01:13:18,260 --> 01:13:34,720
+F1 diye bir fonksiyon tanımlamış olalım. Bu F1 içerisinde F2 isimli bir fonksiyon çağırıyor olalım. F2 isimli fonksiyon burada tanımlı değil. Başka bir dosyadan kullanacağımızı belirtmek adına burada extern F2 diyoruz.
+
+331
+01:13:35,636 --> 01:14:02,256
+bu F2'nin tanımlı olduğu yerde şurası olsun. F2 fonksiyonu burada tanımlı olsun. Bu dosya içerisinden de F2'nin dışarıdan kullanabilmesini mümkün kılmak adına bunu da public F2 şeklinde ifade etmemiz gerekiyor. Dolayısıyla ben bunu derlediğim zaman tek başına bir tane işte F1.obje oluşuyor. Bunu derlediğim zaman F2.obje oluşsun örneğin. Daha sonra bu ikisini linklediğim zaman
+
+332
+01:14:02,644 --> 01:14:18,324
+f.exe oluşturulduğunda, bu kod f2 fonksiyonunu, bu diğer obje dosyasından çağıracağını, public ve external sayesinde bilmiş oluyor. Dolayısıyla external ve public kullanımını da bu şekilde ifade etmek mümkün.
+
+333
+01:14:24,948 --> 01:14:30,968
+Daha sonra yine makro tanımlarıyla ilgili olarak makronun başlangıcı ve bitişini işaret eden sözde komutlar.
+
+334
+01:14:31,087 --> 01:14:34,908
+Farklı bir dosyadan bir makroyu include etmek için kullanılabileceğimiz komut.
+
+335
+01:14:35,252 --> 01:15:02,352
+Yine makroları hatırlayacak olursanız şöyle konuşmuştuk. Her makro çağrıldığında tanımlı olan makro fonksiyonu çağrıldığı her yere kopyalanıp kodun büyümesine sebep oluyordu. Ama şöyle düşünelim. Makro içerisinde bir tane label var. Her çağrıldığında da bu kod grubu kopyalandığı için label, o vermiş olduğumuz label değeri defalarca geçmiş olacak. Böyle bir durum normalde assembly kodunda derlemeye çalıştığımız zaman label'ın daha önceden tanımlı olduğu uyarısıyla sonlanır.
+
+336
+01:15:03,252 --> 01:15:15,072
+Fakat makro içerisinde bu kopyalanacak ve tekrar kullanılacak olan label'ın farklı unique birer label olabilmesi için lokal kelimesiyle birlikte bu label'ı verirsek,
+
+337
+01:15:15,712 --> 01:15:26,672
+Assembler, kopyalanan makro kodlarındaki o label değerini her çağrıldığı yerde unique bir değer olarak değiştirip tekrarlı label kullanımının önüne geçmiş oluyor.
+
+338
+01:15:27,188 --> 01:15:37,308
+Bunun haricinde yine tanımlamış olduğumuz dizilerde dizi boyutu, dizinin her bir elemanının boyutu, dizinin toplam boyutunu veren bir takım sözde komutlarımız var.
+
+339
+01:15:37,808 --> 01:15:43,847
+Bununla birlikte load efektif adrese karşılık gelecek, birebir karşılık gelen bir offset tanımlamamız var.
+
+340
+01:15:44,488 --> 01:15:48,268
+Yine segment ve end kelimeleri de sözde komutları olarak ortaya çıkıyor.
+
+341
+01:15:49,268 --> 01:15:51,243
+Şimdi burada...
+
+342
+01:15:52,180 --> 01:16:02,980
+exit IP program iskeletine daha geçmediğimiz için, belki geçtiğimiz zaman daha çok anlam kazanacak şu end kelimesi ama, yeri geldiğinde tekrar bu sözde komutlarla birlikte onu da bahsediyor olurum.
+
+343
+01:16:03,980 --> 01:16:06,579
+Şöyle, şimdi şeyden başlayayım, nereye gitti onlar?
+
+344
+01:16:08,920 --> 01:16:10,000
+Evet, page.
+
+345
+01:16:10,547 --> 01:16:22,708
+sözde komutundan bahsetmiştik. Yanına iki tane parametre alıyor. Bu oluşan LST uzantılı dosyanın kaç satır, kaç sütun genişliğinde olduğunu, dolayısıyla kaç sayfaya yayılması gerektiğini belirleyen bir sözde komut.
+
+346
+01:16:23,487 --> 01:16:31,167
+Title, yine bahsetmiştik. Oluşulan LST uzantılı dosya içerisinde bir başlık veya ifade yazmamızı sağlayan sözde komut.
+
+347
+01:16:31,731 --> 01:16:51,851
+segment ve endse kelimeleri segment tanımının başlangıç ve bitişini ifade ediyor. Bizim burada deneme.asm esilimi dosyamızda bakın 3 tane segment tanımı var. Birincisi, ikincisi ve üçüncü segment tanımımız şu kod segmente kadar olan kısım.
+
+348
+01:16:51,851 --> 01:16:55,832
+3 tane segment tanımımız var. Bu segment tanımlamalarını nasıl yapıyoruz?
+
+349
+01:16:56,307 --> 01:17:03,847
+Bir tane isim veriyoruz. Bu isim bizim seçtiğimiz keyfi bir değer. Yıldız olabilir, A olabilir, B olabilir. Bir segment ismi.
+
+350
+01:17:04,788 --> 01:17:10,788
+Segmente vermek istediğimiz isim. Daha sonra buradan bu tanımlananın bir segment olduğunu belirtmek adına segment ismini veriyoruz.
+
+351
+01:17:11,467 --> 01:17:16,847
+Daha sonra hizalama kelimesi geliyor. Hizalama kelimesinden biraz sonra geri geldiğinde bahsedeceğim.
+
+352
+01:17:16,847 --> 01:17:21,208
+Daha sonra örneğin bu tanımladığımız kesimin
+
+353
+01:17:21,568 --> 01:17:40,488
+yığın kesimi olmasını istiyorsak burada stack kelimesini kullanıyoruz. Stack kelimesini bu tanımlamada, bu sırada kullandığımızda bu kesim yığın kesimi olarak belirlenmiş oluyor. Yani SS yazmacı, stack segment yazmacı bu program hafızaya yüklendiğinde bu bölgeyi işaret edecek şekilde değer yüklü yürüyor.
+
+354
+01:17:40,916 --> 01:17:43,916
+Şu son gördüğümüz kısım ise bunun class ismi.
+
+355
+01:17:44,496 --> 01:17:45,435
+Tamam mı? Bunun class ismi.
+
+356
+01:17:45,836 --> 01:17:50,396
+Class isimleri de kesim birleştirme kısmında ortaya çıkacak olan bir fonksiyon.
+
+357
+01:17:50,976 --> 01:18:00,796
+Yine segmentin bitişi aynı isim, segmente vermiş olduğumuz ismin aynısı ve daha sonra end segment kelimesi, end s ile birlikte tanımladığımız kısımdan oluşuyor.
+
+358
+01:18:00,896 --> 01:18:03,996
+Dolayısıyla burada da bir yığın kesim tanımını görmüş olduk.
+
+359
+01:18:04,404 --> 01:18:24,064
+yığın kesinmeyi ile ilgili olarak içeride bir şey yok, herhangi bir tanımlama yok. Sadece yer ayırıyoruz. Exotipi programlarda yığın için sadece belirli bir miktar yer ayırıyoruz. Daha güncel assembly programlarında bunun işte nokta tiny, nokta flat gibi farklı tanımlamalarla birlikte
+
+360
+01:18:24,979 --> 01:18:33,659
+ne kadarlık yer ayırılması gerektiği ayrıyeten belirlenebiliyor. Ama bizim formatımızda, bizim notasyonumuzda ders içerisinde biz bu şekilde bunları tanımlıyor olacağız.
+
+361
+01:18:34,839 --> 01:18:44,699
+Yine bir başka segment burada data segment kısmı arkadaşlar. Data segment yine bir isim verdik bu segmentimize. Data SG isimini vermişiz. Yine bu da Yıldız, A, B herhangi bir isim olabilirdi.
+
+362
+01:18:45,339 --> 01:18:51,439
+Benzer şekilde az öncekindeki klas ismi de herhangi bir keyfi bir şey olabilir. Ali Veli herhangi bir şey olabilir. Önemli değil.
+
+363
+01:18:52,243 --> 01:19:10,463
+Burada yine segment tanımı yaptığımızı bir segment kelimesini vererek burada belirtiyoruz. Şurada hizalama tipi var. Hizalama tipinin biraz sonra geleceğimizi söylemiştik. Bir de class ismi veriyoruz. Daha sonra değişken tanımlamalarımız var. Data segment kesimi genel olarak değişkenlerimizi tanımladığımız yer oluyor.
+
+364
+01:19:10,895 --> 01:19:15,055
+Yine burada define byte ve define word gibi sözde komutları görebiliriz.
+
+365
+01:19:15,615 --> 01:19:21,355
+Yine segmentimizin ismi ve end segment kelimesiyle birlikte segmentin son parantezine koymuş oluyoruz.
+
+366
+01:19:22,115 --> 01:19:25,855
+Code segmente baktığımızda yine bir isim, arbitrary keyfi bir isim.
+
+367
+01:19:26,292 --> 01:19:33,972
+yıldız, AB olabilir. Segment olduğunu belirtmek adına segment kelimesi, hizalama kelimesi ve klas ismini veriyoruz.
+
+368
+01:19:34,612 --> 01:19:40,672
+Segmenti kapatırken de segmente verdiğimiz isim ve and say ile eş değer parantezini kapatmış oluyoruz.
+
+369
+01:19:41,592 --> 01:19:53,272
+Şimdi bu noktada gördüğünüz gibi kod içerisinde 3 tane segment tanımı var. Bunların dışında bir de şu and kelimesi ve yanında bir etiket var.
+
+370
+01:19:54,547 --> 01:20:17,727
+Yukarı gelelim. Şu segmenti biz yığın segmenti olarak tanımlamak istemiştik. Bunun yığın segment olmasını sağlayan şuradaki stack kelimesi. Yani bu program hafızaya yüklendiğinde burada stack olduğu için stack segment burayı gösteriyor. Bu bu kadar. Bununla ilgili özellik bu. Ama bu kesimin bu program açısından kullanılacak data segment olduğu ne zaman belli oluyor sizce?
+
+371
+01:20:18,931 --> 01:20:43,332
+Program hafıza evlilerini yüklenmez, data segment burayı göstermiyordu değil mi hatırlayacak olursak? Bu segment ne zaman bizim data segmentimiz oluyor? Şu komuttan sonra, şu komutlardan sonra oluyor değil mi? Dolayısıyla bu segmentin data segment olarak çalışmasını sağlayan şey şu komutun yürütülmesi. Bu komutlar yürütüldükten sonra bu segmentimiz bizim data segmentimiz oluyor.
+
+372
+01:20:44,020 --> 01:21:01,360
+Şimdi son olarak bu segmentin de kod segment olduğunu belirleyen nedir? Şu anda bu kendi başına bir segment, hafızaya yerleştirildi ama bunun kod segment olduğunu belirleyen nedir? Bunun kod segment olduğunu belirleyen de şu, end kelimesinden sonra yer alan etiket.
+
+373
+01:21:01,684 --> 01:21:19,904
+Hangi kesimin içerisindeyse, burada hangi kesimin içerisinde, bu kesimin içerisinde. Dolayısıyla burası bizim kod segmentimiz oluyor. Dolayısıyla end kelimesinden sonra yer alan etiket hangi segment içerisindeyse, cs değerimiz o segmentin başlangıç adresini gösterecek şekilde değer yükleniyor.
+
+374
+01:21:26,484 --> 01:21:47,084
+Şurada bakın, bu son prosedür, bu bir prosedür tanımı, bu bir sözde komut, bunun bir makine kodu karşılığı yok. Şu satır, bu da bir sözde komut grubu, bunun da makine kodu karşılığı yok. Burası da sözde komut, bunun da bir makine kodu karşılığı yok. Ama bu etiketten sonra gelen ilk instruction'ımız şu.
+
+375
+01:21:47,828 --> 01:22:06,888
+Dolayısıyla end kelimesinden sonra gelen etiket aslında bir sonraki çalıştırılacak olan instruction'u da işaret ediyor. Yani bu aynı zamanda bizim ana fonksiyonumuzun, ana yordamımızı da işaret ediyor. Dolayısıyla bu bizim çalıştırılacak olan ana yordamımız son isimli yordanmış ve bu
+
+376
+01:22:07,412 --> 01:22:32,252
+bunun, bu ana yordamın yer aldığı segmentte bizim CS değerimiz ile yüklenecek değer oluyor. Dolayısıyla Exotipi programda program hafızaya yüklendikten sonra stack kelimesi nerede yer alıyorsa, hangi segmentler arıyorsa SS onu gösteriyor. Şu işlemden sonra hangi kesimi işaret etmişsek o kesim DS değerini gösteriyor. DS değeri o kesimi gösteriyor.
+
+377
+01:22:33,300 --> 01:22:53,680
+end kelimesinden sonra yer alan etiket hangi kesim içerisindeyse CS o segmenti gösteriyor. Dolayısıyla başta kod daha derlenmeden önce bunun kod segment olup olmadığı işletim sistemi tarafından belli değil veya bunun data segment olduğu belli. Ama şunun yığın kesimi olduğu baştan belli. Tamam mı?
+
+378
+01:22:54,036 --> 01:23:17,195
+Dolayısıyla bununla ilgili açıklamamızı böyle verelim. Şimdi bu segment tanımıydı. Hizalama tiplerine bakacak olursak, daha önceki derslerimizde hatırlayacak olursanız şunu söylemiştik. 8086 mikro işlemcisi için bir okuma yazma saykılığında çift adresten 16 bitlik işlem bir seferde gerçekleşebiliyor. Bir okuma yazma saykılığında gerçekleşebiliyor.
+
+379
+01:23:17,456 --> 01:23:25,456
+Yine çift adresten 8 bitlik işlem bir seferde gerçekleşiyor veya tek adresten yine 8 bitlik işlem bir seferde gerçekleşebiliyor. Ama...
+
+380
+01:23:26,068 --> 01:23:51,028
+tek adresten 16 bitlik işlem, iki okuma yazma saykılığında gerçekleşiyor. Dolayısıyla bu noktada verilimizin ve programlarımızın hizalı olması, yani 16'nın katları olacak şekilde 16 bitin katlı veya byte hizalı veya word hizalı olması, çift adreslere diyelim, çift adreslere hizalı olması bizim programımızın daha hızlı çalışmasıyla sonuç buluyor.
+
+381
+01:23:51,408 --> 01:23:55,507
+Bu durumdan dolayı da hizalamalar gündeme gelmiş. Hizalamalar şu anlama geliyor.
+
+382
+01:23:56,248 --> 01:24:01,648
+Mesela burada şu segment için bakacak olursak para kelimesi kullanılmış. O ne demekmiş bakalım.
+
+383
+01:24:02,448 --> 01:24:05,347
+Eğer hizalama ismi olarak byte kullanacak olursam
+
+384
+01:24:06,355 --> 01:24:12,415
+İşletim sistemi, benim yazmış olduğum segmenti hafızaya yerleştirirken sıradan kontrol ediyor.
+
+385
+01:24:12,615 --> 01:24:16,735
+Boş hangi hafıza adresi varsa o adresten itibaren yerleştiriyor.
+
+386
+01:24:16,796 --> 01:24:24,556
+Eğer byte hizalama kullanırsan, sıradaki ilk boş adresten itibaren yeterli boyuttaki yer varsa bu segmenti yerleştiriyor.
+
+387
+01:24:25,076 --> 01:24:28,695
+Eğer word hizalama kullanmışsak, bu durumda da işletim sistemi bakıyor.
+
+388
+01:24:28,796 --> 01:24:30,956
+Yeterli büyüklükte ilk adres nerede var?
+
+389
+01:24:31,475 --> 01:24:59,075
+o adres bir çift adres mi? Değil. Değilse bir sonraki çift adres nerede var? Çift adresi bulduktan sonra bu kesimde yerini yerleştiriyor. Paraya bakacak olursak para 16'nın katı adreslerde mi? Dolayısıyla işletim sistemi ilk boş 16'nın katı olan adrese buluyor. Yeterli alan varsa kesimi oradan itibaren yerleştiriyor. Page de benzer şekilde ama bu sefer 256'nın tam katı olan
+
+390
+01:24:59,391 --> 01:25:16,291
+boş adres ve bölgesini bulup kesimi oradan itibaren yerleştiriyor. Bunlar hizalamayla ilgili olan parametreler. Yani burada para yerine byte, word, para veya page gibi dört farklı parametreden birini kullanmamız mümkün.
+
+391
+01:25:17,492 --> 01:25:42,992
+Birleştirme komutlarına bakacak olursak, onu da şöyle ifade edelim. Normalde her bir kesim, Exotipi program için konuşacak olursak, burada örneğin 3 tane kesim bölgesi var. Her bir kesim aslında bir programın işgal ettiği alanı ifade eder. Her bir kesim de normalde 64 KB'lik bir alana tekabül ediyor. Yani biz Exotipi programı kullanmakla birlikte aslında 3 tane 64 KB'lik alanı işgal etmiş oluyoruz.
+
+392
+01:25:43,380 --> 01:26:04,340
+Bu gibi durumlarda yazdığımız kod küçücük. Baktığınız zaman 20-50 byte mertebesinde bir şey. Headerlar ile birlikte tabii daha büyük bir kilobyte yaklaşabilir. Ama baktığınız zaman oldukça verimsiz bir kullanım söz konusu. Bu durumda ortaya çıkan durum ise
+
+393
+01:26:04,688 --> 01:26:13,747
+farklı obje dosyalarında ortaya çıkan segmentlerin bir arada kullanılması veya segmentlerin birleştirilmesi gündeme geliyor.
+
+394
+01:26:14,327 --> 01:26:20,288
+İşte segmentlerin birleştirilebilmesi için kullanılabilecek olan kelimelere bakacak olursak, birincisi public.
+
+395
+01:26:20,288 --> 01:26:23,728
+İki farklı dosyada yer alan aynı isimli kesimler,
+
+396
+01:26:24,083 --> 01:26:32,603
+public özel kelimesiyle ifade edilmişlerse bunlar hafızada aynı segment içerisinde peş peşe yerleştiriyorlar.
+
+397
+01:26:33,764 --> 01:26:41,884
+Eğer common kullanılmışsa bu common kullanıldığı durumda aynı isimli kesimler aynı adresten itibaren aynı ortak adresi kullanıyorlar.
+
+398
+01:26:42,484 --> 01:26:46,003
+Yani commonı union gibi düşünebilirsiniz. Union, C'deki union.
+
+399
+01:26:46,431 --> 01:26:58,031
+Pably ise Struck gibi düşünebilirsiniz. Struck tanımı yaptığınız zaman peş peşe yerleşiyor. Union tanımı yaptığınızda ise aynı adresten itibaren başlayan tanımlamalar söz konusu olmuş oluyor.
+
+400
+01:26:58,652 --> 01:27:06,551
+Stack kelimesini özellikle görmüştük. Stack kelimesini verdiğimiz zaman bu kesim bölgesinin yığın kesimi olduğunu açıkça belirtiyordu.
+
+401
+01:27:06,551 --> 01:27:13,511
+Add kelimesi ise vermiş olduğumuz parametre ile kesimin belirli bir adrese yerleşmesini sağlamış oluyor.
+
+402
+01:27:15,123 --> 01:27:16,824
+Bir sonraki komut grubuna bakalım.
+
+403
+01:27:18,083 --> 01:27:19,764
+Şimdi onu da şöyle ifade edelim.
+
+404
+01:27:23,283 --> 01:27:25,963
+Şimdi az önceki örneklerden gördük.
+
+405
+01:27:31,347 --> 01:27:34,467
+Şimdi şu bizim genel hafızamızı göstersin.
+
+406
+01:27:36,007 --> 01:27:43,728
+Biz bir egze tipi program oluşturduğumuz zaman bu egze tipi program hafızada 3 tane kesim bölgesini kullanıyor.
+
+407
+01:28:04,051 --> 01:28:06,752
+üç tane hafıza bölgesini kullanıyor. Bunlar işte
+
+408
+01:28:13,939 --> 01:28:41,099
+Bir tanesi ne için demiştik? Stack segment için demiştik. Bir tanesi data segment için dedik. Bir tanesi de kod segment için kullandık. Şimdi stack segmentin belirli bir boyutu var. Tanımlı bir boyutu var. O boyut nereden geliyor? O boyut şurada yapmış olduğumuz tanımlamadan geliyor. Bakın stack segment içerisinde yer ayırmışız. İçerisini initialize etmemişiz. Dolayısıyla sadece yer ayırdığımız bir durum. Örneğin buradaki örnek açısından değerlendirdiğimizde bu
+
+409
+01:28:42,003 --> 01:28:48,163
+alan ne kadarlık bir alana tekabül ediyor? Kaç byte'lık bir alana tekabül ediyor? Bu yığın için ayırdığımız alan.
+
+410
+01:28:50,724 --> 01:29:01,524
+40 byte'lık, evet. Her biri Word olan 20 tane değer, yani 40 byte'lık alan ayırmış oluyoruz. Dolayısıyla buradaki exe tipi programlarda yığının boyutu belli.
+
+411
+01:29:02,384 --> 01:29:08,564
+Tanımda ayırışıyla belli. Verdiğimiz, ayırdığımız alan dolayısıyla belli. Data segmentin boyutu da belli arkadaşlar.
+
+412
+01:29:09,363 --> 01:29:13,323
+Data segmentin boyutu da ne kadar veri tanımladıysak onunla alakalı.
+
+413
+01:29:13,443 --> 01:29:18,043
+Kod segmentte ne kadar büyük kod yazdıysak onunla alakalı olarak yer ayrılmış oluyor.
+
+414
+01:29:18,123 --> 01:29:23,543
+Dolayısıyla egze tipi programlarda 3 tane segment kullanımı söz konusu.
+
+415
+01:29:23,663 --> 01:29:25,263
+Bu egze tipi programda bu şekilde.
+
+416
+01:29:25,883 --> 01:29:27,663
+Peki kom tipi programda nasıl olacak?
+
+417
+01:29:27,803 --> 01:29:35,123
+Kom tipi programda ise arkadaşlar, kom tipi program sadece bir tane segment alanı kullanıyor.
+
+418
+01:29:36,180 --> 01:29:39,680
+COM tipi program sadece bir tane segment alanı kullanıyor.
+
+419
+01:29:40,680 --> 01:29:42,979
+Ve bu segment alanında aslında şöyle çalışıyor.
+
+420
+01:29:43,500 --> 01:29:47,060
+Bu segment alanının başında bir takım header bilgileri yer alıyor.
+
+421
+01:29:47,260 --> 01:29:49,260
+Şununla yazsam acaba daha güzel olur mu?
+
+422
+01:30:01,300 --> 01:30:02,380
+sanki olacak gibi.
+
+423
+01:30:04,520 --> 01:30:07,239
+En başta bir header alanı var. Tamam mı?
+
+424
+01:30:08,779 --> 01:30:17,640
+Bu header alanı için ne kadar yer ayırmamız gerekiyor? Bu header alanı için 100H kadar, 100H decimal kadarlık bir alan ayırmamız lazım.
+
+425
+01:30:17,640 --> 01:30:24,779
+Dolayısıyla bizim yazacağımız kodlar aslında 100H adresinden itibaren başlaması gerekiyor.
+
+426
+01:30:26,996 --> 01:30:33,756
+Şimdi headerlar için tek segment alanı ve bunun için 100 seksidesimal kadar yer ayırıyoruz.
+
+427
+01:30:33,756 --> 01:30:39,975
+Ve daha sonra bizim kodumuz, şunu birazcık büyütebilirsem daha güzel olacak.
+
+428
+01:30:57,971 --> 01:30:59,431
+header bölgesi için
+
+429
+01:30:59,431 --> 01:31:10,532
+işte 100 haş kadarlık yer ayırdık. Bizim kod kısımımız ise nereden başlaması lazım doğal olarak? O zaman 100 haştan itibaren başlaması lazım.
+
+430
+01:31:10,899 --> 01:31:17,719
+Bu durumda yazdığımız kod bölümünden önce yani instructionlardan önce org kelimesini kullanıyoruz.
+
+431
+01:31:17,819 --> 01:31:25,539
+Org kelimesi bundan sonra gelecek kod kısmı 100 hash adresinden itibaren yerleşeceğini belirlemiş oluyor.
+
+432
+01:31:26,199 --> 01:31:32,239
+Bu tek kesime baktığımızda bu tek kesim içerisinde stack ise sonda yer alıyor.
+
+433
+01:31:32,239 --> 01:31:38,899
+Yani şeyin nedir onun adı? Bu segmentin son adresinden itibaren yukarıya doğru yın oluyor.
+
+434
+01:31:38,899 --> 01:31:46,019
+olarak kullanıyoruz. Kod ile stack segment arasında kalan alanı da data tanımı için kullanmış olacağız.
+
+435
+01:31:46,279 --> 01:31:57,439
+COM tipi programlarda böyle bir yaklaşım olacak. Ama bu yaklaşım içerisinde biz kodu değiştirdikçe, kodumuzu değiştirdikçe şu datanın yer aldığı yer offset aşağı yukarı oynayacak.
+
+436
+01:31:57,919 --> 01:32:04,839
+Bu debug açısından çok güzel bir durum değil. Böyle olduğu için bir başka yaklaşımımız var. Onu kullanacağız.
+
+437
+01:32:05,332 --> 01:32:14,332
+header'lardan sonra önce datayı yerleştireceğiz, sonra kod gelince bunun içinde özel bir takım işlemler yapacağız ama onu COM tipi program yerliğinde tekrar anlatacağım.
+
+438
+01:32:14,892 --> 01:32:20,412
+Burada aklımızda kalması gereken exit tipi program hafızada 3 tane segment alanı kullanıyor.
+
+439
+01:32:20,892 --> 01:32:23,972
+COM tipi program bir tane tek bir segment alanı kullanıyor.
+
+440
+01:32:23,972 --> 01:32:32,231
+Yani 64 kilobyte maksimum alana sahip ve bu segmenti header, kod, data ve stack olmak üzere paylaşımlı olarak kullanıyor.
+
+441
+01:32:32,627 --> 01:32:40,368
+Kodun 100H adresinden itibaren başlayabilmesi için kullandığımız özel komut, org, origin isimli sözde komut.
+
+442
+01:32:41,387 --> 01:32:48,328
+SUM kelimesi yapmış olduğumuz data segment tanım isimlerinden, yani şu, şu ve şu isimlerin.
+
+443
+01:32:48,703 --> 01:32:59,663
+içeride geçtiği zaman hangi anlama geldiğini, stack segment, data segment veya code segment olarak hangi anlama geldiğini veya gelmesi gerektiğini burada vermiş oluyoruz.
+
+444
+01:32:59,703 --> 01:33:05,724
+Dikkatinizi çekecek olursa arkadaşlar, bütün sözde komutlar compile time sırasında etki.
+
+445
+01:33:05,784 --> 01:33:08,663
+Yani kod daha çalışmadan önce etki gösteriyor.
+
+446
+01:33:09,144 --> 01:33:13,284
+Ama instructionlar kod çalışırken runtime sırasında etki gösterecek.
+
+447
+01:33:14,104 --> 01:33:15,463
+Onu tekrar hatırlamış olalım.
+
+448
+01:33:16,020 --> 01:33:20,300
+Yine bir başka sözde komut grubu arkadaşlar, tanımlama grupları.
+
+449
+01:33:20,740 --> 01:33:30,199
+Örneğin define byte'ı hatırlayacak olursanız, 0 ile 255 arasındaki değerleri tanımlamak için, tekil olarak tanımlamak için kullanılan bir sözde komut.
+
+450
+01:33:30,579 --> 01:33:33,340
+Bu sözde komutla tek bir byte tanımlayabiliriz.
+
+451
+01:33:33,420 --> 01:33:35,020
+Bunu decimal olarak yapabiliriz.
+
+452
+01:33:35,640 --> 01:33:41,020
+Herhangi bir tanımlayıcı vermediğimiz zaman bu sayısal değer, immediate değer decimal olarak değerlendiriliyor.
+
+453
+01:33:41,020 --> 01:33:44,020
+Veya hexadecimal olarak tanımlamaya...
+
+454
+01:33:44,020 --> 01:33:47,220
+yapabiliriz. Sekzadesimal tanımlama yapabilmek için şunu büyütelim.
+
+455
+01:33:48,148 --> 01:34:03,568
+Hexadesimal tanımlama yapabilmek için mutlaka bunun hexadesimal olduğunu belirtmemiz ve hexadesimal olarak verdiğimiz de immediate değerin en yüksek anlamlı basamağı bir harfe karşılık geliyorsa onun da mutlaka sıfır ile ilklendirilmesi yani başlatılması gerekiyor.
+
+456
+01:34:03,568 --> 01:34:16,148
+Eğer sıfır ile başlatılmazsa kalan şu kısmı bir label olarak değerlendiriyor. Onun için mutlaka bu tanımlamaların eğer en yüksek anlamlı basamak harf değil ise sıfırla başlatılması gerekiyor.
+
+457
+01:34:16,148 --> 01:34:39,507
+gerekiyor. Bu durumda sayı 12 biteme çıktı. Hayır, sayımız yine 8 bit ama bir immediate değer olduğunu, hexadecimal değer olduğunu belirtmek için başına 0 koyduk sadece. Yine biz istersek bir dizi tanımlayabiliriz. Define byte dedikten sonra virgülle ayrılmış şekilde değerlerimizi yazarsak bu bir dizi tanımı anlamına geliyor.
+
+458
+01:34:40,275 --> 01:34:58,296
+Veya biz bir karakter dizisi tanımlayabiliriz. Karakter dizisi tanımlayabilmek için yine tırnak içerisinde bu karakter dizisini yazmamız yeterli oluyor. Bu sayede biz byte tanımlamalarımızı gerçekleştirmiş oluyoruz.
+
+459
+01:34:58,296 --> 01:35:01,296
+Word tanımlamasında ise arkadaşlar,
+
+460
+01:35:03,155 --> 01:35:16,536
+Bir dizi isimli değişkeni Word tipindeki değerlerle tanımlamak istiyorsak, burada tanınacağımız dizinin elemanları 5, 10 ve 20 şeklinde ise, bu dizi hafızaya yerleştirildiğinde şöyle bir durumla karşılaşıyoruz.
+
+461
+01:35:19,155 --> 01:35:29,195
+Örneğin en düşük adresimiz öyle bir denk gelsin ki daha önceden yapmış olduğumuz tanımlamalara göre 510H adresinden itibaren dizi değişkenimizi tanımlıyor olalım.
+
+462
+01:35:29,939 --> 01:35:33,439
+Bu dizi değişkenimiz, word tipindeki değişkenimiz ilk değer 5.
+
+463
+01:35:34,579 --> 01:35:37,579
+Düşük anlamlı kısmı 5, yüksek anlamlı kısmı 0.
+
+464
+01:35:37,679 --> 01:35:39,019
+Dolayısıyla 0, 0, 5.
+
+465
+01:35:40,319 --> 01:35:41,519
+İkinci değerimiz 10.
+
+466
+01:35:41,819 --> 01:35:45,000
+Yani 0, 0, 0'a, 0, 0, 0'a.
+
+467
+01:35:45,439 --> 01:35:47,039
+Yani word olarak bu şekilde okuyacağız.
+
+468
+01:35:47,139 --> 01:35:49,239
+Düşük adresinde düşük anlamlı byte var çünkü.
+
+469
+01:35:49,859 --> 01:35:52,379
+20 içinde 14 hexadecimale karşı geliyor.
+
+470
+01:35:52,479 --> 01:35:54,399
+0, 0, 14 hexadecimal değeri.
+
+471
+01:35:55,283 --> 01:35:58,203
+Word tanımlamayı da bu şekilde yapmış oluyoruz.
+
+472
+01:35:58,564 --> 01:36:00,923
+Yani iki hafta sonra sınavımız var.
+
+473
+01:36:01,064 --> 01:36:04,524
+Sınavda hatırlatmış olayım.
+
+474
+01:36:05,524 --> 01:36:10,963
+Karşılaşabileceğiniz senaryolardan bir tanesi bir data segment tanımını veriyor olacağız.
+
+475
+01:36:11,123 --> 01:36:12,984
+Bir SM'li kodu olarak veriyor olacağız.
+
+476
+01:36:13,564 --> 01:36:18,844
+Sizden bu data segmentin makine kodu karşılığını yazmanızı isteyeceğiz.
+
+477
+01:36:19,283 --> 01:36:23,963
+Tamam mı? Yani az önce dump edip şeye baktık ya, data segmente baktık ya örneğin.
+
+478
+01:36:24,884 --> 01:36:28,083
+Kod olarak data segment tanımını vereceğiz.
+
+479
+01:36:28,583 --> 01:36:38,163
+Sizden eğer bu kodu biz çalıştırıp da debug ekranında data segmenti dump etmiş olsaydık ne görmeyi bekliyorduk diye sizden size sormuş olacağız.
+
+480
+01:36:38,703 --> 01:36:39,764
+Şimdiden söylemiş olayım.
+
+481
+01:36:40,743 --> 01:36:46,403
+Yine eğer double word yani 32 bitlik bir değişken tanımlamak istiyorsak DD sözde komutunu kullanıyoruz.
+
+482
+01:36:47,060 --> 01:36:58,580
+Eğer ki 64 bit veya 8 byte'den oluşan bir değişken tanımlamak istiyorsak bu sefer de DQ yani Define Coat Word isimli sözde komutu kullanmamız gerekiyor arkadaşlar.
+
+483
+01:37:00,580 --> 01:37:02,580
+EQ az önce de bahsetmiştik.
+
+484
+01:37:03,539 --> 01:37:22,800
+tıpkı C'deki define macrosu gibi çalışıyor. Yani ne demek? Derleme öncesinde ECU ile yapmış olduğumuz tanımlamaya göre o isim, o label veya etiket diyelim, o etiketi, her bir etiketi vermiş olduğumuz sayısal değerle değiştiriyor derleme öncesinde.
+
+485
+01:37:30,127 --> 01:37:53,028
+dizi bir isimli değişken byte tipinde tanımlıyoruz ve bu byte tipindeki dizi 15 adet, initial değeri 0 olan bir dizi şeklinde tanımlansın istiyorsak, yani 15 tane tekrarlayan 0 şeklinde tanımlamak istiyorsak, 15 duks parantez içerisinde 0 şeklinde bunu ifade etmemiz gerekiyor.
+
+486
+01:37:53,367 --> 01:37:56,387
+Yine bakın şurada enteresan bir kullanım var.
+
+487
+01:37:56,948 --> 01:38:21,748
+Buradaki kullanım iki kere DUP içeriyor. İçteki DUP'a bakalım örneğin. İçteki DUP ne yapıyor? İçteki duplicate dört tane sekiz değeri için yer ayırıyor. Dört tane byte yer ayırıyor. Dört tane byte yer ayırıyor ve bunların her birisinin initial değeri sekiz oluyor. Yani sekiz, sekiz, sekiz, sekiz. Dört tane sekiz değeri için yer oluşturdu ve sekiz değerini initialize etti bunlarla.
+
+488
+01:38:22,032 --> 01:38:40,572
+Daha sonra bu 4 tane 8 değerini de bakın, 4 tane 8 değerini de 3 kere tekrarlıyor. Dolayısıyla 8, 8, 8, 8 olan bu satırdan 4 tane tekrarlamak demek aslında 3 çarpı 4 boyutunda bir matriz tanımlayıp her bir elemanı 8 değeriyle inişlaz etmeye eşdeğer.
+
+489
+01:38:40,572 --> 01:38:49,491
+Yani baktığımız zaman bu kaç elemanlık bir yer ayırır? 3 çarpı 4 elemanlık bir yer ayırır. Yani 12 tane eleman için yer ayırır.
+
+490
+01:38:50,032 --> 01:39:09,751
+elemanların her birisi de byte boyutunda. Yani bunun toplamda ayırdığı yer 12 byte'lık bir alan olmuş oluyor. Şu tanımlama, 12 byte yer ayırır. Bu 12 tane byte'ın her birinin değeri de 8 olarak inşilaj edilmiş durumda. Şimdi buna matriz dedik ama bunun yine dump edip data segmente baktığımızda yerleşimi nasıl olacak?
+
+491
+01:39:10,159 --> 01:39:30,139
+tıpkı C'deki array tanımı gibi veya matriz tanımını düşünün. Nasıl oluyor orada da? Yan yana row first olmak üzere. Her bir satırı ilk satırdan itibaren alıp peşine ikinci satırı yerleştiriyor. Yani adresler ardışık gelecek şekilde matriz'i hafızaya yerleştiriyor. Burada da aynı şey söz konusu.
+
+492
+01:39:30,539 --> 01:39:36,139
+Bir başka nokta da şu, eğer yapmış olduğumuz tanımlamada ilk değer oluşturmak istemiyorsak,
+
+493
+01:39:36,467 --> 01:40:00,148
+sadece yer ayırmak istiyorsak o zaman yapacağımız işlem, bizi iki işlemini değişken için Word tipinde 10 tane tekrarlayan yer ayırdık. Yani 10 tane yer ayırdık ve değer initialize etmedik. Sadece yer ayırdık. Burada toplam ayırdığımız yer 10 tane Word için alan yani 20 byte'lık bir alana tekabül ediyoruz. Ve değer initialize etmiyoruz.
+
+494
+01:40:01,619 --> 01:40:12,679
+TypeDef'e bakacak olursak, TypeDef'te ise arkadaşlar, biz kendimiz mevcut olan veri tiplerinden birisini kullanarak bir kendimizin isimlendirdiği bir değişken tanımlayabiliriz.
+
+495
+01:40:12,899 --> 01:40:24,619
+Tip tanımını yaptıktan sonra değişken tanımlarken tıpkı define byte veya word'da olduğu gibi değişken ismi, tip ismi ve değer olarak initialize etmemiz mümkün.
+
+496
+01:40:25,203 --> 01:40:28,403
+PTR'yi hatırlayacak olursanız kullanmıştık sıklıkla.
+
+497
+01:40:29,563 --> 01:40:42,203
+Herhangi bir komutu çalıştırırken eğer ki bu komuta ilişkin olarak bir boyut tipi belli değilse yani Word işlemi, Byte işlemi belli değilse bunu açıktan belirtmemiz gerekiyor.
+
+498
+01:40:43,603 --> 01:40:46,883
+Şimdi M3086'da kullanılan arkadaşlar görmüştür.
+
+499
+01:40:47,283 --> 01:41:09,183
+Mesela increment 100 hash köşeli parantez içerisinde gibi bir komut kullandığımızda MU8086 bunu byte PTR olarak, varsayılan olarak öyle kabul ediyor. Ama DOSBox baktığımızda DOSBox burada hata veriyor. Tip belirtilmesi gerekir diye hata veriyor. Bizim de referansımız ders içerisinde DOSBox olacak. Yani Microsoft Assembler olacak.
+
+500
+01:41:09,844 --> 01:41:24,364
+MOV8086 sadece denemelerinizi daha hızlı yapabilmeniz için bir arayüz olarak düşünün. Referansımız DOSBOX tarafı. Eğer kod DOSBOX'da çalışıyorsa doğru, çalışmıyorsa hatalı. Bu kadar net bir şekilde ifade edebilirim.
+
+501
+01:41:25,984 --> 01:41:32,604
+Dolayısıyla işlem tipinin Word mi, Byte mi tipinde olacağı bu şekilde WordPtr ve BytePtr ile tanımlanıyor.
+
+502
+01:41:33,492 --> 01:41:48,952
+Bunun haricinde PTR'nin kullanıldığı, pointer'ın kullanıldığı bir başka alan daha var. O da FAR PTR ve NIR PTR. Bunlar ise tanımlamış olduğumuz fonksiyonların ne şekilde çağrılacağını veya dallanma işlemlerinin ne şekilde yapılacağını belirtiliyor.
+
+503
+01:41:49,771 --> 01:41:58,351
+Örneğin FAR tipinde bir JMP işlemi yapacaksak bunu bu şekilde belirtmemiz lazım. Veya NIR tipinde bir dallanma yapacaksak bunun bu şekilde belirtilmesi gerekiyor.
+
+504
+01:42:00,020 --> 01:42:21,800
+Şimdi bir başka sözde komutumuz label. Label komutu aslında biz bunun bir benzerini load efektif adres kullanarak yapmıştık hatırlayacak olursanız. Örneğin bir double word tanımlayacak olsak, bu double word'un başlangıç adresini load efektif adresle alsak, biz bu double word'e aslında byte byte erişebiliyorduk hatırlayacak olursanız.
+
+505
+01:42:27,028 --> 01:42:33,427
+onun başlangıç adresini aldıktan sonra BX değerini her arttırdığımızda bir sonraki adres gözüne erişebiliyorduk.
+
+506
+01:42:33,488 --> 01:42:39,028
+Yani aslında orada byte byte veya word word onun istediğimiz bölgesine erişip işlem yapabiliyorduk.
+
+507
+01:42:39,788 --> 01:42:45,228
+Bunu yalnız hatırlayacak olursanız load efektif adres runtime sırasında etki gösteren bir komut.
+
+508
+01:42:45,887 --> 01:42:50,128
+Compile time sırasında etki gösterecek birebir karşılığı ise label komutu.
+
+509
+01:42:50,668 --> 01:42:53,608
+Buradaki işleyişi kontrol edelim şimdi.
+
+510
+01:42:54,899 --> 01:43:11,899
+yeni B isimli bir label tanımlıyoruz byte tipinde. Sıradaki boş göz sıfır olduğu için yeni B isimli labelımız sıfır adresini gösterdi. Dolayısıyla sıfır adresinde bir tane byte kullandık, byte tanımladık. Fakat bunun makine kodu karşılığı yoktu zaten. Daha sonra
+
+511
+01:43:12,467 --> 01:43:18,647
+Sadece 0 adresinde bu değişkeni atamış gibi olduk. Atamış olduk, değer atamadık ama.
+
+512
+01:43:19,147 --> 01:43:24,447
+Hemen peşine bir word tanımlıyoruz. Define word deyip, sayı w define word deyip bir değişken tanımlıyoruz.
+
+513
+01:43:25,507 --> 01:43:29,547
+Burada 0 ve 1 adreslerine bu sayı w yerleşti.
+
+514
+01:43:30,068 --> 01:43:45,688
+Normalde sayı W bir word değişken. Ben bunu alıp sayı W'yu alıp 8 bitlik bir yazmaca atıyamam. Ama yeni B isimli değişken, bu artık bir değişken ismi olarak görebileceğimiz bir şey ve byte tipinde.
+
+515
+01:43:45,688 --> 01:43:58,068
+Ve aslında yeni B olarak tanımlamış olduğum byte sayı W'nun düşük anlamlı byte'ını gösteriyor. Yani ben bu durumda sayı W'nun düşük anlamlı byte'ına erişmek için yeni B...
+
+516
+01:43:58,068 --> 01:44:08,268
+B isimli etiketi de kullanabilirim veya değişkeni kullanabilirim. Variable'u kullanabilirim. Bunun anlamı ne? Yeni B'yi AL'ye atayabilirim. Biz bunu hatırlayacak olursanız Load Effective adresi de yapmıştık.
+
+517
+01:44:08,916 --> 01:44:36,675
+Benzer şekilde tersten düşünelim. Yeni W bir label olarak tanımlansın, word tipinde bir label olarak tanımlansın. Dolayısıyla sıradaki boş adresimiz 2 idi. 2'den itibaren 2 ve 3'ün kapsadığı alandan bir word tanımladık şu anda. Bir etiket tanımladık. Bir yeni W değişkeni tanımladık. Ama hemen peşine define byte'larla iki tane byte değeri tanımladığımızda sayı B ve sayı C. Bunlar da 2 ve 3 adresine yerleşecek bu durumda.
+
+518
+01:44:36,948 --> 01:44:56,148
+Ben sayı B'yi alıp AL'ye atayabilirim. 8 bit tanımlandığı için sıkıntı yok. Ama sayı B'yi alıp AX'e atayamam. Kip hatası verir. 45 ve 55'ten oluşan, Lidl Ending formatında 55-45 hexadecimal sayısına karşılık gelir bu. Bu word değerini kullanmak istiyorsam işte bunun içinde yeni W'yu kullanabilirim.
+
+519
+01:44:56,275 --> 01:45:22,315
+Bu adresten itibaren başlayan word'ü aslında yeni w ifade etmiş oluyor. Bu aslında birebir load efektif adresle gerçekleştirmiş olduğumuz durumun karşılığı. Ama dikkat edecek nokta şu. Load efektif adres runtime sırasında fonksiyon gösteriyor. Label kullanımı compile time sırasında etki göstermiş oluyor. Label kullanımı da kabaca bu şekilde ifade edebiliriz.
+
+520
+01:45:22,640 --> 01:45:29,520
+Yine prosedür tanımı ile ilgili olarak prosedür başlangıcı ve bitişi PROC ve ENT-P komutlarıyla belirtilmek durumunda.
+
+521
+01:45:30,100 --> 01:45:33,960
+Burada bakalım bizim son isimli bir prosedürümüz var.
+
+522
+01:45:34,500 --> 01:45:35,840
+Tipi de FAR tipindeymiş.
+
+523
+01:45:36,440 --> 01:45:37,520
+Şunu unutmayacağız.
+
+524
+01:45:38,660 --> 01:45:42,220
+EGZE tipi programlarda mutlaka ana yordam olacak.
+
+525
+01:45:42,400 --> 01:45:44,300
+Bu ana yordam da FAR tipinde olacak.
+
+526
+01:45:45,300 --> 01:45:46,080
+Bu kesin kural.
+
+527
+01:45:46,739 --> 01:45:56,359
+prosedürün bir stişi de yine aynı isim vermiş olduğumuz prosedürün başlangıcında vermiş olduğumuz isim ve end prosedür kelimesiyle tanımlanmış oluyor.
+
+528
+01:45:57,180 --> 01:45:59,680
+Bununla birlikte extern ve public de şu şekilde.
+
+529
+01:46:00,212 --> 01:46:20,952
+Gerçi bunu anlatmıştım. Hem değişken için geçerli, variable için geçerli hem de fonksiyonlar için geçerli bu. Başka bir dosyadaki, başka bir obje dosyasındaki fonksiyonu kullanmak istiyorsan kendi dosyam içerisinde o fonksiyonu extern, yani dışarıdan kullanılacak bir fonksiyon olarak tanımlamayılayım.
+
+530
+01:46:21,264 --> 01:46:28,304
+Bir dosya içerisindeki fonksiyonu dışarı kullandırılacaksa o fonksiyonu da public olarak başta tanımlaması gerekiyor.
+
+531
+01:46:29,323 --> 01:46:31,743
+Bunu yine ilerleyen aşamalarda tekrar göreceğiz.
+
+532
+01:46:32,463 --> 01:46:37,484
+Makro tanımı ile ilgili olarak makrolarda tanımlanması makro ile başlıyor, endmay ile tamamlanıyor.
+
+533
+01:46:37,939 --> 01:46:58,500
+include başka bir dosyadan makroyu kodumuza yüklemek için kullanıyoruz. Lokalde bahsettiğim gibi birden aynı label'ın tekrar tekrar kullanılması durumu sıkıntı. Eğer lokal kelimesiyle birlikte bir label'ı tanımlarsam bu makro her çağrıldığında ilgili label için unik bir etiket oluşturuyor SM'dir.
+
+534
+01:46:59,188 --> 01:47:03,127
+Lokalin kullanımı da tekrarlı label kullanımının önüne geçmek.
+
+535
+01:47:03,207 --> 01:47:08,188
+Makro çağrılmasından dolayı oluşabilecek tekrarlı label kullanımının önüne geçemmek.
+
+536
+01:47:09,007 --> 01:47:10,387
+Şeye bakalım bir de.
+
+537
+01:47:11,747 --> 01:47:15,827
+Yapmış olduğumuz dizi tanımlamalarıyla ilişkili sözde komutlara bakabiliriz.
+
+538
+01:47:16,407 --> 01:47:22,608
+Burada örneğin tablo define word 15 duplicate 0 şeklinde bir tanımlama yapmış olalım.
+
+539
+01:47:22,608 --> 01:47:26,387
+Bu tanımlama bu 3 komut grubu içinde geçerli.
+
+540
+01:47:27,507 --> 01:47:41,747
+tablo bir adres ama işaret ettiği şey word tipinde bir değer ve bu tablo ile işaret edilen adresten itibaren 15 tane word bölgelik yer ayrılmış ve hepsi sıfır değeriyle initialize edilmiş.
+
+541
+01:47:48,944 --> 01:48:10,024
+tablo diyecek olursak, bu tablonun kaç elemandan oluştuğunu, tipine bakmaksızın kaç elemandan oluştuğunu AX'e atıyor. Bu işlem sonucunda AX'de 15 değeri oluşturuluyor. Type ise bu dizinin her bir elemanın boyutunu belirtiyor. Word tipinde olduğu için
+
+542
+01:48:10,963 --> 01:48:20,003
+MOV, BX, type, tablo dediğimizde her bir elemanın boyutu 2 olduğu için BX'e atanacak değer 2 oluyor bu kod çalıştırıldığında.
+
+543
+01:48:20,644 --> 01:48:28,324
+Size'a bakacak olursak size ise arkadaşlar bu tablo değişkeninden itibaren toplamda kaç byte yer ayrıldığını buluyoruz.
+
+544
+01:48:28,543 --> 01:48:52,684
+15 tane elemanımız var. Her birisi 2 byte'dan oluşuyor. Dolayısıyla burada DX'e atanacak değer 30 değeri olmuş oluyor. Kullanımı da MOV DX, SIZE tablo şeklinde bir kullanımı söz konusu. Bu komutlar tekrar hatırlatıyorum. Sözde komut olduğu için Length, Type, SIZE. Bunlar Runtime sırasında etki gösteriyor. Compile Time sırasında herhangi bir karşılıkları yok. Makine kodu karşılıkları olmuyor.
+
+545
+01:48:55,891 --> 01:49:19,451
+Birincisi offset. Offset, birebir load efektif adresin karşılığı. Load efektif adresle biz neyi alıyorduk? İlgili bir değişkenin tanımlı olduğu data segmentin başından itibaren ne kadar uzakta oldun. Yani bir nevi bunun adresini alıyorduk. Ama load efektif adres, runtime sırasında etki gösteriyor. Bunun birebir karşılığı offset sözde komutu.
+
+546
+01:49:22,256 --> 01:49:32,076
+ilgili değişkenin bulunduğu segmentten itibaren kaç adres, kaç offset ötede olduğunu alabiliriz. Ama bu compile time sırasında etki gösteren bir sözde komut.
+
+547
+01:49:32,896 --> 01:49:38,816
+SEG sözde komutu yapılan etiket tanımının yer aldığı segment değerini bize veriyor.
+
+548
+01:49:38,816 --> 01:49:46,816
+End kelimesini de söylemiştik, konuşmuştuk zaten. Programın giriş etiketini tanımladığımız yer, end kelimesi.
+
+549
+01:49:47,347 --> 01:49:54,688
+programın giriş yerini, başlangıç yerini belirten etiketi ile birlikte kullanılıyor.
+
+550
+01:49:54,788 --> 01:49:57,748
+End kelimesinden sonra gelen etiket veya fonksiyon.
+
+551
+01:49:58,188 --> 01:49:59,988
+Hangi segmentte ise o segment.
+
+552
+01:50:00,000 --> 01:50:07,860
+bizim kod segmentimiz olarak beliriyor. Yani CS değerini, bunun yüklendiği adres değeri yükleniyor, segment değeri yükleniyor.
+
+553
+01:50:08,340 --> 01:50:15,039
+Ve aynı zamanda bu bizim, end label'dan sonra vermiş olduğumuz isim, bizim için ana prosedürü tanımlıyor arkadaşlar.
+
+554
+01:50:17,160 --> 01:50:21,160
+Böylelikle şeyleri tamamlamış olduk, sözde komutları tamamlamış olduk.
+
+555
+01:50:22,260 --> 01:50:25,080
+Bunlarla ilgili sormak istediğiniz bir şeyler var mı?
+
+556
+01:50:30,931 --> 01:50:56,652
+Şimdi bunların makine kodu karşılığı yok ama Assembler şeyi düşün mesela C'de biz bir takım makrolar tanımlıyoruz değil mi? Makro tanımladığımızda aslında bir inline fonksiyon bile olabilir bu. O gördüğü preprocessing olarak geçiyor ya hatırlayacak olursan. Daha compiler'a vermeden önce kod içerisinde bir takım işlemler yapıyor. Mesela include makrosu ile vermiş olduğumuz kütüphaneyi alıp
+
+557
+01:50:56,692 --> 01:50:58,831
+bizim kodumuzun başına ekliyor.
+
+558
+01:51:02,323 --> 01:51:30,323
+kod segment boyutunu DOS box'ta bir saniye. Önce şuna bir bakalım. Dolayısıyla mesela include macrosu ile vermiş olduğumuz header dosyasını bizim SOS kodumuzun başına ekliyor ve öyle compiler'a veriyor. Dolayısıyla burada da Assembler'a vermeden önce bir takım işlemler gerçekleşiyor. Offset ile kullandığımız zaman tanımlı olduğu data segmentin başından itibaren kaçıncı offset ile olduğunu hesaplayıp o offset kelimesinin yerine o sayısal değeri kullanıyoruz.
+
+559
+01:51:30,323 --> 01:51:56,003
+koyuyor mesela. Veyahut da burada işte tablo dediğimiz şeyin yerine o tablonun kaç elemandan oluştuğunu yani loop'tan önceki sayısal değer neyse onu hesaplayıp bunun yerine 15 değeri koyuyor mesela. Daha SMG'e göndermeden önce. SMG'e yaptığı bir görev yani yerine getirdiği bir fonksiyon bu. Bu şekilde ifade edebilirim bunları. Diğer soruda neydi?
+
+560
+01:51:56,851 --> 01:52:20,971
+kod segment boyutunu DOSBox'da görebilir miyiz? Onu DOSBox'da şöyle göreceğiz. Şimdi derleme aşamalarını hatırlayalım. İlk başta MASM'den geçiyorduk ve bir LST uzantılı dosyamız oluşuyordu. İşte LST uzantılı dosya bu. Bunu incelediğimizde bakın şurada offset adresleri var. Mesela bu
+
+561
+01:52:21,011 --> 01:52:40,952
+stack segmente ilişkin tanımlama. Stack segment, 0 offsetinden itibaren başlamış. Toplamda 20 tane wordten oluşuyor. Yani 40 byte'lık bir alan. 40 byte, 40'ın hexadecimal karşılığı kaç? 28. Dolayısıyla bu toplam boyutu 28 haşa kadar gidecek. Bakın mesela stack segment boyutunu gördük.
+
+562
+01:52:41,460 --> 01:52:57,479
+Data segment boyutuna bakalım. Data segment sıfırdan itibaren başlıyor. Dörde kadar gitmiş. Doğru mu? Bir tane A byte'ı tanımlamıştık, bir byte. B byte'ı tanımlamıştık, ikinci byte. Bir de sonuç isimli word tanımlamıştık. İki byte de buradan toplamda dört byte'lık bir alan. Yani bu data segmentin boyutu da dört.
+
+563
+01:53:09,011 --> 01:53:16,011
+32, 34 byte'lık bir alan kaplıyormuş bizim kod segmentimiz. Bu şekilde dolaylı olarak görebiliyoruz.
+
+564
+01:53:16,612 --> 01:53:22,692
+Veya bir de linkleme aşamasında map dosyası oluşturayım mı oluşturmayayım mı diye sormuştu.
+
+565
+01:53:23,211 --> 01:53:26,192
+Map dosyasının içeriğine baktığımızda da aynı şeyi görüyoruz.
+
+566
+01:53:27,471 --> 01:53:32,391
+Kod segmentimiz 22 haç boyutunda. Data segmentimiz 4 haç boyutunda.
+
+567
+01:53:32,391 --> 01:53:36,452
+Stack segmentimiz 28 haç boyutunda. Bir de buradan görebiliyoruz.
+
+568
+01:53:45,492 --> 01:54:10,212
+yine sözde komutlara ilişkin olarak sözde komut alınıp assembly'e girilmeden önce bir makine koduna dönüştürülmüyor. Makine kodunu makine kodu karşılığı yok ya bunların. Şunu yapıyor örneğin tekrar söylemek gerekirse. Şuradan görebiliriz aslında bakın. LST uzantılı dosyaya bakalım. Mesela bunların
+
+569
+01:54:11,252 --> 01:54:25,732
+Burada hiçbir karşılığı yok. Offsetli bir şey kullanmış olsak aslında görebilirdik ama. Mesela şey koyalım. Şu örnek üzerinden konuşayım. Bu güzel. Mesela kodumuzun bir yerinde moveax, lent tablo komutu var.
+
+570
+01:54:26,515 --> 01:54:49,595
+Assembly işleminden önce şunun karşılığı ne hesaplıyor. Tablodan kaç tane elemanlı? 15 elemanlı. Şunun yerine 15'i koyup Assembler'a öyle gönderiyor. MOV AX, 15 deyip Assembler'a o şekilde gönderiyor. Yani bu sözde komut yerine bir makine kodu karşılığı koymuyor veya bunun yerine bir instruction koymuyor, başka bir komut koymuyor.
+
+571
+01:54:49,984 --> 01:54:53,764
+Bunun karşılığı neyse, yani buna mesela şeye bakalım, offset nerede?
+
+572
+01:54:54,224 --> 01:54:57,624
+Offset geçen yere load effective address ile bir işlem yapmıyor.
+
+573
+01:54:58,224 --> 01:55:01,884
+Tanımlara bakıyor, define byte, bir byte, bir daha define byte var, iki byte.
+
+574
+01:55:02,364 --> 01:55:05,664
+O zaman bunun offset'i iki diye hesaplıyor, iki değerini koyuyor mesela.
+
+575
+01:55:07,244 --> 01:55:12,704
+Offset'in yerine load effective address koymuyor, bir makine kodu karşılığı koymuyor veya bir komut karşılığı koymuyor.
+
+576
+01:55:13,224 --> 01:55:15,404
+Bunun olası değerini hesaplayıp yerine koymuyor.
+
+577
+01:55:22,899 --> 01:55:40,379
+assume ise şu anlamda, bakın mesela, şimdi normalde eğer assume içerisinde şunu kullanmamış olsaydık, data SG bir label gibi anlam kazanacaktı değil mi? Dolayısıyla bu data SG yerine
+
+578
+01:55:40,948 --> 01:55:54,508
+bu kaçıncı offset'e denk geliyorsa bir offset değeri koymaya çalışacak. Halbuki biz burada bu AX değeri olarak bunun bir segment karşılığı, 20 bitlik adrese karşılık segment tarafını yani yüksek anlamlı kısmını koymak istiyoruz.
+
+579
+01:55:55,008 --> 01:56:03,288
+Bu şekilde tanımlandığı için bunu bir etiket yerine koymuyor, bunu bir segment adresi olarak alıp o şekilde değerlendiriyor.
+
+580
+01:56:03,288 --> 01:56:07,888
+SUM kelimesinden sonra vermiş olduğumuz değerlerin karşılığı bu şekilde oluyor.
+
+581
+01:56:10,771 --> 01:56:29,131
+Normalde hani eğer bunu kullanmamış olsaydık, nerede o? Mesela şurada MOV CLB diyoruz. B ne? Bir etiket. Bu etiketin değerini sanki atamış gibi olurduk eğer bu tanımlamayı yapmamış olsaydık. Aradaki fark bu şekilde ifade edebilirim.
+
+582
+01:56:36,979 --> 01:56:38,419
+Var mı başka soru?
+
+583
+01:56:40,999 --> 01:56:43,059
+Şimdi bir ara verelim arkadaşlar.
+
+584
+01:56:43,699 --> 01:56:46,519
+18.05 geçe devam edeceğiz başka soru yoksa.
+
+585
+01:56:55,188 --> 01:56:58,368
+aradan sonra da şeylere bakacağız.
+
+586
+01:56:59,188 --> 01:57:02,068
+Exitipi bir programın iskelet koduna bakacağız.
+
+587
+01:57:02,648 --> 01:57:05,608
+Daha sonrasında da bir tane örnek kodu yazmaya çalışacağız birlikte.
+
+588
+01:57:05,608 --> 01:57:06,608
+Tamam mı?
+
+589
+01:57:07,248 --> 01:57:08,148
+Şimdi ara verdik.
+
+590
+02:10:10,355 --> 02:10:26,375
+Tekrar merhaba arkadaşlar. Kaldığımız yerden devam edelim. Bu saatte ise şimdi exotip programların iskelet şablonunu inceleyeceğiz. Bir tane de örnek yazmaya çalışacağız sıfırdan. Bununla ilgili olarak sunum paylaşımı yapayım, ekran paylaşımı yapayım.
+
+591
+02:10:30,375 --> 02:10:33,235
+SM'li programlama tipleriyle ilgili devam ediyoruz.
+
+592
+02:10:34,484 --> 02:10:42,824
+Şimdi SMD tarafında veya alt seviye programlama tarafında programlar kodlama şeklinde, kesim tanımlarına ve kesim düzenine göre farklılık gösterebilir.
+
+593
+02:10:42,824 --> 02:10:47,264
+Ama uzant olarak baktığımızda EXE ve COM tipi iki tane program var.
+
+594
+02:10:48,044 --> 02:10:49,844
+Da 8086 tarafında.
+
+595
+02:10:50,503 --> 02:10:52,784
+Bunlarla ilişkin farkı da ifade etmiştik.
+
+596
+02:10:52,884 --> 02:10:58,003
+EXE tipi programın üç tane kesim kapladığını, COM tipi programın tek bir kesim kullandığını.
+
+597
+02:10:58,384 --> 02:11:25,024
+exe tipi programda her bir segmentin boyutunun ne şekilde tanımlandığını, com tipi programda ise tek segmentte başta bir header kısmının ayrıldığını, daha sonra 100H'dan itibaren header için yer ayrıldığını, daha sonra kodumuzun geldiğini, daha sonra en sondan itibaren yukarıya doğru alanın stack için ayrıldığını, kodla stack arasındaki alanın data için ayrıldığını ifade etmiştik kabaca. Dolayısıyla aralarındaki temel farkları bu şekilde söyleyebiliriz.
+
+598
+02:11:25,359 --> 02:11:48,359
+exit tipi bir programın genel yapısı bu şekilde arkadaşlar. Dört ana başlıktan oluşuyor, dört bölümden oluşuyor. Bir tanesi yığın tanımını yaptığımız kısım, bir tanesi data tanımını yaptığımız kısım, bir tanesi kod segment dediğimiz kısım, bir de end kelimesi ve daha sonra gelen etiketi içeren dördüncü bölge olarak dört kısımdan oluşan bir iskelet yapısından bahsedebiliriz.
+
+599
+02:11:48,703 --> 02:11:55,063
+Burada her bir parçanın kabaca ne işe yaradığını bahsetmiş olduk akış içerisinde ama tekrar üzerinde duralım.
+
+600
+02:11:55,803 --> 02:12:05,983
+Bir kere yığın kesiminin tanımı için en önemli nokta burada sözde komut olarak stack komutunun kullanılması, stack kelimesinin kullanılması.
+
+601
+02:12:06,483 --> 02:12:12,443
+Bu kesimi, yığın kesimi yapan şey burada stack kelimesinin kullanılması. Bu önemli kısım.
+
+602
+02:12:12,819 --> 02:12:36,759
+stack segmente ilişkin bir isim veriyoruz demiştik. Bu yıldız, A, B, herhangi bir şey olabilir. Bunun yığın kesimi olduğunu belirten sözde komut burada, stack kelimesi. Bu yığın için ayırdığımız yer exit tipi programda baştan belli. Bunun çok küçük olmaması gerekiyor. Yığın ne için kullanıyor? Bir kere onu bir hatırlayalım. Ona göre boyutunu karar verebiliriz.
+
+603
+02:12:37,087 --> 02:12:54,367
+Yığın temelde arkadaşlar, fonksiyonlar arası çağrılma yapıldığı zaman, bir alt yordam çağrıldığında veyahut da alt üst yordama, bir ana yordama dönerken, işletim sistemine dönerken, dönüş değerlerinin saklanması için kullanılıyor birinci aşamada.
+
+604
+02:12:54,847 --> 02:13:05,047
+İkinci aşamada geçici bir bellek alanı, push popla kullanılabiliriz. Örneğin iç içe iki döngü yaptığımızda, CX değerini yığına atıp daha sonra iç döngü bittiğinde çekmiştik.
+
+605
+02:13:05,087 --> 02:13:30,227
+Bu şekilde fonksiyonel bir kullanım söz konusu olabilirdi. Üçüncüsü parametre aktarımı için kullanılabilir. Yani bir alt yordamı çağırmadan önce yığında göndermek istediğimiz değerleri puşlayıp daha sonra alt yordamı çağırıp alt yordam içerisinde de parametrlerin yığından geldiğini bilecek şekilde, bilir bir şekilde o yığından değerleri alıp okuyup hatta yığından geri değer döndürebiliriz.
+
+606
+02:13:30,511 --> 02:13:47,291
+Dolayısıyla yığının genel kullanımı bu. Dolayısıyla örneğin recursive bir yapımız varsa, recursive fonksiyon kullanılıyorsa, iç içe maksimum ne kadar iç içe recursive fonksiyon çağrılacaksa en azından bunu karşılayacak kadar bir boyuta sahip olmamız lazım.
+
+607
+02:13:47,291 --> 02:13:58,511
+Bu şekilde recursive bir iç içe çağırma yoksa da kabaca kıtı kıtına minimum bir değer değil de yeterince küçük, çok büyük olmayan bir yığın alanı tanımlamış.
+
+608
+02:13:58,511 --> 02:14:26,511
+kullanmamamız gerekiyor. Bu yığın alanı tanımıyla ilgili dikkat edeceğimiz nokta bakın define word ile tanımlanmış ve 32 tanelik word yer ayrılmış. Yani baktığımız zaman 64 byte'lık bir yer ayrılmış. Yığın için ayrılan alanın mutlaka bir çift sayı olması gerekiyor. Bunun arkasında yatan sebep ise şu arkadaşlar. Biz yığına ilişkin push ve pop işlemleri yapabiliriz ama bunlar word tipinde işlem yapıyor. Bundan dolayı yığının mutlaka
+
+609
+02:14:26,511 --> 02:14:46,571
+çift alan ayrılmak gerekiyor. Bununla ilgili olarak eğer define word kullanıyorsak sıkıntı yok zaten. Çünkü define word iki byte'lık yer. Yani iki çarpı bir şey olacak. İllaki çift olur. Fakat bunu define byte ile yapıyorsak mutlaka burada vereceğimiz değerin bir çift sayı olması gerekiyor. Buna dikkat edeceğiz.
+
+610
+02:14:48,671 --> 02:14:52,471
+Segmentlerin bitişi and say ile işaretleniyor. Onu hatırlamış olalım.
+
+611
+02:14:52,783 --> 02:15:01,963
+Data segmentimiz burada işaret edilen yer. Değişken tanımları gördüğünüz şekilde yapılıyor. Data segmente ilişkin bir isim vermişiz.
+
+612
+02:15:03,023 --> 02:15:09,823
+Kod segmente baktığımızda genel işaretlediğimiz bölgede tamamıyla kod segmente karşılık geliyor.
+
+613
+02:15:10,623 --> 02:15:16,083
+Mutlaka exit tipi programlarda en az bir tane far tipinde prosedür olması lazım.
+
+614
+02:15:16,595 --> 02:15:20,535
+Ki bu da egze tipi programın ana prosedürü olacak.
+
+615
+02:15:21,615 --> 02:15:29,735
+Tamam mı? Yani özetlemek gerekirse egze tipi programlarda ana yordam olacak ve bu mutlaka far tipinde tanımlanmak zorunda.
+
+616
+02:15:30,931 --> 02:15:45,931
+Prosedürü tanımladığımızda ise arkadaşlar, FAR tipinde bir prosedür tanımlıyorsak, bunun bitişini de aynı isim ve entpe ile verdik ama FAR tipindeki programların dönüşü mutlaka redf ile olmalı, return far ile olmalı.
+
+617
+02:15:45,931 --> 02:15:51,951
+Çünkü işletim sistemi bizim FAR tipindeki bu ana prosedürümüzü çağırırken,
+
+618
+02:15:52,500 --> 02:16:10,520
+bize ne veriyordu? Data segment içerisinde işletim sistemine dönüş segment değerini gönderiyordu ve bize şunu söylüyordu. Sana DS üzerinden göndermiş olduğum segmentin sıfır offsetine dönmelisin. Bunu nasıl sağlayacaktık? Bunu şu şekilde sağlıyorduk.
+
+619
+02:16:10,832 --> 02:16:23,052
+bize vermiş olduğu, işletim sisteminin bize vermiş olduğu DS'ye yığını atıyorduk. Daha sonra da yığını sıfır değerini atıyorduk. Yığını sıfır değerini atmakta XOR AX, AX ve PUSH AX de gerçekleşiyordu.
+
+620
+02:16:23,652 --> 02:16:36,172
+Yığını attığımız ilk değer DS'deki değer ki o işletim sistemine dönüş segment değerini içeriyordu. AX'deki değer de sıfır değeri dolayısıyla işletim sisteminin CS'si ve sıfır offsetin yığını attık.
+
+621
+02:16:36,691 --> 02:16:44,412
+ana program içerisinde yapmış olduğumuz işlemler sonucunda yığına bir şeyler attıysak, ters sırada bunları yığından çekmemiz lazım ki,
+
+622
+02:16:44,951 --> 02:16:52,191
+REDFAY sırasına geldiğimde, REDFAY komutuna geldiğimde, yığının en üstünde en son olarak atmış olduğum sıfır değeri bulunsun,
+
+623
+02:16:52,671 --> 02:16:56,451
+onun altında da işletim sistemine dönüş segment değeri bulunsun.
+
+624
+02:16:56,451 --> 02:17:04,311
+REDFAY çalıştırıldığında otomatik olarak yığının en üstündeki değer alınıp Instruction Pointer'e yükleniyor.
+
+625
+02:17:04,691 --> 02:17:23,311
+bir sonraki değerde alınıp kod segmente yükleniyor. Bu zaten işletim sistemine dönüş bölgesini, dönüş noktasını işaret eden değerler. Dolayısıyla ana program içerisinde, program içerisinde yazmış olduğumuz kodlarda yığına ne kadar şey atıyorsak onları uygun sırada geri çekmemiz mutlaka gerekiyor arkadaşlar.
+
+626
+02:17:25,780 --> 02:17:43,400
+Yine mademki işletim sistemi bizim programımızı hafızaya yüklediğinde DSD kendi dönüş segment değeriyle bizi çağırdığına göre biz şu anda tanımlamış olduğumuz data segment için tanımladığımız bu segmenti tam anlamıyla kullanılmıyoruz. Data segment için hala kullanamaz durumdayız.
+
+627
+02:17:52,948 --> 02:18:19,348
+ve bunun da dolaylı olarak DS'ye atanması gerekiyor. Bunu bir adımda yapamıyoruz. Çünkü data segmenti immediate değer ataması bir seferde olmuyor arkadaşlar. Böyle bir komut yok. Herhangi bir segment yazmacına başka bir yazmaç üzerinden değer atayabiliriz. Onun için iki adımda gerçekleştirdiğimiz bir durum. Bu iskelet kodun RETF'den yukarısı bizim kendi kodumuzu yazacağımız blok.
+
+628
+02:18:19,763 --> 02:18:23,343
+Daha sonrasında ise RET-F ile prosedürü sonlandırıyoruz.
+
+629
+02:18:30,963 --> 02:18:33,384
+Şimdi şöyle, şununla ilgili soru herhalde.
+
+630
+02:18:35,984 --> 02:18:38,644
+Şimdi, işletim, şöyle tekrar hatırlayalım.
+
+631
+02:18:39,304 --> 02:18:43,263
+İşletim sistemi bizim oluşturduğumuz egzeyi hafızaya yüklerken,
+
+632
+02:18:43,923 --> 02:18:53,184
+DS yazmacında kendisine, yani işletim sisteminde kaldığı noktanın segment değerini yazıp bizim programı başlatıyor.
+
+633
+02:18:53,843 --> 02:18:59,643
+ve bize diyor ki, bu sana DSD göndermiş olduğum segmentin 0 offsetine dön diyor.
+
+634
+02:19:00,163 --> 02:19:00,583
+Tamam mı?
+
+635
+02:19:01,323 --> 02:19:05,403
+Dolayısıyla, AX'i pushlamamız gerekmiyor.
+
+636
+02:19:07,083 --> 02:19:08,943
+AX'i pushlamamız gerekmiyor.
+
+637
+02:19:09,083 --> 02:19:09,743
+Gereken ne?
+
+638
+02:19:10,503 --> 02:19:11,903
+Program başlar başlamaz.
+
+639
+02:19:11,983 --> 02:19:16,443
+DSD'deki değer neyse onu yığına at, bir de 0 değerini yığına at.
+
+640
+02:19:17,163 --> 02:19:20,403
+Birinci işlem zaten push DX, DSD'in yığına attı.
+
+641
+02:19:20,768 --> 02:19:38,608
+Bir de yığına sıfır değeri atmalıyız. Sıfır değerini nereden emin oluyoruz? XOR AX, AX, AX'de sıfır değeri oluşturuyor. Daha sonra bu sıfır değerini, yani AX'deki sıfır değerini de yığına atıyoruz. Bunun haricinde geri dönüşle ilgili, işletim sistemine geri dönüşle ilgili yığına başka bir şey yapmamıza gerek yok.
+
+642
+02:19:47,476 --> 02:19:50,996
+Red F'nin yaptığı işlem, şöyle gösterelim.
+
+643
+02:19:57,780 --> 02:19:58,940
+Şöyle ifade edelim.
+
+644
+02:20:01,080 --> 02:20:03,060
+Şimdi şu bizim yığınımız.
+
+645
+02:20:03,680 --> 02:20:04,300
+Şöyle, pardon.
+
+646
+02:20:05,819 --> 02:20:09,420
+Şu bizim stack segment için ayırdığımız bölge olsun.
+
+647
+02:20:09,940 --> 02:20:30,940
+Tamam mı? Biz bunun, şurası bizim yığınımızın en yüksek adresi, burası en düşük adresi. Yığına bir şey attığımız zaman adresler giderek küçülüyor. Yani SP'nin değeri gittikçe küçülüyor. Yani biz push işlemleri yaptığımızda SP küçülüyor. Pop işlemleri yaptığımızda...
+
+648
+02:20:31,376 --> 02:20:33,396
+Ya başka bir şey yazıyordum az kalsın.
+
+649
+02:20:33,896 --> 02:20:37,416
+POP işlemleri yaptığımızda ise SP değeri büyüyor.
+
+650
+02:20:37,716 --> 02:20:38,136
+Tamam mı?
+
+651
+02:20:38,736 --> 02:20:45,536
+Dolayısıyla bizim şu anda boş bir yığında stack pointer'ın göstermiş olduğu değer sıradaki boş değer.
+
+652
+02:20:45,951 --> 02:21:10,171
+Yani yığının dışındaki bir değerle başlıyor aslında. Biz ilk push sistemini yaptığımızda, push ds'yi yaptığımızda, stack pointer 2 artıyor ve sıradaki gözü gösteriyor. Yani yığının en dibindeki adresi gösteriyor ve biz buraya ne atmışız? ds değerimizi atmışız. Daha sonra stack pointer yine 2 artıyor, sıradaki boş gözü gösteriyor. Şurada yine burayı gösteriyor, tamam mı?
+
+653
+02:21:12,628 --> 02:21:39,208
+Bundan sonra, yığını attığımız ikinci değer, AX, AX'daki şu anki değer ise atılırken sıfır değeri. Yine buraya, sıradaki boş göze AX'i, yani içinde sıfır sıfır değeri var. Bunu atadık. Hatta şöyle yapalım. Bu değer var. Daha sonra stack pointer iki arttı. Şu anda stack pointer yine boş, sıradaki boş gözü gösteriyor.
+
+654
+02:21:40,020 --> 02:22:06,180
+ve yığında bu değerler var. Biz programımızın akışı içerisinde, yani return redf den önce bir takım yığına bir şeyler attık diyelim. Daha sonra sırası geldikçe bunları yığından çektik. Stack pointer en son şurayı gösterir durumda. Tamam mı? Ve redf satırına geldim. Redf satırına geldiğimde önce stack pointer 2 azaltılıyor. Şurayı gösterir hale geldik. Burada sıfır değeri var. Bunu çekiyor.
+
+655
+02:22:06,675 --> 02:22:27,195
+Instruction pointer atıyor. Instruction pointer'daki değerimiz 0 şu anda. Daha sonra yine 2 azaltıyor. Buradaki sıradaki değeri alıyor. Bunu da kod segmenti atıyor. Kod segmenti attığı değer, freeze programı ilk girdiğimizde DS'ye deki değer. Yani bu işletim sisteminin kod segment değeri. DS'ye de bunu atmış oluyor.
+
+656
+02:22:28,819 --> 02:22:35,919
+Dolayısıyla ilk çekilen değer, sıfır değeri, ikinci çekilen değer, işletim sistemine dönüş, segment değerimiz olmuş oluyor.
+
+657
+02:22:37,659 --> 02:22:40,079
+Dx değil de, CS.
+
+658
+02:22:41,180 --> 02:22:44,719
+Veyahut da programa girerken ki DS, DX değil yani.
+
+659
+02:22:50,675 --> 02:23:16,876
+data segment kullanımı için demiştik. Kodumuz burada. Daha sonra, RETV'den sonra prosedürün bitiş parantezi var. Daha sonra kod segmentin bitiş parantezi var. En son olarak da end kelimesi bizim ana yordamımızı işaret ediyor. Dolayısıyla bu başla etiketi hangi segmentte ise orası bizim kod segmentimiz oluyor. Yani bu segmenti, kod segment yapan şey end kelimesinden sonra etiketin burada yer alması.
+
+660
+02:23:17,396 --> 02:23:20,296
+ve bu aynı zamanda bizim ana yordamımızı belirtiyor.
+
+661
+02:23:20,855 --> 02:23:21,256
+Tamam mı?
+
+662
+02:23:21,756 --> 02:23:24,816
+Ve bu da aynı zamanda kodun giriş adresini belirtiyor.
+
+663
+02:23:24,896 --> 02:23:27,296
+Yani kod buradan itibaren çalışmaya başlayacak.
+
+664
+02:23:27,836 --> 02:23:31,436
+Bunun içerisinde, yani bu kod segment içerisinde birden fazla prosedür olabilir.
+
+665
+02:23:31,596 --> 02:23:33,576
+Bunların hepsi de far tipinde olabilir.
+
+666
+02:23:33,776 --> 02:23:35,336
+İlk önce hangisi çalıştırılacak?
+
+667
+02:23:35,855 --> 02:23:39,256
+AND kelimesinden sonra gelen etiket hangisi ise o çalıştırılacak.
+
+668
+02:23:40,096 --> 02:23:40,456
+Tamam mı?
+
+669
+02:23:43,379 --> 02:23:47,340
+Bundan sonraki kısım COMTP programla ilgili. Onu daha sonraki haftalarda göreceğiz.
+
+670
+02:23:48,739 --> 02:23:53,360
+Şimdi bunu tamamladık. Şimdi arkadaşlar bir örnek üzerinden ilerleyeceğiz.
+
+671
+02:23:54,319 --> 02:24:01,539
+Bunun için şöyle yapacağım. Bizim MASM klasörümüz içerisinde.
+
+672
+02:24:06,772 --> 02:24:10,132
+Bir problem tanımımız olsun şimdi. Şunları kapatalım.
+
+673
+02:24:15,827 --> 02:24:19,207
+Önce problem tanımımızı yazalım.
+
+674
+02:24:23,028 --> 02:24:28,488
+Daha önce yaptığımız bir problem ama bunu işte bu sefer daha düzgün bir şekilde yapalım.
+
+675
+02:24:30,247 --> 02:24:32,087
+Şöyle diyeceğiz problemimiz.
+
+676
+02:24:32,988 --> 02:24:33,648
+Örnek.
+
+677
+02:24:39,572 --> 02:24:40,351
+2 adet
+
+678
+02:24:40,351 --> 02:24:43,191
+16 bitlik
+
+679
+02:24:43,191 --> 02:24:46,492
+direkt text de yazayım.
+
+680
+02:25:38,227 --> 02:25:40,687
+Fontunu değiştirebiliyormuş bilen var mı?
+
+681
+02:25:49,459 --> 02:25:54,559
+Bulamadım, şöyle kalabilir ama neyse. Problemimiz bu arkadaşlar, tamam mı?
+
+682
+02:25:57,520 --> 02:26:04,459
+İki adet 16 bitik sayının toplamını hesaplayıp sonucu 32 bitik bir değişkende saklayan Exitip assembly programını yazınız.
+
+683
+02:26:05,180 --> 02:26:13,819
+Şimdi bu bir assembly programı olduğuna göre bunu üç bölgede tanımlayacağız. Birinci bölgemiz şu olacak, şöyle yapalım.
+
+684
+02:26:15,379 --> 02:26:40,180
+stack segment tanımı yapacağız. Bu stack segment tanımı içerisinde yer ayıracağız sadece. Bu ayırdığımız yerin çok küçük olmamasına, ilgilendiğimiz problemin dönüş, işte fonksiyon, parametraklarımı falan filan gibi durumlara göre ne kadarlık yer ihtiyacı olacağını birazcık detaylı hesaplayıp vereceğimiz bir durum. Burada herhangi bir alt yordam çağırma, recursive durum yok diyor. Dolayısıyla
+
+685
+02:26:40,559 --> 02:26:50,659
+Küçük, çok küçük olmasa da yeterli bir boyutu sağladığımız küçük bir değer bunun için yeterli olacak. İkinci kısımımız bir data tanımı olacak, data segment tanımı olacak.
+
+686
+02:26:51,040 --> 02:27:17,659
+Bu data segment tanım içerisinde neler yapmalıyız? Bakın iki tane sayımız varmış 16 bitlik. A sayısını tanımlayacağız ve B sayısını tanımlayacağız. Bir de sonuç diye bir değişken tanımlayacağız. A sayımız bizim define word tipinde tanımlayacağız. B sayısını define word tipinde. Bunu ise define double word olarak tanımlayacağız. Biraz sonra değerlerimize bakacağız. Bunun dışında başka bir tanımlama yapmamıza gerek yok. Son olarak bir de kod kesimi tanımlaması yapacağız.
+
+687
+02:27:19,603 --> 02:27:45,763
+Bir de kod segment tanımlaması yapacağız. Kod segment içerisinde öncelikli olarak işletim sistemine dönüş kısmını hallettiğimiz bir bölge olacak. Daha sonra data segmentin kullanımı için bir bölge tanımlayacağız. Daha sonra bizim ana kod kısmımız olacak. Bizim kod kısmımız olacak. Daha sonrasında
+
+688
+02:27:46,451 --> 02:28:00,331
+fonksiyonumuzu bitireceğiz. Bunların dışında da bir tane AND şeyi söylemedik ama. Şunu yazarken şöyle ifade etsek daha iyi olacak. Pardon.
+
+689
+02:28:01,371 --> 02:28:12,771
+Kod kısmımız içerisinde bir tane ana prosedürümüz olacak. Bir ana prosedür tanımlayacağız. Bu ana prosedür içerisinde işletim sistemine dönüşle ilgili bir kısım olacak.
+
+690
+02:28:13,652 --> 02:28:33,311
+DS tanımını içeren bir kısım olacak. Sonra bizim bu işlemleri yaptığımız işte kod bloğumuz olacak. Ondan sonra ana prosedürü kapatacağız. Daha sonra segmenti kapatacağız. En son olarak da
+
+691
+02:28:34,004 --> 02:28:45,304
+AND kelimesi, fonksiyonun giriş adresini, ana prosedürü, kodun giriş noktasını belirleyecek. Ona ana prosedür şeklinde yazacağız. Yani bu dört bölgeyi tanımlamaya çalışacağız.
+
+692
+02:28:47,244 --> 02:28:55,324
+Bu programda kullanıcından bir input almaya gerek yok. Inputlar kesmelerle alınabiliyor. Onları daha ilerleyen aşamalarda görebileceğiz.
+
+693
+02:28:56,364 --> 02:28:59,844
+Yani komut satırından input alabilmek için bir kesme çağırmamız lazım.
+
+694
+02:29:00,404 --> 02:29:26,423
+sistem DOS kesmelerinden çağırmamız lazım. Dolayısıyla onları ilerleyen aşamada göreceğiz. Bu aşamada data kesiminde tanımlı olan değişkenleri kullanıp onlar üzerinde işlem yapıp sonucu tekrar sonuç değişimini değişkene yazacağız. Şu aşamada bu şekilde tanımlanıyor. Bu tanımlamayı şöyle yan tarafa alalım. Gözümüzün önünde dursun. Bu da bizim ilgili kodu yazacağımız kısım.
+
+695
+02:29:28,051 --> 02:29:53,791
+Şimdi burada başlayalım stack tanımıyla. ST segment bizim stack segmentimiz olacak. Bir segment olduğunu belirteceğiz. Buna ilişkin olarak bir ne tanımlaması yapmamız lazım? Hizalama tipi tanımlamamız lazım. Byte tipinde bir hizalama tanımlayalım. Bunun stack segment olduğunu belirtmek adına stack sözde komutunu vermemiz gerekiyordu. Bir de sınıf label'ı vermemiz gerekiyor.
+
+696
+02:29:56,051 --> 02:29:58,211
+SG diyelim, aynı isim olmasın.
+
+697
+02:29:58,951 --> 02:30:01,831
+Stack, segment olacak şekilde bir de class ismi verelim.
+
+698
+02:30:02,371 --> 02:30:10,791
+Bunun bir de kapatılmasıyla ilgili olarak ST, SG, AND, S başlığıyla bunu tanımlamış oluyoruz.
+
+699
+02:30:10,871 --> 02:30:12,791
+Bunun içerisinde ne yapacakmışız?
+
+700
+02:30:12,851 --> 02:30:13,871
+Bakın yer ayıracağız.
+
+701
+02:30:14,451 --> 02:30:16,572
+Çok küçük olmayan belirli bir alan ayıralım.
+
+702
+02:30:16,572 --> 02:30:22,092
+Define word, 20 word'lık bir yer ayıralım ve
+
+703
+02:30:22,548 --> 02:30:26,128
+Bunun için de duplicate deyip soru işareti koymak yeterli.
+
+704
+02:30:26,567 --> 02:30:29,988
+20 tane word yani 40 byte'lık bir yer ayırdık.
+
+705
+02:30:30,988 --> 02:30:35,708
+Şimdi data segmente geçelim. Burada da DTSG ismini verelim buna.
+
+706
+02:30:36,244 --> 02:30:53,244
+Bunun da bir segment olduğunu belirtmemiz gerekiyor. Segment doğru yazdım. Hizalama tipi olarak word verelim buna. Bir de klas ismi verelim. DTSGM diyelim örneğin. Yine bu segmentin kapatılması için de DTSGM.
+
+707
+02:30:54,355 --> 02:31:06,756
+S ile bunu belirttik. Bunun içerisinde ne tanımlarımız var? Problemimize uygun olacak şekilde iki tane 16 bitlik sayı, bir de 32 bitlik sayı tanımlayacağız. İsimlerinde A say, B say, sonuç gibi değerler vermişiz.
+
+708
+02:31:06,756 --> 02:31:20,256
+A say, define word, bu değerimiz 0, F, 0, 0, 0, H olsun. B sayımız, yine define word.
+
+709
+02:31:20,915 --> 02:31:43,415
+0, E, 0, 0, 0, H olsun. Sonuç isimli değişkenimiz ise define double word, double word tipini de tanımlamalıyım ve 0 değeriyle initialize edeyim bunu da. Bu bizim data segment tanımımızı oluşturdu. Son olarak bir de kod segment tanımına başlayacağız. Kod segment tanımı için de
+
+710
+02:31:44,084 --> 02:32:08,884
+CD, SG ismini verelim buna. Segment olduğunu belirtiyorum. Bunu da para tipinde hizalayalım. Ve CD, SG, M, Class ismi verelim. Burada segmenti kapatmakla ilgili CD, SG, AND, S komutunu verdim. Sonra bir de son olarak şey veriyorduk hatırlayacak olursak.
+
+711
+02:32:09,396 --> 02:32:21,636
+AND kelimesi ve ana prosedür ismini ana olarak kullanacaktık. Ana isimli bir prosedür burada oluşturmamız gerekiyor bu aşamada. O zaman ana isimli bir prosedürü oluşturacağız ama öncesinde şeyi yazalım.
+
+712
+02:32:21,636 --> 02:32:34,396
+SUM, CS olarak CD, SG'yi kullanacağız. DS için DTSG'yi kullanacağız.
+
+713
+02:32:35,572 --> 02:32:45,652
+stack segment içinde ST, SG'yi kullanacağımızı belirtmemiz gerekiyor. Daha sonra şimdi prosedür tanımımızla başlayalım. Ana isimli bir prosedür oluşturdum.
+
+714
+02:32:46,472 --> 02:32:59,811
+PROC mutlaka FAR tipinde olmalıydı. Dolayısıyla bu prosedürü kapatırken de ana AND P ile kapattım. Prosedürümüz FAR tipinde olduğu için bunun dönüş değeri de mutlaka arkadaşlar
+
+715
+02:33:00,404 --> 02:33:06,443
+REDF ile olmalı. Onu da belirttim burada. Şimdi hangi kısımdayız?
+
+716
+02:33:08,943 --> 02:33:13,524
+İşletim sistemi dönüş kısmını ayarlamamız lazım. İşletim sistemine dönüşten kasıt neydi?
+
+717
+02:33:14,084 --> 02:33:17,384
+İşletim sistemi bizim programımızı derleyip hafızayı yüklediğinde
+
+718
+02:33:17,843 --> 02:33:26,984
+DS yazmacında kendisine dönüş segment değerini vererek bizim programımı çağırdı. Dolayısıyla DS'deki değeri yığına atacak. İlk yapacağım işten bu, PUSH DS.
+
+719
+02:33:27,644 --> 02:33:32,703
+Ve bize şunu diyordu aynı zamanda, sana DS üzerinden göndermiş olduğum segmentin sıfır offsetine dön.
+
+720
+02:33:33,164 --> 02:33:40,963
+Dolayısıyla dönüş segment değeri DS'de dönüş offset değeri de sıfır olacak. O zaman bir tane sıfır değeri oluşturuyorum.
+
+721
+02:33:40,963 --> 02:33:44,543
+Ve bunu yığına atıyorum, PUSH.
+
+722
+02:33:44,948 --> 02:33:46,548
+d pushAx
+
+723
+02:33:47,028 --> 02:33:51,007
+Bu neyi sağladı? Şurada işletim sistemine dönüş kısmını hallettik.
+
+724
+02:33:51,488 --> 02:34:05,207
+Data segment tanımı içinde şunu yapıyoruz. MOV, AX, burada kullanmak istediğimiz, data segment olarak kullanmak istediğimiz segmentin ismini verdikten sonra MOV, DS, AX diyoruz.
+
+725
+02:34:05,288 --> 02:34:10,587
+Bu aşamadan sonra artık burası, bu data segment kısmı kullanılabilir hale geliyor arkadaşlar.
+
+726
+02:34:10,587 --> 02:34:14,367
+Daha sonra kod bloğumuz. A sayısı, B sayısı.
+
+727
+02:34:15,028 --> 02:34:40,907
+16 bitlik toplam. 16 bitlik sayılar. Dolayısıyla bunları toplayabiliriz. 8086, 16 bitlik işlemleri destekliyor ama işlem sonucunu 32 bit olarak saklamayı, işlem sonucunu 32 bit olarak saklamayı bizim yapmamız lazım. Yani 32 bitlik değişkenin saklama işini bizim yapmamız lazım. Dolayısıyla bu iki değeri toplayacağız. A say ve B say ama hatırlayacak olursanız iki tane memori bölgesinden değeri toplayan bir assembly komutu yok.
+
+728
+02:34:41,459 --> 02:34:48,619
+Bu iki tane hafıza bölgesini toplamayı nasıl yapmalıyız sizce? Hatırlayacak olursanız, hatırlarsınız diye tahmin ediyorum. Nasıl yapmalıyız?
+
+729
+02:34:52,595 --> 02:34:55,515
+Hatırlıyor muyuz? Hatırlarsınız. Bir sürü yaptık bundan.
+
+730
+02:34:59,255 --> 02:35:04,975
+Load efektif adres yerine daha pratik gitsek diyerek yazma üzerinden yapsak olmaz mı?
+
+731
+02:35:05,735 --> 02:35:06,935
+Yani şunu demek istiyorum.
+
+732
+02:35:07,895 --> 02:35:13,175
+İşte MOV AX virgül, A say, A sayısını AX'e aldım.
+
+733
+02:35:13,315 --> 02:35:17,695
+Daha sonra AX'deki değeri B sayısı Memory bölgesiyle toplayayım.
+
+734
+02:35:19,476 --> 02:35:34,896
+AX, BX diyebilirim, değil mi? Bunu diyebiliriz. Şimdi toplam sonucunu ürettik. İlk sorduğum şey toplam sonucunu üretmekti. Bu elde ettiğimiz kısım, yani şu anda AX'de toplanan değer, 32 bitlik değerin düşük anlamlı kısmı.
+
+735
+02:35:35,188 --> 02:36:02,567
+Eldeki toplama işlemi sonucunda, data kısmına bakmaksızın, herhangi keyfi 2-16 bitlik sayı için düşünelim, elde oluşabilir veya oluşmayabilir. Elde oluşsa da, oluşmasa da, ikisini de aynı şekilde çözebilmek adına 13 bir şekilde çözeceğiz ama elde etmiş olduğumuz düşük anlamlı word kısmını sonuca yazmalıyız. Onu nasıl yapacağız? Onun için işte load effective address doğru cevap. Load effective address BX, sonuç dersem.
+
+736
+02:36:03,028 --> 02:36:26,347
+sonuç isimli değişkenin başlangıç adresini BX'e aldım. Dolayısıyla ben şunu diyebilirim artık. MOV, BX, AX. Bunu dediğim zaman ne olmasını bekliyorum? BX'de gösterilen adrese, yani sonuç isimli değişkene bir tane word değeri atıyorum şu anda. Bu atamış olduğum word değeri
+
+737
+02:36:26,804 --> 02:36:38,243
+A ile B sayıların toplamından elde ettiğim düşük anlamlı word değeri. Güzel. Elde varsa onu sonucun yüksek anlamlı kısmına nasıl yazacağım? Onu hatırlıyor muyuz?
+
+738
+02:36:42,195 --> 02:37:02,335
+Bu toplama işlemi sonucunda bir elde oluşmuşsa, bunu sonuç isimli değişkenin yüksek anlamlı wordüne yazmam lazım. Eğer elde yoksa da o yüksek anlamlı wordünü sıfır olarak tutmam lazım. Zaten initial değer olarak sıfır hiçbir şey yapmasam oluyor. Ama elde varsa orayı bir yapmam lazım. Nasıl yapabiliriz?
+
+739
+02:37:10,195 --> 02:37:24,595
+Her halükarda inkrement yapmayacağız ama. Elde varsa inkrement yapacağız. Madem öyle, ADC ile de yapabiliriz. Yani bunu yapabilmek için ADC, hangi adresi arttıracağız, ADVITCARE'i yapacağız?
+
+740
+02:37:27,695 --> 02:37:31,376
+Sonucun yüksek anlamlı Word. Yani BX'den itibaren ne kadar ötede?
+
+741
+02:37:36,020 --> 02:37:37,000
+artı iki
+
+742
+02:37:37,000 --> 02:37:39,560
+virgül
+
+743
+02:37:39,560 --> 02:37:40,979
+sıfır.
+
+744
+02:37:41,659 --> 02:37:42,920
+Şimdi bu şekliyle
+
+745
+02:37:42,920 --> 02:37:46,600
+hata verecek ama şimdilik şöyle bu kalsın. Birinci yol bu.
+
+746
+02:37:48,060 --> 02:37:50,440
+Bunu şöyle komentleyeceğim şimdi.
+
+747
+02:37:51,540 --> 02:37:52,200
+Bu da koment.
+
+748
+02:37:52,691 --> 02:37:53,691
+Bu şekildeydi.
+
+749
+02:37:54,351 --> 02:37:57,551
+Burada az önce önerdiğimiz şekilde inkrement ile yapalım.
+
+750
+02:37:57,671 --> 02:38:00,131
+İnkrement ile yapabilmek için carry'e bakalım.
+
+751
+02:38:00,351 --> 02:38:02,291
+Carry'deki değer bir ise inkrement yapalım.
+
+752
+02:38:02,391 --> 02:38:03,711
+Yoksa inkrement yapmayalım.
+
+753
+02:38:04,871 --> 02:38:05,731
+Onu nasıl kuracağız?
+
+754
+02:38:07,671 --> 02:38:09,331
+Şu anda bu noktalı virgül koment oldu.
+
+755
+02:38:09,412 --> 02:38:10,231
+Bu satır koment oldu.
+
+756
+02:38:10,311 --> 02:38:11,451
+İkisini de deneyelim istiyorum.
+
+757
+02:38:14,291 --> 02:38:17,131
+Az önce ilk öneri inkrement şeklinde gelmişti.
+
+758
+02:38:17,131 --> 02:38:18,931
+O inkrementi yapmak için.
+
+759
+02:38:19,247 --> 02:38:23,567
+Carry varsa, increment yapacağız, sonucun yüksek anlamlı byte'ını.
+
+760
+02:38:25,627 --> 02:38:27,788
+Evet, jump carry güzel bir cevap.
+
+761
+02:38:28,927 --> 02:38:35,967
+Jump carry, ama şu anda ne oldu bakın, koşullu dallanmalardan hatırlayacağınız bir durum olması lazım.
+
+762
+02:38:36,927 --> 02:38:38,407
+Ne diyoruz biz şimdi burada?
+
+763
+02:38:40,407 --> 02:38:42,847
+Carry eşit bir mi?
+
+764
+02:38:45,332 --> 02:38:50,092
+True ise increment, false ise bir şey yapmayacağım.
+
+765
+02:38:51,172 --> 02:38:51,412
+Değil mi?
+
+766
+02:38:54,752 --> 02:38:57,352
+Dolayısıyla ne yapıyorduk koşulu dallanmalarda?
+
+767
+02:38:57,492 --> 02:39:04,452
+Eğer ki boş kol üzerinden koşulu yazarsam, tek bir tane dallanma komutu yeterli oluyordu.
+
+768
+02:39:04,551 --> 02:39:09,231
+Ama True kol üzerinden yazarsam, iki tane dallanma komutu yazmam gerekiyordu.
+
+769
+02:39:09,312 --> 02:39:11,272
+Hatırladık mı onu? Onu burada uygulayalım şimdi.
+
+770
+02:39:12,852 --> 02:39:13,812
+bunu uygulayalım.
+
+771
+02:39:18,932 --> 02:39:24,051
+Jump-Cary ile yaparsak iki tane dallanma komutuna ihtiyacımız oluyordu. Hatırladık mı?
+
+772
+02:39:28,340 --> 02:39:29,619
+Ne yapacağız şimdi?
+
+773
+02:39:30,639 --> 02:39:32,940
+İlla JMP care ile diyorsanız onu da yapalım.
+
+774
+02:39:37,268 --> 02:39:38,547
+Evet, nasıl yapalım şimdi?
+
+775
+02:39:41,488 --> 02:39:42,387
+Var mı cevabımız?
+
+776
+02:39:44,628 --> 02:39:48,188
+Peki, Jump Not Carry, L1 etiketi diyorum.
+
+777
+02:39:48,968 --> 02:39:59,876
+L1 etiketinde ne olacak?
+
+778
+02:40:02,236 --> 02:40:07,476
+Bakın, Jump Not Carry olayın false callu. False callunda hiçbir şey yapmadan return edeceğim.
+
+779
+02:40:08,136 --> 02:40:11,495
+Dolayısıyla L1 etiketinden sonra Red F'nin gelmesinde sıkıntı yok.
+
+780
+02:40:12,515 --> 02:40:19,136
+Ama True callu, yani şu satır, bakın, bu satır, bunun True callu. True callunda increment yapacağız.
+
+781
+02:40:19,855 --> 02:40:22,515
+İnkrement, nereyi arttırıyorum?
+
+782
+02:40:23,123 --> 02:40:38,863
+BX adresinden itibaren hangi alanı arttıracağım? Kaç adres öteyi arttırmalıyım? Yine aynı cevap, artı 2. Değil mi? Ama bunu da yine aynı şekilde hata verecek. Dolayısıyla güzel oldu.
+
+783
+02:40:50,131 --> 02:40:54,092
+kaydedelim. Sonra bunu derlemeye çalışalım.
+
+784
+02:40:58,739 --> 02:41:04,919
+Şimdi bendeki kodlar da CDMASM içerisindeydi. Ben bunun içerisinde
+
+785
+02:41:04,919 --> 02:41:09,340
+burada yer alan
+
+786
+02:41:09,340 --> 02:41:12,619
+MASM.exe'yi
+
+787
+02:41:12,619 --> 02:41:18,180
+2021 ne geliyor? 1 gelmiş. 2.
+
+788
+02:41:18,559 --> 02:41:22,319
+ASM'yi değerlemek için kullanacağım. Obje dosyası oluşsun.
+
+789
+02:41:23,099 --> 02:41:25,319
+List de oluşsa iyi olurdu ya.
+
+790
+02:41:26,611 --> 02:41:37,211
+Tekrar derli. Zaten bir kere, önce şey oldu zaten. Bakın bir tane hata veriyor. Hatamız nerede? 29. satırda. Yani şununla ilgili bir hata verdi. Hatanın ne olduğunu söyleyebilir misiniz?
+
+791
+02:41:53,556 --> 02:41:55,836
+int komutuna adres verebiliyorduk.
+
+792
+02:41:56,596 --> 02:41:58,036
+ADC'yi kullanmadık.
+
+793
+02:41:58,376 --> 02:42:01,515
+ADD kullansak da aynı bir problem olacaktı.
+
+794
+02:42:02,836 --> 02:42:04,416
+Problemle göremedik mi daha?
+
+795
+02:42:05,195 --> 02:42:06,936
+Bakıyorum tekrar cevap verdik mi acaba?
+
+796
+02:42:09,136 --> 02:42:10,956
+Şu satırla ilgili problem vermiş.
+
+797
+02:42:12,416 --> 02:42:13,736
+WordPtr mi yazmamız lazım?
+
+798
+02:42:14,116 --> 02:42:14,456
+Efendim?
+
+799
+02:42:15,096 --> 02:42:16,416
+WordPtr mi yazmamız lazım?
+
+800
+02:42:16,436 --> 02:42:18,176
+Evet, WordPtr yazmamız lazım.
+
+801
+02:42:18,176 --> 02:42:21,116
+Şimdi İPEG'in önerdiği cevap şuydu.
+
+802
+02:42:21,587 --> 02:42:23,187
+Bunu şöyle yapalım demişti.
+
+803
+02:42:23,327 --> 02:42:27,448
+ADD, BX artı yazamamışım.
+
+804
+02:42:28,187 --> 02:42:32,687
+BX artı 2, virgül 1 diyelim demiştin değil mi?
+
+805
+02:42:33,347 --> 02:42:35,027
+Ama bunda da aynı hatayı verecekti.
+
+806
+02:42:35,087 --> 02:42:37,948
+Çünkü burada da bir adres ile immediate değer toplamı var.
+
+807
+02:42:38,047 --> 02:42:42,587
+Burası da bir adres bölgesinin arttırımı ama işlem tipi belli değil.
+
+808
+02:42:42,707 --> 02:42:45,948
+Dolayısıyla bu ADD komutunda da mutlaka WordPtr gerekecek.
+
+809
+02:42:46,108 --> 02:42:47,547
+Şimdi bunu bu şekilde kaydettik.
+
+810
+02:42:47,891 --> 02:42:49,592
+Tekrar derlemeyi deneyelim.
+
+811
+02:42:52,371 --> 02:42:57,691
+2021.11.11.2.obj oluşsun.
+
+812
+02:42:58,592 --> 02:43:00,132
+Şu anda derlemiş olduk.
+
+813
+02:43:00,172 --> 02:43:01,632
+Şimdi linkleme işlemine geçelim.
+
+814
+02:43:01,772 --> 02:43:05,891
+Yine C altında bendeki yapı itibariyle link egzenin...
+
+815
+02:43:06,511 --> 02:43:07,612
+Ne oldu? Niye gitti ya?
+
+816
+02:43:11,763 --> 02:43:39,343
+2021.2.objesini linkliyorum. Map dosyası da oluşsun. 2021.11.11.2.map dosyası. Şimdi derlememizi sağladık. Programımız çalışır hale geldi. Şimdi çalıştıralım. Ne oluyor bakalım? 2021.2.exe çalıştırdım.
+
+817
+02:43:39,860 --> 02:44:07,299
+hata vermeden çalıştı mı? Ne yaptı? Bilmiyoruz şu anda. Çünkü herhangi bir komut satırından okuma veya komut satırından yazma işlemi yoktu. Şimdi öncelikli olarak şeylere bakalım arkadaşlar. Oluşturduğumuz dosya uzantılarına bakalım. Birincisi, LST uzantılı dosya. Nereye gitmiş o? LST üretmedik mi biz ya? İsmini yanlış mı verdim yoksa? Hadi ya, LST yerine obje yazmışız arkadaşlar ya bir daha.
+
+818
+02:44:10,036 --> 02:44:14,376
+2021.11.11.2.LST
+
+819
+02:44:14,376 --> 02:44:17,435
+Ondan sonra,
+
+820
+02:44:18,335 --> 02:44:19,536
+bunu linkliyoruz,
+
+821
+02:44:19,756 --> 02:44:24,056
+exe-lemiş oluyor, 2021.11.11.2.MAP
+
+822
+02:44:24,056 --> 02:44:25,736
+Bu da oluştu, tamam.
+
+823
+02:44:27,076 --> 02:44:28,536
+Şimdi düzelttik,
+
+824
+02:44:28,835 --> 02:44:33,195
+modified'a göre dizelim, şimdi LST uzantılı dosyamızı açıp bir bakalım.
+
+825
+02:44:36,595 --> 02:44:58,795
+Şimdi burada bunu inceleyecek olursak arkadaşlar bakın şurada data segment tanımımız var. Toplam 20 tane Word'den oluşan bir yapı vardı. Yani toplamda 40 byte'lık bir alan ayırmıştık. Bu segment 0 offsetinden itibaren başlayıp 28H offsetine kadar gitmiş. Yani 28'in bu hexadesimal değer bunun decimal karşılığına 40. Dolayısıyla 40 byte'lık bir alan olduğunu buradan görüyoruz.
+
+826
+02:45:04,595 --> 02:45:17,595
+yazan bir kod. Tamam mı? Yani gidiyor bu adrese, bu değer yazıyor. Bu adrese, bu değer yazıyor. Offset'e, daha doğrusu. Bu offset'e bu değer yazıyor. Yaptığı işlem sadece bu. Ama kod karşılıklarını burada görebilirsiniz.
+
+827
+02:45:18,195 --> 02:45:39,236
+kod segmente geldiğimizde dikkat edecek olursanız segment tanımının bir makine kodu karşılığı yok, adresi arttırmamış. Ama şunlar ayırdığımız alan adreslerini arttırmış. Data segment tanımı adresi arttırmamış, makine kodu karşılığı yok ama şu tanımlamalar adresi arttırmış. Makine kodu karşılığı yok ama yer kaplıyor, öyle diyelim.
+
+828
+02:45:40,595 --> 02:45:53,315
+prosedüre geldiğimiz zaman, işte push komutunun karşılığı, 1E, 1 byte'lık instruction, xoraxax, 2 byte'lık bir instruction, pushax, 1 byte'lık instruction.
+
+829
+02:45:53,315 --> 02:46:07,795
+Ama bakın şurada değişik bir şey var. MOV ax, data sg diyor. MOV komutu, B8 ile işaret edilmiş. DTSG, program hafızaya yüklenmediği sürece belli değil.
+
+830
+02:46:08,564 --> 02:46:25,603
+Dolayısıyla onu bilmiyoruz. Şu aşamada o karşılığı bilmiyoruz. Bu LST uzantılı dosyada bunu bilmiyoruz daha. Ve RELATIV olarak var. Yani bu segment nereye yüklenirse ona ilişkin olarak RELATIV olarak bilinmeyen bir değer var burada. Onu ifade ediyor.
+
+831
+02:46:26,743 --> 02:46:32,083
+Şuraya bakalım. Load efektif adres BX sonuç. Bunun makine kodu karşılığı şu.
+
+832
+02:46:32,819 --> 02:46:42,760
+Ama bu da bir relatif işlemmiş. Niye relatif işlem? Çünkü sonuç isimli değişken bulunduğu data segmentten itibaren dördüncü offsette yer alıyor.
+
+833
+02:46:44,180 --> 02:46:52,079
+Dolayısıyla kendi bulunduğu segmente göre göreli olarak olduğu için bu relatif bir işlem olduğu bu işlem anlaşılıyor.
+
+834
+02:46:52,340 --> 02:46:58,020
+Yani hangi adrese yüklenirse ona göre farklılaşabilir. Ama baştan bu değer belli.
+
+835
+02:46:58,484 --> 02:47:03,123
+Yüklendiği adrese göre değişir. Daha yüklenmeden bu değer belli değil gibi.
+
+836
+02:47:04,703 --> 02:47:09,703
+Comment dediğimiz satırın bir makine kodu karşılığı yok ve işlemlerimizi burada gördük.
+
+837
+02:47:11,384 --> 02:47:14,304
+Şimdi map'i açalım. Map'te ne çıkıyormuş onu da görelim.
+
+838
+02:47:14,304 --> 02:47:25,304
+Map uzantılı dosyada ise arkadaşlar, her bir segmente ilişkin olarak segment ismi, klas ismi, her bir segmentin hexadecimal olarak boyutu,
+
+839
+02:47:26,067 --> 02:47:34,547
+görece olarak başlangıç ve bitiş adresleri var. Bunları görebiliyoruz. Programın nereden başladığı da belli.
+
+840
+02:47:37,967 --> 02:47:45,227
+Şundan oluşturduğumuz adres ne? Aslında şunun, şu segmentin sıfır adresi. Öyle düşünebiliriz.
+
+841
+02:47:45,887 --> 02:47:51,547
+Veyahut da bu 20 bitlik adresi, işte segment ve offset değeri olarak ikiye ayırırsak.
+
+842
+02:47:52,819 --> 02:47:58,560
+bu şekilde bir sonuç elde ediyoruz. Yani burada segmentlere ilişkin bilgi var. Bu ne zaman anlamlı olacak?
+
+843
+02:47:58,720 --> 02:48:08,560
+Segment birleştirme yaptığımız zaman, birden fazla segment, kod segment, data segment içeren programlarla uğraştığımız zaman burası daha anlamlı olacak.
+
+844
+02:48:08,700 --> 02:48:16,819
+Her bir segmentin kapladığı alanı falan görebiliyor olacağız. Burada bir küçük değişiklik yapalım. Şöyle bir değişiklik yapacağım kodda.
+
+845
+02:48:23,603 --> 02:48:25,443
+Burada küçük bir değişiklik yapalım.
+
+846
+02:48:29,172 --> 02:48:54,992
+Gerçi tamam, para olarak yazmışız. Okey o zaman. Bu kaç? 2 byte, 2 byte, 4 byte, 8 byte'lı bir yer. Tamam, güzel. Güzel bir çift elde etmişiz. Şimdi şunu kapattım. Şimdi bu kodu debug yapalım arkadaşlar. Bu kodu debug yapalım. Ben de yine C'nin altında, niye yazamadım, C'nin altında, 1000'in altında debug komutunu çalıştıracağım.
+
+847
+02:48:55,476 --> 02:49:00,816
+ve bunun içinde 2021.11.11.2.exe'yi
+
+848
+02:49:00,816 --> 02:49:04,396
+niye çalışmadı bu?
+
+849
+02:49:11,603 --> 02:49:16,664
+kısaltması varmış. Şu şekilde aldım. Şimdi registerlara baktım. Kodumuzu da şöyle yanda açalım.
+
+850
+02:49:27,092 --> 02:49:28,332
+Dabur, da durst u.
+
+851
+02:49:31,667 --> 02:49:41,768
+Adım adım bunun nasıl çalıştığına sonucuna bir bakmaya çalışalım. Ama önce şu ilk işlemleri bitirelim, şu işlemleri geçelim, ondan sonra bakalım.
+
+852
+02:49:41,927 --> 02:49:51,507
+Tamam mı? Dolayısıyla adım adım trace ediyorum. Şu andan itibaren artık kodumun data segmenti, stack segmenti hepsini kullanabilir haldeyim.
+
+853
+02:49:52,067 --> 02:49:58,448
+Öncelikli olarak dump edip, bir dump işlemi yapıp data segmentin sıfırından itibaren bir inceleyelim. Neler var görelim.
+
+854
+02:49:58,899 --> 02:50:02,200
+Şimdi burada ilk gördüğümüz değer
+
+855
+02:50:02,200 --> 02:50:06,920
+Data segmenti alamadık mı? Niye böyle bir garip bir şey çıktı?
+
+856
+02:50:16,051 --> 02:50:19,072
+DSM'iz nerede? Değeriyle güncellendi.
+
+857
+02:50:27,219 --> 02:50:29,219
+Yanlış yere mi bakıyorum?
+
+858
+02:50:38,644 --> 02:50:47,283
+Bizim aslında verdiğimiz değerler neredir? Şuradan itibaren yerleşik durumda bizim verdiğimiz değerler. Şurada var. Bu baştakiler nedir?
+
+859
+02:51:01,556 --> 02:51:03,515
+stack kısmıyla mı karıştı acaba ya?
+
+860
+02:51:04,556 --> 02:51:07,436
+Bir karışık durum var, tam da anlayamadım.
+
+861
+02:51:09,316 --> 02:51:10,716
+Şurada CS başlıyor.
+
+862
+02:51:17,012 --> 02:51:25,612
+Şöyle şimdi, aslında yani bizim data segmentimiz burası ya, baştan itibaren biz baktığımız zaman buna ilk değer olarak şunu görmeliydik değil mi?
+
+863
+02:51:26,752 --> 02:51:30,072
+Data segmentin başından itibaren. Tekrar bir şeye bakalım.
+
+864
+02:51:34,260 --> 02:51:58,120
+kod segmenti bir bakalım, dump edip kod segmentin sıfırından itibaren bakalım. Tamam, burada doğru yeri görüyoruz. Çünkü ilk komutumuz 1E ile başlıyordu. Şu 3, 3, C0, şu 50, tamam. Şu da B8 ile başlayan komuta karşılık geliyor, okey. Ama data segmenti dump ettiğimizde farklı bir şey gördük. Ben mi gözden kaçırdığım bir şey var? Tekrar yoruma bakayım.
+
+865
+02:52:03,700 --> 02:52:08,240
+076C
+
+866
+02:52:08,240 --> 02:52:10,580
+bir daha deneyim, dump
+
+867
+02:52:10,580 --> 02:52:13,400
+dump
+
+868
+02:52:13,400 --> 02:52:17,220
+076C'nin
+
+869
+02:52:17,220 --> 02:52:20,299
+0 offsetine bakıyorum.
+
+870
+02:52:21,100 --> 02:52:22,840
+0 offsetinde farklı değer var.
+
+871
+02:52:23,700 --> 02:52:32,740
+Bunun sebebi sanırım şey, bir önceki segmenti byte tipinde tanımladığımız için bu yığın tarafında kalan şeyleri de aslında burada gösteriyor.
+
+872
+02:52:33,280 --> 02:52:41,340
+Demek ki bizim yığın segmentimiz tam olarak istediğimiz yerden başlamamış gibi bir durum olabilir. Onu bir kontrol edelim.
+
+873
+02:52:43,260 --> 02:52:45,000
+Aslında şuradan başlaması lazım.
+
+874
+02:52:46,819 --> 02:52:49,400
+Bunun offset'i de ne yapmış oluyor? D mi olmuş oluyor?
+
+875
+02:52:56,020 --> 02:53:06,740
+Şununla ilgili bir hatamız mı var acaba? DTSG, tamam. İsim aynı değil mi? Aynı. DSG için bunu kullandık.
+
+876
+02:53:13,587 --> 02:53:15,128
+bir şeyle ilgili bir hatım var.
+
+877
+02:53:15,147 --> 02:53:19,047
+Hocam emin değilim ya, daha da SGM emin olarak yazmışız ya.
+
+878
+02:53:19,448 --> 02:53:20,367
+Nerede yazmışım?
+
+879
+02:53:21,187 --> 02:53:23,968
+Beşiklik satırsa şimdi, evet, o şekil mi yazmamız lazım acaba?
+
+880
+02:53:24,307 --> 02:53:27,427
+Yok, şuradaki ismi vermemiz lazım, şu isim.
+
+881
+02:53:29,567 --> 02:53:33,448
+Onunla ilgili tamam herhalde ama, başka ne olabilir?
+
+882
+02:53:34,407 --> 02:53:36,587
+Yani şey giriyor, şu arada, şu değerli...
+
+883
+02:53:37,216 --> 02:53:41,536
+Aslında işletim sistemine dönüş değerleriyle alakalı değerler.
+
+884
+02:53:42,916 --> 02:53:45,076
+Tamam mı? Onlar karışmış şu aşamada ama.
+
+885
+02:53:48,531 --> 02:54:15,147
+şeye bir bakalım, dump edip stack segmentin 24'ünden itibaren, yok 24 değilse, evet 24'ünden itibaren bakalım. Tamam, şunlar doğru. Bakın, yığının en altında şey değerimiz var. İşletim sistemine dönüş değerimiz, yani DS ilk olarak bu değerle başlamıştı. Daha sonra sıfır değerini de attık. Bunda sıkıntı yok. Ama data segment nereden başlıyor? Data segmentimizin
+
+886
+02:54:15,476 --> 02:54:31,376
+Şurada bir bilgi var. Acaba bundan ilgili mi? Çünkü şöyle birazcık büyütelim. Hizalamalardan dolayı bir farklılık oluşturduk herhalde. Şöyle deneyelim. Dump diyelim. Data segmentin C'si diyelim. Yok o değil.
+
+887
+02:54:40,084 --> 02:54:42,644
+veriyi gösteriyormuş.
+
+888
+02:54:48,435 --> 02:54:53,115
+Şu anda göremedim ama şöyle yapalım. Bunu para olarak değiştiriyorum. Tamam mı?
+
+889
+02:54:54,695 --> 02:54:56,476
+Bunu da para olarak değiştirdim.
+
+890
+02:54:59,195 --> 02:55:00,476
+Tekrar bir derleyeceğim.
+
+891
+02:55:17,523 --> 02:55:31,404
+güzel. Yani hizalamayla alakalı bir şey. Tam olarak data segmentin yeri farklılaştı sanırım o işlemi yaptığımızdan dolayı, hizalamadan dolayı. Onun offsetini tam belirleyemedim sanırım yani veya yanlış belirledim.
+
+892
+02:55:31,827 --> 02:55:37,647
+şu anda para olması durumunda, tam başlangıç adresi şuradan itibaren başladığı için net bir şekilde görüyoruz.
+
+893
+02:55:37,708 --> 02:55:43,567
+Demek ki orada offset değeri veya segment değeri farklı verilmiş olabilir veya burada farklı gösterilmiş olabilir.
+
+894
+02:55:43,708 --> 02:55:47,948
+Tekrar ona dönüp bilahare inceleriz ama şu anda bunun üzerinden gidelim.
+
+895
+02:55:48,147 --> 02:55:50,628
+Şimdi data segment üzerinde bizim değerlerimiz mevcut.
+
+896
+02:55:50,628 --> 02:55:53,788
+0, F0, 00, birinci al sayımız.
+
+897
+02:55:54,327 --> 02:55:59,468
+E0, 00, Lidl Ending formatında olduğu için şu word'u E0, 00 diye okuyorum.
+
+898
+02:55:59,827 --> 02:56:23,548
+B sayısı ve daha sonra sonuç isimli değişkenimiz. O da 1, 2, 3, 4 tane sıfırdan oluşan 32 bitlik değerimiz. Daha sonra şuraya kadar olan sayılar çöp değerler. Çünkü bir sonraki segment para ile hizalı. Yani bir sonraki 16'nın tam katından. Yani sonu sıfır olan adresten itibaren başlayacak. Dolayısıyla şuradaki kısım çöp.
+
+899
+02:56:24,788 --> 02:56:26,808
+Şu anda nerede kaldığımızı tekrar hatırlayalım.
+
+900
+02:56:26,888 --> 02:56:28,528
+Load effective adres BX.
+
+901
+02:56:29,139 --> 02:56:56,979
+0, 4 demiş. Bu komut çalıştırıldığında arkadaşlar, BX'e 4 değeri atacak. Yani bunun offset değeri 4 oldu. AX'e ilk değerimiz olan, yani F00'ı ataması lazım. Trace ettik. F000 atandı. Şimdi AX'e iki adresindeki değeri toplayacağız. Yani F ile E'yi toplayacağız. 15, 14 toplamı ne yapacak? 29 yapacak. 16 çıkarttığımızda geriye.
+
+902
+02:56:57,139 --> 02:57:14,719
+4, 9, 13 kalacak. D, 0, 0, 0 şeklinde bir değer oluşacak ve bir tane de elde oluşacak. Ona bir bakalım şimdi. Bir daha trace ettim. A, x'de D, 0, 0, 0 oluştuk. Buradaki flaglere bakalım. Flaglerde no overflow.
+
+903
+02:57:15,283 --> 02:57:35,043
+UP, direction flag 1 değerinde, enable interrupt, IF bayrağı 1'e set edilmiş, işlem sonucu negatif, NO 0, işlem sonucu da 0 flag 0 eşit, auxiliary flag değeri 0 eşit, parity even ve bir carry bayrağı var. Bakın daha önce NO carry idi, şimdi carry'e dönüşmüş. Şu anda elde var.
+
+904
+02:57:35,443 --> 02:57:59,104
+Bu eldeki değeri BX'e atıyoruz. BX'in gösterdiği adrese atıyoruz. Şu atma işlemini yaptıktan sonra bu koşulu dallanmadan hemen önce dump edip data segmentin sıfırına tekrar bakalım. Bakın ne oldu? Şu bizim A sayımızdı, B sayımızdı. Şu bizim sonuç değişkenimizin düşük anlamlı wordü. D0, 0, 0. Onu yazmış ama daha yüksek anlamlı wordüne bir değer yazmamış.
+
+905
+02:58:00,180 --> 02:58:23,780
+Sıradaki komutumuz, jump not carry komutu. Sıradaki komutumuz, şuradaki jump not carry komutu. Onu çalıştıralım. Trace ettik. Nereye gitti? Doğrudan inkrement satırına gitti. Dolayısıyla elde vardı, inkrement satırına gitti. Bu inkrement satırındaki işlemi yapacak şimdi. Buradaki işlemimiz ise,
+
+906
+02:58:26,291 --> 02:58:50,491
+sonucun yüksek anlamlı word'unu bir arttırmak. Tekrar trace ettim, bir adım daha çalıştırdım. Şimdi bu durumda tekrar dump edip data segmentin sıfırına baktığımda A sayısı, B sayısı bizim 32 bitlik değerimiz. Bunu nasıl okuyacağız? 00, 01, D0, 00. Yani elde ettiğimiz sonuç değer şu oldu arkadaşlar.
+
+907
+02:58:52,659 --> 02:59:18,479
+F0, 0, 0 ile E0, 0, 0'ı topladık. 0, 0, 0, 29, D kalır. Bir tane de elde geldi, 1. Elde ettiğimiz değer şu, 1, D, 0, 0, 0 sayısı. Bunu data segmentte şu şekilde görmüş oluyoruz. Bundan sonraki haftada yapacağımız örneklerde de benzer şekilde
+
+908
+02:59:19,028 --> 02:59:30,308
+hem data segmente bakacağız, hem ileriki örneklerde stack segmenti inceliyor olacağız. Bu aşamada dönüş yapmadan önce bir de şeye bakalım, stack segmentin 0 offsetine bakalım.
+
+909
+02:59:30,995 --> 02:59:48,495
+Burada da, pardon, 0 offset'i değil, hangi offset'ine bakmamız lazım, 24 offset'ine bakacağız. Dump edip, stack segmentin 24 offset'ine bakacağım. Bakın, yığının en üstünde geri dönüş değeri offset ve segment değerleri var. Dolayısıyla, sıradaki komutu çalıştırdığımda,
+
+910
+02:59:49,332 --> 03:00:00,711
+Program işletim sistemine dönmüş oldu. İşletim sisteminde de artık ilgili bir hangi komut çalıştıracaksa ilgili komutumuz var. Şu anda artık biz işletim sistemine geri dönmüş olduk.
+
+911
+03:00:01,139 --> 03:00:24,260
+Bu şekilde yazmış olduğumuz kodları DEBAC yapıyor olacağız arkadaşlar. Şimdi iki hafta sonra vizemiz var. Vizeden sonra bir ödevimiz olacak. Exit TV programlarla ilgili benzer şekilde DEBAC üzerinden bunları analiz etmeye falan içeren bir ödevimiz olacak. Bir de son haftaya doğru ikinci ödevimiz olacak. Onların tarihlerini de söylemiş olayım. Aşağı yukarı.
+
+912
+03:00:24,979 --> 03:00:33,239
+Dolayısıyla egzotipi bir programı oluşturmak, değerlemek, çalıştırmak, debug etmek için izleyeceğimiz adımlar bunlar da arkadaşlar.
+
+913
+03:00:33,479 --> 03:00:38,279
+Bunlarla ilgili sormak isteyeceğiniz bir şeyler var mı? Yoksa dersi bitirebiliriz.
+
+914
+03:00:39,659 --> 03:00:46,340
+Vize 8. hafta. Şu anda 6. hafta. Önümüzdeki hafta, 7. hafta. Bir sonraki hafta vizeler olacak.
+
+915
+03:00:46,959 --> 03:00:52,519
+Duyuru gelmiş, vizeler 1 saat olacak. Tamam mı? Vizeler 1 saat olacak. Her bir sınav 1 saat olacak.
+
+916
+03:00:53,299 --> 03:00:55,860
+Ona göre siz de kendiniz hazırlarsınız.
+
+917
+03:01:00,948 --> 03:01:02,167
+Test mi olacak hocam?
+
+918
+03:01:03,087 --> 03:01:04,268
+Yani artık bakacağız.
+
+919
+03:01:04,847 --> 03:01:07,448
+Soru sayısı 2'den 60'a kadar değişebilir.
+
+920
+03:01:07,648 --> 03:01:08,507
+Daha konuşmadık.
+
+921
+03:01:09,628 --> 03:01:11,347
+Furkan hocanızla konuşup belirleyeceğiz.
+
+922
+03:01:15,412 --> 03:01:16,292
+Var mı başka sorumuz?
+
+923
+03:01:18,252 --> 03:01:23,792
+Tamam, başka soru yoksa ben de teşekkür ediyorum arkadaşlar. Haftaya görüşmek üzere. Herkese iyi akşamlar.
+
+924
+03:01:24,572 --> 03:01:25,392
+İyi akşamlar hocam.
+
+925
+03:01:26,472 --> 03:01:27,472
+İyi akşamlar.

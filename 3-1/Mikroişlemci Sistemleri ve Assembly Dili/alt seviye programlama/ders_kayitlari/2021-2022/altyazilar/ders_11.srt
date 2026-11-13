@@ -1,0 +1,1519 @@
+1
+00:07:40,947 --> 00:07:59,927
+Evet, cümleten iyi akşamlar kıymetli arkadaşlar. Bugün Assembli Alt Seviye Programlama dersinin online grubunu ben devralıyorum. Vizeye kadar malum Erkan Hoca grubu anlatmıştı. Vizeden sonra da benimle beraber yürütüyor olacaksınız.
+
+2
+00:08:00,564 --> 00:08:11,463
+Yani dersi alan öğrenci sayısı 60 falan herhalde, şey 90 falan herhalde ama burada 5 tane arkadaşsınız. Bu da enteresan, tabii üzücü.
+
+3
+00:08:12,584 --> 00:08:26,704
+Şimdi geçtiğimiz hafta vize gerçekleştirdik. Vizede bazı öğrenci arkadaşlar hani şey olarak sürenin yetersiz olduğunu, bazılarıysa hani iyi yaptık, güzel puan bekliyoruz diyenler oldu.
+
+4
+00:08:27,204 --> 00:08:28,504
+Süre konusunda.
+
+5
+00:08:28,564 --> 00:08:44,543
+şeylere, finalde belki bunu göz önünde bulundurarak ilerleyeceğiz. Notların ne şekilde dağılım göstereceğine bakarak. Henüz tam olarak okumadık, bitmedi. O yüzden ilan etmedik. Muhtemelen önümüzdeki hafta ders saatine kadar belli olmuş ve iyi.
+
+6
+00:08:50,067 --> 00:08:53,268
+Arkadaşların Üze ile ilgili sormak istediği bir şeyler var mı?
+
+7
+00:09:07,220 --> 00:09:13,100
+internet bağlantımı unstable dediği de yok olarak algılıyorum. Süper. O zaman konumuza devam edelim.
+
+8
+00:09:13,200 --> 00:09:24,539
+Vizeden önce egzotipi program örnekleri yapıp onlar üzerinde durmuştuk. Bu hafta ise comtipi programları anlatıyor olacağız kıymetli arkadaşlar.
+
+9
+00:09:24,779 --> 00:09:33,560
+Comtipi programın iki tane sintaksı var. Bunlarla başlayacağız. Şöyle bir ekran paylaşımı yaparak başlıyor olayı.
+
+10
+00:09:35,059 --> 00:09:36,059
+Şuradan.
+
+11
+00:09:39,251 --> 00:10:02,251
+Evet, şimdi şunları da küçülteyim. Bu arada istediğiniz zaman sözel olarak, sesli olarak soru sorabilirsiniz. Önümde iyi tabletten ben yazıyor olacağım. Fakat hani mesajları o arada chatten gelen sorulara bakamayabiliyoruz. O yüzden lütfen ses olarak, sesli olarak soru sorabilir miyim diyerek bölüp soru sorabilirsiniz.
+
+12
+00:10:07,316 --> 00:10:32,235
+egze tipi programımızda, şurayı bir seçelim, egze tipi programımızda temelde 3 tane hatırlarsınız bunu, segment vardı. Birisi stack segment, şöyle egze olduğunu bunun özellikle belirtiyor olalım. Birisi code segment, birisi de data segment. Gerekirse ekstra segment de.
+
+13
+00:10:32,916 --> 00:10:43,296
+bu data segmentimizi geliştirebiliyordu. Bunların her birisi maksimum 64K'lık bir blok halinde oluşturulabiliyordu.
+
+14
+00:10:44,136 --> 00:10:53,916
+Exe tipi programda sizin ihtiyaçlarınızı karşılayacak işte veri boyutunuz 64K'lık bir alan tanımlayabiliyorsunuz.
+
+15
+00:10:53,916 --> 00:11:00,916
+Stick'te kullanacaksanız veya kodunuz büyükse böyle. Fakat bir de kompakt tipte bizim...
+
+16
+00:11:00,916 --> 00:11:08,016
+com dediğimiz, yani şöyle yazalım, com tipi dediğimiz bir yapı daha var. Orada ise
+
+17
+00:11:09,107 --> 00:11:37,107
+bir segment alanı içerisinde tüm segmentleri tanımlıyor olacağız. Yani stack segment, kod segment ve data segment. Bunların hepsi 64K'lık bir alanın içerisinde olacak. Biz exitipi programda kodumuzu yazıp, işte datalarımızı oluşturup, siteyi de ne kadar kullanacağımız belli olduktan sonra bir boyut çıkıyordu ve bunun üzerine 512 byte'lık bir...
+
+18
+00:11:37,107 --> 00:11:50,767
+header bilgisi ekleniyordu ve exe, nokta exe uzantılı dosyanın boyutu, bizim programımızın boyutu, bir de header bilgisinin boyutuydu.
+
+19
+00:11:51,227 --> 00:12:05,028
+Compact, adı üzerinde ufak, küçük manasında yani daha küçük işler yapacaksanız, yani burada yapacağınız işlem, bu 64K'nın tamamını kullanıyorsanız, tabii yeterli olmayacaktır. Öyle bir durum.
+
+20
+00:12:05,107 --> 00:12:18,947
+da exit tipi program yazmayı tercih etmeniz lazım. Compact programdaysa bu header bilgisi yok. Boyutlarının exit tipi programa göre daha küçük olduğunu gözlemliyor olacaksınız. Şimdi nasıl?
+
+21
+00:12:19,796 --> 00:12:41,336
+yerleşiyor. Dilerseniz öncelikle ona bir bakalım. Bu bizim belleğimiz olmuş olsun. Sıfırdan başlasın. İşte bir megabyte büyüklüğünde bir belleğimiz olmuş olsun. Bizim işte bir program yazdığımızda şu bizim bir kesimimiz.
+
+22
+00:12:42,611 --> 00:12:58,851
+64K'lık. Bir program yazdığımızda, o kesimin offset değerleri, 00, 00 hex'den, şurası hex, hex'den başlayıp, F, F, F, F, hex'e kadar devam ediyor olacak.
+
+23
+00:12:58,851 --> 00:13:09,391
+Tabii ki bu offset değerleri, bu kesimin bir de takdir edersiniz ki, hiç kuşkusuz, segment, numaraları, değerleri oluyor olacak.
+
+24
+00:13:10,611 --> 00:13:25,291
+Stake segment ve data segment registerları ise hepsi aynı yeri gösteriyor olacak. Tek bir program, tek bir kesimin içerisinde oluyor olacak. Bu bizim yani temelde programımız.
+
+25
+00:13:26,091 --> 00:13:36,891
+Pekala, şunu biraz şöyle genişletirsek, şu şekilde, bunun içerisine şu, tek bir kesimin içerisine bizim segmentlerimiz nasıl dağılıyor?
+
+26
+00:13:37,299 --> 00:14:00,259
+Ona bakacak olursak, bayağıdır tableti kullanmamıştım, o yüzden biraz zemmuk çiziyorum ama zamanla alışarım kıymetle arkadaşlar. Şurası şöyle düz. Nasıl yerleşiyor? Ona bakacak olursak. Öncelikle altında, şurada, yani şurası bir Word organizasyonu olmuş olsun.
+
+27
+00:14:00,751 --> 00:14:24,151
+Altında 100 hex değerli, şurası yine 0000 hex offseti, şurası da 0100 hex offseti, program segment prefix, program segment prefix değerleri var. Bu bizim programımızın parametreleriyle veya işleyişiyle ilgili çesitli bilgileri tutan alan.
+
+28
+00:14:28,751 --> 00:14:37,271
+bir yer ayrıldığını varsayarak devam ettiriyor olacağız. Bir diğeri 100 hexlik bir yer kapsıyor.
+
+29
+00:14:37,451 --> 00:14:47,851
+COM tipi programda bizim programımız geri kalan 100 hexden sonra geri kalan yerden itibaren başlayacağını söylemek için Origin diye bir PESODA komutumuz var.
+
+30
+00:14:56,751 --> 00:15:18,651
+sonuncu byte, FFFF hexdedir. En sondan bir önceki bytesa FFE hextir. Yani FFE bir byte, bir de FFFF, dört tane F bir byte, toplam iki byte'lık bir aslında alan var burada. Buraya da işte arkadaşlar, bir
+
+31
+00:15:19,124 --> 00:15:26,943
+program sonlandıktan sonra kullanılacak sıfır olan bir offset değeri, bir geri dönüş değeri yerleştirilmiş oluyor.
+
+32
+00:15:27,364 --> 00:15:32,084
+Hatırlarsanız, exe tipi programda ne yapıyorduk biz siteyin içerisine?
+
+33
+00:15:32,443 --> 00:15:35,463
+Öncelikle data segmentin değerini pushluyorduk.
+
+34
+00:15:35,543 --> 00:15:38,604
+Şuraya stack olduğunu yazalım, exe tipi programda.
+
+35
+00:15:39,004 --> 00:15:42,584
+Ardından AX'i sıfır yapıp, ondan sonra onu pushluyorduk.
+
+36
+00:15:42,903 --> 00:15:47,104
+COM tipi programda, şunları da şöyle ayırayım müsaade.
+
+37
+00:15:47,124 --> 00:16:05,604
+müsaadenizle. Com tipi programdaysa bu yok. Bunun yerine sadece biz yerleştirmiyoruz. Default olarak FFFE adresinde bir tane sıfır değeri, bir wordlük sıfır değeri olmuş oluyor. Şimdi
+
+38
+00:16:06,868 --> 00:16:14,208
+Geri kalan, geri kalan bloklarsa bizim diğer segmentlerimizi yerleştireceğimiz bloklar.
+
+39
+00:16:14,688 --> 00:16:25,008
+Buradan aşağıya doğru, yani şu adresten başlayıp, FFFE adresinden başlayıp aşağıya doğru stack segment yerleşiyor olacak kıymetli arkadaşlar.
+
+40
+00:16:25,488 --> 00:16:29,908
+Yani aşağıya doğru indikçe stack pointer değişecek, azalacak.
+
+41
+00:16:29,908 --> 00:16:34,228
+Yukarıya doğruysa, bu alandan yukarıya doğruysa,
+
+42
+00:16:34,868 --> 00:16:49,908
+kod segment ve data segment yerleştiriliyor olacak. Data segment ve kod segment yerleştiriliyorsa, yukarıya doğru artan şey ne? Pointer olarak, instruction pointer artıyor olacak.
+
+43
+00:16:50,328 --> 00:16:58,668
+Tabii bu kod segment ve data segmentin, şöyle noktayla şuraya ayıralım, buraya yerleşmesi iki farklı şekilde olabilir.
+
+44
+00:17:01,491 --> 00:17:12,491
+Ondan sonra kod segmenti yerleştirebilirsiniz. Yani altta data segment, üstte kod segment veya tam tersi altta kod segment, üstte data segment olmak üzere.
+
+45
+00:17:12,851 --> 00:17:23,471
+İşte COM tipi programın iki tane sintaksı var. Sintaks bir bu, sintaks iki de bu. İki sintaksı da sizlere anlatıyor olacağız.
+
+46
+00:17:29,491 --> 00:17:57,491
+Tam tersi, önce data, sonra kodun olduğu bir alan. Bir farklı sintaks. Pekala, düşünün, burada karşımıza çıkan, düşünmemizi gerektiren ilk şey ne? Bizim datayımızı yerleştirdik. Diyelim ki bin byte'lık, bin belki word'lık dizilerimiz var, daha büyük dizilerimiz var. Kodumuzun boyutu çok hacimli. Çok ciddi stack işlemleri yapıyoruz, siteyi çok yoğun kullanıyoruz. Doğal olarak data...
+
+47
+00:17:57,491 --> 00:18:25,331
+segment ve kod segment yukarıya doğru böyle yükselecek buradan. Stake segment de buradan böyle yükselecek ve bir süre sonra artık bu alanın bizim için yetersiz olduğunu düşünüyor olabiliriz. Yani sığmadı. Com tipi programa sığmadı. Sığmıyorsa programınız artık kompakt değildir ve egzotipi bir program yazmanız beklenir. Tamam sizin yapacağınız işler bu alana sığıyorsa ki aslında 64.
+
+48
+00:18:25,491 --> 00:18:30,451
+K'lık bir alan o kadar da küçük bir alan değil. Biz birazdan program yazdığımızda yürüyor olacağız.
+
+49
+00:18:30,652 --> 00:18:35,192
+40, 50, 100 byte maksimum 200 byte'lık işler yapıyor olalım.
+
+50
+00:18:35,192 --> 00:18:42,592
+Kom tipi programda 64K'lık bir alan, hayli hayli büyük bir alan onu söyleyebiliriz.
+
+51
+00:18:43,331 --> 00:18:46,051
+Bu da işte bizim kom tipi.
+
+52
+00:18:46,548 --> 00:18:57,768
+programımızın segment içerisinde, tek bir segment içerisinde segmentlerinin yerleşmiş hali. Onu söyleyebiliriz. Buraya kadar sorusu olan arkadaşımız var mı?
+
+53
+00:19:03,571 --> 00:19:19,831
+Süper. O zaman devam edelim. Şimdi sintaks iki tane temel sintaksımız olduğunu söyledik. Bu iki sintaksın ilkini vererek başlayalım. Sintaks bir diyelim şuraya.
+
+54
+00:19:21,268 --> 00:19:32,067
+Sintaks 1. Şimdi direkt bu sintaksları bizim segment tanımımızı gerçekleştirdiğimiz gibi anlatmaya çalışacağım.
+
+55
+00:19:32,067 --> 00:19:40,208
+Kod segment diyorduk. Segment. Bakın. Para.
+
+56
+00:19:43,539 --> 00:19:59,519
+kod olmuş olsun. Şimdi segmentin içerisine girdiğimizde ilk yazacağımız değer şu, Origin 100 hex. PSP alanı var demiştik ya, program segment trafiks.
+
+57
+00:20:00,000 --> 00:20:25,719
+o alan 100 hexlik bir yer kaplıyor demiştik. İşte programımızın orijini de 100 hexden sonra başlasın diye bunu COM tipi programda muhakkak söylememiz gerekiyor. Ardından assume'la birlikte bizim hangi segment için hangi segment isimlerini kullandığımızı yazıyorum. Bakın data segment, kod segment, stack segment.
+
+58
+00:20:26,451 --> 00:20:32,392
+kod segment ve kod cs, kod sek.
+
+59
+00:20:33,364 --> 00:21:01,364
+Tek bir segment ismimiz var, o da bu. Her birisi içinse ortak. Tamam mı? Burası önemli kısımlardan birisi. Şimdi ilk versiyonda, sintaks 1'de öncelikle datayı yerleştiriyoruz. Şu alana data segmenti koyacağım. Ama program başlarken kod segmentten başlayacağı için, yani kod çalıştırılacağı için data segmenti koymadan önce bir...
+
+60
+00:21:01,364 --> 00:21:13,264
+kuşulsuz zıplama kuşulu, jump ile bizim başlangıç yordamımız neyse ona doğru zıplıyoruz ve buna da bir label ismi veriyoruz bu satıra.
+
+61
+00:21:14,923 --> 00:21:19,923
+Bir label ismi verdik bakın buna da bir label ismi verdik.
+
+62
+00:21:20,084 --> 00:21:24,284
+Buradan sonra işte değişkenlerimizi buradan sonra data segment başlıyor.
+
+63
+00:21:24,644 --> 00:21:26,364
+Değişkenlerimizi yazabiliriz.
+
+64
+00:21:27,084 --> 00:21:27,663
+Sayı bir.
+
+65
+00:21:28,180 --> 00:21:53,579
+define byte örnek veriyorum şu an soru işareti. Ondan sonra word sayı B define word 17 hex gibi gibi böyle buralar artabilir. Tamam data segmentte ne kadar verimiz varsa onu buraya yazıyor olmamız gerekiyor. Ardından şu jump ile zıpladığımız başla.
+
+66
+00:21:54,036 --> 00:22:00,936
+yordamının başlaması gerekiyor. Burada dikkat edilmesi gereken hususlardan birisi şu.
+
+67
+00:22:03,316 --> 00:22:31,316
+bir kompakt program, kom tipi program yazıyorsak, bütün yordamlar hepsinin aynı segment içerisinde olmasını bekliyoruz ve ana yordam da dahil tüm kullanacağımız yordamların Near tipte tanımlı olduğunu bilmemiz gerekiyor. Burada yordam tanımlarken Near tipinde tanımlıyoruz. Çünkü daha sonra anlatacağız yordamlar arasında geçiş yaparken birbirlerini de...
+
+68
+00:22:31,316 --> 00:22:44,268
+zıplama yaparken dallandığınız yordam near ise farklı şekilde değerler siteye atılıyor, far ise farklı şekilde değerler siteye atılıyor. Burada near olması sizden bekleniyor. Tabii ki takdir edersiniz ki...
+
+69
+00:22:44,435 --> 00:23:10,215
+Burada bir programın akışı var. Fakat exe tipi programdan farklı olarak push.ds, x86 ile başlayan geri dönüş değerlerinin siteyin içerisine atıldığı ve data segmentin numarasının ayarlandığı o 5 satır kodu burada yazmıyoruz. Zaten tek bir segmentimiz var ve geri dönüş için offset değeri siteyin içerisinde default olarak konumlanmış durumda.
+
+70
+00:23:12,435 --> 00:23:23,735
+beraber sonlandırıyoruz. Return far değil, return çünkü near tipte ve sonrasında başla yordamımızı end prosedür diyerek kapatıyoruz.
+
+71
+00:23:24,235 --> 00:23:28,915
+Code segmentimizi bakın, code segmentimizi end.
+
+72
+00:23:29,491 --> 00:23:39,211
+segment diyerek sonlandırıyoruz ve en sonuncu, AND'den sonra, bakın, Exotipi programda başlayacağımız yordamın ismini söylüyorduk.
+
+73
+00:23:39,612 --> 00:23:47,491
+Buradaysa başladığımız noktayı söylüyoruz. Önce şuradan başlayacak, yani bilgi...
+
+74
+00:23:48,531 --> 00:24:07,031
+labelına zıplayacak. Öncelikle buradan başlayacak. Ondan sonra buraya otomatik olarak zıplayıp buradan sonraki akışı devam ettiriyor olacak. Bu bizim bir sintaksımız. Yani sintaks bir. Bu sintaks üzerinden şimdi çeşitli örnekler.
+
+75
+00:24:07,476 --> 00:24:23,756
+yapabiliriz. Dikkat edilmesi gereken husus ne? Burada öncelikle data segment, ondan sonra kod segment yerleştirilmiş. Bunun kodun içerisinde push gibi, pop gibi işlemleri de kullanarak stack segmenti
+
+76
+00:24:24,756 --> 00:24:39,076
+doldurup, boşaltabiliriz. Burada yine dikkat edilmesi gereken hususlardan birisi. Diyelim ki, programınızın şurada bir komutunuz var. Exor, BX, AX.
+
+77
+00:24:39,536 --> 00:25:07,536
+Tamam, böyle bir komutunuz var, bir satırında ve bunun siz offset değeri 010D olmuş olsun, offset değeri. Siz bu offset değeri üzerinden çeşitli işler yapmaya çalışıyorsanız, buraya zıpla, şu offset değerine zıpla gibi gibi çeşitli işler yapmak istiyorsanız, unutmamanız lazım ki, burada yukarıda değişken tanımlarında ek bir değişken eklediğinizde, ek diyelim.
+
+78
+00:25:07,536 --> 00:25:35,536
+mesela tanımladığınız burada define double word soru işareti böyle bir değişken tanımladığınız bu sefer 4 byte bütün her şey aşağıya doğru kayıyor olacak ve sizin buradaki bu offset değeriniz artık değişmiş olacak bunu kontrol etmeniz lazım. Yani yukarıda yaptığınız data segmentte yaptığınız her değişiklik aşağıya iniyor olacak burada bu versiyonda bu sintaksta
+
+79
+00:25:35,536 --> 00:25:39,876
+dikkat edilesi özellik bu. Var mı burada sorusu olan?
+
+80
+00:25:44,307 --> 00:25:47,868
+Yok, güzel. İnşallah sesim geliyordur diye ümit ediyorum.
+
+81
+00:25:48,435 --> 00:26:13,595
+Şimdi bir örnek yapalım. Örnek yapalım. Güzel anlaşılsın diye. Hem de pratik yapmış oluyoruz bu örnekleri yaparak. Öncelikle tabii soruyu beraber okuyalım. Akış diagramını çizelim. Ondan sonra kodunu beraber yazıp çalıştırıyor oluruz. Şimdi bir yıl süresince günlük en düşük ve en yüksek hava sıcaklığı bulunan bir dizide.
+
+82
+00:26:14,003 --> 00:26:20,023
+eksi 20'nin altında sıcaklık değeri olup olmadığını bulan COMTIP asembele programını yazınız.
+
+83
+00:26:20,123 --> 00:26:25,363
+Sintaks 1 kullanalım. Az önce anlattığım sintaksı kullanalım kıymetli arkadaşlar.
+
+84
+00:26:26,003 --> 00:26:30,123
+Çeşitli bilgiler biliyor olalım. Mesela hani bize verilmiş olsun.
+
+85
+00:26:30,783 --> 00:26:39,383
+Maksimum en düşük sıcaklık. Bu ön bilgi yani. Eksi 92 olmuş olsun. Maksimum.
+
+86
+00:26:39,859 --> 00:27:07,299
+en yüksek sıcaklıksa 56 olmuş olsun. Bu bilgileri özellikle veriyoruz. Niçin veriyoruz? Eğer ki en düşük sıcaklık eksi 128'den daha azsa bu dizinin byte'a sığmayacağı ve word'e doğru taşıacağını anlamış oluyoruz. Veya aynı şekilde 127'den daha büyük bir en yüksek sıcaklık değeri olsaydı yine 56'ya sığmayıp
+
+87
+00:27:07,667 --> 00:27:29,947
+daha byte'a sığmayıp, word'e doğru bir geçiş yapacaktık. Yani bu bilgiler önemli. Biz sıcaklık dizimizi şu anki bakış açımızda bytes olarak kullanabiliriz. Bir diğeri de en düşük sıcaklık. Yani sıfırın altında sıcaklık değerleri de olduğunu biliyoruz.
+
+88
+00:27:30,355 --> 00:27:33,895
+Bakın, zaten eksi 20 ile karşılaştırma yapacağız.
+
+89
+00:27:34,335 --> 00:27:41,935
+Sıfırın altında sıcaklık değerleri de varsa, dizinin içerisinde çeşitli karşılaştırma işlemleri yapıyorken, neyle yapacağız?
+
+90
+00:27:42,415 --> 00:27:45,535
+Jump, greatly, less'li yapacağız.
+
+91
+00:27:45,835 --> 00:27:48,415
+Yani soruyu okuduğumda, bakın bazı şeyleri çıkartıyorum.
+
+92
+00:27:48,815 --> 00:27:49,835
+Şuradan ne çıkarttım?
+
+93
+00:27:49,835 --> 00:27:58,355
+Bu dizi byte dönümlü olabilir ve işte çarpma, bölme, toplama, çıkartma yapacaksanız, toplama, çıkartma da değil belki ama çarpma...
+
+94
+00:27:58,355 --> 00:28:03,875
+bölme yapacaksanız byte tanımlılarla word tanımlılarla kullanılan registerlar ve işlevleri değişiyordu.
+
+95
+00:28:03,975 --> 00:28:24,975
+Bunu bilmeniz lazım ve karşılaştırma işlemleri yapacağınız zaman eğer ki sayıların hepsi pozitif olsaydı above'lu, below'lu karşılaştırma yaparken sayılar negatif olma ihtimali de olduğu için zaten x20 ile de karşılaştıracağımız için greater'lı, less'lı çeşitli karşılaştırma işlemleri yapıyor olacağız.
+
+96
+00:28:26,355 --> 00:28:29,695
+Akış diagramımızı çizerek başlayalım.
+
+97
+00:28:33,844 --> 00:28:53,524
+Şimdi bir günün 365 olduğunu varsayıyorum. Yani artık bir yıl olmadığını düşünelim. Döngü şeklinde bu işlem gerçekleştirileceği için onun bir indisinin, döngü indisinin olması lazım. Onu da iyi olarak atadım. Sıfırdan başlayacak.
+
+98
+00:29:01,488 --> 00:29:11,308
+bir dizi, şöyle tanımlayayım, bir dizim var ve son olarak da eşik diye bir değişkenim var, o da eksi 20.
+
+99
+00:29:12,588 --> 00:29:16,748
+Şimdi diyelim ki bu dizimiz 365 elemanlı.
+
+100
+00:29:17,528 --> 00:29:18,788
+365 elemanlı.
+
+101
+00:29:19,188 --> 00:29:27,308
+Şimdi 365 elemanlı bir dizi dediğimizde aklınıza ilk gelecek şey belki for olabilir ama soruyu lütfen güzel okuyalım.
+
+102
+00:29:27,928 --> 00:29:33,508
+Eksi 20'nin altında sıcaklık değeri var mı yok mu? Bunu soruyor bize.
+
+103
+00:29:34,387 --> 00:29:41,427
+Biz bu 365'lik diziden belki 10. elemanda x20'nin altında bir değer bulacağız.
+
+104
+00:29:41,967 --> 00:29:44,947
+Geri kalanları kontrol etmemize gerek var mı? Evet, var diyeceğiz.
+
+105
+00:29:45,528 --> 00:29:48,127
+Ne zaman tamamını kontrol etmemiz gerekirdi?
+
+106
+00:29:48,647 --> 00:30:00,000
+Soru, x20'nin altında kaç tane sıcaklık değeri vardır diye bize sorsaydı, o zaman for döngüsü kullanarak tamamını...
+
+107
+00:30:00,000 --> 00:30:13,339
+kontrol etmemiz gerekirdi. Şu an, x20'nin altında sıcaklık değeri var mı, yok mu diye sorduğu için, sadece while kullanmamız muhakkak gerekiyor. Bu soruyu forla çözmememiz lazım.
+
+108
+00:30:13,879 --> 00:30:24,460
+Pekala, biz while kullanıyorsak, while da bir dönme koşulumuz, yani aslında döngüden çıkma koşulumuz olacak. Ne zaman döngüden çıkarım?
+
+109
+00:30:24,832 --> 00:30:43,292
+Ya dizinin sonuna kadar gelmişimdir ve eksi 20'nin altında hiç değer bulamamışımdır. Bu diziyi bitirmek demek. Ya da eksi 20'nin altında bir değer bulduğumda çıkarım. O sebeple ben iki tane koşulu kontrol etmem lazım.
+
+110
+00:30:52,243 --> 00:31:08,144
+AND'de yazabiliriz buraya, önemli değil. Benim sıcaklığım, o anki, o indisteki sıcaklığım, eşik değerden büyük olduğu sürece dönmem lazım. Yani, eksi 20'den büyük bir sıcaklıksa döneceğim, büyükse döneceğim.
+
+111
+00:31:08,531 --> 00:31:32,531
+Küçükse artık bozulacak. Bu while'ın içerisine yazdığımız ifade dönme koşulu arkadaşlar. Çıkma koşulu değil, dönme koşulu. Şurada yapacağımız işlem. Yapacağımız işlem ne yani? Bir sonraki elemana geçmek için i'nin değerini bir artırmak. Tamam. Pekala çıktığımızda...
+
+112
+00:31:33,107 --> 00:31:43,767
+çıktığımızda ne olacak? İki şekilde çıkmış olabiliriz. Ya bu koşul bozulmuştur çıkmışızdır ya da bu koşul bozulmuştur çıkmışızdır.
+
+113
+00:31:44,267 --> 00:31:52,967
+Programlama açısından da daha kolay olacağı için ve anlaşılırlık açısından da daha kolay olacağı için direkt şu koşulun bozulup bozulmadığını kontrol ediyorum.
+
+114
+00:31:52,967 --> 00:31:56,867
+İ, N'e eşit midir?
+
+115
+00:31:57,907 --> 00:32:25,807
+i n'e eşitse, bu ne demek? i sıfırdan başlayıp 0, 1, 2, 3, 4, 5, 6 diye gidiyor. En son 364 olacak. 364. elemanı da kontrol edecek. i 365 olduğunda, yani bizim dizimizin boyutuyla aynı olduğunda artık dizi taşmış olacak. Kontrol edilecek, ekstradan bir eleman olmayacak ve eksi 20'nin altında herhangi bir eleman olmadığını varsayacağız. Şurada diyelim ki sonuç eşittir.
+
+116
+00:32:25,907 --> 00:32:32,028
+1. 1 demek, şöyle yazalım, yoktur.
+
+117
+00:32:36,243 --> 00:33:00,323
+var mıdır diye soruyor ya yani. Bu yoktur olmuş olsun. False kolundaysa, i bire eşit değilse şu koşul bozulduğu için çıkmıştır. Burada da 7 olmuş. İstediğiniz değeri verebilirsiniz. 0, 1 veriyoruz her seferinde farklı olsun diye ben böyle verdim. Şurada da tabii şurası da şöyle noktalı şey yapalım. Vardır.
+
+118
+00:33:02,516 --> 00:33:08,456
+ve programımızı kıymetli arkadaşlar stopla beraber sonlandırıyoruz.
+
+119
+00:33:10,036 --> 00:33:11,556
+Önce bir akışa çizdik.
+
+120
+00:33:11,656 --> 00:33:13,676
+Yani atamamız gereken çeşitli işlemler var.
+
+121
+00:33:13,816 --> 00:33:16,336
+Görüyorsunuz şurada bir kısmını data segmente yapıyor olacağız.
+
+122
+00:33:16,776 --> 00:33:20,355
+Muhtemelen i yerine SI'yi kullanıyor olacağım.
+
+123
+00:33:20,796 --> 00:33:22,056
+Siz de takdir edersiniz ki.
+
+124
+00:33:22,056 --> 00:33:25,056
+Şurada bakın i en yerine de...
+
+125
+00:33:25,940 --> 00:33:52,560
+for döngüsü olmasa bile dizinin elemanlarıyla ilgili işlem yapıyorsanız müsait olduğu sürece CX değerini kullanmaya gayret edin. Bir de şurada şöyle bir durum söz konusu. Dizi İ ile eşiğin karşılaştırması. Her ikisi de bir bellek alanı olduğu için Compare ile bunu karşılaştıramayacağım. O yüzden değişmeyen bir tanesini sürekli AL'nin içerisine alayım.
+
+126
+00:33:53,107 --> 00:34:01,107
+Çünkü byte tipinde olacağı için AX'in içerisine değil, AL'nin içerisine almam. AH, BH neyse, hepsinin içerisine alabilirsiniz.
+
+127
+00:34:01,488 --> 00:34:18,108
+Ama Compare komutunun işte AL, AX gibi operantlarda ilk operantı olduğunda daha hızlı çalıştığı bir komut varsa, eğer daha efektiflik söz konusuysa bunu kullanmanız tabii ki sizin menfaatinize olacaktır.
+
+128
+00:34:18,483 --> 00:34:23,503
+Evet, buraya kadar sorusu olan var mı? Bunun direkt kodunu yazmaya başlayacağım yoksa.
+
+129
+00:34:27,635 --> 00:34:37,596
+Evet, bu sessizliği yok, her şey çok mükemmel bir şekilde anlaşılıyor olarak değerlendirdiğimi bilmenizi isterim.
+
+130
+00:34:41,012 --> 00:34:42,532
+Evet, o zaman örnek yapalım.
+
+131
+00:34:44,952 --> 00:34:49,172
+Klavyeden biraz uzaktım, onu yanıma alayım.
+
+132
+00:34:50,731 --> 00:34:53,472
+Şimdi ben şeyde yazayım, ne dönür ona?
+
+133
+00:34:53,771 --> 00:34:56,452
+Sublime Text'te yazıyor olayım.
+
+134
+00:34:56,916 --> 00:35:02,916
+Siz herhangi bir IDE'yi kullanarak bu işlemi gerçekleştirebilirsiniz kıymetli arkadaşlar.
+
+135
+00:35:02,916 --> 00:35:12,916
+Code, segment tanımlayarak başlıyor olalım. Segment, segment para.
+
+136
+00:35:12,916 --> 00:35:16,916
+Bir de kaydedelim şunu.
+
+137
+00:35:16,916 --> 00:35:20,916
+Şuraya kaydedelim.
+
+138
+00:35:22,164 --> 00:35:24,784
+Boyar, ASM ismini verirsek.
+
+139
+00:35:26,684 --> 00:35:32,284
+02-12-21-A.ASM olmuş olsun bu.
+
+140
+00:35:32,344 --> 00:35:34,264
+Bugünün tarihini koymuş olalım.
+
+141
+00:35:34,583 --> 00:35:35,963
+İlk yaptığımız işlem neydi?
+
+142
+00:35:36,324 --> 00:35:37,604
+Origin, 100x.
+
+143
+00:35:38,003 --> 00:35:43,484
+Ardından assume'la birlikte kod segment, kod seg.
+
+144
+00:35:43,903 --> 00:36:11,143
+data segment, code sec, stack segment, code sec değerlerini yazıyorduk. Buradan sonra biz değerlerimizi yani data segmentimizi yerleştirecektik. Bir başla diye label'ımız olmuş olsun ve sıcaklık yordamımıza, ana yordamımıza zıplamış olsun. Sıcaklık yordamımız burada olacak. Prognier. Önce şöyle bir çatısını yazayım kabaca görün diye.
+
+145
+00:36:11,903 --> 00:36:15,443
+Ardından return ile beraber bunu sonlandırıyor olacağız.
+
+146
+00:36:16,063 --> 00:36:19,804
+Sıcaklık yordamımızı end prosedür ile kapatacağız.
+
+147
+00:36:20,304 --> 00:36:23,503
+Ardından segmentimizi end segment ile kapatacağız.
+
+148
+00:36:23,903 --> 00:36:29,823
+Ve en son end'ten sonra şurada gördüğünüz başla label'ına zıplamış olacağız.
+
+149
+00:36:29,823 --> 00:36:32,563
+Ne tarz değişkenlerimiz vardı? Onlara bakalım.
+
+150
+00:36:36,596 --> 00:36:59,695
+define word 365. 365 zaten byte'ın içerisine sığacak bir değer değil. O yüzden word kullanmanız beklenir. Fakat n değeri daha küçük, byte'a sığacak bir değer olsaydı, yine word tanımlamanız menfaatinizi olacaktı. Çünkü bunu bir süre sonra CX'in içerisine, hele ki for kullanıyorsanız, atamanız gerekecek.
+
+151
+00:37:04,596 --> 00:37:21,176
+kullanarak aşağıda daha fazla işlem gücü bakımından kar yapabilirsiniz. Diziyi normalde bakın şöyle tanımlarız. Define Byte 365. Sınavda yaparken bu şekilde tanımlayın lütfen. Duplication factor. O an belliğin o olanı da ne varsa.
+
+152
+00:37:21,632 --> 00:37:46,832
+diye. Tabi bu şeyi sağlamıyor olabilir. Onu söyleyelim. Eksi 92 ile artı 56'yı sağlamıyor olabilir. Çok önemli değil. Ama hani teker teker 375 tane değeri yazamayacağımız için bu şekilde yazabilirsiniz. Ama burada test edeceğimiz için bunu ben comment out yapıyorum ve şunu da 365'den 5'e düşürüyorum. Bunu da comment yapayım. Pardon olmadı. Şöyle.
+
+153
+00:37:47,360 --> 00:38:08,980
+365. Buraya da dizinin, işte define byte olan değerlerini, çeşitli değerlerini yazacağım. 15, eksi 19 olmuş olsun. 20, 50, eksi 25. Tamam mı? Sağlasın yani.
+
+154
+00:38:09,364 --> 00:38:37,083
+istediğim o. Sağlamadığı durumu da yaparız tabii. Yani şu eksi yirmi beşi daha küçük bir değere indirip sağlamadığı durumu da kontrol etmiş oluruz. Bir diğeri bizim için eşik değerimiz. O da define byte eksi yirmi olarak verildi. Ve şurada kullandığımız bir şey vardı. O da S değişkeniydi. Sonuç da diyebilirsiniz. S de diyebilirsiniz. Hadi biz burada ona sonuç.
+
+155
+00:38:37,364 --> 00:38:45,864
+demiş olalım. Define byte başlangıçta ne olduğu belli değil. Siz tabii ki bakın şu programda s değeri
+
+156
+00:38:46,516 --> 00:39:11,056
+kolun birisinde bir, birisinde yedi oluyor. Siz yukarıda bunu yedi olarak tanımlayıp şu false kolunu hiç işlem yapmayıp bu false kolunda sadece true koluysa bire çevirebilirsiniz. Böyle bir şey yapabilirsiniz veya tam tersi burada true kolunu boş bırakıp ki genelde o yüksek seviyeli tarafta karşılıkları olunacağı için ona alışmanız beklenmez.
+
+157
+00:39:14,516 --> 00:39:22,235
+işlemi de yapayım istediğim için başlangıçtaki değeri bellekte o anki değeri neyse o olsun diye serbest bırakıyorum.
+
+158
+00:39:22,655 --> 00:39:25,496
+Şimdi buraya kodumuzu yazıyor olacağız.
+
+159
+00:39:25,855 --> 00:39:26,815
+Tabii neler kaldı?
+
+160
+00:39:26,956 --> 00:39:28,255
+Bakın şunu yaptım.
+
+161
+00:39:28,851 --> 00:39:31,031
+Tamam, şunu yaptım, şunu yaptım.
+
+162
+00:39:31,192 --> 00:39:32,951
+İ'nin sıfıra atanması değeri var.
+
+163
+00:39:33,291 --> 00:39:34,931
+Yukarıda tanımlamama gerek yok onu.
+
+164
+00:39:35,331 --> 00:39:37,171
+S'ı kullanacağımı söyledim zaten.
+
+165
+00:39:37,652 --> 00:39:43,931
+Exor S, S diyerek ben o işlemi burada halletmiş oluyorum.
+
+166
+00:39:44,152 --> 00:39:46,951
+Yani S'ının değeri sıfır oldu.
+
+167
+00:39:46,951 --> 00:39:54,771
+Move, CX, N diyerek N'in değerini CX'in içerisine almış oluyorum.
+
+168
+00:39:56,851 --> 00:40:06,271
+eşik değerini alacağımı sizlere söylemiştim. Şimdi buradan sonra artık şuradaki karşılaştırma işleminin ilkini yapmam gerekiyor.
+
+169
+00:40:06,612 --> 00:40:17,891
+SI ile CX'i karşılaştıracağız. Compare SI virgül CX. Tamam mı? Karşılaştırdım. Şimdi karşılaştırma yapıyorum.
+
+170
+00:40:24,563 --> 00:40:49,943
+büyükse veya eşitse, yani bunun tam tersi ise, büyük veya eşitse zıplayacak. Nereye zıplayacak? Buraya zıplayacak. Yani yapacağı şey bir sonraki adıma. Fakat şöyle düşünün, bu koşul bozulduğunda, yani i, n'den büyük eşit olduğunda, tekrar söylüyorum, i, n'den büyük eşit olduğunda, ben direkt
+
+171
+00:40:50,356 --> 00:41:03,436
+yoktur labelına zıplayabilirim. Değil mi? Yoktur labelına zıplayabilirim. O yüzden jump, above equal, büyük eşitse yoktur. Yoktur yazamadım.
+
+172
+00:41:05,619 --> 00:41:14,079
+yoktur labelına, şuraya zıplayabilirim. Bu koşulu kontrol ederek çünkü bu işi gerçekleştiriyorsam bunu hayli hayli yapabilirim.
+
+173
+00:41:14,179 --> 00:41:22,420
+Orada çeşitli işler yapacağız. Fakat zıplamadıysam ne demektir bu? S, I, C, X'ten küçüktür demektir.
+
+174
+00:41:22,779 --> 00:41:30,039
+Küçükse de şurada gördüğünüz işlemi yapacağım işte. Şu işlemi yapacağım. AL burada gördüğünüz gibi.
+
+175
+00:41:32,800 --> 00:41:54,680
+esi var. Öncelikle bir işlemi yapayım. Yapacağım işlem normalde compare dizi yazamadım. Dizi esi virgül A, L tarzında bir şey olacak. Fakat bu tarz işlemler yapıyorsanız karşılaştırılacak şeylerden birisi de A, L ise bunun yerine ilk operant
+
+176
+00:41:55,123 --> 00:42:08,344
+ilk operant, AL olacak şekilde yapmanız sizin menfaatinize olacaktır. Bir diğer örnekte bunu da yaparız, böyle de yaparız, bu şekilde de çalıştığını görün. Ama alışkanlık olması bakımından bunu şöyle yazarsanız,
+
+177
+00:42:12,884 --> 00:42:34,443
+daha şık olacaktır kıymetli arkadaşlar. Compare AL ile dizi SI'yi karşılaştırdığımızda. Tabi artık bakın burada dizinin değerleri de negatif olabilir. Eşik zaten negatif. Ne demiştik? Greaterlı, lesslı karşılaştırma yapacağız. Hocam burada niye öyle yapmadık?
+
+178
+00:42:34,900 --> 00:43:02,880
+bir kere n dizinin boyutu, i de dizinin indeks değişkeni. Sıfırdan başlayıp yukarıya doğru gidiyor. n de dizinin boyutu. Negatif olamaz dizi zaten. Yani şuradaki işlemin herhangi bir şekilde taraflarının negatif olma ihtimali yok. O yüzden ibovlu, blovlu komutlardan kullandım. Yani i küçüktür n dediğimizde bunun zıttı neydi? Büyük eşittir. O yüzden i büyük eşittir n.
+
+179
+00:43:02,900 --> 00:43:18,520
+Ben size buraya zıpla ifadesini kullandım. Şurada bakalım, şurada bakalım. A, L eşik değer. A, L eşik değer. Pekala dizi iyi ise herhangi bir günün sıcaklık değeri.
+
+180
+00:43:18,911 --> 00:43:45,791
+Ben eğer ki AL-20 dizi i de eksi 22 ise yani AL-20 dizi i de eksi 22 ise AL daha büyüktür. Negatif sayılar küçüldükçe daha büyük oluyor biliyorsunuz. O yüzden burada bir büyüktür karşılaştırma işlemi gerçekleştirebilirim. Jump greater ise büyük ise nereye zıplayacağız? Bu sefer şuraya.
+
+181
+00:43:46,195 --> 00:44:12,076
+Yani, x20'nin altında bir sıcaklık vardır. O label'a zıplamamız gerekiyor. Pekala, her ikisine de zıplamadıysak ne olacak? Her ikisine de zıplamadıysak işte burada ne yapacağız? While'ın içerisine gireceğiz ve orada da i'yi yani s'nın değerini bir arttırmamız birden bekleniyor.
+
+182
+00:44:13,556 --> 00:44:40,795
+SI, SI'nin değerini bir arttırdık. Bundan sonra tabii döngünün artık işlevlerini yerine getirip dönmemiz gerekiyor. Yani jump, dön diye bir label'ım olsun. O da karşılaştırma ile beraber başlamış olsun. Burada dönüp duracak. İki şekilde çıkıyorum. Ya bu bozulacak çıkacağım ya da bu bozulacak çıkacağım. Yazalım. Şimdi onları yazalım. Vardır.
+
+183
+00:44:41,268 --> 00:45:01,527
+labelına geldiğimizi düşünelim. Warder labelı, pardon, hiç fark etmez. Yoktur'a gelelim. Yok, pardon, vardır yazdık. S'ye 7 atıyorum. Sonuç diye bir değişkenim vardı. Ona MOV, sonuç virgül 7 atıyorum bakın. Ardından
+
+184
+00:45:02,132 --> 00:45:24,372
+jump, son diyerek, sona zıplamam lazım. Son da şurada bir label olmuş olsun. Bir de yoktur alanım vardı. Onun için de move, sonuca, büyük harfe döndük, sonuç virgül, kaç yazıyor, iki miydi, bir miydi? Bir. Sonuca da bir yazacağız. Bir.
+
+185
+00:45:24,820 --> 00:45:33,159
+Tamam. Her ikisini de bu şekilde sağlamış oluyorum. Programımız genel olarak bakıldığında bu şekilde.
+
+186
+00:45:34,300 --> 00:45:40,320
+Var mı burada sorusu olan az önceki akış diagramını böylece yazmış olduk.
+
+187
+00:45:46,260 --> 00:45:53,320
+Yani bu arkadaşımız, bir arkadaşımız chatten yazı yazmış. Lütfen sorularınızı konuşarak sorun.
+
+188
+00:45:53,800 --> 00:45:59,200
+Chat'i okuması çok zor oluyor. Şans eseri bakmıştım, chat'e gördüm. Lütfen konuşarak sorun.
+
+189
+00:45:59,340 --> 00:46:07,200
+CX'deki değeri başka bir değerde, kütüphanedeysen de o zaman soru sorma kıymetli arkadaşım.
+
+190
+00:46:08,240 --> 00:46:13,200
+CX'deki değeri başka bir değerde tutarak CMP işlemini yapamaz mıydık?
+
+191
+00:46:13,940 --> 00:46:41,019
+CX'deki değeri başka bir değerde tutarak. N'i kastediyor herhalde burada. Yani herhangi bir şekilde diyor ki, benim anladığım, N'i CX'e atamasak şuradaki karşılaştırma işlemini yapamaz mıydık? Yapardınız. Bir taraf register, bir taraf şey olabilir. Ne döndür ona? Bellek alanı olabilir. Şunun çalışması 3 clock cycle sürüyorsa, bunun çalışması 2 clock cycle,
+
+192
+00:46:41,407 --> 00:46:48,927
+Ama senin dediğin gibi, yazıyorum sadece şuraya, S'ı virgül, N'in çalışması ise 3 clock cycle sürüyorsa
+
+193
+00:46:48,927 --> 00:46:56,208
+ve worst case'de 1 clock cycle her seferinde fazla, 365 clock cycle fazla işlem tutacak.
+
+194
+00:46:56,527 --> 00:46:58,947
+Sadece şurada 2 clock cycle'lık işlem yapmadığın için.
+
+195
+00:46:59,443 --> 00:47:20,744
+gibi tamam mı? Bunları o şekilde mümkün olduğunca karşılaştırma işlemi yapıyorsanız, registerlarınızda müsaitse ve döngüsel bir karşılaştırma işlemi ise bu, tek bir kere değil de döngüsel bir karşılaştırma işlemi ise her iki tarafında register olması sizin menfaatiniz olacaktır. Tamam mı? Sizin menfaatiniz olacaktır. Başka sorusu olan var mı?
+
+196
+00:47:23,380 --> 00:47:48,492
+çalıştıralım. O zaman çalıştıralım bunu. Çalıştırmak için DOSBox kullanıyoruz. Biliyorsunuz. DOSBox'ı mount c c users sp diyelim. Tamam. c 2.0
+
+197
+00:47:48,659 --> 00:48:01,679
+Tamam. Bir dediğimizde, burada, o dosyamızı bakın görüyoruz. 021221A. Hatta şöyle yazabiliriz. 021221A.yıldız.
+
+198
+00:48:02,420 --> 00:48:10,380
+Yıldız olabilir miyim bilmiyorum tabii. Hangisi Yıldız acaba bunlardan? Evet, şuralarda bir yerde buldum.
+
+199
+00:48:10,931 --> 00:48:33,951
+Tamam, 8'miş. Bakın, o dosyamız var, 02121A.asm. Maspından geçiriyoruz. Eğer ki sintaksal bir hata yapmışsak, bize masp derler, derleyici, yani Microsoft Assembler, maspın açılımı, Microsoft Assembler bize söyleyecektir. 02121A.asm.
+
+200
+00:48:34,431 --> 00:48:45,391
+noktalı virgül koyuyorum ki geri kalan soruları bana sormayız. Herhangi bir hatan yok diyor. Tekrardan kontrol ettiğimizde bakın obje uzantılı dosyamız da oluşmuş.
+
+201
+00:48:45,391 --> 00:48:55,511
+Obje uzantılı dosyamız da oluşmuş. Şimdi linker'dan geçiriyoruz. 02121A.obj
+
+202
+00:48:59,284 --> 00:49:02,224
+Şimdi, assembly de, assembly dilinde
+
+203
+00:49:03,891 --> 00:49:31,371
+Hem warningler hem errorlar çok kritik. Belki işte Java yazıyorsunuz, kodunuzda 20 tane sarı yer oluyor, warning oluyor, umursamayıp geçiyorsunuz. Burada öyle değil. Hem warninglere hem de errorlara çok dikkat etmemiz gerekiyor. Hiç olmadan yazmamız gerekiyor programımızda yalnız. Sadece COM tipi program yazarken no stake segment hatası
+
+204
+00:49:31,891 --> 00:49:35,672
+Tamam, bu olabilir yani, bunu kabul ediyoruz. Çünkü stack segment de olmadığını zaten biliyorum.
+
+205
+00:49:36,411 --> 00:49:44,391
+COM tipi program yazıyorsanız, bu geçerli. Şimdi tekrar bakalım, neler var? Bir de bakın, OBJ geldi.
+
+206
+00:49:44,791 --> 00:49:50,152
+OBJ geldi. Ama benim istediğim ne? Exe tipi program oluşturmak değil. Zaten COM tipi yazdım bunu.
+
+207
+00:50:10,612 --> 00:50:21,851
+Exe'si 816 byte'dı. Dikkatinizi çekelim. Com'u 48 byte. Sadece ve sadece 48 byte.
+
+208
+00:50:22,304 --> 00:50:32,003
+Tamam, ne kadar küçük yer kaplıyor. Yani kompakt olmasının avantajlarından zaten bu. Şimdi çalıştıralım. Çalıştırma önceliği bakımından onu da söyleyelim.
+
+209
+00:50:32,436 --> 00:51:00,436
+COM tipi program, EXIT tipi programdan daha önce çalışır. Hocam ne demek istiyorsunuz? Normalde biz komut satırından değer alsaydık veya değer yazdırsaydık bize çeşitli sorular soracaktı. Biz değerler girecektik, sonucu ekrana yazdıracaktı. Onları da göreceğiz. Onun için nasıl yapıyorduk? Bakın 0, 2, 12, 21, A deyip programın sadece ismini yazıp Enter'a bastığımızda çalışıp sonucu üretmiş olacaktı. Ama ekrana herhangi bir şey yazdırmıyor.
+
+210
+00:51:00,436 --> 00:51:19,596
+almadığımız için, kullanıcıdan da herhangi bir şey almadığımız için program çalışıp sonlandı. Biz o yüzden programı debug edip data segmentle ilgili sonuçları arayıp bulmaya çalışıyoruz. Şimdi burada gördüğünüz gibi çalıştırılan dosya, hocam biz bunun sadece ismini yazdık ama egze midir, kom mudur?
+
+211
+00:51:20,019 --> 00:51:30,839
+diye soracak olursanız, öncelik COM tipi programın çalışmasındadır. Aynı isimde hem COM hem EXE varsa öncelikle COM tipi program çalışıyor.
+
+212
+00:51:31,099 --> 00:51:42,859
+Çünkü buradaki EXE tipi program çalışabilir bir program değil. Çünkü tek bir segmentten oluşmuş normal, standart, EXE tipi program gibi 3 segmentten oluşmuş durumda değil.
+
+213
+00:52:10,900 --> 00:52:15,699
+Taşıyamadım. Çok üzücü oldu. Neyse, şuradan alayım.
+
+214
+00:52:19,860 --> 00:52:40,659
+taşınsa çok güzel olacak. Neyse. Şimdi ilk yaptığımız işlem neydi? Bakın. JMP'la beraber zıplamak. Nereye zıplıyorduk? Sıcaklığa kadar zıplıyorduk. Yani JMP'la beraber 0, 1, 0, C'ye zıplayacak. B ile C şu aralıkta bir yerde. Pekala, geri kalanlar ne? İşte bunlar benim değerlerim.
+
+215
+00:52:42,579 --> 00:53:10,439
+ne değerlerim diyeceksiniz tabii ki. Bunlar benim siteyimin içerisinde, siteyimin diyorum, data segment içerisine yerleştirdiğim şu değerler. Bakın, n5, ondan sonra 15, eksi 19 vardı. n'in 5 olduğunu şuradan görüyorum. Tamam mı? Jump'ın, Jump'da tabii takdir edersiniz ki bir komut. Öyle olduğu için bir objekt kodu da var. Onun objekt kodu yazılmış durumda.
+
+216
+00:53:10,579 --> 00:53:20,419
+Ondan sonra bizim çeşitli buraya yerleştirdiğimiz değerler başlıyor. Bakın şurası 0005. Word olduğu için 0005.
+
+217
+00:53:22,483 --> 00:53:49,743
+Ardından F var, F neydi? 15, 15. Ardından şu eksi 19'dur muhtemelen. 14'e gelelim. 1 çarpı 16 artı 4. 1 çarpı 16 artı 4, 20. Görüyorsunuz bakın şurada 20. Ardından 32 var, 3 çarpı 16 artı 2, 50 eder. Bakın o 50 de burada. Şu muhtemelen eksi 25, E7 hesaplarsınız siz. Şu da.
+
+218
+00:53:50,228 --> 00:54:05,608
+EC de, eksi 20. Şuradaki eksi 20. Biz işte bu eksi 20'den sonraki byte, yani şu byte, 1, 0, 0, B byte'ı sonucu göreceğimiz byte. 1, 0.
+
+219
+00:54:06,931 --> 00:54:27,491
+0B byte'ı, sonucu göreceğimiz byte. Yani bunu kontrol ederken şöyle kontrol edelim. Bir de data segmentimiz de nereden başlıyor? Şu an 103'den başlıyor bakın. Jump'la beraber olduğu için. Display data segmentin 0'ı diyerek bakıyorduk hep ona. Artık 103'ü diyerek bakmamız gerekiyor. 103'den itibaren yerleştirilmiş. Bakın. Nerede?
+
+220
+00:54:30,036 --> 00:54:45,856
+Evet, bu var, bu var. Evet, şurası. Yani biz sonucu, bir değerini veya yedi değerini burada göreceğiz. Programı go diyerek sonlandırabiliyordum hatırlarsınız. Go diyerek sonlandırayım. Sonra dibak edeceğim söz. Bir bakalım ne olmuş değer?
+
+221
+00:54:50,164 --> 00:55:08,064
+0 dememem lazımdı, özür diliyorum. Display data segmentin 103'ü diyeceğim. 103'ü. 7 olmuş bakın. 7. 7 neydi? Ben de karıştırdım. 7. 7 vardır. Pekala var mı? Var. Bakın şurada. Buna eksi.
+
+222
+00:55:09,907 --> 00:55:27,907
+17 yapalım. Artık yoktur demesi lazım. Tekrar derleyeyim. Tekrar derleyeyim sizin için. Yoktur demesi lazım. Onun üzerinden çalıştırıyor olalım. Bakın nasıl derliyorum. Öncelikle mass'ımı çalıştırdım. Ondan sonra linker'ı çalıştırdım. Ondan sonra...
+
+223
+00:55:47,219 --> 00:56:05,779
+diye bir yazdı. Az önce 7 yazmıştı. Şimdi var olduğu herhangi bir senaryo için, bir bak edelim, gelin burayı. Şurası 25 olsun. 25 olsun. 25 için bir bak edelim. Nasıl ediyoruz? Tekrardan tabi kodu derlemem gerekecek.
+
+224
+00:56:11,251 --> 00:56:39,251
+debug, unassemble. Bakın, jump komutu çalıştı. Trace ettim. Nereye zıpladı? Exor, SI, SI. Yani bizim kodumuzun başladığı yere zıpladı. Buradan sonra adım adım işleyeceğiz. Lütfen değerlere bakın. SI'nin değeri şu an 0. Exor yaptığımızda da 0 olmuş olacak. Bellekte 103. alanda bulunan değeri ki o şurada yazar 5'miş. 5'i CX'in içerisine koyacak. CX şu an.
+
+225
+00:56:39,251 --> 00:56:53,552
+Şu an 3, 0'dı. Bakın, 5 oldu. AL'nin içerisine de EC, yani eksi 20 değerini koyacak, koydu. Ardından SI ile, SI şu an 0, CX'in değerini karşılaştıracak.
+
+226
+00:56:54,112 --> 00:57:05,036
+Jump not below. Biz ne yazmışız? Jump above equal. Biz şunu kontrol etmişiz. Büyük eşitsiz zıpla. O da bunu...
+
+227
+00:57:05,172 --> 00:57:25,791
+küçük değilse zıplaya dönüştürmüş. Aynı şey. Büyük eşit s ile küçük değilse aynı manaya geliyor. O yüzden jump not below yazmış. Pekala ne ile ne? S ile CX'i karşılaştırıyorum. S'nın değeri şu an sıfır, CX'in değeri şu an beş.
+
+228
+00:57:26,356 --> 00:57:38,356
+küçük değilse, buraya zıplayacak. Evet, küçük değil. S'ı, CX'den küçük mü? Küçük. Yani birisi 0, birisi 5. Küçükse...
+
+229
+00:57:40,019 --> 00:58:05,620
+küçük değilse zıplayacaktı ve şu an küçük. O yüzden biz programın akışına devam ediyor olacağız. Bir diğer karşılaştırmayı yapacak. AL'nin içerisinde olan değerle yani eksi 20 ile 15'i yani dizinin işte o elemanının değerini kontrol ediyor, karşılaştırıyor olacak.
+
+230
+00:58:08,532 --> 00:58:21,392
+Bu sefer greaterlı, lesslı bir şey. Bakın kullanıyorduk. Neyi karşılaştık? Burası eksi 20. Eksi 20, 15'ten büyük müdür? Hayır, değildir. Akışa devam edecek alttan.
+
+231
+00:58:21,732 --> 00:58:32,432
+SU'nun değerini bakın bir arttırdı. Ardından ilk karşılaştırma işlemimize doğru zıplayacak, zıpladı. Bu sefer SU bir, CX hala beş. Tekrar karşılaştırma yapacak.
+
+232
+00:58:35,860 --> 00:58:57,400
+EC birisi. Yani ED daha sayısal değer olarak ED daha büyük olacağı için ve negatif oldukları için ED daha küçüktür. O yüzden jump great olmayacak. Alt satırdan devam ediyor olacak. Tekrar döndü, geldi. Bu sefer bir dört yani yirmi sayısı var. AL eksi yirmi idi.
+
+233
+00:58:58,164 --> 00:59:05,204
+eksi 20, 20'den great midir, büyük müdür? Hayır değildir. Tekrardan SI'nin değerini arttırdı.
+
+234
+00:59:06,724 --> 00:59:15,264
+SI ile karşılaştırdı. Bu sefer 3-2 yani 50 decimal değeriyle AL'yı karşılaştırıyor.
+
+235
+00:59:17,244 --> 00:59:23,464
+Yine istediği şey olmadı. SI 4 hala daha CX olan 5'den küçük.
+
+236
+00:59:23,983 --> 00:59:44,463
+Şu an E5 var elimizde. E5, E7 var pardon. E7 değeri de işte şuradan eksi 25'e karşılık gelen değer. Yani kontrol ettiğimiz şey şu. Eksi 20 ile eksi 25'i karşılaştırıyoruz. Eksi 20, eksi 25'ten büyük müdür?
+
+237
+00:59:44,815 --> 00:59:59,815
+Great, evet, büyükse artık bakın dönmeyecek, 0, 1, 2, 2. Offsetine zıplayacak, şu offset 0, 1, 2, 2 diye değişecek, instruction pointer 0, 1, 2, 2 diye değişecek, bakın değişti.
+
+238
+01:00:00,000 --> 01:00:23,839
+Burada yaptığı işlemle sonuç değişkeninin gösterdiği o byte'a 7 değerini atamak. Atadı. Ardından sonuç return'ine zıpladı. Tamam. Display, data segmentin 100, atadığı yer neresiydi? 1, 0, B dersek 7 atadığını buradan görebiliriz.
+
+239
+01:00:25,108 --> 01:00:31,228
+atamadığı için de onu da çalıştık zaten bir yaptığını görmüştük. Dilerseniz onu da siz debug edebilirsiniz.
+
+240
+01:00:32,228 --> 01:00:34,488
+Evet, buraya kadar sorusu olan arkadaşımız var mı?
+
+241
+01:00:39,827 --> 01:00:57,107
+Buraya kadar sorusu olan arkadaşımız var mı? Yok diye anlıyorum. Bir ara verelim, bir ara verelim. 10 geçe burada olalım arkadaşlar. Şu an benim saatim 4.54 geçiyor. 5'i 10 geçe burada olalım lütfen. Teşekkür ediyorum.
+
+242
+01:17:02,228 --> 01:17:13,247
+Evet, kıymetli arkadaşlar. İkinci dersin bölümüyle beraber devam ediyor olalım. İlk parçayla ilgili sorusu olan arkadaşımız var mı?
+
+243
+01:17:17,971 --> 01:17:33,231
+Yok, çok güzelmiş bu şey ya. Yüzlü grupta bütün öğrenciler ilgili öğrenmeye hevesli anlamadıkları yerleri soruyorlar falan. Bu çok iyiymiş yani burası. Herkes zaten önceden çalışıp öğrenip gelmiş. Süper.
+
+244
+01:17:35,231 --> 01:17:36,691
+Ekran paylaşımı yapalım.
+
+245
+01:17:39,191 --> 01:17:40,971
+Evet, şimdi...
+
+246
+01:17:43,764 --> 01:17:59,764
+Bu örneği zaten çözdük. Şimdi tip 2 üzerinde duracağız kıymetli arkadaşlar. Benim şeyim çalışsaydı eğer kalemim.
+
+247
+01:18:03,315 --> 01:18:07,935
+Şunu bir çekelim şöyle, bir daha takalım.
+
+248
+01:18:10,876 --> 01:18:13,376
+Tablet çalışmayınca esprisi olmuyor tabii.
+
+249
+01:18:13,515 --> 01:18:16,636
+Şimdi çalıştı, uykuya geçiyor herhalde o da ara sıra.
+
+250
+01:18:17,335 --> 01:18:26,275
+Şimdi sintaks 2, model 2, tip 2 ne derseniz, bu sefer öncelikle kod segmenti yerleştiriyoruz, ondan sonra data segmenti yerleştiriyoruz.
+
+251
+01:18:26,695 --> 01:18:28,655
+Nasıl oluyor? Bakın, beraber.
+
+252
+01:18:30,484 --> 01:18:57,824
+şey yapıyor olalım. My segment, yine sintaks tanımını yaparak başlayacağım. Segment para my. Her iki segmentde, şey değil, modelde de yine 100 hex'den başlatıyoruz. Assume, CS, my S, DS.
+
+253
+01:18:58,899 --> 01:19:14,500
+my s, ss, my s olacak şekilde. Burada hatırlarsanız bir öncesinde jump deyip anayordama jump alıyorduk. Burada ise direkt kod kesimini öncelikle yazıyoruz.
+
+254
+01:19:15,399 --> 01:19:25,619
+proc, yine near olacak şekilde bu işlemi gerçekleştiriyoruz. Burada kodlarımız var. Ardından return ile beraber
+
+255
+01:19:26,112 --> 01:19:53,652
+yordamımızı sonlandırıyoruz. Tabii kompakt tipte olduğu için muhakkak tek bir tane yordam olacak diye bir şey yok. Birden fazla yordam da tanımlayabilirsiniz. Önümüzdeki haftadan itibaren onları da görüyor olacağız. Birden fazla yordam tanımlayabilirsiniz. En son tanımladığınız yordamdan sonra, yordamın bitmesini anlatan end prosedürden sonra buraya işte biz değişkenlerimizi yerleştiriyoruz.
+
+256
+01:19:54,112 --> 01:20:15,271
+sayı B, define byte 17 gibi örnek olarak yazıyorum bunları. Sayı define word soru işareti gibi bu alana değişkenlerimizi yerleştiriyoruz. Ardından segment tanımımızı kapatıyoruz.
+
+257
+01:20:15,380 --> 01:20:35,399
+kapatıyoruz ve en sonuncu endten sonra bu sefer hangi yordamımız ana yordamsa buraya onu yazıyoruz. Gördüğünüz gibi bu sefer öncelikle şu alanda kod segment, cs, şu alanda ise data segmenti yerleştirmiş olduk.
+
+258
+01:20:35,828 --> 01:20:52,288
+Burada ise şöyle düşünün, az önce neydi? Yani diğer sintaks 1'de bizim nasıl bir problemimiz vardı? Datalar üstü olduğu için kodlar da aşağıda. Bir yeni değişken eklediğimizde kodların hepsi kayıyordu.
+
+259
+01:20:52,868 --> 01:21:03,648
+Burada ise gördüğünüz gibi şurada kodlar yukarıda, data aşağıda. Yeni bir satır kod eklediğinizde bu sefer datalar aşağıya doğru kayıyor olacak. Buna dikkat etmek lazım.
+
+260
+01:21:03,828 --> 01:21:12,847
+aradığınız datayı aradığınız yerde bulamayabilirsiniz. Bu sebeple dikkat edilmesi gereken hususlardan birisi bu.
+
+261
+01:21:12,847 --> 01:21:29,188
+Şimdi bir örnek yapalım. Yine örnek üzerinden güzel anlaşılsın. 15 yaşından küçük ve 50 yaşından büyük 10 tane kişinin olduğu sıraya yaş koşulunu bozan 11. kişi karışmıştır.
+
+262
+01:21:29,488 --> 01:21:32,528
+Yani 15 ile 50 yaş arasında birisi girmiş buraya.
+
+263
+01:21:33,288 --> 01:21:41,528
+Sıradaki tüm kişilerin yaşları bilindiğine göre sıraya sonradan karışan kişinin baştan kaçıncı sırada olduğunu bulan komutları asemble programını yazalım.
+
+264
+01:21:41,948 --> 01:21:46,968
+Yani 11 kişilik bir sıra var. Bunlardan birisi 15 ile 50 yaş arasında.
+
+265
+01:21:48,007 --> 01:21:50,667
+Tamam mı? Bunu bulalım. Kaçıncı sırada olduğunu.
+
+266
+01:21:51,208 --> 01:21:54,488
+Tahmin edersiniz ki yaş söz konusu olduğu için...
+
+267
+01:21:55,604 --> 01:22:19,744
+bütün değerler pozitif olacak dizideki ve işte 128'den, 255'den hatta burada pozitif olacağı için, 255'den büyük bir insan yaşa söz konusu olamayacağı için, Byte tanımlı bir dizide muhatapız ve karşılaştırmalar, yaş üzerinden karşılaştırma yapacağımız için, ibovlu, bilovlu şeyler oluyor, olacak.
+
+268
+01:22:22,707 --> 01:22:23,707
+Başlayalım.
+
+269
+01:22:26,067 --> 01:22:27,147
+Start.
+
+270
+01:22:28,547 --> 01:22:34,927
+Yine tabii bir döngüsel işlem yapacağımız için onun şeyi iyi olmuş olsun.
+
+271
+01:22:35,987 --> 01:22:40,167
+Küçük eşik 15.
+
+272
+01:22:41,188 --> 01:22:44,127
+Bir de büyük eşik var.
+
+273
+01:22:44,127 --> 01:22:46,108
+O da 50.
+
+274
+01:22:50,323 --> 01:23:02,183
+Bu aralığı kontrol edeceğim. Bakın. While koşulumu yazıyorum. Tekrar söylüyorum. Böyle bir soruda bu 15 ile 30 yaş arasında birisi var. Onu bulun sorusunda.
+
+275
+01:23:03,123 --> 01:23:23,984
+kaçın mesela üçüncü sıradaysa dördüncü sıradaki, beşinci sıradakine bakmamıza gerek yok. Tamam mı? Bu önemli husus. Yani while kullanmamız lazım, for'da çözmememiz lazım. Bir önceki problemde dizinin içerisinde o değer var mı yok mu bilmiyorduk. O yüzden dizinin sonuna vardım mı diye kontrol etmemiz gerekiyordu.
+
+276
+01:23:23,984 --> 01:23:31,123
+Burada ise sorunun akışında kesinlikle birisi karışmış. Kaçıncı sırada onu bul diyor. Yani dizinin sonuna vardım mı diye kontrol etmemiz gerekiyordu.
+
+277
+01:23:31,123 --> 01:23:53,523
+diye kontrol etmeme ekstradan gerek yok. Ama ne yapmam lazım? Şöyle ki dizinin, dizinin iyinci elemanı, iyinci elemanı bizim, bizim küçük eşikten
+
+278
+01:23:54,355 --> 01:24:11,456
+daha küçükse, dönme koşulunu yazıyorum, veya dizinin, dizinin iyiyince elemanı bizim büyük eşiğimizden daha büyükse o aradığımız kişi değildir. Değil mi?
+
+279
+01:24:12,884 --> 01:24:38,764
+Özellikle OR'la çözmek istedim. OR yapısı kurayım diye. Çünkü daha önce hiç while yaptık belki ama OR'lu bir şeyler yapmamış olabiliriz. Erkan Hoca'nın tarz örnekler çözdü bilmiyorum ama OR'lu bir şeyler yapmamışızdır diye. Şimdi bu dönme koşulumuz yani bizim o yaş değerimiz 15'den küçükse değil mi? Yeni değere geçeceğiz. Yeni değere geçmek için i'nin değerini tabii ki bir...
+
+280
+01:24:40,083 --> 01:24:52,103
+arttırmamız lazım. Yeni değere geçeceğiz. Veya o değer elliden büyükse yine iyiyi bir arttıracağız, yeni değere geçeceğiz.
+
+281
+01:24:52,443 --> 01:24:55,984
+Mesela çeşitli sayılar için örnek yapalım. 14 için.
+
+282
+01:24:56,416 --> 01:25:21,136
+34 için, 54 için örnek yapalım. 14. Diyelim ki, şurası 15 ya, bakın şunlar da standart. Burası 15, şurası da 50. 14, 15'ten küçük müdür? Küçüktür. Tamam mı? Vup, iyi bir arttırdım. Artık şuna geldim. Küçük olduğu için. Geldim. 34, 15'ten küçük müdür?
+
+283
+01:25:22,899 --> 01:25:50,279
+değildir. Bunu kontrol etmem lazım. Bu tamam. Bunu sağlayamadım ama şunu bile sağlasam yeterli olacak. VEYA'ya yeterli olabilir. VEYA'nın koşulları neler? Mesela her ikisini de sağladım, dönerim. Bunu sağladım, bunu sağlayamadım, dönerim. Bunu sağlayamadım, bunu sağladım, dönerim. Ne zaman dönmem? Her iki koşulu da bozuyorsa dönmem. Şunu bozdu. Pekala.
+
+284
+01:25:50,899 --> 01:26:08,239
+54, 50'den büyük müdür? Hayır değildir. Hem bunu bozuyor hem bunu bozuyorsa işte çıkıyorum. Bir de 54 için deneyelim. 54, 15'den küçük müdür? Hayır değildir. Geldik buraya. 54, 50'den büyük müdür? Evet büyüktür. Bunu sağladığı için yine dönüyor olacağım.
+
+285
+01:26:08,576 --> 01:26:35,395
+Tamam. Burası önemli, dikkat edilmesi gereken hususlardan birisi. Çıktığımızda da ise index diye bir değişkenin içerisine i'yi koymuş olalım ve programımızı sonlandıralım. Bu or yapısını nasıl yazacağız? Yani assembly kodunu nasıl yazacağız? Buradaki olayımız o. Anlaşılmıştır. İnşallah diye ümit ediyorum. Burada sorusu olan var mı?
+
+286
+01:26:38,996 --> 01:26:40,515
+Yok, çok güzel.
+
+287
+01:26:41,476 --> 01:26:47,175
+Şimdi yine şey tarafına dönüyor olalım.
+
+288
+01:26:47,476 --> 01:26:49,296
+Önce tabii kodunu yazalım, bunu kapatalım.
+
+289
+01:26:49,835 --> 01:26:52,935
+Önce kodunu yazıyor olalım.
+
+290
+01:26:55,916 --> 01:26:57,956
+Yine bunu da kaydedelim.
+
+291
+01:26:58,056 --> 01:27:01,076
+Bunu sizle paylaşacağız çünkü kıymetli arkadaşlar.
+
+292
+01:27:01,779 --> 01:27:15,119
+Avacist'ten ve Google Classroom'dan paylaşabilirsiniz. Bu arada dersin bir Google Classroom'u var. Artık beni de takip ettiğinize göre, bundan sonra online grupları da ben vereceğime göre, lütfen o Google Classroom'a üye olun.
+
+293
+01:27:15,119 --> 01:27:26,779
+Orada çeşitli duyurular, işte buradaki dersteki örnekleri falan, oradan paylaşıyorum. 02-1221-B.ASM olmuş olsun bunun adı.
+
+294
+01:27:27,188 --> 01:27:51,728
+Başlayalım. My segment, segment'e herhangi bir şekilde isim verebiliyoruz, biliyorsunuz. Segment para, my olmuş olsun. Origin, 100 hex, burada. Assume, CS, my, S, DS, my, S, SS, my, S.
+
+295
+01:27:55,060 --> 01:27:55,948
+Bu.
+
+296
+01:27:56,724 --> 01:28:08,144
+isminde yordamımız başlıyor. Proc, near. Hemen tüm böyle sintaksal şeyleri yapayım. Ben genelde severim bunu. Sonra bırakınca unutuluyor çünkü.
+
+297
+01:28:08,863 --> 01:28:18,164
+End, prosedür. Hemen yine buraya değişkenlerimizi yerleştirebiliriz. Bir dizinin içerisinde 11 tane eleman tanımlayacağız.
+
+298
+01:28:24,724 --> 01:28:37,744
+istenilen eleman var mıdır, yok mudur? Ona beraber karar vereceğiz. Hem olduğu durum için hem de olmadığı durum için çeşitli örnekler yapabiliriz.
+
+299
+01:28:37,744 --> 01:28:46,783
+Burada 11 elemanın olmasına, şurada virgül var. 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11. Bu 14 olsun. Şöyle 13 olsun.
+
+300
+01:28:48,819 --> 01:28:53,859
+tamam 15'den büyük, 50'den küçük, 16 var mesela bir tane. Olmadığı duruma da çeşitli örnekler
+
+301
+01:28:54,579 --> 01:29:22,120
+yapabiliriz. Dizimizin böyle olduğunu yazdık. Bir k eşik diye değerimiz var. Define byte 15. B eşik diye değerimiz var. Define byte 50. Ve index diye bir değerimiz var. O da soru işareti olmuş olsun. Duruma göre hangi indiz buna eşitse onun içerisine atıyor olacağız.
+
+302
+01:29:22,579 --> 01:29:27,440
+Sonrasında segmentimizi end segment diyerek kapatıyorum.
+
+303
+01:29:27,940 --> 01:29:33,300
+End diyerek kaynak buldan başlayacak şekilde burayı da noktalayalım.
+
+304
+01:29:33,399 --> 01:29:36,479
+İşte buraya artık kodumuzu yazıyor olacağız.
+
+305
+01:29:37,039 --> 01:29:44,920
+Şurada gördüğünüz i'ye bu sefer ben arkadaşlar BX şeyini şöyle yapayım BX.
+
+306
+01:29:45,939 --> 01:30:09,959
+i, bx üzerinde olmuş olsun. Çeşitli böyle işlemler gerçekleştireceğim. Bakın, şurada dizi i sürekli değişiyor. Görüyorsunuz, dizi i, bir de k. Compare'da her iki tarafın da, bunu sürekli söylüyoruz, söylemeye devam edeceğiz. Compare'da her iki tarafın da değişken olduğu bir komut söz konusu değil. O yüzden sabit olan şunu.
+
+307
+01:30:10,484 --> 01:30:25,424
+AL'ye, şunu da AH'a atayarak o şekilde işlem yapayım. Bir taraf bellek alanı, bir taraf register olabilir. Her ikisinde de böyle olabilir. O şekilde işlem gerçekleştireceğiz.
+
+308
+01:30:25,424 --> 01:30:32,344
+Yapalım. Öncelikle BX, BX köşeli parantezler içerisinde kullanılacak bu.
+
+309
+01:30:32,724 --> 01:30:55,504
+değer. Şurada gördüğünüz i değeri bakın köşeli parantezler içinde kullanılıyor. Köşeli parantezler içerisinde kullanılabilecek registerlar nelerdi? S, DI ve BX. Sadece bu kadar register kullanabilirsiniz. Üçünü. Ben az önce S'ı kullandım. Şimdi BX'i tercih ettim. Daha sonra belki DI'yi de kullanabiliriz. Farklı bir örnekte.
+
+310
+01:30:56,564 --> 01:31:09,524
+Ardından MOV AL, K eşik, MOV AH, B eşik diyerek eşik değerlerini de bunun içerisine atmış olduk.
+
+311
+01:31:10,524 --> 01:31:14,764
+Şimdi karşılaştırma işlemine başlayalım. Şunu karşılaştırarak başlayayım.
+
+312
+01:31:14,764 --> 01:31:17,644
+Compare, dizi.
+
+313
+01:31:18,771 --> 01:31:46,771
+dizi, BX, AL. Bakın az önce ne dedim size? Böyle bir durumda ilk operant AL olursa daha performanslı çalışır. Ama burada özellikle ilki almayacağım. Yani siz ilki alabilirsiniz. Küçüktürün zıttı, büyükeşittir. Bunu yaparak, kontrol ederek ilk değere de alabilirsiniz. Ama bu şekilde de çalışıyor. Yani ihtiyacınız buysa kendinizi zorlayamıyorsunuz, böceğini kurgulayamıyorsunuz, bu da olur. Ama performansla ilgili bir soru soruyor.
+
+314
+01:31:46,771 --> 01:31:56,771
+daha iyi performanslı bir şey yazılmasıyla ilgili bir problem varsa, AL'nin ilk operant olması tabii ki daha hızlı, canlan bu işi gerçekleştirecektir.
+
+315
+01:31:57,451 --> 01:32:04,412
+Şimdi, EBOV'lu, BILOV'lu komutlar kullanıyoruz. Burada da, şurada da, her iki tarafta da EBOV'lu, BILOV'lu komutlar kullanıyoruz.
+
+316
+01:32:04,551 --> 01:32:14,771
+Niye? Çünkü negatif bir değer yok. Bununla bunu karşılaştırıyoruz. Eğer ki küçükse, bakın dizi İ'nin değeri, AL'nin o eşik...
+
+317
+01:32:14,771 --> 01:32:26,291
+değerinden yani dizinin değeri 15'den küçükse ne yapacağız? Küçükse bir sonrakine geçeceğiz. Bir sonrakini sorsun diye geçeceğiz.
+
+318
+01:32:27,152 --> 01:32:37,832
+Pekala küçük değilse yani 15'den büyükse küçükse tekrar söyleyelim güzel anlaşılması adına diyelim ki 13 geldi. 13 15'den küçükse
+
+319
+01:32:38,484 --> 01:33:00,244
+15 ile 50 arasında bir değer olamaz zaten diye sonraki elemana geçiyorum. Ama 15'e eşit veya 15'den büyükse bu ne manaya gelir? O aralıkta olabilir. 15 ile 50 aralığında olabilir. Onu tekrardan 50'den büyük müdür diye karşılaştırmam lazım.
+
+320
+01:33:01,203 --> 01:33:17,963
+dizi, BX, AH ile bu sefer karşılaştırıyorum. Bu sefer bulma şeklinde zıplayayım. Eğer ki küçük eşitse bulduk. O manaya geliyor. Küçük eşitse bakın şurası.
+
+321
+01:33:18,484 --> 01:33:46,463
+burası. Büyükse yine döneceğiz. Ama ben bulduğum bir yere zıplamak istiyorum ki şuradan çıkabileyim. Bu böyle olduğu durumda bulmuş oluyorum. Yani bu koşulu sağlayamıyorsam ve şu koşulu sağlıyorsam bulduğum manasına gelir ve bulduğum durumdaysa ekstradan bir buldum isimli label'a zıpladım. Pekala bulamadığım durumda işte o zaman sonraki label'ını
+
+322
+01:33:46,484 --> 01:34:07,344
+yazabilirim. Increment, BX diyorum. Tabi jump, dönle bir döngüyü burada kurgulamamız gerekiyor. Ardından bulundu kısmını işin içerisine sokuyorum. Ne yapıyorduk? Orada da move, move, index.
+
+323
+01:34:07,891 --> 01:34:35,872
+isim içerisine, B, bakın, burası önemli, burası önemli, index register'ı byte tanımlı olarak tanımlanmış. Benim index register'ımsa BX. Buraya BX yazamam. Burası byte, burası word olmuş olur. Yapabileceğim iki alternatif var. Ya gelip buradan burayı word yaparım, boşuna yer kaplamış olur. Ya da sıranın 11 elemanlı olduğunu biliyorum, BX.
+
+324
+01:34:35,891 --> 01:34:58,351
+x'in high tarafı herhangi bir şekilde değişmeyecektir. Hep sıfır kalacaktır. BX'de işlem yapıp burayı sadece BL'yi atamam yeterli olacaktır. Tamam. Bu da yine önemli hususlardan birisi. Bu yaptığımız işler. Pardon. Şöyle çok silmeyelim. Şu aradaki boşlukları uçurmaya çalışıyorum da.
+
+325
+01:35:02,739 --> 01:35:26,860
+Evet. Kısaca, hani özetlemek gerekirse, yapılan şeyler bunlar. Gelin, hani hata, sintaksal hata yapmış olabiliriz, dojikıl hata yapmış olabiliriz. Ben de yapıyorum. Hepiniz de yapıyorsunuzdur. Ne yapacağız? Kodumuzu debug edeceğiz. Beraber debug edelim. Yine bizim şeyde, debug ortamımızda.
+
+326
+01:35:33,747 --> 01:35:48,207
+şeyimiz, C ne diyorduk, users'ın altındaydı. Benimki ASP'nin içerisindeydi. Ondan sonra C 2.3 istediğince onun içerisine girmiş oluyordu.
+
+327
+01:35:48,207 --> 01:36:00,747
+Şimdi dir diyerek benim artık bu klasörümü de görebilirim. Bakın şurada hatta şöyle diyelim dir 02121B.8'di yıldız.
+
+328
+01:36:02,036 --> 01:36:12,876
+Gördüğünüz gibi, ASM uzantılı, tek bir tane dosya, 391 byte boyutunda. Derleyelim, 021221B.ASM.
+
+329
+01:36:14,931 --> 01:36:16,792
+Herhangi bir hata yok.
+
+330
+01:36:17,192 --> 01:36:23,452
+Dir ile sadece egzenin oluştuğunu, şey OBJ'nin oluştuğunu burada görüyor olacağız.
+
+331
+01:36:23,992 --> 01:36:27,672
+Ardından link edelim, linker'dan geçirelim.
+
+332
+01:36:27,672 --> 01:36:32,591
+021221B.OBJ
+
+333
+01:37:24,212 --> 01:37:46,932
+değerlerimiz yerleştirilmiş oldu. Bakın bir 14 değeri var. Data segmentimize bakıyoruz. İlk zaten değişken data segmentte ilk değer 14. Şurada. Sonra 11 var. Sonra 48 çarpı 3 şey 3 çarpı 16 48 54 var. Sonra 3E var. Yani 48 artı 14.
+
+334
+01:37:47,471 --> 01:38:07,871
+52 mi yapıyor? 62 mi? 62. Bakın burada. Bunları sırayla böyle yerleştirmiş durumdalar. Ben sadece şu an hangi adresten itibaren başladığına bakacağım? 1.0.1.B. Display Data Segment'in 01.1.B.
+
+335
+01:38:13,908 --> 01:38:41,588
+bir yerde, şurada gördüğünüz 32, hexadecimal 32'dir bu değil mi? 3x16, 48 artı 2, 32. Yani şu 32'den sonraki byte'da işlemin sonucunu görmeyi bekliyorum. İşlemin sonucunu görmeyi bekliyorum. Benim verilerim bunlar. 15 ile 50 arasında bir değer var mı burada? Var. Şurada 16. Yani onun indisini bana söylemesini bekliyorum. Şurada.
+
+336
+01:38:41,908 --> 01:38:56,208
+go diyerek sonlandırdım. Yine display data segmentin 1, 1, B'sinden itibaren baktığımda bakın A yani 10. indisli elemanı dedi.
+
+337
+01:38:56,888 --> 01:39:02,808
+İşte 0'dan başlıyor. 11 elemanı zaten. 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10. Bu da
+
+338
+01:39:03,731 --> 01:39:31,072
+bizim 11. elemanımız ama 0 olduğu için ilki 10. indiste olmuş oluyor. Değiştirelim, değiştirelim. Şurası 12 olsun, şurası 31 olsun. Hani farklı yerde olduğunu yorum yapar 0, 1, 2, 3, 4. 4'te bulması lazım. Tekrar derlememiz gerekiyor. Tabii ki bunun için. Derleyelim. Mass'dan geçirdik. Linker'dan geçiriyoruz.
+
+339
+01:39:52,404 --> 01:39:55,724
+Gördüğünüz gibi, dördüncü indisinde olduğunu görüyoruz.
+
+340
+01:39:56,084 --> 01:39:59,384
+Tekrardan L, load diyerek yükleyelim, yükledik.
+
+341
+01:40:00,000 --> 01:40:27,760
+trace edelim, dilerseniz. Nasıl olduğunu bir görelim. Adım adım ilerleyelim demek yani trace etmek. Registerların durumuna ilk çalışacak şeye de bakalım. 15 değerini AL'nin içerisine, yani o küçük eşik değerini AL'nin içerisine koyduk. 50 değerini de AH'ın içerisine koyuyorum. Bakın 15 şurada, 50 şurada. Şimdi karşılaştırırken şu bellek alanı dizinin ilk elemanı E, yani 14.
+
+342
+01:40:28,000 --> 01:40:30,840
+14 ile AL'yı karşılaştırıyorum, karşılaştırdım.
+
+343
+01:40:31,479 --> 01:40:35,779
+Küçük müdür diye soruyor bakın, CAM, BLOW, küçük müdür?
+
+344
+01:40:36,159 --> 01:40:39,819
+Evet, küçüktür. Küçükse şu offset'e zıplayacağım.
+
+345
+01:40:40,380 --> 01:40:47,140
+Yani şuradaki offset numaram 1, 1, 3 olacak ve Instruction Pointer'ım o olacak, 1, 1, 3.
+
+346
+01:40:48,399 --> 01:40:51,319
+Yeni elemana geçmek için akış diagramında da gördüğümüz üzere
+
+347
+01:40:51,956 --> 01:41:12,655
+çevrim değişkeninin değeri BX'i bir arttırdık. Şurası bir olmuş oldu. Süper. Ve döngüde döndük. Tekrardan karşılaştırıyoruz. Bu sefer yeni elemana geçtik. Bu eleman 11. 11, 15'ten küçük müdür? Evet, küçüktür. Bu sefer yine arttırdık.
+
+348
+01:41:13,460 --> 01:41:36,399
+geldik. 36, 36 egzidesimal, decimal olarak kaçtır? 3 çarpı 16, 48 artı 6, 54'tür. 54, 15'ten küçük müdür? Hayır. Küçük olmadığı için hemen bir alt satırdan devam edecek. Bakın bu sayı buraya zıplamadı. Hemen bir alt satırdan devam etti. Buraya geldi. Pekala, 54, 50'den.
+
+349
+01:41:37,395 --> 01:41:42,456
+küçük eşit midir? 54, 50'den küçük eşit midir? Hayır, büyüktür.
+
+350
+01:41:42,815 --> 01:41:46,095
+Bu koşulu da sağlanmadığı için buraya zıplamayacak.
+
+351
+01:41:46,395 --> 01:41:47,835
+Hemen B6'dan devam edecek.
+
+352
+01:41:48,175 --> 01:41:50,015
+Yani tekrardan arttırdı.
+
+353
+01:41:50,595 --> 01:41:51,536
+Tekrardan döndük.
+
+354
+01:41:51,835 --> 01:41:54,875
+Bu sefer gelen değerimiz E14'tü.
+
+355
+01:41:55,456 --> 01:41:57,775
+48 artı 14, 62.
+
+356
+01:41:58,996 --> 01:42:02,175
+62, 15'den küçük müdür?
+
+357
+01:42:02,655 --> 01:42:03,595
+Hayır değildir.
+
+358
+01:42:04,036 --> 01:42:05,115
+O yüzden devam ediyoruz.
+
+359
+01:42:07,115 --> 01:42:08,115
+62, 50'den...
+
+360
+01:42:09,203 --> 01:42:36,983
+Küçük eşit midir? Hayır değildir. Hemen alt satırından devam ediyoruz. BX'in değeri bir arttı ve tekrardan döngüde döndük. 16 artı 15, 31 değeri. Compare 31 ile 15'i karşılaştırıyoruz. 31, 15'ten küçük müdür? Hayır. O yüzden zıplamıyoruz. Hemen bir alt satırından devam ediyoruz. Tekrardan karşılaştırıyoruz. 31, 50'den küçük eşit midir?
+
+361
+01:42:37,203 --> 01:42:59,203
+Bakın ilk defa bu soruya böyle cevap veriyorum. Evet, 31.50'den küçük eşittir. 31.50'den küçük eşittir olduğu için şuraya zıplayacağız bakın bu sefer. Zıplayacağımız demek ne demek? Şu data segment şey, bizim segment adresimizin şu offsetini zıplayacağız demek. Bu arada şunu da söylemek istiyorum bakın, hani şimdiye kadar söylemedim.
+
+362
+01:43:05,203 --> 01:43:07,683
+ve kod segmentin tamamının
+
+363
+01:43:07,683 --> 01:43:09,304
+değeri aynı
+
+364
+01:43:09,304 --> 01:43:11,203
+ve stake pointer'ın değeri
+
+365
+01:43:11,203 --> 01:43:12,963
+siteye bir tane şey koyduğumuzda
+
+366
+01:43:12,963 --> 01:43:15,523
+fffff'den başlıyor demiştik ya
+
+367
+01:43:15,523 --> 01:43:17,543
+orada kalmış
+
+368
+01:43:17,543 --> 01:43:19,363
+durumda. Siteye push pop yapmadık
+
+369
+01:43:19,363 --> 01:43:21,523
+bu örneklerde. Yapsaydık onun değerinin de
+
+370
+01:43:21,523 --> 01:43:22,923
+değiştiğini görüyor
+
+371
+01:43:22,923 --> 01:43:25,243
+olacaktık. Şimdi küçük eşit
+
+372
+01:43:25,243 --> 01:43:27,224
+olduğu için offset değeri
+
+373
+01:43:27,224 --> 01:43:28,884
+şu 1 1 1 değeri
+
+374
+01:43:28,884 --> 01:43:31,243
+1 1 6 ve instruction pointer
+
+375
+01:43:31,243 --> 01:43:33,143
+değeri de bu şekilde değişiyor.
+
+376
+01:43:33,203 --> 01:43:49,867
+olacak. Bakın, değişti. Yaptığı işlem ne? BL'nin değerini yani 0, 4'ü index değişkeninin alanına koymak koydu. Return'le beraber sonlandırıyoruz zaten. Biz display data segmentin
+
+377
+01:43:50,868 --> 01:44:06,688
+1, 1, B'di herhalde. 1, 1, B'ye baktığımızda artık şurada 4'ün olduğunu görüyoruz. Program başarılı bir şekilde sonlanmıştır demek bu. Evet, burada sorusu olan var mı? Sorusu olanların sorularını alabiliriz.
+
+378
+01:44:08,928 --> 01:44:17,268
+COM tipinin diğer sintaksı bu. COM tipinin sintaks ikisine bir örnek yapmış olduk yani.
+
+379
+01:44:21,203 --> 01:44:44,963
+Evet, sorusu olan yoksa çok teşekkür ediyoruz arkadaşlarımıza. Bu haftalık konumuz COM tipiydi. Böyle biraz hızlı anlatmış olduk belki. Önümüzdeki hafta yordamlar arasında parametre aktarmayla ilgili çeşitli kavramlara bakıyor olacağız. Kendinize iyi bakın, sağlıcakla kalın. Görüşmek üzere, iyi akşamlar diliyorum.
+
+380
+01:44:46,104 --> 01:44:48,503
+İyi akşamlar hocam.
