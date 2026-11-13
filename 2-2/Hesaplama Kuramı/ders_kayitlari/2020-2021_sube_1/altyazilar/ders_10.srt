@@ -1,0 +1,3415 @@
+1
+00:05:31,572 --> 00:05:33,112
+Merhaba arkadaşlar, günaydın.
+
+2
+00:05:38,963 --> 00:05:39,764
+Aydın hocam.
+
+3
+00:05:43,923 --> 00:06:06,923
+Uzun bir aradan sonra tekrar dersteyiz. Arkadaşlar, şimdiden size haber vermek istiyorum. Biliyorsunuz bu ders kapsamında 3 tane quizimiz vardı. Bir tane de yıl içi sınavımız vardı. 3 tane quizin 3. quizini 13. hafta yapacağız. Yani önümüzdeki hafta, 12. hafta.
+
+4
+00:06:08,084 --> 00:06:34,923
+Önümüzdeki haftadan sonraki hafta, yani 13. hafta kuyuzimiz olacak. Lütfen şimdiden çalışın. Biliyorsunuz, dersin başlangıcında da söylemiştim. Kuyuzlar da vizeler gibi etkili. Yani her bir kuyuzun etkisi %10 olduğunu düşünülürse öyle yabana atılacak bir puan da değil. Yani eğer bu dersi geçmek istiyorsanız kuyuzlardan da iyi notlar almaya çalışmanız lazım.
+
+5
+00:06:36,084 --> 00:06:51,744
+İkinci vizemiz yok. Yani daha önceden belirttiğimiz gibi hem ayrıca Balokna'da açıkladığımız gibi ikinci vizemiz yok. Sadece üçüncü vizemiz var. Şimdiden çalışmanızı tavsiye ediyorum.
+
+6
+00:06:56,915 --> 00:07:14,596
+PDA'yı pushdown otomatları görmüştük. Pushdown otomatlarla verilen gramerleri gerçekleştirmiştik. Pushdown otomatların normal NFA'den, DFA'den farkı bir tane ekstradan stakin olmasıdır.
+
+7
+00:07:14,596 --> 00:07:23,596
+Bu ekstradan pushdown otomatlarda durumlar arasındaki geçişler bu stak içerisindeki değerlere göre de...
+
+8
+00:07:24,627 --> 00:07:29,847
+Değerlere göre yapılmaktadır. Hem girişleri hem de bu stek içindeki değerlere göre yapılmaktadır.
+
+9
+00:07:31,367 --> 00:07:38,788
+Şimdi, kısacası şöyle hatırlar isek, sadece en başını hatırlatmak istiyorum.
+
+10
+00:07:41,007 --> 00:07:47,528
+Örnekler çözmüştük. Neyse, şöyle anlatayım. Buradan kaldığımız yerden devam edelim.
+
+11
+00:07:52,180 --> 00:07:56,340
+Şöyle yapalım.
+
+12
+00:07:59,800 --> 00:08:11,639
+Pushdown automata şöyle bir şey var, durumlar var. Durumlar arasındaki şu geçişin neye bağlı? Stake'teki değerlere de bağlı. Ne yapıyor burada?
+
+13
+00:08:17,492 --> 00:08:33,032
+En üstteki sembol W1 iken, W1'i al, pop et ve W2'yi siteyin içine push et. Şimdi bu şekilde transition'lar, geçiş fonksiyonları tanımlanmaktaydı.
+
+14
+00:08:33,032 --> 00:08:41,231
+Şimdi buradan kısaca hemen devam edeceğim. Burayı anlattıktan sonra bir iki tane kısa örnek yapacağız.
+
+15
+00:08:41,652 --> 00:09:06,332
+Ok, let us now continue in English. So, for pushdown automates, PDAs, the transition depends on the input and also the values in the stack. As you see in this transaction, for input A, you pop string W1 from the stack and you push string W2 into the stack.
+
+16
+00:09:06,707 --> 00:09:09,707
+ve
+
+17
+00:09:10,451 --> 00:09:21,132
+If input is A and if there is a string inside the stack, there is a string W1 inside the stack, then this transition is valid.
+
+18
+00:09:21,132 --> 00:09:27,032
+So this transition can be expressed as a transition function as this transition function.
+
+19
+00:09:27,372 --> 00:09:36,192
+For the transition function, we use the delta symbol. As you see that in this transition expression, you are at the state Q1.
+
+20
+00:09:36,792 --> 00:09:38,451
+And for input symbol A,
+
+21
+00:09:38,451 --> 00:09:51,091
+And for the string W1 inside the stack, you can go to this next state, this is Q2, and you push the W2 into the stack.
+
+22
+00:09:51,091 --> 00:10:04,432
+So as you see that this is a set, not only the doubles. So this is the set of doubles. So actually you can write, as you know that
+
+23
+00:10:05,812 --> 00:10:13,652
+As you know that pushdown automata are non-deterministic.
+
+24
+00:10:14,652 --> 00:10:21,432
+So you can go to many states.
+
+25
+00:10:21,711 --> 00:10:24,831
+Let's say this is A, W1.
+
+26
+00:10:25,731 --> 00:10:26,991
+It could be like this.
+
+27
+00:10:26,991 --> 00:10:28,991
+You can go to Q2.
+
+28
+00:10:29,831 --> 00:10:32,352
+You push the input string W.
+
+29
+00:10:33,331 --> 00:10:42,811
+Or you can go to QL and you can push the string WL and so on.
+
+30
+00:10:42,811 --> 00:10:52,892
+You can go to the many states because pushdown automates are non-determined streams.
+
+31
+00:10:59,860 --> 00:11:06,220
+are non-deterministic.
+
+32
+00:11:07,720 --> 00:11:08,220
+Okay.
+
+33
+00:11:09,120 --> 00:11:15,400
+And here is the non-deterministic expression.
+
+34
+00:11:15,600 --> 00:11:17,240
+So you are at state Q1.
+
+35
+00:11:17,420 --> 00:11:21,580
+You can go to the state Q2 or you can go to the state Q3.
+
+36
+00:11:22,111 --> 00:11:28,751
+But this, here we have to remember that, for example, there is a stake here.
+
+37
+00:11:30,211 --> 00:11:45,692
+In this stake, there is $, bottom, and here is, there is a string W, okay, here is string W1, is here, and you are at stake Q1.
+
+38
+00:11:46,812 --> 00:11:49,132
+So here you have a stake.
+
+39
+00:11:52,307 --> 00:11:55,307
+This is $. So here is...
+
+40
+00:11:58,307 --> 00:12:02,307
+Now, there is only the string W2.
+
+41
+00:12:03,307 --> 00:12:06,307
+Here, you have also the stake.
+
+42
+00:12:12,755 --> 00:12:17,956
+And here you have string W3 inside the stick.
+
+43
+00:12:18,735 --> 00:12:18,935
+Okay?
+
+44
+00:12:19,776 --> 00:12:21,235
+So as you see that,
+
+45
+00:12:22,316 --> 00:12:27,615
+NFA, as you see that PDAs are non-deterministic.
+
+46
+00:12:27,615 --> 00:12:37,675
+So in such case, this transition and this transition runs at the same time simultaneously, which means that you are here next.
+
+47
+00:12:38,323 --> 00:12:55,343
+For symbol A, you will pop stringW1 from the stack and you will go to the state Q2. At the same time, you will go to the state Q3. So you are at state Q2 and Q3 at the same time.
+
+48
+00:12:55,923 --> 00:13:23,923
+Bu, bu
+
+49
+00:13:23,923 --> 00:13:25,923
+V1 is replaced by W2.
+
+50
+00:13:25,923 --> 00:13:33,923
+And here, this take, in this case, W1 is replaced by W3.
+
+51
+00:13:33,923 --> 00:13:34,923
+Okay?
+
+52
+00:13:34,923 --> 00:13:47,923
+And this transitions function can be represented like this. As you see that the output, so it is set because you are at state q1 versus symbol A.
+
+53
+00:13:48,788 --> 00:14:15,788
+For input symbol A, for the string W1 inside the stack, you will go to the Q3, or, means end, you go to Q3 simultaneously. But if you go to Q2, you have a, you will push the W2 string inside the stack. For Q3, if you go to Q3, you will push W3 in the...
+
+54
+00:14:16,148 --> 00:14:39,148
+So, this is the formal definition of PDAs. As you see that the one, two, three, four, five, six, seven tuples, this is seven tuples. So, Q is the states, the number of states, Q1, Q2, Q3, this is the set of the states. Sigma is the input alphabet.
+
+55
+00:14:40,052 --> 00:14:45,052
+Okay, gamma is the stack alphabet.
+
+56
+00:14:45,052 --> 00:14:50,052
+And delta is the transition function. Q0 is the start state.
+
+57
+00:14:50,052 --> 00:14:58,052
+And Z is the stack start symbol. Generally, we represent the stack start point.
+
+58
+00:14:58,052 --> 00:15:07,052
+This is Z. For example, this could be Z could be the dollar, for example, to represent the start state.
+
+59
+00:15:07,264 --> 00:15:19,004
+And F is the set of the accepting or final states. So this is seven tuple expression of automates.
+
+60
+00:15:19,903 --> 00:15:25,043
+So instantaneous descriptions, we have also instantaneous descriptions for PDA.
+
+61
+00:15:33,556 --> 00:16:00,652
+Bu, bu
+
+62
+00:16:22,419 --> 00:16:30,419
+Açık bir şekilde, bu bir şekilde, $'ı kullanıyor.
+
+63
+00:16:30,419 --> 00:16:34,419
+Bu, bu, z'in symbolu.
+
+64
+00:16:50,515 --> 00:16:51,515
+Bir second.
+
+65
+00:16:53,515 --> 00:16:55,515
+Yes, this is much better.
+
+66
+00:16:56,515 --> 00:17:09,516
+For input B, for input B, you will pop symbol A, you see, for input B, you will pop symbol A and you push nothing.
+
+67
+00:17:09,516 --> 00:17:11,516
+So this transition will be valid.
+
+68
+00:17:11,516 --> 00:17:14,516
+And then next step will be...
+
+69
+00:17:17,460 --> 00:17:39,539
+Let me use this one. Next step will be state Q2. One second. As you see that you were here. Now you go to here and you, okay, now you are at state Q2. And again,
+
+70
+00:17:39,988 --> 00:17:46,367
+For input symbol B, you will pop symbol A from the stake and you push nothing.
+
+71
+00:17:48,568 --> 00:17:52,847
+And you will repeat it three times.
+
+72
+00:17:53,588 --> 00:18:00,327
+And at the end, all the symbols in the stakes will be removed.
+
+73
+00:18:00,728 --> 00:18:03,988
+So there will be only dollar symbol inside the stake.
+
+74
+00:18:03,988 --> 00:18:06,407
+Then you will pop.
+
+75
+00:18:06,963 --> 00:18:32,723
+nothing, you will push $. So you will pop nothing. Sorry, for nothing, for empty string, you will pop $. Because there is only $. inside the stake and then you push $. back. So this is the indicator to understand that there is nothing inside the stake and then you reach the final state.
+
+76
+00:18:34,228 --> 00:18:46,188
+Okay, we generally, these transitions, look at this, this transition from Q1 to Q2 states can be represented like this.
+
+77
+00:18:47,108 --> 00:19:00,028
+You are at state Q1 for triple input B and for the triple A in this tag, you will go to the state Q2, remaining string is
+
+78
+00:19:00,500 --> 00:19:25,539
+double B, and remaining stake is double A. So this is time four, this is time five. In general, for example, this is the computation. You are at state Q0. And this is the input string. And this is dollar. There is only dollar symbol inside the stake. You are at state Q0.
+
+79
+00:19:26,067 --> 00:19:30,447
+This is input string, and there is only $ inside the stack.
+
+80
+00:19:30,447 --> 00:19:47,047
+So next, this one, you change state Q0 to Q1, and input doesn't change because of this transition, and you pop nothing.
+
+81
+00:19:49,428 --> 00:20:00,188
+ve hiçbir şeyin neyini tutmuyor. Yani, bu konuları yok. Ve bu konuları yok.
+
+82
+00:20:00,188 --> 00:20:12,188
+Ama sadece bu konuları değiştirebilecek. Şimdi, Q1'e Q1'e Q1'e, gördüğünüzü? Yani, bu konuları değiştirebilecek. Bu konuları değiştirebilecek.
+
+83
+00:20:12,468 --> 00:20:24,847
+When you change this transition, you see this is AA because you consume, you pop for input symbol A, you pop nothing, you push AA.
+
+84
+00:20:24,847 --> 00:20:35,028
+So now for input symbol A, you consume one symbol, so input string will be reduced. So this is AA, BBB.
+
+85
+00:20:36,228 --> 00:20:38,367
+And you push.
+
+86
+00:20:39,188 --> 00:20:43,908
+Symbol A to the stake, so that is one A inside the stake.
+
+87
+00:20:44,868 --> 00:21:02,568
+And because of this transitions, as you see that you remain the state Q1, but you consume all the inputs until all the symbol A finishes inside the string.
+
+88
+00:21:06,579 --> 00:21:20,799
+Bu transition is valid, and now this transition becomes valid, and now we can use the, we can consume the input symbol B's.
+
+89
+00:21:21,799 --> 00:21:31,420
+When we consume the input symbol B's, you also pop the symbol A from the stake, till there is nothing inside the stake.
+
+90
+00:21:32,339 --> 00:21:39,400
+Okay, so you reach here, as you see, so here you reach at, you are at state Q2.
+
+91
+00:21:40,759 --> 00:21:54,000
+And finally, you check this transition for nothing, for input, for empty string, you pop dollar, you push dollar and you reach the final state Q3.
+
+92
+00:22:00,307 --> 00:22:04,467
+İntro, PDA.
+
+93
+00:22:10,644 --> 00:22:34,764
+Okay. So generally, we also write this star, compute star, computation star. This computation star means you start at Q0. After some many computations, you will reach state Q3 for input symbol, for symbol.
+
+94
+00:22:37,076 --> 00:22:47,243
+Bu bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa bir şey
+
+95
+00:22:51,763 --> 00:22:56,763
+Bu konumlarla ilgili bir şekilde, bu konumlarla ilgili bir şekilde.
+
+96
+00:22:58,763 --> 00:23:05,763
+Tamam, ve bu PDA'ya da başlayalım.
+
+97
+00:23:12,500 --> 00:23:38,380
+PDA, PDA, PDA is like this. This is the word such that this is the input string word such that this is the start state. You start and for this input string you have a dollar inside you have a Z symbol inside the stake.
+
+98
+00:23:38,516 --> 00:23:51,416
+After many computations, you reach the final state and you also accept and also you substitute some values into the state.
+
+99
+00:23:51,836 --> 00:23:58,196
+So if this computation is valid, then the input, this string doubly is the element of the language.
+
+100
+00:23:58,816 --> 00:24:03,136
+So this is the general definition of language of the PDA.
+
+101
+00:24:05,971 --> 00:24:32,971
+So, the language of this PDA, so this is the PDA, this PDA, recall, this is the string, this string is the element of the PDA because you start with this string, after many computations you reach the final states. So then this is the element of the language, so this is the PDA, this is the,
+
+102
+00:24:33,140 --> 00:24:37,559
+This string is the element of the language of the PDM machine M.
+
+103
+00:24:40,380 --> 00:24:41,059
+Okay.
+
+104
+00:24:41,779 --> 00:24:48,839
+In general, we can write A power N, B power N is the element of the language of the machine M.
+
+105
+00:24:49,559 --> 00:24:55,339
+So, the language is therefore this one.
+
+106
+00:24:56,240 --> 00:24:56,640
+Okay.
+
+107
+00:24:57,236 --> 00:25:06,116
+So, let us do some examples. Maybe it will be useful. And one second.
+
+108
+00:25:35,700 --> 00:25:39,119
+Let's say the language is like this.
+
+109
+00:25:50,451 --> 00:25:50,951
+Ah.
+
+110
+00:26:18,036 --> 00:26:28,235
+Evet, arkadaşlar. Şimdi bu dilin öncelikle bir gramerini bulalım. Let us find the grammar of this language.
+
+111
+00:26:34,228 --> 00:26:35,088
+Kurema Roo.
+
+112
+00:26:40,403 --> 00:26:47,223
+G-O, language, or only language.
+
+113
+00:26:50,708 --> 00:26:58,407
+A. So, actually, this is the question. What is the grammar of the language?
+
+114
+00:27:00,488 --> 00:27:09,468
+Okay, let us define the, let us find the grammar. So, grammar of the language is like this. You have a start date.
+
+115
+00:27:11,627 --> 00:27:17,567
+A start variable. You see that there is one A here.
+
+116
+00:27:18,740 --> 00:27:23,040
+A, like this.
+
+117
+00:27:28,915 --> 00:27:39,816
+And after this A, we will go to AA, A, MBB.
+
+118
+00:27:43,988 --> 00:27:45,148
+And again,
+
+119
+00:27:47,788 --> 00:27:49,428
+I will go to
+
+120
+00:28:06,708 --> 00:28:07,428
+İzitürü.
+
+121
+00:28:13,011 --> 00:28:15,451
+Bu gramer doğru mu arkadaşlar? Bulmuş olduğumuz.
+
+122
+00:28:23,316 --> 00:28:29,616
+Evet arkadaşlar. Ders demesiniz. Dersi dinliyor musunuz?
+
+123
+00:28:31,836 --> 00:28:34,336
+Evet hocam.
+
+124
+00:28:35,236 --> 00:28:42,056
+Bu yazmış olduğum gramer yukarıdaki dili üretir mi? Bir düşünelim üzerinde yanlış bir şeyler var mı?
+
+125
+00:28:52,339 --> 00:29:01,240
+Şimdi arkadaşlar, şunu söyleyeceğim. Bazı arkadaşlarınız derse katılıyorlar ama dersi izlemiyorlar. Sadece online olarak yürünüyorlar.
+
+126
+00:29:02,299 --> 00:29:12,500
+Hani bu doğru bir şey değil. Şimdi ben şöyle bir şey yapmak isterim esasında. Kimlerin dersi olup olmadığını bir kontrol etmek isterim.
+
+127
+00:29:12,500 --> 00:29:17,279
+Ve bunu da kanaat notu olarak kullanmak isterim.
+
+128
+00:29:18,003 --> 00:29:35,364
+Yani şimdi sınıf dersi alan kaç kişi? 100 küsur kişi. Derste şu anda olanların sayısı 36 kişi. Yani neye göre derse gelmiyorlar? Neye göre derse katılmıyor? O ayrı bir konu.
+
+129
+00:29:36,584 --> 00:29:41,524
+Artı derse katılanların kaç tanesi online şu anda burada? O da diğer bir soru.
+
+130
+00:29:42,104 --> 00:29:44,503
+Şimdi bakın burada ben bir şeyler anlatıyorum.
+
+131
+00:29:45,268 --> 00:30:04,668
+Bu anlattığım şeyleri sizin için anlatıyorum değil mi? Kendim için değil, ben zaten biliyorum. Ama sizler bunu öğrenmeyi taraftarı değilsiniz, o zaman kendinizi kandırıyorsunuz. Şimdi, beraber yapmamız lazım bu dersi. Değil mi? Yoksam kalırlar, yani kalırsınız.
+
+132
+00:30:05,299 --> 00:30:19,679
+Bu kalırsanız da hocayı suçlamayacaksınız. Niye? Çünkü öğrenci dersi geçtiğinde, dersi geçtiğinde kaldığında hoca bıraktı der. Hiçbir zaman kendisine toz kondurmaz. Biz de zamanında öğrenciydik. Ama bu böyle olmaz.
+
+133
+00:30:20,147 --> 00:30:45,407
+Ama biz zamanında derslere çalışırdık. Yani şimdi siz de derslere katılacaksınız. Ben şimdi size bir soru soruyorum. Lütfen yani çekinmeyin. Hepiniz 20 yaşında genç delikanlılarsınız. Korkacak neyiniz var? Sizi mi yiyeceğiz? Yani ne yapacağız? Çok rahatlıkla derse katılabilirsiniz. Evet. Bu gramer sizce doğru mu? Bu dili üretebiliyor mu? Bir yerde yanlışlık var mı?
+
+134
+00:30:58,324 --> 00:31:01,124
+Yani bana doğru gibi geldi.
+
+135
+00:31:03,284 --> 00:31:05,684
+Şimdi siz söyleyince tekrar düşünüyorum.
+
+136
+00:31:09,523 --> 00:31:14,203
+Mesela bir tane şey oluşturalım, mesela bir tane string.
+
+137
+00:31:27,059 --> 00:31:28,860
+Hocam, 3 tane A, 3 tane B.
+
+138
+00:31:29,860 --> 00:31:31,180
+Bu elemanı mıdır?
+
+139
+00:31:34,120 --> 00:31:36,079
+3 tane A olması lazım hocam.
+
+140
+00:31:37,620 --> 00:31:39,100
+Bu elemanı olmaması lazım.
+
+141
+00:31:39,880 --> 00:31:41,120
+Şu anda elemanı mıdır?
+
+142
+00:31:42,039 --> 00:31:42,400
+Evet.
+
+143
+00:31:43,400 --> 00:31:43,840
+Peki.
+
+144
+00:31:45,059 --> 00:31:47,279
+Peki o zaman şöyle, bu elemanı mıdır?
+
+145
+00:31:50,804 --> 00:31:52,204
+Evet, bu da elemanlıdır hocam.
+
+146
+00:31:53,704 --> 00:31:57,424
+Şimdi bunları düşünerek, gramer doğru mu, yanlış mı?
+
+147
+00:32:03,539 --> 00:32:05,340
+O zaman yanlış oluyor.
+
+148
+00:32:06,039 --> 00:32:07,620
+Burada üç tane B olacak değil mi?
+
+149
+00:32:08,259 --> 00:32:08,539
+Evet.
+
+150
+00:32:09,400 --> 00:32:13,440
+Bir de A.
+
+151
+00:32:15,440 --> 00:32:18,600
+Niye? Çünkü N küçük eşit sıfırdan büyük için.
+
+152
+00:32:20,360 --> 00:32:25,360
+Eğer burada büyük eşit olmasaydı, sadece büyük olsaydı o zaman ne olacaktı?
+
+153
+00:32:28,788 --> 00:32:34,887
+Bu, epsilon olmayacaktır. Burada büyük eşit olduğu için burada bir de epsilon olacak.
+
+154
+00:32:37,387 --> 00:32:43,127
+So, this is the grammar. Okay. Let us write the pushdown automata for this.
+
+155
+00:32:44,667 --> 00:32:48,867
+So, you will start by Q0.
+
+156
+00:32:55,188 --> 00:32:57,788
+Here is that QZ1.
+
+157
+00:32:59,268 --> 00:32:59,668
+Come on.
+
+158
+00:33:00,708 --> 00:33:03,668
+And you will go to state Q1.
+
+159
+00:33:08,915 --> 00:33:11,316
+Maybe I should write here.
+
+160
+00:33:11,996 --> 00:33:14,115
+You start at Q0.
+
+161
+00:33:15,956 --> 00:33:17,476
+You go to state.
+
+162
+00:33:18,996 --> 00:33:27,115
+You, for input symbol A, you will pop dollar and you push dollar.
+
+163
+00:33:28,355 --> 00:33:28,695
+Okay?
+
+164
+00:33:30,135 --> 00:33:34,976
+So there is only dollar in the state, so you pop dollar and you push dollar.
+
+165
+00:33:35,443 --> 00:33:37,663
+And you go to state Q1.
+
+166
+00:33:39,963 --> 00:33:41,283
+Okay, state is empty.
+
+167
+00:33:41,943 --> 00:33:42,783
+You start like this.
+
+168
+00:33:44,044 --> 00:33:50,304
+And then, for here, you will pop.
+
+169
+00:33:53,723 --> 00:33:56,144
+Here, you will add.
+
+170
+00:34:08,179 --> 00:34:34,899
+Actually, it is not easy to, it becomes very small. You are a stage Q1. Now you see that the number of A, look, the number of A's and the number of B's should be, you can put some values to the stakes, they are the same, okay? So you can do what? For each symbol, A,
+
+171
+00:34:35,860 --> 00:34:54,740
+You can push three symbol B, and for each symbol B, you can pop two symbol A, and then this equality will be provided.
+
+172
+00:34:54,740 --> 00:35:01,539
+So here, we can write it like this. So input symbol A.
+
+173
+00:35:02,612 --> 00:35:12,332
+You will pop, you will pop nothing and you can push triple X.
+
+174
+00:35:15,332 --> 00:35:18,731
+Let's say triple X.
+
+175
+00:35:22,963 --> 00:35:24,283
+Ok, into the stake.
+
+176
+00:35:25,604 --> 00:35:33,003
+And then, for input symbol ba, you will pop 2x.
+
+177
+00:35:34,884 --> 00:35:38,163
+You push nothing.
+
+178
+00:35:39,823 --> 00:35:48,963
+And here, for input symbol ba, you pop double x.
+
+179
+00:35:50,068 --> 00:35:51,948
+You push empty string.
+
+180
+00:35:52,788 --> 00:35:56,668
+And then, this is Q2.
+
+181
+00:35:57,608 --> 00:35:59,948
+You will reach the Q3.
+
+182
+00:36:01,288 --> 00:36:07,728
+Here, for empty string, you pop $, and you push $.
+
+183
+00:36:08,588 --> 00:36:09,927
+And this is the final state.
+
+184
+00:36:11,347 --> 00:36:15,768
+Okay, this is the pushdown automata to recognize this language.
+
+185
+00:36:21,043 --> 00:36:44,043
+Okay? For every symbol A, you pop triple X. For every symbol A, you push triple X. For every symbol B, you pop double X. So at the end...
+
+186
+00:36:46,068 --> 00:36:49,768
+You can provide that language.
+
+187
+00:36:50,328 --> 00:36:50,467
+Okay?
+
+188
+00:36:53,108 --> 00:36:54,347
+Any questions?
+
+189
+00:36:58,099 --> 00:37:01,439
+Ok, what about this language?
+
+190
+00:37:22,291 --> 00:37:28,051
+Bu, bu, dikkat edin.
+
+191
+00:37:49,811 --> 00:37:52,851
+So, I have to fix it.
+
+192
+00:37:54,771 --> 00:37:56,652
+Let me copy this.
+
+193
+00:37:58,511 --> 00:38:00,811
+Copy, maybe one second.
+
+194
+00:38:01,492 --> 00:38:04,051
+I have to copy this, move.
+
+195
+00:38:05,952 --> 00:38:06,631
+Okay.
+
+196
+00:38:07,931 --> 00:38:09,492
+And also I have to copy this.
+
+197
+00:38:11,631 --> 00:38:13,532
+Maybe move, move is better.
+
+198
+00:38:15,851 --> 00:38:16,532
+Okay.
+
+199
+00:38:18,420 --> 00:38:22,340
+I have to write a new state here.
+
+200
+00:38:24,039 --> 00:38:25,340
+Let's say this is...
+
+201
+00:38:29,715 --> 00:38:33,115
+This is Q1, and this is a final state.
+
+202
+00:38:35,135 --> 00:38:40,315
+And this final state, it should have like this.
+
+203
+00:38:42,815 --> 00:38:45,496
+A, pop dollar, push dollar.
+
+204
+00:38:46,775 --> 00:38:51,475
+This is Q1, this is Q2, this is Q3, this is Q4.
+
+205
+00:38:51,475 --> 00:38:56,475
+For this, for input symbol, for empty string.
+
+206
+00:38:57,012 --> 00:39:00,752
+You will pop $, you will push $.
+
+207
+00:39:02,872 --> 00:39:03,332
+Okay?
+
+208
+00:39:04,252 --> 00:39:06,872
+So this is the, so there are two final states.
+
+209
+00:39:06,992 --> 00:39:08,932
+One is Q1 and the other one is Q4.
+
+210
+00:39:09,252 --> 00:39:10,572
+This is the correct implementation.
+
+211
+00:39:12,972 --> 00:39:14,192
+What about this one?
+
+212
+00:39:16,532 --> 00:39:17,792
+This is the language.
+
+213
+00:39:18,231 --> 00:39:20,811
+As you see that, what is the PDA?
+
+214
+00:39:35,059 --> 00:39:37,739
+Can we design the PDF for this language?
+
+215
+00:39:40,460 --> 00:39:46,260
+Hocam, bunda birden fazla bant olduğu için yapamayız diye düşünüyorum.
+
+216
+00:39:46,260 --> 00:39:50,059
+Yes, you are right. This is not a context-free language.
+
+217
+00:39:51,840 --> 00:39:57,039
+This is not a CFR context-free language.
+
+218
+00:39:57,659 --> 00:39:58,279
+Therefore,
+
+219
+00:40:01,199 --> 00:40:01,720
+PDA
+
+220
+00:40:03,539 --> 00:40:07,539
+is not powerful.
+
+221
+00:40:11,987 --> 00:40:27,027
+to recognize, to accept or recognize the strings from this language.
+
+222
+00:40:30,268 --> 00:40:36,147
+Okay, language N. So there is no PDA for this. So we need more powerful...
+
+223
+00:40:38,159 --> 00:40:41,059
+Müşen, what is the more powerful machine?
+
+224
+00:40:41,239 --> 00:40:41,699
+Is the
+
+225
+00:40:41,699 --> 00:40:44,699
+Müşen,
+
+226
+00:40:46,612 --> 00:40:48,612
+Turing machine.
+
+227
+00:40:48,612 --> 00:40:50,612
+Okay?
+
+228
+00:40:52,612 --> 00:40:54,612
+And...
+
+229
+00:40:54,612 --> 00:40:58,612
+Let us do another examples.
+
+230
+00:40:58,612 --> 00:41:00,612
+Okay.
+
+231
+00:41:02,612 --> 00:41:03,468
+This one.
+
+232
+00:41:25,427 --> 00:41:31,747
+What is this? Can you design the PDA?
+
+233
+00:41:36,244 --> 00:41:36,824
+Yes.
+
+234
+00:41:40,596 --> 00:41:41,155
+Why?
+
+235
+00:41:43,155 --> 00:41:46,315
+Çünkü bunda bir bant var.
+
+236
+00:41:48,136 --> 00:41:50,936
+But is it regular or context-free?
+
+237
+00:41:52,396 --> 00:41:53,655
+Context-free.
+
+238
+00:41:54,615 --> 00:41:56,036
+Is it regular?
+
+239
+00:41:57,815 --> 00:41:58,796
+Hayır.
+
+240
+00:41:59,836 --> 00:42:00,076
+No.
+
+241
+00:42:00,956 --> 00:42:04,195
+This language is, L is, regular.
+
+242
+00:42:06,195 --> 00:42:07,076
+Language.
+
+243
+00:42:07,764 --> 00:42:16,284
+Since the language of L, the size of L is equal to 3, no 4.
+
+244
+00:42:18,324 --> 00:42:20,244
+And this is less than infinity.
+
+245
+00:42:21,244 --> 00:42:23,844
+L is also CFL.
+
+246
+00:42:23,844 --> 00:42:34,284
+Since legal languages are subset of CfL.
+
+247
+00:42:35,827 --> 00:42:38,027
+Açıkları birçok
+
+248
+00:42:43,380 --> 00:42:50,380
+The set of regular languages.
+
+249
+00:42:55,411 --> 00:43:06,931
+is a subset of CFS.
+
+250
+00:43:06,931 --> 00:43:07,811
+Okay?
+
+251
+00:43:08,931 --> 00:43:12,731
+So this language is regular languages and also
+
+252
+00:43:19,731 --> 00:43:20,952
+Contextual languages.
+
+253
+00:43:21,591 --> 00:43:24,911
+So if it is regular languages, we can design an NFA.
+
+254
+00:43:25,851 --> 00:43:27,731
+Let us design an NFA.
+
+255
+00:43:28,452 --> 00:43:30,992
+So this is the start state Q0.
+
+256
+00:43:32,671 --> 00:43:38,091
+And for N0, M string, so it will accept M string.
+
+257
+00:43:39,091 --> 00:43:39,331
+Okay.
+
+258
+00:43:39,331 --> 00:43:46,411
+And then you will go 1A.
+
+259
+00:43:51,027 --> 00:43:52,768
+And then double B.
+
+260
+00:43:57,844 --> 00:44:00,003
+And you will reach the final state.
+
+261
+00:44:02,523 --> 00:44:03,083
+Or,
+
+262
+00:44:06,083 --> 00:44:07,304
+You will go,
+
+263
+00:44:08,184 --> 00:44:09,844
+This is for N equals
+
+264
+00:44:09,844 --> 00:44:12,144
+1,
+
+265
+00:44:12,623 --> 00:44:13,724
+N equals 2.
+
+266
+00:44:15,344 --> 00:44:15,963
+So here,
+
+267
+00:44:18,604 --> 00:44:20,023
+Again, now,
+
+268
+00:44:21,123 --> 00:44:22,364
+If there are 2A,
+
+269
+00:44:23,644 --> 00:44:24,623
+There will be 4.
+
+270
+00:44:33,523 --> 00:44:34,023
+Evet.
+
+271
+00:44:46,900 --> 00:44:47,900
+Okay.
+
+272
+00:44:49,500 --> 00:44:50,500
+Again.
+
+273
+00:44:51,900 --> 00:44:52,900
+This is the third tip.
+
+274
+00:44:52,900 --> 00:44:54,900
+N equals 4.
+
+275
+00:44:55,900 --> 00:44:57,900
+So, N equals 3.
+
+276
+00:44:57,900 --> 00:44:59,900
+So now there will be 16.
+
+277
+00:45:25,139 --> 00:45:25,539
+Okay.
+
+278
+00:45:28,439 --> 00:45:33,579
+And this is the NFA to recognize this language.
+
+279
+00:45:33,839 --> 00:45:38,599
+And I will convert this NFA to PDA because it is very simple.
+
+280
+00:45:39,699 --> 00:45:40,460
+You will do what?
+
+281
+00:45:41,859 --> 00:45:49,779
+You will just add like this.
+
+282
+00:45:51,092 --> 00:45:52,792
+Let me write in blue.
+
+283
+00:45:53,812 --> 00:45:55,932
+You will read dollar and you will push dollar.
+
+284
+00:45:56,231 --> 00:46:01,812
+You will pop dollar, you will push dollar.
+
+285
+00:46:02,692 --> 00:46:03,832
+You will pop dollar.
+
+286
+00:46:10,516 --> 00:46:13,115
+Here you will pop dollars.
+
+287
+00:46:14,655 --> 00:46:15,876
+You will push dollars.
+
+288
+00:46:16,936 --> 00:46:22,936
+Here you will pop dollars.
+
+289
+00:46:23,235 --> 00:46:24,256
+You will push dollars.
+
+290
+00:46:25,336 --> 00:46:29,376
+Pop dollars, push dollars.
+
+291
+00:46:30,496 --> 00:46:31,275
+Pop dollars.
+
+292
+00:46:37,619 --> 00:46:50,155
+poplar push
+
+293
+00:47:03,603 --> 00:47:25,023
+You see, this is the PDA. So the PDA, NFA is the subset of the set of NFAs. The set of NFAs is the subset of PDAs. Okay? So this is very simple. You generate. Any question?
+
+294
+00:47:28,724 --> 00:47:29,804
+Ok arkadaşlar.
+
+295
+00:47:30,844 --> 00:47:33,043
+Şimdi 10 dakika ara verelim.
+
+296
+01:01:51,603 --> 01:01:57,083
+Evet arkadaşlar, şimdi başka bir teknik göstereceğim.
+
+297
+01:02:00,363 --> 01:02:17,183
+Bu yeni teknikte size bir gramer verildiğinde bu grameri doğrudan gramerin productionlarını kullanarak PDA implementasyonunu göstermek.
+
+298
+01:02:17,523 --> 01:02:22,703
+Mesela örnek verelim. Mesela converting.
+
+299
+01:02:30,228 --> 01:02:36,807
+Konverting context-free grammar to PDA.
+
+300
+01:02:42,643 --> 01:02:56,523
+Tamam, en general, every context-free grammar, every context-free grammar can be implemented.
+
+301
+01:03:03,315 --> 01:03:24,427
+PDA
+
+302
+01:03:15,027 --> 01:03:15,547
+Form.
+
+303
+01:03:18,107 --> 01:03:19,887
+Okay, what is this form?
+
+304
+01:03:22,087 --> 01:03:24,027
+So you have a start state.
+
+305
+01:03:28,115 --> 01:03:33,115
+PDA
+
+306
+01:03:27,795 --> 01:03:31,515
+Ok, bu startı, if you go to the state Q1.
+
+307
+01:03:37,039 --> 01:03:43,500
+PDA
+
+308
+01:03:36,340 --> 01:03:49,460
+And this transition is valid, empty string, pop empty string and the push $, start variable and $.
+
+309
+01:03:49,460 --> 01:03:50,420
+Okay.
+
+310
+01:03:51,539 --> 01:03:56,619
+And from here, you go to the next state.
+
+311
+01:03:57,039 --> 01:03:58,059
+This is Q2.
+
+312
+01:03:59,000 --> 01:04:01,000
+Q3 is the final state.
+
+313
+01:04:03,219 --> 01:04:05,219
+ve bu transition is valid.
+
+314
+01:04:06,219 --> 01:04:09,219
+For empty string, you pop $,
+
+315
+01:04:10,219 --> 01:04:13,219
+and you push $,
+
+316
+01:04:13,219 --> 01:04:15,219
+you push empty string.
+
+317
+01:04:20,628 --> 01:04:22,628
+Ok.
+
+318
+01:04:22,628 --> 01:04:26,628
+And here, we have here the loops.
+
+319
+01:04:32,115 --> 01:04:55,775
+So, in general, any average context-free grammar can be implemented in this form. So, if you know the context-free grammar, you have the PDA. The PDA is like this, but you don't know these loops. What is these loops? We will find. Let us do an example. So, this is the grammar. Let me write the grammar.
+
+320
+01:04:59,507 --> 01:05:13,307
+Okay, grammar. This is the grammar. Variable S starts with AB. And variable A.
+
+321
+01:05:23,956 --> 01:05:24,756
+Empty string.
+
+322
+01:05:34,804 --> 01:05:54,084
+Ok, so let us write the loops. Look at here. From here I can write, I can write these ones. So the variable, this variable, go to AB. This is the first production. The second production.
+
+323
+01:05:57,304 --> 01:06:00,264
+Ok, the other production.
+
+324
+01:06:03,860 --> 01:06:06,780
+Ve bir daha.
+
+325
+01:06:12,815 --> 01:06:33,815
+PDA
+
+326
+01:06:12,115 --> 01:06:19,115
+Ve bu
+
+327
+01:06:19,115 --> 01:06:40,115
+bu
+
+328
+01:06:39,315 --> 01:06:40,035
+AA,
+
+329
+01:06:46,003 --> 01:06:48,503
+AA, AA, okay?
+
+330
+01:06:49,823 --> 01:06:54,983
+So you say you, you, this is one production.
+
+331
+01:06:57,123 --> 01:07:00,263
+Anyway, we can write later.
+
+332
+01:07:00,643 --> 01:07:03,783
+Okay, so this is the general form.
+
+333
+01:07:04,083 --> 01:07:09,983
+I will copy this.
+
+334
+01:07:13,800 --> 01:07:14,800
+bu
+
+335
+01:07:13,204 --> 01:07:18,764
+ve bu
+
+336
+01:07:21,644 --> 01:07:22,700
+ve
+
+337
+01:07:30,547 --> 01:07:32,407
+Ok, these are the loops.
+
+338
+01:07:36,275 --> 01:07:38,435
+We will have more loops here.
+
+339
+01:07:40,115 --> 01:07:41,275
+You pop A.
+
+340
+01:07:42,175 --> 01:07:44,475
+For inputs, you pop A, you push.
+
+341
+01:07:53,396 --> 01:07:55,396
+Tamam, bu bütün notlar.
+
+342
+01:08:13,235 --> 01:08:14,235
+Tamam.
+
+343
+01:08:14,835 --> 01:08:16,555
+Bu grammer.
+
+344
+01:08:16,715 --> 01:08:22,076
+Bu PDA.
+
+345
+01:08:26,739 --> 01:08:28,739
+Bu PDA için bu PDA için.
+
+346
+01:08:28,739 --> 01:08:36,739
+Bu PDA için.
+
+347
+01:08:36,739 --> 01:08:42,739
+Bu PDA.
+
+348
+01:08:42,739 --> 01:08:44,739
+Bu bir başka bir grammer.
+
+349
+01:08:44,739 --> 01:08:46,739
+Bu bir.
+
+350
+01:08:46,739 --> 01:08:48,739
+Bu grammer.
+
+351
+01:08:58,547 --> 01:09:02,948
+Tamam, bu gramer. Let me write the, let me plot the PDA.
+
+352
+01:09:06,836 --> 01:09:08,676
+This is the general framework.
+
+353
+01:09:10,996 --> 01:09:12,916
+This is the start variable.
+
+354
+01:09:13,376 --> 01:09:14,176
+Start variable.
+
+355
+01:09:15,176 --> 01:09:18,496
+Okay, I will change the name of the variable.
+
+356
+01:09:20,775 --> 01:09:24,115
+The name, the start variable is B.
+
+357
+01:09:24,636 --> 01:09:24,936
+Okay.
+
+358
+01:09:26,336 --> 01:09:28,376
+So it will be B$.
+
+359
+01:09:31,316 --> 01:09:31,836
+Because
+
+360
+01:09:32,340 --> 01:10:00,000
+This is the start variable. This one. This one is the start variable. And then you put $. This is Q1. And you go to Q2. And this is the final state. You pop $. You push end string. Okay. And here.
+
+361
+01:10:00,000 --> 01:10:00,739
+Here is the loops.
+
+362
+01:10:04,307 --> 01:10:06,307
+Bu lütleri ne?
+
+363
+01:10:08,307 --> 01:10:10,307
+Productions.
+
+364
+01:10:11,307 --> 01:10:13,307
+İlk bir şey.
+
+365
+01:10:44,819 --> 01:10:50,159
+Tamam, sorry, I forgot here, there must be empty string.
+
+366
+01:10:56,979 --> 01:10:58,719
+Ok, like this.
+
+367
+01:10:59,559 --> 01:11:01,139
+Here must be empty, ok?
+
+368
+01:11:01,719 --> 01:11:03,659
+So for this case, I will write
+
+369
+01:11:03,659 --> 01:11:06,439
+empty
+
+370
+01:11:06,439 --> 01:11:09,479
+and the first production
+
+371
+01:11:15,220 --> 01:11:18,420
+And again empty, second production.
+
+372
+01:11:20,640 --> 01:11:22,479
+And now terminals.
+
+373
+01:11:30,228 --> 01:11:34,228
+Bu, bu PDA, bu gramerler.
+
+374
+01:11:34,228 --> 01:11:36,228
+Bir başka bir örneğe.
+
+375
+01:11:40,148 --> 01:11:42,528
+Grammar is assumed like this.
+
+376
+01:11:43,747 --> 01:11:45,528
+The start variable is T,
+
+377
+01:11:48,148 --> 01:11:48,948
+1T,
+
+378
+01:11:50,708 --> 01:11:51,688
+1, 1, T,
+
+379
+01:11:52,768 --> 01:11:53,148
+0,
+
+380
+01:11:56,887 --> 01:11:58,467
+V,
+
+381
+01:11:59,927 --> 01:12:02,247
+W, let's say W,
+
+382
+01:12:03,347 --> 01:12:04,728
+W goes to
+
+383
+01:12:04,728 --> 01:12:06,987
+0, W.
+
+384
+01:12:10,100 --> 01:12:10,820
+Epsilon.
+
+385
+01:12:12,020 --> 01:12:12,420
+Okay?
+
+386
+01:12:13,640 --> 01:12:16,200
+So, this is very simple.
+
+387
+01:12:16,740 --> 01:12:20,360
+So, I will write, I will start with Q0.
+
+388
+01:12:23,360 --> 01:12:24,500
+And here,
+
+389
+01:12:28,884 --> 01:12:35,004
+I'll start variable is T, $.
+
+390
+01:12:36,283 --> 01:12:37,644
+This is Q2.
+
+391
+01:12:39,444 --> 01:12:41,024
+And this is Q3.
+
+392
+01:12:42,463 --> 01:12:44,144
+This is final state.
+
+393
+01:12:45,084 --> 01:12:48,783
+And I will go to final empty, $.
+
+394
+01:12:50,004 --> 01:12:50,604
+Okay.
+
+395
+01:12:51,324 --> 01:12:52,724
+So here there are loops.
+
+396
+01:12:55,252 --> 01:12:56,592
+What are these loops?
+
+397
+01:12:58,092 --> 01:13:07,512
+So you will pop variable T and you will push 11T0.
+
+398
+01:13:09,132 --> 01:13:15,412
+And you will also pop variable T and you will push W.
+
+399
+01:13:16,632 --> 01:13:21,512
+And also you will pop W and you will push 0W.
+
+400
+01:13:22,804 --> 01:13:33,404
+ve Turing makinesi konuları, bu
+
+401
+01:13:43,380 --> 01:13:47,559
+Ok, these are the productions for this loop.
+
+402
+01:13:54,260 --> 01:13:55,960
+ve bu PDA.
+
+403
+01:14:17,844 --> 01:14:23,363
+Okay, let us have this one.
+
+404
+01:14:27,252 --> 01:14:28,432
+This is the language.
+
+405
+01:14:37,171 --> 01:14:54,891
+Can you plot the PDF for this language? First, let us find the grammar. Grammar of this language. So let us, this is the stat variable. And n is greater than 2.
+
+406
+01:14:56,275 --> 01:15:13,995
+So, this is empty string is not element of the language. A is not element of the language. AA is not element of the language, but AAA is element of the language, or A4 is also element of the language.
+
+407
+01:15:16,155 --> 01:15:21,995
+Okay, so and so on. So, it will start by...
+
+408
+01:15:24,372 --> 01:15:48,731
+2, ok? It will start maybe by 3. Let's say, this is AAA, and this is A or Epsilon, and the A is, ok?
+
+409
+01:15:59,731 --> 01:16:03,731
+Bu bir gram.
+
+410
+01:16:03,731 --> 01:16:24,203
+Bu gram.
+
+411
+01:16:26,036 --> 01:16:33,236
+Let's say this is Q0 for input symbol A.
+
+412
+01:16:34,775 --> 01:16:36,876
+Again, input symbol A.
+
+413
+01:16:37,576 --> 01:16:39,576
+And input symbol A.
+
+414
+01:16:40,236 --> 01:16:45,236
+You reach this state, Q1, Q2, Q3.
+
+415
+01:16:45,956 --> 01:16:49,036
+And here, for many input symbol A.
+
+416
+01:16:49,675 --> 01:16:51,236
+So this is NFA.
+
+417
+01:16:55,731 --> 01:16:59,452
+NFA, bu PDA'ya da kullanıyoruz.
+
+418
+01:16:59,452 --> 01:17:01,332
+Can we implement this PDA?
+
+419
+01:17:01,332 --> 01:17:04,011
+Evet, we can convert it to PDA also.
+
+420
+01:17:04,011 --> 01:17:05,252
+Look at here.
+
+421
+01:17:06,891 --> 01:17:10,492
+NFA'ya da bir parçası var.
+
+422
+01:17:11,131 --> 01:17:13,452
+Bu, bu PDA'ya da bir parçası var.
+
+423
+01:17:14,011 --> 01:17:18,211
+Bu, bu bir parçası var.
+
+424
+01:17:23,572 --> 01:17:24,891
+And this is Q1.
+
+425
+01:17:27,032 --> 01:17:30,432
+For input simulary, you will pop dollar, you will push dollar.
+
+426
+01:17:32,832 --> 01:17:37,692
+Or instead of pop dollar, push dollar, we can write empty string.
+
+427
+01:17:37,872 --> 01:17:38,832
+This is also possible.
+
+428
+01:18:02,163 --> 01:18:06,224
+And this is the final state, Q2 and Q3.
+
+429
+01:18:07,043 --> 01:18:09,304
+What is this? This is the PDA.
+
+430
+01:18:10,304 --> 01:18:10,603
+Okay?
+
+431
+01:18:11,763 --> 01:18:15,123
+And also I can implement this PDA like this.
+
+432
+01:18:15,243 --> 01:18:18,963
+This is another PDA with the general form.
+
+433
+01:18:19,623 --> 01:18:20,503
+This is Q0.
+
+434
+01:18:22,384 --> 01:18:23,984
+This is Q1.
+
+435
+01:18:25,503 --> 01:18:27,144
+And this is Q2.
+
+436
+01:18:31,220 --> 01:18:34,940
+Okay, so Q0 will start.
+
+437
+01:18:37,940 --> 01:18:38,539
+Epsilon.
+
+438
+01:18:44,532 --> 01:18:50,211
+You will pop epsilon, you will push S$.
+
+439
+01:18:51,731 --> 01:18:52,291
+Okay.
+
+440
+01:18:52,952 --> 01:18:57,352
+And here, there are loops.
+
+441
+01:18:58,471 --> 01:19:03,932
+And here, you will epsilon, you will pop dollar, you will push epsilon.
+
+442
+01:19:04,252 --> 01:19:04,512
+Okay.
+
+443
+01:19:05,092 --> 01:19:06,352
+And here is the loops.
+
+444
+01:19:06,992 --> 01:19:08,551
+And the loops will be like this.
+
+445
+01:19:08,631 --> 01:19:09,971
+I will use this grammar.
+
+446
+01:19:10,836 --> 01:19:18,076
+So, for epsilon, you will pop letter, variable S, and you will pop triple A.
+
+447
+01:19:19,596 --> 01:19:22,256
+Okay, and then the second.
+
+448
+01:19:28,435 --> 01:19:32,435
+A
+
+449
+01:19:32,435 --> 01:19:38,435
+ve
+
+450
+01:19:38,435 --> 01:19:44,363
+A
+
+451
+01:19:49,076 --> 01:19:50,976
+Bu da PDA.
+
+452
+01:19:56,340 --> 01:19:57,260
+You see that?
+
+453
+01:20:04,340 --> 01:20:13,380
+You see that this is the language. This language has NFA. This NFA can be converted to PDA.
+
+454
+01:20:15,159 --> 01:20:30,300
+And also, we can use this grammar to implement the PDA also. So there are two different PDAs. So each language may have different PDAs. Okay?
+
+455
+01:20:30,868 --> 01:20:32,528
+Aynı kesele bir şey.
+
+456
+01:20:34,228 --> 01:20:34,927
+Any questions?
+
+457
+01:20:40,180 --> 01:20:42,100
+Okay, and
+
+458
+01:20:49,908 --> 01:20:55,688
+What about the closure properties of Turing machines?
+
+459
+01:21:15,891 --> 01:21:20,492
+Sorry, closure properties of context-free languages.
+
+460
+01:21:28,595 --> 01:21:29,595
+Tamam.
+
+461
+01:21:31,355 --> 01:21:35,155
+Let me write some, let me write the language.
+
+462
+01:21:36,155 --> 01:21:37,555
+This is the language.
+
+463
+01:21:56,692 --> 01:22:00,152
+Bu dil, context-free midir, değil midir arkadaşlar?
+
+464
+01:22:12,115 --> 01:22:13,656
+Context-free'dir hocam.
+
+465
+01:22:14,556 --> 01:22:15,476
+Nedir?
+
+466
+01:22:16,816 --> 01:22:17,935
+Context-free.
+
+467
+01:22:18,636 --> 01:22:20,896
+Neden context-free olduğunu düşünüyorsun?
+
+468
+01:22:22,695 --> 01:22:27,216
+Çünkü iki tane ayrı bant var.
+
+469
+01:22:28,536 --> 01:22:37,976
+Değil mi? Patenlere bakıyorsun. Bu paten ne? Bu paten birbirinden bağımsız değil mi? Neye göre bağımsız? Eleman sayıları bağımsız değil mi?
+
+470
+01:22:38,484 --> 01:23:04,884
+Dolayısıyla, benim elimde iki tane dil olsun. Birinci dil şöyle olsun. A üzerine, B üzerine olsun. Tamam mı? Bu benim elim bir dil olsun. Ne diyelim buna? L, ne diyelim? L, ne diyelim? L.
+
+471
+01:23:06,131 --> 01:23:11,271
+A dili diyelim.
+
+472
+01:23:11,451 --> 01:23:11,871
+Tamam mı?
+
+473
+01:23:14,131 --> 01:23:15,851
+Peki, L dili nedir?
+
+474
+01:23:17,411 --> 01:23:19,851
+A diliyle, A dilinin nesidir?
+
+475
+01:23:21,091 --> 01:23:22,671
+Concatenation olmuş hali değil mi?
+
+476
+01:23:23,371 --> 01:23:26,131
+Yani, ben şu L dilini,
+
+477
+01:23:29,131 --> 01:23:31,171
+Şunu şöyle küçültelim.
+
+478
+01:23:32,243 --> 01:23:34,384
+Şuraya yazalım, şöyle getirelim.
+
+479
+01:23:39,304 --> 01:23:47,224
+Yani ben bu L dilini nasıl yazarım? L dilini iki tane dilin concatenation şeklinde yazabilirim.
+
+480
+01:23:51,731 --> 01:23:52,851
+Konkoteneit.
+
+481
+01:23:53,311 --> 01:23:53,511
+Oh.
+
+482
+01:24:05,555 --> 01:24:24,115
+Değil mi? L'yi bu şekilde yazabilirim. Bu iki dili concatenate ettiğim zaman yukarıdakini elde etmiş olurum. Şunu elde etmiş. Bununla bunu concatenate ettim. Peki burada M vardı, burada N var. Niye? Ya istediğin şey bu. Çünkü bu bağımsız değil mi? Bunu ben C'de yaparım, K'da yaparım bunu. Fark ederim ya.
+
+483
+01:24:29,363 --> 01:24:49,363
+Fark eder mi? Etmez. Bu dille bu dille aynı. Yani iki tane aynı dilin concatenation'ı. Peki, o zaman nedir bu? Ben bu dili ne yapabilirim? Bunun için PDA yazabilirim değil mi? Bunun için PDA var. Bunun için de PDA var. Öyleyse...
+
+484
+01:24:51,859 --> 01:25:14,859
+PDA'ların çıkışlarını birbirine konkatenet yaparsam, birinin çıkışındaki final state'i diğerinin start state'ine bağlarsam, ne olur o zaman? Elimde yeni bir PDA olmuş olur. Bu elde etmiş olduğum yeni PDA'yı bu dili tanır değil mi? Dolayısıyla L dili de bir nedir? Context-free değil mi? Çünkü the language L...
+
+485
+01:25:20,275 --> 01:25:30,395
+is a CFL, is a context-free language, since it is a concatenation.
+
+486
+01:25:34,036 --> 01:25:39,636
+of two CFL languages.
+
+487
+01:25:42,636 --> 01:25:43,136
+Okay?
+
+488
+01:25:44,536 --> 01:25:45,835
+So this is CFL.
+
+489
+01:25:52,756 --> 01:26:00,756
+What about now? Let us do, okay, let us find the grammar. This is the language.
+
+490
+01:26:11,636 --> 01:26:37,916
+Can we find the grammar? Very simple. I have the variable. So this variable will be the concatenation. Let's say this is T and T. And each T. And you can say T and DT. And this is the concatenation.
+
+491
+01:26:39,604 --> 01:26:42,860
+ve Turing makinesi konuları,
+
+492
+01:26:48,948 --> 01:26:54,167
+Let's add T and independence. T, Z.
+
+493
+01:26:54,807 --> 01:26:55,228
+Okay?
+
+494
+01:27:00,979 --> 01:27:03,859
+B, Z.
+
+495
+01:27:08,787 --> 01:27:09,907
+So this is the grammar.
+
+496
+01:27:12,667 --> 01:27:13,147
+Okay.
+
+497
+01:27:14,028 --> 01:27:19,868
+And if I have this grammar, this is the grammar, and then I can write the PDA for this.
+
+498
+01:27:22,448 --> 01:27:23,667
+This is Q0.
+
+499
+01:27:25,127 --> 01:27:27,127
+So what I will do, empty.
+
+500
+01:27:28,587 --> 01:27:33,167
+You pop empty, and you push S$.
+
+501
+01:27:35,539 --> 01:27:37,539
+ve LOOPS
+
+502
+01:27:40,884 --> 01:27:59,064
+And here, you go to the final state, Q3, Q1, Q2, sorry. And this is empty. You will pop dollar. Okay. And now I will write the loops. Epsilon.
+
+503
+01:28:03,220 --> 01:28:14,620
+For empty string, you will pop, you will pop, whereas you will push reset.
+
+504
+01:28:47,028 --> 01:29:09,028
+Tamam. Bu, PDA. PDA, bu idiota denir. Bu, nasıl yapabilirim? Öncelikle, bu, klasik bir düzenli yapalım. PDA, bir sürü.
+
+505
+01:29:36,916 --> 01:29:39,576
+Bir saniye arkadaşlar, şurada bir problem çıktı.
+
+506
+01:29:42,335 --> 01:29:44,855
+Şu, Paul, şey yapıyorum.
+
+507
+01:30:16,083 --> 01:30:17,224
+Bir saniye arkadaşlar.
+
+508
+01:30:53,652 --> 01:31:09,771
+Arkadaşlar, başka nasıl implement edebiliriz? Klasik yöntemle implement edebiliriz. Şimdi bu iki tane dildi. Bunu tanıyan şeyi yapalım. PDA'yı yazalım. Mesela bunu tanıyan PDA. Ne yapıyoruz?
+
+509
+01:31:13,112 --> 01:31:20,811
+İlk önce biz start state'den başladık. Start state'den başladık. Ne yapıyoruz burada?
+
+510
+01:31:22,228 --> 01:31:39,907
+Q1'e geldik. Epsilon, you will pop nothing, you will push dollar. Tamam. Ve ne yaptık? Dollar'ı ekledik. Sonra her bir input symbol E için
+
+511
+01:31:45,555 --> 01:32:07,935
+Hiçbir şey pop etmeyeceğiz. Onun yerine x ekleyeceğiz siteye. Sonra her bir input symbol B için stekten x'i pop edeceğiz. Hiçbir şey siteye yüklemeyeceğiz. Ve şöyle yapalım.
+
+512
+01:32:13,939 --> 01:32:15,619
+Sonra buradan ne olacak?
+
+513
+01:32:17,379 --> 01:32:18,659
+Final State'e gideceğiz.
+
+514
+01:32:22,292 --> 01:32:42,292
+Sonra ne olacak? Stekten dollar seçilir. Alacağız. Hiçbir şey yüklemeyeceğiz. Böyle yapılabilir. Q2, Q3. Tamam mı? Bu neyi tanıyor? Bunun tanıdığı dil. A üzerini, B üzerini.
+
+515
+01:32:51,699 --> 01:33:09,420
+Bu doğru mu? Bakın, büyük eşittir diyor. Büyük eşittir yazmışız bu şekilde. Bu doğru mu? Burada bir tane daha final state olacak. Bakın, bu eşitlikten dolayı şu da final state olmak zorunda değil mi?
+
+516
+01:33:11,579 --> 01:33:14,899
+Empty string'i tanımalı. Aksal'da empty string'i tanımaz.
+
+517
+01:33:20,916 --> 01:33:42,396
+Eğer şöyle olsaydı bu, burada eşitlik olmasaydı, o zaman bu doğruydu. Şu anda doğru. Şimdi soruya bakalım. Sonra da biz ne demişiz? Büyük eşittir 0 demişiz. Öyleyse büyük eşittir 0 ise, ne olmalı bunu? Burası büyük eşittir 0 ise, o zaman X state de ne olmalı?
+
+518
+01:33:49,203 --> 01:34:01,363
+Start state olmalı değil mi? Şimdi elimde ne var? Böyle bir devre var. Ne yapacağım ben bu devreyi? İki defa kullanacağım. Nasıl kullanacağım? Şöyle. Şöyle alalım bunu.
+
+519
+01:34:05,943 --> 01:34:15,283
+Kopyalıyorum. Tamam arkadaşlar. Bu PDA'yı aldım. Bu PDA'yı aldım. Şuraya ekliyorum şimdi PDA'ya.
+
+520
+01:34:19,572 --> 01:34:21,471
+Sonra aynı PD'ye bir daha ekliyorum.
+
+521
+01:34:24,612 --> 01:34:24,912
+Tamam.
+
+522
+01:34:26,512 --> 01:34:30,291
+Sonra, bu PD'nin çıkışını alıyorum.
+
+523
+01:34:34,868 --> 01:34:41,847
+Bak, şu PDA'nın çıkışını alıyorum, şunun girişine bağlıyorum. Peki bunun geçişi nasıl olacak?
+
+524
+01:34:42,747 --> 01:34:52,208
+You push, you pop nothing, you push nothing. Tamam mı? Bak, şu anda bunun tanıdığı dil nedir?
+
+525
+01:34:56,819 --> 01:34:59,119
+Bunun tanıdığı dil, hemen yazalım buraya.
+
+526
+01:35:01,479 --> 01:35:04,000
+Neyle yazalım? Bunun tanıdığı dil de budur.
+
+527
+01:35:23,412 --> 01:35:34,512
+Tamam arkadaşlar. Bu kadar basit. Bak bu da PDA. Bu da PDA. Bu da PDA. Aynı dili, pardon, şu da PDA. Bak bu da aynı dili tanıyor.
+
+528
+01:35:36,912 --> 01:35:40,332
+Tamam mı? Bu da PDA, bu da değil. İkisi de doğru. Hangisini yaparsanız.
+
+529
+01:35:43,828 --> 01:35:48,988
+Dolayısıyla, Ezerizalt, Ezerizalt,
+
+530
+01:36:02,323 --> 01:36:03,724
+The concatenation
+
+531
+01:36:08,148 --> 01:36:18,247
+Context-free languages, yields, a context-free language.
+
+532
+01:36:19,688 --> 01:36:25,908
+Ok, therefore, there is a PDA.
+
+533
+01:36:30,771 --> 01:36:32,771
+to recognize
+
+534
+01:36:35,988 --> 01:36:45,388
+Bu koncatenation, konca, denation, of, context-free languages. Okay?
+
+535
+01:36:47,028 --> 01:36:48,708
+There are PDAs.
+
+536
+01:36:50,788 --> 01:36:56,588
+There are PDAs to recognize the concatenation of the context-free languages.
+
+537
+01:36:58,048 --> 01:36:59,548
+Any question?
+
+538
+01:37:13,939 --> 01:37:15,760
+One second, arkadaşlar.
+
+539
+01:37:28,532 --> 01:37:29,852
+What about the union?
+
+540
+01:37:35,988 --> 01:37:41,988
+Bu bir result. Bu bir şey. Bu çok önemli.
+
+541
+01:37:46,868 --> 01:37:47,868
+Tamam.
+
+542
+01:37:49,188 --> 01:37:50,188
+If...
+
+543
+01:37:51,548 --> 01:37:52,988
+What about this one?
+
+544
+01:37:53,747 --> 01:37:55,188
+This is the language.
+
+545
+01:38:06,100 --> 01:38:08,420
+Or maybe I should try it in a new slide.
+
+546
+01:38:11,220 --> 01:38:11,920
+Union of.
+
+547
+01:38:15,572 --> 01:38:16,452
+CFS
+
+548
+01:38:20,083 --> 01:38:21,484
+I have the language one.
+
+549
+01:38:28,724 --> 01:38:31,084
+Ok, I have language too.
+
+550
+01:38:47,923 --> 01:38:55,923
+İngiltere olan cfl. Bu cfl. Bu cfl. Bu cfl. Bu cfl.
+
+551
+01:38:55,923 --> 01:38:59,923
+Bu cfl. Bu cfl.
+
+552
+01:38:59,923 --> 01:39:12,844
+Bu cfl.
+
+553
+01:39:13,171 --> 01:39:16,491
+This is the union of language 1 and language 2.
+
+554
+01:39:17,591 --> 01:39:18,671
+So this is equal to
+
+555
+01:39:18,671 --> 01:39:26,591
+A power n, B power n, or
+
+556
+01:39:26,591 --> 01:39:31,911
+A power 2n, B power 3n.
+
+557
+01:39:33,291 --> 01:39:35,271
+Okay, this is or.
+
+558
+01:39:36,191 --> 01:39:38,951
+But here we have to use, of course, different.
+
+559
+01:39:38,951 --> 01:39:39,831
+So
+
+560
+01:39:40,404 --> 01:39:44,904
+And M is greater than or equal to zero.
+
+561
+01:39:46,624 --> 01:39:52,164
+So this is also regular language.
+
+562
+01:39:52,284 --> 01:39:52,544
+Why?
+
+563
+01:39:52,664 --> 01:40:02,004
+Because we can also implement this one, this language and this language, context-free languages, and we can run this context-free language in parallel.
+
+564
+01:40:03,028 --> 01:40:14,028
+ve bu şekilde kullanarak, daha farklı bir kısım var. Bu, bu konuda kullanılabilir. Bu konuda kullanılabilir.
+
+565
+01:40:14,028 --> 01:40:20,028
+Bu konuda, bu konuda, gramma olarak bir kısım var.
+
+566
+01:40:20,028 --> 01:40:24,028
+Grammar olarak bir kısım var.
+
+567
+01:40:24,028 --> 01:40:29,028
+Bir dakika.
+
+568
+01:40:30,707 --> 01:40:32,427
+The grammar of language one.
+
+569
+01:40:36,692 --> 01:40:38,771
+So, this is the requirement of language 1.
+
+570
+01:40:45,076 --> 01:40:47,115
+What about the grammar of language too?
+
+571
+01:41:02,100 --> 01:41:04,100
+Tamam.
+
+572
+01:41:04,100 --> 01:41:06,100
+What about the grammar of language L?
+
+573
+01:41:10,547 --> 01:41:12,868
+The grammar of language L will be like this.
+
+574
+01:41:15,007 --> 01:41:19,487
+You start with like this. You will go to S1 or S2.
+
+575
+01:41:20,667 --> 01:41:26,648
+And S1 will be S1B.
+
+576
+01:41:27,967 --> 01:41:30,648
+And S2 will be S1B.
+
+577
+01:41:38,292 --> 01:41:56,252
+Do you see? So this is the grammar of the language L. So from here, we can implement the PDA. Very simple. So this is start state Q0.
+
+578
+01:42:01,108 --> 01:42:07,052
+You will pop nothing, you will push S$.
+
+579
+01:42:19,475 --> 01:42:23,515
+Q1, and Q2.
+
+580
+01:42:24,675 --> 01:42:26,415
+And Q2 is the final state.
+
+581
+01:42:32,408 --> 01:42:34,408
+Bu cfl.
+
+582
+01:42:31,828 --> 01:42:34,860
+ve bu
+
+583
+01:42:39,283 --> 01:42:40,703
+Let me write these loops.
+
+584
+01:43:39,859 --> 01:43:43,799
+This is the PDA for this grammar.
+
+585
+01:43:44,039 --> 01:43:47,851
+So, finally, union of...
+
+586
+01:43:51,444 --> 01:43:54,244
+Context-free languages, yields.
+
+587
+01:43:58,068 --> 01:43:59,648
+Context-free languages.
+
+588
+01:44:01,248 --> 01:44:01,448
+Okay?
+
+589
+01:44:02,128 --> 01:44:08,288
+Therefore,
+
+590
+01:44:10,408 --> 01:44:11,788
+There are
+
+591
+01:44:17,460 --> 01:44:21,539
+PDAs to recognize
+
+592
+01:44:27,155 --> 01:44:32,655
+Union of context-free languages.
+
+593
+01:44:32,655 --> 01:44:35,155
+Okay, this is also very important.
+
+594
+01:44:53,555 --> 01:44:56,235
+What about the clinic start operation?
+
+595
+01:45:01,908 --> 01:45:08,347
+Context-free languages are also closet form for clean star operation.
+
+596
+01:45:17,363 --> 01:45:19,083
+Any questions till now?
+
+597
+01:45:24,275 --> 01:45:25,735
+Arkadaşlar, sorunuz var mıydı?
+
+598
+01:45:59,667 --> 01:46:00,067
+Okay.
+
+599
+01:46:06,228 --> 01:46:08,407
+Union of, what about now?
+
+600
+01:46:11,467 --> 01:46:15,028
+Clinic closure, clinic operation.
+
+601
+01:46:19,828 --> 01:46:21,828
+Kulini
+
+602
+01:46:25,828 --> 01:46:27,820
+of CFS
+
+603
+01:46:33,171 --> 01:46:43,591
+If L1 is a context-free languages.
+
+604
+01:46:47,507 --> 01:46:54,487
+It's cleaning, it's cleaning closures.
+
+605
+01:47:01,460 --> 01:47:04,159
+What is this? L1 star.
+
+606
+01:47:05,559 --> 01:47:07,319
+It will also be a...
+
+607
+01:47:12,916 --> 01:47:13,476
+Ve,
+
+608
+01:47:13,476 --> 01:47:18,396
+Context-free language.
+
+609
+01:47:20,175 --> 01:47:21,716
+For example,
+
+610
+01:47:27,444 --> 01:47:29,444
+Okay, this is the language, L1.
+
+611
+01:47:31,684 --> 01:47:38,524
+And this is, let's say this is a power n, b power n, and n is greater than or equal to zero.
+
+612
+01:47:40,364 --> 01:47:42,264
+It's clean stir operations.
+
+613
+01:47:51,667 --> 01:47:52,707
+Oğuz ekopera.
+
+614
+01:48:04,756 --> 01:48:05,516
+İzolsun.
+
+615
+01:48:10,868 --> 01:48:15,427
+CFS, context-free.
+
+616
+01:48:17,408 --> 01:48:17,728
+Okay.
+
+617
+01:48:20,028 --> 01:48:26,368
+So, how can we write the Cleanstar operation, grammar of Cleanstar operations?
+
+618
+01:48:27,988 --> 01:48:30,908
+Now, let us have 10-minute break.
+
+619
+01:48:44,532 --> 01:48:47,011
+After a 10-minute break, we will continue.
+
+620
+02:04:02,100 --> 02:04:03,860
+Evet arkadaşlar, devam edelim.
+
+621
+02:04:13,844 --> 02:04:19,584
+Şimdi, Grammar of L1.
+
+622
+02:04:23,028 --> 02:04:23,948
+Belo simple.
+
+623
+02:04:29,876 --> 02:04:32,636
+What about the Clinistar operations gramer?
+
+624
+02:04:34,096 --> 02:04:36,935
+Grammar of L1, Clinistar.
+
+625
+02:04:39,396 --> 02:04:47,195
+Do you remember that this is the Clinistar operation, you concatenate the language with all possibles.
+
+626
+02:04:48,716 --> 02:04:51,836
+So we can write like this.
+
+627
+02:04:51,836 --> 02:04:52,956
+This is S.
+
+628
+02:04:53,908 --> 02:05:20,688
+Varival, and this is the variable S, start variable, and this is start variable, and this goes to A, let's say S1, S1, and variable S, and then like this, and the S1 goes to A, S1.
+
+629
+02:05:21,619 --> 02:05:23,219
+And M string.
+
+630
+02:05:23,219 --> 02:05:28,219
+So this is the grammar of the Clinistar operation of the...
+
+631
+02:05:28,219 --> 02:05:35,659
+So you can implement the PDA for this easily.
+
+632
+02:05:35,659 --> 02:05:38,859
+What is the PDA for this? You can easily implement it.
+
+633
+02:05:43,252 --> 02:05:45,992
+Okay, let us do the implementations.
+
+634
+02:05:49,844 --> 02:05:52,344
+So, this is the start state.
+
+635
+02:05:55,783 --> 02:06:00,244
+And here, this is empty.
+
+636
+02:06:00,244 --> 02:06:02,904
+You pop empty.
+
+637
+02:06:02,904 --> 02:06:07,484
+You push $.
+
+638
+02:06:10,868 --> 02:06:11,868
+Bu bir şey.
+
+639
+02:06:16,500 --> 02:06:21,860
+You pop dollars, you push empty string, this is Q2.
+
+640
+02:06:27,539 --> 02:06:31,539
+Evet.
+
+641
+02:06:37,460 --> 02:06:39,000
+And there are loops here.
+
+642
+02:06:55,891 --> 02:07:00,652
+Bu, bu
+
+643
+02:07:20,435 --> 02:07:23,555
+Bu da olde prodüksesini ve nowı terminations.
+
+644
+02:07:23,555 --> 02:07:25,475
+Terminations, bu da...
+
+645
+02:07:25,475 --> 02:07:28,036
+Oh, bu da...
+
+646
+02:07:29,715 --> 02:07:32,036
+And nowı terminations.
+
+647
+02:07:53,492 --> 02:07:57,892
+Bu, bu, bu, PDA implementasyon.
+
+648
+02:08:03,572 --> 02:08:03,912
+Ok?
+
+649
+02:08:08,020 --> 02:08:16,640
+Or we can do alternatively, the alternative implementation in the classical way, using the stacks.
+
+650
+02:08:20,720 --> 02:08:22,140
+This is the start state.
+
+651
+02:08:25,100 --> 02:08:27,600
+And you will go to the state Q1.
+
+652
+02:08:33,460 --> 02:08:48,239
+Okay? And for input symbol A, you pop nothing and you push X into the stack.
+
+653
+02:08:53,939 --> 02:08:57,679
+İntro, B, B, you pop X, you push, nothing.
+
+654
+02:09:10,707 --> 02:09:19,827
+You pop X, you push empty string, this is Q2, and you reach the final state.
+
+655
+02:09:24,595 --> 02:09:26,215
+This is the final state.
+
+656
+02:09:27,456 --> 02:09:32,456
+And you pop $, you push empty string.
+
+657
+02:09:33,756 --> 02:09:36,036
+Now, this is the Q3.
+
+658
+02:09:37,735 --> 02:09:44,456
+So now what I will do, I will do feedback from here to here.
+
+659
+02:09:47,456 --> 02:09:48,695
+This feedback.
+
+660
+02:09:52,595 --> 02:09:54,915
+...to achieve the clean style operation.
+
+661
+02:09:56,475 --> 02:09:57,835
+This is also, sorry.
+
+662
+02:09:59,795 --> 02:10:06,355
+Before this feedback, we have to know that this Q0 is also final state.
+
+663
+02:10:08,275 --> 02:10:14,955
+Look, this guy because N equals 0 because empty string.
+
+664
+02:10:17,555 --> 02:10:28,095
+is element of the language one. So Q0 must be also final state. So there are two final states in this case. And what do I do?
+
+665
+02:10:31,731 --> 02:10:34,912
+Because of clean start operations, this is the feedback.
+
+666
+02:10:41,844 --> 02:10:46,844
+Bu PDA'nın iki PDA'nın eşitliği.
+
+667
+02:11:08,020 --> 02:11:12,900
+Cleaner, Closure.
+
+668
+02:11:17,555 --> 02:11:21,355
+Of a CFM, use,
+
+669
+02:11:36,051 --> 02:11:43,551
+There are PDAs to recognize.
+
+670
+02:11:47,444 --> 02:11:51,844
+...de ...
+
+671
+02:11:53,144 --> 02:11:56,644
+...
+
+672
+02:12:13,747 --> 02:12:19,787
+And finally, intersection and complementation left.
+
+673
+02:12:25,300 --> 02:12:26,300
+Intersection.
+
+674
+02:12:30,260 --> 02:12:33,260
+ve complementar.
+
+675
+02:12:36,916 --> 02:12:38,555
+Of CFS.
+
+676
+02:12:41,755 --> 02:12:42,835
+Contextuali languages.
+
+677
+02:12:47,155 --> 02:13:04,715
+If L1 and L2 are two context-free languages,
+
+678
+02:13:09,811 --> 02:13:11,500
+DER INTERSECTION
+
+679
+02:13:15,764 --> 02:13:31,943
+L1, intersection L2, need not to be context-free.
+
+680
+02:13:41,140 --> 02:13:45,640
+Bu örneğin, iki idi.
+
+681
+02:13:49,779 --> 02:14:09,340
+So, e power n, b power n, c power m, mn is greater than or equal to zero. L2, e power n, m, b power n, c power n, m and n.
+
+682
+02:14:14,739 --> 02:14:22,819
+And now, let me define a new language. The new language is intersection of this L1 and L2.
+
+683
+02:14:24,380 --> 02:14:30,079
+What is the intersection of this L1 and L2? It is this e power n.
+
+684
+02:14:34,195 --> 02:14:36,216
+E power N, C power N.
+
+685
+02:14:43,220 --> 02:14:44,119
+Not that.
+
+686
+02:14:48,979 --> 02:15:12,119
+L1 is CFL. L1 is a context-free language and L2 is a context-free language. But L3 is not a context-free language.
+
+687
+02:15:23,028 --> 02:15:40,188
+Context-free languages are not closed under intersection operation.
+
+688
+02:15:40,188 --> 02:15:43,068
+Okay?
+
+689
+02:15:43,068 --> 02:15:46,268
+Very simple.
+
+690
+02:15:56,020 --> 02:15:58,020
+Bu çok önemli.
+
+691
+02:16:00,420 --> 02:16:02,420
+Bu, complementar?
+
+692
+02:16:07,731 --> 02:16:09,731
+The complementation of language.
+
+693
+02:16:20,020 --> 02:16:21,140
+Dikomplementation
+
+694
+02:16:26,676 --> 02:16:43,855
+L1'in
+
+695
+02:16:48,084 --> 02:17:00,084
+ve, as you can see, all the languages minus this language.
+
+696
+02:17:00,084 --> 02:17:07,084
+And it does not need to be regular language.
+
+697
+02:17:11,476 --> 02:17:20,587
+Bu, bu
+
+698
+02:17:36,308 --> 02:18:00,188
+to be a context-free language. You can give the examples because L1 complementation may have this one language, this language, this is the L1.
+
+699
+02:18:13,459 --> 02:18:21,279
+And this one, not that, L, this language.
+
+700
+02:18:28,948 --> 02:18:30,528
+A sub-set of...
+
+701
+02:18:34,195 --> 02:18:37,956
+This element subset of L1 prime.
+
+702
+02:18:39,095 --> 02:18:39,515
+Therefore,
+
+703
+02:18:45,556 --> 02:18:46,556
+Is it?
+
+704
+02:18:48,316 --> 02:18:51,556
+This is not a strong claim.
+
+705
+02:18:52,156 --> 02:18:54,156
+This is not a strong statement.
+
+706
+02:18:59,056 --> 02:19:01,855
+Yes, this is not a strong statement.
+
+707
+02:19:32,755 --> 02:19:33,135
+Bir soru.
+
+708
+02:19:42,835 --> 02:19:49,075
+Ok, let me write another questions. I will hear a question.
+
+709
+02:19:53,043 --> 02:19:54,463
+Consider the language.
+
+710
+02:20:04,084 --> 02:20:08,924
+L1, L2, L3.
+
+711
+02:20:11,924 --> 02:20:12,924
+As given...
+
+712
+02:20:16,852 --> 02:20:17,852
+BELOW.
+
+713
+02:20:19,852 --> 02:20:21,852
+OK, L1 is this one.
+
+714
+02:20:34,164 --> 02:20:38,828
+L2
+
+715
+02:21:20,435 --> 02:21:21,435
+Tamam.
+
+716
+02:21:22,935 --> 02:21:33,736
+My Option A, PDA, can be used to recognize.
+
+717
+02:21:39,379 --> 02:21:45,379
+L1 ve L2.
+
+718
+02:21:45,379 --> 02:21:57,379
+Option B, L1 is a regular language.
+
+719
+02:22:02,067 --> 02:22:06,427
+C is, all the three languages are context-free.
+
+720
+02:22:07,807 --> 02:22:10,787
+All the three.
+
+721
+02:22:24,340 --> 02:22:30,020
+Text, free, and option D.
+
+722
+02:22:37,427 --> 02:22:54,108
+All the languages, all the three languages have grammar, context-free grammars. Hangisi doğru? Bunlardan.
+
+723
+02:23:01,363 --> 02:23:03,463
+Evet arkadaşlar, hangisi doğru? Sorum bu.
+
+724
+02:23:18,227 --> 02:23:19,448
+Şimdi cevap verecek.
+
+725
+02:23:24,435 --> 02:23:50,155
+İlk dile bakalım. İlk dil bir kere A ile B'nin patternlerine bakıyoruz. Birbirinden bağımsız. Dolayısıyla ilk dil nedir? Regular'dır. İlk dil, this is regular language. Aynı zamanda context-free language'tir. Dolayısıyla bunu tanımak için PDA vardır değil mi?
+
+726
+02:23:51,636 --> 02:24:18,496
+İkincisine bakalım. Bu not regular, not regular language ama context-free'dir. Ve context-free olduğu için bir tane PDA'sı vardır. Üçüncüye bakalım. Not regular, not context-free grammar. Dolayısıyla there is no PDA.
+
+727
+02:24:22,772 --> 02:24:42,852
+Dolayısıyla, PDA can be used to recognize L1 and L2. This is true. L1 is a regular language. This is true. All the three languages are context-free. No. L1 is context-free. L2 is context-free. L3 is not context-free. This is false.
+
+728
+02:24:44,051 --> 02:24:56,932
+And all the three languages have context-free grammars, no. L1 and L2 has a context-free grammar. So this is also, L3 has no context-free grammar. So this is false.
+
+729
+02:25:30,804 --> 02:25:43,443
+One second. Başka örnekler yapalım. Geçen senelerden yaptım. Bir bakalım bir saniye arkadaşlar.
+
+730
+02:25:50,131 --> 02:25:51,083
+DFA
+
+731
+02:26:19,347 --> 02:26:26,667
+Mesela bu homework, bu homeworkta ikinci homeworka bakalım.
+
+732
+02:26:28,087 --> 02:26:33,527
+Geçen sene homework vermiştik, onların ikinci homeworktan örnekler yapalım olmadı.
+
+733
+02:26:34,527 --> 02:26:38,628
+İyi olur, homework 2. Tamam.
+
+734
+02:26:40,527 --> 02:26:42,067
+Bakalım bu neymiş.
+
+735
+02:27:10,227 --> 02:27:12,227
+Şimdi arkadaşlar, bir soru.
+
+736
+02:27:28,659 --> 02:27:52,440
+Bunu hatta şöyle yapalım. Bir saniye. Arkadaşlar, sizi bekleteceğim. Geçen sene ki örneklerden birkaç tane böyle şey yapalım. Bir saniye arkadaşlar. Şimdi durduracağım. Stop diyorum. Çok iyi. Şimdi şuna bir yükleme yapayım. Bir saniye.
+
+737
+02:28:30,195 --> 02:28:46,995
+Şimdi soruları yükleme yapayım iPad'e. O geçen sene Ödev 2'deki soruları yüklemesini yapayım iPad'den. Onları çözelim beraber. Hem böylelikle iyi olur bizler için de.
+
+738
+02:28:48,456 --> 02:28:57,036
+Bir saniye, evet. Gayet güzel yüklemesini yaptık arkadaşlar.
+
+739
+02:28:58,036 --> 02:29:04,736
+Evet. Hemen paylaşım yapıyorum tekrardan.
+
+740
+02:29:11,412 --> 02:29:19,731
+Bu geçen sene sormuş oldum Ödev 2. Şimdi şöyle bir şey var. Okuyalım.
+
+741
+02:29:20,072 --> 02:29:29,671
+For each of the following languages, state the class of the language, whether it is a regular, context-free, but not regular or neither.
+
+742
+02:29:30,011 --> 02:29:38,252
+Prove your answer. Make sure your claim that a language is a context-free that you show that it is not also regular.
+
+743
+02:29:38,708 --> 02:29:58,168
+For example, this is the first language. W is such a string that there exists k, there exists a number k greater than 0, and w is a binary encoding, leading 0s allowed of k to k plus 1.
+
+744
+02:29:58,168 --> 02:29:59,308
+Okay?
+
+745
+02:30:01,940 --> 02:30:03,780
+2K plus 1.
+
+746
+02:30:04,819 --> 02:30:07,440
+Bu idiom,
+
+747
+02:30:07,440 --> 02:30:08,000
+we can
+
+748
+02:30:13,556 --> 02:30:17,536
+Yani tek uzunluklu, değil mi?
+
+749
+02:30:24,468 --> 02:30:25,468
+Ok.
+
+750
+02:30:35,636 --> 02:31:01,416
+Tamam. Bunu bırakalım. Biraz karışık. Şuna bakalım. Belki bu regular bir language. Bu regular bir language. This language is regular. Regular. Dolayısıyla context-free'dir aynı zamanda. Bunu geçelim. Bu basit bir soru. Buna bakalım. Belki bu daha ilginç olacak. Bu bir dil. Bu dil şöyle yazmışlar.
+
+751
+02:31:05,556 --> 02:31:12,556
+A üzeri N, B üzeri N, C üzeri K,
+
+752
+02:31:20,115 --> 02:31:20,756
+Eksi
+
+753
+02:31:31,956 --> 02:31:39,195
+Bir tane dil var. A üzeri yıldız, B üzeri yıldız, C üzeri yıldız şeklinde. Bu şekilde yazabiliriz bu dili.
+
+754
+02:31:40,695 --> 02:31:45,736
+Ve buradan çıkartmışız. Tamam. Peki bu neye eşit? Bu dilde şuna eşit.
+
+755
+02:31:47,636 --> 02:31:55,116
+Nasıl yazarız bu dil? Neye eşit? A üzeri M, B üzeri N, C üzeri K. Nasıl olabilir?
+
+756
+02:31:55,891 --> 02:32:00,131
+çıkarttığımıza göre M veya N birbirine eşit olabilir.
+
+757
+02:32:04,084 --> 02:32:15,484
+M veya N'ye eşit olabilir. M veya N pardon birbirine eşit olmayabilir veya N veya K birbirine eşit olmayabilir değil mi? Buna eşit.
+
+758
+02:32:17,084 --> 02:32:30,244
+Şimdi bunu baktığımız zaman neyi görüyoruz? A üzeri N, B üzeri N buna eşit olmayabilir. Peki bu nasıl bir dildir?
+
+759
+02:32:31,379 --> 02:32:47,399
+A ile B arasında bir ilişki var, B ile C arasında bir ilişki var. Dolayısıyla ilişki sayısı, patendeki ilişki sayısı birden fazla. Hatta bunu pumping lemmayla da gösterebilirsiniz. Nedir bu?
+
+760
+02:32:47,399 --> 02:32:55,119
+This is not regular.
+
+761
+02:32:59,347 --> 02:33:15,207
+This is not regular. Bunu ne yapabiliriz? Bunu orladığımız zaman, bunu şuradaki ifadede M, N'ye eşit değil veya N, K'ya eşit değil. Dolayısıyla bu bir regular değil ama
+
+762
+02:33:18,772 --> 02:33:34,432
+Ama context-free'dir. Az önce yanlış söyledim. Ama context-free'dir. But it is context-free language. Neden? Çünkü A üzerinde, B üzerinde, C üzerinde bunun bir elemanı değil zaten. Diğerlerini bir şekilde tanıyabiliyoruz. Değil mi?
+
+763
+02:33:46,772 --> 02:33:50,772
+Mesela şöyle bir şey olsun. Mesela şöyle bir...
+
+764
+02:33:54,675 --> 02:34:19,876
+Dil olsun. Diyor ki bu dile C şıkkında bir dil olsun. Bunu bırakalım, şuna bakalım. Bir tane dil verilmiş. Diyor ki bu dilin A'lardan ve B'lerden oluşan dizi, başındaki, ortasındaki ve sonundaki karakterler aynı olacak diyor. Öyle bir dizi üreteceksiniz ki,
+
+765
+02:34:20,255 --> 02:34:45,255
+Başındaki, ortasındaki ve sonundaki karakterler ne olacak? Aynı olacak. Tamam mı? Dolayısıyla başındaki karakter ne olabilir? A olabilir. Ortasındaki karakter de A olabilir. Sonundaki karakter de A olabilir. Ya da başındaki karakter B, ortadaki karakter B, sonundaki karakter B olabilir. Dolayısıyla iki tane durum var.
+
+766
+02:34:45,655 --> 02:34:47,655
+Hemen bunun gramerini yazalım.
+
+767
+02:34:48,948 --> 02:35:10,227
+Variable is this is start state. Başında ne olabilir? A olabilir. Değil mi? Söyledir sonunda A olacak. Ya da başında B olacak, sonunda B olacak. Değil mi? Peki şimdi ortasında A olmasını nasıl garanti edeceğiz?
+
+768
+02:35:11,412 --> 02:35:34,371
+A'yı direkt ne olabilir? Direkt A olursa, tamam. Ne oldu? A'dan A'ya A. Üç tane A oluştu. Başı, ortası, sonu ne olmuş oldu? Direkt A olmuş oldu. Hatta en az üç karakterden oluşması gerekiyor. Baş, orta ve son karakteri.
+
+769
+02:35:34,868 --> 02:36:00,528
+Bir de en az 3 elemanlı olmak zorunda zaman arkadaşlar. Dolayısıyla A olabilir. Sonra ne yapacağız? Ortadaki elemanı ne yapabiliriz? Garanti edebiliriz. Ortadaki elemanın garantisini sağlayabiliriz.
+
+770
+02:36:03,572 --> 02:36:05,272
+Şöyle düşünebiliriz bunu.
+
+771
+02:36:08,991 --> 02:36:10,432
+A oldu.
+
+772
+02:36:11,011 --> 02:36:19,631
+Dolayısıyla A olduktan sonra A'nın sağına ve soluna istediğimiz karakterleri ekleyebiliriz.
+
+773
+02:36:19,631 --> 02:36:29,471
+A, B, sonra B, A.
+
+774
+02:36:30,548 --> 02:36:48,548
+Sonra A ve sonra bütün olası karakterleri sağına ve soluna ekleyebiliriz. Sonra birden A ile de biter. Böylelikle ortadaki A'yı garanti etmiş olduk. Aynısını B için de yapabiliriz.
+
+775
+02:37:06,100 --> 02:37:20,680
+Bu şekilde gramerini bulmuş olduk. Peki bunun context-free'sini, PDA'sini yazabilir miyiz? Gerçekleyebiliriz. Direkt bu grameri kullanarak bunu PDA'yı yapabiliriz. Hemen yazıyorum.
+
+776
+02:37:22,680 --> 02:37:32,239
+Q0, Q1, Q2, Q2, Q2, Final State.
+
+777
+02:37:33,396 --> 02:37:48,536
+İşte bu geçiş nasıl oluyordu? Epsilon, pop empty string, push, variables and dollar, pop dollar.
+
+778
+02:37:52,628 --> 02:37:54,868
+Okey, here is the loops.
+
+779
+02:37:57,808 --> 02:38:01,648
+Bu loopları buradan yazacağım şimdi. Teker teker yazacağım.
+
+780
+02:38:03,128 --> 02:38:03,567
+Empty.
+
+781
+02:39:46,484 --> 02:39:49,364
+Bu şekilde PDS'ini oluşturmuş olduk.
+
+782
+02:39:51,623 --> 02:40:00,504
+Regular değildir. Regular olmadığını zaten paterni bozarak gösterebilirsiniz. Çok rahat bir şekilde pumping lemmayla.
+
+783
+02:40:01,764 --> 02:40:08,804
+Neden? Çünkü bağıntı sayısı. Ortada, başında ve sonunda bağıntı var. Dolayısıyla regular değildir.
+
+784
+02:40:16,275 --> 02:40:23,255
+Şimdi diğer bir soru. Şimdi bu bir tane grameri bakalım. Bu gramer verilmiş bize.
+
+785
+02:40:24,955 --> 02:40:35,975
+What are the first shortest four strings? Yani bu gramerle üretilecek en kısa ilk dört tane diziyi yazın diyor.
+
+786
+02:40:37,195 --> 02:40:42,255
+Ne olması lazım? Direkt terminate olmak lazım değil mi? Mesela nasıl olabilir bu termination?
+
+787
+02:40:44,404 --> 02:41:03,584
+S, T'ye gitse, T, X'e gider, X'de 1'e gider. Dolayısıyla bir, ne olabilir burada? Bir, bir kere var. Yani S'den T'ye gitti, T'den X'e gitti, X'den de 1'e gider. Eyvallah.
+
+788
+02:41:12,308 --> 02:41:36,788
+T'den X'e gidebilir, X'den 0x0'a gidebilir, sonra buradaki X'de 1'e gidebilir, dolayısıyla 0, 1, 0'dır. Değil mi? Bir sonraki, S'den T'ye gidebilir, T'den 1x1'e gidebilir, X'de 1'e gidebilir, dolayısıyla 1, 1, 1 de.
+
+789
+02:41:38,227 --> 02:41:57,628
+Nedir? Üçüncüsüdür. Dördüncüsü. Burası önemli. Dördüncüsü. X'e gidebilir. X de sıfıra gidebilir. Tamam mı? Şuraya gidebilir.
+
+790
+02:42:06,708 --> 02:42:18,728
+X'e gidebilir, X'den buraya gidebilir, 0, X, 0'a gidebilir. Sonra X'den de tekrar 0, X, 0'a gidebilir. Dolayısıyla daha sonra 1 gelebilir.
+
+791
+02:42:19,868 --> 02:42:30,708
+0, X, 0, dolayısıyla 0, X, 0, sonra 1. Şunu elde etmiş oluruz. İlk 4 tanesi bu. Peki şunu da elde edebiliriz.
+
+792
+02:42:34,804 --> 02:42:58,304
+1, 1, 1, 1. Ama bu ilk 4 tane içinde değil. İlk 4 tanesini istiyoruz. Bu şekilde yapabiliriz. Sonra diyoruz ki uzunluğu 7'den büyük olan bir tane dizi ver diyoruz. Bunun üretebildiği. Bunun üretebildiği uzunluğu 7'den büyük olan bir dizi.
+
+793
+02:43:03,827 --> 02:43:22,207
+Mesela şuradan içeriye gitti, iki tane uzunluk eklendi. Bir daha gitti, bir iki tane daha uzunluk eklendi. Bir daha gitti, bir iki tane daha uzunluk eklendi. Sonra STYT'de X'te 1'e gider. Dolayısıyla nasıl yazabiliriz?
+
+794
+02:43:32,371 --> 02:43:37,671
+1, 1, şöyle yazabiliriz.
+
+795
+02:43:38,631 --> 02:43:55,592
+1, 1, S'den 1S1'e gitti. Sonra S'den 1S1'e daha gitti. Uzunluk 4 oldu. S'den 1S1'e daha gitti. Uzunluk 3 oldu. 6 etti. S'den 1S1'e gitti. Uzunluk şu anda 8 etti. Sonra S'den.
+
+796
+02:43:56,275 --> 02:43:59,975
+T'ye girebilir, T'den X'e girebilir, X'den 1'e girebilir.
+
+797
+02:44:01,475 --> 02:44:06,775
+İşte şu da diz olmuş oldu. Uzunluğu kaç olmuş oldu? 4, 4, 8, 9.
+
+798
+02:44:13,203 --> 02:44:38,763
+Şimdi, Move diyelim. Bu dizinin elemanı. Ama soruda ne diyor? Elemanı olmayacak diyor. Uzunluğu 7'den büyük olacak ama elemanı olmayacak. Elemanı olmayacak diyorsa bu doğru cevap değil o zaman elemanı olmayanı bulacağız. Başka ne olabilir?
+
+799
+02:44:40,020 --> 02:45:03,100
+T'den gitti, X1, X1, X1, 0, 0, 0, 0 olur. Her zaman dikkatinizi çekerse ortadaki eleman ne? Ortadaki eleman her zaman 1 ile bitiyor. Bakın sağına soluna ekliyor, sağına soluna ekliyor ama ortadaki eleman ne oluyor? Her zaman 1 olmuş oluyor. Bak ortadaki eleman 1, ortadaki eleman 1, ortadaki eleman 1, ortadaki eleman 1.
+
+800
+02:45:04,884 --> 02:45:19,283
+Ben şu dizinin ortasındaki elemanı bir yaparsam, sıfır yaparsam pardon, bu ne olacak? Dilin elemanı olmayacak, dizinin elemanı olmayacak. Bu şekilde basit bir soru.
+
+801
+02:45:25,843 --> 02:45:44,723
+Enbiyg ismi diye göster diyor bu dile. Bir bakalım Enbiyg ismi diye. Şimdi şöyle yapabiliriz. Hemen bir derivation yapalım. Şimdi S'den başladık. Ben önce şu dizi dilibiyi şuraya yazayım hatırlamak için.
+
+802
+02:45:49,876 --> 02:45:50,936
+Güzel, arkadaşlar.
+
+803
+02:45:59,924 --> 02:46:01,324
+Şöyle bir yazayım. S.
+
+804
+02:46:08,404 --> 02:46:14,404
+1S1T
+
+805
+02:46:15,404 --> 02:46:16,404
+T
+
+806
+02:46:20,180 --> 02:46:25,779
+Bir, X, bir, X, X.
+
+807
+02:46:29,652 --> 02:46:33,112
+0, X0, 1.
+
+808
+02:46:35,811 --> 02:46:37,231
+Şimdi ne olacak?
+
+809
+02:46:37,711 --> 02:46:40,231
+Grammar ambigüüs olup olmadığını bakalım.
+
+810
+02:46:40,831 --> 02:46:42,311
+Bu ne olabilir? 1S1 olabilir.
+
+811
+02:46:42,891 --> 02:46:44,252
+Şu production'ı kullandım.
+
+812
+02:46:45,691 --> 02:46:49,211
+Sonra 1S1 de ne yapabiliriz?
+
+813
+02:46:50,572 --> 02:46:52,711
+S yerine T gelebilir.
+
+814
+02:46:52,871 --> 02:46:55,072
+O zaman 1T1 oldu.
+
+815
+02:46:55,072 --> 02:46:56,391
+Değil mi?
+
+816
+02:46:57,043 --> 02:47:03,184
+Sonra ne olabilir? T yerine X gelebilir. Şu production'ı kullandım. T'den X'e gidiyor.
+
+817
+02:47:04,703 --> 02:47:15,043
+1, X, 1 olabilir. Sonra X'den de neye gidiyor? 1'e gitsin. 1, 1, 1 elde ettim.
+
+818
+02:47:16,644 --> 02:47:21,664
+Yine start state'den başlayayım. Start state'den başladım.
+
+819
+02:47:23,156 --> 02:47:24,936
+Neye gitsin? Direkt T'ye gitsin.
+
+820
+02:47:27,515 --> 02:47:29,376
+T'den 1x bile gidebilir.
+
+821
+02:47:33,780 --> 02:47:45,120
+1x1'den de 1-1-1'e gidebilir. Gördüğünüz gibi 1-1-1 dizisini elde etmek için iki tane derivation var. Dolayısıyla nedir? G dili. G gramarı.
+
+822
+02:47:55,667 --> 02:47:59,667
+is mb100.
+
+823
+02:48:01,667 --> 02:48:03,180
+Tamam?
+
+824
+02:48:10,004 --> 02:48:27,824
+Şimdi şöyle bir regular dil verilmiş. L1 dilinin gramerini bulunuyor. Bulabiliriz. Nasıl bir dil bu? AA, A yıldız, B veya B. Bunun regular bir dildir. Regular bir dilinde grameri vardır.
+
+825
+02:48:37,072 --> 02:48:40,912
+A yıldızı ifadesi, sonra B var, V ya B var.
+
+826
+02:48:42,051 --> 02:48:48,632
+Sonra A yıldızı da şeklinde yazabiliriz.
+
+827
+02:48:51,072 --> 02:48:53,612
+Tamam. İşte gramerini yazmış olduk.
+
+828
+02:48:54,632 --> 02:48:56,531
+Peki şunun gramerine bakalım. L2.
+
+829
+02:48:57,452 --> 02:48:59,351
+Yani L2 ise şu şekilde.
+
+830
+02:49:00,531 --> 02:49:04,092
+A üzeri N, C üzeri M, B üzeri N.
+
+831
+02:49:05,523 --> 02:49:16,144
+Peki nasıl? Bakın M ve N büyük eşittir 1. Bakın dikkat edin, bu şartlar önemli birden büyük olacak şekilde. Değil mi?
+
+832
+02:49:21,523 --> 02:49:46,863
+Şimdi, ne yapabiliriz? Bunun gramerine yazalım. Bir kere şu olacak. A ve B'lerin sayısı eşit olacak. A'ların ve B'lerin sayısı eşit olacak, eşit olacak, eşit olacak. Sonra bu C'ye gidecek. Bu da şey diyelim. Hangi değişken? W diyelim.
+
+833
+02:49:48,755 --> 02:50:11,655
+S yerine Z diyelim. Tamam, Z daha iyi. Z'ye gidecek. Z'de ne yapacak? C'leri pump edecek. Veyahut da direkt M ve N sayısı bakın hep birden büyük olmuş oldu. Sonra burası da ne olacak? C olabilir doğrudan.
+
+834
+02:50:18,004 --> 02:50:19,224
+oluşturmuş olduk.
+
+835
+02:50:21,603 --> 02:50:23,884
+Şimdi, benim sorum şu.
+
+836
+02:50:25,024 --> 02:50:26,004
+Şöyle olsaydı,
+
+837
+02:50:29,824 --> 02:50:30,164
+M,
+
+838
+02:50:32,164 --> 02:50:32,644
+N,
+
+839
+02:50:33,044 --> 02:50:35,544
+N büyük eşittir 1
+
+840
+02:50:35,544 --> 02:50:39,524
+ve M büyük eşittir 0 olsaydı,
+
+841
+02:50:41,204 --> 02:50:42,344
+o zaman nasıl olacaktı?
+
+842
+02:50:43,636 --> 02:50:58,195
+Burada C olmayacaktı. Ne gelecekti burada o zaman? Epsilon gelecekti. Empty string. Değil mi? Çünkü C'nin 0 olabilir. C'nin sayısı.
+
+843
+02:51:04,275 --> 02:51:07,896
+Güzel. Şöyle bir dil var.
+
+844
+02:51:10,275 --> 02:51:12,916
+Ve bunun da hemen yazalım. Çok basit bu.
+
+845
+02:51:14,615 --> 02:51:15,935
+Hemen şöyle yazacağız.
+
+846
+02:51:19,891 --> 02:51:28,492
+B olacak. Tamam mı arkadaşlar? Bir kere bunu sonra ekledikten sonra A'ya gidecek. A'dan da.
+
+847
+02:51:41,299 --> 02:51:42,059
+Bu şekilde
+
+848
+02:51:42,059 --> 02:51:45,899
+kremerini oluştururuz hemen.
+
+849
+02:51:52,564 --> 02:52:19,543
+Arkadaşlar, bu Homework 2'yi bugün paylaşırım sizle. Homework 1 ve Homework 2'yi bugün sizle paylaşırım. Bunları çözmeye çalışırsınız. Tamam mı arkadaşlar? Çözmeye çalışırsınız. Şu an burada dersi bitiriyorum. Unutmayın, 13. hafta kuyuzumuz var.
+
+850
+02:52:20,020 --> 02:52:31,360
+Tamam mı arkadaşlar? 13. hafta quizimiz var. Lütfen şimdiden hazırlanalım. Haftaya görüşürüz. Kendinize iyi bakın. Dikkatli olun, sağlıklı olun.
+
+851
+02:52:32,200 --> 02:52:32,880
+İyi günler hocam.
+
+852
+02:52:33,639 --> 02:52:35,080
+İyi günler, kolay gelsin hepimiz.
+
+853
+02:52:35,080 --> 02:52:35,620
+İyi günler.
+
+854
+02:52:35,860 --> 02:52:37,220
+İyi günler, iyi çalışmalar.

@@ -1,0 +1,2667 @@
+1
+00:02:49,204 --> 00:02:50,104
+Günaydın arkadaşlar.
+
+2
+00:03:14,292 --> 00:03:22,852
+Bu son dersimiz, bugünkü dersimiz son dersimiz. Bu dersimizde Turing makinelerinde devam edeceğiz.
+
+3
+00:03:34,163 --> 00:03:34,563
+Ok.
+
+4
+00:03:43,412 --> 00:03:53,652
+Ok, good. Theorem, stay option Turing machines have the same power with the standard Turing machines.
+
+5
+00:03:54,451 --> 00:04:05,171
+In stay option Turing machines, the head can move left, right, and additionally can stay on its position.
+
+6
+00:04:05,891 --> 00:04:10,771
+So that is why that Turing machine is called stay option Turing machine.
+
+7
+00:04:11,443 --> 00:04:18,903
+In order to prove this theorem, we need to consider two cases.
+
+8
+00:04:20,323 --> 00:04:26,663
+The first case is stay option Turing machines simulate standard Turing machines.
+
+9
+00:04:27,623 --> 00:04:37,863
+It is straightforward to guess that, of course, stay option machines easily simulate standard Turing machines.
+
+10
+00:04:38,303 --> 00:04:58,144
+Therefore, we can say that the power of stay option Turing machines could be greater than the power of the standard Turing machines.
+
+11
+00:04:58,771 --> 00:05:00,771
+Bu ilk kez.
+
+12
+00:05:00,771 --> 00:05:02,771
+Ve ikinci kezde,
+
+13
+00:05:02,771 --> 00:05:05,771
+bu kezde Turing'in
+
+14
+00:05:05,771 --> 00:05:16,427
+ve Turing'in
+
+15
+00:05:17,492 --> 00:05:20,492
+Standa
+
+16
+00:05:45,012 --> 00:06:08,632
+is equal to the power of the standard Turing machines. We have to show it. Okay? So stay option Turing machines, what we will do first, for stay option Turing machines, what we will do is the first to simulate the standard Turing machines.
+
+17
+00:06:09,184 --> 00:06:15,064
+So, three-level, so any standard Turing machine is also a stay option Turing machine.
+
+18
+00:06:16,264 --> 00:06:20,844
+And the second one is standard Turing machine, simulate stay option Turing machines.
+
+19
+00:06:20,844 --> 00:06:24,704
+Yes, we need to simulate the stay hat option.
+
+20
+00:06:25,084 --> 00:06:30,064
+So, in Turing machines, in stay option Turing machines, this is the tape.
+
+21
+00:06:32,944 --> 00:06:35,284
+The hat, this is the hat.
+
+22
+00:06:36,608 --> 00:06:38,608
+Turing'in
+
+23
+00:06:38,608 --> 00:06:40,608
+ve Turing'in
+
+24
+00:06:40,608 --> 00:06:45,608
+Turing'in
+
+25
+00:06:35,764 --> 00:06:49,764
+Bu, bir dakika.
+
+26
+00:06:49,764 --> 00:06:51,764
+Bir dakika.
+
+27
+00:06:51,764 --> 00:06:57,764
+Bu, bir dakika.
+
+28
+00:06:57,764 --> 00:07:00,939
+Bir dakika.
+
+29
+00:07:01,076 --> 00:07:04,076
+right and then move left.
+
+30
+00:07:04,076 --> 00:07:10,076
+Yani iki hareketler ihtiyacımız var.
+
+31
+00:07:10,076 --> 00:07:11,076
+Yani,
+
+32
+00:07:11,076 --> 00:07:16,076
+stay hat option var.
+
+33
+00:07:16,076 --> 00:07:19,076
+Bir left and bir right.
+
+34
+00:07:19,076 --> 00:07:21,076
+Bir right, bir left.
+
+35
+00:07:21,076 --> 00:07:21,900
+Tamam?
+
+36
+00:07:23,444 --> 00:07:47,148
+Bu, mesela bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin, bu mesin,
+
+37
+00:07:51,699 --> 00:08:01,560
+Okay, this transition can be expressed like this.
+
+38
+00:08:02,019 --> 00:08:16,299
+Look at here, the simulation in standard machine, you read at, you are at state Q1, you read symbol A, you write symbol B, you move left.
+
+39
+00:08:17,239 --> 00:08:19,259
+Now you are at state Q.
+
+40
+00:08:19,891 --> 00:08:22,891
+Bir şeyin bir şeyin bir şeyin.
+
+41
+00:08:22,891 --> 00:08:25,891
+Ve bir şeyin yazarın.
+
+42
+00:08:25,891 --> 00:08:27,891
+Bir şeyin yazarın.
+
+43
+00:08:27,891 --> 00:08:29,891
+Yani bir şeyin değiştirmek için.
+
+44
+00:08:29,891 --> 00:08:31,891
+Ve bir şeyin değiştirmek için.
+
+45
+00:08:31,891 --> 00:08:39,052
+Bir şeyin değiştirmek için.
+
+46
+00:08:39,700 --> 00:08:51,180
+You reach state Q2. So here, the symbol X denotes every possible tape symbol. Okay? Every possible tape symbol.
+
+47
+00:08:58,131 --> 00:08:58,692
+Okay.
+
+48
+00:08:59,692 --> 00:09:04,351
+So, for other transitions, nothing changes.
+
+49
+00:09:04,731 --> 00:09:04,912
+Okay.
+
+50
+00:09:05,631 --> 00:09:11,591
+So, for example, in the state option machines, the head moves left.
+
+51
+00:09:11,991 --> 00:09:13,471
+So, you are at state Q1.
+
+52
+00:09:13,912 --> 00:09:19,471
+The head reads symbol A and the right symbol B and moves left.
+
+53
+00:09:19,571 --> 00:09:21,031
+It changes to state Q2.
+
+54
+00:09:21,031 --> 00:09:24,111
+So, this transition will not change.
+
+55
+00:09:24,563 --> 00:09:46,187
+ve bu süreçte değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değişimde değiş
+
+56
+00:09:46,292 --> 00:10:04,352
+For example, you are here, the machine is state Q1, and the hat reads symbol A, writes symbol B, and state option stays, keeps its position, and the state changes to Q2.
+
+57
+00:10:05,012 --> 00:10:13,211
+So let's assume that the input is double A, B, E, and the machine is at state Q1.
+
+58
+00:10:13,716 --> 00:10:41,228
+Bu, bu
+
+59
+00:10:41,748 --> 00:11:00,008
+And the simulation in standard machine, this is the standard Turing machine we have learned. So you are at state Q1, you read symbol A, okay, and you write symbol B, and then you move left, okay, you are here.
+
+60
+00:11:01,288 --> 00:11:08,548
+And then you read any symbol, you write any, you don't change any symbol, and then you move right.
+
+61
+00:11:09,076 --> 00:11:33,895
+Okay, so look at here, the final situation. You are here and this is actually, we need to correct this one. This is Q2. This is Qx. This is some Qt, Qt, okay, temporary states. Something like this, you saw, look at here.
+
+62
+00:11:34,255 --> 00:11:41,195
+You are at state Q2, you are still at state Q2, and also the input change.
+
+63
+00:11:42,395 --> 00:11:47,336
+So input, the tape change it accordingly.
+
+64
+00:11:49,475 --> 00:11:53,336
+A useful trick for multiple...
+
+65
+00:11:53,336 --> 00:11:56,336
+So this is for...
+
+66
+00:11:58,131 --> 00:12:02,511
+Bu örneğin, bu örneğin,
+
+67
+00:12:02,511 --> 00:12:04,591
+bu örneğin,
+
+68
+00:12:04,591 --> 00:12:05,131
+turing machine'in
+
+69
+00:12:05,131 --> 00:12:09,851
+ve turing machine'in
+
+70
+00:12:09,851 --> 00:12:10,951
+Bu örneğin,
+
+71
+00:12:10,951 --> 00:12:12,351
+multiple track tape?
+
+72
+00:12:19,251 --> 00:12:20,251
+Bir saniye.
+
+73
+00:12:31,731 --> 00:12:33,011
+Bir saniye arkadaşlar.
+
+74
+00:12:51,316 --> 00:12:53,556
+Evet, ekran görüntüsü geliyor değil mi arkadaşlar?
+
+75
+00:12:56,836 --> 00:12:57,355
+Okey.
+
+76
+00:12:59,096 --> 00:13:00,076
+Duyuyormuşsunuz beni.
+
+77
+00:13:07,283 --> 00:13:09,283
+Hemen bir quiz yapalım sizlere.
+
+78
+00:13:13,427 --> 00:13:15,527
+QYS yapmak istemeyenler söylesin.
+
+79
+00:13:21,971 --> 00:13:23,792
+Ben istemiyorum hocam.
+
+80
+00:13:24,412 --> 00:13:26,032
+Nereye cevap veriyorsun şu anda?
+
+81
+00:13:27,451 --> 00:13:29,892
+Kulaklığım takılı değildi hocam, kusura bakmayın.
+
+82
+00:13:32,372 --> 00:13:33,772
+Şimdi kimler burada?
+
+83
+00:13:37,748 --> 00:13:42,427
+[öğrenci], burada mısın?
+
+84
+00:13:50,899 --> 00:13:52,539
+Belki [öğrenci], burada mısın?
+
+85
+00:13:52,959 --> 00:13:53,759
+Buradayım hocam.
+
+86
+00:13:55,339 --> 00:13:57,199
+[öğrenci], burada mısın?
+
+87
+00:13:58,319 --> 00:13:59,019
+Buradayım hocam.
+
+88
+00:14:01,859 --> 00:14:05,299
+Şöyle alçanın, [öğrenci] 1001.
+
+89
+00:14:06,679 --> 00:14:07,379
+Buradayım hocam.
+
+90
+00:14:11,700 --> 00:14:12,860
+[öğrenci].
+
+91
+00:14:16,403 --> 00:14:17,844
+[öğrenci] kurdu musun?
+
+92
+00:14:26,995 --> 00:14:29,115
+[öğrenci], derste misin değil misin?
+
+93
+00:14:37,748 --> 00:14:39,108
+Dersten atacağım seni.
+
+94
+00:14:43,700 --> 00:14:47,500
+Arkadaşlar bakın, derste gelmeyecekseniz katılmayın bari ya.
+
+95
+00:14:52,596 --> 00:14:57,936
+[öğrenci], derste misin değil misin? [öğrenci], derste misin?
+
+96
+00:15:05,556 --> 00:15:24,356
+Şimdi arkadaşlar, derste olanlar çete yazsın dersteyim diye. Hemen yazın lütfen. Derste olanlar çete yazsın. Olmayanları, evet hemen yazın. Derste olmayanları ben listesini çıkartacağım. [öğrenci], derstesin niçin cevap vermiyorsun?
+
+97
+00:15:30,388 --> 00:15:33,768
+Ya bu kadar kendinize özgüveniniz az mı gençler ya?
+
+98
+00:15:36,347 --> 00:15:39,207
+Ya ilkokula giden çocuklar gibisiniz ya.
+
+99
+00:15:49,427 --> 00:15:51,628
+Bu bir saygısızlıktır biliyorsunuz değil mi?
+
+100
+00:15:56,244 --> 00:16:19,924
+Neyse, final sınavında görüşürüz. Madem öyle. Yani final sınavının zor olması, kolay olması sizin derse katılımınıza bağlı. Yani şunu size garanti edeceğim. Herkes final sınavında hak ettiği notu alacak. Onu söyleyeyim size. Onu garanti edeceğim sorduğum sorularla.
+
+101
+00:16:22,451 --> 00:16:37,172
+Herkes hak ettiği notu alacak. 100 alan 100 alacak, 0 alana 0 alacak. Öyle. Sorular zor olmayacak. Onu söyleyeyim. Sadece yeni bir trik geliştirdim, onu uygulayacağım.
+
+102
+00:16:40,532 --> 00:16:43,452
+A useful trick, Multiple Track Tape.
+
+103
+00:16:45,772 --> 00:16:49,372
+Şimdi burada olmayanlar kimler hemen bir onun ben listesini alayım.
+
+104
+00:16:56,947 --> 00:16:58,048
+Bu kadar olur mu ya?
+
+105
+00:17:00,648 --> 00:17:03,268
+Kocaman insanlarsınız, utanıyorsunuz ya.
+
+106
+00:17:06,228 --> 00:17:07,228
+Özgüven sıfır.
+
+107
+00:17:20,756 --> 00:17:28,716
+Arkadaşlar, şöyle yapıyoruz. Madem derse katılmıyorsunuz, ben de hızlı hızlı geçiyorum. Tamam mı? Ve sorumlusunuz.
+
+108
+00:17:29,496 --> 00:17:48,196
+Multiple track tape. A useful trick for multiple track tape. You can use, you can combine these two tracks as one symbol. So this is multiple tracks, so this is A, B. You can consider this as a double.
+
+109
+00:17:48,627 --> 00:17:55,467
+Or if you have one additional track, you can consider triple as a one symbol.
+
+110
+00:17:55,467 --> 00:17:59,947
+So there is head and the symbol is the double in this case.
+
+111
+00:18:00,467 --> 00:18:10,387
+So multiple track tape can also simulate the standard Turing machine and the standard Turing machine can also simulate the multiple track tape easily.
+
+112
+00:18:11,796 --> 00:18:33,215
+So in such case, for example, here you read BA, you write CD, and then you move left. You read BA, you write CD. Here BA is replaced by CD, and then the head is moved left. So this is the transition, and this is the change inside the tape.
+
+113
+00:18:33,940 --> 00:18:45,599
+Semi-infinite tape, so there are some Turing machines, they have semi-infinite tape, for example, the head extends infinitely to the right, but there is no tape.
+
+114
+00:18:45,920 --> 00:19:05,800
+So, the tape is open on the right, but there is no tape on the left. So, it has a start point, of course. So, initial position is the leftmost cell, let's say.
+
+115
+00:19:05,800 --> 00:19:12,600
+Then the head moves left from the border, then it returns back to the leftmost position.
+
+116
+00:19:12,980 --> 00:19:13,800
+For example,
+
+117
+00:19:15,327 --> 00:19:21,547
+Lexmo's position, that is why the semi-infinite tape can also be simulated by a standard Turing machine.
+
+118
+00:19:22,367 --> 00:19:29,248
+So this is the theorem, semi-infinite machines have the same power with the standard Turing machines, yes.
+
+119
+00:19:29,687 --> 00:19:39,547
+So in order to prove that, we have to show that standard Turing machines simulate semi-infinite machines, and the semi-infinite machines should be simulated by a standard Turing machines.
+
+120
+00:19:39,547 --> 00:19:43,327
+So we have, let us consider the first case in the...
+
+121
+00:19:43,327 --> 00:20:02,327
+Turing machine simulate the semi-infinite machine. So here we use a spatial character. Here is inserted spatial character. This is sharp. And it represents the beginning of the...
+
+122
+00:20:04,327 --> 00:20:07,327
+It represents the beginning of the...
+
+123
+00:20:07,983 --> 00:20:10,103
+Semi-infinite tape.
+
+124
+00:20:10,663 --> 00:20:15,223
+So, you will add self-loop to every state.
+
+125
+00:20:15,223 --> 00:20:18,763
+So, in every state, you will add this self-loop.
+
+126
+00:20:18,903 --> 00:20:25,143
+If you see sharp, you will write, you will read sharp, and you will write sharp, and you will move right.
+
+127
+00:20:25,603 --> 00:20:30,155
+So, whenever tape had...
+
+128
+00:20:30,195 --> 00:20:34,655
+Kamesin, on sharp symbol, then it will move right.
+
+129
+00:20:35,035 --> 00:20:39,655
+So, but you will put these transitions to every state in the machine.
+
+130
+00:20:40,500 --> 00:21:08,500
+And secondly, semi-infinite tape machines can simulate the standard Turing machines. Of course, semi-infinite Turing machines can standard. So here we will squeeze the infinity of both directions to one direction. So for example, the hat can move to the left, can move to the right. So here what you do, you squeeze the infinity to...
+
+131
+00:21:10,500 --> 00:21:14,500
+Bu şekilde, bu şekilde,
+
+132
+00:21:14,500 --> 00:21:32,500
+bu şekilde,
+
+133
+00:21:32,500 --> 00:21:34,288
+bir şekilde,
+
+134
+00:21:34,288 --> 00:21:38,067
+Bu bir şey, bu bir şey.
+
+135
+00:21:38,067 --> 00:21:41,327
+Bu, bu bir standard machine.
+
+136
+00:21:41,327 --> 00:21:43,048
+Bu bir point.
+
+137
+00:21:43,048 --> 00:21:44,087
+Bu bir şey.
+
+138
+00:21:44,087 --> 00:21:47,867
+Şimdi iki tane de, bu bir şey.
+
+139
+00:21:47,867 --> 00:21:51,147
+Bir şey, bu bir şey.
+
+140
+00:21:51,147 --> 00:21:52,468
+Bu bir şey.
+
+141
+00:21:52,468 --> 00:21:54,107
+Bir şey, bu bir şey.
+
+142
+00:21:54,107 --> 00:21:55,708
+Bu bir şey.
+
+143
+00:21:55,708 --> 00:21:58,627
+Şimdi bu bir şey.
+
+144
+00:21:58,688 --> 00:22:07,367
+Multiple-taped, semi-infinite Turing machines, then we can consider doubles as a symbol.
+
+145
+00:22:08,367 --> 00:22:19,068
+So, semi-infinite, so standard Turing machines can also be simulated by semi-infinite tape.
+
+146
+00:22:20,288 --> 00:22:31,168
+Semi-infinite Turing machines. As a result, semi-infinite Turing machines has the same power of standard Turing machines.
+
+147
+00:22:32,708 --> 00:22:41,128
+So, standard Turing machines, let's say this is the state Q1 and Q2 and semi-infinite Turing machines. Now we have two.
+
+148
+00:22:41,556 --> 00:22:51,195
+Part, left part and the right part, and we have the reflection of these two states for the left and for the left and for the right.
+
+149
+00:22:51,667 --> 00:22:55,667
+Bu, bu da Turing'in standard Turing'in machine.
+
+150
+00:22:55,667 --> 00:22:57,667
+Bu da Turing'in standard Turing'in machine,
+
+151
+00:23:19,667 --> 00:23:43,915
+bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraftan bu taraft
+
+152
+00:23:44,084 --> 00:23:51,224
+So, for example, this is the standard machine. This is the semi-finite tape.
+
+153
+00:23:51,551 --> 00:23:54,851
+ve Semi-infinite tape.
+
+154
+00:23:54,851 --> 00:24:03,851
+As you see, you changed the state, and then inside of the Semi-infinite tape machine,
+
+155
+00:24:03,851 --> 00:24:13,251
+it changed accordingly in accordance to the change in standard link machines.
+
+156
+00:24:13,779 --> 00:24:24,099
+As a result, at the border, we need to put, because this is semi-infinite, so we use a spatial collector, sharp symbol.
+
+157
+00:24:24,799 --> 00:24:34,579
+So at the border, means on the left of the tape, we need to control it.
+
+158
+00:24:34,579 --> 00:24:41,279
+So we will read sharp symbols together, and we will write sharp symbols together.
+
+159
+00:24:41,779 --> 00:24:49,539
+As you see, so this is the, and we will add these transitions to every state.
+
+160
+00:24:50,500 --> 00:24:53,539
+And this is an example, very good example.
+
+161
+00:24:53,720 --> 00:24:56,000
+I gave it to you and you will be responsible.
+
+162
+00:24:56,240 --> 00:25:01,779
+You should understand how we use the semi-infinite Turing machines.
+
+163
+00:25:02,899 --> 00:25:06,960
+So multiple tape Turing machines, the control unit state machine.
+
+164
+00:25:07,776 --> 00:25:33,935
+The hat, this is the input string, and this is the other tape. There are two tape. So input string appears on tape one, and the tape two input is not there. But you read the input, and you change the tape two according to the input tape one.
+
+165
+00:25:34,976 --> 00:25:43,336
+So, as you see, or you can change the tape one, or you can change in accord according to the tape two.
+
+166
+00:25:43,336 --> 00:25:58,756
+So, here the transitions, as you see that the four state word for transitions, you read two symbols and you write two symbols.
+
+167
+00:25:58,996 --> 00:26:01,556
+This is actually together is one symbol.
+
+168
+00:26:01,903 --> 00:26:07,223
+Bu, bu, bir yüze, bir yüze, bir yüze, bir yüze, bir yüze, bir yüze,
+
+169
+00:26:07,223 --> 00:26:09,824
+ve bir yüze, bir yüze, bir yüze,
+
+170
+00:26:09,824 --> 00:26:11,584
+bir yüze,
+
+171
+00:26:11,584 --> 00:26:12,824
+ve bu,
+
+172
+00:26:12,824 --> 00:26:19,824
+bu,
+
+173
+00:26:20,723 --> 00:26:30,343
+Look at here, you are at state Q1, the hat is showing symbol B here, the hat is showing symbol F here.
+
+174
+00:26:30,343 --> 00:26:38,503
+In the second time, the hat now is showing symbol A, but now the hat is showing symbol G.
+
+175
+00:26:38,923 --> 00:26:40,403
+So actually look at this.
+
+176
+00:26:40,819 --> 00:27:05,727
+Bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata, bu hata
+
+177
+00:27:05,728 --> 00:27:12,168
+As a result, multiple tape Turing machines, we have multiple hats.
+
+178
+00:27:12,668 --> 00:27:14,748
+So the hat position is important.
+
+179
+00:27:14,988 --> 00:27:20,688
+Theorem, multiple tape Turing machines have the same power with the standard Turing machines.
+
+180
+00:27:20,888 --> 00:27:21,628
+Yes, of course.
+
+181
+00:27:22,248 --> 00:27:27,168
+The first, in order to prove this theorem, we need to consider two cases.
+
+182
+00:27:27,607 --> 00:27:33,607
+The first case is multiple tape Turing machines can simulate standard Turing machines.
+
+183
+00:27:33,728 --> 00:27:41,108
+If we say yes, then we can say that the power of multiple tape-trik machines is greater than the power of the standard-trik machines.
+
+184
+00:27:41,748 --> 00:27:48,148
+In this case, in the second case, standard-trik machines can simulate the multiple tape-trik machines.
+
+185
+00:27:48,148 --> 00:27:58,827
+If we say yes, for this standard-trik machine is, the power of the standard-trik machine is greater than the power of multiple tape-trik machines.
+
+186
+00:27:59,268 --> 00:28:01,408
+So we will combine these both.
+
+187
+00:28:01,728 --> 00:28:08,728
+Bu ilk birçok birçok birçok.
+
+188
+00:28:08,728 --> 00:28:10,728
+Ve ikinci birçok birçok.
+
+189
+00:28:10,728 --> 00:28:12,728
+Bu,
+
+190
+00:28:12,728 --> 00:28:15,728
+birçok birçok birçok.
+
+191
+00:28:15,728 --> 00:28:27,084
+Birçok birçok.
+
+192
+00:28:27,251 --> 00:28:47,351
+So, multiple tape machine, look at here. Multiple Turing machines and the multiple tape Turing machines are different. In multiple tape Turing machines, the number of hats is more than one. Multiple Turing machines, the number of hats is two.
+
+193
+00:28:49,460 --> 00:28:57,740
+TAPE1 ve TAPE2, look at this, we can express this multiple TAPE Turing machine by using the standard Turing machine.
+
+194
+00:28:57,740 --> 00:29:07,140
+This is the TAPE1, and this is TAPE2, and 010 denotes the hat position.
+
+195
+00:29:07,667 --> 00:29:11,667
+ve 0,0,1,0
+
+196
+00:29:11,667 --> 00:29:14,667
+bu konuda bir hatı
+
+197
+00:29:14,667 --> 00:29:18,667
+ve bir hatı
+
+198
+00:29:18,667 --> 00:29:19,667
+Şimdi,
+
+199
+00:29:19,667 --> 00:29:20,667
+bu,
+
+200
+00:29:20,667 --> 00:29:22,667
+multiple Turing machines
+
+201
+00:29:22,667 --> 00:29:23,667
+can be represented
+
+202
+00:29:23,667 --> 00:29:25,667
+as a standard Turing machines
+
+203
+00:29:25,667 --> 00:29:27,667
+with quadruple
+
+204
+00:29:27,667 --> 00:29:29,667
+standard Turing machines
+
+205
+00:29:29,667 --> 00:29:30,667
+will read
+
+206
+00:29:31,155 --> 00:29:36,155
+ve
+
+207
+00:29:36,155 --> 00:29:37,155
+quadruple symbol
+
+208
+00:29:37,155 --> 00:29:38,155
+ve
+
+209
+00:29:38,155 --> 00:29:39,155
+left
+
+210
+00:29:39,155 --> 00:29:40,155
+veya
+
+211
+00:29:40,155 --> 00:29:41,155
+right
+
+212
+00:29:41,155 --> 00:29:42,155
+ve
+
+213
+00:29:42,155 --> 00:29:43,155
+if
+
+214
+00:29:43,155 --> 00:29:44,155
+we
+
+215
+00:29:44,155 --> 00:29:45,155
+have
+
+216
+00:29:45,155 --> 00:29:48,155
+multiple
+
+217
+00:29:48,155 --> 00:29:50,155
+tape
+
+218
+00:29:50,155 --> 00:29:51,155
+Turing
+
+219
+00:29:51,155 --> 00:29:52,155
+machines
+
+220
+00:29:52,155 --> 00:29:53,155
+but
+
+221
+00:29:53,155 --> 00:29:54,155
+each
+
+222
+00:29:54,155 --> 00:29:55,155
+one
+
+223
+00:29:55,155 --> 00:29:56,155
+should
+
+224
+00:29:56,155 --> 00:29:57,155
+have
+
+225
+00:29:57,743 --> 00:30:00,000
+Semi-infinite.
+
+226
+00:30:00,000 --> 00:30:02,879
+So we will use the sharp symbol as you see here.
+
+227
+00:30:03,419 --> 00:30:18,299
+Then we will repeat for each multiple tape state transitions, returns the reference point, find the current symbol in track 1 and update it, then returns the reference point, find the current symbol in tape 2 and update it.
+
+228
+00:30:18,299 --> 00:30:27,919
+So the hat is find the position and run the tape 1 and returns the reference.
+
+229
+00:30:28,000 --> 00:30:33,759
+ve bu konuda bulunan bir konuda,
+
+230
+00:30:33,759 --> 00:30:39,380
+ve bu konuda,
+
+231
+00:30:39,380 --> 00:30:58,155
+bu konuda,
+
+232
+00:30:54,516 --> 00:30:58,348
+Bu teknikler için, ekip, komputersin.
+
+233
+00:31:03,155 --> 00:31:06,155
+Bu dizi de havaçlı bir dizi,
+
+234
+00:31:06,155 --> 00:31:07,155
+bir dizi de havaçlı bir dizi.
+
+235
+00:31:07,155 --> 00:31:26,463
+Bu dizi de havaçlı bir dizi.
+
+236
+00:31:26,463 --> 00:31:47,851
+Bu, bu
+
+237
+00:31:47,859 --> 00:32:11,899
+We can compute this language by Turing machine. So the time is n squared. So as the number of, as the value of n increases, the time you need to detect this, detect the element strings of this language increases n squared.
+
+238
+00:32:12,596 --> 00:32:20,115
+So, we can go back and afford and square times to match the A's with the B's here.
+
+239
+00:32:20,275 --> 00:32:29,895
+In two tape machines, we can copy the BN on tape 2 and we can compare AN on tape 1.
+
+240
+00:32:30,155 --> 00:32:35,115
+And then, as you see that, the time...
+
+241
+00:32:36,756 --> 00:32:59,372
+Bu, bu
+
+242
+00:32:59,827 --> 00:33:03,968
+4-dimensional tapes, 10-dimensional tapes, no matter how many dimensions it is.
+
+243
+00:33:04,488 --> 00:33:13,528
+For example, for this two-dimensional tape, the hat, this is the hat, for example, pointing symbol B.
+
+244
+00:33:13,988 --> 00:33:17,528
+The hat can move left, right, up and down.
+
+245
+00:33:18,087 --> 00:33:23,708
+And also the hat position, you can say that plus 2, minus 1, something.
+
+246
+00:33:24,067 --> 00:33:26,048
+So this is the hat position.
+
+247
+00:33:26,548 --> 00:33:38,708
+Plus 2, here in the second cell on x, and minus 1, here. So this is the hat position, plus 2, minus 1.
+
+248
+00:33:39,188 --> 00:34:02,156
+Bu, bu
+
+249
+00:34:02,675 --> 00:34:04,675
+İkincisi de bu iki tane de bu dağılık bir şey.
+
+250
+00:34:30,675 --> 00:34:37,675
+ve
+
+251
+00:34:37,675 --> 00:34:59,675
+bir
+
+252
+00:34:58,291 --> 00:35:25,867
+Bu, bu
+
+253
+00:35:26,228 --> 00:35:33,228
+standard During machines in order to simulate the two-dimensional During machines.
+
+254
+00:35:33,228 --> 00:35:33,963
+Okay?
+
+255
+00:35:34,036 --> 00:35:43,855
+Turing makinesi, yes, Turing makinesi are determinist Turing makinesi, but we can also allow some non-determinism for Turing makinesi.
+
+256
+00:35:44,615 --> 00:35:53,655
+For example, you are at state Q1, you read symbol A, you write symbol B, and then you move left, and then you read symbol A, you write symbol C, you move right.
+
+257
+00:35:54,155 --> 00:35:57,516
+So this is the non-determinism is also possible, but...
+
+258
+00:35:59,443 --> 00:36:13,744
+In order to have a non-determinism, you have to have a copy, you need to copy the tape.
+
+259
+00:36:14,024 --> 00:36:17,244
+For example, you are at state Q1 and the tape is this.
+
+260
+00:36:17,604 --> 00:36:19,163
+You change the state Q2.
+
+261
+00:36:19,784 --> 00:36:21,923
+Now, this is the choice one.
+
+262
+00:36:22,384 --> 00:36:24,144
+So, this is the tape.
+
+263
+00:36:25,396 --> 00:36:49,815
+And this is another tape. So what you did actually, non-determinism causes the increase in the number of tapes. Okay. So it is not useful. So, okay. And non-determinism here, Turing machines are determined, standard Turing machines are deterministic.
+
+264
+00:36:50,324 --> 00:36:54,324
+ve Turing makinesi konuları, ok?
+
+265
+00:36:55,324 --> 00:37:01,324
+So, I will pass here, I will give it to you, nondeterminism.
+
+266
+00:37:03,324 --> 00:37:06,324
+Ok, nondeterministik Turing makinesi konuları,
+
+267
+00:37:07,324 --> 00:37:11,324
+for each configuration in the current step of nondeterministik Turing makinesi konuları,
+
+268
+00:37:11,324 --> 00:37:13,324
+there are two or more choices.
+
+269
+00:37:13,324 --> 00:37:16,324
+Replicator configuration means copying the...
+
+270
+00:37:35,860 --> 00:37:53,860
+So, if the non-determinist ring machine accepts, the inputs to deterministic machine accepts and halts too. Simulation takes, in worst case, exponential time compared to the shortest length in accepting path, of course. And if the non-determinist machine does not accept...
+
+271
+00:37:54,547 --> 00:38:05,807
+İntro, stringHesine, simüle, halte, if all paths reach to the halting state or the simulation never terminates if there is a never ending path like such as infinite loop.
+
+272
+00:38:06,447 --> 00:38:16,587
+In either case, deterministic machine rejects too, so or by halting or by simulating the infinite loop.
+
+273
+00:38:17,076 --> 00:38:24,635
+Bu konuda başlamak için, şimdi de
+
+274
+00:38:24,635 --> 00:38:30,635
+ve bu konuda, 10-min bir süreçte bir süreçte.
+
+275
+00:51:54,068 --> 00:51:55,648
+Evet arkadaşlar, devam edelim.
+
+276
+00:51:56,228 --> 00:51:57,488
+Decidable languages.
+
+277
+00:51:59,408 --> 00:52:03,488
+As you remember that there are Turing acceptable languages.
+
+278
+00:52:04,868 --> 00:52:16,768
+A language L is Turing acceptable or Turing recognizable or recursively honorable if there is a Turing machine M that accept, recognize that language L.
+
+279
+00:52:17,172 --> 00:52:34,699
+Yani, bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede, bu bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede bir bahçede
+
+280
+00:52:36,052 --> 00:52:52,112
+Turing acceptable languages, so you have input string W, and if the input string W is element of the language, then the machine halts in accept state.
+
+281
+00:52:52,632 --> 00:53:02,152
+If W is not the element of the language, then the machine, Turing machine halts in non-accept state, non-final state, or loops forever.
+
+282
+00:53:02,152 --> 00:53:02,872
+Okay?
+
+283
+00:53:03,344 --> 00:53:07,344
+Here, the main key point is...
+
+284
+00:53:11,315 --> 00:53:14,795
+Loops ve Loops.
+
+285
+00:53:15,015 --> 00:53:15,115
+Okay?
+
+286
+00:53:15,975 --> 00:53:24,415
+If the definition of decidable language is this.
+
+287
+00:53:24,815 --> 00:53:37,315
+A language is decidable if there is a Turing machine, we call it decider, which accepts language and holds...
+
+288
+00:53:37,364 --> 00:53:39,584
+Halt on every input string.
+
+289
+00:53:39,884 --> 00:53:41,084
+There is no loop.
+
+290
+00:53:41,824 --> 00:53:42,144
+Okay?
+
+291
+00:53:42,784 --> 00:53:48,144
+There is no loop.
+
+292
+00:53:49,144 --> 00:53:49,644
+Okay?
+
+293
+00:53:50,900 --> 00:53:52,480
+So, there is no loop.
+
+294
+00:53:54,300 --> 00:54:09,340
+So, if the language L is accepted by a Turing machine that has no loop, then you say that the language is decidable language.
+
+295
+00:54:09,880 --> 00:54:16,719
+Decidable language means that there is a Turing machine that recognizes that language without any loop.
+
+296
+00:54:16,719 --> 00:54:17,400
+Okay?
+
+297
+00:54:17,960 --> 00:54:18,840
+Turing accepted.
+
+298
+00:54:18,900 --> 00:54:28,900
+Turing'in bir maçı almak için bir maçı almak için bir maçı almak için bir luk.
+
+299
+00:54:43,476 --> 00:54:55,196
+So, our observation, every decidable language is also Turing acceptable, but every Turing acceptable language is not decidable language.
+
+300
+00:54:56,556 --> 00:55:01,196
+Sometimes, we can...
+
+301
+00:55:01,684 --> 00:55:08,884
+We have a Turing machine with single accept and a reject state.
+
+302
+00:55:08,884 --> 00:55:15,623
+So we have a Turing machine with single accept and the single reject states.
+
+303
+00:55:16,443 --> 00:55:25,043
+And in such case, there are only the halting states that results two possible halting configurations.
+
+304
+00:55:25,384 --> 00:55:25,503
+Okay.
+
+305
+00:55:26,023 --> 00:55:27,344
+One is accept states.
+
+306
+00:55:27,764 --> 00:55:33,564
+The other one is reject. So you will reach the accept or you will reach the reject state.
+
+307
+00:55:35,188 --> 00:55:47,827
+So, we can convert any Turing machines that has many final states to have a Turing machine that has a single accept or reject states.
+
+308
+00:55:47,927 --> 00:55:55,007
+For example, this is all Turing machines. It has multiple final states, accept states, multiple final states.
+
+309
+00:55:55,007 --> 00:56:03,007
+And we can convert all the multiple final states to one accept states, one final states using...
+
+310
+00:56:03,188 --> 00:56:06,188
+bu şekilde, bu şekilde,
+
+311
+00:56:06,188 --> 00:56:08,188
+bu şekilde,
+
+312
+00:56:08,188 --> 00:56:11,188
+ve bu şekilde,
+
+313
+00:56:11,188 --> 00:56:23,188
+bu şekilde,
+
+314
+00:56:23,188 --> 00:56:25,188
+x'in n'ı symbol
+
+315
+00:56:25,188 --> 00:56:26,188
+bu şekilde,
+
+316
+00:56:28,467 --> 00:56:53,627
+We can also do the same things for halting states. It means reject states. You are at state QI. This is old machine. And then you can go to the QI. For example, you are at state QI. You can go this transaction or for this transition for some inputs. Okay?
+
+317
+00:56:54,516 --> 00:57:01,876
+But for the other inputs, of course, the machine holds at that position, at that state.
+
+318
+00:57:02,236 --> 00:57:10,155
+But we can convert this state to this.
+
+319
+00:57:10,476 --> 00:57:14,296
+We can convert this state and this transition to this one.
+
+320
+00:57:14,396 --> 00:57:15,036
+You see that.
+
+321
+00:57:16,947 --> 00:57:35,088
+Here we add additional transition. It is going to reject state. This is the symbol X. This X here, any symbol that are not used on these transitions and on these transitions. Okay?
+
+322
+00:57:36,088 --> 00:57:37,088
+So,
+
+323
+00:57:38,099 --> 00:57:51,099
+For a decidable language L, we have a decider, Turing machine for L, means that for input string W, you reach accept state or you reach the reject state.
+
+324
+00:57:51,219 --> 00:57:53,119
+So output is 2, okay?
+
+325
+00:57:53,799 --> 00:58:00,699
+So there is no halt, sorry, there is no loop in the transitions.
+
+326
+00:58:00,920 --> 00:58:02,340
+As you see that there is no loop.
+
+327
+00:58:02,708 --> 00:58:09,268
+So, for each input string, the computation holds in accept or in the final or reject state.
+
+328
+00:58:10,048 --> 00:58:14,588
+So, then we say that the language is decidable language.
+
+329
+00:58:15,688 --> 00:58:24,788
+For a Turing acceptable language, so this is the Turing, sorry, we have a decidable language.
+
+330
+00:58:24,788 --> 00:58:28,968
+So, the Turing machine for that decidable language is called decider.
+
+331
+00:58:30,547 --> 00:58:51,667
+And for a Turing-acceptable language, so Turing machine for L, so for any input string W, you reach the final states or you reach the reject states, but sometimes you may loop, as you see that from one state to go, other states from other states to go, so you may loop here forever.
+
+332
+00:58:52,027 --> 00:58:55,827
+So this in the Turing-acceptable language.
+
+333
+00:58:56,307 --> 00:59:07,847
+Turing, the Turing machine that accepts Turing acceptable language means that there may be a loop inside the state transitions of the Turing machine.
+
+334
+00:59:09,867 --> 00:59:22,988
+A computational problem is decidable. For example, you are given a problem. This problem is decidable if corresponding language is decidable.
+
+335
+00:59:23,635 --> 00:59:46,635
+We also say that the problem is solvable. Decidable means solvable. Okay? You are given a problem and in order to solve the problem has a language. You have a language for that problem. If the language is decidable and then you understand that the problem is solvable. Okay?
+
+336
+00:59:47,155 --> 01:00:08,935
+So, there are problems. If it is solvable, it means that its language is decidable. It means that there is a Turing machine that holds on the final state or the reject states, and there is no loop inside the Turing machine to accept the language, to accept that language.
+
+337
+01:00:16,596 --> 01:00:17,356
+An sıkınt.
+
+338
+01:00:22,996 --> 01:00:37,076
+Okay, for example, you are given a problem like this, is number x prime, okay? What is the corresponding language? The primes are, this is the set, 1, 2, 3, 5, 7,
+
+339
+01:00:37,907 --> 01:01:05,627
+11, 13, something like this. We will show that this language, language is a set of strings, and we will show that this language is decidable, means that there is a Turing machine called decider that has no loop. It has final states and it has the reject states. So for any input,
+
+340
+01:01:05,907 --> 01:01:11,507
+From this set, the Turing machine will reach to final state or the reject state.
+
+341
+01:01:12,507 --> 01:01:15,607
+Hocam, bir olmaması gerekmiyor muydu acaba?
+
+342
+01:01:17,107 --> 01:01:27,007
+Şöyle diyebiliriz, prime sayılarda matematikte bir ilk zamanlar prime olarak kabul edilmiş, daha sonra prime'dan çıkartılmıştır.
+
+343
+01:01:27,476 --> 01:01:29,036
+Tamam mı? Tamamdır.
+
+344
+01:01:29,236 --> 01:01:37,376
+Yani matematik tarihine bakarsanız ilk başta biri, 2, 3, 4, 5, 6, 7'yi prime olarak kabul etmişlerdir biri.
+
+345
+01:01:38,176 --> 01:01:47,616
+Ama daha sonradan birin prime olmadığına karar verilmiştir. Özellikle bu 1800'lerin sonlarına doğru, 1900'lere doğru, 1800'lerin sonlarına doğru.
+
+346
+01:01:47,616 --> 01:01:53,736
+O bir kabuldür. Yani birin prime olup olmadığı her zaman soru işaretidir.
+
+347
+01:01:54,128 --> 01:02:02,708
+Ama biz şu anda bir prim kabul etmiyoruz ama burada prime number olarak biri de burada eklemişiz, çıkartabiliriz, fark etmez.
+
+348
+01:02:04,548 --> 01:02:08,388
+So decider, decider means a Turing machine for primes.
+
+349
+01:02:09,108 --> 01:02:12,388
+So decider is a Turing machine, decidable Turing machine.
+
+350
+01:02:12,980 --> 01:02:34,300
+The easier Turing machine has no loop. So let us, so for any input number x, you divide the input number x with all possible numbers between 2 and the square root of x, okay? If any of them divides x, then reject.
+
+351
+01:02:34,996 --> 01:02:58,516
+As you see that you reach the final state or you reach the accept state, final, sorry, you reach the accept state, in other words, final state or you reach the reject states. There is no loop in this solution, in this solution. So then we say that this language is decidable.
+
+352
+01:03:00,436 --> 01:03:04,016
+DECIDER Turing machine can be assigned based on algorithm.
+
+353
+01:03:04,576 --> 01:03:19,695
+For example, this is the input number, this is input string, and DECIDER for primes, it reached to final state for input number X, it reached to reject state for input number X.
+
+354
+01:03:19,695 --> 01:03:25,396
+So it reached one of them, and there is no loop in the transition among those states.
+
+355
+01:03:26,276 --> 01:03:28,436
+So this Turing machine...
+
+356
+01:03:28,436 --> 01:03:30,936
+Zediciler, or the primes.
+
+357
+01:03:32,996 --> 01:03:34,916
+So, and this is another problem.
+
+358
+01:03:35,396 --> 01:03:39,956
+Does DFA, M, accept empty language?
+
+359
+01:03:40,456 --> 01:03:42,115
+Okay, this is the empty language.
+
+360
+01:03:42,235 --> 01:03:43,576
+Language has no element.
+
+361
+01:03:44,235 --> 01:03:47,836
+Does DFA accept the empty language?
+
+362
+01:03:47,976 --> 01:03:50,556
+We will try to find, we will.
+
+363
+01:03:50,911 --> 01:04:10,475
+Treni to solve this problem. Okay? So the corresponding language, so we will have a, it's decidable of course, but we will see, the language is this, M is a DFA, M is a machine, DFA machine, that accepts empty language. Okay? So...
+
+364
+01:04:10,963 --> 01:04:25,384
+Accept empty language, recognize the empty language, so all the DFAs, okay? Here, all the possible DFAs, creates the corresponding language, empty DFA language, okay?
+
+365
+01:04:25,876 --> 01:04:29,896
+So the description of DFAM here is a string.
+
+366
+01:04:30,036 --> 01:04:37,655
+For example, we can represent machine as a binary string, as we did in our previous lectures in Fortring machine.
+
+367
+01:04:37,655 --> 01:04:47,476
+So you can convert the DFAM, you can express the DFAM machine in terms of binary strings or something.
+
+368
+01:04:47,615 --> 01:04:51,735
+Like you are writing a Java code or you are writing C code.
+
+369
+01:04:52,056 --> 01:04:53,876
+At the end, you can convert the DFAM.
+
+370
+01:04:53,876 --> 01:05:06,195
+Java code or C code in binary string, for example. In such case, you have a DFA and you convert the DFA to binary string and all the possible strings create a set.
+
+371
+01:05:06,795 --> 01:05:17,416
+And this set is called language, of course. The definition of language says that language is a set of the string. So empty DFA language.
+
+372
+01:05:17,907 --> 01:05:33,907
+is a set of binary strings, each of which represents expressed DFA machine that does not, that does accept empty language.
+
+373
+01:05:33,907 --> 01:05:42,907
+For the side of, for this language, so we will give a machine as an input.
+
+374
+01:05:43,539 --> 01:05:50,980
+ve de sideri denemek veren bir yolu var.
+
+375
+01:05:50,980 --> 01:05:55,579
+Eğer bir yolu var,
+
+376
+01:06:01,427 --> 01:06:07,667
+if there is a path, the machine does not accept the empty language
+
+377
+01:06:07,667 --> 01:06:12,347
+because the language of this machine is not empty because it reached the final states.
+
+378
+01:06:12,347 --> 01:06:18,947
+In order to recognize the non-empty language,
+
+379
+01:06:19,188 --> 01:06:21,947
+sorry, in order to recognize the empty language,
+
+380
+01:06:22,587 --> 01:06:27,127
+there should not be a transition from start state to final state.
+
+381
+01:06:27,247 --> 01:06:28,587
+So all these transitions...
+
+382
+01:06:29,204 --> 01:06:34,204
+bu DFA'ya kabul edilmiştir.
+
+383
+01:06:34,204 --> 01:06:37,204
+Bu DFA'ya kabul edilmiştir.
+
+384
+01:06:37,204 --> 01:06:39,204
+Bu decision çok açık.
+
+385
+01:06:39,204 --> 01:06:50,204
+Bu, bu DFA'ya kabul edilmiştir.
+
+386
+01:06:50,204 --> 01:06:52,204
+Bu, diğer problem var.
+
+387
+01:06:54,164 --> 01:07:00,503
+DFA machine M accepts a final language, finite language.
+
+388
+01:07:01,463 --> 01:07:04,184
+For example, DFA accepts finite language.
+
+389
+01:07:04,184 --> 01:07:06,003
+Is it decidable or not?
+
+390
+01:07:06,564 --> 01:07:11,284
+Okay, so we have a DFA that accepts a finite language, for example.
+
+391
+01:07:11,943 --> 01:07:18,892
+And this is the set of all the binary strings, each of which...
+
+392
+01:07:18,963 --> 01:07:24,203
+express a DFA machine that accepts a finite language.
+
+393
+01:07:24,203 --> 01:07:24,483
+Okay.
+
+394
+01:07:24,983 --> 01:07:27,383
+So let us look at the decider.
+
+395
+01:07:27,963 --> 01:07:34,303
+We will look at the, we will check the, we will check the DFA machine.
+
+396
+01:07:35,027 --> 01:07:55,788
+The input is a machine, M. This is the binary string of the machine. And we will check if there is a walk with a cycle from initial state to an accepting state. For example, this is initial state, this is accepting state, this is the path. And as you see that there is a loop here, means that
+
+397
+01:07:57,460 --> 01:08:12,019
+It means that this DFA recognizes, this DFA recognizes the infinite loop, infinite size of language, and then it will be rejected.
+
+398
+01:08:12,760 --> 01:08:24,380
+When we check the input binary string representation of the machine M, this is the binary representation of machine M, you see that there are two symbol left on the left and the right.
+
+399
+01:08:24,916 --> 01:08:31,916
+bu
+
+400
+01:08:31,916 --> 01:08:32,916
+binar string
+
+401
+01:08:32,916 --> 01:08:34,916
+ve
+
+402
+01:08:34,916 --> 01:08:35,916
+if
+
+403
+01:08:35,916 --> 01:08:36,916
+all
+
+404
+01:08:36,916 --> 01:08:37,916
+possible
+
+405
+01:08:37,916 --> 01:08:38,916
+paths
+
+406
+01:08:38,916 --> 01:08:39,916
+from
+
+407
+01:08:39,916 --> 01:08:40,916
+initial
+
+408
+01:08:40,916 --> 01:08:41,916
+to
+
+409
+01:08:41,916 --> 01:08:42,916
+final
+
+410
+01:08:42,916 --> 01:08:43,916
+state
+
+411
+01:08:43,916 --> 01:08:44,916
+if
+
+412
+01:08:44,916 --> 01:08:45,916
+there
+
+413
+01:08:45,916 --> 01:08:46,916
+is
+
+414
+01:08:46,916 --> 01:08:47,916
+dfm
+
+415
+01:08:47,916 --> 01:08:48,332
+machine
+
+416
+01:08:48,935 --> 01:08:49,935
+recognizes
+
+417
+01:08:49,935 --> 01:08:50,935
+the
+
+418
+01:08:48,851 --> 01:09:13,836
+Bu da bir adım var.
+
+419
+01:09:15,699 --> 01:09:41,840
+This is another problem. DFA, does DFA accept stringW? So we have a stringW and we will apply this stringW to DFA and we will check if it accepts or not. So there are two cases. So DFA accepts the stringW or rejects the stringW. There is no loop. So it is a decidable language.
+
+420
+01:09:42,836 --> 01:09:53,656
+So, this is the decidable language, and we create the language like this, binary string representation of the doubles of machine and input string.
+
+421
+01:09:54,015 --> 01:10:01,656
+Okay, so here is the M is the machine, DFA machine, that accepts the string W.
+
+422
+01:10:02,579 --> 01:10:24,579
+So, there is a decider for input string, machine and W, binary string representation of machine and input, and you give it as an input to the decider, and the decider run the DFA on input string V, W, and if...
+
+423
+01:10:25,043 --> 01:10:49,519
+M, M
+
+424
+01:10:49,520 --> 01:11:15,520
+Dfas, let's say, let us have two Dfas, M1 and M2, accept the same language. So how can we find, how is this problem solvable? So if the language of this problem is decidable, then this problem is solvable. Corresponding language, so the input of this, the input of the
+
+425
+01:11:18,036 --> 01:11:31,036
+decider for this language will be a binary string of the machine1 and machine2. So machine1 and machine2 are two DFAs accepting the same languages.
+
+426
+01:11:31,539 --> 01:11:55,380
+Okay, so the algorithm is very simple. So you are given the, you give the binary representation of machine one and machine two together as an input to the decider, and the decider constructs the DFA, such construct as DFA M, such that
+
+427
+01:11:56,500 --> 01:12:04,500
+Language M is L1, intersection L2, union L1, complement, intersection L2.
+
+428
+01:12:05,020 --> 01:12:15,559
+So this is, as you see that, this combination of DFA's should be empty string if they recognizes the same language.
+
+429
+01:12:16,280 --> 01:12:19,079
+It passes off, if they recognize the same language.
+
+430
+01:12:19,079 --> 01:12:19,940
+It means that,
+
+431
+01:12:22,579 --> 01:12:39,920
+L1, intersection, complement L2, is empty, then there is, this is the case, okay, and empty, and this is the, so in this case,
+
+432
+01:12:41,300 --> 01:13:08,780
+We can say that L1 and L2 is equal. If they are not empty string, then we can say that L1 and L2 are not equal. Therefore, we have a machine. If that machine recognizes the empty string, and we already know that this string, this is solvable and decidable, so solvable.
+
+433
+01:13:10,996 --> 01:13:16,036
+So, finally, the language is decidable.
+
+434
+01:13:16,615 --> 01:13:17,816
+What about this theorem?
+
+435
+01:13:17,976 --> 01:13:25,796
+If a theorem L is decidable, sorry, if a language L is decidable, then its complement is decidable too.
+
+436
+01:13:26,976 --> 01:13:29,096
+This is a very important theorem.
+
+437
+01:13:29,855 --> 01:13:36,556
+Look, you are given a language L that is decidable, so its complement is also decidable.
+
+438
+01:13:36,916 --> 01:13:58,515
+So, the proof is very simple. You will build a Turing machine M' that will accept the complement of the language L'bar and holds on every input string. There will be no loop to decide. Okay? So, M' is a decider for L'bar.
+
+439
+01:13:59,188 --> 01:14:03,728
+So, let us transform the accept state to reject state and vice versa.
+
+440
+01:14:04,407 --> 01:14:07,507
+So, this is the accept state, this is the reject state.
+
+441
+01:14:07,608 --> 01:14:15,608
+As you see that, this is the Turing machine that accepts, okay, the language L.
+
+442
+01:14:16,051 --> 01:14:27,611
+If I change the final state to reject state and the reject state to final states, now this Turing machine will accept the complement of the Turing complement of the.
+
+443
+01:14:28,148 --> 01:14:34,507
+Bu da
+
+444
+01:14:34,507 --> 01:14:57,667
+Türkler'in
+
+445
+01:14:47,475 --> 01:14:51,475
+Bu şekilde değiştirebilirsiniz.
+
+446
+01:14:51,475 --> 01:14:59,475
+Ve bu şekilde değiştirebilirsiniz.
+
+447
+01:14:59,475 --> 01:15:14,251
+Bu şekilde değiştirebilirsiniz.
+
+448
+01:15:14,355 --> 01:15:16,716
+Komplement of the languages.
+
+449
+01:15:18,771 --> 01:15:46,531
+So, Turing machine M' for any input string W, M let machine M be decider for L, then run M for input string W. If machine accepts, then reject input. If machine M rejects, then accepts input. So, as you see, there is no loop. So, accepts L hat, complement of the language L, and holds every string, and this is the end of the proof.
+
+450
+01:15:46,771 --> 01:16:02,652
+What about the undecidable languages? Undecidable language has no decider, meaning that there is a Turing machine that has certainly one loop.
+
+451
+01:16:03,291 --> 01:16:10,451
+So any Turing machine that accepts language L does not hold for some input string, so it will loop for it.
+
+452
+01:16:10,752 --> 01:16:37,644
+So, we will show that there is a Turing machine which is a Turing acceptable and undecidable. Undecidable, okay. We will prove that there is a Turing, we will prove that there is a language L, okay, and L is a Turing acceptable means that there is a Turing machine that accept that language L using the reject or accept or...
+
+453
+01:16:37,779 --> 01:16:44,979
+A loop, but L-bar, the complement of, is not a Turing acceptable.
+
+454
+01:16:46,239 --> 01:16:48,500
+Not accepted by any Turing machine.
+
+455
+01:16:48,859 --> 01:16:49,479
+You can see?
+
+456
+01:16:50,199 --> 01:16:53,279
+So decidability helped us a lot.
+
+457
+01:16:53,920 --> 01:16:57,899
+So as you remember in the previous lectures,
+
+458
+01:16:58,355 --> 01:17:04,775
+So, decidable, if you have a language and you know that it is decidable, its complement is also decidable.
+
+459
+01:17:04,855 --> 01:17:06,615
+It means that there is another Turing machine.
+
+460
+01:17:07,315 --> 01:17:24,115
+But if language is Turing acceptable and, okay, and the LHAT is not Turing acceptable, okay?
+
+461
+01:17:24,595 --> 01:17:30,715
+So, the complement of a decidable language is decidable. Therefore, L is decidable.
+
+462
+01:17:31,755 --> 01:17:41,935
+Okay, this is the, look at here. So, decidable, this is the Turing acceptable language, and this is non-Turing acceptable language. Okay?
+
+463
+01:17:46,260 --> 01:18:09,700
+So, consider the alphabet. This is the strings of A+. Look at this now. So A, this is the elements of the language. Okay, so 1A, AA, AAA, AAA. Okay, so consider the trick machine that accepts the language over the alphabet. So they are countable.
+
+464
+01:18:10,100 --> 01:18:26,672
+M1'in birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin birisinin
+
+465
+01:18:26,671 --> 01:18:32,671
+M2'a bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok.
+
+466
+01:18:32,671 --> 01:18:41,671
+Bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok.
+
+467
+01:18:41,671 --> 01:18:45,671
+A, ok? Bu birçok, bu birçok, bu birçok.
+
+468
+01:18:54,739 --> 01:18:58,739
+Ama bazen de de aynı değil, ok?
+
+469
+01:18:58,996 --> 01:19:02,996
+since the language is accepted by more than one Turing machine.
+
+470
+01:19:03,076 --> 01:19:13,515
+So it is possible to have this language and this language is same for different i and j, for different machines, since a language could be accepted.
+
+471
+01:19:13,556 --> 01:19:17,835
+So actually a language could be accepted more than one Turing machine.
+
+472
+01:19:18,355 --> 01:19:25,515
+For example, let's say, let's consider the language accepted by machine MI.
+
+473
+01:19:25,855 --> 01:19:39,395
+This is the language of MI, as you see, double E, quadruple E, and here is six-tuple E, sorry, six-tuple A, double A, quadruple A, six-tuple A.
+
+474
+01:19:39,695 --> 01:19:42,136
+So this language can be written like this.
+
+475
+01:19:42,415 --> 01:19:43,036
+Okay, good.
+
+476
+01:19:43,815 --> 01:19:49,335
+Now, we can represent this one like this.
+
+477
+01:19:49,456 --> 01:19:51,456
+This is all the possible strings.
+
+478
+01:19:53,235 --> 01:20:03,056
+This language, there is one double A, one quadruple A, and one six-duple A.
+
+479
+01:20:03,572 --> 01:20:31,572
+So, if there is one, so we put one, the others are zero. So, this is the language, the language, this is the binary representation of this language. So, this is language and this is the binary representation of this language. Okay? So, as you see that the language can be converted to binary representations. So, that you have different languages, different machines, and they have a binary representation.
+
+480
+01:20:31,572 --> 01:20:38,572
+ve bu
+
+481
+01:20:38,572 --> 01:20:41,572
+bu
+
+482
+01:20:41,572 --> 01:20:43,572
+a
+
+483
+01:20:43,572 --> 01:20:44,572
+i
+
+484
+01:20:44,572 --> 01:20:46,572
+bu
+
+485
+01:20:46,572 --> 01:20:47,572
+i
+
+486
+01:20:47,572 --> 01:20:48,572
+bu
+
+487
+01:20:48,572 --> 01:20:49,572
+i
+
+488
+01:20:49,572 --> 01:20:50,572
+bu
+
+489
+01:20:50,572 --> 01:20:51,572
+i
+
+490
+01:20:51,572 --> 01:21:00,572
+bu
+
+491
+01:20:59,539 --> 01:21:06,000
+Diagons, you see, this language and this language has this.
+
+492
+01:21:07,159 --> 01:21:10,619
+So somehow related to this language L.
+
+493
+01:21:11,260 --> 01:21:17,659
+So this language L could be like A3 and A4 regarding this.
+
+494
+01:21:19,340 --> 01:21:21,484
+This language is...
+
+495
+01:21:22,452 --> 01:21:41,932
+From here, look at this. Overall, we create another language. So this is the language L, A3 and A4. Because this is the combination. This L language is defined on these languages. Okay? Defined on these languages. And we checked.
+
+496
+01:21:43,188 --> 01:22:07,247
+A power i is element of the languages, then it is the element, then this A power i is element of that language. Okay? I will repeat. If A power i is element of the machine, element of the language of machine i, then
+
+497
+01:22:07,631 --> 01:22:34,551
+A power i is element of this language. So, when you look at here, this is the diagonal, so you know that the L is A3 and A4. Okay, good, you find the language. Let us consider the language L complement, L bar. So now, if A power i
+
+498
+01:22:34,963 --> 01:22:42,703
+is not the element of the language of machine i, then i is the element of the complement language.
+
+499
+01:22:43,123 --> 01:22:47,043
+Okay, so we can write it.
+
+500
+01:22:47,724 --> 01:22:50,083
+What about, this is the normal language.
+
+501
+01:22:50,463 --> 01:22:57,863
+So L bar is the elements consist of zeros in the diagonal.
+
+502
+01:22:57,863 --> 01:22:59,023
+Look at here.
+
+503
+01:22:59,444 --> 01:23:07,444
+You see that this is zero and this is zero. Now, this will be considerate. And...
+
+504
+01:23:13,971 --> 01:23:27,111
+One second. So L bar, complement of language L is A power 1, A power 2, double 1, double A, something like this.
+
+505
+01:23:27,791 --> 01:23:36,492
+Okay, good. So theorem, language L bar, the language complement language, is not a Turing acceptable.
+
+506
+01:23:37,671 --> 01:23:40,611
+Proof, in order to prove it, we will assume the contradiction.
+
+507
+01:23:41,300 --> 01:23:49,239
+We will assume a contradiction in which L bar is a Turing acceptable.
+
+508
+01:23:50,239 --> 01:24:06,960
+So there is a machine key, there is a machine key, there is a machine key that is a Turing machine that accepts the complement language L bar.
+
+509
+01:24:07,539 --> 01:24:26,280
+According to this assumption, okay, we assume that Lbar is a Turing acceptable. So there is a Turing machine that accepts Lbar. So let us look at the language.
+
+510
+01:24:27,252 --> 01:24:54,772
+So, this is, so the binary representation is 1100. The question is, M key is equal to M1, 1100, 1100, 1100. The machine key is equal to machine 1. This is the question. So look at now, 1.
+
+511
+01:24:56,659 --> 01:25:00,739
+Here, and here is 0.
+
+512
+01:25:01,520 --> 01:25:09,260
+Okay, and machine k is not equal to machine 1, because the first is 1, the 0.
+
+513
+01:25:09,880 --> 01:25:17,020
+So because it means that A is element of the language machine, but
+
+514
+01:25:17,652 --> 01:25:26,631
+is not element of the language of machine one. So machine key and machine one are not equal.
+
+515
+01:25:28,652 --> 01:25:34,112
+What about machine key is equal to machine two? We can check.
+
+516
+01:25:34,836 --> 01:25:58,476
+So, look at now, this is the second, the first is okay, the second, here is one, it is zero, three-binary comparison, it means that double A square is the element of the language of the machine key, but it is not element of the language of the machine two.
+
+517
+01:25:59,056 --> 01:26:02,256
+So, machine key is not equal to machine two.
+
+518
+01:26:03,923 --> 01:26:25,123
+What about the machine tree? So we can, and also it is not equal to the machine tree. Similarly, we can check for all other machines i, and because i, if, if, if.
+
+519
+01:26:25,503 --> 01:26:36,523
+Mekin key is not equal to machinei means that AI is element of the machine key, but it is not element of the machine i.
+
+520
+01:26:37,203 --> 01:26:40,123
+Sorry, it is not element of the language of machine i.
+
+521
+01:26:40,843 --> 01:26:42,863
+Or we can write like this.
+
+522
+01:26:42,863 --> 01:26:45,743
+So the machine key cannot exist.
+
+523
+01:26:46,243 --> 01:26:50,863
+So L bar, complement of...
+
+524
+01:26:51,667 --> 01:26:54,768
+Lengu, is not a Turing acceptable.
+
+525
+01:26:56,688 --> 01:27:09,268
+So non-Turing acceptable and the Turing acceptable and the decidable all is like this as a set.
+
+526
+01:27:17,971 --> 01:27:25,271
+Turing acceptable, yes, there is a Turing machine that accepts that language, and it is undecidable.
+
+527
+01:27:26,011 --> 01:27:31,572
+Each machine accepts, doesn't hold on some input string, so there is a loop, okay?
+
+528
+01:27:32,131 --> 01:27:35,891
+So, we can say like this.
+
+529
+01:27:36,291 --> 01:27:41,311
+So, the language, this language, is Turing acceptable?
+
+530
+01:27:42,051 --> 01:27:43,291
+Is Turing acceptable?
+
+531
+01:27:44,372 --> 01:27:47,932
+Ve bu proof,
+
+532
+01:27:47,932 --> 01:28:09,292
+bu
+
+533
+01:28:09,684 --> 01:28:36,984
+A's, and we will find a Turing machine MI that accepted input. This is the enumerator. And we simulate MI for input string AI, and if MI accepts the input string, then the Turing machine will accept the input string. Therefore, this language is Turing acceptable.
+
+534
+01:28:37,768 --> 01:28:41,768
+bu
+
+535
+01:28:37,587 --> 01:28:41,827
+Bu bir language değil, Turing-akceptible.
+
+536
+01:28:41,827 --> 01:28:54,667
+Turing-akceptible, Turing-akceptible, Turing-akceptible,
+
+537
+01:29:01,939 --> 01:29:14,579
+If L is decidable, then so its complement is decidable. However, L bar, the complement of L is not a Turing acceptable. This is the contradiction.
+
+538
+01:29:16,499 --> 01:29:26,299
+And therefore, this language is undecidable. Undecidable means there is no Turing machine.
+
+539
+01:29:28,307 --> 01:29:52,307
+...
+
+540
+01:29:51,412 --> 01:30:09,132
+Final Exam, yani sınavda, final sınavında bunlardan soru sorarız arkadaşlar. Onu söyleyeyim konularla ilgili. Şimdi bir 10 dakika ara verelim. 10 dakika sonra devam edeceğiz.
+
+541
+01:37:56,787 --> 01:38:01,787
+Evet arkadaşlar, dersimizin sonuna geldik.
+
+542
+01:38:09,971 --> 01:38:10,751
+Son, ya.
+
+543
+01:38:41,011 --> 01:38:43,791
+Birazcık Time Complexity'den bahsedeyim.
+
+544
+01:38:47,220 --> 01:38:48,300
+Time complexity.
+
+545
+01:38:51,580 --> 01:38:55,220
+Let us consider a deterministic Turing machine.
+
+546
+01:38:55,480 --> 01:38:58,260
+Deterministic means standard Turing machine, okay?
+
+547
+01:38:59,380 --> 01:39:05,240
+Deterministic Turing machine, which decides a language L, okay?
+
+548
+01:39:05,240 --> 01:39:13,240
+For any input string W, the computation of machine terminates in a finite amount of transitions.
+
+549
+01:39:14,387 --> 01:39:21,347
+So for input string W, the stand transitions will be like this.
+
+550
+01:39:21,447 --> 01:39:27,688
+You start with initial states and you will reach the final state or reject states at the end of the string.
+
+551
+01:39:28,688 --> 01:39:31,728
+And the decision time.
+
+552
+01:39:32,340 --> 01:39:40,040
+DFA is proportional to the number of transitions between initial state to accept reject states.
+
+553
+01:39:40,240 --> 01:39:42,460
+Okay, so this is the decision time.
+
+554
+01:39:43,240 --> 01:39:48,220
+We can now consider all strings of length n.
+
+555
+01:39:48,920 --> 01:39:55,640
+So Tmn is the maximum time required to decide any string of length n.
+
+556
+01:39:55,640 --> 01:39:57,940
+So this is denoted by Tm.
+
+557
+01:40:00,000 --> 01:40:26,360
+This is string length, let's say 1, 2, 3, 4, n. So as you see that this is the tm, n. So this is the time to recognize the accepts input string. If the input string length is 1, so for all possible 1, the maximum decision time, this is maximum decision time. This is
+
+558
+01:40:26,671 --> 01:40:35,331
+For input string of length n, this is the maximum time to decide the input string.
+
+559
+01:40:36,891 --> 01:40:45,011
+So, time complexity is this. All languages is decidable by a deterministic turing machine in time tn.
+
+560
+01:40:45,651 --> 01:40:51,911
+So, these are the languages, all the languages, these are all decidable languages.
+
+561
+01:40:52,500 --> 01:40:55,420
+have this complexity.
+
+562
+01:40:56,199 --> 01:40:56,380
+Okay.
+
+563
+01:40:57,039 --> 01:40:59,100
+So let us consider this language.
+
+564
+01:40:59,280 --> 01:41:03,300
+This language is, can be decided by or n.
+
+565
+01:41:03,659 --> 01:41:10,880
+So the time complexity is proportional to the length of the input string.
+
+566
+01:41:12,880 --> 01:41:13,800
+Okay.
+
+567
+01:41:14,159 --> 01:41:16,539
+So other example is,
+
+568
+01:41:18,228 --> 01:41:31,828
+Aynı class, for example, these are, and these are, these are, all of them have the almost same time complexity, have the same time complexity.
+
+569
+01:41:33,208 --> 01:41:44,467
+So the time to recognize the input string is proportional to the length of the input, almost proportional to the length of the input string.
+
+570
+01:41:45,672 --> 01:41:49,672
+...
+
+571
+01:41:45,140 --> 01:42:02,444
+Bu bir
+
+572
+01:42:02,739 --> 01:42:12,839
+The time complexity is proportional to the square of the half length of the input string.
+
+573
+01:42:12,839 --> 01:42:21,839
+So, for example, this input string is double to n, so the time complexity is n squared for all of these k's.
+
+574
+01:42:24,419 --> 01:42:29,099
+And other examples like n cubed.
+
+575
+01:42:29,439 --> 01:42:49,439
+So, this is the matrix multiplication. You are given a matrix M1 and M2, you obtain M3. So, this matrix multiplication is N3, has N3 complexity, or...
+
+576
+01:42:50,528 --> 01:42:56,148
+CYK algorithm is also has a context-free grammar.
+
+577
+01:42:56,888 --> 01:43:04,788
+So context-free grammar and stringed all together is called CYK algorithm.
+
+578
+01:43:04,788 --> 01:43:15,708
+And this algorithm has also time complexity, has time complexity, which is equal to the cube of the length of the input string.
+
+579
+01:43:18,131 --> 01:43:26,152
+Polynomial time algorithms, so this is the point for some constant key, so time complexity can be represented here.
+
+580
+01:43:26,851 --> 01:43:31,671
+To tractable algorithms for small key, we can decide the results fast.
+
+581
+01:43:31,671 --> 01:43:42,731
+So we need to find the algorithms whose polynomial time power constants should be very small.
+
+582
+01:43:43,155 --> 01:43:45,275
+So key values should be very small.
+
+583
+01:43:45,395 --> 01:43:51,335
+If Q is very close to the zero, or it is zero, then it's one or something.
+
+584
+01:43:51,675 --> 01:43:59,135
+But if key value takes small values, then time complexity of the Turing machine is less.
+
+585
+01:44:01,195 --> 01:44:09,416
+We can show that time complexity, this time complexity is a subset of this time complexity.
+
+586
+01:44:10,355 --> 01:44:27,755
+Bu örneğin, bu zamanın bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte
+
+587
+01:44:28,275 --> 01:44:35,536
+So, the time complexity class P, so we can say this is for all possible key union you combine.
+
+588
+01:44:36,175 --> 01:44:43,055
+So, this is the time complexity class P and represents the polynomial time algorithms and these are the tractable problems.
+
+589
+01:44:43,735 --> 01:44:49,855
+For example, this is class P. As you see that there are the algorithms, there are the languages.
+
+590
+01:44:50,135 --> 01:44:56,235
+For example, the time complexity of these languages and the time complexity of these languages and square time.
+
+591
+01:44:56,275 --> 01:45:26,051
+Bu
+
+592
+01:45:19,731 --> 01:45:23,592
+So, exponential time algorithms, we have also exponential time algorithms.
+
+593
+01:45:23,771 --> 01:45:30,372
+Look at here, the time complexity is the power of two, so n power key.
+
+594
+01:45:30,372 --> 01:45:39,212
+So, here, so, this algorithm represents interactable algorithms and is greater than.
+
+595
+01:45:39,667 --> 01:45:49,787
+If key value is 1, the complexity increases exponentially by the length of the input string.
+
+596
+01:45:50,507 --> 01:45:55,847
+So key value here should be very, very small than 1.
+
+597
+01:45:56,212 --> 01:46:01,512
+Eğer key value is less than 1, then we can say that the problem is tractable.
+
+598
+01:46:01,632 --> 01:46:06,412
+But in other cases, these algorithms certainly untractable.
+
+599
+01:46:06,592 --> 01:46:09,952
+So it will take centuries to solve that problem.
+
+600
+01:46:10,052 --> 01:46:13,052
+For example, there is a shiffer text.
+
+601
+01:46:13,212 --> 01:46:15,092
+You want to deshiffer the text.
+
+602
+01:46:15,811 --> 01:46:24,212
+In order to deshiffer the text without knowing the key, encryption key, will take so much time.
+
+603
+01:46:24,552 --> 01:46:30,552
+Bu
+
+604
+01:46:24,212 --> 01:46:28,252
+Çünkü bu algoritmın bir algoritma,
+
+605
+01:46:28,252 --> 01:46:33,292
+ve kısımda bir kısımda bir kısımda.
+
+606
+01:46:35,372 --> 01:46:37,692
+Bu, Hamilton'in pati.
+
+607
+01:46:37,692 --> 01:46:43,132
+Bu, bu bir kısımda,
+
+608
+01:46:43,132 --> 01:46:46,132
+bu bir kısımda bir hamilton pati
+
+609
+01:46:50,591 --> 01:46:55,871
+Bu soru, bu soru, evet.
+
+610
+01:46:55,871 --> 01:46:58,191
+Hamiltonian pati,
+
+611
+01:46:58,191 --> 01:47:00,271
+bu yolu yöntemde
+
+612
+01:47:00,271 --> 01:47:02,351
+yöntemde
+
+613
+01:47:02,351 --> 01:47:04,191
+yöntemde.
+
+614
+01:47:14,292 --> 01:47:20,992
+T, not T, you visited all the possible nodes. So this is the Hamiltonian paths.
+
+615
+01:47:21,612 --> 01:47:25,832
+Okay, so solution searched exhaustively all the paths.
+
+616
+01:47:25,832 --> 01:47:26,832
+Actually,
+
+617
+01:47:28,979 --> 01:47:36,299
+Bu bir anlamda, bu bir anlamda, bu bir anlamda.
+
+618
+01:47:36,299 --> 01:47:38,299
+Bu bir anlamda, bu bir anlamda,
+
+619
+01:47:38,299 --> 01:47:40,659
+ve bir anlamda,
+
+620
+01:47:40,659 --> 01:47:44,819
+bu bir hamiltonin bir anlamda bir anlamda.
+
+621
+01:47:44,819 --> 01:47:46,859
+Bu bir anlamda, bu bir anlamda, bu bir anlamda.
+
+622
+01:47:46,859 --> 01:47:48,859
+Bu bir anlamda, bu bir anlamda,
+
+623
+01:47:48,859 --> 01:47:50,859
+ama bu bir anlamda,
+
+624
+01:47:50,996 --> 01:47:54,155
+Bu çok büyük bir net birçok konusunda,
+
+625
+01:47:54,155 --> 01:47:56,515
+bu hamiltonin birçok konusunda bile bile
+
+626
+01:47:56,515 --> 01:47:58,515
+bulunduğu bir hamiltonin birçok konusunda
+
+627
+01:47:58,515 --> 01:48:00,876
+ve bir komputer olacaktır.
+
+628
+01:48:00,876 --> 01:48:02,996
+Bu hamiltonin birçok konusunda
+
+629
+01:48:02,996 --> 01:48:05,916
+çünkü bu problemin bir problemin bir problemu.
+
+630
+01:48:05,916 --> 01:48:06,876
+Bu konusunda,
+
+631
+01:48:06,876 --> 01:48:09,876
+birçok konusunda kalan birçok konusunda
+
+632
+01:48:09,876 --> 01:48:11,876
+aslında, birçok konusunda
+
+633
+01:48:11,876 --> 01:48:14,195
+n! ve bu n! konusunda
+
+634
+01:48:14,195 --> 01:48:17,115
+bu konusunda kalan birçok konusunda
+
+635
+01:48:17,247 --> 01:48:24,507
+As you see, in order to solve the problem, we need exponential time.
+
+636
+01:48:24,507 --> 01:48:27,688
+So this problem is an intractable problem.
+
+637
+01:48:31,047 --> 01:48:35,768
+The click problem, there does exist a click of size key.
+
+638
+01:48:36,347 --> 01:48:38,068
+So the click problem is here.
+
+639
+01:48:38,515 --> 01:48:47,456
+Bu, eğer ki, you clicked five, so does there exist a click of size key?
+
+640
+01:48:47,456 --> 01:49:00,115
+Bu, eğer ki, all the nodes are connected to each other and it is somehow connected to each other like this.
+
+641
+01:49:04,532 --> 01:49:05,011
+Okay.
+
+642
+01:49:06,771 --> 01:49:17,912
+And this is an example, a satisfiable problem, Boolean expressions in conjecture normal form.
+
+643
+01:49:18,032 --> 01:49:27,332
+For example, this is the clauses, T1 or T2 or T3 or NTK and TI, something like this, variables.
+
+644
+01:49:27,591 --> 01:49:29,731
+Is this expression satisfiable?
+
+645
+01:49:29,731 --> 01:49:31,492
+Example, this is.
+
+646
+01:49:31,988 --> 01:49:58,268
+This is the example, satisfiable. X1 is 0, X2 is 1, X3 is 1. So the result is 1. Okay, example, is it satisfiable, not satisfiable? So this is another language and it requires exponential time to recognize this language. So it is not tractable.
+
+647
+01:50:00,115 --> 01:50:14,115
+Nondeterminism, the language class, L1, L2, L3, these are the nondeterministic string machines, decides each string of length like this in time TN.
+
+648
+01:50:14,815 --> 01:50:25,556
+So computations, all the computation of machine on string, so you can use binary, you can represent as a tree.
+
+649
+01:50:25,984 --> 01:50:51,564
+Bu, bu
+
+650
+01:50:51,604 --> 01:51:05,824
+So, this is, this path, as you see, this path, in order to reach this state, it will take time, that time is proportional to the input length W.
+
+651
+01:51:05,824 --> 01:51:17,963
+And non-deterministic polynomial algorithms, if this is called NP,
+
+652
+01:51:19,699 --> 01:51:34,199
+NP, the class of NP. So actually this is the non-deterministic time for all this. This is the total, this is the non-deterministic polynomial time.
+
+653
+01:51:36,199 --> 01:51:44,199
+And here I stop non-determinism.
+
+654
+01:51:46,228 --> 01:51:56,947
+After this non-deterministic polynomial, deterministic polynomial, the observation is deterministic polynomial is subset of non-deterministic polynomial.
+
+655
+01:51:58,228 --> 01:52:04,947
+So open problem, the polynomial, deterministic polynomial is equal to the non-deterministic polynomial.
+
+656
+01:52:05,507 --> 01:52:06,608
+We don't know the answer.
+
+657
+01:52:07,827 --> 01:52:09,087
+Open problem.
+
+658
+01:52:10,612 --> 01:52:37,552
+Does, example, does the satisfiable problem have a polynomial time deterministic algorithm? We don't know the answer. Actually, this problem, maybe, you know, it will take many, many, many, many centuries or something to solve these problems with. But in future, if the computers, string machines becomes more powerful using the quantum machines, maybe we will able to answer such problems.
+
+659
+01:52:54,836 --> 01:53:15,356
+Okey, arkadaşlar. Şimdi burada MP, Compute Languages'te duruyorum. Yani buraya girin, bunu anlatmayacağım. Derslerimizi bitirdik, konuları bitirdik. Bu dönemin son dersiydi.
+
+660
+01:53:18,323 --> 01:53:24,543
+Şöyle biraz final sınav hakkında konuşalım. Final sınavını seçmeli yapacağız yine, olduğu gibi.
+
+661
+01:53:26,703 --> 01:53:36,503
+Son konuda, son konuya kadar, istediğimiz son konuya kadar, her, istediğimiz son konuya kadar sorumlusunuz.
+
+662
+01:53:43,323 --> 01:53:45,663
+Eğer sorularınız varsa cevaplayın.
+
+663
+01:53:52,340 --> 01:53:53,939
+Elim yok hocam, teşekkür ederim.
+
+664
+01:53:55,239 --> 01:53:58,079
+Soru sola var mı başka? Arkadaşlar.
+
+665
+01:54:06,644 --> 01:54:24,604
+Tamam arkadaşlar. Öyleyse burada dersi bitiriyorum. Sınavda görüşmek üzere. Hepiniz kendinize iyi bakın. Sınavda dediğim gibi seçmeli olacak. Hepinize iyi günler. Dersi burada bitiriyorum.
+
+666
+01:54:25,363 --> 01:54:26,043
+Hoşçakalın.
+
+667
+01:54:26,484 --> 01:54:28,144
+Hoşçakalın. İyi günler hepiniz.

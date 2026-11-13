@@ -1,0 +1,4023 @@
+1
+00:04:39,444 --> 00:04:48,024
+Merhaba arkadaşlar. Hoş geldiniz. Sesimi duyabiliyor musunuz?
+
+2
+00:05:03,060 --> 00:05:20,360
+Hesaplama teorisi olarak geçiyor. Dersimizin dili İngilizce, dersleri İngilizce olarak işleyeceğiz. Hepinize şimdiden başarılar diliyorum.
+
+3
+00:05:21,939 --> 00:05:45,019
+Eğer anlatımım esnasında anlamadığınız kısımlar olursa lütfen çekinmeyin. İngilizce soru sormak zorunda değilsiniz. Sorularınızı Türkçe de sorabilirsiniz. Hiçbir problem yok. Önemli olan bu dersi interaktif olarak birlikte işleyebilmek. Önemli olan sizlerin öğrenmesi.
+
+4
+00:05:46,228 --> 00:06:11,128
+Derse katılımınız ne kadar çok yüksek olursa, vize ve final sınavları da o kadar kolay olacağını da şimdiden söylüyorum. Ona göre derse katılımlarınız sınavların kolaylaşması anlamına gelmekte. Eğer derse katılmıyorsanız biliyorsunuz demektir. Biliyorsanız da bütün soruları yapabiliyorsunuz demektir.
+
+5
+00:06:11,536 --> 00:06:36,096
+Derse katılımın sebebi nedir? İnsan bilmediği zaman soru sorar. Öğrenmek istediğinde soru sorar. Soru sormayan insan öğrenemez. Öğrenmenin temel karşılığı bilimdir. Bilim demek, öğrenmek demektir. Öğrenmek demek, okumak demektir. Okumak, öğrenmenin ilk adımıdır.
+
+6
+00:06:36,596 --> 00:06:55,836
+Soru sormak diğer adımıdır. Dolayısıyla okumayan ve sormayan insan öğrenemez. Eğer bu derste bir şeyler öğrenmek istiyorsanız, lütfen soru sorunuz, hiçbir sıkıntı yok, rahat olun. Soruları sorarsanız dersi daha detaylı işleyebiliriz.
+
+7
+00:06:56,936 --> 00:07:01,816
+Birincisi bu, ikincisi dersimizin dili İngilizce olacağını söylemiştim.
+
+8
+00:07:02,291 --> 00:07:11,371
+Dersimizin dili İngilizce olacak. Dersin slide'larını sizlerle zaman içinde paylaşırım. Hiçbir problem yok o konuda.
+
+9
+00:07:12,991 --> 00:07:20,312
+Yanlı slide'ları paylaşmış olmam sizin için çok büyük bir avantaj sağlamayacaktır, onu bilin.
+
+10
+00:07:20,871 --> 00:07:26,851
+Zaten videolarımız bu zemde olacak. Videoları tekrardan izleyebilirsiniz.
+
+11
+00:07:27,603 --> 00:07:49,083
+Önemli olan bu derste, önemli olan çok çok soru çözmeniz, dersin genel formatı içeriği, dersin ne olduğunu birazdan beraber işleyeceğiz. Bu arada geçen hafta dersimizi yapamadık özel sebeplerden dolayı, benim özel sebeplerimden dolayı.
+
+12
+00:07:49,555 --> 00:08:00,295
+Önümüzdeki haftalarda bu yapılmayan dersi de telafi edeceğiz inşallah. Bunu telafi edeceğimiz günü hep birlikte karar vereceğiz.
+
+13
+00:08:01,795 --> 00:08:09,755
+Tekrar derse katılımlarınız için, derse katılımlarınız için tekrar hepinize teşekkür ediyorum. Şu anda dersimize başlayalım.
+
+14
+00:08:14,644 --> 00:08:26,644
+My name is Farqay Yılmaz. I'm associate professor in the Computer Engineering Department. My email is ferkm at...
+
+15
+00:08:26,740 --> 00:08:32,899
+Y-I-L-D-A-I-S-N dot ed-U-I-N-T-R.
+
+16
+00:08:33,319 --> 00:08:43,100
+If you want to send any email, if you want to send any email to this, my email account, please do not attach any file.
+
+17
+00:08:43,100 --> 00:08:46,740
+Okay, if you want to ask some things, do not attach a file.
+
+18
+00:08:47,159 --> 00:08:49,399
+You can ask your questions in text.
+
+19
+00:08:49,700 --> 00:08:54,720
+If you want to send me a file by email, please use Dropbox links.
+
+20
+00:08:54,740 --> 00:08:56,620
+Google Drive links.
+
+21
+00:08:57,240 --> 00:09:03,880
+And the class hours every Tuesday at 9, every Tuesday between 9 and 12.
+
+22
+00:09:04,480 --> 00:09:07,460
+And we will have also the office hours.
+
+23
+00:09:07,940 --> 00:09:15,220
+Office hours is in Wednesday between 14 and 15.
+
+24
+00:09:15,220 --> 00:09:15,799
+Okay.
+
+25
+00:09:17,620 --> 00:09:18,019
+And.
+
+26
+00:09:20,532 --> 00:09:44,432
+Okay. So, the theory of computation is a course of abstractions about what we can compute. It is the purest of all computer science topics attempting to strip away any details about the real computer and replacing in it with abstractions.
+
+27
+00:09:44,980 --> 00:10:01,836
+Bu da bize bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyerasyonelde de bir hiyer
+
+28
+00:10:01,875 --> 00:10:17,915
+Abstractions means, abstractions gives us a way of saying something about what we are doing in a rigorous formal way, rather than falling randomly through a haze of informality.
+
+29
+00:10:17,915 --> 00:10:29,716
+There is a great value in abstraction. The theory of computation is itself a branch of computer science and mathematics combined.
+
+30
+00:10:29,875 --> 00:10:35,875
+ve bu konuda,
+
+31
+00:10:35,875 --> 00:10:37,875
+bu konuda,
+
+32
+00:10:37,875 --> 00:10:39,875
+ve bu konuda,
+
+33
+00:10:39,875 --> 00:10:48,875
+bu konuda,
+
+34
+00:10:47,892 --> 00:11:01,711
+It studies, the theory of computation, studies the general properties of the computation, which in turn help us increase the efficiency at which computers to solve the problem.
+
+35
+00:11:01,711 --> 00:11:15,892
+This is done when we estimate the validity of the solutions given by the computer through the theory of computation and then alternate the algorithms so that we can
+
+36
+00:11:17,544 --> 00:11:25,544
+bu konuda,
+
+37
+00:11:15,892 --> 00:11:19,892
+ve daha iyi bir solution.
+
+38
+00:11:19,892 --> 00:11:22,352
+Birçok birçok
+
+39
+00:11:22,352 --> 00:11:23,932
+computer science
+
+40
+00:11:23,932 --> 00:11:27,052
+problemiyle ilgili
+
+41
+00:11:27,052 --> 00:11:28,852
+birçok
+
+42
+00:11:28,852 --> 00:11:29,392
+ve
+
+43
+00:11:29,392 --> 00:11:31,152
+ekonomik,
+
+44
+00:11:31,152 --> 00:11:31,932
+biyoloji,
+
+45
+00:11:31,932 --> 00:11:32,992
+ve
+
+46
+00:11:32,992 --> 00:11:39,852
+birçok
+
+47
+00:11:38,772 --> 00:11:57,172
+Before introducing you the basics of the theory of computation, I would like to talk about a Turing machine as its place, a very important role in explaining this theory.
+
+48
+00:12:02,379 --> 00:12:08,899
+birçok
+
+49
+00:12:02,004 --> 00:12:06,004
+Bu çözüm bir çözüm kullanılıyor.
+
+50
+00:12:06,004 --> 00:12:14,004
+Bir çözüm kullanılıyor.
+
+51
+00:12:14,004 --> 00:12:18,004
+İçinlik kullanılıyor.
+
+52
+00:12:18,004 --> 00:12:24,004
+Bu çözüm kullanılıyor.
+
+53
+00:12:24,004 --> 00:12:26,004
+Ve bu çözüm kullanılıyor.
+
+54
+00:12:26,591 --> 00:12:33,591
+ve Turing'in
+
+55
+00:12:33,591 --> 00:12:38,591
+ve Turing'in 1963'i
+
+56
+00:12:38,591 --> 00:12:51,591
+ve Turing'in
+
+57
+00:12:52,755 --> 00:13:00,695
+When we look at computational theory, this theory approach it through the three main fields.
+
+58
+00:13:00,695 --> 00:13:09,295
+The first main field is the automat theory. The second main field is the computability theory.
+
+59
+00:13:09,975 --> 00:13:12,695
+And the third main field is...
+
+60
+00:13:13,460 --> 00:13:26,120
+Computational Complexity Theory. I am just talking about what computation theory is. Later, I will give you some examples. Now I am talking about computation theory.
+
+61
+00:13:27,508 --> 00:13:46,528
+And the otomat theory, also known as the computation theory in the literature, is the theoretical branch of computer science and the mathematics, which mainly deals with the logic of computation and with respect to simple machines referred to otomat.
+
+62
+00:13:47,528 --> 00:13:53,588
+This branch established in the 20th century by mathematicians.
+
+63
+00:13:54,100 --> 00:14:06,827
+Bu çözüm bu çözüm bu çözüm
+
+64
+00:14:08,532 --> 00:14:22,172
+And the otomat, otomat theory, another word, the computation theory, here enables the scientists to understand how machines computes the functions and to solve the problem.
+
+65
+00:14:22,559 --> 00:14:38,080
+The main motivation behind the developing otomat theory was to develop some methods to describe and analyze the dynamic behavior of discrete systems.
+
+66
+00:14:38,740 --> 00:14:46,600
+Otomat is originated from the word automaton, which is closely related to the automation.
+
+67
+00:14:49,043 --> 00:15:06,644
+So, in the otomat theory, finite state machines are used, especially in searching algorithms, in compiler design, control unit design, in computer architectures, and many modeling applications.
+
+68
+00:15:07,584 --> 00:15:15,804
+And also, computation theory deals with the context-free grammars and their restricted forms.
+
+69
+00:15:16,371 --> 00:15:20,672
+On the basis of the compilers and the pair parsing.
+
+70
+00:15:21,631 --> 00:15:30,552
+And also NP, complete theory, help us to distinguish the tractable from the intractable.
+
+71
+00:15:30,552 --> 00:15:32,552
+And the...
+
+72
+00:15:34,836 --> 00:15:47,415
+Computability problem theory is about the... Computability theory is when we are able to formulate the problem using the Turing machine easily.
+
+73
+00:15:47,923 --> 00:15:54,663
+If you are able to formulate your problems with the Turing machine, then you can say that your problem is computable.
+
+74
+00:15:55,283 --> 00:15:58,364
+But we can never solve it.
+
+75
+00:15:58,403 --> 00:16:10,944
+In other words, when it is when the computer is able to address the problem, but unable to come up the solution, sometimes it is the problem about computability.
+
+76
+00:16:11,744 --> 00:16:15,923
+And the computational complexity theory is another point we need to...
+
+77
+00:16:15,923 --> 00:16:18,923
+in our computations.
+
+78
+00:16:18,923 --> 00:16:23,923
+Okay, what can be computed?
+
+79
+00:16:23,923 --> 00:16:27,923
+The purpose of this course, my friends,
+
+80
+00:16:27,923 --> 00:16:29,923
+the purpose of this course
+
+81
+00:16:29,923 --> 00:16:32,923
+is to consider very simple models
+
+82
+00:16:32,923 --> 00:16:34,923
+of a problem.
+
+83
+00:16:34,923 --> 00:16:37,923
+A problem will be represented
+
+84
+00:16:37,923 --> 00:16:40,923
+as a set of strings, often binary strings
+
+85
+00:16:40,923 --> 00:16:43,723
+that we wish to distinguish
+
+86
+00:16:43,796 --> 00:16:52,056
+We wish to recognize, for example, one problem might be a set of all the binar strings divisible by the tree.
+
+87
+00:16:52,056 --> 00:17:06,855
+To solve this problem, we have to be able to say yes or no to each candidate string as to whether it is in set or not.
+
+88
+00:17:08,243 --> 00:17:14,523
+If actually it is a kind of checking the string is an element of the set or not.
+
+89
+00:17:15,403 --> 00:17:20,763
+If we have an algorithm to do this, then we have solved the problem.
+
+90
+00:17:21,403 --> 00:17:26,103
+These kinds of problems are called decidable problems.
+
+91
+00:17:27,403 --> 00:17:33,523
+And more complicated inputs over large alphabets can also be considered as well.
+
+92
+00:17:36,596 --> 00:18:02,115
+For example, we can consider the list of numbers as input and where each list of numbers, there are many lists, and each list has numbers written in binary with a sharp symbol, separating each one from the other. So you have many numbers, they are separated by sharp symbol.
+
+93
+00:18:02,675 --> 00:18:10,056
+Bu problem is the set of all such things where the numbers are in ascending order.
+
+94
+00:18:13,655 --> 00:18:28,755
+This, there are, actually, for all purposes, we think of a machine or automaton as a guard off the door of exclusive
+
+95
+00:18:30,740 --> 00:18:58,019
+Dora of the system that admits only specific kind of binary strings. The machine is given a program and it checks each candidate inputs the strings trying to get if and executes the program and looking at deciding for which one yes or no.
+
+96
+00:18:59,827 --> 00:19:26,947
+So, after this small introduction about the theory of computation, let me tell you a very short emphasizing sentences. Computation theory actually define you a language. For example, you are communicating with your friends, you are communicating with your family.
+
+97
+00:19:27,392 --> 00:19:51,152
+Which language do you use? You use the Turkish language. Turkish language has sentence, paragraph structures, sentence structures, and also words. Each word consists of many alphabets.
+
+98
+00:19:52,115 --> 00:20:10,355
+So, what you do, actually, when you hear something, you recognize the alphabet, you recognize the words, and from the seconds of many words, you recognize the sentence, and from the sentence, you understand, okay?
+
+99
+00:20:10,867 --> 00:20:32,487
+Ok, very good. So we use the Turkish language to communicate with each other. If you want to communicate with the machine, you want to talk with the machine, which language will you use? Actually, why do you need to talk with the machine? You ask machine to compute some things. If machine is not able to compute some things, ok.
+
+100
+00:20:33,107 --> 00:20:36,028
+Açıkları bir şey yapabilirsiniz.
+
+101
+00:20:36,028 --> 00:20:40,707
+Ama bir machine nasıl bilgi verirseniz?
+
+102
+00:20:40,707 --> 00:20:56,347
+Bir şey yapabilirsiniz.
+
+103
+00:20:56,564 --> 00:21:06,164
+You can communicate with the machine and you can give your computation order to the machine and the machine can compute them for you.
+
+104
+00:21:07,364 --> 00:21:07,784
+Okay.
+
+105
+00:21:09,004 --> 00:21:11,084
+So for the computation,
+
+106
+00:21:14,963 --> 00:21:28,183
+You do not need to, okay, for the computation, you have something, it computes for you. You see some pictures here, which one is computer?
+
+107
+00:21:31,796 --> 00:21:33,256
+Do you have any idea?
+
+108
+00:21:36,556 --> 00:21:37,856
+Which one is computer?
+
+109
+00:21:38,356 --> 00:21:39,336
+What is computer?
+
+110
+00:21:39,496 --> 00:21:42,236
+Computer is a machine that computes.
+
+111
+00:21:42,496 --> 00:21:43,756
+So which one is computer?
+
+112
+00:21:46,936 --> 00:21:48,456
+All of the Mars computer.
+
+113
+00:21:50,016 --> 00:21:50,336
+Who?
+
+114
+00:21:53,476 --> 00:21:54,376
+Who said?
+
+115
+00:21:56,896 --> 00:21:58,775
+Okay, what about this one?
+
+116
+00:22:00,723 --> 00:22:01,423
+Sahmit.
+
+117
+00:22:02,303 --> 00:22:03,844
+Bu bir şey.
+
+118
+00:22:04,423 --> 00:22:05,344
+Bu bir arayt.
+
+119
+00:22:05,384 --> 00:22:06,103
+Bu bir computer.
+
+120
+00:22:14,516 --> 00:22:18,676
+Evet. Bu ABAQS. Bu bir computer.
+
+121
+00:22:18,676 --> 00:22:23,436
+Bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin.
+
+122
+00:22:23,436 --> 00:22:28,156
+Bu bir diğer bir computer. Bu bir mechanical computer.
+
+123
+00:22:28,156 --> 00:22:33,276
+Bir şeyin bir şeyin bir şeyin bir şeyin.
+
+124
+00:22:33,276 --> 00:22:37,196
+Bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin.
+
+125
+00:22:37,196 --> 00:22:39,180
+Bu bir hesap makinası.
+
+126
+00:22:39,251 --> 00:23:02,731
+Arkadaşlar, bilgi seyar, bilgi seyar, bilgi seyar, bilgi seyar is not the correct translation. Computer computes. Computer does not count information. In addition, according to the science, information is uncountable.
+
+127
+00:23:03,251 --> 00:23:25,411
+I am telling you again, information is uncountable. If you want to count, means information must be countable. So bilgisayar by word is wrong. Bilgisayar scientifically a wrong naming.
+
+128
+00:23:26,003 --> 00:23:34,824
+So, the correct naming of bilgisayar in Turkish, correct naming of computer in Turkish is hesaplayıcı.
+
+129
+00:23:35,403 --> 00:23:42,364
+When you look at all of them are the computers, all of them are hesaplayıcı.
+
+130
+00:23:42,884 --> 00:23:45,084
+This is avacus, this is hesaplayıcı.
+
+131
+00:23:45,604 --> 00:23:49,144
+This is mechanical computer, this is hesaplayıcı.
+
+132
+00:23:49,584 --> 00:23:52,543
+This is another computer, this is hesaplayıcı.
+
+133
+00:23:52,991 --> 00:24:07,951
+This is otomat, this is also hesaplayıcı. This is supercomputer, this is super hesaplayıcı. This is also computer, this is hesaplayıcı.
+
+134
+00:24:08,771 --> 00:24:19,571
+Okay, information is not countable. And if you want to have a computer, computer does not need to be like this, does not need to be like this.
+
+135
+00:24:19,571 --> 00:24:20,991
+This is also computer.
+
+136
+00:24:20,991 --> 00:24:27,980
+Let us watch a video to see what I want to tell you. Okay?
+
+137
+00:24:32,915 --> 00:24:59,235
+For example, here, what is the computation in sometimes in order to compute, we do not, you do not need your laptop, your Macbook or your PC desktop. Okay. You just need to have some mechanical mechanical designs also. Here in this video, you will see some computations. These are done by dominos.
+
+138
+00:24:59,796 --> 00:25:01,796
+Stomuz.
+
+139
+00:25:03,796 --> 00:25:09,796
+Bits that were meant to work worked. Everything that was meant to happen happened apart from this that shouldn't have happened.
+
+140
+00:25:24,468 --> 00:25:31,468
+Ne yapıyorlar? İplemente bir computörü kullanan domino-sluğun.
+
+141
+00:25:58,900 --> 00:26:04,620
+What we're doing at the moment is just laying out the circuit with dominoes lying down, which is an awful lot easier.
+
+142
+00:26:10,516 --> 00:26:12,516
+Eşit.
+
+143
+00:26:12,516 --> 00:26:16,516
+So we get a rough feel for everything else to go, make sure it all fits, check we haven't forgotten anything,
+
+144
+00:26:16,516 --> 00:26:22,516
+kind of confirm that the circuit in theory will work, and then, I mean that's the hard work,
+
+145
+00:26:22,516 --> 00:26:26,516
+then it's just the trivial task of going around and standing up all 10,000 dominoes.
+
+146
+00:26:26,516 --> 00:26:30,516
+So we'll get on to that in a second.
+
+147
+00:27:00,147 --> 00:27:05,147
+Bu birçok.
+
+148
+00:27:05,147 --> 00:27:09,147
+Birçok birçok birçok birçok.
+
+149
+00:27:09,147 --> 00:27:11,147
+Çünkü birçok birçok birçok birçok.
+
+150
+00:27:11,147 --> 00:27:13,147
+Birçok birçok birçok.
+
+151
+00:27:13,147 --> 00:27:14,251
+Birçok birçok.
+
+152
+00:27:54,548 --> 00:27:56,307
+Your applause may be premature.
+
+153
+00:27:56,867 --> 00:27:59,748
+So here's what we're going to do.
+
+154
+00:27:59,948 --> 00:28:02,388
+So this is a calculator.
+
+155
+00:28:03,388 --> 00:28:06,428
+This will take two numbers and add them.
+
+156
+00:28:07,028 --> 00:28:09,307
+We are adding together four plus six.
+
+157
+00:28:09,428 --> 00:28:10,768
+The answer should be ten.
+
+158
+00:28:11,448 --> 00:28:17,067
+So over here, to make ten, the two should fall over and the eight should fall over.
+
+159
+00:28:17,188 --> 00:28:19,607
+So that will be our total coming out over here.
+
+160
+00:28:19,607 --> 00:28:21,288
+Everything will do here.
+
+161
+00:28:21,668 --> 00:28:22,316
+This means...
+
+162
+00:28:22,644 --> 00:28:25,304
+...how your computer actually works.
+
+163
+00:28:25,304 --> 00:28:31,903
+So if you have a computer or a calculator, it does exactly the same thing, but it's an awful lot smaller.
+
+164
+00:28:31,903 --> 00:28:36,644
+I'm going to get Katie, Katie over here, the one with this lovely unusual hair colour.
+
+165
+00:28:36,644 --> 00:28:38,644
+I'm going to get her to walk over there.
+
+166
+00:28:42,144 --> 00:28:46,943
+We're going to give her a countdown. We're going to count three, two, one, but in binary.
+
+167
+00:29:53,587 --> 00:29:54,227
+DFA ve Aks.
+
+168
+00:30:27,508 --> 00:30:46,635
+D
+
+169
+00:30:47,028 --> 00:31:06,988
+Bu, bu
+
+170
+00:31:15,059 --> 00:31:18,779
+Bu bir domino ile çok küçük bir veri.
+
+171
+00:31:18,779 --> 00:31:21,179
+Bu çok küçük domino circuit.
+
+172
+00:31:21,179 --> 00:31:22,779
+Bu bir input.
+
+173
+00:31:22,779 --> 00:31:25,559
+Bu bir domino ile bu bir domino ile bu bir domino ile
+
+174
+00:31:25,559 --> 00:31:26,879
+bu domino ile bu bir domino ile bu bir domino ile
+
+175
+00:31:26,879 --> 00:31:28,980
+ve bu bir domino ile bu bir domino ile
+
+176
+00:31:28,980 --> 00:31:30,819
+ve bu bir bir domino ile bu bir bir domino ile
+
+177
+00:31:43,059 --> 00:31:47,059
+bir domino's çayda bir domino's çayda bir domino's çayda bir şey.
+
+178
+00:31:47,059 --> 00:31:53,059
+Bu bir domino's çayda bir domino's çayda bir şey.
+
+179
+00:31:53,059 --> 00:31:56,059
+Bu bir domino's çayda bir şey çayda bir şey.
+
+180
+00:31:56,059 --> 00:32:02,059
+Bu bir domino's çayda bir şey.
+
+181
+00:32:02,059 --> 00:32:05,059
+Bu bir domino's çayda bir şey çayda bir şey.
+
+182
+00:32:05,059 --> 00:32:09,059
+Bu bir domino's çayda bir şey.
+
+183
+00:32:33,236 --> 00:32:57,451
+İlk bir alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş ve bu alışveriş
+
+184
+00:32:57,491 --> 00:33:01,071
+Klocki'l bothak, so if I knock them bothak over, the output should fall over.
+
+185
+00:33:01,191 --> 00:33:03,911
+Okay, here we go. Ready? And go.
+
+186
+00:33:07,892 --> 00:33:18,971
+Ok, so here my blocking wasn't good enough. You can see instead of knocking them out, it accidentally bumped these. That still came around and this block did work. This is our big issue.
+
+187
+00:33:19,932 --> 00:33:28,771
+Any one of these junctions cannot work when we set off the domino computer. So we're being much more meticulous over here to avoid exactly this problem.
+
+188
+00:33:42,867 --> 00:34:05,227
+Bu bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir öncelik bir ön
+
+189
+00:34:05,395 --> 00:34:32,300
+Bu bir
+
+190
+00:34:33,811 --> 00:34:48,811
+Oh, it did stop in the middle. That bit is perfect. This bit is terrible. On the way in, the signal went out the other way and across. And this is actually the biggest problem in that circuit. And if you look very closely...
+
+191
+00:34:49,168 --> 00:34:56,307
+At where we've got one of these, we've actually made a stencil of where every single domino in this area should be.
+
+192
+00:34:56,307 --> 00:35:02,268
+We've chalked it into position and we've put them on in precisely the same spot every time.
+
+193
+00:35:03,387 --> 00:35:08,408
+This is the bit that keeps me awake at night. There are a lot of them in there.
+
+194
+00:35:16,371 --> 00:35:17,211
+Evet, makinesi konularını işlemez.
+
+195
+00:35:54,643 --> 00:36:00,459
+birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine birbirine bir
+
+196
+00:36:00,500 --> 00:36:10,559
+So if you imagine this is adding together two numbers that can either be zero or one. At the moment, they're both zero. If we fill them in with dominoes, this will turn it into a one.
+
+197
+00:36:10,880 --> 00:36:19,199
+So let's say we just knocked over one of these. If we knock over this one, it goes all the way through there. It comes in here, around there, over there, over there, and then out here.
+
+198
+00:36:19,559 --> 00:36:26,980
+And if you come out here, that means there's a one in the outside. And so if you knock down either one separately, you'll get a one coming out there.
+
+199
+00:36:28,500 --> 00:36:51,916
+D
+
+200
+00:36:52,019 --> 00:36:53,099
+It will get to here.
+
+201
+00:36:53,420 --> 00:36:57,099
+And that will happen long after this has done its business.
+
+202
+00:36:57,579 --> 00:37:04,500
+And if, and only if, you get a signal coming out here, this will come around and stop that.
+
+203
+00:37:04,880 --> 00:37:10,260
+If a signal hasn't come out, that will go through, and this output means the answer is a two.
+
+204
+00:37:10,519 --> 00:37:17,279
+And so this little bit here takes two numbers, zero or one, and tells you if the total is one.
+
+205
+00:37:17,907 --> 00:37:35,547
+Orta, orta, orta. And then all we do is we repeat that over and over and over again. There are about seven of these in different places adding up different bits at a time. The entire calculation is split down into adding a zero and a one or a one zero using this.
+
+206
+00:37:50,804 --> 00:37:56,623
+Slightly less, pretty much, finished the main circuit, but these things happen. We'll get it done fairly soon.
+
+207
+00:37:57,064 --> 00:38:03,244
+What's interesting, though, is below the circuit, where we've got the post-it notes for the inputs, we're building another circuit.
+
+208
+00:38:03,444 --> 00:38:10,664
+And actually, this is just one very long line. Its job is, as it goes along, it prompts the next calculation to happen.
+
+209
+00:38:10,744 --> 00:38:18,264
+So we get a nice kind of regular step down all the way across the circuit, so we know all our signals go in right when we want them to.
+
+210
+00:38:36,403 --> 00:38:40,583
+Cercuıda'c finished and it's ready to add two four digit binary numbers together.
+
+211
+00:38:40,943 --> 00:38:44,804
+The way we enter them is the units from both numbers going over here.
+
+212
+00:38:45,104 --> 00:38:48,524
+So it's the units of the first number on one side, units of the other number on the other.
+
+213
+00:38:48,824 --> 00:38:52,024
+So this is the twos, because in binary the next is the twos column.
+
+214
+00:38:52,463 --> 00:38:55,443
+Then there's the fours and then there's the eights.
+
+215
+00:38:55,443 --> 00:38:59,484
+So there's actually four sections, units, twos, fours, eights.
+
+216
+00:38:59,564 --> 00:39:04,403
+And then our answer comes out here, units, twos, fours, eights.
+
+217
+00:39:04,403 --> 00:39:05,583
+Bu da, yukarımsız, 16.
+
+218
+00:39:06,123 --> 00:39:09,923
+Now, the way this works is the first bit, the units is straightforward.
+
+219
+00:39:10,083 --> 00:39:10,864
+That's a half adder.
+
+220
+00:39:11,043 --> 00:39:14,384
+It adds together the two units and gives us the units and the twos as an answer.
+
+221
+00:39:14,704 --> 00:39:15,923
+The twos don't come out, though.
+
+222
+00:39:16,123 --> 00:39:18,003
+They carry into the next calculation.
+
+223
+00:39:18,644 --> 00:39:19,963
+This one is twice as big.
+
+224
+00:39:20,043 --> 00:39:26,403
+It's a full adder because it takes the two inputs from the numbers as well as the carry from the previous calculation.
+
+225
+00:39:26,663 --> 00:39:28,324
+It then gives us an answer out.
+
+226
+00:39:28,684 --> 00:39:32,043
+And then if there are any fours to carry, they go into the fours.
+
+227
+00:40:00,000 --> 00:40:03,559
+Bu da çok domino's incelemişti,
+
+228
+00:40:27,411 --> 00:40:33,391
+Absolutely, everything has to work perfectly and not bump anything else for us to get the correct answer.
+
+229
+00:40:44,260 --> 00:40:56,752
+Bir domino at random.
+
+230
+00:40:56,751 --> 00:41:05,731
+You'll now spot people starting to move. We're going to enter 9 and 3 into this calculator so we can add it together.
+
+231
+00:41:05,891 --> 00:41:10,791
+To enter 9, we need an 8 and a 1, an 8 and a unit because 8 plus 1 is 9.
+
+232
+00:41:11,131 --> 00:41:18,551
+So in this case, we will fill in the 8's unit and we will fill in the 1's unit over here to enter 9.
+
+233
+00:41:18,551 --> 00:41:24,751
+To put in a 3, we need a 2 and a unit because 2 plus 1 is 3. So these guys are going to fill in that one.
+
+234
+00:41:25,760 --> 00:41:30,827
+Bir domino at random.
+
+235
+00:41:24,751 --> 00:41:27,751
+Bu bir ürünün, bir ürünün, bir ürünün, bir ürünün.
+
+236
+00:41:27,751 --> 00:41:29,751
+Bu bir ürünün, bir ürünün.
+
+237
+00:41:29,751 --> 00:41:30,751
+Bu bir ürünün.
+
+238
+00:41:31,123 --> 00:41:36,343
+The answer, if you do 9 plus 3, the answer is 12.
+
+239
+00:41:36,703 --> 00:41:39,963
+So we want 12 to be the answer over here.
+
+240
+00:41:40,303 --> 00:41:41,943
+And this is like the screen.
+
+241
+00:41:42,063 --> 00:41:43,083
+This is the readout.
+
+242
+00:41:43,703 --> 00:41:45,283
+The units should not move.
+
+243
+00:41:45,543 --> 00:41:47,363
+The twos should not move.
+
+244
+00:41:47,603 --> 00:41:49,083
+The fours should fall over.
+
+245
+00:41:49,183 --> 00:41:50,363
+The eight should fall over.
+
+246
+00:41:50,443 --> 00:41:52,123
+The 16 should not move.
+
+247
+00:41:52,563 --> 00:41:53,443
+That will be 12.
+
+248
+00:41:53,523 --> 00:41:56,163
+If anything else happens, this has gone horribly wrong.
+
+249
+00:41:56,723 --> 00:41:59,123
+And there is a decent chance it will go.
+
+250
+00:41:59,555 --> 00:42:03,555
+Bir domino at random.
+
+251
+00:41:59,123 --> 00:42:01,123
+HORRIBLY WRONG
+
+252
+00:42:01,123 --> 00:42:03,123
+Bazen şeyler yapmalı
+
+253
+00:42:03,123 --> 00:42:05,123
+Ama bu sorunlarla görebilirsiniz
+
+254
+00:42:05,123 --> 00:42:07,123
+İçin bir şeyleri de sorunlarla görebilirsiniz
+
+255
+00:42:07,123 --> 00:42:09,123
+Bu bir şeyleri de sorunlarla görebilirsiniz
+
+256
+00:42:09,123 --> 00:42:11,123
+Ve bir sikmelerin bir sikmelerin
+
+257
+00:42:11,123 --> 00:42:22,379
+Bir sikmelerin bir sikmelerin
+
+258
+00:42:22,643 --> 00:42:29,264
+If you want to track back to see if everything's working correct, I can give you a hint at the beginning of the calculation.
+
+259
+00:42:29,743 --> 00:42:34,863
+The very first step it's doing is one plus one. The answer is two, unsurprisingly.
+
+260
+00:42:35,243 --> 00:42:37,583
+I'll let you guys get out without me getting in your way.
+
+261
+00:42:38,503 --> 00:42:40,503
+A huge round of applause for putting this together.
+
+262
+00:42:48,211 --> 00:42:51,592
+[öğrenci], would you mind setting off the on button?
+
+263
+00:42:52,912 --> 00:42:55,731
+We're going to count down from three to one, then we're going to say go.
+
+264
+00:42:56,032 --> 00:42:58,211
+We're going to count down, of course, in binary.
+
+265
+00:42:59,632 --> 00:43:01,132
+Okay, ready? Okay, here we go. Ready?
+
+266
+00:43:03,831 --> 00:43:04,652
+One, one.
+
+267
+00:43:05,291 --> 00:43:06,152
+One, zero.
+
+268
+00:43:06,972 --> 00:43:07,412
+One.
+
+269
+00:43:23,635 --> 00:43:24,816
+So far it's working.
+
+270
+00:43:40,244 --> 00:43:46,443
+That should not have fallen over, and I know why it did. I will mention in a second, in theory, I really want the fours to fall over.
+
+271
+00:43:47,824 --> 00:43:49,043
+We got the fours.
+
+272
+00:43:55,411 --> 00:44:09,251
+Now this should give us the eights, but not the 16s. Here we go. So it's going to go through the first junction. It's going to come through and it's going to stop the other one. Stop it. Stop. Here it comes. It just needs to come out now.
+
+273
+00:44:15,816 --> 00:44:18,816
+Bir sikmelerin bir sikmelerin
+
+274
+00:44:27,219 --> 00:44:33,919
+You may have noticed, you may have noticed that nine plus three is not 30.
+
+275
+00:44:34,879 --> 00:44:38,759
+Fortunately, the twos and the 16 snuck through.
+
+276
+00:44:41,019 --> 00:44:47,799
+It's okay, I will be able to hold it together, but we were so incredibly close, but we did get the correct answer.
+
+277
+00:44:48,059 --> 00:44:50,559
+We just also got an incorrect answer as well.
+
+278
+00:44:54,659 --> 00:44:58,659
+Bits that were meant to work, worked.
+
+279
+00:44:58,659 --> 00:45:00,659
+The answer is there.
+
+280
+00:45:00,659 --> 00:45:02,659
+I can see the correct answer.
+
+281
+00:45:02,659 --> 00:45:04,659
+The four and the eight are there.
+
+282
+00:45:04,659 --> 00:45:06,659
+The bits that were supposed to go through snuck through.
+
+283
+00:45:06,659 --> 00:45:10,659
+So, everything else meant to happen, happened apart from the bits that shouldn't have happened.
+
+284
+00:45:22,324 --> 00:45:26,923
+Bu da çok iyi bir şekilde, daha çok daha
+
+285
+00:45:51,380 --> 00:45:53,820
+A büyük problem building us was getting the timing right.
+
+286
+00:45:53,980 --> 00:45:55,680
+You can see the zigzagging bit here.
+
+287
+00:45:55,840 --> 00:46:03,300
+That is just to slow down this chain of dominoes if they're falling so that this one here has a chance to stop them if needed.
+
+288
+00:46:03,700 --> 00:46:05,180
+And in fact, we had to stop them.
+
+289
+00:46:05,280 --> 00:46:06,860
+This is the 16 out here.
+
+290
+00:46:07,220 --> 00:46:12,020
+And as you can see from the way they've fallen, this one has come through first and this one got there afterwards.
+
+291
+00:46:12,020 --> 00:46:15,080
+We didn't have enough delay in this line.
+
+292
+00:46:15,668 --> 00:46:31,436
+D
+
+293
+00:46:52,275 --> 00:46:58,275
+Tamam, neyi izlediğiniz için bir örneğiniz bir örneğiniz.
+
+294
+00:46:58,275 --> 00:47:04,275
+Şimdi sizlerle konuşacağım.
+
+295
+00:47:04,275 --> 00:47:11,275
+Şimdi hepiniz sözde bilgisayar mühendisi olacaksınız.
+
+296
+00:47:11,275 --> 00:47:18,275
+Bilgisayar kelimesi, bilgi ve saymak ikisi kelimenin bir araya getirilmesinden türetilmiş.
+
+297
+00:47:19,380 --> 00:47:37,740
+Bilimde bilgi sayılamaz. Bilgiyi sayamazsınız. Niçin? Çünkü bilginin miktarı sonsuzdur ve bilgi sayılamaz. Ama kelime olarak bizim kullanmış olduğumuz bilgisayar kelimesi bilimsel olarak yanlış, doğru değil.
+
+298
+00:47:39,599 --> 00:47:43,380
+Kompütür, Türkçe karşılığı hesaplayıcıdır.
+
+299
+00:47:44,436 --> 00:48:04,436
+Yani bir İngiliz çocuk, bir Amerika'da doğan birisi, bir Avrupa'da doğan bir çocuk, kompütür kelimesini duyduğunda aklına ne gelir biliyor musunuz? Aklına bu gelir. Bunun adı da kompütür. Aklına bu da gelir. Bunun adı da kompütür. Çocuğun aklına...
+
+300
+00:48:05,012 --> 00:48:26,452
+Batıdaki çocuğun aklına bu da gelir. Bunun adı da kompütür. Ama size bilgisayar dendiğinizde aklınıza ne gelir? Oyun gelir. Bir sürü programlar gelir. İşte bu yanlış anlamı. Bu dersin sonunda hesaplayıcı ne demektir onu öğreneceksiniz. Yani kompütür nedir onu öğreneceksiniz.
+
+301
+00:48:27,123 --> 00:48:49,483
+Hesaplayıcı için ille şöyle bir hesaplayıcı olmasına gerek yok. İhtiyacınız olan kuvvetteki, güçteki bir hesaplayıcıyla işinizi halledebilirsiniz. Örneğin büyük bir probleminiz var. Bu problemi çözmek için süper kompütöre ihtiyacınız olabilir.
+
+302
+00:48:55,059 --> 00:49:04,359
+Onu hesaplamak için kullanacağınız bilgisayar dediğimiz o hesaplayıcı da böyle bir abaküs olabilir.
+
+303
+00:49:05,000 --> 00:49:13,299
+Dolayısıyla şunu kafanızın içine iyice yerleştirin. Sizler hesaplayıcı mühendisi olacaksınız. Hesaplayabileceksiniz.
+
+304
+00:49:13,859 --> 00:49:22,659
+Mühendis, kelime anlamı nedir mühendisi? Hesaplama yapabilen kişi demektir mühendis. Engineer değildir.
+
+305
+00:49:23,027 --> 00:49:46,127
+İngilizcedeki engineer ise mekanikçi anlamına gelir. Ama mühendislik kelime anlamı olarak hesaplama yapabilen kişidir. Mühendis, hendese hesaplama yapmaktır. Dolayısıyla eğer sizler mühendis olacaksanız iyi hesaplamalar yapabiliyor olmanız lazım. Problemleri hesaplayıcılar kullanarak çözebiliyor olmanız lazım.
+
+306
+00:49:47,059 --> 00:50:14,559
+Peki hesaplayıcıları ne ile kontrol ediyoruz? Hesaplayıcıları programlama dilleri ile kontrol ediyoruz. Yani hesaplayıcılarla programlama dillerini kullanarak konuşuyoruz. Bunu bir şekilde zihninize yazın. Şu anda mesleğinizin ne olduğunu öğrendiniz bu ders kapsamında. Artı mesleğinizin adının yanlış olduğunu da öğrendiniz. Şunu altını çizerek söylüyorum. Bilgi sayılamaz.
+
+307
+00:50:17,588 --> 00:50:23,708
+Evet, let us continue in our slides.
+
+308
+00:50:24,228 --> 00:50:28,688
+Okay, in this course, let us look at the course outline.
+
+309
+00:50:57,103 --> 00:51:04,903
+regular expressions. These regular expressions are mostly used in the compiler design and also for parser design.
+
+310
+00:51:05,268 --> 00:51:43,268
+ve
+
+311
+00:51:43,268 --> 00:51:45,268
+ilk
+
+312
+00:51:45,268 --> 00:51:46,268
+midterm
+
+313
+00:51:46,268 --> 00:51:49,268
+ve
+
+314
+00:51:49,268 --> 00:51:50,268
+ilk
+
+315
+00:51:50,268 --> 00:51:51,268
+midterm
+
+316
+00:51:51,268 --> 00:51:52,268
+exam
+
+317
+00:51:52,268 --> 00:51:53,268
+ve
+
+318
+00:51:53,268 --> 00:51:55,268
+konkektur
+
+319
+00:51:55,268 --> 00:51:56,268
+grammars
+
+320
+00:51:56,268 --> 00:51:57,268
+ve
+
+321
+00:51:57,268 --> 00:51:59,692
+konkektur
+
+322
+00:52:15,711 --> 00:52:17,711
+konkektur
+
+323
+00:52:15,635 --> 00:52:20,916
+12.00, aslında bu yanlış yazdım.
+
+324
+00:52:20,916 --> 00:52:30,275
+İlk olarak, ikinci bir midterm için yok.
+
+325
+00:52:30,275 --> 00:52:33,076
+Ve sonra, ikinci hafta,
+
+326
+00:52:33,076 --> 00:52:36,916
+ve turing machines,
+
+327
+00:52:36,916 --> 00:52:38,916
+ve computations.
+
+328
+00:52:39,155 --> 00:52:43,455
+We will discuss Church-Turing hypothesis.
+
+329
+00:52:44,195 --> 00:52:48,315
+And in week 15, we will have a final exam.
+
+330
+00:52:48,576 --> 00:52:49,355
+I am repeating.
+
+331
+00:52:50,016 --> 00:52:51,355
+We will have no...
+
+332
+00:52:52,576 --> 00:52:56,295
+Actually, let me write here.
+
+333
+00:52:57,315 --> 00:52:58,355
+This is...
+
+334
+00:52:58,355 --> 00:53:00,355
+Review.
+
+335
+00:53:01,115 --> 00:53:02,175
+We can write review.
+
+336
+00:53:03,219 --> 00:53:08,300
+We will have no second midterm exam. Okay.
+
+337
+00:53:11,159 --> 00:53:16,880
+So every Tuesday we have the class, the grading your performance will be evaluated.
+
+338
+00:53:17,340 --> 00:53:23,019
+Like this, we will have three quizzes. Each quizzes has 10% rate.
+
+339
+00:53:23,391 --> 00:53:32,391
+ve bir midterm examin, 30% ve final examin, total 100%.
+
+340
+00:53:32,391 --> 00:53:44,391
+So, the textbook of our course is the Introduction to the Theory of Computation, written by Dr. Michael Sipser.
+
+341
+00:53:45,043 --> 00:53:58,723
+And in this course, we have no handouts. It is your responsibility to take notes, but for your benefits, I can share these slides.
+
+342
+00:53:58,723 --> 00:54:00,223
+And
+
+343
+00:54:03,155 --> 00:54:08,256
+In the theory of computation, of course, we will try to answer the following questions.
+
+344
+00:54:09,076 --> 00:54:14,476
+The first question is, what are the mathematical properties of computer hardware and the software?
+
+345
+00:54:15,036 --> 00:54:24,256
+So, we will, in order to compute, we need a computer. Computer has a hardware and the software. Hardware is the...
+
+346
+00:54:25,715 --> 00:54:33,956
+Material part, software is the language part.
+
+347
+00:54:34,316 --> 00:54:39,735
+So you want to give some computations order to the computers.
+
+348
+00:54:40,195 --> 00:54:49,416
+In order to communicate with the computers, actually in order to tell the computer to compute some things, you have to give some software to the computer.
+
+349
+00:54:49,876 --> 00:54:53,715
+Actually, the software is the language.
+
+350
+00:54:53,715 --> 00:54:56,475
+Bu konuda bir paraklılık,
+
+351
+00:54:56,475 --> 00:54:59,475
+bir tekst yazı yazdığı bir şekilde
+
+352
+00:54:59,475 --> 00:55:01,556
+kullanmanın bir şekilde
+
+353
+00:55:01,556 --> 00:55:03,475
+bir şekilde bilgilerin alabilen.
+
+354
+00:55:03,475 --> 00:55:05,715
+Bu konuda yazın alabilen
+
+355
+00:55:05,715 --> 00:55:08,355
+ve bilgilerin alabilen
+
+356
+00:55:08,355 --> 00:55:13,036
+alabilen alabilen alabilen
+
+357
+00:55:13,036 --> 00:55:15,475
+ve bilgilerin alabilen alabilen
+
+358
+00:55:15,475 --> 00:55:17,556
+alabilen alabilen alabilen
+
+359
+00:55:17,556 --> 00:55:19,395
+ve bilgi alabilen alabilen
+
+360
+00:55:19,635 --> 00:55:47,615
+Therefore, what is the computation and what is the algorithm? Can we give a rigorous mathematical definition of these notions? Actually, in our algorithms, we need to have a computation. Computation is a fundamental requirement in our algorithms. If you are not able to compute, your algorithm is useless. Your algorithm should be computable. In other means, you need a computer to compute.
+
+361
+00:55:47,635 --> 00:55:56,635
+Dekatim, algoritmın geliştirilmesi, algoritmın geliştirilmesi, bu konuları da bir şekilde kullanılabilir.
+
+362
+00:55:56,635 --> 00:56:03,635
+Bu konuları da bir şekilde kullanılabilir, ama bu konuları da bir şekilde kullanılabilir,
+
+363
+00:56:03,635 --> 00:56:08,492
+hesaplama makinesi, kullanılabilir bir şekilde kullanılabilir.
+
+364
+00:56:09,364 --> 00:56:30,143
+So, what are the limitations of computers? Can everything be computed? Of course, everything cannot be computed. If we have a computer, the supercomputer, that computes everything in the universe, then there is no limitation. Who has the supercomputer?
+
+365
+00:56:30,835 --> 00:56:48,655
+Allah'a da bir komputer. Allah'a da bir komputer. Allah'a da bir komputer. Allah'a da bir komputer. Allah'a da bir komputer. Allah'a da bir komputer.
+
+366
+00:56:58,835 --> 00:57:01,835
+Bu konuda kullanılmasını kullanıyoruz.
+
+367
+00:57:01,835 --> 00:57:04,835
+Neden? Çünkü resurslar var.
+
+368
+00:57:04,835 --> 00:57:12,835
+Üniversite, üniversite, üniversite, üniversite.
+
+369
+00:57:12,835 --> 00:57:15,835
+Eğer üniversite üniversite,
+
+370
+00:57:22,867 --> 00:57:47,547
+Bounded, because everything in a bounded space must be bounded. Bounded means resources are limited. If the resources are limited, your computation will not be infinite, will not have an infinite power. If your computation is not infinite power, then you cannot compute everything. This is very straightforward logic.
+
+371
+00:57:47,887 --> 00:57:51,887
+Bu, neyebiliyorsunuz?
+
+372
+00:57:51,887 --> 00:57:55,887
+Öncelikle, RAM, random access memory.
+
+373
+00:57:56,224 --> 00:58:24,224
+If your random access memory is very less, you cannot compute many things. For example, sometimes you are trying to open a file, you are trying to run a software, but the response of your computer is very slow, maybe distracting you, making you angry. Why? Because your computer is not able to compute what you want. In this case, your applications could be considered as a non-computable application.
+
+374
+00:58:24,224 --> 00:58:26,224
+Bu konuda bir şeyleri kullanmak için.
+
+375
+00:58:26,224 --> 00:58:29,024
+Bu konuda bir Office'de,
+
+376
+00:58:29,024 --> 00:58:31,224
+konuda bir Office'de kullanmak için
+
+377
+00:58:31,224 --> 00:58:35,224
+oldukça kalculator.
+
+378
+00:58:35,603 --> 00:58:50,163
+But now, the technology increases, and by time, and also the computation resources becomes more available for the hardwares, and then we start to compute.
+
+379
+00:58:50,163 --> 00:58:57,083
+For example, we have mobile phones. Each mobile phone is a computer. You can compute something in your mobile phone.
+
+380
+00:58:57,623 --> 00:59:03,603
+20 years ago, you had no mobile phones. You cannot compute something.
+
+381
+00:59:03,603 --> 00:59:24,603
+But now, mobile phones can be counted as a computer or calculator, so you can compute office inside the mobile phone. So, the computability is related with the resources of the computer. What is the other limited resource in the computer is the central process.
+
+382
+00:59:24,884 --> 00:59:50,443
+Arkadaşlar, is the central process power. If the central process power is very less, again, you are not able to compute. In order to circumvent such limitations, people are using the distributed central process and distributed random access memories to increase the capability, computing capability of the computer. Okay. So,
+
+383
+00:59:51,155 --> 01:00:10,996
+The purpose of this computation theory. At the end of this course, you will be able to develop formal mathematical models of computation that reflect real world computers. In other words, you will be a real computer scientist after the end of this course.
+
+384
+01:00:11,731 --> 01:00:23,831
+Without knowledge of this course, you cannot make any useful deductions on the algorithms, on the problems that you are trying to solve.
+
+385
+01:00:24,532 --> 01:00:37,632
+Okay, okay. What is the complexity theory? The complexity theory, the main question is what makes some problems computational hard and the other problems is easy.
+
+386
+01:00:37,632 --> 01:00:48,072
+If you are able to express your problem with the language that computer understands easily, then
+
+387
+01:00:49,268 --> 01:01:15,148
+You run your software, then if your software is, running your software, if you are able to get the result, then your problem is compatible. But some problems is really hard. Yani, in other words, it is very difficult to solve. In such cases, the problem is, we say, is
+
+388
+01:01:16,403 --> 01:01:21,483
+çok
+
+389
+01:01:21,483 --> 01:01:44,523
+bir
+
+390
+01:01:43,360 --> 01:02:09,720
+Are equal. Can you find two groups? The number of squares, sorry, the squares, some of the squares of the numbers in each group are the same. Can you find? For example, I will give you the 100 numbers. I will ask you divide these 100 numbers into two parts.
+
+391
+01:02:10,643 --> 01:02:38,103
+But randomly, you will divide by two parts. Of course, the numbers should not be required to be in order. You have the two parts, two sets. And I am asking you, you should divide the numbers into two sets such that the square of the sum of the square of the numbers in each set is the same.
+
+392
+01:02:38,612 --> 01:03:01,612
+Is it possible? Can you solve this problem? This problem is unsolvable. It is not easy to solve this problem with your computer, with your supercomputer, maybe a little bit easy, maybe what about the 1 million numbers to separate the 1 million numbers in two groups, then the problem becomes again.
+
+393
+01:03:02,016 --> 01:03:29,708
+Uncomputable, maybe in the future, actually not future, it's very close. When the quantum computations become, becomes available, then you could able to solve this problem and then this problem becomes computationally easy problem. But for the computers using ASIC, using the binary
+
+394
+01:03:29,715 --> 01:03:36,876
+Bu algebra teknoloji, it is not easy to solve the problem I just mentioned now.
+
+395
+01:03:37,331 --> 01:04:04,851
+So, for example, the 1 million, there are many examples, easy problems, like 1 million numbers sorting in sequence. Yes, it is computable and it is not difficult. Searching a name in a telephone directory is very easy. Computing the fastest way to derive from SNR to Beşiktaş. This is also very simple problems. So simple problem is the problem can be solved by computation.
+
+396
+01:04:05,875 --> 01:04:05,935
+bir
+
+397
+01:04:05,331 --> 01:04:07,331
+İngilizce birçok.
+
+398
+01:04:07,331 --> 01:04:13,331
+Tamamen birçok.
+
+399
+01:04:13,331 --> 01:04:32,991
+Bu birçok.
+
+400
+01:04:32,992 --> 01:04:39,572
+Bu bir problem değil, şimdi bir yıldır daha çok zor.
+
+401
+01:04:39,992 --> 01:04:43,572
+Faktör 300 digit integer into the prime numbers.
+
+402
+01:04:44,072 --> 01:04:45,632
+Currently, it is not easy.
+
+403
+01:04:46,352 --> 01:04:48,672
+Computing layout for chips in VLSI.
+
+404
+01:04:48,752 --> 01:04:49,692
+This is another problem.
+
+405
+01:04:49,692 --> 01:04:53,992
+The central questions we came across in the complexity theory
+
+406
+01:04:53,992 --> 01:04:59,311
+is how to classify the problems according to the degree of difficulty.
+
+407
+01:04:59,771 --> 01:05:00,992
+What is the degree of difficulty?
+
+408
+01:05:00,992 --> 01:05:13,052
+Dikkatli, how can we give a rigorous approach to define the degrees of difficulty and how can we give a rigorous proof that problems that seem to be hard or really hard?
+
+409
+01:05:16,112 --> 01:05:16,732
+Okay.
+
+410
+01:05:17,184 --> 01:05:37,844
+So, computability theory, actually it starts from 1930s. Scientists discovered that some fundamental problems cannot be solved by computers. In the computers, of course, were invented in 1940s. This is the computers using the transistor technology.
+
+411
+01:05:38,387 --> 01:06:03,387
+There are computers using mechanical technology, mechanical technology. There are computers like Abacus, but the computers here we mentioned is the computers using the transistor technology. You know what transistor is. For example, is an arbitrary mathematical statement of true or false to attack such problem like the...
+
+412
+01:06:06,164 --> 01:06:11,804
+problem, we need a formal definition of the notions.
+
+413
+01:06:12,584 --> 01:06:15,344
+First, you need to know what the computer is.
+
+414
+01:06:15,804 --> 01:06:20,504
+Also, you need to know what algorithm is and you need to know what computation is.
+
+415
+01:06:22,204 --> 01:06:33,084
+Your computer produce computational power and the computational power is used within your algorithm and the algorithm is run inside your computer.
+
+416
+01:06:34,387 --> 01:06:35,007
+Ok.
+
+417
+01:06:36,980 --> 01:06:45,659
+So, the central question in our computability theory is to classify the problems as solvable or unsolvable.
+
+418
+01:06:46,400 --> 01:06:50,340
+And the automat theory, we will deal with the automat theory in this course.
+
+419
+01:06:50,940 --> 01:07:02,639
+And automat theory deals with the definition and properties of, deal, definition as the properties of many computational model types.
+
+420
+01:07:02,639 --> 01:07:04,960
+The first one is the finite automat.
+
+421
+01:07:04,980 --> 01:07:22,259
+There are two types of finite automat. One is the deterministic finite automat. The other one is the non-deterministic finite automat. So these finite automat has the states and it uses the states to process the input.
+
+422
+01:07:22,608 --> 01:07:29,608
+ve
+
+423
+01:07:29,608 --> 01:07:51,608
+bir
+
+424
+01:07:50,608 --> 01:07:55,387
+Finite Automat, to compute some things, the Finite Automat has a language.
+
+425
+01:07:55,728 --> 01:08:00,148
+This language you use to communicate, to talk with the Finite Automat.
+
+426
+01:08:00,268 --> 01:08:04,332
+Actually, you use the language of Finite Automat to...
+
+427
+01:08:05,364 --> 01:08:33,363
+Ask Finote Automat to compute what you need. Of course, the Finote Automat is very trivial, DAOZ is not able to compute everything. It can compute something very simple. For example, it can be used in the text processing. For example, you are searching a certain specific word inside the text, or you are searching some things, some phrases inside the text.
+
+428
+01:08:46,484 --> 01:08:51,164
+So, the compilers should be able to recognize each word.
+
+429
+01:08:51,404 --> 01:08:58,684
+For example, you speak the Turkish and you recognize the words in Turkish.
+
+430
+01:08:59,004 --> 01:09:01,264
+Can you recognize the words in Korean?
+
+431
+01:09:01,924 --> 01:09:03,984
+Can you recognize the words in Japanese?
+
+432
+01:09:04,724 --> 01:09:07,404
+Or can you recognize the words in Spanish?
+
+433
+01:09:07,904 --> 01:09:10,404
+If you know these languages, you can also...
+
+434
+01:09:12,612 --> 01:09:15,612
+Ama siz de bilgilerinize iyi bilgi verilir.
+
+435
+01:09:16,384 --> 01:09:44,384
+Okay, so computer is similar. Computer is recognized a certain specific language. If you want to talk with the computers, you have to write your computational orders. You want to write your computational orders in a software. I mean, in a language that the computer can understand. Okay. In your language, for example, you are using
+
+436
+01:09:44,384 --> 01:09:46,384
+Java program language.
+
+437
+01:09:46,384 --> 01:09:48,384
+In the Java program language,
+
+438
+01:09:48,384 --> 01:09:50,384
+there are some words like
+
+439
+01:09:50,384 --> 01:09:52,384
+imports or
+
+440
+01:09:52,384 --> 01:09:54,384
+if
+
+441
+01:09:54,384 --> 01:09:56,384
+for while class
+
+442
+01:09:59,384 --> 01:10:00,384
+something like that.
+
+443
+01:10:00,384 --> 01:10:02,384
+There are some words.
+
+444
+01:10:02,384 --> 01:10:04,384
+These words are
+
+445
+01:10:04,384 --> 01:10:06,384
+recognized by the compiler.
+
+446
+01:10:06,384 --> 01:10:08,384
+Compiler
+
+447
+01:10:08,384 --> 01:10:10,384
+compiles what you write
+
+448
+01:10:11,007 --> 01:10:15,608
+ve dekstil vermesin değil.
+
+449
+01:10:39,007 --> 01:10:40,007
+ve finot automates.
+
+450
+01:10:40,007 --> 01:10:41,407
+Ve finot automates
+
+451
+01:10:41,407 --> 01:10:43,507
+are used in the hardware design.
+
+452
+01:10:43,507 --> 01:10:45,407
+Especially these days, for example,
+
+453
+01:10:45,407 --> 01:10:48,907
+we are using the central process units.
+
+454
+01:10:48,907 --> 01:10:50,407
+The central process units
+
+455
+01:10:50,407 --> 01:10:52,907
+are actually a set of,
+
+456
+01:10:52,907 --> 01:10:55,907
+can be considered as a set of finite automates.
+
+457
+01:10:55,907 --> 01:10:57,307
+And the context-free grammars
+
+458
+01:10:57,307 --> 01:10:58,907
+is a little bit more powerful
+
+459
+01:10:58,907 --> 01:11:00,407
+than the finite automates.
+
+460
+01:11:00,407 --> 01:11:02,608
+In the context-free grammars,
+
+461
+01:11:02,608 --> 01:11:04,907
+actually this is the machines.
+
+462
+01:11:04,907 --> 01:11:06,907
+Its language is context grammar.
+
+463
+01:11:07,007 --> 01:11:35,007
+has a grammar now. And also it has the states, also it has the memory. Find out otomat doesn't have the memory, but context-free grammar machines, context-free machines have memory in addition to those states. And there are Turing machines. These are the form of the simple abstract model of real computer. You are using now, you are using the Turing machines and listen.
+
+464
+01:11:37,007 --> 01:11:42,007
+Tamamen, ve bu konuda kullanmak için bir
+
+465
+01:11:42,007 --> 01:11:43,007
+bir soru hakkında bir soru hakkında
+
+466
+01:11:43,007 --> 01:11:45,007
+nefesini anlatacağım.
+
+467
+01:11:45,007 --> 01:11:47,007
+Bu konuda bir soru hakkında
+
+468
+01:11:47,007 --> 01:11:49,007
+bir soru hakkında.
+
+469
+01:11:49,007 --> 01:11:50,591
+Bu konuda, bu konuda,
+
+470
+01:11:50,591 --> 01:11:54,591
+Bu sorunlar, bu sorunlarla ilgili bir sorunlar var.
+
+471
+01:11:54,591 --> 01:11:59,591
+Bu sorunlar, nasıl bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili?
+
+472
+01:12:16,340 --> 01:12:36,880
+So, in order to start the computation theory, we need to have the set theory. I will stop here. Let us have a 10-minute break. I know it, I forgot giving time break. So let us have 10-minute break. After 10 minutes, we will continue. Okay? If you have any questions?
+
+473
+01:12:39,412 --> 01:12:45,311
+Tamam, siz de yok etsizle. Bir sonraki 10 minuten.
+
+474
+01:21:05,268 --> 01:21:15,448
+Merhaba arkadaşlar. Kaldığımız yerden devam edelim. Sesim çok mu yüksek geliyor sizlere? Çok mu yüksek duyuyorsunuz? Sesimden rahatsız olan var mı?
+
+475
+01:21:16,028 --> 01:21:17,347
+Yok hocam, ses iyi önce.
+
+476
+01:21:19,347 --> 01:21:28,407
+Ben konuşurken biraz yüksek sesli konuşuyorum. Sizler daha iyi duyuyorsunuz diye. Ama rahatsız olduysanız biraz sesimin tonunu azaltabilirim.
+
+477
+01:21:32,500 --> 01:21:51,420
+Azaltayım mı? Tamam. Madem öyle, aynı oldu. Biraz azaltayım isterseniz. Şimdi set teori konusuna değineceğiz. Set teorisinin Türkçesi ne? Kümeler teorisi. Kümeler teorisi. Okey.
+
+478
+01:21:51,887 --> 01:21:57,208
+The set theory, a set is a collection of well-defined objects.
+
+479
+01:21:57,887 --> 01:22:03,528
+So the set is itself is a collection of well-defined objects.
+
+480
+01:22:04,007 --> 01:22:07,307
+So there are many sets available in the mathematics.
+
+481
+01:22:07,908 --> 01:22:10,608
+And most of them, you know very well.
+
+482
+01:22:10,948 --> 01:22:12,988
+One of them is natural numbers.
+
+483
+01:22:13,448 --> 01:22:16,167
+Natural numbers are the positive integer numbers.
+
+484
+01:22:16,408 --> 01:22:19,548
+So as you see, these are the one, two, three, four, five.
+
+485
+01:22:19,887 --> 01:22:24,079
+Yani bu n'a
+
+486
+01:22:24,079 --> 01:22:50,200
+This is the nature, this is the set of natural numbers. And the second one is the integer numbers. The integer numbers has negative numbers, negative integer number, negative numbers and the positive numbers, including zero. So this set is called the integers and represented and denoted by capital letter Z.
+
+487
+01:22:50,771 --> 01:22:55,391
+And there is also the rational numbers, rationele, okay?
+
+488
+01:22:55,572 --> 01:23:03,431
+The rational numbers, the rational number is a number that is expressed as the division of two integers.
+
+489
+01:23:04,180 --> 01:23:25,100
+Okay, nation numbers is a number that can be expressed as the ratio of two integers as here this is the definition. It means here you see the semicolon. The semicolons means such that Q is a set of
+
+490
+01:23:25,492 --> 01:23:35,432
+M over N such that M is an integer, N is an integer, and N cannot be zero.
+
+491
+01:23:35,852 --> 01:23:42,711
+The set of real numbers, we have also the set of real numbers and denoted by R.
+
+492
+01:23:43,051 --> 01:23:50,512
+For example, 1.2 is a real number. 0.00001 is a real number.
+
+493
+01:23:51,155 --> 01:24:11,996
+Piy is a real number. E is a real number. Okay? We have also the complex number. It is denoted by C, but I didn't write here. And if let us say let A and B, let A and B
+
+494
+01:24:12,435 --> 01:24:26,735
+B as set, okay, such that A is a subset of B, then we can show that we can read, we can write this expression, A is a subset of B, can be written as
+
+495
+01:24:28,692 --> 01:24:52,512
+A, this is the subset symbol B. If every element of A is also the element of B. And we have also the function B. Here, this is called the power. The first letter of power. This is the power set. The power set of the set B.
+
+496
+01:24:52,979 --> 01:24:57,719
+The power set of the set P is all the subsets of P.
+
+497
+01:24:57,719 --> 01:24:58,840
+For example,
+
+498
+01:25:00,051 --> 01:25:27,572
+The power set is the all subsets. And what is the number of subsets? You know that the size of the, for example, what is the size of the, this is the two power size of the set B plus one is the size of the power set. Power set also includes the empty set. Here you see the phi, this phi denotes the empty sets.
+
+499
+01:25:28,051 --> 01:25:43,171
+MTSET is an element of the power set. And this power set is all possible sets. Okay, constructed from the elements of the set from from elements offset B.
+
+500
+01:25:43,956 --> 01:25:47,536
+And you know the set theory very well.
+
+501
+01:25:48,496 --> 01:25:54,675
+When you start the primary cycle, you first learn what set is, what kume is.
+
+502
+01:25:54,675 --> 01:26:00,076
+Actually, you learn how to compute using sets in the primary cycles.
+
+503
+01:26:00,675 --> 01:26:11,956
+Maybe you are around 20 years old, so you know these topics very well, like 15 years or 20 years.
+
+504
+01:26:11,956 --> 01:26:13,675
+12 years experience you have.
+
+505
+01:26:14,476 --> 01:26:23,835
+So, the set theory, if you have two sets, let's say A and B, and we have some operations defined on these sets.
+
+506
+01:26:23,835 --> 01:26:26,156
+For example, this is the union operation.
+
+507
+01:26:26,876 --> 01:26:30,675
+Union operation means you combine set A and the set B.
+
+508
+01:26:31,195 --> 01:26:32,876
+So, this is a new set.
+
+509
+01:26:33,255 --> 01:26:35,835
+These new sets has the elements of...
+
+510
+01:26:36,819 --> 01:27:01,800
+A and B, okay? And there are also intersections. So this is the set. The element of this total set belongs, has the elements, the elements of this set, this intersection is the element of A and B at the same time, okay? Together.
+
+511
+01:27:02,547 --> 01:27:30,547
+And we have also their difference, you know it very well. And also we have the Cartesian product of the sets. So A and B, these are two sets. You create the doubles from these two sets. This is called, this part is called double. Okay? Double means some element that consists two parts. The first part is coming from the element A, sorry, set A. The second part is coming from the set A.
+
+512
+01:27:30,547 --> 01:27:32,487
+So these are the doubles.
+
+513
+01:27:32,867 --> 01:27:34,467
+What is the size of the Cartesian?
+
+514
+01:27:34,847 --> 01:27:41,148
+The size of the Cartesian is equal to the product of the size of A, set A, and the size of set B.
+
+515
+01:27:41,768 --> 01:27:45,228
+And we have another operation is the complement of A.
+
+516
+01:27:45,228 --> 01:27:47,047
+It is defined like this.
+
+517
+01:27:47,587 --> 01:27:57,007
+The complement of A, this set, has the elements that each of which is not the element of set A.
+
+518
+01:27:58,228 --> 01:28:20,927
+And you know this very well. Set theory also creates a binary relation. For example, you have two sets. By using the Cartesian product, you can create the relations. Actually, you have set, you have another set. The relation between these two sets is a subset of their Cartesian product.
+
+519
+01:28:21,492 --> 01:28:40,532
+In addition, let us define a F function. We define the functions in mathematics like this. What is the meaning of function? The function means mapping. Mapping means function. Okay? You define the function means you have the set.
+
+520
+01:28:40,916 --> 01:28:51,175
+From this set, you go to the other elements of the other set. So this is the definition of function.
+
+521
+01:28:52,884 --> 01:29:19,163
+And these are very simple definitions. I will just move a little bit fast. For the binary relations, let's say this is the relation is a subset of a square Cartesian product is equivalence of relation if it satisfies the conditions. First, R must be reflexive.
+
+522
+01:29:19,488 --> 01:29:21,488
+Symmetric, transitive.
+
+523
+01:29:21,488 --> 01:29:30,488
+So if your relation doesn't support these, then you can say that, okay, this relation fails.
+
+524
+01:29:30,488 --> 01:29:33,488
+Anyway, so Boolean logic.
+
+525
+01:29:33,488 --> 01:29:36,488
+The Boolean logic, you know very well.
+
+526
+01:29:36,488 --> 01:29:43,488
+And Boolean logic deals with the two values, zero and one.
+
+527
+01:29:43,988 --> 01:29:47,807
+0 means the absence, 1 means the existence.
+
+528
+01:29:48,827 --> 01:29:55,887
+So, also 0 once represents true, 0 represents false, respectively.
+
+529
+01:29:56,627 --> 01:30:00,000
+The basic boolean operations, negation, not operation.
+
+530
+01:30:00,000 --> 01:30:17,899
+operation, conjunction, end operation, disjunction or operation, exclusive or XOR operation, and the equivalence or implies, okay? This is, sorry, equivalence or implication. These are the symbols used for implication.
+
+531
+01:30:18,644 --> 01:30:26,043
+This is equivalence, this is XOR, this is OR, this is AND, this is NOT.
+
+532
+01:30:26,844 --> 01:30:34,904
+Generally, in mathematics, we use disjunction, or sometimes we use conjunction instead of AND AND OR words.
+
+533
+01:30:35,864 --> 01:30:44,083
+And we have the true table, and this table is very simple and easy, and you know the meaning of this table.
+
+534
+01:30:44,496 --> 01:30:52,895
+And or XOR equivalence and abdication, these are the definitions and also not operation here also its definition.
+
+535
+01:30:53,516 --> 01:31:06,895
+The not operation, the not of zero is one, the not of one is zero, and of two zero is zero, and of two one is one.
+
+536
+01:31:12,496 --> 01:31:15,496
+0, then the result is 0.
+
+537
+01:31:15,496 --> 01:31:19,496
+In all operations, if one of the elements is 1, then result is 1.
+
+538
+01:31:19,496 --> 01:31:27,496
+In XOR, if the input has different...
+
+539
+01:31:27,859 --> 01:31:44,299
+LMS, simbolist inputs, input, input, if inputs are different, the output is one. If inputs are same, the output is zero equivalence, you know, this is very well equivalence. Okay. And,
+
+540
+01:31:46,292 --> 01:32:10,292
+For example, 0 equals equivalent to 0. Yes, it is true. 0 equivalent to 1, it is false. Something like this. Implication. Implication is also written like this. 0 implies 0. 0 implies 1. Or 0, 1 implies 0. And 1 implies 1. This is...
+
+541
+01:32:13,444 --> 01:32:16,444
+Ve bu teori de komputation kullanıyoruz.
+
+542
+01:32:16,444 --> 01:32:19,444
+Ve matematiklerimizin de
+
+543
+01:32:19,444 --> 01:32:21,444
+ve teoremsin de
+
+544
+01:32:21,444 --> 01:32:21,872
+teoremsin
+
+545
+01:32:21,872 --> 01:32:27,432
+Theoremsin bir şeyleriyle
+
+546
+01:32:27,432 --> 01:32:29,492
+ve bu bir şeyleriyle
+
+547
+01:32:29,492 --> 01:32:31,452
+konuşmak için bir şey.
+
+548
+01:32:31,452 --> 01:32:33,572
+Bir şeyleriyle
+
+549
+01:32:33,572 --> 01:32:35,532
+bir şeyleriyle
+
+550
+01:32:35,532 --> 01:32:37,532
+ve bu bir şeyleriyle
+
+551
+01:32:37,532 --> 01:32:39,532
+bir şeyleriyle
+
+552
+01:32:39,532 --> 01:32:42,872
+şimdi
+
+553
+01:32:42,872 --> 01:32:45,532
+ve bir şeyleriyle
+
+554
+01:32:45,532 --> 01:32:48,452
+bir şeyleriyle
+
+555
+01:32:49,872 --> 01:33:09,512
+Theorem here, there is a word theory here. Okay. Who can answer my questions? Theorem nedir, theory nedir? Theoriy le theorem arasneki fark nedir. Can you tell me the difference between theory and the theorem works? Yes. Please attend the class. Please. Yes.
+
+556
+01:33:14,515 --> 01:33:16,096
+Hügel, explain.
+
+557
+01:33:24,083 --> 01:33:47,863
+Arkadaşlar, bekliyorum. Niçin konuşmuyorsunuz? Niçin? Bak, derse katılımınız az olursa, vizeler ve finaller zorlaşacak. Ona göre artık bu dönem bu şekilde oynayacağım bu derste. Yani kuralları bu şekilde. Ne kadar çok derse katılım olursa o kadar kolay sorular gelecek. Onu söyleyeyim. Bak, bu sizi korkutmak için değil.
+
+558
+01:33:48,564 --> 01:33:55,504
+Derse katılmıyorsanız, demek ki biliyorsunuz demektir. O zaman teoriyle teorem arasındaki farkı bildiğinizi düşünerek devam ediyorum.
+
+559
+01:34:00,724 --> 01:34:28,704
+Assumptions, we have also the axioms. Axioms are the assumptions underlying the mathematical structure. Actually, axioms are defined as true by observation. Okay? Hypothesis are the hypothesis of the theorem. First, you have the hypothesis. When you prove your hypothesis, your hypothesis becomes the theorem. And also, we have the lemmas. Lemmas are the theorem proved by the other scientists or lemmas somehow simple.
+
+560
+01:34:28,724 --> 01:34:33,064
+Theorems whose proofs are already available.
+
+561
+01:34:33,624 --> 01:34:35,264
+And we have also the corollaries.
+
+562
+01:34:35,684 --> 01:34:39,423
+Corollaries are the results obtained from the theorems.
+
+563
+01:34:39,844 --> 01:34:47,624
+So there is no specific way to coming up with a proof, but there are some very traditional strategies,
+
+564
+01:34:48,463 --> 01:34:54,404
+each one of which can help you to prove the theorem given to you.
+
+565
+01:34:54,404 --> 01:34:55,524
+That is given to you.
+
+566
+01:34:55,524 --> 01:34:56,284
+Okay.
+
+567
+01:34:56,724 --> 01:35:01,963
+There are many proof techniques, but there are tips for the proof techniques.
+
+568
+01:35:02,444 --> 01:35:06,644
+First, read and completely understand the statement of the theorem to be proved.
+
+569
+01:35:06,644 --> 01:35:09,544
+First, you have to understand the theorem very well.
+
+570
+01:35:09,923 --> 01:35:15,564
+In this lecture, in the exams, in the quizzes, I may ask the theorem to prove.
+
+571
+01:35:16,756 --> 01:35:26,576
+Most of the theorem is the hardest part. Most of, most often this is the hardest part. Yani, in other words, to understand the theorem is the hardest part.
+
+572
+01:35:27,076 --> 01:35:39,895
+First, if you are given a theorem, you have to understand the theorem very well. Actually, I strongly suggest you to rewrite the theorem with your own words.
+
+573
+01:35:40,467 --> 01:35:43,767
+Sometimes theorem contains theorem inside them.
+
+574
+01:35:43,967 --> 01:35:51,807
+For example, the property A, if and only if property B requires showing to two statements.
+
+575
+01:35:52,027 --> 01:35:56,227
+Like if property A is true, then the property B is true.
+
+576
+01:35:56,667 --> 01:35:57,647
+This is the implication.
+
+577
+01:35:58,387 --> 01:36:04,288
+Or if property B is true, then the property A is true. This is another implication.
+
+578
+01:36:04,948 --> 01:36:12,328
+In another examples in the theorem is set A equals set B. To prove this, just we need to show that.
+
+579
+01:36:12,807 --> 01:36:23,008
+For example, you have two sets, A and B. And how can you prove that set A and the set B are equal?
+
+580
+01:36:23,376 --> 01:36:36,716
+So, you can, you just need to show that set A is subset of B, and you also have to show that set B is a subset of A.
+
+581
+01:36:36,716 --> 01:36:44,756
+So, the intersection of these two implications is set A equals set B.
+
+582
+01:36:45,076 --> 01:36:49,615
+So, in order to prove this theorem, you need to prove
+
+583
+01:36:50,131 --> 01:36:51,851
+Bu bir şey ve bu bir şey.
+
+584
+01:36:51,851 --> 01:36:55,631
+Bu bir şey çok kullanılıyor.
+
+585
+01:36:55,631 --> 01:36:56,951
+Bu bir de nefesler,
+
+586
+01:36:56,951 --> 01:36:58,572
+ve bu bir şeyde de
+
+587
+01:36:58,572 --> 01:36:59,611
+Pumping Lema'ye kullanılıyor.
+
+588
+01:36:59,611 --> 01:37:02,131
+Bu bir şeyde kullanılıyor.
+
+589
+01:37:02,644 --> 01:37:26,764
+Anyway, so there are techniques, let's continue. Try to work out a few simple cases. For example, in order to prove, try to work out, you should choose some values, simple cases, to understand the theorem very well. This is a kind of correcting the theorem, okay, to the simple cases.
+
+590
+01:37:27,347 --> 01:37:33,347
+ve sonra bu konuda başlayabilirsiniz.
+
+591
+01:37:33,347 --> 01:37:39,347
+Ve aslında kendi konuda yazabilirsiniz,
+
+592
+01:37:39,347 --> 01:37:42,347
+bu konuda çok önemli.
+
+593
+01:37:42,347 --> 01:37:48,347
+Bu konuda çalışma yardımcı olacak.
+
+594
+01:37:48,347 --> 01:37:53,347
+Ve bu konuda yazılmasına kadar yöntemlerinde
+
+595
+01:37:55,347 --> 01:37:59,347
+Bu teorema bu teorema.
+
+596
+01:37:59,347 --> 01:38:03,347
+Yani, bu teorema çok zor.
+
+597
+01:38:03,347 --> 01:38:11,347
+Bu teorema bu teorema.
+
+598
+01:38:11,347 --> 01:38:13,347
+Bu teorema, bu teorema,
+
+599
+01:38:13,347 --> 01:38:17,347
+ve bu teorema,
+
+600
+01:38:17,347 --> 01:38:21,228
+ve bu teorema.
+
+601
+01:38:21,555 --> 01:38:48,635
+So, there are five techniques, direct proofs or constructive proof or proof by construction. This is called the direct proof. There is another proof technique, non-constructive proof. The other proof technique is proofs by contradiction. The other proof technique is proofs by induction. Induction means induksyon, okay? Tüme varım, okay? In other words, tüme varım.
+
+602
+01:38:49,076 --> 01:38:50,616
+Tumorvun proof techniques.
+
+603
+01:38:51,176 --> 01:38:53,796
+And the last one is the PIGIN principle.
+
+604
+01:38:54,776 --> 01:38:58,916
+Okay, PIGIN, Givergen, Givergen principle.
+
+605
+01:38:59,656 --> 01:39:03,876
+Okay, this PIGIN principle, I will explain what PIGIN principle is.
+
+606
+01:39:04,276 --> 01:39:08,816
+PIGIN principle is the mostly used proof techniques.
+
+607
+01:39:09,596 --> 01:39:15,476
+Sorry, PIGIN principle is a proof technique that is mostly used in computer science.
+
+608
+01:39:16,756 --> 01:39:26,136
+Anyway, proof techniques, direct proofs. In this proof techniques, the name suggests that you directly prove the techniques, prove the theory.
+
+609
+01:39:26,579 --> 01:39:48,300
+For example, this is a theorem. If n is an odd positive integer, n is an odd positive integer, then n squared is also odd as well. So this is a very simple theorem. We will use the direct proofs. Odd means you can define the numbers n.
+
+610
+01:39:48,671 --> 01:39:59,971
+Like two times key plus one key is any integer number and any positive integer number. So N is you guarantee that N is always all because
+
+611
+01:40:00,000 --> 01:40:27,739
+Because this term, 2 times key, is always even. So even plus 1 is always odd. So now you guarantee that n is always odd. And then you do square of n, okay, n square. And you replace this expression here and you get 2 key plus 1 square. And you open this using the binomial expansion and you have this expression.
+
+612
+01:40:28,000 --> 01:40:33,779
+And then when you organize, this is the two times some integer plus one.
+
+613
+01:40:34,300 --> 01:40:35,439
+Two times some integer.
+
+614
+01:40:35,439 --> 01:40:37,939
+This part is always even.
+
+615
+01:40:38,279 --> 01:40:40,899
+Even plus one is always odd.
+
+616
+01:40:41,279 --> 01:40:44,000
+Therefore, we conclude that.
+
+617
+01:40:44,351 --> 01:40:48,751
+If n is odd, then n square is certainly odd.
+
+618
+01:40:48,952 --> 01:40:50,851
+And then we prove the theorem.
+
+619
+01:40:51,351 --> 01:40:57,771
+And this technique is called, the technique I use it here is called direct proof technique.
+
+620
+01:40:58,420 --> 01:41:18,420
+Another proof technique is the constructive proof. Many theorem states that particular type of objects exists. In other words, object type of, particular type of object is the main key in this proof technique. One way to prove is to...
+
+621
+01:41:20,243 --> 01:41:44,963
+Getaway is to construct one such object. This technique is called proof by construction. For example, this is the theorem. There exists a rational, rational number P, which can be expressed as
+
+622
+01:41:46,323 --> 01:41:52,323
+2R'le, Q ve R'le
+
+623
+01:41:52,564 --> 01:42:18,224
+both irrational. So this is the rational numbers. These rational numbers can be represented as the power of two irrational numbers. Okay. So what we need to have, we need to find P is equal to two power r. So we need to find the PQR satisfying the above condition. If we find at least one
+
+624
+01:42:19,055 --> 01:42:23,655
+If you want example, then actually we proof this because there is no other.
+
+625
+01:42:24,835 --> 01:42:31,675
+There exists. This is the general term, as you see, if you find at least one example, then this theorem is true.
+
+626
+01:42:31,675 --> 01:42:35,076
+So, for example, let us choose this example.
+
+627
+01:42:36,155 --> 01:42:42,595
+I hear choose Q square root 2 power square root 2.
+
+628
+01:42:43,252 --> 01:42:53,372
+Sqare 2 is itself irrational numbers. Irrational number power irrational number is irrational number, of course, and square 2 is another irrational numbers.
+
+629
+01:42:53,872 --> 01:43:04,972
+Okay, when we, this is very good chosen example. Actually, who choose these numbers? These numbers is chosen by the theorem proof.
+
+630
+01:43:11,252 --> 01:43:16,432
+Then you can choose numbers intelligently, elegantly like this.
+
+631
+01:43:16,432 --> 01:43:32,392
+If you have no good background on the racial numbers, irrational numbers, integer numbers, real numbers, then you cannot choose certain specific, easy, understandable and deductible numbers.
+
+632
+01:43:33,412 --> 01:43:37,572
+Anyway, so, oops, what happened?
+
+633
+01:43:38,836 --> 01:44:06,836
+Okay, so this is very simple. So this is equal to square root two, two. So this is equal to two. The result is two. So the result is a rational number. Two is two over one. So it is a rational number. So we prove the theorem. Very simple. And this is called the constructive proof. What about the non-constructive proof? In the non-constructive proof, we show that the certain object x
+
+634
+01:44:06,836 --> 01:44:34,356
+without actually creating it. Actually, we do not need to creating it. Here is an example of such proof. Let's say that exist irrational numbers X and Y such that their multiplication, the multiplication of two rational number is rational. Actually, here we have that exists. Exists is this is the general. If you find one example, I prove the theorem. Okay.
+
+635
+01:44:34,931 --> 01:44:41,931
+Eğer bunu böyle bir şey söyleyemezsiniz, bak,
+
+636
+01:44:41,931 --> 01:44:46,931
+orasional numar, orasional numar, orasional numar, orasional numar, orasional numar.
+
+637
+01:44:47,152 --> 01:45:12,011
+This is not, this is very specific theorem. So this is of course false. You can prove it. But this is a very general theorem. Why? Because we say they exist. If I find one example for this theorem, I prove the theorem. Okay, there are two possible cases. Let's say square root. Square root is assumed that it is rational.
+
+638
+01:45:12,948 --> 01:45:40,908
+Can you say it is irrational number? Let's say it is rational. Q, the capital letter Q denotes rational numbers. Okay? In this case, we have X and Y, let's say, square root 2. And the theorem below, let's say, we will try to prove that here, I think I wrote the wrong here. This is irrational numbers mean
+
+639
+01:45:40,948 --> 01:45:43,268
+not Q.
+
+640
+01:45:46,208 --> 01:45:46,988
+Yes.
+
+641
+01:45:47,548 --> 01:45:50,588
+So X and Y must be rational numbers.
+
+642
+01:45:50,768 --> 01:45:50,948
+Okay.
+
+643
+01:45:51,748 --> 01:45:53,347
+Irrational numbers representation.
+
+644
+01:45:53,347 --> 01:45:54,328
+Let's see.
+
+645
+01:45:59,347 --> 01:46:01,347
+Evet.
+
+646
+01:46:05,300 --> 01:46:15,300
+Evet, racional numbers, racional numbers, irracional numbers.
+
+647
+01:46:19,060 --> 01:46:20,900
+Actually, we don't have the set here.
+
+648
+01:46:20,900 --> 01:46:21,220
+OK.
+
+649
+01:46:22,580 --> 01:46:28,500
+OK, we have to find out, you know, should we please take care of it.
+
+650
+01:46:29,300 --> 01:46:45,139
+Anyway, so let us show that, okay, in the case two, square root two, power square root two. So x power y, square root two is a rational number and
+
+651
+01:46:47,060 --> 01:46:52,080
+Y is also the square two, so their power means becomes two.
+
+652
+01:46:53,080 --> 01:46:55,320
+The claim in the theorem follows.
+
+653
+01:46:55,680 --> 01:47:04,840
+The proof indeed proves the theorem, but it does not give an example of pair of irrational numbers, x and y, such that x power y is rational.
+
+654
+01:47:05,420 --> 01:47:05,600
+Okay?
+
+655
+01:47:05,940 --> 01:47:10,500
+So after this, we have another techniques, proof by contradiction.
+
+656
+01:47:10,500 --> 01:47:14,560
+The proof by contradiction is grounded on the fact that
+
+657
+01:47:14,836 --> 01:47:28,096
+The proposition must be either true or false, but cannot be, yani, in other words, you have the proposition, your proposition cannot be true or false at the same time.
+
+658
+01:47:28,096 --> 01:47:40,096
+Your proposition can be true or false. It cannot be true and false at the same time, okay? So, assume that the proposition inside the theorem is...
+
+659
+01:47:40,819 --> 01:47:48,555
+Bu, bu
+
+660
+01:47:50,068 --> 01:48:17,408
+Konflicts with your contradicts with your choose and then the theorem is true or theorem is false. The common way in this technique is to prove a theorem by assuming theorem is false. Then we show the assumption leads obvious to false consequences as also called contradiction.
+
+661
+01:48:18,260 --> 01:48:35,600
+Okay, so there are, for example, the square root is a rational number. This is the theorem. How can we assume that? Square root 2 is actually itself is rational, but assume that we don't know square root 2 is rational, okay?
+
+662
+01:48:36,307 --> 01:48:56,667
+Assume that, by contradiction, we assume that square root 2 is rational. If square root 2 is rational, I can write the square root 2 as P over Q. P and Q here are two positive integers, but they don't have a common factor.
+
+663
+01:49:04,307 --> 01:49:17,707
+D, so P' over Q' is equal to P over Q. This is equal to square root 2. So in the rational numbers, there is no common factor between the P and Q.
+
+664
+01:49:18,228 --> 01:49:23,507
+There should not have a common factor. This is one conclusion. We have also...
+
+665
+01:49:24,020 --> 01:49:49,120
+If P over Q is square 2, so P square divided by Q square must be also 2. Or 2 times Q square must be P square. Look at this left side. This left side multiplied by 2. It means that this turn is even. If this turn is even, so the right turn must be even. So P square must be even.
+
+666
+01:49:49,908 --> 01:50:05,587
+With this conclusion, if P squared is even, P must be even. Why? Because even times even is even. Correct? Why?
+
+667
+01:50:19,828 --> 01:50:38,868
+Do you know? Why? Because we are trying to create a contradiction. We are trying to create a contradiction. If we choose the is odd, so it will not be. So we are trying to create a contradiction. So we choose P is even number. Okay? Odd times odd is odd. Correct?
+
+668
+01:50:40,707 --> 01:50:46,528
+Look at this. Odd times odd is odd. Even times even is even. But the same number.
+
+669
+01:50:47,283 --> 01:51:08,243
+So, if P is even, so P squared is even. So, from this point, we have this. P must be written as 2R. Okay. This is the expressions we already obtained. Here, I substitute P is P equals P is equal to 2R here.
+
+670
+01:51:08,884 --> 01:51:20,323
+So, 2R squared, P squared is equal to 2R squared. So, the result is 4R squared. Look at now. 2R squared is equal to Q squared.
+
+671
+01:51:22,623 --> 01:51:32,663
+Okay? So, Q is also even. Why? Because the left side is even. So, something wrong happens here.
+
+672
+01:51:33,171 --> 01:51:55,332
+P and Q does not have a common factor by the definition, but now P and Q are even numbers, so they have the common factor. It is the two. You can divide the Q and the P by two, but in our assumption, we said that there is no common factor. So this is the contradiction.
+
+673
+01:52:00,051 --> 01:52:26,051
+But here we have P and Q have a common factor. This is two since they are even. So this is the contradiction. Therefore, the assumption is wrong or assumption is wrong. So that square root two is irrational. So proofed by induction is another techniques. Yani, this technique is very well known and you know.
+
+674
+01:52:26,739 --> 01:52:29,279
+This proof technique as tumor varum.
+
+675
+01:52:30,920 --> 01:52:36,020
+Let's assume that PN is the mathematical statement, depends on N.
+
+676
+01:52:36,659 --> 01:52:37,960
+We want to prove it.
+
+677
+01:52:38,619 --> 01:52:44,800
+In order to prove it, let us, first you need to prove it for N equals 1.
+
+678
+01:52:45,619 --> 01:52:52,020
+You can prove that this mathematical statement is true for N is equal 1.
+
+679
+01:52:54,996 --> 01:53:20,496
+The next step, you can prove this mathematical statement for n is equal to 2. You can prove it for n equals 3. And then you can write the P n plus, P n plus 1 in terms of P n. You can write. And then you can show that, you can prove that if.
+
+680
+01:53:21,203 --> 01:53:43,923
+Pn is also correct. Pn plus one is correct. So Pn is all correct. So this is the code induction technique. Okay. You will use these techniques also vary so much in the computational theory. For example, this is the proof techniques.
+
+681
+01:53:45,652 --> 01:54:01,812
+Bu, toplamın adı nedir?
+
+682
+01:54:06,931 --> 01:54:07,431
+Evet.
+
+683
+01:54:12,627 --> 01:54:28,787
+[öğrenci], yanlış biliyorsun, ismi Gauss değil. Bu formülün adı El-Taku Yiddin formülü. Gauss'tan tam 250 yıl önce El-Taku Yiddin tarafından önerilmiştir. Tamam mı? Bunu bilin yani, historiniz bizim tarihimiz.
+
+684
+01:54:30,268 --> 01:54:36,387
+Bu formülün bulan kişinin adı El-Taku Yiddin. İnternetten araştırabilirsiniz, okey?
+
+685
+01:54:36,884 --> 01:55:02,963
+This is the L-Takuyitin equation. And they start with the basis of induction. Let's say for n equals 1. 1. So 1 times 1 plus 1 divided by 1 divided by 2. So 1 times 2 divided by 2. So the result is 1. So this equality is correct for n equals 1. What about n equals 2?
+
+686
+01:55:03,380 --> 01:55:30,920
+1 plus 2 is 3. Look at here, 2 times 2 plus 1 divided by 2. So 2 times 3 divided by 2. So this result is 3. So again, it is true. N equals 3. Also, it is true. Now, let's say N, for PN, it must be
+
+687
+01:55:31,216 --> 01:55:39,676
+And this one, for N, it must be also true N times N plus 1 over 2.
+
+688
+01:55:40,096 --> 01:55:43,115
+But what about P N plus 1?
+
+689
+01:55:43,716 --> 01:55:44,956
+N plus 1.
+
+690
+01:55:45,396 --> 01:55:54,016
+So for the N plus 1, you can write this P N plus, okay, this one plus N artemir.
+
+691
+01:55:54,399 --> 01:55:59,499
+n plus 1 is equal to n plus 1 times n plus 2 divided by 2.
+
+692
+01:56:00,039 --> 01:56:05,799
+So the result, you will say that the result is correct, and then you say that the theorem is correct.
+
+693
+01:56:06,676 --> 01:56:28,776
+And another technique is the pigeon principle. The pigeon principle is, we say, we have n plus one objects. You want to place these objects into n boxes. You have n box, you have n plus one objects. You want to put each object in one box, in one box.
+
+694
+01:56:32,051 --> 01:56:51,051
+If you put all the objects inside the box, at least one box should have two or more objects. Otherwise, it is not possible. Do you get me? You can put all objects inside the one box, or you can put...
+
+695
+01:56:51,412 --> 01:57:12,412
+Arkadaşlar, each object inside one box and one extra object left is also put in one box. So at least one box should have one bus bus should have at least two objects. In other words, if A and B are the...
+
+696
+01:57:13,427 --> 01:57:41,408
+If A and B are the sets such that if the size of A and the size of, if the size of A is greater than the size of B, then we can say that there is no one-to-one function from A to B. Very simple definition. Okay. So this is the pigeon principle. So we say these are the holes. You know, the, these pigeon holes means diverging us. Okay. We have three.
+
+697
+01:57:41,427 --> 01:57:43,228
+3 pigeonholes
+
+698
+01:57:43,228 --> 01:57:45,247
+and we have
+
+699
+01:57:45,247 --> 01:57:47,007
+4 pigeon and
+
+700
+01:57:47,007 --> 01:57:49,268
+you will put these 4 pigeon
+
+701
+01:57:49,268 --> 01:57:51,287
+in these pigeonholes
+
+702
+01:57:51,287 --> 01:57:52,707
+what you will get
+
+703
+01:57:52,707 --> 01:57:54,847
+at least one of the
+
+704
+01:57:54,847 --> 01:57:55,827
+hole
+
+705
+01:57:55,827 --> 01:57:58,487
+sorry one of the hole
+
+706
+01:57:58,487 --> 01:58:00,467
+should have at least
+
+707
+01:58:00,467 --> 01:58:05,247
+at least 2 pigeon
+
+708
+01:58:05,247 --> 01:58:05,688
+okay
+
+709
+01:58:06,676 --> 01:58:27,456
+This is the pigeon principle. Okay, another, for example, this is the theorem, let n be positive number, positive integer numbers. So every sequence of n squared one distinct real numbers contains a subsequence of length n plus one.
+
+710
+01:58:28,051 --> 01:58:37,631
+That is either increasing or decreasing. For example, proof. Let us have this set. Look, distinct numbers.
+
+711
+01:58:38,047 --> 01:59:04,847
+We have the distinct numbers 19, 10, 9, 7, 11, 2, 21, 20, 30. I write these numbers from my mind, randomly. And what is their numbers? What is the size of this set? What is the length of this sequence? It's 10. So n squared plus 1 is 10. So n is 3.
+
+712
+01:59:06,047 --> 01:59:09,307
+3, n plus 1, 3 plus 1 is 4.
+
+713
+01:59:09,307 --> 01:59:22,547
+So, I can find a sequence whose length is n plus 1.
+
+714
+01:59:22,967 --> 01:59:28,967
+So, for example, I can choose 10, 11,
+
+715
+01:59:30,515 --> 01:59:57,255
+21 ve 40. Look, in an increasing way. 10, increases. 9, small, small. 11, 21, 31. Or 10, 21, 10. No, I couldn't find.
+
+716
+01:59:58,003 --> 02:00:02,103
+Ama bu noktada, let's say, 9.
+
+717
+02:00:07,444 --> 02:00:15,944
+11, 20, 31, or 9, 11, 21, 31.
+
+718
+02:00:17,644 --> 02:00:22,324
+Something like this. You can create the sequences. So you see, what about the decreasing?
+
+719
+02:00:24,784 --> 02:00:28,424
+19, I decrease. 9.
+
+720
+02:00:30,836 --> 02:00:39,716
+10, 9, 7, so you decrease 1, so you have a sequence, n plus 1, for example, 19.
+
+721
+02:00:40,500 --> 02:00:41,880
+9, 7, 1.
+
+722
+02:00:42,199 --> 02:00:43,800
+N plus 1, you see it here.
+
+723
+02:00:44,180 --> 02:00:45,439
+This is a kind of
+
+724
+02:00:45,439 --> 02:00:46,960
+pigeon principle.
+
+725
+02:00:47,819 --> 02:00:49,079
+Here you solve.
+
+726
+02:00:49,639 --> 02:00:51,219
+Actually, it is a kind of
+
+727
+02:00:51,219 --> 02:00:53,439
+box, ordered box.
+
+728
+02:00:53,439 --> 02:00:55,600
+You are trying to put the numbers
+
+729
+02:00:55,600 --> 02:00:57,699
+inside that box and you will see
+
+730
+02:00:57,699 --> 02:00:59,619
+that you have something ordered
+
+731
+02:00:59,619 --> 02:01:01,680
+and the length of that order is
+
+732
+02:01:01,680 --> 02:01:02,539
+n plus 1.
+
+733
+02:01:03,000 --> 02:01:04,600
+And the proof of this.
+
+734
+02:01:04,975 --> 02:01:31,947
+I will give this proof to you because now it is time to have break and we don't have so much time. Please read this proof very well. And I think I will share with you the slides tonight so you can read the proof of...
+
+735
+02:01:31,956 --> 02:01:34,916
+This theorem using the Pigeon principle.
+
+736
+02:01:35,876 --> 02:01:36,055
+Okay.
+
+737
+02:01:36,935 --> 02:01:41,996
+Now, let us have 10-minute breaks.
+
+738
+02:01:42,576 --> 02:01:44,855
+After 10-minute break, we will continue.
+
+739
+02:01:45,376 --> 02:01:45,615
+Okay.
+
+740
+02:01:46,576 --> 02:01:47,256
+Any questions?
+
+741
+02:01:50,963 --> 02:01:53,803
+Tamam, 10 minuten sonra görüşürüz.
+
+742
+02:11:41,811 --> 02:11:48,931
+Evet arkadaşlar, sesim geliyor mu? Duyuyor musunuz?
+
+743
+02:11:49,511 --> 02:11:50,711
+Geliyor hocam, duyuyoruz.
+
+744
+02:11:53,231 --> 02:12:06,711
+Derse katılmıyorsunuz. Neden katılmıyorsunuz? Yoksa İngilizcem mi o kadar iyi değil? Yoksa problem oluyor? Anlamakta, hani İngilizcem kötü olduğu için anlamadığınız için soru mu sormuyorsunuz? Onu anlayamadım.
+
+745
+02:12:13,971 --> 02:12:34,471
+Arkadaşlar, yani soru sormak için ille İngilizce sormak zorunda değilsiniz. Türkçe de sorabilirsiniz. Lütfen soru sorun. Yani bu dersi half duplex yapmayalım. Full duplex olsun. Siz sorun, ben dinleyeyim, ben sorayım, siz dinleyin. Karşılıklı iletişim olsun.
+
+746
+02:12:34,996 --> 02:12:42,296
+Hem benim için daha iyi olur, daha kolay olur. Hem sizin için daha iyi, daha kolay olur. Dersin eğlenceli olmasını istemiyor musunuz?
+
+747
+02:12:43,216 --> 02:12:53,916
+Hocam, büyük ihtimal şu ana kadar gördüğümüz, gösterdiğiniz şeyler, hali hazırda aldığımız 2-3 derste çok benzer olduğu için dersin ilerlemesini bekliyorum ben mesela şahsen biraz.
+
+748
+02:12:54,476 --> 02:12:58,615
+Tamam. Teşekkür ederim. Bak, bu güzel bir feedback oldu. Ben şu anda rahatladım.
+
+749
+02:12:59,123 --> 02:13:06,063
+Yani kalben, huzura kavuştum. Demek ki anlıyorsunuz, öğreniyorsunuz. Bu çok güzel.
+
+750
+02:13:06,843 --> 02:13:10,383
+Slide'ları bugün akşam sizlerle paylaşacağım.
+
+751
+02:13:10,899 --> 02:13:35,019
+Eskiden WhatsApp grubu oluşturuyordum ama artık bu dönem WhatsApp grubu oluşturmayacağım. Sizinle iletişimi USÜS üzerinden sağlayacağım. Yani sizlere eğer bir şey göndereceksem USÜS'le e-mail atacağım. O e-mailin içinde linkler olacak ve o şekilde paylaşım olacak. Lütfen e-mailerinizi kontrol ediniz.
+
+752
+02:13:35,604 --> 02:13:51,604
+Ve gönderdiğim e-mail'leri saklayınız. Hani yarın bir gün yine lazım olur. Birinci vizede, ikinci vizede falan lazım olabilir. Ve attachment'ları kesinlikle download edip bir yere saklayın. Çünkü vTransfer kullanabilirim.
+
+753
+02:13:52,467 --> 02:14:15,247
+Yani bir transferle size bir şey gönderdiğimde bir transferin belli bir yaşam süresi var. İşte bir hafta gibi ya da on gün gibi. On gün sonra o dosyalara ulaşamıyorsunuz. O yüzden sizlere tavsiyem eğer sizinle bir şey paylaşıyorsam kesinlikle download edin. Bunu tavsiye ediyorum.
+
+754
+02:14:15,247 --> 02:14:16,807
+Evet.
+
+755
+02:14:21,971 --> 02:14:38,271
+Bir de e-mail'lerinizi çok sık kontrol edin, okul e-mail'lerinizi. Çünkü yarın sınav yaptığımızda ya da başka bir şey olduğunda ben sizinle bir bilgi paylaşacağım zaman e-mail'i kullanacağım. Başka bir şey kullanmayacağım.
+
+756
+02:14:39,060 --> 02:15:04,180
+Yani ben e-mail'i gönderdikten sonra eğer siz okumazsanız o sizin sorumluluğunuzda. Ben kendi sorumluluğumu yerine getirmiş ve sizinle bilgiyi paylaşmış oluyorum. Hepinizi teker teker arayamayacağına göre ve bir WhatsApp grubumuz olmadığına göre tek iletişim yöntemimiz Zoom üzerindeki derslerimiz ve e-mail denemimiz.
+
+757
+02:15:04,916 --> 02:15:15,016
+O yüzden e-mail'lerinizi lütfen çok sık kontrol edin. Sadece benim dersim için değil, diğer dersler için de. Önemli.
+
+758
+02:15:18,796 --> 02:15:23,476
+Hocam, bizim kendi arabamızda aramızda bir WhatsApp grubu kurmamız sizin için sıkıntı olur mu?
+
+759
+02:15:24,115 --> 02:15:33,615
+Benim için ne sıkıntı olacak ya, kurabilirsiniz tabii, bu güzel bir yaklaşım. Ama WhatsApp grubu yerine başka bir şey kullanabilirsiniz.
+
+760
+02:15:35,035 --> 02:15:47,315
+Turkcell'inkini kullanabilirsiniz. Ben WhatsApp kullanmayı bırakıyorum, öyle söyleyeyim kendim. Sizlere de tavsiye ediyorum.
+
+761
+02:15:47,315 --> 02:15:49,455
+Evet.
+
+762
+02:15:52,275 --> 02:15:55,895
+Beleme 25.2 hesaplama teorisi.
+
+763
+02:15:56,076 --> 02:15:57,255
+Okay, let us continue.
+
+764
+02:15:58,055 --> 02:15:59,335
+The regular expressions.
+
+765
+02:15:59,815 --> 02:16:03,855
+Regular expressions, we will learn what regular expression is.
+
+766
+02:16:04,315 --> 02:16:07,275
+First, let us consider the language.
+
+767
+02:16:08,235 --> 02:16:15,715
+For example, you know the Turkish language, you know the English language, you know Arabic language, so Russian language.
+
+768
+02:16:16,055 --> 02:16:18,515
+So there are many languages available in the world.
+
+769
+02:16:18,863 --> 02:16:43,083
+Bu, bu
+
+770
+02:17:05,363 --> 02:17:07,144
+Alphabet, alfabet.
+
+771
+02:17:07,583 --> 02:17:11,824
+So, there are many languages and they have also alphabets.
+
+772
+02:17:12,263 --> 02:17:12,363
+Okay.
+
+773
+02:17:13,043 --> 02:17:16,923
+So, you can see the many computers also.
+
+774
+02:17:17,463 --> 02:17:24,203
+So, you have the computers, Computer A, Computer B, Computer C, Computer D.
+
+775
+02:17:24,664 --> 02:17:26,343
+These computers are different.
+
+776
+02:17:26,984 --> 02:17:28,363
+Assume that they are different.
+
+777
+02:17:28,363 --> 02:17:31,903
+So, they will have different languages.
+
+778
+02:17:32,595 --> 02:17:36,595
+Bir şeyleri kullanmanın farklı bir şeyleri kullanmanın.
+
+779
+02:17:36,595 --> 02:17:53,439
+Bir şeyleri kullanmanın.
+
+780
+02:17:53,440 --> 02:17:58,200
+Bu söz veren, bu söz veren,
+
+781
+02:17:58,200 --> 02:18:09,079
+ve bu söz veren,
+
+782
+02:18:09,079 --> 02:18:14,680
+bu söz veren,
+
+783
+02:18:14,680 --> 02:18:16,560
+ve bu söz veren,
+
+784
+02:18:16,560 --> 02:18:17,319
+bu söz veren,
+
+785
+02:18:17,716 --> 02:18:38,155
+So, when you look at the languages, you need to first have an alphabet. Alphabet is a finite, non-empty set of symbols. The members of alphabets are symbols of alphabets. Okay? So, we generally use Greek letters sigma or gamma.
+
+786
+02:18:38,559 --> 02:18:55,719
+Sigma or Gamma. This letter called Sigma, this letter is called Gamma. Sigma and the Gamma Greek letters denotes alfabet in the software that we will use.
+
+787
+02:18:56,084 --> 02:19:00,164
+Actually, we will express the alphabets by sigma and gamma.
+
+788
+02:19:00,644 --> 02:19:02,344
+Let us look at these examples.
+
+789
+02:19:02,984 --> 02:19:04,284
+This is the first alphabet.
+
+790
+02:19:04,664 --> 02:19:06,104
+This is the binary alphabet.
+
+791
+02:19:06,463 --> 02:19:08,623
+It consists of 0 and 1.
+
+792
+02:19:09,463 --> 02:19:10,864
+This is another alphabet.
+
+793
+02:19:11,324 --> 02:19:12,804
+This is the letters alphabet.
+
+794
+02:19:13,204 --> 02:19:16,304
+You see all the letters used in the English language.
+
+795
+02:19:17,564 --> 02:19:21,004
+And you have another alphabet, gamma.
+
+796
+02:19:45,363 --> 02:19:47,363
+Çünkü her şey 1 ve 0.
+
+797
+02:19:47,363 --> 02:19:50,363
+O computurum sayıda 1 ve 0.
+
+798
+02:19:50,363 --> 02:19:52,363
+Bu bir şey gibi.
+
+799
+02:19:52,363 --> 02:19:57,363
+Bu bir şey.
+
+800
+02:19:57,363 --> 02:20:03,363
+Bir şey.
+
+801
+02:20:03,363 --> 02:20:05,363
+Bu bir şey.
+
+802
+02:20:05,363 --> 02:20:07,363
+Bir şey.
+
+803
+02:20:13,172 --> 02:20:16,092
+Alphabet is defined over alphabet.
+
+804
+02:20:16,592 --> 02:20:21,952
+Actually, it is a finite sequence of symbols from the alphabet.
+
+805
+02:20:22,172 --> 02:20:26,912
+For example, you can generate a string from this alphabet.
+
+806
+02:20:27,412 --> 02:20:28,632
+Let me give you an example.
+
+807
+02:20:29,932 --> 02:20:32,112
+0, 0, 0, 3, 0.
+
+808
+02:20:32,952 --> 02:20:36,652
+Is the word, is the string generated from this alphabet?
+
+809
+02:20:36,652 --> 02:20:39,932
+What about the generated?
+
+810
+02:20:40,531 --> 02:21:03,011
+A string from this alphabet, let's say kar. C, A, and R together, you use these three symbols to produce the string kar. Okay? So, what about this one? X, 0, 1, Y.
+
+811
+02:21:03,551 --> 02:21:07,432
+Z, for example, this is another strings generated from this alphabet.
+
+812
+02:21:08,072 --> 02:21:17,371
+So, alphabet is the symbols that are used to construct the word strings, okay?
+
+813
+02:21:19,667 --> 02:21:37,567
+So, the length of the, if W is a string over the alphabet sigma, then the length of W is denoted by absolute of W, is the number of symbols that it contains, the W contains, okay?
+
+814
+02:21:38,207 --> 02:21:47,667
+And sometimes we have an empty string. Empty string means it is the string whose length is zero. This is the empty string.
+
+815
+02:21:47,667 --> 02:21:57,587
+We have the string and we have also the empty string. The length of a string is zero, then we call this string as empty string.
+
+816
+02:21:57,968 --> 02:22:12,988
+Okay? And also W has length. So look at now W. For example, W is a string. You can write the string as like this. What is this? What is N?
+
+817
+02:22:14,515 --> 02:22:29,695
+Each is the present, the length of W is N, so the W can be represented as a concatenator of N strings, and each string here is a symbol.
+
+818
+02:22:29,695 --> 02:22:40,135
+So one symbol is inside the alphabet is also considered as string. For example, in our previous example,
+
+819
+02:22:41,139 --> 02:23:00,680
+Here, look at here, zero is a string, and it is an element of this alphabet, string, but element of this alphabet, or one is a string itself, only one is string, also is a symbol of alphabet.
+
+820
+02:23:01,780 --> 02:23:24,800
+Okay, so we can write every string in terms of the alphabets. Okay. And we have also the substring. So the here, there is another notation, R notation. Look, here R means reverse. We have the word, you reverse the word. For example, the word is like this. When you reverse the word,
+
+821
+02:23:25,268 --> 02:23:47,268
+The word becomes WN, WN minus one, two, one. So the symbols inside the string is reversed. This is called reverse operation. Please don't use R for any other things because you will, you have to memorize this notation and you have to use
+
+822
+02:23:47,647 --> 02:24:14,827
+R as a reverse operation in your calculus, in your proofs in the computation theory. And let's say Z is a substring of W, then Z appears within W. For example, the cat, this is this string.
+
+823
+02:24:15,216 --> 02:24:18,695
+is a substring of abracadabra.
+
+824
+02:24:18,695 --> 02:24:22,256
+Here you see the cat, cat is here.
+
+825
+02:24:22,256 --> 02:24:27,576
+So the cat is a substring of the string abracadabra.
+
+826
+02:24:27,576 --> 02:24:28,775
+Okay.
+
+827
+02:24:28,775 --> 02:24:30,896
+What about the keywords?
+
+828
+02:24:30,896 --> 02:24:36,416
+There are also the keywords, let's say x power 3.
+
+829
+02:24:36,416 --> 02:24:39,256
+X power 3 means x is the strings.
+
+830
+02:24:39,256 --> 02:24:42,695
+3 means you concatenate the strings 3 times.
+
+831
+02:24:43,156 --> 02:24:48,576
+If x is 0, so you say that 0 over 3 means triple 0.
+
+832
+02:24:49,576 --> 02:24:53,876
+Okay, 0, 1 over 3 means 0, 1, 0, 1, 0.
+
+833
+02:24:54,456 --> 02:24:55,296
+You get me?
+
+834
+02:24:56,216 --> 02:25:01,596
+So x power n, actually this is the n times concatenation of x.
+
+835
+02:25:02,536 --> 02:25:08,616
+So here you have to be very sure about these notations.
+
+836
+02:25:09,652 --> 02:25:14,811
+You will use the power as the concatenation in our computation theory.
+
+837
+02:25:14,811 --> 02:25:15,531
+Okay?
+
+838
+02:25:15,531 --> 02:25:24,531
+We will define, we will use this donation in our theorems and the proofs.
+
+839
+02:25:24,531 --> 02:25:32,092
+And also we have clean star operation, different than this is another power operation.
+
+840
+02:25:32,092 --> 02:25:36,412
+So the clean star, x power star.
+
+841
+02:25:36,915 --> 02:25:52,255
+The klinisitar, especially is used to represent the all subset of, all the subsets of, all the subsets, yes.
+
+842
+02:25:52,255 --> 02:26:04,216
+So, then I am asking you, what is language? Consider the Turkish language, consider the English language, or consider the computer languages.
+
+843
+02:26:04,979 --> 02:26:09,500
+The language is a set of strings defined over an alphabet.
+
+844
+02:26:10,659 --> 02:26:16,139
+The number of strings inside the language could be finite or infinite.
+
+845
+02:26:17,239 --> 02:26:22,840
+Okay, we use the languages to describe the computation problems.
+
+846
+02:26:23,520 --> 02:26:25,879
+So, again, I am repeating.
+
+847
+02:26:26,548 --> 02:26:53,548
+I am repeating, the language is a set of strings defined over the same alphabet. Language is a set of strings defined over the same alphabet. So we have the regular languages. So the regular languages is a subset of all languages and there is no way to define the regular set. However, we can find the...
+
+848
+02:26:54,227 --> 02:27:16,067
+language is regular or not. The best way using the final automat, if you have the regular languages, and if you have the automat that recognize the your languages, then you call this language is regular. Let me give an example. So you have the computer, you are writing
+
+849
+02:27:17,299 --> 02:27:43,659
+You wrote the software for this computer. Okay? In your software, you use some expressions. Okay? These expressions, each expression you write should be recognized by the machine. Okay? So if you have finite automat, this finite automat recognizes all the strings.
+
+850
+02:27:44,079 --> 02:27:59,579
+In your languages, then your language is regular language. Regular languages are closed under some operations. For example,
+
+851
+02:28:00,095 --> 02:28:26,675
+Languages is the set of strings. So union operation, let's say A is the set of strings and B is the set of strings. So here A and B are languages. This A is language because it is set of strings. B is the language. It is set of strings. So union of these two sets is another set of strings. So their union is also languages. Okay?
+
+852
+02:28:27,924 --> 02:28:55,644
+And concatenation, you have the language A and you have the language B and these are two languages. When you concatenate two languages, actually you concatenate the strings inside the language A and the language B. Can you notice that I use the word language for the sets.
+
+853
+02:28:55,924 --> 02:29:21,824
+Which sets? String sets, okay? We have the string sets. The string sets are called language. For example, Java language. In the Java languages, what you have, you have the, you have, there are, you have some words, like if and if.
+
+854
+02:29:22,227 --> 02:29:48,467
+else, while, for, class, integer, double, okay? Byte, float, double, long. There are some certain strings. All these strings all together creates a language for Java. So Java language itself is a set of strings, okay? Repeating again.
+
+855
+02:29:49,043 --> 02:30:00,000
+I am repeating, sorry, I am repeating. The language is itself a set of strings. So the concatenation of
+
+856
+02:30:00,000 --> 02:30:06,319
+strings, actually you concatenate the strings together. For example, you have a language inside
+
+857
+02:30:07,440 --> 02:30:21,280
+string ara, let's say in by, there is a string by, in, in, in, if you have another set, let's say b,
+
+858
+02:30:21,920 --> 02:30:27,440
+it has cycle, when you concatenate, you have by cycle, okay?
+
+859
+02:30:28,000 --> 02:30:29,420
+So, some kind of things.
+
+860
+02:30:30,059 --> 02:30:32,079
+What about the clean start operation?
+
+861
+02:30:32,079 --> 02:30:38,159
+So, this is the, you see the A is the set, the set of strings.
+
+862
+02:30:38,659 --> 02:30:46,987
+So, clean start operation of this language means you have all possible concatenation of...
+
+863
+02:30:47,156 --> 02:31:15,156
+So, for example, you have this language A. Inside this language, there are some certain number of words. When you have the Klinister operation, you have all the possible concatenation of the strings. So you have the Klinister operation. So, this is a very important conclusion.
+
+864
+02:31:40,147 --> 02:31:57,467
+Regular languages is closed under intersection. It means that you have two languages, let's say, language A and the language B. Their intersection is another set of strings, so it is also regular languages that can be recognized, accepted by an automata.
+
+865
+02:31:57,768 --> 02:32:08,108
+And the complement is another operation we use in the computation theory. You have the set, you have the language A.
+
+866
+02:32:08,147 --> 02:32:19,667
+The set of strings. So when you complement it, actually you create another language that-
+
+867
+02:32:20,051 --> 02:32:24,612
+Can also be recognized or accepted by an otomat.
+
+868
+02:32:24,612 --> 02:32:30,992
+And the concatenation means kaskat bağlama, kaskatlama, okay, in Turkish.
+
+869
+02:32:31,452 --> 02:32:37,412
+So regular languages is also closed under the concatenation operator.
+
+870
+02:32:37,932 --> 02:32:47,871
+Means that if you concatenate two languages, then you have another language that is also regular language, meaning that it can also be recognized.
+
+871
+02:32:48,051 --> 02:32:49,652
+Açeptele by an automat.
+
+872
+02:32:50,652 --> 02:32:55,652
+So regular languages is also called closed under cleanestar operator.
+
+873
+02:32:55,952 --> 02:33:00,772
+Why? Cleanestar operator is a kind of generalization of concatenation.
+
+874
+02:33:01,112 --> 02:33:10,612
+Concatenation is itself is closed, then cleanestar operation will be certainly closed.
+
+875
+02:33:11,891 --> 02:33:13,492
+Will be certainly closed.
+
+876
+02:33:14,515 --> 02:33:29,556
+Okay. So let's, let us look at this example. This is the alphabet. Alphabet, alphabet is denoted by letter sigma, Greek letter sigma. And what is the symbols inside this alphabet?
+
+877
+02:33:30,015 --> 02:33:46,435
+There are two symbols, A and B. Okay. From this alphabet, you can generate the strings A, A, B, A, B, A, B, A, B, A, or triple A, triple B, double A, B, A, B, A, B.
+
+878
+02:33:46,435 --> 02:33:51,396
+So, look at now, A, B is itself a string.
+
+879
+02:33:52,180 --> 02:34:06,280
+This one is also a string. This one is also a string. This is also a string. There are four strings here you see. Each one is strings. We generally use small letters to represent the strings. For example, A, B.
+
+880
+02:34:07,924 --> 02:34:30,504
+Sorry. Yes. AB is represented here by U. AWBA is represented by V. And the other next string is represented by W. So let us look at another example. This is another decimal numbers alphabet. So you have the alphabet.
+
+881
+02:34:31,379 --> 02:34:37,199
+Sigma, whose elements are 0, 1, 2, 3, till 9.
+
+882
+02:34:37,631 --> 02:34:43,371
+So you can generate the numbers from, you can generate the strings using this alphabet.
+
+883
+02:34:44,011 --> 02:34:44,291
+Okay.
+
+884
+02:34:44,631 --> 02:34:48,231
+So each string is generated from the alphabet.
+
+885
+02:34:48,772 --> 02:34:54,391
+What about the other example or alphabet is the binary alphabet.
+
+886
+02:34:54,952 --> 02:34:59,652
+Again, using this binary alphabet, you can generate many strings.
+
+887
+02:35:00,011 --> 02:35:00,191
+Okay.
+
+888
+02:35:00,191 --> 02:35:03,791
+So each is, strings is generated using the alphabet.
+
+889
+02:35:04,011 --> 02:35:05,631
+So in order to generate.
+
+890
+02:35:05,631 --> 02:35:26,539
+Yeni Y
+
+891
+02:35:28,595 --> 02:35:55,915
+What about this alphabet? This alphabet, look at this, it has only one element. Okay, can you generate the strings from this alphabet? Yes, you can generate the strings from this alphabet. What can you generate? Like one, one, one, and all six times one. So these are the strings generated using the alphabet sigma.
+
+892
+02:35:56,755 --> 02:36:18,536
+Arkadaşlar, here, each one is denoting the numbers. For example, only one, this denotes one, it means two, and it means six. Do you remember the abacus when you are going to primary circle, you were counting the beans there. So now you are counting the ones. Computation theory itself is counting.
+
+893
+02:36:19,092 --> 02:36:36,492
+once, okay? So, when you, especially for the central process units inside the central process unit like Intel or AMD or any other alternative central process units, people are using the automatic theory to design some certain
+
+894
+02:36:37,652 --> 02:37:00,191
+Otomats, so these automats are working on the number of ones generally, because it's much more speed. You do not need to know the, it is much more easy to do fast computations, especially for, it is easy for computations.
+
+895
+02:37:00,191 --> 02:37:01,631
+And,
+
+896
+02:37:03,316 --> 02:37:29,596
+What about concatenation? Let us assume that we have two strings. W is our first string and the V is our second string. And the A and B is element of this alphabet. You see, this is the alphabet. X and Y is the alphabet. So W could be X, Y, Y, X, Y. It could be. This is an example. So this
+
+897
+02:37:31,188 --> 02:37:57,188
+stringHesaplama, XXX, XXY. So, when you concatenate them, you concatenate this part and this part, you have another new string. And this new string actually, the concatenation of these two. Okay? So, what about the reverse operation? Look at this reverse operation. We have...
+
+898
+02:37:58,004 --> 02:38:09,924
+Okay, I wrote wrong. Okay, let me fix it. One second. I don't know why like this.
+
+899
+02:38:19,667 --> 02:38:21,827
+OK, reverse operation.
+
+900
+02:38:25,547 --> 02:38:28,707
+Reverse operation, you change the order.
+
+901
+02:38:28,987 --> 02:38:36,487
+For example, now the order is changed from left to right to right to left.
+
+902
+02:38:36,487 --> 02:38:43,867
+So as you see, for example, the reverse of this W is YXWWX.
+
+903
+02:38:44,188 --> 02:38:45,827
+YXWWX.
+
+904
+02:38:46,167 --> 02:38:47,087
+OK, very good.
+
+905
+02:38:47,540 --> 02:38:55,900
+So, what about the length of the word? The length of the word, here you see that n, the length of the word v is m.
+
+906
+02:38:56,340 --> 02:39:05,360
+For example, the length of these strings, the word or string is 5, the length of this string is 6 because there are 6 elements here as you count.
+
+907
+02:39:06,260 --> 02:39:20,639
+So, the concatenation of the length of the concatenations, actually, when you concatenate, actually, it is the sum of the length of their individual, sum of their individual lengths.
+
+908
+02:39:21,180 --> 02:39:32,119
+So, for example, the concatenation of this string and this string, we have this string, the length of this string is 11. 11 is equal to 5 plus 6.
+
+909
+02:39:32,119 --> 02:39:34,119
+So, we have also the empty...
+
+910
+02:39:34,260 --> 02:39:59,860
+String, empty string is denoted by epsilon. Epsilon, empty string means there is a string but whose length is zero, means there is no symbol. So empty strings, the length of empty string is zero. And also there are examples, let us do some examples. We have also the substring. We have the string, some part of the string is called substring, okay?
+
+911
+02:40:00,000 --> 02:40:25,479
+So, it is very simple. And the special cases for the empty string. Empty string is prefix, suffix of each string. And it's a string is a prefix or suffix itself. So you can put epsilon as a prefix or suffix or any part. You can put epsilon. So, and so, for example,
+
+912
+02:40:28,147 --> 02:40:33,707
+This is prefix, this is suffix, when you concatenate them, you have the same.
+
+913
+02:40:34,907 --> 02:40:42,768
+Okay, look, this is prefix, this is suffix, empty strings doesn't change the string, okay?
+
+914
+02:40:43,027 --> 02:40:48,087
+But sometimes we prefer to use empty strings in our theory and in our proof.
+
+915
+02:40:49,332 --> 02:41:09,772
+So, there is also the power as remember, let us consider this double for them. We have the string W whose length is N, define it over the alphabet X and Y, W concatenated W, two W concatenated.
+
+916
+02:41:10,451 --> 02:41:32,491
+are concatenated, then we call, we represent it as W square, okay? When you concatenate three W strings, three double, same string, then we called it W power three. Power means the number of concatenation. What about the W power zero?
+
+917
+02:41:33,043 --> 02:41:58,252
+W'0
+
+918
+02:41:58,291 --> 02:42:21,691
+It's one power is like this. It's two power and three power. You can see it. It repeats two times. This first time and the second time. It repeats three times. So, clean start operation like this. Look, we have the word. When you apply the clean start operation, you have the set now.
+
+919
+02:42:22,804 --> 02:42:26,884
+Clean Start Operation gives you a set.
+
+920
+02:42:27,783 --> 02:42:28,064
+Okay?
+
+921
+02:42:28,423 --> 02:42:31,524
+So, you give the string, it gives you the set.
+
+922
+02:42:32,103 --> 02:42:40,304
+So, after Clean Start Operation, you have the set, W star, W1, W2, W3, all the possible concatenations.
+
+923
+02:42:41,244 --> 02:42:43,704
+When you look at this, what you see?
+
+924
+02:42:45,459 --> 02:42:53,039
+This is W clean star is a set of strings and also it is language.
+
+925
+02:42:54,139 --> 02:42:54,939
+Okay, very good.
+
+926
+02:42:54,939 --> 02:42:59,939
+So star operation can also be applied to the...
+
+927
+02:43:00,724 --> 02:43:28,703
+Alphabet or the sets. Look at this. When you apply on the sets, all the possible concatenation of the symbols inside the alphabet. So you see all the possible concatenation. If there is no concatenation, if this is empty string, if there is no concatenation A and B, or A times A concatenated A times B or B times A, or double A, double B.
+
+928
+02:43:28,724 --> 02:43:46,363
+A, B, or AAA, triple cases. So this is the all possible concatenation of the symbols A and B inside the alphabet. Okay. This is the alphabet's clini-star operation. What about, sorry, clini-star operation is applied on alphabet. What about the,
+
+929
+02:43:47,156 --> 02:44:13,756
+Plus operation, plus, this is also the Klinik plus operation. Actually, this is some, define it like this. You have the alphabet A and B. Alphabet power plus means Klinik start operation minus empty string. So it gives you new string, new set. What you notice here.
+
+930
+02:44:14,899 --> 02:44:19,099
+You notice that there is no epsilon here. Okay?
+
+931
+02:44:20,899 --> 02:44:33,799
+So, Clinik plus operation has no, actually, this is plus operation, has no empty string, but Clinik star operation has empty string. Okay.
+
+932
+02:44:34,451 --> 02:44:57,451
+Language. What is the definition of language? Language is the set of strings. Each string inside the language is constructed from using the alphabet. Okay. Here, this is the example alphabet A and B. This example alphabet from here, when we apply the cleanest operations, we have this
+
+933
+02:44:59,252 --> 02:45:23,731
+All this set. Actually, this is a set. Okay. Now, let us define some sets. Each set, look at this, L1, L2, L3, and L4. Each one of them is subset of Klinistar of alphabet. Okay? So,
+
+934
+02:45:24,531 --> 02:45:48,811
+Kalini star over alfabet produces a languages that consist of all possible languages. Okay. This is the universe languages. Kalini star operation creates a universe languages for the alphabet. Okay. So all the languages created
+
+935
+02:45:49,360 --> 02:46:17,360
+using this alphabet is a subset of Klinistar alphabet. Okay. This is the language. This is language. Look at this language. It contains only the empty string. So it is a set of strings. So it is a language. What about L2? L2 is also a language. The number of strings in this language is six. Okay. L3 is another language. The number of...
+
+936
+02:46:17,360 --> 02:46:41,200
+String in this language is infinite. And also it contains empty string. So L3 is a set of strings. So you can say that L3 is a language. L4 is another languages. But here the number of A and the number of B must be equal like this. Also L4 is a subset of
+
+937
+02:46:43,507 --> 02:47:06,887
+Epsilon, Sigma, Sigma star. So L4 is also language and the subset of Sigma star. So you can define another alphabet. Here, this is the number alphabet 0, 1, 2, 3, 4, 5. Actually, you should not see this number.
+
+938
+02:47:07,572 --> 02:47:31,931
+These are the symbols. Okay? These are not now. These are symbol. Bunlar hepsi sembol. Sayı olarak görmeyin. Biz hep semboller üzerine uğraşıyoruz. Alfabe her zaman sembollerden oluşuyor. Okay? You use this symbol to generate, produce the strings. For example, the prime numbers.
+
+939
+02:47:33,363 --> 02:47:49,423
+This is the string generated using this alphabet. Even numbers or odd numbers, these are all the set. So you can generate these strings from this alphabet.
+
+940
+02:47:49,423 --> 02:47:58,103
+Okay? Here you see that 11. This 11 actually concatenation of two symbols, one and one.
+
+941
+02:47:58,399 --> 02:48:25,920
+It is a string. Don't consider it as a number. Okay? For example, when you concatenate seven and eleven, it becomes seven, one, one, not seven hundred, eleven. No, seven, one, one. How do you call? This is two, this is three, this is five, this is seven, this is one, one. Concatenation of two, one.
+
+942
+02:48:26,515 --> 02:48:41,475
+Don't call it 11, because these are string, not a number. These strings are created, generated from these symbols. Each symbol is not a number here. Each one is symbol. Okay?
+
+943
+02:48:43,135 --> 02:48:51,055
+Very good. So here we say that we create the numbers, even numbers, expressed by these strings.
+
+944
+02:48:52,051 --> 02:49:09,391
+Okay, 0, 2, 4, something like this. Each one is string. All the strings represent, all the strings represent even numbers. All the strings represent odd numbers. All these strings represent prime numbers.
+
+945
+02:49:10,331 --> 02:49:19,291
+Okay, very good. What about the addition? Look, I have the alphabet. What is my alphabet?
+
+946
+02:49:19,791 --> 02:49:42,871
+1, plus, and equal. 1 is a symbol, plus is a symbol, and equal is a symbol. Here I have the set, addition set. X plus Y equals Z such that X is the element, is equals to the
+
+947
+02:49:43,152 --> 02:49:58,091
+N times concatenation of 1, Y is equal to the N times concatenation of 1, and the Z is equal to the K times concatenation of 1, and the K is equal to N plus N.
+
+948
+02:49:58,891 --> 02:50:08,371
+So here, X plus Y, Z, 1, all these things are symbols.
+
+949
+02:50:08,371 --> 02:50:10,531
+Look at now.
+
+950
+02:50:11,412 --> 02:50:20,092
+This is 111 plus 11 equals 1111. This is whole string.
+
+951
+02:50:21,432 --> 02:50:30,152
+Okay, this string is element of this set. This is another string, element of this set.
+
+952
+02:50:30,471 --> 02:50:34,932
+So these are two strings. Here there is no mathematical operation.
+
+953
+02:50:35,891 --> 02:50:59,352
+There is no mathematical operation. Don't be confused. Burada matematiksel bir işlem yapmıyoruz. 1, 1, 1 artı 1, 1 eşittir 1, 1, 1, 1, 1. Bu bir dizi. Yani hani yazıyoruz ya, kağıtla yazıyoruz yani semboller. Burada matematik yok. Buradaki işlem bu addition kümesi.
+
+954
+02:51:01,907 --> 02:51:17,108
+Bu Stringleri oluşturmamızı sağlıyor. Mesela şu alttaki String, üstteki String, yukarıdaki Edition kümesinin bir elemanı ama alttaki String, yukarıdaki Edition kümesinin bir elemanı değil.
+
+955
+02:51:17,108 --> 02:51:18,487
+Şimdi,
+
+956
+02:51:19,347 --> 02:51:29,728
+Bunu kullanarak toplamanın yanlış, eğer bir toplama yaptınız, toplamanın yanlış mı, doğru mu yapıldığını hemen anlayabilirsiniz değil mi? Sadece sembolleri kullanarak.
+
+957
+02:51:31,608 --> 02:51:37,948
+İşte bu bilgisi, bir kompütür, bir hesaplayıcı ile konuşmak budur.
+
+958
+02:51:39,908 --> 02:51:40,748
+Sorusu olan var mı?
+
+959
+02:51:46,100 --> 02:51:47,780
+Evet arkadaşlar, sorunuz var mı?
+
+960
+02:51:49,940 --> 02:51:52,420
+Okay, what about the other alphabet?
+
+961
+02:51:53,059 --> 02:51:54,659
+We have the alphabet.
+
+962
+02:51:55,040 --> 02:51:58,100
+It contains only two symbols, one and sharp.
+
+963
+02:51:59,180 --> 02:52:07,020
+X sharp Y, such that X is the concatenation of M times concatenation of one.
+
+964
+02:52:07,020 --> 02:52:10,020
+Y is the M times concatenation of...
+
+965
+02:52:10,739 --> 02:52:37,319
+N, and the N is equal to do M squared. Okay? So from here, you can generate this. This is the string. Sorry. This is the string. It can be generated from the squares. And this is string is not the element of this set. This is whole string.
+
+966
+02:52:38,100 --> 02:52:47,916
+This is whole string. This string is element of set squares. This is string is not element of set squares.
+
+967
+02:52:49,780 --> 02:53:17,700
+Okay, very good. So let us look at on the operations, set operations. As you know that languages is a set of strings. So I have language A and I have language B. Their union is another set of strings. So A union B is another language. So it is this. Their intersection is AB. Also it is a kind of, it is a set of strings. So their intersection is another language.
+
+968
+02:53:17,780 --> 02:53:40,920
+What about the difference A minus B means you get the differentiation. So their differentiation is also another set. And there is a complementation, but there is here mistake. What is this?
+
+969
+02:53:45,587 --> 02:53:48,988
+Ok, bu ne bu?
+
+970
+02:54:05,108 --> 02:54:05,807
+Ne, ya.
+
+971
+02:54:08,407 --> 02:54:08,868
+Oh, no.
+
+972
+02:54:11,167 --> 02:54:11,608
+Okay.
+
+973
+02:54:17,139 --> 02:54:27,000
+Okay, you can say that this is the ace, this is the overall, how can I write?
+
+974
+02:54:32,884 --> 02:54:39,884
+Bu bir set, bu bir set.
+
+975
+02:54:39,884 --> 02:54:41,884
+Bu bir bir line.
+
+976
+02:54:41,884 --> 02:54:46,884
+Bu bir line.
+
+977
+02:54:46,884 --> 02:54:49,884
+Bu neden bu?
+
+978
+02:54:49,884 --> 02:54:50,572
+Bu bir line.
+
+979
+02:54:51,092 --> 02:55:11,252
+But there is only one line, like this, look at here, there is a line over the bar, there is a bar over the letter A, so it means that complement, so the complement of the language, actually this is the complement of language, means you have the
+
+980
+02:55:18,611 --> 02:55:25,751
+The language A, so it gives you the complement language of A. Okay, so very simple definition.
+
+981
+02:55:27,091 --> 02:55:43,791
+And let us have another notations. Phi means empty set. It doesn't equal to this because empty string is a string whose length is zero.
+
+982
+02:55:44,275 --> 02:56:02,275
+So, this, what is the number of elements in this set? It's one. What is the element in this set? It's zero. What is the number of elements in this set? It's zero. Okay? The length of empty set is, the length is zero, but the length of...
+
+983
+02:56:02,995 --> 02:56:08,435
+The length of the set of empty string is 1.
+
+984
+02:56:08,735 --> 02:56:08,995
+Okay.
+
+985
+02:56:09,355 --> 02:56:12,036
+What about the length of empty string is 0.
+
+986
+02:56:12,456 --> 02:56:12,695
+Okay.
+
+987
+02:56:13,155 --> 02:56:14,675
+Please don't be confused.
+
+988
+02:56:15,735 --> 02:56:21,515
+Actually, in the exams, most probably most of you will be confused.
+
+989
+02:56:21,515 --> 02:56:29,115
+So I strongly suggest you to understand the notion behind these expressions.
+
+990
+02:56:29,843 --> 02:56:45,503
+And finite automates. Okay? Finite automates. Let me give you a very simple explanation and I will stop. You have the finite automates. You put string and your finite automates.
+
+991
+02:56:46,004 --> 02:57:12,584
+accept or reject your input. For example, if your string is an element of the languages, then the final automat accept your string because your string is an element of languages and language is a set of strings. So your string is an element of the languages and then final automat detects this. Okay. Accept or reject.
+
+992
+02:57:12,976 --> 02:57:20,476
+So, next week, we will see that, one second.
+
+993
+02:57:24,788 --> 02:57:25,368
+Evet.
+
+994
+02:57:33,427 --> 02:57:33,927
+Okay.
+
+995
+02:57:36,188 --> 02:57:41,388
+This is the example of finite automat.
+
+996
+02:57:41,628 --> 02:57:43,068
+You see the states here.
+
+997
+02:57:43,228 --> 02:57:44,668
+This one, each one is states.
+
+998
+02:57:45,888 --> 02:57:46,507
+Okay.
+
+999
+02:57:47,316 --> 02:58:07,776
+These are the letters for each, for each, sorry, these are the symbols. For each symbol, you change your state. For example, if you are at this state, if input symbol is A, you change your state from Q0 to Q1. If you are here, okay.
+
+1000
+02:58:08,340 --> 02:58:29,340
+If you are here, if input symbol is B, you go to Q5. If input symbol A, you go to Q4. Q4 is the accepting final state. If input settings is consumed by the automat and your last state is...
+
+1001
+02:58:29,523 --> 02:58:54,723
+Like this, there are two circles. Okay? If your last state is the accepting state, then you recognize the input string. Next week, we will give more details about automats. Okay? Automat is a plural verb. Automaton is a singular verb. Okay? Yani automat, şey gibi, latince de kaynaklanıyor. Data.
+
+1002
+02:58:55,572 --> 02:59:03,932
+Çoğul bir kelimedir. Datum, tekil bir kelimedir. Bunu bilin. Onu da söyleyelim.
+
+1003
+02:59:05,332 --> 02:59:26,472
+Veri kullanımı doğru değil. Biz Türkçe'de hep veri diyoruz ama normalde veriler dememiz lazım. Veriler. Çoğu kullanmamız lazım ama biz tekil kullanıyoruz veriyi de. Bilgiyi de sayabiliyoruz. Bu işte eksikliklerimiz inşallah zaman içinde literatür, Türkiye'deki literatür bu tür yanlışlıkları düzeltecektir.
+
+1004
+02:59:26,472 --> 02:59:33,332
+Arkadaşlar, thank you so much for your attendance. I hope this course is very useful for you.
+
+1005
+02:59:33,332 --> 03:00:00,000
+And I believe that if you follow the course very well, if you follow the course every week, I am sure you will pass the exam. Otherwise, it is not easy to pass the exam because this each lecture will give you more insight. Please follow the courses and repeat watching the videos of this course. If you have any questions,
+
+1006
+03:00:26,067 --> 03:00:30,927
+Okay, thank you. Have a good day. Take care of yourself. See you next week.

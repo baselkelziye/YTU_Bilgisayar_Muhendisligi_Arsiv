@@ -1,0 +1,4263 @@
+1
+00:03:31,764 --> 00:03:33,364
+Merhaba arkadaşlar, günaydın.
+
+2
+00:03:42,867 --> 00:03:43,768
+Günaydın hocam.
+
+3
+00:03:46,587 --> 00:03:58,247
+Geçen hafta konuşmuştuk bu quiz olayını. Tamam, bir arkadaşınız başka bir ders aldığını, dolayısıyla derslerin çakıştığını söylemişti.
+
+4
+00:04:00,647 --> 00:04:08,007
+Kimsenin mağdur olmaması için quizlerin tarihlerini önceden sizinle paylaşacağım. Ama normalde paylaşmamam gerekiyor.
+
+5
+00:04:08,948 --> 00:04:34,288
+Ama paylaşma kararı aldım. Daha ziyade bu kararımı da Oğuz Hoca'yla da konuştuk. Yani krizi ki tarihini daha önceden sizlerle paylaşacağım. Böylelikle sizler de krizide daha iyi hazırlanmış olacaksınız ve böylelikle kimse mağdur olmayacak.
+
+6
+00:04:36,627 --> 00:04:37,207
+Evet.
+
+7
+00:04:40,207 --> 00:04:45,367
+Bu hafta, geçen hafta loopları göndermiştik.
+
+8
+00:04:46,647 --> 00:04:48,288
+Yani loopları görmüştük.
+
+9
+00:04:49,147 --> 00:04:52,127
+Pigeonhole principle'ını görmüştük.
+
+10
+00:04:56,087 --> 00:05:01,408
+İşte bir NFA veya DFA içerisinde loop var ise,
+
+11
+00:05:01,855 --> 00:05:12,675
+Bu NFA ve DFA'nin tanıdığı dilin büyüklüğü sonsuz olmaktaydı. Onu görmüştük.
+
+12
+00:05:14,055 --> 00:05:20,135
+Şimdi bu derse beraber pumping lemmaya başlayacağız.
+
+13
+00:05:28,084 --> 00:05:46,403
+izelenma, use it for, use it for understanding the language is not regular, okay? It is used for, it is used, let me write.
+
+14
+00:05:50,228 --> 00:06:10,668
+It is used for proving that. It is used to prove that. It is used to prove that.
+
+15
+00:06:16,307 --> 00:06:17,207
+The language.
+
+16
+00:06:21,300 --> 00:06:24,500
+is not regular.
+
+17
+00:06:27,139 --> 00:06:27,779
+Actually,
+
+18
+00:06:30,180 --> 00:06:31,220
+pumping lemma
+
+19
+00:06:31,220 --> 00:06:33,000
+is not
+
+20
+00:06:36,627 --> 00:06:51,807
+It is not used to prove that the language is a regular language.
+
+21
+00:06:55,603 --> 00:07:09,163
+In order to prove that the regular is not a regular language, the language is not a regular language, we will assume that the language is regular.
+
+22
+00:07:09,163 --> 00:07:13,163
+So in order to for this...
+
+23
+00:07:17,555 --> 00:07:18,495
+Ve ets.
+
+24
+00:07:25,492 --> 00:07:31,331
+That language is regular.
+
+25
+00:07:31,652 --> 00:07:33,392
+Actually, we use the contradiction.
+
+26
+00:07:33,672 --> 00:07:36,091
+We assume that the language is regular.
+
+27
+00:07:36,892 --> 00:07:42,552
+And we prove that the language is not regular by contradiction.
+
+28
+00:07:44,412 --> 00:07:52,012
+Maybe we can write, we can reuse, we use contradiction technique.
+
+29
+00:08:03,636 --> 00:08:09,516
+Ok, to prove, we use contradiction technique to prove that the language is not regular.
+
+30
+00:08:13,936 --> 00:08:16,756
+Ok, let me ask some questions.
+
+31
+00:08:18,696 --> 00:08:21,115
+For example, we have this language.
+
+32
+00:08:24,316 --> 00:08:25,556
+Let's say L.
+
+33
+00:08:29,971 --> 00:08:36,551
+A, A, B, A, B, C, D.
+
+34
+00:08:37,692 --> 00:08:39,892
+This is the language, over alphabet.
+
+35
+00:08:42,432 --> 00:08:46,791
+Alphabet, A, B, C, and D.
+
+36
+00:08:48,731 --> 00:08:49,392
+Okay.
+
+37
+00:08:50,031 --> 00:08:52,192
+Is this language regular or not?
+
+38
+00:08:58,163 --> 00:08:59,223
+Regular, hocam.
+
+39
+00:09:00,384 --> 00:09:00,803
+Why?
+
+40
+00:09:03,144 --> 00:09:03,963
+Çünkü sonlu.
+
+41
+00:09:04,844 --> 00:09:05,223
+Okay.
+
+42
+00:09:05,783 --> 00:09:07,144
+That is correct.
+
+43
+00:09:07,144 --> 00:09:14,144
+If the size of the language...
+
+44
+00:09:18,292 --> 00:09:19,672
+is finite.
+
+45
+00:09:21,672 --> 00:09:28,552
+It means the language, the size of the language is less than infinity.
+
+46
+00:09:33,268 --> 00:09:36,248
+Then, the language
+
+47
+00:09:40,148 --> 00:09:44,587
+Then it is regular language. Maybe then it is a...
+
+48
+00:10:03,860 --> 00:10:10,187
+D
+
+49
+00:10:17,299 --> 00:10:20,879
+Why this language is regular?
+
+50
+00:10:21,559 --> 00:10:28,359
+So language, the language is finite.
+
+51
+00:10:30,359 --> 00:10:32,359
+So there is a...
+
+52
+00:10:37,524 --> 00:10:38,483
+Let me write.
+
+53
+00:10:41,723 --> 00:10:42,443
+Language.
+
+54
+00:10:45,923 --> 00:10:48,003
+Why is color changing the color?
+
+55
+00:10:48,203 --> 00:10:48,463
+Okay.
+
+56
+00:10:49,203 --> 00:10:49,884
+Language.
+
+57
+00:10:55,220 --> 00:10:58,080
+Let's say L is finite.
+
+58
+00:10:58,920 --> 00:11:06,680
+It means the number of states, the number of states is finite.
+
+59
+00:11:08,820 --> 00:11:18,180
+Therefore, there is a NFA or DFA.
+
+60
+00:11:20,180 --> 00:11:20,500
+Okay?
+
+61
+00:11:21,812 --> 00:11:23,812
+Bu bir konucu.
+
+62
+00:11:24,932 --> 00:11:25,812
+Bazen,
+
+63
+00:11:26,971 --> 00:11:35,812
+birçok bir
+
+64
+00:11:35,812 --> 00:11:50,812
+bir
+
+65
+00:11:49,779 --> 00:11:58,460
+Then there is a NFA or DFA, NFA and DFA.
+
+66
+00:11:58,980 --> 00:12:01,360
+No need to, if there is NFA, there is also DFA.
+
+67
+00:12:02,620 --> 00:12:04,319
+So there is NFA, DFA.
+
+68
+00:12:06,440 --> 00:12:07,019
+Okay?
+
+69
+00:12:10,079 --> 00:12:11,319
+In this case,
+
+70
+00:12:12,211 --> 00:12:27,932
+The language is finite, so it is a regular language. So is there an NFA to recognize this language? Let me copy it.
+
+71
+00:12:30,451 --> 00:12:31,112
+Copy.
+
+72
+00:12:44,884 --> 00:12:50,724
+Okay, this language, NFA, for this.
+
+73
+00:12:52,064 --> 00:12:54,044
+So we have the start state.
+
+74
+00:13:03,028 --> 00:13:20,248
+It will consume symbol A, and it will go to a final state because symbol A is the element of language, Q1.
+
+75
+00:13:21,327 --> 00:13:30,128
+And if it will receive B, it will consume B, it will reach another final state.
+
+76
+00:13:30,868 --> 00:13:32,492
+This is Q2.
+
+77
+00:13:36,019 --> 00:13:39,000
+A, B is element of the language.
+
+78
+00:13:39,679 --> 00:13:40,960
+And there is another one.
+
+79
+00:13:42,139 --> 00:13:42,620
+C.
+
+80
+00:13:45,500 --> 00:13:50,179
+This is also another final state.
+
+81
+00:13:51,940 --> 00:13:55,700
+And since A, B, C is an element of the language.
+
+82
+00:13:56,599 --> 00:13:57,299
+And D.
+
+83
+00:14:04,307 --> 00:14:11,408
+T is also element of the language, so this string.
+
+84
+00:14:12,567 --> 00:14:15,607
+And is it now we have NFA? This is NFA.
+
+85
+00:14:16,467 --> 00:14:19,168
+How can we convert this NFA to DFA?
+
+86
+00:14:20,388 --> 00:14:32,168
+In order to have the DFA, each transition should have at least four...
+
+87
+00:14:32,692 --> 00:14:35,312
+A, outgoing transitions.
+
+88
+00:14:35,872 --> 00:14:40,172
+So each, sorry, each state should have at least four outgoing transitions.
+
+89
+00:14:40,172 --> 00:14:41,852
+So one, two, three, four.
+
+90
+00:14:42,352 --> 00:14:44,292
+The size of the alphabet is four.
+
+91
+00:14:44,872 --> 00:14:49,292
+So what we will add, we will add more transitions.
+
+92
+00:14:49,472 --> 00:14:51,192
+Let's say this is the dead transition.
+
+93
+00:14:52,412 --> 00:14:59,252
+So the first state Q0, we have A and D.
+
+94
+00:15:00,083 --> 00:15:26,223
+B and C, for example. Now, the outgoing transitions for Q0 is 4. And for Q1, we have this transition and it is A, C and D. So now the number of outgoing transitions for state Q1 is 4.
+
+95
+00:15:26,899 --> 00:15:36,019
+And for Q2, this is also A, B, and D.
+
+96
+00:15:37,799 --> 00:15:40,000
+And the last one.
+
+97
+00:15:43,508 --> 00:15:57,468
+A, B, C, and the number of outgoing transitions for state D, that the luck state.
+
+98
+00:15:58,028 --> 00:16:05,808
+So this is A, B, C, and D.
+
+99
+00:16:07,604 --> 00:16:17,724
+I have a DFA and also I have NFA to recognize the language, this language. So this language is regular.
+
+100
+00:16:27,028 --> 00:16:29,947
+So, if the language is finite...
+
+101
+00:16:34,323 --> 00:16:34,983
+If
+
+102
+00:16:39,251 --> 00:16:41,251
+This is very important.
+
+103
+00:16:42,751 --> 00:16:51,251
+If the language L is finite,
+
+104
+00:16:54,740 --> 00:16:55,399
+Dön.
+
+105
+00:16:59,283 --> 00:17:05,584
+The language L is regular.
+
+106
+00:17:09,203 --> 00:17:22,284
+DFA does no need to use pumping lemma.
+
+107
+00:17:25,811 --> 00:17:32,031
+To prove that language.
+
+108
+00:17:35,827 --> 00:17:38,288
+L is regular.
+
+109
+00:17:41,683 --> 00:17:42,183
+Ok.
+
+110
+00:17:45,183 --> 00:17:46,663
+Pumping lemma.
+
+111
+00:17:47,163 --> 00:17:48,603
+I repeat.
+
+112
+00:17:49,023 --> 00:17:49,983
+Pumping lemma.
+
+113
+00:17:55,347 --> 00:17:56,507
+Use it for
+
+114
+00:18:00,627 --> 00:18:02,067
+use it for
+
+115
+00:18:07,955 --> 00:18:14,115
+Yüzült, to prove that the language is not regular, okay?
+
+116
+00:18:19,092 --> 00:18:26,476
+And, so pumping lemma, use it for...
+
+117
+00:18:31,155 --> 00:18:32,036
+Infinite
+
+118
+00:18:36,692 --> 00:18:41,592
+Language, Infinite, Size, Languages.
+
+119
+00:18:53,011 --> 00:18:57,351
+Pumping lemma is used for infinite size languages.
+
+120
+00:19:00,915 --> 00:19:20,596
+Okay, so let us take infinite regular languages L. It contains infinite number of strings. So this language L contains infinite number of strings. And if the language is regular,
+
+121
+00:19:21,332 --> 00:19:29,872
+DFA, let's assume that language is regular, then there must be a DFA that recognizes this language.
+
+122
+00:19:30,932 --> 00:19:32,271
+So this is the DFA.
+
+123
+00:19:33,472 --> 00:19:44,912
+And as you see that, you see the states, and these states are connected with each other by transitions, but there is loop here.
+
+124
+00:19:46,612 --> 00:19:48,612
+So for example, this is a loop.
+
+125
+00:19:51,284 --> 00:20:01,084
+So, this loop, causes, the size of the language is infinite.
+
+126
+00:20:02,184 --> 00:20:02,484
+Okay?
+
+127
+00:20:03,284 --> 00:20:08,704
+Because of this loop, it causes the size of the language is infinite.
+
+128
+00:20:09,704 --> 00:20:14,903
+Okay, let us take a string from these languages and let's say it is W.
+
+129
+00:20:15,700 --> 00:20:30,680
+And this M is the number of states in DFA. So here you see the states. Assume that we have a string and the length of the string is more than the number of states in the DFA.
+
+130
+00:20:30,680 --> 00:20:39,320
+It means that in order to recognize the length string W,
+
+131
+00:20:40,531 --> 00:20:43,831
+There must be at least one loop.
+
+132
+00:20:45,192 --> 00:20:45,652
+Why?
+
+133
+00:20:46,311 --> 00:20:55,111
+Because the length of the string is more than the number of states in DFA.
+
+134
+00:20:55,951 --> 00:21:02,511
+If you remember the pigeon principle, there are many pigeons.
+
+135
+00:21:02,851 --> 00:21:06,871
+The number of pigeons means the length of the string.
+
+136
+00:21:08,243 --> 00:21:14,023
+And the number of bugs means the number of states in the DFA.
+
+137
+00:21:14,483 --> 00:21:29,143
+If the number of pigeons is more than the number of pigeonholes, so the number of states, so there must be some states used more than one.
+
+138
+00:21:35,763 --> 00:21:42,824
+This loop, this loop causes this state, this state and this state used many times.
+
+139
+00:21:43,403 --> 00:21:56,083
+If the length of the input string, W, is greater than the number of states here, we see that there is at least one loop.
+
+140
+00:21:57,236 --> 00:22:02,256
+Okay, so we can represent this conclusion like this.
+
+141
+00:22:02,635 --> 00:22:16,916
+So this is the, you apply the input, this is the input string, and the input string consists of symbols, sigma1, sigma2, sigmak, these are the symbols, so the length of the input is k.
+
+142
+00:22:18,376 --> 00:22:20,776
+So you, but the number of
+
+143
+00:22:22,387 --> 00:22:27,487
+The number of states in the system is M, and the M is less than K.
+
+144
+00:22:29,587 --> 00:22:41,887
+The length of the input string is K, and it is less than M, and the M is the number of states, as explained here.
+
+145
+00:22:44,884 --> 00:23:11,384
+If k is less than n, there is no problem, but we assume that the key, the length of the string is more than the number of states. So there is loop. We assume that in order to recognize string w, there must be loop. So as you see that.
+
+146
+00:23:12,723 --> 00:23:20,963
+Sigma 1, Sigma 2, you reach this state and there is loop and you go out. So you reach the final state. Okay?
+
+147
+00:23:25,603 --> 00:23:38,243
+In conclusion, there could be many states repeated. So we take Q to be the first state repeated. And we can show this.
+
+148
+00:23:39,188 --> 00:24:06,788
+Look, like you see the red line, it comes here, there is one loop and you reach to the final state. So you can write it as a sequence of states. Like this is the unique states you reach. And then there are some loops here, you see, from here to here. This is the repeated of some states. And then
+
+149
+00:24:07,119 --> 00:24:10,139
+You see here Q, this is another Q.
+
+150
+00:24:10,719 --> 00:24:13,259
+So this, there is loop here.
+
+151
+00:24:13,539 --> 00:24:19,240
+So you start from Q and you reach to the Q and then you reach the final space.
+
+152
+00:24:19,240 --> 00:24:22,579
+The number of transitions here is K.
+
+153
+00:24:23,939 --> 00:24:28,759
+The number of transitions here, let me write.
+
+154
+00:24:38,132 --> 00:24:39,091
+Number of
+
+155
+00:24:46,387 --> 00:24:51,508
+Ve bu kadar da növerestate, bazen states kullanan daha fazla bir.
+
+156
+00:24:51,508 --> 00:24:55,067
+Bu, eğer, bu state kullanan daha fazla bir.
+
+157
+00:25:08,723 --> 00:25:13,124
+Okay. In conclusion, W can be written like this.
+
+158
+00:25:14,443 --> 00:25:19,303
+Why? Here, it could be written as three parts.
+
+159
+00:25:19,884 --> 00:25:22,463
+The first part and the last part.
+
+160
+00:25:23,144 --> 00:25:26,763
+And Y is the repeated part.
+
+161
+00:25:26,983 --> 00:25:29,223
+Like, this is the W.
+
+162
+00:25:29,923 --> 00:25:32,203
+Can be written as XYZ.
+
+163
+00:25:32,544 --> 00:25:38,464
+This is string, this is string, this is also string, and there is a loop.
+
+164
+00:25:39,304 --> 00:25:40,704
+We will define the loop.
+
+165
+00:25:41,564 --> 00:25:43,084
+If there is one loop,
+
+166
+00:25:50,579 --> 00:25:51,579
+Evet, evet.
+
+167
+00:25:51,579 --> 00:25:55,884
+Evet.
+
+168
+00:25:58,963 --> 00:26:23,563
+Bu, bu
+
+169
+00:26:23,827 --> 00:26:49,347
+This Q, you see, repeated. The first part is X. The second part, from state to the, you reach the same, Y. And from state to the final state, from this state to the final state is Z. So we divide the input string into three concatenation of three string.
+
+170
+00:26:49,875 --> 00:26:51,596
+x, y, and z.
+
+171
+00:26:54,296 --> 00:27:16,836
+In DFA, x, y, z, like this, this part, this part is for string x, this part is for string y, this y is about the loop, and this part,
+
+172
+00:27:17,135 --> 00:27:35,296
+is about the string Z. So X, Y, Z are concatenated to form input string W. So this is the state transitions to recognize the input string W.
+
+173
+00:27:36,735 --> 00:27:44,096
+Our observation is this. Look, input string X and Y
+
+174
+00:27:44,756 --> 00:27:50,735
+Okay, the length of X and Y is less than the number of states.
+
+175
+00:27:51,235 --> 00:27:58,096
+Why? Because we know that this is the first one loop.
+
+176
+00:27:59,115 --> 00:28:01,375
+This is one.
+
+177
+00:28:01,776 --> 00:28:10,056
+So there is a loop and this loop, X and Y must be less than the number of states.
+
+178
+00:28:10,996 --> 00:28:20,056
+And this remaining causes the length of the string is greater, so more than the number of states.
+
+179
+00:28:20,155 --> 00:28:33,316
+So we observe that the concatenation of X and Y, the length of the concatenation of X and Y is less than the number of states or equal to the number of states.
+
+180
+00:28:34,216 --> 00:28:34,635
+Okay?
+
+181
+00:28:35,443 --> 00:28:40,124
+So, this is our first observation.
+
+182
+00:28:43,124 --> 00:28:56,003
+And also, we observed that the length of y must be minimum 1.
+
+183
+00:28:56,723 --> 00:28:59,703
+Because, for example, it could be like this.
+
+184
+00:29:03,188 --> 00:29:06,788
+This is the input string. Let me plot it here.
+
+185
+00:29:10,324 --> 00:29:36,964
+Maybe blue is good. So, star state, sigma 1, symbol, so you reach another state, and dot, dot, dot, and you reach sigma j, you reach state q, and here the loop is only one symbol.
+
+186
+00:29:40,115 --> 00:29:47,056
+For example, in this case, you see the length of the y is 1.
+
+187
+00:29:57,556 --> 00:29:58,855
+So, here.
+
+188
+00:30:02,420 --> 00:30:12,587
+Y'e y
+
+189
+00:30:19,763 --> 00:30:31,124
+Ok, so the length of the y means this one, the middle one, should have the length at least one.
+
+190
+00:30:32,403 --> 00:30:33,003
+Ok.
+
+191
+00:30:36,819 --> 00:30:47,819
+Daha sonra, bu kısımda, bu kısımda.
+
+192
+00:30:51,124 --> 00:31:00,724
+This is the path that input is accepted, W. W, let me write W here.
+
+193
+00:31:05,268 --> 00:31:06,807
+So, this is X.
+
+194
+00:31:15,827 --> 00:31:22,347
+This is x, this is w, here is like this one.
+
+195
+00:31:24,107 --> 00:31:32,627
+For example, you start from this state, you reach and then you go back, something like this, you reach the final states.
+
+196
+00:31:33,727 --> 00:31:37,347
+These are also the forms, but we do not care such forms.
+
+197
+00:31:37,487 --> 00:31:41,587
+What we are keeping this form is simple, x, y, z.
+
+198
+00:31:44,211 --> 00:31:55,172
+And also, as you remember, we said that XYZ is W, XYZ, and it is accepted by the languages.
+
+199
+00:31:55,172 --> 00:32:10,951
+When W, when XYZ will also accept it by the languages.
+
+200
+00:32:11,763 --> 00:32:14,503
+Why? Because it is repeated.
+
+201
+00:32:15,963 --> 00:32:19,263
+When x, y, z, this is zero.
+
+202
+00:32:20,083 --> 00:32:22,343
+When I write it is zero.
+
+203
+00:32:24,803 --> 00:32:27,103
+Actually, this is equal to x, z.
+
+204
+00:32:27,903 --> 00:32:32,263
+X and z must also be the element of the languages.
+
+205
+00:32:33,044 --> 00:32:43,224
+Why? Because there is no loop. This loop is canceled out because y0 means empty string.
+
+206
+00:32:44,324 --> 00:32:52,484
+Okay, so x, y, 0, z is equal to, let me write clearly.
+
+207
+00:32:54,548 --> 00:33:00,727
+X, empty string Z, and this is equal to XZ.
+
+208
+00:33:01,427 --> 00:33:03,707
+And it must be element of the languages.
+
+209
+00:33:04,247 --> 00:33:05,007
+Look at this.
+
+210
+00:33:05,767 --> 00:33:07,548
+You start, this is Q0.
+
+211
+00:33:08,407 --> 00:33:09,447
+This is start state.
+
+212
+00:33:09,967 --> 00:33:14,627
+You start, and you reach the final state, QF.
+
+213
+00:33:15,987 --> 00:33:16,467
+Okay?
+
+214
+00:33:17,407 --> 00:33:19,288
+You reach the final state.
+
+215
+00:33:19,288 --> 00:33:22,028
+You can reach directly on this path.
+
+216
+00:33:23,188 --> 00:33:25,888
+You see the red path? So you reach.
+
+217
+00:33:26,968 --> 00:33:29,788
+Or you can reach to the final state like this.
+
+218
+00:33:29,888 --> 00:33:34,248
+You reach here, you loop, and you reach the final state.
+
+219
+00:33:35,448 --> 00:33:44,588
+Or from state Q0, you reach state Q, and you loop, you loop again, you loop again, you loop again.
+
+220
+00:33:44,708 --> 00:33:49,188
+You see, you can do many loops, and you can reach to the final states then.
+
+221
+00:33:49,907 --> 00:34:11,987
+So, in minimum, when there is no loop, when you do not follow this path, means that X and Z must be the element of the languages because when you follow X and Z, you reach the final state.
+
+222
+00:34:17,235 --> 00:34:41,435
+The string is X, W, X, Y, Y, Z is also accepted. So now you X, Y, here, you, you, for the second Y, and this is another loop. So there are two loops here, and then you reach the final state by Z part.
+
+223
+00:34:44,211 --> 00:34:56,371
+This one can be written as x y square z must be also the element of the language.
+
+224
+00:35:01,172 --> 00:35:04,492
+What about this one? This is also true.
+
+225
+00:35:06,552 --> 00:35:08,231
+This is also...
+
+226
+00:35:13,012 --> 00:35:15,512
+This is also element of the language.
+
+227
+00:35:16,712 --> 00:35:23,712
+So here X, triple loops, and Z, and you reach the final state.
+
+228
+00:35:23,811 --> 00:35:28,452
+So there are three loops here because of Y3.
+
+229
+00:35:29,731 --> 00:35:36,932
+In general, XYZ is accepted.
+
+230
+00:35:37,532 --> 00:35:40,412
+Okay, so you see here.
+
+231
+00:35:40,980 --> 00:35:48,199
+X, R times loop, and Z, you reach the final state.
+
+232
+00:35:49,099 --> 00:35:51,640
+So, pumping lemma is this.
+
+233
+00:35:52,940 --> 00:35:56,980
+You are given an infinite languages, okay?
+
+234
+00:35:58,140 --> 00:36:06,739
+And you are assumed that the language is, you are given an infinite regular language, L.
+
+235
+00:36:07,251 --> 00:36:17,751
+ve an integer, M, bu da nf-a, df-a, if it is possible.
+
+236
+00:36:17,751 --> 00:36:18,751
+Okay?
+
+237
+00:36:18,751 --> 00:36:34,251
+And for any string from the language whose string length is greater than the M, this critical length, then we can write
+
+238
+00:36:35,155 --> 00:36:55,716
+This string as x, y, z. We can partition the string as the concatenation of x, y, z. Where x times the concatenation, the length of the concatenation of x and y must be less than the critical length.
+
+239
+00:36:56,916 --> 00:37:01,796
+And the length of the y must be minimum one.
+
+240
+00:37:02,867 --> 00:37:15,887
+Such that X, I, Z, all, for all I, 0, 1, 2, all these strings are the element of the languages.
+
+241
+00:37:17,887 --> 00:37:19,967
+So this is the pumping lemma.
+
+242
+00:37:26,643 --> 00:37:28,643
+Aplications of pumping lemma.
+
+243
+00:37:32,143 --> 00:37:33,403
+Every language.
+
+244
+00:37:37,403 --> 00:37:40,143
+Okay, we can do pumping lemma.
+
+245
+00:37:50,291 --> 00:37:52,291
+Let me see.
+
+246
+00:37:52,291 --> 00:37:53,291
+Okay.
+
+247
+00:37:56,291 --> 00:37:59,291
+Okay, the proof method.
+
+248
+00:37:59,291 --> 00:38:01,291
+Okay. Observation.
+
+249
+00:38:01,291 --> 00:38:05,291
+Every language of finite size has to be regular.
+
+250
+00:38:05,291 --> 00:38:15,291
+Because for finite size language, we can easily construct an NFA or DFA that accepts.
+
+251
+00:38:15,344 --> 00:38:32,172
+Bu, bu
+
+252
+00:38:36,884 --> 00:38:44,944
+suppose that you want to prove an infinite language is not a regular.
+
+253
+00:38:45,644 --> 00:38:51,043
+First, we will use the contradiction technique, so we assume the opposite.
+
+254
+00:38:55,043 --> 00:38:58,984
+So we assume that L is regular.
+
+255
+00:38:59,827 --> 00:39:04,988
+Çünkü, pumping lemma is used to prove that language is not regular.
+
+256
+00:39:05,788 --> 00:39:10,228
+So, by contradiction, we assume that language is regular.
+
+257
+00:39:10,868 --> 00:39:14,628
+And then we apply the pumping lemma for L.
+
+258
+00:39:15,988 --> 00:39:19,427
+And we use the pumping lemma to obtain the contradiction.
+
+259
+00:39:20,868 --> 00:39:22,188
+The pumping lemma above.
+
+260
+00:39:23,387 --> 00:39:26,188
+We use this pumping lemma.
+
+261
+00:39:27,027 --> 00:39:37,867
+Açıkçı, ifade, contradikçiyonu, ifade, contradikçiyonu, and we say that L is not regular.
+
+262
+00:39:39,447 --> 00:39:43,447
+Here, explanation of step 3 is very important.
+
+263
+00:39:44,627 --> 00:39:48,967
+So in this step 3, you have to choose the number of states M.
+
+264
+00:39:48,967 --> 00:39:51,607
+This is the critical length for the language.
+
+265
+00:39:52,179 --> 00:39:55,579
+Bu çok önemli, bu kadar da seçilmiştir.
+
+266
+00:40:19,956 --> 00:40:32,735
+You choose a particular string W, such that the length of the string must be greater than the number M you choose.
+
+267
+00:40:33,956 --> 00:40:42,448
+If these first two conditions are provided, then you can...
+
+268
+00:40:42,447 --> 00:41:02,228
+Assume that you are able to write the string into three parts, x, y, z. W is the concatenation of x, y, z. But how you find x, how you find y, and how you find z. This is very simple.
+
+269
+00:41:08,500 --> 00:41:15,300
+Partition, then you have to be sure that XZ must be also the element of the language.
+
+270
+00:41:20,755 --> 00:41:23,155
+Why? Because,
+
+271
+00:41:27,603 --> 00:41:29,743
+x, y, 0, z
+
+272
+00:41:29,743 --> 00:41:32,343
+is equal to
+
+273
+00:41:35,731 --> 00:41:48,971
+It is element of the languages X, Y, I, Z element of the languages for all I.
+
+274
+00:41:50,652 --> 00:42:02,992
+If you show that for some I, X, Y, I, Z is not the element of the language and then
+
+275
+00:42:03,891 --> 00:42:23,711
+You conclude that this is the contradiction and according to the pumping lemma, X, Y, I, Z must be the element of the languages. So the language is not regular. Okay?
+
+276
+00:42:25,204 --> 00:42:36,184
+So here it is enough to, it is important to show that one string from the languages gives the contradiction.
+
+277
+00:42:36,503 --> 00:42:44,744
+So you have to choose the W here. This W must be the element of the languages. This is very important.
+
+278
+00:42:48,596 --> 00:42:58,355
+Okay? And you can show that contradiction occurs for a certain case, then it is enough.
+
+279
+00:42:59,496 --> 00:43:13,355
+For example, we can use the pumping lemma to prove that this language is not regular. Okay? Actually, this language is not regular. We already showed it in our previous lecture.
+
+280
+00:43:15,123 --> 00:43:21,443
+VLi, because there is no NFA or DFA to accept these languages.
+
+281
+00:43:22,483 --> 00:43:27,623
+The number of states to accept that languages is infinite.
+
+282
+00:43:27,884 --> 00:43:35,663
+So this is not a regular languages, but we can prove that this language is not regular by using pumping lemma.
+
+283
+00:43:36,403 --> 00:43:44,724
+According to the pumping lemma, first we will assume that the L, this language is regular for contradiction.
+
+284
+00:43:46,064 --> 00:43:49,543
+And also we look at the size of the L.
+
+285
+00:43:50,804 --> 00:43:54,423
+The size of the L is also infinite.
+
+286
+00:43:56,164 --> 00:43:59,324
+Okay, so we can apply the pumping lemma.
+
+287
+00:44:01,124 --> 00:44:03,523
+For the critical length M,
+
+288
+00:44:03,956 --> 00:44:15,336
+is chosen such that W is element of the languages.
+
+289
+00:44:16,256 --> 00:44:29,236
+So you have to choose M, but with this pattern, the length of the word must be M.
+
+290
+00:44:32,884 --> 00:44:37,563
+What is the... And W must be also the string.
+
+291
+00:44:44,467 --> 00:44:45,788
+Arkadaşlar, ses geliyor.
+
+292
+00:45:06,068 --> 00:45:16,068
+So we pick W from this language such that whose length must be greater than M. What is M?
+
+293
+00:45:17,508 --> 00:45:32,847
+So for example, if we pick a string from here, let's say we pick A power M, B power M, so M times A and M times B, this is the string.
+
+294
+00:45:33,940 --> 00:45:52,519
+And we can choose that the length of the M is, so the length of the W is greater than M. So this condition is provided.
+
+295
+00:45:55,280 --> 00:45:57,240
+Now we will
+
+296
+00:45:58,900 --> 00:46:25,195
+Bu, bu stringin yi'nin yi
+
+297
+00:46:25,715 --> 00:46:30,096
+Okay, so how can we do this?
+
+298
+00:46:30,996 --> 00:46:38,875
+So, x, y, if less than m, so this is the total length m, m times a and m times b.
+
+299
+00:46:39,976 --> 00:46:47,735
+So, x, y is less than m, so this is x, this is y, okay?
+
+300
+00:46:53,427 --> 00:46:55,887
+Z, ok?
+
+301
+00:46:56,768 --> 00:47:02,967
+And here does, Y is AK, ok?
+
+302
+00:47:03,107 --> 00:47:04,047
+Something like this.
+
+303
+00:47:05,248 --> 00:47:08,347
+So, K times A.
+
+304
+00:47:12,148 --> 00:47:26,408
+So, x, y, z, and we choose y is k times a, the length of y is less than m. So, we will apply the pumping lemma.
+
+305
+00:47:30,547 --> 00:47:31,007
+Ok?
+
+306
+00:47:38,068 --> 00:47:53,467
+When we apply the pumping lemma, actually, we see that, we will see that, for example, for I2, IZ, let me see the IZ.
+
+307
+00:47:58,467 --> 00:47:59,188
+Okay.
+
+308
+00:48:00,340 --> 00:48:23,920
+So, for L, I is 2, X, Y, square, Z must be element of the languages. Is it true? Let us check. So, X, Y, square, Z. So, now, we repeat the Y two times. Now, the number of A's is M plus K.
+
+309
+00:48:24,351 --> 00:48:28,052
+A number of B is M. So this is the string.
+
+310
+00:48:29,211 --> 00:48:38,472
+Is A plus, the length M plus K times A and M times B. So this is the element of the languages.
+
+311
+00:48:40,311 --> 00:48:41,112
+No.
+
+312
+00:48:42,972 --> 00:48:47,731
+This is also, so this is not the element of the languages.
+
+313
+00:48:49,684 --> 00:49:14,704
+Then we say that this is the contradiction. It must be L, but it is not, it must be the element after this pumping, it must be the element of the regular languages, but it is not. So this is the contradiction. Therefore, the language L, this language is not regular.
+
+314
+00:49:15,827 --> 00:49:17,648
+Yani şöyle yapıyoruz kısaca.
+
+315
+00:49:20,568 --> 00:49:25,028
+Dilden bir tane string seçiyoruz.
+
+316
+00:49:25,908 --> 00:49:32,327
+Seçmiş olduğumuz stringin, seçmiş olduğumuz stringi üç parça ayırıyoruz.
+
+317
+00:49:32,508 --> 00:49:33,847
+Sonra pump uyguluyoruz.
+
+318
+00:49:34,768 --> 00:49:38,148
+Pump uyguladığımızda elde etmiş olduğumuz bütün stringlerin,
+
+319
+00:49:39,268 --> 00:49:43,347
+en azından elde etmiş olduğumuz bütün stringlerin,
+
+320
+00:49:43,860 --> 00:50:01,719
+Dilin bir elemanı olması gerekiyor. Ama en az bir tanesi dilin elemanı değilse o zaman contradiction oluşuyor. Çünkü biz ne yapmıştık? Dili regular kabul etmiştik. Eğer contradiction oluyor ise dil regular değildir.
+
+321
+00:50:04,692 --> 00:50:20,731
+Mesela başka örnekler de var. Yapabiliriz. Bunu birazdan araya verdikten sonra yapalım. Tamam. 10 dakika ara veriyoruz arkadaşlar.
+
+322
+01:02:01,172 --> 01:02:02,951
+Evet arkadaşlar, devam ediyoruz.
+
+323
+01:02:07,951 --> 01:02:17,911
+We are given the languages and we first assume that the language is regular to achieve a contradiction by using the pumping lemma.
+
+324
+01:02:18,672 --> 01:02:25,771
+After this contradiction, we conclude that the language is not a regular language.
+
+325
+01:02:28,211 --> 01:02:39,391
+The regular languages, this is the NFA and these are regular languages, are the languages that are accepted and recognized by NFA and DFA.
+
+326
+01:02:40,131 --> 01:02:48,951
+Non-regular languages is much more powerful than the regular languages and the regular languages is the subset of non-regular languages, okay?
+
+327
+01:02:50,311 --> 01:02:54,351
+So, that is why.
+
+328
+01:02:54,771 --> 01:03:05,631
+If we know that the language is not regular, so it is outside the circle, so it must be a non-regular language.
+
+329
+01:03:06,471 --> 01:03:09,951
+So let us have some examples.
+
+330
+01:03:12,131 --> 01:03:13,331
+One second.
+
+331
+01:03:14,771 --> 01:03:16,651
+I will change the slide.
+
+332
+01:03:49,427 --> 01:04:03,567
+Anyway, let us do examples by ourselves. I am not able to find the document. Okay. One second.
+
+333
+01:04:18,804 --> 01:04:21,804
+ve insert, page.
+
+334
+01:04:30,356 --> 01:04:37,276
+Tamam, let's say we have the language like this.
+
+335
+01:04:40,820 --> 01:04:55,059
+I have the language and let me a power m, b power n, m.
+
+336
+01:04:59,219 --> 01:05:03,539
+And n is greater than or equal to zero.
+
+337
+01:05:06,963 --> 01:05:20,063
+First of all, we have to check the size. The size of the language is infinite. So, L could be a non-regular.
+
+338
+01:05:24,083 --> 01:05:24,843
+Language.
+
+339
+01:05:27,803 --> 01:05:29,579
+Is it to...
+
+340
+01:05:32,659 --> 01:05:38,659
+Tamam, ilk önce de bu konuda izleyicen.
+
+341
+01:05:44,532 --> 01:05:54,451
+And the other, so we will assume that, we don't know this language is regular or not.
+
+342
+01:05:55,112 --> 01:05:58,331
+We assume that the language is regular.
+
+343
+01:05:59,052 --> 01:06:10,711
+So we have to choose a string from the language such that this string will be written as
+
+344
+01:06:11,603 --> 01:06:15,243
+The concatenation of three strings, X, Y, and Z.
+
+345
+01:06:16,283 --> 01:06:16,703
+Okay.
+
+346
+01:06:17,583 --> 01:06:19,903
+And we will show that
+
+347
+01:06:25,780 --> 01:06:32,680
+The length of x and y, less than some critical, less than or equal to some critical length.
+
+348
+01:06:33,820 --> 01:06:40,559
+Further, the length of the y must be minimum 1.
+
+349
+01:06:43,059 --> 01:06:50,880
+And we know that, another conclusion, x.
+
+350
+01:06:52,307 --> 01:07:01,427
+Y, zero, z means, X, z is element of the languages, so you have to choose.
+
+351
+01:07:03,668 --> 01:07:17,268
+And you have to show that, X, Y, Z for all i, element of the language, you have to check.
+
+352
+01:07:21,844 --> 01:07:22,884
+For All
+
+353
+01:07:26,516 --> 01:07:54,516
+Evet.
+
+354
+01:07:54,420 --> 01:07:55,660
+This is the language.
+
+355
+01:07:59,100 --> 01:07:59,640
+Yes.
+
+356
+01:08:08,340 --> 01:08:10,559
+Ok, let me choose a string.
+
+357
+01:08:12,619 --> 01:08:15,400
+Let's say the string is this one.
+
+358
+01:08:20,724 --> 01:08:43,324
+Okay. Is it element of the language? Yes, it is element of the language. I choose. This is an example. You can choose other languages and other strings. So I choose this one. So I assume that the length, this is written as three.
+
+359
+01:08:45,011 --> 01:08:54,231
+3 part, let me write this part as y, sorry, x.
+
+360
+01:08:56,011 --> 01:08:58,155
+This part is...
+
+361
+01:09:03,155 --> 01:09:05,355
+Y ve Z part.
+
+362
+01:09:09,108 --> 01:09:11,488
+Is it possible to choose like this?
+
+363
+01:09:17,811 --> 01:09:44,752
+Okay, first of all, in order to choose this, let me write x, y, 0, z. What is x, y, 0, z? A, A, B is element of the language. So nice. The first tick is done. And we assume that the length of x, y, what is the length of x, y? It's 5.
+
+364
+01:09:46,376 --> 01:09:48,376
+Evet.
+
+365
+01:09:45,652 --> 01:09:51,652
+ve bu kritik length olarak 6'ye seçiyorum.
+
+366
+01:09:54,652 --> 01:09:59,652
+Ok, bu kritik length olarak m'ye seçiyorum.
+
+367
+01:10:04,148 --> 01:10:15,028
+And the length of y is equal to 3, and this is greater than 1. So this is also done. This is also done.
+
+368
+01:10:17,448 --> 01:10:23,087
+Now I will look at the pump of the string.
+
+369
+01:10:25,448 --> 01:10:30,788
+X, let me write, by blue.
+
+370
+01:10:31,667 --> 01:10:35,507
+x, y, 0, z is element of the language.
+
+371
+01:10:36,907 --> 01:10:45,247
+x, y, z is also element of the languages by choosing the string.
+
+372
+01:10:46,167 --> 01:10:51,527
+What about x, y, square, z?
+
+373
+01:10:51,527 --> 01:10:58,447
+This is equal to x is double A.
+
+374
+01:10:59,060 --> 01:11:00,180
+This is X.
+
+375
+01:11:01,800 --> 01:11:03,860
+And Y is?
+
+376
+01:11:04,920 --> 01:11:07,360
+Double A, B, double A, B.
+
+377
+01:11:07,540 --> 01:11:08,860
+And this is the Y.
+
+378
+01:11:09,520 --> 01:11:11,340
+And this is another Y.
+
+379
+01:11:11,920 --> 01:11:13,500
+And B is?
+
+380
+01:11:16,540 --> 01:11:17,340
+Z.
+
+381
+01:11:18,060 --> 01:11:19,900
+Is it element of the languages?
+
+382
+01:11:20,900 --> 01:11:22,420
+No.
+
+383
+01:11:22,420 --> 01:11:23,560
+Then?
+
+384
+01:11:27,060 --> 01:11:31,739
+Çünkü bu kontradiktsiyonlar,
+
+385
+01:11:36,724 --> 01:11:42,564
+Aslında, it must be the element of the languages. Why? Because we assume that L is regular.
+
+386
+01:11:50,131 --> 01:11:51,671
+L is assumed regular.
+
+387
+01:11:54,492 --> 01:11:57,331
+Okay, L is assumed regular at the beginning.
+
+388
+01:11:57,331 --> 01:12:04,492
+Now, because of this contradiction, it must be the element of the languages, but it is not the element of languages.
+
+389
+01:12:06,111 --> 01:12:07,291
+What is this?
+
+390
+01:12:08,251 --> 01:12:09,391
+The language is?
+
+391
+01:12:12,751 --> 01:12:13,351
+Unregular.
+
+392
+01:12:14,671 --> 01:12:15,811
+Are you sure?
+
+393
+01:12:17,684 --> 01:12:18,264
+Evet.
+
+394
+01:12:22,644 --> 01:12:24,644
+Bu yanlış bir solution.
+
+395
+01:12:26,644 --> 01:12:28,644
+Bu yanlış bir şey.
+
+396
+01:12:29,644 --> 01:12:31,644
+Neden? Çünkü NFA ve DFA.
+
+397
+01:12:32,644 --> 01:12:33,644
+Bu yanlış yukarıda?
+
+398
+01:12:46,163 --> 01:12:48,163
+Let me show you the...
+
+399
+01:12:53,492 --> 01:12:54,492
+Steps.
+
+400
+01:12:57,372 --> 01:12:58,572
+What is our mistake?
+
+401
+01:13:06,292 --> 01:13:08,992
+Hocam, X, Y, Z'yi yanlış seçmiş olabilirsin.
+
+402
+01:13:11,391 --> 01:13:19,012
+Ama nasıl seçecektik? Nasıl seçmeliydik? Şartları sağladım pumping lemmadaki.
+
+403
+01:13:20,872 --> 01:13:24,131
+Bak, şartları tekrar hatırlayalım pumping lemmadaki.
+
+404
+01:13:33,844 --> 01:13:56,203
+W'yu seçiyorum ve XYZ böyle seçiyorum ve W'nin uzunluğu M'den büyük olacak tamam. Y'nin uzunluğu M'den küçük olacak. Y'nin uzunluğu minimum 1 olacak. Hepsini bu şekilde seçtim.
+
+405
+01:13:58,503 --> 01:14:00,344
+Şimdi şuraya gelelim.
+
+406
+01:14:06,676 --> 01:14:08,716
+Şimdi buradaki hatamız ne olabilir?
+
+407
+01:14:27,347 --> 01:14:30,528
+Critical length'i seçmekte bir problem var değil mi?
+
+408
+01:14:37,332 --> 01:14:49,852
+Critical length ne olabilir? Bizim critical length'imiz 6 olsa, 6 ise bu durumda 5 olmuş oldu. Bu şekilde seçmiş olabilirdim.
+
+409
+01:15:08,307 --> 01:15:08,927
+Evet arkadaşlar.
+
+410
+01:15:12,724 --> 01:15:18,664
+Bu tür problemlerde mümkün olduğunca W'yu küçük seçeceksiniz. Tamam mı?
+
+411
+01:15:19,184 --> 01:15:23,863
+W'yu biz uzunluğunda seçmeniz daha uygun olacak böyle durumlarda.
+
+412
+01:15:24,744 --> 01:15:28,003
+W'yu biz seçmiş olsaydık uzunluğunu değil mi?
+
+413
+01:15:29,463 --> 01:15:30,384
+O zaman ne olacaktı?
+
+414
+01:15:31,083 --> 01:15:35,543
+Hem şartı sağlamış olacaktı, daha doğru sonuçlar elde edecektik.
+
+415
+01:15:35,807 --> 01:15:51,967
+Dolayısıyla şu pardon W diyorum ya, şu pump edilen kısmın uzunluğunu biz 3 seçtik. 1 seçebilirdik. 1 seçersek bu durumda ben şimdi aynısını tekrardan yazıyorum.
+
+416
+01:16:04,083 --> 01:16:07,304
+This is the languages. Let me write.
+
+417
+01:16:19,988 --> 01:16:23,068
+So, I choose the W.
+
+418
+01:16:24,747 --> 01:16:25,708
+How many?
+
+419
+01:16:27,307 --> 01:16:28,628
+4A and W.
+
+420
+01:16:38,036 --> 01:17:03,876
+Okay, so here, this is X, this is Y, and this is Z, for example. You can choose like this. And XZ is element of the languages. What is XZ? XZ is equal to R.
+
+421
+01:17:06,131 --> 01:17:07,131
+AAA,
+
+422
+01:17:15,956 --> 01:17:21,695
+AAA, BBB is elemental to language, so it's okay.
+
+423
+01:17:22,695 --> 01:17:37,496
+And XY is four, and we can assume that it is less than critical length, M.
+
+424
+01:17:44,020 --> 01:17:48,700
+1, 2, 3, 4, 5, 6.
+
+425
+01:17:50,100 --> 01:17:52,880
+So, it must be greater than also 6.
+
+426
+01:17:59,572 --> 01:17:59,931
+Okay?
+
+427
+01:18:02,931 --> 01:18:05,332
+So, this is equal to 6.
+
+428
+01:18:10,100 --> 01:18:36,940
+M'nin n'in n
+
+429
+01:18:37,108 --> 01:18:38,307
+This is nice.
+
+430
+01:18:40,087 --> 01:18:47,347
+And now, 4 is also possible.
+
+431
+01:18:49,507 --> 01:18:50,927
+Both are possible.
+
+432
+01:18:51,747 --> 01:18:52,087
+Okay.
+
+433
+01:18:52,667 --> 01:18:54,128
+Now, I check.
+
+434
+01:18:54,907 --> 01:19:00,007
+X, Y, Z, double Z.
+
+435
+01:19:00,128 --> 01:19:01,108
+So, what is the result?
+
+436
+01:19:01,108 --> 01:19:04,028
+This is X.
+
+437
+01:19:04,467 --> 01:19:07,728
+And double times Y.
+
+438
+01:19:08,547 --> 01:19:08,887
+Okay.
+
+439
+01:19:09,587 --> 01:19:12,728
+And is it element of language?
+
+440
+01:19:12,987 --> 01:19:13,307
+Yes.
+
+441
+01:19:15,128 --> 01:19:16,827
+What about this one?
+
+442
+01:19:20,595 --> 01:19:21,155
+Jesus.
+
+443
+01:19:26,579 --> 01:19:32,699
+This is x, this is y, this is y², this is z.
+
+444
+01:19:32,699 --> 01:19:36,579
+So now xAAA.
+
+445
+01:19:42,355 --> 01:19:48,355
+Bu, X, Y, Z ve Z.
+
+446
+01:19:48,355 --> 01:19:52,355
+Bu, ilaçlarla ilgili bir element.
+
+447
+01:19:52,355 --> 01:19:58,355
+Ve, X, Y, Z'liklerden geçebilir.
+
+448
+01:20:07,283 --> 01:20:25,103
+This is also element of the languages and so on. X, Y, I, Z. This is also element of the languages. Then there is no contradiction.
+
+449
+01:20:30,899 --> 01:20:34,763
+D
+
+450
+01:20:48,467 --> 01:20:51,167
+is regular.
+
+451
+01:20:52,807 --> 01:20:53,448
+Okay?
+
+452
+01:20:54,987 --> 01:20:56,747
+This is the correct solution.
+
+453
+01:20:57,288 --> 01:21:00,667
+You have to be very careful when you choose the critical length.
+
+454
+01:21:00,768 --> 01:21:01,887
+This is critical length.
+
+455
+01:21:07,539 --> 01:21:14,539
+A' n'yı
+
+456
+01:21:14,539 --> 01:21:20,539
+K' n'yı
+
+457
+01:21:23,828 --> 01:21:25,007
+K, L.
+
+458
+01:21:27,167 --> 01:21:27,587
+Okay.
+
+459
+01:21:28,488 --> 01:21:31,888
+So this is the correct pumping lemma application.
+
+460
+01:21:32,488 --> 01:21:35,807
+So we can do many, we can do other examples.
+
+461
+01:21:36,468 --> 01:21:41,368
+Let me say, for example,
+
+462
+01:21:45,939 --> 01:22:09,199
+We have this let, let means let L, let's say W is element of AB, clean star, such that, okay, the first,
+
+463
+01:22:19,412 --> 01:22:35,932
+Such that the first, the middle and last, the last.
+
+464
+01:22:45,108 --> 01:22:47,388
+Characters or the symbols
+
+465
+01:22:47,388 --> 01:22:51,388
+Of
+
+466
+01:22:51,388 --> 01:22:53,427
+String
+
+467
+01:22:53,427 --> 01:22:55,667
+W
+
+468
+01:22:55,667 --> 01:22:57,748
+Are
+
+469
+01:22:57,748 --> 01:23:00,228
+Identical
+
+470
+01:23:08,148 --> 01:23:08,748
+Eq.
+
+471
+01:23:10,167 --> 01:23:11,847
+Ok, this is the language.
+
+472
+01:23:14,667 --> 01:23:18,108
+We need to prove that it is regular or not.
+
+473
+01:23:23,731 --> 01:23:25,851
+Is it regular or not? We have to prove.
+
+474
+01:23:26,851 --> 01:23:29,992
+First of all, let us choose a language.
+
+475
+01:23:31,412 --> 01:23:33,231
+We have to choose a, sorry.
+
+476
+01:23:33,551 --> 01:23:35,512
+First of all, let us choose a string.
+
+477
+01:23:36,451 --> 01:23:41,412
+The string will be written as x, y, z.
+
+478
+01:23:44,172 --> 01:23:45,891
+The first step,
+
+479
+01:23:47,332 --> 01:23:49,131
+we assume that
+
+480
+01:23:57,011 --> 01:24:20,751
+The language L is regular. This is our assumption. This is done. The second one, W is element of the languages by our assumption. We assume that X, Y, Z.
+
+481
+01:24:21,652 --> 01:24:28,731
+This thing is written as the concatenation of x, y, z. So this is element of the languages.
+
+482
+01:24:31,551 --> 01:24:43,072
+And we have to choose w such that it must also be the element of the languages.
+
+483
+01:24:51,539 --> 01:25:11,539
+Do you have any example? Can we write? Yes. So, x. Let me write 0, beginning. 1, 0, 0.
+
+484
+01:25:17,908 --> 01:25:21,847
+0, 1, 0, 0.
+
+485
+01:25:21,988 --> 01:25:23,048
+This is in the middle.
+
+486
+01:25:25,808 --> 01:25:29,948
+1, 0, 0.
+
+487
+01:25:31,628 --> 01:25:32,188
+Okay.
+
+488
+01:25:32,868 --> 01:25:34,188
+This is the beginning.
+
+489
+01:25:36,048 --> 01:25:36,768
+0.
+
+490
+01:25:37,847 --> 01:25:40,568
+Middle is 0 and the last is 0.
+
+491
+01:25:40,688 --> 01:25:41,948
+So they are identical.
+
+492
+01:25:42,948 --> 01:25:44,588
+Or we can say AAB.
+
+493
+01:25:45,395 --> 01:25:50,395
+Sorry, you have to choose symbol AB.
+
+494
+01:25:50,395 --> 01:25:51,395
+Sorry.
+
+495
+01:25:51,395 --> 01:26:03,395
+AB, AA, B, AA.
+
+496
+01:26:03,395 --> 01:26:07,395
+Is it element of the languages? Why?
+
+497
+01:26:07,395 --> 01:26:12,395
+The first, middle.
+
+498
+01:26:12,979 --> 01:26:14,979
+ve last,
+
+499
+01:26:16,340 --> 01:26:18,091
+are identical.
+
+500
+01:26:21,332 --> 01:26:36,992
+Now, I will separate this into, I will partition this string into three string, x, y, z, such that x, z must be the element of the languages.
+
+501
+01:26:37,652 --> 01:26:47,752
+And also, it should, in this case, how can we do this? Let's say this is x.
+
+502
+01:26:52,372 --> 01:26:53,452
+This is x.
+
+503
+01:26:56,192 --> 01:26:56,672
+And
+
+504
+01:26:56,672 --> 01:27:01,192
+We have to partition.
+
+505
+01:27:02,612 --> 01:27:06,291
+We remove it and it will steal
+
+506
+01:27:06,291 --> 01:27:08,612
+element of.
+
+507
+01:27:09,231 --> 01:27:10,072
+Okay, good.
+
+508
+01:27:10,572 --> 01:27:12,012
+If I remove this part,
+
+509
+01:27:13,692 --> 01:27:14,731
+this is y.
+
+510
+01:27:20,916 --> 01:27:23,796
+And this last tool is z.
+
+511
+01:27:24,855 --> 01:27:25,336
+Okay.
+
+512
+01:27:26,275 --> 01:27:28,056
+What is the length of x, y?
+
+513
+01:27:28,756 --> 01:27:30,536
+Let us do examination.
+
+514
+01:27:31,816 --> 01:27:33,515
+The length of x, y is
+
+515
+01:27:33,515 --> 01:27:36,336
+1, 2, 3, 4, 5.
+
+516
+01:27:38,316 --> 01:27:41,655
+It must be less than or equal to some critical length.
+
+517
+01:27:41,996 --> 01:27:42,316
+Okay.
+
+518
+01:27:43,316 --> 01:27:44,976
+And what is x, y, z?
+
+519
+01:27:54,484 --> 01:27:59,004
+7. It must be greater than M.
+
+520
+01:28:01,064 --> 01:28:12,224
+So, my critical length could be 5 or could be 6.
+
+521
+01:28:14,363 --> 01:28:15,424
+Okay.
+
+522
+01:28:18,963 --> 01:28:24,684
+And what about the X, Z?
+
+523
+01:28:27,564 --> 01:28:31,603
+I choose Y here.
+
+524
+01:28:33,603 --> 01:28:36,443
+Let me write.
+
+525
+01:28:41,619 --> 01:28:58,619
+Here, herein, we choose y, such that xz is element of the n.
+
+526
+01:29:00,619 --> 01:29:06,879
+Okay, and let's see what is xz.
+
+527
+01:29:11,988 --> 01:29:16,247
+This is equal to A, A, A.
+
+528
+01:29:17,448 --> 01:29:21,448
+So what is now?
+
+529
+01:29:22,708 --> 01:29:27,307
+Beginning A, middle A, and the last A.
+
+530
+01:29:27,448 --> 01:29:29,247
+So this is element of the language.
+
+531
+01:29:29,807 --> 01:29:30,148
+Nice.
+
+532
+01:29:31,927 --> 01:29:33,927
+Now we will pump.
+
+533
+01:29:35,528 --> 01:29:37,247
+We will pump.
+
+534
+01:29:39,028 --> 01:30:04,548
+XYZ, this is by default element of the languages, XY squared Z, and this is equal to A, this is X, Y squared, PAAB, PAAB, and
+
+535
+01:30:05,876 --> 01:30:06,656
+Hey, hey.
+
+536
+01:30:11,988 --> 01:30:22,288
+This is X, this is Y, this is Y, this is Z.
+
+537
+01:30:24,148 --> 01:30:36,288
+The beginning is A, the last is A, middle must be A.
+
+538
+01:30:56,260 --> 01:30:58,220
+Hayır.
+
+539
+01:31:08,051 --> 01:31:08,652
+Evet.
+
+540
+01:31:11,172 --> 01:31:12,551
+Not, this is not middle.
+
+541
+01:31:15,811 --> 01:31:16,692
+Şu galiba.
+
+542
+01:31:17,771 --> 01:31:19,811
+Bir, iki, üç, dört, beş.
+
+543
+01:31:20,231 --> 01:31:20,832
+Yes.
+
+544
+01:31:21,731 --> 01:31:24,391
+So this is A and this is A.
+
+545
+01:31:24,951 --> 01:31:26,811
+So it is not the element of
+
+546
+01:31:30,011 --> 01:31:30,971
+languages.
+
+547
+01:31:33,551 --> 01:31:34,391
+DAS
+
+548
+01:31:37,300 --> 01:31:38,659
+Language L
+
+549
+01:31:43,731 --> 01:31:49,851
+is not a regular language.
+
+550
+01:31:53,779 --> 01:31:54,779
+Tamam mı?
+
+551
+01:31:54,779 --> 01:31:56,779
+Bir sorun yok mu?
+
+552
+01:32:08,212 --> 01:32:09,612
+Arkadaşlar, sorunuz var mı?
+
+553
+01:32:11,752 --> 01:32:14,652
+Tamam, devam ediyorum o zaman. Sorunuz yoksa.
+
+554
+01:32:17,512 --> 01:32:19,311
+Başka bir örnek yapalım.
+
+555
+01:32:23,932 --> 01:32:24,992
+Şey olsun.
+
+556
+01:32:35,060 --> 01:32:37,120
+Let's say the language is
+
+557
+01:32:44,275 --> 01:32:44,636
+Ah!
+
+558
+01:32:49,971 --> 01:32:54,072
+W is element of
+
+559
+01:33:00,083 --> 01:33:04,644
+such that W is written as
+
+560
+01:33:11,988 --> 01:33:12,807
+Reverse.
+
+561
+01:33:27,731 --> 01:33:33,672
+Bu dilde şunu anlıyoruz. Bu dilde öyle ne yapılıyor? Bir tane dizi var. Örnek verelim.
+
+562
+01:33:35,531 --> 01:33:42,771
+A, A, B, B is not the element of the language.
+
+563
+01:33:45,271 --> 01:33:45,871
+Okay?
+
+564
+01:33:46,971 --> 01:33:50,731
+A, B, B, A is element of the language or...
+
+565
+01:33:51,731 --> 01:33:58,612
+A, A, A, A is element of the languages, but this is not, the first one is not.
+
+566
+01:33:59,612 --> 01:34:05,871
+So it must be symmetric. So this is the R here, reverse operation.
+
+567
+01:34:07,231 --> 01:34:16,011
+So A, A, B, A, A is not the element of language.
+
+568
+01:34:17,011 --> 01:34:18,211
+B, A.
+
+569
+01:34:18,612 --> 01:34:21,772
+AB is element of the language.
+
+570
+01:34:23,172 --> 01:34:26,992
+BAB, BAB is element of the language.
+
+571
+01:34:28,372 --> 01:34:32,692
+BAA, BAA is not the element of the language.
+
+572
+01:34:32,872 --> 01:34:41,992
+So you see that, you understand the languages, so, okay?
+
+573
+01:34:42,963 --> 01:34:58,644
+So you see the language, so you understand the language. This is very important. Before you are proving that the language is not regular, you have to first understand the language very well. Okay? Now we know the pattern of the language.
+
+574
+01:35:11,444 --> 01:35:21,504
+Pumping lemma, lemma, to check the language.
+
+575
+01:35:25,492 --> 01:35:40,432
+Language, L, let me write, Language, L is not regular, is not regular.
+
+576
+01:35:47,764 --> 01:35:48,264
+Ok?
+
+577
+01:35:55,060 --> 01:36:01,680
+So, we have to choose a string. Let us choose the string W.
+
+578
+01:36:09,043 --> 01:36:10,743
+I choose the string W.
+
+579
+01:36:13,663 --> 01:36:26,623
+Let me choose A power M, B power M, and B M.
+
+580
+01:36:30,163 --> 01:36:30,963
+A.M.
+
+581
+01:36:35,315 --> 01:36:35,815
+Ok?
+
+582
+01:36:39,796 --> 01:37:05,816
+When you look at now, we have to, it is element of the languages, of course, because it is symmetric. So here is, this is nu, and this is reverse of nu. So this is the concatenation. So it is element of the languages. Now we have to find the
+
+583
+01:37:06,228 --> 01:37:09,708
+Critical length. So the W, the length of the W.
+
+584
+01:37:12,927 --> 01:37:17,488
+Oh, sorry. Let us use some different letters. Sorry.
+
+585
+01:37:18,988 --> 01:37:21,948
+Let me write here K.
+
+586
+01:37:23,808 --> 01:37:24,247
+Okay.
+
+587
+01:37:26,087 --> 01:37:26,888
+Good.
+
+588
+01:37:27,747 --> 01:37:31,288
+So the size of W.
+
+589
+01:37:34,931 --> 01:37:48,412
+What is the size of W? It's 4 times K. Okay. And it must be greater than what? Some critical length.
+
+590
+01:37:53,363 --> 01:37:55,684
+Ya, it must be greater than M.
+
+591
+01:37:57,003 --> 01:38:05,104
+And we have to partition W as XYZ such that
+
+592
+01:38:08,500 --> 01:38:28,900
+Xz is element of L. Further, X, the size of XY is less than or equal to M. Further, the length of Y is minimum 1.
+
+593
+01:38:36,212 --> 01:38:45,548
+...
+
+594
+01:38:54,131 --> 01:38:58,171
+Is it possible to obtain X, Z is element?
+
+595
+01:38:58,171 --> 01:39:00,491
+Hmm?
+
+596
+01:39:08,979 --> 01:39:10,955
+What is our next step now?
+
+597
+01:39:17,300 --> 01:39:42,120
+So, we have W, we have A, A, A, A, A, many A, and then we have B, B, many B, and we have B, many B, many B, and we have A, A, A, many A.
+
+598
+01:39:49,043 --> 01:40:01,423
+e k, this is b k, this is b k, this is b k, and this is k k.
+
+599
+01:40:04,163 --> 01:40:08,963
+Now I will find the x and the y and the z.
+
+600
+01:40:11,344 --> 01:40:12,103
+Okay?
+
+601
+01:40:16,595 --> 01:40:23,595
+Is it possible to obtain the, keep the regularity?
+
+602
+01:40:23,595 --> 01:40:34,595
+So what is the length of pumping part?
+
+603
+01:40:46,131 --> 01:40:48,011
+Evet arkadaşlar, soru soruyorum.
+
+604
+01:41:15,604 --> 01:41:40,444
+Bu şartı sağlayacak durumda, bakın öncelikle şartlarımız şunlar, bir daha tekrarlıyorum. Öncelikle bunu bakacağız. Sonra buna bakacağız. En sona buna bakacağız. Bu belki de dördüncü step. Hatta bunu şöyle yapalım, şunu sonradan yazalım.
+
+605
+01:41:40,916 --> 01:41:43,336
+Tamam mı? İlk şart şu ikisi.
+
+606
+01:41:46,715 --> 01:41:47,635
+Nerede bu?
+
+607
+01:42:21,203 --> 01:42:37,224
+Şimdi, M'yi kaç seçebiliriz? Burada 4K ise, mesela şurada biz bu şekilde K'lı cinsten vermeyelim ama, şu şekilde sayılı verelim. Daha mantıklı oluyor böyle durumlarda.
+
+608
+01:42:50,452 --> 01:42:52,231
+A, A, A.
+
+609
+01:42:53,952 --> 01:42:55,811
+Dört tane A, iki tane B.
+
+610
+01:42:56,332 --> 01:42:58,372
+B'lerin sayısı tek de olabilir, sıkıntı yok.
+
+611
+01:42:59,212 --> 01:43:01,912
+Bu elemanıdır, language.
+
+612
+01:43:03,131 --> 01:43:03,431
+Okay.
+
+613
+01:43:05,332 --> 01:43:05,752
+Good.
+
+614
+01:43:06,271 --> 01:43:09,192
+So, we will partition it.
+
+615
+01:43:09,952 --> 01:43:13,171
+Let's say, this is one part.
+
+616
+01:43:15,764 --> 01:43:22,724
+W is, the length of W is, 1, 2, 3, 4, 6, 12, okay.
+
+617
+01:43:24,024 --> 01:43:37,384
+And X, Y must be less than, this must be greater than some critical length, must be less than or equal to some critical length.
+
+618
+01:43:37,384 --> 01:43:41,984
+And Y is like this.
+
+619
+01:43:43,699 --> 01:43:48,699
+Assume, that we have this one.
+
+620
+01:43:54,387 --> 01:43:57,387
+Evet, bu, bu, bu.
+
+621
+01:43:59,587 --> 01:44:00,587
+Bu, bu.
+
+622
+01:44:04,787 --> 01:44:05,787
+Evet.
+
+623
+01:44:12,020 --> 01:44:14,820
+This is X.
+
+624
+01:44:16,860 --> 01:44:18,540
+Let's say this is X.
+
+625
+01:44:20,100 --> 01:44:21,540
+This is Y.
+
+626
+01:44:22,920 --> 01:44:24,360
+And this is Z.
+
+627
+01:44:26,360 --> 01:44:28,140
+Okay, I choose randomly.
+
+628
+01:44:29,340 --> 01:44:31,180
+Is it condition?
+
+629
+01:44:31,540 --> 01:44:33,340
+Is it provide this condition?
+
+630
+01:44:35,020 --> 01:44:39,140
+So what is my M in this case?
+
+631
+01:44:40,404 --> 01:44:59,964
+X, Y is equal to 4, so M is greater than 4, so it could be 4, and less than, so it could be 4, it could be 5, it could be 6, so all 12, 11, okay?
+
+632
+01:44:59,964 --> 01:45:04,224
+So these are the critical length. So what about X, Y, Z?
+
+633
+01:45:07,091 --> 01:45:09,271
+It must be element of the languages.
+
+634
+01:45:14,484 --> 01:45:18,944
+And also x, y, 0, z must be also the element of the languages.
+
+635
+01:45:21,624 --> 01:45:28,104
+It must also be element of the languages, but when we do examination, this is okay.
+
+636
+01:45:28,764 --> 01:45:29,784
+This is not okay.
+
+637
+01:45:30,644 --> 01:45:33,264
+Because when you do it, this is not okay.
+
+638
+01:45:33,464 --> 01:45:34,284
+This is not okay.
+
+639
+01:45:34,284 --> 01:45:38,524
+So the language is not regular.
+
+640
+01:45:51,444 --> 01:46:10,664
+Actually, it is really clear the language is not regular because you are counting. You see that this is the verb, this is string, this is another string, and you have to count the strings, the elements. It must be, this is additional condition, so this is not regular.
+
+641
+01:46:12,044 --> 01:46:14,164
+Let us do another example.
+
+642
+01:46:18,868 --> 01:46:25,528
+A power K, B power L,
+
+643
+01:46:28,916 --> 01:46:35,216
+Siz söyleyin ne olsun şartı. K ile L arasında bir bağlantı söyleyin ne olsun.
+
+644
+01:46:38,836 --> 01:46:39,635
+Bıh.
+
+645
+01:46:44,979 --> 01:46:46,899
+K büyük tür L olsun hocam.
+
+646
+01:46:49,299 --> 01:46:51,420
+K büyük tür L olabilir mi?
+
+647
+01:46:51,939 --> 01:46:55,500
+Yes. Very good. K greater than L.
+
+648
+01:46:58,239 --> 01:46:58,879
+Okay.
+
+649
+01:47:00,500 --> 01:47:07,779
+And there is one condition also. K greater than L and this is greater and equal to zero. Okay?
+
+650
+01:47:15,347 --> 01:47:23,347
+Let's say, let us look at first language to understand it.
+
+651
+01:47:24,207 --> 01:47:30,307
+So A is the element of language.
+
+652
+01:47:33,747 --> 01:47:42,567
+A, A, B is also element, A, A is also element of the language.
+
+653
+01:47:43,988 --> 01:47:46,967
+AAB is also element of the language.
+
+654
+01:47:47,467 --> 01:47:49,528
+We are trying to understand the pattern.
+
+655
+01:47:50,788 --> 01:47:55,887
+So AAA is element of the languages.
+
+656
+01:47:57,427 --> 01:48:04,748
+AAB is also element of the languages.
+
+657
+01:48:05,748 --> 01:48:06,412
+But...
+
+658
+01:48:06,707 --> 01:48:16,787
+A, A, A, B, B, B is not the element of the language because the number of A must be greater than the number of B.
+
+659
+01:48:18,367 --> 01:48:23,647
+What about here? A, A, B, B is not the element of language.
+
+660
+01:48:24,727 --> 01:48:29,787
+Here, A, A, B, B.
+
+661
+01:48:30,899 --> 01:48:39,759
+DFA is not element of language, or DFA is not the element of language L.
+
+662
+01:48:41,179 --> 01:48:41,639
+Okay?
+
+663
+01:48:43,139 --> 01:48:46,179
+And now we will choose a W.
+
+664
+01:48:46,739 --> 01:48:48,059
+Let us choose a W.
+
+665
+01:48:48,219 --> 01:48:54,899
+W is equal to AA.
+
+666
+01:48:59,444 --> 01:49:05,324
+Is it element of the languages? Yes, it is element of the languages.
+
+667
+01:49:07,764 --> 01:49:08,324
+Okay.
+
+668
+01:49:10,864 --> 01:49:21,384
+So, here, we have to partition this one such that, what is the length of the W?
+
+669
+01:49:22,984 --> 01:49:26,504
+One, two, three, four, five, seven.
+
+670
+01:49:27,572 --> 01:49:30,112
+It must be greater than some critical length.
+
+671
+01:49:31,572 --> 01:49:36,311
+X, Y must be less than or equal to critical length.
+
+672
+01:49:37,311 --> 01:49:40,412
+And Y could be like this.
+
+673
+01:49:44,627 --> 01:49:49,247
+So, my critical length is very important here.
+
+674
+01:49:53,235 --> 01:49:58,615
+It will help us to find out how to choose.
+
+675
+01:50:00,235 --> 01:50:03,355
+So let me choose like this.
+
+676
+01:50:04,395 --> 01:50:06,496
+Let's say this is X.
+
+677
+01:50:07,895 --> 01:50:12,796
+Okay, because according to the pattern, the first one is X.
+
+678
+01:50:13,036 --> 01:50:18,275
+So I do pump here Y and this is Z.
+
+679
+01:50:18,275 --> 01:50:19,076
+So.
+
+680
+01:50:19,536 --> 01:50:22,695
+Let's see, what is x, y?
+
+681
+01:50:23,876 --> 01:50:34,036
+x, y is, the length of x, y is equal to 1, 5, 6.
+
+682
+01:50:34,815 --> 01:50:38,195
+The length of pump is 1.
+
+683
+01:50:38,195 --> 01:50:43,315
+So these are, okay, so m is, critical length is,
+
+684
+01:50:45,652 --> 01:51:02,091
+What is our critical length? Must be like this. M is 6 and less than 7. So my critical length is M is 6. So it's clear.
+
+685
+01:51:04,591 --> 01:51:12,872
+Now I will have to pump. Okay. What I know, XYZ is element of the languages. It's good.
+
+686
+01:51:13,555 --> 01:51:32,575
+But what? And also I choose XYZ such that XZ is also an element of the language. So XYZ is XZ. This is X.
+
+687
+01:51:36,467 --> 01:51:39,387
+5A ve ZB ve ZB.
+
+688
+01:51:50,579 --> 01:51:58,299
+So this is 5 times A, and B, this is also element of the languages.
+
+689
+01:51:59,979 --> 01:52:01,699
+X, Y square, Z.
+
+690
+01:52:07,475 --> 01:52:12,755
+This is y2, zb. This is also element of the languages.
+
+691
+01:52:15,315 --> 01:52:15,935
+X,
+
+692
+01:52:18,635 --> 01:52:21,375
+Y5,
+
+693
+01:52:22,615 --> 01:52:24,395
+Y4, z.
+
+694
+01:52:25,755 --> 01:52:28,715
+So this is a, a, a, a, a.
+
+695
+01:52:32,243 --> 01:52:34,243
+Bu bir şey, bir şey, bir şey.
+
+696
+01:52:34,243 --> 01:52:36,243
+Bu bir şey.
+
+697
+01:52:36,243 --> 01:52:38,243
+Bir şey.
+
+698
+01:52:57,684 --> 01:53:01,884
+Language L is not regular.
+
+699
+01:53:03,884 --> 01:53:04,164
+Okay?
+
+700
+01:53:10,515 --> 01:53:28,055
+Burada XYZT'yi yaparken arkadaşlar countinglere dikkat edeceksiniz. Bakın. Burada ben neyi sayıyorum? A'yı sayıyorum değil mi? Burada B'yi sayıyorum. Burada bir counting var. Burada da bir counting var. A'ların sayısı, B'lerin sayısından ne olmalı? Büyük olmalı.
+
+701
+01:53:29,619 --> 01:53:55,260
+Yani hem A'ları olacak, arkasından B'ler gelecek ama A'ların sayısı B'lerin sayısından büyük olmalı. Bu iki tane counting var. Hem A'ları sayıyorsunuz hem B'leri sayıyorsunuz. Burada X, Y, Z'i oluştururken bakın bu Y counting'in içine girdi. Soldakinin içine girdi. Soldakinin içine girdi. Soldakinin içine girdi. Sokmadım.
+
+702
+01:53:55,956 --> 01:54:14,096
+Sokabilirdim. Soksaydım, bütün pumping iterasyonlar için ne olacaktı? Hep elemanı da çıkacaktı. Bu bir şart. Esasında burada şöyle yapmak lazım. Bunu açıklayıcı olarak söyleyelim.
+
+703
+01:54:14,096 --> 01:54:19,655
+Yani görün diye. Şimdi şurayı kopyalayayım.
+
+704
+01:54:24,180 --> 01:54:38,920
+Şimdi elimde önce paterne bakıyorum. Paterne ne var? Sayma var değil mi? A'ların sayısıyla B'lerin sayısını karşılaştırıyorum. Öyleyse benim pump edeceğim kısım ya sağında olacak ya solda olacak.
+
+705
+01:54:41,920 --> 01:54:50,840
+Şimdi şurayı şöyle silelim. Mesela ben şöyle de seçebilirdim. İlk etapta diyelim ki saymayı sol tarafa aldım.
+
+706
+01:54:51,636 --> 01:55:17,536
+Çünkü A'ları sayıyorum, sonra B'leri sayıyorum. Buraya X dedim, buraya Y dedim, buraya de Z dedim. X, Z elemanı mı? Evet, elemanı. X, Y, Z elemanı mı? Evet, bu da elemanı. X, Y, Z elemanı mı? Bu da elemanı.
+
+707
+01:55:18,868 --> 01:55:40,488
+Bunu bütün hepsi için yapın. Sonsuz set. Bu da elemanın. Dolayısıyla sol tarafında olması, mesela burada hiçbir şey göremedim. Şimdi ikinci şartı deneyeceğim. İkinci şart ne? Bu birinci kombi işimden. Bunu denedim, olmadığını gördüm.
+
+708
+01:55:46,771 --> 01:56:08,112
+Tamam, şöyle olsun. Hatta şöyle yapalım, bunu kopyalayayım tekrar. Bunun olmadığını gördüm ve şu anda ikinci parçalamayı yaptım. İkinci parçalamada da counting'im bu sefer ne tarafında aldım? Sol tarafında aldım. Buna X dedim.
+
+709
+01:56:11,667 --> 01:56:14,707
+X dedim, buna Y dedim, buna da Z dedim.
+
+710
+01:56:16,227 --> 01:56:18,947
+Şimdi, X, Z elemanı mı?
+
+711
+01:56:19,087 --> 01:56:21,247
+Evet, X, Y, Z elemanı mı?
+
+712
+01:56:22,907 --> 01:56:27,007
+Evet, X, Y kare, Z elemanı mı?
+
+713
+01:56:27,267 --> 01:56:33,607
+Evet, X, Y küp, Z elemanı mı?
+
+714
+01:56:33,707 --> 01:56:36,147
+Evet, X, Y, 4.
+
+715
+01:56:38,676 --> 01:56:40,376
+Z elemanı mı? Hayır.
+
+716
+01:56:42,116 --> 01:56:50,656
+Dolayısıyla şart bozuldu ve ne oldu? Dilin regular değil.
+
+717
+01:56:51,156 --> 01:56:53,716
+Şimdi sınavda bazı arkadaşlarımız şöyle yapıyor.
+
+718
+01:56:55,556 --> 01:56:57,176
+Arkadaşlar, bakın.
+
+719
+01:56:58,196 --> 01:57:03,916
+Şimdi en büyük hatayı size gösteriyorum. Lütfen bu hatalara düşmeyin.
+
+720
+01:57:07,859 --> 01:57:12,719
+Sınavda eğer bu hatayı yaparsanız, soruları cevaplayamazsınız.
+
+721
+01:57:13,979 --> 01:57:19,539
+Şimdi ben sayma vardı değil mi? Saymaları belirledik, paterni bulduk.
+
+722
+01:57:20,979 --> 01:57:24,299
+Şöyle bunu sileyim. Mesela şöyle yapıyorlar.
+
+723
+01:57:28,115 --> 01:57:28,876
+Son, ya?
+
+724
+01:57:32,819 --> 01:57:35,340
+Şimdi şuraya X diyor arkadaşımız.
+
+725
+01:57:40,627 --> 01:57:48,307
+Buraya X diyor, buraya da Y diyor, buraya da Z diyor.
+
+726
+01:57:50,947 --> 01:57:56,907
+Hemen diyor ki, X, Z, X, Z elemanıdır.
+
+727
+01:58:00,564 --> 01:58:23,984
+Language diyor. Evet, gerçekten de öyle. X, Y, Z elemanıdır. Language diyor. Evet, o da doğru. Ama ne yapıyor sonrasında? X, Y kare, Z'yi yazarken şu şekilde yazıyor. Dört tane A, sonra AB, sonra B kare.
+
+728
+01:58:25,203 --> 01:58:46,484
+Ve bu da bir elemanı değildir, L diyor. Dolayısıyla dil regular değildir diyor. Bu yanlış. Tamam mı arkadaşlar? Bu şekilde yapmayacaksınız. Bu şekilde yaparsanız dilin regular olduğunu anlayamazsınız. Örnek verelim. L'yi biz şu şekilde verseydik. İlk örnekte hatırlarsınız.
+
+729
+01:58:54,676 --> 01:59:07,636
+Bunu biz bu şekilde vermiştik ilk örnekte. Burada mesela bir tane dil alayım. Bakın, bir tane string alalım. Mesela bu dilin, iki diyeyim buna.
+
+730
+01:59:11,220 --> 01:59:16,520
+L2'nin elemanı değil mi? Şimdi ben bunu şu şekilde alsam.
+
+731
+01:59:19,988 --> 01:59:35,908
+Buraya X dedim, buraya B desem, Y desem, buraya da Z desem, şimdi XZ, elemanıdır L2 mi? L2'linin, evet. X, Y, Z de öyle.
+
+732
+01:59:40,467 --> 02:00:07,768
+Evet. Peki, XY kare Z, elemanı neye eşittir bu? XAA, AB, AB, B. Elemanı değildir, L2. Yani şimdi L2, L2 regular mı değil mi?
+
+733
+02:00:11,699 --> 02:00:32,259
+L2 not regular mu? Hayır, L2 regular. NFA'yı var bunun. Mesela L2'yi tanıyan şeyi söyleyelim. N2'yi tanıyan. Şöyle, NFA'yı var bunun. Hemen çizelim. Şu şöyle olsun. Şöyle olsun. Tamam mı?
+
+734
+02:00:33,619 --> 02:01:00,840
+Bu A üzeri, bu Q0, A'lar, bütün A'lar A yıldız oldu. Sonra, Epsilon, bu da böyle, bu da B'ler oldu. Tamam işte bak NFA'yı. Bunun NFA'yı var, L2'nin makinesi bu.
+
+735
+02:01:04,819 --> 02:01:20,819
+O zaman L2 regular. Ama şimdi sen ne diyorsun burada? Buna bakarak ne diyorsun? L2 regular değil diyorsun. Not a regular diyorsun. Is not a regular diyorsun.
+
+736
+02:01:25,140 --> 02:01:47,579
+Buradaki hata ne? Buradaki hata şu. A'ları sayıyoruz. A'lar var. Bak, bir A paterni var, bir de B paterni var. Sen Y'yi bu iki paterni karıştıracak şekilde seçmemelisin. Tamam? Ama şu örneğe bakalım. Bir önceki örnek. Bu da örnekleri biz arka röntge verdik anlamanız için.
+
+737
+02:01:48,372 --> 02:01:54,532
+Güzel örnekler esasında. Şu örneğe bakarsak, neredeydi? Ortası, sonu, başı.
+
+738
+02:01:56,351 --> 02:02:02,792
+Şu örneğe bakarsak, burada bakın, Y'yi bu şekilde seçtik. Bu paterni bozmuyorum bu şekilde.
+
+739
+02:02:04,032 --> 02:02:08,332
+O yüzden Y bu şekilde ortadan alındı, bu şekilde sağdan soldan içerdi.
+
+740
+02:02:08,952 --> 02:02:12,391
+Paterni bozmadı. Değil mi?
+
+741
+02:02:13,212 --> 02:02:15,771
+Buna çok dikkat edeceksiniz işte.
+
+742
+02:02:16,307 --> 02:02:40,207
+Y'yi seçerken, paterni bozmayacak şekilde seçeceksiniz. Sayma düzenini. Şimdi bu örnekte, bu örnekte işte bir şey var. Yani bu Y'yi uygun seçmeniz lazım.
+
+743
+02:02:43,507 --> 02:02:55,367
+Bütün şartları araştırmanız lazım esasında dil içerisinde. Y'yi ya A'ların saymaları üzerinde ya da B'lerin saymaları üzerinde oluşturman lazım.
+
+744
+02:02:55,648 --> 02:03:07,707
+Yani paternin, burada iki tane pater var. A paterni var bir de B paterni var. Y'yi de bu A paterni ya da B paterni içinden seçeceksin. Her ikisini birden seçemezsen.
+
+745
+02:03:10,068 --> 02:03:13,587
+Evet arkadaşlar, şimdi 10 dakika ara veriyoruz, sonra devam edeceğiz.
+
+746
+02:12:39,380 --> 02:12:53,720
+Arkadaşlar, önümüzdeki hafta, önümüzdeki hafta kriz var. Tamam. Ne oluyor tarih?
+
+747
+02:12:53,720 --> 02:13:03,300
+13.20'si. 20 Nisan.
+
+748
+02:13:14,228 --> 02:13:16,228
+Quiz 2.
+
+749
+02:13:17,528 --> 02:13:20,228
+Tamam. Son 15 dakika.
+
+750
+02:13:26,420 --> 02:13:35,159
+Dersin son 15 dakikasında yapacağız. Yine 3 soru, 5 soru soracağız. Tamam.
+
+751
+02:13:42,163 --> 02:14:08,683
+Arkadaşlar, chat'e yazıyorsunuz. Bakın ben chat'i okuyamıyorum. Tamam? Çünkü hem ders anlatıyorum, hem slide'ları dağ gibi ediyorum, hem soru üretiyorum. Bir de sizin chat'te yazdıklarınızı mı okuyacağım? Yani okuyamıyorum yani kusura bakmayın. Chat'ten yazdıklarınızı göremiyorum. Hiç bana yardımcı olmuyorsunuz. Direkt mikrofonda konuşun lütfen ya.
+
+752
+02:14:09,619 --> 02:14:25,159
+Mikrofonda konuşmak o kadar zor bir şey değil. İstesem şu anda herkesin mikrofonunu açarım yani o kadar kötü bir şey değil yani konuşmak. Direkt konuşursun, söylersin, yazmak kim okuyacak, kim ona cevap verecek.
+
+753
+02:14:27,979 --> 02:14:36,939
+Ben tamam bu dersin hocasıyım, cevap vermek zorunda olduğumu düşünebilirsiniz ama hangisini yapayım? Dersimi daha kaliteli anlatayım yoksa chatleşelim mi?
+
+754
+02:14:43,796 --> 02:14:51,855
+Tamam, o yüzden lütfen chatten bir şey yazmayın. Soracaksanız soruyu doğrudan sorun. Kendinize biraz güvenin. Özgüveniniz olsun.
+
+755
+02:14:54,135 --> 02:15:05,336
+Basit bir derste bile, sıradan bir derste bile soru soramıyorsanız yarın bir gün gerçek hayatta karşınıza çıkan problemleri nasıl soru şeklinde ifade edeceksiniz.
+
+756
+02:15:07,195 --> 02:15:10,855
+Konuşarak. Her şey chat üzerinden gitmiyor maalesef. Hayat...
+
+757
+02:15:11,764 --> 02:15:12,704
+Chat değildir.
+
+758
+02:15:16,627 --> 02:15:22,307
+Haftaya, Q102'ye hazırlanıyorsunuz. Şimdiden çalışmaya başlayın.
+
+759
+02:15:24,408 --> 02:15:34,007
+Q102, Q101'e göre daha zor olacaktır, emin olun. Ve soru sayısı da, yani 3-5 olabilir ama zor olacaktır.
+
+760
+02:15:36,528 --> 02:15:40,347
+Teorem, not teorem, let's say language.
+
+761
+02:15:44,307 --> 02:15:58,547
+AN, B, AK, hangi kelime, harfleri kullanacağım?
+
+762
+02:15:58,547 --> 02:16:04,148
+AN, BL, C, N plus L.
+
+763
+02:16:12,275 --> 02:16:31,315
+Like this. Regular or not? First, let us try to understand the language. A and C is element of the language.
+
+764
+02:16:35,156 --> 02:16:38,416
+BC is also element of the language.
+
+765
+02:16:39,995 --> 02:16:42,736
+Empty string is also element of the language.
+
+766
+02:16:44,536 --> 02:16:54,096
+ABC is not the element of the language, but ABCC is element of the language.
+
+767
+02:16:57,940 --> 02:17:01,940
+A, B, C, C, C is not the element of the language.
+
+768
+02:17:03,940 --> 02:17:09,940
+So, A, A, B, C, C, C is element of the languages.
+
+769
+02:17:09,940 --> 02:17:14,940
+A, B, B, C, C, C is also the element of the language.
+
+770
+02:17:14,940 --> 02:17:20,940
+But A, A, A, C, C is also element of the language.
+
+771
+02:17:22,963 --> 02:17:28,403
+But AAA, CCCC is not the element of the language.
+
+772
+02:17:30,023 --> 02:17:32,963
+So you see the pattern.
+
+773
+02:17:34,243 --> 02:17:37,004
+Okay, let me choose a string W.
+
+774
+02:17:38,923 --> 02:17:41,243
+There are countings on A.
+
+775
+02:17:42,884 --> 02:17:45,423
+And there are some countings on B.
+
+776
+02:17:45,423 --> 02:17:47,423
+And the number of...
+
+777
+02:17:48,371 --> 02:17:52,631
+6, 9, 1, 2, 3, 4, 5, 6.
+
+778
+02:17:56,435 --> 02:18:01,695
+Tamam. 3, Alt, 9, 3, Alt.
+
+779
+02:18:01,835 --> 02:18:02,036
+Okay.
+
+780
+02:18:02,615 --> 02:18:04,915
+So this is the element of the language.
+
+781
+02:18:05,896 --> 02:18:06,255
+Nice.
+
+782
+02:18:08,216 --> 02:18:13,455
+Now I will define the B and the C.
+
+783
+02:18:13,635 --> 02:18:15,056
+So there are countings.
+
+784
+02:18:15,595 --> 02:18:18,376
+So I can choose X like this.
+
+785
+02:18:19,275 --> 02:18:20,315
+This is X.
+
+786
+02:18:24,211 --> 02:18:39,671
+I can choose this is y, and I can choose this is z. Is it true? X, z is not the element, so it is not good to choose such thing.
+
+787
+02:18:40,671 --> 02:18:40,991
+Okay?
+
+788
+02:18:48,404 --> 02:18:55,443
+I can choose, but you can choose actually, because there is a counting or you can choose like this.
+
+789
+02:18:57,123 --> 02:19:00,263
+Let me write, this is x.
+
+790
+02:19:06,260 --> 02:19:07,340
+This is why.
+
+791
+02:19:10,963 --> 02:19:11,684
+Hmm.
+
+792
+02:19:28,755 --> 02:19:30,755
+This is Y.
+
+793
+02:19:32,755 --> 02:19:36,755
+And this is Z.
+
+794
+02:19:37,755 --> 02:19:38,755
+Is it true?
+
+795
+02:19:44,788 --> 02:19:51,508
+Which one is true? Choose. Mor olanı mı seçerdiniz, kırmızı olanı mı?
+
+796
+02:19:55,860 --> 02:20:13,760
+İkisinden de regular çıkını yakacağım. İkisinden de regular çıkını yakacağım. Yani kırmızı olan da şey, yedinin sayısını değiştirmek için A ile C'nin sayısı çıkmıyor A ve B'nin toplamın sayısı. Diğerinde de yedin ikisi olarak koymamızda B, B, C, C, B, B, C, C vursuyor.
+
+797
+02:20:14,060 --> 02:20:16,880
+Peki, mor olanı mı sence doğru, kırmızı olanı mı?
+
+798
+02:20:20,040 --> 02:20:21,620
+Şöyle yanlış değil mi hocam?
+
+799
+02:20:22,899 --> 02:20:24,420
+Bence kırmızı hocam.
+
+800
+02:20:24,600 --> 02:20:24,979
+Efendim?
+
+801
+02:20:25,639 --> 02:20:26,600
+Bence kırmızı.
+
+802
+02:20:26,600 --> 02:20:34,619
+Evet, çünkü morda bakın hem B'den hem de C'den aynı anda sayıyorsunuz. Dolayısıyla bunu yapmayacaksınız böyle.
+
+803
+02:20:36,260 --> 02:20:47,220
+Tamam mı? Çünkü paterne bakın, ya A'ların sayısı artıyor ya B'lerin sayısı artıyor. A'ların ve B'lerin sayısının artımına göre de C'lerin sayısı artıyor. Dolayısıyla bir patern var.
+
+804
+02:20:47,924 --> 02:20:58,364
+Hem A'nın hem B'nin sayısını aynı anda arttıramıyorsunuz. Ya da hem B'li hem C'nin, yani ona çok dikkat ediyor olmanız lazım, paternli. Tamam mı?
+
+805
+02:21:00,864 --> 02:21:13,044
+Yani burada hem B'nin sayısı artıyor, hem C'nin sayısı artıyor. Öyleyse mora bakalım. Hem B'nin sayısı artıyor, hem C'nin sayısı artıyor. Değil mi morda?
+
+806
+02:21:14,995 --> 02:21:20,216
+Mesela bu moru da seçebiliriz bu durumda. Seçebilir miyiz?
+
+807
+02:21:24,308 --> 02:21:24,748
+Huh?
+
+808
+02:21:28,340 --> 02:21:29,880
+Bence seçemeyiz hocam.
+
+809
+02:21:31,000 --> 02:21:31,260
+Neden?
+
+810
+02:21:32,459 --> 02:21:40,799
+Çünkü Y kare olduğunda mesela B'ler ve C'ler aynı oranda arttığı için her zaman elemanı olarak görünecek.
+
+811
+02:21:42,868 --> 02:21:49,587
+B, B, C, C, B, B, C, C olacak. Yani YKR olunca, patern bozuluyor hemen.
+
+812
+02:21:49,587 --> 02:21:57,188
+Evet, pardon. Az önce söylediğiniz işte hocam bu. Yani patern'ı bozup eleman değildir diyemeyiz.
+
+813
+02:21:57,648 --> 02:22:00,168
+Evet, patern'ı bozmadan karar vereceğiz değil mi?
+
+814
+02:22:00,808 --> 02:22:01,948
+Evet, doğru hocam.
+
+815
+02:22:02,128 --> 02:22:08,788
+Evet, güzel. Anlamışsınız. Öyleyse patern, pardon. Şunu silelim.
+
+816
+02:22:12,147 --> 02:22:14,147
+Şöyle seçebiliriz.
+
+817
+02:22:18,907 --> 02:22:24,627
+Bu şekilde seçmek daha mantıklı geliyor. Çünkü pattern bozulmuyor. Ya da şu şekilde seçeceğiz.
+
+818
+02:22:25,947 --> 02:22:26,167
+W.
+
+819
+02:22:28,087 --> 02:22:33,067
+Buna biz şöyle kabul edeceğiz. Buraya X diyeceğiz.
+
+820
+02:22:34,727 --> 02:22:36,527
+Buraya Y diyeceğiz.
+
+821
+02:22:40,788 --> 02:22:43,087
+Mesela şuraya Y diyelim, buraya da Z diyelim.
+
+822
+02:22:45,288 --> 02:22:47,028
+Şu anda hiç pattern bozulmuyor değil mi?
+
+823
+02:22:47,868 --> 02:22:48,927
+Böyle de yapabiliriz.
+
+824
+02:22:50,548 --> 02:22:52,227
+Pump ettiğimizde şunu göreceğiz.
+
+825
+02:22:52,227 --> 02:22:55,488
+X, Z.
+
+826
+02:22:55,668 --> 02:22:58,008
+Mesela ilkinde pump etsek.
+
+827
+02:22:58,808 --> 02:23:01,168
+X, Y, Z elemanı iken.
+
+828
+02:23:05,427 --> 02:23:21,308
+XYZ elemanı olmayacak değil mi? Çünkü A artıyor, C'lerin sayısı artmıyor. Dolayısıyla dil nedir bu dil? Regular değildir.
+
+829
+02:23:29,299 --> 02:23:29,739
+Tamam.
+
+830
+02:23:47,283 --> 02:23:49,564
+Başka bir tane örnek yapalım.
+
+831
+02:23:55,347 --> 02:24:03,587
+Dur bakalım, bunu sallıyoruz. Yani şimdi soruları kendimiz üretiyoruz. Language olsun. Deneyelim bir.
+
+832
+02:24:06,527 --> 02:24:16,387
+A üzeri N, B üzeri N, mod M.
+
+833
+02:24:21,268 --> 02:24:23,648
+N mod M olsun. Evet.
+
+834
+02:24:25,268 --> 02:24:25,747
+M de
+
+835
+02:24:25,747 --> 02:24:30,887
+Hatta M de şey olsun.
+
+836
+02:24:36,628 --> 02:24:43,628
+Öyle ki, such that, n is greater than m and n,
+
+837
+02:24:49,203 --> 02:24:52,139
+... ...
+
+838
+02:24:57,652 --> 02:24:58,691
+Birden büyük.
+
+839
+02:25:01,631 --> 02:25:02,332
+Tamam.
+
+840
+02:25:05,272 --> 02:25:06,912
+Is it regular or not?
+
+841
+02:25:19,987 --> 02:25:27,387
+Or, let's say, instead of 4, let us make it simple. M is equal to 4.
+
+842
+02:25:30,587 --> 02:25:32,047
+Equal to 2. Okay.
+
+843
+02:25:39,316 --> 02:25:41,776
+Let us understand the language.
+
+844
+02:25:43,596 --> 02:25:54,576
+A, let's say A, 1, mod 1, AB is element of language.
+
+845
+02:25:56,675 --> 02:26:01,076
+Epsilon is also element of the language.
+
+846
+02:26:02,896 --> 02:26:06,776
+A, AB is not the element of language.
+
+847
+02:26:08,051 --> 02:26:14,292
+But AA is element of language.
+
+848
+02:26:14,292 --> 02:26:17,292
+Okay?
+
+849
+02:26:17,292 --> 02:26:26,711
+AAAA is not element of the language, but AAAB is element of language.
+
+850
+02:26:30,611 --> 02:26:36,051
+So, I can write this language like this.
+
+851
+02:26:39,731 --> 02:26:56,311
+Let's say A power n to k plus 1 such that k is
+
+852
+02:27:00,435 --> 02:27:00,995
+Ağızın.
+
+853
+02:27:06,579 --> 02:27:07,219
+L-O2.
+
+854
+02:27:09,219 --> 02:27:10,399
+This is a language.
+
+855
+02:27:12,479 --> 02:27:14,399
+And L-Even.
+
+856
+02:27:16,619 --> 02:27:18,799
+This is another language.
+
+857
+02:27:24,468 --> 02:27:33,888
+And this language, L, can be written as, I have to make it small.
+
+858
+02:27:40,884 --> 02:27:43,923
+This language can be written as
+
+859
+02:27:43,923 --> 02:27:46,884
+L-Oth
+
+860
+02:27:51,379 --> 02:28:00,579
+Concatenated by B, union, L-even,
+
+861
+02:28:06,004 --> 02:28:09,604
+Bu, bu, L-Oth.
+
+862
+02:28:10,884 --> 02:28:13,684
+L-Oth is a regular language.
+
+863
+02:28:15,364 --> 02:28:23,604
+We know it because there is all the patterns A consists and whenever you pop it is also an element of
+
+864
+02:28:26,884 --> 02:28:27,884
+itself.
+
+865
+02:28:27,884 --> 02:28:29,884
+Is it regular or not this one?
+
+866
+02:28:39,667 --> 02:28:41,567
+Regular. Neden?
+
+867
+02:28:42,948 --> 02:28:47,327
+X'de A seçsek, Y'de A seçsek, D'de A seçsek oluyor.
+
+868
+02:28:48,768 --> 02:28:54,727
+Bu da regular. Dolayısıyla regular, concatenated by, this is also regular.
+
+869
+02:28:56,867 --> 02:28:58,347
+This is also regular.
+
+870
+02:29:01,227 --> 02:29:03,427
+So, all is regular.
+
+871
+02:29:05,620 --> 02:29:09,720
+Dolayısıyla L dili, burada görmüş olduğumuz L dili bir regular dili.
+
+872
+02:29:10,760 --> 02:29:13,659
+Ve bunu pump'ta görebiliriz hesabında değil mi?
+
+873
+02:29:14,380 --> 02:29:19,380
+Peki görelim, gerçekten regular olup olmadığını ispatlayalım pump'la da.
+
+874
+02:29:20,440 --> 02:29:25,100
+Regular olmadığı pump'ı biz regular olmadığını ispatlamak için kullanıyoruz, tamam mı?
+
+875
+02:29:25,740 --> 02:29:28,380
+Pump regular olduğunu değil, olmadığını ispatlamak için.
+
+876
+02:29:28,440 --> 02:29:31,140
+Bir tane örnek yapalım, L. Örneği alıyorum.
+
+877
+02:29:32,020 --> 02:29:33,639
+Bir tane W seçelim.
+
+878
+02:29:36,659 --> 02:29:38,479
+W şöyle olsun.
+
+879
+02:29:39,400 --> 02:29:40,620
+Çift sayıda E olsun.
+
+880
+02:29:42,540 --> 02:29:44,139
+Tamam. Çift sayıda E oldu.
+
+881
+02:29:46,139 --> 02:29:49,880
+Ve bir tane de tek sayıda E olsun, B olsun.
+
+882
+02:29:53,556 --> 02:30:16,036
+Şimdi, burada öyle bir parçalayacağız ki bunu, x, y, z'te, değil mi? X, bak bunu x dedim, bunu y dedim, bunu da z dedim. Niçin? Bir kere şunu x, y, z'te ben eleman olduğunu biliyorum.
+
+883
+02:30:18,868 --> 02:30:31,968
+Eleman olduğunu biliyorum ama şunu da garanti ediyorum. X, Z de elemanıdır. Y'yi çıkarttım, X, Z de elemanıdır. Dolayısıyla Y'nin uzunluğunu ne seçiyorum ben buna? 2 seçiyorum.
+
+884
+02:30:35,891 --> 02:30:37,351
+Bunu pump edersek,
+
+885
+02:30:45,075 --> 02:30:46,075
+Eleman oluyor.
+
+886
+02:30:46,955 --> 02:30:47,995
+Üç için yapsak.
+
+887
+02:30:54,868 --> 02:30:59,328
+Pardon. Kalem çalışmamaya başladı.
+
+888
+02:31:07,443 --> 02:31:11,363
+Bu da elemanı oluyor. Bütün hepsi için doğru.
+
+889
+02:31:15,252 --> 02:31:19,032
+Ama Y'nin iki seçilmesi lazım. Y'yi bir seçebilir miydim?
+
+890
+02:31:26,932 --> 02:31:39,292
+Y'yi bir seçebilir miyim? Y'nin uzunluğunu bir seçebilir miyim? Seçseydim o zaman bozulacaktı değil mi? Düzen bozulacaktı. Fark ettiniz değil mi?
+
+891
+02:31:44,244 --> 02:32:04,244
+Çiftken, tek tekken çift olacaktır. O düzeni bozmadan Y'yi seçeceksiniz. O paterni bozmadan. Unutmayın. Y'yi seçerken paterni bozmadan seçiyorsunuz. Dolayısıyla bu dil nedir? Regular diyor. Bu kadar basit. Bir de diğer bir durum var. O da şu.
+
+892
+02:32:08,852 --> 02:32:11,132
+4 tane A. Bunu da incelememiz lazım.
+
+893
+02:32:12,932 --> 02:32:16,612
+Şimdi burada patenini bozmayacağız.
+
+894
+02:32:17,032 --> 02:32:18,052
+Buna X diyoruz.
+
+895
+02:32:19,252 --> 02:32:20,352
+Buna Y diyorum. Pardon.
+
+896
+02:32:20,992 --> 02:32:21,812
+Buna X diyorum.
+
+897
+02:32:23,292 --> 02:32:24,891
+Buna Y diyorum. Buna Z diyorum.
+
+898
+02:32:28,852 --> 02:32:42,551
+Bizde XYZ elemanıdır. Zaten öyle. XYZ de elemanıdır. XYZ de elemanıdır. Bütün hepsi için.
+
+899
+02:32:50,963 --> 02:32:51,884
+Dolayısıyla,
+
+900
+02:32:55,043 --> 02:33:05,400
+El
+
+901
+02:33:03,476 --> 02:33:03,876
+Tamam.
+
+902
+02:33:08,427 --> 02:33:23,427
+El
+
+903
+02:33:07,796 --> 02:33:19,236
+Bakın, regular'da olup olmadığını anlamak için bağıntıya bakacaksınız. Ben şimdi şurada bir slider durduruyorum arkadaşlar. Tekrardan başlatacağım bir saniye.
+
+904
+02:33:44,632 --> 02:33:48,632
+El
+
+905
+02:33:43,700 --> 02:33:44,500
+Evet arkadaşlar.
+
+906
+02:33:47,000 --> 02:33:50,100
+Şimdi bir tane başka bir örnek verelim.
+
+907
+02:33:51,380 --> 02:33:51,640
+L
+
+908
+02:33:55,860 --> 02:33:56,700
+Şöyle olsun.
+
+909
+02:34:09,652 --> 02:34:33,371
+Bu dil nasıl bir dildir? Regular değildir değil mi bu? Neden? Bakın, A'ların sayısı, B'lerin sayısı eşit olacak, B'lerin sayısı eşit olacak. B'lerin sayısı, C'lerin sayısı eşit olacak. Bağıntı var. Dolayısıyla bu bir nedir? Regular değildir. Non-regular.
+
+910
+02:34:36,884 --> 02:34:40,543
+Hemen görebilirsiniz. Başka bir örnek verelim.
+
+911
+02:34:42,963 --> 02:34:44,504
+A üzeri ne? B üzeri M.
+
+912
+02:34:46,763 --> 02:34:47,743
+M, M.
+
+913
+02:34:50,224 --> 02:34:53,083
+Burada A'ların sayısıyla
+
+914
+02:34:55,891 --> 02:35:15,511
+B'lerin sayısı arasında bir bağıntı yok. A'ların sayısı herhangi bir şey olabilir. A'ların sayısıyla B'lerin sayısı arasında bir bağıntı yok. Dolayısıyla bu nedir? Regular'dır. Hemen görebilirsiniz. Peki şöyle yapalım. Başka bir şey.
+
+915
+02:35:20,147 --> 02:35:20,847
+örnek.
+
+916
+02:35:23,608 --> 02:35:28,547
+A üzeri N, B üzeri M, A üzeri N.
+
+917
+02:35:35,987 --> 02:35:41,207
+Buradaki ağların sayısıyla, sondaki ağların sayısı birbirine eşit olmak zorunda.
+
+918
+02:35:42,547 --> 02:35:44,128
+Değil mi? Dolayısıyla bu nedir?
+
+919
+02:35:46,427 --> 02:35:47,347
+Non-regular'dur.
+
+920
+02:35:50,027 --> 02:35:51,128
+Peki şu?
+
+921
+02:36:02,004 --> 02:36:04,204
+Bu nedir? Regular mıdır değil midir?
+
+922
+02:36:14,963 --> 02:36:17,123
+Evet arkadaşlar, size soruyorum.
+
+923
+02:36:20,004 --> 02:36:20,603
+Ne gülür?
+
+924
+02:36:21,164 --> 02:36:21,363
+Ne?
+
+925
+02:36:22,263 --> 02:36:22,564
+Neden?
+
+926
+02:36:24,623 --> 02:36:27,164
+A'ın, A'ın var elimizde.
+
+927
+02:36:29,863 --> 02:36:34,083
+A'ın içerisinde bir A olacak aslında elimizde.
+
+928
+02:36:34,263 --> 02:36:38,043
+Evet, A'ın içerisinde bir A olacak aslında elimizde.
+
+929
+02:36:40,340 --> 02:36:42,040
+İhtiyaceden gitsek,
+
+930
+02:36:42,600 --> 02:36:47,220
+Dolayısıyla A'ların sayısıyla B'lerin sayısı arasında bir bağlantı yok.
+
+931
+02:36:47,220 --> 02:36:49,799
+Bir bağlantı yok.
+
+932
+02:36:50,100 --> 02:36:51,780
+Dolayısıyla nedir bu da?
+
+933
+02:36:51,900 --> 02:36:52,460
+Regular'dır.
+
+934
+02:36:55,220 --> 02:36:56,860
+Peki, şöyle olursa.
+
+935
+02:37:00,180 --> 02:37:07,760
+A, N mod M, B, N mod N.
+
+936
+02:37:16,755 --> 02:37:17,275
+Amen.
+
+937
+02:37:25,012 --> 02:37:26,952
+Evet, regular mıdır, değil midir?
+
+938
+02:37:31,092 --> 02:37:34,551
+A'ların sayısı ile B'lerin sayısı arasında bir ilişki var mı?
+
+939
+02:37:42,004 --> 02:38:04,384
+Hocam, bunu şu şekilde yaklaştık. M ve N'den birisi de yerinden büyük olacak. Eşit olduğunu ayrı bir durum var dedim. Büyük olacak. Küçük olan zaten direkt neye modu, neye olur. O zaman iki tane regular atıklaşım birleşimi almışız hep bunu. Çok karıştırdım ben.
+
+940
+02:38:08,819 --> 02:38:12,919
+Evet, mesela bu bir soru olsun. Bunu quizde mi sorsak acaba?
+
+941
+02:38:18,680 --> 02:38:29,520
+Şimdi M ve N birden büyük, tam bu sor. Tamam mı? M ve N birden büyük. Birisi M bir olsa, N de bir olsa sıfır, empty string oluyor değil mi?
+
+942
+02:38:30,860 --> 02:38:33,239
+Empty string. Nedir bunun?
+
+943
+02:38:35,347 --> 02:38:43,707
+elemanıydın değil mi? Sonra A, B elemanı mıydın?
+
+944
+02:38:57,716 --> 02:38:58,956
+1 olabiliyor mu değil mi?
+
+945
+02:38:58,956 --> 02:39:13,576
+Mesela M2 olsun, N1 olsun. Bu durumda neye dönüşecek bu?
+
+946
+02:39:15,855 --> 02:39:24,476
+N mod M, dolayısıyla A olacak. M mod M, bu da 0 olacak. A elemanı da olacak.
+
+947
+02:39:24,927 --> 02:39:38,207
+Peki, tam tersi de olabilir. B100 olsa elemanıdır oluyor. Peki, M2, M2 olsa, o da emptyye gidiyor. 3ş, 1 olsa.
+
+948
+02:39:42,899 --> 02:39:46,239
+A olacak.
+
+949
+02:39:47,799 --> 02:39:49,319
+Yine elemanıdır.
+
+950
+02:39:49,559 --> 02:39:50,439
+3'e 2 olsa,
+
+951
+02:39:52,619 --> 02:39:53,619
+A, A,
+
+952
+02:39:54,239 --> 02:39:55,979
+B,
+
+953
+02:39:58,979 --> 02:40:01,040
+evet, M, 2, B.
+
+954
+02:40:01,579 --> 02:40:03,000
+Bu da elemanıdır olmuş oluyor.
+
+955
+02:40:03,000 --> 02:40:08,279
+Bu şekilde dizileri teker teker şey yapalım.
+
+956
+02:40:08,860 --> 02:40:09,700
+A, B var mı?
+
+957
+02:40:10,739 --> 02:40:38,020
+AB dizisi yok, bakın farkındasınız değil mi? AB dizisi yok. Eşit olması durumunda yok yani. Bu sanki eşitliği kabul etmiyor. Değil mi? Bütün ama diğer dizilerini kabul edeyim. Ne eşittir 4 olsa, ne eşittir 2 olsa, AA oluyor değil mi? Elemanı da olmuş olarak.
+
+958
+02:40:40,308 --> 02:40:58,728
+Sonra M eşittir 4, N eşittir 3 olsa, A oldu, şöyle, 3 geldi, 4'e 3, bu da B gelmiş oldu.
+
+959
+02:41:00,868 --> 02:41:07,648
+M eşittir 4, N eşittir 2 olsa, A geldi.
+
+960
+02:41:10,899 --> 02:41:21,599
+Tamam, onu yapmıştık. Bu şekilde bütün dizileri oluşturabiliriz. Peki bu dizinin bağıntı var mı? A'ların sayısıyla B'lerin sayısı arasında?
+
+961
+02:41:23,819 --> 02:41:26,059
+Var, hiç olmayacaklar. Nasıl?
+
+962
+02:41:26,659 --> 02:41:29,119
+Hiç olmayacaklar. A ve B sayısı.
+
+963
+02:41:39,603 --> 02:41:43,943
+B'den bir tane, oradan sıfır tane kılıyor.
+
+964
+02:41:44,283 --> 02:41:45,824
+Bak, bu sefer ne oluyor?
+
+965
+02:41:47,144 --> 02:41:55,683
+M mod M, dolayısıyla A olmuyor ama M mod M, iki tane B gelmiş oldu şu anda.
+
+966
+02:41:57,583 --> 02:42:00,943
+Bak, hem iki A geldi, arkasından iki tane B gelmiş oldu.
+
+967
+02:42:01,043 --> 02:42:03,824
+Peki, A, A, B'yi nasıl elde edebilirim?
+
+968
+02:42:03,824 --> 02:42:07,063
+Benzer şekilde, bütün sayıları elde ederse,
+
+969
+02:42:07,540 --> 02:42:08,260
+Sanki
+
+970
+02:42:08,260 --> 02:42:21,020
+Bunu şey yapacaksınız, regular mı değil mi diye bunu bir araştıracaksınız. Haftaya bunu çözüyor olacağız.
+
+971
+02:42:23,080 --> 02:42:25,639
+Tamam mı? Quizden önce çözüyor olacağız.
+
+972
+02:42:26,920 --> 02:42:30,520
+Bu regular mıdır değil midir? Bunu bir araştırıyorsunuz.
+
+973
+02:42:31,380 --> 02:42:32,560
+Başka bir örnek yapalım.
+
+974
+02:42:33,971 --> 02:42:35,992
+Bakın, hemen dili değiştiriyorum.
+
+975
+02:42:38,092 --> 02:42:50,031
+A üzeri M, B üzeri M mod, M faktörü.
+
+976
+02:43:01,780 --> 02:43:03,319
+Regular mıdır, değil midir?
+
+977
+02:43:09,268 --> 02:43:33,448
+Mesela M0 olsa, B oluyor. Sıfır faktörleri bir elemanıdır. Empty string elemanı değildir. 1 olsa A, B elemanıdır. 2 olsa A, B, B elemanıdır. 3 olsa
+
+978
+02:43:41,683 --> 02:43:46,664
+A, A, A, B elemanı değildir.
+
+979
+02:43:50,675 --> 02:44:04,355
+Peki bu regular mıdır, değil midir? A'ların sayısı ve B'lerin sayısı var. B'lerin sayısı, A'ların sayısından faktörü yerli. Dolayısıyla arada bir bağlantı var. Hemen buna ne demeniz lazım? Non-regular.
+
+980
+02:44:08,819 --> 02:44:09,560
+Peki şu?
+
+981
+02:44:26,036 --> 02:44:27,175
+Regular mü değil mi?
+
+982
+02:44:38,324 --> 02:44:43,463
+Hemen aklınıza bunu gerçeklemek gelsin. NFA veya DFA olarak.
+
+983
+02:44:45,923 --> 02:44:55,103
+Kaç tane state olmalı ki M! bulasınız arka arkaya gelen. Ve bütün faktöriyelerin uzunlukları birbirinden farklı.
+
+984
+02:44:58,524 --> 02:45:04,184
+Mesela M! şöyle. Nasıl yapılıyor M? M çarpı.
+
+985
+02:45:04,755 --> 02:45:24,575
+M-1 çarpı, M-2 çarpı, 2 çarpı, 1 çarpı, bu şekilde gidiyor. Mesela 3 faktörü, 3 çarpı, 2 çarpı, 1 yani 6, 7 faktörü, 7 çarpı, 6 çarpı, 5 çarpı, 4 çarpı, 3 çarpı, 2 çarpı, 1.
+
+986
+02:45:25,075 --> 02:45:31,795
+Şimdi burada B faktörü, ne olacak? Bir B uzunluklu var. Sonra bunu tanıdık.
+
+987
+02:45:31,860 --> 02:45:43,860
+Sonra mesela şöyle olacak, state. Bakın, şöyle olacak. State geldi. Start state.
+
+988
+02:45:50,067 --> 02:45:50,967
+Start state.
+
+989
+02:45:54,899 --> 02:46:13,719
+Hayır, bunu direkt kabul edemeyiz. İlkini, sıfır faktöriyel oluyor. Sıfır faktöriyel olunca bir oluyor. Dolayısıyla ilkini değil. İlk B'ye gittik ve bunu kabul ettik. Sonra, kaç defa gidecek? İki defa ilerleyecek.
+
+990
+02:46:21,043 --> 02:46:29,603
+Şimdi, iki defa ilerlediği zaman, iki çarpı, iki faktöryel, ne oluyor? İki ediyor.
+
+991
+02:46:33,747 --> 02:46:51,887
+Şimdi şöyle atlama sayısı iki etli, bak, bir, iki, bu da iki faktör, iki etli, bu da kabul etti. Üç faktör elde, kaç atlayacak? İkiye, binayet üç tane daha atlayacak.
+
+992
+02:47:06,804 --> 02:47:12,984
+Dörte, beşte, beşte.
+
+993
+02:47:18,804 --> 02:47:21,263
+Şöyle, 6 ekli.
+
+994
+02:47:25,108 --> 02:47:26,988
+Bakın, şu durumu aldım.
+
+995
+02:47:28,547 --> 02:47:28,887
+Sonra,
+
+996
+02:47:30,887 --> 02:47:32,148
+bir sürü iğne atlayacak.
+
+997
+02:47:33,667 --> 02:47:34,207
+Kaça kadar?
+
+998
+02:47:37,207 --> 02:47:38,547
+6-2-6
+
+999
+02:47:38,547 --> 02:47:42,227
+4-2-4'e kadar atlayacak sürekli.
+
+1000
+02:47:42,387 --> 02:47:43,828
+Atlayacak, atlayacak, atlayacak.
+
+1001
+02:47:45,207 --> 02:47:46,308
+24. de
+
+1002
+02:47:47,507 --> 02:48:05,187
+Yine bir final state olacak. Gördüğünüz gibi ne oluyor? NFA veya DFA yok. Bunu gerçekleyemiyor. Değil mi? Durum sayısı sonsuza doğru gidiyor. Bir pattern yok. Aynı durumu birden fazla kullanamıyorum. Dolayısıyla bu dil nedir? Non-regul olur.
+
+1003
+02:48:10,772 --> 02:48:16,012
+Peki, şu dil ne olur? Başka bir tane daha bir örneği verelim.
+
+1004
+02:48:27,891 --> 02:48:33,811
+B üzeri M! mod 3.
+
+1005
+02:48:51,283 --> 02:48:52,743
+Regular mıdır, değil midir?
+
+1006
+02:48:57,747 --> 02:49:02,747
+Şimdi şunu biliyoruz. 5 faktoriyel nedir? 5 çarpı.
+
+1007
+02:49:10,611 --> 02:49:31,691
+5 çarpı, 4 çarpı, 3 çarpı, 2 çarpı, 1. Dolayısıyla 5! mod 3, bu niye böyle oluyor ya? Bir saniye arkadaşlar.
+
+1008
+02:49:43,603 --> 02:49:44,523
+Mod 1.
+
+1009
+02:49:57,780 --> 02:50:02,680
+Neye eşittir? Bu sıfırdır değil mi? Dört faktörler neye eşit?
+
+1010
+02:50:09,683 --> 02:50:15,223
+Dolayısıyla 4! mod 3, neye eşittir bu da? Bu da 0'dır.
+
+1011
+02:50:16,304 --> 02:50:20,763
+3! mod 3 de 0'a eşittir.
+
+1012
+02:50:21,463 --> 02:50:26,804
+2! mod 3, neye eşittir?
+
+1013
+02:50:28,243 --> 02:50:29,543
+2'ye eşittir.
+
+1014
+02:50:29,743 --> 02:50:33,783
+1! mod 3, 1'e eşittir.
+
+1015
+02:50:33,883 --> 02:50:35,443
+0! mod 3,
+
+1016
+02:50:37,620 --> 02:50:52,080
+Bu da 1'e eşittir. Dolayısıyla bu dil nedir? L, B eşit, B, B ve P.
+
+1017
+02:50:58,420 --> 02:50:59,760
+The size of bear.
+
+1018
+02:51:09,620 --> 02:51:12,100
+2, less than you find, right?
+
+1019
+02:51:21,907 --> 02:51:22,627
+Bars.
+
+1020
+02:51:28,020 --> 02:51:34,060
+Arkadaşlar, bu, bu kullanma sarnı.
+
+1021
+02:51:45,172 --> 02:51:46,172
+Bak biz o.
+
+1022
+02:51:49,072 --> 02:51:49,832
+Bu muydu?
+
+1023
+02:52:02,611 --> 02:52:05,171
+Bu ne demek oluyor? L nedir bu durumda?
+
+1024
+02:52:09,332 --> 02:52:12,652
+Bu şekilde de yorumlayabilirsiniz.
+
+1025
+02:52:12,871 --> 02:52:14,932
+Bazı şeyleri bu şekilde yorumlayacaksınız.
+
+1026
+02:52:15,772 --> 02:52:16,452
+Peki şu.
+
+1027
+02:52:18,452 --> 02:52:20,152
+L eşittir.
+
+1028
+02:52:25,332 --> 02:52:26,292
+A.
+
+1029
+02:52:27,211 --> 02:52:28,172
+B.
+
+1030
+02:52:48,852 --> 02:53:01,652
+Hocam, yukarıdaki dilde, 3'ün katları olan 5 faktör yerde falan, 0 olduğu için B'nin kuvveti, boş stringte eleman olmuyor mu dilin?
+
+1031
+02:53:02,932 --> 02:53:14,872
+Bir saniye, M, 0'ı 1 olsa, B'nin elemanı her zaman 1 oluyor. 0 faktör yerde 1 ya, en az B, epsilon hiçbir zaman oluşmuyor. 0 ne zaman oluşuyor?
+
+1032
+02:53:16,340 --> 02:53:18,020
+Dört faktöriyatla mesela.
+
+1033
+02:53:19,020 --> 02:53:24,739
+O zaman sıfır olduğuna göre, evet bir tane de epsinon olacak. Doğru, haklısın. Gözümden kaçmış.
+
+1034
+02:53:25,720 --> 02:53:29,060
+Haklısın. Şu an burada bir de epsinon olması lazım.
+
+1035
+02:53:31,340 --> 02:53:36,840
+Sınavda da böyle hatalar yapabilirsiniz benim yaptığım bir hata göre şu anda. Gözümden kaçmış ama.
+
+1036
+02:53:38,279 --> 02:53:39,920
+Değil mi? Doğru, haklısın.
+
+1037
+02:53:41,079 --> 02:53:42,639
+Peki şu iki örneğe bakalım.
+
+1038
+02:53:43,252 --> 02:53:45,391
+Bu L1 olsun, bu L2 olsun.
+
+1039
+02:53:46,632 --> 02:53:47,612
+Bu ikisi aynı mı?
+
+1040
+02:53:57,492 --> 02:53:58,332
+Aynı bunlar.
+
+1041
+02:54:06,100 --> 02:54:08,899
+Evet. Kim cevap verecek?
+
+1042
+02:54:09,680 --> 02:54:10,680
+Değil hocam.
+
+1043
+02:54:11,939 --> 02:54:12,340
+Neden?
+
+1044
+02:54:13,899 --> 02:54:18,200
+Çünkü biri L1, AB, AB, AB şeklinde ilerliyor.
+
+1045
+02:54:18,579 --> 02:54:18,899
+Evet.
+
+1046
+02:54:19,200 --> 02:54:21,880
+Diğeri A'lar ve B'ler şeklinde.
+
+1047
+02:54:21,880 --> 02:54:31,659
+Mesela A, A, B, B elemanıdır L2 ama A, B, A, A, B, B.
+
+1048
+02:54:33,971 --> 02:55:01,172
+elemanı değildir, L1. Dolayısıyla AB, AB elemanıdır, L1. AB, AB elemanı değildir, L2. Değil mi? Hangisi regular? Bakın burada sayma sayısına bakın. A'ların sayısıyla B'lerin sayısı eşit olacak. Değil mi?
+
+1049
+02:55:01,664 --> 02:55:28,944
+L2'ye bakın. Yukarıda da A'ların sayısı, B'lerin sayısıyla eşit. Ama buradaki A'ların sayısıyla bir patern var. A'ların sayısı ve B'lerin sayısı eşit. Buradaysa A, B'nin sayısı var. Dolayısıyla bu dil nedir? Regular'dır. Bu ise non-regular.
+
+1050
+02:55:32,852 --> 02:55:45,112
+Tamam, arkadaşlar. Regular olan dilin, L1'in makinesini ne yapabiliriz? Hemen oluşturabiliriz. Çok basit. Çünkü regular olduğu için hemen yapalım. Bakın, bir start state.
+
+1051
+02:55:47,112 --> 02:55:49,012
+Bir start state.
+
+1052
+02:55:51,592 --> 02:55:52,231
+A.
+
+1053
+02:55:56,147 --> 02:56:03,827
+B, Final State'e ulaştım. Sonra tekrar buradan, Epsilon'dan tekrar başa dönüyorum.
+
+1054
+02:56:05,687 --> 02:56:08,547
+İşte bu nedir? Bu makine.
+
+1055
+02:56:11,087 --> 02:56:13,987
+Machine of, nedir? L1'dir.
+
+1056
+02:56:13,987 --> 02:56:14,867
+Tamam.
+
+1057
+02:56:17,387 --> 02:56:19,867
+NFA çizdim direkt. NFA.
+
+1058
+02:56:20,167 --> 02:56:21,367
+NFA olduğuna göre.
+
+1059
+02:56:22,835 --> 02:56:43,795
+Bu dil şeydir, L1 dili regular'dır. Ama L2 için böyle bir NFA çizemem. Dolayısıyla L2 de non-regular'dır. Zaten biliyorsun. Arkadaşlar, burada dersi sonlandırıyorum. Önümüzdeki hafta quiz var.
+
+1060
+02:56:45,631 --> 02:56:55,731
+Quizde bu regularlık, bunlarla ilgili NFA, DFA, Simplification, bu tür şeyler soracağız, sorabilirim.
+
+1061
+02:56:55,912 --> 02:56:57,592
+Soracağız derken, sorabiliriz.
+
+1062
+02:56:58,971 --> 02:57:04,551
+O yüzden quizde çalışarak gelin. Bu ikinci quiz, birinci quiz gibi kolay olmayacaktır.
+
+1063
+02:57:04,991 --> 02:57:08,031
+Çünkü bilenle bilinmeyenlerin ayrılması gerekiyor.
+
+1064
+02:57:09,012 --> 02:57:16,792
+Hepinize, derse katılımlarınız için teşekkür ederim. Kendinize çok iyi bakın. Haftaya görüşürüz arkadaşlar.
+
+1065
+02:57:22,355 --> 02:57:23,536
+İyi günler hocam.
+
+1066
+02:57:24,615 --> 02:57:25,236
+İyi günler.

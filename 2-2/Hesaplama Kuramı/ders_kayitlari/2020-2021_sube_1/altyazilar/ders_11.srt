@@ -1,0 +1,3759 @@
+1
+00:03:06,259 --> 00:03:07,560
+Merhaba arkadaşlar, günaydın.
+
+2
+00:03:28,532 --> 00:03:29,592
+Bir hasil an.
+
+3
+00:03:34,644 --> 00:03:50,704
+Önümüzdeki hafta bir hazır an, önümüzdeki hafta sınavımız var, kuyzimiz var. Hazırlıklı olun lütfen. Evet, bu hafta Turing makinelerine başlayacağız.
+
+4
+00:03:50,704 --> 00:04:01,343
+İşte geçen haftalar boyunca neleri görmüştük? NFA ve DFA'yı öğrenmiştik.
+
+5
+00:04:03,283 --> 00:04:07,403
+Artı, PDA'yı öğrendik.
+
+6
+00:04:09,163 --> 00:04:12,823
+Şimdi sıra ne var? Şimdi sırada Turing makinesi var.
+
+7
+00:04:16,183 --> 00:04:23,343
+NFA ve DFA için regular diller teorisi üzerinde durmuştuk.
+
+8
+00:04:24,243 --> 00:04:27,103
+PDA'da context-free diller üzerinde durduk.
+
+9
+00:04:30,803 --> 00:04:38,123
+Context-free'den daha güçlü dillerin gerçeklenmesi üzerinde duracağız, Turing makineler.
+
+10
+00:04:39,803 --> 00:04:56,923
+As you remember the language hierarchy, the regular languages are the languages you need to, regular languages are the languages NFA or there is at least one NFA or DFA to recognize.
+
+11
+00:04:57,555 --> 00:05:20,055
+So, if to recognize, for example, E star or E star B stars, these are the regular languages, these are the regular expressions. These regular expressions defines the regular languages. Regular language is a language that there is at least one NFA or DFA to recognize it.
+
+12
+00:05:22,548 --> 00:05:33,968
+Sometimes we have the languages like e power n, b power n, and e power n, b power n cannot be recognized or accepted by the NFA or DFA.
+
+13
+00:05:33,968 --> 00:05:41,247
+So these languages require more powerful machines or word and the inverse of the word.
+
+14
+00:05:41,567 --> 00:05:46,747
+You cannot design NFA or DFA to recognize this expression.
+
+15
+00:05:47,507 --> 00:06:08,491
+Bu, bu
+
+16
+00:06:09,300 --> 00:06:13,480
+Yeni, e n, b n, c n,
+
+17
+00:06:36,723 --> 00:06:41,963
+And the number of B must be equal to the number of C, and also the number of A must be equal to the number of C.
+
+18
+00:06:42,063 --> 00:06:43,963
+So there are three relationships.
+
+19
+00:06:44,504 --> 00:06:46,403
+So these relationships is more than one.
+
+20
+00:06:46,683 --> 00:06:50,343
+So this is not a context-free language.
+
+21
+00:06:50,584 --> 00:06:54,463
+So context-free languages cannot be used to express such languages.
+
+22
+00:06:56,504 --> 00:06:57,663
+In this case,
+
+23
+00:06:59,156 --> 00:07:10,475
+We need more powerful machines. In other words, pushdown automata cannot be used to detect this machine because there is no context-free grammar for these languages.
+
+24
+00:07:10,475 --> 00:07:21,055
+If there is no context-free grammar, so there is no pushdown automata to recognize this language. So we need more powerful machines. These powerful machines are called.
+
+25
+00:07:21,391 --> 00:07:27,151
+Turing makinesi, WW, bu koncatenation, Turing makinesi.
+
+26
+00:07:27,151 --> 00:07:31,111
+Bir sonraki bir anlamda, bu bir anlamda.
+
+27
+00:07:31,540 --> 00:07:37,580
+ve daha güçlü bir maçın daha güçlü bir maçın daha güçlü bir maçın.
+
+28
+00:07:53,232 --> 00:08:12,232
+Your mobile phone is a Turing machine. Turing machine is the current computers. You can see the current computers as Turing machines. Turing machines are more powerful. So in general, the languages accepted by Turing machines...
+
+29
+00:08:41,011 --> 00:08:43,251
+Turing machines.
+
+30
+00:08:44,471 --> 00:08:46,951
+Turing machine,
+
+31
+00:08:47,471 --> 00:08:49,511
+we have a tape
+
+32
+00:08:49,511 --> 00:08:51,831
+in the Turing machine,
+
+33
+00:08:52,051 --> 00:08:52,811
+as you remember,
+
+34
+00:08:53,451 --> 00:08:55,631
+for regular languages
+
+35
+00:08:55,631 --> 00:08:56,711
+we have only,
+
+36
+00:08:57,131 --> 00:08:58,371
+let me write,
+
+37
+00:09:01,251 --> 00:09:02,991
+for context-free languages,
+
+38
+00:09:03,171 --> 00:09:04,751
+we have only the
+
+39
+00:09:04,751 --> 00:09:05,951
+states,
+
+40
+00:09:06,911 --> 00:09:07,711
+as you remember.
+
+41
+00:09:31,731 --> 00:09:35,731
+Ve bu bir şey.
+
+42
+00:09:37,731 --> 00:09:40,731
+Bir şey ve bir şey.
+
+43
+00:09:40,731 --> 00:09:45,731
+Bir Turing'de, bir şey.
+
+44
+00:09:45,731 --> 00:09:47,115
+Bir şey.
+
+45
+00:09:51,731 --> 00:09:54,912
+But we don't, we have tape.
+
+46
+00:09:57,432 --> 00:10:03,831
+Tape is the information that you store, like it is, the length of the tape is infinite.
+
+47
+00:10:05,672 --> 00:10:06,231
+Okay.
+
+48
+00:10:07,831 --> 00:10:10,391
+So this is the Turing machine.
+
+49
+00:10:11,071 --> 00:10:13,251
+So Turing machine has a head.
+
+50
+00:10:13,811 --> 00:10:18,511
+This head can be used to read at the right data.
+
+51
+00:10:18,995 --> 00:10:22,195
+from and to the tape.
+
+52
+00:10:22,195 --> 00:10:22,695
+Okay?
+
+53
+00:10:23,836 --> 00:10:25,596
+So, this is the control unit.
+
+54
+00:10:26,795 --> 00:10:31,875
+Based on the contents inside this unit,
+
+55
+00:10:32,875 --> 00:10:34,415
+in these units,
+
+56
+00:10:34,935 --> 00:10:36,415
+the state changes
+
+57
+00:10:36,415 --> 00:10:38,295
+and you reach the final states.
+
+58
+00:10:38,716 --> 00:10:40,056
+So, it is almost similar
+
+59
+00:10:40,056 --> 00:10:41,515
+to the pushdown automats,
+
+60
+00:10:41,816 --> 00:10:43,135
+but in the pushdown automats,
+
+61
+00:10:43,375 --> 00:10:44,535
+we have the stack.
+
+62
+00:10:45,107 --> 00:10:51,107
+ve sadece yöntemle izlerlebiliriz.
+
+63
+00:10:59,668 --> 00:11:06,048
+So, the control unit is a little bit much more complex than the pushdown automata.
+
+64
+00:11:06,488 --> 00:11:12,548
+Therefore, Turing machine is much more powerful than pushdown automata.
+
+65
+00:11:12,548 --> 00:11:16,847
+So, you can solve many scientific problems using the Turing machine.
+
+66
+00:11:17,768 --> 00:11:22,548
+As I said before, there are, of course, some...
+
+67
+00:11:22,624 --> 00:11:27,584
+Problems that cannot be used, that cannot be solved by Turing machine.
+
+68
+00:11:28,264 --> 00:11:37,764
+So in such cases, we need more powerful machines like quantum machines, for example, are used to solve some problems and literally.
+
+69
+00:11:39,644 --> 00:11:41,903
+So tape here.
+
+70
+00:11:42,484 --> 00:11:48,484
+Bu da bu tape nesine ilginç.
+
+71
+00:11:48,484 --> 00:11:49,884
+Bu da bir anlaşma.
+
+72
+00:11:49,884 --> 00:11:52,284
+Of course, bu da bir anlaşma.
+
+73
+00:11:52,284 --> 00:11:57,284
+Ama bu da bu tape nesine ilginç.
+
+74
+00:11:57,284 --> 00:11:59,684
+Mesela Turing'in ilginç.
+
+75
+00:11:59,684 --> 00:12:02,284
+Ve bu da...
+
+76
+00:12:03,923 --> 00:12:07,283
+You see that each unit stores one characters.
+
+77
+00:12:07,283 --> 00:12:08,003
+Okay.
+
+78
+00:12:08,003 --> 00:12:19,283
+And here the head is used to read from the units in the tape or write to the write some characters to the tape.
+
+79
+00:12:19,408 --> 00:12:32,028
+Okay, and this hat can move to the left or to the right. Okay, it can move left or right. One step or more step depends on the Turing machine's capability.
+
+80
+00:12:37,076 --> 00:12:57,276
+So, as I said, this hat reads a symbol, or characters reads a symbol from the unit, or writes a symbol, and it moves left or right, based on the values it reads, and based on the values it writes, the control unit.
+
+81
+00:12:57,716 --> 00:12:59,716
+İntro, bu şekilde,
+
+82
+00:12:59,716 --> 00:13:24,716
+bu şekilde,
+
+83
+00:13:23,604 --> 00:13:49,868
+ve her yer
+
+84
+00:13:50,131 --> 00:13:54,131
+Bu konent tabi, bu konent tabi, değişken to bu konent tabi.
+
+85
+00:13:54,131 --> 00:14:00,131
+Bu konent tabi, A ve bu konent tabi, yazı A ve bu konent tabi, ve bu konent tabi.
+
+86
+00:14:15,827 --> 00:14:32,867
+Another time, so now you will read B, symbol B, and you will write F, and you will move right, and then the contents of the tape will change to here.
+
+87
+00:14:33,227 --> 00:14:39,427
+So here, as you see that, you read symbol B, you write F, and you move right, according to this.
+
+88
+00:14:39,427 --> 00:14:40,427
+So as you see that...
+
+89
+00:14:40,980 --> 00:14:43,759
+There are three operations on each state.
+
+90
+00:14:44,539 --> 00:14:49,259
+One operation is reading, the other operation is writing.
+
+91
+00:14:49,779 --> 00:14:53,620
+The next operation is moving left or right.
+
+92
+00:14:55,659 --> 00:15:03,139
+So the input string, as you see, the input string, this is the input string, A, B, A, C.
+
+93
+00:15:04,059 --> 00:15:06,620
+And here is, you see that...
+
+94
+00:15:08,884 --> 00:15:13,884
+or diamond symbols, okay?
+
+95
+00:15:13,884 --> 00:15:18,884
+When you see these diamond symbols denotes,
+
+96
+00:15:18,884 --> 00:15:22,884
+each diamond symbol denotes the blank symbol, okay?
+
+97
+00:15:22,884 --> 00:15:26,884
+It means that this part of the tape
+
+98
+00:15:26,884 --> 00:15:29,884
+and this part of the tapes are not used.
+
+99
+00:15:29,884 --> 00:15:33,548
+So actually these diamonds
+
+100
+00:15:33,556 --> 00:15:40,036
+DFA shows us where the input string starts and where the input string is end.
+
+101
+00:15:40,376 --> 00:15:48,556
+So it could be considered as a null in real, in our practical experiences.
+
+102
+00:15:48,836 --> 00:15:56,456
+For example, when you write the C code, for example, the null is used to represent the end of the string.
+
+103
+00:15:57,139 --> 00:16:02,539
+Okay, so in such a case or the null sometimes used to represent the memory is not used.
+
+104
+00:16:03,039 --> 00:16:10,460
+So similarly here, diamond symbols are used to represent that these units are not used.
+
+105
+00:16:11,539 --> 00:16:21,620
+So diamonds gives us the information about where the input string starts and where the input string ends.
+
+106
+00:16:22,035 --> 00:16:34,875
+So now, for example, so this is the input string, and the first symbol represents, the head is on the first symbol, and the head starts at the leftmost position, always, this is the rule.
+
+107
+00:16:36,255 --> 00:16:46,915
+Be careful, so this is the rule, this is very important, head starts at the leftmost positions, this is the rule, okay?
+
+108
+00:16:48,415 --> 00:16:49,155
+And
+
+109
+00:16:50,035 --> 00:16:53,615
+Now, we can define the states and the transitions.
+
+110
+00:16:55,115 --> 00:16:56,235
+Look at now.
+
+111
+00:16:57,955 --> 00:16:59,955
+You are at the state Q1.
+
+112
+00:17:01,275 --> 00:17:04,536
+This is state Q1 of the Turing machine.
+
+113
+00:17:05,596 --> 00:17:08,496
+And this is state Q2 of the Turing machine.
+
+114
+00:17:09,115 --> 00:17:13,056
+In order to change your state from Q1 to Q2,
+
+115
+00:17:14,115 --> 00:17:15,596
+there must be
+
+116
+00:17:16,468 --> 00:17:20,588
+Symbol A on the current unit where the head is on.
+
+117
+00:17:22,807 --> 00:17:24,988
+And you will read A.
+
+118
+00:17:25,407 --> 00:17:26,347
+There must be A.
+
+119
+00:17:26,448 --> 00:17:29,387
+If there is no A, this transition is not valid, of course.
+
+120
+00:17:29,807 --> 00:17:31,807
+If there is A, you read A.
+
+121
+00:17:32,068 --> 00:17:35,288
+Then you replace symbol A by symbol B.
+
+122
+00:17:36,084 --> 00:17:49,564
+Okay, this is operation, like you are pushing a symbol to the stick, similar, like, do you remember pushing a symbol to the stick, similar somehow, but we have extra, what we do, we move left or right.
+
+123
+00:17:50,184 --> 00:17:53,324
+Okay, we move left or right.
+
+124
+00:17:54,244 --> 00:18:00,804
+And then, if the current position of the hat has symbol A,
+
+125
+00:18:01,135 --> 00:18:26,455
+Then this transition is valid. You change your state from Q1 to Q2. And then symbol A is replaced by symbol B. And the head now moved to the one symbol left. Okay? Similarly, another transition. Look at here. This is the Q1.
+
+126
+00:18:27,220 --> 00:18:43,920
+For symbol A, you read symbol A, okay, you read symbol A, and you go to, you read symbol A, and you replace symbol A by symbol B, and then you move right, okay?
+
+127
+00:18:45,500 --> 00:18:47,039
+As you see that,
+
+128
+00:18:51,380 --> 00:18:59,720
+Let me write something. As you see that, for example, this is Q1, this is Q2.
+
+129
+00:19:05,203 --> 00:19:17,804
+So, you read symbol A, you replace B, move left, you read symbol A, you replace B, move right.
+
+130
+00:19:19,384 --> 00:19:29,163
+So, there is only one hat, so there are no two hat, so this is not a valid usage.
+
+131
+00:19:30,063 --> 00:19:30,663
+Sorry.
+
+132
+00:19:31,135 --> 00:19:41,935
+This is not a valid usage, means that Turing machines are deterministic, okay? Turing machines are deterministic.
+
+133
+00:19:44,775 --> 00:19:50,735
+And let us do an example. For example, in this example,
+
+134
+00:19:51,380 --> 00:19:59,220
+The input string is A, B, A, C, and there are diamonds representing the verdant tape is not used.
+
+135
+00:20:00,220 --> 00:20:04,160
+Okay, so it shows us where the input string starts and end.
+
+136
+00:20:04,880 --> 00:20:13,700
+And now you are, the head is pointing symbol A and the state is Q1.
+
+137
+00:20:14,500 --> 00:20:18,960
+Okay, in order to change, this is of course Q1 is the current state.
+
+138
+00:20:19,604 --> 00:20:21,004
+Q1 is the current state.
+
+139
+00:20:22,164 --> 00:20:26,524
+So, you want to change the state from Q1 to Q2.
+
+140
+00:20:27,184 --> 00:20:31,124
+The head must show points, symbol A.
+
+141
+00:20:31,504 --> 00:20:32,624
+Let us look at here.
+
+142
+00:20:32,984 --> 00:20:36,544
+Head is pointing, head is pointing symbol A.
+
+143
+00:20:37,463 --> 00:20:41,084
+And you will read the symbol A and you will...
+
+144
+00:20:41,392 --> 00:21:06,711
+A, B, A, B, and you will move right and the content will change like this. As you see that now if you were here, now you are here. Okay. Again, this is this you were at state Q1. The head is pointing symbol A.
+
+145
+00:21:07,155 --> 00:21:23,256
+Now you are at state Q2, then the head is pointing C. Why? Because you move right. You change the values of this unit and you move one symbol right. Okay?
+
+146
+00:21:24,875 --> 00:21:25,935
+Any question?
+
+147
+00:21:33,299 --> 00:21:41,960
+Similarly, this is the input string, and the head is on symbol A, and this is Q1 is the state.
+
+148
+00:21:43,259 --> 00:21:56,500
+Now, the input symbol, you read symbol A, look at here, the head is pointing symbol A, so this transition is valid, so you read symbol A.
+
+149
+00:21:56,915 --> 00:22:01,796
+And you substitute symbol A by symbol B.
+
+150
+00:22:02,576 --> 00:22:04,415
+Yes, you change it as you see.
+
+151
+00:22:04,415 --> 00:22:10,736
+And then the move will, the head will move left.
+
+152
+00:22:11,615 --> 00:22:16,836
+Will move to the left as you see that now you are pointing symbol B.
+
+153
+00:22:17,375 --> 00:22:19,355
+And now you are at state Q2.
+
+154
+00:22:21,435 --> 00:22:24,615
+So from this example, you conclude that.
+
+155
+00:22:25,140 --> 00:22:45,059
+Turing makinesi, we have tape, and this tape is manipulated based on the head positions, manipulated by reading and writing by the head, okay?
+
+156
+00:22:47,180 --> 00:22:51,059
+So, for example, look at this transition.
+
+157
+00:22:52,627 --> 00:23:05,087
+So this is the input string and the head is pointing diamond symbol. Diamond symbol represents the blank, so it's normal. So you are at state Q1 and you are pointing diamond.
+
+158
+00:23:06,087 --> 00:23:15,548
+Look at here. You are at state Q1 as you see here. And now you read.
+
+159
+00:23:16,403 --> 00:23:38,864
+Diamond symbol, and you write G, and you move right. So what you have, you are here, you read diamond, you write G, and you move right. Now you are at state Q2. So this is time 2. So this is another example. So diamonds here are also used to represent, are also symbols.
+
+160
+00:23:39,539 --> 00:23:47,859
+And these symbols can be used to represent unused memories or the units.
+
+161
+00:23:48,519 --> 00:23:56,740
+And you can choose any symbol to represent the unused units.
+
+162
+00:23:56,740 --> 00:24:04,299
+For example, you can choose dollars or you can choose delta or you can choose zero.
+
+163
+00:24:04,948 --> 00:24:09,708
+Ok, it depends what you choose, what which symbol you use.
+
+164
+00:24:13,068 --> 00:24:17,708
+As we said that Turing machines are deterministic.
+
+165
+00:24:18,528 --> 00:24:21,728
+For example, look at here, you are at stage Q1.
+
+166
+00:24:24,468 --> 00:24:28,068
+If the head is pointing symbol A,
+
+167
+00:24:28,723 --> 00:24:37,523
+Read the symbol A, and replace symbol A by B, and move right, and you reach the state Q2.
+
+168
+00:24:38,443 --> 00:24:46,364
+If the head is pointing symbol B, replace symbol B by symbol D, and move left.
+
+169
+00:24:46,703 --> 00:24:49,543
+So this is a load, okay?
+
+170
+00:24:49,723 --> 00:24:50,743
+This is a load.
+
+171
+00:24:51,743 --> 00:24:53,563
+But now, look at this one.
+
+172
+00:24:54,644 --> 00:25:04,223
+You read symbol, the head is pointing symbol A, and you substitute symbol A by symbol B, and you move to the right.
+
+173
+00:25:05,023 --> 00:25:16,463
+This is okay. Head is also pointing here symbol A, and you move, you replace symbol A by symbol D, and you move left.
+
+174
+00:25:17,243 --> 00:25:18,443
+So as you see that,
+
+175
+00:25:18,867 --> 00:25:26,867
+Meskiden, bu konuda, bir konu, bir konu, bir konu.
+
+176
+00:25:26,867 --> 00:25:30,867
+Meskiden, ne kadar bir süreçte bilgi var.
+
+177
+00:25:30,867 --> 00:25:33,867
+Bu da, bu da, bu da, bu da.
+
+178
+00:25:33,867 --> 00:25:38,867
+Meskiden, iki farklı bir konuda var.
+
+179
+00:25:38,867 --> 00:25:41,867
+Neden? Çünkü sadece bir hat.
+
+180
+00:25:42,675 --> 00:25:49,995
+There is only one hat, so this transition is not allowed. If this is allowed, the second one will not be allowed.
+
+181
+00:25:51,895 --> 00:26:04,255
+From this point, Turing machines are deterministic. In addition, no epsilon transitions allowed. Epsilon transitions also not allowed.
+
+182
+00:26:04,455 --> 00:26:10,135
+Because, as you see that, in these units, you have to write a symbol.
+
+183
+00:26:10,836 --> 00:26:18,395
+Empty string is the string whose length is zero, but here each symbol length is one.
+
+184
+00:26:19,115 --> 00:26:25,035
+So empty transitions are not allowed also in Turing machines.
+
+185
+00:26:25,455 --> 00:26:27,015
+This is also very important.
+
+186
+00:26:29,336 --> 00:26:30,675
+Any question?
+
+187
+00:27:05,652 --> 00:27:30,332
+Okay, if you don't have a question, should we move? And partial transition functions. And partial transition function, like look at this example. These are the diamonds, okay, representing the null, unused parts of the tape. And this is the input string, and the head is pointing symbol A, and you are at state Q1.
+
+188
+00:27:35,731 --> 00:27:49,731
+Now, you are at state Q1, you read symbol A, or here you read symbol B. Which one is possible? So the hat is pointing A, so this transition is valid.
+
+189
+00:27:51,451 --> 00:27:57,971
+So this transition is not valid. Why? Because hat is not pointing symbol B. So this transition is valid.
+
+190
+00:27:58,579 --> 00:28:08,279
+So, the state will change from Q1 to Q2, and the symbol A will be replaced by symbol B, and the head will move to the right.
+
+191
+00:28:08,379 --> 00:28:12,959
+So, the head will point symbol C after this transition.
+
+192
+00:28:16,660 --> 00:28:17,160
+Okay?
+
+193
+00:28:24,211 --> 00:28:48,392
+Halt, the machine halts if states if there is no transition to follow. For example, in such case, if, for example, if we have, which one, okay, if we have C here, okay.
+
+194
+00:28:49,619 --> 00:28:52,899
+Now, the head is pointing symbol A.
+
+195
+00:28:56,948 --> 00:29:05,108
+Bu değişiklik değil. Bu değişiklik değil. Bu değişiklik değil.
+
+196
+00:29:05,108 --> 00:29:10,988
+Bu değişiklik değil. Bu değişiklikler bu değişikliklerden birleştirilir.
+
+197
+00:29:10,988 --> 00:29:13,948
+Bu değişikliklerden bir değişikliklerden birleştirilir.
+
+198
+00:29:13,948 --> 00:29:18,948
+Bu değişikliklerden birleştirilir.
+
+199
+00:29:21,044 --> 00:29:29,484
+Halting means stops, the machine halts in a state if there is no transition to follow, which means that the input is rejected.
+
+200
+00:29:30,684 --> 00:29:30,824
+Okay?
+
+201
+00:29:32,404 --> 00:29:33,664
+Halting example.
+
+202
+00:29:35,504 --> 00:29:42,304
+So, for example, you are at state Q1 and the head is pointing C.
+
+203
+00:29:44,339 --> 00:29:54,399
+And as you see there, you reach the state Q1, and there is no state, there is no transition, there is no outgoing transition from Q1.
+
+204
+00:29:54,839 --> 00:30:02,699
+So what will happen? The machine will halt. So the input string will be rejected.
+
+205
+00:30:05,199 --> 00:30:07,279
+Another halting example.
+
+206
+00:30:08,948 --> 00:30:12,268
+The head is pointing C and you are at state Q1.
+
+207
+00:30:13,208 --> 00:30:15,688
+So there are two possible transitions.
+
+208
+00:30:15,988 --> 00:30:30,848
+In order to have these possible transitions, the head must point symbol C, but here it requires head is pointing symbol, head point symbol A.
+
+209
+00:30:31,380 --> 00:30:45,740
+Here, for this transition, this transition requires that the head points symbol B, but in reality, in fact, head is pointing symbol C, so these two transitions are not valid.
+
+210
+00:30:47,859 --> 00:30:54,940
+Therefore, this state change from Q1 to Q2 is not allowed.
+
+211
+00:30:57,299 --> 00:31:00,460
+Q1 to Q3 is not allowed.
+
+212
+00:31:01,220 --> 00:31:08,259
+So, there is no possible transition from Q1 for symbol C.
+
+213
+00:31:08,259 --> 00:31:16,740
+So, this system, the Turing machine will hold, meaning that the input string is rejected.
+
+214
+00:31:20,531 --> 00:31:45,951
+We have also the accepting states. In the Turing machines, all the states reach to the, I mean, there is a flow from start state to the final states, okay? There is a flow, transition flow. There is a transition flow from start state to the final states. This is a level.
+
+215
+00:31:46,516 --> 00:31:54,175
+But for Turing machines, there is no outgoing transition from final stage.
+
+216
+00:31:54,756 --> 00:31:57,216
+If you reach the final stage, that is end.
+
+217
+00:31:58,115 --> 00:32:00,776
+There is no outgoing transition.
+
+218
+00:32:00,956 --> 00:32:03,476
+So this is not allowed.
+
+219
+00:32:04,695 --> 00:32:05,016
+Okay?
+
+220
+00:32:05,336 --> 00:32:06,276
+This is not allowed.
+
+221
+00:32:07,096 --> 00:32:08,096
+I will repeat.
+
+222
+00:32:10,175 --> 00:32:14,096
+There is no outgoing transitions from...
+
+223
+00:32:14,291 --> 00:32:16,311
+final states in Turing machine.
+
+224
+00:32:17,152 --> 00:32:40,372
+For example, some of your friends in the exam, they implement the Turing machines and they put transitions, they put outgoing transitions from final states and they say that, okay, my implementation is correct.
+
+225
+00:32:40,491 --> 00:32:41,392
+No, it is not correct.
+
+226
+00:32:42,451 --> 00:32:48,292
+By definition, there is no outgoing transitions for final states in Turing machine.
+
+227
+00:32:49,032 --> 00:32:58,872
+If you do that, if you do something that conflicts with the definition of the Turing machine, then your solution is not correct.
+
+228
+00:32:59,052 --> 00:32:59,272
+Sorry.
+
+229
+00:33:00,292 --> 00:33:00,572
+Okay?
+
+230
+00:33:00,812 --> 00:33:02,192
+So you should be very careful.
+
+231
+00:33:03,471 --> 00:33:09,032
+So there is no outgoing transitions from the final states.
+
+232
+00:33:16,019 --> 00:33:20,019
+Turing makinesi, halte ve accept.
+
+233
+00:33:20,019 --> 00:33:22,019
+Halte ve accept.
+
+234
+00:33:29,619 --> 00:33:55,700
+Acceptance means you have an input string and if Turing machine holds in an accepting state, then the input is accepted. Rejection is you have an input string, Turing machine holds in a non-accept, non-final state.
+
+235
+00:33:56,531 --> 00:34:07,591
+Or, Turing machine enters an infinite loop. There is a loop, infinite. The loop is infinite. Then the input is rejected. Okay?
+
+236
+00:34:08,532 --> 00:34:21,771
+So, this is the... There are three states in the Turing machine. One is the accepting. The other one is the non... One is the halting in a final state.
+
+237
+00:34:22,132 --> 00:34:28,231
+Accept state means, let me write, this is final state.
+
+238
+00:34:38,547 --> 00:34:39,547
+Okay?
+
+239
+00:34:42,547 --> 00:34:43,547
+This is
+
+240
+00:34:45,547 --> 00:34:47,547
+non-final state.
+
+241
+00:34:54,579 --> 00:34:55,579
+Ok.
+
+242
+00:34:56,779 --> 00:34:57,779
+And
+
+243
+00:34:58,779 --> 00:35:19,579
+there are two conditions in the Turing machines. The first condition is Turing machine holds in a final state, on a final state. The second condition is Turing machine holds in a non-final state or Turing machine enters in an infinite loop.
+
+244
+00:35:20,115 --> 00:35:30,735
+So, for these three conditions, if Turing machine holds in a final state, then the input string is accepted, of course, because your last state is a final state.
+
+245
+00:35:31,996 --> 00:35:46,836
+And if the Turing machine holds in a non-final state or it enters infinite loop, then the input string is, of course, rejected by definition.
+
+246
+00:35:49,108 --> 00:35:51,268
+So, observation, we have observation.
+
+247
+00:35:52,068 --> 00:35:59,488
+In order to accept the input string, it is not necessary to scan all the symbols in the string.
+
+248
+00:36:00,448 --> 00:36:02,428
+Do you get what it says?
+
+249
+00:36:03,428 --> 00:36:11,168
+In the Turing machines, okay, this is the input string, for example, look at this input string.
+
+250
+00:36:11,764 --> 00:36:18,403
+URF state, you do not need to scan all the inputs, symbols.
+
+251
+00:36:19,784 --> 00:36:25,244
+Just based on these transitions, you reject the input or not.
+
+252
+00:36:26,184 --> 00:36:32,024
+Okay, so this is very most, this is the most important observation.
+
+253
+00:36:33,024 --> 00:36:35,764
+Therefore, tunic machines are very...
+
+254
+00:36:37,715 --> 00:36:54,655
+The speed of Turing machines are, the speed of Turing machine is very high in comparison with the PDA or NFA, DFA in such cases.
+
+255
+00:36:55,655 --> 00:36:56,655
+Okay?
+
+256
+00:36:58,395 --> 00:36:59,655
+And...
+
+257
+00:37:00,115 --> 00:37:06,015
+After this, now we can do some Turing machine example.
+
+258
+00:37:07,096 --> 00:37:09,096
+Look at this example.
+
+259
+00:37:09,435 --> 00:37:10,635
+We have a Turing machine.
+
+260
+00:37:10,836 --> 00:37:13,836
+The input alphabet is A and B.
+
+261
+00:37:14,815 --> 00:37:17,036
+And the language is E star.
+
+262
+00:37:17,395 --> 00:37:19,195
+This E star is the regular language.
+
+263
+00:37:19,576 --> 00:37:20,956
+Okay, this is regular language.
+
+264
+00:37:21,695 --> 00:37:26,195
+For this regular language, we can design a Turing machine.
+
+265
+00:37:28,916 --> 00:37:32,736
+So you are at state Q0, Q0 is the start state.
+
+266
+00:37:34,256 --> 00:37:49,396
+The head is pointing symbol A and reach symbol A and then substitute symbol A by symbol A and then you move right until you reach what?
+
+267
+00:37:49,396 --> 00:37:52,916
+You reach a diamond symbol.
+
+268
+00:37:53,652 --> 00:38:00,311
+ve yazı diamond symbol ve yazı diamond symbol ve yazı final state.
+
+269
+00:38:24,820 --> 00:38:32,539
+Bu yüzden bu konuda, bu idi olarak, bir saniye edelim.
+
+270
+00:38:38,003 --> 00:38:39,543
+This is the language of
+
+271
+00:39:14,068 --> 00:39:22,028
+In this case, Epsilon is not the element of language 1.
+
+272
+00:39:23,588 --> 00:39:26,467
+But A is element of the language 1.
+
+273
+00:39:27,427 --> 00:39:29,788
+Double A is element of the language 1.
+
+274
+00:39:31,048 --> 00:39:35,068
+Triple A is the element of the language 1.
+
+275
+00:39:35,387 --> 00:39:39,528
+But in this case, empty string is not the element of the language 1.
+
+276
+00:39:40,532 --> 00:39:47,992
+So, this is equal to A, AA, AAA, and so on.
+
+277
+00:39:48,851 --> 00:40:01,032
+But this language is here, empty string, A, AA, AAA, and so on.
+
+278
+00:40:02,912 --> 00:40:05,492
+So, what is the Turing machine for this?
+
+279
+00:40:07,764 --> 00:40:10,764
+Çok kolay, sizlerinizin en kısımda,
+
+280
+00:40:17,300 --> 00:40:22,240
+You will go to the Q1, you also have must point symbol A.
+
+281
+00:40:24,340 --> 00:40:25,019
+And.
+
+282
+00:40:29,427 --> 00:40:36,128
+You will replace symbol A by symbol A, and you move, you can write like this also.
+
+283
+00:40:36,967 --> 00:40:42,768
+You can change, no need to, for example, you can also write X and move right.
+
+284
+00:40:45,827 --> 00:40:46,768
+And...
+
+285
+00:40:58,804 --> 00:41:01,204
+Bu, final stage, Q3.
+
+286
+00:41:11,891 --> 00:41:12,971
+And then...
+
+287
+00:41:17,204 --> 00:41:21,244
+Actually, instead of this, we can move to the left.
+
+288
+00:41:23,064 --> 00:41:23,824
+It is good.
+
+289
+00:41:24,164 --> 00:41:28,604
+So, at the beginning, for example, you have like this.
+
+290
+00:41:33,715 --> 00:41:37,915
+A, A, A.
+
+291
+00:41:49,364 --> 00:41:52,364
+ve Hed is pointing here.
+
+292
+00:41:54,364 --> 00:41:57,364
+Okay, and this one,
+
+293
+00:41:59,364 --> 00:42:03,364
+after operation Turing machine, copy.
+
+294
+00:42:15,027 --> 00:42:16,727
+Let me clean this one.
+
+295
+00:42:19,307 --> 00:42:21,307
+The input will be like this.
+
+296
+00:42:21,727 --> 00:42:26,967
+So the content of the machine will be fixed like this.
+
+297
+00:42:28,427 --> 00:42:29,067
+Okay?
+
+298
+00:42:29,527 --> 00:42:31,947
+So again, this is also another Turing machine.
+
+299
+00:42:32,807 --> 00:42:36,727
+So what you write, what you read depends on your algorithm.
+
+300
+00:42:37,087 --> 00:42:37,327
+Okay?
+
+301
+00:42:40,407 --> 00:42:41,447
+Any question?
+
+302
+00:42:45,876 --> 00:42:50,096
+Okay, this is an example. Let us continue on the example.
+
+303
+00:42:52,615 --> 00:42:54,096
+Look at this example.
+
+304
+00:42:56,016 --> 00:42:58,656
+You are at stage 2-0.
+
+305
+00:43:01,096 --> 00:43:06,936
+Okay, and you read symbol A and you write symbol A and you move right.
+
+306
+00:43:08,596 --> 00:43:11,036
+And you read right and you move right.
+
+307
+00:43:11,036 --> 00:43:12,676
+Again, you read.
+
+308
+00:43:13,007 --> 00:43:22,727
+A, and you move, you write symbol A, and you move left, sorry, you move right.
+
+309
+00:43:25,427 --> 00:43:31,827
+Okay, again, you read symbol A, and you write symbol A, and you move right.
+
+310
+00:43:34,587 --> 00:43:38,327
+Now, head is pointing diamond.
+
+311
+00:43:39,092 --> 00:43:48,992
+ve DFA ve DFA ve DFA ve DFA ve DFA ve sonlu otomatlar, sonlu otomatlar, bu konuları değiştiremez ve左 tarafa değiştiremez.
+
+312
+00:43:53,460 --> 00:44:08,559
+Now, you reach to the final state, and the input is accepted. Why? Because the final state, this is the last state, Q1, is the final state. So this is the, so the input string is accepted.
+
+313
+00:44:09,940 --> 00:44:15,059
+Let us now look at this example. In this case,
+
+314
+00:44:15,699 --> 00:44:21,980
+The head is pointing symbol A, and ABA is the input string, and you are at state Q0.
+
+315
+00:44:23,059 --> 00:44:29,619
+You read symbol A, you write symbol A, and you move right. Okay, good.
+
+316
+00:44:31,659 --> 00:44:39,980
+Now, you will read symbol A, or you will read diamond, but in this case here, there is no...
+
+317
+00:44:40,884 --> 00:45:07,544
+Symbol A, there is no diamond, so this transition and this transition is not valid. So there is no possible transitions, even if you are not reaching to the final state. So look at this Q0. Q0 is not a final state and there is no outgoing transitions for symbol B. And then the machine holds, meaning that
+
+318
+00:45:08,115 --> 00:45:25,016
+ABA is rejected. As you see that, no need to scan all the strings. For example, we didn't scan the symbol A here, but we directly decide the input is rejected. So that is why Turing machines are test.
+
+319
+00:45:30,068 --> 00:45:31,848
+Okay, simple machine.
+
+320
+00:45:33,788 --> 00:45:39,388
+Look at this is the input alphabet and you want to recognize A star.
+
+321
+00:45:39,928 --> 00:45:42,728
+Okay, so for this case.
+
+322
+00:45:47,507 --> 00:46:12,567
+Look at this symbol. So we have only one symbol in our alphabet. And we want to recognize A star. There is no symbol B here. There is no symbol C here. This is the old alphabet. So there are no possibility that A star, there is a pattern different than A star.
+
+323
+00:46:14,708 --> 00:46:31,867
+You are always at final stage. So this is the Turing machine representation of this language for this input symbol AB. If there is a B here, sorry, for input symbol A. If there is a B here,
+
+324
+00:46:34,148 --> 00:46:38,367
+okay, there is a, let me write maybe here like this, one second.
+
+325
+00:46:42,675 --> 00:46:46,356
+If symbol alphabet is like this.
+
+326
+00:46:52,532 --> 00:46:56,652
+If we have an alphabet like this, and this Turing machine is not correct.
+
+327
+00:46:58,872 --> 00:47:03,251
+This Turing machine is not correct if alphabet is like this.
+
+328
+00:47:04,052 --> 00:47:12,072
+But in our case, now in our alphabet, there is only one symbol A, and the language is the A star.
+
+329
+00:47:12,372 --> 00:47:15,512
+So this is the Turing machine for this language.
+
+330
+00:47:17,472 --> 00:47:18,952
+As you see that,
+
+331
+00:47:19,443 --> 00:47:37,664
+Turing machine is much simpler for some alphabets. So look at this, there is no state transition. It's very simple. In order to recognize this for NFA or DFA, you need to count, you need to check. Do you get the point?
+
+332
+00:47:40,344 --> 00:47:40,923
+Time.
+
+333
+00:47:42,844 --> 00:47:45,144
+So you are at stage Q0.
+
+334
+00:47:46,963 --> 00:47:56,543
+Okay, and there is no outgoing transition, so not necessary to scan the input. So, input is accepted.
+
+335
+00:47:59,824 --> 00:48:10,344
+Infinite loop example. Okay, infinite loop example. After this infinite loop example, we will have 10 minute break. Okay.
+
+336
+00:48:11,827 --> 00:48:37,748
+This is the regular expressions. As you see that E star or B, E or B star. Okay? So this is the language. So we need to have the Turing machine. So E star or it consists of all
+
+337
+00:48:38,143 --> 00:48:40,884
+Symbol A, so this is E star.
+
+338
+00:48:41,804 --> 00:48:43,364
+You always move, right?
+
+339
+00:48:43,844 --> 00:48:56,463
+Or you start B, as you see here, or any of them.
+
+340
+00:48:57,463 --> 00:48:57,784
+Okay?
+
+341
+00:48:59,315 --> 00:49:25,835
+Çünkü, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye deyde, b'ye de
+
+342
+00:49:26,260 --> 00:49:38,980
+For example, here, there is an infinite loop. For example, if there is a very long, long, long center, so this is a final infinite loop occurs here, and you reach the final state.
+
+343
+00:49:40,099 --> 00:49:49,059
+Okay. Arkadaşlar, şimdi 10 dakikada veriyoruz. 10 dakikadan sonra devam edeceğiz.
+
+344
+01:03:17,619 --> 01:03:20,039
+Evet arkadaşlar, şimdi devam edeceğiz.
+
+345
+01:03:36,307 --> 01:03:45,148
+Okay, let us now consider how this Turing machine is working.
+
+346
+01:03:46,327 --> 01:03:57,008
+So, this is the input string ABA, okay, and this is the Turing machines provided to us.
+
+347
+01:03:57,827 --> 01:04:02,867
+Okay, the head is pointing symbol A, and you are at state Q0.
+
+348
+01:04:04,307 --> 01:04:25,268
+Now, you will, the point, the head is pointing symbol A, so this transition is valid. So you will read symbol A and you will write it. You will write symbol A and you move right. So you will move to the right in this here. You will move here, this position.
+
+349
+01:04:26,547 --> 01:04:54,087
+Ok, let us see after transitions, after this. Ok, now. Now, the head is pointing symbol B. So, this transition is valid. So, what will happen? You will read symbol B. Ok. And you will write symbol B.
+
+350
+01:04:54,643 --> 01:05:27,659
+ve Turing makinesi konularını işle
+
+351
+01:05:02,291 --> 01:05:02,731
+Okay.
+
+352
+01:05:04,891 --> 01:05:05,411
+Now,
+
+353
+01:05:06,972 --> 01:05:07,652
+you will
+
+354
+01:05:09,452 --> 01:05:10,251
+write
+
+355
+01:05:11,132 --> 01:05:12,211
+symbol A.
+
+356
+01:05:13,411 --> 01:05:19,331
+So you will read symbol A and you move, you write symbol A, you move, right.
+
+357
+01:05:19,692 --> 01:05:20,251
+Okay.
+
+358
+01:05:23,652 --> 01:05:27,331
+So as you see that, this is the input string.
+
+359
+01:05:29,172 --> 01:05:32,152
+The input string is A, B, A, whatever else.
+
+360
+01:05:33,192 --> 01:05:36,972
+So the state is, you are at state Q0 here.
+
+361
+01:05:37,472 --> 01:05:39,452
+Now you change your state.
+
+362
+01:05:39,711 --> 01:05:42,452
+You are at state Q0.
+
+363
+01:05:42,552 --> 01:05:45,231
+You see that there is an infinite loop.
+
+364
+01:05:45,231 --> 01:05:49,231
+So you change the head position change to...
+
+365
+01:05:50,547 --> 01:06:01,567
+Here, the second symbol, and then go back first, and then go back second, and it continues forever. So this is infinite loop, okay?
+
+366
+01:06:03,907 --> 01:06:06,447
+So, look at here.
+
+367
+01:06:14,996 --> 01:06:42,136
+The input starts with A, and the second is B, so AB, so AB something else. So this input will be rejected. So there is an infinite loop. Because of the infinite loop, the accepted things cannot be reached.
+
+368
+01:06:42,835 --> 01:06:45,275
+Yani maskeye hiç duruyor.
+
+369
+01:06:45,275 --> 01:06:49,076
+Aslında bu konuda birleştiriyor.
+
+370
+01:06:49,076 --> 01:06:52,475
+O yüzden bu konuda birleştirildi.
+
+371
+01:06:56,596 --> 01:06:59,856
+What about this one? One second.
+
+372
+01:07:02,715 --> 01:07:10,556
+And if we have here A, there are AAA.
+
+373
+01:07:11,556 --> 01:07:18,195
+Look at this example. In this case, this transition is accepted.
+
+374
+01:07:19,096 --> 01:07:22,836
+Okay. In this case, this transition is correct.
+
+375
+01:07:24,148 --> 01:07:49,027
+Okay, and then this transition is valid, and then you will read symbol A, you will write symbol A, you move left, sorry, you move right, you will read A, you will write A, you move right, you will read A, you move, you move, you write symbol A, and you move right, and now you are at here.
+
+376
+01:07:49,588 --> 01:07:54,808
+The head is pointing diamond symbol, symbol diamond.
+
+377
+01:07:57,248 --> 01:08:05,108
+And you read diamond, symbol diamond, you write symbol diamond, and you move left.
+
+378
+01:08:05,408 --> 01:08:11,228
+So you reach the final state. As you see that, this input is accepted.
+
+379
+01:08:13,208 --> 01:08:14,788
+What about this one?
+
+380
+01:08:20,819 --> 01:08:26,699
+Let's say this is B, this is again B, no matter.
+
+381
+01:08:28,199 --> 01:08:35,239
+You read symbol B, so this is valid now.
+
+382
+01:08:36,679 --> 01:08:37,379
+One second.
+
+383
+01:08:46,515 --> 01:08:49,155
+Now, this transition is not valid.
+
+384
+01:08:56,627 --> 01:08:59,007
+Bu transition is valid.
+
+385
+01:09:01,527 --> 01:09:02,207
+Okay?
+
+386
+01:09:02,627 --> 01:09:07,827
+You will read symbol B, you will write symbol B and you move left.
+
+387
+01:09:08,287 --> 01:09:14,747
+Now, you are representing, you are pointing this one and then you reach the final state.
+
+388
+01:09:15,167 --> 01:09:16,627
+You reach the final state, done.
+
+389
+01:09:17,847 --> 01:09:19,727
+So what happens here?
+
+390
+01:09:21,067 --> 01:09:23,723
+As you see that, we didn't...
+
+391
+01:09:25,043 --> 01:09:27,363
+Scan the next values.
+
+392
+01:09:28,384 --> 01:09:30,123
+We didn't scan the next values.
+
+393
+01:09:31,043 --> 01:09:46,463
+We know that the string is started by symbol B, so the remaining is of course, no need to check the remaining, so it starts by symbol B.
+
+394
+01:09:46,463 --> 01:09:51,963
+If it doesn't start by symbol A, then you reach the final, you reach the final.
+
+395
+01:09:52,916 --> 01:09:58,355
+Yani, you will be in infinite loop, as you remember.
+
+396
+01:09:59,496 --> 01:10:05,835
+If it starts by A, so it will here, will be in infinite loop.
+
+397
+01:10:06,136 --> 01:10:13,376
+But in this case, you reach the diamonds, so you do not scan the next symbols.
+
+398
+01:10:13,376 --> 01:10:20,315
+If input starts by B, then you will go to the final state.
+
+399
+01:10:21,555 --> 01:10:29,275
+Yani burada Türkçe olarak şöyle söyleyeyim arkadaşlar. Bizim regular dilimiz şuydu. Yazayım buraya tekrar.
+
+400
+01:10:40,500 --> 01:10:59,979
+Şimdi, bu şöyle demek, bu ne demek? Bütün A'lardan oluşan, empty string de dahil A'lardan oluşan nedir bu? Dizi. Ne demek ki? Diziler. Yani bu bir dil. Bu basit. Şundan sağlıyorduk.
+
+401
+01:11:00,372 --> 01:11:09,711
+Peki şu, bakın, A ve B'lerden oluşan bir dizi geliyor ama neyle başlıyor? B ile başlıyor. B ile başlamıyorsa zaten diziyi reddedeceksin.
+
+402
+01:11:09,711 --> 01:11:10,971
+One second.
+
+403
+01:11:58,804 --> 01:12:00,184
+Ekran paylaşımı geldi mi?
+
+404
+01:12:04,916 --> 01:12:07,095
+Gelmedi hocam ya. Bir şey kızıkmıyor şu anda.
+
+405
+01:12:08,175 --> 01:12:09,755
+Tamam, şimdi geliyoruz.
+
+406
+01:12:10,036 --> 01:12:10,496
+Şimdi geldim.
+
+407
+01:12:31,347 --> 01:12:41,347
+Şimdi şöyle tekrarlayalım. Şimdi bizim dilimiz, regular expression'ımız şu şekildeydi.
+
+408
+01:12:51,572 --> 01:13:02,072
+Şimdi arkadaşlar, buraya baktığınızda, burada iki tane dil var değil mi? Birincisi şu, regular expression bir, diğeri de şu.
+
+409
+01:13:16,979 --> 01:13:38,779
+Bu ikincisine baktığımızda bu nasıl bir dizi? B ile başlayan diziler değil mi? B ile başlayan diziler. B ile başlıyorsa direkt kabul edeceksin. Zaten B'den sonraki eleman, diziler zaten ya A olacak ya B olacak. Neden? Çünkü bizim alfabemiz nedir? A ve B'dir. Değil mi?
+
+410
+01:13:42,003 --> 01:14:05,564
+A veya B olacak. Dolayısıyla B ile başlamıyoruz. Başlıyorsa kabul edeceksin. Ya da bütün hepsi A'lardan oluşuyorsa kabul edeceksin. İşte bu da Turing makinesi bunu yapıyor. Eğer B'yi görürse, başında B'yi görürse hemen bir sola hareket ediyor. Hemen baklavaya ulaşıyor ve final state'e geliyor. O zaman ne de olmuş oluyor? B ile başlayanları bulmuş olduk.
+
+411
+01:14:06,163 --> 01:14:22,404
+A star da, bu da A ile de sonuna kadar gidiyor. Ta ki baklava bulana kadar. O zaman bu da A star olmuş oldu. Her ikisinin birleşimi olduğu için de A yıldız artı B, AB yıldızı bulmuş oluyoruz. Değil mi?
+
+412
+01:14:26,224 --> 01:14:27,344
+Sorusu olan var mı?
+
+413
+01:14:31,475 --> 01:14:56,195
+Okay, let us do another Turing machine example. So, I have a regular expression. Let me write the regular expression like this. So, let's say this is b, a plus b, star b. Okay.
+
+414
+01:14:56,703 --> 01:15:10,743
+It starts by symbol B and ends with symbol B and the length of the string, the minimum length of the string is 2.
+
+415
+01:15:10,743 --> 01:15:22,743
+So B is not the element of the language of R, but double B is element of the language of R.
+
+416
+01:15:23,572 --> 01:15:25,420
+Regular Expression R.
+
+417
+01:15:29,811 --> 01:15:45,012
+So, again, B, also this is language of R, RBA, B is also element of the language of R.
+
+418
+01:15:45,012 --> 01:15:46,211
+Okay?
+
+419
+01:15:47,432 --> 01:15:48,012
+But...
+
+420
+01:15:52,083 --> 01:15:57,387
+Bu, bu
+
+421
+01:16:00,756 --> 01:16:12,056
+So, how can we design the Turing machine? It's very simple. We can deduce it very easily. So, you are at state Q0.
+
+422
+01:16:17,747 --> 01:16:24,528
+Okay, you are at state Q0, and you will go to the state Q1.
+
+423
+01:16:26,327 --> 01:16:35,448
+By what? You will read symbol B, and you will write symbol B, and you will move right.
+
+424
+01:16:36,927 --> 01:16:37,347
+Okay?
+
+425
+01:16:38,727 --> 01:16:44,067
+And then, what will happen?
+
+426
+01:16:47,988 --> 01:16:48,828
+Here,
+
+427
+01:16:52,756 --> 01:16:58,876
+You can move symbol B, symbol A.
+
+428
+01:17:09,716 --> 01:17:10,695
+Bir sikand.
+
+429
+01:17:18,452 --> 01:17:25,420
+A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı yazın A'ı
+
+430
+01:17:31,507 --> 01:17:32,067
+Ok?
+
+431
+01:17:37,235 --> 01:17:42,935
+If it goes to like this, you will reach the final state.
+
+432
+01:17:44,275 --> 01:17:46,336
+You will write, you will read B.
+
+433
+01:17:49,336 --> 01:17:50,935
+You will write B.
+
+434
+01:17:55,923 --> 01:18:04,804
+You will move right and then, sorry, this is not a final state.
+
+435
+01:18:12,756 --> 01:18:14,668
+This is the final state.
+
+436
+01:18:18,579 --> 01:18:21,699
+Yeni, diamond, yi, diamond,
+
+437
+01:18:22,779 --> 01:18:25,059
+yi, left, and you reach the final state.
+
+438
+01:18:26,199 --> 01:18:27,800
+This, actually this part,
+
+439
+01:18:32,564 --> 01:18:38,564
+Bu bir adı bu adı. Bu adı bu adı B'yi bilgisayar.
+
+440
+01:18:38,564 --> 01:18:48,332
+Şimdi iki adı var.
+
+441
+01:18:53,235 --> 01:19:03,235
+So you have now symbol B. If you have a symbol A,
+
+442
+01:19:06,707 --> 01:19:07,707
+Bir sürü, bir sürü, bir sürü.
+
+443
+01:19:08,467 --> 01:19:09,627
+Bir sürü, bir sürü.
+
+444
+01:19:13,235 --> 01:19:46,688
+Tamam.
+
+445
+01:19:37,011 --> 01:19:45,211
+And if you have a like this, symbol B,
+
+446
+01:19:51,924 --> 01:19:52,412
+Tamam.
+
+447
+01:19:53,412 --> 01:20:00,412
+Sizinle yazın, B'yi yazın, B'yi yazın, B'yi yazın ve doğru değiştirdin.
+
+448
+01:20:08,243 --> 01:20:28,603
+Okay. And this is state Q2, this is state Q3, and this is state Q4. And this is the Turing machine to recognize these regular expressions. Any questions?
+
+449
+01:20:40,340 --> 01:20:53,940
+Arkadaşlar, so you could be given a regular expression to find out the Turing machines for that regular expression you are given.
+
+450
+01:20:54,120 --> 01:20:56,780
+So this is very simple questions.
+
+451
+01:20:57,180 --> 01:21:02,420
+Maybe in the quiz exam next week, we may ask such questions.
+
+452
+01:21:03,760 --> 01:21:03,980
+Okay.
+
+453
+01:21:05,579 --> 01:21:06,600
+And one second.
+
+454
+01:21:24,372 --> 01:21:24,872
+Evet.
+
+455
+01:21:30,387 --> 01:21:48,427
+So, another Turing machine. E-Power, another Turing machine. So, Turing machine is much powerful than the context-free languages, much, sorry, much powerful than the pushdown automata, much powerful than the DFA or NFA. So, you can also implement.
+
+456
+01:21:49,652 --> 01:22:04,712
+Turing makinesi, to recognize, accept, the context-free languages. So look at this. This is a context-free languages. As you see that e power n and the b power n, the number of symbol a is equal to the number of symbol b.
+
+457
+01:22:05,471 --> 01:22:14,212
+And the length of the string minimum is one, so epsilon is not an element of Turing of this language.
+
+458
+01:22:19,891 --> 01:22:45,691
+When you, when you look, when you see that the Turing machine for the recognizes this is very simple. You are, you start at state Q0. As you see that for symbol A, when you read the symbol A, you change the symbol A to X and then you move right and
+
+459
+01:22:46,387 --> 01:23:09,387
+Yeni, here you reach the symbol state Q1, and at this state Q1, you can see that for every symbol A, you move right. If you came across symbol Y, you will move right. So you will reach until you read symbol B, and you will substitute one symbol B.
+
+460
+01:23:09,779 --> 01:23:32,680
+Y, and then you move left until you will go to the beginning of, you will go to the left until you find X. Actually, you change the symbol A to X here, as you remember. So this is the first X here. So you reach to the X here again.
+
+461
+01:23:38,100 --> 01:24:01,680
+One symbol A is changed to X and the one symbol B is changed to Y. And these loops continues until all symbol A's and all symbol B's are changed to symbol X and the symbol Y respectively.
+
+462
+01:24:05,908 --> 01:24:28,528
+If you are able to read symbol Y, means the number of symbol X is equal to the symbol Y, and then meaning that the number of A is equal to the number of B, and then you will go to the last of the last Y, symbol Y, on the right.
+
+463
+01:24:29,363 --> 01:24:35,543
+ve o diamond'in tamamen, ve o final state'in tamamen.
+
+464
+01:24:35,543 --> 01:24:36,863
+As you see,
+
+465
+01:24:37,863 --> 01:24:39,863
+bu algoritma çok simple.
+
+466
+01:24:41,463 --> 01:24:44,463
+You are trying to count
+
+467
+01:24:44,463 --> 01:24:47,663
+the number of symbol A and the number of symbol B
+
+468
+01:24:47,663 --> 01:24:49,963
+by using the states.
+
+469
+01:24:50,763 --> 01:24:55,163
+Ok, the states are created on the values of the contents.
+
+470
+01:24:55,731 --> 01:25:00,731
+So what happens? You change the value of the contents. Let me explain here.
+
+471
+01:25:03,871 --> 01:25:06,371
+Assume that the input string is this.
+
+472
+01:25:08,391 --> 01:25:17,332
+What happened? The first one is you change the input x, a to x, and then you move.
+
+473
+01:25:18,292 --> 01:25:24,172
+Let me, maybe this example, maybe I should use triple, maybe much more good example.
+
+474
+01:25:24,172 --> 01:25:27,652
+This is triple A, triple B.
+
+475
+01:25:27,652 --> 01:25:33,972
+Okay, what happens? The first one is, look at this one.
+
+476
+01:25:37,524 --> 01:25:38,524
+Bu.
+
+477
+01:25:44,627 --> 01:26:08,307
+So, the first one is, you change the first symbol A to X. So, this is about this one. Okay, good. And then, you go to the last, the first symbol B. So, this is this one. You were here, you change it.
+
+478
+01:26:08,851 --> 01:26:19,351
+Ve sonra, ilk bir yolu, bu bir yolu. Çünkü bu yolu, ilk bir yolu, bu yolu değil, bu yolu değil, bu yolu.
+
+479
+01:26:19,351 --> 01:26:21,351
+Ve şimdi, you reach symbol B.
+
+480
+01:26:21,351 --> 01:26:22,652
+Ok.
+
+481
+01:26:22,652 --> 01:26:31,752
+Yani, you are here, and then, you do what? You change symbol B to X.
+
+482
+01:26:38,195 --> 01:26:39,536
+So, it will be x.
+
+483
+01:26:41,975 --> 01:26:45,355
+And then, sorry, y.
+
+484
+01:26:53,619 --> 01:27:01,260
+And then what happened? You go to, as you see here, you go to left, left, left until you find x.
+
+485
+01:27:03,359 --> 01:27:10,159
+Now, you are at the beginning. Let me write this one, one second.
+
+486
+01:27:14,931 --> 01:27:17,231
+Now you will go to here.
+
+487
+01:27:27,699 --> 01:27:29,699
+You are here.
+
+488
+01:27:32,059 --> 01:27:35,459
+Because you read x, you write x and then you move right.
+
+489
+01:27:36,859 --> 01:27:38,579
+Now you are at here.
+
+490
+01:27:39,500 --> 01:27:41,159
+Because of this transition.
+
+491
+01:27:45,235 --> 01:27:46,735
+Çünkü bu transition.
+
+492
+01:28:10,195 --> 01:28:24,416
+Y, again, you move here right, and for all Y, you move right, and you will reach symbol B, this one, and you will change symbol B to Y.
+
+493
+01:28:33,076 --> 01:28:38,155
+And then you go to the left for all A and Y.
+
+494
+01:28:39,036 --> 01:28:46,076
+So for all A and Y, you go to left until you find X and then you will go to...
+
+495
+01:28:48,076 --> 01:28:54,755
+You have X, X, A, Y, Y, B.
+
+496
+01:28:56,335 --> 01:28:56,956
+Okay?
+
+497
+01:28:58,476 --> 01:28:59,076
+And...
+
+498
+01:29:01,779 --> 01:29:11,307
+Şimdi A'ın
+
+499
+01:29:19,796 --> 01:29:28,855
+And you move right because of these transitions until you reach B and you change symbol B to Y.
+
+500
+01:29:35,923 --> 01:29:36,923
+Tamam mı?
+
+501
+01:29:36,923 --> 01:29:41,923
+Sonra,
+
+502
+01:30:00,000 --> 01:30:02,340
+Now you are representing here.
+
+503
+01:30:03,340 --> 01:30:12,120
+And then you will go to, you will reach, and then because of these transitions, now you are representing Y.
+
+504
+01:30:13,120 --> 01:30:20,020
+If, meaning that the number of A, X is equal to the number of B.
+
+505
+01:30:20,120 --> 01:30:22,180
+So the number of A is equal to the number of B.
+
+506
+01:30:22,644 --> 01:30:47,623
+So, now, the number of X is equal to the number of Y. So, now, you read. Actually, at this point, you check that equality, and equality is true. And then you read Y, and you write Y, and you move right until you reach to the diamond.
+
+507
+01:30:55,507 --> 01:31:00,331
+ve
+
+508
+01:31:04,659 --> 01:31:09,659
+ve bu final state Q4'ı alınca bir şekilde alınca.
+
+509
+01:31:09,659 --> 01:31:12,659
+Bu, bu example.
+
+510
+01:31:12,659 --> 01:31:15,659
+Bu, bu idea'a bu.
+
+511
+01:31:15,659 --> 01:31:18,659
+Bu, bu, A'ı ile B'ı.
+
+512
+01:31:26,068 --> 01:31:37,388
+Find the leftmost symbol B and replace it by symbol Y until there are no more A's and B's.
+
+513
+01:31:37,388 --> 01:31:45,708
+So you will replace A with X and the symbol B with Y until together, okay?
+
+514
+01:31:46,507 --> 01:31:52,388
+And you will repeat it many times, meaning that if there is no...
+
+515
+01:31:53,300 --> 01:32:00,239
+If the number of symbol A is equal to the number of symbol B, so there will be no remaining A and B at the end.
+
+516
+01:32:02,739 --> 01:32:16,780
+Okay, if there is a remaining A or B symbol, or the symbols, then you will reject the input.
+
+517
+01:32:32,020 --> 01:32:32,860
+Any question?
+
+518
+01:32:39,636 --> 01:32:46,176
+Arkadaşlar, kolay mı? Var mı aklınızda soru?
+
+519
+01:32:55,572 --> 01:33:20,152
+Evet arkadaşlar, zaten şu anda katılım 32 kişi. Yani bu katılımları da değerlendireceğimi belirtmek isterim. Derse devam etmeyip, bu dersten geçebileceğini düşünen arkadaşlarınıza hatırlatın. Hoca böyle dedi deyin. Hoca, derse devam etmeyip bu dersten geçmenin öyle kolay olmadığını söyledi deyin.
+
+520
+01:33:21,171 --> 01:33:36,091
+Onu şimdiden belirteyim yani. Bu ders kendiniz başınıza çalışarak geçemezsiniz. Şimdi arkadaşlar, time 0, devam edelim. Aynı örneği.
+
+521
+01:33:37,091 --> 01:33:45,572
+So, you are at state, you are at time 0 and this is the Q0 is the state and this is the input string AA, WB.
+
+522
+01:33:46,579 --> 01:34:13,139
+Okay, so what happened? So the hat is pointing symbol A, so this transition is valid. So what will do? What will you do? You will read symbol A and then you will write symbol X and then you move right. So meaning that the content will be changed like this. Symbol A is placed by symbol X and then you move right because of this.
+
+523
+01:34:13,844 --> 01:34:20,923
+Şimdi yine yine de hediye sıralamayacak, hediye sıralamayacak.
+
+524
+01:34:20,923 --> 01:34:22,963
+Bu değişiklik var.
+
+525
+01:34:22,963 --> 01:34:27,364
+Yani sıralamayacak, sıralamayacak, sıralamayacak, sıralamayacak.
+
+526
+01:34:27,364 --> 01:34:32,243
+Bu üniversite üniversiteye değiştirecek, ama sıralamayacak.
+
+527
+01:34:34,515 --> 01:34:53,015
+Yine, şimdi, you are at state Q1, still at state Q1, and the head is pointing symbol B, and then this transition is valid, because it is here required to read symbol B, so the content of this unit is symbol B.
+
+528
+01:34:53,359 --> 01:34:55,459
+Bu transition is valid.
+
+529
+01:34:55,459 --> 01:35:00,959
+So you will read symbol B and you will write symbol Y and then you move left.
+
+530
+01:35:00,959 --> 01:35:03,259
+The hat will move to the left.
+
+531
+01:35:03,259 --> 01:35:05,059
+Okay, let's see.
+
+532
+01:35:05,059 --> 01:35:08,259
+Now you will read symbol A.
+
+533
+01:35:08,259 --> 01:35:16,059
+Okay, you will read symbol A and you will write symbol A and you move left.
+
+534
+01:35:16,059 --> 01:35:18,759
+The content of this unit will not change.
+
+535
+01:35:18,759 --> 01:35:20,159
+And then...
+
+536
+01:35:20,819 --> 01:35:40,760
+You move left, okay, good. Now, the head is pointing now this unit and this unit has input string X. Now, you see that one symbol A is converted to symbol X and the one symbol B is converted to symbol Y.
+
+537
+01:35:43,091 --> 01:35:54,072
+On each iteration, one symbol A is converted to symbol X, and the one symbol B is converted to symbol B on each iteration.
+
+538
+01:35:54,072 --> 01:36:09,271
+So if you have three, if you process, if you move over this transition three times means that three symbol A's are converted to three symbol X.
+
+539
+01:36:09,684 --> 01:36:13,804
+And the three symbol Y is converted to the three symbol Y.
+
+540
+01:36:13,944 --> 01:36:16,484
+So the number of A is equal to the number of B.
+
+541
+01:36:16,644 --> 01:36:18,844
+So they are equal to both are equal to three.
+
+542
+01:36:20,284 --> 01:36:29,564
+So here in this case, one symbol A is converted to symbol X and the one symbol B is converted to symbol B, converted to symbol Y.
+
+543
+01:36:29,704 --> 01:36:32,604
+So the number of A and the number of B you are counting.
+
+544
+01:36:33,564 --> 01:36:33,884
+Okay.
+
+545
+01:36:34,804 --> 01:36:35,884
+Now you are here.
+
+546
+01:36:36,756 --> 01:36:47,695
+ve bu şekilde, if you read this, if the head is pointing symbol X, you will read and write, you will not change, and you go to the state Q0 back.
+
+547
+01:36:49,456 --> 01:37:00,695
+Now you are here. Again, you will count, you will pass 3 here, now you are Y, now you change.
+
+548
+01:37:01,171 --> 01:37:27,692
+Y, and now you are moving again here, and then because of this, you are now at state q0. As you see that all the symbol A's are converted to the symbol X axis, and all the symbol B's are converted to the symbol Y's. So here you see that
+
+549
+01:37:28,756 --> 01:37:36,416
+This loop is used two times, means the number of A is equal to two and the number of B is equal to two.
+
+550
+01:37:38,236 --> 01:37:52,115
+And then, now you see that there is no A or B in this content, so the number of A is equal to the number of B, so I have to go to the final state.
+
+551
+01:37:52,916 --> 01:37:59,216
+You are here, you will read Y, and then you will write Y, and you move right.
+
+552
+01:38:02,336 --> 01:38:13,735
+Again, now you are out of this input string, now you will read diamond, you will write diamond, and you will move left.
+
+553
+01:38:14,420 --> 01:38:26,760
+Now, the head is pointing to the last symbol of the input string, and you reach the final state, Q4, and then the input is accepted.
+
+554
+01:38:28,920 --> 01:38:36,340
+Observations, if we modify the machines for the language, A power N, B power N,
+
+555
+01:38:37,076 --> 01:38:44,456
+We can easily construct the machine for the language. So we can easily construct the machine for this. Can we?
+
+556
+01:38:52,500 --> 01:39:04,059
+Arkadaşlar, bunun için Turing makinesi geliştirelim mi? A üzeri, N, B üzeri, N, C üzeri, N yoksa siz yaparsınız. Tamam mı? Geliştirelim mi?
+
+557
+01:39:09,524 --> 01:39:10,663
+Öğrendiyseniz
+
+558
+01:39:13,779 --> 01:39:26,819
+Demek ki sesinizi çıkmadığına göre biliyorsunuz. O zaman bu A üzerinde, B üzerinde, C üzerinde, Turing makinesini yaparsınız. Şimdi formal definitionlere başlayacağız. Formal definitions for Turing machines.
+
+559
+01:39:26,819 --> 01:39:41,779
+So we have the transition functions. So this is the state Q1 and this is the state Q2. So this transition can be represented like this. You are at state Q1. For an impossible A, your state Q1...
+
+560
+01:39:41,779 --> 01:39:59,539
+Q2 and you will replace when this happens you will replace symbol a by b and then you will move to the right. So this is the transition function representing this transition. Okay, so the
+
+561
+01:40:00,000 --> 01:40:03,000
+Q1-Q2'ye değiştirecek.
+
+562
+01:40:03,000 --> 01:40:06,000
+Ve symbol A'ı değiştirecek.
+
+563
+01:40:06,000 --> 01:40:09,000
+Ve symbol B'ı değiştirecek.
+
+564
+01:40:09,000 --> 01:40:10,000
+Ok?
+
+565
+01:40:10,000 --> 01:40:12,000
+So,
+
+566
+01:40:13,000 --> 01:40:29,500
+Bu,
+
+567
+01:40:24,543 --> 01:40:31,623
+ve symbol D'ye değiştirecek ve hattı değiştirecek.
+
+568
+01:40:33,144 --> 01:40:39,903
+Turing machines'in 7 tuples'in
+
+569
+01:40:39,903 --> 01:40:44,583
+İlk adıları, İlk adıları,
+
+570
+01:40:44,583 --> 01:40:44,831
+İlk adıları,
+
+571
+01:40:44,832 --> 01:40:52,311
+It has the tape alfabet, it has the transition functions, it has the start state, it has only one start state.
+
+572
+01:40:52,311 --> 01:41:02,011
+It has blank symbol in the tape, so diamond, and it has a final state.
+
+573
+01:41:02,112 --> 01:41:03,131
+So this is a set.
+
+574
+01:41:07,859 --> 01:41:08,859
+This is set.
+
+575
+01:41:10,179 --> 01:41:11,639
+This is symbol.
+
+576
+01:41:14,179 --> 01:41:16,059
+This is 1.
+
+577
+01:41:16,459 --> 01:41:17,979
+This is q0.
+
+578
+01:41:17,979 --> 01:41:20,579
+There is only one start state, always.
+
+579
+01:41:21,000 --> 01:41:30,599
+There is only one start state.
+
+580
+01:41:31,199 --> 01:41:31,839
+Okay?
+
+581
+01:41:32,351 --> 01:41:39,351
+ve Turing'in
+
+582
+01:42:00,340 --> 01:42:19,340
+Ok, for this Turing machine, or input alphabet is A and B, or tape alphabet is A, B, X, Y, and diamond.
+
+583
+01:42:21,860 --> 01:42:22,740
+Ok.
+
+584
+01:42:28,552 --> 01:42:35,472
+İlk adıları,
+
+585
+01:42:27,220 --> 01:42:46,572
+Diamond kullanılıyor, y'e y'
+
+586
+01:42:50,612 --> 01:42:57,311
+In general, we say that input is subset of grammar.
+
+587
+01:42:59,011 --> 01:42:59,731
+Okay?
+
+588
+01:43:01,271 --> 01:43:04,412
+Input alphabet is subset of the tape alphabet.
+
+589
+01:43:05,332 --> 01:43:07,131
+And this is the state's q.
+
+590
+01:43:08,832 --> 01:43:12,311
+And some of the states may have...
+
+591
+01:43:13,555 --> 01:43:20,735
+Maybe final state. So final state is a set of states.
+
+592
+01:43:25,587 --> 01:43:27,307
+Ok, configuration.
+
+593
+01:43:29,307 --> 01:43:35,187
+Now, look at this tape.
+
+594
+01:43:35,747 --> 01:43:37,187
+It has the diamonds.
+
+595
+01:43:38,327 --> 01:43:40,087
+C, A, B, A.
+
+596
+01:43:40,427 --> 01:43:40,927
+Good.
+
+597
+01:43:42,127 --> 01:43:44,607
+And now you are at state Q1.
+
+598
+01:43:45,607 --> 01:43:46,907
+C, A.
+
+599
+01:43:47,447 --> 01:43:49,967
+You are at state Q1 and the B, A.
+
+600
+01:43:50,067 --> 01:43:50,787
+You see that?
+
+601
+01:43:51,923 --> 01:43:54,364
+ve bu parte,
+
+602
+01:43:58,260 --> 01:44:10,260
+is equal to this part, and this part is equal to this part, and this is,
+
+603
+01:44:14,899 --> 01:44:17,399
+This one.
+
+604
+01:44:17,939 --> 01:44:28,579
+So this is the instantaneous description of state in this current state.
+
+605
+01:44:28,579 --> 01:44:41,459
+So this is, you see that the left, when you are at state Q1, the string on the left of the head is CA.
+
+606
+01:44:42,100 --> 01:44:54,640
+The strings on the right of the head is BA, and the head is pointing B here, and the state is Q1.
+
+607
+01:44:54,760 --> 01:44:58,239
+So this is the instantaneous description of this tape content.
+
+608
+01:45:00,119 --> 01:45:03,760
+Instantaneous descriptions are very important.
+
+609
+01:45:04,532 --> 01:45:15,532
+Özellikle, bize bize kolaylaştırma yapıcı, da bize bize değiştirebilirsiniz ve nasıl değiştirebilirsiniz?
+
+610
+01:45:29,779 --> 01:45:32,380
+Eğer turing machine verilir,
+
+611
+01:45:32,380 --> 01:45:36,979
+bu konfigürasyonu kullanabilirsiniz.
+
+612
+01:45:36,979 --> 01:45:40,779
+Bu turing machine verilir.
+
+613
+01:45:40,779 --> 01:45:42,579
+Bazen,
+
+614
+01:45:42,579 --> 01:45:45,779
+turing machines verilir.
+
+615
+01:45:45,779 --> 01:45:56,779
+Ve turing machines verilir.
+
+616
+01:46:03,572 --> 01:46:27,672
+Okay, for example, look at this. This is time 4. So, you are at state Q2, and the left is the blank, so you do not need to write to the left of the state Q2, and the hat is pointing X, and the right of the hat is X, Y, Y, B.
+
+617
+01:46:31,507 --> 01:46:37,887
+The state is changed like this. You were at state Q2. Now you go to the state Q0.
+
+618
+01:46:40,007 --> 01:46:56,887
+So now the left of the head is X. The right of the head is I, Y, B. And state is Q0. And the head is pointing A. So as you see that...
+
+619
+01:46:58,131 --> 01:47:15,991
+There is a move to the right, and this move yields one mode. So this is one mode. So this is the change. So as you see that how the state change, how the content change, this configuration gives us.
+
+620
+01:47:19,572 --> 01:47:24,912
+Okay, now you are at state time, as you see here.
+
+621
+01:47:26,412 --> 01:47:46,092
+The head is pointing y, the left of the head is double x, at time, so double x, and the right of the head is yb, and now you are at state q1, and then at time 7.
+
+622
+01:47:46,899 --> 01:47:57,000
+The left of the hat is XXY, and the right of the hat is B, and you are at stake Q1.
+
+623
+01:47:57,319 --> 01:48:10,500
+Now look at this content. The content of the hat was like this, and it is manipulated after four computation.
+
+624
+01:48:11,380 --> 01:48:32,319
+So, the state changed to Q2 to Q0, Q0 to Q1, Q1 to Q1, and then the contents of the tape is also changed to X, Y, B, so X, A, Y, B, X, X, Y, B, X, X, Y, B, X, X, Y.
+
+625
+01:48:33,043 --> 01:48:35,024
+B, something like this, as you see that.
+
+626
+01:48:35,623 --> 01:48:36,923
+So this is the computation.
+
+627
+01:48:37,503 --> 01:48:41,003
+This is the computation order of Turing machine.
+
+628
+01:48:43,304 --> 01:48:50,363
+So in general, this computation can be written as the equivalent notation.
+
+629
+01:48:50,743 --> 01:48:52,363
+So computation star.
+
+630
+01:48:52,743 --> 01:48:58,003
+Computation star means that you are at state Q2 and the...
+
+631
+01:48:58,676 --> 01:49:06,796
+Left of the head is empty and the right of the head has X, A, Y, B string.
+
+632
+01:49:07,396 --> 01:49:12,336
+After many computations, you will reach to the state Q1.
+
+633
+01:49:12,336 --> 01:49:23,696
+The left of the head is X, Y, and the right of the head is B.
+
+634
+01:49:24,064 --> 01:49:34,963
+So, this is here. This means that you do many computations. After many computations, these configurations will change to these configurations.
+
+635
+01:49:36,224 --> 01:49:41,923
+Okay, now let us have a 10-minute break. After 10-minute break, we will continue.
+
+636
+02:05:26,036 --> 02:05:49,176
+Evet arkadaşlar, bir önceki örnekte şu loop'u koymayı unutmuşum. Yani şu bir regular dil. Bu regular dilin işte B, A artı B, yıldız B. İşte B ile baştan B ile biten. Şu loop olmak zorunda. Aksi halde mesela B, B, B'yi şöyle söyleyelim.
+
+637
+02:05:51,859 --> 02:06:14,139
+B, B, B, işte bu elemanıdır olmak zorunda, dilin elemanı olmak zorunda. Ama işte şu loop olmazsa bunu sağlayamıyoruz. Dolayısıyla şurada bir loop olmak zorunda, şu kırmızıyla yaptığım. Bunu düzeltirsiniz birinciki slide'lardan. Eğer not aldıysanız notlarınızı düzeltebilirsiniz.
+
+638
+02:06:16,179 --> 02:06:17,099
+Evet.
+
+639
+02:06:24,083 --> 02:06:27,543
+Transition functionlerini verdik. Şimdi in configuration.
+
+640
+02:06:29,903 --> 02:06:31,344
+Initial configuration.
+
+641
+02:06:33,264 --> 02:06:40,264
+You are at state Q0 and the left of the head is empty.
+
+642
+02:06:40,684 --> 02:06:45,923
+So there is no string and the right of the head is hold content.
+
+643
+02:06:46,707 --> 02:06:54,707
+Bu, bu konfigüratçilerin inisiyel bir konfigüratı ve bu tarifin bir tanesi.
+
+644
+02:07:04,307 --> 02:07:04,988
+And
+
+645
+02:07:09,811 --> 02:07:13,811
+Neyden bir turing mesin veren bir turing mesin?
+
+646
+02:07:13,811 --> 02:07:18,811
+Bu turing mesin bir turing mesin, turing mesin bir turing mesin veren bir turing mesin veren bir tüm.
+
+647
+02:07:36,851 --> 02:07:43,851
+ve bütün kompetenler, yönebileye başlayan
+
+648
+02:07:55,283 --> 02:08:09,783
+since there is no outgoing transitions from
+
+649
+02:08:14,100 --> 02:08:17,320
+Final States.
+
+650
+02:08:18,040 --> 02:08:22,240
+So, when you reach the final states, means that you accept the input.
+
+651
+02:08:23,080 --> 02:08:23,420
+Okay?
+
+652
+02:08:27,252 --> 02:08:31,252
+So, this is the definition of the Turing language of the Turing machine.
+
+653
+02:08:32,252 --> 02:08:33,252
+Okay.
+
+654
+02:08:35,252 --> 02:08:39,252
+Now, Turing recognizable.
+
+655
+02:08:39,252 --> 02:08:47,252
+If a language L is accepted by a Turing machine M, then we say that the language L
+
+656
+02:08:48,532 --> 02:08:58,052
+is a Turing recognizable or Turing acceptable or sometimes also we called it recursively admirable.
+
+657
+02:08:59,012 --> 02:08:59,192
+Okay.
+
+658
+02:08:59,952 --> 02:09:09,372
+Recursively admirable means that the language is accepted by a Turing machine or language is recognized by a Turing machine.
+
+659
+02:09:10,312 --> 02:09:15,852
+So these three names, Turing recognizable, Turing acceptable.
+
+660
+02:09:16,532 --> 02:09:18,731
+or recursive m-erable,
+
+661
+02:09:18,731 --> 02:09:20,332
+have the same meaning.
+
+662
+02:09:20,332 --> 02:09:24,731
+It means that the language is accepted
+
+663
+02:09:24,731 --> 02:09:27,731
+or recognized by a Turing machine m.
+
+664
+02:09:29,731 --> 02:09:32,731
+Computing functions with Turing machines.
+
+665
+02:09:34,332 --> 02:09:36,131
+As you remember that,
+
+666
+02:09:37,131 --> 02:09:38,731
+the computer,
+
+667
+02:09:39,731 --> 02:09:43,131
+as I said at the beginning of the courses,
+
+668
+02:09:43,252 --> 02:09:49,252
+Computer, and bilgisayar.
+
+669
+02:09:53,555 --> 02:10:00,735
+Arkadaşlar, şimdi burada Türkçe anlatacağım. Bilgisayar, kelime anlamı olarak tam olarak kompütürün karşılığı değil.
+
+670
+02:10:01,595 --> 02:10:07,775
+Kompütür demek, hatırlarsanız size bir video göstermiştim.
+
+671
+02:10:08,015 --> 02:10:17,975
+Videoda bir bilim adamı, İngiltere'de bir bilim adamı ne yapıyordu? Domino taşlarını kullanarak hesaplama yapıyordu.
+
+672
+02:10:19,315 --> 02:10:36,695
+Yani adı neydi onun? Kompütürdü. Aynı zamanda sizin kullandığınız bilgisayarın adı neydi? Onun adı da kompütür. Cep telefonunuz da bir çeşit kompütür. Yani kompütür, kelime anlamı ne? Kelime kökü ne? Compüt. Compüt ne demek? Hesaplama. Hesaplama.
+
+673
+02:10:36,695 --> 02:10:42,395
+Kompütür de hesaplayıcı demek. Bunun tam kelime karşılığı hesaplayıcı.
+
+674
+02:10:51,604 --> 02:10:52,604
+Bu ne?
+
+675
+02:10:59,764 --> 02:11:15,244
+Ama biz bu kelime yerine ne kullanıyoruz? Bilgisayar kullanıyoruz. Bilgisayar tam doğru bir eş anlamı yok. Yani bilgisayarla siz hesaplama işleminin yapıldığını anlamıyorsunuz. Bilginin saydığını anlıyorsunuz.
+
+676
+02:11:26,836 --> 02:11:29,316
+Is uncountable.
+
+677
+02:11:33,684 --> 02:11:36,604
+Bir bilim adamı şunu bilir, bilgi sayılamaz.
+
+678
+02:11:38,004 --> 02:11:43,224
+Şimdi bu cümleyi internette yazın. Bilgi sayılabilir mi, sayılamaz mı?
+
+679
+02:11:43,944 --> 02:11:45,364
+Ben de yazayım, siz de yazın.
+
+680
+02:11:57,684 --> 02:11:59,844
+Ok, information is uncomfortable.
+
+681
+02:12:08,115 --> 02:12:15,115
+Tamam, yani bilgilerin bilgilerini bilmiyorsunuz.
+
+682
+02:12:15,115 --> 02:12:24,235
+Bilgilerin bilgilerini bilmiyorsunuz.
+
+683
+02:12:40,595 --> 02:12:49,416
+Ok, entropy, or you can say that entropy, no need to put any, one second.
+
+684
+02:12:58,644 --> 02:12:59,644
+Entropy.
+
+685
+02:13:01,644 --> 02:13:11,644
+And how do you find the entropy? Entropy is equal to the minus logarithm of probability.
+
+686
+02:13:14,644 --> 02:13:15,644
+Okay?
+
+687
+02:13:17,011 --> 02:13:30,731
+So, you can find the probabilities and their representation in terms of binary representation of the probability gives you the entropy and this is called the information.
+
+688
+02:13:33,971 --> 02:13:34,971
+Ok?
+
+689
+02:14:01,235 --> 02:14:24,675
+Ok? In future. In past, it was, geçmişte kompütörleri biz hesaplayıcı olarak tanımlıyorduk. İşte ne olduysa son zamanlarda bilgisayar diyoruz. Çünkü bakın, 5 yaşındaki bir, 6 yaşındaki bir İngiliz, Amerikalı çocuğa desen ki, kompütör nedir dersen, aklına şu gelir.
+
+690
+02:14:29,076 --> 02:14:29,636
+Vakıl.
+
+691
+02:14:42,036 --> 02:14:47,036
+And this is Avacus.
+
+692
+02:14:58,420 --> 02:15:03,275
+Evet, bu Avaqus. Bu Avaqus ise bir komputer.
+
+693
+02:15:07,828 --> 02:15:22,088
+Okay? Five years old child in UK or US or in Europe, when he or she hears that, hears the word computer, he remembers that, abacus.
+
+694
+02:15:23,768 --> 02:15:24,208
+But...
+
+695
+02:15:24,724 --> 02:15:37,364
+When I tell you bilgisayar, you will not remember this abacus. Why? Because bilgisayar is not an exact correspondence of the computer, word computer. Okay?
+
+696
+02:15:38,364 --> 02:15:50,784
+So, functions in Turing machines in computers are defined based on the counting. So the counting means
+
+697
+02:15:54,836 --> 02:16:04,956
+DFA means computing, means a part of the computer.
+
+698
+02:16:10,163 --> 02:16:15,403
+Computer is doing computing, and the computing means counting.
+
+699
+02:16:17,143 --> 02:16:19,884
+Okay, what is the definition of function?
+
+700
+02:16:22,443 --> 02:16:28,724
+Definition of function, we have, again, generally denotes small letter F.
+
+701
+02:16:29,384 --> 02:16:33,203
+It receives input W, something like this.
+
+702
+02:16:34,484 --> 02:16:35,943
+It has the domain.
+
+703
+02:16:37,587 --> 02:16:40,268
+And the W is element of that domain.
+
+704
+02:16:41,468 --> 02:16:50,907
+You apply the function F on this W and you have the result.
+
+705
+02:16:51,927 --> 02:16:58,507
+The result is element of the result region, capital letter S here.
+
+706
+02:16:59,727 --> 02:17:02,927
+So these are all.
+
+707
+02:17:03,296 --> 02:17:13,815
+represents this function. Actually, this function is a mapping the elements of the domain to the elements of the results region.
+
+708
+02:17:14,576 --> 02:17:19,096
+So as you see that function is a kind of mapping of two spaces.
+
+709
+02:17:20,076 --> 02:17:26,876
+D space and the S space. So function map D space D to the space S.
+
+710
+02:17:27,956 --> 02:17:32,956
+A function may have sometimes many parameters.
+
+711
+02:17:33,456 --> 02:17:35,296
+For example, this is the addition function.
+
+712
+02:17:36,155 --> 02:17:38,195
+So you add two numbers.
+
+713
+02:17:38,556 --> 02:17:41,036
+So a function x, y.
+
+714
+02:17:41,175 --> 02:17:43,056
+So the result is x plus y.
+
+715
+02:17:45,236 --> 02:17:51,056
+For example, in the Turing machine, what we have...
+
+716
+02:17:51,827 --> 02:18:13,968
+We have a decimal number 5. In the binary, we represent 5 is 1,0. But in the computation means in the central process unit, 5 is represented by, like you will do many computations there, in a simple way. So 5 is represented by 5.
+
+717
+02:18:14,420 --> 02:18:25,319
+1's. So the number of 1 here is 5. So this is the unary representation. This unary representation here is the unary representation of 5.
+
+718
+02:18:26,360 --> 02:18:37,119
+So we prefer unary representation because it is easier to manipulate with the Turing machines. So Turing machines is easily manipulate the unary representations.
+
+719
+02:18:43,219 --> 02:18:58,659
+Turing makinesi are based on the unary representation. Unary representations are used for counting. So Turing machines, so computers is based on the counting. So Turing computers means counters. Okay? Also.
+
+720
+02:19:01,059 --> 02:19:09,419
+Let us look at the definition of the function f. f is the computable if there is a Turing machine such that
+
+721
+02:19:09,695 --> 02:19:11,695
+İntial Configuration
+
+722
+02:19:11,695 --> 02:19:13,695
+Ok
+
+723
+02:19:13,695 --> 02:19:15,695
+İntial Configuration
+
+724
+02:19:15,695 --> 02:19:17,695
+And
+
+725
+02:19:17,695 --> 02:19:19,695
+After
+
+726
+02:19:19,695 --> 02:19:21,695
+Many Computations
+
+727
+02:19:21,695 --> 02:19:23,695
+You will reach a final state
+
+728
+02:19:24,595 --> 02:19:48,236
+ve fw. As you see that, the content w is converted to fw. So this is a kind of function. So this function is realized by using the counting, by using the unit representation of numbers. I mean by counting in Turing machine.
+
+729
+02:19:52,915 --> 02:20:08,935
+So, a function is computable if there is a Turing machine such that you start with state Q0 with the content W.
+
+730
+02:20:09,895 --> 02:20:18,216
+After many computations, this is the computation start, meaning that after many computations, you reach the final configuration.
+
+731
+02:20:18,672 --> 02:20:26,891
+Meaning that you are on a final state and the content of the tape is FW.
+
+732
+02:20:26,891 --> 02:20:34,811
+Actually, the function maps the input W to FW.
+
+733
+02:20:38,004 --> 02:20:56,123
+Let us do this example. So the function is, this is the, this function is addition function. So it is, it accepts two numbers, x and y. And x and y is equal to, this is x plus y is computable.
+
+734
+02:20:56,495 --> 02:20:58,195
+X and Y are integers.
+
+735
+02:20:58,935 --> 02:21:03,115
+So, the input is that you will have two inputs.
+
+736
+02:21:03,115 --> 02:21:04,716
+We will have an input string.
+
+737
+02:21:05,255 --> 02:21:08,695
+So, this is the input string X, 0, Y.
+
+738
+02:21:08,876 --> 02:21:10,095
+Zero here is used.
+
+739
+02:21:11,236 --> 02:21:16,475
+The symbol zero here is used to separate the number X and the number Y.
+
+740
+02:21:16,475 --> 02:21:17,036
+Okay?
+
+741
+02:21:17,775 --> 02:21:19,255
+So, the X is.
+
+742
+02:21:20,595 --> 02:21:43,795
+X has many ones, Y has many ones, so 0 is the symbol that separates the number X and the number Y. For example, 3 plus 5 is represented in Turing machine as an input like this, 0 0 0.
+
+743
+02:21:45,795 --> 02:21:48,435
+Sorry, 1 1 1 0.
+
+744
+02:21:48,595 --> 02:21:51,095
+1, 1, 1, 1, 1, 1, 1.
+
+745
+02:21:51,396 --> 02:21:51,655
+Okay?
+
+746
+02:21:52,736 --> 02:21:54,495
+So, this is the input string.
+
+747
+02:21:54,495 --> 02:21:57,975
+In tape, we can show it like this.
+
+748
+02:21:58,275 --> 02:21:58,796
+One second.
+
+749
+02:22:02,708 --> 02:22:03,828
+We have a tape.
+
+750
+02:22:05,828 --> 02:22:07,427
+This is the tape.
+
+751
+02:22:09,427 --> 02:22:11,868
+This is diamond.
+
+752
+02:22:12,448 --> 02:22:15,828
+This is diamond representing the blanks.
+
+753
+02:22:15,828 --> 02:22:26,788
+So this is 1, 1, 1, 0, 1, 1, 1, 1, and 1.
+
+754
+02:22:27,148 --> 02:22:30,087
+And then representing the blanks.
+
+755
+02:22:35,283 --> 02:22:40,203
+As you see that the number of one is five, meaning here is five.
+
+756
+02:22:43,484 --> 02:22:45,423
+Meaning here is three.
+
+757
+02:22:46,324 --> 02:22:48,763
+And this zero is used as a separator.
+
+758
+02:22:48,884 --> 02:22:50,083
+So this is input string.
+
+759
+02:22:50,703 --> 02:22:52,783
+The output string will be like this.
+
+760
+02:22:54,644 --> 02:22:56,123
+The output string.
+
+761
+02:23:01,043 --> 02:23:03,523
+Bu, diamond.
+
+762
+02:23:04,404 --> 02:23:05,283
+Diamond.
+
+763
+02:23:06,703 --> 02:23:09,423
+1, 1, 1.
+
+764
+02:23:10,564 --> 02:23:12,824
+4th 1, 5th 1.
+
+765
+02:23:25,363 --> 02:23:33,063
+7, 8, 0, and diamond, diamond.
+
+766
+02:23:39,700 --> 02:23:43,700
+Diamond, Diamond, and so on.
+
+767
+02:23:43,700 --> 02:23:46,668
+So, this is output, this is input.
+
+768
+02:23:52,020 --> 02:23:54,020
+And this is output.
+
+769
+02:23:56,435 --> 02:24:23,515
+As you see that the number of one here is eight. One, two, three, four, five, six, seven, eight. So what we did now with sum, what we did, we move it to the zero, we replace it to zero by the last one. So this one is come to here and this zero comes to here. So now we did the computation. We did, we compute the three and five.
+
+770
+02:24:24,180 --> 02:24:28,420
+3 ve 5 ve result 8.
+
+771
+02:24:28,959 --> 02:24:36,420
+Yani arkadaşlar, bilgisayar demek avaküsünün bir benzeri.
+
+772
+02:24:36,959 --> 02:24:40,560
+Yani ne yapıyoruz? Sayıyoruz. Neleri sayıyoruz? Birleri sayıyoruz.
+
+773
+02:24:41,180 --> 02:24:44,739
+Ve toplamayı yapıyoruz. Toplamayı yaptıysak çıkarma da yapabiliriz değil mi?
+
+774
+02:24:45,340 --> 02:24:50,739
+Sondaki sıfırı alırsın, şuraya yerleştirsen ne olur? Bir tane birle...
+
+775
+02:24:51,796 --> 02:25:04,916
+Çıkarmış oldun değil mi? Bu sefer şu 1 ile şu 0'ı yer değiştir, 1 çıkardın. Şu 1 ile bu 0'ı yer değiştir, 2 çıkardın. Şu 0, 1 ile bu 0'ı yer değiştir, 3 çıkardın. Çünkü kalanda 3 olacak.
+
+776
+02:25:05,716 --> 02:25:16,855
+Yani bu şekilde toplamayı yapıyorsak çıkarma da yaparız. Toplama ve çıkarma varsa toplama ve çıkarmayı kullanarak çarpmayı da yapabiliriz. Sonra bunun üzerine bölmeyi de gerçekleştirebiliriz değil mi?
+
+777
+02:25:19,059 --> 02:25:34,939
+İntijer sayılardan real sayılara genişletebiliriz. Dolayısıyla ortada ne olmuş oluyor? Bir hesaplama ortamı, bir hesaplama gerçekleştirmiş oluruz. Neye bağlı olarak? Saymayla, countingle yapıyoruz bütün işlemleri. Sayarak.
+
+778
+02:25:36,531 --> 02:25:49,831
+Yani bilgisayarın kelime anlamı bizim kullandığımız esasında hesaplayıcı demek. Tamam mı? Hesaplayıcı, sizler her biriniz hesaplayıcı mühendisi olacaksınız. Yani bir şeyleri hesaplayabiliyor olmanız lazım.
+
+779
+02:25:53,299 --> 02:25:54,500
+Sonrası olan var mı?
+
+780
+02:25:59,540 --> 02:26:26,960
+Yani buradan çıkan sonuç şu. Arkadaşlar, bilgi sayılamaz. Tamam mı arkadaşlar? Bilgi sayılamaz. Yani direkt falso, yani kelime anlamı bile falso. Bilgisayar mühendisliği bile yanlış. Bilgi sayılamaz, sadece ölçülebilir. Ölçümü de entropi üzerindedir.
+
+781
+02:26:27,443 --> 02:26:49,263
+Tamam mı arkadaşlar? Bir bilgi, iki bilgi, üç bilgi diyemezsin. Bilimsel olarak doğru değil. Bilimsel olarak doğru değil. Yani bir bilimle alakasız birisi bu şekilde bir kavram ortaya koymuş. Belki alakası var ama yanlış kullanmış kelimeyi. Bence yanlış.
+
+782
+02:26:49,811 --> 02:27:12,752
+Sizce doğru olabilir, sizce kabul edebilirsiniz ama bilimsel olarak doğru olmadığını ben söylüyorum. Bilimsel olarak doğru değil. Bilgi sayılamaz, sadece ölçülebilir. Ölçümü de entropi kavramı üzerindedir. Bir bilgi, iki bilgi, üç bilgi diyemezsin. Sadece ölçersin measurement'ı. Yani bilgiyi sadece ölçersin entropiyi kullanarak.
+
+783
+02:27:16,340 --> 02:27:18,659
+Entropinin kelime anlamı nedir?
+
+784
+02:27:24,948 --> 02:27:47,848
+Entropidin kelime anlamı, bilemediğim bilgi miktarıdır. Ondan da bahsedeyim size. Sonuçta bilgisayar mühendisi olacaksınız. İki çeşit bilgi vardır. Şöyle, nereye yazayım, şuraya yazayım. Kaç çeşit bilgi var? İki çeşit bilgi vardır.
+
+785
+02:27:54,963 --> 02:27:56,843
+ve information.
+
+786
+02:27:59,891 --> 02:28:01,711
+Navlıcım, Türkçe karşılığı ne?
+
+787
+02:28:09,556 --> 02:28:14,376
+Information'ın Türkçe karşılığını. Nedir knowledge'ın Türkçe karşılığı?
+
+788
+02:28:17,780 --> 02:28:20,920
+Information Türkçe karşılığı ne? Bilgi demek zaten.
+
+789
+02:28:23,480 --> 02:28:24,940
+Knowledge'ın Türkçe karşılığı ne?
+
+790
+02:28:27,860 --> 02:28:29,260
+Veri olabilir mi hocam?
+
+791
+02:28:31,180 --> 02:28:32,500
+Sözlüğe bak bakayım.
+
+792
+02:28:33,800 --> 02:28:34,100
+Ne diyor?
+
+793
+02:28:38,835 --> 02:28:44,675
+Sözlükte ne yazıyor? Google Translate'den bakalım hemen.
+
+794
+02:28:45,876 --> 02:28:48,216
+Ona da bilgi ediyorlar ama ben o yüzden...
+
+795
+02:28:48,216 --> 02:28:49,415
+Evet, ikisi de bilgi değil mi?
+
+796
+02:28:51,755 --> 02:28:55,115
+Neden iki tane kelimeye ihtiyaç duyulmuş İngilizce'den?
+
+797
+02:28:57,995 --> 02:29:03,915
+Information varken niye knowledge'a ihtiyaç var? Knowledge varken niçin information'a ihtiyaç var?
+
+798
+02:29:05,620 --> 02:29:18,120
+Bakın arkadaş, işte problem burada. Tamam mı? Bizde bilimsel altyapı zayıf olduğu için biliyorsunuz, bundan 10 sene öncesine gidin, 15 sene öncesine.
+
+799
+02:29:18,495 --> 02:29:34,335
+Türkiye'de yayın yapan, yani 2002 yılından öncesine gidin, 2002'den öncesine tamam mı? Mesela 2000, 1990, 1980'lere bakın. Üniversitelerde makale yayınlamak, bilimsel yayın diye bir şey yok.
+
+800
+02:29:35,156 --> 02:29:44,015
+Her şey 2000 yıllarından sonra başladı. 2003-2004'te bu zorunlu koşulu şu anda doçent olabilmek için yayın yapmak zorundasın arkadaşlar.
+
+801
+02:29:44,355 --> 02:29:54,936
+Mesela doktor olabilmen için eskiden üniversitede adam doktoraya giriyordu, bir çeviri yapıyordu, doktor ünvanı alıyordu. Şu anda öyle değil. Yayın yapmak zorundasın.
+
+802
+02:29:55,835 --> 02:30:01,036
+2000'den önce herkes böyle hocasıyla anlaşıyordu, doktor oluyordu.
+
+803
+02:30:01,843 --> 02:30:25,103
+Doktor olmak kolay bir şey mi ya? Hocasıyla anlaşıyordu, yüksek lisans derecesi alıyordu, doktora derecesi alıyordu, ta 2000'lerin öncesinde. Ama şimdi doktor derecesi almak için, yüksek lisans derecesi almak için, doktora derecesi almak için ya da doçentlik derecesi almak için ya da profesör olmak için ne yapmak lazım? Yayın yapmak zorundasın.
+
+804
+02:30:26,004 --> 02:30:43,184
+Dolayısıyla geçmişte bazı temeller boş atıldı. Mesela teori ile teorem arasındaki farkı bilmeyen insanlarla dolu. Camiya. Teori ile teorem arasındaki farkı bilmeyen. Dolayısıyla knowledge ile information arasındaki farkı bilmeyen kişi de çok fazla.
+
+805
+02:30:44,184 --> 02:30:52,644
+Şimdi buradan çıkacak çoğunuş şu. Bilgi, bu nasıl bir bilgi? Ve bu bilgi de nasıl bir bilgi?
+
+806
+02:30:54,899 --> 02:30:56,559
+Aralarındaki farkı yazıyorum.
+
+807
+02:31:00,275 --> 02:31:04,115
+Bu, information bilmediğimiz bilgi.
+
+808
+02:31:08,691 --> 02:31:10,912
+Knowledge ise bildiğimiz bilgi.
+
+809
+02:31:13,791 --> 02:31:19,871
+Yani sahip olduğumuz bilgi, knowledge, information ne? Bilmediğimiz bilgi.
+
+810
+02:31:22,211 --> 02:31:35,251
+Peki, informationı elde eden, bilmediğin bilgiden, bilinmeyen bilgiyi, bilinen bilgiye dönüştüren nedir? Bilimdir, değil mi?
+
+811
+02:31:36,051 --> 02:32:03,152
+Science. Tamam mı? Yani bilgi sayar derken buradaki bilgi, neyi bilgi? Yani bildiğimiz bilgi mi, bilmediğimiz bilgi mi, neye sayıyor, nasıl sayıyor, bilgi sayılamaz, neye sayıyor, nasıl sayıyor, neyi sayıyor? Bir kere bir bu. İkincisi, mesela Artificial Intelligence nedir? Zeka. Intelligence zeka değil mi? Ne demektir zeka?
+
+812
+02:32:06,835 --> 02:32:08,695
+Zeka nedir? Intellijents.
+
+813
+02:32:12,435 --> 02:32:14,416
+Kelime anlamı nedir? Türkçesi nedir?
+
+814
+02:32:17,940 --> 02:32:43,640
+Peki, smart nedir? Bu da zeka. Zeki, bu da zeki. Intelligent, zeki demek. Smart da zeki. Arasındaki fark ne? İşte burada da problem ortaya çıkıyor. Şunu unutmayın. Intelligence, bilmediğiniz bilgilerle bildiğiniz bilgilere dönüştüren demektir. Tamam, intelligence bu. Artificial intelligence ne olmuş oluyor?
+
+815
+02:32:45,139 --> 02:32:55,939
+O zaman öyle bir artificial intelligence, öyle bir intelligence var ki bilinmeyen bilgileri bilinin bilgilere çeviriyor. İşte bu da artificial intelligence olmuş oluyor. Tamam mı arkadaşlar?
+
+816
+02:32:57,199 --> 02:33:04,919
+Dolayısıyla Turing makinesi nedir? Sonuç olarak Turing makinesi bir hesaplayıcıdır. Hesaplar. Neyi hesaplar?
+
+817
+02:33:05,940 --> 02:33:29,020
+Belirli fonksiyonları hesaplar. Nasıl hesaplar? Turing makinesi nasıl hesaplar diye bir soru sorsak. Mesela şeye giriyorsunuz, yüksek lisans sınavına girdiniz, sözlü sınavında. Karşınızda ben çıktım, soruyorum. Turing makinesi ne yapar diye sorduğum zaman ne cevap vereceksiniz? Bilgi sayar mı diyeceksiniz? Hayır. Hesaplar.
+
+818
+02:33:30,932 --> 02:33:46,272
+Turing makinesi bir hesaplayıcıdır. Tamam, nasıl hesaplar diye sorduğum zaman, bilgim Turing makinesi nasıl hesaplar diye sorduğum zaman, onun da cevabı çok basit, sayarak hesaplar, counting, saymayla hesaplar.
+
+819
+02:33:47,191 --> 02:33:48,752
+Tamam arkadaşlar.
+
+820
+02:33:51,432 --> 02:33:55,752
+Zaten hatırlarsanız, şuradaki bir Turing makinesine bakalım.
+
+821
+02:33:57,716 --> 02:34:00,835
+Bir önceki Turing makinesine örneğe.
+
+822
+02:34:02,315 --> 02:34:04,775
+Mesela şu Turing makinesinde ne yapıyorduk?
+
+823
+02:34:05,355 --> 02:34:09,796
+A'ların sayısıyla B'lerin sayısı. Yani şöyle bir dil vardı bize verilen.
+
+824
+02:34:17,043 --> 02:34:44,603
+Şu dil bize verilmişti. Bu dili ne yapacaktık? Ne yapacağız arkadaşlar? Tanacaktık. Bu dilin Turing makinesi de bu. Ne yapıyor? A'larla B'lerin sayısını sayıyor değil mi? Karşılaştırıyor. A'ların sayısıyla B'lerin sayısını karşılaştırıyor. İşte bu bir Turing makinesi.
+
+825
+02:34:45,236 --> 02:34:49,236
+Sayma üzerine, karşılaştırma üzerinedir Turing makinesi.
+
+826
+02:34:51,416 --> 02:34:52,796
+Sorusu olan var mı?
+
+827
+02:34:56,275 --> 02:35:03,596
+Şimdi artık sizler biliyorsunuz, Turing makinesi demek, sayma hesaplayıcıdır, sayma üzerine kurulmuş bir hesaplayıcıdır.
+
+828
+02:35:04,476 --> 02:35:05,275
+Okay.
+
+829
+02:35:06,995 --> 02:35:12,956
+Let us give a tape that has this content.
+
+830
+02:35:14,416 --> 02:35:18,175
+So, diamonds represents the start of the input.
+
+831
+02:35:18,175 --> 02:35:23,636
+So, all the ones representing the number X.
+
+832
+02:35:24,031 --> 02:35:28,092
+0 is delimiter to separate the two numbers.
+
+833
+02:35:29,971 --> 02:35:37,592
+The ones on the right of the 0 denotes the number y.
+
+834
+02:35:38,311 --> 02:35:43,691
+And here diamond shows the ends of the input string.
+
+835
+02:35:43,791 --> 02:35:44,991
+So this is the input string.
+
+836
+02:35:44,991 --> 02:35:49,051
+And our initial state is q0 and you are at here.
+
+837
+02:35:51,572 --> 02:36:15,191
+Now what we will do, we will change this 0 and this 0. So you will move this 1 to 0 and you will move this 0 to here too. So then when you change, when you change the positions of this 0 and this 1, okay, you will have the summation. Very simple.
+
+838
+02:36:15,551 --> 02:36:36,051
+ve Turing, et cetera, et cetera. Yerler, 0 here help us when we use the results for the other operations. So, derived, there is no 1. So, x plus y plus 0. So, the input is, so this is the output, okay?
+
+839
+02:36:38,051 --> 02:36:42,051
+For this case, the state like this, look.
+
+840
+02:36:42,420 --> 02:37:09,291
+Yeni birçok, 0'a 1'e 1
+
+841
+02:37:09,427 --> 02:37:20,507
+And now you are at final stage. So this is the Turing machine for this function. So this is the summation and this is the Turing machine for this summation.
+
+842
+02:37:20,747 --> 02:37:36,727
+Okay, I may ask you to calculate, for example, 2x plus y or x squared. So multiplication, summation, subtraction, you can also do it. Okay. Execution example.
+
+843
+02:37:38,868 --> 02:38:03,148
+So, 2,1 means 2, number 2, and 2,1 means 2. So, when you sum these two, the result is 4. So, you see that. So, you are at state Q0. After all operations, all the ones become together. So, this 0 will be at the end of the string.
+
+844
+02:38:03,520 --> 02:38:30,283
+ve bu k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k4'e yöntemlerden bir k
+
+845
+02:38:30,291 --> 02:38:42,131
+So, you are at state Q0, so you will read 1, so this transition is valid, and you will not change the content of these units, and then you will move to the right.
+
+846
+02:38:43,431 --> 02:38:52,991
+Again, now you are at state Q0, you are still at state Q0, and you will read 1.
+
+847
+02:38:53,931 --> 02:38:54,231
+Okay.
+
+848
+02:38:56,531 --> 02:39:07,731
+Now, hat is pointing 0, so this transition is valid. You are still at state Q0. Hat is pointing 0, so this transition is valid.
+
+849
+02:39:09,191 --> 02:39:17,551
+And then you change it to 0 to 1 and you move right. Now you are at state Q2 and this transition is valid.
+
+850
+02:39:19,072 --> 02:39:21,111
+Still this transition is valid.
+
+851
+02:39:24,371 --> 02:39:48,492
+And now you are now at state, you are still at state Q1 and the head is denoting, head is pointing diamond symbol, symbol diamond. And now you will not change the diamond symbol, sorry, you will not change the symbol diamond and you will move left.
+
+852
+02:39:51,252 --> 02:39:59,572
+Now, head is pointing one, and then you have to move this head to the beginning here.
+
+853
+02:40:02,211 --> 02:40:05,532
+So now you are here, this is valid.
+
+854
+02:40:06,872 --> 02:40:10,452
+Again, you are moving left, left, left.
+
+855
+02:40:11,912 --> 02:40:13,152
+Again, left.
+
+856
+02:40:14,772 --> 02:40:15,412
+Left.
+
+857
+02:40:16,724 --> 02:40:18,724
+Ve bu kısımda var.
+
+858
+02:40:18,724 --> 02:40:19,724
+Şimdi,
+
+859
+02:40:21,724 --> 02:40:23,724
+şimdi,
+
+860
+02:40:23,724 --> 02:40:27,724
+diamond'in yerine atıcı 3.
+
+861
+02:40:27,724 --> 02:40:28,724
+Şimdi,
+
+862
+02:40:28,724 --> 02:40:31,724
+diamond'in yerine atıcı 3.
+
+863
+02:40:31,724 --> 02:40:32,724
+Şimdi,
+
+864
+02:40:32,724 --> 02:40:34,724
+diamond'in yerine atıcı 3.
+
+865
+02:40:34,724 --> 02:40:35,724
+Şimdi,
+
+866
+02:40:35,724 --> 02:40:37,724
+kısımda 4.
+
+867
+02:40:37,724 --> 02:40:39,724
+Şimdi,
+
+868
+02:40:39,724 --> 02:40:42,724
+kompetition is done.
+
+869
+02:40:42,724 --> 02:40:43,724
+Şimdi,
+
+870
+02:40:44,308 --> 02:40:54,308
+4 1's var. Bu, bu numara. Şimdi bu, bu iki numara.
+
+871
+02:40:58,004 --> 02:41:22,704
+And what about this one? Look at this example. You have a function, you multiply the function by 2. Okay? This is the x. So what you will have, you have an input string x in unary, you will do double it. Okay? You will have output double x. So you will create the double x. Okay? You will create the double of it.
+
+872
+02:41:23,316 --> 02:41:31,396
+Bu çok kolay. Dövbezik, bu da
+
+873
+02:41:33,396 --> 02:41:35,316
+her şimbo, her şimbo, o da
+
+874
+02:41:35,316 --> 02:41:37,316
+her şimbo, o da
+
+875
+02:41:41,172 --> 02:42:04,780
+Bu, bu
+
+876
+02:42:05,587 --> 02:42:09,087
+ve
+
+877
+02:42:09,087 --> 02:42:11,087
+ilk numar,
+
+878
+02:42:11,087 --> 02:42:13,087
+1.
+
+879
+02:42:13,087 --> 02:42:14,587
+Ve
+
+880
+02:42:14,587 --> 02:42:16,087
+başlayan,
+
+881
+02:42:16,087 --> 02:42:17,387
+bu
+
+882
+02:42:17,387 --> 02:42:21,087
+final state must be on the final state.
+
+883
+02:42:21,087 --> 02:42:22,087
+So,
+
+884
+02:42:22,087 --> 02:42:24,087
+Pesudo Code for this,
+
+885
+02:42:24,087 --> 02:42:25,087
+like this.
+
+886
+02:42:25,087 --> 02:42:29,087
+Replace everyone with $
+
+887
+02:42:29,087 --> 02:42:30,087
+and
+
+888
+02:42:30,611 --> 02:42:56,395
+Bu, bu
+
+889
+02:42:57,587 --> 02:43:05,948
+For each dollar, you will add one at the end of the dollars.
+
+890
+02:43:06,407 --> 02:43:14,288
+So, for example, and also you will change the right most with one and to the right you will insert another one.
+
+891
+02:43:14,448 --> 02:43:17,688
+So, for each one, you insert one.
+
+892
+02:43:18,207 --> 02:43:18,448
+Okay?
+
+893
+02:43:18,788 --> 02:43:21,167
+So, for each dollar, you insert two one.
+
+894
+02:43:21,167 --> 02:43:23,167
+You will replace...
+
+895
+02:43:23,647 --> 02:43:29,107
+Dollar with one and you will go to the right and you will insert one.
+
+896
+02:43:30,107 --> 02:43:38,527
+And you will repeat it for all dollars are convert for all dollars for all dollars.
+
+897
+02:43:39,747 --> 02:43:45,627
+Are converted to once until no more dollars remains of course.
+
+898
+02:43:46,347 --> 02:43:48,447
+So this is the Turing machine for this.
+
+899
+02:43:49,367 --> 02:43:50,887
+The first one is.
+
+900
+02:43:51,316 --> 02:44:11,076
+You change all ones to dollars, here, and now you are at stage Q1. Now, for all one you move left, it's okay. So first dollar, change it to one, and then you go to the right.
+
+901
+02:44:18,227 --> 02:44:22,827
+You change the diamond to one, so you are here inserting one.
+
+902
+02:44:24,087 --> 02:44:28,768
+Again, one dollar is converted to one, and here inserting one.
+
+903
+02:44:28,987 --> 02:44:32,207
+One dollar is converted to one, and you are inserting one.
+
+904
+02:44:32,867 --> 02:44:37,707
+Until you have no dollar.
+
+905
+02:44:37,948 --> 02:44:39,987
+So this transition will not be valid.
+
+906
+02:44:40,755 --> 02:44:55,735
+So, in this case, you have a diamond saw, you will reach the final state Q3. So, the content of the tape will have two times the number of 1s of input.
+
+907
+02:44:57,975 --> 02:45:03,735
+This is the example. This is the start. So, the final will be 4 1s.
+
+908
+02:45:05,492 --> 02:45:10,572
+So, this is the, okay, so you can trace it easily.
+
+909
+02:45:11,952 --> 02:45:20,432
+Another example, sometimes we can use comparisons, for example, if x is greater than y, the result is 1.
+
+910
+02:45:21,112 --> 02:45:24,792
+If x is less than or equal to y, it is 0.
+
+911
+02:45:25,371 --> 02:45:27,932
+This is the unit step function, as you remember.
+
+912
+02:45:29,012 --> 02:45:30,371
+This is equal to
+
+913
+02:45:36,051 --> 02:45:39,951
+This is equal to unit step function, or have its unit step function.
+
+914
+02:45:40,651 --> 02:45:46,871
+Unit step function, like this, x minus y.
+
+915
+02:45:48,231 --> 02:45:56,271
+Ux is like this, as you remember, 1 if x is greater than 0.
+
+916
+02:45:57,051 --> 02:46:02,131
+0 if x is equal, sorry, this is like this.
+
+917
+02:46:03,476 --> 02:46:04,056
+Okay.
+
+918
+02:46:10,995 --> 02:46:29,376
+Like this. So this is the unit step function. We can implement this unit step function in terms of Turing machine. So any kind of function, function means mapping, any kind of mapping can be implemented using Turing machine. Okay?
+
+919
+02:46:29,907 --> 02:46:52,207
+So, the pseudocode for this mapping is very simple. You will match the number 1s from x with 1s from y. If the number of 1s from x is greater than the number of 1s, so result will be 1, otherwise result will be 0. So, this is a very simple pseudocode.
+
+920
+02:46:52,628 --> 02:47:03,048
+Bu, bu pseudokod. Bu kod. Bu kod. Bu kod. Bu bir programlama.
+
+921
+02:47:03,048 --> 02:47:06,108
+Bir şey yapın.
+
+922
+02:47:06,108 --> 02:47:10,108
+Hatırlıyorsunuz değil mi? Bu neye benziyor? Bir programlama dili değil mi?
+
+923
+02:47:10,108 --> 02:47:15,564
+Ya ne yapabilirsiniz? Şu programlama dilini sen yazdığında ne yapıyorsun esasında?
+
+924
+02:47:15,987 --> 02:47:25,987
+Bu pseudokodlar ne yapıyorsun makineye, Turing makinesine diyorsun ki, bunları yap, hesaplama yap. Ne yapıyor Turing makinesi? Sayıyor, sayarak hesaplama yapıyor.
+
+925
+02:47:27,987 --> 02:47:40,987
+Combining Turing machines, so we have a block diagram, so this is the Turing machine, it has input and it has output. So you can do what?
+
+926
+02:47:41,108 --> 02:48:07,907
+If x is greater than y, then x plus y. If x is less than or equal to y, then the result is zero. So this is the comparator Turing machine. This is the adder. This is the eraser. So as you see that these Turing machines are concatenated to create this function. So Turing machines can be
+
+927
+02:48:08,724 --> 02:48:14,524
+Buna dağlayan, daha fazla çalışma yapabilecekler.
+
+928
+02:48:15,024 --> 02:48:21,024
+Dekler, bu turing makinesi konuları kullanabilirsiniz.
+
+929
+02:48:21,024 --> 02:48:30,424
+Bu dağlayan, bu turing makinesi konuları kullanabilirsiniz.
+
+930
+02:48:31,443 --> 02:48:56,587
+Bu her şey, bu her şey, bu her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her şeyin her
+
+931
+02:48:57,396 --> 02:49:17,695
+Önümüzdeki hafta üçüncü kuyuzimiz var. Lütfen çalışarak gelin. Şu ana kadar işlediğimiz bütün konulardan sorumlusunuz. Haftaya derste görüşürüz. Kendinize iyi bakın.
+
+932
+02:49:19,655 --> 02:49:20,815
+Görüşürüz hocam. İyi günler.
+
+933
+02:49:21,376 --> 02:49:22,596
+İyi günler. Kolay gelsin.
+
+934
+02:50:34,195 --> 02:50:59,916
+Evet arkadaşlar, derste olmayan arkadaşlar. Bakın burada online gözüküyorsunuz ama derste değilsiniz. Bunu not alıyorum bir kenara ve kanaat notu olarak değerlendireceğim. Eğer buradaysanız burada olduğunuzu yazın ya da sözlü olarak söyleyin.
+
+935
+02:51:03,059 --> 02:51:04,259
+Değilseniz,
+
+936
+02:51:11,796 --> 02:51:21,195
+Çıkın o zaman ders bitti. Çıkmayanların kanaat notunu negatif vereceğim. Çünkü derste olmadığını anlıyorum.
+
+937
+02:51:32,531 --> 02:51:34,652
+Bakalım kim kalacak en sona.
+
+938
+02:51:47,827 --> 02:51:49,788
+Bu kalan isimleri kaydediyorum.
+
+939
+02:51:55,987 --> 02:52:00,087
+Demek ki sizler derste olmayıp dersteymiş gibi davranıyorsunuz.
+
+940
+02:52:04,628 --> 02:52:05,988
+Haftaya görüşürüz.
