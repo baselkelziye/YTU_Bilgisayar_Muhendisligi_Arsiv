@@ -1,0 +1,2607 @@
+1
+00:00:59,572 --> 00:01:00,592
+Günaydın [öğrenci].
+
+2
+00:01:04,052 --> 00:01:17,052
+Henüz daha ders saati başlamadı malum. Bir de geçen haftadan 3 arkadaş sunum yapacak. Bakalım önce onlar gelirse onlarla başlarız. Saat 9 olsun. Bekliyoruz.
+
+3
+00:05:53,076 --> 00:06:10,016
+Evet, günaydın arkadaşlar. Katılım arttığına göre saatte 9 olduğu için dersi başlatabiliriz. Şimdi geçen haftadan sıralamaya baktığımda, Zakar sen hazırsan sunabilirsin.
+
+4
+00:06:11,496 --> 00:06:13,076
+Hazırlıyorum hocam. Günaydın arkadaşlar.
+
+5
+00:06:46,259 --> 00:06:48,259
+Evet, bu konuyu başlayalım.
+
+6
+00:06:50,259 --> 00:06:54,259
+Of course, if you are ready, you can begin.
+
+7
+00:06:54,259 --> 00:06:56,259
+First of all, good morning to everyone.
+
+8
+00:06:56,259 --> 00:07:00,259
+I sincerely apologize, I joined the class last week.
+
+9
+00:07:00,259 --> 00:07:08,259
+And I especially want to thank Mr. Koksel Egecik for allowing me to do this presentation.
+
+10
+00:07:08,259 --> 00:07:14,252
+My part, or more about my part of the presentation is for...
+
+11
+00:07:14,355 --> 00:07:24,956
+İlk başta 3.1, or ilk başta 3, which is no review of inter-process communication in a microservice architecture.
+
+12
+00:07:24,956 --> 00:07:27,115
+Now, before I begin...
+
+13
+00:07:30,771 --> 00:07:35,771
+Bu, ilk başta, bir konuda başlayalım.
+
+14
+00:07:35,771 --> 00:07:56,771
+Bir konuda başlayalım.
+
+15
+00:07:57,524 --> 00:08:01,524
+İlk bir dakika.
+
+16
+00:08:01,524 --> 00:08:05,524
+Zekas, soru, siz de konuşabilirsiniz?
+
+17
+00:08:05,524 --> 00:08:07,524
+Öğren, bakalım.
+
+18
+00:08:07,524 --> 00:08:08,492
+Tamam.
+
+19
+00:08:11,732 --> 00:08:41,303
+Bu ne?
+
+20
+00:08:30,163 --> 00:08:54,483
+A quick recap of chapter 1 and 2. In chapter 1, we explored monolithic architectures, where it's a simple architecture that is suitable for smaller teams and smaller projects. It enables us to develop fast, quick applications in a short period of time. So these were some of the strengths that we explored, but it also has a lot of weaknesses.
+
+21
+00:08:58,303 --> 00:09:09,303
+Bu ne?
+
+22
+00:08:58,163 --> 00:09:06,183
+Bu, monolistik birçok
+
+23
+00:09:06,183 --> 00:09:09,144
+ve monolistik birçok
+
+24
+00:09:09,144 --> 00:09:09,984
+birçok
+
+25
+00:09:09,984 --> 00:09:12,604
+ve
+
+26
+00:09:12,604 --> 00:09:14,703
+birçok
+
+27
+00:09:14,703 --> 00:09:15,264
+ve
+
+28
+00:09:15,264 --> 00:09:16,343
+sadece bir
+
+29
+00:09:16,343 --> 00:09:27,223
+bir
+
+30
+00:09:26,163 --> 00:09:30,463
+Chapter 2, we introduced microsurface architectures.
+
+31
+00:10:00,000 --> 00:10:04,000
+Bu bir sorun, bu bir sorun.
+
+32
+00:10:04,000 --> 00:10:06,000
+Bu bir sorun.
+
+33
+00:10:06,000 --> 00:10:09,000
+Monoliths can only scale as a unit.
+
+34
+00:10:09,000 --> 00:10:12,000
+Bu bir sorun.
+
+35
+00:10:12,000 --> 00:10:16,000
+Bir bir sorun.
+
+36
+00:10:16,000 --> 00:10:24,000
+Bu bir sorun.
+
+37
+00:10:24,000 --> 00:10:27,727
+Çünkü bir sorun.
+
+38
+00:10:27,727 --> 00:10:37,528
+So, all in all, the true power of microservice architecture lies in the ability to function as independently deployable units.
+
+39
+00:10:37,528 --> 00:10:47,327
+So, having said all of that, we can begin the introduction of our own chapter.
+
+40
+00:11:15,727 --> 00:11:39,083
+Bu da, bu
+
+41
+00:11:39,700 --> 00:11:40,700
+Evet.
+
+42
+00:11:40,700 --> 00:11:42,700
+Öğrençlerden bahsettiğin,
+
+43
+00:11:42,700 --> 00:11:46,700
+bu tarzılarının
+
+44
+00:11:46,700 --> 00:11:47,700
+ve bu tarzılarının
+
+45
+00:11:47,700 --> 00:11:49,700
+arasındaki apıları
+
+46
+00:11:49,700 --> 00:11:55,700
+arasındaki
+
+47
+00:11:55,700 --> 00:11:56,700
+apı-first
+
+48
+00:11:56,700 --> 00:12:07,700
+arasındaki
+
+49
+00:12:07,700 --> 00:12:12,700
+ve bu sorunlarla ilgili bir şey yapmak için önemli bir şey.
+
+50
+00:12:12,700 --> 00:12:16,300
+Bir şey yapmak için önemli bir şey yapmak için
+
+51
+00:12:16,300 --> 00:12:18,700
+yapmak için de yapabilirsiniz.
+
+52
+00:12:18,700 --> 00:12:21,700
+Bu sorunlarla ilgili bir şey yapmak için
+
+53
+00:12:21,700 --> 00:12:27,700
+birçok sorunlarla ilgili birçok sorunlarla ilgili.
+
+54
+00:12:27,700 --> 00:12:29,700
+Şimdi, bu tarzı.
+
+55
+00:12:29,716 --> 00:12:36,436
+İntro, İntrolarcılıklısı'n bir teknoloji-independent bir şekilde de describini de nasıl bir şekilde de ilişkilerle ilgili de nasıl bir şekilde de ilişkilerle ilgili.
+
+56
+00:12:36,436 --> 00:12:40,436
+İntro, İntrolarcılıklısı'n bir şekilde de ilişkilerle ilgili.
+
+57
+00:12:40,724 --> 00:12:46,284
+Bu konuda, bu konuda, bu konuda, daha fazla bilgilerin altyazıcı bir şekilde,
+
+58
+00:12:46,284 --> 00:12:49,644
+ve bu konuda, bilgilerin altyazıcı bir konuda,
+
+59
+00:12:49,644 --> 00:12:52,444
+bilgilerin altyazıcı bir konuda, etk.
+
+60
+00:12:52,444 --> 00:12:56,444
+Bu konuda, bu konuda, bu konuda,
+
+61
+00:12:56,444 --> 00:13:00,244
+bu konuda, bu konuda,
+
+62
+00:13:00,244 --> 00:13:02,084
+bir konuda,
+
+63
+00:13:02,259 --> 00:13:20,875
+Bu birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birçok ile ilgili birç
+
+64
+00:13:21,139 --> 00:13:40,139
+One-to-one means that you have one service per request or a request is fulfilled by one single service. One-to-many means that you might have a request that may require more than one service to work on fulfilling that request. Synchronous...
+
+65
+00:13:40,532 --> 00:13:43,792
+As we said, it has to do with the time, with the temporal aspect of it.
+
+66
+00:13:44,752 --> 00:13:52,052
+When asynchronous interaction, a client expects a timely response.
+
+67
+00:13:52,052 --> 00:13:57,792
+And sometimes client might even block while it waits for the response from that service.
+
+68
+00:13:58,252 --> 00:14:00,692
+Asynchronous on the other hand, client doesn't block.
+
+69
+00:14:01,112 --> 00:14:04,812
+And if there's a response, it isn't necessarily sent immediately.
+
+70
+00:14:05,332 --> 00:14:08,432
+So the client process can just do whatever.
+
+71
+00:14:08,532 --> 00:14:19,412
+So, some examples from one-to-one interactions, an example from one-to-one interactions is a request-response.
+
+72
+00:14:19,412 --> 00:14:23,292
+And here we're talking about the synchronous type.
+
+73
+00:14:24,652 --> 00:14:26,412
+A request-response service...
+
+74
+00:14:28,080 --> 00:14:38,120
+A service client makes a request to a service and then it waits for response. As we said earlier, the client expects the response to arrive in a timely fashion.
+
+75
+00:15:09,264 --> 00:15:14,764
+ve bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte.
+
+76
+00:15:14,764 --> 00:15:17,624
+Bu süreçte bir süreçte bir süreçte,
+
+77
+00:15:17,624 --> 00:15:22,563
+ve bir süreçte bir süreçte bir süreçte bir süreçte.
+
+78
+00:15:22,563 --> 00:15:25,163
+Bu süreçte bir süreçte bir süreçte bir süreçte.
+
+79
+00:15:25,163 --> 00:15:29,163
+Ve bir süreçte bir süreçte bir süreçte.
+
+80
+00:15:29,163 --> 00:15:35,163
+Bir süreçte bir süreçte bir süreçte bir süreçte.
+
+81
+00:15:54,995 --> 00:15:59,396
+Publisher-Subscriber type interaction.
+
+82
+00:15:59,995 --> 00:16:05,796
+Plylink publishes a notification message which is consumed by zero or more interested services.
+
+83
+00:16:06,456 --> 00:16:07,336
+And that's it.
+
+84
+00:16:08,836 --> 00:16:10,995
+The publisher...
+
+85
+00:16:12,148 --> 00:16:17,148
+Bu birçok birçok birçok birçok birçok birçok birçok.
+
+86
+00:16:17,148 --> 00:16:19,268
+Ve aynı zamanda birçok birçok.
+
+87
+00:16:19,268 --> 00:16:22,827
+Bence de sistem, of course.
+
+88
+00:16:24,028 --> 00:16:25,788
+Bu birçok birçok birçok birçok.
+
+89
+00:16:25,788 --> 00:16:29,788
+Birçok birçok birçok birçok.
+
+90
+00:16:30,355 --> 00:16:53,836
+Bu tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarifin bir tarif
+
+91
+00:16:54,740 --> 00:16:59,600
+As we all know, API or interfaces are central to any software development.
+
+92
+00:17:00,440 --> 00:17:11,660
+We know that application can be comprised of many modules, especially the application that we are interested in, which are large-scale applications.
+
+93
+00:17:12,139 --> 00:17:17,820
+They are comprised of many, many modules. And each of these modules has an interface.
+
+94
+00:17:17,820 --> 00:17:22,740
+It must have an interface that defines a set of operations that their client can use.
+
+95
+00:17:22,740 --> 00:17:31,900
+Now, a well-designed interface or well-designed interfaces, they expose useful functionality while hiding the implementation.
+
+96
+00:17:32,799 --> 00:17:36,860
+It enables the implementation to change without impacting the clients.
+
+97
+00:17:36,860 --> 00:17:42,839
+Again, we are concerned with loosely coupling the services and the clients.
+
+98
+00:17:43,019 --> 00:17:44,279
+That's the whole idea.
+
+99
+00:17:46,740 --> 00:17:51,500
+An interface can be typically specified using a programming language contrast
+
+100
+00:17:51,500 --> 00:17:56,180
+in case of Java, Java's interfaces.
+
+101
+00:17:56,980 --> 00:18:00,860
+Now, the implementation class in Java's are hidden, right?
+
+102
+00:18:00,980 --> 00:18:02,099
+They're hidden from the client.
+
+103
+00:18:03,140 --> 00:18:05,860
+And Java, which is Java statically typed,
+
+104
+00:18:05,860 --> 00:18:08,240
+if there are changes to the interfaces,
+
+105
+00:18:10,867 --> 00:18:13,947
+Bu da birçok birçok birçok birçok.
+
+106
+00:18:13,947 --> 00:18:15,867
+Bu da birçok birçok.
+
+107
+00:18:15,867 --> 00:18:28,867
+Bu da birçok.
+
+108
+00:18:28,867 --> 00:18:30,867
+Ama bu da birçok.
+
+109
+00:18:30,867 --> 00:18:34,187
+Bu da birçok.
+
+110
+00:18:34,600 --> 00:18:40,600
+Bu, birçok.
+
+111
+00:18:34,420 --> 00:18:37,740
+İlhamdülillah, bu sorunlarla ilgili değil.
+
+112
+00:18:37,740 --> 00:18:43,340
+Ama bu sorunlar, bu sorunlarla ilgili değil,
+
+113
+00:18:43,340 --> 00:18:46,059
+çünkü deklar ve servicesinlerle alınmıyor.
+
+114
+00:19:07,827 --> 00:19:26,027
+API-first design is a viable option. API-first design is something that should be considered when we are developing software with microservice architecture. What do we do in API-first design? First, you write the interface definition. Then, you review the definition with the client developers.
+
+115
+00:19:27,124 --> 00:19:38,024
+Then you would go back and forth with the client developers and after iterating many, many times and after coming and after deciding upon an interface, you build the service.
+
+116
+00:19:38,024 --> 00:19:45,284
+So you don't actually build the service first and then think about the API, but rather you flip this whole process on its head.
+
+117
+00:19:45,784 --> 00:19:51,204
+You first focus on the API and you get to an agreement with the clients.
+
+118
+00:19:51,624 --> 00:19:54,943
+Then after that, you start from here and actually build.
+
+119
+00:20:15,316 --> 00:20:24,332
+Bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda
+
+120
+00:20:43,988 --> 00:20:58,988
+Bu konulukları bir şeyin alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkanı alışkan
+
+121
+00:20:59,059 --> 00:21:01,500
+ve yeni bir revizyon ve tamamen.
+
+122
+00:21:01,500 --> 00:21:03,420
+Ama en microservice-based
+
+123
+00:21:03,420 --> 00:21:04,559
+application,
+
+124
+00:21:04,559 --> 00:21:05,720
+de service clients
+
+125
+00:21:05,720 --> 00:21:07,500
+veya diğer services
+
+126
+00:21:07,500 --> 00:21:09,319
+ve diğer teams
+
+127
+00:21:09,319 --> 00:21:10,319
+ve daha sonra
+
+128
+00:21:10,319 --> 00:21:11,199
+birçok
+
+129
+00:21:11,199 --> 00:21:11,759
+ve de
+
+130
+00:21:11,759 --> 00:21:12,240
+ve
+
+131
+00:21:12,240 --> 00:21:15,199
+altyazı
+
+132
+00:21:15,199 --> 00:21:15,420
+ve
+
+133
+00:21:15,420 --> 00:21:16,400
+aynı zamanda
+
+134
+00:21:16,400 --> 00:21:17,420
+ve
+
+135
+00:21:17,420 --> 00:21:18,259
+modern
+
+136
+00:21:18,259 --> 00:21:19,619
+applications
+
+137
+00:21:19,619 --> 00:21:20,019
+are
+
+138
+00:21:20,019 --> 00:21:20,759
+never
+
+139
+00:21:20,759 --> 00:21:21,059
+down
+
+140
+00:21:21,059 --> 00:21:21,259
+for
+
+141
+00:21:21,259 --> 00:21:21,819
+maintenance
+
+142
+00:21:21,819 --> 00:21:22,819
+24
+
+143
+00:21:22,819 --> 00:21:23,220
+7
+
+144
+00:21:23,220 --> 00:21:23,420
+so
+
+145
+00:21:23,420 --> 00:21:23,559
+you
+
+146
+00:21:23,559 --> 00:21:23,799
+need
+
+147
+00:21:23,799 --> 00:21:23,920
+to
+
+148
+00:21:23,920 --> 00:21:24,359
+perform
+
+149
+00:21:24,359 --> 00:21:24,440
+a
+
+150
+00:21:24,440 --> 00:21:24,759
+rolling
+
+151
+00:21:24,759 --> 00:21:25,199
+update
+
+152
+00:21:25,199 --> 00:21:25,839
+where
+
+153
+00:21:25,839 --> 00:21:26,079
+you
+
+154
+00:21:26,079 --> 00:21:26,500
+run
+
+155
+00:21:26,500 --> 00:21:27,039
+both
+
+156
+00:21:27,059 --> 00:21:30,380
+İlk veri ve yeni veri aynı zamanda.
+
+157
+00:21:30,380 --> 00:21:34,380
+İlk veri, ilerideki yaratıcı bir noktada.
+
+158
+00:21:34,380 --> 00:21:38,940
+İlk veri, ilerideki yaratıcı bir yaratıcı.
+
+159
+00:21:38,940 --> 00:21:43,940
+Şimdi, bir stratejiyi yaratıcı bir yaratıcı.
+
+160
+00:21:44,175 --> 00:21:50,195
+Semantic versioning consists of three parts, major, minor, patch.
+
+161
+00:21:50,615 --> 00:21:53,715
+Semantic versioning, they're usually used for software packages,
+
+162
+00:21:54,096 --> 00:21:57,475
+but we can use it for API versioning in a distributed system as well.
+
+163
+00:21:58,056 --> 00:22:05,475
+So when we want to make an incompatible change to the API, we can...
+
+164
+00:22:06,291 --> 00:22:31,980
+Bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölüm
+
+165
+00:22:32,019 --> 00:22:39,500
+So if you're implementing a REST API, you can, for instance, use the major version as the first element of the URL path.
+
+166
+00:22:39,500 --> 00:22:49,559
+If you're implementing a service that may use messaging as its message format, then you can include the version number in the message that it publishes.
+
+167
+00:22:49,940 --> 00:22:52,579
+Basta bu konuda yapabilirsiniz,
+
+168
+00:22:52,579 --> 00:22:55,500
+ve bu konuda yapabilirsiniz.
+
+169
+00:22:55,500 --> 00:22:58,139
+Bir example,
+
+170
+00:22:58,139 --> 00:23:00,179
+bir example,
+
+171
+00:23:00,179 --> 00:23:10,579
+birçok,
+
+172
+00:23:11,700 --> 00:23:17,759
+As a general rule, you should always strive to make only backward-compatible changes.
+
+173
+00:23:20,019 --> 00:23:25,679
+Birinci principle. Be conservative in what you do, but be liberal in what you accept from others.
+
+174
+00:23:26,239 --> 00:23:30,799
+Services should provide default values for missing request attributes.
+
+175
+00:23:31,259 --> 00:23:34,359
+Clients should ignore any extra response attributes.
+
+176
+00:23:34,999 --> 00:23:41,999
+And all the clients will work with the new service as well, if you do everything correctly, of course.
+
+177
+00:23:42,519 --> 00:23:47,999
+Some examples for backward-compatible changes could be adding additional attributes to a request.
+
+178
+00:23:48,019 --> 00:24:05,932
+adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım veri bir adım ver
+
+179
+00:24:06,291 --> 00:24:28,152
+An example for a major change in semantic versioning would be that we add something on the... Sorry, my notes are a bit messy in here. So here we have an example of the header of a request in a HTTP type.
+
+180
+00:24:29,683 --> 00:24:33,683
+Http type, mekanism.
+
+181
+00:24:33,683 --> 00:24:41,683
+So in here, as you can see, a client would request version 1.x of an order using a request like this.
+
+182
+00:24:41,683 --> 00:24:55,683
+And so we must have a mechanism to process this and to provide the necessary service based on this header.
+
+183
+00:24:56,435 --> 00:24:59,975
+So, lastly, we're going to talk about message formats.
+
+184
+00:25:00,435 --> 00:25:05,275
+Now, the main point of IPC, the essence of IPC is to exchange messages.
+
+185
+00:25:05,895 --> 00:25:07,995
+And messages, they usually contain data.
+
+186
+00:25:08,175 --> 00:25:09,195
+Sometimes they might not.
+
+187
+00:25:09,635 --> 00:25:16,315
+And important is, so it's an important design decision, which is choosing the message formats.
+
+188
+00:25:16,895 --> 00:25:23,395
+Now, the choice of message format can impact the efficiency of the IPC, the usability of the API, and its evolvability.
+
+189
+00:25:28,463 --> 00:25:30,463
+Bu, HTTP, bu da.
+
+190
+00:25:56,463 --> 00:26:03,463
+İlk olarak, bugünkü derinize
+
+191
+00:26:03,463 --> 00:26:06,463
+ve Google'in Avro'a.
+
+192
+00:26:11,872 --> 00:26:15,472
+They are human readable and they are self-describable.
+
+193
+00:26:15,472 --> 00:26:19,231
+JSON is basically a collection of named properties while XML,
+
+194
+00:26:19,231 --> 00:26:23,872
+again a collection but of named elements and values.
+
+195
+00:26:23,872 --> 00:26:27,231
+You just pick what you need and you completely ignore the rest.
+
+196
+00:26:27,571 --> 00:26:33,071
+Çinleşmişe, Misesi Schema, kanıda dağılır.
+
+197
+00:26:33,071 --> 00:26:37,971
+İçinde deyir, ve bu şekerlerle anlatacağım.
+
+198
+00:26:37,971 --> 00:26:42,931
+XML'in bir şekerler, bu şekerlerden bir şekilde,
+
+199
+00:26:42,931 --> 00:26:48,571
+amaçlar, bu konu ve bu şekerlerden bir şekerlerden bir şekilde,
+
+200
+00:26:48,571 --> 00:26:52,571
+bu şekerlerden bir şekerlerden bir şekerlerden bir şekilde,
+
+201
+00:26:55,571 --> 00:27:01,071
+İçin bir şekilde de kullanılıyor.
+
+202
+00:27:01,071 --> 00:27:05,071
+İçin bir şekilde kullanılıyor.
+
+203
+00:27:05,071 --> 00:27:09,071
+Bu şekilde kullanılıyor.
+
+204
+00:27:09,071 --> 00:27:13,071
+Ve bu şekilde kullanılıyor.
+
+205
+00:27:16,948 --> 00:27:25,068
+Bu konuda çok fazla ekranı
+
+206
+00:27:25,068 --> 00:27:27,868
+Bu konuda bir şekilde
+
+207
+00:27:27,868 --> 00:27:30,868
+Bu konuda bir konuda
+
+208
+00:27:31,155 --> 00:27:33,816
+Binary message formats.
+
+209
+00:27:33,816 --> 00:27:42,155
+There are several types of binary message formats, but the popular ones are protocol buffers and Avro.
+
+210
+00:27:42,276 --> 00:27:52,816
+As we said, protocol buffers, they are developed by Google, then they use pack fields, whereas Avro is...
+
+211
+00:27:53,683 --> 00:27:58,683
+İlginç bir apache-biyonu.
+
+212
+00:28:05,683 --> 00:28:06,683
+Evet.
+
+213
+00:28:06,683 --> 00:28:08,683
+Bu Avru'un kullanıcı bir şekilde kullanılıyor.
+
+214
+00:28:08,683 --> 00:28:14,683
+Avru'un kullanıcı bir şekilde kullanılıyor.
+
+215
+00:28:14,683 --> 00:28:17,683
+Bu, bu Avru'un kullanıcı bir şekilde kullanılıyor.
+
+216
+00:28:17,683 --> 00:28:20,683
+Avru'un kullanılıyor.
+
+217
+00:28:20,683 --> 00:28:23,683
+Çünkü Avru'un kullanıcı bir şekilde kullanılıyor.
+
+218
+00:28:23,683 --> 00:28:25,683
+Ve Avru'un kullanılıyor.
+
+219
+00:28:25,683 --> 00:28:28,683
+Bu, JSON'ın kullanıcı bir şekilde kullanılıyor.
+
+220
+00:28:28,683 --> 00:28:31,683
+Bu, Avru'un kullanıcı bir şekilde kullanılıyor.
+
+221
+00:28:59,124 --> 00:29:08,943
+On top of all of this, if you write the client in a statically typed language, the compiler checks that it uses API correctly, which is a bonus for us.
+
+222
+00:30:05,523 --> 00:30:08,243
+Şimdi [öğrenci], hazır mısın?
+
+223
+00:30:11,859 --> 00:30:18,339
+Hazır mı hocam? Evet, o zaman ekran sende. Senin sunumuna devam et.
+
+224
+00:30:19,839 --> 00:30:25,680
+Benim konum da Zakir'den sonraki konu. O yüzden bazıma güzel bir geçiş olacak.
+
+225
+00:30:26,899 --> 00:30:28,899
+Ekranı paylaştım.
+
+226
+00:30:31,639 --> 00:30:33,019
+Geldi mi hocam?
+
+227
+00:30:35,316 --> 00:30:40,435
+Geldi, biz şey görüyoruz, PowerPoint'in kendi ekranını görüyoruz, slide'ı değil.
+
+228
+00:30:41,195 --> 00:30:41,975
+Evet.
+
+229
+00:30:45,295 --> 00:30:47,596
+Tüm ekranı nasıl paylaşıyordun?
+
+230
+00:30:58,036 --> 00:31:21,008
+Burada belki sunum moduna geçersen. F12'ye basıyorum ama. F12 değil, F5 olabilir. F5 tamamdır. Heh oldu tamam. Tamamdır. Türkçe, İngilizce fark ediyor mu hocam? Kendini hangisinde daha rahat hissediyorsan bile olur fark etmez bana. Tamamdır.
+
+231
+00:31:21,008 --> 00:31:37,008
+Bugün ben de asenkron mesajlaşma deseni ile iletişimi anlatacağım. Öncelikle dergiden bahsedeceğimi kısaca anlatayım. İlk önce Remote Precedure Invocation anlatacağım.
+
+232
+00:31:38,008 --> 00:31:48,000
+Aslında bağlamdan kopmamak için daha çok kitaba bağlı kalmaya çalıştım. Çünkü biraz konular rest dinç ile derinleşsem ki denedim.
+
+233
+00:31:48,000 --> 00:32:06,299
+O yüzden kitaptan ilerledim genel olarak. Bu şekilde genel olarak ilk önce REST'ten sonra GRPC'ye geçiyorum. Ardından da çeşitli problemler yaşanıyor. Onlardan bahsediyorum. Avantajları, rezavantajları. Bunlardan bahsederek devam ediyorum.
+
+234
+00:32:06,736 --> 00:32:10,996
+İlk önce Remote Procedure Invocation'ın ne olduğundan bahsedeyim.
+
+235
+00:32:11,576 --> 00:32:17,036
+Remote Procedure Invocation, bizim burada bir Client'ımız, bir Service'ımız var.
+
+236
+00:32:17,875 --> 00:32:23,276
+Bu ikisinin iletişime geçmesi için bir Proxy'ımız var bir de, arayüzümüz var.
+
+237
+00:32:23,276 --> 00:32:34,395
+Bizim Client'ımız Proxy'nin arayüzüne bir istekte bulunup, ardından Service'e iletişime geçiyor ve geri dönüp alıyor Request'ine.
+
+238
+00:32:34,736 --> 00:32:46,736
+Bizim uzaktan fonksiyon çağrılarımız, kaynak çağrılarımız bu Remote Procedure Invocation içine giriyor diyebiliriz.
+
+239
+00:32:48,627 --> 00:33:00,427
+Bunun çeşitli yöntemleri var. Mesela REST, GRPC, Webhook, WebSocket gibi çeşitli yöntemler var.
+
+240
+00:33:00,427 --> 00:33:07,027
+Bunlarda ilk REST'e başlayacağım. Benim sekşyonda bu konulardan bahsediliyordu.
+
+241
+00:33:07,027 --> 00:33:14,527
+REST'i Roy Fielding 2000'li yıllarda buldu.
+
+242
+00:33:14,576 --> 00:33:32,056
+Kendisi bu şekilde tanımlamış. Ölçeklenebilir komponent iletişimlerini sağlayabilmesi için HTTP tabanlı bir iletişim protokolü geliştirmiş.
+
+243
+00:33:40,500 --> 00:33:54,500
+Bir request atıyoruz ve JSON ya da XML gibi insanın okuyabileceği dillerde bir dönüş alıyoruz. Bizim resource dediğimiz şey representation olarak gözüküyor.
+
+244
+00:33:54,500 --> 00:34:02,443
+Yani kaynaklarımız representation olarak gözüküyor ve istek atıp o representation'a ulaşmak istiyoruz.
+
+245
+00:34:02,579 --> 00:34:13,980
+REST'in çeşitli özellikleri var. Client-Sorber ayrımı oldukça net yapılıyor. Yani Client'in yaptığı iş ve Sorber'in yaptığı iş oldukça birbirinden bağımsız.
+
+246
+00:34:13,980 --> 00:34:19,579
+Ve bu da bizim Lose the Weep Coupling olmasını sağlıyor.
+
+247
+00:34:19,579 --> 00:34:30,347
+Textimiz insan okuyabileceği dilde. Rays'in ya da XML. Mesela GRPC'yi de bir sonrakinde anlatacağım. Onu da Binary insan okuyamayacağı bir...
+
+248
+00:34:30,420 --> 00:34:58,420
+Dilde yazılmış. Zaten Ezhakir arkadaşım da anlattı. İletişim protokolü olarak HTTP 1.1, HTTP 2 hepsini destekliyor diyebiliriz zaten. Temel GET, POST gibi komutlarını çalıştırıyor. Stateless olmasından bahsedilmiş. Stateless olması da şu anlama geliyor. Verdiği cevabın önceki cevaplarla alakalı bilmesine gerek duymuyor. Her cevabı ilk...
+
+249
+00:34:58,420 --> 00:35:24,820
+İlk defa görmüş gibi cevaplıyor. Cageable oluyor. Bu da şu anlama geliyor. Bir cevabı request attığı zaman gelen cevabı cage'e atabiliyor ve sonradan tekrar ihtiyacı olduğu zaman direkt cage'den çekebiliyor. Bu da bizim daha hızlı çalışmasını ve trafiği azaltmasını sağlıyor. Uniform Interface, bütün iletişimler serilize şekilde gerçekleşiyor.
+
+250
+00:35:26,547 --> 00:35:43,547
+REST Maturity Model dediğimiz bir model geliştirmiş yine REST'i bulan kişi. Çoğu geliştirici HTTP-based API'larını RESTful olarak tanımlıyormuş.
+
+251
+00:35:43,547 --> 00:35:51,547
+Ve Roy Fielding bunun öyle olmadığını söylüyor. Burada çeşitli dört tane aşama, level koymuş.
+
+252
+00:35:53,523 --> 00:36:09,523
+Bunlardan mesela sadece post'u kullanıyorsak, Devil 0 ve Devil 1'de olabiliyoruz. Eğer post dışında diğer HTTP metotlarının da fiillerini kullandığımız zaman daha uygun, daha...
+
+253
+00:36:11,027 --> 00:36:26,027
+Efektif bir çalışma elde ediyoruz ve bu da bizi Level 2'ye çıkarıyor. Eğer Hey To Us denilen prensipe uygun şekilde kolumuzu yazarsak da Level 3 Rest olgunluğuna erişmiş oluyor kolumuz.
+
+254
+00:36:26,547 --> 00:36:46,547
+REST API'lerini nasıl tanımlayabiliyoruz? Diğer Communication protokollerinin aksine, çorba, soğup gibi dillerin aksine, REST'de şanslı olarak, Ideal isimli bir Interface Definition Language ile tanımlayabiliyormuşuz REST'i.
+
+255
+00:36:48,547 --> 00:36:50,475
+Bizim çeşitli sorunlarımız oluyor.
+
+256
+00:36:50,483 --> 00:37:00,483
+REST'i kullanırken birden fazla kaynağa erişmek istediğimiz zaman sorun yaşıyoruz. Bu mesela bir ORG'dır.
+
+257
+00:37:01,300 --> 00:37:09,300
+Ve konsümerin ortak olduğu ya da olmadığı farklı alanlara erişmek istediğimiz zaman çeşitli sorunlar yaşıyoruz.
+
+258
+00:37:09,300 --> 00:37:13,300
+Ve bunu çözmek için de ikisini de aynı anda getirebiliyoruz.
+
+259
+00:37:13,300 --> 00:37:21,300
+Ya da bunun üstüne GraphQL gibi yeni teknolojileri getirmişler. Aynı zamanda Netflix'in Farcore'u da var.
+
+260
+00:37:25,556 --> 00:37:32,436
+REST kullanırken bizim bu dört tane HTTP fiillerine bağlı kalmamız gerekiyor.
+
+261
+00:37:32,436 --> 00:37:38,155
+Ve her zaman HTTP fiilleriyle ifade edemeyeceğimiz durumlar meydana gelebiliyor.
+
+262
+00:37:38,155 --> 00:37:45,556
+Bunun önüne geçebilmek için de GRPC yöntemi Google tarafından geliştirildi.
+
+263
+00:37:45,556 --> 00:37:47,403
+REST'in...
+
+264
+00:37:47,539 --> 00:37:55,539
+Faydaları ve dezavantajlarını anlatmam gerekirse oldukça basit ve hepimizin aşina olduğu bir yapı.
+
+265
+00:37:55,539 --> 00:38:03,539
+HTTP fiillerini kullandığı için zaten çoğu web geliştiricisinin kolaylıkla anlayabileceği bir yapıya sahip.
+
+266
+00:38:03,539 --> 00:38:10,539
+Firewall tarafından herhangi bir sorunla karşılaşmıyor, tehdit olarak algılanmıyor.
+
+267
+00:38:11,155 --> 00:38:21,355
+Ve dezavantajlarına gelmek gerekirse, biraz önce bahsettiğim iki taneden sayılabilir. Sadece request-response stilini destekliyor.
+
+268
+00:38:21,355 --> 00:38:33,655
+Ve bu da bir önceki slidelerinde bahsettiğim birden fazla kaynağı erişimde ve HTTP fiilleriyle ifade edilmesinde yaşanan sorunlardan bahsediyor.
+
+269
+00:38:34,195 --> 00:38:51,596
+Burada gördüğümüz dairedeki tüm şeyleri Remote Procedure Invocation olarak tanımlayabiliriz. Bunların hepsi uzaktan çağrıyla fonksiyon ya da kaynaklara erişmeye çalışıyor.
+
+270
+00:38:54,708 --> 00:39:05,208
+GRPC'den bahsetmem gerekirse, GRPC'de biraz önce bahsettiğim REST'in dezavantajlarını öndenmek için Google tarafından ortaya çıkarılan bir sistem.
+
+271
+00:39:05,208 --> 00:39:07,908
+HTTP2 protokolünü kullanıyor.
+
+272
+00:39:09,364 --> 00:39:29,364
+Burada göreceğiniz üzere, aslında dil bağımsızda çalışabiliyor. Burada Java, C Sharp, Note.js, Golang gibi dillerde binary mesajları istenilen formata çevrildiğinden bahsediyor. Mobilden ve masaüstünden...
+
+273
+00:39:30,643 --> 00:39:37,643
+Platform bağımsız bir şekilde çalıştırılabiliyormuş. Protokol bufferlarına sahip. Bunu da Zakir arkadaşımın anlatmıştı zaten.
+
+274
+00:39:38,643 --> 00:39:43,643
+Oldukça efektif ve performanslı olduğundan bahsedilmiş GRPC'nin.
+
+275
+00:39:44,643 --> 00:39:55,403
+Burada da avantaj ve dezavantajlarımdan bahsetmem gerekirse, oldukça zengin bir update.
+
+276
+00:39:55,699 --> 00:40:06,199
+Değiştirme operasyonlarını sağlayabiliyoruz. Bizim REST'i kullanırken yalnızca dört tane HTTP fiillerine bağlı kalarak geliştirebiliyorduk.
+
+277
+00:40:06,199 --> 00:40:13,880
+Oldukça efektif ve hızlı. Dezavantajıysa insanların okuyamayacağı bir dilde olduğunu söyleyebiliriz.
+
+278
+00:40:13,880 --> 00:40:21,099
+Bunun yanında Firewall'lar HTTP2'yi desteklemeyebiliyor eski versiyonları.
+
+279
+00:40:22,099 --> 00:40:28,099
+Ve JavaScript Clip'lerine biraz daha fazla yük bindiriyor.
+
+280
+00:40:30,099 --> 00:40:38,099
+Bizim bunda da çeşitli problemlerimiz yaşıyoruz. Aynı şekilde bu problemleri REST içinde de yaşanıyor.
+
+281
+00:40:38,099 --> 00:40:44,099
+Genel olarak uzaktan çağrı problemi olarak tanımlanmış.
+
+282
+00:40:45,300 --> 00:40:51,300
+Eğer request'imiz devamlı geliyor ve bu Asunikram iletişimleri anlatıyorum.
+
+283
+00:40:51,300 --> 00:41:10,300
+Request geldiği zaman orada bir trafik oluşuyor ve bu trafik bize en sonunda eğer cevaplanmazsa devamlı sürekli olarak bizim tüm kaynaklarımızı tüketiyor ve application'ımız çalışamaz hale geliyor.
+
+284
+00:41:10,835 --> 00:41:37,275
+Bunu önlemek için çeşitli yaklaşımlar ele alınmış. İlki Circuit Breaker. Bu yaklaşım eğer bir fail ve success request'leri sayısına göre bir değerlendirme yapıyor ve bitiriş olduğunun altındaysa o client'tan gelen tüm request'leri direktmen reddediyor.
+
+285
+00:41:38,068 --> 00:41:48,548
+Bunun için diğer yaklaşımlar da şu şekilde, Network Timeout her request için çeşitli bir süre ayırıyor ve o süreyi geçince direktmen request iptal ediliyor.
+
+286
+00:41:48,548 --> 00:42:01,748
+Limit getirmek, bir client belli bir sayıdan fazla request'te bulunamaz. Circuit Breaker, biraz önce bahsettiğim gibi direktmen Otrech Old'un altındaki değerleri red ediyor.
+
+287
+00:42:03,603 --> 00:42:08,724
+Bunun dışında nasıl tıkanan servisimizi recover edebiliriz?
+
+288
+00:42:08,724 --> 00:42:18,963
+Bunu şu şekilde yapabiliriz. Ya bütün request'lerimizi bırakırız ya da cage'den eski versiyonları getiririz.
+
+289
+00:42:21,844 --> 00:42:34,344
+Service Discovery kavramından bahsediyor aralığından. Bizim bir request yapabilmemiz için, Network'deki konumunu bilmemiz gerekiyor. O da IP address ve porttan oluşmakta.
+
+290
+00:42:35,987 --> 00:43:03,987
+Günümüzde daha çok dinamik adresler kullanılıyor IP adresleri olarak. Bu da bizim için bir problem oluşturuyor. Ve bu nedenle buna bir çözüm olarak Service Discovery yöntemi geliştiriliyor. Bunun içinde iki tane temel yaklaşım var. İlki Service Registry kullanmak, ikincisi de Deployment Infrastructure kullanmak. Bu da Docker, Kubernetes gibi tool'lar anlamına geliyor.
+
+291
+00:43:03,987 --> 00:43:17,987
+Ortamlar anlamına geliyor. Service Discovery Patterns'ından bahsetmem gerekirse, Service Registry isimli bir application, bir arayüzümüz, API'miz var.
+
+292
+00:43:17,987 --> 00:43:28,907
+Buradan QR'imiz geldiği zaman kendi kendine registry ediyor bizim servislerimiz ve boşta bulunan herhangi biri client'taki...
+
+293
+00:43:28,980 --> 00:43:35,580
+İsteği karşılamış oluyor. Load Balancing algoritmaları vs. kullanılabiliyor bu alanda.
+
+294
+00:43:36,720 --> 00:43:48,940
+Diğeri de Platform 3. Parti uygulamalar kullanmak. Bunlar da Kubernetes, Docker gibi ortamlarda Virtual IP aracıyla yapılıyor.
+
+295
+00:43:48,940 --> 00:43:54,480
+Ve tamamen Deployment bu ortamlar tarafından kontrol ediliyor.
+
+296
+00:43:54,739 --> 00:44:04,539
+Bunun temel faydaları tamamını bu dil karşılıyor ve tüm dillerde, tüm frameworklerde çalışabiliyor.
+
+297
+00:44:04,539 --> 00:44:13,939
+Dezavantacı ise Kubernetes'ten bahsedelim. Kubernetes sadece Kubernetes servislerinde arama yapabiliyor ve onlar aracılığa çalışabiliyor.
+
+298
+00:44:13,939 --> 00:44:18,539
+Benim sunumum da bu kadardı. Teşekkür ederim. Sizin sorunuz varsa da ederim.
+
+299
+00:44:18,539 --> 00:44:22,139
+Biz de teşekkür ediyoruz.
+
+300
+00:44:22,900 --> 00:44:34,500
+[öğrenci]'den sonra sunan dediğin gibi daha güzel oldu aslında konu akışı, mantık akışı açısından. Şimdi [öğrenci], sen de bu konu sunacaktın.
+
+301
+00:44:34,500 --> 00:44:35,920
+Ben de buradayım.
+
+302
+00:44:35,920 --> 00:44:39,220
+Tamam hocam, teşekkür ederim.
+
+303
+00:44:49,972 --> 00:44:52,412
+Ekranım gelmiştir diye düşünüyorum.
+
+304
+00:44:52,972 --> 00:44:55,572
+Evet, görüyoruz şu anda slide'ları.
+
+305
+00:44:56,244 --> 00:45:24,244
+Tamamdır hocam. Merhabalar herkese. Benim de konum geçen haftaydı aslında chapter'ım ama bu hafta sunuyorum. Konum coordinating aslında sagaslar. Kısaca bir mikro servislerden giriş yapmak istiyorum. Çünkü biz neden bu sagas modellerine ihtiyaç duyuyoruz? Onu geçiş şeklinde anlatmak istiyorum. Mikro servisler nelerdir? Mikro servisler yazılım geliştirilmesi.
+
+306
+00:45:24,244 --> 00:45:50,864
+Bu serbest bir uygulamayı birbirinden bağımsız olarak çalışan küçük ve birbirinden izole edilmiş servisler olarak tasarlama yöntemine mikroservis diyoruz. Bu servisler tek bir işlevi yerine getirmek üzere tasarlanır ve birlikte koordine olarak büyük bir modelin senaryonun parçalarını oluşturur diyebiliriz.
+
+307
+00:45:52,244 --> 00:45:54,244
+mimarisinin bize sağladığı pek çok
+
+308
+00:45:54,244 --> 00:45:55,744
+avantaj aslında vardır.
+
+309
+00:45:56,503 --> 00:45:58,344
+Bunlardan kaynaklı da yaygın
+
+310
+00:45:58,344 --> 00:46:00,304
+olarak karşımıza kullanım alanları
+
+311
+00:46:00,304 --> 00:46:02,484
+çıkıyor. Peki bu avantajlar
+
+312
+00:46:02,484 --> 00:46:04,224
+nelerdir? Dayanıklı
+
+313
+00:46:04,224 --> 00:46:06,224
+oluşları, esnek ve ölçeklenebilir
+
+314
+00:46:06,224 --> 00:46:08,244
+oluşları, modülerlik ve bağımsız
+
+315
+00:46:08,923 --> 00:46:10,384
+kullanılabiliyor oluşları,
+
+316
+00:46:10,844 --> 00:46:12,423
+yine uyumluluk konusunda
+
+317
+00:46:12,423 --> 00:46:14,224
+başarılarının yüksek olması
+
+318
+00:46:14,224 --> 00:46:16,364
+şeklinde pek çok avantajın
+
+319
+00:46:16,364 --> 00:46:18,284
+yanında bunları belirtebilirim.
+
+320
+00:46:18,624 --> 00:46:19,923
+Ancak bu avantajların
+
+321
+00:46:20,244 --> 00:46:46,024
+Bu sorun gelmesiyle birlikte bize bir takım da zorlukları beraberinde getiriyor. Bu zorluklardan bir tanesi de servislere yayılmış distributive transeksiyonları yönetirken veri tutarsızlığının meydana gelmesidir. Bunun da önlenmesi adına aslında biz saga modellerine ihtiyaç duyuyoruz. O da bizim zaten bugünkü bahsedeceğim konunun temelini oluşturuyor aslında. Konuyu oluşturuyor.
+
+322
+00:46:48,244 --> 00:46:54,824
+Ufak bir örnekle nerede ihtiyaç duyuyoruz Saga modellerine deyip daha sonra aslında Saga nedir ondan bahsetmek istiyorum.
+
+323
+00:46:55,827 --> 00:47:13,088
+Bir finansal hizmet uygulaması olduğunu düşünelim. Burada iki tane mikroservise ihtiyaç duyduğumuzu düşünelim. Bir para transfer işlemi yapacağız. Bunun için de iki mikroservise ihtiyacımız vardır. Hesap mikroservisi ve transfer mikroservisi.
+
+324
+00:47:13,248 --> 00:47:23,827
+Hesap mikroservisi üzerinde müşterinin hesabından belirli bir miktar parayı düşürmekle sorumlu olan mikroservis diyoruz. Bu işlevden sorumlu transfer mikroservisi.
+
+325
+00:47:23,827 --> 00:47:43,248
+Mikroservisi ise parayı alıcı bankanın hesabına yatırmakla sorumlu olan mikroservis diyoruz. Eğer bu sistem monolitik bir yapı olsaydı her iki işlem aynı veri tabanı üzerinde çalışıyor olur ve tek bir transakşon içinde atomik bir yapı şeklinde oluşurdu diyebiliriz.
+
+326
+00:47:43,248 --> 00:47:51,827
+Ancak biz farklı mikroservislerle bir işlem yapıyorsak her mikroservisin kendi veri tabanı olduğunu bu işlemleri de koordine etmek istiyoruz.
+
+327
+00:47:51,827 --> 00:47:57,047
+Bu işlemi gerçekleştirmek de biraz dolayısıyla zorlaşıyor.
+
+328
+00:47:57,460 --> 00:48:13,619
+Bizim burada iki tane mikro servisimizin olduğunu belirtmiştik. Bu senaryoda bir hata karşımıza çıkmalı ki aslında bizi SAGA'ya yönlendirsin. Öyle bir olaydan bahsedecek olursak da her iki mikro servisin bağımsız bir veri tabanı olduğunu söylemiştik.
+
+329
+00:48:25,460 --> 00:48:45,519
+Müşterinin hesabından bir para gönderdiğimizde bu mikroservis veri tabanı üzerinde bu işlemin gerçekleştirdiğini varsayalım. Müşterinin hesabından para düşüyor. Ama transfer mikroservisi üzerinde teknik bir hata meydana geldiğinde para karşı alıcılığa iletilmiyorsa burada bir tutarsızlık meydana geliyor.
+
+330
+00:48:48,436 --> 00:49:16,436
+Süreç ilerlememiş oluyor. Bu durumda da tutarsızlığı önleyebilmek adına ya saga ya da distributed transaction şeklinde iki tane yöntemden birini kullanabiliriz diyoruz. Örneğin bir telafi işlemi eklenerek sisteme paranın müşterinin hesabına geri yatırılması sağlanırsa bu işlemi saga ile gerçekleştirmiş oluyoruz. İşte bu durumlarda da aslında hataları önlemeye kontrol sistemini arttırıyoruz.
+
+331
+00:49:16,436 --> 00:49:38,036
+Bu yapı mikroservislerin bağımsız çalışmasını sağlarken işlem tutarlılığı için ek bir koordinasyon aslında mantığı sağlıyor bize. Az önceki söylediğim buradaki tutarlılık ya da tutarsızlık gibi o olayı önlemek gibi pek çok detaya da aslında dikkat etmemiz gerekiyor bizim.
+
+332
+00:49:38,771 --> 00:49:54,831
+Bunlardan dört ana başlık karşımıza çıkıyor. Bütünlük, tutarlılık, yalıtım ve dayanıklılık. Bunlar nedir? Bütünlük dediğimizde karşımıza tüm transeksiyonlar ya başarıyla gerçekleşmeli ya da hiç gerçekleşmemeli.
+
+333
+00:49:55,831 --> 00:50:00,000
+Tutarlılık az önceki söylediğimiz örnekteki gibi transeksiyonlar.
+
+334
+00:50:00,000 --> 00:50:15,340
+Transaction sonucunda tüm veriler tutarlı olmalı ya da veriler arasında tutarsızlık olmamalıdır. Bir hesaptan para düşüyorsa, bir başka hesaba aktarılacaksa aktarılacak hesapla da o kadar miktarın artması beklenmesi durumudur aslında örnek vermemiz gerekirse.
+
+335
+00:50:15,340 --> 00:50:27,880
+Yine yalıtım dediğimizde bir diğer transaction tarafından etkilenmemelidir. Etkilenme durumunun söz konusu olmama haldir aslında. Dayanıklılık dediğimizde de transaction.
+
+336
+00:50:28,000 --> 00:50:47,720
+Sırasında bir hata alınması meydana geliyorsa, bunun bir önceki duruma geri çevrilebiliyor, döndürülebiliyor olmasıdır. Bu dört tane özellik bizim için önemli noktadadır. İşte bu senaryolar sonucunda biz SAGA'ya niye ihtiyaç duyuyorduk ve SAGA nedir? Şimdi onlardan bahsetmek istiyorum.
+
+337
+00:50:48,211 --> 00:51:16,211
+Saga tasarım deseni birden çok mikroservise yayılan transakçıları yönetmek için kullanılır. Her adım bir önceki adımın başarılı olmasıyla tetiklenir. Az önceki minik verdiğimiz örnekteki gibi herhangi bir hata tespit edildiğinde ya onu önleyeceğiz ya da bir önceki duruma geri dönüş yapacağız. Bir hata varken sürecin devam etmemesini önlüyor aslında. Bu süreç boyunca bir hata alınması durumunda daha önceden...
+
+338
+00:51:16,211 --> 00:51:26,892
+Yani işlenmiş transakşonlar rollback edilerek geri alınmalıdır. Böylece bütünlük yani atomik yapı tutarlı olarak sağlanmış olacaktır aslında.
+
+339
+00:51:27,552 --> 00:51:49,112
+Saga tasarım desenini uygulamak için de iki tane alt başlığımız var bizim. Bunlardan bir tanesi kareografi, diğeri de orkestration saga modeli olmak üzere iki yaklaşımımız var. Peki bunlar nelerdir? Kısaca bahsedip sonra detaylandıracağım. Kareografi dediğimiz karar alma ve işlemler katılımcılar arasında.
+
+340
+00:51:50,003 --> 00:52:08,364
+Sağlanıyor aslında. Orkestrasyon dediğimizde ise ek olarak bir merkezi bir sınıfımız vardır. Buna da orkestratör diyoruz. Onun aracılığıyla aslında sistem servisler arasında iletişim kuruyor ve yönetiliyor. Bu şekilde iki yaklaşımımız bulunuyor.
+
+341
+00:52:34,099 --> 00:52:50,559
+Saga'nın her adımı bir olaya yayınlar. Daha sonrasında bu olay diğer servisler tarafından dinlenir. Daha sonrasında adım adım ilerlemiş oluyor. Merkezi bir kontrol sistemi kareografi Saga modelinde bulunmuyor.
+
+342
+00:52:51,411 --> 00:53:17,491
+Bu, avantajları konusunda dağıtık ve bağımsız çalışma sağlıyor. Servislerin esnek bir yapısı vardır. Tasarım konularına bakacak olursak, olayların doğru sırada işlenmesi ve hata yönetimi kritik öneme sahiptir. Çünkü dış bir kontrolcüsü burada yok. Sadece servisler arasındaki iletişimle ilerliyor. Servisler arasındaki bağımlılıkların ve veri tutarlılığının iyi yönetilmesi gerekiyor.
+
+343
+00:53:19,411 --> 00:53:47,411
+Bu modelin eğer bu modelle bir sistem yönetilecekse tasarımın en başta iyi modellenmiş olması gerekiyor. Aksi takdirde daha sonradan daha büyük problemlerle karşılaşacağımız anlamına geliyor aslında. Servisler arası olay trafiği artar. Bu durumda izlemeyi zorlaştırıyor. Bunlar da dezavantajları. Hata ve geri alma işlemlerinin yönetimi karmaşık hale geliyor. Tutarlılığı sağlamak için ek bir mekanizmaya aslında ihtiyaç.
+
+344
+00:53:47,411 --> 00:53:59,871
+Çünkü diğer modelimizde de aslında bunun buradaki eksik olduğu noktasını tamamlamış olacağız. Bu model bu şekildeydi. Örnek üzerinden gidersek daha belki anlaşılır olur.
+
+345
+00:54:00,384 --> 00:54:21,724
+Bu yaklaşımda merkezi bir yönetici bulunmuyor. Sadece servislerimiz ve aradaki event iletişimleri bulunuyor. Her servis işlemini tamamladıktan sonra bir event fırlatıyor. Bir sonraki serviste bu eventi konsüm edip sürecine devam ediyor aslında. Bu saga modelinin mantığı bu şekilde çalışıyor.
+
+346
+00:54:22,164 --> 00:54:36,564
+Order Servis'i oluşturduktan sonra Pending Statüsü'ne Order Create Event'ini fırlatıyor. Daha sonrasında da Payment Servis'i Order Create Event'i dinlemeye başlıyor.
+
+347
+00:54:36,564 --> 00:54:43,244
+Ve ödeme işlemi gerçekleştirdikten sonra da kendisi bu sefer bir sonraki eventi fırlatmış oluyor.
+
+348
+00:54:43,744 --> 00:54:49,684
+Build Order Event'ini fırlatmış oluyor. Daha sonrasında Stock Servis'i bunu aslında dinliyor.
+
+349
+00:54:50,164 --> 00:54:59,264
+Bu event geldikten sonra eğer stok servis işlemini gerçekleştirirse başarılı bir şekilde daha sonrasında order prepared eventini fırlatıyor.
+
+350
+00:54:59,264 --> 00:55:11,264
+Bu da yine aynı şekilde devri veri servis tarafından dinleniyor ve geldiyse eğer yine orayı dinledikten sonra işlemini gerçekleştiriyor ve kendisi en son bütün...
+
+351
+00:55:11,956 --> 00:55:23,216
+İşlemini gerçekleştirirse başarılı bir şekilde herhangi bir hata oluşmadıysa Cargo işlemi gerçekleşiyor ve Order Delivery Event'ini fırlatmış oluyor. Bu da Order Servis'ini.
+
+352
+00:55:24,724 --> 00:55:41,983
+Orada servisi de bu eventin fırlatıldığını gördükten sonra dinler ve siparişin durumunu tamamlamış olur. Yani arada herhangi bir hata yoksa servisler ve aradaki event fırlatma ve dinleme olayıyla bu model gerçekleşmiş oluyor. Süreç tamamlanmış oluyor.
+
+353
+00:55:43,092 --> 00:56:02,032
+Fakat akışta ata olması durumunda rollback işlemi için yeni bir event fırlatmamız gerekiyor. Az önceki modelden daha küçük bir kesit buraya alındı. Burada da stok servisi üzerinde product out of stock eventi gelecek olursa o da burada karşımıza çıkıyor.
+
+354
+00:56:02,032 --> 00:56:10,892
+Yani ürünler üzerinde bir stok eventi gelmiş. Burada da bu event'e order servisi ve payment servisi.
+
+355
+00:56:11,092 --> 00:56:34,852
+Dinleme yapıyor. Buradan daha sonra Payment Servisi ödemeyi geri alması gerekiyor bir hata durumu mevcutsa. Ya da Order Servisi de Order statüsünü failda çekmesi gerekiyor ki hata devam etmesin. Bir önceki duruma geri çekilsin. Yani bu ürünle ilgili.
+
+356
+00:56:36,340 --> 00:56:40,400
+Problemli durum çözülmüş olsun şeklinde bu modeli de açıklayabiliriz.
+
+357
+00:56:41,556 --> 00:57:03,915
+Bizim bu bahsettiğimiz katografi Saga modeliydi. Bunun avantajlarından ve dezavantajlarından bahsetmek istiyorum. Yine kısaca özetlemem gerekirse. Basit bir yapıya sahip. Dediğimiz gibi servisler ve eventler üzerinden ilerliyor süreç. Buraya yeni bir servis ekleyecek olursak aslında implement etmek kolaydır. Ama hangi durumlarda kolaydır?
+
+358
+00:57:09,556 --> 00:57:34,795
+Eklemesi kolay olabilir diyebiliriz. Ancak karmaşık modellerde ya da kompleks bir senaryomuz varsa, bunun üzerinde bir işlem yapacaksak, burada da tasarımın aslında önemi ortaya çıkıyor. Biraz kompleksleşme durumu meydana geliyor. Çünkü hataların ve gözden kaçabilecek durumların biraz fazla olması durumu çıkıyor. Çünkü herhangi bir kontrol sistemi diğer modelimizde olduğu gibi burada yok.
+
+359
+00:57:35,284 --> 00:57:46,604
+Sistemin tam anlamıyla test etmek için tüm servislerin çalışır durumda olması gerekiyor diyoruz burada da. Bu da test durumunu aslında zorlaştırır şekilde karşımıza çıkıyor.
+
+360
+00:57:48,148 --> 00:58:04,788
+Bizim ikinci yöntemimiz ise orkestrasyon Saga modeliydi. Burada ise diğer Saga modelimizden ziyade ek olarak Saga işlemini yönetmek için bir başka yöntemdir bu da.
+
+361
+00:58:04,788 --> 00:58:16,148
+Bu yaklaşımda orkestratör sınıfı bulunuyor. Bu sınıfın tek sorumluluğu Saga katılımcılarına ne yapacaklarını söylemektir. Aslında servisler arasında hangi işlemi yapması gerektirir.
+
+362
+00:58:16,148 --> 00:58:41,968
+Artık burada yöneten bir orkestratör adı verdiğimiz bir yapımız karşımıza çıkıyor. Çalışma şeklimizde komut ve geri dönüş etkileşimi bulunuyor. Orkestratör dediğimiz sınıfımız bir katılımcıya belirli bir işlemi gerçekleştirmesi için bir komut mesajı gönderiyor. Daha sonrasında da katılımcı işlemi tamamladıktan sonra orkestratöre bir geri dönüş mesajı vererek işlemi tamamladığını söylüyor.
+
+363
+00:58:44,148 --> 00:58:48,048
+Hatanlı olmadığı durumda minimum şekilde olayın ilerleyişinden bahsediyor.
+
+364
+00:58:48,668 --> 00:58:55,428
+Adım adım yönetimde orkestratör geri dönüş mesajını işler ve bir sonraki saga adımını süreci aktarır.
+
+365
+00:58:56,436 --> 00:59:15,876
+Avantajları arasında en belirgin diğer saga yöntemiyle fark olarak merkezi bir kontrol sisteminin yapısının olmasıdır. Orkestratör tüm süreç üzerinde tam bir kontrol sağlıyor ve işlem sırasında net bir şekilde yönetime dahil oluyor aslında. Bu da bize daha az karmaşıklık.
+
+366
+00:59:17,139 --> 00:59:41,612
+Arkadaşlar, bu örneklerle anlatacağız.
+
+367
+00:59:42,132 --> 00:59:54,052
+Ek bir orkestratör sınıfımız olduğu için ve kontrolün daha sağlam ilerlediği bir yapı oluşturduğumuz için bu yöntemde burada maliyetin arttığını söyleyebiliriz.
+
+368
+00:59:55,231 --> 00:59:59,972
+Buradaki örnek üzerinde işlemlerimizi takip edecek olursak.
+
+369
+01:00:00,403 --> 01:00:18,664
+Burada bir Saga Orkestratörü yapımız vardır. Bu orkestratör, Subscribe olan tüm konsümrlara ne zaman ne yapacağını aslında söyleyen bir konsümrdır. Örnek olarak yine e-ticaret senaryosu üzerinden bir örnekleme yapmak istiyorum.
+
+370
+01:00:18,664 --> 01:00:28,104
+Order servisimiz pending durumunda bir siparişi oluşturduktan sonra orkestratöre order created bilgisini gönderir.
+
+371
+01:00:28,403 --> 01:00:50,064
+Artık bir sipariş üzerinden işlem yapmak istiyoruz. Orkestratör daha sonrasında Payment Servisine Execute Payment komutunu gönderiyor. Ve bu Payment geri ödeme alındığı ile ilgili bilgiyi de daha sonrasında cevap olarak üretiyor. Ama başarılı bir senaryo varsa karşımızda.
+
+372
+01:00:56,403 --> 01:01:02,604
+Bu da cevabını yine aynı şekilde geri dönüş bilgisi olarak üretiyor.
+
+373
+01:01:03,092 --> 01:01:28,112
+Orkestratör bir sonraki adımda Delivery servisine komutunu yolluyor. Eğer burada da herhangi bir hata yoksa başarılı bir şekilde cevabımız üretilmiş oluyor. Her durum için saga üzerinde stat tutmak, hangi adımda süreci yanlış yönettiğimizi görmek için de aslında bizim sürecimizi ve olaylarımızı kolaylaştırıyor diyebiliriz.
+
+374
+01:01:31,987 --> 01:01:49,067
+Burada orkestratörümüz bir siparişin oluşturulması için gerekli akışın ne olduğunu bize aslında söylüyor. Olası bir hata durumunda, fail order durumunda işlemini geri almak için subscribe olmuş tüm servislere geri alma işlemini koordine etmekle sorumludur aslında orkestratörümüz.
+
+375
+01:01:59,987 --> 01:02:27,547
+İleri gönderdiğinde orkestratörümüz bizim işlemin başarısız olduğu bilgisini alıp rollback işlemini aslında başlatmış oluyor. Peki bizim az önceki örnekte de el aldığımız rollback işlemi neydi? Bizim en başta sagalara ihtiyaç duyduğumuz durumda aslında eğer ortada bir tutarsızlık, bir hatalı yapı oluştuysa en önceki, bu hata olmadan önceki sisteme geri dönüyor olabilmemiz lazım. Duruma geri dönüyor olabilmemiz lazım.
+
+376
+01:02:27,987 --> 01:02:35,707
+Aslında bu sürecin tamamlanmasından bahsediyor. Fail Order durumu varsa rollbacklerle bir önceki duruma geçiş yapmamız gerekiyor.
+
+377
+01:02:37,108 --> 01:02:55,367
+Buradaki orkestrasyon saga yönteminin avantajları ve dezavantajlarına bakacak olursak da transaction yöntemi merkezleştirilir. Artık burada bir merkezi yönetici vardır diyebiliriz. İmplemente etmek ve test etmek diğer yönteme göre daha kolaydır.
+
+378
+01:02:55,367 --> 01:03:03,628
+Burada çünkü servisler ve eventler arasında değil bir merkezi yönetici tarafından daha az adımda süreç devam ediyor.
+
+379
+01:03:05,108 --> 01:03:21,768
+Ve daha basittir. Yeni stepler eklendiğinde işlem karmaşıklığı katografi yaklaşımına göre daha az komplekleşiyordu. Birbirini bekleyen işlemler mevcutsa bir senaryoda bu yöntemi kullanmak daha mantıklı hale gelebilir.
+
+380
+01:03:27,860 --> 01:03:41,480
+Bu altyapı karmaşıklığı oluyordu. Burada da yine bu şekilde dezavantaj olarak karşımıza çıkabilir diyebiliriz. Beni dinlediğiniz için teşekkür ederim. Benim anlatacaklarım ve özetleyeceklerim bu kadardı.
+
+381
+01:03:42,819 --> 01:03:44,159
+Teşekkür ediyoruz [öğrenci].
+
+382
+01:03:44,759 --> 01:03:45,940
+Ben teşekkür ederim hocam.
+
+383
+01:03:45,940 --> 01:03:54,460
+Evet, geçen haftayı tamamladık. Şimdi belki bu hafta bir sunumumuz var. Devam edemiyoruz.
+
+384
+01:03:55,827 --> 01:03:59,068
+Açın mı hocam? Tabii ki. Tabii, bu już. Tamam.
+
+385
+01:04:16,083 --> 01:04:18,403
+Geldi değil mi hocam sunum ekranı?
+
+386
+01:04:19,463 --> 01:04:20,344
+Evet, geldi.
+
+387
+01:04:21,423 --> 01:04:27,543
+Merhaba, ben [öğrenci]'e Business Logic Organization Patterns'tan bahsedeceğim.
+
+388
+01:04:29,203 --> 01:04:37,123
+Öncelikle Business Logic'in de temeli, yani merkezinde bulunduğu Altıgen Mimariden bahsetmek istiyorum.
+
+389
+01:04:43,219 --> 01:04:54,059
+Bir uygulamamızın, büyük ya da küçük uygulama olabilir, çevresel tüm sistemlerden bağımsızlaştırmasını sağlıyor.
+
+390
+01:04:54,059 --> 01:05:02,440
+Yani burada kullanıcı arayüzü, veri tabağına olabilir. Bunların hepsinden bizim uygulamamızı bağımsızlaştırmasını sağlıyor.
+
+391
+01:05:03,079 --> 01:05:07,019
+Merkezde iş mantığı bulunmaktadır gördüğünüz üzere.
+
+392
+01:05:08,980 --> 01:05:23,300
+Diğer kullanıcı arayüz veri tabanlarından bağımsızdır. Böylelikle test edilebilir her arayüz, her sistem kendi içinde test edilebilir. Veri tabanı ayrı, kullanıcı arayüzü ayrı. Test edilebilir imkan sağlar.
+
+393
+01:05:25,440 --> 01:05:33,099
+Burada adaptörler bulunuyor. Inbound adaptörler ve outbound adaptörler, giriş çıkış adaptörleri.
+
+394
+01:05:36,543 --> 01:05:45,403
+İstemciden, kullanıcıdan HTTP kodlarını girerek iş mantığını başlatan bir adaptör.
+
+395
+01:05:46,764 --> 01:05:53,744
+Order Commute Handlers burada çeşitli mesela bizim order servisimiz için,
+
+396
+01:05:53,744 --> 01:06:02,543
+Create Order metoduyla, Create Order sınıfının metoduyla ilgili iş mantığındaki sınıfı tetikleyip,
+
+397
+01:06:02,867 --> 01:06:06,547
+O komodu gerçekleştirilmesini sağlayan adaptör.
+
+398
+01:06:08,547 --> 01:06:12,547
+Çıkış adaptörlerinde ise Domain Event Publisher adaptör.
+
+399
+01:06:13,547 --> 01:06:27,347
+Buradaki bu adaptörün yaptığı iş, iş mantığının tetiklediği önemli olayları diğer servislere veyahut da bileşenlere aktaran bir adaptör.
+
+400
+01:06:27,635 --> 01:06:53,536
+Database adaptör ise veri tabanının işlemlerini soyutlayan, iş mantığından bağımsız hale getiren adaptör. Burada daha sonra da bahsedeceğimiz repository kalıbı ile taktiksel kalıp ile database yani veri tabanındaki işlemleri gerçekleştiriyor. Veri ekleme, incelleme, silme gibi.
+
+401
+01:06:56,436 --> 01:07:13,436
+İş mantığının tabii iki tür yaklaşımımız var. Uygulamamızı nasıl yapacağımız neticesinde. Nesneye yönelik yaklaşım veya prosedürel yaklaşım. Biz gerçek dünya varlıkları ile yani...
+
+402
+01:07:14,068 --> 01:07:20,648
+Sınıfları, nesneleri gerçek dünya ile temsil etmek istiyorsak nesne yönelimli bir iş mantığı kurmamız lazım.
+
+403
+01:07:22,168 --> 01:07:34,548
+Prosedürel yaklaşım ise daha çok işlem adımlarıyla. Her bir metot, her bir hizmet metotlarla belirleyerek yapmak istiyorsak da prosedürel yaklaşımla yapacağız.
+
+404
+01:07:34,548 --> 01:07:39,388
+Bu uygulamanın büyüklüğüne, karmaşıklığına göre değişir.
+
+405
+01:07:41,811 --> 01:08:06,751
+İş mantığında iki tür desen vardır. Düzenleme desenli. Transaction Script ve Domain Model. Transaction Script'ten başlamak gerekirse, burada her bir istek, ister misin kullanıcıdan, ayrı bir Transaction Script'tir. Nesneye yönelik bir yapı olmadığından,
+
+406
+01:08:08,083 --> 01:08:31,343
+İşlemlerle meydana gelir ve iş akışı. Her bir istek işlem yöntemiyle ele alınır. Nasıl çalıştığına bakacak olursak daha iyi anlaşılacak. Burada order service sınıfımız var. Burada her bir hizmetin metotları bulunmaktadır. Create order, revise order, cancel order. Tüm işlemler bu ortak sınıftan yapılır.
+
+407
+01:08:31,828 --> 01:08:55,728
+Tek tek domenlere ayrılmaz Transaction Script'te. Sadece davranıştan oluşan sınıflarımız vardır. Bir de sadece veriyi depolayan, davranışı olmayan sınıflarımız vardır. Burada Order sadece veri depolayan sınıfımız. Order'da ise veri tabanıyla iletişim kurduğumuz sınıf. Veri tabanının işlemlerini sağlayan.
+
+408
+01:08:57,395 --> 01:09:05,175
+Burada daha çok basit yapı olduğu için basit uygulamalarda bu Transaction Script tercih edilir.
+
+409
+01:09:06,555 --> 01:09:15,216
+Avantajlarında da göreceğimiz üzere nesne yöneliminin karmaşıklı olmadığından işlemler hızlı bir şekilde olur, basittir.
+
+410
+01:09:15,216 --> 01:09:22,895
+Her işlem yönteme karşılık gelir, doğrudanlığı var. Takip etmesi kolaylaşır böylelikle.
+
+411
+01:09:23,315 --> 01:09:30,855
+Dezavantajları ise, eğer iş mantığımız bizim karmaşıklaşır, büyürse, o zaman bu takip edilmesi zor olacaktır.
+
+412
+01:09:31,015 --> 01:09:38,995
+Kod karmaşıklaşacaktır. Çünkü tek bir yerden, tek bir servis sınıfından yönetildiği için işler zor hale gelecektir.
+
+413
+01:09:38,995 --> 01:09:48,075
+Ve nesne yönelimi programlamanın da özelliklerinden faydalanamamaktadır. Kalıtım gibi. Bunlar da dezavantajları.
+
+414
+01:09:49,587 --> 01:10:00,587
+Ne zaman kullanılır? Basit olduğunda eğer sonuç almak istediğimizde, iş mantığı da eğer basitse Translations Siklip kullanılabilir.
+
+415
+01:10:00,587 --> 01:10:06,587
+Karmaşıklığa gerek yoksa, nesne yönelilme modelin getirdiği, Translations Siklip kullanılabilir.
+
+416
+01:10:06,587 --> 01:10:13,587
+Ama eğer iş mantığımız karmaşıklaşır, daha büyük uygulamalar yapacaksak domain model tercih edilmelidir.
+
+417
+01:10:14,547 --> 01:10:37,887
+Domain Model Patin nedir? Burada sadece artık tek bir davranış veya durumdan oluşan sınıflar değil. Hem davranış hem durumu. Veriyi tutan sınıflar vardır. Tasarımı daha iyidir aslında. Gerçek dünya kavramlarında temsil eden küçük sınıflardan oluşur.
+
+418
+01:10:41,427 --> 01:10:58,448
+İş alanını temsil ede, domenini temsil ede. Böylelikle daha kodun anlaşılabilirliği artar. Hangi kavramda iş yapıyor rollerini daha iyi biliriz, daha iyi düzenleyebiliriz.
+
+419
+01:11:00,659 --> 01:11:10,659
+Evet, burada zaten Transaction Script'te basit olması gerekiyor iş mantının. Domain modelde ise, Karma şıklaşırsa iş mantığı kullanmamız gerektiğinden bahsediyor.
+
+420
+01:11:11,659 --> 01:11:20,659
+Nasıl çalıştığına bakacak olursak, burada Order Service yine var. Yani hizmetlerin hepsi yine var.
+
+421
+01:11:27,796 --> 01:11:34,816
+Ayrı bir domeninde, burada order domeninde bütün Credit Order, Revise Order, Cancel Order işlemleri yapılıyor.
+
+422
+01:11:36,256 --> 01:11:41,355
+Sadece biz burada yönetim açısından order servisi kullanıyoruz.
+
+423
+01:11:42,355 --> 01:11:43,836
+Buradan yönlendirme açısından.
+
+424
+01:11:44,275 --> 01:11:56,976
+Yoksa tüm işlemler ayrı bir domenindedir. Transaction Siklip'te olduğu gibi tek bir serviste tüm metotlar, işlemleri görülmez. Ayrı domenlere aktarılır.
+
+425
+01:11:59,115 --> 01:12:08,576
+Sadece durumdan oluşan sınıflarımız vardı. Delivery Information, burada teslimat zamanı adresi gibi. Sadece değer alan sınıflar.
+
+426
+01:12:09,140 --> 01:12:29,560
+Değer koleksiyonlarından oluşan sınıflar. Burada da order repository. Burada zaten repository kalıbı ile veri tabanı, yani bizim order servisten yüklenen isteğimiz veri tabanındaki order repository sınıfında işlemleri yapılacaktır.
+
+427
+01:12:31,140 --> 01:12:34,760
+Bu tabii daha düzenli bir yapıdır ayrı domenilerden oluştuğu için.
+
+428
+01:12:36,404 --> 01:12:41,424
+Sürdürülebilirliği, ileride kullanılabilirliği artan bir yapı olmuştur.
+
+429
+01:12:43,924 --> 01:12:56,864
+Avantajlarına gelecek olursak, küçük sınıflardan oluştuğu için, her bir işlem, her bir kod ayrı domenilerden oluştuğu için anlaşılması ve güncellemesi kolay.
+
+430
+01:12:56,864 --> 01:13:02,784
+Sadece domeni güncelleyeceğiz. Oradaki kavramı tek bir yerde olmadıkları için.
+
+431
+01:13:03,252 --> 01:13:17,332
+Burada Account Banking Translation gibi örnek sınıflar, o kavram direkt gerçek dünyadaki kavrama aynısı olduğu için, benzediği için o sınıfın ne yaptığını da kolayca anlayabileceğiz.
+
+432
+01:13:17,692 --> 01:13:23,852
+Gerçek dünya modellemesini gerektirdiği. Ve her bir sınıfı da bağımsız olarak test edebileceğiz.
+
+433
+01:13:23,852 --> 01:13:29,852
+Burada strateji ve template metotlar kullanılarak, tasarım kalıpları kullanılarak.
+
+434
+01:13:32,115 --> 01:13:39,655
+Mesela template modudu alarak hazır bir kod üstünden genişletmeyi de sağlayabiliriz.
+
+435
+01:13:42,476 --> 01:13:45,315
+Bu domain modelin dezavantajı şu.
+
+436
+01:13:46,716 --> 01:13:52,036
+Tabii, domain model çok büyüdüğünde bu sefer diğer sınıflara bağımlılığı olabilir.
+
+437
+01:13:52,036 --> 01:13:57,036
+Yani bir domain model istediği bilgi diğer...
+
+438
+01:13:57,328 --> 01:14:17,148
+Dolayısıyla domen sınıfı istediği bilgiyi diğer sınıfta arayabilir. Bu da bağımsızlıkları kaybettir. Onu istemeyiz. Bunların da yani her bir domenin bağımsız olmasını sağlayan, yine domen model kalıbının bir türevi olan Domain Drive Design bir metodoloji kullanılır aslında.
+
+439
+01:14:18,963 --> 01:14:37,644
+Bu metodoloji, o domen uzmanlarıyla, yani işi bilen domen uzmanlarıyla o konu hakkında bilgisi olan yazılımcılar arasında bir işbirliği sağlamak, ortak bir dil bulmak amacıyla Domain Drive Design kullanılır.
+
+440
+01:14:43,188 --> 01:14:58,628
+Aslında tek bir o domenle alakalı tek bir model vardır. O kavramla alakalı. Başka bir ortak bir model yani ortak bir domen bulunmaz. Ortak bir domen modeli. Her bir servisin kendine alsı domen modeli vardır.
+
+441
+01:14:59,347 --> 01:15:19,648
+Bu normalde ortak bir domen modelinden yürütülen işlemlerde bağımsızlık sorunu ortaya çıkmıştı. Burada bağımsızlığı ortadan kaldırmak için her bir kendine özgü iş alanının domen modeli olduğundan bağımsızlıkları bulmuş oluyor.
+
+442
+01:15:26,452 --> 01:15:39,332
+Sınırlarla çizdirilerek, bu da boundless context, yani sınırlı bağlam terimiyle her bir domain model kendi sınırları içerisinde çalışır. Kendi sınırları içerisinde kuralları vardır.
+
+443
+01:15:42,271 --> 01:15:52,011
+Burada temel kavramlara gelecek olursak, boundless context'ten bahsettik. Her alt alan kendine özgü kurallar veri modeliyle tanımlanır.
+
+444
+01:15:52,884 --> 01:16:12,244
+Domain Dry Design'de iki tür kalıp vardır. Stratejik ve taktiksel kalıplar. Stratejik kalıplar dediğimiz gibi o domainleri alt alanlara bölen her bir ayrı iş alanının domaini dediğimiz subdomainlere bölen kalıplar.
+
+445
+01:16:12,244 --> 01:16:19,084
+Stratejik kalıp. Her bir subdomain gerçek düzenli bir iş alanını temsil eder.
+
+446
+01:16:20,435 --> 01:16:34,735
+Taktiksel kalıplara gelecek olursak, burada domain modelde bizim o sınıflarımızın rollerini, özelliklerini düzenleyen kalıptır aslında.
+
+447
+01:16:45,716 --> 01:17:08,156
+Order sınıfımız, benzersiz bir kimliği vardır. Order ID gibi. Entity varlık olarak görev yapılır. Value Object dediğimiz değer nesnisi, burada benzersiz bir kimlik yoktur. Sadece değer koleksiyonlarından oluşur. Burada mesela teslimat bilgilerini yer aldığı sınıf.
+
+448
+01:17:08,500 --> 01:17:26,320
+Adresi, zamanı, teslimatın. O sıradaycı değer aldığı için varia objektör aslında faktissel kalıp olarak. Servisimiz artık order servisimizde. Buradan aslında yönetilir diğer sınıflar. Buradan başlatılır iş mantığı diyebiliriz.
+
+449
+01:17:35,380 --> 01:17:54,380
+O zaman bizim bu Faktörü kalıbı ile, mesela Order Faktörü sınıfı altında, mesela Create Static metodu ile daha düzenlenebilir hale getirmeye yarayan bir kalıp, taktiksel kalıp.
+
+450
+01:17:58,739 --> 01:18:08,979
+Veri tabanını soyutlayan, işlemlerini soyutlayan, veri tabanında bizim işlem yapmamızı sağlayan, veri ekleme, çıkarma, güncelleme gibi kalıptır.
+
+451
+01:18:10,739 --> 01:18:12,739
+Taktiksel kalıplar da bu şekildeydi.
+
+452
+01:18:15,019 --> 01:18:18,539
+Genel anlamda Domain Drive Design avantajları modülerlik sağlıyor.
+
+453
+01:18:19,328 --> 01:18:32,328
+Bizim alt alanlara böldük ilk önce stratejik kalıbımızla. Son onun sınırlarını belirlediğimiz için sınırlı bağlamlarla daha iyi organize etmiş olduk uygulamamızı.
+
+454
+01:18:33,688 --> 01:18:45,148
+Anlaşılabilirliğini arttırdık. Çünkü her bir domain model gerçek dünyadaki bir kavrama karşılık geliyor. Test edilebilirliğini arttırdık taktiksel kalıplarla.
+
+455
+01:18:47,060 --> 01:18:52,560
+Ve aynı şekilde kodun daha iyi genişletilmesini, estetik sağlayan bir yapı oluşturduk.
+
+456
+01:18:54,560 --> 01:19:05,420
+Sonuç olarak, Domain Drive Design, bizim iş mantığımız karmaşıklaşırsa kullanmamız gereken bir metodoloji. Bu kullanılıyor yani Domain Model'de.
+
+457
+01:19:05,684 --> 01:19:15,484
+Stratejik kalıplarımız mantıksal alt alanlara büyüyor. Mantıksal kalıplarımız ise o bizim domain modeldeki sınıflarımızı, birleşenlerimizi düzenleyen kalıplar.
+
+458
+01:19:17,284 --> 01:19:27,623
+Domain Drive Design'in sudduğu Boundless Context ve Aggregate gibi kavramlar servislerimizi daha iyi duruma getirip, bağımsız duruma getirmeni sağlıyor.
+
+459
+01:19:27,623 --> 01:19:31,923
+Bu Aggregate bir sonraki konuydu. Ona onun için girmeyeceğim.
+
+460
+01:19:32,435 --> 01:19:34,895
+Dinlediğiniz için teşekkürler.
+
+461
+01:19:38,804 --> 01:19:43,804
+Biz de teşekkür ediyoruz [öğrenci]. Şimdi [öğrenci] sıra sende.
+
+462
+01:19:43,804 --> 01:19:50,475
+Sesimi alabiliyor musunuz? Evet, gayet net geliyor bana. Ekran paylaşıyorum.
+
+463
+01:20:00,467 --> 01:20:01,407
+Evet, geldi.
+
+464
+01:20:03,347 --> 01:20:15,527
+Herkese merhaba. Bugün az önce arkadaşımızın anlattığı Domain Driven Design'ın bir parçası, bir bütünü olan eventlerin yayınlanması alanında bir sunum gerçekleştireceğim.
+
+465
+01:20:17,427 --> 01:20:25,707
+Sunumun içeriği bazı kısımlarda biraz kod incelemesine de dayanacak. Çünkü konuyu anlamanın onun için daha iyi olacağını düşündüm.
+
+466
+01:20:26,131 --> 01:20:38,371
+Bir de aslında Domain Driven Design'ın bir parçası olduğu için çok anlatacağımız uzun bir konuya da sahip değiliz. Onun için inceleme ve onun detaylarına inme üzerine olacak.
+
+467
+01:20:39,771 --> 01:20:49,731
+Öncelikle event tanımı yapılıyor bizim kaynak kitabımızda. Burada bizim kullandığımız tanım bir olayın olması veya dikkat eder bir durumun meydana gelmesi.
+
+468
+01:20:53,939 --> 01:21:12,259
+State'lerin değişmesi olarak, bir durumdan diğer duruma geçiş olarak tanımlamıştık. Bizim kullanacağımız tanımlar bunlar olacak. Az önce de belirttiğim gibi Domain Driven Design'ın bir parçası. Bu iş alanında meydana gelen önemli bir durumunu temsil ediyor.
+
+469
+01:21:13,219 --> 01:21:20,259
+Aşağıda 3 tane örneğimiz var. Bunları zaten sunumun diğer kısımlarını daha detaylı şekilde inceleyeceğiz.
+
+470
+01:21:20,659 --> 01:21:40,059
+Bunlar dikkat eder durumlar olarak kastettiğimiz şeyler. Sipariş sisteminde, siparişlerin oluşturulması, iptal veya gönderilmesi gibi işlevler. Burada genelde dikkat edilmesi gereken eventlerin geçmiş zaman cümlesi olarak adlandırılması. Onu da zaten diğer yöntemlerde detaylı olarak inceleyeceğiz.
+
+471
+01:21:41,000 --> 01:21:44,319
+Domain eventler, aggregate'lerle ilişkili oluyor.
+
+472
+01:21:44,819 --> 01:21:51,219
+Egregatlerde, Domain Driven Design'de tutarlık ve değişim yönetelim.
+
+473
+01:21:51,219 --> 01:22:06,219
+Burada Domain Event paterni ile ilgili küçük bir cümle ekledim. Bu Egregat'in oluştuğunda önemli bir durum değişikliğine uğradığında Domain Event yayınlanmasını vurguluyor bu paternimiz.
+
+474
+01:22:08,340 --> 01:22:28,180
+İş alanında meydana gelen değişiklikleri izlemek ve iletişim kurmak açısından önem arz ediyor. Bu da bize ölçeklenebilir ve denetlenebilirliği sağlıyor ve sistem birleşenlerin aslında birbirine bağımlılıklarını azaltma gibi bir avantaj da sağlayabiliyor.
+
+475
+01:22:28,740 --> 01:22:35,620
+EGG tarafından yayınlandığını söylemiştim. Burada aşağıda bir örneğimiz yer alıyor.
+
+476
+01:22:36,275 --> 01:22:56,155
+Create Order isimli bir metodumuz var burada. Burada Domain Event'e ad olarak, liste olarak tutulma durumunu gösterdim. Şurada da çok basit tabi bu ifadeler şu anda. Daha detaylı incelemelerini birazdan gerçekleştireceğiz. Burada da Event Handler'ı görüyoruz.
+
+477
+01:23:01,043 --> 01:23:15,923
+Burada baktığımızda, agregatlerin durum değişikliklerini diğer taraflara yetmesinde domain eventlerin güçlü ve etkili olduğundan bahsetmiştik. Bunları neden kullandığımızı ve hangi ihtiyaçları karşılayacağından biraz bahsetmek istiyorum.
+
+478
+01:23:16,500 --> 01:23:39,619
+Son kullanıcının davranış analizlerinde kullanılabiliyor. Bu şu anda mevcut ticaret sitelerinde kullanılan bir yöntem. Fakat eventler üzerinden kullanılıyor mu, bu güncellenen yeni teknolojilerle değiştirilmiş de olabilir. Ama tabii ki hala kullanılan sistemler var. Örneğin bir ürünü beğendiğinizde, sepete eklediğinizde aslında bir event gerçekleştirmiş oluyorsunuz, sepete eklendiği eventi.
+
+479
+01:23:40,115 --> 01:23:59,155
+Burada hangi üründe ne kadar gezdiğinizde bu eventi ne kadar çağrıldığı ile ilgili iş analizlerinin analizler yaptığı durumlar vardı. Bu da aslında size kullanıcının analizlerini analiz etme, ona göre ürün sunma veya iş sistemlerini geliştirme gibi avantajlar sağlayabiliyor.
+
+480
+01:24:00,215 --> 01:24:06,175
+Bu da sistem. Bir diğer konuda domen eventliklerinin takibiyle sistem doğruluğunun izlenmesi.
+
+481
+01:24:06,591 --> 01:24:28,152
+Burada sistemin beklenmeyen bir durumla döndürmesi durumunda eventler üzerinden hata tespitinin yapılabilmesini sağlıyor. Geri bildirim gönderme aslında bu alanda en çok kullanılan sebeplerden biri. Bunun en çok kullanılma sebeplerinden bir tanesi. Şurada bir aşağıda örneğini de ekledim.
+
+482
+01:24:28,659 --> 01:24:49,260
+ATM'den para çekilmesi durumunda bir tutar giriyorsunuz ve bunu check komutu verdiğinizde aslında bir event göndermiş oluyorsunuz. Bu event de tutuluyor ve size kullanıcıya bir geri bildirim yapılıyor. Yani paranız sayılıyor veya hazırlanıyor gibi bir bildirim görüntüleniyor. Burada event mantığı kullanılabilir.
+
+483
+01:24:49,876 --> 01:25:11,136
+Diğer iş süreçlerin tetiklenmesi olarak bahsettiğimde bir ödeme onaylandığında, sisteme girdiğinizde sipariş hazırlama sürecinin başlatılması. Çünkü bu sürecin başlatılması için aslında ödemenin onaylanma eventine ihtiyaç duyuluyor. Yani aslında o event başka bir sistemi, başka bir sürecin trigger'ı olmuş oluyor.
+
+484
+01:25:12,307 --> 01:25:36,467
+Sistem içindeki diğer bileşenlerin tetiklenmesi, şuradaki bahsettiğim aslında bir dış sistemin tetiklenmesi içeriyor. Burada da sistemin içerisindeki bileşenlerin tetiklenmesinden bahsettim. Bir ayar değişikliği yaptığımızda dosyaya yaz metodunun çağrılması gibi. Uygulama mimarisinde birçok avantaja elde ediyoruz bu sayede.
+
+485
+01:25:37,332 --> 01:25:44,252
+İş süreçlerini optimize etmemiz, veri tutarlarını korumamız ve User Experience'ın geliştirilmesi alanlarında.
+
+486
+01:25:47,052 --> 01:25:53,972
+Buraya geçtiğimizde adının genellikle bir geçmiş zaman fiilini kullanılarak oluşturulduğundan bahsetmiştim.
+
+487
+01:25:54,732 --> 01:26:04,732
+Domain event sınıfı aşağıda bahsettiğim özellikleri içeriyor. Burada en olması gereken ya da önem arz eden metaveriler oluyor.
+
+488
+01:26:04,783 --> 01:26:16,323
+Anlamlı özellikler diye bahsettiğimizde, eventin içerdiği bilginin ifade eden özellikler aslında bahsettiğimiz, yani temel özellikler olarak adlandırabiliriz.
+
+489
+01:26:16,323 --> 01:26:31,203
+Meta verilerinde de event ID'si, timestampı gibi ek bilgiler yer alıyor. Bu da bize zaten timestamp'tan da anlaşılacağı üzere denetim ve izleme süreçlerinin kolaylaştırılmasını sağlıyor.
+
+490
+01:26:32,020 --> 01:26:48,420
+Aynı zamanda kullanıcı kimliği kısmı da var. Bu bazı durumlarda olmayabiliyor. Yani bunu olabilir olarak ekledim. Olayı tetikleyen kullanıcının kimliği gibi bilgiyle geçirebiliyor. Fakat bilinmesinin gerekli olmadığı veya kullanmadığımız durumlarda yer almayabiliyor.
+
+491
+01:26:50,899 --> 01:27:12,039
+MetaVeriler iki yaklaşımla ilanılabiliyor. Bir olay nesnesi içinde, EventObject. Bu doğrudan domain eventin bir parçası oluyor. Diğeri de Envelope, yani Türkçeleştirilmiş zarf yapısı kullanarak burada bir Envelope nesnesiyle sarılıyor MetaVeriler.
+
+492
+01:27:12,500 --> 01:27:34,579
+Ve Domain Event Envelope sınıfı mesela aşağıda gördüğümüz üzere bunun içerisinde bulunuyor. Az önce bahsettiğim mesela Timestamp, ID ve Event'in nesnesi aynı Envelope sınıfında tutuluyor. Bu generik bir sınıf olduğundan yani genel bir sınıf herhangi bir türde Domain Event'i sarmalayabiliyor.
+
+493
+01:27:36,148 --> 01:27:54,448
+Burada Event Enraignment'dan, Event Nisesi'nin tüketiciye gerekli tüm bilgileri sağlayacak şekilde detaylandırılmasından bahsettik. Bu aslında Event'in servisten ek bilgi talep etmesinin ihtiyacını ortadan kaldırıyor.
+
+494
+01:27:55,444 --> 01:28:11,064
+Şurada sunumun ilk başta verdiğimiz örneğine ele alacak olursak bir order credit, yani sipariş oluşturulma durumu. Siparişin oluşturulduğu durumu zaten adından anlaşılacağı üzere ifade ediyor ve temel bilgilerini içeriyor.
+
+495
+01:28:11,304 --> 01:28:22,804
+Fakat burada olay tüketicisi, order restore service, siparişin işlenmesi için daha fazla bilgiye ihtiyaç duyabiliyor.
+
+496
+01:28:23,252 --> 01:28:49,672
+Burada iki tane yöntem, bu aslında bizim sorunumuz. Burada da iki yöntem çözüm olarak sunulabiliyor. İlk yönteme baktığımızda bir servis talebi. Bu bilgileri eventin kaynağından sorgulayabiliyor. Fakat bu da bize her seferinde bir sorgu göndermemiz gerekliliğini ortaya çıkartıyor. Dolayısıyla sistemin performansını yavaşlatan bir unsur olarak ortaya çıkıyor.
+
+497
+01:28:50,228 --> 01:29:17,447
+İkinci yöntem de eventin kendisine tüketiciye gerekli olan bilgileri dahil etmek. Şurada örneğinden anlaşılacağı üzere order eventin implement edilmiş bir order created sınıfı bulunuyor. Burada tüketicinin ihtiyaç duyduğu tüm bilgiler yer almakta. Bu da ikinci yöntem olarak yer alıyor. Fakat burada da şöyle bir durum, dezavantaj ortaya çıkıyor.
+
+498
+01:29:18,036 --> 01:29:35,396
+İlk yöntemde olan sorunların önüne geçmiş oluyoruz. Fakat bu da bakım maliyetlerini çok arttırıyor. Çünkü gereksinimler değiştikçe event sınıfının içeriğini de değiştirmemiz gerekiyor. Dolayısıyla bunun da bu şekilde bir problemi var.
+
+499
+01:29:37,076 --> 01:29:43,256
+Domain eventlerinin tanımlanması. Bunu iki başlıkta anlatacağım.
+
+500
+01:29:43,712 --> 01:30:10,712
+Birincisi gereksinimlerden yola çıkma. Bu zaten en temel yapı taşı olarak söylenebilir. Bir olay olduğunda diğer bir olayı yap gibi ifadeler kullanılıyor. Ve bunun ardından domain'i ben çıkartılıyor. Aşağıda bir örnek oluşturduğum. Yemek kuryoya teslim edildiğinde tüketiciye yola çıktı bildiriminin gönderilmesi. Yani bir olay olduğunda diğer bir olayın gerçekleşmesini ifade eden bir gereksinim.
+
+501
+01:30:11,024 --> 01:30:17,744
+Burada Domain Event de dağıtıma çıktı olarak yer alabilir ve ona göre implementasyonu sağlanabilir.
+
+502
+01:30:20,144 --> 01:30:24,784
+Şuraya geldiğimizde bu ikinci yöntem, Event Storming yöntemi.
+
+503
+01:30:25,784 --> 01:30:31,504
+Bu biraz daha popüler ve aslında şu andaki iş süreçlerine daha uyan bir yöntem.
+
+504
+01:30:31,956 --> 01:30:56,175
+Burada büyük sistemler için de kullanılabilir. Tabii küçük sistemler için gereksinim analizi yapmak belki daha hızlı bir şekilde çözüme gitmeyi kolaylaştırabilir. Fakat büyük sistemlerde domain ekspertler bir araya getiriliyor. Aslında bir brainstorming gibi bir ortam yaratılıyor. Yani beyin fırtınası ortamı gibi bir ortam. Burada büyük bir beyaz tahta veya masa.
+
+505
+01:30:56,659 --> 01:31:01,159
+Ardından renkli yapışkan notlar elde ediliyor.
+
+506
+01:31:01,159 --> 01:31:08,659
+Ve bundan sonra sıralı olarak, şurada birazdan anlatacağım, Event Storming adımlarına başlanıyor.
+
+507
+01:31:08,659 --> 01:31:15,659
+Burada olaylar, eventler, commandler ve aggregateler hızlı bir şekilde modelleniyor.
+
+508
+01:31:15,859 --> 01:31:38,659
+Fakat zaman akışı kaba bir şekilde oluşturuluyor. Yani detaylı bir analizden ziyade sistemin akışını gösterecek yönde. Burada ilk adım olarak bir brainstorm eventi var. Domain Expertler, eventler hakkında beyin fırtınası yapılıyor. Yani sistemin hangi eventlere ihtiyaç duyabileceği konusunda beyin fırtınası yapıyorlar.
+
+509
+01:31:39,444 --> 01:32:00,584
+Bu eventleri turuncu renkli post-itlere yazıyorlar. Genellikle işte dediğim gibi geçmiş zaman cümlesi şeklinde oluyor. Burada bir örneğini görüyoruz. Yazılan eventlerde bir zaman çizelgesine kabaca bir şekilde olacak şekilde tahtamıza yapıştırılıyor.
+
+510
+01:32:04,576 --> 01:32:28,095
+Event Trigger'larının belirlenmesi. Burada Trigger'ların belirlenmesi için çeşitli sorular sorulabiliyor. Bu event bir kullanıcı eylemi ve elemi tetikleniyor. Bu aslında bizim az önce bahsettiğim event, command ve aggregate demiştim. Event turuncu postitlerle. Command'larda mavi yapışkan notlarla. Şurada bir örneğini görüyoruz ve aşağıda.
+
+511
+01:32:28,692 --> 01:32:43,271
+Burada istihbaratçı ver ve çağrı sonlandır olarak komutlar görünüyor. Burada şurada sarı post-it ile gösterilen aktörümüz oluyor. Yani bunun bir kullanıcının yaptığı anlamına geliyor bu komutu.
+
+512
+01:32:44,083 --> 01:32:59,604
+Şuradan anlatsam daha iyi olacak gibi. Şurada yeşil olarak gösterilen sipariş yazıyor mesela. Bu farklı sistemlerin ya da kullanılacak UI diyebiliriz. Bir arayüz ifade ediyor. Yani burada sipariş arayüzünü kullanacağı aslında gösterilmiş oluyor.
+
+513
+01:33:00,503 --> 01:33:09,923
+Bunun haricinde şurada turuncu postitlerle eventlerimiz yer alıyor. Sipariş analiz edildi, e-posta gönderildi gibi ya da aşağıda çağrıyı sonlandırıldı.
+
+514
+01:33:11,764 --> 01:33:28,764
+Dış bir sistem tetiklendiği zaman bu mor post-itlerle gösteriliyor. Bunun haricinde şurada pembe post-itler var. Bu aslında başka bir sistemi ifade ediyor. Yani orada bulunan event expertlerin...
+
+515
+01:33:29,716 --> 01:33:57,636
+Bilgi sahibi olmadığı alanlarda ya da daha karmaşık, farklı bir yapıya sahip sistemleri şurada pembe şekilde gösteriyorlar. Ya da kimsenin bir fikri yoksa. Çünkü orada bulunan kişilerin sadece mesela burada da belirtildiği üzere tedarikçi sistemi deyip geçilmiş. Fakat bu kendi içerisinde ayrı bir sistem olduğundan ve oradaki katılımcılar bunun hakkında da ayrı bilgiye sahip olmadığından böyle genel bir gösterim yapılıyor.
+
+516
+01:33:57,716 --> 01:34:17,616
+Egregate'lerin belirlenmesi kısmı var. Bu da üçüncü aşamayı oluşturuyor. Her komutu işleyen ve karşılık gelen event oluşturan egregate'ler belirleniyor. Bu da sarı yapışkan notlarla temsil ediliyor. Bu da birkaç saat içerisinde aslında bir toplantı ortamı oluşturulduğunda.
+
+517
+01:34:18,047 --> 01:34:25,607
+Sistemin genel bir modelinin çıkartılmasını, genel bir yaklaşımın sağlanmasını ortaya koyuyor.
+
+518
+01:34:29,076 --> 01:34:40,396
+Şöyle, burada bir örnek ekledim. Şurada agregatlerin sarı olarak az önce söylemiştim belirtildiğini de zaten şurada bir legendta görüyoruz.
+
+519
+01:34:41,336 --> 01:34:48,896
+Burada create new ticket diyor. Mesela user şurada bir command veriyor. Mavi post-it ile gösteriliyor.
+
+520
+01:34:48,896 --> 01:34:55,556
+Bunu da kullanacağı, yani bunu yapacağı, bu komutu vereceği UI da TicketMachineUI oluyormuş.
+
+521
+01:34:55,935 --> 01:35:20,115
+Buradaki event'ımız da Ticket Created oluyor. Ardından buradaki park sistemini şu anda oluşturmuşlar. Çeşitli iş süreçleri aynı mantıkla ilerliyor. Bu da aslında üç kısmı bölünmüş. Ticket, Meshim, Parking ve Payment olarak. Bu da basit bir sistemin aslında bu yöntemler nasıl modellendiğini gösteriyor.
+
+522
+01:35:21,684 --> 01:35:28,643
+Domain Event'lerin oluşturulması kısmına değinecek olursak, Domain Event'ler Aggregate Life tarafından yayınlanıyor.
+
+523
+01:35:28,643 --> 01:35:36,304
+Yani aslında şöyle düşünebiliriz, bir sunumu sonunda detaylı bir şekilde inceleyeceğiz.
+
+524
+01:35:36,463 --> 01:35:43,463
+Fakat sadece bu kısımda ilgili kısmından bahsedeyim. Bir kitap ödünç sistemi düşünelim kütüphaneden.
+
+525
+01:35:43,840 --> 01:36:05,599
+Burada mesela aggregate'imiz kitabın kendisi oluyor. Çünkü onun durumları değişiyor. Yani ödünç alınma durumu mesela burada değişiyor. Bu da eventleri aslında aggregate'lerin yayınladığı anlamına kavramsız olarak bu anlama geliyor. Durumunun ne zaman değiştiğini biliyor ve buna uygun olarak hangi eventin yayınlanması gerektiğini belirliyor.
+
+526
+01:36:06,515 --> 01:36:29,036
+Egregate'ler doğrudan bir mesajlaşma API'yına çağırması uygun bir çözüm olarak sunulmuyor. Bunda sebebi altyapıyla iş mantığını iç içe geçirmesi. Bunda bir yöntem izleniyor. Sorumlulukların yani Egregate ile servise iki kısma bölünmesi şeklinde bir öneri, bir yaklaşım da bulunuyor.
+
+527
+01:36:29,716 --> 01:36:34,916
+Aggregate'ler burada durum değişikliğinde eventler üretiyor ve servise gönderiyor.
+
+528
+01:36:34,916 --> 01:36:41,916
+Servis de bunları kullanarak mesajlaşma API'ye erişim sağlıyor ve eventleri publish ediyor.
+
+529
+01:36:41,916 --> 01:36:47,516
+Şurada bir kod örneği bulunuyor, ticket sınıfı.
+
+530
+01:36:47,516 --> 01:36:55,115
+Bir aggregate, durum değişikliği sırasında ürettiği eventlerin bir liste olarak tutulduğu gösteriliyor.
+
+531
+01:36:55,475 --> 01:37:05,855
+Şurada gösteriliyor. Bunu da return olarak dönüyor. Burada except metodu var. Bunu da birazdan bahsedeceğiz.
+
+532
+01:37:07,444 --> 01:37:18,544
+Örneğin devamında event publish gözlemleniyor. Şurada Domain Event Publisher, Publisher'ı çağırarak aslında bunu yayınlıyor. Bu da Kitchen Service'i.
+
+533
+01:37:18,544 --> 01:37:31,564
+Yani şöyle oluyor, Aggregate az önce bahsettiğim gibi event'i döndürüyor. Servis de onun metodunu çağırarak event'i publish ediyor. Temel mantığı buna dayanıyor.
+
+534
+01:37:34,003 --> 01:37:58,904
+Bunun haricinde güvenilir bir şekilde eventlerin yayınlanması önemli bir konu. Burada çünkü şöyle bir durum oluşuyor. Veri tabanı işlemleriyle ilişkili oluyor aslında. Çünkü bir event yayınlandığında veri tabanında gerekli işlemin gerçekleşmemiş olabileceği bir durumla karşılaşılabilir. Ya da tam tersi. Dolayısıyla bu da aslında sistemin yanlış çalışmasına sebebilecek.
+
+535
+01:37:59,296 --> 01:38:11,576
+Dolayısıyla Veritabani işlemleri ile bir event işlemlerinin aynı anda yapılması sağlanıyor gibi anlatabilirim.
+
+536
+01:38:11,576 --> 01:38:22,716
+Şurada aslında detaylı bir şekilde de bahsedeceğiz. Transactional Messaging ile güvenilir yayın. Burada tek bir asit işleminde birleştiriliyorlar.
+
+537
+01:38:23,007 --> 01:38:44,908
+Dolayısıyla ya birlikte gerçekleşiyorlar ya da birlikte gerçekleşemiyorlar. Herhangi bir tanesi başarısız olursa, diğeri gerçekleşmiyor. Bu da Domain Event'lerin veri tabanında Outbox isimli özel bir tabloya kaydediliyor.
+
+538
+01:38:45,876 --> 01:38:51,116
+Veri tabanı işlemi tamamlandıktan sonra da eventler bir mesaj aracısına gönderiliyor.
+
+539
+01:38:52,556 --> 01:38:58,956
+Şurada aslında bahsettiğim kısımlar bir framework üzerinden örneklendirildi.
+
+540
+01:38:59,756 --> 01:39:07,036
+Burada ekstra olarak söyleyebileceğimiz işi yok. Az önce konuştuğumuz işlemler gerçekleştiriliyor.
+
+541
+01:39:08,556 --> 01:39:10,156
+Şurada...
+
+542
+01:39:10,676 --> 01:39:16,015
+Domain Event'lerin mesaj aracısına mesaj olarak yayınlanma kısmını gösteriyoruz.
+
+543
+01:39:16,015 --> 01:39:24,176
+Event'lerin eleye alınmasını kolaylaştırmak için, şurada Domain Event Dispatcher mekanizması sunuyor.
+
+544
+01:39:24,176 --> 01:39:27,676
+Ve uygun hantlerlerle yönlendiriyor.
+
+545
+01:39:27,676 --> 01:39:36,652
+Şurada Kitchen Service Event Consumer yer alıyor. Şurası bizim veri tabanı alanımız oluyor.
+
+546
+01:39:37,011 --> 01:39:42,211
+Buraya Domain Event Handler'da eventlerin işte Handler olduğu kısım yer alıyor.
+
+547
+01:39:42,211 --> 01:39:53,612
+Ve şuradaki en son, Restoran Service Revised Menü de bizim aslında restoran menüsünün sürekli olarak güncel kalmasını sağlayan işlevimiz oluyor.
+
+548
+01:39:55,731 --> 01:40:00,000
+Sonuç olarak iş mantığını modellemek ve servis arasıyla...
+
+549
+01:40:00,000 --> 01:40:21,920
+İletişimi sağlamak için güçlü bir araç, yani güçlü bir yanıtım olarak kullanılıyor. Karmaşık bir süreçlerini düzenlemeye ve sistem tutarlarını izlemeye, takipe ve buna göre aksiyon almayı sağlıyor. Aynı zamanda kullanıcı etkileşimli arayüzlerde veya kullanıcı etkileşimine bağlı olarak iş süreçlerinin geliştirilmesinde avantajlar sağlıyor.
+
+550
+01:40:22,484 --> 01:40:35,144
+Şurada az önce bahsettiğim kitap ödünç alma sisteminden bir kod incelemesi kısa bir şekilde yapacağız. Aslında bahsettiğimiz tüm olayların burada çok sadeleştirilmiş bir şekilde incelemesini yapmış olacağız.
+
+551
+01:40:36,083 --> 01:40:44,944
+Burada bir kitap ödünç alındığı eventimiz domain eventten implement ediliyor. Yani bir event olduğu bu sınıfın belirleniyor.
+
+552
+01:40:45,460 --> 01:41:02,960
+Bir event sınıfı oluşturuluyor. Burada kitap hali, kullanıcı hali ve alış tarihi olarak özellikleri belirleniyor. Constructor yer alıyor ve burada getleri yazılıyor. Burada aslında bizim event sınıfımızın tanımlanması yapılıyor diyebiliriz.
+
+553
+01:41:04,564 --> 01:41:14,564
+Bunun haricinde bir de aggregate'imiz vardı. Aggregate'ler zaten eventleri oluşturan, yayınlayan parametreydi.
+
+554
+01:41:14,564 --> 01:41:25,564
+Burada kitabımız bizim aggregate'imiz oluyor. Şurada göreceğiniz üzere Ödünçal tetiklenen bir domain event olarak yer alıyor.
+
+555
+01:41:25,564 --> 01:41:29,564
+Yani durumu değiştiğinde bu event listeye ekleniyor.
+
+556
+01:41:29,844 --> 01:41:42,063
+Bu eventler dışarıya, yani servise gönderiliyor. Az önce bahsettiğimiz işte araya bir aggregate'ler ve servis olarak ayrılıyor dediğimiz kısım aslında bu oluyor. Return olarak eventi dönüyor.
+
+557
+01:41:43,503 --> 01:41:54,183
+Buraya geldiğimizde bir kitap servis sınıfımız bulunuyor. Veritabanına erişim kısımları yer alıyor ve burada tanımlamasını yapıyoruz yayınlayıcımızın.
+
+558
+01:41:54,420 --> 01:42:07,920
+Ve burada ödün çal metodunun çağrılması ve kitabın gerekli bilgilerin işte ID gibi alınması ve publish edilmesi kısımlarını görüyoruz. Bu da aslında servisin sağladığı bir özellik.
+
+559
+01:42:22,176 --> 01:42:32,676
+3 temel prensibi ayırabiliriz burada. Şurada Domain Event Publishing Interface'ının Publishing'in içeriği gösteriliyor.
+
+560
+01:42:32,676 --> 01:42:47,376
+Burada bu yayınlandıktan sonra aşağıda da nasıl tutulacağı ve kullanıcıya ya da sisteme artık nasıl tercih edilirse, nasıl gösterileceği basit bir kılız içerisinde gösterilmiş oluyor.
+
+561
+01:42:49,011 --> 01:42:50,571
+Dinlediğiniz için teşekkür ederim.
+
+562
+01:42:53,551 --> 01:43:00,051
+Evet, biz de teşekkür ediyoruz. Ve son bugünkü sunumumuz [öğrenci].
+
+563
+01:43:01,911 --> 01:43:04,851
+Evet hocam, merhaba. [öğrenci]'e atacağım.
+
+564
+01:43:10,420 --> 01:43:26,155
+Ekranım geliyor mu? Evet. Merhabalarım, ben [öğrenci]. Bugün event, sorsak ve sagaların beraber kullanımıyla ilgili bir tutulum yapacağım. Arkadaşlarım bugün anlattı ama yine de konumun içerisinde olduğu için ben...
+
+565
+01:43:27,315 --> 01:43:48,935
+Saga'nın ne olduğu ile ilgili, bir de Event Force'in ne olduğu ile ilgili kısaca bir giriş yapma istiyorum. Saga, monolitik bir yapı yerine yapılan işlerin servis bazı ayrılmasını ve her bir servisin kendi işlemlerini yönetmesini ve kişisel işlemi tamamlandığı zaman bir event yenilerek sonraki servis tepkildiği yapılardır.
+
+566
+01:43:50,387 --> 01:43:56,988
+İki çeşidi var. Bunlardan bir tanesi kareografi bazlı sagalar, bir diğeri de orkestratör bazlı sagalar.
+
+567
+01:43:58,427 --> 01:44:06,588
+Kareografi tabanlı sagalarda merkezi bir yönetim noktası yok. Servisler kendi arasında domeneventler üzerinden haberleşiyor.
+
+568
+01:44:07,468 --> 01:44:10,387
+Batı takışlar için kullanılması...
+
+569
+01:44:11,155 --> 01:44:19,155
+Basit akışlar için kullanılması iyi. Ek servis oluşturmayı gerektirmiyor. Öteki saga türünde göreceğimiz bir orkestrelik de servis yok.
+
+570
+01:44:19,935 --> 01:44:32,655
+Ve her bir servislerin sorumluluğu kendi içinde olduğu için, servis yani sistemin genel sorumluluğu servislerin üzerine dağıtıldığı için tek bir hata noktası yok.
+
+571
+01:44:32,655 --> 01:44:38,336
+Yani single fail point yok. Bu da ne demek oluyor? Yani bir servis çöktü zaman tüm sistemin çöktüğü bir nokta yok.
+
+572
+01:44:38,676 --> 01:45:03,536
+Ancak bunun dezavantajları da var. Bunlar her servisin kendi eventlerini yönetiyor ve diğer servislerin de onların eventlerinden bağımlı yaşadığı için ekstra bir, yani yorum bir servis eklemek istediğimiz noktada sistemin takibini, hangi servisle hangi serviste haberleştiğini takip etmek zor olabileceği için yeni servisler eklendikçe sistemin kararlarıyla artıyor.
+
+573
+01:45:04,307 --> 01:45:16,307
+Döngüsel bağımlılık riski var. Bir servise bağımlı, bağımlı olduğu servis, diğer servise de bağımlı olabilir. Bu da bize döngüsel, circle'a dependent riski taşıyor.
+
+574
+01:45:16,307 --> 01:45:24,307
+Ve bir işlemi simüle etmek için, yani sistemi komple test etmek için Türk servisinin ayakta olması gerekiyor.
+
+575
+01:45:25,779 --> 01:45:43,479
+Bunlara kısım olarak da bir merkezi olan orkestratör tabanlı sagalar mevcut. Bu orkestratör tabanlı sagalar her sistemin kendi yönetmesinden ziyade bir tane orkestratör ile tüm sistemin yönetilmesi üzerine kurulu.
+
+576
+01:45:43,479 --> 01:45:49,679
+Çok katılımcılığı veya zamanla yeni katılımcılığına eklenebileceği karmaşık iş akışları için ideal.
+
+577
+01:45:52,564 --> 01:46:09,684
+Servisler birbirleriyle iletişim kurmak yerine orkestratör servisinde servis geri orkestratörle daha sonra orkestratör yapılan eventten sonra tetiklenecek servisi haberleştiği için tek bir haberleşmek zorundayız.
+
+578
+01:46:09,684 --> 01:46:15,604
+Ve diğer servislerin orkestratör dışındaki servislerle bir iletişim kurmasına gerek kalmıyor.
+
+579
+01:46:15,784 --> 01:46:19,464
+Bu da öncelikle circle'un dependansiyeli riskini ortadan kaldırıyor.
+
+580
+01:46:20,627 --> 01:46:39,927
+Ve her bir servisin yaptığı iş, sadece eventi işlemek ve yanıt dönmek olduğu için de sistemin yönetilebilirliğini arttırıyor. Ancak bunun da gene dezavantajları var. Öncelikle kurgulamak için ilk başta orkestratör kısmını ayrıntılı olarak tartanmak gerekiyor.
+
+581
+01:46:39,927 --> 01:46:45,187
+Onun dışında bir diğer dezavantajı da servis.
+
+582
+01:46:46,100 --> 01:46:59,800
+Tüm servisleri yönettiği için bu orkestratör servisimiz fail olursa single fail point bize sunmuş oluyor. Çünkü orkestratörümüz çöktüğü zaman tüm servisimiz, tüm sistemimiz çökmüş olacak.
+
+583
+01:47:01,120 --> 01:47:12,880
+Onun için de diğer konuda event sourcing. Event sourcing verileri direkt değiştirmek yerine veri üzerine gerçekleşen tüm yüklemlerin tutulduğu bir sistem.
+
+584
+01:47:13,492 --> 01:47:29,311
+Burada yapılan işlemler kaydediliyor. Yapılan işlemin sonucu olan, örneğin sipariş güncellendiği zaman, direkt sipariş güncellemek yerine sipariş güncellendiği eventi kaydediliyor. Bu kayıtın da tutuluğu yerde olay deposu, yani event store deniyor.
+
+585
+01:47:40,212 --> 01:48:00,271
+Bu konuda veri saklama noktasında direkt veri üzerinden değil de veri üzerinde yapılan eventler üzerinden dataları sakladığını düşünürsek, burada bir sipariş servisi, siparişi olaylamak için bu noktada servisleri servis arası veri bütünlüğü korumak için sagalara katılması gerekiyor.
+
+586
+01:48:01,235 --> 01:48:18,335
+İstihbarat örneğin diyelim, istihbarat servisi oluştuğu zaman müşteri servisinin güncellenmesi gerekiyor. Sonuç olarak da bunların da event source'i kullanıyor olmalarına rağmen birbirlerinin genel sistemin yönetilebilmesi için sagalara katılması gerekiyor.
+
+587
+01:48:18,335 --> 01:48:26,615
+Bu noktada kitapta dört farklı alt başlık altında toplanmıştı. Bunlardan ilki karagafi tabanlı sagaların uygulanması.
+
+588
+01:48:27,539 --> 01:48:47,420
+Event Sourcing'in temel mantığıyla koreografi tabağlı sagaların temel mantığı birbirine çok paralel olduğu için bu ikisinin birikçe kullanımı oldukça kolay. Bu noktada bir en girene güncellendiği zaman bir event yapılıyor. Başka bir kümenin de event adları yani komut ücreti için bu olayı tüketicilerin kifre kümesini güncelliyor.
+
+589
+01:48:54,868 --> 01:49:07,868
+Serbis'in yayınlamış olduğu eventi, İfleyen, yani Credit Reserve eventi yayınlanmış. Ordu Credit Eventinde de bu event tüketiliyor.
+
+590
+01:49:09,868 --> 01:49:19,724
+Bu ikisini çok iyi birlikte çalışıyor demiştik. Bunun sebebi öncelikle event sorsi için metajlaşma tabanına IPC sağlıyor olması.
+
+591
+01:49:20,115 --> 01:49:24,935
+İventler servisler arası iletişim kurmak için bir mesajlaşma mekanı ısınması sağlıyor.
+
+592
+01:49:25,935 --> 01:49:27,675
+Onun dışında mesaj tekrarını önlüyor.
+
+593
+01:49:28,135 --> 01:49:35,195
+İventler'in İden Potent yapısı sayesinde aynı mesajın birden fazla kez işlenmesini, o da taksizlikleri önlüyor.
+
+594
+01:49:35,855 --> 01:49:42,355
+İden Potent'in bir mesajın en az bir sonucunu değiştirmeden birden fazla kez işleyebilmesi anlamına geliyor.
+
+595
+01:49:42,355 --> 01:49:47,148
+Yani aynı evet birden fazla kez yayınlanmışsa ben bunu birden fazla kez...
+
+596
+01:49:47,572 --> 01:49:57,492
+Ya işlemeyeceğim, yani bir kere işlenilmesinin garansını ödeyim ya da birden fazla işlesem bile bir sonraki tekrarlı işlemeler asıl sonucu değiştirmemesi gerekir.
+
+597
+01:49:58,371 --> 01:50:05,871
+Bir de durumun atomik olarak güncellenmesini sağlıyor. İven sonuçlik bir aggregate'i güncellerken atomikliği garanti eder.
+
+598
+01:50:08,572 --> 01:50:14,871
+Ancak bu kutaylıklarına rağmen bunun hava tajları da var. Bunun bir tanesi...
+
+599
+01:50:16,275 --> 01:50:19,775
+İki amacı hizmet ediyor olması.
+
+600
+01:50:20,475 --> 01:50:24,295
+Event Sourcing'de veri üzerine yapılan değişiklikleri saklıyorduk.
+
+601
+01:50:24,355 --> 01:50:29,275
+Ancak Saga'da veri üzerine yapılan değişiklikleri diğer servislere de bildirmemiz gerekiyor.
+
+602
+01:50:31,675 --> 01:50:39,115
+Bu noktada örneğin, bir kümenin güncellenmesi, bir iş kuralında yani ama Saga içerisinde yapılan her bir event,
+
+603
+01:50:39,115 --> 01:50:42,075
+Event Sourcing'de veri üzerine yapılan değişiklikleri saklıyorduk.
+
+604
+01:50:43,667 --> 01:51:10,247
+Veri üzerinde bir değişiklik olmasa bile bir event gerçekleştiği zaman bunun haberini vermemiz gerekiyor. Örneğin bir iş kuralı çiğnendiği zaman bu bir event olarak oluşmaz hata olduğu için. Ancak Saga'da diğer sistemin diğer elemanlarında bu iş kuralının çiğnendiği gibi bir reply, bir yanıt mesajı gitmesi gerekiyor. Orkestratör tabanlı bir Saga oluşturma.
+
+605
+01:51:11,123 --> 01:51:21,843
+Orada servisin, Create Order gibi metotları iki şey yapar. Önce bir egregat oluşturur veya günceller ya da bir saga orkestrası oluşturur.
+
+606
+01:51:22,203 --> 01:51:28,763
+Servis her iki eylemi de ilk eylemi yaparsa ikinci eylemi sonunda yapılacağını garanti edecek şekilde gerçekleştirmelidir.
+
+607
+01:51:28,823 --> 01:51:37,843
+Yani burada bir transaction yapısından bahsediyoruz. Burada ilk eylem başarısız olduğu zaman ikinci eylemin de geri alınması ya da hiç yapılmaması gerekiyor.
+
+608
+01:51:38,707 --> 01:51:58,571
+Yani burada da garanti etme aşamasında servisleri kullandığı event sorun türüne biraz bağımlıyız. Bu noktada ilişkisel veritabanı kullanımı kolaylık sağlıyor. Nasıl kolaylık sağlıyor? Direkt ilişkisel veritabanlarının içerisindeki...
+
+609
+01:51:58,868 --> 01:52:14,828
+Transaction yönetim tarihinde herhangi bir hata ya da olmaması gereken bir işlem noktasında direkt rollback destekleri sağladığı için bu noktada az önce söylediğim ikisinin de tamamlanmasını garanti edebiliriz.
+
+610
+01:52:14,828 --> 01:52:18,828
+Ancak ilişkisi olmayan bir veri tabunu kullandığımız zaman...
+
+611
+01:52:19,091 --> 01:52:37,811
+Atomik bir şekilde event store güncelleyip bir tag orkestratürü oluşturamıyoruz. Çünkü noise-car veri tabanlarının transaction yapıları sınırlı. Bu sebeple serviste yayınlanan domain eventlerine cevap olarak tag orkestratürü oluşturan event antlarlar oluşturulmalıdır. Burada da bunun yapısı gözüküyor.
+
+612
+01:52:44,127 --> 01:53:09,127
+Sonra, Order Creative Event Handler'ı bu mesajı getirip, Order Creative Ordu'nun sagasını yayınlıyor. Bu noktada da, taklanmış eventlerin tekrar tekrar event handler üzerinden yayınlanmamasını garanti etmemiz lazım. Bu noktada da kitaplar bize.
+
+613
+01:53:09,268 --> 01:53:24,948
+İvent üzerinde bir ID oluşturmamızı, yani unit bir ID oluşturmamızı, event handlerında oluşturacağı TAGA üzerinde bu ID'yi kullanarak tekrarlanmış mesajları engellemesini önermişti.
+
+614
+01:53:26,768 --> 01:53:30,128
+Event for Siktifanlı bir TAGA katılımcısının eklenmesi.
+
+615
+01:53:31,060 --> 01:53:52,032
+Bir orkestasyon tabanının takı yapısına katılması gereken yeni bir servis olduğunu düşünelim. Servis, ilişkisel veri tabanını event store kullanıyorsa, az önce söylediğimiz sebeplerden ötürü mesajları atamalık olarak işlenmesi ve bunlara yanıtları göndermesi kolayca sağlanabiliyor. Ancak ilişkisel olmayan bir veri tabanı kullanıyorsa ya da farklı bir...
+
+616
+01:53:52,032 --> 01:54:07,672
+Veri tabanına bağlıysa, yani aynı transakşını yönebileceğimiz tek bir veri tabanı yoksa, aşağıdaki, yani şurada göreceğimiz ikisi sorunu incelememiz gerekiyor. Bunlardan ilki. İden Potence, yani bir mesajın en az bir kire işleneceğinin garantisi verilmesi.
+
+617
+01:54:08,979 --> 01:54:18,779
+Burada yenilen metajları algılayıp atması gerekiyor. Bunun çözümünde de mesajı işlerken oluşturan mesajdaki kimliğinin kaydedilmesi.
+
+618
+01:54:18,939 --> 01:54:22,839
+Az önce söylemiştim. Yine kitapta bu iki üç kere tekrarlanmamış.
+
+619
+01:54:24,880 --> 01:54:27,380
+Öteki sorun da atomik olarak yanıt gönderme.
+
+620
+01:54:34,420 --> 01:54:36,279
+Ancak bu da iki tane sorun doğuruyor bize.
+
+621
+01:54:38,644 --> 01:54:59,164
+Bir Saga komutu Kümen'in durumunu kesin değiştirir denemez böyle bir senaryoda. Yani az önce söylediğimiz gibi hata olması durumunda Kümen'in durumu değişmiyordu. Ancak bu noktada bu bizi bir soru yaratıyor. Bu yaklaşımda Sogar Orkestratür'ün event sorusu tabanlı katılımcılarının diğerlerinden farklı davranması gerekiyor.
+
+622
+01:55:07,188 --> 01:55:26,167
+Burada da daha iyi bir aklaçım önermişler. Bunlardan bir tanesi bir event hentleri bir küve oluşturduğunda, yani bir eğilgiyet oluşturduğunda veya güncellendiğinde event store'a küve tarafından yayınlanan gerçek olayla birlikte bir tane de sahte olay, yani bir sahte olay yayınlanmasını önermişler.
+
+623
+01:55:34,612 --> 01:55:44,612
+Örneğin, Ordered Credit Event'in eş zamanlı olarak Saga Ripli ve Quixit Event'ini oluşturuyor ve olayda yer alan verileri kullanarak yanıt mesajını oluşturuyor.
+
+624
+01:55:44,612 --> 01:55:50,612
+Bunu da Saga Orkestrütü'nün dinlediği yanıt kanalına yazıyor.
+
+625
+01:56:00,180 --> 01:56:25,079
+Metoduna bir tane komut yolluyor şu noktada. Şurada authorized komut yolluyor account'un komut kanalına. Daha sonra bu dispatcher daha sonra account service komutanı ile ilgili account en ilgiyetine bu isteği iletiyor.
+
+626
+01:56:26,676 --> 01:56:38,676
+Burada iki tane event oluşuyor bu noktada. Bunlardan bir tanesi Account Authorized. Öteki de az önce söylediğimiz Saga Requested Sahti Eventi.
+
+627
+01:56:38,676 --> 01:56:52,676
+Daha sonra Saga Requested Eventı bunu, Şuradaki Saga Requested Eventı bu, Replay, bu event isim.
+
+628
+01:56:53,779 --> 01:56:57,099
+Saga'ya bir yanı dönüyor.
+
+629
+01:57:00,756 --> 01:57:06,456
+Event Sourcing kullanarak Saga Orkestratürü uygulanması. Bir Saga Orkestratürü oluştururken,
+
+630
+01:57:06,456 --> 01:57:11,056
+...cevapmanız gereken bir soru var. Bu bir Saga Orkestratürü nasıl sürdürebiliriz?
+
+631
+01:57:11,056 --> 01:57:16,756
+Yani burada Persist olarak kullanmıştı kitapta. Ben bunu sürdürülebilecek olarak söyledim.
+
+632
+01:57:17,235 --> 01:57:31,835
+İkinci bir soru, orkestratürün durumu atomik olarak nasıl değiştirebilir ve komut mesajlarını nasıl gönderebiliriz? Üçüncü bir soru da, orkestratürün yanıt mesajlarını bilgi değiştireceğinin garantisi nasıl verilebilir? Yani idem potat bir yapının kurulacağının garantisi nasıl verebiliriz?
+
+633
+01:57:33,975 --> 01:57:44,635
+İki sorunun cevabı olarak, Saga orkestratürünün çok kutsuz bir yaşam dönüşü var. İlk olarak oluşturuluyor. Ardından Saga katılımcılarından gelen yanıtlara göre güncelleniyor. Bu nedenle,
+
+634
+01:57:45,171 --> 01:57:55,971
+Saga Orchestrator Create event ile Saga Orchestrator Update eventleri Saga Orchestrator'un durumunu yeniden oluşturmak için gereken verileri isteniyor.
+
+635
+01:57:57,971 --> 01:58:02,372
+Atomic olarak nasıl değiştirebilir ve komut mesajları gönderebilir noktasında ise,
+
+636
+01:58:02,372 --> 01:58:08,971
+burada bir Saga Orchestrator'un göndermek istediği her komut için bir Saga Komut Event isteniyor.
+
+637
+01:58:08,971 --> 01:58:10,971
+Şurada görebileceğimiz gibi.
+
+638
+01:58:11,764 --> 01:58:29,243
+Saga Komut Event'te hedef kanal ve komut netlesi gibi komutu göndermek için gereken tüm bilgileri içiyor. Yani mesajın hangi kanal ile gideceğini, hangi komut ile gideceğini buradaki Saga Kredit Event mesajı saklıyor. Daha sonra aynı zamanda event store'da kaydediliyor.
+
+639
+01:58:38,863 --> 01:58:55,264
+O kadar ilgilik anıla yönlendiriyor. Bu iki tanımlı yaklaşım komutun en az bir kişi göndereceğini garanti ediyor. En az bir kişi olduğu için de buradaki event birden fazla kere de işlenebilir ya da birden fazla aynı event yazılabilir riski de mevcut.
+
+640
+01:58:56,163 --> 01:59:05,723
+Bu noktada da en az bir kere yani sadece bir kere işleyeceğinin garantisini nasıl verebiliriz kısım geliyor. Burada da yine önceki slaytlarda da bahsetmiş oldum.
+
+641
+01:59:06,228 --> 01:59:17,548
+Bu, eventin unique bir kimliği olmasını ve bu kimliği bir yerde saklamasını, sonra bu kimlik üzerinden yeni bir event geldiği zaman da onu atlamayı öneriyor.
+
+642
+01:59:19,128 --> 01:59:24,668
+Benim anlatacaklarım bu kadar. Beni dinlediğiniz için teşekkür ederim.
+
+643
+01:59:25,768 --> 01:59:27,328
+Biz de teşekkür ederiz [öğrenci].
+
+644
+01:59:28,328 --> 01:59:33,108
+Evet, bu haftaki sunumları da tamamladık. Haftaya üçüncü.
+
+645
+01:59:34,003 --> 01:59:37,623
+Parti sunumlarla devam edeceğiz. Var mı sorusu olan?
+
+646
+01:59:38,623 --> 01:59:43,183
+Hocam, ben size düz akşam bir yaptım. Sunum bir yaptım.
+
+647
+01:59:43,963 --> 01:59:53,243
+Okey, tamam. Okey, sıkıntı yok. Yani değiştirmediğin için zaten olduğu yerde kalmış oldu. Tamamdır.
+
+648
+01:59:53,983 --> 02:00:00,000
+Bu arada hem sunum ve raporlarınız için ödevi açtım. Ayrıca final yerine geçtik.
+
+649
+02:00:00,000 --> 02:00:06,539
+Geçecek Dönem Projesi'nin tanımını da yine yükledim. Online Yıldız'dan onları da takip etmeyi unutmayın.
+
+650
+02:00:06,539 --> 02:00:16,860
+Bu da kayıtlı olduğu için dinleyenler dersin sonunda tekrardan haberdar olsun diye her ne kadar bildirimler gelse de söylemiş olalım.
+
+651
+02:00:17,920 --> 02:00:25,460
+Peki o zaman bu haftalık bu kadar. Hepinize iyi çalışmalar diliyorum. Haftaya görüşmek üzere. Hoşçakalın.
+
+652
+02:00:27,923 --> 02:00:28,684
+İyi günlardır.

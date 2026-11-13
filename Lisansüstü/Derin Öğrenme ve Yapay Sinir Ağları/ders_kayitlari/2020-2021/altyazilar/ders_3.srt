@@ -1,0 +1,2539 @@
+1
+00:03:01,012 --> 00:03:03,912
+Merhaba arkadaşlar. Günaydın.
+
+2
+00:03:04,951 --> 00:03:05,671
+Merhaba hocam.
+
+3
+00:03:05,891 --> 00:03:06,792
+Günaydın hocam.
+
+4
+00:03:07,092 --> 00:03:07,632
+Merhaba hocam.
+
+5
+00:03:07,711 --> 00:03:07,912
+Merhaba.
+
+6
+00:03:09,132 --> 00:03:12,512
+Biraz bekleyeyim dedim ama gelen olur mu?
+
+7
+00:03:13,891 --> 00:03:17,472
+Şimdi ben size birkaç şey söyleyeyim.
+
+8
+00:03:18,111 --> 00:03:19,972
+[öğrenci] buradasın herhalde.
+
+9
+00:03:20,991 --> 00:03:24,472
+[öğrenci] ne kadar Türkçe konuşabiliyorsun bana bir söyler misin?
+
+10
+00:03:29,651 --> 00:03:31,231
+[öğrenci], can you hear me?
+
+11
+00:03:32,351 --> 00:03:33,111
+Another coptu.
+
+12
+00:03:33,512 --> 00:03:36,071
+Excuse me, doctor. [öğrenci], doctor. [öğrenci].
+
+13
+00:03:36,911 --> 00:03:41,151
+Okay. How much Turkish you can talk? Can you?
+
+14
+00:03:41,691 --> 00:03:47,051
+Yeah, I talked a little Turkish, but I understand if you speak, doctor.
+
+15
+00:03:47,491 --> 00:03:55,831
+Okay. I haven't shared the slides yet because I have to correct some typos. I will do that.
+
+16
+00:04:16,915 --> 00:04:28,995
+Peki arkadaşlar, geçen hafta ne demiştik? Onları şöyle bir tekrarlayacağım. Sizler için de söyleyeyim. Slide'ları paylaşmama sebebin bir iki tane tayko hatası var üzerinde.
+
+17
+00:04:29,408 --> 00:04:48,408
+Öyle koymak istemedim. Bir gözden geçirip koymak istiyorum. Fırsat bulamadım. Bu hafta paylaşacağım slide'ları. Yine bu Yıldız'ın online dersle ilgili sayfadan paylaşırım. Orada ders notları diye bir kısım varmış. Denemedim ama paylaşılıyordur.
+
+18
+00:04:49,172 --> 00:05:11,272
+Oradan paylaşacağım. Ödevinizi de tekrar yazılı hale getirmeye çalışırım. Oraya koymayı düşünüyorum. Sizin bir sorunuz var mı? Ödeve yardımcı olacak dosya paylaşacaktım. Evet, harfleri paylaşacaktım [öğrenci]. Tamam, iyi oldu hatırlattın.
+
+19
+00:05:16,463 --> 00:05:41,183
+Online Yıldız sayfasındaki dersin sayfasında ödev kısmında paylaşayım olur mu? Bir gün veya iki gün daha rica edeceğim. Sizden hafta sonuna kadar paylaşmış olurum. Unutmuş olursam bana hatırlatabilirsiniz maille. Biraz elim dolu olunca unutuyorum. Bunları paylaşacağım. Başka sizin sormak istediğiniz bir şey var mı?
+
+20
+00:05:42,963 --> 00:05:46,584
+[öğrenci] süresini biraz uzatma şartınız var mı bu durumda?
+
+21
+00:05:48,115 --> 00:06:13,175
+Şimdi şöyle yapacağım. Olur, biraz uzatırız. Aslında belli bir kısmını diyelim ki ikinci hafta teslim edin diyeceğim. O ödevin üzerinden biraz daha çalışmaya devam edelim istiyorum. Multilayar Perseptron'a geçtiğimizde onu da aynı veriler üzerinden deneyeceğiz. Dolayısıyla ödevin bütünü zaten uzamış olacak.
+
+22
+00:06:13,684 --> 00:06:30,364
+Ama arada hiçbir şey yapmadan boş geçmeyin. Yani en sona her şeyi bırakırsanız diye sizin için kaygılanıyorum daha ziyade. Yetişmeyecektir, iyi bir şey olmayacaktır. O yüzden ara teslimleri olan biraz daha uzatılmış bir ödev olarak düşünebiliriz.
+
+23
+00:06:31,044 --> 00:06:32,444
+Tamam hocam, teşekkürler.
+
+24
+00:06:32,444 --> 00:06:40,164
+Ben açıklama koymaya çalışacağım sayfada. Başka var mı sorusu olan?
+
+25
+00:06:45,555 --> 00:06:53,155
+Peki, mevcudun yarısı geldiğine göre ben başlayayım. Slide görünüyor değil mi? Perseptron slide'ı.
+
+26
+00:06:53,655 --> 00:06:54,216
+Evet hocam.
+
+27
+00:06:54,216 --> 00:07:05,795
+Tamam. Şimdi nelerden bahsettik? Bir hızlı geçiyorum. Perseptron yapısından yani tek katmanlı ağdan bahsettik.
+
+28
+00:07:06,132 --> 00:07:20,912
+Ondan öncesinde Hepbin önerdiği tek nöronun neye benzediğinden bahsettik. Öğrenme algoritması olarak da Hep öğrenme kuralı ve Persepto'nun öğrenme kuralından bahsetmiştik.
+
+29
+00:07:20,912 --> 00:07:32,912
+Hepin bir dezavantajı vardı. Tek iterasyon çalışan bir algoritmaydı. Değil mi? Ve inputla output'u nöronun çıktısıyla girdisini...
+
+30
+00:07:32,992 --> 00:07:51,972
+Çarparak ağırlığın yeni değerini belirliyorduk. Ağırlıkta güncelleme yapıyorduk. Bunun da hem kontrolsüz, yani iteratif çalıştırırsak kontrolsüz artacak bir durum. Tek iterasyon çalıştığımızda da öğrenme için yeterli olmayan bir durum yarattığını söylemiştik.
+
+31
+00:08:00,244 --> 00:08:25,484
+Hedeflediğimiz değeri kullanıyordu. Target diye targla gösterdiğimiz. Yine inputla hedeflenen değeri çarpıp bir de öğrenme katsayısı eklenmişti. Öğrenmeyi biraz yavaşlaştırmak, kontrolsüz bir şekilde büyük ölçüde ağırlık değişimi yapmamak için kullandığımız bir katsayı eklemişti.
+
+32
+00:08:25,484 --> 00:08:27,504
+Ve iteratif çalışıyordu.
+
+33
+00:08:28,244 --> 00:08:54,004
+Öğrenme kuralını ters olaraktan veya farklı olaraktan. Ama her ikisinin de yine zayıflıkları vardı. Bir kere XOR problemini çözemediklerini ispatlamıştık. Sonra geçen hafta Adeline ağından bahsettik. Aslında yapı olarak Perseptron'dan çok farklı değildi.
+
+34
+00:08:55,648 --> 00:09:10,288
+Output'u olan yine input nöronlarının output nöronuna bağlandığı, yine ağırlıkların olduğu ve ağırlık güncellemesinin delta kuralıyla yapıldığı bir ağ yapısıydı.
+
+35
+00:09:10,928 --> 00:09:17,608
+Adeline'in en iyi olan kısmı delta kuralı, öğrenme kuralıydı.
+
+36
+00:09:17,984 --> 00:09:37,604
+Çünkü hedeflediğimiz değerle bizim hesapladığımız değerin arasındaki farka bakarak güncelleme yapıyordu. Bu da aslında hedeften ne kadar uzaksak ve ilgili ağırlık değeri için bu ne anlam ifade ediyorsa ağırlıkları ona göre güncellememize olanak veriyordu.
+
+37
+00:09:38,884 --> 00:09:45,604
+Adalane özellikle delta kuralının önemli olması ve delta kuralının daha sonra da...
+
+38
+00:09:46,899 --> 00:09:59,680
+Bir kural olması nedeniyle vurgulamıştık. Yoksa mimarı olarak tek katlı perseptrondan çok farklı bir yanı yoktu. Yine öğrenme kat sayısı burada da kullanıyorduk.
+
+39
+00:10:03,091 --> 00:10:16,611
+Tamam. Delta kuralından biraz bahsetmemiz gerekirse, delta kuralının çıkışının aslında bir öncelikle karesel hata fonksiyonu yazarak oluşturduğumuzu söylemiştik.
+
+40
+00:10:24,724 --> 00:10:40,844
+değerden farkını alıp bunun karesini alarak bir E şeklinde şu ilk satırdaki bir karesel hata formülü yazıyorduk. Daha sonra da bu karesel hataya şu alttaki kısmi türeve bakın lütfen.
+
+41
+00:10:46,192 --> 00:10:56,572
+Bir anlamı var. Sözel olarak düşünecek olursanız aslında W1 ağırlığının hataya ne kadar etki ettiği. Çünkü türev değişimdir.
+
+42
+00:10:57,076 --> 00:11:10,355
+Dolayısıyla hatanın değişimini burada formüle etmiş oluyoruz. Bu hatanın değişiminde W1'in katkısı ne kadardır anlamak istesek şu türevi almamız lazım.
+
+43
+00:11:10,355 --> 00:11:21,316
+Hatada W1'in rolü ne kadar? Dolayısıyla delta kuralının çıkış mantığı bu olduğu için son derece anlamlı.
+
+44
+00:11:25,076 --> 00:11:42,076
+Etki ediyorsa, biz aslında W1'in ağırlığını güncellerken o kadar güncelliyoruz. Her ağırlığa özel güncelleme yapma şansı veriyor bize. Böyle düşünürsek, şimdi nöronun output'unu nasıl hesaplıyorduk?
+
+45
+00:11:42,960 --> 00:12:04,399
+Her gelen inputu ağırlık değeriyle çarpıp topluyorduk. Bu toplam bize nöronun değerini veriyordu. Sonra bir aktivasyon fonksiyonu uyguluyorduk. Adaline'in durumunda bu aktivasyon fonksiyonu bir doğrusal lineer fonksiyondu. Dolayısıyla nörona ne giriyorsa o çıkacaktı.
+
+46
+00:12:04,851 --> 00:12:22,831
+Aktivasyon fonksiyonu uyguladığımızda da bu y in değeri nörona gelen değer çıkıştan bir fark göstermeyeceği için burada ekstra bir durum yok. Direkt bunu kullanabiliyorduk. Hedeflediğimiz değerden bu y in değeri çıkaracağız.
+
+47
+00:12:25,107 --> 00:12:27,007
+Ama niye çıkarıyoruz bakalım.
+
+48
+00:12:28,047 --> 00:12:32,387
+Şimdi şu türev ifadesini yazdığımda yukarıdaki hata fonksiyonuna bakın.
+
+49
+00:12:32,887 --> 00:12:37,347
+Aslında direkt onun türevini alarak delta kuralına ulaşacağız.
+
+50
+00:12:39,307 --> 00:12:42,487
+Kısmi türevi alırken nasıl yapmamız gerekiyordu?
+
+51
+00:12:42,487 --> 00:12:46,327
+İşte klasik türevdeki gibi üst öne inecek.
+
+52
+00:12:47,663 --> 00:13:01,264
+İçinin üst değeri bir azalacak. İkiyi bire indirdik, tamam. İçinin türevini alacağız ama içinin türevini neye göre alacağız? V1'e göre alacağız.
+
+53
+00:13:01,264 --> 00:13:09,584
+Yani şuradaki toplam ifadesini açık düşünürseniz X1 artı V1 artı X2 artı V2 diye gidiyor ya.
+
+54
+00:13:09,971 --> 00:13:27,471
+V 2'li, V 3'lü terimler aslında kısmi türevde bizim için türevleri sıfırlanacak. Kat sayılar olacak değil mi? İçinin türevini aldığımız zaman buradan geriye sadece bize X1 kalacak şu toplamın türevini aldığımızda.
+
+55
+00:13:27,471 --> 00:13:36,912
+Şimdi burada onu topluca şöyle yazdım ama sonra sağ tarafa bakarsanız türevi almışım ve sadece X1 kalmış.
+
+56
+00:13:37,491 --> 00:13:43,991
+Üst örneğinde, içinin türevi alındı. İçinin türevinde sadece X1 var.
+
+57
+00:13:44,368 --> 00:14:02,087
+Ve bir de iki kat sayısı, şu üstte inen kat sayıdan kaldı. Bu iki kat sayısını ihmal edebiliyorum. Çünkü benim bir de öğrenme kat sayısı diye bir kat sayım var. Onun içine yedirdiğinizi düşünebilirsiniz. Sabit çarpan.
+
+58
+00:14:07,216 --> 00:14:27,115
+Derli toplu ifadesi şöyle yazılabilir. Bir mülkat sayısı bu ikiyi de barındıran t-y'in çarpı x1 şeklinde olabilir. Bu da bizim delta kuralında ağırlığın update'i olarak ağırlıkta yapacağımız değişim olarak belirttiğimiz terim.
+
+59
+00:14:32,467 --> 00:14:49,327
+Anlamlı bir yer, bir hata fonksiyonum var. O hata fonksiyonunu küçültecek şekilde o hata fonksiyonuna kimin hangi ağırlığın ne kadar etki ettiğini dikkate alarak değişim yapmaya çalışıyorum.
+
+60
+00:14:49,759 --> 00:15:01,620
+Biraz sonra regresyona girip oradan bağlayacağım konuyu ama özetle bu matematiksel olarak arkasında dayanağı olan bir teori.
+
+61
+00:15:02,219 --> 00:15:06,339
+Şimdi burada belirtmem gereken ve daha sonra karşımıza çıkacak konu şöyle.
+
+62
+00:15:06,932 --> 00:15:23,932
+Adaline, tabii buradaki türevi alırken nörona gelen inputun, lineer fonksiyonu uygulayacağımız için sadece onun uygulanmış halini kullanıyor ve ona özel aslında hesaplanmış.
+
+63
+00:15:23,932 --> 00:15:33,932
+Yani Adaline ağında durum böyle. Uyguladığımız aktivasyon fonksiyonu da lineer fonksiyon. Dolayısıyla delta kuralını bu şekilde...
+
+64
+00:15:34,611 --> 00:15:48,451
+Türev alarak çıkarabiliyoruz. Eğer biz farklı bir fonksiyon, aktivasyon fonksiyonu kullanacak olsaydık, şu türev alma işlemimiz daha karmaşık, daha farklı bir şey olacaktı ve bu ifade değişecekti.
+
+65
+00:15:48,451 --> 00:15:54,207
+Bir sonraki adımda göreceğimiz çok katmanlı ağlar da...
+
+66
+00:15:54,207 --> 00:16:19,087
+Webeck Propagation kuralında durum bu olacak. Dolayısıyla bu delta kuralı diye geçiyor. Genişletilmiş veya genelleştirilmiş delta kuralı dediğimiz durum ise herhangi bir aktivasyon fonksiyonu kullandığımda ne olur onu da dikkate alarak şu ağırlık güncelleme formülünü yeniden bu türevleri alarak yeniden elde etmemizi gerektiriyor.
+
+67
+00:16:19,604 --> 00:16:26,044
+Söylediklerim açık mı şu ana kadar? Anlaşılmayan herhangi bir şey.
+
+68
+00:16:28,044 --> 00:16:39,444
+Peki. Adaline'la Perseptro'nun farkına da şöyle bir bahsetmiştik. Bir tekrar gelmek istiyorum.
+
+69
+00:16:39,855 --> 00:17:02,216
+Özellikle farklılık nerede vardı? Adaline tek outputluydu. Perseptronda direkt öyle bir kısıt koymamıştık. Perseptronda aktivasyon fonksiyonumuz bir threshold fonksiyonuydu. Adaline'da direkt bir threshold fonksiyonu uygulamıyoruz. Aktivasyon fonksiyonumuz şekildeki gibi lineer bir fonksiyon.
+
+70
+00:17:02,644 --> 00:17:18,824
+Hatayı o noktadan sonra hesaplıyoruz. Direkt nörona gelen olduğu gibi çıkıyor. Daha sonrasında bir threshold uygulanabilir veya bir bias vasıtasıyla böyle bir threshold uygulanabilir.
+
+71
+00:17:18,824 --> 00:17:26,963
+Ama ağırlık güncelleme ile ilgili kullandığımız aktivasyon fonksiyonu lineal bir fonksiyondu. Bu da bir farklılık.
+
+72
+00:17:27,316 --> 00:17:36,276
+Yaratıyor. Onun dışında dediğim gibi mimari olarak birbirlerine benziyorlar. Öğrenme kuralı farklı ve kritik.
+
+73
+00:17:36,996 --> 00:17:45,615
+Tabi Adelaide'nin Delta öğrenme kuralını kullanmış olması lineer olmayan problemleri çözmesini sağlamıyor.
+
+74
+00:17:45,615 --> 00:17:52,556
+Hala XOR gibi lineer olmayan problemleri çözemiyoruz Perseptron ve Adelaide'i kullandığımızda.
+
+75
+00:17:54,291 --> 00:18:08,011
+Bu noktada aslında tek katmanlı yani sadece inputların ve outputların olduğu mimarilerin yeterli olmadığı fark edildiği için bir Medeline Ağ önerilmiş.
+
+76
+00:18:08,551 --> 00:18:21,471
+Medeline Ağ'ında da birden fazla Adeline'ı, onu da bir tanesi Z1 çıkışı, diğeri Z2 çıkışı veren X1, X2 inputları olan iki tane Adeline var burada.
+
+77
+00:18:22,291 --> 00:18:36,911
+Bu mimaride gördüğümüz gibi oluşturuyoruz. İki tane Adaline'ı almışız. Onların çıktılarında tekrar yeni bir Madaline A dedik buna. Madaline A'nın çıktısı olarak Y çıktısıyla tanımlamışız.
+
+78
+00:18:37,172 --> 00:18:50,291
+Bu aslında bir nevi çok katmanlı bir A olmuş olacak artık. Çünkü X1, X2 inputlarımız var. Z1, Z2 diye bir ara çıktılarımız var. Sonra onları kullanıp hesapladık.
+
+79
+00:18:50,291 --> 00:19:09,172
+Y'ye çıktığı değeri var. Ek bir ara katman eklemiş olduk ve çok katmanlı bir ağ olmuş oldu Medeline. Medeline'ın da özelliği bu. Adeline'da delta kuralı önerilmişti. Medeline'da aslında çok katmanlı bir yapıyı öneriyor.
+
+80
+00:19:17,375 --> 00:19:42,175
+Klasik Adalay'ın öğrenme algoritmasıyla öğretiyoruz. Z1 ve Z2'yi hesaplıyoruz. Sonra Y'ye giden şu normal V1 ve V2, normal V harfleriyle gösterdiğim ağırlıklar ve onunla ilgili olan V3 biyası 0-5 olarak alınıyordu orijinal öğrenme algoritmasında. Oraya hiçbir ayarlama yapmıyorduk.
+
+81
+00:19:42,548 --> 00:20:09,168
+Sadece Adaline'ların öğrenmesini bildiğimiz şekilde yapıyorduk. Daha sonra burada da öğrenme algoritmasının MR2 dediğimiz bir versiyonu var demiştim. V1 ve V2'nin de ayarlandığı ama normalde MR1 algoritmasında öğrenmesinde Adaline'lar normal delta kuralıyla öğrenme yapıyorlar. V1 ve V2 ve V3 de sabit 0.5 olarak alıyoruz.
+
+82
+00:20:09,715 --> 00:20:25,615
+Buraya kadar tamam mı? Her şey kafanızda hatırlayabiliyorsunuz değil mi? Küçük nüanslar var. Aklınızdan çıkabilir, dikkat etmemiş olabilirsiniz. Varsa sorunuz sorun.
+
+83
+00:20:26,836 --> 00:20:36,456
+Medeline'la yani aslında çok katmanlı yapıya geçtiğimizde onun getirdiği katkıyı da gözlemleyebildik.
+
+84
+00:20:36,456 --> 00:20:53,956
+Exor problemini artık bir Medeline Ağ ile çözebildiğimizi görmüştük. İki tane doğrusal bölge oluşturmuştu ve iki doğrunun artık Exor'un pozitif ve negatif cevaplarını ayıracak şekilde.
+
+85
+00:20:54,415 --> 00:21:10,355
+Bu konumlandırılabildiğini görmüş olduk ve exor problemi de çözülmüş oldu. Bu noktada yıl 80'ler ve bu noktada artık çok katmanlı ağlar ortaya çıkıyor.
+
+86
+00:21:10,355 --> 00:21:18,675
+Delta kuralının da varlığıyla birlikte çok katmanlı ağlardan artık ilerlemeler devam ediyor.
+
+87
+00:21:19,104 --> 00:21:33,224
+Çok katmanlı ağlar sonra nerede tıkanıyor? Hesaplama gücümüz yetmediğinde, yani bir katman, iki katman eklediğinizde sıkıntı yok. Kullandığımız işlemciler açısından söylüyorum.
+
+88
+00:21:33,224 --> 00:21:43,224
+Fakat bir noktadan sonra fazla katman eklemek veya daha kompleks problemleri çözmek için yapay sinir ağ kullanmak istediğimizde sıkıntı yaşanmaya başlıyor.
+
+89
+00:21:44,243 --> 00:21:55,364
+İşte o noktada 90'larda falan yine bir duraklama dönemi oluyor. Ne zamana kadar? GPU'lar piyasaya çıkana kadar artı.
+
+90
+00:21:55,695 --> 00:22:11,355
+Bu konuda genişletilmiş delta ve backpropagation'ın bir zayıflığı olan, Türev'le ilgili ondan bahsedeceğiz, bir zayıflığı olan Gradia'nın kaybolması problemi çözülene kadar.
+
+91
+00:22:11,355 --> 00:22:20,635
+O iki konuda hallolduktan sonra işte 2000 lira doğru tekrar bu sefer derin ağlar olarak çünkü katmanı arttırabildiğimiz için artık.
+
+92
+00:22:20,928 --> 00:22:44,028
+Çok daha derin ağ yapıları, mimarları oluşturabiliyoruz. Öğrenme kuralının temelinde büyük bir değişiklik yok. Dediğim gibi kullandığımız aktivasyon fonksiyonu ve gradiyanın kaybolması probleminin çözülmesi dışında. Backpropagation yine ileri beslemeli derin ağlarda popüler olan algoritma.
+
+93
+00:22:46,259 --> 00:22:56,160
+Bütün nöronların birbirine bağlı olması gerekiyor mu acaba kısmı ortaya çıkıyor. Orada da CNN konvolüsyonel ağlar.
+
+94
+00:22:56,596 --> 00:23:20,655
+Aktivasyon fonksiyonunun probleme özellikle görüntü için filtrelerin kullanılması şeklinde seçilmesi, bütün nöronların birbirine bağlı olamayacağı bir takım farklı mimari opsiyonların sunulmasıyla derin ağlar popülerliğini hala koruyor biliyorsunuz zaten.
+
+95
+00:23:22,291 --> 00:23:45,331
+Şimdi birazcık regresyon neydi üzerinden geçeceğim. Aslında doğrusal regresyonu, linear regresyonu biliyorsunuz da oradan birazcık şeye nasıl geliyor onu konuşmak istiyorum. Non-linear regresyon ve bizim kullanacağımız backpropagation algoritmasına nasıl bağlanıyor onu konuşmak istiyorum.
+
+96
+00:23:46,420 --> 00:24:13,700
+Şimdi regresyonda varlığının sebebi aslında elimizdeki verilere bir çeşit eğri uydurmak istiyoruz. Doğru veya eğri. Ölçüm ve gözlemle topladığımız verilerse bunlar ki genellikle öyle oluyor. Bir miktar gürültü içerebiliyor. Eksik olabiliyor. Yani ara noktalarda karşılığını bilmediğimiz, ölçüm almadığımız bazı noktalar elimizde olabiliyor.
+
+97
+00:24:14,291 --> 00:24:28,971
+Bütün kontrol parametrelerini sabit tuttuğumuzda bile tekrarladığımız deneyler farklı sonuç verebiliyor. Bu durumda yapmak isteyeceğimiz şey elimizdeki ham verilere en yakın.
+
+98
+00:24:29,523 --> 00:24:47,963
+Eğrinin denklemini bulmak. Bu işlemede eğri uydurma işlemi veya regresyon işlemi diyoruz. Ana amacımız bir grup veriyi en iyi şekilde tanımlamak için bir fonksiyon seçmek ve onun parametrelerini tespit etmek.
+
+99
+00:24:48,367 --> 00:25:07,107
+Bunu yaptığımız zaman bize ne olanak sağlıyordu? Aslında bilmediğimiz ara değerleri interpolasyon veya ekstrapolasyon işlemiyle hesaplamamızı sağlıyordu. Dolayısıyla bize tahminleme şansı, tahmin yürütme şansı da vermiş oluyordu.
+
+100
+00:25:15,968 --> 00:25:39,708
+İçinde ama bizim bilmediğimiz daha ara bir değeri hesaplama işlemiydi. Ekstrapolasyon dediğimiz şey, elimizdeki veriler farz edelim, 1 ile 10 arasındaki değerler için ölçüm yapılmış ama bize 15'in karşılığı olan değer lazım. Yani aralığın dışında bir değer için tahmin yapmak istiyoruz. Bu işlemede ekstrapolasyon diyorduk.
+
+101
+00:25:40,180 --> 00:25:53,759
+Farz edelim, işte bizim 1990'a kadar elimizde nüfus ölçümleri var. Ama biz 2000 yılında nüfusun ne olduğunu, ne olacağını hesaplamak istiyoruz.
+
+102
+00:25:53,759 --> 00:26:00,759
+1990'a kadar olan verilerden bir model çıkarabilirsek, yani regresyonla bir...
+
+103
+00:26:00,788 --> 00:26:25,668
+Eğri uydurabilirsek o verilere, 2000 yılı içinde tahminde bulunmaya çalışabiliriz. O da ekstrapolasyon olmuş olur. 1990'a kadar olan verilerin içinde eksik olan 1000 yıl olabilir veya yılın ortasında bir zamanın verisini hesaplamak isteyebilirsiniz. O zaman da interpolasyon işlemi yapmış oluyorsunuz.
+
+104
+00:26:26,668 --> 00:26:28,288
+Açık mı her şey?
+
+105
+00:26:28,788 --> 00:26:36,248
+Varsa diyeceğiniz bir şey deyin lütfen. Konuşurken de mesajdan yazabilirsiniz arada.
+
+106
+00:26:37,107 --> 00:26:46,288
+Şimdi en küçük kareler yöntemi kullanıyoruz yaygın olarak regresyon işlemi için.
+
+107
+00:26:47,807 --> 00:26:53,028
+Arzu ettiğimiz şey elimizdeki tüm verilere göre en az sapmayı.
+
+108
+00:26:53,748 --> 00:27:11,468
+Eğri, En Az Sapmadan Kastettiğim Şey, öyle bir eğri uyduralım ki, evet çok sayıda veri için küçük de olsa bir hata içerecek uydurduğumuz eğrinin formülü.
+
+109
+00:27:11,468 --> 00:27:21,248
+Ama toplamda bu küçük hataları topladığımda en iyisi, en küçük hatayı veren eğriyi seçmek istiyoruz.
+
+110
+00:27:21,940 --> 00:27:35,080
+Veri setinden sapmaların karesini kullanıyoruz hata fonksiyonunu tanımlamak için. Aslında az önce delta kuralının çıkarışında göstermiş oldum.
+
+111
+00:27:35,820 --> 00:27:43,080
+İstediğimiz şey y1, y2, yn diye bizim elimizdeki en tane x noktasının karşılığında...
+
+112
+00:27:43,892 --> 00:28:00,572
+Ölçtüğümüz değer olsun. X1, X2, Xen diye verilerimiz var. Y1'den Y'ye ne kadar da bunların eşleştiği, bunlarla ilgili sonuçları temsil eden değer var. Dolayısıyla elimizde böyle bir veri kümesi var.
+
+113
+00:28:01,011 --> 00:28:18,011
+Buna bir eğri uydurmak isteyeceğiz. Uydurduğumuz eğri de f olsun. Bizim formüle etmek istediğimiz eğrinin fonksiyonu f olsun. Bu uydurduğumuz denklemin...
+
+114
+00:28:18,271 --> 00:28:42,031
+Vereceği sonuç, X'lere karşı vereceği sonuç, gerçekte olan Y1 sonucundan ne kadar uzak? Bunu bilmek istiyoruz. Aradaki farkları, distansları hesaplıyoruz. En tane veri için en tane distans olacak gerçekle tahmin değeri arasındaki fark aynen delta'daki olduğu gibi.
+
+115
+00:28:42,579 --> 00:28:50,039
+Bu farkların toplamının karesini aldığımızda da bize bir toplam karesel hata verecek.
+
+116
+00:28:51,299 --> 00:28:55,639
+Neden en küçük kareler? İşte o karesel hatayı minimize etmek istiyoruz.
+
+117
+00:28:56,539 --> 00:29:00,059
+Karesel hatayı minimize etmekten kastımız ne olabilir?
+
+118
+00:29:00,420 --> 00:29:08,059
+Matematiksel olarak, sonuçta şu karesel hata pi ile gösterdiğim şöyle yazıldığını düşünün.
+
+119
+00:29:08,692 --> 00:29:29,132
+Bunun içinde değişkenlerim var benim. X'ler ve Y'ler ve işte FX dediğim şey nasıl bir denklemse, bir doğru denklem mi, eğri denklem mi, onun parametreleri var. O parametreler bizim için bilinmeyen şeyler. Dolayısıyla bunun kendisi de bir fonksiyon.
+
+120
+00:29:29,587 --> 00:29:55,647
+Bir fonksiyonun minimum olduğu nokta matematikten bildiğiniz gibi türevinin sıfır olduğu noktadır. Bu mantığı kullanacağız. Bu kalesel hata olarak ifade ettiğimiz fonksiyonu minimum yapan değeri bulmak için bu fonksiyonun bizim bilinmeyenlerimize göre kısmi türevlerinin sıfır olduğu yerde parametre değerlerini bulmaya çalışacağız.
+
+121
+00:29:56,064 --> 00:30:12,584
+Şimdi uyduracağımız eğriler, klasik şimdiye kadar da çok kullandığınız, doğru uydurabilirsiniz, parabol uydurabilirsiniz. Biraz daha komplekse, eminci dereceden bir parabol uydurabilirsiniz, m tane kat sayısı olan.
+
+122
+00:30:13,504 --> 00:30:21,344
+Doğru uyduruyorsanız sizin için bilinmeyen, ayarlanması gereken parametreler A ve B bu denklemdeki gibi.
+
+123
+00:30:21,728 --> 00:30:31,128
+İki tanedir. Parabol uydurmak istiyorsanız üç tane tespit etmeniz gereken parametre vardır.
+
+124
+00:30:31,628 --> 00:30:38,468
+İşte polinom uydurmak istiyorsanız da polinomun derecesi kadar kat sayı sizin için bilinmeyendir.
+
+125
+00:30:38,468 --> 00:30:43,468
+Yapmaya çalıştığımız ne? Bu M tane kat sayısı olan bir denklem için.
+
+126
+00:30:43,955 --> 00:30:53,755
+Öyle bir kombinasyon seçeyim ki bu M tane parametre için, öyle bir kombinasyon seçeyim ki şu P fonksiyonu alabileceği en küçük değeri.
+
+127
+00:30:54,835 --> 00:31:06,275
+Tercihen sıfır olmasını isteriz ama sıfır olamıyorsa da, hangi kombinasyonda daha küçük değer veriyorsa o parametre kombinasyonunu seçmek isteyeceğiz.
+
+128
+00:31:06,275 --> 00:31:07,075
+Mantık bu.
+
+129
+00:31:09,779 --> 00:31:15,219
+Dolayısıyla onları minimum etmek için, minimum minimize etmek için türeve bakacağız.
+
+130
+00:31:16,059 --> 00:31:19,879
+Bu arada bir ufak terim daha tanımlamış olayım.
+
+131
+00:31:20,019 --> 00:31:21,059
+Çoklu regresyon.
+
+132
+00:31:22,299 --> 00:31:27,139
+Sonuç birden fazla kontrol parametresinden etkileniyorsa,
+
+133
+00:31:27,959 --> 00:31:31,959
+yani aslında bizim bağımsız değişkenimiz birden fazlaysa,
+
+134
+00:31:31,959 --> 00:31:36,879
+deminki yazdığım denklemlere bakarsanız burada sadece X diye bir.
+
+135
+00:31:37,183 --> 00:31:48,343
+Bağımsız değişkenim var. Ona bağlı olarak hesapladığımız Y diye bir değer var. İki terim daha söylemiş oluyorum. Bağımsız değişken, bağımlı değişken.
+
+136
+00:31:48,703 --> 00:32:12,943
+Bağımsız değişkenimiz X, bağımlı değişkenimiz Y. Eğer bağımsız değişkenimiz bir tane değil de birden fazla olursa, işte o zaman da aynı problem, mantık aynı. Ama iki tane bağımsız değişkenim varsa bu sefer çoklu regresyondan bahsediyorum demektir. Kullanacağımız yöntemler de yakın çoklu regresyon için.
+
+137
+00:32:13,327 --> 00:32:22,187
+Ama isimlendirme olarak çoklu regresyon dediğimizde anlamanız gereken şey iki tane bağımsız değişkenimiz var. Bu örnekte X ve Y.
+
+138
+00:32:22,187 --> 00:32:30,007
+Ve bir tane bağımlı değişkenimiz var. En az iki. Tabii bu arada ikiyle sınırlı değil. Üç beş gidebilir bu.
+
+139
+00:32:31,307 --> 00:32:38,907
+Ve birden fazla kontrol parametresi var. Kontrol parametresi dediğimde buradaki A, B, C kat sayıları.
+
+140
+00:32:39,380 --> 00:32:44,760
+Bu parametreleri değiştirdikçe her seferinde bu denklem başka bir şey olur. Değil mi?
+
+141
+00:32:45,299 --> 00:32:54,360
+Bu katsayılar sonuçta bizim için denklemin temsil ettiği eğrinin şeklini, konumunu değiştirir.
+
+142
+00:32:54,360 --> 00:33:13,240
+Yani bir Gauss fonksiyonu yazarsınız ama onun katsayısıyla oynadıkça, genliğiyle oynadıkça, orta noktasıyla oynadıkça, yani kontrol değişkenleriyle oynadıkça o Gauss'un şekli değişir, sivrileşir, yayvanlaşır, biraz sağ.
+
+143
+00:33:13,299 --> 00:33:16,759
+Sola kayar, biraz sola kayar. Bütün her şey için bu böyle doğru için bile.
+
+144
+00:33:17,183 --> 00:33:41,483
+Ya da nöral netverkte kullandığımız BIAS parametresinin fonksiyonu oydu hatırlarsanız. Tamam, yani bir doğru denkleminiz var. O doğruya oturacak verileri de biliyoruz. Ama o doğrunun ne kadar aşağı yukarı, ne kadar sağa sola kayması gerektiğini bir BIAS parametresi kullanırsak onunla ayarlayabiliyorduk. Burada da aynı şekilde bu parametreler.
+
+145
+00:33:41,824 --> 00:33:51,983
+Konumlandırma fonksiyonu şekliyle ilgili bir şey değiştirmeyecek ama konumlandırmayla ilgili değişiklik yapacağı için kontrol parametresi diyoruz.
+
+146
+00:33:53,183 --> 00:33:59,864
+Şimdi en küçük kararı yöntemiyle en tane veri için bir doğru uydurma.
+
+147
+00:34:00,403 --> 00:34:07,344
+Hızlıca geçeceğim bildiğinizi biliyorum bunları ama arada belki detaylı bir şeyleri hatırlatmam gerekiyordur diye.
+
+148
+00:34:07,796 --> 00:34:33,675
+Boş geçmek istemiyorum. Y eşittir Mx artı B şeklinde bir doğru uydurmak istiyoruz. En küçük kareler hatamızı yazmamız lazım. Bu hatayı nasıl yazabiliriz? P ile gösterdiğim şey. Bizim elimizde olan veri Y'i yani Y1'den Y'ene kadar olan veriler ve şu Y eşittir Mx artı B doğrusunda
+
+149
+00:34:34,132 --> 00:34:42,271
+X yerine her seferinde ilgili Y'nin karşılığı olan X değerini koyarak oluşturacağım şu FX denklemi.
+
+150
+00:34:42,271 --> 00:34:52,492
+Bu ikisinin arasındaki farka bakacağım, karesini alacağım ve bütün en tane nokta için bu farkları topladığımda da bir hata elde edeceğim.
+
+151
+00:34:53,192 --> 00:35:00,271
+Bunu minimize etmek istiyorum. Bunu minimize etmenin yolu da türevinin sıfır olduğu yere bakmak demiştim.
+
+152
+00:35:00,628 --> 00:35:16,248
+Şimdi bizim iki tane kontrol parametremiz vardı. Mx artı b şeklinde bir doğru için. Bunlar m ve b parametreleri. Dolayısıyla bunlara göre türevin sıfır olmasını istiyoruz.
+
+153
+00:35:16,248 --> 00:35:25,248
+Aslında şu dersin başında konuştuğum yerden hatırlarsanız, şu kısmi türevin sözlü olarak bize söylediği şey,
+
+154
+00:35:25,972 --> 00:35:48,712
+P fonksiyonunda, P hata fonksiyonunda B'nin rolü ne kadar? Veya şu değişimi, türev dediğimiz şey değişimdir. P B'ye kadar, B'ye göre nasıl değişiyor? Aslında şu türevin sözlü olarak bize söylediği şey bu. P B'ye göre ne kadar değişiyor, nasıl değişiyor?
+
+155
+00:35:49,119 --> 00:35:56,079
+Peki, P'nin B'ye göre değişimini yazdım. P'nin M'e göre değişimini yazdım.
+
+156
+00:35:56,920 --> 00:36:04,259
+Öyle olsun ki, B'yi öyle ayarlayayım ki P'nin B'ye göre değişimi sıfır olsun.
+
+157
+00:36:05,099 --> 00:36:11,119
+Bunun olması demek de P'nin aslında ulaşabileceği minimum bir noktaya ulaşması demek.
+
+158
+00:36:11,572 --> 00:36:38,771
+Görsel olarak da düşünürseniz, türevin sıfır olduğu yer aslında bir minimumdur. Dolayısıyla pi'nin b'ye göre değişimi sıfır olsun, pi fonksiyonu minimuma ulaşsın. Aynı şekilde m için de bunu istiyoruz. Bu iki türev ifadesini yazarsam, şu türevleri, karesel hatanın türevlerini aldığımda böyle olacak. Bunları sıfıra eşitlersam benim elimde iki tane denklem olacak.
+
+159
+00:36:39,443 --> 00:36:57,203
+Tespit etmek istediğim iki tane değişken vardı. M ve B. İki tane de denklemim var. Eğer lineer bir problemden bahsediyorsam ben iki denklemle iki bilinmeyeni bulabilirim. Mantık da bu. En küçük kareler yönteminin mantığı.
+
+160
+00:37:05,679 --> 00:37:23,599
+Tane faktörü, en tane veri için toplam işaretlerini tutmam gerekiyor. Onları tutarak denklemleri yazıyorum. M ve B için bir formül buluyorum. Siz zaten bu formülleri daha çok eskilerden hatırlıyorsunuz. Linear C1'den hatırlıyorsunuz.
+
+161
+00:37:23,599 --> 00:37:28,779
+Şimdi burada gelmek istediğim bir nokta daha var.
+
+162
+00:37:29,139 --> 00:37:41,539
+Doğru uydururken tamam, buna lineer regresyon diyoruz. Peki parabol uydururken veya üst derece parabol uydururken hala lineer regresyon diyoruz. Neden?
+
+163
+00:37:43,327 --> 00:37:56,867
+Bir ara lafını ettim diye hatırlıyorum ama bir fonksiyonun lineer olması, yani doğrusal olarak görülmesiyle sistemin lineer olması farklı şeyler.
+
+164
+00:37:57,311 --> 00:38:15,992
+Siz bu eğri uydurma işlerini lineerce bir dersinde gördünüz büyük ihtimalle. Dersin ismi lineerce bir düşünün ki neden eğrilerle uğraşıyorsunuz? Çünkü sistem lineer. Şekil lineer olmayabilir, şekil bir parabol olabilir, daha karmaşık bir eğri olabilir, fark etmez.
+
+165
+00:38:16,384 --> 00:38:24,103
+Problemin lineer denklem setleriyle çözülüp çözülememesi bize sistemin lineer olup olmadığını söyler.
+
+166
+00:38:24,623 --> 00:38:29,884
+Dolayısıyla hala lineer sistemlerden bahsediyoruz. Parabol dahi uydursak.
+
+167
+00:38:29,884 --> 00:38:38,784
+Bu lineerlik konusunu kafanızda bir netleştirmenizi tavsiye ederim. Birçok konu da karşınıza çıkacaktır.
+
+168
+00:38:39,155 --> 00:38:57,335
+Hatta onu demişken minik bir şey daha soracağım size. Afin ne demek, linear ne demek desem? Bir yorum yapacak olan var mıdır? Afin sistem, afin denklem, afin dönüşüm görüntü işlemede görmüşsünüzdür belki.
+
+169
+00:38:58,195 --> 00:39:14,096
+Yani afin ne demek, lineer ne demek? Ya da lineer bir denklem yazsanız bana nasıl bir şey? Lineer bir ilişki yazdığınızda nasıl bir şey yazarsınız? Afin bir ilişki yazdığınızda nasıl bir şey yazarsınız?
+
+170
+00:39:20,980 --> 00:39:22,188
+Yorum var mı?
+
+171
+00:39:29,780 --> 00:39:55,180
+Afin deyince ötelenmiş geliyor dedi [öğrenci] arkadaşınız. Çok doğru. Peki, lineerle farkı ne? Ya da şöyle sorayım. AX artı B afin midir, lineer midir? [öğrenci] aynen öyle. Arkadaşınız yazdı. F eşittir 2X gibi bir denklem, lineer bir denklemdir.
+
+172
+00:39:55,956 --> 00:40:08,856
+İlişkiler burada lineerdir. Yani çarpan sadece etkisi var. 2x artı 3 dediğimiz şey afindir. Çarpmanın yarısına yanı sıra bir de öteleme vardır.
+
+173
+00:40:08,856 --> 00:40:18,255
+Şimdi eğrinin doğrunun şekli, yani 2x artı 3 de bir doğru şekli gösterir.
+
+174
+00:40:18,708 --> 00:40:37,048
+Ama ilişki lineer değildir. Dolayısıyla lineerliği sistemin lineer olmasına mı bakıyorsunuz? Problemin lineer çözülebilirliğine mi bakıyorsunuz? Yoksa şekil olarak mı bakıyorsunuz? Kavramları kafanızda o açıdan netleştirmeniz lazım.
+
+175
+00:40:44,563 --> 00:41:00,043
+X ile F arasında veya X ile Y arasında lineer bir değişim göstermez. Bir de öteleme vardır orada. Lineer bir değişim dediğimiz sadece çarpan etkisi olması lazım. Biri artınca öbürü de artması lazım.
+
+176
+00:41:00,563 --> 00:41:11,224
+Ötelemeyi kattığınızda oradaki artı üç parametresi bir öteleme işlemi gösteriyor ve aradaki lineer ilişkiyi bozuyor. İlişki olarak bu böyle.
+
+177
+00:41:11,648 --> 00:41:22,188
+Eğer görsel olarak eğri midir, doğru mudur, doğruya lineer deriz, öbürüne non-lineer deriz diyorsanız o başka bir şey.
+
+178
+00:41:23,068 --> 00:41:29,248
+Sistemin bütünlüğünde problemin lineer olması dediğimiz zaman, bizim baktığımız şu anda o konu.
+
+179
+00:41:29,248 --> 00:41:38,347
+Ben lineer denklemlerle, birinci derece denklemlerle bilinmeyen sayısı kadar denklem oluşturup,
+
+180
+00:41:38,579 --> 00:42:00,779
+Bilinmeyenlerimin ne olduğunu bu denklemleri birbirinden toplayıp çıkararak çözebiliyorsam o zaman sistemim lineerdir. Daha matematiksel bir tanımı sanıyorum biraz sonra geçecek ama toplamsallık ve çarpımsallık kurallarını sağlıyorsa denklem sistemi o zaman lineerdir.
+
+181
+00:42:01,427 --> 00:42:21,768
+Diyebiliyorum. Dolayısıyla ben parabol da uydursam, istediğim şekil bir ehri uydurayım. Eğer şu şekilde lineer denklemler oluşturup yani hatanın bilinmeyenlere göre türevlerini alıp sıfıra eşitleyerek bilinmeyen sayısı kadar lineer denklem oluşturup sonra da bu bilinmeyen parametrelerimi
+
+182
+00:42:22,324 --> 00:42:33,924
+Çözecek, denklemler elde edebiliyorsam, çözebiliyorsam o zaman elimdeki sistem lineerdir. Şekline falan bakmıyorum eğer eminim.
+
+183
+00:42:35,144 --> 00:42:42,504
+Peki, buralı net miyiz? Bu arada afin olayını çıkarmayın aklımızdan.
+
+184
+00:42:42,996 --> 00:42:55,215
+Bazen dönüşümlerin lineer mi, non-lineer mi, afin mi olduğuna göre adlandırılır görüntü işlemedeki dönüşümler veya sesle işaret işlemeyle ilgili bir ara karşılaşırsınız diye tahmin ediyorum.
+
+185
+00:42:57,175 --> 00:43:03,695
+Afin işlemlerin toplam sağlık ve çarpımsallık kuralını sağlamadığına da dikkatinizi çekeceğim.
+
+186
+00:43:04,195 --> 00:43:06,596
+Dolayısıyla afin eşittir, lineer değil.
+
+187
+00:43:07,188 --> 00:43:19,467
+Linear, afinin bir alt kümesi olarak düşünülebilir. Yani kaç sayının ötelemenin sıfır olduğu durum lineardır. Afin dediğimizde bir öteleme vardır.
+
+188
+00:43:20,724 --> 00:43:36,704
+Şimdi bizim doğrumuz için M ve B katsayıları için bir formül bulabildik. Şöyle bir tane örnek veri seti üzerinde de doğrulamak istersek eğer 5 tane elimizde verimiz varmış.
+
+189
+00:43:36,704 --> 00:43:44,544
+İşte X1 iken Y'nin 7 olduğu, X2 iken Y'nin 9 olduğu vs. böyle 5 tane örneğimiz var.
+
+190
+00:43:44,911 --> 00:44:00,391
+Bunlara bir doğru uydurmak istiyoruz biz. Burada çıkardığımız formülleri kullanarak M ve B kat sayılarını hesapladığında uydurulacak en uygun doğrunun 2x artı 5 olduğuna karar vermişiz.
+
+191
+00:44:01,511 --> 00:44:12,672
+Burada da galiba veriyi yapay oluşturduğum için tam da bu doğruyu sağlıyor. Ama bir miktar hatada içerebilirdi bu. Hatalı da olsa.
+
+192
+00:44:12,911 --> 00:44:25,931
+Hatanın minimum olduğu M ve B katsayılarının bu yöntemle bulduğuma inanacağım, güveneceğim. Çünkü geliş mantığım türevin sıfırlanması olduğu için.
+
+193
+00:44:35,635 --> 00:44:42,795
+Doğru uydurma yaklaşımını kullanarak aslında bazen eğri için de yaklaşımda bulunabiliriz.
+
+194
+00:44:42,795 --> 00:44:51,632
+Yani parabol için aynı en küçük kareler yöntemini oluşturup katsayı hesaplamak için formüller bulabileceğiz ama…
+
+195
+00:44:51,632 --> 00:45:01,492
+Biraz daha hızlı yol almak istiyorsanız, bazen parabol gösteren verilere doğru uydurarak da bir çıkış yolu bulabilirsiniz.
+
+196
+00:45:02,172 --> 00:45:05,932
+Mesela, aslında şöyle bir parabolik verimiz olsun.
+
+197
+00:45:06,872 --> 00:45:10,872
+Bunu da aslında x kare artı 5 denklemini parabolunu çizmişim ben.
+
+198
+00:45:12,252 --> 00:45:17,292
+Direkt elimdeki verilerin logaritmasını veya kare kökünü alırsam,
+
+199
+00:45:18,003 --> 00:45:32,724
+Bu parabol doğruya benzer. Ben de o kare kök veya logaritma için doğru denklemi uydururum. Sonra da onu tekrar ters işlemini yaparak bir parabol denklemi elde edebilirim.
+
+200
+00:45:32,724 --> 00:45:45,063
+Dediğim şeyi şurada göstereyim. Mesela mx artı b'nin karesi veya şuradakini düşünelim x kare artı 5'e parabol uydurmak istemiyorsam.
+
+201
+00:45:45,108 --> 00:46:08,688
+Y'nin kare kökünü yazabilirim. Onu da Mx artı B olarak yazabilirim. Y'nin kendisi evet Mx artı B'nin karesi gibi bir denklendi. Ama Y'nin kare kökünü yazarsam o bir doğru. Bunu oluşturursam, buna bir eğri uydurabilirsem veya M ve B katserlerini bulursam, Y içinde bir denklem, parabolik bir denklem bulmuş olacağım.
+
+202
+00:46:09,172 --> 00:46:31,652
+Böyle bir kestirme yollar kullanabilirsiniz her zaman. Örnek olarak aklınızda bulunsun diye verdim onu. Elimdeki veriler böyleymiş. Bunlar bir parabol gösteriyormuş. Parabol denklemi yazmak işime gelmedi. Perakötiye'yi buldum. Onun da bir doğru olacağını biliyorum. Ona bir doğru uydurdum.
+
+203
+00:46:33,364 --> 00:46:51,323
+Ve uydurduğum doğrunun karesini aldığımda da aslında bir parabol denklemi elde ettim. O da bizim x'ye verimize uydu. Burada dediğimi anladınız mı? İşlemleri göstermemişim. Göstermişim yeterince aslında da.
+
+204
+00:46:51,699 --> 00:47:18,779
+Burada bir sıkıntı yok değil mi? Bu şekilde verinize bakıp parabol uyduracağınıza eğer şeyse çıktığının işte kare kökü olabilir, logaritması olabilir bir şey alıp kare kökünü çizdirsem, çizdirmemişim çizdirsem iyiydi ama şunu çizdirsem x ile kare kök y'yi karşılıklı bir doğru gösterdiğini göreceğim. Dolayısıyla ben de kare kök y'ye doğruyu uydururum.
+
+205
+00:47:19,219 --> 00:47:43,179
+Y içinde olması gereken parabolu onun karesine alarak bulabilirim. Bu trikleri kullanabilirsiniz pratikte. Ne olmuş olur aslında biraz işleminizi azaltmış olur. Programlama açısından da efektif. Eğer çok çok hassas olması gerekmiyorsa uydurduğunuz eğrinin o yoldan gidebilirsiniz.
+
+206
+00:47:43,179 --> 00:47:44,880
+Peki.
+
+207
+00:47:45,588 --> 00:48:11,568
+Parabol uydurmak istiyorsak, parabolümüzün derecesinin bir fazlası kadar veriye ihtiyacımız var. Yani ikinci derece bir parabol uydurmak için benim elimde en az üç tane örnek olması lazım. Üç tane örnek ve eğer ikinci derece bir parabolüm üç tane kat sayısı olduğu için, üç tane de bilinmeyeni çözeceğim için üç denklem elde etmem gerekiyor.
+
+208
+00:48:11,987 --> 00:48:22,987
+Yine karesel hatayı yazıyorum. Elimdeki değerler ve uyduracağım fx parabolünün denklemi arasındaki farkın karesi minimum olsun dedim.
+
+209
+00:48:22,987 --> 00:48:39,027
+Bunu bu şekilde yazdıktan sonra artık bilinmeyen kontrol parametrelerine göre kısmi türevlerini alıp o türevleri sıfıra eşitleyerek parabol uydurma için de gerekli katsayı hesabını yapacağım.
+
+210
+00:48:39,376 --> 00:48:54,376
+Bu dediğimi yaparsam, hatayı her bir kontrol parametresi için türevini alıp sıfıra eşitlersem, ABC değerleri içinde bir denklem bulabilirim.
+
+211
+00:48:55,135 --> 00:49:03,336
+Gördüğünüz gibi üç tane denklemim oluyor. O üç tane denklem de lineer denklem ve lineer denklem sistemini çözerek
+
+212
+00:49:03,731 --> 00:49:11,592
+Yine ben parabol uydurma işlemini yapabiliyorum. Yani problemim lineer imiş.
+
+213
+00:49:12,932 --> 00:49:22,311
+M. dereceden polinom uydurmak istersem aynı şey. M tane elimde katsayı var. Dolayısıyla M tane türev ifadesi yazacağım.
+
+214
+00:49:23,032 --> 00:49:26,892
+Hata fonksiyonunun her bir katsayıya göre kısmi türevini yazacağım.
+
+215
+00:49:27,347 --> 00:49:35,347
+Elimizde M tane lineer denklem oluşacak ve buradan kat sayıları hesaplayabileceğiz.
+
+216
+00:49:36,207 --> 00:49:49,427
+Şimdi bütün bunlar regresyondu. Bunun çoklu versiyonunda dediğim gibi X'in yanı sıra en az bir tane daha farklı bağımsız değişkenimiz olacaktı.
+
+217
+00:49:49,807 --> 00:50:04,187
+Aynı şeyi çoklu regresyon içinde de direkt bu hataları yazmak, sonra da hatanın bilinmeyenlere göre trevini almak yolu ile çözüme gidebiliyoruz.
+
+218
+00:50:04,187 --> 00:50:15,967
+Yani tek değişkenli, tek bağımsız değişkenli veya çok bağımsız değişkenli regresyon fark etmez. Sistem lineer olduktan sonra sıkıntı yok.
+
+219
+00:50:16,275 --> 00:50:27,695
+Sorun ne zaman? Yani bu şekilde matematiksel denklemlerle çözemeyeceğimiz veya bizim non-linear problemler, non-linear sistemler dediğimiz durum.
+
+220
+00:50:29,155 --> 00:50:33,695
+İki bağımsız en az, bir de bağımlı değişkenin olduğu.
+
+221
+00:50:35,507 --> 00:50:43,047
+Onların arasındaki ifadenin biner denklem setleriyle çözülemediği durumlar.
+
+222
+00:50:43,047 --> 00:50:50,547
+Çoklu regresyon değil ama şöyle, neyse çoklu regresyonu da bir özetleyip ondan sonra geçeyim.
+
+223
+00:50:52,887 --> 00:50:58,047
+Şöyle, iki tane bağımsız değişkenin fonksiyonunun...
+
+224
+00:50:58,931 --> 00:51:05,811
+Fonksiyonu olan denklemler elimizde varsa o zaman long-dial regresyondan bahsedeceğiz.
+
+225
+00:51:06,771 --> 00:51:14,331
+Şimdi çoklu regresyonu da bir anlatıp oraya geçeyim. Ara vereyim mi azıcık? Arkadaşlar.
+
+226
+00:51:15,672 --> 00:51:16,411
+Olabilir hocam.
+
+227
+00:51:16,411 --> 00:51:19,112
+Sana hiç tepki vermiyorsunuz. Arada ses çıkaralım.
+
+228
+00:51:20,971 --> 00:51:23,311
+Valla korkuyorum bayıldım sizi diye.
+
+229
+00:51:23,891 --> 00:51:28,552
+Bir 10 dakika ara verelim. Saat 1'de tekrar görüşürüz.
+
+230
+00:51:29,811 --> 00:51:36,132
+Hocam, biraz böyle 5 dakika daha artırsak öğle yemeği için.
+
+231
+00:51:37,612 --> 00:51:43,512
+Peki, herkese uygun mu? Bir sıkıntı yoksa ne diyeyim o zaman? Biri 10 geçe?
+
+232
+00:51:44,911 --> 00:51:45,771
+Olur fark etme.
+
+233
+00:51:46,692 --> 00:51:49,411
+Tamam, bir itirazı olan yok değil mi arkadaşlar?
+
+234
+00:51:50,291 --> 00:51:53,672
+Biri on geçe gelin olur mu? Mesaja da yazıyorum.
+
+235
+00:51:54,672 --> 00:51:55,512
+Tamamdır hocam.
+
+236
+00:51:56,052 --> 00:51:56,731
+Görüşürüz.
+
+237
+01:11:12,020 --> 01:11:13,520
+Başlayayım mı arkadaşlar?
+
+238
+01:11:16,260 --> 01:11:16,780
+Evet hocam.
+
+239
+01:11:16,780 --> 01:11:17,320
+Olur hocam.
+
+240
+01:11:17,460 --> 01:11:18,440
+Aleyhisseliz tamam.
+
+241
+01:11:20,360 --> 01:11:22,960
+Geçkenlerde pek bir şey kaçırmış olmayacak.
+
+242
+01:11:23,520 --> 01:11:30,460
+Polinom uydururken dedik, polinomun derecesinin bir fazlası kadar denklem elde edebilmemiz lazım.
+
+243
+01:11:30,944 --> 01:11:41,324
+Onu da zaten M tane değişken varsa M artı bir tane türev denkleminden elde edebiliyoruz normal koşullarda.
+
+244
+01:11:42,924 --> 01:11:52,244
+Çoklu regresyonda yine aynı formüller geçerli dedik. Bu sefer bir tane değil de iki tane bağımsız değişkenimiz olacak.
+
+245
+01:11:54,260 --> 01:12:12,579
+Misal X ve Y bağımsız değişkenlerimiz, Z de bağımlı değişkenlerimiz olmak üzere Z eşittir A artı BX artı C'ye şeklinde bir denklemimiz varsa buna çoklu regresyon uygulamamız lazım.
+
+246
+01:12:12,579 --> 01:12:21,600
+Uygun A, B, C parametrelerini bulmamız için. 3 tane parametre olduğu için de 3 tane en az veri lazım bize.
+
+247
+01:12:22,068 --> 01:12:29,927
+Hata fonksiyonunu aynen yazıyoruz. Kullandığımız fonksiyon burada çok değişkenli bir fonksiyon.
+
+248
+01:12:30,452 --> 01:12:38,271
+Tek değişkenli, çok değişkenli fonksiyon kavramı da kafanızda net olması iyi olabilecek bir şey.
+
+249
+01:12:38,271 --> 01:12:50,391
+Şimdi özellikle tez aşamasında falan paperlar okuyacaksınız. Bu kavramlar aslında oradaki şeyi yorumlamanızla ilgili önemli ipuçları veren şeyler size.
+
+250
+01:12:50,912 --> 01:12:58,271
+O yüzden matematiksel temel kavramları kafanızda oturtmak yönünde her zaman hani sorgulayarak araştırmak.
+
+251
+01:12:58,452 --> 01:13:21,051
+Yaptırmanızda fayda var. Tavsiye ederim. Çoklu regresyon için işte aynı şekilde hata denklemimizi yazdık. A'ya, B'ye, C'ye kontrol parametrelerine göre sürelerini aldık. Sıfıra eşitledik ve üç tane denklem oluşturduk. Linear bir denklem sistemi yine elde edebildik.
+
+252
+01:13:21,427 --> 01:13:29,448
+Burada da aynı şekilde buradan A, B ve C için üç tane çözüm bulmamız mümkün.
+
+253
+01:13:30,048 --> 01:13:36,387
+Dolayısıyla çoklu regresyonu da bu şekilde lineer denklem setleriyle çözebiliyoruz.
+
+254
+01:13:37,587 --> 01:13:40,427
+Non-linear regresyona geldiğimiz zaman...
+
+255
+01:13:40,659 --> 01:13:59,960
+Şimdi tekrar burada tekrarlamış olacağım işte linearlık olayını. Linear fonksiyon ve linear denklem sistemi dediğimiz şeyler ayrı bir şeyler. Linear ilişkiler çıkış fonksiyonunun girişlerle doğrudan yani sabit orantılı olarak değiştiği ilişkilerdir.
+
+256
+01:13:59,960 --> 01:14:06,860
+Demin yazdığımız f eşittir 2x gibi arkadaşımızın yazdığı denklem gibi. Sabit bir orantı var.
+
+257
+01:14:07,347 --> 01:14:31,347
+Genellikle bir çarpan kat sayısı olmuş oluyor bu. Bu bizim lineer ilişkiye sahip iki tane değişkenimiz var demektir. Ama lineer denklem sistemi dediğimiz başka bir şey. Lineer denklem sistemi şimdiye kadar en küçük paralar için gördüğümüz, lineer regresyon için kullandığımız şekilde birbirinden...
+
+258
+01:14:31,636 --> 01:14:53,596
+Birbirinden bir değişkeni çekerek bilinmeyen sayımız kadar denklemimiz varsa bilinmeyenleri bulabilmek mümkünse lineer işlemlerle toplama çarpma gibi işlemlerle eğer değişkenlerimizi bulabiliyorsak elimizdeki denklem seti lineerdir diyoruz.
+
+259
+01:14:53,596 --> 01:14:59,456
+Şimdi lineer bir fonksiyonun iki koşulu sağlaması gerekiyor.
+
+260
+01:14:59,636 --> 01:15:06,036
+Bunlar toplanabilirlik ve çarpımsallık veya homojenlik koşulları.
+
+261
+01:15:07,896 --> 01:15:19,856
+Toplanabilirlik ne diyor? X ve Y'nin toplamına F fonksiyonunu uyguladığımda X ve Y'ye ayrı ayrı F fonksiyonunu uygulayıp toplamamla aynı sonucu vermesi lazım.
+
+262
+01:15:20,656 --> 01:15:25,216
+Çarpımsallıkta alfa gibi bir sabit sayı olsun.
+
+263
+01:15:25,908 --> 01:15:39,688
+A çarpı x gibi bir değere fonksiyonu uygulamamla x'e fonksiyonu uygulayıp alfayla sonradan çarpmam, yani çarpan kat sayısını dışarı almam sonucu değiştirmemeli diyor.
+
+264
+01:15:41,148 --> 01:15:48,507
+Dolayısıyla eğer bunlarda süperpozisyon kuralları ikisi bir arada var ise,
+
+265
+01:15:48,927 --> 01:16:10,868
+Bu iki kural sağlanabiliyorsa elimizdeki lineer bir fonksiyondur. Benzer şekilde lineer denklem sistemleri de süperpiyoz kuralları yani toplama ve çarpma işlemleriyle denklemlerle oynayarak çözüm bulmamızı sağlar.
+
+266
+01:16:11,796 --> 01:16:23,855
+Şimdi, linear regresyon örneği için en küçük kareler yöntemi tam da linear denklem sistemi çözümü için uygun bir örnekti.
+
+267
+01:16:24,515 --> 01:16:32,496
+Farklı şekillerde de, yani hatayı farklı tanımlayarak daha ziyade, linear denklem sistemlerini çözmeniz mümkün.
+
+268
+01:16:33,095 --> 01:16:35,496
+Ama en yaygını en küçük kareler yöntemi.
+
+269
+01:16:35,496 --> 01:16:37,496
+Non-linear denklem...
+
+270
+01:16:38,260 --> 01:17:01,520
+Sistemlerinde ve non-linear regresyonda ise problem biraz daha farklı. Elimizdeki bilinmeyen parametreleri çözmek için cebirsel bir ifade oluşturmamız mümkün değil ise, yani bilinmeyen sayısı kadar denklem yazıp onları birbirinden toplayıp çıkararak bir şey yapamıyorsak, çözüm bulamıyorsak,
+
+271
+01:17:01,844 --> 01:17:22,103
+O zaman elimizde kalan tek çözüm yöntemi optimizasyon algoritmaları kullanmak, töristik algoritmalar kullanmak vs. gibi. Biraz daha deneme yanılma ama akıllı bir deneme yanılma yöntemleriyle fonksiyonun minimumunu bulmaya çalışmak kalıyor.
+
+272
+01:17:28,287 --> 01:17:36,747
+Bu fonksiyon türevlenir olmayabilir. Bu fonksiyon bir denklemle, yani bir cebirsel ifadeyle ifade edilemiyor olabilir.
+
+273
+01:17:38,647 --> 01:17:47,127
+Dolayısıyla bu fonksiyonun minimumunu bulmak ancak bir arama, optimizasyon algoritmasıyla mümkün olabilir.
+
+274
+01:17:47,407 --> 01:17:50,627
+Bu durumda da yaptığımız şey non-linear regression diyoruz.
+
+275
+01:17:52,564 --> 01:18:11,064
+Linear Regresyon modeli gördüğünüz gibi ikinci derece bir parabol olarak da ifade edilebilir ama bir epsilon gibi hata payıyla ifade edecek olsak linear regresyonu fx artı epsilon gibi bir ifadeyle gösterebiliriz.
+
+276
+01:18:11,064 --> 01:18:17,503
+Non-linear Regresyonu ise x'in yanı sıra aslında şu sıfırda deneyelim de buraya bir y diyelim.
+
+277
+01:18:17,844 --> 01:18:28,943
+X'in yanı sıra bir tane daha bağımsız değişkenimiz var. X ile Y arasında hiçbir ilişki olmadığı için birini kontrol ettiğimizde diğeri kontrolden çıkabiliyor.
+
+278
+01:18:36,832 --> 01:18:59,412
+En yakın ifadesini bulmaya çalışıyoruz diyebiliriz. Bulacağımız ifade, diner regresyondaki gibi cebirsel bir ifade olmayacak. Tamamen hatanın minimum olduğu yere ait bir takım parametreler bulacağız ve onlara dayanarak noktasal bazda tahminler yürüteceğiz.
+
+279
+01:19:00,787 --> 01:19:07,127
+Şimdi optimizasyon kullanmamız gerekiyor veya optimizasyon yöntemleri kullanmamız gerekiyor dedim.
+
+280
+01:19:26,292 --> 01:19:31,192
+Parametre değerlerinin seçilmesini optimizasyon olarak tanımlayabiliriz.
+
+281
+01:19:31,272 --> 01:19:40,032
+Fonksiyonunuz var. Direk cebirsel yöntemlerle bunu minimum yapan veya maksimum yapan değeri bulamıyorsunuz.
+
+282
+01:19:40,032 --> 01:19:51,032
+O zaman sistematik bir yöntemle minimizasyon veya maksimizasyon için gerekli parametreleri bulmaya çalışıyorsunuz.
+
+283
+01:19:51,412 --> 01:19:57,992
+F diye bir tane fonksiyonumuz olsun. A kümesinden real sayılar kümesine tanımlanmış bir fonksiyon.
+
+284
+01:19:58,112 --> 01:20:04,971
+Yani fonksiyonun girdileri A kümesinden seçilecek sonuçta real bir sayı olacak.
+
+285
+01:20:06,391 --> 01:20:18,752
+Biz öyle bir x0 değeri arıyoruz ki fonksiyonun bütün x'ler için vereceği sonuçtan daha küçük bir sonuç versin bu x0 değerinde.
+
+286
+01:20:19,216 --> 01:20:34,296
+Ve aynı bu minimizasyon problemi oluyor. Veyahut da fonksiyonun alabileceği, bildiğimiz bütün x değerleri için verdiği sonuçtan daha büyük bir değer versin. Bu da maksimizasyon olarak tanımlanıyor.
+
+287
+01:20:34,956 --> 01:20:45,756
+Burada söylediğim şey ne demek? Sistematik bir şekilde değer seçeceğiz ya, bir grup x değeri deneyeceğiz. Fonksiyona bu x değerlerini vereceğiz.
+
+288
+01:20:46,127 --> 01:20:52,327
+Ve fonksiyonun bu x değerleri için sonucunu hesaplayacağız.
+
+289
+01:20:53,487 --> 01:21:05,627
+Öyle bir x değeri bulacağız ki, yani x sıfır değeri bulacağız ki, şimdiye kadar hesapladıklarımızdan daha küçük veriyorsa, fonksiyonun sonucunu, bu bir minimumdur diyeceğiz.
+
+290
+01:21:06,015 --> 01:21:26,695
+Görsel anlamda da birazdan göstereceğim. Lokal veya global bir şekilde fonksiyonun sağındaki solundaki değerlerden daha küçük sonuç verdiği yere biz bir minimum diyorduk. Minimumla maksimumun tanımı aslında. Matematiksel olarak tanımı o iki tane ifade.
+
+291
+01:21:31,039 --> 01:21:51,600
+diye kullandığımız, aslında bizim yani minimize etmeye çalıştığımız veya maksimize etmeye çalıştığımız şey, bizim kostumuz, objektif fonksiyonumuz, bir şekilde bizim için problemimizin tanımına göre önemli olan neyse, bu bir karlılıksa maksimize etmeye çalışırsınız.
+
+292
+01:21:51,760 --> 01:21:55,600
+Karlılık fonksiyonunun minimumunu veya maksimumunu ararsınız.
+
+293
+01:21:56,083 --> 01:22:01,484
+Bu bir hata ise minimumunu arıyor olabilirsiniz. Bu bir hata fonksiyondur.
+
+294
+01:22:01,484 --> 01:22:16,844
+F dediğimiz şey, hedef veya kost veya maliyet fonksiyonu dediğimiz şey bizim problemimizin tanımıyla ilişkili olarak minimize veya maksimize etmek istediğimiz fonksiyondur.
+
+295
+01:22:17,747 --> 01:22:32,967
+A dediğimiz şey A kümesi yani fonksiyonun tanımlı olduğu veya bizim sistematik olarak deneyeceğimiz değerlerin oluşturduğu küme ise bizim feasible değerleri içeren bir kümedir.
+
+296
+01:22:32,967 --> 01:22:44,268
+Yani bir şekilde sistematik olarak bir deneme yapacağız. Farklı değerler koyup fonksiyona hesaplama yapacağız. Bunu sonsuz bir küme yapmak istemeyiz.
+
+297
+01:22:44,591 --> 01:22:48,851
+Problemimizin tanımlı olduğu aralıktan bir küme seçeriz.
+
+298
+01:22:50,231 --> 01:22:55,471
+Fonksiyonun minimize veya maksimize olacağını öngördüğümüz bir aralık varsa orayı seçeriz.
+
+299
+01:22:55,831 --> 01:23:02,731
+Bir şekilde kısıtlarız. A kümesi de o küme. Hangi kümeden değerler alıp F fonksiyonunun...
+
+300
+01:23:02,868 --> 01:23:14,388
+İçin hesaplayacağız ve sonucun küçülüp büyüdüğüne bakmak isteyeceğiz. O kümede A kümesi bizim değişkenlerimizi seçeceğimiz küme.
+
+301
+01:23:16,595 --> 01:23:31,296
+Genellikle A kümesini Öklet Uzay'ın bir A kümesi olarak seçiyoruz. Eşitlikler ve eşitsizliklerle tanımlayabiliyorsunuz. Yani şu değerden büyük veya şu değerle şu değer arasında.
+
+302
+01:23:31,792 --> 01:23:56,372
+Bir real sayı diye tanımlayabiliyorsunuz. Şurada revzeri en öklü tuzayı demişim. Neden? Değişkenlerimiz artık tek bileşenli, tek boyutlu değil, çok boyutlu. Dolayısıyla uzayımız da çok boyutlu. En boyutlu bir değişkenden bahsediyorsak, bu da doğal olarak sadece real sayılar değil.
+
+303
+01:23:57,043 --> 01:24:01,644
+En boyutlu real sayılar kümesinden bir örnek sayından seçilmesi lazım.
+
+304
+01:24:02,923 --> 01:24:10,943
+A domeni bu sefer bizim A kümemiz arama uzayımız olacak. Oradan değerler alıp deneyeceğiz.
+
+305
+01:24:12,064 --> 01:24:19,043
+A kümesindeki elemanların her biri başlangıçta bizim için aday çözümdür, olası bir çözümdür.
+
+306
+01:24:19,043 --> 01:24:23,463
+Dolayısıyla onlara da aday çözümler, olası çözümler diyebilirsiniz.
+
+307
+01:24:24,051 --> 01:24:41,291
+A kümesindeki elemanların sağlaması gereken özellikler var. A kümesinin normu sıfırdan büyük olmalı. Şimdi burada norm kavramını veya şu işareti daha önce gördünüz mü onu sormuş olayım.
+
+308
+01:24:45,619 --> 01:24:57,559
+Diğerlerde geçtiğini tahmin ediyorum ama bu işaret şeklinde mi gördünüz? Öklik normu var, başka mesafeyle ilgili normlar var, uzaklıkla ilgili.
+
+309
+01:24:59,000 --> 01:25:04,840
+Peki, karşılığını söylersem bileceğinizi düşünüyorum. X dediğim değişkenim çok boyutlu bir değişken.
+
+310
+01:25:05,619 --> 01:25:10,879
+Yani farz edin ki X1, X2, X3 gibi vektörel bir değişken bileşenleri var.
+
+311
+01:25:11,572 --> 01:25:29,832
+Her bileşeninin karesinin toplamı bize x değişkeninin normunu verir. Norm dediğim şey o. Bir vektörün bileşenlerinin karesel toplamı. Bu tanıdık geliyor mu herhangi bir şekilde?
+
+312
+01:25:31,112 --> 01:25:32,572
+Evet hocam.
+
+313
+01:25:33,092 --> 01:25:34,952
+Birazdan hesap yaparken de.
+
+314
+01:25:35,311 --> 01:25:49,551
+Kullanacağız. Peki, buna norm diyoruz. Biz şu anda optimizasyonu tanımlarken genel olarak öklit uzayından bahsettiğim için bunu da öklit mesafesi veya öklit normu olarak kullanıyoruz.
+
+315
+01:25:49,551 --> 01:26:00,091
+Ama farklı mesafeler için farklı normlarda var. Yani Manhattan Distance kullanıyorsanız Manhattan normu veya Manhattan uzaklığını ifade eden norm da.
+
+316
+01:26:00,479 --> 01:26:20,659
+Mevcut ayrıca. Ben şu anda ökleti konuşuyorum. Peki, eğer X değişkeninin normu 0 ise ve sadece sadece X eşit 0 ise sağlamamız gereken kurallar var.
+
+317
+01:26:24,051 --> 01:26:51,591
+Mutlak değer olarak yine dışarı çıkabiliyor ve bütün X'ler için bizim aday kümemizdeki bütün X'ler için bu kuralın sağlanması gerekiyor. Yine homojenlik kuralı. Aynı şekilde toplam sağlık kuralının da sağlanması gerekiyor. X artı Y'nin normu, X'in ve Y'nin ayrı ayrı normlarının toplamından küçük veya eşit olması lazım. Bütün aday X değerleri için.
+
+318
+01:26:52,724 --> 01:27:04,688
+Bu genel tanımlar olduktan sonra, eğer bu olası çözüm kümemiz, A kümemiz, hedef fonksiyonumuz...
+
+319
+01:27:04,688 --> 01:27:11,087
+Konveks değilse birkaç tane yerel minimum veya maksimum bulundurabilir.
+
+320
+01:27:12,128 --> 01:27:17,688
+Konveksden kastım ne? Avcunuzu yuvarlayın, tas gibi bir şekil görüyorsunuz ya.
+
+321
+01:27:18,247 --> 01:27:23,688
+O konveks fonksiyon veya onun tersi de tepe takla kolanında konkal fonksiyon hatırlarsanız.
+
+322
+01:27:24,095 --> 01:27:44,395
+Eğer bu şekilde net bir minimumu olan bir fonksiyondan bahsetmiyorsak, engebeli arazi gibi bir fonksiyondan bahsediyorsak, hep çok boyutlu düşünmeye başlayın artık. Ben şu boyuttan fazlasını hayal edemiyorum ama onlara da farklı şekilde bakacağız. Çok boyutlu olduğunu düşünerek konuştuğumu.
+
+323
+01:27:44,832 --> 01:28:02,432
+Ne kadar çok yerel minimum veya maksimum olabileceğini de o zaman öngörebilirsiniz. Dolayısıyla bu matematiksel tanımlar bize gerekli oluyor o durumda. Birden fazla yerel minimum veya maksimum söz konusu olabilir.
+
+324
+01:28:11,796 --> 01:28:28,256
+To parametresi alalım. X-X Yıldız'ın normu bu komşuluğun altında olmak üzere bir yer bulursak bir lokal minimuma, yerel minimuma denk geldik demektir.
+
+325
+01:28:28,256 --> 01:28:38,356
+Ne diyorum? Tekrar söylemeye çalışayım. O anda denediğimiz aday çözümlerden X Yıldız diye bir tanesinin
+
+326
+01:28:38,836 --> 01:28:44,748
+To mesafesindeki bütün komşularına göre fonksiyonun...
+
+327
+01:28:45,203 --> 01:29:06,703
+Alacağı değeri daha küçük oluyorsa x yıldız için o zaman biz ona bir lokal minimum diyoruz. Şekilsel olarak düşünürseniz işte bir yokuşun dibindeki bir nokta civarındaki yani şu to o kadar civarındaki diğer bütün noktalarda fonksiyonun değeri daha yüksektir. x yıldız için daha küçüktür.
+
+328
+01:29:13,203 --> 01:29:20,763
+Yıldız'ın normal bir seçtiğiniz bir komşuluk to değerinden küçük olmalı.
+
+329
+01:29:21,235 --> 01:29:35,576
+Bu koşulu sağladığınızda böyleyken beklediğimiz şey x yıldız için fonksiyonun değeri diğer bütün x'ler için fonksiyonun değerinden küçük veya eşit olmalı.
+
+330
+01:29:36,136 --> 01:29:44,255
+Dolayısıyla x yıldız etrafındaki bütün noktalar için fonksiyonun alacağı değerler daha büyük veya eşittir.
+
+331
+01:29:44,659 --> 01:29:49,840
+Bu lokal minimumun tanımı, lokal maksimum için de bunların tersini çevirin.
+
+332
+01:29:51,760 --> 01:29:57,399
+Lokal maksimumu da benzer şekilde bir tanımlamayla tanımlayabilirsiniz.
+
+333
+01:29:59,460 --> 01:30:03,539
+Linear olmayan en küçük kareler yöntemini kullanacağız.
+
+334
+01:30:03,539 --> 01:30:07,140
+En basit optimizasyon yöntemi olarak.
+
+335
+01:30:07,731 --> 01:30:21,271
+Onu da şöyle yapıyoruz. Yine M tane veriden oluşan veri setimiz var. Bir de model oluşturmamız lazım. X ve T'ye bağlı bir M diye bir model uygulayacağız.
+
+336
+01:30:21,271 --> 01:30:35,731
+Bu modelin işte X, T artı Epsilon doğruluğunda bizim deneysel olarak hesapladığımız Y değerlerini sağlayacağını varsayıyoruz. Dolayısıyla modelimizi şu şekilde yazıyoruz.
+
+337
+01:30:35,731 --> 01:30:38,632
+Yİ yani ölçülen değerler.
+
+338
+01:30:39,060 --> 01:31:05,760
+Ve bir X için, o ölçülen değere karşılık olan X için modelimizin verdiği değer bir epsilon hatasıyla, küçük bir hatayla Y'yi değerini sağlaması lazım. Bu epsilon ile gösterdiğimiz şeyleri, bunu da daha önce görmüşsünüzdür, küçük ölçüm hatalarını veya beyaz gürültüleri bu epsilon'a dahil edebiliriz. Ölçüm sırasında oluşmuş küçük hataları.
+
+339
+01:31:06,192 --> 01:31:06,952
+Vesaire.
+
+340
+01:31:07,956 --> 01:31:33,895
+Şimdi yine bir iki tane tanım yapmam lazım. Deminki yaptığımız o distance tanımı vardı en küçük kereler yönteminde, linear regresyonda. Burada daha ziyade residual veya artık şeklinde tanımlıyoruz. Bizim modelimizin hesapladığı değerle gerçekte olması gereken ölçtüğümüz değerin arasındaki farkı bir artık değer veya residual olarak
+
+341
+01:31:34,612 --> 01:31:50,711
+Bu tanımlıyoruz. Ondan sonra yapmamız gereken şey bir karesel hata yazmak ve o karesel hatayı minimum yapan değeri bulmak. Ama artık lineer denklem sistemiyle olmayacak bu, onu biliyoruz.
+
+342
+01:31:50,711 --> 01:31:57,511
+Peki bu tanımları yapalım. Yerel minimumu x üzeri yıldızla, x yıldızla gösterdik.
+
+343
+01:31:57,908 --> 01:32:12,627
+Bunun bir yerel minimum sayılması için x-x yıldız normunun belirlenen küçük bir komşuluk etrafında en küçük değere sahip olduğunu bilmemiz gerektiğini söyledik.
+
+344
+01:32:12,627 --> 01:32:22,387
+Aynı zamanda x yıldız için fonksiyonun değerinin diğer x'lerden küçük olması gerektiğini söyledik.
+
+345
+01:32:22,676 --> 01:32:32,476
+Bu tanımları kullanarak lokal minimum problemini veya lokal minimum bulmamızı sağlayacağız bir şekilde.
+
+346
+01:32:33,476 --> 01:32:37,936
+Şimdi en küçük karelerin gerektirdiği gibi hatamızı tanımladık.
+
+347
+01:32:37,936 --> 01:32:43,276
+Buna da cost function diyoruz artık non-linear problemlerde veya optimizasyon içinde.
+
+348
+01:32:43,936 --> 01:32:47,036
+Yani rezidü tanımladık yukarıdaki.
+
+349
+01:32:47,408 --> 01:32:50,508
+Post Function tanımladık veya maliyet fonksiyonu.
+
+350
+01:32:52,708 --> 01:32:54,868
+Ve iki koşula bakacağız.
+
+351
+01:32:55,248 --> 01:32:58,768
+Fonksiyonla ilgili koşulumuz ve normla ilgili komşulumuz.
+
+352
+01:32:59,388 --> 01:33:04,148
+Bu X yıldızı, bu iki koşulu sağlayan X yıldız noktasını bulmaya çalışacağız.
+
+353
+01:33:04,608 --> 01:33:24,947
+Maliyet fonksiyonumuzu demin türev ile türevini sıfıra eşitleyerek yapmıştık ama şu anda biraz daha farklı bir yaklaşım sergiliyoruz. Bu fonksiyonun bir kere türevlenebilir olduğunu varsayacağız veya türevlenebilir bir fonksiyon kullanmamız gerekiyor post fonksiyonunda.
+
+354
+01:33:27,068 --> 01:33:31,947
+Türev ifadesini oluşturacağız. Şimdi burada bir kere daha durmam gerekiyor.
+
+355
+01:33:32,307 --> 01:33:55,167
+Taylor serisinden yararlanarak Türev ifadesi bulmayı biliyor musunuz? Söylediğim şey şu, daha önce belki ilkokuldan sonra başlayan bütün matematik derslerinde gördüğünüz fx artı h şeklinde bir formül vardır Türev için.
+
+356
+01:33:55,667 --> 01:34:13,807
+İşte bir artım verirsiniz. Böyle iki sizdeki türevin yaklaşık karşılığıdır. İleri fark, geri fark diye. Bu formülü hatırlıyor musunuz? Hatırlıyorsunuz da. Şuradan göstereyim.
+
+357
+01:34:15,807 --> 01:34:22,087
+Fx artı h, böyle fx artı h şunu paydaya geçirdiğinizde şu sağ tarafı ignor edin.
+
+358
+01:34:22,612 --> 01:34:24,731
+Böyle bir formül vardır.
+
+359
+01:34:28,819 --> 01:34:53,220
+Peki, hatırlıyorsunuz eminim. Tamam, sesiniz çıkmıyor sadece. Bunun peki biraz daha o formülün bir hata içerdiğini de biliyorsunuz. Yani size yaklaşık türev değerini verir de belli bir A noktasında veya H noktasında ama hata da içerir. Onu da hatırlıyor musunuz? Hatırlıyorsunuz diye düşünüyorum.
+
+360
+01:34:53,663 --> 01:35:17,403
+Peki, bunun içerdiği hata miktarını veya bu formülün nereden geldiğini biliyor musunuz? Esas sorun bu olsun. O bildiğiniz ileri fark, geri fark formülünün nereden geldiğini biliyor musunuz? Nasıl çıkarılmış? Geometrik çiziminin dışında soruyorum. Ya da geometrik çiziminin de aslında bir sebebi var.
+
+361
+01:35:19,923 --> 01:35:38,064
+Peki, geometrik çiziminin de eğimi bulmaya çalıştığı için o noktada o çizgilerle dikdörtgen oluşturup, o küçük, mesela yukarıda oluşturduğu karenin yarısı yok. Yani hata payı o oradan geliyor.
+
+362
+01:35:38,064 --> 01:35:40,444
+Tamam, peki matematik çizim.
+
+363
+01:35:41,844 --> 01:36:01,003
+Onları matematik olarak ifade etseniz, yani o karenin yarısının boyutunu yazsanız çıkacak formülün ne olduğunu veya onun denklem karşılığını aslında önünüzde slide'da yazıyor da öyle bir şey geçti mi diye aslında sormak istiyorum ama sanki geçmemiş gibi anlıyorum.
+
+364
+01:36:01,460 --> 01:36:21,699
+Aslında o Tyler serisi açılımıdır. Yani oradaki karenin veya hata olarak belirlediğiniz üçgenin attığımız kısmın karşılığı bir fonksiyonun Tyler serisinin açılması. Çünkü oradaki fonksiyonun tam net ifadesini yazamıyoruz denklem olarak.
+
+365
+01:36:22,228 --> 01:36:47,507
+Bir kısmını ihmal ediyoruz. Aslında yazsak onun bir yolu da Tyler serisine açmak oradaki ifadeyi. Tyler serisine açtığınız zaman, fonksiyonu bu haş kadar bir artım verip seriye açtığınız zaman, oradan bir grup terimi atarsanız, o geometrik olarak hata diye kabul ettiğiniz veya attığınız kısım o kısım işte.
+
+366
+01:36:48,212 --> 01:37:01,732
+Orada daha küçük bir kısmı atmak isterseniz, Taylor serisine daha çok terim açıp, daha az terimi atarsanız, daha az hata payıyla fonksiyonun yaklaşık karşılığını bulmuş olacaksınız.
+
+367
+01:37:01,732 --> 01:37:15,412
+Dediğimi ben anlamadım, siz anladınız mı? X noktasında mevcut fonksiyonumu bir h artım vererek Taylor serisine açıyorum.
+
+368
+01:37:16,051 --> 01:37:21,952
+Ve bunu aslında geometrik olarak da çizseniz, o sizin bildiğiniz şekil demek o.
+
+369
+01:37:22,952 --> 01:37:28,851
+Talor serisini açtığımda tamamen aslında Talor serisi açılımı böyle bir şey.
+
+370
+01:37:28,851 --> 01:37:36,011
+Her terim aslında birinci, ikinci, üçüncü türevleri içeren terimler.
+
+371
+01:37:36,652 --> 01:37:43,131
+Talor serisi açılımında tamamen fonksiyonuma bağlı olarak sonsuz terim dahi olabilir.
+
+372
+01:37:43,667 --> 01:38:00,667
+Dolayısıyla o kadar terimi hesaplayamayacağım için bazen Perlör serisini açtığımda bir kısmını atıyorum terimlerin. Bunu attığım zaman da kabul ettiğim bir hata miktarı olarak veya ihmal edilmiş bir kısım olarak karşıma çıkıyor.
+
+373
+01:38:01,300 --> 01:38:11,060
+Türev formülü de aslında tamamen oradan geliyor. Böyle bir fx artı aşı Thalors serisine açtığım zaman şöyle bir ifade geliyor.
+
+374
+01:38:11,720 --> 01:38:19,619
+Devam edecek olsam, bu arada buradaki t'lere takılmayın, çok değişkenli olduğu için transpozu manasında o t.
+
+375
+01:38:20,300 --> 01:38:24,659
+Bu h dediğim artım, x'imiz de çok değişkenli, h'ımız da öyle.
+
+376
+01:38:25,140 --> 01:38:46,060
+Haş dediğim terim transpoza alınmış şekilde. Şurada fonksiyonun kendisi var, ikinci türevi var, üçüncü türevi var. Böyle gidiyor Taylor serisi açılımı. Ben de ne yapıyorum? Buradan bir kısmını atıyorum.
+
+377
+01:38:46,612 --> 01:38:57,132
+Eğer şanslıysak, fonksiyonumuz basitse, iki terimle, üç terimle ifade edebiliyorsam, birebir türevini hesaplamam da mümkün bu Taylor açılımıyla.
+
+378
+01:38:57,872 --> 01:39:08,352
+Fonksiyonum kompleksse ve üçüncü, dördüncü, beşinci türevi alınabilen üst derece bir fonksiyonsa, o zaman bu terimlerin sayısı artıyor.
+
+379
+01:39:12,756 --> 01:39:22,975
+Klasik sizin bildiğiniz iki terimle ileri fark formülünden daha iyi bir formül elde etmek istersem, buradan biraz fazla terim kullanmayı düşünebilirim.
+
+380
+01:39:22,975 --> 01:39:28,975
+Ve böylece daha doğru bir türev yaklaşımı formülü elde edebilirim.
+
+381
+01:39:30,256 --> 01:39:38,895
+Bunu eğer bu slide'larımda yok herhalde ama bir ara geçerim size. Belki bir yerde lazım olur kullanırsınız diye.
+
+382
+01:39:40,884 --> 01:39:56,103
+Burada ben Taylor açılımını yazacak olursam o zaman fonksiyonun kendisi birinci terimde. İkinci terimde verdiğim artım miktarı çarpı G ile gösterdiğim fonksiyonun birinci türevi.
+
+383
+01:39:57,224 --> 01:40:05,643
+Üçüncü terimde 1 bölü 2 çarpı artım miktarı çarpı büyük H ile gösterdiğim şey ikinci türev.
+
+384
+01:40:06,003 --> 01:40:22,583
+Artı işte üçüncü türev içeren ifade böyle böyle gidecek. Ben buradan istediğim şey ne? Birinci türev formülü elde etmek istiyorsam bakın şuradaki G'yi bu denklemde çekip yalnız bıraksam bana bir türev formülü verir.
+
+385
+01:40:23,028 --> 01:40:42,967
+Hatta sadece birinci türev değil, ikinci türev için de bir formül elde edebilirim. Bunun için ne yapacağım? Büyük h ile gösterdiğim ikinci türev değişkenini çekip yalnız bırakacağım. Bütün bu terimleri diğer tarafa attığımda aslında ben farklı farklı türev formülleri elde edebilirim.
+
+386
+01:40:48,000 --> 01:40:53,899
+O kadar uzayan, daha hassas hesaplama yapan türev formülleri elde edebilirim.
+
+387
+01:40:55,100 --> 01:40:57,640
+Öyle söyleyeyim size şimdilik bu kadar.
+
+388
+01:40:58,500 --> 01:41:04,539
+Buradan bizi ilgilendirecek olan şey, şuradaki G ile gösterdiğim birinci türev.
+
+389
+01:41:04,800 --> 01:41:08,760
+G ile gösterme sebebim de ona gradyan ismini vermemiz.
+
+390
+01:41:09,340 --> 01:41:12,380
+Büyük H ile gösterdiğim de ikinci türev, esyan.
+
+391
+01:41:13,108 --> 01:41:34,307
+diye adlandırdığımız parametre. Şimdi eğer siz bir fonksiyonu yani maliyet fonksiyonunu daha az hatayla daha iyi minimize etmek istiyorsanız, burada ne kadar çok terim kullanırsanız o kadar iyi temsil edersiniz.
+
+392
+01:41:34,307 --> 01:41:37,588
+Fakat burada terim kullanmanın bir bedeli var.
+
+393
+01:41:37,971 --> 01:41:56,971
+Ne demek oluyor daha fazla terim kullanmak? Benim bu fonksiyonun türevlerini alabilmemi gerektiriyor. Dolayısıyla biz de ne yapacaktık? Karesel hata yapıp sonra türevini alacaktık ya. Dolayısıyla bu talor serisi açılımından yararlanarak...
+
+394
+01:41:57,536 --> 01:42:19,436
+Optimizasyon yöntemleri geliştirebiliriz. Bir tek bize ne lazım? Şuradaki türevli ifadeleri çekebilmemiz lazım. Burada ufacık bir şey söylemem lazım. Şuradaki order hküp diye gösterdiğim parametre oradaki o order hküp mertebesinde ihmal edilmiş terimler var.
+
+395
+01:42:19,855 --> 01:42:36,735
+Anlamında orada duruyor o. Yani sadece ikinci türevli terimi aldım. Ondan sonrasını yazmamışım dikkat ederseniz. Geri kalanı ihmal ettim. Bu ihmal ettiğim kısmın barındırdığı hata miktarı da h küp mertebesinde.
+
+396
+01:42:37,655 --> 01:42:45,775
+Tekrar söylüyorum, h ile gösterdiğim ve x ile gösterdiğim artık non-linear ve çok boyutlu bir fonksiyondan bahsediyoruz.
+
+397
+01:42:46,260 --> 01:42:59,400
+Bu değişkenlerim vektörel. Yani x dediğim şey tek bir skaler sayı değil. Bir vektör, birleşenleri var. x1, x2 gibi birleşenleri var. H da aynı şekilde.
+
+398
+01:42:59,956 --> 01:43:17,615
+Dolayısıyla benim şurada yine haşın normu olarak göstermişim bu hatayı. Kastettiğim şey haşın kaç tane bileşeni varsa, en tane bileşeni varsa en tane, bu bileşenlerin karelerinin toplamı ve kare kökü kadar bir hata var burada.
+
+399
+01:43:20,020 --> 01:43:43,900
+Bunu demem çok gerekmiyordu aslında. Şurada ihmal ettiğim şeyi söylemem yeterliydi de. Burada norm hesabını da göstermiş olmak için yazdım bunu aslında. Bu işte ÖKLİT normu veya ikili norm dediğiniz normun nasıl hesaplandığını gösteriyor. Siz de HALOR serisi açılımı yaptığınızda veya başka durumlarda hatanızı ifade ederken
+
+400
+01:43:44,372 --> 01:43:55,112
+Eğer elinizdeki çok boyutlu bir fonksiyon ise vektörel bir değişkeniniz varsa bu şekilde ifade edebilirsiniz. Bu sadece ek bir not olarak düşünün.
+
+401
+01:43:55,632 --> 01:44:07,084
+Şimdi ben ne istiyorum? X yıldız diye bir değer bulmak istiyorum. Bunun da mümkün olduğunca haşın normunu küçük tutarak...
+
+402
+01:44:07,155 --> 01:44:23,976
+Bir X yıldız artı H noktası bulmak istiyorum. Neden? O X yıldız artı H noktası bana türevin minimum olduğu veya türevin sıfır olduğu bir denklem yazma olanağı verecek.
+
+403
+01:44:34,484 --> 01:44:49,904
+Türevin sıfır olduğu yerde olacak. Bunu öngörebiliyorum. Her zaman olduğu gibi fonksiyonun minimum olduğu yer veya türevinin sıfır olduğu yer benim fonksiyonun minimumunu bulacağım yerdir.
+
+404
+01:45:00,595 --> 01:45:17,935
+Sıfır olduğu yeri bulmaktır diyerekten böyle bir tanım yazabilirim. Bu tanıma uyan yani türevin sıfır olduğu nokta benim lokal minimizer x yıldız noktamın olduğu yerdir.
+
+405
+01:45:19,507 --> 01:45:37,768
+Başka nerede türev sıfır olur? Eğer bir duran nokta söz konusuysa, yani bir düzlük gibi bir şekil oluşmuşsa, noktanın sağında da solunda da fonksiyonun değeri artmıyor veya azalmıyorsa bir duran noktaya denk gelmişizdir.
+
+406
+01:45:37,768 --> 01:45:41,347
+Oradan çizeceğiniz teyette aynı minimumda olduğu gibi.
+
+407
+01:45:41,876 --> 01:46:02,636
+Durağın paralel olur eğriye ve siz bir minimum bulduğunuzu düşünebilirsiniz. Bu bir durağın noktada olabilir. Tersi doğru değil. Durağın noktayı minimum olarak kabul edemeyiz ama bir minimum aynı zamanda durağın noktadır diyebiliriz.
+
+408
+01:46:09,167 --> 01:46:25,407
+Bir minimum bulma şansımız var. Başka elimizde matematiksel neler var? Şimdi biner denklem seti yazamıyoruz ya, matematiğin teorisindeki temel bilgilerden yararlanarak algoritma geliştirmemiz lazım. O yüzden bunları söylüyorum bu arada korkmamak için.
+
+409
+01:46:26,627 --> 01:46:28,487
+Diğer olasılık.
+
+410
+01:46:28,916 --> 01:46:40,356
+Sadece birinci terimi değil de ikinci terimi, yani Heslihan dediğim ikinci türevin olduğu terimi de dikkate alarak ikinci türev formülüden yararlanmak.
+
+411
+01:46:40,556 --> 01:46:56,436
+Eğer bir fonksiyonun ikinci türevine bakarsak başka çıkarımlar da yapabiliyoruz. Yani birinci türeve bakarak birinci türevin minimum olduğu yer, pardon sıfır olduğu yer bize bir minimum nokta veya draw'an nokta verir. Onu biliyoruz.
+
+412
+01:46:56,819 --> 01:47:18,000
+Hesiyan nasıl olursa bize minimumla ilgili bir ipucu verebilir, ondan bahsedeceğim. Hesiyan dediğimiz veya ikinci türev matrisi dediğimiz şey, tersi kendisine eşit olan bir kare matris. Hesiyanın kesin pozitif olması söz konusu olursa,
+
+413
+01:47:18,420 --> 01:47:35,199
+Hesiyanın kesin pozitif olması demek de determinantin de bütün değerlerin pozitif olması, determinant değerinin pozitif olması demek. Böyle bir koşulda koyarsak, Hesiyanın...
+
+414
+01:47:36,095 --> 01:48:00,515
+Değeri, Esian'ın öz değerlerinin bir to sayısından büyük olacağını söyleyebiliriz. O da etrafındaki komşular diye düşünürseniz bu to'yu, Esian'ın kesin pozitif olduğu yerde benim bir minimum bulma ihtimalim yüksektir anlamına gelir.
+
+415
+01:48:01,203 --> 01:48:15,823
+Dolayısıyla şu çıkarımları yapabiliyoruz matematiksel olarak. Bizim aday kümemizden seçtiğimiz xs noktasına bakıyoruz. O noktada fonksiyonun hessiyanını hesaplıyoruz. Yani ikinci türevini.
+
+416
+01:48:16,275 --> 01:48:23,295
+Ve onun kesin pozitif olması durumunda XS bir lokal minimum noktası diyebiliyoruz.
+
+417
+01:48:23,755 --> 01:48:38,435
+Aday noktamın HESİAN pozitifken Durağan mı yoksa minimum olduğunu söyleyemiyorum ama HESİAN'la birlikte baktığımda eğer HESİAN kesin pozitifse bir lokal minimum bulduğumu diyebiliyoruz.
+
+418
+01:48:41,935 --> 01:49:03,823
+Bir lokal maksimum bulduğumu söyleyebiliyorum. Hesiyan belirsizse yani hem artı hem eksi özdeğerleri olan bir matrizse o zaman bir kritik nokta bulduğumu söyleyebiliyorum. Matematik bilgimiz içinde böyle şeyler var. Şimdi optimizasyon algoritmaları da hepsi...
+
+419
+01:49:03,823 --> 01:49:27,503
+Bu bilgileri kullanıyor. Gradiyana yani birinci türeve bakanlar var. Biraz daha basit yöntemler. Basit derken şunu demek istiyorum. Sadece birinci türevi almamızı gerektirdiği için işlemsel olarak daha az karmaşık yöntemler var. Hem birinci türevi hem ikinci türevi kullanan işlemsel olarak daha karmaşık olan yöntemler var.
+
+420
+01:49:30,387 --> 01:49:40,828
+Direkt türev almayıp türeve yaklaşık değer hesaplayan, yani hesapsal karmaşıklığı azaltıp çıkarımı daha güçlü yapmaya çalışan yöntemler var.
+
+421
+01:49:40,828 --> 01:49:51,847
+Ama hepsinin dayandığı temel matematik bilgi bu. Ben bir fonksiyonu, maliyet fonksiyonunu yazdıktan sonra bunu talor serisine açabilirim.
+
+422
+01:49:55,475 --> 01:50:21,695
+Türev, birinci türev ve ikinci türev içeren terimleri kullanacak şekilde maliyet fonksiyonumu daha hassas hesaplayabilirim. Birinci türevin ve ikinci türevin durumuna bakarak, yani komşulara göre sağladığı minimum fonksiyonu minimum yapıp yapmadığına bakarak, ikinci türevin pozitif negatif olmasına bakarak,
+
+423
+01:50:22,068 --> 01:50:36,588
+Bir minimum nokta bulup bulmadığımı anlayabilirim. Çünkü elimizde artık parabol gibi falan böyle formülü sabit olan veya nispeten basit olan daha yapısal denklemler yok.
+
+424
+01:50:36,588 --> 01:50:46,148
+Daha gerintili çıkıntılı fonksiyonlar var. Belki büyük ihtimalle de çok direkte bir cebirsel olarak ifade edemediğimiz fonksiyonlar var.
+
+425
+01:50:46,448 --> 01:51:03,408
+O zaman biz belli bir bölgede minimum bulmaya veya maksimum bulmaya çalışıyorsak fonksiyonun o noktadaki türev özelliklerinden, komşularına göre belli bir noktada aldığı değerlerden yararlanarak algoritma geliştirmemiz lazım.
+
+426
+01:51:05,203 --> 01:51:19,323
+Düşüm yöntemleri ne yapıyor? Non-linear optimizasyon yöntemlerinin temeli ve bizim de backpropagation algoritmasında kullanacağımız temel yaklaşım aynı şey.
+
+427
+01:51:21,463 --> 01:51:28,203
+Bir kere iteratif yöntem. Genel olarak bütün non-linear optimizasyon yöntemleri de iteratif yöntemler.
+
+428
+01:51:28,627 --> 01:51:48,207
+Aday kümemizden herhangi bir nokta seçerek, bir ilk sıfır noktası seçerek aramaya başlıyor. Bir vektör serisi üretiyor. Ondan sonra bu noktaların her birini fonksiyona, değerini hesaplayıp fonksiyonda, hangi fonksiyonda? Maliyet fonksiyonunda.
+
+429
+01:51:54,927 --> 01:52:22,467
+Bu aday noktanın bir minimum olup olmayacağına dair bir karar veriyor. Bir minimum olduğuna kanaat getirdiyse, yani tabii bunu hayali bir kanaat değil, matematiksel olarak bunun bir minimum olduğunu anladıysa, bizim için yeterince iyi mi diye başka durma koşulları tanımlayabiliyorsunuz algoritmanızda. O koşullara da bakarak o noktayı bir minimum olarak kabul ediyor veya etmiyor.
+
+430
+01:52:23,155 --> 01:52:38,996
+Özde mantığı böyle. Ben bir susayım. Sorunuz varsa sorun. Çok sözler açıkladıysam ama şimdi birazdan algoritma üzerinde uygulayacağım. Birden fazla feature varsa X vektörü matriz mi oluyor?
+
+431
+01:52:41,300 --> 01:53:09,300
+Şimdi tam olarak feature değil benim bahsettiğim şey. Bahsettiğim şey aslında bir fonksiyonun minimum olmasını sağlayan bir şey. Evet, matris halinde de olabilir. Sonuçta bir matrisin alt kümesidir vektör. Ama etrafına yani biz özellik boyutuyla ilgilenmiyoruz o noktanın. Konumuyla ilgileniyoruz. Dolayısıyla…
+
+432
+01:53:09,300 --> 01:53:20,220
+Sadece bir feature'nın aldığı değerler, eğer feature diyeceksen buna, sadece bir sütunu, bir vektör kısmı bizim için yeterli.
+
+433
+01:53:20,724 --> 01:53:47,224
+Bu noktanın konumuyla ilgilendiğimiz için fonksiyonun minimum olduğu yerdeki konumu gösteren şey de vektör olarak ifade edilebilir. Yanındaki feature'lerle ilgilenmiyorum. Yani o minimumda bir takım renk özellikleri olabilir, başka şeyler olabilir. Onlar beni ilgilendirmiyor. O piksel, bu bir pikselse veya başka bir şeyse neyse, nerede ben onunla ilgileniyorum.
+
+434
+01:53:47,828 --> 01:54:13,808
+Bir takım feature'ları temsil ediyorsa da bunu bir vektörde özetliyorum. Sonuçta o piksellerin renklerine göre eğer biz bunu bir dip nokta veya minimum olarak kabul edeceksek de bunu tek bir sayıya veya bir vektöre özetlemeniz mümkün. Dolayısıyla vektörel olarak kullanıyoruz genellikle hata fonksiyonunu yazarken.
+
+435
+01:54:14,355 --> 01:54:19,275
+Ama matris olmasında da sıkıntı yok. Sadece hesaplamalar çok fena karmaşıklaşır.
+
+436
+01:54:19,275 --> 01:54:31,336
+Yani iki değinip daha fazla boyutta ve eme enlik boyutlarda yapmanız gereken hesaplar çıkar. Mantık değişmez.
+
+437
+01:54:32,015 --> 01:54:40,096
+Ama genellikle vektör olarak kullanıyoruz. Yani ek bir tanımlamalar bizim için sonucu değiştirmeyecek.
+
+438
+01:54:40,532 --> 01:55:03,152
+Hatanın küçük olmasından bahsediyorsam orada seçtiğim benim için minimum her neyse bu bir pikselin renk değeri de olabilir, başka bir şey de olabilir. Onları ele alarak mesela senin her feature'ın başka bir vektörü olarak temsil edilebilir, bir değişken olarak. Genel olarak derken evet bu ders için söylüyorum Fedi.
+
+439
+01:55:04,627 --> 01:55:28,328
+Bu ders için söylüyorum. Yani yapay sinir ağlarında söylüyorum. Daha sonrasında derin ağlarda ne yapacağız? Aslında şöyle düşünün. Sen her feature'u bir vektör olarak tanımlarsan onların her biri bir input olacak. Yani burada da belki bir matris olarak girdi vereceksin ama mesela sizin ödevinizde olduğu gibi.
+
+440
+01:55:28,884 --> 01:55:45,043
+Aslında ben orada harfleri hatırlarsanız bir matrise oturttum. Ama ne yaptım ondan sonra? Her satırı bir vektörün bir kısmı olarak düşünüp her satırı peş peşe yazdığımda vektör olarak ifade ettim.
+
+441
+01:55:45,663 --> 01:55:54,603
+Tek bir bilgi içeride düşündüğünüz şey bir matriz dahi olsa onu bir vektör olarak peş peşe yazarak ifade edebilirsiniz.
+
+442
+01:55:55,412 --> 01:56:05,992
+Dolayısıyla birden fazla vektörünüz veya feature'niz varsa da bunları da ayrı inputlar olarak yani ayrı vektörler olarak vermeniz gerekir.
+
+443
+01:56:06,992 --> 01:56:13,032
+Dolayısıyla şu anda konuştuğum işlemleri vektör üzerinden düşünmeniz mümkün. Daha kolay.
+
+444
+01:56:15,532 --> 01:56:20,971
+Tamam. Ara istiyor musunuz? Bir beş dakika vereyim mi ara?
+
+445
+01:56:22,068 --> 01:56:47,188
+Her vektörde bir sample point mi? Kastettiğinde sample point'ten vektörün bileşenleri var. Bileşeni mi kastediyorsun? Değer olarak mı sample point? Bir açar mısın? Bileşen mi kastediyorsun? Hayır, bir tane olmayacak. O zaman zaten bir bileşenli bir vektör bir tane skaler değer olur. Hayır, o değil.
+
+446
+01:56:47,859 --> 01:56:52,619
+Yani bir sütun olarak birden fazla bileşeni olan bir vektörden bahsediyorum.
+
+447
+01:56:53,939 --> 01:56:57,939
+Ama çok sütunlu bir matristen bahsetmiyorum.
+
+448
+01:56:58,099 --> 01:57:02,599
+Tek sütunlu bir matriz veya tek satırlı bir matristen bahsediyorum.
+
+449
+01:57:03,579 --> 01:57:08,999
+Ama satır uzunluğu, sütun uzunluğu istediğim kadar veya bileşen sayısı istediğim kadar olacak.
+
+450
+01:57:10,239 --> 01:57:12,899
+İşte bu bileşenlerin her biri bir future mıdır?
+
+451
+01:57:13,587 --> 01:57:32,427
+Yoksa bu bileşenlerin hepsi bir arada bir future ifade ediyordur. Bunu bir vektör olarak ifade etmişsindir. Bu tamamen problemine bağlı. Eğer hepsi birlikte bir şey ifade ediyorsa bunu bir input olarak verebilirsin.
+
+452
+01:57:32,847 --> 01:57:42,768
+Her biri ayrı feature ifade edip ama birbiriyle birlikte gidiyorsa o zaman onu bir vektör olarak bütünüyle de bir input olarak verebilirsin.
+
+453
+01:57:44,368 --> 01:57:50,448
+Örnek üzerinden istersen konuşalım. Şu anda biraz afak gibi oldu ama anladım. Tamam.
+
+454
+01:57:52,587 --> 01:57:59,047
+Örnekle de konuşabiliriz tekrar. Arkadaşlar, ikiyi beş geçe tekrar başlayalım mı?
+
+455
+01:58:00,243 --> 01:58:02,243
+Tamam hocam. Tamam, teşekkür ederim.
+
+456
+02:06:41,203 --> 02:06:43,323
+Geldim arkadaşlar, başlayalım mı?
+
+457
+02:06:44,643 --> 02:06:45,763
+Olur hocam.
+
+458
+02:06:45,763 --> 02:06:58,483
+Tamam. Şimdi yöntemlere düşün yöntemi diyoruz. Çünkü yapmaya çalıştığımız şey işte elimizde bir aday çözüm uzayı var.
+
+459
+02:06:59,444 --> 02:07:16,284
+O çözümlerden sırayla deneyeceğiz. Denerken de sürekli bir yukarı bir aşağı yani minimuma yaklaşıp uzaklaşmak gibi çözümden bizi uzaklaştıran veya çözümü uzatan taktikler.
+
+460
+02:07:17,652 --> 02:07:34,372
+Lansız taktikler uygulamak istemiyoruz. Mümkün olduğunca bir fonksiyonun minimumuna doğru yol almak istiyoruz. Ve seçtiğimiz her aday çözümün bir öncekinden daha iyi sonuç vermesine bakmaya çalışıyoruz bu durumda.
+
+461
+02:07:34,836 --> 02:07:50,655
+O sonuç nedir? Eğer bir minimum bulmaya çalışıyorsak yeni adayımız yani k artı birinci adayımız k'ıncı adayın x k'nın fonksiyon için verdiği değerden daha küçük değer verebiliyor olması lazım.
+
+462
+02:07:50,655 --> 02:07:55,155
+Bu ne demektir? Fonksiyonun değerini küçültüyorum. Bu yönde gidersem.
+
+463
+02:07:55,475 --> 02:08:15,475
+Fonksiyonun değerini küçültüyorum ve bir minimuma ulaşma şansım var. Dolayısıyla algoritmalarımızda bu ifade bir durma koşulu olarak veya en azından bir kontrol olarak genellikle yer alacak. Böyle yaparsak bir minimuma...
+
+464
+02:08:15,507 --> 02:08:28,467
+Her zaman yaklaşmamız mümkün olacak. Maksimuma doğru gitmeyeceğiz. Bir kritik noktaya da takılma ihtimalimizi azaltacak bir kriter bu.
+
+465
+02:08:29,407 --> 02:08:42,587
+Eğer çözünden çok uzaksak, işte X yıldıza yani bir minimum noktaya doğru giderken kararlı iterasyonlar oluşturmaya çalışıyoruz bu koşulu kullanarak.
+
+466
+02:08:42,931 --> 02:08:50,931
+Hata değerinin algoritmanın ilk adımları dışında artmasına da izin vermemeye çalışıyoruz.
+
+467
+02:08:50,931 --> 02:09:07,751
+Ve X yıldıza yaklaştığımız noktalarda genellikle eğer belli bir iterasyonu geçmiş ve minimum bulmaya yakınsak artık seçtiğimiz noktalar birbirinden biraz daha uzak, minimuma daha yakın noktalar oluyor.
+
+468
+02:09:08,091 --> 02:09:10,231
+Yakınsama daha hızlı gerçekleşiyor.
+
+469
+02:09:10,899 --> 02:09:25,340
+Şimdi, eğer lineal regresyonla non-lineal regresyonu biraz kıyaslamaya çalışırsak, lineal regresyonda kat sayıları cebirsel olarak ifade edip,
+
+470
+02:09:25,583 --> 02:09:37,503
+Bu denklemleri çözerek aradığımız kat sayıları bulabiliyorduk. Non-linear regresyonda böyle bir şey mümkün değildi. Linear regresyonda tabii en küçük kareler yöntemini uygulayabiliyorduk.
+
+471
+02:09:37,503 --> 02:09:53,503
+Orjinal verilerle fonksiyonun bulduğu değerler arasındaki farkın karesini küçültmeye çalışıyorduk. Burada da bir maliyet fonksiyonu yazıyoruz ama cebirsel olarak çözüm bulamadığımız bir maliyet fonksiyonuydu. Dolayısıyla o maliyet...
+
+472
+02:09:53,583 --> 02:10:11,884
+Fakat bu hareket fonksiyonunu küçültmeye çalışıyoruz yine. Aynı şekilde bir hata fonksiyonunu küçültmeye çalışıyoruz yine ama optimizasyon algoritmalarıyla yapıyoruz burada. Linear regresyonda ise artık doğru parabol veya evinci derece polinom uydurarak yapıyorduk.
+
+473
+02:10:12,404 --> 02:10:38,304
+Çoklu regresyon durumunda yine en küçük teler yöntemini kullanabiliyorduk. Ayrıca çoklu regresyon için kullanılan lagraj yöntemi falan da var. O da mümkün. Non-linear regresyon durumunda maliyet fonksiyonumuzu küçültmek için seçtiğimiz aday noktanın fonksiyonundaki karşılığının her zaman küçülmesine.
+
+474
+02:10:38,963 --> 02:11:01,104
+Bu örneğe sağlayacak yönde hareket etmek, bir boyut, iki boyut için farklı algoritmalar, en boyut için farklı algoritmalar uygulamak gibi çözümlerimiz var. En bilinen optimizasyon algoritmaları bunlar aynı zamanda ama bizim de hatayı minimize etmek için kullanacağımız, minimizasyon algoritmalarının en yaygın kullanılanları.
+
+475
+02:11:01,555 --> 02:11:16,195
+Aslında aynı zamanda da search algoritmaları bunlar. Altın oranı algoritması, gradiyan düşürüm algoritmaları, Newton, Quasi-Newton, Levenberg-Marquardt gibi algoritmalar yapay sinir ağlarında da kullandığımız.
+
+476
+02:11:17,415 --> 02:11:26,135
+İkincisi, gradiyan düşürüm algoritması en yaygın kullanacağımız yöntem, kullanılan yöntem. Onun da sebebini söyleyeceğim.
+
+477
+02:11:26,511 --> 02:11:34,111
+Ama kabaca söylemem gerekirse, gradiyan düşüm algoritmasında sadece birinci türev hesaplama ihtiyacımız var.
+
+478
+02:11:34,771 --> 02:11:43,311
+Dolayısıyla hata fonksiyonumuzun sadece birinci türevinin alınabiliyor olması bizim için yeterli.
+
+479
+02:11:44,151 --> 02:11:51,211
+Çünkü fonksiyonumuzun ikinci, üçüncü türevi alınamıyor da olabilir, olmayabilir, mevcut olmayabilir.
+
+480
+02:11:51,699 --> 02:12:03,539
+Gradiyan düşme algoritması o manada uygulama alanı daha geniş. İkincisi de sadece birinci türev hesaplayacağımız için karmaşıklık olarak daha iyi.
+
+481
+02:12:10,336 --> 02:12:18,076
+Eğer bir minimum varsa, lokal de olsa bu minimum, o minimuma yakın sayabilen bir algoritma.
+
+482
+02:12:18,176 --> 02:12:19,596
+Nedenlerini daha konuşacağız.
+
+483
+02:12:20,316 --> 02:12:21,336
+Newton algoritması...
+
+484
+02:12:22,079 --> 02:12:46,760
+İkinci derece türev kullanan bir algoritma. Konveks fonksiyonlarda, büradyan düşüme göre çok daha hızlı, minimuma yakın sayabilen bir algoritma. Ama işte ikinci türevin hesaplanmasını gerektiriyor. O manada karmaşık ve daha da tehlikeli olan eğer fonksiyonunuz konveks değilse,
+
+485
+02:12:48,724 --> 02:13:11,703
+Bariz bir global minimumu, lokal minimumu yoksa o zaman minimumu atlayıp farklı noktalar arasında da gereksiz yere algoritmanın uzaması gibi bir şey söz konusu olabiliyor. Newton hızlı ama her tip fonksiyon için uygun değil diyeyim. Bir de hesapsal karmaşıklığı yüksek.
+
+486
+02:13:16,275 --> 02:13:18,576
+Newton algoritmasının benzeri.
+
+487
+02:13:19,028 --> 02:13:23,748
+Bunlar bir aile. Yine ikinci türevleri kullanan algoritmalar.
+
+488
+02:13:24,207 --> 02:13:27,728
+Levenberg-Marquard algoritması biraz farklı bunların içinde.
+
+489
+02:13:27,887 --> 02:13:33,868
+Eğer fonksiyonunuz dediğim gibi konveks gibi bir şeyse kullanmayı düşünebileceğiniz bir algoritma.
+
+490
+02:13:33,868 --> 02:13:39,927
+Çünkü ikinci türevi direkt hesaplamadan onun yerine yaklaşık bir değer kullanıyor.
+
+491
+02:13:40,448 --> 02:13:43,568
+Hesapsal karmaşıklık olarak Newton'dan daha iyi.
+
+492
+02:13:44,248 --> 02:13:46,868
+Ama sonuç olarak Newton ve Kuala'nın...
+
+493
+02:13:47,028 --> 02:14:01,328
+Bazı Newton algoritmalarına benzer sonucu, eğer fonksiyonunuzun bariz bir minimumu varsa, yani fonksiyon konveksse, hızlı yakınlamayı sağlayabilen bir algoritma.
+
+494
+02:14:01,328 --> 02:14:13,748
+Kabaca böyle bir özet kıyasladıktan sonra, gradiyan düşüm algoritmasından bahsedeceğim. Onunla ilgili birkaç kavramdan önce bahsedelim.
+
+495
+02:14:14,452 --> 02:14:32,292
+En azından lokal minimum. Global minimumu bulmak isteriz ama dediğim gibi fonksiyonumuz çok inişli, çıkışlı, engebeli bir arazi gibi bir şeyse global minimumu bulmak çok uzun sürebilir.
+
+496
+02:14:42,452 --> 02:14:52,072
+95'ler 98'ler sizin için yeterlidir. İyi bir lokal minimum bulmak yeterlidir. Dolayısıyla lokal minimumu arıyormuşuz gibi konuşacağım.
+
+497
+02:14:53,692 --> 02:15:06,532
+Bildiğiniz gibi işte en boyutlu bir fonksiyonumuz var. Aday çözümlerimiz Reyen Öklüt uzayında. Böyle bir fonksiyon için iki tane koşul koyuyoruz.
+
+498
+02:15:08,243 --> 02:15:27,723
+Seçtiğimiz noktada aldığı değerin küçülmesi, seçtiğimiz noktanın diğer tüm X noktalarından daha küçük bir değerde olması. Bu bütün X noktalarından kastettiğim sonsuz bir uzay değil, bir komşuluk içinde.
+
+499
+02:15:28,224 --> 02:15:41,704
+Sıfırdan büyük, küçük bir sayı olarak düşünün. Civarındaki noktalardan daha küçük bir değer alması. Bu da lokal minimum olma koşulunduydu zaten. Bu koşulları koyuyor algoritma.
+
+500
+02:15:42,463 --> 02:15:54,784
+Gradiyan dediğimiz şey, madem çok değişkenli bir fonksiyondan bahsediyoruz, kısmi türev düşünmek zorundayız. Yani adi türev düşünmeyeceksiniz.
+
+501
+02:15:55,188 --> 02:16:13,828
+Gradiyan dediğimiz şey de bütün değişkenimizin bütün bileşenlerine göre fonksiyonun kısmi türevlerinin oluşturduğu vektörel bir şey. Yani birinci türev veya gradiyan diye kast edeceğimiz artık şu vektör olacak.
+
+502
+02:16:14,351 --> 02:16:22,792
+Fonksiyonun birinci türevini gösteren ve şu ters üçgen işaretiyle gösteriliyor veya grad f diye gösterebilirsiniz.
+
+503
+02:16:23,752 --> 02:16:41,412
+Gradiyan dediğimiz kavramda x değişkeninin en tane bileşeni varsa vektörel değişkenimizin bunların her bir bileşeni için fonksiyonun kısmi türevlerinin oluşturduğu bir fonksiyon veya vektör.
+
+504
+02:16:42,899 --> 02:16:56,239
+Bu gradiyan değeri de bize tabii bir şey söylüyor. Gradiyan değeri eğer x yıldız noktasında sıfırsa bulduğumuz nokta, x yıldız noktası bir lokal minimizer olabilir.
+
+505
+02:16:56,752 --> 02:17:11,072
+Veya bir durağan nokta olabilir. Gradiyan Düşüm Algoritması bunu artık çok da fazla analiz etmiyor. Kesin emin olabilmek için ikinci türeve yani HESİAM matrisine bakmamız gerekirdi.
+
+506
+02:17:11,471 --> 02:17:19,092
+Gradyan Düşüm Algoritmasında ona bakmayacağız. Ama büyük ihtimalle bir lokal minimum bulduğumuzu düşüneceğiz.
+
+507
+02:17:19,951 --> 02:17:29,092
+Bir de fonksiyonun değerinin düşmesi şu ilk ikinci satırdaki koşula bakarak durmaya karar verebileceğiz.
+
+508
+02:17:29,231 --> 02:17:31,092
+Algoritmayı durdurmaya karar vereceğiz.
+
+509
+02:17:32,252 --> 02:17:38,991
+Şimdi gradyan dediğimiz şey nasıl hesaplanıyor? Hemen bir tane örnek üzerinden onu da göstermiş olayım.
+
+510
+02:17:39,412 --> 02:18:00,731
+Dediğim gibi bütün değişkeninizin bütün birleşenlerine göre kısmi türevleri almanız lazım. Elimizdeki fonksiyon, minimize etmeye çalıştığımız fonksiyon şöyle bir şey olsun. 2x artı 3y kare eksi sinir z diye bir şey olsun. Burada x1 x2 demedim biraz daha kolay gözünüz ayırsın diye.
+
+511
+02:18:01,152 --> 02:18:22,792
+Bunların her biri bir bağımsız değişken diye düşünebilirsiniz. Her birine göre kısmi türev alacağım. Alalım. X'e göre kısmi türev aldığımda şu ikinci, üçüncü terimler gider. 2X'in türevini alıyorum aslında. Sonuç 2 eder. Ve görüm birinci bileşeni 2 olacak.
+
+512
+02:18:23,280 --> 02:18:29,500
+Sonra y'ye göre türev alacağım. Şurada 6y olarak 3y karenin türevini aldım.
+
+513
+02:18:30,500 --> 02:18:38,799
+Eksi sinüs z'in türevini alacağım. O da eksi kosinüs z olarak gradyanın üçüncü bileşenini oluşturdu.
+
+514
+02:18:38,799 --> 02:18:50,299
+Normalde gradyanı yukarıdan aşağı bir vektör olarak ifade ettiğim için böyle yan yana yazarsam da transpozunu ifade etmiş oluyorum.
+
+515
+02:18:50,639 --> 02:19:11,739
+X, Y, Z skaler mi? Şu anda hesapladığımda, değer verdiğimde evet skaler olacak. X, Y, Z bir aradayken bir vektörün skaler bileşenleri gibi. Anlatabildim mi? Yani X, Y, Z skaler değer alabilen değişkenler ama, bağımsız değişkenler.
+
+516
+02:19:18,804 --> 02:19:26,463
+Tamam. Gradiyan dediğim şey bir vektör ama burada x'li yeni birleşenlerimiz staler değerler.
+
+517
+02:19:30,164 --> 02:19:44,144
+Peki. Hesiyan, yani ikinci türeva bakacak olsaydık Hesiyan matrisi hesaplamamız gerekecekti. Onun da hesabını göstermek için koydum buraya. Newton yöntemini de belki.
+
+518
+02:19:44,755 --> 02:20:03,455
+Vakit durumuna göre inceleriz. Orada da Hesiyan matrisini kullanacağız. Hesiyan da ikinci türevlerin, aslında yine ikinci kısmi türevlerin oluşturacağı bir matris. Ama işte birden fazla değişkenimiz olduğu için bunların kombinasyonuna göre de türev almamız lazım.
+
+519
+02:20:07,343 --> 02:20:27,723
+X1'e ve sonra tekrar X1'e göre türevinin alınması ile ilgili birleşen burada. İşte X1'e sonra X2'ye göre alınmış türevi. Böyle en tane değişken varsa X1 ve X'e göre alınmış kombinasyon olarak bütün kombinasyonların olduğu bir matriz bu şekilde.
+
+520
+02:20:29,716 --> 02:20:48,896
+Hesiyanın kesin pozitif olduğunu biliyorsak bu bizim için ciddi bir kanıt oluyordu. Lokal minimazları bulduğumuzu söylüyordu. Kesin negatif olması durumda da bir maksimum nokta bulduğumuzu kesin olarak söyleyebiliyorduk.
+
+521
+02:20:49,236 --> 02:21:14,015
+Fesiyanın bir tek belirsiz çıkması, yani matrisin öz değerlerinin artı, eksi, karışık olması durumu duran nokta bulduğumuzu söylüyor. Bu duran noktada algoritmayı durdurmak istemeyebiliriz, aramaya devam edebiliriz. Bu tamamen algoritmanın karakteristiğiyle ilgili bir yerde algoritmayı oluşturanın veya sizin karar vereceğiniz bir şey.
+
+522
+02:21:14,451 --> 02:21:23,551
+Durağım noktaya razı değilseniz bir nokta daha seçip ESEAN'ın kesin pozitif olacağı bir yer ararsınız minimum nokta bulmak istiyorsanız.
+
+523
+02:21:24,948 --> 02:21:43,968
+Esyanı hesaplarken nasıl hesaplıyoruz? Şöyle bir fonksiyonumuz olsun. İki değişkenle x kare artı x'ye artı y kare şeklinde. İki değişken olduğu için bu iki değişkenin kombinasyonlarına göre türev alacağız. X'e ve x'e göre türev, x'e ve y'ye göre türev.
+
+524
+02:21:44,239 --> 02:22:07,060
+Y'ye X'e göre türev gibi. Fonksiyonun X'e göre türevini aldığım zaman şuradan gelen şey 2X. Burada X gidecek, Y kalacak. Üçüncü terimde X'li bir şey yok. Dolayısıyla 2X artı Y şeklinde bir şey olacak. Sonra tekrar X'e göre türev alırsam.
+
+525
+02:22:07,424 --> 02:22:22,984
+2 kalacak. Çünkü ikinci terimde artık x kalmadı. 2x artı y oldu birinci türevde. O y'li terim de gidecek. 2 kalacak. Sonucu burada. Şu türevleri aldığınızda çıkacak olan matriz bu şekilde.
+
+526
+02:22:24,444 --> 02:22:32,984
+Türevi de aşağıda göstermişim. Önce x'e göre sonra y'ye göre türevi aldığımda da şu bileşen.
+
+527
+02:22:33,855 --> 02:22:39,096
+Bir çıkan bileşen oluşuyor. Diğerlerini de kendinize alırsanız bu değerler oluşacak.
+
+528
+02:22:39,515 --> 02:22:45,335
+Siyan dediğimiz şey de çok değişkenli bir fonksiyon için ikinci türev de böyle bir şey.
+
+529
+02:22:45,775 --> 02:22:52,815
+Siyanın özellikleri de pozitif veya negatif olması da bize minimum veya maksimum bir nokta bulduğumuzu söylüyor.
+
+530
+02:22:53,971 --> 02:23:10,671
+Bahsedeceğimiz tüm yöntemler iteratif. Biz bulduğumuz veya ürettiğimiz bir seri vektör içinde bizi minimuma, lokal bir minimuma götürecek değeri arıyoruz.
+
+531
+02:23:19,987 --> 02:23:32,067
+Aramamız lazım. Öyle bir ölçüt koymamız lazım. Onu da böyle ifade etmiştik. Denediğim K'inci noktaya göre K artı birinci nokta fonksiyon için daha küçük bir değer üretmeli.
+
+532
+02:23:33,843 --> 02:23:48,304
+Bu koşulu koyarsak bir kararsız noktaya denk gelme ihtimalimiz azalır veya bir maksimuma ters yöne gitme ihtimalimiz azalır. Hep azalma yönünde gideceğimizi garanti ediyor. O yüzden önemli.
+
+533
+02:23:49,304 --> 02:24:00,304
+Kullanılan yöntemin global yakınlama özelliği olmalı. Yani çok minimumdan çok uzak bir yerden bile aramaya başlamış olsak da,
+
+534
+02:24:00,948 --> 02:24:18,727
+İlk yöterasyon adımları dışında hatanın azaldığını görebiliyorsak global yakın samayı sağlayabileceğiz demektir.
+
+535
+02:24:18,727 --> 02:24:23,188
+Onun için de bir koşul olarak şunu da yazabiliriz. Bir hata terimi.
+
+536
+02:24:28,847 --> 02:24:52,608
+Şu anda aradığımız veya denediğimiz x değeri arasındaki farkı bir hata olarak yazarsak, hatanın normuna bakıyoruz genellikle. Bunun giderek küçülmesini istiyoruz. Dolayısıyla k artı birinci noktadaki hatanın normu, k inci noktadaki, k inci iterasyondaki hatanın normundan daha küçük olmalı.
+
+537
+02:24:53,332 --> 02:25:01,711
+K dediğimde iterasyon sayısı veya denediğimiz nokta sayısı diye düşünebilirsiniz. Bunları söyledim.
+
+538
+02:25:02,131 --> 02:25:15,391
+Yakınsamanın nasıl olduğu da önemli. Hızlı mı yakınsıyor yönteminiz, yavaş mı yakınsıyor? Bir yöntemi tanımlarken veya seçerken buna da normalde bakıyorsunuz.
+
+539
+02:25:15,851 --> 02:25:24,471
+Üç tip yakınsama var temelde kullandığımız. Yöntemlerden bahsederken de nasıl yakınsadığını söylememiz lazım.
+
+540
+02:25:24,884 --> 02:25:41,183
+Çoğu yöntem süper lineer yakınsama dediğimiz yakınsamayı gösteriyor. O da lineer yakınsamadan daha iyi ama kuadratik yakınsamadan daha kötü. Bizim çoğunlukla kullanacağımız gradyan düşün yöntemi de bu şekilde süper lineer yakınsama gösteriyor.
+
+541
+02:25:42,324 --> 02:25:49,183
+Matematiksel olarak nasıl tanımlıyoruz? Demin söylediğim işte k. noktadaki hatanın normu.
+
+542
+02:25:49,840 --> 02:26:15,440
+K artı birinci noktadakinden küçük eşit olmalı. Bunun önüne bir C1 çarpan kat sayısı da koyabiliriz. Bir C1 sayısıyla çarpılmış hali ki C1'in de küçük bir sayı olmasını bekliyoruz. Birden küçük. C1 çarpı EK'nin normu EK artı birin normundan büyük olmalı.
+
+543
+02:26:16,020 --> 02:26:35,540
+Veya EK artı birdeki EK'den küçük olmalı. Eğer bir önceki hatanın normundan, normunun karesinden daha küçük olsun diyorsak, kuadratik bir yakınlamadan bahsediyoruz. Yani hata daha da hızlı azalıyor demek olur bu.
+
+544
+02:26:36,020 --> 02:26:59,119
+Burada da bir C2 kat sayısı kullanabiliyoruz. Bu sıfırdan büyük bir değer olmak üzere kullanılıyor. Süper Liner Yakın Sama dediğimizde direkt iki adım arasındaki hataları oranlıyoruz. Eğer çok küçülmüşse, yani bu bize ne söylüyor? Hata azalıyor ama çok yavaş azalıyor. Artık bir minimuma yaklaştım demek oluyor.
+
+545
+02:27:01,108 --> 02:27:09,988
+Bu ikisinin arasındaki oran çok küçükse süperlineer yakınlama gösteren bir yöntemden bahsediyoruz demektir.
+
+546
+02:27:11,747 --> 02:27:22,288
+Şimdi size bunu ben ödev olarak vereyim. Elimizde iki tane iteratif yöntem var. Algoritmaların isminin ne olduğu hiç önemli değil.
+
+547
+02:27:22,739 --> 02:27:45,739
+Belli bir adım sonunda iki yöntemle üç basamak doğruluğa ulaşmış. Yani üç basamak doğruluk demek hatanın normu üç basamak ve daha küçüğü. Yani birinci, ikinci basamaklar sıfır virgülden sonraki. Üçüncü basamakta bir değer var. Sıfır sıfır bir olabilir, sıfır sıfır iki olabilir.
+
+548
+02:27:46,255 --> 02:28:02,135
+Bu şekilde bir doğruluğa ulaşmış belli bir adımın sonunda. C1 ve C2 kat sayıları şu tanımlarda bahsettiğim C1 ve C2 kat sayıları 1 bölü 2 olarak alınmış olsun.
+
+549
+02:28:02,135 --> 02:28:08,615
+12 basamak doğruluk istiyorsak kaç adım daha iterasyona devam etmemiz lazım.
+
+550
+02:28:09,139 --> 02:28:24,119
+Ayrı ayrı tabii. Linear yöntem için kaç adım, kuadratik yakın sama gösteren yöntem için kaç adım daha iterasyona devam etmemiz lazım diye sormuş olayım.
+
+551
+02:28:27,119 --> 02:28:34,459
+Bu soruyu öyle bıraktım. Cevabı slide'lar da var sonra zaten koyacağım.
+
+552
+02:28:34,863 --> 02:28:40,623
+Ödev olarak bunu yapıp bana gönderebilirsiniz. Hemen, iki gün içinde.
+
+553
+02:28:44,948 --> 02:28:58,468
+Peki, düşüm algoritmalarını o zaman tasarlarken koymamız gereken, genelde de optimizasyon, arama algoritma, her türlü algoritmada aşağı yukarı olması gereken tanımlar var.
+
+554
+02:29:00,168 --> 02:29:05,948
+Herhangi bir bilgimiz olmadığı için, hata fonksiyonumuz dediğim gibi karışık bir fonksiyon olabilir.
+
+555
+02:29:12,608 --> 02:29:31,048
+X0 noktası ile algoritmaya başlıyoruz. Bir düşüm yönü, hareket yönü belirliyoruz kendimize. Çünkü o başlangıçta rastgele seçtiğimiz X0 noktası muhtemelen bir minimum nokta olmayacak ve bizim bir süre iterasyona devam etmemiz gerekecek.
+
+556
+02:29:31,048 --> 02:29:39,668
+Bunu öngörerek bir sonraki seçeceğimiz noktanın ne olacağına karar vermemiz lazım. Orada bir taktik işletmemiz lazım.
+
+557
+02:29:40,115 --> 02:29:47,316
+O taktikte bizim düşün yönümüzü belirleyen algoritmanın ana elementlerinden birisi.
+
+558
+02:29:47,995 --> 02:29:56,916
+X0'ı denedim olmadı. İkinci deneyeceğim nokta ne olsun? Ondan sonra ikinci deneyeceğim nokta ne kadar uzakta olsun?
+
+559
+02:29:56,916 --> 02:29:59,916
+Yani şu anda denediğim X0...
+
+560
+02:30:00,000 --> 02:30:21,540
+Yeni noktasına göre ne kadar uzakta olsun o da adım olarak belirlediğimiz değişken. Bir adım miktarı seçmemiz gerekiyor. Yeni noktayı seçiyorum istediğim yönde ve istediğim uzaklıkta. Bu yeni nokta için bazı koşullarım var. O koşulları sağlayıp sağlamadığına bakıyorum.
+
+561
+02:30:22,004 --> 02:30:31,963
+Ve eğer sağlamıyorsa tekrar başa dönüp yeni bir nokta seçiyorum. Aynı şekilde belli bir yönde, belli bir adım uzaklığında.
+
+562
+02:30:32,724 --> 02:30:39,244
+Temel yapı bu. Durma kriteri olarak söyleyeceğimiz şeyler işte hatanın…
+
+563
+02:30:39,540 --> 02:30:58,200
+Yeterince küçük olması. Sizi mutlu ettiyse illa da bir lokal minimum bulmak zorunda değilsiniz. Yani benim hata değerim belli bir değerin altına düştüyse, yüzde birinin altına düştüyse benim için yeterli. İlla sıfır hata aramıyorum diyebilirsiniz.
+
+564
+02:30:58,752 --> 02:31:22,031
+Fonksiyonun o andaki değerinin minimuma çok yakın olması. Onu nasıl anlarsınız? En son denediğiniz nokta ile şu anda denediğiniz nokta arasında fonksiyonun değeri çok değişmiyorsa, çok küçük değişimler gösteriyorsa, o da şu TO2 diye gösterdiğimiz küçük değerle ölçeceğiniz bir şey. Yeter diyebilirsiniz. Yani minimuma yeterince yaklaştım.
+
+565
+02:31:22,739 --> 02:31:46,719
+Bu yeter bana diyebilirsiniz. Bir duruma koşulu olabilir. Yaklaşık bir değer kullanmanız gerekebilir. Tabii burada fonksiyonun yaklaşıp yaklaşmadığını bir fark işlemiyle bakabilirsiniz. Onu da iki noktada fonksiyonun aldığı değerin farkı bir de iki noktanın birbirine olan uzaklığının normu şeklinde.
+
+566
+02:31:47,152 --> 02:32:03,511
+Yani şuradaki tek ifadeyi şuradaki iki ifade olarak yazabilirsiniz. Bu şekilde fonksiyonunuza bir, algoritmanıza bir durma koşulu tanımlamanız gerekiyor.
+
+567
+02:32:04,147 --> 02:32:29,827
+Türev tanımı, sizin bildiğiniz şu geri fark formülü. Bu formülü kullanabilirsiniz veya daha iyisini kullanabilirsiniz. Çünkü türev almanız gerekecek. Minimumuna ulaştın mı diye bakmak için. Orada da programlarken tabii ki bir türev formülü kullanmanız gerekecek. Her ne kadar kullandığınız dilin, kompilerin olsa da türev fonksiyonları.
+
+568
+02:32:31,476 --> 02:32:34,995
+Kendiniz biraz daha iyisini yazmak isteyebilirsiniz.
+
+569
+02:32:40,755 --> 02:32:57,695
+Başka yakın samayı kontrol etmek için, minimuma yaklaştığınızı kontrol etmek için kullanabileceğiniz şeyler, fonksiyonun o nokta, fonksiyonun türevinin o noktada normuna bakabiliyorsunuz.
+
+570
+02:33:05,695 --> 02:33:10,935
+Ona göre bir ikinci türevli bir durma koşulu tanınmayabiliyorsunuz.
+
+571
+02:33:11,435 --> 02:33:25,896
+Vesaire vesaire bunlar algoritmaların kullandığı, işte bildiğimiz matematiksel, bahsettiğim matematiksel birinci türevin ve ikinci türevin bize söylediklerini algoritmaya yansıtmak için kullanılan durma koşulları.
+
+572
+02:33:31,252 --> 02:33:34,471
+Burayı da söyleyeyim. Gradiyan düşümü haftaya bırakayım.
+
+573
+02:33:34,891 --> 02:33:36,112
+Algoritmayı anlatmayın.
+
+574
+02:33:37,891 --> 02:33:42,912
+Verilen yönde o anda bulunduğumuz noktadan komşu bir noktaya hareket ediyoruz.
+
+575
+02:33:43,672 --> 02:33:49,612
+Ve orada fonksiyonun değerinin daha küçük olduğu bir noktaya ulaşmış olmak istiyoruz.
+
+576
+02:33:49,612 --> 02:33:56,612
+Bunu bize bir haş miktarı kadar hareket ettiğimizi düşünürseniz.
+
+577
+02:33:56,639 --> 02:34:18,539
+Şu Talor açılımında ifade ettiğimiz şey gibi düşünebilirsiniz. Bir X noktasından alfa H kadar uzaktaki bir noktada fonksiyonun değeri bize lazım. Fonksiyonun değeri küçüldüğünü diye bakacağım ya, bu değeri de Talor serisi açılımından aslında hesaplayabilirim.
+
+578
+02:34:19,059 --> 02:34:40,759
+Alfanın çok büyük olması durumunda, şu haçta küçük bir değer ya, açılımda ikinci terim baskın, ilk iki terim özellikle baskın gelecektir. Bu terimin işaretinin bize, ikinci terimin işaretinin bize gidilecek yönü vereceğini söyleyebiliriz.
+
+579
+02:34:43,188 --> 02:35:10,167
+Uzaklaşmak istiyorum. Ne yönde? Azaltıcı yönde. Dolayısıyla buradaki terim negatif işaretle olursa ben fx'den daha küçük bir değere ulaşacağım. Geldiğim şeyi anlıyor musunuz? X diye bir noktadaydım. X artı alfa h gibi bir nokta seçeceğim kendime. Ama o noktada fonksiyonun değeri fx'den daha küçük olsun istiyorum.
+
+580
+02:35:10,675 --> 02:35:29,355
+Peki, fx artı alfa aşının taylor ifadesini açarsam, benim aradığım bütün her şey burada var. fx'in değerini de kullanan bir şey var burada. fx artı a artı aşı da ifade eden bir şey var. Alfa aşı ifade eden bir şey var. Şurada birinci türevli terim de var.
+
+581
+02:35:31,763 --> 02:35:52,903
+İhmal ettim diye düşünün. Şu birinci türevli terimi, yani sadece ilk iki terimi Taylor serisinin kullandığımı düşünürsem, eğer şu ikinci terim negatif işaretli olursa, kesin olarak x artı alfa h'ın değerinin fx'den küçük olacağını söyleyebilirim.
+
+582
+02:35:56,340 --> 02:36:08,579
+Gideceğim yönü belirleyen bir parametre olabilir. Algoritmamızda bunu yapmamız gerekiyordu ya, bir düşün yönü yani hareket edeceğim yön belirlemem lazım. Bu yönü nasıl belirleyeyim?
+
+583
+02:36:20,512 --> 02:36:44,472
+Artan bir değere mi ulaşacaksın? Azalan bir değere mi ulaşacaksın? Onu söyler fx artı alpa h noktasında. Ben o zaman bu terimin negatif olmasını istiyorum. Bu terimin negatif olması da aslında şu öndeki kat sayıları atarsam eğer, bunlar çünkü pozitif kat sayılar, birinci türevin negatif olmasını söylüyor.
+
+584
+02:36:46,227 --> 02:36:56,927
+F3x'in tersi yönün bir azalma yönünü gösterdiğini söyleyebilirim.
+
+585
+02:36:57,447 --> 02:37:00,207
+Gradyan Düşüm Yönteminin dayandığı mantık bu.
+
+586
+02:37:00,768 --> 02:37:04,667
+Türevin tersi yönde gidersen fonksiyonun değeri azalır.
+
+587
+02:37:06,147 --> 02:37:08,687
+O nereden çıkıyor? Taylor serisinden çıkıyor.
+
+588
+02:37:12,564 --> 02:37:24,564
+Negatif olduğu yani tersi yön bana fonksiyonun değerinin azalacağını söylüyor Taylor serisi. O zaman ben kendime yön olarak...
+
+589
+02:37:24,976 --> 02:37:49,236
+Türevin tersi yönü seçebilirim. Türev dediğim şey de gradiyan aslında ve o da bir vektör. Dolayısıyla yönlü bir değişken değil mi? Yani bunun bir yönü var. Başına koyduğum eksi sadece skaler değer olarak negatif olması falan anlamına gelmiyor. Oradaki eksi yön olarak negatif yönde gideceğini söylüyor.
+
+590
+02:37:51,087 --> 02:38:04,807
+Artık biliyorum ki eksi radyan veya f üstü x bizim düşüm uzayımızı gösteren minimuma doğru bizi yol aldıracak bir vektördür.
+
+591
+02:38:04,807 --> 02:38:16,987
+Peki, h dediğimiz şey x'den düşüm yönü h çarpı f üstü x sıfırdan küçük olacak.
+
+592
+02:38:17,327 --> 02:38:34,307
+H ile F üstü X arasındaki bir açıyı, H da sonuçta vektörel bir değişken. Kalor serisinde demin dikkate almadığım şu terimden bahsediyorum. Alfayı hiç konuşmuyorum, o küçük bir değer. H'ı katabilirsiniz. Skaler bir değer zaten. H ama yönlü bir değer.
+
+593
+02:38:37,791 --> 02:38:45,991
+Gradiyan arasındaki açıyı yazacak olsam, bir teta açısı varsa bunların arasında şu şekilde ifade edebilirim.
+
+594
+02:38:47,171 --> 02:38:52,791
+Buradan da mutlak düşüm yönteminin kuralı olan...
+
+595
+02:38:53,103 --> 02:39:09,103
+Müh'nün, şuradaki mü dediğim şeyde tetanın alacağı maksimum değer, bütün K değerlerini sağlayacak bir mü değerinden bağımsız olarak HK'nın dikinde...
+
+596
+02:39:09,332 --> 02:39:19,351
+Veya bir teta açısıyla işaretleyeceğimiz bir gradiyan vektörünün tersi yönde arama yapmam gerektiğini söyler.
+
+597
+02:39:19,351 --> 02:39:27,351
+Buradaki müde, şuradan çekeceğim müde yeri de bana aslında adımlar...
+
+598
+02:39:29,043 --> 02:39:32,543
+Ne kadar uzaklıktaki adımlar seçeceğimi söyler.
+
+599
+02:39:33,543 --> 02:39:38,423
+Ve buradan yönümü belirledikten sonra, adım parametresiyle gerçi oynayabilirim ama,
+
+600
+02:39:38,423 --> 02:39:43,763
+adım miktarını da iki vektörün arasındaki açıdan belirleyip,
+
+601
+02:39:43,984 --> 02:40:10,423
+Algoritmamı artık oluşturabilirim. Ne şekilde oluşturabilirim? Gradiyanın tersi yönde bir mü adımı veya benim seçeceğim bir adım miktarı kadar ötede yeni bir nokta seç kendine. Ne zaman seçtiğin nokta minimum olma koşulunu sağlamıyorsa, sağlıyorsa duracağım zaten buradaki durma kriterlerini sağlayıp.
+
+602
+02:40:10,672 --> 02:40:16,512
+En son denediğim noktayı bir lokal minimum kabul ederek durduracağım Ergo [öğrenci] Bey'in.
+
+603
+02:40:17,851 --> 02:40:20,332
+Tamam, şimdi buraya kadar sorunuz var mı?
+
+604
+02:40:29,716 --> 02:40:35,136
+Çok mu kötü durum? Şekil göstereyim mi birazcık? Belki içiniz açılır.
+
+605
+02:40:38,115 --> 02:40:45,576
+Diyelim ki bizim hata fonksiyonumuz, hala ben iki boyutlu bakıyoruz burada, iki boyutlu şekil gösteriyorum size.
+
+606
+02:40:46,796 --> 02:40:51,096
+Bunu çok boyutlu düşünün. Dağlık, tepelik üç boyutlu bir şey diye düşünün.
+
+607
+02:40:51,456 --> 02:41:15,756
+Fonksiyonumuz böyle bir şey olabilir. Buna doğru veya parabol uydurarak pek olayı çözemem. İyi bir yakınsam olmaz. Dolayısıyla non-linear regresyon yapmamın gerektiğini biliyorum. Bu fonksiyon benim bir hata fonksiyonumsa bunu minimize etmek isteyeceğim. Normalde de bu hata fonksiyonunun bir global minimumu var.
+
+608
+02:41:16,275 --> 02:41:32,155
+Ama benim optimizasyon yöntemlerini kullanabileceğim için büyük ihtimalle bir aramaya rastgele bir yerden başladığında şu mavi topunda durduğu yer veya şu soldaki de bir lokal minimum bulma ihtimalim daha yüksek.
+
+609
+02:41:32,155 --> 02:41:38,995
+Global minimumu bulmam için onun sağındaki solundaki tepelerden bir yerden aramaya başlamış olmam lazım.
+
+610
+02:41:39,515 --> 02:41:43,376
+Çünkü neydi benim algoritmalarım hep aşağıya doğru gitmek isteyecekti.
+
+611
+02:41:43,744 --> 02:42:01,844
+Şimdi şuralardan bir yerden başladıysam aşağıya doğru gideceğim, gideceğim. Bir minimuma geldiğimde tekrar yukarı doğru çıkmak istemeyeceğim. Çıkmak isteseydim çıkıp belki orayı aşıp global minimuma da giderdim. Yani algoritmalar bu şekilde şekillendirilebilir.
+
+612
+02:42:11,507 --> 02:42:34,987
+Uzatabilirsiniz algoritmayı ve daha iyi bir minimum bulabilirsiniz. Ama lokal minimum size yeterliyse herhangi bir yerden başlayıp bu lokal minimumlardan birini bulma şansınız var. Hangi koşulda? Hareket yönünüzü minimuma doğru olacak belirlerseniz lokal bir minimumu özellikle gradyan düşünü gibi bir algoritmayla bulma şansınız var.
+
+613
+02:42:35,412 --> 02:42:51,132
+En başta söylediğim gradiyan düşümle Newton algoritmasını şu şekilde bir kıyaslayayım. Şimdi gradiyan düşüm algoritması yine bu fx ve yazdığım yukarıdaki fonksiyonu minimize etmek istiyorum farz edin.
+
+614
+02:42:51,476 --> 02:43:06,996
+Gradyan Düşüm Algoritması güvenilirdir, yavaş gider ama mutlaka bir lokal minimuma gider. Grafik olarak bu gösterim tarzını biliyorsunuz değil mi? Çok boyutlu olduğu için artık iki boyutta çizemeyeceğim bir şey olduğu için şöyle gösterdim.
+
+615
+02:43:06,996 --> 02:43:16,136
+Bir x0 diye rastgele bir noktadan aramaya başlıyorsunuz. Yeni bir nokta seçiyorum. Nerede? Gradyanın tersi yönde.
+
+616
+02:43:16,819 --> 02:43:42,880
+Demek ki gradyon vektörüm öbür tarafı gösteriyormuş. Tersi yönde bir yön seçtim. Belli bir adım uzaklıkta. Kendime bir x1 diye yeni bir nokta seçtim. Bu adımı nasıl belirleyeceğimizle konuşacağız. Ondan sonra hala bir minimum koşulunu sağlayan bir noktaya ulaşmamışım. Yeni bir yön seçiyorum, yeni bir nokta seçiyorum, yeni bir yön seçiyorum, yeni bir nokta seçiyorum.
+
+617
+02:43:44,564 --> 02:44:09,344
+Ve şurada bakarsanız en son seçtiğim X3 noktası ile bir önceki X2 noktası birbirine çok yakın noktalar olmaya başladı. Çünkü oldukça minimum şu merkezde minimuma yaklaştım artık ben. Buralarda durma koşullarıma bakacağım. İşte sağlanıyorsa ben X3'ü artık benim için bir lokal minimumdur deyip algoritmayı durduracağım.
+
+618
+02:44:12,051 --> 02:44:18,011
+Şu da Newton algoritması.
+
+619
+02:44:21,716 --> 02:44:37,576
+Evet, şu Newton algoritması. Newton algoritmasını kullanıyor olsaydım aynı fonksiyon, gradiyan düşüm yerine. X0'dan sonra seçeceği ikinci nokta aslında bizim dört adımda ulaştığımız bu X3 noktası olacaktı.
+
+620
+02:44:46,291 --> 02:44:56,031
+Minimum noktasını ikinci adımda tespit edip yakın sayacaktı. Ama fonksiyon böyle olmasaydı şaşıracaktı o başka.
+
+621
+02:44:57,451 --> 02:45:08,932
+Tamam, bugünlük bu kadar demiş olayım. Haftaya gradiyan düşüm için temel görtmeyi bir inceleriz. Sen de şey yaparsın. Bugün verdiğim ödev, ödev değil ki.
+
+622
+02:45:10,611 --> 02:45:33,391
+İki tane formül yapacaksınız ya. Onun için uzatma istemeyin. İki gün. Dersi çok tekrarlamanız gerekiyor mu bilmiyorum. Peki bir dakika bugün çarşamba. Cumartesi akşam diyeyim mi o zaman? Cumartesi akşama yakın sama ödevi. Büyük bir ödev değil. Sadece oraya baksanız yeterliydi.
+
+623
+02:45:35,667 --> 02:45:43,448
+Peki, tamam. Cumartesi akşamı dedik o zaman ödev için. Var mı soracağınız kişi arkadaşlar?
+
+624
+02:45:48,371 --> 02:45:52,811
+Evet, kesin sizi kaybettim. Ben teşekkür ederim.
+
+625
+02:45:58,611 --> 02:46:07,611
+Tamam, kaybetmediklerim için mutluyum en azından o zaman. Kendinize iyi bakın. Haftaya görüşürüz tekrar.
+
+626
+02:46:08,791 --> 02:46:16,592
+Biraz bir göster göstereceğim size tuhafı. Çok sıkmayayım diye. Gmail adresimi yazayım [öğrenci] şurada.
+
+627
+02:46:19,111 --> 02:46:22,011
+Arkadaşlar mail atarken Gmail'i atın olur mu?
+
+628
+02:46:23,603 --> 02:46:43,603
+Okuyorum, öbürünü de okuyorum da öbürüne cevap vermem pek mümkün olmuyor lokalden. İnternet ve hep mailden girmem de hemen yapamazsam unutuyorum falan. Gmail'den atın bir de spam'a atıyor maillerinizi. O yüzden...
+
+629
+02:46:46,451 --> 02:46:52,531
+Meynimi ben genele attım mı yoksa [öğrenci] sadece sana mı geldi ya? Private görünüyor.
+
+630
+02:46:57,620 --> 02:47:10,540
+Yok, [öğrenci] template'ten kastettiğim genele gelmedi mi? Tamam, bir saniye. Chat'te private seçilmiş. Atıyorum tekrar.
+
+631
+02:47:11,600 --> 02:47:16,380
+Paylaşacağım şey, [öğrenci] harfleri paylaşacaktım, onu diyorsun herhalde değil mi?
+
+632
+02:47:17,683 --> 02:47:42,923
+Evet, ben de hafta sonuna kadar onları paylaşacağım. Slide'ları da temizleyip paylaşacağım hepsini. Slide'larda hata vardı, dersin başında söyledim de. O yüzden bu haliyle paylaşmak istemedim. Birkaç tane yazım hatası var, onları düzeltip ben de birkaç gün içinde paylaşacağım. Şimdi görebildiniz değil mi mail adresimi? Tamam.
+
+633
+02:47:44,531 --> 02:48:09,171
+Buradan yazarsanız dönmem daha kolay oluyor. Mailleri görememe ihtimalim oluyor. Tekrar tekrar atabilirsiniz ama çok da bunaltmayın beni. Ya bazen dediğinizi yapamamış oluyorum ya da yazamamış oluyorum. Ama dönerim en kısa zamanda. Kendinize iyi bakın o zaman. Haftaya görüşmek üzere diyorum. Hoşçakalın.
+
+634
+02:48:10,963 --> 02:48:16,503
+İyi günler hocam, sağ olun. İyi günler, sağ olun. İyi günler hocam. İyi günler canım.
+
+635
+02:48:17,103 --> 02:48:21,163
+Thank you so much, doctor. Bye bye. Bye bye. Thank you.

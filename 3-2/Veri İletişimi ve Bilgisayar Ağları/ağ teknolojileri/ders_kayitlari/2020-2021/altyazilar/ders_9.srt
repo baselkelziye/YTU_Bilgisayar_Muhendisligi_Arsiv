@@ -1,0 +1,2707 @@
+1
+00:02:20,909 --> 00:02:24,909
+sesimiz geliyor mu arkadaşlar?
+
+2
+00:02:24,909 --> 00:02:31,650
+Evet hocam geliyor.
+
+3
+00:02:31,650 --> 00:02:34,650
+Hocam başlamadan önce bir şey sorabilir miyim?
+
+4
+00:02:34,650 --> 00:02:38,650
+Tamam o zaman başlayabiliriz şu anda derse.
+
+5
+00:02:38,650 --> 00:02:43,650
+Evet süper.
+
+6
+00:02:43,650 --> 00:02:47,650
+Transport layer'a geçiyoruz arkadaşlar.
+
+7
+00:02:47,650 --> 00:02:52,650
+Dönemin başında da söylediğimiz gibi aslında bu dersin
+
+8
+00:02:52,650 --> 00:03:00,650
+ana hedefleri network katmanı, al katmanı ve transport katmanı, taşıma katmanı.
+
+9
+00:03:00,650 --> 00:03:11,650
+Şimdi bu haftadan itibaren önümüzdeki hafta galiba genel olarak tatil ilan edildi.
+
+10
+00:03:11,650 --> 00:03:14,650
+Şu an için öyle görünüyor.
+
+11
+00:03:14,650 --> 00:03:16,650
+Önümüzdeki haftayı saymayabiliriz.
+
+12
+00:03:16,650 --> 00:03:24,650
+Ama bu haftadan itibaren dönem sonuna kadar transport katmanı ile alakalı kısımlara bakacağız.
+
+13
+00:03:24,650 --> 00:03:28,650
+Bunu tamamladığımız zaman da bir takım örnek uygulamalarımız,
+
+14
+00:03:28,650 --> 00:03:33,650
+uygulama katmanından gözden geçileceğimiz uygulamalarımız olacak.
+
+15
+00:03:33,650 --> 00:03:36,650
+Onlarda da dersi bitirmiş olacağız.
+
+16
+00:03:36,650 --> 00:03:48,650
+Şimdi transport layer kapsamında yine a katmanında, network layer katmanında yaptığımız gibi bir teorik kısmına bakacağız.
+
+17
+00:03:48,650 --> 00:04:01,650
+Protokol bağımsız olarak yani TCP, IP yapısından bağımsız olarak transport katmanında hangi servisler olması lazım?
+
+18
+00:04:01,650 --> 00:04:09,650
+Transport katmanında çalıştıracağımız protokollerin ne gibi özellikleri olması lazım?
+
+19
+00:04:09,650 --> 00:04:13,650
+Bu protokoller neler barındırılmalı? Bunları gözden geçireceğiz.
+
+20
+00:04:13,650 --> 00:04:20,649
+Bunun haricinde tıkanıklık kontrolünü a katmanında incelemiştik.
+
+21
+00:04:20,649 --> 00:04:25,649
+Ama o zaman konuşurken de hatırlarsanız şöyle bir şey demiştik.
+
+22
+00:04:25,649 --> 00:04:31,649
+Tıkanıklık kontrolü aslında üç katmanda birden gerçekleştirebilen bir şey.
+
+23
+00:04:31,649 --> 00:04:40,649
+En altta data link layer'da da bu dersin kapsamında görmüyoruz ama siz görüyorsunuz ilgili derste.
+
+24
+00:04:40,649 --> 00:04:47,649
+Data link layer katmanında aslında bir nevi flow kontrol şeklinde orada bir tıkanıklık kontrolü var.
+
+25
+00:04:47,649 --> 00:04:54,649
+Network katmanında var ama esas bir de yukarıda transport katmanında var.
+
+26
+00:04:54,649 --> 00:04:59,649
+İşte bunun transport katmanındaki durumunu gözden geçireceğiz.
+
+27
+00:04:59,649 --> 00:05:16,649
+Sonrasında da teorik olarak anlattığımız, genel olarak anlattığımız, verdiğimiz bilgileri TCP-IP özelinde UDP ve TCP protokollerindeki durumlarıyla inceleyeceğiz.
+
+28
+00:05:16,649 --> 00:05:22,649
+Genel olarak performansla alakalı bir iki maddeyi de gözden geçirebiliriz.
+
+29
+00:05:22,649 --> 00:05:34,649
+Bir de özel amaca yönelik gecikmeye daha tolerans gösterebilen, gecikmelerden daha az etkileyebilen network yapıları var.
+
+30
+00:05:34,649 --> 00:05:40,649
+Delay Tolerant Network'ın onlara da bakabiliriz.
+
+31
+00:05:40,649 --> 00:05:44,649
+Evet [öğrenci] bir sonraki slayta geçiyorum.
+
+32
+00:05:44,649 --> 00:05:50,459
+Çok bir şey yok.
+
+33
+00:05:50,459 --> 00:05:53,459
+Sadece şeyi uygulamak lazım.
+
+34
+00:05:53,459 --> 00:05:56,459
+Alt tarafta physical layer var.
+
+35
+00:05:56,459 --> 00:05:58,459
+Bunun üzerinde link layer var.
+
+36
+00:05:58,459 --> 00:06:01,459
+Şu ana kadar network layer'ı gözden geçirmiştik.
+
+37
+00:06:01,459 --> 00:06:04,459
+Üzerinde transport layer var.
+
+38
+00:06:04,459 --> 00:06:12,459
+Şimdi buradaki yapı aslında TCP-IP mantığına daha yakın olarak verilmiş.
+
+39
+00:06:12,459 --> 00:06:24,459
+Normalde biliyorsunuz OSI referans modeline göre transport katmanının üzerinde application uygulamadan önce iki tane daha katmanımız var.
+
+40
+00:06:24,459 --> 00:06:28,459
+Biri session layer, [öğrenci]'ın dediği gibi.
+
+41
+00:06:28,459 --> 00:06:31,459
+Diğeri de presentation layer.
+
+42
+00:06:31,459 --> 00:06:40,459
+Ama günümüzde pratik uygulamada OSI referans modelini pek gerçek hayatta görmüyoruz.
+
+43
+00:06:40,459 --> 00:06:45,459
+Onun yerine en çok karşılaştığımız TCP-IP.
+
+44
+00:06:45,459 --> 00:06:58,459
+TCP-IP'de de session layer ve presentation layer için tanımlanmış olan görevler bir kısmı transport layer'da gerçekleşiyor.
+
+45
+00:06:58,459 --> 00:07:02,459
+Bir kısmı da application layer'ın içerisinde gerçekleşiyor.
+
+46
+00:07:02,459 --> 00:07:05,459
+Geçiyor muyuz sonraki slayta?
+
+47
+00:07:05,459 --> 00:07:08,459
+Geçelim hocam.
+
+48
+00:07:08,459 --> 00:07:11,459
+Geçtim.
+
+49
+00:07:11,459 --> 00:07:14,459
+Bunu da evet.
+
+50
+00:07:14,459 --> 00:07:18,459
+Aşk yukarıya sonuna gel.
+
+51
+00:07:18,459 --> 00:07:20,459
+Aynen.
+
+52
+00:07:20,459 --> 00:07:23,459
+O yüzden dördüncü slattayız.
+
+53
+00:07:23,459 --> 00:07:31,459
+Şimdi transport layer'ın yani taşıma katmanı bu arada Türkçesiyle transport taşıma.
+
+54
+00:07:31,459 --> 00:07:40,459
+Taşıma katmanının en önemli özelliği A katmanına güvenirlilik sağlaması.
+
+55
+00:07:40,459 --> 00:07:49,459
+Çünkü hatırlarsanız A katmanını konuşurken defalarca hep aynı şeye vurgu yaptık, aynı şeyi açıkladık.
+
+56
+00:07:49,459 --> 00:07:58,459
+Özellikle datagram modelini kullanıyorsak bu datagramlar kaybolabilir, duplike olabilir,
+
+57
+00:07:58,459 --> 00:08:07,459
+farklı yollardan gidebilir, farklı gecikmelerle gidebilir, bozularak gidebilir, sırasız gidebilir.
+
+58
+00:08:07,459 --> 00:08:16,459
+Yani aklımıza gelebilecek her türlü kötü durumun oluşabileceği senaryolardan bahsettik.
+
+59
+00:08:16,459 --> 00:08:19,459
+A katmanının böyle bir yapısı var dedik.
+
+60
+00:08:19,459 --> 00:08:44,460
+Ve özellikle de A katmanındaki hop sayısı yani o katmanın topolojik olarak genişliği arttığında hop sayısı arttığında bu tarz sıkıntılarla karşılaşmamız, problemlerde karşılaşmamız çok daha olasılık şekilde, çok daha yüksek olasılıklar karşımıza çıkıyor.
+
+61
+00:08:44,460 --> 00:09:00,460
+Transport layer'da tam bu noktada network layer'daki güvenilir olmayan bu özelliklerin güvenilir hale dönüştürülmesi için konulmuş bir katma.
+
+62
+00:09:00,460 --> 00:09:20,460
+Şimdi transport katmanının üst tarafa sağladığı servisler ya connectionless ya da connection oriented olarak yine iki tane temel çünkü bu aslında hiçbir zaman değişmiyor.
+
+63
+00:09:20,460 --> 00:09:27,460
+Bunun da üzerinden connectionless ve connection oriented üzerinden uzun uzun geçmiştik.
+
+64
+00:09:27,460 --> 00:10:47,259
+Evet yani dört tane şey var kombinasyon var çaprazladığımız zaman.
+
+65
+00:10:47,259 --> 00:10:56,259
+Yok şey söyleyeyim sen şey yap iki tanesi straightforward yani aynı tipin aynı tiple devam etmesi.
+
+66
+00:10:56,259 --> 00:11:04,259
+Diğer iki tanesi de birbirine göre çaprazlanmış orada bir şeylerin farklı olması gerekiyor değerlendirilmesi gerekiyor.
+
+67
+00:11:04,259 --> 00:12:59,500
+Sen de şey yap şimdi söyle ben kestim demin şeyde hesaba katmak lazım.
+
+68
+00:12:59,500 --> 00:13:14,500
+Servis sağlayıcılar transport katmanının sağladığı işte az önce söylediğin quality of service olsun diğer işte reliability'si olsun benzeri ek özelliklerin altına girmek istemiyorlar.
+
+69
+00:13:14,500 --> 00:13:20,500
+Çünkü bu ek özelliklerin sağlanması bir maliyet getiriyor bir yatırım getiriyor.
+
+70
+00:13:20,500 --> 00:13:23,500
+Artı sorumluluğu da almaya getiriyor.
+
+71
+00:13:23,500 --> 00:13:41,500
+Onun yerine servis sağlayıcı network player seviyesinde kalıp network player seviyesinde de en kolayından işte unreliable diyelim ki datagram protokolü ile servis vermeyi tercih ediyor.
+
+72
+00:13:41,500 --> 00:13:48,500
+Çünkü network player'da da biliyoruz işte connection oriented çalışabiliriz.
+
+73
+00:13:48,500 --> 00:13:53,500
+Network player'da da quality of service özelliklerini gördük.
+
+74
+00:13:53,500 --> 00:14:00,500
+Bunun nasıl sağlanabileceğini farklı senaryolar üzerinden farklı derecelendirmelerle inceledik.
+
+75
+00:14:00,500 --> 00:14:18,500
+Yani aslında baktığımızda bu tarz hem güvenilir hem kaliteyi sağlayan hem servisleri birbirinden ayırt edebilen bir network player çalıştırıyorsak çok fazla da aslında transport layer'a ihtiyacımız yokmuş gibi düşünebiliriz.
+
+76
+00:14:18,500 --> 00:14:23,500
+Orada da tek kritik bir şey kalıyor.
+
+77
+00:14:23,500 --> 00:14:40,500
+Aynı network player üzerinde birden fazla uygulamayı host etmek istiyorsak aynı network adresinde birden fazla uygulama çalışabilsin istiyorsak uygulama bazında bir multiplexing demultiplexing yapmamız lazım.
+
+78
+00:14:40,500 --> 00:14:47,500
+Network player'da aslında olmayan şey bu yani buna doğrudan denk düşen bir özellik yok.
+
+79
+00:14:47,500 --> 00:14:54,500
+Bu durumda işte connection oriented çalışma network player'da var quality of service network player'da var.
+
+80
+00:14:54,500 --> 00:15:01,500
+Üzerine çok basit bir multiplexing demultiplexing sağlayan transport player yerleştirip devam edebilirsiniz.
+
+81
+00:15:01,500 --> 00:15:16,500
+Ama başa dönecek olursak servis sağlayıcılar olayın daha basit tarafında daha kendilerince kolay yönetilebilir ve işin içine girmelerini minimum gerektirecek tarafında kalmayı tercih ettikleri için.
+
+82
+00:15:16,500 --> 00:15:31,500
+Baktığımızda genel olarak bu servis sağlayıcılar tarafından işletilen network player'lar unreliable yani güvenilmez ve temel olarak datagram modeli üzerine kurulu olan network player'lar.
+
+83
+00:15:31,500 --> 00:15:45,500
+Bu noktada da bizim uç noktalarda hostlarımızda öyle veya böyle bütün özelliklere sahip transport player'lar çalıştırmamız gerekiyor.
+
+84
+00:15:45,500 --> 00:15:57,049
+Olayın hani temelinde yatan şey bu. Beklemek istediğim bir şey var mı [öğrenci] bu noktada?
+
+85
+00:15:57,049 --> 00:16:08,710
+Tamam yapıyorum o zaman. Sen mi yapacaksın ben mi yapayım?
+
+86
+00:16:08,710 --> 00:16:35,710
+Buyurun şimdi TP-DU'yu dediğimiz transport protocol data unit yani iki tane transport layer arasında taşınan veriye verdiğimiz genel isim payload aslında bu ama transport layer seviyesinde.
+
+87
+00:16:35,710 --> 00:17:13,380
+Tabi segment evet şimdi burada yine az önce vurgulamaya çalıştığımız bakın hem soldaki yapıya bakın hem sağdaki yapıya bakın network layer tarafında bir bağlantı yeri var.
+
+88
+00:17:13,380 --> 00:17:31,380
+Network adresi gösterilmiş tam transport network interface üzerinde ama transport entikinin üst tarafında sol tarafta bir transport adresi gösterilmişken sağ tarafta üç tane transport adresi gösterilmiş.
+
+89
+00:17:31,380 --> 00:17:44,380
+Bu da az önce söylediğimiz multiplex bir multiplex kaldımına denk düşüyor. En kolay şöyle anlayabilirsiniz çoğumuz apartmanlarda oturuyoruz.
+
+90
+00:17:44,380 --> 00:17:52,380
+Apartmanın bir apartman numarası olmasına rağmen içindeki dairelerin daire numaraları var.
+
+91
+00:17:52,380 --> 00:18:04,380
+İşte diyelim 16 apartmanın numarası 9 dairenin numarası 12 dairenin numarası hepsi aynı apartmanın içerisinde.
+
+92
+00:18:04,380 --> 00:18:20,380
+Bizim bu tarafa bunu yansıttığımızda bu analoji bizim tarafımızdan baktığımızda host dediğimiz yapı aslında bir işletim sistemi o işletim sisteminin içerisinde network layer'e denk düşen bir proses çalışıyor.
+
+93
+00:18:20,380 --> 00:18:28,380
+O processin de network'te yer alabilmesini sağlayacak şekilde bir network adresi var.
+
+94
+00:18:28,380 --> 00:18:36,380
+Ama siz de biliyorsunuz işletim sistemi altında birden fazla prosesi çalıştırabiliyoruz.
+
+95
+00:18:36,380 --> 00:18:54,380
+Bu proseslerde eğer birbirleriyle farklı hostlardaki prosesler açısından birbirleriyle haberleşebilen özellikte ise hepsi aynı network adresini paylaşacaklar ama birbirlerinden ayırt edilebilecekler.
+
+96
+00:18:54,380 --> 00:19:10,380
+Nasıl prosesleri birbirlerinden ayırt etmek için proses ID'den yararlanıyorsak buna benzer şekilde de transport layer'da onların birbirlerinden ayırt edilebilmesini sağlayan özel ID'lerinin olması lazım.
+
+97
+00:19:10,380 --> 00:19:15,380
+Buna da ne isim veriyoruz transport adresi diyoruz.
+
+98
+00:19:15,380 --> 00:19:32,380
+Çoğunlukla da bu TCP'den TCP IP jargonundan alınan bir şey burada da transport adres yerine genel kullanımda port numarası diyoruz.
+
+99
+00:19:32,380 --> 00:19:38,380
+Port bir iskele gibi düşünün oraya yanaşan gemiler var kayıtlar var şeyler var.
+
+100
+00:19:38,380 --> 00:19:41,380
+Her birinin bir yanaştığı nokta var.
+
+101
+00:19:41,380 --> 00:19:48,380
+Oradan sanki esinlenilmiş gibi öyle düşünülmüş gibi kafanızda canlandırın.
+
+102
+00:19:48,380 --> 00:20:04,380
+Kağıt üzerinde şey dökümanlarda hani OSI referans modeline falan baktığınızda böyle çok resmi dökümanlarda bu bir transport adres ama TCP IP özelinde ve genel kullanımda buraya ne isim veriyoruz?
+
+103
+00:20:04,380 --> 00:20:06,380
+Port ismini veriyoruz.
+
+104
+00:20:06,380 --> 00:20:11,859
+Var mı başka bir şey atladığımı unuttum [öğrenci] burayla alakalı.
+
+105
+00:20:37,789 --> 00:20:46,789
+Şu slide'da örneğim UDP'yi implement ediyorsam UDP'ye denk düşen bir transport entiti yani bir proses var.
+
+106
+00:20:46,789 --> 00:20:58,789
+İşte Cihan hocanızın söylediği gibi bu işletim sisteminin kernel'ında da kernel'a gömülü bir şekilde onun bir parçası olarak gerçekleştirilmiş olabilir.
+
+107
+00:20:58,789 --> 00:21:08,789
+Veyahut da üst seviyede kullanıcı seviyesindeki user space'deki kütüphanelerle de gerçekleştirilmiş olabilir.
+
+108
+00:21:08,789 --> 00:21:26,789
+TCP de bir transport entiti çünkü o da kendi kurallarına göre gelen gider paketleri anlamlandıracak, şekillendirecek ve farklı kostlardaki farklı uygulamalar arasındaki veri akışını sağlayacak.
+
+109
+00:21:26,789 --> 00:21:32,789
+Demek ki burada transport layer'ın içerisinde birden fazla transport layer olabilir.
+
+110
+00:21:32,789 --> 00:21:35,789
+Bunlar işletim sistemiyle bütünleşip olabilirler.
+
+111
+00:21:35,789 --> 00:21:38,789
+Kernel içerisinde gömülü olabilirler.
+
+112
+00:21:46,789 --> 00:21:48,789
+Doğru, performanstan ötürü.
+
+113
+00:21:48,789 --> 00:22:01,789
+Özellikle data center'larda hızlar çok yükseldiği için physical layer'da, network layer ve transport layer'da yaşanacak gecikmeyi en azza indirmek adına buna offload deniyor.
+
+114
+00:22:01,789 --> 00:22:17,789
+Software'de işletim sistemi seviyesinde yazılımla yaptığımız şeyleri donanıma gömülü yazılım veya doğrudan donanım FPG veya benzeri programlanabilir tasarımlar üzerinden gerçekleştirebiliyoruz.
+
+115
+00:22:17,789 --> 00:22:21,789
+Kartın üzerinde de bunu istersek çalıştırabiliyoruz.
+
+116
+00:22:21,789 --> 00:22:24,789
+Tabii ki her şeyin bir bedeli var ve gerekliliği var.
+
+117
+00:22:24,789 --> 00:22:29,789
+Evet evet bu slide'ı geçebiliriz sanki.
+
+118
+00:22:29,789 --> 00:22:36,789
+Orada da ne diyor tanınmam ve neler diyor.
+
+119
+00:22:36,789 --> 00:22:40,170
+Haydi devam.
+
+120
+00:22:40,170 --> 00:22:47,170
+Şimdi evet bu senin az önce söylediğin işte segment, paket ve frame.
+
+121
+00:22:47,170 --> 00:23:03,170
+Şimdi transport layer seviyesinde iki transport layer'ın birbirleriyle alıp verdikleri veri bütününe segment ismini veriyoruz.
+
+122
+00:23:03,170 --> 00:23:06,170
+Segmentin içerisinde bir payload var.
+
+123
+00:23:06,170 --> 00:23:25,170
+Yani segmentin kendisini tanımlayan header haricinde transport layer'ın onu işlemesini değerlendirmesini sağlayacak bilgiler transport layer'a yönelik bilgiler haricinde kullanıcının aslında uygulamasının karşı tarafa aktarılması.
+
+124
+00:23:25,170 --> 00:23:30,170
+Evet o bilgi var.
+
+125
+00:23:30,170 --> 00:23:41,339
+Aynen.
+
+126
+00:23:41,339 --> 00:23:46,339
+Ve burada bakın tipik nedir o Rus oyuncağı var ya matvushka mıdır?
+
+127
+00:23:46,339 --> 00:23:52,339
+Bebek içinden, bebek içinden, bebek çıkar böyle bilgolar mantığında.
+
+128
+00:23:52,339 --> 00:23:54,339
+Burada da aynı yapı var.
+
+129
+00:23:54,339 --> 00:23:55,339
+En dışarıda frame diyoruz.
+
+130
+00:23:55,339 --> 00:23:57,339
+Frame'in bir header'ı var.
+
+131
+00:23:57,339 --> 00:24:00,339
+Onun içerisine paket gömülmüş.
+
+132
+00:24:00,339 --> 00:24:02,339
+Paketin bir header'ı var.
+
+133
+00:24:02,339 --> 00:24:04,339
+Onun içerisinde de segment var.
+
+134
+00:24:04,339 --> 00:24:07,339
+Segmentin header'ı var.
+
+135
+00:24:07,339 --> 00:24:18,339
+En üst tarafta da dersin en başında söylemiştik genel kavramlardan bahsederken uygulamaların aralarında değişik topuş yaptıkları veri bütününe de ne isim veriyoruz arkadaşlar?
+
+136
+00:24:18,339 --> 00:24:20,339
+Message diyoruz.
+
+137
+00:24:20,339 --> 00:24:24,339
+Message'i sonsuz büyüklükte var sayıyoruz.
+
+138
+00:24:24,339 --> 00:24:33,339
+Yani başı sonu tabii ki var ama message bir kilobaytta olabilir, bir gigabaytta olabilir, bir terabaytta olabilir.
+
+139
+00:24:33,339 --> 00:24:44,339
+Ama segmente, pakete veya frame'e indirgendiğinde dikkat edin nasıl oluyor bunlar parçalara bölünerek gerçekleşiyor.
+
+140
+00:24:44,339 --> 00:24:57,339
+Yani siz bir gigabaytlık bir veriyi uygulama seviyesinde aktaracak bile olsanız bunu transport seviyesinde transport protokolüne uygun.
+
+141
+00:24:57,339 --> 00:25:03,339
+Onun da tabii ki network protokolü ve physical değerdeki şeylere bağlı olarak uygun olması lazım.
+
+142
+00:25:03,339 --> 00:25:05,339
+O büyüklüklerde parçalara bölmeniz gerekiyor.
+
+143
+00:25:05,339 --> 00:25:07,339
+Bu aynı zamanda onu gösteriyor.
+
+144
+00:25:07,339 --> 00:25:11,420
+Tamam, aynen öyle.
+
+145
+00:25:56,460 --> 00:26:00,460
+Evet kesinlikle doğru söylüyorsun.
+
+146
+00:26:00,460 --> 00:26:05,460
+Burada en genel hali aslında daha kapsayıcı connection oriented hali.
+
+147
+00:26:05,460 --> 00:26:12,460
+Çünkü connection less daha basitleştirilmiş hali olduğu için bu kadar teferruata ihtiyaç yok.
+
+148
+00:26:12,460 --> 00:26:15,460
+Ama bir de şunu uygulamamız lazım arkadaşlar.
+
+149
+00:26:15,460 --> 00:26:32,460
+Haberleşmede çift yönlü bile olsa mutlaka ve mutlaka o haberleşmeyi yönetebilmek adına bir tarafı client diğer tarafı server olarak görüyoruz.
+
+150
+00:26:32,460 --> 00:26:34,460
+Öyle düşünüyoruz.
+
+151
+00:26:34,460 --> 00:26:47,460
+Ancak client olan server yeteneğine de aynı anda başka bir bağlantıda başka bir haberleşmede server yeteneğine de sahip olabilir.
+
+152
+00:26:47,460 --> 00:26:53,460
+Server pozisyonunda yeteneğinde olan bir başka haberleşme ve bağlantıda client olabilir.
+
+153
+00:26:53,460 --> 00:26:59,460
+Yani bunlar mutually exclusive birbirini dışlayan durumlar değil.
+
+154
+00:26:59,460 --> 00:27:07,460
+Bir bağlantı haberleşme için clientken diğerinde server veya tam ters işleri onda serverken diğerinde client olabilir.
+
+155
+00:27:07,460 --> 00:27:18,460
+Genel haliyle client açısından kullanılabilecek çağrıları primitifleri diyelim.
+
+156
+00:27:18,460 --> 00:27:33,460
+Bunlar transport katmanında transport protokollerinin çalıştırılabilmesi için ihtiyaç duyulan onların tetiklenmesi bir state'den bir başka state'e geçebilmeleri için gerekli olan şeyler primitifler.
+
+157
+00:27:33,460 --> 00:27:37,460
+Client açısından bakıldığında ne var? Connect var.
+
+158
+00:27:37,460 --> 00:27:42,460
+Bağlantı isteği oluşturmak çünkü client istek göndermesi gerekiyor.
+
+159
+00:27:42,460 --> 00:27:49,460
+Taleb eden istemci çünkü send gönderme receive alma doğal olarak disconnect.
+
+160
+00:27:49,460 --> 00:27:52,460
+Hatırlayın connection oriented'ın temel şey neydi?
+
+161
+00:27:52,460 --> 00:27:54,460
+Önce bir bağlantı kuruluyordu.
+
+162
+00:27:54,460 --> 00:27:56,460
+Ondan sonra bir yere alışveriş yapılıyordu.
+
+163
+00:27:56,460 --> 00:27:58,460
+Sonra da bağlantı sonlandırılıyordu.
+
+164
+00:27:58,460 --> 00:28:14,460
+O zaman connect'in aç parantez olduğunu düşünürsek disconnect'te kapa parantez bu iki parantez ayrı açılar içerisindeyse send verisi ile sıralı bir şekilde alışveriş yapılıyor.
+
+165
+00:28:14,460 --> 00:28:17,460
+Veri alışverişi aktarılması.
+
+166
+00:28:17,460 --> 00:28:21,460
+Server tarafı da doğal olarak dinleme pozisyonunda olmalı.
+
+167
+00:28:21,460 --> 00:28:23,460
+Listen.
+
+168
+00:28:23,460 --> 00:28:35,460
+Dinleyip de uygun bulduğunu kabul ediyorsa eğer bağlantı kurulması açısından o zaman onun da receive ve send içermesi lazım.
+
+169
+00:28:35,460 --> 00:28:40,460
+Bağlantıyı illaki başlatan kapatacak diye bir kural yok.
+
+170
+00:28:40,460 --> 00:28:46,460
+Server tarafı da yani dinleyen de bağlantıyı kabul etmiş olan taraf da kapataktır.
+
+171
+00:28:46,460 --> 00:28:50,460
+O yüzden disconnect'in de server tarafında olması gerekiyor.
+
+172
+00:28:50,460 --> 00:28:54,460
+Burada belki disconnect'in şeyini söylemek lazım.
+
+173
+00:28:54,460 --> 00:29:57,700
+Disconnect'i aslında iki farklı şekilde kestiğini söylemek direk isten.
+
+174
+00:29:57,700 --> 00:30:08,819
+Disconnect demiş olması yeterli oluyor.
+
+175
+00:30:08,819 --> 00:30:13,859
+Kesinlikle.
+
+176
+00:30:13,859 --> 00:30:16,859
+Bir de burada yine tablo da var.
+
+177
+00:30:16,859 --> 00:30:22,859
+Listen primitifinde gönderilen bir segment yok.
+
+178
+00:30:22,859 --> 00:30:29,859
+Çünkü zaten listen dinleme yani bir segmentin gelmesini bekliyor.
+
+179
+00:30:29,859 --> 00:30:34,859
+Yine receive primitifinde de gönderilen bir segment yok.
+
+180
+00:30:34,859 --> 00:30:40,859
+Tam tersine bir segmentin gönderilmesini bekliyor ki kendisi alabilsin.
+
+181
+00:30:40,859 --> 00:30:49,859
+Ama bunların haricinde connect ile alakalı giden segmentin içerisinde
+
+182
+00:30:49,859 --> 00:30:58,859
+işte connection request veya send'in içerisinde payload uygulamadan gelen mesajın işte o datası artık neyse.
+
+183
+00:30:58,859 --> 00:31:01,859
+Disconnect'e de disconnect request var.
+
+184
+00:31:01,859 --> 00:31:05,859
+O da az önce Cem hocamızın anlattığı gibi yani tek taraflı da olabilir.
+
+185
+00:31:05,859 --> 00:31:09,859
+Asimetrik veya simetrik çift taraflı da olabilir.
+
+186
+00:31:09,859 --> 00:31:11,859
+Sonraki Slackman.
+
+187
+00:31:11,859 --> 00:31:36,809
+Şimdi burada çok basit bir connection oriented service için state diagramı verilmiş.
+
+188
+00:31:36,809 --> 00:31:41,809
+Bu arkadaşlar kesinlikle TCP'yi falan yansıtmıyor.
+
+189
+00:31:41,809 --> 00:31:44,809
+Hakikaten çok çok basitleştirilmiş.
+
+190
+00:31:44,809 --> 00:31:57,809
+Ama buradan aklınızda kalması gereken bir sürü şey olmasına rağmen bence en önemli şeylerden bir tanesi bakın state diagram diyor.
+
+191
+00:31:57,809 --> 00:31:58,809
+Niye?
+
+192
+00:31:58,809 --> 00:32:00,809
+Durumlar var.
+
+193
+00:32:00,809 --> 00:32:03,809
+Bir durumdan diğer duruma geçiyoruz.
+
+194
+00:32:03,809 --> 00:32:11,809
+Buna bağlı olarak o anda hangi durumdayız kabul edilebilecek girdiler neler.
+
+195
+00:32:11,809 --> 00:32:14,809
+Oradan bir sonraki hangi duruma geçebiliriz.
+
+196
+00:32:14,809 --> 00:32:19,809
+Bunların hepsinin hesabının tutulması lazım.
+
+197
+00:32:19,809 --> 00:32:21,809
+Çetelesinin tutulması lazım.
+
+198
+00:32:21,809 --> 00:32:24,809
+Çünkü ne diye varsayıyoruz biz aslında.
+
+199
+00:32:24,809 --> 00:32:28,809
+Alt taraftaki network layer'i en basit haliyle çalıştırıyoruz.
+
+200
+00:32:28,809 --> 00:32:30,809
+Yani datagram olarak çalıştırıyoruz.
+
+201
+00:32:30,809 --> 00:32:32,809
+Yani anı rivayemi olarak çalıştırıyoruz.
+
+202
+00:32:32,809 --> 00:32:35,809
+Kelimenin tam anlamıyla vahşi batı.
+
+203
+00:32:35,809 --> 00:32:37,809
+Paketler kayboluyor.
+
+204
+00:32:37,809 --> 00:32:38,809
+Sırasız geliyor.
+
+205
+00:32:38,809 --> 00:32:41,809
+Her farklı her türlü sıkıntı yaşanabiliyor.
+
+206
+00:32:41,809 --> 00:32:48,809
+Orada hani durumdan sıralı bir çalışmadan falan zaten bahsedebilmemiz mümkün değil.
+
+207
+00:32:48,809 --> 00:33:05,809
+O zaman o sırasızlığı o karmaşayı kaosu sıraya düzgünliğe bir yapıyı oturtabilmemiz için transport seviyesinde connection oriented çalışıyorsak mutlaka ve mutlaka durumlardan bahsetmemiz gerekiyor.
+
+208
+00:33:05,809 --> 00:33:15,809
+Bakın burada da kutucuklar dikdörtgen kutucuklar farklı durumları ifade ediyor.
+
+209
+00:33:15,809 --> 00:33:28,809
+Bunları bunları böyle kendi üzerinde ortadaki establish'den kapanıyormuş gibi yani bir yapı yani iki tane yukarıdaki idle ile aşağıdaki idle örtüşüyor.
+
+210
+00:33:28,809 --> 00:33:31,809
+Establish'de kendi üzerinde kırılıyormuş gibi düşünün.
+
+211
+00:33:31,809 --> 00:33:47,809
+Çünkü yukarıdaki pasif establishment pending ile pasif disconnect pending bakın biri bağlantının kurulmasını pasif olarak beklemek diğeri bağlantının sonlanmasını pasif olarak beklemek.
+
+212
+00:33:47,809 --> 00:33:57,809
+Sağ tarafına gittiğimizde ise aktif olarak bağlantının kurulmasını beklemek aktif olarak bağlantının sonlandırılmasını beklemek.
+
+213
+00:33:57,809 --> 00:34:12,809
+Sağ taraf kalın çizgilerde çizilmiş ve aktif yazıyor çünkü niye client tarafından bilinçli bir şekilde istenli bir şekilde başlatılmış olan aksiyonlar.
+
+214
+00:34:12,809 --> 00:34:29,809
+Sol taraf tire tire kesikli çizgilerle çizilmiş çünkü niye orası server tarafı server tarafı normalde client'ın ne zaman bir bağlantı başlatacağını bilmiyor herhangi bir anda olabilir.
+
+215
+00:34:29,809 --> 00:34:44,809
+Ondan ötürü orası pasif yani server şey kafanızda şey gibi canlanabilir ha sunucu daha böyle bir yönetici pozisyonda veyahut da daha olaya hakim pozisyonda gibi düşünebilirsiniz.
+
+216
+00:34:44,809 --> 00:34:59,809
+Ama transport layer protokolleri açısından aslında sunucu tarafı server tarafı transport protokolleri kapsamında diyorum onu üzerine basa basa aslında pasif bir görev üstleniyor.
+
+217
+00:34:59,809 --> 00:35:16,809
+Çünkü neden bağlantıyı başlatacak olan client isteği gönderecek olan client. Disconnect tarafında client burada öyle gösterilmiş sadece client disconnect edebiliyor gibi görünüyor.
+
+218
+00:35:16,809 --> 00:35:24,809
+Çünkü sağ tarafta kesiksiz çizilmiş olan şeylerle disconnect primitive executed verilmiş.
+
+219
+00:35:24,809 --> 00:35:36,809
+Ama bu kadar basit olmayan gerçek hayattaki daha karmaşık transport protokollerinde az önce Cihan hocamızda basenkron ve senkromdan bahsetti.
+
+220
+00:35:36,809 --> 00:35:50,809
+Server tarafı da ne yapma yeteneğine sahip disconnect yapma yeteneğine sahip ama server tarafı connection başlatma yeteneğine sahip değil arkadaşlar yok böyle bir şey.
+
+221
+00:35:50,809 --> 00:36:05,809
+Server karmaşık daha gelişmiş protokollerde disconnect yapabilir mevcut bağlantıyı kesebilir sonlandırabilir ancak connection başlatamaz.
+
+222
+00:36:05,809 --> 00:36:16,760
+Connection'un her zaman için nereden başlatılması gerekiyor client tarafından. Ne yapalım? Var mı başka bir şey burada [öğrenci] aklıma göre?
+
+223
+00:36:16,760 --> 00:37:16,739
+Yok. Aslında da yine de pekişme davranımına sahip olması önemli değil. Biz ne yapıyoruz? Bir yere erişmek istedikten doğrudan bir sorun var yani.
+
+224
+00:37:16,739 --> 00:37:58,900
+Bilmiyor çünkü kime bağlanacağını karşı duyuyor. Evet sonraki salak. Aynen socket bind ve accept.
+
+225
+00:37:58,900 --> 00:38:35,360
+Cihan onu şey gibi düşünebilir miyiz aslında kafalarında daha rahat canlansın diye. Nasıl bir filen erişmek için bir file pointer'a ihtiyaç duyuyorsak.
+
+226
+00:38:35,360 --> 00:38:53,360
+Aynen aynen yani o soketin tarifle daha doğrusu o transport adresinin transport noktasının tarifle bir veri yapısı.
+
+227
+00:38:53,360 --> 00:39:03,360
+Bunu da neden esinlenmişler? Bu duvarlarda prizler var ya soketler var ya elektrik fişini işte takarız cihazımızı çalıştırırız.
+
+228
+00:39:03,360 --> 00:39:09,360
+Network'e de öyle bir soketle bağlanıyormuşuz cihazına öyle bir isim vermişler.
+
+229
+00:39:09,360 --> 00:39:47,940
+Yine pardon kesiyorum ama yani file pointer'ın hangi file'i gösterdiğini tariflemem için fopen'la open etmem lazım.
+
+230
+00:39:47,940 --> 00:39:55,940
+İster write, ister read, ister append yönünde ama sonucunu da socket file pointer'a atamam lazım.
+
+231
+00:39:55,940 --> 00:39:59,940
+Sonradan read ve write'lerimi o file pointer üzerinden yapabilirim.
+
+232
+00:39:59,940 --> 00:40:09,940
+Soketin de aslında neviyle konuşmak için olduğunu tarifleyebilmem için aynen az önce söylediğin gibi bind'a ihtiyacım var.
+
+233
+00:40:09,940 --> 00:40:13,940
+Bind bu parametreleri içeriyor. Öyle düşünmek lazım.
+
+234
+00:40:13,940 --> 00:41:44,909
+Çoğunlukla da Cihan Hocanızın bahsettiği bu portlar well-defined, genel olarak özel görev atanmış ve herkes tarafından bu işin içerisinde olan kişiler tarafından bilindiği varsayılan portlar 0 ile 1023 değerleri arasında yer almış.
+
+235
+00:41:44,909 --> 00:42:00,909
+Ve bu portların da bu anlamda kullanımı bu adreslerin port adreslerinin kullanımı işletim sistemindeki en yetkili kullanıcıya bırakılmış durumda.
+
+236
+00:42:00,909 --> 00:42:28,300
+Ne var dedik soketi konuştuk, bind'i accept. Tamam anlatıyorsun sen, okey.
+
+237
+00:42:28,300 --> 00:44:38,500
+Cihan Hocanızın söylediği örnekten yaptığı açıklamadan yola giderek çıkarak bir örnek verecek olursak Google'u falan da söyledi.
+
+238
+00:44:38,500 --> 00:44:48,500
+Web servisinin well known portu normal şifresiz plain text olarak çalışan port numarası 80.
+
+239
+00:44:48,500 --> 00:45:04,500
+Peki, şöyle düşünün, Google'a bağlantı yaptınız. Sizin IP adresinizden, rast kere bir port numaranızdan Google'ın IP adresine ve 80 numaralı portuna bağlantı yapıldı.
+
+240
+00:45:04,500 --> 00:45:21,500
+Şimdi, herhangi bir endpoint'e, herhangi bir sokete, bu transport adresine herhangi bir anda sadece ve sadece bir bağlantı yapılabilir.
+
+241
+00:45:21,500 --> 00:45:31,500
+Ve o zaman düşünsenize Google aynı anda 10 binlerce, 100 binlerce abartalım, milyonlarca kişiye hizmet verir.
+
+242
+00:45:31,500 --> 00:45:43,500
+Şimdi o zaman transport serisinde az önce söylediğimiz transport multiplexing, demultiplexing yapıyorum, bir esprisi kalmadı.
+
+243
+00:45:43,500 --> 00:45:49,500
+Eğer sadece bir bağlantı yapılabiliyorsa ve o da alt tarafta bir network adresine bağlı.
+
+244
+00:45:49,500 --> 00:45:58,500
+Yani buradan yola çıkacak olursak aynı anda çok kişiye hizmet verebilmeniz için, en kişiye hizmet verebilmeniz için ne yapmanız lazım?
+
+245
+00:45:58,500 --> 00:46:03,500
+En tane network adresinizin olması lazım. Başladığımız noktaya döneriz.
+
+246
+00:46:03,500 --> 00:46:13,500
+İşte onun oluşmaması için buradaki pratik çözüm az önce Cihan hocanızın söylediği accept'ten geçiyor.
+
+247
+00:46:13,500 --> 00:46:31,500
+Accept 80'e gelen isteği alıyor ama kendi içerisinde bir multiplexing tablosundan geçirerek diyor ki bu 80'e gelen istek arka tarafta diyelim 10 bin 740'a gitmiştir.
+
+248
+00:46:31,500 --> 00:46:42,500
+Siz Google'ın 80'iyle konuştuğunuzu zannederken aslında oradaki 10 bin 740'la konuşuyorsunuz.
+
+249
+00:46:42,500 --> 00:46:52,500
+Yani şey gibi bu, telefon santralında arka tarafta iç hatlar vardır ya siz numarayı çevirirsiniz.
+
+250
+00:46:52,500 --> 00:46:57,500
+Arkasından tabii otomatik aktarılmaz biliyorsanız iç hatlı çevirin.
+
+251
+00:46:57,500 --> 00:46:59,500
+Burada işte bir otomatikleştirme var.
+
+252
+00:46:59,500 --> 00:47:07,500
+İç hatta bağlandığımızda telefon santralının dışarıdaki numarası hala da çaldırılabilir ve bağlantı kurulabilir şekildedir.
+
+253
+00:47:07,500 --> 00:47:09,500
+Buradaki mantık da bu.
+
+254
+00:47:09,500 --> 00:47:21,500
+Yani transport katmanındaki multiplexing özelliğinin ön plana çıkıp gerçekten pratikte kullanılabilmesini sağlayan primitif accept.
+
+255
+00:47:21,500 --> 00:47:34,349
+Diğerleri az önce verdiğimiz basit transport protokolünde olan primitiflerde onları zaten konuşmuştuk.
+
+256
+00:47:34,349 --> 00:47:38,349
+Onlarla alakalı ekstra bir şey konuşmaya gerek yok bence.
+
+257
+00:47:38,349 --> 00:47:41,349
+Burada önemli olan socket, bind ve accept.
+
+258
+00:47:41,349 --> 00:47:44,349
+Onları da uzun uzun anlatayım.
+
+259
+00:48:42,000 --> 00:48:46,000
+O zaman aslında asenkron yapmış oluyorum.
+
+260
+00:48:46,000 --> 00:48:49,000
+Veyahut da senkron yapmış oluyorum.
+
+261
+00:48:49,000 --> 00:48:56,000
+Birinde karşı taraftan alındığına dair onay gelene kadar blökek alıyorum.
+
+262
+00:48:56,000 --> 00:48:58,000
+Diğerinde ise bunu akıple ediyorum.
+
+263
+00:48:58,000 --> 00:49:01,000
+Ben kernel'a teslim ediyorum.
+
+264
+00:49:01,000 --> 00:49:03,000
+Kernel bunu gönderiyor.
+
+265
+00:49:03,000 --> 00:49:06,000
+Veyahut da kernel geldiğinde beni uyarıyor.
+
+266
+00:49:06,000 --> 00:49:08,000
+O şekilde.
+
+267
+00:49:08,000 --> 00:49:15,000
+Ama hani bunun ayrıntısı az önce [öğrenci] senin söylediğin gibi zaten arkadaşlara uygulama örneği yok mu?
+
+268
+00:49:15,000 --> 00:49:18,000
+Fuat'la konuştuğumuz örnekler arasında böyle bir şey de var.
+
+269
+00:49:18,000 --> 00:49:22,000
+Orada daha ayrıntılı bir şekilde görecekler.
+
+270
+00:49:22,000 --> 00:49:26,409
+Sonraki slide'a geçiyorum ben.
+
+271
+00:49:26,409 --> 00:49:35,469
+Bunu uygulamada yapacakları için şu anda anlatmaya gerek var mı?
+
+272
+00:49:35,469 --> 00:49:37,469
+Üzerinden geçelim mi?
+
+273
+00:49:37,469 --> 00:49:38,469
+Yoksa şey yapalım mı?
+
+274
+00:49:38,469 --> 00:51:25,900
+Aynen.
+
+275
+00:51:25,900 --> 00:51:30,900
+Yukarıda pf protocol family, af adres family.
+
+276
+00:51:30,900 --> 00:51:35,900
+Yani aslında buradan da şunu anlayabilirsiniz.
+
+277
+00:51:35,900 --> 00:51:39,900
+Hani birden fazla transport entity olabilir.
+
+278
+00:51:39,900 --> 00:51:43,900
+Bu işletim sistemine gömülü kernel'ın içinde yer alabilir.
+
+279
+00:51:43,900 --> 00:51:46,900
+Ya kütüphaneler de olabilir dedik ya.
+
+280
+00:51:46,900 --> 00:51:52,900
+Mesela bir başka protocol family, unix, pf alt çizgi unix.
+
+281
+00:51:52,900 --> 00:51:55,900
+Ama orada da yine neyi kullanıyoruz?
+
+282
+00:51:55,900 --> 00:51:58,900
+Soket primitifini kullanıyoruz.
+
+283
+00:51:58,900 --> 00:51:59,900
+Kavramlar değişmiyor.
+
+284
+00:51:59,900 --> 00:52:09,900
+Sadece diyoruz ki biz unix ise özel protokol yapısıyla transport katmanında haberleşeceğiz.
+
+285
+00:52:09,900 --> 00:52:16,900
+Burada ise işte pf inet ve internet working yani TCP IP'ye denk düşüyor.
+
+286
+00:52:16,900 --> 00:52:17,900
+Oradaki o inet.
+
+287
+00:52:17,900 --> 00:52:19,900
+Onunla konuşacağız diyoruz.
+
+288
+00:52:19,900 --> 00:52:21,900
+Evet.
+
+289
+00:52:21,900 --> 00:53:01,469
+Aynen.
+
+290
+00:53:01,469 --> 00:53:16,659
+Zaman devam.
+
+291
+00:53:16,659 --> 00:53:27,260
+Ya bu da write zaten.
+
+292
+00:53:27,260 --> 00:53:31,260
+Hani write dosyaya yazarken de write.
+
+293
+00:53:31,260 --> 00:53:33,260
+Terminele yazarken de write.
+
+294
+00:53:33,260 --> 00:53:36,260
+Sokete yazarken de write.
+
+295
+00:53:36,260 --> 00:53:38,260
+Bir şey değişmiyor.
+
+296
+00:53:38,260 --> 00:53:51,039
+Aynen.
+
+297
+00:53:51,039 --> 00:53:53,039
+Read de benzer şekilde.
+
+298
+00:53:53,039 --> 00:54:03,179
+Hatta yani şu örnekte.
+
+299
+00:54:03,179 --> 00:54:09,179
+Write bir demiş arkadaşlar dikkat ederseniz.
+
+300
+00:54:09,179 --> 00:54:14,179
+Write 1, buff 1, bytes 0 std indi.
+
+301
+00:54:14,179 --> 00:54:16,179
+1 std outtu.
+
+302
+00:54:17,179 --> 00:54:25,179
+Karşı tarafın gönderdiğini soketle okuduktan sonra bytes eşitti read satırıyla.
+
+303
+00:54:25,179 --> 00:54:30,179
+Eğer bytes işte küçük eşit sıfırsa bir hata oldu.
+
+304
+00:54:30,179 --> 00:54:33,179
+O yüzden hani exit ediyor.
+
+305
+00:54:33,179 --> 00:54:36,179
+Ama karşı taraftan düzgün bir şekilde okuduysa.
+
+306
+00:54:36,179 --> 00:54:41,179
+Bunu da az önce Cihan hocanız dedi ya bunların her biri birer diskriptör.
+
+307
+00:54:41,179 --> 00:54:45,179
+Bir numaralı diskriptöre yani standart alt puta yazıyor.
+
+308
+00:54:45,179 --> 00:54:58,440
+O anda terminalse terminal başka bir yere yönlendirirse de orası.
+
+309
+00:54:58,440 --> 00:55:39,099
+Tabii tabii.
+
+310
+00:55:39,099 --> 00:55:42,099
+Burada da server tarafı var.
+
+311
+00:55:42,099 --> 00:55:47,500
+Server tarafında bind'i görüyorsunuz.
+
+312
+00:55:47,500 --> 00:55:51,500
+Az önce bakın özellikle konuşmuştuk.
+
+313
+00:55:51,500 --> 00:55:56,500
+Bind'ın server tarafı için gerekli olduğunu.
+
+314
+00:55:56,500 --> 00:56:05,500
+Server'ın hangi adresten ve hangi porttan gelecek olan istekleri dinleyeceğini.
+
+315
+00:56:05,500 --> 00:56:10,500
+Yukarıda da bununla alakalı şeyler var.
+
+316
+00:56:10,500 --> 00:56:14,500
+Bakın in addr any demiş.
+
+317
+00:56:14,500 --> 00:56:20,500
+Yani internet adres formatında in addr o demek.
+
+318
+00:56:20,500 --> 00:56:24,500
+Any ise herhangi bir adresten gelebilir.
+
+319
+00:56:24,500 --> 00:56:31,500
+Yani spesifik olarak sadece şu adresten bağlantı kabul edelim de diyebilirdi.
+
+320
+00:56:31,500 --> 00:56:39,500
+Ama burada in addr any dediği için bütün adreslerden gelen bağlantıyı kabul ediyor.
+
+321
+00:56:39,500 --> 00:57:43,090
+Yine bak burada [öğrenci] senin az önce söylediğin h2n long ve h2n short şey de vermiş.
+
+322
+00:57:44,090 --> 00:57:58,579
+Alt tarafta bind var.
+
+323
+00:57:58,579 --> 00:58:04,579
+Soket ile yukarıdaki şeyi birleştiriyor, ilişkilendiriyor.
+
+324
+00:58:04,579 --> 00:58:07,579
+Address family ilişkilendiriyor.
+
+325
+00:58:07,579 --> 00:58:12,579
+Hangi interface'den dinleyeceğine veya hepsinden bir dinleyeceğine ilişkilendiriyor.
+
+326
+00:58:12,579 --> 00:58:15,579
+Hangi porttan dinleyeceğine ilişkilendiriyor.
+
+327
+00:58:15,579 --> 00:58:18,579
+Burasında da listen yapıyor.
+
+328
+00:58:18,579 --> 00:58:21,579
+Artık dinlemeye başlıyor.
+
+329
+00:58:21,579 --> 00:58:25,579
+Buradaki queue size şu.
+
+330
+00:58:25,579 --> 00:58:28,579
+Siz listen yapıyorsunuz.
+
+331
+00:58:28,579 --> 00:58:35,579
+O sırada bir istek geldi ve bu isteği yönlendirmeniz lazım.
+
+332
+00:58:35,579 --> 00:58:41,579
+Yani aslında listen'den sonra olacak mantıklı primitif ne?
+
+333
+00:58:41,579 --> 00:58:47,579
+Accept eğer gelen istek sizin tarafınızdan şey yapılmadıysa.
+
+334
+00:58:47,579 --> 00:58:53,579
+Bir karaliste falan gibi bir yerden gelen kabul edilmeyecek bir adresten gelen bir istek değilse.
+
+335
+00:58:53,579 --> 00:58:56,579
+Bundan sonraki makul ve mantıklı aşama accept.
+
+336
+00:58:56,579 --> 00:59:02,579
+Ama accept'i yaparken başka istekler gelebilir değil mi?
+
+337
+00:59:02,579 --> 00:59:07,579
+Şimdi o sırada listen aktif değil ve başka istekler geliyor.
+
+338
+00:59:07,579 --> 00:59:11,579
+O gelen isteklerin kaybolmaması lazım.
+
+339
+00:59:11,579 --> 00:59:13,579
+Kaçırılmaması lazım.
+
+340
+00:59:13,579 --> 00:59:27,579
+Tamamen sizin ön gördüğünüz trafik miktarına bağlı olarak ne yoğunlukta size istek geleceğine bağlı olarak bir kuyruk yapısı oluşturulmasını söylüyorsunuz listen'e.
+
+341
+00:59:27,579 --> 00:59:33,579
+O anda listen gelen isteği yönlendirmekle meşgul olsa bile.
+
+342
+00:59:33,579 --> 00:59:39,579
+Diğer o anda gelen isteklerin sıraya alınabilmesini bir kuyruğa alınabilmesini sağlıyor.
+
+343
+00:59:39,579 --> 00:59:42,579
+Burada back log diyoruz.
+
+344
+00:59:42,579 --> 00:59:48,579
+Yani geriye doğru kaç tane kayıt yapılıyor.
+
+345
+00:59:48,579 --> 00:59:51,579
+Oradaki queue size de onu gösteriyor.
+
+346
+00:59:51,579 --> 01:00:21,010
+Recheck alıyor çünkü kuyrukta yer yok.
+
+347
+01:00:21,010 --> 01:00:25,239
+Aynen öyle.
+
+348
+01:00:25,239 --> 01:00:27,239
+Devam aynen bir sonraki soru.
+
+349
+01:00:27,239 --> 01:00:40,849
+Sonrasında da yine yazıyor.
+
+350
+01:00:40,849 --> 01:00:45,849
+Ve dikkat edin bakın aşağıda nereden yararlanıyor?
+
+351
+01:00:45,849 --> 01:00:47,849
+Close.
+
+352
+01:00:47,849 --> 01:00:50,849
+Hem file kapatıyor.
+
+353
+01:00:50,849 --> 01:00:58,849
+Yani bir lokaldaki file kapatma ile soketi kapatma arasında hiçbir fark yok.
+
+354
+01:00:58,849 --> 01:01:01,849
+Close F de Close S.A.
+
+355
+01:01:01,849 --> 01:01:43,460
+O time out da epey uzun bir time out.
+
+356
+01:01:43,460 --> 01:01:46,460
+O yüzden canınız sıkılır.
+
+357
+01:01:46,460 --> 01:01:52,460
+Açtığımız er soketi işiniz bittiğinde düzgün bir şekilde kapatmanız lazım.
+
+358
+01:01:52,460 --> 01:02:05,460
+Bir de bütün işletim sistemlerinde bir prosesin aynı anda açabileceği diskriptör sayısı.
+
+359
+01:02:05,460 --> 01:02:08,460
+Bu ister file olsun ister soketi olsun.
+
+360
+01:02:08,460 --> 01:02:12,460
+İster hani başka bir ayo cihazını olsun.
+
+361
+01:02:12,460 --> 01:02:15,460
+Onun bir üst limiti vardır.
+
+362
+01:02:15,460 --> 01:02:17,460
+O limitten yersiniz.
+
+363
+01:02:17,460 --> 01:02:19,460
+O limit azalmış olur.
+
+364
+01:02:19,460 --> 01:02:24,460
+Bu durumda da bir yerde o limit tükenir.
+
+365
+01:02:24,460 --> 01:02:29,460
+Bu sefer hiç soket açamaz.
+
+366
+01:02:29,460 --> 01:02:32,460
+Bir şey bağlantı kabul edemez.
+
+367
+01:02:32,460 --> 01:02:37,019
+Devam mı [öğrenci]?
+
+368
+01:02:37,019 --> 01:02:45,179
+Ara verelim mi? Nasıl yapalım? Bir saati doldurduk aslında.
+
+369
+01:02:45,179 --> 01:02:49,159
+Tamam.
+
+370
+01:02:50,159 --> 01:02:56,159
+Şimdi transport protokolleri ile alakalı yine az önce de söyledik.
+
+371
+01:02:56,159 --> 01:02:59,159
+Genel kavramları göreceğiz.
+
+372
+01:02:59,159 --> 01:03:01,159
+Protokolden bağımsız.
+
+373
+01:03:01,159 --> 01:03:07,159
+Sonrasında da bunların TCP ve UDP'deki karşılıklarına gözden geçireceğiz.
+
+374
+01:03:07,159 --> 01:03:09,159
+Göreceğimiz kavramlar neden?
+
+375
+01:03:09,159 --> 01:03:11,159
+Adresleme doğal olarak.
+
+376
+01:03:11,159 --> 01:03:16,159
+Konneksiyonun başlatılması, konneksiyonun sonlandırılması.
+
+377
+01:03:16,159 --> 01:03:19,159
+Hata kontrolü ve akış kontrolü.
+
+378
+01:03:19,159 --> 01:03:24,159
+Deminde farklı şekillerde örneğini verdiğimiz multiplexing.
+
+379
+01:03:24,159 --> 01:03:28,159
+Ve olası en kötü durum crash recovery.
+
+380
+01:03:28,159 --> 01:03:31,159
+Transport layer'ın göçmesi nedir?
+
+381
+01:03:31,159 --> 01:03:34,159
+Prosesin kontrolsüz bir şekilde sonlanması.
+
+382
+01:03:34,159 --> 01:03:38,159
+Prosesin çalıştığı hostun restart etmesi ve benzeri durumlar.
+
+383
+01:03:38,159 --> 01:03:42,159
+Yani durum bilgisi yokken, duruma dayalı ya,
+
+384
+01:03:42,159 --> 01:03:48,159
+durum bilgisi yokken, mevcut yapının içerisinde tekrar yer almaya başlayabilmesi.
+
+385
+01:03:48,159 --> 01:03:54,159
+Şeyde söyleyeyim, bakın transport protokollerinde
+
+386
+01:03:54,159 --> 01:03:59,159
+connection oriented olanların karmaşıklığı daha fazla.
+
+387
+01:03:59,159 --> 01:04:03,159
+Çünkü connectionless olan transport protokolleri hiçbir şey yapmıyor.
+
+388
+01:04:03,159 --> 01:04:09,159
+Network'ten ne geliyorsa connectionless şeklinde datagram mı geliyor?
+
+389
+01:04:09,159 --> 01:04:11,159
+Onu olduğu gibi yukarıya basılıyor.
+
+390
+01:04:11,159 --> 01:04:15,159
+Yukarıdan ne geliyorsa onu da olduğu gibi aşağıya basılıyor.
+
+391
+01:04:15,159 --> 01:04:21,159
+O yüzden yani connectionless çalışan transport protokollerini gözden geçireceğiz.
+
+392
+01:04:21,159 --> 01:04:24,159
+Ama burada olduğu gibi işte connection'ı kurdum,
+
+393
+01:04:24,159 --> 01:04:29,159
+connection'ı sonlandırdım tarzı araştırılması gereken
+
+394
+01:04:29,159 --> 01:04:33,159
+veya bugüne kadar üzerinde çok çalışılmış kısımları yok.
+
+395
+01:04:33,159 --> 01:04:34,159
+Daha basitler.
+
+396
+01:04:34,159 --> 01:04:39,159
+Ondan ötürü hani bu chapter'da transport protokollerinden konuşurken
+
+397
+01:04:39,159 --> 01:04:43,159
+ağırlıklı olarak bizi daha iyi bilgilendirsin,
+
+398
+01:04:43,159 --> 01:04:46,159
+daha iyi eğitsin, daha farklı şeyleri görebilirim diye
+
+399
+01:04:46,159 --> 01:04:49,159
+connection oriented'lar üzerinden gidiyoruz.
+
+400
+01:04:49,159 --> 01:04:51,159
+Devam.
+
+401
+01:04:51,159 --> 01:05:00,789
+Evet, şimdi az önce konuştuğumuz şey,
+
+402
+01:05:00,789 --> 01:05:04,789
+TSAP, NSAP nedir?
+
+403
+01:05:04,789 --> 01:05:09,789
+Network Services Access Point,
+
+404
+01:05:09,789 --> 01:05:14,789
+Transport Services Access Point.
+
+405
+01:05:14,789 --> 01:05:19,789
+Bu TSAP ve NSAP'nin açılımları bunlar.
+
+406
+01:05:19,789 --> 01:05:26,789
+Zaten doğal olarak işletim sistemin altında bir uygulama olması lazım.
+
+407
+01:05:26,789 --> 01:05:28,789
+O uygulama bir proses olmalı.
+
+408
+01:05:28,789 --> 01:05:30,789
+Prosesin zaten IDC var dedik.
+
+409
+01:05:30,789 --> 01:05:36,789
+O proses aynı zamanda da network üzerinden veri alıp vermek istiyorsa
+
+410
+01:05:36,789 --> 01:05:38,789
+transport layer'la muhatap olması gerekiyor.
+
+411
+01:05:38,789 --> 01:05:43,789
+O zaman kendisinin proses olarak bir IDC olduğu gibi
+
+412
+01:05:43,789 --> 01:05:48,789
+transport layer açısından da bir IDC'nin olması gerekiyor.
+
+413
+01:05:48,789 --> 01:05:50,789
+Unique bir layer'e olması gerekiyor.
+
+414
+01:05:50,789 --> 01:05:52,789
+Buna da ne diyoruz işte?
+
+415
+01:05:52,789 --> 01:05:54,789
+Transport Services Access Point.
+
+416
+01:05:54,789 --> 01:05:58,789
+Sağ tarafta bakın iki tane server uygulaması var.
+
+417
+01:05:58,789 --> 01:06:02,789
+Bunlara Server 1 ve Server 2 demiş ama
+
+418
+01:06:02,789 --> 01:06:08,789
+kafamızda daha iyi canlanabilmesi için diyelim ki biri DNS Server olsun,
+
+419
+01:06:08,789 --> 01:06:11,789
+öbürü SSH Server olsun.
+
+420
+01:06:11,789 --> 01:06:22,789
+Birini işte 1522 portunda Transport Services Access Point'inde çalıştırıyorum.
+
+421
+01:06:22,789 --> 01:06:27,789
+Diğerini ise 1836 Transport Services Access Point'inde.
+
+422
+01:06:27,789 --> 01:06:33,789
+Sol taraftaki uygulama kendisi 1208'den çıkıyor.
+
+423
+01:06:33,789 --> 01:06:40,789
+Kendi çalıştığı hostun Network Services Access Point adresini de alıyor.
+
+424
+01:06:40,789 --> 01:06:43,789
+Onunla beraber karşı taraftaki hosta gidiyor.
+
+425
+01:06:43,789 --> 01:06:46,789
+Ama orada da nereye yönlendiriliyor?
+
+426
+01:06:46,789 --> 01:06:49,789
+1522'ye yönlendiriliyor.
+
+427
+01:06:49,789 --> 01:06:51,789
+Mantık bu.
+
+428
+01:06:51,789 --> 01:06:56,789
+Şimdi bu iş yapılırken bakın aralarına kadar açık olursa olsun,
+
+429
+01:06:56,789 --> 01:07:01,789
+yani kaç tane hop geçiliyor olursa olsun,
+
+430
+01:07:01,789 --> 01:07:08,789
+physical layer'lardan, data link layer'lardan, network layer'lardan geçiliyor ve ilerleniyor.
+
+431
+01:07:08,789 --> 01:07:11,789
+Ancak şunu unutmayın.
+
+432
+01:07:11,789 --> 01:07:15,789
+Host 1'de transport layer'den geçiş var.
+
+433
+01:07:15,789 --> 01:07:18,789
+Host 2'de transport layer'den geçiş var.
+
+434
+01:07:18,789 --> 01:07:22,789
+Onun bu ikisinin haricinde, bunların haricinde,
+
+435
+01:07:22,789 --> 01:07:36,789
+topolojide diğer hostlardan geçilirken packet hiçbir zaman network layer seviyesinin üzerine çıkmıyor.
+
+436
+01:07:36,789 --> 01:07:40,789
+Çünkü neden? Onlar hop by hop iletiyorlar.
+
+437
+01:07:40,789 --> 01:07:45,789
+Yani bir source tarafında transport layer geçişi var,
+
+438
+01:07:45,789 --> 01:07:47,789
+bir de destination tarafında.
+
+439
+01:07:48,789 --> 01:07:54,789
+Burada ileride örneğini spesifik olarak göreceğiz.
+
+440
+01:07:54,789 --> 01:08:00,789
+Ama slide'da da yazmış transport service access point dediğimiz şeyler,
+
+441
+01:08:00,789 --> 01:08:05,789
+TCP ve UDP protokollerinde port olarak geçen,
+
+442
+01:08:05,789 --> 01:08:12,789
+o protokoller kapsamında da 16 bit ile ifade edilen değerler.
+
+443
+01:08:12,789 --> 01:08:15,789
+Bir başka protokolle bu 8 bit ile ifade edilebilir.
+
+444
+01:08:15,789 --> 01:08:18,789
+Bir başkasında 32 bit ile ifade edilebilir.
+
+445
+01:08:18,789 --> 01:08:21,789
+Tamamen protokolün tariflediği bir şey.
+
+446
+01:08:21,789 --> 01:08:23,789
+Ama genel olarak neyi biliyoruz?
+
+447
+01:08:23,789 --> 01:08:31,789
+Bir transport layer protokolü transport seviyesinde adresleme
+
+448
+01:08:31,789 --> 01:08:35,789
+ve buna bağlı olarak multiplexing ve demultiplexing sağlamak zorunda.
+
+449
+01:08:35,789 --> 01:08:40,829
+Devam mı [öğrenci]?
+
+450
+01:08:40,829 --> 01:08:57,140
+Şimdi connection establishment'ta yazıyor bakın key problem diyor.
+
+451
+01:08:57,140 --> 01:08:59,140
+Yani anahtar problem ne?
+
+452
+01:08:59,140 --> 01:09:04,140
+Anahtar problem şu, network layer güvenilmez.
+
+453
+01:09:04,140 --> 01:09:10,140
+Paketler kaybolabilir, lost. Paketler bozulabilir, corrupted.
+
+454
+01:09:10,140 --> 01:09:18,140
+Paketler gecikebilir, delayed. Paketler tekrarlanabilir, duplicated.
+
+455
+01:09:18,140 --> 01:09:24,140
+Bunların arasında aslında daha sıkıntılı olanlar,
+
+456
+01:09:24,140 --> 01:09:26,140
+geciken de daplike olanlar.
+
+457
+01:09:26,140 --> 01:09:31,140
+Çünkü paket kaybolduysa hedefine gitmiyordur, kaybolmuştur.
+
+458
+01:09:31,140 --> 01:09:37,140
+Karşı taraf kendisine gelmeyen bir paketten ötürü
+
+459
+01:09:37,140 --> 01:09:42,140
+paketin gelmediğini anlayabilir ama yanlış karar vermez.
+
+460
+01:09:42,140 --> 01:09:46,140
+Paket bozuldu ve hedefine gittiyse muhteşem durum.
+
+461
+01:09:46,140 --> 01:09:49,140
+Çünkü neden? Paketin bozulduğunun farkına varıyoruz.
+
+462
+01:09:49,140 --> 01:09:51,140
+O paketi işlemeyeceğiz.
+
+463
+01:09:51,140 --> 01:10:01,140
+Ama diğerinde gecikme durumunda ve daplike olma yani aynı paketten
+
+464
+01:10:01,140 --> 01:10:04,140
+birden fazla gelmiyor durumunda sıkıntı var.
+
+465
+01:10:04,140 --> 01:10:08,140
+Gecikme, gecikmenin üst sınırını biliyor muyuz?
+
+466
+01:10:08,140 --> 01:10:13,140
+Nereye kadar beklersen gecikme diye kabul edeceğim.
+
+467
+01:10:13,140 --> 01:10:17,140
+Ya bir saniye daha bekleseydim ve o sırada o paket gelseydi
+
+468
+01:10:17,140 --> 01:10:20,140
+ne olacaktı? Gecikme olmayacaktı.
+
+469
+01:10:20,140 --> 01:10:24,140
+Ama o zaman bu böyle saniyeler eklene eklene veya mili saniyeler
+
+470
+01:10:24,140 --> 01:10:27,140
+eklene eklene nereye kadar gidecek?
+
+471
+01:10:27,140 --> 01:10:29,140
+Onu biliyor muyuz? Hayır.
+
+472
+01:10:29,140 --> 01:10:35,140
+O zaman bir yerde bir üst sınır koyup o üst sınır içerisinde
+
+473
+01:10:35,140 --> 01:10:39,140
+bir paket gelmiyorsa o paketi ne olarak kabul edeceğiz?
+
+474
+01:10:39,140 --> 01:10:42,140
+Lost gibi kabul edeceğiz, gelmemiş gibi.
+
+475
+01:10:42,140 --> 01:10:47,140
+Yani bakın delay gecikme şeyini daha kolay değerlendirebildiğiniz
+
+476
+01:10:47,140 --> 01:10:52,140
+ve çözebildiğiniz bir başka senaryoya denk düşürmek.
+
+477
+01:10:52,140 --> 01:10:56,140
+Duplicated, bu da ciddi bir sıkıntı.
+
+478
+01:10:56,140 --> 01:11:02,140
+O paket daha önce geldi mi gelmedi mi çetelesini tutmam lazım.
+
+479
+01:11:02,140 --> 01:11:08,140
+Çünkü niye? State yapısı var ya bir durumdan bir başka duruma geçeceğim.
+
+480
+01:11:08,140 --> 01:11:13,140
+Şimdi bir paket geldi, durum değişikliğine sebep oldu.
+
+481
+01:11:13,140 --> 01:11:17,140
+Aynı paketten bir daha geldi ama ben durumu değiştirmiştim.
+
+482
+01:11:17,140 --> 01:11:21,140
+Şimdi geri alıp tekrar aynı durum geçişini mi yapmam lazım?
+
+483
+01:11:21,140 --> 01:11:27,140
+Yoksa bu geçişi yaptığımı fark edip ya bu paketi ben daha önce işlemiştim.
+
+484
+01:11:27,140 --> 01:11:29,140
+Bir daha işlememem gerekiyor mu demem lazım.
+
+485
+01:11:29,140 --> 01:11:36,140
+Tabii ki ikincisi o zaman benim gelen paketin gelmiş olduğunu
+
+486
+01:11:36,140 --> 01:11:42,140
+tekrar geldiğinde de yakalanabilmesini bunun farkına varınabilmesini
+
+487
+01:11:42,140 --> 01:11:48,140
+sağlayacak yöntemler oluşturmam lazım.
+
+488
+01:11:48,140 --> 01:11:55,140
+Aşağıda iki tane maviyle işaretlenmiş hemen bu yazının altındaki maddeler
+
+489
+01:11:55,140 --> 01:11:58,140
+bunu çok net söylüyor şu ana kadar söylediklerinde.
+
+490
+01:11:58,140 --> 01:12:02,140
+Loss veya Corruption da yani kayıp veyahut da bozulma varsa
+
+491
+01:12:02,140 --> 01:12:05,140
+otomatik repeat request yapıyoruz.
+
+492
+01:12:05,140 --> 01:12:09,140
+Zaten ARQ'yu datakomda öğrendiniz.
+
+493
+01:12:09,140 --> 01:12:12,140
+Orada ayrıntılarıyla gördünüz.
+
+494
+01:12:12,140 --> 01:12:17,140
+Farklı şeyleri var, selective olanı var, go back any var falan.
+
+495
+01:12:17,140 --> 01:12:19,140
+İşte former'da var, backward'a var.
+
+496
+01:12:19,140 --> 01:12:22,140
+Öyle veya öyle otomatik repeat request.
+
+497
+01:12:22,140 --> 01:12:32,140
+Ama delay varsa veya daplike geliyorsa o zaman paketi gelmiş olan,
+
+498
+01:12:32,140 --> 01:12:37,140
+işlenmiş veya zamanı geçmiş olan bir paketi yeni bir paket olarak
+
+499
+01:12:37,140 --> 01:12:40,140
+şey yapmamam gerekiyor.
+
+500
+01:12:40,140 --> 01:12:42,140
+Değerlendirmem gerekiyor.
+
+501
+01:12:42,140 --> 01:12:46,140
+Buradan, [öğrenci] ekleyeceğim bir şey var mı?
+
+502
+01:12:46,140 --> 01:12:48,140
+Ben kaptırdım anlatıyorum ama.
+
+503
+01:12:48,140 --> 01:12:52,520
+Yok, benim burası hala tamam.
+
+504
+01:12:52,520 --> 01:12:54,520
+Tamam, okey.
+
+505
+01:12:55,520 --> 01:13:07,520
+Şimdi burada doğal olarak paketlerin transport seviyesinde sıralana binmesi için
+
+506
+01:13:07,520 --> 01:13:10,520
+öncelikle sekans numaralarına olması lazım.
+
+507
+01:13:10,520 --> 01:13:14,520
+Ve neyi biliyoruz?
+
+508
+01:13:14,520 --> 01:13:22,520
+Hani time to leave'den bahsetmiştik ya bir paketin network'te maksimum yaşama süresinden
+
+509
+01:13:22,520 --> 01:13:29,520
+bu başlangıçta bir zaman olarak saniye cinsinden bir değer olarak belirtilmiş ama
+
+510
+01:13:29,520 --> 01:13:33,520
+daha sonrasında hop cinsine dönüştürülmüş daha kolay olsun diye.
+
+511
+01:13:33,520 --> 01:13:47,020
+Şimdi buna bağlı olarak da aslında biz bir maksimum segment life'dan bahsediyoruz.
+
+512
+01:13:47,020 --> 01:14:01,020
+Şimdi burada bakın iki dakika verilmiş ve bunun iki katı 240 saniye yani dört dakika.
+
+513
+01:14:01,020 --> 01:14:03,020
+İki dakika nereden çıkıyor?
+
+514
+01:14:03,020 --> 01:14:11,020
+İki dakika tamamen zamanında bu tasarım yapılırken mühendislik çalışmalarıyla
+
+515
+01:14:11,020 --> 01:14:24,020
+o dönemin altyapısı, paket kaybı, paket gecikmesi, tekrar gelmesi, benzeri şeyler öngörülerek ortaya atılmış bir değer.
+
+516
+01:14:24,020 --> 01:14:27,020
+Ama yani 2021'e geldik.
+
+517
+01:14:27,020 --> 01:14:35,020
+Network yapıları fiber opti olsun, diğer şey olsun falan çok daha güvenilir bir şekilde çalışıyor.
+
+518
+01:14:35,020 --> 01:14:39,020
+Hata yapma olasılıkları çok daha düşük.
+
+519
+01:14:39,020 --> 01:14:44,020
+Virus'tan bahsetmiyorum, orası ayrı bir domain, orada yine şeyler var.
+
+520
+01:14:44,020 --> 01:14:46,020
+Artı hızlar çok yüksek.
+
+521
+01:14:46,020 --> 01:14:55,020
+O yüzden günümüzde bu iki dakika komik kaçabilir, çok gereksiz uzun gelebilir.
+
+522
+01:14:55,020 --> 01:15:03,020
+Ama hala da hani endüstri standarda olarak kabul edilmiş bir şey ve bir değeri değiştirmek
+
+523
+01:15:03,020 --> 01:15:11,020
+o kadar dünya çapında, internetten bahsediyoruz, herkesin dahil olduğu matröpten bahsediyoruz o kadar kolay değil.
+
+524
+01:15:11,020 --> 01:15:15,020
+Siz bunu nerede değiştirebilirsiniz? Siz bunu data center'ınızda değiştirebilirsiniz istiyorsanız.
+
+525
+01:15:15,020 --> 01:15:23,020
+Yani bir paketi data center'ınızı aldıktan sonra zaten orada işte 100 gigabit fiber optik bağlantılar var.
+
+526
+01:15:23,020 --> 01:15:32,020
+Hata yapma olasılığı işte 10 üzeri eksi 20'lerde falan gibi böyle acayip muhteşem güzel değerleriniz varsa
+
+527
+01:15:32,020 --> 01:15:38,020
+zaten bir segmentinde sınırı boyutu belirli hoplar var.
+
+528
+01:15:38,020 --> 01:15:43,020
+Data center hani çok büyük acayip bir şey değil, hopların da sayısı belirli.
+
+529
+01:15:43,020 --> 01:15:46,020
+Ona göre bu değeri kontrolü bir şekilde azaltabilirsiniz.
+
+530
+01:15:46,020 --> 01:15:53,020
+Ama genel internetten bahsediyorsak, şu anda hepimizin bağlı olduğu internet yapısından bahsediyorsak
+
+531
+01:15:53,020 --> 01:16:02,020
+Maximum Segment Life 2 dakika, bunun iki katı da 4 dakika 240 saniye.
+
+532
+01:16:02,020 --> 01:16:19,510
+Bu niçin kullanılıyor? Yani MSL Maximum Segment Life'ın iki katı sekans numaralarını bu zaman zarfı içerisinde tekrar kullanmıyoruz.
+
+533
+01:16:19,510 --> 01:16:31,510
+Çünkü bu zaman zarfı içerisinde sekans numarasını tekrar kullanırsak eski mi yeni mi ayırt etme şansımız yok.
+
+534
+01:16:31,510 --> 01:16:38,789
+Böylece araya bir zamansal bir koymuş oluyoruz, buffer koymuş oluyoruz.
+
+535
+01:16:38,789 --> 01:16:44,039
+Zaman cinsinden bir buffer koymuş oluyoruz.
+
+536
+01:16:44,039 --> 01:16:53,039
+İkinci şeyde, ikinci yöntemde connection establishment'a yukarıda söylediğimiz programlarla başa çıkabilmemizi sağlayacağım.
+
+537
+01:16:53,039 --> 01:16:59,039
+Three-Way Handshake yani üç aşamalı el sıkışma.
+
+538
+01:16:59,039 --> 01:17:02,039
+Sayfayı değiştirmemiz lazım galiba değil mi [öğrenci]?
+
+539
+01:17:05,119 --> 01:17:24,430
+Bu az önce anlattığım sekans numaralarının kullanılmaması, iki MSL kadar beklenilmesi, oradaki o yasak bölge süresi onu gösteriyor.
+
+540
+01:17:24,430 --> 01:17:28,430
+O zaman bunu geçelim, bir sonrakinde şey olması lazım sanki [öğrenci].
+
+541
+01:17:28,430 --> 01:17:29,430
+Evet, aynen.
+
+542
+01:17:29,430 --> 01:17:32,449
+Tamam.
+
+543
+01:17:32,449 --> 01:18:11,539
+Yani ilk sekans bunlara bir de isteğin gelmiş.
+
+544
+01:18:11,539 --> 01:18:22,539
+Kesinlikle burada da arkadaşlar host bir, client şeyinde, görevinde, host iki ise server görevinde.
+
+545
+01:18:22,539 --> 01:18:31,539
+Şimdi iki tarafın sekans numaraları alışveriş verilmiş oluyor karşılıklı.
+
+546
+01:18:31,539 --> 01:18:35,539
+Buna da senkronizasyon diyoruz.
+
+547
+01:18:35,539 --> 01:18:37,539
+TCP'de göreceğiz.
+
+548
+01:18:37,539 --> 01:18:44,539
+Bu işlem için kullanılan terim senkronizasyon, SYN diye geçecek herhalde.
+
+549
+01:18:44,539 --> 01:18:51,539
+Hatta sync'in kısaltılması, senkronizasyonun kısaltılması SYN diye geçecek.
+
+550
+01:18:51,539 --> 01:18:53,539
+Sekans numaraları niye önemli?
+
+551
+01:18:53,539 --> 01:19:04,539
+Host iki kendisine gelen paketleri sıraya sokması lazım ya transport layer açısından.
+
+552
+01:19:04,539 --> 01:19:17,539
+O zaman bir sonraki adımda gelen paketin sekans numarasının bir önceki adımda gelen paketin sekans numarasından büyük olması gerekiyor.
+
+553
+01:19:17,539 --> 01:19:20,539
+Eğer artı bir geliyorsa hemen arkasındakidir.
+
+554
+01:19:20,539 --> 01:19:22,539
+Artı üç geliyorsa iki sonrasıdır.
+
+555
+01:19:22,539 --> 01:19:28,539
+Bunları orada biriktirmesi, aradaki boşlukları belirlemesi ve doldurması gerekiyor.
+
+556
+01:19:29,539 --> 01:19:34,539
+Böylece aslında bir nevi iğne gibi düşünebilirsiniz.
+
+557
+01:19:34,539 --> 01:19:43,539
+Bunu bu fragmentation yaparken IP'de anlattık ya byte bazında büyük bir şeyi gönderirken byte bazında parçalara bölüyorduk.
+
+558
+01:19:43,539 --> 01:19:45,539
+Ondan sonra tekrar birleştiriyorduk.
+
+559
+01:19:45,539 --> 01:19:47,539
+İşte bu onu sağlıyor.
+
+560
+01:19:47,539 --> 01:19:52,539
+Host iki client'daki sekans numaralarını öğrenmiş oluyor.
+
+561
+01:19:52,539 --> 01:19:56,539
+Host bir de server'daki sekans numarasını öğrenmiş oluyor.
+
+562
+01:19:56,539 --> 01:19:58,539
+Böylece karşılıklı el sıkışıyorlar.
+
+563
+01:19:58,539 --> 01:20:02,539
+Biri diyor ki benimkisi X tamam seninkisi X'miş benimkisi de Y.
+
+564
+01:20:02,539 --> 01:20:04,539
+Okey anlaştık.
+
+565
+01:20:04,539 --> 01:20:10,539
+Bunu üç aşamayla yaptıkları için bu el sıkışmayı buna ne isim veriyoruz arkadaşlar?
+
+566
+01:20:10,539 --> 01:20:12,539
+Tri-way handshake diyoruz.
+
+567
+01:20:12,539 --> 01:20:22,539
+Şu aşamadan sonra yani bir iki üç taneden sonra artık aşağıya doğru şey devam edecek.
+
+568
+01:20:22,539 --> 01:20:24,539
+Veri akışı devam edecek.
+
+569
+01:20:24,539 --> 01:20:46,619
+Tamam şunu şey yapalım istersen 18'i bitirelim ondan sonra duralım.
+
+570
+01:20:46,619 --> 01:20:49,619
+Çünkü connection establishment'ta şey var.
+
+571
+01:20:49,619 --> 01:21:00,619
+Şimdi bakın network'te paketler geçebilir veya daplike gelebilir dedik ya.
+
+572
+01:21:00,619 --> 01:21:09,619
+Host bir ve host iki aslında el sıkışmışlardı ve aralarında şey yapıyorlardı anlaşıyorlardı.
+
+573
+01:21:09,619 --> 01:21:24,619
+Fakat bu arada connection request paketi network'teki topolojinin bir azizliğinden bir şeyinden ötürü ciddi bir gecikme ile host ikiye geldi.
+
+574
+01:21:24,619 --> 01:21:29,619
+Host iki connection request'i gördü.
+
+575
+01:21:29,619 --> 01:21:31,619
+Sequence X'i gördü.
+
+576
+01:21:31,619 --> 01:21:33,619
+Hemen ne gönderdi?
+
+577
+01:21:33,619 --> 01:21:37,619
+Eknoloj gönderdi yani kendisi bakın sorgulamadı bile.
+
+578
+01:21:37,619 --> 01:21:40,619
+Bana dedi bağlantı isteği geliyor.
+
+579
+01:21:40,619 --> 01:21:47,619
+Kendi sekans numarasını Y'ye ve işte X'i Eknoloj ettiğini söyledi.
+
+580
+01:21:47,619 --> 01:21:51,619
+Host birinin o anda aktif olarak gönderdiği bir şey var mı?
+
+581
+01:21:51,619 --> 01:21:55,619
+Hayır dedim ya bir süre sonra geldi epeyce bir süre sonra.
+
+582
+01:21:55,619 --> 01:21:57,619
+Hayır yok.
+
+583
+01:21:57,619 --> 01:22:03,619
+O zaman host bir kibarca reject diyecek.
+
+584
+01:22:03,619 --> 01:22:14,619
+Yani sen bana böyle bir şey gönderdin ama benden sana gitmiş ve senin cevabını bekleyen bir connection isteği, bağlantı isteği yok.
+
+585
+01:22:14,619 --> 01:22:20,899
+Bunun daha da abartılı tarafı.
+
+586
+01:22:20,899 --> 01:22:23,899
+Network'ta data paketleri var.
+
+587
+01:22:23,899 --> 01:22:32,899
+Connection request ve bakın yukarıdaki senaryonun arasına data paketi yerleştirilmiş.
+
+588
+01:22:32,899 --> 01:22:44,899
+Host bir henüz reject'i göndermeden host birden host ikiye Sequence X Eknoloji Z olan bir data paketi geldi.
+
+589
+01:22:44,899 --> 01:22:50,899
+Şimdi bunu host ikinin kabul edebilme şansı var mı?
+
+590
+01:22:50,899 --> 01:22:53,899
+Yok çünkü neden? Eknoloj kısmı yanlış.
+
+591
+01:22:53,899 --> 01:22:56,899
+Artı daha neyi yapmamışlar?
+
+592
+01:22:56,899 --> 01:22:59,899
+Three Way Handshake'i yapmamışlar.
+
+593
+01:22:59,899 --> 01:23:06,899
+En kötü ihtimalle bu data paketi Three Way Handshake'in üçüncü paketi olabilirdi.
+
+594
+01:23:06,899 --> 01:23:08,899
+Ama o da olamıyor.
+
+595
+01:23:08,899 --> 01:23:14,899
+Çünkü neden? Eknoloj alanındaki değer yanlış.
+
+596
+01:23:14,899 --> 01:23:26,899
+Şimdi bakın bu senaryolarda Eknoloj alanındaki değer üzerinden karar veriliyor ya veya sekans alanındaki bu ikisi üzerinden karar veriliyor ya.
+
+597
+01:23:26,899 --> 01:23:52,899
+O yüzden ilk madde de söylediğimiz o iki tane maksimum segment life kadar sürelik zamansal buffer konuluyor olması o zaman kadar eski sekans numaralarının tekrar kullanılmasına izin verilmemesi işte bundan dolayı önemli.
+
+598
+01:23:52,899 --> 01:24:00,899
+O birinci madde zamansal olarak buradaki değerlerin yeni değerler olduğunu garanti ediyor.
+
+599
+01:24:00,899 --> 01:24:09,899
+Host bir de host iki de bunları yeni değerler olarak kabul edip düzgün bir şekilde reject edebiliyorlar.
+
+600
+01:24:09,899 --> 01:24:18,210
+Mantık bu. Evet bence bugün şey yapabiliriz.
+
+601
+01:24:18,210 --> 01:24:27,909
+Efendim yok onu şeye bırakırız yani bir sonraki derse bırakırız.
+
+602
+01:24:27,909 --> 01:24:30,909
+Bence Konneksiyon Establishment yaptık zaten.
+
+603
+01:24:30,909 --> 01:24:31,909
+Konneksiyon Lise vardı.
+
+604
+01:24:31,909 --> 01:24:32,909
+Diğer şeyleri vardı.
+
+605
+01:24:32,909 --> 01:24:34,909
+Oradan devam ederiz.
+
+606
+01:24:34,909 --> 01:24:42,659
+Evet arkadaşlar hepinize iyi haftalar.
+
+607
+01:24:42,659 --> 01:24:44,659
+Hocam bir sorunumuz olacak.
+
+608
+01:24:44,659 --> 01:24:47,659
+Evet doğru iyi bayramlar.
+
+609
+01:24:47,659 --> 01:24:49,659
+Sağlıcakla kalın.
+
+610
+01:24:49,659 --> 01:24:51,659
+Hocam sesim geliyor mu?
+
+611
+01:24:51,659 --> 01:24:53,659
+Geliyor [öğrenci].
+
+612
+01:24:54,659 --> 01:24:56,659
+Kolay gelsin teşekkür ederiz ders için.
+
+613
+01:24:56,659 --> 01:25:16,260
+Hocam bu sınav sonuçları ile alakalı hem kendi cevaplarımızı hem de neye göre puanlama yapıldığını öğrenerek bilmek için resmi yazımı yazmamız gerekiyor yoksa bunu açıklamak ister misiniz düşünüyor musun?
+
+614
+01:25:16,260 --> 01:25:18,260
+[öğrenci].
+
+615
+01:25:18,260 --> 01:25:25,399
+Sınav sonuçları hocam sınav sonuçlarımız şimdi bizi puanlarımız belli ya ben kendi adıma değil.
+
+616
+01:25:25,399 --> 01:25:28,399
+37 puanı nasıl aldığımı merak ediyorum.
+
+617
+01:25:28,399 --> 01:25:30,399
+Yanlışlarımı görmek istiyorum.
+
+618
+01:25:30,399 --> 01:25:32,399
+Nerelerde ne tür yanlışlar yapmışım.
+
+619
+01:25:32,399 --> 01:25:38,399
+Bunun için geçen dönem Cihan Hoca yaptığım gibi resmi olarak yazımı yazmam gerekiyor.
+
+620
+01:25:38,399 --> 01:25:44,399
+Yoksa daha kolayına düşünüp de işte arkadaşlar cevap anahtarı.
+
+621
+01:25:44,399 --> 01:25:52,399
+[öğrenci] yazmışsındır sen her yere yazıyı çoktan bu soruyu sormadan yani böyle mutfak bir direktörlük.
+
+622
+01:25:52,399 --> 01:25:58,399
+Daha henüz yazmadım sorma gereksinim muhatabımı bulduğum yerde sorma gereksinimi duyuyorum.
+
+623
+01:25:58,399 --> 01:26:00,399
+Anladım tamam.
+
+624
+01:26:00,399 --> 01:26:06,979
+Şimdi sizle alakalı bir durum yok.
+
+625
+01:26:06,979 --> 01:26:11,979
+Cihan Hoca geçen dönem yazdım siz de sağ olun üçüncü meyilden sonra cevapladınız çok teşekkür ederim.
+
+626
+01:26:12,979 --> 01:26:19,979
+[öğrenci] bütün soruların cevapları derste anlattığımız materyal içerisinde var.
+
+627
+01:26:19,979 --> 01:26:24,979
+Ama istiyorsan sana hangi soruları yanlış yaptığın bilgisini gönderebilirim.
+
+628
+01:26:24,979 --> 01:26:29,979
+Hocam şimdi ben şimdi diğer ders aldığım derslere de bakıyorum.
+
+629
+01:26:29,979 --> 01:26:33,979
+Hepsinin normal usul sayfasında cevaplarınız kısmı da var.
+
+630
+01:26:33,979 --> 01:26:36,979
+Hatta cevap anahtarları bile bir çoğunda var.
+
+631
+01:26:36,979 --> 01:26:38,979
+Sizde bu olacak mı?
+
+632
+01:26:38,979 --> 01:26:42,979
+Test hesabı yapıyoruz [öğrenci] test yapıyoruz.
+
+633
+01:26:42,979 --> 01:26:46,979
+Biliyorum hocam işte o yüzden neye göre puanlama yapıldı.
+
+634
+01:26:46,979 --> 01:26:52,979
+37 puanda hangi sorularım yanlış hangilerim doğru kendi mi görmek açıldı yoksa sizinle alakalı bir şey yok.
+
+635
+01:26:52,979 --> 01:26:58,979
+[öğrenci] hangi soruların yanlış hangi soruların doğru bilgisini sana aktarayım diyorum yani bunda.
+
+636
+01:26:58,979 --> 01:27:02,979
+Tamam hocam tamam lütfen ben bir ara rica edeyim onu çok teşekkür ediyorum.
+
+637
+01:27:02,979 --> 01:27:09,979
+Tamam yani bunu sana aktarayım diyorum ama cevap anahtarıyla alakalı bir şey değil bu şu soruların yanlış bu soruların doğru.
+
+638
+01:27:09,979 --> 01:27:11,979
+Ben sana söyleyeyim.
+
+639
+01:27:11,979 --> 01:27:15,979
+Ama şimdi bunun sonucundan 37 nasıl aldığımı da bilirim değil mi?
+
+640
+01:27:15,979 --> 01:27:19,979
+6 tane doğrun var 5 tane yanlışın var 4 tane de boşun var senin.
+
+641
+01:27:19,979 --> 01:27:21,979
+Doğru 11 tane soru yapalım.
+
+642
+01:27:21,979 --> 01:27:25,979
+Ben sana resme de söylüyorum bak dikkat et 6 tane doğru.
+
+643
+01:27:25,979 --> 01:27:29,979
+Eyvallah hocam bu benimle ilgilendiğiniz anlamına geliyor gurur verici bir şey.
+
+644
+01:27:29,979 --> 01:27:33,979
+Sadece sizinle ilgileniyorum o yüzden şey yapma.
+
+645
+01:27:33,979 --> 01:27:35,979
+Çok teşekkür ediyorum sağ olun hocam.
+
+646
+01:27:35,979 --> 01:27:40,979
+Puanlamayı nasıl yaptık 37 normal hepsi 6'lar puanda mı yaptık hocam?
+
+647
+01:27:40,979 --> 01:27:45,979
+Evet 6 zaten sistemde 6 puan diye görünüyor üzerine de 10 puan ekledik herkesin.
+
+648
+01:27:45,979 --> 01:27:51,979
+Okey yani normalde ben 27 aldım 10 puanda sizinle eklemeniz 37 almışım.
+
+649
+01:27:51,979 --> 01:27:53,979
+Evet aynen.
+
+650
+01:27:53,979 --> 01:27:58,979
+Çok teşekkür ediyorum yanlış olan cevaplarımı da bir ara mail olarak da şu şu şu şu.
+
+651
+01:27:58,979 --> 01:28:00,979
+Çok rica edeceğim hocam.
+
+652
+01:28:00,979 --> 01:28:01,979
+Tamam okey.
+
+653
+01:28:01,979 --> 01:28:03,979
+Çok teşekkür ediyorum kolay gelsin sağ ol.
+
+654
+01:28:03,979 --> 01:28:04,979
+Hadi bakalım iyi günler.
+
+655
+01:28:04,979 --> 01:28:07,979
+Çok pardon ben de bir şey sorabilir miyim hocam?
+
+656
+01:28:07,979 --> 01:28:14,979
+Hocam ben de chati yazdım ben de şey cevaplarımı şey cevap anahtarı görmek istiyorum.
+
+657
+01:28:14,979 --> 01:28:17,979
+Yani hangileri yanlış yaptığını sana söylerim.
+
+658
+01:28:17,979 --> 01:28:19,979
+Hangi soruları?
+
+659
+01:28:19,979 --> 01:29:02,409
+Bir şey yok yapma zorunluluğu.
+
+660
+01:29:02,409 --> 01:29:06,409
+Diğer taraftan nerede [öğrenci] mı senin ismin nasıl okunuyor?
+
+661
+01:29:06,409 --> 01:29:08,409
+[öğrenci] mı [öğrenci] mı nasıl okuyorum?
+
+662
+01:29:08,409 --> 01:29:11,409
+Doğru cevaplarını görmek istiyorum aslında.
+
+663
+01:29:11,409 --> 01:29:18,409
+Ben sana hangi soruları yanlış yaptığını söyleyeyim o zaman doğru cevaplarını zaten biliyorsun.
+
+664
+01:29:18,409 --> 01:29:22,409
+Yanlış yaptıklarında nasıl doğrultacağını araştırıp öğrenebilirsin.
+
+665
+01:29:22,409 --> 01:29:26,409
+O da dersin eğitimin bir parçası.
+
+666
+01:29:26,409 --> 01:29:43,180
+Açıklandı arkadaşlar sistemde.
+
+667
+01:29:43,180 --> 01:29:46,180
+[öğrenci] da kendi notunu bildiğine göre.
+
+668
+01:29:46,180 --> 01:29:48,180
+[öğrenci] bizim grupta.
+
+669
+01:29:48,180 --> 01:29:57,770
+Hocam whatsapp grubunda özellikle konuşuluyor.
+
+670
+01:29:57,770 --> 01:29:59,770
+Biliyorsunuz biz öğrenciler kendi aramızda.
+
+671
+01:29:59,770 --> 01:30:05,770
+Çok öğrencimiz var yani benim gibi çok merak eden o yüzden cevap anahtarlarını görmek istiyorlar.
+
+672
+01:30:05,770 --> 01:30:09,770
+Ama sizin için yok biz yayınlamıyoruz sakıncası var diyorsanız sorun yok.
+
+673
+01:30:09,770 --> 01:30:14,770
+Aynen yani test sınavı olduğu için arkadaşlar.
+
+674
+01:30:14,770 --> 01:30:22,939
+Evet herkese teşekkürler iyi bayramlar arkadaşlar.
+
+675
+01:30:22,939 --> 01:30:24,939
+Görüşmek üzere.
+
+676
+01:30:24,939 --> 01:30:32,510
+Sağ olun.
+
+677
+01:30:32,510 --> 01:30:34,510
+Ben de kapatıyorum.

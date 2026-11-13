@@ -1,0 +1,12427 @@
+1
+00:07:16,529 --> 00:07:18,529
+Evet arkadaşlar, hepiniz hoş geldiniz.
+
+2
+00:07:18,529 --> 00:07:24,500
+Hoş bulduk, merhaba hocam.
+
+3
+00:07:24,500 --> 00:07:26,500
+Ne yaptılar diliyorum.
+
+4
+00:07:26,500 --> 00:07:30,500
+Öncelikle
+
+5
+00:07:30,500 --> 00:07:32,500
+saat 2.00-5.00 geçiyor,
+
+6
+00:07:32,500 --> 00:07:34,500
+hatta 6.00 oldu.
+
+7
+00:07:34,500 --> 00:07:36,500
+53 kişi olduk, başlayabiliriz diye düşünüyorum.
+
+8
+00:07:36,500 --> 00:07:38,500
+Bu hafta
+
+9
+00:07:38,500 --> 00:07:40,500
+Android programına biraz daha
+
+10
+00:07:40,500 --> 00:07:42,500
+yakından
+
+11
+00:07:42,500 --> 00:07:44,500
+bakacağız ve giriş yapacağız.
+
+12
+00:07:44,500 --> 00:07:46,500
+Artık ilk 3 haftadaki
+
+13
+00:07:46,500 --> 00:07:48,500
+genel terminoloji ile ilgili
+
+14
+00:07:48,500 --> 00:07:50,500
+kısımlar tamamlandı.
+
+15
+00:07:50,500 --> 00:07:52,500
+Tabii
+
+16
+00:07:52,500 --> 00:07:54,500
+devam etmeden önce
+
+17
+00:07:54,500 --> 00:07:56,500
+ödeviniz konusunda bir iki
+
+18
+00:07:56,500 --> 00:07:58,500
+ilgilendirme yapacağım.
+
+19
+00:07:58,500 --> 00:08:00,500
+Öncelikle hafta sonu
+
+20
+00:08:00,500 --> 00:08:02,500
+ödevi
+
+21
+00:08:02,500 --> 00:08:04,500
+tamamlayamadığım için
+
+22
+00:08:04,500 --> 00:08:06,500
+üzgünüm. Pazartesi gününe
+
+23
+00:08:06,500 --> 00:08:08,500
+kaldı. Ama
+
+24
+00:08:08,500 --> 00:08:10,500
+ona istinaden de size
+
+25
+00:08:10,500 --> 00:08:12,500
+yeterince süre verdim.
+
+26
+00:08:12,500 --> 00:08:14,500
+Ayın, yanlış hatırlamıyorsam
+
+27
+00:08:14,500 --> 00:08:16,500
+11.00'ın akşamına kadar bir süre var.
+
+28
+00:08:16,500 --> 00:08:18,500
+Ki hafta sonunuz olacak bunu hazırlamak için.
+
+29
+00:08:18,500 --> 00:08:20,500
+Bu
+
+30
+00:08:20,500 --> 00:08:22,500
+ödevler genelde öğrenciler tarafından
+
+31
+00:08:22,500 --> 00:08:24,500
+çok sevilen ödevler değil, araştırma ödevleri.
+
+32
+00:08:24,500 --> 00:08:26,500
+Daha çok kodlama
+
+33
+00:08:26,500 --> 00:08:28,500
+konusunda ödevler
+
+34
+00:08:28,500 --> 00:08:30,500
+olsun istiyorsunuz siz.
+
+35
+00:08:30,500 --> 00:08:32,500
+Haklısınız.
+
+36
+00:08:32,500 --> 00:08:34,500
+Yani ben de onun
+
+37
+00:08:34,500 --> 00:08:36,500
+daha keyifli eğlenceli olduğunu düşünüyorum ama
+
+38
+00:08:36,500 --> 00:08:38,500
+verdiğim konunun
+
+39
+00:08:38,500 --> 00:08:40,500
+mobil programlama
+
+40
+00:08:40,500 --> 00:08:42,500
+yeteneğinize
+
+41
+00:08:42,500 --> 00:08:44,500
+katkı sağlayacağını düşünüyorum.
+
+42
+00:08:44,500 --> 00:08:46,500
+Bu konuda yapacağınız araştırmaların
+
+43
+00:08:46,500 --> 00:08:48,500
+size uzun valide geri dönüşü
+
+44
+00:08:48,500 --> 00:08:50,500
+olacağına inanıyorum.
+
+45
+00:08:50,500 --> 00:08:52,500
+O yüzden araştırmanızın
+
+46
+00:08:52,500 --> 00:08:54,500
+derinliği
+
+47
+00:08:54,500 --> 00:08:56,500
+aslında size
+
+48
+00:08:56,500 --> 00:08:58,500
+sonuç olarak
+
+49
+00:08:58,500 --> 00:09:00,500
+pozitif dönecek.
+
+50
+00:09:00,500 --> 00:09:02,500
+Ödevden alacağınız nota ek olarak
+
+51
+00:09:02,500 --> 00:09:04,500
+sizin bu alandaki
+
+52
+00:09:04,500 --> 00:09:06,500
+bilgi birikiminizi arttıracak
+
+53
+00:09:06,500 --> 00:09:08,500
+diye düşünüyorum.
+
+54
+00:09:08,500 --> 00:09:10,500
+Bu konuyla ilgili
+
+55
+00:09:10,500 --> 00:09:12,500
+hazırlayacağınız makale IEE
+
+56
+00:09:12,500 --> 00:09:14,500
+formatında olacak.
+
+57
+00:09:14,500 --> 00:09:16,500
+4 ile 8 sayfa
+
+58
+00:09:16,500 --> 00:09:18,500
+arasında bir makale
+
+59
+00:09:18,500 --> 00:09:20,500
+hazırlamanızı bekliyorum.
+
+60
+00:09:20,500 --> 00:09:22,500
+Bu makalede olmasını
+
+61
+00:09:22,500 --> 00:09:24,500
+istediğim konulardan
+
+62
+00:09:24,500 --> 00:09:26,500
+kısaca bahsettim
+
+63
+00:09:26,500 --> 00:09:28,500
+dökümamda ama bunlar
+
+64
+00:09:28,500 --> 00:09:30,500
+bu başlıklar zorunlu değil, hatta bu başlıkları
+
+65
+00:09:30,500 --> 00:09:32,500
+yerine kendi
+
+66
+00:09:32,500 --> 00:09:34,500
+belirleyeceğiniz başlıklarla hareket etmeniz
+
+67
+00:09:34,500 --> 00:09:36,500
+benim için daha iyi
+
+68
+00:09:36,500 --> 00:09:38,500
+olacaktır. Çünkü
+
+69
+00:09:38,500 --> 00:09:40,500
+herkes konuyu farklı bir
+
+70
+00:09:40,500 --> 00:09:42,500
+hale getirebilir ama
+
+71
+00:09:42,500 --> 00:09:44,500
+temelde mobile user experience
+
+72
+00:09:44,500 --> 00:09:46,500
+konusunda
+
+73
+00:09:46,500 --> 00:09:48,500
+hangi önemli
+
+74
+00:09:48,500 --> 00:09:50,500
+faktörler var, neden
+
+75
+00:09:50,500 --> 00:09:52,500
+mobile user experience bu kadar
+
+76
+00:09:52,500 --> 00:09:54,500
+kritik, bunu anlatmanızı
+
+77
+00:09:54,500 --> 00:09:56,500
+bekliyorum. IOS ve
+
+78
+00:09:56,500 --> 00:09:58,500
+Android tarafındaki farklılıklara da
+
+79
+00:09:58,500 --> 00:10:00,500
+inme şansınız olabilir.
+
+80
+00:10:00,500 --> 00:10:02,500
+Mobile uygulama geliştirme konseptleri
+
+81
+00:10:02,500 --> 00:10:04,500
+özelinde
+
+82
+00:10:04,500 --> 00:10:06,500
+bunları inceleyebilirsiniz.
+
+83
+00:10:06,500 --> 00:10:08,500
+Farklı bakış açıları var.
+
+84
+00:10:08,500 --> 00:10:10,500
+Sizler ricam
+
+85
+00:10:10,500 --> 00:10:12,500
+copy paste
+
+86
+00:10:12,500 --> 00:10:14,500
+mantığıyla değil
+
+87
+00:10:14,500 --> 00:10:16,500
+okuduklarınızı
+
+88
+00:10:16,500 --> 00:10:18,500
+belirli bir süzgeçten geçirerek
+
+89
+00:10:18,500 --> 00:10:20,500
+akarmanız. En kötü ihtimalle
+
+90
+00:10:20,500 --> 00:10:22,500
+4 sayfa olduğunu düşünürsek
+
+91
+00:10:22,500 --> 00:10:24,500
+hazırlayacağınız dökümanın uzun bir
+
+92
+00:10:24,500 --> 00:10:26,500
+döküman değil. Burada şekil ve
+
+93
+00:10:26,500 --> 00:10:28,500
+tablolar da kullanabilirsiniz.
+
+94
+00:10:28,500 --> 00:10:30,500
+Şekil ve tablu kullanımını özellikle
+
+95
+00:10:30,500 --> 00:10:32,500
+destekliyorum.
+
+96
+00:10:32,500 --> 00:10:34,500
+Çünkü bir
+
+97
+00:10:34,500 --> 00:10:36,500
+konuyu anlatmanın en güzel yollarından bir
+
+98
+00:10:36,500 --> 00:10:38,500
+tanesi şekil ve tablolarından
+
+99
+00:10:38,500 --> 00:10:40,500
+faydalanmak.
+
+100
+00:10:40,500 --> 00:10:42,500
+Burada belli
+
+101
+00:10:44,500 --> 00:10:46,500
+farklı yöntemleri karşılaştırmayı da
+
+102
+00:10:46,500 --> 00:10:48,500
+tercih edebilirsiniz ya da bir
+
+103
+00:10:48,500 --> 00:10:50,500
+faktörlerle ilgili bir
+
+104
+00:10:50,500 --> 00:10:52,500
+tablo vermeyi de tercih edebilirsiniz.
+
+105
+00:10:52,500 --> 00:10:54,500
+Bu tamamen sizin
+
+106
+00:10:54,500 --> 00:10:56,500
+olayı nasıl değerlendireceğinize bağlı.
+
+107
+00:10:56,500 --> 00:10:58,500
+Tabii anlatım
+
+108
+00:10:58,500 --> 00:11:00,500
+dileği önemli.
+
+109
+00:11:00,500 --> 00:11:02,500
+Hikayenin bir başı ve sonu
+
+110
+00:11:02,500 --> 00:11:04,500
+olması ve gelişmesi olması önemli.
+
+111
+00:11:04,500 --> 00:11:06,500
+Çünkü
+
+112
+00:11:06,500 --> 00:11:08,500
+ben bunu buldum buraya bunu koydum
+
+113
+00:11:08,500 --> 00:11:10,500
+onu buldum buraya bunu koydum artık siz
+
+114
+00:11:10,500 --> 00:11:12,500
+hikaye bağlarsınız.
+
+115
+00:11:12,500 --> 00:11:14,500
+Tabi yazı hazırlamak doğru
+
+116
+00:11:14,500 --> 00:11:16,500
+olmuyor. Özellikle
+
+117
+00:11:16,500 --> 00:11:18,500
+okuyan bir kişi
+
+118
+00:11:18,500 --> 00:11:20,500
+sizin yazdığınız
+
+119
+00:11:20,500 --> 00:11:22,500
+makaleden bir şeyler öğrenebiliyor
+
+120
+00:11:22,500 --> 00:11:24,500
+mı? Okuduğunda
+
+121
+00:11:24,500 --> 00:11:26,500
+tamamlayıcılık var mı?
+
+122
+00:11:26,500 --> 00:11:28,500
+Buna da
+
+123
+00:11:28,500 --> 00:11:30,500
+birazcık özen göstermenizi
+
+124
+00:11:30,500 --> 00:11:32,500
+bekliyorum. Çünkü sonuçta
+
+125
+00:11:32,500 --> 00:11:34,500
+hayatınızda mutlaka belli zamanlarda
+
+126
+00:11:34,500 --> 00:11:36,500
+rapor hazırlayacaksınız.
+
+127
+00:11:36,500 --> 00:11:38,500
+Beli konularda araştırma yapıp birilerine
+
+128
+00:11:38,500 --> 00:11:40,500
+sunacaksınız. Bu noktada
+
+129
+00:11:40,500 --> 00:11:42,500
+sizi
+
+130
+00:11:42,500 --> 00:11:44,500
+geliştirebilecek bir ödev
+
+131
+00:11:44,500 --> 00:11:46,500
+olduğu düşüncesindeyim.
+
+132
+00:11:46,500 --> 00:11:48,500
+Benim genel olarak aktaracaklarım
+
+133
+00:11:48,500 --> 00:11:50,500
+bu kadar. Sizin
+
+134
+00:11:50,500 --> 00:11:52,500
+ödevle ilgili sorularınız varsa hemen alayım.
+
+135
+00:11:52,500 --> 00:12:03,970
+Ödevle ilgili herhangi bir
+
+136
+00:12:03,970 --> 00:12:08,620
+sorusu olan var mı?
+
+137
+00:12:08,620 --> 00:12:10,620
+Peki.
+
+138
+00:12:10,620 --> 00:12:12,620
+[öğrenci].
+
+139
+00:12:12,620 --> 00:12:14,620
+İngilizce ya da Türkçe olması
+
+140
+00:12:14,620 --> 00:12:16,620
+fark eder mi?
+
+141
+00:12:16,620 --> 00:12:18,620
+Öyle.
+
+142
+00:12:18,620 --> 00:12:20,620
+Normalde fark etmez. Ama
+
+143
+00:12:20,620 --> 00:12:22,620
+İngilizce yazıp
+
+144
+00:12:22,620 --> 00:12:24,620
+bir yerden copy paste aldığını
+
+145
+00:12:24,620 --> 00:12:26,620
+düşündüğüm arkadaşın
+
+146
+00:12:26,620 --> 00:12:28,620
+doğrudan notu sıfır olur.
+
+147
+00:12:28,620 --> 00:12:30,620
+Hani o riski
+
+148
+00:12:30,620 --> 00:12:32,620
+almak isteyen varsa tabii ki
+
+149
+00:12:32,620 --> 00:12:34,620
+yapabilir. Ben İngilizce güzel hazırlanmış bir raporu
+
+150
+00:12:34,620 --> 00:12:36,620
+daha çok tercih ederim.
+
+151
+00:12:36,620 --> 00:12:38,620
+Ama İngilizceyi şu yüzden tercih
+
+152
+00:12:38,620 --> 00:12:40,620
+edebiliyorsunuz. Çok daha
+
+153
+00:12:40,620 --> 00:12:42,620
+fazla kaynak var.
+
+154
+00:12:42,620 --> 00:12:44,620
+O yüzden
+
+155
+00:12:44,620 --> 00:12:46,620
+bence
+
+156
+00:12:46,620 --> 00:12:48,620
+Türkçe yaparsanız kendi
+
+157
+00:12:48,620 --> 00:12:50,620
+bu riskimizi
+
+158
+00:12:50,620 --> 00:12:52,620
+azaltmış olursunuz. Ama böyle bir zorluyum ki yok.
+
+159
+00:12:54,620 --> 00:12:56,620
+Yeter ki copy paste olmasın.
+
+160
+00:12:56,620 --> 00:12:58,620
+Bazı temel bilgileri
+
+161
+00:12:58,620 --> 00:13:00,620
+kullanmanızda hiçbir sakınca yok. Referans
+
+162
+00:13:00,620 --> 00:13:02,620
+vermek noktasında
+
+163
+00:13:02,620 --> 00:13:04,620
+çekinmediğiniz sürece
+
+164
+00:13:04,620 --> 00:13:06,620
+ve bu belli bir düzeyi açmadığı sürece
+
+165
+00:13:06,620 --> 00:13:08,620
+bu konuda da bir problem yok.
+
+166
+00:13:08,620 --> 00:13:10,620
+Yeter ki bunlar
+
+167
+00:13:10,620 --> 00:13:12,620
+bilinen ve herkesin
+
+168
+00:13:12,620 --> 00:13:14,620
+kullandığı bilgiler olsun. Onun içindeki
+
+169
+00:13:14,620 --> 00:13:20,529
+hikaye size ait olsun.
+
+170
+00:13:20,529 --> 00:13:22,529
+[öğrenci].
+
+171
+00:13:22,529 --> 00:13:24,529
+Hocam, adınız şeyde yazmıyordu.
+
+172
+00:13:24,529 --> 00:13:26,529
+Kaynakçı istemiyorsunuz galiba?
+
+173
+00:13:26,529 --> 00:13:28,529
+Söylediğim gibi ben orada
+
+174
+00:13:28,529 --> 00:13:30,529
+bütün hepsini
+
+175
+00:13:30,529 --> 00:13:32,529
+adım adım başlıklı olarak yazmadım.
+
+176
+00:13:32,529 --> 00:13:34,529
+Kaynakçı tabii ki istiyorum.
+
+177
+00:13:34,529 --> 00:13:36,529
+Kaynakçı bir
+
+178
+00:13:36,529 --> 00:13:38,529
+döküman hazırladığınızda olmazsa
+
+179
+00:13:38,529 --> 00:13:40,529
+olmaz.
+
+180
+00:13:40,529 --> 00:13:42,529
+O da yazmıyorsa bile sizin koymanız
+
+181
+00:13:42,529 --> 00:13:44,529
+gereken bir şey. Ben
+
+182
+00:13:44,529 --> 00:13:46,529
+özellikle belirtmiyorum ama mutlaka
+
+183
+00:13:46,529 --> 00:13:53,100
+olması gerektiğini düşünüyorum. Bu arada
+
+184
+00:13:53,100 --> 00:13:55,100
+kaynaklarınızın sadece
+
+185
+00:13:55,100 --> 00:13:57,100
+internet sitesi olması
+
+186
+00:13:57,100 --> 00:13:59,100
+çok doğru değil.
+
+187
+00:13:59,100 --> 00:14:01,100
+Scholar Google
+
+188
+00:14:01,100 --> 00:14:03,100
+ile kullanmayı da öğrenmeniz
+
+189
+00:14:03,100 --> 00:14:05,100
+gerekir diye düşünüyorum. Birkaç makale
+
+190
+00:14:05,100 --> 00:14:07,100
+koymak, birden fazla koymak
+
+191
+00:14:07,100 --> 00:14:09,100
+bu konuda fayda sağlayabilir.
+
+192
+00:14:11,100 --> 00:14:13,100
+Nasıl indireceğiz derseniz
+
+193
+00:14:13,100 --> 00:14:15,100
+Kütüphanenin sayfasına girerseniz
+
+194
+00:14:15,100 --> 00:14:17,100
+Kütüphaneyi hızlattırarak
+
+195
+00:14:17,100 --> 00:14:19,100
+KTP idi galiba.
+
+196
+00:14:19,100 --> 00:14:21,100
+Orada hem
+
+197
+00:14:21,100 --> 00:14:23,100
+Vettis programını bulacaksınız.
+
+198
+00:14:23,100 --> 00:14:25,100
+Chroma eklenti olarak kullanabiliyorsunuz.
+
+199
+00:14:25,100 --> 00:14:27,100
+Vettis üzerinden
+
+200
+00:14:27,100 --> 00:14:29,100
+bağlanıp dökümanı
+
+201
+00:14:29,100 --> 00:14:31,100
+indirebilirsiniz. Ya da proxy ayarlarınızı
+
+202
+00:14:31,100 --> 00:14:33,100
+değiştirebilirsiniz. Böylece
+
+203
+00:14:33,100 --> 00:14:35,100
+üniversitedeymiş gibi
+
+204
+00:14:35,100 --> 00:14:37,100
+I3P,
+
+205
+00:14:37,100 --> 00:14:39,100
+Springer, Elsevier, ACM
+
+206
+00:14:39,100 --> 00:14:41,100
+gibi
+
+207
+00:14:41,100 --> 00:14:43,100
+üniversitelerinin yayınlarına
+
+208
+00:14:43,100 --> 00:14:45,100
+makale, kitap
+
+209
+00:14:45,100 --> 00:14:47,100
+konferans yayını gibi indirme şansına sahipsiniz.
+
+210
+00:14:47,100 --> 00:14:49,100
+Bunları böyle çok detaylı
+
+211
+00:14:49,100 --> 00:14:51,100
+okuyun
+
+212
+00:14:51,100 --> 00:14:53,100
+yani her türlü
+
+213
+00:14:53,100 --> 00:14:55,100
+detayı öğrenin diye
+
+214
+00:14:55,100 --> 00:14:57,100
+söylemiyorum. Ama birkaç
+
+215
+00:14:57,100 --> 00:14:59,100
+makale taramak da size bir
+
+216
+00:14:59,100 --> 00:15:01,100
+katkı sağlayacaktır.
+
+217
+00:15:01,100 --> 00:15:03,100
+Ben o yüzden bunu
+
+218
+00:15:03,100 --> 00:15:05,100
+yapanların daha yüksek puan alacağını
+
+219
+00:15:05,100 --> 00:15:11,580
+rahatlıkla söyleyebilirim.
+
+220
+00:15:11,580 --> 00:15:13,580
+Bu arada şu notu da düşmek durumundayım.
+
+221
+00:15:13,580 --> 00:15:15,580
+Bu ödevi
+
+222
+00:15:15,580 --> 00:15:17,580
+son hafta sonuna bırakırsanız
+
+223
+00:15:17,580 --> 00:15:19,580
+ortaya hiç istediğiniz gibi bir şey çıkmaz
+
+224
+00:15:19,580 --> 00:15:21,580
+ve sonunda bana dersiniz ki
+
+225
+00:15:21,580 --> 00:15:23,580
+hocam süreyi biraz daha uzatabilir miyiz?
+
+226
+00:15:23,580 --> 00:15:25,580
+O yüzden şimdiden söylüyorum
+
+227
+00:15:25,580 --> 00:15:27,580
+bu hafta sonu
+
+228
+00:15:27,580 --> 00:15:29,580
+mutlaka bu ödeve başlamalısınız.
+
+229
+00:15:29,580 --> 00:15:31,580
+En azından
+
+230
+00:15:31,580 --> 00:15:33,580
+arama işini yapmalısınız.
+
+231
+00:15:33,580 --> 00:15:35,580
+Hangi kaynaklardan ne bir bilgi
+
+232
+00:15:35,580 --> 00:15:37,580
+toplayacaksınız. Elinizde
+
+233
+00:15:37,580 --> 00:15:39,580
+nasıl
+
+234
+00:15:39,580 --> 00:15:41,580
+kullanacağınız bilgiler
+
+235
+00:15:41,580 --> 00:15:43,580
+olacak bunları bulmanız lazım.
+
+236
+00:15:43,580 --> 00:15:45,580
+O yüzden mutlaka bu hafta sonu
+
+237
+00:15:45,580 --> 00:15:47,580
+en geç ödevi başlamanızı
+
+238
+00:15:47,580 --> 00:15:53,259
+tavsiye ederim.
+
+239
+00:15:53,259 --> 00:16:01,120
+Başka soru soru?
+
+240
+00:16:01,120 --> 00:16:03,120
+Peki o zaman
+
+241
+00:16:03,120 --> 00:16:05,120
+ödevi kısmı tamamdır.
+
+242
+00:16:05,120 --> 00:16:07,120
+İlk ödeviniz
+
+243
+00:16:07,120 --> 00:16:09,120
+de başarılar diliyorum.
+
+244
+00:16:09,120 --> 00:16:11,120
+Şimdi
+
+245
+00:16:11,120 --> 00:16:13,120
+ekran paylaşımı yapalım.
+
+246
+00:16:13,120 --> 00:17:07,089
+Evet
+
+247
+00:17:07,089 --> 00:17:09,089
+ekranım paylaştı.
+
+248
+00:17:09,089 --> 00:17:15,150
+Şimdi kendi videomu da
+
+249
+00:17:15,150 --> 00:17:22,240
+durdurayım.
+
+250
+00:17:22,240 --> 00:17:24,240
+Geçen hafta hatırlarsanız
+
+251
+00:17:24,240 --> 00:17:26,240
+en son Android
+
+252
+00:17:26,240 --> 00:17:28,240
+işletim sisteminin
+
+253
+00:17:28,240 --> 00:17:30,240
+mimari yapısındaki
+
+254
+00:17:30,240 --> 00:17:32,240
+katmanlardan
+
+255
+00:17:32,240 --> 00:17:34,240
+bahsetmiştik ve biz daha çok
+
+256
+00:17:34,240 --> 00:17:36,240
+bu derste Java API
+
+257
+00:17:36,240 --> 00:17:38,240
+framework kısmında
+
+258
+00:17:38,240 --> 00:17:40,240
+bize sunulan menajırları kullanacağız
+
+259
+00:17:40,240 --> 00:17:42,240
+demiştik.
+
+260
+00:17:42,240 --> 00:17:44,240
+Alt katmanlara çok yakından
+
+261
+00:17:44,240 --> 00:17:46,240
+bakmasak da zaman zaman
+
+262
+00:17:46,240 --> 00:17:48,240
+alt katmanlarla ilgili de
+
+263
+00:17:48,240 --> 00:17:50,240
+bilgi vereceğiz demiştik.
+
+264
+00:17:50,240 --> 00:17:52,240
+En son söylediğimiz bir nokta vardı
+
+265
+00:17:54,240 --> 00:17:56,240
+just in time compilation
+
+266
+00:17:56,240 --> 00:17:58,240
+ve ahead of time compilation
+
+267
+00:17:58,240 --> 00:18:00,240
+diye konuşmuştuk diye hatırlıyorum.
+
+268
+00:18:02,240 --> 00:18:04,240
+Bunu bir kez daha gündeme
+
+269
+00:18:04,240 --> 00:18:06,240
+getireyim.
+
+270
+00:18:06,240 --> 00:18:08,240
+JIT ve AOT
+
+271
+00:18:10,240 --> 00:18:12,240
+nedir?
+
+272
+00:18:12,240 --> 00:18:20,259
+diye sorayım tekrar.
+
+273
+00:18:20,259 --> 00:18:22,259
+Evet [öğrenci].
+
+274
+00:18:22,259 --> 00:18:24,259
+Just in time dediğimizde
+
+275
+00:18:24,259 --> 00:18:26,259
+uygulama kullanılmadan hemen önce
+
+276
+00:18:26,259 --> 00:18:28,259
+yani uygulamayı başlattığımız anda
+
+277
+00:18:28,259 --> 00:18:30,259
+compile edilip o anda
+
+278
+00:18:30,259 --> 00:18:32,259
+bekleme süresiyle birlikte
+
+279
+00:18:32,259 --> 00:18:34,259
+compile edilmesini bekleyeceğiz. Sonra çalışacak
+
+280
+00:18:34,259 --> 00:18:36,259
+uygulama. Diğerinde de
+
+281
+00:18:36,259 --> 00:18:38,259
+uygulama kurulduğu anda compile edilecek bir kere.
+
+282
+00:18:38,259 --> 00:18:40,259
+Daha sonra her açtığımızda tekrar
+
+283
+00:18:40,259 --> 00:18:42,259
+compile edilmesine gerek kalmayacak.
+
+284
+00:18:42,259 --> 00:18:44,259
+Peki artı ve eksiyonları
+
+285
+00:18:44,259 --> 00:18:46,259
+nedir?
+
+286
+00:18:46,259 --> 00:18:48,259
+Kesinlikle performance
+
+287
+00:18:48,259 --> 00:18:50,259
+daha doğrusu zaman diyelim.
+
+288
+00:18:50,259 --> 00:18:52,259
+Daha önceden compile edilirse
+
+289
+00:18:52,259 --> 00:18:54,259
+her seferinde girdiğimizde compile
+
+290
+00:18:54,259 --> 00:18:56,259
+edilmeyeceği için baya bir zaman kazanacağız.
+
+291
+00:18:56,259 --> 00:18:58,259
+Ama diğer
+
+292
+00:18:58,259 --> 00:19:00,259
+taraftan da sanırım
+
+293
+00:19:00,259 --> 00:19:02,259
+bazı hatalar çıkabilir.
+
+294
+00:19:02,259 --> 00:19:04,259
+Çünkü platformumuzda bazı değişiklikler
+
+295
+00:19:04,259 --> 00:19:06,259
+olduğu zaman önceden compile
+
+296
+00:19:06,259 --> 00:19:08,259
+edilmiş versiyonuyla bir uyumsuzluk
+
+297
+00:19:08,259 --> 00:19:10,259
+çıkabilir. Bu da hata ile
+
+298
+00:19:10,259 --> 00:19:12,259
+karşılaşmamıza sebep olabilir.
+
+299
+00:19:12,259 --> 00:19:14,259
+Bütün anda yer
+
+300
+00:19:14,259 --> 00:19:16,259
+açısından da bilgi yapacaktır.
+
+301
+00:19:16,259 --> 00:19:18,259
+Peki
+
+302
+00:19:18,259 --> 00:19:20,259
+teşekkür ediyorum [öğrenci].
+
+303
+00:19:20,259 --> 00:19:23,730
+Hocam ben de boyuttan bahsedecektim
+
+304
+00:19:23,730 --> 00:19:25,730
+kusura bakma siz söylediniz.
+
+305
+00:19:25,730 --> 00:19:27,730
+Hali [öğrenci] de
+
+306
+00:19:27,730 --> 00:19:29,730
+bir el kaldırmış. Tamam.
+
+307
+00:19:29,730 --> 00:19:31,730
+Aynı şekilde hocam ben de yer ve
+
+308
+00:19:31,730 --> 00:19:33,730
+zamanı söyleyecektim. Tamam.
+
+309
+00:19:33,730 --> 00:19:35,730
+Şimdi tabi
+
+310
+00:19:35,730 --> 00:19:37,730
+acaba da bu karakter
+
+311
+00:19:37,730 --> 00:19:39,730
+kritik olduğu için
+
+312
+00:19:39,730 --> 00:19:41,730
+ahead of time compilation
+
+313
+00:19:41,730 --> 00:19:43,730
+just in time'a göre
+
+314
+00:19:43,730 --> 00:19:45,730
+önemli bir performance
+
+315
+00:19:45,730 --> 00:19:47,730
+kazancı getirdi. Ama
+
+316
+00:19:47,730 --> 00:19:49,730
+bundan içerisinde bunun ikisinin kombinasyonunu
+
+317
+00:19:49,730 --> 00:19:51,730
+kullanmaya karar verdi
+
+318
+00:19:51,730 --> 00:19:53,730
+Google ve Android
+
+319
+00:19:53,730 --> 00:19:55,730
+platform için
+
+320
+00:19:55,730 --> 00:19:57,730
+bu noktada
+
+321
+00:19:57,730 --> 00:19:59,730
+her ikisinin kombinasyonu içeren bir
+
+322
+00:19:59,730 --> 00:20:01,730
+yapı kullanıyor. Dalvik
+
+323
+00:20:01,730 --> 00:20:03,730
+virtual machine yerine artık Android runtime
+
+324
+00:20:03,730 --> 00:20:05,730
+environment'ı kullanılıyor
+
+325
+00:20:05,730 --> 00:20:07,730
+ve burada sizin
+
+326
+00:20:07,730 --> 00:20:09,730
+Java ile ya da Kod gününe geliştirdiğiniz
+
+327
+00:20:09,730 --> 00:20:11,730
+kodlar
+
+328
+00:20:11,730 --> 00:20:13,730
+bir sanal
+
+329
+00:20:13,730 --> 00:20:15,730
+işlemci üzerinde
+
+330
+00:20:15,730 --> 00:20:17,730
+aslında koşuyor.
+
+331
+00:20:17,730 --> 00:20:19,730
+Oradan da makine kodu üretilerek
+
+332
+00:20:19,730 --> 00:20:21,730
+aslında dönüşüm
+
+333
+00:20:21,730 --> 00:20:23,730
+sağlanıyor. Peki
+
+334
+00:20:23,730 --> 00:20:25,730
+şimdi biz
+
+335
+00:20:25,730 --> 00:20:27,730
+Android
+
+336
+00:20:27,730 --> 00:20:29,730
+işletim sisteminin
+
+337
+00:20:29,730 --> 00:20:31,730
+yüklü olduğu
+
+338
+00:20:31,730 --> 00:20:33,730
+kaç farklı cihaz için
+
+339
+00:20:33,730 --> 00:20:35,730
+geliştirme yapabiliyoruz.
+
+340
+00:20:35,730 --> 00:20:37,730
+Kaç farklı türdeki cihaz için geliştirme yapabiliyoruz.
+
+341
+00:20:37,730 --> 00:20:39,730
+Yani mesela bir Android
+
+342
+00:20:39,730 --> 00:20:41,730
+studio yüklediğiniz zaman karşınıza
+
+343
+00:20:41,730 --> 00:20:43,730
+hangi seçenekler geliyor?
+
+344
+00:20:43,730 --> 00:20:45,730
+Onu bir konuşalım.
+
+345
+00:20:45,730 --> 00:20:56,049
+Peki [öğrenci].
+
+346
+00:20:56,049 --> 00:20:58,049
+Hocam akıllı saat geliyor.
+
+347
+00:20:58,049 --> 00:21:00,049
+Bir akıllı saat,
+
+348
+00:21:00,049 --> 00:21:02,049
+iki tablet ve telefonlar,
+
+349
+00:21:02,049 --> 00:21:04,049
+üç
+
+350
+00:21:04,049 --> 00:21:06,049
+Android oto da var.
+
+351
+00:21:06,049 --> 00:21:08,049
+Evet, arabalar,
+
+352
+00:21:08,049 --> 00:21:10,049
+başka
+
+353
+00:21:10,049 --> 00:21:16,240
+Android things var
+
+354
+00:21:16,240 --> 00:21:18,240
+[öğrenci].
+
+355
+00:21:18,240 --> 00:21:20,240
+Hocam televizyonlar var.
+
+356
+00:21:20,240 --> 00:21:22,240
+Televizyonlar var.
+
+357
+00:21:22,240 --> 00:21:24,240
+Sonuçta televizyon
+
+358
+00:21:24,240 --> 00:21:26,240
+Android things dediğimiz
+
+359
+00:21:26,240 --> 00:21:28,240
+IoT devisleri üzerinde
+
+360
+00:21:28,240 --> 00:21:30,240
+Android çalışabilecek olanlar
+
+361
+00:21:30,240 --> 00:21:32,240
+akıllı
+
+362
+00:21:32,240 --> 00:21:34,240
+telefon ve tabletler
+
+363
+00:21:34,240 --> 00:21:36,240
+saat
+
+364
+00:21:36,240 --> 00:21:38,240
+olmak üzere
+
+365
+00:21:38,240 --> 00:21:40,240
+karşınıza
+
+366
+00:21:42,240 --> 00:21:44,240
+çok farklı
+
+367
+00:21:44,240 --> 00:21:46,240
+yapılar için
+
+368
+00:21:46,240 --> 00:21:48,240
+geliştirme seçenekleri
+
+369
+00:21:48,240 --> 00:21:50,240
+sunuluyor.
+
+370
+00:21:50,240 --> 00:21:52,240
+Bu tabi
+
+371
+00:21:52,240 --> 00:21:54,240
+hem arayüz açısından size
+
+372
+00:21:54,240 --> 00:21:56,240
+farklı önerilerde bulunuyor
+
+373
+00:21:56,240 --> 00:21:58,240
+hem de arka planda kullandığı kütüphaneler açısından
+
+374
+00:21:58,240 --> 00:22:00,240
+belirli farklılıklar
+
+375
+00:22:00,240 --> 00:22:02,240
+sunuyor.
+
+376
+00:22:02,240 --> 00:22:04,240
+İlk Android studio yükledikten sonra
+
+377
+00:22:04,240 --> 00:22:06,240
+hangi ortam için
+
+378
+00:22:06,240 --> 00:22:08,240
+geliştireceğinizin kararını
+
+379
+00:22:08,240 --> 00:22:10,240
+vermeniz gerekiyor. Bir proje
+
+380
+00:22:10,240 --> 00:22:12,240
+açarken bu kısmı
+
+381
+00:22:12,240 --> 00:22:14,240
+kritik.
+
+382
+00:22:14,240 --> 00:22:16,240
+Şimdi Android
+
+383
+00:22:16,240 --> 00:22:18,240
+işlem sistemine
+
+384
+00:22:18,240 --> 00:22:20,240
+bir uygulama geliştirme noktasında
+
+385
+00:22:20,240 --> 00:22:22,240
+ihtiyaç duyduğunuz donunun ve
+
+386
+00:22:22,240 --> 00:22:24,240
+yazılımlardan
+
+387
+00:22:24,240 --> 00:22:26,240
+bahsedelim.
+
+388
+00:22:26,240 --> 00:22:28,240
+İsterseniz bunlar neler
+
+389
+00:22:28,240 --> 00:22:51,710
+olabilir?
+
+390
+00:22:51,710 --> 00:22:53,710
+Evet bu arada sizi bekliyorum.
+
+391
+00:22:53,710 --> 00:23:02,109
+Sizden bir cevap bekliyorum.
+
+392
+00:23:02,109 --> 00:23:04,109
+Bilmiyorum hocam.
+
+393
+00:23:04,109 --> 00:23:06,109
+Yani
+
+394
+00:23:06,109 --> 00:23:08,109
+aklına bir şey gelmiyor yani.
+
+395
+00:23:08,109 --> 00:23:10,109
+İllaki vardır bir şeyler ya.
+
+396
+00:23:10,109 --> 00:23:12,109
+Bu arada dersin
+
+397
+00:23:12,109 --> 00:23:14,109
+hafta hafta
+
+398
+00:23:14,109 --> 00:23:16,109
+neler işleyeceği belli olduğu için
+
+399
+00:23:16,109 --> 00:23:18,109
+gelmeden önce belli konulara bakarsanız sevinirim.
+
+400
+00:23:18,109 --> 00:23:20,109
+Daha pekiştirici
+
+401
+00:23:20,109 --> 00:23:24,930
+olacaktır. [öğrenci]?
+
+402
+00:23:24,930 --> 00:23:26,930
+Hocam yazılım olarak Android
+
+403
+00:23:26,930 --> 00:23:28,930
+studioyu söylemiştim zaten.
+
+404
+00:23:28,930 --> 00:23:30,930
+Tamam güzel.
+
+405
+00:23:30,930 --> 00:23:32,930
+Dolanım olarak ise
+
+406
+00:23:32,930 --> 00:23:34,930
+PC ya da
+
+407
+00:23:34,930 --> 00:23:38,849
+MacOS bir cihaz.
+
+408
+00:23:38,849 --> 00:23:40,849
+Şimdi
+
+409
+00:23:40,849 --> 00:23:42,849
+birincisi
+
+410
+00:23:42,849 --> 00:23:44,849
+bizim yazılım olarak
+
+411
+00:23:44,849 --> 00:23:46,849
+geliştirme ortamı olarak
+
+412
+00:23:46,849 --> 00:23:48,849
+integrated development environment olarak
+
+413
+00:23:48,849 --> 00:23:50,849
+Android studioye ihtiyacımız var ama
+
+414
+00:23:50,849 --> 00:23:52,849
+Android
+
+415
+00:23:52,849 --> 00:23:54,849
+uygulama geliştirmek için sadece
+
+416
+00:23:54,849 --> 00:23:56,849
+seçenek bu mudur [öğrenci]?
+
+417
+00:23:56,849 --> 00:23:58,849
+Hocam ZDK'lar
+
+418
+00:23:58,849 --> 00:24:00,849
+olabilir mi acaba yazılım açısından
+
+419
+00:24:00,849 --> 00:24:02,849
+çalışması için?
+
+420
+00:24:02,849 --> 00:24:04,849
+Tabii ki çok önemli olabilir.
+
+421
+00:24:04,849 --> 00:24:16,640
+Başka?
+
+422
+00:24:16,640 --> 00:24:19,980
+[öğrenci]?
+
+423
+00:24:19,980 --> 00:24:21,980
+Android ne ZDK var bir video hocam?
+
+424
+00:24:21,980 --> 00:24:23,980
+Şimdi bir
+
+425
+00:24:23,980 --> 00:24:25,980
+Android ZDK'ya ihtiyacınız var.
+
+426
+00:24:25,980 --> 00:24:27,980
+İki
+
+427
+00:24:27,980 --> 00:24:29,980
+biraz önce arkadaşınızın söylediği
+
+428
+00:24:29,980 --> 00:24:31,980
+Java runtime environment
+
+429
+00:24:31,980 --> 00:24:33,980
+ve Java development
+
+430
+00:24:33,980 --> 00:24:35,980
+kit'e ihtiyacınız var.
+
+431
+00:24:35,980 --> 00:24:37,980
+Native development yapıyorsanız.
+
+432
+00:24:37,980 --> 00:24:39,980
+Üç, bir PC
+
+433
+00:24:41,980 --> 00:24:43,980
+ortamı bu farklı işletim
+
+434
+00:24:43,980 --> 00:24:45,980
+sistemi alabilir Linux, MacOS
+
+435
+00:24:45,980 --> 00:24:47,980
+Windows
+
+436
+00:24:47,980 --> 00:24:49,980
+böyle bir işletim sistemi
+
+437
+00:24:49,980 --> 00:24:51,980
+için uygun
+
+438
+00:24:51,980 --> 00:24:53,980
+yazılımları indirmeniz gerekiyor.
+
+439
+00:24:53,980 --> 00:24:55,980
+Onun dışında
+
+440
+00:24:55,980 --> 00:24:57,980
+emulator
+
+441
+00:24:57,980 --> 00:24:59,980
+ya da Android
+
+442
+00:24:59,980 --> 00:25:01,980
+işletim sistemine sahip bir
+
+443
+00:25:01,980 --> 00:25:03,980
+telefona ya da
+
+444
+00:25:03,980 --> 00:25:05,980
+burada ekranda gözüken
+
+445
+00:25:05,980 --> 00:25:07,980
+herhangi bir cihaza ihtiyacınız var.
+
+446
+00:25:09,980 --> 00:25:11,980
+Bunun üzerinde gerekli
+
+447
+00:25:11,980 --> 00:25:13,980
+testleri yapmak ve
+
+448
+00:25:13,980 --> 00:25:15,980
+kontörleri yapmak adına
+
+449
+00:25:15,980 --> 00:25:17,980
+Android ZDK'nın ötesinde
+
+450
+00:25:17,980 --> 00:25:19,980
+NDK olmak zorunda değil
+
+451
+00:25:19,980 --> 00:25:21,980
+ama alt seviye
+
+452
+00:25:21,980 --> 00:25:23,980
+bir geliştirme yapmak istiyorsanız
+
+453
+00:25:23,980 --> 00:25:25,980
+NDK'yla yüklemeniz gerekiyor.
+
+454
+00:25:25,980 --> 00:25:27,980
+Öte yandan
+
+455
+00:25:27,980 --> 00:25:29,980
+bir development environment'a
+
+456
+00:25:29,980 --> 00:25:31,980
+ihtiyaç duyuyorsunuz. Bunun
+
+457
+00:25:31,980 --> 00:25:33,980
+ilk
+
+458
+00:25:33,980 --> 00:25:35,980
+atla geleni Android Studio.
+
+459
+00:25:35,980 --> 00:25:37,980
+Android Studio Native
+
+460
+00:25:37,980 --> 00:25:39,980
+için olmazsa
+
+461
+00:25:39,980 --> 00:25:41,980
+olmaz seçeneklerden
+
+462
+00:25:41,980 --> 00:25:43,980
+bir tanesi IntelliJ Idea
+
+463
+00:25:43,980 --> 00:25:45,980
+altyapısına dayalı
+
+464
+00:25:45,980 --> 00:25:47,980
+oluşturulmuş bir
+
+465
+00:25:47,980 --> 00:25:49,980
+geliştirme ortamını yakmış. 2013
+
+466
+00:25:49,980 --> 00:25:51,980
+yılından beri
+
+467
+00:25:51,980 --> 00:25:53,980
+yanlış hatırlamıyorsam kullanılıyor.
+
+468
+00:25:53,980 --> 00:25:55,980
+Android
+
+469
+00:25:55,980 --> 00:25:57,980
+uygulama geliştirmek için sadece
+
+470
+00:25:57,980 --> 00:25:59,980
+Android Studio değil
+
+471
+00:25:59,980 --> 00:26:01,980
+cross platformlarla kullanılabilir
+
+472
+00:26:01,980 --> 00:26:03,980
+demiştik. O yüzden
+
+473
+00:26:03,980 --> 00:26:05,980
+Android uygulama geliştirmekle
+
+474
+00:26:05,980 --> 00:26:07,980
+Native Android
+
+475
+00:26:07,980 --> 00:26:09,980
+uygulama geliştirmek kavramı arasında da fark var.
+
+476
+00:26:09,980 --> 00:26:11,980
+Buna dikkat etmek gerekiyor.
+
+477
+00:26:13,980 --> 00:26:15,980
+Onun ötesinde
+
+478
+00:26:15,980 --> 00:26:17,980
+bu kurulumları
+
+479
+00:26:17,980 --> 00:26:19,980
+yaptıktan sonra
+
+480
+00:26:23,980 --> 00:26:25,980
+bu kurulumları
+
+481
+00:26:25,980 --> 00:26:27,980
+yaptığınız donanımın
+
+482
+00:26:27,980 --> 00:26:29,980
+gereksinimleri de önemli.
+
+483
+00:26:29,980 --> 00:26:31,980
+Android Studio'yu her
+
+484
+00:26:31,980 --> 00:26:33,980
+istediğiniz donanımda çalıştıramayabilirsiniz.
+
+485
+00:26:33,980 --> 00:26:35,980
+Linux için,
+
+486
+00:26:35,980 --> 00:26:37,980
+MacOS için, Windows için
+
+487
+00:26:37,980 --> 00:26:39,980
+belli gereksinimler var.
+
+488
+00:26:39,980 --> 00:26:41,980
+Aşağı yukarı en az
+
+489
+00:26:41,980 --> 00:26:43,980
+4 GB RAM 2D
+
+490
+00:26:43,980 --> 00:26:45,980
+Dense'de tavsiye edilen
+
+491
+00:26:45,980 --> 00:26:47,980
+en az 4
+
+492
+00:26:47,980 --> 00:26:49,980
+bazı işletim standarına 8 olmak üzere.
+
+493
+00:26:49,980 --> 00:26:51,980
+Belirli bir
+
+494
+00:26:51,980 --> 00:26:53,980
+boyut olarak da
+
+495
+00:26:53,980 --> 00:26:55,980
+4 GB'lık bir alandan bahsedebiliriz.
+
+496
+00:26:57,980 --> 00:26:59,980
+Bu tür belli alanları
+
+497
+00:26:59,980 --> 00:27:01,980
+belli gereksinimleri
+
+498
+00:27:01,980 --> 00:27:03,980
+karşılamanız gerekiyor ki
+
+499
+00:27:03,980 --> 00:27:05,980
+sorunsuz bir şekilde kodlama
+
+500
+00:27:05,980 --> 00:27:07,980
+imkanı bulabilir.
+
+501
+00:27:07,980 --> 00:27:09,980
+Şimdi bunu niye anlatıyorum?
+
+502
+00:27:09,980 --> 00:27:11,980
+Bu sizin bilmediğiniz bir şey mi ya da
+
+503
+00:27:11,980 --> 00:27:13,980
+bir şey mi? Hayır değil ama
+
+504
+00:27:13,980 --> 00:27:15,980
+proje yaparken özellikle
+
+505
+00:27:15,980 --> 00:27:17,980
+ara ve bitirme projede en çok
+
+506
+00:27:17,980 --> 00:27:19,980
+öğrencilere uyardığımız nokta
+
+507
+00:27:19,980 --> 00:27:21,980
+bir fizibilite
+
+508
+00:27:21,980 --> 00:27:23,980
+çalışmasının nasıl yapılması
+
+509
+00:27:23,980 --> 00:27:25,980
+gerektiği konusu.
+
+510
+00:27:25,980 --> 00:27:27,980
+Şimdi bir kere
+
+511
+00:27:27,980 --> 00:27:29,980
+geliştireceğiniz
+
+512
+00:27:29,980 --> 00:27:31,980
+uygulamanın native mi olduğu
+
+513
+00:27:31,980 --> 00:27:33,980
+yoksa cross platform'ı yoksa
+
+514
+00:27:33,980 --> 00:27:35,980
+mobile web mi olacağına göre
+
+515
+00:27:35,980 --> 00:27:37,980
+geliştirme yapacağınız ortam
+
+516
+00:27:37,980 --> 00:27:39,980
+artı bu
+
+517
+00:27:39,980 --> 00:27:41,980
+tasarladığınız uygulamanın çalışacağı
+
+518
+00:27:41,980 --> 00:27:43,980
+ortam önem kazanıyor.
+
+519
+00:27:43,980 --> 00:27:45,980
+İşte
+
+520
+00:27:45,980 --> 00:27:47,980
+tasarladığınız uygulamayı
+
+521
+00:27:47,980 --> 00:27:49,980
+ne tür bir telefonda çalıştırabileceksiniz?
+
+522
+00:27:49,980 --> 00:27:51,980
+En alt API
+
+523
+00:27:51,980 --> 00:27:53,980
+serisini ne olarak belirlediniz?
+
+524
+00:27:53,980 --> 00:27:57,980
+Acaba o API'daki telefonların
+
+525
+00:27:57,980 --> 00:27:59,980
+donanımsa özellikle
+
+526
+00:27:59,980 --> 00:28:01,980
+sizin uygulamanızın
+
+527
+00:28:01,980 --> 00:28:03,980
+performansını karşılayabilecek mi?
+
+528
+00:28:03,980 --> 00:28:05,980
+O yüzden donanım ve yazılım
+
+529
+00:28:05,980 --> 00:28:07,980
+olarak öncelikle
+
+530
+00:28:07,980 --> 00:28:11,980
+ortama ve yazılımlara karar verip
+
+531
+00:28:11,980 --> 00:28:13,980
+bunların birbirlerinin
+
+532
+00:28:13,980 --> 00:28:15,980
+tarafında
+
+533
+00:28:15,980 --> 00:28:17,980
+ne kadar özelliklerini karşılayabildiğini
+
+534
+00:28:17,980 --> 00:28:19,980
+ya da o yazılımın
+
+535
+00:28:19,980 --> 00:28:21,980
+ne kadarlık bir donanımı ya da
+
+536
+00:28:21,980 --> 00:28:23,980
+o donanımda çalışabilecek hangi tür
+
+537
+00:28:23,980 --> 00:28:25,980
+yazılım desteklenebileceğini detaylı
+
+538
+00:28:25,980 --> 00:28:27,980
+bir şekilde bakmak lazım.
+
+539
+00:28:27,980 --> 00:28:29,980
+Yoksa
+
+540
+00:28:29,980 --> 00:28:31,980
+yarattığınız çok güzel bir uygulama
+
+541
+00:28:31,980 --> 00:28:33,980
+sadece belli bir
+
+542
+00:28:33,980 --> 00:28:35,980
+telefon gamında çalışıp
+
+543
+00:28:35,980 --> 00:28:37,980
+diğerlerinde çalışmazsa
+
+544
+00:28:37,980 --> 00:28:39,980
+ve bu kullanıcı tarafına
+
+545
+00:28:39,980 --> 00:28:41,980
+bilgi olarak verilmezse
+
+546
+00:28:41,980 --> 00:28:43,980
+sizin repitasyonunuz
+
+547
+00:28:43,980 --> 00:28:45,980
+kötü etkilenecektir.
+
+548
+00:28:45,980 --> 00:28:47,980
+Belki 100 kişi de
+
+549
+00:28:47,980 --> 00:28:49,980
+mutluluk sağlarken
+
+550
+00:28:49,980 --> 00:28:51,980
+1000 kişi de mutsuzluğa
+
+551
+00:28:51,980 --> 00:28:53,980
+sevdiğinde olacaktır. O yüzden
+
+552
+00:28:53,980 --> 00:28:55,980
+fizibilite her zaman için
+
+553
+00:28:55,980 --> 00:28:57,980
+sizin uygulamanızın
+
+554
+00:28:57,980 --> 00:28:59,980
+nerede geliştireceği konusunda ve
+
+555
+00:28:59,980 --> 00:29:01,980
+hangi cihazlarla çalıştıracağı konusunda
+
+556
+00:29:01,980 --> 00:29:03,980
+kritik önem arz ediyor.
+
+557
+00:29:03,980 --> 00:29:05,980
+Şimdi
+
+558
+00:29:05,980 --> 00:29:07,980
+yazılımları söylemiştik
+
+559
+00:29:07,980 --> 00:29:09,980
+onlardan da
+
+560
+00:29:09,980 --> 00:29:11,980
+bahsedelim.
+
+561
+00:29:11,980 --> 00:29:29,920
+Sdk
+
+562
+00:29:29,920 --> 00:29:33,460
+Java Runtime
+
+563
+00:29:33,460 --> 00:29:35,460
+Environment
+
+564
+00:29:35,460 --> 00:29:37,460
+Android Sdk
+
+565
+00:29:37,460 --> 00:29:43,359
+Android
+
+566
+00:29:43,359 --> 00:29:53,900
+Ndk Optional
+
+567
+00:29:53,900 --> 00:29:58,500
+Android Studio
+
+568
+00:29:58,500 --> 00:30:02,930
+IDE olarak var.
+
+569
+00:30:02,930 --> 00:30:09,599
+Emulator
+
+570
+00:30:09,599 --> 00:30:29,779
+and Or ya da diğerleri.
+
+571
+00:30:29,779 --> 00:30:31,779
+Bu tür
+
+572
+00:30:31,779 --> 00:30:33,779
+yazılım pedonuma ihtiyacınız var.
+
+573
+00:30:33,779 --> 00:30:35,779
+Tabi
+
+574
+00:30:35,779 --> 00:30:37,779
+PC
+
+575
+00:30:37,779 --> 00:30:39,779
+Desktop
+
+576
+00:30:39,779 --> 00:30:41,779
+Laptop
+
+577
+00:30:41,779 --> 00:30:46,109
+Bunların üzerinde
+
+578
+00:30:46,109 --> 00:30:48,109
+ayrı ayrı
+
+579
+00:30:48,109 --> 00:30:50,109
+MacOS
+
+580
+00:30:50,109 --> 00:30:52,109
+Linux
+
+581
+00:30:52,109 --> 00:30:54,109
+Windows için
+
+582
+00:30:54,109 --> 00:30:56,109
+ayrı gereksinlere bakmanız gerekiyor.
+
+583
+00:30:56,109 --> 00:30:58,109
+Şimdi
+
+584
+00:30:58,109 --> 00:31:00,109
+geliştireceğiniz ortam da kritik.
+
+585
+00:31:00,109 --> 00:31:02,109
+Test edeceğiniz
+
+586
+00:31:02,109 --> 00:31:04,109
+ortam da kritik çünkü bunlara bir firma
+
+587
+00:31:04,109 --> 00:31:06,109
+kursanız yatırım yapmanız gerekiyor.
+
+588
+00:31:06,109 --> 00:31:08,109
+Özellikle
+
+589
+00:31:08,109 --> 00:31:10,109
+girişimcilik noktasında
+
+590
+00:31:10,109 --> 00:31:12,109
+hevesli olan arkadaşlar için
+
+591
+00:31:12,109 --> 00:31:14,109
+doğru planlamalar
+
+592
+00:31:14,109 --> 00:31:16,109
+çok önemli.
+
+593
+00:31:16,109 --> 00:31:18,109
+Birinci noktada
+
+594
+00:31:18,109 --> 00:31:20,109
+sizin
+
+595
+00:31:20,109 --> 00:31:22,109
+ihtiyaç duyduğunuz
+
+596
+00:31:22,109 --> 00:31:24,109
+fikrinizi
+
+597
+00:31:24,109 --> 00:31:26,109
+hayata geçirmek için
+
+598
+00:31:26,109 --> 00:31:28,109
+ekipmanların bu personel olur
+
+599
+00:31:28,109 --> 00:31:30,109
+donanım olur, yazılım olur
+
+600
+00:31:30,109 --> 00:31:32,109
+size maliyetini
+
+601
+00:31:32,109 --> 00:31:34,109
+hesaplamanız gerekiyor.
+
+602
+00:31:34,109 --> 00:31:36,109
+Onun ötesinde size geri dönüşünü
+
+603
+00:31:36,109 --> 00:31:38,109
+hesaplamanız gerekiyor.
+
+604
+00:31:38,109 --> 00:31:40,109
+Bunun için pazar
+
+605
+00:31:40,109 --> 00:31:42,109
+da ki
+
+606
+00:31:42,109 --> 00:31:44,109
+potansiyel müşterilerinizi hesaplamanız
+
+607
+00:31:44,109 --> 00:31:46,109
+gerekiyor. Yıllık satışınızın
+
+608
+00:31:46,109 --> 00:31:48,109
+ne olabileceğini ön görmeniz
+
+609
+00:31:48,109 --> 00:31:50,109
+gerekiyor. Bunları
+
+610
+00:31:50,109 --> 00:31:52,109
+aslında
+
+611
+00:31:52,109 --> 00:31:54,109
+ekonomi gibi
+
+612
+00:31:54,109 --> 00:31:56,109
+işletme gibi derslerde
+
+613
+00:31:56,109 --> 00:31:58,109
+belki görüyorsunuzdur bazılarınız
+
+614
+00:31:58,109 --> 00:32:00,109
+alıyorsa. Bunlar
+
+615
+00:32:00,109 --> 00:32:02,109
+teknik bilginiz kadar
+
+616
+00:32:02,109 --> 00:32:04,109
+şirketinizin
+
+617
+00:32:04,109 --> 00:32:06,109
+devamlılığı ve fikrimizin pazarlama
+
+618
+00:32:06,109 --> 00:32:08,109
+noktasında çok önemlilik arz ediyor.
+
+619
+00:32:08,109 --> 00:32:10,109
+O yüzden
+
+620
+00:32:10,109 --> 00:32:12,109
+smartphone applicationler
+
+621
+00:32:12,109 --> 00:32:14,109
+için de güzel bir fikrimiz var
+
+622
+00:32:14,109 --> 00:32:16,109
+ise
+
+623
+00:32:16,109 --> 00:32:18,109
+öncelikle bunun
+
+624
+00:32:18,109 --> 00:32:20,109
+hayata geçmesi için
+
+625
+00:32:20,109 --> 00:32:22,109
+gerekli, gereksinlerin
+
+626
+00:32:22,109 --> 00:32:24,109
+hem donanımsal
+
+627
+00:32:24,109 --> 00:32:26,109
+hem yazılımsal hem ekonomik
+
+628
+00:32:26,109 --> 00:32:28,109
+boyutun iyi
+
+629
+00:32:28,109 --> 00:32:30,109
+irdelenmesi gerekiyor. Bu noktada
+
+630
+00:32:30,109 --> 00:32:32,109
+alacağımız
+
+631
+00:32:32,109 --> 00:32:34,109
+ara yüz geliştirme ortamı PC'nin bile
+
+632
+00:32:34,109 --> 00:32:36,109
+özellikleri sizin için bağlayıcı oluyor.
+
+633
+00:32:36,109 --> 00:32:38,109
+Hatta
+
+634
+00:32:38,109 --> 00:32:40,109
+ara yüz geliştirmek için
+
+635
+00:32:40,109 --> 00:32:42,109
+bu konuda biraz daha
+
+636
+00:32:42,109 --> 00:32:44,109
+iddialı olan macOS
+
+637
+00:32:44,109 --> 00:32:46,109
+işletim sistemine sahip olan
+
+638
+00:32:46,109 --> 00:32:48,109
+bilgisayarların temini bile talep ediliyor
+
+639
+00:32:48,109 --> 00:32:50,109
+firmalar tarafından.
+
+640
+00:32:50,109 --> 00:32:52,109
+Ara yüzün de
+
+641
+00:32:52,109 --> 00:32:54,109
+bir gerekli olduğunu
+
+642
+00:32:54,109 --> 00:32:56,109
+unutmamamız gerekiyor ki ödevinizin
+
+643
+00:32:56,109 --> 00:32:58,109
+bir parçası da
+
+644
+00:32:58,109 --> 00:33:00,109
+user experience'ın
+
+645
+00:33:00,109 --> 00:33:02,109
+çok doğrudan etkileyen
+
+646
+00:33:02,109 --> 00:33:04,109
+user interface kısmı UI komponentler
+
+647
+00:33:04,109 --> 00:33:06,109
+bu konuda da
+
+648
+00:33:06,109 --> 00:33:08,109
+bitchapter hazırlamanız güzel olacaktır
+
+649
+00:33:08,109 --> 00:33:10,109
+diye düşünüyorum.
+
+650
+00:33:10,109 --> 00:33:12,109
+Sonuçta
+
+651
+00:33:14,109 --> 00:33:16,109
+bir Android uygulaması
+
+652
+00:33:16,109 --> 00:33:18,109
+geliştirmek için temel
+
+653
+00:33:18,109 --> 00:33:20,109
+olarak ihtiyaç duyulan
+
+654
+00:33:20,109 --> 00:33:22,109
+yazılımlar, donanımlar bu şekilde
+
+655
+00:33:22,109 --> 00:33:24,109
+diyebiliriz.
+
+656
+00:33:24,109 --> 00:33:26,109
+Sizin buraya kadar bir sorunuz var
+
+657
+00:33:26,109 --> 00:33:35,920
+mı onu sorayım.
+
+658
+00:33:35,920 --> 00:33:37,920
+[öğrenci] demireceğim.
+
+659
+00:33:37,920 --> 00:33:39,920
+Biz bu
+
+660
+00:33:39,920 --> 00:33:41,920
+ders kapsamında
+
+661
+00:33:41,920 --> 00:33:43,920
+uygulama geliştirirken
+
+662
+00:33:43,920 --> 00:33:45,920
+bu ders kapsamında
+
+663
+00:33:45,920 --> 00:33:47,920
+uygulama geliştirirken
+
+664
+00:33:51,920 --> 00:33:53,920
+diğerlerini kullanabiliriz.
+
+665
+00:33:53,920 --> 00:33:55,920
+[öğrenci]
+
+666
+00:33:55,920 --> 00:33:57,920
+native gibi bir şey söyledim sonuçta
+
+667
+00:33:57,920 --> 00:33:59,920
+anlamadım.
+
+668
+00:33:59,920 --> 00:34:01,920
+Android geliştirirken
+
+669
+00:34:01,920 --> 00:34:03,920
+bu ders kapsamında native
+
+670
+00:34:03,920 --> 00:34:05,920
+uygulayacağız.
+
+671
+00:34:07,920 --> 00:34:09,920
+Evet bu dersin başında da bunu ifade
+
+672
+00:34:09,920 --> 00:34:11,920
+etmiştim.
+
+673
+00:34:11,920 --> 00:34:13,920
+Bu dersin içerisinde
+
+674
+00:34:13,920 --> 00:34:15,920
+cross platform development
+
+675
+00:34:17,920 --> 00:34:19,920
+konusunu sadece zaman zaman
+
+676
+00:34:19,920 --> 00:34:21,920
+konuşuyor olacağız.
+
+677
+00:34:21,920 --> 00:34:23,920
+Ama kod geliştirme noktasında
+
+678
+00:34:23,920 --> 00:34:25,920
+sizden beklentim
+
+679
+00:34:25,920 --> 00:34:27,920
+native development yapmanız
+
+680
+00:34:27,920 --> 00:34:29,920
+olacak. O yüzden
+
+681
+00:34:29,920 --> 00:34:31,920
+cross platform
+
+682
+00:34:31,920 --> 00:34:33,920
+deneyimi olanlar varsa da
+
+683
+00:34:33,920 --> 00:34:35,920
+bu deneyimi maalesef
+
+684
+00:34:35,920 --> 00:34:37,920
+bu ders kapsamında
+
+685
+00:34:37,920 --> 00:34:39,920
+kullanmanızı istemiyorum çünkü
+
+686
+00:34:39,920 --> 00:34:41,920
+bu dersin amaçlarından bir tanesi
+
+687
+00:34:41,920 --> 00:34:43,920
+native development'a biraz daha
+
+688
+00:34:43,920 --> 00:34:45,920
+yakından bakmak.
+
+689
+00:34:47,920 --> 00:34:49,920
+Şimdi tabii uygulama
+
+690
+00:34:49,920 --> 00:34:54,260
+bir soru daha var [öğrenci].
+
+691
+00:34:54,260 --> 00:34:56,260
+Hocam peki Java mı kullanacağız?
+
+692
+00:34:56,260 --> 00:34:58,260
+Kotlin mi?
+
+693
+00:34:58,260 --> 00:35:05,119
+Ders boyunca Java üzerinden
+
+694
+00:35:05,119 --> 00:35:07,119
+ilerleyeceğim. Buna da sanırım
+
+695
+00:35:07,119 --> 00:35:09,119
+vermiş oldum.
+
+696
+00:35:09,119 --> 00:35:11,119
+Bu noktada
+
+697
+00:35:11,119 --> 00:35:13,119
+bizim tabii
+
+698
+00:35:13,119 --> 00:35:15,119
+avacımız Java'yı ya da Kotlin'i
+
+699
+00:35:15,119 --> 00:35:17,119
+öğretmek değil sadece
+
+700
+00:35:17,119 --> 00:35:19,119
+uygulama tasarlarken
+
+701
+00:35:19,119 --> 00:35:21,119
+Android'in sahip olduğu özellikleri
+
+702
+00:35:21,119 --> 00:35:23,119
+kullanmak için aracı bir dil
+
+703
+00:35:23,119 --> 00:35:25,119
+kullanıyoruz. Bu da ya Java ya
+
+704
+00:35:25,119 --> 00:35:27,119
+Kotlin oluyor. Kotlin
+
+705
+00:35:27,119 --> 00:35:29,119
+şu an için
+
+706
+00:35:29,119 --> 00:35:31,119
+biraz daha yeni bir dil olduğu için görece
+
+707
+00:35:31,119 --> 00:35:33,119
+Java'ya göre ve sizin Java
+
+708
+00:35:33,119 --> 00:35:35,119
+ya da yanan bir temeliniz olduğu için
+
+709
+00:35:35,119 --> 00:35:37,119
+bu noktada Java
+
+710
+00:35:37,119 --> 00:35:39,119
+üzerinden gitmek hem
+
+711
+00:35:39,119 --> 00:35:41,119
+benim açımdan hem de sizin açımdan daha kolay
+
+712
+00:35:41,119 --> 00:35:43,119
+olacağı için şu anda bunu tercih
+
+713
+00:35:43,119 --> 00:35:45,119
+ediyoruz. Hiçbir zaman
+
+714
+00:35:45,119 --> 00:35:47,119
+tek bir dille öğretmek amacımız olmadı.
+
+715
+00:35:47,119 --> 00:35:49,119
+Özellikle bizim
+
+716
+00:35:49,119 --> 00:35:51,119
+bölümün dersleri içerisinde hatta
+
+717
+00:35:51,119 --> 00:35:53,119
+Python'da göstermiyoruz biliyorsunuz
+
+718
+00:35:53,119 --> 00:35:55,119
+ama Python şu anda sizin tarafınızdan
+
+719
+00:35:55,119 --> 00:35:57,119
+belki
+
+720
+00:35:57,119 --> 00:35:59,119
+en çok kullanılan
+
+721
+00:35:59,119 --> 00:36:01,119
+en hakim
+
+722
+00:36:01,119 --> 00:36:03,119
+dil olarak bir anket
+
+723
+00:36:03,119 --> 00:36:05,119
+yapsak ortaya çıkabilir diye
+
+724
+00:36:05,119 --> 00:36:07,119
+tahmin ediyorum ki
+
+725
+00:36:07,119 --> 00:36:09,119
+birçok noktada Java'ya
+
+726
+00:36:09,119 --> 00:36:11,119
+çok büyük
+
+727
+00:36:11,119 --> 00:36:13,119
+artı farklılıklar
+
+728
+00:36:13,119 --> 00:36:15,119
+sağlıyor.
+
+729
+00:36:15,119 --> 00:36:18,500
+Şimdi
+
+730
+00:36:18,500 --> 00:36:20,500
+tabi
+
+731
+00:36:20,500 --> 00:36:22,500
+kod geliştirirken bu işin
+
+732
+00:36:22,500 --> 00:36:24,500
+birkaç noktası var
+
+733
+00:36:24,500 --> 00:36:26,500
+uygulamalarda
+
+734
+00:36:26,500 --> 00:36:28,500
+akıllı uygulamalarda
+
+735
+00:36:28,500 --> 00:36:30,500
+mobil uygulamalarda. Bir tanesi
+
+736
+00:36:30,500 --> 00:36:32,500
+özellikle arayüz
+
+737
+00:36:32,500 --> 00:36:34,500
+arayüz tarafındaki widgetlar, y-componentlar
+
+738
+00:36:34,500 --> 00:36:36,500
+bir tarafta da
+
+739
+00:36:36,500 --> 00:36:38,500
+arka planda
+
+740
+00:36:38,500 --> 00:36:40,500
+topladığınız verinin işlenmesi
+
+741
+00:36:40,500 --> 00:36:42,500
+ve bu verinin saklanmasını sağlayan
+
+742
+00:36:42,500 --> 00:36:44,500
+Java kodları.
+
+743
+00:36:44,500 --> 00:36:46,500
+Biraz sonra
+
+744
+00:36:46,500 --> 00:36:48,500
+daha özelde
+
+745
+00:36:48,500 --> 00:36:50,500
+hangi klasörlerin
+
+746
+00:36:50,500 --> 00:36:52,500
+olduğunu bir
+
+747
+00:36:52,500 --> 00:36:54,500
+proje açtığınızda
+
+748
+00:36:54,500 --> 00:36:56,500
+konuşuyor olacağız.
+
+749
+00:36:56,500 --> 00:36:58,500
+Ama şunu şimdiden
+
+750
+00:36:58,500 --> 00:37:00,500
+söylemekte fayda var.
+
+751
+00:37:00,500 --> 00:37:02,500
+Java'da
+
+752
+00:37:02,500 --> 00:37:04,500
+pardon Android'de bir uygulama
+
+753
+00:37:04,500 --> 00:37:06,500
+geliştirirken arayüz tasarımı
+
+754
+00:37:06,500 --> 00:37:08,500
+için
+
+755
+00:37:08,500 --> 00:37:10,500
+çeşitli mockup
+
+756
+00:37:10,500 --> 00:37:12,500
+tool'lar kullanabilirsiniz.
+
+757
+00:37:12,500 --> 00:37:14,500
+Öncesinde
+
+758
+00:37:14,500 --> 00:37:16,500
+arayüzlerinizi tasarlayın.
+
+759
+00:37:16,500 --> 00:37:18,500
+Onun ötesinde
+
+760
+00:37:18,500 --> 00:37:20,500
+egzemel
+
+761
+00:37:20,500 --> 00:37:22,500
+doğrudan
+
+762
+00:37:22,500 --> 00:37:24,500
+sizin UI
+
+763
+00:37:24,500 --> 00:37:26,500
+komponentlerinizi
+
+764
+00:37:26,500 --> 00:37:28,500
+müdahale edip düzenleyebilmeniz için
+
+765
+00:37:28,500 --> 00:37:30,500
+kullanılacağınız değil
+
+766
+00:37:30,500 --> 00:37:32,500
+ama illa tek tek egzemelerle
+
+767
+00:37:32,500 --> 00:37:34,500
+yazmak zorunda değilsiniz.
+
+768
+00:37:34,500 --> 00:37:36,500
+Layout editor var Android Studio içerisinde
+
+769
+00:37:36,500 --> 00:37:38,500
+o layout editor ile
+
+770
+00:37:38,500 --> 00:37:40,500
+ilgili butonları,
+
+771
+00:37:40,500 --> 00:37:42,500
+text areyi, spinner'ları
+
+772
+00:37:42,500 --> 00:37:44,500
+yerleştirebilirsiniz.
+
+773
+00:37:44,500 --> 00:37:46,500
+Şimdi yapacağınız ödevlerde ve geçireceğiniz
+
+774
+00:37:46,500 --> 00:37:48,500
+projede benim burada
+
+775
+00:37:48,500 --> 00:37:50,500
+gösterdiğim komponentlerin ötesinde
+
+776
+00:37:50,500 --> 00:37:52,500
+o uygulamanın gerektirdiği
+
+777
+00:37:52,500 --> 00:37:54,500
+farklı komponentleri
+
+778
+00:37:54,500 --> 00:37:56,500
+kullanmanız tercihimdir.
+
+779
+00:37:56,500 --> 00:37:58,500
+Ve bu konuda
+
+780
+00:37:58,500 --> 00:38:00,500
+bunu desteklemek ve sizi
+
+781
+00:38:00,500 --> 00:38:02,500
+motive etmek adına daha yüksek
+
+782
+00:38:02,500 --> 00:38:04,500
+puan vereceğimi şimdiden söylemek isterim.
+
+783
+00:38:04,500 --> 00:38:06,500
+Yani ben burada sadece
+
+784
+00:38:06,500 --> 00:38:08,500
+edit text kullandım,
+
+785
+00:38:08,500 --> 00:38:10,500
+buton kullandım diye siz de bütün
+
+786
+00:38:10,500 --> 00:38:12,500
+hikayeyi onun üzerine kurmamalısınız.
+
+787
+00:38:12,500 --> 00:38:14,500
+Benim buradaki amacım
+
+788
+00:38:14,500 --> 00:38:16,500
+bütün widget'leri kullanmaya
+
+789
+00:38:16,500 --> 00:38:18,500
+çalışmak değil.
+
+790
+00:38:18,500 --> 00:38:20,500
+Daha çok Android programlamanın
+
+791
+00:38:20,500 --> 00:38:22,500
+kritik noktalarına değinmek.
+
+792
+00:38:22,500 --> 00:38:24,500
+Ama siz ödevlerinizi de araştırıp
+
+793
+00:38:24,500 --> 00:38:26,500
+işte bir
+
+794
+00:38:26,500 --> 00:38:28,500
+tarih
+
+795
+00:38:28,500 --> 00:38:30,500
+dışarıdan alınacaksa
+
+796
+00:38:30,500 --> 00:38:32,500
+bir doğum günü için örnek veriyorum ya da
+
+797
+00:38:32,500 --> 00:38:34,500
+bir rezervasyon tarihi. Bunun için
+
+798
+00:38:34,500 --> 00:38:36,500
+acaba ne kullanabilirsiniz?
+
+799
+00:38:36,500 --> 00:38:38,500
+İşte bunun için picker'lar var.
+
+800
+00:38:38,500 --> 00:38:40,500
+Spinner'lar var.
+
+801
+00:38:40,500 --> 00:38:42,500
+Hangisi daha iyi olur? Bunun üzerine kapa yormakta
+
+802
+00:38:42,500 --> 00:38:44,500
+fayda var. Özellikle
+
+803
+00:38:44,500 --> 00:38:46,500
+bu alanda ilerlemek isteyen arkadaşlar için
+
+804
+00:38:46,500 --> 00:38:48,500
+güzel bir fırsat
+
+805
+00:38:48,500 --> 00:38:50,500
+olacaktı diye düşünüyorum. Bir de
+
+806
+00:38:50,500 --> 00:38:52,500
+layout editörü
+
+807
+00:38:52,500 --> 00:38:54,500
+kullanırken, özellikle
+
+808
+00:38:54,500 --> 00:38:56,500
+layout editörü konumlandırdığınız
+
+809
+00:38:56,500 --> 00:38:58,500
+UI komponentlerin
+
+810
+00:38:58,500 --> 00:39:00,500
+telefona yansımasını
+
+811
+00:39:00,500 --> 00:39:02,500
+ve emületöre yansımasının aynı olmadığını
+
+812
+00:39:02,500 --> 00:39:04,500
+görebilirsiniz. Bu konuya dikkat
+
+813
+00:39:04,500 --> 00:39:06,500
+etmenizi istiyorum.
+
+814
+00:39:06,500 --> 00:39:08,500
+layout editörle görselin,
+
+815
+00:39:08,500 --> 00:39:10,500
+ortaya çıkan görselin uyumlu olması için
+
+816
+00:39:10,500 --> 00:39:12,500
+bazı aşamalardan
+
+817
+00:39:12,500 --> 00:39:14,500
+geçmeniz gerekiyor.
+
+818
+00:39:14,500 --> 00:39:16,500
+O yüzden egzemen koduna
+
+819
+00:39:16,500 --> 00:39:18,500
+müdahale etmeniz
+
+820
+00:39:18,500 --> 00:39:20,500
+belli oranda ondan anlıyor
+
+821
+00:39:20,500 --> 00:39:22,500
+olmanız ve içinde kullanılan sintaks
+
+822
+00:39:22,500 --> 00:39:24,500
+konusunda fikir sahibi olmanız önemli.
+
+823
+00:39:24,500 --> 00:39:26,500
+Ezbere binmekten çok
+
+824
+00:39:26,500 --> 00:39:28,500
+neler olduğunu farkında
+
+825
+00:39:28,500 --> 00:39:30,500
+olmak bu konuda
+
+826
+00:39:30,500 --> 00:39:32,500
+önemli diye düşünüyorum.
+
+827
+00:39:34,500 --> 00:39:36,500
+Şimdi
+
+828
+00:39:36,500 --> 00:39:38,500
+gelelim bizim için
+
+829
+00:39:38,500 --> 00:39:40,500
+mobil
+
+830
+00:39:40,500 --> 00:39:44,800
+uygulama geliştirirken
+
+831
+00:39:44,800 --> 00:39:46,800
+dikkat edilmesi gereken
+
+832
+00:39:46,800 --> 00:39:48,800
+ve kullanılması gereken
+
+833
+00:39:48,800 --> 00:39:50,800
+design patternlere.
+
+834
+00:39:50,800 --> 00:39:52,800
+Bu konuda
+
+835
+00:39:52,800 --> 00:39:54,800
+bilgisi olan var mı?
+
+836
+00:39:54,800 --> 00:39:56,800
+Hangi design patternler
+
+837
+00:39:56,800 --> 00:39:58,800
+mobil uygulama geliştirmede
+
+838
+00:39:58,800 --> 00:40:00,800
+kullanılıyor?
+
+839
+00:40:00,800 --> 00:40:02,800
+[öğrenci]'ın dışında
+
+840
+00:40:02,800 --> 00:40:04,800
+fikir
+
+841
+00:40:04,800 --> 00:40:06,800
+üretecek ya da bizimle
+
+842
+00:40:06,800 --> 00:40:08,800
+fikrini paylaşacak olan var mı?
+
+843
+00:40:08,800 --> 00:40:10,800
+Design pattern nedir?
+
+844
+00:40:10,800 --> 00:40:18,269
+Neden vardır?
+
+845
+00:40:18,269 --> 00:40:20,269
+Aynı arkadaşlarımız
+
+846
+00:40:20,269 --> 00:40:22,269
+[öğrenci]
+
+847
+00:40:22,269 --> 00:40:26,510
+Hocam design pattern'e
+
+848
+00:40:26,510 --> 00:40:28,510
+örnek mi vereyim yoksa açıklayayım mı?
+
+849
+00:40:28,510 --> 00:40:30,510
+Hem design pattern hem bize bahset
+
+850
+00:40:30,510 --> 00:40:32,510
+hem de bizim
+
+851
+00:40:32,510 --> 00:40:34,510
+kullanmalısılığımız olan design
+
+852
+00:40:34,510 --> 00:40:36,510
+patternler neler olabilir biliyorsan bizimle
+
+853
+00:40:36,510 --> 00:40:38,510
+lütfen paylaş.
+
+854
+00:40:38,510 --> 00:40:40,510
+Design patternler uygulamaların
+
+855
+00:40:40,510 --> 00:40:42,510
+böyle daha kompak bir şekilde
+
+856
+00:40:42,510 --> 00:40:44,510
+teste falan daha açık
+
+857
+00:40:44,510 --> 00:40:46,510
+ve daha rahat geliştirebilecek
+
+858
+00:40:46,510 --> 00:40:48,510
+yazılması için uygulan
+
+859
+00:40:48,510 --> 00:40:50,510
+bir takım hani yol
+
+860
+00:40:50,510 --> 00:40:52,510
+diyebiliriz belki.
+
+861
+00:40:52,510 --> 00:40:54,510
+Örnek olarak da
+
+862
+00:40:54,510 --> 00:40:56,510
+MVVM'i verebilirim.
+
+863
+00:40:56,510 --> 00:40:58,510
+Peki teşekkür
+
+864
+00:40:58,510 --> 00:41:00,510
+ediyorum [öğrenci]. Buna ekleme yapmak
+
+865
+00:41:00,510 --> 00:41:07,570
+isteyen var mı? Peki
+
+866
+00:41:07,570 --> 00:41:09,570
+şimdi design patternler
+
+867
+00:41:09,570 --> 00:41:11,570
+sadece mobil uygulama geliştirme
+
+868
+00:41:11,570 --> 00:41:13,570
+için değil herhangi bir uygulama geliştirme
+
+869
+00:41:13,570 --> 00:41:15,570
+için
+
+870
+00:41:15,570 --> 00:41:17,570
+uygulamanın belirli
+
+871
+00:41:17,570 --> 00:41:19,570
+kurallara uygun belirli
+
+872
+00:41:19,570 --> 00:41:21,570
+standartlarda geliştirilebilmesi
+
+873
+00:41:21,570 --> 00:41:23,570
+ve aynı zamanda
+
+874
+00:41:23,570 --> 00:41:25,570
+uygulamanın
+
+875
+00:41:25,570 --> 00:41:27,570
+test edilebilirliğinin
+
+876
+00:41:27,570 --> 00:41:31,570
+okunabilirliğinin arttırılması için
+
+877
+00:41:31,570 --> 00:41:33,570
+kullanılan kurallar bütünü
+
+878
+00:41:33,570 --> 00:41:35,570
+bu design
+
+879
+00:41:35,570 --> 00:41:37,570
+patternlar sayesinde aslında
+
+880
+00:41:37,570 --> 00:41:39,570
+siz
+
+881
+00:41:41,570 --> 00:41:43,570
+yazacağınız kodun
+
+882
+00:41:43,570 --> 00:41:45,570
+maintenance
+
+883
+00:41:45,570 --> 00:41:47,570
+sırasında yapacağınız değişikliklerin
+
+884
+00:41:47,570 --> 00:41:49,570
+mümkün olduğunca
+
+885
+00:41:51,570 --> 00:41:53,570
+rahat ve kolay
+
+886
+00:41:53,570 --> 00:41:55,570
+yapılabilmesini sağlıyorsunuz bu design
+
+887
+00:41:55,570 --> 00:41:57,570
+patternlarla. Özellikle
+
+888
+00:41:57,570 --> 00:41:59,570
+birbirinden
+
+889
+00:41:59,570 --> 00:42:01,570
+ayrılan yapılar
+
+890
+00:42:01,570 --> 00:42:03,570
+size
+
+891
+00:42:03,570 --> 00:42:05,570
+verinizin
+
+892
+00:42:05,570 --> 00:42:07,570
+ön,ara,yüzün ve bu veriyi
+
+893
+00:42:07,570 --> 00:42:09,570
+işleyen mekanizmanın
+
+894
+00:42:09,570 --> 00:42:11,570
+birbirinden ayrılarak
+
+895
+00:42:11,570 --> 00:42:13,570
+ön,ara,yüzde bir değişiklik yapıldığında
+
+896
+00:42:13,570 --> 00:42:15,570
+tüm kodunuzun yeniden değerlenmemesini
+
+897
+00:42:15,570 --> 00:42:17,570
+işte arka plandaki bir değişiklik
+
+898
+00:42:17,570 --> 00:42:19,570
+için ön,ara,yüze
+
+899
+00:42:19,570 --> 00:42:21,570
+müdahale edilmemesini sağlıyor
+
+900
+00:42:21,570 --> 00:42:23,570
+ve çok daha
+
+901
+00:42:23,570 --> 00:42:25,570
+hızlı kod geliştirme
+
+902
+00:42:25,570 --> 00:42:27,570
+eksikliklerin
+
+903
+00:42:27,570 --> 00:42:29,570
+hataların daha
+
+904
+00:42:29,570 --> 00:42:31,570
+çabuk çözülmesi
+
+905
+00:42:31,570 --> 00:42:33,570
+ve on the fly yani
+
+906
+00:42:35,570 --> 00:42:37,570
+her şey devam ederken
+
+907
+00:42:37,570 --> 00:42:39,570
+bunların küçük bir
+
+908
+00:42:39,570 --> 00:42:41,570
+müdahale ile güncellenebilmesini
+
+909
+00:42:41,570 --> 00:42:43,570
+sağlıyor. O yüzden design
+
+910
+00:42:43,570 --> 00:42:45,570
+patternları önemsiyoruz. Temelde
+
+911
+00:42:45,570 --> 00:42:47,570
+mobil uygulamalar tarafından kullanılan
+
+912
+00:42:47,570 --> 00:42:49,570
+iki tane
+
+913
+00:42:49,570 --> 00:42:51,570
+design pattern var
+
+914
+00:42:51,570 --> 00:42:53,570
+mvc ve
+
+915
+00:42:53,570 --> 00:42:55,570
+mvvm
+
+916
+00:42:55,570 --> 00:42:57,570
+bunların açılımı nedir?
+
+917
+00:42:57,570 --> 00:43:01,420
+bir daha var mı?
+
+918
+00:43:01,420 --> 00:43:03,420
+barış
+
+919
+00:43:03,420 --> 00:43:05,420
+mvc model view controller
+
+920
+00:43:05,420 --> 00:43:07,420
+mvvm de
+
+921
+00:43:07,420 --> 00:43:09,420
+model view ve
+
+922
+00:43:09,420 --> 00:43:11,420
+view
+
+923
+00:43:11,420 --> 00:43:13,420
+teşekkür ediyorum
+
+924
+00:43:13,420 --> 00:43:15,420
+yazalım hemen
+
+925
+00:43:15,420 --> 00:43:17,420
+model view
+
+926
+00:43:17,420 --> 00:43:22,139
+controller
+
+927
+00:43:22,139 --> 00:43:24,139
+bu tarafta da
+
+928
+00:43:24,139 --> 00:43:29,280
+model view
+
+929
+00:43:29,280 --> 00:43:31,280
+ve
+
+930
+00:43:31,280 --> 00:43:34,659
+view model
+
+931
+00:43:34,659 --> 00:43:36,659
+şimdi
+
+932
+00:43:36,659 --> 00:43:38,659
+bu noktada
+
+933
+00:43:38,659 --> 00:43:40,659
+eski olan ve yaygın olan
+
+934
+00:43:40,659 --> 00:43:42,659
+kullanılan mvc
+
+935
+00:43:42,659 --> 00:43:44,659
+patternı
+
+936
+00:43:44,659 --> 00:43:46,659
+mvc patternı
+
+937
+00:43:46,659 --> 00:43:48,659
+aslında bizim biraz
+
+938
+00:43:48,659 --> 00:43:50,659
+önce bahsettiğimiz tüm yetenekleri
+
+939
+00:43:50,659 --> 00:43:52,659
+bize kabaca sağlıyor
+
+940
+00:43:52,659 --> 00:43:54,659
+öncelikle
+
+941
+00:43:54,659 --> 00:43:56,659
+onun üzerinden başlayalım
+
+942
+00:43:56,659 --> 00:43:58,659
+bir model
+
+943
+00:43:58,659 --> 00:44:00,659
+mvc modeli
+
+944
+00:44:00,659 --> 00:44:02,659
+önceden
+
+945
+00:44:02,659 --> 00:44:04,659
+tamamen
+
+946
+00:44:04,659 --> 00:44:06,659
+modeli
+
+947
+00:44:06,659 --> 00:44:19,090
+mvc
+
+948
+00:44:19,090 --> 00:44:26,559
+modeli
+
+949
+00:44:26,559 --> 00:44:28,559
+sonuçta
+
+950
+00:44:28,559 --> 00:44:30,559
+mvc modeli
+
+951
+00:44:30,559 --> 00:44:35,789
+aralığı
+
+952
+00:44:35,789 --> 00:44:39,489
+harika
+
+953
+00:44:39,489 --> 00:44:48,909
+müdahale
+
+954
+00:44:48,909 --> 00:44:50,909
+mvc
+
+955
+00:44:50,909 --> 00:44:52,909
+modeli
+
+956
+00:44:52,909 --> 00:45:03,969
+Tüm aksiyonlar kontrolere aktarılıyor.
+
+957
+00:45:03,969 --> 00:45:25,139
+Buradan da modül tarafına geçiyoruz.
+
+958
+00:45:25,139 --> 00:45:45,219
+Bir kontrolördeki gerçekleşen değişikliklerin
+
+959
+00:45:45,219 --> 00:45:47,619
+modül tarafına yansıtılması gerekiyor.
+
+960
+00:45:47,619 --> 00:45:53,820
+Peki bunu Business Presentation logic olarak
+
+961
+00:45:53,820 --> 00:45:56,619
+ele alacak olursak bir başka değişle.
+
+962
+00:45:56,820 --> 00:46:01,820
+Hangi kısım, neye denk geliyor bu konuda bir yorum yapabilir misiniz?
+
+963
+00:46:01,820 --> 00:46:14,429
+Ya da model neyi temsil ediyor, view ve kontrolör neyi temsil ediyor?
+
+964
+00:46:14,429 --> 00:46:28,210
+Evet [öğrenci].
+
+965
+00:46:28,210 --> 00:46:32,210
+Hocam tahmin ederek cevap vermek istiyorum bunu.
+
+966
+00:46:32,210 --> 00:46:37,210
+Şimdi bu model dediğimiz kontrolörün view bölümünden
+
+967
+00:46:37,210 --> 00:46:41,210
+bir butona tıkladığımızda o butonun vereceği tepkinin
+
+968
+00:46:41,210 --> 00:46:44,210
+hangi modele dönüştüreceğini yani o sayfanın
+
+969
+00:46:44,409 --> 00:46:50,260
+nasıl şekil olacağını belirten kontrol eder.
+
+970
+00:46:50,260 --> 00:46:53,510
+Başka ekleyeceğim bir şey var mı?
+
+971
+00:46:53,510 --> 00:46:56,510
+Bir de mesela sadece sayfadan sayfaya geçişte
+
+972
+00:46:56,510 --> 00:47:01,510
+özellikle aynı sayfada bir part occasion'ın
+
+973
+00:47:01,510 --> 00:47:06,510
+yani bir bölümün responsif olarak büyümesi diyebiliriz belki.
+
+974
+00:47:06,510 --> 00:47:09,510
+Okey teşekkür ediyorum.
+
+975
+00:47:09,510 --> 00:47:15,510
+Şimdi arkadaşlar model aslında data'nın saklandığı kısım.
+
+976
+00:47:15,710 --> 00:47:19,710
+Bir başka değişle siz bir veri saklamak istiyorsanız
+
+977
+00:47:19,710 --> 00:47:22,710
+arka planda bir klas yaratıyorsunuz.
+
+978
+00:47:22,710 --> 00:47:24,710
+Ondan bir obje yaratıyorsunuz.
+
+979
+00:47:24,710 --> 00:47:31,710
+Burada o klasınızda ilgili veriyi saklıyorsunuz.
+
+980
+00:47:31,710 --> 00:47:35,710
+Bütün bu yarattığınız klaslar objeler model kısmına denk geliyor.
+
+981
+00:47:35,710 --> 00:47:37,710
+Hemen bunun karşılığını yazalım.
+
+982
+00:47:37,710 --> 00:47:41,710
+Yani verinin yönetiminden sorumlu olan kısım.
+
+983
+00:47:53,530 --> 00:48:02,219
+Öte yandan view'e baktığınız zamansa presentation logic'i göreceksiniz.
+
+984
+00:48:02,219 --> 00:48:06,219
+View'da sizin sahip olduğunuz verinin
+
+985
+00:48:06,219 --> 00:48:10,219
+kullanıcıya gösterildiği urn's.
+
+986
+00:48:10,219 --> 00:48:25,559
+Bunları neden birbirinden ayırıyoruz?
+
+987
+00:48:25,559 --> 00:48:27,559
+Çünkü arka planda yapacağınız değişiklik
+
+988
+00:48:27,559 --> 00:48:29,559
+ön planı ilgilendirmiyor.
+
+989
+00:48:29,559 --> 00:48:32,559
+Ön plandaki yapacağınız değişiklik arka planı ilgilendirmiyor.
+
+990
+00:48:32,559 --> 00:48:35,559
+Bunlar birbirinden ayrık yapılar olduğunda
+
+991
+00:48:35,559 --> 00:48:38,559
+birbirleriyle doğru ilişkiler kurulduğunda
+
+992
+00:48:38,760 --> 00:48:41,760
+bu gündüz önlemeleri yapmak,
+
+993
+00:48:41,760 --> 00:48:45,760
+bu değişiklikleri yapmak çok daha kolay oluyor.
+
+994
+00:48:45,760 --> 00:48:48,760
+Son olarak kontrolür.
+
+995
+00:48:48,760 --> 00:48:56,280
+Aslında burası business logic'te diyebilirsiniz bu kısma.
+
+996
+00:48:56,280 --> 00:49:05,280
+Ön yüz ile arka data arasındaki yapılması gereken işlemlerden sorumlu.
+
+997
+00:49:05,280 --> 00:49:09,880
+Standart bir design pattern.
+
+998
+00:49:09,880 --> 00:49:22,500
+Çok kabul gören.
+
+999
+00:49:22,699 --> 00:49:24,699
+Evet.
+
+1000
+00:49:24,699 --> 00:49:28,699
+Şimdi tabi bunun da belli dezavantajları var.
+
+1001
+00:49:28,699 --> 00:49:32,699
+Zaten o yüzden MVVM yapısını biraz sonra konuşuyor olacağız.
+
+1002
+00:49:32,699 --> 00:49:37,699
+Kontrolürün, application'ın business logic olduğundan bahsetmiştik.
+
+1003
+00:49:37,699 --> 00:49:43,699
+Bu yapıya alternatif olan MVVM patternını ise
+
+1004
+00:49:43,699 --> 00:49:45,699
+bir 10 dakika ara verdikten sonra
+
+1005
+00:49:45,699 --> 00:49:47,699
+kaldığımız yerden devam ederken göreceğiz.
+
+1006
+00:49:47,900 --> 00:49:51,900
+14.48.15'de ikinci kısımda görüşmek üzere arkadaşlar.
+
+1007
+00:49:51,900 --> 01:01:39,539
+Teşekkür ediyorum.
+
+1008
+01:01:39,539 --> 01:01:42,539
+Evet arkadaşlar kaldığımız yerden devam edeceğiz şimdi.
+
+1009
+01:01:42,539 --> 01:01:45,539
+MVC'yi anlatmıştık.
+
+1010
+01:01:45,539 --> 01:01:48,539
+MVVM'e geçiş yapıyoruz.
+
+1011
+01:01:48,539 --> 01:02:20,070
+Evet MVVM ile ilgili olarak öncelikle bir yapıyı çizelim.
+
+1012
+01:02:20,070 --> 01:03:54,239
+Orta noktada view module var.
+
+1013
+01:03:54,239 --> 01:03:59,239
+Evet şimdi burada biraz daha farklı bir yapıdan bahsediyoruz.
+
+1014
+01:03:59,440 --> 01:04:02,440
+Kontrolün yerini view module almış durumda.
+
+1015
+01:04:02,440 --> 01:04:06,440
+Daha iç içe geçmiş bir yapı var.
+
+1016
+01:04:06,440 --> 01:04:11,440
+Özellikle ön taraftaki sunulan veri ile
+
+1017
+01:04:11,440 --> 01:04:17,440
+bu verinin sunulması sırasında yapılan işlemleri
+
+1018
+01:04:17,440 --> 01:04:20,440
+birbirine daha yaklaştırılmış bir yapı.
+
+1019
+01:04:20,440 --> 01:04:23,440
+Presentation and presentation logic kısmı.
+
+1020
+01:04:23,440 --> 01:04:27,440
+Bunun bir sebebi var.
+
+1021
+01:04:27,639 --> 01:04:29,639
+Neden olabilir?
+
+1022
+01:04:29,639 --> 01:04:31,639
+Fikri olan var mı?
+
+1023
+01:04:31,639 --> 01:04:36,639
+MVC'ye göre nerede fark yapıp yaratıyor?
+
+1024
+01:04:36,639 --> 01:04:40,639
+Neden yeni bir model olarak tercih edilmesi
+
+1025
+01:04:40,639 --> 01:04:43,639
+her geçen gün daha çok artıyor
+
+1026
+01:04:43,639 --> 01:04:46,639
+ve hangi noktalarda tercih ediliyor?
+
+1027
+01:04:46,639 --> 01:04:59,489
+Yorum yapacak olan var mı?
+
+1028
+01:04:59,489 --> 01:05:02,489
+Peki ben o zaman bu konuyu aydınlatayım.
+
+1029
+01:05:02,489 --> 01:05:06,500
+[öğrenci].
+
+1030
+01:05:06,500 --> 01:05:08,500
+Hocam view module üzerinden
+
+1031
+01:05:08,699 --> 01:05:11,699
+bir ileri bir de geri yönde daha hızlı hareket ettiği için
+
+1032
+01:05:11,699 --> 01:05:14,699
+olabilir mi acaba kontrolere göre?
+
+1033
+01:05:14,699 --> 01:05:16,699
+Çok doğru.
+
+1034
+01:05:16,699 --> 01:05:18,699
+Bu yüzden de single page application'larda
+
+1035
+01:05:18,699 --> 01:05:21,699
+verinin çok sık gidip gelmesi,
+
+1036
+01:05:21,699 --> 01:05:24,699
+değişmesi gereken application'larda
+
+1037
+01:05:24,699 --> 01:05:28,699
+daha başarılı bir yapının oluşmasını sağlıyor.
+
+1038
+01:05:28,699 --> 01:05:34,699
+Özellikle bu veri değişiminin
+
+1039
+01:05:34,699 --> 01:05:37,699
+sürekli olan uygulamalarda
+
+1040
+01:05:37,900 --> 01:05:43,900
+daha performanslı bir yapı oluşması yönünde
+
+1041
+01:05:43,900 --> 01:05:45,900
+bir katkısı var MVVM modelin.
+
+1042
+01:05:45,900 --> 01:05:49,900
+Öte yandan MVVM modelinde
+
+1043
+01:05:49,900 --> 01:05:53,900
+unit testler daha
+
+1044
+01:05:53,900 --> 01:05:57,900
+kontrollü ve daha uygun bir şekilde
+
+1045
+01:05:57,900 --> 01:05:59,900
+gerçekleştiriliyor.
+
+1046
+01:05:59,900 --> 01:06:01,900
+MVC'de unit testler konusunda
+
+1047
+01:06:01,900 --> 01:06:05,900
+biraz daha efor harcanması gerekiyor.
+
+1048
+01:06:06,099 --> 01:06:08,099
+Bu unit testlerin de her geçen gün
+
+1049
+01:06:08,099 --> 01:06:10,099
+öleme artıyor biliyorsunuz.
+
+1050
+01:06:10,099 --> 01:06:12,099
+Çünkü geliştirdiğiniz uygulamanın
+
+1051
+01:06:12,099 --> 01:06:14,099
+birinci yapılması gereken test adımları
+
+1052
+01:06:14,099 --> 01:06:16,099
+unit testleri.
+
+1053
+01:06:16,099 --> 01:06:18,099
+Bunu da hızlandırmak
+
+1054
+01:06:18,099 --> 01:06:20,099
+uygulamanın
+
+1055
+01:06:20,099 --> 01:06:22,099
+markete daha çabuk ulaşmasını
+
+1056
+01:06:22,099 --> 01:06:24,099
+gerçek hayatta daha çabuk
+
+1057
+01:06:24,099 --> 01:06:26,099
+temas etmesini sağlıyor.
+
+1058
+01:06:26,099 --> 01:06:28,099
+Şimdi aralarındaki farkları
+
+1059
+01:06:28,099 --> 01:06:45,300
+bir yazalım.
+
+1060
+01:06:45,300 --> 01:06:47,300
+Bu MVC'nin kötü olduğu anlamına
+
+1061
+01:06:47,300 --> 01:06:49,300
+gelmiyor bu arada.
+
+1062
+01:06:49,500 --> 01:06:51,500
+Design pattern kullanmak uygulama
+
+1063
+01:06:51,500 --> 01:06:53,500
+geliştirirken oldukça önemli.
+
+1064
+01:06:53,500 --> 01:06:56,500
+Size özellikle
+
+1065
+01:06:56,500 --> 01:06:58,500
+code re-usability konusunda
+
+1066
+01:06:58,500 --> 01:07:00,500
+çok önemli artılar sağlıyor.
+
+1067
+01:07:00,500 --> 01:07:02,500
+O yüzden
+
+1068
+01:07:02,500 --> 01:07:04,500
+hangi design patterni
+
+1069
+01:07:04,500 --> 01:07:06,500
+seçerseniz seçin.
+
+1070
+01:07:06,500 --> 01:07:08,500
+Data'nın
+
+1071
+01:07:08,500 --> 01:07:10,500
+işlendiği kısmı
+
+1072
+01:07:10,500 --> 01:07:12,500
+ve bunun prezente edildiği kısmı
+
+1073
+01:07:12,500 --> 01:07:14,500
+birbirinden ayırmak çok çok
+
+1074
+01:07:14,500 --> 01:07:16,500
+kritik.
+
+1075
+01:07:16,500 --> 01:07:18,500
+Yoksa bunu yaratmak çok çok zor
+
+1076
+01:07:18,500 --> 01:07:22,300
+olabiliyor.
+
+1077
+01:07:22,300 --> 01:07:24,300
+Öncelikle
+
+1078
+01:07:24,300 --> 01:07:26,300
+bir tanesinde
+
+1079
+01:07:28,300 --> 01:07:34,170
+Application'a giriş
+
+1080
+01:07:34,170 --> 01:07:42,860
+pointinden bahsediyor.
+
+1081
+01:07:42,860 --> 01:07:44,860
+Controller olarak adlandırıyor.
+
+1082
+01:07:44,860 --> 01:07:46,860
+Diğer tarafta ise
+
+1083
+01:07:48,860 --> 01:07:50,860
+View'un bu noktada
+
+1084
+01:07:52,860 --> 01:07:54,860
+giriş noktası olduğunu
+
+1085
+01:07:54,860 --> 01:07:56,860
+belirten bir fark.
+
+1086
+01:07:56,860 --> 01:08:08,460
+Zaten aradaki
+
+1087
+01:08:08,460 --> 01:08:10,460
+hızın farkında
+
+1088
+01:08:10,460 --> 01:08:12,460
+bu design
+
+1089
+01:08:12,460 --> 01:08:14,460
+nuansı belirliyor.
+
+1090
+01:08:14,460 --> 01:08:24,300
+İkisinde de
+
+1091
+01:08:24,300 --> 01:08:26,300
+one-to-many ilişkisi var.
+
+1092
+01:08:26,300 --> 01:08:28,300
+Bir tanesinde
+
+1093
+01:08:28,300 --> 01:08:31,699
+Controller ile View arasında
+
+1094
+01:08:31,699 --> 01:08:33,699
+bu ilişki.
+
+1095
+01:08:33,699 --> 01:08:35,699
+Diğerinde de View ile View model arasında.
+
+1096
+01:08:35,699 --> 01:09:12,460
+Önemli bir fark daha.
+
+1097
+01:09:12,460 --> 01:09:14,460
+View does
+
+1098
+01:09:14,460 --> 01:09:16,460
+not have
+
+1099
+01:09:16,460 --> 01:09:25,430
+reference
+
+1100
+01:09:25,430 --> 01:09:29,189
+to the controller.
+
+1101
+01:09:29,189 --> 01:09:34,300
+Öte yandan View
+
+1102
+01:09:34,300 --> 01:09:36,300
+have references
+
+1103
+01:09:36,300 --> 01:09:42,869
+to the View model.
+
+1104
+01:09:42,869 --> 01:09:46,439
+Sizce bu son yazdığım
+
+1105
+01:09:46,439 --> 01:09:48,439
+özelliğin
+
+1106
+01:09:48,439 --> 01:09:50,439
+getirdiği dezavantage
+
+1107
+01:09:50,439 --> 01:10:08,729
+NVVM'e nedir?
+
+1108
+01:10:08,729 --> 01:10:11,979
+Evet [öğrenci].
+
+1109
+01:10:11,979 --> 01:10:13,979
+Emin değilim sadece tahmin olarak
+
+1110
+01:10:13,979 --> 01:10:15,979
+söylüyorum.
+
+1111
+01:10:15,979 --> 01:10:17,979
+V model'daki
+
+1112
+01:10:17,979 --> 01:10:19,979
+verinin daha structure'da daha düzgün
+
+1113
+01:10:19,979 --> 01:10:21,979
+tutulması gerekecek.
+
+1114
+01:10:21,979 --> 01:10:23,979
+Model V controller'da
+
+1115
+01:10:23,979 --> 01:10:25,979
+model plan'daki veri çok düzgün olması da
+
+1116
+01:10:25,979 --> 01:10:27,979
+View tarafına daha geçtikten sonra
+
+1117
+01:10:27,979 --> 01:10:29,979
+direkt olarak görüntülenemiyor.
+
+1118
+01:10:29,979 --> 01:10:31,979
+Direkt View model'da
+
+1119
+01:10:31,979 --> 01:10:33,979
+hazır ve tam olarak
+
+1120
+01:10:33,979 --> 01:10:35,979
+istediğimiz yapıda bir veri olması
+
+1121
+01:10:35,979 --> 01:10:37,979
+gerekiyor olabilir. Bu da biraz zorluyor.
+
+1122
+01:10:37,979 --> 01:10:39,979
+Evet.
+
+1123
+01:10:39,979 --> 01:10:41,979
+Kalınca doğru söylediğin. Ben onu
+
+1124
+01:10:41,979 --> 01:10:43,979
+biraz daha farklı bir dilde ifade edeyim.
+
+1125
+01:10:43,979 --> 01:10:45,979
+Sizin burada
+
+1126
+01:10:45,979 --> 01:10:47,979
+View ile View model arasındaki
+
+1127
+01:10:47,979 --> 01:10:49,979
+ilişkiyi sıkılaştırmanızın
+
+1128
+01:10:49,979 --> 01:10:51,979
+ve bağlantılı sayısını attırmanızın
+
+1129
+01:10:51,979 --> 01:10:53,979
+getirdiği bir
+
+1130
+01:10:53,979 --> 01:10:55,979
+karmaşıklık var.
+
+1131
+01:10:55,979 --> 01:10:57,979
+Siz bu NVVM
+
+1132
+01:10:57,979 --> 01:10:59,979
+yapısını eğer
+
+1133
+01:10:59,979 --> 01:11:01,979
+doğru kurmaz
+
+1134
+01:11:01,979 --> 01:11:03,979
+iseniz ve
+
+1135
+01:11:03,979 --> 01:11:05,979
+ya sizin bu
+
+1136
+01:11:05,979 --> 01:11:07,979
+burada uyguladığınız yapı
+
+1137
+01:11:07,979 --> 01:11:09,979
+uygulamanız çok karmaşık
+
+1138
+01:11:09,979 --> 01:11:11,979
+ise bunun yönetilebilirliğinde
+
+1139
+01:11:11,979 --> 01:11:13,979
+bir sıkıntı oluşuyor.
+
+1140
+01:11:13,979 --> 01:11:15,979
+O yüzden NVVM
+
+1141
+01:11:15,979 --> 01:11:17,979
+NVC'den sonra
+
+1142
+01:11:17,979 --> 01:11:19,979
+üretildi. O zaman daha iyidir
+
+1143
+01:11:19,979 --> 01:11:21,979
+demek yerine
+
+1144
+01:11:21,979 --> 01:11:23,979
+NVC'nin uygulayacağı
+
+1145
+01:11:23,979 --> 01:11:25,979
+applikasyonlar, NVVM'in uygulayacağı
+
+1146
+01:11:25,979 --> 01:11:27,979
+applikasyonlar var. Özellikle
+
+1147
+01:11:27,979 --> 01:11:29,979
+datanın çok sık
+
+1148
+01:11:29,979 --> 01:11:31,979
+değişiminin olduğu ve
+
+1149
+01:11:31,979 --> 01:11:33,979
+single page applikasyon olarak adlandırılan
+
+1150
+01:11:33,979 --> 01:11:35,979
+uygulamalar NVVM
+
+1151
+01:11:35,979 --> 01:11:37,979
+tarafında
+
+1152
+01:11:37,979 --> 01:11:39,979
+desteklenmesi
+
+1153
+01:11:39,979 --> 01:11:41,979
+diğer uygulamalarında NVC
+
+1154
+01:11:41,979 --> 01:11:43,979
+design paterni kullanarak oluşturulması
+
+1155
+01:11:43,979 --> 01:11:45,979
+her zaman
+
+1156
+01:11:45,979 --> 01:11:47,979
+tercih edilir.
+
+1157
+01:11:47,979 --> 01:11:49,979
+Bunu da bir kez daha üstüne basmış olalım.
+
+1158
+01:11:49,979 --> 01:11:51,979
+Devam ediyorum
+
+1159
+01:11:51,979 --> 01:11:53,979
+NVC ve NVVM'i
+
+1160
+01:11:53,979 --> 01:12:08,460
+Gördüğünüz gibi
+
+1161
+01:12:08,460 --> 01:12:10,460
+NVC her ne kadar
+
+1162
+01:12:10,460 --> 01:12:12,460
+bize
+
+1163
+01:12:12,460 --> 01:12:14,460
+bir çok anlamda artı getirse de
+
+1164
+01:12:14,460 --> 01:12:16,460
+kıyasladığınız zaman
+
+1165
+01:12:16,460 --> 01:12:18,460
+NVC ve NVVM'e göre
+
+1166
+01:12:18,460 --> 01:12:20,460
+hem değişiklik için
+
+1167
+01:12:20,460 --> 01:12:22,460
+hem de unit testler için
+
+1168
+01:12:24,460 --> 01:12:26,460
+biraz daha performansı düşük
+
+1169
+01:12:26,460 --> 01:12:45,479
+kalıyor. Ama aradaki
+
+1170
+01:12:45,479 --> 01:12:47,479
+kompleks ilişki katmanı da
+
+1171
+01:12:47,479 --> 01:12:51,460
+ne kadar büyük olursa
+
+1172
+01:12:51,460 --> 01:12:53,460
+NVVM'de
+
+1173
+01:12:53,460 --> 01:12:55,460
+orada yetersiz kalıyor.
+
+1174
+01:12:55,460 --> 01:13:43,289
+Son olarak
+
+1175
+01:13:43,289 --> 01:13:45,289
+unit testteki avantajını
+
+1176
+01:13:45,289 --> 01:13:47,289
+uygulamış olalım.
+
+1177
+01:13:47,289 --> 01:14:09,420
+Evet
+
+1178
+01:14:09,420 --> 01:14:15,829
+avantajlarına da değinecek
+
+1179
+01:14:15,829 --> 01:14:17,829
+olursak hızlıca
+
+1180
+01:14:17,829 --> 01:14:19,829
+şöyle yapalım
+
+1181
+01:14:19,829 --> 01:15:41,350
+sadece bazılarına
+
+1182
+01:15:41,350 --> 01:15:43,350
+değiniyorum. Bunları zaten
+
+1183
+01:15:43,350 --> 01:15:45,350
+araştırırsanız
+
+1184
+01:15:45,350 --> 01:15:47,350
+bazısıyla karşılayacaksınız.
+
+1185
+01:15:47,350 --> 01:16:33,220
+En kritik olanları yazıyorum.
+
+1186
+01:16:33,220 --> 01:16:35,220
+Evet şimdi
+
+1187
+01:16:35,220 --> 01:16:39,720
+şu kısmı alalım
+
+1188
+01:16:39,720 --> 01:16:48,119
+şöyle koyalım
+
+1189
+01:16:48,119 --> 01:16:53,800
+şunu da
+
+1190
+01:16:53,800 --> 01:16:58,390
+NVC olarak değiştirelim.
+
+1191
+01:16:58,390 --> 01:17:00,390
+Evet buraya kadar sorus olan var mı?
+
+1192
+01:17:00,390 --> 01:17:08,380
+Peki bugüne kadar
+
+1193
+01:17:08,380 --> 01:17:11,659
+bu design pattern'i kullananlar var mı?
+
+1194
+01:17:11,659 --> 01:17:16,539
+Evet [öğrenci].
+
+1195
+01:17:16,539 --> 01:17:18,539
+Hocam bu iki gördüğümüz design pattern
+
+1196
+01:17:18,539 --> 01:17:20,539
+bir ne bir state management yöntemi mi oluyor?
+
+1197
+01:17:20,539 --> 01:17:22,539
+State management'tan
+
+1198
+01:17:22,539 --> 01:17:24,539
+neyi kast ediyorsun?
+
+1199
+01:17:24,539 --> 01:17:26,539
+Yani web application yaparken
+
+1200
+01:17:26,539 --> 01:17:28,539
+buna benzer
+
+1201
+01:17:28,539 --> 01:17:30,539
+şeyler yapılıyordu ya da cross platform
+
+1202
+01:17:30,539 --> 01:17:32,539
+uygulama geliştirirken state management
+
+1203
+01:17:32,539 --> 01:17:34,539
+olarak bir başlığın altında anlatılıyordu
+
+1204
+01:17:34,539 --> 01:17:36,539
+buna benzer bir şeyler de.
+
+1205
+01:17:38,539 --> 01:17:40,539
+Şöyle söyleyeyim bu
+
+1206
+01:17:40,539 --> 01:17:42,539
+pattern'ler sadece
+
+1207
+01:17:42,539 --> 01:17:44,539
+smartphone application'lere ait değil
+
+1208
+01:17:44,539 --> 01:17:46,539
+aynı zamanda
+
+1209
+01:17:46,539 --> 01:17:48,539
+genel olarak
+
+1210
+01:17:48,539 --> 01:17:50,539
+bir uygulama geliştirme
+
+1211
+01:17:50,539 --> 01:17:52,539
+pattern'leri.
+
+1212
+01:17:52,539 --> 01:17:54,539
+Buradaki amaç
+
+1213
+01:17:54,539 --> 01:17:56,539
+data logic'ini
+
+1214
+01:17:56,539 --> 01:17:58,539
+business logic ve presentation logic
+
+1215
+01:17:58,539 --> 01:18:00,539
+birbirinden ayıracak
+
+1216
+01:18:00,539 --> 01:18:02,539
+pattern'ler oluşturmak
+
+1217
+01:18:02,539 --> 01:18:04,539
+ama zaman içerisinde
+
+1218
+01:18:04,539 --> 01:18:06,539
+özellikle
+
+1219
+01:18:06,539 --> 01:18:08,539
+test case'lerin
+
+1220
+01:18:08,539 --> 01:18:10,539
+artmasıyla birlikte
+
+1221
+01:18:10,539 --> 01:18:12,539
+ve user interaction'ın
+
+1222
+01:18:12,539 --> 01:18:14,539
+yoğunlaşmasıyla birlikte
+
+1223
+01:18:14,539 --> 01:18:16,539
+kullanılan
+
+1224
+01:18:16,539 --> 01:18:18,539
+eski design pattern'lerin
+
+1225
+01:18:18,539 --> 01:18:20,539
+bazı yetersizlikleri ortaya çıktı.
+
+1226
+01:18:20,539 --> 01:18:22,539
+Aslında bakarsanız
+
+1227
+01:18:22,539 --> 01:18:24,539
+şurada göreceksiniz
+
+1228
+01:18:24,539 --> 01:18:26,539
+bu MVC
+
+1229
+01:18:26,539 --> 01:18:28,539
+pattern'inde bir döngü var
+
+1230
+01:18:28,539 --> 01:18:30,539
+ama
+
+1231
+01:18:30,539 --> 01:18:32,539
+MVVM
+
+1232
+01:18:32,539 --> 01:18:34,539
+pattern'ine baktığınızda
+
+1233
+01:18:34,539 --> 01:18:36,539
+bir döngü değil
+
+1234
+01:18:36,539 --> 01:18:38,539
+doğrudan tek bir hat
+
+1235
+01:18:38,539 --> 01:18:40,539
+üzerinde iletişim var
+
+1236
+01:18:40,539 --> 01:18:42,539
+bu döngü
+
+1237
+01:18:42,539 --> 01:18:44,539
+işin biraz daha
+
+1238
+01:18:44,539 --> 01:18:46,539
+yavaşlasını sağlıyor.
+
+1239
+01:18:46,539 --> 01:18:48,539
+Bir hat üzerinde özellikle
+
+1240
+01:18:48,539 --> 01:18:50,539
+view modelin birbirine yaklaşmasıyla
+
+1241
+01:18:50,539 --> 01:18:52,539
+presentation'la
+
+1242
+01:18:52,539 --> 01:18:54,539
+business logic'in biraz daha birbirine yaklaşmasıyla
+
+1243
+01:18:54,539 --> 01:18:56,539
+özellikle data'nın
+
+1244
+01:18:56,539 --> 01:18:58,539
+çok sık
+
+1245
+01:18:58,539 --> 01:19:00,539
+işlendiği ve
+
+1246
+01:19:00,539 --> 01:19:02,539
+ön yüzde değişiklik gösterdiği
+
+1247
+01:19:02,539 --> 01:19:04,539
+işte
+
+1248
+01:19:04,539 --> 01:19:06,539
+Django gibi
+
+1249
+01:19:06,539 --> 01:19:08,539
+framework'larda
+
+1250
+01:19:08,539 --> 01:19:10,539
+bu tür yapılar daha çok
+
+1251
+01:19:10,539 --> 01:19:12,539
+tercih edilir olmaya başladı.
+
+1252
+01:19:12,539 --> 01:19:14,539
+Bunu muhtemelen
+
+1253
+01:19:14,539 --> 01:19:16,539
+iş hayatına çıktığınızda bu güzel
+
+1254
+01:19:16,539 --> 01:19:18,539
+pattern'leri daha fazla
+
+1255
+01:19:18,539 --> 01:19:20,539
+kullanıyor olacaksınız çünkü
+
+1256
+01:19:20,539 --> 01:19:22,539
+orada
+
+1257
+01:19:22,539 --> 01:19:24,539
+hem belli
+
+1258
+01:19:24,539 --> 01:19:26,539
+logicler takım
+
+1259
+01:19:26,539 --> 01:19:28,539
+içerisinde paylaşıldığı için
+
+1260
+01:19:28,539 --> 01:19:30,539
+siz belki de hiçbir zaman
+
+1261
+01:19:30,539 --> 01:19:32,539
+arka planda
+
+1262
+01:19:32,539 --> 01:19:34,539
+data'yı menceden kişi
+
+1263
+01:19:34,539 --> 01:19:36,539
+olmayacaksınız, ön planda daha çok
+
+1264
+01:19:36,539 --> 01:19:38,539
+bu işle uğraşıyor olacaksınız.
+
+1265
+01:19:38,539 --> 01:19:40,539
+Üniversitede bölümde daha çok
+
+1266
+01:19:40,539 --> 01:19:42,539
+işleri yaparken
+
+1267
+01:19:42,539 --> 01:19:44,539
+her tarafını yaptığınız için
+
+1268
+01:19:44,539 --> 01:19:46,539
+bu aradaki geçiş farklığını çok
+
+1269
+01:19:46,539 --> 01:19:48,539
+hissedemiyorsunuz ama
+
+1270
+01:19:48,539 --> 01:19:50,539
+bir takımın parçası olduğunuz zaman
+
+1271
+01:19:50,539 --> 01:19:52,539
+bu design pattern'leri
+
+1272
+01:19:52,539 --> 01:19:54,539
+kullanmanın harflerini çok daha
+
+1273
+01:19:54,539 --> 01:19:56,539
+yakından görüyor olacaksınız.
+
+1274
+01:19:56,539 --> 01:20:00,199
+Teşekkür ederim.
+
+1275
+01:20:00,199 --> 01:20:02,199
+Rica ederim. Bu arada
+
+1276
+01:20:02,199 --> 01:20:04,199
+ekranında bir donma var
+
+1277
+01:20:04,199 --> 01:20:06,199
+o yüzden
+
+1278
+01:20:06,199 --> 01:20:08,199
+bir rüzeltime
+
+1279
+01:20:08,199 --> 01:20:11,670
+yapmaya çalışacağım.
+
+1280
+01:20:11,670 --> 01:20:13,670
+Şu anda hiçbir şekilde bir şey yapamıyorum.
+
+1281
+01:20:13,670 --> 01:20:30,039
+Evet arkadaşlar şu anda
+
+1282
+01:20:32,039 --> 01:20:34,039
+bir saniyemizi rica ediyorum
+
+1283
+01:20:34,039 --> 01:21:27,909
+çözmeye çalışıyorum.
+
+1284
+01:21:27,909 --> 01:21:29,909
+Beni duyabiliyor musunuz?
+
+1285
+01:21:29,909 --> 01:21:31,909
+Evet hocam.
+
+1286
+01:21:31,909 --> 01:21:33,909
+Şu anda ekranımda hiçbir
+
+1287
+01:21:33,909 --> 01:21:35,909
+mânsız hareketi yapamıyorum.
+
+1288
+01:21:35,909 --> 01:21:37,909
+O yüzden
+
+1289
+01:21:37,909 --> 01:21:39,909
+sanırım restart etmem
+
+1290
+01:21:39,909 --> 01:21:41,909
+yapacak bilgisayarımı, hiçbir
+
+1291
+01:21:41,909 --> 01:21:43,909
+application'i kontrol edemiyorum.
+
+1292
+01:21:43,909 --> 01:21:45,909
+15.20 bir 10 dakika
+
+1293
+01:21:45,909 --> 01:21:47,909
+karar verelim 15.30'da tekrar görüşürüz arkadaşlar.
+
+1294
+01:21:47,909 --> 01:21:49,909
+Teşekkür ederim anlayışınız için.
+
+1295
+01:21:49,909 --> 01:30:33,539
+Evet arkadaşlar yeniden merhaba.
+
+1296
+01:30:33,539 --> 01:30:35,539
+Teşekkür
+
+1297
+01:30:35,539 --> 01:30:37,539
+ediyorum beklediğiniz için.
+
+1298
+01:30:37,539 --> 01:30:39,539
+Şu an daha önce kaçıldı
+
+1299
+01:30:39,539 --> 01:30:41,539
+bilgisayarım yeniden bütün programlar.
+
+1300
+01:30:43,539 --> 01:30:45,539
+İlk defa böyle bir şey oldu ben de şaşırdım.
+
+1301
+01:30:45,539 --> 01:30:47,539
+Hiçbir kontrol sağlayamadım.
+
+1302
+01:30:47,539 --> 01:30:49,539
+Şimdi bize MVDM
+
+1303
+01:30:49,539 --> 01:30:51,539
+ve MVC arasındaki
+
+1304
+01:30:51,539 --> 01:30:53,539
+farklardan ve biz de sağladığı
+
+1305
+01:30:53,539 --> 01:30:55,539
+katkılardan bahsettik.
+
+1306
+01:30:55,539 --> 01:30:57,539
+İki design pattern'den.
+
+1307
+01:30:57,539 --> 01:30:59,539
+Yazım geliştirirken kullanılacak.
+
+1308
+01:30:59,539 --> 01:31:01,539
+İki tane temel
+
+1309
+01:31:01,539 --> 01:31:03,539
+yaklaşımdan
+
+1310
+01:31:03,539 --> 01:31:05,539
+bahsettik.
+
+1311
+01:31:05,539 --> 01:31:07,539
+Siz herkesten de
+
+1312
+01:31:07,539 --> 01:31:09,539
+tercih edebilirsiniz.
+
+1313
+01:31:09,539 --> 01:31:11,539
+Biraz ihtiyaçlara bağlı olarak
+
+1314
+01:31:11,539 --> 01:31:13,539
+şekilenmesi gerekiyor.
+
+1315
+01:31:13,539 --> 01:31:15,539
+Özellikle ön yüze
+
+1316
+01:31:15,539 --> 01:31:17,539
+arka yüze arasındaki veri
+
+1317
+01:31:17,539 --> 01:31:19,539
+bakışsıklığı ve
+
+1318
+01:31:19,539 --> 01:31:21,539
+uygulamanızın karmaşıklığı
+
+1319
+01:31:21,539 --> 01:31:23,539
+burada belirleyici olacaktır.
+
+1320
+01:31:23,539 --> 01:31:25,539
+Evet şimdi
+
+1321
+01:31:25,539 --> 01:31:27,539
+bir sonraki konumuza
+
+1322
+01:31:27,539 --> 01:31:38,119
+geçiyoruz.
+
+1323
+01:31:38,119 --> 01:31:40,119
+Aslında bunun için olur bir sorun
+
+1324
+01:31:40,119 --> 01:31:42,119
+olacak sanırım.
+
+1325
+01:31:42,119 --> 01:31:44,119
+Hocam biz MVP'den bahsetmedik de
+
+1326
+01:31:44,119 --> 01:31:46,119
+bunun design pattern arasındaki yeri nedir acaba?
+
+1327
+01:31:46,119 --> 01:31:48,119
+Ondan özellikle
+
+1328
+01:31:48,119 --> 01:31:50,119
+bahsetmedim çünkü mobil tarafta
+
+1329
+01:31:50,119 --> 01:31:52,119
+iki tane ön plana
+
+1330
+01:31:52,119 --> 01:31:54,119
+çıkan MVC ve
+
+1331
+01:31:54,119 --> 01:31:56,119
+MVVL var.
+
+1332
+01:31:56,119 --> 01:31:58,119
+Hatta bugüne kadar dersin
+
+1333
+01:31:58,119 --> 01:32:00,119
+daha az kısmını ayırıyorum
+
+1334
+01:32:00,119 --> 01:32:02,119
+design patternlere.
+
+1335
+01:32:02,119 --> 01:32:04,119
+MVC kısmını sadece anlatıp
+
+1336
+01:32:04,119 --> 01:32:06,119
+geçiyordum. Bugün biraz daha
+
+1337
+01:32:06,119 --> 01:32:08,119
+uzun vakit ayırdım.
+
+1338
+01:32:08,119 --> 01:32:10,119
+Geçen sene ders alan öğrenci
+
+1339
+01:32:10,119 --> 01:32:12,119
+derinden gelen bir istek üzerine
+
+1340
+01:32:12,119 --> 01:32:14,119
+bu sene
+
+1341
+01:32:14,119 --> 01:32:16,119
+çalışmaya başladıkları firmada
+
+1342
+01:32:16,119 --> 01:32:18,119
+MVVM ile karşılaştıklarını ve
+
+1343
+01:32:18,119 --> 01:32:20,119
+bundan çok faydalandıklarını
+
+1344
+01:32:20,119 --> 01:32:22,119
+söylediler. Dersede bu
+
+1345
+01:32:22,119 --> 01:32:24,119
+içeriği ekler misiniz diye bir katkıda
+
+1346
+01:32:24,119 --> 01:32:26,119
+bulundular. O yüzden
+
+1347
+01:32:26,119 --> 01:32:28,119
+hani MVC ve
+
+1348
+01:32:28,119 --> 01:32:30,119
+MVVM sizin için şu anda
+
+1349
+01:32:30,119 --> 01:32:32,119
+en temel
+
+1350
+01:32:32,119 --> 01:32:34,119
+bilinmesi gereken iki design pattern
+
+1351
+01:32:34,119 --> 01:32:36,119
+MVP'yi
+
+1352
+01:32:36,119 --> 01:32:38,119
+dersin dışına bırakalım ama
+
+1353
+01:32:38,119 --> 01:32:40,119
+eğer merak ettiğin olursa ders sonrasında
+
+1354
+01:32:40,119 --> 01:32:42,119
+konuşabiliriz. Tamam teşekkürler hocam.
+
+1355
+01:32:42,119 --> 01:32:44,119
+Ben teşekkür ederim.
+
+1356
+01:32:44,119 --> 01:32:46,119
+Şimdi
+
+1357
+01:32:46,119 --> 01:32:48,119
+paylaşım yapacağım
+
+1358
+01:32:48,119 --> 01:32:52,619
+slide'lar üzerine
+
+1359
+01:32:52,619 --> 01:33:13,140
+geçeceğim. Şu an
+
+1360
+01:33:13,140 --> 01:33:15,140
+görebiliyor musunuz? Evet
+
+1361
+01:33:15,140 --> 01:33:17,140
+hocam. Evet hocam. Tamam.
+
+1362
+01:33:17,140 --> 01:33:19,140
+Şimdi Android
+
+1363
+01:33:19,140 --> 01:33:21,140
+programlamaya yavaş yavaş
+
+1364
+01:33:21,140 --> 01:33:23,140
+giriş yapacağız.
+
+1365
+01:33:23,140 --> 01:33:25,140
+Bu noktada
+
+1366
+01:33:25,140 --> 01:33:27,140
+ilk uygulama geliştirmek
+
+1367
+01:33:27,140 --> 01:33:29,140
+için bilmeniz gereken temel
+
+1368
+01:33:29,140 --> 01:33:31,140
+bilgilere bu hafta başlıyor olacağız.
+
+1369
+01:33:31,140 --> 01:33:33,140
+Bunun
+
+1370
+01:33:33,140 --> 01:33:35,140
+ilk adımı da
+
+1371
+01:33:35,140 --> 01:33:37,140
+aslında Android
+
+1372
+01:33:37,140 --> 01:33:39,140
+habitatine
+
+1373
+01:33:39,140 --> 01:33:41,140
+ait
+
+1374
+01:33:41,140 --> 01:33:43,140
+komponentler
+
+1375
+01:33:43,140 --> 01:33:45,140
+temel komponentler
+
+1376
+01:33:45,140 --> 01:33:47,140
+bunlar aslında 4
+
+1377
+01:33:47,140 --> 01:33:49,140
+adet
+
+1378
+01:33:49,140 --> 01:33:51,140
+activity, broadcast
+
+1379
+01:33:51,140 --> 01:33:53,140
+receiver, service'ler
+
+1380
+01:33:53,140 --> 01:33:55,140
+ve content provider'lar.
+
+1381
+01:33:55,140 --> 01:33:57,140
+Burada
+
+1382
+01:33:57,140 --> 01:33:59,140
+temel komponent olarak
+
+1383
+01:33:59,140 --> 01:34:01,140
+4 tane ama başka komponentler
+
+1384
+01:34:01,140 --> 01:34:03,140
+de var intent gibi
+
+1385
+01:34:03,140 --> 01:34:05,140
+ve bunun üzerine
+
+1386
+01:34:05,140 --> 01:34:07,140
+ekleyebileceğimiz başka
+
+1387
+01:34:07,140 --> 01:34:09,140
+komponentler gibi ama
+
+1388
+01:34:09,140 --> 01:34:11,140
+temelde bir
+
+1389
+01:34:11,140 --> 01:34:13,140
+uygulamaya geçiş yapmak
+
+1390
+01:34:13,140 --> 01:34:15,140
+istiyorsanız 3 temel
+
+1391
+01:34:15,140 --> 01:34:17,140
+4 temel komponentten farzlanıyorsunuz.
+
+1392
+01:34:17,140 --> 01:34:19,140
+Activity, broadcast
+
+1393
+01:34:19,140 --> 01:34:21,140
+receiver, service
+
+1394
+01:34:21,140 --> 01:34:23,140
+ve content provider'lar.
+
+1395
+01:34:23,140 --> 01:34:25,140
+Bu
+
+1396
+01:34:25,140 --> 01:34:27,140
+tabi bunlar medya detaylarına
+
+1397
+01:34:27,140 --> 01:34:29,140
+giriyor olacağız ama
+
+1398
+01:34:29,140 --> 01:34:31,140
+bir uygulama
+
+1399
+01:34:31,140 --> 01:34:33,140
+düşündüğünüz zaman o
+
+1400
+01:34:33,140 --> 01:34:35,140
+uygulamanın hem
+
+1401
+01:34:35,140 --> 01:34:37,140
+arayüz tarafı oluyor
+
+1402
+01:34:37,140 --> 01:34:39,140
+hem de
+
+1403
+01:34:39,140 --> 01:34:41,140
+aslında business hoca'yı yönettiğiniz
+
+1404
+01:34:41,140 --> 01:34:43,140
+ya da data'yı yönettiğiniz
+
+1405
+01:34:43,140 --> 01:34:45,140
+biraz önce bahsettiğimiz
+
+1406
+01:34:45,140 --> 01:34:47,140
+model, controller
+
+1407
+01:34:47,140 --> 01:34:49,140
+ya da
+
+1408
+01:34:49,140 --> 01:34:51,140
+view model tarafı oluyor.
+
+1409
+01:34:51,140 --> 01:34:53,140
+Bu noktada bir
+
+1410
+01:34:53,140 --> 01:34:55,140
+uygulama içerisinde birden fazla
+
+1411
+01:34:55,140 --> 01:34:57,140
+activity genelde
+
+1412
+01:34:57,140 --> 01:34:59,140
+konumlanıyor.
+
+1413
+01:34:59,140 --> 01:35:01,140
+Artı
+
+1414
+01:35:01,140 --> 01:35:03,140
+bu aktiviteler arasındaki
+
+1415
+01:35:03,140 --> 01:35:05,140
+haberleşme ek olarak
+
+1416
+01:35:05,140 --> 01:35:07,140
+uygulamalar arasında da haberleşme
+
+1417
+01:35:07,140 --> 01:35:09,140
+yeteneğiniz var.
+
+1418
+01:35:09,140 --> 01:35:11,140
+Sonuçta
+
+1419
+01:35:11,140 --> 01:35:13,140
+bu uygulama içerisinde çalışan
+
+1420
+01:35:13,140 --> 01:35:15,140
+her bir uygulama
+
+1421
+01:35:15,140 --> 01:35:17,140
+aslında kendi
+
+1422
+01:35:17,140 --> 01:35:19,140
+sandbox'ında çalışıyor.
+
+1423
+01:35:19,140 --> 01:35:21,140
+Ayrı bir proses olarak
+
+1424
+01:35:21,140 --> 01:35:23,140
+diğerlerinden izole bir yapıda
+
+1425
+01:35:23,140 --> 01:35:25,140
+çalışıyor. Siz bu bağlantıyı
+
+1426
+01:35:25,140 --> 01:35:27,140
+kurmadığınız sürece
+
+1427
+01:35:27,140 --> 01:35:29,140
+A uygulamasının B uygulamasıyla
+
+1428
+01:35:29,140 --> 01:35:31,140
+hiçbir şekilde privilege
+
+1429
+01:35:31,140 --> 01:35:33,140
+anlamında bir
+
+1430
+01:35:33,140 --> 01:35:35,140
+common noktası olmuyor.
+
+1431
+01:35:35,140 --> 01:35:37,140
+Bu aslında yaratılmış
+
+1432
+01:35:37,140 --> 01:35:39,140
+bu yapı
+
+1433
+01:35:39,140 --> 01:35:41,140
+anlamında çok önemli.
+
+1434
+01:35:41,140 --> 01:35:43,140
+Tamamen ayrı virtual
+
+1435
+01:35:43,140 --> 01:35:45,140
+maşinlerde çalıştığını düşünebilirsiniz
+
+1436
+01:35:45,140 --> 01:35:47,140
+her bir uygulamanın.
+
+1437
+01:35:47,140 --> 01:35:49,140
+Bu sayede
+
+1438
+01:35:49,140 --> 01:35:51,140
+herhangi zararlı bir uygulamanın
+
+1439
+01:35:51,140 --> 01:35:53,140
+başka bir uygulamayı etkileme
+
+1440
+01:35:53,140 --> 01:35:55,140
+ihtimalini de minimize etmiş oluyorsunuz.
+
+1441
+01:35:55,140 --> 01:35:57,140
+Temel bu yapının
+
+1442
+01:35:57,140 --> 01:35:59,140
+kazandığı bize
+
+1443
+01:35:59,140 --> 01:36:01,140
+bu
+
+1444
+01:36:01,140 --> 01:36:03,140
+kısım oluyor.
+
+1445
+01:36:03,140 --> 01:36:05,140
+Tabi
+
+1446
+01:36:05,140 --> 01:36:07,140
+uygulamaların farklı cihazlarda
+
+1447
+01:36:07,140 --> 01:36:09,140
+uygulaması
+
+1448
+01:36:09,140 --> 01:36:11,140
+bize
+
+1449
+01:36:11,140 --> 01:36:13,140
+farklı
+
+1450
+01:36:13,140 --> 01:36:15,140
+sorumluluklarla yüklüyor.
+
+1451
+01:36:15,140 --> 01:36:17,140
+IOS'ta Android arasındaki farkı
+
+1452
+01:36:17,140 --> 01:36:19,140
+konuşurken en büyük sıkıntının
+
+1453
+01:36:19,140 --> 01:36:21,140
+cihaz gamı olduğunu söylemiştik.
+
+1454
+01:36:21,140 --> 01:36:23,140
+Çok geniş
+
+1455
+01:36:23,140 --> 01:36:25,140
+hem doğranımsal farklılıklar
+
+1456
+01:36:25,140 --> 01:36:27,140
+hem de
+
+1457
+01:36:27,140 --> 01:36:29,140
+o ilgili
+
+1458
+01:36:29,140 --> 01:36:31,140
+LG'nin, Samsung'un
+
+1459
+01:36:31,140 --> 01:36:33,140
+uyguladığı politikalar dolayısıyla
+
+1460
+01:36:33,140 --> 01:36:35,140
+Android'in
+
+1461
+01:36:35,140 --> 01:36:37,140
+bu cihazlara bir uyum
+
+1462
+01:36:37,140 --> 01:36:39,140
+için
+
+1463
+01:36:39,140 --> 01:36:41,140
+ekstra çaba harcaması gerektiğini söylemiştik.
+
+1464
+01:36:41,140 --> 01:36:43,140
+Bunlardan
+
+1465
+01:36:43,140 --> 01:36:45,140
+en önemlisi de
+
+1466
+01:36:45,140 --> 01:36:47,140
+farklı
+
+1467
+01:36:47,140 --> 01:36:49,140
+ekran boyutlarına sahip
+
+1468
+01:36:49,140 --> 01:36:51,140
+cihazlar için
+
+1469
+01:36:51,140 --> 01:36:53,140
+ürettiğiniz layoutların
+
+1470
+01:36:53,140 --> 01:36:55,140
+kompetibül olması ve
+
+1471
+01:36:55,140 --> 01:36:57,140
+X cihazında gözüken
+
+1472
+01:36:57,140 --> 01:36:59,140
+görüntünün Y cihazında da
+
+1473
+01:36:59,140 --> 01:37:01,140
+aynı hissiyatı vermesi.
+
+1474
+01:37:01,140 --> 01:37:03,140
+Son yıllarda
+
+1475
+01:37:03,140 --> 01:37:05,140
+bununla ilgili önemli gelişmeler kaydedildi.
+
+1476
+01:37:05,140 --> 01:37:07,140
+Layout tarafında da
+
+1477
+01:37:07,140 --> 01:37:09,140
+zaten
+
+1478
+01:37:09,140 --> 01:37:11,140
+bu tür ekstra eforlar harcamanız da
+
+1479
+01:37:11,140 --> 01:37:13,140
+bekleniyor sizden.
+
+1480
+01:37:13,140 --> 01:37:15,140
+Büyük ekran için, çözümlülüğüş olan için,
+
+1481
+01:37:15,140 --> 01:37:17,140
+küçük ekran için,
+
+1482
+01:37:17,140 --> 01:37:19,140
+farklı çözümlülüklerde
+
+1483
+01:37:19,140 --> 01:37:21,140
+medyalar sağlamanız
+
+1484
+01:37:21,140 --> 01:37:23,140
+bekleniyor sizden.
+
+1485
+01:37:23,140 --> 01:37:25,140
+Bu özel donanımlar içinde
+
+1486
+01:37:25,140 --> 01:37:27,140
+belirli donanımlar içinde
+
+1487
+01:37:27,140 --> 01:37:29,140
+çözümler üretmeniz
+
+1488
+01:37:29,140 --> 01:37:32,550
+sizden isteniyor.
+
+1489
+01:37:32,550 --> 01:37:34,550
+Şimdi
+
+1490
+01:37:34,550 --> 01:37:36,550
+uygulama geliştiriyorsanız
+
+1491
+01:37:36,550 --> 01:37:38,550
+Kotlin, Java, C++
+
+1492
+01:37:38,550 --> 01:37:40,550
+doğrudan kullanacağınız
+
+1493
+01:37:40,550 --> 01:37:42,550
+SDK ile uyumlu diller.
+
+1494
+01:37:42,550 --> 01:37:44,550
+Öte yandan
+
+1495
+01:37:44,550 --> 01:37:46,550
+NDK yüklerseniz
+
+1496
+01:37:46,550 --> 01:37:48,550
+C diliyle de geliştirme yapabiliyorsunuz.
+
+1497
+01:37:48,550 --> 01:37:50,550
+En önemli
+
+1498
+01:37:50,550 --> 01:37:52,550
+ayrım ise
+
+1499
+01:37:52,550 --> 01:37:54,550
+bir tarafta
+
+1500
+01:37:54,550 --> 01:37:56,550
+programlama dilleriyle
+
+1501
+01:37:56,550 --> 01:37:58,550
+oluşturulmuş kodlarımız
+
+1502
+01:37:58,550 --> 01:38:00,550
+diğer tarafta da
+
+1503
+01:38:00,550 --> 01:38:02,550
+kaynak dosyalarınızın yer alması.
+
+1504
+01:38:02,550 --> 01:38:04,550
+Ve doğal olarak Java veya
+
+1505
+01:38:04,550 --> 01:38:06,550
+Kotlin'de oluşturulmuş olanlar
+
+1506
+01:38:06,550 --> 01:38:08,550
+sizin
+
+1507
+01:38:08,550 --> 01:38:10,550
+kod kısmındaki
+
+1508
+01:38:10,550 --> 01:38:12,550
+kaynak dosyalarınızı
+
+1509
+01:38:12,550 --> 01:38:14,550
+oluştururken
+
+1510
+01:38:14,550 --> 01:38:16,550
+diğer tarafta da resource file'leriniz var.
+
+1511
+01:38:16,550 --> 01:38:18,550
+Bunlar için
+
+1512
+01:38:18,550 --> 01:38:20,550
+neleri örnek verebiliriz diye sorsam
+
+1513
+01:38:20,550 --> 01:38:30,460
+resource file'lere.
+
+1514
+01:38:30,460 --> 01:38:32,460
+[öğrenci].
+
+1515
+01:38:32,460 --> 01:38:34,460
+Hocam XML'ler olabilir mi?
+
+1516
+01:38:34,460 --> 01:38:36,460
+Evet, bütün bu layout için
+
+1517
+01:38:36,460 --> 01:38:38,460
+kullanacağımız XML file'ler
+
+1518
+01:38:38,460 --> 01:38:40,460
+ve arkasında
+
+1519
+01:38:40,460 --> 01:38:42,460
+göreceksiniz string XML
+
+1520
+01:38:42,460 --> 01:38:44,460
+gibi
+
+1521
+01:38:44,460 --> 01:38:46,460
+dil için
+
+1522
+01:38:46,460 --> 01:38:48,460
+yapacağınız dönüşümleri sakladığınız
+
+1523
+01:38:48,460 --> 01:38:50,460
+XML file'lere
+
+1524
+01:38:50,460 --> 01:38:52,460
+örneğin İngilizce için karşılığı
+
+1525
+01:38:52,460 --> 01:38:54,460
+Fransızca için karşılığı
+
+1526
+01:38:54,460 --> 01:38:56,460
+bütün bunlar
+
+1527
+01:38:56,460 --> 01:38:58,460
+resource file olarak geçiyor.
+
+1528
+01:38:58,460 --> 01:39:00,460
+[öğrenci].
+
+1529
+01:39:00,460 --> 01:39:02,460
+Hocam
+
+1530
+01:39:02,460 --> 01:39:04,460
+dravable dosyaları var, görseller var.
+
+1531
+01:39:04,460 --> 01:39:06,460
+Onun dışında
+
+1532
+01:39:06,460 --> 01:39:08,460
+başka dosyalar türlerini de
+
+1533
+01:39:08,460 --> 01:39:10,460
+aynı şekilde ekleyebiliyoruz.
+
+1534
+01:39:10,460 --> 01:39:12,460
+Art code'u da var.
+
+1535
+01:39:12,460 --> 01:39:14,460
+Programlama dilleriyle
+
+1536
+01:39:14,460 --> 01:39:16,460
+yazılmamış bütün
+
+1537
+01:39:16,460 --> 01:39:18,460
+programlama dilleri
+
+1538
+01:39:18,460 --> 01:39:20,460
+dışındaki dosyalar aslında
+
+1539
+01:39:20,460 --> 01:39:22,460
+resource file'ler diye geçiyor. Bunların içinde
+
+1540
+01:39:22,460 --> 01:39:24,460
+multimedia file'lar var,
+
+1541
+01:39:24,460 --> 01:39:26,460
+icon'lar var, safe dosyaları var,
+
+1542
+01:39:26,460 --> 01:39:28,460
+color,
+
+1543
+01:39:28,460 --> 01:39:30,460
+XML var.
+
+1544
+01:39:30,460 --> 01:39:32,460
+Bütün bu
+
+1545
+01:39:32,460 --> 01:39:34,460
+aslında
+
+1546
+01:39:34,460 --> 01:39:36,460
+sizin
+
+1547
+01:39:36,460 --> 01:39:38,460
+görsel ve
+
+1548
+01:39:38,460 --> 01:39:40,460
+medya tarafında, yani
+
+1549
+01:39:40,460 --> 01:39:42,460
+arayüze yönelik yapmış olduğunuz tüm dosyalar
+
+1550
+01:39:42,460 --> 01:39:44,460
+bu noktada resource file'lar
+
+1551
+01:39:44,460 --> 01:39:46,460
+olarak geçiyor ve bunlar
+
+1552
+01:39:46,460 --> 01:39:48,460
+aslında ikisi birleşip
+
+1553
+01:39:48,460 --> 01:39:50,460
+code ve resource file'lar
+
+1554
+01:39:50,460 --> 01:39:52,460
+bir araya girip
+
+1555
+01:39:52,460 --> 01:39:54,460
+APK altında
+
+1556
+01:39:54,460 --> 01:39:56,460
+bir arşif
+
+1557
+01:39:56,460 --> 01:39:58,460
+file olarak birleştiriliyorlar. Peki
+
+1558
+01:39:58,460 --> 01:40:00,460
+APK'nın yeni
+
+1559
+01:40:00,460 --> 01:40:04,979
+versiyonun ismi neydi?
+
+1560
+01:40:04,979 --> 01:40:06,979
+Hala APK kullanılsa da
+
+1561
+01:40:06,979 --> 01:40:08,979
+[öğrenci]?
+
+1562
+01:40:08,979 --> 01:40:10,979
+App bundle.
+
+1563
+01:40:10,979 --> 01:40:12,979
+Artı yönü APK'ya göre
+
+1564
+01:40:12,979 --> 01:40:14,979
+neydi? Neden dolayı bir
+
+1565
+01:40:14,979 --> 01:40:16,979
+yeni bir format
+
+1566
+01:40:16,979 --> 01:40:25,699
+üretildi?
+
+1567
+01:40:25,699 --> 01:40:27,699
+Farklı bir kişi
+
+1568
+01:40:27,699 --> 01:40:33,189
+[öğrenci].
+
+1569
+01:40:33,189 --> 01:40:35,189
+Hocam galiba dosya
+
+1570
+01:40:35,189 --> 01:40:37,189
+boyutları daha küçük olabiliyor.
+
+1571
+01:40:37,189 --> 01:40:40,569
+Neden dolayı?
+
+1572
+01:40:40,569 --> 01:40:42,569
+Tahminin var mı?
+
+1573
+01:40:42,569 --> 01:40:44,569
+Sıkıştırma ile ilgili bir şeylerdir.
+
+1574
+01:40:44,569 --> 01:40:46,569
+Aslında
+
+1575
+01:40:46,569 --> 01:40:48,569
+tabi ki sıkıştırma ile ilgili
+
+1576
+01:40:48,569 --> 01:40:50,569
+ilerleme olsa da tam olarak sıkıştırma değil
+
+1577
+01:40:50,569 --> 01:40:52,569
+sebebi [öğrenci].
+
+1578
+01:40:52,569 --> 01:40:54,569
+Hocam çok emin olmamakla birlikte
+
+1579
+01:40:54,569 --> 01:40:56,569
+konuşacağım.
+
+1580
+01:40:56,569 --> 01:40:58,569
+Bazen cihazlara yönelik
+
+1581
+01:40:58,569 --> 01:41:00,569
+farklı şeyleri farklı dosyalarda
+
+1582
+01:41:00,569 --> 01:41:02,569
+yazmamız gerekebiliyor. APK'larda bunların hepsi
+
+1583
+01:41:02,569 --> 01:41:04,569
+tek bir dosya içerisinde
+
+1584
+01:41:04,569 --> 01:41:06,569
+birleştirilmiş oluyor. Hep
+
+1585
+01:41:06,569 --> 01:41:08,569
+banalılarda dağıtılıyor diye biliyorum.
+
+1586
+01:41:08,569 --> 01:41:10,569
+Çok doğru, doğru biliyorsun.
+
+1587
+01:41:10,569 --> 01:41:12,569
+Teşekkür ediyorum.
+
+1588
+01:41:12,569 --> 01:41:14,569
+Aslında en önemli fark
+
+1589
+01:41:14,569 --> 01:41:16,569
+sizin biraz önce bahsettiğimiz
+
+1590
+01:41:16,569 --> 01:41:18,569
+device çeşitliğine yönelik
+
+1591
+01:41:20,569 --> 01:41:22,569
+oluşturduğunuz farklı dosyaların
+
+1592
+01:41:24,569 --> 01:41:26,569
+hangi telefona yüklenirse yüklensin
+
+1593
+01:41:26,569 --> 01:41:28,569
+APK'da o telefonun
+
+1594
+01:41:28,569 --> 01:41:30,569
+özellikleri gözetilmeden
+
+1595
+01:41:30,569 --> 01:41:32,569
+bütün seçeneklerin
+
+1596
+01:41:32,569 --> 01:41:34,569
+yüklenmesi nedeniyle
+
+1597
+01:41:36,569 --> 01:41:38,569
+çok daha şişkin bir
+
+1598
+01:41:38,569 --> 01:41:40,569
+APK file oluşturmanıza sebep buluyordu.
+
+1599
+01:41:40,569 --> 01:41:42,569
+Ama
+
+1600
+01:41:42,569 --> 01:41:44,569
+Android Google tarafı şöyle bir
+
+1601
+01:41:44,569 --> 01:41:46,569
+çözüm üretti.
+
+1602
+01:41:46,569 --> 01:41:48,569
+Dedi ki o zaman ben
+
+1603
+01:41:48,569 --> 01:41:50,569
+yükleneceğim cihazın
+
+1604
+01:41:50,569 --> 01:41:52,569
+özelliklerine bakayım.
+
+1605
+01:41:52,569 --> 01:41:54,569
+Onun özelliklerine uygun
+
+1606
+01:41:54,569 --> 01:41:56,569
+görselleri, layoutla
+
+1607
+01:41:56,569 --> 01:41:58,569
+ilgili olarak ya da
+
+1608
+01:41:58,569 --> 01:42:00,569
+yüklenmesi gereken dosyaları
+
+1609
+01:42:00,569 --> 01:42:02,569
+sadece o tarafa aktarayım
+
+1610
+01:42:02,569 --> 01:42:04,569
+noktası.
+
+1611
+01:42:04,569 --> 01:42:06,569
+Böylece siz geliştirici olarak
+
+1612
+01:42:06,569 --> 01:42:08,569
+bir uygulama tasarladığınızda
+
+1613
+01:42:08,569 --> 01:42:10,569
+bütün cihazları gözeterek
+
+1614
+01:42:10,569 --> 01:42:12,569
+bir tasarım yapıyorsunuz.
+
+1615
+01:42:14,569 --> 01:42:16,569
+Bir dosya
+
+1616
+01:42:16,569 --> 01:42:18,569
+havuzu oluşturuyorsunuz.
+
+1617
+01:42:18,569 --> 01:42:20,569
+Daha sonra marketten
+
+1618
+01:42:20,569 --> 01:42:22,569
+uygulamayı indiren kişi
+
+1619
+01:42:22,569 --> 01:42:24,569
+indirirken
+
+1620
+01:42:24,569 --> 01:42:26,569
+cihazının marka
+
+1621
+01:42:26,569 --> 01:42:28,569
+ve modeli Google tarafında
+
+1622
+01:42:28,569 --> 01:42:30,569
+analiz edildiğinde
+
+1623
+01:42:30,569 --> 01:42:32,569
+onun tarafında çalışması
+
+1624
+01:42:32,569 --> 01:42:34,569
+gereken sadece dosyalar
+
+1625
+01:42:34,569 --> 01:42:36,569
+karşı tarafa aktarılıyor.
+
+1626
+01:42:36,569 --> 01:42:38,569
+Böylece sizin ürettiğiniz havuzdan
+
+1627
+01:42:38,569 --> 01:42:40,569
+sadece o ilgili cihaza
+
+1628
+01:42:40,569 --> 01:42:42,569
+uygun olan
+
+1629
+01:42:42,569 --> 01:42:44,569
+dosyalar aktarılarak
+
+1630
+01:42:44,569 --> 01:42:46,569
+ki bu daha çok işte
+
+1631
+01:42:46,569 --> 01:42:48,569
+söylediğim gibi layout ve resource filenler
+
+1632
+01:42:48,569 --> 01:42:50,569
+için bir çareli
+
+1633
+01:42:50,569 --> 01:42:52,569
+yüksek çözümlülük, düşük çözümlülük
+
+1634
+01:42:52,569 --> 01:42:54,569
+vesaire tasarımlarınız da olabilir.
+
+1635
+01:42:54,569 --> 01:42:56,569
+Bu sayede
+
+1636
+01:42:56,569 --> 01:42:58,569
+oldukça
+
+1637
+01:42:58,569 --> 01:43:00,569
+boyut açısından
+
+1638
+01:43:00,569 --> 01:43:02,569
+bir tasarruf sağlanmış oluyor
+
+1639
+01:43:02,569 --> 01:43:04,569
+ve açıkçası
+
+1640
+01:43:04,569 --> 01:43:06,569
+kullanıcı memnuniyeti de
+
+1641
+01:43:06,569 --> 01:43:08,569
+ciddi oranda yükseltilmiş oluyor.
+
+1642
+01:43:10,569 --> 01:43:12,569
+Bu Android App Bundle
+
+1643
+01:43:12,569 --> 01:43:14,569
+yani yeni
+
+1644
+01:43:14,569 --> 01:43:16,569
+Archive File formatıyla
+
+1645
+01:43:16,569 --> 01:43:18,569
+hayatımıza gelen güzel bir
+
+1646
+01:43:18,569 --> 01:43:20,569
+özellik.
+
+1647
+01:43:20,569 --> 01:43:22,569
+Tabi
+
+1648
+01:43:22,569 --> 01:43:24,569
+APK ve
+
+1649
+01:43:24,569 --> 01:43:26,569
+App Bundle ikisi de
+
+1650
+01:43:26,569 --> 01:43:28,569
+hem
+
+1651
+01:43:28,569 --> 01:43:30,569
+code hem de resource filenleri
+
+1652
+01:43:30,569 --> 01:43:32,569
+içeriyor. Peki
+
+1653
+01:43:32,569 --> 01:43:34,569
+APK'nın içerisinde
+
+1654
+01:43:34,569 --> 01:43:36,569
+hangi file'lar
+
+1655
+01:43:36,569 --> 01:43:38,569
+yer alıyor?
+
+1656
+01:43:38,569 --> 01:43:43,189
+Bu konuda ne söylersiniz?
+
+1657
+01:43:43,189 --> 01:43:45,189
+Source code'lar dedik,
+
+1658
+01:43:45,189 --> 01:43:47,189
+resource file'lar dedik ama resource
+
+1659
+01:43:47,189 --> 01:43:50,890
+file'leri biraz daha açarsak
+
+1660
+01:43:50,890 --> 01:43:52,890
+resource file'ler bir dönüşümden geçiyor
+
+1661
+01:43:52,890 --> 01:43:58,310
+[öğrenci].
+
+1662
+01:43:58,310 --> 01:44:00,310
+Evet geliyor.
+
+1663
+01:44:02,310 --> 01:44:04,310
+Çok önemli
+
+1664
+01:44:04,310 --> 01:44:06,310
+AndroidManifest.exeval
+
+1665
+01:44:06,310 --> 01:44:08,310
+için sizin
+
+1666
+01:44:08,310 --> 01:44:10,310
+uygulamanızla ilgili
+
+1667
+01:44:10,310 --> 01:44:12,310
+ayarlarla ilgili
+
+1668
+01:44:12,310 --> 01:44:14,310
+bilgilerin yer aldığı izinlerin
+
+1669
+01:44:14,310 --> 01:44:16,310
+en düşük hangi
+
+1670
+01:44:16,310 --> 01:44:18,310
+sürümde çalışacak gibi
+
+1671
+01:44:18,310 --> 01:44:20,310
+aktivitelerinizin
+
+1672
+01:44:20,310 --> 01:44:22,310
+birbirleriyle olan ilişkisinin
+
+1673
+01:44:22,310 --> 01:44:24,310
+tanımlandığı bir
+
+1674
+01:44:24,310 --> 01:44:26,310
+XML dosyası var.
+
+1675
+01:44:26,310 --> 01:44:28,310
+Bu APK'nın içerisinde
+
+1676
+01:44:28,310 --> 01:44:32,140
+olmazsa olmaz başka
+
+1677
+01:44:32,140 --> 01:44:36,310
+layout dosyaları dedik.
+
+1678
+01:44:36,310 --> 01:44:38,310
+Strings.xml dediğimiz
+
+1679
+01:44:38,310 --> 01:44:40,310
+dil dönüşümlerinde
+
+1680
+01:44:40,310 --> 01:44:42,310
+bize yardımcı olacak
+
+1681
+01:44:42,310 --> 01:44:45,689
+format'taki dosyalar
+
+1682
+01:44:45,689 --> 01:44:50,600
+başka.
+
+1683
+01:44:50,600 --> 01:44:52,600
+Bir de R.java var.
+
+1684
+01:44:52,600 --> 01:44:54,600
+R.java nedir
+
+1685
+01:44:54,600 --> 01:45:07,319
+bilen var mı?
+
+1686
+01:45:07,319 --> 01:45:09,319
+R.java sizin
+
+1687
+01:45:09,319 --> 01:45:11,319
+chatten bir şey geldi sanırım.
+
+1688
+01:45:13,319 --> 01:45:15,319
+Evet [öğrenci] bize bilgi göndermiş
+
+1689
+01:45:15,319 --> 01:45:17,319
+chatten.
+
+1690
+01:45:17,319 --> 01:45:19,319
+Her bir resource
+
+1691
+01:45:19,319 --> 01:45:21,319
+file'inize
+
+1692
+01:45:21,319 --> 01:45:23,319
+bir resource içerisindeki komponentimize
+
+1693
+01:45:23,319 --> 01:45:25,319
+bir ID veriliyor.
+
+1694
+01:45:25,319 --> 01:45:27,319
+Bu aslında
+
+1695
+01:45:27,319 --> 01:45:29,319
+sizin kodlarınızla
+
+1696
+01:45:29,319 --> 01:45:31,319
+yazdığınız Java kodlar ya da CodeClean
+
+1697
+01:45:31,319 --> 01:45:33,319
+kodlarıyla resource file'lerinizin
+
+1698
+01:45:33,319 --> 01:45:35,319
+egzaman dosyalarınızın ya da
+
+1699
+01:45:35,319 --> 01:45:37,319
+media ses dosyalarınızın
+
+1700
+01:45:37,319 --> 01:45:39,319
+birleştirildiği
+
+1701
+01:45:41,319 --> 01:45:43,319
+bir
+
+1702
+01:45:43,319 --> 01:45:45,319
+tek bir dosya
+
+1703
+01:45:45,319 --> 01:45:47,319
+ve her şey belli
+
+1704
+01:45:47,319 --> 01:45:49,319
+ID'lerle ifade ediliyor.
+
+1705
+01:45:49,319 --> 01:45:51,319
+En son aktarılırken
+
+1706
+01:45:51,319 --> 01:45:53,319
+bu R.java
+
+1707
+01:45:53,319 --> 01:45:55,319
+üzerinden
+
+1708
+01:45:55,319 --> 01:45:57,319
+aslında ilişkiyi
+
+1709
+01:45:57,319 --> 01:45:59,319
+kurmuş oluyorsunuz iki tarafla
+
+1710
+01:45:59,319 --> 01:46:01,319
+ilgili olarak.
+
+1711
+01:46:01,319 --> 01:46:03,319
+Bu dosya üzerinde herhangi bir değişlik yapmamalısınız.
+
+1712
+01:46:03,319 --> 01:46:05,319
+Açarsanız, akarsanız
+
+1713
+01:46:05,319 --> 01:46:07,319
+bütün çünkü
+
+1714
+01:46:09,319 --> 01:46:11,319
+yapıyı bozma ihtimaliniz
+
+1715
+01:46:11,319 --> 01:46:13,319
+söz konusu. Bu otomatik olarak
+
+1716
+01:46:13,319 --> 01:46:15,319
+Android tarafından
+
+1717
+01:46:15,319 --> 01:46:17,319
+Android Studio tarafından
+
+1718
+01:46:17,319 --> 01:46:19,319
+bir dosya ama böyle bir dosyanın varlığını
+
+1719
+01:46:19,319 --> 01:46:21,319
+bilmek çok çok önemli.
+
+1720
+01:46:23,319 --> 01:46:25,319
+En son noktada resource'ların da
+
+1721
+01:46:25,319 --> 01:46:27,319
+işin içine katıldığı bir
+
+1722
+01:46:27,319 --> 01:46:29,319
+dosya oluşturuyor diyebiliriz.
+
+1723
+01:46:29,319 --> 01:46:31,319
+Biraz önce buradan
+
+1724
+01:46:31,319 --> 01:46:33,319
+bahsetmiştik.
+
+1725
+01:46:33,319 --> 01:46:35,319
+Her bir Android uygulamasının
+
+1726
+01:46:35,319 --> 01:46:37,319
+kendine ait bir
+
+1727
+01:46:39,319 --> 01:46:41,319
+virtual machine'i var ve her
+
+1728
+01:46:41,319 --> 01:46:43,319
+process burada diğerlerinden
+
+1729
+01:46:43,319 --> 01:46:45,319
+izolevi şekilde çalışıyor demiştik.
+
+1730
+01:46:45,319 --> 01:46:47,319
+Gelelim
+
+1731
+01:46:47,319 --> 01:46:49,319
+application komponatları.
+
+1732
+01:46:49,319 --> 01:46:51,319
+Olmazsa olmazlar.
+
+1733
+01:46:51,319 --> 01:46:53,319
+Her uygulama da olmak zorunda değil
+
+1734
+01:46:53,319 --> 01:46:55,319
+ama temel olarak
+
+1735
+01:46:55,319 --> 01:46:57,319
+kullanılan dört tane komponattan
+
+1736
+01:46:57,319 --> 01:46:59,319
+bahsettik.
+
+1737
+01:46:59,319 --> 01:47:01,319
+Aktiviteler, servisler,
+
+1738
+01:47:01,319 --> 01:47:03,319
+route receiver'lar ve contact provider'lar.
+
+1739
+01:47:03,319 --> 01:47:05,319
+Aktivite nedir diye sorayım.
+
+1740
+01:47:05,319 --> 01:47:16,630
+Mutlaka bir tanım yapabilecek
+
+1741
+01:47:16,630 --> 01:47:18,630
+kişi vardır içimizde.
+
+1742
+01:47:18,630 --> 01:47:28,920
+Evet [öğrenci].
+
+1743
+01:47:28,920 --> 01:47:30,920
+Tamam evinde evim var.
+
+1744
+01:47:30,920 --> 01:47:32,920
+Üstünde kullanıcı
+
+1745
+01:47:32,920 --> 01:47:34,920
+tuşa bastığında
+
+1746
+01:47:34,920 --> 01:47:36,920
+iletişim
+
+1747
+01:47:36,920 --> 01:47:38,920
+olduğunda kullanıcıdır.
+
+1748
+01:47:38,920 --> 01:47:39,920
+Bu aktiviteye
+
+1749
+01:47:39,920 --> 01:47:41,920
+girebilir misin?
+
+1750
+01:47:41,920 --> 01:47:43,920
+Şöyle sorayım her bir ekran
+
+1751
+01:47:43,920 --> 01:47:45,920
+görünür ekran
+
+1752
+01:47:45,920 --> 01:47:47,920
+her bir user interface
+
+1753
+01:47:47,920 --> 01:47:49,920
+bir ana ekran bir
+
+1754
+01:47:49,920 --> 01:47:51,920
+aktivite olarak adlandırılıyor
+
+1755
+01:47:53,920 --> 01:47:55,920
+Android'te. Şöyle bir örnek
+
+1756
+01:47:55,920 --> 01:47:57,920
+vermek gerekirse bir mail
+
+1757
+01:47:57,920 --> 01:47:59,920
+uygulamanız var.
+
+1758
+01:47:59,920 --> 01:48:01,920
+Login yaptığınız ekran
+
+1759
+01:48:01,920 --> 01:48:03,920
+mail client var diye
+
+1760
+01:48:03,920 --> 01:48:05,920
+Gmail'in uygulamasını düşünün.
+
+1761
+01:48:05,920 --> 01:48:07,920
+Login yaptığınız ekran bir
+
+1762
+01:48:07,920 --> 01:48:09,920
+aktivite. Login ekranından
+
+1763
+01:48:09,920 --> 01:48:11,920
+sonra gelen menülerine
+
+1764
+01:48:11,920 --> 01:48:13,920
+olduğu ekran bir aktivite.
+
+1765
+01:48:13,920 --> 01:48:15,920
+Mail'leri listelediğiniz
+
+1766
+01:48:15,920 --> 01:48:17,920
+ekran bir aktivite.
+
+1767
+01:48:17,920 --> 01:48:19,920
+Mail yazdığınız ekran
+
+1768
+01:48:19,920 --> 01:48:21,920
+bir aktivite. Yani her
+
+1769
+01:48:21,920 --> 01:48:23,920
+bir
+
+1770
+01:48:23,920 --> 01:48:25,920
+kullanıcı, görsel
+
+1771
+01:48:25,920 --> 01:48:27,920
+ara yüzü olan ve bir iş
+
+1772
+01:48:27,920 --> 01:48:29,920
+ekran, aktivite olarak
+
+1773
+01:48:29,920 --> 01:48:31,920
+tasarlanıyor ve
+
+1774
+01:48:31,920 --> 01:48:33,920
+bu aktiviteler arasında
+
+1775
+01:48:33,920 --> 01:48:35,920
+veri aktarımı yapılarak
+
+1776
+01:48:37,920 --> 01:48:39,920
+kullanıcı için bir
+
+1777
+01:48:39,920 --> 01:48:41,920
+uygulama tasarlıyorsunuz.
+
+1778
+01:48:41,920 --> 01:48:43,920
+Ama
+
+1779
+01:48:43,920 --> 01:48:45,920
+aktiviteler, söylediğim gibi
+
+1780
+01:48:45,920 --> 01:48:47,920
+kullanıcı ile doğrudan interaksiyonu
+
+1781
+01:48:47,920 --> 01:48:49,920
+olan, görsel
+
+1782
+01:48:49,920 --> 01:48:51,920
+bir layout olması
+
+1783
+01:48:51,920 --> 01:48:53,920
+zorunda olan yapılar.
+
+1784
+01:48:53,920 --> 01:48:55,920
+Öte yandan servisler
+
+1785
+01:48:55,920 --> 01:48:57,920
+arka planda çalışan,
+
+1786
+01:48:57,920 --> 01:48:59,920
+daha çok uzun
+
+1787
+01:48:59,920 --> 01:49:01,920
+vadeli ve
+
+1788
+01:49:01,920 --> 01:49:03,920
+ön yüz
+
+1789
+01:49:03,920 --> 01:49:05,920
+gerektirmeyen, bir
+
+1790
+01:49:05,920 --> 01:49:07,920
+ara yüz gerektirmeyen
+
+1791
+01:49:07,920 --> 01:49:09,920
+işlerin gerçekleştiği
+
+1792
+01:49:09,920 --> 01:49:11,920
+yapılardır.
+
+1793
+01:49:11,920 --> 01:49:13,920
+İşte örneğin
+
+1794
+01:49:13,920 --> 01:49:15,920
+arka planda bir tane
+
+1795
+01:49:15,920 --> 01:49:17,920
+download işlemi yapacaksınız.
+
+1796
+01:49:17,920 --> 01:49:19,920
+Bunun bir ön yüze ihtiyacı yok.
+
+1797
+01:49:19,920 --> 01:49:21,920
+İşlemi başlattığınızda
+
+1798
+01:49:21,920 --> 01:49:23,920
+download işlemini yapan bir
+
+1799
+01:49:23,920 --> 01:49:25,920
+servis olması yeterli.
+
+1800
+01:49:25,920 --> 01:49:27,920
+Öte yandan bir müzik dinliyorsunuz.
+
+1801
+01:49:27,920 --> 01:49:29,920
+Müziğin
+
+1802
+01:49:29,920 --> 01:49:31,920
+öndeki
+
+1803
+01:49:31,920 --> 01:49:33,920
+şarkı geçişlerini
+
+1804
+01:49:33,920 --> 01:49:35,920
+kontrol eden panel dışında
+
+1805
+01:49:35,920 --> 01:49:37,920
+müziğin çalmasını sağlayan
+
+1806
+01:49:37,920 --> 01:49:39,920
+bir arka planda bir servis
+
+1807
+01:49:39,920 --> 01:49:41,920
+yaratmanız yeterli.
+
+1808
+01:49:41,920 --> 01:49:43,920
+Tabii bu noktada
+
+1809
+01:49:43,920 --> 01:49:45,920
+şunu söylemekte fayda var.
+
+1810
+01:49:45,920 --> 01:49:47,920
+Her arka planda çalışan
+
+1811
+01:49:47,920 --> 01:49:49,920
+uygulama servisle mi
+
+1812
+01:49:49,920 --> 01:49:51,920
+yazılmalı?
+
+1813
+01:49:51,920 --> 01:49:53,920
+Hayır.
+
+1814
+01:49:53,920 --> 01:49:55,920
+Özellikle uzun
+
+1815
+01:49:55,920 --> 01:49:57,920
+yapılacak işler için
+
+1816
+01:49:57,920 --> 01:49:59,920
+servis kullanıyoruz.
+
+1817
+01:49:59,920 --> 01:50:01,920
+Daha kısa sürecek
+
+1818
+01:50:01,920 --> 01:50:03,920
+işler için farklı
+
+1819
+01:50:03,920 --> 01:50:05,920
+Android'in size
+
+1820
+01:50:05,920 --> 01:50:07,920
+sağladığı
+
+1821
+01:50:07,920 --> 01:50:09,920
+yardımcı komponatlar var.
+
+1822
+01:50:09,920 --> 01:50:11,920
+Onları da zamanı geldiğinde
+
+1823
+01:50:11,920 --> 01:50:13,920
+konuşacağız.
+
+1824
+01:50:13,920 --> 01:50:15,920
+Broadcast Receiver nedir?
+
+1825
+01:50:15,920 --> 01:50:19,420
+Hiç duydunuz mu?
+
+1826
+01:50:19,420 --> 01:50:22,670
+Onur?
+
+1827
+01:50:22,670 --> 01:50:24,670
+Android işletim sistemiyle
+
+1828
+01:50:24,670 --> 01:50:26,670
+uygulamalar arasındaki iletişimle
+
+1829
+01:50:26,670 --> 01:50:28,670
+ilgileniyor.
+
+1830
+01:50:28,670 --> 01:50:30,670
+Yanlış değil.
+
+1831
+01:50:30,670 --> 01:50:32,670
+Android işletim sistemiyle
+
+1832
+01:50:32,670 --> 01:50:34,670
+uygulamalar arasındaki
+
+1833
+01:50:34,670 --> 01:50:36,670
+iletişim artı
+
+1834
+01:50:36,670 --> 01:50:38,670
+uygulamalar
+
+1835
+01:50:38,670 --> 01:50:40,670
+arasındaki iletişimi de
+
+1836
+01:50:42,670 --> 01:50:44,670
+belli oranda
+
+1837
+01:50:44,670 --> 01:50:46,670
+kontrol eden ve izleyen
+
+1838
+01:50:46,670 --> 01:50:48,670
+bir yapı.
+
+1839
+01:50:48,670 --> 01:50:50,670
+Aslında bir nevi bilgisayar tarafındaki
+
+1840
+01:50:50,670 --> 01:50:52,670
+uygulamalara karşılık geliyor.
+
+1841
+01:50:52,670 --> 01:50:54,670
+Ne demek?
+
+1842
+01:50:54,670 --> 01:50:56,670
+Örneğin şarjınız belli bir seviyenin
+
+1843
+01:50:56,670 --> 01:50:58,670
+altına düştü.
+
+1844
+01:50:58,670 --> 01:51:00,670
+Telefonu şarja taktınız, şarjından
+
+1845
+01:51:00,670 --> 01:51:02,670
+çıkardınız, wifi'ya bağlandınız,
+
+1846
+01:51:02,670 --> 01:51:04,670
+uçak moduna geçtiniz.
+
+1847
+01:51:04,670 --> 01:51:06,670
+Bu tür
+
+1848
+01:51:06,670 --> 01:51:08,670
+durum değişikliği
+
+1849
+01:51:08,670 --> 01:51:10,670
+gerçekleşen
+
+1850
+01:51:10,670 --> 01:51:12,670
+anlarda durum değişikliğini
+
+1851
+01:51:12,670 --> 01:51:14,670
+işletim sistemi
+
+1852
+01:51:14,670 --> 01:51:16,670
+broadcast ederek
+
+1853
+01:51:16,670 --> 01:51:18,670
+iyi ki bir uygulamaların
+
+1854
+01:51:18,670 --> 01:51:20,670
+bu yönde takip eden
+
+1855
+01:51:20,670 --> 01:51:22,670
+o bilgiye ihtiyaç duyan
+
+1856
+01:51:22,670 --> 01:51:24,670
+uygulamaların aksiyon almasını sağlıyor.
+
+1857
+01:51:24,670 --> 01:51:26,670
+Böyle bir
+
+1858
+01:51:26,670 --> 01:51:28,670
+bilgi yayınladığında
+
+1859
+01:51:28,670 --> 01:51:30,670
+işletim sistemi, bunu takip eden
+
+1860
+01:51:30,670 --> 01:51:32,670
+uygulamalar bu bilgiyi alıp
+
+1861
+01:51:32,670 --> 01:51:34,670
+o bilgi gerçekleştiğindeki aksiyonu
+
+1862
+01:51:34,670 --> 01:51:36,670
+kodladılarsa
+
+1863
+01:51:36,670 --> 01:51:38,670
+o anda bir ilgili
+
+1864
+01:51:38,670 --> 01:51:40,670
+aksiyon gerçekleşiyor.
+
+1865
+01:51:40,670 --> 01:51:42,670
+Diyelim ki bir veri transferi gerçekleşecek
+
+1866
+01:51:42,670 --> 01:51:44,670
+ama bu veri transferi
+
+1867
+01:51:44,670 --> 01:51:46,670
+wifi'ye bağlandığınızda gerçekleşsin istiyorsunuz.
+
+1868
+01:51:46,670 --> 01:51:48,670
+Bunu da sizin sürekli
+
+1869
+01:51:48,670 --> 01:51:50,670
+takip etme şansınız yok.
+
+1870
+01:51:50,670 --> 01:51:52,670
+Uygulamaya bu kodu yazıyorsunuz.
+
+1871
+01:51:52,670 --> 01:51:54,670
+Arka planda işletim sistemi
+
+1872
+01:51:54,670 --> 01:51:56,670
+ben wifi'ye bağlandım
+
+1873
+01:51:56,670 --> 01:51:58,670
+sistem broadcast'ini
+
+1874
+01:51:58,670 --> 01:52:00,670
+ürettiği anda sizin uygulamanız
+
+1875
+01:52:00,670 --> 01:52:02,670
+backnet t-verileri
+
+1876
+01:52:02,670 --> 01:52:04,670
+transfer etmeye başlıyor.
+
+1877
+01:52:04,670 --> 01:52:06,670
+Aslında temel hikaye bu.
+
+1878
+01:52:06,670 --> 01:52:08,670
+[öğrenci]?
+
+1879
+01:52:08,670 --> 01:52:10,670
+Hocam, event listener gibi bir şey mi oluyor
+
+1880
+01:52:10,670 --> 01:52:12,670
+yani şimdi bu?
+
+1881
+01:52:12,670 --> 01:52:14,670
+Bir nevi
+
+1882
+01:52:14,670 --> 01:52:16,670
+olacağı bunu söyleyebiliriz.
+
+1883
+01:52:16,670 --> 01:52:18,670
+O yüzden interrupt örneğini de verdim.
+
+1884
+01:52:18,670 --> 01:52:20,670
+Donanımsal ve yazımsal olarak
+
+1885
+01:52:20,670 --> 01:52:22,670
+PC'lerde gerçekleşen
+
+1886
+01:52:22,670 --> 01:52:24,670
+işte klavyeden
+
+1887
+01:52:24,670 --> 01:52:26,670
+bir tuşa basıldı noktasında
+
+1888
+01:52:26,670 --> 01:52:28,670
+işletim sistemi.
+
+1889
+01:52:28,670 --> 01:52:30,670
+O tuşa basıldığını
+
+1890
+01:52:30,670 --> 01:52:32,670
+interrupt'a alır
+
+1891
+01:52:32,670 --> 01:52:34,670
+oradaki bilgiyi
+
+1892
+01:52:34,670 --> 01:52:36,670
+işte dış device'den
+
+1893
+01:52:36,670 --> 01:52:38,670
+içe aktarır
+
+1894
+01:52:38,670 --> 01:52:40,670
+bilgili yazımı. Bir a bir aynısı
+
+1895
+01:52:40,670 --> 01:52:42,670
+olmasa da bu mantığı gözetir.
+
+1896
+01:52:42,670 --> 01:52:44,670
+Sorunun devamı geliyor muydu?
+
+1897
+01:52:44,670 --> 01:52:46,670
+Yok hayır hocam.
+
+1898
+01:52:46,670 --> 01:52:48,670
+Tamam, az yer.
+
+1899
+01:52:48,670 --> 01:52:50,670
+Hocam, aktivitelerle
+
+1900
+01:52:50,670 --> 01:52:52,670
+alakalı bir sorum olacaktı.
+
+1901
+01:52:52,670 --> 01:52:54,670
+Mesela mail adresi ve şifrenin
+
+1902
+01:52:54,670 --> 01:52:56,670
+alındığı yerde o sayfa tek bir
+
+1903
+01:52:56,670 --> 01:52:58,670
+aktivite mi yoksa her bir
+
+1904
+01:52:58,670 --> 01:53:00,670
+doldurulan ve kullanıcıdan alan kısım bir
+
+1905
+01:53:00,670 --> 01:53:02,670
+aktivite mi sayılıyor?
+
+1906
+01:53:02,670 --> 01:53:04,670
+O sayfa tek bir aktivite.
+
+1907
+01:53:04,670 --> 01:53:06,670
+Oradaki
+
+1908
+01:53:06,670 --> 01:53:08,670
+o sayfanın içerisindeki
+
+1909
+01:53:08,670 --> 01:53:10,670
+tüm aksiyonlar o
+
+1910
+01:53:10,670 --> 01:53:12,670
+aktivite içerisinde gerçekleşiyor.
+
+1911
+01:53:12,670 --> 01:53:14,670
+Ama
+
+1912
+01:53:14,670 --> 01:53:16,670
+bazı
+
+1913
+01:53:16,670 --> 01:53:18,670
+ne diyelim
+
+1914
+01:53:18,670 --> 01:53:20,670
+yapılar var. Bir sayfayı
+
+1915
+01:53:20,670 --> 01:53:22,670
+aktiviteyi
+
+1916
+01:53:22,670 --> 01:53:24,670
+alt aktiviteleri bören
+
+1917
+01:53:24,670 --> 01:53:26,670
+bunları da fragmat diyoruz.
+
+1918
+01:53:26,670 --> 01:53:28,670
+Fragmatları kullanarak
+
+1919
+01:53:28,670 --> 01:53:30,670
+aktiviteleri
+
+1920
+01:53:30,670 --> 01:53:32,670
+bir daha bazıda alt
+
+1921
+01:53:32,670 --> 01:53:34,670
+aktiviteyi bölebiliyorsunuz.
+
+1922
+01:53:34,670 --> 01:53:36,670
+Biraz process thread arasındaki ilişkide
+
+1923
+01:53:36,670 --> 01:53:38,670
+benziyor.
+
+1924
+01:53:38,670 --> 01:53:43,390
+Böyle bir yapıda kullanılabiliyor.
+
+1925
+01:53:43,390 --> 01:53:45,390
+Rica ederim.
+
+1926
+01:53:45,390 --> 01:53:47,390
+Content Providerlere
+
+1927
+01:53:47,390 --> 01:53:49,390
+gelelim. Content Providerler nedir?
+
+1928
+01:53:49,390 --> 01:53:51,390
+Fikir üretmek
+
+1929
+01:53:51,390 --> 01:53:53,390
+isteyen ya da yorum
+
+1930
+01:53:53,390 --> 01:53:55,390
+yapmak isteyen. [öğrenci] teşekkür
+
+1931
+01:53:55,390 --> 01:53:57,390
+ederim yazdığım bilgi için.
+
+1932
+01:53:57,390 --> 01:54:07,229
+Content Provider
+
+1933
+01:54:07,229 --> 01:54:11,250
+adı üstünde aslında.
+
+1934
+01:54:11,250 --> 01:54:13,250
+Farklı bir kişi daha olursa iyi olur. Biraz daha
+
+1935
+01:54:13,250 --> 01:54:24,880
+zenginleştirilmiş bir dersi.
+
+1936
+01:54:24,880 --> 01:54:29,760
+Eliz Aydal, [öğrenci]
+
+1937
+01:54:29,760 --> 01:54:31,760
+[öğrenci]. Evet Hocam. Evet [öğrenci].
+
+1938
+01:54:31,760 --> 01:54:36,699
+Hocam rica etsem tekrar
+
+1939
+01:54:36,699 --> 01:54:38,699
+söyleyebilir misiniz?
+
+1940
+01:54:38,699 --> 01:54:40,699
+O zaman devam edelim başka bir arkadaşından.
+
+1941
+01:54:40,699 --> 01:54:48,590
+[öğrenci], [öğrenci], [öğrenci]
+
+1942
+01:54:48,590 --> 01:54:54,560
+Hocam benim fikrim yok
+
+1943
+01:54:54,560 --> 01:54:56,560
+maalesef. Content üzerinden
+
+1944
+01:54:56,560 --> 01:54:58,560
+yorum yaparsan Content Provider
+
+1945
+01:54:58,560 --> 01:55:05,229
+Content sağlayacak.
+
+1946
+01:55:05,229 --> 01:55:08,770
+Bilemedim.
+
+1947
+01:55:08,770 --> 01:55:10,770
+Onur sana söz vereyim.
+
+1948
+01:55:10,770 --> 01:55:12,770
+Hocam Content
+
+1949
+01:55:12,770 --> 01:55:14,770
+içerik yerine geçiyor. Aklıma
+
+1950
+01:55:14,770 --> 01:55:16,770
+veri ve veri yönetimi geldi.
+
+1951
+01:55:16,770 --> 01:55:18,770
+Eğer yanlış değilse. Evet.
+
+1952
+01:55:18,770 --> 01:55:20,770
+Aplikasyonlar arasındaki verilerin
+
+1953
+01:55:20,770 --> 01:55:22,770
+transferini ve
+
+1954
+01:55:22,770 --> 01:55:24,770
+paylaşımını yöneten
+
+1955
+01:55:24,770 --> 01:55:26,770
+yapılar.
+
+1956
+01:55:26,770 --> 01:55:28,770
+Content Providerler.
+
+1957
+01:55:30,770 --> 01:55:32,770
+Diğer bütün komponentler
+
+1958
+01:55:32,770 --> 01:55:34,770
+arasında
+
+1959
+01:55:34,770 --> 01:55:36,770
+Intent
+
+1960
+01:55:36,770 --> 01:55:38,770
+kullanılarak veri aktarımı yapılırken
+
+1961
+01:55:38,770 --> 01:55:40,770
+Aplikasyonlar arasındaki
+
+1962
+01:55:42,770 --> 01:55:44,770
+data paylaşım noktasında
+
+1963
+01:55:44,770 --> 01:55:46,770
+Content Providerlerden fayda
+
+1964
+01:55:46,770 --> 01:55:48,770
+yapacağız. Örneğin
+
+1965
+01:55:48,770 --> 01:55:50,770
+bir rehber
+
+1966
+01:55:50,770 --> 01:55:52,770
+noktasında rehbere ait bilgilerin
+
+1967
+01:55:52,770 --> 01:55:54,770
+paylaşımı. Content Providerler
+
+1968
+01:55:54,770 --> 01:55:56,770
+üzerinden gerçekleşecek.
+
+1969
+01:55:56,770 --> 01:55:58,770
+Otur, blok blok verilerin paylaşılması için
+
+1970
+01:55:58,770 --> 01:56:00,770
+kullanılıyor. Zamanı geldiğinde
+
+1971
+01:56:00,770 --> 01:56:02,770
+bu bütün
+
+1972
+01:56:02,770 --> 01:56:04,770
+temel yapı taşlarımı daha detaylı
+
+1973
+01:56:04,770 --> 01:56:06,770
+şekilde konuşuruz ama şu anda
+
+1974
+01:56:06,770 --> 01:56:08,770
+daha geliş olduğu için daha detaylı vermiyorum.
+
+1975
+01:56:08,770 --> 01:56:10,770
+Android Manifest
+
+1976
+01:56:10,770 --> 01:56:12,770
+Fire'ı da biraz önce konuştuk.
+
+1977
+01:56:12,770 --> 01:56:14,770
+Sizin uygulamanıza ait
+
+1978
+01:56:14,770 --> 01:56:16,770
+ayarların
+
+1979
+01:56:16,770 --> 01:56:18,770
+yapıldığı
+
+1980
+01:56:18,770 --> 01:56:20,770
+bütün
+
+1981
+01:56:20,770 --> 01:56:22,770
+temel yapı taşlarının
+
+1982
+01:56:22,770 --> 01:56:24,770
+ilişkilerinin kurulduğu, izinlerin
+
+1983
+01:56:24,770 --> 01:56:26,770
+alındığı yönetim
+
+1984
+01:56:26,770 --> 01:56:28,770
+dosyası.
+
+1985
+01:56:28,770 --> 01:56:30,770
+Buraya kullandığınız bütün
+
+1986
+01:56:30,770 --> 01:56:32,770
+blokları tanımlamak zorundasınız.
+
+1987
+01:56:32,770 --> 01:56:34,770
+Bir egzemel
+
+1988
+01:56:34,770 --> 01:56:36,770
+formatı ile
+
+1989
+01:56:36,770 --> 01:56:38,770
+ifade ediliyor. Bir de
+
+1990
+01:56:38,770 --> 01:56:40,770
+son olarak
+
+1991
+01:56:40,770 --> 01:56:42,770
+biraz önce bahsettiğimiz kaynak
+
+1992
+01:56:42,770 --> 01:56:44,770
+yani daha doğrusu risoslar var,
+
+1993
+01:56:44,770 --> 01:56:46,770
+kaynaklar var. Onlara da
+
+1994
+01:56:46,770 --> 01:56:48,770
+bakacağız. Şimdi
+
+1995
+01:56:48,770 --> 01:56:50,770
+aktivitelere geçelim. Bir
+
+1996
+01:56:50,770 --> 01:56:52,770
+aktivite bir
+
+1997
+01:56:52,770 --> 01:56:54,770
+kullanıcı ile etkileşime geçtiğimiz
+
+1998
+01:56:54,770 --> 01:56:56,770
+giriş noktasıdır
+
+1999
+01:56:56,770 --> 01:56:58,770
+olarak adlandırılıyor.
+
+2000
+01:56:58,770 --> 01:57:00,770
+Tek bir ekran olarak
+
+2001
+01:57:00,770 --> 01:57:02,770
+dizayn edilir bir
+
+2002
+01:57:02,770 --> 01:57:04,770
+aktivite. Buna örnek
+
+2003
+01:57:04,770 --> 01:57:06,770
+vermek gerekirse bir e-mail uygulamasına
+
+2004
+01:57:06,770 --> 01:57:08,770
+az önce hep birlikte detaylı
+
+2005
+01:57:08,770 --> 01:57:10,770
+bir şekilde konuştuk. Bir e-mail uygulamasında
+
+2006
+01:57:10,770 --> 01:57:12,770
+aslında bir daha fazla
+
+2007
+01:57:12,770 --> 01:57:14,770
+ekran var ve bu ekranların her birine
+
+2008
+01:57:14,770 --> 01:57:16,770
+birer aktiviteyi temsil ediyor.
+
+2009
+01:57:16,770 --> 01:57:18,770
+Peki buna başka ne örnek verebilirsiniz
+
+2010
+01:57:18,770 --> 01:57:20,770
+başka bir uygulama
+
+2011
+01:57:20,770 --> 01:57:24,210
+üzerinde? İşte şu
+
+2012
+01:57:24,210 --> 01:57:26,210
+öne uygulama var. Şunlar da aktivite olarak
+
+2013
+01:57:26,210 --> 01:57:28,210
+saklandırılabilir.
+
+2014
+01:57:28,210 --> 01:57:39,869
+Ne söyleyebilirsiniz?
+
+2015
+01:57:39,869 --> 01:57:41,869
+Evet [öğrenci].
+
+2016
+01:57:41,869 --> 01:57:43,869
+Dediğinizden yola çıkarak iç içe
+
+2017
+01:57:43,869 --> 01:57:45,869
+aktivitelerin olduğu bir örnek geldi
+
+2018
+01:57:45,869 --> 01:57:47,869
+aklıma. Mesela ya da iç içe de olmayabilir.
+
+2019
+01:57:47,869 --> 01:57:49,869
+Bankacılıkta
+
+2020
+01:57:49,869 --> 01:57:51,869
+bir bölümde sizin mevcut hesap
+
+2021
+01:57:51,869 --> 01:57:53,869
+bilgileriniz var ve bir yere tıkladığınızda
+
+2022
+01:57:53,869 --> 01:57:55,869
+geçmişe yönelik yaptığınız
+
+2023
+01:57:55,869 --> 01:57:57,869
+harcamaları gösteriyor.
+
+2024
+01:57:57,869 --> 01:57:59,869
+Farklı bir aktivite
+
+2025
+01:57:59,869 --> 01:58:01,869
+söylüyor mu bilmiyorum ama burada bir örnek
+
+2026
+01:58:01,869 --> 01:58:03,869
+olarak aynı sayfada farklı
+
+2027
+01:58:03,869 --> 01:58:05,869
+işlemler var. Evet.
+
+2028
+01:58:05,869 --> 01:58:07,869
+Bunlar sayılır tabii ki.
+
+2029
+01:58:07,869 --> 01:58:09,869
+Bankacılıklaması güzel bir örnek.
+
+2030
+01:58:09,869 --> 01:58:11,869
+Bir yerde hesap detayınızı
+
+2031
+01:58:11,869 --> 01:58:13,869
+görüyorsunuz bir sayfada.
+
+2032
+01:58:13,869 --> 01:58:15,869
+Bir sayfada EFT yapabiliyorsunuz.
+
+2033
+01:58:15,869 --> 01:58:17,869
+Bir sayfada havare yapabiliyorsunuz.
+
+2034
+01:58:17,869 --> 01:58:19,869
+Hepsi birer aktivite olarak
+
+2035
+01:58:19,869 --> 01:58:21,869
+dizayn ediliyor ve tasarlanıyor.
+
+2036
+01:58:21,869 --> 01:58:23,869
+Hepsi de kullanıcı ile bir interaksiyon
+
+2037
+01:58:23,869 --> 01:58:25,869
+içeriyor. [öğrenci]
+
+2038
+01:58:25,869 --> 01:58:27,869
+chatten yazmış yemek sepetinde
+
+2039
+01:58:27,869 --> 01:58:29,869
+mekanlarının istemendiği ekran.
+
+2040
+01:58:29,869 --> 01:58:31,869
+Aynen öyle.
+
+2041
+01:58:31,869 --> 01:58:33,869
+Havalimanı uygulaması düşündüğünüzde
+
+2042
+01:58:33,869 --> 01:58:35,869
+gelen
+
+2043
+01:58:35,869 --> 01:58:37,869
+uçaklar, giden uçaklar, saatleri
+
+2044
+01:58:37,869 --> 01:58:39,869
+inip inmedikleri, kalkış yapıp
+
+2045
+01:58:39,869 --> 01:58:41,869
+yapmadıkları bunların gösterildiği ekranları
+
+2046
+01:58:41,869 --> 01:58:43,869
+her biri birer aktivite olarak
+
+2047
+01:58:43,869 --> 01:58:45,869
+adlandırılabilir.
+
+2048
+01:58:45,869 --> 01:58:47,869
+[öğrenci] da bir şey söyleyecekti.
+
+2049
+01:58:49,869 --> 01:58:51,869
+Hocam bu Android Studio'da
+
+2050
+01:58:51,869 --> 01:58:53,869
+zaten uygulama açarken bize
+
+2051
+01:58:53,869 --> 01:58:55,869
+soruyor. Mesela harita aktivitesi olabilir.
+
+2052
+01:58:55,869 --> 01:58:57,869
+Reklam aktivitesi olabilir.
+
+2053
+01:58:59,869 --> 01:59:01,869
+Çok güzel. Çok güzel. O noktaya da
+
+2054
+01:59:01,869 --> 01:59:03,869
+bize
+
+2055
+01:59:03,869 --> 01:59:05,869
+pas olarak verdim için teşekkürler.
+
+2056
+01:59:05,869 --> 01:59:07,869
+Onu da bir aydınlatalım. Göreceksiniz
+
+2057
+01:59:07,869 --> 01:59:09,869
+Android Studio'yu açtığınız zaman
+
+2058
+01:59:09,869 --> 01:59:11,869
+[öğrenci]'un bahsettiği
+
+2059
+01:59:11,869 --> 01:59:13,869
+gibi size
+
+2060
+01:59:13,869 --> 01:59:15,869
+ne tür bir aktivite ekrana default
+
+2061
+01:59:15,869 --> 01:59:17,869
+olarak yaratmak istediğinizi soruyor.
+
+2062
+01:59:17,869 --> 01:59:19,869
+İşte blank activity var.
+
+2063
+01:59:19,869 --> 01:59:21,869
+Empty activity var.
+
+2064
+01:59:21,869 --> 01:59:23,869
+İşte biraz önce
+
+2065
+01:59:23,869 --> 01:59:25,869
+[öğrenci]'un söylediği gibi
+
+2066
+01:59:25,869 --> 01:59:27,869
+reklam aktivitesi, harita aktivitesi gibi
+
+2067
+01:59:27,869 --> 01:59:29,869
+böyle 7-8 tane, 10 tane
+
+2068
+01:59:29,869 --> 01:59:31,869
+default activity
+
+2069
+01:59:31,869 --> 01:59:33,869
+ekranları var. Bunlar hazır
+
+2070
+01:59:33,869 --> 01:59:35,869
+olarak geliyor.
+
+2071
+01:59:35,869 --> 01:59:37,869
+Bunlar eskiden 2-3 taneydi.
+
+2072
+01:59:37,869 --> 01:59:39,869
+Her geçen sene sayısı arttı.
+
+2073
+01:59:39,869 --> 01:59:41,869
+Şimdi
+
+2074
+01:59:41,869 --> 01:59:43,869
+buradan anlıyorsunuz ki
+
+2075
+01:59:43,869 --> 01:59:45,869
+sizin bu ders boyunca
+
+2076
+01:59:45,869 --> 01:59:47,869
+en çok, en fazla
+
+2077
+01:59:47,869 --> 01:59:49,869
+haşır neşir olacağınız komponent
+
+2078
+01:59:49,869 --> 01:59:51,869
+activity.
+
+2079
+01:59:51,869 --> 01:59:53,869
+O yüzden
+
+2080
+01:59:53,869 --> 01:59:55,869
+bir activity ekranının
+
+2081
+01:59:55,869 --> 01:59:57,869
+hem layout üre ilgilenmeniz gerekecek
+
+2082
+01:59:57,869 --> 01:59:59,869
+hem de oradan
+
+2083
+01:59:59,869 --> 02:00:01,869
+kullanıcılar aldığınız bilgi
+
+2084
+02:00:01,869 --> 02:00:03,869
+işlediğiniz ve
+
+2085
+02:00:03,869 --> 02:00:05,869
+o bilgiyi tekrar gösterdiğiniz
+
+2086
+02:00:05,869 --> 02:00:07,869
+bir yapı oluşturmanız gerekiyor.
+
+2087
+02:00:07,869 --> 02:00:09,869
+Yani bu veriyi
+
+2088
+02:00:09,869 --> 02:00:11,869
+arka planda saklayacağınız
+
+2089
+02:00:11,869 --> 02:00:13,869
+sınıflar yaratmanız gerekiyor.
+
+2090
+02:00:13,869 --> 02:00:15,869
+Model tarafını
+
+2091
+02:00:15,869 --> 02:00:17,869
+design etmeniz gerekiyor.
+
+2092
+02:00:17,869 --> 02:00:19,869
+Bu noktada
+
+2093
+02:00:19,869 --> 02:00:21,869
+tabi
+
+2094
+02:00:21,869 --> 02:00:23,869
+özellikle her bir
+
+2095
+02:00:23,869 --> 02:00:25,869
+activity için
+
+2096
+02:00:25,869 --> 02:00:27,869
+ekran tasarımı önem
+
+2097
+02:00:27,869 --> 02:00:29,869
+kazanıyor, layout tasarımı önem kazanıyor.
+
+2098
+02:00:31,869 --> 02:00:33,869
+Layoutlardan bahsetmişken
+
+2099
+02:00:33,869 --> 02:00:35,869
+çok farklı
+
+2100
+02:00:35,869 --> 02:00:37,869
+layoutlar var. Relative layout,
+
+2101
+02:00:37,869 --> 02:00:39,869
+linear layout, table layout,
+
+2102
+02:00:39,869 --> 02:00:41,869
+grid view gibi böyle
+
+2103
+02:00:41,869 --> 02:00:43,869
+ekranı farklı formatta kullanmanız
+
+2104
+02:00:43,869 --> 02:00:45,869
+sağlıyor. Bunlara ek olarak
+
+2105
+02:00:45,869 --> 02:00:47,869
+UI komponentler var.
+
+2106
+02:00:47,869 --> 02:00:49,869
+Edit text ondan sonra
+
+2107
+02:00:49,869 --> 02:00:51,869
+button, image
+
+2108
+02:00:51,869 --> 02:00:53,869
+button gibi.
+
+2109
+02:00:53,869 --> 02:00:55,869
+Bunları da
+
+2110
+02:00:55,869 --> 02:00:57,869
+özellikle önümüzdeki haftaya kadar
+
+2111
+02:00:57,869 --> 02:00:59,869
+bakarak gelmeniz
+
+2112
+02:00:59,869 --> 02:01:01,869
+fayda sağlayacaktır.
+
+2113
+02:01:01,869 --> 02:01:03,869
+Android Studio
+
+2114
+02:01:03,869 --> 02:01:05,869
+en son versiyonu kurmanızı
+
+2115
+02:01:05,869 --> 02:01:07,869
+rica ediyorum.
+
+2116
+02:01:07,869 --> 02:01:09,869
+Muhtemelen şu anda hazır
+
+2117
+02:01:09,869 --> 02:01:11,869
+durumdasınızdır. Kurmayanlar için son kez
+
+2118
+02:01:11,869 --> 02:01:13,869
+hatırlatma olsun.
+
+2119
+02:01:13,869 --> 02:01:15,869
+Seviye olarak da
+
+2120
+02:01:15,869 --> 02:01:17,869
+Android 8.0'a
+
+2121
+02:01:17,869 --> 02:01:19,869
+geliştirme yapacağım
+
+2122
+02:01:19,869 --> 02:01:21,869
+ders içerisinde. Sizin de
+
+2123
+02:01:21,869 --> 02:01:23,869
+bunu tercih etmeniz
+
+2124
+02:01:23,869 --> 02:01:25,869
+uyumluluk sağlayacaktır ama
+
+2125
+02:01:25,869 --> 02:01:27,869
+9, 10, 11
+
+2126
+02:01:27,869 --> 02:01:29,869
+tercih edenler varsa
+
+2127
+02:01:29,869 --> 02:01:31,869
+bu noktada herhangi bir
+
+2128
+02:01:31,869 --> 02:01:33,869
+kısıtlama yok. Ama bana
+
+2129
+02:01:33,869 --> 02:01:35,869
+ödev paylaşacağınız zaman
+
+2130
+02:01:35,869 --> 02:01:37,869
+genellikle 8
+
+2131
+02:01:37,869 --> 02:01:39,869
+üzerinde çalışacak versiyonları
+
+2132
+02:01:39,869 --> 02:01:41,869
+paylaşmanızı isteyeceğim.
+
+2133
+02:01:41,869 --> 02:01:43,869
+Bilinen en son
+
+2134
+02:01:43,869 --> 02:01:45,869
+sürüm stable olan 11
+
+2135
+02:01:45,869 --> 02:01:47,869
+geliştirme aşamasında
+
+2136
+02:01:47,869 --> 02:01:49,869
+olan da
+
+2137
+02:01:49,869 --> 02:01:51,869
+test aşamasında olan 12
+
+2138
+02:01:51,869 --> 02:01:53,869
+sürümün. Şimdi servislere geldik
+
+2139
+02:01:53,869 --> 02:01:55,869
+ama saatte 4 oldu. Bir
+
+2140
+02:01:55,869 --> 02:01:57,869
+10 dakika ara verelim. Saat 4'de
+
+2141
+02:01:57,869 --> 02:01:59,869
+10 gece yaklaşık olarak
+
+2142
+02:01:59,869 --> 02:02:01,869
+yarım saat 35 dakikalık daha
+
+2143
+02:02:01,869 --> 02:02:03,869
+dersimiz kalacak.
+
+2144
+02:02:03,869 --> 02:02:05,869
+Kaldığımız yerden devam edeceğiz.
+
+2145
+02:02:05,869 --> 02:11:34,659
+Teşekkür ederim. Evet arkadaşlar
+
+2146
+02:11:34,659 --> 02:11:38,000
+yeniden merhaba. Dersin son bölümüne
+
+2147
+02:11:38,000 --> 02:11:40,000
+başlıyoruz.
+
+2148
+02:11:40,000 --> 02:11:42,000
+Android programlamayla ilgili
+
+2149
+02:11:42,000 --> 02:11:44,000
+bilmeniz gereken temel bilgileri bugün
+
+2150
+02:11:44,000 --> 02:11:46,000
+size aktarıyorum.
+
+2151
+02:11:46,000 --> 02:11:48,000
+Şimdi
+
+2152
+02:11:48,000 --> 02:11:50,000
+ekran görüntüsünü yeniden paylaşacağım.
+
+2153
+02:11:50,000 --> 02:11:58,939
+Kendi görüntümünü de kapatıyorum.
+
+2154
+02:12:03,979 --> 02:12:05,979
+Tabi arka plan işlerini
+
+2155
+02:12:05,979 --> 02:12:07,979
+konuşuyoruz. Servis dediğiniz
+
+2156
+02:12:07,979 --> 02:12:09,979
+zaman arka plan işlerinden
+
+2157
+02:12:09,979 --> 02:12:11,979
+bahsediyoruz.
+
+2158
+02:12:11,979 --> 02:12:13,979
+Activity dediğiniz zaman kullanıcı ile
+
+2159
+02:12:13,979 --> 02:12:15,979
+interaksiyon olan ön
+
+2160
+02:12:15,979 --> 02:12:17,979
+yüzü olan işlerden bahsediyoruz.
+
+2161
+02:12:17,979 --> 02:12:19,979
+Arka plan işleri için sadece
+
+2162
+02:12:19,979 --> 02:12:21,979
+servisler yok.
+
+2163
+02:12:21,979 --> 02:12:23,979
+Birçok farklı
+
+2164
+02:12:23,979 --> 02:12:25,979
+yapı kullanacaksınız.
+
+2165
+02:12:25,979 --> 02:12:27,979
+Work manager gibi,
+
+2166
+02:12:27,979 --> 02:12:29,979
+job scheduler gibi.
+
+2167
+02:12:29,979 --> 02:12:31,979
+Zaman içerisinde
+
+2168
+02:12:31,979 --> 02:12:33,979
+arka plan işleri aslında
+
+2169
+02:12:33,979 --> 02:12:35,979
+kategorize edildi.
+
+2170
+02:12:35,979 --> 02:12:37,979
+Eskiden ağırlıklı olarak servisler
+
+2171
+02:12:37,979 --> 02:12:39,979
+çalıştırılıyordu.
+
+2172
+02:12:39,979 --> 02:12:41,979
+Ama bu
+
+2173
+02:12:41,979 --> 02:12:43,979
+ne diyelim
+
+2174
+02:12:43,979 --> 02:12:45,979
+yapıyı daha
+
+2175
+02:12:45,979 --> 02:12:47,979
+efektif oluşturabilmek
+
+2176
+02:12:47,979 --> 02:12:49,979
+adına farklı yeni
+
+2177
+02:12:49,979 --> 02:12:51,979
+komponentler oluşturuldu. Ama
+
+2178
+02:12:51,979 --> 02:12:53,979
+sonuçta bizde teknik olarak
+
+2179
+02:12:53,979 --> 02:12:55,979
+tamamen arka planlı
+
+2180
+02:12:55,979 --> 02:12:57,979
+çalışacak bir yapıdan
+
+2181
+02:12:57,979 --> 02:12:59,979
+bahsediyorsak da bir ara yüzü yok
+
+2182
+02:12:59,979 --> 02:13:01,979
+ise ve uzun sürede çalışacak
+
+2183
+02:13:01,979 --> 02:13:03,979
+bir yapı ise o zaman
+
+2184
+02:13:03,979 --> 02:13:05,979
+servis komponentini kullanıyor
+
+2185
+02:13:05,979 --> 02:13:07,979
+olacaksınız.
+
+2186
+02:13:07,979 --> 02:13:09,979
+Tabii
+
+2187
+02:13:09,979 --> 02:13:11,979
+servisin
+
+2188
+02:13:11,979 --> 02:13:13,979
+en büyük dez avantajı
+
+2189
+02:13:13,979 --> 02:13:15,979
+ilk
+
+2190
+02:13:15,979 --> 02:13:17,979
+kaynak ihtiyacı
+
+2191
+02:13:17,979 --> 02:13:19,979
+doğduğunda ortadan kaldırılma
+
+2192
+02:13:19,979 --> 02:13:21,979
+ihtimali olan yapı.
+
+2193
+02:13:21,979 --> 02:13:23,979
+O yüzden arka planla çalışan her türlü
+
+2194
+02:13:23,979 --> 02:13:25,979
+uygulama
+
+2195
+02:13:25,979 --> 02:13:27,979
+komponenti
+
+2196
+02:13:27,979 --> 02:13:29,979
+bizim için
+
+2197
+02:13:29,979 --> 02:13:31,979
+Android tarafından feda edilebilir bir yapı olarak
+
+2198
+02:13:31,979 --> 02:13:33,979
+karşınızda çıkıyor.
+
+2199
+02:13:33,979 --> 02:13:35,979
+İşte RAM diyelim ki
+
+2200
+02:13:35,979 --> 02:13:37,979
+yetmedi o anda
+
+2201
+02:13:37,979 --> 02:13:39,979
+ilk feda edilecek yapılardan biri
+
+2202
+02:13:39,979 --> 02:13:41,979
+arka planla çalışan servisler
+
+2203
+02:13:41,979 --> 02:13:43,979
+ve herhangi bir
+
+2204
+02:13:43,979 --> 02:13:45,979
+ön yüzde olmadığı için
+
+2205
+02:13:45,979 --> 02:13:47,979
+doğrudan kullanıcının kritik bir işini halletmediğini
+
+2206
+02:13:47,979 --> 02:13:49,979
+varsaydığımız yapılar olarak
+
+2207
+02:13:49,979 --> 02:13:51,979
+karşınızda çıkıyor.
+
+2208
+02:13:51,979 --> 02:13:53,979
+Gelin broadcast receiverlara
+
+2209
+02:13:53,979 --> 02:13:55,979
+biraz önce interrupt benzetmesi
+
+2210
+02:13:55,979 --> 02:13:57,979
+yapmıştım hatırlarsanız.
+
+2211
+02:13:57,979 --> 02:13:59,979
+Bu noktada
+
+2212
+02:13:59,979 --> 02:14:01,979
+sistem seviyesinde
+
+2213
+02:14:01,979 --> 02:14:03,979
+ya da uygulamalar arası
+
+2214
+02:14:03,979 --> 02:14:05,979
+bilgi paylaşımını
+
+2215
+02:14:05,979 --> 02:14:07,979
+yönetmek adına ortaya
+
+2216
+02:14:07,979 --> 02:14:09,979
+atılmış bir komponent.
+
+2217
+02:14:09,979 --> 02:14:11,979
+Bunlar
+
+2218
+02:14:11,979 --> 02:14:13,979
+genelde
+
+2219
+02:14:13,979 --> 02:14:15,979
+internetler aracılığıyla
+
+2220
+02:14:15,979 --> 02:14:17,979
+sistem
+
+2221
+02:14:17,979 --> 02:14:19,979
+tarafından ya da
+
+2222
+02:14:19,979 --> 02:14:21,979
+uygulama tarafından bir bilgi
+
+2223
+02:14:21,979 --> 02:14:23,979
+havuza atılıyor.
+
+2224
+02:14:23,979 --> 02:14:25,979
+Havuzda register olan o bilgiyi
+
+2225
+02:14:25,979 --> 02:14:27,979
+o özel bilgiyi takip etmek isteyen
+
+2226
+02:14:27,979 --> 02:14:29,979
+uygulamalar da bundan
+
+2227
+02:14:29,979 --> 02:14:31,979
+anında haberdar oluyor.
+
+2228
+02:14:31,979 --> 02:14:33,979
+Bu sayede
+
+2229
+02:14:33,979 --> 02:14:35,979
+hem sistemle
+
+2230
+02:14:35,979 --> 02:14:37,979
+uygulamalar arası hem de
+
+2231
+02:14:37,979 --> 02:14:39,979
+uygulamaların kendi arasında bir
+
+2232
+02:14:39,979 --> 02:14:41,979
+haberleşme mekanizması kurmuş oluyorsunuz.
+
+2233
+02:14:41,979 --> 02:14:43,979
+Bu sayede
+
+2234
+02:14:43,979 --> 02:14:45,979
+bütün
+
+2235
+02:14:45,979 --> 02:14:47,979
+gelişen eventlerden
+
+2236
+02:14:47,979 --> 02:14:49,979
+ya da telefonunuzun state
+
+2237
+02:14:49,979 --> 02:14:51,979
+değişiminden haberdar oluyorsunuz.
+
+2238
+02:14:51,979 --> 02:14:53,979
+Broadcast receiverlar da bunun
+
+2239
+02:14:53,979 --> 02:14:55,979
+bir yerini sağlayalım.
+
+2240
+02:14:55,979 --> 02:14:57,979
+Content providerlara
+
+2241
+02:14:57,979 --> 02:14:59,979
+gelince
+
+2242
+02:14:59,979 --> 02:15:01,979
+daha çok
+
+2243
+02:15:01,979 --> 02:15:03,979
+uygulamaların
+
+2244
+02:15:03,979 --> 02:15:05,979
+özellikle veri
+
+2245
+02:15:05,979 --> 02:15:07,979
+paylaşımın söz konusuysa
+
+2246
+02:15:07,979 --> 02:15:09,979
+kullandıkları yapılar.
+
+2247
+02:15:09,979 --> 02:15:11,979
+Bu sayede
+
+2248
+02:15:11,979 --> 02:15:13,979
+örnek veriyorum
+
+2249
+02:15:13,979 --> 02:15:15,979
+galerideki
+
+2250
+02:15:15,979 --> 02:15:17,979
+resimleriniz
+
+2251
+02:15:17,979 --> 02:15:19,979
+telefon rehberiniz
+
+2252
+02:15:19,979 --> 02:15:21,979
+mesajlarınız
+
+2253
+02:15:21,979 --> 02:15:23,979
+diğer
+
+2254
+02:15:23,979 --> 02:15:25,979
+uygulamalar tarafından
+
+2255
+02:15:25,979 --> 02:15:27,979
+izinler, gerekli izinler
+
+2256
+02:15:27,979 --> 02:15:29,979
+ortaya konmak şartıyla
+
+2257
+02:15:29,979 --> 02:15:31,979
+paylaşılmış oluyor
+
+2258
+02:15:31,979 --> 02:15:33,979
+ve content providerlar
+
+2259
+02:15:33,979 --> 02:15:35,979
+ile tasarladığınız
+
+2260
+02:15:35,979 --> 02:15:37,979
+uygulamanın bu ilgili verilere
+
+2261
+02:15:37,979 --> 02:15:39,979
+ulaşmasını sağlıyorsunuz.
+
+2262
+02:15:39,979 --> 02:15:44,859
+Şimdi
+
+2263
+02:15:44,859 --> 02:15:46,859
+gelelim intante.
+
+2264
+02:15:46,859 --> 02:15:48,859
+Şimdi intant
+
+2265
+02:15:48,859 --> 02:15:50,859
+bizim için
+
+2266
+02:15:50,859 --> 02:15:52,859
+Türkçe karşılığı niyet
+
+2267
+02:15:52,859 --> 02:15:54,859
+ama
+
+2268
+02:15:54,859 --> 02:15:56,859
+buradaki
+
+2269
+02:15:56,859 --> 02:15:58,859
+bizim için
+
+2270
+02:15:58,859 --> 02:16:00,859
+kullanışlılığı
+
+2271
+02:16:00,859 --> 02:16:02,859
+taşıdığı mesaj
+
+2272
+02:16:02,859 --> 02:16:04,859
+kaynaklı.
+
+2273
+02:16:04,859 --> 02:16:06,859
+Özellikle
+
+2274
+02:16:06,859 --> 02:16:08,859
+aktiviteler arasında
+
+2275
+02:16:08,859 --> 02:16:10,859
+başta olmak üzere servisler ve
+
+2276
+02:16:10,859 --> 02:16:12,859
+broadcast receiverlar
+
+2277
+02:16:12,859 --> 02:16:14,859
+tarafından üretilebilen
+
+2278
+02:16:14,859 --> 02:16:16,859
+intant yapısı bunlar
+
+2279
+02:16:16,859 --> 02:16:18,859
+arasında mesajların
+
+2280
+02:16:18,859 --> 02:16:20,859
+baktırılarak
+
+2281
+02:16:20,859 --> 02:16:22,859
+örneğin login
+
+2282
+02:16:22,859 --> 02:16:24,859
+sayfasından
+
+2283
+02:16:24,859 --> 02:16:26,859
+başka bir sayfaya geçeceğiniz zaman
+
+2284
+02:16:26,859 --> 02:16:28,859
+login olduktan sonra
+
+2285
+02:16:28,859 --> 02:16:30,859
+sizin yetkilerinize ait
+
+2286
+02:16:30,859 --> 02:16:32,860
+ilgili modüllerin
+
+2287
+02:16:32,860 --> 02:16:34,860
+görüntülenmesini bu sayede
+
+2288
+02:16:34,860 --> 02:16:36,860
+gerçekleştiriyorsunuz.
+
+2289
+02:16:36,860 --> 02:16:38,860
+Ya da
+
+2290
+02:16:38,860 --> 02:16:40,860
+misal
+
+2291
+02:16:40,860 --> 02:16:42,860
+siz bir listeleme
+
+2292
+02:16:42,860 --> 02:16:44,860
+yapmak istiyorsunuz ama bu listelemeyi
+
+2293
+02:16:44,860 --> 02:16:46,860
+işte diyelim edza
+
+2294
+02:16:46,860 --> 02:16:48,860
+siz en yakın edzaleler arasında yapmak istiyorsunuz
+
+2295
+02:16:48,860 --> 02:16:50,860
+oradan il ilçe seçiyorsunuz
+
+2296
+02:16:50,860 --> 02:16:52,860
+size bir sonraki sayfada
+
+2297
+02:16:52,860 --> 02:16:54,860
+o il ve ilçeye
+
+2298
+02:16:54,860 --> 02:16:56,860
+uygun edzaleler geliyor.
+
+2299
+02:16:56,860 --> 02:16:58,860
+İşte şimdi en son
+
+2300
+02:16:58,860 --> 02:17:00,860
+covid ile ilgili aşı
+
+2301
+02:17:00,860 --> 02:17:02,860
+uygulaması var
+
+2302
+02:17:02,860 --> 02:17:04,860
+oradan randevu alacaksınız diyelim
+
+2303
+02:17:04,860 --> 02:17:06,860
+işte
+
+2304
+02:17:06,860 --> 02:17:08,860
+aile hekiminizi seçiyorsunuz
+
+2305
+02:17:08,860 --> 02:17:10,860
+size o aile hekimine ait olan
+
+2306
+02:17:10,860 --> 02:17:12,860
+randevu takvimi geliyor
+
+2307
+02:17:12,860 --> 02:17:14,860
+bu yaptığınız bütün
+
+2308
+02:17:14,860 --> 02:17:16,860
+seçimler aslında
+
+2309
+02:17:16,860 --> 02:17:18,860
+arka planda
+
+2310
+02:17:18,860 --> 02:17:20,860
+sizin yeni
+
+2311
+02:17:20,860 --> 02:17:22,860
+getireceğiniz bilgilerin
+
+2312
+02:17:22,860 --> 02:17:24,860
+ne olması gerektiğini etkileyen seçimler
+
+2313
+02:17:26,860 --> 02:17:28,860
+bir sayfadan başka bir sayfaya da
+
+2314
+02:17:28,860 --> 02:17:30,860
+bu bilgilerin
+
+2315
+02:17:30,860 --> 02:17:32,860
+aktarılması gerekiyor
+
+2316
+02:17:32,860 --> 02:17:34,860
+bunu yapan da intent
+
+2317
+02:17:34,860 --> 02:17:36,860
+asenkronuz
+
+2318
+02:17:36,860 --> 02:17:38,860
+yani asenkron bir mesaj
+
+2319
+02:17:38,860 --> 02:17:40,860
+olarak da adlandırabilirsiniz
+
+2320
+02:17:40,860 --> 02:17:42,860
+bunu
+
+2321
+02:17:42,860 --> 02:17:44,860
+tabi sadece
+
+2322
+02:17:44,860 --> 02:17:46,860
+bilginin ne olacağı yönünde
+
+2323
+02:17:46,860 --> 02:17:48,860
+bir yapı sağlamıyor
+
+2324
+02:17:48,860 --> 02:17:50,860
+aynı zamanda
+
+2325
+02:17:50,860 --> 02:17:52,860
+intentin
+
+2326
+02:17:52,860 --> 02:17:54,860
+çeşitleri de var ve
+
+2327
+02:17:54,860 --> 02:17:56,860
+o intentle alınacak
+
+2328
+02:17:56,860 --> 02:17:58,860
+aksiyonlara da siz
+
+2329
+02:17:58,860 --> 02:18:00,860
+müdahale etme şansına sadece
+
+2330
+02:18:00,860 --> 02:18:02,860
+siz örneğin bir URL
+
+2331
+02:18:02,860 --> 02:18:04,860
+görüntülemek istiyorsunuz
+
+2332
+02:18:04,860 --> 02:18:06,860
+bu URL'in
+
+2333
+02:18:06,860 --> 02:18:08,860
+ne tür bir uygulamada
+
+2334
+02:18:08,860 --> 02:18:10,860
+açılması gerektiğini aslında siz biliyorsunuz
+
+2335
+02:18:10,860 --> 02:18:12,860
+örneğin web browser gerekiyor bunun için
+
+2336
+02:18:12,860 --> 02:18:14,860
+ama onlarca
+
+2337
+02:18:14,860 --> 02:18:16,860
+yüzlerce uygulama var telefonunuzda
+
+2338
+02:18:16,860 --> 02:18:18,860
+bunların bazılarının URL
+
+2339
+02:18:18,860 --> 02:18:20,860
+açma yeteneği yok bir çoğunluğu
+
+2340
+02:18:20,860 --> 02:18:22,860
+sadece belli
+
+2341
+02:18:22,860 --> 02:18:24,860
+URL açma yeteneğine sahip olanlar var ya da
+
+2342
+02:18:24,860 --> 02:18:26,860
+bir resim görmek istiyorsunuz
+
+2343
+02:18:26,860 --> 02:18:28,860
+JPEG dosyasını
+
+2344
+02:18:28,860 --> 02:18:30,860
+ya da işte ilgili resim dosyasını
+
+2345
+02:18:30,860 --> 02:18:32,860
+her uygulamada açamazsınız
+
+2346
+02:18:32,860 --> 02:18:34,860
+o yüzden siz
+
+2347
+02:18:34,860 --> 02:18:36,860
+intenti
+
+2348
+02:18:36,860 --> 02:18:38,860
+hem nasıl bir formattaki
+
+2349
+02:18:38,860 --> 02:18:40,860
+dosyaya müdahale etmek
+
+2350
+02:18:40,860 --> 02:18:42,860
+istediğinizi yani
+
+2351
+02:18:42,860 --> 02:18:44,860
+onun nasıl görüntülenmesi ya da
+
+2352
+02:18:44,860 --> 02:18:46,860
+nerede görüntülenmesi istediğini söylüyorsunuz
+
+2353
+02:18:46,860 --> 02:18:48,860
+hem de
+
+2354
+02:18:48,860 --> 02:18:50,860
+bununla ilgili
+
+2355
+02:18:50,860 --> 02:18:52,860
+detay bilgiyi intentin
+
+2356
+02:18:52,860 --> 02:18:54,860
+içerisine yüklüyorsunuz
+
+2357
+02:18:54,860 --> 02:18:56,860
+karşı tarafa gönderdiğinizde
+
+2358
+02:18:56,860 --> 02:18:58,860
+explicit ve implicit intent
+
+2359
+02:18:58,860 --> 02:19:00,860
+kavramları var göreceksiniz
+
+2360
+02:19:00,860 --> 02:19:02,860
+explicit intent
+
+2361
+02:19:02,860 --> 02:19:04,860
+doğrudan
+
+2362
+02:19:04,860 --> 02:19:06,860
+gitmesini istediğiniz
+
+2363
+02:19:06,860 --> 02:19:08,860
+activity'nin adresini veriyorsunuz
+
+2364
+02:19:08,860 --> 02:19:10,860
+implicit intent'te ise
+
+2365
+02:19:10,860 --> 02:19:12,860
+bir iş yapmak istediğinizi
+
+2366
+02:19:12,860 --> 02:19:14,860
+beyan ediyorsunuz
+
+2367
+02:19:14,860 --> 02:19:16,860
+bu işi beyan ettikten sonra
+
+2368
+02:19:16,860 --> 02:19:18,860
+nelerini yapabileceğini de
+
+2369
+02:19:18,860 --> 02:19:20,860
+işletim sistemine bırakmış oluyorsunuz
+
+2370
+02:19:20,860 --> 02:19:22,860
+örneğin URL'e tıkladığınız
+
+2371
+02:19:22,860 --> 02:19:24,860
+URL'e tıkladığınızda bunu
+
+2372
+02:19:24,860 --> 02:19:26,860
+bir sayfada açmak istiyorsunuz
+
+2373
+02:19:26,860 --> 02:19:28,860
+web browser'a ihtiyacınız var
+
+2374
+02:19:28,860 --> 02:19:30,860
+o zaman size
+
+2375
+02:19:30,860 --> 02:19:32,860
+bunu yapabilecek olanların seçeneklere çıkıyor
+
+2376
+02:19:32,860 --> 02:19:34,860
+işte Chrome çıkıyor
+
+2377
+02:19:34,860 --> 02:19:36,860
+Safari çıkıyor
+
+2378
+02:19:36,860 --> 02:19:38,860
+Opera çıkıyor
+
+2379
+02:19:38,860 --> 02:19:40,860
+ya da bir resim ya da bir mail mesela
+
+2380
+02:19:40,860 --> 02:19:42,860
+göndermek istiyorsunuz
+
+2381
+02:19:42,860 --> 02:19:44,860
+size mail client'ların listesi çıkıyor
+
+2382
+02:19:44,860 --> 02:19:46,860
+kendi telefonunuzun
+
+2383
+02:19:46,860 --> 02:19:48,860
+lokal client olabilir
+
+2384
+02:19:48,860 --> 02:19:50,860
+ya da indirdiğiniz bir Gmail
+
+2385
+02:19:50,860 --> 02:19:52,860
+Hatmail gibi mail provider'ların
+
+2386
+02:19:52,860 --> 02:19:54,860
+bir client olabilir
+
+2387
+02:19:54,860 --> 02:19:56,860
+işte bu noktada
+
+2388
+02:19:56,860 --> 02:19:58,860
+intent'in içerisindeki içerik
+
+2389
+02:19:58,860 --> 02:20:00,860
+hangi
+
+2390
+02:20:00,860 --> 02:20:02,860
+application'lerin
+
+2391
+02:20:02,860 --> 02:20:04,860
+yapmak istediğiniz işi yapabileceğini
+
+2392
+02:20:04,860 --> 02:20:06,860
+de döndürüyor
+
+2393
+02:20:08,860 --> 02:20:10,860
+Manifest
+
+2394
+02:20:10,860 --> 02:20:12,860
+üzerinde biraz konuşalım
+
+2395
+02:20:12,860 --> 02:20:14,860
+Manifest
+
+2396
+02:20:14,860 --> 02:20:16,860
+aslında sizin en kritik
+
+2397
+02:20:16,860 --> 02:20:18,860
+dosyalarınızdan
+
+2398
+02:20:18,860 --> 02:20:20,860
+bir tanesi
+
+2399
+02:20:20,860 --> 02:20:22,860
+Manifest yoksa
+
+2400
+02:20:22,860 --> 02:20:24,860
+sizin aslında
+
+2401
+02:20:24,860 --> 02:20:26,860
+teknik olarak bir uygulamanız da yok demektir
+
+2402
+02:20:26,860 --> 02:20:28,860
+çünkü bütün ayar bilgileri burada saklanıyor
+
+2403
+02:20:28,860 --> 02:20:30,860
+bütün
+
+2404
+02:20:30,860 --> 02:20:32,860
+deklarasyonlarınızı
+
+2405
+02:20:32,860 --> 02:20:34,860
+ilgili
+
+2406
+02:20:34,860 --> 02:20:36,860
+komponentlere ait
+
+2407
+02:20:36,860 --> 02:20:38,860
+burada yapıyorsunuz ve belli bir hieraçta yapıyorsunuz
+
+2408
+02:20:38,860 --> 02:20:40,860
+bunu
+
+2409
+02:20:40,860 --> 02:20:42,860
+kullanıcıdan
+
+2410
+02:20:42,860 --> 02:20:44,860
+alınması gereken
+
+2411
+02:20:44,860 --> 02:20:46,860
+talep edilmesi gereken
+
+2412
+02:20:46,860 --> 02:20:48,860
+bazı izinler varsa
+
+2413
+02:20:48,860 --> 02:20:50,860
+ki bunlar statik
+
+2414
+02:20:50,860 --> 02:20:52,860
+yani uygulama kurulurken
+
+2415
+02:20:52,860 --> 02:20:54,860
+almamız gereken
+
+2416
+02:20:54,860 --> 02:20:56,860
+izinler
+
+2417
+02:20:56,860 --> 02:20:58,860
+onları talep ediyorsunuz
+
+2418
+02:20:58,860 --> 02:21:00,860
+bazılarını da
+
+2419
+02:21:00,860 --> 02:21:02,860
+kod içerisinde dinamik olarak etmeniz gerekiyor
+
+2420
+02:21:02,860 --> 02:21:04,860
+bu birazcık Android'in
+
+2421
+02:21:04,860 --> 02:21:06,860
+izin mekanizmasını
+
+2422
+02:21:06,860 --> 02:21:08,860
+irdeleyerek görebileceğiniz bir
+
+2423
+02:21:08,860 --> 02:21:10,860
+yapı
+
+2424
+02:21:10,860 --> 02:21:12,860
+sonuçta
+
+2425
+02:21:12,860 --> 02:21:14,860
+uygulamanızın çalışacağı en düşük
+
+2426
+02:21:14,860 --> 02:21:16,860
+API level'dan uygulamanızın
+
+2427
+02:21:16,860 --> 02:21:18,860
+hedeflediği API level'a kadar
+
+2428
+02:21:18,860 --> 02:21:20,860
+birçok
+
+2429
+02:21:20,860 --> 02:21:22,860
+tanımlamayı yapıyorsunuz
+
+2430
+02:21:22,860 --> 02:21:24,860
+öte yandan
+
+2431
+02:21:24,860 --> 02:21:26,860
+bir telefonda belli bir
+
+2432
+02:21:26,860 --> 02:21:28,860
+donanımsal
+
+2433
+02:21:30,860 --> 02:21:32,860
+diyelim
+
+2434
+02:21:32,860 --> 02:21:34,860
+donanın parçası yoksa
+
+2435
+02:21:34,860 --> 02:21:36,860
+belli bir sensör yoksa
+
+2436
+02:21:36,860 --> 02:21:38,860
+ya da kamerası
+
+2437
+02:21:38,860 --> 02:21:40,860
+yeterli çözününe sahip değilse
+
+2438
+02:21:40,860 --> 02:21:42,860
+o zaman buraya yapacağınız deklarasyonla
+
+2439
+02:21:44,860 --> 02:21:46,860
+eğer o uygulamanın o telefonda
+
+2440
+02:21:46,860 --> 02:21:48,860
+olumsuz bir deneyim yaşatacağını
+
+2441
+02:21:48,860 --> 02:21:50,860
+düşünüyorsanız o telefonda
+
+2442
+02:21:50,860 --> 02:21:52,860
+uygulamanızın açılmasının önüne geçiyorsunuz
+
+2443
+02:21:52,860 --> 02:21:54,860
+markette giren kişi
+
+2444
+02:21:54,860 --> 02:21:56,860
+telefonunun
+
+2445
+02:21:56,860 --> 02:21:58,860
+yetersiz olması durumunda
+
+2446
+02:21:58,860 --> 02:22:00,860
+sizin yazdığınız uygulamayı görmeyebiliyor
+
+2447
+02:22:00,860 --> 02:22:02,860
+yaptığınız tanımlamayla
+
+2448
+02:22:02,860 --> 02:22:04,860
+bunlar manifestin
+
+2449
+02:22:04,860 --> 02:22:06,860
+önemli güçleri
+
+2450
+02:22:06,860 --> 02:22:08,860
+o yüzden
+
+2451
+02:22:08,860 --> 02:22:10,860
+manifestle ilgili bu tür yetenekleri
+
+2452
+02:22:10,860 --> 02:22:12,860
+iyi tanımak ve
+
+2453
+02:22:12,860 --> 02:22:16,659
+analiz etmek gerekiyor
+
+2454
+02:22:16,659 --> 02:22:18,659
+manifestte
+
+2455
+02:22:18,659 --> 02:22:20,659
+örnek
+
+2456
+02:22:20,659 --> 02:22:22,659
+koltu parçaları
+
+2457
+02:22:22,659 --> 02:22:24,659
+XML dosyası olduğu için
+
+2458
+02:22:24,659 --> 02:22:26,659
+burada en dışta
+
+2459
+02:22:26,659 --> 02:22:28,659
+manifest
+
+2460
+02:22:28,659 --> 02:22:30,659
+olacak şekilde
+
+2461
+02:22:30,659 --> 02:22:32,659
+içeri doğru application ve
+
+2462
+02:22:32,659 --> 02:22:34,659
+activityler
+
+2463
+02:22:34,659 --> 02:22:36,659
+serpiştirilmiş durumda
+
+2464
+02:22:36,659 --> 02:22:38,659
+tek bir application
+
+2465
+02:22:38,659 --> 02:22:40,659
+tan bahsediyoruz ve birden fazla
+
+2466
+02:22:40,659 --> 02:22:42,659
+activity söz konusu
+
+2467
+02:22:42,659 --> 02:22:44,659
+olabilir burada
+
+2468
+02:22:44,659 --> 02:22:46,659
+işte kameranın olup olmaması
+
+2469
+02:22:46,659 --> 02:22:48,659
+özelliğini
+
+2470
+02:22:48,659 --> 02:22:50,659
+uses feature tagiyle
+
+2471
+02:22:50,659 --> 02:22:52,659
+kontrol ediyorsunuz
+
+2472
+02:22:52,659 --> 02:22:54,659
+activity'nin
+
+2473
+02:22:54,659 --> 02:22:56,659
+hangi
+
+2474
+02:22:56,659 --> 02:22:58,659
+işleri yapabileceğini
+
+2475
+02:22:58,659 --> 02:23:00,659
+intent filter ile
+
+2476
+02:23:00,659 --> 02:23:02,659
+söylüyorsunuz
+
+2477
+02:23:02,659 --> 02:23:04,659
+burada şunu söylüyorsunuz
+
+2478
+02:23:04,659 --> 02:23:06,659
+eğer sizin yazdığınız uygulama bir
+
+2479
+02:23:06,659 --> 02:23:08,659
+resmi görüntüleyebilme
+
+2480
+02:23:08,659 --> 02:23:10,659
+yeteneğinin sahipsi
+
+2481
+02:23:10,659 --> 02:23:12,659
+o zaman buraya
+
+2482
+02:23:12,659 --> 02:23:14,659
+intent filter'ın arasına action'ın altına
+
+2483
+02:23:14,659 --> 02:23:16,659
+bunu beyan etmeniz gerekiyor
+
+2484
+02:23:16,659 --> 02:23:18,659
+yani benim uygulamam da
+
+2485
+02:23:18,659 --> 02:23:20,659
+galerideki ya da herhangi bir resmi
+
+2486
+02:23:20,659 --> 02:23:22,659
+açık gösterebilir ya da
+
+2487
+02:23:22,659 --> 02:23:24,659
+benim uygulamam bir mail client'tır
+
+2488
+02:23:24,659 --> 02:23:26,659
+gönderebilir
+
+2489
+02:23:26,659 --> 02:23:28,659
+bilgilerini burada tanımlıyorsunuz
+
+2490
+02:23:28,659 --> 02:23:33,569
+buraya kadar bir sorusu var mı?
+
+2491
+02:23:33,569 --> 02:23:40,079
+merak ettiğiniz bir nokta
+
+2492
+02:23:40,079 --> 02:23:42,079
+ekran
+
+2493
+02:23:42,079 --> 02:23:46,290
+hocam sorudan ziyade biraz
+
+2494
+02:23:46,290 --> 02:23:48,290
+istek olucak
+
+2495
+02:23:48,290 --> 02:23:50,290
+xml formatını mesela ben ilk defa derste
+
+2496
+02:23:50,290 --> 02:23:52,290
+burada görüyorum biraz
+
+2497
+02:23:52,290 --> 02:23:54,290
+açıklayabilir misiniz?
+
+2498
+02:23:54,290 --> 02:23:56,290
+tabi şimdi
+
+2499
+02:23:56,290 --> 02:23:58,290
+extensible markup language diye
+
+2500
+02:23:58,290 --> 02:24:00,290
+geçiyor
+
+2501
+02:24:00,290 --> 02:24:02,290
+bu noktadaki
+
+2502
+02:24:02,290 --> 02:24:04,290
+aslında önemli
+
+2503
+02:24:04,290 --> 02:24:06,290
+yapılardan bir tanesi
+
+2504
+02:24:06,290 --> 02:24:08,290
+çok pardon bir sahnınızı rica edeceğim
+
+2505
+02:24:08,290 --> 02:24:28,049
+evet
+
+2506
+02:24:28,049 --> 02:24:30,049
+extensible markup language dedikten sonra
+
+2507
+02:24:30,049 --> 02:24:32,049
+şimdi
+
+2508
+02:24:32,049 --> 02:24:34,049
+arkadaşınız xml'in
+
+2509
+02:24:34,049 --> 02:24:36,049
+ne olduğu ile ilgili
+
+2510
+02:24:36,049 --> 02:24:38,049
+bir bilgi istedi
+
+2511
+02:24:38,049 --> 02:24:40,049
+buna da
+
+2512
+02:24:40,049 --> 02:24:42,049
+biz aslında
+
+2513
+02:24:42,049 --> 02:24:44,049
+bir bilgiyi
+
+2514
+02:24:44,049 --> 02:24:46,049
+aktarmak için
+
+2515
+02:24:46,049 --> 02:24:48,049
+xml yapısını
+
+2516
+02:24:48,049 --> 02:24:50,049
+ilk ortaya
+
+2517
+02:24:50,049 --> 02:24:52,049
+çıkarttık ve belli
+
+2518
+02:24:52,049 --> 02:24:54,049
+kurallar
+
+2519
+02:24:54,049 --> 02:24:56,049
+dahilinde
+
+2520
+02:24:56,049 --> 02:24:58,049
+sizin herhangi bir bilginizi
+
+2521
+02:24:58,049 --> 02:25:00,049
+iki bilgisayar arasında
+
+2522
+02:25:00,049 --> 02:25:02,049
+bir
+
+2523
+02:25:02,049 --> 02:25:04,049
+iki insan anlaştığı bir dil
+
+2524
+02:25:04,049 --> 02:25:06,049
+gibi aktarabilecek
+
+2525
+02:25:06,049 --> 02:25:08,049
+bir
+
+2526
+02:25:08,049 --> 02:25:10,049
+format ortaya çıkardı
+
+2527
+02:25:10,049 --> 02:25:12,049
+bilgisayar riyası
+
+2528
+02:25:12,049 --> 02:25:14,049
+ve böylece siz a bilgisayarından
+
+2529
+02:25:14,049 --> 02:25:16,049
+b bilgisayarından istediğiniz
+
+2530
+02:25:16,049 --> 02:25:18,049
+bir sintaksı
+
+2531
+02:25:18,049 --> 02:25:20,049
+oluşturarak o iki bilgisayar
+
+2532
+02:25:20,049 --> 02:25:22,049
+arasındaki haberleşmeyi
+
+2533
+02:25:22,049 --> 02:25:24,049
+veri
+
+2534
+02:25:24,049 --> 02:25:26,049
+gönderenini sizin belirlediğiniz
+
+2535
+02:25:26,049 --> 02:25:28,049
+kurallara göre yapabiliyorsunuz
+
+2536
+02:25:28,049 --> 02:25:30,049
+bu sayede
+
+2537
+02:25:30,049 --> 02:25:32,049
+işte x bir
+
+2538
+02:25:32,049 --> 02:25:34,049
+noktadan veri paylaşılıyorsa
+
+2539
+02:25:34,049 --> 02:25:36,049
+bir API varsa
+
+2540
+02:25:36,049 --> 02:25:38,049
+oranın formatına uygun olarak sizinle
+
+2541
+02:25:38,049 --> 02:25:40,049
+paylaşılan siz veriyi
+
+2542
+02:25:40,049 --> 02:25:42,049
+kodlayarak
+
+2543
+02:25:42,049 --> 02:25:44,049
+sunucu tarafından
+
+2544
+02:25:44,049 --> 02:25:46,049
+veri tarafınıza örneğin işte
+
+2545
+02:25:46,049 --> 02:25:48,049
+ne diyelim
+
+2546
+02:25:48,049 --> 02:25:50,049
+belediyedeki
+
+2547
+02:25:50,049 --> 02:25:52,049
+işte bu
+
+2548
+02:25:52,049 --> 02:25:54,049
+trafik verilerini almak istiyorsunuz
+
+2549
+02:25:54,049 --> 02:25:56,049
+hız verilerini almak istiyorsunuz
+
+2550
+02:25:56,049 --> 02:25:58,049
+bu sayede alabiliyorsunuz
+
+2551
+02:25:58,049 --> 02:26:00,049
+çünkü belirli bir dil var
+
+2552
+02:26:00,049 --> 02:26:02,049
+ve siz
+
+2553
+02:26:02,049 --> 02:26:04,049
+o formatta gelen veriyi alıp işleyip
+
+2554
+02:26:04,049 --> 02:26:06,049
+kendi tarafımızdaki
+
+2555
+02:26:06,049 --> 02:26:08,049
+veri
+
+2556
+02:26:08,049 --> 02:26:10,049
+kaynağınıza
+
+2557
+02:26:10,049 --> 02:26:12,049
+ekleyebiliyorsunuz
+
+2558
+02:26:12,049 --> 02:26:14,049
+ekzemel formatına
+
+2559
+02:26:14,049 --> 02:26:16,049
+rakip olarak
+
+2560
+02:26:16,049 --> 02:26:21,659
+yeni bir format geldi nedir o
+
+2561
+02:26:21,659 --> 02:26:23,659
+Barış
+
+2562
+02:26:23,659 --> 02:26:25,659
+JSON formatı mı?
+
+2563
+02:26:25,659 --> 02:26:27,659
+JSON formatının
+
+2564
+02:26:27,659 --> 02:26:29,659
+ekzemelden artısı var mı biliyor musun?
+
+2565
+02:26:29,659 --> 02:26:31,659
+ya ben
+
+2566
+02:26:31,659 --> 02:26:33,659
+genelde kullanıyorum ama
+
+2567
+02:26:33,659 --> 02:26:35,659
+ekzemelden daha kullanışlı kalırsa
+
+2568
+02:26:35,659 --> 02:26:37,659
+ama sebebini bilmiyorsun
+
+2569
+02:26:37,659 --> 02:26:39,659
+bilmiyorum
+
+2570
+02:26:39,659 --> 02:26:41,659
+tamam olabilir
+
+2571
+02:26:41,659 --> 02:26:43,659
+şimdi
+
+2572
+02:26:43,659 --> 02:26:45,659
+ekzemelden sonra ortaya atılan bu
+
+2573
+02:26:45,659 --> 02:26:47,659
+JSON formatı
+
+2574
+02:26:47,659 --> 02:26:49,659
+verinin paylaşımını oldukça hızlandırdı
+
+2575
+02:26:49,659 --> 02:26:51,659
+bir çok
+
+2576
+02:26:51,659 --> 02:26:53,659
+artı özelliği var
+
+2577
+02:26:53,659 --> 02:26:55,659
+özellikle
+
+2578
+02:26:55,659 --> 02:26:57,659
+aynı tipteki verinin
+
+2579
+02:26:57,659 --> 02:26:59,659
+bir
+
+2580
+02:26:59,659 --> 02:27:01,659
+dizi formatındaki
+
+2581
+02:27:01,659 --> 02:27:03,659
+gibi taşı anlamını
+
+2582
+02:27:03,659 --> 02:27:05,659
+kolaylaştırıyor
+
+2583
+02:27:05,659 --> 02:27:07,659
+daha az yer kaplıyor
+
+2584
+02:27:07,659 --> 02:27:09,659
+daha basit bir
+
+2585
+02:27:09,659 --> 02:27:11,659
+sintaksı var
+
+2586
+02:27:11,659 --> 02:27:13,659
+ama bu JSON
+
+2587
+02:27:13,659 --> 02:27:15,659
+ekzemelden kesinlikle daha üstün olduğunu göstermiyor
+
+2588
+02:27:15,659 --> 02:27:17,659
+sonuçta
+
+2589
+02:27:17,659 --> 02:27:19,659
+hem JSON hem ekzemel
+
+2590
+02:27:19,659 --> 02:27:21,659
+sizin
+
+2591
+02:27:21,659 --> 02:27:23,659
+oluşturduğunuz kendi kurallarınızla
+
+2592
+02:27:25,659 --> 02:27:27,659
+belirli yapıları
+
+2593
+02:27:27,659 --> 02:27:29,659
+ortaya koymanızı
+
+2594
+02:27:29,659 --> 02:27:31,659
+sağlıyor
+
+2595
+02:27:31,659 --> 02:27:33,659
+bu noktada da
+
+2596
+02:27:33,659 --> 02:27:35,659
+Android tarafında
+
+2597
+02:27:35,659 --> 02:27:37,659
+manifestin ve layoutların ekzemel ile
+
+2598
+02:27:37,659 --> 02:27:39,659
+oluşturulmasının iyi gelen sebebi
+
+2599
+02:27:39,659 --> 02:27:41,659
+kurallar çerçevesinde ifade edebilmesi
+
+2600
+02:27:41,659 --> 02:27:43,659
+bu işi
+
+2601
+02:27:43,659 --> 02:27:45,659
+kolaylaştırıyor
+
+2602
+02:27:45,659 --> 02:27:47,659
+hocam bir de YAML
+
+2603
+02:27:47,659 --> 02:27:49,659
+görmüştüm daha önce
+
+2604
+02:27:49,659 --> 02:27:51,659
+AML
+
+2605
+02:27:51,659 --> 02:27:53,659
+onu bilmiyorum
+
+2606
+02:27:53,659 --> 02:27:55,659
+bilen varsa soralım
+
+2607
+02:27:55,659 --> 02:27:57,659
+şimdi Duryan varsa
+
+2608
+02:27:57,659 --> 02:27:59,659
+evet [öğrenci]
+
+2609
+02:27:59,659 --> 02:28:01,659
+hocam
+
+2610
+02:28:01,659 --> 02:28:03,659
+YAML'ı biz makine öğrenmesinde
+
+2611
+02:28:03,659 --> 02:28:05,659
+yolu diye bir teknik var
+
+2612
+02:28:05,659 --> 02:28:07,659
+görüntü işleme için
+
+2613
+02:28:07,659 --> 02:28:09,659
+bunu da kullanmıştım
+
+2614
+02:28:09,659 --> 02:28:11,659
+oradaki
+
+2615
+02:28:11,659 --> 02:28:13,659
+makinenin nasıl öğrenmesi gerektiği
+
+2616
+02:28:13,659 --> 02:28:15,659
+konfig şeyleri vs.
+
+2617
+02:28:15,659 --> 02:28:17,659
+onu aktif etmesini söylüyorum
+
+2618
+02:28:17,659 --> 02:28:19,659
+sintaks olarak nasıl bir format var?
+
+2619
+02:28:19,659 --> 02:28:21,659
+JSON'a çok benziyor
+
+2620
+02:28:21,659 --> 02:28:23,659
+tamam
+
+2621
+02:28:23,659 --> 02:28:25,659
+gene aslında aynı yapıda
+
+2622
+02:28:25,659 --> 02:28:27,659
+muhtemelen
+
+2623
+02:28:27,659 --> 02:28:29,659
+verinin
+
+2624
+02:28:29,659 --> 02:28:31,659
+represent edilmesi
+
+2625
+02:28:31,659 --> 02:28:33,659
+data'nın represent edilmesi noktasında
+
+2626
+02:28:33,659 --> 02:28:35,659
+kullanılan bir format
+
+2627
+02:28:35,659 --> 02:28:37,659
+karşılığı var tabi ki
+
+2628
+02:28:37,659 --> 02:28:39,659
+layout tarafında da işte
+
+2629
+02:28:39,659 --> 02:28:41,659
+göreceksiniz
+
+2630
+02:28:41,659 --> 02:28:43,659
+layout egzemelerdeki
+
+2631
+02:28:43,659 --> 02:28:45,659
+grid layout
+
+2632
+02:28:45,659 --> 02:28:47,659
+diner layout vs.
+
+2633
+02:28:47,659 --> 02:28:49,659
+bunlara karşılık gelen belli tasarımlar var
+
+2634
+02:28:49,659 --> 02:28:51,659
+siz bu bilgilerin
+
+2635
+02:28:51,659 --> 02:28:53,659
+kendi
+
+2636
+02:28:53,659 --> 02:28:55,659
+çerçelenizde
+
+2637
+02:28:55,659 --> 02:28:57,659
+iç içe yerleştirdiğinizde
+
+2638
+02:28:57,659 --> 02:28:59,659
+aslında
+
+2639
+02:28:59,659 --> 02:29:01,659
+orada gözükecek UI'ların
+
+2640
+02:29:01,659 --> 02:29:03,659
+pozisyonlanmasını
+
+2641
+02:29:03,659 --> 02:29:05,659
+hangi UI'nin gözükeceğini de
+
+2642
+02:29:05,659 --> 02:29:07,659
+ifade etmiş oluyorsunuz
+
+2643
+02:29:07,659 --> 02:29:09,659
+biraz uzun anlattım ama bu hikaye daha da
+
+2644
+02:29:09,659 --> 02:29:11,659
+uzar aslında yani
+
+2645
+02:29:11,659 --> 02:29:13,659
+egzemel ve JSON konusu belki
+
+2646
+02:29:13,659 --> 02:29:15,659
+vaktimiz kalırsa bir ara daha detaylı
+
+2647
+02:29:15,659 --> 02:29:17,659
+değiniriz
+
+2648
+02:29:19,659 --> 02:29:21,659
+application resources kısmı var
+
+2649
+02:29:21,659 --> 02:29:23,659
+bunu
+
+2650
+02:29:23,659 --> 02:29:25,659
+konuşsak da kısaca üzerinden geçelim
+
+2651
+02:29:27,659 --> 02:29:29,659
+bizim
+
+2652
+02:29:29,659 --> 02:29:31,659
+statik
+
+2653
+02:29:31,659 --> 02:29:33,659
+içerik olarak adlandırdığımız
+
+2654
+02:29:33,659 --> 02:29:35,659
+bütün
+
+2655
+02:29:35,659 --> 02:29:37,659
+içeriklerin
+
+2656
+02:29:37,659 --> 02:29:39,659
+dahil olduğu kısım
+
+2657
+02:29:39,659 --> 02:29:41,659
+buna resimler
+
+2658
+02:29:41,659 --> 02:29:43,659
+müzik dosyaları raw formattaki
+
+2659
+02:29:43,659 --> 02:29:45,659
+dosyalar ham halleri
+
+2660
+02:29:47,659 --> 02:29:49,659
+ara yüz için kullandığımız
+
+2661
+02:29:49,659 --> 02:29:51,659
+egzemel dosyaları
+
+2662
+02:29:51,659 --> 02:29:53,659
+string yani
+
+2663
+02:29:53,659 --> 02:29:55,659
+belli etiketleri isimlendirdiğimiz
+
+2664
+02:29:55,659 --> 02:29:57,659
+define gibi C'deki
+
+2665
+02:29:57,659 --> 02:29:59,659
+düşünebilirsiniz bunları
+
+2666
+02:29:59,659 --> 02:30:01,659
+string egzemeler
+
+2667
+02:30:01,659 --> 02:30:03,659
+animasyonlara ait olan bütün
+
+2668
+02:30:03,659 --> 02:30:05,659
+ek
+
+2669
+02:30:05,659 --> 02:30:07,659
+dosyalar bu başlık
+
+2670
+02:30:07,659 --> 02:30:09,659
+altında inceleniyor
+
+2671
+02:30:09,659 --> 02:30:11,659
+burada da bir
+
+2672
+02:30:11,659 --> 02:30:13,659
+aslında
+
+2673
+02:30:13,659 --> 02:30:15,659
+my project de başlayan
+
+2674
+02:30:15,659 --> 02:30:17,659
+android studio'yu
+
+2675
+02:30:17,659 --> 02:30:19,659
+açtığınız zaman sizin projenize ait olan
+
+2676
+02:30:19,659 --> 02:30:21,659
+ağaç gerarsisini görüyorsunuz
+
+2677
+02:30:21,659 --> 02:30:23,659
+srj'nin altında
+
+2678
+02:30:23,659 --> 02:30:25,659
+sizin
+
+2679
+02:30:25,659 --> 02:30:27,659
+yazdığınız kodlarınız Java ya da
+
+2680
+02:30:27,659 --> 02:30:29,659
+javascript'in de yer alıyor
+
+2681
+02:30:29,659 --> 02:30:31,659
+öte yandan resources yani
+
+2682
+02:30:31,659 --> 02:30:33,659
+res altında da bütün
+
+2683
+02:30:33,659 --> 02:30:35,659
+uygulama içine
+
+2684
+02:30:35,659 --> 02:30:37,659
+yerleştirdiğiniz resimler
+
+2685
+02:30:37,659 --> 02:30:39,659
+videolar
+
+2686
+02:30:39,659 --> 02:30:41,659
+aktiviteleriniz ait
+
+2687
+02:30:41,659 --> 02:30:43,659
+layout dosyalarınız
+
+2688
+02:30:43,659 --> 02:30:45,659
+görsel olarak
+
+2689
+02:30:45,659 --> 02:30:47,659
+farklı çözünürlüklerdeki
+
+2690
+02:30:47,659 --> 02:30:49,659
+çözünürlükler için
+
+2691
+02:30:49,659 --> 02:30:51,659
+eklediğiniz görsel
+
+2692
+02:30:51,659 --> 02:30:53,659
+dosyalar mip map'in altında
+
+2693
+02:30:53,659 --> 02:30:55,659
+ve aynı zamanda
+
+2694
+02:30:55,659 --> 02:30:57,659
+color's egzemelde
+
+2695
+02:30:57,659 --> 02:30:59,659
+olmak üzere
+
+2696
+02:30:59,659 --> 02:31:01,659
+biraz da css'i
+
+2697
+02:31:01,659 --> 02:31:03,659
+andıran tasarımlarınız
+
+2698
+02:31:03,659 --> 02:31:05,659
+values'ün altına egzemeler alarak yer alıyor
+
+2699
+02:31:05,659 --> 02:31:07,659
+bir de
+
+2700
+02:31:07,659 --> 02:31:09,659
+generated ismini de
+
+2701
+02:31:09,659 --> 02:31:11,659
+gan slash olarak adlandırılan
+
+2702
+02:31:11,659 --> 02:31:13,659
+klasör var o da
+
+2703
+02:31:13,659 --> 02:31:15,659
+r nokta Java'yı
+
+2704
+02:31:15,659 --> 02:31:17,659
+taşıyor. Gördüğünüz gibi burada
+
+2705
+02:31:17,659 --> 02:31:19,659
+örnekler var
+
+2706
+02:31:19,659 --> 02:31:21,659
+örneğin strings nokta egzemelde
+
+2707
+02:31:21,659 --> 02:31:23,659
+aynı defile
+
+2708
+02:31:23,659 --> 02:31:25,659
+her mantığında olduğu gibi
+
+2709
+02:31:25,659 --> 02:31:27,659
+hello ile
+
+2710
+02:31:27,659 --> 02:31:29,659
+ilgili yazılmış
+
+2711
+02:31:29,659 --> 02:31:31,659
+olan tüm
+
+2712
+02:31:31,659 --> 02:31:33,659
+değişkenlerin olduğu yere gidip
+
+2713
+02:31:33,659 --> 02:31:35,659
+hello ifadesini koyuyor
+
+2714
+02:31:35,659 --> 02:31:37,659
+bu sayede uygulama içinde
+
+2715
+02:31:37,659 --> 02:31:39,659
+bir noktada
+
+2716
+02:31:39,659 --> 02:31:41,659
+birden fazla noktada değiştik yapmak yerine
+
+2717
+02:31:41,659 --> 02:31:43,659
+bir noktada strings nokta egzemelde
+
+2718
+02:31:43,659 --> 02:31:45,659
+değiştik yapıp bütün uygulamada
+
+2719
+02:31:45,659 --> 02:31:47,659
+bu değişikliği
+
+2720
+02:31:47,659 --> 02:31:49,659
+otomatik gerçekleştirmiş oluyorsunuz
+
+2721
+02:31:49,659 --> 02:31:51,659
+keza color için de aynı şey
+
+2722
+02:31:51,659 --> 02:31:53,659
+özel
+
+2723
+02:31:53,659 --> 02:31:55,659
+tanımlamalar yapıp
+
+2724
+02:31:55,659 --> 02:31:57,659
+sizin red
+
+2725
+02:31:57,659 --> 02:31:59,659
+olarak adlandırdığınız
+
+2726
+02:31:59,659 --> 02:32:01,659
+rengin
+
+2727
+02:32:01,659 --> 02:32:03,659
+istediğiniz bir
+
+2728
+02:32:03,659 --> 02:32:05,659
+kırmızının bir tonu olmasını
+
+2729
+02:32:05,659 --> 02:32:07,659
+sağlayabiliyorsunuz.
+
+2730
+02:32:07,659 --> 02:32:09,659
+Burada
+
+2731
+02:32:09,659 --> 02:32:11,659
+aslında
+
+2732
+02:32:11,659 --> 02:32:13,659
+edit textlerden
+
+2733
+02:32:13,659 --> 02:32:15,659
+bahsedilmiş
+
+2734
+02:32:15,659 --> 02:32:17,659
+button'dan bahsedilmiş
+
+2735
+02:32:17,659 --> 02:32:19,659
+image view'dan bahsedilmiş
+
+2736
+02:32:19,659 --> 02:32:21,659
+hepsinde
+
+2737
+02:32:21,659 --> 02:32:23,659
+o
+
+2738
+02:32:23,659 --> 02:32:25,659
+componente, o widget'e ait
+
+2739
+02:32:25,659 --> 02:32:27,659
+çeşitli alt
+
+2740
+02:32:27,659 --> 02:32:29,659
+özellikler var, attribute'ler var
+
+2741
+02:32:29,659 --> 02:32:31,659
+height'ını, width'ini tanımlayabiliyorsunuz
+
+2742
+02:32:31,659 --> 02:32:33,659
+color'ını tanımlayabiliyorsunuz
+
+2743
+02:32:33,659 --> 02:32:35,659
+işte textine
+
+2744
+02:32:35,659 --> 02:32:37,659
+refer edip add işaretiyle
+
+2745
+02:32:37,659 --> 02:32:39,659
+string egzemelinin altına
+
+2746
+02:32:39,659 --> 02:32:41,659
+refer edip hello
+
+2747
+02:32:41,659 --> 02:32:43,659
+isimli değişkenin karşılığını
+
+2748
+02:32:43,659 --> 02:32:45,659
+edit text'e yazdırır biliyorsunuz
+
+2749
+02:32:45,659 --> 02:32:47,659
+işte
+
+2750
+02:32:47,659 --> 02:32:49,659
+Android 2.hint deyip
+
+2751
+02:32:49,659 --> 02:32:51,659
+slick olarak orada bir ipucu
+
+2752
+02:32:51,659 --> 02:32:53,659
+gözükmesini yani oraya ne yazılacağı
+
+2753
+02:32:53,659 --> 02:32:55,659
+bir örnek gözükmesini sağlıyorsunuz. Bunların hepsi
+
+2754
+02:32:55,659 --> 02:32:57,659
+zaman içerisinde
+
+2755
+02:32:57,659 --> 02:32:59,659
+bir iki haftada baktıkça
+
+2756
+02:32:59,659 --> 02:33:01,659
+öğrenebileceğiniz ekstra özellikler
+
+2757
+02:33:01,659 --> 02:33:03,659
+button'un ismini
+
+2758
+02:33:03,659 --> 02:33:05,659
+verirken gene
+
+2759
+02:33:05,659 --> 02:33:07,659
+doğrudan isim vermek yerine
+
+2760
+02:33:07,659 --> 02:33:09,659
+strings.egzemele
+
+2761
+02:33:09,659 --> 02:33:11,659
+refer ederek bir isim
+
+2762
+02:33:11,659 --> 02:33:13,659
+verebiliyorsunuz. Buradaki aslında
+
+2763
+02:33:13,659 --> 02:33:15,659
+submit değişken ismine
+
+2764
+02:33:15,659 --> 02:33:17,659
+onun karşılığındaki tagler içindeki isimde
+
+2765
+02:33:17,659 --> 02:33:19,659
+yazılması gereken
+
+2766
+02:33:19,659 --> 02:33:21,659
+isme karşılık geliyor
+
+2767
+02:33:21,659 --> 02:33:23,659
+image view'de de mesela
+
+2768
+02:33:23,659 --> 02:33:25,659
+drawable'ın altına yerleştirdiğiniz
+
+2769
+02:33:25,659 --> 02:33:27,659
+image'lara refer edebiliyorsunuz
+
+2770
+02:33:27,659 --> 02:33:29,659
+bazı
+
+2771
+02:33:29,659 --> 02:33:31,659
+noktalarda egzemel kullanımının
+
+2772
+02:33:31,659 --> 02:33:33,659
+tag'i açıp
+
+2773
+02:33:33,659 --> 02:33:35,659
+daha sonra tag'i kapatmak şeklinde gerçekleştiğini
+
+2774
+02:33:35,659 --> 02:33:37,659
+görebilirsiniz. Ama
+
+2775
+02:33:37,659 --> 02:33:39,659
+vijitlerde de ağırlıklı olarak
+
+2776
+02:33:39,659 --> 02:33:41,659
+vijitlerin
+
+2777
+02:33:41,659 --> 02:33:43,659
+açıldığı gibi kapandığını göreceksiniz
+
+2778
+02:33:43,659 --> 02:33:45,659
+yani vijitlerin açıldığı noktada
+
+2779
+02:33:45,659 --> 02:33:47,659
+sonuna
+
+2780
+02:33:47,659 --> 02:33:49,659
+slash konularak
+
+2781
+02:33:49,659 --> 02:33:51,659
+slash büyüktür işareti konularak doğrudan
+
+2782
+02:33:51,659 --> 02:33:53,659
+kapanıyor. Yani bir daha yukarıdaki
+
+2783
+02:33:53,659 --> 02:33:55,659
+bir resursuz açtım, resursuz kapattım
+
+2784
+02:33:55,659 --> 02:33:57,659
+yazmıyorsunuz.
+
+2785
+02:33:57,659 --> 02:33:59,659
+LHAT editor ile bunların hepsini
+
+2786
+02:33:59,659 --> 02:34:01,659
+yapabilirsiniz. Ama
+
+2787
+02:34:01,659 --> 02:34:03,659
+bunların
+
+2788
+02:34:03,659 --> 02:34:05,659
+ne tarz
+
+2789
+02:34:05,659 --> 02:34:07,659
+etribütler barındırdığını, neleri
+
+2790
+02:34:07,659 --> 02:34:09,659
+değiştirebileceğinizde belli oranda
+
+2791
+02:34:09,659 --> 02:34:11,659
+bilmekte fayda var.
+
+2792
+02:34:11,659 --> 02:34:13,659
+Evet, device configuration
+
+2793
+02:34:13,659 --> 02:34:15,659
+changes
+
+2794
+02:34:15,659 --> 02:34:17,659
+dediğimiz kısma geldik. Yani
+
+2795
+02:34:17,659 --> 02:34:19,659
+burada
+
+2796
+02:34:19,659 --> 02:34:21,659
+ekranın
+
+2797
+02:34:21,659 --> 02:34:23,659
+dikeyden yatağı
+
+2798
+02:34:23,659 --> 02:34:25,659
+alınması
+
+2799
+02:34:25,659 --> 02:34:27,659
+bir
+
+2800
+02:34:27,659 --> 02:34:29,659
+dil
+
+2801
+02:34:29,659 --> 02:34:31,659
+değişimi yapılması, language
+
+2802
+02:34:31,659 --> 02:34:33,659
+bir değişiklik yapılması
+
+2803
+02:34:33,659 --> 02:34:35,659
+örneğin
+
+2804
+02:34:35,659 --> 02:34:37,659
+işletim sisteminde
+
+2805
+02:34:37,659 --> 02:34:39,659
+Türkçe'den İngilizce'ye geçtiniz
+
+2806
+02:34:39,659 --> 02:34:41,659
+İngilizce'den İspanyolca'ya geçtiniz dediği durumlar
+
+2807
+02:34:41,659 --> 02:34:43,659
+ya da
+
+2808
+02:34:43,659 --> 02:34:45,659
+bir daha fazla pencere
+
+2809
+02:34:45,659 --> 02:34:47,659
+kullanımı modları
+
+2810
+02:34:47,659 --> 02:34:49,659
+yeni bir keyword
+
+2811
+02:34:49,659 --> 02:34:51,659
+kullanımı gibi device'in
+
+2812
+02:34:51,659 --> 02:34:53,659
+konfigurasyonla ilgili durumlar
+
+2813
+02:34:53,659 --> 02:34:55,659
+değiştiğinde ne olacak
+
+2814
+02:34:55,659 --> 02:34:57,659
+sorusu akla geliyor.
+
+2815
+02:34:57,659 --> 02:34:59,659
+Nedir bu durum? Bu konuyla ilgili bilgisit olan var mı?
+
+2816
+02:34:59,659 --> 02:35:11,389
+Evet, katkı
+
+2817
+02:35:11,389 --> 02:35:13,389
+sağlamak isteyen var mı?
+
+2818
+02:35:13,389 --> 02:35:15,389
+[öğrenci].
+
+2819
+02:35:15,389 --> 02:35:17,389
+Hocam mesela dili değiştirdiğimizde
+
+2820
+02:35:17,389 --> 02:35:19,389
+biz Trink 6ML'de tanımlarsak
+
+2821
+02:35:19,389 --> 02:35:21,389
+farklı dilleri
+
+2822
+02:35:21,389 --> 02:35:23,389
+bunu da otomatik olarak değişir.
+
+2823
+02:35:23,389 --> 02:35:25,389
+Çok güzel ama
+
+2824
+02:35:25,389 --> 02:35:27,389
+bunu
+
+2825
+02:35:27,389 --> 02:35:29,389
+yani önem istemimizin sebebi ne
+
+2826
+02:35:29,389 --> 02:35:31,389
+device configuration
+
+2827
+02:35:31,389 --> 02:35:33,389
+mesela dikeyden yatağı çevirdik
+
+2828
+02:35:33,389 --> 02:35:35,389
+ekranı
+
+2829
+02:35:35,389 --> 02:35:37,389
+çok sık yaptığımız bir şey okumak istiyoruz
+
+2830
+02:35:37,389 --> 02:35:39,389
+Evet
+
+2831
+02:35:39,389 --> 02:35:41,389
+onun içinde farklı layoutlar
+
+2832
+02:35:41,389 --> 02:35:43,389
+tanımlayarak hani buna göre
+
+2833
+02:35:43,389 --> 02:35:45,389
+güzel. Bir kere
+
+2834
+02:35:45,389 --> 02:35:47,389
+kullanıma bağlı olarak
+
+2835
+02:35:47,389 --> 02:35:49,389
+farklı layout tanımlayabilirsek
+
+2836
+02:35:49,389 --> 02:35:51,389
+daha güzel, daha iyi bir
+
+2837
+02:35:51,389 --> 02:35:53,389
+görünüm sağlayabiliriz ama tek bir layoutla da
+
+2838
+02:35:53,389 --> 02:35:55,389
+işi götürme şansımız var.
+
+2839
+02:35:55,389 --> 02:35:57,389
+Android bunu sağlıyor.
+
+2840
+02:35:59,389 --> 02:36:01,389
+Ama esas vurgulamak istediğim nokta şu
+
+2841
+02:36:01,389 --> 02:36:03,389
+bir değişiklik
+
+2842
+02:36:03,389 --> 02:36:05,389
+yaptığınızda device konfigurasyonunda
+
+2843
+02:36:05,389 --> 02:36:07,389
+aslında
+
+2844
+02:36:07,389 --> 02:36:09,389
+activity'yi kaybediyorsunuz [öğrenci].
+
+2845
+02:36:09,389 --> 02:36:11,389
+Hocam aslında
+
+2846
+02:36:11,389 --> 02:36:13,389
+önemli olan yani bizim buradaki
+
+2847
+02:36:13,389 --> 02:36:15,389
+amacımız mesela birçok
+
+2848
+02:36:15,389 --> 02:36:17,389
+farklı örneğin tabloları
+
+2849
+02:36:17,389 --> 02:36:19,389
+bir ekran küçükken ve
+
+2850
+02:36:19,389 --> 02:36:21,389
+büyükken arasındaki farklar çok fazla
+
+2851
+02:36:21,389 --> 02:36:23,389
+yazı sığmayabiliyor
+
+2852
+02:36:23,389 --> 02:36:25,389
+üç satırlık
+
+2853
+02:36:25,389 --> 02:36:27,389
+hali gelmesi gerekiyor bunların hepsinin
+
+2854
+02:36:27,389 --> 02:36:29,389
+tanımlanması gerekiyor yoksa
+
+2855
+02:36:29,389 --> 02:36:31,389
+istediğimiz görüntüyü elde edemeyiz.
+
+2856
+02:36:31,389 --> 02:36:33,389
+Evet doğru bu
+
+2857
+02:36:33,389 --> 02:36:35,389
+user experience tarafından
+
+2858
+02:36:35,389 --> 02:36:37,389
+görsellik açısından çok çok
+
+2859
+02:36:37,389 --> 02:36:39,389
+önemli
+
+2860
+02:36:39,389 --> 02:36:42,860
+burada evet
+
+2861
+02:36:42,860 --> 02:36:44,860
+yakup'un yazdığı
+
+2862
+02:36:44,860 --> 02:36:46,860
+mesajı da dikkate alalım
+
+2863
+02:36:46,860 --> 02:36:48,860
+özellikle
+
+2864
+02:36:48,860 --> 02:36:50,860
+kullanıcının o anda
+
+2865
+02:36:50,860 --> 02:36:52,860
+ekranındaki
+
+2866
+02:36:52,860 --> 02:36:54,860
+bilgilerin kaybolmaması
+
+2867
+02:36:54,860 --> 02:36:56,860
+için o durumdaki
+
+2868
+02:36:56,860 --> 02:36:58,860
+ekrandaki
+
+2869
+02:36:58,860 --> 02:37:00,860
+edit text'e yazan
+
+2870
+02:37:00,860 --> 02:37:02,860
+bilgilerin kaybolmaması için
+
+2871
+02:37:02,860 --> 02:37:04,860
+reform'daki
+
+2872
+02:37:04,860 --> 02:37:06,860
+sizin o
+
+2873
+02:37:06,860 --> 02:37:08,860
+state bilgilerini
+
+2874
+02:37:08,860 --> 02:37:10,860
+saklamanız gerekiyor. Yani
+
+2875
+02:37:10,860 --> 02:37:12,860
+ekrana siz dikeyden
+
+2876
+02:37:12,860 --> 02:37:14,860
+yatağı, yataydan dikeyi çevirdiğiniz anda
+
+2877
+02:37:14,860 --> 02:37:16,860
+bütün o aktivitedeki
+
+2878
+02:37:16,860 --> 02:37:18,860
+örneğin bir oyun score'una
+
+2879
+02:37:18,860 --> 02:37:20,860
+bakıyorsunuz o bilgiyi
+
+2880
+02:37:20,860 --> 02:37:22,860
+kaybetmiş oluyorsunuz.
+
+2881
+02:37:22,860 --> 02:37:24,860
+Bunu
+
+2882
+02:37:24,860 --> 02:37:26,860
+saklamak için
+
+2883
+02:37:26,860 --> 02:37:28,860
+onSaveInstantState dediğimiz
+
+2884
+02:37:28,860 --> 02:37:30,860
+bir metot çağırıyoruz. Bu sayede
+
+2885
+02:37:30,860 --> 02:37:32,860
+device konfigrasyonda bir değişiklik
+
+2886
+02:37:32,860 --> 02:37:34,860
+olduğunda sizin
+
+2887
+02:37:34,860 --> 02:37:36,860
+arka planda
+
+2888
+02:37:36,860 --> 02:37:38,860
+uygulamanız
+
+2889
+02:37:38,860 --> 02:37:40,860
+bu değişiklikten etkilenmiyor
+
+2890
+02:37:40,860 --> 02:37:42,860
+ve
+
+2891
+02:37:42,860 --> 02:37:44,860
+bilgilerin kaybolması
+
+2892
+02:37:44,860 --> 02:37:46,860
+engellenmiş oluyor.
+
+2893
+02:37:46,860 --> 02:37:48,860
+Bu kısım önemli.
+
+2894
+02:37:48,860 --> 02:37:50,860
+Şimdi önümüzdeki hafta
+
+2895
+02:37:50,860 --> 02:37:52,860
+tabi kodlama yaparken bu kısma biraz daha
+
+2896
+02:37:52,860 --> 02:37:54,860
+değiniyor olacağız. Ama
+
+2897
+02:37:54,860 --> 02:37:56,860
+dikkat etmeniz gereken nokta
+
+2898
+02:37:56,860 --> 02:37:58,860
+onSaveInstantState
+
+2899
+02:37:58,860 --> 02:38:00,860
+dediğimiz bir metot var
+
+2900
+02:38:00,860 --> 02:38:02,860
+ki bunu bir başka
+
+2901
+02:38:02,860 --> 02:38:04,860
+halinde göreceksiniz
+
+2902
+02:38:04,860 --> 02:38:06,860
+önümüzdeki hafta.
+
+2903
+02:38:06,860 --> 02:38:08,860
+O
+
+2904
+02:38:08,860 --> 02:38:10,860
+andaki
+
+2905
+02:38:10,860 --> 02:38:12,860
+aktivitedeki
+
+2906
+02:38:12,860 --> 02:38:14,860
+tüm bilgilerin
+
+2907
+02:38:14,860 --> 02:38:16,860
+saklanması gerekiyor ki
+
+2908
+02:38:16,860 --> 02:38:18,860
+siz
+
+2909
+02:38:18,860 --> 02:38:20,860
+bu device değişikliği sonrasında bilgi
+
+2910
+02:38:20,860 --> 02:38:22,860
+kaybına uğramayın.
+
+2911
+02:38:22,860 --> 02:38:24,860
+Permission
+
+2912
+02:38:24,860 --> 02:38:26,860
+kısmı var. Permission kısmı
+
+2913
+02:38:26,860 --> 02:38:28,860
+manifestin içerisinde
+
+2914
+02:38:28,860 --> 02:38:30,860
+o izinler alınsa
+
+2915
+02:38:30,860 --> 02:38:32,860
+da artık
+
+2916
+02:38:32,860 --> 02:38:34,860
+permission'ın tipine bağlı
+
+2917
+02:38:34,860 --> 02:38:36,860
+olarak
+
+2918
+02:38:36,860 --> 02:38:38,860
+dinamik olarak kod çalışırken
+
+2919
+02:38:38,860 --> 02:38:40,860
+bazı izinlerin alınması gerekiyor. O yüzden
+
+2920
+02:38:40,860 --> 02:38:42,860
+kodun içerisinde bu request'leri yapmanız
+
+2921
+02:38:42,860 --> 02:38:44,860
+gerekiyor.
+
+2922
+02:38:44,860 --> 02:38:46,860
+İşte burada normal
+
+2923
+02:38:46,860 --> 02:38:48,860
+permission'lar ve dangerous permission'lar
+
+2924
+02:38:48,860 --> 02:38:50,860
+olmak üzere temelde iki
+
+2925
+02:38:50,860 --> 02:38:52,860
+kategori konuşuluyor.
+
+2926
+02:38:52,860 --> 02:38:54,860
+Burada normal permission'lar
+
+2927
+02:38:54,860 --> 02:38:56,860
+için manifest seviyesinde
+
+2928
+02:38:56,860 --> 02:38:58,860
+izin alabilirken
+
+2929
+02:38:58,860 --> 02:39:00,860
+dangerous permission'lar için artık
+
+2930
+02:39:00,860 --> 02:39:02,860
+runtime sırasında
+
+2931
+02:39:02,860 --> 02:39:04,860
+izin almamız gerekiyor. Bir tanesi
+
+2932
+02:39:04,860 --> 02:39:06,860
+compilation sırasında
+
+2933
+02:39:06,860 --> 02:39:08,860
+yükleme gerçekleşirken, diğeri de
+
+2934
+02:39:08,860 --> 02:39:10,860
+runtime
+
+2935
+02:39:10,860 --> 02:39:12,860
+sırasında.
+
+2936
+02:39:12,860 --> 02:39:14,860
+Burada bunların detayı veriliyor.
+
+2937
+02:39:14,860 --> 02:39:16,860
+İşte
+
+2938
+02:39:16,860 --> 02:39:18,860
+özellikle siz
+
+2939
+02:39:18,860 --> 02:39:20,860
+bir daha bana
+
+2940
+02:39:20,860 --> 02:39:22,860
+sorma seçeneğini işaretlemediğiniz
+
+2941
+02:39:22,860 --> 02:39:24,860
+sürece runtime request'leri
+
+2942
+02:39:24,860 --> 02:39:26,860
+siz uygulamayı her açtığınızda
+
+2943
+02:39:26,860 --> 02:39:28,860
+size bakın
+
+2944
+02:39:28,860 --> 02:39:30,860
+kontak bilgilerinize erişilecek
+
+2945
+02:39:30,860 --> 02:39:32,860
+sorusunu
+
+2946
+02:39:32,860 --> 02:39:34,860
+çıkmasını sağlıyor.
+
+2947
+02:39:34,860 --> 02:39:36,860
+Ama bir daha gösterme
+
+2948
+02:39:36,860 --> 02:39:38,860
+never ask again seçtiğiniz zaman
+
+2949
+02:39:38,860 --> 02:39:40,860
+bu noktada
+
+2950
+02:39:40,860 --> 02:39:42,860
+bunu siz isteyerek bypass
+
+2951
+02:39:42,860 --> 02:39:44,860
+etmiş oluyorsunuz.
+
+2952
+02:39:44,860 --> 02:39:46,860
+Bir sorum olacaktı.
+
+2953
+02:39:46,860 --> 02:39:48,860
+Bu bir daha sorma seçeneğini
+
+2954
+02:39:48,860 --> 02:39:50,860
+uygula Android'in kendisi mi
+
+2955
+02:39:50,860 --> 02:39:52,860
+sağlıyor yoksa biz sorup
+
+2956
+02:39:52,860 --> 02:39:54,860
+sormayacağını seçemiyor muyuz?
+
+2957
+02:39:54,860 --> 02:39:56,860
+Güzel bir soru.
+
+2958
+02:39:56,860 --> 02:39:58,860
+Biz bunu genelde
+
+2959
+02:39:58,860 --> 02:40:00,860
+kendimiz implement ediyoruz.
+
+2960
+02:40:00,860 --> 02:40:02,860
+Ekranın
+
+2961
+02:40:02,860 --> 02:40:04,860
+tasarımı da bize bağlı
+
+2962
+02:40:04,860 --> 02:40:06,860
+olarak değişebiliyor.
+
+2963
+02:40:06,860 --> 02:40:08,860
+O yüzden genelde
+
+2964
+02:40:08,860 --> 02:40:10,860
+bu noktada
+
+2965
+02:40:10,860 --> 02:40:12,860
+bizim bunu dizayn etmemiz gerekiyor.
+
+2966
+02:40:12,860 --> 02:40:14,860
+Yani şöyle diyelim
+
+2967
+02:40:14,860 --> 02:40:16,860
+bu noktada
+
+2968
+02:40:16,860 --> 02:40:18,860
+Android bize default bir
+
+2969
+02:40:18,860 --> 02:40:20,860
+seçenek sürüyor ama bunu
+
+2970
+02:40:20,860 --> 02:40:22,860
+kastamize etmek bize ait.
+
+2971
+02:40:22,860 --> 02:40:24,860
+[öğrenci]?
+
+2972
+02:40:24,860 --> 02:40:26,860
+Ben bir de şey
+
+2973
+02:40:26,860 --> 02:40:28,860
+biliyorum. Eğer mesela 3 kere reddettiyse
+
+2974
+02:40:28,860 --> 02:40:30,860
+hani böyle izin
+
+2975
+02:40:30,860 --> 02:40:32,860
+istemek için spamlıyorsak o zaman
+
+2976
+02:40:32,860 --> 02:40:34,860
+never ask again çıkmaya başlıyor
+
+2977
+02:40:34,860 --> 02:40:36,860
+ve never ask again deyip deny'e basarsa
+
+2978
+02:40:36,860 --> 02:40:38,860
+bir daha istek gönderemiyoruz.
+
+2979
+02:40:38,860 --> 02:40:40,860
+Çok pardon. O zaman
+
+2980
+02:40:40,860 --> 02:40:42,860
+ne oluyor dedin orayı kaçırdım.
+
+2981
+02:40:42,860 --> 02:40:44,860
+Yani bir kaç kere aynı isteği
+
+2982
+02:40:44,860 --> 02:40:46,860
+gönderirsek, aynı izin isteğini
+
+2983
+02:40:46,860 --> 02:40:48,860
+gönderirsek ve kullanıcı reddederse
+
+2984
+02:40:48,860 --> 02:40:50,860
+bu sefer never ask again çıkmaya başlıyor.
+
+2985
+02:40:50,860 --> 02:40:52,860
+Hani spamlamamız için
+
+2986
+02:40:52,860 --> 02:40:54,860
+kullanıcıya.
+
+2987
+02:40:54,860 --> 02:40:56,860
+Tam tersi olması gerekmez mi?
+
+2988
+02:40:56,860 --> 02:40:58,860
+Şimdi biz deny ediyoruz değil mi?
+
+2989
+02:40:58,860 --> 02:41:00,860
+Dina ettiğimiz zaman
+
+2990
+02:41:00,860 --> 02:41:02,860
+never ask again çıkması
+
+2991
+02:41:02,860 --> 02:41:04,860
+biraz anlamlı değil mi?
+
+2992
+02:41:04,860 --> 02:41:06,860
+Anlamsız değil mi?
+
+2993
+02:41:06,860 --> 02:41:08,860
+Tekrar deny'e basarsa
+
+2994
+02:41:08,860 --> 02:41:10,860
+ondan sonra izin gönderemiyoruz.
+
+2995
+02:41:10,860 --> 02:41:12,860
+İzin isteyemiyoruz. Ya da
+
+2996
+02:41:12,860 --> 02:41:14,860
+sistem ayarlarına
+
+2997
+02:41:14,860 --> 02:41:16,860
+gönderip oradan izin almamız gerekiyor.
+
+2998
+02:41:16,860 --> 02:41:18,860
+Evet tamam pardon. O söylediğin biraz daha
+
+2999
+02:41:18,860 --> 02:41:20,860
+farklı bir durum. Doğru söylüyorsun.
+
+3000
+02:41:20,860 --> 02:41:22,860
+Onu da vurgulamış olalım.
+
+3001
+02:41:22,860 --> 02:41:24,860
+Şunu söylüyor arkadaşınız.
+
+3002
+02:41:24,860 --> 02:41:26,860
+Biz dina'ya
+
+3003
+02:41:26,860 --> 02:41:28,860
+bastıktan sonra
+
+3004
+02:41:28,860 --> 02:41:30,860
+never ask again diye tekrar
+
+3005
+02:41:30,860 --> 02:41:32,860
+üçüncü yara doğurmuş kez ben onun tam
+
+3006
+02:41:32,860 --> 02:41:34,860
+sayısını bilmiyorum seçtiğimizde.
+
+3007
+02:41:34,860 --> 02:41:36,860
+Artık izin noktasında
+
+3008
+02:41:36,860 --> 02:41:38,860
+sizi sistem ayarlarına yönlendiriyor.
+
+3009
+02:41:38,860 --> 02:41:40,860
+Böyle bir şey var.
+
+3010
+02:41:40,860 --> 02:41:42,860
+Android'ın uyguladığı
+
+3011
+02:41:42,860 --> 02:41:44,860
+yaklaşım var. IOS tarafında tam
+
+3012
+02:41:44,860 --> 02:41:46,860
+bilmiyorum. Yanlış bir şey söylemek
+
+3013
+02:41:46,860 --> 02:41:48,860
+istemiyorum. Ama sonuçta
+
+3014
+02:41:48,860 --> 02:41:50,860
+artık requestler
+
+3015
+02:41:50,860 --> 02:41:52,860
+uygulama yüklenirken bir kez
+
+3016
+02:41:52,860 --> 02:41:54,860
+alınmıyor. Birçok request
+
+3017
+02:41:54,860 --> 02:41:56,860
+özellikle biraz önceki kategorideki
+
+3018
+02:41:56,860 --> 02:41:58,860
+dangerous olanlar
+
+3019
+02:41:58,860 --> 02:42:00,860
+çoğunlukla
+
+3020
+02:42:00,860 --> 02:42:02,860
+hepsi kritik seviyede olduğu için
+
+3021
+02:42:02,860 --> 02:42:04,860
+uygulama her çalıştığında
+
+3022
+02:42:04,860 --> 02:42:06,860
+size soruyor. Ama siz
+
+3023
+02:42:06,860 --> 02:42:08,860
+burada tekrar sorma
+
+3024
+02:42:08,860 --> 02:42:10,860
+seçeneğini izin vererek seçerseniz
+
+3025
+02:42:10,860 --> 02:42:12,860
+o zaman bir kez daha bunu
+
+3026
+02:42:12,860 --> 02:42:14,860
+sormuyor ve sanki
+
+3027
+02:42:14,860 --> 02:42:16,860
+compilation aşamasında bir kez izin vermişsiniz
+
+3028
+02:42:16,860 --> 02:42:18,860
+gibi çalışmaya devam ediyor.
+
+3029
+02:42:20,860 --> 02:42:22,860
+Şimdi saat
+
+3030
+02:42:22,860 --> 02:42:24,860
+yaklaşık 16.40 oldu.
+
+3031
+02:42:24,860 --> 02:42:26,860
+Aslında çok fazla
+
+3032
+02:42:26,860 --> 02:42:28,860
+site'miz yok ama
+
+3033
+02:42:28,860 --> 02:42:30,860
+dersler
+
+3034
+02:42:30,860 --> 02:42:32,860
+online olduğu için çok uzun
+
+3035
+02:42:32,860 --> 02:42:34,860
+tutmak istemiyorum. Kod yazarken zaten
+
+3036
+02:42:34,860 --> 02:42:36,860
+önümüzdeki haftadan itibaren
+
+3037
+02:42:36,860 --> 02:42:38,860
+birazcık uzayacak.
+
+3038
+02:42:38,860 --> 02:42:40,860
+Sonra yani saat 5-10 kalaya kadar
+
+3039
+02:42:40,860 --> 02:42:42,860
+devam ediyor olacağız.
+
+3040
+02:42:42,860 --> 02:42:44,860
+Önümüzdeki hafta girişte
+
+3041
+02:42:44,860 --> 02:42:46,860
+bir
+
+3042
+02:42:46,860 --> 02:42:48,860
+yaklaşık 20 dakika daha anlatacaklarım
+
+3043
+02:42:48,860 --> 02:42:50,860
+var. Ondan sonra
+
+3044
+02:42:50,860 --> 02:42:52,860
+kodlamayla ilgili kısma geçeceğiz ve
+
+3045
+02:42:52,860 --> 02:42:54,860
+dersin ikinci bölümünde artık
+
+3046
+02:42:54,860 --> 02:42:56,860
+fiilen sizden
+
+3047
+02:42:56,860 --> 02:42:58,860
+bir uygulama ekranı
+
+3048
+02:42:58,860 --> 02:43:00,860
+geliştirmenizi bekliyor olacağım.
+
+3049
+02:43:00,860 --> 02:43:02,860
+O yüzden bütün hazırlıklarınızı tamamlayın.
+
+3050
+02:43:02,860 --> 02:43:04,860
+Hatta bence
+
+3051
+02:43:04,860 --> 02:43:06,860
+mümkünse basit birkaç kod da yazabilirsiniz.
+
+3052
+02:43:06,860 --> 02:43:08,860
+Özellikle
+
+3053
+02:43:08,860 --> 02:43:10,860
+Activity ve
+
+3054
+02:43:10,860 --> 02:43:12,860
+internet tarafından tabi ki ben anlatıyor olacağım ama
+
+3055
+02:43:12,860 --> 02:43:14,860
+okuyarak
+
+3056
+02:43:14,860 --> 02:43:16,860
+çok basit bir şekilde bunu gerçekleştirme
+
+3057
+02:43:16,860 --> 02:43:18,860
+şansınız var.
+
+3058
+02:43:18,860 --> 02:43:20,860
+Bu hafta ilgili soru sormak isteyen var mı
+
+3059
+02:43:20,860 --> 02:43:24,209
+başka? Evet
+
+3060
+02:43:24,209 --> 02:43:26,209
+[öğrenci].
+
+3061
+02:43:26,209 --> 02:43:28,209
+Hocam Android Romları
+
+3062
+02:43:28,209 --> 02:43:30,209
+nerede geliştiriliyor?
+
+3063
+02:43:30,209 --> 02:43:32,209
+Nerede derken?
+
+3064
+02:43:32,209 --> 02:43:34,209
+Hani mesela Android
+
+3065
+02:43:34,209 --> 02:43:36,209
+Stüdyoda mı geliştiriliyor?
+
+3066
+02:43:36,209 --> 02:43:39,489
+Geliştiriliyor.
+
+3067
+02:43:39,489 --> 02:43:41,489
+Yani bunu herhalde şey olarak soruyorsun
+
+3068
+02:43:41,489 --> 02:43:43,489
+Google bunu ne tarafta geliştiriyor diye soruyorsun değil mi?
+
+3069
+02:43:43,489 --> 02:43:45,489
+Hani
+
+3070
+02:43:45,489 --> 02:43:47,489
+üreticilerin falan eklediği şeyler oluyor ya
+
+3071
+02:43:47,489 --> 02:43:49,489
+mesela
+
+3072
+02:43:49,489 --> 02:43:51,489
+Tamam yani sen Samsung tarafı
+
+3073
+02:43:51,489 --> 02:43:53,489
+bir şey eklemek istiyorsan
+
+3074
+02:43:53,489 --> 02:43:55,489
+Hesare diye soruyorsun.
+
+3075
+02:43:55,489 --> 02:43:57,489
+Valla bununla ilgili de çok net bir bilgim yok.
+
+3076
+02:43:57,489 --> 02:43:59,489
+Yanlış bir şey söylemeyeyim.
+
+3077
+02:43:59,489 --> 02:44:01,489
+Ama ben
+
+3078
+02:44:01,489 --> 02:44:03,489
+bunun tamamen
+
+3079
+02:44:03,489 --> 02:44:05,489
+SDK üzerinden
+
+3080
+02:44:05,489 --> 02:44:07,489
+implement edildiğini zannetmiyorum.
+
+3081
+02:44:07,489 --> 02:44:09,489
+Onlar için additional bir
+
+3082
+02:44:09,489 --> 02:44:11,489
+platform olduğunu
+
+3083
+02:44:11,489 --> 02:44:13,489
+tahmin ediyorum ama bilmiyorum.
+
+3084
+02:44:13,489 --> 02:44:15,489
+Güzel soru buna bakacağım.
+
+3085
+02:44:15,489 --> 02:44:17,489
+İlginç bir soru.
+
+3086
+02:44:17,489 --> 02:44:24,639
+Bilgisi olan varsa yorumlayabilir.
+
+3087
+02:44:24,639 --> 02:44:26,639
+Peki. Bu soruyu [öğrenci]
+
+3088
+02:44:26,639 --> 02:44:28,639
+unutma. Önümüzdeki hafta tekrar sor.
+
+3089
+02:44:28,639 --> 02:44:30,639
+Rom
+
+3090
+02:44:30,639 --> 02:44:32,639
+geliştirme için extra bir platform
+
+3091
+02:44:32,639 --> 02:44:34,639
+kullanıyorlar mı?
+
+3092
+02:44:34,639 --> 02:44:36,639
+Bu geliştiricilere ait olan
+
+3093
+02:44:36,639 --> 02:44:38,639
+Android Stüdyoda ortamı daha çok
+
+3094
+02:44:38,639 --> 02:44:40,639
+uygulama geliştirmeye yönelik ama
+
+3095
+02:44:40,639 --> 02:44:42,639
+Rom mertebesinde yapılacak
+
+3096
+02:44:42,639 --> 02:44:44,639
+geliştirmelerin
+
+3097
+02:44:44,639 --> 02:44:46,639
+arayüzden çok
+
+3098
+02:44:46,639 --> 02:44:48,639
+tabii ki arayüzde
+
+3099
+02:44:48,639 --> 02:44:50,639
+ihtiyaç duyuluyor ama
+
+3100
+02:44:50,639 --> 02:44:52,639
+daha çok performans odaklı
+
+3101
+02:44:52,639 --> 02:44:54,639
+olduğunu düşündüğüm için
+
+3102
+02:44:54,639 --> 02:44:56,639
+farklı bir yapı kullandıklarını
+
+3103
+02:44:56,639 --> 02:45:00,559
+zannediyorum. Peki.
+
+3104
+02:45:00,559 --> 02:45:02,559
+O zaman hepinize güzel bir hafta
+
+3105
+02:45:02,559 --> 02:45:04,559
+diliyorum. Sağlıklı
+
+3106
+02:45:04,559 --> 02:45:06,559
+günler. Kendinize iyi bakın. Haftaya görüşmek üzere.
+
+3107
+02:45:06,559 --> 02:45:11,920
+İyi akşamlar hocam.

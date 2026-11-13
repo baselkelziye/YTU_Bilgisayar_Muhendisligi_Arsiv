@@ -1,0 +1,1079 @@
+1
+00:00:23,827 --> 00:00:25,027
+Günaydın gençler.
+
+2
+00:00:26,707 --> 00:00:54,707
+Sevgili güzel öğrencilerim, geçen hafta perşembe günü okuldaydım. 10-15 kişi katıldı. Güzel böyle sohbet ettik. Katılamayan öğrenciler de vardı. Mail atmadım, özellikle mail atmadım arkadaşlar. Çünkü mekanlar uygun mudur, çok kalabalık bir grup, acaba rahat, sağlıklı iletişim kurabilir miyiz bilemediğim için dedim ki uygun olan, müsait olan arkadaşlar uğrasın. Öyle de oldu.
+
+3
+00:00:54,707 --> 00:01:09,168
+Güzel de oldu. İnşallah bir dahaki sefere diğer arkadaşlarla da sohbet etme fırsatı yakalarız. İkinci olarak söyleyeceğim şey, yoklamayı işlemeye başladım ama ilk defa OBSD işlediğim için şöyle söyleyeyim.
+
+4
+00:01:10,995 --> 00:01:33,096
+Kim geldi, kim gitti orada yazıyor. Ama galiba saatle ilgili de bir şey eklemek lazım. Bir ders iki saate denk geliyor gibi böyle bir ibare de düşmek lazım. O yüzden OVS'ye soracağım arkadaşlar. Olur da bir aksilik falan varsa silip bir daha yapmak zorunda kalabilirim. Haberiniz olsun.
+
+5
+00:01:38,995 --> 00:01:52,016
+Sohbetinden sonra dille ilgili de bir sohbet yapacağız. Daha önce ilk dersimizde size demiştim, dünyada kaç dil var, insan hayatında konuşmak ne kadar önemli, bunlarla ilgili olarak.
+
+6
+00:01:53,140 --> 00:02:21,139
+İşte istatistiki bilgiler dikkatinizi çeker diye düşünüyorum demiştim. Bu derste de size çeşitli hikayeler de anlatacağım. Mesela kelimeler nereden gelmiş? Her birinin farklı farklı hikayesi var. Bu ders kanguru kelimesi, dilimize hangi dilden girmiş, nasıl bir hikayesi var? Ondan bahsedeceğim. Bilen vardır, hanım kelimesi nereden geliyor? Ondan sonra okey, bütün dünya dillerinde ortak bir kelimeymiş arkadaşlar. O ve K diye kısaltar.
+
+7
+00:02:21,139 --> 00:02:47,219
+Yani tecrübe etmedim. Bir başka dilde konuşan kişiye sormadım. Okey nedir biliyor musun diye tek tek sormadım ama öyle diyorlar. Yani okey kelimesi bütün dünyada tamam anlamında kullanılabiliyormuş. Onun da çok enteresan bir ortaya çıkış hikayesi var. Yani farklı farklı hikayeler var. Bunlardan bahsedeceğim. Ama önce tabii ki genel olarak dil nedir?
+
+8
+00:02:48,276 --> 00:03:06,176
+Ve insanı insan yapan bir özelliktir diye söyleniyor konuşma için, dil için. Neden böyle söyleniyor? Veya lisede, kitaplarda duymuşsunuzdur ya da okumuşsunuzdur şöyle bir şey yazıyordu. Dil canlı bir varlıktır. Neden böyle söyleniyor?
+
+9
+00:03:16,276 --> 00:03:34,756
+Diller, yaşayan diller, bunlar bu tabirler nedir, nasıl örnekler verebiliriz bunlardan bahsedeceğim. Yapay dil nedir, doğal dil nedir bunları söyleyeceğim. Bir de dilin doğuşuyla ilgili olarak dil bilimcilerin bazı teorileri var. Daha önce ortaya attıkları.
+
+10
+00:03:36,180 --> 00:04:04,160
+Çok çeşitli bilgiler var bununla alakalı olarak da ben de size bunlardan bahsedeceğim. Bu dersimizin konusu bunlar arkadaşlar. İlk olarak dil nedir diye sorsam hepiniz bir şeyler söylersiniz arkadaşlar. Türkçe konuşan herkes dil nedir biliyor tabii ki. Sözlüğü açıp baktığınız zaman sözlükte 13 farklı dil tarifi var. Hani sözlükteki dil tarifi şöyle geçiyor. Mesela birinci numara olarak organ diye.
+
+11
+00:04:04,180 --> 00:04:28,660
+İki de insanların düşündüklerini ve duyduklarını bildirmek için kelimelerle veya işaretlerle yaptıkları anlaşma, lisan, zeban. Böyle başlıyor. 13 farklı dil tarifi var. Ben bu ikinci, iki numarada tarif edilen insanların duygu ve düşüncelerini anlatmak için kullandığı bir anlaşmalar sistemidir diye tabii ki söyleyebilirim.
+
+12
+00:04:29,172 --> 00:04:39,332
+Ancak bu tanım doğru da olsa yine de daha ayrıntılı anlatılmasının da gerekli olduğunu bildiğim bir tarih.
+
+13
+00:04:39,332 --> 00:04:46,272
+Şöyle ki, insanların konuştuğu dil, mesela burada iki soruyu sormak lazım ki tarifi ekleyelim.
+
+14
+00:04:46,732 --> 00:04:53,292
+Arkadaşlar, bu iki soru bir dil yeteneği ile doğuyor muyuz? Yoksa sonradan mı ediniyoruz?
+
+15
+00:04:53,772 --> 00:04:57,172
+İkincisi, insanı insan yapan bir özellik olarak verilmiş.
+
+16
+00:04:57,172 --> 00:05:15,172
+Dediğine göre insan dışındaki canlılar dil yeteneğine sahip değil mi? Şimdi bu ikisiyle alakalı da dil bilimciler ciddi ciddi araştırmalar yapmışlar. Çeşitli kaynaklarda pek çok kitap okudum senelerce ve bu kaynaklardan biriktirdiğim hikayeler de var. Mesela ilki arkadaşlar...
+
+17
+00:05:16,148 --> 00:05:36,807
+Amerikalı bir profesör demiş ki, biz acaba hayvanlara haksızlık mı yapıyoruz? Onlar da bizim gibi eğitim alsalar, bizim gibi sevgi görseler, medeni bir ortamda büyüseler, acaba insanlar gibi sosyalleşebilirler mi? Bununla ilgili bir deney yapmaya karar vermiş.
+
+18
+00:05:38,451 --> 00:05:49,551
+Şempaze insan türüne çok yakın bir yapıda olduğu için demiş ki çocuğu doğduğu zaman bir şempaze yavrusu alıp eve gelmiş.
+
+19
+00:05:50,067 --> 00:06:15,668
+3 sene aynı çocuğuna verdiği sevgiyi o Şempaze'ye de göstermiş, eğitimi ona da vermiş. Ondan sonra 3 yaşına geldiği zaman kendi çocuğu uzun uzun cümleler kurabiliyorken Şempaze sadece ve sadece tek kelimelik, o da bizim gibi değil tabii ama bir şekilde iletişim kurabilecek gibi komutları konuşup algılayabiliyor hale gelmiş.
+
+20
+00:06:18,067 --> 00:06:19,528
+Belli bir aşama olmuş.
+
+21
+00:06:20,211 --> 00:06:48,211
+Hani gel, yat, otur, kalk gibi komutları o da yetmiş kelime olduğu söyleniyor. Yani ne kadar eğitim alsalar da bir insan dışındaki canlının bizim gibi konuşabilme yeteneği olmadığını söyleyebilirim. Yani yapılan araştırmalar bunu gösteriyor. Peki insan bir yani dil yeteneğiyle doğuyor mu? Sonradan mı geliştiriyor? Arkadaşlar bununla ilgili de dil bilimciler bir sürü şey anlatıyor.
+
+22
+00:06:48,211 --> 00:07:03,471
+Bir kere öncelikle şunu söyleyebilirim. Sağır olan insanların konuşma becerileri gelişmiyor. Bunu biliyoruz zaten. Şu durumda demek ki çevresel faktörler çok önemli.
+
+23
+00:07:03,471 --> 00:07:16,211
+Yani insanın geliştirmesi gereken ve sosyal hayat içerisinde öğrendiklerimizle bu yeteneği kazandığımızı pekala söyleyebiliriz. Ama diğer taraftan yapılan deneylere de bakıl...
+
+24
+00:07:16,211 --> 00:07:31,751
+Diyebiliriz ki insan bu yetenekle doğuyor. Bu konuşma becerisi yeteneği. Hatta bir yerde tam olarak bilemiyorum ama anatomik yapıyla ilgili fikri olanların daha detay açıklamalar yapabileceğini düşünüyorum bu konuda.
+
+25
+00:07:31,751 --> 00:07:35,751
+Dil bilim kitaplarından birinde anatomik olarak da...
+
+26
+00:07:36,500 --> 00:08:03,879
+Bu konuya yatkın olduğumuz, hatta bu sebeple bir şey daha aşağıdaymış anatomik yapımızda. Bu yüzden de yemek yerken soluk borunusuna kaçma şeyi oluyor ya, tehlikesi. Bu bize aynı zamanda konuşma becerisi de veren bir özellik olduğu yazıyordu. Ama tabii bunu bir doktora sormak lazım, bir anatomik, o konuda bilgisi olan insanlara da sormak lazım diyebilirim.
+
+27
+00:08:04,500 --> 00:08:12,739
+Çok meşhur bir hikaye vardır. İşte M.Ö. tarihçi Herodot anlatmış bunu bize. Firavun Pisanmatik.
+
+28
+00:08:13,172 --> 00:08:38,892
+İnsanoğlu ilk olarak hangi dili konuşuyor? İlk olarak hangi kelimeleri kullandı? Bunu merak ettiği için günümüzde bu yasaklı deneyler diye geçiyor. Ama şöyle bir deney yapmış arkadaşlar. Deneyde bir çocuğu tecrit ettiriyor doğduğun andan itibaren. Yani her türlü ihtiyacını karşılıyorlar ama yanında hiç konuşmuyorlar.
+
+29
+00:08:41,172 --> 00:08:52,692
+Yani o dönemde Mısırlıların konuştuğu dilde değil de çok daha önce Anadolu topraklarında konuşulmuş bir dil olan Frikçe'de Bekos demiş.
+
+30
+00:08:53,524 --> 00:09:17,723
+O da ekmek anlamına gelen bir şey. O yüzden de mesela hani köklerinin oralara uzandığını düşünüyorlarmış. Böyle bir hikaye vardı. Şimdi arkadaşlar, hani düşünüyorum yani hiç yanında konuşulmayan bir çocuk ilk olarak mevcut dillerden birinde bir kelime sizce söyleyebilir mi? Hani bu günümüzde açıklama yapabileceğimiz bir şey.
+
+31
+00:09:19,251 --> 00:09:31,591
+Milyonluk soru muydu bu? Bekos sorusu mu? Evet, yani seviyorlar bu soruyu, genelde soruyorlar. Evet, Bekos, Pirikçe, ekmek demektir. Peki, bu şöyle.
+
+32
+00:09:32,788 --> 00:09:44,008
+Yani biz biliyoruz ki arkadaşlar bugün bilimin, ilmin, tıbbın geldiği noktaya baktığımızda insanoğlu aslında anne karnında da duymaya başlıyor.
+
+33
+00:09:44,307 --> 00:09:50,967
+Yani bunu böyle de açıklayabiliriz ki mutlaka duymuştur. Anne karnında duymuştur, sonra duymuştur.
+
+34
+00:09:51,107 --> 00:10:00,000
+Duymadan konuşması aslında bilimsel açıklamaların, açıklamalar doğrultusunda düşündüğümüzde pek de mümkün değil.
+
+35
+00:10:00,000 --> 00:10:12,840
+Hatta bununla ilgili olarak size Barış Özcan'ın 100 bebek bir odaya kapatılıp büyütülürse hangi dili konuşurlar videosunu izlemenizi tavsiye ederim.
+
+36
+00:10:12,960 --> 00:10:17,519
+Çok güzel bir video dikkatinizi çekecektir. Uzun olduğu için dersten sonra izleyin.
+
+37
+00:10:18,039 --> 00:10:24,200
+Barış [öğrenci]'ın 100 bebek bir odaya kapatılıp büyütülürse hangi dili konuşur?
+
+38
+00:10:28,000 --> 00:10:36,960
+[öğrenci]'ın tarihçilerinden, önemli aydınlarından İlyasoğlu Mercimek [öğrenci] 1432 yılında bir kabusname kitabı yazıyor.
+
+39
+00:10:37,299 --> 00:10:40,039
+Kabusname adlı bir kitap yazıyor daha doğrusu.
+
+40
+00:10:40,600 --> 00:10:51,840
+Ve bu kitapta diyor ki bir insan tek başına tecrit edilerek ve hiç dil duymadan büyürse sağır olan konuşmayacağı gibi onun da konuşması mümkün değildir.
+
+41
+00:10:56,000 --> 00:11:02,439
+Bunlar kendi aralarında bir dil ortaya çıkarırlar ve bu dili de başkaları anlamaz.
+
+42
+00:11:03,059 --> 00:11:07,700
+Ve arkadaşlar, tarihte benim tabii bu branşım olduğu için ben hep baktım bunlara.
+
+43
+00:11:08,120 --> 00:11:17,960
+İkizlerin sadece kendilerinin anladığı bir dil konuştuğu ve başkalarının bu dili bilmediğine dair kayıtlar var.
+
+44
+00:11:18,320 --> 00:11:23,340
+İkizler bazen kendi aralarında bir dil geliştirebiliyorlar. Bunu da başkaları anlamıyor.
+
+45
+00:11:24,000 --> 00:11:42,059
+şeyler olabiliyorsa eğer, o zaman zaten iki çocuk tecrit edilirse veya işte insanlardan ayrı bir yerde büyümek zorunda kalırsa, o ikisinin konuştuğu bir dil ortaya çıkar. Onlar oluştururlar bu dil, zaten kendiliğinden olur diye rahatlıkla söyleyebiliriz.
+
+46
+00:11:42,580 --> 00:11:56,519
+O halde arkadaşlar, yani insan dışındaki canlılar da elbette iletişim yeteneğine sahipler. Ama insanın konuşmasıyla aralarında fark var. Yani bizim bu derste anlatacağımızda şöyle bir fark var arkadaşlar.
+
+47
+00:11:57,919 --> 00:12:16,139
+Biz biliyoruz ki balinalarda konuşuyor, yunuslar, papağan, köpekler, kediler, kendi iletişim dilleri var. Ama bu iletişim dilinde hiçbir mesela fert, mesela balinaların herhangi biri o dile yeni bir şey katma özelliğine sahip değildir.
+
+48
+00:12:16,139 --> 00:12:25,919
+O dil neyse bir sonraki dilde, yani bir sonraki balina sürüsü içinde aynı şey geçerlidir. Ama bizde öyle değil. Bizde dile...
+
+49
+00:12:25,919 --> 00:12:44,759
+Herkes bir şeyler katar. Bir oluşum, yani bir canlı denmesinin sebebi odur. Sürekli bir değişim, gelişim. Biz nasılsak, onda da bir evrilme kurumu söz konusu olduğu için canlı bir varlık diyorlar. Yani bizim konuştuğumuz dil gibi değildir. Bizde zeka ile alakalıdır.
+
+50
+00:12:45,364 --> 00:13:10,403
+Birinin konuşmasına bakarak onun karakteri, kültürü, eğitimi, günlük hayattaki tercihleri bunlarla ilgili fikir sahibi olursunuz arkadaşlar. Dolayısıyla da bunu bir hayvan için söylemek mümkün değil. Bir iletişim dilleri var ama bizim bahsettiğimiz evet insana özgüdür. Ve insan doğuştan sahiptir bu özelliği, sonradan da geliştirir.
+
+51
+00:13:13,364 --> 00:13:15,444
+Yani eşliğinde bunu söyleyebilirim size.
+
+52
+00:13:16,124 --> 00:13:17,204
+Şimdi geliyorum.
+
+53
+00:13:18,163 --> 00:13:40,364
+Dilin değişken bir yapısı var mı? Var. Arkadaşlar, biz değiştikçe dil de değişiyor. Bakın pandemi dönemi yaşadık, bir sürü kelime eklendi pandemi döneminde dilimize. Daha önce hiç duymadığımız kelimeler, mesela pik yaptı, böyle bir kelime var. Filyasyon ekibi vardı mesela hastaysa o hastanın yanına giden.
+
+54
+00:13:46,163 --> 00:14:02,604
+Bakın, o kadar çok kelime eklendi ki aynı mesela bu bir başımıza gelmiş bir olay, kötü bir olaydı, birçok kelime eklendi ama yani teknik gelişmeler de oluyor, işte farklı şeyler de oluyor.
+
+55
+00:14:02,604 --> 00:14:10,004
+Mesela bakın, bilgisayar kelimesi 1990'lı yıllarda dilimize girmiş ama ilk olarak kompütür diye girmiş.
+
+56
+00:14:10,548 --> 00:14:37,107
+Bilgisayar kelimesi Öztürkçe bir kelimedir. Onun yerine, kompütür yerine kullanmışız. Ama yani 1990'dan önce böyle bir kelime yok arkadaşlar dilimizde. Şu anda hani biz artık benimsedik, kullanıyoruz. Bunun gibi sürekli değişen, gelişen dünyada elbette kelimelerde sabit değildir. Hep değişiyor, gelişiyor söyleyebiliriz. Hatta bakın.
+
+57
+00:14:37,652 --> 00:14:45,112
+Bir dili inceleyerek o dili milletin nasıl insanlar olduklarını bile tahmin edebilirsiniz.
+
+58
+00:14:45,752 --> 00:14:49,732
+Hani bunu söyleyebilirim. Neden? Çünkü o dilin kültürüyle de alakalıdır.
+
+59
+00:14:50,092 --> 00:14:57,132
+Mesela Türkçe sözü incelediğinizde kelime türlerinden birinin diğerlerinden daha fazla olduğunu görebilirsiniz.
+
+60
+00:14:57,532 --> 00:15:05,252
+Sizce hangisi? İsim, sıfat, zamir, zarf, fiil, ondan sonra edat, tümleş, her neyse.
+
+61
+00:15:05,652 --> 00:15:14,312
+Fiildir tabii ki [öğrenci]. Tabii ki fiil. Bravo. Fiildir. Çünkü Türk kültüründe biz göçebe bir gelenekten geliyoruz zaten.
+
+62
+00:15:14,751 --> 00:15:36,971
+Evet, hani göçebe bir şey yapımı, bir de Türkler, şu çılgın Türkler yok mu? Var ya, böyle bir özelliğimiz de var. Hani bize aktif, dinamik, heyecanlı bir yapımız yok mu? Var arkadaşlar. Biz böyle hani sessiz, sakin, hani böyle insanlar mıyız? Hayır. Yani bu yansıyor, kültürel olarak da yansıyor, onun örneklerini de birazdan vereceğim.
+
+63
+00:15:39,443 --> 00:16:06,483
+Mesela selfie kelimesi, sonradan spoiler vermek. Mesela buna Türkçe karşılık sürpriz kaçıran diye bulmuşlar. Spoiler İngilizce'den dilimize girmiş kelimelerden biridir. Ondan sonra emrivaki var, yine doğu dillerinden dilimize girmiş. Hep böyle diller arasında da bir geçiş vardır. Sizce biz en fazla kelimeyi hangi dile vermişizdir?
+
+64
+00:16:06,868 --> 00:16:09,468
+Yani bu da geçiyor pek çok kaynakta.
+
+65
+00:16:10,328 --> 00:16:16,288
+Yani dünya üzerinde bugün mevcut konuşulan hangi dile en fazla kelime vermişiz?
+
+66
+00:16:16,980 --> 00:16:37,080
+Evet, Yunanca aslında Latince ile çok bağlantılıdır. Yani mesela bugün İngilizcenin yarısı Latince'den geçtiyse, diğeri de Grekçe'den izler taşır. Batı dilleriyle Yunanca daha bağlantılıdır ama kesinlikle Sırpça elbette arkadaşlar.
+
+67
+00:16:37,080 --> 00:16:44,980
+Evet, Arnavutça'da Balkan dilleriyle daha alakalı, ilintili diye söyleyebilirim ama Sırpça'ya çok fazla kelime...
+
+68
+00:16:44,980 --> 00:17:00,460
+Ben duyunca şaşırmıştım. Hani nasıl? Sırpçe yapalım diye. Ama ortak kelimelerimiz çokmuş. Peki, İngilizce'de yok mu? Son dönemde mesela İngilizce'den çok kelime alıyoruz. Arkadaşlar, ortak 800 kelimemiz varmış İngilizce ile.
+
+69
+00:17:01,076 --> 00:17:25,056
+Bizim de verdiklerimiz var. Mesela yoğurt kelimesini bilirsiniz ama onun dışında perişan, dolma, baklava, paşa, köşk, balkan, yörük, han, düdük, bu ayran, ondan sonra ordu, kahve bu kelimeleri de bizim dilimizden aldıkları, sonra tabii kendi dillerinde mesela yoğurdu bile tam olarak yoğurt diye söylemiyorlar.
+
+70
+00:17:25,056 --> 00:17:27,956
+Yani biraz daha farklı hale getirdikleri söyleniyor.
+
+71
+00:17:29,076 --> 00:17:38,675
+İngilizce diyor. Peki sizce, Türkçe sözlüğü incelediyseniz de oradan da bir fikriniz vardır ama en fazla hangi dilden kelimeleri almışızdır?
+
+72
+00:17:42,067 --> 00:17:59,627
+Arapça, bu arada özel isimdir, büyük harfle yazın, Arapça diyorsunuz. Şimdi Arapça ve Fransız, evet ikisi de doğru arkadaşlar. Farsça, yani Farsçadan da çok kelime almışız, Persler biliyorsunuz yani onlar da çok köklü bir şeydi, İran'da konuşuluyor Farsça.
+
+73
+00:18:02,067 --> 00:18:18,288
+Dünyanın en fazla kelimesine sahip dili diye söyleniyor. Milyonlarca kelime var Arapça içerisinde. Arkadaşlar, biz Müslüman olduktan sonra Arapçadan çok fazla kelime almışız. Bakın sözlüğü açık bakın M maddesi.
+
+74
+00:18:18,488 --> 00:18:28,448
+Mesela 12 milyon diyor [öğrenci]. Evet yani 12 milyon, 12 milyon. Peki Türkçe'de kaç, sözlükte kaç kelime var biliyor musunuz? Türkçe sözlükte.
+
+75
+00:18:31,188 --> 00:18:49,508
+86 bin çok iyi bir tahmin ama bu eski bir şey. Bugünkü güncel sözlükte 115 binin üzerinde kelime var. Ama Türk Dil Kurumu'nun açıklamasına göre bizde halk dilinde yaşayan, hani yöresel bazı if, mesela Çinmek Anadolu'da kullanılır.
+
+76
+00:18:49,508 --> 00:18:59,188
+Yani ama onun gibi mesela literatüre geçmemiş ama halkın kullandığı kelimeler vardır. Çinmek geçmiş ama başka kelimeler hani yöresel olarak doğur.
+
+77
+00:18:59,188 --> 00:19:11,368
+İstanbul'da, Trakya'da, Batı'da halk ağzında yaşayan kelimeler onları da dahil ederseniz hani türkülerde var, şarkılarda var. O zaman 600 bini geçtiği söyleniyor.
+
+78
+00:19:12,307 --> 00:19:26,788
+Arapçadaki 12 milyon kelime hesap sonucu mümkün olan kelime sayısı değil mi? Şimdi bilmem, onu bilemiyorum tam olarak ama ben de mesela çok fazla kelime milyonlara ulaştığını, o da olabilir.
+
+79
+00:19:26,788 --> 00:19:39,067
+Alk arasında kullanılan 12 milyon kelime yok diyebilirim. Doğrudur, tabii ki doğrudur. Hatta şöyle söyleyeyim, bizim mesela 600 bin kelimemiz var ama günlük hayatta kaç kelimeyle konuşuyoruzdur sizce?
+
+80
+00:19:40,307 --> 00:19:54,668
+üniversite gençliği arasında bir araştırma yapılıyor. Ortalama olarak konuştuğumuz kelime sayısı, tabii eski bir araştırma bu ama günümüzde de benzerdir. Kaçtır mesela? Günlük hayatta sizce kaç kelimeyle konuşuyoruzdur?
+
+81
+00:19:55,208 --> 00:20:07,408
+600 diyen var, 500 diyen var. İyi tahminler. 1400, 400. Yani iyi tahminler. Peki. Arkadaşlar, ortalama olarak söylenenlere göre 2000 kelimeyle konuşuyormuşuz.
+
+82
+00:20:08,307 --> 00:20:10,748
+Bunlardan küfürleri de atın.
+
+83
+00:20:12,608 --> 00:20:18,968
+Şimdi bakın, bunu şöyle söyleyeyim, günlük hayatımızda iki bir kelime kullanabiliyormuşuz.
+
+84
+00:20:19,087 --> 00:20:22,228
+Aynı kelimeleri değil, farklı farklı kelimeleri düşündüğümüzde.
+
+85
+00:20:22,228 --> 00:20:25,327
+Şimdi bunu şöyle izah edeyim size.
+
+86
+00:20:25,888 --> 00:20:27,228
+Arkadaşlar, Shakespeare'in...
+
+87
+00:20:27,923 --> 00:20:54,643
+İngilizler bütün literatürün incelemişler ve tek tek kaç kelime, çünkü biliyorsunuz yazarlar bir dile çok şey katarlar. Onlar mesela eğer bir kelimede eksiklik varsa o kelimeyi de eklerler. Mesela ben Yaşar Kemal kitabı okurken ikirciklendi ifadesini vallahi ilk defa orada duydum. İkirciklendi vazgeçti, çok kullanıyor ve de bunu. Meğerse ikilemde kaldı anlamındaymış.
+
+88
+00:20:55,923 --> 00:21:03,703
+İngilizler, İngilizler, biliyorsunuz Shakespeare çok önemlidir İngiliz Edebiyatı'nda.
+
+89
+00:21:03,955 --> 00:21:18,215
+80 bin farklı kelime kullandığını söylüyorlar 17. yüzyılda. Şimdi arkadaşlar bakın, kelime dağarcığımızın bizim düşünce sistematikimizle ne kadar etkili olduğunu anlatmak açısından söylüyorum.
+
+90
+00:21:25,811 --> 00:21:46,291
+80 bin kelimelik Shakespeare külliyatını okumak istese kaçta kaçını anlar? Bakın yuvarlak bir hesap bu. Hani yuvarlak bir hesap. Kaçta kaçını anlar? Hesap eder misiniz? 2 bin, 80 bin. Oranlar mısınız? Kaçta kaçı oluyor? Yüzde? Veya işte kaçta kaçı? Neyse.
+
+91
+00:21:48,084 --> 00:22:07,884
+Çeyreği, daha da azı değil, %2.5. Evet, ben öyle biliyorum. Evet, %2.5 arkadaşlar, böyle yuvarlak hesapla baktığımız zaman %2.5'unu anlar. Bu ne demektir? Yani kelime ne kadar çok şey bilirsen, düşünce sistematiğin o kadar gelişir demektir.
+
+92
+00:22:16,084 --> 00:22:28,523
+George Orwell'ın 1984 romanını bilirsiniz. Mutlaka bilirsiniz. Hani okumamış olabilirsiniz ama okuyan da vardır. Duymuşsunuzdur. Çok meşhur çünkü. Ve İngilizcesinden okuyan da çok kişi oluyor.
+
+93
+00:22:29,172 --> 00:22:43,372
+Vardır mutlaka aranızda okuyan. Şimdi orada bir şey var, Big Brother var. Yani büyük birader herkesi göz ekliyor, bir baskı var. Herkesin işte ensesindeler. Yani öyle söyleyebiliriz.
+
+94
+00:22:43,372 --> 00:22:57,152
+Ve o dönemki politika insanları hani bir nevi koyun gibi uysal hale getirebilmek için dilden kelimeler atıyorlar. Mesela işte güzel, çirkin. Birini atıyor, güzel, güzel.
+
+95
+00:22:57,172 --> 00:23:03,031
+Ne oluyor? O kelimeler azaldıkça senin düşünme kapasiten de azalıyor.
+
+96
+00:23:03,412 --> 00:23:08,271
+Yani şöyle düşün, mesela isyan kelimesini atarsan isyan etmeyi de düşünmez insan.
+
+97
+00:23:08,951 --> 00:23:22,951
+Çünkü kelimeler, Kant'ın sözüdür bu, hani kelimeler sessizce konuşur, düşünce sessizce konuşmak demektir.
+
+98
+00:23:22,951 --> 00:23:25,172
+Yani kelimelerle yine düşünürsün.
+
+99
+00:23:25,172 --> 00:23:44,832
+Evet, mesela diktatör kelimesini atıyorlar dilden. Ondan sonra o kitabı okuduysanız bu dille düşünce arasındaki bağın nasıl yazarın ustaca kurduğunu görürsünüz. Hani böyle bir şey var. O yüzden kelimeleri çoğaltmak gerekir diye söyleyebilirim.
+
+100
+00:23:45,332 --> 00:24:01,112
+Yaratır. Yaratsa bile çok uzun zaman alır. Evet, yaratır ama uzun zaman alır. [öğrenci]. Yani ancak böyle bayağı ezildikten sonra şey ama mevcut kelimeler varsa insanlar onları düşünerek daha farklı bir yol alabiliyorlar. Yani böyle söyleyebiliriz.
+
+101
+00:24:01,875 --> 00:24:21,175
+Bugün mesela toplumda insanların kavga etmesinin de temelinde biri anlatıyor, öbürünün kapasitesi bunu anlayacak kadar fazla değil. Çünkü sen ne kadar iyi anlatırsan anlat, karşı taraf ancak kapasitesi kadarını anlıyor. Öyle değil mi? Siz de bilirsiniz böyle değil mi? Evet.
+
+102
+00:24:22,259 --> 00:24:41,759
+Peki, bak okuyan arkadaşlar var, yorum yapıyorlar. Çok etkileyici bir kitaptı gerçekten. Dünya tarihinin önemli kitaplarından biridir. Evet, yani düşünceyle çok ciddi bir bağlantısı olduğunu dilin rahatlıkla söyleyebiliriz. Ama aynı zamanda değişken bir yapısı var mıdır? Evet, bunu söyleyebiliriz.
+
+103
+00:24:50,259 --> 00:24:52,680
+Son guru kelimesinin hikayesini anlatayım.
+
+104
+00:24:53,491 --> 00:25:04,091
+1700'lü yıllarda kaptan James Cook yeni kıtada, yani muhtemelen Avustralya'da bir hayvan görüyor.
+
+105
+00:25:04,331 --> 00:25:09,711
+Yani daha önce hiç öyle bir hayvana rastlamamış. Zıplıyor, yavrusunu kesesinde taşıyor.
+
+106
+00:25:09,991 --> 00:25:15,811
+Ve kaptan James Cook heyecanla aborjinlerin yanına yaklaşıyor ve işaret diliyle soruyor.
+
+107
+00:25:16,051 --> 00:25:18,152
+Bu hayvanın adı nedir?
+
+108
+00:25:18,612 --> 00:25:34,612
+Aborjinler bakıyorlar, kangoro diyorlar. Kaptan James Cook emin olmak için bir daha soruyor. Yine işaret ediyor, bu hayvanın ismi nedir? Ve yine aynı cevabı alıyor, kangoro diyor yerli halk. Kaptan James Cook da...
+
+109
+00:25:35,347 --> 00:25:41,087
+Çok heyecanla ve mutlulukla seyir defterinde yazıyor.
+
+110
+00:25:41,407 --> 00:25:45,227
+Yeni kıtada bir hayvan türü var. Daha önce hiçbir kıtada rastlamadım.
+
+111
+00:25:45,627 --> 00:25:48,527
+Onun adı da söylenenlere göre kangoro.
+
+112
+00:25:48,907 --> 00:25:52,567
+Ve İngilizceye geçiş hikayesi budur arkadaşlar, kelimenin.
+
+113
+00:25:53,127 --> 00:25:56,487
+Ve oradan da bizim dilimizde kangoro olarak geçmiştir.
+
+114
+00:25:56,487 --> 00:26:02,827
+Ama sonradan anlaşılıyor ki aslında yerli dilinde söylenenlere göre kangoro.
+
+115
+00:26:03,347 --> 00:26:31,027
+Ne dedin anlamadım anlamına gelen bir ifadeymiş ya da bilmiyorum anlamına gelen bir ifadeymiş. Bir yanılgıdan doğmuştur ama kanguru kelimesinin dünya literatüründe yer alma hikayesi budur. Bir diğer hikaye hanım hikayesidir. Duymuşsunuzdur belki. Cengiz Han bazıları da metanmen atfediyor ama ben Cengiz Han diye anlatayım. Cengiz Han bir gün bütün hanlarını toplar. Der ki ben Cengiz Han.
+
+116
+00:26:31,347 --> 00:26:53,487
+Hepinizin hanıyım. Ben hanların hanıyım. Ondan sonra o sırada eşi girer içeriye. Cengiz Han der ki o da benim hanım. Benim hanım. Dolayısıyla arkadaşlar kelimenin ondan sonra hanım olarak geldiği söyleniyor, anlatılıyor. Okey kelimesinin de çok ilginç bir hikayesi var.
+
+117
+00:26:54,548 --> 00:27:08,927
+Bütün dünya dillerinde kullanılan bir kelimeymiş. Arkadaşlar, bir şey doğru mu bilmiyorum ama bir politikacı Martin Van Buren, 1840'da Amerika'da,
+
+118
+00:27:08,927 --> 00:27:20,967
+işte all correct, yani hepsi doğru anlamına gelecek bir ifade vardır ya, onu ok diye, hepsi doğru anlamına gelen metinleri, gelen belgeleri o şekilde imzalıyormuş.
+
+119
+00:27:22,548 --> 00:27:41,028
+Hani sen bizim için doğrusun diye o okeyi hani tamam sana onay veriyoruz anlamında benimsemişler ve bu zamanla bütün dünyaya yayılmış diye söylenen yani tamamen yanlış anlaşılmaktan aslında kaynaklı bir şey olduğu söyleniyor.
+
+120
+00:27:50,548 --> 00:28:14,367
+Artıklı kelimeler ortaya çıkartmışlar ama dil o kadar doğal seyreder ki arkadaşlar, yani bunda başarılı olamamışlar. O yüzden söylenene göre bütün dünya dillerinde O ve K yazsanız herkes bunun olay anlamına gelen bir kelime olduğunu anlarmış. Yani öyle bir hikayesi olduğunu söyleyebilirim. Şu durumda elbette arkadaşlar dil değişken bir yapıdadır ve canlı varlıktır.
+
+121
+00:28:18,548 --> 00:28:26,307
+Sadece bize özgü ifadeler var. Aramızda şifrelenmiş gibi. Mesela aranızda ana dili Türkçe olmayan var mı?
+
+122
+00:28:31,700 --> 00:28:51,319
+Ona bir ifade soracağım. Türkçe bilen herkes o, mesela Maya, sana bir şey sormak istiyorum. Ben desem ki, çocuğun başını bağladılar. Burada ne demek istenmiştir? Çocuğun başını bağladılar, sormayın. Ne demek istiyorum? [öğrenci] sana da sorayım.
+
+123
+00:28:55,188 --> 00:29:07,908
+Bak şimdi mesela bu bizde yani sanki aramızda şifreli gibi arkadaşlar. Türkçe konuşan insan bunu anlar. Yani ne demek istedim? Çocuğun başını bağlamışlar. Ne anlarsınız?
+
+124
+00:29:19,028 --> 00:29:21,107
+[öğrenci] yok mu? Allah Allah.
+
+125
+00:29:22,996 --> 00:29:34,855
+Evet, evet. Yani şimdi Türkçe konuşanlar başını bağladılar ifadesini. Aynı zamanda işte evlenmek için sözlediler, nişanlandılar anlamına geldiğini de bilir.
+
+126
+00:29:34,855 --> 00:29:43,736
+Şimdi bakın, kelime kelime öğrenenler kültürel bazı ifadelerde, sırf bize özgü olan bazı ifadelerde takılıp zorlanabilirler.
+
+127
+00:29:44,236 --> 00:29:50,875
+Bir İngilizce öğretmenliği öğrencim, İngilizce öğretmenliğinde okuyan bir öğrencim demişti ki,
+
+128
+00:29:50,996 --> 00:29:59,576
+Hocam dedi, biz bu konuda eğitim alıyoruz dedi ama kolay gelsin İngilizce'ye çeviremedim demişti. Kolay gelsin. Bakın bu kadar basit bir şey.
+
+129
+00:30:00,000 --> 00:30:18,840
+Hani hayırlısı olsun. Çevir İngilizce'yi. Ondan sonra eyvallah. Yani çok kullanılıyor mesela. Çevir İngilizce'yi. Kısasa kısas yani. Belki o vardır. Başımın üstünde yerin var. Bir kahvenin kırk yıl hatırı olur. Var mı aklınıza gelen böyle ifadeler? Bir iki de siz söyleyin.
+
+130
+00:30:19,700 --> 00:30:26,360
+İki lafın belini kıralım. Mesela Maya. İki lafın belini kıralım desem. Ne demek istiyorum?
+
+131
+00:30:30,387 --> 00:30:38,048
+Kısasa kısas mı o dediğin? Evet, ben mesela o tahmin ettim, olur olabilir diye. Sohbet edelim.
+
+132
+00:30:38,675 --> 00:31:04,935
+Evet, yani iki lafın belini kıralım, sohbet edelim ama mesela birebir çevirirseniz bunu anlamakta tabii ki zorlanırlar. Şöyle bir baktığınızda arkadaşlar, Türkçe sözlüğe aslında bizimle ilgili de fikir sahibi olabiliyorsunuz. Çünkü bizde hangi hassasiyetler varsa biz ona o kelimeleri çoğaltmışız. Şöyle söyleyeyim, mesela akrabalık bizim dilimizde, akrabalıkla ilgili çok kelime vardır.
+
+133
+00:31:06,675 --> 00:31:17,076
+Sayalım bakalım, ben bile bazıları ay şu muydu, bu muydu diye düşünüyorum. Mesela bakın, yenge var, bacı var. Mesela şöyle bir içten bacımsın dedin mi, bizde iç biter.
+
+134
+00:31:17,076 --> 00:31:33,695
+Yani bacımsın falan yani. Dünür var ya, dünür, kayın, kayınbirader, görümce, amca, evet, ondan sonra enişte, baldız var, değil mi? Yani bizde mesela baldız, baldan tatlıdır, esprileri yapılır.
+
+135
+00:31:34,675 --> 00:31:39,276
+Bunu ancak Türkçe'yi konuşan insanlar anlar ve güler diye düşünüyorum.
+
+136
+00:31:39,915 --> 00:31:45,675
+Evet, peki. Şimdi ama kirve var ya, kirve. Yani böyle...
+
+137
+00:31:46,836 --> 00:31:55,755
+Yurt dışından gelenler şaşırıyorlardır tahmin ediyorum. Bu neden? Çünkü bizde akrabalık çok önemli de o yüzden bir ritüel böyle şeyler.
+
+138
+00:31:56,175 --> 00:32:03,795
+Şimdi düşünün arkadaşlar, şimdi ben bir kelime söyleyeceğim. Bunu İngilizce'ye çevirebilir misiniz? Mesela amca. İngilizce karşılığı nedir?
+
+139
+00:32:06,635 --> 00:32:09,475
+Uncle. Peki dayının İngilizce karşılığı ne?
+
+140
+00:32:11,475 --> 00:32:12,275
+Dayının?
+
+141
+00:32:13,635 --> 00:32:14,155
+Unk.
+
+142
+00:32:14,483 --> 00:32:42,423
+Ankl tabii ki. Neden ayrı kelime vermemişler? Onlar da bizim kadar önemli değildi. O yüzden Ankl işte. Ama bizde dayı. Mesela dayıyla ilgili hani birçok mesela ne bileyim yani ileride iyi bir işe girmek istiyorsan sana bir dayı lazım. Bak şimdi biz şimdi orada amca değil, dayıdır oradaki. Yani bizde ayrı ayrıdır. Anlatabiliyor muyum? Ya baldız nasıl çevireceksin ya? Bacanak hadi çevir. Bak mesela bacanağı Yunanca'ya verdiğimiz kelimelerden biridir.
+
+143
+00:32:42,483 --> 00:33:08,563
+Yunanca'ya biz vermişiz. Bacanakisi olarak Yunanca'da yaşıyor mesela bacanak. Yani tamamen yeğen var. Evet, yani böyle enteresan bir şey var. Bunların İngilizcesi de zorlanırsınız. Birden fazla kelimeyle açıklamak zorunda kalabilirsiniz. Yenge'yi mesela ne demek olduğunu. Çünkü tek kelimeyle bir karşılık bile vermemişler. Onların kültürlerinde yok. Kesinlikle kültürel yapı yansıyor.
+
+144
+00:33:10,483 --> 00:33:26,483
+Bizim dilimizde savaş demenin altı farklı yolu var. Eş anlamlılarını söyler misiniz? Savaş 1, başka? Cenk 2, başka? Muharebe 3, harp 4, başka? Harp.
+
+145
+00:33:26,483 --> 00:33:34,183
+Biraz böyle İslami'yi düşünün. Hatta iki kelime var. Cihat 5, bir de bir tane daha var.
+
+146
+00:33:34,548 --> 00:34:02,307
+G ile başlıyor. Taarruz biraz farklı. Ama yakın anlamlı kelimeler grubuna giriyor. Gaza derseniz, garb farklı. Gaza derseniz, evet. Gaza derseniz olur. Şimdi bakın, niye biri yetmedi? Niye? Çünkü Türklerin tarihine baktığınız zaman biz savaşçı bir toplumuz, yani bunu inkar mı edeceğiz? Hayır yani tarihte çok büyük bir, mesela kurtuluş mücadelemiz de var. Değil mi?
+
+147
+00:34:02,548 --> 00:34:05,347
+Yani bir Çanakkale Savaşı var, Kurtuluş Savaşı var.
+
+148
+00:34:05,347 --> 00:34:12,688
+Ama hep yani her dönemde hani böyle aktif, dinamik, heyecanlı, fiiller, fazla şeyler falan. Bunun göstergesidir.
+
+149
+00:34:12,847 --> 00:34:19,188
+Ama mesela bakın bu kelimeyi eski modeline çevirmeye çalışırsanız o dilde savaşın karşılığı yokmuş.
+
+150
+00:34:20,052 --> 00:34:35,912
+Onlar da kar kelimesini 50 farklı kelime ile ifade edebiliyorlarmış. Yani yağış şekline göre, tutma şeyine göre, mevsimine göre, şusuna göre hepsine farklı isim vermişler. Bizde kar, farklı değil.
+
+151
+00:34:37,132 --> 00:34:47,912
+Arapçada mesela deve birçok kelime ile ifade ediliyormuş ama bizde sadece devedir. Hangi kültürel eğilimimiz varsa...
+
+152
+00:34:48,052 --> 00:34:56,992
+Kesinlikle yansıyor. Renkler çok fazladır. Çok renkli bir toplumuz. Mesela bakın bakır çalığı diye bir rengimiz var. Ne renktir bilen var mı? Bakır çalığı.
+
+153
+00:35:04,052 --> 00:35:11,812
+Yeşile çalan maviymiş. Bergamudi buydunuz mu? Bergamudi. Mesela sözlükte yer alan renklerdendir.
+
+154
+00:35:12,851 --> 00:35:40,851
+Mesela özellikle yazarlar bu tarz kelimeleri seçer, kullanırlar daha böyle şey olsun diye. Mor gibi. Sarımsı pembe diyorlar. Evet, ben herhalde mora yakındır. Sarımsı pembe. Peki. Gökçül var, mavi demekmiş. Küf yeşili diye bir ifade var arkadaşlar. Evet. O Bergamut ama başka bir şey. Benim bildiğim. Yani renk olarak benziyor mu tam bilemiyorum. Cam göbeği var. Evet. Ördek başı var. Tirşe maviliği. Mesela Said Faik Abası.
+
+155
+00:35:40,851 --> 00:35:49,512
+Asıyanık da çok kullanır, tirşe maviliği diye. Zerrin altın rengidir. Evet, yani renkler konusunda da çok iyiyiz yani bakarsanız.
+
+156
+00:35:49,512 --> 00:35:58,471
+Bu renkli bir millet olduğumuzu rahatlıkla söyleyebilirim. Peki, arkadaşlar, dilin bizi millet yapma özelliği var derler.
+
+157
+00:35:58,592 --> 00:36:05,331
+Biz mesela burada yaşarken çok fark etmiyoruz ama insanlar yurt dışına gittikleri zaman anlıyorlar bunun ne kadar önemli olduğunu.
+
+158
+00:36:05,851 --> 00:36:07,692
+Yahya Kemal Beyatlı diyor ki,
+
+159
+00:36:08,851 --> 00:36:14,731
+Çekilmediği yerler vatandır. Hakikaten arkadaşlar, ben ömrümde ilk defa Viyana'ya gittim.
+
+160
+00:36:15,699 --> 00:36:39,919
+Viyana'ya gittiğim zaman da mesela bazı bölgeler var. O bölgelerde Türkler yaşıyor ağırlıklı olarak. Orada kendimi memlekette gibi hissettim. Yani Türkçenin çekilmediği yerler vatandık. Hatta Türk marketlerinden birinde atışverişi yaparken bir öğrencime bile rastladım. Yani çok enteresan. Hani insan orada da çok şaşırıyor. A a a diye böyle. Arzuan Hocam siz misiniz dedi. Böyle kaldım gerçekten yani inanamadım.
+
+161
+00:36:43,699 --> 00:37:05,559
+Bir millet esarete düştüğü zaman eğer dilini kaybetmezse zindanın anahtarı kendi elinde demektir diye bir sözü vardır. Ben bunu özellikle yurt dışına gittiğim zaman çok fazla böyle fark ediyorum. Hatta Avusturya'ya gitme hikayem de bununla ilintilidir diyebilirim şöyle. Bu konuya örnektir. Şöyle anlatayım.
+
+162
+00:37:06,291 --> 00:37:21,371
+Benim teyzemler orada oturuyor. Teyzem, teyzemin çocukları. Bileti otomatik yolladılar. Beni davet ettiler. Öyle bir şey varmış. Yani sanal olarak bilet gönderebiliyorlar. Öyle olursa bize almak daha kolay diye öyle bir yöntem söylediler.
+
+163
+00:37:21,371 --> 00:37:34,152
+Neyse, bana sanal olarak bilet alındı ve Avusturya Havayollarından almış teyzem. Bana dedi ki Arzuhan, yalnız çok önce git havaalanına. Bazen karışıklık olabiliyor dedi. Tamam.
+
+164
+00:37:34,291 --> 00:38:02,291
+Mesela dörtte ise, şimdi tam hatırlayamıyorum ama dörtte ise ben on ikide havaalanındaydım. Nasıl heyecanlıyım, ömrümde ilk defa yurt dışına gideceğim işe bir aksilik olmasın diye on ikide havaalanındaydım. Ondan sonra neyse, ben tam vereceğim bagajı, şimdi almıyorlar son anda ama o zaman bana dediler ki, o zaman bir problem yoktu, uçağımız birazdan kalkacak dediler, yarım saate. Yani daha saat on iki, uçağımız kalkıyor dediler. Şimdi sanal da gönderdi.
+
+165
+00:38:02,291 --> 00:38:28,532
+Dediğim için elimde bilet de yok. O yüzden anlayamadım. Dedim ki hayır hayır dedim yani akşam üzeri bir problem benimki. Hayır dediler sizin uçağınız hemen kalkıyor. İsim soyad söyleyince, bagajı verince. Koşun yetişin dediler. Ondan sonra ben hemen teyzemi aradım. Teyze dedim ya ben yanlış mı anladım dedim. Yani ben şu anda uçağa biniyorum bir problem var mı dedim. Teyzem dedi ki ay hepimiz geliyoruz karşılamaya hiçbir problem yok dedi.
+
+166
+00:38:29,204 --> 00:38:48,544
+Benim gönlüm rahat, uçağa bindim, 1 saat 50 dakika Viyana'dayım. Kimse yok, indim kimse yok. Hani buraya bakıyorum, buraya bakıyorum, hani Türkçe konuşan da yok. Hani İngilizce, bildiğim İngilizceyi de unuttum. Dedim ki yani bari bekledim, bekledim, gelen yok, bari dedim bavulu bulayım.
+
+167
+00:38:48,864 --> 00:39:03,264
+Karışıklık varsa da bavulla dolaşayım. Ondan sonra gittim tam tarzanca, çok panik olduğum için. İngilizceye, Türkçeyi karıştırarak normalde böyle konuşmamak lazım tabii ama orada onu düşünecek halim yoktu zaten.
+
+168
+00:39:03,264 --> 00:39:16,804
+Where is my bubble dedim, oradaki görevliye. Allah'tan onlar profesyonelde anladılar yani durumu. Bagaj dediler. Ben dedim ki, ay evet evet o kelime bagajdı dedim. Hani biliyorum, bilmiyor diye.
+
+169
+00:39:16,864 --> 00:39:32,244
+Ama aklıma gelmiyor. O kadar böyle yanlış yere mi bindim dedim böyle bir şey. Panikle ararken tabii Türkçe konuşuyorum, İngilizce konuşuyorum. Ay Allah dedim ben şimdi ne yapacağım falan. O sırada bir beyefendi döndü dedi ki bana.
+
+170
+00:39:33,139 --> 00:39:35,239
+Siz de mi bavulunuzu arıyorsunuz?
+
+171
+00:39:36,319 --> 00:39:40,639
+Döndüm, Türkçe konuşuyor. Allah'ım bana nasıl melodik geliyor, nasıl melodik geliyor?
+
+172
+00:39:40,779 --> 00:39:44,719
+Dedim ki yani akraba olsanız ancak bu kadar sevinebilirdim gerçekten.
+
+173
+00:39:45,319 --> 00:39:50,179
+Neyse, hemen anki sorulu telefondan Almanca biliyormuş, beyefendi yardım etti, aradık.
+
+174
+00:39:50,519 --> 00:39:55,019
+Teyzem dedi ki ben dedi Almancam tabii yani eksik dedi, yanlış anlamışım dedi.
+
+175
+00:39:55,019 --> 00:40:00,000
+Meğerse o yanlış anlamış. Neyse oradan sonra problemi çözdük ama o zaman dedim ki...
+
+176
+00:40:00,000 --> 00:40:14,699
+Çünkü Türkçenin çekilmediği yerler vatandır. Çünkü kendimi gerçekten çok yabancı hissettim. Biz burada fark etmiyoruz ama aynı dili konuşuyor olmak aslında gerçekten bizi bir araya getiren çok önemli bir özelliktir.
+
+177
+00:40:14,699 --> 00:40:28,000
+Yani insanoğlunun hayatında çok önemli bir yeri olduğunu rahatlıkla söyleyebilirim. Peki, şimdi geliyorum arkadaşlar. Dünyada 7000 dil var demiştim. Bu 7000 dilin...
+
+178
+00:40:28,000 --> 00:40:42,879
+Doğal dil veya yapay dil hangisiyle ifade edebiliriz? Bugün dünya üzerinde konuşulan 7000 dil yapay dil midir, doğal dil midir? [öğrenci] doğal dil diyor.
+
+179
+00:40:44,947 --> 00:41:12,788
+Doğal dil diyor [öğrenci]'de. Peki, Bartu farkı nedir diyor. Şimdi hemen söyleyeyim. Yapay dil arkadaşlar yeryüzünde var ama konuşulan mevcut dillerin hepsi doğal dildir gerçekten. Yani kendiliğinden oluşmuştur. Yani bu iki ikizler kendi aralarında dili ne yapıyorlar? Yani oturup da böyle kelime mi yazıyorlar? O oluyor ya, oluşuyor ya. Doğal dil böyle. Yani kendiliğinde bir ana dil grubu var.
+
+180
+00:41:12,947 --> 00:41:24,527
+O ana dil grubundan zamanla işte lehçelere ayrılıyor. O lehçeler zamanla işte coğrafi uzaklık veya farklılık olursa uzak lehçeye ondan sonra da yeni bir dile dönüşüyor falan.
+
+181
+00:41:25,107 --> 00:41:33,067
+Doğalama seyrediyor. Yapay dil ise oturulup yapılan dil. Mesela Esperanto dili Esperanto. Duydunuz mu hiç?
+
+182
+00:41:33,067 --> 00:41:40,947
+Ha Esperanto'ca öğreniyordum diyor [öğrenci]. Gerçekten. Evet. Polonyalı Zamenah isimli bir...
+
+183
+00:41:40,947 --> 00:41:47,547
+Bir kişi, bu Zamenhof isimli bir kişi 19. yüzyılda şöyle düşünmüş.
+
+184
+00:41:48,563 --> 00:42:16,503
+Yani anlamı da ümit eden demek. Yani Esperanto'nun anlamı ümit eden demek. Hatta Esperanto'cular bütün dünyada ortak bir dil olsun diye bir araya geliyorlarmış belli bir işte tarih verip o tarihte şurada buluşalım diye bir araya geliyorlar. Bayağı aktifler. Yani bir milyonun üzerinde hatta daha fazla belki son dönemde Esperanto'ya sahip çıkan insanlar var. Halbuki Polonyalı Zamenhof oturmuş.
+
+185
+00:42:16,563 --> 00:42:18,463
+Dil icat etmiş.
+
+186
+00:42:18,900 --> 00:42:46,900
+Ne demiş biliyor musunuz? Bütün dünya insanları bir üst dil olarak tek bir dil konuşsun. Aslında süper bir fikir. Acayip bir proje bu. Ama tabii ki yani dil öyle bir şey ki zorlamayla olmuyor. Ben şimdi senelerdir mesela diyorum ki esenlikler dilemek çok daha iyi bir şey. Hani kendine iyi bak, çok benimsenmiş olmasına rağmen çok milli değil ve bizim dil kurallarımıza, dil mantığımıza da uygun değil. Ama yani artık bunu değiştirelim.
+
+187
+00:42:46,900 --> 00:43:00,720
+Hayır yani. Ama yine de en azından esenlikler dileyerek bu kelimenin de yaşamasını sağlayabilir miyiz? Belki onu yapabiliriz. Yoksa zorlamayla bu daha doğru diyemiyorsunuz arkadaşlar. Öyle bir şey olmuyor.
+
+188
+00:43:01,556 --> 00:43:24,235
+Game of Thorns'da Valer'in öğreniyordum hocam. O sayılır, o da sayılır. O da bir yapay dildir. Evet, hatta Yüzüklerin Efendisi'nde de yine bir dil vardı. Neydi? Elfçe. Değil mi? Elfçe resmen kuralları olan, zaten yazan profesör arkadaşlar, Yüzüklerin Efendisi'nin. Evet, elf dili bayağı bir dil oluşturmuş.
+
+189
+00:43:29,556 --> 00:43:48,375
+Profesörsün, yaza yaza bu masalı mı yazdın diye dalga geçmişler. Bizde hep öyledir ya, hep dalga geçiyoruz insanlarla. Halbuki tüm dünya üzerinde yani şimdiye kadar izlediğim, okuduğum kitapları da var. Yani en iyi, en iyi fantastik seri diyebilirim. Yani bunu söyleyebilirim.
+
+190
+00:43:49,492 --> 00:44:17,492
+Onu duymadım [öğrenci]. Tokipona ne demek? Var tek haftada öğrenebiliyorsunuz. Çok eğlenceli. Öyle mi? Tokipona. Dur bir dakika yazayım. Tokipona. Bu ne demek? Nereden bu? Evet. Balardohaeres kardeşim. Esperanto hocamı konuşuyorsa. Süper. Evet, basit dil ya da iyi dil anlamı.
+
+191
+00:44:17,492 --> 00:44:24,532
+Anlamına geliyor. Basit dil ya da iyi dil anlamına geliyor. Bu da mesela kim icat etmiş bu dili? Mesela bakın.
+
+192
+00:44:24,943 --> 00:44:36,203
+Esperanto'da ümit eden anlamına gelen dünyada tek bir dil konuşulsun mantığı varmış. Ama arkadaşlar, Bali bilen dilini hiç duydunuz mu?
+
+193
+00:44:36,203 --> 00:44:44,683
+Yani 300 yıl önce Esperantocular'da Bali bilen dili icat edilmiş. Bale bilen diye de geçiyor, internetten bakabilirsiniz.
+
+194
+00:44:52,943 --> 00:45:12,063
+Orta Doğu'da, çok iyi bir öngörü aslında bu da. İnsanlar birbirini anlasın diye Orta Doğu'da konuşulan tek bir dil oluşturmaya çalışmış ve arkadaşlar 10 bin kelimelik sözlük yazmış. Bayağı kurallar icat etmiş. Evet, yapay dil, Bali bilen dili yapay dildir.
+
+195
+00:45:12,980 --> 00:45:40,619
+Ondan sonra programlama dilleri, yapay dildir. Yaklaşık 120 civarında kelime ile tüm dili konuşabiliyorsunuz. Çok küçük bir dil olduğu için birden fazla anlamı var her kelimenin. Süper, 120 civarında kelime. Evet, 120 kelimesi var. Tamam, bakacağım. Hiç duymamıştım. Teşekkür ederim. Bu da araştırma için bir şey oldu bana. Bir ipucu oldu. Peki.
+
+196
+00:45:40,980 --> 00:45:45,719
+İdo diye bir dil var. Yine Esperantocular bu dili yapmışlar.
+
+197
+00:45:46,219 --> 00:45:53,380
+1907'de Esperanto'nun yeni yorumu olarak reform talep eden Esperantocular yapmış.
+
+198
+00:45:53,819 --> 00:45:55,799
+Uluslararası bir dil kabul ediliyormuş.
+
+199
+00:45:56,299 --> 00:45:59,839
+Evet, Elfçe var. İşte Tolkien'in yarattığı Orta Dünya dili.
+
+200
+00:45:59,839 --> 00:46:02,940
+Evet, arkadaşlar bunların hepsi yapay dildir.
+
+201
+00:46:03,099 --> 00:46:08,980
+Ama onun dışında Türkçe, İngilizce, Almanca, Fransızca, Japo.
+
+202
+00:46:08,980 --> 00:46:36,539
+Japonca, Korece doğal dildir. Yani dünya üzerinde konuşulan mevcut dillerin hepsi doğal dildir. Ama yapay dilde var. [öğrenci] de aslında süper bir proje geliştirmiş ama o hayata geçirememiş. Ortodos zaten hep karışık biliyorsunuz. O yüzden hayata geçmemiş bu dil. Aslında geçseydi belki bugün bu kadar karışıklık olmazdı diye söyleyebilirim. Yapay dil diye bir şey var.
+
+203
+00:46:36,980 --> 00:47:00,839
+Ölü dil var arkadaşlar. Yani konuşanı kalmayan diller ölüyor. Yaşayan diller ve ölü diller var. Mesela Firikçe ölü dildir. Eskiden Anadolu'da konuşulmuş yani uygarlı. Hittikçe, Latince de ölü dildir ama çok fazla kelime bugün mevcut diller, mesela dillerde yaşıyor. Mesela Fransızcanın %70'inin Latince olduğu söyleniyor.
+
+204
+00:47:01,300 --> 00:47:27,820
+Düşünebiliyor musunuz? Sümerce ilk dildir. Biliyorsunuz yazı dili Sümerce ile başlıyor. Sümerce yazılı bir şey, ilk dil. Oradan itibaren dünya tarihi takip ediliyor. Ama ondan önce de, bakın şöyle söyleyeyim, kainat kaç yaşında biliyor musunuz? Yani bilim adamlarının söylediklerine göre. Vatikan'da Latince bilmiyorlar mı hocam?
+
+205
+00:47:28,980 --> 00:47:54,400
+Yani kelimelerini biliyorlardır ama bir dil olarak, bir millet dili olarak Roma'da konuşulmuş 900 yıl. Ondan sonra Roma İmparatorluğu çökünce o dilde artık lehçelerinde devam eder olmuş. Ama çok fazla kelimesi olduğu için bu şekilde söylüyorlar. Bir tartışma konusu mu? Evet ama Latince ölü dildir arkadaşlar. Evet, 14 milyar yaşında bütün kâinat. Dünya kaç yaşında biliyor musunuz?
+
+206
+00:47:55,668 --> 00:48:11,708
+14,5 milyar yaşında, dünyada 4,4,5 milyar yaşında. İnsanoğlunun dünya üzerindeki varlığı da milyon yıllara uzanıyor. Yani 3 milyon yıl mı diyorlar, 2 milyon yıl mı? Milyon yıl, yani milyon yıl kadar geriye gidiyor.
+
+207
+00:48:11,708 --> 00:48:22,288
+Şimdi 5500 yıl kadar önce Sümerce'yi bulduklarında, binlerce yıl önce diyeyim, milattan önceki dönemlerde bu yazı dilinden takip ediliyor.
+
+208
+00:48:23,668 --> 00:48:39,728
+İnsanoğlu sizce ne zaman konuşmaya başlamıştır? Ondan önce de var tabii ki, yazı dilleri Sümerci ama oradan başlıyor ama ondan önce de İnsanoğlu konuşuyordu. Yazı diline geçmemişti belki de. 80 bin yıl önce.
+
+209
+00:48:41,867 --> 00:48:47,688
+Yani Homo Sophians, modern insanın atası. Ama ondan önce yok muydu? Vardı.
+
+210
+00:48:48,371 --> 00:48:56,891
+Ne hikayeler anlatılıyor arkadaşlar, neler neler, 1,5 milyon yıl kadar geriye gidiyor. Peki, insanoğlu sizce nasıl konuşmaya başlamıştır?
+
+211
+00:49:03,795 --> 00:49:17,155
+Homurtulardan kelimeleri mantıklı. Şimdi homurtular deyince ünlemler diye düşünmek lazım. Arkadaşlar, bilim adamları bunu düşünmüş. Dilin doğuşuyla ilgili olarak ünlemlerden mi dil çıktı diye düşünmüş.
+
+212
+00:49:17,155 --> 00:49:30,895
+Bakın, bütün dünyada 7000 dil konuşuluyor. İlk dil hangisidir diye bilim adamları araştırma yapmışlar. Bunun içinde ne yapmışlar biliyor musunuz? 7000 dildeki ortak kelimeleri bulmaya çalışmışlar.
+
+213
+00:49:31,795 --> 00:49:50,055
+İnceleyenler, diyorlar ki mesela her dilde yansıma kelime var. O yüzden de demişler ki yansıma, bana yansıma bir örnek verebilir misiniz? Gırtlak evrimleşiyor hocam. 6 milyon yıl önce doğadaki sesleri taklit ederek, muhtemelen bundan çıkan şeyler, evet bak yansıma kelimeler.
+
+214
+00:49:50,055 --> 00:49:59,495
+Hocam ben birazdan metro, evet olmaz, olmaz, hayır olmaz. Doğadaki sesleri taklit ederek, bebekler nasıl eğitim kurmaya çalışmışlarsa bunu geliyor. Evet.
+
+215
+00:49:59,795 --> 00:50:09,195
+Bak çok güzel yorumlar yaptınız. Vallahi akıllısınız. Bravo size. Çünkü bilim adamları gibi düşünüyorsunuz. Bunların hepsini bilim adamları da düşünmüş. Evet.
+
+216
+00:50:10,164 --> 00:50:22,804
+Arkadaşlar, yansıma kelime Türkçe'de örnek verebilir misiniz ikileme? Yani tabiat, tak tak, evet güzel, şırıl şırıl, evet, şırıl şırıl, evet, şırıl şırıl, güzel.
+
+217
+00:50:22,804 --> 00:50:38,164
+Bu kelimeler arkadaşlar, hani hışırdamak, horuldamak gibi, böyle yani havlamak gibi düşündüğünüz zaman 150-200 kadarmış Türkçe'de ve her dilde var. O yüzden diyorlar ki ortak ol, iyi ama yani Türkçe sözlük...
+
+218
+00:50:38,164 --> 00:50:40,144
+120 bin kelime varsa
+
+219
+00:50:40,144 --> 00:50:42,244
+hepsi 120 kelimeden mi çıktı?
+
+220
+00:50:42,824 --> 00:50:44,364
+Hani yansımadanla alakalı
+
+221
+00:50:44,364 --> 00:50:46,164
+kökeni oraya gidiyor olabilir mi? Hayır
+
+222
+00:50:46,164 --> 00:50:48,264
+bakın kanguruyu anlattım. Hiç alakası
+
+223
+00:50:48,264 --> 00:50:50,164
+yok yani olayla. Ondan sonra
+
+224
+00:50:50,164 --> 00:50:51,964
+farklı farklı yerlerden. Bu
+
+225
+00:50:51,964 --> 00:50:53,984
+tam geçerli değil. Ünlemlerden
+
+226
+00:50:53,984 --> 00:50:55,924
+hani böyle homurtulardan
+
+227
+00:50:55,924 --> 00:50:57,864
+hani hayvanlardan kaçıyorlardı.
+
+228
+00:50:57,964 --> 00:51:00,144
+Of dediler falan. Yani bunlar
+
+229
+00:51:00,144 --> 00:51:02,504
+hep düşünülmüş. Ünlemlerden
+
+230
+00:51:02,504 --> 00:51:04,144
+yansıma kuramı
+
+231
+00:51:04,144 --> 00:51:06,144
+ortaya atılmış. Ünlemleri temel alan
+
+232
+00:51:06,164 --> 00:51:34,003
+Görüş ortaya yapılmış. Bazıları da demişler ki ilk insanlar ortak iş yapmak için ritmik bir şey geliştirmişlerdir. Mesela kütüyü taşıyacaklar, hay, hop, hay, hop, oradan dil mi oluşturulmuştur diye. Ama bunlar hep bir bölümü, yani bir bölümünü karşılıyor. Bütün kelimeler buradan çıktı, çok böyle hani her şeye cevap vermiyor bu teoriler. Müziği temel alan görüş var, jest ve mimikleri temel alan görüş var, felsefi yorumlar var. Ama arkadaşlar,
+
+233
+00:51:34,164 --> 00:51:59,724
+Mesela şöyle söyleyeyim, kutsal kitaplarda bu konuya yer veriliyor ve dil bilimciler bu kutsal kitaplarda neler yazdığını da anlatmışlar. Mesela Tevrat'ta Babil Kulesi efsanesi var. Ondan sonra İncil'de geçiyor. Ondan sonra Kur'an-ı Kerim'de geçiyor ve söylenenlere göre, kutsal kitabın söylediğine göre insanoğlu, Adem ve Havva'dan beri, var olduğundan beri konuşuyor.
+
+234
+00:52:02,963 --> 00:52:30,063
+Kelam başlangıçta var idi ve kelam Allah nezdinde idi. Yani Allah konuşma özelliği verdi. Kelam Allah idi denilerek sözün Allah'tan geldiğini söylüyorlar. Ondan sonra Kur'an-ı Kerim'de Allah Adem'e bütün isimleri öğretti. Sonra onları önce melekleri arz edip eğer siz sözünüzde sadıkseniz şunların isimlerini bana bildirin dediler.
+
+235
+00:52:30,963 --> 00:52:42,864
+Adem'e öğretti, kelimeleri öğretti diye geçiyor. Yani arkadaşlar, kutsal kitaplara göre insanoğlu zaten var olduğundan beri konuşma özelliğine sahip diyebilirim.
+
+236
+00:52:43,623 --> 00:52:54,563
+Kutsal kitapta Tanrı İnsanoğlu'nun ortak dilini bir anda, o Babil külösü efsanesi, Babil biliyorsunuz insanlık tarihinin ilk medeniyetidir.
+
+237
+00:52:54,563 --> 00:52:58,963
+O yüzden mesela Babil çok geçer, antik filmlerde kitaplar.
+
+238
+00:52:58,963 --> 00:53:09,183
+Mesela İskender falan'ın Babil'de ölüm İstanbul'da aşk kitabı vardır. Niye Babil? Babil'in asma bahçeleri kalmadıysa da aslında ilk uygarlık diye geçiyor.
+
+239
+00:53:09,876 --> 00:53:28,755
+O dönemde insanoğlu Allah'ın katına ulaşmak için bir kule yapmaya karar veriyor. İşte gökyüzüne doğru gidiyor o yedi katı bulacak. Ondan sonra nasıl bir kafaysa artık. Ondan sonra söylenenlere göre işte Allah da kızıyor ve onların dilini ayırıyor gibi böyle bir hikaye anlatılır.
+
+240
+00:53:37,876 --> 00:53:57,776
+İnsanoğlunun var olduğundan beri konuştuğunu düşünüyorum. Yani ilk etapta öyle hayvanlardan kaçarken ay dediler, of dediler, oradan çıktı falan. Yani bunlar bir kuramdır ama insanoğlu var olduğundan beri konuşuyor desek doğrudur diyebilirim. Barış [öğrenci]'ın videosunu da izlemenizi size tavsiye ederim.
+
+241
+00:54:05,876 --> 00:54:29,876
+Bunlar nedir bununla ilgili olarak bunlardan da bahsetmiş oldum. Evet, peki benim bu ders anlatacaklarım bundan ibaret. Metroya binmek isteyenler binebilir, başka yere gitmek isteyenler gidebilir arkadaşlar. Var mı bana sormak istediğiniz bir şey? Haftaya yine dil dersiyle devam edeceğim arkadaşlar. Mesela bu sefer Türkçeden bahsedeceğim. Türkçe, ha kıvanç söyle, söyle tatlım.
+
+242
+00:54:30,420 --> 00:54:33,639
+Sorun vardı, belki söylediklerinizden sonra alabiliriz.
+
+243
+00:54:33,659 --> 00:54:35,519
+Bir dakika, mikrofonu açayım.
+
+244
+00:54:39,443 --> 00:54:41,004
+Evet, dinliyorum Kıvancım.
+
+245
+00:54:41,784 --> 00:54:46,504
+Sorun vardı da hocam. Sizin sözünüzü kesmiş gibi olmayayım lütfen, devam edebilirsiniz.
+
+246
+00:54:46,524 --> 00:54:47,684
+Yok yok, seni dinliyorum.
+
+247
+00:54:47,684 --> 00:55:00,144
+O zaman benim sorum şu sorun hakkındaydı. Benim kendince gördüğüm sorularak belirttiğim şeyden. Siz dilin dinamik ve değişken olduğunu söylemiştiniz.
+
+248
+00:55:00,784 --> 00:55:01,104
+Doğru.
+
+249
+00:55:05,907 --> 00:55:21,907
+Yani Türkçenin yazım kurallarıdır, kelime tanımlarıdır. Sizce bu dinamikliği bozuyor mu? Çünkü eğer bir insana bir kelimeyi gösterip onun anlamını siz kendiniz sıralarsanız onun kendi düşünmeci biçimini kendi kalıplarınıza tutmuş oluyorsunuz.
+
+250
+00:55:22,968 --> 00:55:29,948
+Vay güzel bir soru. Sizce dilin dinamiğini, akışını, doğal akışını bozmaz mı sizce?
+
+251
+00:55:30,547 --> 00:55:37,827
+Bozmaz mı? Bozmaz. Çünkü şöyle, bir dili ayakta tutan kurallarıdır.
+
+252
+00:55:38,260 --> 00:56:06,260
+Eğer yani hiç kural olmasın dersen ve her şeye göre savrulursak yazı dili tamamen bozulur kıvanç. Mesela reyi atmaya çalışıyorlar. Yani reyi kesme işaretiyle kullanıp atmaya çalışıyorlar. Halbuki bundan 20 yıl önceki kaynaklardan bugün de birçok yerde yani kelimeler o reyle reyi günlük hayatımızda kullanmıyorsak bile o şekilde şekilleniyor. Yani bir kural koymazsanız.
+
+253
+00:56:06,260 --> 00:56:24,440
+Eğer o dili ölü dil haline getirilebilirsiniz, yani bir kuralı olması lazım. Çünkü yazı dilinde edebiyat oluşturduğunuz zaman ki, yani yeryüzündeki dillerin 200 kadarı belki biraz daha fazla edebiyat oluşturabilmiş, yani yazı dilinde yetkin hale gelebilmiştir.
+
+254
+00:56:34,260 --> 00:56:54,019
+diyecek de ölü dil olabilir. Ama şu konuda da bir parantez açmak istiyorum. Kuralları da dayatmak pek mümkün olmuyor. Yani dil o kadar değişken ki şöyle örnek vereyim sana. Mesela bir gün tahtadayım. Öğrencilerden biri dediler ki hocam gelmeye edebilirim yazar mısınız dediler.
+
+255
+00:56:54,019 --> 00:56:58,440
+Aa tabii ki yazarım dedim. Ayrıca kalemi aldım tahtaya gittim böyle kaldım.
+
+256
+00:56:58,496 --> 00:57:25,496
+Bak ben senelerdir Türkçe anlatan bileyim. Gelmeye de bilirim yazamadım. Çünkü arkadaşlar gelmeye de bilirim değil, Türkçe'de gelmeye bilirim de demek gerekir. Neden? Çünkü e bilmek gelmeye de bilirim. Normalde arkadaşlar böyle yazılmaması lazım. D bağlaştır, ayrı yazılır ama gelmeye bilirim.
+
+257
+00:57:26,496 --> 00:57:54,456
+Birleşik fiildir, birleşik yazılır. E şimdi günün birinde konuşma dilinde pat birisi araya koymuş. O yüzden şimdi kural çıkardılar. Böyle araya giriyorsa ayrı yazarsınız. Yani istisnai bir durum diye. Yani bazen doğal akış içerisinde o kuralı insanlar kendileri koyuyorlar. Buna katılıyorum. Hani bununla ilgili söyleyebileceğim bir şey yok. Yani bazen kuralları biz belirliyoruz ve zamanla değiştirebiliyoruz. Ama bir kural olmaması kuralsız bir şey.
+
+258
+00:57:54,496 --> 00:58:08,576
+O dili bozar. Yani onu söyleyebilirim. O sınırlayıcılığı değil. Sadece bu doğallığı kabul edip değişkenliği de kabul etmek lazım. Mesela aslında sözlükte ünvan değil, unvan diye yazılıyordu eskiden.
+
+259
+00:58:09,331 --> 00:58:35,532
+Fakat geçen sene Türk Dil Kurumu onu konuşma diline uygun hale getirdi ve ünvan diye yazmaya başladı. Yanlış mı şimdi? Değil. Halbuki ben senelerdir ünvan diyebiliyorum. Hatta zaman içerisinde dilimi değiştiririm ama şu anda bazen ünvan demeye de devam ediyorum. Senelerce demişim ama ünvana çevirdiler. Anlatabiliyor muyum? Yani bu kadar da böyle sabit bir şey yoktur. Mesela öğrenciler biraz kısaltarak konuşuyor ya.
+
+260
+00:58:37,331 --> 00:58:42,672
+Bu hızla akan dünya içerisinde zamandan tasarruf olarak da değerlendirebiliyorum.
+
+261
+00:58:42,972 --> 00:58:47,672
+Değişmez bir ritim yok ama kuralları olması gerekir mi? Kesinlikle gerekir.
+
+262
+00:58:49,012 --> 00:58:51,251
+Bilmiyorum yani kıvançı yeterli bir açıklama oldu mu?
+
+263
+00:58:52,512 --> 00:58:55,652
+Sağ olun canım. Genel olarak çok yeterliydi ve üstündeydi.
+
+264
+00:58:56,884 --> 00:59:24,824
+Teşekkür ederim. [öğrenci] de diyor ki, herkesin kendi değerlerini yaşatmaya çalıştığı bir ortamda ortak ve çatı, evet. Herkesin kendi değerleri, evet. Bir çatı altında bahsettiğim, imkansız gibi doğru. Dil bir çatıdır aslında ve isteyen istediği gibi yorumlayamaz. Genelde aynıdır ve bellidir. Bakın Fransızlar inanılmaz milliyetçi bu konuda. Avrupa'da aslında pek çok ülkede böyle. Bilirsiniz, Almanya'ya gider.
+
+265
+00:59:24,884 --> 00:59:34,624
+İngilizce biliyordur ama konuşmaz. Fransa'ya gidersin, Almanca biliyordur ama konuşmaz. Özellikle yapıyorlar. Niye? Milliyetçiler. Şimdi bunun bir sebebi var böyle olmasının.
+
+266
+00:59:36,083 --> 00:59:54,063
+Ders kitabında da dille ilgili sıralama devam ediyor. Geçen hafta iletişim dersi yapmıştım. Bu hafta da dil dersi yaptım. Biraz eksik dil konuları. Yani ben daha fazlasını anlattım. Hatta bölüm başkanımıza da söyledim. İkinci basım olduğu zaman bunları yenileyelim hocam. Bu eksik kalıyor bunlar diye. O da tamam dedi.
+
+267
+00:59:54,063 --> 01:00:00,000
+Yani şöyle söyleyebilirim. O yüzden size slide bırakacağım. Bu slide'ı tekrar...
+
+268
+01:00:00,000 --> 01:00:27,000
+yazacağım hatta ama iletişim slide'ım hazır. Ara ara bakın ders duvarına ekleyeceğim arkadaşlar sizin için. Yani o da kitabınızdaki kitabıdan takip edeceksiniz ama eksikler varsa orada da bir karşılaştırırsınız. Evet bu şekilde olacak. Peki. Peki. Sevgili güzel öğrencilerim, hepinize iyi haftalar diliyorum. Ailelerinizle selam söyleyin. Size sevgiler. Görüşmek üzere. Hoşçakalın.
+
+269
+01:00:32,755 --> 01:00:34,436
+Esenlikler diliyorum ben de.
+
+270
+01:00:36,876 --> 01:00:37,755
+Sevgiler.

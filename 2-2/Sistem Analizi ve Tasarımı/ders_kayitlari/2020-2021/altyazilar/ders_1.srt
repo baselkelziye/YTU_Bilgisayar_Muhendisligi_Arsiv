@@ -1,0 +1,1575 @@
+1
+00:00:26,899 --> 00:00:35,479
+Merhabalar, bu dönem nin bir grubunu birlikte yürüteceğiz.
+
+2
+00:00:39,603 --> 00:00:52,564
+Bakıyorum, kişi olmuş derse katılan. Şu anda dersin bu grubundaki öğrenci sayısı 78 kişi görünüyor.
+
+3
+00:00:56,276 --> 00:01:16,276
+Bugün nde hangi konuları işleyeceğimizi, dersin içeriğini, sistem kavramı ve genel bilgiler ile içeriğini oluşturacağız dersin.
+
+4
+00:01:21,299 --> 00:01:27,659
+İçeriği haftalara paylaştırarak göreceğiz hangi konuları işleyeceğimizi.
+
+5
+00:01:29,659 --> 00:01:46,920
+Ve derste hangi sorumluluklarımız var ve bunların karşılıklarının puanları ne olacak bunları göreceğiz.
+
+6
+00:01:47,347 --> 00:02:10,627
+Öncelikle dersin içeriği ve hangi konuların olduğu konusunda bir ön çalışma yaptınız mı, baktınız mı?
+
+7
+00:02:20,467 --> 00:02:42,427
+Evet, şu anda ikinci sınıfa kadar aldığınız dersler içinde bilgisayar mühendisliğine giriş derslerinde algoritmalarla ve programlama dilleri dersinde birinci dönemde.
+
+8
+00:02:42,836 --> 00:02:59,355
+Nesliye yönelik programlamayla hangi programı hangi adımlarla gerçekleştireceğinizi, programlama dillerinin kavramını, bilgisayar mühendisliğinde temel algoritma yapısını gördünüz.
+
+9
+00:03:01,876 --> 00:03:20,936
+Bir sistemi bütünüyle nasıl hayata geçireceğiz? Bilgi sistemi genel sistemlerin içinde yeri nedir? Daha üstten bir bakış açısıyla değerlendireceğiz.
+
+10
+00:03:25,044 --> 00:03:45,604
+Program yazımı aşamasında değil, bir problemi baştan sona kadar geliştirirken, yazılım haline getirirken sistemi bir bütün olarak nasıl oluşturmamız gerekiyor?
+
+11
+00:03:46,604 --> 00:03:51,284
+Bütün adımlarıyla birlikte değerlendirmeye çalışacağız bu derste.
+
+12
+00:03:51,955 --> 00:04:01,115
+Bu noktada önce bir dersin içeriğine bakalım.
+
+13
+00:04:03,895 --> 00:04:06,115
+Bütün bir dakika.
+
+14
+00:04:08,515 --> 00:04:10,175
+Önce sizinle paylaşayım.
+
+15
+00:04:25,843 --> 00:04:35,423
+Paylaştığım Excel sayfasını görmekte problem yaşıyor musunuz? Bir sorunuz var mı?
+
+16
+00:04:35,843 --> 00:04:37,004
+Hayır hocam gayet iyi.
+
+17
+00:04:37,004 --> 00:04:46,363
+Tamam, teşekkürler. O zaman biraz daha verim almak için görüntüyü kapatıyorum şu anda.
+
+18
+00:04:56,211 --> 00:05:15,932
+Evet, şimdi bugün itibariyle derste giriş yapıyoruz. Ders planımızı, yani bu ders planını değerlendiriyoruz. Sistem analizi ve tasarımı hakkında genel bilgileri veriyoruz ve sistem tanımını yapıyoruz.
+
+19
+00:05:17,932 --> 00:05:22,051
+Bugünün içeriği bu. 16 Mart önümüzdeki hafta.
+
+20
+00:05:22,132 --> 00:05:35,072
+Sistem tipleri, bilgi sistemi tipleri, bilgi sistemi geliştirme sürecinde taraflar nelerdir? Yani müşteri, kullanıcı,
+
+21
+00:05:37,204 --> 00:05:46,004
+Proje yöneticisi, sistem analizi dediğimizde bu taraflardan ne kastediyoruz?
+
+22
+00:05:47,144 --> 00:05:53,584
+Bütün ders boyunca, uygulamalarımız boyunca bunlar geçecek. Bunları tanımlamaya çalışacağız.
+
+23
+00:05:55,064 --> 00:06:00,204
+Sonra sistem geliştirme süreci. Bu dersin arkasından...
+
+24
+00:06:02,004 --> 00:06:10,483
+Bu dersin de zorunlu bir başlangıç olduğu yazılım mühendisliği dersi var seneye.
+
+25
+00:06:11,363 --> 00:06:13,564
+Üçüncü sınıf, ikinci dönemde.
+
+26
+00:06:14,324 --> 00:06:21,884
+Orada sistem geliştirme süreci için farklı modeller üzerinde duracağız.
+
+27
+00:06:22,164 --> 00:06:37,404
+Şu anda sektörde çok kullanılan agile proje süreç modelleri, daha önceden kullanılmaya başlamış olan hala büyük projelerde kullanılan spiral model gibi.
+
+28
+00:06:38,100 --> 00:06:53,319
+Ama bu dönemde sistem analizi dersinde başlangıç noktasında sistem geliştirme sürecini ilk model olan waterfall şelale modeliyle başlatacağız.
+
+29
+00:06:56,500 --> 00:07:12,000
+Üçüncü haftamızda ön inceleme, fizibilite çalışması nedir? Bunu göreceğiz. Yani bir ön inceleme çalışması, bir problem bize sunulduğunda.
+
+30
+00:07:12,500 --> 00:07:28,120
+Bu problem büyük bir problemse veya karmaşık bir problem olabilir. Bunun olurluluğu var mı? Fizibiliteden bunu kastediyoruz. Yapılabilirliği var mı? Olurluluk çalışmasıdır fizibilite.
+
+31
+00:07:28,660 --> 00:07:38,860
+Ki daha sonra bunu hep duyacaksınız, ara projelerinizde, bitirme projelerinizde de projenizin bir fizibilite analizini yapmanızı isteyeceğiz.
+
+32
+00:07:38,860 --> 00:07:45,780
+Çalışma hayatında da çalıştığınız yerlerde sizden böyle bir çalışma istenebilir.
+
+33
+00:07:47,060 --> 00:07:52,200
+Bunun tipleri, yapısı üzerinde duracağız.
+
+34
+00:07:56,276 --> 00:08:12,192
+Fizibilite çalışmasının zaman fizibilitesi ya da yazılım mühendisliğinde daha profesyonel olarak baktığımızda proje planlama aşamasındaki zaman planlaması.
+
+35
+00:08:12,192 --> 00:08:25,752
+planlamasını nasıl gerçekleştireceğiz? Bunun üzerinde daha ayrıntılı duracağız ve size bu konuda biraz daha deneyim kazandırmaya çalışacağız.
+
+36
+00:08:29,752 --> 00:08:32,192
+Beşinci haftada
+
+37
+00:08:32,628 --> 00:08:42,827
+Sistem analizi aşamasında veri toplama, iş analizi yapma, kullanım senaryolarının oluşturulması üzerinde duracağız.
+
+38
+00:08:56,884 --> 00:09:21,564
+Sağlamanız için önce işi analiz etmeniz gerekecek. Bu bir işletmecilik işi de olabilir, business analizi de olabilir. Bu bir mühendislik problemi de olabilir. İşin bilgisayar işe girmeden nasıl yürüdüğünü, ne olduğunu anlamaya çalışacağız. Ve bu bir sonraki haftada da bunu nasıl modelleyeceğiz?
+
+39
+00:09:22,163 --> 00:09:36,544
+Bunu göreceğiz. 20 Nisan'daki dersimizde de bunu objekt oryantı olarak, nesneye yönelik olarak nasıl çözümleyeceğimiz üzerinde duracağız.
+
+40
+00:09:36,544 --> 00:09:44,644
+Ve bu noktada da bu sene sanıyorum 8. haftada olacak arasına bir tane ara sınavımız olacak.
+
+41
+00:09:48,628 --> 00:10:12,328
+İki ara sınav yapmayacağız. Tek ara sınav yapacağız. Bu arada bana eğer dersi anlatırken, haftaları anlatırken anlamadığınız bazı kavramlar geçerse soru sorabilirsiniz veya chatten yazabilirsiniz.
+
+42
+00:10:13,971 --> 00:10:19,172
+Ara sınavdan sonra sistem tasarımı, mimari tasarım üzerinde duracağız.
+
+43
+00:10:24,596 --> 00:10:45,875
+modelleme aracı olarak diagramları kullanacağız. O yüzden buraya sistem tasarımı, mimari tasarım sırasında genel tasarım gerçekleştirdiğimizde yapı diagramları veya nesne yönelik yapıyorsak,
+
+44
+00:10:50,740 --> 00:10:54,560
+Göstermek düşüyor bu haftada.
+
+45
+00:10:56,900 --> 00:11:01,520
+Yalnız, daha sonra da hep tekrarlayacağım bunu.
+
+46
+00:11:02,520 --> 00:11:05,420
+Bu diagramları şey gibi düşünmeyin.
+
+47
+00:11:05,560 --> 00:11:09,740
+Yani resim çiziyoruz, hangi sembolü...
+
+48
+00:11:10,272 --> 00:11:32,892
+Kullanıyoruz filan gibi düşünmeyin. O diagram sembollerinin arkasında mantığı kaybetmemeye çalışıyoruz. Nasıl bir sistem tasarlayacaksak onun sembollerle anlatımıdır modelleme. Dolayısıyla diagram çizimi.
+
+49
+00:11:33,844 --> 00:11:49,944
+Yani sadece bir şekil gibi görmeyin. Sistem tasarımında 11 Mayıs'taki haftada girdi, çıktı, veri yapısı ve ara birim tasarımlarımız nasıl olacak? Onları göreceğiz.
+
+50
+00:12:01,844 --> 00:12:19,904
+Bakım ve destek süreçlerini göreceğiz. Belki bu yeni sisteme geçiş test süreçlerini yerini değiştirerek projelerinizi hazırlamanız için bu vaka çalışmasını şu iki haftayı yer değiştirebilirim yalnız.
+
+51
+00:12:20,467 --> 00:12:29,327
+25 Mayıs'taki haftada da örnek bir çalışma göreceğiz analiz ve tasarım aşaması için.
+
+52
+00:12:30,067 --> 00:12:36,907
+Şimdi son iki haftaya dikkat ederseniz proje sunumlarımızı ve bir tanesine de telafisi koyduk.
+
+53
+00:12:37,447 --> 00:12:43,707
+Proje sunumlarımız dediğimiz zaman projelerimiz ortaya çıkıyor.
+
+54
+00:12:43,707 --> 00:12:45,567
+Bir tane soru var galiba.
+
+55
+00:12:52,340 --> 00:12:58,460
+Nesneye yönelik programlama dersini bu dönem alıyorsunuz.
+
+56
+00:12:58,460 --> 00:13:06,160
+Biz burada nesneye yönelik çözümlemeyi vereceğiz.
+
+57
+00:13:17,967 --> 00:13:29,307
+Nesne'ye yönelik programları nasıl yazıyorsunuz, programları yazmadan önce nasıl tasarlıyorsunuz, bazı diagramları orada da göreceksiniz.
+
+58
+00:13:29,987 --> 00:13:43,767
+Burada onları değerlendirip kullanabilecek kadar şey yapıyoruz ve bu dersi veren arkadaşlarla da iletişimli olarak gidiyoruz.
+
+59
+00:13:45,460 --> 00:13:52,560
+Mutlaka orada öğrendiklerinizi burada kullanacaksınız, onu beklememiz lazım değil.
+
+60
+00:13:54,440 --> 00:14:11,039
+Sizi zaten serbest bırakacağız. İsterseniz yapısal yaklaşımla, isterseniz nesneye yönelik yaklaşımla yürütebileceksiniz projelerinizi.
+
+61
+00:14:13,875 --> 00:14:17,735
+Evet, şimdi projelere geldik.
+
+62
+00:14:27,316 --> 00:14:32,716
+Projelerde ne yapıyorsunuz?
+
+63
+00:14:35,556 --> 00:14:41,716
+Projelerinizde bir konu seçiyorsunuz.
+
+64
+00:14:43,436 --> 00:14:54,316
+Öncelikle burada, projeler üzerinde konuşmada, burada bir sorunuz var mı?
+
+65
+00:15:00,692 --> 00:15:06,812
+Yani bu içerik içinde
+
+66
+00:15:12,692 --> 00:15:23,272
+İçerik içinde, haftalarda göreceğimiz konular içinde sorunuz var mı? Daha sonra proje anlatımına geçeceğim.
+
+67
+00:15:24,572 --> 00:15:31,831
+Projelerinizi önümüzdeki hafta tanımını yazılı olarak da vereceğiz.
+
+68
+00:15:33,652 --> 00:15:35,951
+Önümüzdeki hafta ya da daha sonraki hafta.
+
+69
+00:15:39,827 --> 00:15:49,927
+Evet, not yüzdelerini söyleyeceğim şimdi. Ona geçmeden önce, öbür slide'ı açacağım. Ona geçmeden önce burada sorunuz var mı?
+
+70
+00:15:52,268 --> 00:16:07,368
+Projeleriniz grup projesi olacak. Yalnız grup projesi deyince genellikle 6 kişiye kadar oluyor. Ama onun tanımını tekrar vereceğiz bu sene için.
+
+71
+00:16:07,892 --> 00:16:28,032
+Yani bir grubun içinde ben de dahil olup görünürüm şeklinde düşünmeyeceğiniz şekilde sunumlarda bütün proje ekibinin katılmasını ve her yapılan işin anlatılmasını bekliyoruz.
+
+72
+00:16:33,683 --> 00:16:39,903
+Burada gördüğünüz gibi bir bilgi sistemini geliştirme sürecinde
+
+73
+00:16:40,340 --> 00:16:47,720
+Her adımda yapılacak işler var ve her adımda çalışacakların görev tanımları farklı.
+
+74
+00:16:48,820 --> 00:16:59,120
+Herkes bu rolleri paylaşacak ve herkes kendi rolüne düşen işi sunumda da anlatacak, raporu da ona göre birlikte hazırlayacaksınız.
+
+75
+00:17:07,284 --> 00:17:30,923
+Güllük gülistanlık şeklinde yürümüyor. Bazı gruplarda işte 6 kişi oluyor proje içinde ama işte 2 kişisi dersi bırakmış oluyor ya da gerekli randımanı gösteremiyor. O zaman grup üyeleri onların rollerini de üstlenecek ve işi tamamlayacak.
+
+76
+00:17:34,644 --> 00:17:55,963
+Grubu yarı yolda yeniden oluşturmanız mümkün değil. Zaten gerçek hayatta da bu böyle olur. O yüzden hem ekibi bozmamaya çalışmanız hem de ekipte eğer ayrılmalar olursa onların rollerini de üstlenip tamamlamanız gerekecek.
+
+77
+00:17:57,428 --> 00:18:24,948
+Evet, farklı gruptaki arkadaşlarınızla yapamıyorsunuz. Çünkü bu bizi çok zorlayan bir şey. Herkes kendi grubu içinde ekip yaratmak zorunda. Yani bu dersi alan bu gruptaki öğrenciler grup oluşturabilir. O yüzden şimdiden grubunuzu yavaş yavaş düşünmeye başlayın.
+
+78
+00:18:25,428 --> 00:18:41,288
+Bir konu teklif ediyorsunuz ekip olarak. Bunlarda tabii çok klişe şeyler olmamasına özen gösteriyorsunuz. Tanımlı olmasına özen gösteriyorsunuz. Bunu size tanımlayan dediğim gibi bir proje tanımı vereceğim.
+
+79
+00:18:43,288 --> 00:18:44,428
+Özür dilerim.
+
+80
+00:18:48,915 --> 00:19:16,016
+ekip çalışmasını da bir şekilde başlatmış oluyor. Yani bu kadar kalabalık bir ekiple yapılan ilk ders olacak belki de. Daha küçük gruplarla, daha küçük problemlere çözüm arayan uygulamalar yapıyordunuz. Veri tabanı dersinde de seneye böyle grup çalışmaları yapacaksınız.
+
+81
+00:19:16,564 --> 00:19:28,664
+İki kişi, yani iki kişi olmaması daha iyi olur. Çünkü profesyonel hayattaki gibi bir kalabalık ekip olmasını istiyoruz.
+
+82
+00:19:38,291 --> 00:19:51,971
+Daha eski yıllardan kalan öğrencilerse, yeni kişilerle şey yapamamışlarsa, o zaman çok zorunlu kaldığımız dönemlerde olabiliyor.
+
+83
+00:19:52,432 --> 00:19:54,852
+Evet, [öğrenci], soru soruyorsun herhalde.
+
+84
+00:19:55,132 --> 00:19:57,811
+Çok şey bölmüş oldum ama pardon hocam.
+
+85
+00:19:57,932 --> 00:20:00,000
+Bu şey konusunda hani grupları oluşturmak...
+
+86
+00:20:00,000 --> 00:20:19,019
+Sonuçta online eğitimdeyiz, kimse göremiyor, iletişime geçemiyor. [kişisel bilgi] Bir WhatsApp grubu falan kurup linkini atsam orada en azından grup oluşturulur, belki ders hakkında konuşuruz, uygun mudur?
+
+87
+00:20:19,571 --> 00:20:27,591
+Olur, olur. Arkadaşlar için sizden sadece izin alıyorum. Sizin olmanızı, donlamanızı size. Olur, olur. Doğru, yani buna bir çözüm bulmamız gerekiyor.
+
+88
+00:20:29,091 --> 00:20:47,571
+Tabii. Tamam, ben link atıyorum çete, arkadaşlar katılır. Ben de bir tarafına girmek istemiyorum. Şimdi, hani gerçek hayatta da siz istediğiniz kişilerle çalışırım, diğerleriyle çalışmam diyemezsiniz. Gerçek hayata uygun olsun dersek ben işte
+
+89
+00:20:47,571 --> 00:20:54,211
+Ders listesinden sırayla gider 6-7 kişi bir araya getirip grup yapabilirim.
+
+90
+00:20:54,631 --> 00:21:02,671
+Ama bu ilk çalışmamız olduğu için bu tür şeyler daha başarısızlıkla gidebilir.
+
+91
+00:21:03,691 --> 00:21:10,771
+Onun için siz bir şekilde kendiniz bir araya gelmeye çalışırsanız daha iyi olur.
+
+92
+00:21:11,135 --> 00:21:15,715
+Tamamdır hocam, ben grup linki atacağım şimdi çete, o zaman arkadaşlar bakarız.
+
+93
+00:21:16,135 --> 00:21:17,475
+Tamam, tamam, oldu.
+
+94
+00:21:22,483 --> 00:21:47,163
+Evet, o zaman şimdi proje yapacağınızı gördünüz. Şimdi ben sistem analizi ve tasarımı dediğimizde buradan ne anlıyoruz? başka yerlerde var mı? Onun üzerinden bir dersi tanıtayım.
+
+95
+00:21:49,844 --> 00:22:06,824
+Sistem bir defa o kadar çok günlük hayatımızda kullandığımız bir kelime. Bilgi sistemi için kullanıyoruz, evren sistemi diyoruz, şehir sistemi diyoruz.
+
+96
+00:22:08,852 --> 00:22:26,792
+Çeşitli anlamlarda kullanıyoruz. Baktığımızda, az sonra sistem örneklerinde de göreceğiz. İnsanı da bir sistem olarak tanımlayabiliriz. Bir muhasebe sistemini de sistem olarak tanımlayabiliriz. Üniversiteyi de bir sistem olarak tanımlayabiliriz.
+
+97
+00:22:36,051 --> 00:22:59,291
+Bu gerçek hayatta gördüğümüz herhangi bir sistemin analizini yapmak, yani nedir bu sistem, hangi elemanlardan oluşuyor, neler yapıyor, amacı nedir, bunu öğrenip,
+
+98
+00:23:04,339 --> 00:23:18,460
+Yaklaşım getirmek, yeni bir çözüm getirmek için nasıl bir bilgi sistemi tasarlayabiliriz? Bunu anlatmaktır bu dersin hedefi.
+
+99
+00:23:18,932 --> 00:23:26,812
+ni elektrik mühendisliğinde görebilirsiniz ders programında.
+
+100
+00:23:27,532 --> 00:23:32,392
+Endüstri mühendisliğinde, işletme bölümlerinde görebilirsiniz.
+
+101
+00:23:32,892 --> 00:23:37,112
+Tabii ki en önce en farklı olanından başlayayım.
+
+102
+00:23:37,112 --> 00:23:43,192
+Elektrik mühendisliğindeki sistem analizi dersi bundan çok farklı.
+
+103
+00:23:43,731 --> 00:23:46,932
+Elektrik devreleri sisteminin analizi.
+
+104
+00:23:46,932 --> 00:24:04,872
+Sadece ele almakta ve daha matematiksel yaklaşımlarla elektrik devrelerinin analizini gerçekleştirmeyi hedeflemekte. O yüzden bizim dersimizin içeriğinden çok farklı.
+
+105
+00:24:05,991 --> 00:24:12,692
+Endüstri Mühendisliğindeki bize biraz daha yakın.
+
+106
+00:24:12,980 --> 00:24:36,620
+Orada da endüstriyel sistemlerin analizi ve bunları nasıl modelleyeceğimiz, nasıl tasarımını yapacağımız, özellikle de bilgi sistemi geliştirme için bu sistemin içindeki kişilerin nasıl bilgi vereceğini anlatmak yolunda.
+
+107
+00:24:43,380 --> 00:24:51,740
+İş analizinin nasıl yapacakları daha çok anlatılmayı hedeflemektedir.
+
+108
+00:24:53,340 --> 00:24:59,308
+Benzer şekilde işletme bölümlerinde de
+
+109
+00:25:02,420 --> 00:25:12,640
+bulunacaklara, bu yaptıkları işi modelleyecek olan, bilgi sistemini yaratacak olan bizlere
+
+110
+00:25:13,203 --> 00:25:24,183
+Daha iyi nasıl bilgi verebilirler? Yaptıkları işin iş analizliğini nasıl daha iyi gerçekleştirebilirleri anlatmaktır hedefi.
+
+111
+00:25:24,683 --> 00:25:37,563
+Tabii ki hedef bu ama bazı üniversitelerde de bunu sadece bilgisayar programlarını öğreten dersler gibi de içeriği oluşturabilirler.
+
+112
+00:25:38,003 --> 00:25:43,604
+Ama hani farklı yerlerdeki hedefleri bu. Bizim hedefimiz nedir?
+
+113
+00:25:44,048 --> 00:25:52,008
+Bizim hedefimiz de bu dersle özellikle iki saatlik bir ders olarak bir başlangıç veriyoruz.
+
+114
+00:25:52,008 --> 00:26:12,008
+Şimdiye kadar derslerde daha küçük problemlerin bilgisayarla çözümünü gerçekleştirmek üzere programlar yazmak, çok çok algoritmalardan başlayarak problemi tanımladıktan sonra programı yazmak,
+
+115
+00:26:12,048 --> 00:26:25,067
+Yazmaya, geliştirmeye kadar gelen bir süreç içinde çalıştınız. Veri tabanı dersinde de yine veri tabanı yapısı içinde bunu gerçekleştirmeyi göreceksiniz.
+
+116
+00:26:34,880 --> 00:26:55,000
+Önce olurluluk analiziyle başlatıp, daha sonra analizini gerçekleştirmek, sistem analizini, daha sonra buna en uygun bilgi sistemi tasarımı hangisi olacaktı karar verip bu tasarımı geliştirmek.
+
+117
+00:26:58,099 --> 00:27:10,099
+Nesneye yönelik çözümleme dersinde de bu analiz ve tasarımdaki işleri daha hızlı yapıp programı nesneye yönelik olarak nasıl...
+
+118
+00:27:10,544 --> 00:27:32,804
+Geliştireceksiniz. Bunu görüyorsunuz daha çok. Burada bir bütün olarak test sonucu, test edilmiş yazılımı uygulamaya nasıl koyacağız, sisteme hazır hale nasıl getireceğiz, bütün süreci gerçekleştireceğiz.
+
+119
+00:27:32,804 --> 00:27:36,443
+Ve bu bizim bir başlangıç dersimiz aslında.
+
+120
+00:27:36,948 --> 00:27:54,567
+Yaptığımız geliştirme çalışmalarını büyük resmi kaybetmeden ayrıntıları ele alacak şekilde değerlendirmeyi sağlayabilmek.
+
+121
+00:27:57,327 --> 00:28:00,428
+Buraya kadar anlattıklarımdan...
+
+122
+00:28:13,011 --> 00:28:30,671
+O zaman şimdi nin değerlendirmesiyle devam edelim.
+
+123
+00:29:19,892 --> 00:29:23,852
+Şimdi, bu dönemde
+
+124
+00:29:29,556 --> 00:29:36,716
+Biz daha önceki yıllarda bu derste bir laboratuvar haftası olmasa bile
+
+125
+00:29:36,716 --> 00:29:41,456
+laboratuvarda işte
+
+126
+00:29:42,579 --> 00:30:00,000
+Fizibilite çalışması için yaptığımız zaman fizibilitesiyle ilişkili ve şeyle ilişkili, bu diagramların çizimiyle ilişkili case study yerine geçecek şeyi sizlere yaptık.
+
+127
+00:30:00,000 --> 00:30:18,759
+Ve onlardan da bir laboratuvar notu veriyorduk. Laboratuvarda arkadaşlar yaptırıyordu. Bu dönem bu case study ve şeyi anlatarak gideceğiz. O yüzden onları bir değerlendirme notu koymadık.
+
+128
+00:30:25,523 --> 00:30:29,824
+Dönem arasında verdiğimiz notu oluşturacak.
+
+129
+00:30:30,303 --> 00:30:42,803
+Vize de derste anlatılan konuların değerlendirmesi olacak ve genel olarak dekanlık tarafından şu anda 8. hafta belirtildi.
+
+130
+00:30:43,263 --> 00:30:47,683
+Bir değişiklik olursa tabii ki bu genel bir değişiklik olacak. Sizinle paylaşırız.
+
+131
+00:30:49,044 --> 00:31:09,684
+Şimdiki şeye göre 8. haftada, 27 Nisan haftasında o zamana kadar derste anlatılan konuların değerlendirilmesi ve ön inceleme, analiz, gerçekleştirilmesi, tasarımı o zamana kadar görmemiş olacağız zaten.
+
+132
+00:31:09,684 --> 00:31:16,164
+Onu fazladan yazmışız. Bir projemiz olacak demiştik.
+
+133
+00:31:16,852 --> 00:31:19,812
+Bir soru var galiba.
+
+134
+00:31:22,812 --> 00:31:24,632
+Proje tarihleri yanlış mı?
+
+135
+00:31:32,307 --> 00:31:32,968
+bakalım.
+
+136
+00:31:44,564 --> 00:32:02,304
+Proje önerisi, şimdi sizden konu önerisi alacağız. Yani bu haftadan itibaren 3 haftanız olacak 23 Mart'ta. Bunların değerlendirmesini yapacağız.
+
+137
+00:32:11,443 --> 00:32:25,683
+Grup oluşturmanız gerekecek ve grubun konusu belirlenecek.
+
+138
+00:32:26,503 --> 00:32:31,563
+Bize verdiğiniz öneride neler olacak proje önerisinde?
+
+139
+00:32:37,619 --> 00:32:54,819
+Ve şu konuda proje yapacağız. Ama sadece öneride konu adı olmayacak. Aynı zamanda alt başlıkları neler olacak bu konunun? Yani hangi modülleri olacak?
+
+140
+00:32:54,819 --> 00:33:02,819
+Ve bu konu başlıkları için birer satırlık bir açıklama. Mesela...
+
+141
+00:33:03,347 --> 00:33:27,908
+İşte yurt bilgi sistemi, şu anda yurtta kalmıyorsunuz ama veya başka bir sistem. O iş, yine yurda örnek vereyim. Yurt bilgi sistemi dediğimizde burada hangi işlemler gerçekleşiyor?
+
+142
+00:33:30,324 --> 00:33:45,264
+Odaların yerleştirilmesi, kişilerin belirlenmesi, atama yapılması kalacağı yere, başvuru değerlendirme olmayabilir.
+
+143
+00:33:46,503 --> 00:33:49,804
+Yani alt işlemleri seçeceksiniz neler oluyorsa.
+
+144
+00:33:51,943 --> 00:33:56,443
+En az 4 alt işlem olacak şekilde.
+
+145
+00:33:57,044 --> 00:34:00,524
+Bunu belirtiyorsunuz.
+
+146
+00:34:01,663 --> 00:34:05,564
+Ve biz de her bir teklife bakıyoruz.
+
+147
+00:34:08,524 --> 00:34:11,423
+Hangi işlemler var, yeterli mi?
+
+148
+00:34:12,123 --> 00:34:14,884
+İşte şunu veya bazen de bilemiyorsunuz.
+
+149
+00:34:14,943 --> 00:34:17,684
+Çok büyük bir uygulama belirtiyorsunuz.
+
+150
+00:34:18,284 --> 00:34:21,684
+O zaman bu büyük bir uygulama, çok genel bir uygulama.
+
+151
+00:34:21,824 --> 00:34:24,644
+Bunun alt birimlerinden birisini seç diyoruz.
+
+152
+00:34:25,652 --> 00:34:30,511
+Böyle bir çalışma. Onun için tarih yanlış değil.
+
+153
+00:34:34,351 --> 00:34:38,771
+Konu önerisi için proje bilgisi.
+
+154
+00:34:40,351 --> 00:34:46,652
+Bunların değerlendirmesini de üç gün sonra gerçekleştirip...
+
+155
+00:34:48,275 --> 00:34:55,895
+Uygun olmayan veya düzeltilmesi gereken proje isimlerini belirtiyoruz, grup isimlerini.
+
+156
+00:34:55,895 --> 00:35:05,135
+Rapor tesliminiz 1 Haziran'da olacak. Ondan sonra da zaten 2 hafta sunumunuz olacak.
+
+157
+00:35:08,079 --> 00:35:26,119
+26 Haziran'da. Yalnız dediğim gibi, bu case çalışması, sizin bu raporları hazırlamakta ufkunuzu açacak çalışma olduğu için o haftaları değiştirebilirim.
+
+158
+00:35:31,347 --> 00:35:36,907
+Evet, şimdi burada not ağırlığını da eşit verdik.
+
+159
+00:35:37,347 --> 00:35:44,747
+Vize ve proje sene içi, dönem içi çalışması olduğu için yüzde otuz, yüzde otuz belirledik.
+
+160
+00:35:45,108 --> 00:35:50,027
+Proje farkındasınızdır, derste anlatmaya başladığımdan beri.
+
+161
+00:35:50,483 --> 00:36:03,344
+Bu derste proje önemli. Neden? Çünkü ilk defa bu kadar büyük çapta bir ekip çalışması yapıyorsunuz. Oradaki uyum ve denge de bizim için önemli.
+
+162
+00:36:05,695 --> 00:36:30,576
+Uygulama çalışması yapıyorsunuz ve bir rapor çıkartıyorsunuz. Bunu da sözlü olarak sunuyorsunuz. O yüzden kalabalık bir proje içinde olsanız bile %30 ağırlığı hak ediyor. %30 da ara sınav, final sınavı da %40 değerde olacak.
+
+163
+00:36:33,012 --> 00:36:37,231
+Burada başka ne sorabilirsiniz?
+
+164
+00:36:41,271 --> 00:36:46,731
+Projede herkes aynı notu almayacak, grubun bütün üyeleri.
+
+165
+00:36:47,851 --> 00:36:53,112
+Grup üyeleri sunum yapacak, hep söylediğimiz gibi.
+
+166
+00:36:53,568 --> 00:37:09,048
+Bu sunumda kendi ayrılan işini yapmadığı anlaşılan veya genel olarak yapılan işle ilişkili genel bilgisi olmayanlara biraz daha düşük not alacak.
+
+167
+00:37:14,387 --> 00:37:22,947
+katkısı olmayan arkadaşlar, sunuma gelmemiş olan arkadaşlar daha da farklı değerlendirilecek.
+
+168
+00:37:25,527 --> 00:37:33,567
+O yüzden yani projede ekip içindeyim. Ekip hangi notu alırsa ben de onu alırım diye düşünüyorum.
+
+169
+00:37:37,139 --> 00:37:48,219
+Evet, final 14-26 arasındaki bir tarihte olacak. Sunumlarınız da son iki haftada.
+
+170
+00:38:09,268 --> 00:38:16,427
+Evet, şimdi sistem kavramıyla devam edelim. Bir soru var galiba.
+
+171
+00:38:19,427 --> 00:38:23,507
+Altı kişi diye planladık.
+
+172
+00:38:25,647 --> 00:38:31,268
+Siz şimdi arkadaşınızın da bu grup çalışmasıyla...
+
+173
+00:38:31,603 --> 00:38:41,723
+Bir grup oluşturmaya başlayın. Önümüzdeki hafta grup konusunda tekrar konuşuruz. Şu anda 6 kişi diye belirliyorum.
+
+174
+00:39:23,123 --> 00:39:39,923
+Evet, şimdi bir ara verelim isterseniz, bir 10 dakika. Ondan sonra tekrar derse artık konularımızı işleyerek devam edeceğiz.
+
+175
+00:52:15,603 --> 00:52:25,003
+Evet, tekrar derse devam ediyoruz. Şu anda paylaştığım slide'ı görebiliyor musunuz?
+
+176
+00:52:27,103 --> 00:52:28,803
+Evet hocam, sıkıntı yok.
+
+177
+00:52:29,383 --> 00:52:36,743
+Tamamdır. Şimdi bu derse bu hafta sistemle başlayacağız demiştim.
+
+178
+00:52:37,103 --> 00:52:45,383
+Sistem nedir? Hani günlük hayat içinde çok kullandığınız bir kelime ama bir tanım olarak geçelim üzerinden.
+
+179
+00:52:46,743 --> 00:53:02,163
+Sistem, alt sistemlerde diyeceğimiz birbiriyle ilişkili ve her birinin bir işi başardığı birçok fonksiyonu yerine getirdiği.
+
+180
+00:53:02,675 --> 00:53:14,115
+Parçaların bütünüdür bir sistem. Mesela bir biyolojik sistem, bilgisayar sistemi, sosyal sistem bunların hepsinin birer alt sistemi var.
+
+181
+00:53:30,708 --> 00:53:39,407
+Farklı işletmecilik görevlerini gerçekleştirmek için bir sistemdir bilgi sistemi.
+
+182
+00:53:40,507 --> 00:53:46,947
+Şimdi genel olarak sistemin elemanları nelerdir?
+
+183
+00:53:50,288 --> 00:53:55,748
+Sistemin sınırları vardır. Şu şekil üzerinde daha rahat görebiliriz öncelikle.
+
+184
+00:53:56,255 --> 00:54:03,355
+Sistemin bir defa bir sistem olabilmesi için bir amacının olması gerekiyor.
+
+185
+00:54:04,576 --> 00:54:11,556
+Dış ortamla bağlantısını bu an derece sınırlar oluşturuyor.
+
+186
+00:54:12,135 --> 00:54:18,715
+Dış ortamdan sisteme girdiler olması gerekiyor.
+
+187
+00:54:19,443 --> 00:54:25,564
+Dış ortamada çıktılar, output oluşturulur.
+
+188
+00:54:26,844 --> 00:54:32,364
+Sistemin elemanları vardır veya alt sistemleri vardır.
+
+189
+00:54:33,864 --> 00:54:38,544
+Bu elemanlar arasında iç ilişkiler vardır.
+
+190
+00:54:39,103 --> 00:54:57,583
+Ve böylece bu sistem bütün bu elemanlarıyla beraber hedefi gerçekleştirmek üzere iç bağlantıları düzgün bir iletişim çerçevesinde hedefi sağlamak üzere çalışır.
+
+191
+00:54:57,583 --> 00:55:04,563
+Şimdi ilk aklımıza gelen içinde bulunduğumuz kurum üniversite.
+
+192
+00:55:07,103 --> 00:55:28,363
+Üniversite örneğini veriyorum. Üniversite içinde girdiler var. Girdiler nelerdir? Yeni gelen öğrenciler, yeni katılan öğretim elemanları, görevliler, bunların hepsi dış ortamda sisteme giren girdiler.
+
+193
+00:55:28,884 --> 00:55:48,884
+Çıktılar nedir? Input ve output'u tanımlayalım önce. Output da mezunlar, çalışanların oluşturduğu yayınlar, bunlar da çıktılardır.
+
+194
+00:55:52,884 --> 00:55:55,043
+İç ilişkiler.
+
+195
+00:55:55,456 --> 00:56:22,036
+Önce iç ilişkileri tanımlamadan önce elemanları tanımlayalım. Elemanlar da öğrenciler, öğretim üyeleri, idari çalışanlar. Bunlar elemanlar. Bu elemanlar da belirli bir sınıfsal hiyerarşi içinde yerleşmişlerdir. Yani alt sistemler dahilinde. Üniversitede nasıldır bu alt sistemler?
+
+196
+00:56:23,456 --> 00:56:41,856
+Üniversite yönetimi, üniversite yönetimi çerçevesinde bir alt sistem, fakülteler, bunların hepsi hiyerarşik alt sistemler halinde. Fakültelerin alt sisteminde bölümler.
+
+197
+00:56:42,387 --> 00:56:51,168
+bölümlerin alt sistemi dahilinde ana bilim dalları pek çok sap sistem ortaya çıktı.
+
+198
+00:56:51,583 --> 00:57:18,643
+Bu alt sistem ve sistem hiyerarşisi içinde bütün bu hiyerarşik kademelerde bir de elemanlarımız var. Elemanlar da işte bu hiyerarşik kademe içinde bir yere yerleşmiş durumdalar. Öğrenci diyoruz mesela sistemin elemanı ama hiyerarşik kademe içinde hangi fakültenin hangi bölümünün öğrencisi?
+
+199
+00:57:19,380 --> 00:57:23,579
+Sizde sadece iki kademeye kadar iniyor.
+
+200
+00:57:24,119 --> 00:57:35,719
+Çalışanlar için de üniversitenin öğretim üyesi ama hangi fakültenin hangi bölümünün hangi ana bilim dalının öğretim üyesi.
+
+201
+00:57:36,719 --> 00:57:44,719
+İşte idari personel hangi fakültenin hangi bölümünün veya hangi idari birimin personeli şeklinde.
+
+202
+00:57:45,168 --> 00:58:07,168
+Bunlar canlılar, tabi cansız varlıklar da var sistemin içinde, sınıflar, odalar, laboratuvarlar gibi. Bunlar da sistemin elemanları. Bütün bunlar arasında da bir tanımlanmış iyi ilişkiler var. Bu ilişkiler nelerdir?
+
+203
+00:58:07,664 --> 00:58:25,644
+İlişkilerde üniversite yönetmeliği, işte bilmem farklı bir kurum içinde mevzuat, yönetmelik, o kurumun işleyişini, görev tanımlarını yapan yönetmelikler.
+
+204
+00:58:26,924 --> 00:58:32,824
+Bunlar sayesinde de bu iç ilişkiler yönetilmiş oluyor.
+
+205
+00:58:33,715 --> 00:58:45,575
+Dışarıya baktığımızda dışarıdaki ilişkilerde mezunlar, mezunların çalıştıkları yerler dolaylı ilişkilerde sayılabilir.
+
+206
+00:58:46,335 --> 00:58:59,135
+Böylece biz üniversite kurumunu bu şekildeki elemanlar çerçevesinde, sistemin elemanları çerçevesinde örneklemiş olduk.
+
+207
+00:58:59,987 --> 00:59:15,907
+Şimdi bir sistem yapılanmasında bakalım sistem sınırları bu bir üniversite.
+
+208
+00:59:16,659 --> 00:59:41,659
+Sistemi olabilir. Üniversite sisteminde, üniversite sisteminin bir parçası olan bir otomasyon sistemi var. Yani bilgi sistemi. Burada bir bütünlük olabilir. Mesela üniversitedeki personel sistemi, öğrenci sistemi, evrak takip sistemi, hepsi
+
+209
+00:59:42,387 --> 00:59:52,148
+Aynı yönetim bilgi sistemi içinde birbiriyle haberleşerek çalışıyorsa eğer, bütün kurumun tek bir otomasyon sistemi vardır.
+
+210
+00:59:52,927 --> 01:00:00,000
+Tek bir bilgi sistemi. Onun parçaları olarak çalışıyorlar. Ama hepsi ayrı ayrı çalışıyorsa bunları konuşturmaktayız.
+
+211
+01:00:00,000 --> 01:00:13,820
+Eğer bir bilgi bulmak için araya bir belge gidiş gelişi sağlanıyorsa o zaman bu da tam bütün sistemi otomatize eden bir bilgi sistemi değildir.
+
+212
+01:00:14,867 --> 01:00:21,187
+Sistemin çevresi diye baktığımızda ondan da bahsettik. Sistem çevresini de tanıtmak gerekiyor.
+
+213
+01:00:21,927 --> 01:00:35,707
+İşte üniversiteyi tanıttığımız zaman üniversitenin mezunlarının çalıştığı, öğrencilerin aileleri, hepsi sistemin çevresindeki ortamı oluşturuyor.
+
+214
+01:00:37,167 --> 01:00:39,327
+Öğrencilerin staj yaptıkları yerler.
+
+215
+01:00:39,956 --> 01:01:00,876
+Bizim çalışmalarımızı sürdürdüğümüz projeler, bu projeler dahilinde farklı üniversitelerle ilişkiler, yine sistemi çevreleyen ortamda üniversitenin genel kurallarını aldığı
+
+216
+01:01:01,331 --> 01:01:08,051
+Yüksek Öğretim Kurumu, bu da sistemin çevresindeki ortamlardan biridir.
+
+217
+01:01:09,891 --> 01:01:25,871
+Şimdi bu elemanlara baktığımız zaman da alt sistemler arasında iç ilişkilerin tanımlı olması gerekiyor. Bunu söyledik.
+
+218
+01:01:26,387 --> 01:01:41,268
+İşlevsel bir bütünlük ve bu bütünlüğün de ayrı ayrı bakıldığında takip edilebilir. Yani ayrıştırılabilir de olması gerekiyor.
+
+219
+01:01:41,268 --> 01:01:46,887
+Alt sistemleri neye göre ayırıyoruz?
+
+220
+01:01:51,731 --> 01:01:58,572
+Fakültenin alt sistemi bölümler. Bunları nasıl ayırt edebiliyoruz?
+
+221
+01:01:58,572 --> 01:02:10,692
+Sistem sınırları sistemle ortam arasındaki ayırt edici sınırlar ve bu ortamdan gelen girdiler.
+
+222
+01:02:13,556 --> 01:02:32,535
+Dolayısıyla biz ortamla ilişkilerimizi sağlarken mesela liselerdeki mezunların aldıkları dersleri de bilmemiz gerekiyor ki kendi müfredatımızı oluştururken gelen öğrenci ne biliyor ne bilmiyor onu belirleyelim.
+
+223
+01:02:32,535 --> 01:02:33,535
+O zaman demek ki...
+
+224
+01:02:34,195 --> 01:02:48,675
+Üniversiteye gelen öğrencinin geldiği kurumlar da bizim sınırlarımızda, ortam içinde ilişkili kurumlarımız.
+
+225
+01:02:49,415 --> 01:02:51,895
+Sistem sınırlarından bahsettik.
+
+226
+01:02:56,019 --> 01:03:03,019
+Bilgi sistemlerinin ne derece birbiriyle ilişkili olduğu.
+
+227
+01:03:06,619 --> 01:03:10,980
+Sistem düşüncesinde ne vardır?
+
+228
+01:03:12,180 --> 01:03:15,400
+Biz şurada üniversite örneğini verdik.
+
+229
+01:03:15,860 --> 01:03:43,019
+Üniversite örneğini verdik. Burada bütün girdiği tanımladık, çıktığı tanımladık. Alt sistemleri, üst sistemleri tanımladık. Bölüm, ana bilim dalı, fakülte gibi. İç ilişkileri yönetmelik olarak tanımladık. Ama bir sistem olabilmek için amacı tanımlamadık. Bir amaç çerçevesinde çalışan dediğimizde.
+
+230
+01:03:44,436 --> 01:03:49,736
+Buradaki amaç üniversite için nedir?
+
+231
+01:03:52,076 --> 01:04:08,696
+Üniversite için iyi öğrenciler yetiştirmek ve mezun olan öğrencilerimizin ne kadar iyi işlerde çalıştığı.
+
+232
+01:04:09,300 --> 01:04:18,320
+Master sınavlarında ne kadar başarılı olduğu gibi değerler.
+
+233
+01:04:19,460 --> 01:04:24,332
+Üniversite çalışanlarının çıkarttığı yayınların ne kadar...
+
+234
+01:04:27,572 --> 01:04:45,572
+Fazla ve nitelikli olması. Bunlar da çıktılarımız oluyor. Demek ki ilk hedef, üniversitenin amacı iyi mezunlar yetiştirmek.
+
+235
+01:04:53,652 --> 01:04:58,112
+Son yıllarda hepsinin zorunlu olduğu bir şey var.
+
+236
+01:04:58,612 --> 01:05:03,512
+İşte üniversite vizyon misyonunun yazılması, hedeflerinin yazılması.
+
+237
+01:05:04,452 --> 01:05:15,812
+Bir vizyon oluşturup o vizyonu belirledikten sonra o vizyonu yerine getirmek için hangi hedefleri sağlaması gerektiği.
+
+238
+01:05:21,460 --> 01:05:27,619
+O sistem hangi kurumsa hedefini oluşturacaktır.
+
+239
+01:05:29,119 --> 01:05:37,960
+Şimdi sistem bilimi, sistem düşüncesi çerçevesinde hangi kurallarımız var?
+
+240
+01:05:46,963 --> 01:06:07,844
+Birçok karşımıza çıkan kurumu inceleyeceğimiz problemi değerlendirirken öncelikle buradaki sistemi tanımlamalıyız. Daha sonra bu sistemin alt sistemleri nelerdir onları tanımlayabilmeliyiz.
+
+241
+01:06:13,711 --> 01:06:20,271
+İşlevleri nelerdir ve özellikleri nelerdir? Bunları tanımlamalıyız.
+
+242
+01:06:40,927 --> 01:06:43,788
+nitelikli verebilmesini sağlamak.
+
+243
+01:06:44,947 --> 01:06:53,648
+Peki, alt sistemlere doğru ilerledikçe yine bunların her birinin fonksiyonlarını ve özelliklerini sayabilmemiz gerekiyor.
+
+244
+01:06:53,648 --> 01:07:01,807
+Fakülte için, elektrik elektronik fakültesindeki bütün bölümlerin aynı derecede,
+
+245
+01:07:03,731 --> 01:07:24,011
+Laboratuvar ve dersleri düzgün yapabilmesi için, araştırmalarını düzgün yapabilmesi için bütün bölümlere gerekli olanakları sağlamak ve gerekli üniversite yönetimiyle aradaki ilişkileri sağlamak, iletişimi sağlamak.
+
+246
+01:07:24,820 --> 01:07:36,280
+Peki bölümün vazifesi nedir? Fakülteye karşı görevleri bu hedeflere uygun olarak
+
+247
+01:07:38,835 --> 01:07:54,536
+Gerçekleştirilen işte laboratuvarların bakımı ve derslerin programlarının yapılması, yeni derslerin açılması için kararların verilmesiyle ilişkili işleri gerçekleştirmek.
+
+248
+01:07:56,675 --> 01:08:03,935
+Bu şekilde alt sistemlerin de her birinin kendine düşen görevleri var.
+
+249
+01:08:06,688 --> 01:08:11,468
+Bunların arasındaki sınırlar da yine tanımlanmalı.
+
+250
+01:08:12,448 --> 01:08:16,507
+Sistemin girdi ve çıktıları tanımlanmalı.
+
+251
+01:08:17,927 --> 01:08:21,728
+Alt sistemler arasındaki ilişkiler tanımlı olmalı.
+
+252
+01:08:22,128 --> 01:08:25,108
+Bunları neyle gerçekleştiriyorduk?
+
+253
+01:08:35,764 --> 01:08:57,744
+sistemin ortamla ilişkileri arasında özellikle bir sistemin elemanları ve alt sistemleri arasındaki ilişkileri neyle sağlıyorduk? [öğrenci] söyler misiniz?
+
+254
+01:09:00,623 --> 01:09:01,584
+Hanım hocam buyurun.
+
+255
+01:09:03,572 --> 01:09:17,551
+Sistemin alt sistemleri ve sistemin elemanları arasındaki ilişkileri üniversitede ne ile sağlıyoruz?
+
+256
+01:09:18,551 --> 01:09:23,551
+İsmini tam olarak unuttum ama bu kurallar, tüzükler...
+
+257
+01:09:24,340 --> 01:09:27,059
+Evet, yönetmeliklerle.
+
+258
+01:09:27,079 --> 01:09:27,800
+Evet, evet, aynen.
+
+259
+01:09:29,159 --> 01:09:38,460
+Mesela öğrencilerle dersler arasındaki ilişkiler, öğrencilerle öğretim üyeleri arasındaki ilişkiler, öğrenciyle bölüm arasındaki ilişkiler.
+
+260
+01:09:38,940 --> 01:09:46,119
+Bunlar için hep lisans yönetmeliği, yüksek lisans yönetmeliği gibi yönetmeliklerle gerçekleştiriyoruz.
+
+261
+01:09:46,739 --> 01:09:47,940
+Evet, teşekkürler.
+
+262
+01:09:53,492 --> 01:10:07,131
+Bir de burada kaydetmemişim ama bu sistem kuralları arasında başka bir şey de çıktıların iyileştirilmesi.
+
+263
+01:10:07,272 --> 01:10:11,592
+Yani sistem düşüncesine ekleyeceğimiz bir madde daha var, önemli bir madde.
+
+264
+01:10:17,619 --> 01:10:31,460
+İyileştirmemiz gerekiyor. Nasıl iyileştiriyoruz bunu? Bu iyileştirmenin yolu nedir? Sistemin çıktılarını iyileştirmek için çıktıları değerlendirmek gerekiyor.
+
+265
+01:10:44,564 --> 01:11:01,623
+Düzeltip ya işlemlerimizi değiştirmek, yani fonksiyonları değiştirmek ya da girdileri değiştirmek gerekecek. Bu da geri besleme.
+
+266
+01:11:02,771 --> 01:11:22,211
+Geri besleme işlemini mutlaka sistem yapısı içinde gerçekleştirmemiz gerekiyor. Yani sistem düşüncesi kapsamında bütün sistemlerin geri beslemeli olması gerekiyor.
+
+267
+01:11:22,211 --> 01:11:28,372
+Yine üniversite örneğinden girdiğimize göre, üniversitede bu geri beslemeyi nasıl yaparız?
+
+268
+01:11:28,979 --> 01:11:47,459
+Mesela önümüzdeki günlerde bu ayın sonunda bizim müdek değerlendirmemiz var. Yani Mühendislik Dekanlar Konseyi tarafından bir sertifika alabilmemiz gerekiyor kalite açısından.
+
+269
+01:11:47,988 --> 01:12:13,507
+Burada bir takım değerlendirmeler yapıyoruz, kendi iç değerlendirmelerimizi. Bunlar nasıl oluyor bu değerlendirmeler? Hem bütün bölümdeki elemanlar, öğrenciler, öğretim üyeleri, dersler, bütün bunların, işte biz bunları iyi yapıyoruz dememiz yeterli değil, belgelenmesi gerekiyor.
+
+270
+01:12:14,815 --> 01:12:23,655
+Mezunlarla ilişkiler, mezunların nerede bulunduğunun öğrenilmesi, bunlardan geri besleme almak.
+
+271
+01:12:23,655 --> 01:12:35,976
+Mesela biz daha çok çalışmaları yaptığımız kurumlardan testle ilişkili ayrıca bir seçimlik ders alınması.
+
+272
+01:12:38,131 --> 01:13:02,851
+İsteğini aldık. Buna göre de 10 sene önce yüksek lisansta verdiğimiz derslerden bir tanesi olan yazılım kalite süreçlerini lisansa da seçimlik dersi olarak koyduk. Yani bu benimle ilişkili ders olduğu için söylüyorum. Diğer dersler için de bir takım şeyler eklendi ya da çıkarıldı.
+
+273
+01:13:03,859 --> 01:13:28,500
+Böyle değerlendirmeler oluyor. Dolayısıyla yani paydaşlardan değerlendirme istiyoruz. Paydaşlarımız kimler? Öğrencilerimizin staj yaptığı yerler, mezunlarımızın çalıştığı yerler, eski mezunlarımız kendilerini nerede eksik görüyorlar veya staja giden öğrencilerimiz kendilerini
+
+274
+01:13:29,043 --> 01:13:42,043
+Diğer üniversitelere karşı nerede eksik, nerede kuvvetli görüyorlar. Bütün bunlar bir değerlendirme. İşte bu değerlendirmelere göre biz...
+
+275
+01:13:42,420 --> 01:14:06,520
+İşleyişimizi değiştiriyoruz ya da ek dersler koyuyoruz, dersler çıkartıyoruz. Gelen elemanların bir ana bilim dalında daha eksiksek ona göre veya bir konuda daha eksiksek o konuda yeni öğretim elemanları alıyoruz.
+
+276
+01:14:07,220 --> 01:14:22,579
+Öğrencilerimizin gelişlerinde, yüksek lisans doktor öğrencisinde şu konuda çalışacakları arıyoruz gibi bir takım değişiklikler yapıyoruz.
+
+277
+01:14:22,579 --> 01:14:27,840
+Bunu da geri besleme işlemine örnek olarak verebiliriz.
+
+278
+01:14:33,876 --> 01:14:52,096
+elde edilen çıktıların değerlendirilerek bu değerlendirme sonuçlarına göre girdilerin ya da sistemdeki fonksiyonların, elemanların değişikliğe uğraması.
+
+279
+01:14:52,896 --> 01:14:57,876
+Bu da bizim sistem çerçevesinde geri besleme tanımımız.
+
+280
+01:15:07,155 --> 01:15:31,036
+Şimdi baktığımızda bir sistem var, işletmecilik sistemi. İşletmecilik sisteminde bir müşteri destek sistemi, müşteri destek sisteminin işini yapabilmesi için envanter yönetim sistemiyle, üretim sistemiyle
+
+281
+01:15:32,500 --> 01:15:34,859
+İlişkili olması gerekiyor.
+
+282
+01:15:37,819 --> 01:15:43,819
+Müşteri destek sistemi, CRM olarak duyduğunuz uygulamalar vardır.
+
+283
+01:15:45,100 --> 01:15:59,699
+Bu müşteri destek sistemi, müşterilerin bilgilerinin tutulması, gerekli değişikliklerin düzenlemenin yapılması, girdiği siparişlerin tutulması.
+
+284
+01:16:00,212 --> 01:16:13,912
+İçeriğindedir. İşte bu noktada müşterinin verdiği siparişler için, sipariş girişleri için üretim manufacturing sistemle ilişkili olması gerekir.
+
+285
+01:16:14,868 --> 01:16:32,128
+Envanter yönetim sistemi de bu hem üretim sistemiyle hem müşteri destek sistemiyle ilişkili olmak zorundadır. Yani müşteri bir sipariş verecek ama bu sipariş envanterde var mı yok mu?
+
+286
+01:16:42,868 --> 01:16:45,188
+Üretim sistemiyle hem envanter
+
+287
+01:16:50,387 --> 01:16:56,387
+Bunu da hep üniversiteden örnek verdik. Bunu da genel daha yukarıdan baktığımızda...
+
+288
+01:17:01,652 --> 01:17:11,811
+Daha yukarıdan baktığımızda bir işletmecilik sisteminin bir parçası içinde örnekleyebiliyoruz.
+
+289
+01:17:15,252 --> 01:17:23,352
+Şimdi aslında biz önümüzdeki hafta esas gireceğiz bunlara.
+
+290
+01:17:23,352 --> 01:17:35,372
+Ama bir başlangıç olarak bilgi sistemi dediğimizde bilgi sisteminden ne anlıyoruz?
+
+291
+01:17:40,659 --> 01:17:42,180
+Şurada önce ona bakalım.
+
+292
+01:17:42,180 --> 01:17:44,239
+Bilgi sistemi.
+
+293
+01:18:05,492 --> 01:18:20,932
+Çıktı olarak sağlamak üzere veriyi toplamak, işlemek, saklamak için bütün iç bileşenlerin bir arada çalıştığı sistem.
+
+294
+01:18:22,152 --> 01:18:27,692
+Peki bu bilgi sistemi hangi farklı tiplerde olabilir?
+
+295
+01:18:28,467 --> 01:18:32,847
+Bu bilgi sistemi Transaction Processing Sistem olabilir.
+
+296
+01:18:35,927 --> 01:18:45,448
+Yani temel bir işi yapar sadece bir bordro sistemi, bir ATM'den sadece para çekme sistemi, tek bir işi yapan sistem.
+
+297
+01:18:46,148 --> 01:18:47,927
+Yönetim bilgi sistemi nedir?
+
+298
+01:18:55,667 --> 01:19:16,667
+Çalışan Transaction Processing sistemleri bir arada çalışmasını sağlayan ve kurumun tepe yönetimine doğru gerektiğinde birbiriyle kıyaslanabilir, özetlenebilir olarak kullanacak hale getiren bir...
+
+299
+01:19:18,323 --> 01:19:45,283
+Raporlama da gerçekleştirebileceğimiz bir bilgi sistemidir. Örneğin bir muhasebe bilgi sistemi, bir yönetim bilgi sistemidir. Altında pek çok alt uygulamalar vardır. Çünkü Borderless sistemi de muhasebe bilgi sisteminin alt programlarından bir tanesidir.
+
+300
+01:19:47,315 --> 01:19:58,495
+Executive Information System, üst yönetime sadece doğrudan bilgi veren sistemdir.
+
+301
+01:20:11,891 --> 01:20:28,891
+Kullanılan sistemlerdir. Bu çok geniş bir perspektifte. Bir Excel tablosu da karar destek sistemi olarak çalışabilir. Bir uzman sistemde, bir bilgi tabanlı iş sisteminde karar destek sistemi olarak çalışabilir.
+
+302
+01:20:28,891 --> 01:20:39,891
+Senaryolar yaratıp bu senaryolara göre en uygun hareketi alma durumunda karar destek sistemi.
+
+303
+01:20:39,891 --> 01:20:41,971
+bilgi sistemlerini kullanırız.
+
+304
+01:20:46,731 --> 01:20:58,351
+Şimdi daha sonra da üzerinde duracağımız, yine bilgi sistemlerini de daha ayrıntılı olarak önümüzdeki hafta duracağız.
+
+305
+01:21:08,467 --> 01:21:24,467
+Evet, devam ediyoruz. Sistem analizi dediğimiz zaman bazen bir proje yöneticisinin, küçük firmalarda proje yöneticisinin bazen...
+
+306
+01:21:25,779 --> 01:21:47,059
+Teknik destek ekibinin ya da büyük firmalarda sadece iş analistlerinden sonra işin analizini, tasarımı yapacak, yazılım mühendislerine aktaracak seviyede çalışan kişilerden bahsediyoruz sistem analisti çerçevesinde.
+
+307
+01:21:51,028 --> 01:22:10,028
+Hem teknik bilgi sahibi olmalıdırlar, yani programlama dilleri, genel bilgisayar bilgisi, network bir anahtar teslim sistem daha küçük bir firma için yapılırken hangi network...
+
+308
+01:22:12,020 --> 01:22:29,480
+Hangi ağ uygulamasını seçmeliyiz, ona karar verme aşamasında, iletişimden, veritabanı yönetim sisteminden, işletim sistemlerinden anlayacak derecede bilgi sahibi olmalı.
+
+309
+01:22:34,100 --> 01:22:39,640
+Sistemin yazılımın hazırlanması için seçilecek tool'lara karar verebilmeli.
+
+310
+01:22:40,740 --> 01:22:47,079
+Hem işletmecilik bilgi ve yeteneklerine sahip olmalı.
+
+311
+01:22:47,280 --> 01:22:48,880
+Neden buna sahip olmalı?
+
+312
+01:22:48,880 --> 01:22:55,700
+Çünkü biz bir işletmeye yazılım geliştiriyorsak, organizasyon nasıl çalışıyor?
+
+313
+01:22:56,079 --> 01:22:57,760
+Organizasyonun yapısı nedir?
+
+314
+01:22:57,860 --> 01:22:59,720
+Organizasyon nasıl yönetilir?
+
+315
+01:23:00,243 --> 01:23:17,724
+Hangi kademedekiler hangi işi yapar? Bunları bilebilmeli. Aktiviteler nelerdir, aktörler nelerdir? Her bir uygulamada bunları bilmesi gerekiyor.
+
+316
+01:23:21,140 --> 01:23:29,800
+Spesifik olarak organizasyon nedir? Bu sistemde başarılı olma nedir?
+
+317
+01:23:31,800 --> 01:23:34,800
+Strateji ve planları...
+
+318
+01:23:34,996 --> 01:23:53,675
+bilmek zorunda stratejiler ve kurumun kültürü nedir? Yani kurum hakkında bir iş şirket hakkında bu anlamda bilgi sahibi olmalıdırlar.
+
+319
+01:24:00,047 --> 01:24:20,327
+İletişim konusunda yetenek ve bilgi sahibi olmalıdırlar. Neden? Çünkü bu mutlaka başka kişilerle çalışacak, etkin olarak iletişim kurmak zorunda.
+
+320
+01:24:27,252 --> 01:24:32,432
+ekip üyelerinin her birinin
+
+321
+01:24:34,195 --> 01:24:50,595
+Yapacakları görevler içinde birbiriyle iletişim sağlaması gerekecek. Sistem analizi aslında proje yöneticisi bu işleri yapar ama küçük bir kurumda sistem analizi görevinde olan kişi de bu işi yapacaktır.
+
+322
+01:25:02,195 --> 01:25:05,695
+Yine görevi vardır.
+
+323
+01:25:06,655 --> 01:25:18,275
+İnsanların nasıl düşündüğünü, nasıl daha iyi öğrenebileceğini, değişikliğe nasıl reaksiyon göstereceklerini, yine kullanıcılar için bu çok önemli.
+
+324
+01:25:18,795 --> 01:25:23,536
+Kullanıcıların çünkü yaptıkları işi değiştiriyoruz bazen.
+
+325
+01:25:23,536 --> 01:25:30,195
+Buna reaksiyon veriyorlar ama sistem analizinin bunu da tahmin edip ona göre...
+
+326
+01:25:30,195 --> 01:25:46,076
+davranması gerekiyor. İnsanlarla nasıl iletişim kurulacak? Yazılı, sözlü, raporlar, müşteriyle, ürün aldığımız firmalarla iletişim nasıl kurulacak? Bu konuda bilgi sahibi olmalı.
+
+327
+01:25:47,123 --> 01:25:52,943
+Ve hangi aktiviteleri, kimler, hangi görevleri gerçekleştiriyor.
+
+328
+01:25:54,183 --> 01:26:12,123
+İşte bütün bunlara ek olarak görüşme yapma, interview, dinleme, gözleme bunlar zaten benim az önce daha sonra göreceğiz dediğimiz konuların sistem analizi aşamasında bilgi toplama.
+
+329
+01:26:12,756 --> 01:26:25,716
+Sırasında görüşme, dinleme, gözlem yapmak bunların hepsi var. Bu da yeteneklerinden bir tanesi. Yazılı ve sözlü iletişim ve bir ekip içinde çalışma.
+
+330
+01:26:25,876 --> 01:26:37,336
+İşte biz de derste, projemizde bunları da görmek istiyoruz. Bu ekip içinde nasıl çalışıyoruz.
+
+331
+01:26:37,823 --> 01:27:01,603
+Bu sistem analizinin önemli bir görevi olacak. Yani üç tane temel işi var. Bunlardan dediğim gibi daha sonra da üstünde duracağız ama hem projenizi anlamanız hem dersi anlamanız için bu hafta bütün bunlardan küçük bir örnek oluşturdum.
+
+332
+01:27:02,131 --> 01:27:21,051
+Şimdi dersin içeriğini, sistem yapısını, sistem çerçevesi içinde bizim neler yapacağımızı daha iyi düşünebilirsiniz.
+
+333
+01:27:22,951 --> 01:27:26,791
+Bu çerçevede dersle ilişkili sorunuz var mı?
+
+334
+01:27:34,355 --> 01:27:35,495
+Sorunuz var mı?
+
+335
+01:27:59,988 --> 01:28:08,448
+Kısa bir özet, hangisinden? Yani ders içeriğinden mi yoksa sistemle ilişkili mi?
+
+336
+01:28:11,268 --> 01:28:14,467
+Sistem, tamam. Tekrar bir üstünden geçelim.
+
+337
+01:28:37,971 --> 01:28:40,971
+Evet, bunun üzerinde durduk.
+
+338
+01:28:45,555 --> 01:28:53,036
+Şimdi sistem yapısı üzerinde duralım tekrar. Herkes görebiliyor değil mi şekli?
+
+339
+01:28:54,996 --> 01:28:55,755
+Evet hocam.
+
+340
+01:28:55,755 --> 01:29:11,095
+Tamam. Genel olarak sistem bir hedefi olan, elemanları olan, bu elemanların birbiriyle ilişkili olduğu,
+
+341
+01:29:13,268 --> 01:29:39,788
+Çevresinden sınırlarla ayrılan ve bu sınırlarla ayrıldığı çevresinden girdiler alan, oraya bu elemanlar arasındaki iç ilişkilerle, fonksiyonları gerçekleştirmeleriyle elde edilen çıktıları üreten bir yapı.
+
+342
+01:29:41,876 --> 01:29:43,876
+Genel tanımı bu sistemin.
+
+343
+01:29:44,756 --> 01:29:50,396
+Şimdi bu tanım içinde de bazı kurallar var sağlanması gereken.
+
+344
+01:29:51,536 --> 01:29:53,536
+Bu kuralları sayalım.
+
+345
+01:29:53,756 --> 01:29:55,996
+Sistemin mutlaka bir hedefi olmalı.
+
+346
+01:29:55,996 --> 01:30:04,115
+Sistem dışarıda bir çevresi olmalı ve bu çevresinden sınırlarla ayrılmış olmalı.
+
+347
+01:30:09,619 --> 01:30:17,299
+Bu çevreden girdiler almalı, dışarıya çıktılar üretmeli.
+
+348
+01:30:18,299 --> 01:30:23,899
+Peki, bu dışarıya çıktılar üretebilmek için nasıl çalışacak?
+
+349
+01:30:25,399 --> 01:30:31,420
+Sistemin elemanları arasında iyi düzenlenmiş iç ilişkiler olmalı.
+
+350
+01:30:31,420 --> 01:30:37,059
+Ayrıca sistem alt sistemlere ayrılmalı.
+
+351
+01:30:37,423 --> 01:30:42,423
+Bu alt sınıflar hiyerarşik olarak düzenlenmiş olmalı.
+
+352
+01:30:45,043 --> 01:30:56,884
+Şurada bakıyoruz, sistem alt sistemleriyle iç ilişkileri tanımlanmış olmalı.
+
+353
+01:30:57,003 --> 01:30:59,263
+İşte burada da biz üniversiteye örnek verdik.
+
+354
+01:31:00,384 --> 01:31:03,443
+Fakülteler, bölümler, ana bilim dalları gibi.
+
+355
+01:31:03,952 --> 01:31:09,472
+Elemanlar olarak da öğrenciler, öğretim üyeleri, sınıflar, dersler dedik.
+
+356
+01:31:10,272 --> 01:31:14,692
+Ve burada alt sistemlere bölünmüştürler.
+
+357
+01:31:14,692 --> 01:31:26,812
+Sistemin sınırları vardır. Sistemde gerekirse otomasyon vardır ve bu otomasyon sınırlarında neler yapılabilir? Bunlar tanımlanmış olmalıdır.
+
+358
+01:31:31,104 --> 01:31:39,504
+Sınırlar olmalı, dışarıya çıktılar gönderilmeli. Alt sistemlerle de ilişkiler olmalı.
+
+359
+01:31:39,504 --> 01:31:55,564
+Ayrıca bu sistem yapısı içinde başka bir şeyde en önemli olarak söylediğim mutlaka sistem yapısı içinde bir şey vardır.
+
+360
+01:31:58,003 --> 01:32:18,003
+Geri besleme. Geri besleme tanımını kim yapacak? Geri besleme nedir? [öğrenci] yapabilir misin? [öğrenci] yurdu seven...
+
+361
+01:32:20,003 --> 01:32:21,003
+Burada imleceğim.
+
+362
+01:32:21,003 --> 01:32:23,364
+Geri besleme nedir?
+
+363
+01:32:23,891 --> 01:32:34,671
+Geri basleme sistemin bize, bizim ona yaptığımız etki sonucunda onun da bize gösterdiği tepki şeklinde tanımlayabiliriz sanırım.
+
+364
+01:32:37,431 --> 01:32:42,411
+Biraz daha değişik olarak tanımlayacak var mı?
+
+365
+01:32:46,452 --> 01:32:47,572
+[öğrenci].
+
+366
+01:32:50,532 --> 01:32:51,932
+Duyabiliyor musunuz hocam beni?
+
+367
+01:32:52,012 --> 01:32:52,452
+Duyuyorum.
+
+368
+01:32:52,979 --> 01:33:02,239
+Tamamdır. Geri besleme, çıktıların değerlendirilip daha sonra bu değerlendirmeler sonucundaki tespit ettiğimiz eksikliklerin düzeltilmesi.
+
+369
+01:33:02,239 --> 01:33:20,979
+Evet, evet. Yani çıktıları değerlendiriyoruz. Çıktılardaki değerlendirmeler sonucunda eğer eksiklikler ya da düzeltmeler görmüşsek bunları ya girdilerle ya da iç işlemlerle.
+
+370
+01:33:20,979 --> 01:33:30,119
+Yeni işlemleri yeniden düzenlemekle iyileştirme çalışması, geri besleme.
+
+371
+01:33:31,299 --> 01:33:32,619
+Evet.
+
+372
+01:33:37,427 --> 01:33:38,547
+Teşekkürler.
+
+373
+01:33:40,787 --> 01:33:58,127
+Evet, sistem yapısını bu şekilde gösterdik. Farklı örneklerle sistem yapısını genişletebiliriz. Ben her zaman ilk derste bu sistemi anlattıktan sonra önümüzdeki hafta için bir ödev veririm.
+
+374
+01:33:58,327 --> 01:34:08,787
+Çevrenize bakın, yani biz en iyi bildiğimiz içinde olduğumuz sistemi anlattık, üniversiteye. Çevrenize bakın, bir sistem olarak bir şey seçin ve onu girin.
+
+375
+01:34:08,787 --> 01:34:25,327
+girdisi, çıktısı ve elemanlarıyla, bu üniversitede olduğu gibi geri beslemesiyle, her şeyiyle anlatın. Başka bir canlı örnek de insan. İnsanın amacı hayatta kalmak.
+
+376
+01:34:25,615 --> 01:34:31,796
+Hayatta kalmak adına çevreyle olan ilişkisini düzenliyor.
+
+377
+01:34:31,796 --> 01:34:37,256
+İşte üşürse palto giyiyor soğuksa, hava sıcaksa paltoyu çıkarıyor.
+
+378
+01:34:39,056 --> 01:34:42,596
+Sağlığına dikkat ediyor, hayatta kalmak çünkü hedef.
+
+379
+01:34:46,115 --> 01:34:50,536
+Elemanları var, bu elemanlar arasında çok ince ilişkiler var.
+
+380
+01:34:53,811 --> 01:35:08,152
+İnsanı da bir sistem olarak tanımlayabiliriz. Mutlaka canlı olması gerekmiyor. İşte üniversite örneği gibi hem canlı hem cansız kurallar, insanlar ilişkisi olabiliyor.
+
+381
+01:35:08,911 --> 01:35:17,152
+Böyle bir sistem düşünüp kendi kendinize bir şey yaratın, böyle bir şekil içinde çizin hatta.
+
+382
+01:35:18,036 --> 01:35:32,356
+Önümüzdeki hafta sizlerden farklı sistem örneklerini benimle bu şey gibi, şu benim gösterdiğim slide gibi paylaşmanızı isteyeceğim.
+
+383
+01:35:34,420 --> 01:35:48,160
+paylaşabilenler için birkaç tane sistem örneği üzerinde değişik örnekler geliştirebilmek istiyorum. Bu da önümüzdeki haftanın ödevi size.
+
+384
+01:35:49,380 --> 01:36:01,960
+Bu ödev sonuçlarını kanaat olarak kullanıyorum. Yani ayrı bir şeyim yok ama işte vize sınavınızda hesap ortalamanızın oluşturulmasında etkisi oluyor.
+
+385
+01:36:04,627 --> 01:36:06,368
+Evet, sorusu olan var mı?
+
+386
+01:36:17,652 --> 01:36:19,072
+Sorunuz var mı?
+
+387
+01:36:23,667 --> 01:36:26,087
+Evet, o zaman bu... Efendim?
+
+388
+01:36:26,828 --> 01:36:27,887
+Galiba yok hocam.
+
+389
+01:36:28,507 --> 01:36:33,068
+Evet, tamam. Bu hafta bir başlangıç yapmış olduk.
+
+390
+01:36:36,787 --> 01:37:03,367
+Önümüzdeki hafta yine bu bilgi sistemi türlerini ben çok kısaca söyledim. Önümüzdeki hafta bunlar üzerinde duracağız. Bir de yine sistemle ilgili örnekleriniz üzerinde duracağız. Ve bilgi sistemi geliştirme adımlarını görmeye başlayacağız. Hepinize iyi haftalar diliyorum.
+
+391
+01:37:04,916 --> 01:37:21,996
+Yine de son olarak sorunuz var mı? Onu sorayım. Projelerinizin ayrıntılı tanımını daha sonra vereceğiz. Ama siz hem grubunuzla ilişkili hem de konularınızla ilişkili düşünmeye başlayın. Çalışmalara da başlayın.
+
+392
+01:37:24,855 --> 01:37:26,475
+Evet, iyi haftalar diliyorum.
+
+393
+01:37:27,095 --> 01:37:28,176
+Sağ olun hocam size de.
+
+394
+01:37:28,975 --> 01:37:31,895
+İnşallah iyi bir dönem olur, sağlıklı bir dönem olur.

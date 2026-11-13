@@ -1,0 +1,3275 @@
+1
+00:00:04,307 --> 00:00:05,807
+Evet, son bakarsın.
+
+2
+00:00:25,748 --> 00:00:31,807
+Günaydın arkadaşlar. Bir iki dakika bekleyelim. Katılımımızı atsın. Ondan sonra derse başlayalım.
+
+3
+00:02:22,900 --> 00:02:33,900
+Evet arkadaşlar, bu derslere başlayabiliriz yavaş yavaş. 30 kişi gelmiş. Atıyoruz. Biraz daha bekleyelim madem. Gidenler oluyor anlaşıldı.
+
+4
+00:03:10,195 --> 00:03:19,195
+Peki, artık artış yok. Bütün gelen düşünen arkadaşlar geldi derken yine 2 tane arttı. Peki.
+
+5
+00:03:22,195 --> 00:03:27,195
+O zaman şöyle bir hatırlatma ile başlayalım da ondan sonra yavaş yavaş ilerleriz.
+
+6
+00:03:27,195 --> 00:03:34,195
+Şimdi, geçen hafta neler yaptık? Geçen hafta EZ'nin yapısını hatırladık aslında.
+
+7
+00:03:34,804 --> 00:03:56,544
+Ama belki hepsinden önemli olarak da, yani operatör önceliği falan yani hepsini bildiğimiz şeylere baktık aslında. Belki bitwise işlemleri hatırladık. Normal iki sayı, iki değeri end yapmakla bitwise end arasındaki farkı görmüştük.
+
+8
+00:03:58,943 --> 00:04:18,183
+Boolean değerleri eşleştirirken negatif olmayan herhangi sıfır dışında herhangi bir sayıya true, aksi takdirde force şeklinde yorumluyordu. O yüzden iki olguyu shift end ile end yapmak mantıksal veya gibi işlemler yürütüyordu.
+
+9
+00:04:18,183 --> 00:04:26,943
+Fakat tek end işaretiyle bu işlemi yapmak ise her bir sayının ikili düzendeki bitlerini aynı baktığında.
+
+10
+00:04:26,944 --> 00:04:37,744
+Basamaktaki bitlerini o mantıksız işlem neyse ondan geçirerek ortaya çıkan sonucu elde ediyordu. Onu belki daha diye çıkıp, şey olarak hatırlatmış olduk.
+
+11
+00:04:37,744 --> 00:04:51,344
+Onun dışında işte biritiklerinden falan geçen, daha bir önceki derste bahsetmiştik. Her birinin ayrı birer şeyi olduğunu, format spesifier olduğunu söylemiştik. Onun bir tablosunu vermiştik.
+
+12
+00:04:54,944 --> 00:04:56,463
+Bir haftayı yapmıştık.
+
+13
+00:04:56,744 --> 00:05:02,463
+Şimdi artık bugünle itibaren CD'nin iler düzelt özelliklerine başlamış oluyoruz.
+
+14
+00:05:04,463 --> 00:05:06,663
+Evet, sıkın şeyin gözüküyor.
+
+15
+00:05:07,923 --> 00:05:10,224
+Ploddam olursa lütfen şey söyleyin.
+
+16
+00:05:10,708 --> 00:05:34,468
+Bugün maklolarla başlıyoruz dersimize. Preprosesör komutları, ön işlemci komutları. Derleyici kodu derlemeye başlamadan önce diyez ile başlayan satırları dikkate alıp onların gerektirdiği bütün işlemleri kaynak kodun diğer taraflarına uygulayıp ondan sonra derleme işlemini yapıyordu.
+
+17
+00:05:38,708 --> 00:05:43,748
+Bu konutlar işleniyor. Ondan sonra diğer yardım işleniyor. Prosesörler ne yapabiliriz?
+
+18
+00:05:43,748 --> 00:05:44,748
+Çeşitli...
+
+19
+00:05:45,492 --> 00:05:53,912
+Tip tanımlamaları yapabiliriz. Geçen hafta ufak bir örneğini gördük. Bu hafta daha aynı tanımlamalar yapacağız. Çeşitli kod kitaplıklarını ekleyebilirdik.
+
+20
+00:05:53,912 --> 00:06:11,672
+Ama onun dışında, şimdi göreceğiz, makro tanımlayabiliyoruz. Makrolarla ilgili, avantajı, dezavantaj noktaları hepsi bugün görüyor olacağız. Ondan sonra şarta göre, koşula göre derleme yapabiliriz.
+
+21
+00:06:13,492 --> 00:06:24,072
+Kodu test modunda derdi veyahut da üretim modunda derdi şeklinde bir ayar yapıp test modunda belki daha fazla aralara programcı yönelik çıktılar.
+
+22
+00:06:24,072 --> 00:06:27,812
+Ama normal modda bunlara eklenmemesi.
+
+23
+00:06:28,092 --> 00:06:30,312
+Bu da neye görebilecek? Conditional Compilation.
+
+24
+00:06:32,292 --> 00:06:38,852
+Ve şu an kodun hangi satırında ne işlediği gibisinden konutları da yürütebiliyoruz.
+
+25
+00:06:38,992 --> 00:06:40,692
+Onu da bugün görüyor olacağız.
+
+26
+00:06:45,908 --> 00:06:46,368
+Evet.
+
+27
+00:06:47,028 --> 00:07:01,008
+Şimdi diyez ile başlıyordu. Hatırlarsınız. Ve o satırdaki ilk karakter diyez olmalı. Başına white space karakterleri koyabilirsiniz.
+
+28
+00:07:01,008 --> 00:07:13,807
+Yani white space karakteri nedir? Boşluk ve tab sekme veya new line yeni satır karakteri veya satır kaydırma karakteri filan gibi.
+
+29
+00:07:14,288 --> 00:07:30,288
+Bu konuda ilk konuda herhangi bir, ondan önce açılan bir blok yoktur. O yüzden aslında girintilemeyi de sağlamak için ilk başta oradan başlamalıyız.
+
+30
+00:07:30,288 --> 00:07:32,288
+Onun dışında...
+
+31
+00:07:33,716 --> 00:07:52,956
+Şimdi şurada şöyle bir hatam var. Bu yansılar da herhalde white skin, geniş ekrana göreydi. Fakat bizim sınıflarımızda ki projeksiyon cihazları geniş ekran değil, 4'e 3 ekran oranında. O yüzden ben de tabii ki esas dersi sınıflarda anlatıyorduk. İnşallah seni tekrar anlatırız.
+
+32
+00:08:01,716 --> 00:08:28,036
+Şimdi şöyle müsaadenizle bunu şöyle ikiye böleyim. Şimdi prepresör komutlarının sonunda noktada virgül olmadığı için bu komutlar tek satırda tamamlanmak zorunda. Ama bir nedenle tek satırda tamamlanamıyorsa o zaman bir ters slaş karakteri koyuyoruz. Bu ters slaş karakterini derleyici işlemi almıyor.
+
+33
+00:08:29,716 --> 00:08:49,796
+Satırda bir önceki satırdaki proprosesör komutunun devamı olarak yorumlamaktır. O zaman madem öyle bu yazım nereden kesiliyorsa o zaman oradan itibaren sıra koyup şunu şu şekilde almam daha doğru olacak.
+
+34
+00:08:51,024 --> 00:09:09,844
+Mesela bir makro tanımlıyoruz. Makro dediğiniz şey arkadaşlar, kodun içerisine şu ifadeyi define'de gördüğünüz makro adını yazıyorsunuz. O zaman derle ilişki o makro adını gördüğü her yere.
+
+35
+00:09:10,676 --> 00:09:33,196
+Satırın geri kalanında gördüğünüz şeyleri yapıştırıyor diyelim. Bunu tabii ki derleme aşamasında yapıyor. Kaynak kodu değiştirmiyor ama kaynak kodu derlerken sanki işte kaynak kodda bu maklon ismini verip de yazdığımız her yerde maklonun gövdesini varmış gibi yapıştırıp öyle derleyip öyle devam ediyor.
+
+36
+00:09:36,236 --> 00:09:38,076
+Fonksiyondan farkı ne hocam?
+
+37
+00:09:38,399 --> 00:09:46,879
+Önce sesini biraz daha arttırayım. Sizin de sesiniz az geldi. Ben de sesimi arttırayım. Şimdi tekrar sorun lütfen.
+
+38
+00:09:48,200 --> 00:09:49,099
+Hocam günaydın.
+
+39
+00:09:49,500 --> 00:09:49,980
+Günaydın.
+
+40
+00:09:50,139 --> 00:09:50,860
+[öğrenci].
+
+41
+00:09:51,120 --> 00:09:51,700
+Evet [öğrenci].
+
+42
+00:09:51,920 --> 00:09:54,379
+Bunun fonksiyonundan farkı ne hocam?
+
+43
+00:09:55,039 --> 00:09:59,720
+Şimdi görüyor olacağız işte. Önümüzdeki yansıtılarda görüyor olacağız ayrıntılarıyla.
+
+44
+00:10:00,467 --> 00:10:17,907
+Tamamdır. Makro tamamlamamızın en önemli nedenlerinden bir tanesi, bir fonksiyon çağrımı yapıldığı zaman bunun bir ek yükü olması. Neden? Bir fonksiyonu da herhalde başka bir fonksiyondan çağırıyoruz. En kötü ihtimalle Mühendisliği içerisinden bir fonksiyon çağırıyoruz.
+
+45
+00:10:18,163 --> 00:10:30,163
+Bir fonksiyondan yeni çağıran diğer fonksiyonu geçirdiği zaman o yeni fonksiyonun bağlamının, bellek bağlamının oluşturulması gerekiyor. Çünkü o fonksiyonun içerisinde parametreler...
+
+46
+00:10:30,772 --> 00:10:58,772
+Oluyor fonksiyonun çağıran fonksiyondan çağrılan fonksiyonla parametre aktarımının modellenebilmesi için bellekte ek alan ayrılması gerekiyor. Sonra o çağırılan fonksiyonun içerisinde geçici değişkenler tanımlanıyor olabilir, pointlar tanımlanıyor olabilir. Onların hepsinin saklanması için yığın bellek mantığıyla çalışıyor. Yığın da yeni bir alan açıp o fonksiyonun bellek içeriğini o yığın alanından itibaren yazmak.
+
+47
+00:10:58,772 --> 00:11:23,152
+Onun için de bir fonksiyon daha açılıyorsa, çağırılıyorsa. Onun için de yığına yeni bir bellek alanı daha koyuyoruz. Bu şekilde ilerliyoruz. Fonksiyonlar geri döndük. İşte pop işlemi yapılıp stekten yığında. O şekilde bir çağırma yükü var. Maklola'da bu yok. Ama Maklola'nın da daha başka dezavantajları var. Şimdi bugün görüyor olacağız.
+
+48
+00:11:27,155 --> 00:11:42,915
+Makro tanımlamanın en basitti, temel amaçlarından en basitti bir sabit değer tanımlamak. Mesela biliyorsunuz SİDE karakter katarı diye bir şey yok.
+
+49
+00:11:43,316 --> 00:12:05,216
+Karakter dizileri vardır sadece. Sizin de belli bir Maximum String uzmanınız olacaksa diyelim ki onu da bir sabit ile tanınlamanız yerinde olacaktır. Örneğin işte veyahut da bir tampon bellek üzerinden biri alışverişi yapıyorsunuz. Bu tampon bellek maksimum boyutu olacak elbette.
+
+50
+00:12:08,340 --> 00:12:20,460
+Sabit bir değer ayarlıyorsunuz. Örneğin, define buffLan 512 dediğimizde bu 512 değeri atanmış oluyor. BuffLan adlı sabit.
+
+51
+00:12:20,460 --> 00:12:29,200
+Ve kod içerisinde buffLan gördüğümüz her yeri değer verken 512 yazıp derdiği için ona göre değerliyor, devam ediyor.
+
+52
+00:12:29,556 --> 00:12:39,636
+Böyle bir durum var. Şimdi bunu böyle sabit değil de bir değişkenle tanımlı saydık ne olacaktı? Diyelim ki int, buff, len eşittir. 512 deseydik ne olacaktı?
+
+53
+00:12:39,764 --> 00:13:03,423
+Şimdi değişken olarak tanımlayınca değişken için bellekte bu tam sayı haliyle 2 baytlık veya aşağı duruma göre 4 baytlık yer ayrılacaktı. Sabit tanımlamayla bu yer ayrılma gerçekleşmiyor. Çünkü kodun içerisinde bu ailen gördüğü yer 512 yazdığı için değişken gibi saklanmasına gerek kalmıyor.
+
+54
+00:13:04,884 --> 00:13:10,283
+Bellekten böyle bir ufak bir tasarruf yapmış oluyoruz. Buradaki avantajı o mesela.
+
+55
+00:13:14,131 --> 00:13:36,711
+Hatırlatıyoruz. Makro tanımında eşittir ifadesi de kullanmayın. O da geçerli değil. Derleme hatası. O zaman atama işlemlerini nasıl yapacağız? Örnek olarak hemen sağda birinci örneği görüyorsunuz.
+
+56
+00:13:38,163 --> 00:13:45,903
+Mesela diyelim ki 2 ile çarpma diye bir makro tanımladım. Bu bir fonksiyon gibi çalışacak bir makro oluyor.
+
+57
+00:13:47,888 --> 00:14:06,468
+Tanımlıyorum. Multiply by 2. Bu şekilde makro tanımlandığında bunların büyük harfler yazılması bir gelenekti. Böylece kod içerisinde baktığınızda nereler normal kod, nereler normal fonksiyon, nereler makrodan gelen ifadeler. Onu daha rahat görmüş oluyorsunuz.
+
+58
+00:14:07,028 --> 00:14:14,068
+Peki, madem eşittir işlemimiz yok, nasıl diyelim ki bir ikiyle çarpma matlusu tanımlayabiliriz?
+
+59
+00:14:14,548 --> 00:14:23,548
+Multiplar by two parantez içerisinde a. Bu fonksiyon gibi düşünün. Adı multiply by two. Parametri olarak da bir tane parametri alıyor.
+
+60
+00:14:24,788 --> 00:14:42,107
+Şimdi hemen ilk fark, dakika bir ilk fark. Burada bir şey yok. Bu A'nın türü belirli değil. Int olabilir, double olabilir, float olabilir. Herhangi bir şey olabilir. Makrolar da tip tanımı yapmıyoruz.
+
+61
+00:14:42,447 --> 00:15:06,408
+Bu önemli bir yar etki. Psi normalce kuvvetli tiplemeli bir dil. O yüzden günün sonunda derleyici makroların gerektirdiği kod satırlarını koda yapıştırdığı zaman, eklediği zaman derleme hatasına yol açabilecek bir şeyler olursa veyahut da öngöremediğimiz bir bug'a sebep olacak bir şeyler olursa kesinlikle olabilir.
+
+62
+00:15:09,011 --> 00:15:28,351
+Bir örneğin derleme hatasıyla fark etmeyiz. Kardeşim sen toplama işlemi yapacaksın ama sen bunlara diyelim ki karakter var. Gerçekten hiç fark etmez. Karakterin asker kodunu çevirir mutlu mutlu ikisini de toplar mesela. Asker kodunda ne olursa onun harfi çıkar mesela.
+
+63
+00:15:29,043 --> 00:15:53,863
+Ama belki böyle bir davranış sizin program akışı mantığı açısından beklemediğiniz bir davranıştır. O zaman makronu yazan bundan hastal ailen önce bir başkası. Siz bu makronun varlığından bile belki haberiniz olmadan veya dikkatinizi çekmeden kodun çok uykalarında bir yerinde. Siz normal bir işlem yapıyorsunuz sanıyorsunuz ama makronun önceliği olmuş oluyor o devreye giriyor. Kod beklediğiniz gibi çalışmıyor gibi durumlar olabilir.
+
+64
+00:15:55,028 --> 00:16:09,607
+Neyse, biraz fazla dağıttım galiba. Gerçi hepsi bu konuyla ilgili ama. Peki, şimdi 2 ile çarpma maklosu. Aslında çarpma işlemi yapmıyor. Parametre neyse onu 2 defa kendisiyle topluyor.
+
+65
+00:16:10,292 --> 00:16:33,351
+Atama işlemini o makluyu çağırdığımız yer neylesiyse orada yapacağız. Örneğin aşağılarda kod içerisinde başka bir yerde bir int j tanımlamışızdır. Daha sonra neylesi ki j eşittir? İşte matu ybaritu 5 verdik. Demek ki maklunun gereğini yerine getirip 5'i kendisiyle toplayıp sonucu işte j'ye yazacak gibi bir durum var.
+
+66
+00:16:38,292 --> 00:16:58,251
+Tam sayı, F örneğinde ise parametre ondalıklı sayı. Yani makrodaki parametrenin türü herhangi bir şey olabilir. Belirtmediğimiz için. İlk C örneğinde bu tam sayı olarak, F örneğinde ise ondalıklı sayı olarak değerlendiriliyor olacak.
+
+67
+00:16:58,871 --> 00:17:04,012
+Veyahut da diyelim ki iki sayıdan en küçüğünü bulmaya yarayan bir makro.
+
+68
+00:17:04,384 --> 00:17:32,384
+yazacaksınız. Anında min koyduğumuz iki parametre alıyor. İki parametre alıyorsa yani yine metot parametre, fonksiyon parametrelerinde olduğu gibi birgülere ayırabiliyoruz parametreleri. Minimum A birgül B ne yapıyor? Geçen hafta gördüğümüz şu soru işaretli karşılaştırma ve iki nokta üstü siteli değer verme işlemi yürütüyor. Şu ifa anlama geliyordu. Soru işaretinin sonundaki ifade değerlendiriliyor. Eğer o ifade
+
+69
+00:17:32,384 --> 00:17:58,384
+İfade true ise soru işaretinden sonra iki nokta üst ütleden önce olan ifade yürütülüyor. Aksi takdirde iki noktanın sağında olan ifade yürütülüyor. Yani min a b makrosunun sonucu ilk parametre ötekisinden küçükse o zaman ilk parametre oluyor. Aksi takdirde ikinci parametre oluyor. Gördüğünüz gibi normal mantıklı yani doğru yapılan bir makro tanımı bu.
+
+70
+00:17:59,892 --> 00:18:01,892
+Çok özür diliyorum.
+
+71
+00:18:02,552 --> 00:18:03,012
+Buyurun.
+
+72
+00:18:04,552 --> 00:18:06,211
+Böyle arada lafınızı kesiyorum.
+
+73
+00:18:06,592 --> 00:18:09,152
+Bir lafı da sonularsa kesin sonun lütfen. Buyurun.
+
+74
+00:18:10,012 --> 00:18:14,271
+Eyvallah. Bu min neden ufak yazıldı hocam? Büyük olması gerekmiyor muydu?
+
+75
+00:18:14,352 --> 00:18:16,251
+Evet, bence de büyük olması gerekiyordu.
+
+76
+00:18:17,791 --> 00:18:22,271
+Yani bu bir zorunluluk mudur yoksa böyle de kodlamada sıkıntı olur mu?
+
+77
+00:18:22,852 --> 00:18:24,271
+Zorunluluk değil, kesinlikle...
+
+78
+00:18:25,008 --> 00:18:30,008
+Kodlama alışkanlığı veya kodlama standartı.
+
+79
+00:18:31,008 --> 00:18:37,008
+Peki hocam. Şimdi benim kısaca anladığım kadarıyla makro ile yaptığımız şeyleri fonksiyonla da yapabiliyoruz.
+
+80
+00:18:37,008 --> 00:18:43,008
+Fonksiyonla yaptığımız şeyleri makro ile de yapabiliyoruz ama kimi zaman çok uzun oluyor kimi zaman çok kısa oluyor.
+
+81
+00:18:43,008 --> 00:18:46,008
+Yani birbirlerini de kıyaslama açısından.
+
+82
+00:18:46,008 --> 00:18:47,008
+Evet.
+
+83
+00:18:47,859 --> 00:19:15,859
+Bir şey daha, şimdi uzun ve kısa oluyor deyince vurgulayayım dedim. Makrolar normalde tek satırda halledebileceğimiz işler için yapılıyor. Hani ikinci, üçüncü satırlar olacaksa slash ile backslash ile bölüyorduk hatırlarsınız. Yani bu backslash ile bölme işi iki satırdan sonra artık konforsuz hale geliyor. Üçüncü, dördüncü satırlara kadar gidecek makro olarak görüyorsunuz kendinizi. Bunu fonksiyon olarak yapmanız daha doğrudur.
+
+84
+00:19:15,859 --> 00:19:28,359
+Bir satır, hadi bilemediniz en fazla iki satırlık makro. Eyvallah. Ondan sonra satır sayısı arttıkça bu kararınızı sorgulamanız lazım. Ben bunu fonksiyonla yapsam daha doğru olur muydu? Demeniz lazım.
+
+85
+00:19:29,559 --> 00:19:30,559
+Çok teşekkür ediyorum.
+
+86
+00:19:31,039 --> 00:19:32,679
+Ne demek ki arkadaşlar görevimiz?
+
+87
+00:19:37,099 --> 00:19:41,219
+Peki. Olası yan etkiler. Bakalım şimdi.
+
+88
+00:19:42,932 --> 00:19:50,731
+Az önceki gördüğümüz maklulü tekrar tanımlamışız. İşte A, B'nin minimumunu bulma maklusunun tanımlamışız tekrar.
+
+89
+00:19:51,432 --> 00:19:59,152
+Şimdi bir iki ifade vermişiz. A eşit minimum B artı artı virgül C şeklinde.
+
+90
+00:19:59,152 --> 00:20:10,152
+Şimdi biz bunu bu şekilde yazdığımızda derleyici bunu aşağıdaki ifadeye çeviriyor. Şöyle ki.
+
+91
+00:20:10,900 --> 00:20:24,740
+İlk parametrene B6 artı, ikinci parametrene C. Şuradaki X satırdaki ifadede A gördüğü yere B6 artı yazıyor. B gördüğü yere de C yazıyor.
+
+92
+00:20:38,387 --> 00:20:46,687
+B'nin bir fazlası C'den küçük olacaksa bu B artı artı komutu iki kere çalıştırılıyor.
+
+93
+00:20:48,756 --> 00:20:57,855
+Siz normalde bunu bir fonksiyon olarak kodlasaydınız. Bu minimum makrosunu fonksiyon olarak kodlasaydınız.
+
+94
+00:20:58,296 --> 00:21:06,536
+İşte if ilk parametre, küçüktür ikinci parametre, orman return ilk parametre, else return ikinci parametre şeklinde kodlasaydınız.
+
+95
+00:21:08,375 --> 00:21:11,976
+Önce bu b'nin değeri bir arttırılıp,
+
+96
+00:21:12,819 --> 00:21:40,579
+B artı artı işlemi sadece bir kere yapılacaktı. Fonksiyon olarak çağırsaydınız. Ama makro olarak çağırdığınızda, şuradaki ifadenin true olması durumunda, o zaman hem bu koşul kontrolü yapılırken şu B artı artı ifadesi çağrılıyor.
+
+97
+00:21:40,819 --> 00:21:52,259
+Hem de sol taraftaki bu koşul doğru ise girilen sol taraftaki ifade de bu B artı artı tekrarlanıyor. Yani B artı eşittir 2 olmuş olabiliyor.
+
+98
+00:21:52,788 --> 00:22:09,708
+Düşünün şimdi, bir fonksiyon çağırıyorsunuz, bir seferinde sonuç farklı, düşününüzden farklı çıkıyor, bazı seferlerinde ise doğru çalışıyor. Nedir o seferde? Oturup uzun uzun kafanızı kaşırıp, düşürüp taşınıp, bunun nereden kaynaklandığını...
+
+99
+00:22:09,907 --> 00:22:37,907
+Araştırmakla geçiriyorsunuz zamanınızı. Böyle bir dezavantaj. Hele ki işte bazen beklemediğiniz şekilde çalışan konunun hatasını ayıklamak çok daha zoldur. Her zaman aynı yanlışı verse veya her zaman doğruyu verse zaten problem yok. Daha kolay ama bazen doğru, bazen yanlış çalışan şeylerle hata ayıklamak daha zoldur. Ne gibi durumlarda yanlış hata verdiğini anlamak daha fazlası.
+
+100
+00:22:37,907 --> 00:22:49,347
+Daha fazla çaba ister. Ortaya böyle bir yan etki çıkıyor. Hemen yapalım ve görelim. Sonra avantajları, dezavantajları ile ilerleriz.
+
+101
+00:22:51,059 --> 00:23:09,919
+Şimdi hatırlatıyorum. Ben SIL kodları yazmak için DSP-P4 kullanıyorum. DSP-P5 de söz konusu olabilir. Bu iki IDE de kendi içerisinde bir SIL derdikisiyle geldiği için. Ayrıca bir derdikisi bulmaya, kurmaya, IDE ile derdikinin entegrasyonunu sağlamaya falan gerek kalmıyor.
+
+102
+00:23:13,556 --> 00:23:34,976
+Bunun da bazı dezavantajları, eski bir kod olduğu için adlandırmada falan, dosya adlandırmada uzun isimler kullanmamamız gerekiyor. Antibibüs programımız şüpheli bir davranış olarak bazı şeyleri sesinleyip önce bir tanıma işlemi gerektirebiliyor gibi ufak tefek problemlerimiz de oluyor diye hatırladım.
+
+103
+00:23:36,400 --> 00:23:48,800
+Şu proje birimizi açalım bakalım. Normalde şimdi aynı işi hem fonksiyon ile hem de makro ile bir yapalım bakalım. Olacakları görelim.
+
+104
+00:23:48,800 --> 00:23:59,080
+Şimdi, diyelim ki, şu önce normal fonksiyonla yapalım.
+
+105
+00:24:01,080 --> 00:24:03,080
+int min
+
+106
+00:24:04,147 --> 00:24:26,547
+int a int b olsun. Bundan sonra if işte a küçüktür b o zaman return a ama aksi takdirde de return b yapsın ve fonksiyon böyle bitsin.
+
+107
+00:24:30,996 --> 00:24:46,676
+İnt x 3, y 10 diyelim. Ondan sonra printf minimum ne olacak?
+
+108
+00:24:51,892 --> 00:24:59,472
+X, Y, Y'den minimum olanını yazacak. Ondan sonra X ve Y'nin değerliğini de yazsın bu arada.
+
+109
+00:25:06,420 --> 00:25:07,244
+Evet.
+
+110
+00:25:11,571 --> 00:25:18,692
+X ve Y. Evet. Şimdi alıştıralım.
+
+111
+00:25:24,564 --> 00:25:34,564
+Evet, 3 ve 10 diyor. Minimumu 3'tür. Beklediğimiz şekilde çalıştı.
+
+112
+00:25:36,564 --> 00:25:44,564
+Şimdi bunu bir de makro ile yapalım. Ama ortadaki onu da min 2 diyelim. Makro ile fonksiyon karışmasın.
+
+113
+00:25:47,988 --> 00:25:56,648
+Bunu da büyük harfler yapabiliriz. Normal tanım, maklaton, alışkanlığı gereği. CD nihayetinde case sensitive bir dil.
+
+114
+00:25:58,868 --> 00:26:00,268
+Alalım şöyle şuradan.
+
+115
+00:26:01,488 --> 00:26:02,388
+Yapıştıralım.
+
+116
+00:26:05,428 --> 00:26:12,068
+Ve bir de şunu şimdi artık böyle yapalım.
+
+117
+00:26:21,076 --> 00:26:34,536
+Ben bunu çalıştırdığımda epey bir cunk cunk diye uyarı sesi duyuyorum. Sistem seslerim size gitmiyordu diye düşünüyorum. Eğer gidiyorsa yazın. Çok cunk cunk rahatsız edici olabilir.
+
+118
+00:26:36,135 --> 00:26:48,435
+Falsizci değil hocam. Çok küçük geliyor. O da hoş. Peki. Şimdi makloda düzgün çalıştı. İyi peki güzel. Ama şimdi bu yan etki ifadesini bir görelim bakalım şimdi.
+
+119
+00:26:49,107 --> 00:26:57,107
+Ne diyorduk? Artı artı ile. Tamam mı?
+
+120
+00:26:57,107 --> 00:27:04,147
+Şimdi x artı artı. Bunu soruyoruz şimdi.
+
+121
+00:27:04,692 --> 00:27:31,791
+Ve bir çalıştıralım. Bu arada bir chat mesajı gelmiş. Program bazı klasörü istisna bırakmak için ayarlı olması lazım diyor [öğrenci]. Haklısınız olabilir. Teşekkür ederim. Bir bakayım. Ben programı istisna bırakma özelliği vardı. Fakat şimdi değişik projelerde farklı egze isimleri olabiliyor. Ama en azından sık kullandığım isimleri yapsam o bile yeterdi.
+
+122
+00:27:32,692 --> 00:27:33,531
+Teşekkür ederim.
+
+123
+00:27:33,531 --> 00:27:35,271
+Tekrar notu alayım.
+
+124
+00:27:35,711 --> 00:27:36,112
+Bakayım.
+
+125
+00:27:37,451 --> 00:27:38,031
+Alast.
+
+126
+00:27:39,372 --> 00:27:40,251
+Cluster.
+
+127
+00:27:42,192 --> 00:27:43,031
+Exclusion.
+
+128
+00:27:43,692 --> 00:27:45,092
+Bak diyorum.
+
+129
+00:27:45,731 --> 00:27:47,531
+Yoksa da...
+
+130
+00:27:48,971 --> 00:27:52,071
+İsim Exclusion yetmez.
+
+131
+00:27:52,211 --> 00:27:57,531
+Bu arada pardon çünkü nihayetinde her derneğinizde ilgili exit dosyası farklı bir...
+
+132
+00:27:58,387 --> 00:28:04,288
+Byte serisine yol açacağı için o dediğim olmaz. Şu exclusion'a bakalım. Teşekkür ederim.
+
+133
+00:28:05,488 --> 00:28:12,488
+Evet, şimdi şu artı artı işlemini nasıl yürüyor ona bakalım. Önce normal fonksiyonuna bakalım.
+
+134
+00:28:14,647 --> 00:28:22,587
+Şimdi beklediğim şey yine x'in değerinin artması ama sadece bir tane artmış olması 3 olması bu durumun.
+
+135
+00:28:23,251 --> 00:28:47,851
+Ve bu arada şu an birbirinden biraz ayrı rakamlar. O zaman ona bir bakayım şimdi. Bakın gördüğünüz üzere, evet minimum 3 diyor. X'in değeri de 4, Y'nin değeri de 10. Neden? Çünkü şimdi artı artı yani X artı artı dediğimizden bu...
+
+136
+00:28:49,140 --> 00:29:07,940
+Önce x'in değeri fonksiyonuna gönderiliyor. Fonksiyon bittikten sonra x'in değeri bir arttırılıyor. O yüzden min fonksiyonu 3 ile onu karşılaştırıyor. 3 küçüktür diyor. Ondan sonra da ekran x'in değeri 4 ve y'nin değeri de 10 şeklinde yazdırılıyor.
+
+137
+00:29:07,940 --> 00:29:11,000
+Şimdi bunun makrosunu çağıralım.
+
+138
+00:29:16,243 --> 00:29:22,624
+Bu arada bir dakika. Ha, şunu kapatmadığım için. Linker'dan o hatayı aldım.
+
+139
+00:29:24,844 --> 00:29:35,303
+Bakın şimdi. X'in değeri 5 olarak gösterdi. Bakın. Ve X'i de fonksiyona, daha doğrusu makroya 4 olarak aldı.
+
+140
+00:29:35,563 --> 00:29:40,303
+Neden? Çünkü aslında artık şuradaki...
+
+141
+00:29:41,556 --> 00:29:56,716
+Tamam, programlarımız çalıştı. X'i de 4 olarak aldı. Çünkü bu makro yazımının önceliği daha düşük. Bu fonksiyon olduğu zaman önce X'in değerini aldı, sonra arttırdı.
+
+142
+00:30:00,000 --> 00:30:17,836
+Bu konuyu örneğe bakalım.
+
+143
+00:30:18,548 --> 00:30:30,748
+Böyle yan etkileri var. Çarşıma mekinizmasını iyi bilirsek, bu yan etkilerden şaşırmayız. Ama bilmediğimiz durumda son derece şaşırabiliriz. Aklınızda bulunsun.
+
+144
+00:30:34,847 --> 00:30:40,508
+Anlamadığınız kısım var mı? Örnekle yaptık ama yine de eğer takıldığınız kısım varsa soru.
+
+145
+00:30:50,612 --> 00:30:57,692
+Şimdi madem öyle, karşılıklı makro ve fonksiyon yazmanın avantaj-dezavantajlarına geçebiliriz.
+
+146
+00:30:58,000 --> 00:31:13,260
+Macro'nun en önemli avantajı fonksiyonlardan biraz daha hızlı olması. Çünkü fonksiyon çağrısının getirdiği ek yüke sahip değil. Bu ek yükün ne olduğunu söylemiştik. Her fonksiyon çağrımında yeni bir bağlam, bellek bağlamı açılması gerekiyor.
+
+147
+00:31:14,040 --> 00:31:25,660
+Çünkü mesela diyelim ki çağrıma fonksiyonun içerisinde x diye bir metot, özür dilerim x diye bir değişken tanımlı. Çağrıma fonksiyonun içerisinde de geçici değişken olarak bir x tanımlanması.
+
+148
+00:31:26,000 --> 00:31:50,859
+En yakın zamanda çağırılan önceliği fazladır. X'in önceki fonksiyondaki değeri ve halinin belli başka bir yerde. Yırında daha dipte. Daha sonra çağırılan fonksiyondaki X'in değerini ise yırında daha yukarıda hafiyerlerdi saklanıyor olması lazım. Bugün nedenlerle fonksiyonların bir ekliği var. Makrolar bir ekliğe sahip değil. Fakat...
+
+149
+00:31:51,380 --> 00:31:58,188
+İşte Magva'da bir tip tanımlaması ve tip kısıtlaması yapılmadığından...
+
+150
+00:31:58,612 --> 00:32:19,231
+Bu bir avantaj olarak da düşünülebilir. Bir de farklı, değişik veri türlerinde aynı işlemi yapabilmenizi sağlıyor. Öbür türlü diyelim ki int iki sayının minimumunu bulmak için ayrı bir min fonksiyonu, ondalıklı iki sayının minimumunu bulmak için ayrı bir minimum fonksiyonu gibi.
+
+151
+00:32:20,948 --> 00:32:40,648
+Aynı işi yapacak fakat sadece değişen şeyler, parametre türleri olacak. Birden fazla kopyasını yansıtmanız gerekecekti bu fonksiyonun. Yapacağımız işte basit bir iş değil de azıcık karmaşık bir iş ise aynı kodu benzer kodu kopyala yapıştır şeklinde kodlarken bulacağız kendimizi.
+
+152
+00:32:48,948 --> 00:33:09,108
+Bu değişikliği söz konusu olduğunda bütün değişikliklerimizi birden fazla yerde yapacağız. Ne kadar yere yapıştırırsak o kadar yerde yapacağız. Bu gibi dezavantajları var fonksiyonun. Makronun da avantajları oluyor bunda. Fakat dikkat ederseniz sağ tarafta dezavantaj kısmı da epey kalabalık makronların.
+
+153
+00:33:11,188 --> 00:33:27,087
+Makro gövdesinin her kodda geçtiği yerde o makro ifadesi tekrar çağrıldığı için çeşitli yan etkiler beklenmedik davranışlar söz konusu olabilir. Az önce yazıp çalıştırdığımız örnekte olduğu gibi.
+
+154
+00:33:29,008 --> 00:33:38,988
+Ondan sonra eğer makrolarımız uzunsa, uzun makro yazdıysak o zaman bu ikinci dezavantaj özellikle kendisi.
+
+155
+00:33:39,155 --> 00:33:56,135
+Fonksiyon gövdeleri kod değerlendiğinde aynı fonksiyon olan birden fazla çağrı aslında bellekte aynı kod noktasına çağrıda bulunduruyor. O şekilde değerleniyor.
+
+156
+00:33:56,135 --> 00:34:07,135
+Ama MacLoway ise aynı komutlar sürekli tekrarlanarak yazıldığında bu sefer şey olmuş oluyor. Ortaya çıkan executable kod.
+
+157
+00:34:07,155 --> 00:34:29,135
+Daha uzamış oluyor. Öyle söyleyeyim. Hele ki macbunuz uzadıkça ve bu uzun macbuyu kullandığınız yer sayısı arttıkça aynı işi fonksiyonla yapsaydınız ortaya çıkacak executable koda göre daha fazla bytecode ya da makinedeli komutu içeren bir kod elde ediyorsunuz.
+
+158
+00:34:35,155 --> 00:34:47,876
+Bu sefer program kodunun bellekte kapsadığı alanı arttırmış olmak gibi bir durumada düşüyor olabilirsiniz. Buna da dikkat etmek lazım.
+
+159
+00:34:48,820 --> 00:35:03,119
+Argüman tiplerinin kontrol edilmemesi bir esneklik sağlıyor. Evet ama bu beklenmedik olası yanlış kullanımlara da kapı aralıyor demiştik.
+
+160
+00:35:03,539 --> 00:35:19,532
+Ve son olarak makro içeren kodları hatasını ayıklamak biraz daha zor. Yine az önce bahsettiğim yan etkiler vesaire nedenleriyle biraz daha zor oluyor. Çünkü ek bir...
+
+161
+00:35:20,211 --> 00:35:25,311
+Üstünde çalışacağınız anlamınız gerekecek bir ek bir karmaşıklık katmanı getiriyor size.
+
+162
+00:35:25,851 --> 00:35:32,351
+Fonksiyonlarda da bu yok mu? Fonksiyonlarda da var ama fonksiyonlarda çok daha uzun zamandır haşırlaşırsınız.
+
+163
+00:35:32,471 --> 00:35:34,791
+Makronlarda daha uzun zamandır haşırlaşırsınız.
+
+164
+00:35:34,791 --> 00:35:39,791
+Son madde bir karzı nedeni o kadar da şey...
+
+165
+00:35:41,012 --> 00:35:53,372
+Geçerli değil diyelim ama önceki üç nedenden dolayı evet gerçekten de ve tamamıyla makro içeren dosya programları hata eklema çalışmaları biraz daha zordur.
+
+166
+00:35:57,235 --> 00:36:18,935
+Peki, şimdi şöyle bir iltineğimiz de var. Bir makro tanımladıktan sonra o makro'yu geçersiz de kılabiliyoruz. Ve bu makro tanımları hepsi kodun en başında yapılmak zorunda da değil. Daha doğrusu şöyle söyleyeyim. Preprosesör konutları kodun içerisinde en başta yer almak zorunda değil.
+
+167
+00:36:19,295 --> 00:36:40,695
+Kod içerisinde ortalarda bir yerde de pre-prosesör komutu yazabiliyoruz. Mesela diyelim ki sizin iki ayrı çağırmanız gereken kod var. Fakat bu kodu, kod kitaplığı bunlar, kaynak kodu elinizde değil.
+
+168
+00:36:42,099 --> 00:36:57,840
+Mantıksal işlem yapıyorsunuz. İki farklı kod kitaplarının birisinde arka planda false değerini bir ile kodlanmış şekilde çalışma mantığı üzerine kurulur.
+
+169
+00:36:57,840 --> 00:37:06,139
+İkinci kod parçanız ise tam tersi false'un sıfır olarak kodlanması mantığı üzerine kurulur.
+
+170
+00:37:06,612 --> 00:37:10,972
+İkisini de çalıştırmanız gerekiyor. Ne yapacaksınız şimdi?
+
+171
+00:37:13,012 --> 00:37:16,332
+Şöyle bir hemen Macbook kullanarak bu işi çözebiliyorsunuz.
+
+172
+00:37:16,592 --> 00:37:19,672
+İlk başta define false 1 diyorsunuz.
+
+173
+00:37:19,932 --> 00:37:26,072
+Ve false'un 1 ile simgelendiği kodunuzu çağırıyorsunuz.
+
+174
+00:37:26,572 --> 00:37:27,612
+Daha sonra...
+
+175
+00:37:27,764 --> 00:37:54,923
+Undef diyorsunuz. Yani yaptığın tanımı geri al. Undef. Undef Force. Artık Force gördüğün yere hiçbir şey yazma. Sonra diyorsunuz ki yine Define Force 0. Ve bundan sonra da Force'un 0 olarak kodlandığı kodumuzu çağırıyorsunuz. Bu işi böylece halledebilirsiniz. Undef Force demeden Define Force 0 demeniz problem oluşturuyor.
+
+176
+00:37:56,083 --> 00:38:16,003
+Çünkü şu andef komuta olmasaydı ilk başta her yere false eşittir 1 yazacaktı. Ondan sonra da şu ikinci sin define'i gördüğü için bu sefer de hep üstüne 0 yazacaktı. Günün sonunda program çalışmadan önce her yerde false 0 kalmış olacaktı.
+
+177
+00:38:16,947 --> 00:38:32,587
+O yüzden bu şekilde örnek problemi çözmek için bu şekilde Ander ile yaptığınız tanımı geri almanız gerekiyor. Ki farklı bir değer ile yeniden tanımlayabilirsiniz.
+
+178
+00:38:32,587 --> 00:38:37,367
+Böyle bir özelliği de var.
+
+179
+00:38:41,780 --> 00:38:52,960
+Onun dışında, sil dilinin kendisine gömülü olarak gelen, beraberinde gelen, ön tanımlı bazı maklolar var. Bunlardan bahsedeyim size.
+
+180
+00:38:53,960 --> 00:39:02,760
+Şurada gördüğünüz şey, line'dan önce gördüğünüz şey, iki tane alt çizgi. Bu arada pardon, tıklayınca şöyle gireyim.
+
+181
+00:39:02,760 --> 00:39:06,280
+Dikkat ederseniz, iki kere delete tuşuna bastım.
+
+182
+00:39:06,420 --> 00:39:22,200
+Yani burada birbirini izleyen iki tane underscore var. Belki acaba bunu şey yazsaydım, font olarak, hani kalibri gibi değil de, konsolas gibi bir sabit genişlikle font yapsaydım, o zaman daha güzel gözükecek miydi?
+
+183
+00:39:23,188 --> 00:39:34,608
+Yok, gözükmedi maalesef. Hala bu ikisi tek bir çizgiymiş gibi gözüküyor. Peki bunun konsolası değil de, kariyalı desen.
+
+184
+00:39:41,396 --> 00:39:54,596
+Neyse, peki. Gel alıyorum yaptıklarımı. Sözle söylemiş oldum ve silerek göstermiş oldum. Burada iki tane alt çizgi var aslında.
+
+185
+00:40:09,327 --> 00:40:13,327
+olmuş oluyor. Line diye yazdığınız makro.
+
+186
+00:40:15,327 --> 00:40:33,327
+2 alt çizgi file 2 alt çizgi derseniz kod içerisinde o zaman o kodu üreten C dosyasının adı neyse o ad olarak yapıştırılma yapılıyor.
+
+187
+00:40:33,327 --> 00:40:35,148
+File geçen her yere.
+
+188
+00:40:37,204 --> 00:40:49,724
+Alt çizgi, Time 2 alt çizgi. Bu da program hangi tarih ve saatte derlenmiş onu ifade ediyor.
+
+189
+00:40:50,643 --> 00:41:04,523
+Daha doğrusu sadece saatini ifade ediyor. Date ise tarihini ifade ediyor. Böylelikle herhangi bir executable kodun, işte bu kod şu gün şu saatte derlenmiştir gibisinden bir ifade yazdırabilirsiniz.
+
+190
+00:41:09,043 --> 00:41:27,443
+Hangisi standartı gibisinden bir makro var. Bu tabi ki ANSI-C ile gelen bir makro. Eğer derdeci ANSI standartına uyuyorsa o zaman bir size döndürüyor bu makro. Aksi taktirde herhalde sıfır döndürüyor.
+
+191
+00:41:30,931 --> 00:41:48,492
+Örneğin, print version gibi bir form fiyon. Print F içerisinde this utility, compile on, string olarak yaz, neleri yaz, önce date yaz, sonra time yaz gibisinden bir örnek.
+
+192
+00:41:51,603 --> 00:42:03,683
+Bu mesaj, kaynak kodun şu numaralı satırındadır. Yani şu kaynak kodun şu numaralı satırındadır diye bir ifade vermek için ise, işte line ve file maklolarını yürütmüş oluyorsunuz.
+
+193
+00:42:29,396 --> 00:42:54,656
+Evet. Şimdi az önce ne yaptık? İki önce ne yaptık? Bir define komutumuzu geri alıp inden tanınama yapabildik. Şimdi de koşulsal derleme konusuna girelim. Belirli bir durumda şu şekilde derle, aksi takdirde bu şekilde derle gibisinden komutlar verebiliyoruz pre-prosesöre.
+
+194
+00:42:57,172 --> 00:43:04,912
+Koşula göre kodun belli bir kısmını derlemeye kat ya da katma şeklinde komutlar verebiliyoruz.
+
+195
+00:43:06,912 --> 00:43:14,812
+Bu iş kod içerisindeki if ve else'e benzeyen preprocesör komutları üzerinden yapılabiliyor.
+
+196
+00:43:15,932 --> 00:43:17,492
+Onlar da şunlar.
+
+197
+00:43:18,692 --> 00:43:22,052
+Tabii ki bütün preprocesör komutları diyez ile başladığı için.
+
+198
+00:43:24,851 --> 00:43:46,231
+diyez, elif, bu and if, şey o süre, else if anlamına geliyor. Ve diyez, and if. Yani if, else, else if ve and komutları var. Bunlardan yola çıkaraktan yapabiliyoruz. Sonraki yazsada örnekler olacaktır.
+
+199
+00:43:47,987 --> 00:44:02,087
+Sürekli söyleye geldik. Örneğin debug modunda veyahut da çalışma modunda kodumuzu derleyip inceleyebilme, çalıştırabilme özelliğini zoruyor.
+
+200
+00:44:02,087 --> 00:44:13,867
+Şimdi chatten gelmiş demiş ki, macro kullanırken, Bilton macro, line'e veya file yazdırırken %s veya %d olduğunu nereden biliyoruz? Şuradan biliyoruz.
+
+201
+00:44:14,132 --> 00:44:37,271
+Line, satır sayısız. O konutun yer aldığı satırın kaçıncı satırı olduğu. O da sayısal bir değer. File'da dosya adı. Örneşle Project 1 noktası. O da bir karakter katarı. O yüzden biz kendimiz bunları bildiğimiz için %s ve %d format stringlerini kullanıyoruz.
+
+202
+00:44:37,684 --> 00:44:57,324
+Ama yine de tabii ki bu bir şey, diyelim ki 65. satırda ilgili kod ama siz orada line dip olayını da %C diye yazdırırsınız. O zaman 65 yerine A yazar. Onun asker karşılığı gibi. Bu arada [öğrenci] çok önceden de anladın demiş.
+
+203
+00:44:57,324 --> 00:45:05,264
+İşte elbette ama ben yine de anlamayan arkadaşlar olabilir. O yüzden daha ayrıntıyla biraz daha anlattım.
+
+204
+00:45:06,963 --> 00:45:17,724
+Evet. Hatta sorurken ben şöyle dedim. Acaba ben şimdi onları yazarken doğru yüzde S ve yüzde D kullanmış mıyım? Tamam bir bakıyorum.
+
+205
+00:45:20,923 --> 00:45:30,083
+Tuş oluşturan nereye gidiyor? Evet. Yüzde S, yüzde S, date, time, yüzde D, line, yüzde S, file, adı. Tamam. Doğru.
+
+206
+00:45:34,963 --> 00:45:47,503
+Bu arada, şimdi bu Condition, Compilation için, Compilation için ve Procesör'e verdiğimiz is, if, else, else if ve and konutlarını nasıl tetikleyeceğiz?
+
+207
+00:45:49,427 --> 00:46:06,327
+Derleme aşamasında derleyeceği diyeceğiz ki şu an debug modunda derliyorum anlamında slash d debug eşittir bir parametresi verip öyle derleyeceğiz. Bu parametreyi verirsek debug modunda yok vermezsek normal modda derliyor olacak.
+
+208
+00:46:10,547 --> 00:46:19,607
+Şimdi şu if, else, if, else ve bütün bunların hepsinin kapanma buluğu olan endif konutlarının yürütülmesine bir bakalım.
+
+209
+00:46:21,367 --> 00:46:36,467
+Şimdi nihayetinde diiz if bir karar verme. Normal if kullanırken parantez kullanıyorduk ama preprocesör konutları verirken parantez kullanmak zorunda değiliz.
+
+210
+00:46:36,947 --> 00:46:53,407
+Kullanırsakınız hata vermiyor ama kullanmasınız da bir sorun vermiyor. Öncelikle bunu söyleyelim. Ondan sonra kalık parantes kullanmıyoruz kesinlikle.
+
+211
+00:47:01,844 --> 00:47:10,324
+İstediğiniz kadar bunu ek olarak sıfır ya da daha fazla elif yani else if blokları koyabiliyorsunuz.
+
+212
+00:47:11,324 --> 00:47:16,684
+Fakat bir hani else, en son else olayı da var ya.
+
+213
+00:47:16,684 --> 00:47:25,764
+Şimdi bir else acaba hangi if'e ait? Normal kod yazıyor olsak, kıvık parantezlerinde bunu çok güzel gösterebiliriz.
+
+214
+00:47:26,324 --> 00:47:43,664
+Ama geçen hafta hatırlayın, kural şuydu, hiç kırık bahanitesi falan da kullanmazsak bir els ya da elsif kendisine en yakın if ile ilişkilidir diyorduk. Oradan anlayabiliyorduk.
+
+215
+00:47:44,884 --> 00:47:53,504
+Preprofessör işleminde bu biraz daha farklı. Sadece bir tane elsif ifadesi kullanabiliyorsunuz ve o da
+
+216
+00:47:54,132 --> 00:47:59,052
+En baştaki if'in içerisinde if'e ait oluyor.
+
+217
+00:48:00,592 --> 00:48:05,172
+Nested, yani iki şey yapamıyorsunuz if else fişlerini.
+
+218
+00:48:05,172 --> 00:48:12,172
+Yani bir if içerisinde, tekrar içerisine bir if girip yazmakta...
+
+219
+00:48:13,588 --> 00:48:25,228
+Belki problem olmuyordur deneriz. Ama burada yazan kural şu. Tek bir tane else bloğu olacak. O da en son komut olacak.
+
+220
+00:48:25,588 --> 00:48:33,228
+İki şey yapabiliyorsak bile daha ilk seviyelerde olan if ya da elif, elsislerin...
+
+221
+00:48:33,652 --> 00:48:42,851
+Else olamaz. Tek bir tane Else olur. O da en dıştaki if hiyerarşisine aittir. Şeklinde söylüyoruz.
+
+222
+00:48:43,211 --> 00:48:50,531
+Ve eğer bir diyez if açtıysanız, bunun bitiş noktası olarak diyez end if de yazmak zorundasınız.
+
+223
+00:48:51,251 --> 00:48:51,931
+Kurallar bunlar.
+
+224
+00:48:57,715 --> 00:48:59,635
+Mesela şöyle şey yapabiliyoruz.
+
+225
+00:49:04,884 --> 00:49:12,884
+Eğer test diye bir makro, özür dilerim test diye bir ifade tanımlanmışsa gibi komutlar verebiliyoruz.
+
+226
+00:49:13,784 --> 00:49:22,503
+Veyahut da şöyle bir makro isimli bir makro tanımlandı ise gibisinden bir komut verebiliyoruz.
+
+227
+00:49:23,203 --> 00:49:30,503
+Belirli bir isme sahip örneğin makro nem diye bir makro tanımlanmamış ise yani not ifadesini yapıyoruz.
+
+228
+00:49:31,251 --> 00:49:38,051
+Parantez kullanmamızda bir sakınca yoktu. Gerekmiyordu ama kullanabiliyorduk. Bir problem yok.
+
+229
+00:49:40,051 --> 00:49:53,871
+If Define şeklindeki konutu aynı zamanda If Def diye de yazabiliyoruz. Bazısı derleyicileri bunu destekliyormuş.
+
+230
+00:49:54,547 --> 00:50:04,807
+If not defined diye yazmak yerine de, onun da dies if near def şeklinde kısaltmayı destekliyormuş.
+
+231
+00:50:06,807 --> 00:50:10,807
+Yani iki konut daha gördük.
+
+232
+00:50:10,807 --> 00:50:14,887
+If, elif.
+
+233
+00:50:15,248 --> 00:50:30,668
+ve else ve endif'lere ek olarak iki tane daha komut görmüş olduk. If-death ve if-not-death şeklinde iki tane daha pro-prosesu komutu görmüş olduk.
+
+234
+00:50:33,876 --> 00:50:56,836
+Ondan sonra da bildiğimiz include işlemine gireceğiz. Ama şu an bir ara varma vaktimiz gelmiş. Saat 10'a 10 var. Bir 10 dakikalarımızı verelim. Ki bu sırada sizlerin de bu Condition, Compilation ile ilişkin sorularınız aklınıza gelebilir. 10 dakikalarından sonra konuşuruz. Sorarsınız sorularımızı. O nedenle şimdi ara yansımınızı açalım.
+
+235
+00:51:01,972 --> 00:51:11,172
+10.00 arasında 10 dakika aramızda verelim. Bu amaçla ben de sesle videomu kapatıyorum. 10 dakika sonra görüşmek üzere.
+
+236
+01:01:29,012 --> 01:01:36,152
+Evet arkadaşlar, arama sıramız doldu. Derste kaldığımız yerden devam edelim.
+
+237
+01:01:41,588 --> 01:02:04,807
+Şimdi ne gördük? Proprosesör komutlarına, ondan üzerinde makro tanımlamaya değmiştik. Önceki ders saatinde, şimdiki ders saatinde de include işlemleriyle birlikte proprosesör komutlarına ve Conditioned Compilation işine devam edelim.
+
+238
+01:02:06,612 --> 01:02:19,572
+Şimdi ilk hafta söylemiştim sanat diye hatırladım ama yeri geldi tekrarlamakta fayda var. Include komutu ile siz kendi kodumuza başka kod kitaplıkları ekleyebiliyordunuz.
+
+239
+01:02:22,708 --> 01:02:31,348
+C dili ile giren kitaplıklardaki kodlar olsun. İster sizin veya başka bir programcının zamanında hazırlamış olduğu kod kitaplıkları olsun.
+
+240
+01:02:31,348 --> 01:02:43,108
+Hepsini plajenize include preprofesyonel komutu ile ekleyebiliyorsunuz. Include komutunu artık daha sonra bu kod kitaplarınız nerede ve adını onu belirtmeniz gerekiyor.
+
+241
+01:02:45,748 --> 01:03:04,668
+Eğer include ifadesiyle dosya yolu adını, kitaplık yolu adını küçüktür büyüktür işaretlerine sararak koyarsanız eğer, o zaman o işletim, okulun çalışıyor işletim sisteminin varsayılan olarak tanımladığı alanlara bakıyor.
+
+242
+01:03:05,172 --> 01:03:13,172
+Bu tamamen ilgili işletim sistemine göre fark etmektedir, değişmektedir. Ve bunların düzenlenme yoldarı farklıdır.
+
+243
+01:03:13,172 --> 01:03:25,172
+Unix sistemler ise usr include altındadır. İlgili kaynak kodlar veyahut da tanımlı olan başka yerlerle de bakıyordur işletim sistemi.
+
+244
+01:03:25,172 --> 01:03:28,972
+Bu Windows'da şöyle de oluyor. Göstereyim.
+
+245
+01:03:32,275 --> 01:03:33,163
+Evet.
+
+246
+01:03:34,771 --> 01:04:02,771
+Bilgisayar Mühendisliği,
+
+247
+01:04:02,771 --> 01:04:26,092
+Kullanıcı için sistem düzeyinde tanınanmış olan ve ortak olarak kullanılacak çeşitli değişkenler daha vardı. Burada da PET diye bir yol var. Yani herhangi bir komut satığında bir komut verdiğinizde o komut eğer çalıştığı o anda işine bulununuz dizinde yoksa şu PET, sistemin PET değişkenindeki yollara da bakılıyor.
+
+248
+01:04:27,155 --> 01:04:43,655
+Oralarda da bulunamazsa, kullanıcı için tanımlanmış pet ortam değişkeninde ek yerler varsa onlara bakıyor. Bunların birini de bulursa öyle bir kodu çalıştırıyor. Arkadaşlar da dosyaya bulunamaz. Şeklinden bir hata mesajı almış oluyorsunuz.
+
+249
+01:04:53,619 --> 01:05:11,899
+Ama eğer include komutu verdiğinizde, küçüktür büyüktür karakterleri değil de tırnak karakterleri yazdıysanız eğer, o zaman da bu size diyor ki, ya da Arzus derdiciye diyor ki, orada içinde bulunduğu dizimdedir bu dosya diyor.
+
+250
+01:05:11,899 --> 01:05:12,939
+İyi piki tamam.
+
+251
+01:05:13,588 --> 01:05:33,508
+Peki ya o dizinde bulamadığı sınav olacak? O zaman ne olacağı? Yine o kodun çalıştığı işletim sistemine çok bakıyor. Eğer mesela Windows'da orada bulamayınca pet o değişkenlerine bakacak. Onlarda da bulamazsa o zaman dosyaya bulunamadığı şeklindirse hata edecek derdim aşamasında.
+
+252
+01:05:33,508 --> 01:05:39,408
+Hocam ekran paylaşımız gitti bu arada. Peki teşekkür ederim. Hemen şunu tekrar aşağıya ederim.
+
+253
+01:05:40,211 --> 01:05:48,471
+Demek ki bu işletim sistemiyle ilgili bir yerlere girip çıktığımızda ekran paylaşımı sona eriyor.
+
+254
+01:05:48,471 --> 01:05:49,991
+Evet.
+
+255
+01:05:53,431 --> 01:05:54,511
+Teşekkür ederim.
+
+256
+01:05:55,231 --> 01:05:59,391
+Chat'te de yazan arkadaş olmuş ama bir türlü chat'in simgesini de görmedim.
+
+257
+01:06:00,172 --> 01:06:03,072
+O yüzden sözle uyan arkadaşlarına teşekkür ederim.
+
+258
+01:06:05,311 --> 01:06:05,572
+Evet.
+
+259
+01:06:08,371 --> 01:06:23,371
+Bu ekleyeceğiniz kod dosyalarının önce bir tanım, tanıtım dosyası bunda hazırlanması gerekiyor. Onların da genelde geleneksel olarak uzantısı .h iledir. h header file anlamında gelmektedir.
+
+260
+01:06:29,679 --> 01:06:52,439
+Kodun başlığı, daha evvel konuşmuştuk ya, bir fonksiyon kullanacağımız zaman o fonksiyonun ya kodu daha yukarıda bir yerlerde tanımlanması veya imzasını verilip daha sonra atlarda bir yerde tanımlanabilmesi gibi iki farklı çalışma modu olduğundan bahsetmiştik.
+
+261
+01:06:52,439 --> 01:06:54,539
+Gevdeki yansıtılarda var bu.
+
+262
+01:06:56,788 --> 01:07:01,387
+Benzer şeyleri header dosyalarında da yapabiliyorsunuz ve yapmalısınız da.
+
+263
+01:07:04,987 --> 01:07:06,268
+Bunun dışında,
+
+264
+01:07:08,307 --> 01:07:16,747
+Lime ve File maklolarını hatırlatırız.
+
+265
+01:07:16,747 --> 01:07:19,307
+Anlamaya çalışacağım şimdi ne demiştik burada.
+
+266
+01:07:27,764 --> 01:07:33,764
+Evet, şimdi nihayetinde siz kendi kodunuza...
+
+267
+01:07:34,387 --> 01:07:48,247
+Öyle makro ve ifadeler yazabilirsiniz ki, bir başka bir kod, kendi kodunuzu derlerken önce veya sonrasında farklı işler yaptıracak ayrı kodlarınız da olabilir.
+
+268
+01:07:48,247 --> 01:08:01,587
+Onlara çeşitli veriler aktarmak için bu veriler arasında herhangi bir kod satırının ana uygulama dosyasında kaçıncı satırda olduğu,
+
+269
+01:08:02,387 --> 01:08:10,387
+Bu konuları çok fazla bilgiler aktarmak durumunda olabilirsiniz. Çok fazla girmeyeceğiz bu konulara. O yüzden atlıyorum.
+
+270
+01:08:10,387 --> 01:08:18,387
+Evet. Şimdi temel olarak pro profesörle yapacağımız şeyler bunlar.
+
+271
+01:08:18,387 --> 01:08:24,387
+Bir tane basit örnek olarak çalıştıralım.
+
+272
+01:08:24,387 --> 01:08:28,112
+Şuradaki...
+
+273
+01:08:28,112 --> 01:08:38,372
+Mesela kodu yazıp çalıştırıp ilerleyebiliriz. X tanınımı, tanınımı değilse nasıldır falan. Onu görelim isterseniz.
+
+274
+01:08:55,604 --> 01:09:06,604
+Bu kadar yapıştıralım. Hatta bu işlerin fonksiyon öncesini yapalım.
+
+275
+01:09:12,627 --> 01:09:23,627
+Şimdi, x'i seçildikse, x'in tanımını geri al ve x'i 0 yap. Yok aksi takdir x 2 ise, x'in tanımını geri al ve x'i 0 yap.
+
+276
+01:09:23,627 --> 01:09:31,627
+Aksi takdir de y'yi 4 olarak tanımla filan gibisinden bir kodumuz var.
+
+277
+01:09:36,916 --> 01:09:49,536
+Ama tabii şimdi böyle bir kodun yürütülmesi için en başta bir yerlerde, herhangi bir yerde, mesela x bir tanım yapmamız gerekiyor mesela cd.
+
+278
+01:09:49,536 --> 01:09:55,695
+Ve bu da bir olsun. Tamam mı?
+
+279
+01:09:58,155 --> 01:10:03,136
+Ve ondan sonra main metodum yer als.
+
+280
+01:10:04,916 --> 01:10:24,536
+Hayır, şey edelim direkt. X1'di ama şimdi şuradaki komut nedeniyle şu if x'e 1'in içerisine girip x'i tanımamak geri alıp x'i 0 olarak tanımlamış olacak. Bu nedenle ben şurada x yazdır dediğimde bana 0 yazdırmasını bekliyorum.
+
+281
+01:10:29,652 --> 01:10:47,512
+Evet, ilk sıfır olarak olması gerektiği şekilde çalıştı. Ama hatırlatıyorum yansıtı yer almıyordu. Ama böyle bir konut üretebilmek için elbette bu diyez iflerden önce bu ikisin bir şekilde tanımlanmış olması gerekmekte.
+
+282
+01:10:49,652 --> 01:10:55,512
+Peki, ondan sonra bir de şu fonksiyon tanımı vermeye bakalım isterseniz.
+
+283
+01:10:56,511 --> 01:11:08,671
+Onu da şimdi nasıl yapalım? Önce fonksiyonun tanımının yapılması gerekiyor. Ondan sonra... Ama şimdi o imza şeyini yapalım.
+
+284
+01:11:16,115 --> 01:11:18,376
+Aparamette de almadığına gerek yok.
+
+285
+01:11:22,496 --> 01:11:27,655
+O da kendi içerisinde bir x yazılsın.
+
+286
+01:11:28,976 --> 01:11:35,415
+Şimdi main'ın işi bu myFonksiyonu çağırmak olsun.
+
+287
+01:11:37,415 --> 01:11:39,815
+Ondan sonra tabii bunun için yukarıya bir yere
+
+288
+01:11:46,100 --> 01:11:47,460
+Tanımlamam lazım.
+
+289
+01:11:48,520 --> 01:11:49,540
+Ondan sonra acaba.
+
+290
+01:11:50,800 --> 01:11:57,659
+Şimdi aralarda bir yerde x'i değiştirebilmiş olmayı göstermek istiyorum.
+
+291
+01:11:59,500 --> 01:12:04,040
+X main'de farklı, my fonksiyonunda farklı davransın.
+
+292
+01:12:04,140 --> 01:12:05,659
+Onu göstermek istiyorum.
+
+293
+01:12:06,700 --> 01:12:07,800
+O zaman şöyle yapayım.
+
+294
+01:12:14,452 --> 01:12:32,432
+Şöyle olsun. Şimdi orada yazsın. Ondan sonra şöyle olsun mesela. Bunu buradan kestim. Buraya koydum. Evet. Bakalım şimdi düzgün derveye bilecek miyim?
+
+295
+01:12:36,307 --> 01:12:39,387
+Tamam, peki. Düzgün çalışabilecek mi?
+
+296
+01:12:43,956 --> 01:12:54,956
+Evet, bakın şimdi. Main'de x1, fonksiyon'da x0 dedi. Böyle çalışmasını bekliyordum zaten. Ortaya çıkan ve çalıştığım şey oydu.
+
+297
+01:12:54,956 --> 01:13:02,891
+Pencereyi şey etmeden tekrar geri dönemiyorum. Ha şimdi oldu.
+
+298
+01:13:09,332 --> 01:13:26,452
+Önce X1 tanımlı. Daha sonra bir fonksiyonu olacak aşağıda tanımlayacağım diye derleğe söz veriyoruz. Ondan sonra main fonksiyonu çalışıyor. Main'de X'in değeri ekran ikisi yastıracak. X'in bir değişikliği tanımlı değil main'in içerisinde.
+
+299
+01:13:32,979 --> 01:13:55,979
+Kodu derleme aşamasındayken, burada x gördüğü yeri sanki 1 yazmışız gibi kodu derliyor ve çalıştırıyor. O yüzden main'in x 1 olarak geçiyor. Daha sonra my fonksiyonu çağıracak. Tamam. Ama bakın, dikkat ederseniz my fonksiyon aşağılarda bir yerde. Ve önce devreye prosesör girip...
+
+300
+01:13:56,787 --> 01:14:18,448
+Şuradaki if, else, else, and if konutlarını yürütüyor olacağı için. Yani şu my form for çağrılmadan önce şu işler yürütülmüş olacak. Yani şu yeşiller dikkat ederseniz main'in üstünde değil.
+
+301
+01:14:19,315 --> 01:14:36,575
+Buna rağmen işini yapıyor. My fonksiyondaki yapmasını beklediğim işini yapıyor. Eğer x1 tanımlanmışsa onu geri alır. Artık bundan sonra x0 atarız diyor. Ve ondan sonra x olarak 0 şeklinde kodluyor.
+
+302
+01:14:37,235 --> 01:14:44,796
+x'i 2 tanımlasaydım da main'de 2, my fonksiyonda da 3 şeklinde yazacaktır. Böyle bir çalışma işimi var.
+
+303
+01:14:48,756 --> 01:14:58,855
+Soru varsa alayım arkadaşlar. İster önceki saatten, ister bu saatten. Soru varsa bu Conditional Compilation falan soru alabilirim.
+
+304
+01:15:00,756 --> 01:15:02,016
+Evet, bir soru geldi bakalım.
+
+305
+01:15:04,396 --> 01:15:08,396
+Bu kodda yerine de bakabilir misin? Tamam mı? Bakalım. Tabii ki atlamış oldum onu.
+
+306
+01:15:08,396 --> 01:15:11,016
+Şimdi bakın.
+
+307
+01:15:13,716 --> 01:15:19,736
+Şurada y yazmaya çalışımda burada değerleme hatası alacağım. Neden? Bir kere y diye bir değişkende yok.
+
+308
+01:15:19,736 --> 01:15:25,796
+Ve hatta hata aldığımızı görelim önce.
+
+309
+01:15:28,456 --> 01:15:34,136
+Y tanımlanmamıştık. Lütfen önce bunu bir tanımlayın gibisinden hatamı alıyorum.
+
+310
+01:15:38,195 --> 01:15:45,195
+Bunu X'e giriş yapıldı. Şimdi gelelim buraya. Burada bir Y'yi kullanmaya çalışalım.
+
+311
+01:15:51,188 --> 01:16:01,788
+Şimdi, Y'nin tanımlanması için, tanımlanmış olabilmesi için, X'in 1 veya 2 olmaması gerekiyor.
+
+312
+01:16:02,368 --> 01:16:05,387
+X1 ise buraya giriyor, Y ile ilgili herhangi bir şey yapmıyor.
+
+313
+01:16:05,387 --> 01:16:10,268
+X2 ise onun altındakine giriyor, yine Y ile ilgili herhangi bir şey yapmıyor.
+
+314
+01:16:10,768 --> 01:16:15,387
+Ama onlardan sonra Y için, yani bu iki kez...
+
+315
+01:16:15,539 --> 01:16:32,159
+İkisi de geçerli değilse y'ye bir 4 tanımını yapıyor. O yüzden yukarıda ikisi 1 tam olarak tanımladığım için şu satıra, y'nin tanımlandığı satıra hiç girmeyeceğinden bu sefer şurada bir hata vermesini bekliyorum.
+
+316
+01:16:40,532 --> 01:16:48,532
+Fakat eğer ben x'i diyelim ki 5 var kılma sayımda, ondan sonucuma...
+
+317
+01:16:49,811 --> 01:16:53,811
+X'in değeri de 5 olarak kalacaktı.
+
+318
+01:16:53,811 --> 01:16:55,811
+My Function'a geldiğimizde.
+
+319
+01:16:55,811 --> 01:17:02,811
+Çünkü aradaki pre-prosesör bulanında X'in 5 olması durumuyla ilgili herhangi bir değer değiştirme durumu yok.
+
+320
+01:17:02,811 --> 01:17:05,811
+Sadece Y4 olarak tanımlanmış olacaktı.
+
+321
+01:17:05,811 --> 01:17:11,811
+Şimdi kaydettim ve değerlediğimde bakın projek doğru olarak değerlendi.
+
+322
+01:17:11,811 --> 01:17:17,811
+Çalıştırdığımda da X5 olduğu için main'de de X5.
+
+323
+01:17:17,811 --> 01:17:31,992
+Fonksiyonda da x5 ve y'yi de 4 olarak gösterecektir. Evet, gördüğünüz üzere x'i 5, min'de ve fonksiyonda y'yi ise 4 olarak da göstermiş oldu.
+
+324
+01:17:33,072 --> 01:17:38,051
+Soru geldi, şimdi ona da bakayım. Tamam kardeşim ya.
+
+325
+01:17:40,851 --> 01:18:06,111
+[öğrenci] diyor ki, Kernig'ın makrolarının eski bilgisayarlarda Function Call Ovalı Hedden Yenem için kullanıldığı ve artık kullanılmaması gerektiğini söylüyor. Bizim makro kullanmamızı gerektirecek özel durumlar var mı? Yoksa öyle bir deniz için uzak mı? Duralım. Bu arada Brian Kernig'ın C ve Linux ile grubudur diyelim. Öyle söylüyor. Peki, şimdi doğru.
+
+326
+01:18:06,576 --> 01:18:12,015
+Yansıya hatırlarsanız eğer makroların dezavantajları çok daha kalın idi.
+
+327
+01:18:12,015 --> 01:18:20,935
+Yani sevabı günü anlatattık diyoruz ya dezavantajlarına bakıyoruz dezavantaj kefesi çok daha fazla ağır basıyor.
+
+328
+01:18:21,316 --> 01:18:23,716
+O yüzden mümkün olduğunca kullanmıyoruz.
+
+329
+01:18:23,876 --> 01:18:28,095
+Evet ama yan etkileri de var, olası yan etkileri de var.
+
+330
+01:18:34,576 --> 01:18:59,976
+Ve belki yazabiliriz. Amacımız, şimdi tamam, Brian Kölngen doğru söylüyor. Hatta yüksek kaynaklı sistemlerle çalışıyoruz. Fakat hala çok sınırlı kod belliğine sahip görüntü cihazları çalıştırmak zorunda da yine kendimizi hissediyoruz. Önün küçük IoT cihazları mesela.
+
+331
+01:19:01,171 --> 01:19:29,171
+Bunlar hem fiziksel olarak da çok küçük, bir düğme kadar boyutlarda cihazlar oluyor mesela. Sen söyleyelim, ben söyleyelim. O zaman oraya ne kadar, kaç kilobyte belli kısırdırabilirsiniz. Her olası byttan tasarruf etmeniz gereken yerler olabilir. O zaman ne yapacağız? O zaman mecbur yine fonksiyon olarak kaçınmamız için bazı makrolar hazırlayabiliriz. Ama bu özel durumlar...
+
+332
+01:19:29,171 --> 01:19:38,871
+Evet, ben de aynı bir işleyim. Maklum kullanmasak çok daha iyi olur. Ama öğrenmeniz de gerekiyor. Sonuçta konuşmuş olduk üzerinde.
+
+333
+01:19:40,611 --> 01:19:42,671
+Evet, başka sorusu olan arkadaşım var mı?
+
+334
+01:19:51,123 --> 01:19:52,324
+O zaman devam edebiliriz.
+
+335
+01:19:59,604 --> 01:20:04,460
+Dolayç Kılasız ve onlara bakacağız şimdi.
+
+336
+01:20:08,595 --> 01:20:36,595
+Neler göreceğiz? Şimdi değişkenin bir skop yani geçerlilik alanı, kardan var. Onun üzerinde duracağız. Global değişken tanımı, onun hakkında biraz bir şeyler söyleyeceğiz. Register diye bir ifademiz var bazı değişkenler için. Onun ne olduğu üstünde konuşacağız. Storage Classlar neymiş biraz ondan bahsedeceğiz. Ve son olarak dinamik bellek ayırma işlemine başlayacağız. Ki daha sonra oralardan kontrolü falan ilerleyeceğiz.
+
+337
+01:20:45,300 --> 01:20:47,800
+Buradan çık yerleşeyim sandalyemle.
+
+338
+01:20:52,307 --> 01:20:59,728
+Şimdi, genelde değişken cinsinden konuşuyoruz ama fonksiyonların da skobu var haliyle.
+
+339
+01:20:59,728 --> 01:21:11,587
+Bu konuda biraz daha tutucu, zorlayıcı bir dil. Herhangi bir değişkeni veya fonksiyonu kullanmadan önce bir yerde, herhangi bir yerde, ya önceden tanımlanmış olmasının zorunu tutuyor.
+
+340
+01:21:12,007 --> 01:21:18,507
+Veyahut da en azından bu daha sonra tanımlanacak diye bir başlık satılının yer almasını zorunlu olarak tutuyor.
+
+341
+01:21:20,564 --> 01:21:37,664
+Ve bir ister değişken olsun, ister metot olsun, onun hangi kod satırları ve blokları arasında adının ve kullanımının geçerli olduğunu ifade eden kavrama kelimeye scope diyoruz.
+
+342
+01:21:43,699 --> 01:22:01,899
+Aktif olduğu süre diyelim. Yani scope geçerli olduğu, yani erişilebilir olduğu süre, tanımının geçerli olduğu süre kaldı. Farklı. Duration ise bir değişkenin bellekte yer alıyor olma durumu.
+
+343
+01:22:12,787 --> 01:22:14,887
+Ömrü diyetler, lifetler. Yani ömrü.
+
+344
+01:22:16,747 --> 01:22:21,188
+Belli bir değişken, belli bir aşamada geçer ve olmayabilir.
+
+345
+01:22:21,684 --> 01:22:46,844
+Ama daha sonra geçerli olduğu bir ana da gelebiliriz. İster o anda geçerli olsun veya olmasın, o değişken bellekte bir yerlerde yer alıyordu. Değişken bellekte yer aldığı, yer kapladığı süreci o yaşıyordu, hayattadır diyoruz. Ama kimi zaman erişilemiyor. Biz de cep telefonlarımızı erişilmez duruma alabiliyoruz kendimiz bazen.
+
+346
+01:22:47,667 --> 01:22:58,547
+Ve aslında otomatik hayat diye bir şey pek şey değil.
+
+347
+01:23:00,148 --> 01:23:22,188
+Öyle bir kavram yoksuydu. Fakat bir sabit ömür diye bir kavram var. Genelde fixed duration zaten kullanılır. Bir değişkenin skobundan yani erişilebilir olduğu kısımdan çıktığımız zamanlarda bile aslında bellekte bir yerlerde o değişkenin değeri saklanmaktadır.
+
+348
+01:23:22,188 --> 01:23:28,128
+Ve skobunun tekrar geçerli olduğu bir yere girdiğimizde o değişkene erişilebilir.
+
+349
+01:23:28,148 --> 01:23:34,648
+Örneğin bir fonksiyon içerisinde başka bir fonksiyon çağırıyoruz. Ben önce kısa saatte vermiştim aynı örneği.
+
+350
+01:23:35,028 --> 01:23:40,988
+Main fonksiyonunda x diye bir değişken tanımladık. Değeri de 5. Fakat bir başka fonksiyon çağırdık.
+
+351
+01:23:40,988 --> 01:23:47,988
+Bu başka fonksiyon da bir x diye bir değer tanımladık. Orada da değeri 3 diyelim ki.
+
+352
+01:23:50,728 --> 01:23:52,188
+Main'deki x
+
+353
+01:23:52,756 --> 01:24:16,155
+Diğer fonksiyonu çağırdığımızda artık erişilemez hale geliyor. Ama onun değeri hala bellekte kalıcı. Yeni fonksiyon çağırdığımızda yeni bir hit memory call stack'e, yığına itilmiş oluyor. İşte orada main'deki X'in değeri.
+
+354
+01:24:16,884 --> 01:24:43,783
+Sonra yeni fonksiyonu geçirdiğinde o DiniX tanımlandığında o da o fonksiyonun geçerli olan bellek aralığında tanımlı. Daha sonra o fonksiyon tamamlandıktan sonra çağırılan fonksiyon artık onun saklama alanı stekten pop edildiğinden, çekildiğinden o artık zaten lifetime da bitmiş oluyor.
+
+355
+01:24:44,500 --> 01:25:11,679
+Daha sonra o fonksiyon başka bir yerden tekrar çağırladığında tekrar evet bir x değişkeni tanımlılıp yine 5 olabiliyor. Ama o artık başka bir x. Başka bir değişken. Çünkü ilk çağırdığımızda olan bellek alanı o fonksiyon bittiğinde pop mesajın ardından metod fonksiyonun ardından artık bitti. Bir dahaki çağırdığımızda olan x bambaşka bir x şeklinde söyleyebilirim.
+
+356
+01:25:13,300 --> 01:25:17,260
+Evet.
+
+357
+01:25:19,739 --> 01:25:35,300
+Şimdi şey, yerel değişkenler, yani bir ister mesela main metod içerisinde değişken tanımladınız veyahut da bir fonksiyon içerisinde bir değişken tanımladınız. Bunlara yerel değişkenler deniliyor. Hangi blon içerisinde tanılandıysa ona...
+
+358
+01:25:36,015 --> 01:25:48,015
+Yerel anlamında söylüyoruz. Bunların değeri işte o fonksiyon her yerin çağırıldığında tekrar ilk işte...
+
+359
+01:25:48,756 --> 01:26:04,536
+3 ile mi başlattık? Tekrar 3'e dönüyor diyelim ki. Bir fonksiyonu çağırdık. Onun içerisinde bir yerel x değişkeni tanımlamıştık. 3'tü. Çeşitli hesaplamalar yaptık. O x'in değeri 5 oldu diyelim ki. Ekmana da 5 yastırdı. Sonra o fonksiyon bitti.
+
+360
+01:26:05,492 --> 01:26:26,291
+Başka bir yerden aynı fonksiyonu tekrar çağırdığımızda ilk komut ifadesi olarak int x eşitir 3 tanımı gördüğünde x tekrar 3 olarak tanımlanmış olacak. Bir önceki çağrıda ulaştığı 5 değerini saklamak istersek eğer ne olacak? Saklanmıyor olarak gördük. Saklanmasını istiyorsak ne olacak?
+
+361
+01:26:26,739 --> 01:26:32,739
+O zaman siz bunu bir sabit değişken olarak tanımlayabiliyorsunuz.
+
+362
+01:26:33,199 --> 01:26:36,000
+Onun için de kullanmanız gereken anahtar kelime statik.
+
+363
+01:26:36,000 --> 01:26:45,059
+Eğer fonksiyonun içerisinde statik int x eşittir 3 dediğinizde o fonksiyon bir kere çağrıldı.
+
+364
+01:26:45,339 --> 01:26:52,019
+x'in değeri 5 oldu. Sonra o fonksiyon tekrar çağrıldığında x'in değeri 5 olmaya devam ediyor olacak.
+
+365
+01:26:52,779 --> 01:26:53,939
+Göreceğiz şimdi.
+
+366
+01:26:55,028 --> 01:27:10,887
+Bir ota kelimesi de var ama çok nadir kullanılıyor. Aslında çok da gerekmeyen, daha mı? O yüzden burada uzun lafın kısası, öğrendiğimiz şey statik kelimesi.
+
+367
+01:27:15,380 --> 01:27:33,900
+İçinde tamamlandığı blok kadardır. O blok ne zaman aktifse ömrü de o kadardır. O blok tamamlandığı zaman da ömrü de biter. Fakat ömrü bitmesin, kalsın istiyorsanız o zaman statik anahtar kelimesiyle o değişkeni işaretlersiniz.
+
+368
+01:27:35,800 --> 01:27:39,820
+Hemen görelim. Söz işaret yazı kalır. Kod da daha iyi.
+
+369
+01:27:42,676 --> 01:27:52,436
+Normal değişkenden, özür dilerim normal değil, statik olarak tanımladığımız sabit değişkenden sadece sadece bir kere ilk değer atınız.
+
+370
+01:27:52,436 --> 01:28:02,436
+Ve ondan sonra her açıklığı kalıcı olur. Ama onun dışında normal otomatikken hangi bir şey yazmazsak bir...
+
+371
+01:28:02,836 --> 01:28:07,036
+Block içerisinde tanımladığımız değişkenler otomatik olarak adlandırılıyor.
+
+372
+01:28:07,416 --> 01:28:12,836
+Ve o bloğa her girildiğinde yeniden initials edilir, yeniden ihtiyar atılıyor.
+
+373
+01:28:12,836 --> 01:28:16,076
+En son aldıkları değil, korumuyorlar.
+
+374
+01:28:16,555 --> 01:28:17,716
+Yine sıfırdan başlıyorlar.
+
+375
+01:28:19,015 --> 01:28:22,716
+Örnek olarak şu soldaki örneği bir görelim.
+
+376
+01:28:23,275 --> 01:28:26,336
+Burada inclement diye bir şeyim var, metodum var.
+
+377
+01:28:27,252 --> 01:28:37,252
+Fonksiyonu aradıkları herhangi bir parbeti almıyor. Herhangi bir parbeti almıyorsa, oyeti yazmak zorunda da değiliz aslında. Boş bırakabilirdik her birisi.
+
+378
+01:28:37,252 --> 01:28:39,252
+Bunun içerisinde...
+
+379
+01:28:39,792 --> 01:29:04,852
+G ve K diye iki tane tam sayı değişken tanımlıyoruz. Fakat G'yi normal tanımlıyoruz. Inti G'ye eşitirilir diye. K'yi ise statik olarak tanımlıyoruz. Bu demek oluyor ki bu inkrement fonksiyonunu her bildiğimizde G tekrar en baştan bir olarak başlayacak. Ama K en son hangi değere sahip olmuşsa onu kurmaya devam edecek.
+
+380
+01:29:05,235 --> 01:29:12,675
+Şuradaki atama komutu bu inkrement fonksiyonunun sadece ilk çağrılmasında yapılacak, bir daha yapılacak.
+
+381
+01:29:14,195 --> 01:29:21,315
+Fonksiyon içerisinde, inkrement fonksiyonun içerisinde g'nin değerinde, k'nin değerinde bir arttırıyoruz ve g'nin k'nin değerlerini ekrana yazıyoruz.
+
+382
+01:29:23,095 --> 01:29:29,235
+Geliyoruz main metoduna, main fonksiyonuna. Main fonksiyonunda inkrement fonksiyonunu 3 kere çağrıyoruz.
+
+383
+01:29:31,252 --> 01:29:42,792
+Her seferinde G'nin iki olduğunu göreceksiniz. Çünkü G normal bir değişken. Fakat K'nın her yeni çağrışta eski değerini koruduğunu göreceksiniz.
+
+384
+01:29:48,180 --> 01:30:03,440
+Evet, G1 ile başlıyor. Her seferinde 1 artıp 2 oluyor. O yüzden G için 2 yazıyor. Bu iklanatı fonksiyonu. Fakat K'yı sadece ilk defa 1 olarak, ilk çağrımda ilk 1 olarak eklendirip, diğerini 2 yapıyor.
+
+385
+01:30:03,440 --> 01:30:11,440
+Sonraki çağrımlarda şu statikli tanım tekrar yürütülmüyor. Direkt işte K'nın...
+
+386
+01:30:11,956 --> 01:30:16,956
+Bir önceki sağlamda 2 idi, şimdi 3 oluyor ve o şekilde ekrana yazdım.
+
+387
+01:30:16,956 --> 01:30:25,956
+Gördüğünüz gibi G'nin değeri her seferinde başa dönüyor ama K'nın değeri her seferinde kalanlığı yerden devam ediyor.
+
+388
+01:30:25,956 --> 01:30:38,923
+Bu kalıcılığı mesela nerede isteyebilirsiniz? Diyelim ki bir dizide dolaşıyorsunuz veya bir kayıt listesinde dolaşıyorsunuz.
+
+389
+01:30:38,996 --> 01:30:52,275
+En son hangi kayıt okuduğunuzun yerini saklamak istiyorsanız ya bir global değişkeniniz olacak veyahut da işte bu şekilde fonksiyon içerisinde statik olarak tanımladığınız bir değişken olacak.
+
+390
+01:30:52,275 --> 01:31:02,515
+Yani şu örnekteki etkiyi elde edebilmek için ya işte bu inklemant fonksiyon içerisinde k'yı statik olarak tanımlayacağız.
+
+391
+01:31:03,060 --> 01:31:28,920
+Veyahut da hepsinin üstüne, yani şuradaki statik int k eşittir bir satın buradan kesip, hepsinin üstüne int k eşittir bir ekleyeceğiz. Her iki şekilde de aynı etkiyi alırız. Fakat bu k eğer global değişken olsaydı, o k'nın bizatihi kendisi üstünde olan kontrolü bir başka fonksiyonda ele alabilecekti.
+
+392
+01:31:30,292 --> 01:31:38,832
+Şu inkrement fonksiyonun içerisindeki tanımlı k'nın kontrolünü bu fonksiyon dışında başka kimse eline geçilemez.
+
+393
+01:31:39,552 --> 01:31:43,872
+Çünkü bu k sadece bu inkrement fonksiyonun içerisinde tanımlı.
+
+394
+01:31:43,872 --> 01:31:50,792
+Bir başka bir fonksiyon diğer bu inkrement fonksiyonun içerisinde girip oradaki k'nın değerini değiştiremez.
+
+395
+01:31:51,315 --> 01:32:05,595
+Eğer bu şekilde belli bir fonksiyonu sıkı sıkıya kontrol altında tutmasını istediğiniz bir değişken varsa, işte o zaman onu bu şekilde tanımlar ve diğerinde kalıcı olması için statik kelimesiyle tanımlarsınız.
+
+396
+01:32:05,595 --> 01:32:07,956
+Şimdi bu konuştuklarımızı yapalım.
+
+397
+01:32:16,851 --> 01:32:18,311
+Şunu da bir alalım.
+
+398
+01:32:20,632 --> 01:32:23,271
+Şu an inklimat fonksiyonunu almak istiyorum.
+
+399
+01:32:27,380 --> 01:32:28,139
+Benim kalsımda.
+
+400
+01:32:38,996 --> 01:32:45,996
+Evet, G1K bir Staticama ekranı yazıyoruz. Şu tırnakları düzeltelim.
+
+401
+01:32:48,996 --> 01:32:55,916
+Menü içerisinde sadece bu inkrementı çalıştıralım.
+
+402
+01:33:06,260 --> 01:33:07,400
+Ve çalıştık.
+
+403
+01:33:12,243 --> 01:33:16,683
+Ama üç kere çağırıyor. Pardon, hızlıyorum. [öğrenci]'un kopyalamıştım ya.
+
+404
+01:33:34,771 --> 01:33:50,771
+Bir dakika. Belki girmeyecek. Unuttum şimdi geçen hafta yaptığım şeyi. Bir denemek istiyorum şimdi.
+
+405
+01:33:57,235 --> 01:34:01,315
+İndre çöğtler, Pavel çöğtler.
+
+406
+01:34:05,332 --> 01:34:06,712
+Ders malzeması.
+
+407
+01:34:08,872 --> 01:34:09,372
+Bir dakika.
+
+408
+01:34:09,952 --> 01:34:11,372
+Ha ay, özür dilerim.
+
+409
+01:34:11,891 --> 01:34:12,292
+Açıktım.
+
+410
+01:34:12,971 --> 01:34:14,271
+Kulduğum yerdeydi.
+
+411
+01:34:14,792 --> 01:34:15,072
+Yani.
+
+412
+01:34:20,275 --> 01:34:20,939
+Teşekkürler.
+
+413
+01:34:37,555 --> 01:34:39,555
+Şuraya da yapıştırır.
+
+414
+01:34:43,572 --> 01:34:47,572
+Evet, şimdi burada Şeyh Project'ı.
+
+415
+01:34:55,764 --> 01:34:59,624
+Yok, yine aynı şeyden devam ediyor. Neyse.
+
+416
+01:35:01,224 --> 01:35:09,844
+Evet, ama örneği gördük. G'nin değeri sürekli sıfır anda başa döndü. Ama K'nın değeri kalıcı oldu.
+
+417
+01:35:09,844 --> 01:35:13,264
+O yüzden burada herhangi bir problemimiz yok.
+
+418
+01:35:14,124 --> 01:35:18,224
+Ve şimdi söylediğim diğer şeyi de göstereyim size.
+
+419
+01:35:19,584 --> 01:35:21,164
+Veyahut da işte şöyle yapacaktık.
+
+420
+01:35:24,627 --> 01:35:43,627
+Buraya int k eşit birini buraya koyacaktık. Buraya koyacaktık. Böyle yaptığımızda yine aynı sonucu elde edeceğiz. Bu arada bunun farklı olduğunu göstermek için...
+
+421
+01:35:53,524 --> 01:36:18,124
+Yeni durumda da yine az önceki benzer örneği aldık. Benzer sonuç aldık. Fakat tabii ki şimdi şöyle yaptığımız zaman başka bir herhangi bir fonksiyon içerisinde bile veya şu min içerisinde k eşitti 5 gibi bir komut verebiliriz.
+
+422
+01:36:19,028 --> 01:36:27,007
+Kanun 1'den başlasın istiyorsak, veya bir inkrement yaptıktan sonra bu sefer kanun değerini mesela 7 yapabiliriz kafamıza göre.
+
+423
+01:36:28,528 --> 01:36:40,507
+Böyle bir şeyler yapılmasın. Bu kanun kontrolü sadece inkrement fonksiyonunda olsun istiyorsanız, eğer o zaman yeni öğrendiğiniz şekilde çalışmamız gerekirse.
+
+424
+01:36:42,420 --> 01:37:00,539
+İşte bu şekilde verdiğimde artık bu yeni eklediğim satırlar derleme hatası verecek bana bakın. Şu satır ve sonra tabii aynı hata başka aşağılarda da var. Diyor ki hatayı sadece gördüğüm yerde gösterdim diğerlerini tekrar göstermiyorum diyor.
+
+425
+01:37:06,003 --> 01:37:19,064
+Müdahale edemiyoruz. Çünkü inkrement fonksiyonun içerisinde tanımlanan onun skobu o. Bu kardeşkenin skobu sadece inkrement fonksiyonun içerisindir. Başka bir yerden kesinlikle erişilemez.
+
+426
+01:37:22,707 --> 01:37:25,988
+Kaptız. Kaptız. Gidin.
+
+427
+01:37:27,087 --> 01:37:28,507
+Bak şimdi de onu derleniyorum.
+
+428
+01:37:41,716 --> 01:37:45,216
+Bu yansıda geçenleri sözde söylemiş oldum arkadaşlar.
+
+429
+01:37:52,404 --> 01:38:05,764
+Scope dediğimizde anahtarıyla gördük. Dört ayrı spesifik Scope turu var. Program Scope veya başka bir de işte Global Scope.
+
+430
+01:38:06,195 --> 01:38:26,195
+Şimdi biz hep derste tek bir aslında C dosyası üzerinden şey yapıyoruz. Projemizi yapıyoruz. Bizden fazla C dosyasını bir araya getirip tabii ki senin kendi kitapları dışında kendi bizden fazla C dosyamızı bir araya getirip denilen işlemi yapmayacağız derste.
+
+431
+01:38:26,416 --> 01:38:38,416
+O yüzden ben global scope diyorum ama aslında teknik olarak az önceki örneğimde mesela k yukarıya çektiğimde o file scope olmuş oluyor aslında.
+
+432
+01:38:38,416 --> 01:38:51,115
+Yani o c dosyasında, adını söyleyeyim, işte untitled bir c dosyasında ben şuraya şöyle bir şey ekledim de işte şöyle belki.
+
+433
+01:38:52,180 --> 01:38:56,940
+3G'ye 5 titimde. Selam, geliş olsun.
+
+434
+01:38:59,380 --> 01:39:21,159
+Geç piyade düzeyinden. Geçtir 3. Bu teknik olarak FileScope. Yani bu Untitled 1.c'nin içerisinde geçen her fonksiyon buna erişir. Onların hepsi için global. Onlar için global. File düzeyinde global.
+
+435
+01:39:21,619 --> 01:39:36,020
+Sonrasında kısaca global diyorum. Teknik olarak doğru değil. Birden fazla benim noktacıya dosyam da olabilir aynı proje kapsamında. Hepsinin ortak olarak göreceği değişkene global değişken diyoruz aslında.
+
+436
+01:39:36,787 --> 01:39:50,547
+Şurada gördüğünüz G örneğinde tanımladığımız değişkeni ise FileScope diyoruz. Tüm file tarafından, tüm file'daki bu C dosyasındaki tüm fonksiyonlar tarafından erişilebilecek bir değer.
+
+437
+01:39:54,739 --> 01:40:15,840
+Fonksiyon, Scope, şu örnekteki increment fonksiyonundaki intj tanımı ve static intk tanımı. Bunlar da fonksiyon, Scope. Çünkü fonksiyonun içerisinde tanımlandı ve o fonksiyon içerisinde ve onun alt bloklarının içerisinde geçerli. Ne demek istiyorum alt blok ile? Mesela şöyle bir şey yapabilirim.
+
+438
+01:40:21,823 --> 01:40:22,623
+Ne diyelim?
+
+439
+01:40:23,743 --> 01:40:25,363
+G eşittir.
+
+440
+01:40:25,783 --> 01:40:26,103
+Biz.
+
+441
+01:40:26,884 --> 01:40:28,203
+G küçüktü.
+
+442
+01:40:28,443 --> 01:40:28,763
+10.
+
+443
+01:40:29,543 --> 01:40:31,783
+G 6 6.
+
+444
+01:40:31,783 --> 01:40:32,403
+Diyelim.
+
+445
+01:40:32,844 --> 01:40:34,243
+Ondan sonra bir blok açayım.
+
+446
+01:40:35,643 --> 01:40:37,163
+Diyelim ki mesela.
+
+447
+01:40:41,803 --> 01:40:43,163
+Bintes.
+
+448
+01:40:44,103 --> 01:40:45,123
+%d.
+
+449
+01:40:46,899 --> 01:40:50,399
+Ne örneği mi?
+
+450
+01:40:54,996 --> 01:41:21,996
+Böyle bir şey yapabilirim. Çünkü K değişkeni fonksiyon skobuna sahip. Bu fonksiyonun içerisinde tanınadığım for döngüsünün bloğu içerisinde de, kod bloğu içerisinde de bu K'ya erişebiliyor. Çünkü fonksiyon skobunda. Ben istersen bir blok içinde de bir değişken tanınabilirim. Mesela ben şurada istersen.
+
+451
+01:41:23,123 --> 01:41:37,904
+int y eşit tır 3 filan 4 diyebilirim. Şu y ise blok scope oldu. Bu bloğun içerisinde ve onun alt blokları olursa onun içerisinde geçerli.
+
+452
+01:41:54,163 --> 01:42:00,023
+Ne diyeyim? Şimdi burada da yeğeli yazdırayım mesela.
+
+453
+01:42:08,756 --> 01:42:27,096
+Gördüğünüz gibi bu for bloğunun içerisindeki değişkeni, onun içerisinde bir if bloğu açtım. Orada da erişebiliyorum. Bunların hepsinin doğru olduğunu derleyerekten, yani derleme hatası olmadığını göstereyim.
+
+454
+01:42:38,771 --> 01:42:40,771
+Functions kok.
+
+455
+01:42:41,771 --> 01:42:43,627
+Beşken oldu.
+
+456
+01:42:46,931 --> 01:42:49,572
+Ondan sonra şu Blogscope oldu.
+
+457
+01:42:54,996 --> 01:43:01,696
+Ondan sonra başka, şu if içerisinde de bir şey tanınabilir. O da Blogscope olacaktı.
+
+458
+01:43:02,003 --> 01:43:18,503
+Evet, gördüğünüz gibi değişik scope türlerinde örnekler verdim. Eğer işte bir de bir Untitled 2C olsaydı, hem Untitled 1C'de hem Untitled 2C'de geçerli olacak olan değişken Global Scope olacaktı aslında.
+
+459
+01:43:18,503 --> 01:43:23,684
+O nasıl tanımlılır? Şu an hatırlamıyorum. Bir daha fazla dosyayı birleştirme işine girelim.
+
+460
+01:43:41,332 --> 01:43:49,452
+Doğrusu, arkadaşım varsa, buyur. Bilmediğiniz şeyler değildir belki ama terminolojisiyle söylemiş olduk.
+
+461
+01:43:54,963 --> 01:43:59,723
+Evet, az önce yaptığım şekilde, benzer şekilde Program Scope.
+
+462
+01:43:59,963 --> 01:44:00,903
+Aaa, pardon.
+
+463
+01:44:01,623 --> 01:44:02,243
+Tamam, peki.
+
+464
+01:44:02,643 --> 01:44:04,423
+Şey etmiş oldum, hatırlamış oldum.
+
+465
+01:44:04,503 --> 01:44:05,103
+Bu tık bir örnekle.
+
+466
+01:44:07,443 --> 01:44:11,063
+Şimdi, aslında hemen o zaman örneğimleri düzelteyim.
+
+467
+01:44:13,743 --> 01:44:14,663
+Bir dakika, peki.
+
+468
+01:44:14,723 --> 01:44:16,483
+Ama aslında yine Global Scope demiyor.
+
+469
+01:44:16,643 --> 01:44:17,503
+Program Scope.
+
+470
+01:44:17,643 --> 01:44:20,223
+Peki, Program Scope ve File Scope arasında şöyle bir fark var.
+
+471
+01:44:20,223 --> 01:44:21,063
+Hemen şey söyledim.
+
+472
+01:44:22,579 --> 01:44:27,380
+Bu aslında Program Scope.
+
+473
+01:44:36,243 --> 01:44:40,804
+Bu da aslında farz kod bu.
+
+474
+01:44:40,804 --> 01:44:42,123
+Çünkü
+
+475
+01:44:43,859 --> 01:44:54,819
+Şu Statik Int K örneğinde gördüğünüz üzere bu K değişkenin değeri bu inclement fonksiyonuna her gerildiğinde tekrar sıfır vermesin son değerini tutsunuz.
+
+476
+01:44:54,819 --> 01:45:08,519
+İstiyorsak onu statik olarak belirliyorduk ya. Bu statik belirlemesini şuradaki örnekte olduğu gibi bütün fonksiyonlardan main'den de önce de bir tanımladığımız değişkeni statik olarak tanımlayabiliriz.
+
+477
+01:45:10,800 --> 01:45:31,319
+İndiyorsak eğer bu C dosyasındaki, örnekte Antalya'da bir noktacı, bu C dosyasındaki herhangi bir fonksiyonu çağıracağımız zaman, G her zaman için 3'e sıfırlanarak tekrar kullanılıyor olacak.
+
+478
+01:45:36,115 --> 01:45:47,296
+Ondan itibaren kullanılmaya devam edecek. Böylece ince bir nüans da var. Onu da şimdi hatırlamış olduğum ders notu görünce ve buradaki örneğimleri de düzeltiyorum.
+
+479
+01:45:52,083 --> 01:46:00,363
+Bunlar tabii iç içe. En kaptırıcısı Program Scope, Onun altında File Scope, Onun altında Function Scope, Onun altında Block Scope.
+
+480
+01:46:03,828 --> 01:46:20,028
+Ama tabii ki, yani şuradaki şekil sizi yanıltmasın. Sadece Blockscope'un içerisindeki tanınan bir değişkeni mesela Programscope'dan erişemiyorsunuz. Az önceki örneğimde olduğu gibi. Şuradaki int m'ye örneğin main fonksiyonun içerisinde erişemezsiniz.
+
+481
+01:46:22,163 --> 01:46:29,564
+İşte daha bir şu yukarıda, işte burada başka bir fonksiyon olsaydı, oradan gelişemezsiniz aslında.
+
+482
+01:46:29,564 --> 01:46:35,463
+Kapsayıcılık açısından şekil doğru ama işte dediğim gibi Blogscope'daki bir değişkene mesela,
+
+483
+01:46:35,463 --> 01:46:40,963
+Blogda tanımlanmış bir değişkene, Filescope'dan gelişemezsiniz. Onu da hatırlatmış olayım.
+
+484
+01:46:46,163 --> 01:46:56,264
+Evet, şimdi burada yine söylediğim şey yansıda geçiyor. Blogs konumunda tanımlanan değişken o blogun dışarısında erişilemez demiştik.
+
+485
+01:46:59,091 --> 01:47:09,771
+Eğer isterseniz, gerekli olsaydı mesela, bir blok skobunda tanımladığınız bir değişkeni bir iç blokta tekrar tanımlayabilirsiniz.
+
+486
+01:47:09,771 --> 01:47:24,671
+Ama o zaman, şu yansıdaki örnekteki int ilk C ile ikinci C farklı C'ler oluyorlar aslında. Bu değişkenlerin değerleri bellekte farklı alanlarda saklanıyor.
+
+487
+01:47:26,644 --> 01:47:51,304
+Bu şeye ulaşmanızın bir yolu yok. Bu iç yani aynı isimle tanımladığınız için şu içteki J artık bu dıştaki J'yi ezdi. Ve artık her seferinde J dediğimizde bu içteki J'yi kullanmış oluyoruz. Dıştaki J'nin değerine iç bloktan erişemeyiz.
+
+488
+01:47:51,667 --> 01:47:55,947
+Öyle bir şey gelebilirse o zaman tekrar j demeyeceğiz buna. Başka bir şey diyeceğiz.
+
+489
+01:47:58,347 --> 01:47:59,567
+Bunu da unutmayalım.
+
+490
+01:48:03,567 --> 01:48:05,567
+Onun dışında...
+
+491
+01:48:07,707 --> 01:48:08,967
+Bu...
+
+492
+01:48:09,395 --> 01:48:33,235
+Mesela, bu şurada bir şey yarabiliyor. Debug'da bir şey yarayabiliyor örneğin. Siz normal bir for döngüs içerisinde bir şeylere bakmak istiyorsunuz. Debug amaçlı. Burada tanınladığınız h-i değişkenin üstteki h-i eziyor ya da örtüyor diyelim ki. İyi ki de öyle yapıyor. Yoksa benim debug kodum program kodumun da iç mantığı kodumun da hatalı çalışmasına yol açacaktı.
+
+493
+01:48:33,235 --> 01:48:35,975
+Bir antaj olarak bunu da söyleyelim.
+
+494
+01:48:43,444 --> 01:48:47,864
+Evet. Şimdi Goat kullanmıyorduk. Geçiyoruz Teknik.
+
+495
+01:48:56,595 --> 01:49:15,895
+Sözde söylediğin şey yansıta tekrarlanıyor. Eğer bir dosyadaki, bir C dosyasındaki fonksiyonlar her çağrıldığında kalıcı olan bir değer saklamak istiyorsak o zaman onu işte FireScope olarak da tanınarak FireScope adını veriyorduk, söyledik.
+
+496
+01:49:19,764 --> 01:49:20,652
+Evet.
+
+497
+01:49:24,756 --> 01:49:42,776
+Peki, şimdi bu global değişkenler hakkında bir iki kelam ediyoruz. Bir iki uyarıda bulunuyoruz. Global değişkenlerden kaçınma arkadaşlar. Uyarımız o. Global değişkenlerden kaçınma. Çünkü karmaşıklığı arttırıyor.
+
+498
+01:49:43,283 --> 01:49:59,963
+Çünkü farklı fonksiyonlar içerisinde tanımlanan aynı adlı değişkenler o global değişkenin adını eziyor. Fakat bazı fonksiyonlarda bu tanımlanmamış.
+
+499
+01:50:00,000 --> 01:50:23,380
+Bu sefer ezilmiyor. Kimi yerde fonksiyon içinde tanımlı diyeyi, kimi yerde Filescope olan diyeyi kullanmış oluyoruz mesela. Eğer koda hakimsek o zaman karıştırmayız ama uzun ve karmaşık bir kod içerisinde acaba şimdi bir değişken global değil mi Filescope'ta mı program diye.
+
+500
+01:50:24,659 --> 01:50:41,640
+Düşünmek, işi anlamamızı ve çalışmamızı zorlaştırıyor. Bu nedenlerle global değişken globoskop kullanmayın diyor. Olay bu.
+
+501
+01:50:46,804 --> 01:50:54,824
+Definition Allerjinden bahsetmiştik. Bir şeyi kullanmadan önce, ister fonksiyon olsun, ister değişken olsun, önceden ya tanılamak gerekiyor.
+
+502
+01:50:54,824 --> 01:51:00,724
+Fonksiyonda ikisi farklıydı. Tanımlarsın imzasını verirsiniz, kodun görevlisini sonra yazarsınız.
+
+503
+01:51:01,204 --> 01:51:07,043
+Ama o ikisinin arasında o fonksiyonla erişecek, erişim eksikten başka fonksiyonlar yazabilirsiniz.
+
+504
+01:51:07,484 --> 01:51:14,804
+Değerleme hatası almazsınız. Ama daha yukarıdaki o diğer fonksiyonun tanımını sildiğinizde Allerjinden...
+
+505
+01:51:14,804 --> 01:51:23,043
+Sildiğinizde o zaman derleyemiyordunuz hatırlarsınız. Definition ise kodun kendi bloğunu yazmak anlamında.
+
+506
+01:51:26,524 --> 01:51:28,844
+Evet, bununla konuşmuştuk.
+
+507
+01:51:32,404 --> 01:51:39,404
+Gelelim Register kelimesine. Ondan sonra Storage kıslara gireceğiz.
+
+508
+01:51:39,404 --> 01:51:43,404
+Sonra... Peki. Şimdi...
+
+509
+01:51:43,404 --> 01:51:52,404
+Hani ara zamanına geldik ama şunu da söyleyeyim. Zaten şu iki yansıları çok fazla çelikmeyecek. Hızlı geçeceğiz. Örneklemesini...
+
+510
+01:51:52,916 --> 01:52:17,996
+Sonraki dersi yapabiliriz veya gerekmiyorsa yapmayız bile. Rejiftir diye bir sıfatımız daha var, bir tanıncımız daha var. Onu söyleyelim. O da şu. Eğer bir değişkene çok erişiyorsanız, fazla sayıda erişiyorsanız ve sık erişiyorsanız, bu değişkenin normal ren bellekte değil de,
+
+511
+01:52:18,707 --> 01:52:39,847
+Mikro işlemci ile aynı tüm devre içerisinde yer alan saklama alanında saklanmasını isteyebilirsiniz. O saklama alanlarına register denir. Bunların sayısı azdır. Fakat mikro işlemci ile aynı devrede olduğu için erişimi çok hızlıdır.
+
+512
+01:52:40,916 --> 01:53:07,016
+Bu nedenle kritik bazı değişkenleri veya işaretçileri fark etmez. Register olarak tanımlayabilirsiniz. Tanımlamak isteyebilirsiniz. Ha derleyici sizin register olarak tanımladığınız değişkenleri gerçekten registerlarda tutar ya da tutmaz. Olası ayrı. Şurada kım ziradını çizmiş. Compile is free to ignore it. Ama değerlendirebilir de yapabiliyorsa.
+
+513
+01:53:08,180 --> 01:53:15,820
+Belki mesela okuduğun çalıştı işletim sistemi doğrudan işlemci, müdür işlemci rejestralarına erişimi kapatmış da olabilir.
+
+514
+01:53:16,920 --> 01:53:18,620
+O yüzden derneci ne yapsın zaten?
+
+515
+01:53:19,220 --> 01:53:22,580
+Gibisinden durumlar söz konusu olabilir.
+
+516
+01:53:22,580 --> 01:53:27,700
+Ama şunu da unutmamak lazım. İleride pointer işlemleri yaptığımızda göreceğiz.
+
+517
+01:53:27,880 --> 01:53:30,640
+Biz değişkenin bellek adresini alabiliyorduk.
+
+518
+01:53:31,200 --> 01:53:33,580
+Tam da rejestralarda böyle bir...
+
+519
+01:53:34,131 --> 01:53:57,531
+Bellek adresi durumu yok. Onu almaya çalışmak sakınca doğar. Ha ne olur ne biter? Nasıl bir hatayla karşılaşırız? Sadece o program mı donan, bütün sistem mi çöker? Ne olur bilmiyoruz. Ama yazıp göreceğiz. Belki inşallah orada derleme hatası verip o kadar ileri götürmüyordur.
+
+520
+01:54:02,131 --> 01:54:10,091
+adresini almaya çalışıyorsun. Ben o yüzden derlemiyorum da diyebilirim. Pointer'ları görelim. Unutmazsak bu registrı orada da bir tekrar deneriz.
+
+521
+01:54:11,231 --> 01:54:18,171
+Registrar olan pointer'ın adresini almaya çalışırız. İnşallah derleyici bizi daha en baştan Hoop kardeşim dur diye enganlıyoruz.
+
+522
+01:54:21,811 --> 01:54:39,212
+Özellikle, şimdi oto kelimesini geçmettik. Çünkü biraz belirsiz. Statik niteliğicisini konuştuk epey. Bir değişkenin skoptan çıkıp geri gelirdiğinde tekrar aynı değerini, en son değerini tutmasını sağlıyordu.
+
+523
+01:54:40,435 --> 01:55:03,375
+Extr, üstünde çalıştığımız kod dosyasının dışında bir kod dosyasında tanımlanmış ya da oralardan alınacak bir değişkende fonksiyon olacak bu anlamına geliyordu. Register, bir değişkenin değerini mikro işlemciyle aynı tüm devredeki özel saklama alanında saklamaya yarıyordu.
+
+524
+01:55:06,868 --> 01:55:24,868
+Bunun örneğini yapmadık ama şimdi soru da söylemiş olalım. Bir değişkene bir kere değer atarsın ve bir daha da o değer değiştirilemesin istiyorsanız o zaman o değişkeni const olarak şey ediyorsunuz, tanımlıyorsunuz.
+
+525
+01:55:24,868 --> 01:55:32,868
+Bir daha değer atamaya kalkılacak herhangi bir kod derleme hatasında sizi durduruyordur. Derleme aşamasında hatayla sizi durduruyordur.
+
+526
+01:55:33,876 --> 01:55:38,855
+Volatile ise arkadaşlar, şey,
+
+527
+01:55:40,148 --> 01:55:49,008
+Ben çok pratik olarak kullanmadım. Fakat o değişkenin bellekte saklanmasıyla ilgili sessiz de optimizasyonları kapatıyor.
+
+528
+01:55:49,008 --> 01:56:08,088
+Yani diyelim ki bir değişkeni şey ne yapıyor? Mesela bir fonksiyondan main fonksiyondan başka bir fonksiyon çağırıyor. Bu durumda main fonksiyonun o anki bellek bağlı bir yanına önce itilip
+
+529
+01:56:08,148 --> 01:56:30,628
+Ondan sonra yeni fonksiyonun belli kalımı çıkıyor demiştik ya. Şimdi eğer main içerisinde bir değişkeni volatil olarak tanımlarsanız eğer işte main'in durum bilgisi push edildiğinde volatil değişkenin durum bilgisi o push edilen bilgiye dahil edilmiyor. İçeriye dahil edilmiyor. Diğerini kaybediyor diyelim ki.
+
+530
+01:56:31,123 --> 01:56:40,123
+Bu tip çalışma biçiminin işinize gelebileceği algoritmalar olabilir. O zaman bu tarih kullanırsınız. Yoksa tahti de kullandığım bir şey değil.
+
+531
+01:56:42,123 --> 01:56:58,123
+Evet. Şimdi 10 dakika aramızı verelim. Sonra sonra arkadaşlar aradan sonra sorabilirler. O yüzden 10.55 ile 10.05 arasında...
+
+532
+01:56:58,355 --> 01:56:59,595
+Tener sonucunu verelim.
+
+533
+02:06:48,564 --> 02:06:55,543
+Evet arkadaşlar, ara vaktimizi doldurduk. Şimdi derste kaldığımız yerden devam edeceğiz.
+
+534
+02:06:56,024 --> 02:07:06,564
+Kritik noktada da kaldık. Point Reşlemlerine başlayacağız. Öncesinde sorusu olan arkadaşım varsa lütfen buyursun konuştuğumuz konularla ilgili olarak.
+
+535
+02:07:18,003 --> 02:07:20,523
+Yoksa diziler ve işaretçiler konusuna geçeceğim.
+
+536
+02:07:29,268 --> 02:07:32,268
+Ekran paylaşımında var gözüküyor. Tamam, pekala.
+
+537
+02:07:37,011 --> 02:07:47,511
+Önce pointer temellerinden biraz bahsedeceğiz. Daha sonra dizi ve pointer tanımları nasıl olur onlardan bahsedeceğiz.
+
+538
+02:07:47,511 --> 02:07:56,011
+Dizilerin bellekler nasıl saklandığını göreceğiz ki daha sonra onun üstünden pointer ve erişim konularını da görebilmek için.
+
+539
+02:07:56,180 --> 02:08:23,279
+Dizileri ilklendirme ile ilgili nasıl yapıldığından bahsedeceğiz. Ondan sonra dizinin elemanlarına, pointlar üzerinden nasıl eleştiririzi göstereceğiz. Çeşitli örneklerimiz olacak. Temel bir uygulama alanımız da karakter katarları olacak. Çünkü C'de string diye bir tür tanımlı değil, sadece karakter dizileri söz konusu olabilir. Onun üstünden çeşitli örneklerimiz olacak. Daha sonra çok boyutlu diziler 2, 3.
+
+540
+02:08:23,764 --> 02:08:34,764
+Ve daha fazla boyutlu diziler de tanınılabilir. Onlara da kısaca değiniyor olacağız. Tamam olarak 1 ve 2 boyutlu diziler üzerinden gidiyor olacağız örneklerimizden.
+
+541
+02:08:38,963 --> 02:08:44,624
+Şimdi, bir örnekli kod var. Onun üstünden bir konuşalım şimdi.
+
+542
+02:08:47,764 --> 02:09:00,264
+Pointer dediğimiz kavramın ne olduğunu hatırlarsak eğer, yıldız ifadesiyle geçer. Bir değişken adının başında bir yıldız tanımı şekilde görürseniz, o bir işaretçidir anlamına geliyor.
+
+543
+02:09:06,963 --> 02:09:12,563
+Yönlendirme değişkeni diyelim. O şekilde tanımlayabiliriz.
+
+544
+02:09:13,268 --> 02:09:21,868
+Nihayetinde aslında arka planda bir tam sayı. Çünkü bellek gözü adresleri sayısal değerlerdir.
+
+545
+02:09:21,868 --> 02:09:30,087
+İşte sıfırınç gözden başlar, ne kadar byte ayrılmışsa o kadar ilerleyen sayılardır nihayetinde.
+
+546
+02:09:30,208 --> 02:09:41,268
+Bir tam sayıda 4 byte ile tutuluyorsa bir tam sayının bellekte saklamaya başladığı, başlandığı noktayı gösteren bir...
+
+547
+02:09:41,268 --> 02:10:00,000
+Bu örneğe bakalım.
+
+548
+02:10:00,000 --> 02:10:10,539
+Ve o saklanan yerin de, BD'deki yerin de bir işaretçi üzerinden erişilebileceğini ifade ediyoruz.
+
+549
+02:10:12,779 --> 02:10:15,520
+Main metodunu incelemeye geri dönelim şimdi.
+
+550
+02:10:16,119 --> 02:10:23,020
+I ve G diye iki tane değişken tanımlamışız. Short integer. Yani 4 byte'lar değil de 2 byte'lar saklanacak.
+
+551
+02:10:24,404 --> 02:10:37,804
+Bu değişkenlerden herhangi birini göstermeye yarayabilecek P adlı bir pointer tanımlıyoruz. Bunun pointer olduğunda biz ve derleyici adının başındaki yıldız ifa karakterinden anlıyor.
+
+552
+02:10:39,304 --> 02:10:42,284
+Short olacak değişkenlere işaretçi.
+
+553
+02:10:44,524 --> 02:10:48,884
+Iye 123 komutunu veriyoruz. Short olarak tanımlamıştık yukarıda.
+
+554
+02:10:49,364 --> 02:10:51,904
+Cye de 321 komutunu veriyoruz.
+
+555
+02:10:53,076 --> 02:11:10,315
+Sonra, daha yukarıda tanımladığımız P işaretçisini, I değişkeninin saklandığı bellek adresini gösterecek şekilde atmayı yapıyoruz.
+
+556
+02:11:10,315 --> 02:11:15,735
+Burada kullandığımız özel karakter Ampersand veya End işareti.
+
+557
+02:11:20,756 --> 02:11:26,056
+Saklandığı bellek adresi şeklinde birlikte okunuyor. İki sürüden.
+
+558
+02:11:28,056 --> 02:11:40,536
+Ve J'ye de P pointer'ının gösterdiği adresteki değeri ata komutunu verenmiş oluyoruz.
+
+559
+02:11:41,036 --> 02:11:43,036
+J eşittir Yıldız P diyerekten.
+
+560
+02:11:44,136 --> 02:11:46,676
+J eşittir P demem doğru olmayacaktı burada.
+
+561
+02:11:47,123 --> 02:11:52,123
+Çünkü pointer'ın gösterdiği adresi kullanmak istiyoruz.
+
+562
+02:11:52,684 --> 02:12:00,764
+C değişkenine diyoruz ki artık sen P işaretçisinin gösterdiği adresteki değeri simgeliyorsun sende.
+
+563
+02:12:01,604 --> 02:12:06,083
+İfadesini verebilmek için C'ye yıldız P şeklinde söylüyoruz.
+
+564
+02:12:08,463 --> 02:12:11,844
+Sesin de gitmemiş olması lazım arkadaşlar.
+
+565
+02:12:13,395 --> 02:12:16,395
+Evet, mesela sonun yok. Yanıkları geliyor.
+
+566
+02:12:17,395 --> 02:12:18,059
+Tamam.
+
+567
+02:12:23,699 --> 02:12:25,699
+Evet, pekala. Devam etiyorum.
+
+568
+02:12:28,699 --> 02:12:37,619
+Bu sayede artık İ'de, J'de bellekteki aynı yer gösteriyorlar aslında.
+
+569
+02:12:39,519 --> 02:12:48,019
+İlk baştaki ilk print işaretinde İ'nin ve J'nin değerini ekrana yazdı dediğimde bana
+
+570
+02:12:49,108 --> 02:13:10,448
+İ için de 123, J için de 123 değerini yazdıracak. Bir önceki verdiğim J eşittir Yıldız P komutu net yüzünden. Sonra İ'nin değerini 2 arttırıyoruz. J'nin değerini de 3 arttırıyoruz. Sonra İ ve J'yi tekrar ekrana yazdırıyoruz. Bu da 5. komutumuz olsun.
+
+571
+02:13:15,572 --> 02:13:27,631
+Artık i de aynı yer, c de aynı yer. Bellek de aynı yer ve ifade ediyorlar. O yüzden i'nin değeri iki artacak, c'nin de artmış olacak.
+
+572
+02:13:28,595 --> 02:13:41,195
+Sonra C'nin değeri 3'e artacak. Ama Ün'in de artmış olacak. Çünkü aslında bunların bellekte gösterdiği, gösterdiği demeyelim, simgelediği, aynı yerin değeri artmış olacak.
+
+573
+02:13:41,595 --> 02:13:52,375
+Gösteren P işaretçi, simgeleyen İ ve J değişkenler. Bu ne tane? Beşinci komutun ardından, İ'nin değeri 123'tü.
+
+574
+02:13:53,203 --> 02:14:05,823
+123'i 2 ve 3 daha toplam 5 eklediğinizde 128 olacak. İ'nin değerinde 128, C'nin değerinde 128 olarak ekrana yazılacak. Görelim.
+
+575
+02:14:12,500 --> 02:14:17,000
+Evet, şimdi bakın burada kodda da öyle olacağını göreceğiz de.
+
+576
+02:14:21,699 --> 02:14:22,460
+Göreceğiz.
+
+577
+02:14:24,519 --> 02:14:29,139
+Ama adım adım her aşamada ne olduğunu da anlatmak da istiyorum.
+
+578
+02:14:29,559 --> 02:14:31,180
+Bunun için işe yarayacak.
+
+579
+02:14:31,340 --> 02:14:34,519
+Hem kodda da yazalım şimdi bir yandan kod penceresini açalım.
+
+580
+02:14:34,619 --> 02:14:36,239
+Bir yandan sunum penceresini açalım.
+
+581
+02:14:36,579 --> 02:14:39,260
+Ve hangi aşamada nasıl değiştiğini görürüz.
+
+582
+02:14:40,404 --> 02:14:41,844
+Şimdi şunları alıyorum.
+
+583
+02:14:51,315 --> 02:14:53,795
+Buradaki menü inşallah ne yapıştırıyorum?
+
+584
+02:15:00,212 --> 02:15:09,452
+Şimdi önce iddia ettiğin sonucun öyle gerçekleşeceğini, gerçekleşmeyeceğini görelim.
+
+585
+02:15:14,515 --> 02:15:18,515
+Bizden fazla print komutu mu var?
+
+586
+02:15:27,060 --> 02:15:29,060
+Bakıyorum şimdi.
+
+587
+02:15:29,060 --> 02:15:31,060
+123.
+
+588
+02:15:33,060 --> 02:15:39,060
+Bu arada bir dakika. Ha, iki printfirm var. Ha, tamam. Tamam, peki.
+
+589
+02:15:39,060 --> 02:15:45,060
+Bunları da birbirinden açıp slash n ile ayırayım da, ne zaman ne olduğunu görelim.
+
+590
+02:15:45,716 --> 02:15:56,876
+Bu arada herhalde şunları da PowerPoint'in tesis olsun diye aynı sıfırda yazmışımdır. Ama problemim yok. Tamam. Ben kendimi şu son printfere o kadar odaklamışım ki.
+
+591
+02:15:58,876 --> 02:16:05,435
+Şöyle before diyelim. Ondan sonra şuraya da after diyelim.
+
+592
+02:16:22,515 --> 02:16:23,515
+Ne oldu?
+
+593
+02:16:25,515 --> 02:16:28,515
+Dönen imleyicim var şimdi.
+
+594
+02:16:31,515 --> 02:16:33,515
+Alastam tıklı kaldı, ne oldu?
+
+595
+02:16:35,515 --> 02:16:37,515
+Kapat ya valla.
+
+596
+02:16:38,515 --> 02:16:40,515
+Tekrar açarız, ne olacak?
+
+597
+02:16:50,036 --> 02:17:02,296
+Projek dosyası, şunu açalım. Evet. En son kaydettiğim, derneğe de önce her zaman için kaydettiğimde en son kayıtlı haliyle geldi.
+
+598
+02:17:07,731 --> 02:17:08,972
+Tıkladım.
+
+599
+02:17:13,332 --> 02:17:20,811
+Komut satırına geçip oradan çalıştırayım bari. Neden? Ha bir de şöyle yapayım bu arada.
+
+600
+02:17:20,811 --> 02:17:31,012
+Sonrasına kadar devre dışı bırak bir bunu. Ondan sonra şunu da bir tekrar kapatayım.
+
+601
+02:17:37,268 --> 02:17:39,268
+Ekse dosyunu da kapatayım.
+
+602
+02:17:41,268 --> 02:17:45,268
+Bundan sonra şuradaki arayı da şimdilik kapatıp kaydedeyim.
+
+603
+02:17:46,268 --> 02:17:48,268
+Bundan sonra şunu iptal.
+
+604
+02:17:49,268 --> 02:17:51,268
+Ondan sonra gelin komut satığına.
+
+605
+02:17:59,252 --> 02:18:06,252
+Koda ve Project Birekser.
+
+606
+02:18:06,252 --> 02:18:14,252
+Şimdi bakalım. Koda da bakalım.
+
+607
+02:18:18,899 --> 02:18:34,180
+Şimdi i123, c321. Fakat daha sonra p'nin i'nin adresini al ve ondan sonra o adresdeki değeri dg'ye tekrar göster dediğimden,
+
+608
+02:18:34,180 --> 02:18:43,180
+ondan sonra ilk baştaki printimin komutu i'nin de g'nin de aynı değeri vermesi.
+
+609
+02:18:43,796 --> 02:18:50,876
+Fakat özür dilerim, bu arada bu programı çalıştırmadan önce yanlış bir ifade kullandım. Onu şimdi düzeltiyorum.
+
+610
+02:18:53,876 --> 02:19:08,335
+Gösterdiği adres değişmeyen P aslında pointer. Pointer'ın gösterdiği yer değişmez. Fakat değişkenlerin ifade ettikleri yer bellekte değişmez.
+
+611
+02:19:08,852 --> 02:19:20,152
+Şimdi hızlı atlamadan önce PowerPoint'deki diğer aradaki yansıları gösterseydim onu da hatırlamış olacaktım. Bu da sizin böyle aklınızda kalsın.
+
+612
+02:19:22,804 --> 02:19:32,923
+Şu ilk prim tefte önce G-Eşit'i yıldız P dediğimde şu an İ ile simgelenen bellek gözünde de 123 değer olacak.
+
+613
+02:19:32,923 --> 02:19:41,863
+G ile simgelenen bellek gözünde de 123 değeri yer alacak. O yüzden ikisinin de değerleri 123 olarak ekran gösterecek.
+
+614
+02:19:42,344 --> 02:19:45,024
+Sonra İ değişkenin değerini ikiye aktıyorum.
+
+615
+02:19:46,772 --> 02:20:09,512
+Simgelediği adresteki değer 2 artıyor. Fakat G'nin simgeledeki adresteki değer de 3 artıyor. İ'nin değeri 123'tü. Oluyoruz da 125. G'nin değeri de 123 olmuştu. Şu statement 4 satırı nedeniyle. Onda değeri 3 arttığında oluyoruz da 120 arttı. O şekilde 125 ve 126 çıktıkları alıyoruz.
+
+616
+02:20:15,572 --> 02:20:20,691
+Buradan çıkmayayım. İndiyeyim sadece. GCP açayım.
+
+617
+02:20:24,564 --> 02:20:36,564
+Şunu açayım ve şöyle yapıp, şöyle yapıp, onu da...
+
+618
+02:20:40,788 --> 02:20:47,788
+Bunu biraz saklayıp, Evet şunlar gözüksün bir yandan.
+
+619
+02:20:47,788 --> 02:20:51,788
+PowerPoint'i de şöyle aldığımda...
+
+620
+02:20:56,051 --> 02:21:02,971
+Ve hatta, önce küçülteyim.
+
+621
+02:21:02,971 --> 02:21:03,851
+Evet.
+
+622
+02:21:05,932 --> 02:21:18,111
+Şimdi, ilk durumda bu tabloda değişken veya sembolik isim kutunu bellek adresi ve bellik içeriği olsun.
+
+623
+02:21:18,111 --> 02:21:22,111
+Şimdi simgelmek için belliği...
+
+624
+02:21:22,128 --> 02:21:36,868
+Aslında de BlackBite dizileri şeklindedir. Ve burada da şimdi onu görüyoruz. Fakat bir short iki byte ile singelendiği için aslında şu şu an içine tıkladığım kutu iki byte'lık bir alan.
+
+625
+02:21:37,311 --> 02:21:56,451
+Sonraki kutu yine 2 byte tip bir alan, sonraki yine 2 byte tip bir alan. Ve bu programın çalıştırıldığı anda diyelim ki işletim sistemi bu programın bellek uzayı olarak 1200. adresten başlayan bellek uzayını vermiş. Oradaki 1200 sayısı tamamen rastgele.
+
+626
+02:21:57,556 --> 02:22:10,376
+Şimdi [öğrenci] şu pointer aritmetik sorularını sonra konuşalım olur mu? Önce bu örneği anlayalım. Ondan sonra pointer aritmetiklerini zaten görüyor olacağız.
+
+627
+02:22:12,456 --> 02:22:20,435
+Evet, iyi eşittir. İlk başta, yani şu statement bir dahi yürütülmeden önce.
+
+628
+02:22:20,915 --> 02:22:25,915
+İ ve J diye iki tane short yani iki barklık sayı tanımladık.
+
+629
+02:22:25,915 --> 02:22:29,915
+Ve bir de bunları gösterebilecek bir pointer tanımladık.
+
+630
+02:22:29,915 --> 02:22:33,915
+Bellekteki temiz durum şu ilk tabloda yer alıyor.
+
+631
+02:22:33,915 --> 02:22:37,915
+I 1200 adresinden itibaren iki barklık yağ tutacak.
+
+632
+02:22:37,915 --> 02:22:40,915
+J 1202 adresinden itibaren iki barklık yağ tutacak.
+
+633
+02:22:40,915 --> 02:22:46,915
+P ise 1024 adresinde iki barklık yağ tutacak.
+
+634
+02:22:49,652 --> 02:22:56,312
+Birinci, ikinci ve üçüncü komutları yürüttükten sonra i değişkeninin değeri 123 atılır.
+
+635
+02:22:56,312 --> 02:23:01,852
+İ değişkeninin simgelediği bellek adresine 123 değeri yazılacak.
+
+636
+02:23:01,852 --> 02:23:14,912
+Sonra j 321 dediğim için j değişkeninin simgelediği bellek adresine 321 değeri atılacak.
+
+637
+02:23:16,371 --> 02:23:34,291
+P'ye eşittir. Ent, i dediğim için P bir işaretçi 1204 nolun gözdeki bellek alınmına ayrılmış. Ent, i dediğim için i değişkeninin bellek saklandığı bellek adresi 1200 olduğunda P'nin gösterdiği
+
+638
+02:23:36,180 --> 02:24:00,400
+Yer 1200 olacak. Yani P işaretçisinin bellekte saklandığı 1204 numaralı göz denk geldi. O gözün içerisinde 1200 yazacak. İyi değişkinliğin simgelediği bellek adresinin değeri yer alıyor olacak. Bu ikisinin aynı rakam olduğunu vurgulamak için isterseniz şunu bir koyu, şunu da bir koyu yapayım.
+
+639
+02:24:02,760 --> 02:24:03,740
+Bu ikisi aynı değer.
+
+640
+02:24:04,755 --> 02:24:17,475
+1200'den başlamışta tamamen rast geldi. Her çalıştığımızda eşitlik sistemi bu programa başka bir yerlerden belirli kayınacaktır. O da Allah bilir neresi ise neresi boşsa neresi müsaitse olacaktır.
+
+641
+02:24:19,815 --> 02:24:26,595
+Sonra dördüncü komutu yürüttüğümde ne oluyor? C'ye eşittir yıldız P.
+
+642
+02:24:29,492 --> 02:24:32,672
+J'nin değeri daha evvel 321'dir.
+
+643
+02:24:33,412 --> 02:24:38,992
+J işte, Yıldız P dediğim için, J'nin similirde B direkt gözünün içerisine gidilip,
+
+644
+02:24:38,992 --> 02:24:57,051
+P değişkeninin gösterdiği sayı 1200, o yüzden 1200 adresine gidilip, o 1200 adresinde yer alan değerin 123 olduğu görülüp,
+
+645
+02:24:57,172 --> 02:25:14,852
+Y değişkeninin simgelediği bellek alana da yüzdürüm üçü yazılıyor. Yani şu değer ve bu değer aynı. Fakat yine de bunla belleyin farklı gözleri dikkat ederseniz.
+
+646
+02:25:14,852 --> 02:25:22,952
+Y değişkeninin simgelediği bellek gözü farklı bir göz. Y değişkeninin simgelediği bellek gözü farklı bir göz.
+
+647
+02:25:23,507 --> 02:25:36,347
+O bellek gözlerinde aynı içerik yer almakla birlikte aslında bunlar birbirinin yeyek vücut. Bizatihi aynısı değil. Sadece değerle aynı.
+
+648
+02:25:38,407 --> 02:25:47,148
+Sonra, beşinci statement yani i eşit altı eşitir 2, j altı eşitir 3 dediğimizde ise ne oluyor?
+
+649
+02:25:49,843 --> 02:26:13,003
+Simgelediği bellek alanındaki sayının değeri 2 arttırılıyor. Yani 1200 maralı bellek gözündeki değer 123'den 125'e çıkıyor. G'nin değeri 3 arttığında ise G'nin simgelediği bellek gözündeki alan 123'den 126'ya arttırılıyor.
+
+650
+02:26:14,611 --> 02:26:24,111
+Paypoint'ın gösterdiği yerinde hiç değiştirmediğimiz Çin kod içerisinde 1204 nol da bellek gözünün isim gelen satır aynı kalıyor.
+
+651
+02:26:25,931 --> 02:26:27,111
+Alanlar bunlar.
+
+652
+02:26:34,484 --> 02:26:38,283
+Evet. Buraya kadar sorusu olan var.
+
+653
+02:26:46,868 --> 02:26:50,868
+Burada mesela ne yanlış yapabiliriz?
+
+654
+02:26:56,564 --> 02:26:58,564
+Yıldızı silebiliriz.
+
+655
+02:26:58,564 --> 02:27:01,564
+Burada sıyırdık yıldızı silersek ne oluyor?
+
+656
+02:27:01,564 --> 02:27:08,564
+J artık P işaretçisinin gösterdiği bellek gözündeki değer olmuyor da
+
+657
+02:27:11,956 --> 02:27:30,796
+P eşitliği, Ent i dediğim için, i değişkenin simgelediği bellek gözünün sayısal değeri ne ise, ben buradaki örnekte 1200'lerden başka bir şey olacaktım bu. O değer atanmış oluyor sadece. O hali olanı da görelim.
+
+658
+02:27:40,051 --> 02:28:08,051
+Burada bir Type Safety dönüşümü geldi. Caste yapıyorsun şimdi. Bunu bir lütfen düzelt diyor. Ya da ne yaptım ben emin misin diyor. Bu arada şey tabii ki belirlik gözü, tabii şey, yiyeceği short int değil ya. O yüzden yani o sığmadı o alana. Bir belli tam sayı 4 byte ama short 2 byte sığmadı. O yüzden hadi diyelim ki sığ.
+
+659
+02:28:08,051 --> 02:28:10,051
+Şurada inki yapıyoruz.
+
+660
+02:28:21,652 --> 02:28:28,452
+Şimdi de anneyin. Yine de bir D diyor. Yani dikkat et diyor bana. Peki. Yapayım.
+
+661
+02:28:32,371 --> 02:28:33,572
+Bakalım geçelim bu şekilde.
+
+662
+02:28:35,851 --> 02:28:38,371
+Geçti ama ne olacak merak ediyorum.
+
+663
+02:28:42,548 --> 02:28:59,388
+Evet, bakın. İyi değişkeninin için açılan bellek gözünün adresi neymiş? 37.814.028'miş. Böyle oldu.
+
+664
+02:29:04,404 --> 02:29:11,824
+Beklediğin bir şeydi bu. Ve ondan sonra bunun 3 arttırmış da 28-3-31 şeklinde kendini gösteriyor.
+
+665
+02:29:14,004 --> 02:29:21,064
+Devam sonra gel bakalım. Bu kodda bu adres değerini elle değiştirirseniz ne olur?
+
+666
+02:29:21,064 --> 02:29:26,064
+Şimdi eğer şunu demek istiyorsanız, yani mesela...
+
+667
+02:29:28,020 --> 02:29:40,700
+Şunu dedikten sonra, G-Eşitir 3 ya da G-Eşitir 5 gibi herhangi bir rakam atarsak, bunun sadece G'nin simgelediği bellik yüzünün içindeki diğeri değiştirmek söz konusu olacak.
+
+668
+02:29:40,700 --> 02:29:47,979
+Yani ben buraya eğer bir de şöyle bir G-Eşitir 2020 desem,
+
+669
+02:29:49,108 --> 02:29:59,128
+Şu ifade tamamen şey etmiş olacak, overlight edilmiş olacak. Tabii ki belli gözünün içerisinde geri değil diyor. Adres değerine.
+
+670
+02:30:00,000 --> 02:30:21,760
+Değiştirirsek ne olur diye soruyor arkadaşım. Tamam, peki o zaman şöyle yapacağız. O zaman bu yıldız şeylerini değiştirmemiz gerekiyor. Yani mesela tutup da ne diyelim? G'nin gösterdiği adresteki değeri değiştir falan. Peki o zaman şöyle eklemek istiyorum.
+
+671
+02:30:25,203 --> 02:30:30,324
+10 numaralı bellek gözü. Peki, şöyle yapabilir mi herhalde?
+
+672
+02:30:34,227 --> 02:30:48,827
+Mesela jenim değerine rastgele bir sayı atadık ve o değeri diyelim ki P işaretçisine atadığımızda o P işaretçisi artık bellekte hangi sayı atamışsak on numaralı gözü gösteriyor anlamına geliyor.
+
+673
+02:30:48,827 --> 02:30:55,268
+Ama bellekteki on numaralı gözle o anda erişim hakkımız olabilir veya olmayabilir.
+
+674
+02:30:55,860 --> 02:31:07,220
+Bunu bilemem. Çünkü bu açtığım mesela dost konu satırı penceresine belliğin hangi alanından itibaren adres yazılıyor bilmiyorum.
+
+675
+02:31:07,220 --> 02:31:19,220
+Örnek. Mesela 2020 dedim. Ondan sonra...
+
+676
+02:31:19,667 --> 02:31:21,468
+P eşittir.
+
+677
+02:31:22,667 --> 02:31:29,968
+C dersem, 2020 numaralı bellek gözünü artık gösteriyor Ulus.
+
+678
+02:31:29,968 --> 02:31:31,167
+P pointarı.
+
+679
+02:31:40,691 --> 02:32:01,131
+P dersem eğer, hatta pardon P'nin içeriği diyelim. Şimdi J 2020, P de 2020 numaralı bellek gözünü artık gösteriyor oluyor. Ve 2020 numaralı bellek gözünde yer alan değer neyse onu ekrana yazdır anlamında bir printf komutu verdim.
+
+680
+02:32:01,131 --> 02:32:07,591
+Diğer printf'lerini kaldırayım mesela. Bu şekilde bir kayıt edelim.
+
+681
+02:32:08,564 --> 02:32:33,083
+Derdine çalışalım. Ne diyor? Ha, şurada da yine bir cast problemim var diyor. O zaman şey ne diyeyim buraya? Ha, tamam peki. Böyle direkt diyemem. J'nin değerini, yani şöyle devam lazım. Aynı şurada yaptığım gibi şurada şu ampersand işaretini kullanmak gerekiyordu. Onu atladım. Onu atmıyorum.
+
+682
+02:32:33,843 --> 02:32:46,523
+Hatta ben. Ama şurada bir linkliğine hata verdi. Neden? Çünkü şu programdan çıkmamıştım da o yüzden üstüne yazamadı. Tekrar değerliyeyim. Evet bu program ortadan kayboldu. Şimdi girdiğimde.
+
+683
+02:32:49,172 --> 02:33:08,672
+2020, yok bu beklediğim şey değildi. Çünkü and g dediğimde 2020 değerini aldı. Ben şimdi 2020 numaralı bellek gözümde ne var? Onu erişmeye çalışmaya çalışıyorum falan gibi diyorum. O zaman acaba g'nin adresi, dur bakayım.
+
+684
+02:33:13,811 --> 02:33:17,932
+Neyse, bunun işinden çıkamadım arkadaşlar. Kusura bakmayın.
+
+685
+02:33:17,932 --> 02:33:22,471
+Pointül, aritmetiğini ve içeriğini üstünde birlikte de çalışalım.
+
+686
+02:33:22,471 --> 02:33:27,971
+O zaman bazı şeyler tekrar hatırına gelir ve ondan sonra sorularınızı daha doğru yanıtlayabilirim arkadaşlar.
+
+687
+02:33:28,371 --> 02:33:48,252
+O yüzden bunu geçiyorum. Başka soru falan arkadaşım varsa onun sorusu üzerinden devam edelim. Ama öncesinde şu tekrar karşılaştırmaları yapmamız gerekebilir. O yüzden şu kodu tekrar almak istiyorum.
+
+688
+02:33:50,371 --> 02:33:50,971
+Hocam.
+
+689
+02:33:51,492 --> 02:33:51,871
+Buyurun.
+
+690
+02:33:52,595 --> 02:34:05,216
+Zaten şey, bir pointer'ın int ile aynı boyutta olma zorunluluğu yokmuş. Belki de o yüzden bir sayıyı atarken arada kayıp olduğu için onu bir adres gibi kullanamıyor olabilir.
+
+691
+02:34:05,876 --> 02:34:14,056
+Olabilir, olabilir. Baklasınız. Yani verdiği uyarıda bir şey var, hikmet var. Doğru.
+
+692
+02:34:16,995 --> 02:34:19,056
+Ben başka sorusu olan...
+
+693
+02:34:25,236 --> 02:34:34,216
+O zaman, kodun normal haliyle gerçekleşen durumları tabloda gördük ve yazdık.
+
+694
+02:34:34,804 --> 02:34:51,283
+Şimdi hızlıca dizi tanımını hatırlayalım ve dizi tanımının ardından aslında belleğe nasıl yapılandırıldığını ve o yapılan belleğe pointer üzerinden nasıl erişilebilir ve işlem yapılabilir onu görelim.
+
+695
+02:34:51,283 --> 02:34:59,763
+Bütün ayrıntıları da değil, ilk tanıtımını yapalım. Ayrıntıları haftaya göreceğiz artık. Bugün o kadar vaktimizi almadı çünkü.
+
+696
+02:35:01,716 --> 02:35:27,756
+Şimdi biz dizi tanımlarken önce dizide yer alacak değerler hangi türden olacak onu söylüyoruz. Örneğin tam sıra elemanlar içerisinde istiyorsan int diyoruz. Sonra diziye bir isim veriyoruz. Örneğin 50 temperature, günlük sıcaklıklar. Köşeli parantezler dizi simgesidir arkadaşlar. O köşeli parantezler içerisinde tırma aşamasında o dizinin kaç eleman alacağını yazıyoruz. Örneğin 365.
+
+697
+02:35:30,355 --> 02:35:54,536
+Ve ondan sonra şimdi nokta virgülü ile kapatıyoruz. En basit tanımı bu. Bu noktadan sonra istersek dizinin çeşitli elemanlarına, şurada yaptığım override işlemi olmuş olmuş. Diyelim ki dizinin ilk elemanına 38, ikinci elemanına da aslında şöyle bir şey diyelim.
+
+698
+02:35:55,283 --> 02:36:02,943
+Dizinin ilk gözüne, 18-23 olsun. Dersi düştüğü zamanlar, sonbahar gibi zamanlarla yaşıyoruz. Ona yakın sayılar olsunlar.
+
+699
+02:36:04,224 --> 02:36:10,363
+Belliğin ilk gözüne, diyelim ki işte 18, ikinci gözüne de 23 yazdık ve devam ediyoruz.
+
+700
+02:36:11,083 --> 02:36:14,844
+Dizi indisilerinin sıfırdan başlattığını hatırlatalım arkadaşlar.
+
+701
+02:36:15,360 --> 02:36:25,300
+Şimdi bu endisinin en basit tanımlanması. Biz de tıpkı tanımlandıktan sonra artık her gözüne istediğimiz değerleri atayabiliyoruz. Bu en basit tanımı.
+
+702
+02:36:25,940 --> 02:36:35,400
+İstersek tanımladıktan sonra eşittir deyip kılık bahantezler içerisinde, çift eşi içerisinde değerler de yazabiliriz. Şimdi o da geliyordur.
+
+703
+02:36:37,139 --> 02:36:52,239
+Neyse, şu an göre daha ileride gelecek. Çok da pratik olarak kullandığımız bir şey değil. Her iki 365 değeri birden yazmak uzun anlar ya, o da daha az sayı eleman için kullanılır. O shortcut çıkar birazdan ileride bir yerde.
+
+704
+02:36:52,239 --> 02:36:59,239
+Şimdi, mesela int ad kaşırı parçası için de 5 diye bir tanım yaptığımızda ne oluyor?
+
+705
+02:37:01,971 --> 02:37:19,671
+Bellekle diyelim ki bin numaralı gözden itibaren boş yerimiz var. Bu AR dizisinin ilk elemanına bu bin numaralı gözden itibaren yer ayrılmaya başlanıyor. İnt dediğimiz için tam sayı dördar bayıklık alan var.
+
+706
+02:37:20,340 --> 02:37:36,520
+Ve şu sayılarda heksadesim var. Aslında 1000 dediğim 10'luk düzende 1000 değil. 16'luk düzende 1000. O yüzden 1'ler, 16'lar, 32'ler daha büyük bir sayı halinde.
+
+707
+02:37:37,799 --> 02:37:41,760
+Heksadesim var 1000 numaralı gözünde yer almış olsun.
+
+708
+02:37:47,216 --> 02:38:00,615
+Daha sonra AR0-15 dediğimde bu dizinin 0. indisliği yani aslında ilk elemanına gösterdiği integer adresine 15 sayısı yazılmış oluyor.
+
+709
+02:38:00,615 --> 02:38:13,015
+AR1-17 dediğimde bu AR1 bir sonraki eleman 4 byte gidiyordu. Dizinin başlangıç adresi hexadecimal.
+
+710
+02:38:13,683 --> 02:38:29,863
+O yüzden hexadecimal 1004 adresinde de 17 değeri atanıyor. Sonra ar köşe parantez işleği 3 eşitir. Ar 06 ar 1 dediğimde ar 3 numaralı göze gidilecek.
+
+711
+02:38:34,579 --> 02:38:35,880
+Pardon, özür dilerim. Kapatamadım.
+
+712
+02:38:36,959 --> 02:38:37,619
+Kapatmıyorum.
+
+713
+02:38:40,060 --> 02:38:51,840
+AR-3 eşitir. AR-0-6-AR-1 dediğimde dizinin 3 numaraların gözüne indisinin gösterdiği aslında 4. adres gidilecek. O da hexadecimal bince.
+
+714
+02:38:53,500 --> 02:38:58,880
+Oraya dizinin 0. ve 1. indislerindeki yer alan değerlerin toplamı yazılacak.
+
+715
+02:38:59,247 --> 02:39:22,247
+15-17 daha 32 yazılacak. Bu arada da AR2'ye ne oldu derseniz, şu an AR2 tanımsız. AR4 gözü de tanımsız bu kodun ardında. Bunlar tanımlı değil. Peki ne olacak buralarda? İki olasılık olabilir. Birincisi, eğer derleyici...
+
+716
+02:39:22,324 --> 02:39:50,324
+Ya daha doğrusu bu çalışan koda işletim sistemi belleği vermeden önce sıfırlıyorsa, o belleği sıfır işleri yer alacak. Ama bunu her işletim sistemi ve her versiyonu bunu böyle yapmaz. Genelde direkt bir adresi veriverir. O yüzden o bellek gözlerinde daha önceki başka programların bıraktığı çeşitli sayısal.
+
+717
+02:39:50,324 --> 02:40:09,524
+O yüzden rastgele gibi diyebiliriz. Bize rastgele gelecek. Ama aslında açıklaması o belli kalanları daha önce hangi vlogda var, ne için, ne amaçla kullanıldıysa, onlar o gözlere nasıl darlandıysa karşımıza çıkacak şey de o olacaktır. Hadi yazalım.
+
+718
+02:40:16,755 --> 02:40:25,295
+Bu arada o az önce bahsettiğim tanınan ve değer atama ikisi bizden olan satırda bir sonraki yansı da gelecek bu arada.
+
+719
+02:40:29,811 --> 02:40:34,531
+Evet, bu arada şu Gönlendirmeyi yapalım lütfen.
+
+720
+02:40:38,324 --> 02:40:44,324
+Ondan sonra diyelim ki, Döngü değişikliğini tanımlayalım.
+
+721
+02:40:44,324 --> 02:40:58,324
+İ diyelim. Ondan sonra işte 4 diyelim. İ eşit sıfırdan başlı. İ küçüktür. Ha bu arada 2 ve 4 tanımsız. İ küçüktür 5 diyelim.
+
+722
+02:41:05,012 --> 02:41:18,012
+%d, bir tane de boşluk korsun. Bir gün a, e, i yaz. Ondan sonra başka da bir şey yok.
+
+723
+02:41:18,012 --> 02:41:30,012
+Bu arada şu bakmadığım için hala. Tekrar verleyelim. Evet.
+
+724
+02:41:33,108 --> 02:41:49,227
+Bakın. 15, 17, 32 değerleri doğru. Diğer gözlerde ise işte o bellek alanlarında ne var idiyse, benim bu programın çalışmasından önce o değerler gözüküyor oldu. Bir daha çalıştırayım.
+
+725
+02:41:50,835 --> 02:42:05,755
+Aynı şey geldi. Ama ben şu komut satırı penceresini kapatıp tekrar çalışırsam veya başka bir tane komut satırı penceresi açarsam o başka bir bellek uzayından bana alan getirecektir.
+
+726
+02:42:05,755 --> 02:42:15,435
+Mesela onu da benzer şekilde böyle de dash dsqp4 slash koda geçelim.
+
+727
+02:42:15,924 --> 02:42:23,424
+ve Project 1Exil çalıştıralım.
+
+728
+02:42:23,424 --> 02:42:28,424
+Hadi ama aynı değerler geldi. İlginç.
+
+729
+02:42:28,424 --> 02:42:31,424
+Peki.
+
+730
+02:42:37,043 --> 02:42:41,043
+Peki, acaba bir değerlendisinden şundan çalıştık.
+
+731
+02:42:46,004 --> 02:43:00,004
+Aynı değerler atanıyor. Peki. Demek ki bu anlaşık kullandırdığı ortak bir belli kalın var. Oradan kullandı diyor. Evet. İyi günç. Peki abi. Ben aynı olacağını düşünmüştüm. Bunları ortak alan atıyormuş.
+
+732
+02:43:01,484 --> 02:43:01,963
+Öyle olsun.
+
+733
+02:43:03,904 --> 02:43:04,144
+Evet.
+
+734
+02:43:04,144 --> 02:43:06,704
+Ha şey taba.
+
+735
+02:43:07,924 --> 02:43:10,364
+Fahli hareketi azıcık kalmıştı. O yüzden. Peki.
+
+736
+02:43:11,304 --> 02:43:11,544
+Evet.
+
+737
+02:43:15,188 --> 02:43:23,328
+Ama işin özü kullanmadığımız, yani içine değer atamadığımız bellek gözlerinde ne vardıysa o geldi.
+
+738
+02:43:27,540 --> 02:43:34,540
+Onun dışında bir kısa yollama demiştim. Dizileri tanımlarken değer atamak için. Mesela...
+
+739
+02:43:36,435 --> 02:43:56,435
+Gerçi şurada şöyle, şimdi A-R-5 dedim. Ondan sonra B-R-5'i de hem tanımladım hem de 1, 2, 3,5, 4,5'i de değerler atıyorum. Gerçi burada şöyle bir problem var. Buradaki 3,5 ondalıklı sayı. Ondalıklı sayı olduğu için aslında bu 3,5 kırpılarak...
+
+740
+02:43:56,819 --> 02:44:06,420
+Çünkü bu dizinin türü int olduğundan onları sayının onları kısım tamamen uçurulacak bir yuvarlama yok. Sadece kesip atılıyor.
+
+741
+02:44:06,420 --> 02:44:19,220
+1, 2, 3, 4 ve 5 değerlerinin yer aldığı bir diziyi hem tanımlamış hem de dizinin elemanlarına ilk değerler atamış oluyoruz. Tek bir komut satırı ile.
+
+742
+02:44:19,476 --> 02:44:39,576
+Peki, diyelim ki ben buna 5 elemanlık dedim ama sadece 3 eleman atadım. Ne olacak? Diğer 2 elemanın değeri az önceki örnekte olduğu gibi tanımlanmamış olacak. O anda o belleğin o gözlerinde ne yer alıyorsa, ne içerik yer alıyorsa o değere sahip olacak. AR3 ve AR4 elemanları.
+
+743
+02:44:43,636 --> 02:44:54,655
+Şey diyor ama ondan çok emin değilim. Yani daha az eleman koyarsan onların değeri sıfır kalır diyor ama emin değilim. Ona bir bakalım.
+
+744
+02:45:02,739 --> 02:45:03,420
+Bir iki.
+
+745
+02:45:08,420 --> 02:45:10,939
+Eşit tır, aç kalık parantez.
+
+746
+02:45:11,680 --> 02:45:13,319
+Bir iki üç dedim.
+
+747
+02:45:14,399 --> 02:45:15,739
+Zaten bir iki üç olmasın da.
+
+748
+02:45:18,560 --> 02:45:20,299
+Üç altı dokuz olsun.
+
+749
+02:45:21,819 --> 02:45:23,739
+Ondan sonra aşağıma.
+
+750
+02:45:24,880 --> 02:45:25,180
+Peki.
+
+751
+02:45:27,819 --> 02:45:29,380
+Şöyle yaptığımda.
+
+752
+02:45:30,644 --> 02:45:32,443
+Bakalım nasıl geçecek.
+
+753
+02:45:35,083 --> 02:45:37,384
+Aa sıfırlıyormuş gerçekten. Tamam peki, iyi.
+
+754
+02:45:46,291 --> 02:46:03,412
+O zaman nihayetinde şuradaki tanımlama biçiminden bağımsız olarak değerlerle birlikte diziyi tanımladığında boş bıraktığım yerler olursa sondan boş bırakabiliyoruz.
+
+755
+02:46:03,412 --> 02:46:12,031
+Boştan boş bırakmak gibi bir seçmenimiz yok. Sondan itibaren birkaç değeri boş bırakabiliyoruz. Onları sıfıra değer atıyormuş.
+
+756
+02:46:17,332 --> 02:46:43,632
+Peki, bu arada siz eğer şöyle diyelim ki değerleri yazaraktan tanım yapıyorsanız, örneğin şu örnekte köşeli parantez içerisinde 5 yazmak zorunda değilsiniz. O diziye bakıyor. Blog içerisinde, liste içerisinde 5 eleman olduğu için 5 elemanlık açıyor. Ama bu durumda şu C dizisini tanımlarken bundaki köşeli parantez 5'i yazmazsanız burada 3 eleman tanımladığınız için 3 elemanlık yer açıyor.
+
+757
+02:46:45,332 --> 02:46:54,391
+Şimdi 5 yazarsanız o zaman da ilk 3, 25 elemanlık değer açıyor. İlk 3 elemana değerini atıyor. Diğer eleman da 0 olarak.
+
+758
+02:46:54,847 --> 02:47:18,927
+Ama her halükarda köşeli parantez yazmanız lazım. İçindeki rakamı yazmak zorunda değiliz. Ama köşeli parantez şart. Şurada en sonunda D, E, E, E, E örneğinde görüyorsunuz. Çünkü bunun biz dizi olduğunu anlatan, değerli içeri anlatan ifadeler şey o köşeli parantezde artık onu atamıyoruz. Sadece şu şekilde gösterimde değer atayarak tanınmada sayıyı da yazmak zorunda değiliz.
+
+759
+02:47:18,927 --> 02:47:21,147
+Onu demek istiyorum.
+
+760
+02:47:23,924 --> 02:47:46,864
+Şimdi bu bu yakından normal yaptığımız dizi işlemleriydi. Acaba bir pointer kullanarak dizi elemanları içerisinde nasıl dolaşırız? Onu bir şimdi görelim. En azından o hakkımızda olsun. Ondan sonra haftaya şu iki yazsıyı tekrarlayarak başlar ve ardından daha tanışık pointer örneğimize girebiliriz.
+
+761
+02:47:57,268 --> 02:47:59,020
+Şimdi...
+
+762
+02:48:02,355 --> 02:48:23,615
+Bakın, şimdi bir dizi tanımladık. Short denklisi ile içilecek. Adı A-R. Dört elemanlık. O dizi short türünden elemanla işaretiğinden, pointerın türü de short olan bir P adlı, yıldız olduğundan da pointer anlamıyoruz, bir işaretçi tanımlayabiliriz. Mesela.
+
+763
+02:48:24,308 --> 02:48:38,768
+Ondan sonra mesela p'ye eşittim. Ampersand ar ve köşe parçası içinde sıfır dediğimde böyle bir komutun bana yapacağı şey git ar dizisinin sıfırıncı indisi.
+
+764
+02:48:38,768 --> 02:48:46,768
+Yani ilk elemanının adresine bak ve o adresi...
+
+765
+02:48:47,087 --> 02:49:14,667
+Adresine bakma, ampersand adresi ifade ediyor. Ve o değeri P işaretçisine yaz. Artık bundan sonra P pointer'ı bana o dizinin ilk elemanını gösteriyor olacak. Başka bir deyişi aslında o dizinin başlangıç noktasını gösteriyor olmuş olacak. Bu nedenle şu ifade yerine P eşittir ampersand ar'e sıfır. P eşittir ar'e de diyebiliriz.
+
+766
+02:49:15,283 --> 02:49:34,263
+Bu bir kısaltma. Yukarıdaki ifadeyle aşağıdaki ifade tamamen aynı. Daha sonra diyelim ki P'nin dizinin 3. indisli elemanını göstermesini istiyorsak, şuradaki alttaki bir ifade kullanıyoruz.
+
+767
+02:49:34,804 --> 02:49:48,543
+Önce parantez içinde p'nin içerisine 3 ekliyoruz. Çünkü p neydi? p o a adresinin sıfırıncı elemanının, ilk elemanının gösterdiği bellek adresiydi.
+
+768
+02:49:48,543 --> 02:50:01,603
+O bellek adresine 3 ekliyorum. Ama dikkat ederseniz püf nokta şu, bu eklediğim 3 aslında sayısal olarak 3 değil.
+
+769
+02:50:02,868 --> 02:50:26,648
+P short ya, 3 tane shortluk kadar byte ekliyor aslında burada gizli olarak. Kafa karıştırıcı nokta bu. Çünkü diyorum ki şu ifade, Yıldız ondan sonra Pantilçil'de P-Altı Üç, tamamen AVD'sin 3. elemanı ile aynı ifadedir.
+
+770
+02:50:27,924 --> 02:50:45,924
+Ar-A0'ın bellek adresi, bir önceki yanısı da vardı galiba. Yok, şuradaki yanısı da var. Ar-A0'ın bellek adresi hexadecimal bin. Ar-A1'in bellek adresi hexadecimal.
+
+771
+02:50:54,495 --> 02:50:56,715
+Bu nedenle...
+
+772
+02:51:00,051 --> 02:51:24,131
+Şuradaki ar-3 aslında short dediğim için 2şer byte'den 3şer 2, 6. Ar dizisinin gösterenleri ya da P'nin işaret ettiği başlangıç noktasından 3 birim aslında yani 6 byte. Birim dediğim şey de bu dizinin elemanlarının türü, bunun kapladığı alan.
+
+773
+02:51:26,004 --> 02:51:33,004
+Yani şu ifadeyle arkadaşlar, günün sonunda, Yıldız işte P artı 3 parantez içinde eşittir.
+
+774
+02:51:33,344 --> 02:51:39,564
+A'y'ye köşeli parantez içinde 3 ile aynı kapıya çıkıyor. Aynı sonucu veriyor.
+
+775
+02:51:40,444 --> 02:51:43,844
+Temel kullanım mantığı bu. Üst noktasını da hatırlatıyorum.
+
+776
+02:51:43,844 --> 02:51:50,844
+Aslında buradaki 3, 3 byte değil. Dizinin türü ve dolayısıyla pointer'ın türü neyse,
+
+777
+02:51:52,275 --> 02:51:57,756
+O tür kaç bytes ise o byte çarpı 3 aslında.
+
+778
+02:51:57,756 --> 02:52:02,956
+Ne gibi ifadeler kullanabiliyoruz? Şimdi son sütunda da onlar var.
+
+779
+02:52:02,956 --> 02:52:09,436
+Diyelim ki bu sefer float türünden 5 aralığa arya diye bir dizi tanımlamışım. Bir de paypoint var.
+
+780
+02:52:09,436 --> 02:52:12,235
+Şimdi nasıl atamalar yapabilirim?
+
+781
+02:52:12,435 --> 02:52:24,175
+P eşittir ar diyebilirim. Bu yapılabilir. Derme hatası vermez. Artık pointer ar dizisinin başlangıcını gösteriyor. Veya bir başka değişiklikle ilk elemanını gösteriyor.
+
+782
+02:52:33,556 --> 02:52:58,736
+Dizi artık git, sen bellekte P'nin gösterdiği yere git gibisinden işlemler yapamam. Çünkü ben ALE dizisinin bellekte bir yer olarak tanımladım. Gidip o bellekteki o beş elemanlık bloğun yerini sadece dizinin başlangıç noktasını değiştiriyorum ben kardeşim. Böylece taşıyorum diyemiyoruz.
+
+783
+02:52:59,443 --> 02:53:10,443
+Eğer taşımamız gerekiyorsa, taşıyacağımız yeri gösteren başka bir point açıp, o adresden itibaren elemanları sırayla kopyalama yapmamız gerekiyor.
+
+784
+02:53:10,443 --> 02:53:16,907
+O yüzden şu ilk kırmızı yani a, r, p şeklindeki bir atama mümkün değil.
+
+785
+02:53:20,244 --> 02:53:34,024
+Bir pointer'ın adresine bir dizi atayamayız. Bu da anlamsız oluyor. Nihayet ne pointer'ın adresi gösterdiği tür olan shortlar?
+
+786
+02:53:36,659 --> 02:53:51,239
+Bu durumda P'nin adresi, P pointer'ının saklanması için, tutulması için belekte ayrılan gözün adresi neyse onu simgelemiş oluyor. Oraya git dizi yaz.
+
+787
+02:53:51,631 --> 02:54:10,952
+Diyemeyiz. Mümkün değil. Bu elmayla armut gibi. Çünkü şu nihayet ne olursa olsun bu P bir birim eleman ama AR'ye beş birim eleman yani. Benzer şifre de AR eşittir P'de diyemem. AR'ye beş birim eleman, P bir birim eleman yani olmuyor mantıksız.
+
+788
+02:54:12,211 --> 02:54:23,591
+Ar artı artı gibi bir şey söyleyemem. Yani bu bir dizi nihayetinde. Dizide ancak köşeli parantez referansı ile erişebiliyoruz.
+
+789
+02:54:25,171 --> 02:54:34,871
+Fakat mesela şöyle bir şey yapabiliriz. Ar bir eşitti. Yıldız parantez içinde P artı üç. Şu anlama geliyor.
+
+790
+02:54:39,156 --> 02:54:53,656
+Bellek adresi neresiyse oradan 3 birim ilerle. Float 8 byte ile gösteriliyorsa 3 x 8 24 byte ilerlemiş oluyor aslında.
+
+791
+02:54:55,056 --> 02:55:03,636
+Ve ki o da aslında şu ifade ar köşeli parantez içinde 3'e denk geliyordu. Hatırlatalım.
+
+792
+02:55:04,435 --> 02:55:16,235
+Şu atamayı verdiğimden, phtr ar atamasını yukarıda yaptığımda, yapmasaydım o anda pn'yi gösteriyorduysa, ondan 8 byte sonrası olacaktı. O da bilemeyeceğimiz askeri bir değer olacaktı.
+
+793
+02:55:16,235 --> 02:55:23,635
+Ama madem şu en yukarıda phtr ar atamasını yaptık, artık p pointer'ı dizinin başlangıcını gösteriyor, ilk kelamını gösteriyor.
+
+794
+02:55:23,695 --> 02:55:51,155
+O zaman P63 ifadesi de parantez içerisinde başına yıldız koyduğumuzda, bu arya dizisinin 3 indisli elemanı, yani aslında 4. elemanı olmuş oluyor. Şuradaki arya köşe parantezinin 3 ile aynı ifade olmuş oluyor. Bu denemek oluyor ki dizinin bir indisli gözünün içerisinde, 3 indisli gözünün içerisindeki değeri yaz anlamına geliyor. O şekilde.
+
+795
+02:55:51,695 --> 02:56:17,115
+P6 artı dediğimiz ise, eşit P6 bir demek hatırlarsınız. Ve aslında bu gerçekten bir değil. P'nin türü float olduğu için float da 8 byte ile simgeliniyorsa. P'nin gösterdiği adresten 8 byte sonraki adresi artık gösteriyor olacak P'nin kendisi.
+
+796
+02:56:17,811 --> 02:56:24,971
+Bu da bir başka deyişle, P o an dizinin hangi elemanını gösteriyorsa artık bir sonraki elemanını göstermeye başlamış olacak.
+
+797
+02:56:26,652 --> 02:56:42,811
+Yani P dizinin şu P'şıdır aile ifadesi nedeniyle dizinin sıfır indisli elemanını gösteriyor iken, P66 dediğimde artık dizinin bir indisli elemanını gösteriyor olacak.
+
+798
+02:56:44,500 --> 02:56:56,079
+Bu legal olarak gösterdiğimiz, yazdığımız ifadeler aslında pointer aritmetiğine bir giriş ifadesi de taşımış oluyorlar.
+
+799
+02:57:00,084 --> 02:57:23,724
+Yıldız P artı İ gibi bir ifade kullanabilir miyiz? Tabii ki elbette. Elbette kullanabilirsiniz. Yalnız şuna iliket etmek lazım tabii ki. Diyelim ki şu atama komutumu yaptık. P eşittir ar. Peki. Ve benim dizim 5 elem aldı.
+
+800
+02:57:24,435 --> 02:57:37,655
+Eğer şöyle bir ifade verdiğimizde, arkadaşlarım dediğim gibi, işte P, hani yıldızı unutmayalım, yıldız, P artı İ gibi bir ifade verdiğimde,
+
+801
+02:57:51,316 --> 02:57:54,316
+Bir de şu P artı artıyı vermediğimizi diyoruz.
+
+802
+02:57:54,316 --> 02:58:10,316
+If e is too large, we will drop off the array diyebilirim.
+
+803
+02:58:10,316 --> 02:58:14,188
+Yani eğer i eşittir 10 ise örnekte.
+
+804
+02:58:14,708 --> 02:58:25,988
+Şu komutu verdikten sonra P dizinin bir indisli elemanını gösteriyorken, artık dizinin 11 indisli elemanını göstermeye başlıyor olacak.
+
+805
+02:58:25,988 --> 02:58:32,708
+O artık dizinin sınırlarının dışarısında. Orada bellekte ne yazıyor bilemem.
+
+806
+02:58:33,492 --> 02:58:39,752
+O değeri sanki dizinin elemanıymış gibi işlemeye çalıştığımızda da soldan hata verecektir.
+
+807
+02:58:39,752 --> 02:58:42,432
+Yani algoritmamız düzgün sonuç vermeyecektir.
+
+808
+02:58:42,811 --> 02:58:54,752
+Onu parantez içinde söylemekle birlikte elbette yazısı P artı İ şeklinde İ normal bir değişken olmak şartıyla, pointer olmamak şartıyla böyle bir ifade çok rahatlıkla kullanırız.
+
+809
+02:58:55,471 --> 02:58:56,131
+Yani yanıt.
+
+810
+02:59:01,492 --> 02:59:14,492
+Başka sorusu olan varsa buyursun. Çünkü bundan sonra çeşitli sıralama algı etmelerini pointerla falan kullanarak yapacağız. Sizler de yapacağız. Onların kodları yansılardaya...
+
+811
+02:59:15,507 --> 02:59:34,727
+Almıyordu diye hatırlıyorum. Bubble Sortu, Selection Sortu zaten zor bir şey değil. Evvelki derslerinizden de hatırlıyorsunuz. Ama bu sefer pointer ver üstümden. Yapar geçeriz. Önümüzdeki hafta. Bu hafta için sorusu olan arkadaşım varsa lütfen grubusun başka.
+
+812
+02:59:55,316 --> 02:59:58,176
+Peki, soru yoksa o zaman arkadaşlar, bugünlük bu kadar.
+
+813
+02:59:58,176 --> 03:00:00,000
+Dinlediğiniz için.
+
+814
+03:00:00,000 --> 03:00:07,479
+Teşekkür ederim. Haftaya bu pointer şeylerini bir hatırlayacağız. Kısaca ondan sonra örnekleriyle bileceğiz.
+
+815
+03:00:08,159 --> 03:00:16,420
+Labutuari ile ilgili henüz bize gelebildiğimde bulunamadı asistan arkadaşlar. Bu nedenle bugün labımız yok.
+
+816
+03:00:16,420 --> 03:00:26,599
+Haftaya olacaksa eğer o zaman onu hafta içerisinde mesela şarşamba, perşembe vereceğimiz ilanlar olabilir. Şu an için bilginiz yok.
+
+817
+03:00:28,000 --> 03:00:33,500
+Onun için de düşünebilirsiniz. Bir kere bu hafta zaten yok. Bu akşam yok. Haftaya olabiliriz.
+
+818
+03:00:36,439 --> 03:00:45,319
+Peki. Evet arkadaşlarım teşekkür ediyorlar. Ben de sizlere, hepinize teşekkür ediyorum. Haftaya kaldığınız yerden devam. Sağlıkla kalın, sağlıcakla kalın arkadaşlar.
+
+819
+03:00:53,139 --> 03:00:54,139
+Tebrik.

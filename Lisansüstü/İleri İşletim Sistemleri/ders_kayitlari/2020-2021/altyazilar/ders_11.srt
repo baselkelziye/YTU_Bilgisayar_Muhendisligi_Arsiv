@@ -1,0 +1,1771 @@
+1
+00:00:46,579 --> 00:00:48,039
+Sesim geliyor mu arkadaşlar?
+
+2
+00:00:50,500 --> 00:00:51,299
+Evet hocam.
+
+3
+00:00:52,199 --> 00:00:58,679
+Tamam, şimdi öncelikle [öğrenci] ve [öğrenci], siz bana dün akşam yazdınız.
+
+4
+00:00:59,920 --> 00:01:08,579
+Evet, evet. Tamam, yani herhalde o saatte kontrol etme şansım yoktu. Benzer bir saatte yazmışsınız.
+
+5
+00:01:09,087 --> 00:01:37,087
+Yükleyemedik, edemedik diye mail üzerinden ama bu defaya yönelik kontrol ettirmeyeceğim bilgi işlemden herhangi bir şey yapmayacağım. Fakat lütfen sonrasında daha önceden kontrol edin. Çünkü sistemde sorunlar olabiliyor. Bu tarz teknik şeyler yaşanabiliyor. Ondan ötürü şimdilik bu ikinizin mail ile gönderdiğinizi okey ama...
+
+6
+00:01:37,087 --> 00:01:39,887
+Sonrasında lütfen sistemden gönderin. Tamam mı?
+
+7
+00:01:40,447 --> 00:01:43,647
+I'm very sorry Hucam. It's the first time happened with me.
+
+8
+00:01:43,707 --> 00:01:51,487
+Okay, okay. I understand. But I know there can be such problems.
+
+9
+00:01:51,487 --> 00:01:57,627
+But do not leave your submission to the last minute. That's what I am saying. Okay?
+
+10
+00:01:58,367 --> 00:02:00,388
+Okay, Professor. I'm sorry again.
+
+11
+00:02:00,967 --> 00:02:03,127
+No, no, no. Don't be sorry. Okay.
+
+12
+00:02:03,924 --> 00:02:08,624
+It can be happen to any of us.
+
+13
+00:02:08,624 --> 00:02:16,624
+Okay. Now, bugün teslim edilecek olan...
+
+14
+00:02:17,171 --> 00:02:41,812
+Üzerinden bir ilerleyelim bakalım. Herhalde bilgi açısından sıcak keşinizde yer alan onlardır diye tahmin ediyorum. Neydi? 23, 24, 25, 26. Şimdi yine her zamanki gibi soruya yönelik cevap vermeye özen gösterin lütfen.
+
+15
+00:02:45,427 --> 00:02:52,768
+Bana el kaldırarak konuşuyoruz yine, onu da unutmayalım lütfen. Race Hand yapıyorsunuz.
+
+16
+00:02:53,427 --> 00:03:07,567
+IOLIGHT da niye bu Light olarak geçiyor? Hafifliği nereden geliyor? Yani çok temel bir sebebi var bunun. Neden ötürü? Onu bana söyleyebilecek olan var mı?
+
+17
+00:03:13,204 --> 00:03:26,403
+[öğrenci]. Selamlar hocam. Gördüğüm kadarıyla buffer ve cache tekrarından kaçınıyor. Böylelikle birden fazla kopyalama işlemi de yapmıyor ve kendini light tutuyor diyebilirim hocam.
+
+18
+00:03:26,403 --> 00:03:31,403
+Tamam, peki ama bak çok böyle anahtar bir şey var.
+
+19
+00:03:33,683 --> 00:03:44,424
+Hemen biliyorsan, o aklına geliyorsa söyleyebilirsin [öğrenci]. Yoksa yine el kaldırarak başka arkadaşlar da. O kadar anahtar bir şey var ki, bufferların yapısıyla alakalı böyle çok net.
+
+20
+00:03:47,424 --> 00:03:48,723
+Ben de yok hocam şu an.
+
+21
+00:03:49,644 --> 00:03:53,484
+Tamam, tamam olabilir. Ama dediklerim doğruydu yani, okey.
+
+22
+00:04:04,180 --> 00:04:06,180
+Var mı başka cevap verecek olan?
+
+23
+00:04:10,740 --> 00:04:13,900
+Daha dersin başındayız. Enerjinizin yüksek olması lazım.
+
+24
+00:04:18,259 --> 00:04:30,740
+İlginç sayınız da az. 24 kişisiniz eyvahy. Ödev teslim edenler de zaten neredeyse bu seviyede. En son baktım. Inmutable Buffer diyor. Inmutable ne demek?
+
+25
+00:04:35,636 --> 00:04:36,636
+Evet [öğrenci].
+
+26
+00:04:37,096 --> 00:04:42,196
+Hocam read-only olmasından bahsediyordu. Immutable değiştirilemez anlamında kullanılıyor.
+
+27
+00:04:42,756 --> 00:04:47,756
+Şimdi o zaman demek ki buffer yapısı nasıl?
+
+28
+00:04:49,616 --> 00:04:50,136
+Read-only.
+
+29
+00:04:50,136 --> 00:04:52,848
+Read-only yani içeriği bir kez...
+
+30
+00:04:52,848 --> 00:05:01,567
+Belirlendikten sonra, ilk veri o buffer'a yüklendikten sonra bir daha ne oluyor? Değiştirilmiyor.
+
+31
+00:05:01,567 --> 00:05:04,348
+Location değişmiyor olarak bulanmışım bir de hocam.
+
+32
+00:05:05,187 --> 00:05:12,567
+Tamam, güzel. Peki içeriğinin değiştirilemiyor olması hangi...
+
+33
+00:05:13,716 --> 00:05:20,636
+Zorlukları ortadan kaldırıyor veya hangi problemlerle uğraşmayı ortadan kaldırıyor? Bana onu söyleyebilir misiniz?
+
+34
+00:05:30,644 --> 00:05:31,264
+[öğrenci].
+
+35
+00:05:34,204 --> 00:05:37,204
+Çok fazla yankı var [öğrenci] sende.
+
+36
+00:05:38,163 --> 00:05:39,444
+Şimdi tamam mı?
+
+37
+00:05:39,944 --> 00:05:41,144
+Şu an düzgün, evet.
+
+38
+00:05:42,144 --> 00:05:49,024
+Hocam, biz output aldık.
+
+39
+00:05:49,375 --> 00:05:52,655
+ve web application da
+
+40
+00:05:52,655 --> 00:05:55,455
+ombud ve output aldız
+
+41
+00:05:55,455 --> 00:05:57,815
+bu hale
+
+42
+00:06:00,531 --> 00:06:19,451
+İlginç İngilizce, bir problem.
+
+43
+00:06:19,451 --> 00:06:24,451
+İlginç İngilizce, bir soru ve çok simple.
+
+44
+00:06:26,995 --> 00:06:33,995
+Eğer bu sorunlarla
+
+45
+00:06:33,995 --> 00:06:36,995
+ne sorunlar?
+
+46
+00:06:36,995 --> 00:06:38,995
+[öğrenci]?
+
+47
+00:06:38,995 --> 00:06:41,995
+Merhaba hocam.
+
+48
+00:06:41,995 --> 00:06:45,995
+İngilizce ben söylerim bunu.
+
+49
+00:06:51,315 --> 00:07:07,075
+İmmutable buffers can solve problems like synchronization, protection, consistency, and fault isolation among OS subsystems and applications.
+
+50
+00:07:07,075 --> 00:07:16,075
+Okay, that's the answer. That's the answer. So, related to this question,
+
+51
+00:07:19,956 --> 00:07:30,956
+Operating systems, such as Unix and its derivatives, provide some buffering mechanisms.
+
+52
+00:07:31,956 --> 00:07:42,956
+But the paper says that these buffering mechanisms have some problems, fundamental problems.
+
+53
+00:07:43,956 --> 00:07:46,956
+Which are those problems?
+
+54
+00:07:47,891 --> 00:07:55,992
+İlçin neler. İlçin neler. İlçin neler. İlçin neler. [öğrenci].
+
+55
+00:07:57,132 --> 00:07:59,072
+Merhaba hocam. Merhaba.
+
+56
+00:08:01,351 --> 00:08:15,112
+Iolite'ın çözüm sunduğu problemler redundant data copying, yani gerekli veri kopyalama, multiple buffering, aynı dosyaya birden fazla kez buffer edilmesi, yani tamponla tutulması.
+
+57
+00:08:15,699 --> 00:08:24,719
+Ve lack of cross-subsystem optimization. Yani farklı alt sistemlerin optimizasyonun eksik olması. Bunu hep bizim sunuyor.
+
+58
+00:08:25,479 --> 00:08:35,039
+Süper. Peki, şimdi bir sonraki soruya geçiyorum. Bu multiple buffering neyin sonucunda oluşuyor? Biri bana bir örnek verebilir mi?
+
+59
+00:08:37,539 --> 00:08:38,339
+[öğrenci].
+
+60
+00:08:39,796 --> 00:08:43,796
+Evet hocam, multiple buffering, increased memory.
+
+61
+00:08:44,192 --> 00:09:11,692
+[öğrenci], [öğrenci], I think you misunderstood the question. The question is, can you give some specific example for multiple buffering? That's the question, multiple buffering. Just a concrete example. [öğrenci]?
+
+62
+00:09:12,724 --> 00:09:36,604
+Tekrar merhaba hocam. Örneğin, bir web sunucuda veri tabanı uygulaması, tüm kullanıcılar tarafından ortak kullanılan bir uygulama da olabilir. Bu web sunucuya talep geldiği zaman her kullanıcıya ayrı bir buffer oluşturmak yerine tek bir bufferda bu uygulama tutuluyor veya dosyalar tutularak tekrar tekrar buffer edilmesi önlenmiş oluyor.
+
+63
+00:09:38,548 --> 00:10:03,927
+Okey, doğru cevap. Şimdi devam ediyoruz. Başka bir şey soracağım. Access Control ve Allocation. IO-Lite, Access Control ve Allocation için işletim sisteminde mevcut olan hangi modeli kullanıyor? Hangi model üzerinden gidiyor? Daha doğrusu hangi çözünürlük üzerinden gidiyor?
+
+64
+00:10:13,299 --> 00:10:15,859
+Paper'da yazıyor ya, çok böyle net bir şekilde.
+
+65
+00:10:30,292 --> 00:10:31,412
+Çok mu yöntemler olacak adam?
+
+66
+00:10:46,803 --> 00:11:09,783
+Yani mesela bir buffer hangi seviyede yetkilendirme, akses, kontrol açısından bakıyoruz. Yetkilendirme olarak hangi seviyede bir şeye atanabiliyor? O şeyi söylersem cevabını vermiş olacağım da o yüzden söyleyemiyorum. Şey demek durumunda kalıyorum.
+
+67
+00:11:15,283 --> 00:11:37,283
+Çözünürlük nedir? Yani o bufferın erişim hakları ile etkilendirilmesiyle alakalı, erişim etkilendirilmesiyle alakalı çözüm nedir? Evet, yok mu cevap? Çok basit arkadaşlar, proses seviyesinde. Proses seviyesinde bu iş gerçekleşiyor. Hemen bakın, şeyde yazıyor.
+
+68
+00:11:38,836 --> 00:11:51,676
+Şurada 2.3 Access Control and Allocation. Iolite ensures access control and protection at the granularity of processes.
+
+69
+00:11:52,796 --> 00:12:04,235
+Proses seviyesinde bir çözünürlük. Granularity çözünürlük demek. Bu işin hassasiyeti demek. Peki.
+
+70
+00:12:11,124 --> 00:12:26,244
+Şimdi, şeyi yani yazarlar bir taraftan IO-Light and the File System demiş, diğer taraftan da IO-Light and the Network demiş.
+
+71
+00:12:38,419 --> 00:12:52,899
+Niye ayırmışlar birbirlerinden veya ayırmamışlar mı? Bilemiyorum. Siz söyleyeceksiniz bana. Arada niye böyle iki tane başlık yapmışlar? Neyi farklı farklı incelemişler veya böyle ayırma ihtiyacı duymuşlar?
+
+72
+00:13:20,179 --> 00:13:21,559
+Cevap yok mu arkadaşlar?
+
+73
+00:13:25,844 --> 00:13:44,724
+Ben birilerinize söz vereyim mi? Mesela [öğrenci]. Tam böyle lise moduna döndük. Üniversiteden de şey yaptık. [öğrenci], sensörüyü görüyor musun? [öğrenci] mi kayboluyor? Yok burada, [öğrenci]. Duyuyor musun beni?
+
+74
+00:13:50,707 --> 00:13:51,547
+Allah Allah.
+
+75
+00:13:56,167 --> 00:13:57,747
+[öğrenci].
+
+76
+00:14:01,395 --> 00:14:02,735
+Sesim geliyor değil mi?
+
+77
+00:14:07,443 --> 00:14:09,303
+Evet hocam, geliyor.
+
+78
+00:14:10,063 --> 00:14:13,043
+Tamam. Yunus Emre de duymadı beni.
+
+79
+00:14:13,303 --> 00:14:18,204
+Hocam, pardon. Biz bazılar Türkçe anlamıyoruz.
+
+80
+00:14:18,964 --> 00:14:20,504
+Eğer müsaatseniz.
+
+81
+00:14:22,303 --> 00:14:25,644
+Yani isim söylüyorum. Bunda Türkçe, İngilizce bir şey yok ki.
+
+82
+00:14:26,443 --> 00:14:31,943
+Network'da şey arasındaki fark nedir diye konuşuyorsunuz. İngilizce de şey yapıyorsunuz.
+
+83
+00:14:31,943 --> 00:14:34,364
+O zaman İngilizce şey yaparsınız.
+
+84
+00:14:36,947 --> 00:15:03,827
+[öğrenci], [öğrenci], [öğrenci]. Merhaba hocam. Neyse birinden bir cevap geldi. Allah'a şükür. Harika. Network driverlarının güncellenmesi gerektiğinden söz ediyor. Niçin? Paketlerde değişiklik yapılıyormuş. Network paketlerinin müdahale edilmesi gerekiyormuş. Ama dosya sisteminde aslında bir değişiklik olmuyor diye anladım ben.
+
+85
+00:15:04,500 --> 00:15:30,659
+Şimdi acaba şu olabilir mi? Iolight'ın en önemli özelliği ne? Ekstra kopya oluşturmamaya çalışıyor. Gelen bir veriyi geldiği gibi doğrudan kim kullanacaksa orada kullanılsın diye oluşturuyor. Yani tek bir buffer üzerinden ilerliyor. Bu durumda network ile file sistem arasındaki fark ne?
+
+86
+00:15:38,259 --> 00:15:52,200
+[öğrenci], sen de cevap verebilirsin. Hani el kaldırın diyorum ama kimse kaldırmıyor. En son sen cevap verdiğin için. Cevap vermek istemiyorsan, [öğrenci], senin bir fikrin var mı?
+
+87
+00:15:53,360 --> 00:15:56,200
+Hocam, net bir fikrim yok. Yanıltmak istemem.
+
+88
+00:15:57,120 --> 00:16:01,879
+Peki. Kim var burada? [öğrenci].
+
+89
+00:16:06,803 --> 00:16:09,303
+Hocam, benim de tam bir fikrim yok.
+
+90
+00:16:11,504 --> 00:16:28,463
+Ödevi nasıl verdiniz? Ben onu merak ediyorum arkadaşlar. Zaten onlara baktığım zaman böyle ciddi şok yaşıyorum nasıl oluyor diye. Onları böyle bazen ince ince yazıyorsunuz, ediyorsunuz. Burada şey olmuyor. Peki, [öğrenci].
+
+91
+00:16:31,764 --> 00:16:32,783
+Hocam buradayım da.
+
+92
+00:16:33,483 --> 00:16:38,463
+Buradasın, ona bir şey demiyorum. Sadece fikrini soruyorum konuyla alakalı.
+
+93
+00:16:38,463 --> 00:16:44,963
+Şey, şu an hani baktım ama bir cevap bulamadım. Ondan bir cevap veremeyeceğim şu anda.
+
+94
+00:16:46,043 --> 00:16:47,103
+Anladım. Peki.
+
+95
+00:16:50,203 --> 00:16:58,764
+Arkadaşlar, file sistemde zaten nereden okuduğunuz veya nereye yazacağınız yaptığınız
+
+96
+00:16:59,220 --> 00:17:18,639
+Çağrı sırasında belirli. Değil mi? Ama network'te bir paket geldiği zaman o paketin hangi uygulamaya ait olduğunu nereden çözmek zorundasınız? Mesela TCP IP örneğinden bahsediyorsak port numarasına bakarak.
+
+97
+00:17:18,639 --> 00:17:26,579
+Şimdi o zaman normal network driver'ları nasıl çalışıyor? Gelen paketi hardware buffer'ından alıyor.
+
+98
+00:17:27,039 --> 00:17:43,440
+Lokalde bir işletim sisteminde, kernel'da bir buffer'a yerleştiriyor. Orada inceledikten sonra ilgili uygulamanın kullanımına aktarıyor. Muhtemelen orada bir buffer'lama daha yapıyor. Yani hardware buffer var.
+
+99
+00:17:44,435 --> 00:17:57,135
+Kernel'da software inceleme bufferı var. Ondan sonra bir de uygulamanın bufferı var. Tabii aynı zamanda az önce sorduğum soruyla da alakalı bu. Access Control.
+
+100
+00:17:59,476 --> 00:18:27,416
+Erişim hakkı var mı, yok mu? O uygulama, o network haberleşmesi için yetkilendirilmiş mi? O network haberleşmesinden gelip gidecek veriler için falan falan. O zaman demek ki network driverlarının hem ACR kontrolü yapmak üzere hem de gelen verinin bir ara buffer'a alınmasını engelleyecek, replikasyonu ortadan kaldıracak şekilde.
+
+101
+00:18:27,476 --> 00:18:43,476
+Güncellenmesi gerekiyor. Mümkünse donanım network interface neyse o donanım bufferından veriyi çektiği gibi ilgili uygulamaya aktarsın. Mesele bu.
+
+102
+00:18:53,715 --> 00:19:01,255
+Drivers must determine disinformation. Disinformation'ı bir üstteki paragrafında yazıyor.
+
+103
+00:19:02,015 --> 00:19:10,695
+From the headers of incoming packets using a packet filter, an operation known as early demultiplexing.
+
+104
+00:19:34,291 --> 00:19:38,971
+Hardware seviyesinde yapılacak şeyle, işi hızlandırmak.
+
+105
+00:19:38,971 --> 00:19:40,611
+Bunlar bu.
+
+106
+00:19:40,611 --> 00:19:42,491
+Evet.
+
+107
+00:19:53,683 --> 00:20:02,423
+Peki, immutable buffer kullanıyor olmamızın hiçbir sakıncası yok, hiçbir sorunu yok.
+
+108
+00:20:09,811 --> 00:20:11,711
+Bu soruydu. Cevaplarınızı bekliyorum.
+
+109
+00:20:22,579 --> 00:20:23,819
+[öğrenci].
+
+110
+00:20:28,307 --> 00:20:38,027
+Sabah Talip. Bu sayede isimlerinizi ezberleyeceğim. Zaten bir şey olarak biliyorum. Göz aşinalığı isimleri.
+
+111
+00:20:39,587 --> 00:20:40,628
+[öğrenci].
+
+112
+00:20:44,980 --> 00:20:45,819
+[öğrenci].
+
+113
+00:20:49,099 --> 00:20:52,200
+Hiçbirinize cevap yok mu? Bunlar çok ana başlıklar.
+
+114
+00:21:03,955 --> 00:21:06,835
+Evet. [öğrenci]?
+
+115
+00:21:08,695 --> 00:21:13,215
+Hocam, immutable olduğu zaman read-only, yani sadece okunabilir oluyor.
+
+116
+00:21:13,355 --> 00:21:18,055
+Bir değişiklik yapılması gerektiği zaman bu buffer'ın başka bir yere kopyalanması gerekiyor.
+
+117
+00:21:18,595 --> 00:21:22,435
+Dolayısıyla bu kopyalama bir ek maliyet olarak düşünülebilir.
+
+118
+00:21:24,835 --> 00:21:27,215
+Bu bir dezavantaj olarak söyledim.
+
+119
+00:21:27,235 --> 00:21:30,315
+Bir tane mi? Peki [öğrenci], sen de el kaldırdın.
+
+120
+00:21:32,531 --> 00:21:39,951
+Evet hocam, şimdi tasarımda sabit tampanlar kullanılınca bu başlangıç vermesi değiştirilemiyor.
+
+121
+00:21:40,691 --> 00:21:48,471
+Sağ tokunur oluyor. Sinkronizasyon ve koruma problemleri yok oluyor ama işte bu sağ tokunur.
+
+122
+00:21:48,571 --> 00:21:52,751
+Aynı şeydi yani arkadaşın dediği gibi oluyor. Benim de diyeceğim böyleydi.
+
+123
+00:21:53,551 --> 00:21:57,791
+[öğrenci] ve [öğrenci], ikiniz de paper'ı okudunuz değil mi?
+
+124
+00:22:02,804 --> 00:22:03,504
+Evet hocam.
+
+125
+00:22:04,044 --> 00:22:07,984
+Tamam, süper. O zaman bakın 2.8'e bakalım mı?
+
+126
+00:22:08,104 --> 00:22:10,684
+Impact of immutable IO buffers.
+
+127
+00:22:12,484 --> 00:22:16,984
+Consider the impact of IO lights immutable IO buffers on program operation.
+
+128
+00:22:17,764 --> 00:22:27,024
+If a program wishes to modify a data object stored in a buffer aggregate, it must store the new real use in a newly allocated buffer.
+
+129
+00:22:27,784 --> 00:22:29,504
+There are three cases to consider.
+
+130
+00:22:30,483 --> 00:22:39,783
+Neymiş? First, if every word in the data object is modified. Yani verinin tamamı değişiyorsa, every word.
+
+131
+00:22:39,783 --> 00:22:48,183
+Second, if only a subset of the words in the object change values.
+
+132
+00:22:49,044 --> 00:23:05,624
+Zaten birincisinde tamamı değişiyorsa yeni bir buffer kullanmak zorundasın. Çünkü tamamını değiştirmişsin. Bu neden dolayı... Pardon arkadaşlar, bir saniye. Üniversiteden arıyorlar bir şey.
+
+133
+00:30:57,523 --> 00:31:21,723
+Kusura bakmayın arkadaşlar. Üniversiteden aradıkları için konuşmam gerekiyordu. Evet. Şimdi kaldığımız noktadan devam edecek olursak, third case'de yani birincisi tamamı değişiyor. Bu ne için oluyor? İşte mesela bufferlar encrypted olabilir, üzerinden bir check sum hesaplanıyor veya başka bir şey yapıyor olabilir falan. Böyle bir şey olabilir.
+
+134
+00:31:22,195 --> 00:31:35,695
+Diğeri sadece bir kısmının değişmesi, bir parçasının değişmesi. Burada zaten değişmeyen kısmın aynı tutulup değişen kısımların bir linkli liste, bir chaining mantığıyla bir araya getirilmesi söz konusu olabilir.
+
+135
+00:31:37,975 --> 00:31:46,695
+Diğeri ise değişikliklerin bir bölgede değil de tamamında değil, bir yerde değil ama...
+
+136
+00:31:47,092 --> 00:32:06,952
+Farklı yerlere, çok fazla farklı yerlere dağılmasıyla olabilir. Yani bu durumda günlük hayatta karşılaşabileceğimiz bir şey. Bu üç tane durum var. Bunların performansa, bunların çalışmaya etkisini görmemiz ve çözmemiz gerekiyor.
+
+137
+00:32:07,792 --> 00:32:12,952
+Biriniz chat üzerinden bir şeyler yazmış, pardon. Sesle ilgili sorunum var.
+
+138
+00:32:13,428 --> 00:32:24,728
+Evet, sabah. Şu anda bu benim anlattığım.
+
+139
+00:32:27,059 --> 00:32:43,459
+Ben bir şey merak ediyorum arkadaşlar. Yani aktif olmakta niye çekiniyorsunuz ki? Burada doğru yok, yanlış yok. Karşılıklı konuşuyoruz. Yani şey diye düşünün bunu, fikir alışverişi diye düşünün. Yanlış söyleseniz bile düzeltiriz.
+
+140
+00:32:43,459 --> 00:32:51,259
+Veya belki o sırada ben dikkatimden kaçmıştır, ben yanlış bir şey söylüyorumdur. Siz şey yapıyorsunuzdur.
+
+141
+00:32:52,948 --> 00:32:54,668
+O yüzden lütfen şey yapmayın.
+
+142
+00:32:55,668 --> 00:32:56,668
+Çekinmeyin.
+
+143
+00:32:58,968 --> 00:33:01,928
+Sonrasında bunun bayağı ciddi bir inceleme var.
+
+144
+00:33:01,928 --> 00:33:15,248
+Hani HTTP örneği üzerinden, request miktarı üzerinden, işte White Area'daki etkisi, şeydeki etkisi üzerinden bayağı güzel bir analizi var.
+
+145
+00:33:17,248 --> 00:33:18,168
+Evet.
+
+146
+00:33:20,531 --> 00:33:25,531
+Tamam, bitirelim. Tabii bitirdik sayılmayız ama...
+
+147
+00:33:27,531 --> 00:33:29,227
+Yeriden geçelim.
+
+148
+00:33:46,771 --> 00:33:47,891
+Diğerine geçelim.
+
+149
+00:33:49,311 --> 00:33:49,931
+Locus.
+
+150
+00:33:51,931 --> 00:33:57,851
+Şimdi böyle file sistemine giderken bir distributed operating sistemimiz var.
+
+151
+00:33:57,851 --> 00:33:58,751
+Locus.
+
+152
+00:33:59,751 --> 00:34:00,651
+Evet.
+
+153
+00:34:06,548 --> 00:34:08,887
+Locus ne sağlıyor bize?
+
+154
+00:34:15,443 --> 00:34:18,663
+Kim [öğrenci] mi yakaladı? Evet [öğrenci]. Dinliyorum.
+
+155
+00:34:19,264 --> 00:34:33,623
+Locus birden çok işletim sisteminin ağ üzerinde tek bir işletim sistemiymiş gibi topluca çalışmasını sağlıyor. Locus da bunların arasındaki bağlantıyı sağlıyor diyebilirim.
+
+156
+00:34:33,623 --> 00:34:38,623
+Tamam. Peki, Locus'un öne çıkan...
+
+157
+00:34:38,992 --> 00:34:43,372
+Özellikleri mesela hızlıca baktığımız zaman.
+
+158
+00:34:44,244 --> 00:35:11,003
+Replication, yani kopyalamayı desteklemesi. Burada benim anladığım kopyalamanın üstünde bayağı bir durmuşlar. Çünkü bu dağıtık sistem çok küçük bir yerde değil. Bir ağda olduğu için bayağı uzak mesafedeler. Dolayısıyla bu kopyaların tutulması hem erişilebilirlik açısından, mesela biri fail olduğunda diğerlerini tutması açısından önemli olduğunu söylemişler.
+
+159
+00:35:12,244 --> 00:35:22,204
+Ağda herhangi bir sorun olduğunda ona en yakın olan kopyayı sunabildiği için de performans olarak avantaj sağladığından söz etmişler.
+
+160
+00:35:22,204 --> 00:35:32,284
+Evet, aslında burada dediğin noktada doğrusu en çok yoğunlaşılan kısımlarından biri replication.
+
+161
+00:35:33,144 --> 00:35:38,124
+Hem bu replication'ı nasıl yapmak istiyorlar, bir esnek olsun istiyorlar.
+
+162
+00:35:38,204 --> 00:35:40,204
+Bir de kullanıcı müdahale...
+
+163
+00:35:40,244 --> 00:35:49,364
+Müdadesi olmadan, mümkünse hiç kullanıcı müdahalesi olmadan otomatik gerçekleşsin istiyorlar.
+
+164
+00:35:50,144 --> 00:35:57,584
+Ve hangi seviyede bir replication'dan bahsediyoruz? Onu da söyleyebilir misiniz bana?
+
+165
+00:36:00,084 --> 00:36:01,003
+[öğrenci].
+
+166
+00:36:02,036 --> 00:36:12,376
+Hocam burada iki farklı açıdan bakmıştı diye hatırlıyorum. Hem kullanıcı perspektifinden hem de işletim sistemi perspektifinden replikaların alınması önemli olarak vurgulanmış.
+
+167
+00:36:12,376 --> 00:36:18,376
+Tamam ama Locus replikasyon yaparken...
+
+168
+00:36:19,380 --> 00:36:30,280
+File Sistem bazında mı replikasyon yapıyor? File bazında mı yapıyor? Directory bazında mı yapıyor? Nasıl yapıyor? Yani hangi şey onun unit of replication diyelim.
+
+169
+00:36:31,940 --> 00:36:37,240
+O noktada her şeyin yedeklenmesi gerektiği söyledi hocam ama dosya bazında mı bilmiyorum.
+
+170
+00:36:37,240 --> 00:36:40,064
+Bak diyor ki...
+
+171
+00:36:40,063 --> 00:36:47,344
+[öğrenci] el kaldırdın. Önce sen [öğrenci] kusura bakma. [öğrenci] çok hızlı el kaldırdı. [öğrenci] sen arkada kaldın.
+
+172
+00:36:47,344 --> 00:37:00,123
+Belki yanlış da söyleyebilirim hocam ama benim anladığım kernel düzeyinde sadece file değil de bir sistem çağrısı oluştuğunda da geçebiliyor.
+
+173
+00:37:01,224 --> 00:37:03,144
+Peki [öğrenci], evet.
+
+174
+00:37:03,648 --> 00:37:05,828
+[öğrenci] sağ olasın, [öğrenci] devam etsin.
+
+175
+00:37:06,028 --> 00:37:08,488
+Bu otomatik replikasyonun dosya seviyesinde yapılıyor.
+
+176
+00:37:09,927 --> 00:37:14,508
+Temel olarak dosya seviyesinde ama tabii bunun için kernel tarafı şu bu falan işin içinde.
+
+177
+00:37:14,628 --> 00:37:20,588
+Ama bu replikasyonu yaparken bir şeyi de ön planda tutuyorlar. Çok kritik bir şey.
+
+178
+00:37:22,288 --> 00:37:22,728
+Nedir o?
+
+179
+00:37:28,851 --> 00:37:45,371
+[öğrenci]? Merhaba hocam. Merhaba. Eko, you have terrible echo. Evet hocam. Can you fix it? Tamam. Tamam. Tamam. Tamam.
+
+180
+00:37:45,811 --> 00:38:10,891
+İNUNX, İNUNX'in birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını sağlamak için birisinin ortaya çalışmasını
+
+181
+00:38:10,963 --> 00:38:16,003
+bir çok önemli konusunda,
+
+182
+00:38:16,003 --> 00:38:20,483
+bir konusunda,
+
+183
+00:38:20,483 --> 00:38:21,804
+ne?
+
+184
+00:38:21,804 --> 00:38:22,963
+Yani,
+
+185
+00:38:22,963 --> 00:38:24,844
+Rüç'e de nâbilecek,
+
+186
+00:38:24,844 --> 00:38:25,963
+bir karakter,
+
+187
+00:38:25,963 --> 00:38:26,963
+Bakspace.
+
+188
+00:38:26,963 --> 00:38:28,884
+Hayır, hayır, hayır.
+
+189
+00:38:28,916 --> 00:38:32,056
+[öğrenci], önce sen el kaldırdın.
+
+190
+00:38:32,216 --> 00:38:44,016
+Hocam, replikasyon, yani kopyalama yapılırken her bir kopyanın güncel olması gerekiyor. Bu soruna çözüm bulunmuş diye düşünüyorum.
+
+191
+00:38:44,016 --> 00:38:47,115
+Peki. Up to date.
+
+192
+00:38:47,756 --> 00:38:50,936
+Tamam, up to date. Anlıyorum ama. [öğrenci].
+
+193
+00:38:52,755 --> 00:38:57,475
+O doğru muydu hocam? Söylediği doğruysa yakın bir şey diyecektim. Tutarlılık diyecektim ama.
+
+194
+00:39:00,595 --> 00:39:06,155
+Tutarlılık ama yani nerede tutarlılık? Ne seviyesinde tutarlılık? Bana onu söyler misin lütfen?
+
+195
+00:39:09,095 --> 00:39:10,895
+Kopyalar arasında tutarlılık.
+
+196
+00:39:10,956 --> 00:39:17,355
+Transaction seviyesinde. Transactional Integrity. [öğrenci] kesin bunu söyleyecektim değil mi?
+
+197
+00:39:19,355 --> 00:39:19,555
+Dur.
+
+198
+00:39:20,179 --> 00:39:23,220
+Seni yanlışlıkla Ray Send'ini şey yaparken...
+
+199
+00:39:23,220 --> 00:39:27,319
+Tamam, tekrar söylüyorum hocam. Ben kullanıcı seviyesindeki transparency'yi vurgu yapacaktım.
+
+200
+00:39:28,319 --> 00:39:29,699
+Okey, süper.
+
+201
+00:39:31,819 --> 00:39:36,220
+Nested, hatta diyorlar ki yani o kadar iddialılar ki Nested Transaction.
+
+202
+00:39:36,739 --> 00:39:42,880
+Ne demek burada Nested Transaction'dan? Ne anlıyoruz? Ne düşünüyoruz? Onu da bana söyleyebilir misiniz?
+
+203
+00:39:53,331 --> 00:40:00,492
+Evet. Nested Transaction. Hanginiz? [öğrenci].
+
+204
+00:40:01,652 --> 00:40:14,652
+Hocam ben yorumlamayı tercih edecektim ama. Normal Transaction'lar minimum sürede olması gerekiyor. Demek ki bu belirli bir sırayı takip etmesi gereken Transaction'ların önemimi.
+
+205
+00:40:18,228 --> 00:40:20,967
+[öğrenci], senden de dinleyin.
+
+206
+00:40:21,347 --> 00:40:25,568
+Hocam, Transaction deyince benim ilk aklıma gelen şey aslında tutarlılık oluyor.
+
+207
+00:40:25,728 --> 00:40:30,307
+Yani işlemin bir kısmı gerçekleşti, bir kısmı gerçekleşmedi gibi bir şey söz konusu olamaz.
+
+208
+00:40:30,967 --> 00:40:34,967
+O noktada bir tutarlılık söz konusu Transaction tarafından.
+
+209
+00:40:37,068 --> 00:40:38,467
+Benim bir de doğaçlama oldu biraz ama.
+
+210
+00:40:38,988 --> 00:40:40,927
+Evet, bayağı doğaçlama oldu [öğrenci].
+
+211
+00:40:41,668 --> 00:40:43,488
+[öğrenci], senden de dinliyorum.
+
+212
+00:40:44,148 --> 00:40:50,448
+Hocam, nested transaction kavramından ben birden fazla işlemi içeren bir transaction anlıyorum.
+
+213
+00:40:50,568 --> 00:40:51,248
+Evet.
+
+214
+00:40:51,967 --> 00:40:56,648
+Dolayısıyla bu makalede de Asset of Events Together diyor.
+
+215
+00:40:56,648 --> 00:41:04,408
+Yani birden fazla işlem sonucunda tutarlı bir duruma getirmesi lazım sistemi bu kopyalama sonucunda.
+
+216
+00:41:05,012 --> 00:41:16,372
+Anladım. Şimdi şöyle, Nested Transaction konusunda verilen cevaplar arasında doğruya en yakın olanı [öğrenci], senin verdiğin.
+
+217
+00:41:18,164 --> 00:41:38,284
+[öğrenci], seninki gerçekten improvize oldu. [öğrenci] biraz kenarından farklı bir şekilde geçtin. Ama burada nested transaction'ın esas şeyi ne biliyor musunuz? Dağıtık ya, yani file'ın birden fazla kopyası var ve bunu tutarlı yapmaya çalışıyoruz. Otomatik olarak replikasyonunu sağlıyoruz.
+
+218
+00:41:38,284 --> 00:41:46,164
+Ama bunun üzerinde az önce [öğrenci] da söylediği gibi iç içe geçmiş operasyonlar şeklinde transaction'lar olabilir.
+
+219
+00:41:46,164 --> 00:42:00,104
+Şimdi, yani transaction boundary'lerinde bu replication'ı yapmak ve tutarlılığı devam ettirmek aslında bir problem. Bunu inceliyorlar. Bunu şey yapıyorlar.
+
+220
+00:42:02,923 --> 00:42:05,024
+Evet, var mı yorum ekleyecek onun üzerine?
+
+221
+00:42:13,139 --> 00:42:13,759
+[öğrenci]?
+
+222
+00:42:14,819 --> 00:42:25,039
+Hocam, burada bir de fail commit konusu var ama çok süre durulacak bir konu değil aslında. Normal commit mekanizması gibi biriktirip gönderme gibi bir şey kullanmışlar.
+
+223
+00:42:27,279 --> 00:42:32,340
+Yani commit edilmediği sürece herhangi bir değişiklik gene kopyalar arasında da sağlanmamış oluyor.
+
+224
+00:42:34,340 --> 00:42:34,979
+Tamam.
+
+225
+00:42:34,979 --> 00:42:36,159
+O kadar.
+
+226
+00:42:37,159 --> 00:42:38,340
+Okey. Yani.
+
+227
+00:42:39,219 --> 00:42:46,219
+Aslında komik edilmediği sürece o tutarladığı da şey yapabilmek adına.
+
+228
+00:42:50,099 --> 00:43:04,220
+Hocam, burada anlık bölüyorum ama sanırım bu makaleyi de çok emin olamadım. Bir tanesini şeyden söz ediyordu. Hani bu komit operasyonlarındaki loglardan şeyi takip etmekten söz ediyordu. Bu farkı.
+
+229
+00:43:18,099 --> 00:43:22,579
+Replication'lar arasında farkı var mı yok mu diye. Yok muyu anlamaya çalışıyor değil mi? Evet.
+
+230
+00:43:22,579 --> 00:43:34,119
+Evet. Sanırım bu makaleydi ama. Eyvah eyvah. Ya siz benden gençsiniz ne oluyor size? Ben anlamıyorum valla. Çok mu çalıştırıyorum sizi acaba?
+
+231
+00:43:36,019 --> 00:43:43,639
+Hocam, böyle konular birbirine yakın olunca birbirlerinin içine giriyorlar biraz şey, konteksleri. Ama burada tabii birkaç tanesi farklı gibiydi.
+
+232
+00:43:43,639 --> 00:43:55,880
+Evet, yani böyle araya şeyler yerleştiriyoruz. Farklı şeyler yerleştiriyoruz ki hep tek bir konudan gitmesin, farklı konular da olsun diye.
+
+233
+00:43:58,003 --> 00:44:00,804
+[öğrenci], evet söyle bakalım.
+
+234
+00:44:01,043 --> 00:44:05,923
+Genel olarak bu makaleyle ilgili benim dikkat çeken bir kısım vardı da onu aktarabilirim size.
+
+235
+00:44:06,163 --> 00:44:07,163
+Aktar tabii ki.
+
+236
+00:44:07,163 --> 00:44:19,943
+Şöyle, yani bütün makalelerde performansı arttırmak birinci öncelik olarak geçiyor. Burada özellikle bazı ifadeler kullanılmış. Yani burada performans kazanımız var ancak bunun da bir bedeli olmuş gördüğüm kadarıyla.
+
+237
+00:44:20,467 --> 00:44:32,547
+Unix'ten sonra üçüncü en uzun kod tabanına sahip gibi bir ifade söz konusuydu. Yani iyi bir tasarımla bütün zorluklar aşılabiliyor ama çok uzun kodlar ortaya çıkıyor gibi bir ifade görmüştüm.
+
+238
+00:44:32,547 --> 00:44:37,087
+Tamam. Güzel. Başka?
+
+239
+00:44:41,684 --> 00:44:52,044
+Yani bir işletim sistemiyle yarışabilecek seviyede çok uzun, Unix'ten bahsediyoruz, çok uzun kod tabanına sahip hocam. Bunun zorlukları aşmak hiç kolay görünmüyor açıkçası.
+
+240
+00:44:52,684 --> 00:44:59,764
+Ya ben müdahale edeceğim ama ben öyle anlamadım ya. Sanki şey diyordu, Unix'in 3 katı kadar büyüklüğünde koda sahibiz diyordu.
+
+241
+00:45:01,076 --> 00:45:05,355
+Çok fazla prosedür falan filanla kontrol ediyoruz. Bunu o yüzden biraz büyürüz.
+
+242
+00:45:06,235 --> 00:45:06,516
+Aynen.
+
+243
+00:45:06,516 --> 00:45:14,675
+Şimdi conclusion kısmına bakacak olursak, sizin dediğiniz şey şuraya denk düşüyor.
+
+244
+00:45:14,775 --> 00:45:28,256
+Nothing is free. In order to avoid performance degradation when resources are local, the cost has been converted into additional code and substantial care in implementation architecture.
+
+245
+00:45:28,751 --> 00:45:44,192
+Locus is approximately a third bigger than Unix and certainly more complex. Third bigger, yani Unix 1 ise bu 1.33 ve daha karmaşık. Sonra ne diyor?
+
+246
+00:45:53,936 --> 00:46:14,316
+On the Particular System. Zaten sistem tasarımının doğası gereği böyle. Dynamic Reconfiguration yapıyorsunuz. Ve sisteme bağlı olarak da değişiyor. Rebuilding lock tables and synchronizing processes running in separate environments are problems of inherent difficulty.
+
+247
+00:46:14,835 --> 00:46:24,355
+Büyük sistemle ilgili problemlerden evlenir. Bu da, tasarım üzerinde. Efendim [öğrenci].
+
+248
+00:46:25,255 --> 00:46:28,095
+Hocam, benim de şey bir daha aklıma geldi şimdi.
+
+249
+00:46:30,387 --> 00:46:51,688
+Tamamında farklı donanımlardan oluşan halveler olduğu için bu büyük bir sorunmuş. Farklı tipte donanımların olması Total Ağda. Bununla ilgili sadece dizin isimlendirilmeden söz ettik ama dizinlerin bile en basit şekilde isimlendirme yapılarının farklı oluşu en büyük problemlerden biriymiş.
+
+250
+00:46:58,387 --> 00:47:04,327
+PDP donanımları var. Diğer tarafta PDP donanımları var.
+
+251
+00:47:04,327 --> 00:47:18,647
+Ama hatta biliyorsunuz, okumuşsunuzdur, bu devreye alınmadan önce PDP 11'ler devre dışı bırakılıyorlar.
+
+252
+00:47:20,596 --> 00:47:26,076
+Uniform, donanım açısından daha uniform bir yapıya geçiliyorlar.
+
+253
+00:47:26,076 --> 00:47:36,735
+Ve konuştuğumuz şey, bakın 79'da çalışmaya başlıyorlar, 83'te bitiriyorlar.
+
+254
+00:47:37,635 --> 00:47:45,996
+Yani 4 sene, belki 3,5 sene. Çünkü early 1983 demiş.
+
+255
+00:47:48,371 --> 00:48:02,651
+50 men years. Bu ne demek? Bir kişi olsa 50 yıl çalışacak, 50 kişi olsa 1 yıl çalışacak. Çok ciddi bir şey. Yukarıya gidip bakalım.
+
+256
+00:48:03,103 --> 00:48:27,043
+Kaç kişi var? Bir, iki, üç, dört, beş kişi var. Bunlar en az bir kendileri kadar belki kendilerinin iki katı kadar şey daha var demektir. Eleman daha çalışmışlar. Yani bunu dört senede bitirdiklerine göre bir on kişilik veya on beş kişilik bir şey olması lazım, ekip olması lazım.
+
+257
+00:48:27,507 --> 00:48:37,747
+O dönem için çok ciddi bir araştırma. Ama sonunda da yine zorlukları.
+
+258
+00:48:41,427 --> 00:48:43,907
+Son cümleye bakacak olursak ekonomik öncesi.
+
+259
+00:48:43,907 --> 00:48:50,528
+However, use of locus indicates the enormous value of highly transparent distributed operating system.
+
+260
+00:48:50,988 --> 00:49:02,988
+Since file activity often is the dominant part of the operating system world, it seems clear that the locus architecture constructed on a distributed file system base is rather attractive.
+
+261
+00:49:06,835 --> 00:49:20,955
+O dönem bunun için çalışıyorlar ama şu an aslında biz ne yapıyoruz arka planda? Çoğunlukla file sistemi merkezi bir noktaya taşıyoruz değil mi? Hani o günle bugün arasında orada o kadar uğraşılıp şey yapılmışken.
+
+262
+00:49:32,340 --> 00:49:42,920
+V-Yap'ının bir işletim sisteminin 1.3 katı olması da şey bir şey. Bayağı dikkat edilmesi gereken bir şey.
+
+263
+00:49:44,719 --> 00:49:53,559
+Okey. Şimdi bir 10 dakika ara verelim. Ondan sonra devam edelim. Tamam.
+
+264
+00:49:54,480 --> 00:49:57,539
+Saat 10 geçiyor. İşte 20 geçe falan devam ederiz.
+
+265
+01:13:38,676 --> 01:13:57,195
+Evet arkadaşlar, kusura bakmayın. Demin üniversiteden gelen telefonun devamı geldi. O yüzden söylediğimden bir 10 dakika geç başlayabiliyorum. Sizi beklettim. Şimdi devam edelim. Hangi paper'a geldik? ITC Distributed File System.
+
+266
+01:13:58,452 --> 01:14:23,492
+Evet, bakın bunun da tarihi 1985, diğeri de 83'tü. Orada da yine ne vardı? Bokus vardı. Bir distributed yapı. Bu da 85, yine bir başka distributed yapı. Yani aslında bundan ne kadar? 21 yılındaysak 26 sene önce mi?
+
+267
+01:14:23,956 --> 01:14:34,496
+Bundan 26 sene önce harıl harıl distributed file sistemler, onların performansı, işte replication, transactional logging üzerine.
+
+268
+01:14:35,036 --> 01:14:35,755
+Efendim?
+
+269
+01:14:36,216 --> 01:14:36,595
+36.
+
+270
+01:14:37,015 --> 01:14:49,595
+36 mı? Doğru, 2021 haklısınız. 36 sene önce, daha da felaket. 36 sene önce bunların üzerinde çalışılıyormuş. Arada kapatacak bayağı bir şey var.
+
+271
+01:14:49,967 --> 01:15:13,448
+Evet, şimdi bu aynı zamanda AFS olarak da geçiyor ama ona da geliriz. Bana bir hızlıca neden Distributed File System seçmek istediklerini, neden bu yola, bu yöne gitmek istediklerini söyleyebilir misiniz?
+
+272
+01:15:19,155 --> 01:15:20,115
+Evet [öğrenci].
+
+273
+01:15:21,456 --> 01:15:27,015
+Hocam, çünkü bunu bir üniversite için yapmışlar ve üniversitede çok sayıda kullanıcı varmış.
+
+274
+01:15:27,015 --> 01:15:28,355
+Hani üniversite?
+
+275
+01:15:28,884 --> 01:15:30,963
+Körneç Mellon Üniversitesi.
+
+276
+01:15:30,963 --> 01:15:32,783
+Karnıcı Mellon, evet. Doğru.
+
+277
+01:15:34,384 --> 01:15:44,963
+Çok fazla kullanıcı varmış. Öncelikle esnek olması gerekiyor. Kullanıcı hareketlerini sağlaması gerekiyormuş bir üniversite olduğu için. Temel şeyi bu sebebi.
+
+278
+01:15:45,604 --> 01:15:52,283
+Peki, tabii sen de biliyorsan cevap verebilirsin veya diğer arkadaşlar da eli kaldırabilirler.
+
+279
+01:15:54,771 --> 01:16:12,771
+Bunlar bir sınıflandırma yapmışlar böyle çok genel olarak. Transparency, Complexity ve Communication üzerinden. Bunu daha yoğun, daha iyi Transparency, daha...
+
+280
+01:16:13,395 --> 01:16:31,775
+Daha kompleks ama daha şey, komünikasyon açısından requirement'larda daha net olmaktan daha az transparent, daha az kompleks, daha şeye doğru bir sıralama yaptıkları zaman kaç kategori çıkartmışlar?
+
+281
+01:16:34,612 --> 01:16:37,471
+Bakıyorum hocam ama bekletmeyeyim. Ben bir taraftan bakayım.
+
+282
+01:16:37,811 --> 01:16:41,231
+[öğrenci]. Tamam peki. Aklımda hızlıca yok. Evet [öğrenci].
+
+283
+01:16:41,231 --> 01:16:51,231
+Üç kategori gördüm ben. Distributed Operating Systems, Distributed File Systems ve Losely Coupled Networks.
+
+284
+01:16:51,667 --> 01:17:01,768
+Yani dikkat edersen bak birine Distributed Operating System diyor, diğerine Distributed File System diyor, öbürü de Loosely Coupled Network.
+
+285
+01:17:01,768 --> 01:17:16,948
+Yani birinde işletim sistemi de Distributed şekildi, öbüründe aynen bu Locust'ta olduğu gibi File Sistemi'nin Distributed olması var. Bir de Loosely Coupled. Loosely Coupled'a neyi örnek vermiş?
+
+286
+01:17:17,344 --> 01:17:18,864
+Arpanet'i örnek vermiş hocam.
+
+287
+01:17:19,064 --> 01:17:20,444
+Arpanet nedir yani?
+
+288
+01:17:21,564 --> 01:17:22,584
+İnternet.
+
+289
+01:17:22,884 --> 01:17:26,904
+İnternet, evet. [öğrenci], pardon sen mi söyledin?
+
+290
+01:17:27,144 --> 01:17:27,844
+Evet hocam ben.
+
+291
+01:17:28,283 --> 01:17:30,424
+Yani merkezde olmayan bir yapı.
+
+292
+01:17:31,484 --> 01:17:33,364
+Dolayısıyla onu tercih etmemişler.
+
+293
+01:17:34,203 --> 01:17:36,184
+Güvenlikten dolayı galiba.
+
+294
+01:17:37,924 --> 01:17:39,243
+Yok, yani...
+
+295
+01:17:39,347 --> 01:17:56,768
+Şimdi bir yorum yaptın, onun üzerine soru hemen oluştu. Niye tercih etmiyorlar? [öğrenci] el kaldırdı, sen de bir dinle bakalım. Olmadı, sana söz veririz arkasından [öğrenci].
+
+296
+01:17:57,768 --> 01:18:02,768
+Çünkü Arpanet'te kullanıcı bir işlem yapabilmesi için...
+
+297
+01:18:03,507 --> 01:18:11,907
+Bütün eğlenmeleri yapması gerekiyor. Yani internet işte karşı hedefi bilmesi gerekiyor. Yani o dosya sistemi ya da sistem kendisinin bir parçası gibi değil.
+
+298
+01:18:13,047 --> 01:18:27,108
+Ben kullandınız değil mi FTP? Yani mutlaka kullanmışsınızdır diye tahmin ediyorum. Şu anda artık çok çok az kullanıyoruz ama eskiden bir dosyayı lokale almak için FTP ile File Transfer Protokollü ile lokalimi alırdım.
+
+299
+01:18:31,507 --> 01:18:44,768
+Transparency diye bir şey yok. Benim ne üzerinde çalışmak istiyorsam onun lokal bir kopyasını benim kendimin oluşturması lazım. Kararlarını benim vermem lazım.
+
+300
+01:18:45,203 --> 01:19:13,023
+Sonra bunun üzerinde yapacağım değişiklikler, diğer kopyalarda nasıl oralara yansıyacak, nasıl o kopyaların güncellenmesini sağlayacak falan hiç böyle bir şeyler düşünülmüyor. Yani aynı dosyanın network'te binlerce, on binlerce kopyası olabilir. Hepsi birbirinden bağımsız. O yüzden doluzlu kapıldı. Ve bu da tabii işleri çok zorlaştırıyor. Hele ki ne dediniz? Karneci Melon'da bir sürü kullanıcı var.
+
+301
+01:19:13,203 --> 01:19:24,983
+Bir sürü bilgisayar var. Burada bu işlerin yapılması ile alakalı sorumluluğu kullanıcılara bırakacak olursanız tam bir kaos oluşur. Bu yüzden anlamlı değil.
+
+302
+01:19:32,148 --> 01:19:45,328
+Bu o kadar net bir soru ki doğrudan okuyacaksınız neredeyse cevabını. File Sistem açısından, dosya sistemi açısından hedefleri ne olarak koymuşlar?
+
+303
+01:19:50,676 --> 01:19:52,556
+Evet [öğrenci].
+
+304
+01:19:55,496 --> 01:20:01,236
+Dosya sistemi hedefli, konum şeffaflığı, kullanıcı hareketli.
+
+305
+01:20:01,336 --> 01:20:05,656
+Hızlıca bir, tek bir cümleyle kullanıcı şeffaflığından ne anlıyoruz?
+
+306
+01:20:06,936 --> 01:20:13,916
+Tüm paylaşılan dosyalar tek bir alan adına dahil olmalıdır. Yani herkes o alan adından erişebilmeli.
+
+307
+01:20:13,916 --> 01:20:15,275
+Yani?
+
+308
+01:20:18,963 --> 01:20:34,543
+Yani standart, yani tek şey değil mi yani bu? Dur bir saniye. Önce ya [öğrenci] kaldırdın ama [öğrenci] da arkada bekliyordu. O yüzden önce [öğrenci]'a söz veriyorum.
+
+309
+01:20:35,184 --> 01:20:44,904
+Hocam location transparency yani dosyanın isminden nerede kayıtta olduğu anlaşılmaması gerekiyor. Hangi bilgisayar üzerinde kayıtta olduğu anlaşılmaması gerekiyor diye anladım ben.
+
+310
+01:20:46,068 --> 01:20:50,248
+Konum bilgisi içermemesi gerekiyor sistemin.
+
+311
+01:20:50,507 --> 01:20:59,847
+Ama aynı zamanda benim müdahil olmama gerek kalmadan konumunu sistemin tespit edebilmesi lazım.
+
+312
+01:20:59,847 --> 01:21:00,448
+Evet.
+
+313
+01:21:01,408 --> 01:21:13,048
+Biz mesela şu anda internet üzerinde bu anlamda bir location transparency sağlamıyoruz değil mi?
+
+314
+01:21:13,747 --> 01:21:34,528
+Çünkü neden? Resmen URL'in içerisinde lokasyon bilgisi var. Nereden neye erişeceksek. Sadece failin ismini vermiyoruz. Burada hedef veren şey, ben hani failin ismini vereyim, arka tarafta sistem o fail hangi bilgisayardaysa, hangi lokasyondaysa ona erişebilsin şeklinde.
+
+315
+01:21:35,091 --> 01:21:36,791
+[öğrenci], sen bir şey söyleyeceksin.
+
+316
+01:21:37,252 --> 01:21:40,752
+Hocam bu DNS alana da bir nevi şeffaflık sağlamıyor mu?
+
+317
+01:21:40,791 --> 01:21:43,291
+Sonuçta arka planda bilecekse o da biliyordur.
+
+318
+01:21:44,332 --> 01:21:47,672
+Ortak bir yerden sonuçta IBM'yi falan gene alması lazım.
+
+319
+01:21:48,243 --> 01:22:04,743
+Şöyle şeffaflık IP'yi almakla alakalı değil. Şunu yaparsan, sen o kaynağı bir bilgisayara, bir lokasyona fixlersen eğer, o hep orada. Halbuki onun network üzerinde belki sana daha yakın bir kopyası var.
+
+320
+01:22:16,243 --> 01:22:40,724
+Senin lokasyonuna en yakın yerden o içeriye erişmeni sağlıyor. İşte YouTube'a erişiyorsun. DNS ismi aslında YouTube ama arka tarafta geolokalization yaparak aynı YouTube isminin senin bulunduğun coğrafi bölgeye en yakın olan YouTube serverına yönlendirilmesini sağlıyor.
+
+321
+01:22:40,724 --> 01:22:44,243
+Yine bu merkezi bir yapı üzerinden merkezi olmayan...
+
+322
+01:22:44,243 --> 01:23:00,183
+Bir yapıya dönüştürüyor. Fakat bu 85 yılı. Düşünün aslında ne kadar güzel. Biz şu anda 2000'lerden bahsediyoruz. 2020'lerden neyse. 85 yılında düşünülen şey bu. [öğrenci] sen el kaldırdın bir şey söyleyecektin. Dinliyorum.
+
+323
+01:23:00,183 --> 01:23:12,183
+Aynen hocam. Aslında transparency'nin olup olmadığını bilmiyor oluşumuz o transparency'nin çok iyi sağlandığı anlamına geliyor bir noktada. Yani biz bir ayda il bağlanıyoruz. Ama arka tarafta ne olduğunu bilmiyoruz. Ankara sunucusu...
+
+324
+01:23:12,243 --> 01:23:16,943
+İstanbul sunucusu olabilir bu. Zaten bunu bilmemek en iyisi client terapi için.
+
+325
+01:23:17,283 --> 01:23:19,703
+Tabii bakın paperda ne yazıyor?
+
+326
+01:23:28,467 --> 01:23:44,467
+Benim tarafımdan değil, file sistem tarafından. Orijinal cevaba esen, devam etmemiz lazım [öğrenci]. Çünkü sen ben orada kesince başka soru sorunca location transparency dedin, orada kaldın. Devam et.
+
+327
+01:23:56,467 --> 01:23:59,067
+Erişilebilirlik, bütünlük, heterojenlik.
+
+328
+01:23:59,727 --> 01:24:02,807
+Tamam. Heterojenlikten ne anlıyoruz?
+
+329
+01:24:05,407 --> 01:24:10,967
+İstasyonlar dağıtılmış dosya sistemi aracılığıyla dosyalarını paylaşıma katabilmek.
+
+330
+01:24:11,359 --> 01:24:20,019
+Yani bu iş daha basit olmuyor. Yani farklı istasyonlar aynı sisteme dahil olabiliyorlar.
+
+331
+01:24:20,459 --> 01:24:22,559
+[öğrenci], sen de el kaldırdın.
+
+332
+01:24:23,519 --> 01:24:27,739
+Farklı konfigürasyondaki bilgisayarlar, farklı işlemcilere sahip bilgisayarlar.
+
+333
+01:24:27,739 --> 01:24:30,799
+Donanın olarak çalışabilmeli.
+
+334
+01:24:31,639 --> 01:24:36,319
+Peki burada bu paperda bir Vice ve Worker diye bir şey geçiyor. Nedir o?
+
+335
+01:24:37,876 --> 01:24:41,656
+Vice ve Virtue. [öğrenci].
+
+336
+01:24:44,496 --> 01:24:51,256
+Hocam, Vice Server anlamına geliyor bildiğim kadarıyla. Virtue'da istem. Yani server client.
+
+337
+01:24:51,256 --> 01:24:52,636
+Emin misin? Emin misin?
+
+338
+01:24:54,156 --> 01:24:56,756
+Evet, Vice Server, Virtue'da client.
+
+339
+01:25:01,076 --> 01:25:02,896
+Yani yanlış olabilir belki.
+
+340
+01:25:03,736 --> 01:25:04,156
+Bilmiyorum.
+
+341
+01:25:07,188 --> 01:25:15,427
+Başka cevap vermek isteyen var mı? Şurada el kalktı ama kim önce? [öğrenci], sen mi önce el kaldırdın?
+
+342
+01:25:15,568 --> 01:25:16,888
+Bence [öğrenci] kaldırdı hocam.
+
+343
+01:25:16,888 --> 01:25:24,948
+Öyle mi? O zaman centilmenlik yapıyor [öğrenci]. Sana teşekkürler [öğrenci] bu arada. Sağ olasın. Evet, [öğrenci].
+
+344
+01:25:26,292 --> 01:25:38,256
+Benim anladığım, WISE dediğimiz şey bu dosyaların merkezi sistemi gibi bir şey. Avip benzeri bir yapıya benzetmişler ama bu WISE içerisinde herhangi bir kullanıcı prosesi...
+
+345
+01:25:38,256 --> 01:25:57,236
+Koşturulmuyor. Dolayısıyla bir tık daha güvenli. Virtue ise bunun kullanıcı tarafındaki kopyası. Yani bu Vice'e bağlı Virtue'lar var. Bunların arasındaki bir interfej sayesinde de işte bu Virtue'lara bağlı istasyonlar o dosyayı kendi parçalarıymış gibi görüyorlar.
+
+346
+01:25:58,615 --> 01:26:03,896
+Şimdi bakın şu figür 2.1'e gelebilir misiniz?
+
+347
+01:26:07,091 --> 01:26:32,451
+Burada bir böyle bulut çizmişler. Ortasına da Vice yazmışlar. Yukarıda da ne demişler? Vice is the boundary of trustworthiness. Yani bir güvenirlilik yapısı oluşturuyorlar. Ben uç kullanıcı olarak bir network'e dahil olacağım ve bu network'ün bana sunduğu kaynaklardan yararlanacağım distributed bir network'e.
+
+348
+01:26:33,524 --> 01:26:48,043
+Buna dahil olurken kendi bilgisayarımla, kendi workstation'ımla dahil olacağım. Ve doğal olarak bu workstation, bilgisayar üzerindeki bütün kontrol bende diye kabul edilmesi lazım. İyi yaklaşım, kötü yaklaşım hepsi bir arada.
+
+349
+01:26:48,372 --> 01:27:01,372
+Ancak diğerleriyle beraber bir bütün olarak çalışacağıma göre herkesin ortak bir noktada buluşmasını güvenlik açısından, güvenililik açısından...
+
+350
+01:27:03,412 --> 01:27:21,051
+Birbirleriyle karşılıklı güven ilişkisi kurulması açısından bir ortada backbone'a ihtiyaç var, bir ana yapıya ihtiyaç var. İşte bu yapıya ne diyorlar? Vice. Vice zaten İngilizce ne demek biliyor musunuz anlamına?
+
+351
+01:27:24,692 --> 01:27:27,351
+Hiç polisiye şey seyretmediniz mi ya [öğrenci]?
+
+352
+01:27:28,992 --> 01:27:33,291
+Hocam ben buradaki açılımından bahsedecektim. West Integrated Computing Environment.
+
+353
+01:27:33,811 --> 01:27:37,771
+Tamam, aynen öyle ama Vice'in kelime anlamı da ahlak demek.
+
+354
+01:27:37,771 --> 01:27:48,771
+Yani orada transworthiness, boundary of transworthiness ya, güzel bir kısaltma yapmışlar ama gerçek hayattaki kelime anlamıyla da uç noktadaki şeylere...
+
+355
+01:27:49,268 --> 01:28:00,087
+Bu, güvenemezsin. Bak zaten diyor ki, it is rumored that WISE stands for, senin söylediğin gibi, vast integrated computing environment. Efendim [öğrenci]?
+
+356
+01:28:00,827 --> 01:28:04,327
+Hocam, şeyde suç ve güne anlamı da var WISE'ın.
+
+357
+01:28:04,327 --> 01:28:11,507
+WISE polislerde bizim Türkiye'deki ahlak masasına denk düşer.
+
+358
+01:28:11,904 --> 01:28:14,644
+İşte ahlaklı şeydi falan. Onlara denk düşer.
+
+359
+01:28:14,664 --> 01:28:20,344
+Bir sürü şey çıkıyor hocam. Hani mesela sözler yazdığınızda işte 5-6 madde bu deliklerim hepsini karşılıyor.
+
+360
+01:28:20,864 --> 01:28:23,703
+Şerat çıkıyor. Yani şu an bakmadım da biliyorum öyle.
+
+361
+01:28:25,084 --> 01:28:27,144
+Aynen. Evet [öğrenci].
+
+362
+01:28:27,684 --> 01:28:30,703
+Hocam buradaki yapıyı peer-to-peer olarak görebilir miyiz acaba?
+
+363
+01:28:31,924 --> 01:28:32,724
+Ne anlamda dedi?
+
+364
+01:28:33,247 --> 01:28:40,007
+Yani aslında ortak olarak çalıştıkları bir ortam var ama hepsi aynı ortama katkıda bulunuyor.
+
+365
+01:28:40,927 --> 01:28:41,227
+Tamam.
+
+366
+01:28:41,907 --> 01:28:46,787
+Bu noktada bir peer-to-peer yaklaşımına benzetmemiz mümkün olur mu acaba buradaki yapıyı?
+
+367
+01:28:47,787 --> 01:28:50,727
+Ama sonuçta bunlar...
+
+368
+01:28:51,572 --> 01:29:11,532
+Distributed bir yapı yani dahil olan herkesin her kaynağı bu yapının bir parçası haline dönüşebiliyor. Öyle düşünmen lazım. Sadece peer-to-peer seviyesinde olmak zorunda değil. Yani o çok çok çok kısıtlayıcı olur.
+
+369
+01:29:11,967 --> 01:29:14,807
+P to N gibi mi daha çok hocam?
+
+370
+01:29:14,807 --> 01:29:18,608
+Aynen yani menu to menu desen daha doğru olur bence.
+
+371
+01:29:18,608 --> 01:29:32,247
+Yani P to N gibi değil, menu to menu. Bunların arasında hani menu özel durumda bire biri de içerebilir, bire N de olabilir veya M'e N de olabilir. Bütün durumları içeriyor.
+
+372
+01:29:32,819 --> 01:29:57,500
+Bakın burada Workstation'lar, bir Workstation'lar ve bunlar bir cluster oluşturuyorlar. Burada cluster server'lar var. O cluster server'lar da aslında WISE'ı oluşturuyorlar.
+
+373
+01:29:57,500 --> 01:30:00,000
+Yani cluster server'lar bir araya geldi.
+
+374
+01:30:00,000 --> 01:30:07,787
+Derdikleri zaman o Vice yapısı oluşmuş oluyor. Yani böylece hem bu neyi...
+
+375
+01:30:07,796 --> 01:30:34,936
+Yansıtıyor. Düşünün, fakültenin içerisinde bilgisayar bölümü var, elektronik bölümü var, elektrik bölümü var, kontrol otomasyon var. Her biri kendi workstationlarına ve kendi cluster serverına sahip. Bir taraftan lokalize gibi görünüyor. Ama diğer taraftan bunlar o dönem için backbone ethernet var.
+
+376
+01:30:35,796 --> 01:31:03,796
+İnternetten falan bahsetmiyoruz. Backbone, Ethernet var. O yüzden bridge'lerle bağlanmış durumdalar. Cluster server'lar bir araya geldiklerinde de bu daha büyük vice yapısı oluşuyor. Böylece cluster server'lar kendisine bağlı olan workstationlarla diğer cluster server ve onlara bağlı olan workstationlar arasındaki güvenlik sınırını...
+
+377
+01:31:03,796 --> 01:31:16,936
+Ve o Transworthiness Boundaries'ini oluşturuyorlar. Öyle düşünebilirsiniz. Topoloji bunun üzerine kurulu. Ve ne miktarda Workstation'dan bahsediyorlar?
+
+378
+01:31:22,387 --> 01:31:23,347
+Evet [öğrenci].
+
+379
+01:31:24,547 --> 01:31:28,208
+Başlangıçta 5000 kişisel bilgisayardan bahsediyorlar.
+
+380
+01:31:28,208 --> 01:31:39,307
+Evet, bakın bu arada dikkat edin. 85 üniversite ortamı ve 5000 tane Workstation'dan bahsediliyor. Baya ciddi bir rakam.
+
+381
+01:31:43,307 --> 01:31:44,208
+Ve aradaki...
+
+382
+01:31:45,108 --> 01:32:00,108
+Trafiğin de enkript edilmesinden, yani şey, clear text olarak gönderilmesi değil, enkript edilmesinden de...
+
+383
+01:32:01,587 --> 01:32:20,247
+Bahsedilmiş durumda. Şey de konuşulmuş, bu workstationların lokal diskleri yerine acaba remote disk üzerinden çalışmaları, şey yapmaları da mümkün olabilir mi falan bunlardan da bahsedilmiş.
+
+384
+01:32:20,247 --> 01:32:21,807
+Evet.
+
+385
+01:32:27,188 --> 01:32:54,347
+Peki, şimdi bu file'lara distributed yapı ya, file'lara erişirken lokasyondan bağımsız olacağız. Onun lokasyonunun neresinin olduğunu aslında file sistem çözecek. Nasıl bir isimlendirme ve tasarımsal bir yapı getirmişler? Nasıl bir şekilde bu erişimi yönetilebilir hale getirmişler?
+
+386
+01:32:55,444 --> 01:32:56,444
+Evet.
+
+387
+01:33:00,884 --> 01:33:03,763
+Var mı canım? [öğrenci]?
+
+388
+01:33:04,963 --> 01:33:19,463
+Hocam, sanırım ilkelerinden söz ediyoruz ama mesela şey demişler, bir iş istasyonunda bir işlemi gerçekleştirmekle, bunun merkezi bir kaynakla gerçekleştirmek arasında bir seçim olduğunda ilkini tercih edin diyor.
+
+389
+01:33:19,963 --> 01:33:26,224
+Yani ilk başta kendi lokalimizde işlemi gerçekleştiriyoruz uzaktakine müdahale etmek yerine.
+
+390
+01:33:28,243 --> 01:33:41,304
+Sonra mümkünse yerelleştir demişler. Uzak bir kaynaktakini mümkünse daha yakın olanı kullan demişler.
+
+391
+01:33:42,387 --> 01:33:56,108
+Daha sonrasında sınıfa özgü dosya özelliklerinden yararlanın demişler. Yani bir dosya mesela salt okunursa kopyalarılabilir, üstüne yazılma yapılmaz gibi özelliklerinden faydalanalım demişler.
+
+392
+01:33:56,827 --> 01:34:07,587
+Sonra da mümkünse ön belliğe alın demişler. Virtue dosyalar ve bunlarla ilgili durum bilgilerini ön belliğe alabilir bu sebeple de.
+
+393
+01:34:10,387 --> 01:34:21,368
+Büyük değişiklik yapmaktan kaçının demişler. Orjinal update etmek çok sakıncalı bir durumdur. Yapacaksan toplu yap, bir kere daha yap, parça parça sürekli değiştirme demişler.
+
+394
+01:34:21,368 --> 01:34:31,007
+Evet. Peki, bunun haricinde bu naming ve şey tarafında lokasyonla alakalı olarak da bir sınıflandırma yapmışlar.
+
+395
+01:34:35,412 --> 01:34:44,811
+Onunla alakalı kim bilgi vermek ister? Siz nereye gittiniz? Bir saniye. Benim şurada. Zoom ekranım kayboldu da bir anda.
+
+396
+01:35:07,028 --> 01:35:18,968
+Var mı fikri olan? Bu da yazıyor. Yani bu da çok net bir şekilde yazıyor. İsimlendirme ve nerede olması gerektiği yönünde.
+
+397
+01:35:23,828 --> 01:35:39,427
+[öğrenci]. Hocam yerini buldum da, buraya çok işaretlememişim. İlk olarak sistem dosyalarına öncelik ver demişler. Yok, öncelik ver dememişler şimdi. Öyle demiyor. Diyor ki, [öğrenci].
+
+398
+01:35:40,340 --> 01:35:51,079
+Hocam, bir yer buldum. Büyük ihtimal orasıdır diye düşünüyorum. Unix için Identical olacak şekilde bir yapı izlenmesi gerektiği ve versiyonun orası tutması gerektiğinden bahsedilmiş.
+
+399
+01:35:51,079 --> 01:36:02,880
+Yok yok yok, hayır. [öğrenci]'in, [öğrenci]'nin bulduğu yerde ama [öğrenci] orada 1, 2, 3, 4'ü görünce onun bir önceliklendirme olduğunu düşündü bence. Ama değil.
+
+400
+01:36:04,500 --> 01:36:22,239
+Diyor ki, sistem dosyalarının ve WISE yapısına bağlantı öncesinde, workstation'da, workstation'ın açılması, çalışması için ihtiyaç duyulacak dosyaların lokalde olması daha mantıklı.
+
+401
+01:36:22,899 --> 01:36:42,591
+Çünkü bu zaten hani Vice'la. Ama bu lokalde işte bir disk server üzerinden de erişilebilir. O ayrı bir şey. Temporary dosyalar, yani geçici dosyalar ne demiş? İşte program komple ederken ara dosyalar oluşur ya. Bunların hani...
+
+402
+01:36:42,591 --> 01:36:59,692
+Shared bir namespace'e, herkes tarafından paylaşılacak bir namespace'e konulmasının şey olarak bir anlamı yok. Çünkü zaten compiler, compile ederken arada diyelim obje file oluşturuyor, temporary bir şey oluşturuyor, sonra slip atıyor. Bir başkasının ihtiyacı bile olmayacak.
+
+403
+01:37:08,083 --> 01:37:30,764
+Orada belki bazı dosyaları paylaşmayı istemeyebilirim. Bu sadece bana özeldir. Güvenlik mekanizması var, vaysın. Fakat diyebilirim ki yine de bu güvenlik mekanizmasının haricinde hiç paylaşıma girmesin. O zaman bunlar tamamen lokalde kalacak.
+
+404
+01:37:32,500 --> 01:37:58,180
+Bunlar tabii ki kullanıcı hareketliliğini ortadan kaldıran şeyler. Yani X Workstation'da çalışıyorum ben. Orada bana özel dosyalarım var. Sonra başka bir yere taşınmasını istemiyorum bu güvenlik şeyden dolayı. Gidip Y Workstation'da çalışamam. Bir de şeyler var. Yani Workstation'da kullandığımız programlar.
+
+405
+01:37:58,996 --> 01:38:23,275
+Bunlar özellikle de şey demişler, yani çok sık kullanılıyor ama güncellemesi az. Diyelim ki compiler, diyelim ki editor. Bunlar da shared şeye konulmasına, bir namespace'e konulup da herkes tarafından paylaşılmasına gerek yok demişler. Bunlar da lokalde olabilir demişler.
+
+406
+01:38:23,891 --> 01:38:34,251
+Benim paper'ı okuduğum zaman, bakın bu da zaten 3-1 ve 3-2 şeyinde...
+
+407
+01:38:34,515 --> 01:38:53,135
+Çok net bir şekilde görülüyor. Bir Venn Diagramı ile ifade etmişler 3.1'de. 3.2'de neyi görüyoruz? Aslında VICE bir mount point. Sonuçta bir file sistem. Her file sistemin Unix'de bir şey var.
+
+408
+01:38:53,587 --> 01:39:14,587
+Onun altında hatta şeyler yapmışlar. Yani dikkat edin architecture'a göre. Vice Unix Sun Bin, Vice Unix Vax Bin. Sun Mimarisi, Vax Mimarisi. Her ikisi de Unix çalıştırıyor ama binary'lar farklı. O zaman bu şekilde...
+
+409
+01:39:17,268 --> 01:39:24,448
+bölümlendirmişler, aynı şeyin farklı mimariye göre kopyaları olabiliyor.
+
+410
+01:39:39,667 --> 01:40:02,467
+Burada bir kastodiyon şipten bahsediliyor. Kastodiyon yani ne anlama geliyor? Vasif alan hani kastodiyon kelime anlamı, göz kulak olan şey yapan. Ne anlıyoruz kastodiyon teriminden? Kastodiyon şip teriminden?
+
+411
+01:40:43,091 --> 01:40:44,731
+Yok mu cevap verici planı?
+
+412
+01:40:48,564 --> 01:41:08,623
+PAPER'da yazıyor arkadaşlar. Bugün PAPER'ıydı. PAPER'da da böyle caching mekanizmalarından falan bahsediyor. Ben de siz bugüne hazırladığınız için caching demişsinizdir bu bilgiyi. Hızlıca aklınızdadır. Hemen aklınıza gelir diye düşünüyordum ama yanıldım mı?
+
+413
+01:41:17,108 --> 01:41:33,827
+Yani Hami gibi, ondan sorumlu.
+
+414
+01:41:34,323 --> 01:41:45,763
+Neyse işte vasihi gibi. O file'ın nerede saklandığı, nasıl replike edildiği, erişimin nasıl koordine edildiği bundan sorumlu.
+
+415
+01:41:45,763 --> 01:41:54,903
+If a server receives a request for a file for which it is not the custodian, it will respond with the identity of the appropriate custodian.
+
+416
+01:41:55,315 --> 01:42:16,036
+Yani bir directory yapısını düşünün.
+
+417
+01:42:17,652 --> 01:42:38,572
+Orada ağaç şeklinde ilerliyor ya, işte direktri, subdirektri, subdirektri. O subdirektri ağaçtaki bir dal. Eğer onun altındaki file'ların hepsinin custodium ya aynısı, hepsi için ayrı ayrı custodium bilgisi tutmaya gerek yok. Sadece subdirektri için verilmesi yeter.
+
+418
+01:42:56,275 --> 01:43:13,655
+1985, o dönem için bir networke izinsiz girilmesi, güvenlik açısından izinsiz girilmesi,
+
+419
+01:43:24,243 --> 01:43:33,884
+Bu dönem için sınıflandırılmış. 85'ten bahsediyoruz yine o dönem için. Hoş bugün de çok farklı değil ama bugün ne demişler?
+
+420
+01:43:36,763 --> 01:43:49,743
+Paper'da var. Çünkü distributed bir yapıdan bahsediyorsak güvenlikten de bahsetmemiz lazım. Hatta locusu konuşurken hatırlayın. Neden bahsettik?
+
+421
+01:43:51,604 --> 01:43:57,644
+Akses Kontrol Listlerden bahsettik. Yine güvenlikle alakalı bir şey. Evet, dinliyorum arkadaşlar.
+
+422
+01:44:08,659 --> 01:44:25,939
+Bakın demişler ki, Voidoc and Kent classify breaches of security in a network as the unauthorized release of information, modification of information or denial of resource usage.
+
+423
+01:44:26,939 --> 01:44:34,500
+Değil mi? Denial of service'in 85'teki adı denial of resource usage. Ne kadar ilginç.
+
+424
+01:44:35,220 --> 01:44:43,700
+Daha o dönemde şey oluyor, olaylar şekillenmeye başlıyor.
+
+425
+01:44:47,572 --> 01:44:55,307
+Evet. Daha aktif olmanızı...
+
+426
+01:45:00,212 --> 01:45:26,472
+Bekliyorum arkadaşlar. Sizin için güzel bir şey. Sonuçta ben bu paperları okuyorum, ediyorum, uzun zamandan beri anlatıyorum, konuşuyorum. Doğal olarak büyük bir çoğunluğu keşimde var. Sizlerle konuştukça daha da tazelenmiş oluyor ama sizlerin öğrenmenizi istiyorum biraz bu konuda.
+
+427
+01:45:27,060 --> 01:45:35,040
+Daha fazla tecrübe sahibi, bilgi sahibi olmanızı istiyorum. O yüzden daha aktif olursanız daha çok sevineceğim.
+
+428
+01:45:36,780 --> 01:45:53,060
+Evet, son paperı da size bırakıyorum. 26 numarayı. Bugünün ödevleri sayfada aktif hale geldi. Oradan devam edebilirsiniz.
+
+429
+01:45:54,100 --> 01:45:59,560
+Hepinize iyi günler diliyorum arkadaşlar. Haftaya görüşmek üzere.
+
+430
+01:46:00,660 --> 01:46:05,320
+Hocam 25'e atladık mı?
+
+431
+01:46:07,100 --> 01:46:07,920
+Anlamıyorum.
+
+432
+01:46:08,360 --> 01:46:10,340
+25'e atladık mı? Ben dedim ama.
+
+433
+01:46:11,820 --> 01:46:13,980
+[öğrenci] az önce uzun uzun söyledin.
+
+434
+01:46:13,980 --> 01:46:17,660
+Yok yok. 4 tane ya bu hafta. Ondan sonraki.
+
+435
+01:46:18,484 --> 01:46:23,504
+Tamam, sen o sırada bilgisayarın başında değildin herhalde. Son paperı size bırakıyorum dedim.
+
+436
+01:46:24,424 --> 01:46:28,064
+Yok hocam, öyle değil. Yani 23'te 24'ü şey yaptık da.
+
+437
+01:46:29,204 --> 01:46:30,784
+3 tane paper yaptık [öğrenci].
+
+438
+01:46:31,724 --> 01:46:33,824
+Ben yarıdan takip etmem.
+
+439
+01:46:33,824 --> 01:46:41,224
+Evet, yani Iolite, Locus ve AFS'yi yaptık. Sonuncusunu da NT File Traces'ı da size bırakıyorum dedim.
+
+440
+01:46:41,824 --> 01:46:42,264
+Tamam hocam.
+
+441
+01:46:43,084 --> 01:46:44,024
+Tamam, haydi.
+
+442
+01:46:44,024 --> 01:46:44,424
+Teşekkürler.
+
+443
+01:46:45,043 --> 01:46:51,623
+İyi günler. İyi günler sağ olun. İyi günler hocam. İyi günler hocam. Görüşmek üzere sağ olun. Görüşmek üzere.

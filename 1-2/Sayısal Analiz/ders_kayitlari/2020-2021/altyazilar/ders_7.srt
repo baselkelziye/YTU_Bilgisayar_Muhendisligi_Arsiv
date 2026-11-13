@@ -1,0 +1,6223 @@
+1
+00:00:03,439 --> 00:07:29,860
+Günaydın arkadaşlar.
+
+2
+00:07:29,860 --> 00:07:33,259
+Günaydın hocam.
+
+3
+00:07:33,259 --> 00:07:35,259
+Günaydın hocam.
+
+4
+00:07:35,259 --> 00:07:47,040
+26 kişi çok ilginç.
+
+5
+00:07:47,040 --> 00:07:53,959
+Derslerde bir devam sorunu var ama hayırlısı diye.
+
+6
+00:07:53,959 --> 00:08:01,740
+Şimdi bugün kaldığımız yerden devam edip bu chapterı bitireceğiz.
+
+7
+00:08:01,740 --> 00:08:06,740
+Biz Cholesky yöntemine kadar gelmiştik.
+
+8
+00:08:06,740 --> 00:08:09,740
+Kısaca ilk iki grubu bir tekrar edelim.
+
+9
+00:08:09,740 --> 00:08:11,740
+Sonra devam ederiz.
+
+10
+00:08:11,740 --> 00:08:15,740
+Gelecek hafta sınavımız var bu dersten.
+
+11
+00:08:15,740 --> 00:08:24,740
+Sınav normalde bu derste klasik usulüyle oluyor.
+
+12
+00:08:24,740 --> 00:08:26,740
+Dört veya beş soru.
+
+13
+00:08:26,740 --> 00:08:31,740
+En fazla beş soru olur ama ben beş bile olmayacağını düşünüyorum.
+
+14
+00:08:31,740 --> 00:08:43,740
+Normal diğer matematik sınavlarında olduğu gibi yani örgün dönemde klasik bir sınav olacak.
+
+15
+00:08:43,740 --> 00:08:47,740
+Bu soruları çözeceksiniz A4K'da.
+
+16
+00:08:47,740 --> 00:08:57,740
+Lütfen çözümünüzle alakalı yani çözümlerinize okunabilir yazmanız bizim için çok önemli.
+
+17
+00:08:57,740 --> 00:09:07,740
+Okunabilirliğin yanında düzgün bir şekilde taramanız gerekiyor ve PDF haline dönüştürmeniz gerekiyor.
+
+18
+00:09:07,740 --> 00:09:17,740
+Bunları ben kural olarak yazacağım ama ders öncesi kayıtlara geçmesi adına tekrar söyleyelim.
+
+19
+00:09:17,740 --> 00:09:27,149
+PDF dışında sadece bir resim dosyası formatında falan gelen şeyler maalesef eksik değerlendireceğim.
+
+20
+00:09:27,149 --> 00:09:29,149
+Poan kıracağım artık.
+
+21
+00:09:29,149 --> 00:09:33,149
+Çünkü yaklaşık bir yıldır bu süreçte içeceğiz.
+
+22
+00:09:33,149 --> 00:09:39,149
+Artık bazı şeyleri özenli yapmanın nasıl olduğunu öğrenmiş olmanız gerekiyor.
+
+23
+00:09:39,149 --> 00:09:42,149
+Bunun için telefon uygulamaları var.
+
+24
+00:09:42,149 --> 00:09:47,149
+İşte Office Lens olabilir veya işte Adobe Scan uygulamaları var.
+
+25
+00:09:47,149 --> 00:09:52,149
+Fotoğrafı çekiyorsunuz otomatik olarak size kaç tane sayfa varsa PDF olarak üretiyor.
+
+26
+00:09:52,149 --> 00:09:56,149
+Hiç yapamadığınız çektiğiniz fotoğrafları Word'a atarsınız.
+
+27
+00:09:56,149 --> 00:09:59,149
+Word PDF olarak kaydedebilirsiniz.
+
+28
+00:09:59,149 --> 00:10:07,149
+Neyse yani bunu yapamam ben diyen varsa sınav öncesi araştırsın ve yapmaya çalışsın.
+
+29
+00:10:07,149 --> 00:10:10,149
+Çünkü bize gelen şeylerde belli bir özen arıyoruz.
+
+30
+00:10:10,149 --> 00:10:14,149
+Eğer okunmayan bir şeyse bizim yapacağımız bir şey yok. Bu bir.
+
+31
+00:10:15,149 --> 00:10:26,149
+İkincisi online sistem üzeri dışında mail ile gelen şeyleri çok kabul etmeme taraf tarihime.
+
+32
+00:10:26,149 --> 00:10:31,149
+Neden böyle kayıtlar kayıt dışı bir iş yapılmış oluyor.
+
+33
+00:10:31,149 --> 00:10:36,149
+Burada bazı şeylerle karşılaşıyoruz.
+
+34
+00:10:36,149 --> 00:10:39,149
+Hocam ben sisteme yüklemiştim ama düşmemiş.
+
+35
+00:10:40,149 --> 00:10:44,149
+Bunu uzeme danışıyoruz şöyle bir cevap bulunuyor.
+
+36
+00:10:44,149 --> 00:10:49,149
+Hocam öğrenci arkadaş tam son anda yüklemek için butona basmış.
+
+37
+00:10:49,149 --> 00:10:51,149
+Son anda yetiştirmiş.
+
+38
+00:10:51,149 --> 00:10:55,149
+Ama sistem kapandığı için bunu rejekt etmiş, reddetmiş.
+
+39
+00:10:55,149 --> 00:10:57,149
+Bu normal bir türlü normaldir.
+
+40
+00:10:57,149 --> 00:11:00,149
+Onun için biz zaten süreyi buna göre ayarlıyoruz.
+
+41
+00:11:00,149 --> 00:11:06,149
+Son 5 dakikanızı bir şeyler yazmakla değil sisteme yüklemekle geçin.
+
+42
+00:11:06,149 --> 00:11:15,149
+İki satır şeyi yazıp 2 puan için belki riske giriyorsun ama bu riske değmez.
+
+43
+00:11:15,149 --> 00:11:20,149
+İki puan azalım yani ortada sıfır almak durumu var.
+
+44
+00:11:20,149 --> 00:11:27,149
+Sisteme zamanında yüklediniz yani ne bileyim sistem 9'da kapanıyordu siz 8.50'de falan yüklediniz.
+
+45
+00:11:27,149 --> 00:11:33,149
+Bu yükleme işlemi başarılı bir şekilde gerçekleştirilmiştir diye bunu herkes yapsın.
+
+46
+00:11:33,149 --> 00:11:35,149
+Ekran görüntüsü aldım.
+
+47
+00:11:35,149 --> 00:11:38,149
+İsterseniz sisteme yükleme yaparken video kaydedin.
+
+48
+00:11:38,149 --> 00:11:41,149
+Bu ekran görüntüsünü de saklayın.
+
+49
+00:11:41,149 --> 00:11:49,149
+Oldu ki sınavlarda sizin puanınız çıkmamışsa ekran görüntüsünü delil olarak bize sunarsınız.
+
+50
+00:11:49,149 --> 00:11:58,149
+Ben sınavdan sonra gönderenlerin dosyalarını yani kimler gönderdi bunu ilan edeceğim.
+
+51
+00:11:58,149 --> 00:12:04,149
+Arkadaşlar gönderen arkadaşların listesi budur.
+
+52
+00:12:04,149 --> 00:12:14,149
+Eğer içerisinde adınız yoksa hemen kanıtınızla beraber, yüklediğinize dair kanıtla beraber mailime gönderelim diyeceğim.
+
+53
+00:12:14,149 --> 00:12:21,149
+Belki şey de açabiliriz yani ikinci bir yükleme aracı Google Form da açabilirim ama hem oraya hem oraya yüklensin diye.
+
+54
+00:12:21,149 --> 00:12:25,149
+Bizim için esas olan online yıldız elitöyeridir.
+
+55
+00:12:26,149 --> 00:12:37,149
+Burada hiç ben şu ana kadar hani kurallara uyduğu halde, zamanında yüklediği halde yüklenmemiş gibi görünerek kimseyi görmedim.
+
+56
+00:12:37,149 --> 00:12:44,149
+Hocam oradaki en büyük sıkıntı, uzun bir süre açıyoruz yayını, bir saat boyunca hiçbir şey yapılmıyor ekran.
+
+57
+00:12:44,149 --> 00:12:49,149
+Sonra sınav dosyasını ekliyoruz, kaydeta bastığından sistemden atıyoruz yani.
+
+58
+00:12:49,149 --> 00:12:55,149
+Ne otorumunu sonlandırıyor, ne de dükkandan çıkıyor. Çok saçma bir yapı.
+
+59
+00:12:55,149 --> 00:13:01,149
+Zaten şu, klasik bir sınavda sistemden dosyayı indireceksiniz, sisteminizi kapatacaksınız.
+
+60
+00:13:01,149 --> 00:13:05,149
+Sonra tekrar gireceksiniz. Ben öyle biliyorum.
+
+61
+00:13:05,149 --> 00:13:10,149
+Girdikten sonra da dosyanızı yüpeceksiniz. Uzun süre açık kalmasına gerek yok ki.
+
+62
+00:13:10,149 --> 00:13:13,149
+Aynı şey benim ekranımda da oluyor.
+
+63
+00:13:13,149 --> 00:13:22,149
+Ben ders vermek için online sisteme girdiğimde sabah girdim, öğleden sonraki derste kadar sistem açık kalıyorsa zaten sistem belli bir time out var onun.
+
+64
+00:13:22,149 --> 00:13:25,149
+O sürede olunca sistemden çıkıyor.
+
+65
+00:13:25,149 --> 00:13:30,149
+Ekranı açık duruyor ama tıkladığın zaman sizi atıyor sistemde.
+
+66
+00:13:30,149 --> 00:13:36,149
+Ama o yenilenmediği için sayfa, sen tıkladığında sayfa yenileneceği için ondan sonra seni atmış gibi görüyor.
+
+67
+00:13:36,149 --> 00:13:40,149
+Hayır bu çoktan attı seni. Yani senin oturumun çoktan sonlandı.
+
+68
+00:13:40,149 --> 00:13:46,149
+Onun için tavsiyem bu tarz şeylerde gerekirse kapatın.
+
+69
+00:13:46,149 --> 00:13:50,149
+Autorefresh yapsanız bile onlara çok güvenmeyin arkadaşlar.
+
+70
+00:13:50,149 --> 00:13:53,149
+Yani sistemi kapatmakta hiç bir problem yok sistemden sonuçta.
+
+71
+00:13:53,149 --> 00:13:55,149
+Size hiçbir şey gelmeyecek.
+
+72
+00:13:55,149 --> 00:13:58,149
+Soruyu indirdiniz, çözümünüzü yaparsınız.
+
+73
+00:13:58,149 --> 00:14:00,149
+Bir saniye.
+
+74
+00:14:00,149 --> 00:14:05,149
+Hatta iki tane web browser kullanıyorsanız diğer web browserdan login olun.
+
+75
+00:14:05,149 --> 00:14:08,149
+Hani işi daha garantiye alın ben onu da tavsiye edebilirim.
+
+76
+00:14:08,149 --> 00:14:12,149
+Ne bileyim birinde Chrome vardır, birinde Internet Explorer vardır.
+
+77
+00:14:12,149 --> 00:14:14,149
+Öbüründen girersiniz, öyle yıklarsınız.
+
+78
+00:14:14,149 --> 00:14:17,149
+Ama kesinlikle ve kesinlikle,
+
+79
+00:14:17,149 --> 00:14:19,149
+bu sistemde bir şey gelmeyecek.
+
+80
+00:14:19,149 --> 00:14:21,149
+Bu sistemde bir şey gelmeyecek.
+
+81
+00:14:21,149 --> 00:14:23,149
+Bu sistemde bir şey gelmeyecek.
+
+82
+00:14:23,149 --> 00:14:25,149
+Bu sistemde bir şey gelmeyecek.
+
+83
+00:14:25,149 --> 00:14:27,149
+Bu sistemde bir şey gelmeyecek.
+
+84
+00:14:28,149 --> 00:14:30,149
+Ama kesinlikle ve kesinlikle
+
+85
+00:14:30,149 --> 00:14:33,149
+yüklediğiniz ve başarılı olduğuna dair
+
+86
+00:14:33,149 --> 00:14:35,149
+ekran görüntüsünü alın.
+
+87
+00:14:35,149 --> 00:14:38,149
+Gerekirse videoda kaydedin.
+
+88
+00:14:38,149 --> 00:14:40,149
+Oldu da bir hata oldu.
+
+89
+00:14:40,149 --> 00:14:42,149
+Yani sistemden kaynaklı bir hata oldu.
+
+90
+00:14:42,149 --> 00:14:47,149
+Bunu en azından biz delil olarak sunarız.
+
+91
+00:14:47,149 --> 00:14:55,149
+Yoksa bize de sınav bitmiş yarım saat sonra niye ödev alıyorsun diye savunma istenebiliyor.
+
+92
+00:14:55,149 --> 00:14:57,149
+Buna da gerek kalmasın.
+
+93
+00:14:57,149 --> 00:14:59,149
+Bu konuda biz de mağdur olmak istemiyoruz.
+
+94
+00:14:59,149 --> 00:15:01,149
+Siz de mağdur etmek istemiyoruz.
+
+95
+00:15:01,149 --> 00:15:03,149
+Buna dikkat edelim.
+
+96
+00:15:03,149 --> 00:15:10,980
+Bu dersin sonuna kadar gördüğümüz her konudan sınavda mesul olacaksınız.
+
+97
+00:15:10,980 --> 00:15:13,980
+Yani üçüncü chapter oluyor bu.
+
+98
+00:15:13,980 --> 00:15:19,980
+Bundan başka bizim integral var, türe var, sonlu farklar var,
+
+99
+00:15:20,980 --> 00:15:27,980
+Interpolasyon var, üç veya dört chapterımız var ama onlarda yöntemler bu kadar uzun değil.
+
+100
+00:15:27,980 --> 00:15:29,980
+Konular biraz daha sınırlı.
+
+101
+00:15:29,980 --> 00:15:33,980
+O konular biraz daha nispeten hızlı ilerleyecek.
+
+102
+00:15:33,980 --> 00:15:37,980
+Onlar da final konularına ve bize ikiye dahil olur.
+
+103
+00:15:37,980 --> 00:15:41,259
+Evet.
+
+104
+00:15:41,259 --> 00:15:43,259
+Soru olarak bir de şunu söyleyeyim.
+
+105
+00:15:43,259 --> 00:15:48,259
+Sınav sorularını çözerken eğer detaylı bir şekilde çözün diyorsak
+
+106
+00:15:48,259 --> 00:15:50,259
+yani adım adım bütün adımları gösterin.
+
+107
+00:15:50,259 --> 00:15:53,259
+Sonuçta biz size hep aslında algoritma anlatıyoruz burada.
+
+108
+00:15:53,259 --> 00:15:59,259
+O algoritmaya uygun olarak adım adım gösterin diyorsak adım adım göstermeniz gerekiyor.
+
+109
+00:15:59,259 --> 00:16:02,259
+Aradaki adımları atlamamanız gerekiyor.
+
+110
+00:16:02,259 --> 00:16:06,259
+Yani ben buradan x'i elde ettim ama neye göre elde ettim belli değil.
+
+111
+00:16:06,259 --> 00:16:10,259
+Yani o işlemin nasıl elde edildiğini göstermek gerekiyor.
+
+112
+00:16:10,259 --> 00:16:15,259
+Aynı bir algoritma yazar gibi yani bir bilgisayarda bir şey kodlar gibi çözümünüzü,
+
+113
+00:16:15,259 --> 00:16:22,259
+analitik çözümünüzü veya işte bu sayısal analitik gösterdiğimiz algoritmik çözümü adım adım göstermek gerekiyor.
+
+114
+00:16:22,259 --> 00:16:26,259
+Burada zaten biz yaptığımız örneklerde hep onu söylüyoruz.
+
+115
+00:16:26,259 --> 00:16:30,259
+Bir hesap makinesi bulundurmanız iyi olur.
+
+116
+00:16:30,259 --> 00:16:35,259
+Veya işte bir elektronik hesap makinesi işte yazımsal olarak kullanmanız iyi olur.
+
+117
+00:16:35,259 --> 00:16:38,259
+Çünkü bir günden sonra bir basamak değil,
+
+118
+00:16:38,259 --> 00:16:41,259
+işte dört basamak, üç basamak böyle şeyler diyeceğiz.
+
+119
+00:16:41,259 --> 00:16:43,259
+Bunlara bakmanız gerekecek.
+
+120
+00:16:43,259 --> 00:16:47,259
+Bu konuda yaparken bunu elle yapmanız pek mümkün değil.
+
+121
+00:16:47,259 --> 00:16:53,259
+En basitinden Windows'un hesap makinesi bile iş görür diye düşünüyorum ben.
+
+122
+00:16:53,259 --> 00:16:56,259
+Evet herhangi bir sorumuz var bu konuda.
+
+123
+00:16:56,259 --> 00:17:01,259
+Hocam chat'e yazmıştım ama cevap vermiş miydiniz? Duyamadım da ben.
+
+124
+00:17:01,259 --> 00:17:03,259
+Chat'e ne yazdım?
+
+125
+00:17:03,259 --> 00:17:09,259
+Chat'te şu an benim 9.15 gece başlıyoruz diyor [öğrenci]'in yazdıkları var.
+
+126
+00:17:09,259 --> 00:17:11,259
+O zaman size düşünmüş olacağım.
+
+127
+00:17:11,259 --> 00:17:16,259
+Yani yanlış anlaşılmayayım diye hani o öyle yapıyor, bu böyle yapıyor olmasın da.
+
+128
+00:17:16,259 --> 00:17:18,259
+Yani öyle anlaşılırsa özür dilerim.
+
+129
+00:17:18,259 --> 00:17:20,259
+Şimdiden şey soracaktım ben.
+
+130
+00:17:20,259 --> 00:17:26,259
+Bu projeler her grup kendi içerisinde mi değerlendirilecek yoksa hani ortak bir değerlendirme kriteri mi olacak?
+
+131
+00:17:26,259 --> 00:17:32,259
+Yani bizim kriterlerimiz şey Banu Hoca'yla sınavda da projede de hepsinde aynı.
+
+132
+00:17:32,259 --> 00:17:38,259
+Banu Hoca yöntemler konusunda geçen dönemde aynı şekilde yapmıştı.
+
+133
+00:17:38,259 --> 00:17:45,259
+Sadece normal fonksiyonlar üzerinden ilerlemişti hem regresyonda hem de bu dengden bulmalarda.
+
+134
+00:17:45,259 --> 00:17:52,259
+Hani siz geçen derslerde işte logaritma, elen veya...
+
+135
+00:17:52,259 --> 00:17:55,259
+Normal fonksiyondan kastın polinyon fonksiyonuysa...
+
+136
+00:17:55,259 --> 00:17:56,259
+Polinyon fonksiyonu hocam.
+
+137
+00:17:56,259 --> 00:17:58,259
+Sadece polinyon fonksiyonu.
+
+138
+00:17:58,259 --> 00:18:00,259
+İlk başta onun üzerinde duracağım.
+
+139
+00:18:00,259 --> 00:18:03,259
+Ama benim söylediğim şey daha jenerik bir şeydir.
+
+140
+00:18:03,259 --> 00:18:09,259
+Yani temel bütün fonksiyonları içerecek bir şey olursa hani ben daha çok hoşuma gider.
+
+141
+00:18:09,259 --> 00:18:13,259
+Çünkü bunlar matematiksel olarak modellenebilecek şeyler.
+
+142
+00:18:15,259 --> 00:18:24,259
+Tabii ben normalde bunun her bir, beş fonksiyonunda, beş türden fonksiyonunda kullanılması gerektiğini savunanlardanım.
+
+143
+00:18:24,259 --> 00:18:29,259
+Yoksa sadece polinyon fonksiyonuyla olacak olsa bu iş bir diziyle hallolur.
+
+144
+00:18:29,259 --> 00:18:37,259
+Onu hocayla konuşuruz ama ben gerekirse bunu bir ek puan şeklinde değerlendiririm.
+
+145
+00:18:37,259 --> 00:18:46,259
+Eğer hoca sadece polinyon olsun o konuda ben diretiyorum derse ben bunu kendi grubumda ek bir puan olarak yansıtırım.
+
+146
+00:18:47,259 --> 00:18:54,259
+Ama bizim yaptığımız her şey normalde herkese eşit şartlar altında.
+
+147
+00:18:54,259 --> 00:19:01,259
+Yani bütün grup var, eşit şartlar altında değerlendirecek şekilde olmasına dikkat ediyoruz.
+
+148
+00:19:01,259 --> 00:19:06,259
+Tabii burada hani herkesin yoğurt içi farklıdır derler.
+
+149
+00:19:06,259 --> 00:19:10,259
+Banu Hoca'yla bazı konuda ayrı düştüğümüz şeyler oluyor.
+
+150
+00:19:10,259 --> 00:19:12,259
+Ben bazen ekstra şeyler anlatıyorum.
+
+151
+00:19:12,259 --> 00:19:14,259
+Bazen ondan hızlı gidiyorum.
+
+152
+00:19:14,259 --> 00:19:18,259
+Buna elbette siz de dikkatinize geliyordur.
+
+153
+00:19:18,259 --> 00:19:26,259
+Diğer grup arkadaşlarınızla konuşuyorsunuzdur veya o grubun derslerini izliyorsunuzdur ki izleyin tavsiye ederim.
+
+154
+00:19:26,259 --> 00:19:41,259
+Ufak tefek farklılıklar normal ama ben asıl gayem çalışan arkadaş için, katkı sağlayan arkadaş için hiçbir zaman kötü niyetli olmam.
+
+155
+00:19:41,259 --> 00:19:45,259
+Her zaman şimdi öğrencinin hakkını gözetmeye çalışırım.
+
+156
+00:19:45,259 --> 00:19:47,259
+Onu da söyleyeyim.
+
+157
+00:19:47,259 --> 00:19:54,259
+Yani asgari gereksinimleri yapan birisi zaten bu dersten kalması pek mümkün değil.
+
+158
+00:19:54,259 --> 00:20:02,259
+Dersin çok böyle ezber tarafı da yok ki sınavlar vesaireler hep ders notu üzerinden yapılıyor.
+
+159
+00:20:02,259 --> 00:20:07,259
+Aslında dersten yüksek bir nota geçmek de gayet mümkün bir ders.
+
+160
+00:20:07,259 --> 00:20:12,259
+Çünkü hiç böyle sıfırdan bir algoritma tasarımı falan öyle bir şey yok burada.
+
+161
+00:20:12,259 --> 00:20:15,259
+Bunları niye söylüyorum?
+
+162
+00:20:15,259 --> 00:20:20,259
+Diğer grup farklı değerlendirir sınavını ben farklı değerlendirebilirim.
+
+163
+00:20:20,259 --> 00:20:25,259
+Arada mesela ne bileyim 10 puan 15 puan ortalama açısından fark olabilir.
+
+164
+00:20:25,259 --> 00:20:27,259
+Bunlara çok takılmayın.
+
+165
+00:20:28,259 --> 00:20:32,259
+İşlerinizi düzenli yaparsanız yani derse katılın.
+
+166
+00:20:32,259 --> 00:20:42,259
+Ondan sonra dersin konularını hakimiyet konusunda ben her zaman öğrencinin hakkını gözeteceğimi buradan tahvud edeyim.
+
+167
+00:20:42,259 --> 00:20:45,259
+Bunu söylerken de şunu söyleyeyim.
+
+168
+00:20:45,259 --> 00:20:49,259
+Yani tarlada izi olmayanın harman da yüzü olmaz derler.
+
+169
+00:20:49,259 --> 00:20:55,259
+Eğer ki yani derse katılmamış ne bileyim kuyuzların hiçbirisinde girmemiş sınavları çok kötü.
+
+170
+00:20:55,259 --> 00:21:02,259
+Ama dönem sonunda işte hocam mezun olacaktım şöyle bir durumum var diye mail ile geliyorlar bazen.
+
+171
+00:21:02,259 --> 00:21:06,259
+Onlara da çok bir olumlu cevap vermiyorum en azından.
+
+172
+00:21:06,259 --> 00:21:08,259
+Diyom ki üzgünüm diyorum.
+
+173
+00:21:08,259 --> 00:21:10,259
+Bunu da söyleyeyim.
+
+174
+00:21:10,259 --> 00:21:14,259
+Bu demek değildir ki Ahmet Hoca herkese yüksek puan veriyor.
+
+175
+00:21:14,259 --> 00:21:16,259
+Yok öyle bir şey yok.
+
+176
+00:21:16,259 --> 00:21:18,259
+Çok düşük puanla alanlar da var.
+
+177
+00:21:18,259 --> 00:21:22,259
+Yani verdiğim bütün derslerde 4 tane ders söylüyorum bu dönem.
+
+178
+00:21:23,259 --> 00:21:32,259
+Bu tamamen benim yani tecrübe ettiğim kadarıyla şu ana kadar hani başarılı olan başarılı olmayanlar diye ayırt edersek.
+
+179
+00:21:32,259 --> 00:21:39,259
+Hocanın tabii anlatmada aktarmada belli bir rolü var ama asıl belirli şey öğrencidir.
+
+180
+00:21:39,259 --> 00:21:47,259
+Yani aynı şeyi anlatıyorum herkese hatta uzaktan eğitimde bence daha iyi oluyor sınıf ortamından.
+
+181
+00:21:47,259 --> 00:21:51,259
+Benim kendime göre bazı problemlerim var sınıf ortamında işte kalabalık.
+
+182
+00:21:51,259 --> 00:21:56,259
+Ondan sonra ses problemim ayrıca rahatsızlığımdan dolayı.
+
+183
+00:21:56,259 --> 00:22:01,259
+Burası biraz daha bana göre uygunduğumda sınıf haline getirmiş durumdayım.
+
+184
+00:22:01,259 --> 00:22:05,259
+Ama bazısı çok iyi öğreniyor anlattığımdan çok memnun oluyor.
+
+185
+00:22:05,259 --> 00:22:07,259
+Bazısı hiçbir şey anlamadım diyor.
+
+186
+00:22:07,259 --> 00:22:10,259
+Tamamen bireysel öğrenci ile alakalı.
+
+187
+00:22:10,259 --> 00:22:16,259
+Belki bu 3-5 kişidir iyi olmayan anlamayan veya yeterli olmayan.
+
+188
+00:22:16,259 --> 00:22:19,259
+Bu biraz öğrenciden kaynaklı diye düşünüyorum.
+
+189
+00:22:19,259 --> 00:22:22,259
+Genel bir problem varsa o zaman hocadan kaynaklı bir şeydir.
+
+190
+00:22:22,259 --> 00:22:25,259
+Vardır ne bileyim o konuyu ben iyi anlatamamışımdır.
+
+191
+00:22:25,259 --> 00:22:26,259
+O da mümkün.
+
+192
+00:22:26,259 --> 00:22:30,259
+O konuda zaten sizlerden bir geri bildirim almaya gayret ediyorum.
+
+193
+00:22:31,259 --> 00:22:33,259
+Diyelim 20 dakika geçiş yaptık.
+
+194
+00:22:33,259 --> 00:22:34,259
+26 kişiyle başladık.
+
+195
+00:22:34,259 --> 00:22:36,259
+20 dakikada 30 kişiye çıktık.
+
+196
+00:22:36,259 --> 00:22:42,259
+Çok linear artışla herhalde ders bitmeden 50'ye 60'a anca ulaşacağız.
+
+197
+00:22:42,259 --> 00:22:43,259
+Öyle görünüyor.
+
+198
+00:22:43,259 --> 00:22:45,259
+Teşekkür ederim hocam zamanınızı aldım.
+
+199
+00:22:47,259 --> 00:22:48,259
+Yok estağfurullah.
+
+200
+00:22:48,259 --> 00:22:50,259
+Bunları konuşmuş olmak iyi.
+
+201
+00:22:50,259 --> 00:22:52,259
+Bazen sürekli böyle derste başlıyoruz.
+
+202
+00:22:52,259 --> 00:22:55,259
+Böyle şeylerden bahsetmek iyi.
+
+203
+00:22:55,259 --> 00:23:02,259
+Ben hep bir öğrenci başarılı oluyorsa benim orada birleyiciliğim çok düşüktür.
+
+204
+00:23:02,259 --> 00:23:04,259
+Yani anlatmışımdır.
+
+205
+00:23:04,259 --> 00:23:08,259
+Hani ben olmasam başka birisi olsa o da aynı şeyi anlatır.
+
+206
+00:23:08,259 --> 00:23:10,259
+Öğrenci arkadaş yine çalışır, öğrenirdi.
+
+207
+00:23:10,259 --> 00:23:15,259
+Baştan siz burada anahtar role sahipsiniz.
+
+208
+00:23:15,259 --> 00:23:17,259
+Önemli olan bu da sizin kendi gayretiniz.
+
+209
+00:23:17,259 --> 00:23:29,259
+Bu olmadan çok iyi bir hoca da olsa, çok iyi bir ne bileyim eğitmen de olsa sizde bir şey olmadan gayret olmadan çok fazla bir sonuç elde edilmiyor.
+
+210
+00:23:29,259 --> 00:23:31,259
+Diyelim de dersimize devam edelim.
+
+211
+00:23:31,259 --> 00:23:33,259
+Herhangi bir sorununuz yoksa.
+
+212
+00:23:33,259 --> 00:23:42,700
+Şimdi linear denk lamp sistemleri ve bugün nanliler denk lamp sistemleri ile alakalı konularımızı bitireceğiz.
+
+213
+00:23:42,700 --> 00:23:56,700
+Biz geçen derste dolayısız yöntemler dediğimiz aslında tam sonucu veren, exact sonuç dediğimiz şu üç yöntem üzerinde konuşmuştuk.
+
+214
+00:23:56,700 --> 00:24:00,700
+Gauss eliminasyon yöntemi nasıl bir şey yapıyordu?
+
+215
+00:24:00,700 --> 00:24:02,700
+Şimdi birinize soralım burada.
+
+216
+00:24:02,700 --> 00:24:09,210
+Mesela [öğrenci].
+
+217
+00:24:09,210 --> 00:24:15,460
+[öğrenci].
+
+218
+00:24:15,460 --> 00:24:20,700
+[öğrenci].
+
+219
+00:24:20,700 --> 00:24:22,700
+Hocam eliminasyonu mu sormuştunuz?
+
+220
+00:24:22,700 --> 00:24:23,700
+Evet [öğrenci].
+
+221
+00:24:23,700 --> 00:24:25,700
+Gauss eliminasyon yöntemi.
+
+222
+00:24:25,700 --> 00:24:27,700
+Çok basit bir şekilde söylemek gerekiyor.
+
+223
+00:24:27,700 --> 00:24:29,700
+Nasıl bir şey yapıyordu?
+
+224
+00:24:29,700 --> 00:24:31,700
+Üst üçgeni sıfırlamaya çalışıyorduk.
+
+225
+00:24:31,700 --> 00:24:33,700
+Üst üçgen mi alt üçgen mi?
+
+226
+00:24:33,700 --> 00:24:35,700
+Daha çok alt üçgen.
+
+227
+00:24:35,700 --> 00:24:37,700
+Literatürde bunu alt üçgen diye görürsünüz.
+
+228
+00:24:37,700 --> 00:24:41,700
+Yani şuradaki değerler başka bir şey olur, şuradakiler sıfır olur.
+
+229
+00:24:41,700 --> 00:24:47,700
+Aslında üst üçgen de sıfırlanabilir de bunu aşağıya doğru yapmak daha makul oluyor.
+
+230
+00:24:47,700 --> 00:24:49,700
+Genel kabul bu şekilde.
+
+231
+00:24:49,700 --> 00:24:51,700
+Çünkü şuradaki değeri alacaksın.
+
+232
+00:24:51,700 --> 00:24:53,700
+Şuna işitleyeceksin.
+
+233
+00:24:53,700 --> 00:24:55,700
+Daha sonra bundan diğerlerini, bundan diğerlerini bulacaksın.
+
+234
+00:24:55,700 --> 00:24:59,700
+Alt üçgen matrisi sıfır hale getiriyorduk.
+
+235
+00:24:59,700 --> 00:25:01,700
+Pardon alt üçgeni sıfır haline getiriyorduk.
+
+236
+00:25:01,700 --> 00:25:03,700
+Doğru.
+
+237
+00:25:03,700 --> 00:25:07,230
+Teşekkür ederim.
+
+238
+00:25:07,230 --> 00:25:11,150
+[öğrenci].
+
+239
+00:25:11,150 --> 00:25:13,150
+Evet hocam.
+
+240
+00:25:13,150 --> 00:25:15,150
+[öğrenci] ne yapıyordu peki burada?
+
+241
+00:25:15,150 --> 00:25:17,150
+Orada da birin matrisi haline getiriyorduk.
+
+242
+00:25:17,150 --> 00:25:19,150
+Hem üst üçgen hem alt üçgeni sıfırlıyorduk.
+
+243
+00:25:19,150 --> 00:25:21,150
+Birin matris değil mi?
+
+244
+00:25:21,150 --> 00:25:23,150
+Sıfırlıyor.
+
+245
+00:25:23,150 --> 00:25:25,150
+Güzel teşekkür ederim.
+
+246
+00:25:25,150 --> 00:25:29,150
+Bir de bir arkadaşa kremer yöntemini soralım.
+
+247
+00:25:29,150 --> 00:25:33,359
+[öğrenci].
+
+248
+00:25:33,359 --> 00:25:35,359
+Bilmiyorum hocam.
+
+249
+00:25:35,359 --> 00:25:37,359
+Bilmiyorsunuz tamam.
+
+250
+00:25:37,359 --> 00:25:41,359
+Geçen derste veya slidere bakarsanız herhalde öğrendiniz.
+
+251
+00:25:41,359 --> 00:25:48,140
+Bunları şeyde anlatmıyorlar mı bu kremer yöntemini dinerce bir dersinde?
+
+252
+00:25:48,140 --> 00:25:50,140
+Anlattılar.
+
+253
+00:25:50,140 --> 00:25:52,140
+Efendim?
+
+254
+00:25:52,140 --> 00:25:54,140
+Anlattılar.
+
+255
+00:25:54,140 --> 00:25:56,140
+Bakarsınız.
+
+256
+00:25:56,140 --> 00:25:58,140
+[öğrenci] [öğrenci].
+
+257
+00:25:58,140 --> 00:26:00,140
+Benim hocam.
+
+258
+00:26:00,140 --> 00:26:02,140
+Kremer yöntemi hakkında siz?
+
+259
+00:26:02,140 --> 00:26:13,579
+Hocam her değişken için sonuç maddesinin sütününü koyuyorduk.
+
+260
+00:26:13,579 --> 00:26:21,579
+Sonra da onun determinantını bütün determinantını bölüp o değişken için şey buluyorduk.
+
+261
+00:26:21,579 --> 00:26:27,579
+Yani A i'nin A'ya determinantını, A i'nin determinantını, A'ya determinantını oranlıyorduk.
+
+262
+00:26:27,579 --> 00:26:31,579
+Şimdi A i'yi diyor ki [öğrenci] şöyle yapacağız.
+
+263
+00:26:31,579 --> 00:26:35,579
+2, 3, 4, 6, 8, 7, 5, 4, 0 olsun.
+
+264
+00:26:35,579 --> 00:26:37,579
+Bunlar kat sayı matrisimiz.
+
+265
+00:26:37,579 --> 00:26:41,579
+Bu zaten bizim A'mız olacak.
+
+266
+00:26:41,579 --> 00:26:45,579
+Vektörümüzde 1, 2, 3.
+
+267
+00:26:45,579 --> 00:26:47,579
+İşte ne yapacağız?
+
+268
+00:26:47,579 --> 00:26:57,579
+Şu 1, 2, 3'ü buraya eklersek X1'i bulmak için, buraya eklersek X2'yi bulmak için, buraya eklersek X3'i bulmak için A i matrisini elde ederiz.
+
+269
+00:26:57,579 --> 00:26:59,579
+Yani şunun yerine bu 1, 2, 3'ü getirdik.
+
+270
+00:26:59,579 --> 00:27:01,579
+A1 matrisi oldu diyoruz.
+
+271
+00:27:01,579 --> 00:27:03,579
+Teşekkür ederim.
+
+272
+00:27:03,579 --> 00:27:09,579
+Şimdi bu yöntemlerde aslında bunların hepsinin algoritmik olarak geliştirmesi mümkün.
+
+273
+00:27:09,579 --> 00:27:13,579
+Tabii birazcık karmaşıklık fazla oluyor.
+
+274
+00:27:13,579 --> 00:27:17,579
+Bizim normal şeyde yaptığımız yöntemlerden çok bir farkı da yok.
+
+275
+00:27:17,579 --> 00:27:23,579
+Yani analitik çözüm yaparken 2X artı 5Y eşittir 18 olsun.
+
+276
+00:27:23,579 --> 00:27:29,579
+X-3Y eşittir ne olsun 2 olsun diyelim.
+
+277
+00:27:29,579 --> 00:27:31,579
+İşte ne yapıyorduk?
+
+278
+00:27:31,579 --> 00:27:35,579
+Burayı 2 ile çarparsak, hatta X2 ile çarparsak işte bu 0 oluyordu.
+
+279
+00:27:35,579 --> 00:27:41,579
+Ondan sonra burası 11Y oluyordu.
+
+280
+00:27:41,579 --> 00:27:43,579
+X2 ile çarptık.
+
+281
+00:27:43,579 --> 00:27:47,579
+X4 ne oldu? 14 mi oldu?
+
+282
+00:27:47,579 --> 00:27:49,579
+Y eşittir 14 böyle.
+
+283
+00:27:49,579 --> 00:28:01,579
+İşte şu yaptığımız Gauss elimination, Gauss Jordan yöntemi de bir anlamda elementer satır işlemlerinde 2 ile çarpmak, işte toplamak, çıkarmak gibi işlemler.
+
+284
+00:28:01,579 --> 00:28:11,579
+Biz çok fazla değişken olduğunda şu şey ile çarp, çıkar, topla veya yerine koyma metodu burada biraz güç hale geliyor.
+
+285
+00:28:11,579 --> 00:28:15,579
+Halbuki şu yöntemlerde hedefimiz belli.
+
+286
+00:28:15,579 --> 00:28:19,579
+İşte bir birim madris elde etmek veya alt tarafı sıfırlamak.
+
+287
+00:28:19,579 --> 00:28:21,579
+O zaman daha rahat hareket edebiliyoruz.
+
+288
+00:28:21,579 --> 00:28:29,579
+Yani neyi nasıl yaptığımızı, yaptığımız adımların sonucunun ne olduğunu ve sonuca yaklaştığımızı daha rahat görüyoruz.
+
+289
+00:28:29,579 --> 00:28:33,579
+Yani bu yöntemler kullanışlı ve şey var.
+
+290
+00:28:33,579 --> 00:28:39,579
+Bu yöntemlerin hepsinin ortak bir özelliği tam çözüm yani exact solution dediğimiz,
+
+291
+00:28:39,579 --> 00:28:47,579
+gerekliliği olan yani elde edilmesi gereken X ve Y'lerin kendi sonuçlarını veriyor.
+
+292
+00:28:47,579 --> 00:28:51,579
+Bunun bir üçüncü yöntemi olarak Choleski'ye bakacağız.
+
+293
+00:28:51,579 --> 00:28:59,579
+Hayli yöntemler dediğimiz tam sonuç değil de approximate solution dediğimiz,
+
+294
+00:28:59,579 --> 00:29:05,579
+yaklaşık çözümler üzerinden biraz daha hani hızlı çalışabilecek yöntemlere bakacağız.
+
+295
+00:29:05,579 --> 00:29:11,579
+Bunların ne olduğu, bu kramer yöntemi nedir, gauss elimination yöntemi nedir,
+
+296
+00:29:11,579 --> 00:29:15,579
+hocanın slide'larında detaylı olarak slide'e eklendi.
+
+297
+00:29:15,579 --> 00:29:19,579
+Bu şeylerden sınav öncesi çalışmanız yeterli.
+
+298
+00:29:19,579 --> 00:29:23,579
+Ben tavsiye ederim bir de ekstra bunlulardan soru çözün,
+
+299
+00:29:23,579 --> 00:29:29,579
+farklı ne bileyim 3'e 3'lük bir maddesinin üzerinden soru çözün veya 4'e 4'lük maddesinden soru çözün.
+
+300
+00:29:29,579 --> 00:29:35,579
+Sınavda bakarsanız 4'e 4 çıkar, faydası olur.
+
+301
+00:29:35,579 --> 00:29:45,579
+Şimdi bu yöntem genel olarak alü yöntemi diye ifade ediliyor.
+
+302
+00:29:45,579 --> 00:29:51,579
+Böyle de şey var, buradaki A'daki şey bizim normal kat sayılar maddesimiz,
+
+303
+00:29:51,579 --> 00:29:53,579
+çok eski yönteminde.
+
+304
+00:29:53,579 --> 00:29:59,579
+Bu bir decomposition tekniğine dayanan bir yöntemdir.
+
+305
+00:29:59,579 --> 00:30:01,579
+Ne demek matrix decomposition?
+
+306
+00:30:01,579 --> 00:30:08,029
+Şöyle yazalım.
+
+307
+00:30:08,029 --> 00:30:13,759
+Bilinen bir kompleks bir matrixten,
+
+308
+00:30:13,759 --> 00:30:17,759
+kompleksten kastımız karmaşık sayılardan kastetmiyorum,
+
+309
+00:30:17,759 --> 00:30:25,759
+yani daha karmaşık diğer normal rare sayıların bulduğu bir maddisten,
+
+310
+00:30:25,759 --> 00:30:29,759
+daha simple maddeslere bir dönüşüm yapıyor.
+
+311
+00:30:29,759 --> 00:30:33,759
+Simple maddesler dediğimiz şey bu bir maddes olabilir.
+
+312
+00:30:33,759 --> 00:30:35,759
+Alt üçgen veya üst üçgen maddes olabilir.
+
+313
+00:30:35,759 --> 00:30:37,759
+Böyle bir dönüşüm yapıyor.
+
+314
+00:30:37,759 --> 00:30:43,759
+Yani bir maddesi daha kolay maddesler cinsinden yazmak,
+
+315
+00:30:43,759 --> 00:30:47,759
+bilinen maddes türleri cinsinden yazmak esasına dayadık.
+
+316
+00:30:47,759 --> 00:30:51,759
+Aslında bütün yöntem matematikte bizim bilgisayar bilimlerinde
+
+317
+00:30:51,759 --> 00:30:55,759
+karmaşık bir nesneyi daha simple nesneler cinsinden ifade edebilirsek,
+
+318
+00:30:55,759 --> 00:30:57,759
+yönetmesi, analiz etmesi daha kolay oluyor.
+
+319
+00:30:57,759 --> 00:31:01,759
+Yani burada da o yöntem ifade edilecek.
+
+320
+00:31:01,759 --> 00:31:04,759
+Şimdi normalde bizim denklem çözerken,
+
+321
+00:31:04,759 --> 00:31:08,759
+tabi bu çoğu eski yöntemi birkaç farklı şeyde de kullanılıyor,
+
+322
+00:31:08,759 --> 00:31:09,759
+konuda da kullanılıyor.
+
+323
+00:31:09,759 --> 00:31:12,759
+Biz denklem çözmek için bunu kullanacağız.
+
+324
+00:31:12,759 --> 00:31:14,759
+Bir bizim kat sayılar maddesimiz vardı.
+
+325
+00:31:14,759 --> 00:31:18,759
+Bir bilinmeyenler işte vektor halinde yazılıyordu.
+
+326
+00:31:18,759 --> 00:31:20,759
+Bir de sonuçlarımız vardı.
+
+327
+00:31:20,759 --> 00:31:24,759
+Yani a, x eşittir, c formatımız bildiğimiz bir format.
+
+328
+00:31:24,759 --> 00:31:27,759
+İşte bu a'yı lower ve upper,
+
+329
+00:31:27,759 --> 00:31:30,759
+yani buradaki l lower'a karşılık geliyor.
+
+330
+00:31:30,759 --> 00:31:32,759
+U'da upper'a karşılık geliyor.
+
+331
+00:31:32,759 --> 00:31:35,759
+İki farklı matris cinsinden yazıyoruz.
+
+332
+00:31:35,759 --> 00:31:37,759
+Burada ne olacak?
+
+333
+00:31:37,759 --> 00:31:38,759
+İlerleyelim.
+
+334
+00:31:38,759 --> 00:31:43,759
+A eşittir, L çarpı U dersek yerine yazarsak,
+
+335
+00:31:43,759 --> 00:31:46,759
+zaten bilinmeyenler matrisimiz.
+
+336
+00:31:46,759 --> 00:31:49,759
+C formatına getiriyoruz birinci durumda.
+
+337
+00:31:49,759 --> 00:31:52,759
+L'nin ve U'nun nasıl elde edileceğini birazdan göreceğiz.
+
+338
+00:31:52,759 --> 00:31:56,759
+Sonra U ile X'i çarptığımızda,
+
+339
+00:31:56,759 --> 00:31:59,759
+şurada U ile X'i çarpıyoruz.
+
+340
+00:31:59,759 --> 00:32:02,759
+Bir Y maddesi ara geçiş maddesi oluşturuyoruz.
+
+341
+00:32:02,759 --> 00:32:06,759
+Bu Y'yi daha sonra L ile çarpıp,
+
+342
+00:32:06,759 --> 00:32:09,759
+C'ye gideceğiz ve bilinmeyenlerimize ulaşacağız.
+
+343
+00:32:09,759 --> 00:32:13,759
+Şimdi bu çarpımlar aslında şey gibi görünüyor arkadaşlar.
+
+344
+00:32:13,759 --> 00:32:16,759
+Yani hepsi bir maddes çarpımında biliyorsun.
+
+345
+00:32:16,759 --> 00:32:19,759
+İçiçe üç tane döngü vardı.
+
+346
+00:32:19,759 --> 00:32:22,759
+Algoritmik olarak biraz daha karmışık gibi görünüyor ama
+
+347
+00:32:22,759 --> 00:32:27,759
+maddesi çarpmanın algoritması biraz önceki şurada bahsettiğimiz
+
+348
+00:32:27,759 --> 00:32:30,759
+diğer yöntemlere göre daha kolay olduğu için,
+
+349
+00:32:30,759 --> 00:32:32,759
+yani ne yapıyorsun?
+
+350
+00:32:32,759 --> 00:32:35,759
+İşte yeni maddesin,
+
+351
+00:32:35,759 --> 00:32:42,420
+I'sinin K'sına maddesin artı eşittir diyelim.
+
+352
+00:32:42,420 --> 00:32:46,420
+I'sinin G'siyle maddesin,
+
+353
+00:32:46,420 --> 00:32:50,420
+G'sin, I'sini veya ikinci maddes diyelim.
+
+354
+00:32:50,420 --> 00:32:52,420
+Çarpıp çarpıp topluyorsun.
+
+355
+00:32:52,420 --> 00:32:53,420
+Yani şu kadar bir şey.
+
+356
+00:32:53,420 --> 00:32:55,420
+Üç tane de döngü var.
+
+357
+00:32:55,420 --> 00:32:59,420
+Yazma açısından, algoritmik bakış açısından çok zor değil.
+
+358
+00:32:59,420 --> 00:33:04,420
+Bunların hepsi bu işi yaptığı için nispeten kolay bir yöntem.
+
+359
+00:33:04,420 --> 00:33:10,420
+Şimdi gelelim önce demek ki A'yı L' ve U'lar cinsinden yazmak.
+
+360
+00:33:10,420 --> 00:33:15,420
+Şimdi low dediğimiz, lower dediğimiz alt üçgen maddesi,
+
+361
+00:33:15,420 --> 00:33:19,420
+upper dediğimizde üst üçgen maddesi formatında yazmak oluyor.
+
+362
+00:33:19,420 --> 00:33:20,420
+Ve bunun genel hali,
+
+363
+00:33:20,420 --> 00:33:23,420
+eğer bizim böyle bir maddesimiz varsa A maddesimiz,
+
+364
+00:33:23,420 --> 00:33:26,420
+L kısmı bakın şu şekilde olacak.
+
+365
+00:33:26,420 --> 00:33:33,420
+L1, L2, L3 bakın lower triangle'da,
+
+366
+00:33:33,420 --> 00:33:38,420
+köşegen dahil olmak üzere tüm değerler bir sayısal değer.
+
+367
+00:33:38,420 --> 00:33:40,420
+Bir olabilir, başka bir şey olabilir.
+
+368
+00:33:40,420 --> 00:33:43,420
+Şuradaki değerler sıfır olacak.
+
+369
+00:33:43,420 --> 00:33:47,420
+Upper triangle'da da köşegen bir olmak zorunda.
+
+370
+00:33:47,420 --> 00:33:51,420
+Köşegenin üstündekiler işte bir real sayı olmak zorunda.
+
+371
+00:33:51,420 --> 00:33:52,420
+Bu formata getirmemiz gerekiyor.
+
+372
+00:33:52,420 --> 00:33:59,420
+Peki bu formata getirdiğimizde değerlerin, bunların sayısal değerlerini nasıl bulacağız?
+
+373
+00:33:59,420 --> 00:34:02,420
+Bunu bulmak için arkadaşlar bir çarpım yapıyoruz.
+
+374
+00:34:02,420 --> 00:34:07,420
+Şimdi L ile U'yu çarptığında şu A1,1'e eşit olması gerekiyor.
+
+375
+00:34:07,420 --> 00:34:08,420
+Yani bir tane çarpma yapalım.
+
+376
+00:34:08,420 --> 00:34:13,420
+Mesela L şurayla, şurayı çarparsak neyi buluruz?
+
+377
+00:34:13,420 --> 00:34:23,550
+L1,1 çarpı 1 sıfır çarpı sıfır sıfır çarpı sıfır.
+
+378
+00:34:23,550 --> 00:34:26,920
+Öyle değil mi?
+
+379
+00:34:26,920 --> 00:34:29,920
+Bu neye eşittir arkadaşlar? A1,1'dir.
+
+380
+00:34:29,920 --> 00:34:32,920
+Dolayısıyla A1,1 doğrudan neye eşit oluyormuş?
+
+381
+00:34:32,920 --> 00:34:34,920
+L1,1'e eşit oluyormuş.
+
+382
+00:34:34,920 --> 00:34:35,920
+Bu bilgiye ediliyoruz.
+
+383
+00:34:35,920 --> 00:34:37,920
+Bir tane daha yapalım.
+
+384
+00:34:37,920 --> 00:34:43,260
+Şu satırla bu sütunu çarpıyorum.
+
+385
+00:34:43,260 --> 00:34:46,260
+L2,1 çarpı 1.
+
+386
+00:34:46,260 --> 00:34:58,730
+Artı L2,2 çarpı sıfır artı sıfır çarpı sıfır.
+
+387
+00:34:58,730 --> 00:35:01,730
+Bu da neye karşılık gelecek?
+
+388
+00:35:01,730 --> 00:35:03,730
+A2,1'e mi karşılık gelecek?
+
+389
+00:35:05,099 --> 00:35:09,099
+Şununla şurayı çarpınca şu 2,1'e karşılık gelecek.
+
+390
+00:35:09,099 --> 00:35:11,929
+Öyle değil mi?
+
+391
+00:35:11,929 --> 00:35:16,929
+Şimdi A2,1'e baktığımızda L2,1 var, L2,2 var.
+
+392
+00:35:16,929 --> 00:35:18,929
+Şimdi bunlardan hiçbirini bilmiyoruz.
+
+393
+00:35:18,929 --> 00:35:23,929
+L2,1'i de L2,2'den bir şey bilsek çıkartabilirdik.
+
+394
+00:35:23,929 --> 00:35:25,929
+Halbuki bu birazdan gelecek bir şey.
+
+395
+00:35:25,929 --> 00:35:27,929
+Mesela bir de şunu yapalım.
+
+396
+00:35:27,929 --> 00:35:31,929
+Şu satırla şunu çarpalım.
+
+397
+00:35:31,929 --> 00:35:51,500
+L1,1 çarpı U1,2 artı sıfır çarpı 1 artı sıfır çarpı sıfır.
+
+398
+00:35:51,500 --> 00:35:53,500
+Şimdi bunlar sıfır geldi.
+
+399
+00:35:53,500 --> 00:35:54,500
+Bu neye karşılık gelecek?
+
+400
+00:35:54,500 --> 00:35:58,900
+A1,2'ye.
+
+401
+00:35:58,900 --> 00:36:00,900
+A1,2'nin sayısal değeri belli.
+
+402
+00:36:00,900 --> 00:36:01,900
+Ama aslında neyi bulacağım?
+
+403
+00:36:01,900 --> 00:36:05,900
+L1,1 ile U1,2'nin çarpımının sonucunu bulacağım.
+
+404
+00:36:05,900 --> 00:36:06,900
+Şu değerleri.
+
+405
+00:36:06,900 --> 00:36:12,900
+Bunların hepsi aşamalı olarak yani ben bütün çarpımları yaptığımda
+
+406
+00:36:12,900 --> 00:36:15,900
+bakın şu değeri buluyoruz, şu maddisi buluyoruz.
+
+407
+00:36:15,900 --> 00:36:18,900
+İlk başta L1,1 bulduk.
+
+408
+00:36:18,900 --> 00:36:23,900
+Eğer şunla çarparsak L2,1'i bulacağız şuradan.
+
+409
+00:36:23,900 --> 00:36:26,900
+Ondan sonra buradan L3,1'i bulacağız.
+
+410
+00:36:26,900 --> 00:36:31,900
+Birinci sütunumuz bakın tek bir değerden eşit ve tek bir değerlerden oluşuyor.
+
+411
+00:36:31,900 --> 00:36:34,900
+Bunların hepsi şuradaki değerlere eşit oluyor.
+
+412
+00:36:34,900 --> 00:36:39,900
+Sonra ikinci sütuna baktığımızda L1,1 ile A1,2.
+
+413
+00:36:39,900 --> 00:36:41,900
+U1,2'nin çarpımı.
+
+414
+00:36:41,900 --> 00:36:42,900
+Şimdi bu neye eşit olacak?
+
+415
+00:36:42,900 --> 00:36:43,900
+Şuna eşit olacak.
+
+416
+00:36:43,900 --> 00:36:44,900
+Ben bunu biliyorum.
+
+417
+00:36:44,900 --> 00:36:46,900
+Şunu zaten daha önceden hesaplamıştım.
+
+418
+00:36:46,900 --> 00:36:47,900
+Bunu da biliyorum.
+
+419
+00:36:47,900 --> 00:36:48,900
+Bilinmeyen bu var.
+
+420
+00:36:48,900 --> 00:36:51,900
+Bunu buna böldüğüm zaman bunu da bilmiş olacağım.
+
+421
+00:36:51,900 --> 00:36:56,409
+Bundan yola çıkarak L1,1 biliyorum.
+
+422
+00:36:56,409 --> 00:37:02,409
+U1,3'ü de buradan aynı şekilde şu A1,3'le bölerek bulabileceğim.
+
+423
+00:37:02,409 --> 00:37:10,409
+Dolayısıyla bu iki maddisi L ve U maddisi şu çarpım sonucunda elde edilmiş oluyor.
+
+424
+00:37:10,409 --> 00:37:12,409
+Buraya kadar var mı bir sorun?
+
+425
+00:37:12,409 --> 00:37:15,969
+Anlaşıldım bu.
+
+426
+00:37:15,969 --> 00:37:20,969
+Önce bu çarpmanın ne için kullanıldığını öğrenelim.
+
+427
+00:37:20,969 --> 00:37:25,969
+L ve U'yu bu çarpım maddesi sonucunda değerleri eşitleme yaparak
+
+428
+00:37:25,969 --> 00:37:32,969
+yani A,i,j ile şu çarpım sonucunda mesela T maddesi diyelim.
+
+429
+00:37:32,969 --> 00:37:40,969
+T'nin i,j'sini eşitleyerek L ve U'ları L ve U maddesini inşa edebiliyoruz.
+
+430
+00:37:40,969 --> 00:37:46,250
+Şimdi bunun inşa edilmesini yani şurada uzun uzun anlatmış.
+
+431
+00:37:46,250 --> 00:37:48,250
+Yani bunu anlatmaya gerek yok.
+
+432
+00:37:48,250 --> 00:37:50,250
+Birebir şu maddesi ile.
+
+433
+00:37:50,250 --> 00:37:53,250
+Çünkü bu da M çarpı N'lik bir madde.
+
+434
+00:37:53,250 --> 00:37:55,250
+Bu da M çarpı N'lik bir madde.
+
+435
+00:37:55,250 --> 00:37:57,250
+İkisinin boyları birbirine eşit.
+
+436
+00:37:57,250 --> 00:37:59,250
+O zaman yapacağımız şey ne olacak?
+
+437
+00:37:59,250 --> 00:38:04,690
+Buradaki her bir satırı bununla eşitleyeceğiz.
+
+438
+00:38:04,690 --> 00:38:08,690
+Tabii eşitte makul bir seviyeden başlamamız gerekiyor.
+
+439
+00:38:08,690 --> 00:38:11,690
+Bizim öncelikle bilmemiz gereken işte 1,1 var.
+
+440
+00:38:11,690 --> 00:38:14,690
+Daha sonra bu 1,1'den U,1,2'yi bulacağız.
+
+441
+00:38:14,690 --> 00:38:16,690
+L,1,1'den U,1,2'yi bulacağız.
+
+442
+00:38:16,690 --> 00:38:22,690
+Sonra mesela şurada L,2,1'den neyi bulabiliriz?
+
+443
+00:38:22,690 --> 00:38:25,690
+Mesela U,1,2'yi yukarıda bulmuştuk.
+
+444
+00:38:25,690 --> 00:38:27,690
+L,2,1'i şurada bulmuştuk.
+
+445
+00:38:27,690 --> 00:38:29,690
+Buradan L,2,2'yi buluyoruz.
+
+446
+00:38:29,690 --> 00:38:32,690
+Bu şekilde yerine koyarak bütün değerler bulunuyor.
+
+447
+00:38:32,690 --> 00:38:34,690
+Tabii burada hani 5'e 5'liktir.
+
+448
+00:38:34,690 --> 00:38:37,690
+Böyle bir soru soracak olsak 5'e 5'lik bir şey sormayız.
+
+449
+00:38:37,690 --> 00:38:39,690
+En fazla 4'e 4'lük bir şey olur ki
+
+450
+00:38:39,690 --> 00:38:42,690
+gereksiz aynı şeyleri tekrar tekrar yapmayalım.
+
+451
+00:38:42,690 --> 00:38:45,690
+Genel olarak aşağıdan yukarıya bakın böyle bir
+
+452
+00:38:45,690 --> 00:38:47,690
+işte 1,1'den başlıyor L,1,2'den başlıyor.
+
+453
+00:38:47,690 --> 00:38:51,690
+Böyle bir yerine koyma işlemi devam ediyor.
+
+454
+00:38:51,690 --> 00:38:54,690
+Bunu yaptıktan sonra arkadaşlar bakın burada
+
+455
+00:38:54,690 --> 00:38:58,579
+U matrisimiz hazır.
+
+456
+00:38:58,579 --> 00:39:00,579
+L matrisimiz hazır.
+
+457
+00:39:00,579 --> 00:39:02,579
+L matrisi ile
+
+458
+00:39:02,579 --> 00:39:04,579
+Y matrisi
+
+459
+00:39:04,579 --> 00:39:08,579
+Aslında bu bir matris değil bir tek boyutlu stun gibi bir şey.
+
+460
+00:39:08,579 --> 00:39:11,579
+Geçici bir ara geçiş matrisini çözüyoruz.
+
+461
+00:39:11,579 --> 00:39:13,579
+C'ye eşitleyerek.
+
+462
+00:39:13,579 --> 00:39:15,579
+Aslında ne yapacağız burada bir
+
+463
+00:39:15,579 --> 00:39:19,579
+yine şöyle bir şey olacak.
+
+464
+00:39:19,579 --> 00:39:21,579
+L dediğimiz 3'e 3'lükse
+
+465
+00:39:21,579 --> 00:39:23,579
+Y dediğimiz şeyde
+
+466
+00:39:23,579 --> 00:39:26,579
+İşte Y1, Y2, Y3 diye
+
+467
+00:39:26,579 --> 00:39:29,579
+geçici değişkenlerden oluşan bir matris çarpımı yapacağız.
+
+468
+00:39:29,579 --> 00:39:31,579
+C'ye de burada sayılarımız.
+
+469
+00:39:31,579 --> 00:39:33,579
+Biz buradan Y'yi bulacağız.
+
+470
+00:39:33,579 --> 00:39:35,579
+Bu bulduğumuz Y'yi
+
+471
+00:39:35,579 --> 00:39:37,579
+şurada aşağıda yerine koyacağız.
+
+472
+00:39:37,579 --> 00:39:39,579
+Buradan da X'leri bulacağız.
+
+473
+00:39:39,579 --> 00:39:41,579
+X'ler de bizim yani değişkenlerimiz.
+
+474
+00:39:41,579 --> 00:39:44,579
+X1, X2, X3.
+
+475
+00:39:44,579 --> 00:39:46,579
+Belki şurada hani Y dememek gerekiyor.
+
+476
+00:39:46,579 --> 00:39:48,579
+Yani T falan deseydik daha iyi olurdu.
+
+477
+00:39:48,579 --> 00:39:50,579
+Yani bu bizim Y dediğimiz şey
+
+478
+00:39:50,579 --> 00:39:52,579
+Denklemin sonucu olan Y değil
+
+479
+00:39:52,579 --> 00:39:55,579
+ara geçişinde kullanılan temporary değişkenler arkadaşlar.
+
+480
+00:39:55,579 --> 00:39:57,579
+Bakın şurada Y'yi çözerken
+
+481
+00:39:57,579 --> 00:39:59,579
+Y bu tarafta.
+
+482
+00:39:59,579 --> 00:40:03,369
+Birazdan göreceğiz.
+
+483
+00:40:03,369 --> 00:40:05,369
+Burada yukarıdan aşağıya doğru bir çözüm.
+
+484
+00:40:05,369 --> 00:40:07,369
+Burada X'i çözerken
+
+485
+00:40:07,369 --> 00:40:10,369
+aşağıdan Y'ya doğru bir çözümle karşılaşacağız.
+
+486
+00:40:10,369 --> 00:40:16,369
+Neyse. Önce L ve U'nun nasıl olduğunu gördük.
+
+487
+00:40:16,369 --> 00:40:18,369
+Ara bir tane geçici değişken kullanacağız dedik.
+
+488
+00:40:18,369 --> 00:40:21,369
+Şimdi denklem sistemi böyle bir yöntemle çözelim demişiz.
+
+489
+00:40:21,369 --> 00:40:24,369
+Ve hakikaten şey bir soru aslında gıcık bir soru.
+
+490
+00:40:24,369 --> 00:40:26,369
+Çünkü biri gürlü sayılırlar falan var.
+
+491
+00:40:26,369 --> 00:40:28,369
+Bakalım nasıl yapacağız?
+
+492
+00:40:28,369 --> 00:40:32,369
+Burada şeyi kullanmak biraz daha zor.
+
+493
+00:40:32,369 --> 00:40:35,369
+Gauss elimination yöntemini kullanmak biraz daha zor gelebilir.
+
+494
+00:40:35,369 --> 00:40:43,369
+Çünkü mesela 3,6,3,6,4,2,0,8 var.
+
+495
+00:40:43,369 --> 00:40:46,369
+Ben burayı sıfır yapmak için ne yapmam lazım?
+
+496
+00:40:46,369 --> 00:40:48,369
+İşte şunlardan bir tanesiyle
+
+497
+00:40:48,369 --> 00:40:50,369
+işte bir sayıyla çarpacağım.
+
+498
+00:40:50,369 --> 00:40:52,369
+Daha sonra bundan çıkartacağım.
+
+499
+00:40:52,369 --> 00:40:53,369
+Ondan sonra sıfır olacak.
+
+500
+00:40:53,369 --> 00:40:55,369
+Bu biraz daha zor bir şey gibi geliyor.
+
+501
+00:40:55,369 --> 00:40:58,369
+Bu yöntem biraz daha burada hani kullanışlı hâye geliyor.
+
+502
+00:40:58,369 --> 00:41:02,369
+Şimdi öncelikle arkadaşlar biz A maddesimizi yazıyoruz.
+
+503
+00:41:02,369 --> 00:41:04,369
+İşte bütün kat sayılar buraya geliyor.
+
+504
+00:41:04,369 --> 00:41:08,369
+Ben bu A maddesinden bir L maddesi bir de U maddesi üreteceğim.
+
+505
+00:41:08,369 --> 00:41:11,369
+L maddesinin formatı bu şekilde dedik.
+
+506
+00:41:11,369 --> 00:41:14,369
+U maddesinin formatı bu şekilde dedik.
+
+507
+00:41:14,369 --> 00:41:16,369
+Bu ikisini birbiriyle çarptığımızda
+
+508
+00:41:16,369 --> 00:41:20,369
+L1,1 çarpı 1. Buradan doğrudan 3,6'ya geliyor.
+
+509
+00:41:20,369 --> 00:41:24,369
+L1,1 çarpı U1,2.
+
+510
+00:41:24,369 --> 00:41:26,369
+Yani şurayla şu satırı.
+
+511
+00:41:26,369 --> 00:41:29,369
+Önce şurayla şurayı çarptık.
+
+512
+00:41:29,369 --> 00:41:31,369
+Daha sonra burayla burayı çarptık.
+
+513
+00:41:31,369 --> 00:41:34,369
+Bu birinci işlem ikinci çarpımda.
+
+514
+00:41:34,369 --> 00:41:36,369
+L1,1 çarpı U1,2.
+
+515
+00:41:36,369 --> 00:41:37,369
+2.4 eşli olacak.
+
+516
+00:41:37,369 --> 00:41:39,369
+İşte L1,1'in 3.6 olduğunu biliyoruz.
+
+517
+00:41:39,369 --> 00:41:41,369
+Buradan U1,2'yi çekeceğiz.
+
+518
+00:41:41,369 --> 00:41:45,369
+Ondan sonra üçüncü olarak bunu yapacağız.
+
+519
+00:41:45,369 --> 00:41:49,369
+Sonra aynısını ikinci satır için yapıyoruz.
+
+520
+00:41:49,369 --> 00:41:54,369
+Buradan işte U1,2 ve U1,3 değerleri bulunmuş.
+
+521
+00:41:54,369 --> 00:42:00,369
+Daha sonra yerine koyduğumuzda şurada L2,2 ve U2,3 değerleri bulunmuş.
+
+522
+00:42:00,369 --> 00:42:03,369
+Ondan sonra tekrar üçüncü satırı çarptığımızda da
+
+523
+00:42:03,369 --> 00:42:07,369
+buradan L3,2, L3,3 ve L3,1 değerleri bulunmuş.
+
+524
+00:42:07,369 --> 00:42:10,369
+Bakın şu değerlerin hepsini dedik.
+
+525
+00:42:10,369 --> 00:42:14,369
+Bunları elde etmeden herhalde toplama, çıkarma, çarpma bölüme
+
+526
+00:42:14,369 --> 00:42:18,369
+işlemleri olduğu için bir sorun yaşamayacağınızı tahmin ediyorum.
+
+527
+00:42:18,369 --> 00:42:21,369
+Bunu bulduktan sonra bakın L madrisimiz hazır.
+
+528
+00:42:21,369 --> 00:42:26,369
+Yani bize L1,1 dediğimiz şey 3,6.
+
+529
+00:42:26,369 --> 00:42:30,369
+L2,1 dediğimiz şey nerede o? 4,2.
+
+530
+00:42:30,369 --> 00:42:34,369
+L2,2 dediğimiz şey eksi 8,6.
+
+531
+00:42:34,369 --> 00:42:38,369
+Ondan sonra L3,1 dediğimiz şey 0,8.
+
+532
+00:42:38,369 --> 00:42:42,369
+L3,2 2,96.
+
+533
+00:42:42,369 --> 00:42:45,369
+L3,3 8,4.
+
+534
+00:42:45,369 --> 00:42:48,369
+Geri kalanlar 0,0,0.
+
+535
+00:42:48,369 --> 00:42:51,369
+Şu madris elde ediyor. Ben ne yapacaktım?
+
+536
+00:42:51,369 --> 00:42:54,369
+Bu L. Bir de U'muz vardı.
+
+537
+00:42:54,369 --> 00:42:57,369
+0,0,0,1,1,1.
+
+538
+00:42:57,369 --> 00:43:01,369
+U1,2 dediğimiz şey nerede U?
+
+539
+00:43:05,030 --> 00:43:08,030
+0,67.
+
+540
+00:43:08,030 --> 00:43:11,030
+U1,3 eksi 0,5.
+
+541
+00:43:11,030 --> 00:43:16,030
+Bakın bunlar şuradaki L'deki değişkenlerin ilk kısmı aynı çıkıyor ama
+
+542
+00:43:16,030 --> 00:43:19,030
+ondan sonra değişiyor. Bakın burada bir değişim var.
+
+543
+00:43:19,030 --> 00:43:25,030
+Ondan sonra U2,3 dediğimiz şeyde 0,49.
+
+544
+00:43:25,030 --> 00:43:27,030
+Öyle bir şey gelmiş.
+
+545
+00:43:27,030 --> 00:43:30,030
+Şimdi önce U'yu bir şeyle çarpacağız.
+
+546
+00:43:30,030 --> 00:43:34,570
+Pardon. L'yi bir şeyle çarpacağız.
+
+547
+00:43:34,570 --> 00:43:39,570
+L dediğimiz şey biraz önce oluşturduğumuz maddiste.
+
+548
+00:43:40,570 --> 00:43:44,570
+Arkadaşlar L'yi Y gibi bir geçici maddisle çarpıyorum.
+
+549
+00:43:44,570 --> 00:43:47,570
+Ve C'yi eşitliyorum.
+
+550
+00:43:47,570 --> 00:43:50,570
+Çünkü formatımız şu oldu.
+
+551
+00:43:50,570 --> 00:43:53,570
+Pardon. L çarpı,U çarpı.
+
+552
+00:43:56,570 --> 00:43:59,570
+Bir de arada X'ler var.
+
+553
+00:43:59,570 --> 00:44:02,570
+C gibi bir şey olacak.
+
+554
+00:44:02,570 --> 00:44:07,570
+Y ile çarptığımda buradan Y1,Y2 ve Y3 değerlerini buluyoruz.
+
+555
+00:44:07,570 --> 00:44:09,570
+Bakın. Yani şu bizim C sonuçlarımız.
+
+556
+00:44:09,570 --> 00:44:12,570
+Y1,Y2 ve Y3'ü buradan elde ettik.
+
+557
+00:44:12,570 --> 00:44:15,570
+İşte 1,75,X0,02,0,28.
+
+558
+00:44:15,570 --> 00:44:18,570
+Devam ediyoruz.
+
+559
+00:44:18,570 --> 00:44:31,579
+Buradan elde ettiğimiz yani L çarpı,Y dediğimiz şeyden elde ettiğimiz vektörü
+
+560
+00:44:31,579 --> 00:44:33,579
+U çarpı,X.
+
+561
+00:44:33,579 --> 00:44:37,579
+Yani X burada bizim bilinmeyenlerimizin olduğu şey.
+
+562
+00:44:37,579 --> 00:44:41,579
+U maddisiyle X'i çarpıyoruz ve bunu Y'ye eşitliyoruz.
+
+563
+00:44:41,579 --> 00:44:44,579
+Burada U dediğimiz maddis biraz önce şuydu.
+
+564
+00:44:44,579 --> 00:44:46,579
+X dediğimiz şey de U'ydu.
+
+565
+00:44:46,579 --> 00:44:52,579
+Y dediğimiz şey de şuradan 1,75,X0,02,0,28 geliyor.
+
+566
+00:44:52,579 --> 00:44:54,579
+Şimdi bunu çözerken de bakın.
+
+567
+00:44:54,579 --> 00:44:56,579
+Aşağıdan yukarıya doğru demiştim.
+
+568
+00:44:56,579 --> 00:44:59,579
+Önce yani her birini çarptığınızda X3'ü bulursunuz.
+
+569
+00:44:59,579 --> 00:45:01,579
+0,28.
+
+570
+00:45:01,579 --> 00:45:04,579
+Sonra burada yerine koyarak X2'yi bulursunuz.
+
+571
+00:45:04,579 --> 00:45:06,579
+Ondan sonra da X1'i bulabilirsiniz.
+
+572
+00:45:06,579 --> 00:45:10,579
+Ve çözümlere ne yapmış oluyoruz? Ulaşmış oluyoruz.
+
+573
+00:45:10,579 --> 00:45:12,579
+Anlaşılmayan bir şey var mı?
+
+574
+00:45:12,579 --> 00:45:22,480
+Yani bir tane geçici maddis kullanarak problemi çözmüş olduk.
+
+575
+00:45:22,480 --> 00:45:28,480
+Şimdi bunlar tam solu ışığını veren yöntemler.
+
+576
+00:45:28,480 --> 00:45:32,480
+Bir sürü maddis şarpı falan var.
+
+577
+00:45:38,980 --> 00:45:40,980
+Y1,Y2...
+
+578
+00:45:42,980 --> 00:45:44,980
+[öğrenci] sesin kesiliyor.
+
+579
+00:45:44,980 --> 00:45:50,510
+Y1,Y2'ye dedim. Ondan sonrasını duymadım.
+
+580
+00:45:50,510 --> 00:45:56,860
+İstersen chatten bir yazma idana.
+
+581
+00:45:56,860 --> 00:46:07,940
+Neyse sen daha sonra gelince devam edersin.
+
+582
+00:46:07,940 --> 00:46:13,260
+Şu an seni duymuyorum.
+
+583
+00:46:13,260 --> 00:46:20,260
+Şimdi dolaylı yöntemler dediğimiz bir başlığa geçiyoruz arkadaşlar.
+
+584
+00:46:20,260 --> 00:46:30,260
+Bu dolaylı yöntemlerde yine bizim A,X,C formatında bir maddislerimizi ifade edeceğiz.
+
+585
+00:46:30,260 --> 00:46:42,260
+Burada kökleri ararken algoritmik olarak bir tam solu ışın değil de yaklaşık çözümü hatta gerekirse tam solu ışın da elde edebiliyoruz.
+
+586
+00:46:42,260 --> 00:46:44,260
+Elde edeceğimiz yöntemdir.
+
+587
+00:46:44,260 --> 00:46:47,260
+Bunlardan birincisi Jacobi İterasyon yöntemi.
+
+588
+00:46:48,260 --> 00:46:50,260
+Bu yöntem bize şunu söylüyor arkadaşlar.
+
+589
+00:46:50,260 --> 00:46:52,260
+Benim böyle bir denklem setim var.
+
+590
+00:46:52,260 --> 00:47:01,260
+Bu denklem setinde katsayıları ve bilinmeyenleri ve sonuçları bir vektörel formatta maddis formatında elde ediyoruz diyoruz.
+
+591
+00:47:01,260 --> 00:47:18,309
+Bunu yaptıktan sonra bu katsayılar matrisini mutlak değerce çarpımı yani diagonalde mutlak değerce çarpımı en yüksek olacak şekilde düzenlememiz gerekiyor.
+
+592
+00:47:18,309 --> 00:47:30,309
+Yani bu A1 katsayısı şunlardan hangisinden şuraya gelecek şey hangisi büyükse A1,A2,A1,A2,A3,A1 bunların maksimumunu alıyoruz.
+
+593
+00:47:30,309 --> 00:47:34,309
+Maksimumunu alınca burada bir görüyoruz ki artık en büyük değer var.
+
+594
+00:47:34,309 --> 00:47:39,309
+Sonra diğer köşegen için şunlar içerisinden maksimum olanını bulacağız.
+
+595
+00:47:39,309 --> 00:47:42,309
+Tabii bu maksimumu yer değiştirmeyeceğiz.
+
+596
+00:47:42,309 --> 00:47:46,309
+Sonra bunlar içerisinden üçüncü şeyden maksimum bulacağız.
+
+597
+00:47:46,309 --> 00:47:50,309
+Böyle bir düzenlemeyle tabi diagonal üzerinden gideceğiz.
+
+598
+00:47:50,309 --> 00:47:56,309
+Düzenlemeyle bütün diagonalde en büyük değerler olacak.
+
+599
+00:47:56,309 --> 00:48:10,309
+Eğer bu işlemi yaparken bir problem yani maksimum değerde bir sorun yaşıyorsak elementer satır işlemleriyle maksimumu yani bulmak için yer değiştirme işlemi yapılabilir.
+
+600
+00:48:10,309 --> 00:48:16,309
+Yani her sütun da mutlak değerce en büyük sayı köşegene getirilmelidir.
+
+601
+00:48:16,309 --> 00:48:19,309
+Yani bunun özeti bu.
+
+602
+00:48:19,309 --> 00:48:21,309
+Öncelikle bu işi yapmamız gerekiyor.
+
+603
+00:48:21,309 --> 00:48:34,750
+Sonra bu eklemler yazıldıktan sonra bu hale getirildikten sonra X1,X2,X3 bütün bilinmeyenler yalnız bırakılıyor arkadaşlar.
+
+604
+00:48:34,750 --> 00:48:36,750
+Yani bir tarafta işte ne olacak?
+
+605
+00:48:36,750 --> 00:48:37,750
+X1 olacak.
+
+606
+00:48:37,750 --> 00:48:38,750
+X1'e göre de eklemeyeceğiz.
+
+607
+00:48:38,750 --> 00:48:40,750
+Sonra X2'ye göre yazacağız.
+
+608
+00:48:40,750 --> 00:48:41,750
+Biri ikinci satırda.
+
+609
+00:48:41,750 --> 00:48:43,750
+Diğer satırda X3'e göre yazacağız.
+
+610
+00:48:43,750 --> 00:48:47,750
+Her bir satırda bir bilinmeyen yalnız bırakılmış oluyor.
+
+611
+00:48:47,750 --> 00:48:52,750
+Sonra algoritmik olarak itiratif işlemleri başlatıyoruz.
+
+612
+00:48:52,750 --> 00:48:56,750
+Diyoruz ki ilk değerler ile itirasyonlar başlasın.
+
+613
+00:48:57,750 --> 00:49:06,750
+Tüm bilinmeyenler için artışık iki kök değeri arasındaki mutlak değerce fark verilen hatadan küçükse işleme devam ediyor.
+
+614
+00:49:06,750 --> 00:49:09,750
+Yani ben işte X1 bilinmeyenim var.
+
+615
+00:49:09,750 --> 00:49:21,750
+X1 bilinmeyenin X1 bilinmeyenin i artı birinci itirasyonundaki değeri ile X1'in i inci itirasyonundaki değerinin farkının mutlak değerine bakıyorum.
+
+616
+00:49:21,750 --> 00:49:26,750
+Eğer bu fark belli bir epsilon değerinden küçükse algoritmamı sonlandırıyorum.
+
+617
+00:49:26,750 --> 00:49:27,750
+Tamam mı?
+
+618
+00:49:27,750 --> 00:49:35,750
+I artı birinci itirasyonla bir önceki itirasyon arasındaki bu hatta buna Xj diyelim.
+
+619
+00:49:35,750 --> 00:49:36,750
+Niye J?
+
+620
+00:49:36,750 --> 00:49:43,750
+Yani J öyle ki birden inci şeye kadar yani X1 için buna bakacağım.
+
+621
+00:49:43,750 --> 00:49:45,750
+X2 için buna bakacağım.
+
+622
+00:49:45,750 --> 00:49:46,750
+X3 için buna bakacağım.
+
+623
+00:49:46,750 --> 00:49:52,750
+Her bir itirasyon da bir önceki itirasyon arasındaki bir delta değişim miktarına bakıyorum.
+
+624
+00:49:52,750 --> 00:49:56,750
+Delta Xj aslında buna bakacağız.
+
+625
+00:49:56,750 --> 00:50:01,750
+Bu delta Xj belli bir epsilondan küçükse örnek üzerinde bunu daha rahat anlatabilirsiniz.
+
+626
+00:50:01,750 --> 00:50:02,750
+Algoritmamızı sonlandıracağız.
+
+627
+00:50:02,750 --> 00:50:05,750
+Her biri için bunu sağlaması lazım.
+
+628
+00:50:05,750 --> 00:50:07,750
+Yani şurada da her işaretini koyalım.
+
+629
+00:50:07,750 --> 00:50:14,860
+Ve burada her itirasyon da bir önceki itirasyonun değerleri kullanılıyor.
+
+630
+00:50:14,860 --> 00:50:17,860
+Yani ben bir başlangıç değeri verdim.
+
+631
+00:50:17,860 --> 00:50:22,860
+X1 eşittir işte bir değer, J1.
+
+632
+00:50:22,860 --> 00:50:24,860
+X2 eşittir, J2.
+
+633
+00:50:24,860 --> 00:50:30,860
+Xn eşittir, Jn gibi bir başlangıç değerleri rastgele verdim.
+
+634
+00:50:30,860 --> 00:50:39,860
+Ondan sonra her bir adımda bu şeylere belli bir delta miktarı bir artırım sağlayacağız.
+
+635
+00:50:39,860 --> 00:50:49,860
+C1 artı delta 1, C2 artı delta 2, Cn artı delta n gibi şeyler yeni değerleri kullanacağız.
+
+636
+00:50:49,860 --> 00:50:52,860
+Y1, Y2, Y3'ü nasıl bulduk?
+
+637
+00:50:52,860 --> 00:50:54,860
+Hemen söyleyelim.
+
+638
+00:50:54,860 --> 00:50:55,860
+Matresi çarpıyoruz.
+
+639
+00:50:55,860 --> 00:51:13,860
+Yani bu satırla şu satırını çarptığında 3.6 x Y1 artı 2.4 x Y2 artı x1.8 x Y3 eşittir 6.3.
+
+640
+00:51:13,860 --> 00:51:15,860
+Tamam mı?
+
+641
+00:51:15,860 --> 00:51:19,860
+Hocam orası tam maddesimiz, L maddesi değil.
+
+642
+00:51:19,860 --> 00:51:22,860
+L maddesi ile Y maddesini çarpmamız lazım.
+
+643
+00:51:22,860 --> 00:51:28,880
+Yani şurada L yazmayı unuttum.
+
+644
+00:51:28,880 --> 00:51:29,880
+Hocam bana bir garip geldi.
+
+645
+00:51:29,880 --> 00:51:31,880
+L maddesi değil.
+
+646
+00:51:31,880 --> 00:51:35,880
+Maddesi çarptığımız zaman zaten bizim ilk başta maddes oluyor.
+
+647
+00:51:35,880 --> 00:51:37,880
+Evet, şunu yazacak.
+
+648
+00:51:37,880 --> 00:51:40,880
+Burada doğru diyorsunuz.
+
+649
+00:51:40,880 --> 00:51:43,880
+Şöyle yapalım hemen, şöyle yapalım.
+
+650
+00:51:43,880 --> 00:51:53,809
+Şunu alayım, şuraya çıkar diyelim.
+
+651
+00:51:53,809 --> 00:52:00,289
+Bu soruyu sadece niye [öğrenci] söyledi?
+
+652
+00:52:00,289 --> 00:52:02,289
+Şuraya alalım.
+
+653
+00:52:02,289 --> 00:52:17,570
+3.6 0 0 4.2 x 8.6
+
+654
+00:52:17,570 --> 00:52:28,860
+Burada virgül kullanmış, ben de virgül kullanayım.
+
+655
+00:52:28,860 --> 00:52:33,719
+0.8 2.96
+
+656
+00:52:33,719 --> 00:52:35,719
+Şimdi ara verelim arkadaşlar.
+
+657
+00:52:35,719 --> 00:52:44,159
+8.4 100.4
+
+658
+00:52:44,159 --> 00:52:46,159
+Bu şekilde olacak.
+
+659
+00:52:46,159 --> 00:52:47,159
+Yanlış aktarmışsam.
+
+660
+00:52:47,159 --> 00:52:50,159
+Yani buradan 3.6'yı buluruz.
+
+661
+00:52:50,159 --> 00:52:53,159
+Buradan y1'i buluruz.
+
+662
+00:52:53,159 --> 00:52:58,159
+O y1'den y2'yi daha sonra y1 ve y2'ten y3'ü buluruz.
+
+663
+00:52:58,159 --> 00:52:59,159
+Tamam.
+
+664
+00:52:59,159 --> 00:53:03,400
+Hatırlattın, iyi oldu [öğrenci].
+
+665
+00:53:03,400 --> 00:53:04,400
+Bu hatayı ben de fark ediyorum.
+
+666
+00:53:04,400 --> 00:53:07,400
+Çünkü değerleri hesaplayıp kontrol etme şeyim yok.
+
+667
+00:53:07,400 --> 00:53:09,400
+Hoca bu şekilde hazırlamış.
+
+668
+00:53:09,400 --> 00:53:12,400
+Ama olacak şey, şunun üzerinden bunu bulmak.
+
+669
+00:53:12,400 --> 00:53:16,730
+Böyle kaydedelim.
+
+670
+00:53:16,730 --> 00:53:17,730
+Hocam yine bir hata yok mu?
+
+671
+00:53:17,730 --> 00:53:18,730
+Şunu da söyleyelim.
+
+672
+00:53:18,730 --> 00:53:22,730
+Algolytmanın örneğine geçmeden bir ara verelim.
+
+673
+00:53:22,730 --> 00:53:24,730
+Hocam y1 6.3 var.
+
+674
+00:53:24,730 --> 00:53:27,730
+3.6'yı da y1'i çarpacağız.
+
+675
+00:53:28,730 --> 00:53:29,730
+6.3
+
+676
+00:53:29,730 --> 00:53:32,730
+0'la y2'yi çarpacağız.
+
+677
+00:53:34,730 --> 00:53:40,730
+Hocam mesela 3.6'yı y1'le çarpıp 6.3 olunca 1.75 mi çıkıyor?
+
+678
+00:53:40,730 --> 00:53:41,730
+O şeydir.
+
+679
+00:53:41,730 --> 00:53:45,730
+Muhtemelen bunu şuradaki değerler üzerinden yanlış yaptı.
+
+680
+00:53:45,730 --> 00:53:46,730
+Yok hesapladım hocam.
+
+681
+00:53:46,730 --> 00:53:47,730
+1.75 çıkıyor.
+
+682
+00:53:47,730 --> 00:53:48,730
+Doğru.
+
+683
+00:53:48,730 --> 00:53:51,730
+3.6 tane y1 eşittir.
+
+684
+00:53:51,730 --> 00:53:57,730
+6.3'ü 3.6'ya bölerseniz 2 desek 7.2 eder.
+
+685
+00:53:57,730 --> 00:53:59,730
+1.75 gibi bir değer çıkar.
+
+686
+00:53:59,730 --> 00:54:01,730
+Tamamdır hocam benim hatam.
+
+687
+00:54:01,730 --> 00:54:08,730
+L maddesinde sıfır olması gerekmiyor mu derken [öğrenci] herhalde şu anki şey doğru değil mi?
+
+688
+00:54:08,730 --> 00:54:09,730
+Evet hocam.
+
+689
+00:54:09,730 --> 00:54:11,730
+O benim söylediğimden sonra söylemiş.
+
+690
+00:54:11,730 --> 00:54:12,730
+Tamam.
+
+691
+00:54:12,730 --> 00:54:13,730
+O sebebini söylemiş.
+
+692
+00:54:13,730 --> 00:54:16,650
+Tamam.
+
+693
+00:54:16,650 --> 00:54:17,650
+Peki.
+
+694
+00:54:18,650 --> 00:54:23,650
+Bu şu yöntemde arkadaşlar.
+
+695
+00:54:23,650 --> 00:54:28,599
+Gerekli adımlarımız bu şekilde.
+
+696
+00:54:28,599 --> 00:54:29,599
+Jacobi İterasyon.
+
+697
+00:54:29,599 --> 00:54:32,599
+Şimdi gelin dilimizde saat 55 geçiyor.
+
+698
+00:54:32,599 --> 00:54:34,599
+10 dakika sonra yani 10'u 5 geçe.
+
+699
+00:54:34,599 --> 00:54:40,599
+Bunun kısaca tekrarını yapıp bir örneği üzerinden algoritmayı çalışırız.
+
+700
+00:54:40,599 --> 01:06:00,550
+10 dakika sonra görüşürüz.
+
+701
+01:06:00,550 --> 01:06:01,550
+Yeniden merhaba arkadaşlar.
+
+702
+01:06:01,550 --> 01:06:03,550
+Devam edelim.
+
+703
+01:06:03,550 --> 01:06:05,550
+35 kişi olmuşuz.
+
+704
+01:06:06,550 --> 01:06:10,989
+Dersin sonuna 50'yi bile bulamayacağız anlaşılan.
+
+705
+01:06:29,699 --> 01:06:33,699
+Jacobi İterasyon yönteminde ne yapıyorduk?
+
+706
+01:06:33,699 --> 01:06:41,699
+Bütün sütunlardan mutlak değerci en büyük olanı başa getiriyoruz.
+
+707
+01:06:41,699 --> 01:06:47,699
+Sonra her bir sütunda her bir satırda bir bilinmeyeni yalnız bırakıyoruz.
+
+708
+01:06:47,699 --> 01:06:49,699
+İşte burada bunu yalnız bırakacağız.
+
+709
+01:06:49,699 --> 01:06:51,699
+Burada bunu yalnız bırakacağız.
+
+710
+01:06:51,699 --> 01:06:59,699
+Ondan sonra bir başlangıç değerinden yerine koyma metoduyla iteratif olarak devam ediyoruz.
+
+711
+01:06:59,699 --> 01:07:00,699
+Ta ki hataya ulaşana kadar.
+
+712
+01:07:00,699 --> 01:07:02,699
+Şey hatanın minimize olana kadar.
+
+713
+01:07:02,699 --> 01:07:05,699
+Hata bütün bilinmeyenler için minimize olacak.
+
+714
+01:07:05,699 --> 01:07:08,699
+Yani aslında burada olay şudur arkadaşlar.
+
+715
+01:07:08,699 --> 01:07:19,869
+Bizim X1 error X1 diye bir şeyimiz olsun.
+
+716
+01:07:19,869 --> 01:07:36,099
+Aynısını number of iteration error X2 diye düşünelim ve bütün X'ler için bu grafikleri çizebiliriz.
+
+717
+01:07:36,099 --> 01:07:42,099
+Belli bir zamanda işte ilk iterasyonlarda böyle dalgalı çok yüksek bir hatalar gelecek.
+
+718
+01:07:42,099 --> 01:07:47,099
+Daha sonra çözüme yaklaştıkça bu hata minimize gelecek hatta sıfırlanabilecek.
+
+719
+01:07:47,099 --> 01:07:52,099
+Bizim için tabi sıfırlanmasından ziyade belli bir epsilon değerinde bunu kesmek.
+
+720
+01:07:52,099 --> 01:07:53,099
+Aynı şey biz.
+
+721
+01:07:53,099 --> 01:08:01,099
+Aynı epsilon değeri için mesela bu epsilon değerine şu hata pardon.
+
+722
+01:08:01,099 --> 01:08:03,099
+İ1'ci iterasyon diyelim.
+
+723
+01:08:03,099 --> 01:08:07,099
+İ1'ci iterasyonundaki epsilon değeri bizim belirlediğimiz bir şey.
+
+724
+01:08:07,099 --> 01:08:13,099
+Belki bu epsilon değerine burada şöyle şurada erişeceğiz.
+
+725
+01:08:13,099 --> 01:08:16,100
+İşte J'inci iterasyon diyelim.
+
+726
+01:08:16,100 --> 01:08:24,100
+Bu bütün şeyler için ama J'inci iterasyon da olsa yani epsilon değerine ulaşma durumumuz.
+
+727
+01:08:24,100 --> 01:08:27,100
+İterasyonlara devam ediyoruz.
+
+728
+01:08:27,100 --> 01:08:36,819
+Ta ki bütün şeyler için bütün kökler için belirlenen hata değişim miktarına ulaşana kadar.
+
+729
+01:08:36,819 --> 01:08:43,819
+Yerine koyma da şu şekilde yani X1 dediğimiz şey yerine koyunca yani şey pardon yalnız bırakınca yerine koyma diyorum.
+
+730
+01:08:43,819 --> 01:08:44,819
+Böyle bir denklem.
+
+731
+01:08:44,819 --> 01:08:47,819
+X2 için böyle bir denklem üretiliyor.
+
+732
+01:08:47,819 --> 01:08:52,819
+Tabii burada bilinmeyen sayısı çok fazla olursa iş biraz zor.
+
+733
+01:08:52,819 --> 01:08:53,819
+Niye zor?
+
+734
+01:08:53,819 --> 01:08:58,819
+Çünkü bir sürü şeyi işte birini sağ tarafa, birini sol tarafa atmak yok.
+
+735
+01:08:58,819 --> 01:09:00,819
+Gereksiz uzun bir işlem var.
+
+736
+01:09:00,819 --> 01:09:04,819
+İşte bunun için mesela bir veri yapısı tasarlamak gerekebiliyor.
+
+737
+01:09:04,819 --> 01:09:06,819
+Yani nasıl tasarlanabiliyor?
+
+738
+01:09:06,819 --> 01:09:08,819
+Bunu bir zaten matrisle tasarlıyoruz.
+
+739
+01:09:08,819 --> 01:09:20,819
+Matrisle tasarladıktan sonra her yeni bir matiste X1 için, X2 için ve Xn için karşılığındaki şeyleri değişkenlerin durumlarını saklamak gerekiyor.
+
+740
+01:09:20,819 --> 01:09:22,819
+Böyle bir durum.
+
+741
+01:09:22,819 --> 01:09:23,819
+Şimdi.
+
+742
+01:09:23,819 --> 01:09:24,819
+Canım.
+
+743
+01:09:24,819 --> 01:09:25,819
+Efendim.
+
+744
+01:09:25,819 --> 01:09:32,819
+Bu şeyleri en maksimum değerleri şey atıyoruz demiştik ya köşe genel.
+
+745
+01:09:32,819 --> 01:09:34,819
+Bunu nasıl yapıyoruz ekranı baksanıza?
+
+746
+01:09:38,670 --> 01:09:40,670
+Şimdi maksimum değerlerden kastımız şu.
+
+747
+01:09:40,670 --> 01:09:42,670
+Birinci sütun da.
+
+748
+01:09:42,670 --> 01:09:45,670
+Şurada.
+
+749
+01:09:45,670 --> 01:09:48,670
+Kat sayısı en fazla olan hangisi mesela şu.
+
+750
+01:09:48,670 --> 01:09:51,670
+Bunu buraya getirip bu ikisini yer değiştiriyoruz.
+
+751
+01:09:51,670 --> 01:09:54,670
+Yani 2X artı 3'ye eşittir 5.
+
+752
+01:09:56,340 --> 01:10:00,340
+8X-Y'ye eşittir 18 diyelim.
+
+753
+01:10:00,340 --> 01:10:02,340
+Bunları yer değiştirmek sonucu etkiler mi?
+
+754
+01:10:02,340 --> 01:10:03,340
+Etkilemez.
+
+755
+01:10:03,340 --> 01:10:05,340
+Burada ne yapacağız?
+
+756
+01:10:05,340 --> 01:10:06,340
+Şunu.
+
+757
+01:10:06,340 --> 01:10:09,340
+Sonuçta bunu bir matris formatında yazdığımızı düşüneceğiz.
+
+758
+01:10:09,340 --> 01:10:10,340
+Kast sayılar matrisini.
+
+759
+01:10:10,340 --> 01:10:11,340
+Bunu ne yapacağız?
+
+760
+01:10:11,340 --> 01:10:13,340
+Üç satıra öbürünü 6 satıra taşıyacağız.
+
+761
+01:10:13,340 --> 01:10:14,340
+Bu kadar.
+
+762
+01:10:14,340 --> 01:10:21,340
+Ondan sonra bu şey için ikinci şeyde ikinci diagonalde diğerleri için bakıyoruz.
+
+763
+01:10:21,340 --> 01:10:23,340
+Üçüncü diagonalde diğerleri için bakıyoruz.
+
+764
+01:10:23,340 --> 01:10:29,340
+Ve bütün yani şurada en yüksek ondan sonra daha düşük ondan sonra daha düşük bu şekilde ilerleyip gidiyor.
+
+765
+01:10:29,340 --> 01:10:34,340
+Bütün maksimum değerler tek bir satırdayız nasıl yapacağız?
+
+766
+01:10:34,340 --> 01:10:36,340
+Diğerlerini mi bakacağız?
+
+767
+01:10:36,340 --> 01:10:39,340
+Tabi kalanlarına bakmak gerekiyor.
+
+768
+01:10:39,340 --> 01:10:40,340
+Evet.
+
+769
+01:10:40,340 --> 01:10:44,340
+Şimdi şurada örnek üzerinde herhalde daha iyi anlaşılır.
+
+770
+01:10:44,340 --> 01:10:46,340
+Evet böyle bir şeyler.
+
+771
+01:10:46,340 --> 01:10:53,340
+Şimdi biz buradan önce yani şuna geçmeden önce kast sayılar matrisini oluşturabiliriz ama gerek yok.
+
+772
+01:10:53,340 --> 01:10:54,340
+Ne yapacağız?
+
+773
+01:10:54,340 --> 01:11:02,340
+Şurada en yüksek ondan sonraki buradaki en yüksek orada sonraki buradaki en yüksek şekilde olacak şekilde yazmamız gerekiyor.
+
+774
+01:11:02,340 --> 01:11:04,340
+Gerekirse elementer satır işlemleri de yapabiliriz dedi.
+
+775
+01:11:04,340 --> 01:11:09,340
+Yani şunun ikiyle çarpıp ne bileyim şunu eklemek gibi bir şey yapılabilir.
+
+776
+01:11:09,340 --> 01:11:13,340
+Yani öyle bir şey eğer maksimumları elde edemiyorsa.
+
+777
+01:11:13,340 --> 01:11:18,340
+Birinci adımda istersek bunu.
+
+778
+01:11:18,340 --> 01:11:21,340
+Gerçi bu şekilde yapmak daha doğru.
+
+779
+01:11:21,340 --> 01:11:24,340
+Şimdi şurada baktığımızda en yüksek 3 var.
+
+780
+01:11:24,340 --> 01:11:26,340
+Burada bakıldığında en yüksek 4 var.
+
+781
+01:11:26,340 --> 01:11:28,340
+Burada baktığında en yüksek 4 var.
+
+782
+01:11:28,340 --> 01:11:31,340
+O zaman şu ikisini yer değiştirsek.
+
+783
+01:11:31,340 --> 01:11:34,810
+Ne olur 3x burada olacak.
+
+784
+01:11:34,810 --> 01:11:36,810
+4y burada olacak.
+
+785
+01:11:36,810 --> 01:11:37,810
+4z burada olacak.
+
+786
+01:11:37,810 --> 01:11:40,810
+Hepsinde en yüksek değerler olacak öyle değil mi?
+
+787
+01:11:40,810 --> 01:11:42,810
+Buna baktık.
+
+788
+01:11:42,810 --> 01:11:43,810
+Bununla yer değiştirdik.
+
+789
+01:11:43,810 --> 01:11:45,810
+Sonra yeğler içerisinden bakıyoruz.
+
+790
+01:11:45,810 --> 01:11:47,810
+Sonra z'ler içerisinden bakıyoruz.
+
+791
+01:11:47,810 --> 01:11:50,810
+Yani üstün olarak dediğimiz şey aslında her biri değişken.
+
+792
+01:11:50,810 --> 01:11:58,810
+Her bir satırda en yüksek kat sayı diagonalde olmuş oluyor bakın dikkat ederseniz.
+
+793
+01:11:58,810 --> 01:12:03,810
+Aslında bu çözüme daha hızlı erişmek için yapılan bir ayarlama.
+
+794
+01:12:03,810 --> 01:12:09,810
+Normalde hiç bunu yapmadan da yani direkt x'i yalnız bıraksak x eşittir.
+
+795
+01:12:09,810 --> 01:12:11,810
+Biraz sonra göreceğiz.
+
+796
+01:12:11,810 --> 01:12:19,810
+x'i 8, x'i 8, x'i 4y, artı 3s.
+
+797
+01:12:19,810 --> 01:12:25,810
+Bu şekilde de ilerlenebilir ama bu biraz daha çözüme uzaklaştırıyor bizi.
+
+798
+01:12:25,810 --> 01:12:28,810
+Şimdi bunu yaptıktan sonra 3x'i buraya aldık.
+
+799
+01:12:28,810 --> 01:12:31,810
+Diğer bu satıra geldik.
+
+800
+01:12:31,810 --> 01:12:34,810
+Bundan geldikten sonra x'i yalnız bırakıyorum.
+
+801
+01:12:34,810 --> 01:12:36,810
+Şimdi x'i yalnız bırakınca ne olacak?
+
+802
+01:12:36,810 --> 01:12:45,810
+2z-y artı 9 bölü 3 bulacağız yanlış yapma diye.
+
+803
+01:12:45,810 --> 01:12:47,810
+2z buraya geldi, xy buraya geldi.
+
+804
+01:12:47,810 --> 01:12:49,810
+Bir de 9 var. 3'e de böldük.
+
+805
+01:12:49,810 --> 01:12:50,810
+Bölü 3.
+
+806
+01:12:50,810 --> 01:12:52,810
+y'i yalnız bırakacağız.
+
+807
+01:12:53,810 --> 01:13:04,659
+y dediğimiz şey buraya gelince x artı 3z-8 bölü 4 olacak.
+
+808
+01:13:04,659 --> 01:13:16,449
+z'yi yalnız bıraktığımızda da y-x artı 1 bölü 4 olacak.
+
+809
+01:13:16,449 --> 01:13:17,449
+Evet.
+
+810
+01:13:17,449 --> 01:13:20,449
+Şuradaki şeyler hani yer değiştirmeler çok önemli değil.
+
+811
+01:13:20,449 --> 01:13:25,449
+Ben biraz daha hani eksilleri sona yazmak tarafta arayayım.
+
+812
+01:13:25,449 --> 01:13:29,760
+Tabii şu zz gibi olmuş 2z.
+
+813
+01:13:29,760 --> 01:13:32,760
+Bundan sonra iteratif işlemler başlıyor.
+
+814
+01:13:32,760 --> 01:13:35,760
+Demiş ki başlangıç değerlerimiz 0.
+
+815
+01:13:35,760 --> 01:13:37,760
+O zaman arkadaşlar şöyle bir şey yapacağız.
+
+816
+01:13:37,760 --> 01:13:45,760
+x, y ve z için 0, 0 ve 0 değerlerini veriyoruz.
+
+817
+01:13:45,760 --> 01:13:48,760
+Birinci, sıfırıncı bir iterasyon diyelim.
+
+818
+01:13:48,760 --> 01:13:52,760
+Şimdi 0 değerini verdiğimizde şurada x'e bir şey veremem.
+
+819
+01:13:52,760 --> 01:13:55,760
+Çünkü x elde etmem gereken şey ama
+
+820
+01:13:55,760 --> 01:13:57,760
+y ve z'ye 0 veririm.
+
+821
+01:13:57,760 --> 01:13:59,760
+Sıfır verdiğimizde burası ne olacak?
+
+822
+01:13:59,760 --> 01:14:01,760
+Bu sıfır oldu.
+
+823
+01:14:01,760 --> 01:14:02,760
+Bu sıfır oldu.
+
+824
+01:14:02,760 --> 01:14:04,760
+Burası 9 oldu.
+
+825
+01:14:04,760 --> 01:14:06,760
+9 bölü 3'den.
+
+826
+01:14:06,760 --> 01:14:08,760
+x'in yeni değeri 3 oluyor.
+
+827
+01:14:08,760 --> 01:14:09,760
+Tamam.
+
+828
+01:14:09,760 --> 01:14:13,760
+Şurada sıfırlar verdiğimizde 0 verdik.
+
+829
+01:14:13,760 --> 01:14:14,760
+0 verdik.
+
+830
+01:14:14,760 --> 01:14:16,760
+x'i 8 bölü 4'den.
+
+831
+01:14:16,760 --> 01:14:19,760
+y'nin yeni değeri x'i 2 oluyor.
+
+832
+01:14:19,760 --> 01:14:20,760
+Yanlış yapmıyorsam.
+
+833
+01:14:21,760 --> 01:14:24,760
+Burada sıfırlar verdiğimizde 0, 0.
+
+834
+01:14:24,760 --> 01:14:25,760
+1 bölü 4.
+
+835
+01:14:25,760 --> 01:14:28,760
+Bu da 0.25 oluyor.
+
+836
+01:14:28,760 --> 01:14:33,760
+Artık x1, x2 ve x1, y1 ve z1 bunlar.
+
+837
+01:14:33,760 --> 01:14:36,760
+Bir sonraki terasyonda bunları yerine yazıyorum.
+
+838
+01:14:36,760 --> 01:14:38,760
+Ve bunlardan bir değer elde edeceğim.
+
+839
+01:14:38,760 --> 01:14:41,760
+Sonra ondan gelenleri değer vereceğim.
+
+840
+01:14:41,760 --> 01:14:45,760
+Şimdi buradaki delta x'e baktığımızda şöyle bakalım.
+
+841
+01:14:45,760 --> 01:14:48,760
+Delta x eşittir 3.
+
+842
+01:14:49,760 --> 01:14:51,760
+Delta y eşittir 2.
+
+843
+01:14:51,760 --> 01:14:53,760
+Delta z eşittir 0.25.
+
+844
+01:14:53,760 --> 01:14:58,760
+Hiçbirisi 0.01 hataya ulaşmamış.
+
+845
+01:14:58,760 --> 01:15:00,760
+Ondan daha büyük değerler.
+
+846
+01:15:00,760 --> 01:15:01,760
+O zaman ne yapıyor?
+
+847
+01:15:01,760 --> 01:15:03,760
+İterasyon bir iterasyon daha devam ediyor.
+
+848
+01:15:03,760 --> 01:15:05,760
+Sonra bir iterasyon daha.
+
+849
+01:15:05,760 --> 01:15:09,359
+Ta ki durana kadar.
+
+850
+01:15:09,359 --> 01:15:16,689
+Ve sonuçta x, y ve z için 1 mi demiş?
+
+851
+01:15:16,689 --> 01:15:17,689
+Ha, 1 olarak.
+
+852
+01:15:17,689 --> 01:15:21,689
+Default başlangıç değerleri hiçbir şey verilmezse 0 olarak verebiliriz.
+
+853
+01:15:21,689 --> 01:15:25,689
+Burada bu soru da bunu 1 olarak verin demiş.
+
+854
+01:15:25,689 --> 01:15:31,689
+Sıfır değerini verse daha iyi olurdu belki ama 1'den başlatmış.
+
+855
+01:15:31,689 --> 01:15:33,689
+O zaman biz bir de 1'den başlatalım.
+
+856
+01:15:33,689 --> 01:15:35,689
+x0 eşittir 1.
+
+857
+01:15:35,689 --> 01:15:39,689
+x1 eşittir, y0 eşittir 1.
+
+858
+01:15:39,689 --> 01:15:41,689
+z0 eşittir 1.
+
+859
+01:15:41,689 --> 01:15:45,689
+1 verdiğimizde ne olacak?
+
+860
+01:15:45,689 --> 01:15:47,689
+2, 1 çıktı.
+
+861
+01:15:47,689 --> 01:15:53,689
+1, 9, 10 yani 3,33 mi oluyor?
+
+862
+01:15:53,689 --> 01:15:57,689
+Burası 1 verdik, 3 daha verdik.
+
+863
+01:15:57,689 --> 01:16:01,689
+4, x8, x4.
+
+864
+01:16:01,689 --> 01:16:05,689
+x4 bölü 4'den x1 oluyor.
+
+865
+01:16:05,689 --> 01:16:07,689
+1 verdik, 1 verdik.
+
+866
+01:16:07,689 --> 01:16:09,689
+Sıfır 1 bölü 4'den 0.25 oluyor.
+
+867
+01:16:09,689 --> 01:16:11,689
+3,33'lik bir delta.
+
+868
+01:16:11,689 --> 01:16:13,689
+1'lik bir delta.
+
+869
+01:16:13,689 --> 01:16:15,689
+0,25'lik bir delta.
+
+870
+01:16:15,689 --> 01:16:19,689
+Elde ettiğimiz yeni değerleri gidip burada yerine yazacağız.
+
+871
+01:16:19,689 --> 01:16:21,689
+Sonra devam edeceğiz.
+
+872
+01:16:21,689 --> 01:16:23,689
+Ta ki şeye kadar bakalım.
+
+873
+01:16:23,689 --> 01:16:25,689
+İlk bulduğumuz değerler 3,33, eksi 1, 25.
+
+874
+01:16:25,689 --> 01:16:27,689
+Şimdi 1 vermişiz ilk başta.
+
+875
+01:16:27,689 --> 01:16:33,689
+1 verdiğimizde x'ın yani 1, 1, 1 verdiğimizde 3,33, eksi 1, 0,25.
+
+876
+01:16:33,689 --> 01:16:35,689
+Deltalar ne kadar?
+
+877
+01:16:35,689 --> 01:16:39,689
+Tabi biraz önce 3,33 dedik de 1 üzerinden hesaplayacağız.
+
+878
+01:16:39,689 --> 01:16:43,689
+Şundan şunun farkını mutlak diyene alıyorum 2,33.
+
+879
+01:16:43,689 --> 01:16:45,689
+Bundan buna bakıyorum 2.
+
+880
+01:16:45,689 --> 01:16:47,689
+Bundan buna bakıyorum 0,75.
+
+881
+01:16:47,689 --> 01:16:49,689
+Şimdi bu değerleri yerine yazdığımızda.
+
+882
+01:16:49,689 --> 01:16:53,689
+Yani şu 3,3 yerine yazdığımızda.
+
+883
+01:16:53,689 --> 01:16:57,689
+3,33, eksi 1 ve 2,5 yazdığımızda.
+
+884
+01:16:57,689 --> 01:17:01,689
+3,5, eksi 0,979, eksi 0,0 bululuyormuşuz.
+
+885
+01:17:01,689 --> 01:17:03,689
+Hatalarımız bunlar.
+
+886
+01:17:03,689 --> 01:17:05,689
+Yani şununla şununla arasındaki mutlak değer.
+
+887
+01:17:05,689 --> 01:17:07,689
+Şununla şununla arasındaki mutlak değer.
+
+888
+01:17:07,689 --> 01:17:11,689
+Şununla şununla arasındaki mutlak değer elde ediliyor.
+
+889
+01:17:11,689 --> 01:17:15,689
+Ve bu iterasyonlar bu şekilde devam ediyor.
+
+890
+01:17:15,689 --> 01:17:17,689
+Bakın en son 13. iterasyona geldiğimizde.
+
+891
+01:17:17,689 --> 01:17:19,689
+3,0 bulmuşuz.
+
+892
+01:17:19,689 --> 01:17:21,689
+Eksi 2,0 bulmuşuz.
+
+893
+01:17:21,689 --> 01:17:23,689
+Eksi 1 bulmuşuz.
+
+894
+01:17:23,689 --> 01:17:25,689
+Baktığımız zaman 3'ünde de.
+
+895
+01:17:25,689 --> 01:17:29,689
+Deltalar 0,1'in altına düşüyor.
+
+896
+01:17:29,689 --> 01:17:35,689
+Ve bu 0,1'in altına düştüğü için algoritmamızı sonlandırabiliyoruz.
+
+897
+01:17:35,689 --> 01:17:41,689
+Bakın şurada 12. iterasyonda şunlar 0,1'e gelmiş ama şu hala 0,2'de.
+
+898
+01:17:41,689 --> 01:17:45,689
+Bunu bir iterasyon daha ilerletince.
+
+899
+01:17:45,689 --> 01:17:47,689
+İşte 3, eksi 2 ve 1.
+
+900
+01:17:47,689 --> 01:17:49,689
+Gerçekten yerine koyarsak.
+
+901
+01:17:49,689 --> 01:17:53,689
+Hani normal bir analitik çözüm yapar gibi.
+
+902
+01:17:53,689 --> 01:17:57,689
+Yerine koyarsak 3, eksi 2 ve 1'in doğru olduğunu görürüz.
+
+903
+01:17:57,689 --> 01:18:01,689
+Anlaşılmayan bir şey var mı burada?
+
+904
+01:18:01,689 --> 01:18:05,689
+Bu yöntemde dikkat ederseniz.
+
+905
+01:18:05,689 --> 01:18:09,689
+Bir batch şeklinde toplu şekilde işlem yapıyoruz.
+
+906
+01:18:09,689 --> 01:18:13,689
+Yani x,y ve z'nin başlangıç değerleri ve elde edilen değerler.
+
+907
+01:18:13,689 --> 01:18:17,689
+Bütün denklemlerde yerine konuyor.
+
+908
+01:18:17,689 --> 01:18:19,689
+Ve yeni değerler elde ediyoruz.
+
+909
+01:18:19,689 --> 01:18:23,689
+Yani işte burayı önce 1,1 verdik.
+
+910
+01:18:23,689 --> 01:18:25,689
+Daha sonra y için yaptık.
+
+911
+01:18:25,689 --> 01:18:26,689
+Daha sonra z için yaptık.
+
+912
+01:18:26,689 --> 01:18:29,689
+Yerinde bir x,y,z takımı veriyoruz.
+
+913
+01:18:29,689 --> 01:18:32,689
+Yine bir x,y,z takımı elde ediyoruz.
+
+914
+01:18:32,689 --> 01:18:34,689
+Şimdi bunun biraz daha değişiğini göreceğiz.
+
+915
+01:18:34,689 --> 01:18:38,689
+Şu ana kadar her şey aynı ama ufak bir değişikliğini göreceğiz.
+
+916
+01:18:38,689 --> 01:18:40,689
+O biraz daha hızlı çözüyor.
+
+917
+01:18:40,689 --> 01:18:46,909
+Jacobi iterasyon böyle.
+
+918
+01:18:46,909 --> 01:18:50,909
+Şimdi Gauss-Seidel dediğimiz iterasyon yöntemi.
+
+919
+01:18:50,909 --> 01:18:54,909
+Aynı şeyler burada da geçerli.
+
+920
+01:18:54,909 --> 01:18:56,909
+Nerdenk lam sistemlerinde kullanılıyor.
+
+921
+01:18:56,909 --> 01:19:00,909
+Iterasyona kadar her şey Jacobi ile aynı.
+
+922
+01:19:00,909 --> 01:19:04,909
+Burada değer verirken ve yani çözümler,
+
+923
+01:19:04,909 --> 01:19:06,909
+interatif işlemler yaparken,
+
+924
+01:19:06,909 --> 01:19:12,909
+önce x için yani x0,y0 ve z0 değerleri verdik ya.
+
+925
+01:19:12,909 --> 01:19:16,909
+Önce x için bir şey elde ediyoruz.
+
+926
+01:19:16,909 --> 01:19:20,909
+Artık ikinci denklemde x'in yeni değerini kullanıyoruz.
+
+927
+01:19:20,909 --> 01:19:22,909
+Tamam mı?
+
+928
+01:19:22,909 --> 01:19:28,909
+Sonra yeni bir y değeri yani x0 için y0 ve z0 verdik.
+
+929
+01:19:28,909 --> 01:19:30,909
+Bu bize x1'i verdi.
+
+930
+01:19:30,909 --> 01:19:34,909
+Y0 için x1 ile z0'ı kullanıyoruz.
+
+931
+01:19:34,909 --> 01:19:38,909
+Z0 için de x1 ile y1'i kullanıyoruz.
+
+932
+01:19:38,909 --> 01:19:40,909
+Tamam mı?
+
+933
+01:19:40,909 --> 01:19:44,909
+Bu şekilde ilerleye ilerleye ve buradan elde edilen işte ne var?
+
+934
+01:19:44,909 --> 01:19:48,909
+Artık y0'dan sonra y1 var.
+
+935
+01:19:48,909 --> 01:19:50,909
+Burada da z1 var.
+
+936
+01:19:50,909 --> 01:19:54,909
+Şurada x1 için y1 ve z1'i kullanırken,
+
+937
+01:19:54,909 --> 01:19:58,909
+bu bize x2'yi verecek.
+
+938
+01:19:58,909 --> 01:20:04,909
+Burada x2 ve y1'i kullanıp işte y2'yi elde edeceğiz.
+
+939
+01:20:04,909 --> 01:20:10,909
+Burada da x2 ve y2'yi kullanarak z2'yi elde edeceğiz.
+
+940
+01:20:10,909 --> 01:20:12,909
+Bir önceki yöntemle farkı,
+
+941
+01:20:12,909 --> 01:20:15,909
+tek bir seferde bütün denklemlere yazmıyoruz.
+
+942
+01:20:15,909 --> 01:20:18,909
+Elde ettiğimiz yeni değeri örnekte göreceksin.
+
+943
+01:20:18,909 --> 01:20:21,909
+Bir sonraki denklemde kullanıyoruz.
+
+944
+01:20:21,909 --> 01:20:25,909
+Yani 0, 0, 0 diye doğrudan vermeyeceğiz.
+
+945
+01:20:25,909 --> 01:20:28,909
+Şimdi gelelim şu örneğe.
+
+946
+01:20:28,909 --> 01:20:31,909
+Bu örnek üzerinde daha rahat anlaşılır.
+
+947
+01:20:31,909 --> 01:20:37,340
+Şimdi başlangıç değerlerini burada yine 1, 1, 1 vermiş.
+
+948
+01:20:37,340 --> 01:20:42,340
+Şurada default olarak 0 demiş ama şurada yani bunu 1 olarak alabiliriz arkadaşlar.
+
+949
+01:20:42,340 --> 01:20:47,899
+Şimdi biraz öncekinde ne yaptık?
+
+950
+01:20:47,899 --> 01:20:53,899
+Önce satır ve şuradaki en büyük değerleri bulduk ve şu değerleri elde etmiştik bu denklemlere.
+
+951
+01:20:53,899 --> 01:20:55,899
+Buradaki buraya kadar her şey aynı.
+
+952
+01:20:55,899 --> 01:20:57,899
+Ne yaptık arkadaşlar?
+
+953
+01:20:57,899 --> 01:21:02,899
+1, 1, 1 verdiğimizde elde ettiğimiz değerleri yazmıştık yeni satıra.
+
+954
+01:21:02,899 --> 01:21:05,899
+Şimdi diyoruz ki burada böyle değil.
+
+955
+01:21:05,899 --> 01:21:08,899
+y'nin yerine 1 verdik, z'nin yerine 1 verdik.
+
+956
+01:21:08,899 --> 01:21:11,899
+x'in yerine 1 veremiyorum çünkü şurada x yok.
+
+957
+01:21:11,899 --> 01:21:13,899
+Buradan bir değer elde ediyoruz.
+
+958
+01:21:13,899 --> 01:21:16,899
+Neymiş? 9'dan 1 çıktı, 8.
+
+959
+01:21:16,899 --> 01:21:18,899
+Ona 2 ekledik, 10.
+
+960
+01:21:18,899 --> 01:21:21,899
+10 bölü 3, 3.33.
+
+961
+01:21:21,899 --> 01:21:22,899
+Bu duruyor.
+
+962
+01:21:22,899 --> 01:21:27,899
+Artık şurada x'in yerine ben 0 vermiyorum, 3.33 veriyorum.
+
+963
+01:21:27,899 --> 01:21:28,899
+Tamam mı?
+
+964
+01:21:28,899 --> 01:21:30,899
+İşte farkı bu [öğrenci].
+
+965
+01:21:30,899 --> 01:21:34,899
+z'nin değeri hala 1, z'de bir değişim olmadı.
+
+966
+01:21:34,899 --> 01:21:38,899
+x'i 8 artı 3.33 artı 3.
+
+967
+01:21:38,899 --> 01:21:42,899
+Yani x'i 8 artı 6.33.
+
+968
+01:21:42,899 --> 01:21:44,899
+Bu da ne olacak?
+
+969
+01:21:44,899 --> 01:21:46,899
+Bölü 4 diyeceğiz.
+
+970
+01:21:46,899 --> 01:21:50,899
+x'i 8 artı 6.33.
+
+971
+01:21:50,899 --> 01:21:52,899
+Şuradan ne gelir arkadaşlar?
+
+972
+01:21:52,899 --> 01:21:58,659
+1.67 mi geliyor?
+
+973
+01:21:58,659 --> 01:22:01,659
+x'i 1.67 geliyor herhalde.
+
+974
+01:22:01,659 --> 01:22:08,659
+x'i 1.67'i de 4'e bölsek, x'i 1.6'i de 4'e bölsek 0.4 gelir.
+
+975
+01:22:08,659 --> 01:22:15,659
+0.7'i de 4'e bölsek yaklaşık olarak 20 olmaz.
+
+976
+01:22:15,659 --> 01:22:17,659
+4, 1.
+
+977
+01:22:17,659 --> 01:22:19,659
+0.41 var mı?
+
+978
+01:22:19,659 --> 01:22:20,659
+Var mesela.
+
+979
+01:22:20,659 --> 01:22:22,659
+3 basamak 7 oluyormuş.
+
+980
+01:22:22,659 --> 01:22:24,659
+Tamam mı?
+
+981
+01:22:24,659 --> 01:22:28,659
+3.33'i bir sonraki itarasyona saklamadık.
+
+982
+01:22:28,659 --> 01:22:30,659
+Hemen y'i y'de kullandık.
+
+983
+01:22:30,659 --> 01:22:34,659
+Buradan y'i de 0.417 bulmuşuz.
+
+984
+01:22:34,659 --> 01:22:44,659
+Artık şurada 3.33-0.417 yazarak z'yi bulacağız.
+
+985
+01:22:44,659 --> 01:22:49,659
+Çünkü z'yi ilk başta bize 1 olarak veririz ama z'yi sadece şurada 1 olarak kullandık.
+
+986
+01:22:49,659 --> 01:23:03,659
+İşte burada 1-3.33-2.33-2.33'e 0.417'i eklersek ekleyebilecek miyiz?
+
+987
+01:23:03,659 --> 01:23:11,659
+7, 4, 7-2.
+
+988
+01:23:11,659 --> 01:23:16,659
+X'i 2.747 bölü 4 diyeceğiz.
+
+989
+01:23:16,659 --> 01:23:23,659
+X'i 2.7'i 4'e bölersek 2'yi böldüğümüzde 0.5 gibi bir şey gelir.
+
+990
+01:23:23,659 --> 01:23:30,659
+0.7'i 4'e böldüğümüzde 0.1 gibi bir şey gelecek oradan.
+
+991
+01:23:30,659 --> 01:23:32,659
+1 virgül küsür.
+
+992
+01:23:32,659 --> 01:23:34,659
+O da 0.6'lı bir şey olacak.
+
+993
+01:23:34,659 --> 01:23:36,659
+X'i 0.6'lı.
+
+994
+01:23:36,659 --> 01:23:39,659
+Artık bu bütün değerlerimiz var.
+
+995
+01:23:39,659 --> 01:23:43,659
+Şimdi biz yeniden denklemde yerine koyuyoruz.
+
+996
+01:23:43,659 --> 01:23:44,659
+Neyi yerine koyacağız?
+
+997
+01:23:44,659 --> 01:23:47,659
+Mesela y yerine burada ne yazacağız?
+
+998
+01:23:47,659 --> 01:23:52,069
+Y yerine burada yazacağımız şey.
+
+999
+01:23:52,069 --> 01:23:56,069
+X'i 0.417'i yazacağız.
+
+1000
+01:23:56,069 --> 01:24:01,069
+Burada z yerine X'i 0.688'i yazacağız.
+
+1001
+01:24:01,069 --> 01:24:03,069
+Ve x'i bulacağız.
+
+1002
+01:24:03,069 --> 01:24:05,069
+Buradan bulduğumuz x değer neymiş?
+
+1003
+01:24:05,069 --> 01:24:07,069
+2.680.
+
+1004
+01:24:07,069 --> 01:24:09,069
+Tabii bir de delta'sına bakıyoruz.
+
+1005
+01:24:09,069 --> 01:24:13,069
+Hataya ulaştık mı ulaşmadık mı diye.
+
+1006
+01:24:13,069 --> 01:24:17,069
+X'i 2.680'i artık şurada yerine koyuyorum.
+
+1007
+01:24:17,069 --> 01:24:22,069
+Sonra z yerine X'i 0.688'i yazıyoruz.
+
+1008
+01:24:22,069 --> 01:24:24,069
+Bu şekilde ilerliyoruz.
+
+1009
+01:24:24,069 --> 01:24:26,069
+Şimdi anlaşıldı mı?
+
+1010
+01:24:26,069 --> 01:24:33,069
+Ve bakın burada hatalara baktığımızda şu işlemde bakın.
+
+1011
+01:24:33,069 --> 01:24:38,319
+Şurada delta'larımız hallolmuş oluyor.
+
+1012
+01:24:38,319 --> 01:24:42,319
+Yani aslında 8 itirasyon, 9 itirasyona gerek yok.
+
+1013
+01:24:42,319 --> 01:24:47,319
+Burada 0.01, şunlarda zaten 0.01 değişimli.
+
+1014
+01:24:47,319 --> 01:24:52,319
+Yani belli bir yerden sonra gerçek köke ulaşma durumumuz var zaten.
+
+1015
+01:24:52,319 --> 01:24:53,319
+Çünkü ne olacak?
+
+1016
+01:24:53,319 --> 01:24:56,319
+Köpler arasında değişim hiçbir zaman mümkün olmayacak.
+
+1017
+01:24:56,319 --> 01:24:57,319
+Yani fark 0 olacak.
+
+1018
+01:24:57,319 --> 01:25:00,319
+Ve çözümleri gerçek çözümleri bulmuş olacağız.
+
+1019
+01:25:00,319 --> 01:25:08,079
+Var mı bir sorumuz?
+
+1020
+01:25:08,079 --> 01:25:10,079
+Anlaşıldı mı şu an [öğrenci]?
+
+1021
+01:25:10,079 --> 01:25:12,079
+Yani diğer arkadaşlar.
+
+1022
+01:25:12,079 --> 01:25:14,079
+Anlaşılmayan bir şey var mı?
+
+1023
+01:25:14,079 --> 01:25:21,579
+Anlaşılan bir şey var mı?
+
+1024
+01:25:21,579 --> 01:25:23,579
+Peki.
+
+1025
+01:25:23,579 --> 01:25:27,579
+Bakın bu 8 itirasyon sürdü.
+
+1026
+01:25:27,579 --> 01:25:30,579
+Öbürü ne kadar da 10 itirasyon sürdü.
+
+1027
+01:25:30,579 --> 01:25:40,899
+Şimdi gelelim doğursal olmayan denklem takımların çözümleri.
+
+1028
+01:25:40,899 --> 01:25:43,899
+Şimdi doğursal olmayan denklemleri çözdük.
+
+1029
+01:25:43,899 --> 01:25:46,899
+Hani bir sürü yöntem anlattık orada.
+
+1030
+01:25:46,899 --> 01:25:50,899
+Grafik yöntemi, Newton-Raphson dedik, bisection dedik falan.
+
+1031
+01:25:50,899 --> 01:25:52,899
+Orada ama ne vardı arkadaşlar?
+
+1032
+01:25:52,899 --> 01:25:54,899
+Tek bir tane denklem vardı.
+
+1033
+01:25:54,899 --> 01:26:04,899
+İşte ne bileyim siniz, x'in küpü artı, x² çarpı, ln x gibi böyle tek bir tane değişkenin olduğu bir şeydi.
+
+1034
+01:26:04,899 --> 01:26:06,899
+Ve doğursal değildi.
+
+1035
+01:26:06,899 --> 01:26:11,899
+Şimdi eğer bir denklemimiz birden fazla değişken varsa.
+
+1036
+01:26:11,899 --> 01:26:19,899
+O zaman bu değişkene göre birden fazla denklem olması durumunda buna doğursal olmayan denklem takımları diyoruz.
+
+1037
+01:26:19,899 --> 01:26:29,659
+Şimdi bu konu arkadaşlar optimizasyonun aslında bir konusu.
+
+1038
+01:26:29,659 --> 01:26:33,659
+Yani siz bir sistem tasarlayacaksınız.
+
+1039
+01:26:33,659 --> 01:26:40,659
+Mekanik bir sistem olur, elektronik sistemi olur, kontrol sistemi olur, makine ile alakalı olur.
+
+1040
+01:26:40,659 --> 01:26:45,659
+Ne olursa olsun veya sosyal bir olay, bir sistem halinde tasarlayabilirsiniz.
+
+1041
+01:26:45,659 --> 01:26:49,659
+Bu sistemde sizin girişleriniz vardır.
+
+1042
+01:26:49,659 --> 01:26:51,659
+İşte x girişi, y girişi, z girişi.
+
+1043
+01:26:51,659 --> 01:26:54,659
+Bunlar yani şuradaki x'ler, y'ler, z'ler gibi düşünün.
+
+1044
+01:26:54,659 --> 01:26:56,659
+Bir de output'umuz vardır.
+
+1045
+01:26:56,659 --> 01:26:59,659
+F target veya f output diyelim.
+
+1046
+01:26:59,659 --> 01:27:01,659
+X, y ve z'ye bağlanıyor.
+
+1047
+01:27:01,659 --> 01:27:08,659
+Çoğunlukla gerçek hayatta sistemler non-linel olarak çalışırlar.
+
+1048
+01:27:09,659 --> 01:27:12,659
+Yani biz de linear sistemleri biliyoruz.
+
+1049
+01:27:12,659 --> 01:27:17,659
+Hız problemi, y eşittir, x eşittir, vt değil mi?
+
+1050
+01:27:17,659 --> 01:27:28,899
+Bir alınan yol, zamanla, hızın çarpımı ile elde edilen bir şey, aslında bir integral gibi bir şey var.
+
+1051
+01:27:28,899 --> 01:27:32,899
+Integral de aslında kendi içerisinde linear bir şeydir, işlemdir.
+
+1052
+01:27:32,899 --> 01:27:40,899
+Şimdi ben eğer linear ise bir sistem, onu çözmeyi biraz önceki yöntemlerine anlattık.
+
+1053
+01:27:40,899 --> 01:27:47,899
+Ama non-linear ise burada arkadaşlar normal çözüm yöntemleri birazcık çaresiz kalıyor.
+
+1054
+01:27:47,899 --> 01:27:49,899
+Birazdan örneklerine bakacağız.
+
+1055
+01:27:49,899 --> 01:27:53,899
+Bunun için yine sayısal analiz yöntemleri çok güzel çözümler üretiyorlar.
+
+1056
+01:27:53,899 --> 01:27:55,899
+Burada bir sürü yöntem var.
+
+1057
+01:27:55,899 --> 01:27:59,899
+Yapay zeka optimizasyon algoritmaları da buradan ortaya çıkıyor.
+
+1058
+01:27:59,899 --> 01:28:03,899
+Şimdi bir şey bakacağım, Google'da bir şey vereceğim.
+
+1059
+01:28:03,899 --> 01:28:12,529
+Benchmark functions for optimization methods.
+
+1060
+01:28:12,529 --> 01:28:28,979
+Bu konuda mesela arıların davranışını gösteren bir algoritma,
+
+1061
+01:28:28,979 --> 01:28:33,979
+bir Erciyes Üniversitesi'nden Derviş Hoca tarafından önerilen bir algoritmadır.
+
+1062
+01:28:34,979 --> 01:28:40,979
+Ondan sonra karınca kolonisi optimizasyonu, genetik algoritma, başka ne var ne bileyim,
+
+1063
+01:28:40,979 --> 01:28:46,979
+parçacık süre optimizasyonu, yapay arı kolonisi dedik gibi.
+
+1064
+01:28:46,979 --> 01:28:57,979
+Mesela benim bu konuda yaptığım Türkiye haritasından en kısa gezgin satıcı probleminin çözülmesi ile alakalı bir şeyimiz vardı.
+
+1065
+01:28:57,979 --> 01:29:03,979
+Şimdi bu hem diskrit olarak hem de sürekli olarak kullanılabilen bir şey bu algoritmalar.
+
+1066
+01:29:03,979 --> 01:29:11,979
+Şimdi mesela sürekli fonksiyonlarda bazı benchmark fonksiyonları üretilmiş.
+
+1067
+01:29:11,979 --> 01:29:13,979
+Mesela şunlardan birine bakalım.
+
+1068
+01:29:13,979 --> 01:29:18,979
+Egg Holder, yumurtanın şöyle bir fonksiyon.
+
+1069
+01:29:18,979 --> 01:29:21,979
+Fonksiyonun denklemine bakarsak kaç değişken var?
+
+1070
+01:29:21,979 --> 01:29:23,979
+İki tane değişken var.
+
+1071
+01:29:23,979 --> 01:29:30,979
+Bu değişkenlerin durumuna göre bunların optimum değerleri yani minim ve maks noktalarının bulunması bir problem.
+
+1072
+01:29:30,979 --> 01:29:39,979
+Şimdi yapay zeka algoritmaları veya sayısal analiz yöntemleri, mesela bunun Matlab'de işte kodunu nasıl üretildiğine dair bir şeyler falan da varmış.
+
+1073
+01:29:39,979 --> 01:29:48,979
+Bu fonksiyonda global minimum ve global maximum noktalarını bulmak için yarıştırılıyorlar yani karşılaştırılıyor.
+
+1074
+01:29:49,979 --> 01:29:51,979
+Mesela bunun global minimumu neymiş?
+
+1075
+01:29:51,979 --> 01:29:53,979
+X.
+
+1076
+01:29:53,979 --> 01:29:56,979
+İşte X'i 959.640.
+
+1077
+01:29:56,979 --> 01:29:58,979
+İşte şu noktada.
+
+1078
+01:29:58,979 --> 01:30:01,979
+512'ye 404.231.
+
+1079
+01:30:01,979 --> 01:30:03,979
+Yani X1 512 olacak.
+
+1080
+01:30:03,979 --> 01:30:07,979
+X2'de 404.231 falan olacakmış.
+
+1081
+01:30:07,979 --> 01:30:09,979
+İki boyutlu bir şey.
+
+1082
+01:30:09,979 --> 01:30:12,979
+Bunun bulunması yani bu zor bir fonksiyon gibi görünüyor.
+
+1083
+01:30:12,979 --> 01:30:14,979
+Bakalım başka neler varmış?
+
+1084
+01:30:14,979 --> 01:30:19,979
+Bunlar 1'den fazla lokal minimum noktası olan şeyler.
+
+1085
+01:30:19,979 --> 01:30:21,979
+Yani bunun globaline bakıyoruz.
+
+1086
+01:30:21,979 --> 01:30:25,979
+Şuradan ne bileyim Shaper Function n2 diyelim.
+
+1087
+01:30:25,979 --> 01:30:27,979
+Bakın bu böyle bir fonksiyon.
+
+1088
+01:30:27,979 --> 01:30:28,979
+İşte şöyle bir değişkenler varmış.
+
+1089
+01:30:28,979 --> 01:30:29,979
+Şöyle iki tane şey var.
+
+1090
+01:30:29,979 --> 01:30:31,979
+Sizin üstü bir şeyler falan içeriyor.
+
+1091
+01:30:31,979 --> 01:30:34,979
+Hani bunu elle çözmeye kalksanız çözemezsiniz.
+
+1092
+01:30:34,979 --> 01:30:38,979
+İşte böyle sayısal analiz teknikleriyle çözmeniz gelir.
+
+1093
+01:30:38,979 --> 01:30:40,979
+Hatta size tavsiye ederim.
+
+1094
+01:30:40,979 --> 01:30:44,979
+Yani gördüğünüz bu yöntemleri bu tarz fonksiyonlar üzerinde.
+
+1095
+01:30:44,979 --> 01:30:46,979
+Mesela şu sayfayı paylaşayım.
+
+1096
+01:30:46,979 --> 01:30:48,979
+Hani deneyin.
+
+1097
+01:30:48,979 --> 01:30:51,979
+Çünkü Hazar C'de kodunu da yazacaksınız.
+
+1098
+01:30:51,979 --> 01:30:53,979
+Paylasını görürsünüz.
+
+1099
+01:30:53,979 --> 01:30:57,619
+Ball Shaper dediğimiz.
+
+1100
+01:30:57,619 --> 01:31:00,619
+Mesela hani kase şeklinde.
+
+1101
+01:31:00,619 --> 01:31:04,619
+Bakın şu bir ikinci derece fonksiyon gibi görünüyor.
+
+1102
+01:31:04,619 --> 01:31:08,619
+Bunun global minimumları bu sıfırdaymış.
+
+1103
+01:31:08,619 --> 01:31:15,119
+Mesela some of different treat dediğimiz bu neymiş.
+
+1104
+01:31:15,119 --> 01:31:16,119
+Şöyle bir şey.
+
+1105
+01:31:16,119 --> 01:31:22,609
+Plate varmış.
+
+1106
+01:31:22,609 --> 01:31:23,609
+Bunlara bakalım.
+
+1107
+01:31:23,609 --> 01:31:31,609
+Bu biraz da hani bir kağıdı alıp karşılıklı çapraz tarafından böyle kıvırdığınızda elde edilen bir şekle benziyor.
+
+1108
+01:31:31,609 --> 01:31:33,609
+Yine bakın iki değişkenli.
+
+1109
+01:31:33,609 --> 01:31:42,600
+Bunlara mesela şey yapılıyor.
+
+1110
+01:31:42,600 --> 01:31:46,600
+Mesela bakın burada daha fazla bir karışık durum var.
+
+1111
+01:31:46,600 --> 01:31:52,680
+Bu tarz, bunlar benchmark fonksiyonlar.
+
+1112
+01:31:52,680 --> 01:31:57,680
+Bakalım başka imajlarda aratalım neler varmış.
+
+1113
+01:31:57,680 --> 01:32:05,220
+Bakın şunlar işte denklemleri.
+
+1114
+01:32:05,220 --> 01:32:07,220
+Bir de bunların bir şekilleri vardı.
+
+1115
+01:32:07,220 --> 01:32:11,220
+Birkaç tane daha böyle karmaşık şekilli fonksiyon vardı.
+
+1116
+01:32:11,220 --> 01:32:20,460
+Onları da bulabilirsem.
+
+1117
+01:32:20,460 --> 01:32:22,460
+Standard Benchmark Functions.
+
+1118
+01:32:22,460 --> 01:32:27,050
+Bu da aynısı.
+
+1119
+01:32:27,050 --> 01:32:30,220
+Neyse.
+
+1120
+01:32:30,220 --> 01:32:39,220
+Denklemler bu şekilde çeşitli şeyler var arkadaşlar ve bu asıl yapay zekacıların üzerinde çalıştığı bir şey.
+
+1121
+01:32:39,220 --> 01:32:41,220
+Yani ben bir yöntem öğreniyorum.
+
+1122
+01:32:41,220 --> 01:32:44,220
+Yeni bir yapay zeka arama algoritması diyelim buna.
+
+1123
+01:32:44,220 --> 01:32:56,220
+Bu yöntemle yapılacak olan şey ben diğer yöntemlerden daha kısa sürede mesela bu sonuca ulaşıyorum.
+
+1124
+01:32:56,220 --> 01:33:01,220
+Bakın biraz önce bahsettiğimiz yöntem birisi 13 itirasyon sürdü, birisi 8 itirasyon sürdü.
+
+1125
+01:33:01,220 --> 01:33:11,220
+Veya ben gerçek sonuca %0.001 daha az bir hatayla ulaşabiliyorum veya daha kısa sürede ulaşabiliyorum.
+
+1126
+01:33:11,220 --> 01:33:14,220
+Ulaşırken daha az bellek kullanıyorum.
+
+1127
+01:33:14,220 --> 01:33:23,220
+Hem algoritmik çözüm zaman ve bellek açısından uygun çözümler hem de correctness açısından uygun çözümler üretme süreçleri.
+
+1128
+01:33:23,220 --> 01:33:25,220
+Şimdi bunu niye anlatıyoruz?
+
+1129
+01:33:25,220 --> 01:33:29,220
+Gerçek dünyada dikki doğrusu olmayan şeylerden oluşuyor.
+
+1130
+01:33:29,220 --> 01:33:31,220
+Bunun bir sürü yöntemi var.
+
+1131
+01:33:31,220 --> 01:33:41,220
+Biz burada iki değişkenli ve üç değişkenli yöntemler üzerinde acaba nasıl bir x ve y değeri bulalım ki bu iki denklemi de sağlasın.
+
+1132
+01:33:41,220 --> 01:33:42,220
+Sorumuz bu olacak.
+
+1133
+01:33:42,220 --> 01:33:48,220
+Şimdi bunun için Taylor serileri ve TREV kullanarak bir yöntem.
+
+1134
+01:33:48,220 --> 01:33:50,220
+Bu sayısal analiz dersinde anlatıyoruz.
+
+1135
+01:33:50,220 --> 01:33:52,220
+Ama bunun ucu çok açık.
+
+1136
+01:33:52,220 --> 01:33:56,220
+Başlı başına bir konu veya ders demeyelim.
+
+1137
+01:33:56,220 --> 01:34:01,220
+Bu konuda başlı başına yüksek lisans ve araştırma alanları var.
+
+1138
+01:34:01,220 --> 01:34:06,220
+Çünkü endüstri de çok fazla kullanıyor böyle şeyler arkadaşlar.
+
+1139
+01:34:06,220 --> 01:34:12,220
+Şimdi bir Taylor serisini açmak istediğimizde tek değişkenli sistemlerde ne oluyor?
+
+1140
+01:34:12,220 --> 01:34:13,220
+Ne oluyor?
+
+1141
+01:34:13,220 --> 01:34:20,220
+Taylor serisinde x yerine x artı, x0 artı, h verirsek f, if sıfır sıfırıncı TREV yazılmaz.
+
+1142
+01:34:20,220 --> 01:34:24,220
+Sonra birinci TREV'de x sıfır bölü, h bölü bir faktör geldi.
+
+1143
+01:34:24,220 --> 01:34:26,220
+Yani burada da birinci derece var.
+
+1144
+01:34:26,220 --> 01:34:31,220
+İkinci TREV'de x sıfır bölü, h'ın karesi bölü, iki faktör ve böyle devam edip gidiyor.
+
+1145
+01:34:31,220 --> 01:34:40,220
+Eğer bizim burada iki tane değişkenimiz varsa yani x ve y gibi veya z gibi üç değişkenimiz varsa bu Taylor serisini şu şekilde açacağız.
+
+1146
+01:34:40,220 --> 01:34:46,220
+x sıfır'a delta x kadar, y sıfır'a delta y kadar yani şuradaki h yerine bunlar gelmeli.
+
+1147
+01:34:46,220 --> 01:34:58,220
+Ve f, x sıfır, y sıfırdan bunu yazacak olursak yani önce fonksiyonun kendisi yani sıfırıncı TREV'i x sıfır, y sıfır kendisi var.
+
+1148
+01:34:58,220 --> 01:35:05,220
+Sonra birinci TREV'de f, x sıfır, y sıfır bölü delta x kadar bir şey, böyle bir faktör.
+
+1149
+01:35:06,220 --> 01:35:13,220
+Bir de ne var arkadaşlar, şimdi şurada alacağımız TREV burada ikiye ayrılıyor.
+
+1150
+01:35:13,220 --> 01:35:17,220
+Bir x'e göre TREV alabiliriz, bir de y'ye göre TREV alabiliriz.
+
+1151
+01:35:17,220 --> 01:35:21,220
+İşte bu şu operatör, kısmi TREV operatörüdür.
+
+1152
+01:35:21,220 --> 01:35:24,220
+Kısmi TREV'ler cinsinden yerine koyarak yazılıyor.
+
+1153
+01:35:24,220 --> 01:35:33,220
+İkinci derece işte terimlerde şu şekilde, x'e göre ikinci dereceden TREV alıyoruz, y'ye göre ikinci dereceden TREV alıyoruz.
+
+1154
+01:35:33,220 --> 01:35:39,220
+Yani şurada x sıfır için yaptığımız, x değişken için yaptığımız şey burada ayrıca y değişken için de geliyor.
+
+1155
+01:35:39,220 --> 01:35:46,220
+Tabii bu birinci denklemde, bakın iki tane değişkenimiz var, iki tane de denklemimiz var.
+
+1156
+01:35:46,220 --> 01:35:48,220
+Çünkü denklem takımından bahsediyoruz.
+
+1157
+01:35:48,220 --> 01:35:57,220
+İkinci denklemde de aynı şekilde TREV'leri alıp bu değerler yerine konuyor ve çözüm bu şekilde devam edecek.
+
+1158
+01:35:57,220 --> 01:36:05,220
+Bu ikinci mertebeden TREV dahil tüm terimler atılarak denklem sıfıra eşit.
+
+1159
+01:36:05,220 --> 01:36:09,220
+Yani şuradan sonraki terimleri iptal ediyoruz.
+
+1160
+01:36:09,220 --> 01:36:17,220
+Bu aslında bir şeyin lokal minimum ve maksimum noktasını bulurken TREV'ini alıp sıfıra eşitlemekle alakalı bir şey.
+
+1161
+01:36:17,220 --> 01:36:21,220
+Şurada birinci dereceden TREV var, bu ifadeyi sıfıra eşitleyeceğiz.
+
+1162
+01:36:21,220 --> 01:36:26,220
+Sıfıra eşitlenmiş hallerin şu şekilde, iki değişkenli eşitliklerde.
+
+1163
+01:36:26,220 --> 01:36:34,220
+F x0 y0 artı x'e göre TREV'in olduğu şey, y'ye göre TREV'in olduğu şey eşittir sıfır dedik.
+
+1164
+01:36:34,220 --> 01:36:41,220
+G x0 y0 artı G'nin x'e göre TREV'i, G'nin y'ye göre TREV'i eşittir sıfır dedik.
+
+1165
+01:36:41,220 --> 01:36:46,220
+Yani şurada şu kısımları attık ve buraya işte ne yaptık sıfır yazdık.
+
+1166
+01:36:46,220 --> 01:36:48,220
+Şimdi bunu matriz formatına dönüştürüyoruz.
+
+1167
+01:36:48,220 --> 01:36:53,220
+Matriz formatına dönüştürürken şu kısım karşıya aktarılıyor.
+
+1168
+01:36:53,220 --> 01:36:57,220
+Karşıya aktarılınca bakın şuraya gelecek yer.
+
+1169
+01:36:57,220 --> 01:37:09,220
+Yani önce şöyle yazalım, x'i f x0 y0, x'i g x0 y0 değerlerini elde ediyoruz şurada.
+
+1170
+01:37:09,220 --> 01:37:18,220
+Sonra arkadaşlar bize iteratif arama işlemlerinde belli bir x0'dan başlayacağız.
+
+1171
+01:37:19,220 --> 01:37:24,220
+Bu x0'a delta x kadar bir şeyler ekleyeceğiz, x1'ı bulacağız.
+
+1172
+01:37:24,220 --> 01:37:26,220
+Bunda tekrar yeni bir delta x ekleyeceğiz.
+
+1173
+01:37:26,220 --> 01:37:30,220
+Delta x1 diyelim, delta x2 diyelim, x2'ye elde edeceğiz.
+
+1174
+01:37:30,220 --> 01:37:38,220
+Bu şekilde belli bir değere kadar, belli bir hataya ulaşana kadar arama işlemimiz devam edecek ve çözümü bulmuş olacağız.
+
+1175
+01:37:38,220 --> 01:37:41,220
+Tamam mı? NANİ NER sistemlerde.
+
+1176
+01:37:42,220 --> 01:37:48,220
+Peki, bu arama işlemini yaparken matrizler formatında bunu yazarsak nasıl olur?
+
+1177
+01:37:48,220 --> 01:37:56,220
+Delta x'ler bizim için önemlidir, değişkenler ve bu x0 y0'lar da türevden elde edeceğimiz bir anlamda sabit şeyler olacak.
+
+1178
+01:37:56,220 --> 01:38:01,220
+O zaman bunu matriz formatında şunları ayrı, şunları ayrı yazıyorum.
+
+1179
+01:38:02,220 --> 01:38:06,220
+Delta x ve delta y'yi ayırdım, çünkü hepsi ortak.
+
+1180
+01:38:06,220 --> 01:38:13,220
+Diğerleri de bu matrisin a matrisi, buraya x matrisi, buraya da y matrisi diyelim.
+
+1181
+01:38:13,220 --> 01:38:25,220
+A matrisinde f fonksiyonunun delta x'e göre kısmi türevinin x0 y0 noktasındaki değeri demektir.
+
+1182
+01:38:25,220 --> 01:38:33,220
+Şu ne demektir? f fonksiyonunun y'ye göre kısmi türevindeki x0 y0 noktasındaki değeri demektir.
+
+1183
+01:38:33,220 --> 01:38:38,220
+Aynı şeyleri g fonksiyonun içinde yapıyoruz ve işte buradan delta x'i delta y'yi buluyoruz.
+
+1184
+01:38:38,220 --> 01:38:46,220
+Şurada da fonksiyonun x0 y0 noktasındaki değişkenin negatifi, yani tersi karşıya gelecek.
+
+1185
+01:38:46,220 --> 01:38:55,220
+Buradan xn artı bir sonraki değerleri bulacağız ve belli bir hataya ulaşana kadar bütün kökler için bu işlemleri devam ettireceğiz.
+
+1186
+01:38:55,220 --> 01:39:04,909
+Burada anlaşılmayan bir şey var mı? Yok.
+
+1187
+01:39:04,909 --> 01:39:13,909
+Devam edelim. Eğer bunu üç değişkenli veya daha yüksek seviyeden değişkenlerle yapacaksak, daha fazla değişken içeriyorsa yine aynı mantıkla.
+
+1188
+01:39:13,909 --> 01:39:19,909
+Şimdi üç değişken varsa üç tane denklemimizin olmasını bekliyoruz.
+
+1189
+01:39:19,909 --> 01:39:24,909
+Aynı ifadeyi diyeceğiz ki hiç böyle Taylor'a falan gerek yok.
+
+1190
+01:39:24,909 --> 01:39:32,909
+Bir denklemin yani eşitliğin, birinci eşitliğin x'e göre kısmi türevi, y'ye göre kısmi türevi, z'ye göre kısmi türevi.
+
+1191
+01:39:32,909 --> 01:39:39,909
+Sonra ikinci eşitliğin x'e göre, y'ye göre, z'ye göre kısmi türevilere sonra üçüncü eşitliği için aynı şeyler.
+
+1192
+01:39:39,909 --> 01:39:48,909
+Bu her bir değişkenin değişim miktarı ve f'in negatif görüntüleri buraya yazılıyor.
+
+1193
+01:39:48,909 --> 01:39:57,909
+Bunu dörtlü içinde yapabilirsiniz. O zaman dörde dörtlük bir maddis gelir ve bu şekilde devam ediyoruz.
+
+1194
+01:39:57,909 --> 01:40:03,159
+Burada anlaşılmayan bir şey var mı teknik tarafta?
+
+1195
+01:40:03,159 --> 01:40:08,859
+Evet, bu chapterın son slaytı.
+
+1196
+01:40:08,859 --> 01:40:17,859
+Eşitliğimiz şu şekildeymiş. 0.7, 1.7'den başlayarak şu hataya ulaşana kadar denklem takımı çözünür.
+
+1197
+01:40:17,859 --> 01:40:23,859
+Niye bu değerleri verdik? Çünkü uzun uzun işlem yapmayalım. Yani sıfıra sıfırdan da başlayabilirdik.
+
+1198
+01:40:23,859 --> 01:40:32,859
+Yani kendiniz mesela aynı soruyor, sıfıra sıfırdan başlatarak bir denerseniz belli bir hataya ulaşana kadar benzer sonucu elde etmeniz gerekir.
+
+1199
+01:40:32,859 --> 01:40:42,859
+Önce ne yapacağız arkadaşlar? Bu birinci denklemin x'e göre kısmi türevini şuraya, y'e göre kısmi türevini buraya yazıyoruz.
+
+1200
+01:40:42,859 --> 01:40:45,859
+x'e göre kısmi türev almak ne demek?
+
+1201
+01:40:45,859 --> 01:40:57,260
+x² artı y. Burada y, x bakın y eşittir, fx fonksiyonu gibi bir şey düşünmeyin kesinlikle burada parametrik türevi değil.
+
+1202
+01:40:57,260 --> 01:41:06,260
+Y başka biri değişken, x başka biri değişken, kısmi türev demek şuranın içerisinde x'e göre değişenlerin normal türevini al,
+
+1203
+01:41:06,260 --> 01:41:14,260
+diğerlerini sabit kabul et. Yani x'e göre baktığımızda y burada sabit bir sayıdır. O zaman buradan ne gelecek? 2x gibi bir şey gelecek.
+
+1204
+01:41:14,260 --> 01:41:24,260
+Aynı durumda x² artı y'ye göre kısmi türevine baktığımızda burada da bu sefer x sabit yani sıfırdır onun türevi.
+
+1205
+01:41:24,260 --> 01:41:32,260
+Eğer x² çarpı y olsaydı o zaman ne olurdu? y'nin türevi 1 olurdu oradan x² gelebilirdi ama bunlar sabit bir sayıymış gibi.
+
+1206
+01:41:32,260 --> 01:41:34,260
+O zaman ne gelecek? Buradan 1 gelecek.
+
+1207
+01:41:34,260 --> 01:41:40,260
+Şuradan x'e göre kısmi türev alırsak 1 geldi, y'ye göre kısmi türev alırsak 2y geldi.
+
+1208
+01:41:40,260 --> 01:41:43,260
+Delta x'i ve delta y'yi yerine yazıyorum.
+
+1209
+01:41:43,260 --> 01:41:51,260
+Şurada da fonksiyonların eksi dedik. x² artı y eksi 3, x artı y² eksi 5. Bu değerlerini yazdık.
+
+1210
+01:41:51,260 --> 01:41:56,260
+Buraya kadar anlaşılmayan bir şey var mı? 3 değişkenli olsaydı ne yapacaktım?
+
+1211
+01:41:56,260 --> 01:42:02,079
+Onu şimdi birinize soralım mesela.
+
+1212
+01:42:02,079 --> 01:42:07,220
+[öğrenci].
+
+1213
+01:42:07,220 --> 01:42:08,220
+Evet hocam.
+
+1214
+01:42:08,220 --> 01:42:14,220
+[öğrenci] mesela şurada z küp diye bir şey daha olsaydı. Burada da ne bileyim z² olsaydı.
+
+1215
+01:42:14,220 --> 01:42:17,220
+Hocam onu da aynı şekilde kısmi türevine alırdık.
+
+1216
+01:42:17,220 --> 01:42:23,220
+Evet mesela şuraya bir kısmi türev eklemek istesek ne olurdu? Tabi 3. denklemede ihtiyacımız var değil mi o zaman?
+
+1217
+01:42:23,220 --> 01:42:26,220
+Evet yani 3z² olurdu.
+
+1218
+01:42:26,220 --> 01:42:33,220
+3z² güzel tamam. Şurada aşağıdakinde 2z olurdu.
+
+1219
+01:42:33,220 --> 01:42:38,220
+Bir de buraya ne gelecekti delta z geldi. Bir de şuraya 2. değişken gelecekti.
+
+1220
+01:42:38,220 --> 01:42:40,220
+Peki teşekkür ederim.
+
+1221
+01:42:40,220 --> 01:42:42,220
+Rica ederim hocam.
+
+1222
+01:42:42,220 --> 01:42:48,220
+Peki. Bu işlem yaptıktan sonra arkadaşlar aslında bizim yani iterasyonlarımız başlıyor.
+
+1223
+01:42:48,220 --> 01:42:54,220
+İterasyonlarda da başlangıç değerinden işte hedef ulaşana kadar adım adım bunu devam ettireceğiz.
+
+1224
+01:42:54,220 --> 01:43:03,220
+Bakın bu çok kolay bir yöntem. Çünkü şurayı aslında kısmi türevler adı altında hesaplayıp sıfıra işliyoruz.
+
+1225
+01:43:03,220 --> 01:43:20,220
+Yani biraz önceki gösterdiğim bu fonksiyonlardaki şeye bakarsak bir lokal şey global minimum noktalarına veya global maksimum noktalarına yani türevin sıfıra eşitlenmesi ne demek?
+
+1226
+01:43:20,220 --> 01:43:28,220
+Şöyle şu noktada türev sıfırdır ya bu noktalar üzerinden aslında işlem yapılır. Evet [öğrenci].
+
+1227
+01:43:28,220 --> 01:43:37,600
+Hocam az önce işte sesim geliyor mu hocam?
+
+1228
+01:43:37,600 --> 01:43:38,600
+Evet geliyor.
+
+1229
+01:43:38,600 --> 01:43:40,600
+Şu an sesim geliyor mu hocam?
+
+1230
+01:43:40,600 --> 01:43:53,600
+Hocam az önce hani z küp eklediğimizde biriniz enklinin sonuna 3z kare koyacağız dedik ya orada aslında x'e göre türev aldığınız için onu direkt bir şey olarak kabul etmeyecek miyiz?
+
+1231
+01:43:53,600 --> 01:43:54,600
+Hayır.
+
+1232
+01:43:55,600 --> 01:44:08,600
+Şuraya üçüncü bir terim ekleyeceğiz yani x kare artı y eksi mesela artı z küp eşittir üç sıfır dedim mesela. Öyle bir şey kabul edelim.
+
+1233
+01:44:08,600 --> 01:44:15,600
+Şimdi buradan z'ye göre türev alırsak ne gelir? Şu sabittir, bu sabittir, bu 3z kare.
+
+1234
+01:44:15,600 --> 01:44:23,600
+Tamam hocam ben ilk gününüzde x'e göre türev alıyor sonra y'ye göre sonra z'ye göre hani ilk söylediğimde x'e göre yazdırdı zannettim de tamam hocam.
+
+1235
+01:44:23,600 --> 01:44:25,600
+3z kare tamam.
+
+1236
+01:44:26,600 --> 01:44:32,600
+Yani her şey şu genelleştirilmiş yani bunu dörde dörtlük de yapabilirsiniz.
+
+1237
+01:44:32,600 --> 01:44:38,600
+Kısmi türevler önce x'e sonra y'ye sonra z'ye eğer varsa diğer değişkenlere göre sırayla alınıyor.
+
+1238
+01:44:38,600 --> 01:44:46,899
+Şimdi burada yapacağımız şey arkadaşlar delta x ve delta y'yi bulmak.
+
+1239
+01:44:46,899 --> 01:44:49,899
+Delta x ve delta y'yi bulmak için şunu yapıyoruz.
+
+1240
+01:44:49,899 --> 01:44:53,899
+X'in sıfırıncı değeri 0.7. O zaman şurası ne?
+
+1241
+01:44:53,899 --> 01:44:57,899
+1.4. Burası bir, bu bir.
+
+1242
+01:44:57,899 --> 01:45:00,899
+Y'nin sıfırıncı değeri 1.7. Bu da 3.4.
+
+1243
+01:45:00,899 --> 01:45:10,899
+X'in sıfırıncı değerine şurada yani x kare artı y eksi üç şurada şu değerleri verdiğimizde bir sayı bulacağız.
+
+1244
+01:45:10,899 --> 01:45:12,899
+Burada bu değerleri verdiğimizde bir sayı bulacağız.
+
+1245
+01:45:12,899 --> 01:45:24,899
+Sonra diyeceğiz ki 1.4 çarpı delta x artı 1 çarpı delta y'ye eşittir.
+
+1246
+01:45:24,899 --> 01:45:28,899
+Şuradaki değer neyse, işte buna t1 diyelim.
+
+1247
+01:45:28,899 --> 01:45:38,899
+1 çarpı delta x artı 3.4 delta y'ye eşittir.
+
+1248
+01:45:38,899 --> 01:45:40,899
+T2 dedik.
+
+1249
+01:45:40,899 --> 01:45:45,899
+Buradan bakın linear bir denkleme elde ettik.
+
+1250
+01:45:45,899 --> 01:45:52,899
+O zaman biraz önceki yöntemlerden herhangi biriyle veya artık nasıl çözeceksek delta x'in ve delta y'nin değerlerini buluyoruz.
+
+1251
+01:45:52,899 --> 01:45:55,899
+Delta y ve delta x'i buluyoruz.
+
+1252
+01:45:55,899 --> 01:45:59,899
+Non-linear bir durumdan linear bir duruma geçiş yaptık dikkat ederseniz.
+
+1253
+01:45:59,899 --> 01:46:02,899
+Delta x ve delta y'yi bulduktan sonra ne yapacağız?
+
+1254
+01:46:02,899 --> 01:46:06,899
+Buradan x0'dan x1'i, y0'dan y1'i elde edebiliriz.
+
+1255
+01:46:06,899 --> 01:46:08,899
+Bu şekilde devam edeceğiz.
+
+1256
+01:46:08,899 --> 01:46:13,899
+Bakın, iş 1.4, 3.4 demiş yani şu yazdığımız değerleri.
+
+1257
+01:46:13,899 --> 01:46:18,899
+Şu değerleri yerine yazdığımızda x'i 0.81, 1.41 buluyormuşuz.
+
+1258
+01:46:18,899 --> 01:46:29,899
+Ve buradan yani linear denklem takımlarını çözdüğümüzde delta x'in 0.31, delta y'nin 0.38 oldu.
+
+1259
+01:46:29,899 --> 01:46:32,899
+Burada direkt hoca sonucu yazmış, yani olabilir.
+
+1260
+01:46:32,899 --> 01:46:38,899
+0.31'i gidip şurada yerine yazdığımızda, x0'da yerine yazdığımızda 1.01.
+
+1261
+01:46:38,899 --> 01:46:42,899
+Y0'a yerine yazdığımızda 2.08.
+
+1262
+01:46:42,899 --> 01:46:46,899
+Şimdi epsilon'a bakalım, hataya bakalım.
+
+1263
+01:46:46,899 --> 01:46:54,899
+Yani 0.31'lik bir şey var, 0.38'lik bize 0.008, 0.08 olana kadar diyor.
+
+1264
+01:46:54,899 --> 01:46:56,899
+O zaman bir iterasyon daha ilerleyeceğiz.
+
+1265
+01:46:57,899 --> 01:47:04,899
+Çünkü şu deltalar hala şeyden büyük, 0.08'den büyük değerler.
+
+1266
+01:47:04,899 --> 01:47:10,899
+Getirip burada yeni x ve yeni y değerlerini yerine yazdığımızda 2x yazınca ne olacak?
+
+1267
+01:47:10,899 --> 01:47:12,899
+Şurası 2.02.
+
+1268
+01:47:12,899 --> 01:47:15,899
+2x yazdığımızda 4.16.
+
+1269
+01:47:15,899 --> 01:47:17,899
+Delta x var, delta y var.
+
+1270
+01:47:17,899 --> 01:47:20,899
+x² artı y yani şurada da şu değerleri yerine yazıyoruz.
+
+1271
+01:47:20,899 --> 01:47:23,899
+x'ı 0.1, x'ı 0.34.
+
+1272
+01:47:23,899 --> 01:47:37,899
+Yine aynı şekilde delta x'ı ve delta y'yi çarptığımızda bunun delta x'ın değeri x'ı 0.01, delta y'nin değeri x'ı 0.08 bulduk.
+
+1273
+01:47:37,899 --> 01:47:43,899
+Ve buradaki yeni x ve y değerlerimiz bunlara oldu.
+
+1274
+01:47:43,899 --> 01:47:51,899
+Şimdi bunlar olduğunda bakıyorum bu da 0.08'den küçük, bu da 0.08'den küçük veya eşit.
+
+1275
+01:47:51,899 --> 01:47:53,899
+Yani eşitliği de kabul edebiliriz.
+
+1276
+01:47:53,899 --> 01:47:57,899
+Artık durabilirim, isterseniz bir adım daha ilerleyebilirsiniz.
+
+1277
+01:47:57,899 --> 01:48:02,899
+İlerlediğimizi düşünürsek mesela ne olacak burası?
+
+1278
+01:48:02,899 --> 01:48:05,899
+Şuradan 2'yi bulacağız, 1 var, 1 var.
+
+1279
+01:48:05,899 --> 01:48:07,899
+Buradan neyi bulacağız?
+
+1280
+01:48:07,899 --> 01:48:09,899
+4'ı bulacağız.
+
+1281
+01:48:09,899 --> 01:48:12,899
+Delta x, delta y.
+
+1282
+01:48:12,899 --> 01:48:17,180
+Şurada yerine koyarsak ne olur arkadaşlar?
+
+1283
+01:48:17,180 --> 01:48:21,180
+1 yazdık, 1, 2 daha 3, 0 oldu.
+
+1284
+01:48:21,180 --> 01:48:26,489
+1, 4, bu da 0 oldu.
+
+1285
+01:48:26,489 --> 01:48:33,489
+Şimdi bununla 2 delta x artı delta y eşittir 0.
+
+1286
+01:48:33,489 --> 01:48:39,489
+Delta x artı 4 delta y eşittir 0.
+
+1287
+01:48:39,489 --> 01:48:43,489
+Bunları karşılıklı olarak zaten x'de 0'a eşit oluyor.
+
+1288
+01:48:43,489 --> 01:48:47,489
+Şimdi birbirine eşit olacak demek 2 delta x artı delta y.
+
+1289
+01:48:47,489 --> 01:48:57,489
+Yani birbirine eşitlersek delta x'i bu tarafa delta y'yi öbür tarafa atarsak 3 delta x eşittir 3 delta y mi buluyoruz?
+
+1290
+01:48:57,489 --> 01:49:01,489
+Yani taraf tarafa işte çıkartılabiliriz.
+
+1291
+01:49:01,489 --> 01:49:05,489
+Yani delta x'ler birbirine yok, 3 delta y olmaz, öyle olmaz.
+
+1292
+01:49:05,489 --> 01:49:10,489
+Delta x'i bu tarafa atarsak delta x kalır.
+
+1293
+01:49:10,489 --> 01:49:13,489
+Delta y'yi bu tarafa atarsak 3 delta y kalır.
+
+1294
+01:49:13,489 --> 01:49:17,489
+Bununla bunun arasında delta x ile şey arasında mesela bir şey çıkmadı.
+
+1295
+01:49:17,489 --> 01:49:21,489
+Yani çözüme ulaşamıyoruz onu söylemek istiyorum.
+
+1296
+01:49:21,489 --> 01:49:27,489
+Çözüme ulaşamamız dedim ki yani buna 1 verirsem, buna 3 gelir, buna şey gelirse herhangi bir çözüm çıkmıyor.
+
+1297
+01:49:27,489 --> 01:49:30,960
+Çünkü bu denklemin çözümü yok.
+
+1298
+01:49:30,960 --> 01:49:34,960
+Zaten şurada da durma koşulumuz bunu sağlamış olduk.
+
+1299
+01:49:34,960 --> 01:49:43,960
+Ki biz şurada denkleme yerine koyarak x1 ve y'yi yerine koyarak neyi bulmuş olduk?
+
+1300
+01:49:43,960 --> 01:49:48,960
+Şuradaki eşitliği sağlayan değerleri bulmuş olduk ve kökleri bulduk açıkçası.
+
+1301
+01:49:48,960 --> 01:49:56,960
+Bu şekilde ilerleyerek bakın nanliner bir denklemi delta x'leri bulurken liner hale getirmiş oluyoruz.
+
+1302
+01:49:56,960 --> 01:50:04,960
+Birinci dereceden türevlerini alarak bu liner dönüşüm üzerinden kökleri bulabiliyoruz.
+
+1303
+01:50:04,960 --> 01:50:08,960
+Hocam yeni x ve y'yi nasıl buluyorduk?
+
+1304
+01:50:08,960 --> 01:50:19,960
+Yeni x ve y, delta x0'a yani x'in i artı 1'ine veya y'nin i artı 1'ine, x'in i inci değeri artı delta x'e ekliyorsun.
+
+1305
+01:50:19,960 --> 01:50:23,960
+Delta x'in i inci iterasyondaki değerini ekliyorsun.
+
+1306
+01:50:23,960 --> 01:50:32,529
+Yani şurada 0.31'e, 0.7'e ekliyorsun, 1.01.
+
+1307
+01:50:32,529 --> 01:50:39,529
+Burada bulduğun yeni delta x'e de şuna, şuna eklersem 1'i bulursun.
+
+1308
+01:50:39,529 --> 01:50:46,989
+Evet, var mı bir sorumuz?
+
+1309
+01:50:46,989 --> 01:50:55,989
+Şimdi süremiz tamamlandı. Bundan sonraki konumuz sayısal türev. Kısaca ona bir giriş yapacağım.
+
+1310
+01:50:55,989 --> 01:50:58,989
+Ondan sonra dersi bitireceğim arkadaşlar.
+
+1311
+01:50:58,989 --> 01:51:00,989
+Şunu indirelim önce.
+
+1312
+01:51:00,989 --> 01:51:08,659
+Sayısal türev nedir? Muhtemelen türev konusu sınava dahil olmayacak.
+
+1313
+01:51:08,659 --> 01:51:16,659
+Yani ne için sayısal türev diye bir konu var, ona bir bakmak istiyorum.
+
+1314
+01:51:16,659 --> 01:51:22,659
+Bu konular artık daha kısa. Mesela bakın 17 tane slide falan varmış.
+
+1315
+01:51:22,659 --> 01:51:32,130
+Bu arada şimdi türev nedir? Sayısal türev nereden çıkıyor?
+
+1316
+01:51:32,130 --> 01:51:36,130
+Önce bununla alakalı kısa bir konuşalım.
+
+1317
+01:51:36,130 --> 01:51:41,130
+Daha sonra türev alma yöntemlerine artık sınavdan sonra gireceğiz.
+
+1318
+01:51:41,130 --> 01:51:53,130
+Şimdi mühendislik veya birçok modelleme ile alakalı şey bir kere sebep sonuç ilgisiyle açıklamaya çalışıyor.
+
+1319
+01:51:53,130 --> 01:51:58,130
+Bilim sebep sonuç ilgisiyle ilişkisi üzerinden ilerler.
+
+1320
+01:51:58,130 --> 01:52:05,130
+Bir şeyin sonucunu etkileyen sebepler nelerdir? Onları bilirsek geleceğe yönelik tahminler yapabiliriz.
+
+1321
+01:52:05,130 --> 01:52:12,130
+Diyebiliriz. Mesela bir aracın konumunu etkileyen,
+
+1322
+01:52:12,130 --> 01:52:20,130
+bulunduğu konumu etkileyen yani hareket halindeki bir aracın konumunu etkileyen değişkenler nelerdir dersek,
+
+1323
+01:52:20,130 --> 01:52:23,130
+hız buna bir örnek olarak verilebiliyor.
+
+1324
+01:52:23,130 --> 01:52:29,130
+Hızı etkileyen işte hızdaki hız, hızın hızı dediğimiz ivme bunu etkileyen bir şey olarak söylenir.
+
+1325
+01:52:29,130 --> 01:52:36,130
+Ve bu sebep sonuç ilişkisini açıklarken kullandığımız şey,
+
+1326
+01:52:36,130 --> 01:52:44,380
+sebeplerde bir değişiklik meydana getirdiğimizde sonuçtaki değişikliğin ölçülmesi.
+
+1327
+01:52:44,380 --> 01:52:48,380
+Tamam mı? Hani Einstein'ın bir sözü var.
+
+1328
+01:52:48,380 --> 01:52:55,380
+Aynı şeyleri tekrar tekrar edip farklı sonuçlar beklemek derliktir diyor.
+
+1329
+01:52:56,380 --> 01:53:04,380
+Yani girişte inputta bir şey yapıyorsunuz, bir değişiklik yapıyorsunuz, outputtaki değişime bakıyorsunuz.
+
+1330
+01:53:04,380 --> 01:53:08,380
+Aynı şeyleri uyguladığınızda çünkü herhangi bir değişim göremeyeceksiniz.
+
+1331
+01:53:08,380 --> 01:53:12,380
+İster non-linear bir fonksiyon olsun, ister linear bir fonksiyon olsun,
+
+1332
+01:53:12,380 --> 01:53:19,380
+X, Y, Z hangi değişkenleriniz varsa aynı değerleri verdiğinizde hep aynı sonuçlar vereceksin, alacaksın.
+
+1333
+01:53:19,380 --> 01:53:29,380
+Ama bu değişkenlerin değişimlerine baktığımızda X'i değiştirirsem, Y'i değiştirirsem sonuçta ne değişecek?
+
+1334
+01:53:29,380 --> 01:53:36,380
+Ve bu değişim bana nasıl bir fikir verecek? İşte bu türev olarak karşımıza çıkıyor.
+
+1335
+01:53:36,380 --> 01:53:45,380
+Mesela ikinci yasası demiş ki hızın konuma göre şey, yani konumun zamana göre değişimi bize hızı veriyor.
+
+1336
+01:53:45,380 --> 01:53:53,380
+Aslında bu konumla zaman arasındaki konumlar arasındaki fark demektir.
+
+1337
+01:53:53,380 --> 01:54:00,850
+Niye yazamıyoruz? Ne demek şu? Şuradan kalem alabilecek miyiz?
+
+1338
+01:54:00,850 --> 01:54:04,850
+Şey modunda açtık herhalde yazamıyoruz onun için.
+
+1339
+01:54:04,850 --> 01:54:22,569
+Yani X1 anında bir konumum var, bir de X2 konumum var veya XT1 ve XT2 diyelim.
+
+1340
+01:54:22,569 --> 01:54:34,140
+Bu T2 anıyla T1 anı zaman arasındaki fark bir değişimi gösteriyor ve bu konumların değişimi bir başka bilgi gösteriyor.
+
+1341
+01:54:34,140 --> 01:54:40,140
+İşte bu farktan yola çıkarak konumlardaki değişim bana hızı veriyor.
+
+1342
+01:54:40,140 --> 01:54:47,140
+Aslında türev dediğimiz şey nedir? Derivation dediğimiz şey bir fark işlemidir.
+
+1343
+01:54:47,140 --> 01:54:50,140
+Yani difference.
+
+1344
+01:54:50,140 --> 01:54:57,140
+Hatta biz bunu sürekli fonksiyonlarda differential, differential.
+
+1345
+01:54:57,140 --> 01:55:06,539
+Differentiate feili vardır, ayırt etmektir yani fark etmekten gelir.
+
+1346
+01:55:06,539 --> 01:55:11,539
+Bu continuous fonksiyonlarda kullandığımız bir türe işlem.
+
+1347
+01:55:11,539 --> 01:55:16,539
+Eğer ayrı zamanda gelecek sene sinyal dersini de göreceğiz.
+
+1348
+01:55:16,539 --> 01:55:20,539
+Difference diyeceğiz buna.
+
+1349
+01:55:20,539 --> 01:55:30,010
+Birisi differential, diğeri difference. Bu discreet durumlarda elde ediliyor.
+
+1350
+01:55:30,010 --> 01:55:37,010
+Isının geçişleri sıcaklık farkındaki değişime bağlı olarak ifade edilir.
+
+1351
+01:55:37,010 --> 01:55:42,010
+Mesela bir bobin düşünün devre teorisinde görüyorsunuz orada bir gerilim oluyor.
+
+1352
+01:55:42,010 --> 01:55:50,010
+Üzerinden geçen akımın değişimine göre bir kondansitörün üzerinden geçen akım ise uçları arasındaki gerilim değişimi ifade eder.
+
+1353
+01:55:50,010 --> 01:55:58,010
+Yani bir bobindeki potansiyel fark, gerilim farkı üzerinden geçen akımın değişimine göre.
+
+1354
+01:55:58,010 --> 01:56:02,010
+Çünkü akım zamana göre kendisi değişiyor.
+
+1355
+01:56:02,010 --> 01:56:05,010
+Şimdi bunu şöyle düşünün arkadaşlar.
+
+1356
+01:56:05,010 --> 01:56:07,010
+Ben şu an İstanbul'dayım.
+
+1357
+01:56:07,010 --> 01:56:10,010
+Arabamla yola çıktım.
+
+1358
+01:56:10,010 --> 01:56:14,010
+Zaman değiştikçe konumum da değişiyor mu? Değişiyor.
+
+1359
+01:56:14,010 --> 01:56:24,010
+İşte bu zamandaki değişime bağlı olarak gerçekleşen konum değişimi ve konum değişimi arasındaki fark bize hızı veriyor.
+
+1360
+01:56:24,010 --> 01:56:29,010
+Burada zamandaki değişime bağlı olarak bir akım değişiyor.
+
+1361
+01:56:29,010 --> 01:56:32,010
+Yani burada alternatif akım falan göreceksiniz.
+
+1362
+01:56:32,010 --> 01:56:35,010
+İşte sinuzoidal bir dalga düşünün inputta.
+
+1363
+01:56:35,010 --> 01:56:37,010
+İşte t'ye bağlı.
+
+1364
+01:56:37,010 --> 01:56:40,010
+Burada da it diyelim.
+
+1365
+01:56:40,010 --> 01:56:44,010
+İşte t eşittir sıfır anında geçen akım miktarı bu.
+
+1366
+01:56:44,010 --> 01:56:47,010
+İşte diğer zamanlarda bu böyle devam edip gidiyor.
+
+1367
+01:56:47,010 --> 01:56:51,010
+Şimdi bu değişim gerilimde de bir değişimi meydana getirecek.
+
+1368
+01:56:51,010 --> 01:56:54,010
+İşte buna potansiyel fark denilmiş.
+
+1369
+01:56:54,010 --> 01:57:00,010
+Buna benzer şekilde bir kondansatörde tabi bir de bu bobinin l değeri var.
+
+1370
+01:57:00,010 --> 01:57:02,010
+Ona göre de etki eden bir şey.
+
+1371
+01:57:03,010 --> 01:57:14,010
+Kondansatörden geçen akımsa buradaki gerilimdeki gerilimin zamana göre değişimi çarpı kapasitif etki ile elde edilen bir akım değeri.
+
+1372
+01:57:14,010 --> 01:57:16,010
+Bakın bunlar hep zamana göre değişimler.
+
+1373
+01:57:16,010 --> 01:57:18,010
+Burada neyi kullanıyoruz?
+
+1374
+01:57:18,010 --> 01:57:22,010
+Çoğunlukla türevden yararlanıyoruz.
+
+1375
+01:57:22,010 --> 01:57:25,010
+Şimdi bir elinizde bilgi var.
+
+1376
+01:57:25,010 --> 01:57:29,010
+İster kontinüs olsun, ister sürekli olsun.
+
+1377
+01:57:29,010 --> 01:57:35,010
+Ve bu herhangi bir işte t demeyelim de yani bir x değişkenine göre değişiyor.
+
+1378
+01:57:35,010 --> 01:57:38,010
+Buna da y, x diyelim.
+
+1379
+01:57:38,010 --> 01:57:44,010
+İşte bakın bu böyle sürekli bir şey olabilir veya ne bileyim şöyle ayrı bir şey olabilir.
+
+1380
+01:57:44,010 --> 01:57:47,010
+Bu bilgi neyin bilgisi?
+
+1381
+01:57:47,010 --> 01:57:48,010
+Ne bileyim?
+
+1382
+01:57:48,010 --> 01:57:54,010
+Paranın gün içindeki değişimi, sıcaklığın gün içinde farklı zamanlarda ölçülen bilgisi.
+
+1383
+01:57:54,010 --> 01:57:59,010
+Bu bilgiden elde edilecek bir başka bilgi de var.
+
+1384
+01:57:59,010 --> 01:58:02,010
+Hani bunu hem fonksiyon diyoruz hem başka işte şeyler diyoruz.
+
+1385
+01:58:02,010 --> 01:58:05,010
+O da yeni bir bilgidir arkadaşlar.
+
+1386
+01:58:05,010 --> 01:58:08,010
+Yani şöyle söyleyeyim.
+
+1387
+01:58:08,010 --> 01:58:14,010
+Bölümü yıllar içerisinde seçen öğrenci bir miktarı bir YTO bilgisayar.
+
+1388
+01:58:14,010 --> 01:58:16,010
+İşte 2010 yılından başlayalım.
+
+1389
+01:58:16,010 --> 01:58:23,010
+2010 yılında 80 kişiymiş, sonra 80 kişiymiş, sonra 85 kişi olmuş, sonra 90 olmuş, sonra 100 olmuş böyle böyle gidiyor.
+
+1390
+01:58:23,010 --> 01:58:26,010
+Şimdi buradan biz ne anlıyoruz?
+
+1391
+01:58:26,010 --> 01:58:33,010
+Yani 2010 ile 2011 arasında öğrenci sayısı aynı yani değişim yok.
+
+1392
+01:58:33,010 --> 01:58:35,010
+Yani türev sıfır demektir.
+
+1393
+01:58:35,010 --> 01:58:38,010
+Sonra işte 2011'den 2011'e bir değişim var.
+
+1394
+01:58:38,010 --> 01:58:43,010
+O zaman türev sıfırdan farklı ve bu değişimin miktarı işte bir yılda 5 artmış.
+
+1395
+01:58:43,010 --> 01:58:45,010
+Ondan sonraki yılda 5 artmış.
+
+1396
+01:58:45,010 --> 01:58:53,010
+Demek ki 85 ile şey 2011 ile 2012 veya 2013 arasında ne kadarlık bir şey var?
+
+1397
+01:58:53,010 --> 01:58:59,010
+İşte 5 birimlik her yılda 5x kadar pardon 5 kadar artıyor.
+
+1398
+01:58:59,010 --> 01:59:03,010
+Şimdi ben buradan yıla çıkarak 2011, 2012, 2013 dedik.
+
+1399
+01:59:03,010 --> 01:59:05,010
+2014'de neyi bekliyorum?
+
+1400
+01:59:05,010 --> 01:59:08,010
+Öğrenci sayımın 95 olmasını bekliyorum.
+
+1401
+01:59:08,010 --> 01:59:10,010
+Ama ne olmuş? 100 olmuş.
+
+1402
+01:59:10,010 --> 01:59:13,010
+O zaman 100 olması durumda belli bir hatayla karşılaştım.
+
+1403
+01:59:13,010 --> 01:59:15,010
+Tamamı ne yapacağım? Revize edeceğim.
+
+1404
+01:59:15,010 --> 01:59:18,010
+Diyeceğim ki bundan sonraki durumda ne olabilir?
+
+1405
+01:59:18,010 --> 01:59:23,010
+İşte 100 ise belki 110 olabilir veya 107, 108 gibi bir şey olabilir.
+
+1406
+01:59:23,010 --> 01:59:26,010
+Bu şekilde bu değişimden yola çıkarak ne yapıyorum?
+
+1407
+01:59:26,010 --> 01:59:29,010
+Geleceğe yönelik tahminler yapabiliyorum.
+
+1408
+01:59:29,010 --> 01:59:31,010
+Onun için bizim için türev önemli.
+
+1409
+01:59:31,010 --> 01:59:35,010
+Türevin asıl şeyi, farktır arkadaşlar.
+
+1410
+01:59:35,010 --> 01:59:39,479
+Hatta ben şu örneği veriyorum.
+
+1411
+01:59:39,479 --> 01:59:42,479
+Yoğurda farkın tersi nedir?
+
+1412
+01:59:42,479 --> 01:59:49,029
+Farkın tersi nedir?
+
+1413
+01:59:49,029 --> 01:59:51,029
+Toplamadır değil mi? Toplam.
+
+1414
+01:59:51,029 --> 02:00:02,539
+Şimdi yoğurda su eklerseniz ne olur? Ayran olur.
+
+1415
+02:00:02,539 --> 02:00:06,539
+Ayran bir yoğurt türevidir. Tamam mı?
+
+1416
+02:00:06,539 --> 02:00:11,539
+Ayrandan suyu çıkartırsanız yine şeyin kendisini bulursunuz.
+
+1417
+02:00:11,539 --> 02:00:14,539
+Bakın ayran aslında bir türevlenmiş bir şey.
+
+1418
+02:00:14,539 --> 02:00:18,539
+Bundan şeyi çıkartırsanız, tersten yaparsanız yoğurdu bulursunuz.
+
+1419
+02:00:18,539 --> 02:00:20,539
+Yani integral almışsınız.
+
+1420
+02:00:20,539 --> 02:00:26,539
+Bu bir şeyin bir şeyden farkını almak.
+
+1421
+02:00:26,539 --> 02:00:29,539
+Yani ayrandan yoğurdum farkını alırsanız suyu bulmanız.
+
+1422
+02:00:29,539 --> 02:00:31,539
+Öyle düşünün.
+
+1423
+02:00:31,539 --> 02:00:35,539
+Bir sonraki durumdan bir önceki durumun farkını almak bize ne yapıyor?
+
+1424
+02:00:35,539 --> 02:00:37,539
+Değişim hakkında bilgi veriyor.
+
+1425
+02:00:37,539 --> 02:00:42,590
+Şimdi matematiksel olarak bunu inceleyecek olursak
+
+1426
+02:00:42,590 --> 02:00:46,590
+bağımlı bir değişkenin bağımsız bir değişkene göre değişme miktarı.
+
+1427
+02:00:46,590 --> 02:00:48,590
+Bağımlı değişken nedir? Bağımsız değişken nedir?
+
+1428
+02:00:48,590 --> 02:00:50,590
+Önce buna bakalım.
+
+1429
+02:00:55,590 --> 02:00:57,590
+Bir fonksiyonumuz var.
+
+1430
+02:00:57,590 --> 02:01:01,590
+Bu fonksiyon x1, x2, xn'e kadar farklı değişkenler içiliyor.
+
+1431
+02:01:01,590 --> 02:01:05,590
+Bu değişkenlerin sonucu bize y'yi söylüyor.
+
+1432
+02:01:05,590 --> 02:01:08,590
+İşte şu bağımlı olan neye bağımlı?
+
+1433
+02:01:08,590 --> 02:01:10,590
+x1'e, x2'e, x3'e, xn'e bağımlı.
+
+1434
+02:01:10,590 --> 02:01:12,590
+Şunlarda bağımsız değişkenler.
+
+1435
+02:01:12,590 --> 02:01:17,590
+Her zaman arkadaşlar bunlar sabit olacak diye değil, diye bir şey yok.
+
+1436
+02:01:17,590 --> 02:01:22,590
+Mesela x3'de başka bir değişkene bağlı olarak değişen bir şey olabilir.
+
+1437
+02:01:22,590 --> 02:01:26,590
+Yani illa ki bunların her zaman bağımsız olacağını da ifade edemeyiz.
+
+1438
+02:01:26,590 --> 02:01:28,590
+Ama şu kesinlikle bu bağımlı.
+
+1439
+02:01:28,590 --> 02:01:31,590
+Şunlar en azından bir tanesi bağımsız olabilir.
+
+1440
+02:01:31,590 --> 02:01:33,590
+Mesela x3'de mesela neye göre şey olsun?
+
+1441
+02:01:33,590 --> 02:01:36,590
+t'ye göre bağımlı bir şey olsun.
+
+1442
+02:01:36,590 --> 02:01:42,590
+O zaman t'ye değiştikçe x3 değişiyor, x3 değiştikçe y'ye değişiyor diyebiliriz.
+
+1443
+02:01:42,590 --> 02:01:46,590
+Bu değişme miktarını söyleyen şey bizde türev.
+
+1444
+02:01:46,590 --> 02:01:56,590
+Analitik olarak türev veya integral almanın mümkün olmadığı yerlerde sayısal türev, sayısal integral kullanıyoruz.
+
+1445
+02:01:56,590 --> 02:01:57,590
+Ne demek?
+
+1446
+02:01:57,590 --> 02:01:59,590
+Şimdi ben y'e eşittir.
+
+1447
+02:01:59,590 --> 02:02:02,590
+Sinus x fonksiyonunu verdik size.
+
+1448
+02:02:02,590 --> 02:02:09,260
+Y'nin türevi nedir?
+
+1449
+02:02:09,260 --> 02:02:10,260
+Kosnus.
+
+1450
+02:02:10,260 --> 02:02:11,260
+Kosnus x'tir.
+
+1451
+02:02:11,260 --> 02:02:13,260
+Nereden biliyoruz bunu?
+
+1452
+02:02:13,260 --> 02:02:22,180
+Yani kim öğretti?
+
+1453
+02:02:22,180 --> 02:02:24,180
+Ezberledik hocam.
+
+1454
+02:02:24,180 --> 02:02:32,180
+Ya ezberledik ya da limit yardımı ile bulabiliriz bunu ya da ezberledik.
+
+1455
+02:02:32,180 --> 02:02:36,180
+Yani aslında analitik çözüm yaparak bu sonuca ulaşabiliriz.
+
+1456
+02:02:36,180 --> 02:02:37,180
+Kağıt üzerinde.
+
+1457
+02:02:37,180 --> 02:02:41,180
+Ama fonksiyonum şöyle olsaydı.
+
+1458
+02:02:41,180 --> 02:02:56,180
+Acaba sinus x'in karesi artı kosnus x çarpı e üzeri x çarpı x küp ln x gibi ve daha uzayıp giden işte buna bir mesela bölüm ekleyelim.
+
+1459
+02:02:56,180 --> 02:03:00,180
+Ne bileyim kosnus x çarpı e üzeri 5x.
+
+1460
+02:03:00,180 --> 02:03:05,180
+Ondan sonra buna bir de şey ekleyelim x kare gibi bir şey ekleyelim.
+
+1461
+02:03:05,180 --> 02:03:07,180
+Bunun türevini nasıl buluruz?
+
+1462
+02:03:07,180 --> 02:03:11,510
+Bir de bakın tek değişkenli.
+
+1463
+02:03:11,510 --> 02:03:13,510
+Türev alacak mıyız?
+
+1464
+02:03:13,510 --> 02:03:15,510
+Yani alabiliyorsan al.
+
+1465
+02:03:15,510 --> 02:03:18,510
+Hocam yolu var da uzun oluyor.
+
+1466
+02:03:18,510 --> 02:03:22,510
+Her iki tarafın ln'ını alıp x kare aşağıya indirip sonra türev alacağız.
+
+1467
+02:03:22,510 --> 02:03:24,510
+Her iki tarafın ln'ı?
+
+1468
+02:03:24,510 --> 02:03:25,510
+Evet.
+
+1469
+02:03:25,510 --> 02:03:28,510
+Yani niye x kare aşağıya indiriyoruz ki?
+
+1470
+02:03:28,510 --> 02:03:41,590
+Yani tam alabiliyorsan bir al bakalım bana sonucunu paylaş sonuca ulaşabiliyorsan.
+
+1471
+02:03:42,590 --> 02:03:44,590
+Veya şeyi daha da uzatabiliriz.
+
+1472
+02:03:44,590 --> 02:03:50,590
+Yani ne bileyim şurada kosnus x çarpı e üzeri x'in ne bileyim x kare veya x üzeri n diyelim.
+
+1473
+02:03:50,590 --> 02:03:54,840
+Veya x üzeri x mesela.
+
+1474
+02:03:54,840 --> 02:04:05,840
+Şimdi bu tarz analitik olarak türev almanın ya çok zor ya da mümkün olmadığı durumlarda yani bir sürü iş çıkıyor karşımıza.
+
+1475
+02:04:05,840 --> 02:04:10,840
+Aynı sayısal analiz dersinin girişinde yaptığımız gibi ne yapacağız?
+
+1476
+02:04:10,840 --> 02:04:13,840
+Sayısal türev üzerinden bir şeyler yapacağız.
+
+1477
+02:04:13,840 --> 02:04:16,840
+Geometrik olarak türevin ne olduğunu biliyoruz.
+
+1478
+02:04:16,840 --> 02:04:24,840
+Yani bir herhangi bir x noktasında türevin e'ymini yatayla yaptığı açı değerini veriyor.
+
+1479
+02:04:24,840 --> 02:04:26,840
+Bu bir fx fonksiyonu.
+
+1480
+02:04:26,840 --> 02:04:34,840
+Ben x0 noktasında fonksiyonun türevini almam gerekiyor ve bu türevin değerini bulmak istiyorum.
+
+1481
+02:04:34,840 --> 02:04:38,840
+Şimdi bunu yapmak için fonksiyonu bileceğim.
+
+1482
+02:04:38,840 --> 02:04:40,840
+Fonksiyonun türevini alacağım.
+
+1483
+02:04:40,840 --> 02:04:45,840
+O türevini de x0 yerine koyacağım ve açının değerini bulacağız.
+
+1484
+02:04:45,840 --> 02:04:55,840
+Bunu yapmak yerine eğer mümkünse orada x0 noktasında fonksiyona bir t çizip o t sonuçta bir doğru olacak.
+
+1485
+02:04:55,840 --> 02:05:00,840
+O doğru ne işittir, y işittir, ax artı b gibi bir şeydir.
+
+1486
+02:05:00,840 --> 02:05:03,840
+Burada x0 yerine koymam daha güzel.
+
+1487
+02:05:03,840 --> 02:05:13,840
+Yani türevini almak yerine hem türevden kurtuluyoruz hem de bu zaten şeyde görmüştük regula falsi yönteminde hem de neden kurtuluyoruz.
+
+1488
+02:05:13,840 --> 02:05:20,890
+Yani kalabalık işlem şeyinden kurtulmuş oluyoruz.
+
+1489
+02:05:20,890 --> 02:05:26,890
+İşte türevi almak için kullandığımız şey aslında şu kısmi türev operatörü f'in x'e göre türevi.
+
+1490
+02:05:26,890 --> 02:05:28,890
+Yani limittir bu.
+
+1491
+02:05:28,890 --> 02:05:36,890
+Fx'deki değişimin x'deki değişime oranı x'i delta x'de sıfıra yaklaştırıyoruz.
+
+1492
+02:05:36,890 --> 02:05:42,890
+Yani şu aradaki şey çok küçük bir değer olacak sıfıra yaklaşacak kadar bir değer olacak.
+
+1493
+02:05:42,890 --> 02:05:50,890
+O kadar küçük bir değişimde y'deki değişimlerle x'deki değişimlerle y'eksendeki değişimde x'eksendeki değişimi bize neyi vereceksiniz?
+
+1494
+02:05:50,890 --> 02:05:51,890
+Türevi verecek.
+
+1495
+02:05:51,890 --> 02:05:55,890
+Tabii bu geometrik olarak veya analitik olarak türevin incelenmesi.
+
+1496
+02:05:55,890 --> 02:06:04,890
+Eğer ben bunu sayısal olarak yapacaksam bağlı olduğu değişimlere göre hızın ölçüsünü bulurken sayısal yöntemleri kullanacağım.
+
+1497
+02:06:04,890 --> 02:06:06,890
+Aslında bu da şudur.
+
+1498
+02:06:06,890 --> 02:06:08,890
+Benim bir fx fonksiyonum var.
+
+1499
+02:06:08,890 --> 02:06:19,890
+Fx fonksiyonuna delta x kadar bir artırım vereceğiz ve bu delta x kadar artırımı daha sonra delta x-0 yani delta x'i oranlayacağız.
+
+1500
+02:06:19,890 --> 02:06:21,890
+Sayısal türevi bulmaya çalışacağız.
+
+1501
+02:06:22,890 --> 02:06:27,890
+Şimdi burada yöntemler geri farklar, ileri farklar falan farklı farklı teknikler var.
+
+1502
+02:06:27,890 --> 02:06:33,890
+Taylor serileri falan bunlara daha sonra bakacağız ve konumuzu tamamlayacağız.
+
+1503
+02:06:33,890 --> 02:06:35,890
+Amacımız neymiş?
+
+1504
+02:06:35,890 --> 02:06:42,890
+Türev hesabı kullanırken sayısal yöntemlerin yani hiteratif işlemlerden faydalanmak.
+
+1505
+02:06:42,890 --> 02:06:44,890
+Var mı sorumuz arkadaşlar?
+
+1506
+02:06:44,890 --> 02:06:48,140
+Daha fazla ilerlemeyelim.
+
+1507
+02:06:48,140 --> 02:06:52,140
+Yani vizeye kadar ki kısımlar bence bu kadar yeterli.
+
+1508
+02:06:52,140 --> 02:06:59,140
+Gelecek ders, dördüncü chapterdan bu konudan devam edeceğiz.
+
+1509
+02:06:59,140 --> 02:07:06,140
+Sonra sayısal integrak, sonra regresyon, interpolasyon ve diferansiyel denklemler konuları kalıyor.
+
+1510
+02:07:06,140 --> 02:07:09,140
+Evet sorunuz yoksa hepinize.
+
+1511
+02:07:09,140 --> 02:07:11,140
+Hocam ben bir şey sorabilir miyim?
+
+1512
+02:07:11,140 --> 02:07:18,140
+Bir önceki chapterdan projede hangi konuları yapacağız belli mi acaba?
+
+1513
+02:07:18,140 --> 02:07:21,140
+Onu Banu Hoca ile konuşalım.
+
+1514
+02:07:21,140 --> 02:07:27,140
+Muhtemelen dolaylı ve dolayısız yöntemlerden iki veya üç yöntem seçeceğiz.
+
+1515
+02:07:27,140 --> 02:07:30,140
+Belki biz dün akşam konuşamadık.
+
+1516
+02:07:30,140 --> 02:07:34,140
+Hoca ile konuşalım ben size bilgi veririm.
+
+1517
+02:07:34,140 --> 02:07:36,140
+Tamam hocam.
+
+1518
+02:07:36,140 --> 02:07:38,140
+Hatta şöyle not alayım.
+
+1519
+02:07:38,140 --> 02:07:53,220
+Şimdi sayısal analiz, türev, chapter 3, proje başlıkları.
+
+1520
+02:07:53,220 --> 02:08:03,449
+Hoca ile konuş diyelim.
+
+1521
+02:08:03,449 --> 02:08:08,449
+PDF'ler Banu Hoca'nın avesisinde bugün yüklenir.
+
+1522
+02:08:08,449 --> 02:08:11,449
+Hoca dersi anlatıyor ondan sonra yükliyor bildiğim kadarıyla.
+
+1523
+02:08:11,449 --> 02:08:13,449
+Eğer yüklenmezse bana haber verin.
+
+1524
+02:08:13,449 --> 02:08:19,449
+Bu chapter 3'ün PDF'ini ben size ders tuvarına eklerim.
+
+1525
+02:08:19,449 --> 02:08:23,449
+Çünkü birkaç düzeltme yapacağım demişti.
+
+1526
+02:08:23,449 --> 02:08:25,449
+Yani bizim gördüğümüz hatayı ben hocaya söyledim.
+
+1527
+02:08:25,449 --> 02:08:27,449
+O da ben de bugün gördüm dedi.
+
+1528
+02:08:27,449 --> 02:08:29,449
+Onları düzelteceğim tekrar yükleyeceğim dedi.
+
+1529
+02:08:29,449 --> 02:08:31,449
+Hatta bir tane de küçük bir hata varmış.
+
+1530
+02:08:31,449 --> 02:08:33,449
+Onu da bakacakmış.
+
+1531
+02:08:33,449 --> 02:08:36,449
+O gün içinde muhtemelen hoca yükliyor.
+
+1532
+02:08:36,449 --> 02:08:38,449
+Dersi bitirir bitirmez hallediyor.
+
+1533
+02:08:38,449 --> 02:08:41,449
+Eğer şey olmazsa haber verin bakarız.
+
+1534
+02:08:42,449 --> 02:08:44,449
+Yüklenmezse.
+
+1535
+02:08:44,449 --> 02:08:47,449
+Evet, sınav için tavsiyem arkadaşlar.
+
+1536
+02:08:47,449 --> 02:08:49,449
+Dersi yaptığımız örneklere ek.
+
+1537
+02:08:49,449 --> 02:08:51,449
+Örnekler çözün, hız kazanın.
+
+1538
+02:08:51,449 --> 02:08:53,449
+Yani 4 soru olur.
+
+1539
+02:08:53,449 --> 02:08:56,449
+Size yetecek, fazladan yetecek diye sorulur.
+
+1540
+02:08:56,449 --> 02:09:01,449
+Ama şu ana kadar hız kazanmadıysanız sınav süresi size yetersiz gelebilir.
+
+1541
+02:09:01,449 --> 02:09:08,449
+Yani bir virgüllü sayılar üzerinde işlem yapma yeteneğinizi arttırmanız gerekiyor.
+
+1542
+02:09:08,449 --> 02:09:13,449
+Onun için sınava kadar bazı örnekler çözerseniz iyi olur.
+
+1543
+02:09:13,449 --> 02:09:16,449
+Sorular mesela şöyle gelebilir.
+
+1544
+02:09:16,449 --> 02:09:21,449
+Ne bileyim biz burada linear denklemin kendisini doğrudan verdik.
+
+1545
+02:09:21,449 --> 02:09:24,449
+Ama linear denklemi basit bir problemden çıkarmanız gerekiyor.
+
+1546
+02:09:24,449 --> 02:09:30,449
+İşte bir sayının iki katı ile üç katının farkı beşe eşitse gibi.
+
+1547
+02:09:30,449 --> 02:09:33,449
+Yani denklemeyi kendiniz çıkartmanız gerekir.
+
+1548
+02:09:33,449 --> 02:09:37,449
+Onları birazcık yani çok abartmayacak şekilde böyle biraz daha problem var.
+
+1549
+02:09:37,449 --> 02:09:39,449
+Bari sorularda sorabiliriz.
+
+1550
+02:09:39,449 --> 02:09:42,449
+Bu problem hari soruları daha çok şeyde geliyor.
+
+1551
+02:09:42,449 --> 02:09:48,449
+Yani sayısal türev ve integre sonrasında interpolasyon da falan geliyor da buralarda da gelebilir.
+
+1552
+02:09:48,449 --> 02:09:54,449
+Bütün konulardan yani bu türev hariç sorumlu olacaksınız diyelim ve dersimizi tamamladık.
+
+1553
+02:09:54,449 --> 02:09:56,449
+Hepinize iyi günler dilerim.
+
+1554
+02:09:56,449 --> 02:09:58,449
+Hoşçakalın katılmanız için teşekkür ediyorum.
+
+1555
+02:09:58,449 --> 02:10:00,449
+Görüşmek üzere hocam.
+
+1556
+02:10:00,449 --> 02:10:01,449
+Görüşürüz.

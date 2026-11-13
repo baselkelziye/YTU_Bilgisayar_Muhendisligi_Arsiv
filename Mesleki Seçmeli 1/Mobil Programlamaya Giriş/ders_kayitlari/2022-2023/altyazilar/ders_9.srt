@@ -1,0 +1,2351 @@
+1
+00:04:49,875 --> 00:04:52,695
+Hoş geldiniz arkadaşlar. Hepinize güzel bir hafta diliyorum.
+
+2
+00:04:55,135 --> 00:05:01,596
+Bu hafta yedinci haftamız. Haftaya sekizinci hafta bayram ve arkasından arasınav haftası var.
+
+3
+00:05:02,495 --> 00:05:07,555
+Arasınav programı bir iki gün içerisinde ilan edilecektir.
+
+4
+00:05:09,155 --> 00:05:14,915
+Muhtemelen dersin gününde olacak ama saati konusunda bir şey söyleyemiyorum.
+
+5
+00:05:15,507 --> 00:05:39,727
+O yüzden takipte kalırsınız. Web sayfası üzerinden bölüm yönetimi programı açıklayacaktır. Genel olarak yanlış hatırlamıyorsam, geçen hafta gelen kararı paylaşmıştım ama yine de bir hatırlatmakta fayda var. Final sınavlarınızın yüz yüze yapılacağı kararı alındı. O yüzden 5-15 Haziran tarihlerinde.
+
+6
+00:05:40,240 --> 00:05:45,560
+Final sınavlarınız bir değişiklik olmazsa yüz yüze yapılacak.
+
+7
+00:05:46,920 --> 00:05:51,860
+Onun dışında ödevinizle ilgili bir tane ödev vereceğimi söylemiştim.
+
+8
+00:05:51,939 --> 00:05:53,080
+Dönem projenizi verdim.
+
+9
+00:05:53,540 --> 00:05:58,980
+Ödevinizi de bir iki gün içerisinde sistem üzerinden yayınlayacağım.
+
+10
+00:06:00,379 --> 00:06:05,660
+Ve süre olarak da sanırım yanlış hesap yapmadıysam.
+
+11
+00:06:06,259 --> 00:06:09,740
+7 ya da 8 Mayıs'a kadar bir süreniz olacak.
+
+12
+00:06:12,115 --> 00:06:37,075
+Ve mezun uygulaması, küçük bir mezun uygulaması geliştireceksiniz ama dönem projesi kadar kapsamlı olmayacak. Biraz daha küçük çapta bir uygulama geliştireceksiniz. Fazlasını yapanlar tabii ki değerlendirilecektir. Bugün dersin son bölümünde o konuyla ilgili de mezun uygulaması ile ilgili de beklentilerimi tekrar aktaracağım. Sonra yazılı olarak da dokümanı paylaşıyor olacağım.
+
+13
+00:06:40,115 --> 00:07:07,775
+Bir cevap aldım. Uygulama ile ilgili, bugüne kadar yaptıklarımızla ilgili. Onun da kodunu uygun olduğumuz bir zamanda sizle paylaşıp üzerinden yorumluyor olacağız. Şu an için bugünkü gündemimizde Android üzerinde sensörler var. Sensörleri biraz konuşacağız. Veri nasıl alıyoruz? Bu veriyi ne sıklıkla toplayabiliyoruz? Hangi?
+
+14
+00:07:08,096 --> 00:07:34,096
+Hangi tür sensörler var? Aslında sensörler ne açıdan önemli? Hangi uygulamalar sensör bilgileriyle gerçekleştirilebiliyor? Hangi device türleri aslında bir sensör verisi üretebiliyor gibi konuları birlikte yorumluyor olacağız. Küçük bir kod parçası, etta iki kod parçası üzerinde neler yapılabildiğini göreceğiz. Sonra da yine dersin son kısmında bir uygulama...
+
+15
+00:07:34,848 --> 00:07:38,388
+Bu öğrendiklerinizi yapmaya başlayacaksınız.
+
+16
+00:07:40,548 --> 00:07:48,248
+Bunun dışında benim ilk girişin ötesinde, belki şunu, evet bir de şunu söylemekte fayda var aklıma gelen.
+
+17
+00:07:48,868 --> 00:07:50,848
+Geçen gün bir arkadaşınız posta atmıştı.
+
+18
+00:07:53,307 --> 00:07:56,908
+Mevzun uygulamasında özellikle veri tabanı olarak ne kullanabiliriz?
+
+19
+00:07:57,088 --> 00:08:01,067
+Postgrex, SQL, işte daha önce de öğrenmiştik kullanabilir miyiz diye sormuş.
+
+20
+00:08:02,576 --> 00:08:05,776
+Yapacağınız, geliştireceğiniz uygulamada Firebase kullanmanızı bekliyorum.
+
+21
+00:08:05,776 --> 00:08:22,776
+O yüzden bunu öğrenmenin yolu kullanarak olduğu için Firebase yapısını implemente etmenizi ve resim duyuru vs. bilgilerini ilgili kullanıcı tarafındaki...
+
+22
+00:08:23,283 --> 00:08:41,583
+Yaratacağınız şemalar üzerinde saklamanızı bekliyor olacağın bu soruya da [öğrenci] sormuştu sanırım postayla cevap vermiş olayım. Böylece Firebase'de de bir giriş yapmış olacaksınız. Sorusu olan var mı? Ya da yorum yapmak isteyen ya da herhangi bir geri bildirim yapmak isteyen derste ilgili de.
+
+23
+00:08:47,124 --> 00:08:52,544
+Hocam, Firebase'in artısı ne oluyor tam olarak diğer veri tabanlarına göre? Niye onu kullanıyoruz?
+
+24
+00:08:53,624 --> 00:09:04,283
+En azı, Firebase üzerinde çalıştığınız zaman bu soruyu ben zaten size soruyor olacağım. Bunu sizin araştırmanızı bekliyorum. Bu soruyu sormanın sebebini de öğreneyim, ona göre cevap vereyim.
+
+25
+00:09:05,043 --> 00:09:16,644
+Hocam, net sebebi yok ya. Şey yapmıştım, ben daha ilk derslerden sonra PostgreSQL'i falan bağlamıştım projemi. Onunla bir uğraşmaya başlamıştım ya ondan merak ettim yani.
+
+26
+00:09:17,644 --> 00:09:29,043
+Firebase çok kolay kullanılabilen bir yapıya sahip ve bugün Flutter'la da kod geliştirdiğiniz zaman genellikle bu Firebase yapısı ilk geliştirmeye başlayan...
+
+27
+00:09:30,707 --> 00:09:43,867
+İlk defa bir uygulama geliştirmeye başlayan kişiler için oldukça kolay öğrenilebilen ve implementasyonu basit, aynı zamanda performansla olan bir yapı. O yüzden Firebase'i kullanmanızı istiyorum.
+
+28
+00:09:44,528 --> 00:09:58,307
+PostgreSQL aslında spesifik olarak mobil uygulamalar için dizayn edilmiş bir veri tabanı değil. PostgreSQL aslında veri tabanı yönetim sistemi olarak birçok uygulamada zaten kullanılıyor.
+
+29
+00:09:58,707 --> 00:10:08,567
+O noktada Firebase mobil uygulamalara gözetilerek ağırlıklı olarak ortaya atılmış bir yapı. Aralarındaki fark bu.
+
+30
+00:10:10,927 --> 00:10:12,167
+Anladım hocam, teşekkür ederim.
+
+31
+00:10:12,847 --> 00:10:13,487
+Rica ederim.
+
+32
+00:10:14,347 --> 00:10:15,987
+Hocam, bir şey diyebilirim.
+
+33
+00:10:16,272 --> 00:10:17,272
+Tabi.
+
+34
+00:10:17,272 --> 00:10:23,272
+İnternetten bulduğumuz kod parçacıklarında versiyon uyumlarına dikkat etmemiz gerektiğini söylemiştiniz.
+
+35
+00:10:23,272 --> 00:10:30,272
+Hatta ilerleyen zamanlarda bunun nasıl yapıldığına dair bir şey gösteririm Gradle'da birkaç değişiklik yaptığınızı söylemiştiniz.
+
+36
+00:10:30,272 --> 00:10:36,272
+Bugün ders sonunda vaktimiz olursa küçük bir örnek gösterebilir misiniz? Nelere dikkat etmemiz gerektiğine dair?
+
+37
+00:10:37,235 --> 00:10:51,596
+Birincisi, bunun için bugün böyle bir planlama maalesef yapma imkanımız yok. Çünkü planda başka konular var üzerinde konuşacağımız. İkincisi, spesifik olarak yaşadığınız sorunları bana gönderirseniz öyle cevap verebilirim.
+
+38
+00:10:51,596 --> 00:11:05,176
+Gradle tarafındaki özellikle bu bahsettiğimiz sıkıntıların giderebilmesi için Buyelt Gradle dosyasının açılıp içerisinde çeşitli reposatörlerin inklud edilmesi.
+
+39
+00:11:05,235 --> 00:11:21,235
+Tabii çok farklı versiyonlarla kod geliştirenler var. Hem API seviyesi olarak hem de o API seviyesine uygun Gradle kullanan uygulamalar var.
+
+40
+00:11:33,427 --> 00:11:39,728
+Ne diyelim, kütüphanelerin versiyonlarını özellikle kontrol etmeniz gerekiyor.
+
+41
+00:11:40,408 --> 00:11:49,388
+Bu noktada bununla ilgili bir değerlendirmeyi muhtemelen bayramdan sonraki hafta yapma şansımız olacaktır.
+
+42
+00:11:50,008 --> 00:11:52,768
+Çünkü bu hafta hem sensörleri konuşacağız.
+
+43
+00:11:53,168 --> 00:11:56,288
+Hem de bahsettiğim gibi bunlarla ilgili örnek çözeceğiz.
+
+44
+00:11:57,107 --> 00:11:58,968
+Önümüzdeki haftada Broadcast ve Sealerler var.
+
+45
+00:11:59,468 --> 00:12:02,688
+Dokuzuncu haftadan önce bunları tamamlamamız gerekiyor.
+
+46
+00:12:02,688 --> 00:12:11,128
+Bana spesifik ama sorularınız olursa, bu versiyonlamayla ilgili yaşadığınız, doğrudan mail atıp maile geri dönüş yaparım.
+
+47
+00:12:11,648 --> 00:12:12,807
+Teşekkür ederim hocam, teşekkürler.
+
+48
+00:12:13,228 --> 00:12:13,827
+Rica ederim.
+
+49
+00:12:15,488 --> 00:12:17,644
+Evet, başka sorusu olan ya da yorum olan...
+
+50
+00:12:20,947 --> 00:12:22,807
+Peki o zaman derse başlayabiliriz sanırım.
+
+51
+00:12:30,803 --> 00:12:38,563
+Evet, bu haftaki konumuz sensörler. Şimdi daha önce dersin başında da kısaca bahsetmiştik.
+
+52
+00:12:39,563 --> 00:12:50,003
+İnsanın hayattaki tüm kararlarını alırken çevreden topladığı bilgileri kullanarak aldığını biliyoruz.
+
+53
+00:12:55,104 --> 00:12:58,844
+Nasıl bir formda olduğunu anlayabiliyoruz.
+
+54
+00:12:59,044 --> 00:13:05,604
+Sesleri duyarak hangi sesin hangi hayvandan geldiğini ya da cihazdan geldiğini öğreniyoruz.
+
+55
+00:13:06,463 --> 00:13:13,963
+Dokunarak bir eşyanın sert mi, yumuşak mı, sivri uçlu mu olduğunu anlayabiliyoruz.
+
+56
+00:13:14,024 --> 00:13:17,804
+Kaç köşesi olduğunu tespit edebiliyoruz.
+
+57
+00:13:20,063 --> 00:13:36,423
+Koku duygularımız var. Ama bu beş duyuyu düşündüğümüz zaman genellikle insan için tabii ki tat ve koku duygusu çok önemli olmakla birlikte, özellikle COVID döneminde de bunun sıkıntısını yaşayanlar olduysa çok iyi bilirler.
+
+58
+00:13:38,159 --> 00:13:59,579
+Hayat konforumuz açısından birinci öncelikle değiller. Belki hayatın keyfini almak açısından çok çok değerli iki tane duyu organlarımız. Ama baktığınızda görmek, duymak ve hissetmek ilk etapta birçok kararımızı doğrudan etkileyen duyu organlarımız.
+
+59
+00:14:00,563 --> 00:14:13,703
+Bu doğrultuda düşündüğünüzde bir yapay zekadan bahsedebilmeniz için bilgisayara sürekli olarak dosyadan bir veri okunması ya da sürekli bir kullanıcının veri girmesi durumun söz konusu değil.
+
+60
+00:14:13,703 --> 00:14:17,703
+Doğal olarak özellikle canlı...
+
+61
+00:14:18,163 --> 00:14:40,283
+Real-time işler yapıyorsanız, bulunduğunuz ortamda çevresel zeka uygulamalarına ihtiyaç duyuyorsanız ya da birebir karşılık vermek istiyorsanız yaşanan gelişmelere mutlaka sensörlerle kullandığınız cihazın ya da ilgili robotun ortamı
+
+62
+00:14:40,820 --> 00:14:54,720
+Anlaması, gözlemesi, öğrenmesi, gelişmelerden haberdar olması gerekiyor. Bunları mümkün kılabilmenin yolu da bu elektronik cihazların ya da eşyaların üzerine yerleştirilen sensörler.
+
+63
+00:14:55,920 --> 00:15:01,700
+Haliyle bu sensörler çok çeşitli yapıların üzerine konumlandırılabiliyor.
+
+64
+00:15:02,240 --> 00:15:11,279
+Bir bilgisayarın üzerinde de sensörler var, bir tabletin üzerinde de sensörler var, saatte de var, akıllı telefonda da var, bilebilir cihazlarda da var.
+
+65
+00:15:12,100 --> 00:15:19,980
+Hatta bugün IoT device'larında da var. Buna çamaşır makinesi, buluşuk makinesi vs. tüm cihazlar dahil.
+
+66
+00:15:27,059 --> 00:15:35,999
+Fiziksel değişimlerin elektriksel bir dönüşüm analog to digital converter.
+
+67
+00:15:35,999 --> 00:15:48,999
+Bu dönüşümü yaptıktan sonra elektriksel sinyallerle ifade edilmesini sağlayan, genellikle artık dijital olarak çalışan bizim için...
+
+68
+00:15:50,004 --> 00:15:52,764
+Veriyi üreten olmazsa olmaz yapılar.
+
+69
+00:15:53,424 --> 00:16:05,804
+Şimdi bu noktada tabii her bir sensörün dış ortamda algıladığı, farklı takip ettiği değişimler var.
+
+70
+00:16:05,804 --> 00:16:12,768
+İşte ilme ölçer bağlı olduğu eşyaya ne kadarlık bir...
+
+71
+00:16:12,768 --> 00:16:37,328
+İlmelendirme yapıldığını ölçerken, işte ciroskop bir eşyanın belirli bir eksende ne hızla hareket ettiğini bize radyan bölü saniyecesinden verirken, sıcaklık sensörü bulunduğunuz ortamın sıcaklığını, nem sensörü, nem oranını veriyor.
+
+72
+00:16:39,443 --> 00:16:53,644
+Baktığınızda tipik bir basit bir sensör değil ama o da sonuç itibariyle iki boyutlu görüntü üretebilen, bunu sabit ya da bir sekans şeklinde, video şeklinde üretebilen bir başka sensör.
+
+73
+00:16:53,644 --> 00:17:00,264
+Keza mikrofon da aynı şekilde dışarıdaki seslerin toplanması için kullandığımız bir başka sensör.
+
+74
+00:17:00,624 --> 00:17:05,644
+Dolayısıyla her bir sensörün belirli bir...
+
+75
+00:17:06,387 --> 00:17:18,327
+Veri toplama görevi var ve bu verilerin toplanma sıklığı, bu verilerin bir birimi, bu verilerin kapladığı bir alan.
+
+76
+00:17:18,847 --> 00:17:37,288
+Söz konusu. Ve bu sensörlerin tükettiği bir enerji, güç söz konusu. Telefonumuzun üzerindeki sensörler de bizim aslında günlük hayattaki bu bahsettiğimiz bütün gelişmeleri takip edebilmeleri için konumlandırılmış sensörler.
+
+77
+00:17:37,907 --> 00:17:55,967
+İlk etapta bir telefona baktığınız zaman en son dönemde en sık duyduğunuz ve saatlerde dahil olmak üzere hemen hemen her cihazda bulunan ve daha çok motion sensor olarak adlandırılan imölçer, giroskop ve manyetometre ile karşılaşıyorsunuz.
+
+78
+00:18:04,703 --> 00:18:25,523
+200 civarında veri toplayabilen sensörler. Bu sensörleri gerek telefonun konumunu tespit etmek noktasında, gerek oyunlarda, gerek düşme tespitinde, gerekse kişinin hareketini algılamada çok sık kullanıyoruz.
+
+79
+00:18:31,955 --> 00:18:40,155
+Akademik çalışmayı incelediğinizde en başarılı sonuçların üçünün bir arada kullanıldığı senaryoda gerçekleştiğini göreceksiniz.
+
+80
+00:18:40,935 --> 00:18:48,515
+Tabii neler yapabiliyoruz noktasına geldiğimizde sadece bu üç sensörle karşılaşmıyoruz.
+
+81
+00:18:48,515 --> 00:18:54,515
+İşte proximity sensör dediğimiz yakınlık sensörü var. Telefonunuzun ekranının belirli bir...
+
+82
+00:18:54,784 --> 00:19:02,604
+Objeye yakın olması durumunda otomatik olarak kendini kapatması bunlardan bir tanesi.
+
+83
+00:19:02,604 --> 00:19:12,423
+Onun dışında bazı telefonlarda sıcaklıklı bir sensörü var. Bu arada bütün telefonlar bu bahsettiğimiz, bugün konuşacağımız sensörlere aslında sahip değiller.
+
+84
+00:19:12,980 --> 00:19:22,400
+Temel olarak hareket sensörleri ağırlıklı olarak tüm giyilebilir cihazlarda ve telefonlar üzerinde ön plana çıkıyor.
+
+85
+00:19:22,840 --> 00:19:27,980
+Tabii bu bahsettiğimiz sensörlerin boyutları telefonun da boyutunu düşündüğümüzde oldukça küçük.
+
+86
+00:19:28,820 --> 00:19:31,960
+Bu nedenle bir ölçüm hassasiyetleri var.
+
+87
+00:19:31,960 --> 00:19:36,720
+Bu ölçüm hassasiyetleri de daha büyük.
+
+88
+00:19:37,491 --> 00:19:47,311
+Bir elektronik cihazın içine konulan daha büyük bir sensörle kıyaslananlarında belirli handikaplara sahip olabiliyor.
+
+89
+00:19:47,311 --> 00:19:58,192
+Ama günümüzde elektronik cihazların üretimindeki yaşanan gelişmeler sebebiyle bu sensörlerde oldukça hassas ölçümler yapabiliyorlar.
+
+90
+00:19:58,751 --> 00:20:01,311
+Bu nedenle hani...
+
+91
+00:20:01,428 --> 00:20:16,988
+Askeri uygulamalarda kullanılan sensörlerdeki, daha doğrusu düğümlerdeki sensörler kadar çok etkin değil noktasındaki yorumlar artık yavaş yavaş geride kalmaya başlıyor.
+
+92
+00:20:17,988 --> 00:20:22,228
+Fakat tabii hepsinin belirli bir range var.
+
+93
+00:20:23,307 --> 00:20:27,244
+Örneğin, iğme ölçerinin ölçebildiği bir...
+
+94
+00:20:27,284 --> 00:20:43,403
+İlme üst sınırı var. Bu şu açıdan önemli. Belirli bir ilmeden yukarısını telefona uyguladığınızda telefonunu o üst sınır kadar algılayabiliyor. O üst sınırın üzerindeki değeri algılayamadığı zaman.
+
+95
+00:20:43,892 --> 00:21:01,951
+Donanımsal ya da yazılımsal kısıtlar sebebiyle bunu size gösteremiyor. Bu limitleri iyi bilmek gerekiyor ki tasarladığınız uygulamada işte bundan 5 sene önce sensörlerin 4G kuvvetin üzerine ölçmesi pek mümkün değildi.
+
+96
+00:21:02,692 --> 00:21:06,311
+Bugün 8G, 16G kuvvetlerini ölçebilecek noktaya.
+
+97
+00:21:06,740 --> 00:21:26,159
+gelmiş durumdalar. Hatta 10 sene önce, belki de 7-8 sene önce, Art2-2G'ler ölçülebiliyordu. Bu da telefona uygulanan daha büyük kuvvetlerin anlaşılamamasına ve bununla ilgili uygulamaların da sağlıklı çalışmalısına neden oluyordu.
+
+98
+00:21:26,159 --> 00:21:34,740
+Öte yandan ne hassasiyette ölçtüğü de şu anlamda önemli. Bir oyun oynadığınızda işte telefonu çeşitli hareketler...
+
+99
+00:21:34,740 --> 00:21:45,740
+İlerle döndürdüğünüzde, eksenlerde, işte bir toplumun bir delikten geçmesi veya bir puan kazanma, bir yoldan ilerlemesi düşünüldüğünde, o hassasiyetteki ölçümün yapılabilmesi için...
+
+100
+00:21:47,763 --> 00:21:57,263
+Genel range'inin dışında hassasiyet bazında da bir alana ihtiyaç var. Bu alanı ne şekilde kullandığınız oldukça önemli.
+
+101
+00:21:57,463 --> 00:22:06,163
+Büyüttüğünüzde o alandaki hassasiyet düşüyor. Küçüttüğünüzde de o büyüklük sınır aşağıya geliyor. Bunlara dikkat etmek gerekiyor.
+
+102
+00:22:10,420 --> 00:22:27,520
+İki tane, özellikle Android üzerinde iki tip sensörden bahsediyoruz. Hardware-based ve Software-based. Hardware-based olanlar fiziksel olarak bir komponentin telefon üzerinde bulunduğunu ve bu komponentin ölçüm yaptığını söylediğimiz sensörler.
+
+103
+00:22:37,364 --> 00:22:46,723
+Onların çıkarttığı, ürettiği değerleri kullanarak ortaya başka bir değer üretebilen sensörlerden bahsediyoruz.
+
+104
+00:22:46,844 --> 00:22:55,443
+İşte pedometre var. Pedometre mesela kaç adım attığınızı ölçüyor. Bu fiziksel bir sensör değil, yazılımsal bir sensör.
+
+105
+00:22:55,884 --> 00:23:00,784
+Diğer sensörlerin verilerini kullanarak böyle bir şey gerçekleştiriyor.
+
+106
+00:23:02,259 --> 00:23:05,240
+Hocam affedersiniz, şu an kaçıncı slide'dasınız acaba?
+
+107
+00:23:06,279 --> 00:23:07,460
+Hala aynı slide'dayım.
+
+108
+00:23:07,779 --> 00:23:09,620
+İki numaralı slide gözüküyor da bize.
+
+109
+00:23:09,620 --> 00:23:12,660
+Evet, konunun hikayesini anlatıyorum şu anda.
+
+110
+00:23:13,840 --> 00:23:17,380
+Neler kullanılabileceğiniz slide'lar üzerinde henüz ilerleme gerçekleştirmedim.
+
+111
+00:23:17,980 --> 00:23:19,220
+Tamamdır hocam, teşekkür ederim.
+
+112
+00:23:19,480 --> 00:23:20,019
+Rica ederim.
+
+113
+00:23:21,580 --> 00:23:28,680
+Şimdi bu slide üzerinde hardware-based ve software-based sensörler üzerinde konuştuk.
+
+114
+00:23:30,096 --> 00:23:38,276
+Android tarafındaki yapıdan bahsedelim. Bir sensör framework var. Sensörlerle ilgili iş yaptığınız zaman bu framework'tan faydalanıyorsunuz.
+
+115
+00:23:38,915 --> 00:23:45,096
+Öncelikle cihazınızın üzerinde hangi sensörlerin olduğunu tespit etmeniz gerekiyor.
+
+116
+00:23:46,176 --> 00:23:49,895
+Bir sensörle çalışmak istediğiniz zaman onun olup olmadığını kontrol etmeniz gerekiyor.
+
+117
+00:23:49,895 --> 00:23:55,096
+Çünkü yoksa uygulamanız hata üretip kapanma olasılığına sahip.
+
+118
+00:23:55,188 --> 00:23:58,407
+Bunun dışında sensörlerin belirli yetenekleri var.
+
+119
+00:23:59,087 --> 00:24:11,708
+İşte ölçüm yapabildikleri range, tükettikleri güç ve resolution'ları gibi aynı zamanda bir telefon üzerine birden fazla aynı tip sensör de bulunabiliyor.
+
+120
+00:24:11,708 --> 00:24:14,708
+O yüzden manufacturer'larını da sorgulayabiliyorsunuz.
+
+121
+00:24:15,347 --> 00:24:18,708
+Çünkü her telefon üzerindeki sensörün...
+
+122
+00:24:18,880 --> 00:24:27,859
+Vendor'ı, Manufacturer'ı zaman zaman önemli oluyor. Bazı işleri yapı yapamayacağınızı oradan anlayabiliyorsunuz.
+
+123
+00:24:28,620 --> 00:24:37,819
+Genellikle sensörlerden gelen datalar ham veri olarak adlandırılıyor ve işte Raw Sensor Data diye geçiyor.
+
+124
+00:24:38,740 --> 00:24:45,059
+Birden fazla sampling rate'iniz var. Sampling rate sensör dediğiniz zaman ilk akla gelmesi gereken
+
+125
+00:24:47,028 --> 00:24:51,867
+Ne diyelim, terminolojideki terminlerden bir tanesi.
+
+126
+00:24:52,647 --> 00:25:04,127
+Çünkü bir sensörün ne sıklıkla sample ettiği ortamdan aslında sizin yaptığınız işin başarısına da doğrudan etki ediyor.
+
+127
+00:25:04,127 --> 00:25:09,067
+Örneğin, ime ölçer saniyede bir tane veri alıyor olsaydı,
+
+128
+00:25:09,203 --> 00:25:18,004
+Muhtemelen bugün yaptığımız birçok ime ölçerle işi yapamıyor veya çok başarısız bir şekilde gerçekleştirebiliyor olurduk.
+
+129
+00:25:18,963 --> 00:25:26,304
+Ama öte yandan GPS açısından düşündüğünüzde de GPS'te saniyede 100 tane lokasyon bilgisi almıyoruz.
+
+130
+00:25:27,024 --> 00:25:30,004
+Çünkü hem buna ihtiyaç yok hem de böyle bir şey almaya kalkarsak...
+
+131
+00:25:32,339 --> 00:25:46,099
+Özellikle enerji tüketimi açısından da büyük sıkıntılar yaratma ihtimali var. O yüzden saniyede her bir sensörün alabileceği bir sample, örnek sayısı, kısıtı var.
+
+132
+00:25:47,059 --> 00:25:59,099
+İşte kimin de bu 200, kimin de 10, kimin de 5, kimin de saniyede bir defa. Bu nedenle hangi sensörle çalışıyorsanız bunları gözeterek
+
+133
+00:25:59,539 --> 00:26:02,139
+O sampling rate'i belirlemeniz gerekiyor.
+
+134
+00:26:02,899 --> 00:26:07,220
+Aslında bir saniyede aldığınız örnek aynı zamanda sensörün frekansını da gösteriyor.
+
+135
+00:26:09,839 --> 00:26:17,539
+Sensörlerin ihtiyaç duyulmadığında veri toplaması gereksiz enerji tüketimi demek.
+
+136
+00:26:18,399 --> 00:26:22,960
+Hele saniyede çok fazla veri toplayan sensörler düşünüldüğünde.
+
+137
+00:26:23,539 --> 00:26:33,559
+Gerçekten bunu özellikle son dönemde gelen yeni kısıtlamalarla da Android arka planda kullanımını istemiyor bu sensörlerin.
+
+138
+00:26:33,759 --> 00:26:40,579
+Mümkünse uygulama kullanılırken ya da bir foreground servise bağlanarak sensörlerin veri toplamasını istiyor.
+
+139
+00:26:40,659 --> 00:26:43,979
+Background servisler de bunu kısıtlıyor.
+
+140
+00:26:43,979 --> 00:26:47,199
+Ama günün sonunda kontrol sizde.
+
+141
+00:26:47,619 --> 00:26:49,019
+Register ve unregister.
+
+142
+00:26:49,491 --> 00:26:55,251
+Ederek sensör eventli sınırları hangi sensörden veri toplanmasını istiyorsanız,
+
+143
+00:26:55,772 --> 00:27:07,692
+registre ettiğiniz andan itibaren eventli sınır o sensör veri ölçtüğü sürece size bir veri döndürüyor ve siz bu veriyi kullanarak işlemlerinizi yapıyorsunuz.
+
+144
+00:27:10,092 --> 00:27:12,692
+Bu slide'da...
+
+145
+00:27:13,683 --> 00:27:34,943
+Bir Android işletim sisteme sahip telefon içerisinde konumlanabilecek sensörler var. Bütün sensörler her telefonda yok. İşte im ölçerden bahsettik. Metre bölü saniye kare. Çevresel sıcaklığını ölçülmesi için bir sensör olabilir. Bunlar hardware sensörler. Celsius cinsinden ölçüyor.
+
+146
+00:27:35,635 --> 00:27:45,496
+Bir yer çekimi sensörü yazılımsal ya da donanımsal olarak bulunuyor olabilir. Yine bir Motion, SPT için söz konusu.
+
+147
+00:27:48,943 --> 00:27:55,024
+Belirli bir eksen, 3 adet eksen etrafında radyan bölü saniye dönüş hızını size veriyor.
+
+148
+00:27:55,844 --> 00:28:04,104
+Işık sensörü telefonunuzun özellikle ekran parlaklığı ve ekranının ya da modunun dark moda olması noktasında çok önemli.
+
+149
+00:28:04,104 --> 00:28:07,943
+Lüks cinsinden bir birime sahip.
+
+150
+00:28:08,604 --> 00:28:13,724
+Linear acceleration sensörü normal bir aksanometreden farklı olarak
+
+151
+00:28:14,259 --> 00:28:21,680
+İvme ölçerdeki yer çekimi ivmesinin dışarıda bırakılmış hali.
+
+152
+00:28:21,759 --> 00:28:32,359
+Yani saf yer çekiminden bağımsız telefonunuza uygulanan ivmenin ölçüldüğü, donanumsal ya da hesaplandığı yazılımsal bir sensör olarak karşımıza çıkıyor.
+
+153
+00:28:34,864 --> 00:28:46,523
+Manyetik alan ölçümü yapabiliyorsunuz. Bu da özellikle pusulanın kullanımı açısından telefonun faydalandığı bir sensör.
+
+154
+00:28:47,059 --> 00:28:59,299
+Orientation Sensörü telefonunuzun konumuyla alakalı özellikle bir bilgiye ihtiyaç duyuyorsanız yazılımsal olarak size telefonunuzun pozisyonunu söylüyor.
+
+155
+00:28:59,299 --> 00:29:05,019
+Telefonunuzun pozisyonu üç noktada ana olarak gerçekleşebilir.
+
+156
+00:29:12,019 --> 00:29:25,359
+Karşınızda tuttuğunuzda bir de yatayda çevirdiğinizde ekranınızı geniş sinema ekranı formatında baktığınızda 3 temel oryantasyon bilgisine karşılaşıyorsunuz.
+
+157
+00:29:25,359 --> 00:29:36,019
+Basınç sensörü her telefonda yok, çoğu telefonda yok ama olan telefonlarda Pascal vizinden ya da bar cinsinden ifade ediliyor.
+
+158
+00:29:38,195 --> 00:29:59,296
+Hangi katta olduğunuzu, kat değişiminizi anlayan uygulamalar var. Bu sayede alışveriş merkezinde ne tür bir rota izlediğinizi takip eden eğer siz onay verdiğiniz takdirde uygulamalar olabiliyor. Bunlar genellikle insanların günlük hayattaki aktivitelerini anlayıp
+
+159
+00:30:00,000 --> 00:30:11,599
+O kişilerin başına bile gelebilecek aksiyonlara karşı bazı önlemler alınması ya da onların davranışlarına göre işte reklam vesaire yapılması noktasında bize katkı sağlıyorlar.
+
+160
+00:30:12,199 --> 00:30:19,980
+Yakınlık sensörü telefonunuzun pozisyonunun anlaşılmasında ve özellikle ekranının konuşma sırasında kapanmasında kullanılıyor.
+
+161
+00:30:19,980 --> 00:30:27,980
+NEM sensörünü zaten biliyorsunuz. Rotation Vector'u var. Bu da telefonunuzun.
+
+162
+00:30:28,000 --> 00:30:42,619
+Açısal olarak hangi konumlarda olabileceğini, hangi dereceyle o anda telefonu elinizde tuttuğunuzu size hesaplayan, genelde software olarak karşımıza çıkan bir sensör.
+
+163
+00:30:42,619 --> 00:30:51,243
+Ve son olarak da iç sıcaklığı ölçen bir sensör var. Bu da işlemci açısından ya da...
+
+164
+00:30:51,700 --> 00:31:00,539
+Telefonunuzun kullanım sıklığına bağlı olarak ısınma durumunu ve belli önlemler almasını sağlayan bir sensör olarak karşımıza çıkıyor.
+
+165
+00:31:02,120 --> 00:31:08,340
+Sensör Framework dediğimiz zaman dört temel yapıdan bahsediyoruz. Bir sensör menajeriniz var.
+
+166
+00:31:09,019 --> 00:31:18,259
+Bu menajer aslında sizin tüm sensörlere erişmeniz ve onlarla ilgili işte register, unregister işlemleri yapmanız noktasında bütün...
+
+167
+00:31:18,832 --> 00:31:40,692
+İşlerden sorumlu olan yapı. Her bir sensör için oluşturabileceğiniz o sensörün yeteneklerini saklamanızı sağlayan bir sensör sınıfı var. Bir event gerçekleştiğinde o event'e ait bilgilerin saklandığı bir sensör event sınıfından bir obje üretebiliyorsunuz.
+
+168
+00:31:46,516 --> 00:31:53,336
+Bu değişiklikleri, bu bir continuous değişiklik de olabilir. Yani sürekli bir verinin takibi de olabilir.
+
+169
+00:31:53,476 --> 00:32:03,436
+Ya da bir statüs değişimi olduğunda, o statüs değişiminin bu event listener ile takip edilmesi ve anlaşılması için
+
+170
+00:32:03,436 --> 00:32:10,376
+size Android'in sunduğu dört tane temel yapı taşını burada görüyorsunuz. Hep bunları kullanıyor olacağız.
+
+171
+00:32:12,692 --> 00:32:22,692
+Burada küçük kod parçaları ve bazı metotlar var. Bir sensor manager objesi tanımlıyorsunuz. Bu sensor manager objesi...
+
+172
+00:32:24,180 --> 00:32:35,560
+Hangi servisi almak istediğini kontekst üzerinden söylüyor ve burada GetSystemService ile sensör servisini almak istediğini söylüyorsunuz.
+
+173
+00:32:35,620 --> 00:32:40,860
+Bunun için location-based işlemlerde işte location ile ilgili servislerle bağlanıyorsunuz.
+
+174
+00:32:40,940 --> 00:32:45,080
+Burada da sensörlerle ilgili iş yapmak istediniz. Burada belirtmiş oluyorsunuz.
+
+175
+00:32:45,080 --> 00:32:52,180
+Sensör Manager ile GetSensorList metoduyla oraya yazacağımız TypeAll ya da Temperature.
+
+176
+00:32:52,180 --> 00:33:01,680
+ya da biraz önce gördüğünüz Axelometer gibi isimleri yazarak o ilgili sensör tiplerinden hangisi cihazınızda var sorgulayabiliyorsunuz.
+
+177
+00:33:02,280 --> 00:33:04,840
+Burada Type O dendiği için bütün liste geliyor.
+
+178
+00:33:04,840 --> 00:33:11,840
+Ama tek bir, bu alttaki gibi örnekte olduğu gibi Type Magnetic Field seçerseniz,
+
+179
+00:33:13,140 --> 00:33:18,940
+O zaman o türden kaç tane sensör varsa size gösteriliyor.
+
+180
+00:33:19,360 --> 00:33:21,820
+Diyebilirsiniz ki her türden bir tane yok mu? Hayır.
+
+181
+00:33:22,020 --> 00:33:30,820
+Bazı telefonlar birden fazla, ne diyelim, sensör, aynı tipteki sensörü koyabiliyorlar.
+
+182
+00:33:31,183 --> 00:33:45,183
+Bunun çeşitli sebepleri var. İşte hata olması durumunda, diğerinin kullanımına devam etmesi, birinin daha az enerji tüketiyor ve daha az detayla bilgi üretiyor olması, işte kameraları biliyorsunuz...
+
+183
+00:33:45,844 --> 00:34:02,743
+Birden fazla artık kamera telefonu konumlandırabiliyor. Hem derinlik algılamak için kullanabiliyorsunuz hem de arkalı önlü iki farklı kamerayı istediğiniz zaman kullanabiliyorsunuz. Bu doğrultuda bir telefon üzerinde aynı tipte birden fazla sensör olma durumu var.
+
+184
+00:34:12,148 --> 00:34:27,368
+Aslında sensörünüzün sampling yapabildiğini görüyorsunuz. Ne kadar yüksek bir değere ölçebildiğini öğrenebiliyorsunuz GetMaximum Wrench'te. GetPower'la yaklaşık ne kadarlık bir güç tükettiğini görebiliyorsunuz.
+
+185
+00:34:27,988 --> 00:34:38,588
+Biliyorsunuz güçle enerji birbirinden farklı şeyler. Zamana bağlı olanı enerji, güç, zaman üzerinden enerjiye geçiyoruz.
+
+186
+00:34:39,155 --> 00:34:55,755
+GetVendor'u ile üreticisini, versiyonu ile o sensörün aslında ne kadar spekleri ile ilgili bilgi varsa o bilgiyi öğrenme şansına sahip olabiliyorsunuz.
+
+187
+00:34:56,975 --> 00:35:03,692
+Şimdi bu örnekte biraz önceki gördüğünüz parçalar birleştiğinde...
+
+188
+00:35:04,115 --> 00:35:25,235
+İşte ilk ife baktığınızda gravity sensörünün olup olmadığı kontrol ediliyor. Varsa liste isteniyor. Liste geldikten sonra işte bunlardan içerisinde acaba Google'a ait olan bir gravity sensörü kullanılmış mı? Bu sorgulanmış. İşte bunun versiyonuna bakılıyor.
+
+189
+00:35:26,527 --> 00:35:32,547
+Bu versiyon varsa, yapılması istenen iş kod olarak buraya yazılıyor.
+
+190
+00:35:33,087 --> 00:35:35,927
+Aynı şey aşağıdaki örnekte de geçerli.
+
+191
+00:35:35,927 --> 00:35:50,927
+İşte belirli bir aksiyonometre inme ölçer sensörü var mı yok mu kontrolü yapıldıktan sonra, diyelim ki yok, o zaman onun olmadığını tespit edip,
+
+192
+00:35:53,619 --> 00:36:03,719
+Elinizdeki telefonda bu sensör olmadığı için işte şu özellikteki yeteneklerimizi kullanamıyoruz gibi bir mesaj döndürme imkanınız da var.
+
+193
+00:36:05,899 --> 00:36:12,979
+Bu iki tane metot bizim için aslında en kritik olan metotlar.
+
+194
+00:36:12,979 --> 00:36:16,979
+OnSensorChanged bizim için...
+
+195
+00:36:17,780 --> 00:36:26,780
+Sensör tarafındaki her üretilen veriyi ya da her değişen state'i takip eden metot.
+
+196
+00:36:27,380 --> 00:36:37,560
+Burada biz gelen sensör event içerisindeki bilgileri alıyoruz ve burada yapacaklarımızı genellikle yapmayı tercih ediyoruz.
+
+197
+00:36:43,764 --> 00:36:53,064
+Bu metodun aslında her sensör veri ürettiğinde ya da her state değiştiğinde veriyi bize sağladığını söylüyor.
+
+198
+00:36:53,184 --> 00:37:05,664
+Bu da şu demek, aslında saniyede 100 tane, 200 tane veri alıyorsanız saniyede 100 defa, 200 defa bu metodun aktif olarak çağrılıyor ve çalışıyor olduğunu gösterir.
+
+199
+00:37:10,739 --> 00:37:22,880
+İşler yapma yoluna giderseniz, o zaman siz sensörün size sağladığı sıklıkta veriyi işleyemeyebilirsiniz.
+
+200
+00:37:22,880 --> 00:37:32,179
+Ve işte aslında bir sonraki veri gelene kadar sizin burada yaptığınız işi tamamlayabilecek.
+
+201
+00:37:32,788 --> 00:37:45,728
+Düzeyde bir kod çalıştırıyor olmanız lazım. Daha uzun kodlar varsa o zaman bloklamak ya da belli değerlerin yakalanamaması ve kullanılamaması anlamına gelir ki bu çok tercih edilen bir durum değil.
+
+202
+00:37:46,087 --> 00:37:53,748
+Özetle bu metodun içerisinde uzun süren işlerden mümkün olduğunca kaçınmak gerekiyor.
+
+203
+00:37:53,748 --> 00:37:59,724
+OnResium tarafına baktığınızda şunu görüyorsunuz.
+
+204
+00:37:59,795 --> 00:38:12,455
+Mutlaka uygulamanız sensörü kullanacağı zaman uygulamanız aktif olduğunda register etmeli.
+
+205
+00:38:13,036 --> 00:38:16,055
+Uygulamanız pause'a geçtiğinde de arka planda dinlemiyorsanız
+
+206
+00:38:16,500 --> 00:38:28,900
+Sensör verilerini o zaman mutlaka unregister etmeniz gerekiyor. Unregister etmezseniz o dinlemeye devam ediyor ve bu sırada enerji kaybına ve kaynak israfına devam etmiş oluyorsunuz.
+
+207
+00:38:28,900 --> 00:38:35,900
+Register ederken konteksti gönderiyorsunuz birinci parametre olarak. İkinci parametre olarak...
+
+208
+00:38:36,436 --> 00:39:02,556
+Hangi sensörü dinlemek istiyorsanız onu gönderiyorsunuz. Üçüncü parametre olarak da ne sıklıkta veri toplanmasını istiyorsunuz. Bu bilgileri Register Listener metoduna gönderdiğinizde işte burada biraz sonra da göreceksiniz çok sıklıkla toplanmasını istiyorsanız Fastest modunu seçip o sensörün
+
+209
+00:39:04,340 --> 00:39:12,300
+Kapasitesi doğrultusunda saniyede ne kadar sample edebileceğine bağlı olarak o kadarlık veriyi talep ettiğinizi söylüyorsunuz.
+
+210
+00:39:12,300 --> 00:39:25,260
+Tabii Android bunu garanti etmiyor. Sizin talebinize karşı aslında planladığınız saniyede 100 tane veri almakta ama 97, 98, 95 tane size veri döndürüyor olabilir.
+
+211
+00:39:25,820 --> 00:39:30,160
+O yüzden her zaman istediğiniz miktarda verinin geleceğine göre değil,
+
+212
+00:39:30,496 --> 00:39:37,036
+Ne kadar veri geldiğini hesaplayarak bu işleri yapıyor olmanız da açıkçası önemli.
+
+213
+00:39:39,435 --> 00:39:49,536
+Bir sensör bir telefonda yoksa ve sizin uygulamanızda o sensöre mutlaka ihtiyaç duyuyorsa,
+
+214
+00:39:54,996 --> 00:40:00,895
+Useless Feature özelliğiyle tanımlamalı ve Required kısmını True yazmalısınız.
+
+215
+00:40:00,895 --> 00:40:20,295
+Bu şunu sağlıyor, sizin uygulamanız X bir telefon tarafından indirilmek istendiğinde, manifest taraması yapıldığında bu sensör o telefonda yoksa sizin uygulamanız o telefonun markete girdiğinde o telefona gösterilmiyor.
+
+216
+00:40:21,172 --> 00:40:31,172
+Böylece aslında temel bir sensörün, sizin uygulamanız için kritik bir sensörün, telefonda...
+
+217
+00:40:31,635 --> 00:40:37,635
+Uygulamayı indirmek isteyen telefonda olmaması durumunda hiç o uygulamanın gözükmemesini sağlıyorsunuz.
+
+218
+00:40:38,376 --> 00:40:44,236
+Bu da kullanıcı memnuniyetinin kötü etkilenmesini ortadan kaldırmış oluyor.
+
+219
+00:40:44,776 --> 00:40:49,236
+Required kısmına False da yazabilirsiniz. O zaman bunu yazdığınızda şu anlama geliyor.
+
+220
+00:40:49,836 --> 00:40:55,816
+Aslında ben aksiyonometreye bütün yeteneklerimi sergileyebilmek için ihtiyaç duyuyorum.
+
+221
+00:40:56,340 --> 00:41:00,160
+Ama olmadığında da çalışabiliyorum demek.
+
+222
+00:41:01,019 --> 00:41:02,280
+False yazdığımızda.
+
+223
+00:41:03,240 --> 00:41:06,460
+Tam anlamıyla performanslı olarak her yeteneğimi sergileyemiyorum.
+
+224
+00:41:07,059 --> 00:41:13,460
+Ama olmazsa eğer o telefonda yoksa yine de çalışabiliyorum anlamına geliyor.
+
+225
+00:41:15,139 --> 00:41:16,740
+Buraya kadar sorusu olan var mı?
+
+226
+00:41:26,900 --> 00:41:35,900
+Tabii Android tarafında sensörlerin verileri toplarken...
+
+227
+00:41:37,396 --> 00:41:55,916
+Kullandığı 3 tane format var. Bir tanesi belirli bir sampling rate düşünülerek sürekli olarak o sampling rate'e bağlı olarak ilgili sensörlerden sürekli bir raporlama modunda değerlerin talep edilmesi.
+
+228
+00:41:56,340 --> 00:42:07,480
+Verdiğiniz sampling rate'e bağlı olarak ilgili sansör size o sıklıkta veri üreterek size bu bilgiyi aktarıyor.
+
+229
+00:42:09,139 --> 00:42:18,299
+OnChange modunda ise aslında herhangi bir değer ölçüldüğünde size o sensör veri üretiyor.
+
+230
+00:42:18,839 --> 00:42:26,980
+Bunun sebebi işte StepCounter gibi Proximetics gibi sensörleri düşündüğünüzde sürekli olarak yürümediğiniz bir koşulda,
+
+231
+00:42:27,639 --> 00:42:35,339
+adım atmadığınız, oturduğunuz, telefonunuzun sabit kaldığı koşulda telefonunuzun size 0-0-0-0 değeri rapor etmesine gerek yok.
+
+232
+00:42:35,764 --> 00:42:47,024
+O nedenle bir değişim olduğunda, bir adım attığınızda, ikinci adımı attığınızda size ancak bu değişiklikler gerçekleştiğinde raporlama yapıyor bazı sensörler.
+
+233
+00:42:47,624 --> 00:42:56,164
+Buna da onChange modu diyoruz. Bu sayede aslında enerjden de tasarruf sağlamış oluyoruz.
+
+234
+00:42:57,164 --> 00:43:00,604
+Peki, bir de one shot sensörler var.
+
+235
+00:43:03,603 --> 00:43:11,203
+İvent'in tespit edilmesi durumu söz konusu. İşte burada örnek veriyorum.
+
+236
+00:43:12,148 --> 00:43:20,208
+Trigger sensörler olarak karşımıza çıkıyor ve işte biraz sonra da listede göreceksiniz hatta şurada listeyi de açalım.
+
+237
+00:43:20,208 --> 00:43:34,467
+İşte burada yanlarına baktığınız zaman belli gesture'ların gerçekleştiği anda o gesture'ın algılanmasını sağlayan one shot sensörler var.
+
+238
+00:43:39,827 --> 00:43:47,427
+Hareket yaptığınızda, bir aktivite gerçekleştirdiğinizde size diyor ki yürüme moduna geçtiniz.
+
+239
+00:43:48,467 --> 00:44:02,148
+Araçla hareket ediyorsunuz. Bunlar genellikle one shot sensörleri olarak algılanıyor ve burada dediğim gibi kişinin özellikle günlük aktivitelerinin anlaşılması ve bunun raporlanması noktasında kullanılıyor.
+
+240
+00:44:02,148 --> 00:44:04,627
+Eskiden işletim sistemleri bu tür.
+
+241
+00:44:05,023 --> 00:44:28,023
+İşleri yapmıyorlardı ve bunlarla ilgili bir kütüphaneleri yoktu. Ama insanların aktivitelerin anlaşılması günlük hayatta değer kazanmaya başlayınca özellikle bununla ilgili sizin talebiniz varsa uygulamanızın, araca bindiğinizin anlaşılması için bu sensörleri çağırarak kullanıyorsunuz ve genelde de bu sensörler...
+
+242
+00:44:30,771 --> 00:44:42,112
+Software-based sensörler olarak geçiyor. Arka plamda yine third-party uygulamaların yaptığı gibi aksiömetre, magnetometre, jiroskop gibi yapılardan faydalanıyor.
+
+243
+00:44:43,931 --> 00:44:54,311
+Burada tabii birçok farklı sensör var. Bunların içerisinde bazıları calibrated, bazıları uncalibrated olarak geçiyor.
+
+244
+00:44:54,311 --> 00:44:57,951
+Bu ne demek olabilir size sorsam?
+
+245
+00:45:02,324 --> 00:45:04,624
+Calibrated ve Uncalibrated olması bir sensör.
+
+246
+00:45:15,315 --> 00:45:23,775
+Peki, o zaman isterseniz siz bir düşünün, bir ara verelim. Saat 14.46.15'de kaldığımız yerden devam edelim.
+
+247
+00:59:13,972 --> 00:59:17,992
+Evet arkadaşlar, yeniden merhaba. Sağlığımız yerden devam edelim.
+
+248
+00:59:27,476 --> 00:59:29,976
+En son kalibrasyon üzerine konuşuyorduk.
+
+249
+00:59:30,036 --> 00:59:34,115
+Calibrated ve Uncalibrated konusunda fikirlerinizi sormuştum.
+
+250
+00:59:34,416 --> 00:59:38,276
+Bir sensörün kalibre olması ve unkalibre olması arasında ne tür bir farklılık olabilir?
+
+251
+00:59:38,416 --> 00:59:39,296
+Tekrar sormuş olayım.
+
+252
+00:59:46,612 --> 00:59:58,512
+Hocam, şöyle bir şey alıyorum acaba. Hani kalibre de otomatik olarak, direkt kalibre olarak geliyor ama an kalibre de kendimiz belki özel ayarlar yaparak daha farklı kalibre ayarı yapabiliyoruzdur.
+
+253
+00:59:58,512 --> 01:00:10,432
+Şimdi doğru bu kısmı var işin. Android size kendi telefonlarınızda sensörleri listelediğinizde göreceksiniz.
+
+254
+01:00:10,815 --> 01:00:22,435
+Bazı sensörlerden iki ya da üç tane versiyon sunuyor ve bunlardan bir tanesi Calibrated veri, bir tanesi Uncalibrated veri oluyor.
+
+255
+01:00:38,815 --> 01:00:53,615
+Filtreleyerek sunar. Ancak [öğrenci]'in da söylediği gibi bu noktada her kalibrasyon aslında bizim istediğimiz sonucu üretmeyebilir.
+
+256
+01:00:53,615 --> 01:01:04,035
+O yüzden özellikle bu konuda hassas olan kişiler için an kalibre verileri alıp kendi yöntemleriyle kalibre ederek.
+
+257
+01:01:04,431 --> 01:01:16,311
+İlerlemelerini sağlamak amacıyla sensörün tamamen herhangi bir filtre uygulanmadan ölçtüğü değerler alınır ve kullanıcıya bu değerler sunulur.
+
+258
+01:01:16,411 --> 01:01:20,411
+Genelde son kullanıcı kaliple veren değerlerle çalışmayı
+
+259
+01:01:21,043 --> 01:01:26,463
+Çok profesyonel olmayanlar uygun bulurlar ve kolay bir yöntemdir.
+
+260
+01:01:26,543 --> 01:01:30,384
+Çünkü sizin adınıza biri bunu kalibre etmiştir belirli bir standarda göre.
+
+261
+01:01:30,384 --> 01:01:42,063
+Ama bu standardı beğenmeyen ve daha farklı standartları gözeterek kendi uyumamalar için, kalibre etmek isteyenler için an kalibre verileri kullanmak.
+
+262
+01:01:42,431 --> 01:01:50,751
+Daha akıllıca olabilir. O yüzden her iki türde üretilen veri de aslında günümüzde kullanılıyor.
+
+263
+01:01:51,371 --> 01:01:56,091
+Ve oldukça da işe yaradığını söylemekte fayda var diyelim.
+
+264
+01:01:56,531 --> 01:01:58,591
+Ve bir sonraki slide'a geçelim.
+
+265
+01:02:00,731 --> 01:02:04,427
+Şimdi motion sensörler üzerinden ilerlediğimizde...
+
+266
+01:02:04,563 --> 01:02:12,943
+İlk sensörümüz, yerçekimi ivmesini de içerisinde değer olarak barındıran ivme-oçar sensörü.
+
+267
+01:02:12,943 --> 01:02:15,943
+Bu noktada...
+
+268
+01:02:18,931 --> 01:02:28,692
+Motion sensörler de dahil olmak üzere bazı sensörlerin birden fazla eksende veri ürettiklerini rahatlıkla söyleyebiliriz.
+
+269
+01:02:29,052 --> 01:02:40,672
+İlme ölçerin yaşadığımız dünya düşünüldüğünde 3 boyutta fiziksel objelere uygulanan ilmeden bahsettiğimiz için 3 tane değer ürettiğini görüyoruz.
+
+270
+01:02:45,744 --> 01:02:57,683
+Values isimli dizinin ilk gözünde işte x ekseni, ikinci gözünde y ekseni ve üçüncü gözünde z ekseni olmak üzere değerler barındırıyor.
+
+271
+01:02:57,683 --> 01:02:59,683
+Ve siz bu değerleri...
+
+272
+01:03:00,532 --> 01:03:09,731
+Tek tek size ulaştırıldığını okuyarak, ister hepsini, ister tek tek kullanarak aslında işlerinizi gerçekleştiriyorsunuz.
+
+273
+01:03:09,771 --> 01:03:21,112
+Bu nedenle, sensör event objesinden veri geldiği zaman, kaç eksenden, kaç dimensionden boyuttan veri geldiğini bilmek gerekiyor.
+
+274
+01:03:21,892 --> 01:03:25,488
+Artık günümüzde imölçer sensörlerin...
+
+275
+01:03:25,487 --> 01:03:28,487
+Büyük bir çoğunluğu 3 eksende veri üretiyor eskiden.
+
+276
+01:03:29,687 --> 01:03:34,747
+Tek eksende veri üreten ya da 2 eksende veri üreten ilme ölçerler de vardı çok eskiden.
+
+277
+01:03:34,887 --> 01:03:36,587
+Belki 10 sene önce ilk telefonlar.
+
+278
+01:03:37,287 --> 01:03:39,427
+Hayatımızın içerisinde akıllı telefonlar.
+
+279
+01:03:39,856 --> 01:03:47,516
+Yer almaya başladığı zaman. Ama bugün standarda kavuşmuş durumda ve 3x'ende bu verilere sahip olabiliyorsunuz.
+
+280
+01:03:48,076 --> 01:04:00,896
+Bu noktada bir tane aşağıda da farklı bir örnek olması açısından bir trigger event listener'ı görüyorsunuz ve işte significant motion'dan bahsetmiştik biraz önceki tabloda.
+
+281
+01:04:00,896 --> 01:04:07,836
+Bu one shot'lık işlemden bahsetmiştik. Herhangi bir aksiyon gerçekleştiğinde.
+
+282
+01:04:07,856 --> 01:04:21,876
+Ve bu kişinin aktivitelerindeki o anlamlı değişim tespit edildiğinde, Trigger Event listener bunu takip ediyor, yakalıyor ve gelen eventte göre yapılması gereken aksiyonu gerçekleştiriyor.
+
+283
+01:04:21,876 --> 01:04:26,296
+Mesela arabaya bindiniz, arabaya bindiğinizi ve arabayla hareket ettiğinizi anladı.
+
+284
+01:04:27,695 --> 01:04:32,076
+Gelen telefonlar için arabanın Bluetooth'una bağlanmasını sağladınız.
+
+285
+01:04:32,235 --> 01:04:32,856
+Örnek veriyorum.
+
+286
+01:04:35,856 --> 01:04:39,296
+OnTrigger metodu içerisinde gerçekleştirebiliyorsunuz.
+
+287
+01:04:39,296 --> 01:04:48,996
+Motion sensörleri biraz önce konuşurken İmöçar dedik, işte jiroskop ve manyetometre olarak adlandırmıştık.
+
+288
+01:04:49,076 --> 01:04:51,256
+Burada da bir position sensör var.
+
+289
+01:04:51,376 --> 01:04:58,396
+Genellikle işte size bir telefonunuzun nesneden uzaklıkta olduğu.
+
+290
+01:04:58,815 --> 01:05:13,695
+Bilgisini paylaşabiliyor. Böyle bir imkan var. Aynı zamanda belirli bir eksenle olan açıyı da size orientation sensor olarak position sensorların paylaşma durumu söz konusu.
+
+291
+01:05:13,695 --> 01:05:22,215
+Burada da tek kanaldan veri toplayan sensörleri görüyorsunuz. İşte çevresel sıcaklık, ışık, basınç.
+
+292
+01:05:22,612 --> 01:05:32,251
+Bunlar ilgili Sensor Event'in Values dizisinde ilk gözde yer alan değerler olarak karşınızda çıkıyor.
+
+293
+01:05:35,731 --> 01:05:41,711
+Burada hem Calibrated hem de Uncalibrated sensör verilerini görüyorsunuz.
+
+294
+01:05:41,771 --> 01:05:50,411
+Orayın, Calibrated sensör verileri 3 kanaldan gelirken Uncalibrated veriler 5 kanaldan size besleniyor.
+
+295
+01:05:51,551 --> 01:05:55,211
+Gravity sensörü yine 3 kanaldan besleniyor.
+
+296
+01:05:55,211 --> 01:06:01,211
+Telefonunuzun bulunduğu pozisyonuna bağlı olarak yatayda bir pozisyonda bulunulsa,
+
+297
+01:06:01,536 --> 01:06:08,295
+İlgili y ekseni 980'lik bir ivme gösterirken, diğer eksenler 0 gösteriyor.
+
+298
+01:06:09,056 --> 01:06:17,675
+O dikey pozisyonda bulunduğu konumda, dik olarak, bu sırada, işte diyelim ki, x ekseni 980'leri gösteriyor.
+
+299
+01:06:22,739 --> 01:06:35,000
+Ne diyelim? Orientation'ı yani size sinema modunda dönük olarak durduğunda da Z ekseni 981 ve diğer eksenler 0 eksenini gösterecek şekilde konumlanıyorlar.
+
+300
+01:06:35,000 --> 01:06:47,819
+Burada diğer sensörlerin hangi kanallardan, ne kadar kanaldan size veri ürettiklerini söyleyen tablonun devamı var.
+
+301
+01:06:49,844 --> 01:06:54,224
+Yine keza burada diğer konuştuğumuz Game Rotation Vector'u var.
+
+302
+01:06:54,943 --> 01:07:08,764
+Bu da size özellikle oyunlardaki yapılan aksiyonların takip edilmesi adına yazılımsal olarak veri üreten sensörlerden, yazılım sensörlerinden bir tanesi.
+
+303
+01:07:10,423 --> 01:07:12,583
+Bunu da zaman zaman kullanıyoruz.
+
+304
+01:07:15,923 --> 01:07:29,143
+Sensörlerin özellikle Android 12 ile birlikte belirli bir sampling renklerinde kısıtlamalar uygulanmaya başladı.
+
+305
+01:07:40,019 --> 01:07:45,019
+Ve altını sample edebilirken üstünü sample edemiyorsunuz.
+
+306
+01:07:45,099 --> 01:07:53,059
+İşte RAID Normal üzerinden aldığınızda da sensör direct channel kullanarak orada da bir 50 Hz'lik kısıtlama var.
+
+307
+01:07:53,980 --> 01:08:03,019
+Özellikle yüksek, daha yüksek seviyelerde bir sampling istiyorsanız mutlaka manifeste...
+
+308
+01:08:03,168 --> 01:08:13,887
+High Sampling Rate Sensors iznini tanımlamanız gerekiyor ki ancak bu sayede daha yüksek miktarda veriyi çekebiliyorsunuz.
+
+309
+01:08:14,688 --> 01:08:20,747
+Evet, genel olarak sensörlerle ilgili anlatacaklarımız bu kadar. Şimdi örnek uygulamalara geçelim.
+
+310
+01:08:46,515 --> 01:08:50,515
+Evet, burada List Sensor isimli...
+
+311
+01:08:52,515 --> 01:08:54,515
+Şu aşağısını da kapatalım.
+
+312
+01:08:58,387 --> 01:09:03,087
+Bir kodumuz var. Öncelikle şunları bir kapatalım.
+
+313
+01:09:07,347 --> 01:09:09,788
+Locket'i açalım.
+
+314
+01:09:14,068 --> 01:09:19,788
+Burada login Java'daki çağırdığımız list sensörü de kalmış en son.
+
+315
+01:09:21,328 --> 01:09:22,788
+Telefonumuz üzerinden...
+
+316
+01:09:26,484 --> 01:09:30,844
+İlgili rod'u çalıştırdığımızda,
+
+317
+01:09:31,904 --> 01:09:36,564
+tekrar derleyip çalıştıralım.
+
+318
+01:09:39,924 --> 01:09:46,604
+Lokete ilgili sensörlerin listesi basıyor olarak görmemiz gerekiyor.
+
+319
+01:09:46,604 --> 01:09:49,564
+En son o şekilde bir ayarlama yapmıştım.
+
+320
+01:09:52,659 --> 01:09:57,059
+Evet, şu anda görüyorsunuz. Ve hemen kod parçasına dönelim.
+
+321
+01:10:00,659 --> 01:10:02,819
+Kod parçası aslında şunu yapıyor.
+
+322
+01:10:04,559 --> 01:10:08,399
+Sensor Manager, öncelikle tanımlıyoruz. Sensör servisi üzerinden.
+
+323
+01:10:10,239 --> 01:10:10,659
+Sonra...
+
+324
+01:10:12,724 --> 01:10:20,604
+Ana ekranda yazdıracağımız listenin bulunacağı bir tane TextView tanımlıyoruz. Onu da birazdan size göstereceğim.
+
+325
+01:10:20,604 --> 01:10:32,587
+Ve sensör listi, GetSensorList ile alarak tüm telefonunuzdaki değerleri Locket'e burada görmüş olduğunuz...
+
+326
+01:10:33,108 --> 01:10:43,648
+Komutlar vasıtasıyla bastırıyoruz. Aynı zamanda o sensörlerin ne kadarlık bir güç tükettiği bilgisini de S-Gate Power ile alarak altlarına bastırıyoruz.
+
+327
+01:10:43,648 --> 01:10:59,007
+Şu anda burada bakacak olursak, yukarıdan itibaren tepeye çıkalım. Bir akserometre var, ICM-2608. Bir tane uncalibrated var, bir magnetometre var. Bu uncalibrated versiyonu var, bir gyroskop var.
+
+328
+01:11:00,020 --> 01:11:06,560
+Jaroskop'un gördüğünüz gibi güç tüketimi aksolometre ve manyetometreye göre oldukça yüksek.
+
+329
+01:11:08,800 --> 01:11:11,480
+Şu sensörün şeyini bilmiyorum ne olduğunu.
+
+330
+01:11:12,520 --> 01:11:17,100
+Tabii farklı secondary sensörler de var.
+
+331
+01:11:17,940 --> 01:11:22,520
+Secondary sensörlere baktığınızda bir sensörden iki tane olduğunu görüyorsunuz.
+
+332
+01:11:23,060 --> 01:11:30,700
+Biraz önceki ime ölçerlere ek olarak Wake Up Secondary şeklinde Manyetometre de var. Yukarıda da hatırlarsanız vardı.
+
+333
+01:11:32,159 --> 01:11:36,960
+Sonra bir de Gyroskopumuz var. Sonra Gravity sensörümüz var.
+
+334
+01:11:37,620 --> 01:11:44,980
+Gravity sensörünün gördüğünüz gibi yine NRS diğerleriyle kıyasladığınızda Dinear Acceleration sensörünün de
+
+335
+01:11:45,359 --> 01:11:48,840
+Bu oldukça yüksek güç tüketimleri.
+
+336
+01:11:48,979 --> 01:11:58,319
+Çünkü burada muhtemelen bunlar yazılım sensörleri olduğu için şu an elimdeki telefon Vestel, Venus Z20 yanlış hatırlamıyorsam.
+
+337
+01:11:59,539 --> 01:12:06,239
+Ona ait olan üzerindeki sensörlerin özellikle güç bilgilerini ve isimlerini görüyorsunuz.
+
+338
+01:12:06,239 --> 01:12:07,219
+Step Detector var.
+
+339
+01:12:08,851 --> 01:12:16,711
+Step Counter var. Yani birinde adım atmaya başladığınızı detect ederken diğerinde sayan bir sensörden bahsediyoruz.
+
+340
+01:12:16,711 --> 01:12:31,131
+Biraz önce bahsetmiştik. Significant Motion Detector var. Game Rotation Vector var. Geomanyetik Rotation Vector var. Bunların güç tüketimlerini de görüyorsunuz. Orientation Sensor, yazılımsal bir sensör.
+
+341
+01:12:33,108 --> 01:12:41,648
+Yani telefonunuzun belli bir eksende hareket etmesini sizin için tespit eden bir yapı.
+
+342
+01:12:42,448 --> 01:12:52,128
+Gravity, Diner Axi Reşim bunların daha nispeten ikinci planda çalışan tanımlanmış olan yazılımsal sensörleri var.
+
+343
+01:12:54,507 --> 01:12:55,828
+Petrometre var.
+
+344
+01:12:56,756 --> 01:13:01,195
+Persistent Motion Detector var. Gördüğünüz gibi birçok sensör var.
+
+345
+01:13:03,256 --> 01:13:06,435
+Ve bunları ekrana bastırıyoruz ki şöyle yapalım.
+
+346
+01:13:09,096 --> 01:13:11,416
+Ben size ekrana basılmış halini de göstereyim.
+
+347
+01:13:16,115 --> 01:13:18,376
+Stop Share diyelim, Share Screen diyelim.
+
+348
+01:13:21,716 --> 01:13:29,436
+Şu anda telefonun ekranına, TextView'un üzerine, tabii buraya power'larını bastırtmamıştım.
+
+349
+01:13:30,615 --> 01:13:39,176
+İlgili sensörleri bastırttım ama burada alan kalmadığı için TextView bir yere kadar olan sensörleri yazdırmış durumda.
+
+350
+01:13:39,856 --> 01:13:41,836
+Hepsini ekranda göremiyorsunuz.
+
+351
+01:13:41,836 --> 01:13:48,396
+Bu nedenle bunu Locket üzerinden görüntülemek sizin açınızdan da daha anlamlı olacaktır.
+
+352
+01:13:48,476 --> 01:13:49,676
+Çünkü çok sayıda sensör var.
+
+353
+01:13:49,716 --> 01:14:10,496
+Bunun aşağıya doğru gidebilmesi için de aslında bir ScrollView mantığıyla işte daha önce yapmıştık hatırlarsanız RecyclerView kullanarak bunları tek tek görüntüleyebilir ve ilgili formatta kişilere gösterebilirsiniz.
+
+354
+01:14:10,496 --> 01:14:17,176
+Aslında bugün yapacağınız şeylerden bir tanesi de bu. Şimdi dönecek olursak yine kod parçasına.
+
+355
+01:14:17,779 --> 01:14:26,899
+Çok basitlığını çok hızlı yapabileceğinizi tahmin ediyorum. Çünkü elinizde hazır kodlar var geçtiğimiz haftada. Hemen tekrar paylaşayım.
+
+356
+01:14:30,963 --> 01:14:39,083
+Öncelikle buradaki kod parçası üzerinden bir sensör menajer framework'ünü tanımlamasını yapmanızı istiyorum.
+
+357
+01:14:39,083 --> 01:14:46,083
+Sonra sensörleri, kendi telefonunuzun sensörlerini göstermenizi ve telefonunuzdaki sensörlerin...
+
+358
+01:14:46,256 --> 01:14:56,355
+Power durumlarını ve diğer vendor'ı nedir, resolution'ı nedir, bunları Locket'te görüntülemenizi istiyorum.
+
+359
+01:14:56,556 --> 01:15:14,256
+Ondan sonra da bunları RecyclerView yapısıyla tek tek item item hem sensörün resmini kullanarak hem sensörün ismini kullanıp aynı zamanda o ilgili itemda power'ı nedir, resolution'u nedir.
+
+360
+01:15:14,256 --> 01:15:19,656
+Maksimum Range nedir? Bunları listelemenizi istiyorum geliştireceğiniz küçük uygulamayla.
+
+361
+01:15:22,176 --> 01:15:33,435
+Evet, isterseniz başlayabilirsiniz. Bu kod parçası çok küçük olduğu için doğrudan, hani bunu sizle artık paylaşmıyorum, buradan alıp kullanabilirsiniz.
+
+362
+01:15:38,000 --> 01:15:46,059
+Görelim. Hatta birazdan sizlere soruyor olacağım. Sizde hangi sensörler gözüküyor, power olarak ne gözüküyor diye.
+
+363
+01:15:48,699 --> 01:15:53,619
+Sorusu olan var mı bu arada ya da danışmak isteyen, herhangi bir konuda bir yorum yapmak isteyen?
+
+364
+01:16:00,948 --> 01:16:22,048
+Peki, tabii yani bu yedinci hafta yedi haftadır mümkün olduğunca kesintisiz bir şekilde yapmaya çalışıyoruz ama derste neredeyse hiç katılım olmadığı için sözler olarak açıkçası benim açımdan da zor oluyor.
+
+365
+01:16:22,484 --> 01:16:44,944
+Hani şartlardan dolayı mutlu olmadığınızı biliyorum ama sorularınız da mutlaka vardır diye düşünüyorum. En azından şu an burada 25 kişiyiz dersim, 102 kişi alıyor. Sürekli katılanlara da teşekkür ediyorum. Fakat böyle monolog şeklinde gitmesi de dersim açıkçası çok verimli olmuyor kendi adıma.
+
+366
+01:16:45,439 --> 01:16:49,519
+Bu noktada sorularınız olursa ya da özel örnekler üzerinden konuşabiliriz.
+
+367
+01:16:49,559 --> 01:16:53,379
+[öğrenci], sensör için yeni bir mini proje açmanız bence daha akıllıcı olur.
+
+368
+01:16:55,379 --> 01:17:01,579
+O yüzden tüm arkadaşlarımız için de aynı şeyi hatırlattığım için teşekkür ederim, söyleyelim.
+
+369
+01:17:01,579 --> 01:17:10,699
+Bu sensör uygulaması için yeni bir mini proje açarsanız mezun application ile ilgili geliştirdiğimiz projeyle çok fazla karışmamış olur.
+
+370
+01:17:12,692 --> 01:17:28,311
+Belki sensörlerle ilgili yapacağımız birkaç tane iş daha var. Onları da ilerleyen zamanlarda bir bonus olarak sizlerden isteyebilirim. O yüzden onu da önemsemeniz sizler adına iyi olabilir.
+
+371
+01:17:29,832 --> 01:17:38,612
+Çünkü kimin ne geliştirdiğini ne aşamada olduğunu takip etme şansına sahip değilim. Sınıfta olduğunuzda en azından bilgisayarlarınızı gezerek görebiliyordum.
+
+372
+01:17:39,060 --> 01:17:47,200
+Şu an sorulara bile cevap alamadığım için maalesef daha ötesini yapma şansına sahip olamıyoruz.
+
+373
+01:17:49,079 --> 01:17:53,780
+Ama şimdi bunu rahatlıkla yapabileceğiniz bir örnek olduğu için.
+
+374
+01:17:55,840 --> 01:18:00,040
+Mezun uygulamasında şu an sensörle ilgili bir aklımda bir fikir yok.
+
+375
+01:18:01,100 --> 01:18:05,760
+Ama bir şey gelirse onu da onun içine ekleriz.
+
+376
+01:18:06,644 --> 01:18:16,324
+Sensörle ilgili uygulamanızı ayrı bir uygulama olarak açarsanız sizin açınızdan daha verimli olur.
+
+377
+01:18:16,324 --> 01:18:27,283
+Örneğin, Main Activities'i burada görmüş olduğunuz ekranla açarsanız öncelikle Locket'de sensörleri ve özelliklerini görürsünüz.
+
+378
+01:18:29,011 --> 01:18:33,551
+Tabii tabii sensörleri elde edip RecyclerView'da göstereceksiniz.
+
+379
+01:18:33,671 --> 01:18:43,931
+Ben ilk etapta kolay olsun ve bir an önce sensörlerin isimlerini görün diye Locket'e bir örnek olması açısından da bastırttım.
+
+380
+01:18:44,752 --> 01:18:55,391
+Ama siz bunu RecyclerView yapısına entegre edip önce bir telefonunuzun sensör uygulaması açıldığında telefonunuzdaki sensörleri görelim.
+
+381
+01:18:56,979 --> 01:19:00,939
+Aslında bir sonraki adımda yapılabilecek şeylerden bir tanesi.
+
+382
+01:19:01,439 --> 01:19:12,579
+İlgili sensöre, item'a tıklandığında yeni bir ekran açılsın ve bu yeni ekranda o sensörün aldığı değerler ekranda gösterilsin.
+
+383
+01:19:12,579 --> 01:19:21,579
+Böylece aşısı daha faydalı ve verimli bir...
+
+384
+01:19:24,564 --> 01:19:26,344
+Uygulamanın adımlarını atmış oluruz.
+
+385
+01:20:51,028 --> 01:20:54,708
+Bitiren olursa lütfen hızlıca benimle paylaşsın.
+
+386
+01:22:03,155 --> 01:22:06,595
+Buradaki kodu da sizlerle paylaştım chat üzerinden.
+
+387
+01:22:08,235 --> 01:22:09,895
+Yine de sorun yaşayanlar olursa diye.
+
+388
+01:24:38,707 --> 01:24:43,167
+Hocam, emulatörle çalışırken benzeri bir çıktı alamıyoruz sanırım, doğru mu?
+
+389
+01:24:44,028 --> 01:24:47,507
+Emulatörle çalışırken şöyle bir sıkıntı var.
+
+390
+01:24:48,387 --> 01:24:51,707
+Emulatörde sensörlerin...
+
+391
+01:24:52,467 --> 01:25:20,467
+Açıp mimik hareketlerini yapma şansınız var. İlgili işte mesela ışık sensörünü seçtiniz, tanımladınız, eklediniz. Kendinizin elinizle değiştirmeniz gerekiyor değerlerini. Uygulamanızın ona göre tepki vermesi gerekiyor. Gerçek hayattaki gibi veri toplamıyor telefon, emülatör telefonlar. Ama liste alma noktasında evet tanımlamazsanız alamıyorsunuz.
+
+392
+01:25:20,467 --> 01:25:22,167
+Defaultunda.
+
+393
+01:26:25,043 --> 01:26:28,804
+Evet, sensörleri Locket'e yazdırabilen oldu mu?
+
+394
+01:27:51,220 --> 01:28:04,800
+Bir sonraki dersin başlangıcında yani biraz sonra ara verdikten sonra bir sonra başlangıç noktasında sensörlerden veriyi nasıl alıyorsunuz? OnSensorChange metodunda ve o verileri nasıl işliyorsunuz? Onlara bakacağız.
+
+395
+01:28:07,860 --> 01:28:17,000
+Ve arkasından da mevzun application ile ilgili, ödevinizle ilgili bazı ufak tefek detayları konuşuyor olacağız.
+
+396
+01:40:07,060 --> 01:40:09,500
+Evet arkadaşlar, yapabilen var mı acaba?
+
+397
+01:40:10,780 --> 01:40:21,800
+Power dışında [öğrenci] şu anda GetResolution ve GetMaximumRange'de sensöre ait özellikleri gösterebilirsiniz.
+
+398
+01:40:28,212 --> 01:40:33,811
+Peki, o zaman bir 10 dakika ara verelim. 15.41, 15.51'de devam edelim.
+
+399
+01:50:30,771 --> 01:50:34,492
+Evet arkadaşlar, dersin son bölümüne geçiyoruz.
+
+400
+01:50:35,291 --> 01:50:40,252
+Şimdi yeni bir örnek üzerinden konuşacağız sizden.
+
+401
+01:50:40,691 --> 01:50:46,931
+Sensörlerle ilgili herhangi bir geri dönüş olmadığı, yani yazdırıp yazdıramadığınızı da bilmiyorum.
+
+402
+01:50:47,671 --> 01:50:49,652
+Sorun yaşayanlar varsa tabii ki sorabilirler.
+
+403
+01:50:50,771 --> 01:50:55,412
+Ama herhangi bir soru gelmeyecekse devam edeceğim örneklere.
+
+404
+01:51:02,260 --> 01:51:03,420
+Şimdi bu noktada
+
+405
+01:51:07,764 --> 01:51:08,123
+yapalım.
+
+406
+01:51:42,323 --> 01:51:43,863
+Ekran paylaşımına verelim.
+
+407
+01:51:50,100 --> 01:51:54,460
+Şu an görüyorsunuz, yine bizim uygulamamızın ilk giriş ekranı.
+
+408
+01:51:56,040 --> 01:51:59,960
+Admin, admin dedikten sonra login dedik.
+
+409
+01:51:59,960 --> 01:52:05,840
+Şimdi, telefonu dik tutuyorum şu anda.
+
+410
+01:52:06,800 --> 01:52:09,960
+Yatırıyorum, ekran siyaha dönecek.
+
+411
+01:52:11,399 --> 01:52:12,700
+Sağ tarafa doğru yatırdım.
+
+412
+01:52:13,319 --> 01:52:14,819
+Şimdi tekrar dik konuma getireceğim.
+
+413
+01:52:17,140 --> 01:52:37,440
+Sarı. Şimdi bu sefer sol tarafa yatırdım. Telefon. Muhtemelen ekranda da görüyorsunuzdur. Şu an dik durumda. Sağ tarafa yatırdım. Siyah ekran görüyorsunuz. Son tarafa yatırdım. Şu anda beyaz ekran görüyorsunuz.
+
+414
+01:52:45,108 --> 01:52:47,347
+Çok özür diliyorum, pardon bir saniye.
+
+415
+01:52:48,347 --> 01:52:49,388
+Sizi bir bekleteceğim.
+
+416
+01:54:19,252 --> 01:54:21,372
+Arkadaşlar, kusura bakmayın beklettiğim için.
+
+417
+01:54:23,172 --> 01:54:25,132
+Şimdi size tekrar gösteriyorum.
+
+418
+01:54:25,212 --> 01:54:26,012
+Dik konumdaydı.
+
+419
+01:54:26,532 --> 01:54:32,212
+Sağ tarafa yatırdığımda siyah, sol tarafa yatırdığımda beyaz görüyor olmanız gerekiyor.
+
+420
+01:54:32,212 --> 01:54:35,712
+Şimdi buradan kodumuza dönelim.
+
+421
+01:54:36,052 --> 01:54:36,772
+Neler yapıyoruz?
+
+422
+01:54:37,132 --> 01:54:37,832
+Onu konuşalım.
+
+423
+01:54:44,884 --> 01:54:45,463
+Açılın.
+
+424
+01:55:20,500 --> 01:55:29,500
+OnCreate kısmında Sensör Manager'ı tanımlıyoruz. Daha sonra iki tip sensörümüz var. Rotation Vector'ımızın...
+
+425
+01:55:30,228 --> 01:55:44,448
+Olduğu sensör ve jiroskop sensörü. Jiroskop sensörünü şu an için disabled durumda, kodunu çalıştırmıyor noktasında bıraktım ama burada anlatmak istediğim bir nokta daha var. Onu da biraz sonra sizlerle paylaşıyor olacağım.
+
+426
+01:55:44,448 --> 01:55:56,247
+Burada Get Rotation Matrix from Vector metoduyla, aslında burada arka planda yapılan bir hesap var. O hesabı ezbere bilmenize gerek yok.
+
+427
+01:55:58,228 --> 01:56:11,847
+vektöründen alınan değerler, koordinat sistemine verilerek, buradaki Remap koordinat sistemine verilerek, telefonun oryantasyonuyla ilgili bir bilgi alınıyor.
+
+428
+01:56:11,847 --> 01:56:24,847
+Ve burada ikinci ekseniyle ilgili olarak alınan bilgiyi alıp hem bloga yazdırıyoruz hem de 45 dereceden büyükse, ekranın,
+
+429
+01:56:25,971 --> 01:56:40,531
+Siyah olmasını, eksi 45 dereceden küçükse siyahın beyaz olmasını ve dik konuma yakınsa ekranın sarı olmasını sağlıyoruz.
+
+430
+01:56:40,731 --> 01:56:42,152
+Aslında yaptığımız şey bu.
+
+431
+01:56:42,871 --> 01:56:47,051
+Burada ilgili 3 tane eksen var, orientation ekseni.
+
+432
+01:56:49,408 --> 01:56:53,428
+Açı bilgilerini alabilmek için önce GetOrientation metodunu çağırıyoruz.
+
+433
+01:56:53,628 --> 01:56:57,128
+Oraya Remap edilmiş Rotation matrisini gönderiyoruz.
+
+434
+01:56:58,268 --> 01:57:02,268
+Aynı zamanda parametre alacak olan Orientation dizisini pastıyoruz.
+
+435
+01:57:03,148 --> 01:57:07,788
+Bu 3 eksendeki bilgi bize aktarılıyor.
+
+436
+01:57:07,788 --> 01:57:15,608
+Biz de 3. eksendeki bilgiyi alıyoruz ve hem log bölümünde bastırıyoruz.
+
+437
+01:57:16,948 --> 01:57:27,028
+Hem de aynı zamanda aldığımız değerin açısal olarak bilgisi neye denk geldiyse onu kontrol edip ekranın renginin değiştirilmesini sağlıyoruz.
+
+438
+01:57:27,468 --> 01:57:30,887
+Ve bunu her alınan değer için yapıyoruz.
+
+439
+01:57:31,468 --> 01:57:35,228
+Her alınan değer ne demek? Bu arada şunu da açalım.
+
+440
+01:57:36,907 --> 01:57:37,768
+Şu noktada.
+
+441
+01:57:41,235 --> 01:57:46,036
+Bize burada iki tane sensör takip etmek istediğimizi söylüyoruz.
+
+442
+01:57:46,255 --> 01:57:50,055
+Diyoruz ki sensör menajerden bu sensörler var mı bir bak diyoruz.
+
+443
+01:57:50,635 --> 01:57:53,235
+Bu sensörler varsa onları...
+
+444
+01:57:56,948 --> 01:57:58,068
+Register ediyoruz.
+
+445
+01:58:00,327 --> 01:58:08,028
+Sonra da arkasından Pause konumuna gittiği zaman unregister ediyoruz ilgili event listener'ı.
+
+446
+01:58:08,448 --> 01:58:14,387
+Şimdi bir listener'a birden fazla sensör esan etme şansımız var burada olduğu gibi.
+
+447
+01:58:15,068 --> 01:58:16,028
+Bu ne anlama geliyor?
+
+448
+01:58:16,028 --> 01:58:22,307
+Bu size onSensorChange'de herhangi bir event geldiğinde
+
+449
+01:58:23,731 --> 01:58:29,711
+Bu eventin hangi sensörden geldiğinin kontrol edilmesi gerekiyor.
+
+450
+01:58:30,579 --> 01:58:40,340
+Gerek giroskopdan gelen bilgiler, gerekse Rotation Vector'dan, belki birden fazla 3-4 tane sensör de takip edebilirsiniz.
+
+451
+01:58:40,460 --> 01:58:51,700
+Hepsi OnSensorChange'di çağırıyor. OnSensorChange metodu çağrıldığında siz öncelikle sensör eventin hangi sensör olduğu bilgisini kontrol ediyorsunuz.
+
+452
+01:58:51,700 --> 01:58:56,639
+Eğer sensör get type metoduyla kontrol ettiğinizde giroskopsa,
+
+453
+01:58:57,235 --> 01:59:00,636
+IF kolunda jiroskopla ilgili veriyi işliyorsunuz.
+
+454
+01:59:01,456 --> 01:59:04,695
+Eğer değilse o zaman ELS koluna gidiyorsunuz.
+
+455
+01:59:05,175 --> 01:59:09,536
+Demek ki diğer sensörden bir bilgi gelmiş olduğunu anlıyorsunuz.
+
+456
+01:59:09,536 --> 01:59:17,536
+Burada siz bahsetmiş olduğunuz Rotation Matrix hesaplaması üzerinden telefonun...
+
+457
+01:59:18,484 --> 01:59:36,864
+Belirtilen dikeydeki Y eksenindeki açı bilgisini alıyorsunuz ve o açı bilgisine bağlı olarak da telefonun 45 dereceden küçük mü büyük mü değerlere sahip olduğu bilgisini eksi 45 ve 45 değerleriyle kontrol ederek ekran rengini değiştirebiliyorsunuz.
+
+458
+01:59:46,484 --> 02:00:01,363
+İmplement ediyorsunuz bu interfaysi. Bu interfaysi implement ettiğinizde mutlaka OnSensorChanged ve aşağıda yer alan OnAccuracyChanged metodu tanımlanması gerekiyor.
+
+459
+02:00:02,004 --> 02:00:06,203
+OnAccuracyChanged'i çok detaylı konuşmadık. Onun üzerine de küçük bilgiyi verelim.
+
+460
+02:00:09,108 --> 02:00:23,288
+Telefonun herhangi bir sensöründen gelen verinin Eccuric CC ile ilgili bir değişiklik raporlandığında ne yapılması gerektiğini aslında belirlediğiniz bir metot.
+
+461
+02:00:23,712 --> 02:00:38,372
+Bu çok sık karşınıza çıkan bir durum değil. Çünkü sensörün genel olarak accuracy'sinde bir değişiklik olması çok öngörülen bir durum değil. Ama bazı durumlarda ölçüm değerleriyle ilgili bir...
+
+462
+02:00:38,579 --> 02:00:43,840
+Equus hissi ile ilgili bir değişiklik olduğu zaman ne yapılması gerektiğini bu metodun içerisine yazıyorsunuz.
+
+463
+02:00:44,159 --> 02:00:48,500
+Genellikle çok sık kullanılan bir metot değil dediğim gibi.
+
+464
+02:00:49,079 --> 02:00:57,659
+Ağırlıklı olarak OnSensorChanged metodunu kullanıyoruz ve buradan gelen sensor eventi alıp hangi sensörden geliyorsa eğer birden fazla takip ediyorsanız,
+
+465
+02:00:58,119 --> 02:01:01,000
+tek bir sensör varsa o zaman bu kontrolü yapmanıza gerek yok.
+
+466
+02:01:01,479 --> 02:01:04,319
+Zaten buraya takip ettiğiniz tek bir sensörün de yere gelecektir.
+
+467
+02:01:06,579 --> 02:01:26,159
+Bekleniyor. Şimdi benim de sizden beklediğim şey şu. İki tane sensör bilgisi takip etmenizi bekliyorum. Bir tanesi akselerometre, bir tanesi de ışık sensörü, light sensörü. Buradan gelen değerleri almanızı istiyorum.
+
+468
+02:01:26,739 --> 02:01:37,619
+Telefonunuzun hareketsiz olduğu ve ışığın olmadığı bir ortamda telefonunuzun ya cebinizde ya da çantanızda olduğunu varsayabiliriz.
+
+469
+02:01:38,520 --> 02:01:41,600
+Bunu ekrana yazdırmanızı bekliyorum.
+
+470
+02:01:42,819 --> 02:01:47,380
+İkinci olarak telefonunuz elinizdedir, hareket ediyordur.
+
+471
+02:01:47,828 --> 02:02:09,207
+Yazdığınız typingden dolayı ama ışık vardır. O zaman telefonunuz elinizde demektir. Bunu söyleyebilirsiniz. Üçüncüsü de telefonunuz masanın üstünde duruyordur. Işık vardır ama hareket etmiyordur. O zaman telefon masa üstünde duruyor şeklinde bir mesaj üretmenizi bekliyorum.
+
+472
+02:02:12,467 --> 02:02:16,087
+Bu kısımda anlaşılmayan bir nokta var mı? Soru sormak ister misiniz?
+
+473
+02:02:21,811 --> 02:02:27,652
+Hocam, yazdıracağınız meseleleri tekrar söyleyebilir misiniz? Sesiniz bir kesildi de orada.
+
+474
+02:02:29,591 --> 02:02:37,971
+Tekrar söyleyeyim [öğrenci]. Bir telefon üzerinden ışık ve iğme ölçer verilerini alıyorsunuz.
+
+475
+02:02:37,971 --> 02:02:49,351
+İğme ölçer verisini alırken, diner aksedometre üzerinden veriyi almanızı bekliyorum. Yani yer çekiminin olmadığı sensörü kullanarak.
+
+476
+02:02:49,908 --> 02:03:06,288
+Bu sensörlerin 3 eksenin ortalaması sıfırlar civarındaysa, o zaman yani ortalamasından kasıtlı x kare artı y kare artı z karenin kare kökü, o zaman telefonunuz hareketsiz demektir.
+
+477
+02:03:06,828 --> 02:03:14,708
+Işık sensörüne de baktığınızda ışık sensörüne bir ışık varsa bu telefon masa üstünde demektir.
+
+478
+02:03:15,068 --> 02:03:17,208
+Işık yoksa cepte ya da çantada demektir.
+
+479
+02:03:18,131 --> 02:03:28,971
+Elinizde ise, hareket halindeyse, ışık varsa telefonu kullanıyorsunuzdur. Telefonu kullandığınıza dair bir mesajın üretilmesini bekliyorum.
+
+480
+02:03:30,351 --> 02:03:41,971
+Aynı zamanda, tabii şöyle bir durumla da karşılaşabilirsiniz. Çantanızdadır, telefonla hareket ediyorsunuzdur.
+
+481
+02:03:42,676 --> 02:03:49,956
+O zaman bu da çantanızda telefonla hareket ettiğinizi, yani ışık yoktur ama hareket vardır.
+
+482
+02:03:50,456 --> 02:03:53,656
+Bunu da dördüncü bir seçenek olarak ekrana yazdırabilirsiniz.
+
+483
+02:03:54,096 --> 02:03:56,556
+Yani telefonun konu bunu aslında...
+
+484
+02:03:56,851 --> 02:04:02,131
+Hem ilmi ölçer bilgisayarında ışık bilgisini kullanarak kabaca yorumlamanızı istiyorum.
+
+485
+02:04:02,831 --> 02:04:07,952
+Bunun için de burada gördüğünüz kok parçasından faydalanmanızı istiyorum.
+
+486
+02:04:08,112 --> 02:04:11,091
+Şimdi chat üzerinden hemen kok parçasını size göndereyim.
+
+487
+02:04:28,851 --> 02:04:30,411
+Bunu alıp modifiye edeceksiniz.
+
+488
+02:04:30,951 --> 02:04:36,291
+Söyleyeyim gibi ışık sensörü ve lineer aksanometre verilerini takip ediyor olacaksınız.
+
+489
+02:04:38,551 --> 02:04:41,032
+Şimdi en azından bunları doğru okuyabiliyor musunuz?
+
+490
+02:04:41,711 --> 02:04:42,471
+Bir bunu deneyelim.
+
+491
+02:04:45,751 --> 02:04:53,851
+Yine aynı proje üzerinde çalışabilirsiniz, sensör projesi üzerinde.
+
+492
+02:04:56,756 --> 02:05:01,636
+Ekrana telefonun state'ini aldığınız değerlere göre yazdıracaksınız.
+
+493
+02:05:01,636 --> 02:05:05,756
+Tabi belirli bir gecikme koyabilirsiniz.
+
+494
+02:05:05,956 --> 02:05:13,056
+Çünkü sürekli veri okunuyor ya da verinin okunma sıklığını düşürebilirsiniz.
+
+495
+02:05:14,336 --> 02:05:19,136
+Bu sayede daha az verinin okunmasını sağlayabilirsiniz.
+
+496
+02:05:19,275 --> 02:05:21,256
+Çünkü anlık değişimler için.
+
+497
+02:05:21,684 --> 02:05:26,224
+Belki o kadar da sık veri okumunuza gerek olmayabilir. Buna siz karar verin.
+
+498
+02:11:01,492 --> 02:11:03,511
+Soru sormak isteyen arkadaşımız var mı?
+
+499
+02:11:05,511 --> 02:11:07,851
+Gönderdiğim kodda anlaşılmayan bir şey.
+
+500
+02:11:09,631 --> 02:11:17,072
+Işık sensörü kullanılacak ve aynı zamanda lineer aksinomotre kullanılacak dedik.
+
+501
+02:11:18,572 --> 02:11:22,871
+Her ikisi birden gelen bilgisi ölçülecek.
+
+502
+02:11:26,752 --> 02:11:29,352
+bulunabileceği konu ekrana yazdırılacak.
+
+503
+02:17:45,299 --> 02:18:08,340
+Arkadaşlar, isterseniz mezun uygulaması ile ilgili kısmında konuşalım. Ondan sonra yavaş yavaş bir ders noktalayalım. Çünkü herhangi bir soru yok. Herkes açısından bir sıkıntı gözükmüyor. Ben sizinle diğer uygulamayı bir paylaşayım. Bir arkadaşınızın gönderdiği bir uygulama vardı. Söylemiştim daha önce.
+
+504
+02:18:09,139 --> 02:18:13,219
+Onu çalıştırayım, ekranını sizinle paylaşayım.
+
+505
+02:18:25,075 --> 02:18:52,455
+Evet, şu anda sanırım ekranı görebiliyorsunuz. Arkadaşınızın gönderdiği Constraint layout kullandığı için ekranda bazı butonların yerinde kayma olduğu hatta çalışmıyordu. Ben bir iki müdahalede bulunmak durumunda kaldım. O yüzden bazı butonlar tam olmaları gereken yerde değil. Örneğin kayıt olma tonu olması gereken yerde değil. Şu an burada işte ABC'ye girelim.
+
+506
+02:18:54,451 --> 02:18:58,851
+Giriş yap diyelim. Giriş bilgileri hatalı olarak mesaj üretti. Beklediğimiz bir şeydi zaten.
+
+507
+02:19:01,091 --> 02:19:05,971
+Şifrenin gözükmemesi iyi olabilir. Yorum olarak öyle bir şey söyleyeyim.
+
+508
+02:19:07,331 --> 02:19:12,511
+Hint olması kullanıcı adı ve P30 parola yazıyor olması güzel bir şey.
+
+509
+02:19:12,871 --> 02:19:16,771
+Ekran tasarımı sade, uygun. İkonlar var. Güzel.
+
+510
+02:19:17,396 --> 02:19:26,396
+Hesabınız Yok Mu? Yazısının muhtemelen altındaydı. Kayıt olgu tonu. O da iyi düşünülmüş. Kayıt olgu kısmına geçtiğim zaman...
+
+511
+02:19:26,932 --> 02:19:33,112
+Burada kaydet ve geri dön butonları üst üste binmiş durumda söylediğim versiyonun uyumsuzluğundan dolayı.
+
+512
+02:19:33,212 --> 02:19:39,272
+Geri dön dediğinizde tekrar ana sayfaya gidiyor. Kayıt ol dediğinizde tekrar kayıt ol ekranına geliyor.
+
+513
+02:19:40,172 --> 02:19:47,212
+Kısaca buraya ad soyat giriş tarihi ve mezuniyet tarihi bilgisi arkadaşınız yerleştirmiş ama bunların detayını daha önce konuşmuştuk.
+
+514
+02:19:47,731 --> 02:19:51,711
+O bilgiler de resim gibi burada olmasını beklediğimiz bilgiler.
+
+515
+02:19:52,432 --> 02:19:53,491
+İşte Ali diyelim.
+
+516
+02:19:53,951 --> 02:19:54,611
+Ali diyelim.
+
+517
+02:19:56,231 --> 02:19:58,191
+Giriş tarihi 2000 olsun.
+
+518
+02:20:00,031 --> 02:20:01,171
+2004 olsun.
+
+519
+02:20:02,932 --> 02:20:04,451
+Kullanıcı adınızı oluşturun.
+
+520
+02:20:07,511 --> 02:20:10,951
+Ali.
+
+521
+02:20:12,308 --> 02:20:27,028
+Dedikten sonra kaydata basıyorum. Kayıt başarılı diyor. Tabii burada hiçbir şey yazılmamışken kaydata bastığımda yine kayıt başarılı diyor. Böyle dememesi gerekiyor. Buna dikkat etmekte fayda var. Geri döndüğümde Ali yazarak girmeye çalışalım.
+
+522
+02:20:40,724 --> 02:20:43,103
+Yine gireyim, belki biraz önce yanlış yazmıştım.
+
+523
+02:20:47,103 --> 02:20:54,415
+Evet, şu an muhtemelen sıfırdan ürettiğimiz için uygulamayı bu yüzden...
+
+524
+02:20:54,415 --> 02:21:13,395
+Hata verdi. Biraz önce ben çalıştırdığımda hata vermemişti. Uygulamayı sıfırdan çalıştırınca Share Preferences'taki bilgiler de silindi. Aslında bunu da gördüğümüz iyi oldu. Uygulamayı tekrar değerlediğinizde Share Preferences'taki bilgileri de kaybediyorsunuz. Arkadaşınız Share Preferences'ta saklamıştı bu bilgileri.
+
+525
+02:21:13,395 --> 02:21:19,135
+Tekrar kayıt olduğu kısmına gireyim. Amaç diyeyim. Amaç diyeyim.
+
+526
+02:21:21,332 --> 02:21:25,592
+2000, 2004 diyelim.
+
+527
+02:21:27,572 --> 02:21:28,551
+Amaç diyelim.
+
+528
+02:21:30,172 --> 02:21:31,471
+Tekrar amaç diyelim.
+
+529
+02:21:33,011 --> 02:21:33,811
+Kaydet diyelim.
+
+530
+02:21:34,891 --> 02:21:37,612
+Kayıt başarılı. Tekrar amaç amaçla girmeye çalışalım.
+
+531
+02:21:44,147 --> 02:21:55,628
+Evet, şu anda içeri giriş yaptık. Herhangi sorunsuz bir şekilde gerçekleşti. Burada da arkadaşınız statik olarak haberler koymuş ve bu haberlere yani duyular koymuş. Bu duygulara uygun da resimler koymuş.
+
+532
+02:21:56,347 --> 02:22:04,647
+Uygulaması bu adımlardan ibaret. Şimdi bunun bir koduna bakacak olursak kendisi bunu Kotlin'de yazmış. Burayı durduruyorum.
+
+533
+02:22:07,147 --> 02:22:08,687
+Share Screen diyorum.
+
+534
+02:22:10,420 --> 02:22:12,380
+Android Studio tarafını açıyorum.
+
+535
+02:22:13,399 --> 02:22:15,360
+Burada bir main aktivitesi var.
+
+536
+02:22:16,099 --> 02:22:20,680
+Bu main aktivitesini şöyle yapalım.
+
+537
+02:22:23,123 --> 02:22:35,063
+Burada tabii Kotlin olarak yazılmış kodu görüyorsunuz. Daha sade bir kod. Noktalı virgülerden arındırılmış ve daha kısa ifadelerle yazılabiliyor. Benzer bir yapıya sahip.
+
+538
+02:22:35,063 --> 02:22:50,063
+İşte öncelikle SuperOnCreate ile hemen gerekli saved instance'ı alıyorsunuz. Onun arkasından setContentView diyorsunuz. Share of Preferences'tan kullanıcı bilgilerini alıyorsunuz.
+
+539
+02:22:50,995 --> 02:23:05,395
+Kullanıcı adı ve kullanıcı paralarını alıyorsunuz. Bunları string'e dönüştürüyorsunuz. Arkasından kontrol yapıyorsunuz. Kontrol başarılıysa haberler sınıfına yönlendiriyorsunuz. Kontrol başarılıysa de giriş bilgileri hata alıyorsunuz.
+
+540
+02:23:06,451 --> 02:23:32,711
+Burada bir kontrol yapılmış. Herhangi bir bilginin girilmesine istinaden bilgileri girmediniz diye bastığınızda bu hatayla karşılaşıyorsunuz. Bir tane de buton var. Giriş yap butonu. Bu giriş yap butonu, özür dilerim o şurada yukarıda. Onun set on click'li sınırda bütün bu olanlar gerçekleşiyor. Bir de kayıt ol butonu var. Kayıt ol butonunda da kayıt ol kılısına yönlendiriyorsunuz kullanıcıyı.
+
+541
+02:23:32,711 --> 02:23:34,451
+Şimdi kayıt ol'a hemen geçelim.
+
+542
+02:23:34,451 --> 02:23:44,891
+Kotlin koduna, Kayıtol, Kotlin koduna girdiğinizde, Kaydete bastığınızda, ilgili Edit Textler bölümündeki bilgileri alıp ToString'e çeviriyor.
+
+543
+02:23:45,471 --> 02:23:55,072
+Daha sonra da bu bilgileri yaratmış olduğu Shared Preferences'da ilgili kullanıcının editörüne bu bilgileri ekleyerek kaydediyor.
+
+544
+02:23:55,072 --> 02:23:59,711
+Ve sonra ekrandaki bilgileri temizliyor.
+
+545
+02:24:01,203 --> 02:24:07,144
+Aslında teknik olarak ilgili yapması gereken şeyleri yapıyor.
+
+546
+02:24:08,603 --> 02:24:13,144
+Giriş yaptığınızda haberler ekranına geliyorsunuz demiştik.
+
+547
+02:24:13,144 --> 02:24:24,144
+Bu noktada o ekrana geçmeden önce haberler isimli aslında RecyclerView'un bağlanacağı ve ilgili...
+
+548
+02:24:24,979 --> 02:24:29,479
+Resimlerin olduğu ve tanımlandığı, ereğe yerleştirildiği kısma geliyoruz.
+
+549
+02:24:29,579 --> 02:24:31,099
+Resimler draw black olmuş.
+
+550
+02:24:31,340 --> 02:24:35,659
+Projekten bakacak olursanız, burada işte bir resmi görüyorsunuz.
+
+551
+02:24:37,439 --> 02:24:40,659
+Bütün resimler buraya sırayla eklenmiş.
+
+552
+02:24:40,979 --> 02:24:44,579
+Aynı şekilde buraya duyurular eklenmiş.
+
+553
+02:24:46,131 --> 02:25:07,131
+Daha sonra RecyclerView ile eşleştiriliyor. Layout Manager tanımlanıyor. Set as Fixed Size True olarak seçiliyor. Arkasından ArrayList tanımlanıyor ve ilgili User Dataları çağrılıyor ve ArrayList'te User Data metodu içerisinde ArrayList'te
+
+554
+02:25:07,379 --> 02:25:25,159
+İlgili resimler ve duyuru başlıkları ekleniyor. En sonunda da MyAdapter isimli, ne diyelim, adaptörünüzde, burada yazılmış olan adaptörünüzde, Array listinizi bind ediyorsunuz ve bağlıyorsunuz.
+
+555
+02:25:25,747 --> 02:25:36,227
+Gelelim MyAdapter kısmına. MyAdapter kısmı da oldukça Kotlin ile yazdığınız zaman gördüğünüz gibi kısa bir şekilde ifade edilebiliyor.
+
+556
+02:25:36,227 --> 02:25:52,887
+OnCreateViewHolder var. Bir tane layout inflator ile inflate ediyor. Neyden? ListItem var. O listItem'ı da gösterelim. Layout'un altında. Her bir item için tasarladığı sağ tarafta görüyorsunuz. Bir resim var, bir yazı var ve altında da bir tane.
+
+557
+02:25:53,311 --> 02:25:58,332
+eklenmiş olan view var. Boş bir view.
+
+558
+02:26:00,191 --> 02:26:02,492
+Üç komponentten oluşuyor.
+
+559
+02:26:03,292 --> 02:26:08,912
+Buradaki image view, shapeable image view, bu sayede resmin odak noktasını gösteriyor size.
+
+560
+02:26:09,711 --> 02:26:11,512
+Bu üç tane komponenti kullanmış.
+
+561
+02:26:12,468 --> 02:26:18,988
+Her bir item için bu yapıdan inflate edilecek. GetItemCount'ı hatırlarsınız. Item sayısını döndürüyor.
+
+562
+02:26:18,988 --> 02:26:32,888
+OnBindViewHolder ilgili itemlerinizin pozisyonuna bağlı olarak yaratmış olduğunuz viewholder'ların içerisindeki com ne denir?
+
+563
+02:26:38,976 --> 02:26:42,296
+İçerisini resimle ve tekstle dolduruyor.
+
+564
+02:26:44,116 --> 02:26:51,456
+Buradaki eşleşmeyi sağlıyor. Her bir item'a uygun olan duyuruyu ve resmi eşleştiriyor.
+
+565
+02:26:52,675 --> 02:27:04,855
+En sonunda da burada görmüş olduğunuz MyViewHolder ile ilgili diğer tarafta item içerisinde, list item içerisinde yer alan
+
+566
+02:27:05,876 --> 02:27:14,096
+Biraz önce göstermiş olduğumuz XML dosyasındaki ilgili değişkenlerle ilişkinin kurulmasını sağlıyor.
+
+567
+02:27:16,096 --> 02:27:21,796
+Sizden mezun app ile ilgili beklediğim şeyler kabaca şunlar.
+
+568
+02:27:22,992 --> 02:27:37,812
+Hatırlatmış olayım. Birincisi biraz önceki bir blog'in ekranı ve kayıt ol ekranı. Kayıt ol ekrandan resim çekerek ya da galeriden ilgili kişinin resminin alınabilmesi. Bu bilgilerin Firebase'le saklanması.
+
+569
+02:27:39,051 --> 02:27:50,391
+Duyuruların ilgili kullanıcı tarafından, herhangi bir kullanıcı tarafından ortak bir alana girilmesi. Bir kullanıcının duyuru girebilmesi ya da girilmiş mevcut duyuruları görebilmesi.
+
+570
+02:27:50,992 --> 02:28:08,692
+Kullanıcının sisteme medya ekleyebiliyor olması ve bu ortak medyaların herkes tarafından eklenen resimlerin ortak bir alanda kişiler girdiklerinde bir havuzda görünebiliyor olması.
+
+571
+02:28:08,692 --> 02:28:16,871
+Son olarak da bir üye kayıdı oluyorsunuz, mezunlar giriliyor. Hangi mezunlar var?
+
+572
+02:28:17,556 --> 02:28:27,835
+Sistemde o mezunların bilgilerini bir liste halinde görebilmek, mezuna tıklandığında mezunun detay bilgilerini görebilmek, işte bahsetmiştik daha önce.
+
+573
+02:28:29,523 --> 02:28:41,663
+Demiştik ki sosyal medyada bir account varsa onunla ilgili bir bilgi ya da e-postası ya da işte ne demiştik bir WhatsApp bilgisi.
+
+574
+02:28:41,804 --> 02:28:50,423
+Bunları paylaşmışsa mezun bunların ilgili kullanıcı tıkladığında kişi tarafından görünebilmesi.
+
+575
+02:28:50,423 --> 02:28:52,583
+Genel olarak sizden beklentim bu.
+
+576
+02:28:53,056 --> 02:29:09,056
+Ekstra olarak şöyle bir şey yapılırsa güzel olur. Filtreleme yöntemiyle işte belirli bir yıldaki mezunların sadece listeye getirilmesi yapılabilirse yine bonus olarak katkı sağlanabilecek bir...
+
+577
+02:29:11,316 --> 02:29:26,376
+Aslında görev olacak. Onu da tavsiye ederim. Ama bunu bonus olarak kabul edebilirsiniz. Filtreleme özelliğini. Ödevin süresi 7-8 Mayıs'a kadar, şu an hatırlamıyorum tam tarihi, olacak.
+
+578
+02:29:28,096 --> 02:29:34,656
+Dökümanı bu hafta içerisinde sizlerle paylaşıyor olacağım. Sorusu olan var mıdır?
+
+579
+02:29:43,123 --> 02:30:00,000
+Evet, bakalım. En aşağıda. Lojik bu şekilde mi olmalı? Evet, bu şekilde olabilir. Ama bunu ekranda göstermek, yani logda göstermek...
+
+580
+02:30:00,000 --> 02:30:17,540
+Gösterdiğiniz gibi, sensörle ilgili bir soru gelmiş arkadaşınızdan, ekranda gösterdiğiniz gibi, pardon, logda gösterdiğiniz gibi ekranda da gösterebiliyor olmanız gerekiyor. Bir TextView üzerinden bunu gösterirseniz daha güzel olur. Hatta bunu renklendirirseniz ya da ikonla gösterirseniz çok daha güzel olur.
+
+581
+02:30:21,020 --> 02:30:22,399
+Teşekkürler hocam bugün için.
+
+582
+02:30:23,700 --> 02:30:26,700
+Ben teşekkür ederim. Hepinize güzel bir hafta diliyorum.
+
+583
+02:30:27,476 --> 02:30:29,536
+Haftaya görüşmek üzere, hoşçakalın arkadaşlar.
+
+584
+02:30:33,108 --> 02:30:48,648
+Evet [öğrenci], mezunlar listeleneceklerken sisteme kayıtta olan mezunların listesini diğer mezunlar da görebilsin istiyoruz. Başka bir ekran üzerinde görebilmeyi. Haberler ekranı ayrı olmalı, duygular ekranı. Mezunların listesi başka bir ekran olmalı.
+
+585
+02:30:56,564 --> 02:31:05,443
+Buna ek olarak filtreyle istediğimiz yıl aslında bunu kullanıcı bir ekrandan istediği filtreyi seçebilmeli.
+
+586
+02:31:05,544 --> 02:31:15,783
+Ben bunu yıl olarak söylemiştim ama mezunun ülkesini ve mezunun şehrini tuttuğunuzda o ülkedeki ya da o şehirdeki mezunları görmek isteyebilir.
+
+587
+02:31:16,304 --> 02:31:23,184
+Filtre ekranını böyle düşünebilirsiniz. Otomatik olarak değil de seçeceğiniz filtreleri kullanarak yapabilirsiniz o ekranı.
+
+588
+02:31:26,932 --> 02:31:32,211
+Peki ben teşekkür ediyorum. Hepinize güzel bir hafta diliyorum. Görüşmek üzere, hoşçakalın.

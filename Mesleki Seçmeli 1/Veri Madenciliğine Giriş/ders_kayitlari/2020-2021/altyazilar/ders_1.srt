@@ -1,0 +1,4463 @@
+1
+00:13:04,529 --> 00:13:05,889
+Evet, merhaba arkadaşlar.
+
+2
+00:13:09,350 --> 00:13:13,210
+İlk beş dakika geçti. Şu an 50 kişi var derste bağlanan.
+
+3
+00:13:27,029 --> 00:13:30,169
+Chat ekranımı şöyle açayım, kenara koyayım.
+
+4
+00:13:32,690 --> 00:13:42,389
+Öncelikle bu dönem biliyorsunuz bahar dönemi ilk dersimizi yapıyoruz ve yine online bir dönem geçireceğiz.
+
+5
+00:13:43,070 --> 00:13:50,990
+Bu online ders döneminde uzaktan ders yaparken tabii benim için de sizin için de kolay değil biliyorum.
+
+6
+00:13:50,990 --> 00:14:00,230
+Böyle siyah bir ekranın karşısında öğrencilerin yüzünü görmeden ders anlatmak sevimsiz geliyor bana.
+
+7
+00:14:00,389 --> 00:14:03,990
+O yüzden chatte de yazdım, tekrar belirteceğim.
+
+8
+00:14:04,649 --> 00:14:06,950
+Profil fotoğrafı eklemenizi istiyorum.
+
+9
+00:14:08,269 --> 00:14:17,210
+Avatar vesaire değil, fotoğraf, kendi fotoğrafınızı koyarsanız en azından isimlerle yüzleri biraz eşleştirebilirim diye düşünüyorum.
+
+10
+00:14:17,210 --> 00:14:20,710
+Aklımda kaldığı kadarıyla sizi tanımaya çalışıyorum.
+
+11
+00:14:20,990 --> 00:14:32,490
+Kalabalık bir sınıf, şu an 85 kişi var derse kayıt olan ve biliyorsunuz bu veri madenciliği dersi dönem dışı açtık.
+
+12
+00:14:32,490 --> 00:14:44,490
+Normalde ben 100 döneminde açıyordum bu dersi fakat seçimlik derslerde eksik olduğu, biraz daha sayı arttırmak gerektiği söylendi.
+
+13
+00:14:44,490 --> 00:14:50,490
+O yüzden ben bahar döneminde de tekrar dersi açmaya karar verdim.
+
+14
+00:14:50,490 --> 00:14:53,990
+Sizin için de umarım faydalı olur bu ders.
+
+15
+00:14:56,590 --> 00:15:02,759
+Bu derste neler yapacağız biraz onlardan bahsedeceğim.
+
+16
+00:15:03,779 --> 00:15:14,840
+Dersin işleyişi, haftalık programı ve ders değerlendirme kriterleri bunları konuşacağız.
+
+17
+00:15:14,840 --> 00:15:24,379
+Bana yazmak istediklerinizi chatten yazabilirsiniz.
+
+18
+00:15:24,539 --> 00:15:26,899
+Chat ekranım açık, oradan takip ediyorum.
+
+19
+00:15:33,200 --> 00:15:34,259
+Evet, bahar döneminde.
+
+20
+00:15:34,279 --> 00:15:38,279
+Bu dersi nasıl işleyeceğiz biraz onu konuşalım.
+
+21
+00:15:38,279 --> 00:15:43,360
+Ders duvarına ekledim, görmüşsünüzdür.
+
+22
+00:15:43,360 --> 00:15:49,360
+Bahar dönemi veri madenciliği dersinin haftalık programı.
+
+23
+00:15:51,360 --> 00:15:54,360
+14 hafta biliyorsunuz eğitim dönemi.
+
+24
+00:15:54,360 --> 00:16:00,360
+Bu dönem içerisinde maalesef ve cumaya gelen iki tane tatilimiz var.
+
+25
+00:16:00,360 --> 00:16:05,360
+23 Nisan tatili ve bir de Ramazan bayramı tatili.
+
+26
+00:16:05,360 --> 00:16:06,360
+23 Nisan tatili ve bir de Ramazan bayramı tatili.
+
+27
+00:16:06,360 --> 00:16:11,360
+Bir haftada üniversite sınav haftası ilan ettiği için ders yapmıyoruz.
+
+28
+00:16:11,360 --> 00:16:13,360
+O hafta sınav yapacağız.
+
+29
+00:16:13,360 --> 00:16:16,360
+Yani üç haftamız o yüzden gidiyor.
+
+30
+00:16:16,360 --> 00:16:19,360
+Biraz yoğun ders yapmam gerekecek.
+
+31
+00:16:19,360 --> 00:16:23,360
+Her hafta dolu dolu yapacağız dersleri.
+
+32
+00:16:23,360 --> 00:16:28,360
+Örnekleriyle üç saati kullanacağız.
+
+33
+00:16:29,360 --> 00:16:36,570
+Dersin içeriğinde bu hafta veri madenciliğine giriş.
+
+34
+00:16:36,570 --> 00:16:41,570
+Veri madenciliğinin bir tanımı.
+
+35
+00:16:41,570 --> 00:16:47,570
+Veri madenciliğinin nerelerde kullanıldığı, uygulama alanlarının neler olduğundan bahsedeceğim.
+
+36
+00:16:47,570 --> 00:16:53,570
+Ve veri madenciliğindeki stratejileri anlatacağım.
+
+37
+00:16:53,570 --> 00:16:56,570
+Çok temel kavramlar var bilmemiz gereken.
+
+38
+00:16:56,570 --> 00:16:59,570
+Onları vurgulamaya çalışacağım.
+
+39
+00:16:59,570 --> 00:17:02,570
+Örneklerle size anlatacağım bunu.
+
+40
+00:17:02,570 --> 00:17:05,569
+İkinci hafta veri hazırlama teknikleri var.
+
+41
+00:17:06,569 --> 00:17:19,569
+Veri madenciliğinde sınıflama ya da kümeleme algoritmalarını uygulamadan önce veriyi analiz etmemiz ve düzenlememiz gerekiyor.
+
+42
+00:17:19,569 --> 00:17:29,569
+Bu veri hazırlama tekniklerinde gürültülerin, veri içerisinde gürültü diye isimlendirdiğimiz değerlerin bulunması, temizlenmesi,
+
+43
+00:17:29,569 --> 00:17:35,569
+aykırı değerlerin, uç değerlerin bulunması ve temizlenmesi
+
+44
+00:17:35,569 --> 00:17:45,569
+ya da missing value dediğimiz eksik verilerin tamamlanması gibi bir dizi işlem var yapmamız gereken.
+
+45
+00:17:45,569 --> 00:17:49,569
+Bunların arasında bir de data normalization dediğimiz bir işlem var.
+
+46
+00:17:49,569 --> 00:17:56,569
+Veri normalizasyonu sayısal veri üzerinde kullanılıyor.
+
+47
+00:17:56,569 --> 00:18:02,569
+Ve belli bir aralığa normalize etmemiz gerekiyor bu nümerik değerleri.
+
+48
+00:18:02,569 --> 00:18:04,569
+Bu normalizasyon işlemi de kullanılıyor.
+
+49
+00:18:04,569 --> 00:18:07,569
+Normalizasyon işleminde kullanılacak tekniklerden bahsedeceğim.
+
+50
+00:18:07,569 --> 00:18:20,569
+Daha sonra veri ön işlemleri tamamlandıktan sonra burada üçüncü hafta ve dördüncü haftada gördüğümüz data reduction yani veri indirgeme konusu var.
+
+51
+00:18:20,569 --> 00:18:30,569
+Veriyi indirgemek demek işte öz nitelik sayısını azaltmak anlamına geliyor daha çok.
+
+52
+00:18:30,569 --> 00:18:32,569
+Öz nitelik sayısında azaltma işlemi var.
+
+53
+00:18:32,569 --> 00:18:40,569
+Azaltma işlemini feature selection ve feature transformation dediğimiz iki şekilde yapabiliyoruz.
+
+54
+00:18:40,569 --> 00:18:45,569
+Bunları üçüncü ve dördüncü hafta göreceksiniz.
+
+55
+00:18:45,569 --> 00:18:50,569
+Beşinci hafta artık veri ön işleme konusu tamamlanmış oluyor.
+
+56
+00:18:50,569 --> 00:18:59,569
+Ve sınıflama yöntemlerinden ilkini karar ağaçlarıyla sınıflandırma nasıl çalışır, matematiği nedir?
+
+57
+00:18:59,569 --> 00:19:01,569
+Kağıt üzerinde önce öğreneceğiz.
+
+58
+00:19:02,569 --> 00:19:06,569
+Daha sonra tabi bunların nasıl uygulandığını göreceğiz.
+
+59
+00:19:06,569 --> 00:19:13,569
+İkinci öğreneceğimiz sınıflama algoritması naive bias classification olacak.
+
+60
+00:19:13,569 --> 00:19:16,569
+Naive bias classification istatistiksel bir yöntem.
+
+61
+00:19:16,569 --> 00:19:29,329
+Bias teoremine dayanıyor ve buna göre her bir class'ın olma olasılığını hesaplıyor.
+
+62
+00:19:29,329 --> 00:19:31,329
+Bu da güzel bir yöntem.
+
+63
+00:19:31,329 --> 00:19:33,329
+Temel yöntemlerden hani base class'ın olma olasılığını hesaplıyor.
+
+64
+00:19:33,329 --> 00:19:39,329
+Yani hani base classifier dediğimiz temel sınıflayıcılardan biridir bu da.
+
+65
+00:19:39,329 --> 00:19:44,329
+İki tane sınıflama yöntemini öğrendikten sonra bir yılıçı sınavımız gelecek.
+
+66
+00:19:44,329 --> 00:19:51,329
+Ondan sonraki hafta öğrendiğimiz sınıflayıcıları nasıl değerlendirebiliriz?
+
+67
+00:19:51,329 --> 00:19:55,329
+Yani başarılarını, performansını nasıl ölçebiliriz?
+
+68
+00:19:55,329 --> 00:19:58,329
+Burada kullanılan metrikler nelerdir?
+
+69
+00:19:58,329 --> 00:20:00,329
+Bunları konuşacağız.
+
+70
+00:20:00,329 --> 00:20:02,329
+Ve böylece sınıflandırma yöntemlerine tanışacağız.
+
+71
+00:20:03,329 --> 00:20:06,329
+Bunları tamamlayıp kümeleme yöntemlerine geçeceğiz.
+
+72
+00:20:06,329 --> 00:20:12,329
+İki haftada kümeleme yöntemleriyle ilgili yani clustering algoritmalarından bahsedeceğim.
+
+73
+00:20:12,329 --> 00:20:16,329
+Bu ders kapsamında iki tane kümeleme yöntemi göreceğiz.
+
+74
+00:20:16,329 --> 00:20:22,329
+K-means clustering ve hierarşik clustering yöntemleri.
+
+75
+00:20:22,329 --> 00:20:32,329
+Bunun dışında market sepeti analizi için kullandığımız birliktelik kuralları, association rules ve öneri sistemleri.
+
+76
+00:20:32,329 --> 00:20:37,329
+Yani recommendation systems dediğimiz bir konu başlığımız var.
+
+77
+00:20:37,329 --> 00:20:49,329
+Bu konularda yine e-ticaret siteleri üzerinde satış stratejileri açısından kullanılan teknikleri içeriyor.
+
+78
+00:20:49,329 --> 00:20:51,329
+Oldukça popüler konular.
+
+79
+00:20:51,329 --> 00:21:01,329
+Dersin değerlendirme sürecine bakarsak zaten haftalık programda da görüyorsunuz bir tane ara sınavımız var.
+
+80
+00:21:01,329 --> 00:21:04,329
+Bunun dışında bir tane de küçük bir kısa sınav yapacağım.
+
+81
+00:21:04,329 --> 00:21:08,329
+Haberli olacak hangi hafta yapacağımı size bildireceğim.
+
+82
+00:21:08,329 --> 00:21:12,329
+Bu haftalık programda görünmüyor ama bir dersin sonunda olabilir mesela.
+
+83
+00:21:12,329 --> 00:21:14,329
+Bunu haberleşip yapacağız.
+
+84
+00:21:14,329 --> 00:21:17,329
+Bu ders kapsamında bir proje yapacak her öğrenci.
+
+85
+00:21:17,329 --> 00:21:25,329
+Ve öğrencilerin proje konuları yani kullandıkları data setler birbirinden farklı olacak.
+
+86
+00:21:25,329 --> 00:21:29,329
+Her öğrenciye ayrı bir data set vereceğim.
+
+87
+00:21:29,329 --> 00:21:30,329
+Ve bunlar üzerinden,
+
+88
+00:21:30,329 --> 00:21:34,329
+çalışmanızı isteyeceğim.
+
+89
+00:21:34,329 --> 00:21:40,329
+Bu data setleri bir UCI repository data set sayfası var.
+
+90
+00:21:40,329 --> 00:21:44,329
+Oradan size atacağım.
+
+91
+00:21:44,329 --> 00:21:50,329
+Random olarak seçip sizlere bu projeleri atamayı düşünüyorum.
+
+92
+00:21:50,329 --> 00:21:54,329
+Şöyle göstereyim.
+
+93
+00:21:54,329 --> 00:21:59,900
+Bu gördüğünüz sayfada UCI machine learning repository sayfası var.
+
+94
+00:21:59,900 --> 00:22:03,900
+Ve data setler var.
+
+95
+00:22:03,900 --> 00:22:06,900
+585 tane data set varmış.
+
+96
+00:22:06,900 --> 00:22:10,900
+Bu data setlerin hangi amaç için kullanıldığı sol tarafta verilmiş.
+
+97
+00:22:10,900 --> 00:22:12,900
+Default task diye.
+
+98
+00:22:12,900 --> 00:22:17,900
+Bunlardan 442 tanesi classification için uygundur diyor.
+
+99
+00:22:17,900 --> 00:22:21,900
+134 tanesi regression için uygundur diyor.
+
+100
+00:22:21,900 --> 00:22:25,900
+Clustering için uygun olanlar 117 taneymiş.
+
+101
+00:22:25,900 --> 00:22:28,900
+Classification için olanlara bakacak olursak.
+
+102
+00:22:28,900 --> 00:22:35,900
+İşte burada 442 tane data set classification için uygun diyor.
+
+103
+00:22:35,900 --> 00:22:51,900
+Bunların her birine girdiğiniz zaman data setle ilgili açıklamaları ve data folderin altında da mevcut data seti burada zipli olarak verilmiş indirip kullanabiliyorsunuz.
+
+104
+00:22:51,900 --> 00:22:55,900
+Bu sistemden.
+
+105
+00:22:55,900 --> 00:22:59,900
+Derste 85 öğrenci var.
+
+106
+00:22:59,900 --> 00:23:05,900
+Benim seçtiğim yaklaşık 90 tane proje başlığı var.
+
+107
+00:23:05,900 --> 00:23:18,900
+Hani çok sizi yoracak büyüklükte data setleri dışarıda bırakarak ortalama boyutta bir data seti sizlere proje konusu olarak vereceğim.
+
+108
+00:23:18,900 --> 00:23:24,900
+Ve kendi yazdığınız python kodu ile bu data set üzerinde.
+
+109
+00:23:24,900 --> 00:23:31,900
+Derste öğrendiğimiz sınıflama ve kümeleme algoritmalarını uygulamanızı isteyeceğim.
+
+110
+00:23:31,900 --> 00:23:34,900
+Projenin kapsamı genel olarak böyle.
+
+111
+00:23:34,900 --> 00:23:43,900
+Kendi yazdığınız python kodu ile elde edeceğiniz sonuçları belki bir de VK ile karşılaştırmanızı isteyebilirim.
+
+112
+00:23:43,900 --> 00:23:46,900
+Yani projenin iki ayağı olabilir.
+
+113
+00:23:46,900 --> 00:23:55,940
+Şöyle dersi haftalık programına tekrar dönüp bakacak olursak.
+
+114
+00:23:55,940 --> 00:23:58,940
+Bu projenin ağırlığı yüzde 20 olacak.
+
+115
+00:23:58,940 --> 00:24:01,940
+Yıl sonu notuna etkisi.
+
+116
+00:24:01,940 --> 00:24:04,940
+Ve bir de final sınavımız var.
+
+117
+00:24:04,940 --> 00:24:18,220
+Ders kitabı olarak ilk sırada Data Mining Concept Models Methods and Algorithms [öğrenci]'in kitabı.
+
+118
+00:24:18,220 --> 00:24:26,220
+Bu Azeri bir hoca ve eski bir kitap olmasına rağmen çok güzel örnekleri ile konuyu çok güzel anlatmış.
+
+119
+00:24:26,220 --> 00:24:29,220
+Benim ana kaynaklarımdan biridir bu.
+
+120
+00:24:29,220 --> 00:24:31,220
+İngilizce bir kitap.
+
+121
+00:24:31,220 --> 00:24:33,220
+İnternette bulabilirsiniz diye düşünüyorum.
+
+122
+00:24:33,220 --> 00:24:39,220
+İkinci sırada J. Vahan'ın bir kitabı var.
+
+123
+00:24:39,220 --> 00:24:43,220
+Bu da oldukça meşhur bir kitap aslına bakarsanız.
+
+124
+00:24:43,220 --> 00:24:50,220
+Ama daha çok işletmeci yani business site için yazılmış bir kitap gibi görünüyor.
+
+125
+00:24:50,220 --> 00:24:55,220
+O yüzden bunu belki bir yüzde 30 bu karşılığında.
+
+126
+00:24:55,220 --> 00:25:01,220
+Bu kaynağı kullanıyorsam ağırlıklı olarak birinci sırada verdiğimi kullanacağım.
+
+127
+00:25:01,220 --> 00:25:05,220
+Bir de daha basit bir kitap var üçüncü sırada.
+
+128
+00:25:05,220 --> 00:25:08,220
+Onu indirmeniz gerekmez bence.
+
+129
+00:25:08,220 --> 00:25:12,220
+Ama birinci ve ikinci sıradakiler oldukça iyi.
+
+130
+00:25:12,220 --> 00:25:18,220
+Ve burada sonda verdiğim Introduction to Data Mining Tan ve Steinbach diyor.
+
+131
+00:25:18,220 --> 00:25:20,220
+Bu da güzel bir kitap.
+
+132
+00:25:20,220 --> 00:25:21,220
+Aslında tavsiye ederim.
+
+133
+00:25:21,220 --> 00:25:23,220
+Yaygında bulabileceğiniz bir kaynak.
+
+134
+00:25:23,220 --> 00:25:24,220
+Son dördüncü sırada verdiğim.
+
+135
+00:25:24,220 --> 00:25:33,220
+Evet, temel konu başlıklarını ve derste değerlendirme kriterlerini konuştuk.
+
+136
+00:25:33,220 --> 00:25:50,980
+Şimdi dersle ilgili, konu başlıklarıyla ilgili fikriniz, sorunuz var mıdır acaba?
+
+137
+00:25:50,980 --> 00:25:52,980
+Biraz sohbet de edebiliriz.
+
+138
+00:25:52,980 --> 00:25:59,220
+Bu derste ne öğrenmeyi bekliyordunuz?
+
+139
+00:25:59,220 --> 00:26:01,220
+Bir de öyle sorabilirim.
+
+140
+00:26:01,220 --> 00:26:05,220
+Evet, ben size ders konu başlıklarını verdim.
+
+141
+00:26:05,220 --> 00:26:13,490
+Göreceğiz diyorsunuz.
+
+142
+00:26:13,490 --> 00:26:15,490
+Peki.
+
+143
+00:26:15,490 --> 00:26:16,490
+Şimdi.
+
+144
+00:26:16,490 --> 00:26:34,460
+Neyi paylaştım ben?
+
+145
+00:26:34,460 --> 00:26:36,460
+Yanlış bir şey paylaştım.
+
+146
+00:26:36,460 --> 00:26:40,250
+Tableti paylaşmam gerekiyor.
+
+147
+00:26:40,250 --> 00:26:42,250
+Şöyle yapacağız.
+
+148
+00:26:44,250 --> 00:26:45,250
+Evet.
+
+149
+00:26:45,250 --> 00:26:54,250
+İlk hafta konu başlığımız veri madenciliği kavramları ve buradaki teknikleri, stratejileri konuşacağız demiştik.
+
+150
+00:26:55,250 --> 00:27:00,559
+Önce veri madenciliğinin tanımı ile başlayacağız.
+
+151
+00:27:00,559 --> 00:27:03,559
+Ne tür veri kullanıyoruz?
+
+152
+00:27:03,559 --> 00:27:05,559
+Verinin yapısı nedir?
+
+153
+00:27:05,559 --> 00:27:07,559
+Bunu konuşacağız.
+
+154
+00:27:07,559 --> 00:27:16,420
+Burada sıklıkla kullanacağımız bir Interesting Pattern kavramı var.
+
+155
+00:27:16,420 --> 00:27:20,420
+Bu Interesting Pattern kavramını açıklayacağım.
+
+156
+00:27:20,420 --> 00:27:32,640
+Şurada Interesting Pattern dediğimiz kavramı konuşacağız.
+
+157
+00:27:32,640 --> 00:27:53,640
+Veri madenciliğinde kullandığımız Classification konusu, veri madenciliğinin temel görevleri ve veri tabanı sistemleri ile ilişkisini biraz konuşacağız.
+
+158
+00:27:53,640 --> 00:28:01,279
+Önce tanımla başlayalım isterseniz.
+
+159
+00:28:01,279 --> 00:28:04,279
+Neden veri madenciliği?
+
+160
+00:28:04,279 --> 00:28:06,279
+Buna neden ihtiyaç duyuluyor?
+
+161
+00:28:06,279 --> 00:28:16,880
+Pek çok alanda internetin de yaygınlaşmasıyla birlikte çok büyük miktarda veri toplanıyor.
+
+162
+00:28:16,880 --> 00:28:36,880
+Bu ziyaret ettiğiniz web sitelerinin loglarından tutun da işte devlet uygulamalarına ve coğrafi bilgi sistemleri, meteoroloji ölçümleri binlerce uygulama bu şekilde sayılabilir.
+
+163
+00:28:36,880 --> 00:28:42,880
+Ve tüm bu uygulamalar kendi içerisinde çok büyük miktarda bir veri üretiyor.
+
+164
+00:28:42,880 --> 00:28:45,880
+Bu verinin miktarı da her geçen gün artıyor.
+
+165
+00:28:45,880 --> 00:28:51,880
+Burada terabaytlardan, pitabaytlara kadar artan bir veri miktarından bahsediyoruz.
+
+166
+00:28:51,880 --> 00:28:56,880
+Ve bu veri depolanıyor.
+
+167
+00:28:56,880 --> 00:29:02,880
+Fakat eğer depolanan bu veriyi biz bir şekilde kullanmıyorsak hiçbir anlamı yok.
+
+168
+00:29:02,880 --> 00:29:04,880
+Yani kullanmadığımız veri,
+
+169
+00:29:04,880 --> 00:29:05,880
+Evet, bir,
+
+170
+00:29:05,880 --> 00:29:13,880
+Evet, bir veri olarak kaydedilir, bir kenarda tutulur ama bundan faydalı bir bilgi üretmek.
+
+171
+00:29:13,880 --> 00:29:24,880
+Knowledge discovery dediğimiz bilginin bu verinin içerisinden çıkartılması işlemini veri madenciliği sayesinde gerçekleştiriyoruz.
+
+172
+00:29:24,880 --> 00:29:28,880
+Major source of urban data diyor.
+
+173
+00:29:28,880 --> 00:29:32,880
+Burada bu verinin kaynağı ne olabilir?
+
+174
+00:29:32,880 --> 00:29:34,880
+Üç farklı kaynak saymış.
+
+175
+00:29:34,880 --> 00:29:36,880
+Bunların sayısı arttırılabilir.
+
+176
+00:29:36,880 --> 00:29:40,880
+Tabi ticari tarafta daha fazla veri kaynağı var.
+
+177
+00:29:40,880 --> 00:29:43,880
+E-ticaret sistemleri.
+
+178
+00:29:43,880 --> 00:29:52,880
+Tüm yaptığımız bankacılık uygulamaları, transactions dediğimiz bankacılık işlemleri.
+
+179
+00:29:52,880 --> 00:30:02,880
+Veya diğer tarafta borsa üzerinde yapılan tüm alım-satım işlemleri, fiyat değişimleri, hisse senetleri üzerindeki değişimler gibi,
+
+180
+00:30:02,880 --> 00:30:06,880
+konular sayılabilir.
+
+181
+00:30:06,880 --> 00:30:09,880
+Bunlar çeşitlendirilebilir.
+
+182
+00:30:09,880 --> 00:30:21,880
+Bilimsel tarafta baktığımızda ise scientific data tarafında verinin üretildiği kaynaklar remote sensing olabilir.
+
+183
+00:30:21,880 --> 00:30:29,880
+Yani uzaktan algılama ile bir veri toplanabilir.
+
+184
+00:30:29,880 --> 00:30:31,880
+Bioinformatik alanı.
+
+185
+00:30:31,880 --> 00:30:33,880
+Örnek gösterilebilir.
+
+186
+00:30:33,880 --> 00:30:41,880
+Ve bunlar yine çok çeşitli kaynaklardan gelebilir.
+
+187
+00:30:41,880 --> 00:30:50,880
+Society and everyone dediği hepimizin sosyal medya üzerinde yapmış olduğumuz hareketler.
+
+188
+00:30:50,880 --> 00:30:54,880
+Yani bir haber sitesi üzerinde okuduğumuz haberler olabilir.
+
+189
+00:30:54,880 --> 00:31:00,880
+Ya da işte instagram gibi platformlarda paylaştığımız fotoğraflar.
+
+190
+00:31:00,880 --> 00:31:14,880
+Bunlar üzerinde atılan like'lar gibi pek çok parametre ile bu veri üretilir ve bir kaynakta tutulur.
+
+191
+00:31:14,880 --> 00:31:20,880
+Sonuçta bizim amacımız bu veriden bir bilgi üretmek.
+
+192
+00:31:20,880 --> 00:31:22,880
+Burada önemli bir cümle.
+
+193
+00:31:22,880 --> 00:31:26,880
+We are drowning in data but starving for knowledge diyor.
+
+194
+00:31:26,880 --> 00:31:29,880
+Çok büyük bir veri yığını içerisinde boğuluyoruz.
+
+195
+00:31:29,880 --> 00:31:37,880
+Ama bunun içerisinden bir bilgi çıkarma konusunda da eksiğimiz var ve bunun açlığını çekiyoruz diyor.
+
+196
+00:31:37,880 --> 00:31:46,880
+Yani eğer bu veriyi işleyip biz bunun içerisinden knowledge dediğimiz bizim işimize yarayacak bilgiyi üretebilirsek.
+
+197
+00:31:46,880 --> 00:31:53,880
+Bundan faydalanabilirsek hem kurum daha fazla kar edebilir.
+
+198
+00:31:53,880 --> 00:31:57,880
+Bu elde ettiğimiz faydalı bilgiden.
+
+199
+00:31:57,880 --> 00:32:01,880
+Hem de bu veriyi anlamsız yere boş yere tutmamış oluruz.
+
+200
+00:32:01,880 --> 00:32:03,880
+Bir faydası olmuş olur.
+
+201
+00:32:03,880 --> 00:32:15,829
+Tabii tüm bu veri madenciliği uygulamaları veri tabanı sistemlerindeki gelişmelerle ilişkili.
+
+202
+00:32:15,829 --> 00:32:25,829
+İlk veri tabanı yönetim sistemlerinin 1980'lerde kullanılmasıyla birlikte veriyi anlamlı bir şekilde depolayabiliyoruz.
+
+203
+00:32:25,829 --> 00:32:30,829
+Ve structural bir formda, yapısal bir formda saklayabiliyoruz.
+
+204
+00:32:30,829 --> 00:32:32,829
+Bu veri madenciliği için çok faydalı.
+
+205
+00:32:33,829 --> 00:32:35,829
+Faydalı bir platform.
+
+206
+00:32:35,829 --> 00:32:39,829
+Burada veri madenciliği ile ilgili tanımları görüyoruz.
+
+207
+00:32:39,829 --> 00:32:41,829
+Çok farklı tanımlar yapılmış.
+
+208
+00:32:41,829 --> 00:32:44,829
+Farklı isimlerle isimlendirilmiş.
+
+209
+00:32:44,829 --> 00:32:50,829
+Burada birinci tanım data mining ile ilgili.
+
+210
+00:32:50,829 --> 00:32:56,829
+Extraction of interesting patterns or knowledge from huge amount of data diyor.
+
+211
+00:32:56,829 --> 00:33:02,829
+Verinin büyük miktarda veri içerisinden.
+
+212
+00:33:03,829 --> 00:33:06,829
+İlginç olan bir bilginin çıkartılması.
+
+213
+00:33:06,829 --> 00:33:11,829
+Yani sıradan herkesin aklına gelebilecek bir bilgi değil.
+
+214
+00:33:11,829 --> 00:33:18,829
+Gizli olan, veri içerisinde gizlenmiş olan bir bilginin çıkartılması anlamına geliyor data mining.
+
+215
+00:33:18,829 --> 00:33:21,829
+O yüzden veri madenciliği deniyor.
+
+216
+00:33:21,829 --> 00:33:25,829
+Bu madencilik kavramı oradan geliyor.
+
+217
+00:33:25,829 --> 00:33:32,829
+Ve bu veri madenciliğinin baktığımız zaman literatürde farklı isimlerle de,
+
+218
+00:33:32,829 --> 00:33:34,829
+anıldığını görebiliriz.
+
+219
+00:33:34,829 --> 00:33:40,829
+Mesela Knowledge Discovery in Database KDD diye bir tanım var.
+
+220
+00:33:40,829 --> 00:33:45,829
+Bu Knowledge Discovery in Database yani veri tabanında tutulan veri üzerinden
+
+221
+00:33:45,829 --> 00:33:50,829
+yine bilginin çıkartılması anlamına geliyor.
+
+222
+00:33:50,829 --> 00:33:56,829
+Bu tanımlar içerisinde ya da isimler içerisinde benim en çok ilgimi çeken
+
+223
+00:33:56,829 --> 00:33:58,829
+Data Archaeology.
+
+224
+00:33:58,829 --> 00:34:01,829
+Bunu çok eskiden bir 10 yıl önce kullanıldığı,
+
+225
+00:34:01,829 --> 00:34:03,829
+kullanıldığını hatırlıyorum.
+
+226
+00:34:03,829 --> 00:34:05,829
+Veya Information Harvesting.
+
+227
+00:34:05,829 --> 00:34:07,829
+Bu da çok anlamlı aslında.
+
+228
+00:34:07,829 --> 00:34:11,829
+Hani mining yerine harvesting kullanılmış.
+
+229
+00:34:11,829 --> 00:34:18,829
+Ve işletmeciler daha çok Business Intelligence, iş zekası şeklinde kullanıyorlar.
+
+230
+00:34:18,829 --> 00:34:21,829
+Tabi işletmeciler içerideki algoritmalardan çok,
+
+231
+00:34:21,829 --> 00:34:29,829
+hazır olan algoritmaları kullanarak kendi verileri üzerinden anlamlı bir bilgiye ulaşmaya çalışıyorlar.
+
+232
+00:34:29,829 --> 00:34:31,829
+Ama arkada çalışan matematiği,
+
+233
+00:34:31,829 --> 00:34:38,829
+ve algoritmayı biliyorsak eğer neyin nerede işe yarayacağını
+
+234
+00:34:38,829 --> 00:34:41,829
+önceden kestirebiliriz.
+
+235
+00:34:41,829 --> 00:34:44,829
+Ve bu bizi bir adım öne taşır.
+
+236
+00:34:44,829 --> 00:34:50,829
+O açıdan algoritmaları bilebilmek de bence önemli.
+
+237
+00:34:50,829 --> 00:34:53,829
+Özellikle bir bilgisayar mühendisi için.
+
+238
+00:34:53,829 --> 00:35:04,519
+Ve geldik potansiyel uygulama alanlarına.
+
+239
+00:35:04,519 --> 00:35:06,519
+Bu
+
+240
+00:35:06,519 --> 00:35:09,519
+potansiyel uygulama alanlarımız neler?
+
+241
+00:35:09,519 --> 00:35:12,519
+Şimdi onlara bakalım.
+
+242
+00:35:12,519 --> 00:35:16,519
+Üç tane başlık burada sayabiliriz.
+
+243
+00:35:16,519 --> 00:35:21,519
+Pazar analizi ve yönetimi alanında uygulamalar yapılabilir.
+
+244
+00:35:21,519 --> 00:35:25,519
+Risk analizi ve yönetimi alanında uygulamalar yapılabilir.
+
+245
+00:35:25,519 --> 00:35:28,519
+Bir de Fraud Detection
+
+246
+00:35:28,519 --> 00:35:34,519
+and Detection of Unusual Patterns başlığı var.
+
+247
+00:35:34,519 --> 00:35:37,519
+Market analizi ve yönetimi açısından baktığımızda
+
+248
+00:35:37,519 --> 00:35:44,519
+bu konu tabii sektörde çok kullanılan ihtiyaç olan alan burası.
+
+249
+00:35:44,519 --> 00:35:46,519
+Ne yapabiliriz?
+
+250
+00:35:46,519 --> 00:35:53,519
+Müşteri segmentasyonu tarafında veri madenciliğini kullanabiliriz.
+
+251
+00:35:53,519 --> 00:35:56,519
+Mevcut müşterilerin demografik bilgileri ve
+
+252
+00:35:56,519 --> 00:36:02,519
+satın alma davranışları üzerinden bunları gruplayabiliriz.
+
+253
+00:36:02,519 --> 00:36:08,519
+Bu özellikle müşteri ilişkileri tarafında
+
+254
+00:36:08,519 --> 00:36:13,519
+oldukça faydalı bir bilgi olacaktır.
+
+255
+00:36:13,519 --> 00:36:16,519
+Müşteri segmentasyonu dediğimiz konu.
+
+256
+00:36:16,519 --> 00:36:24,519
+Risk analizi ve yönetimi aslında bu sigorta sektöründe
+
+257
+00:36:24,519 --> 00:36:31,519
+müşterinin riskinin hesaplanmasında ve bunun tahmininde kullanılan
+
+258
+00:36:31,519 --> 00:36:34,519
+teknikleri içeriyor.
+
+259
+00:36:34,519 --> 00:36:39,519
+Fraud Detection ise kredi kartı kullanımında veya sağlık alanında
+
+260
+00:36:39,519 --> 00:36:49,659
+sahteciliğin tespiti için kullanılan algoritmaları gösteriyor.
+
+261
+00:36:49,659 --> 00:36:53,659
+Burada daha çok aykırı değer analizi üzerinden gidiyoruz.
+
+262
+00:36:53,659 --> 00:36:58,659
+Her müşterinin belli bir davranış ve satın alma karakteristiği var.
+
+263
+00:36:58,659 --> 00:37:02,659
+Bu satın alma karakteristiğinin dışında bir davranış
+
+264
+00:37:02,659 --> 00:37:06,659
+tespit ettiğimizde bunun bir fraud olduğunu,
+
+265
+00:37:06,659 --> 00:37:09,659
+bunun bir sahte işlem olduğunu söyleyebiliyoruz.
+
+266
+00:37:09,659 --> 00:37:13,659
+Kredi kartı uygulamalarında şöyle bir örnek vereceğim size.
+
+267
+00:37:13,659 --> 00:37:22,659
+Her müşterinin aylık ortalama bir düzeni vardır.
+
+268
+00:37:22,659 --> 00:37:25,659
+İşte ortalama diyelim ki üç bin ya da beş bin liralık harcama
+
+269
+00:37:25,659 --> 00:37:30,659
+yaptığını varsayalım kredi kartıyla ve bunun bir aya yayıldığını görürsünüz.
+
+270
+00:37:30,659 --> 00:37:35,659
+İşte üç yüz bir gün harcar, beş yüz öbür gün harcar ama sonuçta
+
+271
+00:37:35,659 --> 00:37:38,659
+gidip de beş bin lirayı bir seferde harcamaz.
+
+272
+00:37:38,659 --> 00:37:43,659
+Dolayısıyla Fraud Detection da kredi kartı limiti kadar ne bileyim
+
+273
+00:37:43,659 --> 00:37:48,659
+yani şimdi bankalarda kredi kartı limitlerini o kadar yüksek tutuyorlar ki
+
+274
+00:37:48,659 --> 00:37:51,659
+bu çok tehlikeli bir durum aslına bakarsanız.
+
+275
+00:37:51,659 --> 00:37:57,659
+Kredi kartı limiti kadarlık bir harcamayı gidip bir günde yapabiliyor.
+
+276
+00:37:57,659 --> 00:37:59,659
+Eğer bu bir fraud işlemse.
+
+277
+00:37:59,659 --> 00:38:06,659
+Dolayısıyla satın alınan ürünün şeyi yani ne kadarlık bir ürün satın alınmış bir günde
+
+278
+00:38:06,659 --> 00:38:08,659
+bu önemli bir kriter.
+
+279
+00:38:08,659 --> 00:38:13,659
+Bunun üzerinden yakalayabiliyorsunuz ve alışverişin nerede gerçekleştiğine bakılıyor.
+
+280
+00:38:13,659 --> 00:38:16,659
+Yani ben Türkiye'de yaşıyorum, İstanbul'dayım.
+
+281
+00:38:16,659 --> 00:38:21,659
+O zaman bu alışverişin İstanbul'da olması beklenir.
+
+282
+00:38:21,659 --> 00:38:26,659
+Eğer şehir dışında veya uluslararası bir harcama gerçekleşiyorsa
+
+283
+00:38:26,659 --> 00:38:28,659
+bu gerçekten aynı müşteri midir?
+
+284
+00:38:28,659 --> 00:38:30,659
+Kontrolü yapılmalı.
+
+285
+00:38:30,659 --> 00:38:37,659
+Böyle bir takım rule based çalışan, kural tabanlı çalışan sistemler aslında bankalarda mevcut.
+
+286
+00:38:37,659 --> 00:38:46,659
+Ama bunun dışında sahteciliğin tespiti için tüm sahte işlemler bir mercek altına alınıyor ve inceleniyor.
+
+287
+00:38:46,659 --> 00:38:53,659
+Ve burada sahte işlem yapan kullanıcıların belli davranışlar sergiledikleri tespit ediliyor.
+
+288
+00:38:53,659 --> 00:38:55,659
+Yani bu nedir?
+
+289
+00:38:55,659 --> 00:38:57,659
+Datadan öğreniyoruz bakın bunu.
+
+290
+00:38:57,659 --> 00:38:59,659
+Data bize şunu gösteriyor.
+
+291
+00:38:59,659 --> 00:39:01,659
+Bu yapılmış bir araştırma.
+
+292
+00:39:01,659 --> 00:39:12,659
+Kredi kartı kopyalandığında ilk iş olarak gidip bir benzin istasyonunda akaryakıt alıyor sahte işlem yapan kişi.
+
+293
+00:39:12,659 --> 00:39:16,659
+Bu aslında kartı kullanabiliyor muyum kontrolü oluyor.
+
+294
+00:39:16,659 --> 00:39:19,659
+Neden akaryakıt istasyonu?
+
+295
+00:39:19,659 --> 00:39:22,659
+Bana kalırsa kaçması kolay olduğu için diyorum.
+
+296
+00:39:22,659 --> 00:39:25,659
+Bilemiyorum tabii oradaki şeyi.
+
+297
+00:39:25,659 --> 00:39:30,659
+Önce bir benzin istasyonunda kartı deniyor.
+
+298
+00:39:30,659 --> 00:39:35,659
+Arkasından çok büyük spot bir alışveriş gerçekleştiriyor.
+
+299
+00:39:35,659 --> 00:39:42,659
+Ne bileyim mesela tabi bunu internet üzerinden de yapabilir.
+
+300
+00:39:42,659 --> 00:39:51,659
+Bir mücevher satın almak vesaire ya da elektronik bir eşya satın almak gibi düşünebilirsiniz.
+
+301
+00:39:51,659 --> 00:39:54,659
+Ve bu fraud işlemlerin.
+
+302
+00:39:54,659 --> 00:40:01,659
+Yani sahte işlemler veri seti incelenerek oluşturulmuş bir sonuç.
+
+303
+00:40:01,659 --> 00:40:13,659
+Karar ağacı işte diyor ki müşterinin yaptığı alışveriş büyük tutardaki alışverişin bir önceki alışverişi eğer akaryakıt istasyonuysa bu şüpheli olabilir diyor.
+
+304
+00:40:13,659 --> 00:40:15,659
+Ve hemen bunu incelemeye alıyor.
+
+305
+00:40:15,659 --> 00:40:17,659
+Ama bu kuralı nereden üretti?
+
+306
+00:40:17,659 --> 00:40:18,659
+Datadan üretti.
+
+307
+00:40:18,659 --> 00:40:22,659
+Yani veri madenciliği sayesinde üretmiş oldu.
+
+308
+00:40:22,659 --> 00:40:23,659
+Böyle ilginç uygulama.
+
+309
+00:40:23,659 --> 00:40:26,659
+Çok ilginç uygulama alanları sayabiliriz.
+
+310
+00:40:26,659 --> 00:40:29,659
+Tabi burada birkaç tanesini sadece saydık.
+
+311
+00:40:29,659 --> 00:40:31,659
+Bunlar çeşitlendirilebilir.
+
+312
+00:40:31,659 --> 00:40:38,659
+Burada Other Applications kısmında başka kullanım alanları da var.
+
+313
+00:40:38,659 --> 00:40:49,659
+Şu anda çok yaygın olan Text Mining ya da doğal dil işleme konusu Natural Language Processing tarafında da yine veri madenciliği algoritmaları kullanılıyor yaygın olarak.
+
+314
+00:40:49,659 --> 00:40:52,659
+Burada yine Bioinformatic ve Biodata Analisis tarafı.
+
+315
+00:40:53,659 --> 00:40:56,659
+İlginç konu başlıklarından.
+
+316
+00:40:56,659 --> 00:41:03,659
+Bu slide'lar aynı konuştuğumuz konuları daha detaylı anlatıyor.
+
+317
+00:41:03,659 --> 00:41:12,659
+Yani market analizi, pazar analizi ve işletme tarafında veri madenciliğinin kullanım alanları detaylandırılmış.
+
+318
+00:41:12,659 --> 00:41:18,659
+Daha sonra risk analizi tarafında yine detaylı uygulama alanları verilmiş.
+
+319
+00:41:18,659 --> 00:41:20,659
+Ve Fraud Detection.
+
+320
+00:41:20,659 --> 00:41:21,659
+Fraud Detection.
+
+321
+00:41:21,659 --> 00:41:30,659
+Burada sadece dediğim gibi kredi kartı sahteciliği değil, auto insurance konusu var.
+
+322
+00:41:30,659 --> 00:41:44,659
+Money Laundering yani kara para aklama tarafında yapılan para transferlerinin takibi ile bunlar yine veri madenciliği algoritmalarıyla bulunabiliyor.
+
+323
+00:41:44,659 --> 00:41:47,659
+Çeşitli örnekler burada görebilirsiniz.
+
+324
+00:41:47,659 --> 00:41:49,659
+Benim en sevdiğim slide'a geldik.
+
+325
+00:41:49,659 --> 00:41:50,659
+Evet.
+
+326
+00:41:50,659 --> 00:41:52,659
+Veri madenciliği stratejileri.
+
+327
+00:41:52,659 --> 00:41:56,659
+Bu stratejileri not almanızı isteyeceğim.
+
+328
+00:41:56,659 --> 00:42:06,659
+Şimdi sevgili arkadaşlar ben ders anlatırken hele bir de böyle ekranın karşısında hoca anlatırken hikaye dinliyor gibi olabilir.
+
+329
+00:42:06,659 --> 00:42:12,659
+Hele bir de böyle elinizi çenenizin altına koyduysanız gitti uyuyacaksınız demektir.
+
+330
+00:42:12,659 --> 00:42:17,659
+Lütfen kağıt kalem alalım ve küçük notlar almaya çalışalım.
+
+331
+00:42:17,659 --> 00:42:19,659
+Öncelikle not alacağınız yer burası.
+
+332
+00:42:19,659 --> 00:42:25,659
+Bakın bu stratejileri ben 14 hafta boyunca defalarca sizin önünüze getireceğim.
+
+333
+00:42:25,659 --> 00:42:32,659
+Çünkü her anlattığımız konu bu bir nevi kavram ağacı gibi de düşünebilirsiniz.
+
+334
+00:42:32,659 --> 00:42:37,659
+Hangi başlık altında yer alıyor bunu gösterecek bize.
+
+335
+00:42:37,659 --> 00:42:45,659
+Data Mining Strategies tarafında 3'e ayıracağız veri madenciliği stratejilerini.
+
+336
+00:42:45,659 --> 00:42:48,659
+Birinci başlığımız ortadaki Supervision.
+
+337
+00:42:48,659 --> 00:42:53,659
+Yani eğiticili öğrenme.
+
+338
+00:42:53,659 --> 00:43:02,659
+Eğiticili öğrenme konusu 3 ayrı başlık ile verilebilir.
+
+339
+00:43:02,659 --> 00:43:05,659
+Birincisi Classification.
+
+340
+00:43:05,659 --> 00:43:13,659
+Ve bu derste aşağı yukarı 3 hafta üzerinde konuşacağımız konu Classification konusu olacak.
+
+341
+00:43:13,659 --> 00:43:16,659
+İkincisi Estimation.
+
+342
+00:43:16,659 --> 00:43:20,659
+Estimation ile ilgili çok fazla bir şey yapmayacağız.
+
+343
+00:43:20,659 --> 00:43:24,659
+Daha çok burada Regression yöntemleri kullanılıyor.
+
+344
+00:43:24,659 --> 00:43:26,659
+Prediction de benzer şekilde.
+
+345
+00:43:26,659 --> 00:43:32,659
+Bizim ağırlıklı konuşacağımız konu bir numaralı konu Classification olacak.
+
+346
+00:43:32,659 --> 00:43:39,659
+Veri madenciliği stratejilerinde ikinci konu başlığımız eğiticisiz kümeleme olacak.
+
+347
+00:43:39,659 --> 00:43:41,659
+Unsupervised Clustering.
+
+348
+00:43:41,659 --> 00:43:43,659
+Lütfen dikkat.
+
+349
+00:43:43,659 --> 00:43:49,659
+Birazdan supervised ve unsupervised arasındaki farktan bahsedeceğim size.
+
+350
+00:43:49,659 --> 00:43:55,659
+Üçüncü konu yani üçüncü temel konu başlığımız ise market sepeti analizi olacak.
+
+351
+00:43:55,659 --> 00:43:59,659
+Ama ilk olarak eğiticili öğrenme nedir?
+
+352
+00:43:59,659 --> 00:44:00,659
+Ne işe yarar?
+
+353
+00:44:00,659 --> 00:44:01,659
+Farkı nedir?
+
+354
+00:44:01,659 --> 00:44:02,659
+Bunu konuşalım.
+
+355
+00:44:02,659 --> 00:44:09,659
+Supervised Learning için arkadaşlar iki madde var burada.
+
+356
+00:44:09,659 --> 00:44:11,659
+Her bir kelimesinin önemi var.
+
+357
+00:44:11,659 --> 00:44:17,659
+O yüzden size tek tek bunları vurgulayarak belirtmek istiyorum.
+
+358
+00:44:17,659 --> 00:44:23,659
+Eğiticili öğrenmede elimizde bir data set var.
+
+359
+00:44:23,659 --> 00:44:26,659
+Data Instances of Known Origin diyor.
+
+360
+00:44:26,659 --> 00:44:37,659
+Benim elimde sınıf etiketi konmuş bir alan uzmanı tarafından sınıf etiketi konmuş bir veri olması gerekiyor önce.
+
+361
+00:44:37,659 --> 00:44:40,659
+Bu Data Instances of Known Origin dediği.
+
+362
+00:44:40,659 --> 00:44:49,659
+Known Origin burada etiketlenmiş hangi orijine ait olduğu bilinen anlamına geliyor.
+
+363
+00:44:49,659 --> 00:44:56,659
+Böyle bir data set var ve bu data seti kullanarak ben bir Learner model oluşturuyorum.
+
+364
+00:44:56,659 --> 00:44:59,659
+Bu datadan öğrenebilen bir model oluşturuyorum.
+
+365
+00:44:59,659 --> 00:45:02,659
+Birinci maddemiz bu.
+
+366
+00:45:02,659 --> 00:45:04,659
+Birinci maddemiz bu.
+
+367
+00:45:04,659 --> 00:45:09,659
+Daha sonra ben birinci maddede oluşturduğum modeli,
+
+368
+00:45:09,659 --> 00:45:11,659
+ikinci maddede diyor ki
+
+369
+00:45:11,659 --> 00:45:18,659
+Use the model to determine the outcome of new instances of unknown origin.
+
+370
+00:45:18,659 --> 00:45:25,659
+Şimdi ikinci maddede benim elimde hangi orijine ait olduğu belli olmayan,
+
+371
+00:45:25,659 --> 00:45:30,659
+yani sınıf etiketi bilinmeyen örnekler var,
+
+372
+00:45:30,659 --> 00:45:36,659
+sample'lar var ve bunların hangi sınıfa ait olduğuna karar vermek için
+
+373
+00:45:36,659 --> 00:45:38,659
+bir önceki adımda oluşturmuş olduğum model var.
+
+374
+00:45:38,659 --> 00:45:41,659
+bir önceki adımda oluşturmuş olduğum model var.
+
+375
+00:45:41,659 --> 00:45:46,659
+Use the model to determine the outcome of new instances of unknown origin.
+
+376
+00:45:46,659 --> 00:45:49,659
+Bu iki aşamada gerçekleştiriliyor.
+
+377
+00:45:49,659 --> 00:45:52,659
+Supervised Learning dediğimiz işlem.
+
+378
+00:45:52,659 --> 00:45:54,659
+Şimdi hemen bir örnek.
+
+379
+00:45:54,659 --> 00:45:57,659
+Yani böyle soyut kavramlarla kalmayalım.
+
+380
+00:45:57,659 --> 00:45:59,659
+Gelin bir de örnekle görelim.
+
+381
+00:45:59,659 --> 00:46:01,659
+Ne demek istedim ben acaba?
+
+382
+00:46:01,659 --> 00:46:04,659
+Bakın elimde 10 tane sample var.
+
+383
+00:46:04,659 --> 00:46:06,659
+Sample ne demek?
+
+384
+00:46:06,659 --> 00:46:12,659
+Bu veri seti içerisindeki her bir satır benim için bir sample'dır.
+
+385
+00:46:12,659 --> 00:46:13,659
+Örnek.
+
+386
+00:46:13,659 --> 00:46:21,389
+Şimdi bu sample'larım 10 tane hastaya ait
+
+387
+00:46:21,389 --> 00:46:25,389
+ve bu bir hastalık teşhisiyle ilgili.
+
+388
+00:46:25,389 --> 00:46:26,389
+Disease diagnosis.
+
+389
+00:46:26,389 --> 00:46:29,389
+Training data for disease diagnosis.
+
+390
+00:46:29,389 --> 00:46:37,389
+Hastalara, bunlar kulak-burun-boğaz bölümüne gitmişler
+
+391
+00:46:37,389 --> 00:46:41,389
+ve hastalıkları o alanla ilgili.
+
+392
+00:46:41,389 --> 00:46:45,389
+Hastalara 5 tane soru sormuş doktor
+
+393
+00:46:45,389 --> 00:46:54,559
+ve bu sorulara verdikleri cevaba göre bir teşhis konmuş.
+
+394
+00:46:54,559 --> 00:46:59,559
+Bu teşhisi koyan kişi domain expert yani alan uzmanı.
+
+395
+00:46:59,559 --> 00:47:15,150
+Bu alan uzmanı 5 tane soruya bakarak
+
+396
+00:47:15,150 --> 00:47:16,150
+Bu alan uzmanı 5 tane soruya bakarak
+
+397
+00:47:16,150 --> 00:47:20,150
+her bir hasta için karar veriyor.
+
+398
+00:47:20,150 --> 00:47:22,150
+Sorular neler?
+
+399
+00:47:22,150 --> 00:47:30,150
+Sore throat, boğazda yanma var mı?
+
+400
+00:47:30,150 --> 00:47:33,150
+Fever, ateşi var mı?
+
+401
+00:47:33,150 --> 00:47:40,150
+Üçüncü soru swollen gland, boğazdaki bezelerde şişme var mı?
+
+402
+00:47:40,150 --> 00:47:44,150
+Congestion, nefes alırken tıkanık mı burnu?
+
+403
+00:47:44,150 --> 00:47:46,150
+Nefes alabiliyor mu?
+
+404
+00:47:46,150 --> 00:47:47,150
+Tıkanıklık var mı?
+
+405
+00:47:47,150 --> 00:47:49,150
+Ve bir de başı ağrıyor mu?
+
+406
+00:47:49,150 --> 00:47:50,150
+Ağrımıyor mu?
+
+407
+00:47:50,150 --> 00:47:51,150
+Bunlar soruluyor.
+
+408
+00:47:51,150 --> 00:47:52,150
+5 tane soru.
+
+409
+00:47:52,150 --> 00:48:01,150
+Alan uzmanı bu 5 soru ile her bir hasta için 3 farklı teşhiste bulunuyor.
+
+410
+00:48:01,150 --> 00:48:08,150
+Diyor ki bizim hastamız strep throat dediği boğaz enfeksiyonu mesela.
+
+411
+00:48:08,150 --> 00:48:13,150
+Öbürü alerji ve bir de cold soğuk algınlığı olabilir.
+
+412
+00:48:13,150 --> 00:48:17,150
+Üç farklı türü var koyduğu teşhisin.
+
+413
+00:48:17,150 --> 00:48:23,150
+Yani şu sütun bizim için hani teşhis dediğimiz sütun aslında class label'ı gösteriyor.
+
+414
+00:48:23,150 --> 00:48:36,150
+Ve bu class label'ları sınıf etiketleri alan uzmanı yani bir kulak burun boğaz hekimi tarafından veriliyor.
+
+415
+00:48:36,150 --> 00:48:43,489
+Şimdi benim için bu data set bir training data.
+
+416
+00:48:43,489 --> 00:48:46,739
+Training data set.
+
+417
+00:48:46,739 --> 00:48:49,739
+Ve bu yöntemin supervised olması.
+
+418
+00:48:49,739 --> 00:48:52,739
+Bakın yukarıda supervised learning dedik ya.
+
+419
+00:48:52,739 --> 00:48:58,739
+Eğiticili öğrenme dememizin sebebi elimizde böyle etiketli bir data olması.
+
+420
+00:48:58,739 --> 00:49:01,739
+Class label'ı olan bir data olması.
+
+421
+00:49:01,739 --> 00:49:10,739
+Demek ki ben supervised learning yapabilmek için önce bana bir etiketli data verilmeli.
+
+422
+00:49:10,739 --> 00:49:13,739
+Ve ben bu datayı kullanarak bir model oluşturacağım.
+
+423
+00:49:13,739 --> 00:49:19,739
+Bu modelle de bundan sonra gelen hastalar için bir teşhis koyabileceğim.
+
+424
+00:49:19,739 --> 00:49:21,739
+Amaç bu.
+
+425
+00:49:21,739 --> 00:49:31,719
+Peki şimdi herhangi bir yöntem bilmiyorsunuz ama ben bir algoritma kullanarak size bir model oluşturacağım.
+
+426
+00:49:31,719 --> 00:49:43,719
+Bu model ekranda gördüğünüz 10 tane sample için yani 10 tane hasta için sorulara verdiği cevaplar ve class label'a bakarak oluşturulmuş bir model olacak.
+
+427
+00:49:43,719 --> 00:49:51,719
+Bu modelin nasıl oluşturulduğunu ilerleyen derslerimizde göreceğiz tabi.
+
+428
+00:49:51,719 --> 00:49:56,719
+Ama amacım şu anda bir model neye benziyor nasıl kullanılıyor onu göstermek.
+
+429
+00:49:56,719 --> 00:50:05,719
+Arkadaşlar model karar ağacı modeli ve bu modeli decision tree algoritmasını kullanarak oluşturabiliriz.
+
+430
+00:50:05,719 --> 00:50:08,719
+İlerleyen haftalarda göreceğiz dediğim gibi.
+
+431
+00:50:08,719 --> 00:50:10,719
+Diyor ki algoritma.
+
+432
+00:50:10,719 --> 00:50:12,719
+Bu 5 tane soru soruyor.
+
+433
+00:50:12,719 --> 00:50:14,719
+5 tane soru sormuştuk hastalara.
+
+434
+00:50:14,719 --> 00:50:25,719
+Bu sorulardan en anlamlısının hastalığı teşhis etmede en etkili sorunun swollen gland olduğunu söylüyor.
+
+435
+00:50:25,719 --> 00:50:31,719
+Yani boğazdaki bezelerde şişme var mı sorusunu soracağız diyor.
+
+436
+00:50:31,719 --> 00:50:41,719
+Bu sorunun cevabı eğer yes ise diagnosis teşhisimiz boğaz enfeksiyonu olacak.
+
+437
+00:50:41,719 --> 00:50:51,719
+Eğer boğazdaki bezelerde şişme yoksa bu sorunun cevabı no ise ikinci parametremiz fever olacak.
+
+438
+00:50:51,719 --> 00:50:54,719
+Hastanın ateşi var mı diye bakacağız.
+
+439
+00:50:54,719 --> 00:51:04,719
+Eğer hastanın ateşi varsa bu soğuk algınlığıdır diagnosis yani teşhisimiz soğuk algınlığı olacak.
+
+440
+00:51:04,719 --> 00:51:09,719
+Ateşi yoksa alerji diye teşhis koyacağız.
+
+441
+00:51:09,719 --> 00:51:10,719
+5 tane soru sormuştuk.
+
+442
+00:51:10,719 --> 00:51:20,719
+5 tane soru sorduk ama sadece 2 tanesinin sonuca etkisi olduğunu elimizdeki 10 tane örnekten tabi yola çıkarak söylüyoruz bunu.
+
+443
+00:51:20,719 --> 00:51:29,719
+Bu 2 tane sorunun cevabını kullanarak bu teşhisi koyabileceğimizi söylüyor bize sistem.
+
+444
+00:51:29,719 --> 00:51:36,989
+Sonra artık elimde bu model var.
+
+445
+00:51:36,989 --> 00:51:42,989
+Ben bu modeli bir önceki adımda gördüğüm 10 tane sample ile.
+
+446
+00:51:43,989 --> 00:51:49,239
+Test etsem hepsinin doğru çalıştığını görebilirim.
+
+447
+00:51:49,239 --> 00:51:55,239
+Ama benim amacım bu modeli sisteme daha önce hiç vermediğim örneklerle test etmek.
+
+448
+00:51:55,239 --> 00:52:07,239
+Yani şurada gördüğümüz örnekler 11, 12 ve 13. hastalar patient id görüyorsunuz 11, 12 ve 13. hastalar için.
+
+449
+00:52:07,239 --> 00:52:14,239
+Bu sorulara verdiği cevapları biliyorum hastaların ama teşhisi bilmiyorum.
+
+450
+00:52:14,239 --> 00:52:17,239
+Ve bunu bulmak istiyorum.
+
+451
+00:52:17,239 --> 00:52:19,239
+Teşhisi bize ne söyleyecek?
+
+452
+00:52:19,239 --> 00:52:23,239
+Bir önceki adımda oluşturduğumuz model söyleyecek.
+
+453
+00:52:23,239 --> 00:52:30,239
+Yani ben önce Swollen gland sorusunun cevabına bakacağım.
+
+454
+00:52:30,239 --> 00:52:32,239
+Çünkü model öyle demişti.
+
+455
+00:52:32,239 --> 00:52:38,239
+Boğazdaki bezeler şişmiş mi? Evetse soğuk algınlığı diyeceğiz.
+
+456
+00:52:38,239 --> 00:52:43,239
+Hayırsa ateşi var mı sorusunu soracağız.
+
+457
+00:52:43,239 --> 00:52:44,239
+Ve karar vereceğiz.
+
+458
+00:52:44,239 --> 00:52:47,239
+Bu modeli de lütfen bir kenara not alın.
+
+459
+00:52:47,239 --> 00:52:54,239
+Böylece test datası üzerinde hangi işlemleri yaptığımızı hatırlayabilirsiniz.
+
+460
+00:52:54,239 --> 00:52:58,239
+Fotoğrafını da çekebilirsiniz hızlı takip etmek için.
+
+461
+00:52:58,239 --> 00:53:00,239
+Şimdi bakalım tekrar test datasına.
+
+462
+00:53:00,239 --> 00:53:05,239
+Mesela birinci sıradaki hasta için yani 11. hasta için.
+
+463
+00:53:05,239 --> 00:53:08,239
+Swollen gland yes ise ne diyeceğim?
+
+464
+00:53:08,239 --> 00:53:13,239
+Diagnosis sütununda benim kararım ne olacak?
+
+465
+00:53:13,239 --> 00:53:15,239
+Boğaz enfeksiyonu.
+
+466
+00:53:15,239 --> 00:53:16,239
+Evet güzel.
+
+467
+00:53:16,239 --> 00:53:21,239
+Hemen birinci sıradakine strep throat diyebiliyorum.
+
+468
+00:53:21,239 --> 00:53:29,019
+İkinci sırada yani 12. hasta için bakalım.
+
+469
+00:53:29,019 --> 00:53:31,019
+Swollen gland no.
+
+470
+00:53:31,019 --> 00:53:33,019
+O zaman ne yapmamız gerekiyordu?
+
+471
+00:53:33,019 --> 00:53:35,019
+Fever'a bakmamız gerekiyor.
+
+472
+00:53:35,019 --> 00:53:38,019
+Evet fever'a baktım yes dedi.
+
+473
+00:53:38,019 --> 00:53:40,019
+Soğuk algınlığı diyoruz o zaman.
+
+474
+00:53:40,019 --> 00:53:42,019
+Evet güzel.
+
+475
+00:53:42,019 --> 00:53:44,019
+Buna da cold yazdım.
+
+476
+00:53:44,019 --> 00:53:50,019
+İkinci sıradakinin teşhisini de artık bir önceki adımda oluşturduğum modeli kullanarak söyleyebildim.
+
+477
+00:53:50,019 --> 00:53:57,019
+Ve 13. sıradakinde no fever'da no olduğunda ne diyeceğim?
+
+478
+00:53:57,019 --> 00:53:59,019
+Alerji.
+
+479
+00:53:59,019 --> 00:54:00,019
+Evet güzel.
+
+480
+00:54:00,019 --> 00:54:03,019
+Buna da alerji diyeceğim.
+
+481
+00:54:03,019 --> 00:54:11,019
+Bu sistem basit bir örnekle size supervised learning'in ne olduğunu anlattım arkadaşlar.
+
+482
+00:54:11,019 --> 00:54:17,019
+Supervised learning için benim başta bir training data setim olmalı.
+
+483
+00:54:17,019 --> 00:54:22,019
+Bir domain expert, bir alan uzmanı bana bunları etiketleyip vermeli.
+
+484
+00:54:22,019 --> 00:54:24,019
+Tabii burada sample sayısı da önemli.
+
+485
+00:54:24,019 --> 00:54:27,019
+Yani kaç tane sample ile ben bu modeli oluşturacağım?
+
+486
+00:54:27,019 --> 00:54:34,019
+Ben burada sadece ekranda göstermek için 10 tane sample ile oluşturdum.
+
+487
+00:54:34,019 --> 00:54:38,019
+Ama tabii ki burada ideal sayı çok daha fazla.
+
+488
+00:54:38,019 --> 00:54:40,019
+Örnekle bunu yapmak olmalı.
+
+489
+00:54:40,019 --> 00:54:58,019
+Bu sınıf etiketli veri üzerinden en ayırt edici öz niteliğin yani orada her bir sütunda sorduğumuz sorular bizim için bir feature yani öz nitelik olarak isimlendiriliyor.
+
+490
+00:54:58,019 --> 00:55:02,019
+Bu öz niteliklerden hangisinin en seçici olduğuna karar verdim.
+
+491
+00:55:02,019 --> 00:55:07,019
+Bunu karar ağaçlarını kullanarak yaptım ve bu modeli çizdim.
+
+492
+00:55:07,019 --> 00:55:10,019
+Daha sonra bu modeli bir test ettim.
+
+493
+00:55:10,019 --> 00:55:13,019
+Test datası üzerinde de test etmiş oldum.
+
+494
+00:55:13,019 --> 00:55:20,019
+Böylece eğiticili öğrenmenin yani supervised learning'in ne olduğunu tarif etmiş olduk.
+
+495
+00:55:20,019 --> 00:55:25,019
+Sorunuz var mıdır buraya kadar?
+
+496
+00:55:25,019 --> 00:55:30,800
+Herhangi bir soru.
+
+497
+00:55:30,800 --> 00:55:32,800
+Yani chatten yazabilirsiniz.
+
+498
+00:55:32,800 --> 00:55:34,800
+Bakıyorum chat ekranıma da.
+
+499
+00:55:34,800 --> 00:55:36,800
+Ödevlerle ilgili bir soru sormuş şu arkadaş.
+
+500
+00:55:36,800 --> 00:55:38,800
+Ödevlerimiz olur mu hocam?
+
+501
+00:55:38,800 --> 00:55:40,800
+Olabilir.
+
+502
+00:55:40,800 --> 00:55:42,800
+Yani bu dönem biraz tatile çok geçti.
+
+503
+00:55:42,800 --> 00:55:43,800
+Yani bu dönem biraz tatile çok geçti.
+
+504
+00:55:43,800 --> 00:55:54,800
+Çok fazla hafta kaybedeceğiz ama programda yazmadım ama eğer yetiştirebilirsem bir ödev de ekleme ihtimalim var.
+
+505
+00:55:54,800 --> 00:56:01,800
+Ama şu anki mevcut durumda sadece proje ve kısa sınav yani ara sınavın dışında.
+
+506
+00:56:01,800 --> 00:56:08,409
+Soru, soru, yok soru.
+
+507
+00:56:08,409 --> 00:56:10,409
+Peki bir 10 dakika ara vereceğim arkadaşlar.
+
+508
+00:56:10,409 --> 00:56:14,409
+10 dakika sonra derse devam edeceğiz.
+
+509
+00:56:14,409 --> 00:56:16,409
+Şuradan stop sharing diyelim.
+
+510
+00:56:16,409 --> 01:09:50,539
+Evet merhaba arkadaşlar.
+
+511
+01:09:50,539 --> 01:10:00,000
+Tekrar.
+
+512
+01:10:00,000 --> 01:10:03,000
+Barış isteyen kamerasını açsın demişsiniz.
+
+513
+01:10:03,000 --> 01:10:10,000
+Evet isteyen açabilir ama belki iletişimle ilgili bir yük oluşturabilir.
+
+514
+01:10:10,000 --> 01:10:24,920
+O yüzden çok da emin değilim ama isteyen açabilir tabii kamerasını.
+
+515
+01:10:24,920 --> 01:10:26,920
+Kaldığımız yerden devam edelim.
+
+516
+01:10:26,920 --> 01:10:42,880
+Evet ilk olarak supervised learning'in ne olduğunu tarif etmiştik.
+
+517
+01:10:42,880 --> 01:10:43,880
+Şimdi geldik.
+
+518
+01:10:43,880 --> 01:10:49,880
+Unsupervised Clustering tarafına.
+
+519
+01:10:49,880 --> 01:10:53,880
+Stratejilerde ikinci önemli stratejimiz kümeleme idi.
+
+520
+01:10:53,880 --> 01:11:00,880
+Kümeleme yöntemlerinde lütfen yine tanıma dikkat edelim.
+
+521
+01:11:00,880 --> 01:11:02,880
+Yine bir model oluşturuyoruz.
+
+522
+01:11:02,880 --> 01:11:05,880
+Data Mining Method ya da diyelim.
+
+523
+01:11:05,880 --> 01:11:10,880
+Ne yapıyor bu modeli oluştururken?
+
+524
+01:11:10,880 --> 01:11:12,880
+Elimizde bir data var ama data da.
+
+525
+01:11:12,880 --> 01:11:18,880
+Without a Predefined Classes, sınıf bilgisi, sınıf etiketi yok.
+
+526
+01:11:18,880 --> 01:11:22,880
+Böyle bir veri ile model oluşturuyoruz.
+
+527
+01:11:22,880 --> 01:11:25,880
+Unsupervised Clustering dediğimizde.
+
+528
+01:11:25,880 --> 01:11:31,880
+Yani böylece supervised ve unsupervised arasındaki fark herhalde anlaşılmış oluyor.
+
+529
+01:11:31,880 --> 01:11:38,880
+Bir alan uzmanı veriyi etiketlemekle oturup bu veriyi etiketlemekle uğraşmıyor.
+
+530
+01:11:38,880 --> 01:11:40,880
+Böylece elimizde yine işte.
+
+531
+01:11:40,880 --> 01:11:47,880
+Mesela hastaların verdiği bu sorulara verdiği cevaplar var ama bir sınıf etiketi yok.
+
+532
+01:11:47,880 --> 01:11:49,880
+Alan uzmanı etiketlememiş.
+
+533
+01:11:49,880 --> 01:11:54,880
+Bir alan uzmanına veriyi etiketletmek çok maliyetli bir iş.
+
+534
+01:11:54,880 --> 01:12:11,079
+Çünkü mesela bir tıp doktoru için oturup bu veriyi tek tek elle işaretlemesi o kadar yoğun bir iş akışı içerisinde.
+
+535
+01:12:11,079 --> 01:12:13,079
+Genelde yapmak istemedi.
+
+536
+01:12:13,079 --> 01:12:16,079
+Genelde yapmak istemedikleri bir iş.
+
+537
+01:12:16,079 --> 01:12:20,079
+O yüzden etiketli data bulmakta zorlanıyoruz.
+
+538
+01:12:20,079 --> 01:12:23,079
+Mesela biz tıbbi görüntüler üzerinde çalışıyoruz.
+
+539
+01:12:23,079 --> 01:12:26,079
+MR ve tomografi görüntüleri ile uğraşıyoruz.
+
+540
+01:12:26,079 --> 01:12:37,079
+Elimizde hastalıklı bölgelerin radyoloji uzmanı tarafından etiketlenmiş halinin olması gerekiyor.
+
+541
+01:12:37,079 --> 01:12:40,079
+Supervised Learning yapabilmek için.
+
+542
+01:12:40,079 --> 01:12:42,079
+Birlikte çalışıyoruz.
+
+543
+01:12:42,079 --> 01:12:45,079
+Birlikte çalıştığımız radyoloji uzmanları var.
+
+544
+01:12:45,079 --> 01:12:50,079
+Her MR kesitinde tek tek giriyor bu alanları elle işaretliyor.
+
+545
+01:12:50,079 --> 01:12:57,079
+Ama bir kesit üzerinde bunu yapması herhalde bir üç dakikasını falan alıyordur.
+
+546
+01:12:57,079 --> 01:13:00,079
+Çünkü birden fazla bölge işaretlemesi gerekiyor.
+
+547
+01:13:00,079 --> 01:13:11,079
+Ve bir MR sekansı yüksek kaliteli bir MR makinesinde 140 kesit anlamına geliyor.
+
+548
+01:13:11,079 --> 01:13:18,079
+Yani bir hasta için bu işaretlemeyi yapması inanılmaz zaman alıyor.
+
+549
+01:13:18,079 --> 01:13:25,079
+Ve genelde çok isteksizce yapıyorlar bu işi.
+
+550
+01:13:25,079 --> 01:13:28,079
+O nedenle etiketli veri bulmak her zaman mümkün değil.
+
+551
+01:13:28,079 --> 01:13:30,079
+Ve maliyetli.
+
+552
+01:13:30,079 --> 01:13:33,079
+Eğer elimizde etiketsiz veri varsa.
+
+553
+01:13:33,079 --> 01:13:38,079
+Yani yine bir veri var ama bir alan uzmanı etiketlememiş olabilir.
+
+554
+01:13:38,079 --> 01:13:39,079
+Bu durumda.
+
+555
+01:13:39,079 --> 01:13:40,079
+Bu dataset ile.
+
+556
+01:13:40,079 --> 01:13:42,079
+Bu dataset ile ne yapabiliriz?
+
+557
+01:13:42,079 --> 01:13:45,079
+Clustering işlemlerini yapabiliriz.
+
+558
+01:13:45,079 --> 01:13:47,079
+Burada bir tane örnek var.
+
+559
+01:13:47,079 --> 01:13:52,079
+Bu yatırımcı dataseti.
+
+560
+01:13:52,079 --> 01:13:56,079
+Yatırım hesabı açan müşterilerin Customer ID sütunu var.
+
+561
+01:13:56,079 --> 01:13:59,079
+Müşteri numaralarını biliyoruz.
+
+562
+01:13:59,079 --> 01:14:04,079
+Açtıkları hesabın türünü, tipini biliyoruz.
+
+563
+01:14:04,079 --> 01:14:09,079
+İşte ve belli şeyler var burada.
+
+564
+01:14:09,079 --> 01:14:11,079
+Öz nitelikler var.
+
+565
+01:14:11,079 --> 01:14:13,079
+Margin account olup olmadığı.
+
+566
+01:14:13,079 --> 01:14:15,079
+Teknik terimler bunlar.
+
+567
+01:14:15,079 --> 01:14:17,079
+Transaction metodu.
+
+568
+01:14:17,079 --> 01:14:27,079
+Yani yatırım hesabında kişi işlem yaparken online olarak kendisi mi satın alma işlemlerini, satma ve alma işlemlerini yapıyor?
+
+569
+01:14:27,079 --> 01:14:29,079
+Yoksa bir broker ile mi yapıyor?
+
+570
+01:14:29,079 --> 01:14:31,079
+Brokerde telefon açıyorsunuz.
+
+571
+01:14:31,079 --> 01:14:36,079
+O yatırım uzmanı kişi sizin adınıza bu işlemi yapıyor gibi düşünün.
+
+572
+01:14:36,079 --> 01:14:38,079
+Sonra.
+
+573
+01:14:38,079 --> 01:14:41,079
+Sonra trades per month.
+
+574
+01:14:41,079 --> 01:14:47,079
+İşte sex, age and favorite recreation gibi alanlar var.
+
+575
+01:14:47,079 --> 01:14:49,079
+Cinsiyeti, yaşı.
+
+576
+01:14:49,079 --> 01:14:53,079
+Hangi konuda ilgi alanı nedir?
+
+577
+01:14:53,079 --> 01:14:56,079
+Bununla ilgili bir bölüm var.
+
+578
+01:14:56,079 --> 01:14:58,079
+Ve gelir aralığı var.
+
+579
+01:14:58,079 --> 01:15:00,079
+Yıllık gelir aralığı var.
+
+580
+01:15:00,079 --> 01:15:03,079
+Böyle bir dataset de mesela ne yapabilirim?
+
+581
+01:15:03,079 --> 01:15:06,079
+Ben yatırımcıları kümeleyebilirim.
+
+582
+01:15:06,079 --> 01:15:12,079
+Customer segmentation dediğimiz kümeleme işlemini yapabilirim.
+
+583
+01:15:12,079 --> 01:15:24,079
+Mesela bu veri setini üç farklı kümeye ayır deyip oluşan her bir kümenin kendi içerisinde benzer özelliklere sahip müşterileri bulunacak.
+
+584
+01:15:24,079 --> 01:15:35,079
+Daha sonra ben bu yatırımcıları işte en nitelikli yatırımcı vesaire diye belki hani gold, platinum falan gibi etiketler vereceğim bu müşterilere.
+
+585
+01:15:35,079 --> 01:15:39,250
+Böyle düşünün.
+
+586
+01:15:39,250 --> 01:15:47,250
+Aynen bu dataset yani yatırımcı datasetini eğer ben supervised learning için kullanacak olsam.
+
+587
+01:15:47,250 --> 01:15:59,250
+Bu datasette herhangi bir öz niteliği output variable olarak tanımlayıp bunun üzerinden bir sınıflama algoritması kullanabilirim.
+
+588
+01:15:59,250 --> 01:16:06,250
+Mesela online yatırımcılarının genel profilini bulmaya çalışıyorum diyelim ki.
+
+589
+01:16:06,250 --> 01:16:10,250
+Bunu bir supervised learning ile yapabilirim.
+
+590
+01:16:10,250 --> 01:16:12,250
+Bu slide'da lütfen dikkat.
+
+591
+01:16:12,250 --> 01:16:21,250
+Supervised learning için yatırımcı dataseti ile supervised learning kullansak neler yapabiliriz'i anlatıyor bize.
+
+592
+01:16:21,250 --> 01:16:23,250
+Değişik alternatifler var.
+
+593
+01:16:23,250 --> 01:16:31,500
+Ve bir de aynı yatırımcı veri setini bu defa unsupervised clustering ile kullansam.
+
+594
+01:16:31,500 --> 01:16:35,500
+Dediğim gibi herhangi bir etiket yokken ben bunu üzerinden ne yapabilirim?
+
+595
+01:16:35,500 --> 01:16:43,500
+Yatırımcıları customer segmentation dediğimiz şekilde gruplayabilirim.
+
+596
+01:16:43,500 --> 01:16:47,500
+Kafanızda şöyle bir soru işareti oluşabilir.
+
+597
+01:16:47,500 --> 01:16:50,500
+Bu dataseti nasıl supervised kullanacağım?
+
+598
+01:16:50,500 --> 01:16:52,500
+Şöyle kullanabilirsiniz.
+
+599
+01:16:52,500 --> 01:17:02,500
+Mesela transaction metodu dediğimiz sütunu output variable olarak kabul edip.
+
+600
+01:17:02,500 --> 01:17:04,500
+Diğer tüm.
+
+601
+01:17:04,500 --> 01:17:11,500
+Diğer tüm sütunları input olarak alırım.
+
+602
+01:17:11,500 --> 01:17:21,500
+Ve hangi müşterilerin online, hangi müşterilerin broker yardımıyla işlem yaptığını tahmin etmeye çalışırım.
+
+603
+01:17:21,500 --> 01:17:24,500
+Neye göre tahmin edeceğim?
+
+604
+01:17:24,500 --> 01:17:27,500
+İşte diğer parametrelerimiz.
+
+605
+01:17:27,500 --> 01:17:33,500
+Hesap türü, müşterinin cinsiyeti, yaşı, yıllık geliri gibi parametrelerine bakarak.
+
+606
+01:17:33,500 --> 01:17:37,500
+Hangi tür müşteriler daha çok online işlem yapar?
+
+607
+01:17:37,500 --> 01:17:39,500
+Hangileri broker ile işlem yapar?
+
+608
+01:17:39,500 --> 01:17:42,500
+Mesela tahmin etmeye çalışabilirim.
+
+609
+01:17:42,500 --> 01:17:45,500
+Burada bir domain experte ihtiyacım yok.
+
+610
+01:17:45,500 --> 01:17:52,500
+Sadece mevcut data içerisinden belli bir öz niteliği output olarak kabul edip.
+
+611
+01:17:52,500 --> 01:17:59,500
+Diğerlerini geriye kalan tüm öz nitelikleri input variable olarak alıyorum.
+
+612
+01:17:59,500 --> 01:18:03,479
+Ve böylece.
+
+613
+01:18:03,479 --> 01:18:06,479
+Supervised learning işlemlerini.
+
+614
+01:18:06,479 --> 01:18:08,479
+Bu da yine input olacak.
+
+615
+01:18:08,479 --> 01:18:24,439
+Supervised learning işlemlerini, algoritmalarını buna uygulayabiliyorum.
+
+616
+01:18:24,439 --> 01:18:29,439
+Firmadenciliği stratejilerini üçe ayırmıştık.
+
+617
+01:18:29,439 --> 01:18:34,439
+Supervised learning'i ise kendi içinde yine üçe ayırmıştık.
+
+618
+01:18:34,439 --> 01:18:38,439
+Classification, Estimation ve Prediction diye.
+
+619
+01:18:38,439 --> 01:18:40,439
+Şimdi.
+
+620
+01:18:40,439 --> 01:18:51,300
+Supervised learning altında yer alan classification'ın diğer yöntemlerle arasındaki farkı konuşacağız.
+
+621
+01:18:51,300 --> 01:18:59,609
+Classification'ın tarifinde dört tane madde verilmiş.
+
+622
+01:18:59,609 --> 01:19:04,609
+Firmadenciliği stratejilerinde classification supervised learning altında yer alıyordu.
+
+623
+01:19:04,609 --> 01:19:09,609
+O yüzden birinci madde bize diyor ki öğrenme işlemi eğiticilidir diyor.
+
+624
+01:19:09,609 --> 01:19:11,609
+Yani benim neye ihtiyacım var?
+
+625
+01:19:11,609 --> 01:19:12,609
+Bir training dataset'e ihtiyacım var.
+
+626
+01:19:12,609 --> 01:19:16,609
+Etiketli bir veri olması lazım elimde önce.
+
+627
+01:19:16,609 --> 01:19:22,609
+Dependent variable is categorical demiş.
+
+628
+01:19:22,609 --> 01:19:24,609
+Dependent variable ne demek?
+
+629
+01:19:24,609 --> 01:19:27,609
+Dependent variable output variable demek.
+
+630
+01:19:27,609 --> 01:19:33,609
+Benim tahmin etmeye çalıştığım class dependent variable'dır.
+
+631
+01:19:33,609 --> 01:19:37,609
+Ve bunun kategorik bir output olması gerekir.
+
+632
+01:19:37,609 --> 01:19:39,609
+Classification için.
+
+633
+01:19:39,609 --> 01:19:41,609
+O zaman az önce yaptığımız örnek.
+
+634
+01:19:41,609 --> 01:19:47,609
+Ve yaptığımız örneklerden tıbbi veri setini hatırlayın.
+
+635
+01:19:47,609 --> 01:19:58,609
+Boğaz enfeksiyonu, alerji ya da soğuk algınlığı teşhisini koyarken output variable'mız diagnosis'ti, teşhisti.
+
+636
+01:19:58,609 --> 01:20:04,609
+Ve teşhis sütununda üç farklı kategorik etiket gördük.
+
+637
+01:20:04,609 --> 01:20:09,609
+Boğaz enfeksiyonu, soğuk algınlığı veya alerji şeklinde.
+
+638
+01:20:09,609 --> 01:20:12,609
+Dolayısıyla bu bir classification algoritmasıydı.
+
+639
+01:20:12,609 --> 01:20:15,609
+Bizim verdiğimiz örnek.
+
+640
+01:20:15,609 --> 01:20:18,609
+Well defined classes demiş.
+
+641
+01:20:18,609 --> 01:20:19,609
+Bu ne demek?
+
+642
+01:20:19,609 --> 01:20:25,609
+Bu tanımladığımız sınıfların iyi tarif edilmiş olması gerekiyor.
+
+643
+01:20:25,609 --> 01:20:29,609
+Yani train datasında diyelim ki üç tane sınıf var.
+
+644
+01:20:29,609 --> 01:20:31,609
+Test datasında bir dördüncü olamaz.
+
+645
+01:20:31,609 --> 01:20:35,609
+Başta benim bütün class'ları biliyor olmam gerekir.
+
+646
+01:20:35,609 --> 01:20:37,609
+Ve her bir class için, her bir sınıf için belli sayıda semt var.
+
+647
+01:20:37,609 --> 01:20:38,609
+Ve her bir class için, her bir sınıf için belli sayıda semt var.
+
+648
+01:20:38,609 --> 01:20:41,609
+Belli sayıda sample'ın olması gerekir elimde.
+
+649
+01:20:41,609 --> 01:20:43,609
+Bir model oluşturabilmem için.
+
+650
+01:20:43,609 --> 01:20:47,609
+Classification için dördüncü madde ise diyor ki
+
+651
+01:20:47,609 --> 01:20:52,609
+Current rather than future behavior.
+
+652
+01:20:52,609 --> 01:20:59,609
+Bizim tahminimiz geleceğe dönük bir tahminde bulunmuyoruz.
+
+653
+01:20:59,609 --> 01:21:02,609
+Mevcut duruma göre bir tahminde bulunuyoruz.
+
+654
+01:21:02,609 --> 01:21:06,609
+Hastanın mevcut şikayetlerine bakıp
+
+655
+01:21:06,609 --> 01:21:09,609
+Mevcut durumuyla ilgili bir teşhis koyduk.
+
+656
+01:21:09,609 --> 01:21:14,609
+Yani geleceğe yönelik bir kestirim söz konusu değil.
+
+657
+01:21:14,609 --> 01:21:19,609
+Mevcut durumu sadece söylüyor bize classification.
+
+658
+01:21:19,609 --> 01:21:24,149
+Evet estimation'a bakacak olursak.
+
+659
+01:21:24,149 --> 01:21:30,149
+Estimation'da farklı olan dependent variable'ın
+
+660
+01:21:30,149 --> 01:21:37,149
+Nümerik olması yani tahmin etmeye çalıştığımız output variable'ımız.
+
+661
+01:21:37,149 --> 01:21:40,149
+Burada nümerik ise
+
+662
+01:21:40,149 --> 01:21:45,149
+Kullanacağımız yöntemler estimation başlığı altında yer alır.
+
+663
+01:21:45,149 --> 01:21:49,149
+Ve burada kullanacağımız yöntemler regresyon.
+
+664
+01:21:49,149 --> 01:21:56,119
+Regresyon yöntemlerini burada kullanmamız gerekir.
+
+665
+01:21:56,119 --> 01:22:01,119
+Ve yine burada Current rather than future behavior demiş.
+
+666
+01:22:01,119 --> 01:22:03,119
+Yani ne yapıyoruz?
+
+667
+01:22:03,119 --> 01:22:06,119
+Mevcut durumu tahmin ediyoruz.
+
+668
+01:22:06,119 --> 01:22:10,920
+Buna örnek
+
+669
+01:22:11,920 --> 01:22:16,250
+Ne verebiliriz?
+
+670
+01:22:16,250 --> 01:22:22,319
+Aklınıza hiç örnek geliyor mu?
+
+671
+01:22:22,319 --> 01:22:25,319
+İsterseniz bir de prediction'ı vereyim.
+
+672
+01:22:25,319 --> 01:22:28,319
+Ondan sonra diğerine örnek isteyeyim sizden.
+
+673
+01:22:28,319 --> 01:22:30,319
+Prediction ise
+
+674
+01:22:30,319 --> 01:22:33,659
+Prediction ise
+
+675
+01:22:33,659 --> 01:22:37,659
+Yine bir supervised learning söz konusu.
+
+676
+01:22:37,659 --> 01:22:39,659
+Fakat yaptığımız işlem
+
+677
+01:22:39,659 --> 01:22:43,659
+Predicting future rather than current outcomes diyor.
+
+678
+01:22:43,659 --> 01:22:48,659
+Amacımız geleceğe yönelik bir tahminde bulunmak.
+
+679
+01:22:49,659 --> 01:22:51,659
+Output variable'ımız
+
+680
+01:22:51,659 --> 01:22:53,659
+Prediction için söylüyorum.
+
+681
+01:22:53,659 --> 01:22:55,659
+Kategorik de olabilir, nümerik de olabilir diyor.
+
+682
+01:22:55,659 --> 01:22:58,659
+Şimdi ben buna şöyle örnek verebilirim.
+
+683
+01:22:58,659 --> 01:23:01,659
+Yarın hava durumu nasıl olacak?
+
+684
+01:23:01,659 --> 01:23:03,659
+Yorumu yapmak istiyorum.
+
+685
+01:23:03,659 --> 01:23:04,659
+Ne yapıyor?
+
+686
+01:23:04,659 --> 01:23:08,659
+Meteoroloji beş gün sonra hava durumunu bile bize söyleyebiliyor.
+
+687
+01:23:08,659 --> 01:23:10,659
+İşte burada yaptığımız şey prediction.
+
+688
+01:23:10,659 --> 01:23:15,659
+Yani geleceğe yönelik ben bir tahminde bulunuyorum.
+
+689
+01:23:15,659 --> 01:23:17,659
+Prediction işlemi yapıyorum.
+
+690
+01:23:17,659 --> 01:23:24,659
+Eğer bugün günlerden cuma ben pazar günü hava kaç derece olacak?
+
+691
+01:23:24,659 --> 01:23:31,659
+Öğlen en yüksek hava sıcaklığı ne kadar olacak sorusunu soruyorsam ve bunun cevabını bulmaya çalışıyorsam
+
+692
+01:23:31,659 --> 01:23:35,659
+Output variable'ım nümeriktir.
+
+693
+01:23:35,659 --> 01:23:45,659
+Ve future outcome yani geleceğe yönelik bir tahminde bulunmaya çalışıyorum anlamına gelir.
+
+694
+01:23:45,659 --> 01:23:47,659
+Yine pazar günü öğlen.
+
+695
+01:23:47,659 --> 01:24:00,659
+Hava bulutlu mu olacak, yağmurlu mu olacak, güneşli mi olacak sorusunun cevabını arıyorsam yani bir kategorik bir output söz konusuysa yine prediction yapıyorum.
+
+696
+01:24:00,659 --> 01:24:01,659
+Çünkü neyi buluyorum?
+
+697
+01:24:01,659 --> 01:24:02,659
+Future.
+
+698
+01:24:02,659 --> 01:24:05,659
+Gelecekte ne olduğunu söylüyorum.
+
+699
+01:24:05,659 --> 01:24:10,659
+O yüzden bu prediction'a bir örnek olabilir.
+
+700
+01:24:10,659 --> 01:24:14,199
+Başka ne örnek verebilirsiniz?
+
+701
+01:24:14,199 --> 01:24:18,199
+Mesela prediction için çok güzel örnekler var.
+
+702
+01:24:18,199 --> 01:24:26,189
+Uyuyor musunuz acaba? Beni dinleyen var mı?
+
+703
+01:24:26,189 --> 01:24:32,109
+Dinliyoruz hocam ama aklıma örnek gelmedi benim şu anda.
+
+704
+01:24:32,109 --> 01:24:51,760
+Borsa, hisse senedi, IMKB 100 endeksi, BİST 100 endeksi, Borsa İstanbul, BİST 100 endeksi, seçim tahminleri evet güzel, maç sonuçlarının tahmini.
+
+705
+01:24:51,760 --> 01:24:56,760
+Bunlar bak çete bakmamışım özür dilerim güzel şeyler var burada.
+
+706
+01:24:57,760 --> 01:25:01,760
+Covid-19 vaka sayısı mesela evet güzel.
+
+707
+01:25:01,760 --> 01:25:02,760
+Bu da çok güzel.
+
+708
+01:25:02,760 --> 01:25:06,760
+Tabi bir sürü parametre var açılmanın etkisini orada görebiliriz değil mi?
+
+709
+01:25:06,760 --> 01:25:08,760
+Açılmadan önce ve sonra gibi.
+
+710
+01:25:08,760 --> 01:25:18,090
+Ne yapıyoruz? Geleceğe yönelik tahminde bulunmuş oluyoruz verdiğimiz örneklerde.
+
+711
+01:25:18,090 --> 01:25:20,090
+Pekala.
+
+712
+01:25:20,090 --> 01:25:24,090
+Burada üç farklı şeyi görmüş olduk.
+
+713
+01:25:24,090 --> 01:25:28,090
+Estimation, prediction için.
+
+714
+01:25:28,090 --> 01:25:29,090
+Bunları görmüş olduk.
+
+715
+01:25:29,090 --> 01:25:30,090
+Estimation, prediction için.
+
+716
+01:25:30,090 --> 01:25:31,090
+Bunları görmüş olduk.
+
+717
+01:25:31,090 --> 01:25:34,090
+Bunlar arasındaki farkı ile getirmiş olduk.
+
+718
+01:25:34,090 --> 01:25:38,090
+Şimdi üçüncü bir stratejimiz vardı market sepeti analize.
+
+719
+01:25:38,090 --> 01:25:43,960
+Market sepeti analize.
+
+720
+01:25:43,960 --> 01:26:03,960
+Üçüncü stratejimiz markette satılan ürünler arasında yani müşterilerin satın aldığı ürünler arasında ilişki kurarak birlikte sık satın alınan ürünleri bulmaya çalışıyoruz.
+
+721
+01:26:03,960 --> 01:26:04,960
+Ürünler arasında satılan ürünler arasında ilişki kurarak birlikte sık satın alınan ürünleri bulmaya çalışıyoruz.
+
+722
+01:26:04,960 --> 01:26:05,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+723
+01:26:05,960 --> 01:26:06,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+724
+01:26:06,960 --> 01:26:07,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+725
+01:26:07,960 --> 01:26:08,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+726
+01:26:08,960 --> 01:26:09,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+727
+01:26:09,960 --> 01:26:10,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+728
+01:26:10,960 --> 01:26:11,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+729
+01:26:11,960 --> 01:26:12,960
+Yani işte hep şey örneği vardır ya bebek bezi ve bira örneği.
+
+730
+01:26:12,960 --> 01:26:30,340
+Ama Amerika'da cuma akşamları markete giden evli orta yaş erkekler marketten en sık aldıkları ve birlikte satın aldıkları ürün çiftlerini buluyorlar.
+
+731
+01:26:30,340 --> 01:26:46,699
+Bakın ürün çiftlerini buluyorlar ve normalde belli ürün çiftleri vardır. Herkesin aklına gelir zaten bunlar birlikte satılır. Yani nedir? Bira ile çerez mesela böyle bir örnek verilebilir.
+
+732
+01:26:48,699 --> 01:26:59,760
+Simit alan yanına belki bir içecek alıyor gibi yorumlar yapabilirsiniz. Bunlar hep insanların aklına gelebilecek ürün grupları.
+
+733
+01:26:59,760 --> 01:27:20,100
+İkili ve üçlü ürün grupları ama bebek bezi ve bira hiç insanın aklına gelmeyecek şeyler. Fakat bir de gün şeyi koyuyor. Cuma günü akşam iş çıkışı markete giden erkeklerin satın aldıkları ürünler. İkili ürün grubunda en sık satılan bunlar çıkıyormuş.
+
+734
+01:27:20,100 --> 01:27:29,100
+Böyle interesting relationship bakın burada ilginç olan ilişkileri bu sepet analizleri.
+
+735
+01:27:29,760 --> 01:27:44,979
+Burada kullandığımız şey birliktelik kuralları. Association rules dediğimiz hangi ürün hangi ürünle birlikte satılıyor. İlişkisini bulmaya çalışıyoruz market sepeti analizinde.
+
+736
+01:27:48,460 --> 01:28:05,689
+Burada başka örnekler verilmiş. Biraz market sepeti analizi ile ilgili kısa biraz daha konuşabiliriz belki. Bebek bezi ve bira örneğini verdik sık satılan ürünler için.
+
+737
+01:28:05,689 --> 01:28:07,869
+Burada şeyi anlatayım.
+
+738
+01:28:08,050 --> 01:28:24,649
+Biz aşağı yukarı herhalde bir sekiz yıl olmuştur. Belki on yılda olmuş olabilir. İlk market sepeti analizi uygulamasını yapmak istediğimizde Migros kariyer günlerine gelmişti. Yıldız Teknik Üniversitesi'nde kariyer günlerine gelmişti.
+
+739
+01:28:24,649 --> 01:28:36,350
+Ve biz Migros'tan rica ettik market sepeti analizi yapacağız. Bize alışveriş sepetlerinde sık satılan ürünleri bulmak istiyoruz. İşte belli bir mağazada belli bir şubede.
+
+740
+01:28:36,350 --> 01:28:46,569
+Ve müşterilerin satın aldıkları ürünleri yani sepetleri ve sepetlerdeki ürünleri istiyoruz. Yani müşterilerle hiç işimiz yok. Hangi müşteri almış bunu da bilmemize gerek yok.
+
+741
+01:28:47,069 --> 01:28:54,630
+Ama sepetteki ürünleri bulmak istiyoruz dedik. Görmek istiyoruz. Ve bundan böyle bir data sağlamalarını istedik bizden.
+
+742
+01:28:56,390 --> 01:29:05,750
+Bize bir söz verdiler. Tabii hemen paylaşırız falan. Ama bu izinleri almak inanın çok zor. Veri madenciliğinde veri bulmak çok zor.
+
+743
+01:29:06,350 --> 01:29:18,270
+İnsanlar veriyi çok gizli bilgi gibi saklıyorlar. Özellikle satış verilerini. Rekabet ettikleri firmaların eline geçer kaygısı var belki. Bilemiyorum neden olduğunu.
+
+744
+01:29:18,270 --> 01:29:34,149
+Ama çok zor bu anlamda veri almak. Neyse biz Migros'tan ilgili kişi müdüründen izin aldı. O müdür kendi üst müdüründen izin aldı. Derken 3 ay sonunda bütün izinler tamamlandı ve veri bize geldi.
+
+745
+01:29:34,949 --> 01:29:36,149
+Fakat veride hiçbir hiyerarşi.
+
+746
+01:29:36,350 --> 01:29:55,409
+Hiyerarşik yapı yoktu. Bu ne demek? Benim önce elimdeki verinin mesela çay diyelim ki bir çay için bir kod varsa bu kodun bir hiyerarşik alt kırılımında çayın çeşitleri olması lazım.
+
+747
+01:29:55,409 --> 01:30:06,329
+Toz çay, demlik poşeti, bardak poşeti diye. Sonra bu çay çeşitlerinin marka kırılımlarının olması lazım. Paket kırılımlarının olması lazım.
+
+748
+01:30:06,350 --> 01:30:15,090
+Fakat mağazada ürün kodu ve bu hiyerarşik yapıyı gösteren hiçbir kodlama tekniği olmadığını gördük.
+
+749
+01:30:15,090 --> 01:30:26,369
+Ve bu datayla çalışan öğrencim oturdu bunların hepsini tek tek elle. Tabii elle dediğim bütün önce çay geçenleri buldu. Onları kendi içinde grupladı vesaire.
+
+750
+01:30:26,789 --> 01:30:35,430
+Ama ham veriyle uğraşmak gerçekten çok zor. Veriyi önce anlamlı hale getirmeniz gerekiyor. Bu zorlukları söylemek istiyorum.
+
+751
+01:30:36,350 --> 01:30:41,829
+Madenciliği çalışmak istiyor da sonradan onun o kadar kolay olmadığını da anlıyorlar.
+
+752
+01:30:42,430 --> 01:30:50,829
+Neyse veriyi düzenledikten sonra biz market sepeti analizi yaptık. Bebek, bezi, bira örneği gibi bir ilişki bulmaya çalışıyoruz.
+
+753
+01:30:51,909 --> 01:31:06,779
+Birlikte sık satılan ikili ürün çeşidinde ne çıktı dersiniz? Biraz fikir yürütün.
+
+754
+01:31:10,039 --> 01:31:18,579
+İnsanlar en çok ne alır ikili ürün olarak? Hiçbir fikrimiz yok mu?
+
+755
+01:31:18,579 --> 01:31:19,500
+Sigara, çay.
+
+756
+01:31:19,659 --> 01:31:20,880
+Sigara çakmak olabilir mi?
+
+757
+01:31:21,460 --> 01:31:26,000
+Çekirdek kola, sigara çakmak. Bak güzel örnekler bulmuşsunuz.
+
+758
+01:31:27,319 --> 01:31:34,199
+Bebek, bezi, kola. Bu ikimin aklına gelir [öğrenci]? Tahin, pekmez. O süper güzel.
+
+759
+01:31:34,699 --> 01:31:42,720
+Demek ki bunlar bak hepimiz belli tecrübelerle söyleyebiliyoruz. Şu ikili ürün grubu bir arada satılırı söyleyebiliyoruz.
+
+760
+01:31:43,119 --> 01:31:44,979
+Bebek, bezi, ıslak mendil. Güzel.
+
+761
+01:31:45,979 --> 01:31:48,979
+Ama Türkiye'de birinci sırada peynir ekmekleri.
+
+762
+01:31:49,659 --> 01:31:52,600
+Peynir ekmek çıktı arkadaşlar. Çok doğal değil mi?
+
+763
+01:31:53,539 --> 01:31:59,439
+Yani bir ürün markette çok satılıyorsa ne dersiniz? Peynir ekmek gibi gidiyor dersiniz değil mi?
+
+764
+01:31:59,880 --> 01:32:03,260
+Biz de bunu ispatlamış olduk market sepeti analiziyle.
+
+765
+01:32:03,800 --> 01:32:07,119
+Peki market sepeti analizinin amacı ne?
+
+766
+01:32:07,779 --> 01:32:09,859
+Amacı, bakın burada ne yazdık?
+
+767
+01:32:10,359 --> 01:32:12,060
+Interesting relationship.
+
+768
+01:32:12,739 --> 01:32:16,180
+Benim ilginç ilişkiler bulmam gerekiyor.
+
+769
+01:32:16,180 --> 01:32:19,180
+Sıradan ilişkileri zaten markette.
+
+770
+01:32:19,659 --> 01:32:27,180
+Evet, satış ekibindeki kişilere sorsanız onlar size sayar hangi ürünler en çok satılıyor.
+
+771
+01:32:27,180 --> 01:32:32,180
+Çünkü o ürünleri onlar yerleştiriyor ve bilir yani nelerin çok sattığını.
+
+772
+01:32:32,180 --> 01:32:39,420
+Sonra dedik ki evet biz ilginç ürün ikilileri aradığımıza göre belli ürünleri dışarıda bırakalım.
+
+773
+01:32:39,420 --> 01:32:42,420
+Birinci sıradakini bırakalım, ikinci sıradakine bakalım.
+
+774
+01:32:42,420 --> 01:32:44,899
+İkinci sırada da zeytin ekmek çıktı.
+
+775
+01:32:44,899 --> 01:32:48,539
+Yani bizim ihtiyaçlarımız tabii temel ihtiyaçlar demek ki.
+
+776
+01:32:48,539 --> 01:32:49,340
+Eee?
+
+777
+01:32:49,340 --> 01:32:56,220
+Sonra biz şunu anladık, temel ürünleri bu listeden çıkarmak gerekiyor.
+
+778
+01:32:56,220 --> 01:33:01,260
+Ekmek, su, peynir, zeytin gibi belki ürünleri buradan çıkarmak gerekiyor.
+
+779
+01:33:01,260 --> 01:33:06,859
+Ve ondan sonra ilginç ikiyeli ürünlere, üçlü ürünlere bakmamız gerekiyor.
+
+780
+01:33:08,819 --> 01:33:15,619
+Sonuç olarak benim burada vurgulamak istediğim şey, bu yaşadığımız tecrübeyi ben niye anlattım?
+
+781
+01:33:15,619 --> 01:33:19,619
+Interesting relationship'in ne olduğunu anlamanız için anlattım.
+
+782
+01:33:20,619 --> 01:33:36,069
+İlginç ilişkileri görmek istiyorsak, temel ürünleri dışarıda bırakmamız gerekiyor market sepeti analizi yaparken.
+
+783
+01:33:36,069 --> 01:33:43,989
+Evet unsupervised clustering ile ilgili yapılan çalışmalar ve geldik kredi kartı promosyonu veri setine.
+
+784
+01:33:43,989 --> 01:33:55,939
+Bu kredi kartı promosyonu veri seti ile biz bir production rule dediğimiz kurallar yazacağız ve bu kuralların,
+
+785
+01:33:55,939 --> 01:33:56,939
+eee,
+
+786
+01:33:56,939 --> 01:33:57,939
+eee,
+
+787
+01:33:57,939 --> 01:34:03,100
+kuralların belli parametreleri var,
+
+788
+01:34:03,100 --> 01:34:16,859
+Onları konuşacağız burada bulmak istediğimiz şey hayat sigortası promosyonu, life insurance promotion olsun diyor birinci kural için.
+
+789
+01:34:16,859 --> 01:34:18,859
+Şimdi burada bir data set var,
+
+790
+01:34:22,800 --> 01:34:31,199
+hayat sigortası output olacak dedik notumuzu aldık.
+
+791
+01:34:31,380 --> 01:34:31,880
+Bu data set de,
+
+792
+01:34:32,380 --> 01:34:32,880
+eee,
+
+793
+01:34:34,380 --> 01:34:39,119
+Kredi kartı kullanan kişilere belli promosyonlar sunulmuş.
+
+794
+01:34:41,399 --> 01:34:46,399
+Bunlar 3 farklı pardon bu mouse değil şunu kullanmam gerekiyor.
+
+795
+01:34:46,539 --> 01:34:48,180
+3 farklı promosyon sunulmuş.
+
+796
+01:34:48,180 --> 01:34:57,479
+Magazin, saat, hayat sigortası ve bu 3 promosyonun dışında kart kullanıcısının neyi biliyorum?
+
+797
+01:34:57,899 --> 01:35:01,380
+Hangi yıllık gelir aralığında olduğunu biliyorum.
+
+798
+01:35:01,380 --> 01:35:05,500
+Kredi kartına sigorta yaptırıyor mu yaptırmıyor mu bunu biliyorum.
+
+799
+01:35:05,960 --> 01:35:08,380
+Yurt dışında bu tür uygulamalar var.
+
+800
+01:35:08,520 --> 01:35:11,439
+Türkiye'de de galiba var emin değilim.
+
+801
+01:35:11,579 --> 01:35:13,180
+Kredi kartı sigortası yaptırabiliyorsunuz.
+
+802
+01:35:13,180 --> 01:35:22,659
+Hani böyle kullanımdan doğan işte kart bilgilerinin kaptırılması gibi olaylara karşı sizi koruyor.
+
+803
+01:35:23,359 --> 01:35:27,659
+Kart kullanıcısının cinsiyeti ve yaşı gibi bilgiler var elimde.
+
+804
+01:35:27,840 --> 01:35:29,460
+Yani data bunların hepsi.
+
+805
+01:35:29,859 --> 01:35:31,180
+Bu datadan faydalanıyor.
+
+806
+01:35:31,380 --> 01:35:42,520
+Faydalanarak ben bu veri setinde işte mesela kredi kartı sigortası kim yaptırır bunu bulmak istiyorsam bunu output olarak tanımlayabilirim.
+
+807
+01:35:42,520 --> 01:35:48,159
+Ama benim örneğimde hayat sigortası promosyonuna kimler evet deri ben tahmin etmeye çalışıyorum.
+
+808
+01:35:48,699 --> 01:35:52,100
+Dolayısıyla bunu output variable olarak alacağım.
+
+809
+01:35:54,369 --> 01:35:55,909
+Şurada bir eraser vardı.
+
+810
+01:35:56,670 --> 01:35:57,630
+Şunu silelim.
+
+811
+01:36:04,720 --> 01:36:09,159
+Ve hayat sigortası promosyonunu output olarak tanımlıyorum.
+
+812
+01:36:09,279 --> 01:36:11,659
+Bu output variable'ımız bizim.
+
+813
+01:36:14,789 --> 01:36:17,289
+Diğerleri ise input variable'ımız olacak.
+
+814
+01:36:17,909 --> 01:36:21,710
+Buna göre belli kurallar yazacağız.
+
+815
+01:36:22,149 --> 01:36:32,510
+Ve bu kuralların ne kadarı, bu müşterilerin ne kadarını kapsıyor vesaire bunları ölçmeye çalışacağız.
+
+816
+01:36:38,090 --> 01:36:43,829
+Burada bir if'ten ifadesi görüyorsunuz.
+
+817
+01:36:43,829 --> 01:36:46,029
+Şimdi belli kurallar.
+
+818
+01:36:46,029 --> 01:36:58,149
+Bu kuralların bir karar ağacı, decision tree dediğimiz karar ağaçları ile oluşturulduğunu söyleyebilirim.
+
+819
+01:36:58,649 --> 01:37:08,409
+Birinci kural yani ağacın işte bütün test düğümlerini geçerek ağacın yaprağında hangi karar verilmiş onu gösteriyor bize.
+
+820
+01:37:08,409 --> 01:37:15,250
+Diyor ki bu kurallarda eğer cinsiyeti lütfen bunu not alın.
+
+821
+01:37:15,350 --> 01:37:16,010
+Şimdi datasını.
+
+822
+01:37:16,029 --> 01:37:17,949
+Sete geçeceğim bunu göremeyeceksiniz.
+
+823
+01:37:18,390 --> 01:37:39,180
+Cinsiyeti kadınsa ve yaşı 19 ile 43 arasında ise hayat sigortası promosyonuna evet der diyor.
+
+824
+01:37:41,430 --> 01:37:48,930
+Bu kuralı karar ağacının işte belli bir dalını takip ederek yazabiliriz.
+
+825
+01:37:48,930 --> 01:37:50,930
+Şimdi yazdığımız kurallar.
+
+826
+01:37:50,930 --> 01:37:55,310
+Bu kural için iki tane parametremiz var.
+
+827
+01:37:55,409 --> 01:38:02,979
+Aşağıda görüyorsunuz rule accuracy ve rule coverage.
+
+828
+01:38:04,159 --> 01:38:04,340
+Tamam.
+
+829
+01:38:05,140 --> 01:38:07,079
+Rule accuracy ne demek?
+
+830
+01:38:08,520 --> 01:38:10,000
+Rule accuracy ne demek?
+
+831
+01:38:11,760 --> 01:38:15,180
+Bir de rule coverage ne demek?
+
+832
+01:38:15,659 --> 01:38:16,619
+Bunları konuşacağız.
+
+833
+01:38:23,960 --> 01:38:24,439
+Bakalım.
+
+834
+01:38:24,439 --> 01:38:24,479
+Bakalım.
+
+835
+01:38:28,010 --> 01:38:30,789
+Cinsiyeti kadın olup yaşı 19-43.
+
+836
+01:38:31,010 --> 01:38:38,130
+Arasında olanların tamamı acaba hayat sigortası promosyonuna evet demiş mi?
+
+837
+01:38:38,909 --> 01:38:42,649
+Kuralı train datasetten kontrol edeceğiz şimdi.
+
+838
+01:38:42,649 --> 01:38:47,850
+Ve buradan kuralın doğruluğunu ölçmeye çalışacağız.
+
+839
+01:38:48,430 --> 01:38:51,970
+Hayat sigortası promosyonuna evet diyenler.
+
+840
+01:38:53,270 --> 01:38:53,590
+1
+
+841
+01:38:53,590 --> 01:38:55,210
+2
+
+842
+01:38:55,210 --> 01:38:56,390
+3
+
+843
+01:38:56,390 --> 01:38:57,449
+4
+
+844
+01:38:57,449 --> 01:38:58,869
+5
+
+845
+01:38:58,869 --> 01:38:59,750
+6
+
+846
+01:38:59,750 --> 01:39:00,409
+7
+
+847
+01:39:00,409 --> 01:39:01,250
+8
+
+848
+01:39:01,250 --> 01:39:02,649
+9 kişiymiş.
+
+849
+01:39:03,270 --> 01:39:08,329
+Şimdi kadın kart kullanıcıların önce grupluyorum.
+
+850
+01:39:08,329 --> 01:39:19,090
+Kadın 1, 2, 3, 4, 5, 6, 7 tane kadın kart kullanıcısı varmış.
+
+851
+01:39:19,590 --> 01:39:26,390
+Bu kart kullanıcı kadınların ne kadarı 19-43 arasında olanlar kaç kişi önce ona bakacağım.
+
+852
+01:39:26,989 --> 01:39:30,109
+Bu kuralı sağlıyor 19-43 aralığındadır.
+
+853
+01:39:30,409 --> 01:39:32,649
+Female 38 evet sağlıyor.
+
+854
+01:39:33,069 --> 01:39:33,510
+55.
+
+855
+01:39:33,970 --> 01:39:37,350
+Bu benim aralığımda değil.
+
+856
+01:39:40,170 --> 01:39:45,689
+İF kuralımı sağlamadı 3. kadın kart kullanıcısı.
+
+857
+01:39:45,689 --> 01:39:46,689
+Şunu aldım.
+
+858
+01:39:47,970 --> 01:39:52,869
+Kadın 41 yaşında, 43 yaşında, 43 yaş sınır olarak dahildi.
+
+859
+01:39:53,609 --> 01:39:58,670
+39 yaşında bu da benim için geçerli bir örnektir.
+
+860
+01:39:59,069 --> 01:40:02,149
+Ve 19 sınır ve dahil olduğu için 10 dahildir.
+
+861
+01:40:02,149 --> 01:40:02,210
+Ve 19 sınır ve dahil olduğu için 10 dahildir.
+
+862
+01:40:02,210 --> 01:40:08,970
+2, 4, 6 tane kart kullanıcısı kadın ve yaşı 19-43 arasında.
+
+863
+01:40:09,470 --> 01:40:15,149
+Bu 6 tane kart kullanıcısının hangileri yani kaçı buna evet demiş?
+
+864
+01:40:15,909 --> 01:40:18,329
+Bakıyorum şimdi bunu karşılaştırıyorum.
+
+865
+01:40:20,369 --> 01:40:25,289
+1, 2, 3, 4, 5, 6.
+
+866
+01:40:25,289 --> 01:40:32,170
+Yani 6'sı da bu hayat sigortası promosyonuna evet demiş.
+
+867
+01:40:32,210 --> 01:40:39,789
+Dolayısıyla bu kuralın rule accuracy'sini yazarken kuralın doğruluğunu %100 diyorum.
+
+868
+01:40:40,390 --> 01:40:40,850
+Neden?
+
+869
+01:40:41,390 --> 01:40:47,770
+Çünkü ben kadın ve yaşı 19-43 arasında 6 kişi tespit ettim.
+
+870
+01:40:48,090 --> 01:40:54,170
+Bu 6 kişinin 6'sı da hayat sigortası promosyonuna evet demiş.
+
+871
+01:40:54,789 --> 01:40:59,729
+Dolayısıyla kuralım %100 doğru çalışan bir kuraldır diyorum.
+
+872
+01:41:00,430 --> 01:41:01,510
+İkincisi,
+
+873
+01:41:02,210 --> 01:41:03,329
+rule coverage'tı.
+
+874
+01:41:03,890 --> 01:41:06,109
+Rule coverage ise şunu gösteriyor arkadaşlar.
+
+875
+01:41:06,109 --> 01:41:14,109
+Ben hayat sigortası promosyonuna evet diyen 2, 4, 6, 8, 9 kişi bulmuştum.
+
+876
+01:41:14,970 --> 01:41:19,109
+9 tane kullanıcı burada yes cevabını vermişti.
+
+877
+01:41:20,750 --> 01:41:27,970
+Ama ben bu kümenin sadece 6'sını bulabildim, tarif edebildim.
+
+878
+01:41:28,250 --> 01:41:32,109
+Yazmış olduğum kural ile bu 9 kişinin,
+
+879
+01:41:32,109 --> 01:41:35,710
+bu 6 kişilik grubun sadece 6'sını bulabildim.
+
+880
+01:41:36,710 --> 01:41:42,390
+O yüzden rule coverage 6 bölü 9 olacak.
+
+881
+01:41:42,850 --> 01:41:48,369
+Yani 2 bölü 3 ya da 0.66, %66 diyebilirim.
+
+882
+01:41:48,510 --> 01:41:58,850
+Bu kuralın kapsaması için baktığımızda rule coverage için %66 diyoruz.
+
+883
+01:41:59,090 --> 01:42:01,250
+Rule accuracy için %100 diyoruz.
+
+884
+01:42:01,250 --> 01:42:03,109
+Yazmış olduğumuz kural için.
+
+885
+01:42:03,810 --> 01:42:03,949
+Burada,
+
+886
+01:42:03,970 --> 01:42:04,710
+burada bir tanım var.
+
+887
+01:42:04,829 --> 01:42:05,229
+Diyor ki,
+
+888
+01:42:05,710 --> 01:42:06,489
+rule accuracy,
+
+889
+01:42:09,260 --> 01:42:12,199
+between class measure'dır diyor.
+
+890
+01:42:12,399 --> 01:42:16,020
+Yani sınıflar arası bir ölçme yapar diyor.
+
+891
+01:42:16,640 --> 01:42:22,479
+Çünkü evet diyen ve hayır diyen grup için karşılaştırma yapıyorum.
+
+892
+01:42:22,699 --> 01:42:23,199
+Yani ne kadar,
+
+893
+01:42:23,420 --> 01:42:26,100
+şöyle söyleyelim,
+
+894
+01:42:26,819 --> 01:42:30,359
+ne kadarını doğru bulduğumu söylerken,
+
+895
+01:42:30,739 --> 01:42:33,399
+bunların içerisinde hayırlar da çıkabilirdi.
+
+896
+01:42:33,399 --> 01:42:35,399
+O yüzden between class measure'dır.
+
+897
+01:42:35,659 --> 01:42:37,920
+Diyoruz rule accuracy'ye.
+
+898
+01:42:38,220 --> 01:42:41,960
+Rule coverage için ise şunu söyleyebiliriz.
+
+899
+01:42:41,960 --> 01:42:44,960
+Bu bir sınıf içi ölçme tekniğidir.
+
+900
+01:42:45,159 --> 01:42:47,039
+Within class measure diyor.
+
+901
+01:42:47,640 --> 01:42:54,779
+Sınıf içi ölçme derken ben evet sınıfı içerisinde 9 tane kart kullanıcısı var dedim.
+
+902
+01:42:56,260 --> 01:43:01,600
+Elimdeki dataset'e bakarak ve bu 9'un ne kadarını tarif ettim.
+
+903
+01:43:01,939 --> 01:43:04,899
+Sadece 6 tanesini, 6 kişiyi tarif ettim.
+
+904
+01:43:04,899 --> 01:43:06,380
+Ne yapıyorum?
+
+905
+01:43:06,819 --> 01:43:10,699
+Hep sınıf içi bir ölçme kullanıyorum.
+
+906
+01:43:10,819 --> 01:43:13,199
+Within class measure diye geçiyor.
+
+907
+01:43:13,699 --> 01:43:15,760
+Bu rule coverage kavramım.
+
+908
+01:43:16,340 --> 01:43:17,460
+Hocam bir şey sorabilir miyim?
+
+909
+01:43:17,960 --> 01:43:18,340
+Buyurun.
+
+910
+01:43:18,800 --> 01:43:21,779
+Koşulu zaten tabloya bakarak yazmıştık ya.
+
+911
+01:43:22,039 --> 01:43:25,640
+Yani rule accuracy'yi %100 olmayan nasıl olabilir ki?
+
+912
+01:43:25,760 --> 01:43:26,479
+Onu anlamadım ben.
+
+913
+01:43:27,220 --> 01:43:31,399
+Şimdi karar ağaçlarıyla model oluştururken,
+
+914
+01:43:31,399 --> 01:43:34,399
+model train dataset'i %100 sağlamaktadır.
+
+915
+01:43:34,899 --> 01:43:35,619
+Anlatabildim mi?
+
+916
+01:43:35,619 --> 01:43:44,180
+Yani öyle bir karar ağacı yaparım ki mesela iki seviyeli bir ağaç yaparım.
+
+917
+01:43:44,319 --> 01:43:49,600
+Ama iki seviye bu sınıflamayı yapmak için yeterli olmayabilir.
+
+918
+01:43:49,720 --> 01:43:51,859
+Yani iki tane test düğümü koyarım sadece.
+
+919
+01:43:52,020 --> 01:43:56,939
+Bir üçüncü test düğümü koymazsam eğer ne olmuş olur?
+
+920
+01:43:57,060 --> 01:43:58,340
+%100 olmayabilir.
+
+921
+01:43:58,960 --> 01:43:59,579
+Anlatabildim mi?
+
+922
+01:43:59,579 --> 01:44:05,199
+Yani zaten henüz model üretmeyle ilgili teknikleri görmediğimiz için
+
+923
+01:44:05,199 --> 01:44:06,260
+orada yorum yapamıyorum.
+
+924
+01:44:06,279 --> 01:44:11,500
+Anlıyorsunuz belki anlıyorum ama yazdığımız kurallar %100 doğru çalışacak diye bir şart yok.
+
+925
+01:44:11,899 --> 01:44:12,859
+Train dataset için.
+
+926
+01:44:14,720 --> 01:44:15,680
+Hocam bir şey sorabilir miyim?
+
+927
+01:44:16,000 --> 01:44:16,359
+Buyurun.
+
+928
+01:44:17,180 --> 01:44:20,659
+Burada verim adancelinde hali daha başarılı bir sonuç elde etmek için
+
+929
+01:44:20,659 --> 01:44:23,479
+accuracy ve coverage dengeli mi ilerlemek zorunda?
+
+930
+01:44:23,640 --> 01:44:26,119
+Mesela bu kuralımızda üst sınırı 43 değildi.
+
+931
+01:44:26,260 --> 01:44:27,600
+Şu 55 falan uymamıştı.
+
+932
+01:44:27,939 --> 01:44:31,640
+60 yapsaydık accuracy düşerdi ama coverage yükselir miydi?
+
+933
+01:44:31,720 --> 01:44:33,239
+Mesela burada nasıl bir yol izleniyor?
+
+934
+01:44:36,279 --> 01:44:39,979
+Yani bu kuralı ben kendim gelişigüzel yazmadım.
+
+935
+01:44:40,079 --> 01:44:41,000
+Önce onu söyleyeyim.
+
+936
+01:44:41,680 --> 01:44:46,220
+Bu kuralı yazabilmek için hani tıbbi datasetini hatırlıyor musunuz?
+
+937
+01:44:46,260 --> 01:44:48,159
+Ne çıkmıştı model orada?
+
+938
+01:44:48,899 --> 01:44:52,380
+Swollen gland yes or no önce sorulacak demiştik.
+
+939
+01:44:52,460 --> 01:44:54,840
+En ayırt edici öz nitelik budur demiştik.
+
+940
+01:44:56,039 --> 01:45:00,260
+Swollen gland sorusunu ya da bu öz niteliği test ettikten sonra
+
+941
+01:45:00,600 --> 01:45:05,880
+fever ateş var mı yok mu sorusunu soracağız ve bunu test edeceğiz dedik.
+
+942
+01:45:05,880 --> 01:45:09,880
+Yani karar ağacı bize bir dizi ne üretiyor?
+
+943
+01:45:09,880 --> 01:45:14,479
+Test düğümü üretiyor ve o test düğümünde hangi aralıkları kullanacağımızı da
+
+944
+01:45:14,479 --> 01:45:17,279
+o karar ağacı söylüyor aslında bize.
+
+945
+01:45:19,279 --> 01:45:23,680
+Buradaki yaş içinde nümerik bir öz nitelik kırılma noktalarını bulacağız
+
+946
+01:45:23,680 --> 01:45:29,279
+ve bu kırılma noktalarını karar ağacı yine kullanacak.
+
+947
+01:45:29,680 --> 01:45:34,779
+Yani gelişigüzel seçtiğimiz bir şey değil onu belirtmek isterim.
+
+948
+01:45:34,779 --> 01:45:40,779
+Yani decision tree algoritmasını gördüğümüzde zaten bu daha net anlaşılacak.
+
+949
+01:45:44,850 --> 01:45:45,869
+Başka soru var mı?
+
+950
+01:45:48,699 --> 01:45:51,159
+Eğer yoksa size böyle bir soru soruyorum hemen.
+
+951
+01:45:51,840 --> 01:45:57,880
+Bakın yeni bir kural yazdım ama bu kural yeni bir output için.
+
+952
+01:45:58,199 --> 01:46:05,880
+Yani output'u life insurance promotion'a no diyen grubu tarif etmek için kullanıyoruz.
+
+953
+01:46:05,880 --> 01:46:06,880
+Tamam mı?
+
+954
+01:46:07,520 --> 01:46:09,880
+Life insurance promotion'a no diyen grubu.
+
+955
+01:46:09,960 --> 01:46:12,960
+Lütfen kuralı yazın bir kenara.
+
+956
+01:46:12,960 --> 01:46:16,380
+Çünkü şimdi data seti açacağım bunu göremeyeceksiniz.
+
+957
+01:46:17,640 --> 01:46:35,039
+Cinsiyeti erkek ve gelir aralığı income range'i 40-50 bin olan kart kullanıcıları için
+
+958
+01:46:35,039 --> 01:46:42,510
+hayat sigortası promosyonu yaptırmaz diye bir kural üretmiş karar ağacı.
+
+959
+01:46:43,569 --> 01:46:47,890
+Şimdi bu kural bu train data setiyle karşılaştırdığımızda
+
+960
+01:46:47,890 --> 01:46:48,729
+karşılaştırdığımızda.
+
+961
+01:46:48,890 --> 01:46:56,640
+Kuralın doğruluğu, rule accuracy'sini ve rule coverage'ını hesaplayacağız.
+
+962
+01:47:00,699 --> 01:47:02,399
+Data seti açalım bakalım.
+
+963
+01:47:09,569 --> 01:47:27,640
+Data sette yine hayat sigortası promosyonu bizim output variable'ımız.
+
+964
+01:47:28,279 --> 01:47:33,939
+Ama no olan gruba bakıyorum.
+
+965
+01:47:34,579 --> 01:47:36,619
+Dolayısıyla önce no'ları bir sayalım.
+
+966
+01:47:36,619 --> 01:47:41,460
+Bir, iki, üç, dört, beş.
+
+967
+01:47:41,680 --> 01:47:46,680
+Altı tane no sınıfından sample'ımız var.
+
+968
+01:47:48,680 --> 01:47:51,180
+Erkek kart kullanıcılarına bakıyoruz.
+
+969
+01:47:51,439 --> 01:47:59,920
+Bir, iki, üç, dört, beş, altı, yedi, sekiz tane erkek kart kullanıcısı var.
+
+970
+01:48:00,399 --> 01:48:07,380
+Ve bu sekiz kişinin gelir aralığı 40-50 bin olanlarına bakıyorum.
+
+971
+01:48:07,380 --> 01:48:10,100
+40-50 bin olan bu var.
+
+972
+01:48:10,859 --> 01:48:11,119
+Bir.
+
+973
+01:48:11,680 --> 01:48:13,720
+40-50 bin şu var.
+
+974
+01:48:14,439 --> 01:48:14,760
+İki.
+
+975
+01:48:16,340 --> 01:48:19,199
+Ondan sonra 40-50 bin.
+
+976
+01:48:21,439 --> 01:48:23,079
+Şurada bir tane var ama bu female.
+
+977
+01:48:24,079 --> 01:48:25,680
+40-50 bin şu var.
+
+978
+01:48:28,220 --> 01:48:29,340
+Doğru saydım mı acaba?
+
+979
+01:48:30,420 --> 01:48:30,880
+Evet hocam.
+
+980
+01:48:31,720 --> 01:48:32,619
+Üç tane buldum.
+
+981
+01:48:32,899 --> 01:48:33,260
+Doğru mu?
+
+982
+01:48:33,539 --> 01:48:34,619
+Evet, üç tane buldum.
+
+983
+01:48:34,619 --> 01:48:43,500
+Peki, şimdi erkek ve gelir aralığı 40-50 bin olan bu üç kişinin
+
+984
+01:48:43,500 --> 01:48:46,060
+hayat sigortası promosyonunu,
+
+985
+01:48:46,159 --> 01:48:50,380
+hayır deme oranına bakarak rule accuracy'yi yazacağım.
+
+986
+01:48:50,840 --> 01:48:51,920
+Nedir rule accuracy?
+
+987
+01:48:53,399 --> 01:48:54,220
+Yüzde yüz.
+
+988
+01:48:54,500 --> 01:48:55,060
+Yüzde yüz.
+
+989
+01:48:55,159 --> 01:48:59,979
+Çünkü üçün üçü de hayat sigortası promosyonuna hayır demiş.
+
+990
+01:49:00,180 --> 01:49:03,260
+O yüzden rule accuracy'yi yüzde yüz buldum.
+
+991
+01:49:03,779 --> 01:49:06,500
+Rule coverage ise nedir?
+
+992
+01:49:09,829 --> 01:49:10,170
+Kuralım.
+
+993
+01:49:10,189 --> 01:49:11,289
+Yüzde elli oldu.
+
+994
+01:49:12,130 --> 01:49:15,569
+Yüzde elli coverage, rule coverage.
+
+995
+01:49:20,479 --> 01:49:21,479
+Yüzde elli neden?
+
+996
+01:49:21,479 --> 01:49:21,560
+Neden?
+
+997
+01:49:21,560 --> 01:49:25,619
+Çünkü biz üç kişiyi sadece tespit edebildik.
+
+998
+01:49:25,779 --> 01:49:28,359
+Hayat sigortası promosyonuna hayır diyen,
+
+999
+01:49:28,640 --> 01:49:32,840
+üç kişiyi tespit edebildik ama hayır diyen aslında altı kişi vardı.
+
+1000
+01:49:33,380 --> 01:49:41,539
+Altının üçünü bulabildiğim için buradan bir yüzde elli rule coverage hesaplamış oluyoruz.
+
+1001
+01:49:44,090 --> 01:49:50,470
+Evet, bu production rule dediğimiz kurallar ile ilgili hem bir kural doğruluğu,
+
+1002
+01:49:50,470 --> 01:49:52,470
+bir de kuralın kapsamını,
+
+1003
+01:49:55,109 --> 01:49:59,189
+kapsama miktarını bu şekilde ölçüyoruz.
+
+1004
+01:50:07,479 --> 01:50:16,199
+Evet, şimdi geldik yine genel geçer kavramlara biraz veri madenciliği tanımı üzerinden gideceğiz.
+
+1005
+01:50:19,460 --> 01:50:26,340
+Veriden bilgiyi çıkarmak demek, pek çok işlem adımı demek aslına bakarsanız.
+
+1006
+01:50:26,479 --> 01:50:29,199
+Bu işlem adımları burada verilmiş.
+
+1007
+01:50:29,199 --> 01:50:31,199
+Önce birbirinden farklı veri tabanlarında tutulmuş.
+
+1008
+01:50:31,199 --> 01:50:33,060
+Önce birbirinden farklı veri tabanlarında tutulmuş.
+
+1009
+01:50:33,060 --> 01:50:39,960
+Burada gördüğümüz gibi birden fazla veri tabanı üzerinde tutulan bir veri var.
+
+1010
+01:50:40,520 --> 01:50:41,899
+Şunu highlight seçelim.
+
+1011
+01:50:44,260 --> 01:50:51,060
+Bu veriyi bir data integration dediğimiz veri birleştirme işleminden geçirmemiz gerekiyor.
+
+1012
+01:50:52,039 --> 01:50:57,760
+Birleştirip işte farklı tarihlerde tutulan veri olabilir, farklı veri tabanlarında.
+
+1013
+01:50:58,140 --> 01:51:02,760
+Güncel olanla eski olan veriyi birleştirip bir bütün oluşturmak.
+
+1014
+01:51:03,060 --> 01:51:21,159
+Oluşturmamız gerekiyor data integration'da. Oluşturduğumuz bu büyük veriyi önce temizlememiz gerekiyor. Data cleaning işlemi var. Bu dersin başında da bahsetmiştim. Temizleme işlemi veride gürültü varsa gürültünün giderilmesi demek.
+
+1015
+01:51:21,159 --> 01:51:42,279
+Gürültü dediğimiz şey aslında aykırı değerler. Bu outlier dediğimiz aykırı değerleri bulacağız. Veri içerisinden bunları temizleyeceğiz. Veri içinde missing value olabilir. Yani belli gözler boş olabilir. Ölçme işlemi yapılmamış olabilir.
+
+1016
+01:51:42,279 --> 01:51:50,279
+Bu eksik verinin, eksik olan gözlerin miktarına bakarak belki bu eksik olan sample'ları...
+
+1017
+01:51:51,159 --> 01:52:07,619
+...veriden silebiliriz eğer veri sayısı fazla ise. Veya imputation teknik dediğimiz bunları doldurma teknikleri var. İşte ortalama değerle, medyanla doldurma gibi teknikleri kullanarak doldurabiliriz.
+
+1018
+01:52:07,619 --> 01:52:20,619
+Bu tür tekniklerden bahsedeceğiz data cleaning aşamasında. Tabii yine normalizasyon işlemlerinden bahsedeceğiz. Bu süreci tamamladıktan sonra bakın burada...
+
+1019
+01:52:21,159 --> 01:52:39,720
+...artık ne oldu? Bir veri küpü dediğimiz bir küp oluşturuldu. Bu veri küpü belki bir zamana bağlı bir şeyi de gösteriyor olabilir. Data warehouse. Burada bir datamız var elimizde. Temizlenmiş, birleştirilmiş bir veri var.
+
+1020
+01:52:39,720 --> 01:52:50,239
+Sonra bu veri üzerinde bir selection işlemi yapılıyor. Bu data reduction'da gerekli bir işlem adımı.
+
+1021
+01:52:50,279 --> 01:52:50,720
+Gereksiz...
+
+1022
+01:52:51,159 --> 01:53:16,319
+...gereksiz öz niteliklerin atılması anlamlı ve ayırt ediciliği olan öz niteliklerin seçilmesi işlemi gerçekleştiriliyor. Ve burada gördüğümüz gibi bir task relevant data oluşturulmuş. Task relevant data bir önceki dataset'e göre biraz daha küçülmüş. Çünkü bir selection işlemi yaptık.
+
+1023
+01:53:16,319 --> 01:53:20,319
+Amaca uygun ve sadece bizi...
+
+1024
+01:53:21,159 --> 01:53:47,119
+...götürecek olan öz nitelikleri kullanarak daha küçük bir veri setiyle bir veri madenciliği süreci başlattık. Bu noktadan sonra yani elimde benim artık bu veri seti task relevant data dediğim veri var. Bunun üzerine data mining yöntemlerini kullanıyorum. Nedir? Eğer elimde etiketli veri varsa supervised learning yöntemlerini kullanacağım.
+
+1025
+01:53:47,119 --> 01:53:51,119
+Eğer etiketsiz veri varsa unsupervised clustering yöntemlerine...
+
+1026
+01:53:51,159 --> 01:54:20,859
+...kullanacağım. Ve buradan anlamlı bir bilgiye ulaşmaya çalışacağım. Fakat süreç içerisinde dikkatinizi çekmek istediğim nokta şu. Ben bir knowledge, bir bilgiye ulaştım dediğim noktada bunun yeterli olup olmadığını hep tartışacağız. Daha iyi bir model oluşturulabilir mi? Kaygısı var çünkü. Bu nedenle bakın burada slide'da görüyorsunuz aşağıya doğru bir ok var.
+
+1027
+01:54:21,159 --> 01:54:48,079
+Yani bir geri dönüş söz konusu. Ben elde ettiğim sonucu yeterli başarıya ulaşmadığına inanıyorsam bu süreci geri dönüp kontrol ediyorum. En baştan başlayabilirim. Yani data integration ve cleaning aşamasından da başlayabilirim. Veya data selection'da kullandığım yöntemleri değiştirmek için şu aşamadan da bir değişiklik yapabilirim.
+
+1028
+01:54:48,079 --> 01:54:50,079
+Kullandığım veri madenciliği algoritmalara...
+
+1029
+01:54:51,159 --> 01:55:13,520
+Bunların performanslarını karşılaştırabilirim. Sonuçta birden fazla model oluşturup her defasında kullandığım teknikleri değiştirerek en iyi sonucu verecek olan çözümü arayacağım bu bilgiye ulaşma süreci içinde.
+
+1030
+01:55:13,819 --> 01:55:24,279
+Az önce konuştuğumuz tüm işlem adımları burada tekrar anlatılmış. Az önce grafik üzerinde konuştuk.
+
+1031
+01:55:24,319 --> 01:55:51,319
+Burada metin olarak belirtilmiş. Yalnız şurada üçüncü maddeye dikkatinizi çekeceğim. Diyor ki data cleaning and preprocessing may take 60% of the effort. Burada veri hazırlama işlemi ve ön işlemler tüm sürecin neredeyse %60'ını alır diyor. Ham veriyle uğraşmanın ne kadar zor olduğundan bahsetmiştim ders içerisinde.
+
+1032
+01:55:51,319 --> 01:55:53,319
+Bu bir gerginlik.
+
+1033
+01:55:54,319 --> 01:56:14,619
+Gerginlik gerçek. Yani biz hep veri madenciliğinin en güzel tarafı declassification yöntemlerini denedik ettik deriz ama çok sancılı bir dönemi veriyi hazırlama dönemidir ve en fazla zamanı orada harcamamız gerekir. Bunu da söyledik.
+
+1034
+01:56:14,619 --> 01:56:22,020
+Bir de bu aşamalardan kimlerin sorumlu olduğu ile ilgili bir piramit var burada aslında.
+
+1035
+01:56:23,960 --> 01:56:26,020
+Piramitin içinde...
+
+1036
+01:56:26,279 --> 01:56:50,760
+...kullandığımız çözüm ve ilgili algoritmalardan bahsediliyor. Sağ tarafta ise bunun kimin görevi olduğu belirtilmiş. Önce veri tabanı yöneticisi veriyi bir veri tabanı yönetim sisteminde tutuyor. Sonuçta veriden o sorumlu.
+
+1037
+01:56:50,760 --> 01:56:55,960
+Biz bu veriden bir feature extraction işlemi, bir öz nitelik çıkarmak...
+
+1038
+01:56:57,000 --> 01:57:01,000
+...işlemi yapacağımız zaman bize veri tabanı yöneticisi yardım ediyor.
+
+1039
+01:57:01,399 --> 01:57:07,979
+Ve istediğimiz, talep ettiğimiz veriyi bize sağlıyor.
+
+1040
+01:57:09,060 --> 01:57:09,960
+Pardon.
+
+1041
+01:57:12,539 --> 01:57:15,960
+Daha sonra data exploration dediğimiz bölüm var.
+
+1042
+01:57:16,340 --> 01:57:22,920
+Data exploration'da veriyi tanıma ve analiz etme süreçleri var.
+
+1043
+01:57:25,060 --> 01:57:27,659
+Bu aşamada bir data analyst bize yardım ediyor...
+
+1044
+01:57:27,659 --> 01:57:46,340
+Daha sonra veri madenciliği uygulamaları işin içine giriyor. Burada da yine data analist yardımıyla bu veri madenciliği algoritmalarını veriye uygulamamız gerekir.
+
+1045
+01:57:46,340 --> 01:58:09,319
+Elde ettiğimiz nihai sonucun ise bir bu işin başındaki biziz analist dediğimiz kişiyle birlikte değerlendirilmesi gerekir. Yani elde edilen sonuç anlamlı mıdır? Kurum için yeterli midir? Bunun kararını verecek olan kişi de biziz analist olacak orada.
+
+1046
+01:58:09,319 --> 01:58:16,319
+Ve ondan sonra end user dedi son kullanıcıyı burada veriyoruz.
+
+1047
+01:58:16,340 --> 01:58:25,699
+Ve veri madenciliğinin birden fazla disiplinle ilişkisi olduğunu görebilirsiniz bu slide'da.
+
+1048
+01:58:27,479 --> 01:58:42,840
+Yani veri tabanı teknolojileriyle ilişkisi var çünkü verinin kaynağı orası. Bizim için önemli olan yani bilgisayar mühendisi tarafında bence iyi istatistik bilmesi gerekiyor veri madencisinin.
+
+1049
+01:58:44,199 --> 01:58:48,489
+Bunun dışında,
+
+1050
+01:58:48,770 --> 01:58:54,909
+Patent recognition ve machine learning algoritmalarını kullanması gerekiyor.
+
+1051
+01:58:54,909 --> 01:59:03,909
+Tabi algoritma dediğime göre işte tüm bu algoritmaları kodlayabilmek için algoritma bilmemiz gerekiyor.
+
+1052
+01:59:03,909 --> 01:59:13,689
+Ve elde ettiğimiz sonucu görselleştirmek için bir visualization teknik kullanmamız gerekiyor.
+
+1053
+01:59:13,689 --> 01:59:18,689
+Burada değişik visualization teknikleri var.
+
+1054
+01:59:18,770 --> 01:59:28,750
+Clustering de ya da işte classification da kullanabileceğimiz veriyi görselleştirme teknikleri olabilir.
+
+1055
+01:59:28,750 --> 01:59:38,750
+Yine veri analizinde kullandığımız boxplot analizi gibi teknikler bize veriyi görselleştirme konusunda yardımcı oluyor.
+
+1056
+01:59:38,750 --> 01:59:51,720
+Evet bundan sonraki slide'lar biraz artık bu konuyla ilgili daha detaylı açıklamalar içeriyor.
+
+1057
+01:59:51,720 --> 01:59:52,220
+Bunun,
+
+1058
+01:59:52,520 --> 01:59:59,079
+Bunları uzun uzun anlatmayacağım ve bitireceğim.
+
+1059
+01:59:59,079 --> 02:00:07,869
+Evet bebek bezi ve bira örneği ile ilgili açıklamalar var.
+
+1060
+02:00:07,869 --> 02:00:13,869
+Evet yani genel olarak ders girişi ile ilgili benim söyleyeceklerim bu kadar.
+
+1061
+02:00:13,869 --> 02:00:16,869
+Ne yapacağız önümüzdeki hafta?
+
+1062
+02:00:16,869 --> 02:00:21,460
+Şimdi bakalım.
+
+1063
+02:00:21,460 --> 02:00:41,460
+Şöyle bunu kapatabiliriz.
+
+1064
+02:00:41,460 --> 02:00:43,460
+Önümüzdeki hafta konu başlığımız aslında bu.
+
+1065
+02:00:43,460 --> 02:00:44,460
+Bu hafta giriş yapmayacağım.
+
+1066
+02:00:44,460 --> 02:00:45,460
+Bu konuda.
+
+1067
+02:00:45,460 --> 02:00:46,460
+Burada bitireceğim.
+
+1068
+02:00:46,460 --> 02:00:49,460
+Sadece ne yapacağımızı tarif etmek istiyorum.
+
+1069
+02:00:49,460 --> 02:00:52,460
+Önümüzdeki hafta veri ön işleme konusuna giriş yapacağım.
+
+1070
+02:00:52,460 --> 02:00:55,460
+Ve veri ön işleme ile ilgili veri analizi.
+
+1071
+02:00:55,460 --> 02:00:58,460
+Başka ne var?
+
+1072
+02:00:58,460 --> 02:01:01,460
+Burada normalizasyon işlemleri.
+
+1073
+02:01:01,460 --> 02:01:14,460
+Şurada gördüğümüz normalizasyon işlemleri ve missing value elimination gibi teknikleri konuşacağız.
+
+1074
+02:01:14,460 --> 02:01:19,460
+Tabi önümüzdeki haftanın en önemli konularından biri de outlier analizi konusu var.
+
+1075
+02:01:19,460 --> 02:01:24,460
+İlk hafta için benim anlatacaklarım bu kadar.
+
+1076
+02:01:24,460 --> 02:01:29,460
+Hepinize başarılı bir dönem diliyorum.
+
+1077
+02:01:29,460 --> 02:01:32,460
+En başta sağlıklı olmanızı diliyorum.
+
+1078
+02:01:32,460 --> 02:01:35,460
+İyi hafta sonları hepinize.
+
+1079
+02:01:35,460 --> 02:01:40,460
+Arkadaşlar stop share diyelim.
+
+1080
+02:01:40,460 --> 02:01:45,460
+Dersden ayrılırken bana el sallayıp çıkabilirsiniz.
+
+1081
+02:01:45,460 --> 02:01:49,460
+Ben dersten en son ayrılan kişiye kadar bekleyeceğim.
+
+1082
+02:01:49,460 --> 02:01:52,460
+Bakayım kimler beni dinliyor kimler dinlemiyor.
+
+1083
+02:01:52,460 --> 02:01:54,460
+Anlayalım.
+
+1084
+02:01:54,460 --> 02:01:56,460
+İyi günler hocam görüşmek üzere.
+
+1085
+02:01:56,460 --> 02:01:57,460
+Teşekkürler.
+
+1086
+02:01:57,460 --> 02:01:58,460
+İyi günler hocam.
+
+1087
+02:01:58,460 --> 02:01:59,460
+Görüşürüz.
+
+1088
+02:01:59,460 --> 02:02:00,460
+Hoşçakalın.
+
+1089
+02:02:00,460 --> 02:02:01,460
+Görüşmek üzere hocam.
+
+1090
+02:02:01,460 --> 02:02:05,380
+İyi günler hocam.
+
+1091
+02:02:05,380 --> 02:02:07,380
+İyi günler.
+
+1092
+02:02:07,380 --> 02:02:09,380
+İyi günler hocam.
+
+1093
+02:02:09,380 --> 02:02:11,380
+Evet dersi dinleyenlerden ayıracağım.
+
+1094
+02:02:11,380 --> 02:02:13,380
+Hadi bakalım.
+
+1095
+02:02:13,380 --> 02:02:14,380
+Hoşçakalın.
+
+1096
+02:02:14,380 --> 02:02:15,380
+İyi günler hocam.
+
+1097
+02:02:15,380 --> 02:02:17,380
+İyi günler.
+
+1098
+02:02:17,380 --> 02:02:18,380
+İyi günler hocam.
+
+1099
+02:02:18,380 --> 02:02:20,380
+İyi günler hocam.
+
+1100
+02:02:20,380 --> 02:02:23,380
+Grup olarak dinliyorlar beni.
+
+1101
+02:02:23,380 --> 02:02:24,380
+Teşekkürler.
+
+1102
+02:02:24,380 --> 02:02:26,380
+Daha var.
+
+1103
+02:02:26,380 --> 02:02:27,380
+Dört kişi miyiz?
+
+1104
+02:02:27,380 --> 02:02:28,380
+O da iyi.
+
+1105
+02:02:28,380 --> 02:02:30,380
+Evet hocam.
+
+1106
+02:02:30,380 --> 02:02:37,930
+Selamlar hepinize.
+
+1107
+02:02:37,930 --> 02:02:38,930
+İyi günler hocam.
+
+1108
+02:02:38,930 --> 02:02:40,930
+Güle güle iyi günler [öğrenci].
+
+1109
+02:02:40,930 --> 02:02:54,520
+Evet [öğrenci], [öğrenci], hoşçakalın.
+
+1110
+02:03:00,260 --> 02:03:03,319
+Evet, şu anda dokuz kişi kaldı.
+
+1111
+02:03:04,079 --> 02:03:06,319
+Bu arkadaşlar neredeler acaba?
+
+1112
+02:03:07,180 --> 02:03:08,079
+Sekiz olduk.
+
+1113
+02:03:08,960 --> 02:03:12,159
+Evet, bilgisayarı açık bırakıp gitmiyorsunuz.
+
+1114
+02:03:12,159 --> 02:03:16,479
+Bundan sonra sizi dersin sonuna kadar görmek istiyorum arkadaşlar.
+
+1115
+02:03:17,760 --> 02:03:22,140
+[öğrenci], [öğrenci], [öğrenci], [öğrenci], [öğrenci] ve [öğrenci].
+
+1116
+02:03:22,739 --> 02:03:25,159
+[öğrenci], [öğrenci], siz de aynı şekilde.

@@ -1,0 +1,1087 @@
+1
+00:00:34,804 --> 00:00:52,304
+Merhabalar. Selam Hocam. Nasılsınız? Sağ olun. Sizin de iyisiniz. Teşekkürler. İyi, sağ olun. Biraz yoğun. Kamerayı ve ekran paylaşımını yapabilirsiniz. Ondan sonra başlayalım. Tamam.
+
+2
+00:00:57,619 --> 00:00:59,159
+Bugüne 12'si.
+
+3
+00:01:06,099 --> 00:01:10,559
+Evet. Şimdi nasıl bir çalışmalar? Final hafta?
+
+4
+00:01:10,739 --> 00:01:24,219
+Bu hafta biraz tabii sınavlar var. Orada biraz yeme kaybettik bir yavaş oldu ama elinden geldiğince bir şeyler eklemeye çalıştım. Hemen hızlıca bir özetleyeyim. Şimdi zaten ilk de bir tane DAS sınavım var.
+
+5
+00:01:24,724 --> 00:01:43,224
+Geçen hafta bu TransUnit'i çalıştırmıştık. TransUnit'le belli bir sonuç elde etmiştik. Ama sonuçta konuştuğumuz üzere buradaki bazı noizeleri ortadan kaldıracak bir post-processing yapalım. Orada da Markov'un Random Fields'ı kullanalım dedik.
+
+6
+00:01:43,792 --> 00:02:11,072
+Bunun yanında şeyleri de söyledik aslında. Swinnet, Unet++ veya Unet++++'a da uygulayabiliriz dedik ama ben oraya henüz bakamadım hiç de. En azından Marko Random Fills ile ilgili bir kod bulup onun üzerinde çalıştırdım. Sonra benim koduma uyarlayacak şekilde, input datası alacak şekilde bunu değiştirdim.
+
+7
+00:02:12,116 --> 00:02:18,436
+Çalıştırdım. Doğru bir şekilde çalıştı ama sonuçlarını değerlendiremedim.
+
+8
+00:02:18,436 --> 00:02:19,716
+Buraya onu yetiştirmek istiyorum.
+
+9
+00:02:28,500 --> 00:02:33,840
+Evet, şimdi şey yapalım. Online'da şimdi devam ediyoruz.
+
+10
+00:02:36,840 --> 00:02:39,219
+Siz bekleyin orada. Evet.
+
+11
+00:02:39,924 --> 00:03:02,364
+Sonuçları, resimlerle oynamada biraz problemim var ya, ondan dolayı sonuçları çıkartıp buraya getiremedim ama üzerine çalışıyorum. En azından elimde şu anda bu post-processing sonucu üretilmiş bir şey var. Onları şu anda çalışıyorum. Yetiştiremedim onu.
+
+12
+00:03:03,060 --> 00:03:21,099
+Önümüzdeki hafta çarşamba sınavı var biliyorsunuz. Çarşamba sınavı yaptıktan sonra hemen arkasından proje görüşmelerini de yapacağız. Orada gösteririz. Zaten bütünleme haftamız da var ondan sonra. Dolayısıyla iki haftalık bir süremiz var gibi görüşmüyoruz.
+
+13
+00:03:21,099 --> 00:03:31,060
+Sonra Sivunnet veya Unet Plus Plus onu da bir şey yapabiliriz. En az bir tanesini de uygulamayı düşünüyorum, planlıyorum önümüzdeki haftayı.
+
+14
+00:03:31,060 --> 00:03:32,060
+Tamam.
+
+15
+00:03:32,060 --> 00:03:36,639
+Onlara da çalıştırıp post-processing eklersem önümüzdeki haftaya öyle gelmeye çalışacağım.
+
+16
+00:03:36,919 --> 00:03:37,879
+Tamam, tamamdır.
+
+17
+00:03:38,319 --> 00:03:39,979
+Tamam, oldu. Çok teşekkür ediyorum.
+
+18
+00:03:40,299 --> 00:03:41,459
+Kolay gelsin size de.
+
+19
+00:03:41,599 --> 00:03:42,179
+Çok sağ olun.
+
+20
+00:03:42,179 --> 00:03:42,619
+Ne sınav var şimdi?
+
+21
+00:03:42,899 --> 00:03:43,699
+İyi günler diliyorum.
+
+22
+00:03:44,159 --> 00:03:45,239
+Ne sınavı vardı şimdi?
+
+23
+00:03:46,019 --> 00:03:50,199
+Yazılım kalitesi ve test teknikleri.
+
+24
+00:03:50,319 --> 00:03:51,599
+Tamam, kolay gelsin o zaman.
+
+25
+00:03:51,599 --> 00:03:53,759
+Çok sağ olun, teşekkürler. İyi günler diliyorum.
+
+26
+00:03:54,179 --> 00:03:55,159
+Sağ olasınız, görüşürüz.
+
+27
+00:09:52,467 --> 00:09:53,447
+Assalamualaikum Hüjah.
+
+28
+00:10:00,179 --> 00:10:01,179
+Merhabalar [öğrenci].
+
+29
+00:10:01,839 --> 00:10:03,059
+Merhabalar Hocam. Nasılsın?
+
+30
+00:10:03,559 --> 00:10:08,459
+Sağolsun. Şimdi bir arkadaş gösteriyor bana. Ondan sonra seninle konuşacağım. Tamam mı?
+
+31
+00:10:08,459 --> 00:10:09,220
+Tamam. Tamam.
+
+32
+00:10:09,500 --> 00:10:10,179
+Bekle sen.
+
+33
+00:10:10,639 --> 00:10:11,299
+Tamam. Bekidiyorum.
+
+34
+00:12:53,844 --> 00:13:02,224
+Evet, [öğrenci]. Nasılsın, iyi misin? [öğrenci], mikrofonun kapalı.
+
+35
+00:13:03,264 --> 00:13:07,504
+Anam hocam, evet. Evet, kameranı da açabilirsin. Açalım.
+
+36
+00:13:12,403 --> 00:13:13,903
+Nasılsınız hocam?
+
+37
+00:13:14,183 --> 00:13:16,283
+Sağ olasınız. Sizi sormalı. Sen de iyisin.
+
+38
+00:13:17,283 --> 00:13:20,923
+Çok şükür. Elhamdülillah. İyiyim. Elhamdülillah hocam.
+
+39
+00:13:22,004 --> 00:13:23,344
+İkram başarıyoruz hocam.
+
+40
+00:13:23,963 --> 00:13:25,644
+Ekran paylaşımı yapabilirsin evet.
+
+41
+00:13:25,644 --> 00:13:27,024
+Tamam paylaşıyoruz.
+
+42
+00:13:32,963 --> 00:13:38,043
+Hocam şu ben en son kod buldum.
+
+43
+00:13:39,764 --> 00:13:50,084
+Bu kod hocam çalıştım. Ben iki gün çalıştım bu kod.
+
+44
+00:13:51,703 --> 00:13:54,963
+Şu anda birkaç örnek gösterir misin bana?
+
+45
+00:13:56,803 --> 00:13:58,824
+Dateset bakıyoruz hocam.
+
+46
+00:14:04,851 --> 00:14:06,632
+Önce bir dataset'ini tanıt bana.
+
+47
+00:14:06,731 --> 00:14:08,851
+Evet, dataset'e bakıyorsunuz.
+
+48
+00:14:26,067 --> 00:14:27,607
+Buna bir data set hocam.
+
+49
+00:14:36,467 --> 00:14:37,567
+Ayağılık bir şey.
+
+50
+00:14:50,548 --> 00:15:03,427
+Evet, şu data set hocam. Şu 1140 tane var asıl.
+
+51
+00:15:08,500 --> 00:15:10,500
+Şöyle bir dataset gösteriyorsunuz.
+
+52
+00:15:12,500 --> 00:15:14,500
+Evet, yani sen bu datasetinde mi çalışıyorsun?
+
+53
+00:15:14,500 --> 00:15:16,500
+Evet, bu dataset hocam.
+
+54
+00:15:16,500 --> 00:15:19,500
+Benign ve Malignant olarak ayırıyorsun anladın mı?
+
+55
+00:15:19,500 --> 00:15:21,500
+Evet, benign ve Malignant. İkisi de anlamda.
+
+56
+00:15:21,500 --> 00:15:25,500
+Input olarak kaçı kaç veriyor? Bu resimlerin boyutu kaç kaç?
+
+57
+00:15:25,500 --> 00:15:27,500
+Boylu mu?
+
+58
+00:15:27,727 --> 00:15:29,907
+Boyutu? Boyutu bu hocam.
+
+59
+00:15:29,907 --> 00:15:37,147
+Dimension of the images. Evet, onlar 299 x 299.
+
+60
+00:15:38,048 --> 00:15:41,727
+Do you prefer to talk in Turkish or in English?
+
+61
+00:15:42,107 --> 00:15:44,288
+Türkçe ise, sıkıntı yok hocam.
+
+62
+00:15:44,367 --> 00:15:51,847
+Okey. Türkçe ise şayet, sen bunları resize ettin anladığım kadarıyla. Orijinal boyutları nedir? Orijinal boyutları.
+
+63
+00:15:52,596 --> 00:15:56,435
+Hocam bunlar Resize yaptı, evet. Dışarıdan Resize yaptı.
+
+64
+00:15:57,576 --> 00:15:59,296
+Orjinal boyutları neydi?
+
+65
+00:16:00,435 --> 00:16:02,296
+Orjinal boyut...
+
+66
+00:16:02,296 --> 00:16:05,076
+Bakarız hocam.
+
+67
+00:16:08,692 --> 00:16:13,292
+Büyük ihtimalle onu download yaptı.
+
+68
+00:16:13,292 --> 00:16:14,692
+Bakıyoruz.
+
+69
+00:16:14,692 --> 00:16:17,692
+Nereye koydun yani?
+
+70
+00:16:17,692 --> 00:16:22,692
+Alınca biraz fazla onlar yaptım.
+
+71
+00:16:22,692 --> 00:16:24,692
+Yani tam olarak.
+
+72
+00:16:31,028 --> 00:16:34,347
+224'ün içini aç bakayım 224'ün içini.
+
+73
+00:16:35,127 --> 00:16:36,908
+224...
+
+74
+00:16:38,447 --> 00:16:44,587
+Hayır ben orijinalde indirdiğin dosyaları görmek istiyorum. Resize yapmadan önceki.
+
+75
+00:16:47,408 --> 00:16:48,187
+He...
+
+76
+00:16:48,687 --> 00:16:49,968
+Bakar hocam bir daf alacağım.
+
+77
+00:16:52,884 --> 00:16:54,844
+Bu kodları sen mi yazıyorsun [öğrenci]?
+
+78
+00:16:55,264 --> 00:17:01,803
+Yok hocam, bu kod ben şey, buldum, sadece değiştirdim bu kodları.
+
+79
+00:17:01,803 --> 00:17:02,024
+Tamam.
+
+80
+00:17:02,024 --> 00:17:07,144
+En son 3 layarlar var ya hocam, 3 layarlar var, 5 değiştirdim.
+
+81
+00:17:09,971 --> 00:17:14,871
+Bu çalıştığım, test yaptığım şey.
+
+82
+00:17:15,351 --> 00:17:16,571
+Sen bunları biliyorsun değil mi?
+
+83
+00:17:17,231 --> 00:17:18,592
+Evet, biliyoruz hocam, biliyoruz.
+
+84
+00:17:19,851 --> 00:17:25,892
+Sence inception haricinde şu anda yüzde kaç, inception yüzde kaç verdi?
+
+85
+00:17:27,491 --> 00:17:29,692
+Şey, netice mi?
+
+86
+00:17:31,371 --> 00:17:33,892
+Bir saniye, bir saniye.
+
+87
+00:17:34,355 --> 00:17:35,355
+Tamam.
+
+88
+00:17:35,355 --> 00:17:56,355
+Normalde gözükmüyor bu. Formatla alakalı bir şey. Çünkü onlar şey yapıyorlar ya, ne derler ona, 0 ve 1 arasına koyuyorlar. Oysa ki o 0-255 arası bekliyor. Bekliyor diye o siyah siyah gösteriyor. Siyaha yakın gösteriyor. O yüzden görünüyor. İşte bu bizim şey yapacağımız. Bunları kullanırsan olacak.
+
+89
+00:18:00,692 --> 00:18:06,271
+Ola bir şey. Bu NewClick'de farklı datasetlerinden çekme. Bak, şu da var, bu da var, bu da var.
+
+90
+00:18:06,271 --> 00:18:21,951
+Aynı şekilde formansdan sıkıntı edeyim. Formatı NP'yi aç. Tamam NP'yi aç. Önemli olan bu. Biz burada şeyi öğreniyoruz. Farklı formatlarını açmayı, farklı formatlarından bilgiyi çekip bunları öğreniyoruz birazdan.
+
+91
+00:18:23,571 --> 00:18:28,951
+Çünkü herkes kendi ayrı bir şekilde çalışıyor. Biz onları halletmeye çalışıyoruz.
+
+92
+00:18:28,951 --> 00:18:30,611
+Bunu söylüyor mu zannediyorsunuz?
+
+93
+00:18:30,611 --> 00:18:32,951
+Evet evet. Bundan devam edebilirsin.
+
+94
+00:18:35,951 --> 00:18:39,451
+Şimdi sınav var mı senin de? Aynı yazılım kalite.
+
+95
+00:18:39,451 --> 00:18:41,451
+Yok, ne işaret ediyoruz.
+
+96
+00:18:41,451 --> 00:18:42,451
+O uzun.
+
+97
+00:18:42,963 --> 00:18:44,144
+Allah Allah, oldu.
+
+98
+00:18:44,824 --> 00:18:45,543
+İki değil mi? Tamam.
+
+99
+00:18:46,683 --> 00:18:49,003
+Hadi kolay gelsin, çalışmaya devam.
+
+100
+00:18:50,624 --> 00:18:55,483
+İhtiyacınız olursa belki önümüzdeki pazartesinde bir görüşebiliriz.
+
+101
+00:18:55,844 --> 00:18:57,443
+Önümüzdeki çarşamba günü bak.
+
+102
+00:18:57,823 --> 00:19:02,823
+Önümüzdeki çarşamba günü sınavdan sonra koronajı gösterimlerine devam edeceğiz.
+
+103
+00:19:02,943 --> 00:19:03,983
+Sınıfta devam edeceğiz.
+
+104
+00:19:04,543 --> 00:19:05,683
+Herkesi bekliyorum ya.
+
+105
+00:19:06,063 --> 00:19:06,503
+Tamam mı?
+
+106
+00:19:07,028 --> 00:19:28,708
+Önümüzdeki terşembe değil, çarşamba olacak görüşmemiz. Sınavın arkası. Grup var mı grubumuz? WhatsApp grubu, Biyomedikal'in. Aynen bunu yazar mısın? Önümüzdeki hafta final sınavı zorunludur. Final sınavından sonra da proje gösterimleri yüzde olarak yapılacaktır. Perşembe günü yapılmayacaktır. Hadi görüşürüz.
+
+107
+00:19:33,107 --> 00:19:39,248
+Hocam, sonuç nasıl tutuyorsunuz? Şöyle mi?
+
+108
+00:19:39,248 --> 00:19:43,867
+Şu birinci folder.
+
+109
+00:19:43,867 --> 00:19:46,927
+Şu kere de.
+
+110
+00:19:46,927 --> 00:19:50,768
+Şu şeyle.
+
+111
+00:19:50,768 --> 00:19:54,607
+İkinci. Şöyle ikinci.
+
+112
+00:19:58,387 --> 00:20:12,387
+Şöyle Kevda, üçüncü, şöyle, üçüncü herhalde, şöyle değil, şöyle, üçüncü, şöyle, üçüncü.
+
+113
+00:20:13,347 --> 00:20:15,067
+[öğrenci], sen beni duyuyorsun değil mi?
+
+114
+00:20:16,107 --> 00:20:17,227
+Duyuyorum hocam.
+
+115
+00:20:17,227 --> 00:20:21,887
+Tamam. Şimdi benim senden istediğim şu, bir orijinal görünceye bakayım.
+
+116
+00:20:24,367 --> 00:20:40,528
+400 kat büyütülmüş görüntülerde mi çalışıyorsun? Kırklıkta mı? Ondan bir emin olayım önce. O yüzden orijinali açar mısın diye sordum ben sana. Çünkü sen bir dosyalarını aç, çalıştığın görüntü dosyasını bir açar mısın? Demin gösteriyordun ya.
+
+117
+00:20:41,587 --> 00:20:42,708
+Evet, gösteriyordun.
+
+118
+00:20:46,288 --> 00:20:47,347
+Dataset istiyorsun.
+
+119
+00:20:47,347 --> 00:20:51,648
+Evet, say 400'lik istiyor. Acaba 40x'lerde var mı bunun içinde?
+
+120
+00:20:53,203 --> 00:20:54,043
+Bakıyoruz.
+
+121
+00:20:54,983 --> 00:20:56,903
+İnception'da düzgün yazar.
+
+122
+00:20:57,344 --> 00:20:58,243
+İnception değil.
+
+123
+00:20:59,503 --> 00:21:00,903
+Onlar. İnception değil.
+
+124
+00:21:00,903 --> 00:21:03,603
+Niye 224 ile çalışmadın?
+
+125
+00:21:03,643 --> 00:21:05,003
+299 yaptın?
+
+126
+00:21:06,324 --> 00:21:06,844
+Şu mu?
+
+127
+00:21:07,983 --> 00:21:10,783
+Evet. Niye 299'luk hale çevirdin?
+
+128
+00:21:11,263 --> 00:21:13,983
+Genellikle 224 alırlar çünkü.
+
+129
+00:21:14,675 --> 00:21:18,455
+Hocam bunlar Resize yaptı.
+
+130
+00:21:18,455 --> 00:21:23,395
+Niye Resize 299 yaptın, 224 yapmadın?
+
+131
+00:21:24,915 --> 00:21:26,435
+224, niye yapmadın?
+
+132
+00:21:26,635 --> 00:21:29,415
+224, 224.
+
+133
+00:21:29,775 --> 00:21:35,455
+224. Hocam o 299...
+
+134
+00:21:39,539 --> 00:21:45,559
+Bu türler öyle yaptı. Bunlar yapmadı. Resizer yapmadı yani öyle.
+
+135
+00:21:48,279 --> 00:21:50,599
+Anlayamadım. Bir daha tekrar eder misin?
+
+136
+00:21:51,299 --> 00:22:01,799
+Hocam ben size soru anlamıyorum. Niye 99 yaptı? Niye 24 yapmadı?
+
+137
+00:22:01,799 --> 00:22:04,480
+Sen beni duyuyor musun Güzel?
+
+138
+00:22:05,811 --> 00:22:23,131
+Kamerayı bir kapat istersen daha rahat bir şey yapar. [öğrenci], ben şunu merak ediyorum. Şimdi burada iki tane dataset kullanıyorsun. Bunlardan hangisiyle çalışıyorsun? Bir üst dizine çıkar mısın?
+
+139
+00:22:26,675 --> 00:22:28,976
+Şu Dataset yaptı hocam. Bu.
+
+140
+00:22:29,496 --> 00:22:32,316
+O Dataset Breaks mi, EGR mı?
+
+141
+00:22:32,316 --> 00:22:33,836
+Yok Breaks mi hocam.
+
+142
+00:22:34,096 --> 00:22:37,675
+Breaksin içine girebilir miyiz orijinalinin içine?
+
+143
+00:22:38,956 --> 00:22:41,016
+Onlar nerede orijinal yaptı?
+
+144
+00:22:41,016 --> 00:22:43,576
+Ben bilmiyorum nerede olduğunu bana sorma.
+
+145
+00:22:43,576 --> 00:22:45,615
+Çünkü çok çok indir.
+
+146
+00:22:45,875 --> 00:22:46,895
+Bu eski.
+
+147
+00:22:47,155 --> 00:22:49,195
+İçer girer misin içine bir?
+
+148
+00:22:49,195 --> 00:22:53,556
+Hocam bu eski az bir Dataset.
+
+149
+00:22:54,867 --> 00:23:18,907
+Bu, yüz altmış, yetmiş altı. Bir tane baktım, o bakacağım, yaklaşık sayı ne kadar? Bunlar yedi yüz çarpı, kırk altmış, kırk yüz altmış.
+
+150
+00:23:23,892 --> 00:23:46,892
+Bu hocam eski. Ama bir tane indirdim. Onu bir görmem lazım benim. Evet, ben çok bir tane indirdim. Şişirdim nerede gitti? Bunları çağırdım. Bunlar Prex model.
+
+151
+00:23:47,604 --> 00:23:57,364
+Bak, burada durur musun? Size istesörüne gel. Şimdi burada değişik boyutlar var. 224'ün içine bir girer misin?
+
+152
+00:23:58,244 --> 00:24:13,184
+200? 24. Hah, şu. Gir onun içine de. Evet. Bunlarla 224 ile niye? Bu hazır, sen bunu indirdin değil mi? Evet, bunlar hazırdır dedim hocam.
+
+153
+00:24:13,556 --> 00:24:26,856
+Kaç tane var mesela bu 224'ün içinde? Hocam 1146 tane var. Normalde [öğrenci], orijinal data setteki görüntüler daha büyük.
+
+154
+00:24:27,412 --> 00:24:48,731
+Biliyoruz hocam, daha büyük doğru doğru. Evet, burada ne yapmış biliyor musun? O orjinal görüntünün içerisinde kare olacak şekilde, 224'e 224'e olacak şekilde gezdirerek daha çok resim elde etmiş. Anladın mı? Anladım, anladım. Ben 224'e 224 içerisinde çalış.
+
+155
+00:24:54,771 --> 00:25:12,672
+NAS net yazıyor musun bunları [öğrenci]? Onlar var hocam. Zaten geçen defa şunlar yazdım. Ensepte, Shufnet istiyorsunuz hocam bu. Shufnet istemiyorum. O zaman diyoruz. Onun yerine NAS net ve Efficient net. NAS net.
+
+156
+00:25:23,059 --> 00:25:26,579
+NasNet ve EfficientNet. Chat kısmına bakabilirsin.
+
+157
+00:25:29,940 --> 00:25:32,960
+ResNet'in de 101'ini kullan. Büyük olanını kullan.
+
+158
+00:25:33,659 --> 00:25:35,839
+Tamam. Onlar o zaman siliyorum.
+
+159
+00:25:36,879 --> 00:25:38,099
+Hayır hayır. Onları silme.
+
+160
+00:25:39,239 --> 00:25:40,559
+ResNet istiyorsunuz hocam.
+
+161
+00:25:40,919 --> 00:25:44,159
+DenseNet. DenseNet istiyorum. ResNet istiyorum.
+
+162
+00:25:45,039 --> 00:25:50,359
+Bunların büyük şeyli 201. ResNet'in mesela kaçı var mesela ResNet?
+
+163
+00:25:56,339 --> 00:26:23,219
+ResNet 101 çalış. 101. 101. ResNet 101. Evet. Onlar hocam. Tamam. Enception 224. Bir bakayım önce, bir göreyim onu. Senle çok Türkçe anlaşamıyoruz ya.
+
+164
+00:26:24,564 --> 00:26:26,984
+Ben anlatıyorum hocam sizde.
+
+165
+00:26:27,884 --> 00:26:31,564
+Yok ben anlamıyorum. Sen benim sorumu anlatmıyorsun. Sen kafandakileri anlatıyorsun.
+
+166
+00:26:32,423 --> 00:26:39,624
+Yok. Belki ses bunlar sıkıntı. Ben anlatıyorsunuz hocam.
+
+167
+00:26:40,564 --> 00:26:42,903
+Peki hocam. Bir şey söyle hocam.
+
+168
+00:26:42,903 --> 00:26:46,264
+Bir bakabilir miyim? Listeye bir bakabilir miyim? Neleri koydun oraya?
+
+169
+00:26:46,724 --> 00:26:47,104
+Tamam.
+
+170
+00:26:49,779 --> 00:26:50,619
+İnception.
+
+171
+00:26:51,200 --> 00:26:57,259
+Sen chat kısmına bakar mısın? Oraya ben EfficientNet ve de şeyi de koydum.
+
+172
+00:26:57,880 --> 00:26:58,940
+Dataset hocam mı?
+
+173
+00:27:02,660 --> 00:27:05,259
+Dataset bakıyorsunuz diyorsunuz hocam mı?
+
+174
+00:27:06,460 --> 00:27:06,880
+[öğrenci].
+
+175
+00:27:07,759 --> 00:27:08,519
+Efendim hocam.
+
+176
+00:27:08,519 --> 00:27:14,380
+Zoom'u açıp, zoom'un içerisinde chat kısmı var. Açar mısın zoom'u?
+
+177
+00:27:14,420 --> 00:27:15,800
+Çat, ha çat. Tamam.
+
+178
+00:27:21,428 --> 00:27:22,088
+Oki oz.
+
+179
+00:27:30,291 --> 00:27:47,471
+Evet. Ben göremiyorum şu anda. Sadece onu karartıyor. Ben bakıyorum. Orada Efficient ve Net yazdım. Gördün mü? Evet. Nas Net yazdım. Nas Net var. Efficient Net. Evet.
+
+180
+00:27:53,011 --> 00:27:56,511
+Tamam. O zaman onlar koyduk.
+
+181
+00:28:02,324 --> 00:28:02,783
+Evet.
+
+182
+00:28:06,675 --> 00:28:08,587
+Burak-Sak Efficient.
+
+183
+00:28:12,435 --> 00:28:15,435
+Bunlarla da sonuçları bulmanı istiyorum. Oldu mu?
+
+184
+00:28:16,135 --> 00:28:20,075
+Evet hocam. Bu liste bakıyorsunuz ekran şu anda.
+
+185
+00:28:20,795 --> 00:28:24,495
+Evet, bir de 224'e 224'lüklerle çalışıyor.
+
+186
+00:28:25,395 --> 00:28:34,235
+224. İkisi de hocam, Nestnet ve Mfxnet ikisi de 224 çalışıyor.
+
+187
+00:28:34,895 --> 00:28:35,695
+Evet, evet.
+
+188
+00:28:36,055 --> 00:28:37,895
+Tamam. Öncelikle yazıyorum.
+
+189
+00:28:39,220 --> 00:29:02,980
+Bunların hepsini 299'da çalışma, hepsini 224'te çalış. Hepsinin sonuçlarını istiyorum. Sonuç olarak ne vereceksin? Accuracy, yüzdelik. Yüzde Accuracy, Person. Ondan sonra F-Measure ve Precision Recall değerlerini. Precision Recall değerlerini bir tablo halinde ver bana.
+
+190
+00:29:05,236 --> 00:29:08,895
+Hocam bir şey söyleyeceğim.
+
+191
+00:29:09,615 --> 00:29:15,036
+NestNet, AffectionNet, RestNet, DesNet, Expression, hepsini istiyorsunuz hocam değil mi?
+
+192
+00:29:15,036 --> 00:29:28,395
+Tablo halinde modellerin hepsinin Accuracy, F-Measure, Precision ve Recall değerlerini bir tablo haline getireceksin. Bu Break His datası için.
+
+193
+00:29:29,355 --> 00:29:32,375
+Aynı şeyi ICR için.
+
+194
+00:29:32,915 --> 00:29:40,435
+UCR Datası, ikinci bir data seti var. Onun için de yapacaksın. Onda da 224'e 224'lük parçalarla çalışacaksın.
+
+195
+00:29:41,155 --> 00:29:47,115
+224, 207. Bunlar 4 sınıf var orası.
+
+196
+00:29:47,915 --> 00:29:51,115
+Tamam. Onu bir açar mısın? O data seti açar mısın?
+
+197
+00:29:51,556 --> 00:29:51,875
+Tamam.
+
+198
+00:29:58,612 --> 00:30:21,892
+Evet. Bunların içerisine gir. Gir binayının içerisine. Bunun boyutu ne? Bir bak bakayım boyutları. Hocam 2048 çer ve 1536. Okey. Burada hücrelerin olduğu yerde bir tanesini açar mısın? Bir tanesini.
+
+199
+00:30:31,188 --> 00:30:34,188
+Bakayım ben kalem bulabilecek miyim?
+
+200
+00:30:43,571 --> 00:30:46,491
+Bakalım burada kalem kullanabiliyor muyum ben?
+
+201
+00:30:50,932 --> 00:30:51,932
+Ya?
+
+202
+00:30:55,251 --> 00:30:59,792
+Şu anda proje görüşümüne de var. Ne oldu? Birazdan gelir misin?
+
+203
+00:31:02,552 --> 00:31:11,552
+Şimdi ben kalem kullanamıyorum herhalde burada. Burada [öğrenci].
+
+204
+00:31:11,552 --> 00:31:12,751
+Efendim hocam.
+
+205
+00:31:15,172 --> 00:31:18,612
+Beyaz kalem aslında kullanabilmem lazım benim.
+
+206
+00:31:22,740 --> 00:31:25,619
+Uzaktan kontrol istedim şimdi senden.
+
+207
+00:31:26,879 --> 00:31:27,219
+Tamam.
+
+208
+00:31:27,659 --> 00:31:28,219
+Verdin mi?
+
+209
+00:31:30,199 --> 00:31:30,619
+Abo.
+
+210
+00:31:32,899 --> 00:31:34,579
+Şimdi görüyorsun değil mi?
+
+211
+00:31:34,759 --> 00:31:35,459
+Görüyoruz hocam.
+
+212
+00:31:36,339 --> 00:31:40,519
+Bu resmi şey değil, Paint'de açar mısın? Bu resmi Paint'de açar mısın?
+
+213
+00:31:41,439 --> 00:31:41,779
+Paint.
+
+214
+00:31:43,919 --> 00:31:46,000
+Aynı şey.
+
+215
+00:31:46,599 --> 00:31:48,339
+Buna fobi olacak lazım.
+
+216
+00:31:48,339 --> 00:31:49,240
+Hocam.
+
+217
+00:31:53,107 --> 00:32:04,107
+Dur. Ben yapabiliyorum değil mi? Evet tamam çalışıyorum. Ben kontrol edebiliyorum değil mi? Siz çalışıyorsunuz. Evet kontrol edebiliyorsunuz.
+
+218
+00:32:05,107 --> 00:32:16,307
+Open with Painting. Pen. Tamam. Şimdi bu data setinde [öğrenci] şey yok görüyorsun.
+
+219
+00:32:25,299 --> 00:32:30,620
+Bu data setinde gördüğün gibi 224'e 224'e parçalar yok gördüğün gibi.
+
+220
+00:32:30,620 --> 00:32:35,340
+Şeyin boyutu çok büyük. 2048'e 1536.
+
+221
+00:32:35,340 --> 00:32:38,340
+Senin buradan şöyle...
+
+222
+00:32:38,340 --> 00:32:39,819
+Şu kısım.
+
+223
+00:32:39,923 --> 00:32:56,783
+Evet, parçalar kesmen lazım. Mesela bu birinci parça. Ondan sonra ikinci parça. Üst üste de binebilir bunlar. Ama sadece hücrelerin olduğu yeri al. Yani bu taraflardan 224'e 224 alma.
+
+224
+00:32:57,083 --> 00:32:58,023
+İstemiyorsunuz.
+
+225
+00:32:58,023 --> 00:33:02,963
+Sadece hücreleri barındırsın. Büyük yoğun hücre barındıran yerleri alarak yap.
+
+226
+00:33:03,296 --> 00:33:16,016
+Bunun içinde threshold yapıp koyu kısımları çıkarıp algoritmik olarak hücre barındıran yoğun yerlerden otomatik yazan programını da yazabilirsin.
+
+227
+00:33:16,016 --> 00:33:19,456
+Peki. Bu programın herkese yazılması.
+
+228
+00:33:19,456 --> 00:33:26,336
+Yani bu el ile yapmak çok zor bunu. Anlatabiliyor muyum? O yüzden sen bir program yaz.
+
+229
+00:33:26,544 --> 00:33:52,204
+Threshold uygulasın, koyu yerleri çıkarsın. Yani desin ki morlu yerler mesela daha fazla hücre barındırıyor. Dolayısıyla sen ne yapacaksın? Hücrelerin yoğun aldığı yerleri çıkaran bunun etrafında 224'e 224'lük. Mesela ben geri alayım biraz daha. Mesela 224 yapıyoruz.
+
+230
+00:33:52,788 --> 00:34:16,728
+Evet, bak. Mesela yaptığın program şöyle bir şey yapsın mesela. Bunu alsın, 224 çarpı 224 bu değil mi? Ondan sonra ikinci bir resmi de mesela şöyle alabilir mesela. Aynı orijinal resmi üzerinden. Şuradan alabilir. 224 ve 224. Yani başka bir tane alabilir.
+
+231
+00:34:17,907 --> 00:34:21,688
+Yani aynı arası 3-4 parça alacak.
+
+232
+00:34:21,688 --> 00:34:29,007
+Yani büyük olduğu için resim farklı farklı alabilirsin. Önemli olan çok hücre barındırması.
+
+233
+00:34:29,007 --> 00:34:29,688
+Anladım.
+
+234
+00:34:30,248 --> 00:34:35,759
+Anladım. Böylece bir sürü resmin olacak. Örneğin senin burada benign...
+
+235
+00:34:35,760 --> 00:35:03,220
+Binay'ın içerisinde kaç tane var? 100 tane var değil mi? Evet. Eğer böyle yaparsan, çoğaltırsan resimlerini, binlerce resme ulaşabilirsin binayında. Aynı zamanda diğerleri de artmış olur. 224'e 224'e kesersen elinde çok resim olmuş olur. Dolayısıyla sınıflandırma kalitende artar. Anladın mı? Yani ugmentation gibi yani. Aynen, aynen. Doğru söylüyorsun.
+
+236
+00:35:04,275 --> 00:35:13,235
+Peki hocam, Augmentation Program onlar, siz istemiyorsunuz, onlar hücre istiyorsunuz yani.
+
+237
+00:35:14,375 --> 00:35:26,375
+Hayır, Augmentation istemiyorum çünkü dosyanın boyu çok büyük. Sen bu dosyaları direkt olarak ağlara veremezsin. Resize yaparsan da başarım çok düşer. Bu şekilde keserek verebilirsin.
+
+238
+00:35:26,375 --> 00:35:31,435
+Peki hocam, bir şey söyleyeceğim. Dört sınıflar aynayabiliyoruz değil mi?
+
+239
+00:35:32,275 --> 00:35:54,175
+Bu sınıf içinde yapacaksın bunu. Peki. Hocam bu kesmek için bir program var mı? Ben arıyorum. Hayır hayır sen yazacaksın. Yani burada hücrelerin yoğun olduğu yerleri bulan, sonuçta bir çerçeve gezdireceksin 224'de 224. İçerisinde mesela diyeceksin ki %40'dan fazla hücre barındırsın.
+
+240
+00:35:54,900 --> 00:36:02,220
+Dediğin yerleri çıkaracaksın, bunu kaydedeceksin. Dolayısıyla yeni 224'de 224'de bir patch'in olmuş olacak.
+
+241
+00:36:02,220 --> 00:36:08,380
+Ondan sonra hemen yanından alma. 1 piksel kaydırdıktan sonra yapma bunu.
+
+242
+00:36:08,380 --> 00:36:12,619
+Böyle hep böyle 50 piksel 50 piksel kaydır böyle.
+
+243
+00:36:12,619 --> 00:36:15,619
+Tamam mı?
+
+244
+00:36:15,619 --> 00:36:19,539
+Hem sağa doğru hem yukarıdan aşağı.
+
+245
+00:36:19,539 --> 00:36:20,367
+Anladım.
+
+246
+00:36:20,367 --> 00:36:29,367
+Onlar kizdikten sonra, şunlar tablo eder, sizin birkaç tane verdik. Bunlar matod yani yapıyoruz.
+
+247
+00:36:29,367 --> 00:36:36,367
+Ondan sonra bu, önce sen break hisli olan çalışmanı bitir, bir yandan da bunları da hazırla, oldu mu?
+
+248
+00:36:36,367 --> 00:36:46,251
+Oldu hocam, oldu. Peki, o zaman ben şu anda bu iş duruyor. Bu iş.
+
+249
+00:36:47,027 --> 00:36:57,927
+Sen önce break his datasıyla eğitim yöntemlerini bir bitir. Ondan sonra bu dediğimi ikinci data setle yaparsın. Uciyara sonra çalışırsın.
+
+250
+00:37:00,527 --> 00:37:02,768
+Peki. Peki. Tamam hocam.
+
+251
+00:37:02,768 --> 00:37:03,887
+Anlaştık mı? Anlaşıldı mı?
+
+252
+00:37:03,887 --> 00:37:12,567
+Biz yaparız inşallah. Anlaştık. Biraz bunlar zamanıyla lazım. Bunlar yapıyoruz.
+
+253
+00:37:13,108 --> 00:37:27,668
+Önümüzdeki hafta sınav var biliyorsun çarşamba günü. Çarşamba günü sınavdan sonra bunları gösterin bana. Ne kadar yaptıysanız, ne kadar ilerlediyseniz gösterin.
+
+254
+00:37:27,668 --> 00:37:34,887
+Peki. Peki hocam. Hocam tamam. Anlattık. Hocam bir şey soracağım sınav için.
+
+255
+00:37:35,860 --> 00:37:55,500
+Aynı zamanda, aynı günde başka bir sınav var. Onlar nasıl sınav yapıyoruz acaba? Bir araştırma sınav var. Aynı zamansa artık araştırma sınav var. Başıktaş'ta gitmek lazım.
+
+256
+00:37:57,119 --> 00:37:59,060
+Araştırma mı? Neyin araştırması?
+
+257
+00:38:01,331 --> 00:38:04,452
+Şuna bir deriz hocam ben aldık. Araştırma deriz.
+
+258
+00:38:08,152 --> 00:38:11,431
+Bu baş, yani simil gibi yani yaklaşık bunlara.
+
+259
+00:38:12,452 --> 00:38:16,011
+Hayır, hangi bölümden aldın? Bir gösterir misin bana ders programında?
+
+260
+00:38:16,251 --> 00:38:18,412
+Ekranda bir gösterir misin ekranda?
+
+261
+00:38:21,632 --> 00:38:25,532
+[öğrenci], ben seni anlamıyorum. Hangi sınav? Gösterir misin bana?
+
+262
+00:38:28,724 --> 00:38:38,624
+Hocam, arştırma deriste, o Mekke'nin Mühendislik bir derste katıldım.
+
+263
+00:38:39,824 --> 00:38:41,584
+Onu bütünlemeye bırakacağım.
+
+264
+00:38:43,699 --> 00:38:54,019
+O zaman ben, hoca bir daha konuşuyoruz. Belki onlar başka bir gün fırsat yapacak. Tamam, sıkıntı yok hocam. Bakıyoruz, hocalarla bir daha konuşuyoruz.
+
+265
+00:38:54,259 --> 00:38:54,960
+Hoca ile konuşuyoruz.
+
+266
+00:38:54,960 --> 00:38:55,639
+İnşallah hocam.
+
+267
+00:38:56,039 --> 00:38:56,259
+Tamam.
+
+268
+00:38:57,839 --> 00:38:58,579
+Tamam hocam.
+
+269
+00:38:58,979 --> 00:39:00,279
+Kolay gelsin diyelim sana.
+
+270
+00:39:01,139 --> 00:39:02,859
+Eyvallah, çok teşekkür ederiz. Eyvallah, kolay gelsin.
+
+271
+00:39:02,919 --> 00:39:04,119
+Sağ olsan, görüşmek üzere.
+
+272
+00:39:05,319 --> 00:39:05,719
+Görüşürüz.

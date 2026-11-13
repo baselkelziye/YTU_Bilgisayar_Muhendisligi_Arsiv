@@ -1,0 +1,1615 @@
+1
+00:01:02,548 --> 00:01:04,108
+Sesim geliyor mu arkadaşlar?
+
+2
+00:01:06,268 --> 00:01:07,728
+Evet hocam.
+
+3
+00:01:07,728 --> 00:01:08,567
+Geliyor.
+
+4
+00:01:09,347 --> 00:01:10,067
+Tamam, güzel.
+
+5
+00:01:10,507 --> 00:01:14,688
+Şimdi bu hafta gönderdiğiniz ödevler için de teşekkür ederim.
+
+6
+00:01:14,888 --> 00:01:17,628
+Onlara da sabahtan yine bir göz attım.
+
+7
+00:01:18,587 --> 00:01:22,968
+Bir görmek ne durumda, ne şekilde diye değerlendirmek adına.
+
+8
+00:01:24,659 --> 00:01:33,340
+Şu açıklama kısmında da size belirtmiş olduğum uyarılara uyarsanız çok memnun olacağım.
+
+9
+00:01:34,939 --> 00:01:38,799
+Bakın orada çok net bir şekilde söyledim.
+
+10
+00:01:40,799 --> 00:01:44,640
+Değerlendirme açısından işi kolaylaştırıyor, hızlandırıyor.
+
+11
+00:01:45,236 --> 00:02:08,596
+Söylediğim şey şuydu, yazdığım derste de söyledim. Sağ olun hepiniz pdf olarak yollamışsınız. Okey, onda bir sorun yok. Ancak ne olur birinci sayfada adınız, soyadınız, öğrenci numaranız olsun ve bu sayfada hangilerinin özetini çıkarttıysanız numarası ile beraber yanında adı olsun.
+
+12
+00:02:09,012 --> 00:02:23,632
+Örneğin bu hafta için 4, 5, 6 numaralıydı ya, işte 4 numara neydi yanlış hatırlamıyorsam, Experience with Processes and Monitors in MESA. Yanına bunu yazacaksınız.
+
+13
+00:02:23,632 --> 00:02:32,872
+5 numaranın yanına işte Demos'la alakalı orada hangisiydi onu da hemen söyleyeyim size.
+
+14
+00:02:34,707 --> 00:02:45,888
+Process Migration in Demos MP diyeceksiniz. Ondan sonraki sayfalarda da bunları sayfa başlarına gelecek şekilde özetlerini vereceksiniz.
+
+15
+00:02:47,028 --> 00:02:58,127
+Bazılarınız hiç yazmamışsınız. Bazılarınız ise yani böyle kenarda, solda, sağda sayfanın başında ufak bir not şeklinde düşmüşsünüz.
+
+16
+00:02:58,127 --> 00:03:02,127
+Onlar okunurken zorluk çıkartıyor. Sonuçta...
+
+17
+00:03:02,996 --> 00:03:19,996
+Bu, kolaylaştıran, daha hızlı okumamız, size daha kolay not vermemiz sağlayan bir şey bu. Buna dikkat ederseniz çok sevinirim. Bir de size demiştim ya, lütfen submit ettiğiniz şeylerde...
+
+18
+00:03:21,075 --> 00:03:43,575
+Numaranız olsun, adınız, soyadınız olsun. Onun haricinde yine farklı şekilde paper'ın adını koyan arkadaşlarınız olmuş veya başka başlıklar koyan arkadaşlarınız olmuş. Hafta hafta gidiyor. Bu ikinci ödevdi. Ödev 2 diyebilirsiniz. Homework 2 diyebilirsiniz. Ama mutlaka numaranız ve adınız, soyadınız olsun.
+
+19
+00:03:49,075 --> 00:04:10,155
+Tamam bir şekilde indiriyor. Hepsini teker teker indirmek büyük eziyet. O yüzden toplu indir seçeneğini seçiyoruz. En başta numaranız, arkasından adınız, sonrasında da ödevin numarası olursa daha derli toplu oluyor. Böylece incelemesi, ayırması, kenara koyup bakması, not vermesi kolaylaşıyor.
+
+20
+00:04:10,512 --> 00:04:26,211
+Bunu bir kez daha hatırlatayım istedim. Geçen haftaya göre bu haftaki ödevler format olarak çok da şey durumda. Ama bir tık daha dikkat ederseniz sevinirim. Hepimizin işi kolaylaşmış, rahatlamış olur.
+
+21
+00:04:27,432 --> 00:04:37,392
+Şimdi, bugünkü ilk paperımız neydi? Experience with Processes and Monitors in MESA.
+
+22
+00:04:39,220 --> 00:04:59,160
+Yine biliyorsunuz, el kaldırarak konuşalım demiştik ya, o şekilde olacak. Kim bu paperı bize açıklamak ister derken önce [öğrenci] elini kaldırdı. Evet, dinliyorum.
+
+23
+00:04:59,160 --> 00:05:01,660
+İyi günler hocam.
+
+24
+00:05:04,851 --> 00:05:08,171
+İngilizce konuşabilir miyim Hüçam?
+
+25
+00:05:08,171 --> 00:05:10,251
+Konuşabilir miyim Hüçam?
+
+26
+00:05:10,251 --> 00:05:11,812
+Teşekkür ederim.
+
+27
+00:05:11,812 --> 00:05:24,771
+The authors presented and discussed their creation of the pilot operating system in 1977.
+
+28
+00:05:24,771 --> 00:05:30,851
+This system was supposed to concurring operating system for personal computer.
+
+29
+00:05:30,995 --> 00:05:57,675
+Bu bir sistemde yaklaşık 24,000 linses MESA ve MESA'yı kullanarak birçok
+
+30
+00:05:58,067 --> 00:06:04,567
+MESA language, which is used to write both pilot itself and the application programs it supports.
+
+31
+00:06:05,043 --> 00:06:10,024
+Çünkü de lağır size ve wide variety of applications,
+
+32
+00:06:10,024 --> 00:06:13,963
+de ötürlüklerle ilgili bir soru var.
+
+33
+00:06:13,963 --> 00:06:15,644
+Bir de çok soru var.
+
+34
+00:06:15,644 --> 00:06:17,764
+İçinde de çok soru var.
+
+35
+00:06:17,764 --> 00:06:20,223
+İçinde de ilk literatürsiz,
+
+36
+00:06:20,223 --> 00:06:24,304
+ve de publicist work on monitors.
+
+37
+00:06:55,151 --> 00:07:05,151
+Bu çalışanın çalışması, bu çalışan ve iletişimleri kullanarak çalışmalarını çalışmaya çalışmak için çalışmalarını bulabilirsiniz.
+
+38
+00:07:06,151 --> 00:07:07,151
+Teşekkürler, Profesor.
+
+39
+00:07:08,151 --> 00:07:09,151
+Teşekkürler.
+
+40
+00:07:10,151 --> 00:07:12,151
+Tamam, başka bir koment var mı?
+
+41
+00:07:13,151 --> 00:07:15,151
+Başka eklemek isteyen bir şey var mı arkadaşlar?
+
+42
+00:07:18,151 --> 00:07:22,151
+[öğrenci], evet sen bir şey söylemek istiyorsun. Buyur.
+
+43
+00:07:22,579 --> 00:07:25,899
+Merhaba, [öğrenci]. Kuley Gelsen. Merhaba.
+
+44
+00:07:25,899 --> 00:07:42,539
+This document provide the MISA screen and process integration to solve the concern to programming model by defining the state of QU when different type of queues.
+
+45
+00:07:43,187 --> 00:07:59,947
+A concern to programming model contain many real world problems, including a planning function and behavior when grading and deleting your process, such the link expansion, handling and electronic interruption.
+
+46
+00:08:02,451 --> 00:08:15,012
+Additional process related to wait, time, failures, and conversion can improve system productivity and response time.
+
+47
+00:08:16,012 --> 00:08:24,331
+The additional process of resume bending can have the benefit improving system performance.
+
+48
+00:08:24,331 --> 00:08:30,331
+The first advantage of NISA, easy program and the programmer...
+
+49
+00:08:30,451 --> 00:08:35,451
+İlginçler,
+
+50
+00:08:35,451 --> 00:08:40,451
+Bu, bir sorunlarla anlatacağız.
+
+51
+00:08:40,451 --> 00:08:42,451
+Teşekkürler.
+
+52
+00:08:42,451 --> 00:08:44,451
+Önce, Önce, Önce.
+
+53
+00:08:57,043 --> 00:08:59,263
+Türkçe, İngilizce karışıp konuşacağız herhalde.
+
+54
+00:09:03,263 --> 00:09:13,104
+Bu yayında adreslenmiş olan, daha önce literatürde belirtilmiş ama çözülmediği ifade edilen,
+
+55
+00:09:13,104 --> 00:09:22,523
+işte A'dan G'ye kadar sıralanmış şeyler var, başlıklar var. Program structure, proses oluşturma, monitor oluşturma.
+
+56
+00:09:22,964 --> 00:09:27,884
+Nested Rate, Exception, Scheduling, Input-Output.
+
+57
+00:09:27,884 --> 00:09:32,024
+Şimdi şunu merak ediyorum.
+
+58
+00:09:33,724 --> 00:09:41,884
+Burada bu problemlerle uğraşırken bir takım...
+
+59
+00:09:43,379 --> 00:10:05,079
+İkilemeler yapıyorlar. Duality diye geçiyor. Yani bir taraftaki bir kavramla diğer taraftaki diğer bir kavramı birbiriyle eşleştirmeye, denk düşürmeye çalışıyorlar ve buna bağlı olarak da daha bir kolay çözüm ortaya kabul edilebilir, uygulanabilir bir çözüm ortaya atmaya çalışıyorlar.
+
+60
+00:10:05,556 --> 00:10:17,755
+Buradaki bu eşleştirmeler ne şekilde, neyle neyi eşleştiriyorlar, neyle neyi benzetiyorlar? Bunu cevaplamak isteyen var mı, bu konuda konuşmak isteyen var mı?
+
+61
+00:10:28,532 --> 00:10:34,052
+Hiç kimsenin fikri yok mu arkadaşlar? El kaldıran niye yok? Ben mi görmüyorum?
+
+62
+00:10:39,508 --> 00:10:51,308
+[öğrenci]. Merhaba hocam. Message yapısıyla, prosesi monitörle send ve replay'i call ve return ile eşleştirmişler.
+
+63
+00:10:52,248 --> 00:11:02,288
+Anladım. Peki bunu biraz açabilir misin? Doğru. Verdiğin cevap doğru. Mesela send ve replay'in call ve return ile eşleştirilmesi.
+
+64
+00:11:03,059 --> 00:11:22,899
+Özellikle bu paper spesifik, bu paper özelinde düşündüğümüzde yazarlar bir şey, bir yapı oluşturmaya çalışıyorlar. Neresiyle eşleşiyor, neresiyle denk düşüyor tam. İpucu vermeye çalışıyorum ama tam açık söylemiyorum yoksa cevabı söylemiş olacağım. O yüzden böyle biraz kapalı sordum.
+
+65
+00:11:23,796 --> 00:11:40,296
+Bence hocam, şimdi bu bir programlama dili düzeyine indirdikleri için, mesela bir mesaj sistemindeki en basından, send ve reply kullanımını bir metodun dönüşü veya çağrısı gibi eşleştirmişler.
+
+66
+00:11:42,296 --> 00:11:48,776
+Mesajları işte prosesler, prosesleri de gene monitörler alakalı. Yani sanki bir fonksiyonmuş gibi.
+
+67
+00:11:49,395 --> 00:12:00,295
+Daha doğrusu bir dilmiş gibi. Daha doğrusu nasıl anlatayım? Mesaj yapısını direkt olarak programlamanın içine geçirmişler gibi. Kodun içine geçirmişler gibi.
+
+68
+00:12:00,295 --> 00:12:09,576
+Ama şimdi şu ana kadar yapılan açıklamalardan [öğrenci] seni de dinleyelim. Ondan sonra ben yorumumu yapayım. Sen diye kaldırıyorsun.
+
+69
+00:12:10,076 --> 00:12:11,696
+Merhaba hocam. Teşekkürler.
+
+70
+00:12:13,395 --> 00:12:25,375
+Aslında authors en baştan söylüyorlar ki, mesela language de konkurenci implement etmek istiyorlar.
+
+71
+00:12:26,115 --> 00:12:33,455
+Mesela o zamana kadar monitor kullanmıyor.
+
+72
+00:12:33,455 --> 00:12:39,815
+İşte monitor zaten duality, zaten support ediyor.
+
+73
+00:12:40,192 --> 00:13:03,171
+Yani ve MESA aynı zamanda o kavramı support ediyor. İşte MESA'yı ve monitörü öyle eşleştirerek yani MESA, PROTES, PROTES monitörü ve CENTRAL APPLY ve CALL RETURN şeyleri match yaparak bu işlemi yapmak istiyorlar.
+
+74
+00:13:03,171 --> 00:13:05,911
+Anladım. Teşekkür ederim. [öğrenci].
+
+75
+00:13:06,676 --> 00:13:10,135
+Sana söz veriyorum, sen konuşabilirsin.
+
+76
+00:13:11,276 --> 00:13:18,076
+Aslında burada yapılan karşılaştırma sanırım message passing ile shared numarının eşleştirmesi.
+
+77
+00:13:18,255 --> 00:13:23,635
+Yani kullanılan sistemler mesela buradaki eşleştirmelerde mesaj ve proses olarak verilmiş.
+
+78
+00:13:23,776 --> 00:13:26,975
+Birinde message passing de mesajlar iletilerek.
+
+79
+00:13:27,475 --> 00:13:38,556
+İş iletişim kuruluyor ama Share-Up Memory kısmında bu mesafasında, prosesler aracılığıyla ya da proses monitörle eşleştirilmiş.
+
+80
+00:13:39,615 --> 00:13:49,156
+Can-Driply, Message Passing yapısında kullanılan metot, Call-Return'de monitörlerin çağrılması veya değerlerin return edilmesi gibi düşündüm ben ama.
+
+81
+00:13:50,076 --> 00:13:50,436
+Anladım.
+
+82
+00:13:51,187 --> 00:14:07,247
+Şimdi, hani dersin başında şeyi sordum ya, bu paperda ne anlatılıyor diye. Gelen yorumlar tatmin edici değil. Çünkü esas olayın özü atlandı. Bakın mesele şu.
+
+83
+00:14:13,812 --> 00:14:28,992
+Ve monitör kavramı ne için var? Concurrency, yani eş samanlılık. Aynı anda birden fazla prosesin bir arada çalışabilmesi. Bununla alakalı literatürde pek çok farklı şey tartışılmış durumda.
+
+84
+00:14:29,491 --> 00:14:39,371
+Ancak bunlar kağıt üzerinde, gerçek hayat implementasyonunda bazı şeylerin nasıl yapılacağı net değil.
+
+85
+00:14:39,371 --> 00:14:44,371
+Veya literatürdeki bir takım başlıklar altındaki tartışmalar...
+
+86
+00:14:44,895 --> 00:14:57,195
+Sonuca varmamış, farklı yaklaşımları savunan, onun diğer yaklaşıma göre, bir yaklaşımın diğer yaklaşıma göre daha iyi olduğunu savunan yayınlar var diyorlar.
+
+87
+00:14:57,195 --> 00:15:12,135
+Özellikle de, bakın, üzerine düşünmesi gereken, incelenmesi gereken şeyle, iç içe geçmiş monitör çağrıları olduğu zaman ne olacak?
+
+88
+00:15:13,364 --> 00:15:32,864
+Monitörde kritik parçalardan biri weight sistem çağrısıdır. Weight'in işletim sistemlerinde de, standart işletim sistemlerinde de anlatırız, farklı durumları söz konusudur.
+
+89
+00:15:39,552 --> 00:15:54,211
+Öbürü devam eder. Veyahut da weight'i yapan weight'in sonrasına geçer, diğeri bekler. Orada bir weight'in nasıl implement edileceğiyle alakalı da belirsizlik veyahut da bazı senaryolarda biri daha iyi, daha kötü.
+
+90
+00:15:55,211 --> 00:16:04,351
+Priority Scheduling uygulandığı zaman monitörlerin durumu ne olacak? Çünkü starvation oluşabilir. Literatürde bunu da görüyoruz aslında.
+
+91
+00:16:05,032 --> 00:16:06,312
+Time-up'lar nasıl olacak?
+
+92
+00:16:07,504 --> 00:16:23,984
+Bir monitör operasyonu başladınız ama timeout, işte bir önceki maddeyle ilişkileniyor. Timeout oldu, o zaman bir şeyi abort edeceksiniz. Fakat monitör o ana kadar çalışmıştı. O da aslında bir kod parçası.
+
+93
+00:16:24,659 --> 00:16:41,179
+Nasıl geri alınacak? Yani bir unrolling gibi bir şey var mı? Transaction daha bitmedi, geri kalan gerisine başına nasıl dönülecek falan. Onun tartışılması gerekiyor. Exception durumlarının tartışılması gerekiyor.
+
+94
+00:16:52,659 --> 00:17:12,039
+Ve büyük objeler değil de küçük objeler olursa ve bir sürü olursa bunlardan bunları da monitör üzerinden yönetmemiz gerekirse o zaman monitörleri yönetmenin performansı ne olacak?
+
+95
+00:17:13,259 --> 00:17:14,539
+Yani bu paper'ın şeyi bu.
+
+96
+00:17:15,316 --> 00:17:23,276
+Pilot'ı kullanmalarının sebebi de Pilot'a concurrent özellikler eklemek istiyorlar.
+
+97
+00:17:23,916 --> 00:17:34,316
+Ve bu concurrent özellikleri de monitörle o dönemin sıcak konusu olan, araştırma konusu olan ve az önce söylediğimiz açılardan da...
+
+98
+00:17:34,548 --> 00:17:46,447
+Araştırılması gerekli olan noktaları deneysel olarak, birebir uygulamalı olarak görerek eklemek istiyorlar.
+
+99
+00:17:46,447 --> 00:18:00,447
+Yani yoksa pilotta bunlar var, bunlarla oynuyoruz, görüyoruz değil. Eklemesini de yapıyorlar. Pilot'ı bu yönde geliştiriyorlar. Pilot MESA dilinde yazılmış.
+
+100
+00:18:01,011 --> 00:18:05,491
+O dönemin bir programlama dili, programlama yapısı.
+
+101
+00:18:07,316 --> 00:18:34,355
+Yani dille veya işte işletim sistemi ile dil iç içe geçmiş durumdalar. Çoğu zaman da öyle. Yani sonuçta baktığımızda Unix'te C'de yazılmış. Unix işletim sisteminin native uygulama geliştirme şeyi her zaman için C'dir. Başka dillerde geliştirseniz bile onu alt tarafta C kütüphanelerine kadar indiriyoruz ve diğer şeyler. Bunlar var.
+
+102
+00:18:35,316 --> 00:18:46,316
+Şu maddelere baktığınız zaman, monitör yapısını da incelediğinizde, o monitör yapısının bir şekilde...
+
+103
+00:18:54,355 --> 00:19:10,256
+Arka tarafta bir program yapısıyla eşleştirilmesi lazım. Burada da en akla gelen şey, en mantıklı görünen şey bunu prosedürler ile ilişkilendirmek.
+
+104
+00:19:10,256 --> 00:19:17,256
+Böyle olunca da bir prosedür...
+
+105
+00:19:18,099 --> 00:19:30,139
+Dolayısıyla bir proses olacak ve yani o prosedür ona bağlı olan proses diyelim, bir başka prosesle konuşacak.
+
+106
+00:19:30,139 --> 00:19:35,139
+Ve böylece proses...
+
+107
+00:19:35,635 --> 00:19:59,855
+Bu konküransiyi içereceği için bir monitörle eşdeğer olmuş olacak. Bir prosesle, bir başka prosesle konuşacağına göre aralarında bir mesajlaşma olması lazım. Ondan ötürü mesajla proses arasında bir duality öngörüyorlar. Ki bu onların öngördüğü değil. Daha önceden yapılan 14.
+
+108
+00:20:00,000 --> 00:20:05,440
+Umaralı referansta yapılan bir yayındaki şeylerin sonucu bu.
+
+109
+00:20:05,940 --> 00:20:13,740
+Diğer taraftan da o zaman iki tane concurrent proses var ise eş zamanlı bir ortak amaç için çalışan.
+
+110
+00:20:15,092 --> 00:20:27,231
+Birinin diğerini çağırması aslında birinin diğerine mesaj göndermesi ve sonrasında da cevabını almasına denk düşüyor. Yani send reply'a denk düşüyor.
+
+111
+00:20:27,231 --> 00:20:39,231
+Bu arada açılışta ilk konuşan arkadaşımız neler var neleri şey yapacaklar. Aslında bu concurrency'yi...
+
+112
+00:20:39,827 --> 00:20:54,508
+Üç farklı şeklinde söyledi ama aslında yazarlar monitör yapısını kullanarak pilot programlama ortamı veya çalıştırma işletim sistemi ortamına üç tane şey kazandırmak istiyorlar.
+
+113
+00:20:54,508 --> 00:21:07,627
+Local concurrent programming, bir uygulamanın kendi içerisinde uygulamanın yapısını en iyi şekilde ortaya koyacak tarzda alt parçalara bölülebilmesi.
+
+114
+00:21:07,827 --> 00:21:25,827
+Bunu yapmaya çalışıyorlar. Diğeri Global Resource Sharing. Birbirinden bağımsız uygulamalar. A maddesine göre bakın. Orada aynı uygulamanın alt parçalarında. Burada birbirinden bağımsız uygulamalar. Aynı sistem, aynı makine üzerinde bir şekilde.
+
+115
+00:21:27,859 --> 00:21:39,859
+Bir kaynağı, global bir kaynağı düzgün bir şekilde paylaşacaklar. Bir de interatları ortadan kaldırmaya çalışıyorlar. Çünkü aslında...
+
+116
+00:21:42,644 --> 00:21:57,403
+Interrupt'ı doğrudan yönetiyor olmak aradaki o abstraction'ı soyutlamayı kaldırıyor. Donanıma doğrudan müdahale edilmesini gerektiriyor. Halbuki bu her anlamda sıkıntılı bir şey.
+
+117
+00:21:57,403 --> 00:22:09,403
+Onu ortadan kaldırarak daha soyut bir modelle ifade ederek hem gerekli wake-up mekanizmasıydı hem de diğer şeylerde.
+
+118
+00:22:10,675 --> 00:22:25,895
+Bu senkronizasyonlu ve diğer şeylerde onları sağlamaya çalışıyorlar. Sizlerden duymak istediğim şey buydu arkadaşlar. Yani bugün geçen haftaya göre daha sessizsiniz. Peki size bir şey soracağım.
+
+119
+00:22:36,788 --> 00:22:56,528
+This scheme has a number of important properties, diyor. It treats a process as a first class value in the language. Ne anlama geliyor bu? First class value. Ne demek? Fikri olan var mı?
+
+120
+00:22:57,528 --> 00:23:02,608
+Tabii her an bakıp cevap verebilirsiniz ama şu anda hızlıca cevap verebilecek olan var mı?
+
+121
+00:23:17,875 --> 00:23:19,875
+Evet, [öğrenci].
+
+122
+00:23:19,875 --> 00:23:21,875
+Evet, Hüca. Merhaba, Hüca.
+
+123
+00:23:21,875 --> 00:23:27,875
+I think because you can replace use of interrupts, Hüca.
+
+124
+00:23:27,875 --> 00:23:43,875
+No, no, that's not the answer. I am asking what first class GMU means in a language.
+
+125
+00:23:43,875 --> 00:23:45,708
+First, yes.
+
+126
+00:23:46,548 --> 00:23:48,928
+Priority Scheduling?
+
+127
+00:23:48,928 --> 00:23:54,768
+No, no, no. It has nothing to do with priority scheduling.
+
+128
+00:24:04,852 --> 00:24:06,852
+Kimsenin fikri yok mu?
+
+129
+00:24:08,852 --> 00:24:10,852
+Peki devam edelim o zaman.
+
+130
+00:24:10,852 --> 00:24:12,852
+And then get time out?
+
+131
+00:24:12,852 --> 00:24:17,852
+No, no, no. It's not related with time out with prior scheduling.
+
+132
+00:24:17,852 --> 00:24:19,852
+Of course and other things.
+
+133
+00:24:19,852 --> 00:24:23,852
+Like that, okay. [öğrenci]?
+
+134
+00:24:25,332 --> 00:24:35,072
+Bir değişkeni atanan veya eray elemanı gibi söz edilmiş ama bir dildeki direkt olarak atanan değişkenler cümle kastediyor acaba?
+
+135
+00:24:37,232 --> 00:24:49,372
+Şimdi bu çok tartışılan bir konu. Tam böyle net tarifi %100 olmayan çünkü farklı bu konuda çalışanların farklı yorumları var.
+
+136
+00:24:51,859 --> 00:25:08,099
+Bir fonksiyonun parametresi olabilmek, bir fonksiyonun sonucu olabilmek, bir atamanın atama tarafı, sonuç tarafı olabilmek ve bir eşitlikte test edilebilmek.
+
+137
+00:25:08,099 --> 00:25:17,499
+Eğer bu özelliklerin hepsine sahipse bir değer, o zaman bu bir first class value oluyor.
+
+138
+00:25:18,291 --> 00:25:22,931
+Ama bakın mesela şöyle kafanızda canlansın diye örnek vereyim.
+
+139
+00:25:23,811 --> 00:25:25,751
+C'den bahsedelim.
+
+140
+00:25:25,751 --> 00:25:28,751
+C'de bir integer değişkene...
+
+141
+00:25:29,299 --> 00:25:49,399
+Atama yapabilirsiniz. Bunu bir fonksiyona gönderebilirsiniz. Fonksiyondan geri dönebilir. İki integer değer eşit mi diye kontrol edebilirsiniz. Bu açıdan integer değerler C'de first class olarak geçer. Ama integer değerlerden oluşmuş bir dizi.
+
+142
+00:25:50,483 --> 00:26:00,883
+Bu diziyi bir fonksiyona dizi olarak gönderemezsiniz. Adresini gönderirsiniz. İlk adresini gönderirsiniz.
+
+143
+00:26:01,623 --> 00:26:08,703
+Veyahut da bir diziye bir atama işaretiyle bütün elemanlarının değerini runtime sırasında,
+
+144
+00:26:08,703 --> 00:26:13,483
+iklendirmede yapabiliyoruz ama ilk tanımlamada runtime sırasında atayamazsınız.
+
+145
+00:26:14,143 --> 00:26:18,483
+Yani A dizisi eşittir, B dizisi diyemezsiniz veya A dizisi...
+
+146
+00:26:18,483 --> 00:26:30,183
+B dizisi eşit midir, B dizisi diyemezsiniz. Ondan ötürü de diziler, bakın integer first class'tı, diziler array yapısı second class olarak geçer.
+
+147
+00:26:32,339 --> 00:26:34,339
+Hocam bir şey sorabilir miyim?
+
+148
+00:26:34,339 --> 00:26:35,339
+Tabii ki.
+
+149
+00:26:35,339 --> 00:26:41,339
+Fonksiyondan geri dönebilirse de aslında o zaman runtime'da atanmış olmuyor mu fonksiyondan döndüğünde?
+
+150
+00:26:41,339 --> 00:26:49,339
+Ama adresi dönüyor. Öyle düşün. Mesela structure'lar daha ilginç. Structure'ların kopyası çıkartılıyor, kopyası gönderiliyor.
+
+151
+00:26:49,339 --> 00:27:00,331
+Yani özellikle structure'ın adresini vermediğim sürece C'de structure'ın lokalde bir kopyası çıkar, o kopya üzerinde çalışılır. Daha sonra o kopya geri döndürülür.
+
+152
+00:27:00,500 --> 00:27:02,500
+Ama dizide öyle değil.
+
+153
+00:27:03,988 --> 00:27:21,228
+Tamamını bir bütün olarak görebilmek ve tamamı üzerinde bir bütün olarak işlem yapabilmek lazım. Object Oriented programlama dillerinde bu daha mümkün, daha anlamlı oluyor.
+
+154
+00:27:21,228 --> 00:27:31,348
+Çünkü neden? Neredeyse her şey object şeklinde. Object olarak pas ediliyor. Object olarak objectin eşitliği var mı? Hatta içine yazıyoruz. Equality.
+
+155
+00:27:31,988 --> 00:27:50,928
+Metodu yazıyoruz ve benzeri şeyleri yapıyoruz. Orada çok böyle bir hassas şeyler var ve literatürde baktığınız zaman tartışmalar da fazla. Mesela C'de fonksiyon aktarabilirsiniz parametre olarak.
+
+156
+00:27:51,635 --> 00:27:59,375
+İki fonksiyon birbirine eşit indire function pointer üzerinden aynı yerimi gösteriyorlar diye de kontrol edebilirsiniz.
+
+157
+00:27:59,375 --> 00:28:09,375
+Fakat C'de runtime'da dinamik olarak function oluşturamazsınız. Ondan dolayı da...
+
+158
+00:28:09,875 --> 00:28:21,996
+Bir grup der ki bu özelliğinden dolayı C'deki fonksiyonlar second class'tır, first class değildir. Bir grup da der ki ama diğer özellikleri sağlıyor. O yüzden first class...
+
+159
+00:28:23,155 --> 00:28:33,915
+Tartışması açık fakat genel olarak az önce size söylediğim dört tane şeyi doğal haliyle sağlıyor. Native olarak sağlıyor olması lazım.
+
+160
+00:28:34,496 --> 00:28:44,635
+Fonksiyonlara parametre, fonksiyonların sonucu atamalarda hem sağda hem solda kullanılabilmesi.
+
+161
+00:28:51,155 --> 00:29:06,375
+Eşittir onların test edilebilmesi. Olay böyle. Fakat bugün çok sessizsiniz. Kimseden ses çıkmıyor. İnanılır gibi değil. Daha paperın başka şeyleri var. Oraları sormaya korkuyorum.
+
+162
+00:29:16,435 --> 00:29:19,635
+Bir şey daha soracağım. Bir saniye. Orayı bulmaya çalışıyorum.
+
+163
+00:29:43,188 --> 00:29:47,948
+Şimdi burada adreslenen noktalardan bir tanesi de Priority Scheduling.
+
+164
+00:29:47,948 --> 00:29:58,948
+Hani monitörlerin Priority Scheduling durumunda kullanılmasında yaşanan bir takım sorunlar var deniyordu.
+
+165
+00:30:04,852 --> 00:30:19,552
+Nedir bu sorun? Yani monitör kullanırken nasıl bir senaryo olursa bir anda priority scheduling'in sağladığı özelliği ortadan kaldırıyoruz.
+
+166
+00:30:19,552 --> 00:30:27,292
+Priority scheduling nedir? Önceliği yüksek olan prosesin önceliği düşük olan prosesten önce çalışması.
+
+167
+00:30:28,500 --> 00:30:44,899
+Mantık bu. Peki bu monitör kullanımı ile bir araya gelirse ne oluyor? Nasıl bir garip durum oluşuyor da bunun adreslenmesi ve çözülmesi gerekiyor? Yazarlar bunun için uğraşmışlar.
+
+168
+00:30:53,619 --> 00:30:55,419
+Evet, Hüçham.
+
+169
+00:30:57,419 --> 00:30:58,299
+Hüçham [öğrenci].
+
+170
+00:30:58,659 --> 00:31:00,379
+[öğrenci] diyeyim, peki hadi [öğrenci].
+
+171
+00:31:00,679 --> 00:31:01,599
+Merhaba Hüçham.
+
+172
+00:31:02,199 --> 00:31:02,619
+Merhaba.
+
+173
+00:31:03,500 --> 00:31:14,139
+Authors discussed a way to solve the problem in which monitors can cause processes to prevent other processes.
+
+174
+00:31:50,836 --> 00:31:52,935
+[öğrenci], [öğrenci], evet.
+
+175
+00:31:53,976 --> 00:32:13,168
+Merhaba hocam. Örnek vermek açısından, mesela yüksek öncelikli bir proses biraz çalışıp, monitörde bu sefer düşük öncelikli bir proses çalışmasına izin verdiğinde, düşük öncelikli bir proses çalışamadan, yüksek öncelikli olduğu için sürekli sıra o ilk çalışan prosesine gelip ikinci proses seçişini...
+
+176
+00:32:13,167 --> 00:32:18,927
+O yüzden de üçüncü proses, yani yüksek öncelik olan için ilerleyemeyemeyiz.
+
+177
+00:32:20,467 --> 00:32:22,967
+Şimdi monitör burada nerede?
+
+178
+00:32:26,036 --> 00:32:30,896
+Monitör hocam, sistemi yönetmek için hangisine sıra vermek? Hangi değişiklik?
+
+179
+00:32:30,896 --> 00:32:32,596
+Paypro okudun mu?
+
+180
+00:32:33,476 --> 00:32:35,476
+Okudum ama yanlış anlamışım sanırım.
+
+181
+00:32:36,196 --> 00:32:41,076
+Yani monitör ne için var? Sistemi yönetmek için yok. Monitör ne için var?
+
+182
+00:32:44,036 --> 00:32:45,996
+Sana soruyorum şu anda Himmet.
+
+183
+00:32:46,276 --> 00:32:49,076
+Hocam, prosesleri yönetmek için yok mu değişkenleri?
+
+184
+00:32:49,076 --> 00:32:50,220
+Hayır, hayır.
+
+185
+00:32:50,740 --> 00:32:58,720
+Prosesler arasında kontrolü sağlamak için mi var? Sen okuduğuna emin misin? Çok hızlı okudum galiba.
+
+186
+00:32:59,340 --> 00:33:02,500
+Onu kastetme çalışma. Hani işlemci gibi yönetim şeklinde değil mi?
+
+187
+00:33:03,720 --> 00:33:09,000
+O zaman o şekilde daha teknik, spesifik konuşman lazım.
+
+188
+00:33:09,519 --> 00:33:10,100
+Tamam hocam.
+
+189
+00:33:10,100 --> 00:33:12,100
+Peki. [öğrenci]...
+
+190
+00:33:13,715 --> 00:33:36,215
+Doha, doha, doha. Monter used to share a resource between the processors and operating system to allocate one resource from a specified process and when it's finished to work, it's relocated to other process.
+
+191
+00:33:36,215 --> 00:33:40,715
+Doha, you are not answering my original question.
+
+192
+00:33:41,491 --> 00:33:45,432
+The question is very simple.
+
+193
+00:33:47,231 --> 00:33:50,491
+A problem of monitor, I don't understand the question.
+
+194
+00:33:51,172 --> 00:33:54,231
+Okay, I repeat the question for all of you.
+
+195
+00:33:54,751 --> 00:33:56,152
+The question is very simple.
+
+196
+00:33:57,231 --> 00:34:07,172
+Could you give a scenario in which the monitor structure defeats
+
+197
+00:34:08,371 --> 00:34:12,531
+...or negates the priority scheduling.
+
+198
+00:34:14,291 --> 00:34:15,692
+That simple.
+
+199
+00:34:16,692 --> 00:34:19,311
+And the answer is right in the paper.
+
+200
+00:34:21,411 --> 00:34:29,152
+The authors discussing, using a scenario, this situation.
+
+201
+00:34:29,152 --> 00:34:34,951
+And then they propose possible solution.
+
+202
+00:34:41,715 --> 00:34:43,715
+[öğrenci]?
+
+203
+00:34:43,715 --> 00:35:03,715
+Yes, an example that is given in the paper is about when one priority tries to enter the monitor, but it is printed by the previous priority.
+
+204
+00:35:03,856 --> 00:35:08,836
+Bu durumda, bu monitörde, bu monitörde,
+
+205
+00:35:08,836 --> 00:35:10,436
+ve bu monitörde,
+
+206
+00:35:10,436 --> 00:35:14,356
+ve monitörde,
+
+207
+00:35:14,356 --> 00:35:18,276
+bu monitörde,
+
+208
+00:35:18,276 --> 00:35:20,776
+ve bu monitörde,
+
+209
+00:35:20,776 --> 00:35:27,020
+bu monitörde,
+
+210
+00:35:27,059 --> 00:35:40,319
+Bu, P2-Priority'nin bu durumda, bu durumda P3'nin bu durumda.
+
+211
+00:35:40,319 --> 00:35:46,000
+Bu, bu durumda örneğe altyazı da.
+
+212
+00:35:46,000 --> 00:35:48,719
+Ok, I see.
+
+213
+00:35:48,719 --> 00:35:53,420
+Bu, bu problemin, çünkü
+
+214
+00:35:55,324 --> 00:35:59,324
+bu monitörde,
+
+215
+00:35:54,068 --> 00:36:03,068
+Bu, her priority is not given the level of the priority.
+
+216
+00:36:03,068 --> 00:36:13,068
+Actually, it is given, but monitors actually are used to subvert the priorities of the processes,
+
+217
+00:36:13,068 --> 00:36:15,756
+so this is not very well defined.
+
+218
+00:36:16,019 --> 00:36:18,460
+bu paperi geliştirmek için.
+
+219
+00:36:18,460 --> 00:36:25,739
+Bu sorunlar, belki de bu sorunlarla ilgili bir sorunlar var.
+
+220
+00:36:25,739 --> 00:36:32,460
+Ok, bu paperi başlayalım ve devam edelim.
+
+221
+00:36:32,460 --> 00:36:40,860
+Bu sorunlar, Proces Migration in Demos-MP.
+
+222
+00:36:40,860 --> 00:36:42,860
+Ok.
+
+223
+00:36:43,476 --> 00:37:06,396
+Arkadaşlar, kim bununla alakalı yorum yapmak istiyor? Yalnız lütfen şey şeklinde yapmayalım. Hani birebir cümleleri alıp anlatma şeklinde. Az önce size ilk paperla alakalı yaptığım tarzda neyin ne olduğunu olacak şekilde, gösterecek şekilde.
+
+224
+00:37:07,436 --> 00:37:10,416
+[öğrenci], doğru mu söyledim?
+
+225
+00:37:10,900 --> 00:37:25,239
+Evet hocam, merhaba. Hocam eğer izin verseniz ben bunu İngilizce anlatacağım. Bana daha yeni, kolaydır böyle.
+
+226
+00:37:31,891 --> 00:37:55,891
+Bu paperi is about migrating a process from one processor to another processor with a connection-based method named Messages on a medium named Links in distributed systems.
+
+227
+00:37:58,931 --> 00:38:05,931
+ve daha iyi performansı
+
+228
+00:38:19,284 --> 00:38:28,764
+Bu mekanismi kullanılan birçok kullanılıyor.
+
+229
+00:38:28,764 --> 00:38:40,124
+Ama bu mekanismi kullanılan birçok kullanılan birçok kullanılan birçok kullanılan birçok kullanılan.
+
+230
+00:38:40,124 --> 00:38:44,724
+Bu mekanismi kullanılan birçok kullanılan birçok kullanılan birçok kullanılan birçok kullanılan.
+
+231
+00:38:44,851 --> 00:38:58,851
+İçin verenlerle anlatacağım. İçin verenlerle anlatacağım. İçin verenlerle anlatacağım.
+
+232
+00:39:12,788 --> 00:39:19,107
+Bu kadar hocam, bu değerini özgürlük şekilde bu kadar yani ben anlamıştım.
+
+233
+00:39:19,107 --> 00:39:20,567
+Okey [öğrenci].
+
+234
+00:39:23,947 --> 00:39:31,747
+What are the steps of process migration from a processor to another processor?
+
+235
+00:40:01,588 --> 00:40:03,588
+Evet, teşekkür ederim.
+
+236
+00:40:25,972 --> 00:40:28,992
+Operations, o
+
+237
+00:40:28,992 --> 00:40:31,012
+o process transferi
+
+238
+00:40:31,012 --> 00:40:33,012
+diğer processler.
+
+239
+00:40:33,012 --> 00:40:36,132
+Operations
+
+240
+00:40:36,132 --> 00:40:38,132
+without affecting
+
+241
+00:40:38,132 --> 00:40:40,132
+sistem.
+
+242
+00:40:40,132 --> 00:40:41,412
+O, o
+
+243
+00:40:41,412 --> 00:40:44,612
+process migration.
+
+244
+00:40:44,612 --> 00:40:47,052
+O, o
+
+245
+00:40:49,492 --> 00:41:06,312
+Şimdi arkadaşlar, bu olayda [öğrenci] söylediği için [öğrenci] ve [öğrenci] elinize şey yapabilirsiniz. Başka bir soru soracağım. Daha soru sormadım ki [öğrenci]. Hemen el kaldırıyorsun da belki sorduğum soru yok.
+
+246
+00:41:09,748 --> 00:41:21,047
+Şimdi burada bir mesaj olayı var. Pending Message olayı var. Pending Message ne demek?
+
+247
+00:41:25,427 --> 00:41:27,427
+Niçin önemli?
+
+248
+00:41:36,916 --> 00:41:38,916
+Orada neyin çözülmesi lazım?
+
+249
+00:41:47,219 --> 00:41:47,799
+Hocam?
+
+250
+00:41:49,479 --> 00:41:52,559
+El kaldırmadan kimseyi görmüyorum ben. El kaldırayın lütfen.
+
+251
+00:42:11,635 --> 00:42:15,395
+Sorry Harcam, I don't know how, because I opened from my laptop.
+
+252
+00:42:19,996 --> 00:42:22,395
+Mont, Mont, is that you?
+
+253
+00:42:23,996 --> 00:42:25,635
+Yes Harcam, is that me?
+
+254
+00:42:27,475 --> 00:42:27,955
+Okay.
+
+255
+00:42:30,804 --> 00:42:35,804
+Hocam, bu process like a telefon, yani process.
+
+256
+00:42:35,804 --> 00:42:46,804
+When we send a message from process to another phone, there's two process will be done, yani, like a call or message.
+
+257
+00:42:46,804 --> 00:42:55,804
+This algorithm, yani, like a message.
+
+258
+00:42:55,804 --> 00:42:58,476
+I don't follow you.
+
+259
+00:43:11,731 --> 00:43:12,331
+[öğrenci]?
+
+260
+00:43:14,152 --> 00:43:24,811
+Pending mesaj konusunda proses taşındıktan sonra eski konuma işaret eden mesajların hala geliyor olması sorun.
+
+261
+00:43:25,532 --> 00:43:33,132
+Taşındıktan sonra mı yoksa başka bir şey daha var mı?
+
+262
+00:43:37,235 --> 00:43:44,355
+Linklerin hala eski konumu gösteriyor olması diye unutanmışım ama 8. adımın sonunda.
+
+263
+00:43:45,455 --> 00:43:50,715
+Tamam. Şimdi prosesi taşırken prosesi çalıştırabilir misin?
+
+264
+00:43:52,895 --> 00:43:53,215
+Hayır.
+
+265
+00:43:54,255 --> 00:44:03,495
+Güzel. Peki diğer proseslerin bu prosesin mesaj göndermesi veya göndermemesi bu prosesin çalışıp çalışmaması ile alakalı mı?
+
+266
+00:44:07,827 --> 00:44:18,228
+O zaman demek ki prosesler canlarının çektiği herhangi bir anda bir başka prosese eğer bir kooperasyon varsa aralarında mesaj gönderebilirler.
+
+267
+00:44:18,228 --> 00:44:30,228
+Öyleyse hem taşımak için prosesi durdurduğumuzda hem prosesi taşırken hem de prosesi diğer kernelda, diğer processorda.
+
+268
+00:44:31,092 --> 00:44:38,692
+Çalıştırmaya başlatırken geçen süre içerisinde bu prosese mesajlar gelebilir.
+
+269
+00:44:39,892 --> 00:44:48,812
+Hatta ve hatta prosesi taşımaya karar verdiğim anda lokalde, source noktada henüz o prosese
+
+270
+00:44:49,492 --> 00:45:14,192
+Bu işletim sisteminin aktarmaya fırsat bulamadığı ama kuyrukta bekleyen mesajlar da olabilir. İşte bunlar pending mesajı. Sonrasında senin dediğin şey olacak, yeni adresine gönderilmesi lazım değil mi? Çünkü artık prosesin link adresleri değişti. Bunların güncellenmesi gerekiyor.
+
+271
+00:45:15,123 --> 00:45:24,603
+Senin söylediğin ikinci kısım ama bir de birinci kısım var. Yani ilk o geçiş anında daha netleşmeden onu şey yapabilmek.
+
+272
+00:45:26,323 --> 00:45:33,923
+Peki burada forwarding adres var. Ne anlama geliyor o?
+
+273
+00:45:35,523 --> 00:45:40,923
+Yeni adresini işaret eden pointer.
+
+274
+00:45:42,612 --> 00:45:55,652
+Yani o sistemde değil aslında proses. Fakat başka bir sistemde, yani destination o kernelda değil, farklı bir kernelda.
+
+275
+00:45:55,652 --> 00:46:08,472
+O zaman oraya ne koyuyoruz? Bir tane forwarding adres koyuyoruz ki gerçek şey aynen network routingteki forwarding gibi. Başka bir farkı yok.
+
+276
+00:46:09,139 --> 00:46:11,139
+Bu, bunun gerçekleşmesi için.
+
+277
+00:46:15,188 --> 00:46:31,668
+Peki, migration'ın bedeli, cost of migration nasıl ifade edilmiş bu yayında? Hangi kavramlar üzerinden ifade edilmiş?
+
+278
+00:46:41,300 --> 00:46:42,620
+Söyle bakalım [öğrenci].
+
+279
+00:46:44,039 --> 00:46:57,460
+Hocam, iki tip maliyetten söz edilmiş. Biri fiili maliyet, direkt olarak aktarım maliyeti. Diğeri de mesaj bedlerinin güncellenmesiyle ortaya çıkan artımlı maliyet olarak ayrılmış.
+
+280
+00:46:59,039 --> 00:47:04,880
+Tamam. Peki hangisi daha ağır basıyor?
+
+281
+00:47:08,532 --> 00:47:12,512
+İkisi de ağır ama artımlı olan tabii değişken olduğu için.
+
+282
+00:47:16,436 --> 00:47:19,356
+Bak şurada bir cümle var. Dikkat ettiniz mi? Bilmiyorum.
+
+283
+00:47:21,016 --> 00:47:29,916
+Cost of Migration 6'nın 6 Cost of Migration'da bir, iki, paragrafta.
+
+284
+00:47:29,916 --> 00:47:39,736
+For non-trivial processes, the size of the program and data overshadow the size of the system information.
+
+285
+00:47:42,155 --> 00:47:43,676
+Overshadow ne demek?
+
+286
+00:47:44,179 --> 00:47:55,299
+Onu gölgede bırakıyor demek. Sistem açısından aktarılması gereken bilgi, yani prosesin state'i ve benzeri şeyler.
+
+287
+00:47:55,807 --> 00:48:21,947
+Proses kontrol bloğu non-trivial yani basit olmayan, belirli bir boyutun üzerinde olan karmaşıklığı fazla, kullandığı verisi fazla, şey fazla olan anlamında kullanılıyor burada. O tarz şeyler için, prosesler için prosesin kendisine aktarmak, program ve datasını aktarmak daha şey.
+
+288
+00:48:22,612 --> 00:48:28,912
+Ağır basıyor. Onu söylemişler. Arkasından da bir şey daha söylemişler.
+
+289
+00:48:28,912 --> 00:48:37,311
+In addition, each message that is pending in the queue for the migrating process must be forwarded to the destination machine.
+
+290
+00:48:37,472 --> 00:48:45,952
+The cost of each of these messages is the same as for any other inter-machine message.
+
+291
+00:48:45,952 --> 00:48:47,628
+Yani diyor ki...
+
+292
+00:48:48,275 --> 00:48:53,915
+Lokalde değilse, başka bir makinede ise birbirleriyle haberleşenler.
+
+293
+00:48:54,055 --> 00:49:01,495
+Bu açıdan bakıldığında mesajlaşma açısından, hani mesajlaşma yükü açısından çok fazla bir şey değişmiyor.
+
+294
+00:49:05,492 --> 00:49:14,052
+Senin söylediğin o incremental, linklerin güncellenmesi, forwarding'in yapılması falan orada işin içine giren kısım.
+
+295
+00:49:15,092 --> 00:49:18,132
+Evet, bu paper'ı da bitirelim arkadaşlar.
+
+296
+00:49:19,932 --> 00:49:23,152
+Üçüncü ve sonuncu paper'ımıza geçelim.
+
+297
+00:49:26,675 --> 00:49:31,235
+[öğrenci], hadi bakalım daha bir şey demeden sen el kaldırdın. Verelim sana söz.
+
+298
+00:49:31,235 --> 00:49:33,015
+Evet hocam.
+
+299
+00:49:34,035 --> 00:49:37,355
+Task Communication in DEMO.
+
+300
+00:49:38,076 --> 00:49:44,615
+This paper discusses the mechanisms of communication between tasks and data sharing.
+
+301
+00:49:45,235 --> 00:49:50,695
+Data sharing is alternative to semaphore or monitor.
+
+302
+00:49:51,635 --> 00:49:53,228
+It discusses the...
+
+303
+00:49:53,364 --> 00:50:01,144
+İlk önce de Demos System'in de
+
+304
+00:50:01,144 --> 00:50:19,912
+İlk başta, tüm bir süreçte de
+
+305
+00:50:08,467 --> 00:50:29,947
+Öncelikle, programı da performan several tasks at the same data, average, standard division, aritmetik mean, that tasks work at the same time on the same data, her ability to share data or perform tasks.
+
+306
+00:50:29,947 --> 00:50:35,068
+Another example, the weather program has a set of tasks.
+
+307
+00:50:35,411 --> 00:50:54,411
+ve
+
+308
+00:51:01,684 --> 00:51:10,004
+Bu mesajı program ve stateriç alanı,
+
+309
+00:51:10,004 --> 00:51:13,884
+ve resh-trivede konusunda.
+
+310
+00:51:13,884 --> 00:51:19,804
+Bu bir örneğin, [öğrenci] Hocam, ben söyledim.
+
+311
+00:51:19,804 --> 00:51:21,804
+Çok teşekkür ederim.
+
+312
+00:51:24,524 --> 00:51:28,963
+Şimdi burada mesajlaşmanın temeli olarak
+
+313
+00:51:29,684 --> 00:51:38,864
+Ne ortaya atılmış, neden farklı olarak, alternatif olarak ne ortaya atılmış arkadaşlar?
+
+314
+00:51:50,963 --> 00:51:51,563
+[öğrenci].
+
+315
+00:51:52,983 --> 00:51:53,784
+Merhaba hocam.
+
+316
+00:51:54,243 --> 00:51:54,643
+Merhaba.
+
+317
+00:51:54,643 --> 00:52:17,903
+Burada daha önceki çalışmalarda, literatür çalışmalarında ifade edilen semafor ve monitör tipindeki kaynak paylaşım sistemini alternatif olarak link kavramı ve test kavramı, mesaj kavramı üzerinden yeni bir iletişim prosesleri arası iletişim sistemi öne sürülmüş.
+
+318
+00:52:18,335 --> 00:52:21,056
+Task yeni bir şey mi yoksa link mi?
+
+319
+00:52:21,455 --> 00:52:30,335
+Task prosesin diğer bir ismi aslında. Burada proses kavramı yerine daha anlamlı bulunduğu için task kavramı, terimi kullanılmış.
+
+320
+00:52:30,335 --> 00:52:40,675
+Evet ama sonuçta bu paper'ın özü semafor veya monitör yerine link kavramını getirmek değil mi?
+
+321
+00:52:41,315 --> 00:52:41,556
+Evet.
+
+322
+00:52:43,275 --> 00:52:44,496
+Link ne?
+
+323
+00:52:45,012 --> 00:52:57,592
+Yeni sorgu. Link nedir? Evet, cevap. Link nedir? Dova. İlk senelere kaldırdım.
+
+324
+00:52:57,592 --> 00:53:06,032
+Link are a love task to send message to another task.
+
+325
+00:53:06,291 --> 00:53:10,391
+...or read or write part of the memory.
+
+326
+00:53:10,951 --> 00:53:14,911
+Link content on two parts, content and address.
+
+327
+00:53:16,192 --> 00:53:20,672
+And it's point to, it is creating task.
+
+328
+00:53:22,871 --> 00:53:28,991
+Şimdi [öğrenci] de el kaldırdı. Tamam [öğrenci], seni de dinleyelim.
+
+329
+00:53:29,396 --> 00:53:43,836
+Yakın bir şey söyleyeceğim ama iki task arasındaki iletişimi sağlayan, okuma yazma için bellek alanına mesaj göndermeyi sağlayan yapılar tek yönlüdürler. Karşılıklı haberleşme için bir link daha gereklidir.
+
+330
+00:53:43,836 --> 00:53:56,156
+Tamam, yani link her zaman tek taraflı çalışıyor. Peki tasklar linklerini ne üzerinden yönetiyorlar? Nasıl bir yapı var ortada?
+
+331
+00:54:05,684 --> 00:54:06,224
+[öğrenci].
+
+332
+00:54:07,884 --> 00:54:27,344
+Hocam her task'ın bir link tablosu var. Ancak bu link tablosunda da linklere ait ID'ler var. Linklerin yönetilebilmesi için. Ancak bu link ID'leri bildiğim kadarıyla prosesin adres spaysi dışında tutuluyor.
+
+333
+00:54:28,144 --> 00:54:29,184
+Churnal'da tutuluyor.
+
+334
+00:54:29,396 --> 00:54:35,195
+Evet. Global bir veri olması için herhalde böyle yapılıyor.
+
+335
+00:54:35,796 --> 00:54:39,396
+Koruma altında olması için, görme tarafından yönetilmesi için.
+
+336
+00:54:40,175 --> 00:54:40,476
+Evet.
+
+337
+00:54:41,916 --> 00:54:42,856
+Bunun tarafından.
+
+338
+00:54:46,755 --> 00:54:47,775
+Bu kadar.
+
+339
+00:54:47,775 --> 00:54:53,775
+Bir şey söyleyeceğim. Bu link yapısında...
+
+340
+00:54:55,860 --> 00:55:09,519
+Bir tane kod diye bir şey var. O ne anlama geliyor? Var mı cevap verecek olan? Çok basit bir soru aslında bu. Kod. Bildiğimiz program parçacığı mı yoksa başka bir şey mi bu?
+
+341
+00:55:15,507 --> 00:55:15,947
+[öğrenci]?
+
+342
+00:55:17,567 --> 00:55:26,567
+Link'in görev türü olarak, yani hangi amaca hizmet ettiğiyle ilgili bir kod, yani ürün kodu gibi bir bilgi olduğunu düşünüyorum.
+
+343
+00:55:30,420 --> 00:55:35,080
+Şimdi diyor ki, messages are identified by means of a code.
+
+344
+00:55:36,180 --> 00:55:42,580
+Mesajın türü, which is simply a name specified by the task when it creates the link.
+
+345
+00:55:42,580 --> 00:55:48,400
+Link'i oluştururken bir el daha kalktı.
+
+346
+00:55:50,140 --> 00:55:51,480
+[öğrenci] [öğrenci] mi?
+
+347
+00:55:54,180 --> 00:55:55,420
+Buyurun dinliyoruz.
+
+348
+00:55:55,480 --> 00:55:56,200
+Evet hocam.
+
+349
+00:55:56,880 --> 00:55:57,180
+Tamam.
+
+350
+00:55:58,452 --> 00:56:07,812
+Linkin boyutu ve konumu hakkında bilgi içerir diye not almışım ben kodla ilgili ama emin değilim.
+
+351
+00:56:09,252 --> 00:56:19,592
+Şimdi, the code from the link on which a message was sent is passed to a receiving task along with each message.
+
+352
+00:56:20,755 --> 00:56:34,775
+Böylece yani onu rahatlıkla alan bir şeyle ilişkilendirebilsin diye, ne yapacağına karar verebilsin diye, yani bir aksiyon kodu gibi, işlem kodu gibi düşünün.
+
+353
+00:56:34,775 --> 00:56:44,775
+Bunun önceden sender ve receiver arasında anlaşılmış olması gerekiyor. Yani diyelim ki...
+
+354
+00:56:45,492 --> 00:56:56,132
+Fail açma, fail kapama, faildan okuma, faili silme. Bunun gibi bir operasyon kodu gibi düşünmeniz lazım. İşi kolaylaştıran bir şey.
+
+355
+00:56:58,612 --> 00:57:03,432
+Peki, bypass linkleri ne işe yarıyor?
+
+356
+00:57:19,668 --> 00:57:24,367
+Bypass Linkleri. Paper'da yazıyor ya.
+
+357
+00:57:43,251 --> 00:58:04,092
+Siz bu paperların özetini nasıl yolluyorsunuz çok merak ediyorum. Yaklaşık yine 29-30 tane özet vardı. En azından bu özeti yollayan arkadaşların şu sorduğum bir takım deminden beri bazı temel sorulara cevap alamıyorum. Onlara cevap vermesini beklerdim. İlginç oluyor. Hakikaten ilginç oluyor.
+
+358
+00:58:15,668 --> 00:58:16,668
+[öğrenci]?
+
+359
+00:58:16,668 --> 00:58:18,668
+Evet Hujan, yani,
+
+360
+00:58:18,668 --> 00:58:22,668
+Channel, istepad that the link will follow.
+
+361
+00:58:26,452 --> 00:58:32,452
+Bu sorunlar, bu sorunlar, bu sorunlar.
+
+362
+00:58:34,652 --> 00:58:39,452
+Bu sorunlar, bu sorunlar.
+
+363
+00:58:39,852 --> 00:58:41,452
+Pardon hocam.
+
+364
+00:58:41,952 --> 00:58:46,452
+Bu sorunlar, bu sorunlar.
+
+365
+00:58:49,588 --> 00:58:55,648
+Bir sonraki soru. Kaç tip mesaj var?
+
+366
+00:59:07,059 --> 00:59:08,059
+Nasılsınız?
+
+367
+00:59:12,755 --> 00:59:15,195
+[öğrenci], sana söz verdim ama...
+
+368
+00:59:15,195 --> 00:59:17,836
+Sorry, I forgot to turn on my microphone.
+
+369
+00:59:18,456 --> 00:59:18,755
+Okay.
+
+370
+00:59:19,596 --> 00:59:27,816
+There are three types of messages and those types of messages are according to a type of link that they are sent across.
+
+371
+00:59:28,476 --> 00:59:32,556
+And those types are a request message, reply message and general message.
+
+372
+00:59:33,556 --> 00:59:36,556
+Okay. What is a general message then?
+
+373
+00:59:39,552 --> 00:59:41,552
+Can I give the answer or do I need to?
+
+374
+00:59:41,552 --> 00:59:42,552
+Okay.
+
+375
+00:59:42,552 --> 00:59:52,552
+Okay, this type of message is, it gives a user an escape from the restrictions imposed on requests and replies.
+
+376
+00:59:52,552 --> 00:59:58,552
+Like when one request is sent with a reply or request message,
+
+377
+00:59:58,552 --> 01:00:02,552
+this is kind of a general link where the user can...
+
+378
+01:00:02,804 --> 01:00:08,304
+İlk yöntemizde bu tariflerine altyazı.
+
+379
+01:00:22,291 --> 01:00:30,111
+Peki, bir link oluşturulurken linki kim oluşturuyor? Oluşturulmasını kim talep ediyor?
+
+380
+01:00:41,139 --> 01:00:42,039
+Asit soru arkadaşlar.
+
+381
+01:00:46,579 --> 01:01:01,579
+[öğrenci]? Link oluşturma talebini sahip olan task link oluşturuyor hocam. Source tarafı oluşturuyor hocam. Evet, kaynak tarafı. Peki, linki oluştururken...
+
+382
+01:01:07,059 --> 01:01:13,180
+Linkin kime olacağıyla beraber linkin yeteneklerini de verebiliyor muyuz?
+
+383
+01:01:32,340 --> 01:01:47,960
+Bir soru arkadaşlar. Linkin yeteneği ne diyeceğim bir sonrakisinde de. Evet, [öğrenci] [öğrenci]. Hangisini kullanıyorsunuz? İkisini birden mi yoksa [öğrenci] veya [öğrenci]'i mi daha rahat olur?
+
+384
+01:01:48,720 --> 01:01:52,220
+Hiç fark etmez hocam. Hangisini isterseniz ikisini de kullanıyorum.
+
+385
+01:01:52,220 --> 01:01:53,440
+Tamam, peki.
+
+386
+01:01:55,520 --> 01:01:58,160
+Ben şöyle not almışım.
+
+387
+01:01:58,804 --> 01:02:10,524
+Yetenek, bağlantılar yetenekler gibi değiştirilir. Çekirdek tüm bağlantı işlemlerine katılır. Ancak bir bağlantının kavramsal kontrolü, bağlantının adreslendiği sürece aittir.
+
+388
+01:02:11,164 --> 01:02:14,364
+Ama ben şimdi yetenek ne işe yarıyor diye soruyorum [öğrenci].
+
+389
+01:02:16,764 --> 01:02:17,864
+Bilmiyorum o zaman.
+
+390
+01:02:17,864 --> 01:02:19,364
+Çok teşekkür ederim.
+
+391
+01:02:21,064 --> 01:02:24,684
+Evet. Yetenek ya.
+
+392
+01:02:28,211 --> 01:02:28,851
+[öğrenci].
+
+393
+01:02:30,172 --> 01:02:42,172
+Hocam, yetenek o linkin amacı aslında. Yani dosyaya mı erişecek yoksa hafızada belli bir bölgeye mi erişecek? Bu donanıma kaynaklara erişme türüne yetenek diyoruz.
+
+394
+01:02:42,512 --> 01:02:45,931
+Ancak akses kontrol olabilir mi? Erişim izni olabilir mi?
+
+395
+01:02:45,931 --> 01:02:49,572
+Tabii. Evet, akses capabilities diye herhalde paperda geçiyordu.
+
+396
+01:02:50,211 --> 01:02:53,032
+Evet, aynen öyle. Orada da o şekilde anlatılıyordu.
+
+397
+01:02:55,188 --> 01:03:09,648
+Arkadaşlar, üzülerek söylüyorum, bugünkü performansımız kötü. Geçen hafta yeni başlıyorduk, olayı yeni öğreniyordunuz. O yüzden daha böyle bir tereddütlü olabilirdiniz.
+
+398
+01:03:09,648 --> 01:03:21,488
+Ama bugün, bu hafta, geçen haftaya göre çok daha az kişi konuşuyor. Geçen haftaya ek olarak iki kişi farklı katıldı diye.
+
+399
+01:03:21,972 --> 01:03:47,771
+Şu ana kadar aklımda kaldı. Ama diğerlerinizden hiç ses seda çıkmıyor. Bu hoş bir durum değil. Yani gördüğünüz gibi paperlarla alakalı da öyle çok özel köşede bucakta kalmış şeyler yapmıyoruz. Genel şeyler konuşuyoruz. Bu özetleri yolladığınıza göre, özetleri hazırlamak için çaba sarf ettiğinize göre.
+
+400
+01:03:48,175 --> 01:03:53,655
+Burada bu sorulara da cevap vermek için çaba sarf etmeniz gerekiyor bence. Öyle düşünüyorum.
+
+401
+01:03:56,175 --> 01:04:06,195
+Bir sonraki haftanın ödevini sisteme koydum. Saat 3 itibariyle aktif olacak. Yine pazar akşamı 23.59'a kadar süreniz var.
+
+402
+01:04:06,195 --> 01:04:12,296
+3 tane paper yapacaksınız, özetleyeceksiniz.
+
+403
+01:04:12,851 --> 01:04:27,751
+Yedi, sekiz ve dokuz olmak üzere. Evet, herkese iyi günler, iyi haftalar. Haftaya daha aktif bir şekilde, daha heyecanlı bir şekilde görüşmek üzere diyorum.
+
+404
+01:04:28,351 --> 01:04:38,271
+Görüşmek üzere hocam. Sağ ol. İyi günler hocam. İyi günler hocam. İyi günler hocam. İyi günler hocam. İyi günler hocam. İyi günler arkadaşlar.

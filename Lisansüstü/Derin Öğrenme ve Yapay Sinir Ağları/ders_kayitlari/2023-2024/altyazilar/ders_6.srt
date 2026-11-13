@@ -1,0 +1,2827 @@
+1
+00:00:03,379 --> 00:00:19,120
+Hocam, yok işte ben geldim. Bak şu an online'da katılım başladı. Şu önceki attıklarımız geldi hocam, dersi bir tane var. YETOBS değil de bu şeyden online'dan atmıştım.
+
+2
+00:00:38,323 --> 00:00:43,603
+Arkadaşlar, bir 10 dakikaya başlayacağız. Ufak bir toplantıdan geliyorum.
+
+3
+00:06:01,043 --> 00:06:28,503
+Merhabalar arkadaşlar. [kişisel bilgi]. [kişisel bilgi]. Zaten sizin sunumlarınızın başlaması lazımdı. İki haftalık bir kaybımız var. Bu iki haftayı telafi edebilir miyiz, bir ek ders koyabilir miyim gittiklerinde önerimizde.
+
+4
+00:06:28,851 --> 00:06:40,611
+Haftalarda. Onun kararını ben WhatsApp'tan bildiririm. Ama şu anlık sizin sunumlarınızda normal ders akışında olacak.
+
+5
+00:06:41,651 --> 00:06:53,971
+Üç hafta kadar zaten ancak muhtemelen eriteceğiz. Bu günün sonlarla devam edeceğiz. Ek ders noktasında da seviyelim.
+
+6
+00:06:56,755 --> 00:06:58,535
+Evet, var mısınız? Sorunuz.
+
+7
+00:07:01,975 --> 00:07:03,515
+Geçmiş olsun hocam.
+
+8
+00:07:06,415 --> 00:07:14,295
+Sağ olun arkadaşlar. O zaman şimdi sunum takvimine random bir şekilde alırmıştım.
+
+9
+00:07:15,215 --> 00:07:20,615
+Kime geldi bilmiyorum. Bu hafta sunacaklar var mı aramızda [öğrenci]?
+
+10
+00:07:20,955 --> 00:07:23,295
+Mesela ilk sırada [öğrenci]'u gözüküyor.
+
+11
+00:07:24,148 --> 00:07:43,328
+Merhaba hocam, evet buradayım. Ekran paylaşımı yapabiliyor musun? Şimdi paylaşıyorum. Ekranım geldi mi? Geldi. Genel olarak başta bir şeyden bahsedelim.
+
+12
+00:07:43,795 --> 00:08:05,135
+Arkadaşlar, çok detaya girmenizi beklediğim bir sunum değil. Burada bir şeyleri uygulamak, yani işte görüntü olur veya ses olur veya sinyal olur, tek boyutlu veri olabilir veya çift boyutlu veri. Burada ders kapsamında en azından öğrendiğimiz bazı şeyleri uygulamanızı bekliyoruz.
+
+13
+00:08:05,716 --> 00:08:23,115
+Yani tabii sonuçlar vesaire. Yani 15 dakikayı kesin istiyoruz özgürsünce. 15 dakikalık bir sunum yeterli çünkü çok kalabaladı zaten. 15 dakika kadar olacak bir sunum yeterli olacak. Buyurur Ayrı.
+
+14
+00:08:23,896 --> 00:08:27,176
+Selamlar herkese. Benim konum Car Object Detection.
+
+15
+00:08:27,764 --> 00:08:33,443
+Sunum içeriğim nesne tespiti, model, veri seti, eğitim ve uygulama kısmından oluşuyor.
+
+16
+00:08:34,464 --> 00:08:42,864
+Giriş kısmında öncelikle Object Detection nedir diye bakacak olursak, temel olarak bir görüntüdeki veya videodaki nesneleri tanımlamak için kullanılıyor.
+
+17
+00:08:43,804 --> 00:08:48,624
+Nesneleri de belli bir renk, şekil, gölge, parlaklık analizlerini de yapıyor.
+
+18
+00:08:50,264 --> 00:08:54,304
+Bu nesnelerin çerçeve içinde de nerede bulunduğunu da ayrıca belirtiyor Object Detection.
+
+19
+00:08:54,836 --> 00:09:14,536
+Car Object Detection neden önemli diye bakacak olursak, trafik güvenliği ve denetiminde, otonom sürüş teknolojisinde, kaza önleme ve güvenliğinde, otopark yönetiminde, trafik akışı iyileştirmede, lojistik ve taşımacılık sektörlerinde Car Object Detection kullanılıyor ve birçok fayda da sağlıyor.
+
+20
+00:09:15,251 --> 00:09:37,192
+Nesne tespiti konusunda temel birkaç kavram var. Öncelikle Bonding Box kavramı var. Bu, nesnedeki görüntü veya videodaki konumunu belirtmek için bir sınırlayıcı kutu şeklinde bir çizim yapıyor. Bu kutuda nesnenin konumunu belirlemek için kullanılıyor.
+
+21
+00:09:37,652 --> 00:09:59,532
+V vektörle ifade ediliyor. Burada PC olan güven skoru bu nesnenin doğruluk yani ne kadar doğru tahmin edildiğinin bir oranını gösteriyor. BX kısmı nesnenin orta noktasının X koordinatını, BY koordinatını, BH nesnenin genişliği, BW nesnenin yüksekliği.
+
+22
+00:10:00,000 --> 00:10:17,900
+C'de bağlı sınıf olasılığı. Yani modelle ne kadar sınıf varsa o kadar sayıda tahmin değerini barındırıyor. Bu şekilde bir kutu çizip üstüne de mesela kar, baz trak ya da öyle bir ifade belirtip yanına da yüzde kaç doğrulukla tahmin ettiği değeri sürekli çizdiriyor aslında bu kutu.
+
+23
+00:10:18,388 --> 00:10:40,188
+Bir de classification kavram var. Sınıf andırmada bir girdiği belirli bir kategoriye veya sınıfa göre ayıran bir yapay zeka tekniği. Bir veri örneğini birden fazla tanımlanmış kategoriye atıyor. Varlığını tespit ediyor ve hangi işte kar mı, bas mı, trak mı ne olduğunu sınıf andırmada yardımcı oluyor.
+
+24
+00:10:41,107 --> 00:11:09,107
+Model kısmında birden fazla model var. Ben konvensiyon sinir ağlarını bir ele aldım burada. Konvensiyon sinir ağları zaten çok sevdiğiniz katman kullanarak görüntülerdeki farklı özellikleri algılanmasını sağlıyor. Bundan dolayı görüntülerdeki nesnenin hangi nitelikte olduğu kolay bir şekilde ayet edilebiliyor. Birçok gizli alt katmandan oluşan konvensiyon sinir ağları zaten ilk katman konvensiyon sinir ağları katman oluyor. Bu katman piksel değerlerine.
+
+25
+00:11:11,572 --> 00:11:39,572
+Bu modelde projede YOLO kullanmıştım. YOLO'yu da burada ele aldım. YOLO komolyonel sinir ağları kullanarak nesne tespit yapan bir algoritma. Diğer algoritmalardan göre daha çok kullanılmasının sebebi de hızlı olması. Ve bu sayede nöral bir ağdan geçiriyor. Bu sayede hızlı oluyor. YOLO algoritmasında görüntüler tespit ettiği nesneleri kutu ile çeviriliyor. Girdi olarak görüntüyü en önemli.
+
+26
+00:11:39,572 --> 00:11:57,591
+İzgara da içinde nesne olup olmadığı, nesnenin merkez noktası, koordinatlarını ele alıyor. Nesnenin merkez noktasına sahip olduğuna karar veren ızgara o nesnenin sınıfını, yüksekliğini, genişliğini bulup nesnenin çevresinde de bu anlik bak çiziyor.
+
+27
+00:11:58,548 --> 00:12:09,028
+Yolo'nun da birçok modeli var. Yolo V3, V4, V5, V8 diye birden fazla modeli var. En çok kullanılanlar arasında V4 var.
+
+28
+00:12:09,423 --> 00:12:29,303
+V5 ile birlikte. V4'de Nisan 2020'de yayınlanan Coco Veri seti üzerinde son teknoloji performansı yaşayan gerçek zamanlı bir nesne algılama modeli. Yolo V4 kullanarak Yolo ailesindeki diğer modellerle birlikte yeni bir katkı sundu Yolo V4 modeliyle.
+
+29
+00:12:30,932 --> 00:12:37,932
+Buradaki diğer yola modellerle karşılaştırıldığında rakiplerine göre neredeyse 3 kat fark atmış durumda.
+
+30
+00:12:38,932 --> 00:12:40,932
+Veri setim Kaggle üzerinden alındı.
+
+31
+00:12:40,932 --> 00:12:46,932
+Edward tarafından bir Car Object Detection projesi vardı. Bu projede kullanıldı.
+
+32
+00:12:47,932 --> 00:12:53,932
+O da bir enstitünün yapmış olduğu yarışmada kullanılan bir veri setini alıp uyarlamış.
+
+33
+00:12:54,720 --> 00:13:17,720
+Burada 175 adet test datası var, 1001 adet test train datası var. Bunlar yolda giderken toplanmış bir görüntülerden elde ediliyor. Burada da bir csv dosyası var. Onda da resimlerin xmin, ymin, xmax, ymax değerleri var. Bu da bizim boğunduk box çizerken kullanmamızı sağlıyor.
+
+34
+00:13:18,995 --> 00:13:37,256
+Eğitim ve uygulama kısmında da ilk olarak adımlarımız verinin elde edilmesi. Verimiz zaten hazır bir veri seti. Sonrasında model seçimi geliyor. Burada birden fazla model kullanılıyor. Car Object Detection yaparken. Modeller için de YOLO modeli seçildi.
+
+35
+00:13:37,683 --> 00:14:05,543
+Model eğitim adımlarında eğitim veri kümesi model tarafından besleniyor ve görüntülerdeki arabaları tespit etmeyi sağlanıyor. Kayıp fonksiyonu belirleniyor ve optimizasyon algoritması da Adam, SGD falan seçiliyor. Burada Adam kullandım ben. Model eğitim veri kümesi üzerinde iteratif olarak eğitilir ve kayıp fonksiyonu minimize edilmeye çalışılır. Modelin performansı doğrulama veri kümesi üzerinde periyodik olarak denilir ve parametreler ayarlanır.
+
+36
+00:14:05,683 --> 00:14:17,964
+Elde edilen sonuçlar analiz edilir ve daha da iletiştirmek için sonuçları çeşitli verinin arttırılması, augmentation gibi işlemler de yapılarak sonuçlar daha da kararlı hale gelebilir.
+
+37
+00:14:19,043 --> 00:14:32,764
+Çıktılarda da burada resimlerden hem bounding box çiziyor araçları tespit edip hem de onların doğruluk oranı, değerini ve türünü de aslında bu da classification da yapıyor.
+
+38
+00:14:34,163 --> 00:14:55,764
+Kaynakçı kısmında da YOLO modelinde zaten Redmond ve Farhad'i bayağı bir makale yazmıştı. Onlardan biraz değerleme yaptım. Kaynakçı kısmında da zaten Car Object Detection projesini, dataset'lerine aldım. Edward'ın linki var. Teşekkür ederim dinlediğiniz için.
+
+39
+00:14:58,611 --> 00:15:07,292
+Şimdi bu çalışmayla alakalı literatürü, linkini zannedersem sen koymuştun.
+
+40
+00:15:07,292 --> 00:15:10,731
+Hı hı, Excel'de.
+
+41
+00:15:10,731 --> 00:15:15,851
+Evet Science Direct'te bir paper var gördüğüm gibi.
+
+42
+00:15:15,851 --> 00:15:25,372
+Şimdi burada bu koymuş olduğun paperdaki verisiyle aynı vesletim seninkinden.
+
+43
+00:15:26,292 --> 00:15:39,611
+Şu şeyden, Yeşii'nin en alttaki paper. Veri setim aynı değil. Şu veri setimi buradan aldım.
+
+44
+00:15:41,611 --> 00:15:43,451
+Onlar aynı veri seti değil mi?
+
+45
+00:15:43,891 --> 00:15:47,331
+Değil, paper'daki. Sadece orada benzer model kullanmıştı diye.
+
+46
+00:15:48,628 --> 00:15:57,628
+Peki, skorları şimdi örnek bir görüntü gösterdim de. Map 05, 05, 095 skorları vs. ne çıktı?
+
+47
+00:15:57,628 --> 00:16:00,620
+Şöyle, bir dakika hemen onu paylaşayım.
+
+48
+00:16:20,052 --> 00:16:32,052
+Gözüküyor mu? Evet. Tamam. 5FG gittin her hafta. 5FG gittim. Burada ilk başta kayıt değerlerim yüksekti bayağı. Sonra düştü. Sonra doğru.
+
+49
+00:16:35,052 --> 00:16:46,052
+93.60 gidiyorsun. Peki, MAP 05. MAP denen bir parametre var Mini AVS Prezleşim'de. Biliyor muyuz?
+
+50
+00:16:46,644 --> 00:16:47,644
+Yok onu bilmiyorum.
+
+51
+00:16:53,364 --> 00:17:12,064
+Raporda yazacaksın ya [öğrenci]. Bu skorların sonuçları da koymanı isteyeceğim. Görsel olarak biz iki tane sonuç koyarız. Bir kuantitif, bir kualletif. Yani sen şu an kualletifi gösterdin. Görsel kaliteli, kalite anlamda.
+
+52
+00:17:12,500 --> 00:17:23,699
+Ama kuantitif, nicelik veyahut da sayısal değerlerle sonuçlar da olması mümkün deriz. Sana tavsiyem o bir tane Science Direct'teki paperı ben açtım.
+
+53
+00:17:23,699 --> 00:17:37,980
+Şimdi Developing a Car Object Detection Module for Autonomous Driving System. Yeşil'in çalışması. Ona bakarsan bu çalışmanın sonunda, bakayım koymuşum bunlar da.
+
+54
+00:17:38,708 --> 00:17:48,748
+Bazı grafikler koymuş. En azından o tarz grafikler konabilir. Confusion Matris konabilir. Bunları raporla koyalım.
+
+55
+00:17:49,468 --> 00:17:50,508
+Tamam, tamamdır hocam.
+
+56
+00:17:50,788 --> 00:17:53,488
+Tamam. Teşekkür ederiz.
+
+57
+00:17:53,728 --> 00:17:55,108
+Teşekkür ederim. Geçmiyorsun tekrardan.
+
+58
+00:17:55,108 --> 00:17:55,868
+Sağ ol.
+
+59
+00:17:59,488 --> 00:18:00,988
+Şimdi kimdir?
+
+60
+00:18:02,188 --> 00:18:03,968
+[öğrenci].
+
+61
+00:18:04,807 --> 00:18:06,208
+Buradayım hocam. Merhabalar.
+
+62
+00:18:19,508 --> 00:18:21,228
+Ekran paylaşıyorum.
+
+63
+00:18:26,420 --> 00:18:38,960
+Ben [öğrenci]. Proje olarak Lane Detection üzerine yoğunlaşmayı tercih etmiştim. Dataset olarak da onu seçtim.
+
+64
+00:18:51,763 --> 00:19:11,523
+Perception yapılıyor. Fakat şöyle sıkıntıları var. Farklı ışıklandırmalar, kötü hava koşulları, virajlar, kalabalık alanlar gibi ciddi sıkıntılı yerler var. Bunun için doğru data seçimi ve bu datalar üzerinde iyi bir training oldukça önemli.
+
+65
+00:19:12,915 --> 00:19:34,476
+Mesela gece sürüşünde gerekli eğitim sağlamamış olur. Bunun için benim seçtiğim dataset, CoolAid isimli Çin'de, Pekin'de 6 farklı araca monte edilmiş kameralarla toplanmış bir veri hisseti. Bu veri hisseti parçaya ayrılmış.
+
+66
+00:19:36,948 --> 00:19:44,508
+Durumlar olarak. İşte burada virajlardan, crossroadlara, gölgeli alanlardan geceye kadar farklı şeyler var.
+
+67
+00:19:45,888 --> 00:20:02,768
+Burada toplam 55 saat video kaydı 133 bin kare var. Fakat benim kullandığım kısmı ben 5 GB'lı toplam 18 bin veya 15 bin kadar bir resimle train ettim.
+
+68
+00:20:04,564 --> 00:20:16,564
+Ve 4 şerit olarak düşünülmüş hep. Ve dataset hem lane marking points veriyor hem de binary segmentation için de bir...
+
+69
+00:20:16,884 --> 00:20:29,844
+Ben ilk lane marking points ile sahada görülen onunla denemiştim. Fakat daha sonra çok iyi sonuçlar alamadım. Segmentasyonu denemek istedim.
+
+70
+00:20:29,844 --> 00:20:43,043
+Sahada lane marking pointlerde orada her parça bir lane tekst ediyor. Her ikili yan yana iki sayıda X ve Y koordinatlarını ve bu koordinatların hepsi de bir şeridi oluşturuyor.
+
+71
+00:20:43,763 --> 00:21:06,983
+Bu şekilde. Benim seçtiğim aktif asensu aksiyonu L2 Reol'uydu. Çünkü normal jeloda input negatifse output 0 oluyor. Fakat bu durumda bazı nöronlar hiç aktif olamayabiliyor. Ölü nöron oluyorlar ve bu bir kere öldükten sonra training sırasında aktif etmek de kolay bir iş değil.
+
+72
+00:21:08,559 --> 00:21:14,960
+Ve League Roll'u kullanıldığında sadece pozitif olanlar değil, bütün inputlar için bir gradient akış sağlanmış oluyor.
+
+73
+00:21:15,720 --> 00:21:23,259
+Ve Vanishing Gradient problemi, yani gradient'ın backpropagasyonunda çok çok küçülmesi problemine bir fayda sağlamış oluyor.
+
+74
+00:21:23,340 --> 00:21:25,299
+Çünkü nöronlar hep canlı tutuluyor bir şekilde.
+
+75
+00:21:25,819 --> 00:21:29,599
+Ve nöronlar hep aktif olmaya devam ediyor.
+
+76
+00:21:30,420 --> 00:21:33,599
+Sigmoid ve Tanaj gibi aktivasyonların aksine...
+
+77
+00:21:34,079 --> 00:21:42,079
+Bu tür problemler yok. Leech Reon'un bir farklı, belki de bazı durumları daha iyi versiyonu diyebiliriz.
+
+78
+00:21:42,079 --> 00:21:51,079
+Stimlos fonksiyonu, Binary Procentral Plus fakat bunun Logitli versiyonu.
+
+79
+00:21:51,079 --> 00:21:57,740
+Bunun seçmemin sebebi şu, birincisi Binary klasifikasyon için aslında yapılmış bir şey.
+
+80
+00:21:57,844 --> 00:22:11,423
+Ve sigmoid layer ile birleştiriyor. Yani modele sigmoid layer ekleyip daha sonra binary kür centropilos yapmak yerine doğrudan BC with Logis Loss kullanmak daha nümerik olarak stabil.
+
+81
+00:22:13,523 --> 00:22:19,663
+Bu sebeple benim aslında lane segment edeyim. Yani lane var veya yok. Bu pikselde lane var veya yok.
+
+82
+00:22:20,163 --> 00:22:24,063
+Klasifikasyonu için. Biçilmiş kaftandı aslında.
+
+83
+00:22:24,592 --> 00:22:35,792
+Bu sebeple bunu kullanmış oldum. Optimizer olarak Adam'ı kullandım. Dolayısıyla her parametrenin kendi learning rate'i var.
+
+84
+00:22:35,792 --> 00:22:48,092
+Ve bildiğiniz gibi Adam normal gradient descent'a göre computational cheap fakat aynı zamanda stokastiğe göre de daha hızlı konverj ediyor.
+
+85
+00:22:48,276 --> 00:22:55,115
+Ve açıkçası çok daha popüler. Bu yüzden ben bunu tercih ettim diyebilirim.
+
+86
+00:22:56,355 --> 00:23:04,436
+Böyle ben modeli tasarlarken ilk şeyi düşündüm, bir hazır arkitektur kullanmayı.
+
+87
+00:23:04,556 --> 00:23:11,396
+Fakat bana zoruk olsun, biraz daha haşirleşir olayım diye sıfırdan yapmayı tercih ettim.
+
+88
+00:23:12,019 --> 00:23:35,640
+Çok daha yüz yüze başaramadım belki de ama ilk denemem şuydu. Çok basit bir CNN Convolution Layer'la bir CNN tasarlayıp bunun sonucunu görmek. Bunun için daha büyük kernelerle, 5x5'lik kernelerle Convolution Layer'la.
+
+89
+00:23:36,403 --> 00:23:53,603
+Yani convolution, relu, max pool. Normal relu bu. Max pool üçlüsüyle gittim. En sonunda bir convolution ekleyip bir çıktı sağladım. Ve bunu train ettim. Bu arada inputumu da en başta kendim resimleri 320x8'e düşürmüştüm.
+
+90
+00:24:03,251 --> 00:24:21,451
+Train ettim. Önce modeli PyTorch'ta tasarladım. Train ettim ve train derken de bu Training Validation Accuracy'yi çekip bunu bir graf yaptım. Fakat sahada görebilirsiniz test için kullandığım dört örnek şeyi.
+
+91
+00:24:24,051 --> 00:24:36,891
+7 ipo'a rağmen ve sınırlı şeye rağmen görsel olarak bir şeyler var. Fakat sahada Training Validation Bosa'a baktığım zaman benim beklediğim özellikle validation kısmında beklediğim gibi olmadı.
+
+92
+00:24:39,771 --> 00:24:44,151
+Bunun da bazı sebepleri var. Bu da slide'ın sonunda biraz konuşacağım.
+
+93
+00:24:46,132 --> 00:25:02,592
+Daha kompleks bir model tasarlamak istedim daha sonra. Bunun içinde 5 Normalization ve Leaky Relu'yu ve Convolution'da kernelini küçültüp denemek istedim. Bunun için de Convolution daha küçük kernelli. Çünkü daha çok feature ekstra etmek için.
+
+94
+00:25:14,259 --> 00:25:20,579
+Down sample yapmak için bir model tasarladım.
+
+95
+00:25:20,579 --> 00:25:32,259
+Modele gelirsek, ilk başta 3 epoch yaptım. Daha sonra bunu 15'e çıkartıp yeniden train ettim.
+
+96
+00:25:32,259 --> 00:25:36,259
+3 ile 15 arasında loss'um çok az düştü.
+
+97
+00:25:38,932 --> 00:26:04,771
+25'ten 24, yani 0.00, 25'ten 24'ü gibi bir baktık düşüş. Kürsülerimi yine dediğim gibi oturtamadım. Çok yüksek çıktı. Fakat şeye baktığımda, orijinalmiş Bradley Kipman'ski karşılaştırdığımda yine bir lane'i anlıyor fakat her şeyi anlamakta. Örneğin sağda yukarıda ikisinde de.
+
+98
+00:26:05,715 --> 00:26:25,776
+Gece sürüşlerinde, gece sürüşlerine özel, çok iyi train edilmediği için, daha doğrusu geceyi özel ayrı bir train geliştirmediğim için diyeyim, gecede özellikle çok başarılı değil. Güneşli şeylerde daha başarılı olduğunu da sahada görebiliyoruz.
+
+99
+00:26:26,615 --> 00:26:32,995
+Bunu tabii geliştirmenin yolları var. Birincisi daha büyük, datatörün tamamı üzerinde. Ben ufak bir kısmı üzerine train etmiştim.
+
+100
+00:26:33,715 --> 00:26:52,655
+Farklı mimar ile denenebilir, daha fazla hidden layer denenebilir. Overfitting'e girmeden bir şekilde daha fazla ipok belki yüzlerce yapılabilir veya bunların şeyle çok uğraşmayıp hazır arkitektürler kullanılırsa belki olabilir. Netiniz için teşekkür ederim.
+
+101
+00:26:52,655 --> 00:27:00,195
+Teşekkürler [öğrenci]. Orada şeyi arkitektürleri tasarladığım var. Sekizinci slide'a gelin.
+
+102
+00:27:00,980 --> 00:27:08,579
+Burada mesela normalde üç boyutlu bir görüntünü sen Gray Scale'e yapıp, ondan sonra Conversion Fetch'ın yapmaya geçtin.
+
+103
+00:27:09,180 --> 00:27:16,079
+Yani RGB kalırlı görüntüyü aslında kullanmıyorsun. Gray Scale'e çevirdikten sonra mı?
+
+104
+00:27:16,680 --> 00:27:18,079
+Evet, evet.
+
+105
+00:27:19,635 --> 00:27:29,935
+O işte en büyük sıkıntı, gece olma durumunda, Greyscale'de bayağı bir bilgi kaybı oluyor genelde.
+
+106
+00:27:30,935 --> 00:27:31,935
+Tamam.
+
+107
+00:27:31,935 --> 00:27:38,935
+Bir de genelde normalde bu tarz yaklaşımları biraz instans segmentasyonla çözüyorlar.
+
+108
+00:27:38,935 --> 00:27:42,935
+Yani sen sınıflandırma, piksel bazı da sınıflandırma yapmışsın.
+
+109
+00:27:42,935 --> 00:27:46,336
+Her pikselin arka planda mı, ön planda mı?
+
+110
+00:27:47,571 --> 00:28:14,172
+Daha önceden teknoloji bu taraflara, işte UNET'e veyahut da daha böyle Instance-based segmentasyonların türetilmediği dönemde kullanılan bir yöntemdi ama bu çok yavaş olan bir yöntem segmentasyonda. Yani her bir pikseli sınıflandırma yavaş bir süresi. Mesela sen 15 epoklu 2060 için ne kadar bir süre geçti eğitim için?
+
+111
+00:28:15,667 --> 00:28:26,167
+Hocam, geleyim hemen. Oldukça sürdü. Ne kadar? 6-7 saat mi sürdü acaba?
+
+112
+00:28:26,167 --> 00:28:40,667
+Evet, aslında Instance Basal Segmentation'lar bunlar biraz daha... Tabii seni şu anki etiketle verin de o tarz değil herhalde. Pixel Pixel bütün fotoğrafın...
+
+113
+00:28:40,819 --> 00:28:48,619
+Sınıf bilgisi mi var etiketinde, veri setinde? Mesela çizgilerin koordinatları mı var sadece?
+
+114
+00:28:49,279 --> 00:28:55,779
+Çizgilerin koordinatlarını kullanarak başta denemiştim. Daha sonra şeye geçtim. Buradaki minor segmentasyona geçtim.
+
+115
+00:28:56,159 --> 00:28:57,319
+Şu alttakini kullandın mı?
+
+116
+00:28:57,319 --> 00:28:57,899
+Evet, evet.
+
+117
+00:28:59,059 --> 00:29:10,240
+Aslında bu alttakini kullanarak, Maskar, CNN'le vs. de çok daha pratik bir şekilde yapılabiliyor bu tarz. Tamam, bu da bir çalışmadır. Teşekkür ederiz. Sağ olun.
+
+118
+00:29:10,240 --> 00:29:12,480
+Sağ olun hocam. Teşekkür ederim.
+
+119
+00:29:14,619 --> 00:29:16,980
+Arkadaşlar, başka kimsindir?
+
+120
+00:29:18,579 --> 00:29:20,940
+[öğrenci]. Burada mıyız [öğrenci]?
+
+121
+00:29:24,692 --> 00:29:29,672
+[öğrenci] zannedersem yok.
+
+122
+00:29:29,672 --> 00:29:33,031
+Muse Klasit'i zaten takip edemiyorum çok fazla.
+
+123
+00:29:35,852 --> 00:29:38,172
+[öğrenci].
+
+124
+00:29:38,912 --> 00:29:41,872
+[öğrenci] pardon. [öğrenci].
+
+125
+00:29:43,692 --> 00:29:45,771
+[öğrenci].
+
+126
+00:29:47,811 --> 00:29:50,231
+Zannedersem bu arkadaş da yok.
+
+127
+00:29:52,372 --> 00:29:58,031
+[öğrenci] Buradayım hocam.
+
+128
+00:29:58,711 --> 00:30:00,211
+Evet, sunum yapacağız mı?
+
+129
+00:30:00,632 --> 00:30:02,112
+Evet hocam, başlayalım.
+
+130
+00:30:02,552 --> 00:30:03,451
+Tamam, sana tamam.
+
+131
+00:30:09,076 --> 00:30:32,456
+Görünüyor mu hocam? Ekranım. Evet, evet şu an gözüküyor. Benim çalışmam bir regresyon modelinin kurulmasıyla alakalı bir çalışma. Bunun için de Kaggle'da yer alan, yengeçlerin fiziksel özelliklerini barındıran bir veri seti seçtim. Burada veri setine ait örnekler bulunuyor.
+
+132
+00:30:34,163 --> 00:30:56,384
+Değişkenler ağırlık, kabuk ağırlığı, çap, genişlik gibi. Hedef değişkenin ortalaması ise 9.9, standart satması 3.2, minimum 1 ve maksimum 27. Hedef değişken normal dağılım gösteriyor. Burada ise korelasyon matrisi yer alıyor.
+
+133
+00:30:58,996 --> 00:31:11,895
+Ön işleme adımlarını geçerek direkt model oluşturma aşamasına geçtim. İlk model tek bir hidden layer barındıran sığ bir model.
+
+134
+00:31:15,955 --> 00:31:37,475
+Kayıp fonksiyonu olarak MS'ye kullandım. MinSquare Error. Optimizer olarak FullBedge Gradient Descent kullandım. Learning Rate 0.01. Epoch sayısını 1000 olarak belirledim. Ve her 100 epoch sonuçları alacak şekilde oluşturdum.
+
+135
+00:31:38,132 --> 00:31:55,432
+ilk modelin MSI değeri 3.35 olarak bulundu. Daha sonra ise modeli 27 unit barındıran bir tane daha hidden ile ilgili ekledim ve MSI değeri 3.14'e düştü. Çıktılar bu şekilde onda da.
+
+136
+00:31:58,067 --> 00:32:11,067
+Daha sonra minAbsoluteError kullandım şeyde loss fonksiyonu olarak. Optimizer olarak addm kullandım. msh'de 1.27 olarak bulundu. Çıktıları bu şekilde.
+
+137
+00:32:13,067 --> 00:32:15,067
+Daha sonra
+
+138
+00:32:15,092 --> 00:32:26,551
+Farklı seçenekler üreterek gittim. Epox sayısını 500'e düşürdüm ve diğer şeyleri aynı şekilde bırakarak çok bir değişiklik almadım. 1.27 olarak kaldı.
+
+139
+00:32:27,443 --> 00:32:52,743
+En iyi sonucu veren model olarak da, optimizasyon algoritması yine Adam, loss fonksiyonu, min absolute error, learning rate değeri 0.001, epoch sayısı 1000, batch sayısı değerini de 256 olarak belirledim ve 1.05 ms değeri elde ettim. Bu dediğim gibi en iyi sonuç veren model oldu.
+
+140
+00:32:53,343 --> 00:32:54,743
+Görselde ise tahmin.
+
+141
+00:32:55,443 --> 00:32:57,884
+Gerçek değerlerle beraber.
+
+142
+00:33:00,303 --> 00:33:02,843
+Teşekkür ederim hocam. Bu kadardı benim sunum.
+
+143
+00:33:03,963 --> 00:33:15,083
+Şimdi şöyle, normalde dataset slide'ını bir açsana. Orada kaç örnek olduğunu göremedim. Kaç tane örnek var bu dataset'de?
+
+144
+00:33:15,223 --> 00:33:19,384
+Şey hocam, 10 bin örnek var. Slide'a koymadım.
+
+145
+00:33:20,115 --> 00:33:25,875
+10.000 örneği kaç feature vardı? Şu yazdığım feature'lar mı sadece?
+
+146
+00:33:25,875 --> 00:33:27,196
+Evet hocam bunlar.
+
+147
+00:33:27,196 --> 00:33:37,435
+6, 7, 8 feature var. Burada seksin yani cinsiyetin korrelasyonu da şu sağdan mı öğreneceğiz?
+
+148
+00:33:37,435 --> 00:33:43,115
+Mesela bu korrelasyon maddesi var ya, onu biraz yorumlar mısın?
+
+149
+00:33:43,763 --> 00:33:56,323
+Hemen hemen bütün değişkenler aslında birbiriyle korelasyonlu görünüyor. Ancak buraya cinsiyeti koymamışım. Hocam korelasyon madresine.
+
+150
+00:33:56,720 --> 00:34:15,920
+İşte o aslında beni merak eden de biraz öyle yani modeller, herhalde bu tarz yapıda ağırlık gibi biraz cinsiyete bağımlı oluyorlar. Çünkü cinsiyet bir erkeğin veya işte dişin, tabii bilmiyorum bu şeyde, krepte, yengeçte durum nedir belki de hiç düşündüğüm gibi değil ama.
+
+151
+00:34:15,920 --> 00:34:22,920
+Length'in, diameter'ın zaten vardır etkisi. Bakıyorum, age ile length'in 0.61 çıkmış.
+
+152
+00:34:23,347 --> 00:34:36,667
+Ama en çok Shell Weight ile yaşın, yani tabi kabuk sonuçta kabuk ağırlığı, yaş ilerledikçe daha çoğalacak. 0.66 bir korel çıkmış.
+
+153
+00:34:36,667 --> 00:34:48,847
+Başka en yüksek korelasyon ne ile ne arasında çıkmış peki? 96 Shell Weight ile Weight arasında çıkmış. 97 Shucket Weight neydi?
+
+154
+00:34:49,331 --> 00:35:09,172
+O kabuksuz ağırlık hocam, o şekilde geçiyor. O da zaten manalı, beytleşilmiş. Tamam, bu veri seti değişik bir veri setilmiş. Peki, şeyi göremedim bir de seninle paylaştığın yere bir paper yazılmamış mı bununla alakalı? Çünkü paper gözükmüyor senin yanında.
+
+155
+00:35:09,460 --> 00:35:20,199
+Evet hocam, bununla, yani Kaggle'dan aldım ama o şekilde hiç, yani paylaşılmış ama bununla alakalı bir paper galiba yok hocam.
+
+156
+00:35:25,480 --> 00:35:29,140
+Bu tarz bir seferleri, bir sürü ne zaman yayınlanmış?
+
+157
+00:35:29,960 --> 00:35:31,319
+Evet, iki yıl önce hocam.
+
+158
+00:35:33,492 --> 00:35:36,392
+21 veya 22 olması lazım.
+
+159
+00:35:36,392 --> 00:35:38,092
+Direkt yazınca çıkmak.
+
+160
+00:35:38,092 --> 00:35:45,992
+Tamam. En sonunda minisquery erroru %1'lere kadar düştü diyorsun değil mi?
+
+161
+00:35:45,992 --> 00:35:48,692
+Evet, en son değer olarak 1 buldum hocam.
+
+162
+00:35:48,692 --> 00:35:56,692
+Bir de orada 500 Epoch yaptık dedin ama 1000 Epoch'a kadar gitmiş ekranda. O neden olmuş olabilir? Epoch 500 iken?
+
+163
+00:35:56,692 --> 00:36:00,992
+Haa, acaba yanlış şeyi mi koydum hocam?
+
+164
+00:36:01,023 --> 00:36:12,143
+Evet, galiba yanlış şeyi koymuşum hocamın da yanlış şekliyi koymuşum. Tamam. Teşekkürler. Ben teşekkür ederim hocam.
+
+165
+00:36:13,963 --> 00:36:16,283
+Şimdi sırada kim var?
+
+166
+00:36:20,340 --> 00:36:38,240
+[öğrenci] [öğrenci]. Buradayım hocam. Sana veririm. Tamam hocam. Ekranı kapatabilirsin. Tamam hocam. Bilgisayarı alacağım hocam. Bir saniye.
+
+167
+00:36:50,739 --> 00:36:51,979
+Paylaşıyorum hocam.
+
+168
+00:36:54,099 --> 00:36:55,659
+Ekranım geliyor mu hocam?
+
+169
+00:36:56,619 --> 00:36:57,000
+Geliyor.
+
+170
+00:36:57,879 --> 00:37:00,319
+Öncelikle sene geçmiş olsun hocam.
+
+171
+00:37:00,859 --> 00:37:02,179
+Teşekkür ederim, sağ olun.
+
+172
+00:37:02,799 --> 00:37:04,519
+Dinleyen arkadaşlar da merhaba diyorum.
+
+173
+00:37:05,899 --> 00:37:12,619
+Benim konum da bu şeyde 2019 yılının sonuna doğru bir yayınlanmış.
+
+174
+00:37:12,619 --> 00:37:15,559
+Makalenin kendisinin alacağım. Şöyle sadece göstereyim.
+
+175
+00:37:16,500 --> 00:37:17,619
+Bir saniye.
+
+176
+00:37:19,092 --> 00:37:27,212
+Şöyle bir makale var. İlk çalışma bu makalede kullanılan bir veri seti ile alakalı bir çalışma.
+
+177
+00:37:27,212 --> 00:37:30,351
+Obez'te tahminini yapıyor Derin Öğrenme ile.
+
+178
+00:37:30,351 --> 00:37:34,452
+Dataset kullanarak. Ben sunumuma geçiyorum hocam.
+
+179
+00:37:36,916 --> 00:37:53,315
+Derin Öğrenme ve Yapay Sinir Ağları ile alakalı Kolombiya, Peru ve Meksika'da bireylerin yemalışıklıkları ve fiziksel duyumlarına dayalı obeste seviyelerine ilişkin bir düzeyli tahmin veriseti.
+
+180
+00:37:54,796 --> 00:37:56,456
+Orijinal ismi bu.
+
+181
+00:37:57,268 --> 00:38:08,467
+Bu yazarlarımız. Çalışmamız önce kısa bir özet, makale özeti, veri seti hakkında bilgi vereceğim. Çalışmanın safhaları ve sonuçlar.
+
+182
+00:38:25,268 --> 00:38:51,407
+Veriler 17 öz nitelik ve 2111 kayıt içeriyor. Aslında normal şartlarda birazdan söyleyeceğim ama bu orijinal kayıt bir web sitesi üzerinden bir aylık bir anket yayınlanarak toplanıyor ve toplamda 480'e yakın orijinal veri var. Sonra bu verileri VK ve SMOOT filtresiyle beraber sentetik olarak arttırmışlar ve 2111 kayıta gelmiş.
+
+183
+00:38:52,148 --> 00:38:57,148
+Burada obeste düzeyi olarak 7 ayrı sınıf...
+
+184
+00:38:57,264 --> 00:39:04,864
+Yeteriz kilo, normal kilo, aşırı kilo, işte bir, aşırı kilo iki ve obestenin üç sınıfı olarak tanımlanmış.
+
+185
+00:39:05,403 --> 00:39:21,943
+Ve daha sonra da bu kegla'da yarışma sırasında bu veriler de tekrar sentetik olarak arttırılmış ve toplamda otuz küsür bin veri olmuş ama burada bizim train ettiğimiz veri sayısı yirmi bin beş yüz yetmiş sekizdi galiba kayıt.
+
+186
+00:39:22,543 --> 00:39:25,264
+İşte konumuz biyoloji, obeste ve kardiyoloji.
+
+187
+00:39:25,264 --> 00:39:42,623
+Anketimiz bir sonraki slide'da göstereceğim. Şimdi burada sorularımız bunlar. Dediğim gibi web sitesi yayınlamışlar ve bir ay açık tutmuşlar. Bu soruların cevaplarını doldurmuşlar.
+
+188
+00:39:42,900 --> 00:39:56,480
+Bunlar yaş, cinsiyet, kilo, aile bireylerinin aşırı kiloya sahip olmadığı yeme alışkanlıkları, fiziksel aktiviteler, alkol kullanımı ve araç kullanımı ile alakalı sorular.
+
+189
+00:39:57,079 --> 00:40:00,000
+Verilerimiz hangi amaçlarda kullanılabilir derken segmentasyon.
+
+190
+00:40:00,000 --> 00:40:19,800
+Diversitasyon, sınıflandırma vesaire kullanılabilir. Beslenme ile alakalı çalışmalarda kullanılabilir. Veri setine geçiyorum hocam. Burada veri setinde yaşları 14 ile 61 arasında değişen bireyler var. Az önce dediğim gibi 211 kayıt VK ile oluşturulmuş. Bizim ama 20 bin kayıt var.
+
+191
+00:40:28,000 --> 00:40:35,940
+Tablolardaki kısaltmaların orijinalleri hocam. Bunlar bu şekilde.
+
+192
+00:40:36,532 --> 00:40:45,532
+Bu da normalde body kütle endeksi. Çalışman safhaları. İlk olarak veri işleme ve görselleştirme.
+
+193
+00:40:45,532 --> 00:41:03,591
+Şimdi burada veri setine şöyle baktığımız zaman özelliklerine tabloyu getirdim. Normal şartlarda veriler, korelasyonu şöyle bir sonrakinde gelecek.
+
+194
+00:41:04,532 --> 00:41:24,312
+Şimdi normalde bir göstermek için ilk 5 kayıdı gösteriyorum. Burada bilgilerin ne şekilde yayınlandığı, ilk olarak normalde anket verilerine dayalı doldurulmuş veriler. Bu train setimizin ilk 5 kayıdı. Test datamızda da şuradaki en alttaki şey yok sadece output.
+
+195
+00:41:26,867 --> 00:41:37,867
+Verileri ilk olarak işlerken tabii ki ID'yi kaldırıyoruz ve burada sözel verileri sayısala getirmek için hem...
+
+196
+00:41:38,771 --> 00:41:52,951
+Label Encoder ve One Hat Encoding kullanıyoruz. Bu şekilde sözel değişkenleri sayısala çeviriyoruz. Bu işlemin sonucunda 30'a çıkıyor.
+
+197
+00:41:52,951 --> 00:42:03,031
+Şöyle ki, çıkışlar şu hocam. Her bir soruların cevabı olarak ayrı sorular birer artık özellik olarak tablomuz işleniyor.
+
+198
+00:42:03,487 --> 00:42:19,267
+Yani biraz araya gireceğim ama Şehir Yudub [öğrenci]. Şimdi burada sen Smoke Yes, Smoke No'yu ayrı bir özellik gibi bir ve sıfır olarak. Mesela Smoke No bir kolon, Smoke Yes öteki bir kolon, öz nitelik.
+
+199
+00:42:19,267 --> 00:42:20,407
+Evet hocam.
+
+200
+00:42:21,067 --> 00:42:28,327
+Eğer kişiye ankette sigara içiyorum demişse eğer Smoke Yes bir, Smoke No sıfır mı?
+
+201
+00:42:28,692 --> 00:42:31,932
+Evet hocam, burada label encoding kullanılmış.
+
+202
+00:42:32,711 --> 00:42:37,831
+Bulduğun data bu halde miydi yoksa şöyle miydi?
+
+203
+00:42:38,420 --> 00:42:55,159
+Evet hocam orijinalinde 17 feature var. Evet hayır var. Sözel veriyi işleyebilmek için ve ayırabilmek için label encoding yapıyoruz.
+
+204
+00:43:06,420 --> 00:43:14,019
+Olsa iki mesela. Yani oradaki içerisindeki değer niye binary olarak aldın?
+
+205
+00:43:15,155 --> 00:43:38,936
+Hocam şöyle, ben başka çalışmalara da baktım. Dediğiniz gibi de olabilir. Ama literatürde genelde bu Kegel'deki diğer yarışmalarda falan da hep incelediğimde sebebini şu an belki bir yere not almışımdır ama şu an ezberden aklıma gelmedi. Belki biraz sunum esnasında, ilerleyen safhada aklıma gelirse hocam söyleyeceğim.
+
+206
+00:43:39,380 --> 00:43:43,440
+Yani doğru bir soru da şu an aklıma gelmedi cevabı.
+
+207
+00:43:43,460 --> 00:43:55,039
+Çünkü oradaki sıkıntı ne biliyor musun öyle yapınca? Ya sıkıntı olabileceğini ben düşünüyorum. Şimdi katılımcılar bin tane olsun. 2000 mi demiştin? 2100 demiştin herhalde.
+
+208
+00:43:55,039 --> 00:44:05,320
+Yani şöyle, orijinalde normalde 480 kayıt var ama şu an bu sentetik veriyle bu eğitim setinde 20.578 kayıt var.
+
+209
+00:44:05,972 --> 00:44:10,592
+Synthetik'i de halihazırda Kegel'dakiler mi Synthetik hale getirmiş olsan?
+
+210
+00:44:10,592 --> 00:44:14,952
+Evet hocam, bu bir yarışma verisi. Yarışma öncesi Kegel hazırlamış.
+
+211
+00:44:15,952 --> 00:44:24,632
+Tamam, 20 bin değilim. Şimdi 20 bin kişinin, 18 bin kişisi Smoke No olsun bir, Smoke Yes'leri sıfır.
+
+212
+00:44:24,632 --> 00:44:28,892
+Şimdi Smoke Yes kolonu feature'ı çok da anlamlı değil.
+
+213
+00:44:29,427 --> 00:44:38,827
+Ama biz oraya smoke deyip, işte bir ve iki ataması yapsak, o smoke feature'ı hala network'ü besleyen bir ağırlık olabilir.
+
+214
+00:44:39,891 --> 00:44:46,551
+Ama çok fazla sıfır olan bir feature elimine oluyor network derinleştikçe.
+
+215
+00:44:46,551 --> 00:44:52,431
+Anladım hocam. Yani hocam şöyle, normalden aklıma benim şey gelmişti ama yanlışsam düzeltin.
+
+216
+00:44:58,195 --> 00:45:19,115
+Derileri scale ederken, bu önem derecesine göre scale ediyor ya, zaten sıfır olan şeyler scale'de değerini kaybetmediği için networkte ağırlığı değiştirmeyeceğini düşünüyorum ama...
+
+217
+00:45:19,115 --> 00:45:26,115
+İşte değiştirmemesi iyi bir şey mi? Çünkü diğer 2000 tane...
+
+218
+00:45:26,195 --> 00:45:51,375
+18 bin tane sigara içen var, 2 bin tane sigara içen var mesela. Şimdi o sigara içen kolonun 18 bin tane sıfır var, 2 bin tane bir var. İşte o ağırlığı kaybediyor zaman geçtikçe network'te. Onun yerine 18 bin değil 20 bin tane bir ve ikiden oluşan bir kolonu belki ağırlıklandırması daha iyi olabilir.
+
+219
+00:45:51,871 --> 00:45:59,771
+Evet hocam. Belki ben böyle bir data ile çalışmadım ama belki de OneHot Enkoding yapmak mantıklı.
+
+220
+00:46:00,244 --> 00:46:14,624
+Hocam, dediğiniz doğru, benim onu tabii öğrenmem lazım. Mantığını, arka planını doğru söylüyorsunuz. Onu not aldım, onu muhakkak inceleyeceğim. Neden sizin dediğiniz gibi de doğru yapılabilir?
+
+221
+00:46:28,244 --> 00:46:34,224
+Genelde daha başarılı olanlarınkini inceledim. Onlar bu şekilde yapınca derin bildikleri vardır.
+
+222
+00:46:35,084 --> 00:46:40,464
+Tamam. Normalde ben de bu tarz bir veriyle çalışmıştım. Anket verisi.
+
+223
+00:46:40,980 --> 00:46:49,639
+Ama orada mesela anketlerin cevabı birden dörde kadar nümerik hale getirip tek bir özelliğin içerisine yazılırdı.
+
+224
+00:46:49,639 --> 00:47:02,220
+Yani örnek verelim, ne tarz bir ulaşım kullanıyorsunuz? Bisiklet, otobüs, motor, yürüme. Bunlara biz label atardık. 1, 2, 3, 4.
+
+225
+00:47:02,900 --> 00:47:30,860
+Bu dördü, işte otobüse binene dört o kolon, bir tane kolon var. Otobüse binene dört, bisiklete binene iki, yürüyene bir, işte nasıl etiketlediysem yani nasıl bir esayn ettiysem o nümerik değerleri tek bir feature'da belirdik. Bunun avantajı şuydu, bir feature sayısı arttıkça zaten network'ün kompleksiydisi artıyor. Feature sayısı daha az olmuş oluyor. Şimdi sen hem yes hem no hem işte yanlış olmasın aşağıda.
+
+226
+00:47:30,900 --> 00:47:43,080
+M-Trans, Automobile, Bike, Motorbike, Public Transport, Walking. Bunların her biri aslında bir tane değeri bir olan, diğerleri sıfır olan değerler. Yani boş boş pek çok feature vector kalın var.
+
+227
+00:47:43,987 --> 00:47:57,507
+Siz anlatırken şimdi yalnız şöyle bir şey aklıma geldi sizin tam bu örneğinizden. Peki şu risk olmuyor mu? Eğer ki aynı kolonda mesela otomobil kullanını 4 dediğimizde yürüyene diyelim ki 1 dedik.
+
+228
+00:47:57,507 --> 00:48:11,947
+Bu bir sonraki adımda transform ederken verileri aynı kolonda olduğu için diğer verilere göre ölçeklendiriyor ama kendi arasında transformu 4 olanı daha ağırlıklı yüksek bir sayı olarak haneye yazıyor.
+
+229
+00:48:11,987 --> 00:48:14,148
+Hocam şu an...
+
+230
+00:48:14,148 --> 00:48:21,867
+Şey diyorsan, mesela bir yerde renç 1-4 arasında kolonda, öteki tarafta 0 ve 1 var.
+
+231
+00:48:22,387 --> 00:48:28,387
+İkinci kolonda. Şimdi o dördün ağırlığı daha fazla olacak diyorsun değil mi? Ben yanlış anlamadım.
+
+232
+00:48:28,667 --> 00:48:46,967
+Yok yok. Onu normal diğer kolonlar arasındakini bu transform yaparak zaten ağ bozmasını diye yapıyoruz ama kendi sütünü içindeki mesela işte birle dördün ağırlığını sayısal bir değer olduğu için hocam bu sefer dördü daha yüksek olarak algılayabilir.
+
+233
+00:48:46,967 --> 00:48:49,207
+Yani çünkü hepsi aynı kolonda.
+
+234
+00:48:50,387 --> 00:48:51,447
+Anladım. Tamam.
+
+235
+00:48:51,827 --> 00:48:56,707
+O yüzden hocam farklı feature açıyorlar. Benim şu an aklıma geldi hocam.
+
+236
+00:48:57,367 --> 00:48:58,827
+Yani o yüzden feature açıyor.
+
+237
+00:48:58,847 --> 00:48:59,667
+Denemek lazım.
+
+238
+00:49:00,347 --> 00:49:10,327
+Anladım. Anladım. Yani dördün ağırlık kat sayısı, halbuki anlam ittibasına baktığımızda yok belki o kadar, dört kadar.
+
+239
+00:49:10,327 --> 00:49:17,748
+Hepsi eşit yani sonuçta otomobile binmesi, risitete binmesi. Eşit katkılandırmak için.
+
+240
+00:49:18,324 --> 00:49:19,704
+Evet hocam.
+
+241
+00:49:20,384 --> 00:49:24,983
+Anladım. Olabilir. Yani dediğim gibi bakmak lazım. Olabilir.
+
+242
+00:49:25,003 --> 00:49:27,483
+Ben yine not aldım hocam. İnceleyeceğim ama.
+
+243
+00:49:28,244 --> 00:49:31,144
+Tamam. Evet, devam edelim.
+
+244
+00:49:31,804 --> 00:49:33,983
+Verdiyorsun hocam, korelasyonu da bu şekilde.
+
+245
+00:49:33,983 --> 00:49:39,983
+Burada, yani şöyle biraz tabii burada üzerlerine şey...
+
+246
+00:49:40,467 --> 00:49:43,728
+Firtür çok olunca yüzdeler anlamlı.
+
+247
+00:49:44,087 --> 00:49:48,788
+Bak yaşlılar otomobile biniyor. O direkt anlaşılıyor.
+
+248
+00:49:49,927 --> 00:49:50,148
+Evet.
+
+249
+00:49:50,907 --> 00:49:55,867
+Daha public transporta binmiyorlar yaşlılar demek. Ben öyle anlıyorum.
+
+250
+00:49:55,867 --> 00:50:02,867
+Yaşlılar biraz ilişkili. Renklendirme, beyaz, ters korelasyon, koyu kırmızı...
+
+251
+00:50:04,052 --> 00:50:08,152
+Aynı doğru korrelasyon mu gösteriyor yoksa tam tersini?
+
+252
+00:50:08,792 --> 00:50:10,852
+Koyular yüksek ilişki hocam.
+
+253
+00:50:11,184 --> 00:50:33,444
+Yani renk ne kadar koyulaşırsa o kadar iyi. Zaten çapraz sütün kendileriyle eşleştiği için bir demir. Açıklar hiç alakaları olmadığını gösteriyor. Hocam şöyle devam ediyorum. Burada da bizim normalde hedef dediğimiz çıktı değerine ilişkin bir bağımlılık var.
+
+254
+00:50:33,444 --> 00:50:39,164
+Bu mesela daha şey mesela en çok hani o obesti değerini ne etkiliyormuş? Yani birinci değer.
+
+255
+00:50:39,184 --> 00:50:52,144
+Bu örneğe tabii ki ağırlık, sonra ailedeki ağırlık, kilo sorunu var mı yok mu, yaş, alkol kullanımı, su tüketimi vs. sıralamayla gidiyor.
+
+256
+00:50:52,144 --> 00:51:06,444
+Bu korelasyonu da hocam ileride şöyle kullandım. Burada en fazla bu obeste değişkenine etki eden 10 taneyi de zaten bu dipberning tasarımında layer sayısını belirlerken buna göre belirledim.
+
+257
+00:51:07,184 --> 00:51:27,984
+İlk zaman seçmemiz sebebi de bu 30 feature'ın en fazla olan sayısı kadar seçtim. Burada da bizim normalde verilerimizin obeste dağılımı var. Bunu da sentetik üretirken dikkat etmişler ki çok farklılık olmasın bu frekansta. Ona göre eğitim daha başarılı olsun. Açıklaması öyleydi makalede.
+
+258
+00:51:30,132 --> 00:51:41,632
+Şimdi devam ediyorum hocam. Bir sonraki şey sinir ağları ve içim veri hazırlığı. Burada tabii ki öncelikle bizim eğitim setimizde şeyi kaldırıyoruz artık.
+
+259
+00:51:42,835 --> 00:51:57,495
+OBESTE bilgisini ve teste koyuyoruz. Burada 20.578 satır hocam. 30'da feature var. Aynı şekilde bu da test verimiz.
+
+260
+00:51:58,295 --> 00:52:00,175
+Etiket verisi diyeceksin anladım.
+
+261
+00:52:00,175 --> 00:52:08,175
+Pardon etiket verisi hocam çok affedersiniz. Az önce de yanlışlıkla test edelim. Etiket verimiz hocam.
+
+262
+00:52:09,376 --> 00:52:14,756
+Buradaki etiketler numarik değil mi? 0, 1, 2, 3, 4, 5, 6 aslında aradığımız.
+
+263
+00:52:14,776 --> 00:52:31,356
+Evet, 0'dan 6'ya kadar hocam 7 ayrı kategori var. Burada verilerimizi transform ediyoruz ve sayısal değer korelasyon bozulmaması için az önce konuştuğumuz...
+
+264
+00:52:31,356 --> 00:52:36,836
+Bu ölçeklendirmeye ne diyoruz ismine? Veriyi ne yapmak?
+
+265
+00:52:37,907 --> 00:52:41,427
+Normalize etmek diyoruz. Normalize etmek.
+
+266
+00:52:43,427 --> 00:52:57,347
+Yani sorulursa normalizasyon nedir vesaire, bu dersin kapsamında değil ama aslında bir sorumdaki feature'ların açısından ki o korrelasyonu korumak için yaptığımız bir ölçüklendirme.
+
+267
+00:52:58,036 --> 00:53:12,036
+Hocam, onu da not aldım. Teşekkür ediyorum. Burada ağın oluşturulması var. Ağı şöyle oluşturuyoruz hocam. Burada ilk olarak ben dediğim gibi korelasyona bakarak...
+
+268
+00:53:12,800 --> 00:53:35,300
+Oradaki en fazla çıktı değeri etki eden 10 tane şey vardı, feature vardı. Ben de o yüzden 10 katmanlı yapmayı düşünüyorum. Farklı denemeler yaptım ama en iyi sonucu böyle aldığımı söyleyebilirim. Giriş katmanında aktivasyon olarak RELU kullandığımda giriş ve çıkışta.
+
+269
+00:53:35,695 --> 00:54:02,456
+Çok büyük problem yaşadım. Onu da şuna verdim. Bu transform sonrasında giriş değerlerinde eksileri direkt sıfırladığı için daha en baştan şeyi bozuyordu hocam. Bu benim yorumum hocam bu arada. Verilere bakarak tahmini söylüyorum. Ama softmac'de o 0-1 yapmadığı için değerini daha koruyor. Bazı yerlerde de sigmoid kullanmışlar.
+
+270
+00:54:03,695 --> 00:54:30,876
+Çok açıkçası ikisinin arasında fark görmedim denediğimde. Bu 128 unit birimde, normalde orada da benim baktığım genelde birkaç tane farklı çok yaygın kullanış vardı. Bir output ve input'un toplamının kare kökü ya da input output'un toplamının yarısı. Ama onlar burada bir tanesi 6, bir tanesi de 18'e tekabül ediyor.
+
+271
+00:54:31,695 --> 00:54:33,936
+O da çok düşük geldi.
+
+272
+00:54:33,936 --> 00:54:35,315
+Yani şey yapmadı.
+
+273
+00:54:38,096 --> 00:54:58,036
+Sonra burada bir de optimizer olarak iki tane yaptım. Hocam burada ekranda SGD var ama Adam'da yaptım. İkisini denedim ve loss fonksiyonu olarak da yine literatür taradım. En fazla sparse categorical cross entropy vardı. Onu kullandım.
+
+274
+00:55:02,324 --> 00:55:06,764
+segmentasyon çalışmalarında, hatta not almıştım.
+
+275
+00:55:07,952 --> 00:55:31,912
+Şeyde bizim numaralı olursa yani tek değer olursa spars'ı kullanmanın eğer ki birden fazla her bir çıkışta yani üçlü mesela katman var. Çıkışlar tek değer değil. O zaman sadece kategorik kullanmanın faydalı olduğunu söylüyor. Bir de spars tabii ki number olduğu için işlem süresi de daha hızlı.
+
+276
+00:55:32,912 --> 00:55:35,952
+Spars aslında nedir? Bir maddi şey.
+
+277
+00:55:35,952 --> 00:55:46,532
+Bir ve sıfırlarında sıfırların çok fazla olduğu maddestir. Seninkinde de muhtemelen sıfırlar feature'ların içerisinde enkoding yaptığın için çok fazla.
+
+278
+00:55:46,532 --> 00:55:49,912
+O yüzden spars kategorik alkolsentropi daha mı?
+
+279
+00:55:51,592 --> 00:55:55,052
+Bu arada sonrakine geçiyorum hocam.
+
+280
+00:55:56,692 --> 00:56:14,231
+Tasarım, görünümü. İlk input 30 feature var. O şekilde tanımladım. Çıkışta 7 tane var. Agrik katmanları da dediğim gibi tamamen benim normalde orijinal burada yarışmalarda farklı değerler vardı.
+
+281
+00:56:24,692 --> 00:56:52,692
+Daha yüksek çıktığı için bu şekilde denedim ama direkt bir şu sebeptendir o sayıları diyemiyorum. Yani deneme yanılma yaptım. Burada da model eğitime başlıyoruz hocam. Şimdi modeli en arkada tablo var ama 3 farklı şekilde yani şöyle söyleyeyim. Bir şey learning rate'i değiştirerek, epoch sayısını değiştirerek bir de batch size değiştirerek yani 3 farklı verinin farklı kombinasyonlarını...
+
+282
+00:56:52,692 --> 00:57:12,291
+Burada %80 test, %80 eğitim %20 test olacak şekilde ve 5 size 32 denedim. Önce 5 size vermedim. Hiçbir fark görmedim 5 size 32 ile. Çok çok yakındı.
+
+283
+00:57:20,692 --> 00:57:48,692
+Ama benim verimin gerçekten sentetik üretiminde çok fazla zaten aykırılık olmadığını burada da gördüm. Genel olarak cross-validation ile normal veri çok uzak olmadı. Yani veriler demek ki test verisinin içindeki aykırılıklar yok. Burada da onun örneği var hocam. Sonuçlarını şöyle toplu olarak hocam göstereceğim. Tahmin bulunduğu tahminlerde de bulundu.
+
+284
+00:57:48,692 --> 00:58:00,371
+Sonuçlarda eğitim verisinde bu çıktığı sadece Stokastik ve Radem Disent'in koreasyonunun çıktısını aldığı yerini unuttum hocam koymayı.
+
+285
+00:58:00,991 --> 00:58:04,391
+Bu numerik değerler var mı? Yazılı.
+
+286
+00:58:05,431 --> 00:58:11,391
+Hocam şey bu obeste 3, 2, obeste 1.
+
+287
+00:58:11,391 --> 00:58:15,072
+Yok yok şey içerisindeki örneklerin kaçına?
+
+288
+00:58:15,507 --> 00:58:40,299
+Konfüsyon maddisi.
+
+289
+00:58:40,596 --> 00:58:43,516
+Şurada hocam şey vardı.
+
+290
+00:58:52,307 --> 00:58:55,387
+Hocam, yani sayıları yanlış...
+
+291
+00:58:55,387 --> 00:58:57,947
+Yok yok, aşağıdaki konfuşun maddesi oluşturuyorsun.
+
+292
+00:58:59,208 --> 00:59:01,648
+Tamam hocam, buraya diyorsun hocam.
+
+293
+00:59:01,648 --> 00:59:03,648
+Bu konfuşun maddesi de...
+
+294
+00:59:06,047 --> 00:59:10,007
+Bu hocam normal bütün verileri veriyor hocam.
+
+295
+00:59:10,007 --> 00:59:12,007
+Yani toplam bütün...
+
+296
+00:59:12,007 --> 00:59:15,007
+Normalde...
+
+297
+00:59:15,668 --> 00:59:27,608
+İçeride atama sonuçlarını da gösterirdi ama sen onu yazdırmamışsın. Tamam en sondaki %90 başarı bunu bulduk.
+
+298
+00:59:28,148 --> 00:59:48,567
+Bu %90 hocam SGT Scolastic Gradient Discentin hocam. Burada da EPOC'taki tabloda bu en iyi 0, 1 ve 100 EPOC'ta sonuç verdiği için bunun grafiğini aldım. Doğruluk ve kayıp grafiğini.
+
+299
+00:59:48,567 --> 00:59:56,007
+Onun Validation Cross ile yapılmış halinin grafiği. Bir öncekiyle aslında alt alta koymam daha iyiydi ama.
+
+300
+00:59:56,148 --> 01:00:05,007
+Burada Adam'ınki var. Adam'da da en iyi oran mesela bende 10.000'de 5 olarak 100 epokta.
+
+301
+01:00:05,748 --> 01:00:28,748
+Sonuç verdi. Burada hocam toplu denemeler yaptı. Söylediğim az önceki şey buydu hocam. Toplam parametre sayım 121.385, layer sayım 10, layer'lardaki unitler 128. Gerçi ilk 30 ve son 7 idi de. Şimdi hocam şöyle ki, Learning Rate 0.1, binde 1 ve 10.000'de 5 olarak.
+
+302
+01:00:29,148 --> 01:00:32,887
+SG'de genelde Learning Rate'i daha büyükte çalışıyor.
+
+303
+01:00:33,748 --> 01:00:37,748
+Bu Learning Rate'i daha düşükte çalışıyor zaten. Öyle de çıkmış.
+
+304
+01:00:38,228 --> 01:01:06,228
+Evet hocam, en iyi değer Adam'da 10.000'de 5'te çıktı ama 1000'de 1'e yakın yani çok çok şey değil hocam. 64'te de denedim. Sonuçlar çok fazla değişmedi. Ben normalde nano olarak da değer verdim. Orada da çok değişmedi. Ama SGD'nin, Adam'ın şeyleri hocam mesela şurada 10 epokta bile çok yüksek 10.000'de 5 yani o çok enteresan.
+
+305
+01:01:06,228 --> 01:01:13,228
+Bu yüzden çok hızlı doğruluğa çok daha diğerine göre hızlı ulaşabiliyor.
+
+306
+01:01:14,512 --> 01:01:23,852
+Yani değerlendirme olarak bunları aslında yazacaktım ama yetiştiremedim. Yani bu şeylerin, bu tablonun değerlerini.
+
+307
+01:01:24,372 --> 01:01:25,512
+Şu an hocam...
+
+308
+01:01:25,512 --> 01:01:34,692
+Tamam. Raporda biraz daha toplarlarsın zaten formunu gönderirken. Teşekkür ederim [öğrenci] [öğrenci]. Güzel bir sunum, güzel bir çalışma.
+
+309
+01:01:34,912 --> 01:01:37,812
+Ben çok teşekkür ederim hocam dinlediğiniz için. Çok sağ olun.
+
+310
+01:01:39,152 --> 01:01:40,992
+[öğrenci] burada.
+
+311
+01:01:40,992 --> 01:01:42,032
+Merhaba hocam, buradayım.
+
+312
+01:01:42,512 --> 01:01:44,572
+Sen de devam edebiliriz.
+
+313
+01:01:44,892 --> 01:01:45,752
+Tamamdır.
+
+314
+01:01:47,232 --> 01:01:48,572
+Geçmiş olsun hocam.
+
+315
+01:01:48,972 --> 01:01:49,392
+Sağ ol.
+
+316
+01:01:49,392 --> 01:01:52,132
+En kısa zamanda yüz yüze derslere devam edebiliriz.
+
+317
+01:01:52,292 --> 01:01:52,992
+Teşekkürler.
+
+318
+01:01:55,392 --> 01:01:58,692
+Şu an geliyor olması lazım.
+
+319
+01:01:59,956 --> 01:02:00,755
+Evet, geliyor.
+
+320
+01:02:01,556 --> 01:02:27,956
+Merhaba herkese. Ben tweetten duygu analizi yapan bir model geliştirdim. Duygu analizini odumlu ve odumsuz cümlelere ayıracak şekilde yapılıyor. Yani bir binary classification yapıyor. Bunun için de logistik regresyonu kullandım. Parametrelerini güncellemek için de gradient descent'tan yararlandım. Verimi ise NLTK'in kendi Twitter samples isimli veri setinden kullanıyorum.
+
+321
+01:02:27,956 --> 01:02:36,956
+Bunu kolaylıkla bir satır kodla indirerek kullanabiliyoruz. Verim 5000 olumlu, 5000 olumsuz tweetten oluşuyor.
+
+322
+01:02:36,956 --> 01:02:51,956
+Burada ben 5'er tane tweet üzerinden örnekle verimi nasıl işlediğimi anlatacağım. İlk olarak bu olumlu ve olumsuz tweetlerim 4000 tanesini training için, 1000'er tanesini de test için ayırdım.
+
+323
+01:02:53,679 --> 01:03:02,860
+Şöyle bir yol izledim. Burada tweetleri oluşturan kelimeleri içeren bir sözlük oluşturdum.
+
+324
+01:03:05,860 --> 01:03:19,760
+Sonra da olumlu ve olumsuz cümlelerde kaçer defa geçtiğini sayarak frekanslarını içeren bir tablo elde ettim.
+
+325
+01:03:21,108 --> 01:03:44,468
+Daha sonra bu tablodan yararlanarak da cümlelere vektörel değerler atadım. Burada senaryo çok iyi, tweeti için mesela inceliyoruz. İlk değerimiz bir yaslama yapmak için bir verdim tümüne. Daha sonra cümlede geçen kelimelerin pozitif frekanslarının toplamını ve negatif frekanslarının toplamını.
+
+326
+01:03:44,851 --> 01:03:55,011
+[öğrenci], burada bir sorsam bir şey. Sözlük oluşturdum dedin ya, bu bütün dataset'inde 4000 tane tweet vardı yanlış.
+
+327
+01:03:55,691 --> 01:04:09,051
+Bütün dataset'imde 5000 olumlu, 5000 olumsuz toplanan 10.000 tane tweet'in, tweette geçen bütün kelimelerin frekansı mı?
+
+328
+01:04:09,327 --> 01:04:10,327
+Evet.
+
+329
+01:04:10,327 --> 01:04:24,327
+Tamam, yani mesela senaryo çok iyi. Burada çok dediğimiz şey sözlükte üç olumlu, yani üç tanesi olumlu da çıkmış, üç tanesi de olumsuz da var gibi bir sözlük şu an yanında.
+
+330
+01:04:24,327 --> 01:04:25,327
+Evet.
+
+331
+01:04:25,327 --> 01:04:35,148
+Genel, hani sen bu sözlüğü oluşturdun ya, en çok olumlu da çıkan kelime neydi? En çok olumsuz da çıkan kelime neydi?
+
+332
+01:04:35,507 --> 01:04:40,307
+Açıkçası onu incelemedim hocam ama raporuma mutlaka etkileyeceğim.
+
+333
+01:04:40,307 --> 01:04:56,047
+Çünkü burada senaryo çok iyi de pozitif frekans ve negatif frekans veriyorsun ya buraya bir vektör olarak. Bu 7'yi ve 4'ü aslında bu sözlükteki 1 ve 0 konunun altından bir anlam çıkartarak vereceksin.
+
+334
+01:04:56,047 --> 01:05:02,047
+Evet, aynen öyle. Ben şu an sadece burada örnek olsun diye şurada 10 cümle verdim.
+
+335
+01:05:03,507 --> 01:05:07,447
+Bir anlaşılsın diye, virüs etinin anlaşılması için burada 10 cümle verdim.
+
+336
+01:05:07,923 --> 01:05:14,143
+Burada yedi kere toplam geçmiş olumlu cümleler diye oradaki kelimeler.
+
+337
+01:05:14,543 --> 01:05:19,344
+Peki ekleri attın mı? Mesela filmi var ama filmden çıktık.
+
+338
+01:05:19,463 --> 01:05:26,123
+Evet, onları da bir sonraki şeyde göstereceğim. Bir ön işleme aşamasından geçirdim cümleleri.
+
+339
+01:05:28,123 --> 01:05:34,683
+Gürültüleri kaldırdım, stop wordleri kaldırdım, stemming, tokenization. Son olarak da normalizasyon uyguladım.
+
+340
+01:05:35,923 --> 01:05:43,523
+Elimde kalan kelimelerin vektörel değerlerini elde ettim. Onları kullandım.
+
+341
+01:05:43,523 --> 01:05:53,523
+Verimi bu şekilde işledim. Daha sonra algoritmanın basitli ve hız açısından lojistik regresyonun uygun olduğunu düşündüm.
+
+342
+01:05:53,523 --> 01:05:59,115
+Keza öyle de oldu. Oldukça iyi çalıştı benim case'imde.
+
+343
+01:06:00,148 --> 01:06:15,248
+Daha sonra, logistik regresyon parametrelerini güncellemek için de Gradient Descent'tan yararlandı. Burada loss fonksiyonumu görebilirsiniz. LogLoss kullandım ben. En iyi o şekilde sonuç elde ettim.
+
+344
+01:06:15,668 --> 01:06:39,327
+Aslında düşünce kurduğunca logistik regülasyon ve gradient descent ilk akla gelenler. Ama ben daha sonra farklı algoritmaları denildiğimde de çok farklı bir sonuç almadım. Çünkü bunlar da benim durumumda oldukça iyi çalıştı. Yani %97'in üzerinde bir başarı oranı elde ettim. Onların da ayrıntılarını raporda paylaşıyor olacağım zaten sizinle.
+
+345
+01:06:42,547 --> 01:06:44,487
+Benim sunumum bu kadardı.
+
+346
+01:06:46,627 --> 01:06:55,847
+Mesela örnek cümlelerden bir iki sonuç koysaydan, yanlış bildiği, doğru bildiği, onları raporuna koy da en azından.
+
+347
+01:06:56,007 --> 01:06:57,267
+Tabii, mutlaka koyacağım hocam.
+
+348
+01:06:57,287 --> 01:07:00,427
+Sonuçta biraz eksik kalmış sunumda hiç aslında.
+
+349
+01:07:00,907 --> 01:07:08,007
+Evet hocam, raporda daha detaylı zaten inceleyeceğimiz için diye ben sunumu biraz örtüttüm ama raporda mutlaka olacak.
+
+350
+01:07:08,692 --> 01:07:27,711
+Bir de lojistik regresyon sonuçta bir regresyondur. Bir sınıflandırma değil, regresif yaklaşım yapar. Aslında orada sen bence bilmiyorum, belki bilmeden yapıyorsun. Sonuçta %97 dediğin sonuç binary klasifikasyon sonucu değil mi? Cümlenin olumlu mu olumsuz mu dediğim.
+
+351
+01:07:27,711 --> 01:07:35,711
+Aslında biz regresyon sonuçlarında biraz önce bir arkadaşımız daha ismini unuttum ama regresyon yapmıştı.
+
+352
+01:07:36,447 --> 01:07:56,447
+Krepe Yaş'ı ile alakalı mesela. Orada regresyonu biz söyledikten minskuer error gibi. Yani olması gereken eğrinin yakınsama durumlarını, minskuerlerini veyahut da hata paylarını veririz. O hata payı eğer ki belli bir tireş oldun altındaysa...
+
+353
+01:07:56,947 --> 01:08:06,787
+Eğer Binary Kasifikasyonu da regresyonu kullanacaksan o zaman atamayı yaparız. Belki orada son katmanında sen bir sigmoid gibi bir şey kullanmış olabilir misin?
+
+354
+01:08:06,967 --> 01:08:08,627
+Evet, sigmoid kullandım hocam.
+
+355
+01:08:09,107 --> 01:08:20,227
+Kullandın. Yani logistik regresyon aslında bir regresyon tekniği. Oraya sigmoid eklersek aslında yaptığı şey %50'nin fazlası veya aşağısıysa bir sınıfta öteki sınıfı atar.
+
+356
+01:08:20,227 --> 01:08:24,727
+0-50 arasındaki değerleri olumsuz, 50-51 arasındaki değerleri.
+
+357
+01:08:24,948 --> 01:08:25,347
+Tamam.
+
+358
+01:08:25,347 --> 01:08:26,448
+Alım olarak alıyor.
+
+359
+01:08:27,247 --> 01:08:27,548
+Tamam.
+
+360
+01:08:27,948 --> 01:08:28,968
+Tamam, teşekkürler.
+
+361
+01:08:29,148 --> 01:08:31,968
+Raporda biraz daha sonuçları bekliyoruz.
+
+362
+01:08:32,347 --> 01:08:33,548
+Tamam hocam, teşekkürler.
+
+363
+01:08:35,807 --> 01:08:38,948
+Şimdi sırada [öğrenci] [öğrenci] burada mı?
+
+364
+01:08:39,688 --> 01:08:40,708
+Buradayım hocam.
+
+365
+01:08:41,387 --> 01:08:41,628
+Tamam.
+
+366
+01:08:42,688 --> 01:08:45,747
+Ben sunumumu notbook üzerinden yapacağım.
+
+367
+01:08:47,528 --> 01:08:49,307
+Yeriyi falan atabilecek misin orada?
+
+368
+01:08:50,003 --> 01:09:03,244
+Efendim? Verisiyetini vesaire anlatabilecek misin? Evet. Tamam. Yani anlatabileceğimi düşünüyorum. Ekranım geldi galiba değil mi? Evet.
+
+369
+01:09:04,275 --> 01:09:17,895
+Şimdi ben de bir sınıflandırma problemiyle ilgilendim. Bir banka veri setinden yararlandım. Sınıflandıracağım yani aslında tahmin edeceğim şey de müşterinin bankadan ayrılıp ayrılmayacağını tahmin etmeye çalışacağım.
+
+370
+01:09:18,675 --> 01:09:27,056
+Elimdeki veri setinde de işte müşterilerin kayıt numarası, ID bilgisi, soyadı bilgisi, kredi skorları, ülke bilgileri, yaş bilgileri.
+
+371
+01:09:27,731 --> 01:09:54,932
+Kaç yıldır bankanın müşterisi olduğu, hesabındaki bakiye bilgisi, banka aracılığıyla satın aldığı ürün sayısı, kredi kartının olup olmadığı, aktif olma bilgisini aynı zamanda içeriyor, maaş bilgisini bankadan ayrılıp ayrılmadığı ki bizim tahmin edeceğimiz olan kısım, şikayetinin olup olmadığı ve şikayetlerin çözümü için sağlanan puan, müşterinin sahip olduğu kart türünü ifade eden bir sütunumuz var.
+
+372
+01:09:55,731 --> 01:09:57,551
+kullandığı için kazandığı puanları
+
+373
+01:09:57,551 --> 01:09:59,891
+temsil eden sütunlarımız
+
+374
+01:09:59,891 --> 01:10:00,131
+var.
+
+375
+01:10:01,711 --> 01:10:03,671
+Veri setime baktığımda on bin tane
+
+376
+01:10:03,671 --> 01:10:05,931
+satırdan oluşuyor. On sekiz tane de
+
+377
+01:10:05,931 --> 01:10:07,851
+sütunumuz var. Ve herhangi
+
+378
+01:10:07,851 --> 01:10:10,171
+bir boş değer olmadığını da burada görebiliyoruz.
+
+379
+01:10:11,283 --> 01:10:28,763
+Sonrasında kayıt numarası, müşteri aydı bilgisi ve müşterinin soyda gibi bilgilerin herhangi bir katta bulunmayacağını düşündüm. O kişinin bizim müşterimiz olup kalıp kalmayacağını tahmin ederken. O yüzden bunları veri setinden kaldırmayı kaldırdım.
+
+380
+01:10:29,779 --> 01:10:45,159
+Sonrasında benim yöneticimde kategorilik veriler olduğu için onlara bir enkodik işlemi yaptım. Gender için erkeklere sıfır, kadınlara bir değerlerini atadım. Sonra müşterilerin sahip olduğu kart tiplerini de ordinal olarak düşündüm.
+
+381
+01:10:45,479 --> 01:10:57,619
+Çünkü o da hani seviye demeyeyim mi orada bir sıralama var aslında sahip oldukları kartlar için. Burada silver'a sıfırı, gold'a biri, platinum'a iki, diamond'ı da üçe atadım.
+
+382
+01:10:57,779 --> 01:11:12,619
+Sonraki kategorik verimde ülke bilgileriydi. Zaten üç tane ülke bilgisi vardı. Fransa, İspanya ve Almanya olarak. Onları da OneCode Label Encoding yaptım. Üç tane daha sütunum burada eklenmiş oldu.
+
+383
+01:11:14,771 --> 01:11:22,771
+Sonrasında verimi de bağımlı ve bağımsız değişken olarak ayırdım. Sonrasında trend test ayrımı yaptım üzerlerinde.
+
+384
+01:11:22,771 --> 01:11:31,771
+Verilerimi bir normalizasyon yaptım standard scale'la beraber. Çünkü çok farklı değerlerde numarik değerlerim vardı.
+
+385
+01:11:31,771 --> 01:11:33,771
+Hocam çok farklı.
+
+386
+01:11:33,771 --> 01:11:41,676
+Balance değeri mesela çok yüksekken burada normal products gibi değerler çok daha küçük kaldığı için böyle bir şey yaptım.
+
+387
+01:11:42,515 --> 01:11:51,815
+Sonrasında da bu Nampay eraylarını tensörlere çevirdiğim ve burada bağımlı değişkenlerim üzerinde bir düzenleme yaptım.
+
+388
+01:11:52,555 --> 01:11:57,135
+Dediğim gibi ikili bir sınıflandırma olduğu için lojistik regresyon kullandım.
+
+389
+01:11:58,036 --> 01:12:08,775
+Burada da pek katmanlı bir ağ yapısı oluşturdum ve aktivasyon fonksiyonu olarak da sigmoid aktivasyon fonksiyonunu kullandım.
+
+390
+01:12:09,460 --> 01:12:27,720
+İlk başta bunu yaparken Learning Rate'imi 0.01 olarak atadım. Loss değerimi de Binary Cross Entropy ile beraber hesapladım. Gradient işlemini de Stochastic Gradient Distant ile beraber yaptım. Epox sayımı da 1000 olarak belirledim.
+
+391
+01:12:29,108 --> 01:12:35,908
+Sonrasında burada Forward Pass kısmını yapıp tahmin ettiğim değerleri hesapladım.
+
+392
+01:12:35,908 --> 01:12:40,948
+Ve sonrasında gerçek değerlerimi tahmin ettiğim değerleri de Lost değerimizi hesapladım.
+
+393
+01:12:42,548 --> 01:12:47,827
+Burada belki bir şey sormam lazım bir şey. Etiket belisi.
+
+394
+01:12:49,076 --> 01:13:00,355
+Riskli ol... Neydi senin etiket belisi? Müşteri bankada kalacak mı kalmayacak mı? O etiket belisine göre dağılım nasıl örneklerin? 10 bin örneğin.
+
+395
+01:13:00,756 --> 01:13:23,636
+Şöyle, ben orada bir sorun çıkacağını da düşünüyordum. Konfüjün Metrics'te de söyleyecektim onu. 7000 küsur tane bir değeri varken 2000 küsur tane sıfır değeri var. Hani çok dengeli bir veriseti değil. O yüzden orada tahminde de bir sorun olacağını düşünmüştüm ama galiba verim fazla uygun bir tahmini yapmak için çok da bir sorun olmadı.
+
+396
+01:13:24,595 --> 01:13:36,275
+Yani orada sen mesela burada Split yaparken [öğrenci], 7000'e 3000 ise %80'e 20 mi yapmıştın Split'i?
+
+397
+01:13:36,275 --> 01:13:41,075
+Evet, testte %20'sini verdim.
+
+398
+01:13:41,075 --> 01:13:45,075
+Yani orada etiket verisini gözeterek yaptın değil mi?
+
+399
+01:13:45,075 --> 01:13:50,755
+Buradaki random state kısmı, 1, 2, 3, 4 kısmını tam...
+
+400
+01:13:51,252 --> 01:13:55,192
+Burada mesela etiketlere göre %20 split edebildin mi?
+
+401
+01:13:56,231 --> 01:14:00,391
+Şöyle, şu an siz deyince bende bir böyle aydınlanma gibi oldu.
+
+402
+01:14:00,512 --> 01:14:07,231
+Şeye bakmadım. Sonrasında trend test ayrımında kaç tane sıfır, hani onlar doğru ayrılmış mı ona bakmadım.
+
+403
+01:14:07,492 --> 01:14:09,352
+Doğru söylüyorsunuz, bakmam gerekiyordu.
+
+404
+01:14:09,832 --> 01:14:13,471
+Confusion Maddis'ten de anlaşılır eğer Confusion Maddis göstereceksen.
+
+405
+01:14:13,932 --> 01:14:14,592
+Göstereceğim.
+
+406
+01:14:14,852 --> 01:14:15,512
+Tamam o zaman.
+
+407
+01:14:15,872 --> 01:14:16,092
+Tamam.
+
+408
+01:14:17,779 --> 01:14:37,119
+Dediğim gibi burada loss değerini hesapladım. Sonra optimizasyon için backpropagation kısmını yaptım ve parametrelerimi güncelledim. Sonrasında her optimizasyon için de grafgenlerin sıfırlanmasını sağladım. Burada sadece 10 ipokta bir loss değerini göstermek için yaptım.
+
+409
+01:14:45,779 --> 01:14:50,840
+Test verilerimle beraber modelimi test ettim.
+
+410
+01:14:51,444 --> 01:15:10,344
+Burada tahmin edilen ye değerlerimi oluşturdum. Sonra oluşan sonuçlar, sigmoid ile kullandığım için 0-1 arasında bir olasılık değeri gibi oluyordu. Onları round olarak 0-8 ise 1'e yuvarlasın, 0-4 ise 0'a yuvarlasın şeklinde yaptım.
+
+411
+01:15:10,344 --> 01:15:19,364
+Sonra burada da benim tahmin ettiğim değerlerle gerçek değerlerim birbirine eşit mi diye baktım. Burada bu yıl değer veriyordu.
+
+412
+01:15:19,444 --> 01:15:29,144
+True, False olarak bunları topladığımda da True'ları topluyor aslında ve tüm test veri setimdeki örnek sayısına böldüm.
+
+413
+01:15:29,144 --> 01:15:37,624
+Burada da benim test setimdekilerin kaç tanesi doğruya bakmış oldum. Oradan da bir Ecurus'yı öyle hesapladım.
+
+414
+01:15:38,260 --> 01:15:52,039
+Şimdi 0.01'de dediğim gibi learning rate'im. Burada baktığımda ilk 10 epoch'tan sonra loss değerim 0.79 olarak gözüküyor. Birinci epoch'tan sonra da 0.10'a kadar düşmüş.
+
+415
+01:15:53,700 --> 01:16:06,039
+Dediğim gibi şimdi Confusion Matrix'imde de yani şu 3 tanesi ve 2 tanesi yanlış bilinmiş. Burada da yani 0 olan değere 1 demişim. İki tanesinin gerçek...
+
+416
+01:16:06,420 --> 01:16:15,420
+Bir olan değerde sıfır demişim gibi bir durum var. O yüzden beş tanesinin yanlış olmasının çok... Modelin eğitiminde bir problem olmamış gibi geldi bana.
+
+417
+01:16:15,956 --> 01:16:20,396
+Ama yine de bir baksaydım iyi olurdu dediğiniz gibi o dağılımlar.
+
+418
+01:16:20,396 --> 01:16:25,556
+Aslında o kadar azürt bir dağılım yok şeyde.
+
+419
+01:16:25,556 --> 01:16:32,836
+3 katı kadar, 7000'e 3000 dedin değil mi? 2,5 katı kavuta.
+
+420
+01:16:32,836 --> 01:16:34,115
+Evet öyle gibi.
+
+421
+01:16:34,115 --> 01:16:40,516
+Fark var, o kadar fazla dengesiz değil ama normalde bu tarz çalışmalarda işte şu yapabilir.
+
+422
+01:16:40,576 --> 01:16:50,796
+Sen şimdi bir split yaptın 80'e 20. Ama bu öyle gelmiş olabilir ki o %20'lik belki de çok ayrı mı?
+
+423
+01:16:52,148 --> 01:17:12,868
+Ayrımı çok iyi yapılabilen %20'lik kesim gelmiş olabilir. Bunu normalde K-Fold'da yaparlar daha düzgün olsun diye. 5-Fold'un toplamı yani burada bir Confusion maddesi var. Birinci fold sıfırladın network, ikinci fold'u çalıştırdın. Yine Confusion maddes gelecek. Sıfırladın üçüncü fold da yine bir Confusion.
+
+424
+01:17:13,216 --> 01:17:23,016
+Bu 5 fold'un her bir bireysel konfusion maddesini üst üste toplarsan, bütün dataset üzerinde konfusion maddesi çıkar.
+
+425
+01:17:23,016 --> 01:17:26,216
+İşte o zaman biraz bakmak lazım.
+
+426
+01:17:26,216 --> 01:17:36,216
+Yani bu başarılı, evet muhtemelen peki şey analizi yapabildi mi? Feature'lardan hangisi aslında öğrenmeye en katkılı?
+
+427
+01:17:36,564 --> 01:17:41,464
+Logistik regresyonda bunu gösteriyordu esasında ağırlıklandırırken feature'ları.
+
+428
+01:17:43,904 --> 01:17:45,904
+Birbirleri korelasyonlarına mı?
+
+429
+01:17:46,224 --> 01:17:46,584
+Evet.
+
+430
+01:17:47,444 --> 01:17:54,004
+Hocam bu notebookumda yok bir yerlerde denemeler yaparken mutlaka bakmışımdır ama şu an hatırlamıyorum.
+
+431
+01:17:54,004 --> 01:17:59,144
+Çünkü burada muhtemelen bir tane feature zaten bu sınıflandırmayı çoğunlukla yapıyor.
+
+432
+01:17:59,699 --> 01:18:04,699
+Şunu demek istiyorum. Her şeyi makine öğrenmesi vesaire yapmak istiyorlar ama
+
+433
+01:18:04,699 --> 01:18:13,039
+data'yı kendi içerisinde data feature'larıyla örnekler arasında bir korrelasyonuna bakınca zaten belki bazı şeyler direkt gözükebilir.
+
+434
+01:18:13,859 --> 01:18:16,859
+Mesela burada kredilendirme skoru diye bir skor var muhtemelen.
+
+435
+01:18:18,319 --> 01:18:21,039
+Veyahut da kredi kartı platinyum bilmem ne dedim.
+
+436
+01:18:23,979 --> 01:18:26,039
+Bunlarla bir korrelasyon çıkabilir.
+
+437
+01:18:27,796 --> 01:18:32,195
+Raporunda o kuralasyonu da koyarsan güzel olur.
+
+438
+01:18:33,056 --> 01:18:38,436
+Dediğiniz gibi o şeyi ayrım yaparken keyfold olarak da yaparım yani şey eklerken.
+
+439
+01:18:39,539 --> 01:19:01,539
+Sonra dediğim gibi görselleştirme için yukarıda bir değer tutmuştum. Onları, epoklarım arttıkça, loss değerim nasıl düşüyor bunu görmek istedim. Sonrasında da birden fazla learning rate denersem nasıl olur diye baktım. Bir de ben ilk defa derin öğrenme uyguluyorum herhangi bir veri seti üzerinde. O yüzden biraz böyle denemek istedim.
+
+440
+01:19:02,452 --> 01:19:24,832
+Burada yaptığım tek şey, farklı learning rate değerlerini bir liste içinde tutmak. 0.01, 0.01 ve 1 olarak 3 farklı değere bakacağım. Sonrasında da bilgilerini, loss değerlerini tutabilmek için bir sözlük oluşturdum burada her biri için. Yine aynı hesaplamalar üzerinden gittim. Burada yine sadece sözlüğüme eklemek için bir kısmım var.
+
+441
+01:19:27,380 --> 01:19:55,220
+Bunları bir, yani sonuçlarımı, her bir learning rate'e göre, ROS değerlerimi bir data frame haline getirdim. Burada 0.01 learning rate'im 0.75'te başlarken ve 0.10'a düşerken en son 0.1 learning rate'imi kullandığımda ilk 10 epoch'tan sonra 0.10 loss'la başlıyorum aslında. Yani 0.01 learning rate'de en son düştüğüm yerden başlamış oluyorum. 0.01'e kadar da düşüyorum.
+
+442
+01:19:55,380 --> 01:19:59,819
+Learning Eğitimi 1 aldığımda da 0.01 loss değerinden başlayıp...
+
+443
+01:20:00,000 --> 01:20:21,500
+0.007'ye kadar düşmüş oluyorum. Bir de bunu görmüşken, görsel olarak da aradaki fark çok daha iyi anlaşılıyor. Lost değerinin başlangıç ve bitiş yerleri. Dediğim gibi 0.01'i kullandığımızda çok daha yüksek bir yerden başlıyoruz. Diğer iki değerde çok daha küçük bir Lost değeri elde etmiş oluyoruz.
+
+444
+01:20:28,000 --> 01:20:55,859
+Gradient Design Yöntemiyle denemek istedim. Yine üç farklı Learning Rate değeri için bunları oluşturdum. Hemen kodlar zaten yine aynı. Yine bunlar için bir Data Frame oluşturdum da. Yine şurada görselde biraz daha iyi görebiliriz. Her bir değerim için aslında başlangıç değeri de birazcık düştü 0.01 içinde. Burada yine dediğim gibi 0.1 ve 1 Learning Rate'lerim daha iyi sonuç verdiğini görebiliriz.
+
+445
+01:20:56,000 --> 01:21:06,920
+Evet, teşekkürler. Güzel bir çalışma olmuş. Teşekkür ediyoruz. Rapora biraz daha sonuç koyarsın.
+
+446
+01:21:07,619 --> 01:21:08,600
+Tamam, tamam hocam.
+
+447
+01:21:08,840 --> 01:21:11,480
+[öğrenci] buradayız.
+
+448
+01:21:11,500 --> 01:21:13,300
+Buradayım hocam. Sunabilirim.
+
+449
+01:21:13,300 --> 01:21:13,980
+Tamam.
+
+450
+01:21:21,524 --> 01:21:22,424
+Geldim mi hocam?
+
+451
+01:21:23,104 --> 01:21:23,624
+Geldim.
+
+452
+01:21:24,704 --> 01:21:38,924
+Tamamdır. Ben BR35H veri seti üzerinde çalıştım. Bu veri setinde beyin tümörlerinin var mı yok mu diye tespit eden de vardı, sınıflandıran da vardı. Ben sınıflandırma yapacağım.
+
+453
+01:21:40,804 --> 01:21:45,104
+1500 tane tümörlü görüntü var, 1500 tane tümörsüz görüntüden oluşuyor.
+
+454
+01:21:49,844 --> 01:22:09,923
+%60 eğitim, %20 doğrulama ve %20 test kümelerini ayırdım. Bu tabii ayırma etiketlerine göre yani dengeli olarak ayırdım. Hepsi eşit şekilde ekurisiyi düşürmemek açısından. Görüntüleri normalde 224-224 olarak alıyorlar ama ben onu denedim.
+
+455
+01:22:13,811 --> 01:22:25,811
+Hemen hemen aynı çıktı. İşlemleri kısaltmak için yüzde yüz yirmi sekize yüz yirmi sekiz olarak yeniden boyutlandırdım. Performansı çok etkilemedi. Öğrenme kat sayısını da on üzeri eksi üç aldım.
+
+456
+01:22:33,363 --> 01:22:34,563
+Katmanı kullandım.
+
+457
+01:22:35,443 --> 01:22:45,323
+Modele geçmeden önce belki şeyi merak ettim. Şimdi tümör var, tümör yok var dedin. Ama tümörün de alt sınıfları var zannedersem datada değil mi?
+
+458
+01:22:46,143 --> 01:22:52,563
+Hocam bu data setinde sadece var mı yok mu diye tespit ediliyordu. Yani o meningiyon falan o türleri yok.
+
+459
+01:22:53,183 --> 01:22:58,823
+Şey, paperını açtım da ben. Orada meningoma, glioma ve pitioteri.
+
+460
+01:22:59,444 --> 01:23:03,404
+Denen bunlar ne? Ben belki class wise diyorum.
+
+461
+01:23:04,243 --> 01:23:09,923
+Hocam, o attığım paperda başka bir veri seti de kullanıyorlar.
+
+462
+01:23:09,984 --> 01:23:10,823
+Tamam, o başka.
+
+463
+01:23:12,503 --> 01:23:15,844
+BR35H'da tümör var mı yok mu var?
+
+464
+01:23:16,144 --> 01:23:17,444
+Evet, evet hocam.
+
+465
+01:23:17,724 --> 01:23:26,123
+Bir de makaleyi ben öylesine koymuştum. Daha sonra baktığımda başka makalelerde direkt BR35H çalışılmalarına bakmıştım.
+
+466
+01:23:26,804 --> 01:23:28,043
+Orada ikisini çalışıyorlar.
+
+467
+01:23:28,863 --> 01:23:30,844
+Onun için o öyleydi.
+
+468
+01:23:32,115 --> 01:23:48,735
+Öncelikle ikili kombinasyon A kullandım. Grayscale görüntüleri olduğu için bir giriş ve kanalı var. 16 tane kanal çıkışı kullandım ilkinde.
+
+469
+01:23:48,735 --> 01:23:58,995
+Bir de valid padding yaptığım için 128 ile 128, 126'ya düşüyor. 126'ya 126 olarak.
+
+470
+01:23:59,091 --> 01:24:06,591
+İkinci kombinasyona geçince de, burada Max Bowling'de 2'ye 2 kullandım. Channel Size'da 3'e 3.
+
+471
+01:24:08,091 --> 01:24:13,091
+32 katmanı Channel'a çıkardım, 16'e 2 katı olarak.
+
+472
+01:24:13,591 --> 01:24:23,884
+Burada Max Bowling yapınca 63'e düştü, 126. Ama burada bir de Valid Padding olduğu için, 0 Padding kullanmadım, 61'e düştü girişi.
+
+473
+01:24:24,916 --> 01:24:45,136
+Sonra tam bağlantılı katmana bağladım. 128 çıkışı yaptım. En sonunda da ikili sınıflandırma olduğundan çıkışını ikili sınıflı olduğu için iki çıkışını yaptım. Toplam parametre sayıları 3.691.000.
+
+474
+01:24:53,203 --> 01:25:06,323
+Üç tane Optimizer'la bir karşılaştırma yapmak istedim. Relo fonksiyonu kullandığımda. Burada Adam'ın daha hızlı bir yakınsama yaptığını gördüm.
+
+475
+01:25:08,463 --> 01:25:14,763
+[öğrenci] bana zigzaglı bir yakınsama yaptı. Bunların hepsi on epoch bu arada.
+
+476
+01:25:15,380 --> 01:25:32,920
+Edegrad daha zigzaglı bir yaklaşım yaptı. Stokastik Gradient Gisent ise görüldüğü gibi 0.62 yani yavaş ilerliyordu. Kestim 10 epok eşit şekilde çalışsınlar diye. O daha uzun sürecekti yani.
+
+477
+01:25:39,604 --> 01:25:54,624
+Değiştirdiği için kendini eğitir sırasında bir patlamalar yapmış pek ihtimal. Ondan dolayı. Burada Adam biraz daha, yani Edigrath'a göre daha iyi çıktı. SG'de düşük çıktı. Reli fonksiyonuyla yaptığım çalışma.
+
+478
+01:26:06,515 --> 01:26:33,995
+Sınır yoksa da 292'sini tespit edip 8'ini de bulamamış. Pedagrad biraz daha kötü bir performans. Zaten grafikte de biraz görüldü. SG'de en kötüsü 231 tespiti var. Bir de ben Relu harici bir de Likure Relu'yu deneyeyim dedim. Burada direkt negatifleri çıkarmayalım da biraz bilgisi olsun çalışmama katkı olacak mı daha performansa ama.
+
+479
+01:26:34,351 --> 01:26:42,791
+Çok şey olmadı, fark olmadı. Hatta Rölü daha iyi çıktı. Adam yine aynı şekilde hızlı yakınsadı minimuma.
+
+480
+01:26:43,311 --> 01:26:50,831
+Edigard biraz daha iyi yakınsadı burada. Zigzag yine var ama deminkine göre daha iyi bir yakınsama yaptı.
+
+481
+01:26:50,831 --> 01:26:54,831
+Burada belki...
+
+482
+01:26:54,931 --> 01:27:18,112
+Normalde biz bu grafikleri analiz ederken şeye bakarız. Epo belirleme için bu grafikler analiz edilir. İşte training loss Adam'da düşmüş ama hala belki 20 yapsaydın azıcık da olsa daha düşebilirdi ve yukarıdaki validasyon kaybı aşağı doğru evlenebilirdi belki.
+
+483
+01:27:18,899 --> 01:27:22,599
+10 epoktan fazla denediğin olduğu mu hiç?
+
+484
+01:27:23,619 --> 01:27:34,979
+10 epoktan fazla denemem. Çoğu şey olduğu için çok yavaş ilerliyordu sonlara doğru. Bir de yataya bağladı. İşlem süresi uzun olduğundan 10 epokta kesmiştim.
+
+485
+01:27:35,507 --> 01:28:02,448
+Normalde ama bu grafiklerde mesela Adagrad'da kesinlikle Epo'u arttırmak lazım. Hani bu çalışma için yap demiyorum artık da. İleride bu grafikleri analiz etmemizdeki hedef şu. Epo'u acaba daha gitse iyi mi yoksa bizim için yeterli mi? Adam için belki kesilebilir evet ama Adagrad için bence daha devam etmesi lazım. SG'de garip çıkmış, çok dramatik inmiş.
+
+486
+01:28:03,220 --> 01:28:20,120
+Bundan sonra ne olacağını görmek lazımdı aslında sevgili elçimde. Yani bir 20 epokta bir daha bu grafları çizmekte bir şey olabilirdi sonuçlar için. Onu da deneyebilirdim bir de daha yüksek epoklar mı?
+
+487
+01:28:31,123 --> 01:28:37,003
+Tamam, onların network'ü daha katmanlı. Seninkinden farklı birçok katman koymuş.
+
+488
+01:28:37,963 --> 01:28:43,104
+Seninki biraz... Kaç... İki tane konvolasyon katkını var.
+
+489
+01:28:43,404 --> 01:28:51,744
+Evet, iki tane hidden layer var. Mesela onlar bir de avantajı şu, sen Relo kullanmışsın, bir de Likarelu'ya bakmışsın.
+
+490
+01:28:52,203 --> 01:28:57,224
+Onlar bir de bir aktifasyon fonksiyonu öneriyorlar. Ama çok saçmalı bir aktif.
+
+491
+01:28:57,224 --> 01:28:59,104
+Evet, çok saçmalı bir aktif.
+
+492
+01:28:59,123 --> 01:29:13,844
+İki relunun çok azıcık, sıfırdan sonra aşağıya azıcık eğimli gitmesi değil de, işte eksi 0.5 gibi bir değer sabitlemişler sıfırın altını gibi bir değer.
+
+493
+01:29:14,431 --> 01:29:24,851
+Ve oradaki sonuçlara baktığımızda da aslında seninki kötü değil ama bunlarınki de tabii daha iyi bulmuşlar senden ama neticede...
+
+494
+01:29:24,851 --> 01:29:25,672
+Zorlamışlar biraz.
+
+495
+01:29:26,032 --> 01:29:27,452
+Zorlamışlar evet biraz.
+
+496
+01:29:27,511 --> 01:29:33,132
+Ben çok zorlamadım hocam. Belki gitsem, kömüzünü de onu hep ohta bırakmıştım.
+
+497
+01:29:33,692 --> 01:29:36,032
+Tamam, tamam. Var mı? Başka sonucan.
+
+498
+01:29:36,659 --> 01:29:43,779
+Confusion Matrixleri de aynı şekilde. Adam düştü, Edegrad burada daha yükseldi.
+
+499
+01:29:43,779 --> 01:29:50,659
+Diğerleri düştü. Adam'la SGD düştü ama Edegrad'ın yükseldi. Burada 285 tespiti var.
+
+500
+01:29:50,659 --> 01:30:02,659
+Pardon. Bu aynı ama no tumor, tümör yok dedi. 235. Burada 256'sını tümör yoksa doğru tespitmiş. Orada var demiş mesela tümörsüz görüntülere.
+
+501
+01:30:03,731 --> 01:30:22,271
+Burada da son Pablo şeklinde ikili aktivasyon ve optimizmelerin karşılaşması. Adam Relu'yu %97-17 ile çalışmanın en iyisi buldum. Zaten literatürde de çoğu 94-95 ama %99 ulaşan bir tane çalışma vardı.
+
+502
+01:30:22,271 --> 01:30:29,271
+Evet, şu an işte benim senin oraya koyduğun linkteki çalışma 99'u bulmuş ama...
+
+503
+01:30:29,652 --> 01:30:32,532
+Ya evet, dediğin gibi zorlamışlar biraz yani.
+
+504
+01:30:33,711 --> 01:30:36,331
+Evet hocam. Dinlediğiniz için teşekkür ederim.
+
+505
+01:30:37,471 --> 01:30:40,411
+Teşekkürler. Güzel bir çalışma belki.
+
+506
+01:30:40,731 --> 01:30:41,492
+Sağ olun hocam.
+
+507
+01:30:43,572 --> 01:30:44,851
+Sıradaki...
+
+508
+01:30:44,851 --> 01:30:48,751
+[öğrenci] [öğrenci], burada mısın?
+
+509
+01:30:50,891 --> 01:30:52,091
+[öğrenci] [öğrenci].
+
+510
+01:30:54,868 --> 01:31:04,948
+[öğrenci] [öğrenci] yok herhalde. [öğrenci]. [öğrenci].
+
+511
+01:31:09,555 --> 01:31:20,395
+[öğrenci] [öğrenci]. [öğrenci] [öğrenci]'di. Göremiyorum. [öğrenci] buradayız herhalde. [öğrenci].
+
+512
+01:31:20,836 --> 01:31:31,855
+Hocam, buradayım ama müsaadenizle haftaya anlatmak istiyorum. Makale açıkçası inceledim ama çalışmamı tam sonuçlandıramadım bazı problemlerle karşılaştığım için. Tam olsun istiyorum yani açıkçası.
+
+513
+01:31:31,855 --> 01:31:34,015
+Tamam. Haftaya atladık seni.
+
+514
+01:31:34,456 --> 01:31:34,935
+Tamamdır.
+
+515
+01:31:35,515 --> 01:31:36,695
+[öğrenci].
+
+516
+01:31:38,292 --> 01:31:43,332
+[öğrenci], Ay, [öğrenci].
+
+517
+01:32:05,587 --> 01:32:07,167
+Yanlış şey mi seçtim?
+
+518
+01:32:07,607 --> 01:32:10,067
+Yok geldi. Şu an ekrana yansıdı bize.
+
+519
+01:32:13,652 --> 01:32:14,891
+İkinci slide değişiyor.
+
+520
+01:32:34,131 --> 01:32:36,351
+Yok, bu birinci sayı. Şu an görüyor musunuz?
+
+521
+01:32:36,451 --> 01:32:37,851
+Evet, şu an bir...
+
+522
+01:32:37,851 --> 01:32:39,571
+Sınırca kazı, analizi.
+
+523
+01:32:39,991 --> 01:32:42,851
+Evet, bir, iki diye şu an değişiyor, görüyoruz.
+
+524
+01:32:43,451 --> 01:32:43,771
+Tamam.
+
+525
+01:32:49,779 --> 01:33:14,879
+Ben bir ses verisinden, duygusal olarak etiketli ses verisinden bir model eğitimi yaptım. Duygusal sınıflandırma yapan. Normalde literatürdeki çalışmalar birçok duygu var. Birden fazla duyguyu sınıflandırıyordu. Benim kullandığım veri setinde de yine birden fazla duygu vardı.
+
+526
+01:33:16,819 --> 01:33:20,979
+Surumlu, uyumlu gideyim.
+
+527
+01:33:22,599 --> 01:33:39,319
+Mökül öğrenmesiyle sesle duygu analizi, duygusal yönden etiketli ses verilerinden, bu sesten farklı öz nitelikler çıkarılarak, duygusal sınıflandırma yapan model eğitimi işlemidir.
+
+528
+01:33:43,536 --> 01:34:10,456
+Literatürdeki çalışmaları çoğunda duygusal sanıflandırma yapıyordu. Ben sadece sinirlilik duygusunu yorumdan analiz yapan bir çalışma yaptım. Bunun sebebi de benim çalıştığım sektörde biz çağrı merkezlerine yönelik çözümler geliştiriyoruz. Burada en çok istenen seste sinirlilik duygusunun olup olmadı. Aslında birçok duygu var. Korku, iğrenmişlik, mutluluk, endişe vs. diye ama en çok istenen...
+
+529
+01:34:10,644 --> 01:34:36,844
+Özellikle sinirlilik, duygu sinirlilik olduğu için böyle bir çalışma yaptım. Bir de bu duygusal veri seslerinde şöyle bir problem var. Normalde bu sesleri etiketlerken çoğunlukla doğal bir ses değil de bir aktörlere seslendiriyorlar. Mesela mutlu olarak oku, sinirli olarak oku diye yapay bir duygu.
+
+530
+01:34:37,652 --> 01:34:56,132
+Yani nesnel olarak aslında karar veriyoruz o duygu tam olarak yansıtıp yansıtmadığına. Sinirlik duygusu nesnel olarak etiketlemesi en kolay duygu. Diğer duygular çoğaldıkça, başarım gittikçe düşüyor. Bu sebeple de sadece sinirlik analizi yaptım.
+
+531
+01:34:59,332 --> 01:35:04,972
+Dediğim gibi literatürde birçok çalışma var. Sadece sinirlik değil birçok bilgiyi analiz ediyor.
+
+532
+01:35:05,460 --> 01:35:23,740
+Bu çalışmaların da birbirlerinden farklı genelde iki şey üzerinde duruyorlar. Bir sesten çıkarılacak ömüterikler hangileri çıkarılmalı? Buna da daha çok ihtiyaca göre, bu çözümün maliyetine göre, hızına göre karar veriliyor. Birbirine göre farklı avantajlar oluyor.
+
+533
+01:35:32,207 --> 01:35:50,047
+Support Vector Mation, karar ağrıcı kullandım. Nöral Network kullandım. Başarım şöyle arttı diye. Birbirine olan avantajlarına göre farklı çalışmalar var. Örnek birkaç tane ekledim. Yazdığım makarda daha fazla var.
+
+534
+01:35:53,627 --> 01:35:57,047
+Veri seti olarak KremiD veri setini kullandım.
+
+535
+01:35:59,220 --> 01:36:22,480
+Burada, bunun gibi başka veri setleri de var. Ben Kramada'ya veri setini kullandım. Bu veri setinde 744 tane ses var. Ancak bunların toplaması, sinirlilik var, iğrenmiş var, korku var, mutluluk, üzgünlük ve nötr şeklinde 91 tane konuşmacı var aksanlı İngilizce dil olarak.
+
+536
+01:36:23,155 --> 01:36:34,595
+Ancak benim yaptığım çalışmaları dediğim gibi sinirli kanalizm yapacağından sinirli ben ötürüleri seçtim. Bunları toplam 219 çekeyim 235 ile test olarak şekilde ayırdım.
+
+537
+01:36:36,715 --> 01:36:46,715
+OpenSmile'i şey olarak kullandım. Şimdi burada veri seçtiğinde bir Wav dosyası var. O Wav dosyasının ismi de etiket olarak kullanılmış.
+
+538
+01:36:47,891 --> 01:37:12,891
+Konuşmacı etiketi var. Onları kullanmadım. Sadece duygusal etiketi seçtim. Bu ses dosyasında OpenSource bir kütüphane var. Script yazarak çağırabiliyorsunuz. Arayüzdan da kullanabiliyorsunuz. Ben script'le çağırdım. Burada sesteki bazı feature'ları çekiyoruz. Bu feature'ları işte...
+
+539
+01:37:13,587 --> 01:37:39,587
+Ses işlemeyle ilgilenenler, belki siz de kullanmışsınızdır ses tanımada, ses sentezlemede, konuşmacı tanımada hep birbirine benzer feature'lar kullanılıyor. Bu duygu analizinde de gene benzer bir feature'ları kullandık. Bu sesle kullandığımız feature'lar güç, ses şiddeti, sıfır geçiş oranı, seslilik olasılığı, MFCC kat sayıları, LPC kat sayıları ve...
+
+540
+01:37:39,743 --> 01:38:02,923
+F0 frekanslarını kullandık. Bunların önce fremlere bölüp, bunların çeşitli istatistiksel ortalamasını, medyanını vs. bu verileri öz nitelik olarak kullandık. Toplamda 988 tane öz nitelik var. MFCC'leri ayrı olarak inceledik.
+
+541
+01:38:02,923 --> 01:38:06,684
+Her hat bir şey soracağım ama bölmek gibi olacak.
+
+542
+01:38:07,055 --> 01:38:27,475
+MFCC'nin şimdi normalde 30 saniyelik bir ses kaydı var. Bir de bir dakikalık ses kaydı olduğunu düşün. 30 saniyelik ses kaydının MFCC kat sayıları ile bir dakikalık ses kaydının MFCC kat sayıları aynı kolon adetimi.
+
+543
+01:38:28,532 --> 01:38:50,652
+Evet, şimdi burada şöyle bir şey, ses tanıma gibi yapmıyorum da şöyle bir şey yapıyorum. Önce bir dakikalık da olsa, otuz saniyelik de olsa, onu yüz milisaniyelik ses tanıma olsa girmeyiz daha düşüne de böyle bölerdik ama ben bu çalışmaları yüz milisaniye yaptım. Küçük parçaları bölüyoruz. Her bir küçük parçada bunları hesaplıyoruz.
+
+544
+01:38:51,188 --> 01:39:07,228
+Hepsinde. Öz nitelik olarak normalde şey aslında ses tanımada zaman serisi şeklinde oluyor ama bu duygu tanımada bunu şey olarak kullanıyoruz. Eşit sayıda kolon olması için her bir yüz milisanelik hesap.
+
+545
+01:39:07,228 --> 01:39:13,307
+Tamam yani sen aslında pencereleme yaptın. Normalde pencereleme yapıyoruz.
+
+546
+01:39:13,307 --> 01:39:18,747
+Ve her seslerin istatistiksel veriler alıyoruz. Ortalaması, medyanı.
+
+547
+01:39:19,039 --> 01:39:30,000
+Peki, mesela bir kayıt var. 30 saniye, sen 100 milisaniyede bir pencereyerek bu katsayıları çıkarttın.
+
+548
+01:39:30,599 --> 01:39:30,880
+Evet.
+
+549
+01:39:31,380 --> 01:39:31,639
+Tamam.
+
+550
+01:39:32,212 --> 01:39:59,312
+Birinci yüz saniye, yüz milisaniyedeki kat sayıların ortalamasını vesaire aldın. Özelliklerini kolon kolon yazdın. İkinci yüzün, yani aynı adamın konuştuğu ikinci yüzüncü milisaniye, ikinci penceredeki MFC kat sayılarının ortalamalarını vesaire entropisini neyse artık ne aldıysan. Bunları da ötekinin yanına mı yazdın?
+
+551
+01:40:00,000 --> 01:40:00,539
+Kolon olarak.
+
+552
+01:40:01,139 --> 01:40:08,039
+Hayır, kolon değil. Bunların hepsinin diyelim 100 milisaniyelik frame var, diyelim 30 tane frame var.
+
+553
+01:40:08,659 --> 01:40:15,879
+30 tane MFCC, her bir MFCC'den 456 tane MFCC aldık.
+
+554
+01:40:16,119 --> 01:40:22,839
+450 tane MFCC feature'i. 30'a da 456 MFCC feature'i var ya, bunun ortalamasını alıyoruz.
+
+555
+01:40:23,399 --> 01:40:28,000
+Dolayısıyla yani 10 tane 100 milisaniyelik frame de olsa 100 tane frame...
+
+556
+01:40:28,000 --> 01:40:40,000
+Ama işte o zaman şey olmuyor mu? Mesela ben paperda baktım. 12 tane kelime söyletiyorlar herhalde.
+
+557
+01:40:40,000 --> 01:40:54,399
+İşte it is 11 o'clock, this is exactly what happened, I am on my way to the meeting gibi cümleler var. Şimdi İngilizce'de bazı sinirlilik analizi bazı kelimelerin orada yansıyor.
+
+558
+01:40:56,000 --> 01:41:00,000
+On my way to the meeting diyoruz ya, toplantıya gelmek üzereyim.
+
+559
+01:41:00,579 --> 01:41:06,279
+Şimdi, I am on my, yani oradaki vurgu mesela I am'deyse örnek verelim.
+
+560
+01:41:06,279 --> 01:41:20,479
+Veyahut da meeting'deyse, siz bunu işte normalde 30 veya işte kaç milisaniyelik pencerelere böldüysem bu sesi ve bu pencerelerin hepsinin ortalamasını aldığında sönümlendirmiş olmuyor musun?
+
+561
+01:41:21,203 --> 01:41:31,304
+Zaten şeyi bulmuyoruz. Tam sinirli noktası burasıdır demiyoruz. O cümle için tek bir şey söylüyoruz. Bu cümle sinirlidir değildir şeklinde bir sonuç veriyoruz.
+
+562
+01:41:31,304 --> 01:41:40,243
+Yani işte orada tabii ki şimdi nöro belki şöyle bakmak lazım. Sinirlilikle nötrol mü?
+
+563
+01:41:41,460 --> 01:41:53,640
+Neydi ötek sınır? Nötür olma durumu. Sinirlik ile nötür arasındaki ayrımda belki o ortalamasını almak kaybettirmez o anlamı. Çünkü nötürde de ortalama daha da düşük çıkacak.
+
+564
+01:41:54,100 --> 01:42:14,680
+Ama belki başka duygular girdiğinde, sinirlilik değil de işte diskast gibi vesaire diğer sınıflar girdiğinde sence bu sadece görüş soruyorum hani şeysin yorumunu. Ortalamasını bu pencerelerin her bir MFC'sinin ortalamasını alıp tek bir feature olarak yazmak.
+
+565
+01:42:16,467 --> 01:42:28,887
+Sadece ortalamasını almak tabii ki dediğiniz gibi şey yeterli olmaz ama birçok istatistiksel veri çıkarıyoruz. Ortalama değil, işte medyanı, minimum olanı.
+
+566
+01:42:35,123 --> 01:42:36,843
+Perhat ses gidiyor biraz ama.
+
+567
+01:42:40,243 --> 01:42:42,123
+Şu an çok az geliyor bana.
+
+568
+01:42:48,243 --> 01:42:55,443
+Bende çok az. Bende diğer arkadaşlarda da öyle dediği düşünüyorum. Çok az geliyor sesim var.
+
+569
+01:42:55,923 --> 01:42:56,884
+Aynı öyle. Buyurun efendim.
+
+570
+01:43:12,372 --> 01:43:13,592
+Deneme desen.
+
+571
+01:43:14,972 --> 01:43:15,812
+Şu an nasıl?
+
+572
+01:43:16,492 --> 01:43:20,372
+Çok az ya. Yani ben...
+
+573
+01:43:20,372 --> 01:43:22,672
+Biraz yaklaştısın mikrofon.
+
+574
+01:43:22,672 --> 01:43:28,132
+Şu an?
+
+575
+01:43:29,231 --> 01:43:30,352
+Çok az.
+
+576
+01:43:34,771 --> 01:43:41,771
+Kesiklik yok, ses az. Ben şu an maksimumda seni zor duyuyorum.
+
+577
+01:43:45,268 --> 01:43:45,627
+Aynı.
+
+578
+01:43:49,587 --> 01:43:52,247
+Olmalı devam et istersen zorlamayalım.
+
+579
+01:43:55,688 --> 01:44:05,427
+Dediğim gibi birçok istatistiksel verisini kullanıyoruz. Sadece ortalama değil, işte üçüncü moment, bu hatırladıklarım üçüncü moment vardı. Standart satma, maksimumunu, minimumunu.
+
+580
+01:44:08,083 --> 01:44:22,103
+Medyanını gibi bayağı bir istatistiksel veri çıkarılıyordu. Yani sadece ortalama değil, bunları çıkarılarak, mesela örneğin cümlemiz şöyle yapılıyor aslında. Bunun uygulamasından bahsedeyim. Mesela çağrı merkezindeki görüşmeyi düşünün.
+
+581
+01:44:22,603 --> 01:44:36,083
+İnsanlar konuşurken böyle bir aralık vererek konuşur. Hiç susmadan uzun süre konuşmaz. Yani cümle olarak düşünebiliriz. Bir cümle söyler, sonra bir cümle daha söyler. Önce onları segmentation diyoruz.
+
+582
+01:44:36,083 --> 01:44:51,224
+Biz segmentlere bölüyoruz. Sonra her bir segment için tek bir şey çıkarıyoruz. Bu sinirlidir veya değildir. Ya da şu duygu vardır ya da yoktur. Yani direkt o segment üzerindeki tam şu saniyededir sinirlilik demiyoruz. O noktayı bulmuyoruz yani.
+
+583
+01:45:01,684 --> 01:45:08,224
+Çeşitli istatistiksel verileri saydığım işte ortalamasıdır, standart satmasıdır. Bunlar feature olarak kullanılıyor.
+
+584
+01:45:09,264 --> 01:45:16,604
+Evet, evet. Biz de müzik çeşidi üzerine çalıştığım olmuştu. Orada da bir segmentler ayırıyorduk.
+
+585
+01:45:16,604 --> 01:45:24,543
+Daha doğrusu bir sekansı, bir video veya ses serilerini parçalanan izleyem fcc'den alıyorduk.
+
+586
+01:45:24,847 --> 01:45:31,887
+Ama biz genelde bir parçanın aldığımız özellik, öteki parçanın aldığımız özellik yanına getiriyorduk.
+
+587
+01:45:32,128 --> 01:45:35,347
+Toplamda bütün parçaların ortalamasının tek özellik yazmıyorduk.
+
+588
+01:45:35,948 --> 01:45:38,948
+Yoksa o diğerleri onu sönümlendiriyordu.
+
+589
+01:45:39,708 --> 01:45:44,087
+Ama tabii burada yine başarılı olmuştur.
+
+590
+01:45:44,188 --> 01:45:47,628
+Çünkü sadece iki sınıf var ve gerçekten ayrılabilen iki sınıf.
+
+591
+01:45:48,595 --> 01:46:08,235
+Burada işte iki ya da duygusal sınıflandırma yaptığımız için benim dediğim gibi ama mesela konuşma tanıma yapsaydık sizin dediğiniz gibi yapıyoruz örneğin. Ya diyelim bir konuşma var onu tekste dönüştüreceğiz. Burada ortalamasını almıyoruz mesela. Burada zaman serisi olarak kullanıyoruz olduğu gibi.
+
+592
+01:46:13,140 --> 01:46:23,840
+Bu MFCC feature'ların, bu arada konuşma tanımayla da ilgisi şu, ihtiyaç olarak çağrı merkezlerinde şöyle bir ihtiyaç var, sinirli olan görüşmeleri yakalama gibi.
+
+593
+01:46:23,840 --> 01:46:35,360
+Bunu şeyle birlikte kullanılıyor, konuşma analizi sistemleriyle yani sesi tekste dönüştüren sistemlerle birlikte kullanılıyor.
+
+594
+01:46:35,900 --> 01:46:39,760
+Onun için de kullanan öz nitelikler MFCC katsayıları.
+
+595
+01:46:40,404 --> 01:46:54,684
+Ben burada şunu da analiz ettim. Mesela zaten konuşma tanıma yapılacaksa, MFCC öz nitelikleri çıkarılacaksa, hiç diğer öz nitelikler çıkarılmadan ise aynı öz niteliklerle de duygu tanımayı yapmaya çalışsak başarın nasıl değişir?
+
+596
+01:46:55,784 --> 01:47:01,164
+Çünkü zaten burada en çok maliyet öz nitelik çıkarmada oluşuyor ses işlemede.
+
+597
+01:47:01,644 --> 01:47:07,164
+Zaten bir kere bu öz nitelikleri çıkardık. Başka bir şey yapmadan bunu duygum...
+
+598
+01:47:08,404 --> 01:47:15,984
+Sınıflandırması yapan modele de versek MFCC'lerden sadece model eğitebilir miyiz? Bir de bunun çalışmasını yaptım.
+
+599
+01:47:20,424 --> 01:47:24,984
+Burada deney olarak da Python'da...
+
+600
+01:47:26,484 --> 01:47:43,624
+Siket Learn kütüphanesini kullandım. Burada Support Vector Machine kullandım. Ancak Neural Network modellerini de yazacağım. Bu sunuma koymadım çünkü daha tam denemedim. Haftaya onu makaleye ekleyip o şekilde paylaşacağım.
+
+601
+01:47:54,484 --> 01:48:05,564
+Sonuçta feature 5 diyorsun. 1D CNN yapacaksın yani. Onu da yapalım. Yani SVM değil sadece. Neural Network yapıları da olsun.
+
+602
+01:48:05,564 --> 01:48:17,124
+Zaten makaleye ekleyeceğim. Şöyle ki zaten veri seti küçük olduğu için, 2000 veriden oluştuğu için ya da ben tam düzgün yapamadım. Bir tane denedim. Başarım bunun bayağı altında kaldı.
+
+603
+01:48:17,456 --> 01:48:25,395
+Sunuma koymadım ama makaleye birkaç farklı mimaride yapıp makaleye ekleyeceğim şeyi. Neural Network modelinde ekleyeceğim.
+
+604
+01:48:29,876 --> 01:48:37,395
+Sonuç olarak bir sinirli nötrde %93 test setinde %93...
+
+605
+01:48:38,612 --> 01:48:46,112
+Doğru sınıflandırma yapılabildi. Bir de sinirli sinirli değil şeklinde bir kandam model oluşturdum. Onu da şöyle yaptım.
+
+606
+01:48:46,452 --> 01:49:08,131
+Dedim ya birden fazla duygu vardı. Burada bir sinirler bir nötrleri seçtim ilk başta. Bir de aynı sayıya denk gelecek şekilde o nötrlerden bazılarını çıkarıp rastgele diğer duygulardan ekledim. Yani sinirli ve sinirli değil şeklinde bir tane daha veri seti oluşturup değişiyor mu diye. Onda %86'ya düştü başarım.
+
+607
+01:49:14,399 --> 01:49:28,119
+MFCC, sadece MFCC öz niteliklerinde %89, bir de MFCC hiç olmadığı zaman denedim. MFCC olmadığı zaman da yine %91 çıktı.
+
+608
+01:49:28,119 --> 01:49:34,519
+Ama diğer 93, MFCC artı diğer öz niteliklerinin olduğu idi değil mi?
+
+609
+01:49:35,159 --> 01:49:37,079
+Evet.
+
+610
+01:49:39,315 --> 01:49:42,515
+Yani aslında tekrardan da kabul edilebilir bir şey.
+
+611
+01:49:42,975 --> 01:49:54,435
+93'lük başarının sınıf bazlı class wise ekürisleri var mı? Yani mesela sinirliyi yüzde kaç bilmiş?
+
+612
+01:49:54,835 --> 01:50:03,335
+Var, Convition Matrix'leri var. O şu an bu bilgisayarımda değil, sunum yaptığım bilgisayarımda değil ama onları şeye ekledim zaten.
+
+613
+01:50:03,764 --> 01:50:05,304
+Makaleye ekledim konuşma.
+
+614
+01:50:05,304 --> 01:50:18,364
+Şimdi çünkü asıl makalesi bir yandan bakıyorum, sen de bakmışsındır. Orada mesela nötr'ü %97 biliyor zaten nötr duyguyu. 6 sınıflı yapıda.
+
+615
+01:50:19,224 --> 01:50:27,444
+Anger'ı yani sinirli olmayı da %74 bulmuş bu yapıda. Yani 5 aşağıya 6 sınıflı yapıda.
+
+616
+01:50:31,328 --> 01:50:49,368
+Angel'ı %93'ü bulabilmesi için %90 düz hesaplayalım. %90 buluyorsa aslında sinirliyi bulmak çok da iyi. Yine başarılı tabii de. Bir de dağılımın örneklerinin, 2000 örneğin dağılımı nasıldı ondan da bahsetmedim.
+
+617
+01:50:49,368 --> 01:50:53,748
+Şu şekilde yazmış olmam lazım.
+
+618
+01:50:54,804 --> 01:51:14,743
+Onu ben az önce bakayım bir yere not almıştım. Sunuma koymuyorum ama. Yani 1000'e 1000 gibi dengeli mi yoksa 100 tane Angel, 2000 tane nötr gibi bir şey mi? Şu ekran görünüyor mu Notepad? Yoksa sadece ben sunumu mu paylaştım? Şu an sunum gözüküyor sadece. O zaman şöyle copy paste yapayım şuradan. Şöyle.
+
+619
+01:51:16,532 --> 01:51:19,532
+Yapıştıramazsın ki şeye çıkmadan.
+
+620
+01:51:19,532 --> 01:51:22,532
+Şuradan yapıştıralım şimdi.
+
+621
+01:51:27,636 --> 01:51:47,036
+Şu şekilde, şu sinirli train, sinirli test. Tamam, dengeli yani. Dengeli aynen. Yani çok büyük bir fark yok. Şu nötr, bu da nötr train, nötr test. Şununla şu şekilde. Tamamdır.
+
+622
+01:51:49,735 --> 01:51:52,855
+Tamam, Confusion, seni de rapora koyarsın.
+
+623
+01:51:53,492 --> 01:52:14,292
+Var, var. Raporda var, makalede var onlar. Ha bir de şöyle bir şey var. Ondan şeyde gene makalede bahsettim. Şurada önerileri de koydum. Şimdi bunun gibi kremadığı gibi başka şeyler de var. Veri setleri, benzer veri setleri var.
+
+624
+01:52:15,283 --> 01:52:25,503
+Şöyle bir şey oluyor. İkisinde de model üretiyorsun. İkisi de kendi testlerinde başarılı oluyor ama birbirlerinin başarı çok düşüyor.
+
+625
+01:52:26,260 --> 01:52:52,680
+Mesela Kremade'de oluşturduğum model, mesela başka M.O.D.B. diye bir veri seti var. Onda denediğimiz zaman çok düşüyor. O makaledeki, size gönderdiğim makaledeki veriler oluşmuyor mesela. Ama bu şeyden, ilk başta bahsettiğim sebepten dolayı sinirlik dışındaki diğer duyguları etiketlerken biraz çok nesnel olmuyor. Bir de zaten aktörlere konuşturuyorlar.
+
+626
+01:52:53,108 --> 01:53:05,488
+Mesela ben dinlediğimde korku duygusu, ben bir cümle dinliyorum. Bana mesela korkuymuş gibi gelmiyor bir çoğu. Ama sinirlilikler hemen hemen herkese sinirliymiş gibi geliyor.
+
+627
+01:53:06,036 --> 01:53:21,976
+Sinirlik analizi yaptığımızda veri setleri birbirleri arasında yine tutarlı olabiliyor. Bir veri setinde eğittiğimiz model başka bir veri setinde düzgün çalışabiliyor ama genel olarak bir sınıflandırma yaptığımızda başarım çok düşüyor. Öyle bir sorun var.
+
+628
+01:53:24,476 --> 01:53:30,195
+Öneri olarak da hangi öz nitelik seçimlerini şey yapabiliriz?
+
+629
+01:53:30,579 --> 01:53:47,579
+Hangi öz nitelikleri daha başarılı, hangileri çok etki etmiyor bunun üzerinde analiz yapılabilir. Support Vector Management yerine yapay öğrenme, farklı yapay öğrenme algoritmaları da test edilebilir.
+
+630
+01:53:47,579 --> 01:53:52,180
+Kesinlikle onu bekliyorum raporunda [öğrenci].
+
+631
+01:53:52,692 --> 01:53:59,112
+Bu dersin kapsamında en azından bir derin öğrenme ağının kendini oluşturup yapmanı bekliyorum.
+
+632
+01:54:00,492 --> 01:54:02,592
+Evet, onu raporu ekleyeceğim hocam söylediğim gibi.
+
+633
+01:54:06,092 --> 01:54:10,811
+Bir de farklı veri setleriyle çapraz testler yapılmalıdır.
+
+634
+01:54:10,931 --> 01:54:15,771
+Dediğim gibi farklı duygu setleriyle test ettiğimizde bazen çok değişebiliyor.
+
+635
+01:54:18,963 --> 01:54:25,443
+Birden fazla veri sesini birleştirip eğitim yapmak faydalı olabilir.
+
+636
+01:54:27,343 --> 01:54:29,083
+Tamamdır, teşekkür ediyoruz.
+
+637
+01:54:30,523 --> 01:54:32,863
+Güzel çalışmaklar, hatta eline sağlık.
+
+638
+01:54:35,143 --> 01:54:39,083
+Arkadaşlar, bu hafta [öğrenci] sunacak mısın?
+
+639
+01:54:42,363 --> 01:54:43,884
+[öğrenci] yok herhalde.
+
+640
+01:54:44,884 --> 01:54:46,063
+[öğrenci].
+
+641
+01:54:48,948 --> 01:55:13,347
+Arkadaşlar, bu haftalık sunanlar sunacaklar bu kadardı. Vaktimiz bir iki slayda sunuma daha var. Eğer haftaya veya sonraki haftaya sunmak istemeyip şimdi sunmak isteyen varsa sunabilir veya haftaya da devam edebiliriz. Herhalde yok muhtemelen.
+
+642
+01:55:14,228 --> 01:55:20,847
+Hocam, şey soracaktım, kusura bakmayın. 28 Mayıs haftası finale mi denk geliyor? Öyle bir durumda finale denk geliyorsa sunular yine olacak mı?
+
+643
+01:55:21,588 --> 01:55:29,427
+28 Mayıs haftası finale denk gelmemesi lazım. Bir dakika. Bizim finalimiz ne zannediyiz ki?
+
+644
+01:55:34,899 --> 01:55:38,219
+Ben daha 3 haftamız var zannediyorum. 2 haftamız mı var yoksa?
+
+645
+01:55:39,500 --> 01:55:41,239
+Tam emin değilim hocam ama ben öyle sanıyorum.
+
+646
+01:56:03,604 --> 01:56:29,923
+Şimdi, Bahar Dönemi derslerin tamamlanması 25 Mayıs diyor. 27 Mayıs'ta final sınavı var. Mecbur yapacağız. Şöyle yapacağız. Biz sınavı ikinci hafta yapacağız. Final haftası iki hafta zaten biliyorsunuz. Yani 21'inde sunum olacak.
+
+647
+01:56:30,420 --> 01:56:39,380
+28'inde de sunum olacak. O hafta bizim bu dersin finali olmayacak. Dersin finali 4 Haziran'da olacak muhtemelen. Ben öyle isteyeceğim.
+
+648
+01:56:40,800 --> 01:56:41,480
+Anladım hocam.
+
+649
+01:56:42,079 --> 01:56:46,239
+Tamam, yoksa yetişemiyoruz. Mecburen öyle yapmamız lazım.
+
+650
+01:56:47,980 --> 01:56:50,079
+Hocam ben sunum yapabilir miyim?
+
+651
+01:56:51,359 --> 01:56:55,859
+[öğrenci] o düzeltmeleri yaptıktan sonra haftaya yap istersen. Sen bana gösterdin ya.
+
+652
+01:56:56,275 --> 01:56:58,576
+Onu mu sunacaksın yoksa düzelttim mi?
+
+653
+01:56:59,176 --> 01:57:01,296
+Yok, onu sunacağım.
+
+654
+01:57:01,296 --> 01:57:05,896
+Yok, orada abzülp %100 sonuçlar vs. konuştuk zaten.
+
+655
+01:57:06,336 --> 01:57:06,636
+Tamam.
+
+656
+01:57:06,916 --> 01:57:09,815
+Sen onu haftaya sunacağım.
+
+657
+01:57:10,336 --> 01:57:10,536
+Tamam.
+
+658
+01:57:11,056 --> 01:57:12,476
+Hocam ben sunabilir miyim?
+
+659
+01:57:13,136 --> 01:57:13,796
+Olur.
+
+660
+01:57:14,796 --> 01:57:16,456
+Tamamdır, hemen ekranımı paylaşıyorum.
+
+661
+01:57:18,576 --> 01:57:20,235
+Hepsini, hesabı, şey yapıyorum.
+
+662
+01:57:22,036 --> 01:57:25,836
+Senin 28 Mayıs'ta da imiş herhalde. Doğru hocam, evet.
+
+663
+01:57:32,735 --> 01:57:35,135
+Eklem geldi mi şu anda hocam? Geldi.
+
+664
+01:57:36,212 --> 01:58:01,852
+Tamamdır. [kişisel bilgi]. [kişisel bilgi]. Fabrika bu arada tamamen Endüstri 4.0 modeline uygun bir fabrika olduğu için çoğu şeyde otomatize edilmiş bir halde. Bu video wall denen kısımda ise genel olarak fabrika içerisindeki anlık üretim sürecinin takip ettikleri bir ekranlara dolu bir kısım burası.
+
+665
+01:58:04,212 --> 01:58:10,672
+Durumlardan dolayı ekranlar tamamen kapanıyor ve bu da denetim açısından biraz sıkıntıya sokuyor buradaki çalışanları.
+
+666
+01:58:11,212 --> 01:58:16,412
+Bu yüzden de sadece burayı izleyen bir kamera bulunuyor. Kamerada kayıt alıyor habire.
+
+667
+01:58:16,412 --> 01:58:25,932
+Ama işte şu anda, son ekstra geçeyim, o video ekranlarında bir görüntü gidiyorsa şayet bunu anlık olarak tespit edip mail ile bildirim göndermek gerekiyor.
+
+668
+01:58:26,212 --> 01:58:29,712
+Oradaki birden fazla görüntü ekranı varsa ne dersen?
+
+669
+01:58:29,792 --> 01:58:30,352
+Doğru hocam.
+
+670
+01:58:31,988 --> 01:58:48,347
+Evet. Kaç segment var burada? Dokuz tane ekran var hocam. Bir tanesi gidince sırayla peş peşe diğerleri de gitmeye başlıyor. Bunu anlık olarak tespit edip hemen bildirim yollaması gerekiyor. Daha sonra da çözüm olarak da ilgili ekip gelip ekranları resetliyor.
+
+671
+01:58:49,908 --> 01:59:14,948
+Problem oldukça basit bu arada. Sadece bunu görüntü işlemeyle tespit etmek gerekiyor. Ama çözüm tarafına geldiğimizde, güvenlik kameralarından bir tanesi daima aynı açıyla bu ekranları kayıt ediyor. Buradan gelen görüntüleriyle de derin öğrenme yöntemleri kullanarak otomatik olarak tespit edip anında bildirim göndermek gerekiyor. Bu bildirime istinaden de ilgili ekip gelip kısa süre içerisinde müdahalede bulunuyor.
+
+672
+01:59:16,500 --> 01:59:34,559
+Elimde iki tane sadece video dosyası bulunuyordu. Bunlardan bir tanesi 4 Nisan'da çekilmiş. Normal bir durum. Diğeri de 17 Mart'ta çekilmiş. Hatalı bir durum. Burada ekranlar görüldüğü üzere bazıları tamamen gidiyor, geliyor vs. gibi bir durum var. O yüzden sadece iki tane video dosyası üzerinden hareket ettim.
+
+673
+01:59:44,500 --> 01:59:58,659
+Hatalı durumun ikisi ise 330 saniyeydi. Total frame ile hali de 15.180'e 9.900 şeklindeydi. Devam ediyorum. Veri hazırı tarafına geldiğimizde ilk başta videolarda sadece gerekli alan tutulacak şekilde videoları kırptım hocam.
+
+674
+02:00:00,000 --> 02:00:07,019
+Oradaki tüm detaylar modelin daha da karıştırmasın diye. Bu yüzden 300'e 600'e çözünürlükle hareket ettim.
+
+675
+02:00:07,539 --> 02:00:14,979
+Videolar üzerinde Under Sound Link uyguladım. Yani FPS'i 30'dan 3'e düşürdüm. O kadar fazla şeye gerek olmayacaktır diye hesaplama mahiyetini düşürmek adına.
+
+676
+02:00:15,579 --> 02:00:19,000
+Daha sonra videolardaki her bir frame'i ayrıca bir NumPy eleye dönüştürdüm.
+
+677
+02:00:19,923 --> 02:00:33,003
+Frameleri 4 farklı filtre uyguladım. Normalde CNN metodla ilerledim bu arada ama aynı zamanda Black & White, Sobel filtre veya Gradient Magnetut uyguladığımda ekstra nasıl bir sonuç verecek bunu da merak ettiğim için bu şekilde ilerledim.
+
+678
+02:00:33,923 --> 02:00:42,104
+Devam ediyorum. Filtre eklenmiş halde görüntüler bu hale geliyor. Normalde zaten bu şekildeydi. Kırpılmış bir şekilde sadece buralar.
+
+679
+02:00:45,555 --> 02:01:13,355
+Train Validation Test bir tarafına geldiğimizde ise totalde 2512 tane görüntüm bulunuyor. Bunun 1520 tanesi hatasız durum, 992 tanesi ise hatalı durumu şey yapıyor. Burada 0 ve 1 olarak etiketledim. Train tarafına 1607 görüntü ayırdım. Validation tarafına 402, test tarafına da 503 şeklinde. Oranları olabildiğince benzer tutmaya çalıştım bu kısımlarda. Tamamen randomized bir şekilde yani Stratified Something.
+
+680
+02:01:13,555 --> 02:01:27,215
+Uygulama kısımda. Devam ediyorum. Model tarafına geldiğimizde filtre katman sayısı, nöron sayısı, epoz sayısı, batch büklü ve learning rate üzerinde değişiklikler yaparak aslında modelin nasıl tepki vereceğini ölçtüm.
+
+681
+02:01:27,828 --> 02:01:40,068
+Burada denediğim 30 farklı kombinasyonu buraya ekledim bu arada. Hangi filtrelerden ne gibi durumlar oldu? Kaç tane kombinasyonel katmanı uyguladım? Buradaki filtre büyüklüğü neydi? Şeklinde. Dense layer katmanları burada yer alıyor.
+
+682
+02:01:40,068 --> 02:01:47,347
+Buradaki form 2D altındaki nömerlik değerler adedi mi? Mesela 12 tane kombinasyon katmanı mı demek o?
+
+683
+02:01:47,347 --> 02:01:53,588
+Yok hocam. Bir tane kombinasyon katmanı olduğu anlamına geliyor. O kombinasyon katmanı da 12 sayısı.
+
+684
+02:01:53,927 --> 02:01:55,248
+Çenal. 12 kanal.
+
+685
+02:01:55,608 --> 02:01:55,828
+Aynen.
+
+686
+02:01:55,828 --> 02:02:23,828
+Şuradaki dense ise aslında unit sayısını şey yapıyor. İki tane işte dense katmanı uygulamışım en sonunda. 12'ye 1. Buradaki 1 zaten output'u gösteriyor. Burada mesela 4 tane kombinasyonel katmanı uygulamışım. Üzerine 4 tane de dense katman burada yer alıyor. Fully connected şeklinde. Burada 5 büyüklüğünü 8.32 olarak test ettim. Learning Date'leri de genelde 0.1 ve 0.001 şeklindeydi. Burada train equiyesi, validation, test equiyeslerini kıyasladım. Benzer şekilde...
+
+687
+02:02:23,828 --> 02:02:26,028
+Defanskor'un daha doğrucu bir...
+
+688
+02:02:26,068 --> 02:02:45,868
+Metrik olacağını düşündüğüm için bu problem kapsamında bu şekilde ilerledim. En son hocam %100 doğruluğa kadar ulaştım bu arada. Yani burada hem test için baktığımda gradient magnitude uygulayıp daha sonra üzerine 4 tane komünasyon katman artı 4 tane dense layer uyguladığımda en sonunda %100 başarıya ulaştığını gördüm.
+
+689
+02:02:45,868 --> 02:02:51,967
+Sanki gradient magnitude yapmasan da orijinal görüntüde %89'muş değil mi?
+
+690
+02:02:52,288 --> 02:02:52,927
+Doğru hocam, evet.
+
+691
+02:02:53,460 --> 02:03:04,859
+Şu şekilde baktığımda %90 mesela ama test tarafında %88 evet. Gradient Magnitude uyguladığımda başarımı daha da yukarıya çektiğini söyleyebiliyorum bu kısım için.
+
+692
+02:03:05,395 --> 02:03:33,395
+Burada Optimizer fonksiyon olarak tüm modelleri Adam'ı kullandım bu arada. Bunun dışında Output katmanı hariç tüm katmanlarda Relu aktivasyon fonksiyonunu kullandım. En sonunda ise Sigmoid kullandım. Çünkü Binary bir klasifikasyon yapmam gerekiyordu. 0 ve 1 olacak şeklinde. En son final modelim şu şekilde. Burada tüm katmanlar yer alıyor. Aralarda Max Plinkler de bulunuyor. Dediğim gibi 4 tane komülasyonel katman, 4 tane dense.
+
+693
+02:03:33,395 --> 02:04:01,375
+Dens değer katmanı bulunuyor ve en sonunda output'um burada yer alıyor. Sonuç olarak 5 büyüklüğünü 8'e 32 ayarlamak benim model performansımı bu arada arttırdı. Dediğim gibi gradient magnitude filtresi de model performansımı arttırıyor. Tek dens katmanlı ağların nörün sayısını da arttırmanın aslında modeli çok düşük bir etkisi oldu. Ve benzer şekilde kombinasyonel ve dens katman ve nörün sayısını da arttırmakta modelin aşırı performansını da arttırıyor. Fakat hesaplama süremi de arttırdı aynı zamanda.
+
+694
+02:04:01,395 --> 02:04:29,215
+Learning Rate için de 0.001, buraya bir sıfır eksik yazmışım, daha iyi olduğunu gördüm. 0.1 iken aslında modellerin underfitting'e daha meyli olduğunu da gördüm aynı zamanda. Ve en son daha model eğitiminde ve test tarafında hiç kullanmadığım bir farklı hatalı durum burada yer alıyor. Burada yine fabrikada tam ödül merasim var. Tam ödül ekranlar gidiyor. Biraz üzücü bir durum tabi burası. O ayısına da gerçekleşen şey cam olarak burada.
+
+695
+02:04:29,395 --> 02:04:36,035
+Modülü test ettim ve hata olduğu durumu anında 1'e çevirdi. Tekrar ekranlar düzenledi. Tekrardan 0'a dönüyor burası.
+
+696
+02:04:45,876 --> 02:04:48,155
+Kısaca bu şekilde hocam benim problemim.
+
+697
+02:04:48,356 --> 02:05:00,016
+Eğne sağlık. Şimdi tabii bu ders kapsamında güzel bir örnek. Sonuçta bir şeyleri uyguladın. Ama aslında bu problem için sence derin öğrenme yaklaşımı uygulamaya gerek var mı?
+
+698
+02:05:02,228 --> 02:05:28,388
+Çünkü histogramına bile baksan burada. Çünkü siyah oluyor o ekran muhtemelen gidince. O histogramını çıkardığında siyah piksel sayısı o görüntüyü video sekansı içerisinde yükseldiği anda aslında uyarı da gönderilir. Tamam öğrenme değil. O anlık görüntüyü analiz etme bu. Öğrenme yok. Ama onunla da belki çözülebilir bir problem.
+
+699
+02:05:30,260 --> 02:05:41,400
+Doğru hocam, evet. Problem biraz basitti zaten. Videoda tam verimi yazdıktan sonra görmüştüm. O yüzden sonradan tekrar değiştiremedim verimi.
+
+700
+02:05:41,920 --> 02:05:49,300
+Yok, güzel olmuş. Sonuçta güncel bir kendi problemini çözen bir yaklaşım. Eline sağlık.
+
+701
+02:05:49,720 --> 02:05:50,680
+Teşekkür ederim hocam.
+
+702
+02:05:52,520 --> 02:05:55,220
+Var mı arkadaşlar başka bu hafta sunmak isteyen?
+
+703
+02:05:59,796 --> 02:06:07,196
+Yoksa dersi bitirelim o zaman. Ben de dinleneyim ben. Var mı sorunuz?
+
+704
+02:06:07,196 --> 02:06:09,096
+Yok.
+
+705
+02:06:15,123 --> 02:06:40,443
+Yoksa sorunuz arkadaşlar, hepinize iyi günler o zaman. Haftaya program devam ediyor sunumlarınız. Ek ders mevzusunda yapacağız mı, yapmayacağız mı tamamen şu nefesin düzelmesiyle alakalı olacak. Sizi bilgilendireceğim. Ama yapmazsak da şu ana kadar gördüğümüz konular finalde zaten soruların geleceği yerler olacak.
+
+706
+02:06:42,131 --> 02:06:44,992
+Tamamdır hocam. Teşekkür ederiz.
+
+707
+02:06:46,912 --> 02:06:51,412
+Görüşmek üzere arkadaşlar. Hepinize iyi derslerle. İyi günler hocam.

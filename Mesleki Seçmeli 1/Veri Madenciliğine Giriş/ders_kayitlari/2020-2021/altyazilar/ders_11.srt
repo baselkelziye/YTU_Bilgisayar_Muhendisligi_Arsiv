@@ -1,0 +1,5547 @@
+1
+00:08:07,660 --> 00:08:08,639
+Merhaba arkadaşlar.
+
+2
+00:08:16,730 --> 00:08:17,490
+Merhaba hocam.
+
+3
+00:08:18,550 --> 00:08:20,470
+Merhaba [öğrenci].
+
+4
+00:08:20,850 --> 00:08:23,490
+Sen olmasan kimse bana merhaba demeyecek ya.
+
+5
+00:08:25,509 --> 00:08:26,470
+Merhaba.
+
+6
+00:08:26,610 --> 00:08:28,089
+Lütfen sesiniz gelsin.
+
+7
+00:08:28,230 --> 00:08:29,629
+Sesinizi duymak istiyorum.
+
+8
+00:08:29,870 --> 00:08:34,870
+Arada böyle ders başlarken sohbet edebiliriz.
+
+9
+00:08:38,789 --> 00:08:39,169
+Evet.
+
+10
+00:08:41,370 --> 00:08:42,210
+Merhaba hocam.
+
+11
+00:08:43,269 --> 00:08:44,830
+Merhaba [öğrenci].
+
+12
+00:08:46,549 --> 00:08:47,529
+Evet sevgili arkadaşlar.
+
+13
+00:08:47,529 --> 00:08:48,289
+Merhaba hocam.
+
+14
+00:08:48,990 --> 00:08:51,049
+[öğrenci] teşekkürler.
+
+15
+00:08:51,210 --> 00:08:51,570
+Merhaba.
+
+16
+00:08:52,269 --> 00:08:53,029
+Merhaba hocam.
+
+17
+00:08:53,629 --> 00:08:55,070
+Merhaba hocam.
+
+18
+00:08:55,370 --> 00:08:56,909
+Merhaba [öğrenci].
+
+19
+00:09:00,820 --> 00:09:01,159
+Evet.
+
+20
+00:09:01,960 --> 00:09:03,600
+Bugün 33 kişi var derste.
+
+21
+00:09:04,659 --> 00:09:09,139
+Sınıf dersi alan 85 kişiden 33 kişi derste.
+
+22
+00:09:09,860 --> 00:09:10,340
+Ne oldu?
+
+23
+00:09:10,639 --> 00:09:11,980
+Tatil yaramadı galiba.
+
+24
+00:09:12,659 --> 00:09:16,179
+Ya da sokağa çıkma özgürlüğümüz var.
+
+25
+00:09:16,399 --> 00:09:19,860
+Derste ne işimiz var mı dedi acaba diğerleri bilemiyorum.
+
+26
+00:09:19,860 --> 00:09:21,860
+Ama kalanlar...
+
+27
+00:09:22,000 --> 00:09:23,259
+Ansağlar bizimdir.
+
+28
+00:09:23,860 --> 00:09:25,580
+Güzel bir ders olacak.
+
+29
+00:09:25,980 --> 00:09:27,279
+Güzel konular var yine.
+
+30
+00:09:28,100 --> 00:09:33,659
+Bu hafta eğiticisiz öğrenme, unsupervised learning konusu,
+
+31
+00:09:34,000 --> 00:09:35,960
+clustering konusuna geçiş yapacağım.
+
+32
+00:09:40,259 --> 00:09:43,919
+Şöyle genel bir şeye de bakalım.
+
+33
+00:09:44,419 --> 00:09:49,309
+Bu hafta 11. haftadayız biliyorsunuz.
+
+34
+00:09:50,250 --> 00:09:52,210
+Son 4 haftamız.
+
+35
+00:09:52,210 --> 00:09:55,210
+Bu hafta unsupervised.
+
+36
+00:09:55,549 --> 00:10:00,730
+Unsupervised clustering tarafında k-means clustering'den bahsedeceğim.
+
+37
+00:10:04,509 --> 00:10:09,669
+Bu hafta pazar gününe kadar galiba ödevi teslim etmeniz gerekiyor.
+
+38
+00:10:11,269 --> 00:10:16,350
+Ödevde karar ağaçlarıyla ilgili kodlama yapmanızı istemiştim.
+
+39
+00:10:16,909 --> 00:10:22,470
+Jupyter Notebook ekranı üzerinde size bir kod parçası verdim.
+
+40
+00:10:24,309 --> 00:10:26,289
+Hazır fonksiyon kullanmadan
+
+41
+00:10:26,830 --> 00:10:28,830
+Kendi
+
+42
+00:10:29,769 --> 00:10:33,610
+Information Gain hesaplamanızı kendiniz yaparak
+
+43
+00:10:34,269 --> 00:10:38,590
+kökdüğüm vesaire seçimlerini yapmanızı bekliyorum ödevde.
+
+44
+00:10:39,370 --> 00:10:43,370
+Bu uygulama aslında proje içinde bir hazırlık olacak.
+
+45
+00:10:43,809 --> 00:10:48,330
+Biliyorsunuz projede her öğrenci farklı bir veri setiyle çalışacak.
+
+46
+00:10:49,289 --> 00:10:56,149
+Bu hafta sonu size veri setlerini ve hangi öğrenci hangi veri setiyle çalışacak bununla ilgili
+
+47
+00:10:56,149 --> 00:10:58,149
+tabloyu yayınlayacağım.
+
+48
+00:10:58,149 --> 00:11:00,149
+Oradan projeye başlayabilirsiniz.
+
+49
+00:11:00,149 --> 00:11:04,149
+Dönemin son haftası da proje teslimi olacak.
+
+50
+00:11:04,149 --> 00:11:10,149
+Aslında aynı Jupyter ile Python'da
+
+51
+00:11:10,149 --> 00:11:18,149
+Derste öğrendiğimiz sınıflama ve kümeleme yöntemlerini kullanarak
+
+52
+00:11:18,149 --> 00:11:25,779
+Kendi data setiniz için bir çalışma yapmanızı bekleyeceğim projede.
+
+53
+00:11:25,779 --> 00:11:26,779
+Projede.
+
+54
+00:11:26,779 --> 00:11:27,779
+Projede.
+
+55
+00:11:27,779 --> 00:11:29,779
+Projede çok öğretici olacak bence.
+
+56
+00:11:29,779 --> 00:11:33,779
+Her öğrenci ayrı bir veri setinde çalıştığı için
+
+57
+00:11:33,779 --> 00:11:37,779
+bağımsız çalışma yapma imkanınız da olacak.
+
+58
+00:11:37,779 --> 00:11:38,779
+Peki.
+
+59
+00:11:39,779 --> 00:11:40,779
+Şimdi
+
+60
+00:11:45,779 --> 00:11:47,779
+Benim ekranımda çok şey açık galiba.
+
+61
+00:11:47,779 --> 00:11:50,779
+Önce şunları biraz düzenlemem gerekiyor çünkü
+
+62
+00:11:52,779 --> 00:11:54,779
+tablet ekranını göremedim.
+
+63
+00:11:56,779 --> 00:11:58,779
+Bu kadar döküman açık olunca.
+
+64
+00:11:59,779 --> 00:12:00,779
+Veri madenciliği
+
+65
+00:12:00,779 --> 00:12:19,440
+hangi haftada ne yaptığımızı konuştuk şimdi.
+
+66
+00:12:19,440 --> 00:12:27,399
+Evet buradan devam edebiliriz.
+
+67
+00:12:27,399 --> 00:12:32,399
+Bu hafta kümeleme algoritmalarına başlıyoruz.
+
+68
+00:12:32,399 --> 00:12:35,399
+İlk konu başlığımız k-means clustering olacak.
+
+69
+00:12:35,399 --> 00:12:43,279
+Genel anlamıyla kümeleme nedir?
+
+70
+00:12:43,279 --> 00:12:45,279
+Bir ona bakacak olursak.
+
+71
+00:12:45,279 --> 00:12:51,590
+Kümeleme için unsupervised learning olduğunu söylemiştik.
+
+72
+00:12:51,590 --> 00:12:53,590
+Etiketli bir veriye ihtiyacımız yok.
+
+73
+00:12:53,590 --> 00:12:57,590
+Etiketsiz veri üzerinde çalışacağız.
+
+74
+00:12:57,590 --> 00:13:00,590
+Nerede kullanılır derseniz.
+
+75
+00:13:00,590 --> 00:13:05,590
+Mesela kümeleme algoritmaları
+
+76
+00:13:07,590 --> 00:13:14,590
+e-posta kutunuza gelen e-mailleri gruplamak için kullanılabilir.
+
+77
+00:13:14,590 --> 00:13:21,590
+İşte spam ya da normal mail ya da iş ya da özel maillerimiz gibi
+
+78
+00:13:21,590 --> 00:13:22,590
+gruplamak için kullanılabilir.
+
+79
+00:13:23,590 --> 00:13:25,590
+Bu gruplamamıza yardımcı olur.
+
+80
+00:13:25,590 --> 00:13:30,590
+Çünkü etiket istemiyor az önce söylediğim gibi.
+
+81
+00:13:30,590 --> 00:13:33,590
+Customer Shopping Pattern için
+
+82
+00:13:33,590 --> 00:13:41,590
+yani müşterileri belli segmentlere ayırma veya onların alışveriş yapma
+
+83
+00:13:41,590 --> 00:13:47,590
+şekillerini bulma noktasında işimize yarayabilir.
+
+84
+00:13:47,590 --> 00:13:50,590
+Yörüntü işlemede kullanıyoruz.
+
+85
+00:13:50,590 --> 00:13:51,590
+Belli bölgeleri tespit ediyoruz.
+
+86
+00:13:51,590 --> 00:13:55,590
+Belli bölgeleri tespit etmek için kullanılabiliyor.
+
+87
+00:13:55,590 --> 00:13:58,590
+Yani kullanım alanları oldukça geniş.
+
+88
+00:13:58,590 --> 00:14:03,590
+En büyük avantajı etiketli veriye ihtiyaç duymaması.
+
+89
+00:14:03,590 --> 00:14:07,590
+Çünkü veriyi etiketlemek çok maliyetli bir iş.
+
+90
+00:14:07,590 --> 00:14:09,590
+Bir alan uzmanı oturacak ki
+
+91
+00:14:09,590 --> 00:14:14,590
+alan uzmanı dediğimiz kişiler genelde çok yoğun çalışan insanlar.
+
+92
+00:14:14,590 --> 00:14:18,590
+Büyük miktarda veriyi böyle etiketlemeleri istendiğinde
+
+93
+00:14:18,590 --> 00:14:21,590
+tabii bu çok yorucu oluyor.
+
+94
+00:14:21,590 --> 00:14:23,590
+Çok tercih etmiyorlar.
+
+95
+00:14:23,590 --> 00:14:28,590
+Peki kümeleme işlemlerini nasıl yapabiliriz?
+
+96
+00:14:28,590 --> 00:14:37,590
+Types of Clustering'de iki başlık halinde yöntemleri gruplayabiliriz.
+
+97
+00:14:37,590 --> 00:14:41,590
+Hierarşik algoritmalar dediğimiz algoritmalar
+
+98
+00:14:41,590 --> 00:14:44,590
+önümüzdeki hafta anlatacağım konu.
+
+99
+00:14:44,590 --> 00:14:50,590
+Agglomerative ya da divisive dediğimiz iki ayrı çözüm var.
+
+100
+00:14:50,590 --> 00:14:53,590
+Hierarşik kümelemede.
+
+101
+00:14:53,590 --> 00:14:58,590
+Bu yöntemleri dediğim gibi önümüzdeki hafta konuşacağız.
+
+102
+00:14:58,590 --> 00:15:02,590
+Partitional Clustering dediğimiz ikinci yöntem ise
+
+103
+00:15:02,590 --> 00:15:13,090
+bütün kümeleri bir seferde oluşturan bir yapıya sahip.
+
+104
+00:15:13,090 --> 00:15:18,090
+Ama bu All Cluster At Once dediğimiz işlemi
+
+105
+00:15:18,090 --> 00:15:22,090
+tabii kendi içerisinde iteratif bir yapıya sahip.
+
+106
+00:15:22,090 --> 00:15:28,090
+Bu yöntemlerden bugün K-Means Clustering'i konuşacağız.
+
+107
+00:15:28,090 --> 00:15:36,090
+Aslına bakarsanız K-Means Clustering bu işin en temel yöntemi diyelim.
+
+108
+00:15:36,090 --> 00:15:40,090
+Bu yöntemi anladığınızda
+
+109
+00:15:40,090 --> 00:15:44,090
+Fuzzy C-Means Clustering nasıl çalışır?
+
+110
+00:15:44,090 --> 00:15:47,090
+Çok hızlı öğrenebiliyorsunuz.
+
+111
+00:15:47,090 --> 00:15:51,090
+Ya da işte Self Organizing Feature Map.
+
+112
+00:15:51,090 --> 00:15:54,090
+Bu bir yapay sinir ağı modeli.
+
+113
+00:15:54,090 --> 00:15:59,090
+Bu yapay sinir ağı modelinin nasıl çalıştığını çok rahat anlayabilirsiniz.
+
+114
+00:15:59,090 --> 00:16:01,090
+Ama önce K-Means bilmeniz gerekiyor.
+
+115
+00:16:01,090 --> 00:16:06,090
+Bunu biliyorsanız eğer diğer yöntemler bunun üzerinde çok rahat kurgulanabiliyor.
+
+116
+00:16:06,090 --> 00:16:13,090
+İhtiyacınız olduğunda adım adım hepsini rahatlıkla öğrenebiliyorsunuz.
+
+117
+00:16:13,090 --> 00:16:20,090
+Yöntemin temeli aslında mesafe ölçmeye dayanıyor.
+
+118
+00:16:20,090 --> 00:16:27,090
+O yüzden mesafe ölçüm yöntemlerini birazcık üstünden geçmemiz lazım.
+
+119
+00:16:27,090 --> 00:16:33,090
+Derste Euclidean Distance'ı, Manhattan Distance'ı konuştuk.
+
+120
+00:16:33,090 --> 00:16:41,090
+İki sample arasında uzaklık ölçmek için Euclid mesafesinden faydalanabiliriz.
+
+121
+00:16:41,090 --> 00:16:48,090
+Burada verilen Euclid denkleminde
+
+122
+00:16:48,090 --> 00:16:54,090
+I eşit birden P'ye kadar P boyutlu bir uzayda
+
+123
+00:16:54,090 --> 00:17:01,090
+X ve Y dediğimiz iki tane sample arasındaki distance'ı
+
+124
+00:17:01,090 --> 00:17:13,089
+her bir boyuttaki aralarındaki uzaklığın kareleri toplamının karekökü şeklinde yazıldığını görebiliriz.
+
+125
+00:17:13,089 --> 00:17:17,089
+Bunu P boyutlu uzayda
+
+126
+00:17:17,089 --> 00:17:21,089
+genelleştirilmiş ifade olarak görüyorsunuz.
+
+127
+00:17:21,089 --> 00:17:23,089
+Manhattan Distance ise
+
+128
+00:17:23,089 --> 00:17:27,089
+yine daha önce konuştuk diye hatırlıyorum.
+
+129
+00:17:27,089 --> 00:17:32,400
+Uzaklıkları hesaplarken
+
+130
+00:17:32,400 --> 00:17:37,400
+mutlak değerini alıyor uzaklıkların.
+
+131
+00:17:37,400 --> 00:17:42,400
+Yani karelerin toplamı yerine mutlak değerlerinin toplamı şeklinde bir ifade var.
+
+132
+00:17:42,400 --> 00:17:46,400
+P boyutlu uzayda her bir öz niteliğin
+
+133
+00:17:46,400 --> 00:17:50,400
+aldığı değer arasındaki farkın
+
+134
+00:17:50,400 --> 00:17:57,400
+mutlak değerlerini üst üste toplayarak bir D mesafesi hesaplıyoruz.
+
+135
+00:17:57,400 --> 00:18:00,400
+Bunun dışında
+
+136
+00:18:00,400 --> 00:18:06,400
+maksimum norm diye bir distance burada tanımlanmış.
+
+137
+00:18:06,400 --> 00:18:14,400
+I birden P'ye kadar bu uzaklıkların her bir öz nitelik için alınan uzaklıkların
+
+138
+00:18:14,400 --> 00:18:17,400
+maksimumunu alarak kullanmış.
+
+139
+00:18:17,400 --> 00:18:20,400
+Ben bu yöntemi hiç kullandım mı hiç ihtiyaç duymadım.
+
+140
+00:18:20,400 --> 00:18:25,400
+Ama burada bir dördüncü distance measure Mahalonobis Distance var.
+
+141
+00:18:25,400 --> 00:18:30,400
+Bu güzel bir mesafe ölçme yöntemi.
+
+142
+00:18:30,400 --> 00:18:33,400
+Mahalonobis Distance için
+
+143
+00:18:33,400 --> 00:18:38,400
+Corrects data for different scales and correlations in the variables demiş.
+
+144
+00:18:38,400 --> 00:18:42,400
+Her bir öz nitelik yani her bir variable için
+
+145
+00:18:42,400 --> 00:18:47,400
+ortalama ve standart sapmayı bildiği için
+
+146
+00:18:47,400 --> 00:18:51,400
+bunlar üzerinden bir normalizasyon yapıyor Mahalonobis Distance.
+
+147
+00:18:51,400 --> 00:18:53,400
+Güzel bir yöntem.
+
+148
+00:18:53,400 --> 00:19:00,400
+Distance ölçmede kullanılan iyi yöntemlerden biridir diyebilirim.
+
+149
+00:19:00,400 --> 00:19:03,400
+Inner product space var.
+
+150
+00:19:03,400 --> 00:19:10,400
+Bu iki sample'ı
+
+151
+00:19:10,400 --> 00:19:15,400
+iki vektör olarak düşünüyor ve vektörler arasındaki açıyı
+
+152
+00:19:15,400 --> 00:19:19,400
+bir mesafe ölçüsü olarak kullanıyor.
+
+153
+00:19:19,400 --> 00:19:24,400
+Bu anlamda cosinus uzaklığı dediğimiz
+
+154
+00:19:24,400 --> 00:19:28,400
+uzaklık yaygın kullanılıyor.
+
+155
+00:19:28,400 --> 00:19:31,400
+Düzlemde iki tane vektörün
+
+156
+00:19:31,400 --> 00:19:37,400
+birbirleri arasındaki açıyı diyelim ki alfa açısını
+
+157
+00:19:37,400 --> 00:19:39,400
+similareti ölçmek için kullanıyor.
+
+158
+00:19:39,400 --> 00:19:41,400
+Alfa açısı ne kadar küçükse
+
+159
+00:19:41,400 --> 00:19:45,400
+bu vektörler aynı doğrultudadır ve
+
+160
+00:19:45,400 --> 00:19:50,400
+aynı doğrultudadır ve birbirlerine daha benzerdir mantığı var.
+
+161
+00:19:50,400 --> 00:19:54,400
+Aradaki açı büyüdükçe benzerlik azalıyor.
+
+162
+00:19:54,400 --> 00:20:00,400
+Ve bunu bulmak için de vektörler arasındaki
+
+163
+00:20:00,400 --> 00:20:03,400
+açının cosinusundan faydalanılıyor.
+
+164
+00:20:03,400 --> 00:20:08,400
+Cosinus 0, 1 veriyor biliyorsunuz.
+
+165
+00:20:08,400 --> 00:20:12,400
+Yani benzerliğin en büyük olduğu durumdur.
+
+166
+00:20:12,400 --> 00:20:16,400
+90 derece olduğunda 0 oluyor.
+
+167
+00:20:16,400 --> 00:20:20,400
+Cosinus 90, 0 veriyor ve benzerlik 0'dır.
+
+168
+00:20:20,400 --> 00:20:23,400
+180 derece için eksi 1'dir.
+
+169
+00:20:23,400 --> 00:20:26,400
+Artı 1 ile eksi 1 arasında değer alıyor.
+
+170
+00:20:26,400 --> 00:20:37,400
+Cosinus alfa için range'i 0 ile 180 derece arasında düşünüp
+
+171
+00:20:38,400 --> 00:20:43,400
+0 için artı 1, 180 için eksi 1.
+
+172
+00:20:43,400 --> 00:20:47,400
+Dolayısıyla bu range'i bu şekilde değer alıyor.
+
+173
+00:20:47,400 --> 00:20:54,400
+Bir benzerlik ölçüsü olarak ya da benzemezlik ölçüsü olarak kullanıyoruz.
+
+174
+00:20:54,400 --> 00:20:57,400
+Heming distance diye bir yöntem var.
+
+175
+00:20:57,400 --> 00:21:00,400
+Bunu daha önce şeyde kullandık.
+
+176
+00:21:00,400 --> 00:21:06,400
+Kategorik öz nitelikler arasında benzerlik ölçerken kullandık.
+
+177
+00:21:06,400 --> 00:21:11,400
+Yani hem similarity hem distance burada ortak incelenmiş.
+
+178
+00:21:11,400 --> 00:21:15,400
+Bunlar kullanabileceğimiz metrikler.
+
+179
+00:21:15,400 --> 00:21:23,400
+K-means clustering'de, burada belki biraz şeye geçebilirim.
+
+180
+00:21:23,400 --> 00:21:29,190
+Bir ikinci slide'ım daha vardı orada.
+
+181
+00:21:29,190 --> 00:21:37,190
+Binary öz nitelikler arasında similarity ölçerken kullandığımız yöntemler de var.
+
+182
+00:21:37,190 --> 00:21:41,190
+Biraz onlardan da bahsetmemiz gerekir bu noktada.
+
+183
+00:21:41,190 --> 00:21:47,799
+Evet geldik.
+
+184
+00:21:47,799 --> 00:22:06,099
+Eğer öz niteliklerimiz, öz niteliklerimiz nümerikse
+
+185
+00:22:06,099 --> 00:22:13,960
+az önce konuştuğumuz sti-block ve sti-block distance, L1 norm,
+
+186
+00:22:13,960 --> 00:22:19,960
+euclidean distance, L2 norm ve Minkowski distance kullanılabilir dedik.
+
+187
+00:22:19,960 --> 00:22:22,960
+Burada sti-block distance var.
+
+188
+00:22:23,960 --> 00:22:30,960
+Euclidean distance, Euclidean distance ve Minkowski distance denklemleri verilmiş.
+
+189
+00:22:30,960 --> 00:22:36,960
+Mesafe ölçüsüyle ilgili bazı özelliklerden bahsedebiliriz.
+
+190
+00:22:36,960 --> 00:22:38,960
+Bunları konuşmadık sanıyorum daha önce.
+
+191
+00:22:38,960 --> 00:22:45,960
+İki sample arasındaki distance negatif olamaz.
+
+192
+00:22:45,960 --> 00:22:51,960
+Yani mesafe dediğimiz değer sadece pozitif olabilir.
+
+193
+00:22:51,960 --> 00:22:57,960
+Bir sample'ın kendi kendisine olan mesafesi sıfırdır.
+
+194
+00:22:57,960 --> 00:23:04,960
+i sample'ının j sample'ına olan uzaklığı j'nin i'ye olan uzaklığına eşittir.
+
+195
+00:23:04,960 --> 00:23:12,960
+Yani ben bir distance measure tanımlıyorsam, yeni bir metrik tanımlıyorsam,
+
+196
+00:23:12,960 --> 00:23:15,960
+o metrik bu özellikleri sağlaması gerekir.
+
+197
+00:23:15,960 --> 00:23:20,960
+Üç tane sample'ımız olsun.
+
+198
+00:23:20,960 --> 00:23:22,960
+Düzlemdeyim.
+
+199
+00:23:22,960 --> 00:23:28,960
+i sample'ı, j sample'ı ve k sample'ı olsun.
+
+200
+00:23:28,960 --> 00:23:43,210
+i'nin j'ye olan mesafesi için diyor ki küçük eşit i'nin k'ya olan mesafesi ve k'nın j'ye olan mesafesi toplama.
+
+201
+00:23:43,210 --> 00:23:47,210
+Bu üçgen eşitsizliği kuralı.
+
+202
+00:23:47,210 --> 00:23:49,210
+Yani nedir?
+
+203
+00:23:49,210 --> 00:23:51,210
+Üçgenin bir kenarı.
+
+204
+00:23:51,210 --> 00:24:02,210
+Diğer iki kenarın toplamından küçük veya ona eşit olabilir kuralından gelen bir özellik.
+
+205
+00:24:02,210 --> 00:24:13,210
+Eğer bir binary özellik varsa elimizde yani sıfır ve birlerden oluşan bir öz niteliğimiz varsa
+
+206
+00:24:13,210 --> 00:24:18,210
+bu durumda farklı tanımlanmış farklı metrikler var kullanılan.
+
+207
+00:24:18,210 --> 00:24:20,210
+Bunlardan bahsetmek istiyorum.
+
+208
+00:24:21,210 --> 00:24:29,210
+Fakat bu metrikler işte simple matching coefficient dediğimiz SMA var.
+
+209
+00:24:29,210 --> 00:24:32,210
+Jacquard coefficient dediğimiz bir metrik var.
+
+210
+00:24:32,210 --> 00:24:36,210
+Ve bunun dışında belki ona yakın buna benzer metrik var.
+
+211
+00:24:36,210 --> 00:24:45,210
+Ama bunları anlatabilmek için önce bir olasılık tablosu contingency table dediğimiz bir tablo var.
+
+212
+00:24:45,210 --> 00:24:47,210
+Onu oluşturmamız gerekiyor.
+
+213
+00:24:47,210 --> 00:24:50,210
+Tablo i örneğiyle.
+
+214
+00:24:50,210 --> 00:24:58,210
+Yani i sample ile j sample'ının ilgili öz niteliklerinin binary öz niteliklerinin karşılaştırmasını yapıyor.
+
+215
+00:24:58,210 --> 00:25:18,210
+Ve diyoruz ki mesela i örneğinin sıfır olan öz niteliği j sample'ında sıfır değerini almışsa yani sıfır sıfır eşleşmesi varsa bunu a diye tanımlıyoruz.
+
+216
+00:25:18,210 --> 00:25:26,210
+i sample'ında sıfır olan j sample'ında bir olmuşsa bu tür durumlara b diyoruz.
+
+217
+00:25:26,210 --> 00:25:32,210
+i sample'ında bir j sample'ında sıfır ise buna c diyoruz.
+
+218
+00:25:32,210 --> 00:25:36,210
+Bir bir eşleşmesine ise d diyoruz.
+
+219
+00:25:36,210 --> 00:25:39,210
+Bir bir eşleşmesine ise d diyoruz.
+
+220
+00:25:39,210 --> 00:25:46,210
+Buna göre tanımlanmış simple matching coefficient birinci sırada verilmiş.
+
+221
+00:25:46,210 --> 00:25:53,210
+Simple matching coefficient birinci sırada vermiş olduğumuz benzerlik ölçüsü.
+
+222
+00:25:53,210 --> 00:26:11,210
+Diyor ki i sample'ının j sample'ına olan benzerliği a'ların sayısı artı d'lerin sayısı yani sıfır sıfır ve bir bir eşleşmelerinin toplam sayısı bölü toplam öz nitelik sayısıdır diyor.
+
+223
+00:26:11,210 --> 00:26:14,210
+Simple matching coefficient.
+
+224
+00:26:14,210 --> 00:26:25,460
+Bunu daha önce aslında biz kullandık bir binary öz nitelikte kullandık diye hatırlıyorum.
+
+225
+00:26:25,460 --> 00:26:31,460
+Jacquard coefficient ise Jacquard benzerliği ise şöyle hesaplanıyor.
+
+226
+00:26:31,460 --> 00:26:41,460
+Diyor ki i sample'ının j sample'ına olan benzerliği d bölü b artı c artı d'dir diyor.
+
+227
+00:26:41,460 --> 00:26:43,460
+D ne demekti? Bir bir eşleşmesi.
+
+228
+00:26:43,460 --> 00:26:44,460
+Bir bir eşleşmesi.
+
+229
+00:26:44,460 --> 00:26:45,460
+Bir bir eşleşmesi.
+
+230
+00:26:45,460 --> 00:26:47,460
+Bir bir eşleşmesi.
+
+231
+00:26:47,460 --> 00:26:49,460
+En önemli eşleşme olarak görünüyor.
+
+232
+00:26:49,460 --> 00:26:53,460
+Yani sıfır sıfır eşleşmesini bir benzerlik olarak kabul etmiyor.
+
+233
+00:26:53,460 --> 00:27:02,460
+O yüzden bu yönteme asimetrik ikili değişkenin asimetrik olduğu durumlarda kullanılır diye belirtilmiş.
+
+234
+00:27:02,460 --> 00:27:06,460
+Ne bileyim mesela birileri evet eşleşmesi gibi düşünün.
+
+235
+00:27:06,460 --> 00:27:14,460
+İkisinin de evet dediği bir öz nitelik eşleşmede anlam ifade ederken
+
+236
+00:27:14,460 --> 00:27:20,460
+buna hayır demiş olması mesela bir anlam ifade etmiyor olabilir.
+
+237
+00:27:20,460 --> 00:27:29,460
+Bu tür durumlarda Jacquard benzerliğini kullanıyoruz ve Jacquard benzerliğinde d bölü b artı c artı d kullanılıyor.
+
+238
+00:27:29,460 --> 00:27:35,460
+Yani farkındaysanız kesrin altında a hiç kullanılmamış.
+
+239
+00:27:35,460 --> 00:27:43,460
+Yani sıfır sıfır eşleşmesi hiçbir şekilde dikkate alınmamış Jacquard benzerliği için.
+
+240
+00:27:43,460 --> 00:28:02,309
+Bununla ilgili şöyle internette aslında yazacak olursanız bu başlık altında çokça farklı çözümler de olduğunu görebilirsiniz.
+
+241
+00:28:02,309 --> 00:28:21,519
+Jacquard coefficient for binary attributes desem.
+
+242
+00:28:21,519 --> 00:29:10,150
+Bir iki alternatif de göstereyim istedim.
+
+243
+00:29:10,150 --> 00:29:16,150
+Bakalım bulabilecek miyiz hızla şöyle bir bakıyorum.
+
+244
+00:29:16,150 --> 00:29:52,940
+Bizim kullandığımız binary şeyleri kullanarak yapılan a b c d gibi alanları kullanarak çalışan bir tane site buldum.
+
+245
+00:29:52,940 --> 00:29:54,940
+Aslında hemen paylaşabilirim.
+
+246
+00:29:54,940 --> 00:30:11,119
+Burada bir örnekle şey yapmış vermiş similarity between binary vectors diyor.
+
+247
+00:30:12,119 --> 00:30:26,119
+Bu binary vektörler şurada gördüğümüz x sample'ı 2, 4, 6, 8, 10 tane öz nitelikten oluşuyor ve binary öz nitelikler bunlar.
+
+248
+00:30:26,119 --> 00:30:33,119
+Y vektörü de yine ya da y sample'ı da yine 10 tane öz nitelikten oluşuyor ve binary.
+
+249
+00:30:33,119 --> 00:30:40,119
+Bu binary öz niteliklerde yaptığımız iş sıfır sıfır eşleşmelerini,
+
+250
+00:30:40,119 --> 00:30:46,119
+bir bir eşleşmelerini, sıfır ve bir ve bir sıfır eşleşmelerini saymak.
+
+251
+00:30:46,119 --> 00:30:57,119
+Sıfır sıfır eşleşmelerinin sayıları karşılıklı öz nitelikler arasında bir, iki, üç, dört, beş, altı, yedi tane öz nitelik için sıfır sıfır eşleşmesi var.
+
+252
+00:30:57,119 --> 00:31:03,119
+Buna şurada görüyorsunuz f sıfır sıfır eşittir yedi diye vermiş.
+
+253
+00:31:03,119 --> 00:31:06,119
+Biz buna a demiştik.
+
+254
+00:31:06,119 --> 00:31:09,119
+Sıfır bir eşleşmesine b demiştik.
+
+255
+00:31:09,119 --> 00:31:13,119
+Sıfır bir eşleşmelerinin sayısı iki tane.
+
+256
+00:31:13,119 --> 00:31:15,119
+Bir bir eşleşmesi hiç yok.
+
+257
+00:31:15,119 --> 00:31:18,119
+Bir sıfır eşleşmesi bir tane var.
+
+258
+00:31:18,119 --> 00:31:26,119
+Burada simple matching coefficient a artı d bölü öz nitelik sayısı şeklindeydi.
+
+259
+00:31:26,119 --> 00:31:32,119
+Eşleşen öz nitelik sayısı yedi bölü on sıfır nokta yedi çıkıyor.
+
+260
+00:31:32,119 --> 00:31:35,119
+Simple matching coefficient değeri.
+
+261
+00:31:35,119 --> 00:31:37,119
+Jacquard için bunu yazarken,
+
+262
+00:31:37,119 --> 00:31:38,119
+bir bir eşleşmelerinin sayısı yedi bölü on sıfır nokta yedi çıkıyor.
+
+263
+00:31:38,119 --> 00:31:44,119
+Bir bir eşleşmelerinin sayısı bölü b artı c artı d idi.
+
+264
+00:31:44,119 --> 00:31:53,119
+Zaten burada bir bir eşleşmesi hiç olmadığı için buna sıfır diyebiliriz.
+
+265
+00:31:53,119 --> 00:31:56,119
+Burada bir başka örnek vermiş.
+
+266
+00:31:56,119 --> 00:32:04,119
+Kosünüs benzerliği için yine bir örnek burada var.
+
+267
+00:32:04,119 --> 00:32:06,119
+Başka?
+
+268
+00:32:06,119 --> 00:32:10,119
+Eşleşme türlerini gösteren var mı ona baktım.
+
+269
+00:32:10,119 --> 00:32:17,900
+Bu sitede maalesef göremedim.
+
+270
+00:32:17,900 --> 00:32:21,339
+Evet, tamam.
+
+271
+00:32:21,339 --> 00:32:36,369
+Yine slide'dan devam edelim.
+
+272
+00:32:36,369 --> 00:32:37,369
+Evet.
+
+273
+00:32:37,369 --> 00:32:54,059
+Şimdi binary öz nitelikler için buradaki similarity ij sma yönteminin benzerliğini,
+
+274
+00:32:55,059 --> 00:33:02,059
+ikinci verdiğimiz ise Jacquard benzerliğini gösterdiğini söyledik.
+
+275
+00:33:02,059 --> 00:33:09,059
+Burada da yine bir, bu slide'da da yine bir binary değerler üzerinden örnek yapılmış.
+
+276
+00:33:09,059 --> 00:33:13,059
+i ve j sample'larının aldığı binary değerler.
+
+277
+00:33:13,059 --> 00:33:16,059
+İki, dört, altı, sekiz tane öz nitelik var.
+
+278
+00:33:16,059 --> 00:33:22,059
+Bu sekiz tane öz nitelikte biz az önce bir matriz oluşturmuştuk.
+
+279
+00:33:22,059 --> 00:33:24,059
+Matrizin sıfır sıfır benzerliğine.
+
+280
+00:33:25,059 --> 00:33:35,059
+a, sıfır bir benzerliğine b, bir sıfır benzerliğine c, bir bire ise d demiştik.
+
+281
+00:33:35,059 --> 00:33:41,059
+Burada sıfır sıfır eşleşmelerinin sayısı, sıfır sıfır eşleşmesi bir tane varmış.
+
+282
+00:33:41,059 --> 00:33:43,059
+a, bir olacak.
+
+283
+00:33:43,059 --> 00:33:49,059
+Sıfır bir eşleşmelerinin sayısı, sıfır bir iki tane var.
+
+284
+00:33:49,059 --> 00:33:51,059
+b eşit iki olacak.
+
+285
+00:33:51,059 --> 00:33:54,059
+c, bir sıfır eşleşmelerini gösteriyor.
+
+286
+00:33:54,059 --> 00:33:57,059
+Bir, iki, üç tane var.
+
+287
+00:33:57,059 --> 00:34:01,059
+Ve d, bir bire eşleşmesini gösteriyor.
+
+288
+00:34:01,059 --> 00:34:11,550
+Bir bire eşleşmesi bir, bir, yine burada d iki yazıyor.
+
+289
+00:34:11,550 --> 00:34:13,550
+Ben ikinciyi niye göremiyorum?
+
+290
+00:34:13,550 --> 00:34:15,550
+Ha, şurada.
+
+291
+00:34:15,550 --> 00:34:17,550
+Çok kötü, yorulmuşum.
+
+292
+00:34:17,550 --> 00:34:19,550
+Evet, d iki.
+
+293
+00:34:19,550 --> 00:34:25,550
+Sonuçta ben bu matrizi oluşturduktan sonra,
+
+294
+00:34:25,550 --> 00:34:30,550
+Simple Matching Coefficient için Similarity yazıyorsam eğer,
+
+295
+00:34:30,550 --> 00:34:36,550
+bu a artı d, yani sıfır sıfır eşleşmeleri artı bir bire eşleşmeleri
+
+296
+00:34:36,550 --> 00:34:39,550
+bölü tüm öz nitelik sayısı.
+
+297
+00:34:39,550 --> 00:34:42,989
+Bütün öz nitelik sayısı.
+
+298
+00:34:42,989 --> 00:34:45,989
+Number of Attributes.
+
+299
+00:34:45,989 --> 00:34:49,989
+a, bir, d, iki, d.
+
+300
+00:34:49,989 --> 00:34:52,989
+a artı d, üç bölü.
+
+301
+00:34:52,989 --> 00:34:55,989
+Sekiz tane öz nitelik olduğu için üç bölü sekiz çıktı.
+
+302
+00:34:55,989 --> 00:34:58,989
+Jacquard benzerliği içinse ne dedik?
+
+303
+00:34:58,989 --> 00:35:01,989
+Sadece bir bire eşleşmelerini dikkate alıyor.
+
+304
+00:35:01,989 --> 00:35:05,989
+O yüzden Similarity i virgül j'yi yazarken
+
+305
+00:35:05,989 --> 00:35:08,989
+sadece d'yi kullanacağız.
+
+306
+00:35:08,989 --> 00:35:13,989
+d bölü b artı c artı d şeklinde yazılıyor.
+
+307
+00:35:13,989 --> 00:35:16,989
+Jacquard için konuşuyoruz.
+
+308
+00:35:16,989 --> 00:35:24,989
+Jacquard benzerliğinde iki bölü yedi şeklinde yazabiliriz.
+
+309
+00:35:24,989 --> 00:35:27,989
+Oradaki slide'da hata var.
+
+310
+00:35:27,989 --> 00:35:33,989
+Çünkü a hariç b artı c artı d'ye oranlanması gerekiyor.
+
+311
+00:35:33,989 --> 00:35:36,989
+İki bölü yedi olması gerekiyor.
+
+312
+00:35:36,989 --> 00:35:43,989
+Farklı kaynaklarda bu tabloyu okurken lütfen dikkat edin.
+
+313
+00:35:43,989 --> 00:35:46,989
+Sıkça yapılan hatalar şu.
+
+314
+00:35:46,989 --> 00:35:50,989
+Biz bu tabloda sıfır sıfır eşleşmesine a dedik.
+
+315
+00:35:50,989 --> 00:35:53,989
+Ama internette birkaç kaynakta gördüm.
+
+316
+00:35:53,989 --> 00:35:55,989
+Her şeyin tersini kullanmış.
+
+317
+00:35:55,989 --> 00:35:59,989
+Onun için kaynakları kullanırken lütfen dikkat edin.
+
+318
+00:35:59,989 --> 00:36:04,989
+Hani bu tür karışıklıklar olabiliyor.
+
+319
+00:36:04,989 --> 00:36:11,989
+Evet şimdi bu kadar farklı çözüm anlattıktan sonra
+
+320
+00:36:11,989 --> 00:36:19,099
+geldik k-means kümeleme yöntemine.
+
+321
+00:36:19,099 --> 00:36:26,099
+K-means clustering'i ben yine bir önceki sunum üzerinden devam edeceğim.
+
+322
+00:36:26,099 --> 00:36:31,019
+Şuradan gideceğim.
+
+323
+00:36:31,019 --> 00:36:36,019
+Aslında bu hafta konumuz kısa, çabucak bitecek.
+
+324
+00:36:36,019 --> 00:36:39,019
+Çünkü kolay bir algoritma.
+
+325
+00:36:39,019 --> 00:36:42,019
+K ortalama algoritması.
+
+326
+00:36:42,019 --> 00:36:48,019
+Bu algoritma ile n tane obje dediği sample sayısı.
+
+327
+00:36:48,019 --> 00:36:55,019
+Biz n tane sample'ı k adet parçaya bölmek istiyoruz.
+
+328
+00:36:55,019 --> 00:36:57,019
+Buradaki k'nın n'den küçük olması gerekir.
+
+329
+00:36:57,019 --> 00:36:58,019
+Buradaki k'nın n'den küçük olması gerekir.
+
+330
+00:36:58,019 --> 00:37:01,019
+Buradaki k'nın n'den küçük olması gerekir.
+
+331
+00:37:01,019 --> 00:37:04,579
+Tabi ki önemli.
+
+332
+00:37:04,579 --> 00:37:10,579
+Bu yöntem için diyor ki, bu Expectation Maximization algoritmasına çok benzer.
+
+333
+00:37:10,579 --> 00:37:14,579
+Expectation Maximization algoritmasını size ayrıca anlatacağım.
+
+334
+00:37:14,579 --> 00:37:17,579
+Çünkü onun da matematiği gerçekten çok güzel.
+
+335
+00:37:17,579 --> 00:37:20,579
+Çünkü onun da matematiği gerçekten çok güzel.
+
+336
+00:37:20,579 --> 00:37:23,579
+Birden fazla Gaussian Distribution olduğunu
+
+337
+00:37:23,579 --> 00:37:28,579
+ve bu Gaussian'ın bir toplamından oluştuğunu bu data'nın söylüyor.
+
+338
+00:37:28,579 --> 00:37:32,079
+Ananı söylüyor ve bunun üzerine kurguluyor.
+
+339
+00:37:32,280 --> 00:37:40,699
+Expectation maximization bir clustering algoritması, aynı k-means algoritması gibi.
+
+340
+00:37:41,500 --> 00:37:44,940
+Dediğim gibi bunu da bir ara size anlatmayı düşünüyorum.
+
+341
+00:37:47,659 --> 00:37:48,480
+Belki bu hafta.
+
+342
+00:37:50,179 --> 00:37:55,570
+Şimdi baktığımızda diyor ki bu algoritma için
+
+343
+00:37:55,570 --> 00:38:12,429
+Elimizde n tane sample var ve biz bu örnekleri k adet disjoint subset,
+
+344
+00:38:12,429 --> 00:38:19,829
+k adet birbirine, birbirine örtüşmeyen kümelere bölmeye çalışıyoruz.
+
+345
+00:38:20,289 --> 00:38:23,789
+Ve bu kümelere sj diyor.
+
+346
+00:38:24,849 --> 00:38:25,429
+Bu kümelere.
+
+347
+00:38:25,570 --> 00:38:26,650
+Bu kümelere sj diyor.
+
+348
+00:38:27,329 --> 00:38:33,989
+Containing data points so as to minimize the sum of squares kriteria.
+
+349
+00:38:34,730 --> 00:38:43,019
+Şurada bir, nedir bu, cost function verilmiş.
+
+350
+00:38:43,639 --> 00:38:46,159
+Bu cost function bize şunu söylüyor.
+
+351
+00:38:46,320 --> 00:38:52,260
+j eşit birden k'ya kadar k adet cluster'ımız yani kümemiz var.
+
+352
+00:38:52,260 --> 00:38:57,119
+İşte bir, iki, üç tane kümemiz var diyelim.
+
+353
+00:38:57,139 --> 00:39:03,519
+Bir, iki, üç tane kümemiz var diyelim ki j eşit üç olsun.
+
+354
+00:39:03,519 --> 00:39:09,960
+En elemanlıdır sj demiş.
+
+355
+00:39:09,960 --> 00:39:16,840
+Bu kümelerin her birine işte s1 kümesi, s2 kümesi, s3 kümesi diyoruz.
+
+356
+00:39:16,840 --> 00:39:24,739
+Bu kümenin her birinin içerisinde varsayalım ki düzlemde çalıştığımız bir veri seti olsun.
+
+357
+00:39:24,739 --> 00:39:26,420
+Sample'lar var.
+
+358
+00:39:26,420 --> 00:39:27,860
+Birinde dört tane.
+
+359
+00:39:27,860 --> 00:39:29,199
+Öbüründe iki tane.
+
+360
+00:39:29,780 --> 00:39:38,260
+Birinde öbür bir tanesinde belki beş tane sample'dan oluşan bu kümeler var elimizde.
+
+361
+00:39:38,260 --> 00:39:39,920
+Amacımız şu.
+
+362
+00:39:42,440 --> 00:39:54,380
+Xn dediği sj kümesi içerisindeki sample'ların kendi küme merkezlerine olan uzaklıkların karelerinin toplamını alıyor.
+
+363
+00:39:54,960 --> 00:39:56,500
+Ben şunu yapacağım.
+
+364
+00:39:57,860 --> 00:39:59,500
+Kalem değiştireyim.
+
+365
+00:39:59,500 --> 00:40:00,119
+Pardon.
+
+366
+00:40:01,300 --> 00:40:03,619
+Kalemin rengini nereden değiştiriyorduk?
+
+367
+00:40:06,340 --> 00:40:07,860
+Şuradan değiştiriyorduk.
+
+368
+00:40:11,639 --> 00:40:14,139
+Her bir kümenin bir küme merkezi var.
+
+369
+00:40:14,280 --> 00:40:17,280
+Yani s1 kümesinin burada bir küme merkezi var.
+
+370
+00:40:17,599 --> 00:40:20,320
+S2 kümesinin şurada bir küme merkezi var.
+
+371
+00:40:20,500 --> 00:40:22,679
+S3'ün de burada bir küme merkezi var.
+
+372
+00:40:23,139 --> 00:40:28,440
+Buna mü1, mü2, mü3 diyelim.
+
+373
+00:40:29,260 --> 00:40:30,579
+Gördüğünüz gibi.
+
+374
+00:40:32,139 --> 00:40:36,480
+Xn ile bu küme merkezi arasında uzaklık hesaplıyoruz.
+
+375
+00:40:36,480 --> 00:40:47,380
+Yani ben s1 kümesinin içerisindeki her bir örneğin bu küme merkezine olan uzaklığını buluyorum.
+
+376
+00:40:47,780 --> 00:40:48,840
+Bir saniye.
+
+377
+00:40:52,059 --> 00:40:53,079
+Güzel çizemedik.
+
+378
+00:40:56,280 --> 00:40:59,920
+Her bir sample'ın bu küme merkezine olan uzaklığını hesaplıyorum.
+
+379
+00:41:00,179 --> 00:41:06,860
+Ve bu sample'ların küme merkezlerine olan uzaklıklarının karelerini üst üste topluyorum.
+
+380
+00:41:06,880 --> 00:41:09,239
+Bunu bütün kümeler için yapıyorum.
+
+381
+00:41:09,639 --> 00:41:13,340
+J eşit 1'den K'ya kadar tüm kümeler için yapıyorum.
+
+382
+00:41:13,780 --> 00:41:19,579
+Ve J dediğim benim kostüm bunu minimize etmeye çalışıyorum.
+
+383
+00:41:19,719 --> 00:41:31,559
+Yani ben sample'ları öyle kümeleyeceğim ki küme merkezlerine olan uzaklıkları toplamı en küçük olacak şekilde en ideal kümelemeyi oluşturmaya çalışacağım.
+
+384
+00:41:31,880 --> 00:41:32,800
+Amacım bu.
+
+385
+00:41:32,800 --> 00:41:38,039
+Peki.
+
+386
+00:41:41,039 --> 00:41:57,119
+K- adet gruba kümeye bölmeye çalışıyoruz elimizdeki sample'ları.
+
+387
+00:41:57,659 --> 00:42:00,099
+K- positive integer number demiş.
+
+388
+00:42:01,159 --> 00:42:02,059
+Ve
+
+389
+00:42:02,059 --> 00:42:02,300
+Ve
+
+390
+00:42:02,300 --> 00:42:03,960
+Grup yapıyoruz.
+
+391
+00:42:03,960 --> 00:42:07,539
+K- adet gruba kümeye bölmeye çalışıyoruz.
+
+392
+00:42:07,539 --> 00:42:09,320
+Elimizdeki sample'ları.
+
+393
+00:42:09,320 --> 00:42:10,840
+K- adet gruba kümeye bölmeye çalışıyoruz.
+
+394
+00:42:10,840 --> 00:42:10,960
+Ve
+
+395
+00:42:10,960 --> 00:42:13,179
+The Corresponding Cluster Centroid.
+
+396
+00:42:14,179 --> 00:42:24,800
+Örneklerin, kendi ait oldukları hüküme merkezlerine olan uzaklıklarının kareleri toplamını minimize edecek bir gruplama gerçekleştirmek istiyoruz.
+
+397
+00:42:25,260 --> 00:42:29,500
+Amacımız bu. Az önceki denklemde de bunu gördük zaten.
+
+398
+00:42:30,460 --> 00:42:35,139
+Şimdi, K-Means Clustering Algoritması nasıl çalışıyor?
+
+399
+00:42:35,139 --> 00:42:35,800
+Bakalım.
+
+400
+00:42:37,179 --> 00:42:39,239
+Akış diagramı verilmiş burada.
+
+401
+00:42:39,239 --> 00:42:44,059
+Akış diagramında ilk işaretlenen nedir?
+
+402
+00:42:44,280 --> 00:42:45,420
+Number of Clusters.
+
+403
+00:42:46,099 --> 00:42:49,079
+Biz bir küme sayısı tayin edeceğiz.
+
+404
+00:42:49,260 --> 00:42:51,360
+K'yı seçeceğiz. Kaç olsun?
+
+405
+00:42:52,039 --> 00:43:04,619
+Bu eğer mesela müşteri segmentasyonu yapıyorsanız, genelde işte müşterileri Gold, Silver and Bronze şeklinde 3 kümeye ayırmak.
+
+406
+00:43:04,619 --> 00:43:07,199
+Ya da ne bileyim 5 kümeye ayırmak gibi.
+
+407
+00:43:07,460 --> 00:43:08,619
+Başta bizim seçtiğimiz bir...
+
+408
+00:43:09,239 --> 00:43:11,539
+...küme sayısı olması gerekiyor.
+
+409
+00:43:12,260 --> 00:43:24,860
+Daha sonra seçtiğimiz küme sayısı kadar veri içerisinden Initial Cluster Centroid işaretlememiz gerekiyor.
+
+410
+00:43:24,860 --> 00:43:28,699
+Başlangıç küme merkezlerini işaretlememiz gerekiyor.
+
+411
+00:43:28,960 --> 00:43:38,940
+Başlangıç küme merkezlerini, datanın dağıldığı uzay içerisinde rastgele seçebilirsiniz veya elinizdeki sampların...
+
+412
+00:43:39,239 --> 00:43:45,900
+...ilk üç tanesini, üç tane kümenin başlangıç küme merkezi olarak atayabilirsiniz.
+
+413
+00:43:46,400 --> 00:43:50,059
+Burada bir seçme işlemi söz konusu.
+
+414
+00:43:50,840 --> 00:43:58,380
+Daha sonra elimizdeki tüm örneklerin bu küme merkezlerine olan uzaklıklarını ölçeriz.
+
+415
+00:44:01,559 --> 00:44:09,690
+Ve her sample kendisine en yakın olan kümenin, küme merkezinin...
+
+416
+00:44:10,550 --> 00:44:17,010
+...elemanı olacak şekilde bir gruplama işlemi yapılır.
+
+417
+00:44:17,010 --> 00:44:26,690
+Bu gruplama işlemiyle her kümenin artık üyeleri belli.
+
+418
+00:44:27,309 --> 00:44:31,289
+Bu üyeler üzerinden yeni küme merkezi hesaplanır.
+
+419
+00:44:31,989 --> 00:44:40,269
+Yeni küme merkezi ile biz bu işlemleri tekrarlarız.
+
+420
+00:44:40,269 --> 00:44:42,230
+Ne zamana kadar bu işlemler...
+
+421
+00:44:42,250 --> 00:44:43,610
+...tekrarlanır?
+
+422
+00:44:44,269 --> 00:44:49,250
+Eğer bir sample birinci iterasyonundan ikinci iterasyona geçerken...
+
+423
+00:44:49,909 --> 00:44:54,250
+...eğer bir sample'ların hiçbiri bir kümeden başka bir kümeye geçmiyorsa...
+
+424
+00:44:55,210 --> 00:44:58,730
+...artık bu algoritmadan çıkacağımız anlamına gelir.
+
+425
+00:44:59,110 --> 00:45:01,070
+Algoritmayı sonlandırırız.
+
+426
+00:45:03,010 --> 00:45:09,329
+Adımları burada biraz daha detaylı olarak inceleyeceğiz.
+
+427
+00:45:09,809 --> 00:45:11,329
+Birinci adım kdc.
+
+428
+00:45:12,250 --> 00:45:13,670
+Değerinin belirlenmesi.
+
+429
+00:45:15,250 --> 00:45:20,230
+Kaç tane küme oluşturacağımıza karar veriyoruz.
+
+430
+00:45:20,489 --> 00:45:28,849
+İkinci adım da elimizdeki tüm sample'ların bu k küme...
+
+431
+00:45:28,849 --> 00:45:30,130
+Bir dakika.
+
+432
+00:45:39,289 --> 00:45:42,349
+Küme merkezlerini seçmemiz gerekiyor.
+
+433
+00:45:42,349 --> 00:45:43,809
+K adet.
+
+434
+00:45:43,849 --> 00:45:47,210
+Küme merkezini data üzerinden seçeceğiz.
+
+435
+00:45:47,309 --> 00:45:50,030
+Burada training samples lafı çok anlamlı değil.
+
+436
+00:45:50,130 --> 00:45:53,349
+Biliyorsunuz elimizde aslında etiketli bir veri yok.
+
+437
+00:45:53,670 --> 00:45:55,710
+Ama bir data set var sadece.
+
+438
+00:45:55,989 --> 00:46:02,710
+Bu data set üzerinden rastgele k tane sample'ı başlangıç küme merkezi olarak atayacağız.
+
+439
+00:46:03,170 --> 00:46:09,630
+Random seçmek istemiyorsanız sistematik bir seçme yapabilirsiniz.
+
+440
+00:46:09,909 --> 00:46:11,309
+Yani bu size kalmış.
+
+441
+00:46:11,690 --> 00:46:16,059
+Sonra diyor ki...
+
+442
+00:46:16,599 --> 00:46:28,559
+Neden n-k?
+
+443
+00:46:28,559 --> 00:46:33,460
+Çünkü biz k adet küme merkezini data içerisinden seçtik.
+
+444
+00:46:33,559 --> 00:46:38,039
+Dolayısıyla bu sample'ların bir daha küme merkezlerine uzaklıklarını hesaplamamıza gerek yok.
+
+445
+00:46:38,679 --> 00:46:40,820
+Tüm örneklerin sayısı n'di.
+
+446
+00:46:41,400 --> 00:46:45,559
+n-k tane sample'ın yani remaining samples dediğimiz...
+
+447
+00:46:46,119 --> 00:46:46,559
+Geriye kalan...
+
+448
+00:46:46,599 --> 00:46:51,000
+Geriye kalan örneklerin küme merkezlerine olan uzaklıklarını hesaplayacağız.
+
+449
+00:46:51,440 --> 00:46:55,719
+Ve en yakın olduğu kümeye atayacağız bu örnekleri.
+
+450
+00:46:56,940 --> 00:46:58,599
+Daha sonra...
+
+451
+00:46:58,599 --> 00:47:06,519
+Recompute the centroids of the gaining clusters demiş.
+
+452
+00:47:07,139 --> 00:47:12,860
+Oluşan kümelerin küme merkezleri tekrar hesaplanacak.
+
+453
+00:47:19,820 --> 00:47:20,579
+Üçüncü adım.
+
+454
+00:47:20,579 --> 00:47:24,579
+Take each sample in sequence and compute its distance.
+
+455
+00:47:24,699 --> 00:47:28,420
+Distance from the centroid of each of the clusters.
+
+456
+00:47:29,480 --> 00:47:33,500
+If a sample is not currently in the cluster with the closed centroid,
+
+457
+00:47:33,719 --> 00:47:39,139
+switch this sample to that cluster and update centroids of the cluster.
+
+458
+00:47:40,000 --> 00:47:46,880
+Burada her sample'ın küme merkezlerine olan uzaklıkları hesaplandıktan sonra
+
+459
+00:47:46,880 --> 00:47:49,599
+en yakınında bulunan küme seçiliyor dedik.
+
+460
+00:47:49,599 --> 00:47:52,360
+Ve küme merkezi buna göre güncelleniyor.
+
+461
+00:47:52,480 --> 00:47:54,599
+Bu küme merkezini güncelleme işlemi...
+
+462
+00:47:54,699 --> 00:48:01,900
+Her sample'dan sonra yapmak veya tüm sample'ların hangi kümelere ait olduğunu bulduktan sonra
+
+463
+00:48:01,900 --> 00:48:06,639
+yeni küme merkezini hesaplamak şeklinde iki alternatif yol var arkadaşlar.
+
+464
+00:48:07,420 --> 00:48:13,699
+Biz genelde bütün mesafeleri hesapladıktan sonra en tane sample var.
+
+465
+00:48:13,699 --> 00:48:18,719
+En tane sample'ın küme merkezlerine olan uzaklıklarını hesapladıktan sonra
+
+466
+00:48:18,719 --> 00:48:21,480
+küme merkezlerini ondan sonra güncelliyoruz.
+
+467
+00:48:21,780 --> 00:48:22,860
+Daha ideal bir yol.
+
+468
+00:48:24,699 --> 00:48:33,599
+Dördüncü adım diyor ki bu yeni küme merkezlerini bulduğumuzda
+
+469
+00:48:33,599 --> 00:48:37,219
+veya işte kümelere olan uzaklıkları bulduğumuzda
+
+470
+00:48:37,219 --> 00:48:44,300
+bir sample bir başka kümeye ait çıkıyorsa eğer bu işlemlere devam ederiz.
+
+471
+00:48:44,300 --> 00:48:49,920
+Ama bir önceki iterasyonda bulduğumuz sonucun aynısını elde ediyorsak
+
+472
+00:48:49,920 --> 00:48:54,300
+yani her sample'ın ait olduğu küme değişmemişse
+
+473
+00:48:54,699 --> 00:49:00,440
+artık işlemden çıkılabilir, işlem sonlandırılabilir diyebiliriz.
+
+474
+00:49:01,039 --> 00:49:04,980
+Veya bir eşik değeri koyabiliriz.
+
+475
+00:49:05,099 --> 00:49:08,639
+Küme merkezlerine olan uzaklıkları, toplamları
+
+476
+00:49:08,639 --> 00:49:17,980
+belli bir eşik değerinin altına düşene kadar bu işlemi devam ettir şeklinde bir alternatif de var.
+
+477
+00:49:18,739 --> 00:49:24,639
+Şimdi çok basit bir örnek üzerinden giderek bunu anlatalım.
+
+478
+00:49:24,699 --> 00:49:28,420
+Basit örnek 7 tane sample'dan oluşuyor.
+
+479
+00:49:30,000 --> 00:49:32,860
+Birden 7'ye kadar 7 tane sample'ımız var.
+
+480
+00:49:33,280 --> 00:49:36,519
+Ve data set içerisinde 2 tane öz nitelik var.
+
+481
+00:49:36,619 --> 00:49:38,219
+Variable 1, 2 dediği.
+
+482
+00:49:38,219 --> 00:49:45,739
+Bu data sette k-means clustering yapmak istiyoruz.
+
+483
+00:49:46,679 --> 00:49:50,800
+Ve varsayalım ki veriyi 2 tane kümeye ayırmak istiyoruz.
+
+484
+00:49:52,320 --> 00:49:54,000
+Step 1.
+
+485
+00:49:54,699 --> 00:49:56,920
+Initialization diye geçiyor.
+
+486
+00:49:57,519 --> 00:50:05,280
+Randomly we choose following 2 centroids k equal 2 for 2 clusters.
+
+487
+00:50:06,440 --> 00:50:13,079
+2 kümeyi ayırmak istediğimiz için bütün veriyi 2 tane küme merkezine ihtiyacımız var.
+
+488
+00:50:13,219 --> 00:50:19,559
+Başlangıç küme merkezi, başlangıç küme merkezini varsayalım ki rastgele seçtik.
+
+489
+00:50:19,559 --> 00:50:24,219
+Ve küme merkezi, birinci küme merkezi m1 dediği burada.
+
+490
+00:50:24,699 --> 00:50:32,260
+Birinci sample, ikinci küme merkezi m2 dediği dördüncü sample olsun.
+
+491
+00:50:33,260 --> 00:50:39,780
+Bu durumda biz bu küme merkezleri için veriyi ne yapacağız?
+
+492
+00:50:39,920 --> 00:50:40,679
+Gruplayacağız.
+
+493
+00:50:41,480 --> 00:50:47,139
+Yani geriye kalan tüm örneklerin bu küme merkezlerine olan uzaklıklarını hesaplayacağız.
+
+494
+00:50:51,280 --> 00:50:58,289
+Burada uzaklıklar hesaplanarak bir tabloya yerleştirilmiş.
+
+495
+00:50:58,289 --> 00:50:58,889
+Bakın.
+
+496
+00:50:59,750 --> 00:51:12,829
+Birinci sampledan yedinci sample'a kadar tüm örneklerin centroid 1 ve centroid 2'ye olan uzaklıkları hesaplanmış.
+
+497
+00:51:13,510 --> 00:51:19,090
+Şimdi sizden ricam şu datayı bir kenara not alın ya fotoğrafını çekin.
+
+498
+00:51:19,170 --> 00:51:21,690
+Birazdan çünkü bunun üzerinden işlem yapacağız.
+
+499
+00:51:22,449 --> 00:51:25,090
+Sample'lar arasında uzaklık hesaplayacağız.
+
+500
+00:51:28,289 --> 00:51:29,010
+Bekliyorum.
+
+501
+00:51:29,010 --> 00:51:31,429
+Ya yazın ya fotoğrafını çekin.
+
+502
+00:51:33,949 --> 00:51:42,269
+Birinci sample'ın xy düzleminde düzlemsel çünkü iki boyutlu verilmiş datanın koordinatları 1'e 1.
+
+503
+00:51:42,789 --> 00:51:49,650
+Yani biz aslında datayı burada bir çizerek de inceleyebiliriz.
+
+504
+00:51:49,750 --> 00:52:00,210
+Variable 1 ve Variable 2 için 1, 1 noktası bizim elimizdeki birinci sample'ımız.
+
+505
+00:52:02,690 --> 00:52:03,750
+1.5'a 2.
+
+506
+00:52:08,559 --> 00:52:12,920
+Şurada ikinci sample'ımız var.
+
+507
+00:52:14,320 --> 00:52:15,099
+3'e 4.
+
+508
+00:52:15,900 --> 00:52:18,099
+1, 2, 3.
+
+509
+00:52:18,099 --> 00:52:26,019
+3'e 4 bizim üçüncü sample'ımız.
+
+510
+00:52:27,099 --> 00:52:30,119
+Ve dördüncü sample 5'e 7.
+
+511
+00:52:33,400 --> 00:52:38,059
+5'e 7.
+
+512
+00:52:38,719 --> 00:52:39,599
+Şuralarda.
+
+513
+00:52:40,800 --> 00:52:41,119
+1.
+
+514
+00:52:42,500 --> 00:52:42,820
+4.
+
+515
+00:52:43,380 --> 00:52:45,380
+5'e 7.
+
+516
+00:52:45,380 --> 00:52:48,860
+Bu şekilde düzlemde bu noktaların aslında yerlerini biliyoruz.
+
+517
+00:52:48,860 --> 00:52:58,719
+Ve diyoruz ki biz aslında iki tane küme merkezi seçtik.
+
+518
+00:52:59,219 --> 00:53:01,340
+Birinci küme merkezi M1 burada.
+
+519
+00:53:02,340 --> 00:53:06,099
+İkinci küme merkezi şurada olacak şekilde.
+
+520
+00:53:07,599 --> 00:53:14,900
+Initial Cluster Centroids dediğimiz başlangıç küme merkezlerini bu şekilde seçmiş olduk.
+
+521
+00:53:14,920 --> 00:53:23,739
+Daha sonra elimizdeki tüm örneklerin bu küme merkezlerinin olan uzaklıklarını hesaplıyoruz.
+
+522
+00:53:23,739 --> 00:53:31,420
+Zaten birinci kümenin merkezi birinci sample olduğu için kendi kendisine olan uzaklığı sıfırdır.
+
+523
+00:53:32,719 --> 00:53:34,500
+Ve en kısa mesafede budur.
+
+524
+00:53:34,619 --> 00:53:36,840
+Diğerini belki hesaplamasanız bile olur.
+
+525
+00:53:37,159 --> 00:53:41,679
+Yani birinci sample birinci kümeye aittir diyebiliyoruz.
+
+526
+00:53:42,840 --> 00:53:44,159
+İkinci sample'ımız.
+
+527
+00:53:44,159 --> 00:53:48,059
+Elimizdeki ikinci sample 1.5'a 2 koordinatlarındaydı.
+
+528
+00:53:48,619 --> 00:53:54,900
+Bunun birinci küme merkezine olan uzaklığı 0.5'in karesi öklit mesafesi alıyoruz.
+
+529
+00:53:55,500 --> 00:53:59,820
+Ve 1.12 çıkmış.
+
+530
+00:54:01,079 --> 00:54:08,500
+Efendim bu ikinci sample'ın diğer küme merkezine olan uzaklığı ise 6.50 çıkmış.
+
+531
+00:54:08,940 --> 00:54:09,579
+Ne yapıyorum?
+
+532
+00:54:10,579 --> 00:54:13,639
+Elimdeki ikinci sample 1.5'a 2.
+
+533
+00:54:14,159 --> 00:54:15,820
+Koordinatlarındaydı.
+
+534
+00:54:17,239 --> 00:54:27,800
+5-3.5'un karesi artı 6'nın karesi toplayıp kare kökünü aldığımda 6-10 çıkıyor.
+
+535
+00:54:28,840 --> 00:54:32,699
+Ama ikinci sample hangi küme merkezine daha yakın?
+
+536
+00:54:33,059 --> 00:54:34,599
+Birinci küme merkezine yakın.
+
+537
+00:54:34,860 --> 00:54:36,119
+Birinci sample da öyle.
+
+538
+00:54:36,760 --> 00:54:38,159
+Üçüncü sample'a geçtik.
+
+539
+00:54:38,159 --> 00:54:44,159
+Üçüncü sample'ın 2 küme merkezine olan uzaklığı da eşittir.
+
+540
+00:54:44,480 --> 00:54:47,119
+Bakın böyle durumlarla da karşılaşabiliyoruz.
+
+541
+00:54:47,880 --> 00:54:52,639
+İki küme merkezine olan uzaklığı eşitse birinden birini seçebilirsiniz.
+
+542
+00:54:52,780 --> 00:54:53,639
+Hiç önemli değil.
+
+543
+00:54:53,760 --> 00:54:59,539
+Çünkü iteratif bir yöntem kendi kendini zaten toparlayacaktır bir sonraki iterasyonda.
+
+544
+00:55:00,099 --> 00:55:02,559
+O yüzden biz burada sıralı gittik.
+
+545
+00:55:02,559 --> 00:55:11,219
+İlk baktığımız, ilk kontrol ettiğimiz küme 1 olduğu için birinci kümeyi en yakın olduğu küme merkezi olarak aldık.
+
+546
+00:55:12,159 --> 00:55:13,559
+Sonra dördüncü sample zaten...
+
+547
+00:55:14,159 --> 00:55:17,440
+İkinci kümenin merkezi olarak kabul ettiğimiz noktaydı.
+
+548
+00:55:17,539 --> 00:55:19,460
+Dolayısıyla ona olan uzaklığı sıfır.
+
+549
+00:55:19,599 --> 00:55:23,980
+Yani dördüncü sample ikinci kümeye aittir dedik.
+
+550
+00:55:24,059 --> 00:55:25,679
+En yakın olduğu küme merkezi.
+
+551
+00:55:26,480 --> 00:55:34,760
+Beşinci sample'ın birinci ve ikinci küme merkezlerine olan uzaklıklarını, öklit mesafelerini hesapladıktan sonra...
+
+552
+00:55:34,760 --> 00:55:43,760
+En küçük olan ikinci küme merkezi olduğu için diyoruz ki beş numaralı sample ikinci kümenin elemanıdır.
+
+553
+00:55:44,159 --> 00:55:46,159
+Mesafesi daha küçüktür.
+
+554
+00:55:47,119 --> 00:55:52,460
+Böylece bütün en kısa mesafeli küme merkezlerini işaretledik.
+
+555
+00:55:52,579 --> 00:56:04,559
+Ve bu işaretlemenin sonunda birinci kümenin elemanı olan üç tane sample, ikinci kümenin elemanı olan dört tane sample var dedik.
+
+556
+00:56:04,559 --> 00:56:13,559
+Buna göre ben M1 dediğim kümenin yeni merkezini, yeni merkez noktasını hesaplarken...
+
+557
+00:56:14,159 --> 00:56:22,760
+Bu üç tane sample'ın x doğrultusunda ve y doğrultusundaki değerlerinin ortalamasını alarak yeni küme merkezi hesaplayacağım.
+
+558
+00:56:24,300 --> 00:56:34,079
+İlk üç sample, birinci, ikinci, üçüncü sample'ların x koordinatları 1 artı 1.5 artı 3.
+
+559
+00:56:35,159 --> 00:56:36,840
+Bölü 3 diyorum.
+
+560
+00:56:37,860 --> 00:56:41,159
+Sonra y koordinatları...
+
+561
+00:56:42,320 --> 00:56:44,159
+1 artı...
+
+562
+00:56:44,159 --> 00:56:47,280
+2 artı 4 bölü 3 diyorum.
+
+563
+00:56:47,420 --> 00:56:48,280
+Neden 3'e böldüm?
+
+564
+00:56:48,380 --> 00:56:49,940
+Çünkü üç tane sample var.
+
+565
+00:56:50,440 --> 00:56:51,360
+Ortalama alıyorum.
+
+566
+00:56:52,360 --> 00:57:00,079
+Buradan birinci kümenin yeni merkezi 1.83'e 2.33 olarak hesaplanıyor.
+
+567
+00:57:00,820 --> 00:57:13,199
+M2 new dediğim yeni küme merkezi ise dört tane sample, dörtten yediye kadar olan sample'ların ortalaması alınarak bulunacak.
+
+568
+00:57:14,159 --> 00:57:27,460
+Dörtten yediye kadar olan sample'ların x'leri 5 artı 3.5 artı 4.5 artı 3.5.
+
+569
+00:57:28,679 --> 00:57:30,900
+Dört tane değer var.
+
+570
+00:57:31,039 --> 00:57:32,880
+Topladım, dörde böldüm.
+
+571
+00:57:32,880 --> 00:57:43,659
+Y ekseninde de 7 artı 5 artı 5 artı 4.5 bölü 4 dedim.
+
+572
+00:57:43,659 --> 00:57:46,940
+Buradan yeni küme merkezini hesapladım.
+
+573
+00:57:47,039 --> 00:57:53,639
+Yeni küme merkezi M2 için 4.12'ye 5.38 çıkıyor diyor.
+
+574
+00:57:54,320 --> 00:57:59,659
+Şimdi mesela yeni küme merkezlerini bir önceki çizimde işaretleyecek olursak...
+
+575
+00:58:00,380 --> 00:58:06,500
+Burada ben kalem rengimi daha değişik bir renk alayım yeşil olsun.
+
+576
+00:58:07,219 --> 00:58:10,559
+M1 küme merkezi 1.83'e 2.33.
+
+577
+00:58:10,559 --> 00:58:13,219
+1.83'e 2.33.
+
+578
+00:58:13,420 --> 00:58:13,500
+1.83'e 2.33.
+
+579
+00:58:13,500 --> 00:58:13,519
+1.83'e 2.33.
+
+580
+00:58:13,519 --> 00:58:15,059
+Şuraya bir yere geldi arkadaşlar.
+
+581
+00:58:15,340 --> 00:58:17,039
+Burası M1'in yeni yeri.
+
+582
+00:58:17,559 --> 00:58:21,519
+Yani M1 noktası buradan buraya taşındı.
+
+583
+00:58:21,679 --> 00:58:25,360
+Birinci iterasyondan ikinci iterasyona geçerken.
+
+584
+00:58:26,360 --> 00:58:34,260
+İkinci kümenin merkezi de 4.12 şuradan 5.30.
+
+585
+00:58:34,260 --> 00:58:42,219
+1.2.3.4.5.5.30 şuralar.
+
+586
+00:58:43,519 --> 00:58:44,679
+Bu da bir yerde olacak.
+
+587
+00:58:45,320 --> 00:58:47,880
+Bu da ikinci kümenin yeni merkez noktası.
+
+588
+00:58:47,980 --> 00:58:50,099
+M2 buradan buraya taşındı.
+
+589
+00:58:50,659 --> 00:58:50,820
+Tamam.
+
+590
+00:58:52,019 --> 00:58:56,659
+Birinci iterasyonun sonunda küme merkezleri yer değiştirdi.
+
+591
+00:58:57,440 --> 00:59:02,659
+Bu yeni küme merkezleriyle biz aynı işlemleri tekrar yapacağız.
+
+592
+00:59:03,199 --> 00:59:05,179
+Aynı işlemleri tekrar yapacağız.
+
+593
+00:59:06,440 --> 00:59:13,199
+Ve bu küme merkezlerini Centroid 1, Centroid 2 olarak aldım.
+
+594
+00:59:13,519 --> 00:59:21,639
+Birden 7'ye kadar tüm örneklerin bu küme merkezlerinin olan uzaklıklarını yazdım bu tabloya.
+
+595
+00:59:22,079 --> 00:59:30,179
+Tabloda gördüğümüz uzaklıklarda mesela birinci sample birinci küme merkezine daha yakın.
+
+596
+00:59:30,400 --> 00:59:32,500
+O yüzden birinci kümenin elemanıdır diyorum.
+
+597
+00:59:32,699 --> 00:59:34,360
+Yani oraya esayene diyorum bunu.
+
+598
+00:59:35,159 --> 00:59:41,880
+İkinci sample yine bakıyorum bu iki mesafeye birinci küme merkezine daha yakın.
+
+599
+00:59:41,880 --> 00:59:43,480
+O yüzden birinci küme merkezine daha yakın.
+
+600
+00:59:43,480 --> 00:59:44,699
+O yüzden birinci kümenin elemanıdır diyorum.
+
+601
+00:59:45,059 --> 00:59:56,300
+Az önce kararsız kaldığımız üçüncü sample, hani iki kümeye de eşit mesafede çıkan bu sample artık ikinci küme merkezine daha yakın çıkıyor arkadaşlar.
+
+602
+00:59:57,420 --> 01:00:00,119
+Ve böylece ikinci kümenin elemanı oluyor.
+
+603
+01:00:01,679 --> 01:00:10,739
+Diğer sample'larda benzer şekilde hep ikinci kümeye daha yakın çıktığı için ikinci kümenin elemanı olarak atanıyor.
+
+604
+01:00:11,099 --> 01:00:13,079
+Şimdi ne var elimizde?
+
+605
+01:00:13,480 --> 01:00:17,000
+Gördüğünüz gibi birinci kümeye ait iki tane sample var.
+
+606
+01:00:17,420 --> 01:00:21,800
+Bu cluster one.
+
+607
+01:00:22,860 --> 01:00:26,699
+İkinci kümeye ait elimizde beş tane sample var.
+
+608
+01:00:29,739 --> 01:00:33,280
+İkinci kümenin beş tane elemanı var.
+
+609
+01:00:33,860 --> 01:00:39,519
+Bu yeni küme elemanları ile tekrar bir küme merkezi hesaplanıyor.
+
+610
+01:00:39,519 --> 01:00:45,519
+Yeni hesaplanan küme merkezi M1 küme merkezi ve M2 küme merkezi.
+
+611
+01:00:45,679 --> 01:00:52,760
+Yeni küme merkezinin koordinatlarını bu sample'ların koordinatları üzerinden hesaplanıyor.
+
+612
+01:00:53,820 --> 01:01:09,699
+Ve bu yeni küme merkezleriyle tekrar yedi tane sample'ın bu küme merkezlerine olan uzaklıkları hesaplanıyor.
+
+613
+01:01:09,699 --> 01:01:23,409
+Ve bakın burada ilk iki sample'ın birinci kümenin elemanı olduğunu, beş tane sample'ın da ikinci kümenin elemanı olduğunu görüyoruz.
+
+614
+01:01:23,489 --> 01:01:23,949
+Yani ne olur?
+
+615
+01:01:23,949 --> 01:01:24,289
+Ne oldu?
+
+616
+01:01:25,130 --> 01:01:29,349
+Sample'lar ait oldukları kümeleri değiştirmediler.
+
+617
+01:01:31,469 --> 01:01:34,590
+Burada there is no change in the clusters diyor.
+
+618
+01:01:35,389 --> 01:01:37,550
+Kümelerde herhangi bir değişiklik olmadı.
+
+619
+01:01:37,730 --> 01:01:40,190
+Küme merkezleri artık sabitlendi.
+
+620
+01:01:42,409 --> 01:01:46,510
+Ve iterasyon sonlandı.
+
+621
+01:01:47,349 --> 01:01:54,809
+Birinci kümede iki tane sample, ikinci kümede beş tane sample olacak şekilde yapı oluştu.
+
+622
+01:01:54,809 --> 01:01:55,809
+Bunu düzlemde...
+
+623
+01:01:56,510 --> 01:02:10,449
+Çizip bakacak olursak, işte bizim birinci ve ikinci sample'larımızdan oluşan birinci kümemiz, üçüncü sample buradaydı.
+
+624
+01:02:10,449 --> 01:02:23,409
+Efendim şu dördüncü sample'ımızdı, şu beşti galiba, bu altıncı sample, şu da yedinci sample olması lazım.
+
+625
+01:02:23,909 --> 01:02:28,389
+Bunlardan oluşan iki tane kümeyi burada oluşturmuş olduk.
+
+626
+01:02:28,469 --> 01:02:29,469
+Bu kümelerin merkezleri...
+
+627
+01:02:29,489 --> 01:02:44,400
+Bu kümelerin merkezleri, şunun merkezi bu iki sample'ın ortalaması olduğu için M1 küme merkezi nihayet durumda.
+
+628
+01:02:44,880 --> 01:02:53,420
+Bu beş tane sample'ın ortalaması olan noktada yaklaşık şuralarda bir yerde çıkar diye tahmin ediyorum.
+
+629
+01:02:53,900 --> 01:02:57,760
+M2 küme merkezini gösterecek.
+
+630
+01:02:58,719 --> 01:03:03,760
+Evet, K-Means Clustering yöntemini bu şekilde hızlıca...
+
+631
+01:03:04,320 --> 01:03:05,880
+Anlatmış olduk.
+
+632
+01:03:09,780 --> 01:03:11,559
+Kolay bir yöntem, dediğim gibi.
+
+633
+01:03:15,469 --> 01:03:18,530
+Hızlıca anlattım.
+
+634
+01:03:18,630 --> 01:03:21,409
+Var mı sormak istediğiniz bir şey? Ara vereceğim şimdi.
+
+635
+01:03:26,800 --> 01:03:31,719
+Herhangi bir soru yok. Peki, o zaman bir on dakika ara.
+
+636
+01:16:50,670 --> 01:16:52,710
+Evet arkadaşlar, merhaba tekrar.
+
+637
+01:16:53,430 --> 01:16:55,369
+Kaldığımız yerden devam edeceğiz.
+
+638
+01:16:56,989 --> 01:16:59,470
+Hazır mısınız beni dinlemeye?
+
+639
+01:16:59,470 --> 01:17:01,829
+Kimler bilgisayarının başında acaba?
+
+640
+01:17:05,010 --> 01:17:08,470
+Onur. İlk el kaldıran. Teşekkür ederim, [öğrenci].
+
+641
+01:17:08,470 --> 01:17:10,470
+Bekliyordum hocam açıkçası.
+
+642
+01:17:10,470 --> 01:17:18,649
+Evet, 49 kişi şu anda derse bağlı görünüyor. 25'i zor bulduk. 25 kişi el kaldırdı.
+
+643
+01:17:18,649 --> 01:17:25,109
+28, tamam. Çok teşekkür ediyorum burada olduğunuz için.
+
+644
+01:17:25,109 --> 01:17:29,470
+İnanın siz kazanacaksınız. İyi dinleyin. Çok güzel şeyler geliyor.
+
+645
+01:17:29,470 --> 01:17:32,810
+Expectation Maximization'ı hazırladım.
+
+646
+01:17:32,810 --> 01:17:34,810
+Hemen onu da size bu dersin...
+
+647
+01:17:35,010 --> 01:17:38,380
+...sonunda anlatacağım.
+
+648
+01:17:38,380 --> 01:17:42,979
+Şimdi, neredeyiz?
+
+649
+01:17:42,979 --> 01:17:48,979
+Şu Expectation Maximization'ı gönderdik.
+
+650
+01:17:48,979 --> 01:17:50,979
+Önce bu bölümü bitirelim.
+
+651
+01:17:50,979 --> 01:18:07,090
+Aynı örnek için...
+
+652
+01:18:07,090 --> 01:18:13,090
+...az önce yaptığımız örnekte K'yı 2 seçerek işlem yapmıştık.
+
+653
+01:18:13,090 --> 01:18:17,090
+Diyor ki, K'yı 2 değil de 3 seçsek ne olurdu? diye soruyor.
+
+654
+01:18:17,090 --> 01:18:19,090
+Ve bunun için...
+
+655
+01:18:19,090 --> 01:18:21,090
+...ilk üç örneği...
+
+656
+01:18:21,090 --> 01:18:23,090
+...ilk kültürde...
+
+657
+01:18:23,090 --> 01:18:25,090
+...küme merkezleri olarak alıyor. Yani...
+
+658
+01:18:25,090 --> 01:18:27,090
+...biri...
+
+659
+01:18:27,090 --> 01:18:33,090
+...birinci küme merkezi olarak alıyor. İkinci sample'ı ikinci küme merkezi olarak...
+
+660
+01:18:33,090 --> 01:18:37,090
+...üçüncü sample'ı da üçüncü küme merkezi olarak alıyor ve...
+
+661
+01:18:37,090 --> 01:18:39,090
+...tüm örneklerin bu...
+
+662
+01:18:39,090 --> 01:18:47,090
+...yeni küme merkezlerine olan uzaklıklarını tekrar hesaplıyor ve bunun üzerinden...
+
+663
+01:18:47,090 --> 01:18:49,090
+...bir değerlendirme yapıyor.
+
+664
+01:18:49,090 --> 01:18:51,090
+Zaten ilk üç sample kendi...
+
+665
+01:18:51,090 --> 01:18:55,090
+...kendilerine...
+
+666
+01:18:55,090 --> 01:18:57,090
+...en yakın çıkacağı için ait oldukları...
+
+667
+01:18:57,090 --> 01:18:59,090
+...sınıflar belli.
+
+668
+01:18:59,090 --> 01:19:01,090
+Dörtten yediye kadar olan tüm örneklerin...
+
+669
+01:19:01,090 --> 01:19:03,090
+...ise en küçük...
+
+670
+01:19:03,090 --> 01:19:05,090
+...mesafeli...
+
+671
+01:19:05,090 --> 01:19:07,090
+...olduğu...
+
+672
+01:19:07,090 --> 01:19:09,090
+...sınıf küme merkezi...
+
+673
+01:19:09,090 --> 01:19:11,090
+...üçüncü küme olduğu için...
+
+674
+01:19:11,090 --> 01:19:13,090
+...onlar üçüncü kümeye ait çıkıyor.
+
+675
+01:19:13,090 --> 01:19:15,090
+Ve böylece...
+
+676
+01:19:15,090 --> 01:19:17,090
+...birinci küme merkezimiz...
+
+677
+01:19:17,090 --> 01:19:19,090
+...değişmedi.
+
+678
+01:19:19,090 --> 01:19:21,090
+İkinci küme merkezi...
+
+679
+01:19:21,090 --> 01:19:23,090
+...değişmedi ama üçüncü kümenin...
+
+680
+01:19:23,090 --> 01:19:25,090
+...artık bir tane değil...
+
+681
+01:19:25,090 --> 01:19:27,090
+...beş tane...
+
+682
+01:19:27,090 --> 01:19:29,090
+...sample'ı var içinde...
+
+683
+01:19:29,090 --> 01:19:31,090
+...üye olarak. Bu...
+
+684
+01:19:31,090 --> 01:19:33,090
+...beş tane...
+
+685
+01:19:33,090 --> 01:19:35,090
+...sample'ın ortalamasını alarak...
+
+686
+01:19:35,090 --> 01:19:37,090
+...üçüncü küme için yeni küme merkezi...
+
+687
+01:19:37,090 --> 01:19:39,090
+...buluyor. Ve...
+
+688
+01:19:39,090 --> 01:19:41,090
+...bu iterasyonda...
+
+689
+01:19:41,090 --> 01:19:43,090
+...tekrar her örneğin...
+
+690
+01:19:43,090 --> 01:19:45,090
+...bu küme merkezlerine olan uzaklıklarına...
+
+691
+01:19:45,090 --> 01:19:47,090
+...bakarak...
+
+692
+01:19:47,090 --> 01:19:49,090
+...birinci sample birinci kümeye...
+
+693
+01:19:49,090 --> 01:19:51,090
+...ait. İkinci sample...
+
+694
+01:19:51,090 --> 01:19:53,090
+...ikinci kümeye ait.
+
+695
+01:19:53,090 --> 01:19:55,090
+Üçten yediye kadar olan tüm...
+
+696
+01:19:55,090 --> 01:19:57,090
+...sample'lar ise üçüncü...
+
+697
+01:19:57,090 --> 01:19:59,090
+...kümeye ait çıkıyor. Yani...
+
+698
+01:19:59,090 --> 01:20:01,090
+...küme merkezleri orada...
+
+699
+01:20:01,090 --> 01:20:03,090
+...değişmiyor.
+
+700
+01:20:03,090 --> 01:20:05,090
+O nedenle üç kümeye...
+
+701
+01:20:05,090 --> 01:20:07,090
+...ayırmak gerektiğinde...
+
+702
+01:20:07,090 --> 01:20:09,090
+...bu dataseti...
+
+703
+01:20:09,090 --> 01:20:11,090
+...kümeler...
+
+704
+01:20:11,090 --> 01:20:13,090
+...burada gördüğümüz gibi...
+
+705
+01:20:13,090 --> 01:20:15,090
+...oluyor üç küme için.
+
+706
+01:20:15,090 --> 01:20:19,260
+Evet...
+
+707
+01:20:19,260 --> 01:20:21,260
+...burada bir...
+
+708
+01:20:21,260 --> 01:20:23,260
+...yeni örnek var.
+
+709
+01:20:23,260 --> 01:20:25,260
+...
+
+710
+01:20:25,260 --> 01:20:27,260
+...
+
+711
+01:20:27,260 --> 01:20:29,260
+...
+
+712
+01:20:29,260 --> 01:20:31,260
+...
+
+713
+01:20:31,260 --> 01:20:33,260
+...
+
+714
+01:20:33,260 --> 01:20:35,260
+...
+
+715
+01:20:35,260 --> 01:20:37,260
+...
+
+716
+01:20:37,260 --> 01:20:39,260
+...
+
+717
+01:20:39,260 --> 01:20:41,260
+...
+
+718
+01:20:41,260 --> 01:20:43,260
+...
+
+719
+01:20:43,260 --> 01:20:45,260
+...
+
+720
+01:20:45,260 --> 01:20:47,260
+...
+
+721
+01:20:47,260 --> 01:20:49,260
+...
+
+722
+01:20:49,260 --> 01:20:51,260
+...
+
+723
+01:20:51,260 --> 01:20:53,260
+...
+
+724
+01:20:53,260 --> 01:20:55,260
+...
+
+725
+01:20:55,260 --> 01:20:57,260
+...
+
+726
+01:20:57,260 --> 01:20:59,260
+...
+
+727
+01:20:59,260 --> 01:21:01,260
+...
+
+728
+01:21:01,260 --> 01:21:03,260
+...
+
+729
+01:21:03,260 --> 01:21:05,260
+...
+
+730
+01:21:05,260 --> 01:21:07,260
+...
+
+731
+01:21:07,260 --> 01:21:09,260
+...
+
+732
+01:21:09,260 --> 01:21:11,260
+...
+
+733
+01:21:11,260 --> 01:21:13,260
+...
+
+734
+01:21:13,260 --> 01:21:15,260
+...
+
+735
+01:21:15,260 --> 01:21:17,260
+...
+
+736
+01:21:17,260 --> 01:21:19,260
+...
+
+737
+01:21:19,260 --> 01:21:27,319
+K-Means Clustering'i kodlamaya yönelik nasıl yaklaşılması gerektiğini göstermesi açısından güzel bir örnek.
+
+738
+01:21:28,600 --> 01:21:32,920
+Birinci adım, biliyorsunuz küme merkezleri seçiliyordu.
+
+739
+01:21:32,920 --> 01:21:39,039
+Diyor ki birinci sample'ı birinci küme merkezi, ikinciyi de ikinci küme merkezi aldık.
+
+740
+01:21:39,939 --> 01:21:43,920
+İsterseniz yine sample'ları bir not alın, kenara yazın.
+
+741
+01:21:43,920 --> 01:21:47,279
+Neydi? Sample'ların koordinatları.
+
+742
+01:21:49,479 --> 01:22:00,140
+Birinci sample 1'e 1, ikinci sample 2'ye 1, üçüncü sample 4'e 3, dördüncü sample 5'e 4 değerlerini almış.
+
+743
+01:22:01,199 --> 01:22:06,039
+Şimdi bu data set'te ilk iki sample'ı küme merkezi olarak aldı.
+
+744
+01:22:06,319 --> 01:22:10,239
+Burada grafikte yıldızla işaretlemiş bunları görüyorsunuz.
+
+745
+01:22:12,020 --> 01:22:13,899
+Toplamda zaten 4 tane.
+
+746
+01:22:13,920 --> 01:22:14,960
+Bir tane sample var.
+
+747
+01:22:16,579 --> 01:22:18,920
+Nasıl işleyeceğiz? Ona bakacak olursak.
+
+748
+01:22:20,039 --> 01:22:28,159
+Diyor ki öklit mesafesi kullanalım ve distance'ları bir matriste gösterelim.
+
+749
+01:22:28,720 --> 01:22:38,920
+Burada D0 dediği birinci iterasyondaki ya da iterasyon 0 demiş, sıfırıncı iterasyondaki distance'ları gösteriyor.
+
+750
+01:22:38,920 --> 01:22:42,140
+Yani şöyle, birinci satır.
+
+751
+01:22:42,140 --> 01:22:51,640
+Birinci küme merkezine olan uzaklıkları, ikinci satır ise ikinci küme merkezine olan uzaklıkları gösteriyor.
+
+752
+01:22:52,180 --> 01:22:54,840
+Zaten toplamda 4 tane sample vardı.
+
+753
+01:22:55,899 --> 01:23:03,720
+Yani D matrisi, D0 matrisi, 2 satır 4'ünden oluşuyor.
+
+754
+01:23:03,979 --> 01:23:07,260
+2 neyi gösteriyor? Küme sayısını gösteriyor.
+
+755
+01:23:07,260 --> 01:23:12,119
+4 neyi gösteriyor? 4 de sample sayısını gösteriyor.
+
+756
+01:23:12,239 --> 01:23:14,220
+Veri setinde 4 tane sample var.
+
+757
+01:23:14,640 --> 01:23:19,859
+Bu sample'ların her birinin birinci ve ikinci küme merkezlerine olan uzaklıkları.
+
+758
+01:23:21,819 --> 01:23:25,180
+Buna göre bir D0 matrisi oluşturuyor.
+
+759
+01:23:25,279 --> 01:23:27,359
+D0 matrisinde ben neye bakacağım?
+
+760
+01:23:27,819 --> 01:23:34,779
+Her sample'ın hangi kümeye daha yakın olduğuna ve hangi kümeye ait olduğuna bakacağım.
+
+761
+01:23:34,779 --> 01:23:39,939
+Mesela birinci sample için en küçük sayı bu.
+
+762
+01:23:39,939 --> 01:23:44,760
+İkinci sample zaten küme merkezleri kendileri alındığı için bu.
+
+763
+01:23:45,579 --> 01:23:49,720
+Üçüncü sample ikinci kümeye daha yakın.
+
+764
+01:23:50,319 --> 01:23:58,279
+Dördüncü sample yine ikinci kümeye daha yakın olduğunu görebiliyoruz.
+
+765
+01:23:59,079 --> 01:24:02,359
+Bu hesapladığı öklit mesafeleri üzerinden.
+
+766
+01:24:02,359 --> 01:24:09,380
+Sonra az önce oluşturduğumuz distance matristen G0 dedi.
+
+767
+01:24:09,939 --> 01:24:15,380
+Bir grup matrisi dediği bir matris oluşturuyor.
+
+768
+01:24:16,100 --> 01:24:26,979
+Bu grup matrisi aslında her sample'ın hangi kümenin elemanıysa onunla ilgili gözü 1 yapıyor.
+
+769
+01:24:27,119 --> 01:24:28,420
+Diğerlerini 0 yapıyor.
+
+770
+01:24:28,420 --> 01:24:33,180
+Yani burada birinci sample için C1 kümesine ait çıkıyor.
+
+771
+01:24:33,319 --> 01:24:36,239
+İkinci sample C2 kümesine ait.
+
+772
+01:24:37,199 --> 01:24:39,920
+Üç ve dördüncü sample'larda grup 2'ye ait.
+
+773
+01:24:39,939 --> 01:24:41,699
+Orada 1 değerini almış.
+
+774
+01:24:42,100 --> 01:24:42,479
+Ne dedim?
+
+775
+01:24:42,579 --> 01:24:50,899
+Bunun amacı aslında biraz kodlamaya yardımcı olacak bir matris oluşturuyor.
+
+776
+01:24:51,000 --> 01:24:52,060
+Grup matrisi dedi.
+
+777
+01:24:52,600 --> 01:25:01,939
+Bunun üzerinden giderek yeni küme merkezlerini falan hesaplarken bu matristen faydalanarak hesaplıyor.
+
+778
+01:25:05,119 --> 01:25:09,920
+Birinci iterasyonda işte artık yeni küme merkezlerimiz bunlar.
+
+779
+01:25:09,920 --> 01:25:11,920
+Bu yeni küme merkezlerimiz.
+
+780
+01:25:12,279 --> 01:25:16,119
+Bu küme merkezleriyle D1 distance matrisini oluşturuyor.
+
+781
+01:25:16,880 --> 01:25:20,939
+D1 dediği matris, birinci iterasyondaki matris.
+
+782
+01:25:21,140 --> 01:25:32,039
+Yine 2'ye 4, 2 tane küme merkezine 4 tane sample'ın bu küme merkezlerine olan uzaklıklarını gösteren bir distance matrisi hazırlıyor.
+
+783
+01:25:32,619 --> 01:25:38,479
+Yine distance matris de şu iki sayı içerisinde hangisinin en küçük olduğuna bakıyoruz.
+
+784
+01:25:38,479 --> 01:25:46,420
+En küçük burası.
+
+785
+01:25:46,420 --> 01:25:49,359
+Burada da en küçük burası.
+
+786
+01:25:50,039 --> 01:25:53,119
+Dolayısıyla buradan ne çıkartacak?
+
+787
+01:25:53,300 --> 01:25:56,760
+Bir G1 grup matrisi oluşturacak.
+
+788
+01:25:57,359 --> 01:26:05,159
+Grup matrisinde 1, 0, 1, 0, 0, 1, 0, 1 olacak.
+
+789
+01:26:06,680 --> 01:26:10,619
+Her sample'ın hangi sınıfa ait olduğunu gösteriyor.
+
+790
+01:26:10,979 --> 01:26:12,880
+Hangi gruba ait olduğunu gösteriyor.
+
+791
+01:26:12,880 --> 01:26:15,920
+Bu G1 grup matrisini.
+
+792
+01:26:16,420 --> 01:26:26,180
+Oluşturduktan sonra yine bu sample'ların koordinat bilgileri de elimde olduğu için buradan yeni ortalamaları hesaplıyorum.
+
+793
+01:26:26,819 --> 01:26:34,779
+Ve iterasyon sonunda bu küme merkezleri bakın burada gördüğümüz gibi çıkıyor.
+
+794
+01:26:34,979 --> 01:26:36,819
+İki kümeye ayırdığımızda.
+
+795
+01:26:40,399 --> 01:26:44,199
+Bir iterasyon daha çalıştırdığımızda yer değiştirmediğini görüyoruz.
+
+796
+01:26:44,199 --> 01:26:48,159
+Ve iterasyondan çıkması gerektiğini söylüyoruz.
+
+797
+01:26:48,260 --> 01:26:49,020
+Yani G2.
+
+798
+01:26:49,140 --> 01:26:54,819
+G1'e eşit olduğu için iterasyonu sonlandırıyoruz.
+
+799
+01:26:55,439 --> 01:26:58,659
+Çalışma mantığını böyle özetleyebiliriz.
+
+800
+01:27:04,100 --> 01:27:09,439
+Şimdi burada güzel bir değerlendirme slide'ı var.
+
+801
+01:27:09,899 --> 01:27:14,819
+Diyor ki K-Means Clustering algoritmasının zayıf yönleri nelerdir?
+
+802
+01:27:15,420 --> 01:27:16,399
+Biraz onlara bakalım.
+
+803
+01:27:24,560 --> 01:27:26,560
+Eğer elimizdeki veri setinde.
+
+804
+01:27:27,039 --> 01:27:27,960
+Örnek sayısı.
+
+805
+01:27:28,159 --> 01:27:40,109
+Azsa başlangıç küme merkezlerini seçerken bir random seçim yapıyoruz ya.
+
+806
+01:27:40,649 --> 01:27:48,970
+Bu seçim nihai küme yapısını değiştirebilir diyor.
+
+807
+01:27:48,970 --> 01:27:55,970
+Yani benim başlangıç küme merkezi olarak hangi noktaları seçtiğim.
+
+808
+01:27:55,970 --> 01:28:02,609
+Kümelerin dağılımını, nihai dağılımını değiştirebiliyor.
+
+809
+01:28:02,829 --> 01:28:04,869
+Bu bir dezavantaj aslına bakarsanız.
+
+810
+01:28:04,869 --> 01:28:09,109
+Ama bu genelde az sayıda örnek olduğunda karşılaştığımız bir sorun.
+
+811
+01:28:09,689 --> 01:28:21,869
+Fazla sayıda örnek varsa elimizde aslında yine ortak bir karar, bir kümelenme yapısı çıkıyor.
+
+812
+01:28:23,050 --> 01:28:25,869
+İkinci önemli zayıf noktası.
+
+813
+01:28:25,970 --> 01:28:28,970
+Küme sayısını bilmeniz gerekiyor.
+
+814
+01:28:30,189 --> 01:28:36,270
+Yani problemi eğer tanımıyorsanız veriyi kaç tane kümeye ayıracağınızı bilemeyebilirsiniz.
+
+815
+01:28:36,449 --> 01:28:43,149
+O yüzden buradaki küme sayısının seçimi aslında biraz zor bir karar.
+
+816
+01:28:44,170 --> 01:28:51,130
+Ama çalıştığınız alan işte Customer Segmentation ise diyebilirsiniz ki ben veriyi 3 tane kümeye böleceğim.
+
+817
+01:28:51,289 --> 01:28:53,989
+Böyle yani ben bu şekilde seçtim diyebiliyorsunuz.
+
+818
+01:28:53,989 --> 01:28:55,770
+Ama her uygulamada böyle.
+
+819
+01:28:55,970 --> 01:28:59,010
+Bir karar vermek kolay değil.
+
+820
+01:28:59,189 --> 01:29:08,130
+O yüzden K sayısının ne seçileceğine karar vermek için kullanılan bazı değerlendirme kriterleri var.
+
+821
+01:29:09,409 --> 01:29:12,590
+Kümelerin saflık derecesi vesaire gibi.
+
+822
+01:29:13,789 --> 01:29:19,710
+Partition Index dediğimiz P, I değerini hesaplamak gibi değişik çözümler kullanılıyor.
+
+823
+01:29:19,710 --> 01:29:23,550
+Yani farklı K değerleri için algoritma çalıştırılıyor.
+
+824
+01:29:23,670 --> 01:29:25,149
+K2 için çalıştırılıyor.
+
+825
+01:29:25,229 --> 01:29:25,649
+3 için.
+
+826
+01:29:25,770 --> 01:29:25,949
+4 için.
+
+827
+01:29:25,970 --> 01:29:30,970
+Ve yeni oluşan her küme yapısı için bir Partition Index hesaplanıyor.
+
+828
+01:29:31,750 --> 01:29:33,970
+Ve bunlar üzerinden bir seçim yapılabiliyor.
+
+829
+01:29:34,850 --> 01:29:39,010
+Ama dediğim gibi bu yöntemin zayıf taraflarından biri.
+
+830
+01:29:47,170 --> 01:29:54,789
+Elimizdeki veri etiketli olmadığı için, yani hangi sınıfa ait olduğunu bilmediğimiz için
+
+831
+01:29:54,789 --> 01:29:57,630
+We never know the real cluster diyor.
+
+832
+01:29:57,630 --> 01:30:08,710
+Using the same data, because if it is inputted in a different order, it may produce different clusters if the number of data is few.
+
+833
+01:30:08,710 --> 01:30:23,840
+Yine aynı şey, elimizdeki veri sayısının, sample sayısının az olmasından dolayı nihayi çıkan kümelere baktığımız zaman,
+
+834
+01:30:24,399 --> 01:30:28,979
+neyi doğru yaptık, neyi yanlış yaptık buna karar vermek çok kolay.
+
+835
+01:30:28,979 --> 01:30:29,079
+Neyi doğru yaptık, neyi yanlış yaptık buna karar vermek çok kolay.
+
+836
+01:30:29,079 --> 01:30:33,359
+Kolay değil, çünkü etiketsiz bir veriyle çalışıyoruz.
+
+837
+01:30:34,180 --> 01:30:36,500
+Bu önemli problemlerden biri.
+
+838
+01:30:38,020 --> 01:30:40,720
+It is sensitive to initial condition demiş.
+
+839
+01:30:40,899 --> 01:30:46,060
+Yine aynı şey, yani rastgele küme merkezi seçiyor olmak,
+
+840
+01:30:46,899 --> 01:30:53,520
+nihayi kümelerin farklı olmasına, farklı çıkmasına sebep olabilir.
+
+841
+01:30:53,840 --> 01:30:55,460
+Bunu az önce de konuştuk.
+
+842
+01:30:55,460 --> 01:31:02,739
+Ama tüm bu dezavantajları,
+
+843
+01:31:02,739 --> 01:31:12,439
+rağmen makine öğrenmesinde ve pek çok alanda yaygın kullanılan bir yöntem,
+
+844
+01:31:12,840 --> 01:31:15,859
+veriyi kümelemek için yaygın kullanılan bir yöntem.
+
+845
+01:31:16,399 --> 01:31:26,439
+Burada pattern recognition, artificial intelligence, image processing ya da computer vision gibi alanlarda
+
+846
+01:31:26,439 --> 01:31:31,720
+k-means clustering algoritmasının kullanıldığından bahsedilmiş.
+
+847
+01:31:36,229 --> 01:31:36,329
+Evet.
+
+848
+01:31:36,350 --> 01:31:43,939
+Kümeleme ile ilgili bana sormak istediğiniz bir şey var mı?
+
+849
+01:31:45,239 --> 01:31:45,600
+Hocam.
+
+850
+01:31:46,500 --> 01:31:46,939
+Buyurun.
+
+851
+01:31:47,439 --> 01:31:49,460
+Etiketsiz veri üzerinde çalıştığımız için,
+
+852
+01:31:49,539 --> 01:31:55,699
+peki biz k-means kullanarak kümeleme yaptığımız veri seti üzerinde sistem başarısını nasıl ölçebiliriz?
+
+853
+01:31:58,199 --> 01:32:01,960
+Şöyle, aslında etiketsiz veri kullanıyoruz dedik ama
+
+854
+01:32:01,960 --> 01:32:11,239
+UCI repository sayfasında da göreceksiniz.
+
+855
+01:32:11,239 --> 01:32:13,239
+Aslında genelde yöntemlerin başarısını,
+
+856
+01:32:13,840 --> 01:32:16,840
+etiketi karşılaştırırken etiketli verilerden faydalanıyoruz.
+
+857
+01:32:16,840 --> 01:32:19,840
+Ama etiket bilgisini saklı tutuyoruz.
+
+858
+01:32:19,840 --> 01:32:23,840
+Tüm kümeleme işlemi tamamlandıktan sonra,
+
+859
+01:32:23,840 --> 01:32:28,840
+oluşan kümelerle sınıf etiketlerini karşılaştırıyoruz.
+
+860
+01:32:28,840 --> 01:32:33,840
+Ne kadarını doğru, ne kadarını yanlış kümelediğimizi de orada görebiliyoruz.
+
+861
+01:32:33,840 --> 01:32:39,840
+Yani yine sınıf etiketli veri üzerinden gidiyoruz açıkçası.
+
+862
+01:32:39,840 --> 01:32:40,840
+Anladım, teşekkür ederim.
+
+863
+01:32:40,840 --> 01:32:43,340
+Belki size VK'yı çalıştırabilirseniz,
+
+864
+01:32:43,340 --> 01:32:47,340
+çalıştırarak burada kısa bir şey de gösterebilirim.
+
+865
+01:32:47,340 --> 01:32:48,840
+Tamam, öyle yapalım.
+
+866
+01:32:48,840 --> 01:32:50,340
+Hemen VK'yı açayım.
+
+867
+01:32:50,340 --> 01:32:54,340
+O değerlendirme işlemi noktası çok önemli.
+
+868
+01:32:59,029 --> 01:33:00,029
+Kim sormuştu soruyu?
+
+869
+01:33:00,029 --> 01:33:02,029
+Özür diliyorum, ben ismi göremedim.
+
+870
+01:33:02,029 --> 01:33:03,029
+Mesut hocam.
+
+871
+01:33:03,029 --> 01:33:04,029
+Onur.
+
+872
+01:33:04,029 --> 01:33:12,029
+Onur, kümeleme işlemi sonlanana kadar sınıf etiketi bilgisini gizli tutuyoruz dedik, kullanmıyoruz dedik.
+
+873
+01:33:12,029 --> 01:33:14,029
+Zaten k-means algoritmasını gördünüz.
+
+874
+01:33:14,029 --> 01:33:16,029
+Sınıf bilgisine hiç ihtiyaç duymuyoruz.
+
+875
+01:33:16,029 --> 01:33:30,029
+Tüm kümeleme işlemi bittikten sonra oluşan kümelerle gerçek küme etiketlerini karşılaştırarak ne kadarını doğru, ne kadarını yanlış kümelediğimize bakabiliyoruz.
+
+876
+01:33:30,029 --> 01:33:34,029
+Şimdi küçük bir şey yapalım.
+
+877
+01:33:34,029 --> 01:33:41,029
+Size VK'yı çalıştıracağım ama VK'da kendi datasetini açabiliriz.
+
+878
+01:33:41,029 --> 01:33:45,029
+Hocam gerçekten etiketimiz yoksa?
+
+879
+01:33:45,029 --> 01:33:53,029
+Yöntemin başarısı zaten diğer datasetlerle kıyaslandığı için şey değil.
+
+880
+01:33:53,029 --> 01:34:03,279
+Yani hani bu işe yarar mı yaramaz mı noktasında bir değerlendirme yapamazsınız.
+
+881
+01:34:03,279 --> 01:34:11,279
+Ama oluşan kümeleri doğru varsayarak onlara bir etiket atama işi yapabilirsiniz.
+
+882
+01:34:13,279 --> 01:34:15,279
+Bunun için mesela yine F-score, accuracy.
+
+883
+01:34:16,279 --> 01:34:19,279
+Purity gibi metrikleri kullanabiliriz değil mi yine?
+
+884
+01:34:19,279 --> 01:34:21,279
+Hayır, hayır kullanamazsınız.
+
+885
+01:34:21,279 --> 01:34:25,279
+Böyle bir şey hesaplayamıyorsunuz sınıf etiketi olmadığı için.
+
+886
+01:34:25,279 --> 01:34:32,279
+Sadece hani o küme merkezlerine uzaklıktan bir cost hesapladığımızdan bahsetmiştim.
+
+887
+01:34:32,279 --> 01:34:34,279
+Hatırlıyor musunuz?
+
+888
+01:34:34,279 --> 01:34:36,279
+Birazdan tekrar göstereceğim.
+
+889
+01:34:36,279 --> 01:34:40,279
+O cost bir ölçü olarak kullanılabilir.
+
+890
+01:34:40,279 --> 01:35:00,029
+Şimdi size VK'da bir küçük örnek çalıştırayım.
+
+891
+01:35:00,029 --> 01:35:03,029
+Dedim VK kullandınız mı daha önce?
+
+892
+01:35:03,029 --> 01:35:26,600
+Daha önce size bahsettiğim iris çiçeği ile ilgili örneği açacağım.
+
+893
+01:35:26,600 --> 01:35:28,600
+Peki.
+
+894
+01:35:28,600 --> 01:35:30,600
+VK'yı açtım.
+
+895
+01:35:30,600 --> 01:35:34,600
+Veri setini de ekrana getirdim.
+
+896
+01:35:34,600 --> 01:35:36,600
+Bu VK ekranı.
+
+897
+01:35:36,600 --> 01:35:40,600
+VK bir data mining tool'u.
+
+898
+01:35:40,600 --> 01:35:45,600
+Şeyde University of Waikato.
+
+899
+01:35:45,600 --> 01:35:49,600
+Yeni Zelanda'da bir üniversitede geliştirilmiş.
+
+900
+01:35:49,600 --> 01:35:51,600
+Java'da geliştirilmiş.
+
+901
+01:35:51,600 --> 01:35:54,600
+Açık kaynak kodlu bir yazılım.
+
+902
+01:35:54,600 --> 01:36:11,600
+Ben bu VK ekranında şu an open file diyerek bir kendi data folderinin altında yer alan ve UCI repository sayfasında olan data setler var bakın burada.
+
+903
+01:36:11,600 --> 01:36:12,600
+İşte ne var?
+
+904
+01:36:12,600 --> 01:36:14,600
+Rebris cancer var.
+
+905
+01:36:14,600 --> 01:36:16,600
+Diabets var.
+
+906
+01:36:16,600 --> 01:36:18,600
+Glass var.
+
+907
+01:36:18,600 --> 01:36:19,600
+Iris var.
+
+908
+01:36:19,600 --> 01:36:20,600
+Ben Iris'i açtım.
+
+909
+01:36:20,600 --> 01:36:23,600
+Iris'i daha önce konuştuk çünkü sizinle biliyorsunuz.
+
+910
+01:36:23,600 --> 01:36:38,600
+Iris data setinde size 150 tane sample olduğunu, bunun içerisinde 5 tane öz nitelik olduğunu yani 4 öz nitelik artı bir class toplam 5 tane sütun olduğunu söylemiştim.
+
+911
+01:36:38,600 --> 01:36:43,600
+Burada her bir öz niteliği ve bunların hangi aralıkta değilsin?
+
+912
+01:36:43,600 --> 01:36:45,600
+Hangi aralıkta değiştiğini?
+
+913
+01:36:45,600 --> 01:36:54,600
+Minimum, maksimum, ortalama değerlerinin standart sapmalarının ne olduğunu bu şekilde görebiliyorsunuz.
+
+914
+01:36:54,600 --> 01:37:03,600
+Sınıf bilgisi, class distribution'a baktığımızda 3 tane sınıf var.
+
+915
+01:37:03,600 --> 01:37:10,600
+Her bir sınıfta eşit miktarda 50 tane sample var.
+
+916
+01:37:10,600 --> 01:37:12,600
+Sınıfları,
+
+917
+01:37:13,600 --> 01:37:16,600
+renk kodlarıyla ayırmış.
+
+918
+01:37:16,600 --> 01:37:21,600
+Mavi, koyu mavi iris setosa sınıfı.
+
+919
+01:37:21,600 --> 01:37:24,600
+Üstüne gittiğimde gözüküyor.
+
+920
+01:37:24,600 --> 01:37:34,600
+Kırmızı iris versicolor 50 tane sample'dan oluşuyor ve turkuaz 50 tane sample'dan oluşan 3 tane sınıf var.
+
+921
+01:37:34,600 --> 01:37:38,600
+Şimdi bu sınıfları gösteren renkleri lütfen aklınızda tutun.
+
+922
+01:37:38,600 --> 01:37:42,600
+Çünkü bu aynı zamanda öz nitelikleri incelerken de,
+
+923
+01:37:42,600 --> 01:37:44,600
+ekranınıza geliyor.
+
+924
+01:37:44,600 --> 01:37:47,600
+Ve şunu söyleyebiliyoruz mesela.
+
+925
+01:37:47,600 --> 01:37:49,600
+Sepal length dediğimiz,
+
+926
+01:37:49,600 --> 01:37:54,600
+bu çanak yapraklarının uzunluğu galiba neyse.
+
+927
+01:37:54,600 --> 01:38:03,909
+Bunun değeri 4.814'den küçükse eğer,
+
+928
+01:38:03,909 --> 01:38:07,909
+16 tane sample varmış ve hepsi de mavi sınıfa aitmiş.
+
+929
+01:38:07,909 --> 01:38:12,909
+Yani birinci sınıf olarak görünen o koyu mavi sınıf.
+
+930
+01:38:12,909 --> 01:38:14,909
+Koyu mavi sınıfa aitmiş.
+
+931
+01:38:14,909 --> 01:38:17,909
+Bunların dağılımlarını görüyorsunuz öz niteliklere göre.
+
+932
+01:38:17,909 --> 01:38:25,909
+Ve baktığınızda mesela en ayırt edici öz nitelik olarak şurada çok net gözüküyor.
+
+933
+01:38:25,909 --> 01:38:33,909
+Petal length 1 ile 2.18 arasında değer aldığında,
+
+934
+01:38:33,909 --> 01:38:38,909
+50 tane sample zaten buradan otomatik ayrılıyor.
+
+935
+01:38:38,909 --> 01:38:41,909
+Ve en ayırt edici öz nitelik olarak göze çarpıyor.
+
+936
+01:38:42,909 --> 01:38:45,909
+Aynı şekilde petal width de bu öz niteliklerden,
+
+937
+01:38:45,909 --> 01:38:47,909
+ayırt edici öz niteliklerden biri.
+
+938
+01:38:47,909 --> 01:38:50,909
+Veriyi bu şekilde inceledikten sonra,
+
+939
+01:38:50,909 --> 01:38:57,909
+bu data üzerinde yapabileceğim classification ve clustering işlemleri.
+
+940
+01:38:57,909 --> 01:39:00,909
+Ben clustering işlemlerini seçtim.
+
+941
+01:39:00,909 --> 01:39:02,909
+Buradan choose dedim.
+
+942
+01:39:02,909 --> 01:39:08,909
+Ve simple k-means ile veriyi kümelemesini istedim.
+
+943
+01:39:08,909 --> 01:39:10,909
+Use training set.
+
+944
+01:39:10,909 --> 01:39:12,909
+Yani burada train set diye bir şey yok.
+
+945
+01:39:12,909 --> 01:39:21,909
+Sadece classes to cluster evaluation dediği bir seçenek var.
+
+946
+01:39:21,909 --> 01:39:23,909
+Bunu işaretlemem gerekiyor.
+
+947
+01:39:23,909 --> 01:39:25,909
+Bunun amacı şu.
+
+948
+01:39:25,909 --> 01:39:29,909
+K-means yöntemi kümeleri oluşturduktan sonra,
+
+949
+01:39:29,909 --> 01:39:32,909
+sınıf etiketlerini açıp bakacağız.
+
+950
+01:39:32,909 --> 01:39:36,909
+Ne kadarını doğru kümelemiş, ne kadarını yanlış kümelemiş.
+
+951
+01:39:36,909 --> 01:39:37,909
+Tamam.
+
+952
+01:39:37,909 --> 01:39:39,909
+Yöntem simple k-means.
+
+953
+01:39:39,909 --> 01:39:41,909
+Bir de yöntemde küme sayısını,
+
+954
+01:39:41,909 --> 01:39:42,909
+küme sayısını,
+
+955
+01:39:42,909 --> 01:39:44,909
+küme sayısını seçmem gerekiyor.
+
+956
+01:39:44,909 --> 01:39:46,909
+Number of clusters.
+
+957
+01:39:46,909 --> 01:39:51,909
+Benim açtığım, yeni açtığım sayfalar gözüküyor değil mi ekranınızda?
+
+958
+01:39:51,909 --> 01:39:53,909
+Görünüyor zaten.
+
+959
+01:39:53,909 --> 01:39:54,909
+Tamam.
+
+960
+01:39:54,909 --> 01:39:55,909
+Number of clusters'ı,
+
+961
+01:39:55,909 --> 01:40:00,909
+bizim veri setimiz üç tane kümeden oluştuğu için,
+
+962
+01:40:00,909 --> 01:40:03,909
+default değer k-means de hep ikidir.
+
+963
+01:40:03,909 --> 01:40:07,909
+Ben bunu değiştirmek için dışarıdan bunu üç yapıyorum.
+
+964
+01:40:07,909 --> 01:40:09,909
+Ve tamam dedim.
+
+965
+01:40:09,909 --> 01:40:10,909
+Start dediğimde,
+
+966
+01:40:10,909 --> 01:40:15,909
+start dediğim zaman kümeleme işlemini yaptı ve bana bir class confusion matriz üretti.
+
+967
+01:40:15,909 --> 01:40:17,909
+Nasıl üretebildi bunu?
+
+968
+01:40:17,909 --> 01:40:20,909
+Çünkü elimde etiket, sınıf etiketleri vardı.
+
+969
+01:40:20,909 --> 01:40:23,909
+Kümeleme işlemi bittikten sonra,
+
+970
+01:40:23,909 --> 01:40:30,909
+sadece oluşan kümelerin ne kadar doğru oluştuğunu görmek için etiket bilgisini açıyoruz.
+
+971
+01:40:30,909 --> 01:40:34,909
+Ve o noktada bana class confusion matriz üretebiliyor.
+
+972
+01:40:34,909 --> 01:40:38,909
+Gördüğünüz gibi class confusion matriz biraz dağınık geliyor.
+
+973
+01:40:38,909 --> 01:40:39,909
+Neden?
+
+974
+01:40:39,909 --> 01:40:40,909
+Çünkü,
+
+975
+01:40:40,909 --> 01:40:41,909
+diyor ki,
+
+976
+01:40:41,909 --> 01:40:46,909
+ben bir tane küme elde ettim diyor.
+
+977
+01:40:46,909 --> 01:40:49,909
+İçerisinde 50 tane,
+
+978
+01:40:49,909 --> 01:40:50,909
+pardon,
+
+979
+01:40:50,909 --> 01:40:51,909
+cluster 0 da,
+
+980
+01:40:51,909 --> 01:40:52,909
+şurada görüyorsunuz,
+
+981
+01:40:52,909 --> 01:40:56,909
+dikey doğrultuda bakacak olursanız,
+
+982
+01:40:56,909 --> 01:41:03,909
+cluster 0'ın içerisinde 40, 50, 61 tane sample var diyor. Bakın.
+
+983
+01:41:03,909 --> 01:41:07,909
+Sıfırıncı kümenin 61 tane sample'ı var dedi.
+
+984
+01:41:07,909 --> 01:41:08,909
+Birinci kümede 50 tane,
+
+985
+01:41:08,909 --> 01:41:12,909
+ikinci kümede 39 tane sample buldu.
+
+986
+01:41:12,909 --> 01:41:15,909
+Sonra ben bunların sınıf etiketlerine baktım.
+
+987
+01:41:15,909 --> 01:41:18,909
+61 tane sample'ın,
+
+988
+01:41:18,909 --> 01:41:25,909
+cluster 0 içerisindeki 61 tane sample'ın 47'si iris versikolormuş.
+
+989
+01:41:25,909 --> 01:41:28,909
+Sınıf etiketi atarken o zaman diyorum ki,
+
+990
+01:41:28,909 --> 01:41:32,909
+cluster 0'ın sınıf etiketi iris versikolordur.
+
+991
+01:41:32,909 --> 01:41:36,909
+Çünkü çoğunluk örnek hangi sınıftansa,
+
+992
+01:41:36,909 --> 01:41:40,909
+o kümeye o sınıfın etiketini vermem gerekiyor.
+
+993
+01:41:40,909 --> 01:41:45,909
+İkinci kümenin içerisinde 50 tane sample bulmuştu.
+
+994
+01:41:45,909 --> 01:41:46,909
+50'nin,
+
+995
+01:41:46,909 --> 01:41:49,909
+50'si de iris setosa'daymış zaten.
+
+996
+01:41:49,909 --> 01:41:52,909
+Hiç yanlış kümelenmiş örnek yok.
+
+997
+01:41:52,909 --> 01:41:54,909
+Cluster 2,
+
+998
+01:41:54,909 --> 01:41:56,909
+39 tane sample vardı.
+
+999
+01:41:56,909 --> 01:41:58,909
+Burada öyle yazıyor.
+
+1000
+01:41:58,909 --> 01:42:03,909
+Bakıyorum cluster 2'nin 36 tane sample'ı iris virginica'ymış.
+
+1001
+01:42:03,909 --> 01:42:05,909
+3 tanesi iris versikolormuş.
+
+1002
+01:42:06,909 --> 01:42:08,909
+3 taneyi yanlış kümelemiş.
+
+1003
+01:42:08,909 --> 01:42:12,909
+Ama ben cluster 2'ye bir sınıf etiketi atamak zorundayım.
+
+1004
+01:42:12,909 --> 01:42:14,909
+Ne diyeceğim?
+
+1005
+01:42:14,909 --> 01:42:17,909
+Cluster 2'nin sınıf etiketi,
+
+1006
+01:42:17,909 --> 01:42:18,909
+çoğunluk,
+
+1007
+01:42:18,909 --> 01:42:21,909
+yani 36 tanesi iris virginica olduğu için,
+
+1008
+01:42:21,909 --> 01:42:25,909
+virginica etiketini yapıştıracağım oraya.
+
+1009
+01:42:25,909 --> 01:42:29,909
+Bu işlemi yaptığında kaç tane yanlış kümelenmiş eleman var?
+
+1010
+01:42:29,909 --> 01:42:31,909
+14 tane şurada var.
+
+1011
+01:42:31,909 --> 01:42:32,909
+3 tane burada var.
+
+1012
+01:42:32,909 --> 01:42:35,909
+17 tane sample yanlış kümelenmiş.
+
+1013
+01:42:35,909 --> 01:42:36,909
+Çıkıyor.
+
+1014
+01:42:36,909 --> 01:42:41,909
+Ve bu yanlış kümelenmişlerin oranı %11'dir diyoruz.
+
+1015
+01:42:41,909 --> 01:42:45,909
+Error rate'i %11'dir diyebiliyoruz.
+
+1016
+01:42:45,909 --> 01:42:49,909
+Kümeleme ile ilgili bu küçük bir örnek.
+
+1017
+01:42:49,909 --> 01:42:56,909
+Sınıf etiketini bildiğim bir datayı sonuçta analiz etmiş oldum.
+
+1018
+01:42:56,909 --> 01:43:00,909
+Peki, soru var mı buraya kadar?
+
+1019
+01:43:00,909 --> 01:43:05,220
+Hocam sadece bir de yukarıda
+
+1020
+01:43:05,220 --> 01:43:07,220
+parametreler içerisinde maksimum iterasyon,
+
+1021
+01:43:07,220 --> 01:43:08,220
+kısmı vardı.
+
+1022
+01:43:08,220 --> 01:43:10,220
+Bunun bir önemi var mı?
+
+1023
+01:43:10,220 --> 01:43:12,220
+Mesela 500 olarak ayarlanmış da.
+
+1024
+01:43:12,220 --> 01:43:15,220
+İki türlü durma koşulu verebilirsiniz.
+
+1025
+01:43:15,220 --> 01:43:18,220
+Yani hatta üç şekilde verebilirsiniz.
+
+1026
+01:43:18,220 --> 01:43:21,220
+İterasyon sayısı verilebilir.
+
+1027
+01:43:21,220 --> 01:43:26,220
+Ama boş yere fazladan çalıştırmak anlamına da gelebilir bazen bu.
+
+1028
+01:43:26,220 --> 01:43:33,220
+Biz şey demiştik, elemanlar kümeler arasında yer değiştirmeyene kadar devam edin dedik.
+
+1029
+01:43:33,220 --> 01:43:35,220
+Mesela bu olabilir.
+
+1030
+01:43:35,220 --> 01:43:40,220
+Veya işte merkezleri olan uzaklıklar üzerinden bir distance tanımlayabiliriz.
+
+1031
+01:43:40,220 --> 01:43:43,220
+Bu da yine bir alternatif olabilir.
+
+1032
+01:43:43,220 --> 01:43:46,220
+Anladım, durma şartımız yani.
+
+1033
+01:43:46,220 --> 01:43:50,220
+Evet, durma şartını bu şekillerde girebiliyoruz.
+
+1034
+01:43:50,220 --> 01:43:57,220
+Şimdi size bir, nereye indirdim onu? Şurada.
+
+1035
+01:43:57,220 --> 01:44:03,220
+K-means-EM algoritmalarını gösteren bir doküman açacağım.
+
+1036
+01:44:03,220 --> 01:44:04,220
+Şunu kapatalım.
+
+1037
+01:44:04,220 --> 01:44:23,420
+Bu dersi biraz blog yapmayı düşünüyorum.
+
+1038
+01:44:23,420 --> 01:44:27,420
+Blog yaparsak daha verimli olacak.
+
+1039
+01:44:27,420 --> 01:44:39,220
+Bu dokümanı sanıyorum sizinle paylaşmadım.
+
+1040
+01:44:39,220 --> 01:44:41,220
+Dersten sonra paylaşacağım.
+
+1041
+01:44:41,220 --> 01:44:46,220
+Doküman da önce clusteringden bahsediyor.
+
+1042
+01:44:46,220 --> 01:44:52,220
+Sonra k-means clusteringden ve EM algoritmasından bahsediyor.
+
+1043
+01:44:52,220 --> 01:44:57,220
+Dokümanın aslında biraz dilini ve notasyonunu öğrenmek için.
+
+1044
+01:44:57,220 --> 01:45:04,220
+Problemi nasıl tarif ettiğini size anlatarak başlayacağım.
+
+1045
+01:45:04,220 --> 01:45:10,220
+Diyor ki burada, highlight'ı seçelim.
+
+1046
+01:45:10,220 --> 01:45:15,220
+Given a dataset with n points in d-dimensional space.
+
+1047
+01:45:15,220 --> 01:45:20,220
+N tane sample'mız var. D boyutlu bir uzayda çalışıyoruz.
+
+1048
+01:45:20,220 --> 01:45:24,220
+K dediğimiz bizim küme sayımızdı.
+
+1049
+01:45:24,220 --> 01:45:26,220
+K the number of clusters.
+
+1050
+01:45:27,220 --> 01:45:29,220
+To discover.
+
+1051
+01:45:29,220 --> 01:45:37,220
+Our goal is to partition the points into k groups.
+
+1052
+01:45:37,220 --> 01:45:44,220
+Bu elimizdeki n tane sample'ı k gruba bölmeye çalışıyoruz.
+
+1053
+01:45:44,220 --> 01:45:51,489
+Amacımız bu ve bu işleme clustering işlemi dedik.
+
+1054
+01:45:51,489 --> 01:46:00,159
+Kümelerimiz c1'den ck'ye kadar k küme var.
+
+1055
+01:46:00,159 --> 01:46:11,470
+Burada küme merkezi olarak tanımladığımız noktalarımız var.
+
+1056
+01:46:11,470 --> 01:46:13,470
+Centroid dedik.
+
+1057
+01:46:13,470 --> 01:46:21,470
+Bu centroid mean point of a cluster which is called centroid of the cluster.
+
+1058
+01:46:21,470 --> 01:46:27,470
+Her kümenin içindeki noktalardan ortalama alarak bir küme merkezi bulduk.
+
+1059
+01:46:27,470 --> 01:46:29,470
+Bunlara cluster centroid dedik.
+
+1060
+01:46:29,470 --> 01:46:34,470
+Cluster centroidleri mü ile gösteriyoruz.
+
+1061
+01:46:34,470 --> 01:46:36,470
+Şurada görüyorsunuz.
+
+1062
+01:46:36,470 --> 01:46:48,470
+Bu kümeleme işleminde sum of squared error dediğimiz bir score fonksiyonu tanımlanmış.
+
+1063
+01:46:48,470 --> 01:46:52,470
+Bunu az önce de tarif etmiştim size.
+
+1064
+01:46:52,470 --> 01:46:57,470
+İlk toplama sembolü i eşit birden k'ya kadar.
+
+1065
+01:46:57,470 --> 01:46:59,470
+Küme sayısı kadar.
+
+1066
+01:46:59,470 --> 01:47:02,470
+Her bir küme için tek tek yapılacak.
+
+1067
+01:47:02,470 --> 01:47:12,470
+İkinci toplama sembolünün altındaki j eşit birden ci kümesinin eleman sayısı kadar.
+
+1068
+01:47:12,470 --> 01:47:17,470
+Bakın bu sembol şeyi gösteriyor.
+
+1069
+01:47:17,470 --> 01:47:20,470
+Cardinality.
+
+1070
+01:47:20,470 --> 01:47:22,470
+Raise.
+
+1071
+01:47:22,470 --> 01:47:26,470
+C c kümesinin eleman sayısı.
+
+1072
+01:47:26,470 --> 01:47:33,470
+Yani şuradaki ifade.
+
+1073
+01:47:33,470 --> 01:47:37,470
+Cardinality of set kümenin eleman sayısı.
+
+1074
+01:47:37,470 --> 01:47:42,470
+Ci kümesi içerisindeki eleman sayısı kadar bu işlemi yapacaksın diyor.
+
+1075
+01:47:42,470 --> 01:47:45,470
+Yaptığımız iş neydi? Bunu konuşmuştuk.
+
+1076
+01:47:45,470 --> 01:47:53,470
+Her kümenin kendi içerisindeki örneklerin kendi küme merkezine olan uzaklıklarının kareleri toplamı.
+
+1077
+01:47:53,470 --> 01:47:55,470
+Bize sum of squared error dediğimiz.
+
+1078
+01:47:55,470 --> 01:48:02,470
+Bir hata değeri üretiyor.
+
+1079
+01:48:02,470 --> 01:48:03,470
+Tamam.
+
+1080
+01:48:03,470 --> 01:48:05,470
+Bir hata değeri üretiyor.
+
+1081
+01:48:05,470 --> 01:48:10,470
+Buradaki müi değeri için kümenin merkez noktasıdır diyor.
+
+1082
+01:48:10,470 --> 01:48:13,470
+Ve nasıl hesaplandığını hatırlıyorsunuz herhalde.
+
+1083
+01:48:13,470 --> 01:48:18,470
+Her küme için kendi içerisindeki elemanların ortalaması alınarak hesaplanıyordu.
+
+1084
+01:48:18,470 --> 01:48:20,470
+Amacımız ne?
+
+1085
+01:48:20,470 --> 01:48:22,470
+Amacımız.
+
+1086
+01:48:22,470 --> 01:48:23,470
+Bu.
+
+1087
+01:48:23,470 --> 01:48:24,470
+Bu.
+
+1088
+01:48:24,470 --> 01:48:25,470
+Kimi gelir.
+
+1089
+01:48:25,470 --> 01:48:28,470
+Ama bazıинг margins ile aynı üzerine odaklanmışけ.
+
+1090
+01:48:29,470 --> 01:48:38,960
+Bu, kimi obvious alongside the sum of squared error dediğimiz hatayı minimize edecek en uogun kümeleri yapısını oluşturmak.
+
+1091
+01:48:38,960 --> 01:48:41,420
+Key means algorit Congl
+
+1092
+01:48:41,420 --> 01:48:42,380
+is BS Club
+
+1093
+01:48:42,380 --> 01:48:43,880
+ay Next Step
+
+1094
+01:48:43,880 --> 01:48:45,880
+ayne Algorithma özetlenmiş.
+
+1095
+01:48:45,880 --> 01:48:46,300
+Görüyorsunuz.
+
+1096
+01:48:46,300 --> 01:48:51,140
+Bir inci adım °
+
+1097
+01:48:51,140 --> 01:48:53,060
+randomly initialize key sentольз
+
+1098
+01:48:53,060 --> 01:48:54,960
+müvan to mü ke
+
+1099
+01:48:54,960 --> 01:48:55,960
+ora.
+
+1100
+01:48:55,960 --> 01:49:17,840
+Assignment step'de, ikinci adımda, for all i compute delta x, j, mu, i demiş her sınıf için ne yapıyoruz?
+
+1101
+01:49:17,840 --> 01:49:43,119
+Bu sınıfın yani kümenin içerisindeki pardon i eşit birden k'ya kadar bütün kümeler için demiş her bir sample'ın bu küme merkezlerine olan uzaklıklarını hesaplamış ve daha sonra en kısa mesafede olan küme merkezine bunu assign etmiş.
+
+1102
+01:49:43,119 --> 01:49:49,180
+Yani x, j sample'ını en yakınında bulunan c, i kümesine.
+
+1103
+01:49:49,659 --> 01:50:01,239
+Aittir diye işaretlemiş ve daha sonra üçüncü iterasyonda tabii tüm sample'lar için bunu yaptıktan sonra yeni küme merkezleri hesaplanacak.
+
+1104
+01:50:01,939 --> 01:50:11,739
+Bu işlem yapılıyor ve ondan sonra convergence condition yakınsama koşulu kontrol ediliyor.
+
+1105
+01:50:13,600 --> 01:50:18,220
+Küme merkezleri yer değiştirmiş mi? Bir kontrol şekli de bu olabilir.
+
+1106
+01:50:18,439 --> 01:50:19,640
+Mesela bakın durma koşulları.
+
+1107
+01:50:19,659 --> 01:50:34,300
+İ eşit birden k'ya kadar tüm küme merkezlerinin yer değiştirme miktarlarının toplamı belli bir epsilon değerinden küçükse eğer artık durabilirsin diye bir koşul koymuş.
+
+1108
+01:50:34,880 --> 01:50:37,020
+Bu da alternatif bir yol dediğim gibi.
+
+1109
+01:50:38,619 --> 01:50:42,819
+Daha sonra bunu bir boyutlu bir dataset üzerinde incelemiş.
+
+1110
+01:50:43,000 --> 01:50:44,880
+Biz bu örnekleri yaptık.
+
+1111
+01:50:44,880 --> 01:50:47,979
+Şimdi i-m algoritmasına geçeceğim.
+
+1112
+01:50:48,079 --> 01:50:49,439
+Expectation maksimize.
+
+1113
+01:50:49,659 --> 01:50:53,880
+Expectation algoritması güzel, ilginç bir algoritma.
+
+1114
+01:50:54,199 --> 01:50:59,560
+Benim gerçekten böyle matematiği iyi kullanmış diyebileceğim bir algoritma.
+
+1115
+01:50:59,699 --> 01:51:01,119
+Bayez teoremini kullanıyor.
+
+1116
+01:51:01,300 --> 01:51:06,720
+Bayez teoreminde biliyorsunuz bir koşullu olasılığımız vardı.
+
+1117
+01:51:06,720 --> 01:51:18,720
+Bayez teoreminde şurada gördüğümüz şekliyle xj sample'ının ci kümesine ait olma olasılığını verilen xj sample.
+
+1118
+01:51:19,659 --> 01:51:36,239
+Bayez teoremine göre ci kümesinin olma olasılığı çarpı ci kümesi içerisinde x'in olma olasılığı bölü pxj şeklinde yazabiliyoruz.
+
+1119
+01:51:36,239 --> 01:51:39,659
+Bu bayez teoremi sayesinde yazdığımız bir ifade.
+
+1120
+01:51:40,319 --> 01:51:49,159
+Bundan faydalanarak aslında bir işlem yapıyor.
+
+1121
+01:51:49,659 --> 01:51:51,039
+Ve şöyle söyleyeyim.
+
+1122
+01:51:52,800 --> 01:51:55,340
+Yukarıda da bundan bahsedilmiş.
+
+1123
+01:51:58,380 --> 01:52:07,659
+Diyor ki k-means algoritmasında her bir sample, point dediği şey sample, sadece bir kümeye aittir diyor.
+
+1124
+01:52:09,079 --> 01:52:13,899
+K-means, in k-means a point can belong to only one cluster.
+
+1125
+01:52:14,520 --> 01:52:15,659
+Sadece bir kümeye ait.
+
+1126
+01:52:15,659 --> 01:52:18,199
+Hard clustering deniyor o yüzden buna.
+
+1127
+01:52:18,279 --> 01:52:20,779
+Ya da hard assignment deniyor buna.
+
+1128
+01:52:21,840 --> 01:52:33,920
+Y-means algoritması ise diyor ki aslında her nokta, we allow each point to belong to a cluster with some probability.
+
+1129
+01:52:35,140 --> 01:52:40,560
+Belli bir olasılıkla, belli bir oranda her kümeye aslında ait.
+
+1130
+01:52:41,560 --> 01:52:43,500
+Buna da soft assignment deniyor.
+
+1131
+01:52:45,569 --> 01:52:47,130
+Bu size bir fikir veriyor mu?
+
+1132
+01:52:47,130 --> 01:52:49,409
+Bakın, düzlemde düşünün.
+
+1133
+01:52:49,569 --> 01:52:53,130
+Düzlemde elinizde noktalar var ve bunları kümelere ayırın.
+
+1134
+01:52:53,250 --> 01:52:54,430
+Girmek istiyorsunuz.
+
+1135
+01:52:54,829 --> 01:52:57,609
+K-means clustering şöyle yapıyordu.
+
+1136
+01:52:59,050 --> 01:53:02,869
+Elimizdeki noktaları, şöyle sample'larımız var.
+
+1137
+01:53:03,989 --> 01:53:08,890
+Tamam, bunların dağılımları ve en yakın oldukları yere göre gruplandırabiliriz.
+
+1138
+01:53:10,829 --> 01:53:17,689
+K-means diyordu ki bu küme ayrı, bu küme ayrı, bunun bir merkezi var.
+
+1139
+01:53:17,689 --> 01:53:22,829
+Bütün örneklerin bu küme merkezlerine uzaklığıyla ilişkilendiriyorduk.
+
+1140
+01:53:23,250 --> 01:53:28,210
+IEM algoritması ise diyor ki evet bu bir dağılımdır.
+
+1141
+01:53:28,409 --> 01:53:31,909
+Burada bir yine normal dağılım olduğunu varsayalım.
+
+1142
+01:53:31,909 --> 01:53:46,750
+Bu küme, evet buradaki ikinci kümeye ait olma olasılığı daha yüksektir ama diğer kümenin de belli bir olasılıkta, düşük de olsa belli bir olasılıkta o kümenin de elemanıdır diyor.
+
+1143
+01:53:47,590 --> 01:53:51,029
+Burada şöyle dağılımlar olduğunu düşünün.
+
+1144
+01:53:51,029 --> 01:53:52,689
+Bir diğer dağılım.
+
+1145
+01:53:53,250 --> 01:53:54,770
+Şöyle gidiyor olsun.
+
+1146
+01:53:55,329 --> 01:53:55,869
+E ne oluyor?
+
+1147
+01:53:55,989 --> 01:54:04,390
+Bakın burada X ekseninde bir sample'ın hem bu kümeye hem de bu kümeye ait olma olasılığı ayrıdır diyor.
+
+1148
+01:54:04,789 --> 01:54:06,770
+Bu kümeler birbiri içerisine geçmiş.
+
+1149
+01:54:07,409 --> 01:54:11,369
+Biz bunları hard assignment yaptığımızda belli bir yerden kesiyoruz.
+
+1150
+01:54:11,369 --> 01:54:22,369
+Ama aslında diyor ki burada her sample bütün kümelerin belli bir olasılıkla,
+
+1151
+01:54:23,250 --> 01:54:26,250
+elemanı olma ihtimali vardır diyor.
+
+1152
+01:54:26,630 --> 01:54:27,970
+Bunu bir olasılığa bağlıyor.
+
+1153
+01:54:30,789 --> 01:54:35,050
+IEM algoritmasını bir boyutta anlatacak.
+
+1154
+01:54:35,449 --> 01:54:37,810
+IEM in one dimension demiş.
+
+1155
+01:54:38,149 --> 01:54:38,430
+Pardon.
+
+1156
+01:54:41,270 --> 01:54:43,350
+Highlighter'ı kullanıyorum zannettim.
+
+1157
+01:54:44,449 --> 01:54:49,149
+Buna göre yine iki kümeye ayırdığımızı varsayalım.
+
+1158
+01:54:49,869 --> 01:54:55,090
+Veri setini ve normal dağılım gösterdiğini kabul ediyoruz bu kümeleri.
+
+1159
+01:54:55,090 --> 01:54:55,729
+Bu kümeleri.
+
+1160
+01:54:57,090 --> 01:55:10,420
+Kümelerin birincisinin işte ortalaması mu bir şeyi standart sapması sigma bir ya da varyansı sigma bir kare.
+
+1161
+01:55:11,399 --> 01:55:27,989
+İkinci kümenin ortalaması mu iki ve bu kümenin bir sigma iki kare dediğimiz varyansı kullanılacak.
+
+1162
+01:55:27,989 --> 01:55:41,090
+Elimizde initialization adımı, expectation adımı ve maximization adımı diye üç tane adım var.
+
+1163
+01:55:41,090 --> 01:55:50,390
+Initialization adımında for each cluster ci k tane küme var.
+
+1164
+01:55:50,390 --> 01:55:59,130
+Randomly initialize mu i and sigma i square.
+
+1165
+01:55:59,689 --> 01:56:09,270
+Also initialize probability of class i one over k şeklinde vermiş.
+
+1166
+01:56:09,670 --> 01:56:12,630
+Başlangıç adımında k kümeyi ayırmak istiyoruz.
+
+1167
+01:56:13,590 --> 01:56:23,829
+Küme merkezlerini mu bir ve sigma kareyi random olarak initialize ettik.
+
+1168
+01:56:23,829 --> 01:56:27,909
+Bunu datayı random olarak dağıttığınızı da düşünebilirsiniz.
+
+1169
+01:56:28,550 --> 01:56:29,670
+Ve her bir sınıf.
+
+1170
+01:56:29,689 --> 01:56:34,170
+Yani kümenin olma olasılığı birbirine eşit diye başlıyor.
+
+1171
+01:56:34,270 --> 01:56:36,430
+Bir bölü k diyerek başlıyoruz.
+
+1172
+01:56:37,829 --> 01:56:42,729
+Expectation step dediğimiz steve bakacak olursak burada ne yapıyor?
+
+1173
+01:56:46,149 --> 01:56:49,689
+Ci sınıfı içerisinde xj'nin olma olasılığını hesaplıyor.
+
+1174
+01:56:50,510 --> 01:56:56,529
+Bakın ci sınıfı içerisinde xj'nin olma olasılığı şunu demek istiyor aslında.
+
+1175
+01:56:58,109 --> 01:56:59,529
+Şurası bizim xj.
+
+1176
+01:56:59,689 --> 01:57:03,670
+xj dediğimiz x eksenimiz xj'de şurada bir nokta.
+
+1177
+01:57:04,270 --> 01:57:12,590
+Bu xj noktası iki tane ya da işte k tane kümenin mesela kümelerden bir tanesi bu.
+
+1178
+01:57:13,310 --> 01:57:18,470
+Diğer bir tanesi bu gibi böyle rastgele çizdim.
+
+1179
+01:57:19,029 --> 01:57:29,470
+Tamam bu xj dediğim noktanın şu kümeye ait olma olasılığı bir de diğer kümeye ait olma olasılığı.
+
+1180
+01:57:29,470 --> 01:57:31,850
+Bunların ayrı ayrı değerleri var.
+
+1181
+01:57:32,689 --> 01:57:35,850
+Sonuçta bunlar bir normal dağılım gösteriyor seher.
+
+1182
+01:57:35,970 --> 01:57:46,350
+Ben normal dağılım yani şuradaki c1 sınıfının ve c2 sınıfının normal dağılım için kullandığı mu1 ve sigma1 parametrelerini biliyorum.
+
+1183
+01:57:46,949 --> 01:57:49,069
+Bunda mu2 sigma2'sini biliyorum.
+
+1184
+01:57:49,930 --> 01:57:55,750
+Dolayısıyla bunları normal dağılım formülünde yerine yazarak
+
+1185
+01:57:55,750 --> 01:57:57,890
+xj'nin her bir
+
+1186
+01:57:59,470 --> 01:58:03,170
+dağılım için olma olasılıklarını hesaplıyorum.
+
+1187
+01:58:05,130 --> 01:58:10,170
+Bu ci sınıfı içerisinde x i'nin olma olasılığını veriyor bana.
+
+1188
+01:58:11,029 --> 01:58:11,149
+Tamam.
+
+1189
+01:58:11,770 --> 01:58:12,350
+Daha sonra
+
+1190
+01:58:12,350 --> 01:58:20,329
+xj xj'nin ci'ye ait olma olasılığı şeklinde bir olasılığı ise
+
+1191
+01:58:20,329 --> 01:58:23,970
+şurada gördüğümüz
+
+1192
+01:58:23,970 --> 01:58:27,430
+az önce hesapladığımız olasılık ile
+
+1193
+01:58:29,470 --> 01:58:32,569
+Bayez kuralına göre
+
+1194
+01:58:32,569 --> 01:58:38,149
+ci'nin olma olasılığı ile çarparak bu şekilde yazabiliriz diyoruz.
+
+1195
+01:58:38,229 --> 01:58:39,770
+O Bayez teoreminden yazılıyor.
+
+1196
+01:58:41,069 --> 01:58:43,010
+Maximization step ise
+
+1197
+01:58:43,010 --> 01:58:46,010
+Maximization step ise şunu yapıyor.
+
+1198
+01:58:46,170 --> 01:58:50,369
+Diyor ki biz az önce bir xj noktasının
+
+1199
+01:58:50,369 --> 01:58:54,779
+iki tane dağılımda
+
+1200
+01:58:54,779 --> 01:58:58,569
+farklı olasılıkla
+
+1201
+01:58:58,569 --> 01:59:02,409
+o sınıflara ait olma ihtimallerini hesaplıyoruz.
+
+1202
+01:59:02,409 --> 01:59:02,529
+O dağılımda farklı olasılıkla o sınıflara ait olma ihtimallerini hesaplıyoruz.
+
+1203
+01:59:02,529 --> 01:59:02,550
+O sınıflara ait olma ihtimallerini hesaplıyoruz.
+
+1204
+01:59:02,569 --> 01:59:05,569
+Xj dediğim şu noktanın
+
+1205
+01:59:06,630 --> 01:59:09,310
+c1 sınıfına ait olma olasılığı
+
+1206
+01:59:09,310 --> 01:59:11,789
+bu c1 dağılımını kestiği noktadır.
+
+1207
+01:59:14,539 --> 01:59:17,279
+C2 sınıfına ait olma olasılığı
+
+1208
+01:59:17,279 --> 01:59:18,760
+bunu kestiği noktadır.
+
+1209
+01:59:20,579 --> 01:59:22,939
+Dolayısıyla aslında ben
+
+1210
+01:59:22,939 --> 01:59:25,140
+yeni küme merkezlerini hesaplarken
+
+1211
+01:59:25,880 --> 01:59:28,579
+burada Maximization step dediğimiz
+
+1212
+01:59:28,579 --> 01:59:29,819
+step o işi yapıyor.
+
+1213
+01:59:30,640 --> 01:59:32,920
+Yeni küme merkezlerini hesaplarken
+
+1214
+01:59:32,920 --> 01:59:39,060
+veri setinde bulunan tüm noktalar için
+
+1215
+01:59:39,060 --> 01:59:41,000
+j eşit birden n'e kadar
+
+1216
+01:59:41,000 --> 01:59:42,119
+bakın görüyor musunuz?
+
+1217
+01:59:42,319 --> 01:59:43,720
+j eşit birden n'e kadar
+
+1218
+01:59:43,720 --> 01:59:46,539
+veri setinde bulunan tüm noktalar için
+
+1219
+01:59:46,539 --> 01:59:48,920
+bu noktaların
+
+1220
+01:59:50,619 --> 01:59:56,800
+i kümesine ait olma olasılığıyla ağırlıklandırılmış bir ortalama hesaplıyoruz.
+
+1221
+01:59:57,279 --> 01:59:58,420
+Bunun adı weighted mean.
+
+1222
+01:59:58,800 --> 02:00:00,560
+Ağırlıklı ortalama alma işlemi.
+
+1223
+02:00:00,560 --> 02:00:08,930
+Ben veri setindeki tüm noktaların
+
+1224
+02:00:08,930 --> 02:00:15,789
+mevcut kümelerin her birine belli bir olasılıkta ait olduğunu söyledim.
+
+1225
+02:00:16,329 --> 02:00:21,010
+Bu kümelere ait olma olasılıklarıyla ağırlıklandırılmış
+
+1226
+02:00:21,010 --> 02:00:25,189
+bir weighted mean hesaplayarak
+
+1227
+02:00:25,189 --> 02:00:30,640
+yeni küme merkezini hesapladım.
+
+1228
+02:00:30,640 --> 02:00:35,640
+mü i üssü dediği ifade
+
+1229
+02:00:35,680 --> 02:00:38,100
+i kümesinin
+
+1230
+02:00:38,100 --> 02:00:41,119
+yeni yeri
+
+1231
+02:00:41,119 --> 02:00:42,979
+yeni değerini
+
+1232
+02:00:42,979 --> 02:00:44,939
+bu şekilde hesapladım.
+
+1233
+02:00:45,420 --> 02:00:46,340
+Aynı işlemi
+
+1234
+02:00:46,340 --> 02:00:48,619
+varyans hesaplarken de
+
+1235
+02:00:48,619 --> 02:00:49,739
+kullandık.
+
+1236
+02:00:50,239 --> 02:00:51,380
+Yani hep
+
+1237
+02:00:51,380 --> 02:00:56,239
+bu olasılık ile ağırlıklandırılmış
+
+1238
+02:00:56,239 --> 02:01:00,000
+bir işlem yapıyorum.
+
+1239
+02:01:01,100 --> 02:01:02,600
+Gördüğünüz gibi.
+
+1240
+02:01:06,539 --> 02:01:06,960
+Bu
+
+1241
+02:01:06,960 --> 02:01:07,840
+yeni kümesinin
+
+1242
+02:01:07,840 --> 02:01:10,159
+merkezi ve yeni kümenin
+
+1243
+02:01:10,159 --> 02:01:11,619
+standart sapması.
+
+1244
+02:01:11,779 --> 02:01:13,920
+Çünkü normal dağılımda bize iki parametre
+
+1245
+02:01:13,920 --> 02:01:14,520
+gerekiyor.
+
+1246
+02:01:15,699 --> 02:01:17,779
+New değerlerini hesapladık.
+
+1247
+02:01:19,699 --> 02:01:21,039
+Bu nedir?
+
+1248
+02:01:21,239 --> 02:01:23,000
+New mu i
+
+1249
+02:01:23,000 --> 02:01:24,100
+bu da
+
+1250
+02:01:24,100 --> 02:01:27,680
+new sigma i değerini
+
+1251
+02:01:27,680 --> 02:01:29,020
+gösteriyor bize.
+
+1252
+02:01:30,060 --> 02:01:32,100
+Buradan giderek çözüm yaptık.
+
+1253
+02:01:32,279 --> 02:01:32,680
+Bu da
+
+1254
+02:01:32,680 --> 02:01:34,560
+dediğim gibi
+
+1255
+02:01:34,560 --> 02:01:37,020
+i m algoritmasının
+
+1256
+02:01:37,020 --> 02:01:37,300
+i m algoritmasının
+
+1257
+02:01:37,300 --> 02:01:38,640
+i m algoritmasının
+
+1258
+02:01:38,640 --> 02:01:40,359
+güzel tarafı bu.
+
+1259
+02:01:41,439 --> 02:01:43,140
+K means algoritması
+
+1260
+02:01:43,140 --> 02:01:45,060
+hard membership kullanıyor.
+
+1261
+02:01:45,199 --> 02:01:46,579
+Yani keskin bir şekilde
+
+1262
+02:01:46,579 --> 02:01:49,140
+bu kümenin elemanı öbürünün
+
+1263
+02:01:49,140 --> 02:01:49,800
+değil diyor.
+
+1264
+02:01:50,060 --> 02:01:51,199
+Sıfır bir çalışıyor.
+
+1265
+02:01:51,399 --> 02:01:53,739
+Ama i m algoritması dediğimiz
+
+1266
+02:01:53,739 --> 02:01:55,979
+algoritma ise
+
+1267
+02:01:55,979 --> 02:02:01,300
+veri setindeki bütün noktalar
+
+1268
+02:02:01,300 --> 02:02:03,300
+her kümenin
+
+1269
+02:02:03,300 --> 02:02:05,479
+belli bir olasılıkla elemanıdır
+
+1270
+02:02:05,479 --> 02:02:07,279
+diyerek işlem yapıyor.
+
+1271
+02:02:07,300 --> 02:02:10,880
+Şeye baktığımız zaman
+
+1272
+02:02:10,880 --> 02:02:13,300
+başarılarına baktığımız zaman
+
+1273
+02:02:13,300 --> 02:02:15,199
+i m algoritmasının
+
+1274
+02:02:15,199 --> 02:02:17,039
+aslında hard k means
+
+1275
+02:02:17,039 --> 02:02:19,000
+algoritmasına göre daha başarılı
+
+1276
+02:02:19,000 --> 02:02:21,760
+olduğunu söyleyebiliriz.
+
+1277
+02:02:22,520 --> 02:02:23,739
+VK'yı kapattım
+
+1278
+02:02:23,739 --> 02:02:25,340
+maalesef. Kapatmasaydım
+
+1279
+02:02:25,340 --> 02:02:27,340
+eğer aynı dataset üzerinde bir de
+
+1280
+02:02:27,340 --> 02:02:29,239
+i m algoritması ile kümeleme
+
+1281
+02:02:29,239 --> 02:02:31,420
+yapıp mesela ne kadar doğru
+
+1282
+02:02:31,420 --> 02:02:33,420
+ne kadar yanlış
+
+1283
+02:02:33,420 --> 02:02:35,760
+hesapladığı onu görebilirdik.
+
+1284
+02:02:35,760 --> 02:02:37,260
+Bir VK'yı tekrar açabiliriz.
+
+1285
+02:02:37,300 --> 02:02:40,720
+Açsam bakalım ne çıkıyor.
+
+1286
+02:02:40,720 --> 02:02:42,720
+Size göstermiş olayım.
+
+1287
+02:02:42,720 --> 02:02:56,079
+VK'da şu data folder'ı
+
+1288
+02:02:56,079 --> 02:02:57,560
+kolay bulamıyorum.
+
+1289
+02:02:57,560 --> 02:02:59,560
+O yüzden biraz uzun sürüyor.
+
+1290
+02:02:59,560 --> 02:03:03,300
+Program files'ın altında gidip
+
+1291
+02:03:03,300 --> 02:03:05,300
+bulmam gerekiyor onu.
+
+1292
+02:03:05,300 --> 02:03:12,819
+Program files'ın altında
+
+1293
+02:03:12,819 --> 02:03:15,819
+VK'nın altında bir folder'a
+
+1294
+02:03:15,819 --> 02:03:17,819
+yerleştiriyor çünkü bunları.
+
+1295
+02:03:17,819 --> 02:03:25,539
+Evet bulduk.
+
+1296
+02:03:25,539 --> 02:03:26,720
+Aynı data folder'ı da bulmam gerekiyor.
+
+1297
+02:03:26,720 --> 02:03:27,119
+Aynı data folder'ı da bulmam gerekiyor.
+
+1298
+02:03:27,119 --> 02:03:31,140
+Aynı data set'i açacağım.
+
+1299
+02:03:31,140 --> 02:03:33,140
+Ve bu data set üzerinde
+
+1300
+02:03:33,140 --> 02:03:35,140
+kümeleme işlemini
+
+1301
+02:03:35,140 --> 02:03:37,140
+ben şimdi screen share yapmadım
+
+1302
+02:03:37,140 --> 02:03:42,850
+onu yapayım.
+
+1303
+02:03:42,850 --> 02:03:44,850
+i m algoritması zaten default
+
+1304
+02:03:44,850 --> 02:03:46,850
+ilk gelen o i m algoritmasını
+
+1305
+02:03:46,850 --> 02:03:50,960
+çalıştıracağım tabi yine küme
+
+1306
+02:03:50,960 --> 02:03:52,960
+sayısını number of clusters'ı
+
+1307
+02:03:52,960 --> 02:03:54,960
+vermem
+
+1308
+02:03:54,960 --> 02:03:56,960
+gerekiyor.
+
+1309
+02:03:56,960 --> 02:03:58,960
+Burada
+
+1310
+02:03:58,960 --> 02:04:00,960
+niye eksi 1 almış
+
+1311
+02:04:00,960 --> 02:04:02,960
+onu şey mi yapıyor
+
+1312
+02:04:02,960 --> 02:04:04,960
+acaba kendisi mi buluyor.
+
+1313
+02:04:04,960 --> 02:04:06,539
+Peki biz 3 verelim.
+
+1314
+02:04:09,649 --> 02:04:10,470
+3 verdik.
+
+1315
+02:04:11,409 --> 02:04:13,710
+Cluster evaluation'ı açtık.
+
+1316
+02:04:14,670 --> 02:04:15,489
+Start dedik.
+
+1317
+02:04:18,359 --> 02:04:18,640
+Evet.
+
+1318
+02:04:20,890 --> 02:04:21,409
+Ne çıktı?
+
+1319
+02:04:22,270 --> 02:04:22,909
+Yorumunuz?
+
+1320
+02:04:24,729 --> 02:04:27,390
+Kaç tane örneği yanlış sınıflamış?
+
+1321
+02:04:27,930 --> 02:04:28,789
+Diğerinde 47 idi.
+
+1322
+02:04:28,869 --> 02:04:29,329
+Burada 50.
+
+1323
+02:04:29,569 --> 02:04:31,569
+Oran 11'den 9'a düşmüş.
+
+1324
+02:04:31,569 --> 02:04:34,409
+Evet 11'den 9'a düşmüş.
+
+1325
+02:04:34,470 --> 02:04:36,510
+17 taneyi yanlış sınıflamıştı.
+
+1326
+02:04:36,630 --> 02:04:38,350
+K-means clustering algoritması.
+
+1327
+02:04:38,350 --> 02:04:41,270
+Bu 14 taneyi yanlış kümeledi.
+
+1328
+02:04:42,210 --> 02:04:43,350
+Yani düştü.
+
+1329
+02:04:44,529 --> 02:04:46,409
+Hata oranı daha düşük.
+
+1330
+02:04:46,750 --> 02:04:48,510
+Başarısı daha yüksek çıkıyor.
+
+1331
+02:04:49,350 --> 02:04:50,630
+IEM algoritmasının.
+
+1332
+02:04:50,829 --> 02:04:52,489
+Burada bunu görebiliyoruz.
+
+1333
+02:04:54,449 --> 02:04:54,810
+Evet.
+
+1334
+02:04:55,050 --> 02:04:56,289
+Bilmiyorum anlaşıldı mı?
+
+1335
+02:04:57,109 --> 02:04:57,970
+Sorunuz var mı?
+
+1336
+02:04:58,189 --> 02:05:00,130
+Bu dokümanı sizinle paylaşacağım.
+
+1337
+02:05:00,529 --> 02:05:01,770
+IEM algoritması.
+
+1338
+02:05:02,270 --> 02:05:04,529
+Matematiği gerçekten çok güzel.
+
+1339
+02:05:06,529 --> 02:05:08,329
+Hard bir algoritma.
+
+1340
+02:05:08,350 --> 02:05:10,350
+Bir membership yerine
+
+1341
+02:05:10,350 --> 02:05:12,010
+üyelik fonksiyonunu
+
+1342
+02:05:12,010 --> 02:05:14,430
+keskin bir üyelik kullanmak yerine
+
+1343
+02:05:14,430 --> 02:05:16,489
+bir soft membership
+
+1344
+02:05:16,489 --> 02:05:17,850
+kullanıyor.
+
+1345
+02:05:18,109 --> 02:05:20,310
+O açıdan bence çok güzel bir yöntem.
+
+1346
+02:05:21,750 --> 02:05:22,689
+Bu matematik
+
+1347
+02:05:22,689 --> 02:05:24,270
+hani burada kullanılan
+
+1348
+02:05:24,270 --> 02:05:25,329
+matematik bence
+
+1349
+02:05:25,329 --> 02:05:28,550
+biraz böyle
+
+1350
+02:05:28,550 --> 02:05:30,210
+üzerinde düşünmeniz gereken
+
+1351
+02:05:30,210 --> 02:05:32,630
+farklı alanlarda
+
+1352
+02:05:32,630 --> 02:05:34,010
+farklı amaçlarla
+
+1353
+02:05:34,010 --> 02:05:36,670
+sizin de kullanabileceğiniz bir matematik.
+
+1354
+02:05:36,670 --> 02:05:38,010
+O nedenle
+
+1355
+02:05:38,010 --> 02:05:40,010
+bunlara böyle
+
+1356
+02:05:40,010 --> 02:05:42,170
+hani bu şeyleri
+
+1357
+02:05:42,170 --> 02:05:44,909
+matematiksel ifadeleri
+
+1358
+02:05:44,909 --> 02:05:46,710
+iyi analiz edip
+
+1359
+02:05:46,710 --> 02:05:48,649
+okuyabilir olmanız
+
+1360
+02:05:48,649 --> 02:05:50,930
+akademik açıdan
+
+1361
+02:05:50,930 --> 02:05:52,689
+çok önemli.
+
+1362
+02:05:54,529 --> 02:05:55,449
+Peki arkadaşlar.
+
+1363
+02:05:55,649 --> 02:05:56,609
+Bu haftalık bu kadar.
+
+1364
+02:05:57,149 --> 02:05:59,569
+Bana sormak istediğiniz bir şey var mı?
+
+1365
+02:06:04,359 --> 02:06:05,100
+Ses gelmiyor.
+
+1366
+02:06:05,600 --> 02:06:06,840
+Her şey anlaşıldı o zaman.
+
+1367
+02:06:07,039 --> 02:06:07,260
+Peki.
+
+1368
+02:06:09,060 --> 02:06:11,100
+Hepinize iyi hafta sonları diliyorum.
+
+1369
+02:06:11,819 --> 02:06:11,920
+Kendinize iyi günler.
+
+1370
+02:06:11,939 --> 02:06:12,960
+Kendinize iyi bakın.
+
+1371
+02:06:13,119 --> 02:06:14,500
+Haftaya görüşmek üzere.
+
+1372
+02:06:15,319 --> 02:06:16,760
+Görüşürüz hocam. Teşekkür ederiz.
+
+1373
+02:06:17,579 --> 02:06:18,979
+Rica ederim. Hoşçakalın.
+
+1374
+02:06:23,539 --> 02:06:24,619
+Evet ben bekliyorum.
+
+1375
+02:06:24,720 --> 02:06:27,140
+Bakayım şimdi en sona kalanları ben bir göreyim.
+
+1376
+02:06:27,800 --> 02:06:29,300
+Çok teşekkür ederiz hocam.
+
+1377
+02:06:29,880 --> 02:06:31,079
+Rica ederim.
+
+1378
+02:06:34,470 --> 02:06:35,510
+Hoşçakalın arkadaşlar.
+
+1379
+02:06:35,890 --> 02:06:38,630
+Tekrar iyi hafta sonları.
+
+1380
+02:06:39,489 --> 02:06:41,029
+[öğrenci], [öğrenci], [öğrenci]
+
+1381
+02:06:41,029 --> 02:06:41,930
+teşekkürler.
+
+1382
+02:06:42,569 --> 02:06:43,489
+Mesajınız için.
+
+1383
+02:06:51,520 --> 02:06:52,920
+Şu anda 19 kişi
+
+1384
+02:06:52,920 --> 02:06:54,859
+bilgisayarın başında değil galiba.
+
+1385
+02:06:54,859 --> 02:07:00,800
+Eller havada kalmış ama.
+
+1386
+02:07:04,300 --> 02:07:04,560
+Evet.
+
+1387
+02:07:04,760 --> 02:07:05,640
+[öğrenci] hoşçakal.

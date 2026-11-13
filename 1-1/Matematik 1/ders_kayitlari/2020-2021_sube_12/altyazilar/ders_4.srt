@@ -1,0 +1,3515 @@
+1
+00:05:18,771 --> 00:05:20,391
+Merhaba, sesim geliyor mu bakalım?
+
+2
+00:05:22,271 --> 00:05:23,051
+Evet hocam.
+
+3
+00:05:23,872 --> 00:05:25,391
+Bir şeyler yazmışsınız.
+
+4
+00:05:27,391 --> 00:05:31,331
+Aa, mesaj dediniz. Bir dakika bir öğrenciye davet yollayacaktım.
+
+5
+00:05:31,951 --> 00:05:33,692
+Hemen mesaj deyince o geldi aklıma.
+
+6
+00:05:33,872 --> 00:05:35,512
+Nereden yolluyordum? Hemen hızlıca.
+
+7
+00:05:35,512 --> 00:05:37,091
+Şuradan yolluyorum.
+
+8
+00:05:40,851 --> 00:06:02,271
+kopyaladım. Bu arada sorunuz varsa sorabilirsiniz sesli bir şekilde. Ben hemen şuradan çıkıp bir mail atıp hemen başlıyorum dersi. Önce küçücük dünkü ders tekrar edeceğim. Nerede kalmıştık, ne yapmıştık? O kısmı da yine yazarak anlatacağım. Sonrasında genel olarak bugün slide üzerinden gideceğiz. Hemen şunu atıyorum.
+
+9
+00:06:15,603 --> 00:06:26,283
+bu değil, neden olmadı? Bir daha deniyorum. Olmazsa yapacak bir şey yok. Tekrar in like dedim. Şimdi oldu.
+
+10
+00:06:31,764 --> 00:06:50,144
+Tamam. Bundan çıkabilirim. Bundan da çıktım. Tamam geldim. Şimdi yazdıklarınızı okuyayım. Kim beni ilgilendiren bir şey var mıymış? Öyle bir mesaj mı geliyor ben dersi açtığımda?
+
+11
+00:06:59,732 --> 00:07:10,232
+Dün herhalde bakmadım ben, mail atan öğrencim de olmuştu, eksik gözükmüştü. Benlik dediğim gibi bir sıkıntı yok. Matematik dersi için sıkıntı yapmanıza gerek yok.
+
+12
+00:07:12,232 --> 00:07:14,232
+Ama diğer dersler için bilemiyorum.
+
+13
+00:07:20,276 --> 00:07:23,716
+[öğrenci] bir şey yazmış. Ona bakamadım daha henüz maalesef.
+
+14
+00:07:23,795 --> 00:07:25,776
+Dersten sonra biraz işim vardı. Bakacağım.
+
+15
+00:07:26,776 --> 00:07:32,175
+Mesaj dersi tekrar izleyip oradaki yazdığım linki almam gerekiyor. Bugün inşallah bakacağım.
+
+16
+00:07:34,615 --> 00:07:38,276
+Ben dersi açınca demek ki size hem...
+
+17
+00:07:38,276 --> 00:07:40,836
+Peki onun haricinde şeyden de girebiliyorsunuz sanıyorum değil mi?
+
+18
+00:07:40,896 --> 00:07:43,795
+Benim girdiğim gibi derse katıl butonuyla da girebilirsiniz herhalde.
+
+19
+00:07:48,564 --> 00:07:57,984
+tamam. Tamamdır. Çok benlik bir şey yokmuş burada. Şimdilik kenara alalım bunu. Nasıl yapın demiştiniz. Şöyle.
+
+20
+00:07:57,984 --> 00:08:07,864
+Kameramı düğütebiliyorum. Kamerayı açsam güzel olacak ki elim parlamasın. Son olarak onun ayırını yapayım.
+
+21
+00:08:10,387 --> 00:08:23,788
+Böyle birazcık kıtı kıtına yetişiyorum derse. Çünkü [öğrenci]'ın da derste biri de başlıyor. Onun dersini aç, otursun yerine işte o üst katta yapıyor. Ben alt katta yapıyorum. O yüzden size böyle koşa koşa geliyorum birazcık. O yüzden nefes nefesiyim her derste.
+
+22
+00:08:23,788 --> 00:08:26,788
+Şunu kapattım.
+
+23
+00:08:34,163 --> 00:08:40,163
+Şimdi ne yaptık onu düşünelim. Sen de büyü bakalım. Tamam görüyorum şimdi geldi yazdım.
+
+24
+00:08:40,163 --> 00:08:49,163
+Dediğim gibi bugün çok az bir kısmı yazacağım. Sadece hatırlatmak için yazacağım. Ekrana yazarken çirkin yazıyorum çünkü. En azından buradan bir hatırlayalım.
+
+25
+00:08:49,163 --> 00:09:00,163
+Şimdi ne yaptık? Bir kere limite başladık. Bugün de limiti bitireceğiz inşallah. Limitin tek bir kısmı kalacak. Zaten atladığım yeri notlardan takip ediyorsanız fark edeceksiniz.
+
+26
+00:09:05,779 --> 00:09:24,919
+O kısmı dediğim gibi en sona bırakacağım. En teorik kısım. Şimdi ilk işimiz yok. Ben daha çok uygulamada çözebileceğiniz kısımlarla ilgilenelim istiyorum. Bugünkü ve haftaya ilk dersteki vaktimizi onunla harcayalım. Sonra son derste limitli ve sürekliliğin en sonunda o kısmı yapacağız.
+
+27
+00:09:25,812 --> 00:09:34,192
+Dün şunu öğrendik. Limit neymiş? Önce onu öğrendik. Tanımımıza şöyle başlamıştık. Limit x a'ya giderken fx olarak başlamıştık.
+
+28
+00:09:34,312 --> 00:09:44,192
+Demiştik ki limit dediğimiz şey aslında fonksiyonun davranışını inceleme olayı. Yani şunu inceliyoruz. x'e a'ya yaklaştırıyoruz ve artık bilmemiz gereken en önemli şeylerden bir tanesi şuydu.
+
+29
+00:09:45,112 --> 00:09:52,872
+Fonksiyonumuz limitin aldığımız noktada tanımlı olmak zorunda değildi. Herhangi bir noktada tanımsız olduğu herhangi bir noktada da fonksiyonun davranışını inceleyebiliyorduk.
+
+30
+00:09:53,812 --> 00:09:59,692
+x a'ya yaklaşırken acaba fx'de bir l sayısına yaklaşıyor mu diye bakıyoruz aslında. Böyle bir l sayısı arıyoruz.
+
+31
+00:10:00,412 --> 00:10:06,072
+Dolayısıyla eğer böyle bir l'den bahsedebiliyorsak, l dediğimiz şey bir sayıydı, o zaman diyoruz ki limit vardır.
+
+32
+00:10:08,152 --> 00:10:13,292
+Başka ne demiştim? Bu araştırmaya girebiliriz. Bu araştırmanın sonucunda artı sonsuz veya eksi sonsuz çıkabilir.
+
+33
+00:10:13,779 --> 00:10:20,360
+Şimdiye kadar karşılaşmadık. Artı sonsuz ve eksi sonsuzla bugün karşılaşacağız. Sonsuz limitlerle tanışacağız bugün.
+
+34
+00:10:20,819 --> 00:10:26,179
+Sonucun artı sonsuz ve eksi sonsuz çıkması, evet ben bu limiti sonuçlandırabiliyorum ve artı sonsuza gidiyor fonksiyonum aslında.
+
+35
+00:10:26,299 --> 00:10:30,860
+Evet ben bu limiti sonuçlandırabiliyorum ve eksi sonsuza gidiyor aslında. Eşittir diyebiliyorum yani.
+
+36
+00:10:31,279 --> 00:10:38,179
+Ama ne diyorum? Natamadikçi Karpis yapıyoruz. Diyoruz ki biz böyle tanımlamadık. Biz dedik ki fonksiyon bir sayıya yaklaşıyorsa limit vardır dedik.
+
+37
+00:10:38,179 --> 00:10:41,779
+Evet bir yere gitmiş ama gittiği şeyi beğenmiyoruz. Bu bir sayı değil. O zaman diyoruz.
+
+38
+00:10:41,779 --> 00:10:54,980
+Çünkü bu limit yoktur. Bunu göreceğiz bugün. Arada çok küçük bir nüans farkı var. Ondan bahsedeceğim. Bir de ne gördük? Dün sağ limite baktık, sol limite baktık. İkisi birbirine eşit çıkmadı. O zaman dedik ki kesinlikle limit yoktur.
+
+39
+00:10:54,980 --> 00:10:58,539
+Bir dakika. Efendim [öğrenci].
+
+40
+00:11:12,115 --> 00:11:15,576
+Demiştik ki işte sağ limit ve sol limit birbirine eşitliğe limit yok.
+
+41
+00:11:15,796 --> 00:11:17,875
+Şimdi bir tane daha limitin olmadığı bir durum var.
+
+42
+00:11:18,115 --> 00:11:20,135
+Hemen dersin başında ondan bahsedeceğim.
+
+43
+00:11:20,776 --> 00:11:22,076
+Nasıl limit olmayabilir?
+
+44
+00:11:22,615 --> 00:11:23,596
+Bir de onu söyleyeceğiz.
+
+45
+00:11:24,235 --> 00:11:28,996
+Sonra dedik ki tamam limiti araştırıyoruz.
+
+46
+00:11:29,076 --> 00:11:31,415
+Limiti araştırırken de karşımıza neler çıkacaktı?
+
+47
+00:11:31,756 --> 00:11:34,496
+Bir kere pat diye x yerine a yazabileceğimiz durumlar vardı.
+
+48
+00:11:34,796 --> 00:11:37,056
+Hatta temel olarak 3 tane durumdan bahsettik.
+
+49
+00:11:37,875 --> 00:11:39,036
+3'ünden de bahsedelim.
+
+50
+00:11:39,700 --> 00:11:42,100
+Madem özet yapıyoruz, bütün dersi özetleyelim.
+
+51
+00:11:42,620 --> 00:11:44,100
+Önce dedik ki şuna bakacağız.
+
+52
+00:11:44,300 --> 00:11:46,000
+Her seferinde bakmam gereken şey şu.
+
+53
+00:11:46,140 --> 00:11:49,540
+x yerine a koyunca acaba fonksiyonu ne oluyor?
+
+54
+00:11:49,640 --> 00:11:51,920
+Bir bakalım nasıl bir durumla karşı karşıyayayım.
+
+55
+00:11:52,400 --> 00:11:53,360
+Şunu kontrol edecektik.
+
+56
+00:11:53,420 --> 00:11:54,960
+x eşittir a'da sorun var mı?
+
+57
+00:11:56,460 --> 00:11:57,420
+Baktım, sorun yok.
+
+58
+00:11:58,180 --> 00:11:59,700
+İkinci kontrol edeceğim şey şuydu.
+
+59
+00:11:59,779 --> 00:12:02,200
+x yeri x eşittir a için parçalı mı?
+
+60
+00:12:02,460 --> 00:12:03,600
+Burada parçalanmış mı?
+
+61
+00:12:06,323 --> 00:12:13,084
+diye bakacaktım. Parçalanmamışsa, bu en güzel durumdu. Zaten olayın en sonunda karşıma çıkacak olan durumdu.
+
+62
+00:12:13,524 --> 00:12:16,124
+A'da sorun yok, parçalanmamış. O zaman ne yapıyordu?
+
+63
+00:12:17,223 --> 00:12:24,443
+x a'ya giderken fx için çok da bir şey düşünmeme gerek yoktu. x gördüğüm yere a yazarak sonuçlandırıyordum.
+
+64
+00:12:24,916 --> 00:12:34,076
+Dolayısıyla karşıma şunlar çıkabilir. Madem ki bunlar benim için sağlaması gereken, yani şu kadar işi kolayca bitirebilmem için sağlamam gereken 2 tane koşu.
+
+65
+00:12:34,516 --> 00:12:40,236
+Bunlardan herhangi biri olmazsa yol haritamızı çizmiştik. Demiştik ki, ne demiştik? x eşittir a'da sorun varsa.
+
+66
+00:12:41,136 --> 00:12:46,956
+x eşittir a'da sorun var mı diye baktık. Evet sorun var. Ama mesela x eşittir a'da parçalı değil.
+
+67
+00:12:49,875 --> 00:12:53,076
+O zaman ne demiştik? x eşittir a'daki sorunlar nasıl olabilirdi?
+
+68
+00:12:53,175 --> 00:12:58,435
+İşte 0 bölü 0 olabilirdi. Dün yaptık. Sonsuz bölü sonsuz olabilirdi. Sonsuz eksi sonsuz olabilirdi.
+
+69
+00:12:59,175 --> 00:13:02,995
+Ki şunlar genelde sonsuza giderkenki limitlerde karşımıza çıkıyor.
+
+70
+00:13:03,076 --> 00:13:08,316
+x eşittir a diye bahsediyorsak genelde karşımıza çıkacak olan 0 bölü 0 belirsizlik.
+
+71
+00:13:08,316 --> 00:13:14,316
+Bunda ne demiştik? Demiştik ki eğer 0 bölü 0 varsa cebirsel işlemlerle
+
+72
+00:13:14,868 --> 00:13:23,488
+ortalığı toparlamaya çalışıyoruz. Ya paydaki sıfırdan kurtulacağız. Ya paydaki ya da kurtulabiliyorsak ne ala. Eksinden de kurtulup sonuç şudur diyeceğiz.
+
+73
+00:13:23,827 --> 00:13:32,768
+Cebirse işlemlerimiz de çarpanları ayırmaydı. Eksiğimiz varsa limit alabilmek için bunları gidermemiz gerekiyordu. Bir de demiştik ki eşlenik çarpımı.
+
+74
+00:13:36,436 --> 00:13:39,895
+Bunlarla ilgili örnekler yapmıştık. Dolayısıyla şunu öğrenmiştik biz.
+
+75
+00:13:40,115 --> 00:13:43,556
+Sıfır bölü sıfır durumunda neler yapabilirim? Şunlardan birazdan bahsedeceğim.
+
+76
+00:13:44,375 --> 00:13:47,655
+Sonra demiştik ki madem ki bu ikisini kontrol ediyorum, şu da olabilir.
+
+77
+00:13:47,956 --> 00:13:52,796
+x eşittir a'da sorun yok. Burası okey. Ama x eşittir a'da parçalı olabilirdi.
+
+78
+00:13:54,035 --> 00:13:59,395
+O zaman ne diyordum? Parçalanması ne demekti? Sağında ve solunda farklı fonksiyonlarla karşı karşıyayım.
+
+79
+00:13:59,495 --> 00:14:04,255
+Malem ki sağında ve solunda farklı fonksiyonlar var. O zaman ne yapacaktım? Bir sağ limite bakacağım.
+
+80
+00:14:04,955 --> 00:14:11,576
+Bir sol limite bakacağım. Sağ limite olabilir, sol limite olabilir ama limit vardır diyebilmem için bunların birbirine eşit olması gerekiyordu.
+
+81
+00:14:12,015 --> 00:14:14,695
+Dolayısıyla bu ikisi birbirine eşit mi diye kontrol etmem gerekiyor.
+
+82
+00:14:14,695 --> 00:14:16,395
+Niye bu kadar blod gözüküyor?
+
+83
+00:14:22,772 --> 00:14:27,451
+Bulanık değil aslında. Belki bende bulanık görünüyordur. İnternetim mi yavaş acaba?
+
+84
+00:14:29,692 --> 00:14:35,632
+Sonra bunları yaptık. Burada yaptıklarımızın hepsi neydi? x a'ya giderkenki limitlerle ilgiliydi.
+
+85
+00:14:36,072 --> 00:14:42,072
+3 durumu da inceledik. Yol haritamızı çizdik. Sonra dünkü dersin sonunda şuna geçmiştik.
+
+86
+00:14:42,912 --> 00:14:49,052
+Demiştik ki biz her şeyi şimdiye kadar limit x a'ya giderken yaptık. Değil mi? Bulanık görünüyor bende de. Neden? Anlamadım ama.
+
+87
+00:14:50,292 --> 00:14:52,292
+Çat da kaybolmuş.
+
+88
+00:14:56,019 --> 00:15:17,799
+Düm bu kadar bulanık değil de. Acaba ne yapabilirim bulanık olmaması için? Telefondan bakınca hiç bulanık değil ama telefondan ekrana yansıtırken kötü gözüküyor. Şöyle yapsam bir de buradan nasıl gözüküyor? Şu an biraz daha net. Evet hocam şu an biraz daha iyi.
+
+89
+00:15:18,259 --> 00:15:29,120
+Tamam, yok zaten hatırlatıyorum. Yani hani öyle kaydeder bir şey yazmıyorum. Bulanık da olsa anlıyorsanız yazdığım sıkıntı yok. Hani çok ağlanmayalım. Herhalde anlıyorsunuzdur zaten dün yaptığımız bir şey.
+
+90
+00:15:29,720 --> 00:15:30,519
+Anlıyoruz, anlıyoruz.
+
+91
+00:15:30,519 --> 00:15:41,920
+Tamam. Yani dünkü platformun üzerine koydum aslında. Odaklanmasını da aynı şekilde yaptım ama bilmiyorum. Telefondan ekranına bakınca gayet net gözüküyor ama şuraya aktarırken bir sıkıntı var.
+
+92
+00:15:42,388 --> 00:15:58,648
+Neyse, bu zaten dediğim gibi özet öyle. Hani çok da üzerinde duracağımız bir şey değil. Konuyu bağlayalım istiyorum. Aşama aşama gidelim. Başka ne yaptık? Bir de en son yaptığımız şeyi yapalım. Dedik ki burada hep x a'ya giderkenki durumları inceledik. Bir de şunu düşündük en son.
+
+93
+00:15:59,251 --> 00:16:27,251
+Limit x sonsuza giderken acaba ben nasıl limit alırım? Limit x eksi sonsuza giderken acaba nasıl limit alırım? Burada artık şöyle durumlarım yok. Aman A'da sorun var mıymış? Parçalanmış mı? Çünkü A dediğim şey artık bir sayı değil. Dolayısıyla sağı solu yok. Sonsuza giderken sonsuzun sağı solu olmaz. Sonsuzun sağı da sonsuzdur, solu da sonsuzdur. Eksi sonsuz için de yine aynı şey geçerli. Parçalanma gibi bir şey de olmaz. Sonsuzdan büyükken şöyle, sonsuzdan küçükken diye bir şey. Dolayısıyla şurada inceleyelim.
+
+94
+00:16:27,251 --> 00:16:36,451
+3 durum x a'ya giderken karşıma çıkabilecek olan durumlar. x sonsuza ve x sonsuza giderken ki durumlarda da ne çıkacaktı?
+
+95
+00:16:37,011 --> 00:16:40,572
+Karşıma şunlar çıkabilir. Biraz önce yazdım şu 2 belirsizlik çıkabilirdi karşıma.
+
+96
+00:16:41,032 --> 00:16:45,711
+Sonsuza x sonsuz belirsizliğe çıkabilir veya sonsuz belirsizliğe çıkabilir.
+
+97
+00:16:46,711 --> 00:16:48,491
+Her iki durum içinde.
+
+98
+00:16:48,960 --> 00:16:58,679
+İşin özünde x sonsuza giderken veya x sonsuza giderken yapacağım şey aslında çözüme yönelik yani çözüm aşamasına da bana katkı sağlayacak olan şey şuydu.
+
+99
+00:16:58,759 --> 00:17:00,220
+Bilmem gereken en önemli şey.
+
+100
+00:17:01,120 --> 00:17:03,779
+Diyorduk ki sayı bölü sonsuzları yakalamak istiyoruz.
+
+101
+00:17:03,919 --> 00:17:10,799
+Çünkü sayı bölü sonsuzu yakaladığım anda bir sayıyı sonsuz parçaya böldüğümde sıfıra gidecektir.
+
+102
+00:17:11,000 --> 00:17:12,200
+Çok çok çok küçülecektir.
+
+103
+00:17:12,299 --> 00:17:14,099
+Dolayısıyla artık bu sıfırdır diyebileceğim.
+
+104
+00:17:14,340 --> 00:17:15,539
+Limit durumu için konuşuyorum.
+
+105
+00:17:16,115 --> 00:17:23,155
+Demek ki sayı bölü sonsuzları yakalamaya çalışıyorduk. Bunu nasıl yakalayacaktık? Sonsuzun aşağıya düşmesi için x'in aşağıya düşmesi gerekiyordu.
+
+106
+00:17:23,635 --> 00:17:28,476
+Genelde yapacağımız işlem şu olacaktı. En büyük dereceli terimin parantezini alıyorduk.
+
+107
+00:17:29,816 --> 00:17:32,355
+Dereceli terim parantezini al demiştik.
+
+108
+00:17:34,956 --> 00:17:36,715
+Belirsizliklere gelirsek ne yaptık?
+
+109
+00:17:37,755 --> 00:17:43,115
+Dün söylemiştim. Sıvı bölü sıfırı ve sonsuz bölü sonsuz. Bunlar birinci tip belirsizliklerdi.
+
+110
+00:17:43,763 --> 00:17:51,483
+Direkt çözüm yöntemim var. İşte diyorum ki cebirsel işlemler yap. Burada ise parantezi alarak 0'ı yakalamaya çalış. Sayı bölü sonsuzda.
+
+111
+00:17:52,363 --> 00:18:01,683
+İkinci tip belirsizliklerimiz sonsuz, eksi sonsuz. Bundan yaptık örnek ama henüz 0x sonsuzla karşılaşmadık. Bunlarda da amacım şu olacak. Birinci tipe dönmem gerekiyor.
+
+112
+00:18:02,228 --> 00:18:22,008
+sonsuz eksi sonsuz yaptık. Sonsuz eksi sonsuzu sıfır bölü sıfıra veya sonsuz bölü sonsuza çevirmek demek mantıken neye ihtiyacım var benim bir paydaya ihtiyacım var. Dolayısıyla buraya bir paydaya gelmesi gerekiyor. Genelde sonsuz eksi sonsuzu belirsizlikler oluşturduğumuz şeyler köklü ifadeler oluyor. O yüzden genelde eşlenik çarpımıyla yolumuza devam ediyoruz.
+
+113
+00:18:23,124 --> 00:18:28,624
+Önce eşlenik çarpımı yapıyoruz ve bunu 0 bölü 0 veya sonsuz bölü sonsuz haline getiriyoruz.
+
+114
+00:18:29,064 --> 00:18:34,184
+Sonra artık hangisi haline geldiyse x sonsuz sayı derken genelde sonsuz bölü sonsuz durumu çıkacak karşımıza.
+
+115
+00:18:34,724 --> 00:18:39,864
+Yine sayı bölü sonsuz yakalayacak şekilde en büyük dereceli terimin parantezini aldım.
+
+116
+00:18:40,276 --> 00:18:50,195
+Burada nasıl davranıyorsam, yani yol haritamızı nasıl çizmişsem, burada dedik ki cebirsel işlemler yap, işte burada da cebirsel işlemler yapıp paranteze alarak sonuca ulaşmaya çalış. Aynı şeyi yapıyorum.
+
+117
+00:18:51,076 --> 00:19:02,596
+Dün tamamıyla bunu yaptık ve aslında limite dair pek çok şey öğrendik. İşte A'da nasıl davranır, sonsuzda nasıl davranır, neler yapabiliyormuşum aslında. Bunları öğrendik.
+
+118
+00:19:03,496 --> 00:19:07,076
+Şimdi iki tanecik şey sormak istiyorum size.
+
+119
+00:19:07,695 --> 00:19:11,435
+Sanıyorum ki bunların notları da yazmış mıydım yazmamış mıydım hatırlamıyorum.
+
+120
+00:19:12,275 --> 00:19:13,476
+Onu da şuraya yazayım.
+
+121
+00:19:15,935 --> 00:19:18,275
+Bu önemli. Bundan yine bahsedeceğiz zaten.
+
+122
+00:19:19,395 --> 00:19:21,275
+Şunu sormak istiyorum birinci olarak.
+
+123
+00:19:21,275 --> 00:19:24,115
+Hadi böyle şunu şöyle düşürsem.
+
+124
+00:19:26,175 --> 00:19:26,875
+Nasıl olacak?
+
+125
+00:19:27,735 --> 00:19:29,336
+Bakalım. Birazcık büyük yazayım.
+
+126
+00:19:31,215 --> 00:19:33,275
+Birinci olarak size şunu sormak istiyorum.
+
+127
+00:19:34,067 --> 00:19:45,907
+Limit x sonsuza giderken sinüs x veya şunu sorsam, limit x sonsuza giderken veya hadi bu da eksi sonsuza olsun, eksi sonsuza giderken kosinüs x nedir diye sorsam.
+
+128
+00:19:47,607 --> 00:19:54,387
+Şimdi sonsuzda limitten bahsettik ve derim ki işte sayı bölü sonsuzları yakalamaya çalışacağız, oradan yola çıkacağız.
+
+129
+00:19:55,307 --> 00:19:59,048
+Ama yine sonsuzda bir limit var, bu kez karşımız sinüs x var, kosinüs x var.
+
+130
+00:20:00,000 --> 00:20:01,900
+Ne dersiniz bana bu limitlerle ilgili?
+
+131
+00:20:02,460 --> 00:20:05,179
+Diyorum ki x on sayı derken sinüs x ne olur?
+
+132
+00:20:05,259 --> 00:20:05,559
+Efendim?
+
+133
+00:20:06,019 --> 00:20:14,579
+Eksi 1 ile artı 1 aralığında sürekli değişen bir fonksiyon olduğu için kesin bir şey söyleyemiyorduk sanki.
+
+134
+00:20:15,960 --> 00:20:16,679
+Değil mi?
+
+135
+00:20:17,639 --> 00:20:18,539
+Sanki öyle diyorduk.
+
+136
+00:20:18,539 --> 00:20:20,839
+Şimdi genelde burada verilen cevaplar şöyle oluyor.
+
+137
+00:20:21,319 --> 00:20:23,460
+Şimdi düşünüyor öğrenci işte sinüs x nedir?
+
+138
+00:20:23,579 --> 00:20:24,719
+Şöyle bir grafiği vardı.
+
+139
+00:20:26,132 --> 00:20:28,372
+Kosinüs de bunun gibiydi. Böyle dalgalanıyor.
+
+140
+00:20:28,951 --> 00:20:31,132
+Genelde verilen yanlış cevap şu oluyor.
+
+141
+00:20:31,711 --> 00:20:33,731
+İşte bu ne yapacak? Bana şunu soruyor aslında.
+
+142
+00:20:33,892 --> 00:20:36,632
+x sonsuza giderken sinüs nerelerde duracak?
+
+143
+00:20:36,632 --> 00:20:39,112
+Yani bu sonsuza gidiyor, gidiyor, gidiyor. Nerede dursun?
+
+144
+00:20:39,552 --> 00:20:42,592
+Şimdi görüyoruz bu durmuyor bir yerde. Eksi 1 ile 1 arasına gidip geliyor.
+
+145
+00:20:43,052 --> 00:20:44,552
+Genelde şöyle cevap yazıyor buna.
+
+146
+00:20:45,291 --> 00:20:46,951
+Diyor ki bu bir a sayısıdır.
+
+147
+00:20:48,552 --> 00:20:50,932
+a sayısı da eksi 1 ile 1 aralığındadır.
+
+148
+00:20:52,211 --> 00:20:59,311
+Veya aynı şekilde x'i sonsuz için sorduğunda, kosinüs olsaydı bu kez sol tarafı soracaktı. Kosinüs nerede duracak veya nereye yaklaşacak?
+
+149
+00:20:59,672 --> 00:21:04,271
+Yine öğrenci düşünüyor diyor ki x'i 1 ile 1 arasında ama tam bilmiyorum ama sonuçta bir sayı çıkacak.
+
+150
+00:21:04,432 --> 00:21:12,032
+Yani x'i 1 ile 1 arasında duracaksa x'i 1 ile 1 arasında durması gerekiyor. O zaman ben bunu bir a sayısı diyeyim. x'i 1 ile 1 arasında bir a sayısıdır diyeyim.
+
+151
+00:21:12,632 --> 00:21:19,072
+Bu yazdığım şey neden yanlış olur? Yani bir a sayısına gideceğini görüyorum ben gözümle.
+
+152
+00:21:20,084 --> 00:21:23,324
+x 1 ile bir aralığına gidecek. Yani sonsuza gitme durumu olmayacak.
+
+153
+00:21:24,744 --> 00:21:28,124
+Ama hangi duruma aykırı bu?
+
+154
+00:21:29,044 --> 00:21:56,924
+Oraya bir A sayısı yazmak demek. Ne istiyorduk biz? Biz oraya kesin bir L sayısı yazalım dedik. Yani bunun limiti 3'tür, 5'tür, 4'tür. İşte atıyorum neyse, eksi 3'tür diyebileceğim bir sayı olması gerekiyor. Evet, eksi 1 ile 1 arasında salınıyor. Dolayısıyla eğer bunun bir limiti olsaydı, duracak olsaydı bir yerde, eksi 1 ile 1 arasında duracaktı. Ama şudur diyebileceğim bir A sayısı yoksa, bu A sayısıdır, o da şununla şununla arasında bir yerdedir. Ama kimdir o bilmiyorum.
+
+155
+00:21:57,044 --> 00:22:02,564
+sarı çizmeli Mehmet Ağ gibi bir A sayımız yok. Dolayısıyla bu limitler kesinlikle yoktur.
+
+156
+00:22:03,484 --> 00:22:08,424
+Yani şöyle bir şey yazman mümkün değil. Evet gözümle dursaydı bir yerlerde buralarda duracağını biliyorum.
+
+157
+00:22:08,424 --> 00:22:13,224
+Ama duruyor mu? Durmuyor. Durmuyorsa üzgünüm. Bu limit yoktur. Aynı şekilde bu da yoktur.
+
+158
+00:22:15,004 --> 00:22:16,744
+Bu limitler mevcut değildir.
+
+159
+00:22:18,675 --> 00:22:23,675
+Dolayısıyla hani limitin mevcut olmaması durumları var demiştim ya, hiç limite karşılaşmıyoruz.
+
+160
+00:22:24,195 --> 00:22:27,675
+Dün ona örnek olarak sağ ve sol limitlerin birbirine eşit çıkmamasını yaptık.
+
+161
+00:22:28,115 --> 00:22:30,536
+Bir de böyle limitin mevcut olmaması durum var.
+
+162
+00:22:30,655 --> 00:22:35,096
+Yani buraya hani sağ limiti var da sola eşit değil diyebileceğimiz bir durum dahi yok.
+
+163
+00:22:35,775 --> 00:22:39,016
+Bir yerlerde duracak hissediyorum, durabilir belki ama durmuyor.
+
+164
+00:22:39,355 --> 00:22:40,895
+Durmuyorsa da şuralarda duracak.
+
+165
+00:22:41,295 --> 00:22:46,516
+Dursaydı şurada dur diyeceğim öyle bir uydurma bir A sayısı değil, direkt buraya bir sayıya ihtiyacım var.
+
+166
+00:22:46,675 --> 00:23:00,675
+bu sayıyı bulamadığım için bu limit yoktur diyorum. Şimdi size ikinci bir şey soracağım. Bu tamam mıyız? Buna dedik ki bunların limiti yoktur. Şimdi size şunu soruyorum.
+
+167
+00:23:05,779 --> 00:23:07,679
+Bu kez sinüsün altına x getirdim.
+
+168
+00:23:09,059 --> 00:23:12,099
+Aynı şey kosinüs de olabilir. Kosinüsün altına x getirseydim.
+
+169
+00:23:12,099 --> 00:23:13,920
+Bunun cevabı ne olurdu? Söyleyin bakalım.
+
+170
+00:23:14,039 --> 00:23:15,420
+Yine limit yoktur mu derdik?
+
+171
+00:23:16,359 --> 00:23:18,000
+Veya bir limit bulabilir miyedik?
+
+172
+00:23:19,119 --> 00:23:20,699
+Bulursak niye böyle düşünürdük?
+
+173
+00:23:22,219 --> 00:23:22,920
+Düşünün bakalım.
+
+174
+00:23:26,963 --> 00:23:30,083
+Bu sefer sayı bölü sonsuz mu?
+
+175
+00:23:31,403 --> 00:23:32,403
+Sıfır galiba.
+
+176
+00:23:32,844 --> 00:23:35,384
+O yüzden sıfır gibi bir bölü düşünüyorum.
+
+177
+00:23:35,743 --> 00:23:40,384
+Şimdi burada şöyle düşüncesi. Biraz önce yaptığımız şeyi, biraz önce düşüncemiz doğruydu aslında.
+
+178
+00:23:41,011 --> 00:24:08,831
+Biraz önceki düşüncemiz neydi? Diyorduk ki, bu durabilsin bir yerlerde bir sayıya gidecek. Ama şu sayıdır diyebileceğim, hangi sayı olduğunu bilemediğim için burada limit yok. Ama buraya geldiğimde diyorum ki, evet bu bir sayı, evet bu eksi 1 ile 1 arasında bir sayıda durabilecekti. Ama şu sayı hangi sayı olduğunu bilmiyorum. O sayı bu sayıdır diyebileceğim bir durum yok. Ama aşağıda zaten x var. Bu da x son sayı diyor. Dolayısıyla yukarıda ne diyor belirsiz bir sayı var.
+
+179
+00:24:09,011 --> 00:24:12,692
+O sayının ne olduğunun önemi yok aşağıda sonsuz olduğu sürece.
+
+180
+00:24:12,692 --> 00:24:19,311
+Diyorum ki yukarıda neydi? Belirsiz bir sayı. Bölü sonsuz. Sonuç ne çıkar? Yukarı çıkar.
+
+181
+00:24:19,731 --> 00:24:26,152
+Yani şöyle birazcık daha rahat görürsünüz belki. Şöyle ayırsaydık. 1 bölü x çarpı sinüs x.
+
+182
+00:24:26,892 --> 00:24:31,771
+Bu dediğim gibi tek başına olsa limit x sonuç sayı derken sinüs x bunun bir cevabı yok.
+
+183
+00:24:32,127 --> 00:24:39,748
+Çünkü evet, x'e 1'de 1 arasında bir sayı ama limit için ne istiyorum? Ben somut bir sayı istiyorum. O sayıyı bulamadığımı göre bu limit yoktur diyorum.
+
+184
+00:24:40,228 --> 00:24:48,367
+Ama yanına 1 bölü x geldiği zaman, yani bunun limiti neydi? Sayı bölü sonuçta 0 gelecek. 0 çarpı ne olduğunu bilmediğim bir sayı.
+
+185
+00:24:48,847 --> 00:24:55,827
+Artık bu sayının ne olduğunu bilip bilmemen benim için anlamsız oluyor. Çünkü bir sayıyı 0 ile çarptığında 0 çıkar.
+
+186
+00:24:56,980 --> 00:25:06,740
+1 yazanlar var. 1'i neden karıştırdığınızı biliyorum. İşte ben buna tekrar döneceğim. Şimdi burada bunun sıfır olduğunu oturtalım istiyorum ki sonra 1 ile karışıyor. Çünkü çok benzer bir durum daha var.
+
+187
+00:25:07,412 --> 00:25:10,932
+Şurası sıfır olduğunda x sıfıra giderken sinüs x bölü x, 1 çıkıyor.
+
+188
+00:25:11,711 --> 00:25:20,312
+Temel olarak zaten kafanızın karıştığı en önemli, bu konuda en önemli nokta bu olacak sinüs ve kosinüs ve trigonometrik limitlerle ilgili.
+
+189
+00:25:20,792 --> 00:25:25,132
+Onu da ölçmeyi çok seviyoruz biz. O yüzden ben bu konuda bahsetmek istiyorum.
+
+190
+00:25:25,272 --> 00:25:29,552
+Yani bu aslında bir sonraki, hatta ikinci derste belki geçeceğimiz bir konu.
+
+191
+00:25:29,912 --> 00:25:33,172
+Ama şimdiden bunu hissedelim istiyorum. Tek başına sinüsün limiti yok.
+
+192
+00:25:33,172 --> 00:25:35,252
+Çünkü x1 ile 1 aralığında bir sayı.
+
+193
+00:25:35,412 --> 00:25:45,231
+Ama ne olduğunu bilmiyorum. Ama buraya geldiğinde ne olduğunun hiçbir önemi yok. Sayı bölü sonsuz veya şöyle düşünebiliriz. Sayı çarpı sıfır, sonuç sıfırdır.
+
+194
+00:25:45,332 --> 00:25:50,892
+Aslında biz burada dün yaptığımız sıkıştırma teoremini kullandık. Şunu kullanıyoruz. Diyoruz ki bu x'i 1 ile 1 arasına sıkışıyor.
+
+195
+00:25:51,512 --> 00:25:58,272
+Dolayısıyla sinüs x bölü x fonksiyonu sinüs x'i 1 ile 1 arasında olduğu için aslında şununla şunun arasında kalıyor.
+
+196
+00:25:58,272 --> 00:25:59,672
+Pardon yazıyorum ama.
+
+197
+00:26:03,412 --> 00:26:13,072
+Ne diyorduk dün? Diyorduk ki sağına ve soluna bak. Bunun limiti sıfıra ekliyor. Bunun limiti sıfıra ekliyor. O zaman ne diyordu bana sıkıştırma teoremi? Ortakidaki de sıfıra gider diyordu.
+
+198
+00:26:13,412 --> 00:26:18,692
+Hani uzun uzun bu neden böyledir diye ispatlayın deseydi sıkıştırma teoremini kullanacaktık. Ama hiç gerek yok.
+
+199
+00:26:19,531 --> 00:26:25,991
+Dediğim gibi ne olduğunu bilmesem de bir a sayısında duracağını hissediyorum ama a sayısı şudur diyemiyorum. Limit yok diyorum buna.
+
+200
+00:26:25,991 --> 00:26:30,192
+Ama bunun limitinin olmaması sinüs x bölü x'in limitinin olmamasını gerektirmiyor.
+
+201
+00:26:31,412 --> 00:26:40,572
+Sadece yanlış cevaplar ya doğru cevap veriliyor 0 ya diğer sinüs x bölü x ile karıştırılıyor bir cevabı veriliyor ya da sinüs x'in limiti olmadığı için bunun da limiti yoktur diyor.
+
+202
+00:26:41,451 --> 00:26:46,951
+Sonuç olarak limit yoktur diyor. Bu 3 tane durum artık test sınavına döndüğümüz için sizin için önemli olacak.
+
+203
+00:26:47,132 --> 00:26:52,172
+Hani aşağıdakilerden hangisinin dere doğrudur vesaire şeklinde tam böyle kafa karıştırıcı sorular beraber olabilir.
+
+204
+00:26:52,172 --> 00:26:58,172
+O yüzden bunun üstüne böyle tekrar tekrar duracağım. Yeter ki ikisinin arasındaki ayrımı görene kadar.
+
+205
+00:26:58,900 --> 00:27:04,400
+Bunun limiti yok. Yanına sıfır geldiğinde bunun sayının hiçbir anlamı kalmadığı için sonuç sıfıra gidiyor.
+
+206
+00:27:04,579 --> 00:27:08,940
+Ve bundan yine ikinci derste bahsedeceğim. Çünkü karıştırılabilir bir limit daha öğreneceğiz.
+
+207
+00:27:09,960 --> 00:27:13,180
+O zaman tekrar ikisinin arasındaki farkını üzerinden geçeceğiz.
+
+208
+00:27:14,579 --> 00:27:19,299
+Tamam. Bugünlük yazarak anlatacağım kısım. Herhalde bu kadar bir daha özet yapmak istemezsem.
+
+209
+00:27:19,400 --> 00:27:22,200
+Gerisi çünkü çok böyle yazmadan da anlatılabilecek kısımlarda.
+
+210
+00:27:22,900 --> 00:27:24,160
+Şimdi şunu durduralım.
+
+211
+00:27:24,788 --> 00:27:27,627
+anlatacağım şeyi yüklüyorum. Öyle devam edelim.
+
+212
+00:27:29,627 --> 00:27:30,607
+Şuna geçiyorum.
+
+213
+00:27:31,508 --> 00:27:32,728
+Galiba açıktı zaten.
+
+214
+00:27:33,648 --> 00:27:35,180
+Evet, bunu paylaşmam lazım.
+
+215
+00:27:39,859 --> 00:27:41,059
+birazcık küçültelim.
+
+216
+00:27:46,067 --> 00:28:01,968
+yapacak. Tamam. Şimdi nereleri yaptık? Biz bunların hepsini yaptık. Şunları yaptık. Komünalarımızı yaptık. Sande içten de şimdi bahsetmiş olduk. Sıfırımızı gördük. Şurada kaldık.
+
+217
+00:28:04,692 --> 00:28:11,471
+Şimdi yine devam edelim. Ben yine şu kalemimi çıkartayım. Sonsuzda limiti yaptık. Dedik ki sayı bölü sonsuzda yapacağız.
+
+218
+00:28:11,612 --> 00:28:20,971
+Şimdi uzun uzun işlem yapmadan da sonsuzdaki limitlerle ilgili yapabileceğimiz, hemen limiti şudur diyebileceğimiz iki tane durum var. İki tane özel fonksiyonun limiti var.
+
+219
+00:28:21,392 --> 00:28:24,511
+Bunlardan bir tanesi de rasyonel fonksiyon, bir tanesi de polinom fonksiyon.
+
+220
+00:28:24,692 --> 00:28:31,192
+Rasyonel fonksiyon ve polinom fonksiyon hiçbir işlem yapmadan sadece şu yazdığım iki tane durumu eğer bilirsek,
+
+221
+00:28:32,692 --> 00:28:37,291
+limitlerini şık diye sonucunu görebiliyoruz gözde işlem yapmadan dahi.
+
+222
+00:28:37,971 --> 00:28:39,872
+Birinci olarak polinomdan bahsedeceğiz.
+
+223
+00:28:40,392 --> 00:28:48,031
+Polinom için diyor ki, sen diyor bir polinomdaki, bir polinomun daha doğrusu artı sonsuz ve eksi sonsuzdaki limitini mi almak istiyorsun?
+
+224
+00:28:48,451 --> 00:28:51,372
+O zaman dön, en büyük dereceli terime bak.
+
+225
+00:28:51,372 --> 00:28:55,051
+Diyor ki bir polinomdaki en büyük dereceli terim,
+
+226
+00:28:55,104 --> 00:28:59,723
+polinomun artı sonsuz ve eksi sonsuzdaki limitini belirler.
+
+227
+00:29:00,023 --> 00:29:02,303
+Yani bütün bir polinoma bakmana gerek yok.
+
+228
+00:29:02,443 --> 00:29:04,923
+Bu polinomun içinde git en büyük derece terimi bu.
+
+229
+00:29:05,663 --> 00:29:06,763
+Git ona sor sorunun.
+
+230
+00:29:06,844 --> 00:29:10,663
+Sen artı sonsuzda nasıl davranıyorsun, sen eksi sonsuzda nasıl davranıyorsun diye sor.
+
+231
+00:29:10,663 --> 00:29:14,663
+Onun vereceği cevap senin için bütün polinomun cevabını oluşturuyor diyor.
+
+232
+00:29:15,243 --> 00:29:16,763
+Neden? Hemen şuradan görelim.
+
+233
+00:29:17,003 --> 00:29:18,844
+Polinom dediğimiz şey böyle bir ifadeydi.
+
+234
+00:29:19,604 --> 00:29:22,644
+Bunun artı sonsuz veya eksi sonsuzdaki limitini almak istiyorum.
+
+235
+00:29:23,063 --> 00:29:28,003
+Ve dün ne dedik? Biz artı sonsuz, eksi sonsuzda iş yaparken bir sayı bölü sonsuzları oluşturmaya çalışıyoruz.
+
+236
+00:29:28,083 --> 00:29:30,043
+Ve en büyük dereceli terimin parantezini alıyoruz.
+
+237
+00:29:30,763 --> 00:29:34,403
+O mantığı kullanmışız. Dediğim gibi o temel bir mantık birçok yerde işe yarıyor.
+
+238
+00:29:34,923 --> 00:29:37,463
+O mantığı burada kullandık. x üzeri n parantezini aldık.
+
+239
+00:29:37,903 --> 00:29:39,043
+Burada a n kaldı.
+
+240
+00:29:39,536 --> 00:29:41,536
+Burada a'nın eksi 1 bölü x kaldı.
+
+241
+00:29:41,635 --> 00:29:42,676
+İşte bu şuraya geldim.
+
+242
+00:29:42,736 --> 00:29:45,776
+Burayı x üzerinde böldüğüm için a 1 bölü x üzerinde n eksi 1.
+
+243
+00:29:46,036 --> 00:29:47,416
+a 0 bölü x üzerinde n oldu.
+
+244
+00:29:47,836 --> 00:29:49,256
+En sonsuza giderken ne olacak?
+
+245
+00:29:49,395 --> 00:29:50,336
+Burası sayı bölü 0.
+
+246
+00:29:50,875 --> 00:29:53,276
+Sayı bölü sonsuzdan 0.
+
+247
+00:29:53,375 --> 00:29:55,635
+Bunların hepsi sayı bölü sonsuzdan 0'a gidecek.
+
+248
+00:29:56,596 --> 00:29:58,956
+Kalı kalı x'en çarpı a'en kalacak.
+
+249
+00:29:59,135 --> 00:30:04,036
+Yani gerçekten de şurada söylediği gibi benim soruyu sormam gereken kişi şuymuş.
+
+250
+00:30:04,155 --> 00:30:06,256
+En büyük dereceli terim ve onun kat sayısı.
+
+251
+00:30:06,768 --> 00:30:11,207
+Benim bütün polinomumun artı sonsuz ve eksi sonsuzdaki limitini belirlermiş.
+
+252
+00:30:11,687 --> 00:30:18,567
+Demek ki bir polinom gördüğümde ne kadar çokmuş işte toplamış çıkartmış artı sonsuz ve eksi sonsuzlar geliyor diye düşünmeyeceğim.
+
+253
+00:30:19,167 --> 00:30:22,327
+En baştaki terime bakacağım. Daha doğrusu belki de aralara saklamış olabiliriz.
+
+254
+00:30:22,407 --> 00:30:27,187
+En büyük dereceli terimi bulacağım. Artı sonsuz ve eksi sonsuz için limitimi ona soracağım.
+
+255
+00:30:28,207 --> 00:30:29,427
+Bu polinomundaki durum bu.
+
+256
+00:30:30,788 --> 00:30:32,587
+Bir de rasyoneldekine bakalım.
+
+257
+00:30:34,932 --> 00:30:40,152
+Şöyle yapmam gerekiyor. Bunu kapatıp, şunu indirmem gerekiyor.
+
+258
+00:30:40,152 --> 00:30:46,312
+Tekrar in bakalım. Kalemim geri gelsin. Şunları da temizleyelim.
+
+259
+00:30:47,635 --> 00:30:55,655
+İkinci durumda da rasyonel fonksiyonum var. Neydi rasyonel fonksiyon? px bölü qx yani ikisi de polinom olan fonksiyonlardı.
+
+260
+00:30:55,895 --> 00:31:00,355
+Dolayısıyla p de bir polinom, q da bir polinom. p polinom olsa bunun bir derecesi olmalı.
+
+261
+00:31:00,835 --> 00:31:04,675
+Onun neyinin ince dereceden demişim. Yani en büyük derecesi x üzere enmiş.
+
+262
+00:31:05,107 --> 00:31:14,467
+x üzeri n'li terimmiş daha doğrusu. Bunun derecesine de m demişim. Yukarıda x üzeri n'li, aşağıda x üzeri m'li bir polinom var. Aynen burada olduğu gibi.
+
+263
+00:31:14,907 --> 00:31:22,447
+Ve bu x üzeri n'linin katsayısı an, yani baş katsayısı an, x üzeri n'lininkinde baş katsayısı v n'miş.
+
+264
+00:31:22,887 --> 00:31:28,507
+Şimdi diyor ki bana sen böyle bir rasyonel fonksiyonun var. Yukarının derecesi ne? Aşağının derecesi m.
+
+265
+00:31:29,428 --> 00:31:32,768
+Sen bunun artı sonsuz veya eksi sonsuzdaki limitini almak istiyorsun.
+
+266
+00:31:33,408 --> 00:31:37,988
+Dön diyor uzun uzun işler yapma. Dön diyor bunların derecelerine bak.
+
+267
+00:31:38,928 --> 00:31:41,848
+Eğer payın derecesi paydanın derecesinden daha küçükse.
+
+268
+00:31:42,508 --> 00:31:44,008
+Yani mesela şöyle olsun.
+
+269
+00:31:45,148 --> 00:31:50,908
+Mesela x kare artı 1 bölü x küp artı 1 olsun mesela.
+
+270
+00:31:51,648 --> 00:31:54,768
+Elimizdeki polin. Payın derecesi paydanın derecesinden daha küçük.
+
+271
+00:31:56,564 --> 00:32:21,524
+ne diyor? Sonuç sıfırda diyor şurası 2. Neden? Eğer biz bunu uzun uzadıya yapacak olsaydık, neydi benim mantığım? En büyük dereceli terimin parantezini alacaktık. Burayı x kare parantezini alacaktı. Şuradan dışarıya x kare çıkacaktı. Burası 1 olacaktı x kare parantezini alınca. Burası ne olacaktı? 1 bölü x kare olacaktı.
+
+272
+00:32:23,571 --> 00:32:27,991
+Aynı şeyi burada yapsaydım, sayı bölü sonuçları oluşturmak için.
+
+273
+00:32:28,051 --> 00:32:29,692
+Bunu x küp parantısını alacaktım.
+
+274
+00:32:30,271 --> 00:32:31,831
+Yine burada 1 kalacaktı.
+
+275
+00:32:32,711 --> 00:32:34,632
+Bu kez burada 1 bölü x küp olacaktı.
+
+276
+00:32:36,851 --> 00:32:38,192
+Sonra ne diyecektim?
+
+277
+00:32:38,692 --> 00:32:41,471
+1 bölü x kare, bu sayı bölü sonuçtan 0'a gitti.
+
+278
+00:32:42,371 --> 00:32:43,211
+Bu 0'a gitti.
+
+279
+00:32:44,276 --> 00:33:00,036
+Ne kaldı? Yukarıda 1, aşağıda 1, bir de şuradaki parancıza aldım. x kare ile x küp. x kare ile x küp zadeleşecekti. Aşağıda x kalacaktı. Yani yukarıda 1, aşağıda x kalacaktı. x sonsuza giderken sayı bölü sonsuz oluşacaktı. Dolayısıyla gerçekten de sıfır gelecekti.
+
+280
+00:33:00,596 --> 00:33:12,276
+İşte bu yazdığım kural bizi her seferinde bunu yapmaktan kurtarıyor. Diyor ki payın derecesi payların derecesinden daha küçükse sen yukarıdakinin en büyük derecesini ve aşağıdakinin en büyük dereceli şeylerini terimle...
+
+281
+00:33:12,276 --> 00:33:18,096
+parantezini aldığında ve sadeleştirmeleri yaptığında paydadaki x'ler daha çok olduğu için payda da x kalacak.
+
+282
+00:33:18,355 --> 00:33:21,996
+Dolayısıyla yukarısı sayıyken aşağısı sonsuza gidecek aşağıda x kaldığı için.
+
+283
+00:33:22,396 --> 00:33:24,536
+O zaman diyor bu işlemleri yapmana hiç gerekiyor.
+
+284
+00:33:24,875 --> 00:33:27,375
+Sayı bölü sonsuzdan sıfır geleceğini bil.
+
+285
+00:33:28,355 --> 00:33:30,016
+Anlaştık mı? Temel mantığı bu.
+
+286
+00:33:30,176 --> 00:33:32,476
+Yukarıdaki x'ler aşağıdaki x'lerden daha az.
+
+287
+00:33:32,916 --> 00:33:35,115
+Sadeleştirme yaptığında x aşağıya düşecek.
+
+288
+00:33:35,196 --> 00:33:36,756
+Dolayısıyla sonsuz aşağıda kalacak.
+
+289
+00:33:36,956 --> 00:33:39,476
+O zaman sayı bölü sonsuzdan sıfır gelecek diyor.
+
+290
+00:33:40,852 --> 00:33:55,952
+İkinci duruma bakarsak, eğer diyor payın derecesi paydanın derecesine eşitse, biraz önceki mantıkla, eğer payı ve paydanın şunun içinden x üzeri n'i alacağım, bunun içinden x üzeri m'i alacağım ve hatta ikisi de birbirine eşitmiş, ikisi de x üzeri n olacak mesela.
+
+291
+00:33:56,432 --> 00:34:04,472
+Ne olacak? Bu dışarıya çıkacak, şu da dışarıya çıkacak, x üzeri n'ler sadeleşecek. Burada a n kalacak, burada b n kalacak.
+
+292
+00:34:04,692 --> 00:34:08,811
+Geriye kalanların hepsi ne olacak? İşte bir bölü, işte a n-1 bölü x.
+
+293
+00:34:08,851 --> 00:34:14,532
+Atıyorum a'n-2 bölü x kare, a0 bölü x üzeri n şeklinde bunların hepsi sıfıra gidecek.
+
+294
+00:34:15,051 --> 00:34:18,511
+Kala kala yukarıdaki ve aşağıdakinin baş kas sayıları kalacak.
+
+295
+00:34:19,091 --> 00:34:24,271
+O zaman bana şunu söylüyor. Payla payladan derecesi eşitse dön baş kas sayılara bak.
+
+296
+00:34:24,271 --> 00:34:30,891
+Baş kas sayıları oranladığında karşına çıkan sayı senin için artı sonsuz ve eksi sonsuzdaki limiti belirler diyor.
+
+297
+00:34:31,172 --> 00:34:32,891
+Yine uzun uzun yapmama gerek yok.
+
+298
+00:34:33,532 --> 00:34:36,391
+Yine söylediğim gibi ben yapmıyorum bunu artık uzun uzadıya.
+
+299
+00:34:36,851 --> 00:34:58,811
+x üzerenleri sadeleştireceğim. Kala kala a enler, b enler kalacak. Mantığım bu. Bir tek şurada dikkatli olmalıyım. Çünkü bu kez pay kısmında x kalacak. Dolayısıyla sonucun sonsuz çıkacağından eminim. Payın derecesi paydanın derecesinden daha büyük. Payı en büyük dereceye aldım. Mesela yukarıda x küp var atıyorum. Hadi şunu da görelim bir kere.
+
+300
+00:34:59,572 --> 00:35:05,032
+Biraz önceki de tam tersi olsun. x küp artı 1 bölü. Mesela x kare artı 1 olsun.
+
+301
+00:35:06,835 --> 00:35:31,495
+Şimdi hemen bundan sonrasını gözle bakalım. Ne diyorduk? Burayı x küp parantezine alacağım. En büyük derecede terim. Burayı x kare parantezine alacağım. Sonra ne kalacak burada? x küp çarpı 1 artı 1 bölü x küp kalacak. Aşağıda ne olacak? x kare çarpı 1 artı 1 bölü x kare olacak. Yine 1 bölü x kareler, 1 bölü x küpler sıfıra gidecek. Kala kala yukarıda x küp, aşağıda x kare kalacak.
+
+302
+00:35:32,467 --> 00:35:40,207
+Bu kez sadeleştirdiğimde, şunlar gitti, sayı bölü sonsuzlardan bir gelecek. Bunları sadeleştirdiğimde x nerede kalır?
+
+303
+00:35:40,851 --> 00:36:07,511
+x pay kısmında kalır. Dolayısıyla x payda kaldığı için ve sonsuza giderken limit aldığım için işte sonuç sonsuz çıkacak. Ama nasıl sonsuz çıkacak? İşte buna bakmalıyım. Eğer artı sonsuza gidiyorsa şu soru için sonuç artı sonsuz çıkar. Eğer x eksi sonsuza gidiyorsa x eksi sonsuza giderken sonuç eksi sonsuz çıkar. Dolayısıyla burada ezbere 0 diyebilirim. Burada ezbere am bölü bm diyebilirim.
+
+304
+00:36:08,851 --> 00:36:13,371
+yapamıyorum. Sadece şunu düşünüyorum. Payın derecesini ile paydanın derecesini karşılaştırıyorum.
+
+305
+00:36:14,351 --> 00:36:18,771
+Hemen gözle karşılaştırdığımda yukarıda kalacak olan x'in derecesini belirliyorum.
+
+306
+00:36:18,931 --> 00:36:22,572
+Tabii ki kat sayısı da önemli. Artı sonsuz veya eksi sonsuz çıkacak.
+
+307
+00:36:22,692 --> 00:36:27,951
+İşte buna hem kat sayının hem de buradaki kuvvetin derecesine bağlı olarak artı sonsuz mu, eksi sonsuz mu çıkacak.
+
+308
+00:36:28,331 --> 00:36:29,011
+Bunu belirliyorum.
+
+309
+00:36:29,556 --> 00:36:40,936
+Dolayısıyla uzun uzada işlem yapmama gerek kalmıyor. Ne yapmam gerekiyormuş? Polinomda en büyük dereceli terime bakıyorum. Rasyonel fonksiyonla en büyük dereceli terimlerine bakıyorum. Hem payın hem faydanın.
+
+310
+00:36:41,300 --> 00:36:49,480
+pi paydadan daha küçükse, düşünüyorum ki sadeleştirme yapsam sonsuz aşağıda kalacak. x aşağıda kalacak. Dolayısıyla sayı bölü sonsuzdan sıfır gelecek.
+
+311
+00:36:50,100 --> 00:36:55,360
+İkisi birbirine eşitse, sadeleştirme yaptığımda kat sayılar kalacak. Dolayısıyla kat sayıların bölümü.
+
+312
+00:36:56,000 --> 00:37:05,020
+Pi paydadan daha büyükse, x payda kalacak. x payda kalacak o zaman artı sonsuz veya eksi sonsuz çıkacak. İşte bunun için küçücük düşünmemiz gerekiyor.
+
+313
+00:37:06,300 --> 00:37:07,900
+Şimdi bakalım ne kadar anlamışsınız.
+
+314
+00:37:10,195 --> 00:37:14,916
+Şurada ne olur elinizdeki noktaya bakarak takip ediyorsanız bakmayın onlara şimdi.
+
+315
+00:37:16,055 --> 00:37:18,055
+Ve şu sorulara bakın bakalım beraber yazalım.
+
+316
+00:37:20,076 --> 00:37:21,815
+Birinci soruyu söyleyin bakalım ne çıkacak.
+
+317
+00:37:23,395 --> 00:37:25,115
+Kimden sorulur bunun cevabı?
+
+318
+00:37:25,775 --> 00:37:27,536
+Dedik ki en büyük dereceli terime bakın.
+
+319
+00:37:27,876 --> 00:37:29,496
+En büyük dereceli terim orada x küp.
+
+320
+00:37:29,940 --> 00:37:49,900
+Dolayısıyla 3x küpe soracağım ben. Yani diyorum ki siz burada hiç boşu boşuna duruyorsunuz. x sonsuza giderken sizin hiçbir hükmünüz yok. Ben sorumu buna soracağım. 3x küpün x sonsuza giderken limiti ne olur? Artı sonsuzluğu küpünü alsam yine artı sonsuz gelecek. Sonucun zaten sonsuz çıkacağını biliyorum. O zaman diyorum ki sonuç artı sonsuzdur.
+
+321
+00:37:51,092 --> 00:37:54,292
+Aynısı için eksi sonsuza şimdi döndüm.
+
+322
+00:37:54,652 --> 00:37:56,792
+Diyorum ki en büyük dereceli terimi bulacağım.
+
+323
+00:37:56,952 --> 00:37:58,452
+Yani diyorum ki benim muhatabım bu.
+
+324
+00:37:59,188 --> 00:38:18,887
+Sizinle işim yok. Bunlar gitti. Şimdi 3x küpe soruyorum. Diyorum ki sen eksi sonsuz için limitin nedir? Ne yapıyorum? 3 burası bir kere artı, pozitif. x küpünü alacağım ve eksinin kübünü alacağım. Dolayısıyla negatif bir sayının kübünü aldığımda yine sonuç negatif çıkar. O zaman ne diyorum? Bu kez burası eksi sonsuz oldu.
+
+325
+00:38:26,516 --> 00:38:31,735
+Üstümdeki derecesi önemli. Mesela burası eksi 3x küp olsaydı, o zaman sonuç artı çıkacaktı.
+
+326
+00:38:31,936 --> 00:38:36,756
+x küpten dolayı eksi gelecekti, eksi 3'ten dolayı da bir eksi gelecekti. Sonuç artıya dönecekti.
+
+327
+00:38:36,756 --> 00:38:41,256
+İşte burada küçücük dikkat etmemiz gerekiyor sadece. Var mı sorun?
+
+328
+00:38:42,235 --> 00:38:48,376
+Şuna döndüğüm zaman bakıyorum. Diyorum ki, yine böyle bir polinom vermiş, en büyük derecelik terimi buldum.
+
+329
+00:38:48,476 --> 00:38:51,756
+Diyorum ki sana sormayacağım, ben sorumu, ben sorumu, x'lere 4'e soracağım.
+
+330
+00:38:52,275 --> 00:39:03,475
+sonsuzun dördüncü kuvvetini aldım da yine sonsuz geldi. Son aşamaya geldim. Aynı sorunun eksi sonsuzluğu. Yine diyorum ki bunların hiçbir önemi yok.
+
+331
+00:39:03,475 --> 00:39:15,895
+İlk de bunlar. x üzeri 4'e soracağım sorumu. x üzeri 4, dördüncü kuvvetini alacağım. Kimin eksi sonsuzluğu negatif bir sayıla dördüncü kuvvetini ne yapar? Artı yapar. O zaman diyorum ki sonuç artı sonsuzluğu gör.
+
+332
+00:39:16,659 --> 00:39:23,719
+İşte bu kadar. Bunlar bizim için kullanışlı olacak. Karşımıza çıkacak ileride. Nerede karşımıza çıkacak? Eğri çiziminde karşımıza çıkacak.
+
+333
+00:39:24,436 --> 00:39:30,596
+Onun haricinde test sınavında yine böyle küçük küçük hani şu doğrudur bu doğrudur tarzında sorularak da çıkabilir.
+
+334
+00:39:31,136 --> 00:39:36,836
+En büyük dereceli terime bakıp hiç işlem yapmama gerek yok. Böyle gözümle gördüğüm anda artık bu artı sonsuz bu x sonsuz demem lazım.
+
+335
+00:39:37,496 --> 00:39:44,036
+Dolayısıyla bir polinomun sonsuza ve x sonsuzdaki limitleri ya artı sonsuza x sonsuz çıkarmış. Sayı çıkması durumu yok bir kere bunu öğrendik.
+
+336
+00:39:44,855 --> 00:39:49,436
+Rasyonel fonksiyona gelirsek bunda ne dedik? En büyük dereceli terimi buldum.
+
+337
+00:39:52,436 --> 00:40:14,916
+5x kare. Bunlara bakmıyorum. Aşağıya bakıyorum 3x kare. Buna da bakmıyorum. Dolayısıyla şunları karşılaştıracağım. Ne diyordu bana? Payın derecesi ile paydanın derecesine bak. Payın derecesi 2. Paydanın derecesi de eşit. İkisi birbirine eşit. O zaman ne diyordu? Paydan 5'e al, paydan 3'e al. İşte sonucu görüyorsun. Hiçbir işlem yapmadan sonuç 5 bölü 3'tür diyorum.
+
+338
+00:40:15,891 --> 00:40:22,451
+Çünkü ben uzun uzun işlem yapıp ikisini de x kare parantisini alsam sonuçta kat sayılar kalacak. 5 bölü 3 kalacak.
+
+339
+00:40:24,131 --> 00:40:26,251
+Buna baktığımda yine rasyonel fonksiyon.
+
+340
+00:40:26,471 --> 00:40:28,891
+Diyorum ki seninle işim yok, seninle işim yok.
+
+341
+00:40:29,192 --> 00:40:31,692
+Ben sorularıma en büyük dereceli terimlere soracağım.
+
+342
+00:40:32,411 --> 00:40:34,331
+Yukarısı 2, aşağısı 4.
+
+343
+00:40:34,612 --> 00:40:36,711
+Ne diyordu? Payın derecesi, payın derecesinden daha küçük.
+
+344
+00:40:36,871 --> 00:40:38,731
+Zaten ben bunları sadeleştirirsem.
+
+345
+00:40:39,539 --> 00:40:48,519
+Bunun x karenin aşağıda kalacağını görüyorum. Yukarıda 1 kaldı. Dolayısıyla sayı bölü x kareden sayı bölü sonsuz gelecek. O zaman sonuç 0'mış.
+
+346
+00:40:49,539 --> 00:40:54,699
+Payın derecesi paydanın derecesinden küçükse sonucu 0 diye yapıştırdım.
+
+347
+00:40:55,659 --> 00:40:58,300
+Tek dikkat etmem gereken yer dediğim gibi burasıydı.
+
+348
+00:40:58,643 --> 00:41:01,503
+Yine dönüyorum ki, diyorum ki size bakmayacağım.
+
+349
+00:41:01,943 --> 00:41:03,803
+Dönüyorum, diyorum ki size de bakmayacağım.
+
+350
+00:41:03,903 --> 00:41:05,643
+Ben sadece şu x'ine bakacağım.
+
+351
+00:41:06,403 --> 00:41:07,663
+Sadeleştirmemi yapıyorum.
+
+352
+00:41:08,583 --> 00:41:09,803
+Yukarıda 5x kalıyor.
+
+353
+00:41:10,203 --> 00:41:13,843
+Dolayısıyla ben 5x'in limitini bunun sonucu olarak yazacağım.
+
+354
+00:41:14,263 --> 00:41:16,843
+5x'in eksi sonsuzdaki limiti ne olur?
+
+355
+00:41:17,203 --> 00:41:18,283
+Eksi sonsuz olur.
+
+356
+00:41:20,163 --> 00:41:21,183
+İşte bu kadar çıkıyor.
+
+357
+00:41:22,623 --> 00:41:23,523
+Anlaşıldı mı burası?
+
+358
+00:41:25,364 --> 00:41:30,304
+Söyleyin bakalım. Birinizin de mikrofonu açık galiba. Böyle küçücük bir ışırt geliyor.
+
+359
+00:41:32,523 --> 00:41:34,283
+Bakın bakalım hanginizin mikrofonu açık.
+
+360
+00:41:36,203 --> 00:41:37,723
+Ben de şöyle yapayım.
+
+361
+00:41:38,864 --> 00:41:40,223
+Neredeydi? Şuradaydı.
+
+362
+00:41:41,824 --> 00:41:43,503
+Anlamış mısınız? Anlamamış mısınız?
+
+363
+00:41:43,623 --> 00:41:47,003
+Bir de kim beni dinliyormuş. Bir bakayım sesiniz arası çıkıyor bu hafta.
+
+364
+00:41:47,003 --> 00:41:48,203
+Anlaşıldı hocam.
+
+365
+00:41:49,780 --> 00:41:54,199
+Yenime girişçilere soracağım. Hiç görmedim diyenlere.
+
+366
+00:42:00,199 --> 00:42:03,360
+Soru sormam gerekiyormuş. Lafla sordum ama tabii.
+
+367
+00:42:10,036 --> 00:42:13,036
+sonuna nefes olayım. Çok kuruşmuşum yine.
+
+368
+00:42:13,036 --> 00:42:17,036
+Neredeyiz?
+
+369
+00:42:17,036 --> 00:42:20,036
+Hıh, çeteye yazacaktım pardon.
+
+370
+00:42:20,036 --> 00:42:24,036
+Alın bakalım size hankedi olalım.
+
+371
+00:42:24,036 --> 00:42:27,036
+Anladınız mı, anlamadınız mı?
+
+372
+00:42:27,036 --> 00:42:31,036
+Ben de o arada şurayı temizleyeyim.
+
+373
+00:42:31,036 --> 00:42:35,036
+Ne yapacaktım ona bakayım. 13.42 yapmışız zaten.
+
+374
+00:42:37,108 --> 00:42:46,228
+Bugün dediğim gibi 1.5 gibi bitireceğim ama 1.5 saatte full ders yaparsak ben de çok yoruluyorum. Siz de çok yoruluyorsunuz. O yüzden böyle küçücük bir ara vereceğiz.
+
+375
+00:42:46,547 --> 00:42:54,347
+10 dakika daha ders yapalım. Sonsuz limitleri yapacağız. Çünkü burada birazcık beynimiz yanabilir belki. Sonra hemen ara veririz.
+
+376
+00:42:57,208 --> 00:43:04,288
+Bakalım. Tamam. Anlamadım diyen yok. Süper. O zaman geçebiliriz aşağıya.
+
+377
+00:43:06,099 --> 00:43:08,719
+Şimdi neredeyiz? Şuradayız.
+
+378
+00:43:11,360 --> 00:43:14,340
+Şimdi ne yaptık? Şunlardan bahsetmiş olduk artık.
+
+379
+00:43:15,019 --> 00:43:16,719
+Nelerden bahsetmiş olduk?
+
+380
+00:43:17,876 --> 00:43:20,476
+a'ya giderken limit nasıl alınıyormuş öğrendik.
+
+381
+00:43:21,676 --> 00:43:24,556
+İşte sonsuza giderken limit nasıl alınabiliyormuş onu öğrendik.
+
+382
+00:43:24,636 --> 00:43:27,996
+Dedik ki hep amacım, temel amacım sayı bölü sonsuzları yakalamak.
+
+383
+00:43:28,516 --> 00:43:29,776
+Bunu yakalamaya çalışacağım.
+
+384
+00:43:29,836 --> 00:43:33,956
+Ama ne gördük? Biraz önce böyle sinüs ve kosinüsle ilgili böyle küçük bir detay varmış.
+
+385
+00:43:34,136 --> 00:43:36,396
+Ona dikkat edecekmişim. Orada sayı bölü sonsuz olayı yok.
+
+386
+00:43:36,496 --> 00:43:40,496
+Orada sinüs ve kosinüsün sürekli dalgalanması periyodik fonksiyon oluşundan kaynaklı olarak.
+
+387
+00:43:41,296 --> 00:43:44,016
+Salınım göstermesinden kaynaklı bir sıkıntı var orada.
+
+388
+00:43:44,916 --> 00:44:05,456
+En başa gelirsek, ne dedim? Özetinde en başında bir limit işlemine uğraşırken karşımıza 3 tane sonuç çıkabilir dedik. Sonuç bir sayı çıkabilir dedik. Bir sürü sayıya ulaştık, biraz önce gördük. Sonuç artı ve eksi sonsuz çıkabilir dedik. Biraz önce gördük, artı sonsuz ve eksi sonsuz çıkmına şahit olduk artık. Biliyoruz ne zaman artı sonsuz, ne zaman eksi sonsuz çıkabilir.
+
+389
+00:44:06,456 --> 00:44:08,656
+Ama şunu görmedik henüz.
+
+390
+00:44:10,900 --> 00:44:16,159
+Biraz önce, pardon, gördük. Artı sonuç, eksis sonsu gördük ama şöyle bir durumda gördük.
+
+391
+00:44:17,639 --> 00:44:21,900
+Nerede o? Şöyle bir durum artı sonsuz ve eksis sonsuz gördük.
+
+392
+00:44:22,900 --> 00:44:25,420
+Rasyonel fonksiyon ve polinom fonksiyonu için gördük.
+
+393
+00:44:25,679 --> 00:44:31,139
+Ama bunların dışında bir fonksiyonda henüz sonucun sonsuz çıkmasıyla ilgili bir durum görmedik.
+
+394
+00:44:31,679 --> 00:44:32,559
+Şimdi ona gelelim.
+
+395
+00:44:33,139 --> 00:44:51,159
+Doğru, sonsuz gördük biraz önce. Limitin çıkmaması durumunu da gördük. Dedik ki sağ limit, sol limit çıkmayabilir, eşit olmayabilir. O zaman limit yoktur. Bir de sinüs ve kosinüsle ilgili limitin olmaması. Hani böyle sağlı, sol da değil, hiç limit yok. Ona dair bir örnek gördük. Şimdi bir de şundan bahsedeceğiz.
+
+396
+00:44:51,860 --> 00:44:58,020
+Şurada da aynı şey var. Mesela dedik ki, şunun sonucunu artı sonsuz yazdım mesela biraz önce.
+
+397
+00:44:58,580 --> 00:45:03,720
+Artı sonsuz yazdım ama bu fonksiyonun limiti var mıdır diye bana sorsa ben ne diyeceğim aslında?
+
+398
+00:45:04,580 --> 00:45:08,420
+Hayır diyeceğim, bu fonksiyonun limiti yoktur. Çünkü ben buraya artı sonsuz yazıyorum.
+
+399
+00:45:09,560 --> 00:45:11,480
+Ne dedik biz? Sonucun sayı çıkması gerekiyor.
+
+400
+00:45:11,480 --> 00:45:17,420
+Yani şöyle bir özelliği var. Eşittir deyip yazabileceğim bir ifadeye ulaşıyorum.
+
+401
+00:45:18,291 --> 00:45:25,532
+sonsuza ulaşıyorum. Ama ben beğeniyor muyum bu cevabı? Aslında matematikçi olarak beğenmiyorum. Diyorum ki hayır bu fonksiyon benim istediğim bir limite gitmiyor.
+
+402
+00:45:25,992 --> 00:45:30,132
+Dolayısıyla bu fonksiyonun limiti var mıdır derse bana hayır limiti yoktur diyeceğim.
+
+403
+00:45:30,652 --> 00:45:37,552
+Ama şimdi birazcık açıyorum. Dediğim gibi burasının artı sonsuz çıkması veya şurasının eksi sonsuz çıkmasını beğenmeyen benim.
+
+404
+00:45:38,003 --> 00:45:55,324
+Yani ben matematikçi karpsisi yapıyorum. Ben buna matematikçi karpsisi diyorum. Sonuçlandırmışım ne güzel. Eşittir deyip yapabileceğim bir yer var. Fonksiyon ne güzel. Gidiyor bir yere. Ama ben gittiği yeri beğenmiyorum. E limit yoktur diyorum. Ama şuna göre bunlar çok daha güzel fonksiyonlar. Biraz önce yazdığım şu limit işte sinüs x'in.
+
+405
+00:45:55,987 --> 00:46:05,748
+durumunda ne dedik? Ya dursa duracak bir yerde de duramıyor dedik. Ve dolayısıyla buna dedik ki bunun hiç yani eşittir deyip de söyleyebileceğim bir şey yok. Bunun limitine yok dedik.
+
+406
+00:46:06,527 --> 00:46:15,947
+Şimdi şu iki fonksiyonu karşılaştırdığımda bu çok daha kıymetli benim için. Neden? En azından ben eşittir, sonsuz diyorum. Beğenmesem de ben bu limiti sonuçlandırabiliyorum.
+
+407
+00:46:15,947 --> 00:46:23,467
+İşte burada küçük bir ayrımımız var. Yani şuradaki limit yokluğa, buradaki limit yok arasında minik bir nüans farkı var.
+
+408
+00:46:23,987 --> 00:46:38,427
+Şimdi onu öğreneceğiz ve sonsuz çıkmasının farklı bir durumunu daha göreceğiz. Konuyu böyle bağlamış olalım. İkisini. Şimdi neden bahsediyorum? Bir onu görelim. Sonra da bir tane örnek üzerinden gidip ara veririz.
+
+409
+00:46:39,768 --> 00:46:47,228
+Şimdi diyor ki, önce cümleyi okuyalım, sonra üzerinde bir daha düşünelim. Sonsuz limitler başlamış. Yani sonucu sonsuz çıkan limitler.
+
+410
+00:46:47,699 --> 00:46:54,780
+Diyoruz ki bazen değerleri keyfi olarak büyüyen, yani böyle çok çok büyüyen, yani sonsuza giden fonksiyonlardan bahsediyoruz.
+
+411
+00:46:55,480 --> 00:47:02,300
+Fonksiyonlara şöyle diyoruz, birçok kitapta göreceksiniz, bir sonsuz limite sahiptir diyoruz.
+
+412
+00:47:02,835 --> 00:47:07,615
+Yani sonuçlandırabiliyorum ben bu limiti ve sonsuz limiti var diyorum aslında.
+
+413
+00:47:08,175 --> 00:47:12,835
+Ama aslında söylediğimiz şey şu oluyor, matematik olarak yanlış bir şey söylemiş oluyoruz.
+
+414
+00:47:12,975 --> 00:47:19,515
+Fakat diyor ki sonsuz bir sayı olmadığında sonsuz limitler, bizim istediğimiz gibi limitler değiller maalesef.
+
+415
+00:47:19,635 --> 00:47:21,315
+Gerçekte limit değillerdir.
+
+416
+00:47:21,775 --> 00:47:28,555
+Fakat yine de dediğim gibi hani eşittir sonsuz yazmakla, hayır bunun hiç limiti yok yazmak arasında aslında dünyalar kadar fark var.
+
+417
+00:47:28,555 --> 00:47:30,135
+O yüzden yine de kıymetli bizim için.
+
+418
+00:47:30,835 --> 00:47:42,615
+beğenmeyen de biz olsak da yine de buna bir isim koymuşuz. Biz bunu şöyle adlandırabiliyoruz. Bu limiti yok, evet. Ama sonsuz limite sahiptir de diyebiliyoruz fonksiyon için.
+
+419
+00:47:43,539 --> 00:47:52,800
+Limiti var mı? Yok. Sonsuz limiti var mı? Evet, var. Yani o sonsuz çıkma durumunu ayrı bir kategoriye sokuyoruz. Bundan bahsediyorum burada.
+
+420
+00:47:53,579 --> 00:47:59,260
+Neden önemli? Çünkü keyfi olarak büyüyen fonksiyonların davranışını belirlemek için kullanacağız.
+
+421
+00:47:59,400 --> 00:48:06,340
+Yani özellikle grafik çiziminde, özellikle asimptoplarda işte artı sonsuza mı uzatacağım ben o eğriye, eksi sonsuza mı uzatacağım?
+
+422
+00:48:06,340 --> 00:48:11,539
+Eğriye çizerken bu benim için önemli olacak. Dolayısıyla sonsuz çıkması, eksi sonsuz çıkması her ne?
+
+423
+00:48:11,539 --> 00:48:17,240
+ne kadar sonucu beğenmesek de yine de bir fonksiyonun kararlılığını göstermek için, davranışını göstermek için önemli bir şey.
+
+424
+00:48:17,240 --> 00:48:22,800
+En azından bir yerde yaklaştırıp bitirebiliyoruz. Sinüs de onu da yapamıyoruz. Böyle çizip çizip bırakıyoruz bir yerde.
+
+425
+00:48:23,140 --> 00:48:29,860
+Bu öyle gidiyor diyoruz. Nereye gidiyor? Gidiyor işte bir yerlere. En azından burada diyoruz ki sonsuza gidiyor diyebileceğim bir yer var.
+
+426
+00:48:30,675 --> 00:48:43,056
+Anlaştık mı? Limit var mı derse artı sonsuz ve eksi sonsuz cevabı mı? Hayır, limiti mevcut değil. Sonsuz limit var mı? Evet, var. Atıyorum, artı sonsuz limit var veya eksi sonsuz limit var diyoruz.
+
+427
+00:48:43,423 --> 00:49:02,224
+özel bir isim veriyoruz. Yani sonsuz limiti var anlamında kullanıyoruz. Limiti yok, sonsuz limiti var. Yani sonucu sonsuz çıkan bir limiti var anlamında. Böyle küçük bir kelime oyunu. Ama önemli bir oyun bu. Hele ki test sınavında belki böyle kelime oyunu yapıp dikkatinizi de ölçmeye çalışabilirler. O yüzden normalden birazcık daha fazla duracağım burada.
+
+428
+00:49:04,064 --> 00:49:08,764
+Şimdi neden bahsediyoruz? Bunun üzerinde bir tanecik soruyla anlatayım. Sonra ara verelim.
+
+429
+00:49:09,748 --> 00:49:11,887
+Mesela elimizdeki fonksiyon şu olsun.
+
+430
+00:49:12,768 --> 00:49:17,588
+1 bölü x karenin x eşittir sıfırdaki davranışını inceleyelim diyor.
+
+431
+00:49:18,148 --> 00:49:22,628
+Şimdi nasıl ki sayı bölü sonsuza sıfır dedik, şimdi başka bir şeyden daha bahsedeceğim.
+
+432
+00:49:22,708 --> 00:49:29,168
+Yine matematiği parçalamak anlamına geliyor aslında bu yazdığım şey ama öğrenci için ezberlemesi çok daha kolay bir şey.
+
+433
+00:49:29,947 --> 00:49:34,807
+Önce düşünelim, şuralara bakmayalım. Sayısal olarak görelim bir neden bahsettiğimizi.
+
+434
+00:49:35,152 --> 00:49:39,012
+Mesela sıfırdaki davranışını, yani sıfırdaki limitini incelemek istiyoruz.
+
+435
+00:49:39,112 --> 00:49:44,112
+Sıfıra nasıl yaklaşabilirim ben? Sıfıra sağdan yaklaşabilirim veya soldan yaklaşabilirim.
+
+436
+00:49:44,351 --> 00:49:48,351
+Dolayısıyla x'imiz bu. Ne yapmışsa sıfıra yaklaşmışsın. Mesela sağdan.
+
+437
+00:49:48,811 --> 00:49:52,052
+İşte 0.001 değerini almış. Sıfıra çok daha yakın.
+
+438
+00:49:52,612 --> 00:49:54,872
+Birazcık daha uzak bir değerini almış. 0.01.
+
+439
+00:49:55,432 --> 00:49:59,672
+İşte 0.1'i almış. Sonra 1 bölü x kare de yerine yazmış bunları.
+
+440
+00:49:59,672 --> 00:50:01,652
+0.1 için 100 çıkmış.
+
+441
+00:50:02,516 --> 00:50:24,675
+Sonra 0.01 olmuş. Yani 0'a birazcık daha yakın bir değer almış. Ne çıkmış? İşte 10.000 çıkmış. 0.001 almış. 0'a daha yakın bir değer. Gitmiş burada ne çıkmış? 1 milyon çıkmış. Birazcık daha yakın alsak çok daha büyüyecek. Dolayısıyla buradan şunu anlıyorum. Ben 0'ın sağına ne kadar yaklaşırsam y'nin değeri o kadar daha yukarıda çıkacak.
+
+442
+00:50:30,516 --> 00:50:43,496
+0'a birazcık daha yaklaşmışım, 1 milyona gelmiş. Belki de 0-0-0-1'e gittiğimde işte 1 milyar çıkacak vesaire. Dolayısıyla ben buradan anlıyorum ki 0'ın sağ tarafında bu fonksiyon ne kadar yaklaşırsa bu kadar büyüyecek. Yani artı son sayı edecek.
+
+443
+00:50:44,500 --> 00:50:53,680
+Diğer tarafa bakarsam, x'i 0,01, işte x'i 0,1, x'i 0,1. x'i 0,1 şurada mesela, bunun değeri şurada gelmiş.
+
+444
+00:50:54,300 --> 00:50:58,200
+x'i 0,01, 0'a birazcık daha yakın, daha yukarıda gelmiş değeri.
+
+445
+00:50:58,620 --> 00:51:01,740
+0,01, 0'a daha yakın, onun değeri daha da yukarıda gelmiş.
+
+446
+00:51:02,140 --> 00:51:06,120
+Dolayısıyla şunu anlıyorum, negatif taraf falan da ben 0'a çok yaklaşsam,
+
+447
+00:51:06,675 --> 00:51:10,476
+Ne yapıyorum? Yine gittikçe büyüyen değerlere yani artı sonsuz ekliyorum.
+
+448
+00:51:11,016 --> 00:51:13,655
+Dolayısıyla bu kaba mantıkla her seferinde bunu yapmayacağız.
+
+449
+00:51:14,056 --> 00:51:15,496
+Kaba mantığımız şu olacak.
+
+450
+00:51:16,275 --> 00:51:19,516
+Bu kez elimizde daha önce sayı bölü sonsuz öğrenmiştik.
+
+451
+00:51:19,635 --> 00:51:22,356
+Şimdi elimizde sayı bölü sıfır olacak.
+
+452
+00:51:24,083 --> 00:51:26,364
+Sayı bölü sıfırdan sonsuz gelecek.
+
+453
+00:51:26,764 --> 00:51:28,164
+Ama hangi sonsuz gelecek?
+
+454
+00:51:28,324 --> 00:51:32,624
+İşte sağdan ve soldan yaklaşmaya bağlı olarak bazen artı sonsuz edilecek bizi.
+
+455
+00:51:33,244 --> 00:51:34,884
+Bazen eksi sonsuz edilecek.
+
+456
+00:51:35,884 --> 00:51:40,764
+O konuyla ilgili bilmeniz gereken en önemli şey sayı bölü sıfır sonsuzdur.
+
+457
+00:51:41,023 --> 00:51:43,483
+Ama hangi sonsuzdur? Artı sonsuzdur demiyorum.
+
+458
+00:51:43,784 --> 00:51:45,983
+Artı sonsuz olabilir, eksi sonsuz olabilir.
+
+459
+00:51:46,423 --> 00:51:47,523
+İncelememiz gerekiyor.
+
+460
+00:51:47,844 --> 00:51:49,443
+Yani şunu düşünmem gerekiyor.
+
+461
+00:51:50,132 --> 00:51:57,672
+0 benim için nasıl ki parçalanma noktası için demiştik ki sağ ve sol limitlere bakmamız gerekiyor parçalı fonksiyonun parçalanma noktasında.
+
+462
+00:51:58,471 --> 00:52:00,211
+Evet, 0'da limit yoktur, aynen öyle.
+
+463
+00:52:01,951 --> 00:52:12,251
+Sayı böyle 0 geldiği durumlarda, yani pi değil 0 yapan noktada limit aldığımda aynen sağ ve sol limite nasıl ki parçalı fonksiyonuna bakıyorum, burada da bakmam gerekiyor.
+
+464
+00:52:12,331 --> 00:52:16,071
+Çünkü 0 benim için artık pi değil 0 yapan nokta benim için asimptot oluyor.
+
+465
+00:52:16,071 --> 00:52:18,132
+Yani benim için yine de fonksiyon parçalanma noktası.
+
+466
+00:52:18,132 --> 00:52:46,112
+parçalanmış oluyor. Hem de nasıl parçalanmış oluyor? O noktadan geçmeyecek şekilde parçalanmış oluyor. Dolayısıyla bilmem gereken en önemli şey sayı böyle sıfır olduğunda sonuç sonsuz çıkacak bir kere ondan eminim. Ama artı sonsuz mu, eksi sonsuz mu çıkacağını sağına ve soluna bakarak karar veriyorum. Çünkü parçalı bir fonksiyon oluşturmuş oluyorum. Ben sıfırdan geçmeyecek, paydayı sıfır yapan noktadan geçmeyecek. Demek ki onun sağında ve solunda iki ayrı eğrim var. O zaman o iki ayrı eğri için fonksiyonum nasıl davranıyor incelemeliyim. Böyle bir tablo.
+
+467
+00:52:46,132 --> 00:53:12,371
+yapmayacağız tabii ki. Ne yapacağız? Diyeceğiz ki 0. Aa diyeceğim pay diye 0 yapan noktadaki limitini soruyor. Bu da benim için fonksiyonun parçalandığı noktalardan bir tanesi. Demek ki bir sağ limite bakmalıyım ve sol limite bakmalıyım. Sağ için bakıyorum 1 bölü x kare. Bir kere şunu hemen yapıştıracağım. Sonuç sonsuz çıkacak. Bundan eminim. Ama hangi sonsuz çıkacak sorusunun cevabını arıyorum sadece. 0'ın sağından 1 bölü x kare. Yukarısı zaten pozitif.
+
+468
+00:53:13,076 --> 00:53:19,076
+aşağısı x kare zaten, eksi de olsa artı da olsa bu da pozitif. Dolayısıyla sonucun artı sonsuz çıktığını biliyorum.
+
+469
+00:53:19,935 --> 00:53:23,715
+1 bölü x kare sıfırın solundan yaklaşırken yine diyorum ki pi pozitif.
+
+470
+00:53:24,515 --> 00:53:29,056
+E pi'de de x kare olduğu için bu negatif de olsa pozitif. Bu da artı sonsuz da gidecek.
+
+471
+00:53:29,955 --> 00:53:31,076
+Dolayısıyla bu...
+
+472
+00:53:31,391 --> 00:53:37,071
+Her ne kadar böyle parçalı fonksiyon, sonuç sonsuz çıkıyor desek de yine de kararlı bir fonksiyon.
+
+473
+00:53:37,291 --> 00:53:40,652
+Çünkü şunu görüyorum ben, sıfırın sağından baktım, artı sonsuza ulaştım.
+
+474
+00:53:41,071 --> 00:53:43,471
+Sıfırın solundan baktım, yine artı sonsuza ulaştım.
+
+475
+00:53:43,611 --> 00:53:45,871
+Dolayısıyla artık şunu yazabilmeye iznim var.
+
+476
+00:53:46,371 --> 00:53:50,451
+Sağından ve solundan limitleri her ne kadar beğenmesem de artı sonsuz çıktı.
+
+477
+00:53:51,051 --> 00:53:52,652
+O zaman ben şunu söyleyebilirim.
+
+478
+00:53:52,751 --> 00:53:55,531
+x sıfıra giderken bu fonksiyon artı sonsuza gidiyor.
+
+479
+00:53:56,071 --> 00:53:59,391
+Yani ben bu limiti sonuçlandırabiliyorum ve bu sonuç artı sonsuz.
+
+480
+00:53:59,391 --> 00:54:09,791
+sonsuzdur diyorum. Ve buradan söyleyebileceğim iki tane şey var. Bana soru olarak şunu sorarsan, limit var mıdır? Hayır, limit yoktur diyeceğim. Limit mevcut değil.
+
+481
+00:54:11,231 --> 00:54:23,571
+Yazmayayım uzunluğu. md dediğim limit mevcut değil. Ama şunu sorarsan, onu da şuraya uzatayım. Sonsuz limit var mı? O zaman şöyle diyeceğim. Evet, sonsuz limiti var.
+
+482
+00:54:23,952 --> 00:54:27,232
+sonucu sonsuz çıkan bir limiti var anlamında söylüyorum bunu.
+
+483
+00:54:29,364 --> 00:54:34,043
+Anlaştık mı aradaki fark? Limit yok. Limit var mı? Hayır limit yok.
+
+484
+00:54:34,043 --> 00:54:39,783
+Yani paydayı sıfır yapan noktada bir fonksiyonun limitinin olması mümkün değil. Sonucun sonsuzlu çıkacağını zaten biliyoruz.
+
+485
+00:54:40,324 --> 00:54:43,023
+Ama dediğim gibi yine de bu fonksiyon kararlı bir fonksiyon.
+
+486
+00:54:43,123 --> 00:54:46,983
+Çünkü sağdan soldan bakıyorum her ne kadar beğenmesem de aynı sonsuza gidiyor.
+
+487
+00:54:47,103 --> 00:54:52,023
+Dolayısıyla ben bu limit işlemini sonuçlandırıp beğenmediğim o artı sonsuza yazabiliyorum buraya.
+
+488
+00:54:52,563 --> 00:54:57,203
+Beğenmiyorum ama dediğim gibi kendim kapris yapıyorum ama yine de diyorum ki beterim beteri var.
+
+489
+00:54:57,364 --> 00:55:25,364
+hiçbir yere gitmeyebilirdi. En azından bu bir yere gidiyor. En azından ona diyorum ki bir hak ettiği önemi vereyim. Evet, istediğim gibi bir limit değil ama sonsuza giden bir limiti var da diyebiliyorum. O yüzden şıklarda şöyle şöyle olabilir. İşte aşağıya giden hangisi doğrudur? Limiti mevcut değildir. Evet, bu doğrudur diyeceksiniz. Sonsuz limiti vardır. Evet, buna da doğru diyeceksiniz. Çünkü sonsuz limiti var mı? Evet. İsmi sonsuz olan yani sonsuza giden bir limiti var. Atıyorum başka başka cevaplar.
+
+490
+00:55:25,364 --> 00:55:46,503
+Dolayısıyla limit mevcut değil ve sonsuz limiti vardır. İkisi ayrı şeyler. Bu sadece dediğim gibi sonucu sonsuza çıkan limitlerde bu ayrımı yapmanız gerekiyor. Limiti yok. İstediğim gibi bir limit yok. Ama hak ettiği önemi de verelim. Sonsuza gitmiş en azından. Bu da kötü bir şey değil aslında. Ben beğenmediğim için sıkıntı olmuş oluyor. Sonsuz limiti vardır diyorum.
+
+491
+00:55:47,723 --> 00:55:48,783
+Tamam mı?
+
+492
+00:55:49,248 --> 00:55:54,487
+Şimdi bir ara verelim bakalım. Bir tane daha yapacağız bundan. Sonsuz limiti olmayan fonksiyona da örnek yapalım.
+
+493
+00:55:55,268 --> 00:56:02,427
+Sonra devam edelim. Kaç dakika olsun aramız? Çok uzun olmasın. 56 oldu. 5 dakika, 6 dakika olsun.
+
+494
+00:56:02,967 --> 00:56:08,927
+Yine zaten soruyla başlayacağım ben. Yanınıza çayınızı kahvenizi alsanız da zaten yine devam ederiz.
+
+495
+00:56:11,927 --> 00:56:15,927
+Birazcık daha yapmamız lazımdı. Ben kapsız gibi bitiririm diyordum ama.
+
+496
+00:56:17,108 --> 00:56:19,108
+belki 35'i sarkıtabilirim.
+
+497
+00:56:21,228 --> 00:56:21,988
+Hadi bakalım.
+
+498
+00:56:23,068 --> 00:56:25,068
+Şunu kapatayım ben de bir kahve alayım kendimi.
+
+499
+01:01:58,804 --> 01:02:03,764
+geldim. Şimdi bir tane soru gelmiş. [öğrenci]'ciğim orada mısın? Cevap vereyim hemen.
+
+500
+01:02:58,003 --> 01:03:02,023
+Başlayalım mı? Sesiniz çıkmıyor bugün. Yoruldunuz mu?
+
+501
+01:03:02,684 --> 01:03:03,403
+Başlayabiliriz.
+
+502
+01:03:04,304 --> 01:03:07,744
+[öğrenci] gelmedi mi? [öğrenci] soru sormuş. [öğrenci]'in sorusunu cevap vereceğim.
+
+503
+01:03:10,503 --> 01:03:17,724
+[öğrenci] demiş ki, [öğrenci] yok herhalde ama olsun. Yine de cevap verelim. Sonra izlerken belki görür.
+
+504
+01:03:20,724 --> 01:03:27,023
+Ne demiş? Tanım kümesindeki her eleman, değer kümesindeki bir elemanla eşleşmesi gerekmiyor mu fonksiyon kuralı gereği? Evet, gerekiyor.
+
+505
+01:03:27,023 --> 01:03:30,604
+Ama burada sıfır değeri, şu soru için konuşuyoruz.
+
+506
+01:03:31,724 --> 01:03:36,144
+Hiçbir değer kümesi elemanla eşleşmiyor. Yani fonksiyonun tamına aykırı değil mi demiş.
+
+507
+01:03:37,139 --> 01:03:56,319
+Doğru mu demiş? Doğru demiş. Tabii ki fonksiyon kuralına aykırı. Ama biz ne yapmıyoruz? Şuna dikkat etmemiz gerekiyor. Biz sıfırdaki limitini alıyoruz. Dolayısıyla tekrar üstüne basarak söylüyorum. Sıfırda tanımlı olmak zorunda değil fonksiyonumuz. Öyle bir iddiamız yok. Ve sıfır civarındaki sıfıra çok yaklaşırken sıfırın yakınında fonksiyon nasıl davranıyor diye bakıyoruz.
+
+508
+01:03:56,539 --> 01:04:05,139
+Dolayısıyla yine sıfırda tanımlı değil. Evet sıfırda tanımlı olmadığı için zaten iki fonksiyon iki parçaya bölünmüş ve sıfırdan geçmeyecek şekilde.
+
+509
+01:04:05,139 --> 01:04:17,460
+bir de iki parçaya bölünmüş. Dün yaptığımız parçalı fonksiyonlardan da farklı olarak onlara en azından parçalandığı noktadan geçiyorlardı. Burada sıfır bizim için asimptot olacak. Bundan daha sonra da bahsedeceğiz.
+
+510
+01:04:17,599 --> 01:04:33,139
+Zaten limit aldığımız için tanımlı olmak zorunda da değil. O yüzden fonksiyon tanımına aykırı zaten fonksiyonun tanım kümesinde değil. Fonksiyonun tanım kümesinde olmayan bir noktada biz limit alma işlemini yaptık ve o noktaya yakın yani fonksiyonun tanımlı olmadığı sıfırın sağında ve solunda nasıl davranıyor?
+
+511
+01:04:33,139 --> 01:04:36,139
+tanımlılık aramıyoruz burada.
+
+512
+01:04:37,588 --> 01:04:43,108
+Şimdi bir sonraki soruya gelirsek. Burada ne dedik? Fonksiyonu en azından beğenmesek de sonsuza gitmiş.
+
+513
+01:04:43,468 --> 01:04:50,128
+Dolayısıyla ben bu limit işleminin sonucu artı sonsuzdur diyebileceğimiz sonsuz yani oraya eşittir bir şey yazabildim mi?
+
+514
+01:04:50,128 --> 01:04:55,708
+Yazabildim. Beğenmesem de yazabildim. Onun en azından diyorum ki hakkını vereyim ben bu limit işlemini sonuçlandırabildim.
+
+515
+01:04:56,088 --> 01:05:02,488
+Sonsuz limiti vardır diyorum. Ama limiti var mıdır? Hayır. Limiti yoktur. Limiti vardır derken şunu kastırırız.
+
+516
+01:05:02,548 --> 01:05:04,568
+Yani sayı olan bir limiti var mı? Hayır yok. Sonsuz olan bir limiti var mı? Hayır yok.
+
+517
+01:05:05,588 --> 01:05:15,568
+limit var mı? Evet, sonsuz limiti var diyoruz. Aradaki küçücük böyle bir nüans farkı var. Hani dediğim gibi hakkını verelim. En azından bir yere gitmiş. Mantığıyla bu söylenebiliyor.
+
+518
+01:05:16,948 --> 01:05:29,568
+Mesela şuna bakalım. Bunda da 1 bölüksi soruyor. Artık şuralara uzun uzun bakmama gerek yok. Biraz önce niye öğrendim? Biraz önce çok önemli bir şey öğrendim. Şunu öğrendim. Yazamadım.
+
+519
+01:05:30,739 --> 01:05:32,739
+Kötü bir yerin üstünde tutuyorum mouse'u.
+
+520
+01:05:33,559 --> 01:05:37,480
+Sayı bölü sıfırın sonsuza gideceğini öğrendim.
+
+521
+01:05:37,599 --> 01:05:41,480
+Ama hangi sonsuza gideceğini işarete bakarak inceliyorum.
+
+522
+01:05:42,068 --> 01:05:55,708
+Bunlardan biri gelecek. Ve şunu da öğrendim. Pi diye sıfır yapan nokta benim için fonksiyonu parçalayan bir nokta. Hem de nasıl parçalıyor? Fonksiyonum oradan geçmeyecek üzere parçalanıyor. Dolayısıyla sağına ve soluna bakmam gerekiyor.
+
+523
+01:05:56,468 --> 01:06:05,228
+Şimdi bakıyorum. Diyorum ki sayı bölü sıfır geliyor. Dolayısıyla sonuç sonsuz çıkacak ama artı sonsuz mu eksi sonsuz mu olduğu sağına ve soluna bakarak karar vereceğim.
+
+524
+01:06:05,228 --> 01:06:10,068
+Sıfırın sağından bakmam gerekiyor diyorum. Sıfırın solundan bakmam gerekiyor. Bir kere sonsuz.
+
+525
+01:06:10,068 --> 01:06:22,448
+sonuç uzarı ikisini de yazacağım. İş bu işaretleri koymaya geliyor. Bakıyorum yukarısı pozitif, aşağısı sıfıra sağından yaklaştığım için pozitif, dolayısıyla sonuç artı sonsuz geliyor burada.
+
+526
+01:06:22,623 --> 01:06:29,783
+Buna bakarsak, yukarısı yine pozitif ama aşağıda sıfırın solundan yaklaştığım için negatif bir sayı var aslında.
+
+527
+01:06:30,143 --> 01:06:32,723
+Sıfıra çok yakın negatif bir sayı. Dolayısıyla burası eksi.
+
+528
+01:06:33,323 --> 01:06:38,343
+O zaman artı bölü eksiden sonuç eksi gelecek. Yani bunun cevabı eksi sonsuzluğu olacak.
+
+529
+01:06:39,603 --> 01:06:43,643
+Şimdi biraz öncekine bakarsak, biraz öncekinde ikisi de artı sonsuz çıktı.
+
+530
+01:06:43,983 --> 01:06:45,423
+Dolayısıyla ben ne diyebildim?
+
+531
+01:06:46,023 --> 01:06:51,063
+Evet, hoşuma gitmiyor ama bu fonksiyonun sıfırda limiti artı sonsuza gidiyor diyebildim.
+
+532
+01:06:51,063 --> 01:06:54,303
+Ama buna baktığımda bu fonksiyonu da onu dahi söyleyemiyorum.
+
+533
+01:06:54,583 --> 01:06:57,403
+Biri Anya'ya gitmiş, gitmiş y eksenin en tepesine gidiyor.
+
+534
+01:06:57,843 --> 01:07:01,383
+Öbür tarafına bakıyorsun Konya'ya gitmiş, gitmiş y eksenin en dibine gidiyor.
+
+535
+01:07:01,743 --> 01:07:04,863
+Dolayısıyla birisi yukarıda, birisi aşağıdayken ne diyemiyorum?
+
+536
+01:07:04,963 --> 01:07:06,563
+Buradaki artık kesinlikle limit yok.
+
+537
+01:07:06,703 --> 01:07:07,583
+Yani sonsuz limit.
+
+538
+01:07:07,603 --> 01:07:35,083
+limiti var dahi diyemiyorum burada. Sağdan baktım diyorum sağdan artı sonsuz geldi. Soldan baktım eksi sonsuz geldi. Dolayısıyla bu x ile birbirine eşit değil. Dolayısıyla limiti mevcut değil. Ve bana derse ki sonsuz limiti var mı? Hayır sonsuz limiti de yok diyeceğim burada. Yani bu artık iyice beter bir fonksiyon oldu. Sonsuz limiti eşittir. Hani beğenmesem de sonsuz veya eksi sonsuz diyebileceğim bir limiti dahi yok.
+
+539
+01:07:35,731 --> 01:07:41,431
+Anlaşıldı mı ikisi arasındaki fark? İkisinde de sonuçlar sonsuz geldi. İkisinde de limit mevcut değil.
+
+540
+01:07:42,172 --> 01:07:47,572
+Ama birinde en azından bir kararlılık var. Limitin aldığı noktanın sağında ve solunda artı sonsuza gidiyor.
+
+541
+01:07:48,012 --> 01:07:52,032
+Dolayısıyla limiti mevcut değil ama sonsuz limiti var mı? Evet, sonsuz limiti var.
+
+542
+01:07:52,032 --> 01:07:57,652
+Hani beğenseydin, sen bu cevabı beğenseydin ben eşittir, sonsuz yazıyordum, sonsuz limiti var diyebiliyorum.
+
+543
+01:07:58,192 --> 01:08:03,692
+Ama buna baktığında birisi artı sonsuza gitmiş, birisi eksi sonsuza gitmiş. Hatırlarsanız bunun grafiği şöyle.
+
+544
+01:08:03,731 --> 01:08:07,132
+bir parça burada, bir parça burada.
+
+545
+01:08:07,652 --> 01:08:11,371
+0'ı sağ tarafında şuralardayken noktalarım, 0'ı sol tarafında buralarda.
+
+546
+01:08:11,451 --> 01:08:14,192
+Bir an ya da biri Konya'da. Böyle bir bütünlük olmaz.
+
+547
+01:08:14,532 --> 01:08:16,391
+Dolayısıyla sağ limit sol limite eşit değil.
+
+548
+01:08:17,112 --> 01:08:18,631
+Fonksiyonun limiti mevcut değil.
+
+549
+01:08:19,271 --> 01:08:22,391
+Sonsuz limiti dahi yok. Sonsuz limiti de yok diyeceğim.
+
+550
+01:08:22,771 --> 01:08:28,811
+İşte ikisinin arasındaki fark bu. O yüzden biraz önceki fonksiyon aslında güzel bir fonksiyon.
+
+551
+01:08:29,371 --> 01:08:37,051
+Sadece biz kartlisi yaptığımız için, gittiği yeri beğenmediğimiz için, senin gidişin gidiş değil, gidiyorsun bir yere ama biz senin gittiğin yeri beğenmiyoruz diyoruz.
+
+552
+01:08:37,051 --> 01:08:48,332
+Bu hiçbir yere gidemiyor. Böyle bir tarafa yukarıda, bir tarafa aşağıda iyice dallanıp budaklanmış, farklı farklı yerlere giden bir fonksiyon. Ne limiti var, ne sonsuz limiti var.
+
+553
+01:08:50,547 --> 01:08:51,827
+Şuna da siz bakın bakalım.
+
+554
+01:08:53,203 --> 01:09:01,183
+Şu durum yani artı sonsuza mı gidiyor, eksi sonsuza mı gidiyor veya nasıl davranıyor kısmı ya süreklilikte de uğraşacağız. O yüzden bu kısım önemli olacak.
+
+555
+01:09:03,203 --> 01:09:08,863
+x eksi 3 bölü x kare eksi 4 fonksiyonunu vermiş. x eşittir 2'deki davranışını soruyor.
+
+556
+01:09:09,404 --> 01:09:18,484
+Dediğim gibi bundan davranış olarak bahsedilebilir. Yani x eşittir 2'deki limitini inceleyiniz demek yerine x eşittir 2'deki davranış şeklinde bahsedebiliriz.
+
+557
+01:09:18,484 --> 01:09:21,123
+Çünkü şunun farkındayız. Yani bu size şunu söylüyor.
+
+558
+01:09:21,203 --> 01:09:23,644
+buradan sen kayda değer bir limit bulamayacaksın.
+
+559
+01:09:24,244 --> 01:09:27,984
+Hani istediğin gibi bir limit değeri çıkmıyor ama davranışını ölçebiliyorsun.
+
+560
+01:09:28,103 --> 01:09:30,724
+Yani biraz önce ölçtük davranışını artı sonsuza gidiyormuş.
+
+561
+01:09:31,252 --> 01:09:37,472
+limiti istediğimiz gibi olmadığı için bundan davranış olarak da bastırıyoruz. O yüzden bu ifadeye de alışmamız lazım.
+
+562
+01:09:37,612 --> 01:09:42,512
+Limitin ne? İnceleyiniz diyeceği gibi x iştiriki de nasıl davrandığını inceleyiniz de diyebilir.
+
+563
+01:09:43,231 --> 01:09:49,432
+İşte bir tanesi ne dedik? Sağında da sonunda da artı sonsuza gitti. Mesela sıfıra giderken artı sonsuza gidiyor fonksiyonumuz diyebilir.
+
+564
+01:09:49,532 --> 01:09:56,512
+Çok büyüyor yani pozitif tarafa. Ama diğerine baktığımda sağda pozitif tarafa çok büyürken, sol tarafta negatif tarafa büyüyor.
+
+565
+01:09:56,512 --> 01:09:58,452
+Dolayısıyla davranışında tutarlılık yok.
+
+566
+01:09:59,252 --> 01:10:08,932
+Bu da onu kastediyor. x eşittir 2'de yani x eşittir 2 bizim için paydayı sıfır yapan değer. Dolayısıyla x yerine 2 yazdım da hemen dediğim gibi her türlü limit işleminde ne yapacaktık?
+
+567
+01:10:09,032 --> 01:10:21,152
+Baldır küldür hemen o verilen noktayı yerine yazacağız. Yazıyorum x yerine 2. Yukarısı eksi 1 oluyor. Aşağıda x yerine 2 yazdım. Sıfır geldi. Neyi anlıyorum? Aa diyorum burada sayı böyle sıfır durumu var.
+
+568
+01:10:22,868 --> 01:10:31,908
+Sayı bölü sıfır varsa ne yapacaktı? Sonuç artı sonsuz mu, eksi sonsuz mu çıkıyor acaba diye düşündüğüm için sağ ve sol büvide bakmam gerekiyor.
+
+569
+01:10:32,028 --> 01:10:35,608
+Ki bir sonraki slide'da bunu ipucu olarak yazmıştım zaten.
+
+570
+01:10:36,083 --> 01:10:44,304
+Şurada. En önemli ipucumuz bu. Not tutanlar buraya yazabilirler veya resminde çekebilirsiniz ki yollayacağım zaten ben size dediğim gibi özetleri.
+
+571
+01:10:44,884 --> 01:10:52,103
+İpucumuz şu. Paydayı sıfır yapan noktada limit alırken sağ ve sol limitleri kullanmalıyız ve işaret incelemesi yapmalıyız.
+
+572
+01:10:52,304 --> 01:10:56,564
+Sonuçta bulacağımız sonsuz cevabının işaretini de bu şekilde belirleyeceğiz diyorum.
+
+573
+01:10:57,724 --> 01:11:03,023
+Demek ki sayı bölü sonsuz geliyor. Bunu gördük. O zaman ikinin sağından ve ikinin solundan.
+
+574
+01:11:03,539 --> 01:11:11,319
+inceleme yapmalıyım diyorum. Bunu yapmak için işaret incelemesi yapacağım. Şunu bir güzel parçaladım ki daha rahat göreyim işaretleri. Şimdi yapalım bakalım beraber.
+
+575
+01:11:12,840 --> 01:11:24,059
+Birinci durumda x 2'nin sağından yaklaşıyor. Yani 2'den birazcık büyük bir sayı. 2.1 olsun mesela. 2.1-3. Bir kere şundan eminim. Hemen şuraya sonsuz cevabını yapıştıralım.
+
+576
+01:11:24,500 --> 01:11:36,620
+Bu da sonsuz çıkacak. Bu da sonsuz çıkacak. Benim yaptığım inceleme ne incelemesi? Bunların işaretini incelemesi. Bu sonsuzlar hangi sonsuzlar acaba? Bunu inceliyorum. Sonsuzlarımı yapıştırdım, işareti inceliyorum.
+
+577
+01:11:37,159 --> 01:11:43,319
+2'den birazcık büyük bir sayı. Gidip de öyle 5'lerle 6'larda uğraşmıyorum. 2.1, 2.01 böyle sayılarla uğraşıyorum.
+
+578
+01:11:43,319 --> 01:11:51,720
+2.1 olsun mesela. 2.1-3 burası negatif çıkar. 2.1-2 burası pozitif çıkar.
+
+579
+01:11:52,659 --> 01:12:05,439
+2.1 artı 2, burası da pozitif çıkar. Dolayısıyla yukarıda negatif var, aşağıda pozitif çarpı pozitiften pozitif var. Yukarısı negatif, aşağısı pozitifse sonuç ne çıkar? Eksi çıkar.
+
+580
+01:12:05,799 --> 01:12:18,039
+Haa diyorum ki bu eksi sonsuza gidiyormuş. Bakalım bu nereye gidecek? Şimdi ikini solundan yaklaşıyorum. 2'den birazcık küçük bir sayı. 1.9 olsun mesela. 1.9 eksi 3, burayı negatif yapar.
+
+581
+01:12:18,739 --> 01:12:43,180
+1.9-2, buraya negatif yapar. 1.9-2, buraya pozitif yapar. Dolayısıyla negatif çarpı negatiften negatif gelir. Negatif bölü negatiften sonuç pozitif gelir. Demek ki 2'nin sağından eksi sonuçta giderken, yani y eksenin en dibine doğru azalırken, 2'nin solundan artı sonuçta doğru yükselişe geçiyormuş fonksiyon.
+
+582
+01:12:43,828 --> 01:12:45,807
+O zaman davranış olarak ne diyeceğim?
+
+583
+01:12:46,427 --> 01:12:48,288
+Diyeceğim ki bu ikisi birbirine eşit değil.
+
+584
+01:12:50,528 --> 01:12:54,587
+Eşit olmadığı için de bu fonksiyonun limiti yok, sonsuz limiti de yok.
+
+585
+01:12:55,247 --> 01:12:56,268
+Bakayım [öğrenci] ne sormuş.
+
+586
+01:12:57,468 --> 01:13:00,408
+Sürekli sonsuz buluyoruz. Sayıya çevirmek için bir işlem yapmıyoruz.
+
+587
+01:13:00,488 --> 01:13:02,667
+Limitin başında tanımda artı ve eksi sonsuzda.
+
+588
+01:13:02,768 --> 01:13:05,847
+Evet limit yok dedik ama dediğim gibi bu bizim için şurada önemli olacak.
+
+589
+01:13:05,988 --> 01:13:07,968
+Biz burada aslında asimptot incelemesi yapıyoruz.
+
+590
+01:13:08,384 --> 01:13:17,804
+Şu anda farkında değiliz. Yani evet, en baştaki tanımımıza uygun olmayan bir şey yapıyoruz. Yani sonuca sonsuz çıkacağını görüyoruz. Limit var mı diye sorsa bize hayır, limit yok diyeceğiz zaten.
+
+591
+01:13:17,804 --> 01:13:31,844
+Ama limit dediğim gibi, limit birçok şeyde kullanılıyor. Asimptot incelemesinde kullanılıyor. Türev dediğimiz şey aslında bir limit alma işlemi. Dolayısıyla bizim limitin sonucunun ne çıkacağını veya limitin olup olmadığını bilmek kadar,
+
+592
+01:13:31,844 --> 01:13:36,384
+hani hoşlanmadığımız cevaplarını da bilmemiz gerekiyor. Hiçbir şey çıkmaması da bir anlam.
+
+593
+01:13:36,384 --> 01:13:41,623
+ifade ediyor fonksiyon için. Evet bir şey çıkmıyor. Neden çıkmıyor? Mesela işte sağ ve sol limiti eşit değil.
+
+594
+01:13:42,024 --> 01:13:47,024
+Buna işte sıçramalı süreksizlik diyeceğiz mesela. Niye çıkmıyor? İşte 1 artı sonsuza 1x sonsuza gidiyor.
+
+595
+01:13:47,024 --> 01:13:55,024
+Bunu sonsuz süreksizlik diyeceğiz. Dolayısıyla amacımız sadece şu değil. Fonksiyonu davranışta incelerken sayıya gidiyor mu diye bakıyorum değil.
+
+596
+01:13:55,164 --> 01:14:03,123
+Sayıya gitmiyorsa gitme işin sebebi nedir? Mesela bu ne yapıyor? İşte biraz önce evet hoşunuza gitmedi ama artı sonsuza gitti ikisi de. Bu bizim hoşumuza gitmiyor.
+
+597
+01:14:03,891 --> 01:14:05,932
+Sonsuz bir limit cevabı mı?
+
+598
+01:14:07,231 --> 01:14:09,631
+Hani işte orada diyorum ya küçük bir nüans farkı var.
+
+599
+01:14:10,452 --> 01:14:18,832
+Yani eşittir sonsuz, eşittir soru işareti koyduk. Siz de eşittir sonsuz yazdınız. Evet o sorunun cevabı oluyor. Eşittir sonsuz, sonsuza gidiyor.
+
+600
+01:14:19,311 --> 01:14:27,811
+Ama şöyle sorulursa, bu fonksiyonun limiti var mıdır denirse, hayır sonsuz bizim için limitin olduğuna dair bir cevap değil, limiti yoktur diyeceğiz.
+
+601
+01:14:28,112 --> 01:14:34,152
+Ama eşittir yazabiliyorum en azından. Dolayısıyla onun da hakkını vermemiz gerekiyor. Sonsuz limiti vardır diyoruz.
+
+602
+01:14:34,152 --> 01:14:38,012
+Yani bizim tanımladığımız limit tanımına uymuyor. Çünkü biz tanımı öyle yaptık.
+
+603
+01:14:38,452 --> 01:15:06,452
+saydık deseydi ki eşittir. Ne buluyorsan benim için okey. Hani artı sonsuz zaten ne bulabilirim ki? Ya sayı bulacağım, ya artı sonsuz, ya eks sonsuz. Başka bir şey icat edilmemiş zaten. Eşittir. Şuraya bir şey yazabiliyorsan bu fonksiyonun limiti vardır diye tanımlansaydık biz zaten hepsine ne güzel limiti varmış, limiti varmış diyecektik. Ama tanım olarak sayı olsun denmiş. Ama denmiş ki artı sonsuz, eks sonsuz da çıkıyor. Bunun çıkması da güzel bir şey. O zaman ona da sonsuz limiti vardır. Ama limiti var mıdır?
+
+604
+01:15:06,452 --> 01:15:08,992
+Hayır, en baştaki tanımımıza uymuyor şeklinde yazdık.
+
+605
+01:15:09,931 --> 01:15:11,371
+Bu soruda sonsuz limit yok.
+
+606
+01:15:11,796 --> 01:15:21,536
+Bu soruda çünkü sonsuz limitinin olması için ne gerekiyor? Yine sağ ve soldan aynı sonsuza gitmesi gerekiyor. Dolayısıyla bu ikisi birbirine eşit değil. Limit yoktur diyeceğiz. Tamam mı?
+
+607
+01:15:21,976 --> 01:15:28,615
+Dolayısıyla evet, en başta dedik ki limit araştırma işlemini fonksiyon nereye gidiyor? Bir sayıya gidiyor mu diye araştırmak demek. Evet.
+
+608
+01:15:28,775 --> 01:15:35,296
+Ama sayıya gitmediği durumlar, aa bu sayıya gitmiyor mu şey de atalım ne yapıyoruz bu fonksiyon yapsın demeyeceğiz. Onların da ayrı ayrı anlamları var matematik sayı olarak.
+
+609
+01:15:35,296 --> 01:15:39,656
+Dediğim gibi şu anda çok temel kısımdayız. Haftaya sürekli gelecek.
+
+610
+01:15:39,796 --> 01:15:44,275
+diyeceğiz ki bu fonksiyonların bu özelliklerinden dolayı farklı farklı süreksizlik çeşitleri olacak.
+
+611
+01:15:44,636 --> 01:15:51,275
+İşte birkaç hafta sonra türevin uygulamalarına geçeceğiz. Eğri çizeceğiz. O zaman işte bu artı sonsuz, eksi sonsuz göreceksiniz ne kadar önemliymiş bizim için.
+
+612
+01:15:51,756 --> 01:15:59,476
+O eğrinin ne tarafa doğru gideceğini belirleyecek. O yüzden her ne kadar limit cevabı olmasa da bizim için ileri de işimize yarayacak şeyler bunlar.
+
+613
+01:15:59,476 --> 01:16:05,536
+Ama en baştaki tanımımıza uyuyor mu yaptığımız şu anda işlemler? Hayır uymuyor. O tanıma uymayan kısımlarla uğraşıyoruz zaten.
+
+614
+01:16:05,920 --> 01:16:07,539
+Hocam bir şey sorabilir miyim?
+
+615
+01:16:07,579 --> 01:16:08,000
+Efendim?
+
+616
+01:16:08,380 --> 01:16:11,960
+Normalde hani sayı böyle sıfıra biz hep şey diyorduk, tanımsız diyorduk.
+
+617
+01:16:12,079 --> 01:16:15,559
+Biz de sıfıra yakın, hani limite baktığımız için sıfıra yakın.
+
+618
+01:16:15,559 --> 01:16:15,719
+Evet.
+
+619
+01:16:16,380 --> 01:16:17,219
+Aynen öyle.
+
+620
+01:16:17,940 --> 01:16:18,619
+Yoksa tanım.
+
+621
+01:16:20,260 --> 01:16:25,420
+Ama limit durumu için incelediğimizde yani fonksiyon 2'yi aynen öyle söylüyoruz.
+
+622
+01:16:25,460 --> 01:16:27,020
+Yoksa tanımsız için tanımsız yine.
+
+623
+01:16:27,360 --> 01:16:27,600
+Tamam.
+
+624
+01:16:27,899 --> 01:16:28,199
+Teşekkür ederim.
+
+625
+01:16:28,199 --> 01:16:28,600
+Tamam mı?
+
+626
+01:16:28,948 --> 01:16:51,648
+Sedanur demiş ki sıçramalı süreksizlik mi? Eğer bunlar bir sayı çıksaydı o zaman sıçramalı diyecektik. Ama sonsuz çıktığı herhangi bir limitimiz varsa ona sonsuz süreksizlik diyoruz. Yani hani böyle sıçramadan kastımız, eksi sonsuzluğu artı sonsuzluğu zıplayalım, böyle kocaman bir sıçrama yapalım anlamında değil. Bunlar hani uç nokta artık zıplamalar oluyor. O yüzden onu sıçramalı demiyoruz. Buna sonsuz süreksizlik diyeceğiz.
+
+627
+01:16:56,948 --> 01:17:16,228
+böyle sonsuzluk bir anlamında fark yok. Ona sıçramalı süreksizlik diyoruz. Ama hani öyle tanımlansaydı, sağ ve sol birbirinden farklı olduğunda sıçramalı süreksizlik diyelim derse evet haklısın sağ ve sol birbirinden farklı iken sıçramalı diye tanımlayacağız aslında ama tanımımız öyle değil şimdilik. Yeni bir tanımlama yapmadılar.
+
+628
+01:17:22,228 --> 01:17:22,588
+Bakalım.
+
+629
+01:17:24,212 --> 01:17:29,832
+[öğrenci] bana özel mesaj yollamış. O yüzden herkes duymadı tabii. Neden bahsettiğimi anlamadınız o zaman.
+
+630
+01:17:30,832 --> 01:17:34,112
+[öğrenci] bana şunu sormuştu. Söyleyeyim biraz önce neden konuştuğumu.
+
+631
+01:17:36,112 --> 01:17:43,532
+Demişti ki, hocam bizim için ideal olan bir limitin sonucunu sayı bulmak değil mi? Sürekli sonsuz buluyoruz ve sayıya çevirmek için bir işlem de yapmıyoruz.
+
+632
+01:17:43,652 --> 01:17:49,072
+Limitin başında tanımda artı ve eksi sonsuz limitte yok dedik. Sonsuz bir limit cevabı mı diye sormuştu.
+
+633
+01:17:49,779 --> 01:18:09,899
+Evet. Bende de öyle oluyor. Herhangi biriniz bana özelden bir şey yazdığınız anda şurası evrivandan şeye geçiyor. İşte herhangi birinize dönüyor. Bazen bir şey yazıyorum. Hani sınıfa veya anket atıyorum. Bir bakıyorum ki özelden gitmiş. Alışacağız inşallah yavaş yavaş. Hadi bakalım devam edelim. Limit'in son kısmına geldik.
+
+634
+01:18:10,676 --> 01:18:21,615
+en önemli kısmına geldik. Eğer klasik sınav yapıyor olsaydık en önemli kısmına geldik derdim ama şimdi klasik sınav, gerçi klasik sınav olup olmayacağında belirli. Ben size test, test dedim ama muhtemelen bugün ya da yarın.
+
+635
+01:18:22,515 --> 01:18:42,115
+Bizim bölüm başkanlığımız değişecek. Şu anda bölüm başkan yardımcısıyım ben. Bölüm başkanımızdaki şimdiki kararımız test olması yönündeydi. Yazı okulunda böyle yapıldığı için ama yeni yönetim gelecek muhtemelen bugün değişeceğini düşünüyoruz. Belki de onlar diyecek ki yok test olmasın. Klasikle devam edelim.
+
+636
+01:18:42,644 --> 01:19:09,384
+kararı da alabilirler belki de. Dolayısıyla belki haftaya başka türlü bir sınavdan bahsedeceğim size. Bu hafta belli olacak görevle ilgili yeni durumlar. Ona bağlı olarak da belki yeniden revize edebiliriz. O yüzden her ne kadar hani test sınavı da olsa, klasik sınav da olsa bu kısım önemli. Şu bakımdan önemli. Biraz önce de buna benzer bir limit yazmıştık hatırlarsanız. Şunu yazmıştık hatta.
+
+637
+01:19:10,771 --> 01:19:14,072
+Bir dakika. Biraz önce şunu öğrenmiştik.
+
+638
+01:19:15,992 --> 01:19:20,051
+Sonra biriniz de bana demişti ki, hocam cevap 1 mi yazmıştı?
+
+639
+01:19:20,384 --> 01:19:24,163
+Neden? Çünkü o öğrencimde şunu biliyordu.
+
+640
+01:19:24,583 --> 01:19:30,404
+Theta sıfıra giderken, sinüs theta bölü theta veya x sıfıra giderken sinüs x bölü x, h olsun ne olursa olsun.
+
+641
+01:19:31,003 --> 01:19:33,043
+Bunun cevabı 1'dir diyeceğiz birazdan.
+
+642
+01:19:33,304 --> 01:19:36,984
+İspatını yapmayacağım. Basit bir ispatı var. Vakit kaybedeyim istemiyorum.
+
+643
+01:19:37,343 --> 01:19:38,804
+Çok da uygulamak da istemiyorum sizi.
+
+644
+01:19:39,404 --> 01:19:42,523
+İnternetten şöyle küçücük araştırabilirsiniz. Yolladığım pdf'te de var.
+
+645
+01:19:42,943 --> 01:19:45,484
+Böyle geometrik bir ispatı var. Güzel bir ispatı var.
+
+646
+01:19:46,739 --> 01:19:51,680
+Bilmemiz gereken bütün ifadeleri yazdım ben buraya.
+
+647
+01:19:52,880 --> 01:19:54,699
+Şimdi bilmem gereken en önemli şey.
+
+648
+01:19:55,159 --> 01:20:01,739
+Theta sıfıra giderken veya x sıfıra giderken sinüs theta bölü theta veya sinüs x bölü x 1'dir.
+
+649
+01:20:02,739 --> 01:20:03,699
+Şunu unutmuyorum.
+
+650
+01:20:04,880 --> 01:20:06,979
+Bunu bir diyebilmemin bir şartı var.
+
+651
+01:20:07,559 --> 01:20:08,479
+Bu sıfıra gidiyor.
+
+652
+01:20:09,239 --> 01:20:10,380
+Sinüsün içi
+
+653
+01:20:11,220 --> 01:20:14,619
+ve paydadaki de birbirine eşit olacak.
+
+654
+01:20:15,180 --> 01:20:16,319
+Ve hangi belirsizlik var?
+
+655
+01:20:16,380 --> 01:20:17,520
+tete ayarını sıfır koyarsam.
+
+656
+01:20:17,639 --> 01:20:19,739
+sinüs sıfır bölü sıfır belirsizliği var.
+
+657
+01:20:20,159 --> 01:20:24,260
+Yani benim buna bir diyebilmeye hakkım ancak şöyle olabiliyor.
+
+658
+01:20:25,300 --> 01:20:27,020
+sinüs sıfır bölü sıfır gelecek.
+
+659
+01:20:28,340 --> 01:20:31,520
+Ve şu sıfırdaki oluşan içindeki fonksiyonla
+
+660
+01:20:31,520 --> 01:20:35,340
+şuradaki sıfırı oluşturan fonksiyonlar birbiriyle aynı olacak.
+
+661
+01:20:35,460 --> 01:20:36,940
+O yüzden böyle kutucuk içinde yapıyorum.
+
+662
+01:20:37,363 --> 01:20:41,663
+Bununla ben bunu gördüğüm her yerde sonucu 1 yazabilirim.
+
+663
+01:20:42,003 --> 01:20:46,863
+Yani sinüs x kare bölü x kare de x sıfıra giderken sıfırdır.
+
+664
+01:20:46,923 --> 01:20:50,143
+Sinüs x kub bölü x kub de illaki buralar teta olmak zorunda değil.
+
+665
+01:20:50,263 --> 01:20:56,003
+Yeter ki bunun içiyle aşağısı aynı olsun ve bunun içi de sinüsün içi de payda da sıfıra gitsin.
+
+666
+01:20:56,163 --> 01:21:03,943
+Sinüs 0 bölü sıfıra biz 1 diyoruz ve sinüsün içiyle payda sıfır olmak şartı, aynı olmak şartıyla biz buna 1 diyoruz.
+
+667
+01:21:04,787 --> 01:21:09,707
+Ne olabilir? Bu en önemlisi. Diğerleri zaten bundan çıkıyor şu hariç.
+
+668
+01:21:10,747 --> 01:21:17,067
+Bunun tersi de doğru. Theta bölü sinüs theta da 1'dir. Aynı şekilde tanjant theta bölü theta da 1'dir.
+
+669
+01:21:17,648 --> 01:21:22,867
+Nasıl yapabilirim bunu? Hemen şunu yazalım. Aşağıda vardı aslında ispatı ama şurada gösterebilirim.
+
+670
+01:21:23,228 --> 01:21:28,547
+Tanjantı şöyle yazarsak. Tanjant nedir? Sinüs theta bölü kosinüs theta'dır.
+
+671
+01:21:29,547 --> 01:21:30,427
+Yazdım.
+
+672
+01:21:31,252 --> 01:21:32,652
+şu kosinüs olsun.
+
+673
+01:21:34,492 --> 01:21:38,092
+Ne diyor? Bir de çarpı 1 bölü theta varmış. Bunun limitini alıyor.
+
+674
+01:21:39,432 --> 01:21:42,572
+Şimdi biraz önce öğrendiğime göre, dediğim gibi en temeli bizim için bu.
+
+675
+01:21:42,672 --> 01:21:46,592
+Sinüs theta bölü theta, theta sıfıra giderken bu birmiş.
+
+676
+01:21:48,212 --> 01:21:51,632
+E theta sıfıra giderken kosinüs nereye gider? Bu da bire gider.
+
+677
+01:21:52,512 --> 01:21:55,152
+Dolayısıyla sonuç ne çıkar? Bir çıkar.
+
+678
+01:21:56,564 --> 01:22:01,764
+Demek ki sinüs teta bölü tetanın 1 olduğunu bildiğim gibi teta bölü sinüs tetanın da 1 olduğunu bileceğim.
+
+679
+01:22:02,024 --> 01:22:05,003
+Aynı şekilde tanjant teta bölü tetanın da 1 olduğunu bileceğim.
+
+680
+01:22:05,324 --> 01:22:06,764
+Şu üçü aynı şeyi ifade ediyor.
+
+681
+01:22:08,123 --> 01:22:09,864
+Bu sinüsli olan kural.
+
+682
+01:22:10,324 --> 01:22:11,663
+Bir de bunun kosinüstüsü var.
+
+683
+01:22:13,043 --> 01:22:16,783
+Burada da h da göstermişim. Niye birinde teta birinde h demişim bilmiyorum.
+
+684
+01:22:17,984 --> 01:22:23,644
+Bu da yine şundan çıkıyor. Aslında temeli bu. Aşağıda göstereceğim nasıl çıktığını ama ezberlerseniz güzel olacak.
+
+685
+01:22:24,064 --> 01:22:28,503
+Kosinüs h eksi 1 bölü h veya 1 eksi kosinüs h bölü h bu da sıfıra gidiyor.
+
+686
+01:22:29,104 --> 01:22:35,043
+Bu kosinüs olduğu zaman meydanda genelde kullanacağımız kural. Bu sinüs olduğu zaman kullanacağımız kural.
+
+687
+01:22:35,859 --> 01:22:39,719
+Bir de şuna dikkat etmem gerekiyor. Zaten şuradan uyanmam lazım.
+
+688
+01:22:40,299 --> 01:22:41,499
+Theta sonsuza gidiyor.
+
+689
+01:22:42,159 --> 01:22:47,799
+Öyle önümüze gelen her sinüs theta bölü theta'ya, sinüs x bölü x'e pat diye 1'i yapıştırmayacağız.
+
+690
+01:22:48,359 --> 01:22:52,059
+Bir müddet sonra hep karşımıza, yani böyle sorular çözüyoruz mesela, çözüyoruz çözüyoruz.
+
+691
+01:22:52,539 --> 01:22:55,859
+Artık içinizden şey geliyor, her sinüs x bölü x gördüğüm yere 1'i yapıştırmalıyım.
+
+692
+01:22:56,599 --> 01:22:58,319
+Hayır, kontrol edeceğim şey şu.
+
+693
+01:22:58,619 --> 01:23:02,519
+Ne olur şunu kontrol edin. Sinüs 0 bölü 0 durumu varsa buna 1 diyeceğiz.
+
+694
+01:23:03,179 --> 01:23:03,859
+Şuna baktığım...
+
+695
+01:23:03,859 --> 01:23:21,279
+O zaman sinüs, teta, belü, teta. Tamam bu 1'dir dersem, işte hayatımın yanlışını yapmış olurum. Test sınavı olursa o soru komple gitti. Klasik sınavı olursa yine önemli bir yerde zaten bunu sorarız. Sürekli onun içinde soruyoruz. 15-20 puanlık soru olarak soruyoruz bazen. Sırf şu yanlış bütün 15 puanını götürmüş oluyor.
+
+696
+01:23:22,036 --> 01:23:26,715
+Hemen şunu konfirm edin. Ne dedim ben? Her türlü limit işleminde alın bunu yerine koyun.
+
+697
+01:23:27,375 --> 01:23:32,395
+Koyduğunuz zaman zaten sinüs 0 bölü 0 gelmediğini göreceksiniz. Ne gelecek burada tete yerine sonsuz koyarsam?
+
+698
+01:23:32,495 --> 01:23:37,135
+Sinüs sonsuz bölü sonsuz gelecek. Burada bir duracaksınız zaten.
+
+699
+01:23:37,295 --> 01:23:40,375
+Aa bu sinüs 0 bölü 0 değilmiş. Bu benim bildiğim birlerden değil.
+
+700
+01:23:40,895 --> 01:23:45,695
+Sinüs sonsuz için ne dedik? Limiti yok. Hani bir a sayısına gidiyor ama hangi a sayısı önemli?
+
+701
+01:23:46,292 --> 01:23:52,132
+Bizim için limitini tek başına alırken. Ama aşağıda sonsuz varken bu a sayısının ne olduğunu hiçbir önemi yok.
+
+702
+01:23:52,292 --> 01:23:59,492
+a bölü sonsuzluğun sonuç sıfırı gelecek diyoruz. Şu ikisi çok karışıyor. Çok da soruyoruz. Efendim?
+
+703
+01:24:00,352 --> 01:24:02,312
+Ben şurayı kaçırdım sana.
+
+704
+01:24:03,132 --> 01:24:03,771
+Ben bir seneyim.
+
+705
+01:24:07,283 --> 01:24:10,823
+Şurayı hocam. Burada bir şey anlattınız mı? Hani kuralla alakalı.
+
+706
+01:24:11,563 --> 01:24:16,264
+Kuralla alakalı şunu anlattım. Tanjant teta bölü tetanın neden bir geldiğini anlattım.
+
+707
+01:24:16,523 --> 01:24:16,983
+Ha şey.
+
+708
+01:24:17,283 --> 01:24:22,563
+Sinüs bölü kosinüstü. Bu da bir bölü tetaydı. Sinüs teta bölü tete kısmı bir. Kosinüstte bir.
+
+709
+01:24:23,023 --> 01:24:25,663
+Bir dakika. Efendim [öğrenci]. Bir dakika [öğrenci].
+
+710
+01:24:27,724 --> 01:24:28,644
+Hemen geliyorum.
+
+711
+01:24:55,188 --> 01:25:09,268
+Geldim. Ne zaman başlayacak senin teneffüsün diye soruyor. Teneffüs değilmiş o. Anlaştık mı? Temelde dediğim gibi bir şu kuralımız var. Bu. Bir de şu.
+
+712
+01:25:09,811 --> 01:25:37,792
+Bu ikisini bilsek tamamdır. Bunu onlardan ayrı tutuyorum ama karıştığı için yazdım. Neyi kontrol edeceğim? Sinüsle ilgili olan her sinüs x bölü x'e, sinüs teta bölü teta, ne sorduşsak işte sinüs b bölü b ne olursa olsun. Bakacağım şey şu olmalı, sinüs 0 bölü 0 varsa 1 yazacağım. Sinüs sonsuz bölü sonsuz geliyorsa bunun cevabı 0'dır. İki tanecik şey istiyoruz sizden. Sinüslerle ilgili bir sonucu bir çıkan limit var, bir sonucu 0 çıkan limit var. Hangisi?
+
+713
+01:25:37,811 --> 01:25:43,952
+hangisinde 1 çıkıyor, hangisinde 0 çıkıyor? Bunu ayırt edebilmenizi bekliyoruz. Yani öyle atla deme bir şey beklediğinizi zannetmiyoruz.
+
+714
+01:25:44,351 --> 01:25:51,652
+Ama sınav heyecanıyla dediğim gibi karışabiliyor. O yüzden ben de öğrenecekken karıştırıyordum. Böyle yani insan bir müddet sonra her sinüs x bölü x'e bir yazısız geliyor.
+
+715
+01:25:51,731 --> 01:25:59,392
+Ben hep şunu kontrol edendim. Sinüs 0 bölü 0 var mı? Varsa tamam bu 1. Gönül rahatlığıyla diyebilirim. Yoksa sinüs sonsuz bölü sonsuz,
+
+716
+01:25:59,392 --> 01:26:05,811
+bu benim bildiğim sinüs 0 bölü 0 durumu yani 1 çıkan durum değil. Bu 0 çıkan durummuş değil. 0'ı.
+
+717
+01:26:05,811 --> 01:26:13,271
+yapıştıracağız buraya. Tek bilmem gereken şey bu. Şu ikisini bileceğim kesinlikle. Bu da ayrı bir durum. Bunu da tabii ki bileceğim.
+
+718
+01:26:15,052 --> 01:26:25,512
+Şimdi hemen iki tanecik soru çözüp böyle bırakalım. 26 oldu. 10 dakikada ne çözersek onu çözelim. 35 de bırakmış oldum. Zaten şu kadarcık sorumuz var.
+
+719
+01:26:26,052 --> 01:26:32,592
+Hepsini çözmesek de olur. Şunu çözdüm zaten. Sinüs, theta bölü, theta'lıyı. Burada da şunu göstereceğim.
+
+720
+01:26:33,216 --> 01:26:40,396
+dedik ki kosinüs h-1 bölü h sıfırdır. Bunu ezbere yazacağız. Nereden geldiğini bir görelim.
+
+721
+01:26:41,216 --> 01:26:47,735
+Şimdi en temeli dediğim gibi sinüs şunu kesinlikle bileceğim. Hepsi bundan çıkıyor zaten.
+
+722
+01:26:49,436 --> 01:26:54,476
+Limit h sıfıra giderken sinüs h bölü h 1 artık bunu biliyorum.
+
+723
+01:26:55,076 --> 01:27:00,036
+t'talısını yazdık. Şimdi h'lısını yazdık. Öbür soruda bakarsınız x'sini yazarız. Hepsine alışalım.
+
+724
+01:27:01,939 --> 01:27:08,659
+Benim karşıma bu geldi. Diyelim ki unuttuğunuz siz bunun sıfır olduğunu. Ne yaparsınız? En önemli bilmem gereken trigonometrik limit bu.
+
+725
+01:27:09,340 --> 01:27:16,479
+Burada da ortalıkta kosinüs var, sinüs yok. Ben buradan sinüsü nasıl getirebilirim? Bunun iki tane yolu var. Ben burada yarım açıyla yapmışım.
+
+726
+01:27:17,020 --> 01:27:24,000
+Aynı şekilde bunu eşlenik çarpımı yaparak da bulabilirsiniz. Yani kosinüs h artı 1 ile çarparak da bu işlemi de yapabilirsiniz. Onu da deneyin isterseniz.
+
+727
+01:27:24,916 --> 01:27:29,996
+Ben yarım açı formülüyle sinüsü meydana çıkartmışım.
+
+728
+01:27:31,136 --> 01:27:34,016
+Dediğim gibi çarpanları ayırmayı iyi bilmeniz lazım.
+
+729
+01:27:34,355 --> 01:27:35,916
+Bu tip trigonometrik limitler için...
+
+730
+01:27:36,416 --> 01:27:41,376
+trigonometrik fonksiyonlar arasındaki o geçişleri, yarım açı formüllerini en azından bilmeniz lazım.
+
+731
+01:27:41,496 --> 01:27:44,756
+Fonksiyonlar notunu sonuna koymuştum zaten en çok kullanacaklarımızı.
+
+732
+01:27:45,695 --> 01:27:53,456
+Böyle hani ağım şahım, abartı bir trigonometrik bilgisi olmasın o geçişleri düzgün yapmanız lazım ki ihtiyacınız olan şeylere kavuşabilin.
+
+733
+01:27:54,452 --> 01:27:57,712
+dedik ki sinüs gelsin istiyoruz. Aklımıza yarım açı formülü geldi.
+
+734
+01:27:57,851 --> 01:28:02,532
+Dedik ki kosinüs h için şunu kullanalım. 1-2 sinüs kare h bölü 2'dir.
+
+735
+01:28:03,332 --> 01:28:04,432
+Bunu yerine yazdık.
+
+736
+01:28:04,979 --> 01:28:11,939
+Bir de şurada eksi 1'imiz vardı. Bunu yazdık. Ne yaptık? Hop! 1'lerden kurtuldum. Hop! İstediğim gibi sinüs geldi.
+
+737
+01:28:12,659 --> 01:28:20,239
+Ve ben şu kuralı kullanmak istiyorum. Neydi bu kuralı kullanmamış şartı? Sinüsün içi de faydadaki fonksiyonda aynı olacak.
+
+738
+01:28:20,239 --> 01:28:25,379
+Şimdi şu ikileri eksi 2'yi koydum.
+
+739
+01:28:26,996 --> 01:28:32,415
+Sonra şu sinüs kare h bölü 2'yi de ayırdım. Bu nedir? Sinüs h bölü 2 çarpı. Sinüs h bölü 2'dir.
+
+740
+01:28:33,255 --> 01:28:38,555
+Şimdi aşağıda h vardı sadece. Ben ne istiyorum? Sinüsün içiyle payda aynı olsun istiyorum.
+
+741
+01:28:38,775 --> 01:28:41,935
+Dolayısıyla burası h bölü 2 iken buranın da h bölü 2 olmasını istiyorum.
+
+742
+01:28:42,315 --> 01:28:46,215
+Bunu h bölü 2 yapmak için ne yapmam lazım? Hadi bakalım sen gel h bölü 2 ol denmez.
+
+743
+01:28:46,576 --> 01:28:52,155
+Bunu 2 ile çarpıp 2 ile bölmem lazım. Dolayısıyla şu çarptığım 2'yi de bunun altına koymuşum.
+
+744
+01:28:52,555 --> 01:28:54,996
+Ne kaldı artık? İstediğim gibi sinüs.
+
+745
+01:28:54,996 --> 01:29:11,915
+üstün içiyle paydayı aynı yaptım. x sıfıra giderken sinüs sıfır bölü sıfır belirsizliğim var. Dolayısıyla buna gönül rahatlığıyla bir diyebilirim. Şuradaki ikiler birbirini götürdü. Şuna geldim. Burada bir tane sinüs kalmıştı. x sıfıra giderken sinüs sıfır sıfır olduğu için sıfıra gitti ve sonuç gerçekten de sıfırmış.
+
+746
+01:29:12,948 --> 01:29:38,948
+İşte her seferinde bunu yapmanızı istemiyoruz. Bunu bildiğiniz gibi bu sinüslü olan trigonometrik kural ve de bunun kosinüslüsü var. Bunu da çok kullanıyoruz. Bunun da direkt sıfır olduğunu bilebilirsiniz. Unuttunuz diyelim yapabilirsiniz. Online sınavdasınız zaten. Notlarınızı açar bakarsınız. En azından bunları zaten yanınızda bulundurun sınavda. Sonucun sıfır olduğunu zaten bilirsiniz. Dolayısıyla karşınıza gelecek olan trigonometrik limitlerde şunları oluşturmaya çalışacaksınız.
+
+747
+01:29:40,948 --> 01:29:51,108
+h-1 bölü h'ları oluşturmaya çalışacağız. Hiçbir işlem yapmadan, bu sıfırmış. At gittim bu tarafa. Burası 1'miş deyip, direkt sonuca gidebilelim.
+
+748
+01:29:52,288 --> 01:29:58,908
+Şunu yaptık. O yüzden yapmıyorum şimdi. Bir daha. Hemen bir tanecik daha soru yapalım en azından.
+
+749
+01:30:01,968 --> 01:30:06,588
+Mesela hemen şunlara bakalım. Şu ikisini yapıp böyle bitirelim.
+
+750
+01:30:07,859 --> 01:30:08,979
+buna baktığım zaman
+
+751
+01:30:09,391 --> 01:30:12,152
+Burada artık uzun uzadıya hiçbir işlem yapmama gerek yok.
+
+752
+01:30:12,351 --> 01:30:13,992
+Bir kere ne belirsizliği var? Hemen bakalım.
+
+753
+01:30:14,332 --> 01:30:19,251
+0 koydum. Tanjant 0, 0'dır. T0'dır. 0 bölü 0 belirsizliği var.
+
+754
+01:30:19,891 --> 01:30:22,351
+Şunu düşünüyorum. 0 bölü 0 belirsizliği var.
+
+755
+01:30:22,692 --> 01:30:28,671
+Ve biz bu 0 bölü 0 için L'Hospital kuralını türev geldiğinde öğreneceğiz.
+
+756
+01:30:28,671 --> 01:30:34,952
+Ama karşımızdaki 0 bölü 0 belirsizliği trigonometrik limitse hiç türev almaya falan gerek yok.
+
+757
+01:30:35,091 --> 01:30:37,391
+Yani gidip de şurada tanjantların, sekantların çarpım...
+
+758
+01:30:37,391 --> 01:30:44,351
+türevini almaya gerek yok. Hemen şunu düşüneceğiz. Ben burada türevi almadan da bildiğim o formüllerle işin içinden kurtulabilir miyim?
+
+759
+01:30:44,671 --> 01:30:53,711
+Hemen şunu göreceğim. Biraz önce yazdık. Dedik ki t0'a giderken, tanjant t bölü t nedir? Burası 1'dir. İşte bundan kurtuldum.
+
+760
+01:30:54,011 --> 01:31:00,971
+Şurada 3'üm kaldı. Secant 2 t, t0'a giderken nereye gider? Secant 0, 1 bölü kosinüs 0 olduğu için 1'e gider.
+
+761
+01:31:04,051 --> 01:31:05,551
+aşağıda da 3 var.
+
+762
+01:31:06,931 --> 01:31:08,091
+İşte 1 bölü 3'müş.
+
+763
+01:31:09,451 --> 01:31:12,891
+Bir test sınavında nasıl çıkar karşınıza? Tek başına bu soru çıkmaz tabii ki.
+
+764
+01:31:12,891 --> 01:31:17,091
+Ama böyle minik minik, küçük küçük böyle limitler konulabilir.
+
+765
+01:31:17,211 --> 01:31:18,771
+Mesela birinci şık olarak bu konulur.
+
+766
+01:31:19,667 --> 01:31:25,068
+Bu basit olur mesela. İkinci şık olarak sizi aldatacak o sinüslülerden bir tanesi konur.
+
+767
+01:31:25,547 --> 01:31:28,307
+İşte yukarıdaki limit alma işlemlerinin hangisinin cevabı doğrudur?
+
+768
+01:31:28,467 --> 01:31:34,087
+Bu kolaymış, bu yalnız 1, yalnız 2 vs. gibi olabilir. Bunları da yapmak önemli.
+
+769
+01:31:34,247 --> 01:31:42,427
+Bu çok basitmiş, bizim karşımıza çıkmaz. Eskiden bu soruları çözmüyordum dahi ama artık böyle minik minik parçalar olarak, test sınavı olarak devam edecekse karşınıza gelebilir.
+
+770
+01:31:42,427 --> 01:31:44,467
+O yüzden basit, zor demeden.
+
+771
+01:31:44,815 --> 01:31:59,056
+bütün soruları çözerseniz bu hafta limitle ilgili uygulama sorusu koyacağım zaten. Bakarsınız oradan da. Küçük böyle bir pratik yapın. Haftaya sürekliliğe başlayacağız. Bitireceğiz süreklilik zaten limitle bağlantılı. Limite anladıysak sürekliliğe hızlıca geçebiliriz.
+
+772
+01:31:59,796 --> 01:32:23,496
+3 saatlik derste sürekli limit edeceğiz. Belki son ders küçücük türeve başlarız. Haftaya bugünkü derste de soru çözelim istiyorum limitle ilgili. Birazcık böyle küçücük çalışırsanız kahut da yapacağız haftaya. Çikolata kazanırsınız belki. Benden çikolata. Son bir tanecik daha yapalım. Sekant nasıl bir olur? Sekant şöyle. Sekant nedir? 1 bölü kosinüs 2T'dir.
+
+773
+01:32:27,028 --> 01:32:34,028
+Dolayısıyla t yerine sıfır yazarsak kosinüs sıfır olur. Kosinüs sıfırda 1 olduğu için 1 bölü 1'den 1 geldi.
+
+774
+01:32:37,908 --> 01:32:48,528
+Tamam mı? Her azıcık dediğim gibi, trigonometrik, bilgimizi şey yapmamız lazım belki, tazelememiz lazım veya daha dikkatli işlem yapmamız lazım.
+
+775
+01:32:49,811 --> 01:32:56,712
+Yarım açı formüllerine bakın, işte belirgin pi bölü 2'lerdeki, sıfırlardaki, pi'lerdeki değerlerine bakın.
+
+776
+01:32:57,192 --> 01:33:01,252
+Karışabiliyor çünkü sinüsler, kosinüsler. Şıkları da yaz okulunda ona göre ayarlanmıştı.
+
+777
+01:33:01,252 --> 01:33:06,072
+Yani sıkça yapılacak hatalar da şıklarda bulunuyordu ki elenebilsin öğrenciye.
+
+778
+01:33:06,112 --> 01:33:10,591
+Yoksa zorlu konular kaynaklanıyordu. Abartı zor şeyler yoktu.
+
+779
+01:33:11,891 --> 01:33:16,391
+Son olarak şuna bakalım. Böylece bitirelim. Limit konusunda bitirmiş olacağız.
+
+780
+01:33:17,452 --> 01:33:22,872
+Böyle bir limit gelmiş karşıma. Bir kere sinüsler, kosinüsler var. Anlıyorum ki bu iş trigonometrik limite doğru gidecek.
+
+781
+01:33:23,315 --> 01:33:31,235
+Dediğim gibi, lokiter kuralını bilseniz dahi, yani türev alarak limit almayı öğrenseniz dahi, burada gidip de şu köklerin limitleriyle uğraşmanıza hiç gerek yok.
+
+782
+01:33:31,475 --> 01:33:35,895
+Biraz önce öğrendiğimiz o iki tanecik formülü sizin işinizi çözecek. Yeter ki nasıl kullanacağımızı bilelim.
+
+783
+01:33:36,555 --> 01:33:40,295
+Belki de belirsizlik yoktur diye ümidiyle hemen koyuyorum. x yerine 0.
+
+784
+01:33:40,775 --> 01:33:46,576
+Kosinüs 0, buradan 1 geldi. 2-1'den burası 1 oldu. 1-1'den burası 0'a gitti.
+
+785
+01:33:47,283 --> 01:33:52,764
+x sıfıra giderken sinüs sıfır da sıfıra gitti. Bakıyorum ki sıfır böyle sıfır belirsizliği var.
+
+786
+01:33:54,036 --> 01:33:58,536
+Ne dedik 0 bölü 0 belirsizliği ile ilgili? Cebrisel işlemlerle yok edilebilir dedik.
+
+787
+01:33:58,996 --> 01:34:03,176
+Biraz önce 0 bölü 0 belirsizliği ile ilgili trigonometrik olarak halledebileceğimizi gördük.
+
+788
+01:34:03,176 --> 01:34:06,976
+Ama burada trigonometrik olarak halledebileceğimiz herhangi bir şey henüz gözükmüyor.
+
+789
+01:34:07,256 --> 01:34:11,536
+Hani biraz önce kosinüs parçaladık ama burada kök var. Dolayısıyla kök canımı sıkıyor benim.
+
+790
+01:34:11,956 --> 01:34:16,676
+Diyorum ki keşke şu kökten kurtulsam. Keşke şu kökten kurtulsam dediğimde ne yapıyordum?
+
+791
+01:34:17,195 --> 01:34:20,855
+Eşlenik çarpımı yapıyordum. Dolayısıyla diyorum ki şunu bir çarpalım bakalım.
+
+792
+01:34:21,136 --> 01:34:22,036
+Eşleniği de şu kök.
+
+793
+01:34:22,036 --> 01:34:30,636
+yoruktan kurtulalım çünkü kosinüsler bir kendine gelsin. O zaman birinci aşama olarak yol haritamda eşlenik çarpımı geliyor. Hadi çarpalım bakalım.
+
+794
+01:34:32,695 --> 01:34:38,096
+Bir git şunu aşağıya indirelim. Eşlenikte çarpacağım.
+
+795
+01:34:38,547 --> 01:35:04,427
+Eşlenik çarpımı yaptığımda ne gelecek? İşte bunun 1 artılısıyla çarpıyorum. Amacım neydi? a kare eksi b kareyi oluşturmak. Dolayısıyla birincinin karesi gelecek. Geldi. Eksi diyeceğim ikincinin karesi. Yani şunun karesi. Bunun karesi ne olur? 2 eksi kosinüs x olur. Eksi diyeceğim için eksiyle çarparak yazmışım. Eksi 2 bir de şurada eksi var. Artı kosinüs oldu. Sinüs vardı. Bir de yanına unutmamam gereken.
+
+796
+01:35:04,832 --> 01:35:13,072
+şu eşleniği getirdim. Sonra yukarıyı toparlamışım. Demişim ki yukarıda cosx-1 var, şurada sinx var.
+
+797
+01:35:13,235 --> 01:35:18,855
+Burada da kendi halinde takılan hiç öyle 0 bölü 0 falan da olmayan, şu eşlenikten gelen payda var.
+
+798
+01:35:19,636 --> 01:35:25,655
+Son aşamaya geldim. Hala 0 bölü 0'ım devam ediyor. Ama şunları da bir yerden gözümün ısırması lazım.
+
+799
+01:35:26,216 --> 01:35:30,115
+Ya diyorum ki ben bu kosinüs x-1 ile ilgili bir şey yazmıştım bir an önce. Ne yazmıştım?
+
+800
+01:35:30,796 --> 01:35:37,275
+Demiştik ki x 0'a giderken kosinüs x-1 bölü x bu 0'a gidiyordu.
+
+801
+01:35:37,275 --> 01:35:39,315
+Evet 0'a gidiyordu. Doğru.
+
+802
+01:35:39,956 --> 01:35:46,296
+Aynı şekilde burada sinüs var. Bununla ilgili de şunu yazmıştık. Kıte talısını yazmıştık. Aynısının eksisini yazıyorum.
+
+803
+01:35:46,936 --> 01:35:49,655
+x sıfıra giderken sinüs x bölü x de bire gidiyordu.
+
+804
+01:35:51,056 --> 01:35:58,796
+Dolayısıyla diyorum ki, şunları gözüm bir yerden ısırıyor ama eksikleri var. Neyi var? Kosinüs x, eksi birin x'i yok. Sinüs x'in de pay kısmında x'i yok.
+
+805
+01:35:59,576 --> 01:36:04,416
+Demek ki diyorum ben şunları şöyle ayırsam. Bunu paya, bunu paydaya yazacak şekilde böyle ayırsam.
+
+806
+01:36:04,916 --> 01:36:10,456
+x ile çarpıp x ile bölsem ne olur? Şu x'ler gittiğinde yukarıdaki ifadeyle herhangi bir farkı yok.
+
+807
+01:36:11,355 --> 01:36:17,456
+Dolayısıyla x bölü sinüs x'i oluşturdum. Bildiğim bir formülde. Bunun 1 olduğunu biliyorum.
+
+808
+01:36:17,595 --> 01:36:22,496
+İşte kosinüs ile ilgili olan bir formül oluşturdum. 0 geldi. Şu zaten 1 bölü 2 geliyor.
+
+809
+01:36:22,815 --> 01:36:29,175
+x'lerine 0 koyunca buradan 1 gelecek. 1 artı 1'den 2, 1 bölü 2. Dolayısıyla bütün limitlerimi bulmuş oldum.
+
+810
+01:36:29,492 --> 01:36:35,172
+Bunların hepsi çarpım halinde. 0x1, 1x1 bölükten sonuç 0 geliyormuş.
+
+811
+01:36:36,659 --> 01:36:40,420
+İşte o yazdığımız ezberlenecek dediğim şu iki tanecik formül.
+
+812
+01:36:40,759 --> 01:36:43,000
+Kosinüs x'e x'e 1'e bölü x'in 0 oluşu.
+
+813
+01:36:43,439 --> 01:36:45,519
+x bölüs x'in 1 oluşu.
+
+814
+01:36:45,739 --> 01:36:47,059
+İşte bu şekilde kullanacağız.
+
+815
+01:36:47,539 --> 01:36:49,239
+Bunları ortaya çıkartmaya çalışacağız.
+
+816
+01:36:49,339 --> 01:36:50,019
+Genelde ne yapıyoruz?
+
+817
+01:36:50,119 --> 01:36:52,199
+İşte pi d'yi x'e çarpıp x'e bölüyoruz.
+
+818
+01:36:52,199 --> 01:37:01,960
+Veya ne ile ihtiyacımız varsa ihtiyacımız olan fonksiyon neyse onunla çarpıp bölme yaparak ihtiyacımıza yönelik formüllerimizi kullanabileceğimiz hale getirmeye çalışacağız.
+
+819
+01:37:02,319 --> 01:37:04,279
+Haftaya birazcık daha karmaşıklarını çözeceğim.
+
+820
+01:37:04,659 --> 01:37:27,399
+en temelleriydi haftaya salı günü. Şunu isteyeceğim sizden mail atarak da söyleyeceğim. Bir noktadan sonra benim maillerim her ne kadar geçen hafta sevdiyseniz de ders çalışın, ders çalışın, ders çalışın demeye dönecek. Böyle başınızda bir anneniz varmış gibi hissedebilirsiniz. Her mailimle sınava yaklaştığınızı birazcık daha hissettireceğim. İlk sınavdan ne kadar yüksek alırsanız o kadar rahat edeceksiniz çünkü. Konular genel olarak daha basit başlarda.
+
+821
+01:37:28,115 --> 01:37:33,815
+O yüzden bu haftaki mailimde özetle yollayacağım size. Hadi bakalım çalıştığında hafta yollama yapacağız diyebilirim.
+
+822
+01:37:34,175 --> 01:37:36,175
+Minik minik ders çalışma hazır.
+
+823
+01:37:36,175 --> 01:37:53,555
+Bir daha anlatayım. Şunlar tamam değil mi? Kurallarımız şunlardı.
+
+824
+01:37:54,515 --> 01:37:55,515
+Evet kurallar tamam.
+
+825
+01:37:56,275 --> 01:38:05,555
+Tamam. Bu arada başka soru çözmeyeceğim. Hani ben bir gideyim dinleneyim diyen varsa bundan sonrasında ayrılabilir dersen.
+
+826
+01:38:06,355 --> 01:38:29,076
+Uygulama tam olarak ne? Uygulama dediğim şey soru çözümü. Hani şimdi konuyu anlattık. Böyle içinde konuyu anlamınıza yönelik basit sorular çözümü aslında. Hani böyle karmaşık şeyler çözmedim. Haftaya birazcık daha yani artık konuyu anladınız, basit şeylere hakimsiniz. Daha böyle sınava yönelik daha birazcık daha karmaşık sorular çözeceğiz. Ona uygulama diyoruz. Hani soru çözümü anlamında uygulama. Onu yapacağız haftaya.
+
+827
+01:38:29,503 --> 01:38:35,884
+Onun için de hani şimdi ben şöyle düşünüyorum tabii gözlerinizi göremiyorum ama sesiniz de çıkmıyor anlamadık falan demediniz hiç.
+
+828
+01:38:37,463 --> 01:38:42,644
+Anladığınızı düşündüğüm için artık hani bir sonraki aşamaya daha zor soruları geçebiliriz diye düşünüyorum.
+
+829
+01:38:42,764 --> 01:38:45,543
+Bu aşamaya geçmemiz için de sizin birazcık bakmanız gerekiyor tabii.
+
+830
+01:38:46,123 --> 01:38:52,943
+Hafta sonu böyle küçücük çalışıp gelirseniz uygulamanın yani soru çözümünün faydalı olması ancak sizin de birazcık çalışmanız da mümkün.
+
+831
+01:38:54,283 --> 01:38:55,743
+Yok yok ben çözeceğim soruları.
+
+832
+01:38:56,595 --> 01:39:13,915
+Daha zor soruları çözeceğim. Bireysel değil, yani size çözdürmeyeceğim. Şu olabilir de, yüz yüze ders olsaydı tahtaya kaldırıyordum ama orada çok mümkün olmayacak herhalde. Ama şunu yapabiliriz. Çözenler ekrana yansıtıp kendileri ders anlatabilirler birazcık.
+
+833
+01:39:15,123 --> 01:39:20,683
+Ben de dinlenmiş olurum yani. Öyle bir şey de varım derseniz ki ben anlatayım hocam biraz. Olur.
+
+834
+01:39:21,423 --> 01:39:28,523
+Şunu anlatayım hemencik. Neresinden başlayayım anlatmaya? Şurası tamam herhalde değil mi?
+
+835
+01:39:29,903 --> 01:39:33,663
+Ben şey yapmıyorum. Sinüs, sinüs, sinüs, sinüs, sinüs, sinüs. Orası birden.
+
+836
+01:39:34,463 --> 01:39:38,703
+Şunları mı? Şimdi şunu düşündük. Bak buraya kadar geldik. Burası tamam herhalde.
+
+837
+01:39:39,220 --> 01:39:45,020
+Şimdi dedik ki, şunun zaten x sıfıra giderken bir sıkıntısı yok. Burası 1 bölü 2'ye gidiyor. Şurası.
+
+838
+01:39:47,340 --> 01:39:53,260
+Sonra şuna baktık. Sıkıntı burada 0 bölü 0'ı oluşturan pay ve paydaki sıfırların sahipleri bunlar.
+
+839
+01:39:53,680 --> 01:39:58,560
+Ne diyorduk? 0 bölü 0'da ya paydakinden ya paydakinden daha da güzel ikisinden de kurtulalım diyorduk.
+
+840
+01:39:58,980 --> 01:40:01,880
+Ve elimizde artık trigonometrik limitler var.
+
+841
+01:40:02,360 --> 01:40:05,960
+Ve ben trigonometrik limitlerle ilgili şu iki kuralı dediğim gibi hakim olmam lazım.
+
+842
+01:40:06,963 --> 01:40:12,524
+ve gözümü açık tutup, ne yapsam, ne yapsam da şunları oluştursam diye düşünmem lazım.
+
+843
+01:40:13,084 --> 01:40:17,264
+Şimdi bakıyorum, pi kısmında kosinüs x-1 var, pi'da da sinüs x var.
+
+844
+01:40:17,724 --> 01:40:22,624
+Zaten L'Hospital kuralını öğrendiğinizde bunları yapmanıza da çok gerek kalmayacak ya, neyse.
+
+845
+01:40:22,923 --> 01:40:26,144
+Belki birinci bize L'Hospital kuralına kadar gelmiş olmayacağız.
+
+846
+01:40:26,923 --> 01:40:31,704
+Bilmeyenler de zaten hiç öğrenemeyecekler. O yüzden yine önemli oluyor burası sınıfın büyük çoğunluğu için.
+
+847
+01:40:32,948 --> 01:40:40,427
+Şunu düşünüyorum diyorum ki, ah diyorum keşke şu kosinüs x-1'in altında bir x olsaydı da ben şunu 0 deyip atsaydım.
+
+848
+01:40:40,868 --> 01:40:49,568
+Aynı şekilde şunu söylüyorum. Sinüs x bölü x'e 1 dediğimiz gibi şuna da 1 demiştik. x bölü sinüs x de 1'dir demiştik.
+
+849
+01:40:50,260 --> 01:40:55,120
+Altta, tanjant x bölü x de 1'dir diye birazcık daha genelleştirmiştik kuralı.
+
+850
+01:40:56,040 --> 01:41:03,480
+Bunun için de şöyle diyoruz. Bak diyorum ne güzel payda da sinüs var. Keşke şunun payında x olsaydı da şuna da 1 deyip atsaydım.
+
+851
+01:41:03,920 --> 01:41:10,980
+Dolayısıyla şunu düşünüyorum. Diyorum ki bunun payda da x'e ihtiyacı var. Bunun payda x'e ihtiyacı var benim kuralları uygulayabilmem için.
+
+852
+01:41:11,100 --> 01:41:15,040
+Yani benim ne yapmam gerekiyor ki aslında pay ve payda x ile çarpmam gerekiyor.
+
+853
+01:41:15,500 --> 01:41:18,260
+Dolayısıyla ben şöyle yapıyorum burada. Payda payda x.
+
+854
+01:41:18,260 --> 01:41:43,560
+x ile çarpıyorum aslında. Şöyle yapıyorum. Burayı göstermedim. Sonra diyorum ki sen şu x'e diyorum ki sen git kosinüs x, x'e 1'in altına. Şu x'e de diyorum ki sen de git sinüs x'in üstüne. Sonra da diyorum ki aa bak bu benim tanıdığım kosinüs x, x'e 1 bölü x oldu. Bunun sıfır olduğunu biliyordum. Bu benim bildiğim x bölü sinüs x oldu. Bunun 1 olduğunu biliyordum. Bunun zaten bir sıkıntısı yok. 1 bölü 2 idi.
+
+855
+01:41:44,979 --> 01:41:46,819
+Dolayısıyla burası sıfır oldu diyorum.
+
+856
+01:41:48,079 --> 01:41:52,499
+Anlaştık mı? Sinüs x bölü x'i bildiğimiz gibi x bölü sinüs x'in 1 olduğunu da bileceğiz.
+
+857
+01:41:52,499 --> 01:41:57,019
+Ve artık böyle gözümüzü birazcık daha açık tutacağız. Bu bildiğimiz kurallara benziyor.
+
+858
+01:41:57,559 --> 01:42:04,419
+Kimin neye ihtiyacı var? Bunun payda da x'e, bunun payda ihtiyacı, x'e ihtiyacı var diye düşünüp x ile çarpıp öleceğiz.
+
+859
+01:42:07,380 --> 01:42:13,560
+Tamam bakalım. Yeterince erken bıraktım mı? 20 dakika kadar erken bırakmışım. Küçücük dinlenirsiniz.
+
+860
+01:42:15,180 --> 01:42:18,800
+Biz de bu haftanın gelmemiz gereken yerine kadar gelmiş olduk.
+
+861
+01:42:20,480 --> 01:42:27,279
+Bana da yavaş anlatıyormuşum gibi geliyor. Bilmiyorum nasıl hızlanabilirim. Sizin gözünüzü görmeden benim hızlanmam çok mümkün değil.
+
+862
+01:42:29,268 --> 01:42:51,948
+Bulacağız inşallah orta yolu. O yüzden sıkılanlar varsa üzgünüm. 2020 geliştikleri baz alarak anlatmaya çalışıyorum ben şu anda. Hiç bilmeyenleri baz almam gerekiyor. Buraları biliyorduysanız aralarda oyalanabilirdiniz başka şeylerle ama bir noktadan sonra bilmediğiniz yerler başlayacak. Tamam, sevindim. Kalpler geldi. Teşekkür ederim. Sesim gitmişti, mutlu oldum şimdi.
+
+863
+01:42:56,307 --> 01:43:01,427
+sevindim. Biraz yavaş gibi geldi bana da.
+
+864
+01:43:07,444 --> 01:43:09,444
+Görüşürüz bakalım, kendinize iyi bir şey.
+
+865
+01:43:09,463 --> 01:43:10,104
+Biz buradayız.
+
+866
+01:43:10,704 --> 01:43:12,904
+Tamam, kalabilirsiniz. Bence sıkıntı yok.
+
+867
+01:43:15,244 --> 01:43:16,724
+[öğrenci] da derste şimdi.
+
+868
+01:43:17,503 --> 01:43:21,744
+Esiyorsanız dediğim gibi, birbirinize tanışmak için burada kullanabilirsiniz.
+
+869
+01:43:21,864 --> 01:43:24,344
+Gerçi zaten Zoom'u kendiniz de yapabilirsiniz.
+
+870
+01:43:25,184 --> 01:43:26,084
+Çok sıkıntılı değil.
+
+871
+01:43:28,944 --> 01:43:30,984
+Nukle olunca tanışmaya çalışın birbirinizi.
+
+872
+01:43:45,203 --> 01:43:51,743
+Evet, DGS'liler 2020 girişler. Evet, artık yeni öğrencilerle DGS'liler arasındaki fark kapanmış oldu.
+
+873
+01:43:52,283 --> 01:43:56,223
+Ama işte eski girişler için sıkıcı olabilir başkısımlar.
+
+874
+01:43:59,023 --> 01:44:01,203
+Bir noktundan sonra bulacağız ortaya.
+
+875
+01:44:04,163 --> 01:44:05,863
+Görüşürüz bakalım kendinizi iyi bakın.
+
+876
+01:44:06,983 --> 01:44:09,304
+Ben bu ekranın görüntüsünü, resmini çekerim.
+
+877
+01:44:14,804 --> 01:44:19,704
+kalplerimi sakladım. Teşekkür ederim. Görüşürüz haftaya.
+
+878
+01:44:22,004 --> 01:44:24,244
+Haberleşiriz yine. Ben mail atarım zaten size bir ara.
+
+879
+01:44:39,060 --> 01:44:43,899
+Ben de kaçtım. Düzgün bir şekilde unutmadan dersimizi kapatayım ki sonradan izleyin.

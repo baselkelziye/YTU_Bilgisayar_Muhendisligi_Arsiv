@@ -1,0 +1,2803 @@
+1
+00:01:22,420 --> 00:01:28,299
+Merhaba arkadaşlar. Sesim geliyor mu acaba? Var mı bir sıkıntı?
+
+2
+00:01:29,680 --> 00:01:30,560
+Geliyor hocam.
+
+3
+00:01:34,004 --> 00:02:00,004
+Bir saniye. Tamam. Merhabalar, umarım hepiniz sağlık saat içerisinde derse kıtımı sağlıyorsunuzdur. Hemen biraz bekledik zaten derse geçiş yapalım. Bu hafta op-ampları göstereceğiz, op-ampları işleyeceğiz. Geçen hafta kondansatör ve bobine giriş yapmıştık. Aslında onlarla alakalı bir...
+
+4
+00:02:00,691 --> 00:02:02,691
+ufak bir video,
+
+5
+00:02:05,611 --> 00:02:09,611
+animasyon tarzı bir şey de buldum, onu bir açalım.
+
+6
+00:02:33,620 --> 00:02:41,259
+Bir animasyon izleyeceğiz arkadaşlar. Bir kapasitörün çalışma mantığını animasyon üzerinde göstermek amaçlı.
+
+7
+00:02:42,580 --> 00:02:50,800
+Bahsetmiştik, kondansatör gerilim kaynağı ile alakalı olarak şarj ve de şarj eğilimi gösterir demiştik.
+
+8
+00:02:51,520 --> 00:02:56,140
+Kondansatörün şarj olması ters yönde normal bir...
+
+9
+00:02:56,596 --> 00:03:19,556
+Bataryanın ters yönüne doğru polarizasyonu şeklinde olur demiştik. Sonra bu konuda 4 şarj olurken ilk başta çok hızlı şarj olur, sonra yavaş yavaş şarj olmaya devam eder. Deşarj olurken ilk etapta çok hızlı deşarj olur, sonra tekrardan yavaşlayan bir eğilimle deşarj eğilim gösterir demiştik. Bununla alakalı bir görsel var.
+
+10
+00:03:27,219 --> 00:03:29,919
+Gözüküyor değil mi arkadaşlar, şey, videoyu oynuyor.
+
+11
+00:03:37,044 --> 00:03:56,364
+Bir kapasitörümüz var. Sesi kısacağım ben zaten. Hizay edeceğim için şu sesi kapatalım. Evet, bir batarya modülümüz var. Yukarıda bir ona bağlı olan kondansatör mimarisi var ve bir de motor gibi bir şey takılmış. İki etkisini görebilelim nasıl işliyor.
+
+12
+00:03:58,419 --> 00:04:05,740
+Burada kırmızılar artı yükleri, elektronları da yani eksi yükleri de sarı ile göstermişler.
+
+13
+00:04:06,899 --> 00:04:21,639
+Bataryanın içi hareketli bir yapıda ama kondansatörün içi tabii ki herhangi bir etkileşim olmayan, normal bir kağıt gibi etki gösteren, yani izolator olan bir yapıda şu an. Herhangi bir elektron akımı oluşmuyor içerisinde.
+
+14
+00:04:23,444 --> 00:04:29,844
+Şu an şuradaki switchi bağlayarak aslında pili kondansatöre bağlamış olduk.
+
+15
+00:04:32,924 --> 00:04:37,144
+Ama ilk etapta bir motor nasıl çalışıyor onu göstermek için bir kondansatöre çıkarttı.
+
+16
+00:04:37,144 --> 00:04:47,543
+Normal ana devrede motorun normalde batarya bağlandığında çalıştığını, bir tane ağırlığı yukarı doğru kaldırdığını gösteriyor.
+
+17
+00:04:50,355 --> 00:04:55,875
+Sonra kondansatörü bağladık ve kondansatörü devreden yani o motorlu devreden ayırdık.
+
+18
+00:04:56,316 --> 00:04:59,196
+Çünkü ilk etapta kondansatörü şarj etmek istiyoruz.
+
+19
+00:05:01,336 --> 00:05:02,635
+İçerisi boş.
+
+20
+00:05:07,187 --> 00:05:12,507
+İçerisinde yükler var ama tabii hareketsiz, herhangi bir yetkileşim, akım olmadığından balans durumda.
+
+21
+00:05:20,819 --> 00:05:21,539
+Bu, Baldy.
+
+22
+00:05:29,108 --> 00:05:34,168
+Şimdi elektronlar hareket ediyor ve kondansatörün içerisinde bir şeyler yapacak.
+
+23
+00:05:36,531 --> 00:05:41,471
+İki plaka demiştik, iki di elektrik materyali aslında polarize ediyoruz şu an.
+
+24
+00:05:42,011 --> 00:05:50,812
+Negatif yüklerle polarize olan kanalda, kısımda, di elektrik maddede pozitif yükler tabii ki bunu balans noda getirmeye çalışıyor.
+
+25
+00:05:50,812 --> 00:05:54,251
+O yüzden bu taraf polarizasyonu pozitif oluyor kondansatörün.
+
+26
+00:05:54,812 --> 00:06:02,211
+Öteki taraf ise negatifi, negatif yükleri ittiği için yani şuradaki elektrik materyal negatif yükleri o tarafa sıkıştırıyor.
+
+27
+00:06:02,644 --> 00:06:12,423
+Yani aslında artı eksi olan bir yapıda, eksi elektronların girdiği yer kondansatörde polarizasyon anlamında artı yüklerin olmasını sağlıyor.
+
+28
+00:06:18,163 --> 00:06:24,923
+Tabii bu sonsuza kadar böyle hareketlenecek ve içerisinde yüklenme olacak bir söz konusu değil.
+
+29
+00:06:25,443 --> 00:06:39,363
+Üzerindeki farat değeri işte birimi yük işte kolon anlamında ne kadar kaldırabiliyorsa o kadara kadar şarj eğiliminde hızlıyla başlayarak, yavaşlayarak artan bir eğilimde bir noktada duruyor.
+
+30
+00:06:39,891 --> 00:06:53,111
+Durunca artık bu noktada artık şarj almıyor ve akım da geçmiyor. Akım geçmediği için de, Kondansator aslında şu devre mimarında akım akmadığı için açık devre dediğimiz konu burada işte.
+
+31
+00:06:53,111 --> 00:07:03,391
+Kondansator stede stede gelince, duyum noktasına gelince artık devre açık devre özeldiğini gösterir. Yani bir akım oluşmaz.
+
+32
+00:07:04,084 --> 00:07:10,264
+Şu an akım durdu çünkü artık üzerinde yükler, yüklendi, polarizasyon oldu.
+
+33
+00:07:10,824 --> 00:07:14,963
+Şimdi biz bu yükleri bir motor üzerinden deşarj eğilimine bakacağız.
+
+34
+00:07:19,987 --> 00:07:28,987
+Tam tersi noktadan, yani eksi işte bu sefer bu taraftan çok hızlı bir şekilde başlayan...
+
+35
+00:07:35,315 --> 00:07:48,035
+Ta ki kondansörün içerisindeki potansiyel farkı minimize edene kadar devam ediyor. İlk etapta çok hızlı sonra yavaşlayan bir eğilimde deşarj oluyor.
+
+36
+00:07:48,035 --> 00:08:01,035
+Ve motoru çalıştırıyor. Sonra tekrar şarj etmek istediğimizde tekrardan bir batarya modülünden geçirerek yine aynı konseptte.
+
+37
+00:08:23,156 --> 00:08:27,855
+Bu tarz bir animasyon yapmışlar. Bunu göstermek istedik.
+
+38
+00:08:30,915 --> 00:08:34,495
+Kondansörün umarım çalışma prensibi anlaşılmıştır.
+
+39
+00:08:37,655 --> 00:08:40,695
+Bu haftaki konumuza geçebiliriz.
+
+40
+00:08:48,884 --> 00:09:12,923
+Evet, bu hafta arkadaşlar, op-amp dediğimiz, yani işlemsel operation amplifier'ın kısaltmalarından oluşan, işlemsel yükselteç diye de Türkçe'ye çevrilen veya işlemsel katlayıcı da diyorlar bazıları, devre elemanlarına bakacağız. Bunların analizlerini yapacağız.
+
+41
+00:09:16,211 --> 00:09:25,211
+Evet. İlk etapta ideal op-amp'ın çalışma prensibine bakacağız. Sonra ideal op-amp'ın dışında gerçekte hani bir op-amp...
+
+42
+00:09:25,744 --> 00:09:51,084
+Nasıl modellenebilir? Onun üzerine de bakacağız. Ama bizim bütün sorularımızda aldığımız yani devre tasarımlarındaki o pampları ideal olarak kabul edeceğiz. Yani bazı kaideler belirleyeceğiz, kurallar belirleyeceğiz ideal olduğundan dolayı. Ama gerçek hayatta tabii bunlar birebir tutmayacak. Ama biz ideale göre işlem yapacağız her işlemlerimizi.
+
+43
+00:09:51,796 --> 00:09:55,076
+Gerçek op-amp'ın da etkisini göstereceğiz tabii.
+
+44
+00:09:55,876 --> 00:10:00,000
+Sonra bu ideal op-amp'ların çalış, yani bağlantı şansı.
+
+45
+00:10:00,000 --> 00:10:21,819
+Bu şamalarında bazı isimlendirmeler veriliyor. Yani farklı bağlantı şamaları var ve farklı etkilere sahipler. Ama hepsinde bir kazançdan bahsedeceğiz. Yani kazanç dediğimiz yükselteç yani o amplifier özelliğini yapan bir kazanç denklemini çıkartmaya çalışacağız.
+
+46
+00:10:24,244 --> 00:10:46,744
+Farklı şematik gösteren, farklı dizaynlarla elde edilmiş o pump devrelerinin isimlerini şöyle söyleyebiliriz. Biri, Inverting Amplifier dediğimiz eviren yükselteç devresi, Non-Inverting Amplifier evirmeyen yükselteç devresi, Voltage Flower gerilim izleyici.
+
+47
+00:10:47,443 --> 00:11:05,763
+Summing Amplifier, toplayıcı yükselteş devresi, Difference Amplifier, fark alıcı yükselteş devresi ve Cascade Amplifier diye de söyleyebileceğimiz ağır dışıl kullanımları olan yükselteş devrelerini bugün analiz edeceğiz.
+
+48
+00:11:08,884 --> 00:11:22,663
+İlk etapta, Op-amp dediğimiz gibi bir işlemsel yükselteç ve aslında yaptığı şey şu, yüksek kazançlı giriş gerilimini o kazanç kat sayısı ile çarparak çıkışa yansıtan devre elemanları.
+
+49
+00:11:22,836 --> 00:11:49,056
+Yani girişteki ufak gerilimleri yükselmeye yarayan, sadece yükseltme işi olarak görmemek lazım, numerik değer olarak görmemek lazım. Belki de tersini alıp yükselten, yani sayı düzleminde tersini alınca ufaltırız. Artı 5 verdik, eksi 7 yaptık, bu iyi bir şey mi? O anlamda bakmamak lazım. 5'i 7 yapmış, hani genlik anlamında genişlettiğini söyleyebiliriz.
+
+50
+00:11:50,323 --> 00:12:03,423
+Bazen de çok da arttırmayacak. Yani şöyle, giriş geriliminden ufak da yapabiliriz ama sonuçta bir yükseltecen, bir kat sayıyla işlem yaptığı için bir geyinden bahsedeceğiz.
+
+51
+00:12:03,603 --> 00:12:08,983
+Kat sayıdan, yani kazanç, yüksek kazanç gösteren kat sayılardan bahsedeceğiz.
+
+52
+00:12:13,235 --> 00:12:33,556
+Gündelik hayatta kullanıldığı pek çok yer var. Ses yükseltme devreleri dediğimiz, mikrofonlarda sonuçta çok tiz sesleri bir insan anlayabileceği formata getirebilmesi için, çok az olan ses sinyalinin genliği çok ufaktır.
+
+53
+00:12:35,823 --> 00:12:48,943
+Yükselterek bilgisayara aktarıyor veya speaker karşı taraftan yükselterek o ses sinyallerini çeviriyor. Bu anlamda kullanılıyor çok ses uygulamalarında.
+
+54
+00:12:48,943 --> 00:13:03,803
+Bunun dışında biyometrikal sistemlerde çokça kullanılıyor amplifierlar ki, misal kalp atım, EKG cihazları kesinlikle o kalp ritminin hissedilebilir düzeyleri çok yükseğine getirilebilir.
+
+55
+00:13:03,823 --> 00:13:12,163
+Gülmesi için çok gürültüyü etkilenmeden, gürültüden etkilenmeyen bir yükselteş devre tasarımı gerçekleştirilmesi gerekiyor.
+
+56
+00:13:14,772 --> 00:13:23,812
+Veya güç elektroniğinde de çok kullanılıyor. Sonuçta girişteki gücü, yani gerilimi az olan, ki gerilimi az olan demek, gücü az olan demek.
+
+57
+00:13:24,112 --> 00:13:31,692
+Girişteki değerin güç, yani az, daha az olan gücün daha da arttırılması yönüne çalışmalar yapılıyor.
+
+58
+00:13:32,820 --> 00:13:43,200
+Op-amp'ın ideal ve gerçek gösterimlerine bakacaksak sorularda genelde Op-amp, şematik diagramlarda, sol üst köşedeki gibi gösterilir.
+
+59
+00:13:43,300 --> 00:13:45,980
+Yani 3 bacaklı, 3 terminali vardır.
+
+60
+00:13:46,840 --> 00:13:54,700
+2 input'u, 1 tane output'u olan ve bunların polarizasyonu önemli, polarizasyonunu gösteren bir yapıdır.
+
+61
+00:13:57,940 --> 00:14:19,180
+Yani en çok kullanılan şu LM324 diyagramı. Buna baktığımızda aslında artı eksi besleme dediğimiz iki tane gerilimiyle beslendiğini gösterdiğimiz şematik diyagramdır. Ama burada da yine inputlarımız ve outputlarımız var.
+
+62
+00:14:19,796 --> 00:14:34,216
+Buradaki numarik değerler 1D, 4D, bunlar aslında data sheetinde, bu LM324 markalı op-amp'ın data sheetinde bacaklarının hangisine tekabül geldiğini gösteren bir diakran gösterimi.
+
+63
+00:14:34,216 --> 00:14:41,216
+Yani bir nolu bacak, işte benim çıkışım, 2D, 3 giriş denilmiş gibi gösterebiliriz.
+
+64
+00:14:43,988 --> 00:14:47,768
+Pozitif besleme ve negatif beslemesi olan iki tane beslemesi var.
+
+65
+00:14:48,268 --> 00:14:57,807
+Artı bacağına non-inverting yani evirmeyen giriş terminali, eksi bacağına eviren giriş terminali diyoruz ve çıkış terminali de.
+
+66
+00:14:59,956 --> 00:15:24,576
+Şimdi bunun normalde içine baktığımızda, içinde şöyle bir diagram var. V2, yani şu birinci terminal ve ikinci terminal veya non-inverting ve inverting evirmeyen ve eviren girişlerin içeride bir direnç ile birbirinden ayrılması söz konusu. Ve bu direnç, R-İ çok çok yüksek bir seviye. Çok yüksek bir direnç değeridir.
+
+67
+00:15:26,096 --> 00:15:37,515
+Amaç şu burada aslında, bu iki terminal arasındaki potansiyel fark, yani V1 ve V2 arasındaki potansiyel fark, ona da VD desek, bu VD'nin
+
+68
+00:15:39,731 --> 00:15:54,951
+İşleme dahil edilerek VO'yu, A, V, D, A burada bir parametre, katsayı, A çarpı V, D şeklinde arttırmasıyla oluşan bir V0 gerilimini üretmek. Hedef bu.
+
+69
+00:15:55,751 --> 00:16:02,792
+Bunu üretmek için R0'ı minimum bir direnç, R, İ'de maksimum bir direnç almak zorundayız.
+
+70
+00:16:02,792 --> 00:16:07,731
+Çünkü R, İ maksimum direnç alacağım ki V2 ve V1 arasında.
+
+71
+00:16:07,731 --> 00:16:28,331
+arasındaki V'de potansiyel farkı çok yüksek çıksın. Çok yüksek çıkınca da A ile yüksek bir değeri çarpmak benim için maksimum G'ni verecek. Ta ki R0'ın minimum olursa. Çünkü buradaki direnç, buradan ürettiğim gerilimi minimum sömürmesini istiyorum. Böyle bir diagrama iç yapısı.
+
+72
+00:16:30,131 --> 00:16:47,432
+Burada ideal op-amplarda kabul edeceğimiz en önemli iki kriteri söyleyeceğiz. Birincisi şu, bu terminallere gelen, yani terminallerin içine giren iğne ve ip demişiz burada. Önceki soru da i1 ve i2 diyebiliriz bunlara.
+
+73
+00:16:52,980 --> 00:17:16,200
+Akımları birbirine eşit olmalı ve bunlar sıfır olmalı. Yani op-ampın içerisine bir sızıntı akımının gelmediğini kabul edeceğiz. Bu birinci kaydemiz. Neden? Çünkü RI direnci, şuradaki RI direncini biz şu an maksimum alıyoruz ideal op-amp'ta.
+
+74
+00:17:16,256 --> 00:17:43,695
+Yani sonsuz alıyoruz. Rİ direnç sonsuz olunca buradan akım geçmediğini, yani bir açık devreymiş gibi bir yapı olduğunu kabul edeceğiz. Birinci kabulümüz bu ideal op-amp'ta. İkinci kabulümüz ise şu, VN ve VP dediğimiz input terminallerinin o gidişinde oluşan gerilim noktaları. Bu gerilim noktalarının birbirine eşit olduğunu.
+
+75
+00:17:44,211 --> 00:17:45,211
+Kabul edeceğiz.
+
+76
+00:17:46,731 --> 00:17:53,251
+Ve bu kabule göre biz bir AV yani bir katsayı, bir kazanç katsayısı hesaplayacağız.
+
+77
+00:17:53,632 --> 00:17:59,932
+Bu kazanç katsayısı da normalde şu demek, V0 çıkışın girişe olan oranı.
+
+78
+00:18:00,351 --> 00:18:05,951
+Ama girişimiz iki tane, bu iki girişin arasındaki fark dediğimiz V'de zaten.
+
+79
+00:18:06,771 --> 00:18:24,731
+AV eşittir, V0 bölü VD diyeceğiz. Bunu zaten ister dışlar çarpımı yaptığımda, V0'ın AVD olduğunu söyleyeceğiz. Ki bir de bize şuradaki formüle getiriyor. Yani AVD'nin V0'a eşitliğine getiriyor.
+
+80
+00:18:25,731 --> 00:18:33,771
+Burada A dediğimiz şey bir kat sayı, VD dediğimiz girişlerdeki potansiyel fark, N ve VP.
+
+81
+00:18:34,228 --> 00:18:44,688
+B0'da bizim çıkıştaki gerilimimiz. Genelde biz A'yı bulmak üzerine, yani bu op-amp ne kadar bir kazanç sağlıyor, bunu bulmayı hedefliyoruz.
+
+82
+00:18:45,788 --> 00:18:51,588
+Bunu bulurken de kabul edeceğimiz kaydeler, birincisi herhangi bir sızıntı akımının olmadığı,
+
+83
+00:18:53,044 --> 00:19:03,044
+İki terminalden de. İkinci kabulümüzde, VN ve VP'nin birbirine eşit olduğunu kabul edeceğiz.
+
+84
+00:19:04,304 --> 00:19:14,403
+Bu A dediğimiz işte katsayı genelde gerçek hayatta kullanılan şeylerde.
+
+85
+00:19:15,092 --> 00:19:21,352
+Yani fiziksel olarak kullanılan op-amp'larda 100 bin ile 1 milyona kadar giden bir kas sayıdır.
+
+86
+00:19:21,452 --> 00:19:27,912
+Yani çok çok yüksek bir kazanım veren bir op-amp tasarımı mevcut gündelik hayatta.
+
+87
+00:19:28,339 --> 00:19:47,380
+Sonra, giriş girilimi, Rİ dediğim, giriş direnci, Rİ dediğimiz direnç, gerçek hayatta yine çok yüksek. Biz bunu sonsuz kabul ederek oranın açık devre olduğunu ve böylelikle İ1 ve İ2'nin, yani giriş terminerlerinden gelen akımların olmadığını, sıfır olduğunu söyleyeceğiz.
+
+88
+00:19:56,403 --> 00:19:58,403
+Yani V0'ya eşitleyelim.
+
+89
+00:19:58,403 --> 00:20:04,403
+Bu saplı voltaj dediğimizde, normalde o pampan bir de beslemelerinden bahsetmiştik.
+
+90
+00:20:04,403 --> 00:20:08,403
+Şu iki uca gelen artı V ve eksi V.
+
+91
+00:20:09,236 --> 00:20:23,916
+Bunlar, bu op-ampın besleme gerilimleri, bunlar da normalde gerçek hayattaki op-amplarda 5 ile 30 volt arasında artıya, eksi 30 ile 0 volt arasında da eksiye verilen bir değerdir.
+
+92
+00:20:24,296 --> 00:20:31,436
+Biz tabi sorularda nasıl veriliyorsak 50 volt ile verebileceğiz, 40 volt ile vereceğiz, onun bir şeysi yok.
+
+93
+00:20:35,347 --> 00:20:47,827
+Data sheetlerine bakacak olursak, data sheetlerde dediğimiz gibi bir sematik bir sembolü var. Bunun bir kılıf diagramındaki paket gösterimi mevcut.
+
+94
+00:20:47,827 --> 00:20:53,827
+Burada şuradaki tabii siz artık fizikse olarak yapmayacaksınız belki ama...
+
+95
+00:20:54,516 --> 00:21:03,016
+Şurada normalde bir çentiği oldu bir tarafında. Burada veya burada nasıl tuttuğunuza bağlı. Bu çentiği tuttuğumuzda, o çentik şurası.
+
+96
+00:21:04,375 --> 00:21:20,716
+Mesela şöyle baktığımda benim şuradaki bacağım aslında 8 nolu bacakmış. Eğer çentik buradaysa. 7, 6, 5 diye bu diyagram, paket diyagramı göre ben hangi bacak, mesela 7 nolu bacağa besleme gelimi vermem lazım.
+
+97
+00:21:22,644 --> 00:21:31,644
+4 nol bacağı da eksi besleme gerilimini vermem gerekiyor gibi bu kılıf bilgisine bakarak şematik bağlantıyı yapıyoruz.
+
+98
+00:21:35,827 --> 00:21:46,607
+Op-amp'ın bir özelliği şu arkadaşlar, eğer ki girişteki gerilim alternatif akımsa, yani bir frekans bilgisi var ise, DC gerilim değilse,
+
+99
+00:21:46,943 --> 00:22:05,423
+Biz tabii alternatif akım değil, DC gerilimde analiz yapacağız ama alternatif akım bir giriş gerilimim var ise ve bu girişteki frekans bilgim benim artıyor ise kazancım azalır. Yani kazanca olan etkisi bu frekansın ters orantılı.
+
+100
+00:22:05,647 --> 00:22:18,067
+Frekansım artıyorsa, daha sık bir sinyal geliyorsa, kazanç, sağladığı kazanç, o pump'ın çalışırken sağladığı kazanç, A parametresi azalacak diyeceğiz.
+
+101
+00:22:23,316 --> 00:22:29,236
+Burada Peace Spice üzerinde, bir simülatör üzerinde, Ohm'un alakalı bir diyardan gösterilmiş.
+
+102
+00:22:30,236 --> 00:22:37,316
+Geyini direkt verebiliyoruz ve bize ekstradan bir devlet tasarımı yapmamıza gerek kalmıyor.
+
+103
+00:22:37,476 --> 00:22:42,016
+Ama normalde biz sorularda giyini kendimiz hesaplayacağız.
+
+104
+00:22:47,155 --> 00:23:14,076
+Evet, dediğimiz gibi artı-eksi beslemelerle bir op-amp beslenmedikçe çalışmaz. Bu beslemeleri ne için önemli ona şimdi değineceğiz. Bunlar bizim için limitleyici unsurlar. Yani misal ben buradan 5 volt verdim, 100 volt olmasını istiyorum. 20 katlık bir kazanç var. Öyle bir devlet asımını yaptım. A20 oldu ve 5 voltu 100 volt yapması lazım.
+
+105
+00:23:14,612 --> 00:23:20,192
+Bu tabii ki yapılamayacak bir şey. Sonuçta yoktan var edilemeyen bir durum söz konusu.
+
+106
+00:23:20,832 --> 00:23:30,952
+Öyle olduğu için de bunlar aslında bu besleme gerilimleri benim için buradaki ağ kat sayısının bunun yapabilmesini sağlayacak.
+
+107
+00:23:30,952 --> 00:23:35,772
+Yani mesela burada 5 volt verdiysem alabileceğim maksimum benim 18 volt olacak.
+
+108
+00:23:36,272 --> 00:23:40,472
+Çünkü bu 18 volt besleme ile bu ağ kat sayısı çalışacak.
+
+109
+00:23:47,763 --> 00:24:11,183
+10'un üstünde, 18 artı 18 ve eksi 18'in üstündeki her bir durumda, ben saturation dediğim, pozitif ise eğer pozitif 18, artı 18 voltu geçtiyse eğer kas sayılı kazancım, pozitif saturation'a, eğer eksi 18'i geçtiyse, yani daha düşük değerler verdiyse, o zaman da negatif saturation'a gideceğim.
+
+110
+00:24:11,635 --> 00:24:21,635
+Bu şu demek, eğer bir kas sayı A diye bir bilimlenen kas sayı ve girişteki VD dediğimiz işte şu aradaki...
+
+111
+00:24:27,443 --> 00:24:50,243
+V1, V2, Vd'miz şu, V1-V2, değil mi? Yani ben öyle bir devre tasarımı yaptım ki, A kastayım, 10, yani 10 katını arttır, neyi? Bu Vd'yi 10 katını arttıracak. Vd 5 volt olsun, 50 volt olması lazım, değil mi? V0.
+
+112
+00:24:51,316 --> 00:25:03,056
+Eğer ki ben artı eksi 18 volt verdiysem beslemelerimden, bu şunu diyor, V0'ım 50 volt olmaz, artı 18 volt olur diyor.
+
+113
+00:25:04,635 --> 00:25:13,475
+Eğer ki tam tersini düşünelim, V1, V2 işte eksi 5 volt, 10 katını çıkartmam lazım, eksi 50 volt olacak.
+
+114
+00:25:14,163 --> 00:25:41,243
+Olmaz. Çünkü B'slemem benim, eksi 18, 18 volt, eksi 18 voltu görürüm. Bu aralıkta, hani artı 18, eksi 18 aralığında veya artı ve eksi V aralığında, ila 18 olmasına gerek yok, artı ve eksi V aralığındaki herhangi değer, A kas sayısıyla verildiyse, yani elde ediliyorsa direk. Zaten V0'ım, benim bu formülü kullanılarak bulacağım V0 olacak.
+
+115
+00:25:44,468 --> 00:26:03,147
+Burada aynı şey diyoruz. Yukarısı V0'ın bir yerde fitlenecek. Neden? Çünkü artık artı V'yi geçtiyse, katsayı çarpımı AV'de, o zaman VCC'ye, eğer eksi VCC'ye geçtiyse, eksi VSC'ye geçtiyse, eksi VCC ile limitlenecek.
+
+116
+00:26:07,604 --> 00:26:26,004
+V1, V2 eşit olduğu durumlarda, yani öyle bir fark var ki Vd'nin benim sıfır çıktığı. O zaman biz ne diyeceğiz? ABD'miz Vd sıfır olduğu için herhangi bir kasıyor olmayacak ve V sıfırımda sıfır çıkacak. Yani arada bir potansiyel farkı oluşturmam lazım.
+
+117
+00:26:30,259 --> 00:26:55,339
+Potansiyel farkı oluşturmak için de işte bir tarafa gerilim kaynağı, öteki tarafa da gerilim kaynağı bağlamayacağım. Bu tarz ilk yapımız bizim işte analiz edeceğimiz, voltage comparator dediğimiz gerilim kıyaslayıcı, karşılaştırıcı devre tasarımı. Bu direkt bir VD oluşturan ve VD çarpı A ile V0 oluşturan bir devre.
+
+118
+00:26:56,692 --> 00:27:16,051
+Yani bir uca, şu an mesela evren tarafa bir verilmiş, yani bir vsg verilmiş, evren tarafa verilen bir, evinmeyen tarafa da sıfır veriliyor, gene de var. Bir diyagram, burada bir vd oluşturmak hedef, vd oluşturduktan sonra da kazancı hesapladığımız bir örnek.
+
+119
+00:27:22,067 --> 00:27:32,147
+V ise, yani şuradaki V ise, sıfıra eşit olsa, yani burası sıfır olsa, burası da sıfır, yani şuradan gene de olduğu için burası da sıfır volt.
+
+120
+00:27:32,907 --> 00:27:42,047
+Sıfır sıfıra eşit olduğu için hep diyoruz, bir V'de oluşmayacağından, difference oluşmayacağından, V sıfırım sıfır volt olacak.
+
+121
+00:27:42,287 --> 00:27:45,727
+Eğer ki V ise artı beş volt olsa,
+
+122
+00:27:47,092 --> 00:28:10,852
+Yani işte büyük olsa diyelim, yani 0 volttan büyük olduğunu düşünelim. Büyükse eğer evren tarafı daha büyük olduğu için çıkışım benim, buradaki artı eksi beslemelerin değerleri olacak. Yani artı V diyelim, buraya da eksi V diyelim. Burası eksi V olacak.
+
+123
+00:28:12,243 --> 00:28:26,243
+Eğer ki benim burası eksi 5 olsa, 0 volttan düşük olduğu için, Vd dediğimiz parametre benim için evirmeyen tarafa daha ağır basacak.
+
+124
+00:28:26,863 --> 00:28:34,383
+Öyle olduğundan, çıkışım benim V0'ım artı V şeklinde olacak. Yani şuradaki değeri yansıtacağım.
+
+125
+00:28:36,343 --> 00:28:37,343
+Anlaşıldı mı?
+
+126
+00:28:37,971 --> 00:28:48,971
+Bu birinci op-amp'ın kullanım senaryosu. Herhangi bir loop dediğimiz evrim, çevrim bir devre tasarımı yok. Bundan sonrakiler de olacak.
+
+127
+00:28:49,423 --> 00:29:11,544
+Bunda yok, bunda sadece girişlerden bir tanesine VS gerilimi verdiğimizdeki aldığımız dönükler. Eğer ki o VS gerilimi öteki tarafa verilen gerilimden büyük veya ufaksa o ilgili bacağın etkisine göre benim V0'ın besleme gerilimlerine göre çıkıyor.
+
+128
+00:29:16,372 --> 00:29:18,092
+Anlaşıldı herhalde arkadaşlar.
+
+129
+00:29:24,756 --> 00:29:30,936
+Burada da misal Vs ve V2 var. V2 5 volt olduğunu düşünelim demişler.
+
+130
+00:29:31,576 --> 00:29:38,736
+Hocam, az önceki slide'da V0'ın eksi V olduğu durumu özetler misiniz tekrar?
+
+131
+00:29:39,896 --> 00:29:51,696
+V0'ın eksi V olduğu durum. V0 eksi V'ye çıkması için eksi tarafın nümerik değerinin artı tarafın nümerik değerinden daha yüksek olması lazım.
+
+132
+00:29:52,435 --> 00:29:59,855
+Yani V1 dediğimiz buraya gelen giriş gerilimi V2 giriş geriliminden daha yüksek olmalı.
+
+133
+00:30:00,375 --> 00:30:14,715
+Yani ben buraya 5 volt vermem veya işte burası 0 ise, şu an gene de olduğu için burada 0 diyorum, V2 burada 0, işte V1'e öyle bir Vs'e vereceğim ki 0'dan büyük olacak.
+
+134
+00:30:14,715 --> 00:30:19,695
+İşte 1 volt versem dahi arada bir Vd farkı oluşacak.
+
+135
+00:30:20,048 --> 00:30:38,448
+VD farkı benim, eksi eviren taraftan verdiğim için buraya eviren yani eksi bir gerilim vermesini neden olacak. Yani buradaki beslemelerden artı V, eksi V beslemeleri var demiştik. Eksi V'nin buraya yansımasına neden olacak.
+
+136
+00:30:39,412 --> 00:30:58,012
+Eğer ki V1'e sıfırdan ufak bir değer versem, yani Vs'ye eksi 1 versem, eksi 2 versem, neyse, bu sefer bu taraf daha ağır basacağı için, Vd'de demiş şu ikisinin arasındaki fark, bu sefer V2 için etmen olacak, yani önde olacak.
+
+137
+00:30:58,872 --> 00:31:06,732
+Vd'yi oluşturan V2 olacak. V2'nin etkisinden dolayı da V0 bu sefer artı V olacak.
+
+138
+00:31:09,971 --> 00:31:10,612
+Tamam mı?
+
+139
+00:31:10,632 --> 00:31:11,172
+Tamam hocam.
+
+140
+00:31:13,272 --> 00:31:16,451
+Başka bir örnek daha var esasında. Burası 5 voltmuş.
+
+141
+00:31:17,251 --> 00:31:21,292
+Vs'nin şu durumlarında V0'ın ne olacağı söyleniyor.
+
+142
+00:31:22,011 --> 00:31:24,852
+Artı V ve eksi V bağlandı buralara.
+
+143
+00:31:26,312 --> 00:31:27,692
+Bunu söylememişiz herhalde. Evet.
+
+144
+00:31:28,412 --> 00:31:29,971
+Mesela Vs0 ise...
+
+145
+00:31:30,324 --> 00:31:39,064
+5 volt sıfırdan büyük olduğu için VD'yi oluşturan pozitif olacak. Pozitif olduğu için ben V0'ıma artı V göreceğim.
+
+146
+00:31:40,864 --> 00:31:49,004
+Ama ben buraya işte bir de 6 volt yapalım. 6 volt versem bu sefer benim VD'imi oluşturan şey negatif olacak.
+
+147
+00:31:49,004 --> 00:31:53,364
+Yani buradaki VD negatif çıkacak. Negatif çıkacağı için de
+
+148
+00:31:54,163 --> 00:32:02,964
+A çarpı VD formülümüzdü. Bu VD negatif olduğu için de ve A'yı maksimum aldığım için eksi V'yi göreceğiz.
+
+149
+00:32:04,744 --> 00:32:16,244
+A'yı maksimum alıyoruz çünkü şu an bir loop gain'i yok. Bu A direkt kendi içerisinden gelen maksimum kazanç kabul ettiğimiz için.
+
+150
+00:32:17,715 --> 00:32:25,155
+Birazdan A'yı hesaplayacağız ama bu tarz sorularda A, benim için bunun iç yapısından gelen maksimum geyindir.
+
+151
+00:32:26,775 --> 00:32:27,655
+Bu tarz sorularda.
+
+152
+00:32:30,295 --> 00:32:42,215
+Eğer buna 5 alırsan, 5 volt, 5 volt, 5 volt eşit olacağı için bir V'de oluşmayacak, V'de oluşmayacağı için de 0, bir V sıfırım gözlemlenecek.
+
+153
+00:32:44,660 --> 00:32:45,460
+Tamam mı?
+
+154
+00:32:47,460 --> 00:32:48,579
+Tamam herhalde.
+
+155
+00:32:52,307 --> 00:33:00,767
+Artı V'nin değeri her zaman beslemeye bağlı. Artı V ve eksi V dediğimiz şeyler dışarıdan besleme gerilimleri.
+
+156
+00:33:02,347 --> 00:33:13,007
+Bu sorularda verilir. Dışarıdan artı eksi 15 voltla beslenen bir op-amp denir misal. Bu durumda eğer ki artı V ise artı 15 çıkacak V'si var.
+
+157
+00:33:19,347 --> 00:33:31,287
+Burada A'yı niye hesaplamıyoruz onu tekrardan belirteyim arkadaşlar. Yani A dediğimiz o katsayı parametresi var ya, A, G, Y, Denen bir parametre.
+
+158
+00:33:31,287 --> 00:33:44,927
+A'yı niye hesaplamıyoruz? Çünkü burada ideal olarak kabul ettiğimiz bir kanun var. Bunun içerisinde bir direnç var. Burada bir bağlı gerilim kaynağı olduğunu düşünelim.
+
+159
+00:33:49,587 --> 00:34:00,548
+A çarpı VD'ye bağlı bir gerilim kaynağıyla bir dirençte V0 var. Bunu kabul ettiğimiz için A genelde ideal opamplarda sonsuz alınır.
+
+160
+00:34:01,268 --> 00:34:14,587
+Sonsuz alındığından V0'ı oluşturan VD gerilimi 0.1 mili volt bile olsa, yani aradaki fark çok çok ufak da olsa, benim için A'yı sonsuz aldığımdan dolayı
+
+161
+00:34:15,188 --> 00:34:25,528
+Ve yani işte aradaki fark 0.1. E bura 1 milyon olduğunu düşünelim. Buradan gene 100 bin volt gibi bir şey çıkması lazım değil mi?
+
+162
+00:34:26,408 --> 00:34:37,188
+100 bin volt olmayacağı için, hani şu formülde V0 eşittir, A, V, D'den, 100 bin volt olmayacağı için direkt beslemeleri...
+
+163
+00:34:37,684 --> 00:34:51,444
+İşine mi geliyoruz? Çünkü bunlar limitleyen karı kriterler. Artı V ve eksi V. O yüzden de direkt biz V sıfıra, eğer artı ağırlıklıysa artı V, eksi ağırlıklıysa eksi V diyoruz.
+
+164
+00:34:53,164 --> 00:34:58,524
+Nedeni ideal olarak kabul ettiğimiz bir op-amp'tan dolayı, A'nın maksimum olmasından dolayı.
+
+165
+00:34:59,443 --> 00:35:15,703
+Bu tarz soru da yalnız ol. Diğer sorularda buraya işte bir loop evrimi yapacağız buradan, buraya bir kablo gelecek. O zaman şunu diyemeyeceğiz, burası idealdir, akım sıfır diyemeyeceğiz. Akım şöyle geçecek, o zaman bizim A'yı hesaplamamız gerekecek.
+
+166
+00:35:15,703 --> 00:35:26,863
+Ama bir closed loop yoksa, yani open loop varsa, bu bir open loop, bir closed loop dediği sonuna başın birleşme durumu. Çevrim yani.
+
+167
+00:35:27,251 --> 00:35:41,011
+Öyle bir senaryoda ayı hesaplamak zorundayız. Ama Open Loop'da açık çevrimde her zaman ayı biz maksimum alacağız.
+
+168
+00:35:45,492 --> 00:35:46,612
+Tamam, selamlı.
+
+169
+00:35:51,155 --> 00:35:55,296
+Şimdi geldik kulusluklara, yani kapalı çevrim olduğundayız.
+
+170
+00:35:55,435 --> 00:36:01,355
+Sonla devrenin, yani op-amp'ın çıkışıyla girişi arasında bir bağlantı oldu.
+
+171
+00:36:01,596 --> 00:36:04,975
+Senaryolarda bizim A'yı hesaplamamız lazım.
+
+172
+00:36:05,735 --> 00:36:07,855
+Kazanç kastiyasını hesaplamamız lazım.
+
+173
+00:36:07,996 --> 00:36:09,635
+Çünkü bu open loop değil.
+
+174
+00:36:10,275 --> 00:36:11,135
+Tekrar belirtelim.
+
+175
+00:36:12,515 --> 00:36:14,435
+Burada da kaydelerimiz hep aynı.
+
+176
+00:36:14,576 --> 00:36:18,515
+Misal, İ1 ile İ2 birbirine eşit ve sıfır olacak.
+
+177
+00:36:18,996 --> 00:36:29,416
+Yani bu kazançı A'yı hesaplayabilmemiz için bizim I1 ve I2'yi sıfıra eşitleyip birbirine eşit olduğunu söylememiz lazım.
+
+178
+00:36:29,876 --> 00:36:35,476
+İkinci kaydemiz de şuydu, V1 ve V2 birbirine eşit olmalı.
+
+179
+00:36:36,476 --> 00:36:40,816
+Onu da şuradan bu formülü çözmek için şöyle kullanacağız bu bilgiyi.
+
+180
+00:36:41,576 --> 00:36:43,615
+V2 şu an şurada sıfır değil mi?
+
+181
+00:36:45,476 --> 00:36:46,456
+Çünkü genelde var.
+
+182
+00:36:46,835 --> 00:36:50,775
+O zaman diyeceğim ki ben, V1'de bu noktada sıfır.
+
+183
+00:36:52,235 --> 00:36:53,935
+Ve buradan denklemler yazacağım.
+
+184
+00:36:55,095 --> 00:36:59,735
+İşte hatırlarsanız KBL'de yazıyorduk. Nasıl yazabiliriz bunu?
+
+185
+00:36:59,735 --> 00:37:03,755
+Akımın yönünü değiştirmeyeceksek eğer ben şöyle yazabilirim değil mi?
+
+186
+00:37:03,955 --> 00:37:05,536
+Isi'ye eşittir.
+
+187
+00:37:06,135 --> 00:37:10,235
+Vs-V1 bölü R1.
+
+188
+00:37:11,315 --> 00:37:21,655
+Değil mi? Çünkü ben biliyorum ki İ1 sıfır. Yani İ1'im eğer bir değer olsaydı, ideal olmasaydı bu, buraya da bir şey, yani Is'i direkt böyle yazamazdım.
+
+189
+00:37:23,755 --> 00:37:38,355
+Sonra buradan If'yi de yazalım. Hiç yönünü değiştirmiyorum. 0-V0, yani daha doğrusu yazalım, V1-V0 bölü RF.
+
+190
+00:37:39,123 --> 00:37:50,623
+Değil mi? Şimdi tekrardan aynı yere, I1'i ben sıfır kabul etmeseydim, I, S eşittir I, F artı I, I1 demem lazımdı.
+
+191
+00:37:51,043 --> 00:37:58,003
+Çünkü burada bir nod analizi var. Ama ben I1'i sıfır kabul ederek aslında şu ikisini birbirine eşitliyorum.
+
+192
+00:37:58,003 --> 00:38:05,823
+Benim denklemim, V, S eksi V1 bölü R1 eşittir.
+
+193
+00:38:06,164 --> 00:38:17,844
+Yani burası Is eşittir, If, şuradaki feedback dediğimiz besleme direncinin üzerinden geçen akım.
+
+194
+00:38:18,364 --> 00:38:23,163
+Ama eşit olacak. V1-V0 bölü Ref.
+
+195
+00:38:24,304 --> 00:38:29,043
+Bu denklemi niye yazdık? Bu denklemi aslında şunu çıkartabilmek için yazıyoruz.
+
+196
+00:38:33,856 --> 00:38:44,716
+Bölü vs giriş nedir? Neden bunu arıyorum? Çünkü kazanç dediğimiz şey çıkışın girişi oranıdır.
+
+197
+00:38:47,096 --> 00:38:58,256
+A parametresini bulmak için çıkışın girişi oranı yapmam lazım. Yani işte girişte 10 volt verdim, çıkışta 100 verdim. Kazanç nedir? 100 bölü 10'dan 10 katını arttırmıştır.
+
+198
+00:38:58,900 --> 00:39:03,559
+O mantıkla V0 bölü Vs'yi bulabilmek için bu denklemi yazdım.
+
+199
+00:39:03,660 --> 00:39:06,500
+Şimdi Vs'yi ve V0'ı bir taraflara toplayacağız.
+
+200
+00:39:06,760 --> 00:39:09,320
+Yani bir taraflara almamız lazım.
+
+201
+00:39:10,059 --> 00:39:14,300
+Burada bu diagramda V1'e direkt 0 yazabilirim.
+
+202
+00:39:14,300 --> 00:39:17,820
+Çünkü V2 0, ikinci kaydımız da buydu.
+
+203
+00:39:18,139 --> 00:39:19,079
+Böyle kabul edebilirim.
+
+204
+00:39:19,180 --> 00:39:21,360
+Yani ben şurayı 0 yazdım.
+
+205
+00:39:22,780 --> 00:39:24,099
+Buraya 0 yazdım.
+
+206
+00:39:24,820 --> 00:39:25,800
+Ne oldu elimizde?
+
+207
+00:39:26,271 --> 00:39:33,592
+vs bölü R1 eşittir, eksi V0 bölü Rf.
+
+208
+00:39:35,791 --> 00:39:46,092
+O zaman şimdi şey yapalım, V0 bölü vs'yi çekelim, V0 bölü vs eşittir, eksi R1 mi yapıyor?
+
+209
+00:39:46,592 --> 00:39:52,791
+Yok pardon, evet, yok, Rf bölü R1.
+
+210
+00:39:54,675 --> 00:40:06,175
+Yani ben, şunun da zaten A olduğunu biliyorum, bu diagramdaki kazanç kat sayımı, eksi RF bölü R1 ile bulabilirim.
+
+211
+00:40:06,896 --> 00:40:19,056
+RF bir direnç değeri, R1 bir direnç değeri, bu ikisinin oranı benim bu op-amp'ın kazancını belirleyen, ideal op-amp'ın kazancını belirleyen bir parametre oldu.
+
+212
+00:40:20,628 --> 00:40:22,467
+Nasıl çıkarttığımız anlaşıldı mı?
+
+213
+00:40:26,579 --> 00:40:43,960
+Formüller, diyagramlar değişir, mantığını anlamak önemli. Yani bu denklemi yazmak önemli arkadaşlar. Yoksa formülü hiç ezberlemeyin. Çünkü değişebilir. Ben buraya bir gerilim kaynağı da koyabilirim. Mesele mantığını anlamak.
+
+214
+00:40:45,779 --> 00:40:51,480
+RF bölü R1. Nereden geliyor? Eksirisi nereden geliyor? Bunu anlayabilmek.
+
+215
+00:40:52,371 --> 00:40:54,571
+Anladıysa devam edelim.
+
+216
+00:40:56,711 --> 00:40:58,311
+Buraları yüza ettik zaten.
+
+217
+00:41:02,291 --> 00:41:11,672
+Burayı gösterdiğimiz gibi, burası 0 volt olduğundan 0 alarak normalde KBL yapıyoruz. Yani denklemini yazıyoruz.
+
+218
+00:41:14,996 --> 00:41:16,596
+Aynı bizim yazdığımız gibi.
+
+219
+00:41:21,364 --> 00:41:26,184
+Şimdi bunu bulduktan sonra A'yı, A'nın pek çok farklı formatları var.
+
+220
+00:41:26,184 --> 00:41:32,504
+Yani mesela gerilim kazanç kas sayısı A ve akım kazanç kas sayısı A, I.
+
+221
+00:41:33,004 --> 00:41:38,164
+Yani gerilim kazanç kas sayısı V0'ın çıkış geriliminin V, S'ye oranı.
+
+222
+00:41:38,864 --> 00:41:44,764
+Aküm kazanç kas sayısı I0'ın yani çıkıştaki akımın girişteki akımı oranı.
+
+223
+00:41:45,460 --> 00:41:52,019
+Bunun dışında gerilim bölü akımlarla alakalı, akım veya akım bölü gerilimlerle alakalı bir tabir daha var.
+
+224
+00:41:52,379 --> 00:41:58,779
+Geçiş direnci kazancı, geçiş akım iletkenlik kazancı diye iki tane daha tabiri var.
+
+225
+00:41:59,599 --> 00:42:07,839
+Bu da aslında çıkıştaki gerilimin girişteki akımı oranıyla, çıkıştaki akımın girişteki gerilime oranıyla alakalı bir parametre.
+
+226
+00:42:08,420 --> 00:42:12,379
+Bunlar sorulabilir, nedir nereye gelir diye.
+
+227
+00:42:12,815 --> 00:42:14,355
+Bunları bilelim.
+
+228
+00:42:16,775 --> 00:42:37,855
+Gerçek op-amp'ta belki biz denklemi yazmış olsaydık. Hani demin ideal dedik, I1'i 0 aldı. V1, V2'ye eşit dedik. Şimdi I1'i 0 almasak nasıl yazılabilir? Bir kere şunu bileceğiz. İçeride bir iç direnç var ve bu VD'nin oluşması için aslında bu iç dirençinin üzerinden geçen akımın oluşması lazım.
+
+229
+00:42:38,260 --> 00:42:57,579
+I1 aslında eksi I2'ye eşit, birbirine zıt iki tane denklem ve ben şurada Is yazarken If'yi eşitlemeyeceğim, I1 artı If'yi eşitleyeceğim. Bu tarz denklemi yazarsak Is, I1 artı If, If, Fitbit okunuyor.
+
+230
+00:42:58,943 --> 00:43:05,244
+Şunu da biliyorum tabii, şurada da bir geri kaçma akımı var, İ akımı dedik.
+
+231
+00:43:05,704 --> 00:43:08,584
+Ve bu İ akımı da aslında İF akımına eşit.
+
+232
+00:43:09,224 --> 00:43:18,564
+Bunu da denkleme koyduğumuzda, yani İ eşittir İF dediğimizde ve bir diğer denklemin parametresi de İ1'in I2'ye tam zıt olma durumu.
+
+233
+00:43:18,564 --> 00:43:26,064
+Çünkü I1, şuradaki I2'nin bir direnç üzerinden geçtiğinden dolayı tam tersi.
+
+234
+00:43:26,804 --> 00:43:31,403
+0 kabul etmediğimiz senaryo. Tekrar söylüyorum.
+
+235
+00:43:33,724 --> 00:43:51,523
+Hayır, V1 ve V2 neden 0 oldu? Şu soruda. V2 dediğimiz noktaya genele bağlı. Genele bağlı olduğu için V2 0 ve ideal op-amp'ta burası açık devre olduğunu düşünüyoruz.
+
+236
+00:43:52,563 --> 00:43:56,483
+Bu açık devre olduğundan dolayı I1, V2, 0 oluyor.
+
+237
+00:43:57,003 --> 00:44:01,483
+Ve V1 neyse V2 veya V2 neyse V1'in de O olduğunu kabul ediyoruz.
+
+238
+00:44:02,324 --> 00:44:02,784
+Bu kabul.
+
+239
+00:44:04,103 --> 00:44:07,643
+V2 burada genelde neden dolayı 0, o yüzden burası da 0.
+
+240
+00:44:09,163 --> 00:44:10,844
+Biraz da bir yazık sorulmuş.
+
+241
+00:44:13,143 --> 00:44:18,583
+İdeal olmayanla anlatırken de I1-I2'ye veya I2-I1'e eşde olacak.
+
+242
+00:44:19,155 --> 00:44:32,695
+VD dediğimiz V2-V1'di zaten. Burada V2, işte, Rİ-I1, yani şurası, yani buradaki VD'nin oluşturan şey aslında Rİ çarpı eksi I1.
+
+243
+00:44:35,795 --> 00:44:43,755
+V6, Rİ çarpı İ2, ikisi de aynı şey. V0 dediğimiz çıkışı A, VD'ydi. VD'yi şurada,
+
+244
+00:44:45,268 --> 00:44:57,628
+Yani AVD'den bir de bir şey daha çıkartmamız lazım. Nedir o da? Eksi i çarpı R0'ı çıkartmamız lazım. Hani ideal değil, sonuçta bir R0 var ve ben bunu 0 alamıyorum.
+
+245
+00:44:58,448 --> 00:45:06,028
+Bunun bir direnç değeri var. AVD eksi R0 çarpı i neticesinde ben V0'ı bulabilirim.
+
+246
+00:45:09,811 --> 00:45:20,672
+Sonra Vs'i de R1 çarpı Is eksi V'de yapmam lazım. Yani şu Vs eksi Is çarpı R1 eksi V'de yapmam lazım.
+
+247
+00:45:24,532 --> 00:45:35,532
+En sonrada, R1 çarpı IS ve RF, IF artı V0 yazdığımda benim için asıl denklemin bu olacak.
+
+248
+00:45:35,532 --> 00:45:49,132
+Ama bunu da düzenlediğimizde, yani şu IS yerine yukarıdaki IS'yi yazdığımda, IF yerine yukarıdaki IF'yi yazdığımda çok daha karmaşık bir yapıya, formüle gelecek.
+
+249
+00:45:49,331 --> 00:45:57,092
+Bu formülde iç dirençlerin değeri var, çıkıştaki direncin değeri var, karışık bir yapıya bürünecek.
+
+250
+00:45:57,751 --> 00:46:01,032
+O yüzden biz sorularda ideal kabul edeceğiz.
+
+251
+00:46:01,331 --> 00:46:08,112
+Ve buradaki iç dirençlerde R1'i maksimum alıp, sonsuza gittiğinde R1, burası açık devre demeyin.
+
+252
+00:46:08,112 --> 00:46:17,112
+Bunu da kısa devreymiş gibi alarak AVD'nin V0'a eşit olduğunu, yani İ çarpı R0'ın bir gerilim oluşturmadığını,
+
+253
+00:46:17,331 --> 00:46:25,231
+I1 ve I2'nin burada açık devre olduğu için oluşmadığını ve I1, I2'nin sıfıra eşit olduğunu söyleyeceğiz.
+
+254
+00:46:29,427 --> 00:46:55,547
+Eğer ki ideal olarak yapmasaydık, dediğimiz gibi, Is, If'ye direkt eşit olamaz. Nasıl yazmamın lazım denklemi? Is, If artı I1 diyecektik. I1 eksi I2'ye eşit olacaktı. Bir de ben V1'i direkt V2'ye eşitleyemiyordum. V1, Vd artı V2 olacaktı. V2 burada sıfır olduğu için V1, Vd'ye eşit olacaktı. Vd'ye oluşacak şey de I1 çarpı R'ye iyiydi.
+
+255
+00:46:56,032 --> 00:47:02,032
+gibi denklemlerin baştan aşağı daha karmaşık bir yapıda yazılması gerekecektir.
+
+256
+00:47:06,996 --> 00:47:11,276
+Burada dediğimiz gibi sonsuz alma durumu ve sıfır alma durumu izah etmişiz.
+
+257
+00:47:12,216 --> 00:47:16,956
+Biz dediğim gibi hep ideal diyottan gideceğiz.
+
+258
+00:47:17,076 --> 00:47:19,116
+İdeal diyot olarak kabul edeceğiz.
+
+259
+00:47:19,996 --> 00:47:24,696
+Ve bu op-amplı devrelerde bu ideal diyotlara göre işlem yapacağız.
+
+260
+00:47:26,156 --> 00:47:29,736
+Ama öncesinde bir 10 dakika, 15 dakika ara verelim arkadaşlar.
+
+261
+00:47:30,096 --> 00:47:33,856
+Malum oruçta olunca biraz fazla erkenden yoruluyoruz.
+
+262
+00:47:34,192 --> 00:47:39,751
+Saat benim saatim 3, 3 çeyrekte tekrar derse devam edelim.
+
+263
+00:48:02,164 --> 00:48:04,503
+Hocam, buradayız, soru sorabilir miyim?
+
+264
+00:48:06,344 --> 00:48:07,563
+Evet, buradayım şimdi.
+
+265
+00:48:09,264 --> 00:48:17,344
+Haftaya bizim vize tarihiyle laboratuvar saat tarihi aynı günü olmuş da, olacak mı laboratuvar?
+
+266
+00:48:19,423 --> 00:48:22,804
+Yani laboratuvarlar beşten sonra başlamıyor mu?
+
+267
+00:48:23,284 --> 00:48:29,044
+Evet, evet. Öyle ama yani şey, vize haftası ya, laboratuvar oluyor mu? Onu sormak istemiştim.
+
+268
+00:48:29,244 --> 00:48:41,844
+Eğer program sıkışıksa yapmak zorundalardır. Değilse bir söylerim, bakalım ayarlayabiliyorlarsa ayarlarlar ama sıkışıksa yani kendileri bir program hazırladı. Olabilir yani vize haftası lab olabiliyor.
+
+269
+00:48:44,804 --> 00:48:49,784
+Peki hocam, vize yapış şekli belli mi? Neye hazırlık olur mu?
+
+270
+00:48:50,112 --> 00:49:06,231
+Bizi işte bütün işlediğimiz sorulardan gelebilir. Klasik de olabilir, test de olabilir. Test olursa muhtemelen gördüğünüz soruya geri dönmemek üzere bir test olur. Yani bir kere gördünüz, çözeceksiniz, geçeceksiniz. O tarz bir yapıda olur.
+
+271
+00:49:07,731 --> 00:49:15,552
+Eğer ki klasik olursa sizin kağıda çözümünüzü yaptıktan sonra fotoğrafını çekip yüklemeniz istenir.
+
+272
+00:49:16,115 --> 00:49:17,956
+Klasik şeklinde.
+
+273
+00:49:19,235 --> 00:49:21,255
+Test olsa da belki şöyle yapılabilir.
+
+274
+00:49:21,415 --> 00:49:27,436
+Test olsa da testi seçtikten sonra o testte ait çözümünüzü yüklemeniz istenebilir.
+
+275
+00:49:27,436 --> 00:49:30,056
+Yani her türlü yapılabilir yani.
+
+276
+00:49:31,615 --> 00:49:32,996
+Anladım hocam. Teşekkürler.
+
+277
+00:59:30,003 --> 00:59:33,543
+Dahil arkadaşlar, niye dahil olmasın? Bu haftakiler dahil.
+
+278
+00:59:36,043 --> 00:59:39,003
+Bu haftakiler, geçen haftakiler, hepsi dahil.
+
+279
+00:59:40,703 --> 00:59:42,583
+Vizeye kadar geldiğimiz her şey dahil.
+
+280
+00:59:46,228 --> 00:59:47,608
+devam edebiliriz.
+
+281
+01:00:02,420 --> 01:00:11,300
+Evet, şimdi bizim önceden tanımladığımız o evren, evirmeyen, fark alıcı gibi devre diagramlarına tek tek bakacağız.
+
+282
+01:00:12,260 --> 01:00:16,200
+Nasıl formülü ettiğimizi çıkarttığımıza izah edeceğiz.
+
+283
+01:00:25,876 --> 01:00:32,056
+Bunu bahsetmiştik zaten. Saturation dediğimiz, yani doyum noktalarında ne demekti bu?
+
+284
+01:00:32,556 --> 01:00:37,296
+Eğer ki katsayım benim V'de, A çarpı V'de V0 oluşturacak.
+
+285
+01:00:37,296 --> 01:00:44,735
+Ama bu V0 çok çok yüksek bir değer olursa eğer bizim için saturation'a, doyuma gittiğini söyleyecektik.
+
+286
+01:00:45,215 --> 01:00:52,715
+Ve bu doyum dediğimiz şey aslında limitlenen artı V ve eksi V beslemelerini söyleyecekti bize.
+
+287
+01:00:56,403 --> 01:01:12,483
+Bunu zaten analiz etmiştik. Bu Inverting Amplifier dediğimiz yapı, Loop olarak izah ettiğimiz geçen, biraz önceki sunumdaki yapı bizim için aslında Inverting, yani emiren bir yükselteş devreşemasıydı.
+
+288
+01:01:12,723 --> 01:01:23,483
+Biz onu yaparken sadece ağ kas sayısının nasıl bulunacağını izah etmiştik. Ama ismi de, bu lojik diagramın ismi de,
+
+289
+01:01:24,128 --> 01:01:45,208
+Eviren yükselteç devresi. Eviren dememizdeki kasıt aslında şuradan, VSI olarak belirtilen gerilimin negatif bacağı olan eviren bacağına besleme yapmasıyla eviren yükselteç, pozitif bacağına besleme yapmasıyla evirmeyen yükselteç diyeceğiz biz bunlara.
+
+290
+01:01:46,708 --> 01:02:02,548
+Bu potansiyel farktaki negatifin yüksek olma durumu bu. Öyle algılayalım. Yani buraya da bir şey koyabilirdik. Ama VS'nin buradaki gerilimden büyük olma durumunda yine eviren yükselteç noktasında çalışacaktı bu.
+
+291
+01:02:04,467 --> 01:02:19,627
+Bu devreyi tekrar analiz edelim aynı kaydelerle. I1 ve I2'yi sıfır kabul ettik ki buraya bir akım akmıyor ve buradaki gerilimin V2'nin şu noktadaki V1 gerilimine eşit olduğunu kabul edeceğiz demiştik.
+
+292
+01:02:20,447 --> 01:02:23,947
+Bunu kabul ettiğimizde şu an V2 burası sıfır.
+
+293
+01:02:24,500 --> 01:02:29,500
+O zaman V birimde burası 0 diyecektik ve buna göre bir diagram yazalım.
+
+294
+01:02:30,199 --> 01:02:37,879
+I birim 0 ise Is, If'ye eşit olacak. Birinci formülümüz bu.
+
+295
+01:02:39,859 --> 01:02:42,719
+Sonra Is'yi yazalım. Is'yi nasıl yazarız?
+
+296
+01:02:42,819 --> 01:02:48,439
+Vs eksi V1 yani 0 o da Vs bölü R1.
+
+297
+01:02:51,572 --> 01:02:56,552
+Neye eşit olacak? 0-V0, buraya V0 diyelim.
+
+298
+01:02:58,812 --> 01:03:01,711
+Yani, V0 bölü, RF.
+
+299
+01:03:03,552 --> 01:03:11,292
+Bu benim için aslında V0 bölü Vs'yi bulabilmem için en önemli yazmam gereken denklemdi.
+
+300
+01:03:12,500 --> 01:03:22,320
+Burada başka herhangi bir akım değeri yok, bir değişken yok. R1 ile RF zaten soruda verilen dirençler, onlarda değişken olarak görmeyebiliriz onları.
+
+301
+01:03:22,880 --> 01:03:31,220
+Soru şöyle de olabilir ama tersten, işte bu devre 10 katına çıkartması için RF yani kaç olmalı gibisinden de sorulabilir.
+
+302
+01:03:31,220 --> 01:03:40,500
+O durumda tabii bir değişken olacak ama şu etapta R1 ile RF'yi bildiğim için sadece V0 bölü Vs'yi ve O bölü Vs'yi...
+
+303
+01:03:40,500 --> 01:04:06,440
+Vs'yi çekmem lazım. Bunu da çekersem, Ve o bölü vs eşittir. Ne oluyor? Eksi rf bölü r1 oluyor değil mi? Yani benim için kazanç kat sayısı dediğim a parametresi ki v0 yani çıkış bölü giriş demek, rf x rf bölü r1 inverting amplifier için.
+
+304
+01:04:07,987 --> 01:04:16,288
+Dediğim gibi formülün nasıl çıktığını bilmek, formülü ezberlemekten çok daha mantıklı, çok daha yararlı olur sizin için.
+
+305
+01:04:17,427 --> 01:04:22,788
+Şimdi, öyle bir katsayı var ki şu an, mesela bakıyorum, RF 10'muş, R1 1'miş.
+
+306
+01:04:23,367 --> 01:04:30,147
+Yani, eksi 10 bölü 1'den, bu denklem için, eksi 11A katsayı parametre.
+
+307
+01:04:32,115 --> 01:04:38,115
+Bu ne demek? VSM'nin 1 volt ise, VO, V çıkışı, eksi 10 volt olacak.
+
+308
+01:04:38,115 --> 01:04:52,115
+Yani girişteki gerilimi eviriyor. Birinci yaptığı şey bu. Evirmeden kastımız, inverting fonksiyoneli burada gözlemleniyor. Girişteki gerilimin işaretini değiştiriyor.
+
+309
+01:04:52,115 --> 01:04:55,115
+Tabi A kastayı parametresine bağlı oldukça arttırıyor.
+
+310
+01:04:57,619 --> 01:05:04,019
+Tabi burada bir limitleyici modül daha var. Burada, o pump'ın içerisinde bakım belirtilmiş.
+
+311
+01:05:04,019 --> 01:05:23,211
+V0, yani şey V artı 15, V eksi, eksi 10 voltmuş. Yani ben şu an girişe 2 voltluk bir gerilim versem, çıkışta eksi 20 alabilir miyim? Alamam. Ne almam lazım? Eksi 10 alabilirim maksimum.
+
+312
+01:05:23,572 --> 01:05:47,871
+Girişte 1 volt versem, çıkışta eksi 10 alabilirim. Girişte 0.1 versem, çıkışta 1 volt, eksi 1 volt alabilirim. Girişte eksi 10 volt versem, çıkışta 100 volt alamam. Ne almam lazım? Artı 15 volt alabilirim. Tamam herhalde.
+
+313
+01:05:56,788 --> 01:06:03,568
+Sonumuz işlemler yapılıyor. Burada da tek tek test edilmiş, işte AV-10 bulmuştuk biz de zaten.
+
+314
+01:06:04,088 --> 01:06:11,307
+VS0 ise zaten bir gerilim olmayacak. Girişte herhangi bir gerilim yok. Bir VD gerilim farkı yok.
+
+315
+01:06:12,447 --> 01:06:14,467
+VS05 ise eğer,
+
+316
+01:06:15,411 --> 01:06:19,451
+İşte çıkışım eksi 5 volt olabilir. O eksi 10 katını arttırıyor.
+
+317
+01:06:19,931 --> 01:06:31,831
+Vs1 ise çıkışım eksi 10 volt. Vs1.1 ise çıkışım eksi 11 volt olmayacağı için eksi 10 voltla limitlenecek. Saturation'a gelir.
+
+318
+01:06:32,884 --> 01:06:44,384
+Vs-1.2 ise 12 volt okuyabilirim ama 1.71 iken 15.1 okuyamam, 15 volta limitlenecek, saturation'a girecek.
+
+319
+01:06:45,164 --> 01:06:52,824
+Grafını da çizersek, Vs'nin alt taraf Vs, V0 çıkışı olan etkisi, grafı,
+
+320
+01:06:53,172 --> 01:07:13,431
+Eksi 1.5'a kadar, yani eksi 15'e kadar, 15'e volt'a kadar, çünkü ters bir, eksi 10, bizim A değerimiz, 15 volt ve eksi 10 volt aralığında bir kazanç eğrisi gösterecek, diğer noktlarda satürer işine gelecek.
+
+321
+01:07:16,947 --> 01:07:24,947
+Bir diğer karakteristik şemamız, non-inverting yani evirmeyen yükseltme devreleri.
+
+322
+01:07:25,668 --> 01:07:29,507
+Kulus loop yine var. Çünkü bir A parametresi hesaplamamız gerekiyor.
+
+323
+01:07:29,788 --> 01:07:36,847
+Bu sefer gerilim farkı artı tarafın daha BD'yi oluşturan kısmında.
+
+324
+01:07:37,300 --> 01:07:48,340
+Bunun analizini yapacağımız şeyde aslında farklı formüller çıkacak sonuçta ama nasıl elde edildiğini bilirsek zaten çok da sondaki formülü ezberlemeye gerek yok.
+
+325
+01:07:49,040 --> 01:07:50,620
+Burası misal şu an vs.
+
+326
+01:07:51,880 --> 01:07:53,300
+V2 vs'ye eşit.
+
+327
+01:07:53,300 --> 01:07:57,340
+Ben biliyorum ki parametre kaidem neydi?
+
+328
+01:07:58,020 --> 01:08:00,160
+V1'in v2'ye eşit olması lazım.
+
+329
+01:08:00,280 --> 01:08:02,040
+O zaman burası da vs diyeceğim.
+
+330
+01:08:02,660 --> 01:08:04,480
+Ve buna göre işlemlerimi yapacağım şu an.
+
+331
+01:08:04,784 --> 01:08:18,804
+Yine aynı eşitlik, Is, Is, Is'e eşit olmalı. Çünkü Is'i nasıl yazalım ben peki? 0-Vs bölü R1.
+
+332
+01:08:20,283 --> 01:08:28,224
+Eşit olacak neye? Vs-V0 bölü Rf.
+
+333
+01:08:30,068 --> 01:08:36,188
+Burada yine aradığımız şey ne? Vout bölü, vs'yi çekmek. Bunu çekersek,
+
+334
+01:08:41,716 --> 01:08:42,896
+Ne geliyor?
+
+335
+01:08:49,011 --> 01:08:59,631
+1 artı R1 bölü Rf mi geliyor arkadaşlar? Şuan çekemedim ama. Çekelim.
+
+336
+01:09:07,220 --> 01:09:09,380
+1 artı RF bölü R1 mi?
+
+337
+01:09:11,720 --> 01:09:12,800
+Ha, dur şöyle şöyle.
+
+338
+01:09:15,620 --> 01:09:17,860
+Şu geliyor değil mi? Yanlış mı şeklim yoksa?
+
+339
+01:09:19,280 --> 01:09:26,360
+Bunu çekerseniz V0 bölü VSE'ye, yani o yüzden diyorum hani sonuçtaki o son formülü ezberlemenize gerek yok.
+
+340
+01:09:26,440 --> 01:09:27,980
+1 artı RF bölü R1, evet.
+
+341
+01:09:29,200 --> 01:09:34,000
+Bunu ezberlemenize gerek yok çünkü formülün nereden geldiğini bilmek daha önemli.
+
+342
+01:09:34,739 --> 01:09:43,000
+1 artı RF bölü R1. Yani RF bölü R1'in bir fazlası olacak şekilde bana bir kazanç kat sayısı veriyormuş.
+
+343
+01:09:43,760 --> 01:09:57,219
+Yine bir limitleme söz konusu. Yine analizini yaparsak, işte Vs0 ise yine 0 volt, Vs05 ise bu sefer 11. Yani RF bölü R1.
+
+344
+01:10:02,676 --> 01:10:07,236
+RF 10, R1 1, buradan da 11'i inecek.
+
+345
+01:10:09,176 --> 01:10:09,976
+AV 11.
+
+346
+01:10:10,615 --> 01:10:12,976
+Vs 0 iken 0 volt çıkacak.
+
+347
+01:10:13,275 --> 01:10:16,456
+Vs 0 5 iken 5.5'i gösterebilecek.
+
+348
+01:10:16,456 --> 01:10:18,896
+1.6 iken gösteremeyecek.
+
+349
+01:10:19,096 --> 01:10:21,936
+Çünkü artı 15 satür eşliğine takılacak.
+
+350
+01:10:22,484 --> 01:10:31,664
+0, eksi 0, 9'dayken 9.9'u gösterebilir ama eksi işte 10 voltun üstüne, altına düşerse gösteremeyecek.
+
+351
+01:10:32,084 --> 01:10:42,524
+Şurası yanlış olmuş. Şurası eksi 10 olacak arkadaşlar. Herhalde yanlış yazmışız. Tamam.
+
+352
+01:10:46,355 --> 01:11:06,271
+Bir diğer diagram, evren yükselteci gördük, evirmeyen yükselteci gördük. Bu da gerilim izleyici devre. Esasında baktığımızda bir loop var, bir kazanç hesaplaması yapılabilir tekrardan ama...
+
+353
+01:11:06,271 --> 01:11:26,051
+Kayıteleri bir yerine oturtturalım isterseniz. V0 bölü vs'yi arıyoruz yine aynı şekilde. Burası da vs oluyor. Değil mi? Kayıtımızdan. Burası da vs'ye eşit deniyor. Zaten v0 dediğimiz şey vs'ye eşit.
+
+354
+01:11:27,444 --> 01:11:46,284
+VSI eşitse de kazancı zaten bunun bir olan, yani 0 bölü VSI'den bir de elde edebileceğimiz yapı. Yani bu gerilim izleyici devresi kazancı bir olan bir devre demek. Yani girişteki gerilimi çıkışa taşıyor. İdealde tabii.
+
+355
+01:11:48,948 --> 01:12:07,247
+Toplayan yükseltti devreleri var. Burada çok karışıklık yapıyorsunuz. Şöyle ki, direkt bu gerilimlerin toplanarak çıkışa geldiğini düşünüyoruz ama öyle değil. Bunun her birine ayrı ayrı analiz edilerek yapılması lazım.
+
+356
+01:12:07,764 --> 01:12:12,363
+Bunun için de biz misal süperpozisyon tekniklerini kullanarak bunu bir çözebiliriz.
+
+357
+01:12:12,484 --> 01:12:17,724
+Hani formülü etmesek de en azından mantığını nasıl oturtturabiliriz buna bakabiliriz.
+
+358
+01:12:17,824 --> 01:12:20,584
+Süperpozisyon bize ne diyordu hatırlarsak?
+
+359
+01:12:20,584 --> 01:12:35,764
+Eğer ki bir devrede birden fazla gerilim veya akım kaynakları varsa bireysel olarak gerilim kaynaklarını analiz edip diğer gerilim kaynağı olan yerleri kısa devre, akım kaynaklarını bireysel ele alıp diğer akım kaynaklarını...
+
+360
+01:12:35,764 --> 01:13:03,264
+tüm kaynağı olan yerleri açık devre yapıp sonucu toplayabiliriz. Bunu söylüyoruz süperpozisyon bize. Burada da gerilim kaynaklarımızdan değerlerini kısa devre edip analizleri tek tek yapalım. Birinci süperpozisyonumuzda işte V, A'yı 1 volt bağlı değerlerini kısa devre ettik. Bu durumda I, C, I, B oluşmayacak ve I, A, I, F'ye eşit olacak çünkü buralarda bir gerilim yok.
+
+361
+01:13:03,796 --> 01:13:27,236
+IA, IF'ye eşde olma durumu var. Yani aslında bu direkt ibiren devrenin aynısı. Yani eksi RF bölü RA'nın şuradaki VA ile çarpımı bana birinci şeyi verecek. Yani şuradaki gelime virtual kısmı verecek.
+
+362
+01:13:30,899 --> 01:13:41,719
+Yani akımların, oradaki akımları toplayacağız ya, IA artı B artı C'yi toplayacağız. Birincisi bu, bu IA'yı verecek değil mi? Bu A'nın deklemi.
+
+363
+01:13:42,779 --> 01:13:46,379
+IB'yi yapacağımız vakit, ötekini dahil edeceğiz.
+
+364
+01:13:48,519 --> 01:13:51,699
+IA'yı şöyle VA bölü RA.
+
+365
+01:13:52,207 --> 01:14:12,868
+Şu taraftan, öteki IFD'de ne olacak? IFD'de 0, yani şurası 0 olduğu için 0-V0 bölü R-F'ye eşitlediğimizde bizim için aslında birinci V0'mız normal evren de hesapladığımız gibi, evren yükseltik devresindeki gibi hesapladığımız gibi yapılıyor.
+
+366
+01:14:12,868 --> 01:14:17,528
+Yani buralarda yok çünkü bir şey. Bu birinci V0'mız.
+
+367
+01:14:18,323 --> 01:14:27,263
+İkinci V0'mız, yani şu VB'den elde edilen V0. Sonuçta V0'ları ayrı ayrı bulup toplayacağım. Süperpozisyonun mantığı buydu hatırlarsak.
+
+368
+01:14:28,043 --> 01:14:33,083
+Diğer kısma baktığımızda da yine aynı şekilde 3-0 bölü RB.
+
+369
+01:14:33,908 --> 01:14:51,608
+V0-B, 0-V0 bölü Rf'ye eşit olacak. Oradan eşitliği yaparsak gene, Rf bölü Rb, tabi Rf bölü Rb, çarpı Vb, benim buradaki Ib'den dolayı oluşan V0'ı bulacağız.
+
+370
+01:14:52,388 --> 01:14:54,968
+Bu da ikinci aşamadaki süperpozisyon.
+
+371
+01:14:56,968 --> 01:14:59,868
+Üçüncü aşamadaki süperpozisyon olacağı için bakalım.
+
+372
+01:15:00,724 --> 01:15:12,804
+Yine aynı şekilde, eksi 2, eksi 0 bölü RC, neye eşit olacak benim için? 0 eksi V0 bölü RF'ye eşit olacak.
+
+373
+01:15:13,463 --> 01:15:18,184
+Buradan, eksi RF bölü RC çarpı VC çıkacak.
+
+374
+01:15:18,184 --> 01:15:21,304
+Ben direkt yazdım, o şuraya VC yazalım.
+
+375
+01:15:23,347 --> 01:15:28,347
+Bu da benim üçüncü olan süperpozisyonundaki ayrıt işlemim.
+
+376
+01:15:28,868 --> 01:15:45,148
+En nihayetinde RF bölü RA çarpı VA buradan gelen, RF bölü RB çarpı VB buradan gelen, RF bölü RC çarpı VC'de üçüncü parttan gelen üç farklı bir invert devresi var.
+
+377
+01:15:48,095 --> 01:15:59,495
+Yani, Inverting devresi var. Bu Invertinglerin toplamı, benim için genel V0 verecek. Tabii eksiği ortak parantez dışına çıkarttık. Hepsi eksi olduğu için.
+
+378
+01:15:59,495 --> 01:16:10,695
+Yani bu devrede, bu dizaynı yaptığımızda, 1 volt, 3 volt ve eksi 2 voltun toplamı, yani direk 4 artı eksi 2, 2 volt olur değil.
+
+379
+01:16:11,220 --> 01:16:23,000
+Bu denkleme göre bu RF bölü RA, RF bölü RB, RF bölü RC kastiyelerine binaen buradaki gerilimlerin arttırılıp toplanması şeklinde hesaplanıyor.
+
+380
+01:16:23,440 --> 01:16:29,880
+X12 volt olmuş mesela şu an etabildi. X12 voltluk bir summing amplifier devresi.
+
+381
+01:16:32,100 --> 01:16:34,460
+Anlaşıldı mı nasıl hesapladığımız?
+
+382
+01:16:38,739 --> 01:16:40,559
+Bir problem yok değil mi arkadaşlar?
+
+383
+01:16:41,719 --> 01:16:41,979
+Tamam.
+
+384
+01:16:43,659 --> 01:16:48,019
+Bir farklı yükselteç devresi de fark alıcı yükselteç devreleri.
+
+385
+01:16:48,959 --> 01:16:57,739
+Burada yine iki tarafta da var ama bir farkındalığı şu, aynı bacağı, yani ikisi de invert tarafa değil, biri...
+
+386
+01:16:58,579 --> 01:17:10,760
+Non-Inverter kısmına, biri Invert kısmına bağlanan gerilimlerin olduğu bir devre. Aslında burada VD'yi hesaplayacağımız vakit, VD bir fark gerilimidir zaten.
+
+387
+01:17:12,368 --> 01:17:30,628
+Bu şeye dayanıyor. Yani bu VDE'ye iki tarafın da etkisi ve birbirinden farkının alınmasına dayanıyor. Ama burada da tekrardan şunu yapmayacağız. 3-2, 1, 1 volt, RF bölü RA'nın kat sayısı kadar 1 voltu çarpalım değil. Böyle hesaplanmıyor.
+
+388
+01:17:31,167 --> 01:17:39,828
+Öncelikle şuradaki RC devresini gördük mü, bu RC mimarisi aslında buradaki 3 voltun, 3 voltunu buraya getirilmiyor.
+
+389
+01:17:40,368 --> 01:17:50,548
+Burada bir gerilim bölüncü devresi var. Yani benim için şuradaki V2 gerilimim ne? Aslında R, C direnci üzerindeki gerilim olacak değil mi?
+
+390
+01:17:50,548 --> 01:18:06,028
+R, C'nin üzerindeki gerilim neyse V2'nin buna eşit olacak. Diğer kısmı da R, B üzerinde sönümlenmiş olacak gerilim. Böyle yaptığımızda 4 bölü 12'den çarpı 3 ne yapar? 1 mi? 1 volt.
+
+391
+01:18:06,452 --> 01:18:08,652
+V2'm benim 1 voltmuş.
+
+392
+01:18:09,772 --> 01:18:15,131
+Ve burası 1 voltsa benim kaydem neydi? Burası da buna eşit olmak zorunda. Burası da 1 volt olacak.
+
+393
+01:18:15,612 --> 01:18:17,112
+Ve işlemi buna göre yapacağız.
+
+394
+01:18:17,512 --> 01:18:26,891
+Yani 2-1 bölü 6, 1-V0 bölü 30 formülünden ilerleyeceğiz.
+
+395
+01:18:35,444 --> 01:18:40,104
+Yani direkt hani numerik olarak yapmadan şöyle de yapabiliriz.
+
+396
+01:18:41,171 --> 01:19:03,251
+Ben direkt şurayı 1 volt dedim ama buranın denklemini nasıl yazıyoruz? V2'nin. Şuraya biz VB demişiz. VB çarpı RC bölü RB artı RC yazacağız değil mi? Yani gerilim bölü C, D, B'si böyle yazılıyordu. Bunu şuraya yazarsak yine aynı şekilde.
+
+397
+01:19:05,076 --> 01:19:23,015
+Çarpı, RC, bölü, RB, artı, RC yazalım. Bu artık benim için BA eksi, bu bölü, RA. Sonra öteki tarafta neye işit olacak? Bu da yazmış olduğum BB.
+
+398
+01:19:25,235 --> 01:19:46,515
+RC bölü RB artır RC, yani şuradaki diğer eksi, V0 bölü RF. Bu denklemi düzenlersek, yani burada tabii çok kompleks bir yapı gibi gözüküyor ama aslında düzenlersek, normal, basit bir devre çözümü.
+
+399
+01:19:50,771 --> 01:20:10,751
+Ne bulmuşuz misal? Eksi 4 volt gelmiş. Çünkü 30 bölü 6'dan bir kast sayı gelecek. Bu aradaki farkı aldığımızda, evet doğru. Eksi 4 voltluk bir V0 gerilim üretilmiş. Yani fark alıcı devre deyince hani 3 eksi 2 gibi bir şey algılanıyor bazen. Öyle değil.
+
+400
+01:20:11,199 --> 01:20:23,340
+Bu soruyu çözmemiz lazım. Yani buradaki V2'yi bulmamız lazım. V2'yi buraya atamamız lazım. Bu V2, V1'e eşitlik kaidesinden buraya atadıktan sonra burada denklemi yazıp çözmemiz lazım.
+
+401
+01:20:25,479 --> 01:20:26,559
+Tamam mıyız?
+
+402
+01:20:30,228 --> 01:20:32,567
+Burada bak şöyle bir şeyler düşünülebilir.
+
+403
+01:20:32,567 --> 01:20:55,608
+İşte Rb ile Rc'nin R'a ile Rf oranı Rb ile Rc oranına eşit olsaydı, yani Rb ile Rc oranına eşit olma durumunda direkt biz aslında bir fark alıcı, bu iki gerilimi fark alarak
+
+404
+01:20:56,819 --> 01:21:14,559
+Bu katsayı ile de çarparak bir sonuç elde edebilirdik. Neden? Çünkü şu ikisi, RA bölü RF ile RB bölü RC, aslında bu ikisini katsı, yani belli bir oranda bölen devre diagramları, bölücü bir yapıdalar yani ikisi de.
+
+405
+01:21:15,239 --> 01:21:24,179
+İkisi de bunların oranları eşit olsaydı, mesela atıyorum 4'e 2 burası, burası da 8'e 16. Yani iki kat var.
+
+406
+01:21:24,659 --> 01:21:34,760
+Burada da iki kat var. Yanlış yazdık tabii. Şöyle yazacağız. Çünkü öteki RC üzerinde kalacağı için buraya 8 yazmam lazım. Buraya 16 yazmam lazım.
+
+407
+01:21:35,520 --> 01:21:52,000
+16'ya 8 bir devre yapısını yapsaydık. Burada yine iki katla, burada da iki kat. O zaman direkt ben VB-VA, yani direkt bu ikisini çıkartarak şuradaki kazanç kat sayısında bir V0 elde edebilirdim.
+
+408
+01:21:52,627 --> 01:22:02,047
+Ve hatta R, I ile R, F ile eşit alsaydım, yani şöyle 4'e 4 alsaydım, bu da 16'ya 16 alsaydım.
+
+409
+01:22:03,155 --> 01:22:16,155
+Zaten burası 16.6 olduğu için buradaki değer bunun tam yarısı olacaktı. Bu buraya geldiğinde çıkarttığımızda aslında VA-VB'yi verecekti bize. Yani aynı şeyi söylüyor.
+
+410
+01:22:16,435 --> 01:22:26,996
+Yani direkt biz bu diagramda bir yapı oluştursaydık da hiç katsayı ile de uğraşmadan VA-VB tam çıkarıcı bir devre tasarımı yapmış olurduk.
+
+411
+01:22:31,636 --> 01:22:35,056
+Bir diğer kullanım, burada var mı bir problem arkadaşlar?
+
+412
+01:22:41,716 --> 01:22:42,716
+Şu kısmı var.
+
+413
+01:22:45,716 --> 01:22:46,716
+Hangi kısım?
+
+414
+01:22:51,188 --> 01:22:52,167
+Kırmızı karı.
+
+415
+01:22:59,828 --> 01:23:23,708
+İki kaydemiz her zaman ideal, op-amp deniyorsa soruda uygulayacağımız iki kayda var. Birincisi, buraya akım geçmediği için bu akım geçmeme kaydesiyle I, I, F, I, F'ye eşitleyeceğiz. İkinci kaydemiz de buradaki V2 gerilimine eşit olma kaydesi.
+
+416
+01:23:24,148 --> 01:23:29,387
+Bu V2'yi hesaplarken şu diagrama baktığımızda bu bir gerilim bölücü devre.
+
+417
+01:23:29,648 --> 01:23:34,028
+Çünkü buraya bir akım gitmiyor ve seri devre. Yani bir akım şöyle oluşuyor.
+
+418
+01:23:34,567 --> 01:23:37,807
+I, B, I, C eşit. Böyle bir akım oluşacak.
+
+419
+01:23:37,807 --> 01:23:43,327
+Ben şunu biliyorum, seri devrelerde akım her yerde aynı. Gerilim dirençler üzerinde farklı.
+
+420
+01:23:43,956 --> 01:24:03,996
+Yani burada akım, yani gerilim dirençlerinin üzerinde farkı oluşacak. Nasıl oluşacak? RC üzerinde 4K olduğu için 1V, RB üzerinde de 2V bir gerilim oluşacak. Benim için bu VB kısmı gene de olan şu aradaki potansiyel fark olacak.
+
+421
+01:24:11,220 --> 01:24:20,460
+RB artı RC. Şuradaki benim gerilimim, hani nümerik olarak yazmadan direkt değişkenli yazalım.
+
+422
+01:24:21,800 --> 01:24:33,180
+Buradaki değer benim için aslında buradaki değerinin aynısı. Buraya da ben RB çarpı RC bölü RC artı RB yazacağım.
+
+423
+01:24:35,220 --> 01:24:48,600
+Sonra ben buradan sonrası, zaten Eviren Yükselteç gibi denklemimi yazacağım. Denklemim ne diyor bana? IA'nın IF'ye eşitliğini kullanmam lazım. O zaman IA'yı yazmam lazım. IA'yı nasıl yazalım?
+
+424
+01:25:02,899 --> 01:25:21,479
+bölü, RC artır RB, yazalım. Bölü, tabi onu da böleceğiz. 6, şey 6 demeyeyim, parametrik gidiyoruz, RA. Bu, IA'nın formülü.
+
+425
+01:25:28,404 --> 01:25:38,404
+Bunu ben, I, F'ye eşitleyebilirim. Çünkü biliyorum ki, I birden bir akım geçmediği için, Notanazil'de, Noda girenler, Noda çıkanlar eşit olmak zorunda.
+
+426
+01:25:38,404 --> 01:25:47,084
+I, F'yi yazacağım. I, F'de V0, eksi burası, bölü, R, F. R, F'yi aşağıya yazayım.
+
+427
+01:25:50,260 --> 01:26:09,600
+Tabii tam tersine yazacağız. Şöyle, VB çarpı RC bölü RC artı RB, şurasını girelim. Eksi V0 bölü RF. Burası da benim için IF oluyor.
+
+428
+01:26:12,435 --> 01:26:21,115
+Bunu düzeltirseniz, düzenlersek veya işte problemdeki ilgili R, B, R, C'leri yerine yazarsak soruyu çözmüş oluyoruz zaten.
+
+429
+01:26:21,775 --> 01:26:29,195
+Çünkü soru benim için bunun, burada V0'ın ne olduğunu soruyor.
+
+430
+01:26:29,455 --> 01:26:38,675
+V0'ı da şöyle bulabiliriz, VO bölü Vs'i buradan çekersek, VO'yla Vs burada tabii VA oluyor.
+
+431
+01:26:39,188 --> 01:27:01,068
+ve A'yı çekersek, benim için zaten bir kazancı verecek, A'yı verecek bu. Bu A'yı da V0 uygulayabilirim. Veya direkt işte burada zaten V, A, V, V, R, C, R, A, R, B hepsi belli. V0'ı da direkt bulmuş olurum eşitlikte. Çıkışı yani. Tamam mıyız?
+
+432
+01:27:06,612 --> 01:27:31,091
+Son olarak, son devre tasarımımız ise, kaskat dediğimiz, ardışıl, ard ardı kullanılan op-amp mimarileri. Bunları analiz ederken, arkadaşlar bu tarz mimarileri, ilk etapta şuna bakalım. Bu nasıl bir yapıda? Mesela ben bunu ilk baktığımda, artıya bir besleme geldiği için, evren yükselteç yapısında olduğunu,
+
+433
+01:27:33,171 --> 01:27:52,832
+Çıkarttım. Şuna bakıyorum. Artısında bir gerilim yok. Eksisinde bir gerilim var. V0 gerilim ama bir gerilim var. O zaman bu da, pardon evren yazmışız ya, evirmeyen. Evren yükseltecek.
+
+434
+01:27:55,572 --> 01:28:15,592
+mimarisinde diyeceğiz. V0'ı en nihayetinde de kaskat bir analizde bulacağız. Parçalı analiz, ilk etapta soldaki kutuyu analiz edeceğiz. Sonra da sağdaki kutuyu VO1 olarak nomine ettiğimiz şekilde analiz edip VO1'leri eşitleyeceğiz. Aynı birbiri içerisine yazacağız.
+
+435
+01:28:17,460 --> 01:28:37,600
+İlk etapta bunun bir non-invertingti. Nasıl yapıyorduk tekrar yapalım. Şuradaki gerilim neyse, burada mesela 2 voltmuş. 2 voltu buraya yazacağım. 0-2 bölü 5. Karşı tarafta 2-V0 bölü 15 eşit olacak.
+
+436
+01:28:38,131 --> 01:28:40,291
+Buradan V0'ı çekebiliriz direkt.
+
+437
+01:28:41,492 --> 01:28:50,011
+Veya parametrik olarak yazmak istediğimizde de zaten formülümüz 1 artı RF bölü R1 çıkacak olan bir formül.
+
+438
+01:28:50,011 --> 01:28:58,072
+Burada 15 bölü 5'ten 3 gelecek, bir daha 4, kat sayısı 4 olan bir denklem olacak buradan gelin.
+
+439
+01:28:58,171 --> 01:29:02,692
+Yani buradaki 2 voltu ben burada 8 volt yapacağım şu an.
+
+440
+01:29:03,091 --> 01:29:03,951
+Gözüken o.
+
+441
+01:29:05,011 --> 01:29:09,131
+Bu birinci denklemi çözdükten sonra elimizde bir VO1 oluştu.
+
+442
+01:29:09,591 --> 01:29:11,851
+Yani VO1'i de çekebiliriz ya bu denklemde.
+
+443
+01:29:11,911 --> 01:29:13,211
+Yani şuraya VO1 yazalım.
+
+444
+01:29:13,572 --> 01:29:14,652
+VO1'i çekerim.
+
+445
+01:29:15,211 --> 01:29:17,011
+VO1'i öteki tarafta...
+
+446
+01:29:17,555 --> 01:29:21,655
+giriş olarak kullanacağım, yani vs olarak kullanacağım.
+
+447
+01:29:22,155 --> 01:29:29,235
+Yazarken de denklemin, VO1-0 bölü R2, 0-V0 bölü Rf'yi eşitleyerek,
+
+448
+01:29:29,836 --> 01:29:33,435
+ikinci denklemi çıkartacağım ve oradan V0'ı çekeceğim.
+
+449
+01:29:34,895 --> 01:29:40,376
+Burada bir başka yöntem de şu, burayı ayrı analiz edip A'yı bulmak,
+
+450
+01:29:40,916 --> 01:29:43,815
+A1, mesela burada A1'ne 15 bölü 5.
+
+451
+01:29:44,756 --> 01:29:45,676
+Yani 3.
+
+452
+01:29:46,735 --> 01:29:49,216
+Şey pardon, 15 bölü 5 artı 1.
+
+453
+01:29:49,435 --> 01:29:51,036
+Yani 3 artı 1 daha 4.
+
+454
+01:29:51,556 --> 01:29:52,235
+Burası 4.
+
+455
+01:29:52,935 --> 01:29:57,016
+Şuradaki 8 bölü 2 ama eksi 8 bölü 2'den.
+
+456
+01:29:57,195 --> 01:29:57,815
+Eksi 4.
+
+457
+01:29:59,676 --> 01:30:06,695
+Bu ikisini çarptığımdaki, yani bu iki kat sayıyı çarptığımda, benim için genel kat sayıyı verecek.
+
+458
+01:30:07,536 --> 01:30:07,996
+Bu soruda.
+
+459
+01:30:08,836 --> 01:30:11,916
+Tabi onu hesaplamamışız ama eksi 16 olması lazım şurada.
+
+460
+01:30:14,003 --> 01:30:16,323
+Anlaşıldı mı bu yapı arkadaşlar?
+
+461
+01:30:18,663 --> 01:30:29,043
+Yani parçalı analiz yapıyoruz. Sadece şuralara işte V01 dediysem, ötekinin girişi V01 olarak birbirine bağlıyoruz.
+
+462
+01:30:35,060 --> 01:30:45,060
+Farklı yapılarda mevcut devre dizaynları. Misal şunu hatırlıyoruz, bu neydi? Bu bir voltage follower devresi. Bu da voltage follower devresi.
+
+463
+01:30:45,359 --> 01:30:54,059
+Bunun ikisini bu şekilde bağladığımızda ne oluyordur? Bu, Differentiate dediğimiz fark alıcı devre.
+
+464
+01:30:54,059 --> 01:31:00,959
+Çünkü ikisine de bir gerilim besliyoruz ve bu gerilimde bir dirençle iki tarafta da bir lupa sokuyoruz.
+
+465
+01:31:00,959 --> 01:31:06,059
+Burada bir gerilim bölücü olacak. Yani aslında burada vermiş olduğum RT'yi ben burada alacağım.
+
+466
+01:31:06,059 --> 01:31:09,159
+V artı şeklinde bu bir voltage follower olduğu için.
+
+467
+01:31:13,359 --> 01:31:15,500
+çarpı R4 bölü R3
+
+468
+01:31:15,500 --> 01:31:17,179
+artı R4 benim için
+
+469
+01:31:17,179 --> 01:31:19,579
+Vx'i oluşturacak. Öteki tarafta
+
+470
+01:31:19,579 --> 01:31:21,319
+da bu Vx'i bulunca buraya
+
+471
+01:31:21,319 --> 01:31:23,199
+yazacağım. Burada da
+
+472
+01:31:23,199 --> 01:31:25,259
+Vx'i vardı.
+
+473
+01:31:25,719 --> 01:31:26,819
+Vx'i eksi
+
+474
+01:31:26,819 --> 01:31:29,319
+işte burada bulduğum değer Vx bölü
+
+475
+01:31:29,319 --> 01:31:31,639
+R1 Vx eksi Vout
+
+476
+01:31:31,639 --> 01:31:33,279
+bölü R2'ye eşitleyerek
+
+477
+01:31:33,279 --> 01:31:35,380
+bir Vout formülü
+
+478
+01:31:35,380 --> 01:31:36,380
+elde edebileceğim.
+
+479
+01:31:36,979 --> 01:31:48,859
+Karışık devreler sorulabilir. Bu da karışık bir devreye benziyor. Ama matematiksel olarak neyin nasıl yapıldığını anladıysak her türlü çözümü yapılabilecek sorular bunlar.
+
+480
+01:31:56,148 --> 01:32:03,248
+Özet olarak baktığımızda, ideal bir op-ampı anlattık. İdeal op-ampdaki iki kaydemiz var dedik.
+
+481
+01:32:03,628 --> 01:32:13,408
+I1 ve I2'nin birbirine eşit ve sıfır. Neden? Çünkü re-i dediğimiz op-ampın input direnç değerini biz maksimum alıyoruz.
+
+482
+01:32:13,408 --> 01:32:24,108
+Sonsuz aldığımız için I1 ve I2'den bir akım geçmiyor. Yani açık devremiş gibi içerisi ve sıfır ampere eşit bir değer olduğunu söyledik.
+
+483
+01:32:24,148 --> 01:32:28,068
+V1 ve V2 de bu nedenle birbirine eşit olacak dedik.
+
+484
+01:32:28,404 --> 01:32:33,144
+R0, çıkışın 0-10 olarak kabul ediyoruz ideal op-amplarda.
+
+485
+01:32:33,764 --> 01:32:44,484
+Ve ideal op-amplarda besleme gerilimine bağlı olarak eğer ki kasem çok yüksekse bunlarla saturation yani doyum noktasına gittiğini söyledik.
+
+486
+01:32:45,083 --> 01:32:50,064
+Kaskat yapıları izah ettik. Onun dışında süperpozisyonla çözüm yaptık.
+
+487
+01:32:50,203 --> 01:32:56,404
+Süperpozisyon ile işte bir akım kaynağını veya gerilim kaynağını nasıl değiştirerek op-amplar üzerinde çözeceğimizi gösterdi.
+
+488
+01:32:56,404 --> 01:33:03,384
+Genel olarak formülleri ezberlemeyelim ama yine de ben slide'ın sonuna koydum.
+
+489
+01:33:04,384 --> 01:33:20,404
+İşte inverting için genel elde edilen hani o diagramlar kullanıldıktan sonra elde edilen formül, non-inverting için elde edilen formül, voltage follower zaten birebir eşitliği olmasından dolayı elde edilen formül.
+
+490
+01:33:21,076 --> 01:33:34,155
+Summing içinde eğer ki R'ler ortaksa, Rf bölü R'den hepsinin toplamı şeklinde bir formül kondu. Ama bunu nasıl elde ettiğimizi unutmayalım.
+
+491
+01:33:34,868 --> 01:33:56,248
+Sonra difference içinde, fark alıcı devre içinde burada bir gerilim bölücü olduğundan dolayı VB dediğimiz nokta, V2'nin bir şeyi, bütün dirençler R ise eğer zaten direkt birbirinin çıkartımı şeklinde form çıkacak ama eğer ki R olmasa da çözümü, ilk başta şuradaki VB'yi bulmamız lazım.
+
+492
+01:33:59,488 --> 01:34:09,368
+Bu dirençlerle bir şekilde VB'yi oluşturacak. Bu VB'yi bu VA'ya eşitleyeceğiz ve normal sorumuzu inverting yapısında çözeceğiz.
+
+493
+01:34:09,788 --> 01:34:13,488
+Veya da invertte de olabilirdi. Tam tersi o şekilde çözmüş olacaktık o zaman.
+
+494
+01:34:14,288 --> 01:34:22,888
+Yani hiçbir şey değişmiyor. Sadece formülleri iyi biliyor. Yani nasıl geldiğini, nasıl elde ettiğimizi anladıysak bir problem yok. Var mı sorun?
+
+495
+01:34:26,676 --> 01:34:37,016
+Sorumuz yoksa arkadaşlar, op-amp konumuz bu kadar idi ama var mı soru op-amp ile alakalı? Tekrar soralım.
+
+496
+01:34:45,971 --> 01:34:53,071
+O pump ile alakalı bir sorumuz yok ise eğer size geçen hafta vermiş olduğum ödevlere gelelim.
+
+497
+01:34:56,271 --> 01:34:59,871
+Umarım çözmüşsünüzdür diye ümit ediyorum.
+
+498
+01:35:02,671 --> 01:35:07,431
+Hemen yükleyeyim, hemen yükleyeyim onu. Bir iki dakika bekleteyim sizi.
+
+499
+01:35:16,692 --> 01:35:17,152
+diyorum.
+
+500
+01:36:34,292 --> 01:36:42,412
+Zaten duyuru konmuş. Ben daha standartla görüşmemiştim. Herhalde biraz önce koydular. 6 Mayıs 2021 tarihinde ertelenmişler bunlar.
+
+501
+01:36:46,739 --> 01:36:47,819
+Teşekkürler, [öğrenci].
+
+502
+01:37:28,212 --> 01:37:29,692
+8. haftalara.
+
+503
+01:37:32,032 --> 01:37:38,132
+Evet, şimdi geçen hafta bir soru örneği vermiştik.
+
+504
+01:37:39,212 --> 01:37:43,632
+Ama isterseniz bir 10 dakika ara verelim yine arkadaşlar.
+
+505
+01:37:45,052 --> 01:37:45,932
+Biraz yorulduk.
+
+506
+01:37:46,572 --> 01:37:50,952
+10 dakika sonra saat 4'ü 5 geçe görüşelim tekrar.
+
+507
+01:37:51,332 --> 01:37:51,932
+Devam edelim.
+
+508
+01:37:52,832 --> 01:37:54,072
+Size soruları sorduracağım.
+
+509
+01:37:54,292 --> 01:37:55,612
+Yani çözdüreceğim ona göre.
+
+510
+01:37:57,300 --> 01:37:58,760
+Hocam, 3 soru vardı değil mi?
+
+511
+01:37:59,780 --> 01:38:00,900
+Bir tane mi, 3 mü?
+
+512
+01:38:02,400 --> 01:38:05,400
+Şey, example 25'ü birincisi.
+
+513
+01:38:06,880 --> 01:38:08,680
+Bir de example 25 vardı.
+
+514
+01:38:10,080 --> 01:38:13,039
+24 de var bende ama 24 ve 25.
+
+515
+01:38:14,460 --> 01:38:15,640
+Yani 23, 24...
+
+516
+01:38:15,640 --> 01:38:17,360
+Ben yanlış hatırlıyorum hocam.
+
+517
+01:38:18,520 --> 01:38:21,520
+3 soru diye benim aklımda kalmış. Bakacağız.
+
+518
+01:38:29,011 --> 01:38:36,032
+Siz yapacaktınız arkadaşlar, size yaptıracağım ona göre. Saat 4'ü 5 geçe, görüşmek üzere.
+
+519
+01:50:48,819 --> 01:50:53,299
+Evet arkadaşlar, başlayalım son dersimize de soru çözümleriyle.
+
+520
+01:50:58,292 --> 01:51:04,592
+Evet, ilk sorumuz buydu diye hatırlıyorum. Bunu çözmedik diye hatırlıyorum.
+
+521
+01:51:06,052 --> 01:51:09,692
+Evet, ben bir seçim yapmak için gönüllü varmak.
+
+522
+01:51:18,547 --> 01:51:22,187
+Evde yaptık değil mi arkadaşlar? Ödevdi neticede.
+
+523
+01:51:27,731 --> 01:51:28,492
+Bu da miyiz?
+
+524
+01:51:33,811 --> 01:51:39,652
+Bunu yaptık o zaman, tamam. Evet, bundan devam edelim o zaman.
+
+525
+01:51:43,380 --> 01:51:46,280
+Uğraşan yok mu arkadaşlar hiç sorularına?
+
+526
+01:51:46,880 --> 01:51:48,420
+Hocam ben deneyebilirim.
+
+527
+01:51:48,940 --> 01:51:52,300
+Tamam [öğrenci], alabilirsin kalemi.
+
+528
+01:51:59,828 --> 01:52:01,528
+Yetki var herhalde [öğrenci].
+
+529
+01:52:13,876 --> 01:52:19,815
+Şimdi hocam burada akım kaynağını, gerilim kaynağını dönüştüreceğim.
+
+530
+01:52:21,815 --> 01:52:22,695
+Şurada.
+
+531
+01:52:25,735 --> 01:52:27,355
+Ben göremiyorum.
+
+532
+01:52:27,536 --> 01:52:27,996
+Tamam.
+
+533
+01:52:35,380 --> 01:52:37,019
+Yok hocam, şöyle değildi, pardon.
+
+534
+01:52:41,076 --> 01:53:05,395
+Hocam zaten çizimi yapmış burada. Ben burada iki paralel direnci, tek bir dirence dönüştüreceğim. Buradan sadece VX gelecek. Zaten dönüşümleri burada yapmış. Sonra en son burada bir mesh analizi yapacağım. Bir genel mesh'i, bir de şurada VX bulmak için.
+
+535
+01:53:06,868 --> 01:53:08,747
+Bir mesajinizi yapacağım.
+
+536
+01:53:15,764 --> 01:53:18,484
+Şuraya mesela i1 diyeyim.
+
+537
+01:53:26,612 --> 01:53:29,732
+Buradan da VX'i bulacağım.
+
+538
+01:53:47,731 --> 01:53:51,311
+Şimdi hocam burada geniş kısmı da alacağım.
+
+539
+01:53:56,979 --> 01:53:58,179
+Buraya da iyi dedik.
+
+540
+01:53:59,379 --> 01:54:07,479
+Şurayı acaba doğru mu yaptın? Vx'in polarizasyonu ile 3 volt'un polarizasyonu ters gibi geldi bana ama.
+
+541
+01:54:07,479 --> 01:54:09,219
+Öyle olması gerekiyor, evet hocam.
+
+542
+01:54:11,239 --> 01:54:12,839
+O zaman şöyle.
+
+543
+01:54:47,507 --> 01:54:51,887
+Buradan da, şurası artı olacak.
+
+544
+01:54:54,107 --> 01:54:56,547
+Ve x eşittir.
+
+545
+01:54:58,827 --> 01:55:01,647
+x'i 15, x'i 5'i.
+
+546
+01:55:10,868 --> 01:55:12,467
+Burada iyiler eşitti hocam.
+
+547
+01:55:42,228 --> 01:55:44,228
+Buradan i'yi çekiyoruz hocam.
+
+548
+01:55:45,228 --> 01:55:47,228
+x'i 9 bölü 2.
+
+549
+01:55:49,228 --> 01:55:51,228
+i oluyor.
+
+550
+01:55:51,228 --> 01:55:53,228
+Bizden v x'i istemişti.
+
+551
+01:55:55,228 --> 01:55:59,228
+Şuraya i yerine koyduğumuzda v x de
+
+552
+01:56:00,228 --> 01:56:01,228
+şuradan...
+
+553
+01:56:02,228 --> 01:56:04,228
+Evet, 7.5 old geliyor.
+
+554
+01:56:07,315 --> 01:56:11,235
+Tamam, teşekkürler. Neydi isim senin?
+
+555
+01:56:12,296 --> 01:56:13,296
+[öğrenci] hocam.
+
+556
+01:56:13,956 --> 01:56:18,396
+Numaranı bir yazar mısın oraya, o chat ekranına?
+
+557
+01:56:31,731 --> 01:56:36,771
+Teşekkürler [öğrenci], eline sağlık. Bir sorumuz daha vardı.
+
+558
+01:56:39,231 --> 01:56:43,711
+N-O-Tate'i temizleyebilir misin? Ben temizleyemiyorum herhalde.
+
+559
+01:56:47,444 --> 01:56:52,144
+Direkt Clear All Annotation gibi bir şey olması lazım orada, Drawing veya.
+
+560
+01:56:57,747 --> 01:56:59,727
+Bunu çözecek var mı?
+
+561
+01:57:02,647 --> 01:57:10,407
+Bir önceki soruda sadece akımların eşitliği derken, yani mesh analizini diyorsun muhtemelen, mesh de çözülebilir, evet.
+
+562
+01:57:11,747 --> 01:57:19,067
+Yok hocam, ben şey için demiştim, mesela burada nod alınınızı yapsak, mesela 3 volttan 1 volta doğru bir iyi akım geçiyor ya,
+
+563
+01:57:19,847 --> 01:57:25,327
+Rekoru ona iyi deyip, hatta şöyle bir çizebilirsem size, bir saniye.
+
+564
+01:57:25,779 --> 01:57:40,859
+Aldım galiba kalbimi. Şimdi burası, ben burayı zemin olarak aldım. O zaman burası Vx olarak zaten buradan baktığımızda Vx olarak geliyordu. Ondan sonra. Şimdi burası sıfırsa, burası 3 volt olarak yazdım. Burası sıfırsa, işte şurası Vx artı 18 oluyor.
+
+565
+01:57:41,959 --> 01:57:42,459
+Evet.
+
+566
+01:57:48,564 --> 01:58:01,404
+Eşit olmalı. Buradan buraya doğru giden akım. O da işte Vx-18'den x18 bölü 4 dedim. Direkt olarak buradan Vx çektim. Ama aynı da gerçekte. Doğru olur mu? Yoksa bir hata mı var? O yüzden sormak isterim.
+
+567
+01:58:01,864 --> 01:58:03,064
+Yok hata yok. Doğru.
+
+568
+01:58:03,203 --> 01:58:04,144
+Tamam doğru oluyor.
+
+569
+01:58:04,564 --> 01:58:04,963
+Doğru.
+
+570
+01:58:05,224 --> 01:58:05,703
+Tamam hocam.
+
+571
+01:58:05,743 --> 01:58:06,944
+Evet bu da olabilir. Doğru.
+
+572
+01:58:08,764 --> 01:58:10,884
+Neydi [öğrenci]? Senin de ismini alalım.
+
+573
+01:58:11,963 --> 01:58:12,364
+Onduk.
+
+574
+01:58:12,804 --> 01:58:13,283
+Şöyle.
+
+575
+01:58:13,583 --> 01:58:14,184
+Yazdım.
+
+576
+01:58:14,484 --> 01:58:15,224
+Yazdım hocam.
+
+577
+01:58:17,811 --> 01:58:19,771
+Bu da güzel başka bir çözüm, evet.
+
+578
+01:58:26,804 --> 01:58:48,444
+Tamam arkadaşlar, bir sonraki sorumuz vardı, bir tane daha vardı herhalde. Hangisiydi? Bir dakika. Bunu çözmüştük sanki. Bu vardı değil mi? Bunu yapacak var mı? İki farklı devreyi çözüp orasayacak var mı?
+
+579
+01:58:56,148 --> 01:58:57,888
+Uğraşmadık mı arkadaşlara kadar?
+
+580
+01:59:02,963 --> 01:59:20,384
+Thevenin eşdeğerliğini nasıl olur? [öğrenci], al sen, bir sıkıntı olursa müdahale olurum. Veya varsa başka yapacak, uğraşacak arkadaş da uğraşsın. [öğrenci]'dan başka var mı?
+
+581
+01:59:24,979 --> 01:59:26,739
+Yok herhalde. Tamam [öğrenci], al.
+
+582
+01:59:28,019 --> 01:59:36,399
+Şimdi hocam, zaten bize şekiller çizmiş. Burada kaynak dönüşümleri falan, burada kaynak dönüşüm yapmış. Burada da işte gerilim bulmak için diğer şekli çizmiş.
+
+583
+01:59:37,019 --> 01:59:44,179
+Sadece bunun için bakacak olursak, şimdi zaten burada i3'ün direkt olarak i0'ın tersi olduğu görülüyor. O yüzden diyorum ki i3 eşittir.
+
+584
+01:59:45,179 --> 01:59:47,239
+Eksi, eksi yazmadık.
+
+585
+01:59:50,419 --> 01:59:50,979
+Şöyle.
+
+586
+01:59:53,011 --> 01:59:54,971
+Eksi i sıfır olduğu görülüyor.
+
+587
+01:59:55,831 --> 02:00:07,511
+Şimdi birinci meşe için bakarsam, burada bir KVL uygularsam, eksi iki ve x, artı iki i bir, bir de eksi iki i iki var.
+
+588
+02:00:08,911 --> 02:00:09,711
+Bunu sıfıra işledim.
+
+589
+02:00:10,739 --> 02:00:31,439
+İkinci meşe için mi bakacak olursak, şurada bir artı bir voltumuz var. Ya da şöyle yazalım. Açıkçası, direkt şöyle yazsak daha mantıklı. İkinci volt işimiz. 4, 6, 10, 12 tane var. Yani 12 tane i2'miz var. Eksi iki tane i1'miz var. Ve eksi 6 tane i3'miz var.
+
+590
+02:00:37,760 --> 02:00:58,900
+1 volt artı 8 i3 eksi 6 i2 eşittir 0 diyorum. Aynı zamanda şurada vx de baktığımızda eksi vx tersten girdiği için eşittir 4 çarpı i2.
+
+591
+02:01:02,068 --> 02:01:10,248
+Mesela ilk denklem yerine koyduğumuzda, şurada yerine koyduğumuzda bu Vx'i, 8 tane buradan İ2 var, 2 tane buradan çıkardığımızda 6 tane İ2.
+
+592
+02:01:11,108 --> 02:01:21,148
+6 İ2 artı, 2 tane İ1 eşittir 0. Buradan 3 tane İ2 eşittir, eksi İ1 çıkıyor.
+
+593
+02:01:21,708 --> 02:01:28,288
+Bir de şuradaki denklemi kullanacak olursak, şuradaki İ1 yerine bunu buraya koyduğumuzda,
+
+594
+02:01:28,659 --> 02:01:47,100
+Şu denklem de şu hale geliyor. 18 tane i2, eksi, 6 tane i3 eşittir, 0 geliyor. Bir de şu denklemimiz var. Bunu da altına yazacak olursak. 8 tane i3, eksi, 6 tane i2, eşittir, eksi 1.
+
+595
+02:01:54,640 --> 02:02:10,820
+16 tane i3 eşittir, eksi 3 kalacak. Buradan da i3'ümüzü eksi 1 bölü 6 bulacağız. Bizden i0 istiyordu. i0 da tam tersiydi bunun. i0 buradan 1 bölü 6 oldu.
+
+596
+02:02:11,600 --> 02:02:21,780
+Şimdi biz burada 1 voltluk test gerilim bağladık. O zaman burada RTH yazarsak, RTH'i, 1 volt bölü 1 bölü 6'dan.
+
+597
+02:02:22,228 --> 02:02:25,427
+Direkt olarak 6 Ohm'u direncini bulmuş olduk bu şekilde.
+
+598
+02:02:27,247 --> 02:02:30,188
+Norton, sileyim istersen diğer şeyi yazmak için.
+
+599
+02:02:31,268 --> 02:02:32,867
+Olur, olur, tamam.
+
+600
+02:02:33,568 --> 02:02:33,827
+Tamam.
+
+601
+02:02:34,487 --> 02:02:37,587
+Buna bakacak olursak da yine burada da bir meşaneliz var.
+
+602
+02:02:39,807 --> 02:02:41,547
+Şimdi burada meşaneliz yazmaya gerek yok.
+
+603
+02:02:41,608 --> 02:02:44,568
+Gözden direkt olarak E1'in burada 5 Amper olduğu görülüyor.
+
+604
+02:02:45,427 --> 02:02:48,228
+Şurada VX yazacak olursak, VX'e...
+
+605
+02:02:48,979 --> 02:02:52,659
+4 çarpı i1-i2 olarak yazdım.
+
+606
+02:02:54,459 --> 02:03:02,119
+Polizasyon sonu olayı. Sonra buradaki meşe yazacak olursak, 4, 6, 12 tane i2 var.
+
+607
+02:03:04,219 --> 02:03:12,339
+Eksi 4 tane i1 var. Eksi 2 tane i3'ümüz var. İkinli meşe için baktığımızda.
+
+608
+02:03:12,919 --> 02:03:16,379
+Burada zaten i1'i bildiğimizin, bunu daha düzgün şekilde yazacak olursak, 12 tane i2.
+
+609
+02:03:17,268 --> 02:03:21,047
+Eksi iki tane i3, 20 oluyor.
+
+610
+02:03:22,707 --> 02:03:25,587
+Sonra meşru şuraya bakacak olursak da, burada direkt olarak,
+
+611
+02:03:26,228 --> 02:03:28,547
+Eksi iki tane vx,
+
+612
+02:03:30,648 --> 02:03:32,148
+Artı iki tane i3,
+
+613
+02:03:33,728 --> 02:03:34,887
+Eksi iki tane i2,
+
+614
+02:03:36,887 --> 02:03:38,667
+Eşittir, 0.
+
+615
+02:03:39,252 --> 02:03:47,731
+Burada zaten şuradaki Vx, şurayı daha düzgün hale edecek olursak, burada 4 kere 5, 20. 20-4i2 var burada Vx için.
+
+616
+02:03:47,731 --> 02:04:01,872
+Onu buraya yazarsak, x-40 artı 8 tane i2 artı 2 tane i3 eksi 2 tane i2 var, eşitir sıfır olarak.
+
+617
+02:04:05,587 --> 02:04:31,387
+Artı iki tane i3 eşittir 40 çıkıyor. Sonra bu iki denklemleri beraber kullandığımızda, alt alta yazdığımızda, altı tane i2 artı iki tane i3 eşittir 40. Zaten bunlar direkt olarak birini götürüyor. Buradan 18 tane i2 eşittir 60 çıkıyor. Buradan da i2 çekecek olursak, 10 bölü 3 çıkıyor.
+
+618
+02:04:31,823 --> 02:04:34,163
+Şimdi i2 akımımız şuradan geçen akım.
+
+619
+02:04:34,163 --> 02:04:38,163
+Şimdi zaten buradan akım geçmeyecektim. Buradaki aslında gerilim direkt olarak şuraya eşit oluyor.
+
+620
+02:04:38,163 --> 02:04:43,823
+Ben buraya eğer referans olarak ilk başta belirmiş olursam, burası direkt olarak VOC'ye eşit oluyor.
+
+621
+02:04:43,823 --> 02:04:53,583
+O zaman buradaki akımı yazacak olursan VOC-0 bölü 6 i2 eşit oluyor. i2 de zaten 10 bölü 3'tü.
+
+622
+02:04:54,899 --> 02:05:05,179
+Buraya yazdığımızda da VOC'miz 20 volt olarak çıkıyor. Yani 20 volt ve 6 ohmluk bir devreye dönüyor.
+
+623
+02:05:06,179 --> 02:05:18,899
+Evet, teşekkür ederim [öğrenci]. Eline sağlık. Güzel bir çözüm oldu. Arkadaşlar lütfen Thevenin ve Norton'a çok ciddi çalışalım.
+
+624
+02:05:19,667 --> 02:05:30,507
+Bunlar gibi sorular gelecektir. Bunlar zor sorular değil. Sadece dikkatlice KCL'yi ve KVD'yi uygulama soruları bunlar.
+
+625
+02:05:31,060 --> 02:05:50,860
+Bu test gerilimini neden oluşturduk? Birinci aşama bunu bilmek lazım. Çünkü burada bir bağımlı kaynak var ve test gerilimi oluşturuyoruz. Test gerilimi oluşturduğumuz için de akım kaynağını açık devre, gerilim kaynağı olsaydı da kısa devre edecektik. Bu şekilde Thevenin direncini bulduk birinci devre ile.
+
+626
+02:05:51,347 --> 02:06:04,807
+İkinci devre ile ise normal devre tasarımı. Orada da VOC'yi yani Thevenin gerilimini, soldaki devrede Thevenin eşdeğer direncini, sağdaki devrede Thevenin gerilimini bulduk.
+
+627
+02:06:05,588 --> 02:06:11,748
+Eğer ki akımı istemiş olsaydı da I0 dediğimiz akım Norton akımı olarak bize gelecekti.
+
+628
+02:06:13,248 --> 02:06:17,488
+Tamam herhalde arkadaşlar. Bu soruyu zaten çözmüştük.
+
+629
+02:06:20,627 --> 02:06:28,068
+Başka? Vize ile alakalı tekrardan diyorum Thevenin ve Norton gerçekten önemli iki konu.
+
+630
+02:06:29,648 --> 02:06:41,347
+Heleyle Thevenin, Yıldız diyorum. Zaten bunun içerisinde biz KCL'deydi, KB'deydi, bunları uygulayabileceğimiz hatta süperpozisyonu uygulayabileceğimiz bir soru sorulabilir.
+
+631
+02:06:43,827 --> 02:06:45,068
+Bunlara bakalım.
+
+632
+02:06:45,716 --> 02:06:54,136
+Bugün op-amp ile alakalı formüllerin nasıl çıktığı ile alakalı kesinlikle iyi çalışalım.
+
+633
+02:06:54,256 --> 02:07:01,476
+Yani formüller direkt sondaki RF bölü R1 gibi bunları ezberlemek yerine nasıl çıktığını bilmemiz lazım.
+
+634
+02:07:02,676 --> 02:07:03,516
+Buna bakalım.
+
+635
+02:07:05,136 --> 02:07:12,556
+Dediğimiz gibi işte test olabilir bir kısım ama sonuçta bir çözümünüzü yüklemenizi isteyebiliriz.
+
+636
+02:07:12,927 --> 02:07:23,508
+Kağıt üzerinde fotoğrafını çekip sisteme yüklemeniz istenebilir. Bir de hep sınavda gördüğümüz bir sıkıntı.
+
+637
+02:07:24,340 --> 02:07:52,100
+Belki birinci sınıfsınız diye, gerçi ikinci dönem ama, tecrübe etmemişsinizdir ama, son dakikaya bu tarz yüklemeleri bırakmak kesinlikle faciayla sonuçlanıyor. Mail hiçbir şekilde kabul etmiyoruz. Çünkü yürürlükte zaten sistem üzerinden yüklemeniz gerekiyor. Mail boş yere bana da atmayacaksınız. Hocam ben son dakika yüklerken hata aldım. Süre bitti. Ben mail ile gönderiyorum. Kabul etmeyeceğiz.
+
+638
+02:07:52,340 --> 02:07:55,400
+Maili kesinlikle kabul etmeyeceğiz. Tekrar tekrar söylüyorum.
+
+639
+02:07:56,060 --> 02:07:58,920
+Mailimiz kesinlikle mail atmayacaksınız.
+
+640
+02:07:59,619 --> 02:08:01,380
+Bunu gruplarınız varsa da yazın.
+
+641
+02:08:01,500 --> 02:08:05,000
+Çünkü mail attığınızda yani bakmayacağım bile.
+
+642
+02:08:05,380 --> 02:08:09,239
+Sonra da hocam benim kağıdım değerlendirmediğiniz diye boş yere sormayın.
+
+643
+02:08:10,020 --> 02:08:12,980
+Sadece sistem üzerinden yüklediğiniz kağıtlara bakacağız.
+
+644
+02:08:13,779 --> 02:08:15,140
+Süre yeterli gelecektir.
+
+645
+02:08:15,140 --> 02:08:17,100
+Süre hiçbir zaman sıkıntılı değil.
+
+646
+02:08:18,676 --> 02:08:33,435
+Bazı sorularda sunuma bakayım nasıldı deyip de sunuma geri dönme durumunda olursanız o süre yetmez. O yüzden öncesinde kesinlikle sunumlara çalışalım, soruları kendimiz çözelim.
+
+647
+02:08:33,792 --> 02:08:52,412
+Yani sunumdaki soruları. Ya bu benzer bir soru sormuş, bu sunumda da vardı deyip o sunumdaki soruyu bulasıya kadar o soruyu üç kere çözersiniz arkadaşlar. Zaten birebir hiçbir zaman sormayız. Benzer sorulabilir ama o da yani çalışılıp yapılabilecek sorular olacaktır.
+
+648
+02:08:57,043 --> 02:09:07,264
+PDF'ler hazır, her şey hazır, gideceğim, bulacağım mevzusu çok çok vakit yiyen bir mevzu ve kesinlikle süre yetiştirememenin esas nedeni budur.
+
+649
+02:09:07,699 --> 02:09:23,840
+Bir diğer hususta muhtemelen test olan sorular için diyorum tek görümlük vereceğiz. Yani şöyle rastsal gelecek size. 1, 3, 5, 7 neyse artık soru. Rastgele ilk siz 7. soruyu görebiliyor olabilirsiniz.
+
+650
+02:09:35,699 --> 02:09:59,140
+Sorular sonuçta bir yerlerde çoğaltılabilir. Ama biz bunu herkes gördüğü soruyu bildiği anlamda çözsün istiyoruz. Zaten olayı bu vizelerin. Bilgiyi ölçmek bir tık. Bu noktada yani siz sunumlardaki soruları bir kere çözmeniz zaten sınavda yeterli seviyede yani geçecek.
+
+651
+02:10:00,000 --> 02:10:08,000
+Çeknot alabilecek seviyede sorular çözebileceksiniz. Ta ki sunumdaki her soruyu kendiniz sıfırdan çözebiliyorsanız.
+
+652
+02:10:09,199 --> 02:10:14,960
+Tamam. Bu noktada sunumdaki sorulara lütfen bakalım. Kendimiz çözelim.
+
+653
+02:10:17,108 --> 02:10:35,208
+Şu an hatta uyarısını da yapayım, vizeden yüksek not almak çok önemli. Çünkü finalde biraz daha alternatif akımlar ve dönüşümler giriyor işin içine. Faz diagramları, faz dönüşümleri, kondansatörün üzerindeki şarj, deşarj eğilimleri, bunlara hep girecek.
+
+654
+02:10:45,108 --> 02:10:51,128
+Söylen basic teoremleri, anlattığımız tabirlerle sunumla belirttiğimiz gibi.
+
+655
+02:10:51,768 --> 02:11:00,808
+Bunlar işte tordu, tordaki eğilimdi, beş tordu bunlar belki sordurabilir ama detaylıca bir problem gelmez.
+
+656
+02:11:02,748 --> 02:11:06,028
+Ama finalde tabii bu daha sıkıntı oluşturuyor.
+
+657
+02:11:06,788 --> 02:11:08,828
+Lütfen vizede çalışalım.
+
+658
+02:11:09,228 --> 02:11:12,528
+Vizeden yüksek not almak çok kurtarıcı oluyor.
+
+659
+02:11:14,100 --> 02:11:17,640
+Sizin sorunuz varsa sizin sorularınıza bakabiliriz.
+
+660
+02:11:18,480 --> 02:11:20,039
+Yoksa dersle bitirebiliriz.
+
+661
+02:11:29,076 --> 02:11:30,176
+Var mı sorumuz arkadaşlar?
+
+662
+02:11:34,707 --> 02:11:47,847
+Sorunuz yoksa, bugün, [öğrenci], sen bir şeyler diyorsun mu bilmiyorum ama ses gelmiyor bana. Yaz eğer sorun varsa.
+
+663
+02:11:55,923 --> 02:11:57,043
+Ekranı kapattık.
+
+664
+02:12:11,764 --> 02:12:15,923
+Evet, bu soru da herhalde. Evet, 25'in soru ekrana yansıtalım.
+
+665
+02:12:21,971 --> 02:12:22,971
+evettor,
+
+666
+02:12:33,395 --> 02:12:38,456
+bağımlı kaynak var diye, soldaki, bir dakika çetin bir daha açalım.
+
+667
+02:12:44,115 --> 02:12:44,775
+Ne için dek.
+
+668
+02:12:54,387 --> 02:13:09,287
+Tamam, şimdi Thevenin için iki şey lazım bize. Bir, RTH, yani Thevenin, ekran geliyor mu? Değil mi? Paylaştım ben ekranı yanlış olmasın. Bir, Thevenin eşdeğer direnci dediğimiz RTH.
+
+669
+02:13:09,287 --> 02:13:15,007
+Şimdi normalde bağımlı kaynak olmasa ben buradan bakarak, mesela şunu koymayalım.
+
+670
+02:13:16,787 --> 02:13:44,367
+Akım kaynaklarını açık, gerilim kaynaklarını kısa devre yaparak, ki şu an akım kaynağı var, açık devre yaptım. Şuradan bakarak şunları ne olabilir burada? Şu ikisi birbirine seri, 6 Ohm. Bu buna paralel, iki tane 6 Ohm olduğundan dolayı 3 Ohm gelecek ve ona bu seri 5 Ohm. Yani RTH'ın 5 Ohm diyebilirdim. Ama burada bağımlı kaynak olduğu için bunu yapamıyorum.
+
+671
+02:13:44,884 --> 02:13:57,463
+Bunu yapmam için ben buraya, yine aynı şekilde açık ve kısa devre mantığı olacak, ama ben buraya bir tane bağımlı, şey, bir voltluk gerilim kaynağı vermem lazım.
+
+672
+02:13:58,284 --> 02:14:03,784
+Buradaki akımı bulacağım, bu akımı bulup bu gerilime böldüğümde RTH'ı bulabilirim.
+
+673
+02:14:04,224 --> 02:14:05,644
+Çünkü bağımlı kaynak var.
+
+674
+02:14:06,684 --> 02:14:09,184
+Bağımlı olmasaydı RTH'ın 5 oldu.
+
+675
+02:14:09,716 --> 02:14:30,436
+Bağımlı kaynak olduğu için bu tekniği kullanamıyorum. Çünkü bu gerilimi silemiyorum. Yani kısa devre de edemem, açık devre de edemem. Bu yüzden soldaki devreyi yaptık. RTH'ı bulmak için. Çünkü RTH'ım benim normal bulunan 5 ohm değil. Kaç bulduk? 6 ohm bulduk. Mesela 6 ohmmuş RTH'ım.
+
+676
+02:14:32,180 --> 02:14:38,760
+Şimdi öteki devrede neye yaptık? Öteki devrede ikinci gerekli olan VTH'i bulmak için.
+
+677
+02:14:40,200 --> 02:14:47,540
+Çünkü benim Thevenin eşdeğer devresi şunu diyor, karmakarışık bir devreyi bir direnç bir gerilim kaynağı ile gösterdi.
+
+678
+02:14:48,851 --> 02:15:11,412
+VTH'i bulmak için ise ben devreyi aynen tuttum. Bu aradaki VOC'yi, yani aslında şu 2.0 açık devre olduğundan olmayacak. Şu noktadaki, aşağıya eğer genelde alırsak, bu noktadaki gerilimi soruyor. Bu noktadaki gerilimi bulmak için de sağdaki devredeki mesh analizini yaptım.
+
+679
+02:15:14,152 --> 02:15:15,032
+Anlatabildik mi?
+
+680
+02:15:15,796 --> 02:15:25,796
+O da ne çıkmıştı? Unuttum ama kaç çıkmıştı? 20 mi? 20 volt. Yani aslında benim şu devrem...
+
+681
+02:15:31,507 --> 02:15:34,187
+6, 10 ve 20 voltluk bir devre.
+
+682
+02:15:35,807 --> 02:15:42,007
+Yani ben buraya bir yük direnci bağlasam, RL, buraya da bir RL yük direnci bağlasam,
+
+683
+02:15:43,487 --> 02:15:55,307
+şunun üzerinden geçen I, R akımı, buradan geçen I, R akımına eşit olacak ve R'lerin üzerine oluşan V, L gerilimi, buradaki V, L gerilimine eşit olacak.
+
+684
+02:15:56,595 --> 02:15:59,955
+Özet, Simplified Devre tasarımına geçmiş olacağız.
+
+685
+02:16:04,756 --> 02:16:25,336
+Bağımlı kaynak varsa arkadaşlar, RTH için test gerilimi çok çok standart, yani çok bilinen bir yöntem, yani en çok kullanılan yöntem. Eğer ki, hani 4 tane yöntem vardı ya analizlerde, ben en kullanışı yaygın olanı söyleyeyim. Bağımlı kaynak varsa test gerilimi vereceğiz.
+
+686
+02:16:26,131 --> 02:16:50,011
+Ve bağımsız olan diğer gerilim ve akım kaynaklarını atacağız. Yani gerilim kaynağını kısa, akım kaynağını açık devre yapacağız. Eğer bağımsız kaynak varsa, yani bağımlı kaynak yoksa, yani şu yoksa, o zaman en çok kullanılan akım kaynaklarını, yine gerilim kaynaklarını işte kısa devre ederek, akım kaynağını açık devre ederek, açık open circuit yaparak,
+
+687
+02:16:51,700 --> 02:17:19,139
+RTH'ı bulabiliyoruz direkt. Ama nereden bakacağız? Her zaman AB arası diyorsa AB arasından bakacağız. Mesela şu devreye buradan bakmakla, eğer bu olmasaydı bunu açık devre ettik. Buradan bakmakla devreye, buradan bakmak çok farklı. Çünkü 2.10 buradan bakarsan kullanılmaz. Ama buradan baktığımızda şu yapı, şu içerideki yapıya 2.10 seri olduğu gözüküyor.
+
+688
+02:17:20,340 --> 02:17:23,979
+AB arasından bakacağız uzun lafın kısası.
+
+689
+02:17:25,299 --> 02:17:29,840
+VOC'yi bulmak için de en çok kullanan bir source transformation'dır.
+
+690
+02:17:29,979 --> 02:17:37,619
+Bağımsız, yani bağımlı kaynak yoksa, bağımlı kaynak var ise normal mesh analiziyle devreyi analiz edeceğiz.
+
+691
+02:17:37,619 --> 02:17:40,819
+Niye? Çünkü buradaki VX zaten bir yerlerden gelecek.
+
+692
+02:17:41,100 --> 02:17:42,299
+I tabanla.
+
+693
+02:17:44,420 --> 02:17:45,180
+Tamam.
+
+694
+02:17:49,811 --> 02:18:03,811
+Tamam arkadaşlar. Dediğim gibi soruları çözelim. Sunumdaki soruları çözmeye sizin için yeterli olacak ama olay ki hani ekstra soru istiyorsanız dersin başında ben size kitap önermiştim.
+
+695
+02:18:03,811 --> 02:18:16,463
+Xiaomi, elektronik circuit, Türkçesi de var herhalde. Devre analizi kitabı var herhalde. Xiaomi. Şöyle bir acayip bir yazımı var ama Xiaomi.
+
+696
+02:18:16,463 --> 02:18:27,904
+diye bir kitap. Burada da sorulara bakabilirsiniz ama sunumlardaki sorular size yeterli gelecek. Ben söyleyeyim size. Sadece bütün soruları çözelim.
+
+697
+02:18:32,244 --> 02:18:35,283
+Tamam mı arkadaşlar? Var mı sorumuz başka?
+
+698
+02:18:42,164 --> 02:18:49,684
+Yoksa dersi bitiriyoruz. Sağlıklı günler diliyorum. Umarım vizeyi kazasız, belasız, sıkıntısız bir şehirde atlatırsınız.
+
+699
+02:18:50,443 --> 02:19:01,344
+Vizenin telafisi olmuyor arkadaşlar. Özellikle aksi takdiri olmadıkça, yani bir raporunuz, gerçekten ciddi bir sıkıntınız yoksa telafisi olmuyor.
+
+700
+02:19:02,044 --> 02:19:09,564
+Lütfen vizeye katılalım ve vizeden önce de sunumdaki soruları çözelim. Lütfen.
+
+701
+02:19:10,644 --> 02:19:14,884
+İyi günler, iyi tatiller size de, iyi çalışmalar, iyi vizeler.

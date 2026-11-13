@@ -1,0 +1,12211 @@
+1
+00:05:10,800 --> 00:05:24,980
+Merhabalar arkadaşlar. Sesim geliyor mu? Tamam. Herhangi bir sorun yoksa, ses de aksama yoksa.
+
+2
+00:05:25,699 --> 00:05:28,300
+Katılan sayısı gördüğüm kadarıyla düşük olmuş.
+
+3
+00:05:29,259 --> 00:05:37,279
+Ama arkadaşlara özellikle dersi zamanında takip etmelerini daha sonradan sistem üzerinden tekrar izlemeye bırakmamalarını,
+
+4
+00:05:37,439 --> 00:05:40,079
+gerekiyorsa sorularını da sormalarını tavsiye ediyorum.
+
+5
+00:05:42,449 --> 00:05:46,910
+Evet. Bu haftaki dersimize yavaş yavaş başlayalım.
+
+6
+00:05:46,910 --> 00:05:52,029
+Toplam 37 kişi olmuş. 1-2 dakika daha bekleyeceğim arkadaşlar.
+
+7
+00:08:39,480 --> 00:08:48,450
+Merhabalar arkadaşlar. Şu an için yine tekrar bir ses kontrolü yapalım.
+
+8
+00:08:49,149 --> 00:08:54,289
+Ses durumumuz nasıl? Kesintisiz, düzgün bir şekilde geliyor mu arkadaşlar?
+
+9
+00:08:56,470 --> 00:08:56,970
+Geliyor hocam.
+
+10
+00:08:57,649 --> 00:08:59,169
+Tamamdır. Teşekkür ediyorum.
+
+11
+00:09:00,169 --> 00:09:06,169
+Şimdi bu haftaki dersimiz, geçen hafta artık yavaş yavaş binary sayılandı.
+
+12
+00:09:06,929 --> 00:09:08,629
+Binary sayılara giriş yapmıştık.
+
+13
+00:09:09,570 --> 00:09:13,970
+Şimdi bu haftada bu binary sayılar üzerinde işlemler yapılacak.
+
+14
+00:09:14,090 --> 00:09:18,450
+Devre elemanlarını anlatmayla, onların temellerini anlatmayla başlayacağım.
+
+15
+00:09:19,409 --> 00:09:40,950
+Şimdi lojik devreler dediğimizde, ikili işaretler, lojik devreler, ikili işaretler, yani ikili, binary, işaretler ve ikili kodlanmış veriler.
+
+16
+00:09:40,950 --> 00:09:41,690
+İkili.
+
+17
+00:09:42,210 --> 00:09:48,610
+Kodlanmış veriler üzerinde çalışıyor arkadaşlar.
+
+18
+00:09:49,629 --> 00:09:52,110
+Temeli de bool cebrine dayanıyor.
+
+19
+00:09:52,730 --> 00:09:53,509
+Bool cebri.
+
+20
+00:09:53,990 --> 00:10:03,980
+Şimdi bu bool cebri, çoğu geleneksel kuralı normal bildiğimiz bizim cebirsel işlemlere benziyen,
+
+21
+00:10:04,100 --> 00:10:12,460
+fakat 0-1 rakamlarını kullanan, kendine has aksiyon ve teoremleri olan bool cebrine dayanıyor.
+
+22
+00:10:12,779 --> 00:10:15,460
+George, 19. yüzyılda George.
+
+23
+00:10:16,240 --> 00:10:26,659
+Bu bool tarafından, ikili sistemlerdeki bir takım kuralları matematiksel olarak ifade etmiş.
+
+24
+00:10:26,659 --> 00:10:39,059
+Daha sonra De Morgan, Huntington tarafından yeni kuralların eklenmesi ve Shannon'ın bool cebrini kontaklı anahtarlı devreleri uyarlamasıyla beraber en son haline gelmiştir.
+
+25
+00:10:40,039 --> 00:10:46,039
+Temelde bizim bool cebrinde 3 temel kapımız var.
+
+26
+00:10:46,240 --> 00:10:53,120
+Arkadaşlar, bunun dışındaki kapılar, kapı olarak adlandırılıyor bu işlemler arkadaşlar, bu devre elemanları.
+
+27
+00:10:53,740 --> 00:10:58,679
+İlkinden başlayarak, az çok da mantık derslerinden belki hatırlıyorsunuz.
+
+28
+00:10:59,639 --> 00:11:00,720
+Oradan devam edelim.
+
+29
+00:11:02,000 --> 00:11:06,259
+Öncelikle V işleminden başlayalım.
+
+30
+00:11:06,460 --> 00:11:07,200
+V işlemi.
+
+31
+00:11:08,860 --> 00:11:10,740
+İngilizcelerini de yazacağım arkadaşlar.
+
+32
+00:11:10,740 --> 00:11:14,399
+Çoğu zaman da İngilizcelerini zaten kullanıyoruz.
+
+33
+00:11:15,159 --> 00:11:15,740
+Kısaca.
+
+34
+00:11:16,240 --> 00:11:22,240
+Bir devre elemanı, iki giriş alıyor.
+
+35
+00:11:22,240 --> 00:11:24,240
+A ve B girişleri var.
+
+36
+00:11:24,240 --> 00:11:26,240
+Bir tane de çıkışı.
+
+37
+00:11:26,240 --> 00:11:28,240
+Z çıkışı.
+
+38
+00:11:28,240 --> 00:11:37,240
+Bu, A ile B'nin V'lenmesi, yani ikisinin de bir arada olması mantığına dayanıyor.
+
+39
+00:11:37,240 --> 00:11:41,240
+Doğruluk tablosunu yapacak olursak arkadaşlar.
+
+40
+00:11:41,240 --> 00:11:45,240
+A ve B'nin aldığı değerlere göre çıkışları yazıyor.
+
+41
+00:11:45,240 --> 00:11:45,740
+A ve B'nin aldığı değerlere göre çıkışları yazıyor.
+
+42
+00:11:45,740 --> 00:11:46,740
+Bunları yazacak olursak...
+
+43
+00:11:46,740 --> 00:11:53,740
+A ve B elimizde iki tane değişken giriş.
+
+44
+00:11:53,740 --> 00:11:56,419
+Dolayısıyla iki tane bit'i temsil ediyor.
+
+45
+00:11:56,419 --> 00:11:57,740
+0 veya 1 alam bit'i temsil ediyor.
+
+46
+00:11:58,740 --> 00:12:01,740
+Dolayısıyla dört farklı durum alabiliyor.
+
+47
+00:12:05,200 --> 00:12:11,200
+Buradan da görebileceğiniz gibi 00, 01, 10 ve %1 değerlerini alabiliyor.
+
+48
+00:12:11,799 --> 00:12:17,200
+Bunlar burdan giren bit değerleri olarak düşünebilirler.
+
+49
+00:12:18,200 --> 00:12:27,860
+görebilirsiniz burada tabi burada bir nokta çarpı gibi gösteriliyor ikisinin de bir olması durumunda
+
+50
+00:12:27,860 --> 00:12:37,639
+yani şu durumda sadece bir üretiyor diğer durumlarda ise sıfır üretiyor end işlemi
+
+51
+00:12:37,639 --> 00:12:46,399
+Eğer anahtarlı devre karşılığı anahtar devre karşılığını yapacak olursak aslında şu şekilde
+
+52
+00:12:46,399 --> 00:13:00,169
+gösterilebilir şurada bir tane dedemiz olsun [öğrenci] veren şöyle bizim çıkışımız gibi düşünebiliriz
+
+53
+00:13:00,169 --> 00:13:10,929
+aile beynin çıkışı yanma durumu bir yanmama durumu ise sıfır olarak burada bir gelin kaynağımıza Bunlar
+
+54
+00:13:10,929 --> 00:13:19,730
+A ve B anahtarları her ikisinin de kapalı hale gelmesiyle yani ikisinin de bir olması durumunda
+
+55
+00:13:19,730 --> 00:13:20,429
+yani
+
+56
+00:13:20,690 --> 00:13:27,950
+yönetmesi halinde devre bizim buradaki ışığımız yanacaktır yani bir olacaktır bu lambanın yanma
+
+57
+00:13:27,950 --> 00:13:35,809
+durumu bir yanma durumu sıfır anahtarların kapalı olma durumu bir açık olma durumu ise
+
+58
+00:13:35,809 --> 00:13:44,740
+sıfır olarak adlandırılıyor arkadaşlar dediğim gibi iki kapı iki girişli bir çıkışlı bir devre
+
+59
+00:13:44,740 --> 00:13:51,039
+elemanı elektriksel zamanlama diagramını çizecek olursak
+
+60
+00:13:52,480 --> 00:14:22,950
+ilişkisi açılarfrontalama alsın arkadaşlar
+
+61
+00:14:22,950 --> 00:14:25,450
+Var olma durumu bir, yok olma durumu sıfır.
+
+62
+00:14:25,909 --> 00:14:28,509
+Tabi bu elektriksel olarak belli bir gerilim seviyesi.
+
+63
+00:14:28,570 --> 00:14:37,029
+Örneğin 5 volt ve 0 volt olarak uygulanarak devremizdeki teller de elektriğin durumuna göre uyarlanıyor.
+
+64
+00:14:37,029 --> 00:14:41,370
+Tabi burada kare dalga benzeri yapılar kullanılıyor.
+
+65
+00:14:43,169 --> 00:14:49,750
+Şimdi böyle bir diagram çizecek olursak çıkışımızı da Z olarak gösterelim.
+
+66
+00:14:49,750 --> 00:14:53,730
+Şimdi örneğin şöyle bir yapımız olsun.
+
+67
+00:14:55,980 --> 00:15:00,200
+Yani buralar birilerinin uygulandığı, buralar sıfırlarının uygulandığı yerler.
+
+68
+00:15:01,200 --> 00:15:02,120
+Şöyle yapalım.
+
+69
+00:15:03,320 --> 00:15:09,759
+Şuradan ve de şuradan uygulayalım.
+
+70
+00:15:10,000 --> 00:15:11,200
+Şimdi çıkışımız ne olacak?
+
+71
+00:15:12,019 --> 00:15:17,059
+Burada tabi tam böyle değişim yerlerini iyi belirlememiz lazım.
+
+72
+00:15:18,159 --> 00:15:21,039
+Şöyle şuradan da değişim yerini belirleyelim.
+
+73
+00:15:21,059 --> 00:15:24,259
+Şurada da bir değişim yeri var.
+
+74
+00:15:24,940 --> 00:15:30,320
+İkisinin de farklı değerler aldığı kısımları çizmeye çalışıyoruz.
+
+75
+00:15:31,019 --> 00:15:35,820
+Bakın şuraya kadar, şurada da bir değişim yeri var.
+
+76
+00:15:36,980 --> 00:15:39,720
+Şurası sıfır, burası da sıfır.
+
+77
+00:15:40,179 --> 00:15:41,679
+Devrenin çıkışı sıfırda olacak.
+
+78
+00:15:42,659 --> 00:15:44,940
+Burası, bir saniye arkadaşlar.
+
+79
+00:16:42,480 --> 00:16:46,860
+Evet arkadaşlar bu hafta laboratuvar olmayacakmış.
+
+80
+00:16:46,860 --> 00:16:47,419
+Çünkü bu hafta görüntüde bir şey yok.
+
+81
+00:16:47,419 --> 00:16:47,440
+Bu hafta görüntüde bir şey yok.
+
+82
+00:16:47,440 --> 00:16:47,480
+Bu hafta görüntüde bir şey yok.
+
+83
+00:16:47,480 --> 00:16:47,500
+Bu hafta görüntüde bir şey yok.
+
+84
+00:16:47,500 --> 00:16:47,580
+Bu hafta görüntüde bir şey yok.
+
+85
+00:16:47,580 --> 00:16:52,500
+Bu hafta göreceğimiz, biyolojik devrelerin indirgenmesine kadar olan kısmı bugün göreceğiz.
+
+86
+00:16:53,299 --> 00:16:57,779
+Laboratuvarda da bunlar sorulacağı için biraz daha hazırlıklı gitmeniz açısından
+
+87
+00:16:57,779 --> 00:16:59,080
+bu hafta lab olmayacak.
+
+88
+00:16:59,179 --> 00:17:02,360
+Lab haftaları bir hafta geriye kaydırılmış olacak.
+
+89
+00:17:02,460 --> 00:17:03,620
+Onun da bilgisini vereyim.
+
+90
+00:17:04,240 --> 00:17:09,960
+Dersin sonuna doğru da bir daha bir hatırlatma yapmayı unutursam siz de bana hatırlatın.
+
+91
+00:17:10,400 --> 00:17:13,240
+Laboratuvarlar konuda bir açıklama yapacaktınız diyeceksiniz.
+
+92
+00:17:13,980 --> 00:17:16,519
+Peki onun önümüzdeki hafta kesim var mı hocam?
+
+93
+00:17:16,519 --> 00:17:18,019
+Onu bilmiyorum.
+
+94
+00:17:18,220 --> 00:17:20,259
+Onu güncellerler büyük ihtimalle.
+
+95
+00:17:20,359 --> 00:17:22,599
+Çünkü iki farklı grup şeklinde gidiyor ya.
+
+96
+00:17:23,339 --> 00:17:24,359
+Bu hafta anlatacağız.
+
+97
+00:17:24,519 --> 00:17:29,339
+Belki grupların yerleri shift edilir veya grupların yerleri değiştirilir.
+
+98
+00:17:29,539 --> 00:17:30,519
+İkisinden biri olabilir.
+
+99
+00:17:31,160 --> 00:17:36,960
+Onu bir Mecit Akgüz ve [öğrenci] arkadaşımızın sayfalarından bir teyit ettirelim.
+
+100
+00:17:37,140 --> 00:17:37,839
+Olur mu arkadaşlar?
+
+101
+00:17:38,619 --> 00:17:39,900
+Bu hafta olmayacağı kesin.
+
+102
+00:17:42,119 --> 00:17:42,579
+Tamamdır.
+
+103
+00:17:43,579 --> 00:17:46,960
+Şimdi ikinci değişim noktamız bizim burada göreceğimiz.
+
+104
+00:17:47,960 --> 00:17:51,920
+Şurada sıfır bir olan durum.
+
+105
+00:17:52,099 --> 00:17:54,440
+Sıfır birde de yine sıfır üretiyoruz.
+
+106
+00:17:55,559 --> 00:17:58,039
+Şurada da bir değişim var tabi ki.
+
+107
+00:17:58,200 --> 00:18:00,019
+İkisinin beraber değişimi yaptığı.
+
+108
+00:18:00,900 --> 00:18:02,220
+Burada bir.
+
+109
+00:18:02,940 --> 00:18:05,799
+Burasının da bir olduğu durumda işte tam burada.
+
+110
+00:18:07,119 --> 00:18:11,700
+Yani şuradan itibaren şu başlangıçtan şuraya kadar bir oluyoruz.
+
+111
+00:18:12,279 --> 00:18:12,960
+Burada bir.
+
+112
+00:18:13,240 --> 00:18:14,140
+Burada sıfır var.
+
+113
+00:18:15,079 --> 00:18:16,299
+Bir sıfırda ne oluyor?
+
+114
+00:18:16,299 --> 00:18:16,319
+Bir sıfırda ne oluyor?
+
+115
+00:18:16,579 --> 00:18:17,579
+İkisinin de.
+
+116
+00:18:17,960 --> 00:18:20,319
+Bir olduğu durumda sadece bir üretiyorduk.
+
+117
+00:18:20,420 --> 00:18:21,299
+Ona dikkat edelim.
+
+118
+00:18:22,339 --> 00:18:24,059
+Ondan sonra burada sıfır.
+
+119
+00:18:24,799 --> 00:18:26,420
+Şöyle çizecek olursam.
+
+120
+00:18:27,119 --> 00:18:27,759
+Sıfır var.
+
+121
+00:18:28,059 --> 00:18:28,960
+Burada da sıfır var.
+
+122
+00:18:29,119 --> 00:18:30,640
+Burada sıfırı devam ettirdim.
+
+123
+00:18:31,539 --> 00:18:32,460
+Burada sıfır var.
+
+124
+00:18:32,579 --> 00:18:33,299
+Burada bir var.
+
+125
+00:18:33,640 --> 00:18:35,319
+Burada da sıfırı devam ettirdim.
+
+126
+00:18:35,980 --> 00:18:44,720
+Tam şuradaki değişim noktasına kadar iki tarafında bir olduğu yerde tekrar elektriksel olarak bir üretiliyor.
+
+127
+00:18:44,720 --> 00:18:46,160
+Ondan sonra sıfır üretiliyor.
+
+128
+00:18:46,720 --> 00:18:47,720
+Gördüğünüz gibi arkadaşlar.
+
+129
+00:18:47,960 --> 00:18:51,960
+Sadece birileri nerede oluşturduk?
+
+130
+00:18:52,720 --> 00:19:00,519
+İki elektriksel olarak iki işaretinde şurada ve de şurada bir oluşturduğu yerlerde.
+
+131
+00:19:01,160 --> 00:19:08,039
+Yani şurada ve şu kısımda birilerimiz oluşuyor arkadaşlar.
+
+132
+00:19:11,880 --> 00:19:15,619
+Şimdi ikinci kısma geçelim.
+
+133
+00:19:17,019 --> 00:19:17,559
+Şöyle.
+
+134
+00:19:17,559 --> 00:19:17,599
+Şöyle.
+
+135
+00:19:18,900 --> 00:19:20,559
+Bundan sonraki işlemimiz.
+
+136
+00:19:20,779 --> 00:19:24,319
+İkinci temel kapımız veya kapısı.
+
+137
+00:19:27,079 --> 00:19:28,759
+İngilizcesi veya işlemi.
+
+138
+00:19:30,440 --> 00:19:31,960
+Bu da arkadaşlar or.
+
+139
+00:19:33,559 --> 00:19:37,000
+Kullanılan devre elemanları or kapıları olarak adlandırılıyor.
+
+140
+00:19:38,000 --> 00:19:39,980
+Bunun gösteriminde ise arkadaşlar.
+
+141
+00:19:41,359 --> 00:19:43,279
+Biraz daha farklı bir çizim yapıyoruz.
+
+142
+00:19:43,519 --> 00:19:45,200
+Biraz daha kavisli girişleri var.
+
+143
+00:19:46,400 --> 00:19:48,640
+A ve B olmak üzere iki tane.
+
+144
+00:19:49,740 --> 00:19:50,240
+Ne alıyor?
+
+145
+00:19:51,200 --> 00:19:51,660
+Çıkış.
+
+146
+00:19:51,660 --> 00:19:52,660
+Bir.
+
+147
+00:19:52,700 --> 00:19:54,700
+İki tane çıkışımız, iki tane girişimiz var.
+
+148
+00:19:55,279 --> 00:19:57,240
+Burada da A artı B.
+
+149
+00:19:58,619 --> 00:20:00,819
+Yani iki tane girişimiz var.
+
+150
+00:20:00,900 --> 00:20:02,740
+Artı işaretiyle gösteriliyor or.
+
+151
+00:20:03,519 --> 00:20:06,279
+Bunun doğruluk tablosunu yapacak olursak da.
+
+152
+00:20:07,460 --> 00:20:09,680
+Yine dört tane durumumuz var.
+
+153
+00:20:10,079 --> 00:20:14,160
+Sıfır sıfır, sıfır bir, bir sıfır, bir bir şeklinde.
+
+154
+00:20:14,380 --> 00:20:15,119
+Dört durumumuz var.
+
+155
+00:20:16,680 --> 00:20:19,299
+Aradaki işlem veya adında anlaşılıyor.
+
+156
+00:20:19,299 --> 00:20:21,740
+Veya olduysa içlerinden birinin.
+
+157
+00:20:22,700 --> 00:20:25,680
+Bir olması durumunda bir üretiyor.
+
+158
+00:20:26,579 --> 00:20:28,160
+Şuralarda bir üretiyor.
+
+159
+00:20:29,579 --> 00:20:36,279
+Diğer yerde sadece ikisinin de olumsuz olduğu durumda sıfır üretiyor arkadaşlar.
+
+160
+00:20:37,019 --> 00:20:38,539
+Diğerinden farklı bir şekilde.
+
+161
+00:20:40,420 --> 00:20:43,700
+Peki bunun elektriksel devre karşıldığı ne olabilir?
+
+162
+00:20:44,680 --> 00:20:51,470
+Yine çizecek olursak bu sefer bir tane güç kaynağımızı koyduk.
+
+163
+00:20:52,309 --> 00:20:54,190
+Anahtarlarımızı paralel şekilde çiziyoruz.
+
+164
+00:20:54,190 --> 00:20:54,250
+Anahtarlarımızı paralel şekilde çiziyoruz.
+
+165
+00:20:54,250 --> 00:20:55,269
+Bu şekilde yerleştiriyoruz.
+
+166
+00:20:55,430 --> 00:20:58,769
+A ve B anahtarlarımızı paralel şekilde yerleştirdik.
+
+167
+00:20:59,990 --> 00:21:00,950
+Geldik.
+
+168
+00:21:01,210 --> 00:21:02,829
+Şuraya da şeyimizi çizelim.
+
+169
+00:21:04,609 --> 00:21:05,710
+LED'imizi çizelim.
+
+170
+00:21:08,190 --> 00:21:11,650
+Ne zaman bu lamba veya LED'imiz yanar?
+
+171
+00:21:12,410 --> 00:21:17,430
+A veya B ikisinden birinin on olma durumunda.
+
+172
+00:21:17,490 --> 00:21:22,450
+Yani bir olma durumunda devre ışığımız yanar.
+
+173
+00:21:23,789 --> 00:21:25,450
+İkisi birlikte on durumda.
+
+174
+00:21:25,750 --> 00:21:28,509
+Bir olma durumunda olursa kapanırsa yani bu durumda da yanar.
+
+175
+00:21:28,650 --> 00:21:35,789
+İçlerinden birisi sadece on durumuna geçerse o zaman da yanabilir arkadaşlar.
+
+176
+00:21:37,950 --> 00:21:41,910
+Bununla alakalı bir elektriksel durum çizelim.
+
+177
+00:21:43,849 --> 00:21:45,769
+A ve B'yi çizelim.
+
+178
+00:21:47,769 --> 00:21:48,950
+Burası A olsun.
+
+179
+00:21:49,009 --> 00:21:50,390
+Burası zamana göre değişim.
+
+180
+00:21:50,390 --> 00:21:55,390
+Şu da bizim B girişimizdeki sayısal değişim.
+
+181
+00:21:55,750 --> 00:21:56,869
+Bu da zaman işaretimiz olsun.
+
+182
+00:21:57,609 --> 00:22:01,650
+Sonuncusu da Z çıkışımız olsun.
+
+183
+00:22:01,829 --> 00:22:03,789
+Bu da zamana göre değişim gösteriyor.
+
+184
+00:22:04,769 --> 00:22:12,140
+Şöyle bunu da şuradan başlatalım.
+
+185
+00:22:13,720 --> 00:22:16,680
+Ondan sonra biraz daha geniş bir şey çizelim şöyle.
+
+186
+00:22:17,859 --> 00:22:20,640
+Ve çıkışları hesaplamaya başlayalım.
+
+187
+00:22:21,299 --> 00:22:23,299
+İlk değişim şurada olmuş.
+
+188
+00:22:23,539 --> 00:22:26,440
+İkinci değişim şurada olmuş.
+
+189
+00:22:26,440 --> 00:22:28,279
+Üçüncü değişim.
+
+190
+00:22:28,380 --> 00:22:29,599
+Yani A ve B'nin.
+
+191
+00:22:30,039 --> 00:22:32,940
+İkisinden birinin değiştiği durumu kastediyorum.
+
+192
+00:22:33,079 --> 00:22:33,779
+Burada olmuş.
+
+193
+00:22:34,579 --> 00:22:36,140
+Şurada bir değişim olmuş.
+
+194
+00:22:37,779 --> 00:22:40,160
+Ondan sonra şurada bir değişim olmuş.
+
+195
+00:22:40,619 --> 00:22:41,920
+Ve şurada bir değişim olmuş.
+
+196
+00:22:42,740 --> 00:22:43,579
+Ne zaman bunlar?
+
+197
+00:22:44,279 --> 00:22:46,460
+Örneğin şurası sıfır sıfır durumu.
+
+198
+00:22:46,539 --> 00:22:48,000
+O zaman ne olacak arkadaşlar?
+
+199
+00:22:48,279 --> 00:22:50,559
+İkisi de sıfır olduğu zaman sıfırı çizdik.
+
+200
+00:22:51,380 --> 00:22:52,059
+Şurası bir.
+
+201
+00:22:52,480 --> 00:22:53,940
+Şurası sıfır olduğu durum.
+
+202
+00:22:53,940 --> 00:22:55,779
+Şöyle devam ettirirsek.
+
+203
+00:22:56,420 --> 00:22:57,740
+Burada bire geçmiş.
+
+204
+00:22:59,140 --> 00:22:59,440
+Burada.
+
+205
+00:23:00,039 --> 00:23:00,980
+İkisi de bir.
+
+206
+00:23:01,240 --> 00:23:03,779
+Bir durumunda bir vermeye devam ediyoruz.
+
+207
+00:23:04,480 --> 00:23:05,140
+Burası bir.
+
+208
+00:23:05,539 --> 00:23:08,599
+Burası sıfır olduğu durumda bire devam ediyoruz.
+
+209
+00:23:09,259 --> 00:23:13,160
+Şurada ikisi de sıfırda aşağı indik.
+
+210
+00:23:13,940 --> 00:23:15,599
+Burada bir yapmışız.
+
+211
+00:23:15,880 --> 00:23:16,759
+Şurası sıfır.
+
+212
+00:23:16,900 --> 00:23:19,900
+Şurası şöyle gelecek olursak.
+
+213
+00:23:21,240 --> 00:23:22,900
+Bir sıfırdan bir olacak.
+
+214
+00:23:22,900 --> 00:23:24,700
+Burası ikisi de bir de.
+
+215
+00:23:24,900 --> 00:23:26,980
+Şurada bire devam ettik.
+
+216
+00:23:27,079 --> 00:23:29,220
+Ondan sonra şurası sıfır.
+
+217
+00:23:29,220 --> 00:23:30,240
+Şurası bir.
+
+218
+00:23:30,460 --> 00:23:32,319
+Bir olmaya devam etmiş.
+
+219
+00:23:33,880 --> 00:23:35,920
+Burada da gördüğünüz gibi arkadaşlar.
+
+220
+00:23:36,119 --> 00:23:37,019
+Diğerinden farklı.
+
+221
+00:23:37,180 --> 00:23:38,420
+Aynı hemen hemen işaretleri.
+
+222
+00:23:38,799 --> 00:23:39,859
+Ne oluyor?
+
+223
+00:23:40,400 --> 00:23:42,940
+Bir olan sıfır bir olan yerlerden dolayı.
+
+224
+00:23:43,119 --> 00:23:46,380
+Daha uzun bir süresi oluşmuş oluyor.
+
+225
+00:23:49,470 --> 00:23:56,230
+Üçüncü temel devre elemanımız ise tümleme işlemi diye geçiyor.
+
+226
+00:23:57,430 --> 00:23:59,430
+Tümleme işlemi.
+
+227
+00:23:59,430 --> 00:24:00,130
+Tümleme işlemi.
+
+228
+00:24:01,430 --> 00:24:06,430
+Kullanılan kapının adı NAT kapısı.
+
+229
+00:24:07,430 --> 00:24:11,430
+Burada arkadaşlar basit tek bir girişimiz var.
+
+230
+00:24:12,630 --> 00:24:22,480
+Bir işareti farklı bir şekilde eğer buradan A giriyorsa çıkışta A üssü oluşuyor.
+
+231
+00:24:23,579 --> 00:24:27,279
+Yani sıfır giriyorsa bir oluşu bir giriyorsa sıfır oluşuyor.
+
+232
+00:24:27,940 --> 00:24:31,940
+Burada değil işaretini tanımlamak için harfinin üzerine A koyabileceğim.
+
+233
+00:24:31,940 --> 00:24:32,880
+Bir çizgi koyabileceğim.
+
+234
+00:24:33,279 --> 00:24:37,279
+A'nın değili şeklinde bu şekilde de gösterebiliriz.
+
+235
+00:24:37,400 --> 00:24:40,279
+Bunların ikisi de aynı manaya geliyor arkadaşlar.
+
+236
+00:24:41,099 --> 00:24:47,940
+Doğruluk tablosunu çizecek olursak da tek bir girişi olduğu için sıfır veya bir alıyor.
+
+237
+00:24:48,519 --> 00:24:53,779
+Çıkışında sıfır bir sıfırsa bir birse sıfır oluşuyor arkadaşlar.
+
+238
+00:24:56,640 --> 00:24:58,319
+Devre şeklini göstermiştik.
+
+239
+00:24:59,460 --> 00:25:05,420
+Bunun arkadaşlar anahtar işlemi karşılığı şu şekilde yapılıyor.
+
+240
+00:25:06,420 --> 00:25:09,599
+Kitaplarınızdan da göreceğiniz gibi.
+
+241
+00:25:10,599 --> 00:25:11,859
+Bir tane kapı şurada.
+
+242
+00:25:13,480 --> 00:25:20,069
+Şöyle bir burada LED'imiz veya ampülümüz var diyelim.
+
+243
+00:25:21,589 --> 00:25:26,269
+Veya yukarı doğru çektiğimizde şöyle bir tane daha şeyimiz var.
+
+244
+00:25:26,329 --> 00:25:27,490
+Burada da bir LED'imiz var.
+
+245
+00:25:28,390 --> 00:25:31,970
+Burada kullanılan anahtar biraz daha farklı olacak tabii ki.
+
+246
+00:25:33,049 --> 00:25:34,049
+Şöyle yapıyoruz.
+
+247
+00:25:35,190 --> 00:25:36,269
+Aşağı iniyoruz.
+
+248
+00:25:36,269 --> 00:25:36,950
+Şöyle.
+
+249
+00:25:37,430 --> 00:25:38,130
+Burada.
+
+250
+00:25:38,150 --> 00:25:39,509
+Buradan bastırılıyormuş gibi.
+
+251
+00:25:41,190 --> 00:25:47,829
+Buradan bir gerilim uygulandığında arkadaşlar aşağı doğru bastığında burası bastırdığında burası yanıyor.
+
+252
+00:25:48,390 --> 00:25:53,900
+Bir serbest bırakıldığında ise bu yukarı çıkıyor.
+
+253
+00:25:54,319 --> 00:25:54,779
+Bu yanıyor.
+
+254
+00:25:55,339 --> 00:26:01,500
+Yani sıfırlar bir, birler sıfıra dönüyormuş gibi tümleme işlemi yapılıyor burada arkadaşlar.
+
+255
+00:26:01,500 --> 00:26:11,220
+Bunun karşılığını elektriksel karşılığını çizecek olursak da arkadaşlar şu şekilde tek bir girişimiz var.
+
+256
+00:26:11,279 --> 00:26:20,599
+A girişimiz, zamana göre değişimi şeklinde gidiyor.
+
+257
+00:26:20,599 --> 00:26:32,150
+Çıkışımız ise Z, çıkışta ise değişim yerlerini işaretleyelim.
+
+258
+00:26:32,150 --> 00:26:45,839
+Şöyle sıfır olan yerde bir, bir olan yerde sıfır, sıfır olan yerde bir, bir olan yerde sıfır şeklinde gidiyor.
+
+259
+00:26:45,839 --> 00:26:49,039
+Tam tersi alınmış oluyor arkadaşlar.
+
+260
+00:26:49,599 --> 00:26:57,039
+Şimdi dediğim gibi üç tane aslında bizim temel yapımız var.
+
+261
+00:26:57,039 --> 00:27:03,140
+AND, OR ve NOT.
+
+262
+00:27:03,140 --> 00:27:10,019
+Diğer bütün kapılar bunların hepsini zaten mantıkta da belki az çok görmüşsünüzdür.
+
+263
+00:27:10,019 --> 00:27:12,819
+Türetilen işlemler olarak geçiyor.
+
+264
+00:27:12,819 --> 00:27:20,500
+Bundan sonraki kısımda ise türetilen işlemleri görmeye başlayacağız arkadaşlar.
+
+265
+00:27:20,500 --> 00:27:23,910
+Türetilen işlemler.
+
+266
+00:27:23,910 --> 00:27:35,440
+İlk göreceğimiz katı, ilk göreceğimiz kapı tümleyen, tümleyen ve işlemi.
+
+267
+00:27:35,440 --> 00:27:43,430
+Bu da TİVE olarak kitaplarda geçiyor.
+
+268
+00:27:43,430 --> 00:27:53,829
+Ama biz NANT yani NOT AND gibi İngilizcesini kullanabiliyoruz arkadaşlar.
+
+269
+00:27:53,829 --> 00:27:56,549
+NANT kapısı diyoruz buna.
+
+270
+00:27:56,549 --> 00:28:05,829
+Basitçe bu da AND işleminin NANTlanması yani iki tane girişimiz var yine.
+
+271
+00:28:05,829 --> 00:28:09,829
+Bunun şöyle de gösterebiliriz.
+
+272
+00:28:09,829 --> 00:28:13,829
+Önce ANDleme işlemi yapılıyor.
+
+273
+00:28:13,829 --> 00:28:15,829
+Ondan sonra tersi alınıyor.
+
+274
+00:28:15,829 --> 00:28:19,829
+Kapı olarak gösterimi ise şu şekilde arkadaşlar.
+
+275
+00:28:19,829 --> 00:28:21,829
+AND işlemine göre benzer şekilde.
+
+276
+00:28:21,829 --> 00:28:25,829
+Sonuçtaki çıkış size tersi alınmış oluyor.
+
+277
+00:28:25,829 --> 00:28:29,829
+AB'nin değili şeklinde.
+
+278
+00:28:29,829 --> 00:28:33,829
+Bunun doğruluk tablosunu oluşturacak olursak arkadaşlar.
+
+279
+00:28:33,829 --> 00:28:37,829
+AB ve de çıkışı oluşturacak olursak.
+
+280
+00:28:37,829 --> 00:28:43,650
+Şöyle 1 0 1 1 şeklinde.
+
+281
+00:28:43,650 --> 00:28:47,650
+AND'in tam tersi olacak bu.
+
+282
+00:28:47,650 --> 00:28:49,650
+0 0 da neydi?
+
+283
+00:28:49,650 --> 00:28:51,650
+AND sıfırdı.
+
+284
+00:28:51,650 --> 00:28:55,650
+Sadece 1 1 de 1 idi.
+
+285
+00:28:55,650 --> 00:28:57,650
+O 1 sıfır oluyor.
+
+286
+00:28:57,650 --> 00:29:01,650
+Diğer hepsi bir haline dönüştürülmüş oluyor arkadaşlar.
+
+287
+00:29:01,650 --> 00:29:05,650
+Elektriksel devre karşılığını bu sefer yapmayacağım.
+
+288
+00:29:05,650 --> 00:29:11,650
+Zaten bu doğruluk tablosuna göre sizlerde rahatlıkla çıkarabilirsiniz.
+
+289
+00:29:11,650 --> 00:29:17,319
+Ondan sonra tümleyen VEYA var.
+
+290
+00:29:17,319 --> 00:29:19,319
+Benzer şekilde.
+
+291
+00:29:19,319 --> 00:29:21,319
+Tümleyen VEYA.
+
+292
+00:29:21,319 --> 00:29:27,009
+Bu da arkadaşlar T VEYA olarak adlandırılıyor.
+
+293
+00:29:27,009 --> 00:29:29,009
+Bu da arkadaşlar T VEYA olarak adlandırılıyor.
+
+294
+00:29:29,009 --> 00:29:31,009
+İngilizce ISE NOR olarak adlandırılıyor.
+
+295
+00:29:31,009 --> 00:29:35,009
+Bu da arkadaşlar OR kapısının tersi.
+
+296
+00:29:35,009 --> 00:29:37,009
+Bu da arkadaşlar OR kapısının tersi.
+
+297
+00:29:37,009 --> 00:29:39,009
+Bu da arkadaşlar OR kapısının tersi.
+
+298
+00:29:39,009 --> 00:29:41,009
+A artı B yaptığı bunun değili.
+
+299
+00:29:41,009 --> 00:29:43,009
+A artı B yaptığı bunun değili.
+
+300
+00:29:43,009 --> 00:29:45,009
+A artı B yaptığı bunun değili.
+
+301
+00:29:45,009 --> 00:29:49,009
+VEYA A artı B'nin yine değili şeklinde gösteriliyor.
+
+302
+00:29:49,009 --> 00:29:51,009
+VEYA A artı B'nin yine değili şeklinde gösteriliyor.
+
+303
+00:29:51,009 --> 00:29:53,009
+Burada da önce bir OR kapısı çiziyoruz.
+
+304
+00:29:53,009 --> 00:29:55,009
+Çıkışını Note'lıyoruz.
+
+305
+00:29:55,009 --> 00:29:57,009
+Çıkışımız ISE,
+
+306
+00:29:57,009 --> 00:29:59,009
+Girişimiz yine AB.
+
+307
+00:29:59,009 --> 00:30:07,769
+aracımızda oluşan artı benim değil şeklinde getiriyoruz hatırlarsanız bunun da bir doğruluk
+
+308
+00:30:07,769 --> 00:30:18,700
+tablosunu çizecek olursak arkadaşlar 14 değişik durum için sadece şuralarda hep bir alıyordu
+
+309
+00:30:18,700 --> 00:30:26,460
+bir alan yerlerin hepsi bu sefer sıfır haline geliyor bu sıfır alan yer ise bir haline gelir
+
+310
+00:30:26,460 --> 00:30:36,880
+olan sonuçtaki Nat işleminden dolayı arkadaşlar 3. türetilmiş kapımız ise Arkadaşlar ya da
+
+311
+00:30:36,880 --> 00:30:47,059
+diye geçiyor ya da işlemi İngilizcesi xor veya buna şöyle diyor
+
+312
+00:30:47,059 --> 00:31:00,650
+Eklüs ekslüsiv or diyorlar yani orun özel bir çeşidi manasında kullanılıyor çizimi
+
+313
+00:31:00,650 --> 00:31:14,109
+arkadaşlar yine ora benziyor ama şöyle çift kavis var girişinde iki girişi var ve bir çıkışı var
+
+314
+00:31:14,109 --> 00:31:23,369
+göstereyim ise Arkadaşlar a artı b şu artıyı yuvarlak içerisine alıyoruz Peki bu nasıl
+
+315
+00:31:23,369 --> 00:31:30,650
+tanımlanıyor z eşittir a artı özel artı eklüsiv or
+
+316
+00:31:30,650 --> 00:31:43,650
+arasında özel bir artımız bizim anın değili b artı a beyninde ile şeklinde gösteriliyor peki özelliğini
+
+317
+00:31:43,650 --> 00:31:58,710
+siz söyleyeceksiniz bunu çıkışa göre 00 01 01 01 şeklinde Eğer girişler aynıysa bakın Şuradaki
+
+318
+00:31:58,710 --> 00:32:01,349
+ifadeye sıfır
+
+319
+00:32:02,190 --> 00:32:09,849
+aynı diyelim muhakkak girişlerden birini bu sıfır yaptığı için aynıysa girişler bir muhakkak
+
+320
+00:32:09,849 --> 00:32:18,369
+sıfır yaptığı için bunlar sıfır girişlerin birbirinden farklı olması durumunda bir haline
+
+321
+00:32:18,369 --> 00:32:28,309
+getiriyor neymiş Şuradaki ifadede a üstü b artı a b üstü dedik 1b üstünü bir ağ üstünü sırasıyla
+
+322
+00:32:28,309 --> 00:32:34,069
+değil yaptığı için ağ üstünü burada
+
+323
+00:32:34,109 --> 00:32:45,210
+Aynı girişler oluşması durumunda aynı girişler oluşması durumunda sonucu sıfırlıyor Çünkü
+
+324
+00:32:45,210 --> 00:32:54,769
+içlerinden bir muhakkak sıfır haline gelmiş olur farklı olması durumunda bir oluşturuyor Evet
+
+325
+00:32:54,769 --> 00:33:05,509
+türetilmiş kapılarımızın sonuncusu ise her zaman olduğu gibi bu sefer de ekstrasi orun tersi
+
+326
+00:33:05,509 --> 00:33:28,109
+buna da eşdeğerlik veya şöyle diyoruz tümleyen ya da şurada ya da yayı ayrı yazmamız lazım şöyle
+
+327
+00:33:28,109 --> 00:33:46,130
+Çünkü ya da ayrı yazılıyor t ya da çekme etmişim t ya da veya İngilizcesi ekstrasi orun matlı hali
+
+328
+00:33:46,130 --> 00:33:47,269
+xnor kapısı olarak
+
+329
+00:33:48,450 --> 00:33:50,250
+taklandırıyor arkadaşlar
+
+330
+00:33:50,250 --> 00:33:51,549
+eşdeğerlik
+
+331
+00:33:51,549 --> 00:33:55,150
+bu sefer adı nereden geliyor şimdi göreceğiz dediğim gibi
+
+332
+00:33:55,150 --> 00:33:57,130
+eksik orun
+
+333
+00:33:58,089 --> 00:33:59,529
+bu çıkışının
+
+334
+00:33:59,529 --> 00:34:03,740
+notlanması ile elde ediliyor
+
+335
+00:34:03,740 --> 00:34:11,360
+yani zevktir a artı beynin deli olarak
+
+336
+00:34:11,360 --> 00:34:14,800
+Eğer bunu açacak olursak da
+
+337
+00:34:14,800 --> 00:34:20,139
+a üstü bu üstü
+
+338
+00:34:20,139 --> 00:34:21,099
+artist ırk God
+
+339
+00:34:21,159 --> 00:34:23,039
+AB şeklinde
+
+340
+00:34:23,039 --> 00:34:24,940
+gözüküyor. Bu da
+
+341
+00:34:24,940 --> 00:34:27,280
+eğer doğruluk tablosunu yapacak
+
+342
+00:34:27,280 --> 00:34:27,940
+olursak
+
+343
+00:34:27,940 --> 00:34:31,199
+deminki işlemin tam tersini
+
+344
+00:34:31,199 --> 00:34:33,519
+veriyor. Adındaki eşdeğerliğin
+
+345
+00:34:33,519 --> 00:34:35,019
+gelmesinin nedeni de o.
+
+346
+00:34:35,760 --> 00:34:37,260
+Eşdeğer durumlarda
+
+347
+00:34:37,260 --> 00:34:39,139
+00 ve 11
+
+348
+00:34:39,139 --> 00:34:41,619
+durumunda bir üretiyor.
+
+349
+00:34:42,940 --> 00:34:43,260
+Diğer
+
+350
+00:34:43,260 --> 00:34:45,079
+durumlarda yani
+
+351
+00:34:45,079 --> 00:34:47,079
+girişlerin birbirinden farklı olması
+
+352
+00:34:47,079 --> 00:34:49,000
+durumunda ise 0
+
+353
+00:34:49,000 --> 00:34:50,980
+üretiyor. Dediğim gibi
+
+354
+00:34:50,980 --> 00:34:52,880
+eşdeğer durumlarda
+
+355
+00:34:52,880 --> 00:34:53,659
+bir
+
+356
+00:34:53,659 --> 00:34:56,800
+eksosiv orjisi farklı
+
+357
+00:34:56,800 --> 00:34:58,440
+durumlarda bir üretiyor.
+
+358
+00:35:01,500 --> 00:35:03,760
+Buraya kadar anlaşılmıştır
+
+359
+00:35:03,760 --> 00:35:05,320
+herhalde. Şu ana
+
+360
+00:35:05,320 --> 00:35:07,179
+kadar olan yerlerde bir
+
+361
+00:35:07,179 --> 00:35:08,480
+sorunuz var mı arkadaşlar?
+
+362
+00:35:13,639 --> 00:35:15,480
+Kapılarla alakalı sorusu olan şu ana
+
+363
+00:35:15,480 --> 00:35:19,710
+kadar. Yoksa şayet
+
+364
+00:35:19,710 --> 00:35:21,789
+temel lojik işlemlerin
+
+365
+00:35:21,789 --> 00:35:22,849
+kümeler cebriyle
+
+366
+00:35:22,849 --> 00:35:25,650
+gösterilişi konusuna geçiyorum.
+
+367
+00:35:26,429 --> 00:35:26,969
+Temel
+
+368
+00:35:26,969 --> 00:35:29,429
+lojik işlemlerin
+
+369
+00:35:29,429 --> 00:35:34,880
+kümeler cebriyle
+
+370
+00:35:34,880 --> 00:35:40,510
+gösterilişi.
+
+371
+00:35:44,059 --> 00:35:44,480
+Artık
+
+372
+00:35:44,480 --> 00:35:47,460
+biliyorsunuz tek bir
+
+373
+00:35:47,460 --> 00:35:49,340
+bitti ifade ediyoruz. Değişkenlerimiz
+
+374
+00:35:49,340 --> 00:35:51,380
+bizim 0-1 değerlerini
+
+375
+00:35:51,380 --> 00:35:53,219
+alabiliyor. Yani
+
+376
+00:35:53,219 --> 00:35:55,179
+var ve yok değerlerini
+
+377
+00:35:55,179 --> 00:35:57,079
+alabiliyor. Şimdi burada
+
+378
+00:35:57,079 --> 00:35:59,260
+küme kavramı neydi? Kümelerde
+
+379
+00:35:59,260 --> 00:36:01,480
+küme en az bir ortak özelliği
+
+380
+00:36:01,480 --> 00:36:03,519
+bulunan elemanlar topluluğu
+
+381
+00:36:03,519 --> 00:36:05,400
+şeklinde tanımlanıyordu.
+
+382
+00:36:06,340 --> 00:36:07,500
+Genel olarak da herhangi
+
+383
+00:36:07,500 --> 00:36:08,760
+bir değişken, eleman,
+
+384
+00:36:09,380 --> 00:36:10,940
+a şeklinde tanımlıyor.
+
+385
+00:36:11,119 --> 00:36:13,300
+X a kümesinin elemanıdır şeklinde
+
+386
+00:36:13,300 --> 00:36:13,960
+tanımlıyorduk.
+
+387
+00:36:14,840 --> 00:36:17,559
+Bu cebrindeki ve veya ve tümleme
+
+388
+00:36:17,559 --> 00:36:19,920
+işlemlerinin karşılıkları
+
+389
+00:36:19,920 --> 00:36:21,219
+bizim kümeler
+
+390
+00:36:21,219 --> 00:36:23,360
+cebrinde gördüğümüz kesişim,
+
+391
+00:36:23,440 --> 00:36:25,400
+birleşim ve tümleme işlemlerinden
+
+392
+00:36:25,400 --> 00:36:26,480
+bahsedilir.
+
+393
+00:36:27,539 --> 00:36:28,860
+Şimdi kümelerde
+
+394
+00:36:28,860 --> 00:36:35,639
+kesişim, hatırlarsanız
+
+395
+00:36:35,639 --> 00:36:37,460
+bir ortak uzay çiziyorduk.
+
+396
+00:36:38,519 --> 00:36:38,980
+A ve
+
+397
+00:36:38,980 --> 00:36:41,260
+B kümesi vardı.
+
+398
+00:36:43,920 --> 00:36:44,300
+Bizim
+
+399
+00:36:44,820 --> 00:36:46,099
+buradaki
+
+400
+00:36:46,099 --> 00:36:48,139
+ara bölümümüz A
+
+401
+00:36:48,139 --> 00:36:50,139
+kesişim, B olarak
+
+402
+00:36:50,139 --> 00:36:52,380
+adlandırılıyordu. Bu işlem
+
+403
+00:36:52,380 --> 00:36:54,760
+arkadaşlar bizim hangi
+
+404
+00:36:54,760 --> 00:36:55,920
+işlemimize denk geliyor?
+
+405
+00:36:56,679 --> 00:36:58,639
+İki kümenin de varlığının olduğu
+
+406
+00:36:58,639 --> 00:37:00,579
+V işlemimize karşı
+
+407
+00:37:00,579 --> 00:37:01,420
+geliyor aslında.
+
+408
+00:37:02,980 --> 00:37:04,699
+Kümelerde birleşim işlemi
+
+409
+00:37:04,699 --> 00:37:09,800
+ise, kümelerde birleşim
+
+410
+00:37:09,800 --> 00:37:11,559
+union işleminde ise
+
+411
+00:37:11,559 --> 00:37:13,199
+bu sefer
+
+412
+00:37:13,199 --> 00:37:15,480
+ne yapıyorduk arkadaşlar?
+
+413
+00:37:15,480 --> 00:37:17,019
+İki tane kümemiz var.
+
+414
+00:37:17,539 --> 00:37:19,380
+İkisi bu. Bu sefer
+
+415
+00:37:19,380 --> 00:37:21,900
+şurada sadece kesişimi tanımlarken
+
+416
+00:37:21,900 --> 00:37:23,360
+burada bütün
+
+417
+00:37:23,360 --> 00:37:25,639
+A veya B
+
+418
+00:37:25,639 --> 00:37:27,780
+bunu nasıl tanımlıyorduk?
+
+419
+00:37:29,380 --> 00:37:29,719
+A
+
+420
+00:37:29,719 --> 00:37:31,199
+birleşim B
+
+421
+00:37:31,199 --> 00:37:33,579
+bu bizim hangi
+
+422
+00:37:33,579 --> 00:37:35,840
+işlemimize denk geliyor? Şurası A
+
+423
+00:37:35,840 --> 00:37:39,519
+B işlemimize denk geliyorken burası
+
+424
+00:37:39,519 --> 00:37:41,579
+A artı B. Yani
+
+425
+00:37:41,579 --> 00:37:43,559
+bizim V'ya
+
+426
+00:37:43,559 --> 00:37:45,659
+işlemimize denk geliyor.
+
+427
+00:37:47,539 --> 00:37:49,460
+Kümeler cebrinde tümleme
+
+428
+00:37:49,460 --> 00:37:49,840
+ise
+
+429
+00:37:49,840 --> 00:37:53,139
+yani komplementinin alınması
+
+430
+00:37:53,139 --> 00:37:54,719
+komplement
+
+431
+00:37:54,719 --> 00:37:56,980
+işlemin alınması ise
+
+432
+00:37:56,980 --> 00:37:59,300
+basitçe bir kümenin dış
+
+433
+00:37:59,300 --> 00:38:01,059
+çevresi olarak adlandırılıyor.
+
+434
+00:38:01,739 --> 00:38:03,619
+A burası ise dışarısı
+
+435
+00:38:03,619 --> 00:38:04,519
+A'nın değili
+
+436
+00:38:04,519 --> 00:38:07,179
+olarak tanımlayabiliriz.
+
+437
+00:38:07,219 --> 00:38:09,280
+Bu da tümleme. Peki bizim
+
+438
+00:38:09,280 --> 00:38:11,360
+uzayımızda ne var? Sıfır ve bir.
+
+439
+00:38:11,539 --> 00:38:13,579
+O kümeler sıfır ve birleri alabiliyor
+
+440
+00:38:13,579 --> 00:38:15,320
+diyebiliriz.
+
+441
+00:38:19,269 --> 00:38:20,269
+Kümeler
+
+442
+00:38:20,269 --> 00:38:22,050
+cebrinde diğer kavramlar
+
+443
+00:38:22,050 --> 00:38:28,269
+diğer kavramlardan bahsedecek
+
+444
+00:38:28,269 --> 00:38:28,949
+olursak
+
+445
+00:38:28,949 --> 00:38:33,869
+evrensel
+
+446
+00:38:33,869 --> 00:38:34,829
+kümemiz bizim
+
+447
+00:38:34,829 --> 00:38:40,539
+yani kümenin ve
+
+448
+00:38:40,539 --> 00:38:42,980
+kümenin tümleyenin oluşturduğu tüm yer
+
+449
+00:38:42,980 --> 00:38:45,019
+yani şuralar, bütün her
+
+450
+00:38:45,019 --> 00:38:46,820
+yer evrensel
+
+451
+00:38:46,820 --> 00:38:48,699
+kümeydi bize. Bir olarak
+
+452
+00:38:48,699 --> 00:38:50,699
+gösterilecek bu arkadaşlar. Evrensel
+
+453
+00:38:50,699 --> 00:38:52,559
+kümemiz bir. Her şeyi
+
+454
+00:38:52,559 --> 00:38:55,059
+kapsadığı yer. Bu durumda
+
+455
+00:38:55,059 --> 00:38:56,079
+ne diyeceğiz arkadaşlar?
+
+456
+00:38:56,760 --> 00:38:58,440
+A artı A
+
+457
+00:38:58,559 --> 00:39:00,360
+üstsü. Ne diyeceğiz?
+
+458
+00:39:01,239 --> 00:39:02,420
+Muhakkak bir
+
+459
+00:39:02,420 --> 00:39:04,579
+üretecek. Evrensel kümemiz bizim
+
+460
+00:39:04,579 --> 00:39:06,340
+bir. Peki
+
+461
+00:39:06,340 --> 00:39:08,760
+boş
+
+462
+00:39:08,760 --> 00:39:10,579
+küme kavramımız
+
+463
+00:39:10,579 --> 00:39:12,360
+neydi? Boş küme kavramımız
+
+464
+00:39:12,360 --> 00:39:14,420
+sıfırla gösterilecek.
+
+465
+00:39:15,320 --> 00:39:15,760
+Örneğin
+
+466
+00:39:15,760 --> 00:39:18,639
+A ile A'nın
+
+467
+00:39:18,639 --> 00:39:20,179
+değilinin kesişimi
+
+468
+00:39:20,179 --> 00:39:21,940
+var mı? Yok.
+
+469
+00:39:22,539 --> 00:39:24,559
+Bu da sıfır. Boş küme
+
+470
+00:39:24,559 --> 00:39:26,760
+olarak adlandırılacak.
+
+471
+00:39:29,639 --> 00:39:30,480
+Peki evrenseli
+
+472
+00:39:30,480 --> 00:39:31,440
+küme ile
+
+473
+00:39:31,440 --> 00:39:34,820
+A kümesinin kesişimi ne olacak?
+
+474
+00:39:35,440 --> 00:39:36,619
+Evrensel küme
+
+475
+00:39:36,619 --> 00:39:38,739
+artı A kümesinin
+
+476
+00:39:38,739 --> 00:39:40,719
+yani aslında değişkenleri barındıran
+
+477
+00:39:40,719 --> 00:39:42,019
+küme ne olacak?
+
+478
+00:39:42,400 --> 00:39:44,860
+Yine evrensel küme yani sonucu bir üretecek.
+
+479
+00:39:47,440 --> 00:39:48,239
+Aynı şekilde
+
+480
+00:39:48,239 --> 00:39:50,219
+kesişim işlemini tanımlayacak.
+
+481
+00:39:50,420 --> 00:39:52,199
+Bir ile A kümesinin kesişimi
+
+482
+00:39:52,199 --> 00:39:54,380
+yine A kümesinin kendisi
+
+483
+00:39:54,380 --> 00:39:56,000
+neyse değeri birse bir
+
+484
+00:39:56,000 --> 00:39:57,639
+sıfırsa sıfır üretecek.
+
+485
+00:39:58,860 --> 00:40:00,440
+Peki bunlar
+
+486
+00:40:00,440 --> 00:40:02,239
+bizim evrenseli
+
+487
+00:40:02,400 --> 00:40:04,420
+küme ile yaptığımız işlemlerde
+
+488
+00:40:04,420 --> 00:40:05,760
+aynısını
+
+489
+00:40:05,760 --> 00:40:07,699
+sıfır artı A
+
+490
+00:40:07,699 --> 00:40:10,099
+sıfır
+
+491
+00:40:10,099 --> 00:40:12,679
+kesişim A şeklinde tanımlayacak
+
+492
+00:40:12,679 --> 00:40:13,420
+olursak
+
+493
+00:40:13,420 --> 00:40:16,300
+boş küme ile A'nın
+
+494
+00:40:16,300 --> 00:40:18,760
+birleşimi
+
+495
+00:40:18,760 --> 00:40:22,400
+veyası neyi oluşturacak arkadaşlar?
+
+496
+00:40:23,239 --> 00:40:24,619
+Yine kümenin kendisini.
+
+497
+00:40:25,099 --> 00:40:26,059
+Boş küme ile A'nın
+
+498
+00:40:26,059 --> 00:40:28,539
+kesişimi ne olacak arkadaşlar?
+
+499
+00:40:29,159 --> 00:40:30,699
+Yine boş kümenin
+
+500
+00:40:30,699 --> 00:40:31,360
+kendisi şeklinde.
+
+501
+00:40:31,360 --> 00:40:32,360
+Yine boş kümenin kendisi şeklinde.
+
+502
+00:40:32,400 --> 00:40:33,880
+Yine boş kümenin kendisi şeklinde tanımlanacak.
+
+503
+00:40:37,460 --> 00:40:39,519
+Buraya kadar tamamsa arkadaşlar
+
+504
+00:40:39,519 --> 00:40:42,340
+buğul cebri
+
+505
+00:40:42,340 --> 00:40:44,239
+bundan sonraki kısımda
+
+506
+00:40:44,239 --> 00:40:46,079
+buğul cebri
+
+507
+00:40:46,079 --> 00:40:50,679
+aksiyon ve teoremlerine
+
+508
+00:40:50,679 --> 00:40:51,480
+geçebiliriz.
+
+509
+00:40:51,579 --> 00:40:55,000
+Aksiyon ve teoremlerine
+
+510
+00:40:55,000 --> 00:40:57,280
+geçebiliriz.
+
+511
+00:40:58,579 --> 00:40:58,900
+Şimdi
+
+512
+00:40:58,900 --> 00:41:01,360
+her disinin olduğu gibi
+
+513
+00:41:01,360 --> 00:41:03,400
+lojik devlet tasarımında belli kurallar
+
+514
+00:41:03,400 --> 00:41:05,139
+çerçevesinde yapılıyor.
+
+515
+00:41:05,139 --> 00:41:07,079
+Temelde biz
+
+516
+00:41:07,079 --> 00:41:09,199
+buğul cebrine göre hareket
+
+517
+00:41:09,199 --> 00:41:09,739
+edeceğiz.
+
+518
+00:41:11,739 --> 00:41:13,119
+Buğul cebrinde de
+
+519
+00:41:13,119 --> 00:41:14,780
+doğru olarak kabul edilen ve
+
+520
+00:41:14,780 --> 00:41:16,320
+doğruluğu ispatlanabilen
+
+521
+00:41:16,320 --> 00:41:18,159
+doğruluğu ispatlanabilen
+
+522
+00:41:18,159 --> 00:41:20,739
+önermeler olmak üzere iki temel
+
+523
+00:41:20,739 --> 00:41:22,059
+kurallar dizisi vardır.
+
+524
+00:41:23,059 --> 00:41:24,000
+Doğru olarak
+
+525
+00:41:24,000 --> 00:41:27,119
+kabul eden önermelere aksiyon
+
+526
+00:41:27,119 --> 00:41:29,219
+denir. Aksiyon neymiş?
+
+527
+00:41:30,880 --> 00:41:31,300
+Doğru
+
+528
+00:41:31,300 --> 00:41:35,920
+olarak kabul edilen
+
+529
+00:41:35,920 --> 00:41:40,239
+önermeler
+
+530
+00:41:40,239 --> 00:41:43,969
+teorem ney?
+
+531
+00:41:44,090 --> 00:41:45,590
+Teorem nedir arkadaşlar?
+
+532
+00:41:45,590 --> 00:41:48,719
+Teorem
+
+533
+00:41:48,719 --> 00:41:50,659
+doğruluğu ispat edilen
+
+534
+00:41:50,659 --> 00:41:52,159
+ispat edilebilen
+
+535
+00:41:52,159 --> 00:41:54,760
+doğruluğu
+
+536
+00:41:54,760 --> 00:42:02,019
+ispat edilebilen
+
+537
+00:42:02,019 --> 00:42:04,340
+önermeler.
+
+538
+00:42:04,340 --> 00:42:07,099
+Aksiyonlar kesin doğru kabul edeceğiz.
+
+539
+00:42:07,099 --> 00:42:09,219
+Aksiyonlar yardımıyla da
+
+540
+00:42:09,219 --> 00:42:11,300
+teoremleri ispat ediyorsa şayet
+
+541
+00:42:11,300 --> 00:42:15,010
+o teoriyi doğru kabul edeceğiz.
+
+542
+00:42:15,010 --> 00:42:17,849
+Hemen başlığımız şu olsun.
+
+543
+00:42:17,849 --> 00:42:19,289
+Buğul cebri
+
+544
+00:42:19,289 --> 00:42:21,050
+aksiyonları.
+
+545
+00:42:21,050 --> 00:42:22,429
+Buğul cebri.
+
+546
+00:42:22,570 --> 00:42:26,250
+Aksiyonları.
+
+547
+00:42:31,840 --> 00:42:32,760
+Birincisi
+
+548
+00:42:32,760 --> 00:42:37,449
+şimdi
+
+549
+00:42:37,449 --> 00:42:40,750
+her değişken sıfır
+
+550
+00:42:40,750 --> 00:42:42,909
+veya da bir değerinden sadece birini
+
+551
+00:42:42,909 --> 00:42:44,989
+alabiliyor. Değişken
+
+552
+00:42:44,989 --> 00:42:47,090
+eğer sıfır değerini almıyorsa
+
+553
+00:42:47,090 --> 00:42:48,989
+birdir. Bir değerini almıyorsa
+
+554
+00:42:48,989 --> 00:42:51,050
+ise sıfırdır. Yani şöyle
+
+555
+00:42:51,050 --> 00:42:52,190
+diyebiliriz. A
+
+556
+00:42:52,190 --> 00:42:54,329
+eşit değildir sıfıra.
+
+557
+00:42:54,949 --> 00:42:57,289
+Ne zaman? A eşittir
+
+558
+00:42:57,289 --> 00:42:57,869
+birse.
+
+559
+00:42:57,869 --> 00:42:59,389
+A
+
+560
+00:42:59,389 --> 00:43:01,130
+eşit değildir.
+
+561
+00:43:01,150 --> 00:43:04,110
+Biri ne zaman? A eşittir sıfırsa.
+
+562
+00:43:04,110 --> 00:43:11,780
+Yani bizim değişkenlerimiz ya sıfır ya bir değerini alıyor.
+
+563
+00:43:11,780 --> 00:43:15,800
+İkinci aksiyonumuz şu.
+
+564
+00:43:15,800 --> 00:43:17,400
+Biliyorsunuz.
+
+565
+00:43:17,400 --> 00:43:20,019
+1 artı 1 normalde 2 etmesi gerekir.
+
+566
+00:43:20,019 --> 00:43:21,679
+Ama ne diyoruz?
+
+567
+00:43:21,679 --> 00:43:24,900
+Bir değerini alan iki tane değişkeni toplamaya yine
+
+568
+00:43:24,900 --> 00:43:27,400
+biri vereceğiz. Sınırı kullanılan
+
+569
+00:43:27,400 --> 00:43:30,920
+0 1 dizisini aşmıyoruz.
+
+570
+00:43:30,920 --> 00:43:32,099
+Bu da diyor ki BİBİNE VİA işlemi ile bağlı iki önermenin.
+
+571
+00:43:32,099 --> 00:43:40,059
+Her biri doğru ise birleşik önerme de doğrudur diye tanımlanmış.
+
+572
+00:43:40,059 --> 00:43:41,619
+Bu A kısmı.
+
+573
+00:43:41,619 --> 00:43:45,219
+B kısmı ise
+
+574
+00:43:45,219 --> 00:43:46,639
+iki boş kümenin
+
+575
+00:43:46,639 --> 00:43:49,619
+BİBİNE VİA işlemi ile bağlı iki önermenin
+
+576
+00:43:49,619 --> 00:43:51,679
+ikisi de yanlış ise
+
+577
+00:43:51,679 --> 00:43:55,139
+birleşik önerme de yanlıştır.
+
+578
+00:43:55,139 --> 00:43:57,539
+Diye tanımlıyoruz.
+
+579
+00:43:57,539 --> 00:43:59,659
+İki önermeler doğru.
+
+580
+00:43:59,659 --> 00:44:01,920
+Bir yanlış sıfır
+
+581
+00:44:01,920 --> 00:44:03,199
+şeklinde düşünebiliriz.
+
+582
+00:44:03,199 --> 00:44:03,659
+Burada.
+
+583
+00:44:03,860 --> 00:44:07,460
+Üçe gelecek olursak.
+
+584
+00:44:07,460 --> 00:44:10,019
+Artı olmayacak mıydı aradaki?
+
+585
+00:44:10,019 --> 00:44:10,900
+B'deki.
+
+586
+00:44:10,900 --> 00:44:15,260
+BİBİLİ VİA işlemi ile bağlı olacak.
+
+587
+00:44:15,260 --> 00:44:16,659
+Şimdi ona da geçeceğiz.
+
+588
+00:44:16,659 --> 00:44:17,860
+Şimdiki kısımda.
+
+589
+00:44:17,860 --> 00:44:23,260
+A ve B'yi şey yapıyoruz.
+
+590
+00:44:23,260 --> 00:44:25,460
+Burada onu anlatıyorum.
+
+591
+00:44:25,460 --> 00:44:28,920
+0 artı 0 eşittir 0.
+
+592
+00:44:28,920 --> 00:44:35,599
+BİBİLİNE VİA işlemi ile bağlı iki önermenin ikisi de yanlış ise birleşik önerme de yanlıştır.
+
+593
+00:44:35,599 --> 00:44:42,110
+Benzer şekilde.
+
+594
+00:44:42,110 --> 00:44:56,280
+BİBİLİNE VİA işlemi ile bağlı iki önermenin her biri doğru ise birleşik önerme doğrudur diyoruz.
+
+595
+00:44:56,280 --> 00:44:59,019
+Bu anlaşıldı zannedersem.
+
+596
+00:44:59,019 --> 00:45:01,940
+Dördüncü kısımda ise arkadaşlar.
+
+597
+00:45:01,940 --> 00:45:08,519
+Şundan bahsediyoruz.
+
+598
+00:45:08,519 --> 00:45:12,420
+Bir bu sefer sayı değerlerimiz önermelerden biri değişik olsun.
+
+599
+00:45:12,420 --> 00:45:15,320
+Birisi doğru olsun.
+
+600
+00:45:15,320 --> 00:45:16,820
+Eşittir bir.
+
+601
+00:45:16,820 --> 00:45:19,179
+BİBİLİNE VİA ile bağlı.
+
+602
+00:45:19,179 --> 00:45:27,239
+İki önermeden biri doğru diğeri yanlışsa birleşik önerme doğrudur.
+
+603
+00:45:27,239 --> 00:45:36,380
+Yani VİA işlemi ile bağlı olan önermelerden biri doğruysa bizim birleşik önermemiz doğru kabul ediliyor.
+
+604
+00:45:36,380 --> 00:45:49,139
+Tam tersine eğer kesişim işlemi veya birbirine VİA işlemi ile bağlı iki önermeden biri doğru diğeri yanlış ise birleşik önermede yanlış kabul edilecek.
+
+605
+00:45:49,179 --> 00:45:57,239
+Şimdi biz bu aksiyonlar üzerine ne yapacağız arkadaşlar?
+
+606
+00:45:57,239 --> 00:46:05,599
+Teoremlerimizi şekillendirmeye başlayacağız.
+
+607
+00:46:05,599 --> 00:46:12,170
+Bu cebri teoremleri.
+
+608
+00:46:12,170 --> 00:46:15,170
+Artık yukarıdakilere göre bunları ispat edeceğiz arkadaşlar.
+
+609
+00:46:15,170 --> 00:46:21,920
+Birincisi değişme özelliği.
+
+610
+00:46:21,920 --> 00:46:31,449
+Değişme özelliğimiz bize diyor ki.
+
+611
+00:46:31,449 --> 00:46:39,510
+İki tane değişkeni orladınız.
+
+612
+00:46:39,510 --> 00:46:45,510
+Bunların yerinin değişmesinin hiçbir önemi yok diyor bize.
+
+613
+00:46:45,510 --> 00:47:01,889
+Aynı şekilde verildiğiniz yerlerinin değiştirilmesinin ent ve or işlemlerinde hiçbir önemi yok diyor bize.
+
+614
+00:47:01,889 --> 00:47:03,949
+Bu birinci özelliğimiz.
+
+615
+00:47:03,949 --> 00:47:05,949
+Değişme özelliğimiz.
+
+616
+00:47:05,949 --> 00:47:11,949
+Değişkenlerin yerini değiştirmemizin ent veya or üzerinde herhangi bir etkisi yok.
+
+617
+00:47:11,949 --> 00:47:13,949
+Birleşme özelliği.
+
+618
+00:47:13,949 --> 00:47:18,920
+İkinci şeyimiz.
+
+619
+00:47:18,920 --> 00:47:22,920
+Burada iki tür birleşmeden bahsedebiliriz.
+
+620
+00:47:22,920 --> 00:47:24,920
+A artı B artı C.
+
+621
+00:47:24,920 --> 00:47:26,920
+Üç tane değişkenimiz var diyelim şimdi.
+
+622
+00:47:26,920 --> 00:47:29,920
+Veya A kesişim B kesişim C.
+
+623
+00:47:29,920 --> 00:47:31,920
+İki türlü yapabiliriz.
+
+624
+00:47:31,920 --> 00:47:33,920
+Ent ve or üzerinde.
+
+625
+00:47:34,860 --> 00:47:40,860
+Burada A artı B artı C yapmamızın.
+
+626
+00:47:40,860 --> 00:47:47,860
+A artı önce B ile C'yi orlamamızın hiçbir farkı yok.
+
+627
+00:47:47,860 --> 00:47:55,860
+Aynı şekilde entlemede de benzer mantık geçerli.
+
+628
+00:47:55,860 --> 00:48:09,500
+Önce hangi ikiliyi seçersek seçelim işlemimiz birleştirilebiliyor bu şekilde.
+
+629
+00:48:09,500 --> 00:48:19,159
+Bizim üçüncü özelliğimiz dağılma özelliği.
+
+630
+00:48:19,159 --> 00:48:30,239
+Dağılma özelliği de diyor ki burada iki tip dağılma özelliği var.
+
+631
+00:48:30,239 --> 00:48:36,239
+Birincisi şöyle A ve B şeklinde gösterelim.
+
+632
+00:48:36,239 --> 00:48:39,239
+Şunu da A ve B şeklinde gösterelim.
+
+633
+00:48:39,239 --> 00:48:41,239
+A B'yi kullandık aslında.
+
+634
+00:48:41,239 --> 00:48:43,239
+Şöyle ne yapabilirim burada.
+
+635
+00:48:43,239 --> 00:48:46,239
+Şöyle diyelim.
+
+636
+00:48:46,239 --> 00:48:48,239
+I ve B.
+
+637
+00:48:48,239 --> 00:48:51,239
+İki şekline getireyim.
+
+638
+00:48:51,239 --> 00:48:54,239
+Dağılma özelliğinde öncelikle A.
+
+639
+00:48:54,239 --> 00:49:08,920
+Şimdi alttakine biraz daha aşinasınız.
+
+640
+00:49:08,920 --> 00:49:10,920
+Daha böyle mantıken doğru gelecektir.
+
+641
+00:49:10,920 --> 00:49:15,920
+A B artı A C şeklinde yazılabildiği gibi.
+
+642
+00:49:15,920 --> 00:49:18,920
+Bul cebirinde şunu da yapabiliyoruz arkadaşlar.
+
+643
+00:49:18,920 --> 00:49:24,920
+A artı B çarpı A artı C şeklinde.
+
+644
+00:49:24,920 --> 00:49:25,920
+Şunu dağıtalım.
+
+645
+00:49:25,920 --> 00:49:27,920
+Normal bizim kendi.
+
+646
+00:49:27,920 --> 00:49:32,920
+Cebir teorilerimizde bunları çarpmanın toplama özelliğine dağılma özelliğini kullanıyoruz.
+
+647
+00:49:32,920 --> 00:49:37,920
+Ama burada toplamanın dağılma özelliği de var.
+
+648
+00:49:37,920 --> 00:49:39,920
+Bu da aklınızda olsun.
+
+649
+00:49:39,920 --> 00:49:44,920
+A artı B artı çarpı A artı C şeklinde.
+
+650
+00:49:44,920 --> 00:49:46,920
+Buna da dikkat.
+
+651
+00:49:46,920 --> 00:49:53,280
+Dördüncü özelliğimiz arkadaşlar.
+
+652
+00:49:53,280 --> 00:49:56,280
+Değişkende fazlalık özelliği.
+
+653
+00:49:56,280 --> 00:50:00,280
+Değişkende fazlalık özelliği.
+
+654
+00:50:00,280 --> 00:50:10,469
+Bunda da arkadaşlar iki örneğimiz var.
+
+655
+00:50:10,469 --> 00:50:13,469
+Örneğin A artı A.
+
+656
+00:50:13,469 --> 00:50:15,469
+Ne olacak arkadaşlar?
+
+657
+00:50:15,469 --> 00:50:18,469
+Sıfır artı sıfır veya bir artı bir.
+
+658
+00:50:18,469 --> 00:50:21,469
+Yine A'yı verecek.
+
+659
+00:50:21,469 --> 00:50:25,469
+A ile A'nın entlenmesi ise.
+
+660
+00:50:25,469 --> 00:50:29,469
+Örneğin sıfır ve bir değerli.
+
+661
+00:50:29,469 --> 00:50:31,469
+Yine A'yı verecek.
+
+662
+00:50:31,469 --> 00:50:32,469
+Sıfır ise bu A'nın değerli.
+
+663
+00:50:32,469 --> 00:50:33,469
+Sonuç sıfır.
+
+664
+00:50:33,469 --> 00:50:35,469
+Bir ise bir verecek.
+
+665
+00:50:35,469 --> 00:50:42,480
+Bunların entlenmesi veya orlanması değişmiyor.
+
+666
+00:50:42,480 --> 00:50:44,480
+Beşinci özelliğimiz arkadaşlar.
+
+667
+00:50:44,480 --> 00:50:46,480
+Yutma özelliği.
+
+668
+00:50:46,480 --> 00:50:49,480
+Hocam dörtte ne yazıyor değişkende?
+
+669
+00:50:49,480 --> 00:50:50,480
+Fazlalık özelliği.
+
+670
+00:50:50,480 --> 00:50:53,480
+Fazlalık özelliği.
+
+671
+00:50:53,480 --> 00:50:56,480
+Yutma özelliği.
+
+672
+00:50:56,480 --> 00:50:58,480
+Şöyle bir şey yapabiliriz.
+
+673
+00:50:58,480 --> 00:51:01,480
+İki tane burada durum söz konusu.
+
+674
+00:51:01,480 --> 00:51:07,389
+A artı A B.
+
+675
+00:51:07,389 --> 00:51:15,219
+Veya A artı pardon özür dilerim.
+
+676
+00:51:15,219 --> 00:51:17,219
+Bir geri alayım.
+
+677
+00:51:17,219 --> 00:51:19,219
+Geri alayım.
+
+678
+00:51:19,219 --> 00:51:23,219
+A artı B.
+
+679
+00:51:23,219 --> 00:51:26,219
+Burada bu A üretirken.
+
+680
+00:51:26,219 --> 00:51:27,219
+Bu da ne üretiyor?
+
+681
+00:51:27,219 --> 00:51:28,219
+A üretiyor.
+
+682
+00:51:28,219 --> 00:51:31,219
+Bunu şöyle bir şekilde düşünebilirsiniz.
+
+683
+00:51:31,219 --> 00:51:35,219
+Biz burada A parantezini aldığımızda.
+
+684
+00:51:35,219 --> 00:51:37,219
+Bir artı B oluyor.
+
+685
+00:51:37,219 --> 00:51:41,219
+Şurada bir ile B'nin toplanmasının sonucu kesinlikle nedir?
+
+686
+00:51:41,219 --> 00:51:43,219
+Evrensel küme ile toplanalım.
+
+687
+00:51:43,219 --> 00:51:45,219
+Bir ile bir sayı ne yapıyoruz?
+
+688
+00:51:45,219 --> 00:51:47,219
+Topluyoruz veya V'ye alıyoruz diyelim.
+
+689
+00:51:47,219 --> 00:51:48,219
+Sonuç bir olacaktır.
+
+690
+00:51:48,219 --> 00:51:50,219
+Sonuç A olacaktır.
+
+691
+00:51:50,219 --> 00:51:53,219
+Burada da ne yapıyoruz arkadaşlar?
+
+692
+00:51:53,219 --> 00:51:56,219
+A dağıtalım önce bir.
+
+693
+00:51:56,219 --> 00:51:58,219
+Ne yapacağız?
+
+694
+00:51:58,219 --> 00:52:00,219
+Bir burada.
+
+695
+00:52:00,219 --> 00:52:02,219
+A.
+
+696
+00:52:02,219 --> 00:52:06,219
+Aynı şuradaki özelliğimizden bahsediyorum.
+
+697
+00:52:06,219 --> 00:52:13,219
+A çarpı A artı A çarpı B.
+
+698
+00:52:13,219 --> 00:52:23,570
+Sonuçta bizim buradaki değerimiz.
+
+699
+00:52:23,570 --> 00:52:26,570
+Ne olmuş olacak artık arkadaşlar?
+
+700
+00:52:26,570 --> 00:52:29,010
+Buradan ne çıkacak?
+
+701
+00:52:29,010 --> 00:52:32,010
+A artı A B çıkacak.
+
+702
+00:52:32,010 --> 00:52:35,010
+Bu nereye götürüyor bizi?
+
+703
+00:52:35,010 --> 00:52:37,010
+Bir önceki artı.
+
+704
+00:52:37,010 --> 00:52:39,010
+Bunun da cevabı A'dır.
+
+705
+00:52:39,010 --> 00:52:44,500
+5, 6, 5 demiştik.
+
+706
+00:52:44,500 --> 00:52:46,500
+6'ya geçelim.
+
+707
+00:52:46,500 --> 00:52:48,500
+İşlemde fazlalık özelliği.
+
+708
+00:52:48,500 --> 00:52:56,900
+İşlemde fazlalık özelliği.
+
+709
+00:52:56,900 --> 00:52:58,900
+İşlemde fazlalıkta ise.
+
+710
+00:52:58,900 --> 00:53:05,300
+Burada basit bir şeyleri tanıtmış.
+
+711
+00:53:05,300 --> 00:53:11,300
+A'nın değili direkt A demiş.
+
+712
+00:53:11,300 --> 00:53:18,699
+İkincisi ise A'nın değilinin değili.
+
+713
+00:53:18,699 --> 00:53:19,699
+Neyi verecek?
+
+714
+00:53:19,699 --> 00:53:21,699
+Yine A'yı verecek.
+
+715
+00:53:21,699 --> 00:53:28,699
+En önemli kurallarımızdan biri Demorgan kuralı.
+
+716
+00:53:28,699 --> 00:53:36,139
+Demorgan kuralı basitçe şunu söylüyor.
+
+717
+00:53:36,139 --> 00:53:38,139
+İki tane durum söz konusu burada da.
+
+718
+00:53:38,139 --> 00:53:51,659
+Eğer birbiriyle entlenmiş, pardon orlanmış bir sürü değişkenimiz var.
+
+719
+00:53:51,659 --> 00:53:53,659
+Bunların değilini aldık.
+
+720
+00:53:53,659 --> 00:53:57,000
+Veya şöyle gösterebilirim.
+
+721
+00:53:57,000 --> 00:53:59,000
+Daha belki güzel olacak.
+
+722
+00:53:59,000 --> 00:54:00,000
+Birbiriyle orlanmış.
+
+723
+00:54:00,000 --> 00:54:04,000
+Birbiriyle orlanmış.
+
+724
+00:54:04,000 --> 00:54:06,000
+Entane değişken olsun.
+
+725
+00:54:06,000 --> 00:54:10,000
+Eğer bunları biz açarak yazmak istersek.
+
+726
+00:54:10,000 --> 00:54:14,000
+İçerideki her bir değişkenin değili.
+
+727
+00:54:14,000 --> 00:54:16,000
+Buradaki işlem değişiyor.
+
+728
+00:54:16,000 --> 00:54:23,460
+Orlama entlemeye.
+
+729
+00:54:23,460 --> 00:54:27,460
+Bir sonrakinde göreceğimiz gibi entleme de orlayamaya dönüşüyor.
+
+730
+00:54:27,460 --> 00:54:30,460
+Şeklinde devam ediyor.
+
+731
+00:54:30,460 --> 00:54:31,460
+Benzer şekilde.
+
+732
+00:54:31,460 --> 00:54:35,460
+Birbiriyle entlenmiş.
+
+733
+00:54:35,460 --> 00:54:40,460
+Parantez dışına alınmış bir ifadenin değili alınmışsa.
+
+734
+00:54:40,460 --> 00:54:42,460
+Parantez dışına çıkarırken.
+
+735
+00:54:42,460 --> 00:54:46,460
+Her bir içteki değişkenin tersini.
+
+736
+00:54:46,460 --> 00:54:47,460
+Bu sefer.
+
+737
+00:54:47,460 --> 00:54:49,460
+Bu da neye dönüşüyor?
+
+738
+00:54:49,460 --> 00:54:56,789
+Ora dönüşerek çıkıyor.
+
+739
+00:54:56,789 --> 00:54:58,789
+En önemli ifade bu.
+
+740
+00:54:58,789 --> 00:54:59,789
+Örneğin.
+
+741
+00:54:59,789 --> 00:55:02,789
+A artı B'nin değili.
+
+742
+00:55:02,789 --> 00:55:04,789
+Ne yapacağız?
+
+743
+00:55:04,789 --> 00:55:08,789
+A'nın değili çarpı B'nin değili.
+
+744
+00:55:08,789 --> 00:55:13,230
+Bu şuna eşit değil arkadaşlar.
+
+745
+00:55:13,230 --> 00:55:17,380
+Buna eşit değil.
+
+746
+00:55:17,380 --> 00:55:19,380
+Demorgon kuralımız bizim.
+
+747
+00:55:19,380 --> 00:55:24,699
+Bir ara vereceğim arkadaşlar.
+
+748
+00:55:24,699 --> 00:55:25,699
+Tamamdır.
+
+749
+00:55:25,699 --> 00:55:26,699
+Bir ara verelim.
+
+750
+00:55:26,699 --> 00:55:28,699
+15 dakika aramız var.
+
+751
+00:55:28,699 --> 01:11:47,880
+Evet arkadaşlar.
+
+752
+01:11:47,880 --> 01:11:49,880
+Tekrar merhabalar.
+
+753
+01:11:49,880 --> 01:11:53,420
+Sesim geliyor mu şu anda?
+
+754
+01:11:53,420 --> 01:11:58,590
+Tamamdır.
+
+755
+01:11:58,590 --> 01:12:01,590
+Kaldığımız yerden devam edelim.
+
+756
+01:12:01,590 --> 01:12:05,590
+En son Demorgon kuralını görmüştük.
+
+757
+01:12:05,590 --> 01:12:08,590
+8. kısımda da sabit kuralı.
+
+758
+01:12:08,590 --> 01:12:10,590
+Sabit özelliği.
+
+759
+01:12:10,590 --> 01:12:15,859
+Burada da iki tane.
+
+760
+01:12:15,859 --> 01:12:17,859
+Temel.
+
+761
+01:12:17,859 --> 01:12:19,859
+Bilgi verilmiş.
+
+762
+01:12:19,859 --> 01:12:20,859
+Teorem olan.
+
+763
+01:12:20,859 --> 01:12:22,859
+A artı A'nın değili.
+
+764
+01:12:22,859 --> 01:12:24,859
+1.
+
+765
+01:12:24,859 --> 01:12:25,859
+A ile.
+
+766
+01:12:25,859 --> 01:12:31,189
+A'nın değilinin kesişimi ise.
+
+767
+01:12:31,189 --> 01:12:33,189
+0.
+
+768
+01:12:33,189 --> 01:12:35,189
+Yani.
+
+769
+01:12:35,189 --> 01:12:37,189
+1 ve 1'in değili toplanırsa 1.
+
+770
+01:12:37,189 --> 01:12:45,189
+A ve A'nın değilinin kesişimi veya entlemesi yapılırsa burada da 0 elde ediliyor arkadaşlar.
+
+771
+01:12:45,189 --> 01:12:48,189
+9. özellik arkadaşlar.
+
+772
+01:12:48,189 --> 01:12:50,189
+Etkisizlik özelliği.
+
+773
+01:12:50,189 --> 01:12:56,229
+Etkisizlik özelliği.
+
+774
+01:12:56,229 --> 01:13:01,470
+Etkisizlik özelliğinde ise.
+
+775
+01:13:01,470 --> 01:13:02,470
+Örneğin.
+
+776
+01:13:02,470 --> 01:13:05,470
+Burada da iki tane durum söz konusu.
+
+777
+01:13:05,470 --> 01:13:09,680
+0 ile.
+
+778
+01:13:09,680 --> 01:13:11,680
+Herhangi bir sayım.
+
+779
+01:13:11,680 --> 01:13:15,680
+Orlandığında yine.
+
+780
+01:13:15,680 --> 01:13:17,680
+Sayının kendisini elde ediyor.
+
+781
+01:13:17,680 --> 01:13:18,680
+Şuraya A yapalım.
+
+782
+01:13:18,680 --> 01:13:20,680
+Şunu da A yapalım.
+
+783
+01:13:20,680 --> 01:13:21,680
+Veya.
+
+784
+01:13:21,680 --> 01:13:22,680
+1 ile.
+
+785
+01:13:22,680 --> 01:13:25,680
+Herhangi bir şeyin kesişimi.
+
+786
+01:13:25,680 --> 01:13:26,680
+Yine.
+
+787
+01:13:26,680 --> 01:13:29,680
+Sayının kendisi.
+
+788
+01:13:29,680 --> 01:13:33,680
+Entlenmesi yine kendisini veriyor arkadaşlar.
+
+789
+01:13:33,680 --> 01:13:36,680
+10'da ise.
+
+790
+01:13:36,680 --> 01:13:39,680
+Yutan sabit özelliği.
+
+791
+01:13:39,680 --> 01:13:40,680
+Yutan.
+
+792
+01:13:40,680 --> 01:13:42,680
+Sabit.
+
+793
+01:13:42,680 --> 01:13:44,680
+Özelliği.
+
+794
+01:13:44,680 --> 01:13:46,680
+Veriliyor.
+
+795
+01:13:46,680 --> 01:13:48,680
+Burada da arkadaşlar.
+
+796
+01:13:48,680 --> 01:13:50,680
+Yine iki durum söz konusu.
+
+797
+01:13:50,680 --> 01:13:56,710
+1 ile.
+
+798
+01:13:56,710 --> 01:13:58,710
+Herhangi bir sayının orlanması.
+
+799
+01:13:58,710 --> 01:14:00,710
+Yine 1.
+
+800
+01:14:00,710 --> 01:14:02,710
+Evrensel küme ile.
+
+801
+01:14:02,710 --> 01:14:04,710
+Çünkü birleşim olarak kapsıyor.
+
+802
+01:14:04,710 --> 01:14:06,710
+0 ile.
+
+803
+01:14:06,710 --> 01:14:10,710
+Herhangi bir sayının kesişimi ise.
+
+804
+01:14:10,710 --> 01:14:12,710
+Yani entlenmesi ise yine 0 haline geliyor.
+
+805
+01:14:12,710 --> 01:14:17,659
+Bunun dışında.
+
+806
+01:14:17,659 --> 01:14:19,659
+Çeşitli özellikler var.
+
+807
+01:14:19,659 --> 01:14:20,659
+Örneğin.
+
+808
+01:14:20,659 --> 01:14:23,659
+11'de şöyle bir özellik vermiş.
+
+809
+01:14:23,659 --> 01:14:25,659
+Demiş ki.
+
+810
+01:14:25,659 --> 01:14:33,539
+Bunlar artık bu şu ana kadar öğrendiğimiz teoremlerden ispat edilebilir.
+
+811
+01:14:33,539 --> 01:14:35,539
+A ve B'nin değili.
+
+812
+01:14:35,539 --> 01:14:36,539
+Çarpı B.
+
+813
+01:14:36,539 --> 01:14:38,539
+Bunu dağıtırsak biz.
+
+814
+01:14:38,539 --> 01:14:39,539
+Ne elde ederiz?
+
+815
+01:14:39,539 --> 01:14:41,539
+AB'yi elde edebiliriz.
+
+816
+01:14:41,539 --> 01:14:43,539
+Bunlar zaten çıkarılacak çıkarılabilecek.
+
+817
+01:14:43,539 --> 01:14:45,539
+Şeyler.
+
+818
+01:14:45,539 --> 01:14:46,539
+Veya.
+
+819
+01:14:46,539 --> 01:14:48,539
+A kesişim B'nin değili.
+
+820
+01:14:48,539 --> 01:14:52,210
+Artı B demiş.
+
+821
+01:14:52,210 --> 01:14:53,210
+Bu da.
+
+822
+01:14:53,210 --> 01:14:55,210
+A artı B'ye getirmiş.
+
+823
+01:14:55,210 --> 01:14:57,210
+Bunları kolayca çıkarız zaten.
+
+824
+01:14:57,210 --> 01:14:59,210
+Örneğin şuradaki ifadeyi.
+
+825
+01:14:59,210 --> 01:15:01,210
+Açacak olursak.
+
+826
+01:15:01,210 --> 01:15:03,210
+AB.
+
+827
+01:15:03,210 --> 01:15:05,210
+Artı.
+
+828
+01:15:05,210 --> 01:15:06,210
+B.
+
+829
+01:15:06,210 --> 01:15:07,210
+B üstü olur.
+
+830
+01:15:07,210 --> 01:15:09,210
+Burası muhakkak içlerinden biri 0 olduğu için.
+
+831
+01:15:09,210 --> 01:15:11,210
+AB'ye kalır geriye.
+
+832
+01:15:11,210 --> 01:15:13,210
+Aşağıdakinde de aynı şekilde.
+
+833
+01:15:13,210 --> 01:15:15,210
+A artı B.
+
+834
+01:15:15,210 --> 01:15:17,210
+Şuradaki ifade değilse.
+
+835
+01:15:17,210 --> 01:15:19,210
+A artı B.
+
+836
+01:15:19,210 --> 01:15:20,210
+Çarpı.
+
+837
+01:15:20,210 --> 01:15:22,210
+B.
+
+838
+01:15:22,210 --> 01:15:27,090
+B üstü.
+
+839
+01:15:27,090 --> 01:15:30,090
+Burası da bir vereceği için.
+
+840
+01:15:30,090 --> 01:15:31,090
+Şurası 0.
+
+841
+01:15:31,090 --> 01:15:32,090
+Şurası bir vereceği için.
+
+842
+01:15:32,090 --> 01:15:33,090
+A artı B.
+
+843
+01:15:33,090 --> 01:15:34,090
+Kalmış oluyor.
+
+844
+01:15:34,090 --> 01:15:38,090
+Onlar zaten birkaç tane daha onun gibi benzeri bir şey vermiş.
+
+845
+01:15:38,090 --> 01:15:40,090
+Bunlar türetilebileceği için.
+
+846
+01:15:40,090 --> 01:15:41,090
+Onları geçiyorum.
+
+847
+01:15:41,090 --> 01:15:44,090
+Shannon teoremine geçiyorum arkadaşlar.
+
+848
+01:15:44,090 --> 01:15:47,779
+Shannon teoremi.
+
+849
+01:15:47,779 --> 01:15:50,779
+Shannon teoremi de şunu söylüyor bize arkadaşlar.
+
+850
+01:15:50,779 --> 01:15:58,539
+İlkinde bir tane fonksiyonumuz var.
+
+851
+01:15:58,539 --> 01:16:03,189
+Şeklinde.
+
+852
+01:16:03,189 --> 01:16:08,189
+Yani bir binary sayıların bir fonksiyon veya bir devre karşılığı diyelim.
+
+853
+01:16:08,189 --> 01:16:11,189
+Bunu eğer iki parçaya ayıracak olursak.
+
+854
+01:16:11,189 --> 01:16:14,189
+İçlerindeki bir değişkeni dışarı çıkacak olursak.
+
+855
+01:16:14,189 --> 01:16:16,189
+F artı.
+
+856
+01:16:16,189 --> 01:16:18,189
+F0.
+
+857
+01:16:18,189 --> 01:16:19,189
+B.
+
+858
+01:16:19,189 --> 01:16:20,189
+C.
+
+859
+01:16:20,189 --> 01:16:21,189
+D.
+
+860
+01:16:21,189 --> 01:16:23,189
+Şeklinde.
+
+861
+01:16:23,189 --> 01:16:24,189
+Ve de.
+
+862
+01:16:24,189 --> 01:16:27,189
+A'nın değili artı.
+
+863
+01:16:27,189 --> 01:16:29,189
+F.
+
+864
+01:16:29,189 --> 01:16:30,189
+1.
+
+865
+01:16:30,189 --> 01:16:31,189
+B.
+
+866
+01:16:31,189 --> 01:16:32,189
+C.
+
+867
+01:16:32,189 --> 01:16:33,189
+D.
+
+868
+01:16:33,189 --> 01:16:34,189
+Şeklinde.
+
+869
+01:16:34,189 --> 01:16:35,189
+Şuraya da D'sini ekleyelim.
+
+870
+01:16:35,189 --> 01:16:38,189
+3 noktasını ekleyelim.
+
+871
+01:16:38,189 --> 01:16:42,189
+İki parça şeklinde ayrılabilir diyor.
+
+872
+01:16:42,189 --> 01:16:44,189
+Bunun ikinci kısmında ise.
+
+873
+01:16:44,189 --> 01:16:46,189
+Yine bir fonksiyonumuz var.
+
+874
+01:16:46,189 --> 01:16:47,189
+F.
+
+875
+01:16:47,189 --> 01:16:48,189
+A.
+
+876
+01:16:48,189 --> 01:16:49,189
+B.
+
+877
+01:16:49,189 --> 01:16:50,189
+C.
+
+878
+01:16:50,189 --> 01:16:52,819
+D.
+
+879
+01:16:52,819 --> 01:16:53,819
+3 nokta.
+
+880
+01:16:53,819 --> 01:16:54,819
+Bu sefer bunları entli bir şekilde değil de.
+
+881
+01:16:54,819 --> 01:16:57,819
+Orlu bir şekilde yazacak olursak.
+
+882
+01:16:57,819 --> 01:16:59,819
+A.
+
+883
+01:16:59,819 --> 01:17:02,819
+Bu sefer F'in yerine.
+
+884
+01:17:02,819 --> 01:17:05,819
+A'yı çıkardığımız yere 1 koyuyoruz.
+
+885
+01:17:05,819 --> 01:17:06,819
+B.
+
+886
+01:17:06,819 --> 01:17:07,819
+C.
+
+887
+01:17:07,819 --> 01:17:08,819
+D.
+
+888
+01:17:08,819 --> 01:17:10,819
+Bunu kanonik terimlerde göreceğiz arkadaşlar.
+
+889
+01:17:10,819 --> 01:17:11,819
+Artık.
+
+890
+01:17:11,819 --> 01:17:13,819
+A'nın değili.
+
+891
+01:17:13,819 --> 01:17:14,819
+F.
+
+892
+01:17:14,819 --> 01:17:15,819
+0.
+
+893
+01:17:15,819 --> 01:17:16,819
+B.
+
+894
+01:17:16,819 --> 01:17:17,819
+C.
+
+895
+01:17:17,819 --> 01:17:18,819
+D gibi.
+
+896
+01:17:18,819 --> 01:17:21,819
+İki parçaya ayırabiliyoruz arkadaşlar.
+
+897
+01:17:21,819 --> 01:17:26,319
+Bu da Shannon teori olarak geçiyor.
+
+898
+01:17:26,319 --> 01:17:31,319
+Şu ana kadar yaptığımız kısımlarla alakalı bir örnek çözecek olursak.
+
+899
+01:17:31,319 --> 01:17:34,319
+Öğrendiğimiz teoremlerden.
+
+900
+01:17:34,319 --> 01:17:37,319
+Şimdi.
+
+901
+01:17:37,319 --> 01:17:39,319
+Sizler yapmaya çalışın.
+
+902
+01:17:39,319 --> 01:17:40,319
+A.
+
+903
+01:17:40,319 --> 01:17:41,319
+B.
+
+904
+01:17:41,319 --> 01:17:42,319
+Artı.
+
+905
+01:17:42,319 --> 01:17:45,270
+A üstü.
+
+906
+01:17:45,270 --> 01:17:46,270
+C.
+
+907
+01:17:46,270 --> 01:17:47,270
+Artı.
+
+908
+01:17:47,270 --> 01:17:48,270
+B.
+
+909
+01:17:48,270 --> 01:17:49,270
+C.
+
+910
+01:17:49,270 --> 01:17:50,270
+Bu kaç tane değişkenden oluşuyor?
+
+911
+01:17:50,270 --> 01:17:51,270
+3 tane.
+
+912
+01:17:51,270 --> 01:17:52,270
+A.
+
+913
+01:17:52,270 --> 01:17:53,270
+B.
+
+914
+01:17:53,270 --> 01:17:54,270
+C.
+
+915
+01:17:54,270 --> 01:17:55,270
+3 değişkenli bir yapı.
+
+916
+01:17:55,270 --> 01:17:56,270
+Yani 3 tane değişik bit alabiliyor diyelim.
+
+917
+01:17:56,270 --> 01:17:57,270
+Bunu sadeleştirecek olursak.
+
+918
+01:17:57,270 --> 01:17:59,270
+Neye eşit olur?
+
+919
+01:17:59,270 --> 01:18:00,270
+Veya.
+
+920
+01:18:00,270 --> 01:18:01,270
+Sonuç şu.
+
+921
+01:18:01,270 --> 01:18:02,270
+A.
+
+922
+01:18:02,270 --> 01:18:03,270
+B.
+
+923
+01:18:03,270 --> 01:18:04,270
+Artı.
+
+924
+01:18:04,270 --> 01:18:05,270
+A üstü.
+
+925
+01:18:05,270 --> 01:18:06,270
+C'ye.
+
+926
+01:18:06,270 --> 01:18:07,270
+Ulaşmamız gerekiyor.
+
+927
+01:18:07,270 --> 01:18:08,270
+Bunu nasıl yaparız?
+
+928
+01:18:08,270 --> 01:18:09,270
+Herkes bir yapmayı denesin.
+
+929
+01:18:09,270 --> 01:18:13,220
+Bir ipucu sizlere.
+
+930
+01:18:13,220 --> 01:18:14,220
+A.
+
+931
+01:18:14,220 --> 01:18:27,149
+B.
+
+932
+01:18:27,149 --> 01:18:28,149
+Artı.
+
+933
+01:18:28,149 --> 01:18:29,149
+A üstü.
+
+934
+01:18:29,149 --> 01:18:30,149
+C.
+
+935
+01:18:30,149 --> 01:18:31,149
+Artı.
+
+936
+01:18:31,149 --> 01:18:32,149
+B.
+
+937
+01:18:32,149 --> 01:18:33,149
+C.
+
+938
+01:18:33,149 --> 01:18:34,149
+ile.
+
+939
+01:18:34,149 --> 01:18:35,149
+A.
+
+940
+01:18:35,149 --> 01:18:36,149
+Artı.
+
+941
+01:18:36,149 --> 01:18:37,149
+A üstü.
+
+942
+01:18:37,149 --> 01:18:38,149
+Şurası ne olacaktı arkadaşlar?
+
+943
+01:18:38,149 --> 01:18:39,149
+A.
+
+944
+01:18:39,149 --> 01:18:40,149
+Artı.
+
+945
+01:18:40,149 --> 01:18:41,149
+B.
+
+946
+01:18:41,149 --> 01:18:42,149
+A üstü.
+
+947
+01:18:42,149 --> 01:18:43,149
+C.
+
+948
+01:18:43,149 --> 01:18:44,149
+Artı.
+
+949
+01:18:44,149 --> 01:18:45,149
+B.
+
+950
+01:18:45,149 --> 01:18:46,149
+C.
+
+951
+01:18:46,149 --> 01:18:47,149
+A üstü.
+
+952
+01:18:47,149 --> 01:18:48,149
+Artı.
+
+953
+01:18:48,149 --> 01:18:49,149
+B.
+
+954
+01:18:49,149 --> 01:18:50,149
+C.
+
+955
+01:18:50,149 --> 01:18:51,149
+A.
+
+956
+01:18:51,149 --> 01:18:52,149
+Artı.
+
+957
+01:18:52,149 --> 01:18:54,689
+B.
+
+958
+01:18:54,689 --> 01:18:55,689
+C.
+
+959
+01:18:55,689 --> 01:18:56,689
+A.
+
+960
+01:18:56,689 --> 01:18:57,689
+Artı.
+
+961
+01:18:57,689 --> 01:18:58,689
+B.
+
+962
+01:18:58,689 --> 01:18:59,689
+C.
+
+963
+01:18:59,689 --> 01:19:04,529
+A üstü oluyor.
+
+964
+01:19:04,529 --> 01:19:05,529
+Burada.
+
+965
+01:19:05,529 --> 01:19:06,529
+A.
+
+966
+01:19:06,529 --> 01:19:07,529
+B.
+
+967
+01:19:07,529 --> 01:19:08,529
+Parantezlerine.
+
+968
+01:19:08,529 --> 01:19:09,529
+Şu.
+
+969
+01:19:09,529 --> 01:19:10,529
+Şu ikisini.
+
+970
+01:19:10,529 --> 01:19:11,529
+A.
+
+971
+01:19:11,529 --> 01:19:12,529
+B.
+
+972
+01:19:12,529 --> 01:19:13,529
+Parantezine.
+
+973
+01:19:13,529 --> 01:19:14,529
+Şunu da.
+
+974
+01:19:14,529 --> 01:19:15,529
+A üstü.
+
+975
+01:19:15,529 --> 01:19:18,970
+C bir artı.
+
+976
+01:19:18,970 --> 01:19:19,970
+J artı.
+
+977
+01:19:19,970 --> 01:19:20,970
+A üstü.
+
+978
+01:19:20,970 --> 01:19:23,729
+C 101 artı.
+
+979
+01:19:23,729 --> 01:19:24,729
+B parantezler üç oluyoruz.
+
+980
+01:19:24,729 --> 01:19:25,729
+Buradan da.
+
+981
+01:19:25,729 --> 01:19:26,729
+Bu işlemlerin sonucunu olacak arkadaşlar.
+
+982
+01:19:26,729 --> 01:19:27,729
+Burası 1.
+
+983
+01:19:27,729 --> 01:19:28,729
+1 verecek.
+
+984
+01:19:28,729 --> 01:19:31,729
+Bulası da 1 verecek, sonuç Browni'ninока.
+
+985
+01:19:31,729 --> 01:19:33,329
+Artı A üstü.
+
+986
+01:19:33,329 --> 01:19:34,329
+C şeklé.
+
+987
+01:19:34,329 --> 01:19:39,010
+Sadeleştirebilmiş veya ispatlamış oluyoruz arkadaşlar.
+
+988
+01:19:39,010 --> 01:19:47,090
+Arfothsuv
+
+989
+01:19:47,090 --> 01:19:48,090
+alemle.
+
+990
+01:19:48,090 --> 01:19:48,289
+Sadeleştiril scored.
+
+991
+01:19:48,289 --> 01:19:48,729
+Şimdi.
+
+992
+01:19:48,729 --> 01:20:07,020
+Arkadaşlar şimdi bu kısımları gördükten sonra bir yana geçelim şöyle.
+
+993
+01:20:13,619 --> 01:20:36,220
+Sıradaki konumuz bul cebri fonksiyonları ve standart biçimler.
+
+994
+01:20:36,220 --> 01:20:54,529
+Şimdi bul fonksiyonu tanımını yapalım.
+
+995
+01:20:54,529 --> 01:21:33,939
+Şimdi burada x1, x2, xn değişkenlerine ve sabitlere bul cebrenin ve veya ile tümleme işlemleri uygulanarak
+
+996
+01:21:33,939 --> 01:21:53,770
+elde edilen en değişkenli fonksiyondur diyoruz.
+
+997
+01:21:54,050 --> 01:21:55,770
+Demin yazmış oldum.
+
+998
+01:21:56,189 --> 01:22:00,810
+Örnekteki gibi örneğin f, a, b, c yazdık.
+
+999
+01:22:00,810 --> 01:22:10,270
+A üstü c artı a, b, c artı c üstü a, b gibi bir fonksiyon yazdık diyelim.
+
+1000
+01:22:10,829 --> 01:22:12,310
+Şuralarda ne yapılmış oluyor?
+
+1001
+01:22:12,930 --> 01:22:14,789
+Entleme yapılmış oluyor.
+
+1002
+01:22:15,449 --> 01:22:21,130
+Yani ve şurada yine entleme, üç girişli bir entleme işlemi yapılmış oluyor.
+
+1003
+01:22:21,670 --> 01:22:24,810
+Şuralarda ise orlama işlemi yapılarak.
+
+1004
+01:22:24,810 --> 01:22:28,130
+Şuralarda da tümleme işlemleri kullanılmış.
+
+1005
+01:22:28,729 --> 01:22:32,350
+Buna bul fonksiyonu adını veriyoruz.
+
+1006
+01:22:34,989 --> 01:22:41,369
+Bul cebri işlemleri için iki temel biçim bulunuyor arkadaşlar.
+
+1007
+01:22:41,869 --> 01:22:42,909
+İki temel biçim var.
+
+1008
+01:22:43,630 --> 01:22:52,399
+Biri minimum terimler kanonik biçimi.
+
+1009
+01:22:52,720 --> 01:23:05,989
+İkincisi ise arkadaşlar maksimum terimler kanonik biçimi olarak.
+
+1010
+01:23:05,989 --> 01:23:08,750
+adlandırılıyor.
+
+1011
+01:23:10,390 --> 01:23:11,050
+Şimdi
+
+1012
+01:23:11,050 --> 01:23:14,689
+buradaki minimum terimler
+
+1013
+01:23:14,689 --> 01:23:16,310
+ve maksimum terimler
+
+1014
+01:23:16,310 --> 01:23:18,609
+ne manaya geliyor arkadaşlar?
+
+1015
+01:23:19,630 --> 01:23:20,010
+Örneğin
+
+1016
+01:23:20,010 --> 01:23:22,310
+x ve y şeklinde
+
+1017
+01:23:22,310 --> 01:23:23,729
+iki tane
+
+1018
+01:23:23,729 --> 01:23:25,630
+değişkenimiz varsa
+
+1019
+01:23:25,630 --> 01:23:27,430
+biz bunları
+
+1020
+01:23:27,430 --> 01:23:29,270
+v işlemiyle
+
+1021
+01:23:29,270 --> 01:23:31,630
+nasıl bağlayabiliriz?
+
+1022
+01:23:32,869 --> 01:23:33,109
+x
+
+1023
+01:23:33,109 --> 01:23:34,770
+y
+
+1024
+01:23:34,770 --> 01:23:37,449
+x üstü y
+
+1025
+01:23:37,449 --> 01:23:40,630
+x y üstü
+
+1026
+01:23:40,630 --> 01:23:41,529
+ve de
+
+1027
+01:23:41,529 --> 01:23:43,529
+x y şeklinde
+
+1028
+01:23:43,529 --> 01:23:46,869
+eğer iki değişkenli bir fonksiyon içerisinde
+
+1029
+01:23:46,869 --> 01:23:48,930
+entlemeyle
+
+1030
+01:23:48,930 --> 01:23:50,649
+beraber kullanabileceğimiz
+
+1031
+01:23:50,649 --> 01:23:52,569
+ent ile beraber
+
+1032
+01:23:52,569 --> 01:23:54,489
+dört tane değişik
+
+1033
+01:23:54,489 --> 01:23:56,350
+terim elde edebiliyoruz.
+
+1034
+01:23:57,289 --> 01:23:58,350
+Aynı şekilde
+
+1035
+01:23:58,350 --> 01:24:01,430
+x artı y
+
+1036
+01:24:01,430 --> 01:24:04,449
+x üstü
+
+1037
+01:24:04,449 --> 01:24:05,750
+artı y
+
+1038
+01:24:05,750 --> 01:24:08,710
+x artı y üstü
+
+1039
+01:24:08,710 --> 01:24:11,189
+bir de x artı y'nin
+
+1040
+01:24:11,189 --> 01:24:12,409
+değeri şeklinde
+
+1041
+01:24:12,409 --> 01:24:15,029
+veya işlemiyle birbirine bağlı
+
+1042
+01:24:15,029 --> 01:24:16,829
+burada ent işlemiyle
+
+1043
+01:24:16,829 --> 01:24:17,810
+birbirine bağlı
+
+1044
+01:24:17,810 --> 01:24:19,630
+burada ise veya
+
+1045
+01:24:19,630 --> 01:24:22,390
+veya or
+
+1046
+01:24:22,390 --> 01:24:24,810
+burada da v
+
+1047
+01:24:24,810 --> 01:24:26,029
+işlemiyle bağlı
+
+1048
+01:24:26,029 --> 01:24:28,470
+dört değişik terim oluşturulur.
+
+1049
+01:24:28,470 --> 01:24:30,609
+Bakın iki değişkenliği için
+
+1050
+01:24:30,609 --> 01:24:31,689
+iki üzeri en
+
+1051
+01:24:31,689 --> 01:24:33,630
+iki üzeri ikiden
+
+1052
+01:24:33,630 --> 01:24:35,409
+dört terim oluşturabiliyoruz.
+
+1053
+01:24:35,489 --> 01:24:37,229
+Eğer x y z
+
+1054
+01:24:37,229 --> 01:24:40,130
+şeklinde üç tane terimimiz varsa
+
+1055
+01:24:40,130 --> 01:24:41,630
+fonksiyonun içerisinde
+
+1056
+01:24:41,630 --> 01:24:43,310
+iki üzeri üç
+
+1057
+01:24:43,310 --> 01:24:45,069
+sekiz farklı terim
+
+1058
+01:24:45,069 --> 01:24:47,109
+oluşturabiliriz.
+
+1059
+01:24:49,199 --> 01:24:51,100
+Şimdi minimum terimler ve
+
+1060
+01:24:51,100 --> 01:24:53,100
+maksimum terimler ne demek arkadaşlar?
+
+1061
+01:24:53,760 --> 01:24:54,920
+İki değişkenliğe göre
+
+1062
+01:24:54,920 --> 01:24:56,579
+ben size göstereyim öncelikle.
+
+1063
+01:24:56,960 --> 01:24:59,399
+x ve y değişkenlerimiz var.
+
+1064
+01:25:02,680 --> 01:25:03,699
+Bunların alabileceği
+
+1065
+01:25:03,699 --> 01:25:05,560
+dört değişik durum var.
+
+1066
+01:25:10,130 --> 01:25:10,949
+Min termler
+
+1067
+01:25:11,149 --> 01:25:12,989
+minimum terimler yani
+
+1068
+01:25:12,989 --> 01:25:14,489
+min term diye kısaltılıyor.
+
+1069
+01:25:15,229 --> 01:25:16,050
+Min termler
+
+1070
+01:25:16,050 --> 01:25:19,510
+arkadaşlar sıfır ve sıfırsa
+
+1071
+01:25:19,510 --> 01:25:22,090
+ikisinin ikisi de sıfırsa
+
+1072
+01:25:22,090 --> 01:25:23,649
+x y'nin değili
+
+1073
+01:25:23,649 --> 01:25:26,569
+sıfır bir durumunda
+
+1074
+01:25:26,569 --> 01:25:28,850
+sıfırın olduğu yerde
+
+1075
+01:25:28,850 --> 01:25:30,489
+değili kullandığımız
+
+1076
+01:25:30,489 --> 01:25:33,609
+diğerinde bir gördüğümüz yerde
+
+1077
+01:25:33,609 --> 01:25:36,590
+tümleme almadığımız durum
+
+1078
+01:25:36,590 --> 01:25:38,609
+x y
+
+1079
+01:25:38,609 --> 01:25:40,289
+üstü
+
+1080
+01:25:40,289 --> 01:25:42,909
+ve x y
+
+1081
+01:25:42,909 --> 01:25:44,750
+şeklinde minimum terimler oluşuyor.
+
+1082
+01:25:45,310 --> 01:25:46,449
+Kolaylık olsun diye
+
+1083
+01:25:46,449 --> 01:25:49,350
+küçük m'ye
+
+1084
+01:25:49,350 --> 01:25:51,850
+burada indis veriyoruz.
+
+1085
+01:25:52,909 --> 01:25:54,369
+m sıfır dediğimiz zaman
+
+1086
+01:25:54,369 --> 01:25:57,390
+m1, m2, m3
+
+1087
+01:25:57,390 --> 01:25:59,350
+küçük harflerle gösterdiğimiz
+
+1088
+01:25:59,350 --> 01:26:01,329
+m sıfır sıfır sayısının
+
+1089
+01:26:01,329 --> 01:26:03,409
+şunun sayı karşılığı sıfır
+
+1090
+01:26:03,409 --> 01:26:05,510
+bunun bir, bunun iki, bunun üç.
+
+1091
+01:26:06,390 --> 01:26:07,289
+Küçük m sıfır
+
+1092
+01:26:07,289 --> 01:26:09,229
+gözlerdiğimiz zaman min term diyorsak
+
+1093
+01:26:09,229 --> 01:26:09,729
+şayet
+
+1094
+01:26:09,729 --> 01:26:11,810
+sıfır gördüğümüz yerlere
+
+1095
+01:26:11,810 --> 01:26:13,970
+ikisi de sıfırsa
+
+1096
+01:26:13,970 --> 01:26:15,270
+x y üstü
+
+1097
+01:26:15,270 --> 01:26:16,789
+sıfır gördüğümüz yerde
+
+1098
+01:26:16,789 --> 01:26:18,930
+değilini koyarak ilerliyoruz.
+
+1099
+01:26:19,510 --> 01:26:21,010
+Buna min termler deniyor.
+
+1100
+01:26:22,210 --> 01:26:23,289
+Max termler ise
+
+1101
+01:26:23,289 --> 01:26:26,229
+max termler ise
+
+1102
+01:26:26,229 --> 01:26:28,090
+arkadaşlar
+
+1103
+01:26:28,090 --> 01:26:32,310
+bu sefer tam tersi mantıkla yapılıyor.
+
+1104
+01:26:32,909 --> 01:26:35,090
+0 0 0 0 gördüğümüz yerde
+
+1105
+01:26:35,090 --> 01:26:36,850
+x artı y
+
+1106
+01:26:36,850 --> 01:26:38,789
+bu sefer max termlerde
+
+1107
+01:26:38,789 --> 01:26:39,390
+ortada
+
+1108
+01:26:39,390 --> 01:26:39,649
+ortada
+
+1109
+01:26:39,649 --> 01:26:39,710
+ortada
+
+1110
+01:26:39,729 --> 01:26:41,170
+elemanı kullanılıyor.
+
+1111
+01:26:41,890 --> 01:26:42,270
+x y
+
+1112
+01:26:42,270 --> 01:26:44,750
+sıfır gördüğümüz sayılarda
+
+1113
+01:26:44,750 --> 01:26:47,210
+x'i değiştirmiyoruz.
+
+1114
+01:26:47,310 --> 01:26:48,369
+artı y üstü
+
+1115
+01:26:48,369 --> 01:26:49,390
+bir gördüğümüz yerlerde
+
+1116
+01:26:49,390 --> 01:26:50,550
+deminkinin tam tersi
+
+1117
+01:26:50,550 --> 01:26:51,489
+min termde
+
+1118
+01:26:51,489 --> 01:26:52,930
+sıfır olan yerlerde
+
+1119
+01:26:52,930 --> 01:26:54,609
+değilini yazıyorduk.
+
+1120
+01:26:55,069 --> 01:26:55,630
+Burada ise
+
+1121
+01:26:55,630 --> 01:26:57,050
+sıfır olan yerlerde
+
+1122
+01:26:57,050 --> 01:26:58,130
+x'i yazdık.
+
+1123
+01:26:58,210 --> 01:26:59,430
+Mesela 0 1'e karşılık
+
+1124
+01:26:59,430 --> 01:27:00,449
+x y üstü
+
+1125
+01:27:00,449 --> 01:27:02,329
+bir sıfıra karşılık
+
+1126
+01:27:02,329 --> 01:27:04,510
+x üstü artı y
+
+1127
+01:27:04,510 --> 01:27:05,850
+ikisi de birse
+
+1128
+01:27:05,850 --> 01:27:07,310
+x artı y'nin
+
+1129
+01:27:07,310 --> 01:27:08,010
+değili gibi
+
+1130
+01:27:08,010 --> 01:27:09,350
+gösterimde var.
+
+1131
+01:27:09,729 --> 01:27:11,529
+Max termleri gösterirken
+
+1132
+01:27:11,529 --> 01:27:12,970
+büyük m harfini gösteriyoruz.
+
+1133
+01:27:13,149 --> 01:27:13,270
+A
+
+1134
+01:27:13,270 --> 01:27:14,390
+Bunlar da
+
+1135
+01:27:14,390 --> 01:27:15,010
+m 0
+
+1136
+01:27:15,010 --> 01:27:16,189
+m 1
+
+1137
+01:27:16,189 --> 01:27:17,189
+m 2
+
+1138
+01:27:17,189 --> 01:27:18,250
+m 3 diye
+
+1139
+01:27:18,250 --> 01:27:19,689
+kısaltılmış bir şekilde
+
+1140
+01:27:19,689 --> 01:27:21,310
+gösterilebiliyor.
+
+1141
+01:27:22,529 --> 01:27:23,470
+Dediğim gibi
+
+1142
+01:27:23,470 --> 01:27:24,470
+bu sadece
+
+1143
+01:27:24,470 --> 01:27:25,590
+iki değişken için.
+
+1144
+01:27:26,029 --> 01:27:27,229
+Eğer 3 değişkenimiz
+
+1145
+01:27:27,229 --> 01:27:27,869
+olsaydı
+
+1146
+01:27:27,869 --> 01:27:29,270
+tabii ki ne yapacaktık?
+
+1147
+01:27:29,350 --> 01:27:29,609
+Mesela
+
+1148
+01:27:29,609 --> 01:27:30,930
+0 0 0
+
+1149
+01:27:30,930 --> 01:27:31,510
+olsaydı
+
+1150
+01:27:31,510 --> 01:27:31,789
+mesela
+
+1151
+01:27:31,789 --> 01:27:32,970
+x y z
+
+1152
+01:27:32,970 --> 01:27:34,109
+olsaydı
+
+1153
+01:27:34,109 --> 01:27:35,569
+min termi
+
+1154
+01:27:35,569 --> 01:27:37,130
+toplam 8 tane
+
+1155
+01:27:37,130 --> 01:27:37,810
+min termi
+
+1156
+01:27:37,810 --> 01:27:38,470
+olacaktı.
+
+1157
+01:27:39,069 --> 01:27:39,649
+0 gördükten sonra
+
+1158
+01:27:39,649 --> 01:27:40,609
+gördüklerimiz yerleri
+
+1159
+01:27:40,609 --> 01:27:41,710
+min term kısmında
+
+1160
+01:27:41,710 --> 01:27:42,210
+x
+
+1161
+01:27:42,210 --> 01:27:42,710
+y
+
+1162
+01:27:42,710 --> 01:27:43,210
+z
+
+1163
+01:27:43,210 --> 01:27:43,710
+yazarken
+
+1164
+01:27:43,710 --> 01:27:45,649
+0 gördüğümüz yerler
+
+1165
+01:27:45,649 --> 01:27:46,149
+şöyle.
+
+1166
+01:27:46,149 --> 01:27:48,149
+Max termine ise
+
+1167
+01:27:48,149 --> 01:27:50,149
+x
+
+1168
+01:27:50,149 --> 01:27:52,149
+artı
+
+1169
+01:27:52,149 --> 01:27:52,649
+y
+
+1170
+01:27:52,649 --> 01:27:53,149
+artı
+
+1171
+01:27:53,149 --> 01:27:53,649
+z
+
+1172
+01:27:53,649 --> 01:27:54,149
+yazacaktık.
+
+1173
+01:27:54,149 --> 01:27:54,649
+Örneğin
+
+1174
+01:27:54,649 --> 01:27:56,649
+0 1 0
+
+1175
+01:27:56,649 --> 01:27:57,649
+şahşayı
+
+1176
+01:27:57,649 --> 01:27:58,649
+min termine
+
+1177
+01:27:58,649 --> 01:27:59,649
+x
+
+1178
+01:27:59,649 --> 01:28:00,649
+üstü
+
+1179
+01:28:00,649 --> 01:28:01,649
+y
+
+1180
+01:28:01,649 --> 01:28:02,649
+z
+
+1181
+01:28:02,649 --> 01:28:03,649
+yazarken
+
+1182
+01:28:03,649 --> 01:28:04,649
+z üstü
+
+1183
+01:28:04,649 --> 01:28:05,649
+yazarken
+
+1184
+01:28:05,649 --> 01:28:06,649
+bunun tam tersi
+
+1185
+01:28:06,649 --> 01:28:07,649
+x
+
+1186
+01:28:07,649 --> 01:28:08,649
+artı
+
+1187
+01:28:08,649 --> 01:28:09,149
+y
+
+1188
+01:28:09,149 --> 01:28:10,149
+üstü
+
+1189
+01:28:10,149 --> 01:28:11,149
+artı
+
+1190
+01:28:11,149 --> 01:28:12,149
+z
+
+1191
+01:28:12,149 --> 01:28:13,149
+üstü
+
+1192
+01:28:13,149 --> 01:28:14,149
+pardon
+
+1193
+01:28:14,149 --> 01:28:15,149
+üstü yok
+
+1194
+01:28:15,149 --> 01:28:16,149
+z yazıyoruz.
+
+1195
+01:28:16,149 --> 01:28:17,149
+Bunun sayı karşılığı
+
+1196
+01:28:17,149 --> 01:28:18,149
+ne?
+
+1197
+01:28:18,149 --> 01:28:19,149
+2
+
+1198
+01:28:19,149 --> 01:28:20,149
+bunu kısaltma olarak
+
+1199
+01:28:20,149 --> 01:28:21,149
+gösterecek olursak
+
+1200
+01:28:21,149 --> 01:28:22,149
+m2
+
+1201
+01:28:22,149 --> 01:28:23,149
+bu
+
+1202
+01:28:23,149 --> 01:28:24,149
+max termisi
+
+1203
+01:28:24,149 --> 01:28:25,149
+büyük m2
+
+1204
+01:28:25,149 --> 01:28:26,149
+şeklinde
+
+1205
+01:28:26,149 --> 01:28:27,149
+gösterilecekti
+
+1206
+01:28:27,149 --> 01:28:28,149
+arkadaşlar.
+
+1207
+01:28:28,149 --> 01:28:31,939
+Şimdi
+
+1208
+01:28:31,939 --> 01:28:32,939
+şimdiki
+
+1209
+01:28:32,939 --> 01:28:38,699
+başlığımız
+
+1210
+01:28:38,699 --> 01:28:39,699
+minimum
+
+1211
+01:28:39,699 --> 01:28:40,699
+terimler
+
+1212
+01:28:40,699 --> 01:28:41,699
+kanonik
+
+1213
+01:28:41,699 --> 01:28:42,699
+biçimi
+
+1214
+01:28:42,699 --> 01:28:43,699
+olsun.
+
+1215
+01:28:43,699 --> 01:28:46,140
+Şimdi
+
+1216
+01:28:46,140 --> 01:28:47,140
+başlığımız
+
+1217
+01:28:47,140 --> 01:28:54,100
+minimum terimler
+
+1218
+01:28:54,100 --> 01:28:55,100
+şimdi
+
+1219
+01:28:55,100 --> 01:28:56,100
+minimum terimler
+
+1220
+01:28:56,100 --> 01:28:58,569
+kanonik
+
+1221
+01:28:58,569 --> 01:28:59,569
+biçimi
+
+1222
+01:28:59,569 --> 01:29:00,569
+minimum
+
+1223
+01:29:00,569 --> 01:29:01,569
+terim
+
+1224
+01:29:01,569 --> 01:29:02,569
+acı
+
+1225
+01:29:02,569 --> 01:29:03,569
+eğer şeyini
+
+1226
+01:29:03,569 --> 01:29:04,569
+yazacak olursak
+
+1227
+01:29:04,569 --> 01:29:09,979
+tanımını
+
+1228
+01:29:09,979 --> 01:29:10,979
+minimum
+
+1229
+01:29:10,979 --> 01:29:16,880
+terimlerin
+
+1230
+01:29:16,880 --> 01:29:17,880
+toplamından
+
+1231
+01:29:17,880 --> 01:29:18,880
+oluşmuş
+
+1232
+01:29:18,880 --> 01:29:19,880
+ifadelerle
+
+1233
+01:29:19,880 --> 01:29:20,880
+söylüyoruz.
+
+1234
+01:29:20,880 --> 01:29:21,880
+Örneğin
+
+1235
+01:29:21,880 --> 01:29:22,880
+bir
+
+1236
+01:29:22,880 --> 01:29:23,880
+iki
+
+1237
+01:29:23,880 --> 01:29:24,880
+iki tane
+
+1238
+01:29:24,880 --> 01:29:25,880
+şeyimiz
+
+1239
+01:29:25,880 --> 01:29:26,880
+var diyelim
+
+1240
+01:29:26,880 --> 01:29:27,880
+a b
+
+1241
+01:29:27,880 --> 01:29:28,880
+den oluşuyor.
+
+1242
+01:29:28,880 --> 01:29:29,880
+İki tane değişkenlik
+
+1243
+01:29:29,880 --> 01:29:30,880
+fonksiyonumuz var.
+
+1244
+01:29:30,880 --> 01:29:31,880
+Minimum
+
+1245
+01:29:31,880 --> 01:29:32,880
+terimlerin
+
+1246
+01:29:32,880 --> 01:29:33,880
+örneğin
+
+1247
+01:29:33,880 --> 01:29:34,880
+b üstü
+
+1248
+01:29:34,880 --> 01:29:35,880
+gibi
+
+1249
+01:29:35,880 --> 01:29:36,880
+şurada görmüş
+
+1250
+01:29:36,880 --> 01:29:37,880
+olduklarınız
+
+1251
+01:29:37,880 --> 01:29:38,880
+ne?
+
+1252
+01:29:38,880 --> 01:29:39,880
+Minimum
+
+1253
+01:29:39,880 --> 01:29:40,880
+terimler
+
+1254
+01:29:40,880 --> 01:29:41,880
+değil mi?
+
+1255
+01:29:41,880 --> 01:29:42,880
+Minimum
+
+1256
+01:29:42,880 --> 01:29:43,880
+terimlerden
+
+1257
+01:29:43,880 --> 01:29:44,880
+oluşmuş iki
+
+1258
+01:29:44,880 --> 01:29:45,880
+tane değişken
+
+1259
+01:29:45,880 --> 01:29:46,880
+var.
+
+1260
+01:29:46,880 --> 01:29:47,880
+a ve b
+
+1261
+01:29:47,880 --> 01:29:48,880
+değişkenleri
+
+1262
+01:29:48,880 --> 01:29:49,880
+burada
+
+1263
+01:29:49,880 --> 01:29:50,880
+bizim
+
+1264
+01:29:50,880 --> 01:29:51,880
+a üstü
+
+1265
+01:29:51,880 --> 01:29:52,880
+b
+
+1266
+01:29:52,880 --> 01:29:53,880
+artı
+
+1267
+01:29:53,880 --> 01:29:54,880
+a b
+
+1268
+01:29:54,880 --> 01:29:55,880
+üstü
+
+1269
+01:29:55,880 --> 01:29:58,159
+ifadelerimiz
+
+1270
+01:29:58,159 --> 01:29:59,159
+bir
+
+1271
+01:29:59,159 --> 01:30:00,159
+veya
+
+1272
+01:30:00,159 --> 01:30:01,159
+işleminin
+
+1273
+01:30:01,159 --> 01:30:02,159
+karşılığı
+
+1274
+01:30:02,159 --> 01:30:03,159
+olacak
+
+1275
+01:30:03,159 --> 01:30:04,159
+bunlar.
+
+1276
+01:30:04,159 --> 01:30:07,159
+Burada
+
+1277
+01:30:07,159 --> 01:30:08,159
+veya işlemine
+
+1278
+01:30:08,159 --> 01:30:09,159
+ilişkin
+
+1279
+01:30:09,159 --> 01:30:10,159
+bir örnek
+
+1280
+01:30:10,159 --> 01:30:13,880
+yapalım.
+
+1281
+01:30:13,880 --> 01:30:14,880
+Örnek
+
+1282
+01:30:14,880 --> 01:30:19,750
+veya önce
+
+1283
+01:30:19,750 --> 01:30:20,750
+bir tanımını
+
+1284
+01:30:20,750 --> 01:30:21,750
+yapalım.
+
+1285
+01:30:21,750 --> 01:30:25,630
+Bir fonksiyonumuz
+
+1286
+01:30:25,630 --> 01:30:26,630
+olsun.
+
+1287
+01:30:26,630 --> 01:30:28,630
+Fonksiyonumuz
+
+1288
+01:30:28,630 --> 01:30:29,630
+a artı
+
+1289
+01:30:29,630 --> 01:30:30,630
+b şeklinde
+
+1290
+01:30:30,630 --> 01:30:31,630
+yazılsın.
+
+1291
+01:30:31,630 --> 01:30:32,630
+Bunun minimum
+
+1292
+01:30:32,630 --> 01:30:33,630
+terimler
+
+1293
+01:30:33,630 --> 01:30:34,630
+kanonik
+
+1294
+01:30:34,630 --> 01:30:35,630
+biçimini
+
+1295
+01:30:35,630 --> 01:30:36,630
+yazın
+
+1296
+01:30:36,630 --> 01:30:37,630
+dedikleri zaman
+
+1297
+01:30:37,630 --> 01:30:38,630
+bize ne
+
+1298
+01:30:38,630 --> 01:30:39,630
+yapmamız
+
+1299
+01:30:39,630 --> 01:30:40,630
+gerekiyor?
+
+1300
+01:30:40,630 --> 01:30:41,630
+Minimum terimler
+
+1301
+01:30:41,630 --> 01:30:42,630
+cinsinden
+
+1302
+01:30:42,630 --> 01:30:43,630
+yazalım
+
+1303
+01:30:43,630 --> 01:30:44,630
+ama minimum
+
+1304
+01:30:44,630 --> 01:30:45,630
+terimler
+
+1305
+01:30:45,630 --> 01:30:48,039
+cinsinden
+
+1306
+01:30:48,039 --> 01:30:49,039
+yazalım
+
+1307
+01:30:49,039 --> 01:30:51,420
+bunu.
+
+1308
+01:30:51,420 --> 01:30:52,420
+İki tane
+
+1309
+01:30:52,420 --> 01:30:53,420
+değişkenimiz
+
+1310
+01:30:53,420 --> 01:30:54,420
+var 00
+
+1311
+01:30:54,420 --> 01:30:55,420
+01
+
+1312
+01:30:55,420 --> 01:30:56,420
+10
+
+1313
+01:30:56,420 --> 01:30:57,420
+11
+
+1314
+01:30:57,420 --> 01:30:58,420
+değerlerini
+
+1315
+01:30:58,420 --> 01:30:59,420
+alabiliyor.
+
+1316
+01:30:59,420 --> 01:31:00,420
+Bunların
+
+1317
+01:31:00,420 --> 01:31:01,420
+min
+
+1318
+01:31:01,420 --> 01:31:02,420
+termleri
+
+1319
+01:31:02,420 --> 01:31:03,420
+neler?
+
+1320
+01:31:03,420 --> 01:31:04,420
+Min
+
+1321
+01:31:04,420 --> 01:31:05,420
+termleri
+
+1322
+01:31:05,420 --> 01:31:06,420
+a
+
+1323
+01:31:06,420 --> 01:31:07,420
+üstü
+
+1324
+01:31:07,420 --> 01:31:08,420
+a
+
+1325
+01:31:08,420 --> 01:31:09,420
+üstü
+
+1326
+01:31:09,420 --> 01:31:10,420
+b
+
+1327
+01:31:10,420 --> 01:31:13,270
+üstü
+
+1328
+01:31:13,270 --> 01:31:14,270
+şeklinde
+
+1329
+01:31:14,270 --> 01:31:15,270
+yazabiliyoruz.
+
+1330
+01:31:15,270 --> 01:31:16,270
+a
+
+1331
+01:31:16,270 --> 01:31:17,270
+üstü
+
+1332
+01:31:17,270 --> 01:31:18,270
+b
+
+1333
+01:31:18,270 --> 01:31:19,270
+üstü
+
+1334
+01:31:19,270 --> 01:31:20,270
+a
+
+1335
+01:31:20,270 --> 01:31:21,270
+b şeklinde
+
+1336
+01:31:21,270 --> 01:31:22,270
+yazabiliyoruz.
+
+1337
+01:31:22,270 --> 01:31:23,270
+Peki bu
+
+1338
+01:31:23,270 --> 01:31:24,270
+ifade
+
+1339
+01:31:24,270 --> 01:31:25,270
+nerede bir
+
+1340
+01:31:25,270 --> 01:31:26,270
+değerini alıyor
+
+1341
+01:31:26,270 --> 01:31:28,270
+arkadaşlar?
+
+1342
+01:31:28,270 --> 01:31:29,270
+Yani bizim
+
+1343
+01:31:29,270 --> 01:31:30,270
+f değerimiz
+
+1344
+01:31:30,270 --> 01:31:31,270
+nerelerde bir
+
+1345
+01:31:31,270 --> 01:31:33,550
+alıyor?
+
+1346
+01:31:33,550 --> 01:31:34,550
+a artı b
+
+1347
+01:31:34,550 --> 01:31:35,550
+yaptığımızda
+
+1348
+01:31:35,550 --> 01:31:36,550
+burada sıfır
+
+1349
+01:31:36,550 --> 01:31:37,550
+burada bir
+
+1350
+01:31:37,550 --> 01:31:38,550
+değerlerini
+
+1351
+01:31:38,550 --> 01:31:39,550
+alıyor.
+
+1352
+01:31:39,550 --> 01:31:40,550
+Bu durumda
+
+1353
+01:31:40,550 --> 01:31:41,550
+sadece
+
+1354
+01:31:41,550 --> 01:31:42,550
+minimum
+
+1355
+01:31:42,550 --> 01:31:43,550
+terimler
+
+1356
+01:31:43,550 --> 01:31:44,550
+kanonik
+
+1357
+01:31:44,550 --> 01:31:45,550
+biçiminde
+
+1358
+01:31:45,550 --> 01:31:46,550
+sadece bir
+
+1359
+01:31:46,550 --> 01:31:47,550
+min
+
+1360
+01:31:47,550 --> 01:31:48,550
+termleri
+
+1361
+01:31:48,550 --> 01:31:49,550
+alıyoruz.
+
+1362
+01:31:49,550 --> 01:31:50,550
+Sadece min
+
+1363
+01:31:50,550 --> 01:31:51,550
+termleri
+
+1364
+01:31:51,550 --> 01:31:52,550
+alıyoruz.
+
+1365
+01:31:52,550 --> 01:31:53,550
+Bunların
+
+1366
+01:31:53,550 --> 01:31:54,550
+indisleri
+
+1367
+01:31:54,550 --> 01:31:55,550
+neler?
+
+1368
+01:31:55,550 --> 01:31:56,550
+M0
+
+1369
+01:31:56,550 --> 01:31:57,550
+M1
+
+1370
+01:31:57,550 --> 01:31:58,550
+M2
+
+1371
+01:31:58,550 --> 01:31:59,550
+ve M3
+
+1372
+01:31:59,550 --> 01:32:00,550
+sadece dikkat
+
+1373
+01:32:00,550 --> 01:32:01,550
+ederseniz
+
+1374
+01:32:01,550 --> 01:32:02,550
+M1
+
+1375
+01:32:02,550 --> 01:32:03,550
+M2
+
+1376
+01:32:03,550 --> 01:32:04,550
+ve M3
+
+1377
+01:32:04,550 --> 01:32:05,550
+de bir
+
+1378
+01:32:05,550 --> 01:32:06,550
+değerlerini
+
+1379
+01:32:06,550 --> 01:32:07,550
+alıyor.
+
+1380
+01:32:07,550 --> 01:32:08,550
+Dolayısıyla
+
+1381
+01:32:08,550 --> 01:32:09,550
+ben bu
+
+1382
+01:32:09,550 --> 01:32:10,550
+fonksiyonu
+
+1383
+01:32:10,550 --> 01:32:11,550
+yazacak olursam
+
+1384
+01:32:11,550 --> 01:32:12,550
+üç tane
+
+1385
+01:32:12,550 --> 01:32:13,550
+M1
+
+1386
+01:32:13,550 --> 01:32:14,550
+artı
+
+1387
+01:32:14,550 --> 01:32:15,550
+M2
+
+1388
+01:32:15,550 --> 01:32:16,550
+artı
+
+1389
+01:32:16,550 --> 01:32:17,550
+yeterli
+
+1390
+01:32:17,550 --> 01:32:18,550
+olacak.
+
+1391
+01:32:18,550 --> 01:32:19,550
+Onları da
+
+1392
+01:32:19,550 --> 01:32:20,550
+yazacak olursam
+
+1393
+01:32:20,550 --> 01:32:21,550
+M1'e
+
+1394
+01:32:21,550 --> 01:32:22,550
+ne denk
+
+1395
+01:32:22,550 --> 01:32:23,550
+geliyordu?
+
+1396
+01:32:23,550 --> 01:32:24,550
+a üssü
+
+1397
+01:32:24,550 --> 01:32:25,550
+b artı
+
+1398
+01:32:25,550 --> 01:32:28,859
+a b
+
+1399
+01:32:28,859 --> 01:32:29,859
+üssü
+
+1400
+01:32:29,859 --> 01:32:30,859
+artı
+
+1401
+01:32:30,859 --> 01:32:31,859
+a b.
+
+1402
+01:32:31,859 --> 01:32:32,859
+Aslında
+
+1403
+01:32:32,859 --> 01:32:33,859
+biz
+
+1404
+01:32:33,859 --> 01:32:34,859
+burada
+
+1405
+01:32:34,859 --> 01:32:35,859
+verilen bize
+
+1406
+01:32:35,859 --> 01:32:36,859
+bir fonksiyon
+
+1407
+01:32:36,859 --> 01:32:37,859
+var.
+
+1408
+01:32:37,859 --> 01:32:38,859
+Burada
+
+1409
+01:32:38,859 --> 01:32:39,859
+sadece bir
+
+1410
+01:32:39,859 --> 01:32:40,859
+basitçe
+
+1411
+01:32:40,859 --> 01:32:41,859
+bir or
+
+1412
+01:32:41,859 --> 01:32:42,859
+fonksiyonu
+
+1413
+01:32:42,859 --> 01:32:43,859
+verilmiş.
+
+1414
+01:32:43,859 --> 01:32:44,859
+Bunu
+
+1415
+01:32:44,859 --> 01:32:45,859
+minimum
+
+1416
+01:32:45,859 --> 01:32:46,859
+terimler
+
+1417
+01:32:46,859 --> 01:32:47,859
+kanonik
+
+1418
+01:32:47,859 --> 01:32:48,859
+sadece bir
+
+1419
+01:32:48,859 --> 01:32:49,859
+olan
+
+1420
+01:32:49,859 --> 01:32:50,859
+yerlerde
+
+1421
+01:32:50,859 --> 01:32:51,859
+fonksiyonu
+
+1422
+01:32:51,859 --> 01:32:52,859
+bir
+
+1423
+01:32:52,859 --> 01:32:53,859
+yapan
+
+1424
+01:32:53,859 --> 01:32:54,859
+yerlerde
+
+1425
+01:32:54,859 --> 01:32:55,859
+ki
+
+1426
+01:32:55,859 --> 01:32:56,859
+minimum
+
+1427
+01:32:56,859 --> 01:32:57,859
+terimleri
+
+1428
+01:32:57,859 --> 01:32:58,859
+alarak
+
+1429
+01:32:58,859 --> 01:32:59,859
+uzunca
+
+1430
+01:32:59,859 --> 01:33:00,859
+yazabiliyoruz.
+
+1431
+01:33:00,859 --> 01:33:01,859
+Dikkat edin
+
+1432
+01:33:01,859 --> 01:33:02,859
+bu fonksiyon
+
+1433
+01:33:02,859 --> 01:33:03,859
+artı
+
+1434
+01:33:03,859 --> 01:33:04,859
+b fonksiyonu
+
+1435
+01:33:04,859 --> 01:33:05,859
+kendini
+
+1436
+01:33:05,859 --> 01:33:06,859
+oluşturan
+
+1437
+01:33:06,859 --> 01:33:07,859
+bileşenler
+
+1438
+01:33:07,859 --> 01:33:08,859
+min termler
+
+1439
+01:33:08,859 --> 01:33:09,859
+iki tane
+
+1440
+01:33:09,859 --> 01:33:10,859
+değişken var
+
+1441
+01:33:10,859 --> 01:33:11,859
+FAB
+
+1442
+01:33:11,859 --> 01:33:12,859
+olmak
+
+1443
+01:33:12,859 --> 01:33:13,859
+üzere
+
+1444
+01:33:13,859 --> 01:33:14,859
+onların
+
+1445
+01:33:14,859 --> 01:33:15,859
+min termlerinin
+
+1446
+01:33:15,859 --> 01:33:16,859
+toplamı
+
+1447
+01:33:16,859 --> 01:33:20,770
+şeklinde
+
+1448
+01:33:20,770 --> 01:33:21,770
+var.
+
+1449
+01:33:21,770 --> 01:33:22,770
+Şimdi
+
+1450
+01:33:22,770 --> 01:33:23,770
+bunun
+
+1451
+01:33:23,770 --> 01:33:24,770
+Shannon
+
+1452
+01:33:24,770 --> 01:33:25,770
+teoremi
+
+1453
+01:33:25,770 --> 01:33:26,770
+karşılığı da
+
+1454
+01:33:26,770 --> 01:33:27,770
+var arkadaşlar.
+
+1455
+01:33:27,770 --> 01:33:28,770
+Shannon
+
+1456
+01:33:28,770 --> 01:33:29,770
+teoremi
+
+1457
+01:33:29,770 --> 01:33:30,770
+karşılığı
+
+1458
+01:33:30,770 --> 01:33:31,770
+var.
+
+1459
+01:33:31,770 --> 01:33:32,770
+Bununla ilgili
+
+1460
+01:33:32,770 --> 01:33:33,770
+bir örnek de
+
+1461
+01:33:33,770 --> 01:33:34,770
+yazacağız aynı
+
+1462
+01:33:34,770 --> 01:33:35,770
+zamanda
+
+1463
+01:33:35,770 --> 01:33:36,770
+arkadaşlar.
+
+1464
+01:33:36,770 --> 01:33:37,770
+Shannon
+
+1465
+01:33:37,770 --> 01:33:38,770
+teoremi
+
+1466
+01:33:38,770 --> 01:33:39,770
+diyor ki
+
+1467
+01:33:39,770 --> 01:33:40,770
+herhangi
+
+1468
+01:33:40,770 --> 01:33:41,770
+bir
+
+1469
+01:33:41,770 --> 01:33:42,770
+n
+
+1470
+01:33:42,770 --> 01:33:43,770
+değişkenli
+
+1471
+01:33:43,770 --> 01:33:44,770
+fonksiyon
+
+1472
+01:33:44,770 --> 01:33:45,770
+x1
+
+1473
+01:33:45,770 --> 01:33:46,770
+x2
+
+1474
+01:33:46,770 --> 01:33:47,770
+x3
+
+1475
+01:33:47,770 --> 01:33:48,770
+xn
+
+1476
+01:33:48,770 --> 01:33:49,770
+yazdığımız
+
+1477
+01:33:49,770 --> 01:33:50,770
+değişkenleri
+
+1478
+01:33:50,770 --> 01:33:51,770
+yani 0 ve
+
+1479
+01:33:51,770 --> 01:33:52,770
+1 alan
+
+1480
+01:33:52,770 --> 01:33:53,770
+değişkenler
+
+1481
+01:33:53,770 --> 01:33:54,770
+olmuş oluyor
+
+1482
+01:33:54,770 --> 01:33:55,770
+aslında.
+
+1483
+01:33:55,770 --> 01:33:56,770
+Bunu uzun uzun
+
+1484
+01:33:56,770 --> 01:33:57,770
+yazacak olursak
+
+1485
+01:33:57,770 --> 01:33:58,770
+hani
+
+1486
+01:33:58,770 --> 01:33:59,770
+demin size
+
+1487
+01:33:59,770 --> 01:34:00,770
+anlattığım
+
+1488
+01:34:00,770 --> 01:34:01,770
+14b de görmüş
+
+1489
+01:34:01,770 --> 01:34:02,770
+olduğumuz
+
+1490
+01:34:02,770 --> 01:34:03,770
+önce
+
+1491
+01:34:03,770 --> 01:34:04,770
+x1'in
+
+1492
+01:34:04,770 --> 01:34:05,770
+değili
+
+1493
+01:34:05,770 --> 01:34:06,770
+çarpı
+
+1494
+01:34:06,770 --> 01:34:07,770
+F
+
+1495
+01:34:07,770 --> 01:34:08,770
+0
+
+1496
+01:34:08,770 --> 01:34:09,770
+x2
+
+1497
+01:34:09,770 --> 01:34:10,770
+xn
+
+1498
+01:34:10,770 --> 01:34:11,770
+ikiye
+
+1499
+01:34:11,770 --> 01:34:12,770
+ayrılabilir
+
+1500
+01:34:12,770 --> 01:34:13,770
+öncelikli
+
+1501
+01:34:13,770 --> 01:34:14,770
+olarak.
+
+1502
+01:34:14,770 --> 01:34:15,770
+x1
+
+1503
+01:34:15,770 --> 01:34:16,770
+F
+
+1504
+01:34:16,770 --> 01:34:17,770
+1
+
+1505
+01:34:17,770 --> 01:34:18,770
+x2
+
+1506
+01:34:18,770 --> 01:34:20,770
+x3
+
+1507
+01:34:20,770 --> 01:34:21,770
+xn
+
+1508
+01:34:21,770 --> 01:34:22,770
+şeklinde
+
+1509
+01:34:22,770 --> 01:34:23,770
+iki parçalı
+
+1510
+01:34:23,770 --> 01:34:24,770
+şekilde
+
+1511
+01:34:24,770 --> 01:34:25,770
+yazılabilir.
+
+1512
+01:34:25,770 --> 01:34:26,770
+Bunu bir
+
+1513
+01:34:26,770 --> 01:34:27,770
+aşama
+
+1514
+01:34:27,770 --> 01:34:28,770
+daha
+
+1515
+01:34:28,770 --> 01:34:29,770
+çalıştıracak
+
+1516
+01:34:29,770 --> 01:34:30,770
+olursak
+
+1517
+01:34:30,770 --> 01:34:31,770
+yani
+
+1518
+01:34:31,770 --> 01:34:32,770
+şuradaki fonksiyon
+
+1519
+01:34:32,770 --> 01:34:33,770
+için bir daha
+
+1520
+01:34:33,770 --> 01:34:34,770
+çalıştıralım.
+
+1521
+01:34:34,770 --> 01:34:35,770
+x1 üssümüz
+
+1522
+01:34:35,770 --> 01:34:36,770
+var.
+
+1523
+01:34:36,770 --> 01:34:37,770
+Öncelikle
+
+1524
+01:34:37,770 --> 01:34:38,770
+şu fonksiyonu
+
+1525
+01:34:38,770 --> 01:34:39,770
+bu sefer
+
+1526
+01:34:39,770 --> 01:34:40,770
+yazmaya
+
+1527
+01:34:40,770 --> 01:34:41,770
+başlayacağız.
+
+1528
+01:34:41,770 --> 01:34:42,770
+Bu sefer
+
+1529
+01:34:42,770 --> 01:34:43,770
+x
+
+1530
+01:34:43,770 --> 01:34:44,770
+üssünü
+
+1531
+01:34:44,770 --> 01:34:45,770
+dışarı
+
+1532
+01:34:45,770 --> 01:34:46,770
+çıkaralım.
+
+1533
+01:34:46,770 --> 01:34:47,770
+Yerine
+
+1534
+01:34:47,770 --> 01:34:48,770
+ne yazacağız?
+
+1535
+01:34:48,770 --> 01:34:49,770
+0
+
+1536
+01:34:49,770 --> 01:34:50,770
+şuradaki x2
+
+1537
+01:34:50,770 --> 01:34:51,770
+yerine
+
+1538
+01:34:51,770 --> 01:34:52,770
+0
+
+1539
+01:34:52,770 --> 01:34:53,770
+koyuyoruz.
+
+1540
+01:34:53,770 --> 01:34:54,770
+x3
+
+1541
+01:34:54,770 --> 01:34:55,770
+xn
+
+1542
+01:34:55,770 --> 01:34:56,770
+şeklinde
+
+1543
+01:34:56,770 --> 01:34:57,770
+gidiyor.
+
+1544
+01:34:57,770 --> 01:34:58,770
+Artı
+
+1545
+01:34:58,770 --> 01:34:59,770
+bunu açmaya
+
+1546
+01:34:59,770 --> 01:35:00,770
+devam
+
+1547
+01:35:00,770 --> 01:35:01,770
+ediyoruz.
+
+1548
+01:35:01,770 --> 01:35:02,770
+Artı
+
+1549
+01:35:02,770 --> 01:35:05,020
+x2
+
+1550
+01:35:05,020 --> 01:35:06,020
+x2
+
+1551
+01:35:06,020 --> 01:35:07,020
+şeklinde
+
+1552
+01:35:07,020 --> 01:35:08,020
+devam
+
+1553
+01:35:08,020 --> 01:35:09,020
+ediyor.
+
+1554
+01:35:09,020 --> 01:35:10,020
+Çarpı
+
+1555
+01:35:10,020 --> 01:35:11,020
+F
+
+1556
+01:35:11,020 --> 01:35:12,020
+0
+
+1557
+01:35:12,020 --> 01:35:13,020
+bu sefer
+
+1558
+01:35:13,020 --> 01:35:14,020
+1
+
+1559
+01:35:14,020 --> 01:35:15,020
+koyuyoruz
+
+1560
+01:35:15,020 --> 01:35:16,020
+x2'nin
+
+1561
+01:35:16,020 --> 01:35:17,020
+olduğu
+
+1562
+01:35:17,020 --> 01:35:18,020
+yere.
+
+1563
+01:35:18,020 --> 01:35:19,020
+Yani
+
+1564
+01:35:19,020 --> 01:35:20,020
+devam
+
+1565
+01:35:20,020 --> 01:35:21,020
+ediyoruz.
+
+1566
+01:35:21,020 --> 01:35:22,020
+x3
+
+1567
+01:35:22,020 --> 01:35:23,020
+xn
+
+1568
+01:35:23,020 --> 01:35:24,020
+şeklinde
+
+1569
+01:35:24,020 --> 01:35:25,020
+yazıldı.
+
+1570
+01:35:25,020 --> 01:35:26,020
+Dikkat edin.
+
+1571
+01:35:26,020 --> 01:35:27,020
+Ben şu anda
+
+1572
+01:35:27,020 --> 01:35:28,020
+sadece şurayı
+
+1573
+01:35:28,020 --> 01:35:29,020
+açtım.
+
+1574
+01:35:29,020 --> 01:35:30,020
+Artı
+
+1575
+01:35:30,020 --> 01:35:31,020
+şu kısmı da
+
+1576
+01:35:31,020 --> 01:35:32,020
+açayım.
+
+1577
+01:35:32,020 --> 01:35:33,020
+Yani
+
+1578
+01:35:33,020 --> 01:35:34,020
+şimdi
+
+1579
+01:35:34,020 --> 01:35:35,020
+bu sefer
+
+1580
+01:35:35,020 --> 01:35:36,020
+içerideki
+
+1581
+01:35:36,020 --> 01:35:37,020
+fonksiyonlara
+
+1582
+01:35:37,020 --> 01:35:38,020
+uyguluyorum.
+
+1583
+01:35:38,020 --> 01:35:39,020
+Yani şunlara
+
+1584
+01:35:39,020 --> 01:35:40,020
+uyguluyorum.
+
+1585
+01:35:40,020 --> 01:35:41,020
+Artı
+
+1586
+01:35:41,020 --> 01:35:42,020
+ne diyeceğim?
+
+1587
+01:35:42,020 --> 01:35:43,020
+x1
+
+1588
+01:35:43,020 --> 01:35:44,020
+parantezinde
+
+1589
+01:35:44,020 --> 01:35:45,020
+x1
+
+1590
+01:35:45,020 --> 01:35:46,020
+parantezinde
+
+1591
+01:35:46,020 --> 01:35:47,020
+büyük
+
+1592
+01:35:47,020 --> 01:35:49,329
+parantezde
+
+1593
+01:35:49,329 --> 01:35:50,329
+2'nin
+
+1594
+01:35:50,329 --> 01:35:51,329
+üstü
+
+1595
+01:35:51,329 --> 01:35:52,329
+çarpı
+
+1596
+01:35:52,329 --> 01:35:53,329
+F
+
+1597
+01:35:53,329 --> 01:35:54,329
+burada ne
+
+1598
+01:35:54,329 --> 01:35:55,329
+vardı?
+
+1599
+01:35:55,329 --> 01:35:56,329
+1
+
+1600
+01:35:56,329 --> 01:35:57,329
+sıfırı
+
+1601
+01:35:57,329 --> 01:35:58,329
+öncelikle
+
+1602
+01:35:58,329 --> 01:35:59,329
+koyuyorum.
+
+1603
+01:35:59,329 --> 01:36:00,329
+x3
+
+1604
+01:36:00,329 --> 01:36:01,329
+xn
+
+1605
+01:36:01,329 --> 01:36:02,329
+artı
+
+1606
+01:36:02,329 --> 01:36:03,329
+x2
+
+1607
+01:36:03,329 --> 01:36:04,329
+koyuyorum.
+
+1608
+01:36:04,329 --> 01:36:06,699
+Burada
+
+1609
+01:36:06,699 --> 01:36:07,699
+F
+
+1610
+01:36:07,699 --> 01:36:08,699
+ne
+
+1611
+01:36:08,699 --> 01:36:09,699
+vardı?
+
+1612
+01:36:09,699 --> 01:36:10,699
+Şuradaki
+
+1613
+01:36:10,699 --> 01:36:11,699
+F
+
+1614
+01:36:11,699 --> 01:36:12,699
+1
+
+1615
+01:36:12,699 --> 01:36:13,699
+1
+
+1616
+01:36:13,699 --> 01:36:14,699
+x3
+
+1617
+01:36:14,699 --> 01:36:15,699
+xn
+
+1618
+01:36:15,699 --> 01:36:16,699
+şeklinde
+
+1619
+01:36:16,699 --> 01:36:17,699
+yazıyorum.
+
+1620
+01:36:17,699 --> 01:36:18,699
+Şuraya
+
+1621
+01:36:18,699 --> 01:36:19,699
+da
+
+1622
+01:36:19,699 --> 01:36:20,699
+koyalım.
+
+1623
+01:36:20,699 --> 01:36:21,699
+Bu bir
+
+1624
+01:36:21,699 --> 01:36:22,699
+derece
+
+1625
+01:36:22,699 --> 01:36:23,699
+açılmış
+
+1626
+01:36:23,699 --> 01:36:24,699
+arkadaşlar.
+
+1627
+01:36:24,699 --> 01:36:25,699
+Ben böyle
+
+1628
+01:36:25,699 --> 01:36:26,699
+gidersem
+
+1629
+01:36:26,699 --> 01:36:27,699
+sırasıyla
+
+1630
+01:36:27,699 --> 01:36:28,699
+bütün
+
+1631
+01:36:28,699 --> 01:36:29,699
+sırasıyla
+
+1632
+01:36:29,699 --> 01:36:30,699
+bütün
+
+1633
+01:36:30,699 --> 01:36:31,699
+değişkenleri
+
+1634
+01:36:31,699 --> 01:36:32,699
+dışarı
+
+1635
+01:36:32,699 --> 01:36:33,699
+çıkarırsam
+
+1636
+01:36:33,699 --> 01:36:34,699
+şayet
+
+1637
+01:36:34,699 --> 01:36:35,699
+şunu
+
+1638
+01:36:35,699 --> 01:36:36,699
+elde
+
+1639
+01:36:36,699 --> 01:36:37,699
+ediyorum
+
+1640
+01:36:37,699 --> 01:36:38,699
+arkadaşlar.
+
+1641
+01:36:38,699 --> 01:36:39,699
+F
+
+1642
+01:36:39,699 --> 01:36:40,699
+x1
+
+1643
+01:36:40,699 --> 01:36:41,699
+den
+
+1644
+01:36:41,699 --> 01:36:42,699
+x2
+
+1645
+01:36:42,699 --> 01:36:43,699
+xn
+
+1646
+01:36:43,699 --> 01:36:44,699
+kadar
+
+1647
+01:36:44,699 --> 01:36:45,699
+olan
+
+1648
+01:36:45,699 --> 01:36:46,699
+fonksiyon
+
+1649
+01:36:46,699 --> 01:36:47,699
+şu şekilde
+
+1650
+01:36:47,699 --> 01:36:48,699
+yazılabilir.
+
+1651
+01:36:48,699 --> 01:36:49,699
+x1
+
+1652
+01:36:49,699 --> 01:36:50,699
+üstü
+
+1653
+01:36:50,699 --> 01:36:51,699
+gidiyor.
+
+1654
+01:36:51,699 --> 01:36:52,699
+xn
+
+1655
+01:36:52,699 --> 01:36:53,699
+üstü
+
+1656
+01:36:53,699 --> 01:36:54,699
+hepsi
+
+1657
+01:36:54,699 --> 01:36:55,699
+çıkarılmış.
+
+1658
+01:36:55,699 --> 01:36:56,699
+Çarpı
+
+1659
+01:36:56,699 --> 01:36:57,699
+F
+
+1660
+01:36:57,699 --> 01:36:58,699
+sıfır
+
+1661
+01:36:58,699 --> 01:36:59,699
+sıfır
+
+1662
+01:36:59,699 --> 01:37:00,699
+sıfır
+
+1663
+01:37:00,699 --> 01:37:01,699
+artı
+
+1664
+01:37:01,699 --> 01:37:02,699
+x1
+
+1665
+01:37:02,699 --> 01:37:03,699
+üstü
+
+1666
+01:37:03,699 --> 01:37:04,699
+x2
+
+1667
+01:37:04,699 --> 01:37:05,699
+üstü
+
+1668
+01:37:05,699 --> 01:37:06,699
+gidiyorum.
+
+1669
+01:37:06,699 --> 01:37:07,699
+xn
+
+1670
+01:37:07,699 --> 01:37:08,699
+bu sefer
+
+1671
+01:37:08,699 --> 01:37:09,699
+üstü
+
+1672
+01:37:09,699 --> 01:37:10,699
+yok.
+
+1673
+01:37:10,699 --> 01:37:11,699
+Bu
+
+1674
+01:37:11,699 --> 01:37:12,699
+F
+
+1675
+01:37:12,699 --> 01:37:13,699
+sıfır
+
+1676
+01:37:13,699 --> 01:37:14,699
+sıfır
+
+1677
+01:37:14,699 --> 01:37:15,699
+sondaki
+
+1678
+01:37:15,699 --> 01:37:16,699
+sadece
+
+1679
+01:37:16,699 --> 01:37:17,699
+1
+
+1680
+01:37:17,699 --> 01:37:18,699
+artı
+
+1681
+01:37:18,699 --> 01:37:19,699
+da
+
+1682
+01:37:19,699 --> 01:37:20,699
+koyuyorum.
+
+1683
+01:37:20,699 --> 01:37:21,699
+Burada
+
+1684
+01:37:21,699 --> 01:37:25,970
+devam ediyorum.
+
+1685
+01:37:25,970 --> 01:37:26,970
+x1
+
+1686
+01:37:26,970 --> 01:37:27,970
+çarpı
+
+1687
+01:37:27,970 --> 01:37:28,970
+x2
+
+1688
+01:37:28,970 --> 01:37:29,970
+çarpı
+
+1689
+01:37:29,970 --> 01:37:30,970
+x3
+
+1690
+01:37:30,970 --> 01:37:31,970
+çarpı
+
+1691
+01:37:31,970 --> 01:37:32,970
+xn
+
+1692
+01:37:32,970 --> 01:37:33,970
+kadar
+
+1693
+01:37:33,970 --> 01:37:34,970
+gidiyor.
+
+1694
+01:37:34,970 --> 01:37:35,970
+F
+
+1695
+01:37:35,970 --> 01:37:36,970
+1
+
+1696
+01:37:36,970 --> 01:37:37,970
+1
+
+1697
+01:37:39,569 --> 01:37:40,569
+1
+
+1698
+01:37:40,569 --> 01:37:41,569
+1
+
+1699
+01:37:41,569 --> 01:37:42,569
+1
+
+1700
+01:37:42,569 --> 01:37:43,569
+sözünüzü
+
+1701
+01:37:43,569 --> 01:37:44,569
+şunu
+
+1702
+01:37:44,569 --> 01:37:45,569
+söylemiş oluyor
+
+1703
+01:37:45,569 --> 01:37:46,569
+aslında
+
+1704
+01:37:46,569 --> 01:37:47,569
+burada
+
+1705
+01:37:47,569 --> 01:37:48,569
+arkadaşlar.
+
+1706
+01:37:48,569 --> 01:37:49,569
+Bir
+
+1707
+01:37:49,569 --> 01:37:50,569
+fonksiyonu
+
+1708
+01:37:50,569 --> 01:37:51,569
+kendini
+
+1709
+01:37:51,569 --> 01:37:52,569
+oluşturan
+
+1710
+01:37:52,569 --> 01:37:53,569
+şurada
+
+1711
+01:37:53,569 --> 01:37:54,569
+çıkardık
+
+1712
+01:37:54,569 --> 01:37:55,569
+hepsini
+
+1713
+01:37:55,569 --> 01:37:56,569
+o
+
+1714
+01:37:56,569 --> 01:37:57,569
+min
+
+1715
+01:37:57,569 --> 01:37:58,569
+törmlerle
+
+1716
+01:37:58,569 --> 01:37:59,569
+dikkat edin
+
+1717
+01:37:59,569 --> 01:38:00,569
+neyi
+
+1718
+01:38:00,569 --> 01:38:01,569
+çarpıyoruz
+
+1719
+01:38:01,569 --> 01:38:02,569
+fonksiyonun
+
+1720
+01:38:02,569 --> 01:38:03,569
+orada
+
+1721
+01:38:03,569 --> 01:38:04,569
+yani
+
+1722
+01:38:04,569 --> 01:38:05,569
+x üstü
+
+1723
+01:38:05,569 --> 01:38:06,569
+gördüğümüz
+
+1724
+01:38:06,569 --> 01:38:07,569
+yerde sıfır
+
+1725
+01:38:07,569 --> 01:38:08,569
+koyduğumuz
+
+1726
+01:38:08,569 --> 01:38:09,569
+yerler
+
+1727
+01:38:09,569 --> 01:38:10,569
+üstü
+
+1728
+01:38:10,569 --> 01:38:11,569
+koymadığımız
+
+1729
+01:38:11,569 --> 01:38:12,569
+yerlerde
+
+1730
+01:38:12,569 --> 01:38:13,569
+min
+
+1731
+01:38:13,569 --> 01:38:14,569
+törmde
+
+1732
+01:38:14,569 --> 01:38:15,569
+üstü
+
+1733
+01:38:15,569 --> 01:38:16,569
+koymadığımız
+
+1734
+01:38:16,569 --> 01:38:17,569
+yerlerde
+
+1735
+01:38:17,569 --> 01:38:18,569
+bir
+
+1736
+01:38:18,569 --> 01:38:19,569
+aldığı
+
+1737
+01:38:19,569 --> 01:38:20,569
+değeri
+
+1738
+01:38:20,569 --> 01:38:21,569
+yani
+
+1739
+01:38:21,569 --> 01:38:22,569
+şuradaki
+
+1740
+01:38:22,569 --> 01:38:23,569
+gibi
+
+1741
+01:38:23,569 --> 01:38:24,569
+almış
+
+1742
+01:38:24,569 --> 01:38:25,569
+olduğu değer
+
+1743
+01:38:25,569 --> 01:38:26,569
+artı fonksiyonu
+
+1744
+01:38:26,569 --> 01:38:27,569
+orada almış
+
+1745
+01:38:27,569 --> 01:38:28,569
+olduğu değer
+
+1746
+01:38:28,569 --> 01:38:29,569
+burada bir veya
+
+1747
+01:38:29,569 --> 01:38:31,939
+sıfır
+
+1748
+01:38:31,939 --> 01:38:32,939
+alabilir
+
+1749
+01:38:32,939 --> 01:38:33,939
+fonksiyonlar
+
+1750
+01:38:33,939 --> 01:38:34,939
+eğer
+
+1751
+01:38:34,939 --> 01:38:35,939
+burası birse
+
+1752
+01:38:35,939 --> 01:38:36,939
+dikkat edin
+
+1753
+01:38:36,939 --> 01:38:37,939
+çarpın
+
+1754
+01:38:37,939 --> 01:38:38,939
+çarpı
+
+1755
+01:38:38,939 --> 01:38:39,939
+olduğu için
+
+1756
+01:38:39,939 --> 01:38:40,939
+eğer
+
+1757
+01:38:40,939 --> 01:38:41,939
+birse
+
+1758
+01:38:41,939 --> 01:38:42,939
+şu min
+
+1759
+01:38:42,939 --> 01:38:43,939
+törmü
+
+1760
+01:38:43,939 --> 01:38:44,939
+fonksiyonu
+
+1761
+01:38:44,939 --> 01:38:45,939
+ifade etmekte
+
+1762
+01:38:45,939 --> 01:38:46,939
+kullanabiliyoruz
+
+1763
+01:38:46,939 --> 01:38:47,939
+eğer sıfırsa
+
+1764
+01:38:47,939 --> 01:38:48,939
+o min
+
+1765
+01:38:48,939 --> 01:38:49,939
+törm
+
+1766
+01:38:49,939 --> 01:38:50,939
+devreden
+
+1767
+01:38:50,939 --> 01:38:51,939
+çıkmış
+
+1768
+01:38:51,939 --> 01:38:52,939
+oluyor
+
+1769
+01:38:52,939 --> 01:38:53,939
+aynı
+
+1770
+01:38:53,939 --> 01:38:54,939
+fonksiyonun
+
+1771
+01:38:54,939 --> 01:38:55,939
+değerine
+
+1772
+01:38:55,939 --> 01:38:56,939
+yani
+
+1773
+01:38:56,939 --> 01:38:57,939
+aslında
+
+1774
+01:38:57,939 --> 01:38:58,939
+burada
+
+1775
+01:38:58,939 --> 01:38:59,939
+yaptığımız
+
+1776
+01:38:59,939 --> 01:39:00,939
+şey fonksiyonun
+
+1777
+01:39:00,939 --> 01:39:01,939
+yerine
+
+1778
+01:39:01,939 --> 01:39:02,939
+oradaki sayı
+
+1779
+01:39:02,939 --> 01:39:03,939
+değerini
+
+1780
+01:39:03,939 --> 01:39:04,939
+koyabilmek
+
+1781
+01:39:04,939 --> 01:39:05,939
+ilgili
+
+1782
+01:39:05,939 --> 01:39:06,939
+min törmün
+
+1783
+01:39:06,939 --> 01:39:07,939
+katılıp
+
+1784
+01:39:07,939 --> 01:39:08,939
+katılamayacağını
+
+1785
+01:39:08,939 --> 01:39:09,939
+bulmaya
+
+1786
+01:39:09,939 --> 01:39:10,939
+çalışıyorduk
+
+1787
+01:39:10,939 --> 01:39:11,939
+böylelikle
+
+1788
+01:39:11,939 --> 01:39:12,939
+neyi elde
+
+1789
+01:39:12,939 --> 01:39:13,939
+edeceğiz
+
+1790
+01:39:13,939 --> 01:39:14,939
+arkadaşlar
+
+1791
+01:39:14,939 --> 01:39:15,939
+bu
+
+1792
+01:39:15,939 --> 01:39:16,939
+fonksiyonun
+
+1793
+01:39:16,939 --> 01:39:17,939
+min törmler
+
+1794
+01:39:17,939 --> 01:39:18,939
+cinsinden
+
+1795
+01:39:18,939 --> 01:39:19,939
+nasıl
+
+1796
+01:39:19,939 --> 01:39:20,939
+yazılabileceğini
+
+1797
+01:39:20,939 --> 01:39:21,939
+bulmuş
+
+1798
+01:39:21,939 --> 01:39:22,939
+olacaktık
+
+1799
+01:39:22,939 --> 01:39:23,939
+fonksiyonumuz
+
+1800
+01:39:23,939 --> 01:39:24,939
+f
+
+1801
+01:39:24,939 --> 01:39:25,939
+a
+
+1802
+01:39:25,939 --> 01:39:28,350
+b
+
+1803
+01:39:28,350 --> 01:39:29,350
+c
+
+1804
+01:39:29,350 --> 01:39:30,350
+ab
+
+1805
+01:39:30,350 --> 01:39:31,350
+artı
+
+1806
+01:39:31,350 --> 01:39:32,350
+a üstü
+
+1807
+01:39:32,350 --> 01:39:34,630
+c olsun
+
+1808
+01:39:34,630 --> 01:39:35,630
+fonksiyonumuz
+
+1809
+01:39:35,630 --> 01:39:36,630
+şimdi diyor ki
+
+1810
+01:39:36,630 --> 01:39:37,630
+bu fonksiyonu
+
+1811
+01:39:37,630 --> 01:39:38,630
+bana bu
+
+1812
+01:39:38,630 --> 01:39:39,630
+fonksiyonu
+
+1813
+01:39:39,630 --> 01:39:40,630
+min
+
+1814
+01:39:40,630 --> 01:39:41,630
+törmler
+
+1815
+01:39:41,630 --> 01:39:42,630
+cinsinden
+
+1816
+01:39:42,630 --> 01:39:43,630
+ifade
+
+1817
+01:39:43,630 --> 01:39:44,630
+min
+
+1818
+01:39:44,630 --> 01:39:45,630
+törmün
+
+1819
+01:39:45,630 --> 01:39:46,630
+dediğimiz
+
+1820
+01:39:46,630 --> 01:39:47,630
+zaman
+
+1821
+01:39:47,630 --> 01:39:48,630
+üç tane
+
+1822
+01:39:48,630 --> 01:39:49,630
+ifadeden
+
+1823
+01:39:49,630 --> 01:39:50,630
+oluşması
+
+1824
+01:39:50,630 --> 01:39:51,630
+lazım
+
+1825
+01:39:51,630 --> 01:39:52,630
+abc
+
+1826
+01:39:52,630 --> 01:39:53,630
+üstü
+
+1827
+01:39:53,630 --> 01:39:54,630
+gibi
+
+1828
+01:39:54,630 --> 01:39:55,630
+ifadeleşmiş
+
+1829
+01:39:55,630 --> 01:39:56,630
+haller
+
+1830
+01:39:56,630 --> 01:39:57,630
+var
+
+1831
+01:39:57,630 --> 01:39:58,630
+dolayısıyla
+
+1832
+01:39:58,630 --> 01:39:59,630
+burada
+
+1833
+01:39:59,630 --> 01:40:00,630
+üç tane
+
+1834
+01:40:00,630 --> 01:40:01,630
+değişimi
+
+1835
+01:40:01,630 --> 01:40:02,630
+üç tane
+
+1836
+01:40:02,630 --> 01:40:03,630
+sekiz tane
+
+1837
+01:40:03,630 --> 01:40:04,630
+min törmü
+
+1838
+01:40:04,630 --> 01:40:05,630
+olacak iki
+
+1839
+01:40:05,630 --> 01:40:06,630
+üzeri
+
+1840
+01:40:06,630 --> 01:40:07,630
+en en
+
+1841
+01:40:07,630 --> 01:40:08,630
+burada
+
+1842
+01:40:08,630 --> 01:40:09,630
+38 tane
+
+1843
+01:40:09,630 --> 01:40:10,630
+min törmü
+
+1844
+01:40:10,630 --> 01:40:11,630
+içeren bir
+
+1845
+01:40:11,630 --> 01:40:12,630
+ifade olacak
+
+1846
+01:40:12,630 --> 01:40:13,630
+onu nasıl
+
+1847
+01:40:13,630 --> 01:40:16,359
+bulacağız
+
+1848
+01:40:16,359 --> 01:40:17,359
+şöyle buluyoruz
+
+1849
+01:40:17,359 --> 01:40:18,359
+arkadaşlar
+
+1850
+01:40:18,359 --> 01:40:19,359
+ifadesini
+
+1851
+01:40:19,359 --> 01:40:20,359
+bulmamız
+
+1852
+01:40:20,359 --> 01:40:21,359
+lazım
+
+1853
+01:40:21,359 --> 01:40:22,359
+bu
+
+1854
+01:40:22,359 --> 01:40:23,359
+içinde
+
+1855
+01:40:23,359 --> 01:40:24,359
+abc
+
+1856
+01:40:24,359 --> 01:40:25,359
+değerlerine
+
+1857
+01:40:25,359 --> 01:40:26,359
+bakacağız
+
+1858
+01:40:26,359 --> 01:40:27,359
+0
+
+1859
+01:40:27,359 --> 01:40:28,359
+0 0
+
+1860
+01:40:28,359 --> 01:40:29,359
+1
+
+1861
+01:40:29,359 --> 01:40:30,359
+0 1
+
+1862
+01:40:30,359 --> 01:40:31,359
+0 0
+
+1863
+01:40:31,359 --> 01:40:32,359
+0 1
+
+1864
+01:40:32,359 --> 01:40:33,359
+1
+
+1865
+01:40:33,359 --> 01:40:34,359
+devam
+
+1866
+01:40:34,359 --> 01:40:35,359
+edelim
+
+1867
+01:40:35,359 --> 01:40:36,359
+1 0 0
+
+1868
+01:40:36,359 --> 01:40:37,359
+1 0
+
+1869
+01:40:37,359 --> 01:40:38,359
+1 1
+
+1870
+01:40:38,359 --> 01:40:39,359
+1 0
+
+1871
+01:40:39,359 --> 01:40:40,359
+1 1
+
+1872
+01:40:40,359 --> 01:40:41,359
+1 şeklinde
+
+1873
+01:40:41,359 --> 01:40:42,359
+8 tane
+
+1874
+01:40:42,359 --> 01:40:43,359
+sıfır
+
+1875
+01:40:43,359 --> 01:40:44,359
+yerine
+
+1876
+01:40:44,359 --> 01:40:45,359
+koyalım
+
+1877
+01:40:45,359 --> 01:40:46,359
+burada
+
+1878
+01:40:46,359 --> 01:40:47,359
+abc
+
+1879
+01:40:47,359 --> 01:40:48,359
+hepsini
+
+1880
+01:40:48,359 --> 01:40:49,359
+sıfır
+
+1881
+01:40:49,359 --> 01:40:50,359
+olduğu
+
+1882
+01:40:50,359 --> 01:40:51,359
+durumda
+
+1883
+01:40:51,359 --> 01:40:52,359
+bu
+
+1884
+01:40:52,359 --> 01:40:53,359
+fonksiyon
+
+1885
+01:40:53,359 --> 01:40:54,359
+0 ürettir
+
+1886
+01:40:54,359 --> 01:40:55,359
+001
+
+1887
+01:40:55,359 --> 01:40:56,359
+diyelim
+
+1888
+01:40:56,359 --> 01:40:57,359
+1 olduğu
+
+1889
+01:40:57,359 --> 01:40:58,359
+zaman
+
+1890
+01:40:58,359 --> 01:40:59,359
+bu ne üretiyor
+
+1891
+01:40:59,359 --> 01:41:00,359
+arkadaşlar
+
+1892
+01:41:00,359 --> 01:41:01,359
+şundan dolayı
+
+1893
+01:41:01,359 --> 01:41:02,359
+a üstü c'den dolayı
+
+1894
+01:41:02,359 --> 01:41:03,359
+bu 1 üretiyor
+
+1895
+01:41:03,359 --> 01:41:04,359
+bu şekilde
+
+1896
+01:41:04,359 --> 01:41:05,359
+teker teker bulursak
+
+1897
+01:41:05,359 --> 01:41:06,359
+şayet
+
+1898
+01:41:06,359 --> 01:41:07,359
+fonksiyonun
+
+1899
+01:41:07,359 --> 01:41:08,359
+değerlerini
+
+1900
+01:41:08,359 --> 01:41:09,359
+bulduk
+
+1901
+01:41:09,359 --> 01:41:11,989
+1
+
+1902
+01:41:11,989 --> 01:41:12,989
+0
+
+1903
+01:41:12,989 --> 01:41:13,989
+0
+
+1904
+01:41:13,989 --> 01:41:14,989
+1
+
+1905
+01:41:14,989 --> 01:41:15,989
+1 hepsi
+
+1906
+01:41:15,989 --> 01:41:16,989
+1 olunca
+
+1907
+01:41:16,989 --> 01:41:17,989
+zaten
+
+1908
+01:41:17,989 --> 01:41:18,989
+bu fonksiyon
+
+1909
+01:41:18,989 --> 01:41:19,989
+1 üretiyor
+
+1910
+01:41:19,989 --> 01:41:20,989
+şimdi
+
+1911
+01:41:20,989 --> 01:41:21,989
+gelelim
+
+1912
+01:41:21,989 --> 01:41:22,989
+genel
+
+1913
+01:41:22,989 --> 01:41:23,989
+ifade
+
+1914
+01:41:23,989 --> 01:41:24,989
+yazacak
+
+1915
+01:41:24,989 --> 01:41:25,989
+olursak
+
+1916
+01:41:25,989 --> 01:41:28,399
+f
+
+1917
+01:41:28,399 --> 01:41:30,399
+abc
+
+1918
+01:41:30,399 --> 01:41:31,399
+ne diyecektik
+
+1919
+01:41:31,399 --> 01:41:32,399
+şen'in
+
+1920
+01:41:32,399 --> 01:41:33,399
+teoremi
+
+1921
+01:41:33,399 --> 01:41:34,399
+buradaki
+
+1922
+01:41:34,399 --> 01:41:35,399
+şuradaki
+
+1923
+01:41:35,399 --> 01:41:36,399
+genel ifadeyi
+
+1924
+01:41:36,399 --> 01:41:37,399
+sadeleştirerek
+
+1925
+01:41:37,399 --> 01:41:38,399
+yazıyorum
+
+1926
+01:41:38,399 --> 01:41:39,399
+a üstü
+
+1927
+01:41:39,399 --> 01:41:40,399
+b üstü
+
+1928
+01:41:40,399 --> 01:41:41,399
+c üstü
+
+1929
+01:41:41,399 --> 01:41:42,399
+çarpı
+
+1930
+01:41:42,399 --> 01:41:43,399
+f
+
+1931
+01:41:43,399 --> 01:41:44,399
+sıfır
+
+1932
+01:41:44,399 --> 01:41:45,399
+00
+
+1933
+01:41:45,399 --> 01:41:46,399
+bakın
+
+1934
+01:41:46,399 --> 01:41:47,399
+sıfır
+
+1935
+01:41:47,399 --> 01:41:48,399
+koyduğumuz
+
+1936
+01:41:48,399 --> 01:41:49,399
+yerdekiler
+
+1937
+01:41:49,399 --> 01:41:50,399
+değil olarak
+
+1938
+01:41:50,399 --> 01:41:51,399
+adlandırılıyor
+
+1939
+01:41:51,399 --> 01:41:52,399
+artı
+
+1940
+01:41:52,399 --> 01:41:53,399
+a üstü
+
+1941
+01:41:53,399 --> 01:41:54,399
+b üstü
+
+1942
+01:41:54,399 --> 01:41:55,399
+c
+
+1943
+01:41:55,399 --> 01:41:56,399
+çarpı
+
+1944
+01:41:56,399 --> 01:41:57,399
+f
+
+1945
+01:41:57,399 --> 01:41:58,399
+0
+
+1946
+01:41:58,399 --> 01:41:59,399
+0
+
+1947
+01:41:59,399 --> 01:42:00,399
+1
+
+1948
+01:42:00,399 --> 01:42:01,399
+artı
+
+1949
+01:42:01,399 --> 01:42:03,399
+a üstü
+
+1950
+01:42:03,399 --> 01:42:04,399
+b
+
+1951
+01:42:04,399 --> 01:42:05,399
+c
+
+1952
+01:42:05,399 --> 01:42:06,399
+üstü
+
+1953
+01:42:06,399 --> 01:42:07,399
+f
+
+1954
+01:42:07,399 --> 01:42:08,399
+yani
+
+1955
+01:42:08,399 --> 01:42:09,399
+a üstü
+
+1956
+01:42:09,399 --> 01:42:10,399
+şurası
+
+1957
+01:42:10,399 --> 01:42:11,399
+aslında
+
+1958
+01:42:11,399 --> 01:42:12,399
+a üstü
+
+1959
+01:42:12,399 --> 01:42:13,399
+b
+
+1960
+01:42:13,399 --> 01:42:14,399
+ve
+
+1961
+01:42:14,399 --> 01:42:15,399
+c üstü
+
+1962
+01:42:15,399 --> 01:42:16,399
+f
+
+1963
+01:42:16,399 --> 01:42:17,399
+0
+
+1964
+01:42:17,399 --> 01:42:18,399
+1
+
+1965
+01:42:18,399 --> 01:42:19,399
+0
+
+1966
+01:42:19,399 --> 01:42:22,670
+artı
+
+1967
+01:42:22,670 --> 01:42:23,670
+a üstü
+
+1968
+01:42:23,670 --> 01:42:24,670
+b
+
+1969
+01:42:24,670 --> 01:42:25,670
+ve
+
+1970
+01:42:25,670 --> 01:42:26,670
+c
+
+1971
+01:42:26,670 --> 01:42:27,670
+bununla
+
+1972
+01:42:27,670 --> 01:42:28,670
+çarpılacak
+
+1973
+01:42:28,670 --> 01:42:29,670
+f
+
+1974
+01:42:29,670 --> 01:42:30,670
+0
+
+1975
+01:42:30,670 --> 01:42:31,670
+1
+
+1976
+01:42:31,670 --> 01:42:32,670
+1
+
+1977
+01:42:32,670 --> 01:42:33,670
+artı
+
+1978
+01:42:33,670 --> 01:42:34,670
+aşağı
+
+1979
+01:42:34,670 --> 01:42:35,670
+geçiyorum
+
+1980
+01:42:35,670 --> 01:42:36,670
+toplamaya
+
+1981
+01:42:36,670 --> 01:42:37,670
+devam
+
+1982
+01:42:37,670 --> 01:42:41,039
+ediyorum
+
+1983
+01:42:41,039 --> 01:42:42,039
+artı
+
+1984
+01:42:42,039 --> 01:42:43,039
+a
+
+1985
+01:42:43,039 --> 01:42:44,039
+b
+
+1986
+01:42:44,039 --> 01:42:45,039
+üstü
+
+1987
+01:42:45,039 --> 01:42:48,279
+c
+
+1988
+01:42:48,279 --> 01:42:49,279
+bununla
+
+1989
+01:42:49,279 --> 01:42:50,279
+çarpılan
+
+1990
+01:42:50,279 --> 01:42:51,279
+fonksiyon
+
+1991
+01:42:51,279 --> 01:42:52,279
+f
+
+1992
+01:42:52,279 --> 01:42:53,279
+1
+
+1993
+01:42:53,279 --> 01:42:54,279
+0
+
+1994
+01:42:54,279 --> 01:42:55,279
+0
+
+1995
+01:42:55,279 --> 01:42:56,279
+artı
+
+1996
+01:42:56,279 --> 01:42:57,279
+a
+
+1997
+01:42:57,279 --> 01:42:58,279
+b
+
+1998
+01:42:58,279 --> 01:42:59,279
+üstü
+
+1999
+01:42:59,279 --> 01:43:00,279
+c
+
+2000
+01:43:00,279 --> 01:43:01,279
+çarpılan
+
+2001
+01:43:01,279 --> 01:43:02,279
+fonksiyon
+
+2002
+01:43:02,279 --> 01:43:03,279
+f
+
+2003
+01:43:03,279 --> 01:43:04,279
+1
+
+2004
+01:43:04,279 --> 01:43:05,279
+artı
+
+2005
+01:43:05,279 --> 01:43:06,279
+a
+
+2006
+01:43:06,279 --> 01:43:07,279
+b
+
+2007
+01:43:07,279 --> 01:43:08,279
+c
+
+2008
+01:43:08,279 --> 01:43:09,279
+üstü
+
+2009
+01:43:09,279 --> 01:43:10,279
+çarpılan
+
+2010
+01:43:10,279 --> 01:43:11,279
+fonksiyon
+
+2011
+01:43:11,279 --> 01:43:12,279
+1
+
+2012
+01:43:12,279 --> 01:43:13,279
+1
+
+2013
+01:43:13,279 --> 01:43:14,279
+0
+
+2014
+01:43:14,279 --> 01:43:15,279
+artı
+
+2015
+01:43:15,279 --> 01:43:16,279
+a
+
+2016
+01:43:16,279 --> 01:43:17,279
+b
+
+2017
+01:43:17,279 --> 01:43:18,279
+c
+
+2018
+01:43:18,279 --> 01:43:19,279
+f
+
+2019
+01:43:19,279 --> 01:43:21,689
+1
+
+2020
+01:43:21,689 --> 01:43:22,689
+1
+
+2021
+01:43:22,689 --> 01:43:23,689
+1
+
+2022
+01:43:23,689 --> 01:43:24,689
+kısaca
+
+2023
+01:43:24,689 --> 01:43:25,689
+shannon teorinden
+
+2024
+01:43:25,689 --> 01:43:26,689
+şunu çıkarıyoruz
+
+2025
+01:43:26,689 --> 01:43:27,689
+artık
+
+2026
+01:43:27,689 --> 01:43:28,689
+bir fonksiyonu
+
+2027
+01:43:28,689 --> 01:43:29,689
+siz yazmak
+
+2028
+01:43:29,689 --> 01:43:30,689
+istiyorsunuz
+
+2029
+01:43:30,689 --> 01:43:31,689
+min
+
+2030
+01:43:31,689 --> 01:43:32,689
+terminal cinsinden
+
+2031
+01:43:32,689 --> 01:43:35,029
+onun
+
+2032
+01:43:35,029 --> 01:43:36,029
+dikkat edin
+
+2033
+01:43:36,029 --> 01:43:37,029
+bu
+
+2034
+01:43:37,029 --> 01:43:38,029
+olan
+
+2035
+01:43:38,029 --> 01:43:39,029
+fonksiyon
+
+2036
+01:43:39,029 --> 01:43:40,029
+değeri
+
+2037
+01:43:40,029 --> 01:43:41,029
+1 olanları
+
+2038
+01:43:41,029 --> 01:43:42,029
+alınacak
+
+2039
+01:43:42,029 --> 01:43:43,029
+f
+
+2040
+01:43:43,029 --> 01:43:44,029
+0
+
+2041
+01:43:44,029 --> 01:43:45,029
+0
+
+2042
+01:43:45,029 --> 01:43:46,029
+yani
+
+2043
+01:43:46,029 --> 01:43:47,029
+abc
+
+2044
+01:43:47,029 --> 01:43:48,029
+hepsine
+
+2045
+01:43:48,029 --> 01:43:49,029
+0
+
+2046
+01:43:49,029 --> 01:43:50,029
+verdiğimiz
+
+2047
+01:43:50,029 --> 01:43:51,029
+ne oluyor
+
+2048
+01:43:51,029 --> 01:43:52,029
+bu
+
+2049
+01:43:52,029 --> 01:43:53,029
+gidiyor
+
+2050
+01:43:53,029 --> 01:43:54,029
+bu
+
+2051
+01:43:54,029 --> 01:43:55,029
+min
+
+2052
+01:43:55,029 --> 01:43:56,029
+term
+
+2053
+01:43:56,029 --> 01:43:57,029
+almıyoruz
+
+2054
+01:43:57,029 --> 01:43:58,029
+a
+
+2055
+01:43:58,029 --> 01:43:59,029
+üstü
+
+2056
+01:43:59,029 --> 01:44:00,029
+b
+
+2057
+01:44:00,029 --> 01:44:01,029
+üstü
+
+2058
+01:44:01,029 --> 01:44:02,029
+c
+
+2059
+01:44:02,029 --> 01:44:03,029
+üstü
+
+2060
+01:44:03,029 --> 01:44:04,029
+f
+
+2061
+01:44:04,029 --> 01:44:07,020
+0
+
+2062
+01:44:07,020 --> 01:44:08,020
+0
+
+2063
+01:44:08,020 --> 01:44:09,020
+1
+
+2064
+01:44:09,020 --> 01:44:10,020
+0
+
+2065
+01:44:10,020 --> 01:44:11,020
+1
+
+2066
+01:44:11,020 --> 01:44:12,020
+aldığı yerde
+
+2067
+01:44:12,020 --> 01:44:13,020
+bu da 0
+
+2068
+01:44:13,020 --> 01:44:14,020
+diğerlerini konuyor
+
+2069
+01:44:14,020 --> 01:44:15,020
+yani bu fonksiyonu
+
+2070
+01:44:15,020 --> 01:44:16,020
+biz
+
+2071
+01:44:16,020 --> 01:44:17,020
+yazmak
+
+2072
+01:44:17,020 --> 01:44:18,020
+istesek
+
+2073
+01:44:18,020 --> 01:44:19,020
+diğerlerinde
+
+2074
+01:44:19,020 --> 01:44:20,020
+dikkat edin
+
+2075
+01:44:20,020 --> 01:44:21,020
+şuralarda
+
+2076
+01:44:21,020 --> 01:44:25,149
+bir alıyor
+
+2077
+01:44:25,149 --> 01:44:26,149
+hep
+
+2078
+01:44:26,149 --> 01:44:27,149
+yazmak
+
+2079
+01:44:27,149 --> 01:44:28,149
+istesek
+
+2080
+01:44:28,149 --> 01:44:29,149
+şunu
+
+2081
+01:44:29,149 --> 01:44:30,149
+yazıyoruz
+
+2082
+01:44:30,149 --> 01:44:31,149
+a
+
+2083
+01:44:31,149 --> 01:44:32,149
+üstü
+
+2084
+01:44:32,149 --> 01:44:33,149
+a
+
+2085
+01:44:33,149 --> 01:44:34,149
+üstü
+
+2086
+01:44:34,149 --> 01:44:35,149
+b
+
+2087
+01:44:35,149 --> 01:44:36,149
+üstü
+
+2088
+01:44:36,149 --> 01:44:37,149
+c
+
+2089
+01:44:37,149 --> 01:44:38,149
+artı
+
+2090
+01:44:38,149 --> 01:44:39,149
+onu
+
+2091
+01:44:39,149 --> 01:44:40,149
+şuradan
+
+2092
+01:44:40,149 --> 01:44:41,149
+aldık
+
+2093
+01:44:41,149 --> 01:44:42,149
+bu sefer
+
+2094
+01:44:42,149 --> 01:44:43,149
+abc
+
+2095
+01:44:43,149 --> 01:44:44,149
+üstü
+
+2096
+01:44:44,149 --> 01:44:45,149
+artı
+
+2097
+01:44:45,149 --> 01:44:46,149
+abc
+
+2098
+01:44:46,149 --> 01:44:47,149
+ne
+
+2099
+01:44:47,149 --> 01:44:48,149
+eşitmiş
+
+2100
+01:44:48,149 --> 01:44:49,149
+arkadaşlar
+
+2101
+01:44:49,149 --> 01:44:50,149
+ab
+
+2102
+01:44:50,149 --> 01:44:51,149
+artı
+
+2103
+01:44:51,149 --> 01:44:52,149
+a üstü
+
+2104
+01:44:52,149 --> 01:44:53,149
+c
+
+2105
+01:44:53,149 --> 01:44:54,149
+eşitmiş
+
+2106
+01:44:54,149 --> 01:44:55,149
+aslında
+
+2107
+01:44:55,149 --> 01:44:56,149
+shannon teoremiyle
+
+2108
+01:44:56,149 --> 01:44:57,149
+beraber
+
+2109
+01:44:57,149 --> 01:44:58,149
+biz
+
+2110
+01:44:58,149 --> 01:44:59,149
+bunun
+
+2111
+01:44:59,149 --> 01:45:00,149
+ispatını
+
+2112
+01:45:00,149 --> 01:45:01,149
+yapmış olduk
+
+2113
+01:45:01,149 --> 01:45:02,149
+bir fonksiyonu
+
+2114
+01:45:02,149 --> 01:45:03,149
+abc
+
+2115
+01:45:03,149 --> 01:45:04,149
+3 tane değer alan bir fonksiyon
+
+2116
+01:45:04,149 --> 01:45:05,149
+değişkenli fonksiyonu
+
+2117
+01:45:05,149 --> 01:45:06,149
+herhangi bir şekilde
+
+2118
+01:45:06,149 --> 01:45:07,149
+kısaltılmış
+
+2119
+01:45:07,149 --> 01:45:08,149
+veya
+
+2120
+01:45:08,149 --> 01:45:09,149
+kısaltılmamış
+
+2121
+01:45:09,149 --> 01:45:10,149
+olabilir
+
+2122
+01:45:10,149 --> 01:45:11,149
+herhangi bir şekilde
+
+2123
+01:45:11,149 --> 01:45:12,149
+onu
+
+2124
+01:45:12,149 --> 01:45:13,149
+oluşturan
+
+2125
+01:45:13,149 --> 01:45:14,149
+mintörnler
+
+2126
+01:45:14,149 --> 01:45:15,149
+cinsinden
+
+2127
+01:45:15,149 --> 01:45:16,149
+yazmaya çalışırsak
+
+2128
+01:45:16,149 --> 01:45:17,149
+uzun uzun
+
+2129
+01:45:17,149 --> 01:45:18,149
+eğer bunları
+
+2130
+01:45:18,149 --> 01:45:19,149
+sadeleştirsek
+
+2131
+01:45:19,149 --> 01:45:20,149
+şunu elde ederiz
+
+2132
+01:45:20,149 --> 01:45:21,149
+yapmaya çalışsak
+
+2133
+01:45:21,149 --> 01:45:22,149
+arkadaşlar
+
+2134
+01:45:22,149 --> 01:45:23,149
+sadece
+
+2135
+01:45:23,149 --> 01:45:24,149
+bir
+
+2136
+01:45:24,149 --> 01:45:25,149
+aldığı
+
+2137
+01:45:25,149 --> 01:45:26,149
+yerdeki
+
+2138
+01:45:26,149 --> 01:45:27,149
+sadece
+
+2139
+01:45:27,149 --> 01:45:28,149
+bir
+
+2140
+01:45:28,149 --> 01:45:29,149
+aldığı
+
+2141
+01:45:29,149 --> 01:45:30,149
+yerdeki
+
+2142
+01:45:30,149 --> 01:45:31,149
+mintörnlerini
+
+2143
+01:45:31,149 --> 01:45:32,149
+yazmak
+
+2144
+01:45:32,149 --> 01:45:33,149
+yeterli
+
+2145
+01:45:33,149 --> 01:45:34,149
+olacaktır
+
+2146
+01:45:34,149 --> 01:45:35,149
+arkadaşlar
+
+2147
+01:45:35,149 --> 01:45:36,149
+bunun da
+
+2148
+01:45:36,149 --> 01:45:37,149
+kısaltılmış
+
+2149
+01:45:37,149 --> 01:45:38,149
+ifadesi
+
+2150
+01:45:38,149 --> 01:45:39,149
+şu şekilde
+
+2151
+01:45:39,149 --> 01:45:40,149
+yapılıyor
+
+2152
+01:45:40,149 --> 01:45:41,149
+hangi
+
+2153
+01:45:41,149 --> 01:45:42,149
+nolu
+
+2154
+01:45:42,149 --> 01:45:43,149
+mintörnleri
+
+2155
+01:45:43,149 --> 01:45:44,149
+aldık
+
+2156
+01:45:44,149 --> 01:45:45,149
+0
+
+2157
+01:45:45,149 --> 01:45:46,149
+1
+
+2158
+01:45:46,149 --> 01:45:47,149
+2
+
+2159
+01:45:47,149 --> 01:45:48,149
+3
+
+2160
+01:45:48,149 --> 01:45:49,149
+4
+
+2161
+01:45:49,149 --> 01:45:50,149
+5
+
+2162
+01:45:50,149 --> 01:45:51,149
+6
+
+2163
+01:45:51,149 --> 01:45:52,149
+7
+
+2164
+01:45:52,149 --> 01:45:53,149
+hangileri
+
+2165
+01:45:53,149 --> 01:45:54,149
+1
+
+2166
+01:45:54,149 --> 01:45:55,149
+3
+
+2167
+01:45:55,149 --> 01:45:56,149
+6
+
+2168
+01:45:56,149 --> 01:45:57,149
+7
+
+2169
+01:45:57,149 --> 01:45:58,149
+şöyle
+
+2170
+01:45:58,149 --> 01:45:59,149
+yapabiliyoruz
+
+2171
+01:45:59,149 --> 01:46:00,149
+arkadaşlar
+
+2172
+01:46:00,149 --> 01:46:01,149
+1
+
+2173
+01:46:01,149 --> 01:46:02,149
+3
+
+2174
+01:46:02,149 --> 01:46:03,149
+6
+
+2175
+01:46:03,149 --> 01:46:04,149
+7 li
+
+2176
+01:46:04,149 --> 01:46:05,149
+yedinci
+
+2177
+01:46:05,149 --> 01:46:06,149
+mintörnlerden
+
+2178
+01:46:06,149 --> 01:46:07,149
+oluşan
+
+2179
+01:46:07,149 --> 01:46:08,149
+yani
+
+2180
+01:46:08,149 --> 01:46:09,149
+m1
+
+2181
+01:46:09,149 --> 01:46:10,149
+artı
+
+2182
+01:46:10,149 --> 01:46:11,149
+m3
+
+2183
+01:46:11,149 --> 01:46:12,149
+artı
+
+2184
+01:46:12,149 --> 01:46:13,149
+0
+
+2185
+01:46:13,149 --> 01:46:14,149
+1
+
+2186
+01:46:14,149 --> 01:46:15,149
+1
+
+2187
+01:46:15,149 --> 01:46:17,779
+0
+
+2188
+01:46:17,779 --> 01:46:18,779
+13
+
+2189
+01:46:18,779 --> 01:46:19,779
+13
+
+2190
+01:46:19,779 --> 01:46:25,710
+14
+
+2191
+01:46:25,710 --> 01:46:26,710
+15
+
+2192
+01:46:26,710 --> 01:46:29,630
+16
+
+2193
+01:46:29,630 --> 01:46:30,470
+17
+
+2194
+01:46:30,470 --> 01:46:30,630
+18
+
+2195
+01:46:30,630 --> 01:46:31,630
+20
+
+2196
+01:46:31,630 --> 01:46:32,630
+21
+
+2197
+01:46:32,630 --> 01:46:33,630
+22
+
+2198
+01:46:33,630 --> 01:46:34,630
+23
+
+2199
+01:46:34,630 --> 01:46:35,630
+24
+
+2200
+01:46:35,630 --> 01:46:36,630
+25
+
+2201
+01:46:36,630 --> 01:46:37,630
+27
+
+2202
+01:46:37,630 --> 01:46:38,630
+28
+
+2203
+01:46:38,630 --> 01:46:39,630
+29
+
+2204
+01:46:39,630 --> 01:46:40,630
+30
+
+2205
+01:46:40,630 --> 01:46:41,630
+32
+
+2206
+01:46:41,630 --> 01:46:42,630
+33
+
+2207
+01:46:42,630 --> 01:46:43,630
+34
+
+2208
+01:46:43,630 --> 01:46:44,630
+35
+
+2209
+01:46:44,630 --> 01:46:50,500
+36
+
+2210
+01:46:50,500 --> 01:46:51,500
+37
+
+2211
+01:46:51,500 --> 01:46:52,500
+37
+
+2212
+01:46:52,500 --> 01:46:53,500
+38
+
+2213
+01:46:53,500 --> 01:46:55,180
+olursak terimlerin
+
+2214
+01:46:55,180 --> 01:46:58,399
+maksimum terimlerin
+
+2215
+01:46:58,399 --> 01:47:05,579
+çarpımından oluşmuş ifadeye
+
+2216
+01:47:05,579 --> 01:47:06,539
+çarpımından
+
+2217
+01:47:06,539 --> 01:47:10,159
+oluşmuş
+
+2218
+01:47:10,159 --> 01:47:12,840
+ifadedir.
+
+2219
+01:47:16,130 --> 01:47:17,250
+Bu da arkadaşlar deminki
+
+2220
+01:47:17,250 --> 01:47:20,130
+sigma şekli toplam şeklinde
+
+2221
+01:47:20,130 --> 01:47:21,189
+gösteriyordu. Bu da
+
+2222
+01:47:21,189 --> 01:47:23,289
+pi şeklinde. Yani
+
+2223
+01:47:23,289 --> 01:47:25,989
+niye burada sigma şeklinde yaptık?
+
+2224
+01:47:26,090 --> 01:47:28,430
+Bakın şuradaki toplamları
+
+2225
+01:47:28,430 --> 01:47:30,409
+maksimum minimum terimleri
+
+2226
+01:47:30,409 --> 01:47:32,170
+topluyordu. O yüzden
+
+2227
+01:47:32,170 --> 01:47:34,250
+sigma yaptık. Burada ise pi
+
+2228
+01:47:34,250 --> 01:47:35,989
+yani çarpımlardan
+
+2229
+01:47:35,989 --> 01:47:37,949
+oluşturacak. Basit bir örnek
+
+2230
+01:47:37,949 --> 01:47:38,729
+verelim hemen.
+
+2231
+01:47:41,090 --> 01:47:42,149
+Bir tane
+
+2232
+01:47:42,149 --> 01:47:43,449
+fonksiyonumuz olsun basit.
+
+2233
+01:47:43,670 --> 01:47:46,210
+A, B. Bunu maksimum terimler
+
+2234
+01:47:46,210 --> 01:47:47,729
+cinsinden ifade ediniz
+
+2235
+01:47:47,729 --> 01:47:49,869
+desek. Kaç tane
+
+2236
+01:47:49,869 --> 01:47:51,689
+değişkeni var? İki tane.
+
+2237
+01:47:51,930 --> 01:47:53,189
+0, 0, 0, 1,
+
+2238
+01:47:53,189 --> 01:47:55,050
+1, 0 ve 1, 1.
+
+2239
+01:47:55,850 --> 01:47:57,609
+Bunun aldığı değerler ne?
+
+2240
+01:47:58,470 --> 01:47:58,890
+0.
+
+2241
+01:47:59,170 --> 01:48:00,869
+Yani f'in aldığı değerler 0.
+
+2242
+01:48:01,489 --> 01:48:01,869
+0.
+
+2243
+01:48:02,170 --> 01:48:03,329
+0 ve 1.
+
+2244
+01:48:04,590 --> 01:48:06,510
+Deminkinde dikkat edin arkadaşlar.
+
+2245
+01:48:07,310 --> 01:48:09,130
+Sadece 1 olan minimum terimde
+
+2246
+01:48:09,130 --> 01:48:11,109
+fonksiyonun 1 olduğu yerleri
+
+2247
+01:48:11,109 --> 01:48:12,810
+alıyorduk. Bu sefer
+
+2248
+01:48:12,810 --> 01:48:15,170
+0 olduğu yerleri
+
+2249
+01:48:15,170 --> 01:48:16,189
+alacağız arkadaşlar.
+
+2250
+01:48:17,550 --> 01:48:19,289
+Bunun ilgili max term'ü
+
+2251
+01:48:19,289 --> 01:48:21,250
+neydi? Bu sefer 0'ları
+
+2252
+01:48:21,250 --> 01:48:23,090
+alıyoruz. Max term
+
+2253
+01:48:23,090 --> 01:48:26,729
+max term yazacak olursak
+
+2254
+01:48:26,729 --> 01:48:28,329
+A artı B
+
+2255
+01:48:28,329 --> 01:48:30,649
+0 gördüğümüz yerler. Bu sefer deminkinin
+
+2256
+01:48:30,649 --> 01:48:32,869
+tersinde 0 gördüğümüz yerde değilini alıyorduk.
+
+2257
+01:48:32,869 --> 01:48:34,310
+E çarpıyorduk.
+
+2258
+01:48:35,109 --> 01:48:37,270
+Farklıydı deminki örneğimizde.
+
+2259
+01:48:38,029 --> 01:48:39,170
+Hemen o örneğe bakalım.
+
+2260
+01:48:39,930 --> 01:48:40,529
+Ne yapıyorduk?
+
+2261
+01:48:41,789 --> 01:48:42,250
+Sadece
+
+2262
+01:48:42,250 --> 01:48:44,170
+1 olan yerdeki
+
+2263
+01:48:44,170 --> 01:48:46,050
+minitörümleri almıştık.
+
+2264
+01:48:47,090 --> 01:48:49,010
+0 gördüğümüz yerde değilini yazıyorduk.
+
+2265
+01:48:49,109 --> 01:48:49,909
+1 gördüğümüz yerde
+
+2266
+01:48:49,909 --> 01:48:52,689
+kendisini yazıyorduk. Burada ise
+
+2267
+01:48:52,689 --> 01:48:54,869
+tam tersi bir mantıkla gidiyoruz. 0 olan
+
+2268
+01:48:54,869 --> 01:48:56,949
+yerlerde normal halini
+
+2269
+01:48:56,949 --> 01:48:59,289
+yazıyoruz. A artı B üstü
+
+2270
+01:48:59,289 --> 01:49:00,630
+şuradan dolayı.
+
+2271
+01:49:00,630 --> 01:49:01,829
+Burada ise
+
+2272
+01:49:01,829 --> 01:49:04,510
+A üstü artı B
+
+2273
+01:49:04,510 --> 01:49:06,670
+A üstü
+
+2274
+01:49:06,670 --> 01:49:08,369
+artı B üstü şeklinde.
+
+2275
+01:49:09,010 --> 01:49:10,890
+Bunun kısaltılmasını yazacağım.
+
+2276
+01:49:11,229 --> 01:49:12,970
+İndisli halini yazacak olursak
+
+2277
+01:49:12,970 --> 01:49:15,050
+mx
+
+2278
+01:49:15,050 --> 01:49:15,869
+diyelim buraya.
+
+2279
+01:49:16,850 --> 01:49:17,909
+Burası m0
+
+2280
+01:49:17,909 --> 01:49:20,409
+m1, m2
+
+2281
+01:49:20,409 --> 01:49:22,949
+ve m3 şeklinde yazarsak
+
+2282
+01:49:22,949 --> 01:49:24,590
+demek ki benim
+
+2283
+01:49:24,590 --> 01:49:25,430
+ev
+
+2284
+01:49:25,430 --> 01:49:28,989
+A, B şeklinde
+
+2285
+01:49:28,989 --> 01:49:30,829
+iki tane değişken alan
+
+2286
+01:49:30,829 --> 01:49:31,130
+A, B şeklinde.
+
+2287
+01:49:31,130 --> 01:49:31,149
+A, B şeklinde.
+
+2288
+01:49:31,149 --> 01:49:31,289
+A, B şeklinde.
+
+2289
+01:49:31,289 --> 01:49:31,430
+A, B şeklinde.
+
+2290
+01:49:31,829 --> 01:49:34,010
+B'nin entlenmesi fonksiyonum.
+
+2291
+01:49:34,229 --> 01:49:35,649
+Ben e olabildiğince kısa yazıyorum.
+
+2292
+01:49:36,689 --> 01:49:38,010
+Eğer uzun uzun yazacak olursam
+
+2293
+01:49:38,010 --> 01:49:39,350
+sadece sıfırları ayırtarsam
+
+2294
+01:49:39,350 --> 01:49:41,930
+A artı B'nin olduğu sıfır aldığı yeri
+
+2295
+01:49:41,930 --> 01:49:43,829
+şunu, şunu ve şunu
+
+2296
+01:49:43,829 --> 01:49:44,810
+katıyorum sadece.
+
+2297
+01:49:45,670 --> 01:49:48,090
+Çarpı. Bakın bu sefer çarpılı
+
+2298
+01:49:48,090 --> 01:49:49,829
+şekilde gidiyorum. Toplamların
+
+2299
+01:49:49,829 --> 01:49:51,930
+çarpımı şeklinde olacak maksimumda.
+
+2300
+01:49:52,970 --> 01:49:54,369
+A artı B üstü
+
+2301
+01:49:54,369 --> 01:49:55,590
+çarpı.
+
+2302
+01:49:56,149 --> 01:49:57,149
+A üstü
+
+2303
+01:49:57,149 --> 01:49:59,930
+artı B şeklinde olacak.
+
+2304
+01:49:59,930 --> 01:50:01,810
+Veya başka bir ifadeyle yapacak olursak.
+
+2305
+01:50:01,829 --> 01:50:04,050
+P hangilerini almış oldum?
+
+2306
+01:50:04,909 --> 01:50:06,229
+Sıfır, bir
+
+2307
+01:50:06,229 --> 01:50:08,090
+ve ikiyi almış
+
+2308
+01:50:08,090 --> 01:50:11,939
+oldum. Benzer
+
+2309
+01:50:11,939 --> 01:50:14,279
+şekilde arkadaşlar Shannon teoreminden
+
+2310
+01:50:14,279 --> 01:50:16,220
+bunu da bulabiliyoruz
+
+2311
+01:50:16,220 --> 01:50:17,779
+tabii ki. Shannon teoreminden.
+
+2312
+01:50:18,380 --> 01:50:19,880
+Ben uzun uzun yazmayacağım.
+
+2313
+01:50:20,420 --> 01:50:21,979
+Ama üç değişkenli
+
+2314
+01:50:21,979 --> 01:50:23,600
+halini yazayım size.
+
+2315
+01:50:24,779 --> 01:50:26,000
+A, B
+
+2316
+01:50:26,000 --> 01:50:28,039
+ve C şeklinde yaptığım
+
+2317
+01:50:28,039 --> 01:50:28,439
+zaman
+
+2318
+01:50:28,439 --> 01:50:31,939
+Shannon teoremi şuna götürüyor beni.
+
+2319
+01:50:31,939 --> 01:50:33,659
+Mesela Shannon teoreminin
+
+2320
+01:50:33,840 --> 01:50:35,439
+kısmından yararlanan
+
+2321
+01:50:35,439 --> 01:50:38,159
+A artı B artı C
+
+2322
+01:50:38,159 --> 01:50:39,779
+artı E
+
+2323
+01:50:39,779 --> 01:50:42,300
+sıfır, sıfır, sıfır.
+
+2324
+01:50:46,729 --> 01:50:47,689
+İkinci terim
+
+2325
+01:50:47,689 --> 01:50:49,390
+A artı
+
+2326
+01:50:49,390 --> 01:50:52,210
+B artı C üstü.
+
+2327
+01:50:52,649 --> 01:50:53,970
+Sadece üç değişkenliği
+
+2328
+01:50:53,970 --> 01:50:55,670
+için yaptım. Deminkini de en örnekli
+
+2329
+01:50:55,670 --> 01:50:57,710
+için yapmıştım. Çok karıştırıcı olmasın.
+
+2330
+01:50:58,170 --> 01:50:59,689
+İteratif olarak bunu da açıyoruz
+
+2331
+01:50:59,689 --> 01:51:04,520
+arkadaşlar. Artı
+
+2332
+01:51:04,520 --> 01:51:06,020
+bu sefer artı ile bağlanıyor
+
+2333
+01:51:06,020 --> 01:51:08,239
+fonksiyonlar dibini. Bakın şurada
+
+2334
+01:51:08,239 --> 01:51:09,220
+göstermiştim.
+
+2335
+01:51:10,020 --> 01:51:11,800
+[öğrenci] olan için. Şu şekilde.
+
+2336
+01:51:12,600 --> 01:51:14,500
+Onu da ne yapıyordum? Shannon teoreminde
+
+2337
+01:51:14,500 --> 01:51:16,039
+her seferinde açıyordum. Bütün
+
+2338
+01:51:16,039 --> 01:51:18,260
+değişkenleri dışarı çıkarıyordum.
+
+2339
+01:51:19,060 --> 01:51:20,800
+Burada bütün değişkenleri
+
+2340
+01:51:20,800 --> 01:51:22,039
+dışarı çıkardığımda
+
+2341
+01:51:22,039 --> 01:51:24,539
+şu şekilde ifadeyi
+
+2342
+01:51:24,539 --> 01:51:25,859
+yazabiliyorum. F
+
+2343
+01:51:25,859 --> 01:51:28,359
+sıfır, sıfır, bir.
+
+2344
+01:51:30,699 --> 01:51:31,420
+Çarpı
+
+2345
+01:51:31,420 --> 01:51:33,760
+A üstü
+
+2346
+01:51:33,760 --> 01:51:36,140
+A, B üstü
+
+2347
+01:51:36,899 --> 01:51:37,880
+artı C
+
+2348
+01:51:37,880 --> 01:51:39,819
+artı
+
+2349
+01:51:39,819 --> 01:51:40,720
+F
+
+2350
+01:51:40,720 --> 01:51:45,449
+sıfır, bir, sıfır
+
+2351
+01:51:45,449 --> 01:51:48,239
+çarpı
+
+2352
+01:51:48,239 --> 01:51:50,539
+A
+
+2353
+01:51:50,539 --> 01:51:52,399
+artı B üstü
+
+2354
+01:51:52,399 --> 01:51:54,039
+artı C üstü
+
+2355
+01:51:54,039 --> 01:51:56,460
+artı
+
+2356
+01:51:56,460 --> 01:52:01,710
+F sıfır
+
+2357
+01:52:01,710 --> 01:52:03,569
+bir, bir
+
+2358
+01:52:03,569 --> 01:52:06,850
+çarpı
+
+2359
+01:52:06,850 --> 01:52:08,989
+buradan çarpıya devam ediyorum.
+
+2360
+01:52:10,770 --> 01:52:11,630
+A üstü
+
+2361
+01:52:11,630 --> 01:52:15,390
+B artı
+
+2362
+01:52:15,390 --> 01:52:16,609
+C, F
+
+2363
+01:52:16,609 --> 01:52:19,010
+bir, sıfır, sıfır
+
+2364
+01:52:19,010 --> 01:52:22,119
+çarpı
+
+2365
+01:52:22,140 --> 01:52:24,239
+A üstü
+
+2366
+01:52:24,239 --> 01:52:26,840
+artı B artı C üstü
+
+2367
+01:52:26,840 --> 01:52:27,779
+artı F
+
+2368
+01:52:27,779 --> 01:52:29,960
+bir, sıfır, bir
+
+2369
+01:52:29,960 --> 01:52:35,460
+çarpı
+
+2370
+01:52:35,460 --> 01:52:38,819
+A üstü artı B üstü
+
+2371
+01:52:38,819 --> 01:52:40,039
+artı C
+
+2372
+01:52:40,039 --> 01:52:42,279
+artı F
+
+2373
+01:52:42,279 --> 01:52:44,659
+bir, bir, sıfır
+
+2374
+01:52:44,659 --> 01:52:48,859
+A üstü
+
+2375
+01:52:48,859 --> 01:52:50,359
+artı B üstü
+
+2376
+01:52:50,359 --> 01:52:52,039
+artı C üstü
+
+2377
+01:52:52,039 --> 01:52:53,000
+artı F
+
+2378
+01:52:53,000 --> 01:52:54,939
+bir, bir, bir
+
+2379
+01:52:54,939 --> 01:52:58,140
+şeklinde yazabiliyorum.
+
+2380
+01:52:58,420 --> 01:53:01,479
+Dikkat edin.
+
+2381
+01:53:01,659 --> 01:53:03,479
+Bu sefer çarpım şeklinde değil.
+
+2382
+01:53:03,619 --> 01:53:04,600
+Deminki ifadede
+
+2383
+01:53:04,600 --> 01:53:07,840
+şurada
+
+2384
+01:53:07,840 --> 01:53:10,760
+normal min termlerle
+
+2385
+01:53:10,760 --> 01:53:12,420
+çarpım şeklindeydi
+
+2386
+01:53:12,420 --> 01:53:13,619
+fonksiyonun değeri.
+
+2387
+01:53:14,579 --> 01:53:15,180
+Dikkat edin.
+
+2388
+01:53:15,579 --> 01:53:17,199
+Burada toplam şeklinde.
+
+2389
+01:53:19,399 --> 01:53:21,119
+Dolayısıyla ben
+
+2390
+01:53:21,119 --> 01:53:22,359
+dikkat edin.
+
+2391
+01:53:22,979 --> 01:53:25,739
+Ben max termlerde niye biri almamış olabilirim?
+
+2392
+01:53:25,779 --> 01:53:27,560
+Buna cevap verebilecek var mı
+
+2393
+01:53:27,560 --> 01:53:28,760
+buradan bakarak?
+
+2394
+01:53:28,760 --> 01:53:32,819
+Niye biri max termlerle
+
+2395
+01:53:32,819 --> 01:53:34,659
+yazmaya çalışırken bir fonksiyonu
+
+2396
+01:53:34,659 --> 01:53:36,800
+niye bir olan fonksiyonun
+
+2397
+01:53:36,800 --> 01:53:38,560
+bir olan yerini
+
+2398
+01:53:38,560 --> 01:53:40,140
+almamış olabilirim? Bir cevap
+
+2399
+01:53:40,140 --> 01:53:42,199
+verebilecek olan var mı arkadaşlar?
+
+2400
+01:53:43,140 --> 01:53:44,439
+Çünkü fonksiyonda
+
+2401
+01:53:44,439 --> 01:53:46,760
+bir gelince orayı direkt V aldığı için
+
+2402
+01:53:46,760 --> 01:53:48,539
+yok ediyor aslında çarpımda.
+
+2403
+01:53:49,899 --> 01:53:50,899
+Evet doğru söylüyorsun.
+
+2404
+01:53:51,239 --> 01:53:52,619
+Arkadaşımızın dediği şu
+
+2405
+01:53:52,619 --> 01:53:54,340
+eğer şurası birse
+
+2406
+01:53:54,340 --> 01:53:56,340
+bu ifade yani şu büyük
+
+2407
+01:53:56,340 --> 01:53:58,300
+parantezin içerisinde ne olur?
+
+2408
+01:53:58,300 --> 01:54:00,479
+Bunların ne değer aldığı önemi var mı?
+
+2409
+01:54:00,840 --> 01:54:02,359
+Yok. Burası bir olur.
+
+2410
+01:54:02,819 --> 01:54:05,000
+Bir çarpı yandaki ifadeye geçiyorum.
+
+2411
+01:54:05,939 --> 01:54:07,420
+Yani bir ile bir şey ile çarparsan
+
+2412
+01:54:07,420 --> 01:54:08,979
+yine aynısı olmuş olur.
+
+2413
+01:54:09,359 --> 01:54:11,239
+Birli yerler oluyor. Eğer bu sıfırsa
+
+2414
+01:54:11,239 --> 01:54:13,739
+buradaki değerler
+
+2415
+01:54:13,739 --> 01:54:14,859
+ne yapılıyor?
+
+2416
+01:54:15,220 --> 01:54:17,239
+Direkt çarpım şeklinde ifadeye
+
+2417
+01:54:17,239 --> 01:54:19,279
+katılıyor. Aynı şekilde
+
+2418
+01:54:19,279 --> 01:54:21,539
+aynı şekilde
+
+2419
+01:54:21,539 --> 01:54:22,199
+arkadaşlar
+
+2420
+01:54:22,199 --> 01:54:24,840
+benim deminki
+
+2421
+01:54:24,840 --> 01:54:26,300
+fonksiyonumu
+
+2422
+01:54:26,300 --> 01:54:27,819
+düşüneyim.
+
+2423
+01:54:28,739 --> 01:54:30,779
+Fonksiyon neydi deminki fonksiyon?
+
+2424
+01:54:30,779 --> 01:54:32,779
+Örneğimiz.
+
+2425
+01:54:32,819 --> 01:54:36,500
+F-A-B-C
+
+2426
+01:54:36,500 --> 01:54:37,199
+alıyordu.
+
+2427
+01:54:38,600 --> 01:54:39,359
+Fonksiyon
+
+2428
+01:54:39,359 --> 01:54:40,039
+A-B
+
+2429
+01:54:40,039 --> 01:54:42,520
+artı A üstü C idi.
+
+2430
+01:54:44,779 --> 01:54:45,340
+Ben bunu
+
+2431
+01:54:45,340 --> 01:54:47,979
+eğer yazmaya çalışırsam
+
+2432
+01:54:47,979 --> 01:54:50,220
+şuradaki ifadeye göre düşünelim.
+
+2433
+01:54:50,819 --> 01:54:52,359
+Önce şu fonksiyon
+
+2434
+01:54:52,359 --> 01:54:54,079
+değerlerini bulmam lazım.
+
+2435
+01:54:56,390 --> 01:54:57,510
+Bunu nasıl bulabilirim?
+
+2436
+01:54:58,109 --> 01:54:59,609
+Yani aynı fonksiyon. Bu sefer
+
+2437
+01:54:59,609 --> 01:55:01,010
+max termlerle yazacağız.
+
+2438
+01:55:01,789 --> 01:55:04,449
+F-A-B-C
+
+2439
+01:55:04,449 --> 01:55:04,550
+A üstü C.
+
+2440
+01:55:04,550 --> 01:55:04,569
+F-A-B-C.
+
+2441
+01:55:04,569 --> 01:55:04,590
+F-A-B-C.
+
+2442
+01:55:04,590 --> 01:55:04,609
+F-A-B-C.
+
+2443
+01:55:04,609 --> 01:55:04,649
+F-A-B-C.
+
+2444
+01:55:04,649 --> 01:55:04,670
+F-A-B-C.
+
+2445
+01:55:04,670 --> 01:55:04,689
+F-A-B-C.
+
+2446
+01:55:04,689 --> 01:55:04,710
+F-A-B-C.
+
+2447
+01:55:04,710 --> 01:55:04,729
+F-A-B-C.
+
+2448
+01:55:04,729 --> 01:55:04,789
+F-A-B-C.
+
+2449
+01:55:04,789 --> 01:55:07,810
+A-B-C değerlerini de yazayım
+
+2450
+01:55:07,810 --> 01:55:09,689
+şöyle. Hangi değerlerini
+
+2451
+01:55:09,689 --> 01:55:11,029
+alalım? 0-0-0
+
+2452
+01:55:11,029 --> 01:55:12,909
+0-0-1
+
+2453
+01:55:12,909 --> 01:55:14,789
+0-1-0
+
+2454
+01:55:14,789 --> 01:55:16,149
+0-1-1
+
+2455
+01:55:16,149 --> 01:55:20,000
+Ondan sonra
+
+2456
+01:55:20,000 --> 01:55:22,539
+1-0-0
+
+2457
+01:55:22,539 --> 01:55:24,359
+1-0-1
+
+2458
+01:55:24,359 --> 01:55:25,680
+1-1-0
+
+2459
+01:55:25,680 --> 01:55:26,680
+1-1-1
+
+2460
+01:55:26,680 --> 01:55:29,020
+Bu ne alıyordu arkadaşlar?
+
+2461
+01:55:29,340 --> 01:55:32,680
+0-1-0
+
+2462
+01:55:32,680 --> 01:55:34,439
+1
+
+2463
+01:55:34,439 --> 01:55:36,539
+Ondan sonra
+
+2464
+01:55:36,539 --> 01:55:37,039
+1-0-1
+
+2465
+01:55:37,060 --> 01:55:42,310
+Geniş yazdım burayı. Biraz kısaltarak
+
+2466
+01:55:42,310 --> 01:55:44,609
+yazayım. 0-1
+
+2467
+01:55:44,609 --> 01:55:46,430
+0-1
+
+2468
+01:55:46,430 --> 01:55:49,819
+Şunlar 0 alıyordu.
+
+2469
+01:55:50,439 --> 01:55:51,399
+Bunlar 1 alıyordu.
+
+2470
+01:55:51,539 --> 01:55:53,720
+Dikkat edin burada neyi almam
+
+2471
+01:55:53,720 --> 01:55:55,680
+lazımdı? Sadece 0 olan
+
+2472
+01:55:55,680 --> 01:55:57,800
+max termleri
+
+2473
+01:55:57,800 --> 01:55:59,340
+almam lazım.
+
+2474
+01:55:59,479 --> 01:56:01,460
+Yani şunları almam lazım bu sefer.
+
+2475
+01:56:02,000 --> 01:56:03,300
+Fonksiyonu yazabilmek için.
+
+2476
+01:56:04,279 --> 01:56:04,859
+Dikkat edin.
+
+2477
+01:56:05,439 --> 01:56:07,619
+Bu sefer hangilerini alacağım? Altlarını çiziyorum.
+
+2478
+01:56:07,619 --> 01:56:09,859
+0-0'lı olan şu ifadeyi
+
+2479
+01:56:09,859 --> 01:56:10,239
+alacağım.
+
+2480
+01:56:10,260 --> 01:56:12,100
+Dolayısıyla
+
+2481
+01:56:12,100 --> 01:56:14,460
+A artı B artı C
+
+2482
+01:56:14,460 --> 01:56:17,800
+Arkasından 0-1-0
+
+2483
+01:56:17,800 --> 01:56:20,399
+0-1-0 şunu alacağım.
+
+2484
+01:56:21,579 --> 01:56:22,300
+Bunun değeri de
+
+2485
+01:56:22,300 --> 01:56:24,119
+0 olduğu için direkt ne kalıyor
+
+2486
+01:56:24,119 --> 01:56:26,100
+geriye? A artı B
+
+2487
+01:56:26,100 --> 01:56:27,520
+üstü artı C
+
+2488
+01:56:27,520 --> 01:56:30,569
+çarpı
+
+2489
+01:56:30,569 --> 01:56:32,689
+Şuna bakacak olursam
+
+2490
+01:56:32,689 --> 01:56:35,449
+şunu alacağım. Direkt burada
+
+2491
+01:56:35,449 --> 01:56:37,090
+fonksiyona bakarak da yazabilirim.
+
+2492
+01:56:37,989 --> 01:56:39,229
+A üstü
+
+2493
+01:56:39,229 --> 01:56:39,770
+değil mi?
+
+2494
+01:56:40,909 --> 01:56:41,770
+Artı B'ye
+
+2495
+01:56:41,829 --> 01:56:42,789
+artı C
+
+2496
+01:56:42,789 --> 01:56:45,189
+yani hangi ifade olmuş oluyor?
+
+2497
+01:56:45,789 --> 01:56:47,390
+1-0-0
+
+2498
+01:56:47,390 --> 01:56:49,729
+yani şunu almış oluyorum.
+
+2499
+01:56:51,350 --> 01:56:52,109
+Arkasından
+
+2500
+01:56:52,109 --> 01:56:53,829
+bir de yanındakini 1-0-1'e
+
+2501
+01:56:53,829 --> 01:56:55,430
+almış oluyorum. Yani
+
+2502
+01:56:55,430 --> 01:56:57,189
+A üstü
+
+2503
+01:56:57,189 --> 01:56:59,850
+artı B artı
+
+2504
+01:56:59,850 --> 01:57:00,710
+C üstü.
+
+2505
+01:57:02,090 --> 01:57:03,409
+Bu neyi eşitmiş arkadaşlar?
+
+2506
+01:57:04,630 --> 01:57:06,250
+A B artı
+
+2507
+01:57:06,250 --> 01:57:07,810
+A üstü C
+
+2508
+01:57:07,810 --> 01:57:10,210
+ifadesini eşitmiş.
+
+2509
+01:57:10,210 --> 01:57:11,689
+Farkı ne arasındaki?
+
+2510
+01:57:11,829 --> 01:57:13,670
+Burada bütün terimler
+
+2511
+01:57:13,670 --> 01:57:15,409
+yani bütün değişkenler bir arada
+
+2512
+01:57:15,409 --> 01:57:17,130
+kullanılmış oluyor.
+
+2513
+01:57:17,829 --> 01:57:19,050
+Bunu da yazacak olursam
+
+2514
+01:57:19,050 --> 01:57:21,789
+P şeklinde ifade edecek olursam
+
+2515
+01:57:21,789 --> 01:57:23,510
+hangileri bunlar?
+
+2516
+01:57:23,670 --> 01:57:27,409
+0-1-2-3-4-5
+
+2517
+01:57:27,409 --> 01:57:32,529
+0-2-4-5
+
+2518
+01:57:32,529 --> 01:57:32,550
+ve 5.
+
+2519
+01:57:32,989 --> 01:57:34,930
+max termler alınmış oluyor.
+
+2520
+01:57:35,050 --> 01:57:35,329
+Yani
+
+2521
+01:57:35,329 --> 01:57:37,989
+M0 çarpı
+
+2522
+01:57:37,989 --> 01:57:38,750
+M1
+
+2523
+01:57:38,750 --> 01:57:40,989
+pardon M2 çarpı
+
+2524
+01:57:41,829 --> 01:57:43,149
+M4 çarpı
+
+2525
+01:57:43,149 --> 01:57:46,550
+M5 alınmış oluyor arkadaşlar.
+
+2526
+01:57:49,489 --> 01:57:50,710
+Buraya kadar olan kısım
+
+2527
+01:57:50,710 --> 01:57:51,890
+anlaşıldı mı arkadaşlar?
+
+2528
+01:57:57,850 --> 01:57:59,470
+Buraya kadar olan kısım
+
+2529
+01:57:59,470 --> 01:58:01,430
+anlaşıldıysa şayet
+
+2530
+01:58:01,430 --> 01:58:02,630
+artık
+
+2531
+01:58:02,630 --> 01:58:05,590
+diğer kısımlara geçebiliriz.
+
+2532
+01:58:09,359 --> 01:58:10,300
+Şimdiki başlığımız
+
+2533
+01:58:10,300 --> 01:58:11,039
+arkadaşlar
+
+2534
+01:58:11,039 --> 01:58:13,000
+kanonik
+
+2535
+01:58:13,000 --> 01:58:16,060
+biçimler arasında
+
+2536
+01:58:16,060 --> 01:58:22,720
+kanonik biçimler arasında
+
+2537
+01:58:22,720 --> 01:58:23,439
+dönüşüm.
+
+2538
+01:58:23,439 --> 01:58:27,800
+Bunu bir örnek üzerinden
+
+2539
+01:58:28,399 --> 01:58:29,680
+anlatacağım arkadaşlar.
+
+2540
+01:58:30,539 --> 01:58:31,000
+Örneğin
+
+2541
+01:58:31,000 --> 01:58:34,739
+min termlerle verilen bir fonksiyonumuz olsun.
+
+2542
+01:58:35,140 --> 01:58:36,739
+A, B, C
+
+2543
+01:58:36,739 --> 01:58:39,159
+ve bu min termler
+
+2544
+01:58:39,159 --> 01:58:40,380
+şeklinde verildiyse
+
+2545
+01:58:40,380 --> 01:58:44,180
+1, 3, 5 ve 7
+
+2546
+01:58:44,180 --> 01:58:44,979
+bu ne demek?
+
+2547
+01:58:45,659 --> 01:58:46,899
+Sıfırdan başlamak üzere.
+
+2548
+01:58:47,000 --> 01:58:48,619
+Aslında 3 tane değişkeni var.
+
+2549
+01:58:49,279 --> 01:58:50,819
+1, 3, 5 ve 7.
+
+2550
+01:58:51,060 --> 01:58:51,779
+min termi.
+
+2551
+01:58:52,340 --> 01:58:52,779
+Yani
+
+2552
+01:58:52,779 --> 01:58:54,899
+benim
+
+2553
+01:58:54,899 --> 01:58:57,520
+M1 artı
+
+2554
+01:58:57,520 --> 01:58:59,960
+M3 artı
+
+2555
+01:58:59,960 --> 01:59:01,579
+M5 artı
+
+2556
+01:59:01,579 --> 01:59:03,600
+M7 mol ifadem
+
+2557
+01:59:03,600 --> 01:59:05,140
+benim için
+
+2558
+01:59:05,140 --> 01:59:06,600
+nedir arkadaşlar?
+
+2559
+01:59:07,140 --> 01:59:08,060
+Bir alan yerlerde.
+
+2560
+01:59:08,060 --> 01:59:09,300
+Min termler çizgisinde.
+
+2561
+01:59:09,659 --> 01:59:11,359
+Sigma min termlerde kullanılıyor.
+
+2562
+01:59:12,840 --> 01:59:13,180
+Şimdi
+
+2563
+01:59:13,180 --> 01:59:15,800
+ben bunu max termler
+
+2564
+01:59:15,800 --> 01:59:17,699
+biçiminde ifade etmek istesem
+
+2565
+01:59:17,699 --> 01:59:19,020
+adım adım nasıl giderim?
+
+2566
+01:59:19,819 --> 01:59:20,619
+Öncelikli olarak
+
+2567
+01:59:20,619 --> 01:59:24,039
+F üstü A, B, C'yi yazacak olursam
+
+2568
+01:59:24,039 --> 01:59:26,180
+bu durumda
+
+2569
+01:59:26,180 --> 01:59:26,960
+arkadaşlar
+
+2570
+01:59:27,520 --> 01:59:30,279
+F üstü A, B, C'yi
+
+2571
+01:59:30,279 --> 01:59:33,000
+min termler cinsinden yazacak olursam
+
+2572
+01:59:33,000 --> 01:59:34,420
+bu sefer bunun
+
+2573
+01:59:34,420 --> 01:59:37,020
+sıfır olduğu yerler bir, bir olduğu yerler
+
+2574
+01:59:37,020 --> 01:59:38,659
+sıfır olur. Dolayısıyla
+
+2575
+01:59:38,659 --> 01:59:40,479
+ne yazmam lazım buraya arkadaşlar?
+
+2576
+01:59:41,840 --> 01:59:42,779
+F üstü ifadesinde
+
+2577
+01:59:42,779 --> 01:59:45,060
+sıfırlar bir, birler sıfır olduğu için
+
+2578
+01:59:45,060 --> 01:59:46,979
+tam tersini
+
+2579
+01:59:46,979 --> 01:59:47,760
+yazmam lazım.
+
+2580
+01:59:48,319 --> 01:59:50,699
+0, 2, 4
+
+2581
+01:59:50,699 --> 01:59:52,899
+ve altın oğlu terimler
+
+2582
+01:59:52,899 --> 01:59:54,079
+anca bir üretiyor.
+
+2583
+01:59:54,079 --> 01:59:56,079
+Anca bunları alabilirim
+
+2584
+01:59:56,079 --> 01:59:57,199
+demek istiyorum.
+
+2585
+01:59:57,520 --> 01:59:58,420
+Bunu yazacak olursam
+
+2586
+01:59:58,420 --> 02:00:00,699
+bu F üstü ifadesi
+
+2587
+02:00:00,699 --> 02:00:03,140
+M0 artı
+
+2588
+02:00:03,140 --> 02:00:04,560
+M2 artı
+
+2589
+02:00:04,560 --> 02:00:05,920
+M4 artı
+
+2590
+02:00:05,920 --> 02:00:07,659
+M6'yı yazmam gerekiyor.
+
+2591
+02:00:09,380 --> 02:00:09,720
+Şimdi
+
+2592
+02:00:09,720 --> 02:00:13,699
+Demorgan kuralını uygularsam
+
+2593
+02:00:13,699 --> 02:00:14,659
+Demorgan
+
+2594
+02:00:14,659 --> 02:00:18,960
+neyi elde edeceğim?
+
+2595
+02:00:19,300 --> 02:00:22,060
+F üstü A, B, C'ydi değil mi?
+
+2596
+02:00:24,060 --> 02:00:24,300
+Buna
+
+2597
+02:00:24,300 --> 02:00:25,659
+bir değil
+
+2598
+02:00:25,659 --> 02:00:28,500
+uygularsam neyi elde etmiş olurum?
+
+2599
+02:00:28,720 --> 02:00:30,039
+F'i elde etmiş olurum.
+
+2600
+02:00:30,079 --> 02:00:32,079
+İkinci tarafında
+
+2601
+02:00:32,079 --> 02:00:33,800
+ikinci tarafında
+
+2602
+02:00:33,800 --> 02:00:36,239
+değilini alırsam ne olacak?
+
+2603
+02:00:37,760 --> 02:00:38,380
+M0
+
+2604
+02:00:38,380 --> 02:00:40,199
+artı M2
+
+2605
+02:00:40,199 --> 02:00:41,680
+artı M4
+
+2606
+02:00:41,680 --> 02:00:43,439
+artı M6'nın
+
+2607
+02:00:43,439 --> 02:00:46,420
+değilini uygulamam lazım ki
+
+2608
+02:00:46,420 --> 02:00:48,399
+tekrar F'i
+
+2609
+02:00:48,399 --> 02:00:49,699
+elde edebileyim.
+
+2610
+02:00:50,619 --> 02:00:51,819
+Şunu şöyle sileyim.
+
+2611
+02:00:53,739 --> 02:00:54,100
+F
+
+2612
+02:00:54,100 --> 02:00:55,979
+A, B, C
+
+2613
+02:00:55,979 --> 02:00:58,000
+Peki
+
+2614
+02:00:58,000 --> 02:00:59,859
+Demorgan bana ne diyor?
+
+2615
+02:01:00,079 --> 02:01:01,880
+Bir ifadenin
+
+2616
+02:01:01,880 --> 02:01:04,399
+değerini alıyorsam
+
+2617
+02:01:04,399 --> 02:01:06,020
+öncelikle içeridekilerin
+
+2618
+02:01:06,020 --> 02:01:06,739
+değerini al.
+
+2619
+02:01:07,159 --> 02:01:08,420
+A'nın değili.
+
+2620
+02:01:08,939 --> 02:01:10,260
+İşaret değişiyor.
+
+2621
+02:01:11,060 --> 02:01:13,260
+Ondan sonra içeridekini de şu şekilde açabilirsin.
+
+2622
+02:01:13,840 --> 02:01:15,939
+Eğer ben böyle yapacak olursam
+
+2623
+02:01:15,939 --> 02:01:16,279
+ne olur?
+
+2624
+02:01:16,920 --> 02:01:19,520
+M0 çarpı M0'nın değili
+
+2625
+02:01:19,520 --> 02:01:21,979
+çarpı M2'nin
+
+2626
+02:01:21,979 --> 02:01:23,739
+değili çarpı
+
+2627
+02:01:23,739 --> 02:01:25,659
+M4'ün değili çarpı
+
+2628
+02:01:25,659 --> 02:01:27,220
+M6'nın değili.
+
+2629
+02:01:28,500 --> 02:01:30,039
+Öyle değil mi arkadaşlar?
+
+2630
+02:01:30,079 --> 02:01:32,060
+Şimdi
+
+2631
+02:01:32,060 --> 02:01:34,039
+bu durumda
+
+2632
+02:01:34,039 --> 02:01:37,539
+şuna dikkat etmem lazım.
+
+2633
+02:01:40,000 --> 02:01:41,140
+M0'ın değili.
+
+2634
+02:01:41,899 --> 02:01:42,779
+M0'ın
+
+2635
+02:01:42,779 --> 02:01:45,140
+değili. Nedir?
+
+2636
+02:01:47,340 --> 02:01:49,060
+Örneğin 3 değişkenli bir fonksiyon
+
+2637
+02:01:49,060 --> 02:01:50,739
+için M0 neydi arkadaşlar?
+
+2638
+02:01:53,109 --> 02:01:54,289
+Söyleyecek olan var mı
+
+2639
+02:01:54,289 --> 02:01:55,050
+aranızda?
+
+2640
+02:01:56,470 --> 02:01:58,750
+Yani yazacak olursam
+
+2641
+02:01:58,750 --> 02:01:59,909
+A'nın değili
+
+2642
+02:01:59,909 --> 02:02:01,350
+B'nin değili
+
+2643
+02:02:01,350 --> 02:02:03,170
+C'nin değiliydi.
+
+2644
+02:02:04,310 --> 02:02:04,729
+Bunun
+
+2645
+02:02:04,729 --> 02:02:07,109
+değilini almak demek
+
+2646
+02:02:07,109 --> 02:02:10,130
+Demorgundan yapacak olursam
+
+2647
+02:02:10,130 --> 02:02:10,569
+ne olur?
+
+2648
+02:02:13,300 --> 02:02:14,699
+A artı B artı C.
+
+2649
+02:02:15,380 --> 02:02:15,659
+Evet.
+
+2650
+02:02:16,680 --> 02:02:19,880
+Yaparsam A artı B artı C.
+
+2651
+02:02:20,199 --> 02:02:21,279
+Peki bu
+
+2652
+02:02:21,279 --> 02:02:23,239
+Max Term olarak nedir bu?
+
+2653
+02:02:27,210 --> 02:02:28,189
+Max Term olarak
+
+2654
+02:02:28,189 --> 02:02:31,289
+büyük M0
+
+2655
+02:02:31,289 --> 02:02:33,350
+bakalım cevap veren var mıymış?
+
+2656
+02:02:34,189 --> 02:02:34,750
+M7 değil.
+
+2657
+02:02:34,890 --> 02:02:35,630
+Büyük M0.
+
+2658
+02:02:35,630 --> 02:02:37,909
+Şöyle yapıyorduk ya Max Termlerde
+
+2659
+02:02:37,909 --> 02:02:38,710
+belki.
+
+2660
+02:02:39,270 --> 02:02:42,289
+Örneğin 0 0 0
+
+2661
+02:02:42,289 --> 02:02:43,010
+almıştı.
+
+2662
+02:02:43,250 --> 02:02:44,430
+A B C.
+
+2663
+02:02:46,310 --> 02:02:47,989
+Max Term olarak yazıyorsak biz
+
+2664
+02:02:47,989 --> 02:02:49,270
+bunu şayet ne diyorduk?
+
+2665
+02:02:50,430 --> 02:02:52,149
+A artı B
+
+2666
+02:02:52,149 --> 02:02:54,210
+artı C. 0 olan yerler
+
+2667
+02:02:54,210 --> 02:02:55,529
+aynı anya kızılıyordu. Bakın
+
+2668
+02:02:55,529 --> 02:02:58,449
+M0'ın değili açtığımızda
+
+2669
+02:02:58,449 --> 02:02:59,470
+ne eşitmiş?
+
+2670
+02:03:00,069 --> 02:03:01,750
+Max Term 0'a eşitmiş. Yani
+
+2671
+02:03:01,750 --> 02:03:04,250
+M0'ın Min Term'in değili
+
+2672
+02:03:04,250 --> 02:03:06,970
+Max Term'e
+
+2673
+02:03:06,970 --> 02:03:08,350
+denk düşüyormuş.
+
+2674
+02:03:08,350 --> 02:03:10,270
+Hepsi için bu geçerli
+
+2675
+02:03:10,270 --> 02:03:10,909
+arkadaşlar.
+
+2676
+02:03:12,430 --> 02:03:13,750
+Dolayısıyla buna ne diyebiliriz?
+
+2677
+02:03:14,489 --> 02:03:16,569
+M0 çarpı M2
+
+2678
+02:03:16,569 --> 02:03:18,069
+çarpı M4
+
+2679
+02:03:18,069 --> 02:03:20,270
+çarpı M6
+
+2680
+02:03:20,270 --> 02:03:21,430
+dedik.
+
+2681
+02:03:24,199 --> 02:03:26,380
+Dolayısıyla bunu ne şekilde yazabilirim?
+
+2682
+02:03:27,340 --> 02:03:27,579
+Pi
+
+2683
+02:03:27,579 --> 02:03:30,460
+0 2
+
+2684
+02:03:30,460 --> 02:03:32,359
+4 6 şeklinde
+
+2685
+02:03:32,359 --> 02:03:33,079
+yazabilirim.
+
+2686
+02:03:34,399 --> 02:03:35,840
+Demek ki benim
+
+2687
+02:03:35,840 --> 02:03:37,899
+bu neye eşitmiş arkadaşlar?
+
+2688
+02:03:37,899 --> 02:03:39,020
+Sigma
+
+2689
+02:03:39,020 --> 02:03:40,079
+1.
+
+2690
+02:03:40,560 --> 02:03:41,060
+3
+
+2691
+02:03:41,060 --> 02:03:41,840
+5
+
+2692
+02:03:41,840 --> 02:03:44,859
+kayma yaşandı.
+
+2693
+02:03:52,069 --> 02:03:53,449
+Ekranda bir kilitlenme oldu.
+
+2694
+02:03:53,550 --> 02:03:54,710
+Ses geliyor mu arkadaşlar?
+
+2695
+02:03:56,430 --> 02:03:57,010
+Geliyor hocam.
+
+2696
+02:03:57,569 --> 02:03:59,289
+Bu neye eşitmiş?
+
+2697
+02:03:59,770 --> 02:04:01,310
+Sigma. F ifadesi.
+
+2698
+02:04:01,449 --> 02:04:02,609
+Şurada sigma eşitti.
+
+2699
+02:04:03,310 --> 02:04:05,890
+Sigma 1 3 5
+
+2700
+02:04:05,890 --> 02:04:07,710
+7. Eğer
+
+2701
+02:04:07,710 --> 02:04:09,710
+kanonik biçimde yazacak olursam
+
+2702
+02:04:09,710 --> 02:04:11,850
+kullanılmayan sayılar
+
+2703
+02:04:11,850 --> 02:04:12,829
+var ya buradaki 0
+
+2704
+02:04:12,829 --> 02:04:15,449
+2 4 6 kullanılmamıştı.
+
+2705
+02:04:16,109 --> 02:04:16,869
+Max Termler
+
+2706
+02:04:16,869 --> 02:04:19,109
+şeklinde şu şekilde ifade edilebilir.
+
+2707
+02:04:19,689 --> 02:04:20,569
+Şöyle diyoruz ona.
+
+2708
+02:04:21,409 --> 02:04:22,869
+M 1
+
+2709
+02:04:22,869 --> 02:04:24,489
+artı M
+
+2710
+02:04:24,489 --> 02:04:27,090
+2 3 pardon
+
+2711
+02:04:27,090 --> 02:04:28,909
+artı M 5
+
+2712
+02:04:28,909 --> 02:04:30,970
+artı M 7
+
+2713
+02:04:30,970 --> 02:04:31,949
+neye eşitmiş?
+
+2714
+02:04:32,689 --> 02:04:35,029
+M 0 çarpı
+
+2715
+02:04:35,029 --> 02:04:36,810
+M 2 çarpı
+
+2716
+02:04:36,810 --> 02:04:39,449
+M 4 çarpı M 6'ya eşitmiş.
+
+2717
+02:04:42,609 --> 02:04:43,029
+Buradan
+
+2718
+02:04:43,029 --> 02:04:44,970
+ne çıkıyor arkadaşlar?
+
+2719
+02:04:46,649 --> 02:04:47,470
+Bu çıkmış oluyor.
+
+2720
+02:04:48,750 --> 02:04:49,090
+Yani
+
+2721
+02:04:49,170 --> 02:04:51,529
+bunu tümleyen kullanılmayan sayılar
+
+2722
+02:04:51,529 --> 02:04:53,609
+Max Termin karşılıkları
+
+2723
+02:04:53,609 --> 02:04:55,550
+olarak çarpım şeklinde
+
+2724
+02:04:55,550 --> 02:04:56,829
+ifade edilebilirmiş.
+
+2725
+02:05:00,189 --> 02:05:00,609
+Şimdi
+
+2726
+02:05:00,609 --> 02:05:11,439
+buradan nereye doğru geçelim?
+
+2727
+02:05:17,010 --> 02:05:17,510
+Bu sefer
+
+2728
+02:05:17,510 --> 02:05:20,250
+örnek olarak şundan bahsedelim.
+
+2729
+02:05:21,810 --> 02:05:23,649
+Bir tane fonksiyon verdiler bize.
+
+2730
+02:05:23,989 --> 02:05:25,350
+A B C
+
+2731
+02:05:25,350 --> 02:05:29,630
+ve bu fonksiyonun arkadaşlar
+
+2732
+02:05:29,630 --> 02:05:33,199
+almış olduğu
+
+2733
+02:05:33,199 --> 02:05:34,560
+değerleri biz biliyoruz.
+
+2734
+02:05:36,239 --> 02:05:36,600
+Yani
+
+2735
+02:05:36,960 --> 02:05:39,920
+0 0 0 0 0 0 1
+
+2736
+02:05:39,920 --> 02:05:42,060
+0 1 0
+
+2737
+02:05:42,060 --> 02:05:43,600
+0 1 1
+
+2738
+02:05:43,600 --> 02:05:45,739
+1 0 0
+
+2739
+02:05:45,739 --> 02:05:47,140
+1 0 1
+
+2740
+02:05:47,140 --> 02:05:49,960
+1 1 0 1 1 1
+
+2741
+02:05:49,960 --> 02:05:51,979
+Bize bunun karşılıklarını
+
+2742
+02:05:51,979 --> 02:05:52,699
+vermişler.
+
+2743
+02:05:53,220 --> 02:05:55,119
+Burada bir değeri alıyormuş.
+
+2744
+02:05:55,300 --> 02:05:57,739
+Fonksiyonu vermemiş. Sadece doğruluk tablosunu vermiş.
+
+2745
+02:05:58,420 --> 02:05:59,380
+Burada bir alıyormuş.
+
+2746
+02:06:00,619 --> 02:06:01,359
+Burada sıfır
+
+2747
+02:06:01,359 --> 02:06:02,560
+burada sıfır alıyormuş.
+
+2748
+02:06:04,159 --> 02:06:05,539
+Buralarda bir alıyormuş.
+
+2749
+02:06:06,960 --> 02:06:09,300
+Şuralarda bir alıyormuş. Ondan sonra sıfır
+
+2750
+02:06:09,300 --> 02:06:11,279
+alıyormuş. Biz bu fonksiyonu
+
+2751
+02:06:11,279 --> 02:06:13,819
+yazabilir miyiz? Bu fonksiyonu
+
+2752
+02:06:13,819 --> 02:06:15,439
+min term ve max term cinsinden
+
+2753
+02:06:15,439 --> 02:06:17,119
+yazabilir miyiz? Sorumuz bu.
+
+2754
+02:06:18,960 --> 02:06:19,460
+Eğer ben
+
+2755
+02:06:19,460 --> 02:06:21,260
+bu fonksiyonu iki türlü yazabilirim.
+
+2756
+02:06:21,439 --> 02:06:22,500
+A B C
+
+2757
+02:06:22,500 --> 02:06:25,119
+Önce min termler cinsinden yazalım.
+
+2758
+02:06:25,220 --> 02:06:26,899
+Min termler cinsinden yazıyorsak
+
+2759
+02:06:26,899 --> 02:06:28,840
+neleri almamız lazım?
+
+2760
+02:06:29,460 --> 02:06:31,479
+Sadece birli olan yerleri almamız lazım.
+
+2761
+02:06:32,079 --> 02:06:32,899
+Yazalım beraber.
+
+2762
+02:06:35,449 --> 02:06:36,390
+Bu sıfır
+
+2763
+02:06:36,390 --> 02:06:38,390
+1 2 3 4
+
+2764
+02:06:38,529 --> 02:06:40,770
+5 6 ve 7
+
+2765
+02:06:40,770 --> 02:06:43,449
+sigmalı şekilde yazacak olursam
+
+2766
+02:06:43,449 --> 02:06:45,149
+0
+
+2767
+02:06:45,149 --> 02:06:46,149
+1
+
+2768
+02:06:46,149 --> 02:06:48,789
+4 ve 5
+
+2769
+02:06:48,789 --> 02:06:50,090
+şeklinde yazmam lazım.
+
+2770
+02:06:50,930 --> 02:06:52,689
+Uzun uzun yazacak olursam bunu
+
+2771
+02:06:52,689 --> 02:06:54,550
+A üstü
+
+2772
+02:06:54,550 --> 02:06:56,689
+B üstü C üstü
+
+2773
+02:06:56,689 --> 02:06:58,810
+artı A üstü
+
+2774
+02:06:58,810 --> 02:07:00,329
+B üstü C
+
+2775
+02:07:00,329 --> 02:07:01,470
+artı
+
+2776
+02:07:01,470 --> 02:07:04,970
+A B üstü
+
+2777
+02:07:04,970 --> 02:07:06,770
+C üstü artı
+
+2778
+02:07:06,770 --> 02:07:08,409
+A B üstü
+
+2779
+02:07:08,529 --> 02:07:10,529
+C şeklinde yazabilirim.
+
+2780
+02:07:12,149 --> 02:07:13,029
+Bunu yazmanın
+
+2781
+02:07:13,029 --> 02:07:14,430
+bir diğer yolu da
+
+2782
+02:07:14,430 --> 02:07:16,550
+max termler cinsinden yazarım.
+
+2783
+02:07:17,909 --> 02:07:18,810
+Onu da maviyle
+
+2784
+02:07:18,810 --> 02:07:21,029
+yapayım şöyle. Bu sefer sıfırları
+
+2785
+02:07:21,029 --> 02:07:22,409
+almam lazım sadece.
+
+2786
+02:07:23,390 --> 02:07:23,989
+Dikkat edin.
+
+2787
+02:07:25,409 --> 02:07:26,810
+Bu sefer de hangilerini
+
+2788
+02:07:26,810 --> 02:07:28,569
+almam lazım? 2
+
+2789
+02:07:28,569 --> 02:07:30,609
+3
+
+2790
+02:07:30,609 --> 02:07:32,750
+6 ve
+
+2791
+02:07:32,750 --> 02:07:33,949
+7'yi almam lazım.
+
+2792
+02:07:34,890 --> 02:07:36,010
+Bunu yazacak olursam
+
+2793
+02:07:36,010 --> 02:07:38,329
+önce 2'yi yazayım.
+
+2794
+02:07:38,529 --> 02:07:40,510
+Yani şunu yazayım. Bu sefer sıfır
+
+2795
+02:07:40,510 --> 02:07:42,310
+gördüğüm yerleri aynısını yazıyorum.
+
+2796
+02:07:42,470 --> 02:07:43,829
+Yani şunu yazıyorum şu anda.
+
+2797
+02:07:44,729 --> 02:07:46,250
+A B üstü
+
+2798
+02:07:46,250 --> 02:07:47,909
+C
+
+2799
+02:07:47,909 --> 02:07:50,979
+özür dilerim.
+
+2800
+02:07:51,939 --> 02:07:53,640
+Bunu toplam şeklinde yazacağım değil mi?
+
+2801
+02:07:55,220 --> 02:07:55,659
+A
+
+2802
+02:07:55,659 --> 02:07:58,239
+artı
+
+2803
+02:07:58,239 --> 02:07:59,140
+B üstü
+
+2804
+02:07:59,140 --> 02:08:01,319
+artı C
+
+2805
+02:08:01,319 --> 02:08:04,159
+çarpı. 2 bu oldu
+
+2806
+02:08:04,159 --> 02:08:05,979
+çünkü. Şimdi
+
+2807
+02:08:05,979 --> 02:08:06,739
+bunu yazıyorum.
+
+2808
+02:08:06,739 --> 02:08:06,800
+Şimdi bunu yazıyorum.
+
+2809
+02:08:08,539 --> 02:08:10,020
+A artı B üstü.
+
+2810
+02:08:10,039 --> 02:08:11,720
+A üstü artı C üstü.
+
+2811
+02:08:12,619 --> 02:08:13,420
+Çarpı.
+
+2812
+02:08:13,920 --> 02:08:17,819
+6 şunu yazıyorum şimdi.
+
+2813
+02:08:19,399 --> 02:08:20,199
+A üstü
+
+2814
+02:08:20,199 --> 02:08:21,619
+artı B üstü
+
+2815
+02:08:21,619 --> 02:08:22,640
+artı C
+
+2816
+02:08:22,640 --> 02:08:26,180
+çarpı. En son 7'yi
+
+2817
+02:08:26,180 --> 02:08:27,979
+yazıyorum. A üstü
+
+2818
+02:08:27,979 --> 02:08:30,159
+artı B üstü artı C üstü.
+
+2819
+02:08:31,640 --> 02:08:32,079
+Şu iki
+
+2820
+02:08:32,079 --> 02:08:33,899
+ifade birbirine eşit. Ama aralarındaki
+
+2821
+02:08:33,899 --> 02:08:35,840
+fark ne? Bu
+
+2822
+02:08:35,840 --> 02:08:37,579
+dikkat edin
+
+2823
+02:08:37,579 --> 02:08:40,199
+çarpımlar toplamı.
+
+2824
+02:08:42,890 --> 02:08:44,050
+Çarpımlı ifade
+
+2825
+02:08:44,050 --> 02:08:45,689
+ilerinin toplamı. Çarpımlar
+
+2826
+02:08:45,689 --> 02:08:49,909
+toplamı. Şu ifade
+
+2827
+02:08:49,909 --> 02:08:51,789
+ne? Toplamlar
+
+2828
+02:08:51,789 --> 02:08:57,899
+çarpımı. Aradaki
+
+2829
+02:08:57,899 --> 02:09:02,880
+fark bu. Evet
+
+2830
+02:09:02,880 --> 02:09:06,880
+artık bir
+
+2831
+02:09:06,880 --> 02:09:08,640
+doğruluk tablosundan sadece
+
+2832
+02:09:08,640 --> 02:09:10,359
+doğruluk tablosu verilse bile
+
+2833
+02:09:10,359 --> 02:09:12,680
+bir fonksiyonu bu şekilde uzun uzun
+
+2834
+02:09:12,680 --> 02:09:13,579
+yazabilirsiniz.
+
+2835
+02:09:15,260 --> 02:09:16,640
+Daha sonra gerekiyorsa burada
+
+2836
+02:09:16,640 --> 02:09:18,439
+indirgeme işlemi, teoremlerden
+
+2837
+02:09:18,439 --> 02:09:20,279
+yararlanarak indirgeme işlemlerini
+
+2838
+02:09:20,279 --> 02:09:21,680
+yapabilirsiniz.
+
+2839
+02:09:23,239 --> 02:09:24,659
+Peki ben bunu
+
+2840
+02:09:24,659 --> 02:09:26,439
+lojik kapılarla nasıl
+
+2841
+02:09:26,439 --> 02:09:27,819
+gerçekleştireceğim?
+
+2842
+02:09:29,199 --> 02:09:30,920
+Örneğin üstündeki ifadeyi
+
+2843
+02:09:30,920 --> 02:09:32,880
+alayım. Şuradaki. Ne diyor?
+
+2844
+02:09:33,899 --> 02:09:34,699
+Bir tane A
+
+2845
+02:09:34,699 --> 02:09:38,510
+verilsin. Şurayı sileyim.
+
+2846
+02:09:40,590 --> 02:09:42,229
+Hemen altına bir tane
+
+2847
+02:09:42,229 --> 02:09:43,989
+not kapısı koyayım. Şöyle.
+
+2848
+02:09:44,890 --> 02:09:46,369
+Artık buradan A, buradan A
+
+2849
+02:09:46,369 --> 02:09:48,350
+üstü elde ediliyor. Aynı şekilde
+
+2850
+02:09:48,350 --> 02:09:52,539
+B. Şuradan artık
+
+2851
+02:09:52,539 --> 02:09:54,300
+B. B üstü elde ediliyor.
+
+2852
+02:09:54,819 --> 02:09:56,819
+Lojik kapılarla gerçekleştiriyorum artık.
+
+2853
+02:09:57,460 --> 02:09:58,100
+Buradan C.
+
+2854
+02:09:58,560 --> 02:10:00,680
+Buradan da C'nin
+
+2855
+02:10:00,680 --> 02:10:02,000
+üstü elde edilmiş oluyor.
+
+2856
+02:10:02,819 --> 02:10:05,159
+Şimdi bunu gerçekleştirmiyor.
+
+2857
+02:10:05,279 --> 02:10:06,560
+Şu ifadeyi gerçekleştiriyorum.
+
+2858
+02:10:07,279 --> 02:10:08,739
+A üstünü alacakmışım.
+
+2859
+02:10:09,800 --> 02:10:10,899
+B üstünü
+
+2860
+02:10:10,899 --> 02:10:11,819
+alacakmışım.
+
+2861
+02:10:13,119 --> 02:10:14,720
+Ve C üstünü alacakmışım.
+
+2862
+02:10:16,000 --> 02:10:16,880
+Üç girişli
+
+2863
+02:10:16,880 --> 02:10:18,359
+bir ne kapısı bu?
+
+2864
+02:10:18,699 --> 02:10:19,840
+Üç girişli ne kapısı?
+
+2865
+02:10:21,699 --> 02:10:22,500
+End kapısı.
+
+2866
+02:10:23,300 --> 02:10:24,539
+A'nın değili, B'nin değili,
+
+2867
+02:10:24,659 --> 02:10:28,720
+C'nin değili ne? Ne yapıyor?
+
+2868
+02:10:29,239 --> 02:10:30,239
+Üretiyor benim için.
+
+2869
+02:10:30,420 --> 02:10:33,960
+İkinci kapım
+
+2870
+02:10:33,960 --> 02:10:36,439
+A üstü, B üstü, C'yi alıyor.
+
+2871
+02:10:37,420 --> 02:10:38,520
+O da
+
+2872
+02:10:38,520 --> 02:10:40,920
+şöyle yapıyorum. A üstü,
+
+2873
+02:10:42,319 --> 02:10:43,180
+B üstü,
+
+2874
+02:10:44,000 --> 02:10:44,880
+C'yi alıyor
+
+2875
+02:10:44,880 --> 02:10:45,479
+bana burada.
+
+2876
+02:10:47,359 --> 02:10:48,560
+Bu da üç girişli bir
+
+2877
+02:10:49,479 --> 02:10:50,939
+end kapısı oluşturuyor.
+
+2878
+02:10:52,539 --> 02:10:52,979
+Şuradaki
+
+2879
+02:10:52,979 --> 02:10:54,560
+üçüncü ifademse
+
+2880
+02:10:55,319 --> 02:10:58,720
+A, B üstü,
+
+2881
+02:10:58,800 --> 02:10:59,619
+C üstünü alıyor.
+
+2882
+02:11:00,479 --> 02:11:02,140
+Şuradan A'yı alıyor.
+
+2883
+02:11:04,260 --> 02:11:06,300
+Buradan B üstünü
+
+2884
+02:11:06,300 --> 02:11:08,439
+alıyor. Buradan da C üstünü
+
+2885
+02:11:08,439 --> 02:11:09,979
+alıyor. Çarpıyor.
+
+2886
+02:11:11,640 --> 02:11:11,819
+Şu
+
+2887
+02:11:11,819 --> 02:11:15,520
+renklerine göre yapayım.
+
+2888
+02:11:15,939 --> 02:11:17,000
+Şu ikincisiydi.
+
+2889
+02:11:17,779 --> 02:11:18,539
+Üçü yaptım.
+
+2890
+02:11:19,619 --> 02:11:21,819
+Bir tane de farklı bir renk kullanayım.
+
+2891
+02:11:23,960 --> 02:11:24,840
+Bir tane de
+
+2892
+02:11:24,840 --> 02:11:27,000
+turuncu kullanayım şöyle.
+
+2893
+02:11:28,319 --> 02:11:29,340
+Veya gri
+
+2894
+02:11:29,340 --> 02:11:29,960
+kullanayım.
+
+2895
+02:11:31,760 --> 02:11:32,079
+Tamam.
+
+2896
+02:11:38,460 --> 02:11:40,619
+Sonuncu ifadeyi neye alıyor arkadaşlar?
+
+2897
+02:11:40,619 --> 02:11:40,939
+Şu
+
+2898
+02:11:40,979 --> 02:11:43,520
+A, B üstü, C üstünü alıyor.
+
+2899
+02:11:44,420 --> 02:11:44,699
+A
+
+2900
+02:11:44,699 --> 02:11:48,739
+A, B üstü.
+
+2901
+02:11:49,300 --> 02:11:50,479
+A'yı alıyor.
+
+2902
+02:11:50,739 --> 02:11:52,539
+Şöyle A'yı aldı.
+
+2903
+02:11:53,159 --> 02:11:54,340
+B üstünü aldı.
+
+2904
+02:11:54,739 --> 02:11:56,619
+Bir de C'yi aldı.
+
+2905
+02:11:57,600 --> 02:11:58,140
+Bunları
+
+2906
+02:11:58,140 --> 02:11:59,859
+çarptı.
+
+2907
+02:12:00,939 --> 02:12:01,819
+Arkasından
+
+2908
+02:12:01,819 --> 02:12:06,119
+hepsini aldıktan sonra yaptığı şuradaki
+
+2909
+02:12:06,119 --> 02:12:07,659
+ara işlemler ne arkadaşlar?
+
+2910
+02:12:08,359 --> 02:12:09,600
+Hepsini toparlamak.
+
+2911
+02:12:10,600 --> 02:12:12,079
+Şöyle yapalım.
+
+2912
+02:12:12,359 --> 02:12:13,880
+Bu sefer de
+
+2913
+02:12:13,880 --> 02:12:16,539
+bakın. Üç girişleri
+
+2914
+02:12:16,539 --> 02:12:18,100
+çarptık şöyle şurada.
+
+2915
+02:12:19,939 --> 02:12:20,439
+Artık
+
+2916
+02:12:20,439 --> 02:12:22,420
+buradan birinci,
+
+2917
+02:12:22,659 --> 02:12:24,199
+ikinci, üçüncü, dördüncü
+
+2918
+02:12:24,199 --> 02:12:26,140
+terim oluştu. Yani buralarda
+
+2919
+02:12:26,140 --> 02:12:28,460
+oluştular. Bunların hepsini ne yapmam
+
+2920
+02:12:28,460 --> 02:12:28,859
+lazım?
+
+2921
+02:12:30,539 --> 02:12:32,420
+Orlamam lazım. Yani şöyle
+
+2922
+02:12:32,420 --> 02:12:34,380
+dört girişli bir or bulup
+
+2923
+02:12:34,380 --> 02:12:36,260
+F çıkışımı
+
+2924
+02:12:36,260 --> 02:12:38,260
+gerçekleştirmem lazım.
+
+2925
+02:12:40,000 --> 02:12:40,520
+Dediğim gibi
+
+2926
+02:12:40,520 --> 02:12:42,319
+kapılar hep ben örnekliyim.
+
+2927
+02:12:42,359 --> 02:12:44,039
+Örnekliyken iki girişleri verdim ama
+
+2928
+02:12:44,039 --> 02:12:45,880
+şuradaki mesela
+
+2929
+02:12:45,880 --> 02:12:47,600
+şu eleman ne?
+
+2930
+02:12:48,859 --> 02:12:49,939
+Üç girişli bir
+
+2931
+02:12:49,939 --> 02:12:52,579
+şimdi A üstlerini, D'yillerini
+
+2932
+02:12:52,579 --> 02:12:53,260
+düşünmeyelim.
+
+2933
+02:12:54,880 --> 02:12:56,079
+Üç girişli bir
+
+2934
+02:12:56,079 --> 02:12:57,859
+or aslında.
+
+2935
+02:12:58,939 --> 02:12:59,899
+Girişlerinde ne var?
+
+2936
+02:13:00,159 --> 02:13:02,180
+A üstü, B üstü
+
+2937
+02:13:02,180 --> 02:13:03,359
+ve C üstü var.
+
+2938
+02:13:04,840 --> 02:13:06,619
+Şu ifade burada oluşuyor.
+
+2939
+02:13:07,319 --> 02:13:08,479
+Öbür ifadeyi de
+
+2940
+02:13:08,479 --> 02:13:10,039
+yazacak olursanız
+
+2941
+02:13:10,039 --> 02:13:12,039
+ne elde etmiştik?
+
+2942
+02:13:12,359 --> 02:13:14,000
+Almış olursunuz. Şurayı
+
+2943
+02:13:14,000 --> 02:13:20,560
+sileyim bir. Şöyle
+
+2944
+02:13:20,560 --> 02:13:25,329
+sileyim. Veya biraz
+
+2945
+02:13:25,329 --> 02:13:27,390
+daha aşağı alayım. Şöyle
+
+2946
+02:13:27,390 --> 02:13:30,729
+aldım bunu.
+
+2947
+02:13:31,050 --> 02:13:32,409
+Ondan sonra toplamıştım.
+
+2948
+02:13:32,949 --> 02:13:35,170
+F'yi elde etmiştim. Bu sefer
+
+2949
+02:13:35,170 --> 02:13:36,890
+diğer yönden
+
+2950
+02:13:36,890 --> 02:13:38,810
+yapacak olursam, bu sefer
+
+2951
+02:13:38,810 --> 02:13:40,029
+yine üç girişli
+
+2952
+02:13:40,029 --> 02:13:42,989
+nelerimiz var
+
+2953
+02:13:42,989 --> 02:13:44,369
+benim burada? Üç girişten
+
+2954
+02:13:44,369 --> 02:13:45,789
+A üstü,
+
+2955
+02:13:46,930 --> 02:13:48,649
+B üstü ve C var.
+
+2956
+02:13:48,649 --> 02:13:50,250
+Bu da bu ifade.
+
+2957
+02:13:50,529 --> 02:13:50,810
+Diğer
+
+2958
+02:13:51,090 --> 02:13:53,649
+üç girişli
+
+2959
+02:13:53,649 --> 02:13:56,729
+ifadeleri de, şunları ve
+
+2960
+02:13:56,729 --> 02:13:58,270
+şunları da eklersem.
+
+2961
+02:13:58,670 --> 02:14:00,189
+En sonunda burada ne yapılıyor peki?
+
+2962
+02:14:01,430 --> 02:14:02,390
+Bu dört ifade
+
+2963
+02:14:02,390 --> 02:14:04,710
+çarpılıyor. Geliyorum bunları
+
+2964
+02:14:04,710 --> 02:14:06,810
+ne yapıyorum?
+
+2965
+02:14:06,989 --> 02:14:08,090
+Bu sefer çarpıyorum.
+
+2966
+02:14:08,810 --> 02:14:10,729
+F'yi elde ediyorum. Şuradaki
+
+2967
+02:14:10,729 --> 02:14:12,689
+ve şuradaki F birbirine
+
+2968
+02:14:12,689 --> 02:14:14,789
+eşit arkadaşlar. Çünkü
+
+2969
+02:14:14,789 --> 02:14:16,930
+aynı fonksiyonu
+
+2970
+02:14:16,930 --> 02:14:17,829
+ben
+
+2971
+02:14:17,829 --> 02:14:21,050
+çarpımlar toplamı, toplamlar çarpımı.
+
+2972
+02:14:21,090 --> 02:14:23,329
+Şeklinde farklı kapılarla
+
+2973
+02:14:23,329 --> 02:14:25,090
+yapabildim. Burada
+
+2974
+02:14:25,090 --> 02:14:26,909
+çarpımların
+
+2975
+02:14:26,909 --> 02:14:28,729
+toplamını yaptım.
+
+2976
+02:14:29,550 --> 02:14:31,029
+Burada ise toplamların
+
+2977
+02:14:31,029 --> 02:14:33,229
+çarpımını oluşturmuş oldum.
+
+2978
+02:14:36,180 --> 02:14:37,460
+Ders anlaşıldı mı arkadaşlar?
+
+2979
+02:14:38,239 --> 02:14:39,279
+Sormak istediğiniz sorular
+
+2980
+02:14:39,279 --> 02:14:50,619
+var mı? Anlaşıldı.
+
+2981
+02:14:51,819 --> 02:14:52,199
+Evet.
+
+2982
+02:14:55,159 --> 02:14:55,960
+Evet, [öğrenci].
+
+2983
+02:14:58,100 --> 02:14:59,220
+[öğrenci].
+
+2984
+02:15:01,340 --> 02:15:02,239
+Ders anlaşıldı mı?
+
+2985
+02:15:08,100 --> 02:15:09,600
+Hocam bir şey sorabilir miyim?
+
+2986
+02:15:09,600 --> 02:15:10,659
+Tabii ki.
+
+2987
+02:15:11,640 --> 02:15:12,000
+Bu
+
+2988
+02:15:12,000 --> 02:15:13,779
+toplamlar çarpımında
+
+2989
+02:15:13,779 --> 02:15:16,380
+şimdi çarpım olması için
+
+2990
+02:15:16,380 --> 02:15:18,199
+seri mi olması gerekiyor kapıların?
+
+2991
+02:15:19,439 --> 02:15:20,420
+Bir daha
+
+2992
+02:15:20,420 --> 02:15:21,460
+sorar mısın sorunu?
+
+2993
+02:15:22,140 --> 02:15:24,239
+Şu ikinci de toplamlar çarpımında
+
+2994
+02:15:24,239 --> 02:15:26,579
+çarpma istemi olması
+
+2995
+02:15:26,579 --> 02:15:28,680
+için seri mi olması gerekiyor kapıların?
+
+2996
+02:15:30,880 --> 02:15:31,960
+Seri değil. Dikkatini
+
+2997
+02:15:31,960 --> 02:15:33,739
+çekiyorum. Buradan bir ifade
+
+2998
+02:15:33,739 --> 02:15:35,800
+oluştu. Bak şu
+
+2999
+02:15:35,800 --> 02:15:37,739
+ABC ifadesi şurada oluştu değil mi?
+
+3000
+02:15:38,020 --> 02:15:39,920
+Pardon şeyle çizeyim. Kırmızıyla
+
+3001
+02:15:39,920 --> 02:15:41,020
+çizeyim. Daha iyi olacak.
+
+3002
+02:15:44,890 --> 02:15:45,609
+Şu ifade.
+
+3003
+02:15:47,729 --> 02:15:49,729
+Şu üç girişli kapıyla oluşmuştu değil mi?
+
+3004
+02:15:53,510 --> 02:15:54,470
+İkinci ifade
+
+3005
+02:15:54,470 --> 02:15:56,869
+yine şu üç kapılığıyla oluştu.
+
+3006
+02:15:58,050 --> 02:15:59,329
+En sonunda bunların
+
+3007
+02:15:59,329 --> 02:16:00,390
+ne yapılıyor?
+
+3008
+02:16:01,229 --> 02:16:03,270
+Bu terimlerden çıkan sonuçlar
+
+3009
+02:16:03,270 --> 02:16:05,350
+yani şurada teker teker
+
+3010
+02:16:05,350 --> 02:16:07,569
+çarpılıyor. Seri derken
+
+3011
+02:16:07,569 --> 02:16:09,010
+başka nasıl olabilir ki?
+
+3012
+02:16:10,029 --> 02:16:11,369
+Çarpım şeklindeyse
+
+3013
+02:16:11,369 --> 02:16:13,529
+zaten bunların sonuçlarının çarpılması
+
+3014
+02:16:13,529 --> 02:16:15,750
+lazım. Burada seri ve paralellik
+
+3015
+02:16:15,750 --> 02:16:16,649
+diye bir kavram yok.
+
+3016
+02:16:17,250 --> 02:16:19,529
+Tamam. Seri paralellik
+
+3017
+02:16:19,529 --> 02:16:20,489
+kavramı yok burada.
+
+3018
+02:16:20,770 --> 02:16:22,770
+Kapılar alt alta ya hani o yüzden
+
+3019
+02:16:22,770 --> 02:16:24,529
+paraların seri mi diye.
+
+3020
+02:16:24,550 --> 02:16:26,829
+Yan yana da yapsan sonuçta bunların
+
+3021
+02:16:26,829 --> 02:16:28,810
+alacağın çıkışını bir yerde başka bir yerde
+
+3022
+02:16:28,810 --> 02:16:30,609
+çarpacaksın. Yani şöyle de yapabilirsin.
+
+3023
+02:16:31,109 --> 02:16:32,889
+Buradan elde ettiğim sonucu aldım. Buradan
+
+3024
+02:16:32,889 --> 02:16:35,110
+elde ettiğim sonucu aldım. Geldim
+
+3025
+02:16:35,110 --> 02:16:36,809
+burada birleştirdim çarptım.
+
+3026
+02:16:37,069 --> 02:16:39,110
+Aynı şey. Alt alta veya yan yana
+
+3027
+02:16:39,110 --> 02:16:40,969
+yapmanın şeyi çok bir
+
+3028
+02:16:40,969 --> 02:16:41,610
+esprisi yok.
+
+3029
+02:16:42,889 --> 02:16:45,149
+Tamam hocam teşekkürler. Rica ederim.
+
+3030
+02:16:47,069 --> 02:16:49,290
+Haftaya arkadaşlar lojik fonksiyonların
+
+3031
+02:16:49,290 --> 02:16:50,750
+indirgenmesi kısmı var.
+
+3032
+02:16:50,770 --> 02:16:53,010
+Eee laboratuvar saatleri bu hafta
+
+3033
+02:16:53,010 --> 02:16:55,209
+olmayacak laboratuvarımız. Önümüzdeki
+
+3034
+02:16:55,209 --> 02:16:56,229
+hafta laboratuvar
+
+3035
+02:16:56,229 --> 02:16:58,889
+tarihlerinin güncellenmesine bir bakın.
+
+3036
+02:16:59,530 --> 02:17:01,030
+İlk gruplar önümüzdeki haftaya
+
+3037
+02:17:01,030 --> 02:17:02,809
+mı kaydı yoksa ikinci gruplar yapıp
+
+3038
+02:17:02,809 --> 02:17:04,729
+ondan sonra birinci grupları mı alacaklar onu
+
+3039
+02:17:04,729 --> 02:17:07,129
+bilmiyorum. Belki tabloları
+
+3040
+02:17:07,129 --> 02:17:08,569
+tekrar düzeltmişlerdir.
+
+3041
+02:17:10,840 --> 02:17:11,639
+Arkadaşlar
+
+3042
+02:17:11,639 --> 02:17:14,280
+benim bu hafta anlatacaklarım
+
+3043
+02:17:14,280 --> 02:17:14,739
+bunlar.
+
+3044
+02:17:16,639 --> 02:17:18,139
+[öğrenci] [öğrenci] dedi.
+
+3045
+02:17:18,700 --> 02:17:19,739
+Anlaşıldı mı dersimiz?
+
+3046
+02:17:19,739 --> 02:17:26,680
+Evet. Tamamdır.
+
+3047
+02:17:27,139 --> 02:17:28,520
+Hepinize iyi akşamlar
+
+3048
+02:17:28,520 --> 02:17:29,500
+diliyorum arkadaşlar.
+
+3049
+02:17:30,399 --> 02:17:31,780
+Kendinize çok iyi bakın.
+
+3050
+02:17:32,739 --> 02:17:34,819
+Ders destansında istediğinizden sorularınızı
+
+3051
+02:17:34,819 --> 02:17:36,579
+sorabilirsiniz. Haftaya
+
+3052
+02:17:36,579 --> 02:17:38,719
+tekrar görüşmek üzere. İyi akşamlar
+
+3053
+02:17:38,719 --> 02:17:39,440
+diliyorum hepinize.

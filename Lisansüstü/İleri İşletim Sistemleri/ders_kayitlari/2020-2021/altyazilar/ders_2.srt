@@ -1,0 +1,2827 @@
+1
+00:01:07,316 --> 00:01:08,796
+Sesim geliyor mu arkadaşlar?
+
+2
+00:01:10,376 --> 00:01:11,296
+Evet hocam geliyor.
+
+3
+00:01:12,076 --> 00:01:12,876
+Evet hocam.
+
+4
+00:01:14,076 --> 00:01:21,456
+Katılanlara bakıyorum. Sayıya 34. Biraz daha bekleyelim. Bir iki dakikada. Böyle başlarız.
+
+5
+00:03:09,268 --> 00:03:14,807
+Anladığım kadarıyla bu kadar da kalacak. Daha başka gelen yok. O zaman derse başlayalım.
+
+6
+00:03:16,348 --> 00:03:25,948
+Şimdi öncelikle gönderdiğiniz ödevler için teşekkür ederim. Sabahtan bir kısmına bakma şansım oldu. Gözden geçirdim.
+
+7
+00:03:27,008 --> 00:03:35,348
+Birkaç tane dikkat etmenizi istediğim nokta var. Onları not alırsanız, bundan sonraki ödev teslimlerinde dikkat ederseniz sevinirim.
+
+8
+00:03:36,147 --> 00:03:45,587
+Birincisi, bu ödevlerde yazdıklarınız, sizin okuduklarınızdan anladığınız sonucunda çıkarttığınız özetler.
+
+9
+00:03:46,328 --> 00:03:51,967
+O yüzden lütfen paperların altına orijinal yazarların isimlerini yazmayın.
+
+10
+00:03:52,563 --> 00:03:58,883
+Çok fazla olmasa da bazı arkadaşlarınız paperların altına orijinal yazarların ismini yazmış.
+
+11
+00:03:59,263 --> 00:04:01,663
+Halbuki orada sizin isminizin olması gerekiyor.
+
+12
+00:04:01,763 --> 00:04:07,203
+Çünkü siz okuyorsunuz, değerlendiriyorsunuz, anlıyorsunuz ve özetliyorsunuz.
+
+13
+00:04:07,203 --> 00:04:10,323
+Ondan dolayı sizin isminiz olmalı. Birincisi bu.
+
+14
+00:04:10,963 --> 00:04:24,563
+İkincisi, şimdi zip, rar veya benzeri bir şekilde ziplemeyin. Anlıyorum, her bir ödevi ayrı bir pdf olarak göndermek istiyorsunuz.
+
+15
+00:04:24,563 --> 00:04:34,063
+Ama bunu yapmanıza gerek yok. Bu haftaki ödev teslimi için açtığım, paper teslimi için açtığım ödevin açıklama alanına da yazdım.
+
+16
+00:04:34,420 --> 00:04:41,259
+Hepsini tek bir pdf dosyasında gönderirseniz benim için daha avantajlı olacak inceleme açısından.
+
+17
+00:04:42,000 --> 00:04:53,100
+Birinci sayfada adınız, soyadınız, numaranız olsun. Hangi paperları değerlendirdiğiniz hem numarası hem de ismiyle beraber olsun.
+
+18
+00:04:53,100 --> 00:04:56,100
+Ondan sonra takip eden sayfalarda da...
+
+19
+00:04:56,723 --> 00:05:14,243
+Paper'ın numarası, adı, özetiniz. Paper'ın numarası, adı, özetiniz bu şekilde. Çünkü mesela baktım, hani dört tane paper vermiş olmama rağmen bir tane yapanınız da var, iki tane yapanınız da var, dördünü yapanınız da var. Sorun değil, kaç tanesini yapıyorsanız.
+
+20
+00:05:24,723 --> 00:05:52,723
+Hem de indirmesi kolay hem de indirdikten sonra bunları değerlendirmesi daha kolay. Bir de sadece PDF teslim etmeniz yeterli benim için. Yani daha işte Word'de hazırlamış olabilirsiniz veya başka bir şeyde o orijinal hallerini bana göndermenize gerek yok. PDF'teki hali benim için yeterli. Yine diğer bir şey ona hepiniz dikkat etmişsiniz. Güzel bir şey. Teşekkür ederim. Numaranız adı.
+
+21
+00:05:52,723 --> 00:06:15,603
+Adınız şeklinde başında mutlaka onun da olması gerekiyor. File'ın isminde. Bu haftaki teslimlerde bu söylediğim şeylere dikkat etmenizi özellikle istiyorum. İşlemi daha kolaylaştıracak. Hem sistemden bunların indirilmesi işlemini indirildikten sonra da değerlendirilmesi işlemini çok daha kolaylaştıracak bir şey.
+
+22
+00:06:16,124 --> 00:06:20,223
+Evet, şimdi bu hafta dört tane paper'ımız vardı.
+
+23
+00:06:20,788 --> 00:06:33,268
+Önümüzdeki hafta için üç tane paper söyledim ödevde. Onların da hemen şuradan isimlerini sizinle paylaşabilirim.
+
+24
+00:06:33,268 --> 00:06:37,368
+Dört numara, beş numara ve altı numara.
+
+25
+00:06:38,288 --> 00:06:39,915
+Dört numara...
+
+26
+00:06:40,692 --> 00:06:57,052
+Experience with Processes and Monitors in MESA. MESA bir işletim sistemi. Yine akademik ortamda bir takım işletim sistemleriyle alakalı denemeleri gerçekleştirmek adına oluşturulmuş bir işletim sistemi.
+
+27
+00:06:58,963 --> 00:07:13,663
+Şu ana kadar da dikkat ederseniz okuduklarımızda monitör yapısını gördünüz. Ondan sonra prosesler arası komünikasyon haberleşme yapısını gördünüz. En başta verdiğim paper zaten akses kontrolü gözden geçiriyordu.
+
+28
+00:07:17,172 --> 00:07:30,932
+İlerliyoruz. Bu sıralamada ilerliyoruz gibi düşünebilirsiniz. Şu anda proses ve monitör kavramını biraz daha bu paperda derinlemesine inceleyeceksiniz, değerlendireceksiniz.
+
+29
+00:07:44,112 --> 00:08:02,012
+Yani bir prosesin distributed bir yapıda, bir prosesin bir sistemde bir başka sisteme nasıl migrate edeceği konusu tartışılıyor.
+
+30
+00:08:08,531 --> 00:08:25,692
+Uğratılmasının en aza indirilmesi ve benzeri şeyler. Tabii ki bunu yapmanın arkasında temel şeylerden biri de, hedeflerden biri de yük dengelemesini sağlamak ve diğer taraftan fault total olması sağlamak.
+
+31
+00:08:35,443 --> 00:08:54,403
+Tanımlanmış olan bir takım kavramların, incelenmiş olan bir takım yapıların, günümüzde sanal makinelerin bir hypervisor'dan bir başka hypervisor'a aktarılmasında da kullanıldığını, uygulandığını görebilirsiniz.
+
+32
+00:08:54,823 --> 00:08:56,483
+Diğer aydınlıkları size bırakıyorum.
+
+33
+00:08:57,395 --> 00:09:17,755
+Bunun tabi burada Demos işletim sistemi var. Demos'un bir normal versiyonu bir de multiprocessor MP versiyonu var. Altı numarada da Demos'da yani multiprocessor olmasına gerek yok. Sadece single processor da olsa yeterli.
+
+34
+00:09:20,851 --> 00:09:32,152
+Komünikasyon, task komünikasyondan bahsediyor. Yine bakın aynı şey etrafında dönüp duruyoruz. Çünkü başlangıçta epey uğraşılmış ve çalışılmış olan konulardan bir tanesi bu.
+
+35
+00:09:32,152 --> 00:09:40,091
+Şimdi bu üç tanesini verdim. Baktığımız zaman yaklaşık 45 sayfa gibi bir şey ediyor.
+
+36
+00:09:40,755 --> 00:09:49,495
+Yani çok şey olmayacaktır diye, sizi zorlamayacaktır diye bir haftada üçünü birden yapabileceğinizi tahmin ediyorum.
+
+37
+00:09:49,836 --> 00:09:55,475
+Evet, demek ki önümüzdeki haftanın ödevi buymuş, değerlendirecek şeyler buymuş.
+
+38
+00:09:55,956 --> 00:09:58,836
+Sistemde de ödev ilan edilmiş durumda.
+
+39
+00:10:00,836 --> 00:10:03,755
+Dersin sonu itibariyle saat 3'te görünecek.
+
+40
+00:10:05,812 --> 00:10:12,031
+Ondan sonra yine önümüzdeki pazar 23.59'a kadar sisteme yükleyebileceksiniz.
+
+41
+00:10:13,652 --> 00:10:19,552
+Şimdi, bugünkü birinci paper neydi?
+
+42
+00:10:20,471 --> 00:10:24,372
+İşte Handicap Protection Rings.
+
+43
+00:10:25,312 --> 00:10:29,031
+Evet, bununla alakalı yorum yapmak isteyen var mı?
+
+44
+00:10:29,392 --> 00:10:31,111
+Başlamadan bir şey sorabilir miyim?
+
+45
+00:10:31,700 --> 00:10:54,819
+Evet, [öğrenci]. El kaldırmıştım ama bir arkadaş da sormuş chatte. Geçen hafta ödev verildi falan diye, yeni eklendi diye. Şimdi benim de pazartesiden sonra tahminen cuma günü falan, perşembelerde yoktu çünkü. Eklendi. Ben ikinci hafta yani bu hafta yeni başladım. Bu ilk ödev için bizim bir hakkımız olacak mı? Yoksa bu önümüzdeki, bundan sonrakileri mi takip ederiz? Nasıl olacak?
+
+46
+00:11:00,692 --> 00:11:04,892
+Benimle temasa geçti ama [öğrenci] değil diye anlıyorsam. Bir başka arkadaş.
+
+47
+00:11:04,892 --> 00:11:14,932
+Hocam, ben yazdım. Melilli yazmamıştım sizi. Fakat dersler bize bu hafta eklendi. Pazartesi eklendi bu itibariyle.
+
+48
+00:11:14,932 --> 00:11:21,351
+Ama kime yazdım bilmiyorum. Nasıl gönderebilirim sistemde görünmüyorum diyordu.
+
+49
+00:11:21,351 --> 00:11:22,731
+Ben hocam, [öğrenci].
+
+50
+00:11:22,991 --> 00:11:28,692
+[öğrenci], tamam. [öğrenci] benimle temasa geçti. Ben bu haftanın ödevini şey olarak gönderebilirim.
+
+51
+00:11:55,827 --> 00:12:04,207
+Ben de aynı durumdayım. Siz de geçen haftanın ödevini mail olarak gönderebilirsiniz. Aynı şey [öğrenci] için de geçerli.
+
+52
+00:12:04,707 --> 00:12:08,788
+Hocam, maille alakalı, daha doğrusu ödevlerle alakalı herhangi bir bilgi olmadığı için.
+
+53
+00:12:09,447 --> 00:12:09,467
+Anladım.
+
+54
+00:12:09,467 --> 00:12:10,888
+Şeyler yok, anladım.
+
+55
+00:12:10,987 --> 00:12:11,727
+Hiçbir şey, evet.
+
+56
+00:12:12,567 --> 00:12:16,627
+Okey, anladım. Link yok, şeyler yok, dökümanlar yok. Tamam, şimdi anladım.
+
+57
+00:12:16,627 --> 00:12:17,307
+Evet hocam.
+
+58
+00:12:17,427 --> 00:12:20,668
+Peki [öğrenci], sen nereden elde ettin dökümanları?
+
+59
+00:12:21,148 --> 00:12:28,508
+Hocam, ben aynı dersi seçen başka bir arkadaşım vardı, tanıdığım. Ona sordum ödeye verildi mi bu hafta diye. O şekilde öğrendim.
+
+60
+00:12:29,067 --> 00:12:31,107
+Arkadaşım olmasaydı benim de bilgim olmayacaktı.
+
+61
+00:12:31,107 --> 00:12:43,008
+Tamam, okey. Şimdi ben geçen hafta yazdım. Bir kez daha yazayım. Bana lütfen şu e-mail adresinden bir işin. Yıldız e-mail adresinde sorun var.
+
+62
+00:12:43,827 --> 00:12:53,987
+Sıkıntı var. [öğrenci] ve [öğrenci], bana buradan mail atarsanız ben size dokümanların linkini aktaracağım. Oradan download edebilirsiniz. Tamam mı?
+
+63
+00:12:54,227 --> 00:13:03,847
+Tamam. Peki hocam bize mesela bu bir hafta içinde ikisini de göndersek şey var mı? Hani bir süre kısmımız var mı? Bir hafta gibi bir süre mi var?
+
+64
+00:13:04,347 --> 00:13:09,127
+Haftaya kadar siz öbürünü de yöneyeceksiniz. Yani maalesef.
+
+65
+00:13:09,296 --> 00:13:23,876
+Benim yapabileceğim bir şey yok. Biraz bir hafta zorlanmış olacaksınız ama 21'i 23.59'a kadar hem ilk haftanın hem de ikinci haftanın ödevlerini göndereceksiniz.
+
+66
+00:13:23,876 --> 00:13:24,296
+Tamam.
+
+67
+00:13:25,115 --> 00:13:31,576
+Tamam, bu şekilde. Evet, şimdi soruya geri dönelim.
+
+68
+00:13:32,179 --> 00:13:55,259
+Burada, bu paperda Hardware Architecture for Implementing Protection Rings paperında ne anlatılıyor? Bunun özü nedir? Kim bunu? Senin el kaldırmanı nasıl durdurabiliyoruz? Echno oluş mu ediyoruz? Lower hand. Heh tamam, ben yapıyormuşum. Echno oluş ettim. Evet, var mı?
+
+69
+00:13:55,259 --> 00:13:56,859
+Evet hocam.
+
+70
+00:13:58,067 --> 00:14:07,908
+Sesiniz çok derinden geliyor. Evet hocam. Evet. İngilizce konuşabilir miyim hocam? Buyurun konuşalım. Tamam.
+
+71
+00:14:07,908 --> 00:14:21,867
+A protection of computation and information is an important aspect of computer. There must be a solution between users and information.
+
+72
+00:14:22,515 --> 00:14:31,015
+Açık kullanıcı bir şey yoksa bir şey yoksa bir şey yoksa bir şey yoksa.
+
+73
+00:14:42,067 --> 00:15:00,067
+Bu konuyu örneklerle anlatacağım.
+
+74
+00:15:00,067 --> 00:15:03,067
+Bir sonraki, bir sonraki.
+
+75
+00:15:03,067 --> 00:15:06,067
+[öğrenci], orhala?
+
+76
+00:15:06,707 --> 00:15:08,707
+Evet, [öğrenci].
+
+77
+00:15:08,707 --> 00:15:12,707
+[öğrenci]. Okay. Are you reading from what you have submitted?
+
+78
+00:15:12,707 --> 00:15:14,379
+Hayır hocam.
+
+79
+00:15:14,772 --> 00:15:17,772
+Ne anladım, yazdım.
+
+80
+00:15:36,467 --> 00:15:48,467
+Bu paperi proposesin bir metodaki ilimlemeni de bu protection rings, ne?
+
+81
+00:15:48,467 --> 00:15:50,467
+Bu ne?
+
+82
+00:15:51,604 --> 00:16:07,936
+Bu, bu
+
+83
+00:16:07,936 --> 00:16:17,296
+Busa protein, yani bring the data from the Busa decide ring.
+
+84
+00:16:17,296 --> 00:16:35,936
+Isn't it like that the rings already existed in software, but the protection rings existed only in software and this paper proposes a method.
+
+85
+00:16:35,936 --> 00:16:43,936
+İlk başta, bu paperi'nin çalışması için, bu konuyu örneğe başlayalım.
+
+86
+00:16:48,244 --> 00:16:53,224
+Somebody else to comment on? Yok mu arkadaşlar başka yorum yapacak?
+
+87
+00:16:54,924 --> 00:16:56,604
+Hocam sesim geliyor mu?
+
+88
+00:16:57,124 --> 00:16:57,584
+Geliyor.
+
+89
+00:16:58,484 --> 00:17:10,244
+Hocam daha önceki sistemlerde zaten software üzerinde bu protection rings implement edilmişti de, bu paperde aynı bu protection rings'i nasıl...
+
+90
+00:17:10,612 --> 00:17:19,072
+Donanım yani hardware kısmında özellikle Maltics işletim sisteminde implemente edileceğini anlatmış.
+
+91
+00:17:19,532 --> 00:17:26,492
+Peki bu implementasyon için bir takım temel kriterler ortaya atmış yazarlar.
+
+92
+00:17:26,492 --> 00:17:29,972
+Yani bu kriterler çok önemli demişler. Nedir o kriterler?
+
+93
+00:17:32,112 --> 00:17:32,831
+[öğrenci] merhaba.
+
+94
+00:17:33,451 --> 00:17:33,892
+Merhaba.
+
+95
+00:17:33,951 --> 00:17:34,831
+Devam edebilir mi?
+
+96
+00:17:35,472 --> 00:17:35,811
+Tabii.
+
+97
+00:17:39,476 --> 00:17:50,276
+İngilizce de tavsiye ederim.
+
+98
+00:18:02,259 --> 00:18:13,900
+ve bu
+
+99
+00:18:25,807 --> 00:18:30,807
+İlhamdülillah.
+
+100
+00:18:45,203 --> 00:18:55,203
+Biri fonksiyonel kapabilite, veri erişim mekanizmalarının her türlü alışılmış veya alışılmamış koruma ihtiyacını doğal yoldan karşılamalı.
+
+101
+00:18:55,763 --> 00:19:05,483
+Diğeri ekonomiklik tasarrufu, veri erişim mekanizmalarının gelişmiş veya gelişmemiş tüm özellikleri için düşük karmaşıklık, kullanıcı yüküne mal olmalı.
+
+102
+00:19:05,864 --> 00:19:12,844
+Fazladan bellek ve işlem zamanı gerektirmemeli. Üçüncüsü basitlik, kullanıcı menfaatine uygun olmalı.
+
+103
+00:19:13,203 --> 00:19:20,163
+Basitlik aynı zamanda güvenilirlik de getirmeli ve sistemde açık yaratmamalı, anlaşılabilir olmalı.
+
+104
+00:19:21,304 --> 00:19:25,804
+[öğrenci], sen bir şey söyleyeceksin galiba.
+
+105
+00:19:26,163 --> 00:19:30,043
+Aynen hocam, söz hakkı almak için kaldırmıştım. Aynı şeyleri söyleyecektim ben de.
+
+106
+00:19:34,043 --> 00:19:39,083
+Zaten bu otoriterler bütün sistemleri için gerekli olması lazım.
+
+107
+00:19:39,859 --> 00:19:59,239
+Hayır ama bütün sistemler için gerekiyor olup olmaması meselesi değil ki. İlk defa böyle bir şey donanımda gerçekleştiriliyor. Tarihine de bakarsanız ne kadar eski olduğunu göreceksiniz ve bu mekanizmanın donanımda gerçekleştirilirken de bu dört tane kriteri mutlaka sağlaması gerektiği üzerinden gidiliyor.
+
+108
+00:20:00,000 --> 00:20:09,720
+Requirement'lar konulmuş. Ona göre bir tasarım şeyi. Günümüzde artık bunlar çok alışılagelmiş. Sürekli uyguluyoruz ama olayın başlangıç noktası bu.
+
+109
+00:20:10,420 --> 00:20:16,259
+Şeyi merak ediyorum, bu az önce neydi? [öğrenci] diye mi hitap ediyorum, [öğrenci] diye mi? Hangisi?
+
+110
+00:20:16,360 --> 00:20:17,539
+[öğrenci] diyebilirsiniz hocam.
+
+111
+00:20:17,539 --> 00:20:27,460
+Tamam, az önce [öğrenci] arkadaşınız söyledi şu ekonomi. Ekonomiyi biraz daha bir açabilir miyiz? Ne anlama geliyor buradaki bu ekonomi?
+
+112
+00:20:30,099 --> 00:20:42,899
+Ekonomi, yani herhangi bir şekilde işte bellek fazladan bellek kullanıma ya da ne bileyim hani işlem zamanı gerektirmemesi.
+
+113
+00:20:42,899 --> 00:20:45,699
+Yani mümkün olduğu kadar.
+
+114
+00:20:47,188 --> 00:21:00,847
+Bu yöntemin ağırlığını hissetmemeliyiz. Bu yöntem devreye girdiği için yavaşlamamamız lazım veyahut da alışkanlıklarımızı çok fazla değiştirmememiz lazım. Bize transparent olması lazım değil mi?
+
+115
+00:21:02,771 --> 00:21:04,352
+Evet [öğrenci], söyle.
+
+116
+00:21:04,352 --> 00:21:22,632
+Hocam bir de paperda bu kısım anlatıldıktan sonra bu ayrıntılara yer verildiğinde şunu da belirtmiş yazarlar. Bunların hepsinin aynı anda karşılanması oldukça güç olabilir. Yani ekonomide zarar varken basitlikte ve programlama genelliği kısmında.
+
+117
+00:21:23,039 --> 00:21:34,620
+Bir kazanç olabileceğinden bahsetmiş yazarlar. Bu yeteneği arttırabilirken ekonomiden iste istemez ödün vermemiz gerektiğini belirtmiş yazarlar.
+
+118
+00:21:35,240 --> 00:21:44,200
+Süper, çok güzel. Peki bu yapı bir arkadaşınız daha el kaldırıyor. [öğrenci] diye mi sesleniyorum? Nasıl sesleniyorum size?
+
+119
+00:21:44,692 --> 00:22:10,412
+As I read in this paper, the researcher tried to work on MULTEX, that is the mainframe time-sharing OS, and virtual memory using multi-language support, and tried to develop the protection rings on this system.
+
+120
+00:22:38,816 --> 00:23:01,163
+Bu, bu
+
+121
+00:23:01,268 --> 00:23:12,908
+Ama bu konuda, bu konuda, bu konuda, bu konuda, bu konuda.
+
+122
+00:23:12,943 --> 00:23:14,943
+İlmanitör, Göt.
+
+123
+00:23:14,943 --> 00:23:15,943
+Yeni, even...
+
+124
+00:23:15,943 --> 00:23:18,943
+You are just mixing the subjects, I guess.
+
+125
+00:23:18,943 --> 00:23:19,943
+Yes.
+
+126
+00:23:19,943 --> 00:23:24,943
+You are jumping from one paper to another.
+
+127
+00:23:24,943 --> 00:23:28,943
+We are not finished with this first paper yet.
+
+128
+00:23:28,943 --> 00:23:29,943
+Yes.
+
+129
+00:23:29,943 --> 00:23:30,943
+Okay.
+
+130
+00:23:30,943 --> 00:23:32,943
+Hocam, ben, is this?
+
+131
+00:23:34,516 --> 00:23:35,896
+Yankı yaptı.
+
+132
+00:23:36,016 --> 00:23:37,176
+Ben bir şey söyleyebilir miyim?
+
+133
+00:23:37,176 --> 00:23:38,176
+Sözülemiyorum şimdi.
+
+134
+00:23:38,176 --> 00:23:39,896
+Sözülemiyorum. Tabii ki söyleyemiz.
+
+135
+00:23:43,216 --> 00:23:44,676
+Makalada şey de vardı.
+
+136
+00:23:45,296 --> 00:23:48,056
+Silgilisinin adında bir şey de vardı. Ona da çok değinmişlerdi.
+
+137
+00:23:48,236 --> 00:23:52,956
+Yani şey, bu transparent ve çok kompleks olmaması daha iyi.
+
+138
+00:23:53,316 --> 00:23:58,496
+Yani sekünti konusunda çok zarar verebilir sisteme. O yüzden bu da çok önemli bir konuydu.
+
+139
+00:23:59,536 --> 00:24:01,456
+Makalada çok ona değinmişlerdi.
+
+140
+00:24:03,571 --> 00:24:05,591
+Şimdi Paris'e konuşan sen misin?
+
+141
+00:24:05,911 --> 00:24:06,871
+Evet, sen misin?
+
+142
+00:24:07,371 --> 00:24:19,591
+Tamam, okey. Bir daha bir söyler misin lütfen? Seni ararken, dinleyemedim de ön sayfa, arka sayfa 50 kişi olunca nereden geliyor, kim istedi, şey yaptı diye. Evet.
+
+143
+00:24:20,016 --> 00:24:43,635
+Şu konuda simpilisiti konusunda bir şey anlatmışlardı detaylı bir şekilde. Yani anlaşılabilir ve kolaylıkla transparent olması önemli bir konuydu. Çünkü güvenlik kısmında sorun açabilirmiş. O yüzden anlaşılabilir olması da çok önemli bir konu. Kesinlikle ona dikkat etmeleri gerektiği şekilde bir yazı vardı.
+
+144
+00:24:44,339 --> 00:24:56,419
+Peki, ringlerin birbirine göre durumuyla alakalı yapmak isteyen biri eko yapıyor arkadaşlar bir şeyden dolayı. Hanginizden geliyor bilmiyorum ama.
+
+145
+00:24:59,539 --> 00:25:00,259
+Nasıl oluyor?
+
+146
+00:25:00,619 --> 00:25:01,219
+Ben söyleyeyim.
+
+147
+00:25:01,219 --> 00:25:02,079
+Ben hocam.
+
+148
+00:25:04,279 --> 00:25:05,579
+Evet [öğrenci], dinliyorum.
+
+149
+00:25:06,259 --> 00:25:08,299
+Ringleri 8-
+
+150
+00:25:08,299 --> 00:25:10,039
+Sesini biraz açabilir misin [öğrenci]?
+
+151
+00:25:10,919 --> 00:25:11,679
+Şimdi nasıl hocam?
+
+152
+00:25:12,596 --> 00:25:14,216
+Yani bir tık daha iyi gibi.
+
+153
+00:25:14,776 --> 00:25:29,375
+Evet. Yani sekiz farklı ring olarak tasarlamış diye anladım. Sıfırıncı seviye en yüksek yetkiye sahip ring seviyesi. Yedinci seviyede en düşük seviyeye sahip ring seviyesi.
+
+154
+00:25:29,375 --> 00:25:39,556
+Evet. Peki hocam bu Multics sistem için tasarlanmış. Yani önemilmiş bir yapı.
+
+155
+00:25:40,019 --> 00:26:03,320
+Bir saniye [öğrenci]. Şimdi birbirinizi görmüyorsunuz. Sanal ortamdayız. Cevap vermeye heveslisiniz farkındayım ama bundan sonrası için şu el kaldırma olayını oturtursak daha iyi olacak. Çünkü ben sizi takip edemiyorum. Ekranda bir oraya bir buraya sıçrıyor. Çünkü tek ekranda sığmıyorsunuz. Evet [öğrenci] dinliyorum şimdi seni.
+
+156
+00:26:07,284 --> 00:26:18,624
+8 tane ring önerilmiş. Ama bu define değil. Başka sistemler için daha fazla ring de olabilir diye paperda.
+
+157
+00:26:18,624 --> 00:26:30,884
+[öğrenci] açıklama yaparken şunu soruyordum ona. Yani 0 en yetkili, 7 en yetkisiz. Okey ama bu yetki veya yetkisizlik neyi belirliyor, neyi sağlıyor?
+
+158
+00:26:33,907 --> 00:26:36,027
+Nasıl bir şey bu? Niçin var?
+
+159
+00:26:37,927 --> 00:26:40,667
+Hocam, kaynaklara erişim. [öğrenci] ben bu arada.
+
+160
+00:26:41,807 --> 00:26:43,387
+Devam edeyim mi? Parmak kaldırma.
+
+161
+00:26:43,967 --> 00:26:49,027
+Tamam. Bundan sonra şu parmak olayını oturtursak hepimiz için. Evet, devam edebilirsiniz [öğrenci].
+
+162
+00:26:49,395 --> 00:27:07,635
+Hocam, sistem kaynaklarına erişim kısıtlaması için bu ring mekanizması devreye alınıyor. Hem de güvenlik için. Sonuçta proseslerin birbirlerine ait verilere erişmemesi gerekiyor veya sistem kaynaklarına doğrudan erişmemesi gerekiyor kullanıcıların.
+
+163
+00:27:07,635 --> 00:27:16,755
+Bu erişimi kontrol edebilmek için ring mekanizması oluşturulmuş. Bazı durumlarda da bu ringlerin birbirleri arasında transferi söz konusu.
+
+164
+00:27:17,395 --> 00:27:19,675
+transferi söz konusu. Bir kullanıcı
+
+165
+00:27:19,675 --> 00:27:21,296
+sistem kaynaklarına erişmek istediğinde
+
+166
+00:27:21,296 --> 00:27:23,415
+ring sıfıra ait veya kendisinden
+
+167
+00:27:23,415 --> 00:27:25,576
+daha düşük numaralı
+
+168
+00:27:25,576 --> 00:27:26,516
+ve daha yetkili
+
+169
+00:27:26,516 --> 00:27:29,875
+ring seviyelerine geçiş yapabilmesi
+
+170
+00:27:29,875 --> 00:27:31,536
+gerekiyor. Bu geçiş
+
+171
+00:27:31,536 --> 00:27:33,576
+içinde ringler arasında
+
+172
+00:27:33,576 --> 00:27:35,536
+yetki transferi diyebileceğimiz
+
+173
+00:27:35,536 --> 00:27:37,395
+bir mekanizma söz konusu.
+
+174
+00:27:38,036 --> 00:27:43,816
+Tamam. Şimdi bir saniye. Kim önce... Olur galiba ben de olur.
+
+175
+00:27:44,336 --> 00:27:50,056
+[öğrenci] diye seslenebilirsiniz hocam. Merhabalar. Ben de şunu eklemek istiyorum.
+
+176
+00:27:51,276 --> 00:27:52,276
+[öğrenci] ne?
+
+177
+00:27:53,276 --> 00:27:57,096
+İzgiyi kullanıyorum ikisini de söyleyebilirsem ama İzgiyi tercih ediyorum.
+
+178
+00:27:58,936 --> 00:28:04,216
+Sistemde okuma, yazma ve execution dediğimiz yürütme gibi işlemler mevcut.
+
+179
+00:28:05,807 --> 00:28:15,487
+Her işlemin bu ayrıcalıklarını, bu işlemlerden hangisini yapabileceğini belirlemek adına da ring sistemi kullanılıyor durumda.
+
+180
+00:28:15,487 --> 00:28:22,288
+Mesela bazı operasyonlar sadece okuma işlemi yaparken bazıları okuma ve yazma işlemleri gerçekleştirebilir.
+
+181
+00:28:22,447 --> 00:28:30,087
+Bunun için de aslında bu sistem yararlı. Yani bu erişim kontrolü dediğimizde aslında bunlar da önemli bir şekilde gündeme geliyor.
+
+182
+00:28:30,740 --> 00:28:34,880
+Tamam, teşekkür ederim. [öğrenci], sen de el kaldın işte. Bilmiyorum.
+
+183
+00:28:35,960 --> 00:28:44,799
+Hocam, ben de şey ekleyecektim sadece. Üst seviyeli linklerden, alt seviyeli linkleri giyitler yordamıyla geçiliyor. Tansiyonu bir geçiş de mümkün olmuyor.
+
+184
+00:28:45,500 --> 00:28:51,740
+Üstte yani yüksek seviyeli önceliği yüksek olandan düşük önceliğe geçiş...
+
+185
+00:28:52,276 --> 00:28:58,776
+Mümkün değil. Ancak düşükten yükseğe geçiş var değil mi? O da kapı aracılığıyla, o gate aracılığıyla oluyor. Öyle mi anlıyoruz?
+
+186
+00:28:59,136 --> 00:29:00,096
+Evet hocam.
+
+187
+00:29:00,276 --> 00:29:10,676
+Şüper. Peki, sorumu sormadan önce [öğrenci] mı? [öğrenci] mı? [öğrenci] mi? Nasıl okuyorum bilemiyorum kusura bakma.
+
+188
+00:29:10,736 --> 00:29:11,256
+[öğrenci].
+
+189
+00:29:11,636 --> 00:29:12,936
+[öğrenci], tamam. Okey.
+
+190
+00:29:13,855 --> 00:29:19,556
+Hocam, ben bir şey bahsedeceğim ama İngilizce.
+
+191
+00:29:20,211 --> 00:29:21,372
+Konuşalım.
+
+192
+00:29:21,759 --> 00:29:28,759
+ve
+
+193
+00:29:28,759 --> 00:29:50,759
+bir
+
+194
+00:29:49,759 --> 00:30:07,359
+Bu bir şey değil, ama bu bir şey değil.
+
+195
+00:30:07,571 --> 00:30:22,543
+Anladım. Can we also say that the ring mechanism provides some sort of encapsulation? It is just like the interfaces in object-oriented languages.
+
+196
+00:30:22,544 --> 00:30:27,544
+İlk olarak, bu bir şey değil, bu bir şey değil.
+
+197
+00:30:27,544 --> 00:30:30,544
+Ama bu bir şey değil.
+
+198
+00:30:30,544 --> 00:30:38,544
+Bu, bu bir şey değil.
+
+199
+00:30:38,544 --> 00:30:44,128
+Bir şey değil.
+
+200
+00:30:44,127 --> 00:30:50,107
+To upper layers, whatever it chooses to expose. We can say that too.
+
+201
+00:30:50,707 --> 00:30:59,927
+Bir şey sorayım. Az önce, böyle Türkçe-İngilizce karışık oluyor ama, [öğrenci] arkadaşınız açıklama yaparken soracağım demiştim.
+
+202
+00:31:01,288 --> 00:31:03,107
+Şimdi...
+
+203
+00:31:03,667 --> 00:31:13,627
+Bu kadar çok ring var. Üst ringler alt ringi çağırabiliyor ama altlar üstü çağıramıyor. Alttan neyi çağıracağımız kapılar aracılığıyla belirlenmiş durumda.
+
+204
+00:31:23,028 --> 00:31:37,507
+Security ve Protection için mesela spesifik olarak kernel'ın içerisinde nerede kullanılabileceğini söyleyebilir misiniz? Hangi senaryo için uygun olabileceğini söyleyebilir misiniz?
+
+205
+00:31:45,844 --> 00:31:47,104
+Evet, [öğrenci].
+
+206
+00:31:49,604 --> 00:31:55,504
+Hocam, mesela memory'de kullanıcıların her yere erişmemesi gerekiyor.
+
+207
+00:31:56,224 --> 00:31:56,384
+Ok.
+
+208
+00:31:56,384 --> 00:31:57,784
+Bunun için zaten birçok memory.
+
+209
+00:31:58,524 --> 00:32:02,784
+Körnel'ın içinde dedim ama [öğrenci], dikkat et. Körnel'ın içinde dedim.
+
+210
+00:32:03,624 --> 00:32:08,224
+Körnel için, Körnel içinde. Dediğin yerden belki oraya doğru gidebilirsin, bir yol var.
+
+211
+00:32:09,172 --> 00:32:14,711
+Yani kullanıcıların yazdığı kodların hafızanın tüm bölgelerine erişmemesi gerekiyor.
+
+212
+00:32:15,124 --> 00:32:19,884
+Bunun için bu ring mekanizması kernel'da...
+
+213
+00:32:19,884 --> 00:32:22,283
+Kernel'ın özelliği nedir? Kernel'ın temel olasıdır.
+
+214
+00:32:22,283 --> 00:32:32,543
+Kernel'ın özelliği donanıma, kullanıcılara donanıma direkt erişmesini, kaynaklara direkt erişmesini engellemek. Onlara sistemin kaynaklarını paylaştırmak.
+
+215
+00:32:41,215 --> 00:32:43,155
+Canını çektiği gibi erişebilir mi?
+
+216
+00:32:44,635 --> 00:32:54,875
+Yani kernel en yetkili ring seviyesine sahip olduğu için tabii işlemcinin ve donanımın verdiği izinler çerçevesinde herhalde erişebilir diyebiliyorum.
+
+217
+00:32:54,875 --> 00:32:58,096
+Tamam, bir arkadaşımız daha el kaldırdı.
+
+218
+00:32:58,900 --> 00:33:02,079
+Viyam diye mi okuyacağım? Nasıl okuyacağım?
+
+219
+00:33:26,900 --> 00:33:32,600
+Ring to files system drivers.
+
+220
+00:33:34,640 --> 00:33:41,160
+So now you have the clue to answer my question.
+
+221
+00:33:42,320 --> 00:33:52,400
+If you transpose what you have said to my question, then you will have the answer.
+
+222
+00:33:53,428 --> 00:34:09,988
+Yani, OS kernel have the highest privilege. Ama user applications have the lowest privilege.
+
+223
+00:34:09,988 --> 00:34:19,708
+No, no, no. That's not what I mean. Arkadaşlar, bakın az önce UM aslında söyledi ama tam devamını getiremedi.
+
+224
+00:34:20,500 --> 00:34:37,619
+Şimdi driverlar, mesela device driverlar, bir printer'ın device driver'ı, bir diskin device driver'ı, bir cihazın başka şu anda herhangi bir şey, external cihazın device driver'ı da kernel'ın içinde olabilir.
+
+225
+00:34:37,619 --> 00:34:46,619
+Ama farklı bir ringe onu yerleştirirsek o device driver'da oluşacak bir sıkıntının...
+
+226
+00:34:47,347 --> 00:34:59,507
+Bir programlama hatası, bir güvenlik zafiyeti veya bir başka şeyin aslında kernel'ın tamamını çökertmesini, devre dışı bırakmasını engellemiş oluruz.
+
+227
+00:34:59,507 --> 00:35:09,507
+Şu an maalesef modern işletim sistemlerinde çok uzun yıllar boyunca uygulanan yapı,
+
+228
+00:35:10,452 --> 00:35:27,452
+İkili bir seviye. Bakın biz burada 8 tane linkten bahsediyoruz. Ama bu implementasyon kolaylığı açısından neye indirgenmiş? 2'ye indirgenmiş. 0 ve 1. 0 kernel, 1 user. O yüzden kernel'ın içerisinde yer alan her şey...
+
+229
+00:35:28,179 --> 00:35:38,979
+Sıfırıncı ring diye düşünün. Hepsinin yetkisi aynı, hepsinin yeteneği aynı. Ancak birinde oluşan bir hata diğer yerleri de devralışı bırakabiliyor.
+
+230
+00:35:39,443 --> 00:35:53,203
+Halbuki Intel işlemcisine baktığımızda günümüzde dahi Intel işlemcisinin Multics'ten ve bu paper'dan esinlenilerek oluşturulmuş bir işlemci mimarisidir.
+
+231
+00:35:54,423 --> 00:36:06,563
+4 tane link desteklediğini görüyoruz. 0, 1, 2, 3 diye. Ancak bunun implementasyondaki zorluklarından dolayı günümüzde sadece 2 tanesi kullanılıyor.
+
+232
+00:36:07,699 --> 00:36:27,579
+Böyle bir avantajı olurdu. Bazı özel uygulamalar için, bazı gömülü safety critical sistemler için bu yapıyı uyguluyor muyuz? Evet, uyguluyoruz ama şey değil. Generally available bir şey değil. Okey. Birinci paper için anlaştık mı o zaman?
+
+233
+00:36:33,172 --> 00:36:43,072
+Evet, hayır. Bir yorumunuz yok mu? Tamam hocam. Anlaşmadık diye. [öğrenci] el kaldırdın ama sonra geri mi çekti?
+
+234
+00:36:45,952 --> 00:36:49,548
+Evet hocam, şunu soracaktım. Yani şu anki donanımlarda...
+
+235
+00:36:49,556 --> 00:36:54,916
+4 ring seviyesi var ama işletim sistemleri 2 tanesini mi kullanıyor demek istediniz?
+
+236
+00:36:55,036 --> 00:37:07,015
+Aynen, aynen. Intel işlemcisi bu görmüş olduğunuz Multics işletim sisteminin geliştirildiği MIT'deki donanımın kopyalanmasıdır.
+
+237
+00:37:07,015 --> 00:37:12,015
+Kötü anlamda söylemiyorum bunu. 1970'li yıllarda...
+
+238
+00:37:12,032 --> 00:37:20,876
+Yani 60'lardan başlıyor, 70'li yıllarda da devam ediyor. MIT'de hem tek...
+
+239
+00:37:20,916 --> 00:37:27,175
+Hem de çoklu yapı şeklinde çalışabilecek işlemci mimarisi üzerinde çalışılıyor.
+
+240
+00:37:27,856 --> 00:37:38,175
+Ve bu işlemci mimarisinde bu şu anda okuduğumuz, üzerinde konuştuğumuz donanım seviyesindeki ring koruma yapısı mevcut.
+
+241
+00:37:38,496 --> 00:37:42,856
+Donanım tarafı bunu öngörmüş ve implement etmiş 8 seviye olarak.
+
+242
+00:37:42,856 --> 00:37:47,556
+Multics de aslında Unix'in babası.
+
+243
+00:37:48,403 --> 00:38:07,324
+Yani orijinal Unix işletim sisteminin adı X ile yazılmıyor. Sonunda CS ile yazılıyor. Başında Multi yerine Uni geliyor. Çünkü biri Multiplex'ten kısaltma Multi, Uni ise Uniplex'ten kısaltma.
+
+244
+00:38:07,860 --> 00:38:25,680
+İşte Intel tarafı işlemciyi komoditi haline getiriyor ama tabii ki bir seferde getirmiyor bunu. Yani 4004 işlemcisi var, 8008 var, ondan sonra işte 8080 var, 8088 var, 8086 var.
+
+245
+00:38:35,860 --> 00:38:51,880
+Kullanmayı seçiyor. Ve 8 fazla bir şey olduğu için kompleksli açısından hem ekonomi hem kompleksli yani o ufak ortamda o günün entegre devre üretim standartlarını da düşünün, yeteneklerini de düşünün.
+
+246
+00:38:55,795 --> 00:39:17,875
+Zaman içerisinde Multics'teki o 8 seviyeli yaklaşım Unix'te kolaylık olsun diye 2 seviyeye indirgeniyor. İşte kernel seviyesi, user seviyesi, kernel mode veya user mode, kernel level, user level bir sürü farklı isimleri var. Hepsi aynı şeyi gösteriyor.
+
+247
+00:39:23,795 --> 00:39:39,175
+İşte bu kernel'ın daha güvenli olması, security açısından zafiyetlerin daha azalması ve benzeri şeylerden ötürü bazı farklı implementasyonlar veyahut da patchler var.
+
+248
+00:39:39,175 --> 00:39:41,215
+Yani nedir o?
+
+249
+00:39:41,583 --> 00:40:04,003
+Intel işlemcisindeki diğer ringlerin de devreye sokulabilmesi adına. Bu Intel tarafı, diğer işlemcilerde de bu ring mekanizması var. Onlar da zaten temel olarak şeyi destekliyorlar ama onun haricinde Extra Memory Protection ring olarak isimlendirilmese bile Extra Memory Protection özelliklerine sahipler. Durum böyle.
+
+250
+00:40:06,704 --> 00:40:10,724
+[öğrenci], [öğrenci], sen bir şey soruyorsun galiba.
+
+251
+00:40:11,724 --> 00:40:16,563
+Hocam, şu an ekran paylaşmıyorsunuz değil mi? Yaklaşık yarım saattir özetmeyiz diyorum.
+
+252
+00:40:16,724 --> 00:40:21,624
+Acaba dedim ekran falan mı paylaşın, herkes bir yerden takip ediyor yoksa PDF'den mi takip ediyor herkes?
+
+253
+00:40:22,184 --> 00:40:26,503
+Sorudan katıldık diye muhtemelen geriden takip ediyoruz arkadaşlarıyla herhalde.
+
+254
+00:40:27,063 --> 00:40:32,264
+Yani paylaşmamı istiyorsanız arkadaşlar paylaşayım ama sonuçta karşılıklı konuşma aşağıda geçiyor.
+
+255
+00:40:34,704 --> 00:40:36,684
+Sonradan katılan arkadaşlar için sürdüm.
+
+256
+00:40:36,684 --> 00:40:38,923
+Linkler bak yayınlandı yanılmıyorsam.
+
+257
+00:40:39,764 --> 00:40:40,244
+Görüyor musunuz?
+
+258
+00:40:40,244 --> 00:40:43,844
+Yok, şu an şeyi açtım da kırılmış o linkler.
+
+259
+00:40:44,084 --> 00:40:45,443
+Yani çalışmıyor, aktif değil.
+
+260
+00:40:46,384 --> 00:40:48,824
+Ama onların doğru, bir hafta süresinde oldu.
+
+261
+00:40:48,903 --> 00:40:49,104
+Evet.
+
+262
+00:40:49,884 --> 00:40:53,224
+Hocam, eğer paylaşabilirseniz ben çok memnun kalırım açıkçası.
+
+263
+00:40:53,907 --> 00:40:58,507
+Böyle radyo tiyatrosu dinler gibi bir saniye.
+
+264
+00:40:58,507 --> 00:41:07,927
+Şu an biraz sonra bir şey oldu. Çok gözümde canlandıramadım. Antalınları az çok. O yüzden benim için daha iyi olur diye düşünüyorum. O yüzden dedim size söyleyeyim.
+
+265
+00:41:08,047 --> 00:41:11,507
+Şu anda size bir tane link gönderdim.
+
+266
+00:41:16,851 --> 00:41:20,652
+Geldi mi? Hepiniz için bana mail...
+
+267
+00:41:20,652 --> 00:41:22,271
+Evet, şu an aktif hocam. Teşekkürler.
+
+268
+00:41:23,072 --> 00:41:23,751
+Estağfurullah.
+
+269
+00:41:25,711 --> 00:41:26,932
+Bir saniye bakayım.
+
+270
+00:41:29,632 --> 00:41:31,972
+[öğrenci] ve [öğrenci].
+
+271
+00:41:33,552 --> 00:41:35,331
+Sizler de bu linki kullanabilirsiniz.
+
+272
+00:41:35,851 --> 00:41:40,411
+[öğrenci] de herhalde yeni katılan. O da evet, Yıldız'a yazdım diyor.
+
+273
+00:41:52,052 --> 00:41:56,211
+İki dakika bir ara verelim arkadaşlar. Bir sonrakiyle devam edeceğiz. Tamam mı?
+
+274
+00:41:57,612 --> 00:41:57,931
+Tamam.
+
+275
+00:41:57,931 --> 00:42:05,172
+45, 50'de veya 46 oldu işte. 50, 51 gibi bir sonrakiyle devam ederiz.
+
+276
+00:56:46,260 --> 00:56:57,360
+Evet arkadaşlar, ikinci paper neymiş başlığı? Practical Transparent Operating System Support for Super Pages.
+
+277
+00:57:04,532 --> 00:57:29,012
+İki el birden kalktı. Özet yapmak için. Eyvah. Herkesin eli birden kalktı. Okey. Şimdi [öğrenci], ilkini sen özetlemiştin. Ondan dolayı senden sonra el kaldırmış olan [öğrenci]'a veriyorum. Tamam mı? Sen sonra şey yaparsın. Sonra da sırayla diğer arkadaşlarınız vardı. Onlara yapacağım. Evet, [öğrenci] seni dinliyoruz.
+
+278
+00:57:31,092 --> 00:57:31,972
+Hocam ben.
+
+279
+00:57:35,572 --> 00:57:38,532
+Evet, el kaldırdın ya. Evet, evet Hüca.
+
+280
+00:57:40,932 --> 00:57:42,412
+Super Pages.
+
+281
+00:57:43,152 --> 00:57:51,012
+The biggest challenge in the computer world is that a computer can get the job done efficiently.
+
+282
+00:57:51,831 --> 00:57:58,112
+This is most likely to be achieved by completing the task with less time and space.
+
+283
+00:57:58,112 --> 00:58:00,112
+One of these challenges...
+
+284
+00:58:27,956 --> 00:58:31,336
+...taken to access a user memory location.
+
+285
+00:58:32,456 --> 00:58:35,175
+Because it decrease the...
+
+286
+00:58:35,175 --> 00:58:36,976
+Bir soracağım. Bir şey soracağım.
+
+287
+00:58:38,756 --> 00:58:42,856
+What is the motivation behind superpages?
+
+288
+00:58:43,216 --> 00:58:44,675
+Let's start with that.
+
+289
+00:58:45,216 --> 00:58:48,036
+Why are superpages required?
+
+290
+00:58:49,096 --> 00:58:51,936
+To reduce the TLB misses.
+
+291
+00:58:53,492 --> 00:59:11,115
+Yani, bu
+
+292
+00:59:12,436 --> 00:59:26,676
+Bir dakika, eller karıştı arkadaşlar. En iyi sen el kaldırmamış mıydın? Sana izin verdim. Sen şey yaptın, vazgeçtin. Peki o zaman [öğrenci] daha sonra el kaldırdı benim ekranıma göre. Evet [öğrenci], dinliyorum.
+
+293
+00:59:27,411 --> 00:59:43,291
+Motivasyonu, belleklerin boyutlarının hızlı bir şekilde artması ve TLB'lerin bu bellekleri kapsamaya yetmeyecek kadar küçük kalmasından dolayı süper page fikrini ortaya atmışlar.
+
+294
+00:59:43,923 --> 00:59:58,603
+Tamam. Peki TLB ne işe yarıyor? Şu an soruya cevap aldık. TLB ne işe yarıyor da TLB'nin boyutunun yetmemesi bu kadar sıkıntı oluyor? İlk defa yeni bir el kaldıran var. [öğrenci]'a vereceğim.
+
+295
+00:59:59,123 --> 01:00:00,943
+Hocam ben konuşmuştum aslında da.
+
+296
+01:00:01,483 --> 01:00:04,243
+Ama cevap için mi ilk defa karıştırdım?
+
+297
+01:00:04,643 --> 01:00:07,683
+Yok. İlk paper için konuşmuştum da.
+
+298
+01:00:09,076 --> 01:00:26,135
+Şöyle hocam, Translation Looker Site Buffer aslında bizim cache'e nasıl gitmemiz gerektiğini söylüyor. Örnek veriyorum, 3 bölümüne baktığı zaman biz 3'e bakıyoruz. 3'te istediğimiz değer var mıdır yok mudur diye. Bu cache kısmını ne kadar geniş tutabilirsem o kadar hızlı sonuç alabiliyorum.
+
+299
+01:00:27,716 --> 01:00:36,416
+Orada bir hata mı? Cache'e nasıl gitmek istediğimizi söylemiyor bence. Diğer arkadaşları da dinleyelim. Sen istersen paper'dan bir daha bir bak.
+
+300
+01:00:36,947 --> 01:00:38,847
+[öğrenci], sana sözlerim.
+
+301
+01:00:38,847 --> 01:00:39,387
+Tamam hocam.
+
+302
+01:00:39,807 --> 01:00:51,487
+Hocam, TLB burada aslında hit oranını arttırmak için kullanılan bir yapı. Normalde zaten bir adres dönüşüm tablosu var. Bu adres dönüşüm tablosunu daha hızlı erişebilmek için ek bir tablo kullanılıyor diyebiliyorum.
+
+303
+01:00:51,487 --> 01:00:56,527
+Tamam, güzel. O zaman iki soru. Neyin hit oranı? Hangi adres dönüşüm tablosu?
+
+304
+01:00:56,800 --> 01:01:13,860
+Bu adres dönüşüm tablosu sanal-fiziksel arasında bir dönüşüm tablosu var. Ama bu büyük bir tablo. Hepsini gezmek bayağı maliyetli. Bunun üzerindeki hit oranını arttırabilmek için, aslında doğrudan onu pas geçip belleğe gidebilmek için ek bir küçük tablo daha kullanılıyor. Bu da TLB oluyor.
+
+305
+01:01:14,380 --> 01:01:19,060
+Peki, hepsini gezmek dedim. Bu adres dönüşüm tablosunu geziyor muyuz?
+
+306
+01:01:19,731 --> 01:01:30,371
+Adres dönüşüm tablosunun boyutu bellekle birlikte aslında üstel şekilde artıyor. O bakımdan onun üzerinde istediğimiz dönüşüm değerini bulmak baya bir zor oluyor.
+
+307
+01:01:32,471 --> 01:01:40,811
+Şimdi üstel dedim. Onu bir düşün bakayım. Üstel şekilde mi artıyor? O sırada ben [öğrenci]'ye söz vereceğim. Evet, [öğrenci].
+
+308
+01:01:43,123 --> 01:01:53,863
+TLB aslında bu bizim dediğiniz gibi sanal alandan, gerçek alandaki adresleri bulmak için page tablosunu keşleyen bir bellek aslında.
+
+309
+01:01:53,863 --> 01:02:03,583
+Peki, şimdi demin [öğrenci]'in sözü üzerine sormuştum. Page tablosu üstel mi artıyor?
+
+310
+01:02:04,083 --> 01:02:16,644
+Nasıl artıyor? O katın acıktıkça diğeri de aslında benzer şekilde artıyor olmalı ama doğru, üstel olmuyor bu durumda. Biri bir artarken biri üstel artmış oluyor, üstel artan bellek kısmı oluyor sanırım.
+
+311
+01:02:17,344 --> 01:02:19,264
+Yani lineer değil mi tablonun?
+
+312
+01:02:19,403 --> 01:02:21,204
+Doğru, bu durumda o lineer artmış oluyor.
+
+313
+01:02:21,503 --> 01:02:28,324
+Şimdi oldu, okey. Bu arada ben sizi yanıtmak için de soruyu olabilirim, belki doğrusunu söylüyorsunuzdur, haberiniz olsun yani.
+
+314
+01:02:28,467 --> 01:02:38,087
+Hocam, üstelik şekilde artsaydı bu daha karmaşık bir yapıya yol açardı. Bir noktadan sonra kırılımı olarak tablomuz bellekten daha büyük olurdu. O açıdan yanlış bence.
+
+315
+01:02:39,667 --> 01:02:45,627
+Güzel bir şey söyledin. Superpage ile beraber aslında bir sıkıntı daha başlıyor değil mi?
+
+316
+01:02:47,572 --> 01:02:58,312
+Memori büyüdüğü için, daha doğrusu memori büyüdüğü için SuperPage'i yerleştirmemiz, koymamız lazım. Çünkü normal page'leri kullanırsak bir başka sıkıntı daha başlıyor. Soru böyle olmalıydı.
+
+317
+01:02:58,675 --> 01:03:05,396
+Nedir o? Bir kontijüs sorunu vardı hocam. Fiziksel olarak arka arkaya bulunmanın sorunu. Bunu mu kastetiyorsun acaba?
+
+318
+01:03:05,396 --> 01:03:20,655
+Demin söyledin [öğrenci]. Eğer ben memorimi çok büyütüyorsam, az önce arkadaşların dediği ya, çok büyüyorsa ama page boyutumu aynı bırakıyorsam, bu sefer page tablomdaki entry sayısı.
+
+319
+01:03:21,268 --> 01:03:36,048
+Çok artacak. Bu durumda ne olacak? Memorimin büyük bir kısmını page dönüşüm tablosu için kullanacağım. Hatta öyle bir senaryo olabilir ki page dönüşüm tablosunun tamamını memoriye sığdıramaz hale gelebilirim.
+
+320
+01:03:36,048 --> 01:03:44,348
+S&P'in kontücüyüs orada. Çünkü page dönüşüm tablosu ne olmak zorunda? Memoride fiziksel olarak arka arkaya giden adreslerde olması lazım.
+
+321
+01:03:44,568 --> 01:03:48,488
+Aynen. Bu sayede tutulacak adres miktarında azalma yapılmış oluyor aslında.
+
+322
+01:03:49,268 --> 01:03:58,648
+Aynen. Peki, Superpage nedir o zaman?
+
+323
+01:04:04,467 --> 01:04:06,807
+[öğrenci]'a söz vereyim bu sefer. Hadi bakalım.
+
+324
+01:04:07,247 --> 01:04:07,467
+Hocam.
+
+325
+01:04:08,727 --> 01:04:11,007
+Ne oldu? Bir anda herkes...
+
+326
+01:04:11,007 --> 01:04:12,447
+Hocam birden fazla [öğrenci] mı var acaba?
+
+327
+01:04:12,947 --> 01:04:17,487
+[öğrenci] dönmeze ben söz verdim ama o el kaldırmıştı. O yüzden...
+
+328
+01:04:17,487 --> 01:04:18,147
+Devam edeyim hocam.
+
+329
+01:04:18,547 --> 01:04:19,227
+Evet, evet. Tamam.
+
+330
+01:04:19,632 --> 01:04:26,532
+SuperPage normal BasePage denilen, normal Page boyutundan büyük boyutlu Page'lere deniliyor.
+
+331
+01:04:27,172 --> 01:04:28,472
+Belli daha verimli kullanabiliyor.
+
+332
+01:04:28,472 --> 01:04:35,232
+O dönem için, bu paper'ın yazıldığı dönem için SuperPage ne kadarlık bir boyutu ifade ediyor?
+
+333
+01:04:35,812 --> 01:04:37,992
+Normal BasePage'ler 4KB.
+
+334
+01:04:41,992 --> 01:04:43,252
+BasePage'ler.
+
+335
+01:04:44,092 --> 01:04:45,852
+Evet, 4KB diye okudum.
+
+336
+01:04:47,219 --> 01:04:49,440
+Ya dur ne yapıyorsun? Öldürdün her şeyi.
+
+337
+01:04:50,940 --> 01:04:58,659
+Bir saniye hocam. Yani base 5'ler 4 kitabayet olması lazım. Grafiklerde de o şekilde yazıyor.
+
+338
+01:04:58,659 --> 01:05:00,239
+Ben de bahsediyorsun. Dikkat et.
+
+339
+01:05:01,619 --> 01:05:05,980
+Evet. Yanlış söylüyorsam hocam devam etmeyeyim.
+
+340
+01:05:06,840 --> 01:05:08,579
+Ya bak şurada şey yazıyor.
+
+341
+01:05:09,588 --> 01:05:21,748
+Öncelikle, Alfa Processor provides 8 kilobytes base pages, 64, 512, 4 kilobytes, 4 megabytes super pages.
+
+342
+01:05:22,036 --> 01:05:32,475
+İ3-86 Processor Family supports 4KB ve 4MB pages.
+
+343
+01:05:32,475 --> 01:05:43,875
+And the new Itanium CPU provides 10 different page sizes from 4KB to 256MB. Hiç ben Gigabyte görmüyorum burada.
+
+344
+01:05:44,000 --> 01:05:47,119
+Hocam, ben de 4 kilobayt dedim ama gigabayt olarak mı anlaşılır acaba?
+
+345
+01:05:47,339 --> 01:05:50,099
+Valla birkaç defa gigabayt geldi. Hiç kilo gelmedi.
+
+346
+01:05:50,239 --> 01:05:51,920
+Yok hocam, 4 kilobayt yani.
+
+347
+01:05:52,420 --> 01:05:57,480
+4 kilobayt. Biraz hızlı konuştuğum için belki ses...
+
+348
+01:05:57,480 --> 01:06:00,119
+4 kilobaytlık base page'ler var.
+
+349
+01:06:00,563 --> 01:06:13,864
+Bundan daha büyük boyutlu, dedi sizin de okuduğunuz gibi 8 kilobaytlık, 64 kilobaytlık, 4 megabaytlık hatta 256 megabaytlık page boyutları oluşturulması gerekiyor. Bunlara da Super Page deniliyor.
+
+350
+01:06:14,804 --> 01:06:27,304
+Evet. Peki, Super Page için bir takım kısıtlar getirmişler. Yani demişler ki Super Page şu özellikleri yerine getirmeli. Onlar nedir?
+
+351
+01:06:28,115 --> 01:06:33,735
+[öğrenci]'ın el havada hemen [öğrenci]'a cevap hakkı verelim. Evet [öğrenci].
+
+352
+01:06:34,775 --> 01:06:38,235
+Hocam aslında ben trade-off'lar kısmına geçecektim. Onun içine kaldırmıştım.
+
+353
+01:06:39,675 --> 01:06:48,475
+Dur ama önce soruma cevap ver ya. Trade-off'u daha şey yapmadım ki. Sorunun cevabını merak ediyorum ben.
+
+354
+01:06:49,844 --> 01:07:08,443
+Hocam, aslında ben o kısmı tam olarak anlayamadım. Aslında o kısımda benim tam bir cevabım yok. Çünkü orada üç farklı işlemci mimarisini karşılaştırıp kendi kullandıkları alfa mimarisindeki base page'lere çok fazla ağırlık vermişti. Sizin sorunuzun tam bir cevabı bende yok ne yazık ki.
+
+355
+01:07:10,403 --> 01:07:15,943
+Paper'da birebir yazıyor [öğrenci] veya [öğrenci] hangi adını tercih ediyorsun şey bilmiyorum ama.
+
+356
+01:07:16,351 --> 01:07:22,111
+Bak, orada paperda bu sorduğum soru o kadar net yazıyor ki.
+
+357
+01:07:23,471 --> 01:07:24,951
+Acaba ben mi atla bu kısım?
+
+358
+01:07:25,751 --> 01:07:31,071
+Var mı cevap vermek isteyen? Ne, [öğrenci]. Evet, [öğrenci].
+
+359
+01:07:31,991 --> 01:07:39,231
+Hocam, CPU, SuperPage boyutunu desteklemesi gerekiyor.
+
+360
+01:07:39,599 --> 01:07:40,599
+Tamam.
+
+361
+01:07:40,599 --> 01:07:51,099
+SuperPage'deki adresler virtual memory'de ve gerçek fiziksel memory'de yan yana olması gerekiyor. Yani adjacent olması gerekiyor.
+
+362
+01:07:51,099 --> 01:07:56,599
+Contiguous diyoruz değil mi? Fiziksel olarak arka arkaya gelmez. Patlama yapamaz. Evet.
+
+363
+01:07:56,599 --> 01:07:57,355
+Evet.
+
+364
+01:07:57,364 --> 01:08:16,824
+Başlangıç adres SuperPage ve SuperPage'de her ikisi için yani hem Virtual Memory hem de Physical Memory için bir olması gerekiyor. Yani SuperPage'in boyutunun bir çarpanı olması gerekiyor.
+
+365
+01:08:16,824 --> 01:08:25,144
+Aynı olmak zorunda değil. Bir dakika bakın. Yani fiziksel memori'deki adresiyle sanal memori'deki adresi aynı olmak zorunda değil.
+
+366
+01:08:25,363 --> 01:08:27,663
+Ancak ne olmak zorunda?
+
+367
+01:08:28,623 --> 01:08:30,063
+Bir çarpan olması gerekiyor.
+
+368
+01:08:30,063 --> 01:08:43,019
+Evet. Yani eğer, aslında şöyle şey yapmak lazım. O tamamen adreslemeyi kolaylaştırmak, donanımsal...
+
+369
+01:08:43,956 --> 01:09:10,275
+Karmaşıklığı azaltmak için. Superpage 64 KB ise başlangıç adresi 64 KB'ın tam katı olmalı. Ama Superpage 256 MB ise o zaman başlangıç adresi de 256 MB'ın tam katı olmalı. Bu requirement gerçeklendiğinde neyi sağlamış oluyoruz?
+
+370
+01:09:11,956 --> 01:09:31,355
+işlemleri ile adresi manipüle edebiliyoruz. Yani sanal adresten fiziksel adrese geçebiliyoruz. Diyoruz ki şu kadarlık biti al, onun yerine bu kadarlık biti koy. Basit end or masklamasıyla veya shift operasyonlarıyla bunu yapabiliyoruz.
+
+371
+01:09:32,115 --> 01:09:48,496
+Son olarak da TLB'deki SuperPage için interler sadece bir bit içerir. O da bir bit referens bit için, bir bit dirty bit için ve yani protection attributes için bir bit içerir.
+
+372
+01:09:48,496 --> 01:09:59,716
+Bu da şu anlama geliyor. Granite nedir biliyorsunuz değil mi? Granulette diye, granular, çözünürlük, hassasiyet.
+
+373
+01:10:00,148 --> 01:10:07,148
+Normalde SuperPage kullanılmazken benim Protection için...
+
+374
+01:10:07,347 --> 01:10:26,167
+Veyahut da kullanıldı mı, kullanılmadı mı? Yani 4'ü bit için hassasiyetim, çözünürlüğüm 4 kilobayt diyelim o boyutta. Ama Superbench kullandığımda bunun tamamı için 64 kilobaytsa 64, 256 megabaytsa 256 megabayt.
+
+375
+01:10:35,347 --> 01:10:50,108
+4K'lık entry yok. Bir tane entry var. Tek parça halinde tutuluyor. Evet, şimdi bir saniye. [öğrenci] cevabı var mıymış paperda? Anladın mı sen de?
+
+376
+01:10:50,108 --> 01:10:58,608
+Evet hocam. Arkadaş söylüyorken de o paragrafın zaten kendisini gördüm. Contiguous kısmı falan da gördüm. Teşekkür ederim.
+
+377
+01:10:58,887 --> 01:11:00,028
+Okey, süper.
+
+378
+01:11:00,627 --> 01:11:07,047
+Peki, şimdi sen ben trade-off'lardan bahsedeceğim diyordun. Hadi bahset bakalım. Neymiş trade-off'lar?
+
+379
+01:11:07,047 --> 01:11:25,587
+Hocam, yerleştirmek için bir allokasyonun aslında düzeltilmesi gerektiğinden, sonrasında bu fragmentlerin doğru bir şekilde kontrol edilmesinden, burada operating sisteminin saksıydı olmasından.
+
+380
+01:11:26,003 --> 01:11:42,423
+Demotion ve Eviction'dan bahsediyor aslında. Demotion kısmında hocam nedense paper çok az açıklama yapmış. Onun sebebini tam olarak anlayamadım ben.
+
+381
+01:11:42,423 --> 01:11:50,423
+Bana şunları söyler misin? Bak, üç tane kavram var. Bir promotion var, bir demotion var, bir de eviction var.
+
+382
+01:11:50,735 --> 01:12:07,735
+Promotion ne? Terfi ettirmek, yükseltmek. Demotion ne? Geri almak, verilen terfiyi geri almak. Eviction'da boşaltmak, orayı boşa çıkartmak. Şimdi burada bu üç kavramı...
+
+383
+01:12:08,243 --> 01:12:20,804
+En anlaşılır şekilde ifade eder misin? Hepsini sen ifade etmek zorunda değilsin ama bu konuyu ben anlatayım dedin, el kaldırdın. En azından bir promotion söyle bakalım. Ne anlama geliyor promotion?
+
+384
+01:12:21,203 --> 01:12:31,783
+Hocam, biz mesela yeni bir yer istiyoruz. Direktmen number olarak.
+
+385
+01:12:32,467 --> 01:12:40,567
+Bu base page'lerin potansiyel olarak super page'e allocate edilmesiyle alakalı aslında bu promotion kısmı.
+
+386
+01:12:41,167 --> 01:12:51,827
+Paper'da bir de ekstradan incrementally yani artan bir şekilde bunun karşılanabileceğinden bahsediyor.
+
+387
+01:12:52,387 --> 01:12:57,567
+Burada partial olarak da allocate edilebildiğinden...
+
+388
+01:12:58,260 --> 01:13:03,159
+Ve aslında bunun rezervasyon kısmında da aktarılabileceğinden bahsediyor.
+
+389
+01:13:03,500 --> 01:13:15,700
+Yani aslında biz terfi ettiriyorken, yani promote ettiriyorken, contiguous olarak ettirebiliyoruz veya partition olarak allocate ettirip rezervasyon yaptırabiliyoruz.
+
+390
+01:13:15,780 --> 01:13:17,340
+Terfi ettirmiş oluyoruz aslında.
+
+391
+01:13:18,159 --> 01:13:19,720
+Neyi terfi ettirmiş oluyoruz?
+
+392
+01:13:24,532 --> 01:13:30,692
+TLB misisi olabildiğince az gösterebilmek, reduced ettirebilmek için birisi yapıyoruz.
+
+393
+01:13:31,055 --> 01:13:36,515
+Niçin diye sormuyorum. [öğrenci], el kaldırıyorsun. Var mı cevabın?
+
+394
+01:13:36,755 --> 01:13:40,655
+Evet hocam. Page'leri birleştirip super page yapmak için promotion uygulanıyor.
+
+395
+01:13:40,735 --> 01:13:47,615
+Aynen. Base page'leri bir araya getirip onları super page yapıyoruz.
+
+396
+01:13:47,615 --> 01:13:54,615
+Evet hocam. Bunu blog halinde de yapabiliriz veya bunu incremental olarak da yapabiliriz.
+
+397
+01:13:59,028 --> 01:14:04,087
+Efendim biri bir şeyler söylüyor galiba. Soru mu var? Yok.
+
+398
+01:14:04,819 --> 01:14:26,899
+Yani bir super page size'ına kadar erişmişizdir. Sonra eğer arkasında hala da kontücüyüz bir şekilde base page'lerden oluşan boşluk varsa o zaman bir sonraki desteklediğimiz super page size'ına da promote ettirebiliyoruz.
+
+399
+01:14:32,819 --> 01:14:46,520
+Burada Base Page'ler birikmeye devam etti. 128 oldu. O zaman ben artık onu 64 değil, 128'lik bir Super Page olarak görüyorum. Peki, Demotion ne anlamı yarıyor?
+
+400
+01:14:53,427 --> 01:15:05,868
+Evet [öğrenci], pardon. Demotion'da tam tersi şekilde ihtiyaç olduğu anda super page'leri tekrar parçalanarak base page'leri dönüştürülmesini kastediyor bu noktada.
+
+401
+01:15:06,368 --> 01:15:13,128
+Peki, tamam çok güzel cevap doğru. Peki, super page'leri niye parçalamak isterim?
+
+402
+01:15:15,444 --> 01:15:20,524
+Buradaki en büyük sorun hocam aslında fragmentation sorunu diyebiliriz.
+
+403
+01:15:20,524 --> 01:15:23,324
+Hangi fragmentation?
+
+404
+01:15:24,164 --> 01:15:34,504
+Superpage'ler eğer ki çok fazla sayıda olup aradaki boşlukları kullanılamaz hale getirdiyse, boş belliğimiz olduğu halde rezerve edemiyor konumuna düşeriz.
+
+405
+01:15:34,524 --> 01:15:42,404
+Hangi boşluklar? Hayır, hayır. Bir fragmentation ama hangi fragmentation? [öğrenci] sana söz verdim, el kaldırdın. Evet.
+
+406
+01:15:44,851 --> 01:15:46,971
+Evet. [öğrenci]?
+
+407
+01:15:47,492 --> 01:15:51,351
+Hocam, neden ihtiyaç var demotion'a sorunuza cevap vermek için?
+
+408
+01:15:51,572 --> 01:15:55,311
+Hangi fragmentation? Soru artık hangi fragmentation oldu?
+
+409
+01:15:55,811 --> 01:16:01,971
+[öğrenci] fragmentation dedi ama dışarıda dedi. Yani orada boş alan olmasına rağmen kullanamıyoruz.
+
+410
+01:16:02,872 --> 01:16:04,131
+Çok orada bir ince...
+
+411
+01:16:04,131 --> 01:16:05,612
+Memory fragmentation hocam.
+
+412
+01:16:06,192 --> 01:16:06,612
+Efendim?
+
+413
+01:16:06,952 --> 01:16:07,912
+Memory fragmentation.
+
+414
+01:16:07,912 --> 01:16:09,211
+Aferin memory fragmentation.
+
+415
+01:16:11,252 --> 01:16:23,231
+Süperdi. Evet, Memory Fragment. Internal Fragmentation. Bakın, neden biliyor musunuz? Artık SuperPage'ler normal kullandığımız page'lere göre çok büyük.
+
+416
+01:16:36,659 --> 01:16:51,659
+En kötü ihtimalle bir page'de boşa çıkacak olan alan nedir? Bir byte'ını kullanırsınız, geri kalanı boşa çıkar. Çünkü niye? En tane tam page kullanmışsınızdır. En artı birinci page'in...
+
+417
+01:16:52,404 --> 01:16:57,564
+1 byte'ını kullanmışsınızdır ama sistem açısından en artı bir page alok edilmiştir.
+
+418
+01:16:57,944 --> 01:17:09,644
+Şimdi eğer bu bir süper page ise, düşünsenize 1 byte'ını kullanıyorsunuz ama o 256 megabaytlık, oradaki 256 megabayt eksi 1 byte'lık kısım kullanılmıyor.
+
+419
+01:17:09,644 --> 01:17:20,404
+Hemen onu ne yapmanız lazım aslında? Normal bir page'e ya daha ufak bir super page'e ya da base page'e demot etmeniz lazım.
+
+420
+01:17:20,404 --> 01:17:30,064
+Yazdım ki orada gereksiz yere internal fragmentation'dan oluşan kullanılamayan alanı kullanılabilir hale dönüştürün. Mesele bu.
+
+421
+01:17:30,528 --> 01:17:53,128
+Yani 256 MB'lık Super Page'iniz var. 128 MB artı 1 byte'ını doldurdunuz. Veya işte pardon yanlış söyledim. 128 MB eksi 1 byte'ını doldurdunuz. O zaman öbür 128 MB'ın durmasına gerek yok. Onu bölün. İki tane Super Page'iniz olsun. 128, 128 demote edin.
+
+422
+01:17:58,528 --> 01:18:14,248
+Base Page'lere bölün. Daha fazla Base Page'iniz olsun. Yani aslında sistemin bunu akış içerisinde, zaman içerisinde ne yapması gerekiyor? Dinamik olarak yönetmesi gerekiyor. Peki, Addiction.
+
+423
+01:18:26,452 --> 01:18:34,072
+Evet, Evikşin ne? Bir saniye, kimler? [öğrenci]. Hadi bakalım, ilk sırada sen varmışsın, o yüzden.
+
+424
+01:18:34,772 --> 01:18:47,051
+Evet hocam. Hocam, memori baskı altında olduğu zamanlar işletim sistemi genelde bu super page'leri base page'lere yeniden dönüştürüp alokasyonu açık hale getirebilir.
+
+425
+01:18:47,051 --> 01:18:48,391
+Buna da Evikşin deriz.
+
+426
+01:18:49,076 --> 01:18:54,916
+Bir dakika, burada Base Page'leri dönüştürmekten mi bahsediyoruz [öğrenci]?
+
+427
+01:18:57,036 --> 01:18:59,136
+Sen el kaldırmıştın, sana söz veriyorum.
+
+428
+01:19:00,212 --> 01:19:05,472
+Evet hocam, ben base page'lere değil de direkt süper page'lerin bellekten kaldırılması...
+
+429
+01:19:05,472 --> 01:19:21,092
+Aynen, base page'lerde yaptığımız şey, eviction'le memoride yer yok, o zaman benim o page'leri memoride yer oluşturacak şekilde secondary storage'a taşımam lazım. Ondan sonra da ihtiyaç olduğunda tekrar geri getirmem lazım.
+
+430
+01:19:21,092 --> 01:19:28,212
+Az önce bir arkadaşınız söyledi ya, [öğrenci] sen miydin hatırlamıyorum, tam bununla alakalı çok fazla bir şey...
+
+431
+01:19:28,212 --> 01:19:37,232
+Çünkü zaten evikşin standart bir yöntem. Yani pagingde normal pejlerle yaptığımız evikşinden bir farkı yok.
+
+432
+01:19:37,972 --> 01:19:39,832
+Evet hocam ben sormuştum. Teşekkür ederim.
+
+433
+01:19:40,172 --> 01:19:40,872
+Estağfurullah.
+
+434
+01:19:40,872 --> 01:19:41,792
+Okey.
+
+435
+01:19:44,552 --> 01:19:47,872
+Başka bu paperla alakalı...
+
+436
+01:19:49,684 --> 01:19:56,043
+Özellikle dikkat edilmesi gereken, üzerinde durulması gereken bir şey var mı paylaşmak istediğiniz?
+
+437
+01:19:59,667 --> 01:20:00,867
+[öğrenci], evet.
+
+438
+01:20:01,528 --> 01:20:08,667
+Hocam, ben TLB miktarının çok düşük olduğunu, sebebini sormak istiyorum.
+
+439
+01:20:08,807 --> 01:20:11,247
+Yani 128 entry diye yazmış paperda.
+
+440
+01:20:11,847 --> 01:20:17,667
+TLB acaba maliyet olarak, donanımsal maliyet çok yüksek olduğu için mi çok düşük tutuluyor?
+
+441
+01:20:17,847 --> 01:20:20,528
+Neden artırılmıyor acaba diye sormak istiyorum.
+
+442
+01:20:21,076 --> 01:20:39,195
+Register yapısından bile daha pahalıya gelen bir yapı. Çünkü TLB'de kaç tane entry varsa hepsi tek clock cycle'da kendisine gelen değeri kontrol ediyor. Var mı yok mu diye sonucunu döndürüyor. Bu çok özel bir cache mimarisi.
+
+443
+01:20:42,112 --> 01:21:08,192
+Toleransımız yok. Sequential Access'e falan toleransımız yok. Bütün elementlerine concurrent olarak erişiliyor ve hepsi compare işlemini aynı anda yapıyor. Compare pozitif çıkanda sonucu dışarıya veriyor. Ve bunun işlemcinin çalışma frekansında gerçekleşmesi lazım.
+
+444
+01:21:08,884 --> 01:21:30,484
+O yüzden TLB'yi aşırı büyütmek maliyet olarak pek kolay bir şey değil. Günümüzdeki TLB boyutları tabii ki 64 entry'den çok daha artmış durumda ama 10 binlerce entry falan diye de düşünmeyin. Mesele o.
+
+445
+01:21:31,484 --> 01:21:32,264
+Teşekkür ederim.
+
+446
+01:21:35,028 --> 01:21:36,768
+[öğrenci], sen bir şey mi soruyorsun?
+
+447
+01:21:37,808 --> 01:22:01,908
+Hocam, sorduğunuz soru için bir not almışım. Birçok işlemde olduğu gibi burada da B20 metale en yakın şekilde aslında bunu halletmek gerekiyor. Çünkü bunun binlercesi çok saniyeler içinde gerçekleşen bir durum. Bir de proaktif bir şekilde aslında bu yönetimin gerçekleştirilmesi gerekiyor ki. Yani bellekli olduğunda şimdi belleğe ihtiyaç olacak deyip bir şeyleri çıkarmaya başlarsa yönetim mekanizması her şey için çok geç olabilir.
+
+448
+01:22:02,416 --> 01:22:07,416
+Aynen. [öğrenci] sen bir şey söylemek istiyorsun galiba. El kaldırdım.
+
+449
+01:22:19,347 --> 01:22:35,347
+Bu problemleri, birçok sistemleri de birçok bölümünde, ve birçok bölümünde kullanmıyor.
+
+450
+01:22:35,347 --> 01:22:44,347
+Tamam. Ben bir şey sorayım. Population Map diye bir şey tariflemişler. Nedir bu Population Map?
+
+451
+01:22:44,347 --> 01:22:46,091
+Ben hocam.
+
+452
+01:22:49,876 --> 01:22:51,876
+Kim el kaldırıyor görmüyorum.
+
+453
+01:22:51,876 --> 01:22:53,876
+[öğrenci], ben Hocam.
+
+454
+01:22:53,876 --> 01:22:54,876
+Tamam [öğrenci].
+
+455
+01:22:54,876 --> 01:22:55,876
+Evet Hocam.
+
+456
+01:22:55,876 --> 01:23:01,876
+A population map keep track of allocated base page with each memory object.
+
+457
+01:23:02,384 --> 01:23:30,384
+ve her ve
+
+458
+01:23:30,384 --> 01:23:39,003
+So far, beige side, virtual region at next lower level fully populated.
+
+459
+01:23:39,764 --> 01:23:41,384
+Use it for...
+
+460
+01:23:42,604 --> 01:23:43,604
+Provaider.
+
+461
+01:23:44,003 --> 01:23:44,243
+Evet.
+
+462
+01:23:44,804 --> 01:23:51,823
+So the simple answer is population map is for tracking the base pages.
+
+463
+01:23:52,703 --> 01:23:54,543
+Base page. Evet, Hucam.
+
+464
+01:23:54,724 --> 01:23:54,944
+Okay.
+
+465
+01:23:55,024 --> 01:23:56,083
+Allocated base page.
+
+466
+01:23:56,595 --> 01:24:02,595
+Aha. Why do we track the allocated base pages?
+
+467
+01:24:03,795 --> 01:24:05,315
+Again, Hujam.
+
+468
+01:24:07,155 --> 01:24:09,755
+Again, tekrar, Hujam. Sorry, tekrar.
+
+469
+01:24:10,715 --> 01:24:11,515
+Sorry?
+
+470
+01:24:12,195 --> 01:24:15,555
+Sorry, tekrar.
+
+471
+01:24:16,415 --> 01:24:17,555
+The question...
+
+472
+01:24:17,555 --> 01:24:22,515
+Why do we track the allocated base pages?
+
+473
+01:24:24,307 --> 01:24:24,907
+Evet.
+
+474
+01:24:28,020 --> 01:24:32,940
+Yani Hocam, memory object.
+
+475
+01:24:35,520 --> 01:24:37,440
+[öğrenci] raised his hand.
+
+476
+01:24:38,380 --> 01:24:40,060
+Ok, [öğrenci], dinliyorum.
+
+477
+01:24:40,600 --> 01:24:45,940
+Hocam, demotion ve promotion işlemleri için baitpatch'leri takip etmemiz gerekiyor diyebiliyorum.
+
+478
+01:24:46,140 --> 01:24:47,600
+Tamam, [öğrenci].
+
+479
+01:24:48,307 --> 01:24:49,968
+Başka ekleyeceğin var mı?
+
+480
+01:24:49,968 --> 01:25:09,128
+Ben de şöyle mutluyum hocam. PageFault oluştuğunda işletim sistemi page'in sanal adresine denk gelen rezerv ettiği adresi sağlıyor. Bu harita yardımıyla. Böylelikle gerçek adres sağlanmış bir page için tekrardan alan ayırmaya çalışmaz.
+
+481
+01:25:09,128 --> 01:25:10,648
+Tamam.
+
+482
+01:25:13,043 --> 01:25:17,183
+Page'lerin genişleme ve rezervasyon kararlarının belirlenmesine yardım ediyor.
+
+483
+01:25:17,603 --> 01:25:23,224
+İnan şey söyledi, Promotion Demotion'u söyledi. Okey orada. İkinci şey de aslında şöyle bir şey.
+
+484
+01:25:26,644 --> 01:25:32,703
+Eğer zaten bu adrese bir mapping yaptıysa bir daha aynı adrese mapping yapmasına gerek yok. Değil mi?
+
+485
+01:25:32,703 --> 01:25:36,703
+Bunun takibini yapmayı sağlıyor. Bu sayede de...
+
+486
+01:25:38,547 --> 01:25:57,787
+Page'ler üzerinden proseslerin ortak bir şeyler kullanmasını sağlayabiliyoruz. Yani paylaşımı açabiliyoruz, sharing'i açabiliyoruz ama sharing açmadığımız sürece overlapping olmaması lazım. Üst üste çakıştırmamamız lazım. Bunu takip edebilmemizi sağlıyor.
+
+487
+01:26:02,323 --> 01:26:19,863
+Dört tane temel şeyi var. İşte bu Promotion ve Demotion'da kullanıyoruz. Böylece boşa çıktıkça çıktıklarının da farkına varıyoruz. Ona göre Demotion kararı alabiliyoruz. Veyahut da Allocate edildikçe Promotion kararı alabiliyoruz.
+
+488
+01:26:19,863 --> 01:26:28,384
+Allocate edilen yeri bir daha Allocate etmemize gerek yok. Ve overlap olmasını engellemiş oluyoruz.
+
+489
+01:26:29,619 --> 01:26:33,119
+Okey. Başka bununla alakalı...
+
+490
+01:26:37,555 --> 01:26:47,155
+Evet, burada Alfa işlemcisini de yapmışlar. Onu yine bir arkadaşınız söylemişti. Fark etmez yani Alfa işlemcisi, o dönemdeki I386 işlemcisi.
+
+491
+01:26:48,415 --> 01:26:54,815
+Alfa'da yapılmasının sebebi bakın, aslında Itenium'da da yapabilirlerdi.
+
+492
+01:26:54,815 --> 01:27:00,815
+Ama Alfa'da yapılmasının sebebi şu, hemen size söyleyeyim.
+
+493
+01:27:03,283 --> 01:27:13,363
+Alfa İşlemcisi 8 KB Base Page'in yanında 64 KB, 512 KB ve 4 MB Super Page destekliyor.
+
+494
+01:27:13,363 --> 01:27:20,963
+Yani 3 farklı KB boyutunda ve MB boyutunda 3 farklı Super Page destekliyor.
+
+495
+01:27:22,144 --> 01:27:29,943
+386'da ise yani ya 4 KB ya 4 MB. Yani binary, çözünürlük, granite yine düşük ondan dolayı.
+
+496
+01:27:31,283 --> 01:27:50,347
+Itenium'da da siz bunu çok şey yapabiliyorsunuz. 4 kilobyte ile 256 megabyte. Ancak bu paperın yazıldığı dönemde o dönemi dikkate alacak olursak Itenium kullanımı çok fazla değil. Ki zaten biliyorsunuz artık günümüzde de Itenium kullanımı çok fazla değil.
+
+497
+01:27:50,771 --> 01:28:10,871
+Yok artık, üretilmedi. Yani hiçbir zaman yeterince popüler olmadı. Ondan ötürü Alfa daha rahat üzerinde deneme yapılıp daha yaygın bir arkitektür olduğu için denemelerini onun üzerinde yapıyorlar. Orada gösteriyorlar. Hem farklı senaryoları ran edebiliyor hem de daha şey.
+
+498
+01:28:12,948 --> 01:28:24,287
+Okidoki. Tamam. Şimdi bunu da kapatabiliriz o zaman. Sonra ne var? Bakayım.
+
+499
+01:28:24,287 --> 01:28:37,387
+Ha, Communicating Sequential Processes. Üçüncü paperımız. Ona geçeceğiz ama iki dakika.
+
+500
+01:28:38,804 --> 01:28:44,764
+İki dakika, pardon yanlışlıkla sesi kapattım. İki dakika ara verip öyle geçeceğiz. Buçukta devam ederiz arkadaşlar.
+
+501
+01:33:20,787 --> 01:33:21,927
+Evet arkadaşlar.
+
+502
+01:33:25,747 --> 01:33:32,947
+Üçüncü paperdayız. Ne paperımız? Communicating Sequential Processes.
+
+503
+01:33:40,404 --> 01:33:43,684
+Kimleri kaldırdı? [öğrenci]. Tamam, [öğrenci]. Hadi bakalım.
+
+504
+01:33:43,684 --> 01:33:44,924
+Evet hocam.
+
+505
+01:33:45,864 --> 01:33:52,684
+Generally, programming languages support sequential programming.
+
+506
+01:33:53,544 --> 01:34:02,884
+And this paper discuss more than one process in the same time to consuming the time.
+
+507
+01:34:03,644 --> 01:34:05,684
+So, this paper suggests...
+
+508
+01:34:06,100 --> 01:34:30,380
+Bu, bu
+
+509
+01:34:32,627 --> 01:34:34,627
+Evet, yes.
+
+510
+01:34:34,627 --> 01:34:46,627
+Mesela, bir de bu problemi...
+
+511
+01:35:14,260 --> 01:35:21,260
+ve aynı zamanda çalışıyor. Bu bir soru.
+
+512
+01:35:21,260 --> 01:35:24,260
+I see, I see Şile.
+
+513
+01:35:24,260 --> 01:35:29,260
+Başka yorumu olan var mı arkadaşlar?
+
+514
+01:35:29,260 --> 01:35:31,260
+Ben hocam.
+
+515
+01:35:31,260 --> 01:35:34,260
+Hani el kaldırıyorduk arkadaşlar, ne oldu?
+
+516
+01:35:34,260 --> 01:35:37,260
+What about raising hands?
+
+517
+01:35:37,260 --> 01:35:38,828
+Ben hocam.
+
+518
+01:35:40,020 --> 01:35:45,020
+[öğrenci], why don't you raise your hand? Evet, hocam.
+
+519
+01:35:47,619 --> 01:35:49,260
+Okay, [öğrenci].
+
+520
+01:35:51,475 --> 01:36:17,915
+Hujam, there are problems in the monitor. The first problem on the operation system main task is to control access to machine resource, data, device, time, space. If resource are not tightly controlled, just well enjoy.
+
+521
+01:36:19,475 --> 01:36:45,795
+İki, the second problem, NOS main, pardon Hijam, first problem, solution problem, monitor provide control by allowing only one process to access a critical resource of time.
+
+522
+01:36:46,176 --> 01:36:52,456
+[öğrenci], you are talking about monitors. Evet hocam, monitors.
+
+523
+01:36:52,456 --> 01:37:00,536
+I know, I know, but I am asking, or we are now discussing the paper communicating sequential processes.
+
+524
+01:37:00,536 --> 01:37:12,536
+And I am asking what is the essence of this paper? What does the author state in this paper?
+
+525
+01:37:14,996 --> 01:37:16,996
+[öğrenci].
+
+526
+01:37:18,996 --> 01:37:20,996
+Teşekkürler hocam.
+
+527
+01:37:22,996 --> 01:37:24,996
+Ok, I am talking I guess.
+
+528
+01:37:24,996 --> 01:37:29,996
+Yes, you are on [öğrenci], yes.
+
+529
+01:37:29,996 --> 01:37:41,996
+So, the main focus of this paper was to produce a method or a concept for concurrent systems.
+
+530
+01:37:42,195 --> 01:38:10,123
+Bu konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuklarının konuk
+
+531
+01:38:10,420 --> 01:38:35,916
+Bu da bu konulmaktadır, bu konulmaktadırken çok önemli bir şey.
+
+532
+01:38:36,115 --> 01:38:46,056
+[öğrenci], are you sure that there were no concurrent systems or multiprocessor systems?
+
+533
+01:38:46,056 --> 01:38:48,056
+There are.
+
+534
+01:38:48,056 --> 01:39:04,056
+Because the author states at the beginning of the paper that many suggestions have been made, such as subroutines in Fortran, procedures in ALGO60.
+
+535
+01:39:04,115 --> 01:39:17,376
+Entrees in PL1, coroutines in Unix, classes in Simino 67, processes and monitors in concurrent Pascal and cluster CLU and so on.
+
+536
+01:39:17,939 --> 01:39:24,699
+Evet, bu konkurrenci sistemi.
+
+537
+01:39:24,699 --> 01:39:28,699
+Ama bu konuklu problemi, bu konuklu bir konuklu var.
+
+538
+01:39:28,699 --> 01:39:32,699
+Ama bu konuklu bir konuklu var.
+
+539
+01:39:32,699 --> 01:39:39,579
+İlhamet edin, bu konuklu var.
+
+540
+01:39:39,579 --> 01:39:42,219
+Ama bu konuklu var.
+
+541
+01:39:42,219 --> 01:39:45,259
+Bu konuklu var.
+
+542
+01:39:45,939 --> 01:39:59,939
+[öğrenci].
+
+543
+01:40:00,000 --> 01:40:00,980
+Senden dinleyelim.
+
+544
+01:40:00,980 --> 01:40:04,440
+Ben de son söylediğine yakın bir şey söyleyeceğim aslında.
+
+545
+01:40:05,239 --> 01:40:18,619
+Ardışıl prosesler arasındaki iletişimi sağlamak için temel giriş ve çıkış işlemlerinin temel adım olduğu bir mekanizma oluşturmuş, bir yöntem öne sürmüş makale boyunca.
+
+546
+01:40:19,619 --> 01:40:24,739
+Bu yöntem DigicSran'ın Guarded komutlarıyla beraber çok yönlü hale gelmiş.
+
+547
+01:40:28,000 --> 01:40:32,720
+Bu yöntemde kullanılan nasıl implement edildiklerini anlatmış.
+
+548
+01:40:34,239 --> 01:40:51,739
+Ama bakın, burada bence daha kritik bir şey var. Diyor ki, multiprocessor sistemler yaygınlaşacak ve tek işlemcili sistemlere göre çok daha performanslı hale gelecek.
+
+549
+01:40:52,627 --> 01:41:13,807
+Hatta yetenekli, güvenilir ve ekonomik hale gelecek. Şurada şöyle ifade ediyor. May become more powerful, capacious, kapasiteli demek, reliable and economical than a machine which is disguised as a monoprocessor. Tek işlemcisi olanlara göre.
+
+550
+01:41:20,448 --> 01:41:31,968
+In order to use such a machine effectively on a single task, the component processors must be able to communicate and synchronize with each other.
+
+551
+01:41:31,968 --> 01:41:41,628
+Yani Huare'nin burada oluşturmaya çalıştığı şey, altyapı birden fazla işlerciden oluşsa bile,
+
+552
+01:41:42,228 --> 01:41:59,568
+Ama dışarıdan kullanıcı seviyesinde baktığımızda sanki yine biz tek bir işlemciyi kullanıyormuşçasına, tek bir sistemde çalışıyormuşçasına o bütünleşik yapıyı görelim.
+
+553
+01:41:59,828 --> 01:42:03,248
+Yani işi bizim açımızdan kolaylaştırmaya çalışıyor.
+
+554
+01:42:03,248 --> 01:42:05,248
+Diyor ki bugüne kadar...
+
+555
+01:42:05,908 --> 01:42:32,608
+Bir sürü yöntem ortaya atıldı. Az önce [öğrenci]'in yorumları sırasında söylediğim o yöntemleri. Fortran'da var, Algolda var, Pielvan'da var, Unix'in kendisinde var, Simula67'de var, Concurrent Pascal'da var. Var var var. Ama herkes olaya farklı bir taraftan bakıyor. Burada Hoare ise bunu programlama tekniği açısından.
+
+556
+01:42:33,108 --> 01:42:55,868
+Ele alıp arka tarafta neler yapılması gerekiyor, nelere dikkat edilmesi gerekiyor, onları ortaya atıyor. Bu paperın kritikliği burada aslında. Ve hala daha biz burada anlatılmış olanları, burada ortaya konulmuş olan fikirleri kullanıyoruz. Geliştirilen yapılar bunların üzerine.
+
+557
+01:43:02,195 --> 01:43:20,955
+Bu problem tarifinden sonra Hoare hangi noktaları vurguluyor? Yazmış yani zaten paperda geçiyor. Hepiniz bunlara çok hızlı cevap verebilirsiniz. Kimin çalışmasından özellikle yararlanıyor?
+
+558
+01:43:26,036 --> 01:43:30,436
+[öğrenci]'a söz vereceğim. Demin [öğrenci] Sen konuşmuştun.
+
+559
+01:43:31,155 --> 01:43:41,695
+Dikstra'nın korumalı komutlar çalışması üzerine eklemeler yaparak devam ediyor. Dikstra'nın altyapısını kullanıyor yani.
+
+560
+01:43:41,695 --> 01:43:43,576
+Peki.
+
+561
+01:43:46,452 --> 01:43:53,771
+O yapıyla neyi sağlamaya çalışıyor? Dijkstra'nın o yapısıyla temel sağlamaya çalıştığı şey ne?
+
+562
+01:43:54,291 --> 01:44:00,811
+Prosesler arasında iletişimi standart hale getirmek için bir kodlama altyapısı oluşturmaya çalışıyor framework.
+
+563
+01:44:00,952 --> 01:44:05,511
+O da yine çok kritik bir cümle var. Çok böyle temel bir kelime var.
+
+564
+01:44:06,452 --> 01:44:07,871
+Input output mu hocam?
+
+565
+01:44:08,231 --> 01:44:08,931
+Değil, hayır.
+
+566
+01:44:10,931 --> 01:44:11,931
+Eğer...
+
+567
+01:44:12,532 --> 01:44:19,572
+Var mı cevap verecek olan? Tek şey olarak, böyle uzun yorum değil. Şu şeklinde. [öğrenci], [öğrenci], el kaldırdın.
+
+568
+01:44:19,751 --> 01:44:21,331
+Beşlemanla yürütme mi hocam?
+
+569
+01:44:22,431 --> 01:44:35,771
+Zaten arkadaşını söyledi, daha böyle kritik bir şey. Eğer Dikstra'nın kontrol yapılarını kullanmazsak, dur sözümü tamamlamadan [öğrenci] hadi bakalım, sen de el kaldırdın.
+
+570
+01:44:36,211 --> 01:44:37,891
+Hocam, guard comment olabilir mi?
+
+571
+01:44:38,355 --> 01:44:38,855
+Hayır.
+
+572
+01:44:39,395 --> 01:44:40,996
+Onlara söylemişti arkadaşımız gerçi.
+
+573
+01:44:41,635 --> 01:44:43,256
+Şu belirsizlik olabilir mi?
+
+574
+01:44:43,256 --> 01:44:44,015
+Non-determinans.
+
+575
+01:44:44,456 --> 01:44:48,175
+Evet, zorluya zorluya yavaştan yavaştan çıkarttık.
+
+576
+01:44:48,935 --> 01:45:00,036
+Dixitlan'ın kontrol yapılarını kullanmadığımız zaman bunları kendi haline bıraktığımızda non-determinanslik bir çalışma oluşuyor.
+
+577
+01:45:00,435 --> 01:45:08,876
+Nandeterministik çalışma sonucunda da işletim sistemlerinde tarifli bir şey var. Onu tarifleyen bir terim var. Race Condition.
+
+578
+01:45:09,619 --> 01:45:26,800
+Elde edeceğimiz sonucun ne olduğunu bilmiyoruz. Aslında bu ne demek? Yarışta hile yoksa yarışı kimin kazanacağı belirli değildir. Aynı yarışı üç defa aynı yarışçılarla koşturursunuz, yaparsınız üçün de farklı şekilde sonlanabilir.
+
+579
+01:45:33,844 --> 01:45:52,403
+Çalıştırdığımız işlerin sonucunda, yaptığımız o akışların sonucunda spesifik sonuçlar elde etmek istiyoruz. Şartlar ne olursa olsun, tek işlemcide de çalışsa, en tane işlemcide de çalışsa, bu işin parçaları farklı işlemcilerde de olsa, aynı işlemcide de olsa. Yani bir determinizm istiyoruz.
+
+580
+01:45:52,895 --> 01:46:08,675
+Dijkstra'nın o yapılarından, gard komutlarından, gard komutlarıyla oluşturduğu yapılardan yararlanmak istemesinin sebebi bu non-deterministlik durumu ortadan kaldırmak.
+
+581
+01:46:10,275 --> 01:46:11,815
+Başka ne var?
+
+582
+01:46:18,836 --> 01:46:27,395
+Orada yazıyor. Bakın. İki, üç, dört, beş, altı, yedi tane madde yazmış. Değil mi?
+
+583
+01:46:29,716 --> 01:46:32,216
+[öğrenci] Hocam. Merhaba hocam. Kolay gelsin.
+
+584
+01:46:33,735 --> 01:46:36,435
+Arkadaşlar, why don't you raise your hand?
+
+585
+01:46:37,011 --> 01:46:39,011
+[öğrenci] [öğrenci].
+
+586
+01:46:39,011 --> 01:46:44,011
+Evet hocam. İngilizce konuşmak...
+
+587
+01:46:44,011 --> 01:46:53,011
+I am also speaking in English and asking why you are not raising your hand before speaking.
+
+588
+01:46:53,011 --> 01:47:02,956
+Tamam hocam. Hocam, the component processor must be able to communication and synchronization with each other.
+
+589
+01:47:03,315 --> 01:47:19,315
+Bu artikel, programma, tradition, paralleli, theses of linking to serial operation and method in subtraction program.
+
+590
+01:47:19,315 --> 01:47:25,315
+How do I call you? [öğrenci] or [öğrenci]?
+
+591
+01:47:25,315 --> 01:47:26,315
+Evet, Hucan.
+
+592
+01:47:36,692 --> 01:47:55,692
+You are just stating something about the paper. I was asking what were the other requirements or constraints of OARE when constructing this mechanism?
+
+593
+01:47:56,307 --> 01:48:09,307
+İlk başta, bu bölümünün 7 bölümünü konuştuk.
+
+594
+01:48:09,307 --> 01:48:17,307
+İlk başta, bu bölümünün 6 bölümünü konuştuk.
+
+595
+01:48:24,083 --> 01:48:25,283
+Okey hocam, pardon.
+
+596
+01:48:28,863 --> 01:48:42,623
+Evet, şimdi bir soru geliyor. Burada yedi taneden, bakın beşe gidiyoruz, dörde gidiyoruz.
+
+597
+01:48:43,604 --> 01:49:09,863
+Input'tan bahsediyor. Hatta 3'e gidiyoruz. Input, Output var ama orası hem input, Output. 4'e gidiyoruz. Input'tan bahsediyor. 5'e gidiyoruz. Input'tan bahsediyor. 6'ya gidiyoruz. Input'tan bahsediyor. 7'ye gidiyoruz. Yine input'tan bahsediyor. Öyleyse bu haberleşmede kritik olan, özellikle adreslenmesi gereken şey nedir? Dinliyorum [öğrenci].
+
+598
+01:49:10,484 --> 01:49:19,344
+Burada genel olarak bir işlemin, çıktısının diğer bir işlemin girdisi olduğuna değinilmiş, bütün konsept bunun üzerine kurgulanmış olarak özetlemiştim ben.
+
+599
+01:49:19,699 --> 01:49:28,119
+Evet, yani aslında çıktı göndermek çok büyük bir sorun değil ama o çıktığı alıp işlemek sorun sanki değil mi? Hep intenziyor.
+
+600
+01:49:28,119 --> 01:49:43,940
+Doğru. Bunun zamanlamasını sağlamak bayağı zor. Bir prosesin çıktı vermesini beklemek bir işlem. Bir de ikinci proses için girdiği olarak kabul ediyoruz ya hocam bunu. Onu bekletmemiz gerekebiliyor bu durumda. Onu yönetmek yine bir sorun olarak tanınanmıştır.
+
+601
+01:49:44,595 --> 01:49:52,375
+Aynen. Peki bunun için önerdiği yapılar nasıl, neler öneriyor? Nasıl bir yaklaşım öneriyor?
+
+602
+01:49:56,020 --> 01:49:58,020
+Dinliyorum, [öğrenci].
+
+603
+01:50:19,604 --> 01:50:24,604
+Öğrenç, bir commandı.
+
+604
+01:50:24,604 --> 01:50:29,604
+Bu commandı, bir commandı, bir output ve bir process.
+
+605
+01:50:29,604 --> 01:50:31,604
+Bu bir output commandı, bu bir output commandı
+
+606
+01:50:31,604 --> 01:50:39,604
+ve bu commandı senden bu value
+
+607
+01:50:39,604 --> 01:50:44,604
+diğer commandı, bir output, bir process.
+
+608
+01:51:09,140 --> 01:51:29,324
+Programın programı da bir programın altyazı altyaz
+
+609
+01:51:29,460 --> 01:51:31,460
+Ama
+
+610
+01:51:31,460 --> 01:51:36,460
+you are transforming the input to something else.
+
+611
+01:51:36,460 --> 01:51:43,460
+If it sees a pair of consecutive asterisks, double star,
+
+612
+01:51:43,460 --> 01:51:48,460
+then it is replaced by an upward arrow.
+
+613
+01:51:48,460 --> 01:51:49,460
+Okay?
+
+614
+01:51:49,460 --> 01:51:50,460
+Yeah.
+
+615
+01:51:50,460 --> 01:51:53,460
+And this assembly...
+
+616
+01:51:55,412 --> 01:52:40,363
+Bu, bu
+
+617
+01:52:53,587 --> 01:52:54,127
+Thank you.
+
+618
+01:52:56,747 --> 01:53:00,387
+Var mı başka yorum yapmak isteyen arkadaşlar?
+
+619
+01:53:10,676 --> 01:53:34,275
+Sanırım hepiniz yoruldunuz mu? Ne oldu? [öğrenci], dinliyorum. Evet hocam. Hocam bu article, three basic structures have received one repetition structure for example while loop.
+
+620
+01:53:34,676 --> 01:53:40,856
+Second, alternatif structure if it is conditional.
+
+621
+01:53:41,656 --> 01:53:46,536
+And three, sequential program configuration, regular.
+
+622
+01:53:49,036 --> 01:53:54,936
+A digital computer is designed for a traditional stored program
+
+623
+01:53:54,936 --> 01:54:00,576
+for a determined execution of single serial program.
+
+624
+01:54:01,171 --> 01:54:09,051
+And the component processor must be able to communication and synchronization with each others.
+
+625
+01:54:11,572 --> 01:54:12,611
+Yes.
+
+626
+01:54:15,311 --> 01:54:16,652
+Evet hocam.
+
+627
+01:54:16,652 --> 01:54:18,271
+Any further comments?
+
+628
+01:54:19,511 --> 01:54:24,611
+I was just asking, do you have any further comments regarding this paper?
+
+629
+01:54:25,492 --> 01:54:29,492
+Çünkü sadece sadece sadece
+
+630
+01:54:29,492 --> 01:54:31,492
+scenariyerde,
+
+631
+01:54:31,492 --> 01:54:33,492
+deneyimde,
+
+632
+01:54:33,492 --> 01:54:34,492
+kopya,
+
+633
+01:54:34,492 --> 01:54:35,492
+sqash,
+
+634
+01:54:35,492 --> 01:54:44,492
+ssms,
+
+635
+01:54:48,532 --> 01:54:50,192
+Yorum yok mu başka arkadaşlar?
+
+636
+01:54:56,020 --> 01:55:04,420
+Bu papere hepiniz bakmadınız galiba. Daha çok 1'e ve 2'ye mi bakıldı? 3 ve 4'e çok bakılmamış çünkü ben teslim edilenlere de baktım.
+
+637
+01:55:05,020 --> 01:55:13,356
+Bir kısmınız hepsini göndermiş ama çoğunlukla 1 ve 2 gönderilmişti. Onun da etkisi olabilir mi acaba?
+
+638
+01:55:18,707 --> 01:55:20,287
+Evet, [öğrenci] dinliyorum.
+
+639
+01:55:21,567 --> 01:55:34,527
+Hocam, burada işletim sistemleri dersinde de gördüğümüz aslında boundnut buffer, integer semaphore ve dining philosopher için olası çözüm yollarının küsurda kodlarını da paylaşmış yazar.
+
+640
+01:55:36,527 --> 01:55:44,491
+Sonrasında da aslında bu discussion bölümünde output kartlarını ve sonrasında conclusion kısmını...
+
+641
+01:55:44,500 --> 01:56:08,439
+Aslında burada direktman çözümler için nasıl bir yol izlenmeli, onunla alakalı bir teorik kod üretmiş. Örnek vermek gerekirse Dining Filizofur için düşünme kısmı, fork alma kısmı, yeme kısmı. Ama burada primitive yapılar da bunun giderek zor olacağını belirtmiş bir yapıların kalan kısmında.
+
+642
+01:56:11,731 --> 01:56:14,431
+Okey. Güzel. Başka yorum var mı?
+
+643
+01:56:22,836 --> 01:56:49,536
+Şimdi arkadaşlar, benim ekranıma göre burada 45 kişisiniz. Dersin başladığı zamandan beri şu ana kadar konuşanların sayısı çok çok az. O konuşanlara ve yorum yapanlara öncelikle teşekkür ediyorum. Bu güzel bir şey. Ama diğer arkadaşların da katılmasını istiyorum. Onların da yorum yapmasını istiyorum.
+
+644
+01:56:50,036 --> 01:57:11,515
+Yani ben şu anda bakıyorum. Mesela burada kimler var? [öğrenci] görüyorum. [öğrenci] görüyorum. [öğrenci], [öğrenci] herhalde. [öğrenci], [öğrenci], [öğrenci], [öğrenci] [öğrenci], [öğrenci]. Başka kimler var? Bir sürü arkadaşımız var.
+
+645
+01:57:18,131 --> 01:57:33,371
+[öğrenci], [öğrenci] falan. Önümüzdeki haftalarda sizleri de aktif görmek istiyorum arkadaşlar. Hep böyle 3-5 arkadaşınızla olmaz bu iş. Sizlerin de yorum yapmanız lazım. Sizlerin de katılmanız lazım.
+
+646
+01:57:34,131 --> 01:57:37,331
+Hocam bizim sonradan kayıt ya, ben dinlemedeyim bu hafta.
+
+647
+01:57:38,572 --> 01:57:41,331
+Kayıt, dinlemede ne demek o? Anlamadım [öğrenci].
+
+648
+01:57:41,391 --> 01:57:43,891
+Yok yok, sonradan derse katılanlardanım ya ben.
+
+649
+01:57:44,271 --> 01:57:45,391
+Siz de çalıştınız değil mi?
+
+650
+01:57:45,391 --> 01:57:47,491
+Siz de mı verdin? Valla yani olabilir.
+
+651
+01:57:48,931 --> 01:57:49,192
+Evet.
+
+652
+01:57:50,371 --> 01:57:51,751
+Önümüzdeki hafta inşallah.
+
+653
+01:57:52,311 --> 01:57:53,031
+Efendim?
+
+654
+01:57:53,371 --> 01:57:54,471
+Önümüzdeki hafta inşallah.
+
+655
+01:57:55,011 --> 01:57:56,371
+Daha şey olacak.
+
+656
+01:57:57,291 --> 01:57:58,491
+Yani o zaman olacak.
+
+657
+01:57:58,771 --> 01:58:00,831
+Tamam, süper. Bekliyorum o zaman.
+
+658
+01:58:01,072 --> 01:58:02,811
+Harika olur valla. Neden olmasın?
+
+659
+01:58:04,072 --> 01:58:04,451
+Evet.
+
+660
+01:58:06,091 --> 01:58:06,652
+Bugünkü
+
+661
+01:58:06,652 --> 01:58:09,851
+dersimizi bence burada bitirelim.
+
+662
+01:58:10,231 --> 01:58:11,152
+Üç tane paper.
+
+663
+01:58:11,923 --> 01:58:37,804
+2,5 oldu aslında. 2'yi tam yaptık. 3'inciyi yarım yaptık. Diğerinde sonuncusunu da size bırakmış oluyorum. Monitör yapısını da size bırakmış oluyorum. O zaten çok daha kısa 9 sayfalık bir şey. Monitör üzerine, monitörün implementasyonu, farklı senaryoları üzerine bir şey. Yine Hoarev'im.
+
+664
+01:58:39,347 --> 01:58:59,167
+Onu size bırakmış oluyorum. Evet, durum bu şekilde. Dersin nasıl işlendiğini, işleneceğini anladığınızı bu hafta daha yakından bunu deneyimlediğinizi tahmin etmekteyim. Evet, [öğrenci] dinliyorum.
+
+665
+01:59:00,248 --> 01:59:04,887
+Hocam, bize şey soracağım ama şimdi devam zorundu, doktor dersinde yok bildiğim kadarıyla. Doğru mudur?
+
+666
+01:59:06,387 --> 01:59:09,247
+Ne demek o? Doktora dersinde devam zorunluluğu yok.
+
+667
+01:59:10,028 --> 01:59:13,507
+Yok yani doktora derslerinde devam aranmıyordu. Geçen dönem öyleydi.
+
+668
+01:59:14,707 --> 01:59:16,148
+Ben hiç bilmiyorum öyle bir şey.
+
+669
+01:59:16,667 --> 01:59:19,747
+Şu anda bakılıyor mu sistemden mesela doktor öğrencilerine de?
+
+670
+01:59:21,235 --> 01:59:30,475
+Yani [öğrenci], bana soruyorsan, derse katılmak istiyor musun, istemiyor musun şeyini ben sana söyleyemem. Hele ki doktora öğrencisiysen hiç söyleyemem.
+
+671
+01:59:30,515 --> 01:59:35,496
+Yok yok, yani hani onun hani şey kalma durumu yok herhalde, onu sormak istiyorum.
+
+672
+01:59:35,655 --> 01:59:38,975
+Var var, yani çok güzel. İstersen test edebiliriz sende.
+
+673
+01:59:40,195 --> 01:59:44,235
+Yok yok, ben onun için değil. Ben hani bir yarşilik olmadıkça katılıp...
+
+674
+01:59:44,768 --> 01:59:54,768
+İşte konuşmak tarafta arayayım ama hani sormak istedim bir. Birkaç bir sorum var da onları soracağım izninizde. Bir de hocam bu ödevler yüzde kaç? Mesela bu vize yerine mi alacak?
+
+675
+01:59:55,547 --> 02:00:12,207
+Bak, 40 tane paper var. Bu 40 tane paperdan submit ettiklerinizin hepsinden puan alıyorsunuz. Bu puanlar sene içerisinde size uygulayacağımı, yapacağımı söylediğim.
+
+676
+02:00:12,851 --> 02:00:19,511
+Sınavların üzerine ortalamaya girmeden 20 puan getirecek.
+
+677
+02:00:20,083 --> 02:00:41,623
+Her bir paper'ı tam yaparsanız 0-5 aldınız. Yani birer puandan düşünün. Hepsini yaptınız. 40 puan. 40 aldıysanız onu yarıya bölüyorum. 20 tam puan. Yani sene içi ortalamanız diyelim sınavlar sonrasında 50 mi çıktı? 50'nin üzerine ben böyle doğrudan 20'yi yazıyorum. Bir anda sene içi ortalamanız 70 oluyor.
+
+678
+02:00:41,904 --> 02:00:58,084
+Böyle bir boost yapıyoruz sizi. Zıplatıyoruz olduğunuz yerden. Ortalama hesabına girmeden ekstradan şey. Ama zaten sene içerisindeki yapacağımız sınavlarda sorulacak sorulara da cevap verebilmeniz adına bunları yapmanız gerekiyor.
+
+679
+02:01:01,235 --> 02:01:14,435
+Tamam hocam, bir de şey soracağım ama mesela bu kaynakları ilgili dokümüne okuyacağız, bundan anladığımızı yazacağız da mesela gidip de başka bir kaynaktan konuyu açabilir miyiz, bir şeyler ekleyebilir miyiz yoksa oradaki kaynaklarla ve kendi düşüncelerimizle mi?
+
+680
+02:01:15,335 --> 02:01:19,255
+Başka kaynaktan da yorum koyacaksan koy, tabii ki söyle, söyle, neden olmasın?
+
+681
+02:01:19,335 --> 02:01:19,595
+Tamam.
+
+682
+02:01:20,627 --> 02:01:41,868
+Bir de son bir sorum olacak. Bu lisans ve yüksek lisansa ben bu dersi aldım. İşletim sistemleri işte. Bir de tasarım gerçekleştirimi vardı yüksek lisansla da. Bu da doktora seviyesi. Böyle sene sonunda bir retos falan, real time operation sistem falan. Böyle bir deneymedir, boot etmedir gibi bir şeyler düşünüyor musunuz? Hani görmek açısından. Yoksa böyle mi?
+
+683
+02:01:42,507 --> 02:01:44,927
+Yok hayır. Burada öyle bir uygulama yaptın.
+
+684
+02:01:44,927 --> 02:01:46,148
+Tamamdır.
+
+685
+02:01:46,579 --> 02:01:49,500
+Sarmak istedim. Teşekkür ederim.
+
+686
+02:01:49,760 --> 02:02:03,660
+Bu sene 67 kişiyle o uygulamayı yaptıramam. Daha önceki senelerde her bir konuyla alakalı process migration olsun, access control list olsun, diğer şey olsun onlarla alakalı uygulama yaptırmıştım.
+
+687
+02:02:04,980 --> 02:02:14,579
+Herkes bu paperların incelenmesi sonucunda ben şu konuyu yapacağım, bu konuyu yapacağım diye seçmişti ama o senelerde öğrenci sayımız 15 yıl.
+
+688
+02:02:15,199 --> 02:02:26,199
+ssms,
+
+689
+02:02:14,579 --> 02:02:16,779
+arasındaydı. Hatta bazen 10 kişiydi.
+
+690
+02:02:17,460 --> 02:02:17,899
+Ama yani
+
+691
+02:02:17,899 --> 02:02:20,260
+66 veya 67 kişide bunu
+
+692
+02:02:20,260 --> 02:02:21,479
+yaptırabilme şansım yok.
+
+693
+02:02:22,707 --> 02:02:24,287
+Tamamdır hocam. Teşekkür ederim.
+
+694
+02:02:25,047 --> 02:02:29,147
+Sağ olasın. [öğrenci], sen bir şey sormak istiyorsun.
+
+695
+02:02:29,247 --> 02:02:33,527
+Evet hocam. Derste bu kadar çok soru sormadık ama dersle ilgili daha çok soru soruyoruz sanırım.
+
+696
+02:02:34,027 --> 02:02:39,127
+Ben sınavları soracaktım aslında hocam. Mesela şimdi paperlara çalışırken daha detaylı bakıyoruz.
+
+697
+02:02:39,287 --> 02:02:49,607
+Hangi mimarda hazırlanmış bu tarz kısımları önemli olarak işaretliyorum ama sınavda bu kadar detaylı olur mu ya da bu paperlara erişimimiz mümkün olur mu?
+
+698
+02:02:50,000 --> 02:02:50,880
+Sınav anında?
+
+699
+02:02:51,320 --> 02:02:54,199
+Sınav anında paperlara erişim mümkün olur mu?
+
+700
+02:02:55,159 --> 02:03:01,840
+Maalesef sınav anında paperlara erişmemenizi tabii ki isteyeceğim sizden.
+
+701
+02:03:02,020 --> 02:03:07,840
+Orada sizin iyi niyetinize ve dürüstlüğünüze güveniyor olacağım.
+
+702
+02:03:08,060 --> 02:03:17,920
+Onlarla alakalı soru soracağım ama sınavlar online olduğu sürece, paperlar da elinizin altında olduğu sürece bunu engelleyebilecek tek güçsüzsünüz, kendinizsiniz.
+
+703
+02:03:18,000 --> 02:03:34,100
+Sizin kendi vicdanınız. Yani mesele buradaki kavramları öğrenmeniz görüyorsunuz. Yani benim hoşuma gidiyor. Umarım sizin de hoşunuza gidiyordur böyle bir konuları tartışmak, konuşmak. Zevkli şeyler.
+
+704
+02:03:34,688 --> 02:03:53,887
+Çünkü 60'lı yıllardaki ortaya atılmış, araştırılmış, incelenmiş şeyi bugün günümüzde kullanıyoruz. Çok uzun yıllardan beri kullanıyoruz. Yani yeni diye karşımıza çıkan şeyler aslında eskiden yapılmış şeyler. Bunları öğrenirseniz günümüzdeki şeylere farklı bir gözle bakabilirsiniz.
+
+705
+02:03:55,628 --> 02:03:57,148
+Teşekkür ederim hocam.
+
+706
+02:03:57,408 --> 02:04:00,528
+Ben teşekkür ederim. Var mı başka soru?
+
+707
+02:04:04,083 --> 02:04:22,823
+O zaman hepinize teşekkürler arkadaşlar. Ödevler saat 3'ü geçtiğine göre sistemde de teslim etme şey çıkmıştır. Önümüzdeki pazar 23.59'a kadar 4, 5, 6'yı teslim edebilirsiniz. Kolay gelsin.

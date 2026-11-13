@@ -1,0 +1,3595 @@
+1
+00:04:30,829 --> 00:04:32,829
+Arkadaşlar hoş geldiniz.
+
+2
+00:04:32,829 --> 00:04:38,829
+Bugünkü dersimizin anlatımına saat 14.30'da başlayacağız.
+
+3
+00:04:38,829 --> 00:04:42,829
+O yüzden sizi bilgilendirmek istedim.
+
+4
+00:04:42,829 --> 00:04:44,829
+Şu anda saat 14.05.
+
+5
+00:04:44,829 --> 00:04:47,829
+Derse 14.30 itibariyle başlayacağız.
+
+6
+00:04:47,829 --> 00:28:56,259
+İki buçukta görüşmek üzere.
+
+7
+00:28:56,259 --> 00:28:59,259
+Evet arkadaşlar yeniden hoş geldiniz.
+
+8
+00:28:59,259 --> 00:29:01,259
+Beklettiğim için kusura bakmayın.
+
+9
+00:29:01,259 --> 00:29:04,259
+Önemli bir işi tamamlamam gerekiyordu.
+
+10
+00:29:04,259 --> 00:29:08,259
+Ben yarım saat daha sizi geç başlatmak durumunda kaldım.
+
+11
+00:29:08,259 --> 00:29:10,259
+Anlayışınız için teşekkür ederim.
+
+12
+00:29:10,259 --> 00:29:17,259
+Şimdi bu hafta background testlerini konuşacağımızı söylemiştik.
+
+13
+00:29:17,259 --> 00:29:25,259
+Ve Android tarafında bu arka plan işlerini yönetmek için çeşitli seçenekler var.
+
+14
+00:29:25,259 --> 00:29:27,259
+Onlardan bahsedeceğiz.
+
+15
+00:29:27,259 --> 00:29:32,259
+Küçük bir aksiyon olarak, bir örnek olarak bir uygulamamız olacak.
+
+16
+00:29:32,259 --> 00:29:35,259
+Arkasından da notifikasyonları anlatacağız.
+
+17
+00:29:35,259 --> 00:29:38,259
+Ve bu haftayı noktalayacağız.
+
+18
+00:29:38,259 --> 00:29:43,259
+Bir sonraki haftada location based servislerden bahsediyor olacağız.
+
+19
+00:29:43,259 --> 00:29:45,259
+Haritalardan bahsediyor olacağız.
+
+20
+00:29:45,259 --> 00:29:47,259
+Dönemi tamamlıyor olacağız.
+
+21
+00:29:47,259 --> 00:29:56,259
+Dersin hemen başında dönem projenizle ilgili bir sorunuz var mı diye bir sorayım size.
+
+22
+00:29:56,259 --> 00:30:06,380
+Bir şey tanışmak istediğiniz bir konu var mı?
+
+23
+00:30:07,380 --> 00:30:10,380
+O zaman derse hemen geçebiliriz.
+
+24
+00:30:10,380 --> 00:30:16,380
+Şimdi öncelikle bir background test dediğimiz zaman ne anlıyoruz?
+
+25
+00:30:16,380 --> 00:30:18,380
+Onu sorayım.
+
+26
+00:30:18,380 --> 00:30:23,380
+Arka plan işi dediğimizde sizin aklınıza ne geliyor Android'te?
+
+27
+00:30:23,380 --> 00:30:29,170
+Hangi işleri arka plan işi olarak adlandırabiliriz?
+
+28
+00:30:29,170 --> 00:30:39,099
+Evet [öğrenci].
+
+29
+00:30:39,099 --> 00:30:48,539
+Örneğin bir web servisi ile yedekleme veya arka planda dosyayı indirme gibi bir işlem yapılabilir.
+
+30
+00:30:48,539 --> 00:30:52,539
+Veya arka planda bizim konumumuzu bir web servisine gönderiyor olabilir.
+
+31
+00:30:52,539 --> 00:30:56,539
+Bu tarz için bizim birebir etkileşimi bulmadığımız işler alınır.
+
+32
+00:30:56,539 --> 00:31:08,539
+Peki formal olarak bunun özelliklerini define et desem, yani örnek vermenin ötesinde şu tür işler background işi olarak adlandırılır.
+
+33
+00:31:09,539 --> 00:31:11,539
+Özelliklerini sorsan ne dersin?
+
+34
+00:31:12,539 --> 00:31:20,539
+Sanırım çok da formal ve net tanım olmasa da kullanıcının direkt etkileşimde bulunmadığı...
+
+35
+00:31:20,539 --> 00:31:33,539
+Tamam çok güzel. Birinci özellik herhangi bir kullanıcı ile etkileşimde olmayan işler, bir ara yüzü ile bağlantısı olmayan işler demeliyiz.
+
+36
+00:31:33,539 --> 00:31:42,539
+İki, uzun süren genelde işler. Özellikle milisaniyelerin ötesinde, saniyenin armazında sürecek işler.
+
+37
+00:31:42,539 --> 00:31:53,539
+Ve herhangi bir uygulamanın bir aktivitesi tarafından başlatılmamış foreground servisler olarak adlandırabiliriz, arka plan işlerini.
+
+38
+00:31:53,539 --> 00:32:04,539
+Burada önemli olan herhangi bir şekilde kullanıcı ile interaktif bir bağlantının bulunmaması ya da bu tarz bağlantısı bulunan bir uygulama tarafından,
+
+39
+00:32:04,539 --> 00:32:14,539
+uygulamanın sahibi olduğu bir aktivite tarafından başlatılmamış olması ve bir de özellikle uzun sürecek işler background işleri olarak adlandırılır.
+
+40
+00:32:14,539 --> 00:32:30,539
+Peki, Android'de temelli bir tane main threadimiz var ve bu main thread bütün aslında UI komponatları ve kullanıcı ile olan ilişkiyi yürütüyor.
+
+41
+00:32:30,539 --> 00:32:38,539
+Bu noktada milisaniyelerin ötesinde sürecek işleri yaptığımızda sıkıntı ne oluyor?
+
+42
+00:32:38,539 --> 00:32:51,539
+Sıkıntı ne oluyor? Kullanıcı ile olan o ekranın, arayüzün bu işin uzun süresinden dolayı freeze etmesi, dolması, bloklanması bizim problemimiz.
+
+43
+00:32:51,539 --> 00:33:01,539
+Biz de mümkün olduğunca daha uzun sürecek işleri başka yollardan harin etmeye çalışıyoruz. Bunun en kolay yolu nedir?
+
+44
+00:33:01,539 --> 00:33:19,539
+Diyelim ki kullanıcı ile interaction içerisindesiniz ve kullanıcı o sırada uygulamanız üzerinden bir dosya indirmek istedi ya da secondary storage'dan bir file açmak istedi.
+
+45
+00:33:19,539 --> 00:33:42,500
+Daha uzun sürecek bir iş yapmak istedi. Android'in bunun için çözümü nedir?
+
+46
+00:33:42,500 --> 00:33:44,500
+Et barışıyla sana söz vereyim.
+
+47
+00:33:44,500 --> 00:33:48,500
+Emin olmamakla birlikte servisler olabilir mi?
+
+48
+00:33:48,500 --> 00:34:01,500
+Şimdi servisler ağırlıklı olarak daha uzun sürecek ve aslında biraz da kullanıcı arayüzünden bağımsız olacak yapılar.
+
+49
+00:34:01,500 --> 00:34:12,500
+Evet, bir uygulama tarafından başlatılabilir ama yeterince uzun sürmeyecekse bir servis assign etmek çok da doğru bir yaklaşım değil.
+
+50
+00:34:12,500 --> 00:34:22,500
+Daha kısa sürecek ama main thread'de bloklayacak bir yapıdan bahsediyorsak ekstra bir thread initialize etmekten bahsederiz.
+
+51
+00:34:22,500 --> 00:34:33,500
+Sonuçta bir main thread'imiz var. Yeni bir thread oluşturarak bunu bir görev olarak başka bir thread'in download işlemini gerçekleştirmesini sağlayabilirsiniz.
+
+52
+00:34:33,500 --> 00:34:47,500
+Download sadece bir örnek. Uzun sürecek başka login mekanizmasında ilgili sunucuya gidilip sunucudan authorization ve authentication konusunda konfirmasyon alınması vs.
+
+53
+00:34:47,500 --> 00:34:52,500
+Bunlar da uzun sürecek işler olarak adlandırılabilir yeri geldiği zaman.
+
+54
+00:34:52,500 --> 00:35:07,500
+Bu noktada thread yapısı karşımıza çıkıyor ki thread yapısı aslında Java'da bulman ve bizim processleri alt parçalara ayırarak özellikle işleri asenkron yapıda yürütmemizi sağlayan
+
+55
+00:35:07,500 --> 00:35:18,500
+ve genelde birbirinden bağımsız yürüyebilecek işleri başka threadlerle yürütmek amacıyla ortaya atılan bir yapı.
+
+56
+00:35:18,500 --> 00:35:26,500
+Ama buna ek olarak Android bize ne tür başka yeni yapılar sağlıyor olabilir?
+
+57
+00:35:26,500 --> 00:35:39,630
+Thread çok bildiğimiz bir yapı ve Java'da kullanılıyor doğru. Ama Android'in bununla ilgili başka çözümleri var.
+
+58
+00:35:39,630 --> 00:35:43,630
+Tahmin yürütücem hocam. Broadcast'lar olabilir mi?
+
+59
+00:35:43,630 --> 00:35:52,630
+Broadcast'lerde aslında arka plan işleri olarak geçiyor doğru. Biraz sonra oraya geleceğiz. Onlara biraz ona söz vereyim.
+
+60
+00:35:52,630 --> 00:35:56,039
+Hocam Handler vardı.
+
+61
+00:35:56,039 --> 00:36:02,039
+Evet bir kullanabileceğimiz seçeneklerden bir tanesi Handler.
+
+62
+00:36:02,039 --> 00:36:12,429
+Handler'a alternatif olarak kullanabileceğimiz başka aklınıza gelen bir yapı var mı?
+
+63
+00:36:12,429 --> 00:36:20,429
+Handler aslında tek bir thread'i yönetmek için kullandığımız bir yapı Android tarafında.
+
+64
+00:36:20,429 --> 00:36:32,429
+Birden fazla thread yöneteceğimiz zaman ne yapıyoruz? Neyden faydalanıyoruz? Bir yapı var. Evet [öğrenci]?
+
+65
+00:36:32,429 --> 00:36:34,429
+Prosesler mi hocam?
+
+66
+00:36:34,429 --> 00:36:50,429
+Değil. Daha spesifik bir ismi var. Nokta nokta service diye de geçiyor. Bir tane thread pool oluşturulmasını ve bu thread pool'daki threadlerle olan, birden fazla threadlerle olan ilişkiyi yönetiyor.
+
+67
+00:36:50,429 --> 00:36:53,429
+Executor service.
+
+68
+00:36:53,429 --> 00:37:06,429
+Şimdi Handler'la Executor service arasındaki en önemli farklardan bir tanesi. Biri sizin birden fazla thread'i yönetmenizi sağlıyor Executor service.
+
+69
+00:37:06,429 --> 00:37:14,429
+Aynı zamanda o threadlerle ilgili genel bir bilgi almanıza da olanak veriyor.
+
+70
+00:37:14,429 --> 00:37:21,429
+İşte thread'in ne kadar çalıştığı, thread'in ne kadar süre beklediği şekilde bu tür bilgileri de kontrol edebiliyorsunuz.
+
+71
+00:37:21,429 --> 00:37:26,429
+Bu sayede thread pool içerisinde yer alan threadleri daha detaylı bir yönetebiliyorsunuz.
+
+72
+00:37:26,429 --> 00:37:37,429
+Ama eğer siz tek bir iş yapmak istiyorsanız main thread'den farklı olarak o zaman Handler bunun için biçilmiş kafta.
+
+73
+00:37:37,429 --> 00:37:43,429
+Siz diyelim ki o anda bir veri tabanında bağlayacaksınız, bir veri query atacaksınız, onun sonucu ne olacaksınız?
+
+74
+00:37:43,429 --> 00:37:54,429
+O zaman Handler yapısını tercih ediyorsunuz. Handler single thread'in yönetiminden sorumlu olarak size hizmet ediyor.
+
+75
+00:37:54,429 --> 00:38:11,429
+Ama birden fazla thread mümkünse eğer uygulamanız bu tarz daha fazla as-handle işi yönetmekle sorumluysa, bu tarz bir yapım varsa o zaman Executor service'tan faydalanıyorsunuz.
+
+76
+00:38:11,429 --> 00:38:12,429
+Evet [öğrenci].
+
+77
+00:38:12,429 --> 00:38:20,420
+Hocam Java'da da Executor vardı. Bu Executor service dediğiniz sonuna farklı bir şey mi?
+
+78
+00:38:20,420 --> 00:38:28,420
+Aynı Java'daki yapıyı burada da görüyorsunuz. Yani Android'e spesifik bir yapı değildi onu soruyorsunuz.
+
+79
+00:38:28,420 --> 00:38:46,159
+Şimdi bu Handler ve Executor service aslında bizim en temel kullanabileceğimiz Android tarafındaki yapılar.
+
+80
+00:38:46,159 --> 00:38:54,159
+Avacımız UI thread'i mümkün olduğunca rahat bırakıp işleri delege etmek.
+
+81
+00:38:54,159 --> 00:39:07,159
+Peki arka plan, yaygın arka plan işleri neler diye soracak olursak mesela örneğin broadcast receiver'ı manifesti register ettiğiniz zaman bu bir arka plan işi.
+
+82
+00:39:07,159 --> 00:39:26,159
+Arka plan işleri arka planda sizin herhangi bir sistemsel kondisyon oluştuğunda yakalamak için manifesti bir declaration yapıyorsunuz ve bunu yakaladığında da arka planda bir on-receive metodu çalışıyor ve broadcast receiver'ınız bunu yakalıyor. Bu tipik bir arka plan işi.
+
+83
+00:39:26,159 --> 00:39:39,159
+Bunun dışında tabii arka plan işleriniz belirli, istenilen zamanlarda çalışılması gereken işler olabilir ya da exact bir zaman yoktur.
+
+84
+00:39:39,159 --> 00:39:50,159
+Ama tahmini bir aralık vardır. Gece çalışılması gerekiyor. Mesela bir güncelleme olacaktır. Gece yapılmasını isterseniz ama saat doğrudan iki de yapılmasını hedeflemiyorsunuzdur.
+
+85
+00:39:50,159 --> 00:40:08,159
+O zaman bunun için kullanılabilecek iki tane daha yapı var. Bir tanesi biraz daha eski API'lerle kullanılan job scheduler, diğeri de bu job scheduler'ı da uyumlu çalışan work manager.
+
+86
+00:40:08,159 --> 00:40:27,159
+Biraz sonra bunların detayını da göreceksiniz. Bunlar daha çok arka planda zamanı net olarak belirlenmemiş ama kabaca belli periodlarla çalışan işleri yönetmek için kullandığımız yapılar work manager ve job scheduler.
+
+87
+00:40:27,159 --> 00:40:47,159
+Onun ötesinde bir de tabii alarm manager var. Alarm manager da bize belli işleri belirlediğimiz saatlerde ya bir kez ya da tekrar edecek şekilde saat bozulda, gün bozulda, hafta bozulda çalışılmasından sorumlu.
+
+88
+00:40:47,159 --> 00:41:12,159
+Biz tabii birazdan yine bahsedeceğiz. Work manager'ı ön plana çıkartıyoruz. Alarm manager biraz daha strikt olduğu için kaynak tüketimi anlamında da work manager biraz daha estek davranabilirken alarm manager belirlenen dakikada ve saniyede çalışması gerektiği için bu noktada biraz daha kaynak tüketimi yüksek olan bir yapı.
+
+89
+00:41:12,159 --> 00:41:37,159
+Bunu da söylemiş olalım. Şimdi background processing niye kullanıyoruz? Bunun amaçlardan bir tanesi UI Block 3'den mümkün olduğunca kaçınmak. Özellikle input-output işleri yaptığımızda ya da network işleri yaptığımızda burada oluşabilecek kullanıcı interaksiyonunu kesintiye uğratmamak aracımız.
+
+90
+00:41:37,159 --> 00:42:04,159
+Bir de tabii işlerin denegi ederek kaynakları verimli kullanmak ve performans arttırmak. Bazen uygulamalarda görüyorsunuz application not responding ya da işte o anda ekranımızın dolması. Bunların en önemli sebebi kısa sürmeyen işlerin main thread'in içerisinde alınmış olması ki hatırlarsanız broadcast receiver'da demiştik ki,
+
+91
+00:42:04,159 --> 00:42:29,159
+mümkünse on receiver'a uzun işler koymayın. İşte sensor, on sensor changed, on ekibüsü change metotlarına uzun süren işler koymayın. O yüzden user experience anlamında kötü deneyimler yaşatmama kadar background task'larını yönetirken hangi yapıları kullanacağınızı iyi bilmemiz gerekiyor.
+
+92
+00:42:29,159 --> 00:42:49,159
+Şimdi background processing dediğiniz zaman da önde bir uygulamayı kapattığınızda artık kaynak tüketimi yapmıyorsunuz. Ama arka plana attığınız her bir iş arka planda çalışmaya devam ettiği için sizin bunu unutma ihtimaliniz var.
+
+93
+00:42:49,159 --> 00:43:12,159
+Ve okursanız daha yakından göreceksiniz. Özellikle 6'dan önce Android inanılmaz bir özgürlüğü vardı kullanıcının, programcının. İstediği işi arka plana atıyordu. Arka plan da sınırsız bir özgürlükle prosesleri çalıştırabiliyordu.
+
+94
+00:43:12,159 --> 00:43:39,159
+Bu da özellikle RAM ve pil tüketimini çok olumsuz etkiliyordu. Bundan dolayı da Android cihazları daha büyük pil kullanmasına rağmen birçok noktada özellikle farkında olmaması nedeniyle kullanıcıların çok kısa sürede pillerini bitmesine ya da aynı anda açık olan uygulamalardan dolayı bazı uygulamaların
+
+95
+00:43:39,159 --> 00:44:09,159
+işte Application Not Responding hatası almasına sebebiyet veriyordu. 6.0 ile birlikte Android yeni bir düzen oluşturmaya başladı ve çeşitli modlar tanımladı ve application ile ilgili ne diyelim önceliklendirme havuzları oluşturarak onların daha yüksek uygulamaların uygulamalarının
+
+96
+00:44:09,159 --> 00:44:36,840
+verimli kaynakları kullanmasını sağlamak üzere çeşitli mimari değişikliklere gitti. İlk yaptığı değişti Doze modu devreye sokmaktı. Doze modu konusunda bilgis olan vardı yani nedir buradaki S1'i ve gerçekten aslında anlamlı çözüm getiriyor Android burada.
+
+97
+00:44:37,840 --> 00:44:38,840
+Pardon onu da söz vereyim.
+
+98
+00:44:39,840 --> 00:44:44,840
+Hocam dersin başında bundan bahsetmiştik içerini tam olarak hatırlamıyorum ama yazılımsal bir çözüm olduğunu hatırlıyorum.
+
+99
+00:44:45,840 --> 00:44:53,840
+Evet doğru bir pilçiketimle konuşuyoruz onunla ilgili burada bir cümle içerisinde aslında bahsediyordu. Yorum yapabilir misin?
+
+100
+00:44:54,840 --> 00:44:58,309
+İlk Android 6.0 rütbesinde.
+
+101
+00:44:59,309 --> 00:45:03,460
+Yani şu an yapamadım açıklatır hocam.
+
+102
+00:45:04,460 --> 00:45:05,460
+Peki ekrana söz vereyim.
+
+103
+00:45:06,460 --> 00:45:19,340
+Hocam yanlış bilmiyorsam telefon ekran kapalı bir şekilde burayı tıkıldıktan yarım saat sonrasında arka plan işlemlerinin çoğunu durduruyor diye biliyorum.
+
+104
+00:45:20,340 --> 00:45:26,340
+Çok güzel. Peki arka plan işlemleri için ne söyleyebilirsin mesela örnek verebilir misin şu an çok sık kullandığımız uygulamalarla?
+
+105
+00:45:29,340 --> 00:45:30,340
+Vermem hocam galiba.
+
+106
+00:45:31,340 --> 00:45:45,340
+Mesela instant messaging uygulamasında sonuçta arka planda siz belirli bir kapattığınızda uygulamayı ve telefonu screen off yaptığınızda size bir mesaj geldiğinde sizi bilgilendiriyor doğru mu?
+
+107
+00:45:46,340 --> 00:45:47,340
+Evet.
+
+108
+00:45:47,340 --> 00:45:50,340
+Arka planda bu çalışmasa sizin herhangi bir şekilde.
+
+109
+00:45:51,340 --> 00:45:52,340
+Onlar farklı bir yapıdaydı sanırım.
+
+110
+00:45:52,340 --> 00:45:54,340
+Hocam fcm açılımını hatırlamıyorum şu anda öyle bir şey kullanılıyor.
+
+111
+00:45:55,340 --> 00:45:57,340
+Ha şimdi şu an push notification dediğimiz bir yapı da var tabi.
+
+112
+00:45:58,340 --> 00:46:06,340
+Şimdi bunlar ayrı daha özel tartışılması gereken konular ama buradaki bahsettiğim şey şu.
+
+113
+00:46:07,340 --> 00:46:16,340
+Sizin telefonunuzu kapattığınız anda arka planda mesela diyelim ki belli bir saat geldi ve güncelleme yapacak telefonunuz.
+
+114
+00:46:16,340 --> 00:46:21,340
+Bu güncellemenin olabilmesi için buna arka planda takip eden bir şeyler olması gerekiyor.
+
+115
+00:46:22,340 --> 00:46:24,340
+Ya da broadcast receiver'lar var bunları takip ediyoruz.
+
+116
+00:46:25,340 --> 00:46:31,340
+Bütün bunlar arka planda belirli sıklıklarla kontrol ediliyor.
+
+117
+00:46:32,340 --> 00:46:39,340
+Senkarizasyon birinizin uygulamadan diyelim ki belli periodlarla sunucuya aktarılması gerekiyor.
+
+118
+00:46:40,340 --> 00:46:47,340
+Bu bütün ya da cloud tarafında diyelim ki bir dosyanızı güncellediniz.
+
+119
+00:46:48,340 --> 00:46:50,340
+Telefona bu güncellemeyin aksettirilmesi gerekiyor.
+
+120
+00:46:51,340 --> 00:47:00,340
+Bütün bu senkarizasyonların sıklığı yüksek olursa o zaman telefonunuzu doğal olarak enerjiyi çabuk tüketecektir.
+
+121
+00:47:01,340 --> 00:47:08,340
+Android'de diyor ki siz telefonunuzu kullanmıyorsanız ve telefonunuzun ekranı kapalıysa
+
+122
+00:47:10,340 --> 00:47:18,340
+o zaman ben bu noktada telefonunuzun sabit olarak hareket etmediğini tespit edip
+
+123
+00:47:19,340 --> 00:47:30,340
+arka plandaki bütün lokasyon bilginiz açıksa bunların sıklığını azaltırım diyor.
+
+124
+00:47:30,340 --> 00:47:38,340
+Ve bu sayede de boşu boşuna siz yer değiştirmiyorken ya da telefonu kullanmıyorken
+
+125
+00:47:39,340 --> 00:47:45,340
+bu bilgilerin akışını daha kesik kesik yani normalde saniyede bir oluyorsa
+
+126
+00:47:46,340 --> 00:47:51,340
+yarım dakikada, dakikada bire getirecek şekilde kabaca söylüyorum bir mekanizma oluşturuyor.
+
+127
+00:47:52,340 --> 00:47:57,340
+Ondan sonra 7 ile beraber tabi those on the go geliyor.
+
+128
+00:47:57,340 --> 00:48:06,340
+Bu sefer sizin hareketlerinizi takip ederek yani araçlama hareket halindesiniz, yürüyor musunuz vesaire
+
+129
+00:48:07,340 --> 00:48:16,340
+o andaki hareketlerinizi de izleyerek sadece durduğunuzda değil hareket halinde olduğunuzda da
+
+130
+00:48:17,340 --> 00:48:23,340
+telefonun arka plan servislerini eğer ekran örneğin kapalıysa
+
+131
+00:48:23,340 --> 00:48:29,340
+çünkü telefon araçla seyahat halindeyken stationera bir pozisyon da değil.
+
+132
+00:48:30,340 --> 00:48:37,340
+Ama bunu algılayabilirse telefon sonuçta sizin onu kullanmadığınızı sadece bir hareket halinde olduğunuzu anlayın.
+
+133
+00:48:38,340 --> 00:48:44,340
+Bu noktada da bir yine kaynak anlamında bir tüketim tasarrufu yapıyor.
+
+134
+00:48:45,340 --> 00:48:48,340
+Bu ilerliyor ilerliyor en son 9'a kadar geliyoruz.
+
+135
+00:48:49,340 --> 00:48:52,340
+9'a geldiğimizde de bir yeni bir bakış açısı ortaya atılıyor.
+
+136
+00:48:53,340 --> 00:49:06,340
+Bu da application standby bucket istediğimiz özellikle telefonunuzdaki uygulamaların kullanım karakteristiklerine göre önceliklendirilmesi.
+
+137
+00:49:07,340 --> 00:49:11,340
+Şimdi bakalım bununla ilgili ne söyleyebiliriz.
+
+138
+00:49:11,340 --> 00:49:14,340
+Bir kere 5 tane kategori oluşturuluyor.
+
+139
+00:49:15,340 --> 00:49:28,340
+Bu kategoriler oluşturulurken de uygulamalarınızın ne sıklıkla ve ne kadar yakın bir sürede kullanıldığına bakılarak bu bucketler oluşturuluyor.
+
+140
+00:49:28,340 --> 00:49:41,340
+Bu da sistem karar veriyor arka planda bir makine öğrenmesi yaklaşımı kullanarak ve kesinlikle müdahale edilmemesi gerekiyor.
+
+141
+00:49:42,340 --> 00:49:46,340
+Bu bucketlardaki uygulamaların daha ön plana çekilmemesi gerekiyor.
+
+142
+00:49:47,340 --> 00:49:50,340
+Bunu özellikle Android uyarıyor.
+
+143
+00:49:50,340 --> 00:49:58,340
+Burada tabi uygulamalar zaman içerisinde bucket değiştirebiliyorlar.
+
+144
+00:49:59,340 --> 00:50:04,340
+Çünkü sizin kullanım altı çıkanlıklarınız ve kullanım sıklıklarınız zaman içerisinde değişiyor.
+
+145
+00:50:05,340 --> 00:50:09,340
+O yüzden bir uygulama bir bucket ile girdiği zaman hep orada kalmıyor.
+
+146
+00:50:10,340 --> 00:50:14,340
+Belli sıklıklarla bu bucket güncelleniyor.
+
+147
+00:50:15,340 --> 00:50:19,340
+Peki bu yapının amacı ne sizce?
+
+148
+00:50:20,340 --> 00:50:37,449
+Farklı bir arkadaşımız söyleyelim. Çok zor bir soru değil.
+
+149
+00:50:38,449 --> 00:50:41,449
+Şu andaki maddeler arasında da yazıyor.
+
+150
+00:50:43,699 --> 00:50:53,699
+Bu tarz uygulamaları katagorize ederek önceliklendirmenin Android tarafındaki hedefini neden böyle bir yapı oluşturuyor?
+
+151
+00:51:01,130 --> 00:51:02,130
+Evet [öğrenci] soru sorayım.
+
+152
+00:51:05,300 --> 00:51:13,300
+Daha sık kullanılan uygulamalara daha fazla öncelik vererek kullanıcının günlük telefon kullanımını rahatlatmak için.
+
+153
+00:51:14,300 --> 00:51:20,300
+Evet ama daha fazla öncelik vererek derken aslında daha fazla kaynak temin ederek değil.
+
+154
+00:51:21,300 --> 00:51:26,300
+Buradaki kritik nokta bu. Ne kadar ön veriyi yüksekse o uygulama daha fazla kaynak alıyor.
+
+155
+00:51:27,300 --> 00:51:29,300
+Bütün aslında mantık bu.
+
+156
+00:51:30,300 --> 00:51:38,300
+Burada kaynaktan kasıt sadece servislerde ve background işlemleri olarak yazılımsal mı geçerli?
+
+157
+00:51:38,300 --> 00:51:46,300
+Remde de daha geniş alan, depolama kullanımında daha fazla kolaylık tarzı ekstra şeyler dahil mi?
+
+158
+00:51:47,300 --> 00:51:50,300
+Remde buna dahil. Sadece background işleri için değil.
+
+159
+00:51:51,300 --> 00:51:56,300
+Aynı zamanda uygulamanın ihtiyaç duyacağı kaynak açısından da önemli.
+
+160
+00:51:57,300 --> 00:52:02,300
+Çünkü sonuçta bir uygulamaya ne kadar çok uzun süre verirseniz
+
+161
+00:52:02,300 --> 00:52:10,300
+o uygulamanın hem vermek açısından hem CPU açısından hem pin tüketim açısından daha fazla kaynak tükettiğini biliyorsunuz.
+
+162
+00:52:11,300 --> 00:52:17,300
+Sık kullanılan bir uygulamanın bu anlamda belli adım önde olması önemli.
+
+163
+00:52:18,300 --> 00:52:29,300
+Fakat ağırlıklı olarak tabii ki arka plan işlerinde bu önceliklendirme yapılmak üzere dizayn edilmiş, tasarlanmış bir yapı.
+
+164
+00:52:29,300 --> 00:52:37,300
+Şimdi burada 4 bucket'tan bahsediyoruz. 5. bucket'ta never olarak geçiyor.
+
+165
+00:52:38,300 --> 00:52:44,300
+Şu anda kullanılan uygulamalar ya da çok yakında kullanılmış olan uygulamalar aktif.
+
+166
+00:52:45,300 --> 00:52:48,300
+Sıklıkta kullandığınız uygulamalar working.
+
+167
+00:52:49,300 --> 00:52:57,900
+Yani burada aslında sıklık kısmı yani şöyle özellikle vurgulamak lazım.
+
+168
+00:52:57,900 --> 00:53:05,900
+Working set'de şu anda kullanımda olan diye çeviremiyoruz onu.
+
+169
+00:53:06,900 --> 00:53:17,900
+Örneğin gün içerisinde işte social media uygulamasına girdiğiniz, çıktığınız bu genelde regular'ı yüzde olan bir uygulama olduğu için social media uygulamaları working set olarak adlandırılıyor.
+
+170
+00:53:17,900 --> 00:53:27,900
+Frequent olarak geçenlerse daha çok günlük açısından değil ama işte günde bir iki kez ya da gün aşırı kullanılan uygulamalar olarak geçiyor.
+
+171
+00:53:28,900 --> 00:53:31,900
+O yüzden aralarında böyle küçük bir ayrım var.
+
+172
+00:53:32,900 --> 00:53:39,900
+Gün içinde daha çok kullandıklarınız working set, gün aşırı kullandıklarınız ya da günde bir defa kullandıklarınız frequent olarak geçiyor.
+
+173
+00:53:40,900 --> 00:53:44,900
+İşte ayda yılda bir kez uğradığınız uygulamalar rare olarak geçiyor.
+
+174
+00:53:44,900 --> 00:53:50,900
+Bir de indirdiğiniz, kurduğunuz ama hiç uğramadığınız uygulamalar var.
+
+175
+00:53:51,900 --> 00:53:54,900
+Ya da bir kez uğramışsınız, bir daha hiç uğramamışsınız.
+
+176
+00:53:55,900 --> 00:54:13,900
+Bu uygulamalar özellikle arka planda siz ona belli işleri yapabilme yeteneğini kurulum sırasında verseniz de Android onları kullanmadığınız için hep çok çok az kaynak vererek yönetmeyin arka plamışlarıyla.
+
+177
+00:54:14,900 --> 00:54:15,900
+Her şeyi tercih ediyorum.
+
+178
+00:54:22,530 --> 00:54:30,530
+Bucket'larla ilgili bilgi ulaşmak için usage stats manager üzerinden getAppStandByBucket metodunu kullanabilirsiniz.
+
+179
+00:54:31,530 --> 00:54:36,530
+Bu sayede Bucket'lardaki sondurumu gözlemli yaşamsına sahipsiniz.
+
+180
+00:54:37,530 --> 00:54:48,530
+Aktif uygulamalarla ilgili oluşturulan Bucket ile ilgili netur ve dikkat edici değer noktalarına bakalım.
+
+181
+00:54:48,530 --> 00:54:55,530
+Bir launcher'ın olması çok önemli aktiftenin, yani uygulamanızın daha doğrusu.
+
+182
+00:54:56,530 --> 00:55:03,530
+Eğer launcher yoksa o zaman uygulama hiçbir zaman aktif Bucket'a giremiyor. Burası önemli.
+
+183
+00:55:04,530 --> 00:55:09,530
+Bazı uygulamalar launcher olmadan çalışabiliyorlar.
+
+184
+00:55:10,530 --> 00:55:15,530
+Sizin gençlediğiniz uygulama aktif Bucket'da olsun istiyorsanız mutlaka bir launcher olmak zorunda.
+
+185
+00:55:15,530 --> 00:55:22,530
+Bir foreground servise sahip olan bir uygulama yine bu bir müzik uygulaması da olabilir.
+
+186
+00:55:23,530 --> 00:55:32,530
+Müzik uygulaması sonuçta siz arka planda atsanız da ön planda bir tane mutlaka bir bar üzerinden çalıştırabiliyorsunuz.
+
+187
+00:55:33,530 --> 00:55:34,530
+Bu bir foreground serviste mümkün oluyor.
+
+188
+00:55:35,530 --> 00:55:42,530
+Yani aslında o anda kullanıcı ile doğrudan interaction yok ya da doğrudan bir ekran tasarımı yok.
+
+189
+00:55:42,530 --> 00:55:50,530
+Notification bar üzerinde kontrol edebiliyorsunuz. Bunlar foreground servisler ile yapılıyor.
+
+190
+00:55:51,530 --> 00:56:10,530
+Üstelikle verinin senkronizasyonu açısından content provider'lar üzerinden gelişim gerçekleştirilen uygulamalar ya da herhangi bir şekilde bir uygulama tarafından üretilen notification üzerinden.
+
+191
+00:56:10,530 --> 00:56:22,900
+Burada aktif statüsünde yer alıyorlar. Bunun için çok özel bir örnek vermeye gerek yok yukarıdaki aktif için.
+
+192
+00:56:23,900 --> 00:56:32,900
+Çünkü o anda kullandığınız bütün bu foreground serviste de ön planda açık olan uygulamalar bu statüze kabul ediliyorlar.
+
+193
+00:56:33,900 --> 00:56:46,900
+Şimdi gelelim working set'tekilere currently aktif olmayan ama biraz önce örnek verdiğim gibi sosyal medya uygulaması gün içerisinde belli periodlarla ziyaret ettiğiniz bir uygulama.
+
+194
+00:56:47,900 --> 00:57:13,900
+Mesela diyet yapanlar, diyet uygulaması kullandıklarında işte günde üç öğün ya da ara öğünlerde ya da su içtiklerinde sularında kaydetmek üzere buraya bağlandığında bunlar genelde sürekli açık olmayan ama gün içinde aktif olan uygulamalar bunlar working set dediğimiz bucket içerisinde yer alıyorlar.
+
+195
+00:57:13,900 --> 00:57:27,900
+Tabii burada bu grupta yer alanlara özellikle arka plan işleri için hafif bir kısıtlama getiriliyor.
+
+196
+00:57:28,900 --> 00:57:46,900
+Aktif olanlar zaten bir kısıtlamaya maruz kalmıyorlar ama gün içinde sık kullandıklarınız daha az kısıtlama ile bunu çok sık kullandığınızda genelde arka plan işlerine çok müdahale edilmiyor.
+
+197
+00:57:46,900 --> 00:57:57,900
+Şimdi gelelim frekentli kullandığımız uygulamaların bakıtına. Tabii burada her gün kullanmadığımız ama örnek olarak gym uygulamasını vermiş.
+
+198
+00:57:57,900 --> 00:58:17,900
+Belli periodlarına çalışma yapıyorsanız bu çalışmanızı kaydedip işte çalıştığınız andaki değerlerinizi ölçmek istiyorsanız haftada 3-4 defa antrenman yapıyorsanız bu tür uygulamalar frekentli kullanılır.
+
+199
+00:58:17,900 --> 00:58:46,900
+Yani haftada 3-4 defa mutlaka eriştiğiniz uygulamalar olarak geçiyor. Bunlar da çok sık kullanmadığınız için gün içerisinde daha sert önlemlerle arka plandaki işleri kontrol ediyor ki özellikle burada bu uygulama canı istediği zaman arka planda bir işi hemen yapmak durumunda kalmasın.
+
+200
+00:58:46,900 --> 00:59:06,900
+Tabii şunu söyleyebilirsiniz. Hani bir telefonda çok fazla uygulama yoksa, kaynaklar boştaysa bu sınırlamalar önemli mi? Yani RAM yeterince genişle ve uygulamalar çalışsın da indirebilir mi olsa sıkıntı mı?
+
+201
+00:59:06,900 --> 00:59:25,900
+Tabii ki çok sıkıntı değil ama esas bütün işin vardığı nokta pilinizin tüketimi. Pil tüketimini ne kadar iyi yönetirseniz aslında kullanıcı memnuniyetini o kadar yüksek tutmuş oluyorsunuz.
+
+202
+00:59:25,900 --> 00:59:41,900
+O yüzden günün sonunda bütün bu önlemler 1. hedefte pili az tüketmek üzerine alınıyor. Yani daha çok RAM'i az kullanmak değil onları az kullandığınızda doğal olarak pili de az kullanmış oluyorsunuz.
+
+203
+00:59:41,900 --> 00:59:59,900
+Ama temel hedef enerjik ihtimini minimize etmek. O yüzden de buradaki power management restriction'lara göz atabilirsiniz. Bu tür bakıtların ne tür engellemeleri var ya da wake lock özelliği var.
+
+204
+00:59:59,900 --> 01:00:17,269
+Ne kadar sıklıkla inegül edebiliyorsunuz vesaire bunların yönetimini yapmanızı sağlıyor. Bu da güzel bir örnek. Çok ender kullandığınız örneğin sadece seyahatte kullandığınız uygulamalar var.
+
+205
+01:00:17,269 --> 01:00:37,269
+Biri booking.com uygulaması olabilir. Hotels uygulaması olabilir ya da TripAdvisor uygulaması olabilir. Tatillerde, iş seyahatlerinde kullanılır. Bunlar ayda 1, senede 5-6 kez, senede 2-3 kez kullandığınız uygulamalar vardır.
+
+206
+01:00:37,269 --> 01:01:05,269
+Öyle olunca bunlarla ilgili tabi özellikle arka plan işleriyle ilgili kısıklamalar çok daha sert ve radikal oluyor. O yüzden bunların arka planda çalıştırmak istediği bazı aslında işler işletim sisteminin tarafından çeşitli kurallara bağlanıyor.
+
+207
+01:01:05,269 --> 01:01:21,659
+Eğer o kuralları sağlamıyorsanız işletim sisteminde bunun arka planında bunu çalıştırmanızı engelliyor. Buraya kadar sorusu olan var mı?
+
+208
+01:01:21,659 --> 01:01:25,659
+Hocam bu bakıtlar sistem uygulamaları içinde geçerli mi?
+
+209
+01:01:25,659 --> 01:01:28,659
+Sistem uygulamasından kastettiğin nedir mesela?
+
+210
+01:01:28,659 --> 01:01:39,659
+Mesela çoğu Android işletim sisteminde yüklü hazır gelen Google servisleri gibi bir sürü Google uygulaması geliyor. 10 tane falan geldi mesela ben de.
+
+211
+01:01:39,659 --> 01:01:49,659
+Ben Android'in o noktada özel bir ifadesine rastlamadım ama bir uygulama olarak bunlara dahil olması lazım.
+
+212
+01:01:49,659 --> 01:02:02,659
+Fakat tabi kendi avantajına olduğu için Google'ın bu konuda bir ayrıcalık yapıp yapmadığı konusunda bir soru işaretimi var.
+
+213
+01:02:02,659 --> 01:02:17,659
+Çünkü mesela Chrome'u kullandığınızda da çeşitli servisleri disable etmezseniz X1 browser'a göre çok daha fazla kaynak tükettiğini ve çok daha ağır çalıştığını görebilirsiniz.
+
+214
+01:02:17,659 --> 01:02:44,659
+Microsoft tarafında da aynısı var yani kendi browserlarında kendi bazı yeteneklerini kullanacağı daha fazla hizmet sunmak adına aktif ettiklerinden dolayı bu özelliğin açıkçası mobile uygulama tarafında da kendi servislerine bu kısıtlamaları getirmeme gibi bir seçenek seçmiş olabileceklerini düşünüyorum ama bununla ilgili bir bilgim yok.
+
+215
+01:02:44,659 --> 01:02:59,059
+Tabi lounger aktivitesi olmazsa kısmından bahsetmiştik. Bu bucket'ları manipüle etmemek gerektiği noktasımı da vurgulamıştık.
+
+216
+01:02:59,059 --> 01:03:20,059
+Ve sistemin bunu kendi yönettiğini ve her bir üreticinin ürettiği device'e bağlı olarak farklı bir aritmetikle çalıştığını rahatlıkla söyleyebiliriz bu yapımı.
+
+217
+01:03:20,059 --> 01:03:28,059
+Bu yüzden de dinamik bir yapı ve bunu özellikle vurgulamakta fayda var.
+
+218
+01:03:28,059 --> 01:03:44,340
+Şimdi bu application bucket'lardan bahsettikten sonra esas bizim odaklanmamız gereken konuya gelmek istiyorum.
+
+219
+01:03:44,340 --> 01:04:03,340
+Şimdi doze yaklaşımı ve bu app stand by bucket'lar sistemin bize otomatik olarak sağladığı bizim herhangi bir yönetmek için özel bir çalışma yapmadan faydalanabileceğimiz özellikler.
+
+220
+01:04:03,340 --> 01:04:14,340
+Ancak tabi background service, background task'ları kendi içinde de kategorize etmekte fayda var.
+
+221
+01:04:14,340 --> 01:04:22,340
+Çünkü Android size bu yapacağınız kategorizasyona göre çeşitli seçenekler sunuyor.
+
+222
+01:04:22,340 --> 01:04:32,340
+Ve size diyor ki bak eğer bu sorunun karşında verdiğin cevap şuysa sen o zaman benim sana sunduğum şu seçenekler arasında bunu tercih etmelisin.
+
+223
+01:04:32,340 --> 01:04:35,340
+Bu daha feasible, daha verimli.
+
+224
+01:04:35,340 --> 01:04:37,340
+İşte şimdi onlara bakıyor olacağız.
+
+225
+01:04:37,340 --> 01:04:47,340
+Aslında temelde üç tane kategoriye ayrılıyor background task'lar.
+
+226
+01:04:47,340 --> 01:04:51,340
+Bir tanesi hemen yapılması gerekenler.
+
+227
+01:04:51,340 --> 01:04:58,340
+Diğeri belirlenmiş kesin bir zamanda yapılması gerekenler.
+
+228
+01:04:58,340 --> 01:05:11,340
+Bir diğeri de yine belli bir zamanda, spesifik bir zamanda olmasa da belli bir periyoda tamamlanması gereken
+
+229
+01:05:11,340 --> 01:05:16,340
+ya da siz onu esan ettiğinizde uygun zamanda çalışabilecek olanlar olmak üzere.
+
+230
+01:05:16,340 --> 01:05:23,340
+Yani ertelenebilir diye adlandırdığımız üç temel ifade var.
+
+231
+01:05:23,340 --> 01:05:28,340
+Biri immediate, diğeri deferred, diğeri de exact olmak üzere.
+
+232
+01:05:28,340 --> 01:05:31,340
+Şimdi en kolayından başlayalım.
+
+233
+01:05:31,340 --> 01:05:36,340
+Exact time'da çalışacak olanlar için biz neyi tercih ediyoruz?
+
+234
+01:05:36,340 --> 01:05:41,900
+Hangi yapıyı kullanmayı tercih ediyoruz?
+
+235
+01:05:41,900 --> 01:06:00,250
+Buna cevap verebilirsiniz çok kolay.
+
+236
+01:06:00,250 --> 01:06:02,250
+Evet Ekran.
+
+237
+01:06:02,250 --> 01:06:05,250
+Broadcast olabilir mi hocam?
+
+238
+01:06:05,250 --> 01:06:08,250
+Broadcast tam olarak bunun karşılıklığı değil.
+
+239
+01:06:08,250 --> 01:06:11,250
+Exact time'dan bahsettiğim zaman bir time'dan bahsediyoruz.
+
+240
+01:06:11,250 --> 01:06:14,250
+Bir olayın, eventin tetiklenmesinden bahsetmiyoruz.
+
+241
+01:06:14,250 --> 01:06:19,250
+Broadcast Resim'in daha çok eventin tetiklenmesiyle çalışıyor.
+
+242
+01:06:19,250 --> 01:06:26,250
+Mesela orada diyelim ki telefonu açtınız kapadınız bir aksiyon oluyor ya da
+
+243
+01:06:26,250 --> 01:06:28,250
+telefonu şarj avaldınız bir aksiyon oluyor.
+
+244
+01:06:28,250 --> 01:06:31,250
+Bunlar hep event driven durumlar.
+
+245
+01:06:31,250 --> 01:06:33,250
+Broadcast Resim'in bunları takip ediyor.
+
+246
+01:06:33,250 --> 01:06:40,250
+Benim söylediğim ise gece 2'de bir iş yapılacak ya da sabah 7'de saat sizi uyandıracak.
+
+247
+01:06:40,250 --> 01:06:44,250
+Buradaki tek bizim için karşılık alarm menajer.
+
+248
+01:06:44,250 --> 01:06:53,250
+Bizim alarm menajer üzerinde bu arka plan işlerini handle etmemiz gerekiyor.
+
+249
+01:06:53,250 --> 01:06:58,250
+Bu işler tek bir kez gerçekleşebilir, bir daha fazla gerçekleşebilir.
+
+250
+01:06:58,250 --> 01:07:01,250
+Birinci sorumuzun cevabı bu.
+
+251
+01:07:01,250 --> 01:07:07,250
+İkinci sorumuzsa hemen immediately çalışması gereken yani
+
+252
+01:07:07,250 --> 01:07:15,250
+anında arka planda daha uzun sürecek bir iş çalıştırmayı planlıyorsunuz.
+
+253
+01:07:15,250 --> 01:07:19,250
+UI thread'den de ayırmanız gerekiyor main thread'den de.
+
+254
+01:07:19,250 --> 01:07:22,250
+O zaman hangi yapıyı kullanma olasılığınız var?
+
+255
+01:07:22,250 --> 01:07:24,250
+İki tanesi çenek var.
+
+256
+01:07:24,250 --> 01:07:26,250
+İkisinden de faydalanabilirsiniz.
+
+257
+01:07:26,250 --> 01:07:29,250
+Bir tanesi work menajer.
+
+258
+01:07:29,250 --> 01:07:32,250
+Diğeri de foreground servisler.
+
+259
+01:07:32,250 --> 01:07:42,250
+Foreground servis dediğiniz zaman aslında ilk aklına gelen tecelleklerden bir tanesi müzik uygulaması.
+
+260
+01:07:42,250 --> 01:07:44,250
+Müzik uygulamasını da biliyorsunuz.
+
+261
+01:07:44,250 --> 01:07:52,250
+Uygulamayı açık ekran görüntüsü, activity görsel bir şekilde kullanabiliyorsunuz ama
+
+262
+01:07:52,250 --> 01:07:59,250
+siz isterseniz müziği başlatıp arka planda uygulamanın çalışmaya devam etmesini
+
+263
+01:07:59,250 --> 01:08:05,250
+ve herhangi bir şekilde siz müdahale olmadan şarkıdan şarkıya bittikçe atlayarak
+
+264
+01:08:05,250 --> 01:08:16,250
+sırayla ya da karışık sırayla yani oradaki algorizmik randomize yapıya bağlı olarak çalmasını sağlıyorsunuz.
+
+265
+01:08:16,250 --> 01:08:20,250
+İşte bu bir foreground servis olarak çalıştırdığınız bir yapı.
+
+266
+01:08:20,250 --> 01:08:25,250
+Ama work menajer'den de bu noktada faydalanma imkanınız var.
+
+267
+01:08:25,250 --> 01:08:29,250
+Biraz sonra bunun detayını konuşuyor olacağız.
+
+268
+01:08:29,250 --> 01:08:35,250
+Buradaki sorulara bakacak olursak biraz da app need to have precise control over the start and stop time.
+
+269
+01:08:35,250 --> 01:08:39,250
+İşte burada müzik application'dan bahsediyor.
+
+270
+01:08:39,250 --> 01:08:48,250
+İşte burada kullanıcının başlattığı ve durdurduğu bir yapı söz konusu.
+
+271
+01:08:48,250 --> 01:08:54,250
+İşte bunun kullanıcının kontrolünde olan bir yapıdan bahsederken,
+
+272
+01:08:54,250 --> 01:09:04,250
+bunun tam tersi bir yapıda belli periodlarla bu yüklemenin yapılabileceği uygulamalardan bahsediyor.
+
+273
+01:09:04,250 --> 01:09:11,250
+Bir sizin ürettiğiniz bir işin kesilip kesilemeyeceği önemli.
+
+274
+01:09:11,250 --> 01:09:16,250
+Çünkü bu noktada işte çok büyük bir upload yapıyorsunuz.
+
+275
+01:09:16,250 --> 01:09:21,250
+Upload'ın interupt olması durumunda aslında ya download da keza öyle.
+
+276
+01:09:21,250 --> 01:09:23,250
+O zaman bir sıkıntı oluşacak. Niye?
+
+277
+01:09:23,250 --> 01:09:28,250
+Çünkü siz çok büyük dosyalarla çalışırken bir kesintiye uğradığınız takdirde
+
+278
+01:09:28,250 --> 01:09:38,250
+özellikle mesela Wi-Fi üzerine indirmiyorsunuz, sizin data hattınız üzerine indiriyorsunuz.
+
+279
+01:09:38,250 --> 01:09:45,250
+O zaman gigabyte'ların boşu boşuna kullanılmış olması ve dosyaların tamamlamada içinde abort etmesinden dolayı
+
+280
+01:09:45,250 --> 01:09:48,250
+bir sıkıntı yaşayabilirsiniz.
+
+281
+01:09:48,250 --> 01:09:53,250
+Özelinde bir örnek vermek mantıklı olacaktır.
+
+282
+01:09:53,250 --> 01:09:59,250
+İşte burada ertelebilir bir işten bahsediyoruz.
+
+283
+01:09:59,250 --> 01:10:04,250
+Tekrar olacak mı olmayacak mı? Bunun sorusunu karşılamaya çalışıyoruz.
+
+284
+01:10:04,250 --> 01:10:09,250
+Örneğin sizin etrafınız üzerinden bir data indirmek istiyorsunuz ve bunun için butona bastınız.
+
+285
+01:10:09,250 --> 01:10:13,250
+Bu işin anında yapılması gerekiyor.
+
+286
+01:10:13,250 --> 01:10:22,250
+Ama gece herhangi bir yedekleme yapacaksanız bunun exact bir time'da olmasına gerek yok.
+
+287
+01:10:22,250 --> 01:10:27,250
+Gecenin herhangi bir zamanında telefonunuz şarja takılıyken yapılabilir.
+
+288
+01:10:27,250 --> 01:10:36,250
+O yüzden bu yapacağımız işlerin ne şekilde olduğunu belirlemek oldukça önemli.
+
+289
+01:10:36,250 --> 01:10:40,250
+Bunun sonunda tabii farklı başka sorular da var.
+
+290
+01:10:40,250 --> 01:10:45,250
+Biraz önce Alarm Monitor'a sorduğum soru daha aslında çok büyük bir soru.
+
+291
+01:10:45,250 --> 01:10:48,250
+Bu önemli bir soru.
+
+292
+01:10:48,250 --> 01:10:52,250
+Yerleriniz gereken cevaplardan bir tanesi de bu.
+
+293
+01:10:52,250 --> 01:11:01,250
+Onun dışında stamp kondisyonlarıyla ilişki olup olmadığı sorusu önemli.
+
+294
+01:11:01,250 --> 01:11:08,250
+Örneğin cihazınızın güç kaynağına bağlı olup olmaması bir stas mıdır?
+
+295
+01:11:08,250 --> 01:11:11,250
+Bu sorunun cevabını vermeniz gerekiyor.
+
+296
+01:11:11,250 --> 01:11:20,250
+Çünkü o zaman bir yükleme yapacaksanız örneğin sadece Wi-Fi hattına bağlı olduğunda
+
+297
+01:11:20,250 --> 01:11:27,250
+ya da telefonunuz kesintisiz bir güç kaynağına bağlı olduğunda gibi
+
+298
+01:11:27,250 --> 01:11:32,250
+koşulları sistemsel seviyede kontrol etmeniz gerekiyor olabilir.
+
+299
+01:11:32,250 --> 01:11:40,250
+Bir de tabii does the work involve the collection of sensitive user data?
+
+300
+01:11:40,250 --> 01:11:52,250
+Şimdi burada özellikle lokasyon bilgisi kullanılırken açıkçası sizin burada
+
+301
+01:11:52,250 --> 01:12:03,250
+Bu nasıl diyelim lokasyon bazı yaptığınız işi takip ediyor olmanız önemli.
+
+302
+01:12:03,250 --> 01:12:07,250
+Genelde lokasyon bilgisine bu tür noktalarda ihtiyaç duyuyorsunuz.
+
+303
+01:12:07,250 --> 01:12:13,250
+Çünkü işte arabayla seyahat ediyorsunuz ve işte diyelimki navigasyon uygulaması var.
+
+304
+01:12:13,250 --> 01:12:16,250
+Ona bakıyorsunuz, oradan gelen sesli komutları takip ediyorsunuz.
+
+305
+01:12:16,250 --> 01:12:18,250
+Genelde arka planı alabiliyorsunuz.
+
+306
+01:12:18,250 --> 01:12:23,250
+Bakıyorsunuz ekran görüntüsü, boşu boşuna ekran piltik etmesin diye.
+
+307
+01:12:23,250 --> 01:12:30,250
+İşte bu noktada aynı müzik uygulamasında olduğu gibi bir foreground service ile
+
+308
+01:12:30,250 --> 01:12:39,250
+sizin arka planda hem lokasyon bilginizin takip edilmesi hem de bir dönemeçe geldiğinizde
+
+309
+01:12:39,250 --> 01:12:46,250
+buradan sağa dön, 500 metre sonra sola dön, kaldığı şu andaki bulunduğun şeridi koru gibi
+
+310
+01:12:46,250 --> 01:12:49,250
+direktifler almaya devam edebiliyorsunuz.
+
+311
+01:12:49,250 --> 01:12:54,250
+O yüzden burada da bir bu tarz bir uygulama geliştiriyorsanız
+
+312
+01:12:54,250 --> 01:13:00,250
+foreground servisten faydalanmanız uygun olacaktır diye söyleyebiliriz.
+
+313
+01:13:00,250 --> 01:13:04,250
+Şimdi saat 15.13 oldu, bir ufak ara verelim.
+
+314
+01:13:04,250 --> 01:24:51,409
+15.13'den 15.25'e kadar 15.25'de kaldığımız yerden devam edelim.
+
+315
+01:24:51,409 --> 01:24:54,409
+Evet arkadaşlar, kaldığımız yerden devam edelim.
+
+316
+01:24:54,409 --> 01:25:08,359
+Yeni ben, merhaba. Hemen paylaşayım ekranımı.
+
+317
+01:25:08,359 --> 01:25:11,359
+Evet, Work Manager'da kalmıştık.
+
+318
+01:25:11,359 --> 01:25:17,359
+Az önce sorularımızı sorduk ve birçok koşulların oluşabileceğini gördük.
+
+319
+01:25:17,359 --> 01:25:27,359
+Work Manager özellikle ertelenebilir ya da cihazın belirli koşulları gerçekleştirdiğinde
+
+320
+01:25:27,359 --> 01:25:34,359
+bu güç bağlantısı sağlaması, network bağlantısının oluşması gibi durumlar olabilir.
+
+321
+01:25:34,359 --> 01:25:42,359
+Kullanabileceğiniz en son API sürümlerinden bir tanesi.
+
+322
+01:25:42,359 --> 01:25:53,359
+Bu Work Manager özellikle Job Scheduler'la da uyumlu bir şekilde çalışıyor.
+
+323
+01:25:53,359 --> 01:25:56,359
+Yeni versiyonu olarak da düşünebilirsiniz.
+
+324
+01:25:56,359 --> 01:26:07,359
+Work Manager sadece belli koşulların oluşması durumunda sizin işinizin gerçekleşmesini gerçekleştirmiyor.
+
+325
+01:26:07,359 --> 01:26:17,359
+Onun dışında aslında foreground service olarak da belli işlerin çalışmasından da sorumlu olabiliyor.
+
+326
+01:26:17,359 --> 01:26:25,359
+Foreground service'lere baktığınız zaman biraz önce müzik uygulaması örneğini verdik.
+
+327
+01:26:25,359 --> 01:26:28,359
+Önemli bir uygulama.
+
+328
+01:26:28,359 --> 01:26:41,359
+Bu noktada özellikle foreground service'lerin kullanıcı ile belirli bir arayüz üzerinden de aslında iletişim halinde olduğunu görüyoruz.
+
+329
+01:26:41,359 --> 01:26:51,359
+Bu işte buradaki notification tray olabilir ya da pop-up dialog box gibi yapılar ya da vücutlar üzerinden gerçekleşebilir.
+
+330
+01:26:51,359 --> 01:27:04,359
+Bu noktada özellikle user tarafından, kullanıcı tarafından inişiyet edilen işlerin kesintisiz bir şekilde tamamlanması gerekiyorsa
+
+331
+01:27:04,359 --> 01:27:16,359
+herhangi bir interrupt uğramaması, kesintiye uğramaması önemli ise o zaman mutlaka foreground service'lerden faydalanmamız gerekiyor.
+
+332
+01:27:16,359 --> 01:27:29,359
+Buradaki müzik dinleme aslında aynı hedefleri bize gösteriyor çünkü herhangi bir şekilde bunun kesintiye uğraması bizi çok olumsuz etkilecektir,
+
+333
+01:27:29,359 --> 01:27:37,359
+kaynaktan dolayı foreground service'lerin bir şekilde kapatılması hoş olmayacaktır.
+
+334
+01:27:37,359 --> 01:27:53,359
+O yüzden foreground service'ler arka plan işleri içerisinde en öncelikli, en korunan ve genelde sistem tarafından ortadan kaldırılma olasılığı çok düşük olan işler.
+
+335
+01:27:54,359 --> 01:28:02,359
+Buna başka bir örnek verebilir misiniz? Müzik uygulamasına ek olarak foreground service olarak çalıştırabileceğimiz ekran.
+
+336
+01:28:02,359 --> 01:28:06,699
+Forent ya da download uygulamaları?
+
+337
+01:28:06,699 --> 01:28:11,699
+Tartışılır. Bunu neden foreground service olarak söyledin?
+
+338
+01:28:11,699 --> 01:28:17,699
+Yani indirmede kopma olmaması için, dosyalarda bozulma olmaması için öyle bir şey kullanılır mı?
+
+339
+01:28:17,699 --> 01:28:26,699
+Doğru ama burada Android'in sunduğu bir başka yapı daha var, download manager dediğimiz. Biraz sonra onu da göreceksiniz.
+
+340
+01:28:26,699 --> 01:28:39,699
+Aslında söylediğim sebepten dolayı foreground service buna çok uygun ama bir yandan da baktığında bütün downloadlarda müdahil olmamız gerekmiyor.
+
+341
+01:28:39,699 --> 01:28:51,699
+Onu yönetmemiz gerekmiyor. Bu şekilde initiate edilebilir foreground service olarak ama Android bu noktada download manager isimli bir yapı öneriyor.
+
+342
+01:28:51,699 --> 01:29:02,800
+Birazdan ona da bakıyor olacağız. Başka foreground service olarak aklınıza gelen bir şey var mı? Evet, [öğrenci].
+
+343
+01:29:02,800 --> 01:29:11,800
+Hocam, sesli ya da görüntülü konuşma uygulamalarında yani bu işlemin kesintisiz ve belli bir servis kalitesinde olması gerekir.
+
+344
+01:29:11,800 --> 01:29:20,800
+Evet, doğru. Bu sizin o anda birebir görmediğiniz arka plana konuşmanın devam ettiği uygulamalar var.
+
+345
+01:29:20,800 --> 01:29:24,800
+Siz konuşmaya devam ederken ki bunu telefon konuşmalarında da yapabilirsiniz.
+
+346
+01:29:24,800 --> 01:29:37,800
+Aslında ekranı, aktif olan ekranı kapatıyorsunuz ama aktif olan ekranı kapattığınızda arka planda bu hizmet almaya devam edebiliyorsunuz.
+
+347
+01:29:37,800 --> 01:29:42,800
+Bunu da foreground service olarak değerlendirebilirsiniz.
+
+348
+01:29:42,800 --> 01:29:50,800
+Ya da bu yönetimi bar üzerinden gerçekleştirebiliyorsunuz.
+
+349
+01:29:50,800 --> 01:29:56,800
+Son dönemlerde bu yaygınlaşmaya başladı. Video konferans uygulamaları için de aynı şekilde geçerli.
+
+350
+01:29:56,800 --> 01:30:01,800
+Bunu arka planda devam ettirebiliyorsunuz.
+
+351
+01:30:01,800 --> 01:30:07,800
+Evet, şimdi devam edelim. Alarm manager'a geçelim.
+
+352
+01:30:07,800 --> 01:30:16,800
+Alarm manager bizim için belirli zamanlarda çalışacak işleri yönetiyor demiştik.
+
+353
+01:30:16,800 --> 01:30:28,800
+Burada özellikle work manager'ın sistem kaynaklarını yönetme noktasında alarm manager'a göre daha verimli bir yapısı olması sebebiyle
+
+354
+01:30:28,800 --> 01:30:37,800
+belli zamanlarda çalışmayacak tüm işlerinizi work manager'a paslamanız gerektiği bir kez daha vurgulanmış durumda.
+
+355
+01:30:37,800 --> 01:30:49,270
+Gelelim service komponentini. Bu da dersin başında vurguladığımız bir komponentti.
+
+356
+01:30:49,270 --> 01:30:52,270
+Dört komponentten bir tanesiydi.
+
+357
+01:30:53,270 --> 01:31:12,270
+Bu aslında komponent ilk etapta daha yaygın olarak kullanılıyordu ama gün geçtikçe background işlerinin farklı önceliklendirilmeye maruz bırakılmasıyla beraber
+
+358
+01:31:12,270 --> 01:31:21,270
+ve alternatif çözümlerin çıkmasıyla beraber service en son başvurulması tercih edilen komponentlerden biri oldu.
+
+359
+01:31:21,270 --> 01:31:25,270
+Çünkü arka plan da kesintisiz bir şekilde çalışıyor.
+
+360
+01:31:25,270 --> 01:31:39,270
+Buradaki en önemli özelliği kullanıcı arayüzüne sahip olmaması ve özellikle çok uzun süre kullanıcı ile interaksiyon olmadan
+
+361
+01:31:39,270 --> 01:31:51,270
+belirli bir uygulama içinden tetiklenmeyle genelde, bunu daha önce birkaç örnek de göstermiştik, çalışan bir yapı.
+
+362
+01:31:51,270 --> 01:32:08,270
+Bu noktada, bunun en güzel örneklerinden bir tanesi, kişinin arka plandaki hareketlerini takip ederek onun gün içerisindeki sağlık bilgilerini
+
+363
+01:32:08,270 --> 01:32:16,270
+ya da ne kadar hareket ettiği bilgisini saklıyor olmak ve onu kullanacağı sunmak.
+
+364
+01:32:16,270 --> 01:32:27,270
+Bunun için de GPS gibi, aksorometre gibi, jiroskop gibi, magnetometre gibi sensörlerden faydalanmak gerekiyor.
+
+365
+01:32:27,270 --> 01:32:29,270
+Bir arayüzle ihtiyaç yok.
+
+366
+01:32:29,270 --> 01:32:36,270
+O yüzden çok pardon, dekanlıktan arıyorlar, 30 saniyenizi rica ediyorum.
+
+367
+01:32:36,270 --> 01:32:55,539
+Çok pardon arkadaşlar, teşekkür ederim beklediğiniz için.
+
+368
+01:32:56,539 --> 01:33:11,539
+Şimdi, şöyle servisi arka planda çalışan uzun süreli bir komponat olarak adlandırdık ve dedik ki sizin gün içerisindeki aktivitelerinizi takip etmek için
+
+369
+01:33:11,539 --> 01:33:19,539
+mesela kullanılabilecek çok güzel bir yapı dedik çünkü hiçbir şekilde sizin hareketlerinizi takip etmenin içine kullanıcı da bir interaksiyon olan bir durum değil.
+
+370
+01:33:19,539 --> 01:33:24,539
+Şimdi bununla ilgili default uygulamalar işletim sistemiyle beraber gelmeye başladı.
+
+371
+01:33:24,539 --> 01:33:28,539
+Android'de de var, IOS'ta da var. Size bu uygulama sunuluyor.
+
+372
+01:33:28,539 --> 01:33:38,539
+Ama siz o uygulamayı kapattığınız zaman doğal olarak normalde sizi takip etmiyor olması beklenir.
+
+373
+01:33:38,539 --> 01:33:51,539
+Bir servis inişeyt ettikleri için bu uygulamalar çalışmaya başladığı sırada yani telefonunuz açıldığı anda bu servisler inişeyt ediyor bazı background servisler.
+
+374
+01:33:51,539 --> 01:34:02,539
+Ve siz o uygulamaya girdiğinizde dün ne kadar yürüdünüz, bir hafta önce ne kadar yürüdünüz, bir yıl ne kadar önce yürüdünüz bilgisini otomatik olarak görüyorsunuz.
+
+375
+01:34:02,539 --> 01:34:21,539
+Ancak ve ancak siz o uygulamanın servisini kendiniz bilinçli olarak kapatırsanız, konfigüre edip beni artık takip etmesin, boşu boşuna enerji tüketmesin derseniz o zaman bu yapı arka planda çalışmıyor.
+
+376
+01:34:21,539 --> 01:34:41,539
+O yüzden background izinlerini verip vermemeniz uygulama bazında önemli. Siz bu tür uygulamaların çok enerji tükettiğine inanıyorsanız ki GPS kullananlar da bu olabilir ama genelde activity takip eden uygulamalar GPS'i çok sık kullanmıyorlar.
+
+377
+01:34:41,539 --> 01:34:50,539
+Ya da başka uygulamalardan gelen GPS bilgisiyle getirmeyi tercih edebiliyorlar. Onu da önümüzdeki hafta biraz daha detaylı konuşacağız.
+
+378
+01:34:50,539 --> 01:35:04,539
+Günün sonunda sizin o uygulamanın arayüzüne erişmeden birçok yaptığınız hareket bu servisler aracılığıyla takip edilmiş oluyor.
+
+379
+01:35:04,539 --> 01:35:30,539
+Tabii bu servisi inişiyet etmenin iki yolu var dedik. Bir tanesi sizin uygulamanızın içerisinden tetikleyerek bir servisi çalıştırmak, ikincisi de doğrudan bir uygulama özelinde yarattığınız servisin telefonunuz çalışmaya başladığı anda tetiklenmesi.
+
+380
+01:35:30,539 --> 01:35:47,539
+Yani işte device boot ettiğinde boot completed özeline bağlı olarak siz bunu esnaf ederseniz işte publish, subscribe mantığına bağlı olarak, bot kesisi ile olarak servisiniz de bu doğrultuda bir faaliyet gösterecektir.
+
+381
+01:35:47,539 --> 01:35:53,539
+Hatta on-receive içerisinde direct servisinde çağırılabileceğini daha önce söylemiştik.
+
+382
+01:35:53,539 --> 01:36:10,539
+Şimdi servisler network transactionlarını yönetebiliyorlar, IO operasyonlarını yönetebiliyorlar, content providerlarla ilgili işler tamamlanabiliyor, birçok işi yönetme noktasında devrede olabiliyorlar.
+
+383
+01:36:10,539 --> 01:36:32,539
+Ancak şunu söylemekte fayda var, bunlar genelde özellikle uzun sürecek işlerin servise atanması gerekliliği, daha kısa süreli olacak işler için farklı yapılar tercih ediyoruz biraz önce bahsettiğimiz yapılar gibi.
+
+384
+01:36:32,539 --> 01:36:38,539
+Servisler foreground, background olmak üzere aslında temelde ikiye ayrılıyorlar.
+
+385
+01:36:38,539 --> 01:36:54,539
+Foreground'daki servisler biraz önceki gibi bir şekilde bir sesli uygulama olabilir, müzik uygulaması olabilir ya da bir radyo uygulaması olabilir.
+
+386
+01:36:54,539 --> 01:36:58,539
+Genelde bu tarz işleri yönetmek için kullanıyoruz.
+
+387
+01:36:58,539 --> 01:37:12,539
+Background servisleri daha çok arka plandaki sadece aktivite takip etme değil, aynı zamanda sizin bilgilerinizin yönetimi için de kullanabiliyorsunuz.
+
+388
+01:37:12,539 --> 01:37:21,539
+Belli bilgilerin belli saatlerde yedeklenmesi noktasında da bu background servislerden faydalanabiliyorsunuz.
+
+389
+01:37:21,539 --> 01:37:32,539
+Bu noktada servisin application ile bir ilişki kurabilmesi için bind servis metodunun çalıştırılması gerekiyor.
+
+390
+01:37:32,539 --> 01:37:39,539
+Bunu zaten detaylarına ulaşabilirsiniz developer angle'ın konu üzerinde.
+
+391
+01:37:39,539 --> 01:37:45,539
+Ancak servisleri unbind etmeyi de unutmamak gerekiyor.
+
+392
+01:37:45,539 --> 01:37:58,539
+Çünkü bir servis eğer bir şekilde sizin tarafınızdan tetiklendi ise onun biteceği zamanı siz belirlemediniz takdirde ya sistem ihtiyaç duyduğuna onu kil edecektir.
+
+393
+01:37:58,539 --> 01:38:11,539
+İlk adaylardan biri odur foreground servis, background servisi ya da arka planda pilinizi çok sık bitirdiği için bir süre sonra o uygulamadan vazgeçmek durumunda kalan kullanıcılar olacaktır.
+
+394
+01:38:12,539 --> 01:38:19,539
+Şimdi servis ve thread arasındaki farkı biraz yorumlamaya geldik.
+
+395
+01:38:19,539 --> 01:38:21,539
+Şöyle hızlıca bir okuyun yazanı.
+
+396
+01:38:21,539 --> 01:38:51,329
+Burada da gördüğünüz gibi servis ve thread arasındaki farkı çok net bir şekilde tanımlıyor.
+
+397
+01:38:51,329 --> 01:38:57,329
+Birinde kullanıcı ile herhangi bir interaksiyon olmayacaksa servis kullanmayı öneriyor.
+
+398
+01:38:57,329 --> 01:39:15,329
+Öte yandan kullanıcının main thread dışında belirli bir işi yapmayı planı varsa ama bunda bir aksaklığa uğramaması gerekiyorsa o zaman threadden fayda almak gerektiğinden bahsediyor.
+
+399
+01:39:15,329 --> 01:39:18,329
+Burada tabi alternatif yöntemlerde var.
+
+400
+01:39:18,329 --> 01:39:33,890
+API 30 ile birlikte ortadan kalkan ama API 30'a kadar kullanılan bir yapı var. Nedir o? Ne diyebilirsiniz?
+
+401
+01:39:33,890 --> 01:39:53,789
+Kısa süreli işleri, kullanıcı ya işin gidişatını da gösterecek şekilde bir aslında yapı tanımlanmış durumda ve burada ismi de var.
+
+402
+01:39:53,789 --> 01:40:09,779
+Peki ekran?
+
+403
+01:40:09,779 --> 01:40:11,779
+Handler olabilir mi hocam?
+
+404
+01:40:11,779 --> 01:40:33,779
+Handler değil async task. Async task aslında sizin bir download'unuzun yaptığınız bir işin ne kadarının tamamlandığını kullanıcıya bir dialog box çıkartarak gösterebileceğiniz bir yapı olarak bugüne kadar kullanılıyordu.
+
+405
+01:40:34,779 --> 01:40:58,779
+Android 11'e kadar API 30 ile birlikte deprikate oldu. Dersin başında da söylemiştim. Bu tür gelişmeler her yeni ana sürümde gerçekleşme potansiyeline sahip bugüne kadar çok büyük temel değiştikler oldu Android işletim sisteminde.
+
+406
+01:40:58,779 --> 01:41:19,779
+Bu yıla kadar hep async task'ı anlatıyorduk. Bu yolunda da hala kısırca bahsedeceğim çünkü cihazların belki %80-85 Android 11 kullanmıyor. O yüzden hala async task ciddi bir kullanılabilir alternatif yapı ekran.
+
+407
+01:41:19,779 --> 01:41:23,779
+Hocam yerine ne geldi peki ne kullanılıyor şu an?
+
+408
+01:41:23,779 --> 01:41:28,779
+Ona da bakacağız birazdan. Onu da söyleyeceğim.
+
+409
+01:41:28,779 --> 01:41:48,779
+Şimdi async task'ın asynchronous task aslında yani sizin UI thread'den bağımsız asyncron işlerinizi yaptırabileceğiniz ve bu işlerin gidişat hızını izleyebileceğiniz download %100'a,
+
+410
+01:41:48,779 --> 01:42:00,779
+işte yükleme yapıyorsunuz %100'ta, bunları takip edebileceğiniz listenin kaç tanesi indirildiği gibi bilgileri alabileceğiniz bir fende yapı sunuyor size.
+
+411
+01:42:00,779 --> 01:42:13,779
+Buna birazdan bakıyor olacağız. Burada iki şekilde servisleri başlatma şansımız var.
+
+412
+01:42:13,779 --> 01:42:27,779
+Biraz önce bir tanesini görmüştüğünüz on-bind şeklinde, diğeri de on-start command üzerinden servis alıp gerçekleştirebiliyoruz.
+
+413
+01:42:27,779 --> 01:42:35,779
+Bu noktada aslında activity large cycle'ı içerisinde on-create ve on-destroy görmüştük.
+
+414
+01:42:35,779 --> 01:42:46,779
+Burada da start service ve bind service metodu üzerinden hangi aslında servislerin life cycle'ı üzerinden geçtiğini de görmüş olursunuz.
+
+415
+01:42:46,779 --> 01:42:54,779
+Bu noktada iki tarafta farklı bir lifetime'dan bahsedebiliriz.
+
+416
+01:42:54,779 --> 01:43:04,779
+Start service ile başlattığınız yapıda servis kendi ya da başlamış olduğu client tarafından durdurulabiliyorken,
+
+417
+01:43:04,779 --> 01:43:15,779
+diğer tarafta bind ettiğiniz servis, yapıların hepsi bu servisin durdurulmasından sorumlu olabiliyor.
+
+418
+01:43:15,779 --> 01:43:28,779
+Bir tarafta servis tek bir noktadan inişeyet edilmişken diğer tarafta o servisin bağlı olduğu farklı clientlar olabiliyor.
+
+419
+01:43:28,779 --> 01:43:36,779
+O yüzden o servisi siz bir noktadan tetikte değilseniz başka bir noktadan da durdurabiliyorsunuz.
+
+420
+01:43:36,779 --> 01:43:42,779
+Sağ taraftaki opsiyonla bunu da söylemekte fark ve fayda var.
+
+421
+01:43:43,779 --> 01:43:55,779
+Boundary servisler clientlarla ilişki içerisinde, unboundary servis de özellikle tek bir noktadan inişeyet edilip,
+
+422
+01:43:55,779 --> 01:44:03,779
+genelde sorunlanma noktasında kendisinin belirlediği servisler olarak literatürde yerini alıyor.
+
+423
+01:44:03,779 --> 01:44:12,779
+Burada ilgili intenti pas ederek start service ya da start foreground service metotlarını çağırarak
+
+424
+01:44:12,779 --> 01:44:20,779
+bir activity üzerinden ya da farklı application komponentleri üzerinden servisi başlatabiliyorsunuz.
+
+425
+01:44:20,779 --> 01:44:28,779
+Bunun örneğini daha önce konuşmuştuk. Sadece intentle bir activity çağırmıyorsunuz.
+
+426
+01:44:28,779 --> 01:44:33,779
+Aynı zamanda daha önce start activity vardı, start activity for result vardı.
+
+427
+01:44:33,779 --> 01:44:41,779
+Burada da start service var ve intent bilgisini ilgili servise göndererek de bu işi inişeyet edebiliyorsunuz.
+
+428
+01:44:41,779 --> 01:44:50,779
+Burada stop self ve stop service olmak üzere iki tane metot kullanabiliyorsunuz.
+
+429
+01:44:51,779 --> 01:45:03,779
+Bu başlattığınız servisleri ilgili zaman geldiğinde sonlandırmak için bunu da siz belirliyorsunuz.
+
+430
+01:45:03,779 --> 01:45:10,779
+Nerede tanımlamanız gerekiyor? Manifest'te yine tanımlamanız gerekiyor herhangi bir activity gibi.
+
+431
+01:45:10,779 --> 01:45:14,779
+Application tag'ının içerisinde, nasıl daha önce activity yazıyorsak,
+
+432
+01:45:14,779 --> 01:45:26,779
+buna da service tag'ini yazıp bu ilgili servisi tanımlayabiliyoruz. Bu noktada bu bilgiyi de vermiş olalım.
+
+433
+01:45:26,779 --> 01:45:37,630
+Şimdi asing task'a gelelim. Asing task'ı anlattıktan sonra [öğrenci]'in sorduğu alternatifi nedir?
+
+434
+01:45:37,630 --> 01:45:40,630
+Neyi kullanacağız artık sorusunun cevabını da verelim.
+
+435
+01:45:41,630 --> 01:45:58,630
+Arka plan işlerini yönetirken sonucunu main thread'de kullanıcıya bilgilendirmek için bilgilendirme ihtiyacı duyduğumuz işleri asing task ile gerçekleştiriyoruz.
+
+436
+01:45:58,630 --> 01:46:10,630
+Bu noktada asing task bize o arka plandaki main thread arasında bir köprü kuruyor. Do API level 30'a kadar.
+
+437
+01:46:10,630 --> 01:46:23,630
+Şimdi Android bunun için artık bize Java Util concurrent standard libresi üzerinden bu işi handle etmemiz gerektiğini söylüyor.
+
+438
+01:46:23,630 --> 01:46:34,630
+Bu noktada özellikle executioner, thread pool executioner ve future task gibi yapılar sunuyor.
+
+439
+01:46:34,630 --> 01:46:46,630
+Asing task'ın metotları neydi? On pre-execute bize daha asing task çalışmadan önce yapılması gereken işleri on create var activity'de.
+
+440
+01:46:46,630 --> 01:46:57,630
+Onun gibi başta yapılması gereken execute işlemi gerçekleşmeden önce onları define edebildiğimiz bir metot.
+
+441
+01:46:57,630 --> 01:47:00,630
+İşin yapılma yeri do in background metodu.
+
+442
+01:47:00,630 --> 01:47:14,630
+İş yapılırken elde edilen sonuçların ne kadarın tamamlandığı yönündeki bilginin güncellendiği kısmı görsel hale dönüştürüldüğü kısım on progress update,
+
+443
+01:47:14,630 --> 01:47:27,630
+UI'ya aktarıldığı kısım son olarak da işte bu background operation tamamlandıktan sonra en son UI tarafında yapılacak değişiklikler ve güncellemeler neler?
+
+444
+01:47:27,630 --> 01:47:30,630
+Bu metotlar aracılığıyla gerçekleştiriliyordu.
+
+445
+01:47:30,630 --> 01:47:34,630
+Burada bir örnek görüyorsunuz download'a bastınız.
+
+446
+01:47:34,630 --> 01:47:38,630
+İşte şurada gördüğünüz please wait, it's downloading mesajı çıkıyor.
+
+447
+01:47:38,630 --> 01:47:45,630
+Daha sonra download ilerledikçe bunu progress bar'la gösterimini sağlayabiliyorsunuz.
+
+448
+01:47:45,630 --> 01:47:49,630
+İsterseniz böyle bir seçenek oluşturma şansınız var.
+
+449
+01:47:49,630 --> 01:47:51,630
+Burada küçük bir örnek var.
+
+450
+01:47:51,630 --> 01:47:56,630
+İşte aslintask nasıl yaratılıyor?
+
+451
+01:47:56,630 --> 01:48:06,630
+İşte aslintask execute'de burada işte execute kısmına download işlemi yapılacağı bilgi girilmiş veya aktifte de.
+
+452
+01:48:06,630 --> 01:48:15,630
+Sonra yarattığımız aslintask example örneğini tabi ki buna da oluşturmamız gerekiyor.
+
+453
+01:48:15,630 --> 01:48:18,630
+Aslintask sınıfı üzerinden.
+
+454
+01:48:18,630 --> 01:48:24,630
+İlgili metotları da kodlamamız gerekiyor.
+
+455
+01:48:24,630 --> 01:48:27,630
+Bunlardan bir tanesi onpre execute.
+
+456
+01:48:27,630 --> 01:48:29,630
+Sonra doing background geliyor.
+
+457
+01:48:29,630 --> 01:48:32,630
+Doing background ile URL'i paylaşıyorsunuz.
+
+458
+01:48:32,630 --> 01:48:34,630
+İşte connection'ı sağlamıyor.
+
+459
+01:48:34,630 --> 01:48:42,630
+Connection'dan sonra ilgili download işlemi gerçekleştirilip resimle ilgili gerekli decode işlemleri tamamlanıyor.
+
+460
+01:48:42,630 --> 01:48:47,630
+Bunlar bugüne kadar çok sıklıkla kullanılan yapılardı.
+
+461
+01:48:47,630 --> 01:48:59,630
+On post execute'da da işte download bittikten sonra belki o download'daki resmin ikonumu ilgili yere yerleştirerek işlemi tamamlamış oluyorsunuz.
+
+462
+01:48:59,630 --> 01:49:07,880
+Şimdi tabi bunlarla ilgili kısa kısa bilgiler verelim.
+
+463
+01:49:07,880 --> 01:49:18,880
+Bütün aslında karşımıza çıkabilecek detay background task'lara ait olan yapıları genel olarak konuştuk.
+
+464
+01:49:18,880 --> 01:49:26,880
+Aslında aslintask genelde birkaç saniye sürecek işlerin yapılması için bugüne kadar kullanılıyordu.
+
+465
+01:49:26,880 --> 01:49:34,880
+Ve UI'da da bu gerçekleşen özellikle değişikliği görebiliyordunuz.
+
+466
+01:49:34,880 --> 01:49:42,880
+Ve main thread üzerinden yönetiliyordu ve bir kez çalışacak şekilde programlanıyordu.
+
+467
+01:49:42,880 --> 01:50:00,880
+Servisler size tam tersine kullanıcıdan tamamen görsel olarak bağımsız özellikle background servisler ve çok daha uzun süreli çalışacak işler için kullanılan komponentler.
+
+468
+01:50:00,880 --> 01:50:05,880
+Öte yandan servisler ikiye ayrılıyor background ve foreground servisler.
+
+469
+01:50:05,880 --> 01:50:16,880
+Foreground servisler bizim açımızda kullanıcı ile hala belirli bir visibility olan işleri temsil ediyor.
+
+470
+01:50:16,880 --> 01:50:27,880
+Örneklerini vermiştik ve foreground servislerin diğerlerine göre her zaman en yüksek öncelikli çalışan arka plan işleri olduğunu söyleyebiliriz.
+
+471
+01:50:27,880 --> 01:50:32,880
+Çünkü kullanıcı hala bir aksiyon içerisinde ve onu kullanıyor demektir.
+
+472
+01:50:32,880 --> 01:50:38,880
+Herhangi bir kesintiye uğraması kullanıcının kullanıcı deneyimini düşürecek anlamda geliyor.
+
+473
+01:50:38,880 --> 01:50:51,399
+O yüzden foreground servisleri androids her zaman bir öncelik veriyor ve bunu öldürmeyi tercih etmiyor.
+
+474
+01:50:51,399 --> 01:50:55,399
+Intent service diye bir kavram var bundan bahsetmemiştik. Ne dersiniz buna?
+
+475
+01:50:55,399 --> 01:50:58,399
+Pardon [öğrenci]'in bir sorusu varmış.
+
+476
+01:50:59,399 --> 01:51:08,399
+Hocam AsyncTask ya da bir foreground servis çalışırken, çalışma durumundayken uygulama sonlandırılırsa ne olur?
+
+477
+01:51:08,399 --> 01:51:16,000
+Yani uygulama inişriyet etti ve AsyncTask ile bir download yapıyorum.
+
+478
+01:51:16,000 --> 01:51:25,000
+Evet ya da herhangi bir dosya yazıyordu. Mesela ben database işlemleri yapacak olsam hangisini kullanmak daha mantıklı olabilir diye düşündüm.
+
+479
+01:51:25,000 --> 01:51:33,000
+Şimdi şöyle, bu noktada siz bağlı olduğu uygulamayı kil ederseniz o da kil olacaktır.
+
+480
+01:51:33,000 --> 01:51:39,000
+Yani işlem gerçekleşmeyecektir çünkü main thread üzerinden bağlı.
+
+481
+01:51:39,000 --> 01:51:54,000
+Ve doğal olarak main thread'deki operasyonuz sonlandırıldığında o sizin yaratmış olduğunuz extra thread de sonuçta activity ile bağlı olduğu için operasyon sonlanacaktır.
+
+482
+01:51:56,000 --> 01:52:01,000
+Bunu bir güvenceye almanın yolu yok mu? Mesela dosyalarımda bozulmak olsun istemiyorum.
+
+483
+01:52:01,000 --> 01:52:09,000
+Söyleyeyim, verdiğin örnekten yola çıkarak mesela müzik dinliyorsun, müzik dinlerken foreground servis çalışıyor.
+
+484
+01:52:09,000 --> 01:52:16,000
+Ama sen girdin, uygulamayı açtın ve o activity var önünde bütün listeyi görüyorsun.
+
+485
+01:52:16,000 --> 01:52:20,000
+İşte listenin arasında, şarkıların arasında geziyorsun.
+
+486
+01:52:20,000 --> 01:52:24,000
+Sonra birden o uygulamayı kaldırmak istedin değil mi müzik dinlerken?
+
+487
+01:52:24,000 --> 01:52:32,000
+Şimdi o uygulamayı kaldırdığında foreground servisini çalışmaya devam etmesini beklemek pek mümkün olmaz.
+
+488
+01:52:32,000 --> 01:52:37,470
+Doğal olarak müzikte duracaktır. Öyle düşün.
+
+489
+01:52:37,470 --> 01:52:48,470
+Mesela müzik dinim uygulaması olarak Spotify'a örnek versem, böyle streamer servisi olarak mesela bir yandan hem müziği indiriyor hem bir yandan çalıyor.
+
+490
+01:52:48,470 --> 01:52:58,470
+Diyelim ki indirme işlemi yarıda kesildi. Ben bunu bir şekilde kapattığım zaman bu dosyada bozulmaya ulaşmaz mı ya da buna uygun nasıl bir çözüm bulunuyor?
+
+491
+01:52:58,470 --> 01:53:09,470
+Şimdi şöyle, orada iki tane iş var. Bir tanesi müziği dinlemek, bir tanesi müzik uygulaması üzerine bir dosya indirmek.
+
+492
+01:53:09,470 --> 01:53:11,470
+İkisi birbirinden farklı.
+
+493
+01:53:11,470 --> 01:53:26,470
+Şimdi streaming yaparken evet bir parça senin telefonuna iniyor. Mesela indikçe dinliyorsun aslında bu Netflix tarzı içerik paylaşım uygulamaları içinde geçerli.
+
+494
+01:53:26,470 --> 01:53:35,470
+Eğer download kesilirsin zaten senin o andaki izlediğin ya da dinlediğin şeyi de devam etme şansın yok.
+
+495
+01:53:35,470 --> 01:53:44,470
+O yüzden streaming yaptığın zaman bunları sonuçta sürekli olarak bellekte tuttuğunu düşünme. Bunları download ettiğinde bir yerde saklamıyorsun.
+
+496
+01:53:44,470 --> 01:53:50,470
+Yani dosyanın corrupt olup olmaması ile ilgilenmiyoruz. Yanılmıyorum değil mi söylediğin şeyde?
+
+497
+01:53:50,470 --> 01:54:00,470
+Ya Spotify'da öyle değil mesela aslında. Eğer bir müziği bir kere dinlediysem onu indirmiş oluyor. Tekrar dinlediğim zaman internet kullanmış olmam gerekmiyor.
+
+498
+01:54:00,470 --> 01:54:13,470
+Tamam şimdi bu aslında içerik paylaşan uygulamaların birazcık stratejisine bağlı. Ama ben çok yakından Spotify'ın çalışma prensibini bilmiyorum.
+
+499
+01:54:13,470 --> 01:54:27,470
+Buradaki amaç bu içerik sağlayıcılar bu içerikleri kullanan kişiler bunları bir şekilde dağıtmasın vesaire diye aslında farklı önlemler alıyorlar.
+
+500
+01:54:27,470 --> 01:54:43,470
+Ve örnek veriyorum bir indirdiğin müziği tekrar dinlemek noktasında sana bu imkanı sağlayabilir, dosyayı bir yerde saklayabilir ama buna senin erişme ve bunu kullanman noktasında kısıt getiriyor.
+
+501
+01:54:43,470 --> 01:54:45,470
+Doğru mu?
+
+502
+01:54:45,470 --> 01:54:46,470
+Tabii doğru.
+
+503
+01:54:46,470 --> 01:54:48,470
+Çünkü paylaşımını istemiyor.
+
+504
+01:54:48,470 --> 01:55:05,470
+Benim söylediğimde şunu soruyorsan eğer sorumda yani ben ilk bir müziği dinliyordum tam o sırada bir şey crash oldu. O dosya yeniden mi indirilecek yoksa o dosyanın download'u tamamlanmış mı olacak?
+
+505
+01:55:05,470 --> 01:55:14,470
+Yani mesela aslında hocam uygulamayı sonlandırdığımız zaman onDestroy methodu çalışıyor orada eğer önlem alacaksam o metodun içerisinde önlemler alıyorum.
+
+506
+01:55:14,470 --> 01:55:19,470
+Uygulama bazında mesela servislerde buna benzer bir şey var mı?
+
+507
+01:55:19,470 --> 01:55:33,470
+OnDestroy yani servisin kendi içerisinde yapabilirsin ama bu servis bağlı olduğu için ilgili aktiviteye bununla bağladıysan yani öyle çağırdıysan orada yapabileceğin bir şey yok.
+
+508
+01:55:33,470 --> 01:55:35,470
+Yani servisin içerisinde var mı böyle bir?
+
+509
+01:55:35,470 --> 01:55:54,470
+OnDestroy gibi bir yapı yok. Servisin içerisinde alacaksan servisin çalıştırmasını yaptıktan sonra işte kapanma noktasına geldiği zaman işletişeğin kodu arka planına yazabilirsin ama özellikle de Aktivity Lifecycle gibi bir yapı yok.
+
+510
+01:55:54,470 --> 01:55:57,810
+Anladım hocam teşekkür ederim.
+
+511
+01:55:57,810 --> 01:56:00,810
+Tam burada download'u garanti altına mı almak istiyorsun?
+
+512
+01:56:00,810 --> 01:56:10,810
+Garanti altına almak değildim. Örneğin yani beklenmedik bir şekilde kapatılırsa uygulama ona göre alabileceğim önlemler olabilsin istedim aslında biraz.
+
+513
+01:56:10,810 --> 01:56:21,810
+Şöyle OnDestroy'da da bunun garanti yok biliyorsun değil mi? OnDestroy'da da sadece belli bir sürelik bir iş yapabilirsin.
+
+514
+01:56:21,810 --> 01:56:25,810
+Yani OnDestroy'da 10 saniyelik bir işi yapamayabilirsin.
+
+515
+01:56:26,810 --> 01:56:33,810
+Yani mesela download devam ediyordur. Download'u tamamlayayım da kapatayım diyemezsin OnDestroy'da.
+
+516
+01:56:33,810 --> 01:56:35,810
+Ama en azından...
+
+517
+01:56:35,810 --> 01:56:37,810
+Çok basit şeyler yapabilirsin.
+
+518
+01:56:37,810 --> 01:56:46,810
+Yapabilir tabii evet. Bunu serviste de yapabilirsin. Ama özel bir şey yok yani ne denir. Bunun gibi tanınanmış OnDestroy metodu yok.
+
+519
+01:56:46,810 --> 01:56:49,810
+Serviste ne şekilde yapabilirim mesela?
+
+520
+01:56:49,810 --> 01:56:55,810
+Şimdi bunu biraz daha detaylı konuşmamız gerekecek. İstersen bana mail yaz ben sana ona cevap vereyim.
+
+521
+01:56:55,810 --> 01:57:02,810
+Çünkü konu biraz uzadı hani biliyorsun biraz da gerideyiz. O yüzden mail yazarsan ben sana cevap verebilirim.
+
+522
+01:57:02,810 --> 01:57:03,810
+Teşekkürler.
+
+523
+01:57:03,810 --> 01:57:11,810
+Okey teşekkür ederim. Şimdi bu servislerin ötesinde bir intern servis noktası var demiştik.
+
+524
+01:57:11,810 --> 01:57:24,810
+Ve buradaki sizin için worker threadlerde tanımlanmış olan aslında işleri gerçekleştirmenizi sağlıyor.
+
+525
+01:57:24,810 --> 01:57:34,810
+Bu noktada tabii ki bir queue mantığı söz konusu. Buradaki tanımlanmış olan worker threadler poolda yer alıyor.
+
+526
+01:57:34,810 --> 01:57:40,810
+Bunlar paralel bir şekilde çalışmak yerine belirli bir kuyruktan çekilerek gerçekleştiriliyor.
+
+527
+01:57:40,810 --> 01:57:53,810
+Ve siz bu sayede aslında bu ne diyelim threadleri belli bir sırayla çalıştırma şansına sahip olmuş oluyorsunuz.
+
+528
+01:57:53,810 --> 01:57:58,810
+Bu da size bir önceliklendirme sağlamış oluyor.
+
+529
+01:57:58,810 --> 01:58:01,810
+Sağlamış oluyor. Şimdi gelelim download manager'a.
+
+530
+01:58:01,810 --> 01:58:16,810
+Download manager genellikle sizin biraz önce konuştuğunuz bir dosya indirme işiniz varsa kullanmanız için önerilen bir yapı.
+
+531
+01:58:16,810 --> 01:58:33,810
+Bu sayede buradaki kesinti noktasında ya da kaldığı yerden devam etmesi noktasında ya da ilk feda edilecekler arasında olmasın diye size sunulan bir yapı.
+
+532
+01:58:33,810 --> 01:58:43,810
+O yüzden genelde download manager üzerinden, network üzerinden dosyalarınızı indirilmesi öneriliyor büyük dosyalar için.
+
+533
+01:58:43,810 --> 01:58:51,810
+Bu sayede kesintilerin engellenme şansı ortaya çıkıyor.
+
+534
+01:58:51,810 --> 01:59:03,810
+Work manager'ı zaten konuşmuştuk. Job scheduler'dan da bahsetmiştik demiştik ki work manager'dan önce kullanılan bir yapı.
+
+535
+01:59:03,810 --> 01:59:09,810
+Hala aktif olarak kullanılıyor ama daha çok work manager tercih ediliyor diye söylemiştik.
+
+536
+01:59:09,810 --> 01:59:14,810
+Şimdi bir son olarak görselimiz var.
+
+537
+01:59:14,810 --> 01:59:19,810
+Burada hangi yapıları kullanmamız gerekiyor onları söylüyor.
+
+538
+01:59:19,810 --> 01:59:24,810
+Eğer uzun süreli bir download'dan bahsediyorsak download manager.
+
+539
+01:59:24,810 --> 01:59:32,810
+Eğer ertelenemez bir iş, anında gerçekleşmesi gereken bir iş varsa foreground service.
+
+540
+01:59:32,810 --> 01:59:54,810
+Eğer sistem tarafından sistemin condition'larına bağlı olarak işte telefonun şarja takılması, network'e bağlanması, yeniden boot etmesi gibi kuşullar oluştuğunda bir işin yapılmasını istiyorsak o zaman work manager'ı tercih ediyoruz.
+
+541
+01:59:54,810 --> 02:00:08,810
+Belli bir zamanda bir iş yapılsın istiyorsak alarm manager ile ve doğal olarak pending intent ile yani ileri dönük bir görev atama işini pending intent ile yapıyoruz.
+
+542
+02:00:08,810 --> 02:00:22,810
+Son olarak da eğer bütün bu kuşullar ortada sağlanmıyorsa ama ertelenebilir bir işten bahsediyorsak ve herhangi uygun bir zamanda gerçekleşsin diyorsak
+
+543
+02:00:22,810 --> 02:00:31,810
+yine work manager'dan faydalanıyoruz. Yani sadece sistem eventlerine bağlı değil work manager'ı kullanmak.
+
+544
+02:00:31,810 --> 02:00:40,810
+Onun dışında exact bir zamanda bir iş yapmak yerine esnekliğimiz varsa work manager'ı kullanıyoruz.
+
+545
+02:00:40,810 --> 02:00:59,810
+Evet, kabaca background task'ları değindik. Biraz sonra background task'ları tamamlayacağız ve ondan sonra notification'lara geçeceğiz.
+
+546
+02:00:59,810 --> 02:01:12,810
+Bir yaklaşık 10 dakika ara verelim 16.01 16.10'da background task'larla ilgili birkaç daha söyleyeceğim yorumlar var.
+
+547
+02:01:12,810 --> 02:01:19,810
+Ondan sonra da notification'lara geçiyor olacağız. Evet arkadaşlar 16.02 16.10'da görüşmek üzere.
+
+548
+02:01:19,810 --> 02:10:14,539
+Evet arkadaşlar yeniden merhaba. [öğrenci] son bölümüne tekrar hoş geldiniz.
+
+549
+02:10:14,539 --> 02:10:27,539
+Şimdi background task'ları genel olarak tamamladık ama birkaç cümle daha kurmak gerekiyor çünkü önemli değil ufak konu daha var.
+
+550
+02:10:27,539 --> 02:10:32,539
+Bundan da bahsetmeden geçmek olmaz diye düşünüyorum.
+
+551
+02:10:32,539 --> 02:10:38,539
+Şimdi bizim derdimiz pil tüketimini minimize etmek.
+
+552
+02:10:38,539 --> 02:10:48,539
+Bunu minimize etmenin yolu da Android cihazınızı mümkün olduğunca fazla uyku da tutmak.
+
+553
+02:10:48,539 --> 02:10:52,539
+Yani telefonu ne kadar az kullanırsanız pil o kadar az tüketilir doğal olarak.
+
+554
+02:10:52,539 --> 02:10:59,539
+Ancak günümüz şartlarında telefonların kullanım süresi sürekli artıyor.
+
+555
+02:10:59,539 --> 02:11:09,539
+Evet bunun için yeni pil teknolojileri geniştiriliyor ama belirgin bir sıçrama henüz sağlanmadı.
+
+556
+02:11:09,539 --> 02:11:15,539
+Hala bir iki gün bandında kısıtlı ilerliyoruz ama farklı teknolojiler var demiştik.
+
+557
+02:11:15,539 --> 02:11:28,539
+İşte bir ara telefonun iki ekranı renkli ve daha canlı olan ve bir tarafta da biraz daha Kindle tarzı bir ekran kullanımı sunan bir ara bir ürün vardı.
+
+558
+02:11:28,539 --> 02:11:37,539
+Bu tarz ürünler deneniyor ama sonuçta kimse artık ekran konforuna vazgeçmek istemiyor.
+
+559
+02:11:37,539 --> 02:11:43,539
+Çünkü ekran ne kadar kaliteli ve güzel olursa kullanıcılar o kadar etkileniyor.
+
+560
+02:11:43,539 --> 02:11:51,539
+İşte resimlerin güzel gözükmesinden tutun yani oradaki keskin görüntü hepimiz açısından çok kritik çözünürlükler artıyor.
+
+561
+02:11:52,539 --> 02:11:56,539
+Bunun ötesinde donanım sal çözümler var.
+
+562
+02:11:56,539 --> 02:12:04,539
+İşte kullanılan ekranların fiziksel yapısı, kimyasal yapısı, olet ekranlar kullanılıyor.
+
+563
+02:12:04,539 --> 02:12:20,539
+Bu sayede panel üzerinden ışıklandırma yerine, piksel bazı ışıklandırma size özellikle son dönemde yine kullanılan dark modun enerjisi tasarrufu sağlamasını mümkün kılıyor.
+
+564
+02:12:20,539 --> 02:12:41,539
+Böyle böyle diye diye bugün doz uygulamasından bucketlara kadar, dark moduna kadar çok çeşitli enerji tüketimini minimize eden çözümlerle karşılaştık ve her geçen gün yeni bir alternatif çıkıyor.
+
+565
+02:12:41,539 --> 02:12:48,539
+Ama çıkıyor yani çok zor belki fakat hep bir adım daha geri götürüyorlar.
+
+566
+02:12:48,539 --> 02:13:10,539
+Şimdi bu yüzden bu kadar önemli bir konuda device'i sizin kullanmadığınız anlarda mümkün olduğunca uykuda tutmak, özellikle ekranı mümkün olduğunca kapalı tutmak, ekrandan sonra işlemciyi mümkün olduğunca uyku modunda tutmak en büyük hedeflerden bir tanesi.
+
+567
+02:13:10,539 --> 02:13:21,539
+Burada birkaç çözümden de bahsetmiştik işte CPU tek başına çok güçlü hale geldi telefonlar.
+
+568
+02:13:21,539 --> 02:13:35,539
+Bunun için daha basit işleri yaptırmak adına daha düşük enerji tüketen, daha düşük frekansda çalışan co-prosesörler konuyor device'in içine telefonun.
+
+569
+02:13:35,539 --> 02:13:49,539
+Bu sayede ana CPU uyurken co-prosesör sizin daha basit işlerinizi yönetebilecek frekansda çalışıyor ve daha az enerji tüketerek orayı handle ediyor demiştik.
+
+570
+02:13:49,539 --> 02:14:02,539
+Ya da frekansları dynamic voltage scaling yaparak değiştirerek kullanım sağlayan donanımlarla söz konusu yazdığım desteğiyle beraber.
+
+571
+02:14:02,539 --> 02:14:16,539
+Bunların hepsi birer çözüm fakat tabii CPU uyutmak demek arka plan işlerinin de devam etmemesi anlamına geliyor.
+
+572
+02:14:16,539 --> 02:14:25,539
+Arka plan işlerini devam ettirebilmek adına kullandığımız bir yapı var. Nedir o?
+
+573
+02:14:25,539 --> 02:14:51,659
+Plan var mı? Arka planda işleri devam ettirmek adına kesintisiz bir şekilde cihazın hangi modunun enable olması gerekiyor?
+
+574
+02:14:51,659 --> 02:15:01,340
+Hiç duymadınız sanırım. Wake lock desem? Duyan var mı wake lock'ı?
+
+575
+02:15:01,340 --> 02:15:03,340
+Ben duymuştum hocam.
+
+576
+02:15:03,340 --> 02:15:07,340
+Bilgin var mı hiç peki? Duymadığın atasında?
+
+577
+02:15:07,340 --> 02:15:09,340
+Yok.
+
+578
+02:15:09,340 --> 02:15:21,340
+Peki. Şimdi tabii wake lock sizin arka plandaki işlerinizin kesintisiz bir şekilde ilerlemesi için önemli.
+
+579
+02:15:21,340 --> 02:15:27,340
+Bunun uses permission'ını almanız gerekiyor Android manifest tarafında.
+
+580
+02:15:27,340 --> 02:15:46,340
+Ve burada özellikle arka plandaki wake lock ile CPU'yu ayakta tutacağımız periodlar ya da çalıştıracağımız iş kadar ne zaman wake lock on off yapacağımıza iyi karar vermemiz gerekiyor.
+
+581
+02:15:46,340 --> 02:15:52,340
+Wake lock aslında keep the device awake prensibini benimsiyor.
+
+582
+02:15:52,340 --> 02:16:04,340
+Fakat wake lock'ı enable etmek demek aslında enerjiyi ve kaynakları oldukça yoğun kullanacaksınız anlamında geliyor.
+
+583
+02:16:04,340 --> 02:16:11,340
+Bu çok istenmiyor. Mümkün olduğunca bundan uzak durmanız bekleniyor. Bunun için alternatifler var.
+
+584
+02:16:11,340 --> 02:16:16,340
+Alternatifleri download manager bir tanesi.
+
+585
+02:16:16,340 --> 02:16:27,340
+Yani wake lock özelliğini enable etmeden mümkünse HTTP downloadlarınızı download manager üzerinden yönetmeniz.
+
+586
+02:16:27,340 --> 02:16:52,340
+Ya da data synchronizasyon uzak bir sunucuyla yapacaksanız sync adapter kullanmanız arka plandaki işleriniz için de daha çok job scheduler firebase cloud messaging yapılarını tetikliyor olmanız ve onları kullanıyor olmanız önemli arz ediyor.
+
+587
+02:16:52,340 --> 02:17:04,340
+Ekranın açık kalmasını istiyorsanız ki bu hangi tarz uygulamalarda ekranın kapanmasını istemezsiniz.
+
+588
+02:17:04,340 --> 02:17:17,430
+Siz bir yere gittiniz geldiniz. İşte bir kapı çaldı vesaire bir şey oldu. Ekran YouTube ve Netflix'te böyle bir şey vardı.
+
+589
+02:17:18,430 --> 02:17:36,430
+Bu yani içerik izlediğiniz zaman özellikle bir sinema dizi vesaire izlediğiniz zaman, artık oyun oynarken en çok ekranı yoğun kullandığınız ve vazgeçmek istemediğiniz ya da tekrar tekrar açmak zorunda kalmadığınız bir yapı olsun.
+
+590
+02:17:36,430 --> 02:17:55,430
+Burada flag keep screen on diye bir bayrak var. Bunu enable etmeniz gerekiyor. Bunu enable etmenin iki tane yolu var. Bir tanesi XML üzerinden Android 2. Keep screen on true yazmak.
+
+591
+02:17:55,430 --> 02:18:03,430
+Bunları böyle şu anda sadece hızlı hızlı anlatıyorum. Genel kültür olması açısından bunları böyle çok ezberlemeniz gerektirecek bir durum yok.
+
+592
+02:18:03,430 --> 02:18:11,430
+Ama bilmenizde de fayda var. Neler oluyor neler bitiyor. Çünkü bunlar her geçen sene yeni bir özellik karşımıza çıkıyor.
+
+593
+02:18:11,430 --> 02:18:25,430
+Biraz kulağınızda durmasında fayda var. Bir de bunu XML dosyası içerisine koymayıp doğrudan programın içerisine ekleyebilirsiniz.
+
+594
+02:18:25,430 --> 02:18:45,430
+Böyle yapabilirsiniz. İşte ilgili window'a add flags deyip oraya flag ile ilgili bir billet ekleyip keep screen on birisi ekleyip ihtiyaç duyduğunuz sürece ekranın açık kalmasını sağlayabilirsiniz.
+
+595
+02:18:45,430 --> 02:18:59,430
+Wake lock yerine bu yaklaşımları kullanmak bize özellikle hem ekstradan bir izin sorunu çıkartmıyor. Çünkü wake lock kullanacaksanız kullanıcıdan bu izni almamız gerekiyor.
+
+596
+02:18:59,430 --> 02:19:05,430
+Hem de kaynak tüketimi açısından daha kontrollü bir iş yapmış oluyorsunuz.
+
+597
+02:19:05,430 --> 02:19:15,430
+Öte yandan tabi sadece ekranı açık tutmak hedefiniz olmayabilir.
+
+598
+02:19:15,430 --> 02:19:36,430
+Eğer CPU noktasında da buna ihtiyaç duyuyorsanız ekran açık olmak zorunda değil CPU açık olsun diyorsanız o zaman otomatik olarak sadece CPU'ya ihtiyaç duyduğunuz bir noktada wake lock yapısından faydalanmanız gerekiyor.
+
+599
+02:19:36,430 --> 02:19:58,430
+Wake lock'ın da kendi içerisinde farklı levelleri var. Bu levellere bağlı olarak işinizin gerçekleştiği süre boyunca wake lock'ı tanımlayıp işiniz tamamlandığında wake lock'ı releas ederek device'ın o iş boyunca awake olmasını.
+
+600
+02:19:58,430 --> 02:20:08,430
+Evet arkadaşlar ekran paylaşımı yapmıyorum. Doğrudur. Sadece bu konuyu ekstradan sizinle paylaşıyorum.
+
+601
+02:20:08,430 --> 02:20:20,430
+Çok üzerine daha uzun konuşmayacağım zaten. Wake lock'la ilgili çok kısa bir paylaşımda bulunmak istedim genel kültür olmasına acısından.
+
+602
+02:20:20,430 --> 02:20:36,670
+O yüzden hepinize teşekkür ediyorum bu dikkatiniz için en azından. Başka bu konuyla ilgili söylemek istediğim bir şey var mı diye şöyle bir notlarıma bakıyorum.
+
+603
+02:20:36,670 --> 02:20:57,920
+Özellikle Android işletim sistemindeki enerji tüketimi ile ilgili alınan çözümler değerli. Her API için farklı çözümler var.
+
+604
+02:20:57,920 --> 02:21:18,920
+İşte bazı sistem eventlerinin artık takip edilmediğini söylemiştik broadcast receiverlarda. Hem güvenlik anlamında hem de enerji tüketimine olumsuz etki ediyor şeklinde düşünmüştük.
+
+605
+02:21:18,920 --> 02:21:35,020
+Bu noktada son kez şunu sorayım Android cihazı üzerindeki en fazla enerji tüketimine etki eden birimler nelerdir diye sorayım. Evet [öğrenci].
+
+606
+02:21:35,020 --> 02:21:41,020
+Benim kişisel tecrübelerime göre kamera en çok enerji tüketiyor bence.
+
+607
+02:21:41,020 --> 02:22:00,899
+Öncesinde bir birim daha var. Belki doğrudan onu kabul ederek es geçtim. Ekran. Ekran. Ekran. Birinci noktada ekran var çok önemli.
+
+608
+02:22:00,899 --> 02:22:23,899
+İkincisi özellikle network bağlantıları başta GPS ve LTE olmak üzere. Çok doğru kamera video konumundaki çekimlerinde özellikle dramatik şekilde belli bir noktada enerjimizi çalıp tüketebiliyor.
+
+609
+02:22:23,899 --> 02:22:28,899
+En çok enerji tüketen sensörlerden bir tanesi.
+
+610
+02:22:29,899 --> 02:22:34,899
+CPU görece diğerlerine göre daha düşük enerji tüketimine sahip.
+
+611
+02:22:34,899 --> 02:22:46,899
+Ama bugün yazımsal seviyede ekranı dark mode ile çalıştırarak bile çok ciddi derecede tasarruf ettiğiniz için birçok uygulama size bu seçenekle birlikte geliyor.
+
+612
+02:22:46,899 --> 02:23:03,899
+Yani artık siz de programcı olarak kişilere bu tür özellikler sunup uygulamanızın enerji tüketenler arasında en başta yer almamasını sağlayabiliyorsunuz.
+
+613
+02:23:03,899 --> 02:23:30,899
+Benim bundan sonraki özellikle uygulama geliştirecek arkadaşlara tavsiyem geliştirdikleri uygulamanın özellikle kaynak tüketimini çok iyi analiz etmeleri sadece enerji bazında değil aynı zamanda kapladığı yer ki bunun için application bundle kullanmak gerekiyor demiştik hatırlarsak.
+
+614
+02:23:30,899 --> 02:23:39,899
+Her uygulamaya her telefona her komponentin yüklenmemesi gerektiğini söylemiştik bunlara dikkat etmek gerekiyor.
+
+615
+02:23:39,899 --> 02:23:53,899
+Bu doğrultuda tabi berlek kullanımı da çok önemli siz sanki bir uygulama çalışıyormuş gibi dizayn ederseniz uygulamanızda sıkıntı çıkabilir.
+
+616
+02:23:53,899 --> 02:24:05,899
+En son noktaya gelecek olursak da background testler özellikle arka planda bir sürekli iş yapıyorsanız bence burası çok daha iyi planlanması gerekiyor.
+
+617
+02:24:05,899 --> 02:24:20,899
+Çünkü kısa süreli kullanımlı uygulamalar da çok sorun yok girip çıkış yapabilirsiniz ama uzun süre kalacak ekranın kullanıldığı uygulamalar ya da arka plan servislerini akıllıca dizayn etmek gerekiyor.
+
+618
+02:24:20,899 --> 02:24:27,899
+Evet şimdi yeni konumuz için notifikasyonlar için paylaşım yapayım.
+
+619
+02:24:27,899 --> 02:24:55,950
+Şuradan bakalım evet şu an görebiliyor musunuz?
+
+620
+02:24:55,950 --> 02:24:59,290
+Evet hocam.
+
+621
+02:25:00,290 --> 02:25:19,290
+Peki notifikasyonlar belki de bir telefonun derdini anlatmak için size bilgi vermek için kullandığı en yoğun kullandığı aslında bilgilendirme komponenti.
+
+622
+02:25:19,290 --> 02:25:24,290
+Notifikasyonların dışında başka hangi bilgilendirme komponentleri var diye sorayım.
+
+623
+02:25:24,290 --> 02:25:39,500
+[öğrenci].
+
+624
+02:25:39,500 --> 02:25:41,500
+Toast message var hocam.
+
+625
+02:25:46,500 --> 02:25:56,200
+Toast message doğru başka alert dialoglar var.
+
+626
+02:25:56,200 --> 02:25:59,200
+Evet alert dialoglar var dialog boxlar var.
+
+627
+02:25:59,200 --> 02:26:14,370
+Başka bir telefonun kullanıcı ile olan interaksiyonunda kullanabileceği seçenekler.
+
+628
+02:26:14,370 --> 02:26:20,129
+Konuşuyoruz. Saymadığınız aslında çok basit olanlar da var ekran.
+
+629
+02:26:20,129 --> 02:26:24,129
+Donanımsal olarak titreşim ve ses çıkartmak.
+
+630
+02:26:24,129 --> 02:26:39,129
+Çok güzel önemli kesinlikle titreşim ve çıkartılan ses sesin tipine bağlı olarak istediğiniz konfigrasyonda sizin anlayacağınız bir ses ya da şarkı çalmasını sağlayabilirsiniz ekran.
+
+631
+02:26:39,129 --> 02:26:44,129
+Bir de her telefonda var mı bilmiyorum bildirim ışığı diye bir sensör var.
+
+632
+02:26:44,129 --> 02:26:47,129
+Bir de bildirim ışığı var ama her telefonda yok.
+
+633
+02:26:47,129 --> 02:27:02,129
+Fakat bu da bir kullanıcıya uzaktan farklı renk ile bile olsa gelen mesajın hangi uygulamaya ait olduğunu dahi söyleyebilecek nitelikte bir bildirim şekli.
+
+634
+02:27:02,129 --> 02:27:07,129
+Ya başka benim aklıma gelmiyor sizin aklınıza gelen var mı?
+
+635
+02:27:08,129 --> 02:27:10,129
+Atladığımız bir şey var mı?
+
+636
+02:27:10,129 --> 02:27:16,879
+Hani bir de sesli mesaj belki olabilir.
+
+637
+02:27:16,879 --> 02:27:20,879
+Onun altısında benim aklıma başka ekstra bir bilgi almıyor.
+
+638
+02:27:20,879 --> 02:27:26,879
+Notification bunların içerisinde en çeşitliliği fazla olanı.
+
+639
+02:27:26,879 --> 02:27:34,879
+Notification farklı şekillerde karşımıza çıkıyor.
+
+640
+02:27:34,879 --> 02:27:45,879
+Bunlar nedir diye bakacak olursak bir tanesi heads up notification dediğimiz bir bilgilendirme yöntemi.
+
+641
+02:27:45,879 --> 02:27:52,879
+İki notifikasyonların notification drawer'da görüntülenebiliyor olması.
+
+642
+02:27:52,879 --> 02:28:05,879
+Üç notification icon'lar üzerinden o andaki statü, uygulamalara ait statü konusunda bir bilgi sahibi olabiliyoruz ki
+
+643
+02:28:05,879 --> 02:28:24,879
+bağlantı var mı yok mu, bağlantı tipiniz LTE, 3G mi, 2G mi, pil durumunuz, saat, bir mail geldi mi, bir mesaj geldi mi gibi ikonik gösterimlerin olduğu bir notification türü.
+
+644
+02:28:24,879 --> 02:28:37,639
+Tabii burada lock screen'ler üzerinden de notifikasyonlar görüntülenebiliyor eğer siz buna imkan tanırsanız.
+
+645
+02:28:37,639 --> 02:28:43,639
+Burada farklı visibility option'ları var.
+
+646
+02:28:43,639 --> 02:28:58,639
+Bu visibility option'ları lock screen'de herkesin her türlü detayı görmemiz için sizin bu noktada tercihen sadece hangi uygulamadan mesaj geldiğiniz doğrudan göstermemiz gibi olabilir.
+
+647
+02:28:58,639 --> 02:29:05,639
+Bazen çünkü iconlar notification bar'da çok fazla arka arkaya sıralanınca kaybolabiliyor.
+
+648
+02:29:05,639 --> 02:29:13,639
+O yüzden lock screen üzerinde de notification gösterme seçeneğinden faydalanmak lazım.
+
+649
+02:29:13,639 --> 02:29:21,639
+Tabii bu yeni notification türü önemli.
+
+650
+02:29:21,639 --> 02:29:27,639
+Badgeslerden bahsediyoruz. 8 ile birlikte hayatımıza giren bir yapı.
+
+651
+02:29:27,639 --> 02:29:40,069
+Buradaki kritiklik nedir? Bu badgesler nasıl çalışır? Özelliği nedir?
+
+652
+02:29:40,069 --> 02:29:47,069
+Bir arkadaş da demedi ki haftalardır X, Y, Z arkadaş konuşuyor.
+
+653
+02:29:47,069 --> 02:29:52,069
+İki söz alayım da ben bir şey söyleyeyim demediniz ya. Vallahi hakikaten demediniz.
+
+654
+02:29:52,069 --> 02:30:08,500
+Ben de vazgeçtim isim söylemekten. O da artık tat vermiyor, zorla kimseye bir şey söylemeyiz.
+
+655
+02:30:08,500 --> 02:30:16,159
+Siz çok çektiniz, biz çok çektik. Şu pandemi bitse de
+
+656
+02:30:16,159 --> 02:30:25,159
+Sağlığa dönsek, yüz yüze gelsek belki daha şenleneceğiz ama siz de herhalde o sırada mezun olmuş olacaksınız.
+
+657
+02:30:25,159 --> 02:30:30,159
+İki dakika dersin havasını dağıtayım da bari belki ilginizi çeker.
+
+658
+02:30:30,159 --> 02:30:34,159
+Dersli çok ilginizi çekiyor mu çekmiyor mu onu da anlamıyorum zaten.
+
+659
+02:30:34,159 --> 02:30:38,159
+Görmüyorum, duymuyorum, yorum da söylemiyorsunuz.
+
+660
+02:30:39,159 --> 02:30:46,159
+Nasılsınız, iyi misiniz? Pandemi bitip sonbaharda sizce üniversite dönecektiniz.
+
+661
+02:30:46,159 --> 02:30:54,610
+Evet [öğrenci] sen konuşmuştun ama gene sana söz vereyim.
+
+662
+02:30:54,610 --> 02:31:05,610
+Sadece yorum yapmak istedim hocam. Bu durum biraz zor yani herkese etkiliyor ama lütfen bunu sadece bu ders üzerinde böyle bir olgun olduğunu düşünmeyin.
+
+663
+02:31:05,610 --> 02:31:09,610
+Yani çoğu derste öyle açıkçası biraz uzaktan eğitiminin sonucu.
+
+664
+02:31:09,610 --> 02:31:11,610
+Ama ben özellikle teşekkür etmek istiyorum.
+
+665
+02:31:11,610 --> 02:31:21,610
+Hani en azından bu derste mobil programına girişle ilgili hani genel kritik noktalara değinmek adına hem ödevlerimiz hem de proje için.
+
+666
+02:31:21,610 --> 02:31:28,610
+Ben açıkçası çok keyif aldım sadece çok fazla deneyimim ya da bilgim olmadığı için derste biraz hani az katılıyorum.
+
+667
+02:31:28,610 --> 02:31:30,610
+Ama hemden kendi yaptığımı etmek istedim.
+
+668
+02:31:30,610 --> 02:31:39,610
+[öğrenci] teşekkür ederim güzel açıklaman için hani umarım gerçekten inanarak söylemişsindir hani derste ilgili yorumunu.
+
+669
+02:31:39,610 --> 02:31:50,610
+Ben bu durumun genel olarak tüm derslerde ağırlıkla böyle gittiğini zaman zaman hocalarla konuştuğumuzda duyuyorum.
+
+670
+02:31:50,610 --> 02:31:55,610
+Hani bunu kişisel olarak algılamıyorum kesinlikle böyle bir düşüncem de yok.
+
+671
+02:31:55,610 --> 02:31:59,610
+Ne kadar zor şartlarda öğrenime devam ettiğini de biliyorum.
+
+672
+02:31:59,610 --> 02:32:10,610
+Yani sizin yaşlarınızda olup o kadar kısıtlı bir ortamda bulunup bu yükaltında üniversite okumak çok sempatik bir durum değil.
+
+673
+02:32:10,610 --> 02:32:13,610
+Canınızın her istediğini yapamıyorsunuz.
+
+674
+02:32:13,610 --> 02:32:17,610
+O yüzden sizi gayet iyi anlıyorum.
+
+675
+02:32:17,610 --> 02:32:25,610
+Bu yüzden aslında bu dönem ödev sayısını da benimize etmek noktasında hareket etmeye çalıştım kendi adıma bu derste.
+
+676
+02:32:25,610 --> 02:32:33,610
+Ama bizim açımızdan da gerçekten tepkisiz ders sürekli konuşarak anlatmak çok zor.
+
+677
+02:32:33,610 --> 02:32:38,610
+Özellikle canınız sıkıldığı zaman da hani ya işte hocam biraz duralım.
+
+678
+02:32:38,610 --> 02:32:42,610
+Gerçi araları da kısa veriyoruz o yüzden onu da demek fırsatı olmuyor.
+
+679
+02:32:42,610 --> 02:32:47,610
+Ben o zaman konu açılmışken aslında son iki haftaya girdiğimiz için bunu da sormak istiyorum.
+
+680
+02:32:47,610 --> 02:32:51,610
+Bir anket de göndereceğim size biliyorsunuz her sene soruyorum.
+
+681
+02:32:51,610 --> 02:33:02,610
+Bu sırada hani onurla başlamışken gerçekten samimiyetle yapacağınız yapıcı bir eleştiri varsa bunu da duymak isterim.
+
+682
+02:33:02,610 --> 02:33:05,610
+Çünkü yani bu işler belli olmaz.
+
+683
+02:33:05,610 --> 02:33:08,610
+Bir daha yarın öbür gün online eğitim olur.
+
+684
+02:33:08,610 --> 02:33:11,610
+Neyi değiştirmek lazım ilginizi çekmek için?
+
+685
+02:33:11,610 --> 02:33:16,610
+Ben onu çok duymak isterim bu ders özelinde ya da genel olarak yorum yapmak isteyen varsa.
+
+686
+02:33:16,610 --> 02:33:19,610
+Yoksa hocam siz hiç takılmayın.
+
+687
+02:33:19,610 --> 02:33:22,610
+Biz yani sizin de yapacağınız bir şey yok.
+
+688
+02:33:22,610 --> 02:33:24,610
+Çok da yapılacak bir şey yok mu dersiniz?
+
+689
+02:33:24,610 --> 02:33:27,610
+Söylemek isteyen varsa mutlu olurum.
+
+690
+02:33:27,610 --> 02:33:29,610
+Barış.
+
+691
+02:33:29,610 --> 02:33:33,610
+Hocam öncelikle yani ben bu ders aldığım için yani çok memnun oldum.
+
+692
+02:33:33,610 --> 02:33:35,610
+Dersinde çok faydalı buluyorum.
+
+693
+02:33:35,610 --> 02:33:36,610
+Teşekkür ederim.
+
+694
+02:33:36,610 --> 02:33:37,610
+Teşekkür ederim.
+
+695
+02:33:37,610 --> 02:33:40,610
+Bize çok iyi anlatıyorsunuz bence.
+
+696
+02:33:40,610 --> 02:33:43,610
+Benim değinmek istediğim bir iki nokta var.
+
+697
+02:33:43,610 --> 02:33:49,610
+Tabii ki sadece benim fikrim hani bazı arkadaşlara göre böyle daha iyi de olabilir.
+
+698
+02:33:49,610 --> 02:33:55,610
+Birinci konu bence ödevlerin çeşitliliği daha fazla olabilirdi.
+
+699
+02:33:55,610 --> 02:34:07,610
+Mesela ikinci ödevde daha çok bu hani notifikasyonlar, background tasklar falan bu tür işlere de hani ağırlık verebileceğimiz daha farklı konulara yönelilebileceğimiz bir ödev olabilirdi.
+
+700
+02:34:07,610 --> 02:34:11,610
+İkisi bence ben biraz benzer ödevler oldu konu açısından.
+
+701
+02:34:11,610 --> 02:34:20,610
+İkinci noktada bence ders sırasında hani bazen yapıyoruz yani uygulamalı olarak Android Studio'yu açıp yazıyoruz.
+
+702
+02:34:20,610 --> 02:34:32,610
+Bundan dolayı bazı yani biraz bence fazla vakit ayırdık bunu ve bundan dolayı bazı konuları daha fazla vakit ayırıp derste işlemek daha faydalı olabilirdi bence.
+
+703
+02:34:32,610 --> 02:34:37,610
+Çünkü zaten yani kendi kendimize de pratik yaparak geliştirebiliriz bunu.
+
+704
+02:34:37,610 --> 02:34:42,610
+Yani bunu bence derste bu kadar vakit ayırmaya gerek yok ama bunu faydalı bulan arkadaşlar da olabilir.
+
+705
+02:34:42,610 --> 02:34:44,610
+Evet orada ufak bir yorum yapacağım.
+
+706
+02:34:44,610 --> 02:34:47,610
+Barış o nokta ile ilgili sadece.
+
+707
+02:34:47,610 --> 02:35:02,610
+O nokta aslında iki üç sene önce öğrencilerden gelen talep doğrultusunda oluştu ve genelde totaldaki memnuniyet derste böyle bir örnek çözü yani örneği uygulamak açısından yüksekti.
+
+708
+02:35:02,610 --> 02:35:14,610
+Ama tabii belki sınıfta olmamamız belki sizlerin çok soru sormaması bunun verimliliğini belki biraz düşürmüş olabilir.
+
+709
+02:35:14,610 --> 02:35:37,610
+Ama birtakım kişiler sonradan hiç ellerini kirletmedikleri için ben biraz dersin o kısmını mecbur tutup hem bir şeyler yapmaya çalışmaya zorlamak hem de oradan bir ödev çıkartarak hani herkesin kodlamaya mecbur kalmasını istediğim için bunu kullandım.
+
+710
+02:35:37,610 --> 02:35:41,610
+Ama senin söylediğin dezavantajının da farkındayım.
+
+711
+02:35:41,610 --> 02:35:45,610
+Olabildiğince de uzun süre tutmamaya çalıştım.
+
+712
+02:35:45,610 --> 02:35:48,610
+Fakat yani haklısın öyle bir dezavantajı var.
+
+713
+02:35:48,610 --> 02:35:53,610
+Onda hemfikirim seninle bunu da yapacağım ankette bu sene göreceğim.
+
+714
+02:35:53,610 --> 02:35:58,610
+Yani senin gibi daha çok düşman var mı yoksa bir daha iki sene ona göre bir öndem alacağım.
+
+715
+02:35:58,610 --> 02:36:01,610
+Sözün bitmediysen tamamlayabilirsin.
+
+716
+02:36:01,610 --> 02:36:02,610
+Yok hocam sözüm bitti.
+
+717
+02:36:02,610 --> 02:36:03,610
+Teşekkür ederim.
+
+718
+02:36:03,610 --> 02:36:07,610
+Ben teşekkür ederim söylediklerine katılıyorum.
+
+719
+02:36:07,610 --> 02:36:20,610
+Çeşitlilik konusunda bu sene ödevde biraz görüntüyle ve işte kamerayla uğraşın istediğim için değişik bir ödev olsun diye onu verdim ama paralellikleri var.
+
+720
+02:36:20,610 --> 02:36:23,610
+Background task'a çok girmek istemiyorum.
+
+721
+02:36:23,610 --> 02:36:33,610
+Barış yine burada background task'ı daha çok anlatıp neler olduğunu bilmeniz ama implementasyon noktasında çok detaya girmiyorum.
+
+722
+02:36:33,610 --> 02:36:36,610
+Çünkü bu dersin introduction'a ait bir konu değil.
+
+723
+02:36:36,610 --> 02:36:43,610
+Birçok kişinin de bu noktada memnuniyetsizliği oluyor bu tarz bir ödevde.
+
+724
+02:36:43,610 --> 02:36:49,610
+O yüzden daha biz en başındakini yapamazken bu tarz zor ödevler verdiğiniz için iyice koptuk diyenler oluyor.
+
+725
+02:36:49,610 --> 02:36:52,610
+Oradaki vermemesi birinde o.
+
+726
+02:36:52,610 --> 02:36:58,610
+Ama daha çok talep edenler için bu tür ödevlerin daha faydalı olacağını ben de düşünüyorum.
+
+727
+02:36:58,610 --> 02:37:00,610
+Böyle bir yorum yapmış olayım.
+
+728
+02:37:00,610 --> 02:37:01,610
+Başka yorum yapmak isteyen?
+
+729
+02:37:01,610 --> 02:37:08,430
+Barış'a katılan, katılmayan başka bir konuda konuşmak isteyen? [öğrenci] peki?
+
+730
+02:37:08,430 --> 02:37:19,030
+Hocam mesleki seçimlik derslerde pek mümkün mü bilmiyorum ama uygulamaya da laboratuvar dersleri yapmamız çok güzel bir soru.
+
+731
+02:37:19,030 --> 02:37:20,030
+Çok güzel olurdu aslında.
+
+732
+02:37:20,030 --> 02:37:21,030
+Evet çok haklısın.
+
+733
+02:37:21,030 --> 02:37:25,030
+Bu mesleki seçimlik derslerde yok ama ben bunu bir sorarım.
+
+734
+02:37:25,030 --> 02:37:30,030
+Böyle bir konabiliyor mu diye böyle bir özellik.
+
+735
+02:37:30,030 --> 02:37:36,030
+Yani belki bir sonraki eğitim planında bu dersin gerçekten bir uygulama saatine ihtiyacı var.
+
+736
+02:37:36,030 --> 02:37:38,030
+O zaman çok daha dolu dolu geçeceğini düşünüyorum.
+
+737
+02:37:38,030 --> 02:37:41,030
+Çünkü 3 saatte bu işi toparlamak çok mümkün olmuyor.
+
+738
+02:37:41,030 --> 02:37:42,030
+Bir de çok konu var.
+
+739
+02:37:42,030 --> 02:37:45,030
+Her konunun da çok detayı var.
+
+740
+02:37:45,030 --> 02:37:49,030
+Bir de hepsi değişiyor senelere bağlı olarak ve API levellere bağlanarak.
+
+741
+02:37:49,030 --> 02:37:53,030
+O yüzden belki öyle bir şey küsur olabilirdi.
+
+742
+02:37:53,030 --> 02:37:55,030
+Başka görüş belirtmek isteyen?
+
+743
+02:37:55,030 --> 02:38:06,549
+Evet zaten [öğrenci].
+
+744
+02:38:06,549 --> 02:38:11,549
+Hocam benim sınavla ilgili bir şeyim vardı.
+
+745
+02:38:11,549 --> 02:38:14,549
+Sınavda mesela örnek bir soru vardı.
+
+746
+02:38:14,549 --> 02:38:22,549
+Yanlış hatırlamıyorsam kaç çeşit Android uygulaması geliştirebileceğimiz bir şeydi.
+
+747
+02:38:22,549 --> 02:38:23,549
+Burada sayılar vardı.
+
+748
+02:38:23,549 --> 02:38:28,549
+Örneğin orada sayılar değil de hangileri vardır şeklinde sorulsaydı.
+
+749
+02:38:28,549 --> 02:38:31,549
+Yani mesela ben dördünü biliyordum.
+
+750
+02:38:31,549 --> 02:38:33,549
+Beşinciyi bilmediğim için soruyu yanlış yaptım.
+
+751
+02:38:33,549 --> 02:38:37,549
+Ama dördünü bilmemden ötürü bir herhangi bir puan kurumu elemede.
+
+752
+02:38:37,549 --> 02:38:38,549
+Olabilir güzel bir eleştiri.
+
+753
+02:38:38,549 --> 02:38:39,549
+Yani haklısın.
+
+754
+02:38:39,549 --> 02:38:45,549
+Sorularda bazılarında biraz daha bildiğin kadarından puan al.
+
+755
+02:38:45,549 --> 02:38:48,549
+Yaklaşımı güdülerek sorular hazırlanabilir.
+
+756
+02:38:48,549 --> 02:38:52,549
+Final sınavında buna dikkat ederim.
+
+757
+02:38:52,549 --> 02:38:53,549
+Hepsini öyle yapmam.
+
+758
+02:38:53,549 --> 02:38:58,549
+Ama çoğunluğunu bu şekilde olacak şekilde planlamaya çalışırım.
+
+759
+02:38:58,549 --> 02:39:00,549
+Teşekkür ederim.
+
+760
+02:39:00,549 --> 02:39:01,549
+Teşekkür ederim.
+
+761
+02:39:01,549 --> 02:39:05,549
+Olur mu yine bilmiyorum ama bu sanırım giriş dersi.
+
+762
+02:39:05,549 --> 02:39:07,549
+Bunun devamı ya da ileri.
+
+763
+02:39:07,549 --> 02:39:10,549
+Evet bu aynen öyle çok doğru.
+
+764
+02:39:10,549 --> 02:39:18,549
+Bu giriş dersi şimdi advanced'i olur olmasına ama bir dördüncü sınıfta olması lazım.
+
+765
+02:39:18,549 --> 02:39:32,549
+İki, yani benim bu konuda belki başka bir hoca da buradan ilerlemek isteyebilir ama şu anki ders yüklerimiz çok yüksek olduğu için ben buna bir türlü fırsat bulamadım advanced'ini açmak için.
+
+766
+02:39:32,549 --> 02:39:40,549
+O yüzden aslında advanced'ine geçiş bu anlamda bir türlü gerçekleşemedi.
+
+767
+02:39:40,549 --> 02:39:44,549
+Olsa güzel olabilir.
+
+768
+02:39:44,549 --> 02:39:52,549
+Ama sayı 85 olacaksa advanced çok sağlıklı olmayacaktır.
+
+769
+02:39:52,549 --> 02:39:56,549
+Buradaki sayıların çok yükselmesi de bir dezavantaj.
+
+770
+02:39:56,549 --> 02:40:07,549
+Gerçi takip eden kişi sayısı o kadar değilmiş gibi gözüküyor ama yine de ödevlerin okunması vesaire noktasında da ciddi zaman alan bir durum olduğunu söylüyoruz.
+
+771
+02:40:07,549 --> 02:40:22,549
+Evet o zaman bu kısmı birazcık böyle kafayı dağıttıktan sonra başka söz almak isteyen olmadığına göre biz kendi tarafımıza geri dönecekken hemen zaten ben öyle olacağını hissediyordum.
+
+772
+02:40:22,549 --> 02:40:23,549
+Güzel oldu.
+
+773
+02:40:23,549 --> 02:40:25,549
+[öğrenci]'a bir söz verelim.
+
+774
+02:40:25,549 --> 02:40:27,549
+Hocam benim aklımda şey var.
+
+775
+02:40:27,549 --> 02:40:30,549
+Genelde hep kod kısmına odaklanıyoruz.
+
+776
+02:40:30,549 --> 02:40:33,549
+Dizen kısmında da mesela ismini bilmediğimiz komponentler oluyor.
+
+777
+02:40:33,549 --> 02:40:38,549
+Hep gördüğümüz ama nasıl internette nasıl aratacağım bilmediğim komponentler oluyor mesela.
+
+778
+02:40:38,549 --> 02:40:42,549
+Var mı bir örnek aklına göre?
+
+779
+02:40:42,549 --> 02:40:46,549
+Mesela GUI'de GUI tarafı için mi söylüyorsun yoksa?
+
+780
+02:40:46,549 --> 02:40:47,549
+Evet hocam evet.
+
+781
+02:40:47,549 --> 02:40:50,549
+Evet şimdi bu da bir handicap.
+
+782
+02:40:50,549 --> 02:40:54,549
+Yani biz GUI ile ilgili çok bir şey yapamıyoruz.
+
+783
+02:40:54,549 --> 02:41:03,549
+Çünkü GUI aslında başlı başına ayrı bir konum ve orada ciddi farklı bilgiler edinebilirsiniz.
+
+784
+02:41:03,549 --> 02:41:10,549
+Böyle bir imkan var ama oraya girdiğimiz zaman işte lokasyon based servisler kalıyor.
+
+785
+02:41:10,549 --> 02:41:12,549
+İşte background task'lar kalıyor.
+
+786
+02:41:12,549 --> 02:41:14,549
+Bir de şunu da söyleyeyim.
+
+787
+02:41:14,549 --> 02:41:22,549
+Ben şimdi genelde hep ara vererek veya size biraz zaman tanıyarak bazı uygulama geliştirmenizi isteyerek yaptım.
+
+788
+02:41:22,549 --> 02:41:24,549
+Ders öyle yürüttüm.
+
+789
+02:41:24,549 --> 02:41:33,549
+Ama 3 saat boyunca sürekli slide üzerinden bir şey anlatıyor olsaydım sanırım o kadar da mutlu olmazdınız.
+
+790
+02:41:33,549 --> 02:41:41,549
+O yüzden hani non-stop anlatıp daha çok konu anlatmak birkaç kez denedim.
+
+791
+02:41:41,549 --> 02:41:48,549
+Ama öğrencilerden de bu sefer yani hocam slide'dan gidince de işte pratik yapamıyoruz.
+
+792
+02:41:48,549 --> 02:41:51,549
+Biraz da uykumuz geliyor.
+
+793
+02:41:51,549 --> 02:41:53,549
+İşte çok dikkatimiz dağılıyor.
+
+794
+02:41:53,549 --> 02:41:55,549
+Not dağılmıyoruz zaten dedikleri için.
+
+795
+02:41:55,549 --> 02:41:59,549
+Ondan da biraz çekiniyorum.
+
+796
+02:41:59,549 --> 02:42:06,549
+Yoksa anlatmasını anlatırım yani hiç durmadan 3 saati ara vererek sadece tamamlayabiliriz.
+
+797
+02:42:06,549 --> 02:42:11,549
+Ama o zaman da bazı konular hiç oturmadan geçmiş olunacak.
+
+798
+02:42:11,549 --> 02:42:24,549
+Fakat kod göstermek yerine hani GUI'lar üzerinden gitmek ya da oradaki komponentleri tartışmak belki hani bir dahaki sene biraz daha onları işin içinde katmak şeklinde değerlendirilebilir.
+
+799
+02:42:24,549 --> 02:42:27,549
+Onun için de teşekkür ediyorum önerine.
+
+800
+02:42:27,549 --> 02:42:31,700
+Evet geçelim mi?
+
+801
+02:42:31,700 --> 02:42:32,700
+Devam edelim mi?
+
+802
+02:42:32,700 --> 02:42:34,700
+Başka konuşacak olan var mı?
+
+803
+02:42:34,700 --> 02:42:38,700
+Yani derdi olan tasası olan [öğrenci].
+
+804
+02:42:38,700 --> 02:42:49,700
+Hocam az önce ben [öğrenci]'in söylediği şeyle alakalı konuşacaktım da ben de bu dersin ileri seviye seçmelisinin olmasını isterim.
+
+805
+02:42:49,700 --> 02:42:54,700
+Yani bence hatta bir bölümde buna çok fazla talep de olur.
+
+806
+02:42:54,700 --> 02:43:00,700
+Yani çünkü mobil dersi direkt herkes tarafından kapışılıyor seçim zamanında.
+
+807
+02:43:00,700 --> 02:43:10,700
+Yani çok fazla ilgilenen insan olduğu için ve güncel bir konuda olduğu için bence ilerisi olursa yani çoğu kişinin faydası ne olur diye düşünüyorum.
+
+808
+02:43:10,700 --> 02:43:14,700
+Belki göndereceğimi ankette bu söylediğiniz soruyu da ekleyeyim.
+
+809
+02:43:14,700 --> 02:43:17,700
+Size şöyle 2-3 dakikalık bir anket göndereyim.
+
+810
+02:43:17,700 --> 02:43:21,700
+Bu sene şunu da görmek istiyorum.
+
+811
+02:43:22,700 --> 02:43:32,700
+Sonradan takip eden arkadaşlar dersi yani şu an burada 35 kişiyiz işte diyelim ki bir 30 kişi de sonradan takip ediyor ya da 35 kişi.
+
+812
+02:43:32,700 --> 02:43:41,700
+Gerçekten dersin verdiği içerikten anlatılanlardan anlatım şeklinden memnun mu değil mi bunu görmek istiyorum.
+
+813
+02:43:41,700 --> 02:43:45,700
+Memnuniyet düzeyi benim için önemli.
+
+814
+02:43:45,700 --> 02:43:51,700
+Bu bana bu dersin ileri düzeyinin açılıp açılmaması gerektiği noktasına bir fikir verecektir.
+
+815
+02:43:51,700 --> 02:43:54,700
+Artı soru olarak da bunu soracağım.
+
+816
+02:43:54,700 --> 02:44:14,700
+Bu dersin ileri düzeyinde özellikle background taskların implementasyonu işte network üzerinden işlerin yapılması özellikle Jason formatında bilginin taşınması karşı tarafıyla iletişim kurulması noktası.
+
+817
+02:44:14,700 --> 02:44:26,700
+Ve Android'in anlatamadığımız daha işte performans otomizasyonu onun dışında bir şey daha vardı aklımda.
+
+818
+02:44:26,700 --> 02:44:30,700
+Onun olacağı bir session düzenlenebilir.
+
+819
+02:44:30,700 --> 02:44:36,700
+Özellikle uygulamanın yüklenme süreciyle ilgili vesaire bunlar üstünde değerlendirilebilir.
+
+820
+02:44:36,700 --> 02:44:40,700
+Bunu bir yapacağım anket neticesinde değerlendiriyor olacağım.
+
+821
+02:44:40,700 --> 02:44:45,700
+Şimdi tekrar konumuza dönecek olursak hep icon badge'lardan bahsettik.
+
+822
+02:44:45,700 --> 02:44:53,700
+Biliyorsunuz bunlar yeni bir notifikasyon geldiğinde işte ilgili ikonların üzerinde oluşuyor.
+
+823
+02:44:53,700 --> 02:45:02,700
+Bu bildiğim kadarıyla önce iOS'un ortaya attığı işte gelen mesaj sayısı okunulmuş mesaj sayısı vesaire gösterdi.
+
+824
+02:45:02,700 --> 02:45:07,700
+Sonra Android'in bir şekilde farklı şekilde bunu implement etmesiyle hayatımıza girdi.
+
+825
+02:45:07,700 --> 02:45:10,700
+Bu da doğrudan dikkat çekmesini sağlıyor.
+
+826
+02:45:10,700 --> 02:45:20,700
+Uygulamalara bakarken yeni bir şey gelmiş gelmemiş noktasında okunmuş bir şey kaldı mı kalmadı mı noktasında bunları üretebiliyorsunuz.
+
+827
+02:45:20,700 --> 02:45:33,700
+Tabii notifikasyon anlatımıya bakacak olursak hani küçük bir icon işte hangi application'a ait olduğu bilgisini veriyorsunuz.
+
+828
+02:45:33,700 --> 02:45:39,700
+Mesajın ne zaman geldiği noktasında bir bilgi ekleyebiliyorsunuz.
+
+829
+02:45:39,700 --> 02:45:49,700
+Bir tane daha icon koyup hani o icon'da ilgili kişinin fotoğrafını ekleme durumuna söz konusu olabilir.
+
+830
+02:45:49,700 --> 02:46:00,700
+Bir başlık ve tekst olmak üzere burada görmüş olduğunuz temel aslında metotlarla bir notifikasyon oluşturabiliyorsunuz.
+
+831
+02:46:01,700 --> 02:46:10,700
+Basit bir şekilde tabii expandable notifikasyonlar da var bu şekilde de tasarlayabiliyorsunuz.
+
+832
+02:46:10,700 --> 02:46:19,700
+Burada gruplama imkanı da veriyor size Android belli bir API'den itibaren.
+
+833
+02:46:19,700 --> 02:46:28,700
+Burada özellikle işte mailde ilgili kişilere ait olan maillere aynı noktada toplanmasını vesaire sağlayabiliyorsunuz.
+
+834
+02:46:28,700 --> 02:46:35,700
+Notifikasyon channel'lar var ve bunların importance düzeyleri var.
+
+835
+02:46:35,700 --> 02:46:52,700
+İşte bunların yönetilerek sizin tarafınızdan özellikle mesaj trafiğinin çok arttığı notifikasyon, push notifikasyonların çok arttığı bir dönemden geçiyoruz.
+
+836
+02:46:52,700 --> 02:46:57,700
+Yani artık SMS üzerinden bilgilendirme yapmıyor birçok şirket.
+
+837
+02:46:57,700 --> 02:47:02,700
+Daha çok kendi uygulamaları üzerinden yapıyor. Buna bankacılık uygulamaları da dahil.
+
+838
+02:47:02,700 --> 02:47:07,700
+Bu noktada Android'de bazı kısıtlar da getirdi biraz sonra ona da bakacağız.
+
+839
+02:47:07,700 --> 02:47:17,700
+Ama bu üreteceğiniz mesajların importance levelını belirleyerek kullanıcıyı çok irite etmemek de gerekiyor.
+
+840
+02:47:17,700 --> 02:47:21,700
+O yüzden de programcının bu anlamda özel bir görevi var.
+
+841
+02:47:21,700 --> 02:47:34,700
+Yani çok kritik mesajları urgent levelda belirlemek, onun dışındakileri daha düşük seviyelerle de ilişkilendirmek daha akıllıca olacaktır.
+
+842
+02:47:34,700 --> 02:47:45,780
+Burada notification settings'leri biliyorsunuz. Kendiniz isterseniz konfigüre edebiliyorsunuz.
+
+843
+02:47:45,780 --> 02:47:53,780
+Bu imkanda size tanımlıyor. Yani sizin belirlediğiniz notification settings'lerin dışında kullanıcı bunda değişiklik yapabiliyor.
+
+844
+02:47:53,780 --> 02:48:08,780
+Burada geriye dönük olarak uyumdan bahsediliyor. Bununla ilgili işte neler eklendi, neyin yerine eklendi bunları görüyorsunuz.
+
+845
+02:48:08,780 --> 02:48:25,780
+Çok hızlı hızlı geçiyorum. Özellikle mesela bir kullanıcının drover'da yer alan mesajı sunuz etme opsiyonu API 26 ile birlikte Android 8 ile birlikte geldi.
+
+846
+02:48:25,780 --> 02:48:36,780
+Çanallara spesifik olarak ayar yapma şansınız var. Farklı channellardan notification üretme şansınız var.
+
+847
+02:48:36,780 --> 02:48:44,780
+Bu da size notification'ınızı gruplandırma imkanı veriyor.
+
+848
+02:48:44,780 --> 02:48:55,780
+Bunların hepsi Android 8 ile birlikte kullanıma açıldı. Bunlar değerli değişiklikler.
+
+849
+02:48:55,780 --> 02:49:12,780
+Mesela bir başka önemli değişiklik bence. 8.1 ile gelen uygulamalardaki sık mesaj trafiğini bir saniye içinde bazen çok mesaj geliyor aynı anda.
+
+850
+02:49:12,780 --> 02:49:21,780
+Arka arkaya mesaj gelince sesler birbirinin üzerine biniyordu. Bununla ilgili düzenlemeler yaptı Android.
+
+851
+02:49:21,780 --> 02:49:29,780
+O yüzden artık arka arkaya gelen mesajlar anlamsız sesler çıkarmıyor. Bu tür özellikler var.
+
+852
+02:49:29,780 --> 02:49:45,420
+Ha şunu da unutmayalım tabi onu atlamış olmayayım. Bir foreground service söz konusuysa mutlaka onun notification drover'da genelde ikonunu görüyorsunuz çalıştığında.
+
+853
+02:49:45,420 --> 02:50:01,420
+Eğer işte bir müzik uygulaması çalışıyorsa, bir download varsa vesaire servislere ait bir kullanıcı tarafından özellikle foreground servislerin fark edilebileceği bir ikon kullanılıyor.
+
+854
+02:50:01,420 --> 02:50:18,700
+Çeşitli notifikasyonlar özelliklerini kullanabilmek adına bu dependency'sin os yani 28'e ait, ne diyelim, package'ın yüklenmesi önemli.
+
+855
+02:50:18,700 --> 02:50:27,700
+Bunu mutlaka yapmamız gerekiyor. Bir notification çok basit bir şekilde üretilebiliyor. Bunun için bir tane notification compat bu yıldır kullanıyorsunuz.
+
+856
+02:50:27,700 --> 02:50:38,700
+İlgili channel ID üzerinden biraz önceki metotları çağırarak icon'ı, title'ını, text'ini, priorities'ini set edebiliyorsunuz.
+
+857
+02:50:38,700 --> 02:50:47,700
+Bunlar çok kolay bir şekilde bir notification üretmek için yeterli.
+
+858
+02:50:47,700 --> 02:50:59,700
+Gelelim bu pending intent mevzusuna ve bunun notification tarafındaki karşılığına.
+
+859
+02:50:59,700 --> 02:51:11,700
+Burada gördüğünüz gibi bir daha sonra çalışması istenecek bir notification pending intent üzerinden konfigüre edilebiliyor.
+
+860
+02:51:11,700 --> 02:51:18,700
+Notification içerisine de set content intent olarak eklenebiliyor.
+
+861
+02:51:18,700 --> 02:51:39,700
+Böylece intent ve notification arasındaki ilişkiyi de bu şekilde oluşturup ilgili aksiyonu, bu notification üretildiğinde kullanıcının bu notification'ı tetikleyerek almasını ve aksiyonun gerçekleşmesini sağlayabiliyorsunuz.
+
+862
+02:51:40,700 --> 02:51:50,219
+Burada notification channel'larının oluşturulması notification manager üzerinden gerçekleşiyor.
+
+863
+02:51:50,219 --> 02:52:06,219
+Bu detayda şu anda bir notification kullanmayabilirsiniz. Belki sadece bu ordan notification üretmek olabilir ama çok fazla bir notification üreten bir ordan onu tasarlıyorsanız bunların channel'ları ve importance level'larını yönetiyor olmanız gerekiyor.
+
+864
+02:52:06,219 --> 02:52:10,219
+Bu tarz seçenekler Android size sunuyor.
+
+865
+02:52:11,219 --> 02:52:18,219
+Burada işte üzerine buton ekleme seçeneği size veriyor.
+
+866
+02:52:18,219 --> 02:52:21,219
+Bu sayede örnek veriyorum.
+
+867
+02:52:21,219 --> 02:52:28,219
+Gelen bir mail yukarıdan bir drawer'dan düştüğünde heads-up notification olarak da olabilir.
+
+868
+02:52:28,219 --> 02:52:36,219
+Orada reply dediğimizde doğrudan ilgili aksiyonu, activity'ye önlendirebiliyorsunuz.
+
+869
+02:52:36,219 --> 02:52:44,219
+Bu tür eventleri bu şekilde yönetme şansına sahipsiniz.
+
+870
+02:52:44,219 --> 02:52:54,790
+Burada direct reply özelliğinden ve progress bar özelliğinden bahsediyoruz ama şu anda saatte 16.53 oldu.
+
+871
+02:52:54,790 --> 02:52:58,790
+Çok da devam etmeyeyim, uzatmayayım.
+
+872
+02:52:59,790 --> 02:53:07,790
+Bu noktada geri kalan kısmını önümüzdeki hafta bitirip doğrudan location based servislere geçeceğim.
+
+873
+02:53:07,790 --> 02:53:11,790
+RenMap üzerinde bir şeyler anlatıyor olacağım.
+
+874
+02:53:11,790 --> 02:53:16,790
+Onunla ilgili de küçük bir uygulama yapma durumumuz olabilir.
+
+875
+02:53:16,790 --> 02:53:31,790
+Belki bu son gördüğünüz özelliklerle ilgili son birkaç haftada dönem projesinin çaresine basit birkaç özellik daha ekleme durumum söz konusu olabilir.
+
+876
+02:53:31,790 --> 02:53:38,790
+Bir değerlendirme yapacağım çünkü sonuçta bunlar da değerli konular size katkı sağlayabilir.
+
+877
+02:53:38,790 --> 02:53:40,790
+Zaten aklımda olan bir şeydir.
+
+878
+02:53:40,790 --> 02:53:44,790
+Ama çok sizi yormayacaktır. Bu konuda endişeniz olmasın.
+
+879
+02:53:45,790 --> 02:53:51,790
+Eğer sorusu ya da paylaşmak istediğin bir yoruma olan yoksa kapatacağım.
+
+880
+02:53:51,790 --> 02:53:55,200
+[öğrenci]'yı kaldırdı.
+
+881
+02:53:55,200 --> 02:54:00,200
+Hocam daha önce sorulduysa özür dilerim. Ben ödevle ilgili ufak bir soru soracaktım.
+
+882
+02:54:00,200 --> 02:54:02,200
+Tabii lütfen.
+
+883
+02:54:02,200 --> 02:54:08,200
+Ödevde bölümler var, beden bölümleri. Bir tane başüstü var, bir de surat var.
+
+884
+02:54:08,200 --> 02:54:12,200
+İkisi arasında nasıl bir fark var? İkisinden de ne istiyorsunuz?
+
+885
+02:54:12,200 --> 02:54:16,200
+Onu surata koyma sebebim. Oraya bir tane ilgili kimse.
+
+886
+02:54:16,200 --> 02:54:18,200
+Yani bir kendiniz normalde ama.
+
+887
+02:54:18,200 --> 02:54:22,200
+Yüzü olursa saçlı bir fotoğraf örnek veriyorum.
+
+888
+02:54:22,200 --> 02:54:24,200
+Vesikabıt bir fotoğraf.
+
+889
+02:54:24,200 --> 02:54:32,200
+Oraya onu koymanız ve böylece üzerindeki şapka, altındaki kıyafetle onu bir baktığınızda size bir şey uyandırması için istedim.
+
+890
+02:54:32,200 --> 02:54:34,200
+Yoksa bir gözlük vesaire değil.
+
+891
+02:54:34,200 --> 02:54:36,200
+Tamamdır Hocam. Çok sağ ol.
+
+892
+02:54:36,200 --> 02:54:37,200
+Güzel.
+
+893
+02:54:37,200 --> 02:54:42,120
+Başka? Eklemek isteyen?
+
+894
+02:54:42,120 --> 02:54:45,120
+Soru sormak isteyen?
+
+895
+02:54:45,120 --> 02:54:48,120
+Peki. Çok teşekkür ediyorum hepinizle.
+
+896
+02:54:48,120 --> 02:54:53,120
+Derse katıldığımız için katkı veren arkadaşlara da ekstrem teşekkür ediyorum.
+
+897
+02:54:53,120 --> 02:54:55,120
+Güzel bir hafta olsun. Sağlıklı.
+
+898
+02:54:55,120 --> 02:54:57,120
+İnşallah görüşmek üzere diyorum.
+
+899
+02:54:57,120 --> 02:54:59,120
+Kendinize çok iyi bakın.

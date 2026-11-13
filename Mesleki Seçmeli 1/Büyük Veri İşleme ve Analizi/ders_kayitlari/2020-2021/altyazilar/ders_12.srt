@@ -1,0 +1,5475 @@
+1
+00:01:08,308 --> 00:01:09,268
+Arkadaşlar merhaba.
+
+2
+00:01:13,012 --> 00:01:15,772
+Merhaba hocam.
+
+3
+00:01:18,891 --> 00:01:32,932
+Evet, şimdi zamandan kazanalım. Kaç kişi proje gönderdi bilmiyorum ama şu anda 36 kişi var. Muhtemelen ikili gruplar da olacak.
+
+4
+00:01:35,123 --> 00:01:48,364
+Çok uzun süreceğini düşünmüyorum. Şimdi şöyle yapacağım. Öncelikle şu anda bulunan herkesi waiting room'a alacağım. Sırasıydan öğrenci listesinden yola çıkaraktan.
+
+5
+00:01:50,164 --> 00:02:04,384
+Bu grupları çağıracağım ve bana demo yapmanızı isteyeceğim. Benim özel bir nedenim var. O yüzden öncelikli olarak yapmak istiyorum diyen var mı?
+
+6
+00:02:05,823 --> 00:02:07,764
+Hocam, biz öyle yapsak güzel olur.
+
+7
+00:02:09,644 --> 00:02:10,723
+İsminiz neydi?
+
+8
+00:02:11,484 --> 00:02:13,183
+[öğrenci].
+
+9
+00:02:27,187 --> 00:02:30,608
+Hocam, bizim grupta başlarda olabilir mi?
+
+10
+00:02:32,427 --> 00:02:33,567
+İsminiz neydi?
+
+11
+00:02:34,267 --> 00:02:36,327
+[öğrenci], [öğrenci].
+
+12
+00:02:37,987 --> 00:02:39,507
+[öğrenci].
+
+13
+00:02:41,507 --> 00:02:42,548
+[öğrenci].
+
+14
+00:02:44,027 --> 00:02:47,347
+Hocam, bizim grupta önce olabilir mi acaba?
+
+15
+00:02:47,987 --> 00:02:48,927
+[öğrenci].
+
+16
+00:02:51,348 --> 00:03:05,568
+Evet, tabii az sonra mazeretlerinizi dinleyeceğim. Yani mazeretiniz olaraktan şey yapın arkadaşlar. Yoksa tekrardan diğer normal sıraya döneceksiniz. Evet, sizi dinliyorum.
+
+17
+00:03:06,348 --> 00:03:08,468
+[öğrenci], [öğrenci].
+
+18
+00:03:21,108 --> 00:03:25,048
+Tamam. Başka var mıdır arkadaşlar?
+
+19
+00:03:28,367 --> 00:03:29,628
+Hocam bir şey sorabilir miyim?
+
+20
+00:03:30,307 --> 00:03:30,867
+Evet, olur.
+
+21
+00:03:31,307 --> 00:03:37,388
+Siz elinizde liste olduğunu söylediniz de buradaki Zoom üzerindeki listeden isim sırasına göre yapsak olur mu? Takip edebilmek adına.
+
+22
+00:03:37,888 --> 00:03:43,343
+Öyle yapacağım. Yani şey, isterseniz siz...
+
+23
+00:03:43,343 --> 00:03:59,683
+Sadece kimin hangi kişiyle beraber olduğunu takip etmem gerekli. Tamam onu ayarlarız. Yani Zoom'daki sıradan devam ediyor olurum. Şimdi ben genel olarak bir açıklama yapayım.
+
+24
+00:04:00,276 --> 00:04:20,716
+Şimdi kiminle toplantı yapıyorsam öncelikle sizin siz olduğunuzdan emin olmak istiyorum. Şu anda Zoom kayıt altına alıyor. Sonradan tekrardan izleyeceğim. Ekran görüntünüzü açmanızı istiyorum. Birinci şeyimiz bu. Ekran görüntünüzün yanı sıra ekran paylaşımı yapacaksınız. Ekran paylaşımı yaptıktan sonra...
+
+25
+00:04:22,228 --> 00:04:29,848
+Bana uzun uzun diye projenizi anlatmadan kontrol edeceğim şeyler şunlar. Lütfen iyi dinleyin.
+
+26
+00:04:30,451 --> 00:04:51,172
+Birincisi, TechNodeSpark cluster'ını bana göstereceksiniz. İki not spark cluster kurulumunu bana göstereceksiniz. Bu ne oldu? İkinci item oldu. Birinci TechNodeSpark ya da Hadoop cluster ya da ikinci iki not spark ya da Hadoop cluster. Hangisini yaptıysanız.
+
+27
+00:04:58,483 --> 00:05:22,423
+Bir dosyayı koymak ve bu dosyayı HDFS'ten okumak. Bunu göstereceksiniz. Bunun kullanıcı arayüzünün uygulamasını göstereceksiniz. Ondan sonra da yine kullanıcı arayüzü üzerinden beş tane seçmiş olduğunuz istatistiksel fonksiyonu tek not ve iki not üzerinde.
+
+28
+00:05:23,444 --> 00:05:27,264
+göstereceksiniz.
+
+29
+00:05:27,795 --> 00:05:48,415
+Bunu da yine kullanıcı arayüzünü kullanarak göstereceksiniz. Arkasından kısaca bunun üzerinde bir performans analizi yaptınız mı? Yaptıysanız bunu göstereceksiniz ve proje raporunuzu göstereceksiniz. Bunu da bu sırada yapacaksınız. Ben sormadan adım adım bu şekilde yapıyorum. Bunların hepsini yapmak zorunda.
+
+30
+00:05:48,415 --> 00:05:55,795
+Yani illa ben bunların hepsini yapmam gerekiyor diye düşünmeyin. Bunlar içerisinden yaptıklarınızı bana gösterin.
+
+31
+00:05:55,795 --> 00:06:19,896
+Zaten puanınızı da buna göre belirlenecek. Sınırlı vaktimiz var. O yüzden süre size geçtiğinde lütfen başka konuları konuşmayalım. Neden yetişmedi ya da işte şu sorunlar çıktı. Ne yaptıysanız onu gösterin. Ondan sonra bir sonraki arkadaş grubuna, öğrenci grubuna geçebileyim. Bunlar açık mı? Söylediklerim açık mı? Sorusu olan var mı?
+
+32
+00:06:21,812 --> 00:06:24,252
+Hocam yine yönlendirecek misiniz sunum sırasında?
+
+33
+00:06:25,331 --> 00:06:32,111
+Yönlendireceğim, tabii ki yönlendireceğim ama şu anda aşağı yukarı sizden ne talep ettiğimi anlamış olmanız lazım.
+
+34
+00:06:32,671 --> 00:06:44,171
+Sizi toplantıya çağırdıktan sonra, zaten sizleri ben çağıracağım, ondan sonra şey yapacağız, hemen sunumunuza başlamanızı istiyorum.
+
+35
+00:06:46,196 --> 00:07:10,736
+Şimdi Zoom Chat'ten arkadaşlar, şimdi önümde üç tane grup var. Zoom Chat'ten ekran görüntüsü derken kameranızı açmanızı istiyorum arkadaşlar. Kameranızı açın, aynı zamanda ekran paylaşımı yapacaksınız. Sizin siz olduğunuzu görmek istiyorum. Karşımda kim olduğunu görmek istiyorum. Tamam mı [öğrenci]?
+
+36
+00:07:13,939 --> 00:07:39,500
+Şimdi Zoom chatten herkesin göreceği şekilde kendiniz ve eğer ki kişi yaptıysanız proje arkadaşınızın ismini yazar mısınız? Şu anda elimde zaten üç tane grup var. İsim, soy isim kendinizin ve işte bir arkadaşınız yazdı. [öğrenci], [öğrenci]. Evet bu şekilde herkes Zoom chatten lütfen yazsın arkadaşlar.
+
+37
+00:07:43,411 --> 00:08:06,312
+Tamam mı? Dersimiz 3 saatlik blok ders. O yüzden ben şu saatten başlayarak 3 saat boyunca zaten bu derste bulunacağınızı öngörerek ilerleyeceğim. O yüzden projelerinizi ben değerlendirmeden lütfen dersten ayrılmayın. Çünkü bugün bütün proje değerlendirmelerini tamamlayacağım.
+
+38
+00:08:06,740 --> 00:08:27,620
+Şimdi ben sırasıyla hepinizi waiting room'a alıyorum. Sadece projesini konuşacağım, arkadaşları şey yapacağım. Eğer olur da tekrar girip tekrar çıkarsanız başkasının toplantısına girmiş olacaksınız. Sizi tekrardan waiting room'a alacağım bu durumda. Sorusu olan yoksa ben başlıyorum.
+
+39
+00:08:31,795 --> 00:08:34,576
+Tek kişilik grupların çete yazması gerekmiyor değil mi hocam?
+
+40
+00:08:35,115 --> 00:08:45,615
+Lütfen siz de yazın. Tek kişilik gruplar da hani şey ben şu anda toplantıda kimler varsa bu toplantıda herkes yazsın.
+
+41
+00:12:47,155 --> 00:12:48,935
+Hocam yanlış grubu aldınız da.
+
+42
+00:12:53,203 --> 00:12:54,223
+Güzel bir [öğrenci].
+
+43
+00:13:16,916 --> 00:13:26,236
+Evet. O arkadaşlarımız sonradan geliyor da ondan dolayı. Onu ben kontrol etmiyorum yani.
+
+44
+00:13:27,016 --> 00:13:29,536
+Hocam ben ilk başta mazeretimizi belirteyim.
+
+45
+00:13:30,115 --> 00:13:31,395
+Evet, ondan başlayın.
+
+46
+00:13:31,796 --> 00:13:36,996
+[kişisel bilgi]
+
+47
+00:13:38,644 --> 00:13:52,983
+Tamam. Normalde aslında aynı şeyi ben de sana söyleyebilirim. Bitirme Hocana söyle. Mehmet Hoca'nın 3 saatlik dersi var. O ders isteyeyim. Başka bir zaman yapabilir miyiz diye Bitirme Hocana söylemeni isteyebilirdim değil mi?
+
+48
+00:13:54,283 --> 00:13:54,563
+Doğru.
+
+49
+00:13:55,223 --> 00:14:00,043
+Bitirme projesinde de bir ders, Büyük Veri İşleme ve Analizde de bir ders. Aynı fikirde miyiz?
+
+50
+00:14:00,983 --> 00:14:01,844
+Tabii, evet. Öyle hocam.
+
+51
+00:14:04,844 --> 00:14:05,324
+Tamam.
+
+52
+00:14:06,004 --> 00:14:09,723
+Evet, ekran paylaşımı yapıyorsun ve başlıyorsun.
+
+53
+00:14:14,451 --> 00:14:25,271
+Hemen projemizi anlatayım. Bizim bir tane masternode, iki tane de slave note, data note olarak slave note üzerine kuruldu. Üç tane virtual beşine.
+
+54
+00:14:26,852 --> 00:14:28,552
+Önce şey göstereyim.
+
+55
+00:14:30,632 --> 00:14:36,951
+Burada slave note'larımız burada mevcut. HDFS'lerimiz üçünün üzerine kuruldu.
+
+56
+00:14:39,443 --> 00:14:45,023
+Ben veriyi daha önceden HDFS sistemi üzerine attım, input verisinin üzerinde çalışacağımız veriyi.
+
+57
+00:14:46,683 --> 00:14:47,663
+Bir de GUIM'i zaten.
+
+58
+00:14:47,864 --> 00:14:50,084
+Şu anda tek not kullanımı mı gösteriyorsun bana?
+
+59
+00:14:51,403 --> 00:14:52,663
+Yok, hayır. Çoklu not.
+
+60
+00:14:53,163 --> 00:14:54,844
+Çoklu not. Şu anda kaç not var?
+
+61
+00:14:55,543 --> 00:14:56,063
+İki not.
+
+62
+00:14:56,443 --> 00:14:58,384
+Bir master, iki tane de slave.
+
+63
+00:14:58,384 --> 00:14:59,443
+Okey.
+
+64
+00:15:03,443 --> 00:15:04,384
+Şimdi...
+
+65
+00:15:06,323 --> 00:15:21,343
+Bir tane örnek bir dosyayı, HDFS'e at kullanıcı arayüzünü kullanaraktan ve HDFS'ten bir tane dosyayı okuyup, şeye at, onu görelim, desktop'a.
+
+66
+00:15:21,343 --> 00:15:28,023
+Hocam, arayüzü bir şekilde yaptık. HDFS'te zaten bulunan dosyalar arasında seçme şekilde yaptık.
+
+67
+00:15:28,483 --> 00:15:28,843
+Tamam.
+
+68
+00:15:30,263 --> 00:15:33,103
+From, local şeklinde yaptık. Biz öyle anlamıştık yani.
+
+69
+00:15:33,443 --> 00:15:33,643
+Evet.
+
+70
+00:15:35,796 --> 00:15:41,536
+HDFS'te olan bir dosyayı şu anda okuyup desktop'a atamıyor musun?
+
+71
+00:15:43,296 --> 00:15:46,816
+Yok, hayır. Doğrudan MapReduce fonksiyonlarını uyguluyoruz.
+
+72
+00:15:47,176 --> 00:15:50,916
+HDFS'te çalışıyor hocam. O dosyada HDFS'te çalışıyor.
+
+73
+00:15:51,124 --> 00:15:54,323
+HDFS'in içindeki birden çok dosya olsaydı…
+
+74
+00:15:54,323 --> 00:16:12,004
+HDFS client'ını yapmamışsınız arkadaşlar. Size söylemek istediğimi anlıyor musunuz? HDFS client'ı da istiyordum sizden. Yani bir tane dosyayı HDFS client'ını kullanaraktan HDFS'e atmak ve HDFS'e okumak da projenin bir parçasıydı. Onu yapmamışsınız. Onu anlıyorum.
+
+75
+00:16:12,436 --> 00:16:16,836
+Doğrudur. Biz Guyu derken böyle bir şey yaptık. Guyu'mizi de ben anlatayım hocam.
+
+76
+00:16:16,855 --> 00:16:21,296
+Tamam, bir saniye, bir saniye. Ne yaptığınızın şeyini alayım da ondan sonra.
+
+77
+00:16:21,975 --> 00:16:23,696
+Guyu dede hocam, şimdi biz normalde...
+
+78
+00:16:23,696 --> 00:16:25,355
+Bir saniye, sesin geliyor mu sana?
+
+79
+00:16:25,995 --> 00:16:26,615
+Geliyor hocam.
+
+80
+00:16:26,816 --> 00:16:28,916
+Tamam. Bir saniye deyince sen bekle lütfen.
+
+81
+00:16:29,255 --> 00:16:30,156
+Tamam hocam, izledelim.
+
+82
+00:16:38,611 --> 00:16:46,692
+Şimdi sizin veri setiniz üzerinde bu beş tane fonksiyonu implement ettiğinizi söylüyorsun.
+
+83
+00:16:47,211 --> 00:16:47,432
+Evet.
+
+84
+00:16:48,591 --> 00:16:48,951
+Okey.
+
+85
+00:16:49,951 --> 00:16:53,672
+Bu butonlarımız aslında terminal kodlarını çalıştırıyor hocam.
+
+86
+00:16:55,192 --> 00:17:01,871
+Yani normal terminalden yazmıyor da butonlara basınca o kodları terminalden çalıştırmış oluyor.
+
+87
+00:17:02,451 --> 00:17:03,412
+Bir saniye.
+
+88
+00:17:35,604 --> 00:17:48,084
+Evet, şimdi bir tane fonksiyonu çalıştır bakalım. Mesela neyi çalıştır? Average'ı çalıştır. Şu anda average'la neyi hesaplamaya çalışacaksınız?
+
+89
+00:17:50,244 --> 00:17:50,584
+Map.
+
+90
+00:17:50,684 --> 00:17:57,663
+Veri setimizde şehirlere göre ortalama içki satış fiyatını bulmuş olacağız.
+
+91
+00:17:58,284 --> 00:17:59,523
+Tamam, görelim.
+
+92
+00:18:01,428 --> 00:18:06,028
+Bu input dosyumuz, output'un oluşacağı dosyayı seçip görüyorum.
+
+93
+00:18:11,188 --> 00:18:13,008
+Bittiği zaman completed diyecek.
+
+94
+00:18:55,251 --> 00:18:56,831
+Yüksel.
+
+95
+00:19:25,332 --> 00:19:35,352
+Hocam, işlemleri de bizim veri üzerinden işlenen işlemleri uygulayıp sonuç elde etmek şeklinde.
+
+96
+00:19:36,211 --> 00:19:37,092
+Olacağın sonuç.
+
+97
+00:19:38,012 --> 00:19:39,951
+Şu anda sonucu gördük mü?
+
+98
+00:19:41,711 --> 00:19:42,572
+Sayfayı yenileyecek.
+
+99
+00:19:43,692 --> 00:19:48,271
+Output Average'in içinde burada sonucu görebiliyoruz.
+
+100
+00:19:48,652 --> 00:19:48,912
+Tamam.
+
+101
+00:19:49,032 --> 00:19:49,731
+Şeklilere göre.
+
+102
+00:19:50,192 --> 00:19:52,451
+Tamam, görelim nerede sonuç.
+
+103
+00:19:54,132 --> 00:19:55,432
+Pardon hocam, ekran.
+
+104
+00:19:56,932 --> 00:19:57,412
+Okey.
+
+105
+00:20:00,948 --> 00:20:17,388
+Tamam. Şimdi burada şeyi seçemiyoruz değil mi? Datanın hangi aralığı üzerinde MapReduce uygulanacağını belirlememişsiniz. Yani şu tarihler arasında öyle bir şeyiniz yok.
+
+106
+00:20:17,668 --> 00:20:18,307
+Yok hocam.
+
+107
+00:20:18,307 --> 00:20:19,348
+Yok hayır.
+
+108
+00:20:20,868 --> 00:20:26,088
+Tamam. Peki herhangi bir performans analizi yaptınız mı?
+
+109
+00:20:26,675 --> 00:20:29,015
+Time yapmıştık hocam, raporumuzda var.
+
+110
+00:20:30,635 --> 00:20:31,755
+Açın, gösterin.
+
+111
+00:20:32,635 --> 00:20:33,675
+Şu an rapor...
+
+112
+00:20:35,195 --> 00:20:37,295
+[öğrenci]'de vardı da.
+
+113
+00:20:37,935 --> 00:20:38,635
+Ben mi açayım?
+
+114
+00:20:39,715 --> 00:20:42,576
+Ben buraya koymamıştım sanırım. Hani raporu göstereceğimizi düşünemedim.
+
+115
+00:20:45,076 --> 00:20:47,035
+Ben durdurabilirim ekran paylaşımını.
+
+116
+00:20:51,220 --> 00:20:52,099
+Durdurayım mı hocam?
+
+117
+00:20:53,280 --> 00:21:00,680
+Bir tane daha fonksiyon çalıştıralım bakalım. Ya da onun yerine bana kodlarını aç, kodlarını göster, kodlarını da şeyi göster.
+
+118
+00:21:01,180 --> 00:21:04,780
+Hocam, kodlar da ilkerin bilgisayarında. Bende jar dosyası var.
+
+119
+00:21:05,720 --> 00:21:07,180
+Ben açayım kodlarını.
+
+120
+00:21:07,519 --> 00:21:08,119
+Durdurayım o zaman.
+
+121
+00:21:08,619 --> 00:21:09,420
+Ben de hazır hocam.
+
+122
+00:21:10,740 --> 00:21:12,180
+Sen durdur üstüne, ben açayım.
+
+123
+00:21:17,556 --> 00:21:26,536
+Şu an hocam buradaki main driver'ın oluştuğu, Hadoop job'un oluştuğu klasımız main class diye geçiyor.
+
+124
+00:21:26,536 --> 00:21:27,336
+Okey.
+
+125
+00:21:28,296 --> 00:21:32,256
+Bu mapper klasımız, seçtiğimiz itemler CSV dosyasından okuma.
+
+126
+00:21:33,695 --> 00:21:41,096
+Burada range reducer var hocam. Min ve max değerini bulup arasındaki farkı alıyor maplerdeki.
+
+127
+00:21:42,596 --> 00:21:43,307
+Bu...
+
+128
+00:21:43,539 --> 00:21:47,019
+Hızlı geçiyorum da hocam bekleyeyim mi? İsterseniz devam edeyim mi?
+
+129
+00:21:47,579 --> 00:21:48,159
+Devam et.
+
+130
+00:21:48,159 --> 00:21:59,739
+Bu mod reducer, metlerdeki value değerlerinin en çok tekrar edildiği sayılar, value'lar, keylerdeki.
+
+131
+00:22:01,619 --> 00:22:08,579
+Bu median, o da aynı şekilde aynı key değerlerinde olan value'ların.
+
+132
+00:22:08,991 --> 00:22:27,931
+Bir diziye sıralıyoruz. Oradaki ortadaki değeri alıyor. Eğer çift ise ortalamasını alıyor şeyin ortadaki iki değeri. Tek ise onu alıyor. Bir de eviricimiz var. Hepsini topluyor. Count'a bölüyor. Bunlar bizim reducer.
+
+133
+00:22:27,931 --> 00:22:34,991
+Okey. Şimdi şeyi de göster bana. Proje raporunda performans analizi yaptığınız yeri de göster.
+
+134
+00:22:35,731 --> 00:22:38,552
+Proje raporunda time olarak yaptık hocam.
+
+135
+00:22:41,371 --> 00:22:44,192
+Tek not, iki not karşılaştırması yapmadınız mı?
+
+136
+00:22:44,451 --> 00:22:56,092
+Yok hocam yapmadık. Sadece redüstri fonksiyonlarımızı karşılaştırma yaptık. Bunlar çift notla çalışma şey. İki notla çalışma hızları.
+
+137
+00:22:59,059 --> 00:23:05,019
+Project Proposal'da belirttiğiniz dataset'i üzerinde mi çalıştınız yoksa değiştirdiniz mi?
+
+138
+00:23:05,440 --> 00:23:07,720
+Evet, aynı dataset'i üzerine çalıştık hocam.
+
+139
+00:23:10,480 --> 00:23:13,099
+Projeyi zipleyip gönderdiniz.
+
+140
+00:23:13,579 --> 00:23:14,420
+Evet, evet hocam.
+
+141
+00:23:20,756 --> 00:23:22,776
+Tamam, bana söyleyeceğiniz bir şey var mı arkadaşlar?
+
+142
+00:23:23,635 --> 00:23:29,256
+Ya sorumluluk var da hocam. Ama şey, projeyle ilgili değil genel olarak.
+
+143
+00:23:29,816 --> 00:23:37,175
+Tamam, o zaman onları başka zaman konuşalım. Çünkü şu anda kaç? 50 kişi bekliyor. Beni çıkartırsan 49. Tamam.
+
+144
+00:23:37,496 --> 00:23:39,096
+Biz çıkabilir miyiz hocam peki?
+
+145
+00:23:39,876 --> 00:23:42,516
+Çıkın zaten, daha ne bekliyorsunuz artık. Hadi başarılar.
+
+146
+00:23:42,816 --> 00:23:43,715
+Teşekkür ederiz hocam.
+
+147
+00:23:43,936 --> 00:23:44,436
+İyi günler.
+
+148
+00:23:45,416 --> 00:23:45,936
+Vay les.
+
+149
+00:23:46,576 --> 00:23:47,235
+Sağ olun size.
+
+150
+00:24:12,180 --> 00:24:13,140
+Merhabalar hocam.
+
+151
+00:24:13,860 --> 00:24:14,920
+Merhaba arkadaşlar.
+
+152
+00:24:16,059 --> 00:24:16,740
+Merhabalar hocam.
+
+153
+00:24:17,519 --> 00:24:21,619
+Evet, sizin mazeretiniz neydi arkadaşlar? Niye sizinle önce buluşuyoruz?
+
+154
+00:24:22,519 --> 00:24:32,240
+Hocam, siz şey demiştiniz, cumartesi gününe kalabilir diğer yetişmezse diye. Ben o yüzden söylemiştim aslında. Benim mazeretim oydu.
+
+155
+00:24:32,723 --> 00:24:40,463
+Şimdi diğer arkadaşlarınız da aynı şekilde bekliyorlar yani. Bir mazeretiniz yokmuş arkadaşlar.
+
+156
+00:24:40,463 --> 00:24:44,083
+Yok, benim mazeretim vardı. Cumartesi günü var hocam yani. Cumartesi günü şey.
+
+157
+00:24:44,103 --> 00:24:46,784
+Biz cumartesine sarfçak diye düşündük hocam ama sonradan siz belirteyince.
+
+158
+00:24:47,663 --> 00:24:48,663
+Kursun var benim de.
+
+159
+00:24:49,523 --> 00:24:51,703
+Kusura bakmayın yani yanlış anlaşılmalı bizim adımıza.
+
+160
+00:24:52,443 --> 00:24:54,063
+[öğrenci] sen de ekran görüntünü açlıyorsun.
+
+161
+00:24:54,523 --> 00:24:57,304
+Hocam onu açamıyorum. Masaüstü bilgisayardan bağlandığım için.
+
+162
+00:24:57,907 --> 00:25:05,667
+Biraz erken haberim olsa belki bir kamera falan alabilirdim. Bir arkadaşımla falan ödünç alabilirdim ama şu an yapacak bir şeyim yok maalesef.
+
+163
+00:25:05,667 --> 00:25:10,667
+Oyunun [öğrenci] olduğunu, [öğrenci] sen [öğrenci]'sın diyorsa güveniyoruz.
+
+164
+00:25:11,867 --> 00:25:13,688
+Ben kefilim hocam [öğrenci]'ı.
+
+165
+00:25:14,107 --> 00:25:16,607
+Şimdi bir ekran görüntüsü paylaşıyorsunuz arkadaşlar.
+
+166
+00:25:18,567 --> 00:25:23,807
+Hocam isterseniz şimdi bu MapReduce fonksiyonlarını yazdığımız kodu gösterelim.
+
+167
+00:25:25,395 --> 00:25:27,436
+Yoksa arayüz mü gösterin, nasıl istersiniz?
+
+168
+00:25:27,496 --> 00:25:40,316
+Öncelikle bir demosunu yapalım. Bana kurulumu gösterin. Tek not, iki not kurulum yaptığınızı bir ekran görüntüsü üzerinden gösterin.
+
+169
+00:25:40,576 --> 00:25:41,735
+Şu an geldim hocam ekranım.
+
+170
+00:25:42,016 --> 00:25:42,275
+Evet.
+
+171
+00:25:43,195 --> 00:25:46,395
+Biz iki not kurulumu yaptık hocam. Şu şekilde...
+
+172
+00:25:46,528 --> 00:25:53,827
+3 adet sanal makinemiz mevcut. Bir tanesi master, iki tanesi slave olmak üzere. Kendileri de burada açık zaten. Şurada girişim yapıyorum.
+
+173
+00:25:58,387 --> 00:26:11,248
+Ben daha öncesinde çok uzun süren bir işlem değil aslında ama start ettim Hadoop şeyine, MultiCluster server'ına. Hatta burada ufak bir deneme de yaptık. İsterseniz şeyi göstereyim direkt.
+
+174
+00:26:13,248 --> 00:26:14,707
+İşte burada iki not var.
+
+175
+00:26:16,147 --> 00:26:27,167
+Burada kendi bilgisayarımdan da bağlantı kurabiliyorum hocam buraya. Bu şu an sanal makine değil, kendi bilgisayarım. Burada iki nodu görebiliyoruz işte bu şekilde. İkisinin de yükü miktarda 2.27 GB şeklinde.
+
+176
+00:26:28,988 --> 00:26:35,907
+Onun haricinde içindeki dosyaları buradan görebiliyoruz. Buraya dosya atacağız zaten. İsterseniz buraya dosya atalım. Arayüzden göstereyim.
+
+177
+00:26:35,907 --> 00:26:42,768
+Kullanıcı arayüzünden bir HDFS client'ınızı göreyim. Oraya bir tane dosya atın.
+
+178
+00:26:43,635 --> 00:26:49,035
+Sonra oradan da dosyayı okuyalım. HDFS Client'ın demosunu yapıyorsunuz şu anda. Evet, görelim.
+
+179
+00:26:49,135 --> 00:26:59,275
+Evet, bu arayüz. Önce bağlanıyoruz hocam. Burada şey daha önceden girmiş şeyleri kaydediyor. Okey dediği zaman bağlanacak. Verilen IP işte kullanacağı da şifreyi.
+
+180
+00:27:00,495 --> 00:27:07,575
+Bağlandıktan sonra oradaki işte datasetleri işte HDFS'teki dosyaları listeliyor. Şurada işte. Bunu da göstereyim isterseniz.
+
+181
+00:27:07,575 --> 00:27:10,935
+Bu seçenek var. Buradaki dosyalar, şuradaki dosyalar aslında.
+
+182
+00:27:11,635 --> 00:27:13,775
+Hadoop user'ın içindeki bu dosyaları getiriyor.
+
+183
+00:27:14,415 --> 00:27:22,795
+Buradan Veri Set'i seçiyoruz. Yani HDFS'de şey olan. Eğer işte yüklü değilse yüklemek istiyorsak şurada sağda buton var. Oradan dosya seçiyoruz.
+
+184
+00:27:22,795 --> 00:27:25,155
+Bir tane yükleyelim mesela. Orada olmayan bir tane basit bir dosya.
+
+185
+00:27:25,155 --> 00:27:27,815
+Tabii şurada bir demo TXT'miz vardı. Bunu yükleyelim hocam.
+
+186
+00:27:29,715 --> 00:27:32,076
+Uzun sürüyor çünkü büyük olduğu için öyle küçük bir şey.
+
+187
+00:27:32,076 --> 00:27:35,235
+Evet, biz bu şekilde zamandan tasarruf edemiz dedik ama.
+
+188
+00:27:36,076 --> 00:27:38,135
+Tamam. Küçük bir dosya yükleyin.
+
+189
+00:27:39,571 --> 00:27:42,811
+Buraya da geldi hocam, demo texemiz. Buraya da yenilince gelecektir.
+
+190
+00:27:45,711 --> 00:27:48,311
+Okuma, yazma yapabiliyorsunuz. Bunu anladım. Tamam.
+
+191
+00:27:48,311 --> 00:28:00,451
+Şimdi bana bu yüklemiş olduğunuz dataset üzerinde bu beş tane farklı MapReduce'laştırılmış fonksiyonu gösterin.
+
+192
+00:28:01,236 --> 00:28:05,436
+Hocam bunların kodunu mu göstereyim yoksa çalıştıralım mı? Şimdi çalıştığınızda biraz uzun sürüyor.
+
+193
+00:28:05,436 --> 00:28:07,776
+Önce çalıştığını şey yapın.
+
+194
+00:28:09,376 --> 00:28:14,236
+Biraz uzun sürüyor ama onu belirtmek isterim. Hani 5 dakikaya kadar varabiliyor en kısa süren.
+
+195
+00:28:14,636 --> 00:28:21,996
+Bir kullanıcı arayüzünüzü göreyim öncelikle. Ondan sonra da bana çalıştırılmış versiyonu gösterirsiniz.
+
+196
+00:28:22,376 --> 00:28:25,316
+Sonuçta bir output oluşturuyor değil mi? Onu da bir araştırdınız.
+
+197
+00:28:25,656 --> 00:28:25,896
+Aynen.
+
+198
+00:28:27,380 --> 00:28:34,980
+Burada output directorisini seçtim. Hadoop belirttim az önce. En kısa süren count olduğu için onu seçtim.
+
+199
+00:28:35,420 --> 00:28:39,060
+Okey. Start'a basınca çalıştırıyorsun.
+
+200
+00:28:39,220 --> 00:28:41,340
+Tabii şimdi loglar düşmeye başlayacak hocam yavaş yavaş.
+
+201
+00:28:43,980 --> 00:28:46,300
+Denin yaptığın için herhalde böyle şey oluyor.
+
+202
+00:28:48,340 --> 00:28:54,280
+Zaten ekran kartta da yok ki şu an bilgisayarda. Bu şekilde düşüyor hocam loglar. MapReduce başladı.
+
+203
+00:28:54,688 --> 00:29:05,008
+Hocam, S-Sash ile bağlanıyoruz aslında. Python'da yazdık bu şeyi uygulamayı. Oradan dönen şeyleri tek tek bu şeye basıyor ekranda.
+
+204
+00:29:05,008 --> 00:29:10,528
+Tamam. Bunu durdurabilirsin. Çalışmış bir tanesinin sonucunu görebilir miyiz?
+
+205
+00:29:10,868 --> 00:29:16,068
+Tamam. Hangisini görmek istersiniz hocam? Burada biz bütün hepsinin için outputları oluştururuz.
+
+206
+00:29:16,068 --> 00:29:17,008
+Bir emreği göstermesiler.
+
+207
+00:29:17,428 --> 00:29:17,748
+Tamam.
+
+208
+00:29:21,299 --> 00:29:37,819
+Yıllara göre bu biz şey veri setini kullanıyoruz hocam. İşte bu satılan propertylerin, evlerin fiyatları vesaire bilgileri var. Burada da işte yıllara göre satılma, ortalama satış tutarı var aslında. İşte yıllara göre artıyor mesela burada.
+
+209
+00:29:39,459 --> 00:29:43,899
+Tamam. Bir başkasının şeyini göster, sonucunu göster.
+
+210
+00:29:45,579 --> 00:29:47,079
+Correlation gösterin mesela hocam.
+
+211
+00:29:47,079 --> 00:29:47,639
+Tamam, okey.
+
+212
+00:29:48,756 --> 00:29:52,736
+Evlerin yaşıyla fiyatlar arasındaki correlation.
+
+213
+00:29:54,176 --> 00:29:56,376
+Evlerin yaşı değil sanki bu şeydi ya.
+
+214
+00:29:58,456 --> 00:30:00,536
+Evlerin yaşı değildi, evet onu değiştirmiştik aslında.
+
+215
+00:30:01,736 --> 00:30:02,596
+Şehrine göre.
+
+216
+00:30:02,976 --> 00:30:04,936
+Onu raporda belirseydik aslında [öğrenci].
+
+217
+00:30:06,236 --> 00:30:10,576
+Correlation olduğunu emin misin sanki şey olmuş. Başkasının çıktısı bu.
+
+218
+00:30:10,976 --> 00:30:14,476
+Correlation ya. Eksi 0.65 işte, eksi 0.64.
+
+219
+00:30:16,180 --> 00:30:33,300
+Tamam arkadaşlar, ben anladım. Proje raporunu şey yaptınız mı? Bunların çalışması tek not, iki not performans analizi yaptınız mı? Tek not olduğunda şu kadar zamanda çalışıyor, iki not olduğunda bu kadar zamanda bir performans analiziniz var mı?
+
+220
+00:30:33,300 --> 00:30:44,180
+Hocam şey yaptık aslında, onların karşılaştırmasını yapmadık. Biz multi not kurmuştuk sadece. Şey yaptık, birbirlerinin arasındaki yani average'ın kaç saniye süreçtiği?
+
+221
+00:30:44,180 --> 00:30:47,900
+İşte correlation kaç saniye sürüyor? Onların karşılaştırmasını yaptık aslında.
+
+222
+00:30:50,060 --> 00:30:57,440
+Aslında single node'u da kurduk hocam. [öğrenci]'ın bilgisayarında da single node var ama böyle bir performans karşılaştırması yapmak aklımıza gelmedi yani.
+
+223
+00:30:59,280 --> 00:31:01,360
+Tamam, projenizi gönderdiniz.
+
+224
+00:31:01,840 --> 00:31:02,080
+Evet.
+
+225
+00:31:04,200 --> 00:31:09,060
+Dersin e-mail adresine. Bir de proje raporunuzu açın arkadaşlar. Bir onu yüreyim.
+
+226
+00:31:09,440 --> 00:31:12,480
+Onu [öğrenci] açsın isterseniz hocam. Kodu da görmek istersiniz belki.
+
+227
+00:31:12,480 --> 00:31:15,880
+Evet, evet. Kod da hızlı bir göstermeni isteyeceğim.
+
+228
+00:31:18,820 --> 00:31:20,220
+Ekranım görülüyor herhalde.
+
+229
+00:31:21,060 --> 00:31:21,940
+Evet, şu anda geldi.
+
+230
+00:31:22,620 --> 00:31:26,440
+Hocam, her bir için ayrı proje yaptık. Maven projesi.
+
+231
+00:31:27,840 --> 00:31:29,080
+Mesela Everge'i açayım.
+
+232
+00:31:32,852 --> 00:31:48,112
+Yaşa çıkmış. İşte bu Average Class'ında işte Mapper'ı, Mapper'ı, Reducer'ı vesaire yazdık. Mesela Mapper'da yaptığımız şey şu. Yılı veriyoruz key olarak. Veri olarak da price'ını veriyoruz. Burada yaptığımız şey bu.
+
+233
+00:31:48,592 --> 00:31:53,372
+CSP dosyası kullandığımız için virgüle göre ayırıyoruz önce değerleri. Sonra şeyi alıyoruz.
+
+234
+00:31:55,155 --> 00:32:04,976
+Yılı çekiyoruz hangi indisteyse. İşte price'ini seçiyoruz, çekiyoruz. Reducer'da ise yıl geliyor bize bir de iterable veriyor.
+
+235
+00:32:06,415 --> 00:32:20,655
+Terate edebildiğimiz obje veriyor. Buradan değeri alıp topluyoruz. Size olduğunu da kaç tane size olduğunu da alıyoruz. Ortalamasını buluyoruz her bir yıl için. Sonra yazıyoruz Reducer'da. Average bu şekilde çalışıyor.
+
+236
+00:32:20,655 --> 00:32:22,736
+Tamamdır arkadaşlar ben ikna oldum.
+
+237
+00:32:23,251 --> 00:32:27,152
+Bir de Project Report'un hızlı bakalım.
+
+238
+00:32:28,471 --> 00:32:29,291
+Çok büyük oldu.
+
+239
+00:32:32,951 --> 00:32:37,511
+Raporumuz öyle. Burada kısa bir bilgi veriyoruz aslında. Veri setiyle ilgili.
+
+240
+00:32:38,912 --> 00:32:43,031
+Nasıl implement edildiğimizden bahsediyoruz. Python kullandık hocam ara yüzde.
+
+241
+00:32:43,832 --> 00:32:48,912
+Map fonksiyonları da Java'da yazdık.
+
+242
+00:32:49,912 --> 00:32:50,152
+Tamam.
+
+243
+00:32:50,996 --> 00:32:54,856
+Project Proposal'ınızda aynı veri setini kullandınız değil mi?
+
+244
+00:32:55,716 --> 00:33:00,796
+Evet hocam, şu linkteki UKIS Awesome Price Spade.
+
+245
+00:33:02,856 --> 00:33:04,996
+Tamamdır arkadaşlar, teşekkür ederim.
+
+246
+00:33:05,796 --> 00:33:07,216
+Biz teşekkür ederiz hocam.
+
+247
+00:33:07,916 --> 00:33:10,496
+Kusura bakmayın tekrar alamayacağım şey için, yanlış anlaşma için.
+
+248
+00:33:10,636 --> 00:33:11,396
+Yok, kusurum değil.
+
+249
+00:33:12,256 --> 00:33:12,976
+Kolay gelsin.
+
+250
+00:33:13,196 --> 00:33:13,656
+Başarılar.
+
+251
+00:33:17,268 --> 00:33:20,407
+Siz ayrılabilirsiniz. Ben de diğer arkadaşınıza geçeyim.
+
+252
+00:33:20,508 --> 00:33:22,028
+Hocam, derste beklememize gerek var mı?
+
+253
+00:33:22,687 --> 00:33:26,528
+Yok, çıkabilirsiniz zaten. Anlamla değil. Bugün sadece projeleri değerlendiriyorum.
+
+254
+00:33:26,587 --> 00:33:27,487
+Tamamdır. Teşekkür ederim.
+
+255
+00:33:50,099 --> 00:33:54,359
+[öğrenci] seni şeye koyacağım. [öğrenci] sesim geliyor mu sana?
+
+256
+00:33:54,839 --> 00:33:55,519
+Evet hocam geliyor.
+
+257
+00:33:56,159 --> 00:33:58,199
+[öğrenci] waiting room'da bekliyorsun.
+
+258
+00:34:01,395 --> 00:34:04,915
+Ne zamanki senin sıran geldiğinde çağırcı olacağız.
+
+259
+00:34:04,935 --> 00:34:11,215
+Hocam bir şey soracağım. Biz projeyi bitemedik de yarım kaldı. Hadoop kurumunda bir sorun yaşadık. O ne kadar bir sunu hazırladık.
+
+260
+00:34:11,335 --> 00:34:14,895
+Ne gösterirsen [öğrenci] onu değerlendireceğim.
+
+261
+00:34:14,975 --> 00:34:18,675
+Tamamdır hocam. Bir de grup arkadaşım var. O da gelecek. [öğrenci].
+
+262
+00:34:18,755 --> 00:34:24,695
+Onu da artık WhatsApp'tan yaz arkadaşına. Hoca sen girince waiting room'u alacak seni. Sıranız gelince çağır. Tamam mı?
+
+263
+00:34:24,695 --> 00:34:25,996
+Şimdi waiting room'u alıyorum.
+
+264
+00:34:30,099 --> 00:34:41,819
+Evet, [öğrenci], [öğrenci], [öğrenci], şey yapın arkadaşlar, kameralarınızı açın. Ondan sonra bir de ekran paylaşımı yapın.
+
+265
+00:34:43,340 --> 00:34:49,359
+[öğrenci] seni waiting room'a alıyorum. Ne zamanki sıranız geldi o zaman seninle konuşuyor olacağım.
+
+266
+00:34:53,780 --> 00:34:54,780
+Başlayalım mı hocam?
+
+267
+00:34:55,400 --> 00:34:59,579
+Öncelikle niye sizle önce görüşüyorum? Mazeretiniz nedir?
+
+268
+00:35:00,240 --> 00:35:01,380
+[öğrenci]'ın mazereti vardı.
+
+269
+00:35:03,619 --> 00:35:04,860
+[öğrenci] sesini...
+
+270
+00:35:04,860 --> 00:35:05,560
+Bırak telefon kapalı.
+
+271
+00:35:07,380 --> 00:35:11,500
+[kişisel bilgi]
+
+272
+00:35:12,240 --> 00:35:13,420
+Peki, ne dedin?
+
+273
+00:35:13,972 --> 00:35:18,892
+[kişisel bilgi]
+
+274
+00:35:18,952 --> 00:35:24,712
+Tamam, tamam. Anladım, tamam. Sorun yok. [öğrenci], [öğrenci], [öğrenci].
+
+275
+00:35:27,507 --> 00:35:37,107
+Evet arkadaşlar, şimdi sıradan başlayalım. Öncelikle bir not, iki not kurulumunuzu görelim. Şimdi şu anda bana gösterdiğiniz multi-not kurulumu.
+
+276
+00:35:37,268 --> 00:35:43,367
+Evet hocam, iki not kurduk biz. Şu an master nottayız. Bunlar slave'ler. Şurada zaten.
+
+277
+00:35:43,967 --> 00:35:53,607
+Yatışıl box'ta kurduk biz Ubuntu üzerinde. Hadoop master'da da zaten şu an activities'te. Slave 1, Slave 2. Yani iki notlu bir Hadoop sistemi kurduk aslında.
+
+278
+00:35:53,607 --> 00:35:55,447
+Kurduğunuz. Altta da HDFS.
+
+279
+00:35:55,507 --> 00:36:00,847
+Evet, HDFS, Hadoop üzerinden yapıyoruz. Burada da görünüyor yani, aktif nokta.
+
+280
+00:36:00,847 --> 00:36:21,207
+Şimdi bana HDFS'e bir tane dosya atın ve attığınız dosya, mesela basit bir tane dosyayı desktop'tan alıp HDFS'e atın. Açtığınızı göreyim. Ondan sonra da tekrar oradan okuyun. Şeye atalım.
+
+281
+00:36:21,599 --> 00:36:24,319
+Bunu kullanıcı arayüzünden mi yapacaksınız yoksa commentline'dan mı?
+
+282
+00:36:24,319 --> 00:36:30,159
+Biz arayüz yapmadık. O kısım eksik kaldı. Terminal üzerinden yapıyoruz işlemleri.
+
+283
+00:36:31,840 --> 00:36:32,099
+Okey.
+
+284
+00:36:34,220 --> 00:36:37,599
+Şu şekilde önce klasör oluşturduk.
+
+285
+00:36:38,599 --> 00:36:39,500
+Input için.
+
+286
+00:36:45,523 --> 00:36:54,923
+Ardından dosyayı yükleyeceğiz. Dosyamızı da zaten bilgisayardaki petten alıp burada kurmuş olduğumuz input atacağız.
+
+287
+00:36:55,264 --> 00:37:01,163
+Tamam, mevcuttaki HDFS'teki dosyaları bana gösterin ki yeni attığınız dosyanın orada olmadığını göreyim.
+
+288
+00:37:01,783 --> 00:37:03,463
+Tamam, şuradan.
+
+289
+00:37:15,764 --> 00:37:16,403
+Rating.
+
+290
+00:37:17,824 --> 00:37:19,724
+Input 3. Buraya atmıştık zaten.
+
+291
+00:37:19,864 --> 00:37:21,784
+Sil onu şimdi. Input 3'i oradan sil.
+
+292
+00:37:22,963 --> 00:37:25,204
+Hocam bu silme işlemi buradan kabul etmiyor.
+
+293
+00:37:25,443 --> 00:37:30,163
+O zaman input 4'ü at. Yani şu an input 4'ü başka bir tane dosya at.
+
+294
+00:37:30,903 --> 00:37:31,163
+Tamam.
+
+295
+00:37:45,619 --> 00:37:46,480
+Şu an boys da até.
+
+296
+00:37:47,260 --> 00:37:47,559
+Okay.
+
+297
+00:38:29,235 --> 00:38:31,135
+Şu an geldi ratings.
+
+298
+00:38:31,835 --> 00:38:32,935
+JSR dosyası.
+
+299
+00:38:33,795 --> 00:38:34,095
+Okey.
+
+300
+00:38:35,135 --> 00:38:37,215
+Şu an ilk satırlarını gösterecek.
+
+301
+00:38:44,307 --> 00:39:05,467
+Şimdi bir de şeyden bir tane dosyayı okuyup file sistemi at. Şu anda yazmayı gösterdin bana. Rating dosyasına oraya attın. File sistemden bir tane dosyayı okuyup mesela HDFS üzerinde bir tane dosyayı oku.
+
+302
+00:39:06,036 --> 00:39:08,155
+okuduğunu şu anda
+
+303
+00:39:08,155 --> 00:39:10,496
+şeye at. Home'un altında
+
+304
+00:39:10,496 --> 00:39:12,275
+Sarmet var. Sarmet
+
+305
+00:39:12,275 --> 00:39:12,775
+at mesela.
+
+306
+00:39:14,235 --> 00:39:15,715
+Hocam o kısım yok.
+
+307
+00:39:15,715 --> 00:39:17,516
+Yani lokale diyorsunuz.
+
+308
+00:39:17,715 --> 00:39:19,635
+Biz sadece HTF'si atıyoruz.
+
+309
+00:39:20,316 --> 00:39:21,016
+Yani lokale atmıyoruz.
+
+310
+00:39:21,016 --> 00:39:23,536
+Okuma yok yani. Read var.
+
+311
+00:39:24,096 --> 00:39:25,496
+Evet. Read yok.
+
+312
+00:39:25,936 --> 00:39:26,135
+Evet.
+
+313
+00:39:26,612 --> 00:39:34,532
+Read yok. Şimdi bana bu veri setiniz üzerinde kullandığınız veri set neydi?
+
+314
+00:39:35,391 --> 00:39:47,112
+Biz değiştirmiştik hocam. Hatta mail atmıştık size. Başta bitcoinlerle alakalıydı. Sonradan movielerin puanlamasıyla alakalı bir veri setini aldık.
+
+315
+00:39:48,692 --> 00:39:53,851
+Kullanıcılar var. Movie ID'si var. Bir de o kullanıcının verdiği puan var.
+
+316
+00:39:54,175 --> 00:39:57,355
+Böyle bir veri setini kullandık.
+
+317
+00:39:58,615 --> 00:39:59,375
+Onun üzerinden yapmış.
+
+318
+00:39:59,576 --> 00:40:03,555
+Beş tane istisik fonksiyonunu bu bahsettiğiniz veri seti üzerinde gösterin bakalım.
+
+319
+00:40:04,036 --> 00:40:04,315
+Tamam.
+
+320
+00:40:05,675 --> 00:40:07,375
+Kullanıcı arayüzünüz var mı bunun için?
+
+321
+00:40:07,855 --> 00:40:09,355
+Yok hocam, hepsi terminalden.
+
+322
+00:40:13,460 --> 00:40:28,400
+Şu şekilde. Mesela Average, şu an göstereyim. Average 3 klasörü yok, onu oluşturacağım. Yani output'u ona atacak. Input zaten input 3, input 4'tü.
+
+323
+00:40:30,963 --> 00:40:42,823
+Bizim klasımızda ismi Movie Average Rating olduğu için onu çalıştıracağız. Jar dosyası oluşturmuştuk. İsterseniz bir daha oluşturabiliriz ama hazır vardı.
+
+324
+00:40:46,323 --> 00:40:54,563
+Bana Average'in çalıştırılmış, o Jar file, yaptığınız Jar file'i kullanaraktan bir çalıştırın bakalım.
+
+325
+00:40:54,563 --> 00:40:55,623
+Şu an çalışıyor.
+
+326
+00:41:02,739 --> 00:41:03,659
+Ne kadar sürüyor?
+
+327
+00:41:04,299 --> 00:41:07,439
+Hocam, iki dakikaya yakın sürüyordu her biri aşağı yukarı.
+
+328
+00:41:09,159 --> 00:41:12,840
+Tamam, bana çalışmış ve sonucu oluşmuş dosyayı göster.
+
+329
+00:41:13,979 --> 00:41:14,319
+Tamam.
+
+330
+00:41:20,307 --> 00:41:35,268
+Şu şekilde işte bir numaralı movie id'nin ortalama reytingi burada. Diğerleri de aynı şekilde. Bu dosyanın baş kısmı, bu şekilde aşağıya kadar gidiyor. Diğer id'ler de burada, hani en sondaki kısım.
+
+331
+00:41:35,427 --> 00:41:38,688
+Ama başka bir tane fonksiyon için çalışmış ve sonucu göster.
+
+332
+00:41:58,771 --> 00:41:59,912
+Count vardı hocam.
+
+333
+00:42:03,912 --> 00:42:11,391
+Her bir filmin kaç defa oylandığıyla alakalı bir istatistiksel fonksiyon vardı.
+
+334
+00:42:12,612 --> 00:42:18,931
+İşte bir ID'li film bu kadar kez oylanmış. Diğerleri de aynı şekilde. Sayıları tek tek burada.
+
+335
+00:42:20,452 --> 00:42:23,192
+Tamam. Kodlarını aç bakalım.
+
+336
+00:42:23,192 --> 00:42:24,152
+Tamam.
+
+337
+00:42:25,715 --> 00:42:37,235
+Rating ile alakalı olan kısım. Zaten main'de dönüyor bütün işlemler. Mapper klası önce ayarlanıyor, sonra Reducer.
+
+338
+00:42:38,855 --> 00:42:42,596
+Output, burada Float olarak olacağı için ortalama o şekilde ayarladık.
+
+339
+00:42:43,155 --> 00:42:49,956
+Input ve outputların ilk eleman, yani gelecek olan ilk eleman input, diğeri output olarak ayarlandı.
+
+340
+00:42:50,547 --> 00:42:57,268
+Map klasında da rating isimli, yani key value değerlerinde value'ların float olması lazım.
+
+341
+00:42:57,907 --> 00:43:08,587
+FloatWriteable değişkeni oluşturduk. Daha sonra dosyadan aldığımız her bir satırı string'e dönüştürüp, işte movie data değişkenini atadık.
+
+342
+00:43:09,076 --> 00:43:34,416
+Totalde 4 tane değer vardı bizim veri setinde. İşte kullanıcı ID'si vardı, movie ID vardı, rating vardı, bir de timestamp vardı. Bunlar virgülle ayrıldığı için split metodunu kullandık, array'e dönüştürdük. Daha sonra bir kontrol yaptık. Null mı, yani array boş mu, değilse içeri girecek veya uzunluğu 4 mü diye. Bizim için lazım olan movie ID'si ve...
+
+343
+00:43:35,188 --> 00:43:46,588
+İşte rating değeri. Movie ID'sini key değeri olarak aldık map kısmında. Value olarak da ikinci indisteki değeri full auto dönüştürüp value olarak aldık.
+
+344
+00:43:46,608 --> 00:43:51,628
+Konksiyon göster. MapReduce açtırdın. Başka bir konksiyon göster. Average'in haricinde.
+
+345
+00:43:52,847 --> 00:43:53,868
+Count var.
+
+346
+00:43:54,224 --> 00:43:56,304
+Count'ta da aslında map işlemi.
+
+347
+00:43:56,304 --> 00:43:58,584
+Başka bir var, count'un dışında, average'ın dışında.
+
+348
+00:43:59,264 --> 00:44:06,204
+Range var hocam, hani en düşük puan, yani bir filme verilmiş olan en düşük puan ve en yüksek puan var. Standart sapma var.
+
+349
+00:44:06,463 --> 00:44:09,564
+Standart sapma göster, reduce'unu göster standart sapmanın.
+
+350
+00:44:10,144 --> 00:44:14,944
+Tamam. Reduce kısmında öncelikle ortalama hesaplamamız lazım.
+
+351
+00:44:15,476 --> 00:44:41,796
+Burada tabii bu döngüyü döndüğümüz zaman değerler gidiyordu. Tekrardan çalıştırdığımızda, aynı for'a girdiğimizde. Bu yüzden bu value değerlerini önce başka bir array liste sakladık. Tek tek ekledik onları. Ondan sonra her birinin rating değerlerini sum değişkeni de topladık for döngüsünde ve kaç tane olduğunu hesapladık. Buradan oranladığımızda zaten ortalama değer hesaplamış oluyor.
+
+352
+00:44:43,188 --> 00:45:02,528
+Standart satmayı da hesaplamak için ikinci bir for döngüsünde ilgili ratingten ortalamasını çıkartıp bunun karesini aldık. Tekrardan bulduğumuz değeri n-1 formüldeki yani count-1'e böldük ve kare kökünü aldık. Bunu da result'a set ettik. Value değerini oluşturmuş olduk.
+
+353
+00:45:02,788 --> 00:45:04,967
+Tamam. Performans analizi yaptınız mı?
+
+354
+00:45:05,391 --> 00:45:18,051
+Hocam yaptık, şöyle yaptık, başlamadan önce, yani date, terminalden date yazdık, başlamadan önceki zamanı bulduk. Daha sonra kodu çalıştırıp, ondan sonra yine bir date yazdık.
+
+355
+00:45:18,051 --> 00:45:28,831
+Onu kastetmiyordum arkadaşlar. Kod içerisine yazmanız gerekiyordu. Project reportunuzu gönderdiniz mi?
+
+356
+00:45:29,331 --> 00:45:30,091
+Evet, burada.
+
+357
+00:45:36,019 --> 00:45:46,739
+Biraz daha aşağı in. Son dakika hazırlanmış bir rapor arkadaşlar bu. Çok uğraşılmamış, son dakika hazırlanmış bir rapor. Siz de farkındasınız herhalde.
+
+358
+00:45:48,399 --> 00:45:51,099
+Tamam. Bana söyleyeceğiniz başka bir şey var mı?
+
+359
+00:45:51,839 --> 00:45:52,839
+Yok, benim yok.
+
+360
+00:45:54,359 --> 00:46:00,859
+Tamamdır arkadaşlar. Başarılar dilerim. Final sınavınızda benim söyleyeceklerim. Bu kadar ayrılabilirsiniz.
+
+361
+00:46:01,396 --> 00:46:03,736
+Kolegas.
+
+362
+00:46:48,179 --> 00:46:53,819
+Evet arkadaşlar, hızlıca ekran kameranızı açın, GBM'a ekran paylaşımı yapın lütfen.
+
+363
+00:46:55,259 --> 00:46:55,719
+Merhaba hocam.
+
+364
+00:46:56,639 --> 00:46:57,000
+Merhaba.
+
+365
+00:47:00,659 --> 00:47:09,279
+Merhaba hocam. Merhaba. Ben screen paylaşayım size. Şu an görebiliyor musunuz? Evet.
+
+366
+00:47:10,003 --> 00:47:10,443
+Evet.
+
+367
+00:47:10,943 --> 00:47:21,244
+Şu an Hadoop açık hocam bizde. Oraları normalde bir buton koyduk oraya açması için. Ama biraz zaman sürdüğü için oraya geçtim. Direkt açık halini göstereyim burada iki tane aktif.
+
+368
+00:47:21,264 --> 00:47:23,543
+Şu anda multi-note kurulumunuz var mı?
+
+369
+00:47:24,063 --> 00:47:29,643
+Evet. Şu an iki note çalışıyor hocam slave olarak. Şu an master note üzerinden VM üzerinden gösteriyorum size.
+
+370
+00:47:30,864 --> 00:47:31,384
+Okey.
+
+371
+00:47:32,143 --> 00:47:36,583
+Şu an master note üzerinde. İşte iki tane slave'imiz burada görünüyor. Çalışıyor halde.
+
+372
+00:47:37,076 --> 00:47:42,456
+Bu bizim arayüzümüz. Bir tane örnek olması açısından buraya deneme tekstediği bir tane dosya koydum.
+
+373
+00:47:43,155 --> 00:47:44,256
+O gözükmüyor şu an [öğrenci].
+
+374
+00:47:44,976 --> 00:47:46,816
+Tüm ekranını paylaşıyorsun değil mi?
+
+375
+00:47:47,336 --> 00:47:48,816
+Şu an tüm ekranını paylaşıyorum hocam.
+
+376
+00:47:48,936 --> 00:47:53,436
+Şu anda görmüyoruz. Şu anda sadece browser'ını görüyoruz.
+
+377
+00:47:53,655 --> 00:47:55,516
+Evet, Hadoop browser. Şimdi geldi.
+
+378
+00:47:56,155 --> 00:47:57,615
+Geldi mi? O zaman çok geç geliyor.
+
+379
+00:47:58,576 --> 00:47:59,016
+Olabilir.
+
+380
+00:48:00,356 --> 00:48:02,296
+Şu an görebiliyor musunuz hocam?
+
+381
+00:48:04,244 --> 00:48:14,003
+Şu anda şeyi görüyorum. Deneme TXT dosyası açmışsın. Evet, onun içinde bir şeyler var. Şimdi onu ne yapacaksın? HDFS'e mi yükleyeceksin?
+
+382
+00:48:14,184 --> 00:48:19,923
+Evet hocam. Sonra buradan slip HDFS'ten tekrardan çekeceğim. Şimdi buradan seçtim dosyanı.
+
+383
+00:48:19,923 --> 00:48:30,023
+Ama kullanıcı arayüzünü henüz daha görmedik. Yavaş yavaş git. Şu anda kullanıcı arayüzünü gördüm. İstersen benden şeyi aldıktan sonra bir sonraki anı.
+
+384
+00:48:30,023 --> 00:48:32,244
+Tamam hocam. Buradan dosyayı seç.
+
+385
+00:48:32,244 --> 00:48:54,043
+Seçebiliyorum şu button'dan, en üstteki butondan. Tamam, ona bas şimdi, browse butonuna bas. Tamam, browse şeyini çıktı, bir tane dosyayı, az önceki dosyayı seç. Buradan onu bulayım, seçeyim. Burada CSV için açık, hold dosyelerinde deneme teksteyi burada görüyorum.
+
+386
+00:48:54,516 --> 00:49:21,096
+Open dedim. Buraya attı. Bunu buradan sileyim. Atıldı, şimdi geliyor. Burada gördünüz. Buradan seçtim. Sil dedim. Sildi. Tekrardan arayüze geri döndüm. Ve buradan Pull File From The HDFS dedim. Buradan nereye atmam gerek istediğini seçiyorum. Biraz daha yavaş [öğrenci], biraz daha yavaş. Seni takip edemiyoruz.
+
+387
+00:49:22,739 --> 00:49:31,419
+Kapattım tekrardan hocam. Şuradaki üçüncü butona bastım tekrardan. Buradan seçmek istediğim directory'yi seçiyorum.
+
+388
+00:49:33,859 --> 00:49:36,379
+Out dedim. Tekrardan aynı yere gidiyorum.
+
+389
+00:49:36,980 --> 00:49:42,299
+Buraya atıyor dosyamı. Aynı zamanda HDFS'te durmaya devam ediyor.
+
+390
+00:49:42,739 --> 00:49:44,619
+Tamam, attığını görelim. Nereye koymuştun?
+
+391
+00:49:44,920 --> 00:49:46,539
+Buraya tekrardan geri koydum hocam.
+
+392
+00:49:46,719 --> 00:49:48,500
+Okey, silmişti. Tekrardan koydum.
+
+393
+00:49:48,500 --> 00:49:49,619
+Burada içinde de duruyor.
+
+394
+00:49:49,619 --> 00:49:51,019
+Read the write'ı yapabiliyorsun.
+
+395
+00:49:51,199 --> 00:49:54,139
+Evet, aynı zamanda siledebiliyorum dosyayı HDFS'ten.
+
+396
+00:49:54,159 --> 00:49:55,920
+Read the write bunları yapabiliyorsun.
+
+397
+00:49:56,519 --> 00:49:58,259
+Kullanıcı arayüzün var.
+
+398
+00:49:58,259 --> 00:50:03,259
+Tamam, şimdi bana yaptığınız bu beş tane istatistik fonksiyonu.
+
+399
+00:50:04,047 --> 00:50:11,347
+kullanıcı ara yüzünden yap ama adım adım ilerle her adımdan da sonra da ekran geldi mi diye sor.
+
+400
+00:50:11,847 --> 00:50:15,627
+Tamam. Burada likör datamızı görüyorsunuz hocam. Bu bizim proje datamız.
+
+401
+00:50:15,748 --> 00:50:16,627
+Gördüm. Tamam.
+
+402
+00:50:17,228 --> 00:50:23,127
+Buradan Open Operations'a tıklıyorum ben. Buna tıkladım. Bir Operation ekranı geldi şu an ekrana.
+
+403
+00:50:23,127 --> 00:50:24,847
+Ben görmüyorum daha. Bekle.
+
+404
+00:50:27,284 --> 00:50:29,163
+Şu anda gördüm, tamam.
+
+405
+00:50:29,523 --> 00:50:42,583
+Group by dediğimiz hepsi için yapabiliriz veya burada işte bizim datamızın gruplanabileceği özellikler, özüntelikler var. Onlar için gruplayabiliriz. Bizim datamızda unique olarak şunları söyleyebilirim.
+
+406
+00:50:45,715 --> 00:51:04,635
+Store için her bir şey var, likör var. Bunlar store ve likör bazında indekslenmiş. Yani iki fark, aynı isimdeki bir likör, iki farklı mağazada iki farklı sample olarak geçiyor burada. Yani örnek vermek gerekirse burada şehir bazında, şehire tıkladım şu an.
+
+407
+00:51:05,652 --> 00:51:16,652
+Daha sonrasında target kısmında da store number. Bu numerik olduğu için bu burada. Mesela her bir şehirde ortalama satışı hesaplamak istiyorsam buradan da sale'ı seçiyorum.
+
+408
+00:51:17,331 --> 00:51:26,951
+Statistik fonksiyonum olarak average var. Average'e tıkladığımda set job butonuna tıkladığım anda benim MapReduce fonksiyonlarım çalışmaya başlayacak.
+
+409
+00:51:26,951 --> 00:51:33,652
+Tamam. Bir tanesini çalıştır. Ben sonuna kadar beklemeyelim. Sadece çalıştığını bana göstereyim.
+
+410
+00:51:33,652 --> 00:51:39,351
+Göster, arkasından da daha önce çalıştırdığınız ve sonuç aldığınız sonucunu göster.
+
+411
+00:51:40,711 --> 00:51:45,791
+Şu an SetRop'a tıkladım hocam. Çalışıyor. Çok uzun sürmüyor zaten average çalıştırdığım için.
+
+412
+00:51:55,635 --> 00:52:01,896
+Bizim az önce çalıştırdığımız klasörde kayıt mı? Baksana. Bir tane çalıştırmıştık ya, masaya üstüne almıştık onu.
+
+413
+00:52:02,036 --> 00:52:06,816
+Değil, ben onun o hoca aynısını görmesin diye sildim. Aynısı olabilir mi diye.
+
+414
+00:52:09,876 --> 00:52:13,036
+Çok zaman almıyor derken dakikalar mı yoksa sahnelerden bahsedelim?
+
+415
+00:52:13,036 --> 00:52:13,396
+Yok, yok.
+
+416
+00:52:13,635 --> 00:52:19,356
+Yok hocam, bir dakika içinde biter. Map kısmı bitti şu an Reduce kısmında.
+
+417
+00:52:23,219 --> 00:52:30,679
+Gözlerlebilir olması için biz Average'ı seçtim aslında ilk başta. O yüzden. Ama medyan hesaplamak için biraz daha uzun sürebilir.
+
+418
+00:52:31,639 --> 00:52:37,359
+Bu arada performans analizi yaptınız mı? Yani tek not üzerinde şu kadar zaman alıyor, çift not üzerinde bu kadar zaman alıyor diye.
+
+419
+00:52:37,579 --> 00:52:40,879
+Tek not, çift not yapmadık hocam onu. Şey olarak yaptık.
+
+420
+00:52:41,811 --> 00:52:43,152
+[öğrenci], sen mi söylediğin söyleyeyim mi?
+
+421
+00:52:43,172 --> 00:52:44,132
+Sen anlatabilirsin.
+
+422
+00:52:44,672 --> 00:52:51,511
+Yani herhangi bir programlama dilinde bu data'yı direkt reme alıp hesaplama yapmayla Hadoop üzerinde yapma üzerinde bir performans alerimizi yaptık.
+
+423
+00:52:51,791 --> 00:52:54,951
+Biz direkt Maltenut olarak kurduk mimariyi. Single Note denemedik.
+
+424
+00:52:56,244 --> 00:52:58,064
+Şu anda ekranda gördüğüm nedir?
+
+425
+00:52:59,284 --> 00:53:12,043
+Buradaki hocam outputlarımız, ilk baştaki yazan bizim şehirlerimiz. Bu da diğerleri de average olarak sale, dolar üzerinden ortalamaları bir şehrin. Ortalama bir üründen satış miktarları.
+
+426
+00:53:12,043 --> 00:53:21,284
+Bunu biz save to local butonuna tıklayarak bunu HDFS üzerinden localımıza çekebiliyoruz. Tıkladım, dizini seçeyim buradan.
+
+427
+00:53:23,699 --> 00:53:28,859
+Tamam, ona gerek yok. Ben onu anladım arkadaşlar. Proje raporunuz hazır mı?
+
+428
+00:53:28,859 --> 00:53:34,960
+Açayım hocam. Performance evaluation kısmını direkt açayım hocam. Biz sürelerine...
+
+429
+00:53:34,960 --> 00:53:37,119
+Gelme, şeyle. Tamam, bekliyorum.
+
+430
+00:53:40,980 --> 00:53:45,420
+Datansit'iniz, project proposal'ınızda aynı değil mi? Değiştirmedik.
+
+431
+00:53:45,420 --> 00:53:46,579
+Aynı hocam, değiştirmedik.
+
+432
+00:53:46,639 --> 00:53:51,579
+Hocam şöyle aslında biz güncellemiştik onu, ikinci maile attık ama size ulaştım, siz de değişti mi?
+
+433
+00:53:52,119 --> 00:53:56,400
+Ulaştı, ulaştı. Onda sıkıntı yok. Sadece ondan sonra değişiklik olmasın. Tamam.
+
+434
+00:53:56,740 --> 00:53:58,740
+Burada grafiği anlatıyoruz.
+
+435
+00:53:59,079 --> 00:54:02,940
+MapReduce kullanmış olmakla kullanmış olmamak arasındaki farka bakmış oldunuz.
+
+436
+00:54:02,940 --> 00:54:08,500
+Evet hocam. Burada süreleri ölçüp 0 ile 100 arasında bir maksimum normalizasyonu yaptık.
+
+437
+00:54:08,980 --> 00:54:14,940
+Bu da işte operasyonun karmaşıklığına göre oluşan zaman hesapları.
+
+438
+00:54:15,680 --> 00:54:17,059
+Projenizi gönderdiniz.
+
+439
+00:54:17,460 --> 00:54:18,280
+Gönderdik hocam.
+
+440
+00:54:19,119 --> 00:54:22,059
+Tamam. Tamam arkadaşlar. Elinize sağlık. Beğendin.
+
+441
+00:54:22,519 --> 00:54:24,460
+Teşekkür ederiz hocam. Sağ olun.
+
+442
+00:54:25,519 --> 00:54:27,400
+Kolay gelsin. Başarılar dilerim sınavda.
+
+443
+00:54:27,420 --> 00:54:28,019
+Teşekkürler.
+
+444
+00:54:28,099 --> 00:54:29,720
+Sağ olun hocam. Kolay gelsin.
+
+445
+00:54:57,204 --> 00:55:03,503
+Evet arkadaşlar, hemen bir ekranlarınızı açın ve bir ekran paylaşımı yapın. Kameralarınızı açın.
+
+446
+00:55:04,443 --> 00:55:05,724
+Merhaba hocam, sesimiz geliyor mu?
+
+447
+00:55:06,724 --> 00:55:07,523
+Yılıyor, [öğrenci].
+
+448
+00:55:16,884 --> 00:55:20,063
+[öğrenci], senin mikrofonun açık değil şu anda.
+
+449
+00:55:21,443 --> 00:55:21,824
+Orada.
+
+450
+00:55:22,824 --> 00:55:32,804
+Tamam. Bana şimdi arkadaşlar hızlıca Multinode bir Hadoop kurulu mu ya da Spark yaptıysanız Spark bir gösterin bakalım.
+
+451
+00:55:33,603 --> 00:55:40,003
+Tamamdır hocam. Biz Hadoop kurduk. İlk önce Multinode'u mu göstereyim yoksa şey mi?
+
+452
+00:55:41,300 --> 00:55:44,300
+Teknodum hocam, ona göre ekran, iki ekran olduğu için.
+
+453
+00:55:44,680 --> 00:55:48,680
+Şey gösterin bana, iki multinodu gösterin.
+
+454
+00:55:53,280 --> 00:55:56,360
+Tekrar tekrar girip çıkıyorsun, seni Waiting Room'a alacağım.
+
+455
+00:55:56,680 --> 00:55:58,300
+Hocam ben de onu diyecektim.
+
+456
+00:55:58,360 --> 00:56:00,080
+Sprang geldiği zaman seni alacağım.
+
+457
+00:56:00,500 --> 00:56:01,420
+Tamamdır hocam.
+
+458
+00:56:01,440 --> 00:56:01,780
+Tamam mı?
+
+459
+00:56:02,260 --> 00:56:05,960
+Tekrar geldiğinde yine toplantıya girmiş olursun. Waiting Room'da bekle lütfen.
+
+460
+00:56:06,180 --> 00:56:06,900
+Tamamdır hocam.
+
+461
+00:56:07,100 --> 00:56:08,820
+Doğru ekran mı gözüküyor hocam?
+
+462
+00:56:09,300 --> 00:56:11,720
+Multi gözüküyor mu şu anda?
+
+463
+00:56:12,800 --> 00:56:15,300
+Bakalım şu anda...
+
+464
+00:56:16,160 --> 00:56:17,840
+İki tane slide, bir tane...
+
+465
+00:56:17,840 --> 00:56:19,660
+Görüyorum, tamam, tamam, güzel.
+
+466
+00:56:20,400 --> 00:56:35,520
+Söyle olacağım. Kurulumu yaptık. Sadece burada raporda da belirttik. İlk önce birinde bunu muhtemelen internetten araştırdık. Tek şey de burada tıkanıp kalıyor. Sonradan yeniden başlattığımızda çalışıyor.
+
+467
+00:56:35,983 --> 00:56:51,063
+Tek sorunumuz multi-node da bu. Ama single-node da tamamıyla doğru bir şekilde çalışıyor. Bu da muhtemelen bilgisayar çok yavaş kalıyor ya da bir sürü machineler çok şey oluyor diye düşündük biz aramızda.
+
+468
+00:56:51,083 --> 00:56:54,823
+Hiç çalıştırdınız mı yani? Hiç sorunsuz multi-node'un çalıştığını gördünüz mü?
+
+469
+00:56:54,823 --> 00:56:59,323
+Yok hocam, rapora koyduk galiba öyle hatırlıyorum ben.
+
+470
+00:57:01,268 --> 00:57:05,128
+Sonra isterseniz şey, direkt çalışan şeyi yani.
+
+471
+00:57:05,788 --> 00:57:07,827
+Tek not kurulumu gösterin o zaman.
+
+472
+00:57:08,827 --> 00:57:15,788
+Single not hocam bir arayüz yaptık Swing ile Java'da. Dediğiniz gibi şeyleri seçmek için bir.
+
+473
+00:57:16,927 --> 00:57:27,807
+Öncelikle HDFS Client'e gösterin. Yani HDFS'e bir tane dosya atın. Öncelikle HDFS'te bir dosya olmadığını, olmayan bir dosyayı attığınızı bana gösterin.
+
+474
+00:57:28,947 --> 00:57:29,787
+Bunu hocam.
+
+475
+00:57:29,787 --> 00:57:30,307
+Yaptınız mı?
+
+476
+00:57:30,987 --> 00:57:39,087
+Direkt hayır. Her şeyi arayüzden atıyoruz hocam. Commandline'ı, BaskRip'le Java'da execute ediyoruz. Ekran açıkta olarak veriyoruz.
+
+477
+00:57:39,447 --> 00:57:47,887
+Tamam ama HDFS client'i yaptınız mı? Ben şu anda istisnik fonksiyonlarından bahsetmiyorum. Bana şu anda istisnik fonksiyonlarını gösteriyorsun.
+
+478
+00:57:47,887 --> 00:57:56,007
+Yani bir tane dosyayı HDFS'e atmak ve de HDFS'deki bir dosyayı okuyup tekrardan file sistemi atmak. Bunu yaptınız mı?
+
+479
+00:57:57,235 --> 00:58:03,315
+Bunu hocam zaten şeyde bu arayüzden çalıştığımızda bu dosyayı atıyoruz HDFS'e ama HDFS'den okuyoruz.
+
+480
+00:58:04,735 --> 00:58:11,596
+Ayrıca böyle bir fonksiyon yazmadık hayır yani arayüzden belge seçsin, şey olmamışsın diye.
+
+481
+00:58:11,596 --> 00:58:16,155
+Şimdi standard yapmaması için bastığınızda name node ilk önce oluşturuyor.
+
+482
+00:58:16,955 --> 00:58:23,455
+Direkt otomatikman aşağıya start defeste başlatıyor.
+
+483
+00:58:24,115 --> 00:58:29,155
+Burada göstereceğim o komutu. Oradan direkt kutluğa alıyoruz, koyuyoruz HDFS'e.
+
+484
+00:58:29,215 --> 00:58:37,015
+HDFS'de bir random rakamla bir folder oluşturup o folder'ın içerisine atıyoruz.
+
+485
+00:58:37,135 --> 00:58:42,715
+Oradan da part R00 okuyup yine burada alt olarak yazdırıyoruz ekrana.
+
+486
+00:58:43,715 --> 00:58:45,815
+Şu an hangi şeyi çalıştırıyorsun?
+
+487
+00:58:45,815 --> 00:58:47,815
+Efendim?
+
+488
+00:58:48,911 --> 00:58:50,431
+Şu an tam mı çalıştırdım hocam?
+
+489
+00:58:50,451 --> 00:58:56,331
+Tam mı çalıştırıyorsun? Tamam. Okey. Şu anda ne göreceğiz? Veri setin ne veri setiydi? Neyin samımı göreceğiz?
+
+490
+00:58:56,331 --> 00:59:02,331
+Hocam, anime data seti, anime şeyi...
+
+491
+00:59:04,211 --> 00:59:20,063
+Bakın, animelerin reytingine göre sıralamaları hocam. Reytingler vermişler belirli bir kullanıcılar. Bunun CSC'si var bizde. Onun şu anda daha küçük bir versiyonu çalışıyoruz. Çünkü normalde 840...
+
+492
+00:59:20,063 --> 00:59:23,723
+Megabyte olduğu için çok uzun sürüyor. Yani 30 dakika falan sürüyor.
+
+493
+00:59:23,863 --> 00:59:29,923
+Onu ama rapora koyduk. Bütün çıktımları çalıştırıp kendinizi görebilirsiniz.
+
+494
+00:59:30,323 --> 00:59:39,123
+Şimdi bana bu çalıştırdığınız Avric'in çalışmış sonuç üretilmiş kısmını HDFS'ten gösterin. Nasıl bir sonuç oluşturmuş? Görelim.
+
+495
+00:59:39,123 --> 00:59:47,243
+Bu çalışınca şöyle bir dakika bunu büyütebilirsem. Buradan hocam işte 7. komandı okursanız buradan putta koyuyoruz şeyi.
+
+496
+00:59:48,063 --> 01:00:03,943
+CSV diye bir filemız var. Sonra bir tane şey oluşturuyoruz. Folder Random sonuna kendimiz 3 rakam bir folder oluşturup çıktığı jarı çalıştırıp şimdi jar çalıştıktan sonra sonucu göreceğiz hocam.
+
+497
+01:00:05,983 --> 01:00:10,963
+Biraz ekran paylaşımı da yapıyorum. Multinode'lar da açık. Biraz yavaş çalışacağım.
+
+498
+01:00:21,876 --> 01:00:30,836
+Burada hocam 10 tane idli samlarını, raytiflerinin samlarını görüyoruz.
+
+499
+01:00:30,836 --> 01:00:39,896
+Şöyle hocam. Bütün komatları hocam, komatline'dan da yaptığımızda aslında çalışıyor da yani biz direkt output olarak göstermeyi tercih ettik.
+
+500
+01:00:40,016 --> 01:00:47,616
+Buradan execute ederek her birisini. Burada işte hocam jar file'ini çalıştırmak için Hadoop jar'la.
+
+501
+01:00:48,052 --> 01:00:58,012
+Nereden jarp hali seçtik ve hangi link alacak onu örneğin. Sonra da gidip Part E00'u okuyup output şeklinde koyduk.
+
+502
+01:01:00,432 --> 01:01:10,032
+Performans analizini de şöyle ölçtük. Bir başlangıçta zamanı aldık. Bir de sonda zamanı aldık. Ona göre de bir grafik oluşturduk. Onu da rapora koyduk hocam.
+
+503
+01:01:10,332 --> 01:01:13,052
+Teknot ile iki not arasındaki karşılaştırmayı yaptınız mı?
+
+504
+01:01:13,780 --> 01:01:27,660
+Çift nodu hocam çok yani projeyi biraz geç başladığımız için çalıştırıp raporunu da koymaya zamanımız olmadı açıkçası. Çünkü şöyle baya bir saat falan çalıştığını gördük hocam şeyde.
+
+505
+01:01:27,860 --> 01:01:32,820
+Şeyi açın, kodlarınızı açın bir görelim bakalım. Bana bir iki tane şeyi gösterin.
+
+506
+01:01:32,820 --> 01:01:40,020
+Şöyle hocam, GUI'leri ve her bir operasyonu bir klas olarak yazıp içerisinde MapReduce olarak.
+
+507
+01:01:40,596 --> 01:01:45,856
+Min Max'ı göster, Min Max'ı ki Reduce'ü göstermesine ona. Anlat Reduce'ü.
+
+508
+01:01:46,216 --> 01:02:07,416
+Tamamdır Hocam. Şöyle bir tane Min ve Max değerimiz var. Oradan teker teker Mac'den gelen değerleri, meldoluları alıp, karşılaştırma yapıp hangisinin Min, hangisinin Max olduğunu işte karşılaştırıp, sonunda da intvary yapımları yazıp alt üst olarak gösteriyoruz. Bu şekilde yaptık.
+
+509
+01:02:07,891 --> 01:02:21,472
+Şey olarak, tekst olarak yapmaya çalıştık. Yani iki yan yana tekst olarak bastıralım. Baya uğraştık onu da. Baya error çıktı, baya handle etmemiz zorlaştı. Biz de alt alta yazmayı tercih ettik hocam.
+
+510
+01:02:21,672 --> 01:02:24,112
+Hani intibariya bulur olarak, write bulur olarak.
+
+511
+01:02:25,771 --> 01:02:27,271
+Tamam, projenizi gönderdiniz.
+
+512
+01:02:27,831 --> 01:02:29,452
+Projeyi gönderdik, çalışıyor hocam.
+
+513
+01:02:29,692 --> 01:02:32,572
+Proje raporunuzu açın, hızlıca proje raporunuzu görelim.
+
+514
+01:02:32,572 --> 01:02:34,152
+Bir dakika.
+
+515
+01:02:35,027 --> 01:02:41,047
+Project Proposal'ı kullandığınız dataset aynı değil mi? Proposal'da ünlüdüğünüz dataset'i kullanıyorsunuz.
+
+516
+01:02:41,047 --> 01:02:53,587
+Evet, Proposal'da kullandığınız dataset de aynı. Burada Motivation Go, bütün şeyi yaptığımızı hocam, istediğiniz başlıklara yazdık, neler yaptığımızı, neler detaylı anlattık.
+
+517
+01:02:53,824 --> 01:03:13,544
+Burada Multinode'da ilk o dediğimiz hatayı anlattık. İşte hangi hatalarla karşılaşıyorsunuz diye. Sonra da her bir şeyin Single Note'da çıktısını koymaya çalıştık. Koyduk diye hatırlıyorum hatta. O biraz baya bir günümüzü falan aldı. Burada hepsinin çıktısını kontrol edebilirsiniz.
+
+518
+01:03:13,784 --> 01:03:14,403
+Tamam arkadaşlar.
+
+519
+01:03:14,403 --> 01:03:20,624
+Bir tane de Single Note'da bir table kurup hepsinin zamanını örttük. Bu kadar.
+
+520
+01:03:21,556 --> 01:03:23,335
+Tamam. Sorunuz var mı?
+
+521
+01:03:24,315 --> 01:03:24,936
+Yok hocam.
+
+522
+01:03:25,195 --> 01:03:27,416
+Tamam. Başarılar derim sınavda. Bu kadar.
+
+523
+01:03:28,096 --> 01:03:29,516
+Teşekkürler hocam. Kolay gelsin.
+
+524
+01:03:29,715 --> 01:03:30,235
+Kolay gelsin.
+
+525
+01:04:03,411 --> 01:04:04,311
+Merhaba hocam.
+
+526
+01:04:04,971 --> 01:04:10,971
+Evet arkadaşlar, hemen kameralarınızı açın, bir de ekran paylaşımı yapın lütfen. Başlayalım.
+
+527
+01:04:12,652 --> 01:04:16,211
+Tamam hocam. [öğrenci] arkadaşım başlayacak önce.
+
+528
+01:04:17,311 --> 01:04:21,132
+Favlu, sen göstereceksin ya modları. O yüzden sonra başlayacaksın.
+
+529
+01:04:22,032 --> 01:04:22,471
+Tamam.
+
+530
+01:04:27,155 --> 01:04:31,155
+Şimdi bana Multinode Hadoop kurulumu göstereceksiniz.
+
+531
+01:04:32,295 --> 01:04:36,835
+Hocam şöyle, biz Docker'da yaptık, Docker konteynerlarında.
+
+532
+01:04:37,264 --> 01:04:57,123
+Şu şekilde konteynerlarımız şu an çalışıyor. Şuradan Hadoop'un arayüzünü görebiliyoruz server başladığı için. Şurada iki tane data nodumuz var. Üç nodumuz var toplamda. Bir main nodumuz, iki tane data nodumuz var. Şurada HDFS'lerimizi file sitemizde görebiliyoruz.
+
+533
+01:04:59,635 --> 01:05:01,115
+Nasıl devam edelim hocam?
+
+534
+01:05:01,695 --> 01:05:10,796
+Şimdi bunu gördüm. Bir HDFS'e bir tane HDFS'te olmayan bir dosyayı kullanıcı arayüzünüzü kullanıraktan atalım.
+
+535
+01:05:10,796 --> 01:05:11,755
+Tamam hocam.
+
+536
+01:05:12,376 --> 01:05:15,476
+Burada göstereyim size. Input şu an boş.
+
+537
+01:05:15,936 --> 01:05:16,175
+Tamam.
+
+538
+01:05:16,947 --> 01:05:23,527
+Şuradan mesela biz önceden datasetimizden böyle böldük. Buradan mesela hangisi? 50 megabyte atalım mesela.
+
+539
+01:05:23,627 --> 01:05:24,707
+Tamam. Çocuk bir şey.
+
+540
+01:05:25,207 --> 01:05:30,387
+Tamam. Buradan avaraç seçelim. Bunu ranca...
+
+541
+01:05:30,387 --> 01:05:37,167
+Onu seçmek zorunda mıyım? Ben sadece HDFS'e bir dosya atmak ve okumak istiyorum. Üzerinde herhangi bir şey yapmak istemiyorum.
+
+542
+01:05:38,107 --> 01:05:43,344
+Hocam biz bunu tek opsiyonlu gibi bir şey yaptık da yani bunu...
+
+543
+01:05:43,344 --> 01:05:48,844
+Şu an atıyor aynı zamanda. Hani orada olmuş olacak o işlem bitince.
+
+544
+01:05:48,923 --> 01:05:55,244
+Evet. Biz kurarken aslında cabıran edebilecek şekilde yazdık onu arayız olarak ama aslında ayrı ayrı yapmadık da.
+
+545
+01:05:56,064 --> 01:06:03,124
+Oradaki bir dosyayı download etmek istesem, ondan sonra o ya da oradaki bir dosyayı silmek istesem, kullanıcı arayüzünüz buna izin vermiyor o durumda.
+
+546
+01:06:03,224 --> 01:06:09,704
+Evet. Sadece A tutu da almanızabiliyoruz ama biz sanki ben yani arayüzü yazarken bu şekilde anladığım için böyle yaptım açıkçası.
+
+547
+01:06:11,344 --> 01:06:16,923
+O zaman bana şeyi gösterin. O beş tane istatistik fonksiyonu. Zaten şu anda onu gösteriyorsunuz.
+
+548
+01:06:16,923 --> 01:06:21,864
+Şu anda indirebiliyoruz. Şöyle oturt dört saniye sürdü. Ufak şunu göstereyim.
+
+549
+01:06:21,884 --> 01:06:24,144
+Burada result geliyor. Burada dost olarak yani.
+
+550
+01:06:24,484 --> 01:06:25,544
+İndirebiliyoruz bu şekilde.
+
+551
+01:06:27,443 --> 01:06:38,124
+Bu şu anda ne yaptınız? Veriniz üzerinde average'i çalıştırdınız. Sonuçu indiriyorsunuz.
+
+552
+01:06:38,124 --> 01:06:47,943
+Evet, burada HDFS'e yazılmış oldu işte şey ve de şurada da output'umuz da şuradan, oradan indirdik.
+
+553
+01:06:49,940 --> 01:06:53,579
+Tamam, bir başka fonksiyon daha çalıştırın benim için.
+
+554
+01:06:53,900 --> 01:07:02,259
+Tabii, hocam burada da another job dediğimizde tekrar yüklemiyoruz, var olandan şey yapabiliyoruz. İstediğiniz bir şey var mı? Direkt ben bahsediyorum.
+
+555
+01:07:02,259 --> 01:07:04,579
+Mesela, sen seçtin.
+
+556
+01:07:04,659 --> 01:07:06,119
+Tamam, bir yandan dedim.
+
+557
+01:07:07,579 --> 01:07:12,099
+Şurada loglarımızı da görebiliyoruz bir yandan.
+
+558
+01:07:19,668 --> 01:07:23,808
+Java'da yazdık hocam, MapReduce kodlarınızı.
+
+559
+01:07:23,808 --> 01:07:30,648
+Evet, Python olarak yazmıştık aslında dosyada ama sonra çok uzun sürünce de yapmamız daha kısa sürdüğü için Java'yla yazdık.
+
+560
+01:07:31,248 --> 01:07:35,548
+Tamam, bu çalışırken bir kodlarınızı açın, bir görelim. Az önce yaptınız.
+
+561
+01:07:35,548 --> 01:07:38,968
+Bunu ben göstereyim çünkü Eclipse'den de var değil.
+
+562
+01:07:40,052 --> 01:07:42,211
+Ya da istersen fazla sen de açabilirsin.
+
+563
+01:07:42,831 --> 01:07:47,251
+Otyed Plus Plus'tan ama gösterebilirim. Sen paylaşsan sanki daha anlaşılır.
+
+564
+01:07:47,271 --> 01:07:49,132
+Aynı anda tek kişi paylaşabiliyormuş da o yüzden.
+
+565
+01:07:49,172 --> 01:07:50,411
+Öyle mi? Tamam.
+
+566
+01:07:51,192 --> 01:07:53,172
+Ben kapatayım şehri.
+
+567
+01:07:53,251 --> 01:07:55,072
+Çalıştığınız şey bitsin.
+
+568
+01:07:55,831 --> 01:07:56,811
+Bitti hocam.
+
+569
+01:07:57,231 --> 01:07:57,491
+Tamam.
+
+570
+01:07:58,052 --> 01:07:59,331
+Ben şehri kapatıyorum.
+
+571
+01:08:00,112 --> 01:08:01,971
+Bizi otur göstermeydin önce.
+
+572
+01:08:02,132 --> 01:08:03,991
+Çalıştığını gösterdi ondan sonra.
+
+573
+01:08:04,511 --> 01:08:05,092
+Tamam hocam.
+
+574
+01:08:08,371 --> 01:08:09,911
+Sonucu göstereceksin.
+
+575
+01:08:11,751 --> 01:08:14,891
+Bu da medyan değerleri, bu VID'leri.
+
+576
+01:08:15,351 --> 01:08:17,692
+Tamam. Performans analizi yapmış mıydınız?
+
+577
+01:08:18,431 --> 01:08:18,672
+Evet.
+
+578
+01:08:18,912 --> 01:08:20,912
+Yaptık, onu da göstersek abi, bir raporda var.
+
+579
+01:08:22,592 --> 01:08:25,311
+Tek not, iki not karşılaştırması yaptınız mı?
+
+580
+01:08:25,844 --> 01:08:28,304
+Onu yapmadık biz. Büyük küçük verilerle yapmadık.
+
+581
+01:08:28,304 --> 01:08:33,423
+Tamam, veri büyürken yaptınız. Veri büyürken acaba şey nasıl değişiyor?
+
+582
+01:08:33,804 --> 01:08:34,244
+O şekilde.
+
+583
+01:08:34,244 --> 01:08:36,644
+Ama bunu tek not üzerinde mi yaptınız, iki not üzerinde mi?
+
+584
+01:08:36,664 --> 01:08:37,384
+Tek not üzerinde.
+
+585
+01:08:37,564 --> 01:08:42,923
+Var olan sitemizde yaptık sadece hocam. Yani iki not, iki data not, bir mail notu şeklinde.
+
+586
+01:08:43,404 --> 01:08:50,384
+Tamam, bunu da kabul ettim. Proje raporunuzu şu anda görüyorum. Bunu gönderdiniz.
+
+587
+01:08:50,804 --> 01:08:51,144
+Evet.
+
+588
+01:08:53,332 --> 01:08:56,412
+Projenizi gönderdiniz.
+
+589
+01:08:56,912 --> 01:08:57,872
+Evet hocam.
+
+590
+01:08:58,792 --> 01:09:00,592
+Ben isterseniz şeyi göstereyim şimdi.
+
+591
+01:09:00,712 --> 01:09:02,852
+Ekran paylaşımını al, kodları göstereyim.
+
+592
+01:09:03,652 --> 01:09:04,412
+Tamamdır.
+
+593
+01:09:09,971 --> 01:09:13,471
+Proje Proposal'ınızda belirttiğiniz dataset üzerinde çalıştınız değil mi?
+
+594
+01:09:13,912 --> 01:09:25,072
+Evet. Sadece burada tek bir fark oldu. Biz fonksiyonlarda Minimax ve Range'in ikisini de yapmışız. Ama sonra baktık ki Minimax ile Range aslında benzer şeyler yapıyor. Nerncesi aynı şey. O yüzden onun yerine Median kullanıyoruz.
+
+595
+01:09:25,252 --> 01:09:27,091
+Range yerine Median yaptık.
+
+596
+01:09:27,091 --> 01:09:35,551
+Sorun yok. Tamam. Şimdi mesela neyi göster? Standart deviation için MapReduce'u göster hızlıca.
+
+597
+01:09:35,988 --> 01:09:58,988
+Evet, tamam. Burada standart Hadoop şeylerini kullandık, kütüphanelerini kullandık yazarken. Şimdi Mapper'ı gösteriyorum. Mapper'da veriyi biz satır satır okuduk. Verinin formatını size göstereyim hatta. Veri şöyle satır satır, user ID, rating, tarih ve movie ID'den alışan bir veri kümesi. Burada biz standart deviation kısmında ilk önce movie ve rate paylarını bu veri kümesinden çıkarttık.
+
+598
+01:10:00,000 --> 01:10:19,000
+Reducer bu movie veriteleri input olarak alıyor. Burada bunları bu Reducer fonksiyonu bir key ve value'larını alıyor. Öncelikle value'ları bir listeye atıyor ve value'ları toplayıp kaç tane value olduğunu sayıyor en değerinde. Daha sonra bir average alıyor. Bunu çünkü standart devleti işine avac almamız gerekiyor.
+
+599
+01:10:19,359 --> 01:10:33,539
+Daha sonra bu value listinde biz tekrardan geziyoruz. Average'dan her bir value değerini çıkartıp bunun karesini alıyoruz. Daha sonra bunu difference gibi değişkenli tutuyoruz. Ve bunun kare köküne alıyoruz. Difference bölü, eleman.
+
+600
+01:10:33,959 --> 01:10:38,260
+Tamamdır. Teşekkür ederim. Bu kadar arkadaşlar.
+
+601
+01:10:39,319 --> 01:10:40,319
+Teşekkürler hocam.
+
+602
+01:10:40,520 --> 01:10:41,819
+[öğrenci]'ın başarılar diyorum.
+
+603
+01:10:42,279 --> 01:10:42,859
+Teşekkürler.
+
+604
+01:10:57,332 --> 01:11:01,612
+[öğrenci], Hemen ekranını açıyorsun. Bir de şey paylaşımı yapıyorsun.
+
+605
+01:11:04,092 --> 01:11:05,592
+Hocam, geliyor mu ekranım şu anda?
+
+606
+01:11:05,971 --> 01:11:09,652
+Evet, geliyor. Şu anda bana multi-note kurulumumu göstereceksin.
+
+607
+01:11:09,952 --> 01:11:10,771
+Single note hocam.
+
+608
+01:11:11,112 --> 01:11:12,832
+Single note. Bir saniye, ben geliyorum.
+
+609
+01:11:36,435 --> 01:11:38,335
+MultiNode'u yapabildin mi peki?
+
+610
+01:11:38,815 --> 01:11:40,975
+Yok yapamadım hocam o yüzden sadece sevinirim.
+
+611
+01:11:41,636 --> 01:11:47,815
+Tamam bana şeyi göster. Teknot kurulumu göster.
+
+612
+01:11:47,815 --> 01:11:53,775
+Bu arada çalışmadığını gösteriyorum. Burada Start All diyerek şeyi başlatıyorum.
+
+613
+01:11:58,131 --> 01:12:00,371
+GPS'te de şu anda portlarım gözüküyor.
+
+614
+01:12:06,131 --> 01:12:16,652
+Buradan hocam, Lime bir dakika gelmemiş galiba. Şu anda Lime Notes'da bir tane gözüküyor. Böyle bir teknozum var şu anda.
+
+615
+01:12:16,991 --> 01:12:25,051
+Tamam. Şimdi HDFS'e bir tane dosya atmak, dosya okumak, bununla ilgili bir kullanıcı ara yüzüm var mı?
+
+616
+01:12:25,571 --> 01:12:27,771
+Ara yüzüm var. Şöyle göstereyim.
+
+617
+01:12:32,724 --> 01:12:41,804
+Arayüzüm böyle. Buradan dosyamıza ekleyebiliyoruz. Buradan hedef kolamımıza bağlı olduğu kolamlar ve işlemi seçip başlatıyoruz.
+
+618
+01:12:42,084 --> 01:12:43,144
+Fakat şöyle bir...
+
+619
+01:12:43,144 --> 01:12:43,664
+Ama bu işlemi seçip başlatıyoruz.
+
+620
+01:12:43,664 --> 01:12:51,304
+Sen istesilik fonksiyonunu gösteriyorsun. Şimdi de HDFS'e bir tane dosya atmak, dosya okumak. Bu ayrı bir şey. Onu yapabiliyor musun?
+
+621
+01:12:51,623 --> 01:12:59,203
+Şuradan yapıyor. Buradan ben seçtiğim dosyayı, şuradaki komutumu göstereyim. Şuradaki put, bu komutla kendisi yapıyor.
+
+622
+01:12:59,604 --> 01:13:04,604
+Yani sen önce dosyayı atıyorsun, ondan sonra oradan onun üzerinde şeyi çalıştırıyorsun.
+
+623
+01:13:05,783 --> 01:13:12,703
+Peki mesela orada HDFS üzerindeki bir dosyayı okumak istediğinde ne yapacaksın?
+
+624
+01:13:13,444 --> 01:13:19,724
+Onun için aracı döküşü yapmadım. Yani sadece o işlem yaptığınız sonucunu şuradan chatle okuyabiliyorum.
+
+625
+01:13:20,115 --> 01:13:25,716
+Sadece REIT işlemini, daha doğrusu WRITE işlemini sen şey yapmış oldun.
+
+626
+01:13:25,895 --> 01:13:32,055
+Evet, ara yüzden bir aktarım işlemi yaptım. Ara yüzden sadece dosyayı seçiyorum, onu atıyorum.
+
+627
+01:13:32,416 --> 01:13:34,935
+Geri çekilmek üstündeki sonucu gösteriyor.
+
+628
+01:13:35,136 --> 01:13:41,556
+Okey, şimdi bana 5 tane farklı istatistik fonksiyonundan bir tanesini göster nasıl yaptığını.
+
+629
+01:13:41,775 --> 01:13:49,416
+Şöyle hocam, ben arayüzü yaptım fakat şu komutlar Windows'da yönetici izni istediği için burada çalıştıramıyorum. O yüzden...
+
+630
+01:13:49,779 --> 01:13:53,159
+Şeyde üzerinden göstermek istiyorum, bileceğim medya üzerinden.
+
+631
+01:13:53,500 --> 01:13:55,779
+Olmaz ki bu ama. Niye bunu halletmedin?
+
+632
+01:13:56,239 --> 01:14:06,879
+Çok uğraştım fakat Ubuntu'da yapan arkadaşlarım başarmışlar. Ben Windows'da kurduğum için bu yönetici izin istiyor. Sadece burada bu başlatma işlemini yapalım.
+
+633
+01:14:08,639 --> 01:14:12,920
+Yani GUI üzerinden şu anda demoyu yapamıyorsun. Commentline üzerinden yapıyorsun.
+
+634
+01:14:14,003 --> 01:14:18,904
+Comment line üzerinden bir tane mesela average işlemini şimdi bana göster.
+
+635
+01:14:19,404 --> 01:14:23,783
+Şuradan hemen putlu olarak. Eski dosyamdan hemen yapsam olur mu?
+
+636
+01:14:25,644 --> 01:14:30,783
+Şöyle hocam, Hadoop.jar diyorum. Program.jar benim şeyim.
+
+637
+01:14:32,703 --> 01:14:35,064
+Sistemi kurduğum şey olarak söyleyeyim.
+
+638
+01:14:36,724 --> 01:14:39,244
+O yüzden Hadoop.jar.
+
+639
+01:14:41,203 --> 01:14:42,103
+Sediyorum.
+
+640
+01:14:53,011 --> 01:14:55,551
+Şu anda input olarak şeyimi giriyorum.
+
+641
+01:15:04,115 --> 01:15:09,956
+Bu dosyayı yazdıracak. Nasıl bir şey isterseniz hocam? Hangi şey olsun? Bir ses, bir cell phone sayıyor.
+
+642
+01:15:10,855 --> 01:15:11,855
+Eğreç dediğim ya az önce.
+
+643
+01:15:12,095 --> 01:15:14,896
+Pardon. Şöyle AVG ediyorum, çalıştırıyorum.
+
+644
+01:15:45,492 --> 01:15:46,891
+Performans analizi yaptın mı?
+
+645
+01:15:47,271 --> 01:15:54,592
+Yapmadım hocam. Onu da yani kodunu ekledim fakat çalışmadığı için şöyle stop time ve start time'larım hazır.
+
+646
+01:15:55,271 --> 01:15:58,372
+Proje raporun var mı?
+
+647
+01:15:58,872 --> 01:15:59,372
+Evet hocam.
+
+648
+01:16:01,231 --> 01:16:06,452
+Raporum buradan. İki sayfa demiştiniz fakat şeyi sığdıramadım screenshotlardan.
+
+649
+01:16:07,791 --> 01:16:10,172
+Son dakika hazırlanmış gibi.
+
+650
+01:16:10,771 --> 01:16:19,672
+Yani çok öyle olmadı hocam. Ben zaten önceden yapmıştım. Hep şeyle uğraşıyordum. Ya kısa olmasın dediğinde biraz şey, bizi sınırlamıştınız. İki sayfa diye.
+
+651
+01:16:20,112 --> 01:16:21,231
+Projeni gönderdin mi?
+
+652
+01:16:21,971 --> 01:16:22,532
+Neyi hocam?
+
+653
+01:16:22,952 --> 01:16:24,112
+Projeni gönderdin mi?
+
+654
+01:16:24,391 --> 01:16:25,152
+Evet, gönderdim.
+
+655
+01:16:27,452 --> 01:16:30,551
+Kullandığın dataset'in proje proposluğunu ile aynı mı?
+
+656
+01:16:31,211 --> 01:16:36,652
+Evet. Orada linkini verdiğim dataset aynı hocam. Çalıştırma bitti.
+
+657
+01:16:52,372 --> 01:17:01,391
+Şöyle hocam, ortalamasını 2.26 olarak bulmuş. Datasetimde şu. Üçüncü satıra yapmıştık. Pardon, şunu yapmıştık.
+
+658
+01:17:01,492 --> 01:17:06,471
+Şimdi kodlarını aç. Kodlarını da hızlıca bana şeyi göster.
+
+659
+01:17:07,032 --> 01:17:08,492
+Bu iyi değil mi? Diğer şey değil.
+
+660
+01:17:09,012 --> 01:17:13,672
+Bir tane başka hangi statistiksel fonksiyonların vardı?
+
+661
+01:17:14,811 --> 01:17:17,551
+Topla sum var, average, range, min ve max var.
+
+662
+01:17:18,355 --> 01:17:22,175
+Tamam. Mini göster. Mini için.
+
+663
+01:17:26,235 --> 01:17:28,796
+Bediyesi göster ve şeyi göster bana.
+
+664
+01:17:37,427 --> 01:17:39,427
+Hocam, Reduce işlemini şurada yapıyorum.
+
+665
+01:17:40,327 --> 01:17:40,887
+Min için mi?
+
+666
+01:17:41,387 --> 01:17:41,907
+Buyurun.
+
+667
+01:17:42,608 --> 01:17:43,708
+Min için mi gösteriyorsun?
+
+668
+01:17:44,148 --> 01:17:46,347
+Yok, Reduce'ü şey olarak yapıyor.
+
+669
+01:17:47,628 --> 01:17:49,847
+Pardon, bu Map, hocam, kusura bakmayın.
+
+670
+01:17:50,148 --> 01:17:51,368
+Tamam, Reduce işlemini şurada.
+
+671
+01:17:52,427 --> 01:17:53,387
+Şurası Min için.
+
+672
+01:17:54,427 --> 01:17:56,108
+İşte Double Max diyerek şeyini alıyor.
+
+673
+01:17:56,628 --> 01:18:00,228
+Tamam, ama şu anda bana GetMin fonksiyonunu gösteriyorsun.
+
+674
+01:18:00,387 --> 01:18:04,007
+Bana Reduce nerede çağırıyorsun? Onu göster.
+
+675
+01:18:05,268 --> 01:18:06,847
+Tam anlayamadım hocam şu anda.
+
+676
+01:18:07,167 --> 01:18:15,528
+Senin Reduce diye bir tane, şimdi bu Reducer'ın, Data Reducer'ın içerisindeki metotları hızlıca.
+
+677
+01:18:15,528 --> 01:18:25,628
+Reduce diyorum hala anlamadım diyorsun. Şimdi burada hangi Reduce Type'ı gireceğini sen şeyden verip ilgili fonksiyonu çağırıyorsun.
+
+678
+01:18:26,448 --> 01:18:28,067
+Evet, parametre olarak alıp.
+
+679
+01:18:29,268 --> 01:18:31,807
+Öyle desene, parametreleştirdim de. Tamam.
+
+680
+01:18:32,564 --> 01:18:37,824
+Tamamdır, okey. Anlaştık. Senin bana sorun var mı?
+
+681
+01:18:38,304 --> 01:18:39,484
+Çok teşekkür ederim.
+
+682
+01:18:39,824 --> 01:18:41,504
+Olsun. Final sınavında başarılar derim.
+
+683
+01:18:46,963 --> 01:18:48,824
+[öğrenci], [öğrenci].
+
+684
+01:19:10,612 --> 01:19:12,032
+[öğrenci] sesim geliyor mu sana?
+
+685
+01:19:14,172 --> 01:19:19,291
+Evet hocam, ben 28'deydim de düştüm sonra tekrar katılmak zorunda kaldım.
+
+686
+01:19:19,311 --> 01:19:20,652
+Tekrardan Racing Room alıyorum.
+
+687
+01:19:24,627 --> 01:19:25,307
+Merhaba hocam.
+
+688
+01:19:26,127 --> 01:19:31,507
+Evet arkadaşlar, hemen ekranınızı paylaşın. Biraz yorum yapıyoruz.
+
+689
+01:19:37,011 --> 01:19:38,511
+Görüntü geliyor galiba hocam.
+
+690
+01:19:40,291 --> 01:19:41,111
+Evet arkadaşlar.
+
+691
+01:19:42,631 --> 01:19:47,011
+Evet, Multimod Hadoop kurulumunu göstereyim.
+
+692
+01:19:47,531 --> 01:19:49,251
+Tamam hocam, biz Ducker'la yaptık.
+
+693
+01:19:49,931 --> 01:19:56,271
+Ducker Compose dosyasının içine yerleştirdik hepsini ve Ducker Compose komutuyla kaldırıyoruz da bütün nodlarımızı.
+
+694
+01:19:56,271 --> 01:20:00,351
+Biz 3 tane DataNode kullandık daha fazla veri dağıtması için.
+
+695
+01:20:01,555 --> 01:20:25,415
+Burada da YAML dosyasını göstereyim. NameNode'un, DataNode'u birincisi, ikincisi, üçüncüsü, ResourceManager, NodeManager ve HistoryServer. Bunları burada ayarladık. Hepsinin ayrı ayrı Docker file'ları var. Oradan ayak kaldırıyor hepsini. Buradan NameNode'un bilgilerine ulaşarak DataNode'larını göstereyim hocam.
+
+696
+01:20:42,515 --> 01:20:45,475
+Zaten şey gösterdi ki, da da kalktı kanka.
+
+697
+01:20:45,995 --> 01:20:53,915
+Şimdi hocam, ilk önce name node'un içinden server başlatıyorlığına. Nasıl yaptığımızı anlatacağım hepsini.
+
+698
+01:21:02,452 --> 01:21:05,012
+Bana bir HDFS Client'i gösterecek misiniz arkadaşlar?
+
+699
+01:21:06,811 --> 01:21:10,152
+HDFS Client'i hocam, temlerden gösterebilirim hemen.
+
+700
+01:21:11,612 --> 01:21:12,952
+Kullanıcı arayüzünüz var mı?
+
+701
+01:21:13,311 --> 01:21:13,792
+Tabii var.
+
+702
+01:21:14,592 --> 01:21:16,391
+Ben kullanıcı arayüzünüzü göreyim.
+
+703
+01:21:17,032 --> 01:21:17,632
+Alıyoruz lan.
+
+704
+01:21:17,971 --> 01:21:19,872
+Bir saniye hocam, hemen başlatacağım.
+
+705
+01:21:21,652 --> 01:21:27,832
+Bir tane dosyayı, basit bir dosyayı HDFS'e yüklemeliyiz ve HDFS 2 dosyayı alıp
+
+706
+01:21:29,043 --> 01:21:31,844
+Hadoop'unu kopyalamanızı istiyorum.
+
+707
+01:21:33,283 --> 01:21:41,144
+Tamam hocam. Şöyle biz REST servisi kullandık. Yani büyük verideki işlemleri kullanmadan önce REST servisi kullanacağız.
+
+708
+01:21:41,664 --> 01:21:52,764
+Spring Boot'ta bir server kurduk. Bir de ön yüz hazırladık. Şimdi serverı ayağa kaldırıyorum. Server ayağa kalktıktan sonra da hemen ön yüzü göstereceğim şimdi size.
+
+709
+01:21:56,275 --> 01:22:00,595
+Buradan hocam ilk önce IP adresimizi yazıyoruz.
+
+710
+01:22:16,819 --> 01:22:28,159
+4000 portu. Burada dosyayı, hocam HDFS ile göstermemizi istediğimiz isim burası. Buraya test 1 diyorum. Dosya seçiyorum.
+
+711
+01:22:30,979 --> 01:22:39,739
+1 kilobayt hocam şunu koyuyorum. Dosyayı yükledi. Burada upload dedim de.
+
+712
+01:22:40,192 --> 01:22:47,931
+Gönderecek sisteme. Biraz sonra bize bildirim verecek. Hatta bunu şurada dosya gönderildi dedi.
+
+713
+01:22:47,971 --> 01:22:50,672
+Tamam, HDFS'de şimdi bana o dosyanın yüklendiğini göster.
+
+714
+01:23:00,372 --> 01:23:01,731
+Projenizi gönderdiniz.
+
+715
+01:23:02,492 --> 01:23:09,472
+Evet hocam, [öğrenci] olarak gönderdik. İçinde Jar ve JavaScript dosyaları olduğu için izin vermedi mail ile göndermemize.
+
+716
+01:23:10,532 --> 01:23:14,052
+Project Proposal'unuzdaki dataset'i kullanmanız değil mi?
+
+717
+01:23:14,231 --> 01:23:14,572
+Evet hocam.
+
+718
+01:23:15,231 --> 01:23:17,612
+Direkt aynısını kullandık. Hiçbir pre-proses yok.
+
+719
+01:23:18,792 --> 01:23:26,112
+Hocam, burada az önceki dediğimiz testtir datası 10 Haziran'da geldi. Saat olarak 3 saat farkı var.
+
+720
+01:23:26,479 --> 01:23:28,639
+Onun dışında test bir olarak geldi buraya.
+
+721
+01:23:29,000 --> 01:23:39,399
+Şimdi HDFS'deki bir dataset'i dosyayı okuyup file sisteme yazabiliyor musunuz? Şu anda HDFS'e write yapmayı gösterdin.
+
+722
+01:23:40,148 --> 01:23:50,448
+Sonuçları gösteriyoruz hocam. Mesela bir sonuç ürettiğimizde o sonucu arayüzde gösteriyoruz. Sayısal değerlerini alıyoruz. JSON formatına döndürdük dosyanın içeriğini.
+
+723
+01:23:50,448 --> 01:23:56,408
+Tamam, o zaman write işlemini yapmışsınız ama read işlemini yapmamışsınız. Bunu anladım.
+
+724
+01:23:57,507 --> 01:23:59,048
+Yani veri setini mi o?
+
+725
+01:23:59,539 --> 01:24:02,300
+Great işlemi istiyorsunuz hocam. Şöyle diyeyim.
+
+726
+01:24:03,200 --> 01:24:14,899
+Söylediğimi iyi dinle. HDFS'te duran bir tane dosyayı kullanıcı arayüzünden alıp Home'da kendi lokal dosya sistemini atmanı soruyorum. Bunu yaptınız mı?
+
+727
+01:24:15,039 --> 01:24:17,479
+Yok hocam. Biz sadece sonucu okuduk.
+
+728
+01:24:17,559 --> 01:24:24,360
+Şimdi bana kullanıcı arayüzünüz üzerinden beş tane farklı istatistik fonksiyonunu yaptığınızı gösterin.
+
+729
+01:24:24,360 --> 01:24:27,360
+Tamam hocam. Hocam, dataset...
+
+730
+01:24:27,539 --> 01:24:29,739
+Hadoop'ta mi göstereyim yoksa az önce yüklediğimizde mi?
+
+731
+01:24:30,260 --> 01:24:31,700
+2 KB'lik dosya vardı ya.
+
+732
+01:24:32,140 --> 01:24:34,020
+Evet, basit bir dasası üzerinde göster.
+
+733
+01:24:34,479 --> 01:24:37,159
+Tamam, 30 tane elemanı var hocam.
+
+734
+01:24:37,300 --> 01:24:38,700
+Counter yapıyorum ilk başta.
+
+735
+01:24:39,200 --> 01:24:40,539
+Buraya bir şey yazmamıza gerek yok.
+
+736
+01:24:40,880 --> 01:24:41,659
+Boş geçebiliriz.
+
+737
+01:24:41,800 --> 01:24:42,120
+Ne olacağız?
+
+738
+01:24:42,979 --> 01:24:45,180
+Şimdi işlem yapılıyor hocam.
+
+739
+01:24:46,520 --> 01:24:50,739
+Hatta burada şey, bu bizim rest servisimizin ekran çıplığı hocam.
+
+740
+01:24:51,180 --> 01:24:52,479
+Jab'ın kontrolü oldu.
+
+741
+01:24:53,100 --> 01:24:53,319
+Tamam.
+
+742
+01:24:53,823 --> 01:25:01,884
+İlerleme kaybedebilir. Burada şu an güncellemeleri alıyoruz. Şu an spor olduğu için herhangi bir güncelleme işlemi olmadı.
+
+743
+01:25:02,884 --> 01:25:08,183
+Şöyle biraz düşürteyim. Server'ın cevaplarını da görmek için açtım.
+
+744
+01:25:10,404 --> 01:25:16,043
+3 saniyede bir hocam, çok da sistemi yoğmamak için 3 saniyede bir cevap soruyorum.
+
+745
+01:25:19,764 --> 01:25:38,704
+İlk baştaki o iş kabul kısımları uzun sürdüğü için şu an şey oluyor. Şu an Mapper geldi. Mapper bittiğine dair ekran görüntüsünü verdik hocam. Burada büyük veride daha küçük adımlarla ilerliyor. Biz de ne gelirse onu yavaş yavaş gösteriyoruz hocam.
+
+746
+01:25:38,704 --> 01:25:40,503
+Tamam.
+
+747
+01:25:41,076 --> 01:25:56,076
+Şimdi biraz sonra sonucu dosya yazdı. Dosya hemen yazmadığı için hocam bir üç saniye daha bekleyip ondan sonra okuyorum dosyayı. Burada count işlemi yaptı. Borsa verisetimiz vardı bizim. Borsadaki hisselerin isimlerini saydı burada.
+
+748
+01:25:56,076 --> 01:25:59,476
+Tamam. Şimdi kodlarınızı açıp bana şeyi göstereyim.
+
+749
+01:26:01,076 --> 01:26:05,235
+Burası hocam şey, 5 tane istatistiksel fonksiyonumuzun arayüzü.
+
+750
+01:26:05,536 --> 01:26:08,556
+Standard deviation için mapper ve reduceru göster bana.
+
+751
+01:26:08,775 --> 01:26:10,176
+Tamam hocam, onu ben anlatayım.
+
+752
+01:26:10,935 --> 01:26:21,315
+Mapper'da bir şey yaptık, direkt key value olarak, mesela hissesiz netlerimizin değeri double ya, hissesiz netlerimizin değerini gönderdik.
+
+753
+01:26:21,315 --> 01:26:27,315
+Yanına da one koyarak bundan bir tane vardır diye. Aslında count'un bir benzeri mapper'da. Ondan sonra reducer'i...
+
+754
+01:26:27,796 --> 01:26:51,676
+Reducer'da da şu şekilde toplam bir de karelerin toplamı değişkenlerimiz var. Reducer'a her girişte şöyle bir şey oluyor. Mesela diyelim 13.1 değerinden 3 tane var. Aslında Reducer'a o an 13.1K olarak geliyor ve L olarak da 3 tane değer geliyor.
+
+755
+01:26:52,159 --> 01:27:12,159
+Yalnız söyledim, özür dilerim. Ha öyle, pardon. Ondan sonra bu for döngüsü şu işe yarıyor. Üç tane değer var dedim ya, üç tane değer sırasıyla geliyor, toplanıyor. Ondan sonra burada kareleri de toplanıyor. Ondan sonra eleman sayısını bulamak için for döngüsü her döndüğünde like bir arttırılıyor. Aşağıda varyans hesaplamada da zaten şey formülü direkt, karelerinin...
+
+756
+01:27:12,319 --> 01:27:26,719
+Toplamların karesi, ekse toplamın karesinin eleman sayısına bölümü, bölü eleman sayısı eksi bir. Ondan sonra da matematik kütüphanesinden kara kökü çağırarak kara kökünü alıyoruz varyansın. Ondan sonra da clean up fonksiyonumuzda bu çıktı ekrana basıyoruz.
+
+757
+01:27:27,739 --> 01:27:30,879
+Tamam. Performans analizi yaptınız mı? Tek not yap.
+
+758
+01:27:30,879 --> 01:27:32,279
+Yaptık. Raporda var hocam.
+
+759
+01:27:32,939 --> 01:27:38,259
+Çoklu not olarak yaptık. Şeyi de bastırdık, memori kullanımlarını.
+
+760
+01:27:38,739 --> 01:27:54,779
+Biz istatistiksel fonksiyonları burada karşılaştırdık. Ne kadar süre aldık ve ne kadar yaklaşık ettiklerine dair. Bunlar zaten Hadoop'un bize verdiği bilgiler. Biz de bu bilgileri kullanarak karşılaştırmalarını fonksiyonlar bazında yaptık. Çoklu not kullanılır.
+
+761
+01:27:56,239 --> 01:28:00,600
+Teşekkür ederim. 899 MHz'lık veritistiklerimizin tamamında bunu gerçekleştirdik.
+
+762
+01:28:02,039 --> 01:28:04,560
+Tamamdır arkadaşlar. Teşekkür ederim. Sorunuz var mı?
+
+763
+01:28:06,868 --> 01:28:18,188
+Bir de hocam isterseniz biz şey yapmıştık, herkesin erişimi için N-C-Roc kullanarak herkesin erişimini açmıştık aslında server. Bu zaman yetmediği için bunu gösteremedik.
+
+764
+01:28:19,108 --> 01:28:19,347
+Tamam.
+
+765
+01:28:20,608 --> 01:28:21,928
+Bahsetmek istedik sadece.
+
+766
+01:28:22,688 --> 01:28:24,248
+Tamamdır hocam. Tebrik ederim.
+
+767
+01:28:24,948 --> 01:28:25,828
+Teşekkürler hocam.
+
+768
+01:28:26,008 --> 01:28:27,608
+Teşekkürler.
+
+769
+01:28:53,779 --> 01:28:58,619
+Arkadaşlar, hemen kameralarınızı açın lütfen ve ekran paylaşımı yapın.
+
+770
+01:28:59,819 --> 01:29:01,839
+Tabii, hocam sesim geliyor mu acaba size?
+
+771
+01:29:02,139 --> 01:29:02,420
+Evet.
+
+772
+01:29:06,484 --> 01:29:07,724
+Benim sesimi görüyorum hocam.
+
+773
+01:29:08,084 --> 01:29:08,324
+Evet.
+
+774
+01:29:13,140 --> 01:29:17,939
+Şimdi bana Multinode kurulumu mu göstereceksiniz?
+
+775
+01:29:19,260 --> 01:29:23,340
+Şu an kurulmuş ve çalışıyor durumda hocam Hadoop Multinode sistemimiz.
+
+776
+01:29:23,760 --> 01:29:24,000
+Tamam.
+
+777
+01:29:25,119 --> 01:29:30,439
+Şöyle göstereyim, biz Ubuntu Virtual Machine'ı ne yaptık? Bir tane master, iki tane S&P'den oluşuyor sistem.
+
+778
+01:29:31,239 --> 01:29:31,519
+Tamam.
+
+779
+01:29:33,800 --> 01:29:35,340
+Şuradan gösterebilirim.
+
+780
+01:29:35,760 --> 01:29:36,579
+Çalıştığını bir görelim.
+
+781
+01:29:38,771 --> 01:29:51,072
+Burada data nodları görebiliriz, açık olduklarını. İki tane slay nodumuz var. File sisteminde şu an bir şey yok. Ona arayöze yükleme yapacağız şimdi.
+
+782
+01:29:55,828 --> 01:29:57,068
+Arayızı açayım mı hocam?
+
+783
+01:29:58,328 --> 01:30:08,568
+Evet, HDFS Client'ı ile bir tane dosya yükleyin ve yüklediğiniz dosyaya yüklendiğini görelim. Sonra da o dosyayı tekrardan okuyun, fail sisteme koyun.
+
+784
+01:30:11,568 --> 01:30:15,088
+Tabii ki şöyle hemen arayızı açalım.
+
+785
+01:30:23,507 --> 01:30:28,287
+Buradan select file diyorum hocam. Burada bizim veri setimiz var.
+
+786
+01:30:28,847 --> 01:30:29,807
+Csb şeklinde.
+
+787
+01:30:30,047 --> 01:30:33,367
+Bir dosya olsun arkadaşlar. Aynı dosya, büyük dosya koymayın.
+
+788
+01:30:35,227 --> 01:30:36,687
+Çok uzun sürmüyor zaten hocam.
+
+789
+01:30:37,687 --> 01:30:42,167
+Şimdi o dosyanın HDFS'te yüklendiğini göreyim.
+
+790
+01:30:46,739 --> 01:30:47,940
+Bir saniye.
+
+791
+01:30:52,319 --> 01:31:00,760
+Şöyle bir hata aldık ama yer yok gibi bir virüsünün beşinden kaynaklı bir sıkıntı çıktı galiba da.
+
+792
+01:31:01,980 --> 01:31:03,079
+İnstasyon Space diyor.
+
+793
+01:31:03,560 --> 01:31:05,819
+Okey, demoyu sonra yapmak ister misiniz?
+
+794
+01:31:08,212 --> 01:31:14,472
+Olur hocam. Az önce deneğimize çalışıyordu. Bu hatayı çözüp yakalık gösterme şansınız var mı acaba?
+
+795
+01:31:16,972 --> 01:31:28,272
+Sırayı arkadaşlarınıza vermek zorundasınız. Bu şekilde değerlendirtmeyin bana. Çalışan demo görmek durumundayım. Tamam mı? Çalışsın. Ondan sonra tekrardan sizi alırım.
+
+796
+01:31:29,811 --> 01:31:31,692
+Tamamdır hocam, teşekkür ederim.
+
+797
+01:31:31,911 --> 01:31:33,612
+Tamam, bu şekilde değerlendirmeyin.
+
+798
+01:31:34,051 --> 01:31:37,631
+Hocam, sırımız tam olarak nereye ertelenecekse yazabilir miyiz?
+
+799
+01:31:38,051 --> 01:31:39,991
+En sonu arkadaşlar, kusura bakmayın.
+
+800
+01:31:41,851 --> 01:31:42,931
+Sizi waiting room alıyorum.
+
+801
+01:31:45,431 --> 01:31:46,211
+Tamamdır.
+
+802
+01:31:54,771 --> 01:31:59,531
+[öğrenci], [öğrenci], [öğrenci].
+
+803
+01:32:20,243 --> 01:32:26,743
+Evet arkadaşlar, kameralarınızı açın ve şey yapın. Ekran görüntüsü paylaşın.
+
+804
+01:32:28,503 --> 01:32:29,123
+Tabii hocam.
+
+805
+01:32:29,724 --> 01:32:32,423
+İkimiz de paylaşalım mı hocam? Yoksa bir yerden paylaştık.
+
+806
+01:32:32,823 --> 01:32:35,844
+İkiniz paylaşsanız olmuyor, biriniz paylaşabiliyorsunuz.
+
+807
+01:32:36,384 --> 01:32:37,583
+Öyle mi zaten? Tamam.
+
+808
+01:32:38,663 --> 01:32:40,243
+Ama şöyle...
+
+809
+01:32:40,783 --> 01:32:45,823
+Benim internetim şu an hem ekran açsam hem kamera açsam birazcık yetersiz kalacak gibi.
+
+810
+01:32:46,063 --> 01:32:50,724
+Tamam, şu an ekranını, kameranı kapatabilirsin.
+
+811
+01:32:51,224 --> 01:32:52,224
+Tamamdır, teşekkür ederim.
+
+812
+01:32:52,243 --> 01:32:52,943
+[öğrenci].
+
+813
+01:32:54,224 --> 01:32:54,783
+Benim kalabilir.
+
+814
+01:32:55,144 --> 01:33:01,023
+Evet, şimdi bana hemen bir Hadoop kurulumu gösterin. Tek not mu göstereceksiniz, multi-not mu?
+
+815
+01:33:01,543 --> 01:33:02,884
+Multi-not gösteriyoruz hocam.
+
+816
+01:33:02,943 --> 01:33:04,703
+Tamam, güzel, multi-not'ı yapabilirsiniz.
+
+817
+01:33:05,423 --> 01:33:05,644
+Evet.
+
+818
+01:33:06,387 --> 01:33:22,648
+Hocam şöyle, burada gösteririz diye direkt başlatmadan önce şöyle göstereyim. Biz Docker'la çalıştık hocam. Docker'ı da şöyle göstereyim size çalışan nodlar. Master'ımız burada, slave1, slave2, 3 tane cluster'ımız var yani şu anda.
+
+819
+01:33:25,300 --> 01:33:31,020
+Öncelikle neyi gösterelim bu arada hocam? Şu an üçü de çalışır vaziyette bu arada. Şeyi başlatayım ben.
+
+820
+01:33:31,840 --> 01:33:36,260
+Prozularınızı açıp Hadoop cluster'ınızın çalıştığını gösterebilirsiniz.
+
+821
+01:33:37,400 --> 01:33:41,120
+Başlatayım şimdi hemen Hadoop'u. Gösterelim.
+
+822
+01:33:43,720 --> 01:33:47,800
+Ondan sonra da HDFS client'i yaptınız mı? Dosyayı atan, okuyan.
+
+823
+01:33:48,212 --> 01:34:11,311
+Evet. Şöyle hocam o, bizim portta yani şöyle diyeyim normalde 570 portuna çalışıyordu notlar ama bende o not şey port pardon çalışmadı. Bende onun portunu değiştirdim. Bu sefer de direkt porta bağlantı sağlayamadık ama bütün application'ları gösteren bir tane porta şimdi bağlanayım hemen gösteriyorum.
+
+824
+01:34:12,979 --> 01:34:17,399
+Yaptınız mı, yapmadınız mı? Onu soruyorum. Yani HDFS client'ınız var mı?
+
+825
+01:34:18,039 --> 01:34:25,579
+Var hocam. Onu şu şekilde göstereceğiz size. Yine konsoldan gösterelim size. Burada notlarımızı görüyorsunuz.
+
+826
+01:34:26,399 --> 01:34:32,159
+Tamam. Hadoop kurulumunu gördüm. Şimdi HDFS client'ını soruyorum.
+
+827
+01:34:32,692 --> 01:34:39,511
+HDFS Client eğer browserdan açılandan bahsediyorsanız browser erişim sağlamıyoruz hocam ama buradan gösterebiliriz hemen şimdi.
+
+828
+01:34:40,092 --> 01:34:59,072
+Ayrı bir uygulamadan bahsediyorum arkadaşlar. Ayrı bir kullanıcı arayüzü üzerinden dosya sisteminde bir tane dosya seçip HDFS'i atacaksınız. Bana HDFS'i browserda o dosyanın yüklendiğini göstereceksiniz. Sonra o dosyayı oradan alıp tekrardan kendi local file sisteminize koyacaksınız.
+
+829
+01:35:00,692 --> 01:35:03,471
+Koyduğunuzu göstereceksin. Bunu yapabiliyor musunuz?
+
+830
+01:35:03,672 --> 01:35:09,992
+Şöyle hocam, bunu konsoldan gösterebilirim size ama yani browserdan gösteremiyorum.
+
+831
+01:35:10,112 --> 01:35:11,912
+Çünkü dediğim gibi porta bağlantı sağlayamıyoruz.
+
+832
+01:35:11,912 --> 01:35:17,612
+Ama şu şekilde bir şey gösterebilir miyim hemen size? En azından Hadoop'u buradan kullandığımızı görün.
+
+833
+01:35:19,988 --> 01:35:23,368
+Bu direkt Hadoop'un FF ve PUT komutlarıyla koyuyoruz yani.
+
+834
+01:35:23,587 --> 01:35:31,988
+Aynen hocam. Bunları biz oraya PUT'la yerleştirdik. Yani Browser'dan bahsettiğiniz şey anladım sizin böyle ekranda name, note, yeşil bir ekran bundan bahsediyorsunuz.
+
+835
+01:35:32,847 --> 01:35:39,387
+Buraya erişim sağlayamadığımız için biz direkt konsol üzerinden bunun içine PUT'la Bitcoin, tweet mesela bunu kullanıyoruz, CSV dosyasını.
+
+836
+01:35:39,768 --> 01:35:42,028
+Buraya PUT'la erişim sağlamıştık, buraya koymuştuk.
+
+837
+01:35:42,028 --> 01:35:42,307
+Evet.
+
+838
+01:35:42,807 --> 01:35:47,028
+Tamam. Şimdi daha beş tane istatistik fonksiyonu.
+
+839
+01:35:47,988 --> 01:35:56,028
+Sizin sunucuda duran bir veri seti, HDFS ürünleri ve veri seti üzerine çalıştıran şeyi gösterin. Bunun için bir kullanıcı arayüzünüz var mı?
+
+840
+01:35:56,768 --> 01:36:02,188
+Kullanıcı arayüzümüz, hocam şöyle göstereyim size ama biz bu konuda şey yapamadık yani.
+
+841
+01:36:03,307 --> 01:36:04,248
+Birleştiremedik hocam.
+
+842
+01:36:04,248 --> 01:36:05,007
+Birleştiremedik.
+
+843
+01:36:05,007 --> 01:36:08,127
+Bu ile Dakar'ı birbirine bağlayamadık.
+
+844
+01:36:08,340 --> 01:36:20,140
+Normalde görüyor musunuz şu anda şöyle bir arayüzümüz vardı. Hani butonları mesela bastığımız anda bize çıktı verecek bir arayüz tasarımı yaptık, sağladık bunu ama bunun dakra...
+
+845
+01:36:20,180 --> 01:36:34,640
+Hatta bunun şeyine de yaptık hocam. Bunların normalde butonlarına şey de ekledik. Bulunduğu command prompta yeni komut yazacak şekilde klikli sınırlar da ekledik ama sonra CR yapıp Docker attığımızda Docker'da version of işte hatası aldık burada şey.
+
+846
+01:36:35,060 --> 01:36:38,700
+Command line üzerinden yapabiliyor musunuz? Command line üzerinden.
+
+847
+01:36:39,100 --> 01:36:39,320
+Evet.
+
+848
+01:36:39,320 --> 01:36:41,360
+Average yapalım mesela.
+
+849
+01:36:41,360 --> 01:36:44,460
+Evet. Tabii ki. Tabii ki. Hemen şuradan şeyi.
+
+850
+01:36:45,300 --> 01:37:09,300
+Geçiş yapayım şuraya. Buradaki jar dosyalarını hemen düzenlememiz lazım hocam. İki dakikanızı rica edeceğim. İki dakikam yok. Kaç? Hemen hemen hemen saniyeler içinde yapıyorum. Ben niye şu an yapmıyorum deyip otuz beş kişi bekliyor. Yarım saat sonra artık benimle ilgili güzel şeyler söylemeye başlayacaklar. Saniyelerim var yani.
+
+851
+01:37:10,355 --> 01:37:15,155
+Hocam zaten herhalde bitmiş, az kalmış. Biz S'de ikimiz de bekliyorduk. Herhalde inşallah az kalmış.
+
+852
+01:37:16,596 --> 01:37:21,355
+Evet, jar'ı bağladık şu anda. Şimdi de çalıştırıp...
+
+853
+01:37:23,036 --> 01:37:25,155
+Bana bir tane istiksel fonksiyonu...
+
+854
+01:37:25,155 --> 01:37:28,596
+Evet hocam, modu gösteriyoruz şu anda size. Modu göstermeye çalışıyoruz.
+
+855
+01:37:29,416 --> 01:37:32,296
+Mod jar, her şey tamam herhalde.
+
+856
+01:37:38,292 --> 01:37:39,812
+Şeyden de göstersen [öğrenci].
+
+857
+01:37:40,372 --> 01:37:40,992
+Aynen, tamam.
+
+858
+01:37:43,272 --> 01:37:44,652
+Performans analizi yaptınız mı?
+
+859
+01:37:45,092 --> 01:37:47,212
+Evet, makalelerimiz bir şey de var.
+
+860
+01:37:47,512 --> 01:37:51,552
+Bunu tek not, iki not mu yaptınız? Nasıl yaptınız?
+
+861
+01:37:52,312 --> 01:37:54,272
+Şöyle, [öğrenci] sen konuş.
+
+862
+01:37:54,572 --> 01:38:02,552
+İki notla bir notu kıyaslayarak yaptık zaten. Yani bir not çalışırken zaten bir dağılım olmadığı için iki notla çalıştırdığımızdaki arasındaki süre farkını göstererek yaptık.
+
+863
+01:38:02,996 --> 01:38:08,296
+Raporu hatta bu süre zarfında raporu gösterelim. Açayım ben hemen.
+
+864
+01:38:08,416 --> 01:38:12,656
+Bence şu anda sadece demoyu göster. Sarcan da konuşsun.
+
+865
+01:38:13,296 --> 01:38:17,616
+Teknot, ikinot sonuçlarını bütün fonksiyonlar için gösterdiniz mi raporunuzda?
+
+866
+01:38:18,256 --> 01:38:23,796
+Bütün fonksiyonlar için değil. Orada solunda yazıyor. Mean function için gösterdik.
+
+867
+01:38:24,516 --> 01:38:25,976
+Neden diğerleri için göstermek?
+
+868
+01:38:28,307 --> 01:38:33,247
+Hocam, onun aslında hepsi için değil de en azından burada farkında...
+
+869
+01:38:33,247 --> 01:38:58,387
+Farkını, hayır yok. Farkını hani mesela süre farkından hani performans analiz dediğimizde biz öyle bir şey anladık. Yani başlangıç ve bitiş zamanlar arasındaki fark ne kadar büyüyebilir? Mesela tek notla çalışsa ne kadar olur? İki notla çalışsa ne kadar olur? Bu şekilde bir fark oluşturduk. Mesela şu anlarda bu cluster'da sadece tek bir not aktifti. Şurada 8 dakikalık bir süre zarfı var. Burada da mesela saniyeler içinde falan bitirmiş cabını.
+
+870
+01:39:01,247 --> 01:39:13,608
+fonksiyonlar için tek notluk cluster'da çalıştırırsanız ne olur? İki notluk cluster'da çalıştırırsanız ne olur? Nasıl bir ölçeklenebilirlik elde ediyorsunuz MapReduce'a onu görmek istiyordum. Şimdi proje raporunu gönderdiniz.
+
+871
+01:39:16,608 --> 01:39:18,528
+MapReduce fonksiyonu da çalıştı.
+
+872
+01:39:20,188 --> 01:39:20,507
+Evet.
+
+873
+01:39:21,148 --> 01:39:22,608
+Şu anda bunu gösteriyorsun.
+
+874
+01:39:23,207 --> 01:39:27,247
+Evet, MapReduce fonksiyonu sonucunu göstereceğim hocam. CAT ile hemen size göstereceğim.
+
+875
+01:39:27,648 --> 01:39:28,328
+Tamam, görelim.
+
+876
+01:39:32,212 --> 01:39:33,552
+Projenizi gönderdiniz.
+
+877
+01:39:34,352 --> 01:39:35,032
+Gönderdik.
+
+878
+01:39:35,092 --> 01:39:37,632
+Projemizi gönderdik hocam. Fonksiyonlarımız da hazırdı.
+
+879
+01:39:38,732 --> 01:39:39,052
+Şuraya hemen.
+
+880
+01:39:39,052 --> 01:39:43,932
+Projede, Proposal'da bahsettiğiniz dataset'i mi kullanmanız?
+
+881
+01:39:44,292 --> 01:39:44,572
+Evet.
+
+882
+01:39:44,572 --> 01:39:46,152
+Bitcoin tweets.
+
+883
+01:39:47,572 --> 01:39:53,572
+Şey var, Bitcoin ile alakalı atılmıştan önce tweetler, favori sayıları, retweet sayıları ve atıldığı tarihler var.
+
+884
+01:39:54,872 --> 01:39:58,252
+Biz de favori ve retweetli sayıları üzerinden işlemler yaptık.
+
+885
+01:39:59,012 --> 01:39:59,932
+Evet hocam, şu anda.
+
+886
+01:40:00,000 --> 01:40:04,939
+Bu suçtu görüyorsunuz. Retweet sayısının sıfır olduğunu görüyoruz. Bunu da şu şekilde teyit etmek istedik hocam.
+
+887
+01:40:05,840 --> 01:40:16,500
+PyCharm'da bu şeyi aldık biz. Bitcoin tweetsi attık bunun içerisine. PyCharm'da da DataFrame'den faydalanarak dedik ki bunun retweet kolumunun modunu bulalım.
+
+888
+01:40:16,979 --> 01:40:19,319
+Onun da cevabını şuradan teyit edebiliriz.
+
+889
+01:40:19,920 --> 01:40:21,539
+Şimdi bana kodları açın.
+
+890
+01:40:22,139 --> 01:40:22,899
+Kodları açın.
+
+891
+01:40:23,619 --> 01:40:24,099
+Hemen.
+
+892
+01:40:26,515 --> 01:40:31,475
+Şurada kodlarımız şunlar.
+
+893
+01:40:32,295 --> 01:40:38,655
+Tamam, bana burada standart devir işim için şeyi gösterin, MapReduce'u gösterin bakalım.
+
+894
+01:40:39,195 --> 01:40:41,555
+Gösterelim hocam. Burası MapReduce.
+
+895
+01:40:42,612 --> 01:41:07,132
+Tamam. Hocam, öncelikle Standart Deviation'da float değer elde edebilmek için buradaki tipini float olarak değiştirme yaptık. Daha sonra başlangıçta biz bir line alıyoruz. İlk line, hani CSV dosyası da ilk girdik, bir satır aldık. Daha sonrasında tokenizer ediyoruz. Split ediyoruz en son. Virgüllerle ayırıyoruz. Bunların içindeki dördüncü kolumda olduğu için.
+
+896
+01:41:07,764 --> 01:41:09,724
+Bu şey favoriler, hayır.
+
+897
+01:41:10,344 --> 01:41:13,703
+Aynen, aynen, doğru, doğru. Standart deviation favoriler için hesapladık.
+
+898
+01:41:14,243 --> 01:41:23,543
+Dördüncü kolumda yer aldığı için bunun dördüncü değerini alıp float'a parse edip daha sonrasında da output'a bunun içine veriyoruz çıkan değeri.
+
+899
+01:41:23,703 --> 01:41:25,003
+Bütün değerler için bunu yapıyoruz.
+
+900
+01:41:25,524 --> 01:41:31,684
+Sonra öyle düz kısmındaysa başlangıçta şey yani burada artık klasik standart deviation hesabı yaptık.
+
+901
+01:41:32,604 --> 01:41:35,564
+Başlangıçta burada bir cache mantığı var hocam.
+
+902
+01:41:35,764 --> 01:41:43,984
+Biz değerleri alıyoruz. Daha sonrasında main hesaplamasından sonra kullanacağımız için tekrardan bir for döngüsüne koymak üzere cache yapısı kullandık.
+
+903
+01:41:44,323 --> 01:41:45,064
+İki kere dönüyor yani.
+
+904
+01:41:45,364 --> 01:41:54,283
+Aynen iki kere hesaplama yaptırmak için böyle bir çıktığımız var. Yine output'a biz sonucu yapıştırıyoruz. Bu da main fonksiyonumuz zaten.
+
+905
+01:41:54,364 --> 01:41:56,144
+Tamam arkadaşlar. Sorunuz var mı?
+
+906
+01:41:57,024 --> 01:41:57,323
+Yok.
+
+907
+01:41:57,583 --> 01:41:58,184
+Yok hocam.
+
+908
+01:41:58,543 --> 01:41:59,944
+Başarılar derin finansının önünde.
+
+909
+01:42:00,503 --> 01:42:02,043
+Teşekkürler. İyi akşamlar.
+
+910
+01:42:02,444 --> 01:42:02,984
+İyi akşamlar.
+
+911
+01:42:13,203 --> 01:42:19,543
+[öğrenci] seni waiting room'a koyuyorum. Sıran geldiğinde seni çağıracağım.
+
+912
+01:42:20,083 --> 01:42:20,663
+Tamam hocam.
+
+913
+01:42:22,683 --> 01:42:29,483
+[öğrenci] hızlı bir şekilde ekranını aç. Hemen kameranı aç ve ekran paylaşımı yap.
+
+914
+01:42:30,043 --> 01:42:30,723
+Tamam hocam.
+
+915
+01:42:35,444 --> 01:42:58,144
+Ekranım da geldi şu an. Bana şimdi bir not kurulumunu göstereceksin, multi-not kurulumu mu? Ben sadece evet multi-not şeklinde yaptım. Tamam. Testlere bunun üstünden yaptım yani. Tamam. Şimdi bana hemen bir multi-not'un çalıştığını göster, kurulumun çalıştığını göster. Yani onu notlardan gösterebilirim.
+
+916
+01:43:01,492 --> 01:43:13,131
+Veya arayüzden gösterebilirim. Hani şuradaki arayüzden gösterebilirim. Oradan göster işte. Kaç tane Live Note olduğunu görelim. Şurada iki tane Live Note gözüküyor.
+
+917
+01:43:27,060 --> 01:43:31,500
+Aynı şekilde. Direkt arayüzden de gösterebilirim. Arayüzden istiyorum zaten.
+
+918
+01:43:31,840 --> 01:43:36,840
+Tamam. Her seferinde zaten üzerinde yazıyor tekrardan.
+
+919
+01:43:36,960 --> 01:43:38,960
+Dosya seç. Küçük bir dosya seç.
+
+920
+01:43:39,840 --> 01:43:41,120
+Küçük bir dosya mı seçeyim?
+
+921
+01:43:41,440 --> 01:43:45,440
+Evet. Şu an örnek oraya yüklemek için basit küçük bir dosya seç.
+
+922
+01:43:46,080 --> 01:43:51,240
+Yani küçük dosya seçersen bu sefer bunlar çalışmayacak ama diğerlerini gösteremeyeceğim.
+
+923
+01:43:53,640 --> 01:43:54,060
+Anlamadım.
+
+924
+01:43:54,963 --> 01:43:58,484
+Küçük dosya seçersen bu sefer de şeyleri gösteremeyeceğim.
+
+925
+01:43:58,944 --> 01:44:06,144
+Hayır, sen oraya yüklediğin dosya üzerinden mi bu şeyleri yapıyorsun? Beş tane istatistiksel fonksiyonu yapıyorsun?
+
+926
+01:44:06,583 --> 01:44:09,064
+Evet, tabii. Yani tek bunlar.
+
+927
+01:44:09,064 --> 01:44:18,243
+Tamam, benim sana söylediğim başka bir şey. Ben sana diyorum ki onlardan bağımsız olarak bir tane dosyayı atmak.
+
+928
+01:44:18,591 --> 01:44:23,671
+Ondan sonra o dosyayı HDFS'den alıp okumak. Onu yapmamışsın diye anlıyorum.
+
+929
+01:44:24,011 --> 01:44:29,152
+Yok yaptım yaptım. Şunu mesela atayım şu an içinde ne var ben de bilmiyorum ama bir bakayım ya da önce.
+
+930
+01:44:29,792 --> 01:44:35,492
+Ya da istediğin dosyayı at. Hani diğerlerin üzerinde çalışabileceğin istediğin dosyayı at ama boyutu çok büyük olmasın.
+
+931
+01:44:35,851 --> 01:44:38,171
+Yani iki dakika sürüyor diğer dosyada.
+
+932
+01:44:38,471 --> 01:44:40,872
+Dakika çok uzun. O kadar hayat şeyimiz yok yani.
+
+933
+01:44:41,412 --> 01:44:42,532
+Tamam şunu da atayım o zaman.
+
+934
+01:44:42,532 --> 01:44:43,292
+At bakalım.
+
+935
+01:44:44,492 --> 01:44:45,652
+İçinde ne vardı ben de bilmiyorum.
+
+936
+01:44:46,899 --> 01:44:48,799
+Böyle bir dosyaymış.
+
+937
+01:44:48,919 --> 01:44:52,779
+Browser'da yükledin mi onu? HDFS'i yüklediğini gördün mü?
+
+938
+01:44:53,519 --> 01:44:55,919
+Yani çok küçük olduğu için hemen yüklendi.
+
+939
+01:44:56,879 --> 01:45:02,459
+Tamam, şimdi write işlemini yaptığını gördüm. Ne yaptın? Sen şimdi HDFS'e write yaptın.
+
+940
+01:45:02,919 --> 01:45:03,179
+Evet.
+
+941
+01:45:03,439 --> 01:45:08,059
+Şimdi HDFS'teki o dosyayı read yapabiliyor muyuz?
+
+942
+01:45:08,431 --> 01:45:14,172
+Evet, orada ilk beş satırını okudum. Aslında kodda direkt kaç satır önersem?
+
+943
+01:45:14,692 --> 01:45:20,811
+Read'den kastım farklı, beni dinlemiyorsun. Oradaki dosyayı alıp lokal file sistemi atabiliyor muyuz şimdi?
+
+944
+01:45:21,952 --> 01:45:24,112
+AT değil mi? Hayır, tekrar geriye kopyalamıyorum.
+
+945
+01:45:24,112 --> 01:45:27,311
+Tamam, işte o eksik kalmış. Ben ondan bahsediyorum.
+
+946
+01:45:27,692 --> 01:45:27,971
+Tamam.
+
+947
+01:45:28,632 --> 01:45:32,431
+Tamam, şimdi bana bu beş tane istatistik fonksiyonun...
+
+948
+01:45:33,332 --> 01:45:36,052
+Kullanıcı arayüzü üzerinden göster bakalım.
+
+949
+01:45:36,712 --> 01:45:43,311
+Tamam. Öncelikle text file'ları üstünde yaptığım için önce hepsinin kaçer tane olduğunu sayıyorum.
+
+950
+01:45:43,452 --> 01:45:47,612
+Yani her kelimeden kaçer tane olduğunu sayıyorum. Daha sonra sayılır üzerinden.
+
+951
+01:45:48,015 --> 01:46:11,835
+Bu işlemleri yapıyorum. Yani şeyde de o şekildeydi. Rapora da zaten, ilk Proposal'da da o şekilde yazmıştım. Kelime sayıları üzerinden. O yüzden önce bir count yapıyorum. Şu yüklediğin dosya üzerinden mi yapacaksın bunu? Evet. Diğerinin üzerine yazdı çünkü. Bu şekilde saydı bunları. Mesela Max'a bakalım.
+
+952
+01:46:14,131 --> 01:46:15,631
+Max gözüktü burada.
+
+953
+01:46:16,612 --> 01:46:16,872
+Tamam.
+
+954
+01:46:19,192 --> 01:46:20,931
+Süreler falan tabii çok kısa oldu.
+
+955
+01:46:21,311 --> 01:46:21,831
+Küçük olduğu için.
+
+956
+01:46:22,072 --> 01:46:22,251
+Tamam.
+
+957
+01:46:22,711 --> 01:46:26,011
+Şimdi bana kodlarını aç hızlı bir şekilde.
+
+958
+01:46:26,471 --> 01:46:30,791
+Standart deviation için Mapper ve Reducer'ı nasıl imkidat ettiğini hızlıca anlat.
+
+959
+01:46:31,072 --> 01:46:31,351
+Tamam.
+
+960
+01:46:32,351 --> 01:46:35,931
+Standart sapma için bir internetten formül buldum.
+
+961
+01:46:35,931 --> 01:46:36,931
+Çünkü...
+
+962
+01:46:37,268 --> 01:46:56,568
+Öncelikle ortalamayı hesaplayıp daha sonra her farkları bulmak falan iki tane for döngüsü gerektiriyordu. Tek döngüde, tek map işleminde, tek döngüde standart sapmayı, daha doğrusu karelerinin farkını bulan bir formül buldum. Onu uyguladım.
+
+963
+01:46:56,568 --> 01:47:04,568
+Yani nümerik bir yöntem tabii ki tam sonuç çıkmıyor. Tam sonu yaklaşık bir sonuç çıkartıyor. Tek döngüde bir map'teki...
+
+964
+01:47:05,235 --> 01:47:19,715
+Kareleri farkını buluyor. Daha sonra Reduce'da da yine bu kareleri farkını birleştiren ayrı bir formül var. Yine ayrı bir paralel algoritması aynen. Bunları da tekrar birleştiriyor. Belli bir formüle göre.
+
+965
+01:47:21,555 --> 01:47:26,036
+Tamam. Bir tane de başka bir tane şey göster bana. Fonksiyon implementasyonunu göster.
+
+966
+01:47:26,036 --> 01:47:29,036
+Tamam. Mesela...
+
+967
+01:47:30,163 --> 01:47:50,444
+Max için göstereyim. Max için de Map'te hiçbir şey yazdırmıyorum. Write'ı sadece Mapper'ın Cleanup'ında yazdırıyorum. Bir Map içindeki en yükseği yazdırıyorum sadece. Map'lenmiş dosyanın sonuna. Reduce'da da yine aynı şekilde. Reducer'da da hiçbir şey yazmıyorum.
+
+968
+01:47:52,340 --> 01:47:59,220
+Yani hepsi arasından en büyük max'ın hangisi olduğunu seçiyorum. Daha sonra cleanup'ın da bir kere sadece max'ı yazdırıyorum.
+
+969
+01:48:00,819 --> 01:48:04,939
+Tamam, performans analizi yaptın mı? Tek not, iki not arasındaki şey?
+
+970
+01:48:05,119 --> 01:48:07,260
+Yok, hepsini işte iki not için yaptım.
+
+971
+01:48:08,319 --> 01:48:13,000
+Yani performans analizini ne yaptın? Fonksiyonların birbiriyle karşılaştırması şeklinde mi yaptın?
+
+972
+01:48:13,000 --> 01:48:19,599
+Evet, o şekilde. Yani şu şekilde stem nasıl? Mediam ve sum biraz daha uzun sürdü.
+
+973
+01:48:19,952 --> 01:48:22,551
+Yerlere, yani birbirine yakın çıktı.
+
+974
+01:48:26,228 --> 01:48:27,728
+Proje raporunu gönderdin mi?
+
+975
+01:48:28,287 --> 01:48:29,167
+Evet, rapor da bu.
+
+976
+01:48:30,927 --> 01:48:32,268
+Göster bakalım hızlıca.
+
+977
+01:48:32,867 --> 01:48:33,547
+Rapor burası.
+
+978
+01:48:36,447 --> 01:48:36,768
+Okey.
+
+979
+01:48:38,547 --> 01:48:39,907
+Projeni gönderdin mi?
+
+980
+01:48:40,527 --> 01:48:41,587
+Kodları da gönderdim, evet.
+
+981
+01:48:42,807 --> 01:48:45,127
+Kullandığın Veri Set Project Proposal ile aynı mı?
+
+982
+01:48:46,207 --> 01:48:47,427
+Evet, Proposal 2.
+
+983
+01:48:48,268 --> 01:48:49,707
+CSV dosyunu kullandım.
+
+984
+01:48:51,007 --> 01:48:53,667
+Tamam, başka söyleyeceğim bir şey var mı?
+
+985
+01:48:54,163 --> 01:48:55,224
+Yok yani bu kadar.
+
+986
+01:48:55,743 --> 01:48:57,384
+Tamamdır. Başarılar dilerim.
+
+987
+01:48:58,043 --> 01:48:58,983
+Tamamdır. Sağ olun.
+
+988
+01:48:59,903 --> 01:49:01,344
+İyi günler.
+
+989
+01:49:29,140 --> 01:49:33,520
+Evet arkadaşlar, kameralarınızı açın, hemen bir ekran paylaşımı yapın.
+
+990
+01:49:34,680 --> 01:49:38,360
+Ben hemen başlıyorum hocam, sonra da [öğrenci] devam edecek.
+
+991
+01:49:39,420 --> 01:49:40,480
+Merhaba hocam, bu arada.
+
+992
+01:49:41,079 --> 01:49:42,140
+Evet hocam.
+
+993
+01:49:44,699 --> 01:49:51,440
+Öncelikle hocam, şurada da kraya kaldırdığımız komut var. İki notla şu anda kaldırıyoruz.
+
+994
+01:49:51,739 --> 01:49:54,380
+Tamam, iki notluk bir Hadoop kurulu mu göstereceksin falan hocam?
+
+995
+01:49:55,315 --> 01:50:18,035
+Evet. Ben hemen burada şeyi gösterecektim bir de. Nereden değişikliği yaptığımızı. Şurada da kıradıp klasörümüzün altında bir YML dosyamız vardı. Bunu ben şurada açmıştım. Bunun için de işte data notları mesela bir ile çalıştırmak istediğimizde buradan işte gereken şeyleri, düzenlemeleri yapıyoruz. Sonrasında bir ile devam edebiliyoruz.
+
+996
+01:50:20,564 --> 01:50:39,344
+Bir de işte Loculose ile buradan aktif olup olmadığını, input datalarımızı falan görebiliyoruz. Şuradaki File System kısmından User Root altına atmıştık biz datasetimizi. Ama şimdi [öğrenci] bize tek tek bütün komutları gösterecek zaten. Hani veriyi nasıl attık, işte jar dosyasını nasıl oluşturduğumuz falan.
+
+997
+01:50:40,243 --> 01:50:45,463
+Hocam bir de şey, dataset'i nasıl çıkardığımızı göstermem gerekiyor mu? Onun konutları da açıktı burada.
+
+998
+01:50:45,463 --> 01:50:48,983
+Adım adım ben size ne yapacağınızı söyleyeyim, siz de onu yapın. Olur mu arkadaşlar?
+
+999
+01:50:49,523 --> 01:50:49,863
+Olur.
+
+1000
+01:50:50,143 --> 01:50:59,743
+Tamam, şimdi HDFS client'ınızı gösterin. HDFS'e bir tane dosya atan ve dosya okuyan kullanıcı arayüzünüz var mı? HDFS client'i.
+
+1001
+01:51:00,543 --> 01:51:05,363
+Arayüzümüz yok hocam, terminalden yapıyoruz. Şurası yani aslında her şeyi yaptığımız yer.
+
+1002
+01:51:06,771 --> 01:51:08,671
+Başka biri geldi.
+
+1003
+01:51:10,011 --> 01:51:15,372
+Siz devam edin. [öğrenci], seni waiting room'a koyuyorum.
+
+1004
+01:51:20,787 --> 01:51:21,247
+Evet.
+
+1005
+01:51:22,868 --> 01:51:28,508
+Read, Write'ı kullanıcı arayüzünden yapıyorsunuz yani. Kullanıcı arayüzümüz yok.
+
+1006
+01:51:29,048 --> 01:51:31,068
+Evet hocam.
+
+1007
+01:51:31,068 --> 01:51:41,488
+Bunu da işte şeyden, TheCradup klasöründen CMD açıyoruz. MapReduce'nize bağladık burada. Direkt bunun içine normal...
+
+1008
+01:51:41,488 --> 01:51:47,268
+5 tane istatistik fonksiyonunu kullanıcı arayüzü üzerinden yaptığınızı gösteririm.
+
+1009
+01:51:47,648 --> 01:51:50,448
+Tamam hocam. Ben hemen o zaman durduruyorum.
+
+1010
+01:51:50,868 --> 01:51:53,808
+Hocam ben devam etsin. O jar dosyasını da ona atmıştık.
+
+1011
+01:51:54,448 --> 01:52:00,708
+Geziyorum hocam ben devam. Bir saniye. Ekranım gözüküyor mu hocam?
+
+1012
+01:52:00,828 --> 01:52:01,048
+Evet.
+
+1013
+01:52:02,003 --> 01:52:10,224
+Şimdi bende iki node için açık. Biz o şekilde düzenledik. Hocam, kodları anlatmamıza gerek var mı?
+
+1014
+01:52:10,804 --> 01:52:18,024
+Öncelikle söylediğimi yap, ondan sonra. Kullanıcı arayüzünden beş tane fonksiyonun nasıl şey yaptığınızı bir görelim.
+
+1015
+01:52:18,024 --> 01:52:18,804
+Tamam hocam.
+
+1016
+01:52:18,804 --> 01:52:22,344
+Sen direkt terminalden şey çalıştır istersen, buyultu yapmadan.
+
+1017
+01:52:22,884 --> 01:52:23,743
+Tamam, o şekilde.
+
+1018
+01:52:23,743 --> 01:52:25,703
+Zarı orada tutmuştuk ya.
+
+1019
+01:52:25,984 --> 01:52:30,003
+Tamam, o şekilde yapıyoruz. Hocamız konutları da böyle hazırladık, sizi bekletmemiz gerekiyor.
+
+1020
+01:52:30,003 --> 01:52:31,003
+Tamam.
+
+1021
+01:52:56,340 --> 01:52:58,220
+Hala kullanıcı arayüzü görmedim.
+
+1022
+01:52:59,119 --> 01:53:05,239
+Hocam, biz arayüz şey yapamadık, yani yapamadık. Buradan bu şekilde terminalden yapıyoruz.
+
+1023
+01:53:06,460 --> 01:53:12,479
+Evet hocam, o yetişmediği için hani buradan ancak yapabildik. Hani output falan da burada yapabiliyoruz ama.
+
+1024
+01:53:13,024 --> 01:53:14,503
+Herhangi bir arayüzümüz yok.
+
+1025
+01:53:14,663 --> 01:53:24,203
+Bana bir tane HDFS'teki veri seti üzerinde bir tane fonksiyonu, mesela average hesaplamayı gösterin.
+
+1026
+01:53:24,203 --> 01:53:28,123
+Ona geliyoruz hocam. Komutlar biraz sıralı da.
+
+1027
+01:53:30,423 --> 01:53:31,923
+Şu an şeyi attık.
+
+1028
+01:53:34,771 --> 01:53:40,511
+Veri setimizi şu anda HDFS, DFS'e klasör oluşturup koyuyoruz.
+
+1029
+01:53:40,871 --> 01:53:43,331
+Input bir klasörünü oluşturduk hocam.
+
+1030
+01:53:43,351 --> 01:53:47,652
+Aynen. Putla da koyuyoruz onu.
+
+1031
+01:53:50,591 --> 01:54:00,112
+User root input birinin altına koyuyoruz hocam. O sırada veri setimizi göstermemize de gerek var mı? Yoksa cat ile gösterebiliriz de.
+
+1032
+01:54:02,195 --> 01:54:05,555
+Gerek yok arkadaşlar. Sadece söylediğini yapayım.
+
+1033
+01:54:05,555 --> 01:54:10,036
+Tamam. Şimdi biz buradan şeyin içine giriyoruz.
+
+1034
+01:54:10,707 --> 01:54:35,707
+MapReduce'cresimizin içine giriyoruz. MapReduce'cremizin altında var hocam şeyimiz, jar dosyamız. Bu şekilde yapıştırıyoruz. Biz bu şekilde ayarladık hocam önceden, siz de kolaylık olsun diye. Input1'den OutputAverage dosya şeyine yazacak. Burada jar dosyamız var. Bu şekilde yazdırıyorum. Bekliyoruz şimdi MapReduce'cremiz.
+
+1035
+01:54:35,707 --> 01:54:37,528
+Ne kadar süre oluyor?
+
+1036
+01:54:38,612 --> 01:54:40,612
+20 saniye falan hocam.
+
+1037
+01:54:43,812 --> 01:54:45,172
+Çok zaman almayacağım.
+
+1038
+01:54:45,692 --> 01:54:56,192
+Evet, raporada hepsinin şeylerini yazmıştık ne kadar sürdüğünü. 5 fonksiyonun da tamamını yazmıştık. Maksimum 33 saniye süren vardı.
+
+1039
+01:54:56,688 --> 01:55:16,068
+O da standart sapmaydı. Burada şimdi hemen sana out'ı göstereceğim. Bu şekilde çalıştı hocam. Şimdi TMP'ye geri giriyoruz bu şekilde. Buradan output average dosyamızı şu an görüntüleyeceğiz içeriğini. Bizim bu coin'imizin adı bu da average değerimiz hocam.
+
+1040
+01:55:24,688 --> 01:55:27,928
+Mapper ve Radio Sürüm'ü nasıl implement ettiğinizi anlatın.
+
+1041
+01:55:28,467 --> 01:55:56,467
+Tamam. Öncelikle hocam bir Tuffle şeyi oluşturduk. Yani Standart Deviation Tuffle. Buradan standart sapma değişkeni yaptık. Getir satırlarını yaptık. To-Sitting metodunu yazdık. Sonrasında Mapper fonksiyonumuzda coin name'imizi verdik. Öncelikle şöyle bir şey yapıyoruz hocam. Bizim verimizde virgüllere göre ayırıyoruz verimizi. Tek bir satır satırımızda 1468 tane veri var. 1468 veride...
+
+1042
+01:55:56,467 --> 01:56:11,827
+Gidiyor ve 3. şeyimizi alıyor. Field'ımızın 3. değerini alıyor. Biz o sütunu seçtik. 3. sütunu. Bunu CoinReiKable'da setliyor hocam. Sonrasında da şey, Reduce'a geçeyim şimdi.
+
+1043
+01:56:12,500 --> 01:56:24,380
+Burada toplam ve sayı değerini oluşturduk, count değerini. Count değeriyle hani MINE hesaplarken kullanacağız. MINE'i de zaten standart satmanın içinde kullanıyoruz.
+
+1044
+01:56:24,659 --> 01:56:51,440
+Öncelikle standart satmayı sıfır olarak verdik. Burada value'larımız var. Her bir değeri value'yu atmıştık DoubleRite tipinde. Buradan çekiyoruz. Öncelikle mesela sum, sum'u devamlı ekliyoruz çektiğimiz değeri. Topluyoruz her bir satır için. Üçüncü değeri topluyoruz. Count'umuzu bir arttırıyoruz ve bunu da listeye ekliyoruz.
+
+1045
+01:56:52,659 --> 01:56:56,800
+Şuna hocam gerek yoktu. Bu biraz kalmış sanırım.
+
+1046
+01:56:57,480 --> 01:56:59,560
+Onun medyanı yaparken de aslında kullandık.
+
+1047
+01:56:59,560 --> 01:57:00,560
+Sort etmeyi.
+
+1048
+01:57:01,971 --> 01:57:29,612
+Burada şöyle bir şey yapıyoruz. Mini bulmak için toplamı sayıya bölüyoruz hocam. Mini hesaplıyoruz. Sonra standart satmamında şöyle bir şeyde. Her bir değerin karesini alıyoruz. Her bir değeri minden çıkarıp karesini alıyoruz. Sonrasında da onu sayının eleman sayısının eksi birine en eksi bire böleceğiz. Sonrasında da kare kökünü alacağız hocam. O şekilde biz bunu ayarladık.
+
+1049
+01:57:29,971 --> 01:57:40,211
+Buradan, millen çıkarıp karasını buluyor işte. Sonrasında da kare kökünü alıyor. Bunu set standart satma olarak şey yapıyor, setliyoruz hocam.
+
+1050
+01:57:40,787 --> 01:57:47,568
+Tamam arkadaşlar, Project Proposal'da bahsettiğiniz veri seti mi kullandınız, değiştirdiniz veri seti?
+
+1051
+01:57:47,827 --> 01:58:00,127
+Onu kullandık hocam, Binance'dan çektik. Yine 1468 tane şeyimiz var, coin'imiz var ve 34 bin satır vardı. Yaklaşık 6 aylık bir veri çektik. 500 MB olacak şekilde.
+
+1052
+01:58:01,228 --> 01:58:04,347
+Tamamdır, başka bana sorunuz var mıdır?
+
+1053
+01:58:04,948 --> 01:58:06,248
+Yok sanırım.
+
+1054
+01:58:06,868 --> 01:58:08,968
+Tamam. Başarılar dilerim final sınavında.
+
+1055
+01:58:09,388 --> 01:58:10,528
+Teşekkür ederim.
+
+1056
+01:58:10,908 --> 01:58:12,428
+Hocam, kolay gelsin.
+
+1057
+01:58:12,848 --> 01:58:13,468
+Kolay gelsin.
+
+1058
+01:58:25,876 --> 01:58:29,876
+[öğrenci], hemen kameranı aç. Biz de ekran paylaşımı yap lütfen.
+
+1059
+01:58:30,456 --> 01:58:34,176
+Hemen yapıyorum hocam. Sesim geliyor değil mi? Bir sıkıntı yok.
+
+1060
+01:58:34,615 --> 01:58:35,476
+Geliyor, evet.
+
+1061
+01:58:36,235 --> 01:58:38,396
+Merhabalar hocam. Hemen başlayayım.
+
+1062
+01:58:39,296 --> 01:58:48,336
+Şimdi size hemen şey göstereyim hocam. Ben cluster'ları kullanmak için Amazon'u kullandım. Burada dört tane nodlar mevcut. Şu an hepsi çalışır vaziyette. Burada da açtığım size göstermek için.
+
+1063
+01:58:48,819 --> 01:58:53,659
+Kaç noktada Hadoop şeyi göstereceksin kurulumu?
+
+1064
+01:58:54,659 --> 01:58:58,819
+Dört tane kurdum ama benim projemde tek yapamadığım şey bu kurduğum...
+
+1065
+01:58:59,412 --> 01:59:09,351
+Node cluster'ları üzerinde bu Eclipse projemi çalıştırmalı. Ne kadar denediysem de tülü tülü sorunlarla karşılaştım. Bir eksik kısım orası. Size zaten süreç boyunca anlatacağım durumu.
+
+1066
+01:59:09,931 --> 01:59:15,252
+Peki, şey, command line'dan mı göstereceksin yapacağını?
+
+1067
+01:59:15,252 --> 01:59:16,431
+Ara yüzüm var tabii ki hocam.
+
+1068
+01:59:16,431 --> 01:59:27,032
+Tamam, okey, güzel. Tamam, şimdi bana şunu göster. Öncelikle cluster'ın çalıştığını göster. Browser'dan.
+
+1069
+01:59:27,731 --> 01:59:30,731
+Live notları görebiliriz.
+
+1070
+01:59:32,171 --> 01:59:35,131
+Tabii onun için biraz şimdi şurada şey yapmam lazım.
+
+1071
+01:59:38,271 --> 01:59:39,724
+Açıkçası onu...
+
+1072
+01:59:40,051 --> 01:59:41,412
+Tamam, tamam.
+
+1073
+01:59:42,412 --> 01:59:54,152
+Yani burada DNS adresini alıp hocam sonuna 8075 ekledik mi orada çalıştığını görüyoruz Hadoop üzerinde. Ben bunu soracağını zannetmediğim için çünkü dediğim gibi ben…
+
+1074
+01:59:54,152 --> 01:59:59,771
+Tamam, tamam anladım ben. Bir tane HDFS Client'i göster bana. Yani bir tane dosya atmak istiyorum.
+
+1075
+02:00:00,051 --> 02:00:05,471
+Oradaki Hadoop cluster'ını sonra da o dosyayı attığını görmek istiyorum.
+
+1076
+02:00:06,032 --> 02:00:14,251
+İşte hocam dediğim gibi benim şu an dört makinemde çalışır vaziyette duruyor ama sadece HDFS ve projemle ilişkili kısımları eksik.
+
+1077
+02:00:14,251 --> 02:00:19,251
+Yani burada o kısımlarda serverlarda çalışıyor ancak yani şu an henüz onlara...
+
+1078
+02:00:19,771 --> 02:00:23,192
+Nasıl demo yapacaksın şimdi? Neyin demosunu yapacaksın?
+
+1079
+02:00:23,771 --> 02:00:27,612
+Benim demo şu an tek bir not üzerinde. Bahsettiğim gibi...
+
+1080
+02:00:28,051 --> 02:00:32,771
+O zaman ben Teknot kurulumu üzeri, Teknot ne, lokalde mi kurulmuş şu anda?
+
+1081
+02:00:33,032 --> 02:00:34,291
+Aynen, lokalde kurulmuş.
+
+1082
+02:00:34,311 --> 02:00:38,271
+Ama o zaman Amazon'u bir kapatsan, şu anda bana Teknot kurulumu göster.
+
+1083
+02:00:38,791 --> 02:00:45,532
+Evet, şu anda Teknot kurulumu, şu anda bir browser aç, bu Teknot kurulumu olduğunu görelim.
+
+1084
+02:00:46,032 --> 02:00:49,391
+Browser'da, lokalde çalışan Hadoop'u görelim.
+
+1085
+02:00:50,152 --> 02:00:53,271
+O zaman şöyle yapmam lazım, ben buraya notlarımı almıştım.
+
+1086
+02:01:01,555 --> 02:01:15,255
+Yani ben bunu Eclipse'de kurduğum için burada şu Maven Dependence'larla birlikte burada ben arayüzümle çalıştığımda şuradaki terminalden bütün sonuçları görüyorum. Aslında bütün işlem burada oluyor. Şu an siz kurduğunu sorduğunuz için ben şu an sunumluyum yapacağım.
+
+1087
+02:01:15,255 --> 02:01:18,695
+Şu anda sen demedin mi ben Cegnot'luk Hadoop cluster'ım var.
+
+1088
+02:01:19,255 --> 02:01:19,975
+Evet aynen öyle.
+
+1089
+02:01:19,975 --> 02:01:26,795
+Ben sanıyorum ki şeyi göster diyorum. Browser'ı açıp çalışan lokaldeki şeyi göreyim.
+
+1090
+02:01:32,435 --> 02:01:34,275
+[öğrenci], seni Waiting Room'a alıyorum.
+
+1091
+02:01:56,532 --> 02:01:59,872
+Şu an galiba makinede bir yavaşlık mevcut da henüz sonucu döndürmedi.
+
+1092
+02:02:00,659 --> 02:02:02,060
+Ben NoSQL'e kurdum.
+
+1093
+02:02:02,480 --> 02:02:18,579
+Evet, en iyi yapmak ister misin? Tekrardan sorayım. En son şu andaki şu şekilde bana gösterme. Devam etmek zorundayım. Bu şekilde gösterirsen iyi bir not almayacaksın. Arkadaşlarına değerlendirirken şu sana söylediğim şeyleri çalıştırmaya çalış. Tamam mı?
+
+1094
+02:02:18,740 --> 02:02:18,920
+Tamam.
+
+1095
+02:02:18,920 --> 02:02:20,320
+Sana bir göstermeye çalış.
+
+1096
+02:02:20,860 --> 02:02:22,220
+Tamam o zaman en son geleyim.
+
+1097
+02:02:22,579 --> 02:02:23,520
+Waiting room'u alıyorum.
+
+1098
+02:02:23,960 --> 02:02:25,720
+Tamamdır hocam. Teşekkür ederim. Ben hemen bakıyorum.
+
+1099
+02:02:43,667 --> 02:02:45,167
+[öğrenci]
+
+1100
+02:03:07,796 --> 02:03:08,296
+[öğrenci].
+
+1101
+02:03:21,363 --> 02:03:25,463
+Evet arkadaşlar, hemen ekran kameranızı açın.
+
+1102
+02:03:40,627 --> 02:03:49,907
+Tamam, şimdi bana bir ekran paylaşımı yapın ve bana bir çalışan Odup cluster'ı gösterin arkadaşlar. Tek not mu yapacaksınız, multi not mu?
+
+1103
+02:03:50,747 --> 02:03:51,927
+Evet, multi not hocam.
+
+1104
+02:03:52,267 --> 02:03:54,467
+Tamam. İki not mu yapıyorsunuz?
+
+1105
+02:03:54,887 --> 02:03:56,127
+Evet, iki not da yapıyoruz.
+
+1106
+02:03:56,907 --> 02:03:57,807
+Tamam, hadi bakalım.
+
+1107
+02:04:00,667 --> 02:04:01,787
+Ekranım görünüyor mu hocam?
+
+1108
+02:04:02,307 --> 02:04:03,067
+Evet, gözüküyor.
+
+1109
+02:04:07,283 --> 02:04:16,403
+Hocam burası name nodumuz. Bunun yanında iki tane slave node çalıştırıyoruz. Sanal makinede yaptık. Bunları da açayım.
+
+1110
+02:04:29,939 --> 02:04:38,340
+Bir tanesini de göstersen yeter sanırım. Diğerini de gösterebilirim. Burada JPS komutuyla denediğimizde bunun burada data not olarak çalıştığı görmeler.
+
+1111
+02:04:38,340 --> 02:04:50,359
+Tamam, şimdi bir yana bir HDFS client'i göster. Bu HDFS client'iyle bir tane dosyayı bu Hadoop klasterına at ve Hadoop klasterında bu dosyanın atıldığını bana göster bakalım.
+
+1112
+02:04:51,300 --> 02:04:53,519
+Tamam hocam. Ara yüzden de yapabilirim.
+
+1113
+02:04:53,807 --> 02:04:55,068
+Ayrıca da yapabilirim.
+
+1114
+02:04:55,327 --> 02:04:57,347
+Kullanıcı arayüzü üzerine istiyorum arkadaşlar.
+
+1115
+02:04:57,847 --> 02:04:58,547
+Tamam hocam.
+
+1116
+02:04:59,167 --> 02:05:00,327
+Comment line üzerinden değil.
+
+1117
+02:05:01,127 --> 02:05:03,247
+Şimdi böyle bir arayüz oluşturduk.
+
+1118
+02:05:03,467 --> 02:05:05,068
+Burada add file atıkladığımızda.
+
+1119
+02:05:05,627 --> 02:05:10,827
+Basit bir tane file, şeyde olmayan bir tane file şeye atalım, Hadoop cluster'ına.
+
+1120
+02:05:11,488 --> 02:05:13,467
+Tamam hocam. Mesela şu new text'te 8'i.
+
+1121
+02:05:13,728 --> 02:05:14,907
+Şu an yok değil mi o şeyde?
+
+1122
+02:05:15,087 --> 02:05:15,747
+Şu an yok.
+
+1123
+02:05:16,247 --> 02:05:16,427
+Tamam.
+
+1124
+02:05:16,427 --> 02:05:17,568
+Burada zaten listede görünüyor.
+
+1125
+02:05:18,528 --> 02:05:19,127
+Bunu seçim.
+
+1126
+02:05:19,467 --> 02:05:20,167
+Yükle bakalım.
+
+1127
+02:05:26,579 --> 02:05:28,260
+Dosya başarıda kaydedildi.
+
+1128
+02:05:28,500 --> 02:05:34,019
+Tamam, şimdi HDFS 8'i oradan okuyup bu sefer lokal file sistemi yap.
+
+1129
+02:05:35,140 --> 02:05:46,100
+Tamam hocam. Şimdi burada üçüncü sırada geldi bu. Buraya üç yazıp get file deyince bunu lokal dosya sistemine kopyalıyor.
+
+1130
+02:05:50,420 --> 02:05:51,920
+Otoyolu Kardeşi, kopyalandı.
+
+1131
+02:05:51,920 --> 02:05:53,380
+Dönüşler bakalım kopyalandığını.
+
+1132
+02:06:00,435 --> 02:06:02,315
+Hocam, şurada NivTxt8.
+
+1133
+02:06:02,655 --> 02:06:03,435
+Tamam, güzel.
+
+1134
+02:06:03,975 --> 02:06:04,115
+Tamam.
+
+1135
+02:06:05,115 --> 02:06:13,115
+Şimdi bana beş tane istatistik fonksiyonu kullanıcı arayüzü üzerinden HDFS2 bir veri seti üzerinde çalıştır.
+
+1136
+02:06:13,355 --> 02:06:14,915
+Burada üç tane yaptığınızı görüyorum.
+
+1137
+02:06:15,435 --> 02:06:18,915
+Evet hocam, üç tane yaptık. Diğer ikisini biraz zaman sıkışmasınlar.
+
+1138
+02:06:19,795 --> 02:06:21,315
+Tamam, şimdi bunları göster.
+
+1139
+02:06:22,635 --> 02:06:27,875
+Tamam hocam, bu NivTxt8 üzerinde yine çalıştırabilirim.
+
+1140
+02:06:28,659 --> 02:06:30,879
+Mesela Euro 3 fonksiyon çalıştırdığımda.
+
+1141
+02:06:37,108 --> 02:06:48,507
+Sonuçları biraz sürüyor. Dosyayı, output dosyasını HDFS'e kaydediyor. Aynı zamanda kaydettikten sonra lokal hafızaya otomatik olarak programda kopyalıyor.
+
+1142
+02:06:49,507 --> 02:06:52,748
+Tamam, bakalım sonuçlu ne öğretmiş? Dörelim.
+
+1143
+02:06:52,748 --> 02:06:54,568
+Tamam hocam.
+
+1144
+02:07:10,163 --> 02:07:12,163
+Ben neybette ki 3-3 yapmıştık.
+
+1145
+02:07:18,547 --> 02:07:37,408
+Hocam, burada sadece uzunluğu ve sayıyı bastırdık. Konsolda da ortalamayı bastırdık. Konsoldan baktığımızda ortalama olarak 8 görünüyor. Buradan da kontrol ettiğimizde HD6 bölü 7'den yine 8 sonucuna ulaşabiliriz.
+
+1146
+02:07:38,127 --> 02:07:43,328
+Tamam, tamam. Performans analizi yaptınız mı? Tek not, iki not arasında.
+
+1147
+02:07:44,307 --> 02:08:00,128
+Hocam, performans analizini bizim verdiğimiz büyük veri setinde yaptık. Tam olarak programda ölçmedik ama kronometreyle bir ölçüm yaptığımızda iki notum tek nottan ortalama iki kat.
+
+1148
+02:08:00,128 --> 02:08:07,488
+Arkadaşlar, söylediğinizde kendiniz duyuyor musunuz ya? Bilgisayar mençisisiniz Allah aşkına. Kronometreyle ölçüm yapılır mı yani?
+
+1149
+02:08:08,180 --> 02:08:20,000
+Siz kendinizi duyuyor musunuz? Neyse arkadaşlar. Şimdi proje raporunuzu gönderdiniz.
+
+1150
+02:08:21,340 --> 02:08:21,900
+Evet hocam.
+
+1151
+02:08:23,600 --> 02:08:31,880
+Bir de kodu açın bakalım. Bana az önce gösterdiğiniz metodun Mapper ve Reduce'urunu gösterin bakalım.
+
+1152
+02:08:33,200 --> 02:08:34,720
+Hocam ortalama sınıfında.
+
+1153
+02:08:36,659 --> 02:08:56,259
+Map fonksiyonunda tek tek gelen sözcüklerin uzunluklarını alıyoruz ilk önce. Bu yaptığımız ortalama işlemini tek olarak gelen verilerin tek tek uzunluklarını alarak yapıyoruz. Bunları da birer arttırarak Map fonksiyonunu kaydediyoruz.
+
+1154
+02:09:03,444 --> 02:09:12,623
+Uzunluktaki sözcüklerin sayılarını toplayıp output olarak output dosyasına yazdırıyoruz.
+
+1155
+02:09:17,364 --> 02:09:21,824
+Kullandığınız veri seti Project Proposal'a verdiğiniz veri setiyle aynı mı?
+
+1156
+02:09:22,564 --> 02:09:25,984
+Evet hocam, onu kullandık. Biraz üstünde işlem yaptık.
+
+1157
+02:09:26,420 --> 02:09:33,539
+Onu tekste dosyasına çevirdik. Tekste olarak input veriyoruz burada HDFS'e. CSV dosyasıyla normalde.
+
+1158
+02:09:35,119 --> 02:09:39,760
+Tamam. Tamam arkadaşlar. Teşekkür ederim. Başarılar derim.
+
+1159
+02:09:40,440 --> 02:09:41,240
+Ben teşekkür ederim.
+
+1160
+02:09:41,980 --> 02:09:42,579
+Günler hocam.
+
+1161
+02:09:42,579 --> 02:09:43,480
+Günler.
+
+1162
+02:10:04,083 --> 02:10:10,863
+Evet arkadaşlar, kameralarınızı açın. Hemen bir ekran görüntüsü paylaşımı yapın.
+
+1163
+02:10:11,483 --> 02:10:12,603
+Hocam sesim geliyor mu?
+
+1164
+02:10:12,963 --> 02:10:13,683
+Sesim geliyor.
+
+1165
+02:10:15,603 --> 02:10:17,043
+Hocam sesim geliyor mu?
+
+1166
+02:10:17,563 --> 02:10:19,943
+Sesim geliyor. Kameranın açısını lütfen.
+
+1167
+02:10:20,403 --> 02:10:24,683
+Ben masa üstünde olduğum için webcamim yok. O yüzden kamera...
+
+1168
+02:10:24,944 --> 02:10:28,944
+Tamam, senin hamdullah olduğunu o günün onayı...
+
+1169
+02:10:29,484 --> 02:10:32,364
+Tamam hocam.
+
+1170
+02:10:32,944 --> 02:10:37,824
+Bana multi-node güzel bir Hadoop kurulumu arkadaşlar ekran paylaşımı yapıp gösterin utan.
+
+1171
+02:10:38,224 --> 02:10:39,284
+Tamam hocam bir saniye.
+
+1172
+02:10:40,524 --> 02:10:41,784
+Share screen diyeyim.
+
+1173
+02:10:42,364 --> 02:10:46,404
+Hocam multi-node kurduk. Bir masternode, bir tanesi lay-node'umuz var.
+
+1174
+02:10:48,404 --> 02:10:49,784
+[öğrenci] şimdi gösterir.
+
+1175
+02:10:54,931 --> 02:10:57,912
+Geldi Amerika'ya. Discord geldi.
+
+1176
+02:10:58,551 --> 02:10:59,631
+Şu an görmüyor musun?
+
+1177
+02:11:00,011 --> 02:11:01,591
+Discord'u görüyorum ben sadece.
+
+1178
+02:11:02,211 --> 02:11:04,532
+Bütün ekranını paylaş. Sadece bir uygulama değil.
+
+1179
+02:11:05,631 --> 02:11:10,391
+Biraz hızlı olalım arkadaşlar. Zamanımız dar. Arkadaşlarınız bekliyor. Bana kızıp kızıp duruyorlar.
+
+1180
+02:11:10,811 --> 02:11:11,992
+Tamam hocam bir saniye.
+
+1181
+02:11:12,351 --> 02:11:15,652
+Ben de sabahtan beri ayaktayım. Lütfen biraz hızlı olalım.
+
+1182
+02:11:16,091 --> 02:11:20,452
+Bu da screen dediğimde herhalde şu an olması lazım. Şu an oluyor mu?
+
+1183
+02:11:20,948 --> 02:11:24,948
+Evet, şimdi bize...
+
+1184
+02:11:26,127 --> 02:11:33,007
+Hocam, biz birçok tutorial takip ettik de bunlardan en mantıklısı bize bu geldi.
+
+1185
+02:11:33,827 --> 02:11:35,948
+Yani multinotu kurarken ilk önce...
+
+1186
+02:11:36,287 --> 02:11:41,927
+Lütfen bana kurulumunu göster. Yani kaç tane not hayatta onu göster.
+
+1187
+02:11:42,307 --> 02:11:46,667
+Tamam hocam. Şu an hali hazırda çalışıyor yani.
+
+1188
+02:11:47,347 --> 02:11:53,007
+O zaman bana browserdan Hadoop cluster'ın ayakta olduğunu göster.
+
+1189
+02:11:53,367 --> 02:11:54,028
+Tamam hocam.
+
+1190
+02:11:54,787 --> 02:11:57,568
+Hamdolua akutlarımızı da gösterebilirsin hocam.
+
+1191
+02:11:57,627 --> 02:12:01,887
+Tamam göstereyim. Hocam burada bir tane slave'imiz var. Bu master'dayız şu an.
+
+1192
+02:12:02,948 --> 02:12:03,207
+Tamam.
+
+1193
+02:12:03,768 --> 02:12:12,268
+Şimdi bana bir tane kullanıcı arayüzü üzerinden HDFS'e bir tane dosya at bakalım.
+
+1194
+02:12:13,140 --> 02:12:20,260
+Hocam, R100 olarak biz Eclipse'de R100 kullanmaya çalıştık da, yani konsoldan biz...
+
+1195
+02:12:20,260 --> 02:12:27,539
+Şeyiniz yok, Q'iniz yok, tamam. HDFS client'ı şeyle yapıyorsunuz, koment ile.
+
+1196
+02:12:27,980 --> 02:12:33,020
+Evet, biz manuel olarak şöyle şu şekilde atıyoruz hocam, Hadoop'a.
+
+1197
+02:12:33,960 --> 02:12:39,020
+Ah ah ah arkadaşlar, ah. Şimdi o zaman beş tane farklı...
+
+1198
+02:12:39,956 --> 02:12:55,735
+İstetiksel fonksiyonu iki ayınız vardı arkadaşlar. Tam iki ay, iki ay. Beş tane farklı istetik fonksiyonunu kutluci arayüzü üzerinden Hadoop'taki bir veri seti üzerinden, HDFS2 veri seti üzerinden çalıştırın bakalım.
+
+1199
+02:12:56,796 --> 02:12:59,996
+Hocam ben şöyle yaptık.
+
+1200
+02:12:59,996 --> 02:13:01,916
+Commentline üzerinden yapıyorsunuz.
+
+1201
+02:13:01,916 --> 02:13:04,355
+Evet onu da comment.
+
+1202
+02:13:05,268 --> 02:13:16,168
+Şöyle, hepsi için ayrı ayrı, Max, Min, Min, Percent ve Range, Standard Sapma için hepsi için ayrı ayrı biz Mapper, Driver, Reducer yazdık hocam.
+
+1203
+02:13:16,748 --> 02:13:17,568
+Buradan...
+
+1204
+02:13:17,568 --> 02:13:25,268
+Tamam, bir tanesini gösterin arkadaşlar. Şimdi bana HDFS'te duran bir tane şey için, dataset için...
+
+1205
+02:13:26,148 --> 02:13:26,627
+Tamam hocam.
+
+1206
+02:13:27,507 --> 02:13:30,807
+O zaman standart deviyatiyon hazırdı.
+
+1207
+02:13:31,507 --> 02:13:35,307
+Şunu standart sapmayı gösterelim hocam şu an onları kopyaladığımız için.
+
+1208
+02:13:37,448 --> 02:13:40,167
+İlk önce hocam şöyle jar dosyasını oluşturuyoruz.
+
+1209
+02:13:42,547 --> 02:13:47,528
+Sonra bunu şöyle jar dosyasını oluşturalım classlardan.
+
+1210
+02:13:51,859 --> 02:14:02,439
+İsmi 44 olsun mesela. Böyle çalıştırdık. Şöyle de göstereyim hocam.
+
+1211
+02:14:13,043 --> 02:14:16,883
+Yani bu standart sapmaları hesaplıyor bu şekilde yanlarında.
+
+1212
+02:14:17,603 --> 02:14:24,663
+Tamam, şimdi kodlarını aç. Bana standart sapma için yapmış olduğunuz Mapper ve Reduce'ün kodlarını anlat.
+
+1213
+02:14:25,243 --> 02:14:27,103
+Tamam hocam, hemen bir saniye.
+
+1214
+02:14:27,883 --> 02:14:38,623
+Hocam, bizim datamız Movie'de ismi filmi var, bir de puanlaması var. Birçok farklı puanlama var. Biz Mapper'da isimini ve puanını aldık karşısındaki.
+
+1215
+02:14:39,155 --> 02:14:45,895
+Evet, bu iki ismi, bu da stl1'de hocam puanı. Buradan MapReduce'ı atıyoruz.
+
+1216
+02:14:47,895 --> 02:14:49,256
+Reducer'ını açayım bugün.
+
+1217
+02:14:51,916 --> 02:15:04,056
+Burada da hocam işte mean'ini hesaplıyoruz, count yapıyoruz. Ondan sonra for içinde de standart deviation fonksiyonunu yapıp output collector'la yazdırıyoruz.
+
+1218
+02:15:04,756 --> 02:15:12,095
+Çıkan sonucu en sonunda da kare için alıyoruz hocam. Standard sapmada toplamı kare için almamız lazım. Onu da yazdırıyoruz.
+
+1219
+02:15:20,095 --> 02:15:21,615
+Performans analizi yaptınız mı?
+
+1220
+02:15:22,416 --> 02:15:27,756
+Hocam, performans analizi birden fazla işte not kullandık. Şurada biz şeyin üstünde...
+
+1221
+02:15:28,787 --> 02:15:34,927
+Bu komut satırında olduğu için burada sürelere bakıp yani işte.
+
+1222
+02:15:35,247 --> 02:15:36,587
+Orada sürelere baktınız yani.
+
+1223
+02:15:36,787 --> 02:15:37,028
+Aynen.
+
+1224
+02:15:37,347 --> 02:15:38,787
+Korb yazdınız, şey yapmadınız.
+
+1225
+02:15:39,148 --> 02:15:40,387
+Orada sürelere baktınız.
+
+1226
+02:15:40,507 --> 02:15:41,507
+Evet sürelere bakıp.
+
+1227
+02:15:41,947 --> 02:15:42,807
+Desenize şunu.
+
+1228
+02:15:44,188 --> 02:15:45,068
+Tamam hocam.
+
+1229
+02:15:46,587 --> 02:15:49,467
+Proje raporunu gönderdiniz, projenizi gönderdiniz.
+
+1230
+02:15:49,987 --> 02:15:50,268
+Evet.
+
+1231
+02:15:53,688 --> 02:15:55,228
+Yani biz aslında çok.
+
+1232
+02:15:55,572 --> 02:15:58,572
+Bir şeyler yapmaya çalıştık hocam da yani burada mesela...
+
+1233
+02:15:59,192 --> 02:16:00,992
+Sığdırdığınız zaman böyle oluyor arkadaşlar.
+
+1234
+02:16:01,731 --> 02:16:10,572
+Hocam mesela bizim yani sadece bunda çalıştığımız şu kadar yani 3 sayfa kadar çalışmışız hocam da yani eklipste çalışmışız.
+
+1235
+02:16:10,572 --> 02:16:19,251
+10 dakika da başlamasınız bunu arkadaşlar. Yani bunu zamana yaşarsanız biterdi yani. Tamam 29 tane arkadaşınız bekliyor. Teşekkür ederim.
+
+1236
+02:16:19,591 --> 02:16:20,011
+Finansına...
+
+1237
+02:16:20,011 --> 02:16:20,891
+Teşekkürler hocam.
+
+1238
+02:16:21,311 --> 02:16:22,372
+Teşekkürler. İyi günler.
+
+1239
+02:16:55,156 --> 02:16:58,995
+Merhaba arkadaşlar. Kameralarınızı açın. Hemen bir ekran paylaşımını açın.
+
+1240
+02:17:04,675 --> 02:17:11,036
+Ekran paylaşımınız geliyor. Şimdi bana... [öğrenci] sen de kameranı aç.
+
+1241
+02:17:11,296 --> 02:17:11,976
+Açtım hocam.
+
+1242
+02:17:12,456 --> 02:17:17,256
+Bana bir multi-note şeyi gösterin bakalım. Hadi bu plasterı.
+
+1243
+02:17:31,028 --> 02:17:35,108
+Tamam, güzel. Çalışan Multinode kurulumuz var.
+
+1244
+02:17:40,147 --> 02:17:49,807
+Tamam. Şimdi HDFS Client'e açılmanı bir tane kullanıcı arayüzü üzerinden. HDFS'e bir tane dosya atalım.
+
+1245
+02:17:52,807 --> 02:18:03,027
+Kullanıcı arayüzünüz var diye ümit ediyorum. Tamam. Bir tane basit bir tane dosya seçelim. Boyutu küçük. Şu anda HDFS'de olmayan.
+
+1246
+02:18:09,139 --> 02:18:12,479
+Tamam. Bunu HDFS'e atalım.
+
+1247
+02:18:14,340 --> 02:18:18,239
+Şu an bastıktan sonra yüklemeye başlayacak yani bir şeyleri seçmemiz lazım.
+
+1248
+02:18:18,680 --> 02:18:27,919
+Siz oraya hangisini yüklemişsiniz? O yüklediğiniz dosya üzerinde fonksiyonları çalıştırıyorsunuz.
+
+1249
+02:18:30,319 --> 02:18:34,219
+Şöyle. Aynen. Şunlar zaten datasyonun içinde var.
+
+1250
+02:18:35,092 --> 02:18:50,092
+Tamam. Şimdi ben size şöyle bir şey söyleyeceğim. Şimdi siz bu durumda mesela şu anki kısaltılmış bilmem ne kısaltılmış CSV dosyasını HDFS'e atıyorsunuz.
+
+1251
+02:18:51,172 --> 02:18:51,492
+Tamam.
+
+1252
+02:18:51,811 --> 02:18:52,412
+Şu an mı?
+
+1253
+02:18:52,952 --> 02:18:53,912
+Run deyince atabiliyorsunuz.
+
+1254
+02:18:53,932 --> 02:18:55,851
+Run deyince atabiliyorsunuz yani.
+
+1255
+02:18:56,152 --> 02:18:56,432
+Evet.
+
+1256
+02:18:56,792 --> 02:19:00,572
+Tamam. Şimdi bu şey demek HDFS'e write yapabiliyorsunuz.
+
+1257
+02:19:01,363 --> 02:19:11,484
+Tamam. Şimdi peki HDFS'ten, hali hazırda HDFS'te olan bir tane dosyayı kullanıcı arayüzü üzerinden okuyup bu sefer de lokal file sistemi atmak istiyorum.
+
+1258
+02:19:13,299 --> 02:19:14,239
+Öyle bir şey yapmadım hocam.
+
+1259
+02:19:14,279 --> 02:19:19,159
+Yapmadınız, tamam. O zaman siz read'i yapmadınız, write'i yaptınız.
+
+1260
+02:19:19,180 --> 02:19:25,159
+Yok, read derken şöyle bir ödevli kısmı onu bilmedik biz. Orada bir dataset var, onu biz buraya çekeceğiz.
+
+1261
+02:19:25,299 --> 02:19:30,479
+Var arkadaşlar, okursanız göreceksiniz. Bir tane HDFS client'ından bahsediyorum size.
+
+1262
+02:19:31,479 --> 02:19:32,419
+Şimdi...
+
+1263
+02:19:32,419 --> 02:19:33,840
+Biz sonuçları okuyabiliyoruz.
+
+1264
+02:19:34,355 --> 02:19:58,995
+Ama bir dosyayı alıp tekrardan local file sisteme koyma fonksiyonundan bahsediyorum. Şimdi bana HDFS'te yüklü yahut da şu anda yükleyeceğiniz de olabilir. Bir tane dosya üzerinde MapReduce'laştırdığınız bir tane fonksiyonu gösterin. Mesela burada ne demişsiniz? Mean demişsiniz. Mean'i gösterin.
+
+1265
+02:20:03,987 --> 02:20:04,867
+Ne felin.
+
+1266
+02:20:19,347 --> 02:20:20,727
+MapReduce'nin uçaklığı.
+
+1267
+02:20:24,724 --> 02:20:26,263
+Neyi gösteriyorsun şu anda bana?
+
+1268
+02:20:26,863 --> 02:20:27,743
+Sesim gelmiyor.
+
+1269
+02:20:28,703 --> 02:20:33,324
+Hayır, sen kodları gösteriyorsun. Ben sana çalıştığını göster, demosunu yap dedim.
+
+1270
+02:20:33,563 --> 02:20:34,484
+Demo mu yaptınız?
+
+1271
+02:20:34,824 --> 02:20:35,063
+Evet.
+
+1272
+02:20:35,384 --> 02:20:35,943
+Sesim gelin.
+
+1273
+02:20:37,183 --> 02:20:40,243
+Geliyor ama sen beni duyuyor musun? Şu anda demosunu yap bana.
+
+1274
+02:20:41,463 --> 02:20:42,783
+Şu an, hani,
+
+1275
+02:20:42,783 --> 02:20:46,463
+Country Code'a göre
+
+1276
+02:21:15,219 --> 02:21:18,760
+Evet, anlat şu anda neler görüyoruz.
+
+1277
+02:21:19,979 --> 02:21:24,219
+Şu an dataset'i karşı taraf büyük dedi. 5 saniyede görmüş.
+
+1278
+02:21:26,079 --> 02:21:33,979
+En sonunda da mini işlemini gerçekleştirdik. Burada da işte alfıkları yazdık. Hatta bu üzerinden de bir grafik çıkarttırdık.
+
+1279
+02:21:34,299 --> 02:21:42,020
+İşte ülke bazlı, bizim dataset'in kısa alanı da vardı. İzlenmelerinin ortalamasını görüyoruz.
+
+1280
+02:21:44,500 --> 02:21:57,500
+Artık ortalaması şu. İlk ortalama, sonra da countları geliyor. Yani şöyle yaptık, mailde, yanlış hatırlamıyorsam, ortalamayı aldık ve bu ortalamata kaç tane veri olduğunu koyduk.
+
+1281
+02:21:58,500 --> 02:22:08,500
+Onlar da bunlar işte. İşte 1 milyon bir şey izlenmiş bu ülkede. Almanya'da 603 milyon izlenmiş ortalama. Bunlar bunun da YouTube Trends sitesi.
+
+1282
+02:22:12,755 --> 02:22:20,236
+Tamam. Şimdi bana şeyi göster. Bir başka fonksiyonu göster.
+
+1283
+02:22:21,916 --> 02:22:25,396
+Aynısını. Şunu güzel bir konu göstereyim.
+
+1284
+02:22:25,935 --> 02:22:26,216
+Tamam.
+
+1285
+02:22:28,736 --> 02:22:33,755
+Bunu da Evo Shift'e de şöyle şey yaptık. Ünlünün üstüne bir if komutu koyabiliriz.
+
+1286
+02:22:33,755 --> 02:22:39,691
+Yine aynı şekilde seçince mesela burada like'ı...
+
+1287
+02:22:40,595 --> 02:22:43,536
+Biz Spark'tan daha fazla olanları yetiştirebiliyoruz.
+
+1288
+02:22:44,995 --> 02:22:46,755
+Tamam, çalıştırdın mı şu anda?
+
+1289
+02:22:47,135 --> 02:22:47,835
+Şimdi bastım.
+
+1290
+02:22:55,667 --> 02:22:59,167
+Performans analizi yaptınız mı? Tek not üzerinde ve çok not üzerinde.
+
+1291
+02:23:00,108 --> 02:23:04,608
+Çok not üzerinde yapmadık. Biz fonksiyonların birbirine zamanlı kıyasladık.
+
+1292
+02:23:04,628 --> 02:23:05,968
+Fonksiyonları karşılaştırdınız.
+
+1293
+02:23:06,188 --> 02:23:14,027
+Bir de dataset'in büyüklüğüne göre yaptınız. Proje raporundan gösterin.
+
+1294
+02:23:23,059 --> 02:23:35,799
+Burada bir de şey yapalım. Veri ne kadar dikledi, onun süresinde var. Saniye biçimde. Burada fonksiyonlar var. Bunların da 500 Mb, 20 Mb. Ne kadar süre çalışmalarını göstereyim.
+
+1295
+02:23:40,404 --> 02:23:43,763
+Tamam. Az önce çalıştırdığın fonksiyonu görelim.
+
+1296
+02:23:47,796 --> 02:23:52,615
+Yirmi saniye sürmüş. Küçük bir dataset seçmiştik.
+
+1297
+02:23:55,316 --> 02:23:57,816
+Yirmi bir saniye yapmışız. Bu tarz değişiyor.
+
+1298
+02:23:58,596 --> 02:24:08,916
+Tamam. Şimdi projenizi gönderdiniz. Project Proposal'da ki aynı dataset üzerinde çalıştınız. Doğru mu?
+
+1299
+02:24:09,276 --> 02:24:12,256
+Tamam. Şimdi bana o zaman bir de kodlarınızı açın.
+
+1300
+02:24:13,747 --> 02:24:24,147
+Kodlarınızda az önce gösterdiğiniz, en son gösterdiğiniz şeyi, kodu bana anlatın. Mapper ve Reducer içinde ne yaptığınızı.
+
+1301
+02:24:24,147 --> 02:24:31,147
+En son enerjik bir gönderdi. Onda biz dinamik yapmak istediğiniz için...
+
+1302
+02:24:31,603 --> 02:24:57,603
+Veriyi çalıştırırken bizim gotasetimizin indeksleri gönderiyoruz burada. Mesela daha önce ülkeleri seçmiştik, o 18'i denkliyor. Onun indekslerini alıp veriyle ilgili bölüme göre bölünce keylerini almış oluyoruz. Bir de burada ekstradan bir if kısmı vardı. Onun için de yine ilgili konuları alıp aradaki operatörü yine arayüzden gönderip...
+
+1303
+02:24:58,515 --> 02:25:17,355
+İlk komutanım. Sonra burada ilgili bir indeksi gördükten sonra K-Altma servisi 18 seçti. Ülkenin ismi neyse, satmasını neyse, D-E, Almanya. K-Almanya geldi. Onun belgesini de seçmişse kullanıcı. Daha da izlenmesini seçmiştik.
+
+1304
+02:25:18,975 --> 02:25:24,015
+İzlenme sayısı geldi. Yanına da bir koyduk. Bu biri de Combiner'i kullanırken bozulmasın diye.
+
+1305
+02:25:25,587 --> 02:25:26,507
+Toplatacağız.
+
+1306
+02:25:28,007 --> 02:25:29,347
+Ortalama anlatacağız.
+
+1307
+02:25:30,288 --> 02:25:32,747
+Bozulmasın diye kaç tane olduğunu göstermek istedik.
+
+1308
+02:25:34,847 --> 02:25:35,727
+Tamamdır.
+
+1309
+02:25:36,927 --> 02:25:38,507
+Teşekkür ederim arkadaşlar.
+
+1310
+02:25:40,308 --> 02:25:41,247
+Siz çıkabilirsiniz.
+
+1311
+02:25:42,707 --> 02:25:43,528
+Teşekkürler hocam.
+
+1312
+02:26:01,172 --> 02:26:28,112
+Arkadaşlar, kalan grupların hepsini aldım. Sesim geliyor diye düşünüyorum. Şimdi şöyle bir şey yapacağız. Dersin tanımlanmış süresi yarım saat sonra bitiyor. Hepinizi de bu süre zarfında alamayacağım gözüküyor. Yarın sabah saat 9'da sizleri kalan bu gruptaki şu anda kaç kişi var?
+
+1313
+02:26:28,659 --> 02:26:34,959
+28 kişi var. Alsam dersiniz var mı? Bir onu sorayım size.
+
+1314
+02:26:35,959 --> 02:26:37,139
+Benim var hocam donanımda.
+
+1315
+02:26:37,659 --> 02:26:38,879
+Bioinformatik var hocam.
+
+1316
+02:26:39,700 --> 02:26:40,759
+Donanım var hocam.
+
+1317
+02:26:41,680 --> 02:26:41,959
+Tamam.
+
+1318
+02:26:42,680 --> 02:26:43,939
+Ben de işe gidiyorum hocam.
+
+1319
+02:26:45,020 --> 02:26:46,700
+Evet, benim de işim var hocam.
+
+1320
+02:26:47,479 --> 02:26:48,040
+Oh ne güzel.
+
+1321
+02:26:49,379 --> 02:26:53,439
+Çalışmayan, yarın 9'da girebilecek arkadaşlarım var mı?
+
+1322
+02:26:55,219 --> 02:27:00,920
+Ne?
+
+1323
+02:27:00,943 --> 02:27:26,984
+Tamam, o zaman ben uygunum diyen arkadaşlar lütfen şimdi chat'e yazsınlar ve sizleri ben yarın ayrı bir toplantıda davet edeceğim ve şeylerinize bakacağım, projelerinize. Hayır, ben kesinlikle geç saatlere kadar da olsa şimdi bu akşam yapacağım diyen arkadaşlarım ise burada kalsınlar. Ben sizler için kalacağım.
+
+1324
+02:27:28,979 --> 02:27:32,180
+Hocam benim dokuzda bir başka sunumum daha var.
+
+1325
+02:27:32,719 --> 02:27:44,979
+O sunumdan sonra gelirsin. Sıkıntı yok. Zaten o süre zarfında diğer arkadaşları yaparım. Uygun olan arkadaşlar lütfen ben gelebilirim desinler. Gelebilirim dedikten sonra da ayrılsınlar.
+
+1326
+02:27:48,115 --> 02:27:52,916
+Hocam ben sormak istiyorum da sizin için nasıl uygun olur? Yani yorulmuşsunuzdur muhtemelen de yarın mı tercih edersiniz?
+
+1327
+02:27:54,256 --> 02:27:59,015
+Eğer seçeneğim yoksa tabii ki bu akşam yapacağım ama tercihim yarın yönünde.
+
+1328
+02:27:59,275 --> 02:27:59,695
+Tamam o zaman.
+
+1329
+02:28:06,324 --> 02:28:17,864
+Evet, ben gelebilirim diyen arkadaşlar lütfen ayrılsın. Ben Zoom chat'in kopyasını alacağım, şey yapacağım, sizleri davet edeceğim.
+
+1330
+02:28:22,675 --> 02:28:25,175
+Yarını kabul eden herkese teşekkür ediyorum ayrıca.
+
+1331
+02:28:25,795 --> 02:28:28,175
+Hocam bir şey sorabilir miyim yarınla ilgili?
+
+1332
+02:28:28,536 --> 02:28:28,795
+Evet.
+
+1333
+02:28:29,695 --> 02:28:33,896
+Bize mail falan atılacak mı? Zoom'la ilgili nereye katılmamız gerektiğine dair?
+
+1334
+02:28:33,896 --> 02:28:42,695
+Tabii tabii tabii. Şimdi ben bir toplantı oluşturacağım. Sizleri davet edeceğim. Ondan sonra sizler de yarın linke basacaksınız, geleceksiniz.
+
+1335
+02:28:42,695 --> 02:28:49,216
+Ya da bütün herkese email ile atarım. Linki gönderirim. Sadece yarın sunum yapacak arkadaşlar gelir.
+
+1336
+02:28:49,971 --> 02:28:51,311
+Tamamdır. Teşekkürler.
+
+1337
+02:29:04,371 --> 02:29:13,991
+Evet, şu anda kalan arkadaşların hepsi bugün kaça kadar olursa olsun diyorlar. Şu anda hala kaç kişi? 23 kişideyiz.
+
+1338
+02:29:15,811 --> 02:29:19,271
+Hocam, saat 9'da benimle toplantım var ama kalabilirim yani.
+
+1339
+02:29:21,236 --> 02:29:48,056
+Hayır, yani kalmanızı tavsiye etmiyorum. Sadece zorunlu olarak ben bu akşam yapayım diyenler varsa kalsın, onun dışındaki arkadaşlarımla yarın devam edelim. Ben de saat 8'den beri ayaktayım zaten. Özellikle ben bu akşam yapmak istiyorum, başka seçeneğim yok diyen arkadaşlarım varsa kalsın. Yarım saati geçebilir.
+
+1340
+02:29:49,236 --> 02:30:03,816
+O yüzden biraz da uziye de bilir yani. Ayrı bir toplantı ya da bu toplantının süresini uzatmaya çalışacağım. Onun dışındaki arkadaşlarım lütfen ayrılsınlar ama ayrılmadan önce ben yarın gelebilirim diye not düşsünler Zoom chatten.
+
+1341
+02:30:25,459 --> 02:30:40,799
+Okey, durum şu anki durumumuz 20 kişi burada. Bu durumda devam ediyoruz bu 20 kişiyle. Biraz arkadaşlar geçe kalacak. Bundan şey elimde olan bir şey değil. Hepimizin projesini eşit sürede değerlendirmek zorundayım.
+
+1342
+02:30:42,639 --> 02:30:51,799
+Şimdi sırasıyla bu grup üzerinden gideceğim. Şimdi saat 8'de bir şey var.
+
+1343
+02:30:54,164 --> 02:31:15,044
+Ders bitiyor. O yüzden şöyle yapalım. Ben ayrı bir toplantı oluşturuyorum. Biraz daha süresi uzun olsun. Sizlere bunun linkini vereyim. Siz o toplantıya girin. Bana bir saniye müsaade edin. Online Yıldızı Dütere üzerinden bir tane toplantı oluşturacağım.
+
+1344
+02:33:31,476 --> 02:33:35,495
+Hocam, alfabetik gidiyorduk değil mi?
+
+1345
+02:33:36,796 --> 02:33:37,316
+Hayır.
+
+1346
+02:33:40,456 --> 02:33:45,675
+Yani şu an benim adım Y ile başlıyor da acaba son sıradaysam hani yarın geleyim diyeceğim bu yüzden.
+
+1347
+02:33:46,476 --> 02:33:54,276
+Eğer yarın gelme şeyin varsa yarın gelmeni tavsiye ederim. Yani hem bana bir güzellik yaparsın.
+
+1348
+02:33:54,868 --> 02:34:01,887
+Hem de geç saatlere kadar kalmamış olursun. Ama bu seçeneğini senin zorlama yapmayacağım.
+
+1349
+02:34:04,227 --> 02:34:06,148
+Şu an kaçınız? Kimde acaba sıra?
+
+1350
+02:34:06,148 --> 02:34:19,668
+Onu söyleyemiyorum. Öyle bir kimin önceliği olacağını söyleyemiyorum. Ben sadece önümdeki Zoom üzerinden sırasıyla arkadaşları alacağım.
+
+1351
+02:34:21,203 --> 02:34:22,844
+Kimseyi öncelikle tanıyamıyorum.
+
+1352
+02:34:24,443 --> 02:34:27,743
+Hocam, yarın sunum yapacaklar için nereden haber vereceksiniz acaba?
+
+1353
+02:34:29,123 --> 02:34:37,724
+Az önce söylediğim gibi Zoom chatte ben yarın sunum yapacağım diyen arkadaşlara ben şey yapacağım.
+
+1354
+02:34:39,064 --> 02:34:44,844
+Online Yıldız Edü TR üzerinden şey yapacağım, davet atacağım.
+
+1355
+02:34:45,963 --> 02:34:48,243
+Ben biraz geç yazmıştım, beni de gördünüz mü acaba?
+
+1356
+02:34:49,108 --> 02:34:54,988
+Eğer Zoom chatte yazdıysan gözüküyorsa geç ya da erken fark etmez. Mutlaka olasındır.
+
+1357
+02:34:56,347 --> 02:35:01,188
+Hocam, ben Zoom chatte yazamadık da biz. O konuda bir sıkıntı olur mu?
+
+1358
+02:35:02,188 --> 02:35:03,448
+Neyi yazamadınız?
+
+1359
+02:35:03,608 --> 02:35:04,648
+İsimlerimizi aynı.
+
+1360
+02:35:05,299 --> 02:35:07,299
+Yarın mı sunum yapmak istiyorsunuz?
+
+1361
+02:35:07,539 --> 02:35:12,979
+Yok, hayır. Ben yanlış aldım o zaman konuyu. Bugün sunum yapacağız. İlerinin arkadaşımın işi var da.
+
+1362
+02:35:13,419 --> 02:35:17,079
+Tamam. Şimdi ben Zoom chatten arkadaşlar bir tane link paylaştım.
+
+1363
+02:35:19,123 --> 02:35:43,783
+Tamam mı? Şimdi bu akşam sunum yapmak isteyen arkadaşlar bu linkten girecekler. Çünkü bu ders az sonra bitiyor. Saat 7.40'da ben bunu başlattım. Saat akşam 10'a kadar devam edecek bu. Bu akşam sunum yapmak isteyenler bu link üzerinden tekrardan bağlansınlar. Bu açık mı? Tamam. [öğrenci]'a teşekkür ederim anlayışım için.
+
+1364
+02:35:44,275 --> 02:35:53,335
+Yarın geleyim diyenlere bir tane daha eklendi. Bunun dışındaki arkadaşlar, bu akşam yapacak olan arkadaşlar, linki herkes gördü mü?
+
+1365
+02:35:56,216 --> 02:35:57,675
+Evet hocam.
+
+1366
+02:35:58,195 --> 02:36:09,056
+Tamam, bunu kopyalayın. Ondan sonra biraz sonra bu linkten tekrardan girin. Ben sırasıyla hepinizi, projelerini bu akşam ona kadar değerlendireceğim.
+
+1367
+02:36:10,868 --> 02:36:15,048
+Anlaştık mı?
+
+1368
+02:36:15,448 --> 02:36:17,168
+Tamam, tamam arkadaşlar.
+
+1369
+02:37:45,652 --> 02:37:51,632
+Henüz çıkmayın arkadaşlar. Çıkabilir arkadaşlar. Burada beklemenize gerek yok. Diğer link üzerinden değerlendireceğim.

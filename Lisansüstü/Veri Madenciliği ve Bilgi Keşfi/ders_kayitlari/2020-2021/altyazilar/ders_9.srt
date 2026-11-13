@@ -1,0 +1,4415 @@
+1
+00:05:01,588 --> 00:05:06,867
+Arkadaşlar, sesim geliyor mu, düzgün, mouse'u hareket ettirdiğimde kesiliyor mu, nasıl?
+
+2
+00:05:08,228 --> 00:05:09,108
+Merhaba hocam.
+
+3
+00:05:09,128 --> 00:05:10,367
+Merhaba hocam, gülüyorsunuz.
+
+4
+00:05:10,908 --> 00:05:11,487
+Merhaba hocam.
+
+5
+00:05:12,808 --> 00:05:14,648
+Teşekkürler, kesinlikle yok yani.
+
+6
+00:05:29,843 --> 00:05:38,183
+Yeni bir haftaya başlıyoruz. Dokuzuncu hafta galiba. Yanlış bilmiyorsam. Dokuzuncu hafta olması lazım.
+
+7
+00:05:39,764 --> 00:05:41,183
+Dokuz hocam.
+
+8
+00:05:46,675 --> 00:06:06,675
+Asans ders planına göre, haftalık planına göre, 30 Kasım için, Clustering Methods'da, hiyerarşik kümeleme yöntemine geçmiş olmamız gerekiyor.
+
+9
+00:06:06,675 --> 00:06:13,096
+Biraz geride gidiyiz ama aradaki açı kapatırız, çok problem olacağını düşünmüyorum.
+
+10
+00:06:18,100 --> 00:06:21,320
+K-means, klastrin konusuyla devam ediyoruz.
+
+11
+00:06:23,320 --> 00:06:26,560
+Biraz kümeleme nedir, bunun üzerinde konuşacağız.
+
+12
+00:06:27,740 --> 00:06:31,680
+Hocam, pardon. Masu sesini hareket ettirdiğiniz zaman sesiniz gidiyor şu an.
+
+13
+00:06:32,000 --> 00:06:36,280
+Gidiyor mu yine? Onu ben bir şeyden düzelteyim tekrar.
+
+14
+00:07:17,172 --> 00:07:21,512
+Bir de hocam, benim eski bilgisayarımda da böyle bir sorun vardı ama belki sizde de aynısı vardır.
+
+15
+00:07:21,992 --> 00:07:25,772
+USB'ler yan yana mı kulaklığı taktığınız, mouse taktığınız USB'ler?
+
+16
+00:07:28,752 --> 00:07:29,772
+Hayır, değil.
+
+17
+00:07:30,172 --> 00:07:32,432
+Öyle durumlarda gürültüye sebep oluyordu çünkü bende.
+
+18
+00:07:34,432 --> 00:07:38,432
+Bu sistemin, yani şeyin kendi üstündeki...
+
+19
+00:07:42,420 --> 00:07:51,720
+Mouse'un sesini daha yüksek ses kabul ediyor. Öbürünü basıyor, bastırıyor yani. Böyle bir şey var, problem var.
+
+20
+00:07:53,520 --> 00:08:02,139
+Mikrofon kullanıyorum. Dolayısıyla bunun mikrofonunu kullanması gerekir ama bunu kullanmak yerine, şuradan test ediyorum.
+
+21
+00:08:12,019 --> 00:08:13,839
+Sesiniz hiç gelmiyor hocam şu an.
+
+22
+00:08:14,500 --> 00:08:16,859
+Evet, çünkü mouse'u hareket ettiriyorum.
+
+23
+00:09:03,220 --> 00:09:06,860
+Hocam benim sınavla ilgili sorum olacaktı.
+
+24
+00:10:03,220 --> 00:10:05,220
+Aynı hocam değişmede gelmiyorsa siz.
+
+25
+00:10:32,596 --> 00:10:39,495
+Hocam, Zoom'un kendi ayarı da var. Mikrofon ve ses ve görüntüyle alakalı. Oradan denedim.
+
+26
+00:11:31,347 --> 00:11:32,567
+Duyabiliyor musun beni?
+
+27
+00:11:34,927 --> 00:11:36,327
+Şu an sesiniz geldi ama.
+
+28
+00:11:36,527 --> 00:11:37,387
+Şu an iyi hocam.
+
+29
+00:11:39,527 --> 00:11:40,907
+Şu an gelmiyor hayır.
+
+30
+00:11:41,267 --> 00:11:41,947
+Gelmiyor yine.
+
+31
+00:11:42,788 --> 00:11:43,827
+Tekrar kesildi, evet.
+
+32
+00:12:19,443 --> 00:12:30,503
+Bu ses problemi maalesef beni çok uğraştırıyor. Yani sistem üzerinden şey, headphone'un mikrofonu çıkmıyor. Anlamış değilim.
+
+33
+00:12:31,503 --> 00:12:38,663
+Biz şimdi başlayalım. Ben güçlü bir sesle size ulaşacağım.
+
+34
+00:12:39,764 --> 00:12:44,683
+Hocam, öncesinde benim bir sorum olacak da bu geçmiş sınavla ilgili müsait seni değerli.
+
+35
+00:12:44,743 --> 00:12:45,723
+Evet, buyurun.
+
+36
+00:12:45,723 --> 00:12:56,803
+Hocam, ben en azından kendi adıma konuşayım. Sınav süresi bana çok kısa geldi. Bir de sorular, tekrar geri dönemediğimiz için ben açıkçası soruyu tamamlamadan geçmek istemedim.
+
+37
+00:12:57,384 --> 00:13:00,103
+Böyle olunca da süre boyunca çok az soruya bakabildim.
+
+38
+00:13:01,483 --> 00:13:05,323
+Sınav yöntemi bu şekilde mi kalacak?
+
+39
+00:13:05,923 --> 00:13:09,103
+Çünkü geçen seneki daha iyiydi. En azından bütün soruları görüyorduk.
+
+40
+00:13:09,103 --> 00:13:17,103
+Ve en azından bir göz gezdirip kolayları önce yapabiliyorduk.
+
+41
+00:13:17,103 --> 00:13:21,983
+Şimdi geri dönme ihtimalimiz olmazsa bir soruda takılık kalabiliyoruz.
+
+42
+00:13:22,543 --> 00:13:24,243
+Ya aslında şöyle...
+
+43
+00:13:24,243 --> 00:13:26,423
+Sayfa yeni yapınca geliniyor aslında hocam.
+
+44
+00:13:27,163 --> 00:13:31,503
+Biz de geri dönemedik. Ben ilk başta geri dönemedim sınavda.
+
+45
+00:13:31,963 --> 00:13:34,683
+Yenili yapınca tekrar döndü ama sonra. Dönebildim yani.
+
+46
+00:13:34,843 --> 00:13:37,144
+Ama yok, uyarı yapıyordu zaten. Uyarı da şey yazıyordu.
+
+47
+00:13:37,144 --> 00:13:39,144
+Ben de yenilediğimde yeniledi.
+
+48
+00:13:39,144 --> 00:13:39,764
+Ben yenile yaptığımda da gitmedi.
+
+49
+00:13:40,543 --> 00:13:41,863
+Ya birkaç defa yaptım da da gitmedi.
+
+50
+00:13:42,603 --> 00:13:47,264
+Arkadaşlar ben sınavda geri dönme opsiyonunu kapattım çünkü.
+
+51
+00:13:47,783 --> 00:13:51,144
+Bunu hani bir çeşit kurma gibi düşündüm.
+
+52
+00:13:52,144 --> 00:13:55,223
+Kaydetmedim o zaman bu soruları geri döndüğümüzde.
+
+53
+00:13:55,303 --> 00:13:56,384
+Kaydetti, kaydetti, kaydetti.
+
+54
+00:13:57,144 --> 00:14:00,144
+Yok hocam şöyle ben yenili yapınca geri döndüm ama...
+
+55
+00:14:00,144 --> 00:14:02,144
+Sistemin açığını kullanarak yaptınız siz onu.
+
+56
+00:14:02,144 --> 00:14:06,144
+Yani aslında bu LMSC'yi yazan...
+
+57
+00:14:06,144 --> 00:14:09,203
+Beklediğimden düşük geldi epey bir aslında test hocam. Ondan mı bilmiyorum.
+
+58
+00:14:10,003 --> 00:14:11,644
+Epey düşük geldi beklediğimden yani.
+
+59
+00:14:12,144 --> 00:14:16,603
+Hocam aslında yani olay geri dönmek değil bence süre daha büyük bir sorun.
+
+60
+00:14:16,603 --> 00:14:18,603
+Çünkü mesela sorularda hesaplam.
+
+61
+00:14:18,603 --> 00:14:19,603
+Çünkü sorularda hesaplamalar vardı.
+
+62
+00:14:19,723 --> 00:14:23,363
+Ben o soruları 20 dakikada hesaplayamam yani yapılacak bir sürü hesaplama var.
+
+63
+00:14:23,863 --> 00:14:26,403
+10 soru bu sefer ben iyice zaten panik oldum.
+
+64
+00:14:26,503 --> 00:14:27,043
+Gitti zaten.
+
+65
+00:14:27,603 --> 00:14:29,563
+Evet, o konuda haklısınız.
+
+66
+00:14:29,743 --> 00:14:32,644
+Süreyle ilgili belki biraz daha uzun verebilirdim.
+
+67
+00:14:33,023 --> 00:14:36,683
+Bir de sizi öncesinde bilgilendirseydim belki iyi olurdu.
+
+68
+00:14:36,683 --> 00:15:06,663
+Bu sınav şöyle bir sınav.
+
+69
+00:15:06,683 --> 00:15:36,663
+uzatabiliyorsunuz.
+
+70
+00:15:36,683 --> 00:15:38,683
+Bundan sonraki sınav da biraz daha uzatabiliyorsunuz.
+
+71
+00:15:38,683 --> 00:15:40,683
+Evet, biraz daha uzatabiliyorsunuz.
+
+72
+00:15:40,683 --> 00:15:42,644
+Uzun tutmayı planlıyorum tabii ki.
+
+73
+00:15:42,683 --> 00:15:44,203
+Hocam şöyle bir şey sormak istiyorum.
+
+74
+00:15:44,463 --> 00:15:47,083
+Testte sorular karışık mı geliyordu herkese?
+
+75
+00:15:47,483 --> 00:15:47,723
+Evet.
+
+76
+00:15:48,403 --> 00:15:52,563
+Peki hocam benim mesela ilk sorum hesaplama gerektiren bir soruydu.
+
+77
+00:15:53,003 --> 00:15:54,203
+Ben 2 dakika uğraştım.
+
+78
+00:15:54,604 --> 00:15:56,083
+Sonra baktım ilerliyorum.
+
+79
+00:15:56,083 --> 00:15:58,083
+bir iki dakika daha uğraştım.
+
+80
+00:15:58,083 --> 00:16:00,083
+Ben 2 dakika daha uğraştım.
+
+81
+00:16:00,083 --> 00:16:01,083
+Ben 7 dakikamı verdim soruya.
+
+82
+00:16:01,083 --> 00:16:05,083
+Ben 2 dakika daha uğraştım.
+
+83
+00:15:59,283 --> 00:16:07,303
+Mesela şimdi kolay sorular vardı, sözel sorular, bir de hesap gerektiren sorular vardı, bir de bunların içerisinde zor olanlar vardı.
+
+84
+00:16:07,823 --> 00:16:11,683
+Şimdi ben zor soruya denk geldim başta, geçmek istemedim geri dönemeyeceğim çünkü.
+
+85
+00:16:12,644 --> 00:16:14,984
+Peki arkadaşların arasından denk gelen de vardır aynı benim gibi.
+
+86
+00:16:15,323 --> 00:16:23,624
+Bir başkasına ilk 4-5 soru mesela çok kolay denk gelmiş de olabilir. Şans yani bu karşı başkalarına.
+
+87
+00:16:23,624 --> 00:16:28,624
+O zaman şimdi burada bilgi ölçmekten çok biraz daha şansı dayalı bir sınav olmuş oluyor bu.
+
+88
+00:16:28,624 --> 00:16:29,163
+Evet, evet.
+
+89
+00:16:29,163 --> 00:16:32,423
+Yani biraz daha yarış gibi oldu. Ben ondan çok şey oldum.
+
+90
+00:16:32,423 --> 00:16:33,903
+Muzdarip oldunuz, anladım.
+
+91
+00:16:33,903 --> 00:16:40,644
+Muzdarip oldum ve burada da yani belki biraz hani sizin bilerek yapmış olduğunuz bir şey değildir elbette ama biraz haksızlık da oldu.
+
+92
+00:16:40,644 --> 00:16:50,203
+O konuda da sizi uyarmam gerekiyordu. Dediğim gibi ben sizden sonra yaptığım, ertesi gün yaptığım sınavda öğrencilere önceden mail attım.
+
+93
+00:16:50,384 --> 00:16:56,504
+Dedim ki 10 tane soru var. Sorulardan bazılarını bir dakikada, bazılarını beş dakikada cevaplayacaksınız.
+
+94
+00:16:56,504 --> 00:17:00,303
+Ona göre dikkat edin.
+
+95
+00:17:00,303 --> 00:17:02,303
+Anik olmayın şeklinde bir uyarı yaptım.
+
+96
+00:17:02,303 --> 00:17:04,983
+Ayrıca sorularını bir soru var.
+
+97
+00:17:04,983 --> 00:17:08,723
+Ayrıca soruları çözerken hiç vakit kaybetmemeniz gerekiyor vs. diye.
+
+98
+00:17:09,044 --> 00:17:11,943
+Belki önden bir bilgilendirme de iyi olabilirdi.
+
+99
+00:17:11,943 --> 00:17:16,624
+Bu durumda süreyi ona göre daha efektif kullanabilirdiniz.
+
+100
+00:17:16,624 --> 00:17:21,304
+sorularını bir soruları.
+
+101
+00:17:21,304 --> 00:17:23,983
+Dört ya da beş dakika en fazla benim ölçtüğüm öyleydi.
+
+102
+00:17:24,304 --> 00:17:28,003
+Ama bu şekilde hesaplama gerektiren üç tane soru vardı.
+
+103
+00:17:28,104 --> 00:17:32,683
+Onun dışındakiler böyle hani bir dakikada bile yapabileceğiniz tipte sorulardı.
+
+104
+00:17:33,064 --> 00:17:34,544
+Ama yirmi dakika biraz az oldu.
+
+105
+00:17:34,624 --> 00:17:35,023
+Haklısınız.
+
+106
+00:17:35,183 --> 00:17:37,963
+Evet bir de üç sorumun ikisi benim mesela hesaplama gerektiren soru.
+
+107
+00:17:37,963 --> 00:17:38,844
+Evet benim de hocam.
+
+108
+00:17:38,963 --> 00:17:39,844
+İlk sırada mı geldi?
+
+109
+00:17:39,844 --> 00:17:42,163
+İlk sorumun ikisi geldi hocam benim de.
+
+110
+00:17:42,443 --> 00:17:43,203
+Benim de aynen.
+
+111
+00:17:43,364 --> 00:17:45,683
+Ben hocam sınavın son dört sorusunu göremedim.
+
+112
+00:17:45,804 --> 00:17:47,663
+Ondan sonra baktım sonra elli saniye kalıyor.
+
+113
+00:17:47,763 --> 00:17:49,743
+Sallamak da istemedim yani soruları.
+
+114
+00:17:49,763 --> 00:17:50,403
+Bir de o vardı hocam.
+
+115
+00:17:50,403 --> 00:17:52,003
+Onun dolayı boş bıraktım yani hocam.
+
+116
+00:17:52,064 --> 00:17:54,183
+Çünkü mesela doğru yanlışı götürüyor mu onu da bilmiyordum.
+
+117
+00:17:54,263 --> 00:17:55,584
+Onunla ilgili de bir bilgim yoktu.
+
+118
+00:17:55,584 --> 00:17:57,003
+Götürmüyor mu hiç.
+
+119
+00:17:57,003 --> 00:17:57,364
+Ama hiç götürmüyordu.
+
+120
+00:17:57,364 --> 00:17:58,624
+Götürmüyordu evet evet.
+
+121
+00:17:58,624 --> 00:18:02,124
+O riski alıp veya kendim de yani direkt sallamak da istemedim soruları.
+
+122
+00:18:02,183 --> 00:18:05,124
+O yüzden sınavın yani testdeki son dört beş soruyu hatta görememiş olayım.
+
+123
+00:18:05,223 --> 00:18:11,003
+Çünkü ilk iki soru falan hatta bir tane sanırım Naive Bayez'de miydi alakalıydı hatırlamıyorum.
+
+124
+00:18:11,104 --> 00:18:12,543
+Ve bayağı bir işlem sorusu vardı.
+
+125
+00:18:12,543 --> 00:18:42,523
+Bu bayiz olan çok basit bir şey.
+
+126
+00:18:42,543 --> 00:19:12,523
+Bir sonraki sınavın.
+
+127
+00:19:12,543 --> 00:19:15,543
+Yoksa bir sınav daha yapacağım.
+
+128
+00:19:15,543 --> 00:19:16,023
+Bir küçük sınav daha yapacağım.
+
+129
+00:19:17,223 --> 00:19:19,543
+Test daha tecrübe edecek olacağız.
+
+130
+00:19:19,543 --> 00:19:22,223
+Hocam aslında test yerinde klasik olsa daha iyi olacak.
+
+131
+00:19:22,344 --> 00:19:23,864
+Bence arkadaşlar ne kadar bilmiyorum da.
+
+132
+00:19:24,324 --> 00:19:26,284
+Bu sadece sizin dersinizde değil.
+
+133
+00:19:26,864 --> 00:19:31,844
+Yani daha geçen dönemki derslerde de test soruları yetiştirilemiyor bir türlü.
+
+134
+00:19:31,844 --> 00:19:32,844
+bir sınavın.
+
+135
+00:19:32,844 --> 00:19:33,844
+Bir de hocam tabloyu bilgisayarlar.
+
+136
+00:19:33,844 --> 00:19:36,844
+Bir de hocam tabloyu bilgisayardan görüp sürekli bilgisayara bakıyorsunuz, kağıda bakıyorsunuz.
+
+137
+00:19:37,844 --> 00:19:42,304
+Kağıt üstüne mesela klasik olarak sormuş olsanız o tabloları biz elle işte buna baktım.
+
+138
+00:19:42,844 --> 00:19:44,564
+Yani üstünü çizerek işlem yapabiliyoruz.
+
+139
+00:19:44,564 --> 00:19:45,564
+Arkadaşlar,
+
+140
+00:19:45,564 --> 00:19:46,564
+arkadaşlar hesap makinesi kullanabiliyoruz.
+
+141
+00:19:46,564 --> 00:19:48,564
+Arkadaşlar hesap makinesi kullanabiliyorsunuz değil mi bu sınavda?
+
+142
+00:19:48,564 --> 00:19:52,564
+Yani ben açıkçası bu sınavda şöyle beklerdim.
+
+143
+00:19:52,564 --> 00:19:53,564
+hepiniz bilgisayarlar.
+
+144
+00:19:53,564 --> 00:19:54,564
+Hepiniz bilgisayarcısınız,
+
+145
+00:19:54,564 --> 00:19:55,564
+hepiniz bilgisayarcısınız, kod yazabiliyorsunuz.
+
+146
+00:19:55,564 --> 00:19:56,564
+Bir ne bileyim,
+
+147
+00:19:56,564 --> 00:19:57,564
+bir ne bileyim,
+
+148
+00:19:57,564 --> 00:19:58,564
+bir
+
+149
+00:19:58,564 --> 00:19:59,564
+ne bileyim,
+
+150
+00:19:59,564 --> 00:20:00,564
+bir
+
+151
+00:20:00,564 --> 00:20:01,564
+ne bileyim,
+
+152
+00:20:01,564 --> 00:20:02,564
+bir
+
+153
+00:20:02,564 --> 00:20:03,564
+ne bileyim,
+
+154
+00:20:03,564 --> 00:20:04,564
+bir
+
+155
+00:20:04,564 --> 00:20:05,564
+ne bileyim,
+
+156
+00:20:05,564 --> 00:20:06,564
+bir
+
+157
+00:20:06,564 --> 00:20:07,564
+ne bileyim,
+
+158
+00:20:07,564 --> 00:20:08,564
+bir
+
+159
+00:20:08,564 --> 00:20:09,564
+ne bileyim,
+
+160
+00:20:09,564 --> 00:20:10,564
+bir
+
+161
+00:20:10,564 --> 00:20:11,564
+ne bileyim,
+
+162
+00:19:58,736 --> 00:20:02,716
+Standart sapma hesaplamak için basit fonksiyonunuz olabilir.
+
+163
+00:20:03,116 --> 00:20:04,476
+Python'da yazdığınız.
+
+164
+00:20:05,016 --> 00:20:07,336
+Ya da işte bak matlabı açtım aferin.
+
+165
+00:20:07,336 --> 00:20:12,116
+İşte distance hesaplama ya da ne bileyim entropy hesaplama.
+
+166
+00:20:12,256 --> 00:20:15,496
+Ben iki tane class'ın probabilitelerini yazayım.
+
+167
+00:20:15,576 --> 00:20:18,496
+Hop bana entropy versin.
+
+168
+00:20:18,976 --> 00:20:22,616
+Yani inanın bunları, bunların hepsi açık yani.
+
+169
+00:20:22,716 --> 00:20:24,296
+Bunları kullanmanızı bekliyorum.
+
+170
+00:20:24,736 --> 00:20:27,836
+Hesap makinesinden bir farkı yok artık bizim için bunları.
+
+171
+00:20:27,836 --> 00:20:38,336
+Ama adın üzerinde formülü yazıp sayıları sadece bir Python'da yazdığınız bir kodla da çalıştırıp sonuç alabilirsiniz.
+
+172
+00:20:38,596 --> 00:20:41,616
+Bunlar sizin düşünmeniz gereken şeyler bence.
+
+173
+00:20:42,696 --> 00:20:45,116
+Hocam ben dediğiniz gibi hazırlamıştım.
+
+174
+00:20:45,436 --> 00:20:49,816
+Ben bir de ikinci sınavla ilgili olarak yani ikinci sınavla ilgili şey soracaktım.
+
+175
+00:20:50,136 --> 00:20:54,756
+Ben orada mesela Word'de oturup hani şeyler formüller falan da yazdım Word içerisinde.
+
+176
+00:20:54,756 --> 00:20:57,676
+Yani klasik sınavın şöyle olma ihtimali var mıdır?
+
+177
+00:20:57,676 --> 00:20:58,916
+Bilmiyorum hani uygun mudur?
+
+178
+00:20:59,556 --> 00:21:04,336
+Mesela klasik sorular olup da biz bunları kağıda çözsek ve bunların fotoğrafını çekip yollasak.
+
+179
+00:21:04,696 --> 00:21:06,176
+[öğrenci] zaten ben böyle bekliyordum.
+
+180
+00:21:06,996 --> 00:21:11,615
+Yani bunu sizin Word'de yapan bir ya da iki tane öğrenci gördüm.
+
+181
+00:21:11,776 --> 00:21:13,076
+Çok anlam veremedim.
+
+182
+00:21:13,556 --> 00:21:16,836
+Ben özellikle sizin el yazınızla yapmanızı istiyorum.
+
+183
+00:21:17,236 --> 00:21:21,976
+Bu bir parça kendi özgün çalışmanız olduğunun da göstergesi benim için.
+
+184
+00:21:21,976 --> 00:21:34,496
+Yani bunu belirtmedim galiba ya da ben açıklamalarda yazdım diye düşünüyordum ama kendi el yazınızla kağıt üzerinde çözüp fotoğrafını çekip bunu atacaksın.
+
+185
+00:21:34,716 --> 00:21:35,896
+Benim beklediğim buydu.
+
+186
+00:21:36,496 --> 00:21:38,076
+Ha o zaman ben atladım hocam.
+
+187
+00:21:38,076 --> 00:21:39,776
+Ve tekrar söylüyorum.
+
+188
+00:21:40,316 --> 00:21:45,376
+Bu şeyde sınavda hesap makinesi kullanmaktan farkı yok.
+
+189
+00:21:45,536 --> 00:21:49,156
+Sağ tarafta açık bir matlakta başka bir platformda.
+
+190
+00:21:49,236 --> 00:21:54,316
+Ben Python kodu yazdım mesela soruları çözerken, doğru ışıkları bulurken.
+
+191
+00:21:54,436 --> 00:21:58,476
+Çünkü hesap makinesi kullanarak çok daha uzun sürecekti.
+
+192
+00:21:58,476 --> 00:22:00,476
+Oturdum Python'da iki satır kod yazdım.
+
+193
+00:22:01,596 --> 00:22:05,836
+Ve tüm şeyleri, entropileri falan öyle hesapladım mesela.
+
+194
+00:22:07,556 --> 00:22:11,556
+Yani bunlar artık hani sizin eliniz ayağınız.
+
+195
+00:22:11,716 --> 00:22:14,036
+Hesap makinesinden bir farkı yok bizim için.
+
+196
+00:22:14,656 --> 00:22:15,376
+Kullanabilirsiniz.
+
+197
+00:22:16,176 --> 00:22:20,476
+Klasik sınav için ben hani elle hesaplanır.
+
+198
+00:22:21,115 --> 00:22:27,615
+Hani o tüm işlemleri göstermeniz gerektiğini düşündüğüm için bana o nümerik feature çok uzun geldi.
+
+199
+00:22:27,615 --> 00:22:40,516
+İşte bakın elle cevaplayacaksınız doğru ama bana ifadeyi yazdıktan sonra işlem sonucunu üretmek için kodla yapabilirsiniz bunu.
+
+200
+00:22:41,216 --> 00:22:43,636
+Panikten kodu yazmayı unuttum hocam.
+
+201
+00:22:44,096 --> 00:22:45,336
+Ben şöyle söyleyeyim.
+
+202
+00:22:45,476 --> 00:22:48,516
+Ben olsam sınavdan önce hazırlardım yani bunları.
+
+203
+00:22:49,556 --> 00:22:52,176
+Hocam sonraki sınavda kesinlikle aklımda olacak.
+
+204
+00:22:52,336 --> 00:22:55,876
+Hiç açıp da oralardan kod yazıp yapmak aklıma gelmedi benim.
+
+205
+00:22:55,876 --> 00:22:58,376
+Hesap makinesiyle iki saat uğraştım.
+
+206
+00:22:58,636 --> 00:23:03,516
+Ben size tiyo veriyorum ama açıkçası bunları sizin akıl edeceğinizi düşünüyordum.
+
+207
+00:23:03,636 --> 00:23:06,256
+Eminim yani yapan arkadaşlar da var zaten.
+
+208
+00:23:06,816 --> 00:23:08,876
+Ama yapabilirsiniz bu açık.
+
+209
+00:23:08,976 --> 00:23:13,496
+Hani tabii ki ya gidip de hazır bir yerden bir şey kullanın anlamında söylemiyorum.
+
+210
+00:23:13,636 --> 00:23:14,516
+Yanlış anlamayın.
+
+211
+00:23:14,916 --> 00:23:17,736
+Oturun iki satır standart satmanın formülünü.
+
+212
+00:23:17,736 --> 00:23:20,176
+Python'daki yazın yani o kadar kolay ki.
+
+213
+00:23:20,615 --> 00:23:22,436
+Ama kendi fonksiyonunu kullanmayın.
+
+214
+00:23:22,556 --> 00:23:23,856
+Mesela standart satmadı.
+
+215
+00:23:23,976 --> 00:23:26,296
+Python n'e bölerek hesaplıyor.
+
+216
+00:23:26,416 --> 00:23:29,856
+Ben n-1'e bölerek hesaplanacak şekilde istiyorum.
+
+217
+00:23:29,956 --> 00:23:31,716
+Hep sayısal sonuçları.
+
+218
+00:23:31,796 --> 00:23:33,115
+Hocam o parametre değişebiliyor.
+
+219
+00:23:34,176 --> 00:23:35,836
+Bir parametre verilebiliyor hocam.
+
+220
+00:23:36,076 --> 00:23:38,236
+İşte ben ikisini de denedim.
+
+221
+00:23:38,336 --> 00:23:40,436
+Oturdum kendi kodumu yazdım.
+
+222
+00:23:40,556 --> 00:23:41,676
+O da uzun sürmedi.
+
+223
+00:23:41,796 --> 00:23:42,556
+Yani bir satır.
+
+224
+00:23:42,556 --> 00:23:45,696
+Hocam ben açıkçası şeyi düşünüyordum.
+
+225
+00:23:45,836 --> 00:23:48,876
+Hani testte bu kadar hesaplama beklemiyordum.
+
+226
+00:23:49,596 --> 00:23:52,336
+Hani zaten elle hesaplamayı da kafzayla yapacağımız için
+
+227
+00:23:52,336 --> 00:23:54,316
+hesapmak ise bir şekilde yaparız diye.
+
+228
+00:23:54,316 --> 00:23:55,316
+Tabii.
+
+229
+00:23:56,180 --> 00:23:57,779
+Testte de hesaplama gelince.
+
+230
+00:23:57,880 --> 00:23:59,680
+Ondan hazırlıksız yakalandım diyorsun [öğrenci].
+
+231
+00:24:00,180 --> 00:24:01,080
+Aynen öyle oldu.
+
+232
+00:24:01,200 --> 00:24:02,660
+Yani teste daha çok şey bekliyordum.
+
+233
+00:24:02,820 --> 00:24:06,039
+Böyle hani kısa kısa bilgi soruları bekliyordum.
+
+234
+00:24:06,160 --> 00:24:07,720
+Genelden test öyle yapılıyor ya.
+
+235
+00:24:08,100 --> 00:24:10,799
+Tabii hesaplama görünce şoka girdim biraz.
+
+236
+00:24:10,880 --> 00:24:13,039
+Öyle sorular da vardı.
+
+237
+00:24:13,400 --> 00:24:15,500
+Öbür türlü sorular da vardı.
+
+238
+00:24:15,640 --> 00:24:16,580
+Doğru haklısınız.
+
+239
+00:24:16,720 --> 00:24:20,320
+İki türde vardı ama yani biraz matematikte olması gerekiyor.
+
+240
+00:24:20,320 --> 00:24:21,840
+Yok şey için hocam dedim.
+
+241
+00:24:22,000 --> 00:24:24,900
+Ben hatta doğru hatırlıyorsam siz şey demiştiniz sanki.
+
+242
+00:24:24,900 --> 00:24:27,700
+On test olacak ama hani genelde bu tarz tanımsal şeyler olacak.
+
+243
+00:24:27,799 --> 00:24:30,279
+Ve iki klasik soru soracağım gibisinden bir şey demiştiniz.
+
+244
+00:24:30,400 --> 00:24:32,660
+Hatta son güne kadar iki soru vardı.
+
+245
+00:24:32,740 --> 00:24:33,580
+İki oturum vardı.
+
+246
+00:24:34,200 --> 00:24:36,779
+Son gün girdiğimde tek oturuma düşmüştü klasik.
+
+247
+00:24:36,860 --> 00:24:39,539
+Ben o yüzden hatta testimi bu kadar etkileyeceğini de düşünmemiştim.
+
+248
+00:24:39,640 --> 00:24:41,360
+Yani yüzde altmış beş etkilidir o yüzden de.
+
+249
+00:24:42,080 --> 00:24:48,680
+Arkadaşlar bu sistem klasik sınav sorularını toplu indirip
+
+250
+00:24:48,680 --> 00:24:51,920
+öğrenci numarasıyla falan ilişkilendirmiyor.
+
+251
+00:24:51,920 --> 00:24:57,080
+Ve inanın bu test sınavlarında lisansa da yapacaktım aynı şeyi.
+
+252
+00:24:57,220 --> 00:24:59,120
+Seksen beş öğrencim var.
+
+253
+00:24:59,700 --> 00:25:03,800
+Her bir dosyayı tek tek sizin isim vererek download etmeniz.
+
+254
+00:25:04,200 --> 00:25:08,320
+Ondan sonra açıp okumanız ve puanını götürüp bir tabloya yazmanız gerekiyor.
+
+255
+00:25:08,779 --> 00:25:10,420
+İnanılmaz kötü bir sistem.
+
+256
+00:25:10,620 --> 00:25:11,880
+Yorucu bir şey.
+
+257
+00:25:12,559 --> 00:25:16,019
+O yüzden test sınavında iki soruyu bire indirdim.
+
+258
+00:25:16,360 --> 00:25:17,920
+Lisansa hiç klasik sınav yapmadım.
+
+259
+00:25:17,920 --> 00:25:22,920
+Yani böyle zor bir platform hakikaten.
+
+260
+00:25:23,920 --> 00:25:24,580
+Sebebi o.
+
+261
+00:25:24,660 --> 00:25:27,920
+Aslında size iki tane klasik soru hazırlamıştım.
+
+262
+00:25:28,620 --> 00:25:31,640
+Sınav gününden bir gün önce iki soru vardı.
+
+263
+00:25:31,980 --> 00:25:32,799
+İkinciyi sildim.
+
+264
+00:25:33,620 --> 00:25:35,299
+Baktım olacak gibi değil.
+
+265
+00:25:35,380 --> 00:25:36,279
+İkinciyi sildim.
+
+266
+00:25:36,400 --> 00:25:38,460
+Yani değerlendirmesi inanılmaz zor.
+
+267
+00:25:39,660 --> 00:25:41,380
+Hocam bir de benim şöyle bir tavsiyem olacak.
+
+268
+00:25:42,100 --> 00:25:42,360
+Evet.
+
+269
+00:25:42,860 --> 00:25:45,600
+Test kısmında mesela sürünün o kadar kısa olacağını bilseydim.
+
+270
+00:25:45,600 --> 00:25:47,340
+Ben şahsen hazırlardım o kodları bu arada.
+
+271
+00:25:48,160 --> 00:25:52,019
+Ben o kadar kısa ve hesap gerektiren işlemleri beklemiyordum arkadaşlar gibi.
+
+272
+00:25:52,519 --> 00:25:55,000
+Siz sınav süresini öncesinde görmüyor muydunuz?
+
+273
+00:25:55,820 --> 00:26:01,660
+Ama on tane soruyu ben arkadaşlar belki duymuştur ama ben on tane test sorusu diye şey yapmadım.
+
+274
+00:26:01,740 --> 00:26:04,019
+Bir de hesap gerektiren sorular olacağını tahmin etmedim.
+
+275
+00:26:04,019 --> 00:26:08,000
+Dolayısıyla şey yap yani kodu hazırlamadım öncesinde.
+
+276
+00:26:08,400 --> 00:26:10,960
+Ama eğer belki de şöyle bir kaygınız olabilir sizin de.
+
+277
+00:26:11,320 --> 00:26:13,539
+Hani öğrenciler birbirleriyle yardımlaşmasınlar.
+
+278
+00:26:13,700 --> 00:26:15,640
+O yüzden geriye dönüşü engellemiş olabilirsiniz.
+
+279
+00:26:15,900 --> 00:26:16,460
+Tabii ki.
+
+280
+00:26:16,660 --> 00:26:18,820
+Belki şey yapmanız ama daha güzel olabilirdi.
+
+281
+00:26:18,820 --> 00:26:21,160
+Yani numerik sorular vardı.
+
+282
+00:26:21,280 --> 00:26:28,240
+Bu sayıları değiştirerek herkes için 35 tane öğrenci varsa tabloda 1, 2, 3 olurdu ilk öğrencinin.
+
+283
+00:26:28,500 --> 00:26:29,640
+Sonuçta hazırlamış olmanızı zaman edilmiştir.
+
+284
+00:26:29,640 --> 00:26:32,160
+Öyle bir sistem değil ama bu [öğrenci].
+
+285
+00:26:32,300 --> 00:26:36,720
+Yani öğrenciye özel soru soran bir platform yok maalesef karşımızda.
+
+286
+00:26:38,580 --> 00:26:39,820
+Yani biz genel soru hazırlıyoruz.
+
+287
+00:26:40,780 --> 00:26:42,220
+Oradan öğrenciye gidiyor.
+
+288
+00:26:42,220 --> 00:26:52,100
+Yani belki havuz yapabilirsiniz ama havuzda da o sorunun yani hayal ettiğiniz gibi bir platforma sahip değiliz.
+
+289
+00:26:52,200 --> 00:26:53,400
+İnşallah ileride olur.
+
+290
+00:26:53,900 --> 00:26:55,980
+Bilmediğimiz işe şimdi böyle plan yapıyoruz biz de ama.
+
+291
+00:26:56,120 --> 00:26:56,440
+Evet.
+
+292
+00:26:56,820 --> 00:27:02,820
+Öyle bir Learning Management System yazarsanız bir gün iyi satar bence.
+
+293
+00:27:04,559 --> 00:27:05,800
+Ama var galiba.
+
+294
+00:27:05,800 --> 00:27:10,420
+Benim oğlum şu an insans öğrencisi.
+
+295
+00:27:10,860 --> 00:27:18,680
+Onların üniversitesinde bu şekilde soruların numerik değerlerini değiştirerek soram hocalar var.
+
+296
+00:27:18,820 --> 00:27:20,300
+Belki havuz yapıyor bilemiyorum.
+
+297
+00:27:22,660 --> 00:27:22,980
+Evet.
+
+298
+00:27:23,220 --> 00:27:27,019
+Dediğim gibi sınav süresi konusunda size hak veriyorum.
+
+299
+00:27:27,160 --> 00:27:27,900
+Süre azdı.
+
+300
+00:27:29,259 --> 00:27:32,160
+Önümüzdeki sınav daha tecrübeli olacağız.
+
+301
+00:27:32,500 --> 00:27:33,640
+Siz de ben de.
+
+302
+00:27:33,640 --> 00:27:34,360
+Eminim.
+
+303
+00:27:34,360 --> 00:27:54,360
+Önümüzdeki sınav.
+
+304
+00:27:41,140 --> 00:27:42,060
+Bir de şey diyeceğim hocam.
+
+305
+00:27:42,060 --> 00:27:43,880
+Ayyip böldüm de.
+
+306
+00:27:44,300 --> 00:27:45,880
+Son test kısmını kapatacağım.
+
+307
+00:27:46,000 --> 00:27:47,080
+Mesela bende şey de oldu.
+
+308
+00:27:48,259 --> 00:27:51,340
+Test yaptıktan sonra inanılmaz bir moral bozukluğu oldu.
+
+309
+00:27:51,520 --> 00:27:53,800
+Hani klasiği gerçekten sallaya sallaya yaptım.
+
+310
+00:27:53,880 --> 00:27:55,160
+Artık hani böyle şey geldi bana.
+
+311
+00:27:55,300 --> 00:27:56,240
+Panik gibi oldum.
+
+312
+00:27:56,420 --> 00:27:59,200
+Sınav bitsin de ne olursa olsun moduna girdim böyle.
+
+313
+00:27:59,340 --> 00:28:02,280
+O yüzden yetiştirememek haykısı diyorsunuz.
+
+314
+00:28:02,360 --> 00:28:03,120
+Anlatabiliyorsunuz.
+
+315
+00:28:03,480 --> 00:28:04,160
+Evet hocam.
+
+316
+00:28:04,960 --> 00:28:06,259
+[öğrenci] sen ne diyorsun?
+
+317
+00:28:07,420 --> 00:28:09,080
+Hocam peki şey soracak mı?
+
+318
+00:28:09,080 --> 00:28:11,500
+Bu test sorularını bizimle paylaşabilir misiniz?
+
+319
+00:28:11,640 --> 00:28:12,880
+Paniklemeden çözdek.
+
+320
+00:28:14,280 --> 00:28:16,320
+Görmediğiniz soruları da görmek istiyorsunuz.
+
+321
+00:28:16,320 --> 00:28:18,100
+Evet görmediğim soruları göreyim.
+
+322
+00:28:18,880 --> 00:28:19,980
+Evet hocam ben de olur.
+
+323
+00:28:20,040 --> 00:28:21,860
+O pişmanlığı bir yaşamak istiyorum hocam.
+
+324
+00:28:21,960 --> 00:28:22,540
+Kolay soru.
+
+325
+00:28:24,060 --> 00:28:26,660
+Sakinlikle çözünce çözülebilecek sorularda.
+
+326
+00:28:26,780 --> 00:28:28,080
+Ama panikle olunca işte.
+
+327
+00:28:28,540 --> 00:28:28,860
+Anladım.
+
+328
+00:28:29,380 --> 00:28:33,980
+Ben size bundan sonra sınav öncesi hazırlayayım en iyisi.
+
+329
+00:28:34,140 --> 00:28:35,020
+Böyle bir mail atayım.
+
+330
+00:28:35,360 --> 00:28:37,520
+Sınav hakkında yorumlar yapayım.
+
+331
+00:28:37,520 --> 00:28:39,120
+Evet hocam bir de şöyle bir durum vardı.
+
+332
+00:28:39,220 --> 00:28:41,300
+Örneğin sanırım siz veya sistem bilmiyorum.
+
+333
+00:28:41,440 --> 00:28:43,080
+Sınavın öncesine bir açıklama koymuş.
+
+334
+00:28:43,200 --> 00:28:46,680
+Fakat sınava tıkladığınızda zaman başladığı için öneğin ben açıklamayı da okumadım.
+
+335
+00:28:46,800 --> 00:28:48,340
+Yani açıklamada ne yazıyordu bilmiyorum.
+
+336
+00:28:48,740 --> 00:28:52,580
+Çünkü açıklama açıklama başladığında baktım sınavın süresi.
+
+337
+00:28:53,140 --> 00:28:54,220
+Direkt geçtim.
+
+338
+00:28:54,480 --> 00:28:56,220
+Hani o yüzden mesela şeyden emin olamadım.
+
+339
+00:28:56,320 --> 00:28:57,820
+Acaba yanlış doğruyu götürür mü?
+
+340
+00:28:57,820 --> 00:29:01,180
+Veya ben ilk kez ben de giriyorum hani ilk dönemim benim bu.
+
+341
+00:29:01,300 --> 00:29:03,320
+Eski soruya dönülemeyeceğini de bilmiyordum.
+
+342
+00:29:03,980 --> 00:29:06,360
+Hani o 5-6 dakika harcadım ondan sonra geçtim.
+
+343
+00:29:06,440 --> 00:29:07,940
+Sonra dedim aklıma bir şey geldi.
+
+344
+00:29:08,040 --> 00:29:09,680
+Geri döneyim dedim dönemedim.
+
+345
+00:29:09,820 --> 00:29:10,840
+Vesaire biraz ben de sınavınlanmadım.
+
+346
+00:29:10,840 --> 00:29:13,100
+Sonra acaba sistemden mi hata?
+
+347
+00:29:13,460 --> 00:29:15,720
+Evet yenilediğim sayfayı falan olmadı.
+
+348
+00:29:15,860 --> 00:29:17,740
+Onunla bayağı bir uğraştım birkaç dakika.
+
+349
+00:29:17,840 --> 00:29:20,520
+Onu açıklamada yazmıştım ama geri dönür mü?
+
+350
+00:29:20,519 --> 00:29:23,560
+Hiç okuyamadım işte hocam sınav süresi.
+
+351
+00:29:23,700 --> 00:29:25,560
+Direkt başladığı için açıklama süresince de.
+
+352
+00:29:25,600 --> 00:29:28,720
+Evet dediğim gibi bu bir tecrübesizlik oldu.
+
+353
+00:29:29,180 --> 00:29:34,780
+İkindi sınavda siz de daha türü duyacaksınız bu anlattıklarımızı yaşadıklarımızla.
+
+354
+00:29:35,320 --> 00:29:39,900
+Ben de aynı şekilde süreyi daha uzun tutarak sizi biraz rahatlatacağım.
+
+355
+00:29:40,120 --> 00:29:40,780
+Merak etmeyin.
+
+356
+00:29:40,880 --> 00:29:42,900
+Hocam ödev olacak mı?
+
+357
+00:29:42,900 --> 00:29:46,200
+Bir de yani ödev olursa bence iyi olur diye düşünüyorum ben mini ödevler böyle.
+
+358
+00:29:46,380 --> 00:29:48,120
+Ödev bir tane ödev vermiştim.
+
+359
+00:29:48,120 --> 00:29:57,960
+Fakat bu klasik sınav okumada olduğu gibi bütün ödevleri şu an tek tek indirip onu platforma taşıyıp okumam gerekiyor.
+
+360
+00:29:58,580 --> 00:30:01,260
+Ve toplu indirme modülü olacak dediler.
+
+361
+00:30:01,380 --> 00:30:02,120
+Bekliyoruz.
+
+362
+00:30:02,360 --> 00:30:05,540
+Bu şey sistemi hala geliştiriyorlar.
+
+363
+00:30:06,220 --> 00:30:08,420
+Ben bir ödev daha vermeyi çok istiyorum.
+
+364
+00:30:09,040 --> 00:30:10,740
+Çok faydası olacak çünkü size.
+
+365
+00:30:11,500 --> 00:30:13,760
+İki konuyu birleştirip veririm belki.
+
+366
+00:30:14,100 --> 00:30:15,840
+Ama mutlaka vereceğim bir ödev daha.
+
+367
+00:30:15,840 --> 00:30:18,060
+Peki bu kadar.
+
+368
+00:30:18,640 --> 00:30:20,460
+Hadi bakalım derse geçelim.
+
+369
+00:30:23,360 --> 00:30:26,400
+Hocam klasik sınavla ilgili bir soru söylemeyeyim.
+
+370
+00:30:26,400 --> 00:30:37,240
+Orada iki seviyeli bir ağaç çizilmesini istemiştiniz de burada sadece income range'e bakarak yani şey ayrılabiliyor.
+
+371
+00:30:37,539 --> 00:30:38,200
+Ya pür bir şekilde.
+
+372
+00:30:38,320 --> 00:30:39,600
+75'den küçükler hepsi no.
+
+373
+00:30:39,820 --> 00:30:42,620
+75'e 95'e arası yes ve 95'ten büyükler de no.
+
+374
+00:30:43,200 --> 00:30:48,660
+Diğer şeylere bakmasak da alanlara bu şey yapabiliyor, ayırabiliyor.
+
+375
+00:30:49,180 --> 00:30:50,019
+Bu yeterli miydi?
+
+376
+00:30:50,019 --> 00:31:00,480
+Şöyle o soruda siz aslında karar ağaçlarında iki tane kırılma noktası kullanarak bunu farklılaştırmışsınız.
+
+377
+00:31:00,940 --> 00:31:06,180
+Ben derse size tek bir kırılma noktası olacak bu bir standarttır demiştim.
+
+378
+00:31:06,180 --> 00:31:08,040
+Ama farklı kullanmışsınız.
+
+379
+00:31:08,220 --> 00:31:12,640
+O yüzden sizde tek seviyede problem çözülebilir gözüküyor.
+
+380
+00:31:13,400 --> 00:31:21,180
+Tabii ki böyle çözdüğünüz zaman sadece şey kısmını,
+
+381
+00:31:21,180 --> 00:31:30,180
+iki seviyeli ağaç ya da tek seviyeli ağaçta ne kadar doğru ne kadar yanlış yaparız değerlendirmelerinizi hep doğru saydım ama
+
+382
+00:31:30,180 --> 00:31:37,940
+income'ı üç parçaya bölerek işlem yaptığınız için oradan biraz puan kaybettiniz.
+
+383
+00:31:39,560 --> 00:31:39,980
+Tamam hocam.
+
+384
+00:31:39,980 --> 00:32:07,980
+Tamam.
+
+385
+00:31:41,172 --> 00:31:47,152
+Bir tane split point kullanmanızdı. Siz iki kullandığınız için çözümünüz farklılaştı.
+
+386
+00:31:47,652 --> 00:31:52,731
+Ben emin olamadım da yoksa zaten pure olmasaydı ben direkt teke düşürecektim.
+
+387
+00:31:53,552 --> 00:32:00,892
+Evet. Peki. Bu kadar sınav muhabbeti yeter. Şimdi geçelim yeni konuya.
+
+388
+00:32:22,355 --> 00:32:30,475
+Bu anda sesle ilgili sorun devam ediyor mu? Bir kontrol etmek için ben ne mouse hareketlerimi yapıyorum, atıyorum ses mi gidiyor mu?
+
+389
+00:32:34,259 --> 00:32:36,339
+Kesiliyor hocam, yine kesiliyor.
+
+390
+00:33:12,147 --> 00:33:28,687
+Dönemin başında bir veri madenciliği stratejilerinden bahsetmiştik. Classification, yani supervised learning kavramından bahsettik. Bu hafta ise unsupervised class ring konusuna başlıyoruz.
+
+391
+00:33:28,687 --> 00:33:42,507
+Burada ilk slide'da class ring nedir diye başlamış. Bu bir eğiticisiz öğrenme modelidir ve elimizde sınıf etiketi olmayan veriler bulunur.
+
+392
+00:33:42,507 --> 00:33:56,927
+Bu veriyi sample'lar arasında benzerlik hesaplayarak, gruplara ayırarak bir küme yapısı oluşturmamızı sağlar.
+
+393
+00:33:56,927 --> 00:34:03,548
+Nerelerde kullanıldığına bakacak olursak, işte bu bir text mining uygulamasında kullanılabilir.
+
+394
+00:34:04,268 --> 00:34:18,748
+Gönderilmiş postaları gruplama işleminde veya mesela müşterilerin alışveriş patenlerinin çıkartılmasında, görüntü işlemede bölgelerin bulunmasında kullanılabilir.
+
+395
+00:34:24,244 --> 00:34:28,443
+Types of clustering başlığı altında iki temel yapı görüyoruz.
+
+396
+00:34:28,443 --> 00:34:30,864
+Bir, hiyerarşik algoritmalar.
+
+397
+00:34:31,084 --> 00:34:36,423
+İki, parçalamaya dayalı partition clustering dediğimiz yöntemler.
+
+398
+00:34:37,324 --> 00:34:40,784
+Önümüzdeki hafta hiyerarşik algoritmaları göreceğiz.
+
+399
+00:34:40,983 --> 00:34:49,403
+Hiyerarşik algoritmalar agglomerative dediğimiz bir yapıda aşağıdan yukarıya doğru kurgulanabilir
+
+400
+00:34:49,403 --> 00:34:54,403
+veya divisive dediğimiz yapıda yukarıdan aşağıya doğru kurgulanabilir.
+
+401
+00:34:54,403 --> 00:34:59,784
+Dediğim gibi önümüzdeki hafta bu yapıları karşılaştırmalı olarak konuşacağız.
+
+402
+00:35:00,604 --> 00:35:03,463
+Bu haftaki konu başlığımız partition clustering.
+
+403
+00:35:04,164 --> 00:35:12,584
+Partitional algoritmalar dediğimiz zaman bu hafta anlatacağımız K-Means clustering,
+
+404
+00:35:13,064 --> 00:35:18,324
+fuzzy C-Means clustering, self-organizing future maps gibi algoritmalar,
+
+405
+00:35:18,324 --> 00:35:21,564
+Q-T clustering de yine burada sayılabilir.
+
+406
+00:35:23,064 --> 00:35:27,144
+Açıkçası K-Means clustering yöntemini öğrendikten sonra
+
+407
+00:35:27,144 --> 00:35:34,804
+fuzzy C-Means ya da EM dediğimiz expectation maximization ile clustering
+
+408
+00:35:34,804 --> 00:35:40,483
+ve self-organizing future map yapılarını çok kolay algılayabilirsiniz.
+
+409
+00:35:40,664 --> 00:35:46,284
+Çünkü K-Means clustering algoritmasından türetilmiş algoritmalardır bunlar.
+
+410
+00:35:46,284 --> 00:35:56,764
+Yani fuzzy algoritmalara merakınız varsa fuzzy tarafta C-Means ilginç bir algoritma.
+
+411
+00:35:57,963 --> 00:36:02,484
+Dediğim gibi hepsi K-Means nasıl çalışıyor, K-Means nasıl çalışıyorsa
+
+412
+00:36:02,484 --> 00:36:09,903
+ona göre geliştirilmiş yöntemler, tabii daha iyileştirilmiş yöntemler diyebiliriz.
+
+413
+00:36:09,903 --> 00:36:20,503
+Az önce örnekler arasında mesafe hesaplayarak ya da örneklerin birbirine benzerliklerine bakarak gruplama yaparız demiştik.
+
+414
+00:36:20,584 --> 00:36:27,903
+O zaman bu noktada bizim biraz distance measures dediğimiz mesafe ölçüsü kavramını
+
+415
+00:36:27,903 --> 00:36:34,064
+daha detaylı anlatmamız gerekiyor.
+
+416
+00:36:34,384 --> 00:36:41,204
+Çünkü daha önce distance için sadece derste Euclidean distance kullandık.
+
+417
+00:36:41,584 --> 00:36:46,943
+Ama bunun dışında kullanabileceğimiz farklı mesafe ölçüleri de var.
+
+418
+00:36:48,224 --> 00:36:55,244
+L1 norm, L2 norm diye isimlendirilen bu normlar ilk olarak en yaygın olandan başlamış.
+
+419
+00:36:55,244 --> 00:36:57,244
+Euclidean distance burada verilmiş.
+
+420
+00:36:58,244 --> 00:37:00,244
+Euclide mesafesi...
+
+421
+00:37:04,340 --> 00:37:31,740
+Öklüt mesafesi için L2 norm distance diyebiliriz buna. X ve Y gibi iki tane sample arasındaki mesafeyi P boyutlu bir uzayda hesaplıyorsak eğer, gördüğünüz gibi i eşit birden P'ye kadar X, i, eksi, y, i, bu her bir öz niteliğin, X ve Y samplarının,
+
+422
+00:37:31,740 --> 00:37:54,460
+her öz niteliğinin arasındaki farkın kareleri toplamının kare kökü şeklinde ifade edilebilir. Burada mutlak değer almış. Zaten kare aldığımızda bu şey yapıda işaret kalktığı için onu da o şekilde değerlendirebilirsiniz.
+
+423
+00:37:54,460 --> 00:37:56,460
+Manhattan distance dediğimiz bir şey yapıda işaret almış.
+
+424
+00:38:24,460 --> 00:38:27,460
+isim olarak baktığımızda.
+
+425
+00:38:27,460 --> 00:38:35,460
+burada aslında bunu ben şekil çizerek anlatıyordum ama şu anda bu slide üzerinde şekil çizemeyeceğim.
+
+426
+00:38:35,460 --> 00:38:36,460
+belki
+
+427
+00:38:36,460 --> 00:38:53,460
+...
+
+428
+00:38:40,371 --> 00:38:45,331
+Bu kavramla yeni tanışan var mı? Bu kavramlarla yeni tanışanlar var mı acaba?
+
+429
+00:38:51,027 --> 00:38:54,967
+Evet, varsa evet diye sesle yanıt verebilir.
+
+430
+00:39:00,115 --> 00:39:07,615
+Herkes biliyor galiba, öyle mi? İyi, o zaman demek ki çok şeye girmeme gerek yok, detaya girmeme gerek yok.
+
+431
+00:39:12,655 --> 00:39:15,115
+Şu an tableti de bağlayıp...
+
+432
+00:39:25,523 --> 00:39:28,784
+Şekil gösterebilirim. Tamam, o da hazır.
+
+433
+00:39:35,443 --> 00:39:43,543
+Manhattan Distance'ı söyledik. Burada Mal-Nobis Distance diye bir mesafe ölçüsü var.
+
+434
+00:39:45,844 --> 00:40:00,744
+Diyor ki öz nitelikler eğer bir normalizasyon işlemi uygulanmamışsa, farklı skellerde verilmişse, bu durumda Mal-Nobis Distance daha doğru sonuç veriyor.
+
+435
+00:40:00,744 --> 00:40:14,663
+Bu ölçek farklılıklarını düzeltebiliyor. O nedenle tercih ediliyor. Bir alternatif. Inner Product Space ve Heming Distance'dan bahsedilebilir.
+
+436
+00:40:15,023 --> 00:40:29,003
+Heming Distance'ı daha önce konuşmuştuk. Kategorik öz nitelikler için kullanılan bir benzerlik ölçüsü aslına bakarsanız adı da Distance geçmesine rağmen.
+
+437
+00:40:32,596 --> 00:40:37,576
+Şimdi bu başlık altında K-Means Classring konusuna giriş yapabiliriz.
+
+438
+00:40:40,335 --> 00:40:51,295
+Elimizde n adet sample bulunuyor ve bunları k adet gruba, partition dediğimiz bölgeye ayırmak istiyoruz.
+
+439
+00:40:53,135 --> 00:40:59,735
+Burada k küçük n özelliğinden bahsediliyor.
+
+440
+00:40:59,735 --> 00:41:04,956
+Yani oluşturduğumuz küme sayısı sample sayısından daha küçük olacak.
+
+441
+00:41:06,275 --> 00:41:11,635
+Bu yapı expectation maximization algoritmasına benziyor.
+
+442
+00:41:12,195 --> 00:41:20,916
+Aslında bence expectation maximization algoritması bu yöntemden türetilmiş bir yöntem.
+
+443
+00:41:20,916 --> 00:41:29,596
+Expectation maximization dediğimiz yöntemde her bir klasterın bir normal dağılım gösterdi.
+
+444
+00:41:29,596 --> 00:41:33,175
+Yani Gaussian distribution gösterdiği varsayılıyor.
+
+445
+00:41:33,695 --> 00:41:40,795
+Ve bu dağılımda o küme içerisindeki sampların ortalama ve standart değerleri,
+
+446
+00:41:42,295 --> 00:41:49,755
+Gaussian fonksiyonunun ortalama değeri ve standart sapması olarak varsayılıyor.
+
+447
+00:41:49,755 --> 00:41:56,715
+Ve küme içerisindeki her bir sample'ın bu kümeye ait olma olasılığı hesaplanıyor.
+
+448
+00:41:56,896 --> 00:41:59,835
+Expectation maximization dediğimiz yöntemde.
+
+449
+00:42:00,355 --> 00:42:03,715
+K-Means yönteminden sonra size bundan da bahsedeceğim.
+
+450
+00:42:04,056 --> 00:42:10,635
+Ama K-Means yönteminde her bir örnek bir kümenin elemanıdır ya da değildir diyebiliyoruz.
+
+451
+00:42:10,635 --> 00:42:16,016
+Yani burada hard assignment dediğimiz katı bir atama kuralı var.
+
+452
+00:42:16,655 --> 00:42:22,916
+Bir örnek, bir sample bir kümenin elemanıdır ya da değildir yaklaşımı kullanılıyor.
+
+453
+00:42:23,456 --> 00:42:31,795
+Expectation maximization yönteminde ise her sample belli bir olasılıkla bir kümenin elemanıdır varsayımı var.
+
+454
+00:42:31,795 --> 00:42:38,836
+Kimi kümelerin merkez noktasına yakınsa eğer daha yüksek olasılıkla bu kümenin elemanı,
+
+455
+00:42:38,936 --> 00:42:45,556
+daha uzaktaysa eğer daha düşük olasılıkla bu kümenin elemanı olduğu varsayılıyor.
+
+456
+00:42:49,556 --> 00:42:54,795
+Partitioning işlemi uyguladığımızdan bahsetmiştik K-Means yönteminde.
+
+457
+00:42:56,096 --> 00:43:01,376
+Elimizde en adet data point noktalarımız var.
+
+458
+00:43:01,795 --> 00:43:07,215
+K-K adet kümeye ayırmak istiyoruz bunları.
+
+459
+00:43:07,496 --> 00:43:17,635
+Disjoint subsets dediğimiz birbiriyle teması olmayan yani tamamen birbirinden izole kümeler oluşturmaya çalışıyoruz.
+
+460
+00:43:17,635 --> 00:43:33,715
+Burada amaç bu işlemi yaparken aşağıda verilmiş olan kriteri minimize etmeye çalışmak.
+
+461
+00:43:33,715 --> 00:43:35,476
+Bu kriter neyi gösteriyor?
+
+462
+00:43:35,576 --> 00:43:41,715
+Bakacak olursak J eşit birden K'ya kadar dediği büyük K burada küme sayısını gösteriyordu.
+
+463
+00:43:41,715 --> 00:43:45,715
+İkinci sigma sembolünün altında ise...
+
+464
+00:43:45,715 --> 00:43:52,715
+İkinci
+
+465
+00:43:48,916 --> 00:44:00,036
+İkinci sigma sembolünün altında ise n elemanıdır, sj dediği her bir kümenin elemanı olan sampullardan bahsediyor n indeksi için.
+
+466
+00:44:00,036 --> 00:44:18,036
+Ve sağ tarafta gördüğümüz gibi xn-müj dediği her kümenin içerisinde bulunan sampullar, kendi merkezlerine olan uzaklıkların kareleri toplamı ile bir kriter tanımlanmış.
+
+467
+00:44:18,036 --> 00:44:31,876
+ve bu kriteri, j dediğimiz bu kriteri minimize edecek küme merkezleri ve bu kümenin elemanlarını oluşturmak amaçlanıyor.
+
+468
+00:44:31,876 --> 00:44:43,896
+Burada m-j dediğimiz j kümesinin merkez noktasını, xn ise o kümenin bir elemanını temsil ediyor.
+
+469
+00:44:50,003 --> 00:44:52,443
+Burada neden bahsedilmiş?
+
+470
+00:44:55,003 --> 00:44:58,264
+K pozitif bir intijer olmalıdır.
+
+471
+00:44:59,764 --> 00:45:14,583
+Bu gruplamayı yaparken önceki konuştuğumuz kriteri minimize edecek şekilde küme merkezlerinin bulunması ve samplarında bu küme merkezlerine olan uzaklıklara göre atanması gerekiyor demiştik.
+
+472
+00:45:14,583 --> 00:45:20,023
+Şimdi K-Means Clustering algoritmasının akış diagramı verilmiş.
+
+473
+00:45:20,543 --> 00:45:26,443
+Burada başlangıçta dışarıdan bir K sayısı verilmesi gerekiyor.
+
+474
+00:45:26,784 --> 00:45:29,943
+Bu veri setini kaç kümeye ayıracağımızı gösteriyor.
+
+475
+00:45:37,204 --> 00:45:49,484
+Daha sonra K adet küme merkezi, centroid dediğimiz küme merkezlerinin bu sample space içerisinden seçilmesi gerekiyor.
+
+476
+00:45:49,484 --> 00:45:56,224
+Bunu random olarak atlayabilirsiniz. Başta gelen ilk K adet sample'ı küme merkezi olarak alabilirsiniz.
+
+477
+00:45:56,224 --> 00:46:13,943
+Ya da çalıştığınız uzayda birbirinden en uzak olabilecek K adet noktayı seçme şeklinde farklı stratejiler oluşturabilirsiniz.
+
+478
+00:46:14,784 --> 00:46:21,864
+Daha sonraki adımda ise elimizdeki her bir sample'ın bu küme merkezlerine olan uzaklıkları hesaplanıyor.
+
+479
+00:46:21,864 --> 00:46:33,864
+Daha sonra sample'ların küme merkezlerine olan uzaklıklarına bakarak en yakın bulunduğu kümenin elemanı olduğu varsayılıyor.
+
+480
+00:46:34,324 --> 00:46:38,204
+Buna göre yeni küme merkezleri hesaplanıyor.
+
+481
+00:46:38,403 --> 00:46:49,324
+Bu yeni küme merkezlerine olan uzaklıklara bakılarak bu algoritma adımları iteratif olarak devam ediyor.
+
+482
+00:46:49,324 --> 00:47:06,903
+Ne zamana kadar? Burada bir iterasyonda durma koşulu olarak iterasyon sayısı verilebilir veya burada minimize ettiğimiz J değerinin belli bir değere ulaşması durma noktası olarak verilebilir.
+
+483
+00:47:07,584 --> 00:47:18,744
+Veya hiçbir sample farklı bir kümeye geçmeyene kadar devam edilebilir şeklinde farklı durma koşulları tanımlayabiliriz.
+
+484
+00:47:19,324 --> 00:47:23,324
+Burada yine algoritmanın adımlarını görüyorsunuz.
+
+485
+00:47:24,324 --> 00:47:33,364
+K sayısının yani bu K-Means Clustering yönteminde K sayısının dışarıdan girilmesi gerekiyor demiştik.
+
+486
+00:47:33,364 --> 00:47:36,443
+Bu aslında zor bir işlem.
+
+487
+00:47:36,764 --> 00:47:41,364
+Çünkü her problemde kaç kümeye ayrılacağını başta öngöremeyebilirsiniz.
+
+488
+00:47:42,224 --> 00:47:51,364
+O nedenle farklı K-Değerleri için bunu tekrarlayıp bir sonuca varmaya çalışabilirsiniz.
+
+489
+00:47:51,364 --> 00:47:57,364
+İkinci adımda demiştik ki küme merkezleri seçilir.
+
+490
+00:47:58,984 --> 00:48:05,364
+Burada farklı şekillerde başlangıç küme merkezlerinin seçiminde farklı şekillerde ilerleyebiliriz.
+
+491
+00:48:05,364 --> 00:48:08,824
+Alternatiflerimiz nedir?
+
+492
+00:48:08,824 --> 00:48:10,824
+K-Train Samples'i seçilir.
+
+493
+00:48:10,824 --> 00:48:15,824
+Take the first K-Training Samples as Single Element Clusters demiş.
+
+494
+00:48:17,444 --> 00:48:20,423
+Tabii Training Sample demeyelim aslında.
+
+495
+00:48:20,604 --> 00:48:22,844
+Burada bir train aşaması değil.
+
+496
+00:48:22,963 --> 00:48:24,304
+Bu bir iterasyona giriyor.
+
+497
+00:48:24,423 --> 00:48:26,824
+Model oluşturuyoruz.
+
+498
+00:48:26,824 --> 00:48:37,903
+Elimizdeki veri setinin ilk K adet sample'ı Initial Cluster Center olarak seçilebilir.
+
+499
+00:48:38,423 --> 00:48:40,024
+Veya alternatifimiz ne?
+
+500
+00:48:41,344 --> 00:48:42,824
+Assign each of the remaining.
+
+501
+00:48:44,423 --> 00:48:47,524
+Burada algoritmanın diğer şeyine geçmiş.
+
+502
+00:49:08,244 --> 00:49:13,423
+Evet, yani buradaki akış biraz kötü olmuş. O maddeyi oradan silmem lazım.
+
+503
+00:49:13,423 --> 00:49:22,864
+Üçüncü adımda elimizdeki her bir sample'ın bu küme merkezlerine olan uzaklıklarını hesaplıyoruz.
+
+504
+00:49:24,004 --> 00:49:29,144
+Ve en yakın olduğu küme merkezine ait olduğunu varsayıyoruz.
+
+505
+00:49:29,144 --> 00:49:42,724
+Bu küme merkezlerinin tekrar bu yeni elemanlarla, küme elemanlarıyla hesaplanması işlemi gerçekleştiriliyor.
+
+506
+00:49:43,504 --> 00:49:48,403
+Dördüncü adımda ise durma kuralını kontrol ediyoruz.
+
+507
+00:49:48,403 --> 00:50:01,983
+Eğer koşulu sağlamamışsa tekrar bu yeni küme merkezleriyle her bir örneğin bu küme merkezlerine olan uzaklıkları hesaplanıyor.
+
+508
+00:50:02,423 --> 00:50:03,963
+Burada basit bir örnek var.
+
+509
+00:50:06,224 --> 00:50:08,403
+Bu örnek üzerinden gidebiliriz.
+
+510
+00:50:09,804 --> 00:50:12,564
+Bu örnek oldukça kolay.
+
+511
+00:50:13,644 --> 00:50:15,384
+İki boyutlu düzlemde verilmiş.
+
+512
+00:50:15,384 --> 00:50:18,463
+Tabii şunu söyleyebilirsiniz.
+
+513
+00:50:19,463 --> 00:50:24,284
+İki boyutta bu işlemi yapmak gözle baktığımızda çok kolay görünüyor.
+
+514
+00:50:24,624 --> 00:50:29,704
+Ama yani kümeleri ayırt etmek gözle çok kolay görünüyor.
+
+515
+00:50:29,903 --> 00:50:38,384
+Ama en boyutlu bir uzayda verilmiş olan örnekleri birbirlerine yakınlıklarına göre gruplamak,
+
+516
+00:50:39,084 --> 00:50:42,844
+yani gözle bu işi yapmak mümkün değil.
+
+517
+00:50:42,844 --> 00:50:50,764
+O nedenle bunun böyle bir algoritma yardımıyla yapılması tabii ki işimizi kolaylaştırıyor.
+
+518
+00:50:50,764 --> 00:50:56,844
+Hocam k değeri seçilirken ikiden başlayıp belli bir rakama kadar gidip,
+
+519
+00:50:56,983 --> 00:51:02,784
+yani burada da kümeler arasındaki uzaklığın mümkün olunca fazla,
+
+520
+00:51:03,104 --> 00:51:05,744
+küme içinde de mümkün olunca standart satmanın düşük olduğu,
+
+521
+00:51:06,124 --> 00:51:11,684
+böyle bir şey grafikte hazırlayıp girsek olduğu noktada k'yı mı belirleyebiliriz?
+
+522
+00:51:11,684 --> 00:51:13,923
+Evet, evet kesinlikle.
+
+523
+00:51:15,003 --> 00:51:19,403
+Az önce söylediğim gibi k değerinin ne olacağını baştan bilmediğimiz için,
+
+524
+00:51:19,564 --> 00:51:25,403
+farklı k değerleri için o söylediğim cost değerini mesela J'yi hesaplayıp,
+
+525
+00:51:25,403 --> 00:51:38,324
+buna göre de bir şey grafik çizerek dediğiniz gibi orada elbow adını verdiğimiz bir kırılma noktası aslında algılanabilir.
+
+526
+00:51:38,324 --> 00:51:44,624
+Yani hangi k değerinin uygun olduğuna karar vermek önemli adımlardan biri.
+
+527
+00:51:46,664 --> 00:51:51,144
+Şimdi bu örneği şöyle bakalım.
+
+528
+00:51:51,304 --> 00:51:53,204
+Yedi tane sample verilmiş bize.
+
+529
+00:51:53,504 --> 00:51:58,564
+Bu yedi tane sample'ın düzlemde yerlerini görebiliyoruz.
+
+530
+00:51:58,564 --> 00:52:07,764
+Yöntemi uygularken K'yı iki alalım ve iki kümeyi ayıralım istiyoruz veri setini.
+
+531
+00:52:08,344 --> 00:52:14,264
+Burada diyor ki, slide'da bakacak olursak, rastgele seçtiğimizi varsayalım.
+
+532
+00:52:14,384 --> 00:52:16,184
+İki tane centroid seçiyoruz.
+
+533
+00:52:16,184 --> 00:52:28,484
+Burada gördüğümüz birinci ve dördüncü sample'ları initial centroid başlangıç merkezleri olarak alalım.
+
+534
+00:52:29,564 --> 00:52:37,624
+Ve veri setindeki her bir örneğin bu küme merkezlerine olan uzaklıklarını ölçelim.
+
+535
+00:52:37,963 --> 00:52:42,044
+Burada M1 ve M2 diye isimlendirmiş bu küme merkezlerini.
+
+536
+00:52:42,044 --> 00:52:54,824
+Daha sonra şurada gördüğümüz gibi birinci ve dördüncü sample'ları initial centroid olarak aldık.
+
+537
+00:52:54,824 --> 00:53:07,104
+Ve burada gördüğümüz gibi elimizdeki yedi tane sample'ın her birinin bu küme merkezlerine olan uzaklıklarını hesaplıyoruz.
+
+538
+00:53:09,427 --> 00:53:17,607
+Şurada centroid 1 ve centroid 2 yazan sütunlarda bu küme merkezlerine olan uzaklıkları hesaplanıyor ve yazılıyor.
+
+539
+00:53:17,728 --> 00:53:23,147
+Mesela tabloya baktığımızda şunu görüyoruz. Burada Euclidean distance kullanılmış.
+
+540
+00:53:24,107 --> 00:53:31,607
+Birinci sample, birinci sample bire birdi. Y düzlemdeki yerleri.
+
+541
+00:53:31,607 --> 00:53:40,947
+Birinci küme merkezini zaten birinci sample olarak aldığımız için kendi kendisine olan uzaklığı sıfır.
+
+542
+00:53:41,288 --> 00:53:53,067
+İkinci centroid'e olan uzaklığı yani 5'e 7 noktasına olan uzaklığına baktığımızda birinci değişken için aralarındaki fark 4 birim.
+
+543
+00:53:53,067 --> 00:53:56,527
+İkinci değişken için aralarındaki fark 6 birim.
+
+544
+00:53:56,527 --> 00:54:26,507
+Karelerini aldık.
+
+545
+00:54:26,527 --> 00:54:56,507
+Bu birinci karelerini aldık.
+
+546
+00:54:46,547 --> 00:54:47,387
+Öğ...
+
+547
+00:54:52,275 --> 00:54:54,195
+Bu örneği tamamlayıp ara vereceğim.
+
+548
+00:54:55,435 --> 00:54:57,395
+Üçüncü sample için bakıyoruz.
+
+549
+00:54:58,335 --> 00:55:05,735
+Bize verilmiş olan veri setindeki üçüncü örneğin birinci küme merkezine olan uzaklığı 3.61,
+
+550
+00:55:05,735 --> 00:55:08,955
+ikinci küme merkezine olan uzaklığı 3.61.
+
+551
+00:55:09,435 --> 00:55:17,235
+Dolayısıyla iki küme merkezine de eşit mesafede olduğu için aslında ikisinden birine atayabilirsiniz.
+
+552
+00:55:17,395 --> 00:55:18,195
+Hiç önemli değil.
+
+553
+00:55:18,195 --> 00:55:31,596
+Çünkü bu birinci iterasyonda yaptığınız işlem hangi küme merkezine atarsanız atayın aslında sonraki aşamada ikinci iterasyonda kendi kendini düzeltecektir.
+
+554
+00:55:31,596 --> 00:55:33,815
+Eğer yanlış bir atama varsa.
+
+555
+00:55:34,315 --> 00:55:36,475
+Yani buna yanlış atama diyemeyiz tabii ki.
+
+556
+00:55:36,576 --> 00:55:38,036
+İkisi de eşit mesafede.
+
+557
+00:55:38,455 --> 00:55:46,576
+Dolayısıyla tabii bunu bir algoritma yardımıyla yapıyorsak ben ilk kontrol ettiğimi küçük göreceğim için diyebilirim ki
+
+558
+00:55:46,576 --> 00:55:51,255
+testte yaptığım ilk karşılaştırma sonucuna göre karar ver.
+
+559
+00:55:51,715 --> 00:55:55,795
+Burada birinci küme merkezine ait demiş.
+
+560
+00:55:56,455 --> 00:55:58,175
+Eşit mesafede olduğu halde.
+
+561
+00:55:58,835 --> 00:56:04,975
+Daha sonra benzer şekilde tüm örnekler için hangi küme merkezlerine yakın oldukları işaretlenmiş.
+
+562
+00:56:04,975 --> 00:56:10,076
+Bunu şeyde de görebiliyorsunuz zaten.
+
+563
+00:56:10,235 --> 00:56:11,615
+Tabloda da görebiliyorsunuz.
+
+564
+00:56:11,675 --> 00:56:13,735
+Griye boyanmış.
+
+565
+00:56:16,036 --> 00:56:23,195
+Dört, beş, altı ve yedinci sample'ların ikinci küme merkezine daha yakın olduğunu görebiliyoruz.
+
+566
+00:56:23,195 --> 00:56:34,315
+Yine tabloda bir, iki ve üçüncü sample'ların da birinci küme merkezine daha yakın olduğunu görebiliyoruz.
+
+567
+00:56:34,415 --> 00:56:37,835
+Buna göre yeni küme merkezleri hesaplanacak.
+
+568
+00:56:38,036 --> 00:56:45,755
+Yani ilk üç sample, bir, iki ve üçüncü sample'ların ortalaması alınarak yeni küme merkezi hesaplanacak.
+
+569
+00:56:45,975 --> 00:56:47,195
+Birinci küme için.
+
+570
+00:56:47,195 --> 00:56:51,895
+Bununla ilgili hesaplamaları da yine slide'da görebiliyoruz.
+
+571
+00:56:51,975 --> 00:56:53,115
+M1 eşittir demiş.
+
+572
+00:56:53,435 --> 00:56:56,115
+Üç tane sample olduğu için bir bölü üç demiş.
+
+573
+00:56:57,056 --> 00:57:02,955
+Variable 1, birinci boyutta üç tane sample'ın aldığı değer bir, bir buçuk ve üçtü.
+
+574
+00:57:04,335 --> 00:57:11,935
+Variable 2 tarafında ise bu sample'ların aldığı değerler bir, iki ve dörttü.
+
+575
+00:57:11,935 --> 00:57:15,335
+Bunları toplayıp ortalamasını alıp üçe bölerek.
+
+576
+00:57:15,335 --> 00:57:22,315
+Yeni küme merkezini, her iki küme içinde yeni küme merkezini hesaplamış.
+
+577
+00:57:22,655 --> 00:57:26,556
+Bu küme merkezlerini çizip baktığımızda da görebiliriz.
+
+578
+00:57:26,635 --> 00:57:33,355
+Birinci küme merkezi artık ikinci küme merkezine yeni küme merkezi dediğimiz noktaya kayacak.
+
+579
+00:57:33,355 --> 00:57:40,355
+Aynı şekilde M2 küme merkezini de 4.12, 5.38 olarak hesaplamış.
+
+580
+00:57:40,355 --> 00:57:47,395
+Bu şekilde yeni bulduğumuz küme merkezleriyle bu işlemi tekrarlıyoruz.
+
+581
+00:57:47,576 --> 00:57:53,395
+Yani veri setindeki tüm örneklerin bu küme merkezlerine olan uzaklıklarını hesaplıyoruz.
+
+582
+00:57:53,395 --> 00:58:05,735
+Burada gördüğümüz gibi yeni küme merkezlerine olan uzaklıklar hesaplandığında birinci ve ikinci sample birinci kümenin içinde yer alırken,
+
+583
+00:58:06,115 --> 00:58:08,275
+üçüncü sample diğer kümeye geçti.
+
+584
+00:58:08,275 --> 00:58:15,695
+Ve beş tane sample ikinci kümenin elemanı olarak görünüyor.
+
+585
+00:58:15,875 --> 00:58:23,155
+Çünkü şurada gördüğümüz gibi ikinci küme merkezine daha yakın çıktı.
+
+586
+00:58:23,375 --> 00:58:25,275
+Üçüncü sample bu aşamada.
+
+587
+00:58:25,275 --> 00:58:34,175
+Ve böylece ikinci iterasyonda bu örneklerle yeni küme merkezleri hesaplanacak.
+
+588
+00:58:34,615 --> 00:58:36,895
+Birinci kümenin içinde iki tane sample var.
+
+589
+00:58:36,895 --> 00:58:39,735
+İkinci kümenin içinde beş tane sample var.
+
+590
+00:58:40,076 --> 00:58:46,635
+Ve bu samplulların ortalamaları alınarak yeni küme merkezleri tekrar hesaplanıyor.
+
+591
+00:58:48,056 --> 00:58:50,015
+Şurada gördüğümüz gibi.
+
+592
+00:58:51,476 --> 00:58:59,316
+Evet bu K-Means Clustering'in ile ilgili düzlemde verilmiş bir örnek.
+
+593
+00:58:59,796 --> 00:59:01,776
+Bu problemi lütfen şöyle düşünün.
+
+594
+00:59:01,856 --> 00:59:08,016
+Biz bu problemde başta iki tane variable yani iki boyutlu bir düzlemde yaptık.
+
+595
+00:59:08,016 --> 00:59:22,096
+Ama bunu değişken sayısını arttırarak işte beş boyutlu olabilir, on beş boyutlu olabilir veri setinin büyüklüğüne göre öz nitelik uzayımızı arttırabiliriz.
+
+596
+00:59:22,416 --> 00:59:36,856
+Yine öklit mesafesi hesaplama kuralımız aynı ya da diğer mesafe hesaplama kurallarını kullanarak sample'ların merkezleri olan uzaklıklarını hesaplayabiliriz.
+
+597
+00:59:36,856 --> 00:59:44,715
+Biz burada iki kümeyi ayırdık ama küme sayısını iki değil üç seçebilirdik, beş seçebilirdik uygulamanın durumuna göre.
+
+598
+00:59:45,155 --> 00:59:55,596
+Yani bu bir eğer müşteri sınıfla kümeleme uygulaması olsa siz müşterileri kaç tane gruba ayırmak istiyorsunuz?
+
+599
+00:59:55,675 --> 01:00:02,635
+Buna göre bir değer seçip o sayıda küme bulabilirsiniz.
+
+600
+01:00:02,635 --> 01:00:18,635
+Ya da işte küme sayısını kestiremediğimiz noktalarda iki k eşit iki için, üç için, dört için az önce verdiğimiz j değerini hesaplayarak buna göre bir grafik oluşturabiliriz.
+
+601
+01:00:20,076 --> 01:00:25,635
+Ve buradan da en uygun k değerinin hangisi olduğuna karar verebiliriz.
+
+602
+01:00:25,635 --> 01:00:51,635
+Bu da yine de çok güzel bir grafik oluşturabiliriz.
+
+603
+01:00:29,684 --> 01:00:36,524
+Az önceki yaptığımız örneğin düzlemdeki dağılımı ve nihai küme yapısını gösteriyor.
+
+604
+01:00:37,024 --> 01:00:42,384
+İki tane sample birinci kümenin içinde, diğer beş tane sample ikinci kümenin içinde çıkıyordu.
+
+605
+01:00:43,324 --> 01:00:50,204
+Nihai durumda bu kümelerin şekli de bu grafikte gösterilmiş.
+
+606
+01:00:52,423 --> 01:00:57,204
+Burada aynı örneği üç tane küme için gerçekleştirmiş.
+
+607
+01:00:57,204 --> 01:01:02,824
+İlk üç sample'ı initial cluster centroid olarak almış.
+
+608
+01:01:03,184 --> 01:01:10,204
+Ve buna göre tüm örneklerin bu küme merkezlerine olan uzaklıklarını üç sütunda,
+
+609
+01:01:11,064 --> 01:01:18,204
+M1, M2, M3 şeklinde üç kümeye olan uzaklıklarını hesaplayıp,
+
+610
+01:01:19,204 --> 01:01:23,204
+her bir sample'ın hangi kümeye ait olduğunu belirleyip,
+
+611
+01:01:23,204 --> 01:01:26,484
+buna göre iterasyona sokuyor.
+
+612
+01:01:26,484 --> 01:01:35,484
+Bu birinci adımın sonunda, ikinci adımın sonunda nasıl kümelere yerleştiğini bu örneklerin görebiliyoruz.
+
+613
+01:01:36,604 --> 01:01:42,124
+Üç kümeye bölmek istediğimizde çıkan durum burada gördüğümüz şekilde olacak.
+
+614
+01:01:45,244 --> 01:01:48,364
+Bir başka uygulama, ilaçla ilgili bir uygulama.
+
+615
+01:01:48,364 --> 01:01:50,864
+Burada bir ara verelim isterseniz.
+
+616
+01:01:51,064 --> 01:01:52,284
+Bakayım saat kaçı olmuş.
+
+617
+01:01:54,403 --> 01:01:55,964
+Evet, burada bir ara vereceğim.
+
+618
+01:02:03,539 --> 01:02:20,019
+10 dakika aradan sonra devam edelim. Hem artılarını, eksilerini konuşacağız. K-means, clustering yönteminin hem de EM yöntemiyle ilgili biraz açıklama yapacağım. 10 dakika ara.
+
+619
+01:16:10,676 --> 01:16:12,596
+Merhaba arkadaşlar, duyabiliyor musunuz beni?
+
+620
+01:16:13,816 --> 01:16:15,356
+Evet hocam, sesiniz geliyor.
+
+621
+01:16:16,236 --> 01:16:16,536
+Tamam.
+
+622
+01:16:22,868 --> 01:16:35,208
+Evet, şimdi K-Means Clustering yönteminden sonra az önce söylediğim gibi birbirine çok benzeyen bir model olan EM Clustering'den bahsedeceğim.
+
+623
+01:16:35,208 --> 01:16:38,248
+Expectation Maximization yöntemi bu.
+
+624
+01:16:41,328 --> 01:16:49,428
+K-Means Clustering'de her bir sample'ın bir kümeye ait olma kuralı vardı.
+
+625
+01:16:49,428 --> 01:16:52,847
+Buna hard assignment adı veriyoruz.
+
+626
+01:16:53,688 --> 01:17:04,408
+Burada şu kısımda belirtilmiş hard assignment şeklinde bir atama kuralı var.
+
+627
+01:17:05,208 --> 01:17:15,008
+Her bir sample K-Means yönteminde bir kümeye 0-1 şeklinde ya aittir ya da değildir şeklinde çalışıyor.
+
+628
+01:17:15,008 --> 01:17:24,347
+Ama EM dediğimiz yöntemde ise bir soft assignment işlemi gerçekleştiriliyor.
+
+629
+01:17:24,347 --> 01:17:30,248
+Ve her bir sample'ın bir kümeye ait olma olasılığı var.
+
+630
+01:17:34,547 --> 01:17:42,507
+Burada Bayez Teoreminden faydalanılıyor.
+
+631
+01:17:43,648 --> 01:17:49,427
+Bayez Teoremini daha önceki derslerimizde görmüştük.
+
+632
+01:17:49,427 --> 01:18:16,427
+Bayez Teoremine göre elimizdeki bir XJ sample'ının C'ye sınıfına ait olma koşullu olasılığı Bayez Teoremine göre şurada gördüğümüz şekilde yazılabilir.
+
+633
+01:18:16,427 --> 01:18:18,108
+Bu nedir?
+
+634
+01:18:18,787 --> 01:18:45,587
+CE sınıfının olma olasılığı, CE sınıfı içerisinde XJ'nin olma olasılığı, şuradaki ifadede bölü, altta ise PX sample'ın olma olasılığı ki bu da A eşit birden K'ya kadar her bir sınıf içerisinde bu sınıfın olma olasılığı çarpı,
+
+635
+01:18:45,587 --> 01:18:50,467
+bu sınıfın içerisinde XJ'nin olma olasılığı şeklinde yazılabilir.
+
+636
+01:18:50,627 --> 01:18:53,167
+Yani bunu Bayez Teoreminden zaten biliyoruz.
+
+637
+01:18:53,568 --> 01:19:02,787
+Bu posterior probability'yi hesaplamak için altta gösterilen şekilde bu hesaplamayı yapabiliyoruz.
+
+638
+01:19:02,787 --> 01:19:07,587
+Bunu daha önce Naibayes Classification'da da kullanmıştık.
+
+639
+01:19:08,527 --> 01:19:12,427
+Bir likelihood probability hesaplayacağız burada.
+
+640
+01:19:12,847 --> 01:19:13,327
+Bu nedir?
+
+641
+01:19:13,447 --> 01:19:21,068
+En çok olabilirlik kestirimli bir normal dağılımdan faydalanarak bir hesaplayacağız.
+
+642
+01:19:21,068 --> 01:19:36,068
+Yani şu likelihood probability, CE sınıfı içerisinde XJ'nin olma olasılığını her bir sınıfın normal dağılım gösterdiğini varsayacağız.
+
+643
+01:19:36,068 --> 01:19:50,567
+Ve her bir CI sınıfı için bu sınıfa ait mü, i ve sigma, i ya da bunun karesi varyansı bildiğimizi varsayacağız.
+
+644
+01:19:50,568 --> 01:20:00,347
+Bu bildiğimiz ortalama değer ve varyansdan faydalanarak yani o sınıfın ortalaması ve varyansını biliyorsak eğer,
+
+645
+01:20:00,728 --> 01:20:09,927
+bunun içerisinde XJ sample'ın olma olasılığını normal dağılım üzerinden likelihood probability olarak hesaplayabileceğiz.
+
+646
+01:20:09,927 --> 01:20:13,608
+Aslında çok pratik, çok güzel bir çözüm yöntemi.
+
+647
+01:20:14,627 --> 01:20:16,507
+Bunu şöyle düşünebilirsiniz.
+
+648
+01:20:17,268 --> 01:20:19,807
+Elimizde belli sample'lar var.
+
+649
+01:20:19,927 --> 01:20:22,307
+Bunların dağılımları söz konusu.
+
+650
+01:20:22,768 --> 01:20:31,127
+Bir tane Class'ın dağılımı, diyelim ki şurası bir CE sınıfının ya da C1 sınıfının dağılımı olsun.
+
+651
+01:20:32,087 --> 01:20:35,467
+Burada, renk değiştirebiliyor muyum?
+
+652
+01:20:37,087 --> 01:20:37,967
+Kalem rengi mi?
+
+653
+01:20:37,967 --> 01:20:40,367
+Varmış.
+
+654
+01:20:40,967 --> 01:20:47,268
+Bir diğer sınıfı çizerken varsayalım ki şöyle bir dağılım olduğunu varsayalım.
+
+655
+01:20:47,827 --> 01:20:52,947
+Ortalama değerlerini ve ben bunların her birinin varyanslarını biliyorum.
+
+656
+01:20:53,287 --> 01:20:55,667
+Şu benim C2 sınıfım olsun.
+
+657
+01:20:56,108 --> 01:20:58,167
+Mavi ile çizdiğim C1 sınıfım.
+
+658
+01:20:58,167 --> 01:21:07,707
+Ben kırmızı ile çizdiğim C1 sınıfının hangi sampullardan oluştuğunu bildiğim için bununla ilgili bir mü, i hesaplayabiliyorum.
+
+659
+01:21:08,435 --> 01:21:16,415
+Ve yine bu dağılımla ilgili bunun varyansı hakkında yani sigma 2 kare hakkında bir fikrim var biliyorum.
+
+660
+01:21:16,935 --> 01:21:37,815
+Benzer şekilde arkadaşlar, buradaki C1 sınıfı dediğimiz sınıf için de bir mü1 biliyorum ve bunun yine bu dağılımın varyansı hakkında bir bilgim var.
+
+661
+01:21:37,815 --> 01:21:46,475
+Gördüğünüz gibi aslında burada x80'i üzerinde, x80'i üzerindeki her bir noktanın
+
+662
+01:21:50,355 --> 01:21:59,855
+Ve x ekseni üzerindeki her bir noktanın bu sınıflara ait olma olasılıklarını hesaplayabiliyorum.
+
+663
+01:22:00,015 --> 01:22:13,555
+Mesela şurada bir değer için c1 sınıfına ait olma olasılığını ve c2 sınıfına ait olma olasılığını likelihood function dediğimiz fonksiyon üzerinden hesaplayabiliyoruz.
+
+664
+01:22:13,815 --> 01:22:16,095
+Yapı bundan ibaret aslında.
+
+665
+01:22:16,095 --> 01:22:26,095
+Burada ben bir boyut üzerinde tabii bunu gösterdim bir x değişkeni ya da x öz niteliği üzerinden giderek göstermeye çalıştım.
+
+666
+01:22:27,055 --> 01:22:35,095
+Buradaki likelihood probability'yi normal dağılım üzerinden hesaplayabiliyoruz.
+
+667
+01:22:36,076 --> 01:22:42,095
+c1 sınıfının olma olasılığını yine bu sınıfa ait örnek sayısı üzerinden hesaplayabiliyoruz.
+
+668
+01:22:42,095 --> 01:22:50,315
+Paydadaki terimi ise bir normalization term olarak burada belirtmiş.
+
+669
+01:22:50,576 --> 01:22:59,095
+Yani tüm olasılıklarda pxj'yi orada normalizasyon terimi olarak hesaplayacağız.
+
+670
+01:22:59,095 --> 01:23:03,095
+Bunu bir boyut üzerinde örneklendirmiş.
+
+671
+01:23:04,076 --> 01:23:09,475
+Ben bu chapter'da anlatımı gayet açık olmuş.
+
+672
+01:23:09,895 --> 01:23:12,175
+Size bunun üzerinden anlatmak istiyorum.
+
+673
+01:23:12,635 --> 01:23:18,275
+Diyor ki varsayalım ki bir boyutlu bir veri üzerinde çalışıyoruz.
+
+674
+01:23:18,275 --> 01:23:25,595
+Az önce örneğini gösterdiğimiz gibi sadece x ekseni ve x dimension'ı var grafimizde.
+
+675
+01:23:26,155 --> 01:23:28,275
+Ve bu örnekte
+
+676
+01:23:28,275 --> 01:23:38,335
+k2 alalım ve bir normal dağılımdan faydalanarak modeli oluşturacağımızı söylemiş.
+
+677
+01:23:38,335 --> 01:23:52,055
+Diyor ki birinci klasterın normal dağılım için mu1 dediğimiz bir ortalama değeri sigma1 kare dediğimiz bir varyansı var.
+
+678
+01:23:52,435 --> 01:24:06,255
+Ve Gauss fonksiyonu üzerinde ben Gauss fonksiyonundan faydalanarak yani normal dağılımdan faydalanarak buradaki x değişkeninin bu dağılım üzerindeki olma olasılığını hesaplayabilirim.
+
+679
+01:24:06,255 --> 01:24:14,615
+Aynı şekilde elimde diğer bir klasterım, ikinci klasterım var.
+
+680
+01:24:14,715 --> 01:24:17,595
+Bunun mu2 ve sigma2 değerlerini biliyorum.
+
+681
+01:24:17,935 --> 01:24:20,015
+Sigma2 kare yani varyansını biliyorum.
+
+682
+01:24:20,496 --> 01:24:29,335
+Gauss dağılımında bu normal dağılımda x değişkeni için bir x değeri için bu olasılığı hesaplayabiliyorum.
+
+683
+01:24:32,695 --> 01:24:35,215
+İki tane kümeyi ayırmak istiyoruz.
+
+684
+01:24:35,215 --> 01:24:40,595
+Küme parametreleri dediğimiz mu1 sigma1 mu2 sigma2'yi biliyoruz.
+
+685
+01:24:41,355 --> 01:24:44,215
+Burada algoritma...
+
+686
+01:24:46,612 --> 01:25:07,372
+Amacımız bu parametreleri tahmin etmek çünkü her merkezleri değiştiğinde bunlar yeniden hesaplanıyor ve bu işlemleri üç adımda gerçekleştiriyoruz diyor. Initialization, expectation ve maximization dediğimiz adımlar bunlar.
+
+687
+01:25:07,372 --> 01:25:34,132
+Initialization adımında ne yaptığına bakacak olursak for each cluster CI demiş burada iki örneğinden gitmiştik ama hani genelleştirip K'ya kadar değer alabilir diyor ve randomly initialize burada başlangıçta nasıl küme merkezlerini rastgele seçiyorsak burada da rastgele bir Mu'i ve Sigma'i seçiyor.
+
+688
+01:25:34,132 --> 01:25:48,011
+Ve bir sınıfın olma olasılığını yazarken de bir bölü K demiş yani biz başta iki tane kümeyi ayırıyorsak her bir kümenin olma olasılığını bir bölü iki kabul edeceğiz anlamına geliyor.
+
+689
+01:25:49,712 --> 01:25:55,132
+Initialization dediğimiz ilklendirme yani başlangıç adımı bu şekilde başlıyor.
+
+690
+01:25:55,132 --> 01:26:11,811
+Expectation step dediğimiz step'e bakacak olursak burada K tane küme için parametrelerimiz Sigma'i ve Mu'i ve Sigma'i var.
+
+691
+01:26:11,811 --> 01:26:14,971
+Sınıfın olma olasılığı var.
+
+692
+01:26:16,271 --> 01:26:39,851
+Şurada gördüğümüz değerler ve bizim amacımız her XJ sample'ının her XJ sample'ının CE sınıfı içerisinde yani hem birinci hem ikinci sınıf içerisinde olma olasılıklarını yani CE sınıfı içerisinde X'inin olma olasılığını likelihood function'dan faydalanarak hesaplayacağız.
+
+693
+01:26:39,851 --> 01:26:43,971
+Bu nedir? Normal dağılımdan faydalanarak hesaplayacağız yani.
+
+694
+01:26:47,811 --> 01:26:51,851
+Buna göre normal dağılımı denklemini hatırlıyorsunuzdur.
+
+695
+01:26:52,632 --> 01:26:55,811
+Bu çok yerde aslında karşınıza çıkacaktır.
+
+696
+01:26:55,811 --> 01:27:15,952
+Ben Mu'i dediğim normal dağılımın ortalaması ve varyansı bu iki parametreyle her XJ değeri için bu dağılımda az önce çizdiğimiz şekilde bakacak olursak.
+
+697
+01:27:15,952 --> 01:27:32,412
+şurası X80'i bu dağılımın mü'i dediğimiz değeri ve bu dağılımın varyansı Sigma'i kare ile gösterilmiş.
+
+698
+01:27:32,412 --> 01:27:44,412
+Buna göre ben X'in herhangi bir değeri için bu fonksiyonun ne değer alacağını şu fonksiyonda X değerini yerine yazarak herhangi bir XJ için
+
+699
+01:27:44,412 --> 01:28:10,412
+XJ için
+
+700
+01:27:48,243 --> 01:27:58,423
+Bu fonksiyonun alacağı değeri şu denklemde x'i, mü'yü ve sigma'yı yerine yazarak hesaplayabiliyorum.
+
+701
+01:27:58,423 --> 01:28:04,663
+Tabii bunu hangi parametreler için yapıyorum? Şu anda bir CI sınıfı için aldığım.
+
+702
+01:28:05,344 --> 01:28:14,003
+CI sınıfını temsil eden mü'i dediğim bir küme ortalaması var.
+
+703
+01:28:14,003 --> 01:28:21,443
+Bir de bu kümenin sigma'y kümesinin varyansını biliyorum.
+
+704
+01:28:21,563 --> 01:28:34,823
+Bu parametrelerle bu kümenin içerisinde x'inin olma olasılığını likelihood function kullanarak, buna likelihood probability diyoruz, buradan hesaplayabiliyoruz.
+
+705
+01:28:34,823 --> 01:28:45,183
+Daha sonra bunu, daha sonra bunu, daha sonra bunu, bu hesapladığımız değeri şurada gördüğümüz Bayes teoreminde yerine yazacağız.
+
+706
+01:28:45,443 --> 01:28:49,283
+Bu hesapladığımız değer, yukarıda hesapladığımız değer şuydu.
+
+707
+01:28:51,384 --> 01:28:53,543
+Bizim amacımız nedir?
+
+708
+01:28:53,743 --> 01:28:58,384
+XJ sample'ının CI sınıfına ait olma olasılığını hesaplamak.
+
+709
+01:28:58,384 --> 01:29:05,723
+Dolayısıyla bunu hesaplamak için CI sınıfının olma olasılığı çarpı,
+
+710
+01:29:05,723 --> 01:29:19,923
+CI sınıfı içerisinde XJ'nin olma olasılığı bölü, işte burada normalization term dediğimiz Px probabilitiesine bölerek Bayes teoremine göre bunu yazabiliyoruz.
+
+711
+01:29:20,223 --> 01:29:25,423
+Bu sözüne ettiğimiz değer, bakın hesapladığımız şu değer,
+
+712
+01:29:31,859 --> 01:29:39,839
+Bu değeri, pardon, hesapladığımız bu değeri daha sonra
+
+713
+01:29:44,884 --> 01:29:47,703
+Bir weight değeri olarak kullanacağız.
+
+714
+01:29:47,703 --> 01:30:01,963
+Yani hesapladığımız XJ sample'ının CI sınıfı içerisinde olma olasılığı dediğimiz değeri bir weight olarak kullanacağız.
+
+715
+01:30:01,963 --> 01:30:10,503
+Buna burada gördüğümüz gibi weight of a point for cluster CI demiş.
+
+716
+01:30:10,503 --> 01:30:23,404
+XJ dediğimiz noktanın ya da sample'ın CI sınıfı içerisindeki weighti.
+
+717
+01:30:23,404 --> 01:30:35,904
+Çünkü başta biz şeyi çizerken en başta yukarıda tarif ederken birden fazla sınıf için yani iki tane sınıf için tarif etmiştik.
+
+718
+01:30:35,904 --> 01:30:43,043
+Şu şekli hatırlayalım mavi ve kırmızıyla çizdiğim iki tane dağılım iki tane cluster'ı temsil ediyor.
+
+719
+01:30:43,503 --> 01:30:51,703
+Ve bir X değeri şurada gösterdiğim bir X değeri her iki kümenin de belli bir olasılıkla elemanı.
+
+720
+01:30:52,043 --> 01:30:54,083
+Çünkü ne dedik hard assignment yok.
+
+721
+01:30:54,283 --> 01:30:59,884
+Yani her bir sample her iki kümenin de burada iki tane küme olduğu için söylüyorum.
+
+722
+01:31:00,243 --> 01:31:04,224
+İki kümenin de belli bir olasılıkla üyesidir.
+
+723
+01:31:04,224 --> 01:31:15,224
+Bu verdiğim şurada verdiğim örnekteki X değerinin C1 kümesine ait olma olasılığı daha düşük C2 kümesine ait olma olasılığına göre baktığımda.
+
+724
+01:31:16,283 --> 01:31:22,604
+Ama ne oranda buna ait olduğunu gösteren bir weight hesaplamış olduk.
+
+725
+01:31:23,024 --> 01:31:32,104
+Bu weighti kullanarak artık yeni küme merkezini ve bu kümenin varyansını artık bu weighti kullanarak hesaplayacağız.
+
+726
+01:31:32,104 --> 01:31:34,503
+Bu çok güzel bir mantık.
+
+727
+01:31:34,863 --> 01:31:36,224
+Lütfen burada dikkat edin.
+
+728
+01:31:36,524 --> 01:31:36,963
+Ne dedim?
+
+729
+01:31:37,323 --> 01:31:45,184
+Buradaki X sample'ının her kümeye belli oranda ait olma olasılığı var artık elimizde.
+
+730
+01:31:45,283 --> 01:31:47,203
+Bunu weight olarak isimlendirdik.
+
+731
+01:31:47,644 --> 01:31:52,404
+Buradan faydalanarak artık yeni küme merkezlerini buna göre hesaplıyorum.
+
+732
+01:31:52,404 --> 01:31:53,984
+Bakın lütfen dikkat.
+
+733
+01:31:54,323 --> 01:32:06,524
+X J sample'ının değerlerini kendi üye olma olasılığıyla yani o kümeye üye olma olasılığıyla çarpıp buradan bir yeni küme merkezi hesaplıyorum.
+
+734
+01:32:06,743 --> 01:32:07,944
+E cluster'ı için.
+
+735
+01:32:07,944 --> 01:32:13,564
+E cluster'ı için hesapladığım yeni küme merkezi lütfen dikkat.
+
+736
+01:32:13,663 --> 01:32:25,944
+X J sample'ının bu kümeye hangi ağırlıkta ait olduğunu gösteren probability ile ağırlıklandırılarak bir ağırlıklı ortalama alma işlemi gerçekleştiriliyor.
+
+737
+01:32:27,323 --> 01:32:32,064
+Hard k-means dediğimiz clustering yönteminde az önce bir örnek görmüştük.
+
+738
+01:32:32,064 --> 01:32:34,583
+7 tane sample vardı.
+
+739
+01:32:34,963 --> 01:32:41,604
+3 tanesi bir sınıfa ait işte geriye kalan 4 tanesi diğer kümeye aitti.
+
+740
+01:32:42,304 --> 01:32:47,844
+Ve sadece o sample'ların ortalamasını alarak yeni küme merkezi hesaplamıştık.
+
+741
+01:32:47,844 --> 01:32:49,524
+Burada ise lütfen dikkat.
+
+742
+01:32:50,163 --> 01:32:58,703
+Veri seti içerisinde bulunan J eşit birden N'e kadar tüm sample'lar için, bakın tüm sample'lar için,
+
+743
+01:32:58,703 --> 01:33:06,644
+bu sample'ların belli bir ağırlık ile bu kümeye ait olma olasılığı var demiştik.
+
+744
+01:33:06,963 --> 01:33:12,423
+Bu ağırlıkla çarparak bir ağırlıklı ortalama alıyor ve yeni küme merkezini,
+
+745
+01:33:12,804 --> 01:33:17,144
+E cluster'ının küme merkezini bu şekilde oluşturuyor.
+
+746
+01:33:17,984 --> 01:33:19,503
+Fikir o açıdan çok güzel.
+
+747
+01:33:19,503 --> 01:33:27,144
+E-m clustering algoritması dediğim gibi k-means clustering'den türetilmiş güzel bir mantığı var.
+
+748
+01:33:28,307 --> 01:33:37,188
+Küme merkezini bu şekilde hesapladığı gibi varyansı da aynı şekilde weighted varyans dediğimiz formda hesaplıyor.
+
+749
+01:33:37,807 --> 01:33:42,507
+Aynı mantık biz normalde kümenin varyansını nasıl hesaplarız?
+
+750
+01:33:42,868 --> 01:33:55,247
+Her bir sample'ın ortalama ile arasındaki farkın kareleri toplamını işte toplam sample sayısı eksi bire bölerek hesaplarız.
+
+751
+01:33:55,247 --> 01:34:05,228
+Burada ise ne yapmış? Bakın bu aradaki farkı yine weight ile ağırlıklandırarak weighted varyans dediğimiz formda bir varyans hesaplamış.
+
+752
+01:34:05,467 --> 01:34:09,648
+Her klaster için bu şekilde bir varyans hesaplıyoruz.
+
+753
+01:34:10,028 --> 01:34:18,347
+Her klaster için bir küme merkezi ve bu kümenin varyansını hesaplamış oluyoruz.
+
+754
+01:34:18,608 --> 01:34:22,828
+Ama nasıl ağırlıklı varyans hesabı kullanarak?
+
+755
+01:34:22,828 --> 01:34:29,167
+Daha sonra her kümenin olma olasılığına ihtiyacım var.
+
+756
+01:34:29,287 --> 01:34:30,287
+Lütfen dikkat.
+
+757
+01:34:30,667 --> 01:34:35,847
+Şu olasılık ise her kümenin olma olasılığını ise nasıl hesaplamış?
+
+758
+01:34:37,108 --> 01:34:42,328
+i eşit birden n'e kadar elimde n tane sample'dan oluşan bir veri seti var.
+
+759
+01:34:42,328 --> 01:34:55,287
+Bu sampel'ların her birinin bu kümenin ait olduğu yani bu hesapladığım kümenin kümeye ait olma ağırlığı, weight'i hesaplamıştık.
+
+760
+01:34:55,368 --> 01:34:56,287
+Olasılığı vardı.
+
+761
+01:34:56,967 --> 01:35:08,627
+Bu olasılıkları topluyor ve yine tüm weight'ler toplamına bölerek bir cluster probability dediğimiz küme olasılığı hesaplıyor.
+
+762
+01:35:08,627 --> 01:35:12,087
+Şurada gördüğümüz formül ile.
+
+763
+01:35:12,087 --> 01:35:22,307
+Dolayısıyla bu yapı içerisinde maximization step dediğimiz stepte bu işlem gerçekleştiriliyor.
+
+764
+01:35:23,047 --> 01:35:32,467
+Arkasından da işte EM algoritmasının adımlarından bahsederken initialization, expectation ve maximization demiştik.
+
+765
+01:35:32,467 --> 01:35:40,467
+Initialization stepte başlangıç için random olarak bunları atadığımızı söyledik.
+
+766
+01:35:41,587 --> 01:35:47,747
+Küme olma olasılıklarını küme sayısına göre eşit olasılık dedik.
+
+767
+01:35:48,707 --> 01:36:01,608
+Expectation stepte ise gördüğümüz gibi her bir sample'ın bir kümeye ait olma olasılığını, koşullu olasılığını hesapladık.
+
+768
+01:36:01,608 --> 01:36:04,967
+Bunu daha sonra bir weight olarak kullandık.
+
+769
+01:36:05,307 --> 01:36:16,807
+Bu weight'ten faydalanarak da her kümenin yeni merkez noktasını, her kümenin yeni varyansını ve her kümenin olma olasılığını hesapladık.
+
+770
+01:36:17,207 --> 01:36:18,728
+Yine iteratif bir yöntem.
+
+771
+01:36:18,828 --> 01:36:24,368
+Aynı K-Means clustering'de olduğu gibi bu hesaplamalarla bu işlemi tekrarlıyor.
+
+772
+01:36:24,368 --> 01:36:34,408
+Yani yeni bulduğu bu değerlerle, mu, sigma ve C-E sınıfının olma olasılığını kullanarak bu işlemleri tekrarlıyor.
+
+773
+01:36:34,828 --> 01:36:39,268
+Yani açıkçası benim beğendiğim güzel yöntemlerden biri.
+
+774
+01:36:39,368 --> 01:36:41,688
+Burada mesela şöyle bir yorum yapmış.
+
+775
+01:36:41,688 --> 01:36:46,467
+K-Means as specialization of EM demiş.
+
+776
+01:36:46,608 --> 01:36:50,827
+EM algoritmasının bir özel formudur K-Means diyor.
+
+777
+01:36:50,828 --> 01:36:54,828
+Buna göre şurada gördüğümüz...
+
+778
+01:36:54,828 --> 01:36:56,828
+K-Means as specialization...
+
+779
+01:36:57,779 --> 01:37:12,340
+XC sample'ının müa küme merkezine olan uzaklığını yani minimize eden küme merkezi CI seçiliyor ve buna bir diyor diğerlerine sıfır diyor.
+
+780
+01:37:12,340 --> 01:37:22,259
+Yani bir hard assignment yapmak gerekirse bu yapıyı kullanarak EM metodunu K-Means metodu olarak da kullanabiliyoruz.
+
+781
+01:37:22,699 --> 01:37:26,759
+Bunun özel bir formu olarak gösterilmiş.
+
+782
+01:37:26,759 --> 01:37:30,979
+Bir boyutta tabii bunu anlatmak daha böyle basit.
+
+783
+01:37:32,739 --> 01:37:39,819
+Çünkü dağılımların her birini tek tek çizebiliyorum ve bunun üzerinde bir boyutta gösterebiliyorum.
+
+784
+01:37:39,819 --> 01:37:45,119
+Bunu iki boyutta yapmak istersem ya da burada EM in D-Dimensions demiş.
+
+785
+01:37:45,679 --> 01:37:55,059
+Mesela bir boyutu iki boyuta çevirecek olursak mesela şurada bir küme merkezi bulduk.
+
+786
+01:37:55,059 --> 01:37:56,679
+Bunun bir varyansı var.
+
+787
+01:37:56,779 --> 01:38:00,519
+Bu varyansa göre şu şekilde bir yapı çizebilirim.
+
+788
+01:38:00,840 --> 01:38:05,539
+İkinci kümeyi çizerken yani burada variable 1 ve variable 2 dediğim.
+
+789
+01:38:07,619 --> 01:38:10,599
+İki tane boyut olduğunu varsaysam.
+
+790
+01:38:11,019 --> 01:38:14,099
+Gauss dağılımlarının bir de bunun yüksekliği olacak.
+
+791
+01:38:14,279 --> 01:38:16,380
+Yani bir üçüncü boyut gibi düşünün.
+
+792
+01:38:16,380 --> 01:38:20,199
+İkinci bir renkle de diğer dağılımı çizelim.
+
+793
+01:38:20,199 --> 01:38:39,199
+İkinci kümeyi çizelim.
+
+794
+01:38:24,404 --> 01:38:30,124
+Eğer iki boyutlu bir yapıdan bahsediyorsak o da varsayalım ki daha nasıl olsun?
+
+795
+01:38:30,304 --> 01:38:32,324
+Biraz daha küçük bir şey olsun.
+
+796
+01:38:32,524 --> 01:38:34,104
+Şöyle büyük oldu.
+
+797
+01:38:34,804 --> 01:38:41,124
+Bu da bunun mü 2 değeri olsun.
+
+798
+01:38:41,544 --> 01:38:43,844
+Bu şekilde bir küme yapısı düşünün.
+
+799
+01:38:43,844 --> 01:38:52,484
+Ama tabii ki bu küme ya da gauss dağılımının alt uçlarında yani etekleri dediğimiz alt uçlarında da çok düşük olasılıkla da olsa
+
+800
+01:38:52,484 --> 01:38:56,924
+yani şunun dış bölgelerinde de bu olasılık hesaplayabiliyorum.
+
+801
+01:38:57,084 --> 01:38:57,544
+Ama nedir?
+
+802
+01:38:57,624 --> 01:38:58,864
+Daha düşük olasılıkla.
+
+803
+01:38:59,504 --> 01:39:07,224
+Ama şu bölge içerisindeki noktaların her iki kümeye de belli oranda nasıl etkilediğini görebiliriz.
+
+804
+01:39:07,684 --> 01:39:11,964
+Zaten bu yöntem Gaussian mixture model diye o yüzden deniyor.
+
+805
+01:39:11,964 --> 01:39:15,504
+Bu şekilde birbiri içine geçmiş gauss dağılımları var.
+
+806
+01:39:15,824 --> 01:39:22,444
+Aslında modellediğimiz bu gauss dağılımlarının bütünü bu sistemi oluşturuyor.
+
+807
+01:39:22,984 --> 01:39:29,964
+Bilmiyorum söylediklerimden hayal edebiliyor musunuz şekli ama ben burada iki tane cluster için çizdim.
+
+808
+01:39:30,324 --> 01:39:32,244
+Burada bir üçüncü cluster olabilirdi.
+
+809
+01:39:32,384 --> 01:39:36,504
+Bunların hepsini kapsayan daha büyük bir küme yapısı olabilirdi.
+
+810
+01:39:37,084 --> 01:39:39,184
+Örten bir form da olabilirdi.
+
+811
+01:39:39,184 --> 01:39:43,084
+Ama merkez noktası biraz daha farklı kaymış olabilirdi.
+
+812
+01:39:43,624 --> 01:39:49,624
+Yani bu şekilde yapıyı aslında mantığını anlamanız bence çok önemli.
+
+813
+01:39:49,624 --> 01:39:52,004
+Bilmiyorum burada sorunuz var mı?
+
+814
+01:39:52,204 --> 01:39:56,084
+Ben hiç arada sormadan size böyle anlattım geçtim.
+
+815
+01:39:56,304 --> 01:39:58,284
+Evet buyurun sorularınız varsa alalım.
+
+816
+01:39:59,284 --> 01:40:01,764
+Hocam ben şey diyeceğim doğru anladıysam eğer.
+
+817
+01:40:01,884 --> 01:40:07,224
+Centroid yönteminde bir nokta işte kümelerden en yakına hangisine yakınsa onu atıyoruz.
+
+818
+01:40:07,224 --> 01:40:14,084
+Ama buradaki yöntemde ise gauss dağılımında merkeze daha çok yaklaşanı aslında küme ediyoruz değil mi?
+
+819
+01:40:14,644 --> 01:40:15,164
+Hayır.
+
+820
+01:40:15,664 --> 01:40:18,644
+Şöyle bakın tekrar orayı açıklayayım.
+
+821
+01:40:18,644 --> 01:40:20,644
+Mesela ben burada...
+
+822
+01:40:20,644 --> 01:40:41,344
+Evet.
+
+823
+01:40:26,804 --> 01:40:28,804
+Böyle bir yeşil renk alayım.
+
+824
+01:40:29,384 --> 01:40:32,484
+Burada bir yeşil nokta tarif ettim.
+
+825
+01:40:35,123 --> 01:40:37,564
+Şurada bir yeşil nokta tarif ettim.
+
+826
+01:40:37,703 --> 01:40:47,123
+Bu sample'ın aslında her iki kümenin merkezine olan uzaklıklarına göre bu dağılımların içerisinde olma olasılıkları var.
+
+827
+01:40:47,604 --> 01:40:49,764
+Yani veya bir başka nokta olsun.
+
+828
+01:40:49,944 --> 01:40:51,564
+Mesela şurada bir nokta olsun.
+
+829
+01:40:51,564 --> 01:41:02,364
+Bu nokta kırmızıyla gösterdiğim küme merkezine olan uzaklığı ve M2 küme merkezine olan uzaklığına göre aslında her iki kümeye de belli bir olasılıkla ait.
+
+830
+01:41:03,064 --> 01:41:03,783
+Anlatabildim mi?
+
+831
+01:41:04,083 --> 01:41:07,564
+Yani hard olarak bir nokta sadece bir kümenin demiyoruz.
+
+832
+01:41:08,663 --> 01:41:13,623
+Her nokta tüm kümelere belli bir olasılıkla aittir diyoruz.
+
+833
+01:41:13,804 --> 01:41:19,884
+Ama birine 0.90 olasılıkla aitken diğerine %10 olasılıkla ait oluyor.
+
+834
+01:41:19,884 --> 01:41:29,944
+Ve etkisi de o yüzden birinin %90 oranında etkilerken o kümenin merkezini diğer kümenin merkezini %10 oranında etkiliyor.
+
+835
+01:41:30,764 --> 01:41:32,283
+Peki karar veriyor muyuz?
+
+836
+01:41:32,384 --> 01:41:36,024
+Yani mesela %90 bizim için büyük rakamdır bu küme ait bir demiyoruz.
+
+837
+01:41:36,043 --> 01:41:36,944
+Hayır demiyoruz.
+
+838
+01:41:37,083 --> 01:41:37,963
+Kesinlikle demiyoruz.
+
+839
+01:41:38,123 --> 01:41:44,484
+Bakın burada olası şeyleri hesaplarken yeni küme merkezlerine hesaplarken lütfen dikkat.
+
+840
+01:41:44,484 --> 01:41:45,684
+Bakın şurada ne yapıyoruz?
+
+841
+01:41:45,783 --> 01:41:57,304
+C eşit birden n'e kadar tüm sampulların o kümeye belli bir oranda ait olma olasılığı var.
+
+842
+01:41:57,444 --> 01:41:58,503
+Yani bir weighti var.
+
+843
+01:41:58,804 --> 01:42:00,724
+O oranda etki ediyor ona.
+
+844
+01:42:01,224 --> 01:42:03,623
+Bazısında belki %1 etki ediyor.
+
+845
+01:42:04,104 --> 01:42:06,824
+Ama bazısında %88 etki ediyor.
+
+846
+01:42:06,824 --> 01:42:09,804
+Öbür bir kümede %5 etkiliyor mesela.
+
+847
+01:42:10,703 --> 01:42:11,484
+Aynı sampullar.
+
+848
+01:42:11,564 --> 01:42:17,043
+Yani tüm kümelere belli oranda bir weight ile aidiyeti var.
+
+849
+01:42:17,043 --> 01:42:25,184
+Peki hocam değişkenlerin independent ya da dependent olmasının sentroid ya da...
+
+850
+01:42:25,184 --> 01:42:26,904
+Hayır burada öyle bir şey yok.
+
+851
+01:42:27,184 --> 01:42:27,684
+Hayır yok.
+
+852
+01:42:28,003 --> 01:42:32,764
+Çünkü yukarıdaki şey olasılığının Bayez'deki gibi yapıdan söz etmiyoruz.
+
+853
+01:42:33,144 --> 01:42:35,384
+Burada bahsettiğimiz sampuldu.
+
+854
+01:42:35,384 --> 01:42:39,384
+Orada ise sampulın her bir öz niteliğinden bahsediyorduk.
+
+855
+01:42:40,224 --> 01:42:43,484
+Burada bir sampulu tüm öz nitelikleriyle bir bütün olarak alıyoruz.
+
+856
+01:42:45,264 --> 01:42:45,484
+Tamam.
+
+857
+01:42:45,484 --> 01:42:47,463
+Yani öyle bir şey yok.
+
+858
+01:42:47,543 --> 01:42:54,743
+Nayibayez'deki gibi öz niteliklerin bağımsız olması kuralına ihtiyacımız yok burada.
+
+859
+01:42:57,384 --> 01:43:00,404
+Bu yöntem dediğim gibi gerçekten çok güzel.
+
+860
+01:43:00,743 --> 01:43:13,663
+Mesela fuzzy se-means yöntemine geçtiğimizde orada da buna çok benzer şekilde membership function dediğimiz her bir sampulın bir kümeye ait olma üyelik derecesi diye bir değer hesaplanıyor.
+
+861
+01:43:13,663 --> 01:43:31,003
+Yani inanın k-means clustering yöntemini anladıysanız üzerine expectation maximization'ı kurmanız, bunun üzerine fuzzy c-means kurmanız ya da self-organizing feature map dediğimiz neural network ile clustering yöntemi var.
+
+862
+01:43:31,003 --> 01:43:34,404
+Bunu kurmanız, kurgulamanız çok daha kolay oluyor.
+
+863
+01:43:35,904 --> 01:43:39,404
+Yapı aslında özetle bu şekilde anlatılabilir.
+
+864
+01:43:39,404 --> 01:43:41,623
+Tekrar soruyorum.
+
+865
+01:43:41,703 --> 01:43:45,404
+Lütfen anlamadığımız bir şey varsa sorabilirsiniz.
+
+866
+01:43:45,583 --> 01:43:47,404
+Biraz hızlı anlatmış olabilirim.
+
+867
+01:43:51,091 --> 01:43:53,891
+Çok açık her şey anlaşıldı hocam diyorsunuz.
+
+868
+01:43:53,951 --> 01:43:54,291
+Öyle mi?
+
+869
+01:43:55,851 --> 01:44:04,551
+Hocam peki outlier durumlarında olması durumunda verilmiş üzerinde bu yöntem mi daha iyi sonuç veriyor yoksa centroid yöntemi mi?
+
+870
+01:44:05,951 --> 01:44:06,951
+Yani yorumunuz nedir?
+
+871
+01:44:07,371 --> 01:44:10,551
+Outlier olması durumunda yani ben şöyle düşünürüm.
+
+872
+01:44:10,551 --> 01:44:13,711
+Mesela şuradaki dağılımı dikkate alalım.
+
+873
+01:44:13,991 --> 01:44:16,051
+Outlier dediğimiz sample ne olur?
+
+874
+01:44:16,192 --> 01:44:17,851
+Şunun çok dışında bir nokta olur.
+
+875
+01:44:17,851 --> 01:44:33,112
+Zaten bunların bu her bir Gaussian distribution'a olan uzaklığı çok mesafesi çok uzak olacağı için üyelik derecesi demeyelim ne demiştik?
+
+876
+01:44:33,391 --> 01:44:36,751
+Belli bir koşullu olasılıkla bunun üyesidir demiştik.
+
+877
+01:44:37,451 --> 01:44:40,131
+Bu olasılık oldukça küçük çıkacaktır.
+
+878
+01:44:40,251 --> 01:44:44,171
+Dolayısıyla etkisi var ama çok çok az etkisi var.
+
+879
+01:44:44,171 --> 01:44:48,811
+Kaminize göre kıyaslayacak olursan bu yöntem daha avantajlıdır bence.
+
+880
+01:44:49,851 --> 01:44:55,991
+Yani outlier'lere karşı daha dayanıklı olduğunu söyleyebilirim yem için.
+
+881
+01:44:55,991 --> 01:45:08,251
+Aslında bu noktada da hocam outlier analiz etmek için de hani düşük olması her küme olan bunun outlier'da dememiz için de aslında bir şey sağlıyor bize değil mi?
+
+882
+01:45:08,511 --> 01:45:16,991
+Öyle aslında outlier analizinde biz slide'da yazmıştık ama çok tabii daha konu gelmediği için konuşmamıştık.
+
+883
+01:45:17,391 --> 01:45:20,612
+Outlier analizinde clustering'den faydalanılıyor arkadaşlar.
+
+884
+01:45:20,612 --> 01:45:25,631
+Yani k-means clustering yöntemini kullanarak da outlier'ları detekt edebilirsiniz.
+
+885
+01:45:26,071 --> 01:45:27,192
+Çünkü ne yaparsınız?
+
+886
+01:45:27,311 --> 01:45:38,451
+Küme merkezlerini bulduktan sonra her bir sample'ın küme merkezlerine olan uzaklıklarına bakarak bu küme merkezinin çok dışında deme şansınız da var diğer tarafta.
+
+887
+01:45:38,451 --> 01:45:43,612
+Dolayısıyla clustering kullanarak outlier analizi yapmak mümkün.
+
+888
+01:45:43,991 --> 01:45:46,211
+Bunda EM'i de kullanabilirsiniz.
+
+889
+01:45:46,491 --> 01:45:48,112
+K-means'i de kullanabilirsiniz.
+
+890
+01:45:48,811 --> 01:45:51,251
+Farklı yöntemler seçebilirsiniz.
+
+891
+01:45:55,252 --> 01:45:57,572
+Başka sorunuz var mıdır?
+
+892
+01:46:01,908 --> 01:46:03,488
+Yok diyorsunuz soru.
+
+893
+01:46:04,428 --> 01:46:10,528
+Sizden ricam bu şeyleri anlattıklarımı lütfen biraz okuyun.
+
+894
+01:46:10,668 --> 01:46:14,347
+Özellikle bu slide'ı böyle satır satır okumanızı rica ediyorum.
+
+895
+01:46:14,948 --> 01:46:17,668
+Çünkü adım adım o kadar güzel anlatmış ki.
+
+896
+01:46:17,868 --> 01:46:21,688
+Belki hani burada örnek göremiyorsunuz ama bakayım aşağıda örnek var mıydı?
+
+897
+01:46:21,688 --> 01:46:28,028
+Yok sayısal örnek yok ama teorik anlatımda gerçekten çok bence iyi anlatılmış.
+
+898
+01:46:28,028 --> 01:46:41,608
+Burada şeyi bir boyutlu da tabii anlatırken varyansı sigma ile gösterdik ama burada d-dimension dediği zaman bir covariance matrisi işin içine giriyor.
+
+899
+01:46:42,048 --> 01:46:46,908
+Ya da bir ortalama değer dediğimiz zaman ortalama değer vektörü işin içine giriyor.
+
+900
+01:46:46,908 --> 01:46:48,628
+Lütfen bunlara dikkat edin.
+
+901
+01:46:48,628 --> 01:47:02,468
+Mesela şurada mü-i dediği şey, her bir öz niteliğin ortalamasından oluşan d boyutlu bir vektör oluyor.
+
+902
+01:47:02,968 --> 01:47:05,408
+Mean vektör diye isimlendiriliyor bu.
+
+903
+01:47:05,408 --> 01:47:21,588
+Yine çok boyutta çalışırken d boyutlu bir uzayda çalışırken d çarpı d'lik bir covariance matrisi vermiş sigma-i olarak görüyorsunuz.
+
+904
+01:47:21,588 --> 01:47:28,608
+Evet ana diagonal her bir öz niteliğin kendi kendisiyle olan değişimini gösteriyor yani varyans.
+
+905
+01:47:28,608 --> 01:47:35,748
+Ama burada bir covariance matrisi büyük sigma-i dediğimiz covariance matrisi işin içine giriyor.
+
+906
+01:47:37,648 --> 01:47:46,288
+Ve yine dikkat Gaussian Distribution'da çok boyutlu Gaussian Distribution'dan faydalanıyoruz.
+
+907
+01:47:46,288 --> 01:47:52,368
+Ve çok boyutlu Gaussian Distribution'un formülü lütfen dikkat bakın bu şekilde.
+
+908
+01:47:53,068 --> 01:48:01,488
+Yani tabii ki bir boyutluya çok yani baktığınızda aynı formül ama bunu d boyut için genişletmiş.
+
+909
+01:48:02,148 --> 01:48:07,508
+Biz daha önce bir bölüm kare kük içerisinde iki pi sigma kare kullanıyorduk.
+
+910
+01:48:07,508 --> 01:48:09,008
+Lütfen dikkat bakın burada.
+
+911
+01:48:11,328 --> 01:48:14,307
+2 pi üzeri d bölü 2 olmuş.
+
+912
+01:48:14,708 --> 01:48:16,968
+Sigma-i üzeri 1 bölü 2 olmuş.
+
+913
+01:48:16,968 --> 01:48:39,688
+E üzeri x j eksi mü i'nin transpozu çarpı sigma-i'nin tersi x j mü i şeklinde bu ifade çok boyutlu Gauss dağılımına genişletilmiş.
+
+914
+01:48:39,688 --> 01:48:41,688
+Tamam.
+
+915
+01:48:42,408 --> 01:48:48,347
+Bu formül multi-dimension için biraz farklılaşıyor.
+
+916
+01:48:48,748 --> 01:48:49,328
+Ona dikkat.
+
+917
+01:48:49,568 --> 01:48:55,448
+Ama tabii bir boyutlu üzerinden baktığımızda anlaşılırlığı yani anlatımı da tabii daha kolay.
+
+918
+01:48:56,807 --> 01:49:05,068
+Gerçekten hani bir boyutluyu anlarsanız eğer bunu d boyuta genişletebilirsiniz diye düşünüyorum.
+
+919
+01:49:05,068 --> 01:49:08,228
+Peki.
+
+920
+01:49:10,708 --> 01:49:14,128
+Başka sorunuz yok gördüğüm kadarıyla.
+
+921
+01:49:14,128 --> 01:49:17,108
+IM yönteminden de bahsettik.
+
+922
+01:49:17,268 --> 01:49:20,768
+Şimdi size biraz uygulama alanlarından bahsetmek istiyorum.
+
+923
+01:49:21,347 --> 01:49:26,408
+Ben ilk clustering yöntemlerini image processing'de kullanmıştım.
+
+924
+01:49:26,548 --> 01:49:28,307
+Onunla ilgili örneği verebilirim.
+
+925
+01:49:28,307 --> 01:49:44,868
+Görüntü işlemede elimdeki görüntüde varsayalım ki 16 bit pardon RGB renk uzayında verilmiş 24 bit 3 palet var.
+
+926
+01:49:45,028 --> 01:49:46,048
+Her biri 8 bit.
+
+927
+01:49:46,108 --> 01:49:47,768
+3 kere 8 24 bit.
+
+928
+01:49:47,868 --> 01:49:52,548
+Yani 16 milyon renkten oluşan bir görüntü matrisi var elimde.
+
+929
+01:49:52,548 --> 01:49:59,548
+Ben görüntü üzerinde o resimde...
+
+930
+01:50:00,000 --> 01:50:08,239
+görüntüde kullanılan renkleri kümeleyerek daha az sayıda renk ile bunları ifade etmeye çalışmıştım.
+
+931
+01:50:08,619 --> 01:50:20,279
+Mesela 16 milyon rengi 256'ye düşürme işini bakın verilen görüntü madresinin içerisinde kullanılan renklere bağlı olarak gerçekleştirdim.
+
+932
+01:50:20,279 --> 01:50:35,159
+Tabii bunu baktığınız zaman bir takım görüntü işleme editörleri çok genelleştirilmiş bir takım çözümlerle gerçekleştirebiliyor.
+
+933
+01:50:35,380 --> 01:50:48,420
+Ama verilen görüntüye özgü bir transformation yapabilmek için yani 16 milyon renkten 256'ye veya 128'e düşürebilmek için color clustering yapmıştım.
+
+934
+01:50:48,420 --> 01:51:01,859
+O görüntü içerisinde kullanılan renkleri işte 128'e ya da 16'ya kadar düşürüp ne kadar hatayla bunu gerçekleştirebildiğimi ölçmek istemiştim.
+
+935
+01:51:02,579 --> 01:51:05,560
+Kullandığım yöntemler ilk olarak K-Means kullandım.
+
+936
+01:51:05,939 --> 01:51:08,199
+Arkasından Fuzzy C-Means kullandım.
+
+937
+01:51:08,560 --> 01:51:14,399
+Arkasından da yapay sinir ağlarında kullanılan Self-Organizing Feature Map yöntemini kullandım.
+
+938
+01:51:14,399 --> 01:51:18,140
+Tabii bu yöntemleri biz o zaman hiç hazır tool kullanmıyorduk.
+
+939
+01:51:18,420 --> 01:51:20,800
+Çünkü zaten tool da çok fazla yoktu.
+
+940
+01:51:21,180 --> 01:51:30,840
+Bu algoritmaların hepsini yani Fuzzy C-Means özellikle yapay sinir ağlarına kadar hepsini kendimiz yazarak gerçekleştirdik.
+
+941
+01:51:31,159 --> 01:51:38,659
+Böyle bir yol izlediğinizde aslında çok daha iyi anlayabiliyorsunuz her bir yöntemin nasıl çalıştığını.
+
+942
+01:51:38,659 --> 01:51:44,619
+Ben orada EM yöntemini, EM Class Ring yöntemini hiç denememiştim.
+
+943
+01:51:45,340 --> 01:51:49,159
+Ama bu da bir alternatif olarak kullanılabilir.
+
+944
+01:51:49,539 --> 01:51:54,359
+Yine renk uzayında kullanılan renkleri kümelemek için.
+
+945
+01:51:54,619 --> 01:51:56,119
+Ben üç boyutta çalıştım.
+
+946
+01:51:56,119 --> 01:51:59,600
+Yani RGB renk uzayındayım çünkü.
+
+947
+01:51:59,840 --> 01:52:05,140
+Elimde three dimensional bir space var.
+
+948
+01:52:05,579 --> 01:52:09,039
+Bu space üzerinde kümeleri oluşturmaya çalışıyorum.
+
+949
+01:52:09,039 --> 01:52:14,539
+Dolayısıyla yapıyı hep üç boyut üzerinden kurgulayarak çalıştırmıştım.
+
+950
+01:52:15,699 --> 01:52:18,500
+Uygulama alanları çok çeşitlendirilebilir.
+
+951
+01:52:19,199 --> 01:52:27,939
+Mesela işte az önce verdiğimiz customer segmentation örneği de yine clustering kullanılarak gerçekleştiriliyor.
+
+952
+01:52:27,939 --> 01:52:39,500
+Evet yani burada dersin başında konuştuğumuz işte K sayısının nasıl seçileceği vesaireyle ilgili de çalışmalar yapılabilir.
+
+953
+01:52:39,619 --> 01:52:48,279
+Bu bölümle ilgili size özellikle işte kaç kümeye ayrılacağını belirleme konusuyla ilgili ekstra bir slide paylaşabilirim.
+
+954
+01:52:49,699 --> 01:52:53,399
+Onun dışında bu hafta benim anlatacaklarım bu kadar galiba.
+
+955
+01:52:53,520 --> 01:52:54,720
+Biraz hızlı gittik galiba.
+
+956
+01:52:54,720 --> 01:52:58,939
+Ama siz de konuyu bildiğiniz için belki daha hızlı ilerledik.
+
+957
+01:53:00,859 --> 01:53:02,039
+Tekrar soruyorum.
+
+958
+01:53:02,520 --> 01:53:05,760
+Dersi bitirmeden önce bu hafta bu kadar diyeceğim.
+
+959
+01:53:06,180 --> 01:53:07,000
+Sorunuz var mı?
+
+960
+01:53:08,380 --> 01:53:10,880
+Hocam bu proje hazırlamıştık.
+
+961
+01:53:11,539 --> 01:53:13,539
+Bunları ne zaman yetişelendireceksiniz?
+
+962
+01:53:14,119 --> 01:53:14,840
+Yani ne zaman başlayın?
+
+963
+01:53:15,380 --> 01:53:19,539
+O proje konularıyla ilgili çokça karşılaştığım bir sorun.
+
+964
+01:53:19,539 --> 01:53:26,600
+Arkadaşlar IEEE'nin sayfasında bulduğunuz her şeyin IEEE Journal olduğunu kabul ediyorsunuz.
+
+965
+01:53:26,680 --> 01:53:31,239
+Ama IEEE konferansları da yayınlıyor.
+
+966
+01:53:31,760 --> 01:53:41,500
+Dolayısıyla bana gönderilen yayın listesinde şu ana kadar yani %90 arkadaşların hep conference paper seçtiğini gördüm.
+
+967
+01:53:41,500 --> 01:53:47,039
+Lütfen tekrar söylüyorum IEEE Journal paper seçmeniz gerekiyor.
+
+968
+01:53:47,159 --> 01:53:52,800
+Üzerinde eğer conference yazıyorsa bu bir konferansta sunulmuş kısa bir bildiridir.
+
+969
+01:53:52,800 --> 01:53:53,920
+Dolayısıyla
+
+970
+01:53:54,399 --> 01:54:08,839
+Ben tekrar tekrar bunu herkese mail atmayayım. Siz kendiniz kontrol edin. Yayınınız gerçekten bir dergi makalesi midir? Mutlaka dergi makalesi olsun istiyorum.
+
+971
+01:54:08,839 --> 01:54:32,979
+İkincisi bazılarınız bana link atmışsınız ama linkleri ben evden her zaman kolay açamıyorum. Sizden ricam bana şeyleri pdf olarak paylaşırsanız sevinirim. Makaleleri. Çok rahat erişemeyeceğim makaleler için bu problem oluyor. O nedenle bunu söyleyeyim.
+
+972
+01:54:32,979 --> 01:54:54,319
+Son iki hafta proje sunumları olacağı için bunu hızlandırmamız lazım. Ben bugün yarın iki gün içerisinde size sonuçları döneceğim. Ama ben seçim yapmak için size 30 Kasım'ı son tarih olarak vermiştim. Bugün akşama kadar bekleyeceğim. Yarın öğleden sonra değerlendirmeye başlayacağım.
+
+973
+01:54:54,319 --> 01:55:11,719
+Hocam yani makale seçerken şey çok zor oldu. Zaten search ederken bilimsel makale diye seçtim ben. Ya da şeyleri seçtim. İşte IEEE'nin işte image processing ile ilgili şeyleri var. Dergileri var. O opsiyonu seçerek taradım.
+
+974
+01:55:11,719 --> 01:55:23,639
+Fakat bu site işindeksleri çok düşük. İşte Crossref ve Corpus, Scopus değerleri. Siz de belirli bir rakam vermediğiniz için mümkün olunca büyük rakamlı olanları seçmeye çalıştım.
+
+975
+01:55:24,119 --> 01:55:34,599
+İyi yapmışsınız. Yani şimdi ben rakam vererek sizi sınırlayamam. Ama siz hani ilgi alanınıza göre çok yeni bir konuyla ilgili çalışmaya başlamış olabilirsiniz.
+
+976
+01:55:34,599 --> 01:55:44,759
+Dolayısıyla çok fazla da site olmayabilir ama ne bileyim yani yine de şöyle bir 80'in 100'ün altına da düşmese iyi olur derim.
+
+977
+01:55:45,279 --> 01:55:50,319
+Hocam mesela pardon gördüm. [öğrenci]'in ondan sonra söyleyeminden.
+
+978
+01:55:50,319 --> 01:55:57,239
+Hocam ben 100'ün üzerinde 5 tane falan buldum. Ama burada yani aslında benim için en büyük kriter şeydi.
+
+979
+01:55:57,299 --> 01:56:03,259
+Hani dargin makalesi olması ve citation indeksi yüksek olması. İki kriterimdi. Üçüncü kriterim. Yani en düşük kriterim şeydi.
+
+980
+01:56:03,719 --> 01:56:09,639
+Hani ilgilendiğim bir konu. İlgilendiğim konu olup da citation yüksek makaleler açısı göremelim.
+
+981
+01:56:10,519 --> 01:56:16,479
+Yani daha yeni konular onlar. Ya da iki tane üç tane falan. Siz de hani bunu önlem verdiğiniz için.
+
+982
+01:56:16,479 --> 01:56:35,739
+Evet. Yani yeni konularda dediğin doğru [öğrenci]. Kesinlikle şey yani hani daha az atıf verilmiş olsa da sorun değil ama mesela ekranınıza gelenler arasında seçim yaparken gene var olanların en iyilerini seçebilirsiniz gördükleriniz içinde.
+
+983
+01:56:37,699 --> 01:56:45,559
+Hocam mesela bende de şöyle bir şey oldu benim konumda da. Hani citation yüksek bir artikel var ama mesela biletliğiniz süre aralığında değil.
+
+984
+01:56:45,559 --> 01:56:55,539
+Evet. Hani sekiz yıl vermiştik. 2012'den önce. 2012'den sonra olanın hepsi mesela conference paper olarak verilmiş. Bütün şeyler.
+
+985
+01:56:55,920 --> 01:56:59,939
+Tamam o zaman işte. Hani o yüzden bulduklarımın mesela citation'ları çok yüksek olmuyor.
+
+986
+01:57:00,659 --> 01:57:02,059
+Mesela ne civarda oluyor?
+
+987
+01:57:02,059 --> 01:57:15,460
+Yani bir tane mesela otuz bulmuştum. Otuz civarı olan ama mesela beş de var. Üç de var mesela. Hani böyle şey çok dengesiz gidiyor. Genelde çok conference paper olarak gitmiş çünkü bütün örnekler.
+
+988
+01:57:15,460 --> 01:57:24,699
+Evet. Ama şu var yani tabii ki mesela geçen sene çıkmış bir yayının üçten beşten fazla atıf alması beklenemez.
+
+989
+01:57:25,359 --> 01:57:30,920
+Yani yayınlanma tarihi ne kadar günümüze yakınsa atıf sayısı o kadar az olacaktır.
+
+990
+01:57:31,079 --> 01:57:36,339
+Yani siz onunla bir şey bir matematiksel formül üretin.
+
+991
+01:57:36,339 --> 01:57:41,299
+Oradan en optimumu seçmeye çalışın olur mu?
+
+992
+01:57:41,299 --> 01:58:11,000
+Evet.
+
+993
+01:57:42,771 --> 01:57:46,152
+Yani benim bulduklarım genelde 2019-2020 aralığında.
+
+994
+01:57:46,152 --> 01:57:51,192
+Evet tabii ki o zaman atıf sayısı kesinlikle yani çok az olur.
+
+995
+01:57:51,572 --> 01:57:54,231
+Çünkü diğer taraflarda hepsi conference paper olarak geliyor.
+
+996
+01:57:54,591 --> 01:57:57,011
+Hani hiç böyle hani article olarak gelen çok az.
+
+997
+01:57:57,011 --> 01:58:02,551
+Evet mesela o zaman o ondan fazla olması yeterli olabilir senin için.
+
+998
+01:58:02,971 --> 01:58:07,591
+Ya da 8-10'dan fazla olması atıf sayısının yeterli olabilir.
+
+999
+01:58:07,591 --> 01:58:14,292
+2019 için söylüyorum 2019-2020 yılında çıkmış yayınlar için söylüyorum.
+
+1000
+01:58:15,572 --> 01:58:16,931
+Tamam tekrar bakalım.
+
+1001
+01:58:17,032 --> 01:58:20,251
+Ben size bir örnek atmıştım gördünüz mü onu bilmiyorum da mail olaraktan.
+
+1002
+01:58:22,011 --> 01:58:22,692
+Geçen hafta.
+
+1003
+01:58:23,452 --> 01:58:25,011
+Size geri dönüş yapmadım mı ben?
+
+1004
+01:58:25,851 --> 01:58:27,332
+Bana bir şey gelmedi.
+
+1005
+01:58:27,652 --> 01:58:30,051
+Okul mailinden attım belki ondan mı gelmedi.
+
+1006
+01:58:30,612 --> 01:58:32,492
+Ha açamamış olabilirim makaleyi.
+
+1007
+01:58:33,671 --> 01:58:35,532
+Yok pdf olarak ekledim zaten hepsini.
+
+1008
+01:58:35,532 --> 01:58:38,391
+Tekrar bakayım o zaman.
+
+1009
+01:58:38,992 --> 01:58:39,211
+Tamam.
+
+1010
+01:58:39,912 --> 01:58:45,931
+Ama ben bunu online Yıldız Edytr'nin altından okumayı tercih ediyorum.
+
+1011
+01:58:46,351 --> 01:58:49,771
+Çünkü aksi takdirde mailleri kaçırabilirim öyle bir endişem var.
+
+1012
+01:58:50,211 --> 01:58:52,072
+Yani oraya yüklerseniz daha iyi olur.
+
+1013
+01:58:52,551 --> 01:58:55,952
+Tamam ben size şey için zaten hani soru daha çok görüş için göndermiştim.
+
+1014
+01:58:56,131 --> 01:58:58,292
+Arkadaşlar şey yüklerim onları online'a.
+
+1015
+01:58:59,391 --> 01:59:00,112
+Teşekkürler.
+
+1016
+01:59:00,811 --> 01:59:02,332
+Evet [öğrenci] bir soru sormuş.
+
+1017
+01:59:02,332 --> 01:59:06,292
+Gaussian Mixture modeli ile EM arasında bir fark var mı diye.
+
+1018
+01:59:06,711 --> 01:59:09,751
+Aslında benzerlik var.
+
+1019
+01:59:09,931 --> 01:59:11,591
+Fark demeyeyim benzerlik var.
+
+1020
+01:59:11,792 --> 01:59:17,832
+EM metodu burada gördüğünüz gibi birden fazla Gaussian Distribution'ın karışım modeli.
+
+1021
+01:59:17,832 --> 01:59:32,271
+Yani aslında size verilmiş olan data seti işte kaç tane kümeye ayırmışsanız veriyi bu Gaussian modellerin bir toplamı gibi ifade ediyor.
+
+1022
+01:59:32,271 --> 01:59:39,811
+Hani çizdiğimiz iki boyutlu örnekte de onu göstermeye çalıştım.
+
+1023
+01:59:40,131 --> 01:59:42,032
+İki tane Gaussian Distribution var.
+
+1024
+01:59:42,131 --> 01:59:47,131
+Bu iki tane Gaussian Distribution'ın ile veriyi temsil ediyor.
+
+1025
+01:59:47,532 --> 01:59:49,872
+Ve tabii ki bunun mixture modeli olmuş oluyor.
+
+1026
+01:59:49,872 --> 01:59:55,551
+Yani tamam biz bütün Gaussian modellerini toplayarak bir model oluşturmuyoruz.
+
+1027
+01:59:55,792 --> 02:00:02,912
+Ama birden fazla Gaussian Distribution'ı kullanarak elimizdeki datayı modellemeye çalışıyoruz.
+
+1028
+02:00:04,372 --> 02:00:06,692
+Bunu bir fikir olarak orada kullanıyor.
+
+1029
+02:00:06,692 --> 02:00:16,771
+Ve dediğim gibi bu fikir hani bu olma olasılıkları şeyini fuzzy C-means'de de görüyoruz.
+
+1030
+02:00:16,952 --> 02:00:18,931
+Benzer bir yapıda kullanılmış.
+
+1031
+02:00:19,152 --> 02:00:24,952
+Ama buna hani likelihood, probability şeklinde hesaplamıyor.
+
+1032
+02:00:25,591 --> 02:00:28,131
+Farklı şekilde bir membership hesaplıyor.
+
+1033
+02:00:28,131 --> 02:00:36,551
+Evet, aslında bu konular işin işine girdikçe daha keyifli hale geliyor.
+
+1034
+02:00:37,011 --> 02:00:43,511
+Ve matematiksel formülleri yani o matematik dilini okuyabiliyor olmanız çok önemli.
+
+1035
+02:00:45,292 --> 02:00:52,231
+Ben yani bu dökümanda mesela verilen matematiksel notasyonu çok anlaşılır buldum.
+
+1036
+02:00:52,652 --> 02:00:54,452
+Herkes o kadar anlaşılır yazmıyor.
+
+1037
+02:00:54,452 --> 02:00:56,752
+O yüzden bu kaynağı tekrar söylüyorum.
+
+1038
+02:00:57,152 --> 02:01:00,992
+IM metodunu burada satır satır okumanızı rica ediyorum.
+
+1039
+02:01:01,431 --> 02:01:06,971
+Bence özellikle doktora yapan arkadaşlar için bu yapıları çok iyi anlamış olmanız,
+
+1040
+02:01:07,131 --> 02:01:12,912
+ileride kendi oluşturacağınız modelleri kurgulamanızda size çok yardımcı olacaktır.
+
+1041
+02:01:15,011 --> 02:01:17,271
+Tabii master yapanlara da geçerli bu sözü.
+
+1042
+02:01:18,332 --> 02:01:18,771
+Evet.
+
+1043
+02:01:20,091 --> 02:01:20,971
+Peki arkadaşlar.
+
+1044
+02:01:20,971 --> 02:01:24,792
+Bugün biraz erken bitti ama sorunuz varsa tekrar buyurun.
+
+1045
+02:01:24,851 --> 02:01:25,471
+Merhaba.
+
+1046
+02:01:26,152 --> 02:01:27,711
+Dersin başını kaçırdım.
+
+1047
+02:01:28,412 --> 02:01:30,372
+Eşimin doktora yeterli sözlüsü vardı.
+
+1048
+02:01:31,931 --> 02:01:33,032
+Geçmiş olsun.
+
+1049
+02:01:33,192 --> 02:01:33,612
+Geçti mi?
+
+1050
+02:01:34,292 --> 02:01:35,192
+Geçti hocam.
+
+1051
+02:01:35,431 --> 02:01:36,372
+Geçen yüz aydın.
+
+1052
+02:01:36,372 --> 02:01:50,971
+Geçti hocam.
+
+1053
+02:01:36,724 --> 02:01:40,644
+Sözlü'den kalmıştı. Bu yıl geçti. Evet büyük bir rahatlama yaşadık.
+
+1054
+02:01:40,963 --> 02:01:41,663
+Çok iyi.
+
+1055
+02:01:42,384 --> 02:01:44,484
+Çok zor bir süreç. Bizim dönemde.
+
+1056
+02:01:45,123 --> 02:01:51,384
+O yüzden hocam ben birkaç bir şey sormak istiyorum. Belki dersin başına konuştunuz. Ben kaçırmış bulundum.
+
+1057
+02:01:51,923 --> 02:01:57,503
+Hocam vizeyle ilgili normalde programın yani dönem başındaki programda hani iki vize yapacaksınız.
+
+1058
+02:01:57,503 --> 02:02:05,764
+Hala öyle bir de vizede zaman sıkıntısı yaşadık. Bir de beklediğimden az bir not aldım. Şaşkınlık içerisindeyim.
+
+1059
+02:02:05,764 --> 02:02:15,324
+Bunu dersin başında evet uzun uzun konuştuk gerçekten. Aslında kayıtları izlersen orada da görebilirsin.
+
+1060
+02:02:15,864 --> 02:02:25,503
+Evet sınavla ilgili ilk bu modülü sizinle denedik. Sınav sırasında süre arttıramadım. Ben öyle bir şey planlıyordum.
+
+1061
+02:02:25,503 --> 02:02:31,984
+Ama sonraki gün yaptığım sınavlarda süreyi arttırmayı başardım sınav başladıktan sonra.
+
+1062
+02:02:31,984 --> 02:02:41,003
+O yüzden biraz da tecrübesizliğimize denk geldi. İkinci bir sınav yapacağım. İkinci sınav yine test olur diye düşünüyorum.
+
+1063
+02:02:42,764 --> 02:02:49,984
+Süreyi daha makul vermeye çalışacağım. Yani bir de bu sınavdaki sonucu çok şey olarak algılamayın.
+
+1064
+02:02:49,984 --> 02:02:57,123
+Yani ağırlığını sınavını düşürebilirim. Ödev tekrar ödev vereceğimi de söyledim size zaten.
+
+1065
+02:02:57,844 --> 02:02:59,984
+İnanın ödevlerde çok şey öğreneceksiniz.
+
+1066
+02:03:01,104 --> 02:03:08,304
+Yani Python'da pat pat böyle bir şeyleri hemen mesela şuradaki EM modelini bile oturup kodlayabilirsiniz.
+
+1067
+02:03:08,304 --> 02:03:14,304
+O kadar pratik ki bence şunun bir boyutlusunu bir yazsanız olayı A'sından Z'sini anlarsınız.
+
+1068
+02:03:15,003 --> 02:03:21,304
+Yani ben o yüzden kodlamanın bir şeyi anlayıp anlamadığınızı görmek açısından da iyi olduğunu düşünüyorum.
+
+1069
+02:03:22,444 --> 02:03:27,423
+Onu da söyleyeyim. Bilmiyorum EM'i yazsanız mesela çok da güzel olur.
+
+1070
+02:03:27,824 --> 02:03:31,264
+Şimdi diyeceksiniz ki hocam hepsi var Python'da orada burada yazılmış.
+
+1071
+02:03:31,264 --> 02:03:36,444
+Evet doğru ama var olanı kullanmak sadece sizi kullanıcı yapar.
+
+1072
+02:03:36,543 --> 02:03:41,944
+Eğer siz ileride bunları geliştiren kişi olmak istiyorsanız bu yapıları önce çok iyi anlamanız gerekiyor.
+
+1073
+02:03:44,304 --> 02:03:48,884
+O yüzden yüksek lisansın doktoranın amacı da bu.
+
+1074
+02:03:49,003 --> 02:03:58,224
+Hele bilgisayar mühendisliği bölümünde bunu dediğim gibi kodlayabiliyor olmanız bence öğrenmenizi daha da pekiştirecektir.
+
+1075
+02:03:58,224 --> 02:04:02,524
+Biri bir şey soracak galiba buyurun.
+
+1076
+02:04:05,284 --> 02:04:07,663
+Arkadan bir ses geldi yokmuş.
+
+1077
+02:04:09,824 --> 02:04:12,524
+Peki o zaman bu haftalık bu kadar diyelim.
+
+1078
+02:04:13,184 --> 02:04:17,484
+Bana el sallayarak dersten ayrılabilirsiniz.
+
+1079
+02:04:17,644 --> 02:04:18,244
+Hoşçakalın.
+
+1080
+02:04:19,824 --> 02:04:21,524
+Evet güven teşekkürler.
+
+1081
+02:04:21,604 --> 02:04:26,043
+[öğrenci], [öğrenci], [öğrenci] hoşçakal.
+
+1082
+02:04:26,043 --> 02:04:27,244
+Hoşçakal [öğrenci].
+
+1083
+02:04:28,284 --> 02:04:30,524
+Evet [öğrenci], [öğrenci].
+
+1084
+02:04:32,064 --> 02:04:33,423
+[öğrenci] hoşçakal.
+
+1085
+02:04:33,543 --> 02:04:35,184
+[öğrenci], [öğrenci].
+
+1086
+02:04:37,083 --> 02:04:38,764
+[öğrenci], [öğrenci].
+
+1087
+02:04:39,264 --> 02:04:39,864
+Hoşçakal.
+
+1088
+02:04:40,543 --> 02:04:42,003
+Evet [öğrenci] [öğrenci], [öğrenci].
+
+1089
+02:04:42,444 --> 02:04:43,083
+Hoşçakalın.
+
+1090
+02:04:44,224 --> 02:04:44,784
+Talip.
+
+1091
+02:04:46,644 --> 02:04:47,144
+[öğrenci].
+
+1092
+02:04:47,144 --> 02:04:50,304
+[öğrenci], hoşçakalın.
+
+1093
+02:04:50,484 --> 02:04:51,524
+[öğrenci], hoşçakal.
+
+1094
+02:04:55,220 --> 02:04:56,840
+[öğrenci], hoşçakal.
+
+1095
+02:05:03,796 --> 02:05:05,376
+Evet, Havvanur hoşçakal.
+
+1096
+02:05:08,536 --> 02:05:10,036
+[öğrenci] hoşçakal.
+
+1097
+02:05:11,396 --> 02:05:14,356
+[öğrenci], görüşürüz arkadaşlar haftaya.
+
+1098
+02:05:15,936 --> 02:05:21,695
+Evet, dersin sonunda [öğrenci], evet hoşçakalın.
+
+1099
+02:05:22,676 --> 02:05:25,436
+Hocam ben yine el kaldırma, seni kaybettim.
+
+1100
+02:05:25,856 --> 02:05:27,336
+Yine kaybettim, bulamıyorsun.
+
+1101
+02:05:28,296 --> 02:05:29,956
+Peki [öğrenci], hoşçakal.
+
+1102
+02:05:30,256 --> 02:05:31,436
+Görüşürüz hocam, sağ olun.
+
+1103
+02:05:31,436 --> 02:05:32,356
+Görüşürüz.
+
+1104
+02:05:42,804 --> 02:05:45,444
+Evet, hoşçakalın arkadaşlar. Ders kapatıyorum.

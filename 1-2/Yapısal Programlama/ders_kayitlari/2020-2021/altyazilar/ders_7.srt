@@ -1,0 +1,2907 @@
+1
+00:00:09,523 --> 00:00:17,683
+Evet, günaydın arkadaşlar. Ancak derste katıldım. Bir iki dakika bekleyelim. Katılımcılarımız artsın. Derse başlarız.
+
+2
+00:00:52,820 --> 00:00:55,659
+Bağlı kalmış bir atılır. Yeride şey de açalım.
+
+3
+00:01:02,548 --> 00:01:04,548
+Uygulamasını da açalım.
+
+4
+00:01:04,548 --> 00:01:07,548
+Yeni de kadar gitmişiz. Yüzleyelim ki.
+
+5
+00:01:07,548 --> 00:01:11,548
+Geriye bir şeyler güzelmiş.
+
+6
+00:01:11,548 --> 00:01:16,548
+Doğru ya. Pointilardan falan bahsetmiştik. Bahsetmeye başlamıştık.
+
+7
+00:01:16,548 --> 00:01:19,500
+Uygulama yapacaktık. Tamam. Pekala.
+
+8
+00:01:23,475 --> 00:01:36,475
+Pekala, bir iki example. Bunu yapalım. Ama bunu şimdi tabii pointer kullanarak nasıl yapalım? Zaten dizi olarak kullanacağız ama...
+
+9
+00:01:39,763 --> 00:01:47,304
+Peki, şimdi referans vermeyi şeydenimle bakalım şimdi. Daha ileride anlatıyorduk ama dur bakalım.
+
+10
+00:01:49,364 --> 00:01:54,243
+En az önce başlamadık arkadaşlar. Ben bugün için kafamdan bir plan oluşturmak için biraz ilerliyorum.
+
+11
+00:01:55,283 --> 00:01:59,984
+Evet, bu pointı saydım yapmıyoruz zaten. Bunu daha sonra yapacağız zaten.
+
+12
+00:02:06,420 --> 00:02:13,420
+Evet, daha fonksiyon şeyini geçmeyelim. Fonksiyonları geçmeden yapmamız lazım bunu. Ama fonksiyonları geçmeden de,
+
+13
+00:02:13,420 --> 00:02:21,420
+çok yani sadece dizi örneği gibi olacak. Fonksiyonları geçmeden.
+
+14
+00:02:31,508 --> 00:02:36,108
+Evet, yani bu örneği daha sonra yapacağız.
+
+15
+00:02:37,508 --> 00:02:39,448
+Ne foks ne olur? Tamam, peki.
+
+16
+00:02:46,292 --> 00:02:54,292
+Peki, ahmadım öyle şu an kadar gördüğümüz dizi işlemleri. Belki diziyi poyundan üzerinden erişme kısmını yaparız belki.
+
+17
+00:02:54,292 --> 00:02:56,292
+Bu kısmını yapmam.
+
+18
+00:03:02,740 --> 00:03:09,740
+Yaptığım örnekleri kod olarak saklasam iyi olacakmış gibi gözüküyor.
+
+19
+00:03:09,740 --> 00:03:12,740
+Peki.
+
+20
+00:03:14,740 --> 00:03:16,740
+Evet, aslında dizi.
+
+21
+00:03:16,740 --> 00:03:20,740
+Evet, konumuz dizi hatırlatmam. O zaman öyle gidelim. Tamam.
+
+22
+00:03:20,740 --> 00:03:21,355
+Peki.
+
+23
+00:03:24,852 --> 00:03:31,572
+Evet, 43 kişi var. Tamam, güzel. İyi. O zaman dersle başlayabiliriz demektir bu arkadaşlar.
+
+24
+00:03:32,211 --> 00:03:39,171
+Merhaba, tekrar hoş geldiniz. Şimdi bu hafta kaldığımız yerden dizilerden devam edeceğiz.
+
+25
+00:03:39,692 --> 00:03:45,951
+Dizilerde örnek olarak Bubble Sort ve Selection Sort işlemlerini yapacağız.
+
+26
+00:03:45,951 --> 00:04:00,211
+Şimdi Bubble Sort bu arada konu bütünlüğünü koruyarak gitmek istiyor. Normalde arkadaşlar bir sınırlama işlemi için ayrı bir fonksiyon yazarız. Çünkü yazdığımız kodun modüler olmasını istiyoruz.
+
+27
+00:04:00,211 --> 00:04:20,971
+Yaptığımız bir işi başka yerlerde tekrar tekrar yapmak istemeyiz. Şimdi elimizde hazır bir sarama fonksiyonu olsa biz bunu bir kitaplığımıza kaydedip daha sonra enkürt ederekten birçok yerden kullanırız. Bu yüzden aslında bu gibi işlemlerin fonksiyonlarla yapılması daha yararlı olacak.
+
+28
+00:04:27,444 --> 00:04:48,684
+Belki şey yapabiliriz, aynı kadar şurada geçirmesek de bir binary search yapabiliriz belki. Ama tabii bunların hepsinin aslında kendi içerisinde fonksiyonlarla yapılması daha yarar olacak aslında. Fakat biz bu ilk örneğimizi fonksiyon olmadan, örneğin bubble sort yaparaktan ilerleyelim.
+
+29
+00:04:48,684 --> 00:04:55,424
+Çünkü selection sort da, şimdi bir şeyden hatırlarsanız, BBG 1-2 derslerinde bu diziler kaldı.
+
+30
+00:04:55,444 --> 00:05:06,864
+Bunu anlattığımızda ilk bahsettiğimiz ileri düzey algoritmalardan biridir sizlere. Selection Sort'a nasıl yapılıyordu? Dizinin içerisinde en küçük birinci elemanı bul.
+
+31
+00:05:07,264 --> 00:05:30,104
+Onu neredeyse dizinin başındaki elemanla yerlerini değiştir. Sonra ikinci en küçük elemanı bul. Dizinin neresindeyse onu al dizinin ikinci elemanı değiştir. Böyle gide gide en son dizinin en elemanı varsa en eksi birinci en küçük elemanı bul ve ilgili pozisyondaki pozisyon ile değiştir şeklinde bir sıralamamız vardı.
+
+32
+00:05:30,104 --> 00:05:34,303
+Ama burada en küçüğü bulmak başlı başına bir sorumluluk, başlı başına bir işlem.
+
+33
+00:05:35,264 --> 00:05:37,264
+Bu ne?
+
+34
+00:05:40,084 --> 00:06:00,924
+Bu nedenle en basit bubble sortu şöyle yapıyorduk. Hep bir elemanı sonraki elemanla karşılaştır. Eğer daha küçüksin o zaman yerlerini değiştirsin. Ondan sonra bunu dizinin sonuna kadar ilerle şeklinde ediyorduk. Bunu yaparken de gitgide küçük elemanlar daha yukarıya, büyük elemanlar da daha aşağı doğru gidiyordu.
+
+35
+00:06:00,924 --> 00:06:07,843
+Küçük elemanlar gitgide suyun üzerine yükseliyordu, kabarcık gibi düşünün. Daha ağır elemanlarda suyun dibine doğru batıyordu.
+
+36
+00:06:08,084 --> 00:06:36,084
+O yüzden de Bubble Sort denmişti. Bubble Sort yapıp geçeceğiz. Diğerlerini daha mantıklı yapmak için fonksiyonları falan görürüz. Fonksiyonları parametre aktarma. Eğer bu parametre bir diziyse bunun da yapılan değişikliklerin kadıcı olması için bir başka fonksiyonları nasıl aktarmamız gerekiyor ki pointer üzerinden aktarmamız gerekiyor. Bir şey de daha sonraki haftalarda göreceğiz. Şu an kadar gördüğünüz dizi kavramı üstünde Bubble Sort.
+
+37
+00:06:36,084 --> 00:06:38,223
+Örnek olarak yapalım sizlerle.
+
+38
+00:06:41,716 --> 00:07:03,995
+Bu arada tekrar hatırlatalım. Sorunuz olursa bir şey söylemek isterseniz ya chatten ya ses olarak lütfen sorun. Bu arada Antibirüs programıma bu kodların bulununduğunu dizini gezade et diyerekten güncelledim. Tavsiye geçen hafta ana arkadaşımla teşekkür ederim. Daha az problemle devam edeceğiz inşallah bu haftaki derste.
+
+39
+00:07:03,995 --> 00:07:07,875
+Peki hala. Açalım şimdi kulaşı.
+
+40
+00:07:12,564 --> 00:07:25,804
+Bunun içerisinde şimdi işlemimizi yapalım. Bu örnek bubble sort işlemimizi yapalım. Bu arada dizinin elemanlarını kullanıcıya da soralım ondan sonra.
+
+41
+00:07:25,804 --> 00:07:30,964
+Yani biz elemanların durumuna göre sormayı yapsın ve bize söylesin.
+
+42
+00:07:31,732 --> 00:07:55,012
+O zaman ilk başta kaç eleman olsun? On eleman olsun diyelim. Ama daha sonra bu sayı kolaylıkla değiştirebilmek için bir sabit tanımlayalım. Değişken yerine sabit tanımlayalım. Hatırlarsanız eğer pre-processer komutlarıyla sabit falan sabit tanımlarsak pre-processer komutlarının yaptığı şey ilgili tanımı kodun her yerine gömmek idi.
+
+43
+00:07:59,283 --> 00:08:12,403
+Şimdi ben bir global değişken tanımarsam int sayı eşittir 10 gibisinden bu bir integer kadar alan saklayacak.
+
+44
+00:08:12,403 --> 00:08:19,624
+Ama onun yerine artık eleman sayısı gördüğü her yere olmayacak. Herhangi bir bedek kullanımı bu amaçla söz konusu olmayacak.
+
+45
+00:08:20,444 --> 00:08:22,744
+O zaman şöyle diyorum int dizli.
+
+46
+00:08:24,980 --> 00:08:36,980
+Eman sayısı. Daha bir dizim olsun. Ondan sonra, Bollos World için hatırlarsanız, iki elini gerekiyordu.
+
+47
+00:08:36,980 --> 00:08:40,980
+Önce diyelim ki...
+
+48
+00:08:44,980 --> 00:08:48,980
+Sıra ne yapacak?
+
+49
+00:08:48,980 --> 00:08:50,980
+Girin.
+
+50
+00:08:51,508 --> 00:08:53,508
+Elemanlar girilecek.
+
+51
+00:08:56,508 --> 00:08:59,372
+Ondan sonra, o dönüşü içerisinde...
+
+52
+00:09:03,860 --> 00:09:06,860
+Bak şimdi tabi kıvırıp da hatif blok açmam gerekecek.
+
+53
+00:09:06,860 --> 00:09:07,860
+Şunu da gelin.
+
+54
+00:09:07,860 --> 00:09:09,860
+Bir iki.
+
+55
+00:09:09,860 --> 00:09:13,860
+Yüzde denci.
+
+56
+00:09:13,860 --> 00:09:16,860
+Girelim diyelim.
+
+57
+00:09:16,860 --> 00:09:23,860
+Tabi biz sıfırdan saymaya başlıyoruz ama normal kullanıcılar 1'den saymaya başlar.
+
+58
+00:09:28,083 --> 00:09:42,083
+Bu arada kaç tane eleman girileceğini de söyleyelim. Ne kadar çabaya mal olacağını bu işin bir sim kullanışı istemiyorsa da kapatsın. İtsin mesela.
+
+59
+00:09:48,083 --> 00:09:53,083
+Eleman sayısı da şuraya alamayalım. Böyle yapmayı tavsiye ettim.
+
+60
+00:09:56,148 --> 00:09:59,648
+Ve bu arada ondan sonra da kenefli elemanı da var.
+
+61
+00:10:11,668 --> 00:10:17,107
+Evet. Ondan sonra bir sıradan bulmamış diziyi bir ekrana yansıtalım.
+
+62
+00:10:26,067 --> 00:10:29,547
+G30 çıkarak daha düzgün çalışmayacak ama neyse.
+
+63
+00:10:33,779 --> 00:10:40,779
+Bir tane de boşluk koysun.
+
+64
+00:10:40,779 --> 00:10:45,779
+A, D, İ, T ekrama yansıtasın.
+
+65
+00:10:49,556 --> 00:10:51,556
+Şuradan altı kattırıyorum o zaman.
+
+66
+00:10:57,011 --> 00:11:24,111
+Şimdi normalde şu yaptığım ilk iş, şu iş ayrı bir fonksiyon olarak kodlanız elemanları girmek ondan sonra. Şu fonksiyon ayrı bir şekilde kodlanız elemanları yazmak. Çünkü biz sıralamadan önce yazacağız, sıralamadan sonra tekrar yazacağız. Aynı işi iki kere kopyada yapıştır yapmak zorunda kalmış olacağız. Bir yanlış yaptıysak da eğer bunu iki yerde düzeltmek zorunda kalmış olacağız.
+
+67
+00:11:25,011 --> 00:11:33,591
+Bütün bu nedenle aslında fonksiyonlarda çalışmak çok daha düzgün bir iş yapmış oluruz. Şu akıda artıklarımızı deneyelim. Bakalım.
+
+68
+00:11:39,764 --> 00:11:43,803
+Evet.
+
+69
+00:11:44,964 --> 00:11:47,224
+I'lar falan gerçekten de kötü ya.
+
+70
+00:11:48,024 --> 00:11:48,323
+Neyse.
+
+71
+00:11:49,043 --> 00:11:51,063
+Bir de boşluk bıraksaydı iyi olurmuş.
+
+72
+00:11:51,543 --> 00:11:52,803
+Peki ne yapalım şimdi?
+
+73
+00:11:53,464 --> 00:11:54,584
+5, 8,
+
+74
+00:11:55,803 --> 00:11:56,903
+3, 5,
+
+75
+00:11:57,124 --> 00:11:57,364
+1,
+
+76
+00:11:58,364 --> 00:12:00,124
+6, 7, 8, 9, 10.
+
+77
+00:12:00,124 --> 00:12:01,323
+Bu arada ne oldu?
+
+78
+00:12:02,124 --> 00:12:02,964
+Enter'larım mı?
+
+79
+00:12:02,964 --> 00:12:03,683
+Bir şey oldu.
+
+80
+00:12:04,500 --> 00:12:14,980
+A, şey yapmam gerekiyordu herhalde. A, V, I yapmamız gerekiyordu. Ama yok, bu bir dizi aslında ve onun yüzden aslında herhangi bir kodda olmaması gerekiyordu ama bakalım bir saniye lütfen.
+
+81
+00:12:43,635 --> 00:12:47,635
+Bir saniye arkadaşlar, azıcık bir ekran paylaşımını geçireceğim.
+
+82
+00:12:51,635 --> 00:12:55,635
+Şuan Dance Mode açayım.
+
+83
+00:13:12,083 --> 00:13:16,083
+Hocam ampersant gerekiyor sanırım. Ben ampersant kullandım.
+
+84
+00:13:16,083 --> 00:13:17,083
+Onu yapacağız.
+
+85
+00:13:17,083 --> 00:13:18,539
+Çok güzel. Çok güzel.
+
+86
+00:13:24,755 --> 00:13:29,955
+Şeye geçelim o zaman. Şunu da minimaliz edince paylaşımın bozulmasını pek sevmiyorum.
+
+87
+00:13:29,955 --> 00:13:34,175
+Ama neyse. Hiç bir şey yok. Sıkayım paylaşabilir miyim? Paylaştık.
+
+88
+00:13:34,175 --> 00:13:38,135
+Tamam hadi bakalım.
+
+89
+00:13:51,731 --> 00:13:57,531
+Evet, şimdi fena gözükmüyor yaptığımız şey. O zaman devam edebiliriz.
+
+90
+00:14:02,836 --> 00:14:07,336
+Şu kadar eleman gelecek desek yeter. Ondan sonra şimdi.
+
+91
+00:14:07,336 --> 00:14:11,836
+Elemanı girilen tır o zaman şuraya da şunu yapalım.
+
+92
+00:14:14,836 --> 00:14:15,836
+Böyle yapalım.
+
+93
+00:14:17,336 --> 00:14:23,336
+Sonra şunu da girilen isteyelim. Ondan sonra devam edelim.
+
+94
+00:14:23,892 --> 00:14:32,652
+Şimdi, Bubble Sword hatırlarsanız, şişe 2-4 döngüsü içerisinde hep bir elemanı bu sonraki elemanla karşılaştırıyorduk.
+
+95
+00:14:33,572 --> 00:14:38,192
+Şimdi her elemanı bir sonraki elemanla karşılaştıracağız.
+
+96
+00:14:38,192 --> 00:14:43,592
+O yüzden şimdi off by one hatası almış olmayalım.
+
+97
+00:14:50,131 --> 00:15:03,131
+Önce değiştirme işlemini yazayım. Ondan sonra acaba off by one hatasına giriyor muyuz, girmiyor muyuz? Onu ardından değerlendiririz.
+
+98
+00:15:03,131 --> 00:15:16,131
+Diyelim ki işte, ince elemanı küçükse, pardon, büyükse o zaman yer değiştirir. Şu anki baktığım eleman büyük kalmışsa...
+
+99
+00:15:17,779 --> 00:15:20,779
+Çünkü artan sarma yapıyoruz.
+
+100
+00:15:22,779 --> 00:15:30,779
+Yaş kırk falan teslim ve tüplen gerek yoktu. Çünkü hep birer komut ama sonra kurabilirdi. Artırmak için gerekirse isteriz.
+
+101
+00:15:30,779 --> 00:15:36,555
+Ama nihayetinde if içerisinde elemanları değiştirmek için yani iki elemanın diğerini...
+
+102
+00:15:37,235 --> 00:15:42,235
+İki elemanın diğerini değiştirmek için hatırlarsanız, adım yetişe değişken ihtiyacımız oluyordu.
+
+103
+00:15:42,235 --> 00:15:47,235
+Çünkü, şimdi şöyle yapıyorum ben, şöyle gösteriyorum.
+
+104
+00:15:59,700 --> 00:16:10,200
+3 tane pil var elimde. 2 tane pil var. Piller değer ellerim dizinin gözleri.
+
+105
+00:16:10,200 --> 00:16:20,200
+Şimdi şu iki pilin yerini değiştireceğiz. Ne yapalım normalde? İkisinden havaya tutmaya kalktığımda böyle bir hareket yapabilirim.
+
+106
+00:16:50,912 --> 00:16:54,852
+Anlatıcı olsun. Geçici değişken anlamda.
+
+107
+00:16:54,852 --> 00:16:56,872
+Link mesela.
+
+108
+00:16:58,252 --> 00:17:01,392
+ARJ TMP'dir.
+
+109
+00:17:01,392 --> 00:17:02,592
+Evet.
+
+110
+00:17:07,552 --> 00:17:13,132
+Bir kere bunu atayıp ARJ'yi sakladıktan sonra çok rahatlıkla.
+
+111
+00:17:13,907 --> 00:17:32,167
+İd'in, öyle daha alıştım. İlk elemanı sakladım. Ondan sonra, yani, arya'yı inip dediğimi sakladım. Ondan sonra artık sakladığım yere, yani sakladığım elemanın üstüne korkmadan yazabilirim. Daha sonra da, arya'yı inip dediğimi de.
+
+112
+00:17:32,692 --> 00:17:38,711
+TMP şeklinde yastırabilirim. Böylelikle iki elemanı birbiriyle değiştirmiş oldum.
+
+113
+00:17:39,112 --> 00:17:46,912
+Şimdi bakalım. Hep bir elemanı kendisinden sonraki elemanlarla şöyle diyeceğim için karşılaştıracağım için.
+
+114
+00:17:47,351 --> 00:17:54,951
+Aynı elemanı kendisiyle karşılaştırmama gerek yok. O yüzden döngü içerisinde, iç döngü içerisinde neyle neyi karşılaştıracağım.
+
+115
+00:17:54,951 --> 00:18:00,692
+Dikkat ederseniz A, R, E, Y'yi karşılaştırıyorum. Her elemanın kendisinden sonraki elemanla...
+
+116
+00:18:00,692 --> 00:18:07,692
+ile karşılaştırmam yeterli olacak. Bu nedenle j'yi i-1'den başlatıyorum ve
+
+117
+00:18:30,516 --> 00:18:54,756
+Bizde sıfır ile eleman sayısı arasında değer var. Eleman sayısı eksi birinci eleman bizim son elemanı. Son elemanı artık başka karşılaştıracağı birisi yok. Bu nedenle şöyle eleman sayısı eksi bir diyorum ki, diyelim ki on eleman mı vardı? Sıfır ile dokuz arasında değerler demektir bu.
+
+118
+00:18:58,516 --> 00:19:07,175
+Bu yapacağın son karşılaştırma olmalı. Bunu sallayabilmek için bir de sıfırdan eleman stasi 1'e kadar gitmiş olacak.
+
+119
+00:19:08,516 --> 00:19:15,456
+Evet, bütün bunları yaptıktan sonra artık dizi sıralanmış olacak ve sıralı diziyi de ekrama yazdılar.
+
+120
+00:19:22,644 --> 00:19:24,644
+Sıralı diz olarak da.
+
+121
+00:19:24,644 --> 00:19:27,644
+Düzgün çalışacağını düşünüyorum.
+
+122
+00:19:29,644 --> 00:19:32,644
+Örnek diz aramış mıyız?
+
+123
+00:19:32,644 --> 00:19:35,644
+Yok, biz de sıralamamışız. Biz kendisi de yazabiliriz.
+
+124
+00:19:35,644 --> 00:19:37,644
+Burada çok da özel bir durum yok.
+
+125
+00:19:37,644 --> 00:19:40,644
+Şurada bir boşluk korsaya bir şey olacakmış neyse.
+
+126
+00:19:42,644 --> 00:19:44,644
+Başlar 98 olsun.
+
+127
+00:19:44,644 --> 00:19:49,644
+45, 34, 7.
+
+128
+00:19:50,675 --> 00:19:57,955
+74, 68 ve 59.
+
+129
+00:19:57,955 --> 00:20:03,895
+Bugün mesela 25 olsun.
+
+130
+00:20:05,115 --> 00:20:06,695
+9 olsun.
+
+131
+00:20:07,536 --> 00:20:11,175
+Ve son olarak da mesela 77 olsun.
+
+132
+00:20:12,147 --> 00:20:29,847
+Giren dizi 90, 45, 34. Gel bulursun, test etmiştik gerçi. Bakalım uzun sarılmış mı? İlk başta bunların içerisinde 25 var, 25. Sonra en küçük 27 var, 27. Sonra daha küçük 34 var, evet. Sonra daha küçük 45 var.
+
+133
+00:20:29,847 --> 00:20:40,127
+Şimdi sadece girip sarı dizinin, sarı dizi olarak yazdığı dizinin sıralanmış mı olduğuna bakmak istemiyorum. Çünkü olur da bir şekilde bir şeyleri karıştırmış.
+
+134
+00:20:40,147 --> 00:20:44,228
+Veya ters yapmışsam olmayan bir eleman görebilirim bu sırada sitede.
+
+135
+00:20:44,228 --> 00:20:49,347
+Ve kendi içerisinde dizi sıralıdır ama girmediğim bir eleman yer alıyordur.
+
+136
+00:20:49,587 --> 00:20:52,268
+Böyle bir dudağa düşünmemek lazım nihayetinde.
+
+137
+00:20:53,107 --> 00:20:55,228
+Beş var. Ondan sonra...
+
+138
+00:20:56,180 --> 00:21:07,599
+49 var, tamam. Ondan sonra 59 var, 50 ile başlayan. Sonra 6 ile başlayan 68 var. 7'li iki eleman var, 74, 77 ve en büyüğü de en sona girmiştim.
+
+139
+00:21:07,599 --> 00:21:15,160
+Ta en sona kadar gittiğini gördüm, en büyük elemanın. Böylece programın düzgün çalıştığını görebiliyorum.
+
+140
+00:21:15,640 --> 00:21:20,640
+Tabii şimdi burada okunabilir ve arttırmak için şöyle bir yapalım.
+
+141
+00:21:21,203 --> 00:21:36,984
+Ondan sonra, apazmada bir programı kapattık. Ondan sonra, giren diziyi yazdıktan sonra, sıralarken, önce de şuraya bir slash er koymakta da yarar vardı.
+
+142
+00:21:39,124 --> 00:21:42,744
+Bu şekilde düzgün çalışmış olacak.
+
+143
+00:21:45,364 --> 00:21:51,844
+Şimdi mesela sizlere bu hangi elemanları sağladığımı bir göstereyim isterseniz.
+
+144
+00:21:51,844 --> 00:22:02,344
+Bir tane şey açayım şimdi. Mesela diyelim ki rastgele elemanlar, yazayım mesela şuraya.
+
+145
+00:22:06,344 --> 00:22:10,844
+Mesela sıfır ile...
+
+146
+00:22:12,243 --> 00:22:18,243
+99 arasında, 10 tane.
+
+147
+00:22:20,243 --> 00:22:23,243
+Şimdi nerede gözüküyor? Ha, şey kapatıyor.
+
+148
+00:22:23,243 --> 00:22:26,243
+Kaç tane şey yaptığımı?
+
+149
+00:22:26,243 --> 00:22:31,243
+Sayı 9, sayı, herhalde şu an 10 tane olmuş. Evet, 10 tane oldu.
+
+150
+00:22:31,243 --> 00:22:36,243
+Şimdi, hayır, 3 tane aynı sayı rastgele olarak verdi peki.
+
+151
+00:22:40,276 --> 00:23:03,716
+Tekrar rastgele bir şeyler atsın ve bunlar da rastgele oldu. Şimdi mesela her bir şey yaptıkça formülü yeniden hesaplıyor. Öyle bir olay var. O zaman şimdi buraya bir şeyi yapıştırıp şu sıramdan memnunum. Antık bunun diğerleri yapıştırır şeklinde gidelim. Evet oldu size rastgele. Şimdi yalnız bunları da dizi indisleri şeklinde yapayım.
+
+152
+00:23:10,804 --> 00:23:19,804
+Şimdi şuraya bir sütun açayım. Şu satır indisiniz. Şu satır ise değerler.
+
+153
+00:23:21,804 --> 00:23:27,244
+Şimdi yapacağım şeyin de, Bubble Sort bana diyor ki, ilk değeri al.
+
+154
+00:23:27,347 --> 00:23:42,867
+Sıradaki ile karşılaştır. Kendinden sonrakiler hep karşılaştıra karşılaştıra git. Eğer değer istediğin sıralama değilse, şimdi altan sıralama yapıyoruz. O zaman iki elemanın yerini değiştir.
+
+155
+00:23:42,867 --> 00:23:54,307
+Şimdi öncelikle sıfırıncı elemanla birinci elemana bakıyorum. İki ile doksan altı. İki doksan altıdan küçük mü? Küçük. Problem yok. Şu an şu kısım baktığım kısım sıralı.
+
+156
+00:23:55,347 --> 00:24:16,527
+Şimdi burada ilk de çok şey olmuş. Ben buraya bir ne diyeyim mesela? Şu aralarda bir değer. 36 diyeyim mesela. İlk elemana baktım. 0. Bir sonraki elemanla karşılaştırdım. Şu an istediğim sıralama var. Yani 36-96'dan küçük. Tamam problem yok.
+
+157
+00:24:16,832 --> 00:24:34,711
+Fakat 36 ile 22'ye bakıyorum şimdi. 22, 36'dan küçük. O yüzden bu iki elemanın yerlerini değiştir. 22, 96 yerinde kalıyor. 36. Geri kalan değerler ve bir değişikliğim yok.
+
+158
+00:24:42,415 --> 00:24:50,495
+Evet, şuna karşılamıştık. Peki. Şimdi ondan sonra dizinin, bu arada şunları da yazayım isterseniz.
+
+159
+00:24:51,635 --> 00:24:53,535
+i ve j.
+
+160
+00:24:54,695 --> 00:24:59,695
+i'nin 0, j'nin 1 değerini yaptık. Bir değişiklik yoktu.
+
+161
+00:25:00,295 --> 00:25:05,775
+i'nin sonra, i'nin bu arada şey nasıl yapayım, şöyle yapayım o zaman. Şöyle azından daha iyi olur.
+
+162
+00:25:08,180 --> 00:25:23,599
+Y'nin 0, G'nin 1 değerini yaptık. Bir karşılaştırma, bir değer değişikliği olmadı. Ondan sonra Y'nin 0, G'nin 2 değerine baktık. Burada bir yer değişikliği oldu.
+
+163
+00:25:35,955 --> 00:25:52,076
+Sırarama istediğimiz gibi bir değişiklik olmadı. Ondan sonra i'nin 0, g'nin 4 değerine bakalım. 0, 4, 22, 85. Sırarama istediğimiz gibi bir değişiklik olmadı.
+
+164
+00:26:00,660 --> 00:26:10,180
+1, 2, 3, 4, 5, 4, 7, 8, 9'a kadar bakıyorum. Daha başka herhangi bir sarıma değişikliğim yok.
+
+165
+00:26:16,564 --> 00:26:39,683
+Böylece aslında ilk iterasyonun sonunda en küçük eleman dizinin ilk gözüne yerleşmiş oldu. Hep bu sırada daha küçük elemanla yavaş yavaş yukarı doğru dizinin yukarısına doğru karnaya başlamış oldu. Daha sonra i'nin bir değeri için bu sefer bakmaya başlayacağım.
+
+166
+00:26:41,223 --> 00:26:43,304
+i'ni iyi bir, c ise iki.
+
+167
+00:26:43,988 --> 00:26:54,708
+96 ile 36. 96 ile 36'dan küçük mü? Hayır değil. O zaman şimdi yerleştirme işlemi yapacağız. Ataki link de burada kalmış olacak hep.
+
+168
+00:26:56,211 --> 00:27:11,012
+36 ile 96'yı yerini değişmiş oldu. Diğer değerler aynı olarak kaldı. Sonra i'nin bir değeri için bakmaya devam ediyoruz. J'nin 3 değeri. Şu ikiye bakıyoruz.
+
+169
+00:27:24,211 --> 00:27:44,032
+Şuraya olması gereken yere çıkmış oldu. Bu şekilde yaptığımız bütün sıralamalar da artık şu şekilde kalmış oluyor. Arttırmayacak herhalde inşallah.
+
+170
+00:27:45,491 --> 00:27:59,731
+Evet, gibi. Yani karşılaştırma biçimimiz bu. Algoritma bizi bunu tarif ediyor. Bu yüzden biz işte şeylerimizi, işle döngülerimizi bu şekilde kurttuk.
+
+171
+00:28:02,412 --> 00:28:06,572
+Soru varsa buyrun. Olduğunu tahmin edeceğim ama.
+
+172
+00:28:09,372 --> 00:28:10,852
+Çünkü çoğumuzun yerine bildiği şeyler.
+
+173
+00:28:16,372 --> 00:28:25,532
+Bunu bu şekilde halletmiş olduk. Selection Sort'u yapmayacağım çünkü onu mantıklı yapmak için fonksiyon kullanmak daha doğru olacak.
+
+174
+00:28:25,532 --> 00:28:27,712
+Biz fonksiyon kullanımını da işlemedik.
+
+175
+00:28:31,508 --> 00:28:45,968
+Şimdi string konularına girmek istiyorum. Maalesef karakter katarı diye bir hazır tipi yok. Biz karakter katarılarının karakter dizileri şeklinde işlemek zorundayız.
+
+176
+00:28:46,748 --> 00:28:59,508
+Bu nedenle biz herhangi bir string kullanacağımız zaman bu stringlerin en fazla kaç karakter uzunluğunda olduğunu tanımlamamız lazım. Az önceki kullandığımız örnekte dizi.
+
+177
+00:28:59,508 --> 00:29:03,327
+String'in kaç elemanlı olduğunu tanımladığımız gibi.
+
+178
+00:29:05,908 --> 00:29:12,087
+Şimdi, peki diyelim ki bizim string yerimiz en fazla ne olsun?
+
+179
+00:29:12,528 --> 00:29:14,748
+64 karakter uzunluğunda olsun.
+
+180
+00:29:14,887 --> 00:29:23,387
+Peki, 30 karakter uzunluğunda bir string yazdığımızda stringin son harfinin nerede bittiğini nasıl anlayacağız?
+
+181
+00:29:24,655 --> 00:29:40,976
+Null karakteri devreye giriyor. Null karakteri escape sequence ile slash 0 şeklinde gösterilir. Bir string işlemi yaparken stringin sonuna geldiğimizi göstermek üzere bu slash 0 karakteri kullanılır.
+
+182
+00:29:58,228 --> 00:30:08,367
+Yes olduğu zaman, şu da slash sıfır olarak da kendini ifade edecek.
+
+183
+00:30:08,367 --> 00:30:10,367
+Böylelikle işte...
+
+184
+00:30:10,708 --> 00:30:33,627
+10 karakter bir alana aslında 3 karakter yazdığımızı ifade etmek için son harf olarak, son karakter olarak slash 0 koyduğumuzda bu iş çözülecek. Biz aynı diziyi belki başka amaçla da kullandık ve daha önce burada yazdığımız başka harfler de olabiliriz bu anlamda. Mesela iki daha evvel programlama yazıyordu burada.
+
+185
+00:30:41,556 --> 00:31:03,056
+Programlar yazıyoruz daha evvel. Onun üstüne artık yes stringini yazdığımızda son karakter olarak slash 0 yazıyoruz. Eğer yazmayı unutursak daha evvel yazdığımız programlar stringi aslında yes gramlar şeklinde olmuş oluyor.
+
+186
+00:31:09,556 --> 00:31:18,096
+Bu karakterler yaparken kullandığımız karakter katının sonunu bu slash 0 yani mal karakteriyle belirtmemiz önem taşıyor.
+
+187
+00:31:23,028 --> 00:31:42,947
+Evet. Ve aslında stringleri modellemek için karakter pointer dizileri de kullanabiliriz. Fakat yani şu şekildeki bir ifadeyi her C derleyicisi ve her C standartı desteklemeyecektir.
+
+188
+00:31:47,251 --> 00:32:09,711
+Pointer'ı bir karakter dizisini işaret ettirmek gerekecektir. Ancak ondan sonra bu iş yapılabilir. Veyahut da ileride göreceğiz. Pointer işlemlerinde bir pointer tanınamadan önce bir bellek alanını ayırmak ve o bellek alanının başlangıcına bir işaret erdetmek şeklinde çalışıyor olacağız.
+
+189
+00:32:15,251 --> 00:32:21,291
+Ardından ancak burada gördüğünüz gibi bir işlem yapmamıza izin vermektedir.
+
+190
+00:32:23,031 --> 00:32:25,691
+Evet, burada söylenenler bu.
+
+191
+00:32:31,635 --> 00:32:41,355
+Şimdi çeşitli kullanım örneklerine bakalım. Stinkleri kullanmakla ilgili. Ne yapabiliriz, ne yapamayız.
+
+192
+00:32:41,355 --> 00:32:49,475
+Bir main metodu içerisinde on elemanlı eray dediğimiz bir karakter dizisi tanımlayalım.
+
+193
+00:32:52,051 --> 00:33:16,372
+Ve bir işaretçi düşünelim. Pointer 1 olsun. Bunun pointer olduğunun başında yıldız karakteriyle tanımladığınızdan ayırt edebiliyoruz. Ve şöyle bir atama yaptık. Tense Paces. Bunu atayabilecek. Çünkü bakın 1, 2, 3, 4, 5, 6, 7, 8, 9 karakter var. Bunu 10 elemanlık diziye atayabilecek.
+
+194
+00:33:20,051 --> 00:33:39,291
+Daha doğru olurdu. Yani Now Termination yapsak daha güzel olurdu bu atama da. Neyse. Sonuna bakalım biraz kere karakter ne geleceğini göreceğiz. Bana bir tane pointer daha tanımladım. Pekala. Şu an bir yeri göstermiyor. Karakter pointer ama tanımladım.
+
+195
+00:33:41,619 --> 00:34:02,059
+Sonra, Array'e Not Okay gibisinden bir şey atamak istiyorum. Böyle bir ifade ettim, yazdım. Bu yazdığım ifade hatalı bir ifade olacak. Çünkü, Array sadece dizinin adı. Aslında dizinin başlangıcını gösteren bir pointer gibi düşünülmektedir.
+
+196
+00:34:02,880 --> 00:34:23,180
+Aslında bir adres ifade etmektedir. Dizin başladığı adres. Dizin başladığı adrese bir karakter dizisi. Yani bir adrese bir değer. Adresin içeriğine değer atayabilirsiniz. Adrese değer direkt atayamazsınız. O yüzden şu bize söz dizinin hatası verecektir.
+
+197
+00:34:25,556 --> 00:34:41,315
+Ondan sonra, şimdi bakın ki bu arada özür dilerim, daha önce bir söylediğim sözü geri alıyorum. Şimdi çarp ptr1 eşit 10 spaces dediğimde bir pointer açtım, ona da 10 spaces yazdım. Bu yaptığım her yerde çalışmayacaktır arkadaşlar.
+
+198
+00:34:42,483 --> 00:34:56,844
+Bir önceki yansıda söylemiştim. Daha henüz pointer 1 ile eriği ilklendirmedim ki. O yüzden şu yaptığım ifade her yerde çalışmaz. Ne kadar nasıl çalışmadığını zaten göreceğiz. Ondan sonra.
+
+199
+00:34:57,615 --> 00:35:25,615
+Şimdi şunu yapamayız demiştim az önce. Ondan sonra array 5 eşittir a. Şimdi tek karakterde tek tırnak içerisinde yaşıyorduk hatırlarsanız. Şimdi bunu böyle yapabiliriz aslında. Derleyici bize derleme hatası vermez. Fakat şu 10 elemanlık ayırdığımız dizi içerisinde o belliğin denk geldiği adreste aslında yazılı bir şeyler var. Bu nedenle bilmediğimiz bir şey, rastgele olabilecek bir şey.
+
+200
+00:35:25,615 --> 00:35:43,615
+Ki bunlardan bazıları ekranda görüntülenebilecek karakterler de olmayacaktır mesela bazıları. Ama nihayetinde arasında bir yerde A geçecek. Peki tamam. Yani derlenir ama çok da mantıklı bir sonuç üretmez. O yüzden biz aslında...
+
+201
+00:35:44,143 --> 00:35:51,304
+Bir string yazmaya başlarken hep dizinin ilk başta ilk elemanından yazmaya başlarız.
+
+202
+00:35:51,384 --> 00:35:54,583
+Sıfırıncı ilgisi elemanından itibaren yazmaya başlarız.
+
+203
+00:35:54,923 --> 00:36:00,043
+Ve yazılacağımız her şeyin sonunu da slash sıfır yani null karakteriyle bitiririz.
+
+204
+00:36:00,043 --> 00:36:07,483
+Şimdi böyle aslında benim stringimim sadece c harfiyle başlayacak bir ifade olmuş oluyor.
+
+205
+00:36:09,304 --> 00:36:12,143
+Hatta bunu istiyor. Tek harflik string de çok da...
+
+206
+00:36:12,143 --> 00:36:27,823
+İsterseniz iki harf yapalım mesela. Bu anlamda şunu azıcık yukarı çekeyim. Bir satırlık kadar yukarı çekeyim. Şunu da şöyle bir... Tamam peki hala. Şöyle yapalım.
+
+207
+00:36:31,323 --> 00:36:33,723
+Şimdi şunu da ilk düzeltme kardeşim.
+
+208
+00:36:35,823 --> 00:36:39,443
+İki harfleri şey olarak okey diyelim mesela.
+
+209
+00:36:40,659 --> 00:36:48,220
+Bu da ok olsun.
+
+210
+00:36:48,779 --> 00:36:52,679
+Ve şunu da artık null terminated olarak yapalım.
+
+211
+00:36:52,679 --> 00:36:57,516
+Şimdi burada şunu...
+
+212
+00:36:57,907 --> 00:37:10,907
+Şunu yapamıyoruz. RR'ye eşittir NATOKey'ye bu derleme hatası verecek dedik. Şu duruma ise RR'ye 5 eşittir A, bu duruma ise hatalı demiştik. Şöyle bir aynı.
+
+213
+00:37:10,907 --> 00:37:23,659
+Sağda olsun last. Ondan sonra acaba. O yüzden ilk başta sıfırla başlıyoruz dedik. Şu ikisini tek şey olarak yapmışım.
+
+214
+00:37:24,563 --> 00:37:37,403
+Şöyle yaptığımda oluyor herhalde. Sıfırdan başla diyoruz ve şuan bir şey demek yok. Bir problem yok bunda. Gerektiği yerde de not terminated karakterleri kullan.
+
+215
+00:37:37,403 --> 00:37:46,043
+Dedik ki şurada boşuna koydu fazladan. Şuradan koymuş oluruz. Onun dışında.
+
+216
+00:37:47,347 --> 00:37:49,087
+Yorumuna da bakarız.
+
+217
+00:37:49,327 --> 00:37:51,148
+Bunu yazmaya tamam çözmeye çalışıyoruz.
+
+218
+00:37:51,148 --> 00:37:51,688
+Şu yoruz.
+
+219
+00:37:55,128 --> 00:37:59,148
+Onun dışında, peki şimdi diyelim ki...
+
+220
+00:38:02,739 --> 00:38:11,299
+Şuraya kadar yaptık. Normal dizi ile yaptığımız string işlemlerinde şu son karakteri de non olarak atadığımızda hiçbir problem yok.
+
+221
+00:38:12,579 --> 00:38:18,460
+Sonra diyelim ki şu pointer ptr1 şeklinde tımladığımız string'e geri dönelim.
+
+222
+00:38:18,460 --> 00:38:25,119
+Şimdi bunun 8. indisindeki elmanına r koyuyorum diyeyim mesela.
+
+223
+00:38:26,579 --> 00:38:38,420
+Tamam da şimdi şuradaki intilizasyon tam doğru olmamışsa o zaman şuradaki yaptığım ifade de hatalı olacaktır.
+
+224
+00:38:38,420 --> 00:38:48,840
+Sonra diyelim ki pointer'lara, string pointer'ına şu şekilde bir atama yapmaya çalıştığımda, başında yıldız diyerek yazdığımda bu da olmuyor.
+
+225
+00:38:54,579 --> 00:39:08,659
+Şöyle bir şeyi tanımlayıp atama yaptığımda bazı siddarecileri kabul ediyor ama tanımlamayı yaptıktan sonra Yıldız PTR şeklinde yaptığımız atamalara kabul etmiyor.
+
+226
+00:39:08,659 --> 00:39:12,900
+Bu tip eşleşmemesi hatası verip orada derleme hatası alıyoruz.
+
+227
+00:39:13,380 --> 00:39:18,800
+Fakat düz başında Yıldız olmadan atamamızı yapmaya çalıştığımızda bir problem vermiyor.
+
+228
+00:39:20,059 --> 00:39:22,400
+Şey kısmında ise, yani ilginçtir.
+
+229
+00:39:22,579 --> 00:39:32,360
+Ben kendi denemimde şöyle bir ifade yazdığımda, ilk defasında Linkov bir derleme uyarı veriyor daha doğrusu.
+
+230
+00:39:32,800 --> 00:39:41,639
+Fakat, derleme yapmıyor. Fakat bir daha denediğinizde, bu sefer bunu yapıyor şeklinde bir ilginç bir durumla karşılaşıyoruz.
+
+231
+00:39:41,639 --> 00:39:47,960
+Şöyle dediğim gibi, değişikliği derleyicileri ve standartları farklı şekilde çalışabiliyorlar.
+
+232
+00:39:52,244 --> 00:39:54,744
+Hemen ispatlayalım durumu.
+
+233
+00:40:00,724 --> 00:40:12,324
+Adan kodu. Şuraya koyalım. Şimdi bunu saklasam mı? Çünkü pointer yaparsınız. Daha sinneti, siz birlikte yaparız. Daha iyi olur. Hoşçakalın.
+
+234
+00:40:25,907 --> 00:40:38,907
+Bu arada tabiki şunlar kafadan değerleme hatası verecektir. Bu tırnaklar kafadan değerleme hatası verecek. O yüzden şöyle yapalım. Bunlar da tek tırnak.
+
+235
+00:40:39,907 --> 00:40:44,907
+Pardon. Şöyle. Bunlar da tek tırnak.
+
+236
+00:40:45,907 --> 00:40:46,907
+Yoksa bu.
+
+237
+00:40:47,907 --> 00:40:51,907
+Şöyle noktayı birbirini silmiş. Adikodda da mı yok acaba?
+
+238
+00:40:52,083 --> 00:40:54,823
+Evet, atlamışım. Az önce yazdım.
+
+239
+00:41:03,987 --> 00:41:04,907
+Şöyle ettiğin.
+
+240
+00:41:12,340 --> 00:41:39,860
+Veriyorum. Evet. Şimdi denemeye çalıştığımızda, bakın en başta bir kere şu noktada, ha evet, incompatible types in assignment dedi. Yani böyle bir şey olmuyor. Evet, böyle bir şey olmuyor. Incompatible types dedi de işte adrese değer atıyamayız. Adresin içeriğine değer atıyamayız ancak. O yüzden şimdi bunu yorumlatıp bunu yapamıyoruz.
+
+241
+00:41:40,436 --> 00:41:55,816
+Tekrar yapalım. Bakın, uyarı geldi. Diyor ki, intedger ve pointer ve intedger ve dönüşüm yapmadan atayamazsınız falan gibi bir hata geldi.
+
+242
+00:41:55,816 --> 00:41:58,916
+Ondan sonra acaba verdi.
+
+243
+00:42:01,316 --> 00:42:02,916
+Ptr'ye geçti, not ok.
+
+244
+00:42:03,668 --> 00:42:14,068
+Buraya geldi. Ha tamam. Type Mismatch A Warning bu. Tamam mı? Bir dakika. Sonraki derya şunun uyutu. Peki bir daha diyelim ki yapalım.
+
+245
+00:42:16,188 --> 00:42:25,008
+Bakın artık. Bir dakika. Tam da. Şunun yakınmazı kaldı. Seçtiğim için kaldı. Bir daha yaptım. Şimdi bunu.
+
+246
+00:42:25,715 --> 00:42:41,795
+Yaptı. Yazdın. Peki. Göreceğiz bakalım şimdi. Ama içerikleri doğru mu olacak? Göreceğiz. Bu arada en yeni karıştı şimdi. Ben şunu yazdığımda. Ptr1'in önceki ders noktadan geri döneyim bu arada.
+
+247
+00:42:44,480 --> 00:43:07,619
+Evet, şu PDF haline çevirdiğimde az önce yaptığım değişikliği yapmadım. Şimdi 60'ın için final falan olacak çünkü içeride yazdığım için şöyle genişliğe yapalım. Şöyle ilerleyelim şimdi. Evet, şurada kalmıştık.
+
+248
+00:43:09,331 --> 00:43:15,331
+Ha yok şuraya eşleştirmişim. Belki unutan hazırlarken hatan vardı.
+
+249
+00:43:15,331 --> 00:43:24,331
+Şimdi o zaman acaba ne doğru atanmış ne doğru atanmamış onları yazdılarım.
+
+250
+00:43:24,331 --> 00:43:25,331
+Peki.
+
+251
+00:43:25,331 --> 00:43:33,331
+%s string olarak yazsın. Sonunda bir tane newlar karakteri koy.
+
+252
+00:43:35,795 --> 00:43:47,563
+Erayı yazdır. Ardından PTR1 ve PTR2'yi yazdır. Benzer şeyi yapalım.
+
+253
+00:43:56,788 --> 00:44:17,208
+Bakalım, DFCP ve derleci bunu kabul edecek mi? Tekrar derledim. Şurada tekrar bir uyarı verdi aslında. Boşver kardeşim, sen devam et diyeceğim. Tekrar yapalım ve çalıştalım. Bakalım ne diyecek.
+
+254
+00:44:20,659 --> 00:44:43,980
+Şeyde vermedi değil mi? Stamp House'da vermedi. Evet. Çalıştı ve kapandı. Şimdi bu durum bana pointerları düzgün kullanmadığımı gösterir. Beklenmedik bir şey olduğunu gösteririz. Veya hiçbir şey doğru düz atıma yapmadığım için bir şey yazdıramadığımı da gösteririz. O yüzden şöyle bir şey yapalım.
+
+255
+00:44:48,500 --> 00:45:04,300
+Örneğe deyim ve bu şekilde yazsın. Ondan sonra diyelim ki PTR1 desin ve ondan sonra bunu yazmaya kalkışsın ve PTR2 deyip de bunu yazmaya kalkışsın mesela bakalım.
+
+256
+00:45:09,588 --> 00:45:31,148
+Problem değil diyorum. Ondan sonra tekrar çalıştırdım. Evet, bana hala bir düzgün, yani hiçbir çıktı vermedi. Demek ki daha evverden verdiğim ve burada buggy, hatalı falan diye işaretlediğim bütün komutlar yüzünden bana böyle bir herhangi bir çıktı vermiyor.
+
+257
+00:45:31,148 --> 00:45:35,028
+Şimdi şüpheli işlemlerimi kapatalım.
+
+258
+00:45:35,476 --> 00:45:47,476
+Şükürde işlemlerimi kapatayım. Pointer ile ilgili yaptığım işlemleri kapatayım. Ondan sonra çıktığımızı almaya çalışalım.
+
+259
+00:45:47,476 --> 00:45:51,336
+Evet, şu bakın.
+
+260
+00:45:51,827 --> 00:46:16,788
+Biziyle ilgili yaptığım işlemlerde herhangi bir problemim yok. Şimdi bu arada şeyi de hatırlatırım. Şimdi kafadan R5'e A dedik ama ondan sonra biz 0'a O, 1'e K dediniz ve ikinci indisliğim anında Null pointer'ı, Null karakterini koyduğumuz için R5'i OK olarak da düzgün bir şekilde gösterdi.
+
+261
+00:46:19,315 --> 00:46:31,035
+Şu komutları da vermiş olmasaydım, yani düzgünce bu diziye OK işaretini, OK screenini koymamış olsaydım, elde ettiğim çıktığını...
+
+262
+00:46:31,284 --> 00:46:51,963
+Bakın nasıl bir şey olduğunu görüyorsunuz. Saçma sapan karakterler. Aslında saçma sapan değil. Yani orada tam sayı değer olarak ne yer alıyorsa, onun da asket tablosunun ki karşılığı neyse, onlar denk gelmiş oluyor. Ama dikkat ederseniz 0, 1, 2, 3, 4, 5, 5 indisli gözünde büyük A yer alıyor.
+
+263
+00:46:59,284 --> 00:47:04,304
+Toplamda ortaya çıkan sonuç istediğimiz gibi güzel bir sonuç değil.
+
+264
+00:47:07,204 --> 00:47:15,004
+Şey bu, durum bu. O zaman şimdi şunları tekrar geri alayım.
+
+265
+00:47:15,004 --> 00:47:25,084
+Şimdi arkadaşlar 10 dakikada verme zamanımız gelmiş. 10 dakikada verin. Ondan sonra kaldığımız yerden dersimizle devam ederiz.
+
+266
+00:47:26,996 --> 00:47:43,815
+09.50 ile 10.00 arasında aramızı verelim. Ön sharing'i buna çevirip ses ve kamerayı kapatayım.
+
+267
+00:58:58,195 --> 00:59:22,195
+Evet arkadaşlar, süreniz doldu. Derse kaldığımız yerden devam edebiliriz. Nihayetinde stiflerle çalışmanın en sağlam ve düzgün yolu bu aşamada daha pointer aritmetiyle ilgili şeyleri de özellikle üstüne didiklemediğimiz için şuradaki örnekte ifade ettiğimiz gibi bir karakter dizisine önce yer ayırmak, daha sonra...
+
+268
+00:59:23,443 --> 00:59:43,583
+Altlamak istediğimiz stringin her harfini uygun biçimde dizinin gözlerini yerleştirmek ve en son eleman olarak da slash 0 yani null terminated stringi koymak. Bu şekilde yaptığımız düzenlemeler bize string işlemlerinde doğruluşları verecektir.
+
+269
+00:59:46,291 --> 00:59:59,552
+Şimdi, stringler ve karakter arasındaki bazı püf noktaları da söylemek istiyorum. Şimdi normalde nasıl tanımlarız? Karakter dizicisinden CH diye bir ilişkene tanımlıdır.
+
+270
+01:00:00,000 --> 01:00:17,420
+A diye bir harf atadım. Mantıklı. Karakter tipinin genişliği de bir byte olduğu için A için bir byte atanıyor. Daha doğrusu CH diye çirkinliğine bir byte atanıyor. Çünkü A'da bir byte ile simgileniyor.
+
+271
+01:00:28,000 --> 01:00:28,179
+Tak?
+
+272
+01:00:28,820 --> 01:00:53,560
+Yani onun gösterdiği gözün içerisine A yaz. Okey, bunda bir problemim yok. Fakat sadece P eşittir A dediğimde aslında doğru bir şey yapmıyorum. Point'ın bir adres ifadesidir aslında. O adrese, bir adres alanına bir değer atamaya çalışıyoruz. Bu doğru değil. Adres türünde bir bilgiye bir değer atamaya çalışıyoruz. Bu da doğru değil.
+
+273
+01:00:56,820 --> 01:01:10,260
+Gördüğümde karakter yıldız P eşittir çift tırnak içerisinde A dediğimde iki byte aslında yer ayrılmış oluyor bu sefer bu karakteri. Bu karakter point'ına.
+
+274
+01:01:12,179 --> 01:01:29,819
+Bu yüzden daha fazla yer harcamış oluyor. Birincisi bu. Ondan sonra bir pointer'a aslında direkt şu şekilde tırnak içerisinde bir değer atamak doğru değil. Yani şey edilmez, çalışmaz zaten.
+
+275
+01:01:34,132 --> 01:01:49,752
+String aslında ve daha fazla karakterleri de olabilir. Siz buraya bir karakter bile koysanız, bu çift tırnak içerisinde on karakter bile koysanız, aslında bu bir karakter katarı birden fazla harf içerecek anlamına geliyor çift tırnak.
+
+276
+01:01:49,752 --> 01:02:02,132
+Ve bu yüzden siz, her ne kadar normalde bir önceki örnekte yıldız P eşit de tek tırnak içinde A dediğimizde düzgün olsa da, yıldız P eşit de çift tırnak içerisinde A dediğimizde doğru olmayacak.
+
+277
+01:02:02,132 --> 01:02:22,552
+Çünkü çift tanırak içerisinde ister bir harf yazsın, ister daha çok harf yazsın. Hiç problem değil. Bu bir sık sık. Yani birden fazla karakter olarak algılanacak. Bir pointer ise bir tek karakter gözünü gösteriyor. Tamam sonraki gözler de var fakat sonraki gözleri otomatik olarak bir atama, taşıma falan yapmıyor.
+
+278
+01:02:29,844 --> 01:02:46,304
+Yanlış. Sadece şu şekilde biz atama yapmak bazı dil standartlarında destekleniyor ki bizim DevSli PP4'te böyle bir çalışma yine mümkün olmuyor. Hemen göstereyim.
+
+279
+01:02:52,340 --> 01:02:59,340
+Şurada benzer işlemleri yapmaya çalıştım bu arada. Hemen PowerPoint ile karşılaştırırsam,
+
+280
+01:02:59,340 --> 01:03:13,340
+evet, hemen PowerPoint'i örnekle karşılaştırırsam, şu şekilde bir değişkeni pointer'ı oluşturdum.
+
+281
+01:03:19,668 --> 01:03:26,028
+Şu şekilde. Şimdi A şeklinde demeyelim de B başka bir değerle atalım.
+
+282
+01:03:32,980 --> 01:03:45,480
+Bu şekilde aynı yansıda olduğu gibi yapmaya çalışıyorum. Ondan sonra bunu B şeklinde, değiştirelim.
+
+283
+01:03:45,480 --> 01:03:58,680
+Bu şekilde yapalım. Ondan sonra Cema, P olarak da
+
+284
+01:03:59,603 --> 01:04:01,603
+Şunu yazmaya çalışsın.
+
+285
+01:04:03,603 --> 01:04:09,387
+Ondan sonra da pause versin. Bakalım doğru çalışıyor mu, çalışıyor mu görelim.
+
+286
+01:04:13,940 --> 01:04:21,940
+Ancak bu şekilde düzgün bir çalışma elde edebildik. Tamam, pekala. Bu durumda problem yok. Gerçekten çalıştığını gördük.
+
+287
+01:04:21,940 --> 01:04:26,940
+Ama öbür türlüsü çalışmayacaktır. Çünkü...
+
+288
+01:04:26,940 --> 01:04:30,940
+Powerpoint'ı kapatayım. Gdf'i kapatayım.
+
+289
+01:04:30,940 --> 01:04:38,940
+Şöyle bir ifade veremiyoruz. Yıldız B'ye eşittir. Bisting içerisinde A.
+
+290
+01:04:40,916 --> 01:05:07,275
+Şöyle bir ifade veremiyoruz. Bu bana. Şu aslında warning oluyor. Tamam peki ben bu warning aslında en zor demesi lazımdı. Nelerse warning şeklinde söylüyor. Tekrar da çalıştırmaya çalıştırıldığımda bakın düzgün bir sonuç alamıyorum. Yani bu yaptığım iş doğru bir iş değil. Verdi warning'e dikkat etmem gerekiyordu. Bu şekilde bir kullanım yaptığımda problem yok.
+
+291
+01:05:08,403 --> 01:05:09,324
+Yardım eski.
+
+292
+01:05:20,755 --> 01:05:33,895
+Evet, pekala. Şimdi karakter katarlarını elle de yaratmak sıkıcıya da çok da kullanışlı değil. Kullanıcıdan string bilgisini nasıl alacağız, nasıl işleyeceğiz? Ondan ona bakalım.
+
+293
+01:05:34,815 --> 01:05:40,895
+Aslında ScanF ile bu işi yapabiliyoruz. Yalnız iki şartımız var. Birincisi...
+
+294
+01:05:41,108 --> 01:06:08,907
+Format spesifaylı olarak %s kullanıyor olacağız. Bu birincisi. İkincisi, önceki derste söylediğim gibi bir karakter dizisi tanımlayacağız. Ondan sonra açıma şuradaki örnekte olduğu gibi ve tabii ki her dizinin de bir maksimum eleman sayısı kadar bir gençlikte değer atanarak tanımlanması gerektiğinden Max Char diye bir sabiti tanımlayıp ondan sonra
+
+295
+01:06:09,108 --> 01:06:29,668
+O uzunlukta bir diziyi tanımlayıp daha sonra o diziye, o da yansıtıta gördüğünüz gibi değer alabiliyorsunuz. Ve stinkleri aslında bir önceki yansıtırlarda da ipucunu verdiğim üzere yüzdesi format stingi ile ekrana yansıtırabiliyorsunuz.
+
+296
+01:06:34,452 --> 01:06:57,851
+Bakalım, burada başka bir şey söyleyeyim mi? Evet, tabii şimdi burada 80 karakterler ayırdınız. Kullanıcı 80 karakterden daha uzun bir şeye girerse problem olacak. Deniriz. Nasıl çalıştığını görürüz. Nasıl problem verdiğini görürüz. Ama farklı derleyiciler, farklı çekirde problem üreten kodlar ortaya çıkartacaktır. Onu da söyleyeyim.
+
+297
+01:07:00,628 --> 01:07:18,648
+ScanF'in bir güzelliği var bu arada. Sonlar karakterini de otomatik olarak sonuna ekliyor. O açıdan da güzel. Yani 80 karakterlik alana bilgi gideceğiz ama kullanıcının girdiği harflerden daha fazla sonraki ilerleyen harflerde garip garip karakterlerle görmeyeceğiz.
+
+298
+01:07:20,067 --> 01:07:20,607
+Tamam yapalım.
+
+299
+01:07:24,947 --> 01:07:27,548
+Şimdi şunu bir aynıca alayım.
+
+300
+01:07:33,172 --> 01:07:35,051
+Ondan sonra geri kalan kısmını alayım.
+
+301
+01:07:43,603 --> 01:07:44,463
+Ve deneyelim.
+
+302
+01:07:51,284 --> 01:07:52,544
+Yapısal Programlama.
+
+303
+01:07:57,811 --> 01:08:24,131
+Şimdi bu arada yalnız maalesef Kenneth'in problemi boşluğu da artık karakter girişi bitti şeklinde algılıyor. Onu da dikkatinizi çekerim. Bunu daha sonunda özellikle koyup unutmuşum. Aklından çıkmış. Devam edelim şimdi bu arada. Hemen düzeltelim. Çünkü ondan sonra alt satıra geç. Bu arada şey.
+
+304
+01:08:24,659 --> 01:08:39,780
+Ne yaptı? Evet, bunu yazdım dedi ve ondan sonra da bir tane şey koysun. Şunu yapsam daha doğru olmaz mı? Şunu yapsam daha doğru olur. Tekrar yazalım. Evet.
+
+305
+01:08:42,280 --> 01:08:50,460
+Evet, bir dakika. Bu arada pause'taki tekrar slash n yeni satıra geçmiyor. Pekala. İyi, öyle olsun.
+
+306
+01:08:53,779 --> 01:09:13,479
+Kendisi bilir. Ben de böyle yaparım. Şimdi, onun dışında daha uzun bir şeyler girelim ve ne problem olduğunu görelim. Bu yüzden tabii 80 demeyelim de, 20 diyelim. Ondan sonra çalıştığımda.
+
+307
+01:09:23,988 --> 01:09:45,068
+İlhangi bir filan yapalım. Ve ne olduğunu görelim. Bir dakika. Hiç sıkıntı vermedi. 20'yi geçmiş olması lazım. Çok ilginç. Yoksa derleme filan mı yapmadı bu kerata? Bakalım. Hemen şu koda bakalım.
+
+308
+01:09:51,252 --> 01:09:52,252
+Bir dakika.
+
+309
+01:09:52,252 --> 01:09:55,252
+Yok, koda. Pardon.
+
+310
+01:09:55,252 --> 01:09:59,252
+Evet, değiştirme tarihini bugün projekli egze şu.
+
+311
+01:09:59,252 --> 01:10:03,252
+10-12'de, evet az önce yaptı, değişti. Peki, tamam. Güzel.
+
+312
+01:10:05,252 --> 01:10:06,252
+Geç.
+
+313
+01:10:09,252 --> 01:10:12,140
+Geç. Az sayalım bu arada.
+
+314
+01:10:12,180 --> 01:10:23,220
+Bakalım. Nuhal Diyan'ın 10 karakter dizimizi ve tüm karakteri kullanıyoruz. Bu durumda nal karakteri koyulmuyor arkadaşlar. Dizinin sonuna geldiğini biliyor.
+
+315
+01:10:23,220 --> 01:10:40,180
+Bu şekilde, çünkü dizinin 10 elemanını ayırdık. Artık o dizinin 10 elemanlık olarak yer aldığını bildiğinden, bu diziyi gösterecek bir pointer tanımladığımızda, onu yazdırmaya kalktığımızda bunun 10 elemanlık olarak yer aldığını bildiğinden,
+
+316
+01:10:40,180 --> 01:10:56,560
+Olduğunu biliyor. Çoğunlukla böyle aradayız sınavlar olabilir platforma göre ama şu söylediğim, şu yaptığım şey, şuradaki örnek bana sanki bu DSCPP'nin biraz farklı davrandığını gösteriyor gibi.
+
+317
+01:10:56,560 --> 01:11:00,040
+Şimdi beş karakterlik yer verdim buna ve devam edelim.
+
+318
+01:11:09,171 --> 01:11:35,471
+Evet, burada o zaman şey, buffer overflow error hatasını görmüş olduk arkadaşlar. Tampon taşımı. Her ne kadar bu vizeye beş karakterlik yer ayırsak bile bunun sonuna yazmaya devam ediyor. Yani ilginç, pekala. Normalde ben bunun farklı davranmasını beklerdim. Ama öyle bir şekilde davranıyor.
+
+319
+01:11:38,899 --> 01:11:44,279
+Peki, öyle olsun. Ne diyeyim? Ben normalde orada kesmesini beklerdim.
+
+320
+01:11:45,959 --> 01:11:46,899
+Fakat bu arada...
+
+321
+01:11:47,439 --> 01:11:53,340
+Fakat bu arada bakın, programda çok da güzel tepki vermiyor.
+
+322
+01:11:53,340 --> 01:11:57,459
+Bir tuşa bastım falan, aradan biraz zaman geçti.
+
+323
+01:11:57,579 --> 01:12:05,219
+Yani bu yaptığım aslında fazla eleman atama işi bir yerlerde bir yan etki doğurdu aslında.
+
+324
+01:12:05,652 --> 01:12:25,471
+Tekrar çalıştırıyorum. Bakın, dikkatli bakın. 4, 4, 4 harfli bir şeye girdim. 4 dedi, bir tuşla basın dedi. Bastım ve hemen kapandı program. Sonlandı. Fakat, biraz çalıştırıyorum. Bu sefer, 3, 4, 5. 5 harfli bir şeye girdim.
+
+325
+01:12:27,051 --> 01:12:33,172
+Zaten 5 demiştim. Tamam, 6 demem lazım da. 1, 2, 3, 4, 5, 6.
+
+326
+01:12:36,307 --> 01:12:42,528
+Az taşınca problem çıkarmıyor demek ki.
+
+327
+01:12:42,528 --> 01:12:43,087
+Peki hala.
+
+328
+01:12:43,648 --> 01:12:47,167
+Şimdi 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+329
+01:12:47,768 --> 01:12:50,988
+Hatta bu arada şu kere soru yapalım da 9, 10.
+
+330
+01:12:51,208 --> 01:12:53,628
+Ondan sonra. Şimdi P'de bir 10'luk oluyor.
+
+331
+01:12:54,087 --> 01:12:56,327
+1, 2, 3, 4, 5, 6, 7, 8, 10.
+
+332
+01:12:57,468 --> 01:12:57,747
+Tamam.
+
+333
+01:12:58,548 --> 01:12:59,028
+Bir takla.
+
+334
+01:12:59,167 --> 01:13:01,868
+1, 2, 3, 4, 5, 6, 7.
+
+335
+01:13:02,644 --> 01:13:04,123
+Sekiz, dokuz, on.
+
+336
+01:13:08,051 --> 01:13:16,711
+Şimdi bu üç karakter girdim, beş karakter geri. Bir kere bastım, hala bekliyor. Bir daha basıyorum, hala bekliyor.
+
+337
+01:13:17,427 --> 01:13:32,528
+Bakın hala bekliyor. Yani ben bu programdan şimdi çıkamadım. Belki birkaç karakter uzunluğunda taşmaya karşı çok yan etki olmuyor. Fakat ondan sonra bakın gördüğünüz gibi tepki almam epey gecikiyor.
+
+338
+01:13:36,724 --> 01:13:58,123
+Her ne kadar ben 5 karakterlik yer ayır desem de belki arka plan, derreci arka planda nasıl çalışıyor bilmiyorum. Her derreci farklı şeklinde çalışabilir. Eğer küçük bir alan ayırdıysam buna rağmen diyelim ki ikinin bir katı olarak mesela 16 aslında elemanlık yer bellek ayırıyor olabilir arka planda.
+
+339
+01:14:04,083 --> 01:14:13,083
+Şurada gördüğümüz yan etkiyi doğuluyor olabilir demiyorum yani. Ama burada mantıklı olan maksimum karakteri geçmemektir.
+
+340
+01:14:19,315 --> 01:14:41,595
+Devam edelim. Yani düzgün çalışma biçimi olması gerektiği şekilde biz şimdi bunu zorladığımızda neler olur onları keşfetmeye çalıştık. Ama dediğim gibi bu yaptığımız keşifler derleyici ve hatta derleyicinin üstünde çalıştığı işletim, derleyicinin ürettiği kudun çalıştığı işletim sistemine göre farklılaşacaktır.
+
+341
+01:14:47,699 --> 01:14:52,699
+Peki, normalde, Lank diye bir fonksiyon var arkadaşlar.
+
+342
+01:14:52,979 --> 01:15:16,139
+Sting.h'da tanımlı. Herhangi bir pointer veyahut da karakter katarı, yani dizi iletişim gelen karakter katarında ne kadar, kaç karakter yer ayrılmış? Özür dilerim, kaç karakter içeriyor? 80 dedik, 80'lik yer ayırdık ama şu an mesela 80 karakterin hepsini de doldurmadık.
+
+343
+01:15:16,139 --> 01:15:20,979
+Ne kadar nal karakteriyle bir yerde bitirilmiş?
+
+344
+01:15:20,979 --> 01:15:22,759
+16 tarihli bir şeye girdik.
+
+345
+01:15:24,884 --> 01:15:44,884
+Kaç harf olduğunu öğrenmek istiyoruz. Bunun için string.h fonksiyonunda aslında strlen diye ama less küçük bir fonksiyon var. Biz bununla çakışmaya yol açmamak için kendi strlen ama l harfi büyük versiyonumuzu yazalım.
+
+346
+01:15:52,884 --> 01:16:04,844
+Ama bu ikinci mantıksal kelime olduğundan büyük harfle adlandırdık. Bize okumayı kolaylaştırıyor ve buna da camel casing deniliyor.
+
+347
+01:16:04,844 --> 01:16:15,664
+Camel dere ya, derenin hörgücü bir ya da iki hörgücü. Her bir büyük harf düzgüden hizada bir hörgüç gibi etki oluşturduğundan camel casing deniliyor.
+
+348
+01:16:17,492 --> 01:16:25,492
+Biz şimdi, madem öyle, kendimize yararlı olabilecek bu strlen fonksiyonunu yapalım. Ne yapacağız?
+
+349
+01:16:25,492 --> 01:16:35,492
+Bizim her elemanına tek tek bakacağız. Null karakteri gördüğümüzde artık bitireceğiz. Bizim uzunluğu budur diyeceğiz.
+
+350
+01:16:35,492 --> 01:16:38,492
+Bu arada bir arkadaşım da denemiş, [öğrenci] denemiş.
+
+351
+01:16:39,091 --> 01:16:51,391
+Diyor ki, işte ben de hata verdi. Comparser ve işletim sistemi ciddiğiniz gibi rol oynuyor. Ben de işte Core Down'da falan diyor. [öğrenci], şey, Linux'dan mı kullanıyorsunuz? Ne kullanıyorsunuz? Söyleyeyim lütfen.
+
+352
+01:16:52,111 --> 01:16:52,671
+Evet hocam.
+
+353
+01:16:52,671 --> 01:17:00,671
+Tamam, yani işte gördüğünüz gibi farklı farklı tepkiler ortaya çıkıyor hatarlı kodlar.
+
+354
+01:17:05,332 --> 01:17:24,792
+Bakalım burada başka söylemek istediğimiz bir şey var mı? Bakıyoruz. Nal karakter görene kadar. Nal karakter sıra sıfır demekti. Aksi takdirde tamam pekala. STRI nal değildir. Tamam bu ifade basit. Yani STRI inci eleman eşit değilse nal karakterini o zaman sadece değerini bir arttırır.
+
+355
+01:17:33,332 --> 01:17:35,512
+geri döndürmüş oluyor. Böylelikle
+
+356
+01:17:35,512 --> 01:17:37,552
+basit bir string length
+
+357
+01:17:37,552 --> 01:17:39,592
+fonksiyonumuz oluşturmuş
+
+358
+01:17:39,592 --> 01:17:41,352
+olduk. Deneyelim.
+
+359
+01:17:43,672 --> 01:17:45,231
+Şimdi burada herhangi bir çok
+
+360
+01:17:45,231 --> 01:17:47,552
+aslında pointer aynı tanımını
+
+361
+01:17:47,552 --> 01:17:49,852
+fonksiyonlarda pointer aynı tanımını
+
+362
+01:17:49,852 --> 01:17:51,752
+görmedik ama çok da karmaşık değil.
+
+363
+01:17:52,092 --> 01:17:53,872
+O yüzden şey edebiliriz. Yapabiliriz.
+
+364
+01:17:57,292 --> 01:17:59,572
+Kendi fonksiyonumuzu yukarıya tanımlayalım.
+
+365
+01:17:59,712 --> 01:18:00,372
+Bu arada şunu da
+
+366
+01:18:01,716 --> 01:18:05,356
+Daha büyük bir şey yapalım ki rahat edelim.
+
+367
+01:18:07,115 --> 01:18:08,216
+Şimdi, evet.
+
+368
+01:18:08,516 --> 01:18:10,036
+STRI'yi oluştursun.
+
+369
+01:18:10,436 --> 01:18:13,496
+String'i kullanıcılar istesin.
+
+370
+01:18:13,916 --> 01:18:15,896
+Ondan sonra şu yazdığınız şeklinde söylesin.
+
+371
+01:18:15,976 --> 01:18:19,016
+Ve ondan sonra şu kadar az uzunluğunda desin.
+
+372
+01:18:24,435 --> 01:18:43,675
+It has. Ondan sonra yüzde de karakter sitesin. Ve yazacağı şey de str'den str olsun.
+
+373
+01:18:49,076 --> 01:18:52,195
+Evet, peki hala çalıştığım ve görelim.
+
+374
+01:18:59,891 --> 01:19:00,951
+Boşluk girmiyorum.
+
+375
+01:19:01,072 --> 01:19:02,051
+Veya şöyle yapabilirim.
+
+376
+01:19:04,752 --> 01:19:04,971
+Evet.
+
+377
+01:19:05,511 --> 01:19:06,871
+Derse devamlı yazdınız.
+
+378
+01:19:07,351 --> 01:19:11,152
+Ve bir, iki, üç, dört, beş, altı, yedi, seksi, doks, on, on, bir.
+
+379
+01:19:11,211 --> 01:19:13,211
+Evet, on bir karakter geniş uzunluğunda.
+
+380
+01:19:14,112 --> 01:19:15,311
+Doğru yazdım.
+
+381
+01:19:15,351 --> 01:19:17,051
+Ama şu çıktığı neden verdi?
+
+382
+01:19:17,152 --> 01:19:17,992
+Tekrar bir bakalım.
+
+383
+01:19:20,211 --> 01:19:21,172
+Ha, şunu yazdınız.
+
+384
+01:19:21,412 --> 01:19:21,971
+Tamam, peki.
+
+385
+01:19:22,192 --> 01:19:23,192
+Şunu yazdınız dedi.
+
+386
+01:19:23,311 --> 01:19:23,752
+Yazdı.
+
+387
+01:19:23,752 --> 01:19:26,752
+Ondan sonra, ha, şurada bir tane fazladan.
+
+388
+01:19:27,891 --> 01:19:44,891
+Şu falsadan oldu. Tamam. Ve ondan sonra, pause nedeniyle ben şu flashini koymuştum. Ondan sonra şu kadar karakteri var dedi. Ha şimdi iki kere yazmışım bu örneğe nedense. Yani üstüne ilmeden yapıştırmışım. O yüzden böyle bir sonuç vermişim ona.
+
+389
+01:19:55,188 --> 01:20:01,667
+Evet, bunu yazdığınız 13 karakteri var diyor.
+
+390
+01:20:01,667 --> 01:20:03,532
+Evet, tamam. Peki, öyleymiş.
+
+391
+01:20:06,644 --> 01:20:16,864
+Bu arada, bir string girdikten sonra enter'a bastığımızda bu enter aynı zamanda komut satırında bir alt satıra geçmemizi de sağladı.
+
+392
+01:20:18,864 --> 01:20:23,904
+O yüzden şu fili çok önemli değil gerçi. Doğru çalıştığını gördük.
+
+393
+01:20:28,340 --> 01:20:37,920
+Şimdi aslında şu örnekte biz string noktaşı include etmediğimiz için adını L harfini, strlendeki L'yi büyük yazmamıza gidiyoruz.
+
+394
+01:20:37,920 --> 01:20:48,860
+Fakat include ettiğimiz durumlarda çakışma olmasın diye include edersek de çakışma olması söz konusu olacağından bunu hatırlatmak istedim.
+
+395
+01:20:50,860 --> 01:20:51,960
+Peki.
+
+396
+01:20:52,627 --> 01:21:17,268
+Şimdi elbette ki bütün hepsini biz yazmayacağız bu fonksiyonların. Stink.h tanımlı, epey bir işimize yarayacak fonksiyon var. Buradaki slide'da anlatılanların dışındaki çeşitli fonksiyonlar için Stink.h kitaplarına ki header dosyasında ilgili fonksiyonların nasıl kullanılacağına örnek de oluyor.
+
+397
+01:21:20,627 --> 01:21:46,247
+Şimdi, strcp string copy anlamına geliyor. Şöyle bir şey yapıyor. Source olarak verilen karakter katılımı destination olarak copy to olarak verilen adrese kopyalıyor.
+
+398
+01:21:46,804 --> 01:21:59,584
+Ve yeni kopyaladığı adresin başlangıcını gösteren bir pointer da döndürüyor. Bunu döndürmesinin sebebi kullanışlılığı arttırmak.
+
+399
+01:22:05,876 --> 01:22:13,596
+Hedef, hedef pointerı biz şey olarak tanımladık belki. İlla pointer olarak tanımlamadık.
+
+400
+01:22:13,596 --> 01:22:23,636
+Diyelim ki çift tırnak içerisinde yok hayır olmaz. Copy to oraya o şekilde olmaz. Çünkü sabit sting gibi şeyler kopyalanamaz.
+
+401
+01:22:25,076 --> 01:22:39,736
+Şimdi senaryo aklıma gelmedi. Yani hedef pointer'ın bir şekilde ulaşamadığı da acaba bunu geri döndürmesinin sebebi ne? Hemen bakalım. Şeye bakalım. Sling Lock Taş'a bakalım.
+
+402
+01:22:53,652 --> 01:22:58,631
+Sink.h. Buna bakalım şimdi.
+
+403
+01:23:02,931 --> 01:23:05,811
+Şimdi bakalım.
+
+404
+01:23:07,612 --> 01:23:10,791
+Konto F, T, T, T, C, T, Y.
+
+405
+01:23:11,931 --> 01:23:13,931
+Evet. Tıklar bakalım.
+
+406
+01:23:16,031 --> 01:23:20,492
+Yok tamam burada açıklamasını yazmamış. Yani sadece başlıkları vermiş.
+
+407
+01:23:21,412 --> 01:23:26,291
+Sebebinin ne olduğunu söylememiş. Olsun bakalım. Araşlanın biraz.
+
+408
+01:23:34,771 --> 01:23:35,771
+Evet.
+
+409
+01:23:45,043 --> 01:23:54,263
+Hocam, şey olabiliyormuş, hafızada bir yer ayırıp onu verebiliyormuşuz ilk parametre olarak.
+
+410
+01:23:55,380 --> 01:23:58,980
+O yüzden oranın adresini bize geri veriyormuş mesela.
+
+411
+01:23:59,100 --> 01:24:23,140
+Evet, malloc'da onları görmedik. O yüzden şu an benim de çok hatırımda yok. İleride görüyor olacağız. Doğru. Buraya direkt on the fly malloc ile bir şey açarız. Alan açarız. O alana yaz deriz. Ama o malloc ile açtığımız alan malloc fonksiyonu bana döndürdüğü başlangıç pointlarını kaydetmemiş olurum. İşte bu şekilde şu geri döndürdüğü sayesinde.
+
+412
+01:24:23,380 --> 01:24:38,239
+Kopyalamış olurum. Tamam, pekala. Teşekkür ederim açıklama için. Bu arada zaten şey, çok şu nedenle aradığım sorunun cevabı burada değildi. Arkadaşlar, teşekkür ederim.
+
+413
+01:24:41,619 --> 01:24:42,799
+Ya da, dönelim ki.
+
+414
+01:24:48,692 --> 01:25:04,112
+Şimdi, hedeften kaynağa, bütün hedefi değil de hedeften belli bir sayıda karakter kopyalamak istiyorsak, bu sefer de strn copy fonksiyonumuz var.
+
+415
+01:25:05,939 --> 01:25:08,760
+En adet, onu kopyalayacak.
+
+416
+01:25:09,139 --> 01:25:14,279
+Ki buraya verdiğim en aslında size boyunda.
+
+417
+01:25:14,279 --> 01:25:26,920
+Yani eğer benim, şimdi normalde karakter tek byte ile resim gelenebilir ama eğer Unicode destekleyen bir platformsa bu, Unicode'da bir karakter birden fazla byte ile resim gelenebilir.
+
+418
+01:25:27,359 --> 01:25:33,379
+Yine de doğru çalışacak ve sadece en adet karakteri kopyalamış olacaktır.
+
+419
+01:25:33,939 --> 01:25:35,379
+Enkopi fonksiyon.
+
+420
+01:25:36,479 --> 01:25:48,399
+strcat fonksiyonu bir stringin sonuna karakter ekleme fonksiyonudur.
+
+421
+01:25:48,399 --> 01:25:51,119
+Cat yani concatenate anlamında.
+
+422
+01:25:52,559 --> 01:25:56,959
+Veya bu stringin hepsini sonuna ekleme de
+
+423
+01:25:57,344 --> 01:26:04,703
+İlk en adet karakteri eklemek istiyorsak onun yine benzer varyasyonu strmcat şeyimiz var.
+
+424
+01:26:04,703 --> 01:26:09,703
+Ondan sonra cümle...
+
+425
+01:26:11,572 --> 01:26:26,952
+Şimdi, iki stringi karşılaştırmak bizim için yararlı olacaktır. İhtiyacımız olan fonksiyonlar, durumlar olabilecektir. Mesela diyelim ki öğrencileri isimlerine göre sıralayacağız.
+
+426
+01:26:30,484 --> 01:26:57,583
+Bu durumda acaba nasıl bir şey yapacağız? Normalde string sarama nasıldı? İlk stringi sözlük sırasına göre sıralıyorduk. Önce ilk harflerine bakıyorduk. Sözlükte daha önde olan ifade daha küçüktür deriz. Sözlükte daha ileride olan ifade daha büyüktür deriz. Örneğini yaparız şimdi sizinle birlikte. Önce ilk harflere bakarız.
+
+427
+01:26:58,484 --> 01:27:16,184
+Eğer birbirine aynı değilse, küçük olan sözlükte daha önce olan daha küçüktür denir. İlki harfler aynı ise ikinci harflere bakılır. Bu şekilde farklılaşan harf olana kadar devam ederiz. Eğer iki string birbirini tamamen aynı string ise o zaman geriye sıfır değeri döner.
+
+428
+01:27:26,484 --> 01:27:50,604
+Bu arada bu STL-CMP case sensitive'dir arkadaşlar. Yani küçük az büyük al fark eder. Ve bu arada şeyde pek deneyemeyeceğiz. Türkçe karakterleri hiç deneyemeyeceğiz. Çünkü zaten garip karakter olarak kendisini gösteriyor. Onların ASCII kodları neyse.
+
+429
+01:27:51,347 --> 01:28:06,648
+Ona göre bir sonuç verecek. Şu elimizdeki platformla da Türkçe karakterleri düzgün görüntüleyemediğimden onu çok fark ettiremeyeceğim. Ama hemen bir denemesini yapalım bu str compare fonksiyonunu.
+
+430
+01:28:11,315 --> 01:28:14,635
+Ya da belki bir sonraki slide da vardı. Yok. Tamam. Peki hala.
+
+431
+01:28:17,635 --> 01:28:23,275
+Şimdi mesela, string taşı da ekleyelim bu arada.
+
+432
+01:28:30,068 --> 01:28:31,007
+Taht'a ekleyelim.
+
+433
+01:28:31,747 --> 01:28:34,167
+Onun STRL'lerini kullanıldır.
+
+434
+01:28:36,207 --> 01:28:42,947
+Şimdi, STRL'ye 1 ve STRL'i tanımlayalım.
+
+435
+01:28:48,627 --> 01:28:59,627
+Ondan sonra, and this, and this, and this string diyelim. Ondan sonra ikinci string'i de girdirelim.
+
+436
+01:29:07,188 --> 01:29:13,484
+İkinci stringi de getirelim. Ondan sonra...
+
+437
+01:29:17,395 --> 01:29:26,036
+Comparsome Rizat diyelim.
+
+438
+01:29:26,036 --> 01:29:31,376
+Mütle D olarak ve şu sözünü bize söylesin.
+
+439
+01:29:31,655 --> 01:29:40,055
+STR-CMT, STR-1, STR-2 sonucunu yazsın bize.
+
+440
+01:29:46,804 --> 01:29:53,143
+Şimdi, esra birincisi baba, ikincisi de şu şekilde olsun.
+
+441
+01:29:53,923 --> 01:29:58,203
+Desin ki, diyor ki bana, adada biraz fazla şey olsun.
+
+442
+01:29:58,203 --> 01:30:00,000
+Şimdi ilk...
+
+443
+01:30:00,000 --> 01:30:27,779
+Parametre olarak str1'i, ikinci parametre olarak str2'yi verdik. Şimdi b harfi a harfinden daha ileride o yüzden daha büyük o yüzden pozitif bir sonuç verdi bana. İlk string kendisi daha büyük. Ben daha büyüğüm dedi ikincisine göre. O yüzden bir büyük ilk string ve şu sonuç bana verdi. Peki şöyle yapsaydım ne olacaktı?
+
+444
+01:30:28,000 --> 01:30:40,000
+Bu arada ben bunu çok yapıyorum. Şunu yapayım.
+
+445
+01:30:46,515 --> 01:30:53,555
+Şunu yapayım da sürekli sürekli son şeyi düzeltmekle uğraşmayalım. Mesela şöyle diyelim.
+
+446
+01:30:53,555 --> 01:31:05,775
+Ha, şey, string'e gidiyorum. Burada kodları değiştirmiyordum ki. Mesela birinci string cadde olsun. İkinci string ara olsun mesela.
+
+447
+01:31:06,739 --> 01:31:32,739
+Şimdi yine bir döndürüyor. Şimdi değişik platformlar, değişik sonuçlar üretebiliriz. Burada eğer ilk string ikincisinden büyükse her halükarda bir döndürüyor. İkinci string daha büyükse o zaman eksi bir döndüreceğini düşünüyorum. Birinci string o zaman karar olsun. İkinci string alfabe olsun.
+
+448
+01:31:35,091 --> 01:31:39,992
+K yine ilk başta büyüğü yazdım. Önce küçüğü yazman lazımdı.
+
+449
+01:31:44,992 --> 01:31:53,412
+Evet, şimdi ilk string ikincisinden küçük olduğu için negatif, eksi bir sayısı döndürdü.
+
+450
+01:31:53,412 --> 01:31:57,112
+Bu arada bunun case sensitive olduğunu da söyleyeyim.
+
+451
+01:31:58,391 --> 01:31:59,011
+Şu şekilde.
+
+452
+01:32:01,492 --> 01:32:15,692
+Mesela birincisinin küçük hali Ahmet, ikinci string küçük. Ha bu arada aynı olursak da sıfır olduğunu göstereyim. İki string tamamen birbirinin aynı içerik olarak. O yüzden sıfır döndürdü.
+
+453
+01:32:28,532 --> 01:32:48,412
+Önce büyük harfler geliyor, ondan sonra küçük harfler geliyor. O yüzden birinci sitim daha büyük olarak gözüktü. Sonuç pozitif bir geldi. Çünkü önce büyük A, B, C diye harfler sıralanıyor. Ondan sonra küçük A, B, C diye harfler sıralanıyor.
+
+454
+01:32:48,412 --> 01:32:56,532
+Ve case sensitive olduğu için büyük A, küçük A arasında ayrım gösterdi ve bu yüzden bir sonucunu döndürdü.
+
+455
+01:32:56,532 --> 01:33:21,472
+Bu durum bu. Diğerlerini de deneyebilirsiniz. Ama bunun içerisinde en değişik olanı bu strcmp idi. Onu denemek istedim. Sonra zaten daha değişik bir kod yazacağız. Şimdi sizinle birlikte. 15 dakikada yazılmasak bile aradan sonra devam ederiz.
+
+456
+01:33:27,380 --> 01:33:51,760
+Şu strcmp'ye benzer bir kod yazacağız. Diyeceğiz ki, kullanacağım iki karakter katını alsın. Tamam. Birincisini arayacağız. Birincisinin içerisinde arayacağız. Pardon, kompiyeredir. strcrt diye bir fonksiyon var aslında. String içerisinde string arama.
+
+457
+01:33:52,243 --> 01:33:59,243
+O da şurada olacak. Evet. STL STL. Şu aslında.
+
+458
+01:34:01,243 --> 01:34:10,243
+Bir stringin içerisinde arayacağız neyi? Şunu arayacağız. Aslında STL STL diye hazırladığı bir fonksiyon var. Yani yapılmışı var.
+
+459
+01:34:10,243 --> 01:34:16,243
+Ama şimdi biz örnek olması açısından kendimiz yapmaya çalışacağız.
+
+460
+01:34:17,087 --> 01:34:33,607
+İkisini kalacağız işte. İkincisini birincisinin içerisinde arayacağız. Eğer bulduysak hangi pozisyondan itibaren bulduğumuzu gönderir, yazılır şartıklarına aksi taktirde de eksi bir kullanacağız.
+
+461
+01:34:33,607 --> 01:34:44,487
+Bunu da yaparken şöyle diyor, pointer işlemleri kullan diyor. Yani sadece dizi işlemi yapma diyor.
+
+462
+01:34:44,880 --> 01:35:00,720
+Ona göre bir şeyi şimdi sizinle yazmaya çalışacağız. Bu arada fonksiyon şeklinde yazmakta bundan sonra bir beis görmemişiz yani. Ama nihayetinde şöyle bir şey yapabildiğimizi hatırlatırım size.
+
+463
+01:35:03,123 --> 01:35:30,603
+Bir diziyi direkt bir pointer'a parametre olarak atamamızda herhangi bir dat yok. Öyle söyleyeyim. O şekilde ilerliyoruz gibisinden. Şey söyleyebilirim size. Main fonksiyonum da burada mı? Burada. Tamam. Peki. Önce üstünden geçelim. Önce main üstünden geçelim. Birlikte yapmayacakmış. Zaten ders notlarına hazır yazıp eklemişim. Onun içerisinden gidelim şimdi.
+
+464
+01:35:31,123 --> 01:35:38,603
+Neyse, tamam. Bence şu an bu sırada uyudum. Geçen sene bu sırada var ya. İlerlemiştik zaten.
+
+465
+01:35:38,603 --> 01:35:44,503
+Peki abi. Şimdi ne yapacağız? İki karakter dizisi.
+
+466
+01:35:45,011 --> 01:36:07,412
+Tanımlayacağız. İçinde bulduysak hangi pozisyonda bulduğumuzu simgeleyen bir değişkinimiz olmak zorunda. İki stringi de kullanıcıdan isteyelim. Ondan sonra şu konumda buldu şeklinde yazacağımız fonksiyonu çağıralım. Şimdi gördüğümüz bu şekilde olacak. Peki fonksiyonumuz nasıl olacak?
+
+467
+01:36:11,572 --> 01:36:29,052
+Şimdi, öncelikle ilk mantığımız şu. Mantığın üstünden konuşalım. Şuradan gidelim. İngilizlerimiz kalsın. Bu bize yararlı olabilir. STV1, STV2 olsun.
+
+468
+01:36:39,060 --> 01:36:53,440
+Bul içerisinde, gerisinde bir şey olduğum önemi yok. Belirlikteki gösterilerde zaten bir şey oldu. Bul mu arayalım? An arayalım.
+
+469
+01:37:04,340 --> 01:37:23,060
+İlk karakteriyle aradığımız stringin ilk karakterine bir bakalım. Bunlar tutuyor mu? Tutmuyorsa zaten buradan başlamıyor demektir. Hemen ana stringimizin, büyük stringimizin bir sonrakine bakabiliriz.
+
+470
+01:37:27,796 --> 01:37:52,596
+Büyük String'deki kaldığımız yeri bir pozisyon iler ettim. Ama ikinci String'de tekrar en baştan almaya başlayacağım. S ile A'yı karşılaştıralım. Aynı değil. O zaman büyük String'imde tekrar bir pozisyon ilerleyeceğim. Bu arada iki karakter de biraz kısa oldu anlatmak için. A, N, B'yi arasın bu arada.
+
+471
+01:37:54,644 --> 01:38:05,764
+A'yı karşılaştırdım. Aynı değil. Büyük stringimde bir pozisyon daha ilerleyeceğim. Hatta ana diyelim. Anayı bulamayacak.
+
+472
+01:38:10,644 --> 01:38:13,423
+İkinci büyük stringimde A var.
+
+473
+01:38:13,844 --> 01:38:36,844
+İkinci karakterlerde de olabilir. İkinci karakterlerle karşılaştığımız zaman N ile N. Bu da tutuyor. Daha fazla karakterim de var. Üçüncü karaktere bakıyorum. B ile A. Şimdi bunlar uymadı. O yüzden...
+
+474
+01:38:39,604 --> 01:38:49,224
+Nasıl devam edeceğim? Şimdi ben aramaya yalnız, büyük string'e karşılaştırmaya, tuttuğu için karşılaştırmaya başlamaya, 3 pozisyonundan itibaren başlamıştım.
+
+475
+01:38:49,224 --> 01:39:03,464
+Bu arada ANB geçiyor, altta ANA geçiyor. Bu nedenle, şimdi artık N'den devam etmeliyim. En son bir yaptığım karşılaştırmada B'ye kadar geldim. Yani 5. indisi kadar geldim.
+
+476
+01:39:05,971 --> 01:39:09,571
+Büyük içerisinde küçüğü alamaya devam etmeye...
+
+477
+01:39:09,684 --> 01:39:37,684
+Etmem gereken yer bu dördüncü nokta olmalı. O yüzden benim aslında büyük stringte nerede kaldığımı tutacak iki ayrı değişkene ihtiyacım var. Birincisi o anda anlaştık hangi karakterden itibaren arama yapıyorum onu tutmak için. İkincisi büyük string ve küçük string arasında benzeşme bulduğum zaman ileriye doğru bakmaktır.
+
+478
+01:39:37,684 --> 01:40:00,000
+İkinci bir sayacım daha olmalı. Yani sayacı değişkenin daha olmalı. Ve bu ileriye doğru bakmadıkta kullandığım sayacı değişkenin her zaman yok her zaman değil. Bir de aslında STL 2'de de ilerlemek için bir sayacı.
+
+479
+01:40:00,000 --> 01:40:18,320
+Yani 3 tane sayatçı değişkeni tutabilirim. Ama aslında çok da 3 tane sayatçı değişkeni tutmama gerek olmayabilir. Çünkü bu ikinci sık zingin kaç karakter uzunluğunda olduğu belli. Yani şunu demek istiyorum.
+
+480
+01:40:19,167 --> 01:40:46,987
+Şimdi farklı değişken isimleri kullanmayayım. Kodda bakayım da onunla aynı şeyler kullanayım. Ve bu arada şimdi hem ilk harfler tuttu. Yani olası bir benzeşme var. Olası bir işlenme durumu var. Hem ana string içerisinde ilerliyorum. Hem alt string içerisinde ilerliyorum. Bunlar benzeştikçe...
+
+481
+01:40:46,996 --> 01:40:56,076
+Kaç karakter olarak benzeştiklerini de bir yerde saymam gerekecek.
+
+482
+01:40:56,076 --> 01:41:05,036
+Yani ya sayacağım veyahut da küçük string'de nerede kaldığımı tutacak.
+
+483
+01:41:13,460 --> 01:41:34,319
+Küçük stringin uzunluğuna eşitse o zaman buldum diyeceğim. Ama her seferinde string uzunluğunun fonksiyonunu çağırmak da çok verimli olmayacak. O yüzden benim kaç karakter eşleşti diye bir üçüncü değişken tanımlamam daha mantıklı olacaktır.
+
+484
+01:41:40,051 --> 01:41:45,671
+Şimdi fonksiyonumu itinince kafamda planladığımı düşünüyorum. Yazmaya başlayabilirim.
+
+485
+01:41:45,671 --> 01:41:46,631
+Şimdi.
+
+486
+01:41:47,380 --> 01:42:12,839
+Bir değişkenim olacak. Bu arada şey, aslında biraz tarihimi dizi düşünerek yaptım. Fakat bana soru da diyor ki, pointer işlemleri kullanarak yap. O zaman ben pointer kullanırsam eğer, kaç pointer kullanırsam indeks değişkenimin sayısı bir o kadar azalacak şeklinde söyleyebilirim.
+
+487
+01:42:16,404 --> 01:42:28,184
+İlk başta pointer üzerinden değil de normal dizi işlemleri şeklinde düşünüp daha sonra bunu pointer koduna çalıp içirilmek de belki yararlı olabilir. Artık o sizin düşünce tarzınıza bakar.
+
+488
+01:42:30,260 --> 01:42:55,260
+Şimdi bakıyorum. Önce bir ana string içerisinde ilerlemek için bir şeyin, indeks değişkenin olması gerekiyor. Ondan sonra şu ana kadar kaç tane karakter eşleşmiş onu tutmam gerekiyor. Onu da match kartlayışım. Sonra iki stringin uzunluklarını da ayrı birer tam süre değişkende tutmuşum.
+
+489
+01:42:58,260 --> 01:43:12,659
+Hesabı bile olsa, dizi hesabı bile olsa ben aramaya en kötü ihtimal bulamazsam, hiç bulamazsam nereye kadar bakacağım? Bunu tutmam gerekiyor.
+
+490
+01:43:14,579 --> 01:43:32,332
+Kafanızdaki düşünceli dışarıda for döngüsü kurmak yerine dışarıda while döngüsü de kurabilirsiniz. Çünkü for while cinsinden, while'ı da for cinsinden yapabilirsiniz. Hiçbir olam değil. Siz başta dersiniz ki belki while işte...
+
+491
+01:43:32,340 --> 01:43:46,799
+Yani bulana kadar ara. Bulana veya sonuna gelene kadar ara gibisinden farklı bir algoritma da kurabilirsiniz. O yüzden bunun farklı farklı çözümleri var. Ama ben şu an kafamda düşündüğüm örnek üzerinden ilerlemek istiyorum.
+
+492
+01:43:49,108 --> 01:44:15,887
+Öncelikle sıfırdan başlıyorum. Ne kadar arayacağım? İki karakterin arasındaki fark kadar arayacağım. Çünkü tekrar örneğime geleyim. İstanbul içerisinde ana kelimesini arıyorum demek ki. Şimdi bul ile buraya beşinci ince kadar geldim derim. Bul ile anayı karşılaştırdım. Bunlar aynı değil. Artık bundan sonra altıncına itibaren bakmama gerek yok.
+
+493
+01:44:16,692 --> 01:44:30,872
+Çünkü artık ikinci stringin sığcığı kadar yer kalmadı. O yüzden ben aramamı. İki stringin uzunluklarının farkı kadar tekrarlasam benim için yeterli.
+
+494
+01:44:31,347 --> 01:44:53,607
+Zaten daha fazla tekrarlamaya kalksam, şurada belki nan karakter var, tamam. Ve daha sonrasında bir karakter var. O yüzden belki buffer, overflow, core dump falan gibi arkadaşımın numusla karşılaştığı gibi bir problemle karşılaşmam belki. Ama şu ikincisi yeterince uzun olursa illa ki bunun sonuna fazla taşıp bir problemler ortaya çıkacak.
+
+495
+01:44:59,347 --> 01:45:03,207
+problemli koz ortaya çıkarmış olacağım.
+
+496
+01:45:04,827 --> 01:45:05,188
+Lütfen.
+
+497
+01:45:06,927 --> 01:45:11,947
+Yaptığım aramamı iki stingin uzunluklarının farkı kadar.
+
+498
+01:45:11,947 --> 01:45:16,887
+Ama eşittir koyuyorum. Küçüktür koyarsam son bir karaktere bakmayacak.
+
+499
+01:45:16,987 --> 01:45:19,587
+O da bana hatarlı kezler çıkartabilir.
+
+500
+01:45:20,287 --> 01:45:25,768
+Yani bulması gerektiği halde sonlarda yararlıysa bulamadığı kezler bakarlar çıkartabilir.
+
+501
+01:45:26,195 --> 01:45:29,235
+O yüzden ikisini farklı kadar karşılaştırma yapacağım.
+
+502
+01:45:29,235 --> 01:45:33,235
+Şimdi, ilk başta...
+
+503
+01:45:34,195 --> 01:45:52,895
+İki pointer da bana iki stringin ilk adreslerini gösteriyor olacak. Çünkü şuradaki main'den yaptığım parametre göndermeyi hatırlayın. STR1 dizisi birinci parametre olarak gidiyor. STR2 dizisi ikinci parametre olarak gidiyor.
+
+504
+01:46:02,195 --> 01:46:12,195
+PTR2, ikinci stringin ilk harfini gösteriyor olacak. Şimdi bunların gösterdiği değerler birbirine eşit mi diye bakıyoruz. Eğer eşitse...
+
+505
+01:46:13,140 --> 01:46:33,960
+Belki ondan sonraki de harfleri de eşit olacak mı? Bunu bakmaya başlayacağız. Bir sonraki harfleri de eşit olabiliriz. Eğer bir sonraki harfleri de eşitse daha da bir sonraki harfleri de karşılaştıracağız. Bunu nereye kadar karşılaştıracağız? Aynı olarak bulduğumuz eleman sayısı küçük stringin uzunluğu olana kadar.
+
+506
+01:46:34,676 --> 01:46:50,695
+Bakacağız. Eğer olana kadar hep aynıysa o zaman tamam bulduk diyeceğiz. Ama arada bir farklılık görürsek artık daha ileriye gitmeye gerek yok ikinci stankte. O zaman birinci stankte kaldığımız yerden bakmaya devam edeceğiz şeklinde çalışacağımızı söylemiştik.
+
+507
+01:46:51,252 --> 01:47:07,552
+O yüzden diyorum ki eşitlik sayısı, yani ortak karakter sayısı ikinci içinde aradığımız string gen uzununa eşit olmayana kadar bakacağız.
+
+508
+01:47:07,552 --> 01:47:09,652
+Bakıyoruz.
+
+509
+01:47:11,796 --> 01:47:31,436
+Daha ileri doğru bakacağımız yer varsa, bir eşitlik bulduk ve daha fazla ileri bakacağımız yer varsa, öncelikle bulduğumuz ortak harf sayısı işaretimizi bir arttırıyoruz. Ondan sonra şimdi birinci pointer değerimizi arttırıyoruz. İkinci pointer değerimizi de arttırıyoruz.
+
+510
+01:47:31,436 --> 01:47:39,016
+Yani döngünün ilk çalıştığı anda, şimdi PTR1 şunu gösteriyor. Ha bu arada şey yazsam mı?
+
+511
+01:47:39,828 --> 01:48:06,368
+PTR1'nin rengini sarı yapayım. PTR2'nin rengini de yeşil yapayım. İlk başta PTR1, STTR1 ile ilgiliydi. Sonra PTR2 ise yeşil. İlk başta
+
+512
+01:48:06,547 --> 01:48:33,408
+Durumlar bu. Tamam mı? Ve bakıyorum. Bu pointer'ın değerleri bir değil de aynı mı? Bakıyorum. Aynı değil. O zaman ne olacak? O zaman ne yapmam gerekiyor? Hiç pointer 2 ilerletmeme gerek yok. Pointer 1'i şuraya alacağım. İlerleteceğim.
+
+513
+01:48:35,252 --> 01:48:42,932
+Ve artık oradan itibaren büyük string içerisinde küçük string aramaya başlayacağım.
+
+514
+01:48:45,812 --> 01:48:54,052
+Ama önce bakıyorum, henüz bir eşleşme yok. MatchCount'umda sıfır. O yüzden şu return devreye girmiyor.
+
+515
+01:48:54,387 --> 01:49:06,207
+İçeriye giriyor. O yüzden Els'in içerisine giriyor. Daha henüz bir eşleşme yok. O yüzden pointer 1'i geri almama gerek yok. Kaldığı yerden devam edilmek.
+
+516
+01:49:08,787 --> 01:49:28,947
+Pointer 2, şu an Match Count'um 0, hiçbir ortak şey yoktu ondan sonra. O yüzden Pointer 2 geri gitmiş olmayacak. Olduğu yerde kalıyor olmayacak. Eğer daha önceden eşleşme vardıysa ama tam eşleşmediyse onu 0'a geri çekmem gerekecekti. Bunu da unutmamalıyım.
+
+517
+01:49:28,947 --> 01:49:36,747
+Ve forum içerisinde ilerlemeye devam ediyor. i0'dı, i1 oldu.
+
+518
+01:49:36,787 --> 01:49:57,987
+Peki hala. Bakıyorum. Artık bundan sonra i'nin 1 olması, i bende büyük stringin aynı zamanda eşleşme varsa da döndüreceği konumumdu. Eğer eşleşme varsa belki şu birden itibaren olabilir, i'nin derin bir artması for içerisinde gayet mantıklı.
+
+519
+01:50:04,659 --> 01:50:13,420
+İ sıradaki iterasyonda inci karakterler itibaren bakmaya başlayacaktım. O yüzden bir problemim yok bu noktada.
+
+520
+01:50:15,639 --> 01:50:19,059
+Peki, ilerleyelim. İ1 oldu. Peki, bu arada.
+
+521
+01:50:19,059 --> 01:50:31,460
+Bir de yazalım. Şuraya yazıyorum onu. İ1 oldu şimdi. İ0'dır. Problem bulamadık. İ1 oldu. Devam edelim.
+
+522
+01:50:33,619 --> 01:50:59,800
+Şimdi, pointer 1 ve pointer 2'nin gösterdiği yere bakıyorum. Pointer 1'in değeri S'ye gösteriyor. Pointer 2'yi A'ya gösteriyor. Herhangi bir eşleşme yok. O yüzden bir önceki iterasyonla tamamen aynı sonuçlar olacak. Pointer 2 hala A'da kalmış olacak ama STR1 yani pointer 1 bir ilerleyecek.
+
+523
+01:51:00,307 --> 01:51:19,547
+Ve i'nin değeri 2 olacak. Sonra yine eşleşme yok. O yüzden pointer'ın değeri bir ilerleyecek. Ve i'nin değeri de 3 olacak. Pekala. Şimdi biraz daha işler değişiyor. Farklı bir kez göreceğiz.
+
+524
+01:51:21,011 --> 01:51:35,831
+Şimdi bakıyorum. Ptr1'in değeri, Ptr2'nin değerini eşit mi? Şu an eşit. Ptr1'in değeri de A, Ptr2'nin değeri de A. Peki. Ve match count len 2'ye eşit mi? Şimdi match count'u hem de so far hiçbir match bulamamıştık.
+
+525
+01:51:41,587 --> 01:52:05,427
+Match Count'un da sıfır. Şu anda. Match Count'un, L2'ye eşit değil sıfır, 3'e eşit değil. Peki. İçeri girdi. Match Count'un değerinin bir altını. Peki. Güzel. Bir oldu. Güzel. Zaten şu an ilk bir eşleşmeyi bulduk. Ondan sonra. Artık bundan sonra her ikisinin de ileri bakmaya başlayacağız. Hem büyükte hem küçüktü. Peki.
+
+526
+01:52:06,100 --> 01:52:09,840
+Bu nedenle pointer 1 ve pointer 2'yi bire arttırdı.
+
+527
+01:52:10,000 --> 01:52:14,960
+Yani artık pointer ve pointer 2 bir sonraki elemanı gösteriyor olacak.
+
+528
+01:52:17,579 --> 01:52:21,000
+Ama şu noktayı da bir değişik renkle kaydedelim.
+
+529
+01:52:21,100 --> 01:52:26,619
+Çünkü daha sonra bundan bir sonraki noktaya geri dönebilmemiz gerekecek.
+
+530
+01:52:27,140 --> 01:52:30,279
+Bir sonraki olacağı için şunu bir mavide işaret edelim.
+
+531
+01:52:30,279 --> 01:52:31,260
+Peki.
+
+532
+01:52:32,112 --> 01:52:39,192
+Pointer'ın birini bir arttır dedi. Peki artsın. Ve Pointer 2'nin değeri de bir artsın.
+
+533
+01:52:42,572 --> 01:52:43,731
+Arttı. Peki abi.
+
+534
+01:52:45,612 --> 01:52:54,011
+Wireless'ın başlangıcına geri döndük. Pointer 1'in değerini, Pointer 2'nin değerini birbirine eşit mi? Bakıyorum. N ve N. Eşit. Peki güzel.
+
+535
+01:52:54,011 --> 01:52:57,792
+Ve daha Match Count to Len 2 oldu mu?
+
+536
+01:52:58,804 --> 01:53:24,224
+MatchCount daha len 2 olmadı. Tamam. İçerisine girdim. MatchCount'u bir arttırdı. Peki, artık iki harfimiz birbirine eşleşiyor. Pointer ve Pointer 1 ve 2'yi birer ilerletti. Peki, ilerlesin bakalım. Pointer 1 ilerletti. Pointer 2 de bir ilerletti. Güzel.
+
+537
+01:53:25,492 --> 01:53:38,731
+Wire'a geri geldi. Pointed ve 1 ve pointed 2'nin değerli birbirine eşitme. Bakıyor. B ve A. Eşit değil. Zaten o zaman entry ile bağlı olduğu için Wire'dan çıktı.
+
+538
+01:53:39,828 --> 01:53:58,347
+Bakıyorum. Şu ana kadar bulduğum eşleşen half sayısı küçük string'e eşit mi? Bakıyorum bu iki, o üç değil. O yüzden konum dön dönmeyecek. Zaten dön dönmemesi lazım. Doğru devam ediyor. Bulamadı çünkü. Peki. O yüzden return iyi demedi. Elsin içerisine geldi.
+
+539
+01:53:59,315 --> 01:54:21,436
+Şimdi bakalım doğru bir işlem yapacak. Pointer 1'i eksiltti. Match count eksi 1 kadar. Pekala. Bakın şimdi. Match count 2. 1 eksilt 1. Yani artık şu pointer 1'i bir geri al anlamında oldu bu. Boşaldı. Burası sarı oldu.
+
+540
+01:54:26,868 --> 01:54:44,488
+Pointer 2'de, bu sefer Pointer 2'yi eşleşen half-series kadar geriyi döndürdü. Çünkü en baştan devam etmemiz gerekecek alt stringin karakterlerini. Match count 2'ydi. 2 azalt. Buradan 1-2 geri gidiyor. Şu noktaya geri gidiyor.
+
+541
+01:54:46,628 --> 01:54:48,248
+Şurasının yeri de boşalıyor.
+
+542
+01:54:52,115 --> 01:55:05,055
+Ve Match Count'u da sıfırlar. Evet, artık bundan sonra yeni bir filmim yok. Tekrar bakmaya başlayacağım anlamında. Bunu sıfırlamayayım. Unutmamak lazım. Ve ondan sonra...
+
+543
+01:55:05,055 --> 01:55:16,935
+Fonun bir sonrakine gidiyor. İ artık 4 oluyor. Hem şu an artık buluyorsam bireyi 4. pozisyonundan itibaren buluyor olacağım eğer bulabiliyorsam.
+
+544
+01:55:17,755 --> 01:55:28,815
+2 stringi karşılaştırmaya da büyük stringde kaldığım yerden devam ediyor olacağım. Daha da işte ANB ile ANA'yı karşılaştırmaya başladım.
+
+545
+01:55:31,859 --> 01:55:45,119
+Bu üç ile mavi ile işaretliğim yerin bir sonrasından aramaya devam etmem gerekiyordu ki doğru yerden aramaya devam ettiğimi de şimdi gördüm. O yüzden artık şunun içerisini de boşaltabilirim.
+
+546
+01:55:49,011 --> 01:56:01,891
+Küçük string içerisinde geri gitme zorunluluğunun da doğru çalıştığını gördük. Büyük stringte de kaldığımız yerden doğru devam edebiliyor muyuz? Edebildiğimizi gördük.
+
+547
+01:56:02,484 --> 01:56:21,524
+Bu şekilde ilerleyeceğiz. Hiçbir zaman hiç eşleşme bulamayacağız. Ve nihayetinde i'nin şu en son 5 değerinde de bu ile ana eşit olmadığından i6 olduğunda döngüden çıkacağız. Ve nihayetinde bize eksi bir dönmüş olacak. Bulamadık.
+
+548
+01:56:22,644 --> 01:56:47,184
+Bulabileceğimiz senaryoyu ise 10 dakikada verdikten sonra yapalım isterseniz arkadaşlar. Taşılmış oldum biraz. Ama şu bir kere girmişken şu ilerleme işini yarıda bırakmak istemedim. O yüzden aramız 11.00 ile 11.10 arasında olsun arkadaşlar.
+
+549
+02:07:44,787 --> 02:08:07,427
+Evet arkadaşlar, saat 10.15 şey yaptık. Kaldığımız yerden devam edebiliriz örneğimiz üzerinden çalışmaya. Bu arada bölüm üzerinden de yazışmalar geçti. Evet, gerçekten yarın öğleden sonra tatil. Yarın öğleden sonraki dersler ve daha da sonraki labda yapılmayacak kesinlikle. Onu da teyidini yazalım.
+
+550
+02:08:13,011 --> 02:08:18,551
+Sonraki ders ve daha sonraki ladla.
+
+551
+02:08:21,431 --> 02:08:25,731
+Bayağı çaktı şeklinde kaydımıza düşer.
+
+552
+02:08:29,747 --> 02:08:33,688
+Şimdi bu eşleştirme olmamaya devam edelim.
+
+553
+02:08:35,155 --> 02:08:58,155
+Hiç alt stringde ilerlemediğimiz duruma baktık. Alt stringde bir noktaya kadar ilerlediğimiz ama tüm eşleşme bulamadığımız duruma baktık. Şimdi alt stringde eşleşme bulacağımız noktaya bakalım. İstanbul'un içerisinde ANB arayalım. En başta…
+
+554
+02:08:59,412 --> 02:09:08,292
+Pointerlarımız ilk başlangıç noktalarında olacak. I0, Match Count 0 olarak arabamıza başlıyoruz.
+
+555
+02:09:09,779 --> 02:09:37,460
+Şimdi bunun içerisinde kısmi eşleşme olduğunda hiç eşleşme olmadığı zaman da düzgün ilerlediğini görmüştük. Bu yüzden ben biraz daha da hızlı örneği bitirmek açısından şu noktaya kadar ilerlemiş olmak istiyorum. Aynı şeyleri anlatacağım çünkü. Şuradaki eşleşmeyi bulana kadar ilerlemiş olacağım.
+
+556
+02:09:37,779 --> 02:09:42,559
+Bu noktada i eşittir 3, match count ise 0 olaraktan.
+
+557
+02:09:42,559 --> 02:09:56,519
+3. 0, 1, 2. Bu noktadan itibaren ilerlemenin doğru olduğunu görelim sizinle.
+
+558
+02:10:00,000 --> 02:10:03,659
+Koda dönelim.
+
+559
+02:10:03,659 --> 02:10:18,139
+Evet, şimdi pointer 1'in pointer 2'ye eşit olma durumunda ve henüz match count eşleşme sayısının ikinci stringin uzunluğuna ulaşmadığı durumu ikisi de doğru olduğu için wiring içerisine girecek.
+
+560
+02:10:19,279 --> 02:10:26,960
+Match count'un değeri bir altıcak bir olacak. Bundan sonra pointer 1 ve pointer 2'yi birer ilerleyecek.
+
+561
+02:10:28,148 --> 02:10:43,608
+Pointer 1'i 1 ilerletti. Şuradan tekrar mavi yapmanın gereği var mı? Hadi yapalım. Pointer 1 ilerledi. Pointer 2'de 1 ilerledi.
+
+562
+02:10:44,468 --> 02:10:49,828
+Ve işte MatchCount 1'i zaten yapmıştım. Tekrar bakıyorum.
+
+563
+02:10:50,323 --> 02:11:06,103
+P3'de 1 ve P3'nin değerleri eşit. MatchCount'la LEN2'ye ulaştı mı? Daha henüz ikisi de ulaşmadı. Bu da doğru. O yüzden wilding içerisine girdi. MatchCount'u birazdır. Pointer'ları da ilerletti.
+
+564
+02:11:06,103 --> 02:11:09,844
+MatchCount 1'de 2 oldu. Pointer'ları da ilerletti.
+
+565
+02:11:10,844 --> 02:11:16,344
+Şimdi şu sarı oldu. Bu da doğrusu yok.
+
+566
+02:11:16,979 --> 02:11:35,379
+Rengi yeşil oldu. İlerledi. Tekrar ikisinin değerlerine baktı. Değerleri aynı. Bu nedenle while'in içerisine girdi. Match count 3 yaptı. Ondan sonra pointer 1'i bir ilerletti.
+
+567
+02:11:39,572 --> 02:11:53,591
+Şöyle yapmalıyım. Pointer 1 ilerletti. STL 2'yi de ilerletti. Onun Pointer'ı yani daha doğrusu PTR 2'yi de ilerletti.
+
+568
+02:11:55,511 --> 02:12:00,891
+Şimdi aslında şurada slash 0 var. Yani bir problemimiz yok.
+
+569
+02:12:01,296 --> 02:12:15,376
+Eğer slash sır olmasaydı biri her iki string de aynı max ile uzunluğunda string olduğu için aslında buralarda anlamsız bile olsa çeşitli harfler, karakterler var. Gördük önceki dersi.
+
+570
+02:12:17,747 --> 02:12:33,107
+Zaten evet, şimdi pardon burada slash 0 olmasaydı, ScanF slash 0'ı zaten ekliyordu. Özür dilerim, slash 0'ın olmaması diye bir şey yok. ScanF yüzde S ile girdik. O yüzden null pointerı zaten ekliyor. Tamam o yüzden. Burada null var. Pekala.
+
+571
+02:12:37,747 --> 02:12:44,227
+Ptr1'in değeri Ptr2'ye eşit mi? Şimdi değil artık. Şimdi Ptr1'de U var, Ptr2'de null.
+
+572
+02:12:45,555 --> 02:12:48,315
+O yüzden zaten buradan...
+
+573
+02:12:49,043 --> 02:12:51,403
+Bu konuda artık false oldu.
+
+574
+02:12:52,263 --> 02:12:54,843
+False ve ne olursa olsun false.
+
+575
+02:12:55,203 --> 02:13:00,723
+Ama diyelim ki eğer bir şekilde son karakterde bulsa da doğru çalışacaktır.
+
+576
+02:13:00,823 --> 02:13:02,983
+Şu slash 0 olsaydı str1 için.
+
+577
+02:13:03,523 --> 02:13:11,643
+str2 de slash 0 peki ama bu sefer de match count len 2'ye eşit olmaması durumu tutarlı olmayacaktı.
+
+578
+02:13:12,163 --> 02:13:14,903
+Match count 3, len de 3.
+
+579
+02:13:14,903 --> 02:13:16,503
+3, 3'e eşittir.
+
+580
+02:13:17,043 --> 02:13:28,923
+3, 3'e eşit değildir. False bir önermi. O yüzden wireless'dan zaten çıkacaktı. Bu dediğim, eğer bul aratsaydım, ortaya çıkacak olan durum olacaktı.
+
+581
+02:13:31,003 --> 02:13:40,652
+Peki, o yüzden artık bu vire'den çıktı. MeshCount len 2'ye eşit mi? MeshCount, evet. Len 2'ye eşit 3. O yüzden i'yi...
+
+582
+02:13:40,659 --> 02:14:00,119
+Vitron iyi idi, iyi geri döndürdü. Ki i'nin değeri 3'tü. Bu konudan itibaren buldu. Ve fonksiyon sollandı. Şeklinde düzgün çalıştığını kezler için ispatladık. Şimdi üstünden geçerek ispatladık. Şimdi kodları da düzgün çalıştığını görelim bunu.
+
+583
+02:14:00,119 --> 02:14:04,460
+Şu in-depth first name'i alalım.
+
+584
+02:14:07,699 --> 02:14:19,699
+Şuraya yapıştıralım. Ondan sonra main fonksiyonunu da içeriyle alayım. Şuraya yapıştırayım.
+
+585
+02:14:27,539 --> 02:14:41,799
+Ve denemelerimizi yapalım. İstanbul'da ana arıyoruz. Bulamadı. Eksi bir döndürdü.
+
+586
+02:14:41,799 --> 02:14:48,960
+Şöyle deseydik, if pozisyon eksi bir sıv bulamadı. Aksi takdirde şu pozisyonda bulduğu şekilde daha güzelleştirebilirsiniz.
+
+587
+02:14:54,195 --> 02:15:06,076
+İstanbul'da ANB'yi bulduğunu göre, üçüncü konumdan itibaren buldu. 0, 1, 2, 3. Yani öyle sayıyoruz ya.
+
+588
+02:15:06,756 --> 02:15:13,296
+Eğer bunu son kullanıcı size deselik, dördüncü harften itibaren buldu derdik. İ artı biri yazdırdık ekrana yani.
+
+589
+02:15:17,256 --> 02:15:20,536
+Kolaylıkla. Ortada bir yerde bulduğunu gördük.
+
+590
+02:15:20,979 --> 02:15:25,979
+Arada bir yerde ve başka bir yerde bulduğunu görelim. İstanbul'da.
+
+591
+02:15:27,979 --> 02:15:30,159
+Bulsun, sıfırınç pozisyonda buldu.
+
+592
+02:15:33,908 --> 02:15:58,228
+İstanbul içerisinde bulu bulsun. Beşinci konuda buldu. 0, 1, 2, 3, 4, 5'ini konuda buldu. Yani her konuda buluyor gördüğünüz gibi. Hatta şey yapalım. Acaba overflow yaptırabilecek miyiz? Falan gibi düşünüyorsanız eğer. İstanbul içerisinde Ula'yı bulsun mesela. Ula. Ula Ula Niyazi.
+
+593
+02:15:58,735 --> 02:16:06,735
+Bulamadı gördüğünüz gibi. Çünkü problem yok. Yani şeyden taşmadı, İstanbul içerisinden taşmadı.
+
+594
+02:16:06,735 --> 02:16:21,735
+Ne bileyim işte. İstanbul'da... Mesela bulamadı. Yani herhangi bir çatlama patlama olmadan da çikolat çalıştı.
+
+595
+02:16:21,735 --> 02:16:24,203
+Şeyimiz bu, mantığımız bu.
+
+596
+02:16:25,235 --> 02:16:43,335
+Şimdi, Pointle aritmetiği üstünden bir iki şey söylemek istiyorum size. Şimdi, Pointle'da nihayetinde belli bir noktayı gösteriyor. Dizi, karakteristik içerisinde, dizi elemanları içerisinde belli bir yeri gösterdi.
+
+597
+02:16:46,804 --> 02:16:53,744
+Karşılaştırma örneğimizde yaptığımız üzere pointerların gerekirse ileri götürülmesi.
+
+598
+02:16:54,324 --> 02:17:15,164
+Gerekirse geri götürülmesi üzerinden örneklerimizi gördük. Şu örnekte ileri götürdüğümüz pointerı, örneğin hem STL-1'de hem STL-2'de geri götürdüğümüz pointerı gerektiği kadar geri döndürmeyi, geri götürmeyi de unutmamalıydık. Bu bir püs noktasıydı.
+
+599
+02:17:22,324 --> 02:17:36,204
+Sayılar kadar geri götürme ihtiyacımız oldu ve kaç sayı geri götüreceğimiz konusunda da bu match count'u tutaraktan ilerledik. Pointer üstünden işlem yaparken bunu düşünün arkadaşlar lütfen.
+
+600
+02:17:38,708 --> 02:18:03,087
+Tape'den bir müzik dinlerken ve tape'de bir sayaç olduğu noktada, siz dinlediniz, dinlediniz, şu noktadan itibaren sayacın değerini tuttuğunuz, ilerlediniz daha sonra, geriye dönüp bir şarkıyı tekrar dinlemeni istediğinizde, aklınızda tuttuğunuz başlangıç sayaç değerini geri sararken ulaşıp ulaşmadığınıza bakmanız gerekmekte.
+
+601
+02:18:03,087 --> 02:18:06,708
+Bu nedenle pointer ile ilgili işlem yapar ki...
+
+602
+02:18:06,708 --> 02:18:29,168
+Pointer ilerletme üstünden işlem yaparken de illaki bunu bir geri gidebilme durumu da gerekebileceğini düşünün ve ne kadar geri gideceğinizi hesaplamak veyahut da bir değişkende tutmak gerekeceğini kafanıza yazın ve ona göre kod ve algoritma üstünde düşünün. Bunu öneriyorum size.
+
+603
+02:18:34,164 --> 02:18:36,684
+Bu için biraz daha kolayını göstereyim.
+
+604
+02:18:36,684 --> 02:18:50,744
+Şey derken, strh içerisindeki fonksiyonları listelerken, pardon bunu da söylememişiz ama bir hazır var demiştim.
+
+605
+02:18:50,864 --> 02:18:55,584
+strh diye bir fonksiyon olduğunu, tanımlandığını söylemiştim.
+
+606
+02:18:57,684 --> 02:19:01,123
+string.h içerisinde. Şimdi şu kısmı görmeyin.
+
+607
+02:19:02,708 --> 02:19:20,708
+STR STR diye bir fonksiyon olduğunu söylemiştim. Bu ne yapıyor? Aslında bir string içerisinde diğer stringi arıyor ve ikinci stringin aradığı stringin...
+
+608
+02:19:21,332 --> 02:19:37,228
+İçinde aradığı string de hangi konumdan itibaren başladığını da bir pointer ile geri döndürüyor. Eğer bulamazsa da null pointer döndürüyor.
+
+609
+02:19:38,291 --> 02:20:01,951
+Bu anlamda eğer kodumuzu bunu kullanacak şekilde basitleştirebilir miyiz? Şimdi ona bakalım. Şunu geri alayım. Şuradaki isterseniz şunu üzerinden düşünelim. Ya da kod üzerinden düşünmek şey olabilir, kırışık olabilir. Şu örnek case'imiz, örnek vakamız üzerinden düşünelim.
+
+610
+02:20:04,659 --> 02:20:17,500
+Şu anda pointer renklerine ihtiyacımız olmayacak. Pointer da kullanmayacağız. Ya da pointer aritmetiğini az kullanacağız diyelim ki. Pointer ilerletme yapmayacağız.
+
+611
+02:20:22,291 --> 02:20:40,671
+Aritmetiği kullanacağız da ilerletme yapmayacağız. Şimdi str str kullanarak nasıl bunu yapacağız? Str str kullanarak ben str1 içerisinde str2 arattığımda bana sonuç pointer olarak şurayı döndürecek. Şurayı mavi letmişim ya.
+
+612
+02:20:48,656 --> 02:21:07,176
+Peki, şimdi elimde şu point'in konumu var. Bu point'in STR1 içerisinde acaba kaçıncı pozisyondan itibaren başladığını bulabilir miyim?
+
+613
+02:21:07,176 --> 02:21:11,616
+Acaba. Onu bir düşünelim.
+
+614
+02:21:13,876 --> 02:21:41,015
+PTR, STR'nin döndürdüğü point'ız bana şu noktayı gösteriyor. Acaba bu nokta, STR1'in kaçıncı konumu? Bunu şu şekilde hesaplayabiliriz. Şu an PTR1 şurayı gösteriyor aslında. İlk başta, hiç iler etmediğimiz için PTR1 bana burayı gösteriyor.
+
+615
+02:21:41,652 --> 02:22:01,612
+STR, STR'in döndürdüğü pointresi bana burayı gösteriyor. Şimdi bu bellekte diyelim ki 1000 numaralı göz, şu da bellekte 1003 numaralı göz. Adresler arasındaki farkı hesaplarsak o zaman kaçıncı konudan itibaren başladığını da bulmuş oluruz.
+
+616
+02:22:01,840 --> 02:22:09,840
+O yüzden aslında str str'nin gönderdiği pointer'ın direkt set değerinden eksi...
+
+617
+02:22:11,092 --> 02:22:29,652
+PTR1'in değerini çıkarttığımızda bize kaçıncı konumda olduğunu bulmuş oluyoruz. Tabii ki bu çıkartma işlemini yapmadan önce bakacağız. STRS-STR'in dönderdiği pointer null değilse bu iş yapacağız. Null pointer ise o zaman o çıkartma işlemini yapmamız programı göçülecektir.
+
+618
+02:22:34,195 --> 02:22:41,255
+Daha kolay olan index of v2 fonksiyonumuzu şurada yansıda gördüğünüz şekilde kodlayabiliriz arkadaşlar.
+
+619
+02:22:41,255 --> 02:22:43,255
+İşte bir tane...
+
+620
+02:22:43,379 --> 02:23:06,879
+Çarp Pointer'ı fonksiyon içerisinde tanımlayıp işte STL STL bunu döndürdüğü pointer neyse ona ata demişim. Eğer bu pointer null değilse o zaman işte o dönen pointer daha ileride bir yerde olacak veya en azından ilk konumda olacak. Yani negatif pointer elde etmemek için ilk başta bu PTR'ye yazmam gerekiyor.
+
+621
+02:23:10,131 --> 02:23:16,531
+Büyük string'in pointer'ını çıkarttığımda aradaki adres farkını görmüş oluyoruz.
+
+622
+02:23:16,531 --> 02:23:24,531
+Btr'ye bilmezse de o zaman eksi bir döntüs şeklinde daha basit bir fonksiyonu da yazabilirdik.
+
+623
+02:23:24,531 --> 02:23:26,731
+Ve soru da ne diyor?
+
+624
+02:23:26,731 --> 02:23:32,531
+Soru da diyor ki pointer operasyonlarını kullanın diyor.
+
+625
+02:23:32,531 --> 02:23:37,731
+Peki, burada pointer operasyonu kullandın mı? Kullandım.
+
+626
+02:23:38,100 --> 02:24:02,680
+Eğer index of v1'i isteyen bir soru da hani strh fonksiyonlarını kullanmayın demem lazım. Öyle bir şey demezsem belki uyanıklık yapıp şöyle bir yanıt yeterli olabilir. Ama yine de hoca gıcıklık yapıp ya normalde çözüm bu, bu biraz deyip acaba puan kırar mıydım? Ben genelde öyle değilim ama.
+
+627
+02:24:04,308 --> 02:24:18,087
+Belli de olmaz. Ama tabii şimdi eskili şakayım o. Bu da gayet kabul edilebilecek bir çözüm ihanetinde. Ama doğru çalıştığını görelim.
+
+628
+02:24:22,644 --> 02:24:28,644
+O yüzden kodu ekleyeyim bunu. Ve birisi silmiyorum. Bunu v2 olarak yazdım.
+
+629
+02:24:30,644 --> 02:24:38,644
+Şimdi v2 ile yapacağım bu işi. Derbeyi böyle çalıştı.
+
+630
+02:24:38,644 --> 02:24:47,644
+İstanbul'da önce ana koyalım. Bu da batamızı görelim. Ondan sonra şimdi...
+
+631
+02:25:17,363 --> 02:25:35,064
+İstanbul'da bulduk. Bulamadığımızı görelim. İkinci stringi birinciden daha taşınma gibi bir hatam var mı yok mu diye sünden bu gezimi yaptım. Problem olmadı. Mantıklı bir şekilde bulamadım anlamında. Eksi biri döndürdü.
+
+632
+02:25:39,924 --> 02:26:00,584
+İndeks of V1'i de anlatmak, İndeks of V2'i de anlatmak ikisi de gerekli. Çünkü farklı pointer işlemleri yapılıyor. Burada bir şeyleri adım adım ileri götürmek gerekirse geri gitmek şeklinde bir çalışma biçimi. Bunu da öğrenmeniz yararlı. Bu şekilde daha basit işlemi de öğrenmeniz yararlı nihayetinde.
+
+633
+02:26:02,772 --> 02:26:17,152
+Bunlardan soru soran arkadaşlarım varsa lütfen sorsun. Hocam ben şu kısmın şu gerekliğini tam anlamadım dediğiniz yer varsa buradaki örneklerden devam ederiz. Tekrarlarız o kısmını. Soru varsa lütfen sorun arkadaşlar.
+
+634
+02:26:19,192 --> 02:26:22,092
+Düşünürken ben ileride ne vardı ona bakıp hatırlatayım.
+
+635
+02:26:22,092 --> 02:26:23,992
+Tarsın tavsiyeyi.
+
+636
+02:26:24,691 --> 02:26:43,031
+Çok boyutlu dizilere bakacağız. Tamam, peki. Son için yeterince zamanımız var. Area of Point'a girer miyiz? Biraz gireriz. Tamam, peki. Ama çok fazla örnekleri yok. Onları dynamic allocation ile birlikte yapsak daha mantıklı olabilir.
+
+637
+02:26:48,884 --> 02:26:52,363
+Bir dakika bekleyin biraz sorularsa gelsin.
+
+638
+02:27:13,299 --> 02:27:20,299
+Peki o zaman. Şimdi bir boyutlu dizilerde örnek, pointer işlemlerini...
+
+639
+02:27:20,912 --> 02:27:43,772
+Bir boyutlu dizinin hem kullanılığını hem onun içerisinde pointer işlemlerinin nasıl yapılabileceğini gördük. Fakat biliyoruz ki 2, 3 ve daha fazla boyutlu dizilerde tanımlayabiliyoruz aslında. Bu durumlarda dizinin herhangi bir elemanına nasıl doğru pointer aritmetiğiyle ulaşırız bir onu görelim.
+
+640
+02:27:48,180 --> 02:28:00,639
+3-5 şeklinde biz tam sayı dizi tanımladığımızda 3 satır ve 5 sütunluk bir iki boyutlu dizi tanımlamış oluyoruz.
+
+641
+02:28:03,283 --> 02:28:20,923
+5 elemanlı 3 tek boyutlu dizi oluşturdum anlamına da gelebiliyor. Hemen Excel'de şeyini de gösterelim. Onun kutu kutu gör hali son derece güzel örnekler verebilmemizi sağlıyor.
+
+642
+02:28:33,012 --> 02:28:37,952
+Bu demek oluyor ki, aslında şuradan itibaren bakalım.
+
+643
+02:28:39,332 --> 02:28:51,391
+Şimdi, 5, 1, 4 ve şöyle yazsam 0, 1, 2.
+
+644
+02:29:00,079 --> 02:29:17,200
+Evet, satırdaki satır indisi ve üstündeki sütun indisi şeklinde aslında bana, hani içlerden şöyle doldurayım. Bu şekilde bir dizi tanımlamama yaramış ya da sebep olmuş oluyor. Şunları orta yaparsam daha anlayabiliriz.
+
+645
+02:29:27,092 --> 02:29:41,512
+Bu üç dediğimde ise aslında bu konu bana şurayı ifade ediyor olacak. Bu gözüm içerildiği değerli ifade ediyor olacaktır biliyorsunuz.
+
+646
+02:29:44,979 --> 02:29:53,920
+Şimdi aslında bu yapıyı 5 elemanlık 3 tane bir boyutlu dizi olarak da yorumlayabilirsiniz.
+
+647
+02:29:53,920 --> 02:30:05,739
+Yani 3 satır 5 üstün olan bu matrisi aslında 3 adet AR3 012, 5 elemanlı 01234.
+
+648
+02:30:06,260 --> 02:30:19,360
+Dizi, bir boyutlu dizi olarak da düşünebilirsiniz. Böyle düşündüğünüz zaman pointer'ın mantığını daha kolay oturtabilirsiniz kafanızda. İki boyutlu diziler için olan pointer mantığını kafanızda daha kolay oturtabilirsiniz.
+
+649
+02:30:22,899 --> 02:30:32,540
+Evet, şu örnek üzerinden gidelim. Veya işte aileye birikir. Bu nasıl bir şey ifade ediyor?
+
+650
+02:30:32,540 --> 02:30:42,700
+Burada bir şey yapalım. Birincisi tıs, ikinci süt olmuş.
+
+651
+02:30:44,819 --> 02:30:49,759
+Şimdi bunu aynı zamanda nasıl ifade ederiz?
+
+652
+02:30:51,316 --> 02:31:04,175
+Şimdi parantezlemede iç ve dış, yani daha içeride olan parantezin daha önce işlendiğini unutmayalım.
+
+653
+02:31:04,175 --> 02:31:15,355
+Şimdi madem şu şekilde söyledik, aslında şu satır benim AR0 satırım.
+
+654
+02:31:19,891 --> 02:31:39,811
+Şunu ifade ediyor. Ben A'liye sıfır dersem, bu bana bu bahsettiğim üç tane beş elemanlı tek boyutlu dizinin ilkini ifade ediyor olacak.
+
+655
+02:31:47,763 --> 02:32:01,443
+0, artı 2 yazabilirim. Pardon şu ad sıfır ifade ediyor. Şurası ise ad 1'i ifade ediyor aslında.
+
+656
+02:32:03,583 --> 02:32:10,663
+Bunu da şu yeşilimsi renklerle göstereyim.
+
+657
+02:32:12,819 --> 02:32:18,939
+Bütün satıra ifade ediyor. Şimdi şu diğer renklerini bozmak istemedim. Örnekle anlaşılsın diye.
+
+658
+02:32:18,939 --> 02:32:28,719
+AR-1 dersen şu satıra ifade ediyor. İkinci beş elemanlı bir boyutlu diziyi ifade ediyor.
+
+659
+02:32:36,884 --> 02:32:49,623
+AD1 bir bu dizinin 0,1 ikinci elemanı şeklinde artı 2 şeklinde göstereyim. Tabi tek başına böyle gösteremem. Bunu point olarak ifade etmem lazım.
+
+660
+02:32:53,299 --> 02:33:08,559
+Öbür türlü, şu baştaki pointer yıldızına parantezleri koymazsan, ar1, şimdi böyle bir eleman da yok, gösterdiği adres değerinin üstüne iki sayısını eklemekle incompatible type anlamında warning'e yol açacaktır.
+
+661
+02:33:08,559 --> 02:33:11,559
+Şu şekilde bir gösterimde.
+
+662
+02:33:19,924 --> 02:33:30,724
+Bir boyutlu dizisinin ikinci elemanının içeriği anlamında da şu şekilde yazdığım ifade aynı kapıya çıkmaktadır.
+
+663
+02:33:31,124 --> 02:33:32,324
+Bakayım doğrudu mu yazdım?
+
+664
+02:33:33,884 --> 02:33:36,484
+AR1 artı 2 ve Yıldız. Tamam peki.
+
+665
+02:33:37,084 --> 02:33:38,244
+Bu da aynı kapıya çıkıyor.
+
+666
+02:33:39,544 --> 02:33:46,924
+Ve aynı zamanda aslında şu da int AR35 dedim. Bu bana aslında dizinin adı.
+
+667
+02:33:47,507 --> 02:33:52,507
+Ar de aynı yeri gösteriyor.
+
+668
+02:33:56,180 --> 02:34:19,240
+Dizinin adı A-R idi ve ilk elemanı nedir? Sıfıra sıfır elemanı. Yani ben sadece A-R desem aslında şu gözün içeriğini kastetmiş oluyorum. Ama bunu göstergeç anlamında kullanıyorum. Tek başına A-R dizi adı. Yani sadece A-R'yi tek başına kullanılan point-it operasyonları ile birlikte kullanacaksam ancak yıldız gösterimi ile kullanabilirim.
+
+669
+02:34:23,711 --> 02:34:48,711
+Ar pointerına, şimdi, ar bana şurayı gösteriyor. Şöyle bir şey yazarsam, ar artı bir dersen, bu da bana aslında,
+
+670
+02:34:50,772 --> 02:35:04,452
+Şu noktayı gösteriyor olacak. Çünkü AR0 bu, AR1 demek. Benim ARM aslında ne demiştim? Bunlar 3 tane 5 elemanlık dizi demiştim.
+
+671
+02:35:04,452 --> 02:35:14,352
+Şimdi normalde sıfırıncı bu, birinci de bu dediğimden AR61 bana aslında şu noktayı gösteriyor olacak.
+
+672
+02:35:15,292 --> 02:35:16,492
+Şöyle şey edebilirim.
+
+673
+02:35:18,355 --> 02:35:40,435
+Şu tonla şu ton aynı dikkat ederseniz. İsterseniz ar köşeli parantez içinde bir demişim. İsterseniz parantez içinde yıldız ar artı bir demişim. Şimdi oldu. Şuradaki şu yeşil ile şuradaki şu yeşil aynı anlama geliyor. Ar bir de aslında bir dizi, bir boyutlu bir dizi.
+
+674
+02:35:41,236 --> 02:35:51,716
+Ar-61 parantez içerisinde başına yıldız koyduğunuzda da bu o diziyi, o bir boyutlu diziyi simgelen pointer başlangıç adresi anlamına gelmiş oluyor.
+
+675
+02:35:52,556 --> 02:36:03,216
+Peki şu içerideki daha koyu yeşile nasıl ulaşacağız? Bir tane pointer işlemi daha bir pointer göstergeci daha kullanmış olacağız.
+
+676
+02:36:04,512 --> 02:36:25,672
+Şimdi bakın, madem ar-1, ar-1 köşeli parantez içinde bir, ar-2 demişim. Şimdi tamamen benzer şekilde şuraya da artı 2 dedim ama bunu da bir öncekinin yerine geçen parantezleme şeklinde ifade ederim.
+
+677
+02:36:31,092 --> 02:36:39,992
+Eleman yerine parantez içerisindeki ifadeyi genişletme veya daraltma şeklinde düşünebilirsiniz yazdığım şeyleri.
+
+678
+02:36:45,139 --> 02:36:58,579
+Peki, fontların acaba rengini değiştirdik aynı yere gösterebilir miyim? Neyse, sözlü ifade ediyorum. O kadar ayrıntılı Google'a bulgararak da sorun çıkarız herhalde zaten.
+
+679
+02:36:58,579 --> 02:37:02,639
+Şimdi, aslında şöyle diyeyim.
+
+680
+02:37:03,459 --> 02:37:10,360
+Diyeyim ki, o ifadelerini nasıl kullanayım?
+
+681
+02:37:19,636 --> 02:37:29,835
+Ters yoldan anlatmaya çalışıyorsam onu nasıl anlatılmıyor, ona karar vermedim. Onu düşündüm de. Genişletmeyi gördük.
+
+682
+02:37:31,316 --> 02:37:45,916
+Sadece AR edersek bu iki boyutlu dizinin başlangıcı anlamına geliyor. İlk elemanın noktası. Fakat biz bunun içerisinde pointer üzerinden spesifik bir elemana ulaşmak istiyoruz.
+
+683
+02:37:45,916 --> 02:37:59,056
+Bunu nasıl yapabileceğimizi anlamak için önce bilmemiz gereken dizinin adı AR ise sadece AR köşeli parantez 0 dediğimde bunun dizinin ilk satırını ifade eden.
+
+684
+02:37:59,316 --> 02:38:23,396
+Bir deyim olduğunu aklımızda tutmamız lazım. Veya A'ye bir dersem de bunun bir indisli yani ikinci satırını ifade ettiğini bilmem lazım. Bu anlamda ben A'ye bir birinci satırının başlangıç noktası altı iki dediğimde bunun içerisinde iki göz ilerliyorum anlamına geliyor.
+
+685
+02:38:25,843 --> 02:38:45,943
+Herhangi bir köşeli parantez içinde olmayan düz rakamla o kadar göz ilerle anlamına gelmiş oluyor. Ama ister köşeli parantez içerisinde yazdığım rakam olsun, ister kendisi yıldızlı bir parantez içerisinde yer alan, yer olsun, aynı anlama geliyor.
+
+686
+02:38:53,843 --> 02:39:06,103
+Adresi ile Yıldız A-V-A-T-I-R
+
+687
+02:39:12,531 --> 02:39:28,651
+Bu aynı ifadedir ve birbirinin yerine kullanılabilir. O yüzden ar kaşığı parantez içinde bir yerine yıldız ar artı bir diyebilirim. Bunlar tamamen aynı ifade.
+
+688
+02:39:28,651 --> 02:39:36,932
+Ar bir de bana şunu simgeliyor. Ar artı bir de bana tamamen aynı şeyi simgeliyor.
+
+689
+02:39:37,396 --> 02:39:58,556
+Bu nedenle, şu ifade, şu ifade, şu ifade, hepsi aynı şeyi anlatıyor. Çünkü şu ifade ile şu ifade de aynı ifadiyiz.
+
+690
+02:40:00,244 --> 02:40:09,484
+Böyle olduğunu bildikten sonra o zaman birbirinin yerine neyi koyduk da bir ifadeyi böyle genişlettik veya daraltabiliriz. Bunu da anlamış oluruz.
+
+691
+02:40:12,788 --> 02:40:19,888
+Biraz hileli ama odaklanıp düşündüğünüz zaman bulabileceğiniz şeyler değil bunlar.
+
+692
+02:40:23,188 --> 02:40:27,788
+Benzer şekilde istersek 3 boyutlu dizi de oluşturabiliriz.
+
+693
+02:40:29,328 --> 02:40:37,907
+Benzer şekilde, madem 4-5 deseydik, 4 tane 5 elemanlı bir boyutlu diziydi.
+
+694
+02:40:37,907 --> 02:40:48,368
+Şimdi char x 3-4-5 dediğimizde o zaman 3 tane 4 satır 5 sütunluk matris gibi düşünebilirsiniz.
+
+695
+02:40:49,396 --> 02:41:00,976
+Dört tane beş elemanlık bir boyutlu diziden, onun birleşiminden üç tane yaptım gibi de düşünebilirsiniz.
+
+696
+02:41:00,976 --> 02:41:12,936
+Bunun üstünden de istediğiniz şekilde şu yıldız gösterimiyle ifade edebilirsiniz.
+
+697
+02:41:13,436 --> 02:41:16,976
+Hemen ipucu. İki boyutlu dizide...
+
+698
+02:41:17,396 --> 02:41:32,436
+Sadece ve sırf pointer işlemleri üzerinden bir gözle erişmek için iki tane yıldız ihtiyacım var. Çünkü iki boyutlu dizi, iki pointer. Üç boyutlu dizide de üç tane yıldıza ihtiyacım olacaktı.
+
+699
+02:41:33,956 --> 02:41:34,355
+Yazalım.
+
+700
+02:41:35,355 --> 02:41:37,136
+Çavuş.5. Bunu da buraya yazalım.
+
+701
+02:41:41,556 --> 02:42:05,956
+Şimdi bu ifade, bozmak istemiyorum şunları. Bu ifade neye eşittir? Bir onu görür. Mesela böyle bir şeyim olsun. Dizim olsun. Üç boyutlu dizim olsun. Bu anlamda acaba x mesela bir, iki, üç gözümün içeriğini nasıl ifade edebilirim? Bir ona bakalım.
+
+702
+02:42:12,628 --> 02:42:27,628
+Bu bağlamda bu ifadeyi şöyle yazabilirim aynı zamanda. Yıldız derim. Bir daha yıldız derim. Ondan sonra. İlk isterim.
+
+703
+02:42:34,159 --> 02:42:53,159
+Gözü parantezde en dışarıda veya en solda yapmam gerekiyor. Şuradaki örnekten bakarak dersek eğer, artı bir, artı iki, artı üç şeklinde ifade edebilirim.
+
+704
+02:43:01,172 --> 02:43:15,352
+AR1-2 bana AR1-2 bunları hep aynı sırada gidiyor. 1-2-3'te de 1-2-3'ler soldan sağa aynı sırada devam ediyor. Yani tersine dönmesi söz konusu değil.
+
+705
+02:43:27,631 --> 02:43:52,671
+Bütün boyutlarımda bir ilerletiyor. Bunu parantez için aldım. İlk boyutunda ilerledim. Bundan sonraki artı ikinci boyutunda ilerletecek. Onu da yıldızladım parantezledim. Ondan sonra artı yazıp yazacağım ifade bunu üçüncü boyutunda ilerletecek. O yüzden yani şu ifadeye şu ifade de tamamen aynı anlamda ifadelerdir şeklinde düşünebilirsiniz.
+
+706
+02:43:54,675 --> 02:44:19,315
+Sırf pointer ile gösterin. Sırf indisi ile gösterin. Aralarda şu şekilde yaptığınız gibi ifadelerde yazabilirsiniz. Ara ifadelerde yazabilirsiniz. Tamam. Yani ya hepsini index veyahut da hepsini pointer aritmeti şeklinde düşünmeniz, bunu nasıl yapabileceğinizi keşfetmeniz yeterli olacaktır.
+
+707
+02:44:22,015 --> 02:44:43,175
+Şu sonraki iki şeye bakalım. Bu kolay. Şimdi eğer tek boyutlu dizilerden hatırlarsanız bir dizinin hem elemanlarını yazıp ilklendirme işlemini birlikte yapmak mümkün olabiliyordu. İki ya da üç boyutlu dizilerde de bu işi yapabiliyoruz.
+
+708
+02:44:43,636 --> 02:45:08,876
+Örneğin, iki boyutlu, beş satırlık, üç sütunluk bir matrisimiz olsun. Buna nasıl değer atacağız? Şimdi bu sefer hatırlatırım. Her bir satır kendi içerisinde bir dizi ve iki boyutlu matris aslında dizilerin dizisi. Bir boyutlu dizilerin dizisi şeklinde düşünebiliriz. Bu anlamda.
+
+709
+02:45:09,263 --> 02:45:24,183
+İlk Kıvlık Parantez'den bütün diziyi simgeliyor, madresi simgeliyor. Bunun içerisinde açtığım ilk Kıvlık Parantez, ilk satılımda simgelemektedir. Kıvlık Parantez içerisinde 1, 1, 1, 2, 3 yazdım.
+
+710
+02:45:24,724 --> 02:45:39,943
+Ondan sonra 40 plan tezimin dışına virgül yazıp ikinci sin yazdığımda bu sefer dizinin sadece ikinci satır birinci sütunlu eleman yazdım. Diğerlerini yazmadığım için boş. Yani sıfır.
+
+711
+02:45:39,943 --> 02:45:50,884
+Sıfırlıyordu hatırlarsınız. Daha önceki hafta bir boyutlu dizide tek eleman yazdıysak yine de geri kalan elemanları sıfırladığını görmüştük.
+
+712
+02:45:52,724 --> 02:46:02,743
+Aslında şimdi bunu girintilendirmede şöyle yazsam daha mantıklı olabilir. Anlaşılabilirlik açısından. Şöyle yazsam daha mantıklı olabilir.
+
+713
+02:46:05,064 --> 02:46:15,743
+Tabii dur, pardon burada sekme var. Yok. Şurada sekme var. Ondan sonra herhalde boşluk gitmem gerekecek. Evet, böyle olabilir. Ve ondan sonra...
+
+714
+02:46:16,340 --> 02:46:39,380
+Şurada da sekme var. Bundan sonra boş gitme mantıklı olacak. Evet, şey bu aslında. Daha bir düzgün gösterim bu. Anlayabilmek için diyorum. Bilgisayar için fark etmez tabii ki. İstediğiniz gibi girin trendirin. Bilgisayar için fark etmez. Ama gösterim düzgünlüğü açısından böyle yazsam daha doğru olabilirdi.
+
+715
+02:46:43,540 --> 02:46:49,120
+Fakat, şunun şöyle olduğundan emin değilim arkadaşlar.
+
+716
+02:46:49,120 --> 02:46:56,600
+Yani aslında, ha pardon, 5-3 sonrayı devam et.
+
+717
+02:46:56,680 --> 02:46:57,240
+Ha peki.
+
+718
+02:46:57,664 --> 02:47:08,943
+Tamam. Şimdi girintilendirmenin aslında bilgisayar için önemi yok demiştik. Kendi çalışma mantığı neyse o şekilde ilerler demiştik.
+
+719
+02:47:09,304 --> 02:47:19,584
+Şimdi aynı 5 satır 3 tutunluk bir dizi, daha doğrusu matriz tanımladığımızda o zaman bunun toplamda ne olacak? 5 çarpı 3, 15 tane eleman olacak.
+
+720
+02:47:20,275 --> 02:47:30,275
+Ben 5-6-3'lük maddesidir diye tanımladım. Buna rağmen tek bir tane Kıbrık Pantezi için yazıp onun içerisine çeşitli değerler yazarsam...
+
+721
+02:47:30,879 --> 02:47:58,879
+İşte girintilendirmeden veya boşluklandırmadan bağımsız olarak benim yazdığım ilk elemanı matristteki ilk eleman. İkinci elemanı matristteki ikinci eleman. Üçüncü elemanı matristteki üçüncü eleman. Ama artık bundan sonra ikinci satıra normalde geçirmesi gerek. Bak, kırbık parantezi, yeni kırbık parantezi açmadan veya kapatmadan dümdüz devam ediyorum. Gördüğü elemanları gördüğü sırada yer kalmazsa bir sonraki satıra geçerekten yerleştirmeye devam ediyoruz.
+
+722
+02:47:58,879 --> 02:48:22,920
+Şeklinde bir çalışma mantığı var. Gördüğünüz üzere, kıvık parantezleri kullanarak yazdığım sayı sırasıyla, iç kıvık parantezleri kullanmadan yazdığım sayı sırasında bellekte olan durumun birbirine göre nasıl farklı olduğunu görüyorsunuz. O yüzden parantezleme önemli.
+
+723
+02:48:24,275 --> 02:48:30,915
+Ve farklı parantezlemeler, farklı sonuçlar ortaya çıkarttır. Bunu da görmüş olalım.
+
+724
+02:48:34,415 --> 02:48:41,536
+İlerleyelim, ondan sonra geri dönüp belki diğer örneği ilerletelim.
+
+725
+02:48:48,180 --> 02:49:15,440
+Böyle bir şey görmüştük aslında. Peki arkadaşlar, o zaman şey yapalım. Ben bunu sonraki haftaya olan dersin başında bir point'ında tekrar hatırlamak anlamında kullanmam yararlı olacak. O yüzden yapabilirsem şuradaki örneğe, daha doğrusu şuraya geri dönmek istiyorum. Bakın, acaba ara formları doğru yazabilecek miyim? Bir onu görmek istiyorum.
+
+726
+02:49:16,180 --> 02:49:42,920
+Ayrıca acaba doğru mu ifade ettim? Onu simgelemek için kod da yazabilirim. Ama bu işi fazla uzatacaktır. Sizi dersleri çok fazla tutmak bilmiyorum. Peki eğer ben buna yanlış bir ifade edersen, ifade yazarsan doğruluğunu sınayamayacağım. Peki o zaman bugünlük burada bitirelim arkadaşlar. Zaten dersin süresinde gelmişiz.
+
+727
+02:49:43,316 --> 02:50:04,856
+Haftaya kaldığımız yerden devam edeceğiz. Katılan, farklı şeyleri deneyip de deneyimlerini paylaşan, takıldığım bazı yerlerde de bana hatırlatmalarda bulunan bütün arkadaşlarımı özellikle teşekkür ederim. Katılan, dinleyen arkadaşlarımı da teşekkür ederim. Haftaya görüşmek üzere. Kendinize iyi bakın arkadaşlar.

@@ -1,0 +1,2183 @@
+1
+00:04:06,003 --> 00:04:07,203
+Hoşgeldiniz arkadaşlar.
+
+2
+00:04:08,203 --> 00:04:12,043
+Beş dakika herkesin toplanması için bekledik.
+
+3
+00:04:13,043 --> 00:04:14,863
+Şu anda çok kalabalık yok.
+
+4
+00:04:16,264 --> 00:04:19,024
+Onaltı kişi var derse gelmiş olan.
+
+5
+00:04:21,063 --> 00:04:25,824
+Online derslerde maalesef bu sene katılım çok yüksek olmadı.
+
+6
+00:04:27,223 --> 00:04:32,563
+Umarım bunun sonunda size olumsuz bir geri dönüşü olmaz.
+
+7
+00:04:33,043 --> 00:04:58,623
+Çünkü, eee, onlineda, eee, özellikle devam etmeme durumu, daha sonradan izleseniz de çok verimlilik arz etmiyor. Eee, eee, iki haftadır Göksel Öcal'e beraberdiniz. Eee, bu hafta birlikte olacağız. Eee, arama algoritmalarını konuşacağız. Umarım hepinizin sağlığı ve genel olarak eee, keyfi yerindedir. Eee, birkaç açıklama yapacağım.
+
+8
+00:04:59,379 --> 00:05:23,920
+Birincisi özellikle kağıt görmek isteyen arkadaşların talepleriyle ilgili. Genelde sayınız çok yüksek, 220 kişisiniz ders, sizin tüm kapasitesi. O yüzden birebir maalesef kağıt gösterme şansımız yok. Pandemiden dolayı zaten bu konuda da aksiyon alamıyoruz. Ama gerçekten
+
+9
+00:05:25,716 --> 00:05:28,016
+beklediğinden çok farklı bir not alan varsa.
+
+10
+00:05:28,500 --> 00:05:54,860
+iletişime geçtiğinde özellikle hangi soruyu merak ettiğini hatasına vermek isteyen varsa yazabilir. Ama bunun dışında tek tek birebir maalesef geri dönüş yapamıyoruz. Genel hataları söylüyoruz. Ben de birkaç belki Göksel Hoca yorumu yapmıştım ama sınavımızla ilgili uzunca bir süre geçti. Yine bir kez daha hatırlatayım. Özellikle akış çizimlerinizde ciddi problemler vardı.
+
+11
+00:05:55,327 --> 00:06:20,887
+Akış diyagramı çizimlerinizde. Finalde buna dikkat etmenizi çok ciddi derecede öneriyorum. Çünkü for döngüsünden çıkan bir true call'unun bambaşka bir yerde stopa bağlanması, false call'unun for döngüsünün kendi içine dönmesi gibi böyle değişik tasarımlar vardı. Bunlar maalesef genel konseptimiz doğru olsa da çok yüksek puan almanızı engelleyen hatalar.
+
+12
+00:06:21,363 --> 00:06:24,803
+Bunlara dikkat ederseniz, final sıralımda daha başarılı olacağınızı söyleyebilirim.
+
+13
+00:06:25,483 --> 00:06:30,524
+Gelelim ödev kısmına. Bu sırada [öğrenci]'ın bir sorusu var. [öğrenci] sorunu alayım.
+
+14
+00:06:31,463 --> 00:06:35,063
+Hocam merhaba. Bu arada [öğrenci] kimlikte yanlış yazmışlardı.
+
+15
+00:06:35,663 --> 00:06:36,843
+Hocam [öğrenci] olacak. Tamam.
+
+16
+00:06:38,083 --> 00:06:42,203
+Hocam, proje, ödev, projeyle ilgili bir sorun var.
+
+17
+00:06:42,823 --> 00:06:46,303
+Evet, projeye şimdi geliyorum hemen. Ben onunla ilgili bir iki açıtım yapayım sonra sorunu alayım.
+
+18
+00:06:46,639 --> 00:07:10,439
+Proje ödeviniz biliyorsunuz bir sembol tahmin oyunu. Semboller sizin tarafınızdan tahtaya rastgele dağıtılacak ve her birinden ikişer tane olacak şekilde gerçekleşecek. Burada tahta kapalı bir şekilde siz ve bilgisayar tahmin yapacak. Bilgisayarın her turda aklında tutabileceği bir kapasite var.
+
+19
+00:07:10,800 --> 00:07:35,080
+her turun sonunda yeni bir tahmin geldiğinde eskisinin üzerine bu tahmin değerinin, bilginin yazılıyor olması lazım. Tabi burada farklı yöntemler uygulayan arkadaşlar olabilir, açıksınız. Yeter ki bunu raporunuzda nasıl bir algoritma kurduğunuzu yazın. Özellikle bilgisayarın karar verme süreci açısından. Hazır C'ye ait fonksiyonlar kullanabilirsiniz, bir sakınca yok.
+
+20
+00:07:35,439 --> 00:07:50,779
+Modüler programlama fonksiyonlar kullanabilirsiniz. Bir sakınca yok. Ama hepsini kendiniz yapmak haliyle. Yani kendiniz öğrendiyseniz, biliyorsanız, kendinizi daha geliştirmek için yapıyorsanız destekliyoruz. Ama onun dışında hazır bir şey.
+
+21
+00:07:51,151 --> 00:08:11,131
+bir yerden alınmış bir kod parçası kullanmanızı istemiyoruz. Bu konuda da hassas olduğumuzu söyleyelim. Ya da bunu yapanlar ekstra bir puan almayacaklar. Bu sadece sizin gelişiminiz açısından katkı sağlayacaktır. Ayrıca şunu da vurgulamak isterim. Ödevin içerisinde bir menü.
+
+22
+00:08:11,507 --> 00:08:28,447
+Yani programın içinde bir menü olması uygun olacaktır. Buna dikkat etmeniz gerekir. Öte yandan bazı görsel gösterimler düzgün bir şekilde yapılmalı. Kullanıcıya mesajlar verilmeli, tahta düzgün bir şekilde gösterilmeli. Bunlara dikkat etmeniz gerekiyor. Buralardan puan alacaksınız.
+
+23
+00:08:28,879 --> 00:08:51,680
+Ama görsellikten kasıt renkli olma zorunluluğu yok vesaire. Yeter ki düzgün olsun. Ama görsel olarak daha iyisini sunmak isteyen arkadaşlara da tabii ki mutluluk diyoruz. Biz onları destekliyoruz açıkçası. Bu konuda istediğiniz gibi özgür davranabilirsiniz. Sıra gelelim [öğrenci]'in sorusuna. [öğrenci] seni dinliyor.
+
+24
+00:08:52,148 --> 00:09:00,528
+Hocam, biz projeyi yazarken algoritma karmaşıktan dikkat etmemiz gerekir mi? Yoksa proje çalıştığında yeter mantığı var mı?
+
+25
+00:09:01,067 --> 00:09:10,368
+Ya şimdi birinci hedefiniz tabii ki öncü çalışması ama çok mariz iyileştirmen yapılabilecek yerler varsa orayı düzgün tasarlamanız önemli olacaktır.
+
+26
+00:09:10,888 --> 00:09:16,748
+Ama ilk etapta projenin doğru çalışıyor olmasına özen göstermenizi öneririm.
+
+27
+00:09:17,235 --> 00:09:24,855
+Arkasından vaktiniz kalırsa daha iyi bir tasarım olabilir mi diye bakarsınız. Böyle diyebilirim herhalde [öğrenci].
+
+28
+00:09:25,775 --> 00:09:26,375
+Teşekkürler.
+
+29
+00:09:26,655 --> 00:09:27,515
+Ben teşekkür ederim.
+
+30
+00:09:28,255 --> 00:09:38,735
+Tasanzade Extended Aski tablosu kullanabilir miyiz? Görsellik açısından, göstermek açısından soruyorsan evet kullanabilirsiniz. Bir sakınca yok.
+
+31
+00:09:38,735 --> 00:09:40,735
+Ama...
+
+32
+00:09:41,524 --> 00:09:47,344
+Semboller, rakamlar ve sayılar olarak ifade edilecek. Onu hatırlatmış olayım.
+
+33
+00:09:47,344 --> 00:10:00,063
+[öğrenci], menü nasıl olacak? Menüye siz karar vereceksiniz. Menüyü bizim söylememiz sizi sınırlar. Menüde neler olması gerekir, siz karar vereceksiniz.
+
+34
+00:10:01,716 --> 00:10:22,435
+Burada özellikle mesela menünün o anki durumunun gösterilmesi ihtiyaç halinde önemli olabilir. Açık halinin, normalde tahta kapalı gelecek. Menü içerisinde böyle bir özellik koyabilirsiniz. İşte kullanıcıdan bilgileri almak için kullandığınız mesajlar, kullanıcının kaç puanda olduğu vesaire bu tür.
+
+35
+00:10:22,847 --> 00:10:40,907
+bilgiler açısından menü olması faydalı olacaktır. İlk başta seçimler, tahtanın boyutu nasıl olacak, kolay, zor, orta zorluk bunların seçimiyle ilgili menüden faydalanabilirsiniz. Kart tasarımları için soruyorum. Hazan Zade, mikrofonla sorarsan daha iyi anlarım.
+
+36
+00:10:47,764 --> 00:10:49,764
+sormak istersen sorabilirsin.
+
+37
+00:10:53,395 --> 00:11:18,995
+Peki, [öğrenci], evet, şu an bilgisayarı yenemiyor olabilirsin. Biraz daha kolay versiyonda belki. Bu arada eşitlik yapabilirsiniz. Yani bilgisayarın hafızasında tuttuğu miktarlarla oynayabilirsiniz. Sadece sunarken bunlara dikkat ederseniz bir sorun yok. Kabul ettiğiniz bilgileri rapor içerisinde yazmanız bekleniyor. Farklı örnekler için çalıştırmanız bekleniyor.
+
+38
+00:11:19,764 --> 00:11:21,764
+Hocam
+
+39
+00:11:21,764 --> 00:11:38,764
+Bir saniye lokma. Belki bunu ödeve yazmamıştık ama bunu Göksel Hoca ile konuşacağım. Ödevi tanıttığınız küçük bir video çekmenizi bekleyebiliriz sizden. Şu anda henüz ödevde gözükmüyor ama bunu Göksel Hoca ile konuşacağım.
+
+40
+00:11:39,412 --> 00:11:51,731
+Yani nasıl bize birebir sunarken anlatıyorsunuz. Onun gibi bir video çekmeniz, öyle bir anlattığımız bir videoyu gündeme alabiliriz. Önümüzdeki hafta size bununla ilgili bilgi vereceğiz. Evet [öğrenci].
+
+41
+00:11:52,792 --> 00:11:59,612
+Hocam, bilgisayarın hafızasında tutma olayını nasıl tam olarak nasıl yapacağımızı bilmiyorum da, ipucu falan alabilir miyim acaba?
+
+42
+00:12:00,552 --> 00:12:05,211
+Mesela sen bilgileri nerede tutuyorsun? Dizi ya da matrisi tutuyorsun değil mi?
+
+43
+00:12:06,312 --> 00:12:06,632
+Evet.
+
+44
+00:12:07,135 --> 00:12:30,576
+Tamam. Mesela kartla ilgili ben oyuncu olarak üçüncü satır beşin üstünü açtığında bunu bilgisayara söylemiş oluyorum değil mi? Evet. Tamam. Üçle beşi açtığında görüyorum ne olduğunu içeriğini. Evet. Sen hangi kısmın açıldığını ve hangi sembolün çıktığını bir yerde tutarsan?
+
+45
+00:12:31,028 --> 00:12:32,028
+Buna uygun bir...
+
+46
+00:12:32,028 --> 00:12:33,708
+Yeri bir diziye mi aktarayım?
+
+47
+00:12:34,087 --> 00:12:36,248
+Artık işte onu ben söylemeyeceğim.
+
+48
+00:12:36,307 --> 00:12:37,107
+Onu sen karar vereceksin.
+
+49
+00:12:37,648 --> 00:12:38,408
+Teşekkürler.
+
+50
+00:12:38,668 --> 00:12:39,148
+Rica ederim.
+
+51
+00:12:42,148 --> 00:12:43,327
+Başka sorusu olan?
+
+52
+00:12:47,572 --> 00:12:57,072
+Peki, o zaman yavaş yavaş bu haftaki dersimiz için başlayalım. Şimdi ben ekran bağlantısını gerçekleştireceğim.
+
+53
+00:13:39,572 --> 00:13:41,355
+Şöyle şuradan açalım.
+
+54
+00:14:06,740 --> 00:14:08,620
+Şu an görebildiğinizi tahmin ediyorum.
+
+55
+00:14:12,916 --> 00:14:15,736
+Evet, bu haftaki konumuz arama algoritmaları.
+
+56
+00:14:20,724 --> 00:14:28,024
+Arama algoritmaları dediğimiz zaman bir veri grubu içerisinde herhangi bir bilgiyi aramak aklınıza gelecek.
+
+57
+00:14:29,044 --> 00:14:34,924
+Genelde de arama yapıyorsak, unique veriler yani tekrar etmeyen veriler üzerinde bir arama yaparız.
+
+58
+00:14:34,924 --> 00:14:41,324
+Örneğin okul numaranız başka bir kişi tarafından kullanılamaz, TC kimlik numaranız başka kişi tarafından kullanılamaz.
+
+59
+00:14:41,864 --> 00:14:47,424
+Kütüphanede bir kitabın bir tane kodu vardır ve siz
+
+60
+00:14:47,923 --> 00:15:14,923
+İlgili kişinin, ilgili öğrencinin, ilgili kitabın bilgisine erişmek için binlerce, milyonlarca kayıt arasında arama yaparsınız. Bankacılık sektöründe de aynı şekilde bir banka numaranız vardır ve sizin ilgili bilgilerinize arama yapılarak buluşulur. Bilgiler iki şekilde saklanır. Bir tanesi sıralı, diğeri de
+
+61
+00:15:16,467 --> 00:15:20,608
+Unsorted dediğimiz zaman. Aslında buraya ererey diyorum ama
+
+62
+00:15:20,608 --> 00:15:23,827
+şimdi biz burada dizi olarak kullanacağız.
+
+63
+00:15:24,567 --> 00:15:29,827
+Sonrasında göreceksiniz sadece dizilerde değil, matrislerde, başka veri yapılarında da arama yapabiliyorsunuz.
+
+64
+00:15:31,768 --> 00:15:34,347
+Sırasız bir dizide arama yaparken
+
+65
+00:15:34,347 --> 00:15:40,168
+Linear Search algoritmasını kullanacağız.
+
+66
+00:15:41,172 --> 00:16:02,988
+Yine sıralı bir dizide de arama yaparken DinerSearch'ı biraz değiştirerek kullanacağız. Onun ötesinde verilerin sıralı olması bize daha verimli algoritmalar tasarlamak için imkan sağlıyor. Bunlardan bazılarını yazacak olursam BinarySearch, JumpSearch,
+
+67
+00:16:06,163 --> 00:16:07,964
+İntepolationSearch.
+
+68
+00:16:14,067 --> 00:16:17,427
+Exponential Search gibi literatürde
+
+69
+00:16:21,331 --> 00:16:46,812
+Birçok sıralı dizi üzerinde arama yapmanı sağlayacak farklı algoritma seçenekleri var. Şimdi biz bugün ilk başta sırasız bir dizi üzerinde nasıl arama yaparız bunu birlikte ele alacağız. Örneğin size 5, 1, 2, 3, 6, 4 gibi bir
+
+70
+00:16:49,620 --> 00:16:51,899
+bilgi verildiğinde, veri verildiğinde,
+
+71
+00:16:54,000 --> 00:16:58,080
+bu da 3, 4, 5, 6 olsun.
+
+72
+00:16:59,800 --> 00:17:01,680
+n eşittir 6 diyelim.
+
+73
+00:17:01,840 --> 00:17:03,340
+Aradığımız eleman da mesela
+
+74
+00:17:03,340 --> 00:17:05,480
+5 olsun.
+
+75
+00:17:06,539 --> 00:17:07,700
+Bizden istenen onun
+
+76
+00:17:07,700 --> 00:17:10,119
+olup olmadığı varsa da yeri.
+
+77
+00:17:10,779 --> 00:17:13,900
+Bulduğunuz zaman yerini söyleyeceksiniz.
+
+78
+00:17:14,387 --> 00:17:20,867
+Eğer diyelim ki orada bu elemanı bulamadığınız zaman da bu elemanın olmadığını söylemeniz gerekiyor.
+
+79
+00:17:21,927 --> 00:17:35,187
+Yani iki tane case'den bahsediyoruz. Bir veriyi arıyorsanız varsa yeri yoksa olmadığına dair bilginin bilgisayar tarafından bu kayıt yoktur diye ortaya konulması gerekiyor.
+
+80
+00:17:35,187 --> 00:17:39,627
+Peki en kötü durum senaryosunda sırasız bir dizide
+
+81
+00:17:40,211 --> 00:17:46,971
+Kaç adet arama işlerini gerçekleştirmen beklenir? Yani size sormuş olayım.
+
+82
+00:17:48,491 --> 00:17:49,572
+Dizideki eleman kadar.
+
+83
+00:17:50,672 --> 00:18:06,032
+Evet, dizideki eleman sayısı kadar. Yani en kadar bir arama gerçekleştireceğim burada. Peki, bu elemanı bulduğum takdirde en kadar arıyorum. Elemanı bulamadığımı varsayarsam. Yani mesela sekiz arıyorum. O zaman kaç defa arama yapmam lazım?
+
+84
+00:18:06,740 --> 00:18:09,079
+Ya da kaç adım kontrolü yapman lazım?
+
+85
+00:18:11,240 --> 00:18:12,039
+Enkara mı hocam?
+
+86
+00:18:13,480 --> 00:18:14,320
+Yok, enkara değil.
+
+87
+00:18:15,300 --> 00:18:18,340
+Aramadığım, yani aradığım elemanı bulamadığımı ne zaman anlayacağım?
+
+88
+00:18:20,139 --> 00:18:21,860
+En tane arama yaptıysak?
+
+89
+00:18:22,780 --> 00:18:26,740
+En tane arama yaptıysam artı dizinin bir sonraki elemanı...
+
+90
+00:18:27,567 --> 00:18:54,627
+bakıp, yani daha doğrusu elemanına bakmayacağım, dizinin sonuna gelip gelmediğimi kontrol ettiğinde. Birinci kontrol, ikinci kontrol, üçüncü. Altıncı kontrolü yaptıktan sonra bir kez daha indisini arttırdım ve yedi olacak. İşte o kontrol, yani dizinin sonuna gelip gelmediğim kontrolü bizim için o aramanın başarısız olma durumunda en artı bir kadar arama yapılmasını sağlayacak.
+
+91
+00:18:55,731 --> 00:19:04,031
+Devam edelim. Şimdi bu algoritmanın nasıl olacağı yönünde bir çizim yapalım.
+
+92
+00:19:08,180 --> 00:19:13,860
+Start. Burada hızlı yazmak adına okuma işlemini bu şekilde yapıyorum.
+
+93
+00:19:20,372 --> 00:19:37,811
+ve buradan sonra benim bazı şeyler yapmam gerekiyor. Bu noktada arama işlemi için doğal olarak bütün diziyi gezeceğimden dolayı bir döngü oluşturmam lazım. Bu döngü hangi döngü olacak?
+
+94
+00:19:39,811 --> 00:19:40,372
+For.
+
+95
+00:19:40,372 --> 00:19:41,572
+Byd mı, ford mu?
+
+96
+00:19:42,771 --> 00:19:45,412
+En kadar gideceğimiz için ford olur bence.
+
+97
+00:19:46,291 --> 00:19:47,811
+Başka fikir olan var mı?
+
+98
+00:19:53,652 --> 00:19:54,652
+Peki.
+
+99
+00:19:54,652 --> 00:19:58,652
+Hocam, while kullanıp elemanı bulduktan sonra çıkarabiliriz.
+
+100
+00:19:58,652 --> 00:20:00,652
+Evet, şimdi olması gerek.
+
+101
+00:20:00,652 --> 00:20:01,652
+Bir şey sorabilir miyim?
+
+102
+00:20:01,652 --> 00:20:09,652
+While yapabiliriz ve sonunda da ifControl ile eğer endan küçük çıktıysa eleman yok, endan büyük çıktıysa eleman var diyebiliriz.
+
+103
+00:20:09,652 --> 00:20:17,652
+Şimdi bir kere burada while döngüsü kullanmamız gerekiyor. Çünkü biz elemanı nerede bulacağımızı bilmiyoruz.
+
+104
+00:20:17,807 --> 00:20:36,528
+Bunu bilmiyorsak birinci adımda da elemanı bulabiliriz, eninci adımda da elemanı bulabiliriz. Elemanı bulduktan sonra geriye kalan, diyelim ki bir milyon tane kayıt varsa onlara boşu boşuna bakmamalıyız. O yüzden burada for döngüsü kullanmak yanlış olacaktır. Kullanılması gereken while döngüstür.
+
+105
+00:20:43,635 --> 00:21:07,816
+Bu kontroller aslında temelde iki tane. Birincisi eleman var mı yok mu kontrolü. İkincisi de aradığımız eleman kümesinde kümenin sonuna ulaştık mı ulaşmadık mı kontrolü. O yüzden bir kontrol olarak x ağıdan farklı olduğu sürece diyorum.
+
+106
+00:21:09,011 --> 00:21:28,612
+Ama ilk Kontrol olarak da I küçük eşit N olarak söylüyorum. Yani aslında ilk Kontrolüm dizinin sonuna ulaşıp ulaşmadığımı bana söylüyor. İkinci Kontrolüm de elemanı bulup bulmadığımı söylüyor. Peki bu şartlarda döngü içerisinde yapmam gereken iş nedir?
+
+107
+00:21:41,140 --> 00:21:42,559
+Evet, sizden cevap bekliyorum.
+
+108
+00:21:44,860 --> 00:21:48,079
+İyi bir arttırmak dedi [öğrenci]. Hemen arttıralım.
+
+109
+00:21:49,660 --> 00:21:51,079
+Başka bir şey yapmama gerek var mı?
+
+110
+00:21:54,300 --> 00:21:56,960
+Teknik olarak yok çünkü zaten kontrolü
+
+111
+00:21:56,960 --> 00:22:01,059
+Biden'ın içerisinde yapıyorum.
+
+112
+00:22:02,500 --> 00:22:03,119
+Çıktım.
+
+113
+00:22:03,860 --> 00:22:04,880
+Çıktıktan sonra
+
+114
+00:22:04,880 --> 00:22:07,160
+bu döngüden
+
+115
+00:22:07,635 --> 00:22:18,675
+Hangi koşuldan dolayı çıktığımı bilmiyorum. O yüzden de acaba elemanı buldum da mı çıktım? Yoksa dizinin sonuna da mı geldi mi çıktım? Bunu çözmem lazım.
+
+116
+00:22:20,755 --> 00:22:23,476
+Bunun için de küçük eşittir en diyorum.
+
+117
+00:22:29,203 --> 00:22:30,864
+True ve False diyorum.
+
+118
+00:22:31,943 --> 00:22:33,563
+True koduna ne yazmam diyebilirim.
+
+119
+00:22:39,539 --> 00:22:43,480
+şey, ilgi. Evet, eleman bulunduğu için
+
+120
+00:22:43,480 --> 00:22:46,759
+yazmam gerekir.
+
+121
+00:22:47,380 --> 00:22:48,380
+false goal'a da
+
+122
+00:22:48,380 --> 00:22:50,420
+not found demem gerekir.
+
+123
+00:22:55,988 --> 00:22:59,488
+Ve burada stop devam gerekir.
+
+124
+00:23:01,008 --> 00:23:09,028
+Şimdi en büyük hatalardan biri bu çizimlerde mesela şuradan çıkıp buraya bağlayanlar olabiliyor.
+
+125
+00:23:09,807 --> 00:23:12,128
+Şuradan çıkıp buraya bağlayanlar olabiliyor.
+
+126
+00:23:12,908 --> 00:23:17,728
+Bunların düzgün akışını çizmeniz gerekiyor. Bunlara dikkat etmeniz gerekiyor.
+
+127
+00:23:17,728 --> 00:23:22,700
+Şimdi bakalım bizim akış diyagramımız gerçekten...
+
+128
+00:23:22,836 --> 00:23:26,716
+Doğru çalıştı mı? Şimdi şuraya gelelim.
+
+129
+00:23:26,716 --> 00:23:30,516
+Bunun için analiz yapmamız gerekiyor.
+
+130
+00:23:57,395 --> 00:23:58,796
+I'yı birden başlattık.
+
+131
+00:23:59,836 --> 00:24:01,036
+N'e 6 dedik.
+
+132
+00:24:02,236 --> 00:24:05,115
+Şimdi bir kere eleman, bir tane olan bir elemana bakalım.
+
+133
+00:24:05,496 --> 00:24:06,496
+X3'ü arayalım.
+
+134
+00:24:07,955 --> 00:24:08,996
+A1'de 5 olsun.
+
+135
+00:24:10,056 --> 00:24:11,415
+I küçük işten mi? Evet.
+
+136
+00:24:12,215 --> 00:24:13,556
+5, 3'ten farklı mı? Evet.
+
+137
+00:24:13,655 --> 00:24:15,375
+İçeri girdim. I'yı 2 yaptım.
+
+138
+00:24:17,016 --> 00:24:19,016
+A2, 1 oldu. 3.
+
+139
+00:24:19,296 --> 00:24:20,355
+Eşit mi? Değil.
+
+140
+00:24:20,996 --> 00:24:22,496
+I küçük işten mi? Evet.
+
+141
+00:24:24,084 --> 00:24:51,024
+3 oldu. 3'e baktım. Buradaki değer 2, 3 ile eşit mi? Değil. Sonra 4'e baktım. 4'te 3. 3, 3'ten farklı mı diye sordum. Hayır, değil. V koşulu olduğu için Wild Dönümsü kırıldı. 2 koşulda sağlanmadığı için. Ve ben burada Wild Dönümsü'den çıktım. Çıktıktan sonra if ile kontrol ettim.
+
+142
+00:24:51,508 --> 00:24:52,788
+Öğü küçük eşitendi.
+
+143
+00:24:53,107 --> 00:24:55,508
+Evet. Öğü küçük eşitendi olduğuna göre
+
+144
+00:24:55,508 --> 00:24:57,107
+öğü ekrana yazdırdım.
+
+145
+00:24:57,488 --> 00:24:57,728
+Yani
+
+146
+00:24:57,728 --> 00:24:59,948
+dördüncü
+
+147
+00:24:59,948 --> 00:25:02,388
+elemanda bulduğumu yazdırdım.
+
+148
+00:25:03,228 --> 00:25:04,248
+Evet bu doğru çalıştı.
+
+149
+00:25:05,087 --> 00:25:06,028
+Peki üç dilde
+
+150
+00:25:06,028 --> 00:25:08,367
+bu sefer dördörü olsaydık.
+
+151
+00:25:12,019 --> 00:25:20,900
+Bir, beş, altı olsun. Yine bu şekilde devam edeceğim. Hiçbiri eşit olmadığı için.
+
+152
+00:25:31,155 --> 00:25:33,315
+Evet, şu anda bir sıkıntı var.
+
+153
+00:25:35,275 --> 00:25:36,415
+Yazmayla ilgili.
+
+154
+00:25:37,835 --> 00:25:39,615
+Bir saniyemizi rica edeceğim.
+
+155
+00:26:04,788 --> 00:26:07,188
+Tekrar mutlaka yapacağım.
+
+156
+00:26:18,195 --> 00:26:19,195
+Tamam paylaştım.
+
+157
+00:26:19,195 --> 00:26:44,076
+Evet, bunu da sildim. Tekrar dedim. Beş, altı. Dört oldu, altı oldu. Dört dörde eşit olduğu için, buradan eşit olduğu için, eşitsizliği bozduğu için dışarı çıktım. Altı küçük eşit altı mı? Evet. True koluna gittim. O zaman yine ekrana
+
+158
+00:26:44,339 --> 00:26:53,579
+Altıyı bastıracağım. Bu case'leri kontrol ettikten sonra bir de elemanın olmadığı bir case kontrol edelim. Diyelim ki 7'yi arıyor olsaydım.
+
+159
+00:26:53,579 --> 00:27:09,819
+Burada 6 küçük eşit 6 mı? Evet içeri girdim kontrol yaptım. Aradığım eleman 7, 4'e eşit mi? Hayır değil. 4'e eşit olmadığı için bir kez daha dönecek ve i'yi 7 yapacak.
+
+160
+00:27:10,516 --> 00:27:36,844
+I7 yaptığı zaman doğal olarak şuradaki gördüğünüz bu koşul sağlanmayacağı için 7 küçük eşittir 6 koşulu. Biz dışarı çıkacağız. 7 küçük eşit 6 mı dediğimiz zaman koşul false olarak sağlanmadığı için false koluna gidecek. Not found diyeceğiz ve böylece elemanı bulamadığımızı söyleyip bu
+
+161
+00:27:37,395 --> 00:27:49,775
+algoritmanın tamamlanmasını sağlayacağız. Gördüğünüz gibi bir search algoritmasını, lineer search algoritmasını basitçe implement ettik. Buraya kadar sorsu olan var mı?
+
+162
+00:28:02,195 --> 00:28:04,575
+Bunu daha farklı bir şekilde yapardım diyen var mı?
+
+163
+00:28:12,692 --> 00:28:29,192
+Peki. O zaman bu sonraki problemimize geçelim. Şimdi daha önce sırasız bir dizide söylemiştik. Şimdi ise sıralı biz de çalışacağız. Verilen bir elemanın.
+
+164
+00:28:32,980 --> 00:28:34,980
+varsa yerini
+
+165
+00:28:34,980 --> 00:28:37,860
+yoksa
+
+166
+00:28:37,860 --> 00:28:39,580
+bulunmadığını
+
+167
+00:28:39,580 --> 00:28:42,220
+bulunmadığı bir ismi
+
+168
+00:28:46,675 --> 00:28:47,816
+Ekranı yazdıram.
+
+169
+00:28:54,003 --> 00:28:56,003
+algoritma, akış diyagramı çiziriz.
+
+170
+00:29:05,971 --> 00:29:25,372
+Şimdi, buradaki önemli bilgi sıralı bir dizide. Bu aramayı yapıyoruz. Peki sıralı bir dizide nasıl oluyor? 1, 3, 5, 8, 12, 25, 32 olsun.
+
+171
+00:29:28,071 --> 00:29:32,571
+Sıralı bir dizide arama yapmanın farklılığı nedir?
+
+172
+00:29:34,067 --> 00:29:37,248
+algoritmamızda neyi değiştirmemiz gerekir diye ben size sorayım.
+
+173
+00:29:42,067 --> 00:29:44,067
+Mesela dördü arıyoruz diyelim.
+
+174
+00:30:01,844 --> 00:30:26,644
+Evet, [öğrenci]'tan bir cevap geldi. [öğrenci]'ın da söylediği gibi, dörtten büyük olan değerlere geldiğimiz zaman, artık kendisinden büyük değerlerle arama yapmaya devam ettirmize gerek yok. Yani dördün olup olmadığını anlamak için dizinin sonuna kadar gitmene gerek yok. Kendinden büyük bir değere geldiği zaman, otomatik olarak artık o değerden itibaren...
+
+175
+00:30:26,900 --> 00:30:49,220
+herhangi bir şekilde döngü bulunma ihtimali ortadan kalkıyor. Peki o zaman biz bir önceki algoritmamızda hemen hemen benzer yaklaşımları kullanarak nasıl bir değişiklik yaparsak sıralı bir dizide bu söylediğimiz kendisinden büyük değerlere artık bakmayarak
+
+176
+00:30:49,875 --> 00:30:56,115
+bu arama algoritmasını daha bir hale getirebiliriz. Yapılması gereken şey şu.
+
+177
+00:30:57,956 --> 00:31:04,996
+Aynı while kullanacaksınız ama bu sefer kontrollerinize biraz değişiklik olacak.
+
+178
+00:31:05,476 --> 00:31:13,956
+Şimdi saat 14.32 size bir 5 dakika veriyorum. 5 dakika boyunca sırada bir dizide arama
+
+179
+00:31:14,579 --> 00:31:21,839
+gerçekleştirilen algoritma, akış diyagramı çizmeye çalışın. Bir önceki ekranını da getireyim. Bu ekrandan faydalanarak
+
+180
+00:31:21,839 --> 00:31:30,539
+acaba nasıl bir yaklaşım ile daha efektif bir arama yapabilirsiniz? Evet, süreniz başladı arkadaşlar.
+
+181
+00:35:46,228 --> 00:35:50,588
+Evet, kaldığımız yerden devam edelim istederseniz. Yapabilen var mı? Onu sorayım.
+
+182
+00:35:54,420 --> 00:35:56,420
+Yapabilenlere elka alırsın, mutfa.
+
+183
+00:36:14,260 --> 00:36:14,760
+[öğrenci]
+
+184
+00:36:14,760 --> 00:36:17,520
+Cevap verebilecek durumda mısın?
+
+185
+00:36:23,731 --> 00:36:25,891
+Biraz sesini ifşaltıyor musun sesin geldi?
+
+186
+00:36:25,891 --> 00:36:28,291
+Hala duymuyorum.
+
+187
+00:36:28,291 --> 00:36:32,051
+Yok, çok boğuk geliyor.
+
+188
+00:36:36,916 --> 00:36:45,916
+Yani yazarak ilerlemek istemiyorum. Bir sınıf ortam olabilmesi için. Sesin ne olabildiğince yüksek söylersen ben de aktaracağım söylediklerini.
+
+189
+00:36:48,916 --> 00:36:49,916
+Dinliyorum seni.
+
+190
+00:36:49,916 --> 00:36:51,916
+Bayi'nin içine şu an nasıl?
+
+191
+00:36:51,916 --> 00:36:53,916
+Ya fena değil.
+
+192
+00:36:53,916 --> 00:37:00,916
+Bayi'nin içine o küçük eşittir n yazdım ve x'i büyüktür a i yazdım.
+
+193
+00:37:00,916 --> 00:37:03,916
+Büyük eşittir a i olduğu sürece...
+
+194
+00:37:04,115 --> 00:37:09,695
+Ve x eşit değildir, a i olduğu süreci gönderdim. Sonra da o eşittir, u artıdır yazdım.
+
+195
+00:37:11,355 --> 00:37:16,336
+Büyük olduğu sürece, şey, büyük eşit olduğu sürece dedim. Büyük olduğu sürece ama büyük eşit olduğu sürece.
+
+196
+00:37:16,775 --> 00:37:18,016
+Büyük eşittir olduğu sürece.
+
+197
+00:37:18,336 --> 00:37:20,336
+Eşit olduğu sürece devam etmesi gerekiyor.
+
+198
+00:37:24,083 --> 00:37:26,543
+Eşitse devam etmememiz gerektir diye düşünüyorum.
+
+199
+00:37:30,804 --> 00:37:31,304
+Değil mi?
+
+200
+00:37:31,304 --> 00:37:32,304
+Evet.
+
+201
+00:37:32,304 --> 00:37:38,104
+Tamam, teşekkür ederim ama sonuçta kabaca bir fikir sahibi olduk hep beraber.
+
+202
+00:37:38,104 --> 00:37:44,104
+Şimdi tekrar dönecek olursak burada...
+
+203
+00:37:48,467 --> 00:37:52,087
+Yine bir sıkıntı var kalemle ilgili.
+
+204
+00:37:56,788 --> 00:37:58,788
+Tekrar bir aç kapı yapacağım.
+
+205
+00:38:22,804 --> 00:38:36,604
+Şimdi ilerleyelim. Start dedik. N dedik. Bu sefer BN olsun. Aradığımız eleman da Y olsun.
+
+206
+00:38:41,427 --> 00:38:43,427
+Burada yine I1'den başlayacak.
+
+207
+00:38:48,307 --> 00:38:49,408
+Bu sefer
+
+208
+00:38:49,408 --> 00:38:51,488
+Aslında
+
+209
+00:38:51,488 --> 00:38:54,628
+I yine küçük eşit AND diyeceğiz.
+
+210
+00:38:56,228 --> 00:38:57,648
+AND diyeceğiz.
+
+211
+00:38:59,688 --> 00:38:59,967
+Burada
+
+212
+00:38:59,967 --> 00:39:03,208
+Y
+
+213
+00:39:03,208 --> 00:39:05,628
+A
+
+214
+00:39:05,628 --> 00:39:06,408
+pardon
+
+215
+00:39:06,408 --> 00:39:08,648
+B I'den
+
+216
+00:39:08,648 --> 00:39:11,708
+büyük olduğu sürece yolumuza devam edeceğiz.
+
+217
+00:39:15,603 --> 00:39:19,663
+Böyle bir yaklaşık olarak bir konumuz var.
+
+218
+00:39:20,323 --> 00:39:22,563
+Ve burada her seferinde I'ye bir arttıracağız.
+
+219
+00:39:24,983 --> 00:39:25,623
+Peki.
+
+220
+00:39:27,443 --> 00:39:28,723
+Böyle olduğunu düşünüyoruz.
+
+221
+00:39:28,844 --> 00:39:32,423
+Burada çıktıktan sonra ne yazmamız gerekiyor?
+
+222
+00:39:34,723 --> 00:39:35,764
+Söyleyeyim mi hocam?
+
+223
+00:39:36,403 --> 00:39:36,643
+Tabii.
+
+224
+00:39:37,344 --> 00:39:40,823
+A, I eşitse X'e, Y'ye.
+
+225
+00:39:41,331 --> 00:39:49,911
+True olduğu halde ı'nın ı'nın çıktısını yapacağız. False ise not found diyeceğiz.
+
+226
+00:39:49,911 --> 00:39:53,091
+A, ı eşit ye ye.
+
+227
+00:39:53,091 --> 00:40:00,952
+True koluna ve false koluna. True koluna ı dedik.
+
+228
+00:40:00,952 --> 00:40:03,452
+Ve not found dedik değil mi?
+
+229
+00:40:03,452 --> 00:40:06,452
+Böyle söylüyoruz.
+
+230
+00:40:06,452 --> 00:40:07,083
+Evet hocam.
+
+231
+00:40:07,795 --> 00:40:19,115
+Peki, şimdi bizim iki koşulumuz vardı yukarıda, Wild'a. Hangisinden çıktığımızı nasıl bileceğiz? Bu arada A, I değil de bu B, I olacak onu da düzelteyim.
+
+232
+00:40:23,956 --> 00:40:26,496
+Bir bakalım, doğru mu çalışıyor, doğru çalışmaz mı?
+
+233
+00:40:27,256 --> 00:40:29,155
+Diyelim ki biz burada biri arıyoruz.
+
+234
+00:40:29,775 --> 00:40:36,416
+Biri arıyorsak, ilk turda bir birden büyük mü diye bakacağız, hayır değil, çıkacağız.
+
+235
+00:40:36,775 --> 00:40:40,016
+B bir, bire eşit mi diye bakacağız, evet, ı yazdıracağız.
+
+236
+00:40:40,296 --> 00:40:41,336
+Bir için okey, çalışır.
+
+237
+00:40:45,172 --> 00:40:46,172
+32'ye bakalım.
+
+238
+00:40:48,672 --> 00:41:11,172
+1, 2, 3, 4, 5, 6, 7 eleman vardı. Tek tek baktık. I, 7 küçük eşit 7 mi diye baktık. 32, 32'den büyük mü diye baktık. Değil. Çıktık. I, 7 idi. 32, B, 7'ye eşit mi diye baktık. Evet eşit. Bunu da bulduk.
+
+239
+00:41:11,539 --> 00:41:13,460
+Peki, 35'i arıyor olsaydık.
+
+240
+00:41:15,779 --> 00:41:18,460
+O zaman ne olacaktı? Bana kim söyleyebilir?
+
+241
+00:41:23,635 --> 00:41:43,496
+Bir artıracaktı, sekiz olacaktı I. Çok güzel. O yüzden şeyden çıkacaktı, döngüden çıkacaktı. Döngüden çıktı, sonra IF'e geldi. IF'de de B, I, 35'e eşit olmadığı için NOT FAM diyecekti. B sekize bakacaktı değil mi?
+
+242
+00:41:51,123 --> 00:42:14,764
+Bilmiyorsun. Artı oraya erişip erişemeyeceğinleri garantisi yok. Çünkü bizim dizimiz yedi elemanı. O yüzden bu tasarım elemanın olmadığı keyiz için çalışmaz. Yani elemanın dizideki elemanlardan daha büyük olduğu bir keyiz için diyelim. Ama diyelim dokuzu arasaydınız çalışır. İşte dördü arasaydınız çalışır.
+
+243
+00:42:15,072 --> 00:42:34,072
+Bütün geri kalan her türlü kez için çalışacağız ama tek çalışmayacağı nokta elemanın bu eleman dizisindeki elemanlardan daha büyük olması durumunda çalışacak. Peki, ne yapabiliriz? Bunu düzeltmek için?
+
+244
+00:42:34,072 --> 00:42:39,072
+Sondaki ve bir koşul daha ekleyebiliriz.
+
+245
+00:42:39,072 --> 00:42:42,072
+Evet, mesela ne diyebilirsin?
+
+246
+00:42:43,411 --> 00:42:45,411
+I, I,
+
+247
+00:42:45,411 --> 00:42:47,411
+küçüktür,
+
+248
+00:42:47,411 --> 00:42:49,411
+küçük eşittir ne?
+
+249
+00:42:49,411 --> 00:42:51,411
+Güzel.
+
+250
+00:42:51,411 --> 00:42:55,411
+Bu arada yine kalemimde bir sıkıntı var.
+
+251
+00:42:55,411 --> 00:42:57,411
+Çok özür diliyorum.
+
+252
+00:42:57,411 --> 00:42:59,411
+Bir sorun var.
+
+253
+00:43:13,268 --> 00:43:14,847
+Şimdi düzeltelim.
+
+254
+00:43:17,847 --> 00:43:20,908
+Şimdi ö, küçük, eşit, ent.
+
+255
+00:43:23,047 --> 00:43:25,047
+Bu ent mi olacak, or mu olacak?
+
+256
+00:43:37,588 --> 00:43:59,588
+küçük eşit en mi ve y b ve y eşit mi diye bakacak değil mi? Diyelim ki 35 geldi, 35 geldi, ı 8 oldu, eşit olmadığı için çıkacak. Ya da diyelim ki 34 geldi, 34 küçük eşit en mi?
+
+257
+00:44:00,148 --> 00:44:14,807
+Küçüklüğe, pardon, diyelim yirmi dört geldi. Yılı küçük eşitlendi, evet. Ama y, b, y, y eşitli, hayır değil. Demek ki bu şekilde bir ekstra koşul koymamız gerekiyor. Peki bu ekstra koşulu koymadan çözebilir miyiz?
+
+258
+00:44:24,947 --> 00:44:26,947
+hemen yine size yardımcı olacağım.
+
+259
+00:44:40,211 --> 00:44:41,511
+ufak bir değişikliğe gideceğim.
+
+260
+00:44:43,511 --> 00:44:44,851
+Ve şöyle yazacağım.
+
+261
+00:44:47,172 --> 00:44:51,311
+Ö, N'den farklı olduğu sürece ve
+
+262
+00:44:51,311 --> 00:44:55,912
+Y, B, Ö'den büyük olduğu sürece.
+
+263
+00:44:57,231 --> 00:44:59,791
+Buraya geldiğimde de sadece
+
+264
+00:44:59,791 --> 00:45:01,672
+Y
+
+265
+00:45:01,672 --> 00:45:07,511
+yine kalemde bir sorum var. Şöyle yapalım arkadaşlar.
+
+266
+00:45:08,083 --> 00:45:15,363
+Herhalde şarjıyla ilgili bir sıkıntı var diye düşünüyorum. Çok özür diliyorum. O sürekli olarak hata veriyor.
+
+267
+00:45:15,363 --> 00:45:25,003
+Bir ara verelim 14.46. Ben o sırada bir şarj edeyim kalemine. Saat 15'te kaldığımız yerden devam edelim.
+
+268
+00:45:25,003 --> 00:45:31,483
+Hem bölünce bölünmemiş olur. Bende kaldığım noktadan itibaren size daha detaylı bir şekilde gösterebilirim.
+
+269
+00:45:31,483 --> 00:45:33,483
+Evet 14.46 15'te görüşmek üzere.
+
+270
+00:58:57,268 --> 00:59:11,268
+Evet arkadaşlar, yeniden merhaba. Dersin ikinci bölümünde birlikteyiz. En son geliştirdiğimiz sıralı dizilerdeki arama algoritmasını biraz daha efektif hale getirmek için konuşuyorduk.
+
+271
+00:59:11,268 --> 00:59:23,268
+I küçük eşit, I n'den farklı olduğu sürece demiştik. O zaman buraya Y ve I'ye eşit mi diye tek başına bir...
+
+272
+00:59:23,956 --> 00:59:51,376
+Acaba koşul koyarsak, doğru çalışırım diye birlikte bakalım. Öncelikle biri arıyorsak, birden başladı, önden farklı olduğunu söyledik. Bir birden büyük mü değil, bir b bire eşit mi? Evet, diyecek ve doğru sonuç verecek. Diyelim ki dört, dördü arıyoruz. Bire baktık, dört birden büyük, ikiye baktık, dört ikiden büyük, üçe baktık.
+
+273
+00:59:51,987 --> 01:00:06,827
+4, 3'ten küçük. O zaman bayağıdan çıktık. Baktık, Y, B, I'ye eşit mi? Yani 4, 5'e eşit mi? Hayır değil. O zaman bulamayacak. Yine doğru çalışmış olacak.
+
+274
+01:00:09,347 --> 01:00:18,207
+32'yi arayalım. 32'ye bakacağız. Tek tek I'ye bir arttıracağız. 2, 3, 4, 5. En son.
+
+275
+01:00:19,027 --> 01:00:32,648
+I6 olduğunda içeri girecek. 32, 25'ten büyük. Bir daha dönecek. I7 olacak. 7, 7'den farklı mı diye bakacağız. Hayır, farklı değil. O zaman dışarı çıkacak.
+
+276
+01:00:33,907 --> 01:00:45,927
+Bileland çıktıktan sonra 32, B7'ye eşit mi diye bakacağız. Evet, 32 gerçekten B7'ye eşit. O zaman yine bulacak, doğru sonuç üretecek.
+
+277
+01:00:47,251 --> 01:01:14,032
+Gelelim en son keyzimize, yani hatalı olduğunu düşündüğümüz biraz önce tek koşulda çalışmayan keyzde 35'i arıyoruz diyelim. Yine 7.ye kadar geleceğiz. 7, 7'ye eşit olmadığı için çıkacak. Bu sefer 35 eşit mi? B7 diyecek. Yani 32 eşit mi? Eşit olmadığı için bulamadığını söyleyecek ve bu da bu keyzde doğru çalışmış olacak.
+
+278
+01:01:14,420 --> 01:01:38,099
+Yani benim değiştirdiğim kısım, şurada gördüğünüz Ö küçük eşit, N ifadesini Ö, N'den farklı olduğu sürece dediğim zaman, o zaman son elemanı hiçbir zaman while'da kontrol etmemiş oluyorum. Son elemanı her zaman burada kontrol etmiş oluyorum. O zaman dizinin dışına çıkma olasılarım da kalmıyor.
+
+279
+01:01:38,512 --> 01:01:46,432
+Şu kısım her türlü doğru çalışıyor ve eşitlik durumunda I'yı eşitlik olmalı durumunda da Not Found'u gösteriyor.
+
+280
+01:01:46,432 --> 01:01:48,592
+Buraya kadar sorusu olan var mı?
+
+281
+01:01:55,635 --> 01:01:57,015
+Anlaşılmayan bir şey var mı?
+
+282
+01:02:01,940 --> 01:02:15,340
+Peki, burada biraz daha farklı kurgu yapılabilir miydi? Hemen onu da gösterelim. Şöyle yapanlar da olabilir. Özellikle şu kısım için göstereceğim.
+
+283
+01:02:15,340 --> 01:02:22,500
+I farklı end dediniz. I birden başladı.
+
+284
+01:02:38,835 --> 01:02:44,075
+Burada y büyük bir bö diyeceğiz.
+
+285
+01:02:57,684 --> 01:02:58,804
+false kolona
+
+286
+01:03:01,204 --> 01:03:01,764
+found
+
+287
+01:03:03,523 --> 01:03:04,244
+religious
+
+288
+01:03:06,724 --> 01:03:07,523
+true kolona
+
+289
+01:03:24,967 --> 01:03:30,155
+İki videoyu izleyiciyaz.
+
+290
+01:03:24,851 --> 01:03:30,132
+Şurada fağınlısı fırını yapalım.
+
+291
+01:03:36,683 --> 01:03:44,683
+İki videoyu izleyiciyaz.
+
+292
+01:03:36,371 --> 01:03:37,971
+Bu kontrolü burada
+
+293
+01:03:37,971 --> 01:03:42,751
+döngü içerisinde de yapabilirdiniz.
+
+294
+01:03:43,391 --> 01:03:45,011
+Bu şekilde düşünmüş olanlar da olabilir.
+
+295
+01:03:45,251 --> 01:03:47,231
+Bu koşulu sağladığı sürece aynı şey.
+
+296
+01:03:48,132 --> 01:03:49,032
+Burada da geçerli.
+
+297
+01:03:49,632 --> 01:03:50,371
+Kontrolü
+
+298
+01:03:50,371 --> 01:03:52,371
+içerisine alabilirsiniz.
+
+299
+01:03:53,192 --> 01:03:54,371
+Ve burada bir font
+
+300
+01:03:54,371 --> 01:03:57,451
+değişkeni kullanarak ya da başka bir değişken kullanarak
+
+301
+01:03:57,451 --> 01:03:59,231
+kontrolü yapma şansınız.
+
+302
+01:03:59,771 --> 01:04:00,371
+Söz konusu.
+
+303
+01:04:00,971 --> 01:04:02,771
+Çıktıktan sonra yine
+
+304
+01:04:04,115 --> 01:04:11,316
+Gördüğünüz gibi, bire gidip, birden devam edebilirsiniz.
+
+305
+01:04:11,316 --> 01:04:23,316
+Tabii bir tane daha fazla kontrol yapmış oluyorsunuz her turda. Onun yerine doğrudan Kontrolü While'da yapmak daha akıllıca bunu da söylemiş olumlu.
+
+306
+01:04:23,316 --> 01:04:25,715
+Sorusu olan var mı?
+
+307
+01:04:41,876 --> 01:04:45,596
+Son iki konumuza geçelim.
+
+308
+01:04:48,716 --> 01:04:53,576
+Şu ana kadar gördüğümüz algoritmalar, linear search ya da bir başka değişikli sequential search.
+
+309
+01:04:54,956 --> 01:04:55,596
+Şimdi
+
+310
+01:04:59,155 --> 01:04:59,655
+Pardon.
+
+311
+01:05:04,820 --> 01:05:30,820
+binary source algoritmasını, ikili arama algoritmasını beraber ele alacağız. Şimdi bir sayı tahmin oyunu düşünün. Birden yüzüne kadar ben bir sayı tutmuş olayım ve siz bir tahmin yapacak olun ve benim aklımdaki sayı bulmaya çalışın. Benim size ipucu olarak söylediğiniz sayıdan küçük mü, büyük mü yönlendirmesi yaptığımı kabul edin.
+
+312
+01:05:31,795 --> 01:05:52,755
+İşte diyelim ki ben aklımdan yirmi iki tuttum, siz de yirmi beş dediniz. Ben küçük diyeceğim. İşte yirmi iki tuttum, siz on sekiz dediniz, ben büyük diyeceğim. Böyle bir oyunda nereden başlarsınız bir ile yüz arasında bir sayı tuttuğumu düşünürsek. Tahmin yapmaya.
+
+313
+01:06:01,748 --> 01:06:02,588
+Elli'den hocam.
+
+314
+01:06:03,967 --> 01:06:04,867
+[öğrenci].
+
+315
+01:06:06,967 --> 01:06:17,867
+Evet, [öğrenci]'den de, [öğrenci]'tan da, [öğrenci]'den de cevap geldi. Aynen dediğiniz gibi Elli'den başlarsınız. Peki Elli'den sonra ben yukarıda dersen ne dersiniz?
+
+316
+01:06:19,728 --> 01:06:20,288
+Yetmiş beş.
+
+317
+01:06:20,288 --> 01:06:29,148
+Yetmiş beş dersiniz. Yani aslında başlangıç ve son noktasının arasındaki noktayı söyleyerek
+
+318
+01:06:29,619 --> 01:06:49,979
+arama işlemini mümkün olduğunca hızlı bitirecek bir strateji uygularsın. İşte biz de aslında benzer bir stratejiyi binary search algoritmasında uyguluyoruz. 1, 5, 8, 12, 25, 38, 42, 56 gibi sayılar olduğunu düşünürsek.
+
+319
+01:06:58,260 --> 01:07:24,059
+Burada aramaya aslında dizinin orta noktasından başlarsınız. Ve diyelim ki aradığınız eleman 42, 25'i buldunuz. 42, 25'ten büyük olduğu için artık arama yaptığınız nokta burada kesinlikle olacak demektir. Şu kesim artık ihtimal da elinden çıkar.
+
+320
+01:07:24,563 --> 01:07:52,144
+Sonra diyelim ki 38 dedi, o zaman arama adımlarını iyice küçültmüş olursunuz. Günün sonunda logaritma iki tabağında n adımda aslında sonuca ulaşırsınız. Bu da n'in 100 olduğu bir durumda 7 adımda arama işlemini bitirmek anlamına gelir. Siz linear search'te 100 adım kontrol etmeniz gerekiyordu en kötü durumda.
+
+321
+01:07:52,543 --> 01:08:16,904
+Ama binary search'ta sadece 7 adımda bu işi bitiriyorsunuz. Yani biri en adımda bitiyor, diğeri logaritma kitabında en adımda bitiyor. O yüzden aslında çok güzel bir strateji ama tek şart verilen dizinin elemanlarına sıralı olmaz. Peki, burada nasıl bir strateji uygulayacağız? Ona bakmak lazım.
+
+322
+01:08:23,667 --> 01:08:49,587
+dedik. Aradığımız eleman x olsun. Bu bilgileri aldık. Şimdi sizden istediğim şey şu, yine bir süre vereceğim size, yaklaşık 6 dakika vereceğim. Bu algoritmayı tasarlamaya çalışın. İpucu olarak da, baş 1 diyeceğim, son n diyeceğim.
+
+323
+01:08:51,347 --> 01:08:54,467
+bir de de baş artı son
+
+324
+01:08:54,467 --> 01:08:56,868
+böyle iki diyeceğim.
+
+325
+01:08:56,868 --> 01:08:59,987
+Sonra da
+
+326
+01:09:03,380 --> 01:09:05,380
+bir tane while döngüsü
+
+327
+01:09:05,380 --> 01:09:08,579
+olduğunu size ipucu olarak veriyorum.
+
+328
+01:09:08,579 --> 01:09:11,700
+Evet, süreniz başladı.
+
+329
+01:15:40,819 --> 01:15:44,000
+Evet arkadaşlar, yapabilen var mı?
+
+330
+01:15:53,427 --> 01:16:00,967
+Şimdi [öğrenci] kontrolden öte bana sözler olarak ne yapılacağını söyleyebilir misin?
+
+331
+01:16:04,028 --> 01:16:09,987
+Hocam tam olarak sonuna kadar çizilmedim de ama olduğu kadar deneyebilirim isterseniz.
+
+332
+01:16:10,568 --> 01:16:18,648
+Yok ben detaydan çok şey söylemeni istiyorum. Yani ben mesela baş ve son birbirinden küçük olduğu sürece döngü içinde ne yapmam gerekiyor?
+
+333
+01:16:23,252 --> 01:16:46,252
+Bir tane işte AN dizisinin içinde if kolu yani while içinde if yapmamız gerekiyor. If'te de a middle, a mid şey aradığımız sayıdan küçük olduğu sürece başı, baş eşittir mid artı bir yapmamız gerekiyor.
+
+334
+01:16:47,796 --> 01:17:12,316
+Şöyle söz olarak toparlayalım seni söylediklerini, yanlış değil. Birincisi, döngü içerisinde her turda benim ya başım değişecek ya sonum değişecek. Çünkü bakarsanız baş birdi, son endi ilk başlangıçta. Eğer sağ tarafa gidersem başlangıcım orta artı bir olacak.
+
+335
+01:17:13,140 --> 01:17:21,460
+sonun değişmeyecek. Eğer sol tarafa gidersen, sonun değişecek, orta eksi 1 olacak, başlangıcım aynı kalacak.
+
+336
+01:17:21,460 --> 01:17:32,740
+Bu sayede de her seferinde ortanın değeri baş değiştiği için ya da son değiştiği için değişmiş olacak. Peki bu kontrolü nasıl yapacağım şimdi?
+
+337
+01:17:43,060 --> 01:17:44,659
+Şöyle şuraya getireyim.
+
+338
+01:17:51,539 --> 01:17:52,619
+Şuradan bir yapayım.
+
+339
+01:17:56,467 --> 01:18:23,048
+Mide de ortalıyım. Hepsi Türkçe olsun değişkenleri. Birincisi ben soldan ve sağdan ilerlerken başlangıç ve son hep birbirinden başlangıç küçük olacak, küçük eşit olacak şekilde ilerliyor. Ne zaman bu bozulacak? Son başı geçtiği zaman. Bir de şunu biliyorum ki benim aradığım eleman X
+
+340
+01:18:23,699 --> 01:18:26,199
+x farklı olduğu sürece
+
+341
+01:18:26,199 --> 01:18:28,459
+a ı diyeceğim.
+
+342
+01:18:29,379 --> 01:18:30,559
+İçeri gireceğim.
+
+343
+01:18:31,579 --> 01:18:32,579
+Eğer aradığım eleman
+
+344
+01:18:32,579 --> 01:18:35,639
+farklıysa içeri girmişim demektir. O zaman
+
+345
+01:18:35,639 --> 01:18:39,319
+x büyük mü a ı diyeceğim.
+
+346
+01:18:41,319 --> 01:18:42,859
+Eğer a ıdan büyükse
+
+347
+01:18:42,859 --> 01:18:45,039
+true koluna gideceğim.
+
+348
+01:18:45,899 --> 01:18:48,059
+Eğer a ıdan küçükse false koluna gideceğim.
+
+349
+01:18:48,819 --> 01:19:11,219
+Eğer aı'dan büyükse hangisi değişecek? Baş değişecek. Başın yeni değeri orta artı bir olacak. Eğer x eğer aı'dan küçükse o zaman son değişecek. Sonun değeri de orta eksi bir olacak.
+
+350
+01:19:15,283 --> 01:19:34,283
+Dolayısıyla baş ya da son değiştiği için her halükarda orta da değişeceği için orta eşittir baş artı son bölü 2 hatta onu şöyle yapalım div 2 diyelim aynı şeyi burada da gerçekleştirelim.
+
+351
+01:19:39,572 --> 01:19:41,011
+Div 2 diyelim.
+
+352
+01:19:41,332 --> 01:19:43,332
+Tam sayı bölmesi yapalım.
+
+353
+01:19:49,587 --> 01:20:05,967
+Oradan yukarı çıkalım. Çıktıktan sonra, dışarı çıktığımda eğer baş küçük eşit sonsa elemanı bulmuşum demektir. Ortayı yazdıralım.
+
+354
+01:20:11,188 --> 01:20:14,507
+Koşul sağlamlıyorsa bulunamamış demektir, not found yazdı.
+
+355
+01:20:16,047 --> 01:20:20,788
+Peki, bu çizim akış diyagramında hatalı olan bir yer var. Neresidir orası?
+
+356
+01:20:25,043 --> 01:20:26,543
+Çok bariz bir hata var.
+
+357
+01:20:30,612 --> 01:20:32,612
+Hocam, bir şey söyleyebilir miyim? İki tane var hata.
+
+358
+01:20:34,612 --> 01:20:40,612
+Bizim orta baş artı son div iki yaptı ki onu sadece false column yapmamız gerekmiyor muydu?
+
+359
+01:20:40,612 --> 01:20:44,612
+Yok. True olduğunda da false olduğunda mı güncellemamız gerekir?
+
+360
+01:20:44,612 --> 01:20:51,612
+Tabii ki. Bir baş veya sondan biri değiştiği zaman orta da değişir. O yüzden ikisini de yapıyoruz.
+
+361
+01:20:51,612 --> 01:20:55,148
+Hocam, son n'e kadar mı olmanız gerekiyor? n-1'e kadar mı?
+
+362
+01:20:56,564 --> 01:21:00,024
+son bir ile başladığımız için sonuncu eleman da N olacak.
+
+363
+01:21:02,463 --> 01:21:10,384
+Sıfırla başlasaydık, N-1 olurdu. Şu anda akış diyagramında belirgin bir hata var. O nedir?
+
+364
+01:21:13,939 --> 01:21:15,379
+Bunu hemen söyle. Evet, [öğrenci].
+
+365
+01:21:16,500 --> 01:21:31,599
+Hocam, Vahyalı döngüsünde Başkuşkeşiktir sonunu aradık. Çıktıktan sonra bir daha Başkuşkeşiktir sonu aradık. Zaten onu yani oradan Başkuşkeşiktir son olduğu durumda çıkacağı için tekrardan bunu aratmamızı anlayamadım tam.
+
+366
+01:21:31,799 --> 01:21:38,039
+Yok, şöyle [öğrenci]. Başkuşkeşiktir son olduğu sürece devam ediyor ama ikisi bulursak eğer.
+
+367
+01:21:38,676 --> 01:21:49,435
+o zaman çıkacak. O zaman baş küçük eşit son koşulunu sağladığı için elemanı bulmuş olacağız. Ama baş küçük eşit sondan dolayı devam etmez çıkarsa da not found diyeceğiz.
+
+368
+01:21:49,435 --> 01:21:56,476
+İki tane koşul var. O yüzden. Ama belirgin hata tabii bu değil.
+
+369
+01:21:56,476 --> 01:22:02,476
+Bunu hemen gördüğünüzde çarp diye söylüyor olmanız lazım. İki tane var hata.
+
+370
+01:22:02,476 --> 01:22:04,476
+Hocam, ın'ın ilk değerini atamadık.
+
+371
+01:22:04,703 --> 01:22:09,323
+Çünkü Lokman I yok. Bu algoritma da.
+
+372
+01:22:09,323 --> 01:22:12,323
+Ama A, I diye kontrol ediyoruz ya.
+
+373
+01:22:12,323 --> 01:22:14,603
+O kontrol yanlış. Ne olması gerekiyor?
+
+374
+01:22:16,603 --> 01:22:17,923
+Kim söylemek ister?
+
+375
+01:22:18,423 --> 01:22:19,884
+A, ortam olması gerekiyor hocam.
+
+376
+01:22:19,923 --> 01:22:20,183
+Evet.
+
+377
+01:22:20,423 --> 01:22:22,384
+A, orta olması gerekiyor. Teşekkür ediyorum.
+
+378
+01:22:26,452 --> 01:22:28,072
+ikisi de değişecek.
+
+379
+01:22:29,452 --> 01:22:33,172
+A ortaya bakmamız gerekiyor çünkü biz ortadaki elemana bakıyoruz.
+
+380
+01:22:36,352 --> 01:22:39,292
+Evet bakalım şimdi biz bir analiz yapalım.
+
+381
+01:22:39,912 --> 01:22:40,512
+Baş,
+
+382
+01:22:41,992 --> 01:22:42,811
+orta,
+
+383
+01:22:44,211 --> 01:22:44,932
+son,
+
+384
+01:22:47,452 --> 01:22:49,452
+n,
+
+385
+01:22:50,092 --> 01:22:50,652
+x
+
+386
+01:22:50,652 --> 01:22:52,872
+ve A orta olsun.
+
+387
+01:22:57,363 --> 01:23:24,583
+Baş bir, en, pardon, son şu andaki dizimizde bir, iki, üç, beş, altı, yedi, sekiz olsun. Son sekiz, dolayısıyla orta dört. Eee, en sekiz. Aradığımız eleman kırk iki olsun. A dörtte de şu anda on iki var. Baş sonundan küçük mü? Evet.
+
+388
+01:23:25,247 --> 01:23:37,247
+x a ortadan farklı mı? Evet. Çünkü biz 42'yi arıyoruz. İçeri girdik. x a ortadan büyük mü? Evet. True koluna gittim. Başın değeri orta artı 1 oldu. Yani 5 oldu.
+
+389
+01:23:39,247 --> 01:23:44,127
+Ortanın yeni değeri 5 artı 8, 13, 6 oldu.
+
+390
+01:23:45,427 --> 01:24:11,247
+Döndüm, baş, sondan küçük eşit mi? Evet. A ortanın değeri, A altının değeri kaçtır? 38'dir. 42, 38'den farklı mı? Evet. Yine içeri girdim. 42, 38'den büyük mü? Evet. 42, 38'den büyük olduğu için yine Turukoluna gittim. Bu sefer ortayı bir arttırdım. Baş, 7 oldu.
+
+391
+01:24:11,988 --> 01:24:13,528
+Son 8 oldu.
+
+392
+01:24:15,228 --> 01:24:16,988
+Orta 7 oldu.
+
+393
+01:24:18,068 --> 01:24:20,948
+Döndüm. Baş, sondan küçük eşit mi? Evet.
+
+394
+01:24:22,028 --> 01:24:23,628
+Aa, 7'de ne var? 42.
+
+395
+01:24:26,368 --> 01:24:30,507
+42 eşit 42 olduğu için döngüden çıktım.
+
+396
+01:24:31,148 --> 01:24:33,828
+Döngüden çıkınca baş, sondan küçük mü diye sordum.
+
+397
+01:24:33,968 --> 01:24:35,728
+Evet, 7 küçük eşit 8.
+
+398
+01:24:36,328 --> 01:24:36,688
+Doğru.
+
+399
+01:24:36,688 --> 01:24:37,847
+O zaman
+
+400
+01:24:38,292 --> 01:24:41,252
+Ortayı yazdırdım, 42'yi buldum.
+
+401
+01:24:42,992 --> 01:24:46,112
+Birinci keyzimde, diyelim ki 43'ü arıyor olsaydım,
+
+402
+01:24:48,311 --> 01:24:50,391
+diyelim ki 43'ü arıyor olsaydım,
+
+403
+01:24:51,032 --> 01:24:56,672
+o zaman 43, 42'den büyük olduğu için başı 1 arttıracaktı,
+
+404
+01:24:57,072 --> 01:24:58,731
+pardon, ortayı 1 arttıracaktı.
+
+405
+01:24:59,391 --> 01:25:03,692
+Ortayı 1 arttırıp başını değerine koyacaktı, o zaman baş 8 olacaktı.
+
+406
+01:25:04,148 --> 01:25:14,627
+Son da 8 olacaktı, ortada 8 olacaktı. O zaman biz 42'ye baktıktan sonra nereye bakacaktık? Şuraya 43'ü koyayım.
+
+407
+01:25:16,788 --> 01:25:28,868
+Şuraya da 56'yı koyayım. 56'ya bakacaktık. 56, 43'e eşit mi? Değil. Baş, sondan küçük eşit mi? 8, küçük eşit 8 mi? Evet. O zaman yine içeri girecekti. Bu sefer
+
+408
+01:25:29,524 --> 01:25:40,704
+43 büyük mü 56 diyecektik. Hayır cevabı gelecekti. Ortayı bir azaltıp sona atayacaktı. O zaman son 7 olacaktı, baş 8 olacaktı.
+
+409
+01:25:41,108 --> 01:26:06,408
+Orta yine 8 olacaktı. Dönecekti. Baş küçük eşit son mu diye soracaktı. 8 küçük eşit 7 mi dediğimizde hayır cevabını aldığı için döngüden çıkacaktı. Döngüden çıktıktan sonra if de yine soracaktık. Baş küçük eşit son mu? Yani 8 küçük eşit 7 mi diye hayır cevabını alacağımız için false kullanan not found'a gidecekti ve not found.
+
+410
+01:26:08,404 --> 01:26:11,584
+bilgisini ekrana yazdırmış olacaktı.
+
+411
+01:26:13,804 --> 01:26:15,544
+Buraya kadar sorusu olan var mı?
+
+412
+01:26:28,148 --> 01:26:28,648
+Peki.
+
+413
+01:26:30,288 --> 01:26:34,068
+BinarySolge algoritmasında o zaman çok iyi bir şekilde anladığınızı kabul ediyorum.
+
+414
+01:26:35,448 --> 01:26:35,807
+Şimdi
+
+415
+01:26:35,807 --> 01:26:40,868
+Time Complex diye baktığınız zaman, zaman karmaşıklığına yani
+
+416
+01:26:40,868 --> 01:26:43,868
+aslında
+
+417
+01:26:43,868 --> 01:26:48,068
+en kötü durum için konuşuyoruz tabii worst case diyelim.
+
+418
+01:26:49,868 --> 01:26:50,868
+Bu algoritmaların
+
+419
+01:26:50,868 --> 01:26:53,288
+durumu nedir?
+
+420
+01:26:54,108 --> 01:26:55,327
+Diner Search'te
+
+421
+01:26:56,404 --> 01:26:58,404
+Siz
+
+422
+01:26:58,404 --> 01:27:04,124
+O, N adımda, Big O, N adımda, yani N defa kontrol yaptığınızda
+
+423
+01:27:04,124 --> 01:27:08,124
+sonuca ulaşıyorsunuz. Ama binary source de
+
+424
+01:27:08,124 --> 01:27:12,284
+bu çok daha
+
+425
+01:27:12,284 --> 01:27:15,424
+efektif bir şekilde, logaritma iki tabanında N.
+
+426
+01:27:16,424 --> 01:27:17,624
+Bu da örneğin N
+
+427
+01:27:17,624 --> 01:27:19,463
+100 olduğunda
+
+428
+01:27:19,463 --> 01:27:21,963
+bu taraftaki sonucun
+
+429
+01:27:21,963 --> 01:27:23,884
+yaklaşık 7 olmasını
+
+430
+01:27:24,404 --> 01:27:38,004
+1000 olduğunda ise yaklaşık 10 olmasını sağlıyor. Yani bir yerde 1000 kontrol yaparken diğer tarafta sadece 10 kontrol yaparak elemana var olup olmadığını bulabiliyorsunuz.
+
+431
+01:27:38,004 --> 01:27:50,404
+Elemanın bulunmadığı durumlarda n artı bir, burası da logaritma 2n.
+
+432
+01:27:51,060 --> 01:27:55,740
+Artı bir şeklinde yani bu not found karmaşıklığı.
+
+433
+01:27:59,859 --> 01:28:09,020
+Found karmaşıklığı olarak aramanın başarılı olması durumunda bu kadar adımda sonuca en kötü durumda ulaşabildiğinizi görmüş oluyorsunuz.
+
+434
+01:28:11,199 --> 01:28:19,899
+Karmaşıklıkla ilgili daha fazla bir şey söylemeyeceğim çünkü bu dersin esas konusu değil ama karmaşıklık şunu gösteriyor.
+
+435
+01:28:20,899 --> 01:28:27,399
+Bir algoritmanın en kötü durumda kaç adımda sonlanacağını söylüyoruz.
+
+436
+01:28:27,743 --> 01:28:48,904
+kabaca. İçi içi iki döngü varsa genelde n kare gerçekleşiyor. Tek döngüler döngüye bağlı olarak n ya da logaritma iki tabanında n olabiliyor. Eğer logaritma tabanında iki tabanında n'lik bir karmaşıklık elde edebilirseniz bu oldukça efektif bir algoritma tasarladığınız anlamına gelir.
+
+437
+01:28:52,819 --> 01:29:13,119
+dik bir karmaşık da oldukça tatmin edici bir karmaşıklıktır ama n kare, n küp gibi karmaşıklıklar çok arzu etmediğimiz, uzak durmak istediğimiz karmaşıklıklardır. Çünkü n kare dediğimiz zaman bin eleman varsa bin çarpı bin, on bin eleman varsa on bin çarpı on bin işlem anlamına gelir.
+
+438
+01:29:24,500 --> 01:29:40,180
+1, 5, 7, 8, 9, 3, 2, 4, 6, 10, 12, 11 gibi. Burada bütün matrisi gezmeniz gerekiyor. Eğer sırasız bir matristen bahsediyorsak.
+
+439
+01:29:40,500 --> 01:29:52,500
+O yüzden önce birinci satırdan başlayıp tüm sütunları sonra ikinci satıra geçerek geri kalan sütunları gezerek arama yapabiliyorsunuz. İki boyutlu bir yapıdan bahsediyoruz.
+
+440
+01:29:52,500 --> 01:30:08,108
+Bir de, tabi tekrar eden elemanlar var. Yani elemanların unique olmadığı 5D eleman.
+
+441
+01:30:08,916 --> 01:30:36,316
+Burada bir tane beş olsun. Diyelim üçten kaç tane var, beşten kaç tane var? Yani tekrarlı değerler peşinde koşuyorsanız o zaman dizinin sonuna kadar arama yapmanız gerekiyor. While kullanmak yerine for kullanmak doğru bir tercih olacaktır. Eğer sıralı değilse, sıralıysa yine while kullanmak akıllıcı olacaktır. Çünkü o zaman bu dizi size bir üç üç, pardon şöyle yapalım.
+
+442
+01:30:37,684 --> 01:31:00,804
+1, 2, 3, 3, 4, 5, 5 şeklinde verilmiştir. Siz 3'ü arıyorsanız şu noktadan itibaren artık geri kalanına bakmanıza gerek yok. O yüzden yukarıdaki örnekte burada for kullanırken, burada while kullanmanız daha akıllıca olacaktır.
+
+443
+01:31:01,363 --> 01:31:05,963
+bir elemanı aradığınızda hangi gözlerde olduğunu söyleyebilmeniz için.
+
+444
+01:31:07,923 --> 01:31:08,144
+Evet.
+
+445
+01:31:10,403 --> 01:31:12,323
+Search algorithm. Evet, [öğrenci].
+
+446
+01:31:13,323 --> 01:31:18,884
+Hocam, genel bir sorum olacak da, mesela ben şöyle bir algoritma tasarlamış olayım.
+
+447
+01:31:19,315 --> 01:31:44,615
+her bir aradığım eleman indis değerinde saklı. Mesela üç numaralı eleman, üç indis de, işte yedi numaralı eleman, yedi indis de. Hani space'i arttırıyorum ancak time kompleksi de çok hızlı bir şekilde çözüyorum bu şekilde. Bunun arasındaki optimum dengeyi nasıl olabilir? Yani veri evet boş, bir sürü indis değeri olacak belki. Bu senin şey bir hash yapısı. Biz buna hashing diyoruz.
+
+448
+01:31:45,427 --> 01:31:49,028
+Buna bir tane hash function gerekiyor. Bu hash function zaten
+
+449
+01:31:49,028 --> 01:31:59,108
+aslında yerleştiriyor. Sen doğrudan direct adresleme yaparak aslında kullanıyorsun. Bunun daha optimum olanı hash algoritması kullanmak.
+
+450
+01:31:59,108 --> 01:32:07,747
+Bunu ilerleyen zamanlarda göreceksiniz. Çok sıklıkla kullandığımız bir şey ve tek adımda o fonksiyonun
+
+451
+01:32:08,307 --> 01:32:35,467
+içerisindeki değer hangi göze denk geliyorsa, bunu karşı tarafa o ilgili göze yerleştirebiliyoruz. Mesela elimizde diyelim ki 1 var, 7 var, 8 var, 15 var, 22 var. Diyelim ki mod alıyoruz, 13'e göre alıyoruz. Bu birinci göze gidip yerleşiyor, 1. 7 mod 13'ten dolayı gidiyor.
+
+452
+01:32:36,500 --> 01:33:01,219
+yedinci göze yerleşiyor, sekiz sekize yerleşiyor, onbeş nereye yerleşiyor? Onbeş, ikinci göze yerleşiyor. Burada mod alma yöntemiyle gelen değerin modunu ilgili değer kaçsa ona göre modunu alıyoruz. Yirmi iki mod on üç dediğimiz zaman örneğin dokuzuncu göze
+
+453
+01:33:01,811 --> 01:33:09,492
+yirmi iki yerleşecek demektir. Bu birinci göz, bu ikinci, üç, dört, beş, altı, yedi, sekiz, dokuz.
+
+454
+01:33:12,979 --> 01:33:14,659
+Bilmiyorum, sorunun karşısında oldu mu?
+
+455
+01:33:16,279 --> 01:33:18,279
+Aynen hocam, teşekkür ediyorum. Çok sağ olun.
+
+456
+01:33:18,699 --> 01:33:20,939
+Şimdi iki tane yaklaşım var.
+
+457
+01:33:24,299 --> 01:33:26,879
+Direct address table kullanmak.
+
+458
+01:33:27,479 --> 01:33:28,879
+[öğrenci]'nin bahsettiği.
+
+459
+01:33:29,579 --> 01:33:31,159
+Bu çok efektif değil.
+
+460
+01:33:32,739 --> 01:33:37,519
+Ama doğrudan erişim yapmak açısından kullanılıyor.
+
+461
+01:33:38,099 --> 01:33:39,119
+Bir de hash table var.
+
+462
+01:33:39,636 --> 01:34:05,416
+HashTable'da ise bazı değerler aynı adresi gösterdiğinde o değerleri farklı yerlere, belirli bir kural çerçevesinde yazarak yerleri daha efektif bir şekilde kullanmış oluyoruz. Bu iki yöntemde arama çözümlerinde çok sık kullanılan ve buradaki logaritma iki tabanındaki en karmaşıklığını
+
+463
+01:34:06,612 --> 01:34:21,452
+O bir düzeyine yani tek atımda elemanın yerini bulma noktasına taşıyabilecek çözümler. Bunları ilerleyen derslerde çok daha iyi bir şekilde göreceksiniz. Gerçekten çok başarılı bir çözüm.
+
+464
+01:34:22,912 --> 01:34:33,731
+[öğrenci]'in bir sorusu var chatten yazmış. Hocam sıralı, sırasız dizide linear search hep o enlerde ama aynı soruşta. Sırası sonrası önce sıralarsak. Evet, güzel bir soru.
+
+465
+01:34:34,323 --> 01:35:00,123
+binary search uygulayabilmek için sıralı olması gerekiyor. Sırasız bir dizili de sıralamanın maliyeti en iyi ihtimalle karşılaştırmalı bir sıralama algoritması, ellogendir. O yüzden önce sıralama maliyeti ellogen, sonra da
+
+466
+01:35:01,395 --> 01:35:17,395
+arama mahalleti, logana olduğu için büyük olan seçileceğinden sırasız bir diziye binary search uygulamak için önce sıralamak gerektiği için karmaşıklık en logana çıkar. [öğrenci].
+
+467
+01:35:23,604 --> 01:35:25,064
+Başka sorusu olan var mı?
+
+468
+01:35:26,804 --> 01:35:28,524
+Merak ettiniz bir şey, aynı bir şey.
+
+469
+01:35:28,623 --> 01:35:30,984
+[öğrenci] elin kalmış ama herhalde sormayacaksın.
+
+470
+01:35:40,180 --> 01:35:40,560
+Peki.
+
+471
+01:35:40,560 --> 01:35:46,960
+Size antrenman olmasa açısından bir soru vereyim.
+
+472
+01:35:50,420 --> 01:35:51,659
+bir matriz verirsin.
+
+473
+01:36:01,140 --> 01:36:04,460
+2, 3, 6, 7, bir tane daha yapalım.
+
+474
+01:36:06,260 --> 01:36:07,280
+Bu matriz de
+
+475
+01:36:10,579 --> 01:36:12,579
+bir ve sıfırlardan oluşan
+
+476
+01:36:17,460 --> 01:36:24,539
+ikili sayı sisteminde, işaretli tam sayı sisteminde sayıların binary karşılıkları saklansın.
+
+477
+01:36:36,819 --> 01:37:04,000
+Bunların onluk sayı sistemindeki karşılıklarını bir diziye yazdıran algoritma, akış diyagramını çizmeye çalışın. Örneğin, bu sonuncu elemanın değeri 1. Örneğin, buradaki elemanın değeri
+
+478
+01:37:05,268 --> 01:37:06,308
+kaç olacaktır?
+
+479
+01:37:06,308 --> 01:37:08,148
+Siz söyleyin.
+
+480
+01:37:19,380 --> 01:37:23,140
+12868 değil buradaki sayılar işaretli tam sayı sisteminde.
+
+481
+01:37:25,420 --> 01:37:28,739
+İşaretli tam sayı sisteminde en büyük sayı 127 alabiliyor.
+
+482
+01:37:36,756 --> 01:37:37,476
+Kaçtır?
+
+483
+01:37:38,896 --> 01:37:45,056
+1, 2, 3, 4, 5, 3. sayının karşılığı kaçtır?
+
+484
+01:37:46,656 --> 01:37:47,176
+127.
+
+485
+01:37:48,036 --> 01:37:49,936
+Evet, [öğrenci], teşekkür ediyorum.
+
+486
+01:37:51,076 --> 01:37:54,016
+5 tane olduğu için burada şunları silelim.
+
+487
+01:37:55,916 --> 01:37:56,695
+Şöyle yapalım.
+
+488
+01:37:58,316 --> 01:38:01,636
+Peki, 4. sayının değeri kaçtır?
+
+489
+01:38:01,636 --> 01:38:03,436
+1, 0, 0.
+
+490
+01:38:03,823 --> 01:38:30,224
+1, 0, 0. Önce bu sayıyı eksi yazıyoruz. İkiye göre komplementini alacağız. Önce 1'e göre alıyoruz. 0, 1, 1, 1, 0. 1 ekliyoruz. 0, 0, 0, 1, 1, 1, 1. Bu sayının karşılığı kaç oluyor o zaman? Eksiği de başına koyacak olursak.
+
+491
+01:38:43,475 --> 01:38:44,995
+Eksicilik 120 mi hocam?
+
+492
+01:38:47,155 --> 01:38:48,635
+Hemen hesaplayalım.
+
+493
+01:38:49,615 --> 01:38:54,195
+1, 2, 4, 8, 16, 32, 64.
+
+494
+01:38:55,695 --> 01:38:59,655
+64, 16 daha 80, 80, 40 daha 120.
+
+495
+01:39:00,075 --> 01:39:02,475
+Eksi 120 oluyor senin söylediği gibi.
+
+496
+01:39:02,555 --> 01:39:08,915
+O zaman bizim kalkıp dördün gözüne eksi 120 yazmamız gerekiyor.
+
+497
+01:39:08,915 --> 01:39:09,715
+Size
+
+498
+01:39:10,515 --> 01:39:20,195
+bir ve sıfırlardan oluşan bir matris veriliyor. Her satırda bir sayının değerini saklıyoruz. Sütun sayısı sekiz, satır sayısı ise n olsun.
+
+499
+01:39:21,135 --> 01:39:28,715
+Buradaki her satırdaki sayının onluk sistemdeki karşılığını işaretli tam sayıda verilmiş bu sayıları kullanarak bulan
+
+500
+01:39:28,715 --> 01:39:36,195
+algoritma, akış diyagramını çizdiniz diye bir soru gelseydi siz nasıl bir yaklaşım uygulardınız?
+
+501
+01:39:37,587 --> 01:39:44,047
+Bununla ilgili bir sanki size ödev verilmiş ya da bir lap sonsuz olmuş gibi antrenman yapabilirsiniz.
+
+502
+01:39:45,047 --> 01:39:45,927
+Soru anlaşıldı mı?
+
+503
+01:39:52,115 --> 01:39:58,296
+Peki taktik olarak eksili sayılar ve artili sayılar var. Nasıl bir taktik izlersiniz?
+
+504
+01:40:07,283 --> 01:40:08,323
+Evet, [öğrenci].
+
+505
+01:40:10,003 --> 01:40:30,983
+Hocam ben en nasıl söyleyeyim most sign it bit, yani en soldakileri hesaba katmadan ilk başlı yerlerini hesaplarım. Eğer en soldaki birse eksi 128'den çıkartarak sonuca ulaşırım. Eğer sıfırsa zaten o sayı neyse o çıkıyor yani.
+
+506
+01:40:31,380 --> 01:40:36,860
+Birse, şöyle yapmak daha akıllıcı olur mu? 256'dan o değeri çıkarmak?
+
+507
+01:40:36,860 --> 01:40:39,640
+Evet, doğru 256'dan hocam.
+
+508
+01:40:39,640 --> 01:40:43,520
+Ben 128'den, kafam gitti evet, 256'dan da olabilir.
+
+509
+01:40:43,520 --> 01:40:46,560
+Çıkartır, değerini eksi 1 ile çarpmak ya da eksilemek değerini.
+
+510
+01:40:46,940 --> 01:40:49,720
+Evet, kabaca böyle bir yaklaşım uygulamak akıllıcı gözüküyor.
+
+511
+01:40:50,540 --> 01:40:56,844
+Ama algoritma anlamında pratiğe ihtiyaç duyandan için güzel bir...
+
+512
+01:40:56,851 --> 01:40:59,791
+Antrenman sorusu olarak düşünebilirsiniz.
+
+513
+01:40:59,791 --> 01:41:03,351
+Peki, başka sorusu olan var mı?
+
+514
+01:41:07,380 --> 01:41:30,219
+Şimdi bir de JumpSearch vardı. Yani o Search argotmalarından bir tanesini düşünecek olursanız, diyelim ki 1, 5, 8, 12, 96, 172, 251, 255, 300. Bu şekilde hatta 3000 diyelim bu şekilde devam eden sayılar var.
+
+515
+01:41:33,555 --> 01:42:00,315
+Buradaki temel yaklaşım, belirli adımlarla atlayarak elemanı arıyorsunuz. Mesela diyelim ki önce buradan bir baktınız, sonra buraya baktınız, sonra buraya baktınız. Bu şekilde ilerliyorsunuz. Bu atlamalar dörder dörder, beşer beşer, onar onar, yirmişer yirmişer olabilir. Peki buradaki mantık nedir?
+
+516
+01:42:01,171 --> 01:42:24,171
+Diyelim ki 96'yı arıyorsunuz, 12'den büyük. Demek ki bir sonraki atlama taşına gideceksiniz. Bir sonraki atlama taşına gittiniz, 251, 251'den küçük. O zaman o aralıkta olduğunu buluyorsunuz ve o aralıkta lineer soruçu kullanarak arama gerçekleştirebiliyorsunuz. Peki bu atlama boyutu ne kadar olmalı sizce?
+
+517
+01:42:25,427 --> 01:42:29,028
+Yani 5-5, 10-10, 3-3, neye göre belirlenmeli?
+
+518
+01:42:31,847 --> 01:42:36,268
+Dizimizin uzunluğuna göre belirlerimiz lazım. Çok güzel. Ne seçersin dizinin uzunluğuna göre?
+
+519
+01:42:38,707 --> 01:42:42,647
+Dizinin uzunluğu N diyelim. N bölü 2 mi, N bölü 8 mi?
+
+520
+01:42:46,452 --> 01:42:55,672
+Yani Mbüly 2 dediğimiz zaman zaten az önceki ne yapmış oluyoruz. Dolayısıyla daha farklı bir çözüm üretmek lazım. Mbüly 4'te de olabilir.
+
+521
+01:42:56,332 --> 01:43:00,672
+[öğrenci] oradan Bilice Rav yazdı. En üzeri 1.2 dedi hakikaten.
+
+522
+01:43:01,844 --> 01:43:16,523
+köken bizim atlama sayımızı temsil ederse en optimum düzeyde biz elemana ulaşma şansına sahip oluyoruz. Bu algoritmanın karmaşıklığı da aslında o.
+
+523
+01:43:17,076 --> 01:43:35,076
+küken oluyor, bir başka da işte o en üzeri 1 bölü 2 oluyor, [öğrenci] arkadaşınızın yazdığı gibi. Bu da uygulanan search yöntemlerinden bir tanesi. Binary search ve linear search'u kombinleyerek kullanan yaklaşımlar da var. Bu tür farklı algoritmaların isimlerini
+
+524
+01:43:35,636 --> 01:43:57,636
+bir kısmını ben size dersin başında yazmıştım. Search algorithm'a bakarsanız biraz genel kültür edinip farklı yaklaşımları nasıl olduğunu öğrenebilirsiniz. Tabi bunların hepsi sıralı veriler için geçerli. Sırasız verilerde çok fazla bir seçeneğiniz yok zaten. Çünkü bir...
+
+525
+01:43:58,387 --> 01:44:13,087
+Bu sıradan faydalanma şansınız var ama sırasız veride büyük küçük ne zaman ne geleceğini bilemediğiniz için orada bir sağlıklı bir algoritma oluşturma şansınız, daha optimum bir algoritma oluşturma şansınız maalesef bulunmuyor.
+
+526
+01:44:17,395 --> 01:44:42,895
+[öğrenci], bu algoritma aslında binary source'tan daha iyi bir karmaşıklığa sahip değil. Ama muhtemelen belki binary source'tan önce linear source'tan daha iyi bir çözüm bulmak adına ortaya atılmış bir çözüm. O yüzden yani görece binary source'a göre yavaş ama linear source'tan daha hızlı bir algoritma.
+
+527
+01:44:46,484 --> 01:45:04,484
+Zaten arama için en sağlıklı ve en iyi olanı hash table kullanmak. Bunu da zaman içerisinde göreceksiniz. Ama her zaman hash kullanma şansımız yok çünkü bunun space kompleksisi yani yer karmaşıklığı yüksek olduğu için bazen binary search ile ilerlemeyi tercih edebiliriz.
+
+528
+01:45:08,627 --> 01:45:09,987
+Başka bir soru var mıdır?
+
+529
+01:45:14,899 --> 01:45:25,219
+Peki, o zaman başka bir soru yoksa hepinize bu haftalık teşekkür ediyorum. Hepinize iyi haftalar, sağlık günler diliyorum. Kendinize çok iyi bakın, görüşmek üzere.
+
+530
+01:45:27,699 --> 01:45:28,439
+İyi günler hocam.
+
+531
+01:45:29,739 --> 01:45:30,299
+Hoşçakalın.
+
+532
+01:45:33,652 --> 01:45:35,652
+Hocam bir şey sorabilir miyim siz bitirin?
+
+533
+01:45:35,652 --> 01:45:36,752
+Tabii ki.
+
+534
+01:45:36,752 --> 01:45:44,112
+Hocam, ITU, yok ITU değil, Koç ve Bağaziçi uzaktan almışlar da bizim okuluna öyle bir gelme ihtimali var mı?
+
+535
+01:45:44,791 --> 01:45:45,771
+Nasıl yani? Anlayamadım.
+
+536
+01:45:46,332 --> 01:45:52,811
+Hocam, Omikron sayısının arttığını görünce onlar bu dönem uzaktan almışlar.
+
+537
+01:45:53,492 --> 01:45:58,211
+Ne düşün demek istiyorsun? Bu dönem uzaktan değiller de, yani yeni bu kararımı almışlar.
+
+538
+01:45:58,652 --> 01:45:59,291
+Evet, evet.
+
+539
+01:45:59,891 --> 01:46:03,431
+Peki, bu dönem için mi almışlar, bir dahaki dönem için mi?
+
+540
+01:46:03,631 --> 01:46:06,971
+Bu dönem için hocam, hatta filan sınavlarını da uzaktan yapacaklarmış.
+
+541
+01:46:07,731 --> 01:46:13,871
+Bunu ilk defa senden duyuyorum. Tabii ki hemen bununla ilgili bir araştırma yapıp bize henüz ulaşmış bir bilgi yok.
+
+542
+01:46:15,592 --> 01:46:23,192
+Şartlara bağlı olarak belki bizde de böyle bir gelişme olabilir. Önümüzdeki hafta ya da en kötü bir sonraki hafta belli olur zaten.
+
+543
+01:46:24,172 --> 01:46:25,131
+Tamam, teşekkür ederim.
+
+544
+01:46:25,431 --> 01:46:25,871
+Rica ederim.
+
+545
+01:46:27,731 --> 01:46:28,791
+Hoşçakalın arkadaşlar.
+
+546
+01:46:30,931 --> 01:46:32,231
+Hoşçakalın canım.

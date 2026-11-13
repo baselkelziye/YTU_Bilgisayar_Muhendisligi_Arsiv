@@ -1,0 +1,2327 @@
+1
+00:00:20,559 --> 00:00:23,579
+Arkadaşlar merhaba. Sesim geliyor değil mi?
+
+2
+00:00:30,929 --> 00:00:31,670
+Geliyor hocam.
+
+3
+00:00:32,090 --> 00:00:35,409
+Arkadaşlar kusura bakmayın. Biraz bir zamanlama hatam oldu.
+
+4
+00:00:37,729 --> 00:00:47,009
+Geç katıldığım için sizlerden özür diliyorum. Geç kaldığım vakit ekstra eklenecek lafınıza. O konuda hiçbir sıkıntı yapmayın.
+
+5
+00:00:48,310 --> 00:01:21,159
+Şimdi ben sorunuzu paylaşıyorum. Soruyu chatten paylaştım arkadaşlar. Şimdi ekran paylaşıp bir üzerinden geçeceğiz.
+
+6
+00:01:22,219 --> 00:01:25,700
+Geçen haftaki soruya çok benzer. Sadece ufak bir değişiklik yaptık.
+
+7
+00:01:25,980 --> 00:01:32,319
+Geçen haftaki soruyu aldıysanız çok farklı bir şey yok.
+
+8
+00:01:54,750 --> 00:01:57,069
+Şimdi arkadaşlar ekranımı görebiliyorsunuz zannediyorum.
+
+9
+00:02:01,629 --> 00:02:22,180
+Sorumuza gelecek olursak sorumuz sizlerden numaranıza parametrik olarak bir beşhaneli, bir ve sıfırlardan oluşan bir bit dizisi yakalamamızı istiyoruz.
+
+10
+00:02:23,180 --> 00:02:24,180
+Şimdi başlayalım.
+
+11
+00:02:24,300 --> 00:02:35,139
+Bu deneyde flip-floplar kullanacaksınız. Numaranıza göre buradaki bir ve sıfırlı diziyi nasıl oluşturacağınızı burada anlatıyor zaten. Ona bakarsınız.
+
+12
+00:02:36,500 --> 00:02:43,039
+Sizin amacınız burada oluşan deseni, bir ve sıfırlardan oluşan deseni, numaranıza göre oluşan deseni yakalamak.
+
+13
+00:02:43,039 --> 00:02:45,039
+Yani sizin devrenizde...
+
+14
+00:02:45,560 --> 00:02:47,280
+Şunun ayarını değiştirelim.
+
+15
+00:02:49,740 --> 00:02:50,680
+Sizin devrenizde...
+
+16
+00:02:51,400 --> 00:02:52,460
+Biraz daha uzun.
+
+17
+00:02:53,919 --> 00:02:55,680
+Sizin devrenizde bir bitlik...
+
+18
+00:02:55,939 --> 00:02:56,939
+Bir giriş olacak.
+
+19
+00:02:57,939 --> 00:03:00,939
+Bunun dışında ihtiyaç duyduğunuz kadar flip-flop kullanacaksınız.
+
+20
+00:03:01,939 --> 00:03:09,939
+Sonrasında flip-floplar bir clock'la çalışacağı için her clock'ta bir bit girişi olacak.
+
+21
+00:03:10,939 --> 00:03:15,939
+Bu bit girişlerinde de, tek bitlik girişte de siz bu pattern'ı yakalamaya çalışacaksınız.
+
+22
+00:03:16,939 --> 00:03:20,939
+Kullanacağınız flip-flop tipi sadece geçen haftaya göre değiştirdi.
+
+23
+00:03:20,939 --> 00:03:24,939
+Normalde bunlar tam tersiydi. Numaranız çiftse jk-flip-flop.
+
+24
+00:03:24,939 --> 00:03:25,939
+Tekse d-klok.
+
+25
+00:03:25,939 --> 00:03:26,939
+Bunu kullanacaktınız.
+
+26
+00:03:26,939 --> 00:03:27,939
+Bu hafta tam tersini yaptık.
+
+27
+00:03:27,939 --> 00:03:30,939
+Geçen haftaki soruya bakıp hazırlanmış olanlar.
+
+28
+00:03:30,939 --> 00:03:31,939
+Tek fark bu.
+
+29
+00:03:31,939 --> 00:03:32,939
+Buna dikkat etsinler.
+
+30
+00:03:33,939 --> 00:03:41,939
+Sizden istediğimiz şeyler, numaranıza uygun desen, deseni yakalayan durum diagramı, bir state machine oluşturmanız gerekiyor.
+
+31
+00:03:43,939 --> 00:03:47,939
+Burada da, şimdi yukarıda şöyle bir ifademiz var.
+
+32
+00:03:47,939 --> 00:03:49,939
+Desen yakalandığında...
+
+33
+00:03:49,939 --> 00:03:56,939
+...ilgili desen yakalandığında devrenizin bir çıktısı üretmesini istiyoruz.
+
+34
+00:03:56,939 --> 00:04:00,939
+Yani devrenizin bir girdisi olacak, bir bitlik, bir de çıktısı olacak.
+
+35
+00:04:00,939 --> 00:04:04,939
+Çık diye bir led koyabilirsiniz.
+
+36
+00:04:04,939 --> 00:04:08,939
+Bu deseni yakaladığınız durumda bir çıktısı üreteceksiniz.
+
+37
+00:04:08,939 --> 00:04:13,939
+Ama desen bir dahaki ilerleyen clock'larda gene akacak.
+
+38
+00:04:13,939 --> 00:04:17,939
+Hocam, ekran bizde sabit kaldı. Göremiyoruz şu anda.
+
+39
+00:04:17,939 --> 00:04:18,939
+Öyle mi?
+
+40
+00:04:18,939 --> 00:04:22,860
+Keşke, hop.
+
+41
+00:04:23,860 --> 00:04:24,860
+Bakalım.
+
+42
+00:04:24,860 --> 00:04:33,160
+Bir daha şehir edelim.
+
+43
+00:04:34,160 --> 00:04:36,160
+Şu an ne görüyorsunuz ekranda?
+
+44
+00:04:36,160 --> 00:04:41,569
+Şu an pdf'in sonundaki iyi çalışmalar kısmını görüyoruz.
+
+45
+00:04:41,569 --> 00:04:42,569
+Hı, tamam.
+
+46
+00:04:42,569 --> 00:04:44,569
+O zaman kapatayım ben şehri.
+
+47
+00:04:44,569 --> 00:04:45,569
+Bir daha açayım.
+
+48
+00:04:45,569 --> 00:05:03,379
+Şu an değişti mi?
+
+49
+00:05:03,379 --> 00:05:12,579
+Şu an görebiliyor musunuz pdf'in üst tarafını?
+
+50
+00:05:12,579 --> 00:05:19,620
+Şu an bende ekran yok. Bilmiyorum arkadaşlarım neyse ama.
+
+51
+00:05:19,620 --> 00:05:21,620
+Göremiyoruz hocam.
+
+52
+00:05:21,620 --> 00:05:25,569
+Gözüküyor mu gözükmüyor mu? Anlayamadım.
+
+53
+00:05:25,569 --> 00:05:26,569
+Bir daha söyleyelim.
+
+54
+00:05:26,569 --> 00:05:28,569
+Gözükmüyor.
+
+55
+00:05:28,569 --> 00:05:29,569
+Gözükmüyor.
+
+56
+00:05:29,569 --> 00:05:38,759
+Tamam. Yani sizler pdf'ten açıp o zaman takip edebilir misiniz?
+
+57
+00:05:38,759 --> 00:05:47,500
+Ben gene birazdan paylaşırım. Belki benim internet bağlantımda bir sıkıntı olabilir şu an.
+
+58
+00:05:48,779 --> 00:05:55,779
+Yani yapacağınız şey önünüze lütfen gönderdiğim chatten paylaştığım pdf'i de açınız.
+
+59
+00:05:55,779 --> 00:06:00,779
+Eğer sonradan giren varsa bir daha şuradan chatten paylaşalım.
+
+60
+00:06:00,779 --> 00:06:08,339
+Sizden istediğimiz bu deseni yakalamanız sürekli bir bit.
+
+61
+00:06:08,339 --> 00:06:11,339
+Bit sequence'ı, bir bit dizisi akacak.
+
+62
+00:06:11,339 --> 00:06:15,339
+Pattern'ı yakaladığınızda bir çıktısı üreteceksiniz.
+
+63
+00:06:15,339 --> 00:06:19,339
+Sonra bu dizi akmaya devam edecek, bit dizisi.
+
+64
+00:06:19,339 --> 00:06:23,339
+Pattern bozulduğu zaman sıfır çıktısı vereceksiniz.
+
+65
+00:06:23,339 --> 00:06:29,029
+Pattern'ı yakalayamadığınız sürece de sıfır çıktısı üretiyor olacaksınız.
+
+66
+00:06:29,029 --> 00:06:34,029
+Bu şekilde numaranıza uygun desen, deseni yakalayan durum diagramı, sisteminizin doğruluk tablosu.
+
+67
+00:06:34,029 --> 00:06:38,029
+Bütün işte flip-flop'ların önceki durumu şu iken, şu girdiği olduğunda bu çıktı.
+
+68
+00:06:38,029 --> 00:06:39,029
+Bütün işte flip-flop'ların önceki durumu şu iken, şu girdiği olduğunda bu çıktı.
+
+69
+00:06:39,029 --> 00:06:41,029
+Bütün işte flip-flop'ların önceki durumu şu iken, şu girdiği olduğunda bu çıktı.
+
+70
+00:06:41,029 --> 00:06:44,029
+Gibisinden kapsamlı bir doğruluk tablosu bekliyoruz.
+
+71
+00:06:44,029 --> 00:06:45,029
+Gibisinden kapsamlı bir doğruluk tablosu bekliyoruz.
+
+72
+00:06:45,029 --> 00:06:54,029
+Ayrıca flip-flop'lara vereceğiniz değeri de girdileri de bu doğruluk tablosuna baktıktan sonra sadeleştirmeniz gerekiyor.
+
+73
+00:06:54,029 --> 00:07:00,029
+Sadeleştirmeyi de nasıl isterseniz yapabilirsiniz ama nasıl yaptığınızı belirtmenizi istiyoruz kağıdınızda.
+
+74
+00:07:00,029 --> 00:07:01,029
+Sadeleştirmeyi de nasıl isterseniz yapabilirsiniz ama nasıl yaptığınızı belirtmenizi istiyoruz kağıdınızda.
+
+75
+00:07:01,029 --> 00:07:07,029
+Sonrasında da deseni yakalayan devreyi gerçekliyorsunuz.
+
+76
+00:07:07,029 --> 00:07:08,029
+Sonrasında da deseni yakalayan devreyi gerçekliyorsunuz.
+
+77
+00:07:08,029 --> 00:07:23,329
+Burada digital kullanmanızı tavsiye ediyorum. Geçen hafta digital kullanan arkadaşlar daha yüksek puan aldı. Ama siz istediğiniz başka bir programı kullanabilirsiniz. Ve digital'da da, Logisim'de de var bu ama Logisim'de geçen hafta yapabilen olmadı.
+
+78
+00:07:23,329 --> 00:07:35,410
+Digital'da devrenizi oluşturduktan sonra bir doğruluk tablosu generate ediyor size. Bu flip-floplu tasarımlarda da yapıyor. Geçen haftalarda kullananınız oldu zaten biliyorsunuz.
+
+79
+00:07:35,410 --> 00:07:46,589
+Ama flip-floplularda da bu çıktığı alabiliyoruz. Eğer tabloda oluşturursanız kontrolü daha rahat olduğu için bir tık ekstra puan vereceğimizi de ifade edeyim tablo oluşturabilenlere.
+
+80
+00:07:48,589 --> 00:07:56,680
+Bu şekilde herhangi bir sorusu olan var mı? Bir gelince kilitlenecek mi?
+
+81
+00:07:56,879 --> 00:08:07,500
+Diye sormuş bir arkadaşımız. Hayır kilitlenmeyecek. Sonrasında başlangıç durumuna döneceksiniz eğer dizi bozulduysa.
+
+82
+00:08:11,680 --> 00:08:14,439
+Mor'a göre mi yapacağız hocam ama neye göre?
+
+83
+00:08:15,439 --> 00:08:28,259
+Geçen hafta bunun cevabını vermemiştik ama desen yakalandıktan sonra gelen bitler için ilgili desen yakalandığında bir çıktısı üretmesi gerekmektedir.
+
+84
+00:08:28,860 --> 00:08:29,620
+Burada.
+
+85
+00:08:29,620 --> 00:08:39,240
+Buradan aslında Mor makinesi olduğunu yakalamanızı bekliyorduk. Yakalamasını bekliyorduk geçen haftaki arkadaşlarımız. Çok başarılı olamadılar. O yüzden Mor'la yapmanız gerektiğini bu hafta ifade etmiş olalım.
+
+86
+00:08:40,659 --> 00:08:41,620
+Tamam hocam sağ olun.
+
+87
+00:08:47,320 --> 00:08:55,740
+Mili ile de geçen hafta yapmaya çalışanlar oldu ama başarılı bir sonuç görmedik. Hocam ben Mili ile yaptım. Gayet güzel çalışıyor diyen olursa da ona bir şey demeyiz.
+
+88
+00:08:57,779 --> 00:09:03,659
+Süreniz bir geç başlama olduğu için yaklaşık iki saat vaktimiz var şu andan itibaren.
+
+89
+00:09:06,080 --> 00:09:13,120
+Hani iki saat bittikten sonra. Şimdi ben liste paylaşacağım. Geçen haftalarda yaptığımız gibi. O Excel ismimizi yazacağız.
+
+90
+00:09:14,340 --> 00:09:27,840
+Eğer iki saati bittikten sonra bitiremeyen olursa o listeye adını eklememiş olanlar olursa onlar gösterme şansları olmayacak. Yani iki saat içerisinde bitirip listeye adınızı eklemenizi bekliyoruz.
+
+91
+00:09:27,840 --> 00:09:32,220
+Bu şekilde yine soru olursa lütfen sorun.
+
+92
+00:10:34,070 --> 00:10:36,370
+Arkadaşlar bu listemizin linkini paylaştım.
+
+93
+00:10:37,230 --> 00:10:44,110
+Geçen haftalardaki gibi bitiren ismini buraya yazdığı takdirde sıradan kontrol ederek ilerleyeceğiz.
+
+94
+00:16:44,740 --> 00:16:51,220
+Kullanılmayan değerler için don't care kullanabilirsiniz arkadaşlar. Yani x koyabilirsiniz. Yani ne olduğunun bir önemi yok.
+
+95
+00:16:51,399 --> 00:16:56,620
+Kullanılmayan state'ler için tablo oluşturduğunuzda oralara bir şey yazmanıza gerek yok.
+
+96
+00:16:57,919 --> 00:17:00,820
+Sıfır veya bir olmaları çünkü bir şey fark etmeyecek kullanılmayan değerler.
+
+97
+00:17:01,559 --> 00:17:02,879
+Ne olduğunun önemi yok kısacası.
+
+98
+00:17:02,879 --> 00:19:19,250
+Evet doğru desen geldiğinde.
+
+99
+00:19:19,710 --> 00:19:21,009
+Bir çıktısı verecek.
+
+100
+00:19:21,349 --> 00:19:26,410
+Sonra başka bir girdi yaptığınızda tekrar ilk state'e dönebilir.
+
+101
+00:19:27,769 --> 00:19:35,450
+O tekrar ilk state'e döndükten sonra tekrar bir daha aynı yakalamanız gereken deseni yakalarsanız yine bir üreteceksiniz.
+
+102
+00:19:36,170 --> 00:19:41,609
+Desen bozulduğunda tekrar başlangıç state'ine döneceksiniz.
+
+103
+00:19:41,609 --> 00:19:47,750
+Yani demek istediğim birden fazla defa desen gelirse onu da yakalamanızı bekliyoruz.
+
+104
+00:19:53,490 --> 00:19:54,990
+Yani en az bir kere yakalasanız.
+
+105
+00:19:55,089 --> 00:19:57,549
+Bizim için yeterli.
+
+106
+00:19:59,819 --> 00:20:05,960
+Ama geçen hafta bazı arkadaşlar bir kere yakalayıp bırakmışlardı.
+
+107
+00:20:06,259 --> 00:20:07,759
+Kitlemişlerdi sonra state'i.
+
+108
+00:20:08,500 --> 00:20:09,359
+State makinesini.
+
+109
+00:20:10,319 --> 00:20:11,200
+O sebeple.
+
+110
+00:20:11,779 --> 00:20:12,619
+Yani onu istemiyoruz.
+
+111
+00:20:44,799 --> 00:20:45,539
+Merhaba hocam.
+
+112
+00:20:45,680 --> 00:20:50,039
+Ben devreyi bitirdim ama nasıl test edeceğimi bilmiyorum da.
+
+113
+00:20:50,480 --> 00:20:52,220
+Test için neyi kastediyorsunuz?
+
+114
+00:20:55,109 --> 00:20:56,289
+Nasıl test edeceğini mi?
+
+115
+00:20:57,410 --> 00:20:58,609
+Yani hani.
+
+116
+00:20:59,970 --> 00:21:03,809
+Devreyi mi yapacağız yani şeyi kastediyorsunuz değil mi analize basmayı başka bir şey değil mi?
+
+117
+00:21:05,089 --> 00:21:28,190
+Evet yani analize basıp tablo şeklinde görebiliyorsan oluşturduğun devreyi hani işte şu state'de şu girdi geldiğinde bu state'e geçiyor şöyle bir çıktı üretiyor bunu görebiliyorsan tablo olarak bunu bekliyoruz göremiyorsan da ben kılığı kendim manuel bir şekilde arttırıyorum bu girdiler olduğunda deseni yakaladığımda hocam bakın bir çıktısı üretiyor.
+
+118
+00:21:28,190 --> 00:21:29,190
+Yakalayamadığımda da sıfır çıktı.
+
+119
+00:21:29,190 --> 00:21:29,250
+Yakalayamadığımda da sıfır çıktısı üretiyor.
+
+120
+00:21:29,250 --> 00:21:29,329
+Yakalayamadığımda da sıfır çıktısı üretiyor.
+
+121
+00:21:29,329 --> 00:21:31,950
+Yakalayamadığımda da sıfır çıktısı üretiyor demen yeterli.
+
+122
+00:21:32,769 --> 00:21:33,690
+Anladım hocam sağol.
+
+123
+00:29:57,130 --> 00:30:00,190
+Arkadaşlar kontroller gene bire bir olacak.
+
+124
+00:30:01,130 --> 00:30:02,970
+Yani ben buradan başka bir odaya geçeceğim.
+
+125
+00:30:03,470 --> 00:30:04,609
+Bir arkadaşımız bitirmiş.
+
+126
+00:30:06,029 --> 00:30:09,630
+Listede herkesi kontrol ettiğim sürece buraya da dönüyor olacağım.
+
+127
+00:35:40,030 --> 00:35:41,690
+[öğrenci] bir soru sormuş.
+
+128
+00:35:42,210 --> 00:35:43,510
+Digital link'e verebilecek var mı?
+
+129
+00:35:43,570 --> 00:35:45,090
+Bu pdf'in içinde [öğrenci] şey var.
+
+130
+00:35:45,429 --> 00:35:49,809
+O digital yazıyor ya altta onun içinde link var yani ona tıklayabiliyorsun aslında.
+
+131
+00:35:49,809 --> 00:36:45,710
+Ama eğer pdf'e herhangi bir şey var.
+
+132
+00:36:45,730 --> 00:36:51,190
+O yüzden pdf'teki link'e herhangi bir sebeple tıklayamazsam da linki chat'e paylaştım.
+
+133
+00:36:52,650 --> 00:36:55,010
+Zaten indiriyorsun bir jar dosyası.
+
+134
+00:36:55,289 --> 00:36:57,210
+Java yüklüyse bilgisayarında hemen çalışıyor.
+
+135
+00:39:16,559 --> 00:39:21,420
+Hocam kimse yoksa eğer ben adımı yazdım da görmediyseniz.
+
+136
+00:39:22,699 --> 00:39:24,099
+Tamamdır hemen bakalım.
+
+137
+00:46:43,239 --> 00:46:44,820
+Arkadaşlar herhangi bir soru varsa cevaplayabilirim.
+
+138
+00:47:45,679 --> 00:47:47,019
+Girişiniz ayrı bir pin olacak arkadaşlar.
+
+139
+00:47:49,139 --> 00:47:51,900
+Bir bitlik bir switch olacak yani aslında.
+
+140
+00:47:52,019 --> 00:47:56,380
+Ama yani kullandığınız programlarda switch diye geçmiyor.
+
+141
+00:47:56,380 --> 00:48:00,460
+Yani bizim geçen haftalarda da girdi olarak kullandığımız bir eleman vardı o olacak.
+
+142
+00:48:02,260 --> 00:48:08,400
+Bir de ayrıyetten flipflopların clock uçları var oralara da clock'u ayrıyetten bağlayacaksınız.
+
+143
+00:48:08,920 --> 00:48:13,519
+Yani bir clock'unuz olacak bir de giriş için kullandığınız diğer elemanınız olacak.
+
+144
+01:00:08,599 --> 01:00:10,139
+Benim bunu sıfırla yapmam gerekiyor.
+
+145
+01:00:10,380 --> 01:00:10,900
+Niye?
+
+146
+01:00:11,659 --> 01:00:13,980
+Olmuyor kablolar birbirine karışıyor sürekli.
+
+147
+01:00:17,070 --> 01:00:18,869
+O zaman sen de daha rahat yapabilirsin.
+
+148
+01:00:19,170 --> 01:00:23,780
+Geldiğinde artık yıldız teknik öğrencisi olmayabilirim.
+
+149
+01:00:24,019 --> 01:21:20,170
+Arkadaşlar bir sorusu olan var mı?
+
+150
+01:21:32,420 --> 01:21:33,920
+45 dakikanız daha var arkadaşlar.
+
+151
+01:21:36,159 --> 01:21:39,960
+45 dakikaya kadar bitirip listeye isminizi yazmanız gerekiyor.
+
+152
+02:32:13,030 --> 02:32:14,450
+[öğrenci] sen göstermedin herhalde.
+
+153
+02:32:23,059 --> 02:32:23,620
+Biliyor musun [öğrenci]?
+
+154
+02:32:25,260 --> 02:32:26,180
+Ha diyorum hocam.
+
+155
+02:32:26,920 --> 02:32:28,120
+Ekran paylaşabilirsin burada.
+
+156
+02:32:29,340 --> 02:32:29,819
+Buradan mı?
+
+157
+02:32:30,219 --> 02:32:30,500
+Evet.
+
+158
+02:32:35,610 --> 02:32:45,790
+Geldi mi hocam?
+
+159
+02:32:46,649 --> 02:32:47,329
+Geldi şu an.
+
+160
+02:32:48,209 --> 02:32:48,690
+Tamamdır.
+
+161
+02:32:49,489 --> 02:32:51,489
+Kağıtlarını görelim önce.
+
+162
+02:32:52,809 --> 02:32:54,090
+Benim numaram şuydu.
+
+163
+02:32:55,370 --> 02:33:00,489
+O ck9 olduğu için ck olması gerekiyor.
+
+164
+02:33:00,750 --> 02:33:02,290
+Bunu böyle çizdim.
+
+165
+02:33:03,049 --> 02:33:04,329
+Tamam aşağı inebilirsin.
+
+166
+02:33:05,110 --> 02:33:06,889
+Tabi şöyle.
+
+167
+02:33:07,409 --> 02:33:10,229
+Böyle buldum.
+
+168
+02:33:10,729 --> 02:33:12,010
+Olması gerekiyor.
+
+169
+02:33:12,270 --> 02:33:13,049
+Adedeştirmeleri göster.
+
+170
+02:33:15,350 --> 02:33:18,670
+Tek tek c2, g2, c1
+
+171
+02:33:19,489 --> 02:33:22,809
+Bu da c0, g0, bir de z.
+
+172
+02:33:23,329 --> 02:33:23,850
+Tamam.
+
+173
+02:33:24,090 --> 02:33:25,889
+En üstte bir daha çıkabilir misin?
+
+174
+02:33:26,149 --> 02:33:26,909
+Bir patternını
+
+175
+02:33:27,170 --> 02:33:27,930
+bir daha göreyim.
+
+176
+02:33:28,709 --> 02:33:29,469
+En üstte.
+
+177
+02:33:32,319 --> 02:33:34,360
+Tamam. Tamam simülasyonu gösterebilirsin.
+
+178
+02:33:39,620 --> 02:33:40,639
+Şunu şöyle
+
+179
+02:33:41,159 --> 02:33:41,920
+yerleştim.
+
+180
+02:33:42,440 --> 02:33:44,219
+Tamam bir doğruluk tablona bakayım.
+
+181
+02:33:46,920 --> 02:33:49,479
+Hocam bunlar şey döndü ki
+
+182
+02:33:49,979 --> 02:33:51,260
+çıkmıyor da ama şey
+
+183
+02:33:51,520 --> 02:33:52,540
+Bir sıkıntı yok onda.
+
+184
+02:33:52,799 --> 02:33:53,579
+Problem yok.
+
+185
+02:33:54,340 --> 02:33:55,620
+Z'yi böyle buldum.
+
+186
+02:33:56,639 --> 02:33:57,159
+Tamam.
+
+187
+02:33:57,459 --> 02:34:00,020
+Bir de simülasyonda çalıştığını görelim mi? Kendimiz yapalım.
+
+188
+02:34:00,540 --> 02:34:01,040
+Tamam.
+
+189
+02:34:01,559 --> 02:34:02,319
+Bunu değil mi?
+
+190
+02:34:02,840 --> 02:34:03,340
+Yok yok.
+
+191
+02:34:03,600 --> 02:34:04,379
+Şimdi şey yap.
+
+192
+02:34:05,899 --> 02:34:07,959
+Simülasyonu başlatma play butonu var.
+
+193
+02:34:08,219 --> 02:34:08,979
+Ortada yukarıda.
+
+194
+02:34:10,260 --> 02:34:10,780
+Nerede?
+
+195
+02:34:11,020 --> 02:34:12,559
+Yukarıda. Yukarıdaki menüde.
+
+196
+02:34:12,819 --> 02:34:13,340
+Sağa gel.
+
+197
+02:34:13,579 --> 02:34:15,639
+Ortala. Onun iki solunda.
+
+198
+02:34:16,659 --> 02:34:17,180
+Sol yap.
+
+199
+02:34:17,940 --> 02:34:18,959
+O değil, bir solundaki.
+
+200
+02:34:19,979 --> 02:34:20,500
+Tıkla ona.
+
+201
+02:34:21,780 --> 02:34:22,299
+Şimdi
+
+202
+02:34:22,540 --> 02:34:24,600
+Claw'umuz var ya aşağıda.
+
+203
+02:34:26,139 --> 02:34:27,420
+Ona iki defa tıkladığın zaman
+
+204
+02:34:27,719 --> 02:34:30,020
+bir sonraki duruma geçiyoruz.
+
+205
+02:34:30,280 --> 02:34:30,540
+Evet.
+
+206
+02:34:30,780 --> 02:34:32,059
+Ona iki defa tıkladığında.
+
+207
+02:34:34,239 --> 02:34:34,760
+1
+
+208
+02:34:35,260 --> 02:34:36,040
+2. Evet.
+
+209
+02:34:36,280 --> 02:34:37,559
+Şimdi senin pattern'ın 0
+
+210
+02:34:37,819 --> 02:34:39,100
+1 1 0 1 di ya.
+
+211
+02:34:41,000 --> 02:34:41,760
+Nerede?
+
+212
+02:34:42,020 --> 02:34:43,299
+X'ini 1 yapıyorsun.
+
+213
+02:34:43,819 --> 02:34:44,579
+X girişini.
+
+214
+02:34:45,340 --> 02:34:45,860
+1
+
+215
+02:34:46,379 --> 02:34:47,399
+Şimdi Claw'una
+
+216
+02:34:47,899 --> 02:34:48,680
+Claw'una
+
+217
+02:34:48,940 --> 02:34:50,979
+4 defa tıklıyorsun Claw'a.
+
+218
+02:34:52,780 --> 02:34:53,280
+1
+
+219
+02:34:53,799 --> 02:34:54,559
+2
+
+220
+02:34:54,819 --> 02:34:55,340
+3
+
+221
+02:34:55,840 --> 02:34:56,360
+Tamam.
+
+222
+02:34:56,620 --> 02:34:57,120
+Tamam.
+
+223
+02:34:57,379 --> 02:34:59,420
+Şimdi X'i tekrar 0 yapıyorsun.
+
+224
+02:35:00,500 --> 02:35:03,059
+2 kere tıklıyorsun.
+
+225
+02:35:05,620 --> 02:35:07,920
+Tabloyu da çekersen bir de çıktığı görelim.
+
+226
+02:35:12,059 --> 02:35:13,840
+Tamam. X'i tekrar 1 yapacaksın.
+
+227
+02:35:14,100 --> 02:35:14,620
+Tabloyu
+
+228
+02:35:14,860 --> 02:35:15,379
+Tamam.
+
+229
+02:35:16,139 --> 02:35:17,420
+Tablo şekilde.
+
+230
+02:35:18,200 --> 02:35:19,739
+2 defa daha Claw'a tıklıyorsun.
+
+231
+02:35:28,430 --> 02:35:31,510
+Tamam. Pattern'a bir daha bakalım mı?
+
+232
+02:35:33,520 --> 02:35:35,319
+Pattern'ı bir daha kağıttan görebilir miyim?
+
+233
+02:35:35,819 --> 02:35:36,340
+Deseni.
+
+234
+02:35:39,200 --> 02:35:40,739
+Tamam. Deseni yanlış girmişiz.
+
+235
+02:35:41,239 --> 02:35:42,280
+Yukarı çık en yukarı.
+
+236
+02:35:45,629 --> 02:35:46,649
+Tamam. Şimdi
+
+237
+02:35:47,170 --> 02:35:48,190
+bir daha gel simülasyona.
+
+238
+02:35:51,819 --> 02:35:55,899
+Şimdi yaptığımız şeyi anladın mı burada Claw'a tıklayarak? 2 defa Claw'a tıkladığımız zaman
+
+239
+02:35:56,159 --> 02:35:57,440
+bir sonraki duruma geçiyoruz.
+
+240
+02:36:00,260 --> 02:36:03,340
+Şimdi şeyi durdur yukarıdan simülasyonu. Bir daha baştan başlatalım.
+
+241
+02:36:04,620 --> 02:36:05,120
+Bir daha çalıştır.
+
+242
+02:36:05,379 --> 02:36:06,659
+Bir daha çalıştır simülasyonu.
+
+243
+02:36:07,180 --> 02:36:08,959
+Şimdi X'i 1 yap.
+
+244
+02:36:10,760 --> 02:36:12,040
+Burada 1 değil mi hocam?
+
+245
+02:36:12,540 --> 02:36:13,059
+Evet.
+
+246
+02:36:14,079 --> 02:36:14,860
+Şimdi Claw'a yap.
+
+247
+02:36:15,159 --> 02:36:16,700
+İki defa tıkla ki bir sonraki duruma geçsin.
+
+248
+02:36:17,979 --> 02:36:18,479
+1
+
+249
+02:36:18,739 --> 02:36:19,260
+2
+
+250
+02:36:19,500 --> 02:36:20,780
+Şimdi X'i 0 yapıyorsun.
+
+251
+02:36:21,819 --> 02:36:22,319
+0
+
+252
+02:36:22,840 --> 02:36:23,340
+Tamam.
+
+253
+02:36:23,600 --> 02:36:24,879
+Claw'a yine tıklıyorsun.
+
+254
+02:36:25,399 --> 02:36:26,940
+Pattern'ını buraya giriyoruz.
+
+255
+02:36:27,180 --> 02:36:28,719
+Kaç defa tıklayacağım hocam?
+
+256
+02:36:28,979 --> 02:36:31,280
+2 defa tıklayacaksın. Bir tane 0 gerektiği için.
+
+257
+02:36:31,540 --> 02:36:32,299
+1
+
+258
+02:36:32,819 --> 02:36:33,340
+2
+
+259
+02:36:33,579 --> 02:36:34,860
+Şimdi X'i 1 yapıyorsun.
+
+260
+02:36:36,920 --> 02:36:37,940
+Şimdi Claw'a
+
+261
+02:36:38,200 --> 02:36:40,760
+6 kere tıklıyorsun. Sonda 3 tane 1 vardı değil mi?
+
+262
+02:36:41,260 --> 02:36:41,780
+1
+
+263
+02:36:42,540 --> 02:36:43,319
+2
+
+264
+02:36:43,579 --> 02:36:44,340
+Kaç defa?
+
+265
+02:36:44,899 --> 02:36:45,920
+6 defa toplam.
+
+266
+02:36:46,700 --> 02:36:47,200
+3
+
+267
+02:36:47,719 --> 02:36:48,479
+4
+
+268
+02:36:48,739 --> 02:36:49,500
+5
+
+269
+02:36:49,760 --> 02:36:50,540
+6
+
+270
+02:36:52,600 --> 02:36:55,159
+Bir şu doğruluk tablonu bir daha yukarı çıkarsana.
+
+271
+02:36:57,719 --> 02:36:58,739
+Bir dakika bakalım.
+
+272
+02:37:04,129 --> 02:37:05,149
+1 0
+
+273
+02:37:06,690 --> 02:37:07,450
+1
+
+274
+02:37:07,709 --> 02:37:08,489
+1
+
+275
+02:37:10,329 --> 02:37:11,870
+Sonda 0 mu var Pattern'ı?
+
+276
+02:37:12,889 --> 02:37:13,670
+Evet.
+
+277
+02:37:14,170 --> 02:37:16,989
+Bir daha Pattern'ını açsana. Ben Pattern'ı niye bu kadar çok unutuyorum.
+
+278
+02:37:20,059 --> 02:37:21,600
+Kağıdını açabilir misin? Kağıdını.
+
+279
+02:37:27,430 --> 02:37:29,729
+Tamam. Bir dur doğruluk tablosunda. Bir saniye.
+
+280
+02:37:39,600 --> 02:37:40,360
+Bir dakika.
+
+281
+02:37:48,750 --> 02:37:50,030
+Tamam. Bak şimdi burada
+
+282
+02:37:53,110 --> 02:37:55,409
+D4 durumunun olduğu satırlar var ya.
+
+283
+02:37:56,690 --> 02:37:57,709
+D4
+
+284
+02:37:57,969 --> 02:38:00,790
+D4 durumunun olduğu satırlar aşağıda.
+
+285
+02:38:01,030 --> 02:38:03,350
+Sol tarafa D1234 yazmışsın ya.
+
+286
+02:38:04,629 --> 02:38:05,909
+Soluna. Tablonun soluna.
+
+287
+02:38:06,670 --> 02:38:10,770
+D4'e gel. D4'ün olduğu satırlara.
+
+288
+02:38:11,530 --> 02:38:12,049
+Burada
+
+289
+02:38:12,309 --> 02:38:13,829
+1 0 0 durumunda
+
+290
+02:38:14,870 --> 02:38:16,149
+X1 gelirse
+
+291
+02:38:16,149 --> 02:38:18,709
+1 0 1 durumuna geçiyor.
+
+292
+02:38:18,969 --> 02:38:19,469
+Değil mi?
+
+293
+02:38:20,750 --> 02:38:21,530
+Şurada değil mi?
+
+294
+02:38:21,790 --> 02:38:23,829
+Evet. Şimdi programdaki tablonu aç.
+
+295
+02:38:24,350 --> 02:38:25,629
+Simülasyondaki tablonu.
+
+296
+02:38:29,590 --> 02:38:31,389
+Burada 1 0 0'da
+
+297
+02:38:32,149 --> 02:38:33,430
+1 geldiğinde
+
+298
+02:38:34,209 --> 02:38:35,729
+gene 1 0 0'da kalıyor.
+
+299
+02:38:36,250 --> 02:38:37,270
+0 geldiğinde
+
+300
+02:38:38,049 --> 02:38:39,069
+0 1 0'a gidiyor.
+
+301
+02:38:39,569 --> 02:38:40,090
+Yani
+
+302
+02:38:40,350 --> 02:38:42,129
+1 0 0'da 1 geldiğinde
+
+303
+02:38:42,389 --> 02:38:43,930
+1 0 1'e gitmesi lazım değil mi?
+
+304
+02:38:44,450 --> 02:38:46,750
+Senin tablonuna tam uyuşmuyor bu. Onu demek istiyorum.
+
+305
+02:38:48,950 --> 02:38:49,969
+Anladın mı hatanı?
+
+306
+02:38:49,969 --> 02:38:57,709
+Ama şey hocam. Tam anlamadım da.
+
+307
+02:38:57,969 --> 02:39:00,790
+Zedde göre çalıştım. Yine analiz yapsak.
+
+308
+02:39:01,049 --> 02:39:03,350
+Bunu buraya koymamız gerekiyor.
+
+309
+02:39:03,850 --> 02:39:06,670
+Şöyle gidelim. Zed'i doğru gösteriyoruz ya.
+
+310
+02:39:06,930 --> 02:39:07,690
+Onda bir problem yok.
+
+311
+02:39:07,950 --> 02:39:08,729
+Zaten biz
+
+312
+02:39:08,969 --> 02:39:11,790
+Debra'yı kurarken
+
+313
+02:39:12,049 --> 02:39:13,329
+birkaç yolumuz var.
+
+314
+02:39:13,590 --> 02:39:15,629
+Bir şey göstereceğim.
+
+315
+02:39:15,889 --> 02:39:17,690
+Bunun başka bir sözümü var.
+
+316
+02:39:17,930 --> 02:39:19,729
+Birkaç defa açabileceğim.
+
+317
+02:39:20,250 --> 02:39:23,829
+Yok anladım. Demek istediğim sadece şu. Senin çizdiğin doğruluk tablosundaki
+
+318
+02:39:24,129 --> 02:39:24,889
+geçişlerle
+
+319
+02:39:25,670 --> 02:39:26,950
+bundakiler tam aynı değil.
+
+320
+02:39:27,209 --> 02:39:30,270
+Ama bir problem yok. Yani sadece hatanın farkında ol demek istiyorum.
+
+321
+02:39:30,530 --> 02:39:31,049
+Anladın?
+
+322
+02:39:35,799 --> 02:39:37,340
+Demek istediğim şey o son
+
+323
+02:39:37,860 --> 02:39:39,639
+durumda. D4 durumunda
+
+324
+02:39:39,899 --> 02:39:41,440
+programında D5'e geçmiyor.
+
+325
+02:39:42,200 --> 02:39:45,540
+Ama kağıdında geçirmişsin. Bir şey gözünden kaçmış sadece. Onu demek istiyorum.
+
+326
+02:39:47,319 --> 02:39:48,100
+Anlaşıldı mı?
+
+327
+02:39:50,750 --> 02:39:52,030
+Sen gene onu kontrol edersin.
+
+328
+02:39:52,790 --> 02:39:53,829
+Ben notunu girdim.
+
+329
+02:39:56,389 --> 02:39:57,149
+Eline sağlık.
+
+330
+02:39:57,409 --> 02:39:58,170
+Çıkabilirsin yani.
+
+331
+02:39:58,430 --> 02:39:58,950
+Bir problem yok.
+
+332
+02:40:04,700 --> 02:40:05,479
+Şu an ama konuşuyorsun.
+
+333
+02:40:05,780 --> 02:40:06,280
+Sesim gelmiyor.
+
+334
+02:40:24,739 --> 02:40:26,020
+Başka gösterecek olan var mı arkadaşlar?
+
+335
+02:40:26,280 --> 02:40:28,340
+Hocam ben de ismi yazmıştım ama
+
+336
+02:40:29,620 --> 02:40:30,639
+Seninkine bakmadık mı [öğrenci]?
+
+337
+02:40:30,899 --> 02:40:31,659
+Az önce?
+
+338
+02:40:31,920 --> 02:40:32,680
+Bakmadınız hocam.
+
+339
+02:40:33,200 --> 02:40:35,239
+Ha o [öğrenci] ünlüymüş ya. Ben de diyorum
+
+340
+02:40:35,760 --> 02:40:36,260
+Baktık herhalde.
+
+341
+02:40:37,540 --> 02:40:38,319
+Paylaşayım ekmeği.
+
+342
+02:40:38,579 --> 02:40:39,340
+Paylaş lütfen.
+
+343
+02:40:51,139 --> 02:40:52,680
+Tamam ben hızlıca bir bakayım.
+
+344
+02:40:59,600 --> 02:41:02,920
+Şimdi 0 geldi. 1 geldi. 0 geldi. 0 geldi.
+
+345
+02:41:03,700 --> 02:41:06,000
+Tamam sen milli makinesi yapmışsın. Tamam.
+
+346
+02:41:07,020 --> 02:41:08,559
+Şöyle karnalarını da göstereyim.
+
+347
+02:41:08,819 --> 02:41:10,360
+Tamam. Simülasyonu gösterebilirsin.
+
+348
+02:41:10,659 --> 02:41:19,040
+Tamam. Senin tablonla örtüşüyor bu.
+
+349
+02:41:24,889 --> 02:41:25,670
+Tablona bir daha bir bakayım.
+
+350
+02:41:27,969 --> 02:41:30,010
+Tablona bir daha bakayım. Programdaki tablona.
+
+351
+02:41:30,530 --> 02:41:31,809
+Zaten buradan anlaşılıyor.
+
+352
+02:41:32,309 --> 02:41:33,850
+Pattern'ın neydi? Bir daha söyleyebilir misin?
+
+353
+02:41:35,129 --> 02:41:38,469
+Pattern'ın 0 1 0 0 0.
+
+354
+02:41:39,489 --> 02:41:41,790
+Tamam. 0 geldi. 1 geldi.
+
+355
+02:41:42,309 --> 02:41:44,090
+0 geldi. 0 geldi.
+
+356
+02:41:44,090 --> 02:41:50,229
+Başa gittin. Başa giderken de Z1 oldu. Tamam. Zaten doğru tablosundan anlaşılıyor.
+
+357
+02:41:50,489 --> 02:41:51,250
+Tamamdır [öğrenci].
+
+358
+02:41:52,030 --> 02:41:53,809
+Eline sağlık. Çıkabilirsin. İyi akşamlar.
+
+359
+02:41:54,069 --> 02:41:55,090
+İyi akşamlar hocam.
+
+360
+02:41:58,690 --> 02:42:03,809
+Hocam ben o tabloyu ona göre düzelttim. Fakat yine aynı yapıda. Yani
+
+361
+02:42:04,049 --> 02:42:05,329
+Değişen bir şey olmuyor hocam.
+
+362
+02:42:06,870 --> 02:42:08,670
+Bakalım bir.
+
+363
+02:42:08,930 --> 02:42:09,690
+Bir saniye.
+
+364
+02:42:11,860 --> 02:42:12,899
+Değişen bir şey yok mu diyorsun?
+
+365
+02:42:13,139 --> 02:42:13,920
+Evet hocam.
+
+366
+02:42:14,420 --> 02:42:15,459
+Tamam ben notunu girmişim.
+
+367
+02:42:15,760 --> 02:42:16,520
+Bir daha kontrol edeyim.
+
+368
+02:42:16,780 --> 02:42:17,540
+Girmiştiniz hocam.
+
+369
+02:42:19,079 --> 02:42:19,600
+Tamam [öğrenci].
+
+370
+02:42:19,860 --> 02:42:21,379
+Yani değişen bir şey yoksa.
+
+371
+02:42:21,899 --> 02:42:23,180
+Hocam onu nasıl yapabiliriz?
+
+372
+02:42:23,440 --> 02:42:26,260
+Kafam karıştı da o tarafta.
+
+373
+02:42:27,280 --> 02:42:28,040
+Ekrana.
+
+374
+02:42:28,299 --> 02:42:29,319
+Ekranı paylaşayım hocam.
+
+375
+02:42:29,579 --> 02:42:30,100
+Çünkü
+
+376
+02:42:30,600 --> 02:42:31,120
+tam
+
+377
+02:42:31,379 --> 02:42:32,659
+sindirim öyle çıkayım diyorum.
+
+378
+02:42:33,159 --> 02:42:33,680
+Tamam sindir.
+
+379
+02:42:33,940 --> 02:42:34,440
+Evet.
+
+380
+02:42:35,459 --> 02:42:36,500
+Ekran burada.
+
+381
+02:42:36,739 --> 02:42:37,260
+Şimdi
+
+382
+02:42:37,520 --> 02:42:38,799
+Pattern'ın neydi?
+
+383
+02:42:41,360 --> 02:42:43,139
+Bir dakika hocam.
+
+384
+02:42:43,920 --> 02:42:45,459
+Bu arada dürdane var burada.
+
+385
+02:42:45,760 --> 02:42:47,040
+[öğrenci] sen gösterecek misin?
+
+386
+02:42:47,540 --> 02:42:48,819
+Evet hocam göstereceğim.
+
+387
+02:42:49,079 --> 02:42:51,639
+O zaman bir dürdane'ninkine bakalım.
+
+388
+02:42:52,159 --> 02:42:52,920
+Çıkmana gerek yok.
+
+389
+02:42:53,440 --> 02:42:54,200
+Ben dürdane
+
+390
+02:42:54,979 --> 02:42:55,739
+Hiç sesi çıkmayınca.
+
+391
+02:42:56,000 --> 02:42:57,020
+Adında liste yazmamışsın.
+
+392
+02:42:58,299 --> 02:42:59,579
+Göstermeyeceksin herhalde dedim.
+
+393
+02:42:59,840 --> 02:43:00,340
+Bakalım.
+
+394
+02:43:00,600 --> 02:43:02,899
+Daha sonra girdim derse o yüzden
+
+395
+02:43:03,680 --> 02:43:06,500
+Yazmıştım ama chat'e görmediniz sanırım.
+
+396
+02:43:06,739 --> 02:43:07,780
+Ha bir listeden
+
+397
+02:43:08,020 --> 02:43:09,819
+Bir excel dosyasından yürütüyoruz da.
+
+398
+02:43:10,579 --> 02:43:11,100
+Evet.
+
+399
+02:43:12,379 --> 02:43:12,899
+Sıkıntı yok.
+
+400
+02:43:13,139 --> 02:43:14,420
+Hocam bu desenim.
+
+401
+02:43:14,680 --> 02:43:15,459
+Bu da tablo.
+
+402
+02:43:16,020 --> 02:43:18,579
+0 1 0 0 0
+
+403
+02:43:19,600 --> 02:43:20,100
+Tamam.
+
+404
+02:43:20,360 --> 02:43:21,899
+Umut'un aynı ağzına bir bakayım.
+
+405
+02:43:24,899 --> 02:43:25,420
+Tamam.
+
+406
+02:43:26,180 --> 02:43:29,000
+Kağıtta göstereceğim.
+
+407
+02:43:29,520 --> 02:43:30,280
+Tamam.
+
+408
+02:43:30,540 --> 02:43:31,819
+Simülasyonu gösterebilirsin.
+
+409
+02:43:34,899 --> 02:43:37,459
+Hocam bu arkadaşların
+
+410
+02:43:37,959 --> 02:43:40,020
+Şu an ama simülasyon ekranını görmüyorum.
+
+411
+02:43:41,040 --> 02:43:42,059
+Pardon.
+
+412
+02:43:43,600 --> 02:43:45,379
+Onu da paylaşman lazım pencere olarak.
+
+413
+02:43:54,159 --> 02:43:55,440
+Evet şimdi geldi.
+
+414
+02:43:55,440 --> 02:43:56,719
+Tamam bir şey diyorum.
+
+415
+02:43:58,739 --> 02:44:00,520
+Uygulama farklı sanırım hocam.
+
+416
+02:44:00,780 --> 02:44:02,319
+Zaman atması verip
+
+417
+02:44:02,819 --> 02:44:03,600
+Test ediyoruz.
+
+418
+02:44:04,100 --> 02:44:04,620
+Şuradan.
+
+419
+02:44:05,139 --> 02:44:06,659
+Evet yani kloğa kendin tıklıyorsun.
+
+420
+02:44:06,920 --> 02:44:07,440
+Evet evet.
+
+421
+02:44:07,940 --> 02:44:08,459
+Tamam.
+
+422
+02:44:08,719 --> 02:44:10,500
+Petrina'nın burada çalıştığını gösterebilir misin?
+
+423
+02:44:10,760 --> 02:44:13,319
+Tamam. 0 1 0 0 0'dı.
+
+424
+02:44:13,840 --> 02:44:14,340
+Tamam.
+
+425
+02:44:15,120 --> 02:44:17,420
+0'ı verdik. 1. duruma geçti.
+
+426
+02:44:17,940 --> 02:44:18,440
+Tamam.
+
+427
+02:44:18,700 --> 02:44:19,719
+1 vereceğiz.
+
+428
+02:44:21,780 --> 02:44:23,819
+2. duruma geçti.
+
+429
+02:44:24,079 --> 02:44:25,100
+Tekrar 0 vereceğiz.
+
+430
+02:44:25,100 --> 02:44:30,159
+3. duruma geçti.
+
+431
+02:44:30,659 --> 02:44:32,200
+Tekrar 0 vereceğiz.
+
+432
+02:44:32,459 --> 02:44:32,979
+Evet.
+
+433
+02:44:33,479 --> 02:44:34,000
+4.
+
+434
+02:44:34,500 --> 02:44:36,040
+1 0 daha vereceğiz.
+
+435
+02:44:36,559 --> 02:44:38,100
+5. duruma geçiyor.
+
+436
+02:44:38,340 --> 02:44:38,860
+Yanıyor.
+
+437
+02:44:39,379 --> 02:44:41,159
+Tamam [öğrenci] gayet iyi. Eline sağlık.
+
+438
+02:44:41,940 --> 02:44:45,520
+Kusura bakma listeyi görmediğin için biraz beklemiş oldum belki.
+
+439
+02:44:45,780 --> 02:44:46,540
+İyi akşamlar hocam.
+
+440
+02:44:46,799 --> 02:44:47,559
+İyi akşamlar.
+
+441
+02:44:53,010 --> 02:44:54,549
+Evet [öğrenci] ekranı paylaşabilirsin.
+
+442
+02:44:56,329 --> 02:44:57,110
+Paylaştım hocam.
+
+443
+02:44:57,350 --> 02:45:00,690
+Hocam burada listeyi yine o hani
+
+444
+02:45:00,950 --> 02:45:01,969
+Doğruluk tablosunun
+
+445
+02:45:02,270 --> 02:45:04,569
+O şekli getirdim hocam.
+
+446
+02:45:04,829 --> 02:45:05,850
+Petrina'nın bir söyle.
+
+447
+02:45:06,629 --> 02:45:07,909
+Bir dakika hocam.
+
+448
+02:45:12,059 --> 02:45:13,079
+1 0
+
+449
+02:45:13,340 --> 02:45:14,360
+1 0 0
+
+450
+02:45:15,120 --> 02:45:15,899
+1 0
+
+451
+02:45:16,920 --> 02:45:18,459
+1 0 0. Şimdi bakıyoruz bak
+
+452
+02:45:18,719 --> 02:45:20,239
+Doğruluk tablona bakıyoruz programdaki.
+
+453
+02:45:21,020 --> 02:45:22,559
+0 0 0 durumundayım.
+
+454
+02:45:23,059 --> 02:45:23,840
+1 geldi.
+
+455
+02:45:24,600 --> 02:45:25,120
+Evet hocam.
+
+456
+02:45:25,620 --> 02:45:28,440
+Yine 0 0 0 durumundayım ama böyle olmaması lazım.
+
+457
+02:45:28,700 --> 02:45:29,719
+Bir sonraki duruma geçmem lazım.
+
+458
+02:45:29,979 --> 02:45:30,479
+Senin
+
+459
+02:45:31,000 --> 02:45:33,819
+Kurduğun sistem 0 geldiğinde bir sonraki duruma geçiyor.
+
+460
+02:45:34,120 --> 02:45:34,879
+X state için.
+
+461
+02:45:35,399 --> 02:45:36,940
+X state için 0 geldiğinde.
+
+462
+02:45:37,440 --> 02:45:40,000
+Bu kısmı anladın değil mi? X satırında bunu anlayabiliyorsun.
+
+463
+02:45:40,260 --> 02:45:42,819
+0 0 0. X 0 olduğunda.
+
+464
+02:45:43,340 --> 02:45:44,879
+Bir sonraki duruma geçecek.
+
+465
+02:45:45,379 --> 02:45:48,959
+Evet ama böyle olmaması lazım. 1 geldiğinde geçmesi lazım değil mi? Petrinanın 1 ile başlıyor.
+
+466
+02:45:49,219 --> 02:45:51,780
+Yok hocam tersten başlamıyor muydu hocam?
+
+467
+02:45:52,040 --> 02:45:53,059
+Tamam tersten mi yaptın?
+
+468
+02:45:53,579 --> 02:45:54,079
+Evet hocam.
+
+469
+02:45:54,340 --> 02:45:55,879
+Tamam tersten yaptın. 0
+
+470
+02:45:56,139 --> 02:45:58,180
+Geldiğinde geçtik bir sonrakine.
+
+471
+02:45:58,440 --> 02:45:59,459
+Üçüncü satıra bakıyoruz.
+
+472
+02:46:00,479 --> 02:46:01,520
+Bir daha 0 geldi.
+
+473
+02:46:02,540 --> 02:46:03,040
+Evet hocam.
+
+474
+02:46:03,299 --> 02:46:04,079
+Bir sonraki duruma geçtik.
+
+475
+02:46:04,379 --> 02:46:05,659
+5. satıra geliyoruz.
+
+476
+02:46:05,920 --> 02:46:06,940
+Pardon 6. satıra.
+
+477
+02:46:09,020 --> 02:46:10,299
+6. satırdayım şu an.
+
+478
+02:46:10,819 --> 02:46:12,600
+1 geldi. Artık 1 bekliyorum çünkü.
+
+479
+02:46:13,120 --> 02:46:14,920
+1 geldiğinde bir sonraki duruma geçiyorum.
+
+480
+02:46:15,680 --> 02:46:16,200
+Evet.
+
+481
+02:46:17,219 --> 02:46:18,500
+Bu da ne yapıyor?
+
+482
+02:46:19,000 --> 02:46:20,280
+Bir dahakinde 0 bekleyeceğim.
+
+483
+02:46:20,540 --> 02:46:22,600
+7. satıra bakıyorum. 1 altındaki satıra.
+
+484
+02:46:23,620 --> 02:46:24,379
+0 geldi.
+
+485
+02:46:25,659 --> 02:46:27,459
+1 0 0 state'ine geç diyor bana.
+
+486
+02:46:27,959 --> 02:46:29,500
+Gidiyorum 1 0 0 state'ine.
+
+487
+02:46:29,760 --> 02:46:31,299
+En alttaki 2 satır senin için.
+
+488
+02:46:32,319 --> 02:46:33,860
+Bond keyflerinin üstündeki 2 satır.
+
+489
+02:46:33,860 --> 02:46:37,440
+Sonda da 1 gelmesi lazım. 1 geldiğinde
+
+490
+02:46:37,700 --> 02:46:39,500
+0 0 0 state'ine gidip
+
+491
+02:46:39,739 --> 02:46:41,020
+Z'de 1 çıktısı üreteceksin.
+
+492
+02:46:41,280 --> 02:46:41,799
+Evet hocam.
+
+493
+02:46:42,299 --> 02:46:44,360
+Tamam burada doğru gözüküyor. Az önce böyle değildi sanki.
+
+494
+02:46:44,620 --> 02:46:49,739
+Hocam burada doğru hocam. Hatta ben burada da yapıyorum. Yani burada direkt otomatikman veriyor.
+
+495
+02:46:49,979 --> 02:46:51,260
+Burada deniyorum yine olmuyor.
+
+496
+02:46:51,780 --> 02:46:53,319
+Tamam deneyelim bir de. Orada deneyelim.
+
+497
+02:46:54,860 --> 02:46:56,139
+Yani burada tıkanıyor.
+
+498
+02:47:00,479 --> 02:47:01,760
+Şimdi şöyle yapalım. Aynen.
+
+499
+02:47:02,280 --> 02:47:03,040
+Bir çalıştır bakalım.
+
+500
+02:47:03,860 --> 02:47:05,659
+Şimdi 2 tane 0 girmen lazım sisteme.
+
+501
+02:47:05,899 --> 02:47:07,180
+Clone'a 4 kere tıklıyorsun.
+
+502
+02:47:07,700 --> 02:47:10,780
+1 2 3 4
+
+503
+02:47:11,280 --> 02:47:12,559
+Hayır öyle demek istemedim yani.
+
+504
+02:47:12,819 --> 02:47:14,360
+Toplam 4 kere tıklayacaksın.
+
+505
+02:47:14,620 --> 02:47:15,899
+2 state atlayacak anlamında.
+
+506
+02:47:17,420 --> 02:47:18,700
+Toplam 4 kere tıkladım.
+
+507
+02:47:20,500 --> 02:47:23,059
+Toplam 4 kere değil 8 kere tıkladığın gibi geldi bana.
+
+508
+02:47:23,319 --> 02:47:23,819
+1
+
+509
+02:47:25,100 --> 02:47:26,379
+Tamam 2 bitti.
+
+510
+02:47:26,899 --> 02:47:27,659
+Hazır.
+
+511
+02:47:28,440 --> 02:47:29,719
+Mouse'a tıklamalarını kastediyorum.
+
+512
+02:47:31,500 --> 02:47:33,040
+Mouse'a 4 kere tıklaman lazım.
+
+513
+02:47:33,040 --> 02:47:34,059
+2
+
+514
+02:47:34,579 --> 02:47:35,079
+3
+
+515
+02:47:36,120 --> 02:47:36,620
+4
+
+516
+02:47:37,399 --> 02:47:37,899
+Bitti hocam.
+
+517
+02:47:38,159 --> 02:47:39,440
+Şu an Mouse'a kaç kere tıkladın?
+
+518
+02:47:39,700 --> 02:47:40,979
+Şu an 4 kere tıkladım.
+
+519
+02:47:42,000 --> 02:47:43,280
+Tıklasana Clone'a.
+
+520
+02:47:44,040 --> 02:47:45,319
+Clone'un üstüne bir kere tıkla sadece.
+
+521
+02:47:46,860 --> 02:47:47,639
+Bir daha tıkla.
+
+522
+02:47:48,139 --> 02:47:50,200
+Bu iki tık oluyor. Bunu iki tık sayıyoruz. Anladın mı?
+
+523
+02:47:50,440 --> 02:47:51,219
+Anladım hocam.
+
+524
+02:47:51,719 --> 02:47:52,500
+Yani 1
+
+525
+02:47:53,260 --> 02:47:54,040
+2
+
+526
+02:47:54,280 --> 02:47:56,840
+Tamam. 2 yaptıysan bitti. Clone'a bir daha tıkla.
+
+527
+02:47:57,100 --> 02:47:58,379
+Simülasyonu kapatmana gerek yok.
+
+528
+02:47:58,899 --> 02:48:00,940
+Şu an 2 state atlamış olması lazım.
+
+529
+02:48:01,200 --> 02:48:01,959
+Evet hocam.
+
+530
+02:48:02,219 --> 02:48:03,000
+1'e geldi şu an.
+
+531
+02:48:03,299 --> 02:48:04,319
+Çıktı 1'i veriyorum.
+
+532
+02:48:04,579 --> 02:48:05,079
+Evet. X'i 1 yap.
+
+533
+02:48:06,120 --> 02:48:06,620
+X'i 1
+
+534
+02:48:09,440 --> 02:48:10,200
+Şeyi çalıştır.
+
+535
+02:48:10,719 --> 02:48:12,760
+Clone'u bir kere daha çalıştır.
+
+536
+02:48:13,280 --> 02:48:14,299
+Bir defa bastım.
+
+537
+02:48:14,559 --> 02:48:15,319
+Bir daha bas.
+
+538
+02:48:16,100 --> 02:48:16,600
+Tamam.
+
+539
+02:48:16,860 --> 02:48:17,879
+Şimdi X'i 0 yap.
+
+540
+02:48:19,420 --> 02:48:20,959
+Yine 2 defa tıklayacaksın.
+
+541
+02:48:22,500 --> 02:48:23,780
+Tamam. X'i 1 yap.
+
+542
+02:48:27,379 --> 02:48:29,700
+Tamam. Şimdi mili makinası yaptığın için zaten
+
+543
+02:48:30,459 --> 02:48:31,479
+Mili makinası mıydı sen ilk?
+
+544
+02:48:32,260 --> 02:48:35,319
+İkisi 1 0 1 0 0.
+
+545
+02:48:35,319 --> 02:48:36,100
+Şeyi açsana.
+
+546
+02:48:36,399 --> 02:48:36,899
+Durum diagramı.
+
+547
+02:48:37,940 --> 02:48:38,959
+Durum diagramı mı?
+
+548
+02:48:41,569 --> 02:48:42,850
+Kağıttaki durum diagramı.
+
+549
+02:48:43,110 --> 02:48:43,889
+Kağıttaki mi?
+
+550
+02:48:44,129 --> 02:48:44,909
+Bir dakika hocam.
+
+551
+02:48:45,670 --> 02:48:47,729
+İlerleyen saatler biraz yormuş olabilir.
+
+552
+02:48:49,829 --> 02:48:51,629
+Tamam. Mili makinası yaptığın için
+
+553
+02:48:55,860 --> 02:48:57,899
+şey de görüyoruz. D4 durumuna geldiğin
+
+554
+02:48:58,159 --> 02:49:00,200
+D4'ten D0'a geçerken görüyoruz.
+
+555
+02:49:00,979 --> 02:49:02,260
+Yani sistemin çalışıyor yani.
+
+556
+02:49:02,520 --> 02:49:04,040
+Bir problem yok. Az önce böyle değildi.
+
+557
+02:49:04,819 --> 02:49:06,360
+Hocam benim de kafam
+
+558
+02:49:06,600 --> 02:49:07,120
+yani
+
+559
+02:49:07,379 --> 02:49:08,659
+allak bullak şu an oldu.
+
+560
+02:49:09,159 --> 02:49:11,219
+Yani ben de anlamadım tam. Dedim tam
+
+561
+02:49:11,520 --> 02:49:13,059
+Öğrenirim yani öğrenirim öyle çıkayım dedim.
+
+562
+02:49:13,819 --> 02:49:15,100
+Mur makinası yapsaydın
+
+563
+02:49:15,360 --> 02:49:15,879
+O son
+
+564
+02:49:16,379 --> 02:49:17,659
+Clock atmasını yaptıktan sonra
+
+565
+02:49:17,920 --> 02:49:19,719
+1 çıktısı görecektin. Mili yaptığın için.
+
+566
+02:49:20,739 --> 02:49:23,559
+En sonda yani 0 olduğunda 1 çıktısı veriyor.
+
+567
+02:49:24,840 --> 02:49:26,120
+1 olduğunda 1 çıktısı veriyor.
+
+568
+02:49:26,360 --> 02:49:28,920
+0'a geçiyor. 0'a geçmeden önce çıktığı veriyor.
+
+569
+02:49:29,440 --> 02:49:30,459
+Bizim son tıklamamızdan
+
+570
+02:49:30,979 --> 02:49:33,020
+Önce çıktığı vermiş oluyor yani.
+
+571
+02:49:33,540 --> 02:49:34,299
+Tamam hocam.
+
+572
+02:49:34,559 --> 02:49:37,639
+Tamam deminkine göre ama göstermenin iyi oldu. Az önce böyle değildi.
+
+573
+02:49:37,879 --> 02:49:39,159
+Notun yükselmiş oldu.
+
+574
+02:49:39,940 --> 02:49:41,479
+Geçmiş olsun.
+
+575
+02:49:41,780 --> 02:49:43,059
+Yorucu olmuş olabilir ama
+
+576
+02:49:43,319 --> 02:49:45,100
+Fiziksel olarak daha yorucu oluyordu bu laplar.
+
+577
+02:49:45,620 --> 02:49:46,379
+Aynen hocam.
+
+578
+02:49:46,899 --> 02:49:48,440
+Hocam teşekkür ediyorum her şey için.
+
+579
+02:49:48,680 --> 02:49:49,959
+Ne demek iyi akşamlar.
+
+580
+02:49:50,219 --> 02:49:51,000
+İyi akşamlar hocam.
+
+581
+02:49:51,239 --> 02:49:51,760
+İyi tatiller.
+
+582
+02:49:52,020 --> 02:49:52,780
+İyi tatiller hocam.

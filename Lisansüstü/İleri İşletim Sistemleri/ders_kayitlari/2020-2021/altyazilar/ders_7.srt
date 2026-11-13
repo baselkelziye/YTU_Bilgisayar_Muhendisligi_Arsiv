@@ -1,0 +1,1083 @@
+1
+00:00:58,323 --> 00:01:01,423
+Evet arkadaşlar, geliyor değil mi sesim? Bir sıkıntı yok.
+
+2
+00:01:03,064 --> 00:01:03,804
+Evet hocam.
+
+3
+00:01:03,804 --> 00:01:22,924
+Tamam, süper. Şimdi birinci paper, Exocernal. Bu Exocernal'ın ne olduğunu bana kim söyleyebilecek? Kısa ve öz olarak.
+
+4
+00:01:26,099 --> 00:01:29,299
+El kaldırma usulü yine ilerliyoruz.
+
+5
+00:01:40,756 --> 00:01:42,316
+Kimseden bir cevap yok mu?
+
+6
+00:01:53,427 --> 00:01:57,467
+Hocam, bir şey söyleyeceğim ama. El kaldırın bir dakika.
+
+7
+00:01:59,087 --> 00:02:15,427
+Sesim çok kötü geliyor. Ama önce bir saniye. Pardon. Şu an arka arka eller kalktı ama ilk el kaldıran [öğrenci]'ydı. Ona sözü veriyorum. Evet, [öğrenci].
+
+8
+00:02:16,427 --> 00:02:17,087
+Konuşabiliriz.
+
+9
+00:02:17,087 --> 00:02:18,187
+Evet hocam.
+
+10
+00:02:19,187 --> 00:02:27,787
+Ance, bu paper, bu paper, bu paper,
+
+11
+00:02:27,787 --> 00:02:32,387
+bu architecture, bu...
+
+12
+00:02:32,387 --> 00:02:39,387
+[öğrenci], I am specifically asking what exokernel is.
+
+13
+00:02:39,387 --> 00:02:42,787
+I am not asking about the paper.
+
+14
+00:02:43,092 --> 00:02:57,932
+Bu çok simple ve fokussed bir soru. Bu örneğe bakalım. [öğrenci], sen el kaldırıyorsun. Evet, dinliyorum.
+
+15
+00:02:58,932 --> 00:03:03,912
+Hocam ben önce şey için söyleyecektim. Bu mesela 14-15'ler vardı, onlar bize mi kaldır?
+
+16
+00:03:06,003 --> 00:03:09,963
+Geçen hafta da. 13'ü yapmıştık en son. 14-15'i yapmıştık.
+
+17
+00:03:09,963 --> 00:03:11,843
+Onları size bıraktım ya.
+
+18
+00:03:12,103 --> 00:03:12,443
+Tamam.
+
+19
+00:03:12,803 --> 00:03:14,204
+Onları bıraktım ya size.
+
+20
+00:03:14,743 --> 00:03:19,324
+Tamam. Önce onu söyleyecektim hocam. Ders için yine bir bakayım. Ona göre.
+
+21
+00:03:25,427 --> 00:03:28,908
+Tekrar ben [öğrenci]'a. Ben ona bir sormak istiyorum. Teşekkür ederim.
+
+22
+00:03:29,127 --> 00:03:30,367
+Tamam, ben teşekkür ederim.
+
+23
+00:03:31,108 --> 00:03:32,588
+Evet, arkadaşlar.
+
+24
+00:03:33,587 --> 00:03:37,027
+Evet, [öğrenci].
+
+25
+00:03:44,084 --> 00:03:49,283
+Hayda, el kaldıranlar konuşmuyor. [öğrenci].
+
+26
+00:03:50,707 --> 00:04:16,628
+Hocam, Exeteron mimarisiyle birlikte işletim sistemi normalde fiziksel kaynakları yönetiyor. Uygulamalar işletim sisteminden sadece bunu talep ediyor. Onun yerine bir yüksek seviyeli bir, yani çok yüksek değil ama işletim sistemiyle uygulamalar arasında kalacak seviyeli bir katman oluşturup kaynaklar hakkındaki bilgiyi uygulamalara biraz daha fazla vererek aslında bir miktar kaynak yönetimini iyileştirmiş olunuyor.
+
+27
+00:04:16,628 --> 00:04:18,707
+Bunun bir alternatifi var.
+
+28
+00:04:18,708 --> 00:04:30,088
+Her bir uygulama için sanal makine tahsis edilebilir. Bu tarz yaklaşımlar da uygulanabilir. Ancak bu performans açısından çok verimli olmuyor. Bundan dolayı exocernal imarası önerilmiş.
+
+29
+00:04:30,828 --> 00:04:35,828
+Şimdi exocernal sonuçta nedir? Onu bana söyler misin?
+
+30
+00:04:37,128 --> 00:04:43,528
+Exocernal aslında işletim sistemiyle uygulama arasında bir katman diyebiliriz.
+
+31
+00:04:44,819 --> 00:05:03,039
+Ananın kaynaklarıyla ilgili daha fazla bilgi veriyor. Yani normalde işletim sisteminden doğrudan kaynak isteme ve geri kalan bütün yükümlülükleri işletim sistemine bırakma üzerine. Ancak bu ara katman yükümlülüğün bir miktarını uygulama yönetebilecek şekilde bir yapı oluşturuyor.
+
+32
+00:05:03,039 --> 00:05:06,000
+Ne kadarlık bir miktarını orada ne kast ediyorsun?
+
+33
+00:05:07,216 --> 00:05:12,555
+Güvenlikten arınmış şekilde donanıma erişebilecek seviyede.
+
+34
+00:05:13,755 --> 00:05:17,436
+Güvenlikten arınmış şekilde donanıma erişecek seviyede.
+
+35
+00:05:17,436 --> 00:05:23,656
+Aynen. Uygulamaların yine de birbirinin ayağına basmasına izin verilmeyecek seviyede bir güvenlik olması gerekiyor çünkü.
+
+36
+00:05:24,755 --> 00:05:28,235
+Yani egzo-könlü bu güvenliği mi sağlıyor?
+
+37
+00:05:28,596 --> 00:05:35,076
+Exocernal güvenliği sağlamıyor. Donanımla ilgili daha fazla bilginin uygulamaya yol açmasını sağlıyor.
+
+38
+00:05:35,596 --> 00:05:55,355
+Peki, donanımın yönetimini, bu ikinci soru. Sana sormuyorum bunu konuştuk. Peki, bu cevaba bağlı olarak donanımın yönetimini kim yapıyor? Uygulamalar mı yapıyor? Yoksa Exocernal mu yapıyor? Yoksa bir işletim sistemi var, o mu yapıyor?
+
+39
+00:05:57,108 --> 00:05:58,068
+Evet, [öğrenci].
+
+40
+00:05:59,888 --> 00:06:01,328
+Merhaba hocam, Kule Gelsen.
+
+41
+00:06:02,028 --> 00:06:02,608
+Sağol.
+
+42
+00:06:03,368 --> 00:06:13,188
+Hocam, XO Kernel, type of operating system of worldwide application level management of hardware resource to the X Kernel architecture.
+
+43
+00:06:13,928 --> 00:06:14,528
+Evet hocam.
+
+44
+00:06:15,168 --> 00:06:20,748
+Please answer the specific question. I am not asking a summary of the papers.
+
+45
+00:06:20,748 --> 00:06:23,048
+The question is,
+
+46
+00:06:23,603 --> 00:06:27,123
+Who is doing the management of the devices?
+
+47
+00:06:28,483 --> 00:06:30,663
+The exoceremon, the applications,
+
+48
+00:06:31,443 --> 00:06:37,084
+or is there another type of operating system still there?
+
+49
+00:06:37,803 --> 00:06:39,423
+The question is this.
+
+50
+00:06:41,620 --> 00:06:52,620
+Hocam, XO Kernel support resource management and protection.
+
+51
+00:06:54,620 --> 00:07:01,620
+Okay. Then, who is doing the protection?
+
+52
+00:07:04,620 --> 00:07:07,403
+The question still remains.
+
+53
+00:07:08,915 --> 00:07:15,915
+Hocam, safe environment require.
+
+54
+00:07:25,012 --> 00:07:26,132
+Doğru mu hocam?
+
+55
+00:07:27,732 --> 00:07:29,331
+Sorry, I couldn't understand.
+
+56
+00:07:38,644 --> 00:07:43,644
+Evet arkadaşlar, bugünkü performansınız müthiş.
+
+57
+00:07:52,019 --> 00:07:52,599
+[öğrenci].
+
+58
+00:07:54,259 --> 00:07:59,019
+Hocam, bu noktada güvenliğini işletim sistemi sürdürüyor olmalı.
+
+59
+00:08:00,060 --> 00:08:05,899
+Ama bak şimdi [öğrenci] olmalı diyorsun. Paper'da yazan nedir? Sen şu an yorum katıyorsun.
+
+60
+00:08:05,899 --> 00:08:09,819
+Yok, yorum katmıyorum. İşletim sistemi güvenlikten sorumlu. Hoş bulduk.
+
+61
+00:08:10,879 --> 00:08:13,680
+Tamam. Peki o zaman egzekörünün ne oldu?
+
+62
+00:08:14,740 --> 00:08:19,560
+Egzekörünün bir kat daha bilgi sağlayan bir library oldu aslında hocam.
+
+63
+00:08:20,180 --> 00:08:23,180
+Hmm. Peki.
+
+64
+00:08:23,180 --> 00:08:24,180
+On zaman.
+
+65
+00:08:31,923 --> 00:08:47,923
+In the exokernel architecture, a small kernel securely exports all hardware resources through a long-level interface to untrusted library operating systems.
+
+66
+00:08:49,283 --> 00:08:54,963
+Abstrakta yazıyor daha ya. Yani çok böyle paperin derinlerine inmeye gerek yok.
+
+67
+00:08:58,995 --> 00:09:20,395
+Bu, Small Kernel İşletim Sisteminin kendisi. Yani sistemde bir işletim sistemi, bir egzo-kernel, bir de işte üst tarafta şey gibi bir şey yok. İşletim sistemini, klasik, standard işletim sistemini alıyoruz. Egzo-kernel ile yer değiştiriyoruz. Onun yerine egzo-kernel'i koyuyoruz.
+
+68
+00:09:26,995 --> 00:09:36,935
+Yani donanım kaynakları nedir bu? Memory, işte cihazlar, girişli kış cihazları, network cihazları da bunun içerisinde.
+
+69
+00:09:38,375 --> 00:09:48,056
+Diskler de bunun içerisinde. Artı CPU'nun kendisi ve CPU'nun üzerindeki özellikler yani cache mekanizması, TLB mekanizması.
+
+70
+00:09:48,596 --> 00:09:53,536
+Bunların hepsini doğrudan nereye açıyor, nerenin kullanımı açıyor?
+
+71
+00:09:54,836 --> 00:10:07,456
+Library Operating System'ı kullanmadan açıyorum. Şimdi ikinci soruya geliyoruz. Library Operating System nedir? What is a Library Operating System?
+
+72
+00:10:27,475 --> 00:10:29,388
+Yok mu cevap diyecek olan?
+
+73
+00:10:34,196 --> 00:10:38,196
+Evet, [öğrenci]. Evet, Hocam.
+
+74
+00:10:38,196 --> 00:10:52,196
+Library Operating System moved the management of physical resources away from kernel and into untrusted user-level libraries.
+
+75
+00:10:52,196 --> 00:10:58,196
+Hmm. So, what is a Library Operating System?
+
+76
+00:10:58,196 --> 00:11:01,004
+Yani LIBO System.
+
+77
+00:11:01,460 --> 00:11:13,039
+Yani, yani, yani, the writers proposed a new operating system kernel, exo-kernel, with this library operating system.
+
+78
+00:11:13,940 --> 00:11:19,039
+Can I, for example, can I write a library operating system on top of this exo-kernel?
+
+79
+00:11:20,740 --> 00:11:21,740
+Um...
+
+80
+00:11:21,740 --> 00:11:23,240
+Is this possible?
+
+81
+00:11:25,320 --> 00:11:31,076
+Yani...
+
+82
+00:11:33,655 --> 00:11:35,635
+Yani ama emin diriyim hocam.
+
+83
+00:11:35,936 --> 00:11:36,836
+Okey, no problem.
+
+84
+00:11:38,395 --> 00:11:40,275
+Cevaplar demek isteyen başkan var mı?
+
+85
+00:11:50,644 --> 00:11:52,644
+İçeri kalkıyor neredeyse. Çok iyi.
+
+86
+00:11:56,788 --> 00:11:58,788
+Moldus izahatı var.
+
+87
+00:12:03,764 --> 00:12:05,384
+[öğrenci], evet.
+
+88
+00:12:07,764 --> 00:12:19,463
+Hocam, çekedek işletim sistemleri uygulamalar için ayrılmış bir soluklama gibi söz edilmiş. Uygulamalar kütüphane işletim sistemine bağlıdır.
+
+89
+00:12:20,603 --> 00:12:27,963
+[öğrenci], kütüphane işletim sistemi ne demek? Hiç duydunuz mu? Kütüphane işletim sistemi.
+
+90
+00:12:29,556 --> 00:12:38,875
+Özel bir şey ama anlatıyor aslında paperda. Belirli yerlerde ipuçları veriyor ama belirli yerlerde doğrudan ne olduğunu söylüyorum.
+
+91
+00:12:46,100 --> 00:12:47,160
+Ne ifade ediyorsunuz?
+
+92
+00:12:55,635 --> 00:12:56,315
+[öğrenci].
+
+93
+00:12:57,835 --> 00:13:09,795
+Hocam, uygulamanın donanım kaynaklarına erişim şeklini belirliyor. Default olarak sağlanan bir library var. İsteniyorsa custom bir library'ye geçiş yapılarak performans artışı sağlanabiliyor.
+
+94
+00:13:11,155 --> 00:13:13,695
+Default olarak sağlanan bir ücün olabilir. [öğrenci].
+
+95
+00:13:14,975 --> 00:13:16,075
+O şekilde yazıyordu hocam.
+
+96
+00:13:16,563 --> 00:13:21,264
+İstenirse custom olarak kendi library'sini kullanabileceğin söyleniyor.
+
+97
+00:13:21,264 --> 00:13:33,823
+Bu paper kapsamında adamlar deneylerini, incelemelerini yapabilmek adına bir library operating system sağlıyorlar.
+
+98
+00:13:34,823 --> 00:13:38,224
+Ama ben library operating system nedir diye soruyorum.
+
+99
+00:13:44,371 --> 00:13:46,371
+Evet.
+
+100
+00:13:47,371 --> 00:13:54,371
+Hocam, Library Operating System working above the X-kernel interface.
+
+101
+00:13:55,371 --> 00:13:59,371
+It's an unlimited high level of application.
+
+102
+00:14:00,371 --> 00:14:07,371
+Okay, we already know that the Library Operating System is on top of the exo-kernel.
+
+103
+00:14:07,371 --> 00:14:08,371
+Yes.
+
+104
+00:14:08,884 --> 00:14:10,884
+Tamam mı? Tamam.
+
+105
+00:14:23,731 --> 00:14:31,432
+Arkadaşlar, [öğrenci] peki, sen el çırpıyorsun, el kaldırmıyorsun haberin ola.
+
+106
+00:14:31,432 --> 00:14:44,371
+Evet hocam, hocam, XR-AGS'ın low interfaces, low applications about low level software.
+
+107
+00:14:45,043 --> 00:14:55,043
+İleri İşletim Sistemleri'nin Xionier'in sistemleri modifle değiştiriyor.
+
+108
+00:15:11,796 --> 00:15:12,836
+Sol tarafta.
+
+109
+00:15:17,576 --> 00:15:28,216
+Aslında biz Library Operating System'ı yeri geldiğinde uygulama olarak da isimlendiriyoruz demişler.
+
+110
+00:15:35,155 --> 00:16:02,155
+Olduğu gibi üst tarafa açıyorsa bu durumda bu donanım kaynaklarına erişim doğruna uygulamalara verilmiş demektir. Bu donanım kaynaklarını yönetecek olanlar da uygulamalardır. Normalde bir sistemde yer alan, bilgisayar sisteminde yer alan donanım kaynaklarını yöneten temel uygulama neydi? İşletim sistemiydi.
+
+111
+00:16:03,220 --> 00:16:15,280
+Aradan işletim sistemini çıkartıyorlar. İşletim sisteminin normal yapılarda üstlendiği görevi uygulamanın kendisine bırakıyorlar.
+
+112
+00:16:15,280 --> 00:16:26,200
+Böylece uygulamanın performansı artıyor. Çünkü niye? Donanımla etkileşeceği zaman sürekli araya işletim sisteminin girmesine gerek yok.
+
+113
+00:16:29,460 --> 00:16:47,879
+Birbirlerinin ayaklarına basmayacak şekilde yönetmeleri lazım. Öyleyse bir nevi işletim sistemi gibi davranıyorlar. Bunların hepsi user space'de, kullanıcı seviyesinde, yukarıda, bir kütüphane gibi düşünün.
+
+114
+00:16:54,836 --> 00:17:20,816
+Özelliklerini de barındırıyor. Bir taraftan biz işletim sistemlerini hep niye ön plana çıkıyoruz? Bir abstrakç insan alıyor. Uygulamalar donanımdan bağımsız bir şekilde işletim sisteminden hizmet alarak sadece kendi yapmak istedikleri şeye yoğunlaşıyorlar. Ama tabii ki bunun getirdiği bir takım yükler var.
+
+115
+00:17:21,875 --> 00:17:31,296
+Bakın bir numaralı şekle bakacak olursanız, orada iki tane Library Operating System gösterilmiş.
+
+116
+00:17:31,296 --> 00:17:45,296
+Biri ve aynı zamanda da üst taraflarında ne yazıyor? Applications yazıyor. Biri Mozaik, hatırlamayanlar için söylüyorum, internet browser, internette dolaşmamızı sağlayan.
+
+117
+00:17:45,652 --> 00:18:11,512
+Onun altında WWW protokolisteki var. Yani HTTP veya S. POSIX ve TCP var. Bakın bu bir uygulama. Diğer tarafta ise bu Barnsat dediği bir Distributed Shared Memory uygulaması. Arada Exocon'un Figür 1'de çok net görüldüğü üzere.
+
+118
+00:18:12,980 --> 00:18:29,019
+Alt taraftaki donanım kaynakları ile üst taraftaki uygulama yani Library Operating System'lar arasındaki güvenli bağlantıyı sağlıyor. Olay bu.
+
+119
+00:18:33,907 --> 00:18:39,947
+Daha aktif olmanızı, bunları benim söylemenim değil de sizin söylemenizi beklerdim.
+
+120
+00:18:41,847 --> 00:18:55,487
+Peki bir şey soracağım. Bu egzo-könlünün tasarımında öne çıkan prensipler nelere dikkat edilmiş?
+
+121
+00:18:59,028 --> 00:19:01,004
+Bunu söyleyebilir misiniz?
+
+122
+00:19:26,708 --> 00:19:27,128
+[öğrenci]?
+
+123
+00:19:28,847 --> 00:19:33,928
+Hocam, bu sorunun cevabını bilmiyorum ama yüksek performans ve esneklik ön planda geliyor.
+
+124
+00:19:36,508 --> 00:19:38,668
+Paper önünde açık mı [öğrenci]?
+
+125
+00:19:39,327 --> 00:19:43,367
+Ben özetimden bakıyorum hocam. Bir miktar modifiye ediyorum galiba.
+
+126
+00:19:44,488 --> 00:19:49,428
+Yani şöyle, Design Principles diye bir tane başlık vardı, oradan sordum.
+
+127
+00:19:50,003 --> 00:20:03,963
+Paper'da doğrudan tasarımındaki prensipler nelerdir sorusu 3 numaralı 3.1 subsection'ında Design Principles orada yazıyor.
+
+128
+00:20:04,683 --> 00:20:12,263
+Securely Exposed Hardware, Exposed Allocation, Exposed Names, Exposed Revocation.
+
+129
+00:20:13,683 --> 00:20:17,263
+Sonra altında policy, policy falan benzeri şeyler devam ediyor ama.
+
+130
+00:20:17,779 --> 00:20:30,039
+İlginç oldu. Peki, bu exocernel'da bir abort protokolü var.
+
+131
+00:20:36,468 --> 00:20:37,468
+Niçin var bu?
+
+132
+00:21:20,980 --> 00:21:21,820
+Hocam pardon.
+
+133
+00:21:23,380 --> 00:21:24,760
+Efendim [öğrenci].
+
+134
+00:21:27,480 --> 00:21:30,660
+Yani çok duyamadım. Protokol mü?
+
+135
+00:21:31,820 --> 00:21:39,720
+Ebot protokolü var. Exoconol'da bir abort protokolü var. Bu protokol niye var diye soru.
+
+136
+00:21:46,067 --> 00:21:49,867
+Okey. Bence bu paper'ı...
+
+137
+00:21:55,988 --> 00:22:02,588
+Cevap mı vereceksin [öğrenci]? Söyle bakalım. Bu paperı tam bitiriyoruz derken, bitirelim derken, evet, dinliyorum.
+
+138
+00:22:02,588 --> 00:22:21,968
+Hocam, protocol of the application is uncooperative and releasing a resource. The kernel breaks the secret binding to the resource and sends an expansion to the application.
+
+139
+00:22:23,731 --> 00:22:36,731
+[öğrenci]. [öğrenci].
+
+140
+00:22:39,667 --> 00:22:56,607
+Hocam, iptal protokolü diye geçiyor. Eğer kütüphane işletim sistemi cevap dönmezse veya bir hataya sebep olursa onun uygulamalarını öldürmek için, sonlandırmak için.
+
+141
+00:22:57,607 --> 00:23:06,567
+Yani şöyle diyebilir miyiz? Hardware'i doğrudan yukarıya uygulamayı açıyorsun ve bir yerde o hardware'i geri alman lazım.
+
+142
+00:23:07,316 --> 00:23:21,796
+Ama uygulama bunu geri vermiyor. O zaman ne yapacaksın? Abort edeceksin. Yani o yukarıya açmış olduğunu, uygulamayı açmış olduğunu şeyi geri alacaksın.
+
+143
+00:23:26,675 --> 00:23:30,296
+[öğrenci], seni de dinliyoruz. Ondan sonra paperı değiştiriyoruz.
+
+144
+00:23:31,435 --> 00:23:32,096
+Evet hocam.
+
+145
+00:23:33,875 --> 00:23:48,556
+An abort protocol is used by exo-kernel to break secure bindings of uncooperative library operating system by force.
+
+146
+00:23:49,556 --> 00:23:50,596
+I think that.
+
+147
+00:23:51,375 --> 00:23:52,516
+Okay, thank you.
+
+148
+00:23:58,740 --> 00:24:05,740
+Paper'ı değiştirdik. Notunu bir sonrakine geçiyoruz ama söyle ne söylemek istiyorsan bilmiyorum.
+
+149
+00:24:09,140 --> 00:24:16,579
+Vaz mı geçtim? Tamam. Evet. Bir sonraki paperumuz arkadaşlar. 17 numara.
+
+150
+00:24:18,579 --> 00:24:25,099
+Five-grade Dynamic Instrumentation of Commodity Operating System Görüntüs.
+
+151
+00:24:26,460 --> 00:24:29,099
+Dynamic Instrumentation nedir?
+
+152
+00:24:40,180 --> 00:24:43,115
+What is Dynamic Instrumentation?
+
+153
+00:24:53,587 --> 00:24:54,571
+Bir
+
+154
+00:24:57,683 --> 00:24:59,683
+Evet, Hoca.
+
+155
+00:24:59,683 --> 00:25:25,324
+Dynamic, this technology, yani, dynamic instrument, instrument, of community kernel, this technology could insert dynamically generated code before almost any machine code instruction of a completely unmodified running community operating system kernel.
+
+156
+00:25:26,675 --> 00:25:47,147
+Evet, ama bu bu da bu
+
+157
+00:25:50,067 --> 00:26:12,008
+Merhaba hocam. Hocam bu paperi ben okuduğuma rağmen çok da fazla yani ben anlamadım yani bunu biraz zordu bana. Ama şu an mesela sorduğunuz soruyu şeyden bu introduction kısmında şöyle yazmış ki.
+
+158
+00:26:17,584 --> 00:26:19,624
+optimizasyon
+
+159
+00:26:19,624 --> 00:26:21,644
+and extensions to be
+
+160
+00:26:21,644 --> 00:26:23,804
+performed on unmodified
+
+161
+00:26:23,804 --> 00:26:24,964
+commodity kernels.
+
+162
+00:26:26,264 --> 00:26:27,104
+Bilmiyorum
+
+163
+00:26:27,104 --> 00:26:29,764
+acaba doğru mu ya doğru değil ama ben de
+
+164
+00:26:29,764 --> 00:26:31,364
+okuduğuma rağmen bu
+
+165
+00:26:31,364 --> 00:26:33,703
+paperi çok fazla anlamadım.
+
+166
+00:26:33,884 --> 00:26:35,203
+Biraz zor geldi bana.
+
+167
+00:26:36,064 --> 00:26:38,024
+Tamam. Konuşmaya devam ettikçe
+
+168
+00:26:38,024 --> 00:26:39,584
+muhtemelen şey olur. [öğrenci]
+
+169
+00:26:39,584 --> 00:26:41,564
+biraz daha anlarsın.
+
+170
+00:26:41,683 --> 00:26:43,384
+Onda da üzerinden geçeriz.
+
+171
+00:26:43,384 --> 00:26:43,984
+Evet.
+
+172
+00:26:45,423 --> 00:26:53,423
+Hocam, benim de anladığım çalışma zamanı sırasında çekirdeğin herhangi bir yerinde değişiklik yapabildiğimiz...
+
+173
+00:26:54,864 --> 00:27:10,303
+[öğrenci], paper özelinde sormuyorum. Dynamic Instrumentation nedir? Bu bir kavram. Bunu Kernel için bu paperda yapmışlar. Evet, doğru. Ama ben genel olarak Dynamic Instrumentation'dan ne anlıyoruz diyorum.
+
+174
+00:27:16,084 --> 00:27:19,683
+Yorum yapacağım mı yoksa başka el kaldıranlar mı onlara şey yapayım?
+
+175
+00:27:21,268 --> 00:27:31,847
+Yapamayacağım sanırım hocam. Çalışma zamanında ama sonuçta uygulamalar da çalışma zamanında çalışıyorlar. Değiştirmeyce bir şey müdahale etmemiz gerekiyor dinamik olması için.
+
+176
+00:27:32,347 --> 00:27:44,548
+Dynamik tarafını çözdüm. Instrumentation nedir? Onu şey yapmaya çalışıyorum. Sizden anlamaya çalışıyorum. Şu an resmen kertbeten de sükrüyorum sizden bunu. Yavaş yavaş bakalım. Evet [öğrenci].
+
+177
+00:27:47,488 --> 00:27:48,567
+Evet hocam.
+
+178
+00:27:48,880 --> 00:28:07,039
+Diyanik instrumentation can be used for kernel tracing by simply saying logging code at the desired kernel code locations during the running time.
+
+179
+00:28:07,039 --> 00:28:09,360
+Okay.
+
+180
+00:28:15,635 --> 00:28:16,235
+[öğrenci].
+
+181
+00:28:27,155 --> 00:28:29,395
+[öğrenci] tekrar el kaldırdın, dinliyorum.
+
+182
+00:28:29,955 --> 00:28:31,855
+Evet hocam, şey gibi düşünüyorum ama.
+
+183
+00:28:32,555 --> 00:28:39,855
+Şimdi burada mesela performans analizine göre uygulamayı iyileştirme, hata durumlarında demiş.
+
+184
+00:28:39,855 --> 00:28:51,795
+Yani kendi içerisinde uygulamayı optimize edecek kararlar almamızı sağlayan şey mi acaba orkestrasyon?
+
+185
+00:28:53,175 --> 00:28:54,175
+Instrumentation.
+
+186
+00:28:54,996 --> 00:29:17,696
+Çalışan bir kodun çalışma anında nasıl çalıştığının incelenmesi. Bunu offline'da yapabilirim. O durumda bir şekilde tekrar compile edip belirli noktalardan ölçüm yapabileceğim şekilde
+
+187
+00:29:18,192 --> 00:29:44,672
+Düzenlemeler yapmam lazım. Kod parçaları eklemem lazım. Ama bunun online olanı, yani dynamic olanı, kod çalışırken herhangi bir noktasını ölçümleme yapabilecek şekilde değiştirebiliyor olma. Instrumentation'dan anladığımız şey bu. Bu paperda da bunu ne için yapıyorlar?
+
+188
+00:29:45,299 --> 00:30:03,640
+Komoditi Operating System Kernel için. Yani gidip satın alabileceğiniz, onlar işte UltraSpark işlemcisinde çalışan Solaris Kernel'da yapmışlar bunu. Bugün için. Bugün diyelim ki Windows'da yapıyorsunuz bunu.
+
+189
+00:30:11,763 --> 00:30:13,763
+Yapmak isterim.
+
+190
+00:30:15,064 --> 00:30:20,075
+Özellikle Kernel seviyesinde Dynamic Instrumentation'ı ne için yapmak isterim?
+
+191
+00:30:23,763 --> 00:30:28,923
+Bu kalkan eller bu sorunun cevabı için mi? Önceki soru mu? [öğrenci] ve [öğrenci].
+
+192
+00:30:31,323 --> 00:30:43,043
+Hocam, dynamic incitremation, incitremation, hocam, method effective for performance analysis and security testing.
+
+193
+00:30:45,783 --> 00:30:51,083
+Okay. And are there any other uses? [öğrenci]?
+
+194
+00:30:53,236 --> 00:30:54,096
+Evet hocam.
+
+195
+00:30:54,804 --> 00:31:07,844
+Hujam'in implementator dynamic tool into a Solrass kernel bolt from resource running on Altara CBIRC.
+
+196
+00:31:07,844 --> 00:31:17,564
+In addition to kernels, we apply and use kernel performance in code coders to understand.
+
+197
+00:31:17,564 --> 00:31:22,804
+[öğrenci], I am asking the applications of...
+
+198
+00:31:22,804 --> 00:31:29,804
+ve
+
+199
+00:31:42,387 --> 00:31:51,387
+Debugging, code covering, security monitor, uptime code optimization and kernel optimization.
+
+200
+00:31:51,387 --> 00:31:54,587
+Okay, that's the answer.
+
+201
+00:31:54,587 --> 00:32:00,987
+So, you do not need to read all paragraphs or parts from the paper.
+
+202
+00:32:00,987 --> 00:32:05,987
+So, the answer is very simple. Thank you.
+
+203
+00:32:05,987 --> 00:32:08,387
+At-ta-ta-la-fi cennet. As-salam.
+
+204
+00:32:09,491 --> 00:32:27,591
+Peki, bir sonraki soru. Şimdi bu paperın Dynamic Instrumentation'da diğer çalışmalara göre önemli bir farkı var. Değişik yaptığı bir şey var. Nedir bu?
+
+205
+00:32:44,435 --> 00:32:57,556
+Yani, Dynamic Instrumentation yapılmayan bir şey değil. Ama bu paperede onu farklı bir şekilde yapıyorlar. Bir değişikliği var olayın.
+
+206
+00:33:22,228 --> 00:33:25,768
+Okey. Devam edelim o zaman. Madem cevap yok.
+
+207
+00:33:34,228 --> 00:33:36,228
+Şimdi...
+
+208
+00:33:36,228 --> 00:33:39,128
+[öğrenci] bir şey mi söylüyor hocam? Tamam peki.
+
+209
+00:33:39,228 --> 00:33:45,348
+Evet hocam. Hocam, dynamic minimize the percentage of time.
+
+210
+00:33:45,348 --> 00:33:55,067
+The agent required to open this catch file from 14% to 7%.
+
+211
+00:33:55,067 --> 00:33:58,228
+I understand of this article.
+
+212
+00:33:59,763 --> 00:34:05,823
+Hayır, ben de soruyorum, ben de soruyorum. Ben soruyorum,
+
+213
+00:34:05,823 --> 00:34:14,523
+de soruyorum, neyi de soruyorum, diğerlerden de farklı bir diğerlerden de soruyorum.
+
+214
+00:34:14,523 --> 00:34:24,163
+Bu sadece bir, ama çok güçlü bir farkı.
+
+215
+00:34:26,099 --> 00:34:29,479
+Hocam, minimize time.
+
+216
+00:34:30,219 --> 00:34:33,000
+No, it is the effect.
+
+217
+00:34:35,579 --> 00:34:36,539
+[öğrenci].
+
+218
+00:34:37,759 --> 00:34:42,579
+Bunun tekrar değerlenmeye ihtiyaç duymadan yapılabilmesi mi acaba hocam?
+
+219
+00:34:43,659 --> 00:34:49,599
+Tamam, ama daha da önemli bir şey var. Bak, PayPal'ın başında bile yazıyor, başlığında yazıyor ya.
+
+220
+00:34:52,724 --> 00:34:57,463
+Hiç merak ettiniz mi? Fine-grained ne demek? Roşam.
+
+221
+00:35:01,588 --> 00:35:22,347
+Hocam, sadece bir farkını da ben şöyle anlamıştım ki bu normal şekillerde komoditi operatör sistemlerde olmuyor ama bu paperde yazarlar komoditi operatör sistemlerde bu işi yapmışlar.
+
+222
+00:35:22,347 --> 00:35:28,408
+Cevap komoditi için yapılmış olması değil. Cevap o değil.
+
+223
+00:35:29,108 --> 00:35:34,068
+Evet, var mı başka cevaplamak isteyelim?
+
+224
+00:35:47,795 --> 00:35:55,295
+Bence ciddi anlamda daha fazla okumanız gerekiyor arkadaşlar.
+
+225
+00:35:55,295 --> 00:36:01,255
+Yani bir takım özetler veriyorsunuz. Teşekkür ederim, sağ olun.
+
+226
+00:36:03,275 --> 00:36:09,295
+Ancak sadece özetleri vermek yeterli değil ki bunların içinde ne yazdığını...
+
+227
+00:36:12,692 --> 00:36:28,511
+Ne anlatıldığını, nelerin önemli olduğunu veya nelerin dikkat edilmesi gereken noktalar olduğunu şey yapmanız lazım. İncelemeniz lazım, bunları da görmeniz lazım.
+
+228
+00:36:33,940 --> 00:36:35,140
+Bunu da bitirelim o zaman.
+
+229
+00:36:44,403 --> 00:36:59,003
+18 numaralı paper'a geldik. Evet. Biri bana söyleyebilir mi? The BST Study nedir? What is the BST Study?
+
+230
+00:37:35,284 --> 00:37:36,244
+Sözler mi şık mı?
+
+231
+00:37:52,148 --> 00:37:54,148
+[öğrenci]?
+
+232
+00:37:54,148 --> 00:38:00,148
+Mahmud, BSD'nin bir sistem var.
+
+233
+00:38:00,148 --> 00:38:02,148
+Bu, UNIX operatim sistem.
+
+234
+00:38:04,148 --> 00:38:05,148
+No, bu.
+
+235
+00:38:05,148 --> 00:38:08,148
+Bu, BSD'nin bir sistem sistem.
+
+236
+00:38:08,148 --> 00:38:11,148
+Berkleyi Software Distributions.
+
+237
+00:38:11,148 --> 00:38:15,148
+Bu, BSD'nin bir sistem sistem.
+
+238
+00:38:15,148 --> 00:38:16,148
+Evet, [öğrenci]?
+
+239
+00:38:18,064 --> 00:38:23,064
+[öğrenci]?
+
+240
+00:38:17,588 --> 00:38:25,668
+BSD, Berkeley Software Distribution, is this Continuant Operating System.
+
+241
+00:38:25,668 --> 00:38:32,427
+But I am asking, what is the BSD study?
+
+242
+00:38:43,764 --> 00:38:53,604
+Arkadaşlar, paperları bir daha üzerinden geçip değerlenirseniz iyi olacak bence. Çünkü çok basit şeyler soruyorum.
+
+243
+00:38:53,604 --> 00:39:10,963
+Yani 1985 yılında Berkeley Üniversitesi'ndeki araştırmacıların BSD Unix file sistemi üzerinde yapmış oldukları performans analizine verilen isim.
+
+244
+00:39:11,411 --> 00:39:17,291
+Bu kadar net. Ve bu anı abstrakta yazıyor daha, giriş cümlesinde yazıyor.
+
+245
+00:39:21,076 --> 00:39:25,115
+Sonra Introduction'da yazılıyor. Paper'ın diğer yerlerinde yazılıyor.
+
+246
+00:39:27,675 --> 00:39:28,796
+Az önce de...
+
+247
+00:39:28,796 --> 00:39:29,416
+Hocam?
+
+248
+00:39:31,756 --> 00:39:32,655
+Efendim?
+
+249
+00:39:37,331 --> 00:39:40,992
+Hujam, increase rate file transfer?
+
+250
+00:39:48,820 --> 00:39:59,320
+İlhamd'in bir soru hakkında konuşuyor. İlhamd'in bir soru hakkında konuşuyor. Ama,
+
+251
+00:39:59,320 --> 00:40:11,820
+unfortunately, ben de yokum bir soru hakkında konuşuyor. Bu büyük bir soru hakkında konuşuyor.
+
+252
+00:40:16,115 --> 00:40:43,724
+Bu bst study'nin bu bst'in
+
+253
+00:40:45,523 --> 00:40:47,523
+Ve her şeyden bir şey.
+
+254
+00:40:52,275 --> 00:40:57,275
+[öğrenci], you are still raising your hand.
+
+255
+00:40:57,275 --> 00:41:00,275
+Okay. Sorry, Hocam.
+
+256
+00:41:00,275 --> 00:41:02,987
+Okay. Motna?
+
+257
+00:41:16,275 --> 00:41:38,275
+Sizden diyeceğim, [öğrenci] yet. Evet Hucam. Hucam, the access button of scanned file and the caching behavior of user-distributed sprite file system. Yani study is that.
+
+258
+00:41:38,708 --> 00:41:47,708
+Ama bu çalışan hakkında sorumlardı. Birçok bir adet hakkında sorumlardı.
+
+259
+00:41:47,708 --> 00:41:52,708
+Tamam.
+
+260
+00:41:52,708 --> 00:42:03,708
+Biraz daha özen göstermenizi istiyorum arkadaşlar, lütfen. Daha bir derli toplu, daha bir odaklı bir şekilde...
+
+261
+00:42:06,036 --> 00:42:25,436
+Yani çok temel, basit ve paper'a genel olarak bakmış olsanız bile hemen cevaplayabilmeniz gereken noktalardan soruyorum. Çok şu anda böyle bilmem neyin değeri kaçtı da öbürü şöyle mi olmuş, bu böyle mi değişmiş bunu da sormuyorum ki.
+
+262
+00:42:30,579 --> 00:42:46,960
+Evet, bu hafta içinde verdiğim paperlar var. Onlar da saat 3 itibariyle sayfada görünecek. Aktif hale gelecek. Dikkat ederseniz bu hafta bu 18. paperla file sistemlere geçtik.
+
+263
+00:42:49,340 --> 00:42:57,951
+Bu hafta geçişi yapıp önümüzdeki haftada file sistemlere bakacaktık. İnşallah bakacağız. İnşallah siz...
+
+264
+00:42:57,952 --> 00:43:06,112
+Önümüzdeki hafta bu haftaya göre daha iyi bir şekilde, performanslı bir şekilde hazırlanmış olacaksınız.
+
+265
+00:43:09,112 --> 00:43:14,892
+Okey, o zaman haftaya görüşmek üzere. Efendim [öğrenci].
+
+266
+00:43:16,192 --> 00:43:22,712
+Hocam haftaya, normalde vize haftası görünüyor ama doktora dersi için nasıl oluyor? Ders var mı? Ondan sonraki hafta.
+
+267
+00:43:22,963 --> 00:43:49,503
+Sekizinci hafta mı haftaya? Eğer sekizinci haftaysa o zaman bize yapacağız demektir. Ben onu aklımış olabilirim. Normal düzenli yani sekizinci hafta sınav olacak. Evet, sınav olacak. Sınavda hocam bu normal, yine bunların içinden işlediğimiz yere kadar olan şeylerden sorumluyuz, doğru mu? Kesinlikle. Tamamdır. Teşekkür ederim. Ne oldu o zaman?
+
+268
+00:43:50,164 --> 00:43:51,664
+Evet, iyi günler.
+
+269
+00:43:53,404 --> 00:43:56,424
+İyi günler hocam.
+
+270
+00:43:56,544 --> 00:43:57,104
+Teşekkür ederim.
+
+271
+00:43:58,404 --> 00:43:59,184
+İyi günler.

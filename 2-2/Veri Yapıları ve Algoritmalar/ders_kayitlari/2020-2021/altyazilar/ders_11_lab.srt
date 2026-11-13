@@ -1,0 +1,2279 @@
+1
+00:00:08,779 --> 00:00:26,250
+Evet, merhaba arkadaşlar. Merhaba Bahattin.
+
+2
+00:00:27,250 --> 00:00:30,250
+Senin köpek ne tatlıymış resimdeki?
+
+3
+00:00:31,250 --> 00:00:32,250
+Sağolun hocam.
+
+4
+00:00:32,250 --> 00:00:33,250
+Senin köpeğin mi?
+
+5
+00:00:34,250 --> 00:00:35,250
+Evet hocam boncuk.
+
+6
+00:00:36,250 --> 00:00:38,250
+Boncuk. Maşallah.
+
+7
+00:00:40,979 --> 00:00:42,979
+Bakayım başka ne varmış o taraflarda.
+
+8
+00:00:43,979 --> 00:00:47,979
+[öğrenci] dağlarda. [öğrenci].
+
+9
+00:00:48,979 --> 00:00:52,420
+Ne bu? Acayip bir şey.
+
+10
+00:00:53,420 --> 00:00:55,420
+Gladiatör müdür nedir?
+
+11
+00:00:55,420 --> 00:01:10,260
+Antik Romalı askerler. Allah Allah.
+
+12
+00:01:11,260 --> 00:01:12,260
+Peki hadi bakalım.
+
+13
+00:01:14,890 --> 00:01:27,319
+Bugün sizlerden gelen yoğun istek üzerine biraz kod çalışması yapalım dediniz.
+
+14
+00:01:29,319 --> 00:01:38,319
+Ben de son ödevi kodladığım haliyle biraz da değişiklikler yaptım.
+
+15
+00:01:39,319 --> 00:01:40,319
+Onu paylaşacağım.
+
+16
+00:01:45,930 --> 00:01:53,799
+Evet şimdi şöyle yapalım. Tamam.
+
+17
+00:01:56,239 --> 00:01:59,239
+Biraz da ufaltırsam şöyle alttaki toolbox için tamamdır.
+
+18
+00:02:01,239 --> 00:02:02,239
+Evet.
+
+19
+00:02:03,239 --> 00:02:04,239
+Bakayım katılım ne durumda.
+
+20
+00:02:09,210 --> 00:02:10,210
+Yok kiz yapmayacağız bugün.
+
+21
+00:02:11,210 --> 00:02:14,319
+Sınavlara da bakamadım.
+
+22
+00:02:14,319 --> 00:02:17,319
+İnanın başka bir iş girdi daha doğrusu birkaç iş girdi araya.
+
+23
+00:02:18,319 --> 00:02:21,319
+Şey demiştim ya sınavdaki bütün sorular bitti.
+
+24
+00:02:22,319 --> 00:02:29,319
+35 puanlık kod algoritma sorusunun da bir üçte birine baktım dedim ya hala orada duruyor.
+
+25
+00:02:30,319 --> 00:02:32,319
+İnşallah bugün ve yarın şey yapacağım.
+
+26
+00:02:33,319 --> 00:02:35,319
+Okuduğum ödevleri işte vizeleri de okuyayım.
+
+27
+00:02:36,319 --> 00:02:38,319
+Oraya kadar olan hepsini bir tablo halinde açıklayacağım.
+
+28
+00:02:39,319 --> 00:02:41,319
+Kiz yapmadığım için mi harikayım?
+
+29
+00:02:42,319 --> 00:02:43,319
+[öğrenci].
+
+30
+00:02:44,319 --> 00:02:45,319
+Komikmiş.
+
+31
+00:02:46,319 --> 00:02:47,319
+Kiz yapmadığınız için harikasınız.
+
+32
+00:02:48,319 --> 00:02:49,319
+Evet eyvallah.
+
+33
+00:02:49,319 --> 00:02:56,319
+Bugün şey dedim ya bugünkü uygulama saatinde biraz kod bakalım dedim.
+
+34
+00:02:57,319 --> 00:03:00,319
+Haftaya yapacak mıyız?
+
+35
+00:03:01,319 --> 00:03:04,319
+Kiz mi? Haftaya kiz bakarsanız belki yaparız neden olmasın?
+
+36
+00:03:08,819 --> 00:03:10,819
+Yani haftaya bir kiz planlıyorum aslında bakarsanız.
+
+37
+00:03:11,819 --> 00:03:16,819
+Ödev değil de yine bu hani google forms üzerinden gibi bir kiz yapmayı planlıyorum.
+
+38
+00:03:16,819 --> 00:03:17,819
+Bakalım.
+
+39
+00:03:17,819 --> 00:03:19,819
+Henüz daha hazırlamadım ama onu söyleyeyim.
+
+40
+00:03:20,819 --> 00:03:22,819
+Bu hafta divide and conquer'u bitirelim.
+
+41
+00:03:23,819 --> 00:03:32,819
+Ondan sonra kiz'i yine işlemediğimiz hani sormadığımız gibi taraflardan daha çok olacak şekilde ayarlarım.
+
+42
+00:03:34,819 --> 00:03:37,819
+Evet kiz var diye ilk defa sevineceksin ha.
+
+43
+00:03:38,819 --> 00:03:39,819
+Peki hadi bakalım.
+
+44
+00:03:40,819 --> 00:03:41,819
+Diğer sınav derslerinin ha sınavları.
+
+45
+00:03:42,819 --> 00:03:44,819
+Vallahi haftaya vize haftası ya.
+
+46
+00:03:44,819 --> 00:03:45,819
+İkinci vize haftası.
+
+47
+00:03:46,819 --> 00:03:51,819
+Biz ikinci vize yapmıyoruz ama onun yerinde sonuçta bu da ikinci vize yerine geçen değerlendirmelerin bir kısmı olacak.
+
+48
+00:03:52,819 --> 00:03:55,819
+O nedenle yine bir on minimum on belki yirmi puanlık bir kiz yaparım.
+
+49
+00:03:56,819 --> 00:03:58,819
+On üçüncü hafta mıymış?
+
+50
+00:03:59,819 --> 00:04:02,819
+On iki diye biliyorum ben ama on üçte eğer on üç dendi ise.
+
+51
+00:04:03,819 --> 00:04:05,819
+Ha on üç mü demişler tamam okey olabilir.
+
+52
+00:04:06,819 --> 00:04:08,819
+İyi o zaman haftaya zaten sınav olmayacakmış [öğrenci].
+
+53
+00:04:09,819 --> 00:04:13,819
+Bu nedenle haftaya rahatlıkla kizimizi yapabiliriz.
+
+54
+00:04:14,819 --> 00:04:16,819
+Şimdi bu hafta on birinci hafta.
+
+55
+00:04:17,819 --> 00:04:18,819
+Divay'dan konkürü bitireceğiz.
+
+56
+00:04:19,819 --> 00:04:20,819
+On ikinci hafta graflar.
+
+57
+00:04:22,819 --> 00:04:24,819
+Grafta gezinti.
+
+58
+00:04:25,819 --> 00:04:27,819
+On üçüncü haftada shortest path'lere bakarız.
+
+59
+00:04:28,819 --> 00:04:30,819
+On dördüncü haftada da minimum spanning tree'ye bakarız.
+
+60
+00:04:31,819 --> 00:04:34,819
+Öylece üç hafta daha konularımızı yetiştireceğiz.
+
+61
+00:04:35,819 --> 00:04:36,819
+Evet yetişiyor.
+
+62
+00:04:37,819 --> 00:04:38,819
+Bir sıkıntı olmayacak gibi görünüyor şu anda.
+
+63
+00:04:39,819 --> 00:04:42,819
+Vize de yapmadığımız için konularda bir problemi olmayacak.
+
+64
+00:04:43,819 --> 00:04:46,819
+Tabii başka bir aksaklık olmazsa hani Allah elem keder vermezse diyelim.
+
+65
+00:04:47,819 --> 00:04:49,819
+Şimdi koda başlayayım.
+
+66
+00:04:50,819 --> 00:04:52,819
+Şimdi bu ödev neydi? Bir daha bir hatırlayalım.
+
+67
+00:04:53,819 --> 00:04:54,819
+Size bir genom verilmiş.
+
+68
+00:04:55,819 --> 00:04:59,819
+Genom dediğimizde aslında şurada örneklerini gördüğünüz gen dizileri.
+
+69
+00:05:00,819 --> 00:05:06,819
+Böyle işte adenin, guanin, sitozin timinden oluşan dört tane protein böyle bizim DNA'larımız.
+
+70
+00:05:07,819 --> 00:05:09,819
+İşte bu da virüsün DNA'sı değil tabii bu.
+
+71
+00:05:09,819 --> 00:05:11,819
+DNA'sı diyelim. Çünkü bu DNA şeyi.
+
+72
+00:05:12,819 --> 00:05:14,819
+Diceksiniz DNA'larda U oluyor T yerine.
+
+73
+00:05:15,819 --> 00:05:17,819
+İşte böyle data seti böyle oluşturmuşlar.
+
+74
+00:05:18,819 --> 00:05:19,819
+Büyük bir ihtimalle bu şey.
+
+75
+00:05:20,819 --> 00:05:23,819
+İnsandaki karşılığı hani DNA'nın kopyası.
+
+76
+00:05:24,819 --> 00:05:28,819
+O DNA'sı yapışan kısım var ya o kısım büyük bir ihtimalle virüsün genomu.
+
+77
+00:05:29,819 --> 00:05:32,819
+Baktığımızda ne kadardı bunun boyutu?
+
+78
+00:05:33,819 --> 00:05:35,819
+Şöyle bir sona gidelim.
+
+79
+00:05:36,819 --> 00:05:41,519
+9600 karakter miymiş?
+
+80
+00:05:42,519 --> 00:05:45,519
+9686 tane şeyden oluşuyormuş.
+
+81
+00:05:46,519 --> 00:05:48,519
+Protein mi deniyor? Amino asit mi deniyordu?
+
+82
+00:05:49,519 --> 00:05:50,519
+İşte onlardan oluşuyormuş.
+
+83
+00:05:51,519 --> 00:05:53,519
+Ne yapmamız lazım bizim burada?
+
+84
+00:05:54,519 --> 00:05:56,519
+Diyor ki Hoca şeyleri bulun diyor.
+
+85
+00:05:57,519 --> 00:05:59,519
+Tekrar eden ya da işte örtüşen ya da örtüşmeyen.
+
+86
+00:06:00,519 --> 00:06:03,519
+Ki burada daha şey sonra bonus olduğu için örtüşenini size göstereceğim.
+
+87
+00:06:04,519 --> 00:06:06,519
+Daha çok değil.
+
+88
+00:06:07,519 --> 00:06:08,519
+Olduğu gibi kopyadım.
+
+89
+00:06:09,519 --> 00:06:10,519
+Yapıştırdım buraya bilmiyorum.
+
+90
+00:06:11,519 --> 00:06:12,519
+Yani bu geldi.
+
+91
+00:06:16,529 --> 00:06:18,529
+Ben böyle bilmiyorum ya.
+
+92
+00:06:19,529 --> 00:06:23,529
+Şimdi 29000 karakter miydi?
+
+93
+00:06:24,529 --> 00:06:26,529
+O zaman kopyalayıp yapıştırmada bir sıkıntı mı oldu buraya?
+
+94
+00:06:27,529 --> 00:06:29,529
+Neyse çok sorun değil.
+
+95
+00:06:30,529 --> 00:06:31,529
+Yani sadece daha uzun süre bekleyeceksiniz açıkçası.
+
+96
+00:06:32,529 --> 00:06:34,529
+Ben gördüğünüz gibi burada basit 6 karakterle.
+
+97
+00:06:35,529 --> 00:06:37,529
+İşte böyle bir 15-20 karakterle.
+
+98
+00:06:37,529 --> 00:06:39,529
+İşte 100 küsür karakterle.
+
+99
+00:06:40,529 --> 00:06:42,529
+Aynısını kopyalarıyla aslında normal denemelerimi yaptım.
+
+100
+00:06:43,529 --> 00:06:45,529
+En son olarak da burada bunu da çalıştırdım.
+
+101
+00:06:46,529 --> 00:06:48,529
+Dediğim gibi tamamen aynı şekilde çalışacak.
+
+102
+00:06:49,529 --> 00:06:50,529
+Sadece biraz daha uzun bekleyeceksiniz.
+
+103
+00:06:51,529 --> 00:06:53,529
+Çünkü tekrar bütün stringleri aramak zorunda kalacak.
+
+104
+00:06:54,529 --> 00:06:55,529
+Şimdi burada yapmamız gereken şey.
+
+105
+00:06:56,529 --> 00:06:57,529
+Ben açıkçası şöyle bir mantık geliştirdim.
+
+106
+00:06:58,529 --> 00:07:01,529
+Bunu yapmanın doğru ve en temel yolu şeydir.
+
+107
+00:07:02,529 --> 00:07:04,529
+Tabii ki inceleyenler vardı.
+
+108
+00:07:04,529 --> 00:07:05,529
+Ve geçen haftaki derste de konuştuk.
+
+109
+00:07:06,529 --> 00:07:09,529
+Aslında tree dediğimiz bir ağaç veri yapısı var.
+
+110
+00:07:10,529 --> 00:07:11,529
+Onu kullanabilirsiniz.
+
+111
+00:07:12,529 --> 00:07:14,529
+Ya da işte suffix tree denen bir ağaç yapısı var.
+
+112
+00:07:15,529 --> 00:07:16,529
+Suffix tree diye özel bir ağaç var.
+
+113
+00:07:17,529 --> 00:07:18,529
+Onu kullanabilirsiniz.
+
+114
+00:07:19,529 --> 00:07:20,529
+Özellikle de böyle hani alfabeniz kısaysa.
+
+115
+00:07:21,529 --> 00:07:22,529
+4 tane harftan oluşuyor burada.
+
+116
+00:07:23,529 --> 00:07:28,529
+Input alfabesi kısaysa suffix treelerle çok etkin bir şekilde şeyi oluşturabilirsiniz.
+
+117
+00:07:29,529 --> 00:07:31,529
+Hani oluşturabileceğiniz bütün kelime kombinasyonlarını.
+
+118
+00:07:31,529 --> 00:07:39,529
+Ya da işte buradaki neyse genom yem parçalarının yani substringlerin kombinasyonlarını rahatlıkla oluşturabilirsiniz.
+
+119
+00:07:40,529 --> 00:07:43,529
+Ama tabii ki öyle bir implementasyonu sizden beklemiyordu.
+
+120
+00:07:44,529 --> 00:07:45,529
+Peki biz neyi biliyoruz?
+
+121
+00:07:46,529 --> 00:07:47,529
+Yani ne yapmayı biliyoruz ya da neyi öğrendik?
+
+122
+00:07:48,529 --> 00:07:49,529
+Biz bir stringin içinde substring aramayı öğrendik.
+
+123
+00:07:50,529 --> 00:07:54,529
+İşte şurada mesela hemen bir tane uygulaması var.
+
+124
+00:07:55,529 --> 00:07:58,529
+Buyurun naif bildiğiniz brute force bir şey.
+
+125
+00:07:58,529 --> 00:07:59,529
+Search.
+
+126
+00:08:00,529 --> 00:08:03,529
+Nedir? Ne alıyor? Bir tane pattern dizisi alıyor, bir tane de text alıyor.
+
+127
+00:08:04,529 --> 00:08:05,529
+Yani textin içinde patterni arayacağım.
+
+128
+00:08:06,529 --> 00:08:07,529
+Ne yapmamız lazım?
+
+129
+00:08:08,529 --> 00:08:16,529
+Gördüğünüz gibi bu count normalde gerek yok ama ben tekrar sayılarını da sorduğum için doğal olarak bir counter'a ihtiyaç duyuyoruz.
+
+130
+00:08:17,529 --> 00:08:19,529
+Girdiğimizde counter'ı sıfırladık.
+
+131
+00:08:20,529 --> 00:08:24,529
+Burada hızlı olsun diye string header'ından string length'i kullandım.
+
+132
+00:08:25,529 --> 00:08:26,529
+İstiyorsanız kullanın.
+
+133
+00:08:27,529 --> 00:08:33,529
+İstemiyorsanız bu dünyaya size of dizi bölü size of karakter diyerek de şey yapabilirsiniz.
+
+134
+00:08:34,529 --> 00:08:39,529
+Hani onu bölerek toplam kaç karakteri olduğunda hızlıca tek bir satırla bile bulabilirsiniz.
+
+135
+00:08:40,529 --> 00:08:41,529
+Neyse biz string length, str length'le yapalım.
+
+136
+00:08:42,529 --> 00:08:45,529
+M pattern'in uzunluğu, N de textin uzunluğu.
+
+137
+00:08:46,529 --> 00:08:48,529
+Zaten algoritmalarımız da pseudo kodlarımız da hep bu şekilde kullandık.
+
+138
+00:08:49,529 --> 00:08:53,529
+Ve burada da önce bir brute force one by one gidiyoruz.
+
+139
+00:08:54,529 --> 00:09:00,529
+Sıfırdan en eksi m'e kadar yani pattern boyu eksi kadarına teker teker bakacağız.
+
+140
+00:09:01,529 --> 00:09:04,529
+Burada birer birer kaydırdığımız için örtüşenleri aslında çok kolaylıkla bulabiliyoruz.
+
+141
+00:09:05,529 --> 00:09:07,529
+Örtüşmeyenleri bulmak istiyorsanız burada ne yaparsınız?
+
+142
+00:09:08,529 --> 00:09:16,529
+Eğer şurada eşitlik bulduysanız mesela burada bir kaydırmak yerine i'yi m'e kadar kaydırırsınız.
+
+143
+00:09:17,529 --> 00:09:18,529
+Böylece örtüşmeyenleri bulursunuz.
+
+144
+00:09:19,529 --> 00:09:23,529
+Öyle bir ufacık değişiklikle de örtüşen örtüşmeyen ayrımını kolaylıkla yapabilirsiniz.
+
+145
+00:09:24,529 --> 00:09:26,529
+İçindeki döngüde de ne yapıyoruz?
+
+146
+00:09:27,529 --> 00:09:31,529
+Sıfırdan m'e kadar texti ve pattern'lik teker teker karakter karakter karşılaştırıyoruz.
+
+147
+00:09:32,529 --> 00:09:35,529
+Eğer bir eşitsizlik varsa break'le bu döngüden çıkıyoruz.
+
+148
+00:09:36,529 --> 00:09:40,529
+Eğer buradan çıktık ama break'le mi çıktık ne yaptık bilmiyoruz.
+
+149
+00:09:41,529 --> 00:09:42,529
+Onu bir kontrol etmemiz lazım. Nasıl kontrol edeceğiz?
+
+150
+00:09:43,529 --> 00:09:44,529
+j eşit eşit m ile bakıyoruz.
+
+151
+00:09:45,529 --> 00:09:50,529
+Eğer ben bunu bulduysam ya şöyle pattern founded index i diyebilirim.
+
+152
+00:09:50,529 --> 00:09:56,529
+Ya da bunu yazdırabilirsiniz ya da bir yere hani bir değişken de tutabilirsiniz.
+
+153
+00:09:57,529 --> 00:09:58,529
+Ben burada sayacı arttırdım.
+
+154
+00:09:59,529 --> 00:10:00,529
+Niye sayacı arttırıyorum?
+
+155
+00:10:01,529 --> 00:10:02,529
+Ondan kaç tane olduğunu saymak istiyorum çünkü.
+
+156
+00:10:03,529 --> 00:10:05,529
+O şeyden subsinkten kaç tane olduğunu sayıyorum.
+
+157
+00:10:06,529 --> 00:10:10,529
+Tamam sonrasında bana soruda ne sorulmuştu?
+
+158
+00:10:11,529 --> 00:10:14,529
+En uzun ve en çok sayıda tekrar eden.
+
+159
+00:10:15,529 --> 00:10:17,529
+Yani bir kere tekrar ediyorsa benim için bir önemi yok.
+
+160
+00:10:17,529 --> 00:10:20,529
+O zaman en azından birden fazla tekrar olması lazım.
+
+161
+00:10:21,529 --> 00:10:23,529
+O zaman counter birden büyük mü diye bir bakıyorum.
+
+162
+00:10:24,529 --> 00:10:29,529
+Şimdi burada aslında ilk yaptığım şeyde hatta hani size ödevle şey yaparken,
+
+163
+00:10:30,529 --> 00:10:32,529
+ödevi hazırlarken yazdığım kodda şey kullanmadım.
+
+164
+00:10:33,529 --> 00:10:34,529
+Herhangi bir veri yapısı kullanmadım.
+
+165
+00:10:35,529 --> 00:10:37,529
+Burada sadece hızlıca göstereceğim biraz sonra detayına gireceğim.
+
+166
+00:10:38,529 --> 00:10:39,529
+Şöyle bir not kullandım.
+
+167
+00:10:40,529 --> 00:10:46,529
+Bu not nedir? Benim her bir substringimin kendisini, uzunluğunu ve sayısını tutan bir linkli liste.
+
+168
+00:10:47,529 --> 00:10:50,529
+Şimdi şeyde burada substring de şurada duruyor.
+
+169
+00:10:51,529 --> 00:10:52,529
+Bu linkli listeyi kullanmadım.
+
+170
+00:10:53,529 --> 00:10:55,529
+Ne yaptığımı söyleyeyim. Direk olarak yazdırdım.
+
+171
+00:10:56,529 --> 00:10:57,529
+Nerede benim şeyim? Naive Search'üm.
+
+172
+00:10:58,529 --> 00:10:59,529
+Direk olarak yazdırdım. Tamam.
+
+173
+00:11:00,529 --> 00:11:07,899
+Yazdırdıktan sonra aslında bunlar şöyle bunu nasıl paylaşacağım?
+
+174
+00:11:10,440 --> 00:11:15,059
+Bir dakika. Ha bunu şey paylaşacağız.
+
+175
+00:11:16,059 --> 00:11:18,059
+Bir dakika şuradan new share diyeceğiz.
+
+176
+00:11:19,059 --> 00:11:21,059
+Not bed'i paylaşayım.
+
+177
+00:11:21,059 --> 00:11:27,059
+Bakın böyle ama şey değil onu silmişim özür dilerim.
+
+178
+00:11:28,059 --> 00:11:31,059
+Mesela A bilmem kaç kere tekrar ediyor.
+
+179
+00:11:32,059 --> 00:11:33,059
+T bilmem kaç kere tekrar ediyor.
+
+180
+00:11:34,059 --> 00:11:35,059
+Şeklinde hepsi tekrarlı tekrarlı.
+
+181
+00:11:36,059 --> 00:11:38,059
+Dur bakayım şu muydu?
+
+182
+00:11:39,059 --> 00:11:40,059
+Yok bu değilmiş. Tamam.
+
+183
+00:11:41,059 --> 00:11:42,059
+Bunu silmişim kusura bakmayın.
+
+184
+00:11:43,059 --> 00:11:44,059
+Üzerine yazmışım.
+
+185
+00:11:45,059 --> 00:11:46,059
+Anduu da yapamıyoruz.
+
+186
+00:11:47,059 --> 00:11:48,059
+Bunda Anduu var mı? Bunda da yok.
+
+187
+00:11:49,059 --> 00:11:50,059
+Neyse tamam.
+
+188
+00:11:51,059 --> 00:11:52,059
+Tamam. Önemli mi?
+
+189
+00:11:53,059 --> 00:11:54,059
+Açıkçası benim için o anda önemli değildi.
+
+190
+00:11:55,059 --> 00:11:57,059
+Çünkü ben zaten longest substringi bulmaya çalışıyordum.
+
+191
+00:11:58,059 --> 00:12:00,059
+Bakın mesela burada TTGTT 13 kere.
+
+192
+00:12:01,059 --> 00:12:02,059
+GAAT 13 kere tekrar etmiş.
+
+193
+00:12:03,059 --> 00:12:05,059
+19 kere tekrar eden 5 uzunlukta var.
+
+194
+00:12:06,059 --> 00:12:07,059
+Böyle bulmuş bulmuş bulmuş.
+
+195
+00:12:08,059 --> 00:12:10,059
+Neyse aşağı doğru indiğinizde şu sonu boş verin.
+
+196
+00:12:11,059 --> 00:12:18,059
+Şöyle işte en son şunlardan da birkaç tekrar mekrar olup en uzun şunu bulmuş iki tekrar demiş bırakmış.
+
+197
+00:12:18,059 --> 00:12:22,059
+En uzun ve birden fazla tekrar eden substring elimde buymuş.
+
+198
+00:12:23,059 --> 00:12:24,059
+Bu şekilde hedefi buldum.
+
+199
+00:12:25,059 --> 00:12:27,059
+Bunu yazdırdığımda zaten ödev için yeterli olacak.
+
+200
+00:12:28,059 --> 00:12:39,059
+Ama sonrasında ben dediğim gibi bunu ya böyle çoğul bir liste halinde görmeyeyim de tek tek yani hepsi unique olsun.
+
+201
+00:12:40,059 --> 00:12:44,059
+Ve unique tekrarlarını sadece göreyim şeklinde bir güncelleme yapmak istedim.
+
+202
+00:12:45,059 --> 00:12:48,059
+O zaman şöyle bir linked liste yapısı kurgulamayı düşündüm.
+
+203
+00:12:49,059 --> 00:12:50,059
+Dediğim gibi burası tamamen opsiyonel.
+
+204
+00:12:51,059 --> 00:12:53,059
+Hiç yapmasanız da olur.
+
+205
+00:12:54,059 --> 00:12:56,059
+Yeter ki ekranda sayıları yazdırın, sayaçları gösterin.
+
+206
+00:12:57,059 --> 00:13:00,059
+Ondan sonra da orada en büyük en uzununu zaten aldığınızda olay bitecektir.
+
+207
+00:13:01,059 --> 00:13:03,059
+Şimdi bu nota ne tutuyorum?
+
+208
+00:13:04,059 --> 00:13:05,059
+Şöyle bir hızlıca bakalım.
+
+209
+00:13:06,059 --> 00:13:07,059
+Bir sayısını tutuyorum.
+
+210
+00:13:08,059 --> 00:13:10,059
+Nerede? Zaten naive search'ün içinde counter'ım var.
+
+211
+00:13:11,059 --> 00:13:12,059
+Counter'ı oraya basmam gerekiyor.
+
+212
+00:13:12,059 --> 00:13:17,059
+Length, substring'imin uzunluğu istiyorsam yazdırmak için yine kullanabilirim.
+
+213
+00:13:18,059 --> 00:13:22,059
+Bir tane next pointer'ım var ki linked liste oluşturabileyim.
+
+214
+00:13:23,059 --> 00:13:24,059
+Strack note pointer şeklinde.
+
+215
+00:13:25,059 --> 00:13:27,059
+Ve bir de substring'i tutuyorum.
+
+216
+00:13:28,059 --> 00:13:33,059
+Şimdi burada belki dediğim gibi bu opsiyonel ama bilmeniz ya da dikkat etmeniz gereken bir husus var.
+
+217
+00:13:34,059 --> 00:13:36,059
+Biliyorsunuz si de string aslında karakter dizisidir.
+
+218
+00:13:37,059 --> 00:13:39,059
+Ve dinamik bir boyutta olmasını bekliyoruz.
+
+219
+00:13:39,059 --> 00:13:43,059
+Çünkü ben kaç uzunlukta substring'ler olacağını bilmiyorum bu linked listede.
+
+220
+00:13:44,059 --> 00:13:49,059
+Yani aslında benim buradaki linked listemin notlarının uzunlukları dinamik.
+
+221
+00:13:50,059 --> 00:13:58,059
+Böyle dinamik uzunlukta bir not oluşturmak istiyorsanız linked listelerde dinamik olan elemanınızı sona koymak durumundasınız.
+
+222
+00:13:59,059 --> 00:14:00,059
+Tamam mı? Böyle bir şey.
+
+223
+00:14:01,059 --> 00:14:03,059
+Bakın burada string sıfır. Aslında boş bir string de yola çıkıyoruz.
+
+224
+00:14:03,059 --> 00:14:05,059
+Ve note demişiz type define'e.
+
+225
+00:14:06,059 --> 00:14:08,059
+Note pointer tipinden bir tane head tanımlıyorum.
+
+226
+00:14:09,059 --> 00:14:11,059
+Null demişim. Bunun kodunun içinde de zaten yapabilirim.
+
+227
+00:14:12,059 --> 00:14:13,059
+Ki şöyle aşağıya iğneyim.
+
+228
+00:14:14,059 --> 00:14:15,059
+Head eşitleri null'ı zaten burada yapmışım.
+
+229
+00:14:16,059 --> 00:14:17,059
+Orada fazladan yazılmış olarak kalmış.
+
+230
+00:14:18,059 --> 00:14:19,059
+String'im var.
+
+231
+00:14:20,059 --> 00:14:21,059
+Uzunluğu da n.
+
+232
+00:14:22,059 --> 00:14:25,059
+Şimdi ben bunun içinden tabiki substring'leri arayıp bulmam gerekiyor.
+
+233
+00:14:26,059 --> 00:14:28,059
+Tamam. Peki şeyi yazdım.
+
+234
+00:14:29,059 --> 00:14:31,059
+Substring arama yöntemini.
+
+235
+00:14:32,059 --> 00:14:33,059
+Nerede o?
+
+236
+00:14:35,500 --> 00:14:37,500
+Şurada yazdım ve count'ları sayıyor.
+
+237
+00:14:38,500 --> 00:14:40,500
+Sonrasında count birden büyükse şey yapıyorum.
+
+238
+00:14:41,500 --> 00:14:45,500
+Önce bir düğüm acaba var mı yok mu diye bir kontrol yapıyorum.
+
+239
+00:14:46,500 --> 00:14:48,500
+Yani eğer düğüm varsa bir daha oluşturmayacağım.
+
+240
+00:14:49,500 --> 00:14:50,500
+Zaten saymışım onu.
+
+241
+00:14:51,500 --> 00:14:52,500
+Yani oradaki substring'i.
+
+242
+00:14:53,500 --> 00:14:56,500
+Eğer yoksa o zaman hemen bir tane düğüm oluşturuyorum.
+
+243
+00:14:57,500 --> 00:14:58,500
+Basit olsun diye de tapa ekliyorum.
+
+244
+00:14:59,500 --> 00:15:00,500
+Yani head'e eklemeyi seçtim.
+
+245
+00:15:00,500 --> 00:15:01,500
+Head'de yeni düğümüm olacak.
+
+246
+00:15:02,500 --> 00:15:07,500
+Ve bunu da ekrana şöyle printf'li görmek için o listeyi oluşturmak için yazdırdım.
+
+247
+00:15:11,190 --> 00:15:13,190
+Yaratırlar diye düşünüyorum.
+
+248
+00:15:15,440 --> 00:15:16,440
+Head'in sorusunun cevabı.
+
+249
+00:15:17,440 --> 00:15:21,440
+Yani denemek lazım ama bence sıkıntı yaratabilir.
+
+250
+00:15:22,440 --> 00:15:23,440
+Ben hiç kullanmadım.
+
+251
+00:15:24,440 --> 00:15:26,440
+Ama dinamik olanı sona koysanız koymanızda fayda var.
+
+252
+00:15:27,440 --> 00:15:29,440
+Şimdi o zaman acaba düğümü nasıl ararım?
+
+253
+00:15:30,440 --> 00:15:32,440
+Problemine bakalım hemen arada.
+
+254
+00:15:33,440 --> 00:15:35,440
+Şöyle listede var zaten.
+
+255
+00:15:36,440 --> 00:15:37,440
+Onu ben saymıştım önceden.
+
+256
+00:15:38,440 --> 00:15:41,440
+Mesela atta diye bir substring.
+
+257
+00:15:42,440 --> 00:15:46,440
+Ben onu zaten naive search'le ararken kaç indiste geçtiğini saydım ya counter'la.
+
+258
+00:15:47,440 --> 00:15:48,440
+Onu saydım.
+
+259
+00:15:49,440 --> 00:15:53,440
+Ondan sonra ileride ki mesela 8. tekrarında atta'yı tekrar gördüğümde tekrar 8 sayıyorum.
+
+260
+00:15:54,440 --> 00:15:56,440
+Pardon neyse işte n tane sayıyorum.
+
+261
+00:15:57,440 --> 00:15:59,440
+Yani aynısından duplike kopyalar oluşuyor.
+
+262
+00:15:59,440 --> 00:16:01,440
+Duplike kopyalar oluşmasın diye bunu yaptım.
+
+263
+00:16:02,440 --> 00:16:03,440
+Oluşsa ne olur hiç önemi yoktu ödevde.
+
+264
+00:16:04,440 --> 00:16:06,440
+Ben dediğim gibi en uzunlu bulun yeterliydi.
+
+265
+00:16:07,440 --> 00:16:10,440
+En uzun substringi bulsanız yeterliydi.
+
+266
+00:16:11,440 --> 00:16:14,720
+Evet kendi ödevini de çözemedim.
+
+267
+00:16:15,720 --> 00:16:22,720
+İşte aslında şey hani şey yapmaya çalışıyoruz böyle ideal optimum çok güzel bir kod yazmaya çalışıyoruz.
+
+268
+00:16:23,720 --> 00:16:29,720
+Aslında dediğim gibi bunu hiç yapmaya bile gerek yoktu ama güzelleşsin diye ben de sonradan ekledim.
+
+269
+00:16:33,250 --> 00:16:36,250
+Ha işte öyle bazen şeylere takılıyoruz takılmamak gerekiyor.
+
+270
+00:16:37,250 --> 00:16:38,250
+Şimdi bakalım şey nerede.
+
+271
+00:16:39,250 --> 00:16:42,250
+Insert top'a bakalım istiyorsanız yeni bir düğme oluşturma nasıl yapılacak.
+
+272
+00:16:43,250 --> 00:16:44,250
+Bir tane yeni pointer yarattım.
+
+273
+00:16:45,250 --> 00:16:46,250
+Sonrasında alokasyon yapıyorum.
+
+274
+00:16:47,250 --> 00:16:53,250
+Şimdi burada dinamik özellikle boyutta node oluşturacaksam alokasyon da bir şeye dikkat etmem lazım.
+
+275
+00:16:54,250 --> 00:16:56,250
+Malloc da doğal olarak casting'imin pointer'a yaptım.
+
+276
+00:16:57,250 --> 00:17:00,250
+Sonrasında bakalım hangi boyutta bir memoro alokasyonu yapıyorum.
+
+277
+00:17:01,250 --> 00:17:02,250
+Nedir?
+
+278
+00:17:03,250 --> 00:17:04,250
+Pointer.
+
+279
+00:17:05,250 --> 00:17:06,250
+Bu zaten illaki var.
+
+280
+00:17:07,250 --> 00:17:10,250
+Artı bakın şimdi burada sıfır uzunlukta bir stringim var ya.
+
+281
+00:17:11,250 --> 00:17:16,250
+Ama burada ben aslında en uzunlukta yani pardon hem uzunlukta paterne hem demiştik.
+
+282
+00:17:17,250 --> 00:17:21,250
+Paternin en uzunluğunda bir yere daha ihtiyaç o kadar karaktere daha ihtiyaç duyuyorum.
+
+283
+00:17:22,250 --> 00:17:26,250
+O zaman artı karakter çarpı uzunluk kadar daha yer tutmam lazım.
+
+284
+00:17:27,250 --> 00:17:34,250
+İşte burada yeni oluşturduğum node aslında mesela size of node'a S diyelim S artı M oldu.
+
+285
+00:17:35,250 --> 00:17:39,250
+Başka bir yeni node oluşturumda S artı başka M2 olacak.
+
+286
+00:17:40,250 --> 00:17:42,250
+Ondan sonra S artı M3 olacak.
+
+287
+00:17:43,250 --> 00:17:44,250
+Ne yapmış oldum?
+
+288
+00:17:45,250 --> 00:17:47,250
+Linkli listemde bu sefer node'larım da dinamik boyutta olmuş oldu.
+
+289
+00:17:48,250 --> 00:17:50,250
+Ama benim için önemli olan zaten pointer'lar.
+
+290
+00:17:50,250 --> 00:17:58,250
+Next pointer'ını bildiğim sürece onun bellek adresini bildiğim sürece bazen 8 byte ilerlerim bazen 12 byte ilerlerim çok sorun değil.
+
+291
+00:17:59,250 --> 00:18:00,250
+Bunu sağlıyoruz.
+
+292
+00:18:01,250 --> 00:18:07,250
+Sonrasında next'ini head yapıyorum ki işte önceki head'i kaybetmedim.
+
+293
+00:18:08,250 --> 00:18:09,250
+Count'unu atadım.
+
+294
+00:18:10,250 --> 00:18:11,250
+Uzunluğunu atadım.
+
+295
+00:18:12,250 --> 00:18:15,250
+Ve string copy ile onu tabi teker teker bir döngüyle de yapabilirsiniz.
+
+296
+00:18:16,250 --> 00:18:19,250
+Basit olsun diye şu fonksiyon için string copy ile yaptım yine string hash'tan.
+
+297
+00:18:20,250 --> 00:18:24,250
+Ve head olarak da oluşturduğum yeni node'u koydum.
+
+298
+00:18:25,250 --> 00:18:26,250
+Yani ne yapmış olduk aslında?
+
+299
+00:18:27,250 --> 00:18:31,250
+Ben her seferinde bir tane node oluşturdum.
+
+300
+00:18:32,250 --> 00:18:33,250
+Şurası null.
+
+301
+00:18:34,250 --> 00:18:38,250
+Ondan sonra yeni bir node oluşturduğumda yeni node'u buraya oluşturup buraya gösteriyorum.
+
+302
+00:18:39,250 --> 00:18:40,250
+Şimdi head buradaydı.
+
+303
+00:18:41,250 --> 00:18:42,250
+Bunu artık aldım.
+
+304
+00:18:43,250 --> 00:18:44,250
+Head'i buraya göstermiş oldum.
+
+305
+00:18:45,250 --> 00:18:48,250
+Ondan sonra yeni bir node oluşturduğumda insert ettiğimde bunu koyuyorum.
+
+306
+00:18:48,250 --> 00:18:49,250
+Bunu head'e gösteriyorum.
+
+307
+00:18:50,250 --> 00:18:51,250
+Ve head pointer'ı buraya koyuyorum.
+
+308
+00:18:52,250 --> 00:18:53,250
+İşte bu şekilde bir linked liste yani basit.
+
+309
+00:18:54,250 --> 00:18:58,250
+Her seferinde yeni eklediğimde sona kadar gidip sona eklemek yerine her seferinde başa eklerim.
+
+310
+00:18:59,250 --> 00:19:00,250
+Ne fark eder?
+
+311
+00:19:01,250 --> 00:19:02,250
+Sonuçta ben zaten bir liste tutmaya çalışıyorum dedim.
+
+312
+00:19:03,250 --> 00:19:11,250
+Böyle daha hani insert'i o bir, tabii araması o n olacak şekilde bir implementasyon gerçekleştirdim.
+
+313
+00:19:12,250 --> 00:19:13,250
+Şimdi insert böyle.
+
+314
+00:19:14,250 --> 00:19:16,250
+Peki find node yani var mı yok mu nasıl yapacağız?
+
+315
+00:19:16,250 --> 00:19:17,250
+Şöyle yapacağız.
+
+316
+00:19:18,250 --> 00:19:19,250
+Doğal olarak head'i biliyor olmam lazım.
+
+317
+00:19:20,250 --> 00:19:21,250
+Bir de pattern'i biliyor olmam lazım.
+
+318
+00:19:22,250 --> 00:19:26,250
+Yani bu pattern'den acaba bir node yaratmış mıydım diye bakıyor olmam lazım.
+
+319
+00:19:27,250 --> 00:19:29,250
+Şimdi baktığımızda ne yapacağız?
+
+320
+00:19:30,250 --> 00:19:31,250
+İşte current diye bir tane şey pointer.
+
+321
+00:19:32,250 --> 00:19:33,250
+Current null ise null döndür.
+
+322
+00:19:34,250 --> 00:19:35,250
+Neden? Hiçbir şey yoktur.
+
+323
+00:19:36,250 --> 00:19:37,250
+Liste boştur zaten.
+
+324
+00:19:38,250 --> 00:19:39,250
+Yeni sıfırdan oluşturması gerekecek.
+
+325
+00:19:39,250 --> 00:19:44,250
+Ee sonrasında current null olmadığı sürece yani son pointer null'a gidiyordu ya.
+
+326
+00:19:45,250 --> 00:19:52,250
+Yani null görene kadar current'ın string'iyle yani benim linked listemde tuttuğum string'le.
+
+327
+00:19:53,250 --> 00:19:55,250
+Şunu yapayım şöyle daha iyi olacak.
+
+328
+00:19:56,250 --> 00:19:58,250
+Bu string'le pattern'i karşılaştırıyorum.
+
+329
+00:19:59,250 --> 00:20:07,250
+Yine burada şey yapabilirsiniz fark etmez bir teker teker karakterleri m tane karakteri karşılaştırıp eşitse bir flag set edebilirsiniz.
+
+330
+00:20:07,250 --> 00:20:10,250
+Yine şeyin if'in içinden hızlı yazalım diye böyle yazdık.
+
+331
+00:20:11,250 --> 00:20:16,250
+Eşit eşit sıfır string compare'den çıkan sonuç şu demektir üç tane sonuç verir string compare.
+
+332
+00:20:17,250 --> 00:20:18,250
+Integer döndürür. Eksi bir sıfır bir.
+
+333
+00:20:19,250 --> 00:20:22,250
+Eksi birse işte birinci string ikincinden küçüktür.
+
+334
+00:20:23,250 --> 00:20:26,250
+Yani mesela biri A'la başlıyordur biri B'yle başlıyordur gibi düşünün.
+
+335
+00:20:27,250 --> 00:20:30,250
+Bire bir aynı hisseler sıfır döndürür.
+
+336
+00:20:31,250 --> 00:20:35,250
+Eğer işte biri B'yle başlıyor ikincisi A'la başlayan bir string ise o zaman da bir döndürür.
+
+337
+00:20:35,250 --> 00:20:37,250
+Yani birini string daha büyüktür anlamında.
+
+338
+00:20:38,250 --> 00:20:40,250
+Böyle bir şey var fuzzr fonksiyonu var onu kullandık.
+
+339
+00:20:41,250 --> 00:20:44,250
+Ve eğer böyle bir şey varsa eşleşti ve buradaki şeyi döndürüyorum.
+
+340
+00:20:45,250 --> 00:20:47,250
+Bu ne demek ararken ben...
+
+341
+00:20:48,250 --> 00:20:50,250
+Şunları yine sileyim.
+
+342
+00:20:51,250 --> 00:20:53,250
+Nerede arıyordum? Nerede oluşturuyordum düğümü?
+
+343
+00:20:54,250 --> 00:20:55,250
+Şurada oluşturuyordum.
+
+344
+00:20:56,250 --> 00:21:02,250
+Eğer varsa pardon yoksa yani nalsa yeni düğümü oluştur ekle.
+
+345
+00:21:02,250 --> 00:21:05,250
+Eğer yoksa pardon bulduysam hiçbir şey yapmıyorum.
+
+346
+00:21:06,250 --> 00:21:08,250
+Çünkü zaten önceden onu saymıştım geçiyorum.
+
+347
+00:21:09,250 --> 00:21:12,250
+Aslında o aramayı boşuna yapmış oldum diyebilirsiniz.
+
+348
+00:21:13,250 --> 00:21:15,250
+Bu şey en basit naive search.
+
+349
+00:21:16,250 --> 00:21:19,250
+Bir de şey yazdım daha doğrusu yazmadım.
+
+350
+00:21:20,250 --> 00:21:21,250
+Aldım diyeyim.
+
+351
+00:21:22,250 --> 00:21:23,250
+Robin carp.
+
+352
+00:21:24,250 --> 00:21:27,250
+Robin carp'da da bir tane biliyorsunuz hatırlarsanız derste 97 ile yapmıştık.
+
+353
+00:21:28,250 --> 00:21:29,250
+Burada 101'i kullandım.
+
+354
+00:21:29,250 --> 00:21:30,250
+Bir tane şey.
+
+355
+00:21:31,250 --> 00:21:32,250
+Asal sayı.
+
+356
+00:21:33,250 --> 00:21:36,250
+İşte mn ondan sonra şeyler hash değerlerini tutacak.
+
+357
+00:21:37,250 --> 00:21:38,250
+Patern'in hash'i, text'in hash'i.
+
+358
+00:21:39,250 --> 00:21:40,250
+Bunları tutacak.
+
+359
+00:21:41,250 --> 00:21:44,069
+Pardon bir saniye.
+
+360
+00:21:51,160 --> 00:21:53,599
+Pardon bir saniye.
+
+361
+00:22:09,059 --> 00:22:10,059
+Ne yapıyorduk?
+
+362
+00:22:11,059 --> 00:22:16,059
+Hatırlarsanız şeyleri şöyle modlu hash'ini bulmamız gerekiyordu.
+
+363
+00:22:16,059 --> 00:22:22,470
+D'ye ne diyeceksiniz?
+
+364
+00:22:23,470 --> 00:22:28,470
+D alfabedeki karakter sayısı.
+
+365
+00:22:29,470 --> 00:22:31,470
+D'yi 4 harfa olduğu için 4 olarak belirledik.
+
+366
+00:22:32,470 --> 00:22:37,470
+Tabii bu hash hesabında toplam karakter sayısını alfabe boyutumuzu biliyor olmamız lazım.
+
+367
+00:22:38,470 --> 00:22:41,470
+Sonrasında mod Q yaparak şeylerini hesapladık.
+
+368
+00:22:42,470 --> 00:22:44,470
+H değerini hesapladık.
+
+369
+00:22:44,470 --> 00:22:45,470
+H değerini hesapladık.
+
+370
+00:22:46,470 --> 00:22:53,470
+Ondan sonra şeyi hatırlarsanız bir kaydırarak pattern'in şeyini oluşturuyorduk ve text'inkini oluşturuyorduk.
+
+371
+00:22:54,470 --> 00:23:05,470
+İlk şeyleri P'yi ve T'yi oluşturduktan sonra bunları hash değerlerini bulduktan sonra teker teker kaydırarak hash değerleri birbirine eşitme kontrol yapıyoruz.
+
+372
+00:23:06,470 --> 00:23:08,470
+Yine sıfırdan en eksi eme kadar dönen bir döngüyle.
+
+373
+00:23:09,470 --> 00:23:11,470
+Yani enlik bir karmaşayla diyelim.
+
+374
+00:23:11,470 --> 00:23:13,470
+İçinde de bir if var gördüğünüz gibi.
+
+375
+00:23:14,470 --> 00:23:23,470
+Eğer bunlar birbirine eşitse ne yapıyorduk acaba hash değeri çakışması oldu mu diye E tane karakteri teker teker kontrol ediyorduk.
+
+376
+00:23:24,470 --> 00:23:28,470
+Aynı şeydeki gibi naif brute force yöntemde olduğu gibi.
+
+377
+00:23:29,470 --> 00:23:34,470
+Aynı şekilde yine eşitse tam bir exact match buldum demektir.
+
+378
+00:23:35,470 --> 00:23:36,470
+Counter'u arttırıyorum.
+
+379
+00:23:36,470 --> 00:23:38,470
+Eğer şeyse de ne yapacağız?
+
+380
+00:23:39,470 --> 00:23:42,470
+Bulamadıysak bir kaydırarak hash tekrar hesaplamamız lazımdı.
+
+381
+00:23:43,470 --> 00:23:50,470
+Hatırlarsanız slide'da bunun formülünü sayısal olarak ifadesiyle birlikte yapmıştık 97 asal sayısı için.
+
+382
+00:23:51,470 --> 00:23:52,470
+Burada da aynı şey yapılıyor.
+
+383
+00:23:53,470 --> 00:24:00,470
+Bir kaydırarak text'in yani o eşleştireceğimiz text'in yeni hash değerini hesaplıyoruz.
+
+384
+00:24:01,470 --> 00:24:11,470
+Ve eğer sıfırdan küçükse de t artık q ile toplayarak modulo aritmetiğinde garantiyi 91'in içinde kalmasını garanti ediyoruz.
+
+385
+00:24:12,470 --> 00:24:15,750
+Sonrası yine naif search ile aynı.
+
+386
+00:24:16,750 --> 00:24:23,750
+Count birden büyükse bak varsa hiçbir şey yapma yoksa yeni bir düğüm yarat ondan sonra şey yap yoluna devam et şeklinde.
+
+387
+00:24:24,750 --> 00:24:29,750
+Şimdi arama algoritmalarını zaten sizinde önceden yazmış olduğunuzu düşünüyorum.
+
+388
+00:24:29,750 --> 00:24:30,750
+Peki ne yapacağız şimdi?
+
+389
+00:24:31,750 --> 00:24:40,750
+Benim bir şekilde ya birden başlayıp n'ye kadar ya da n bölü 2'ye kadar gitseniz bile yeterliydi aslında örtüşmeyen için.
+
+390
+00:24:41,750 --> 00:24:48,750
+Diğerinde n-1'e kadar gitmek zorunda kalırsınız hani bir karakter kaydığında da aynı şey oluşmuş olabilir diye.
+
+391
+00:24:49,750 --> 00:24:57,750
+Ya n-1'den 1'e kadar tersten gidebilirsiniz ya da birden n-1'e doğru gidebilirsiniz.
+
+392
+00:24:58,750 --> 00:24:59,750
+Ne yapacağız?
+
+393
+00:25:00,750 --> 00:25:07,750
+Mesela burada ben birden n'e doğru gittim substringleri olası bütün permutasyonlarını bir şekilde oluşturabiliyor olmam lazım.
+
+394
+00:25:08,750 --> 00:25:14,750
+Onu da burada yazabilirdim ama basit bir şekilde substrings diye bir şey çağırmak istedim hani ayrı ayrı olsun diye.
+
+395
+00:25:15,750 --> 00:25:16,750
+Ne yapacak substring?
+
+396
+00:25:17,750 --> 00:25:25,750
+N boyutlu bir dizide aslında bunu da vermemize bile gerek yok strengle yine burada da bulabilirdik de neyse böyle yazılmış.
+
+397
+00:25:26,750 --> 00:25:31,750
+N boyutlu dizide olası bütün substringleri oluşturmaya çalışıyorum.
+
+398
+00:25:32,750 --> 00:25:42,750
+Nasıl oluşturacağım işte her seferinde 0'dan n'e kadar 0'dan başlayıp start artı pes kadar şey yapacağım gideceğim.
+
+399
+00:25:43,750 --> 00:25:57,750
+Ve her seferinde o adım için o n değeri için değil mi yani o pattern boyutu için teker teker teker diziyi gezerek bir substring oluşturacağım.
+
+400
+00:25:58,750 --> 00:26:04,750
+Oluşturduğum substringi de start'tan n'de kadar olan substring parçasını bir işleme tabi tutacağım.
+
+401
+00:26:05,750 --> 00:26:12,750
+Yani onları bir dizide tutup ondan sonra diziyi teker teker de yapabilirsiniz ama o biraz daha yer kaplayacaktır.
+
+402
+00:26:13,750 --> 00:26:20,750
+İşte aynı o tuttuğunuz bütün olası n çarpı n artı 1 bölü 2 tane diyelim substringin hepsini bir yerde tutuyor olmanız lazım.
+
+403
+00:26:21,750 --> 00:26:25,750
+Onun yerine ben tutmuyorum her bir tanesini bulduğumda tekrar onu proses ediyorum.
+
+404
+00:26:26,750 --> 00:26:29,750
+Proses etmek ne demek arama yapacağım aslında arayıp saymaya çalışacağım.
+
+405
+00:26:29,750 --> 00:26:43,750
+İşte bu neyi getirdi bana evet aynı substringi kaç kere geçiyor diyelim ki benim şeyde verdiğim genomda diyelim ki 87 kere geçiyor aynı substringi 87 kere evet arıyoruz.
+
+406
+00:26:44,750 --> 00:26:49,750
+Çok iyi bir çözüm yöntemi değil optimize edilebilir ama hızlı geliştirme açısından yeterli.
+
+407
+00:26:50,750 --> 00:26:52,750
+Peki ne yapacak proses de çok kolay.
+
+408
+00:26:53,750 --> 00:26:57,750
+Aslında start'tan n'de kadar şeyi alacak.
+
+409
+00:26:58,750 --> 00:27:01,750
+String parçasını o paternin tekstin içinden alacağım.
+
+410
+00:27:02,750 --> 00:27:03,750
+TMF diye bir şey ekledim.
+
+411
+00:27:04,750 --> 00:27:06,750
+Sonrasında da bunu search edeceğim.
+
+412
+00:27:07,750 --> 00:27:12,750
+Dediğim gibi birden başlayıp yani şöyle şu kısa örneğe bakalım.
+
+413
+00:27:12,750 --> 00:27:16,750
+Önce A için sonra T için yapacak.
+
+414
+00:27:17,750 --> 00:27:19,750
+Sonra A için tekrar yapacak.
+
+415
+00:27:20,750 --> 00:27:22,750
+A için yapmıştım bir daha yapıyorum ne yapayım olsun.
+
+416
+00:27:23,750 --> 00:27:25,750
+T için yapmıştım bir daha yapıyorum.
+
+417
+00:27:26,750 --> 00:27:27,750
+A için yapmıştım bir daha yapıyorum.
+
+418
+00:27:28,750 --> 00:27:34,750
+Yani 3 kere aynı işi boşu boşuna tekrar ediyorum aslında ama bir yerde tutmak zorunda kalmadım böyle bir implementasyon gerçekleştirdim.
+
+419
+00:27:34,750 --> 00:27:36,750
+Dediğim gibi burada şey yapılabilir.
+
+420
+00:27:37,750 --> 00:27:50,750
+Daha da iyisini yazmak istiyorsanız şurada şey substringleri oluşturup her bir substringi bir dizide ya da bir kümede diyelim hani set mantığıyla tekil olacak şekilde tutarsınız.
+
+421
+00:27:51,750 --> 00:28:01,750
+Sonrasında sadece o tekil üzerinden arama yaparsanız tekil diziniz üzerindeki bütün substringleri ararsanız daha da optimize sonuçlar elde edebilirsiniz.
+
+422
+00:28:02,750 --> 00:28:05,750
+Sonrasında işte proses de search edeceğim dedim.
+
+423
+00:28:06,750 --> 00:28:13,750
+Dediğim gibi mesela belki 3 kere belki tekrar sayısı kadar gereksiz yere tekrar tekrar aynı substringi bakıyorum ama olsun.
+
+424
+00:28:14,750 --> 00:28:16,750
+Sonuçta saydım aynı saydığımı bir daha sayıyorum şey gibi.
+
+425
+00:28:17,750 --> 00:28:24,750
+Neydi o filmdeki altın sayıyorlar diye tekrar tekrar aynı şeyi sayıyorum ama en azından her birinde aynı sonucu buluyorum.
+
+426
+00:28:25,750 --> 00:28:30,750
+Peki ne yapmış oldum ben bunları substring bütün odası substringlerini buldum.
+
+427
+00:28:31,750 --> 00:28:36,750
+Ve her birini buldukça proses ettim proses ettiğin proses de aslında arayıp saymak.
+
+428
+00:28:37,750 --> 00:28:45,750
+Ondan sonra da bu saydıklarımı bir linked liste de tuttum linked liste de unique olsun diye tuttum tutmak zorunda değildim dediğim gibi hepsini tekrarlı olarak da yazdırabilirdim.
+
+429
+00:28:46,750 --> 00:28:53,750
+Şimdi ne yapacağım acaba en uzun string ne ve kaç tekrar diye yazdırmam lazım.
+
+430
+00:28:53,750 --> 00:29:04,750
+Nerede duruyor bu linked listeyi biliyorsunuz tapta ekleye ekleye gidiyorduk ve en son en uzun olabilecek en uzun ve birden fazla tekrarı olanı tuttuk ya linked listede.
+
+431
+00:29:05,750 --> 00:29:19,750
+Nerede o? Head'de zaten direkt Head'in substringini yani head string ve head count yazdırırsam ekrana şakır şakır en uzun tekrar eden şeyi birden fazla sayıda tabi ki en uzun tekrarlı substringi bulmuş olurum.
+
+432
+00:29:20,750 --> 00:29:38,750
+Bunların tabi bir de indislerini istemiştim sizden o da sonradan aklıma geldi yazarken indisler içinde benim o zaman aynısını tekrar arayıp buradaki head stringi tekrar arayıp nerelerde geçtiğini bir şekilde buluyor olmam lazım.
+
+433
+00:29:38,750 --> 00:29:46,750
+Onun için de indices diye bir şey yazdım. Ne yazdım tabi ki tahmin edersiniz şuradaki naive search'u aldım aynen kopyaladım.
+
+434
+00:29:47,750 --> 00:29:56,750
+Bakın buraya kopyalanmış durumda yine 0'dan nxm'e kadar sonrasında da birer birer pattern matching yapıyorum bir kaydıra bir kaydıra.
+
+435
+00:29:56,750 --> 00:30:06,750
+Eğer bulduysam zaten şurada nerede o? Ha şurada comment out ettiğim yer var ya onu açtım count'u yok ve linked liste eklemesi yok.
+
+436
+00:30:07,750 --> 00:30:16,750
+Bunu da yine naive search'e bir tane daha parametre koyup bir flag atıp yapabilirsiniz hani saymak mı istiyorsun listelemek mi istiyorsun gibi yapabilirsiniz.
+
+437
+00:30:17,750 --> 00:30:24,750
+Hızlı olsun diye sonradan da unuttuk aklıma geldiği için bunu böyle kopyalayıp yapıştırdım ve bu şekilde bütün olay bu.
+
+438
+00:30:24,750 --> 00:30:39,680
+Şimdi bunu mesela çalıştırdığınızda önce basit için çalıştıralım şöyle ha göremiyorsunuz tabi bir dakika.
+
+439
+00:30:41,680 --> 00:30:55,150
+Evet neleri bulmuş işte ata2 kere tat2 kere atat2 kere head'de zaten bu var yazdırdığım şey longest repeating substring atat with two repeats deyip
+
+440
+00:30:55,150 --> 00:31:01,150
+sonra da indices'la da tekrar yazdırıyorum sıfırda ve iki indices'inde bulmuş bu kadar.
+
+441
+00:31:02,150 --> 00:31:10,150
+Bunu şey çalıştırdığınızda uzunla da çalıştırdığınızda fark eden şey sadece çalışma zamanı oluyor.
+
+442
+00:31:10,150 --> 00:31:25,839
+Şunu açıp çalıştırayım çalıştırdım şunu share edeyim tabi ben ayırana kadar buralara kadar geldi şöyle yukarı kaydırayım.
+
+443
+00:31:25,839 --> 00:31:35,279
+Baktığınızda işte böyle tekrarlar şurada uzun tekrarlı bir şey varmış galiba.
+
+444
+00:31:36,279 --> 00:31:44,279
+15 tekrar var 19 tekrar var mesela 5 için olsaydı 19 tekrarlı varmış.
+
+445
+00:31:45,279 --> 00:31:53,279
+19 tekrarlı bir tane daha var burada başa en yakın olanı alın dedik zaten o da head'dedir yine şey yapmanıza başka bir işlem yapmanıza da gerek yok.
+
+446
+00:31:53,279 --> 00:31:57,279
+Yani bu listenin en sonundakini alsanız yeterli olur.
+
+447
+00:31:58,279 --> 00:32:12,279
+Böyle gidiyor işte şöyle kaydıracak olursak şunu bulmuş böyle bekliyor tabi şu anda bütün olası kombinasyonları biraz da gereksiz fazla şekilde tekrar tekrar çalıştıracağız.
+
+448
+00:32:13,279 --> 00:32:15,279
+Nihayetinde şunu bulmuş olacağız.
+
+449
+00:32:24,150 --> 00:32:26,150
+Bu çalışa dursun.
+
+450
+00:32:27,150 --> 00:32:29,150
+Ben tekrar şeyi share edeyim.
+
+451
+00:32:30,150 --> 00:32:33,150
+New share notepad.
+
+452
+00:32:34,150 --> 00:32:48,259
+Verilen text içindeki substring de tree'de çok gereksiz olmamış dediğim gibi aslında suffix tree yapabilirsiniz.
+
+453
+00:32:49,259 --> 00:33:04,930
+Ama şey hani bizim derste bahsettiğimiz bir konu değildi direkt olarak internetten kod alıntısı olur o hani öyle söyleyeyim ama gördüğünüz gibi ben bunu substring search ile çözebiliyorum.
+
+454
+00:33:05,930 --> 00:33:11,930
+Benziyor valla daha bakmadım ödevlere o yüzden kiminki neye benziyor bilmiyorum linked liste de mallokta hata var.
+
+455
+00:33:12,930 --> 00:33:18,930
+Patern uzunluğunu düşünüyorum evet ya o sıkıntı ama tabi dediğim gibi hani sıfır almayacaksınız öyle söyleyeyim.
+
+456
+00:33:19,930 --> 00:33:34,380
+Tamam kaydırırım dört tane dört litre ooo bayağı şey zor olur.
+
+457
+00:33:35,380 --> 00:33:41,380
+Tamam share'i açtım şimdi bakın bu hangisi bu Robin Karp galiba emindeyim belki de şeyden naivdir.
+
+458
+00:33:42,380 --> 00:33:53,380
+Bakın şey ha bu Robin Karp şunu bulmuş 2034-3495 indislerinde bulmuş 562 saniyede Robin Karp ile aramışım.
+
+459
+00:33:54,380 --> 00:34:03,730
+Şeyde 232 saniyede naivle aramış daha doğrusu şey hani A'dan Z'ye bütün çalışması.
+
+460
+00:34:04,730 --> 00:34:12,730
+Robin Karp niye daha uzun sürdü hash biraz daha uzun sürmüş yapması belki o sırada ben başka şeyler de çalıştırıyorum bilgisayarda onun da etkisi olmuş olabilir.
+
+461
+00:34:13,730 --> 00:34:21,730
+Yani ne oluyor 240 saniye dört dakika işte dört beş dakikada benim bilgisayarda şey çalışıyor.
+
+462
+00:34:21,730 --> 00:34:44,039
+Benim bilgisayarın özellikleri de nereden bakıyorduk şurada şöyle göstereyim.
+
+463
+00:34:45,039 --> 00:34:52,039
+Nerede bu şurada gördüğünüz gibi Core i7 dördüncü nesil bayağı eski.
+
+464
+00:34:53,039 --> 00:35:01,039
+12 GB RAM'im var 64 bit işletim sistemi var Windows 10 gördüğünüz gibi.
+
+465
+00:35:02,039 --> 00:35:10,699
+Evet şimdi şu kod bu arada çalışsın dursun durdurabilirim aslında.
+
+466
+00:35:11,699 --> 00:35:17,699
+Hocam araya gireyim mi? Aslında ararken şey yapmış olsak daha belki hızlı çalışmaz mıydı?
+
+467
+00:35:18,699 --> 00:35:28,699
+Substring'lerde yarıdan azaltı azaltı gitseydik ve iki tane olan yer birden fazla olan yerde dursaydık.
+
+468
+00:35:29,699 --> 00:35:36,699
+Olur yapabilirsiniz. Ben bunu gördüğünüz gibi dal düzgün yazdım yani hani herhangi çok fazla bir optimizasyon yok.
+
+469
+00:35:37,699 --> 00:35:42,699
+Sadece linked liste biraz daha eli yüzü düzgünleşsin diye sonradan koydum ki onu da koymanıza gerek yoktu.
+
+470
+00:35:43,699 --> 00:35:47,699
+Şeydeki halinde o da yoktu benim ödevi yaparken ki halinde o da yoktu.
+
+471
+00:35:48,699 --> 00:35:50,699
+Hocam bir şey sorabilir miyim?
+
+472
+00:35:50,699 --> 00:35:56,699
+Tabii şey bu binary service ile alakalı bir tane ödev vermiştiniz ya ikinci quiz olması lazım.
+
+473
+00:35:57,699 --> 00:36:06,699
+Ben onları yapıyordum da hani biraz geç baştan yapmaya da şey o yani o algoritmanın çalışma süresi ne kadar hocam hani ne kadar olması lazım?
+
+474
+00:36:07,699 --> 00:36:10,699
+Dur bir dakika ne verdiğimi şu anda hatırlamıyorum.
+
+475
+00:36:11,699 --> 00:36:13,699
+Şu şeyde neydi? Ben de hatırlıyorum bir saniye.
+
+476
+00:36:16,429 --> 00:36:18,429
+İkili arama ağacında ortalama arama derinliği mi?
+
+477
+00:36:19,429 --> 00:36:20,429
+Evet hocam evet.
+
+478
+00:36:20,429 --> 00:36:21,429
+20 saat civarında sürmüştü bende.
+
+479
+00:36:22,429 --> 00:36:23,429
+Ha o zaman normalmiş tamam.
+
+480
+00:36:24,429 --> 00:36:30,429
+Ben onu çünkü çalıştırdığımda baya uzun sürüyordu hani bir de hani diyoruz yani şey hızlı diye nasıl bir şey diye.
+
+481
+00:36:31,429 --> 00:36:38,429
+Ama şöyle çok fazla sayıda deneme yapıyor yani 10 bin tane yüzlü tekrar yapıyorsun değil mi?
+
+482
+00:36:39,429 --> 00:36:40,429
+Evet.
+
+483
+00:36:41,429 --> 00:36:42,429
+Kaç oluyor? Bir milyon kere mi dönmüş oluyorsun yani?
+
+484
+00:36:43,429 --> 00:36:44,429
+Aynen hocam.
+
+485
+00:36:44,429 --> 00:36:50,429
+Yani normal şey yaptım bir tane binary tree bir milyon ağaç attım hani bir milyon notlu oluşturduğumda iki saniye sürüyordu.
+
+486
+00:36:51,429 --> 00:36:52,429
+Yani böyle demliyordum da.
+
+487
+00:36:53,429 --> 00:36:55,429
+Bu size neyi gösteriyor aslında?
+
+488
+00:36:56,429 --> 00:36:59,429
+Hani o en karmaşıklık deyip duruyoruz ya o en kare.
+
+489
+00:37:00,429 --> 00:37:10,429
+Yani bu işte 10 bin çarpı yüz olduğunda bu döngüler tekrar tekrar tekrar döndüğünde ne kadar uzun sürdüğünü aslında hani worst case senaryoları da görmüş oluyorsunuz.
+
+490
+00:37:12,710 --> 00:37:13,710
+Bir dakika zoom'u.
+
+491
+00:37:18,460 --> 00:37:20,460
+Büyük asal sayıyı seçmeniz hızlandırır mıydı?
+
+492
+00:37:21,460 --> 00:37:27,460
+Bence yani şey oradaki mod aritmetiği hızlanır mı? Belki birkaç clock cycle kazanırsınız.
+
+493
+00:37:28,460 --> 00:37:30,460
+Çok da aşırı bir fark edeceğini düşünmüyorum ama.
+
+494
+00:37:32,460 --> 00:37:38,460
+Robin carp'ı ben zaten şey aldım kodunu hazır aldım bu arada şey yapmadım yani oturup da kendimi yazmadım.
+
+495
+00:37:40,860 --> 00:37:42,860
+Boyer Murda var onunla da yapabilirdik.
+
+496
+00:37:43,860 --> 00:37:48,860
+Ama Boyer Murda şimdi bir de şey hani tabloları oluştur et bilmem ne kod biraz daha karmaşık hale gelecekti.
+
+497
+00:37:49,860 --> 00:37:51,860
+O yüzden ben brute force ile dümdüz yürüdüm yani.
+
+498
+00:37:52,860 --> 00:38:02,860
+Bu gibi kısa süreli ödevlerde aslında hani gördüğünüz gibi çok aşırı optimizasyondansa akılcı da düşünüp en hızlı şekilde çözmeniz aslında sizden beklediğim şey.
+
+499
+00:38:03,860 --> 00:38:05,860
+Konuştuk ya mesela geçen haftaki derste.
+
+500
+00:38:06,860 --> 00:38:08,860
+Hocam bunu böyle iki haftalık ödev diye verseniz falan dediniz.
+
+501
+00:38:09,860 --> 00:38:12,860
+Böyle bir ödev versem acayip optimize kod beklerim sizden.
+
+502
+00:38:13,860 --> 00:38:28,860
+Hani hiçbir tekrar olmaması dediğim gibi önce bu şeyleri substring kombinasyon diyelim tekil hale getirilmiş olması onların sadece birer kere aranması gibi böyle bütün optimizasyonları da yapmanızı beklerim o zaman.
+
+503
+00:38:28,860 --> 00:38:32,860
+Ama nihayetinde burada bir mantık yürütüp sonuca ilerlemeye çalışıyoruz.
+
+504
+00:38:33,860 --> 00:38:42,980
+Peki son olarak şey yapayım kodu nerede bunun şeyi share kaçtı yine.
+
+505
+00:38:46,449 --> 00:38:47,449
+Bir daha share edeyim.
+
+506
+00:38:50,449 --> 00:38:51,449
+Kapatalım.
+
+507
+00:38:53,449 --> 00:38:57,079
+Böyle dursun ya da.
+
+508
+00:38:57,079 --> 00:38:59,840
+Ya da.
+
+509
+00:39:02,840 --> 00:39:03,840
+Var mı.
+
+510
+00:39:04,840 --> 00:39:05,840
+Şöyle yapsak.
+
+511
+00:39:10,260 --> 00:39:12,539
+Şöyle.
+
+512
+00:39:14,539 --> 00:39:15,539
+Ufaltayım mı biraz.
+
+513
+00:39:16,539 --> 00:39:19,269
+Böyle oldu.
+
+514
+00:39:22,349 --> 00:39:24,349
+Yahu share edince her şey açılıp kapanıyor.
+
+515
+00:39:28,519 --> 00:39:31,519
+Kodu dosya olarak da paylaşırım tamam.
+
+516
+00:39:32,519 --> 00:39:33,519
+Yani zaten burada yazdık.
+
+517
+00:39:35,519 --> 00:39:37,519
+Sonra şöyle kaydırayım.
+
+518
+00:39:37,519 --> 00:39:41,519
+Şimdi siz bu zaten direkt şey naif sörçün aynısı.
+
+519
+00:39:42,519 --> 00:39:43,519
+O yüzden burada durmaya gerek bile yok.
+
+520
+00:39:44,519 --> 00:39:48,519
+Naif sörçü şöyle şey yapalım ortalayalım.
+
+521
+00:39:49,519 --> 00:39:51,519
+Bildiğimiz naif sörç.
+
+522
+00:39:52,519 --> 00:40:00,519
+Dediğim gibi burada eğer örtüşmeyen istiyorsanız şurada döngü forla dilvayla da yapabilirsiniz.
+
+523
+00:40:01,519 --> 00:40:05,519
+Bunu emin sonuna kadar hani j'ye kadar sona atmanız gerekir.
+
+524
+00:40:06,519 --> 00:40:10,519
+O da doğal olarak bir daha az sayıda tekrar bulmanız anlamına gelir.
+
+525
+00:40:11,519 --> 00:40:15,519
+Örtüşenler de doğal olarak biraz daha fazla çıkacaktır şeyler.
+
+526
+00:40:17,519 --> 00:40:19,519
+Toplam tekrar sayıları.
+
+527
+00:40:20,519 --> 00:40:21,519
+Robin carp'ı.
+
+528
+00:40:22,519 --> 00:40:24,519
+Şöyle koyalım.
+
+529
+00:40:26,519 --> 00:40:27,519
+Tam sığmadı ama.
+
+530
+00:40:27,519 --> 00:40:32,820
+Paus edecek kadar herhalde video da kalmıştır.
+
+531
+00:40:34,820 --> 00:40:35,820
+Şöyle.
+
+532
+00:40:36,820 --> 00:40:38,820
+Son tarafını da alalım.
+
+533
+00:40:39,820 --> 00:40:40,820
+Evet.
+
+534
+00:40:44,900 --> 00:40:45,900
+Robin carp da bu.
+
+535
+00:40:46,900 --> 00:40:48,900
+Substring ve process.
+
+536
+00:40:49,900 --> 00:40:54,900
+Dediğim gibi bu teker teker işleyeyim diye böyle bir process aklıma gelmiş de öyle şey yaptık ama.
+
+537
+00:40:55,900 --> 00:40:56,900
+Olmak zorunda değil.
+
+538
+00:40:57,900 --> 00:40:58,900
+Bunu çok daha güzel yazabilirsiniz.
+
+539
+00:40:58,900 --> 00:41:01,900
+Dediğim gibi bir set mantığıyla bir dizide tutabilirsiniz.
+
+540
+00:41:02,900 --> 00:41:05,900
+Aslında benim o yukarıdaki link listeyi mesela burada kurgulayabilirsiniz.
+
+541
+00:41:06,900 --> 00:41:08,900
+Boşu boşuna tekrar sayısı kadar aramazsınız.
+
+542
+00:41:09,900 --> 00:41:12,900
+O da ciddi bir hız sağlayacaktır size.
+
+543
+00:41:13,900 --> 00:41:15,900
+Son olarak da main de bu.
+
+544
+00:41:20,159 --> 00:41:21,159
+Bu kadar.
+
+545
+00:41:29,550 --> 00:41:32,409
+Var mı sorusu olan?
+
+546
+00:41:33,409 --> 00:41:35,409
+Başka? Zaten hani on the fly soruyorsunuz.
+
+547
+00:41:36,409 --> 00:41:37,409
+Yok.
+
+548
+00:41:38,409 --> 00:41:39,409
+Peki.
+
+549
+00:41:39,409 --> 00:41:46,820
+Bu şekilde yani çok şey yapmayın kendinizi ödevlerde bir aşırı kasmayın.
+
+550
+00:41:47,820 --> 00:41:49,820
+Hızlı bir şekilde sonuca ulaşın.
+
+551
+00:41:50,820 --> 00:41:52,820
+Gördüğünüz gibi ben de aslında temiz bir kod yazmamışım o kadar.
+
+552
+00:41:53,820 --> 00:41:55,820
+Dediğim gibi biraz sadece sonrasında aklıma geldi.
+
+553
+00:41:56,820 --> 00:41:57,820
+Link liste ekledim.
+
+554
+00:41:58,820 --> 00:41:59,820
+Bu şekilde.
+
+555
+00:42:03,150 --> 00:42:05,150
+Peki o zaman yarın şey yaparız.
+
+556
+00:42:06,150 --> 00:42:11,150
+Teorik saatlerimizde divide and concur'e devam edeceğiz.
+
+557
+00:42:12,150 --> 00:42:13,150
+Özellikle quick sort'a da bakacağız.
+
+558
+00:42:14,150 --> 00:42:18,150
+Bir iki örnek yaparız yine quick sort'u anlamak açısından.
+
+559
+00:42:19,150 --> 00:42:21,150
+Özellikle partitioning mantığını iyice oturtmamız gerekiyor.
+
+560
+00:42:22,150 --> 00:42:26,150
+Partitioning dediğimde divide mantığını iyice anlamamız gerekiyor.
+
+561
+00:42:27,150 --> 00:42:30,150
+Merge sort'la temel farkından yola çıkarak gideceğiz.
+
+562
+00:42:31,150 --> 00:42:33,150
+Bir örnek daha yapacağım.
+
+563
+00:42:33,150 --> 00:42:37,150
+Divide and concur ile alakalı çok tatlı bir problem.
+
+564
+00:42:38,150 --> 00:42:40,150
+Müthiş bence çok güzel bir çözüm getiriyor.
+
+565
+00:42:41,150 --> 00:42:43,150
+Zaten onunla başlarız derse.
+
+566
+00:42:44,150 --> 00:42:47,150
+Bu şekilde bu haftayı da tamamlamış olacağız.
+
+567
+00:42:48,150 --> 00:42:50,150
+O zaman kendinize iyi bakın.
+
+568
+00:42:51,150 --> 00:42:52,150
+Bugünlük bu kadar yeter.
+
+569
+00:42:53,150 --> 00:42:57,150
+Haftaya hemen haftaya diyorum yarına yarın akşama görüşmek üzere.
+
+570
+00:42:58,150 --> 00:42:59,150
+Hoşçakalın.
