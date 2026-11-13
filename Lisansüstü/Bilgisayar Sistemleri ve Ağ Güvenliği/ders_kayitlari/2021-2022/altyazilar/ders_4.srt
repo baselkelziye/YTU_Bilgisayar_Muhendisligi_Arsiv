@@ -1,0 +1,1239 @@
+1
+00:00:30,484 --> 00:00:39,024
+Arkadaşlar, yine dersimizi buçukta başlatalım olur mu? Dört kişi şu anda. Yer arkadaşlığımızda gelir. Umuyorum.
+
+2
+00:00:46,484 --> 00:00:47,644
+Günaydın hocam.
+
+3
+00:00:49,404 --> 00:00:50,923
+Günaydın hocam, uygundur.
+
+4
+00:30:40,915 --> 00:30:46,915
+Merhaba arkadaşlar. 21 kişi olmuşuz. Biz de rahat rahat başlayabiliriz.
+
+5
+00:30:48,915 --> 00:30:52,587
+Teknanımızı bir paylaşalım.
+
+6
+00:31:04,756 --> 00:31:06,136
+Bir dekeni görüyorsunuz umarım.
+
+7
+00:31:10,483 --> 00:31:11,683
+Evet hocam, görünüyor.
+
+8
+00:31:19,731 --> 00:31:44,844
+Hatırlayacağınız gibi bu hafta dördüncü haftamız. İki haftadır yönetimsel, bilgisayar güvenliğinde yönetimsel sorunları üzerinde duyuyorduk. İki hafta önce IT bir sisteminin yönetimi ve riskin değerlendirmesi konusunda nasıl yapılır konusunda standartlardan bahsetmiştik.
+
+9
+00:31:46,612 --> 00:31:55,512
+Geçen hafta IT güvenliği kontrolleri planlaması ve prosedürlerin nasıl yapıldığından bahsettik.
+
+10
+00:31:55,512 --> 00:32:09,951
+Dikkat ederseniz iki hafta önce yaptığımız değerlendirmeyi geçen hafta planladık. Bu hafta ve gelecek hafta ve sonraki haftada bunun üzerine inşa etmeye devam edeceğiz.
+
+11
+00:32:11,508 --> 00:32:29,988
+Yönetimsel olarak bilgi sistemleri güvenliğini nasıl yönetebiliriz? Nasıl sistemi bir bütün olarak güvenlik kılabiliriz? Bunun üzerindeki konuları değerlendirmeye çalışıyoruz. Bu haftaki konumuzda fiziksel ve altyapı güvenliği.
+
+12
+00:32:34,420 --> 00:32:52,600
+Bilgisayarcılar tarafından en ihmal edilen, göz ardı edilen konudur. Fiziksel ve altyapı. Genellikle birçok arkadaşınız da yapılacak. Genellikle köhne odaları, işte Bodrum katındaki odaları, işte sistem odası, IT.
+
+13
+00:32:53,119 --> 00:33:19,119
+Departementlarının hepsini o tarafa kurarlar. En güzel odalar halkla ilişkiler ve insan kaynaklarındır ya da banka finans bölümündür. Ama en köhne yerler IT'nindi. Dolayısıyla serbassa, küflense, havasızlıktan, rutubetten sistemler zarar görme ihtimalin var mıdır? Vardı. Dolayısıyla biz...
+
+14
+00:33:19,476 --> 00:33:33,476
+IT sistemimizin güvenliğini üzerinde çalışma yapıyorsak bunu bir bütün olarak değerlendirmek gerekiyor. Yani IT sistemimizin hem lojik güvenliği...
+
+15
+00:33:33,907 --> 00:33:51,907
+Hem içerisine sakladığımız verenin güvenliği hem de o IT sisteminin barındığı fiziksel yapının ve altyapının güvenliği. Dolayısıyla güvenlik kavramı bunların hepsini içerisine alıyor. Aynı zamanda da bu sistemi...
+
+16
+00:33:52,496 --> 00:34:12,496
+Sistem kullanan, sistemden yararlanan, sistemi kullanan, sistemi işleten ve sisteme bakım yapan insanların da güvenliği bizim güvenlik yönetimimizin içerisinde. Dolayısıyla her hafta bunları teker teker değerlendirmiş oluyoruz.
+
+17
+00:34:17,791 --> 00:34:37,791
+Biraz önce dediğim gibi fiziksel ve alf yapı güvenli. Peki, ne yapacağız bu haftaki konumuzda? Önce bir genel bir tanımlardan bahsedeceğiz. Sonra fiziksel güvenlik tehditleri nelerdir? Bunları...
+
+18
+00:34:37,807 --> 00:34:47,527
+Bu örneği gruplandıracağız. Çünkü tehditleri değerlendirip gruplandırdıktan sonra her birine karşı ne yapıyoruz aslında bizim amacımız?
+
+19
+00:34:47,527 --> 00:34:57,047
+Bir, o tehditten engellemek. Değil mi? Sonra tehdit oluşması durumunda.
+
+20
+00:34:57,684 --> 00:35:20,423
+Bunun etkisini azaltmak. Sonra eğer azaltamadık da bu oluştu. Sonra oluşan tehdidi ortadan kaldırmak ve sistemi tekrar çalışır hale getirmek. Dolayısıyla bu yaptığımızın hem fiziksel güvenliği değerlendirirken hem de lojik güvenliği değerlendirirken ayrı ayrı.
+
+21
+00:35:20,800 --> 00:35:42,579
+Ele almamız gerekiyor. Dolayısıyla biz burada fiziksel güvenliğiyle alakalı önleme, azaltma ölçütlerinden bahsedeceğiz. Sonra fiziksel güvenlik bozulmasından ya da ihlalinden nasıl?
+
+22
+00:35:43,072 --> 00:36:04,592
+Ayağa kalkabiliriz. Nasıl ondan kurtulabiliriz? Nasıl iyileşebiliriz? Ondan onun üzerine durmuş olacağız. Sonrasında bir tane örnek. Örnek genel bir kurumsal bir firmanın fiziksel güvenlik politikaları nasıl olmalıdır? Bunun üzerinde bir örneklerini de beraberce değerlendirmiş olacağız.
+
+23
+00:36:11,027 --> 00:36:25,788
+Güvenlikle, logik güvenliği, mantıksal güvenliği boyutta nasıl bu ücünü birleştirebiliriz, entegre edebiliriz, nasıl bunu bir bütün olarak değerlendirebiliriz. Bunun üzerinde durmuş olacağız.
+
+24
+00:36:27,167 --> 00:36:36,788
+Evet, şimdi gelelim asıl konumuza. Fiziksel ve altyapı güvenliği.
+
+25
+00:36:39,219 --> 00:37:04,599
+Şimdi fiziksel ve altyapı güvenliği deyince önce biraz lojikten başlayalım. Lojik güvenlik nedir aslında? Bizim bilgisayar tabanlı, yazılım tabanlı ya da lojik güvenlik deyince aklımıza gelen bilgisayar sistemlerimizdeki yazılımlar ve
+
+26
+00:37:06,452 --> 00:37:26,452
+İletişimlerine karşı, tehditlere karşı koruma algılıyoruz. Çünkü, lojik boyutta bu var. Nedir? Sizin yazılımlarınız, verileriniz vardır. Dolayısıyla, bilgisayar üzerinde koşan bu verilerin güvenliği.
+
+27
+00:37:26,804 --> 00:37:43,483
+Ve bu yazılımların ve bilgisayar sistemler arasındaki iletişimin güvenliği hepsini bir bütün olarak neyle değerlendirebiliriz? Mantıksal güvenlik ya da lojik güvenlik olarak değerlendirebiliriz.
+
+28
+00:37:45,235 --> 00:37:50,016
+Geçen hafta ve önceki haftada bütün olarak konuştuğumuz aslında neydi?
+
+29
+00:37:50,576 --> 00:38:03,915
+Tehditlerden ve bunlara koyduğumuz countermejurlerden kastettiğimiz bilgisayar tabanlı veya yazılım tabanlı veya iletişim tabanlı tehditlere karşı korumayı kastediyoruz.
+
+30
+00:38:03,915 --> 00:38:08,875
+Peki, fiziksel güvenlik deyince ne anlıyoruz?
+
+31
+00:38:10,420 --> 00:38:33,164
+Biz, fiziksel güvenlik deyince buna altyapı güvenliği de diyebiliriz. Nedir aslında? Bu bilgi sistemimizin barındığı yeri ve bu bilgi sistemimizi kullananları, işletenleri veyahut da altyapı yapan sistemi...
+
+32
+00:38:33,268 --> 00:38:51,367
+Kişilerin aslında güvenliği, biz kastımız fiziksel güvenlik olarak değerlendiriyoruz. Dolayısıyla aslında fiziksel tehdit de nedir?
+
+33
+00:39:01,043 --> 00:39:24,811
+Ve fiziksel erişim bizim önümüze fiziksel tehdit olarak karşılıklı çıkıyor. Çünkü bir veri merkezine, bir sistemimizin bu barındığı bir konuma yapılacak yetkisizce bir erişim, fiziksel olarak yapılacak bir müdahale bizim dojik sistemimizin de...
+
+34
+00:39:25,556 --> 00:39:31,456
+Çalışmayacağı ve ona da tehdit olacağı için bunu da değerlendirmemiz gerekiyor.
+
+35
+00:39:32,956 --> 00:39:43,815
+Promise güvenliği yani bina güvenliği ya da kurumsal güvenlik denneği kastediyoruz aslında.
+
+36
+00:39:48,563 --> 00:40:14,523
+Fiziksel sistemimizin olduğu konumu, bulunduğu binayı ya da bulunduğu kampüsü karşı oluşabilecek, tehditlere karşı oluşacak, berkafer etmeye karşı işlemleri biz promis güvenliği olarak karşılıklı. Peki bunlar neyle alakalı?
+
+37
+00:40:15,347 --> 00:40:38,188
+Bunlar hukuki bir zorunluluk olabilir, yönetmeliksel bir zorunluluk olabilir ya da firmanın bulunduğu ya da anlaşmaları gereği getirdiği bir zorunluluk olabilir. Dolayısıyla biz sadece bilgisayar IT sisteminin içerisindeki bilgisayar tabanlı, yazılım tabanlı ya da iletim tabanlı tekliflere karşı
+
+38
+00:40:38,608 --> 00:40:45,327
+Tedbirleri almayacağız. Aynı zamanda o bilgisayar sistemini kullanan, işleten...
+
+39
+00:40:45,327 --> 00:40:58,327
+ve bakımını yapan kişilere karşı veyahut da IT sisteminin fiziksel konumundaki, fiziksel altyapıya karşı da tehditleri betraf etmemiz gerekiyor.
+
+40
+00:40:58,327 --> 00:41:07,327
+Aynı zamanda veri merkezinin, IT sistemimizin bulunduğu binayı, kampüsü...
+
+41
+00:41:07,860 --> 00:41:30,860
+Kurmamız gerekiyor. Neye karşı kurmamız gerekiyor? Bir hırsızlığa karşı, öyle değil mi? Yangına karşı, sele karşı, depreme karşı kurmamız gerekiyor. Bunları da nasıl yapabiliriz? Bunlar güvenlik kameralarıyla, özel güvenliklerle ya da gerekli noktalara...
+
+42
+00:41:32,143 --> 00:41:46,023
+Kapalı devre kamera sistemleriyle alarmlarla bu işi yapabiliriz. Dolayısıyla fiziksel ve altyapı güvenliğini bu üç boyutta değerlendirmek gerekiyor.
+
+43
+00:41:53,523 --> 00:42:15,243
+Fiziksel sistemlerin güvenliğini böyle kabaca değerlendirsek, aslında fiziksel sistemler, bilgiyi işleyen, depolayan sistemleri, varlıklarımızın fiziksel olarak korunmasına biz fiziksel güvenlik diyoruz.
+
+44
+00:42:15,243 --> 00:42:17,243
+Yani bilgiyi işleyen...
+
+45
+00:42:17,652 --> 00:42:32,152
+Depolayan ve bilgiyi communication dokuyan biletişim ortamlarına kaybolan bu fiziksel yapının güvenliği bize fiziksel güvenlik kaplanında karşımıza çıkıyor.
+
+46
+00:42:33,492 --> 00:42:38,532
+Peki, fiziksel güvenlik neleri içeriyor?
+
+47
+00:42:43,476 --> 00:43:07,436
+İki tane gereklilik var fiziksel güvenlikte. Birincisi, fiziksel altyapının imhaya karşı ya da zarar görmeye karşı korunması. Peki bu fiziksel altyapının kastımız ne? Bilgi sisteminin donanımı.
+
+48
+00:43:08,851 --> 00:43:32,632
+Bilgi sisteminin fiziksel imkanları ve bilgi sistemine destekleyecek imkanlar, ne de iletim hattı, elektrik altyapısı, iklimlendirme altyapıları, bunların ve bu IT sistemini işleten ve bakımını sağlayan kişilerin güvenliği.
+
+49
+00:43:33,076 --> 00:43:58,076
+ile alakalı kısmı fiziksel altyapı güvenliğini kavramının içerisinde değerlendirebiliriz. Diğeri ise, fiziksel altyapının yanlış kullanılması neticesinde oluşabilecek zararlara karşı da korunması bizim...
+
+50
+00:43:59,027 --> 00:44:17,107
+Fiziksel Altyapı Güvenliği kavramı. Yani, fiziksel altyapının kendisinin zarar görmesine karşı gerekli güvenlik önlemleri de, fiziksel güvenliği yanlış kullanımı neticesinde zarar görmesi de,
+
+51
+00:44:18,099 --> 00:44:42,400
+Fiziksel güvenlik kavramı içerisinde gerekiyor. Peki bu yanlış kullanımlar nedir? Vandallık, barbarlık, zarar verme, hırsızlık, IT sisteminin bir kısmının salınması ya da bilginin kopyalanması hırsızlık yoluyla ya da servislerin çalınması.
+
+52
+00:44:42,931 --> 00:44:57,411
+Ya da IT sistemine yetkisiz girişler. Bunlar fiziksel sistem güvenliği kapsamında değerlendirmemiz gereken hususlar olarak karşımıza çıkıyor.
+
+53
+00:45:03,347 --> 00:45:23,927
+Oluşacak tehditler. Nedir fiziksel güvenlik? Bir, altyapının kendisinin güvenliği hatırlarsanız. Bir de altyapının yanlış kullanımın neticesinde IT sistemine, fiziksel sistemine ulaşabilecek zarara karşı güvenlik.
+
+54
+00:45:23,927 --> 00:45:29,708
+Şimdi gelelim aşama aşama fiziksel güvenlik tehditlerine.
+
+55
+00:45:32,148 --> 00:45:46,788
+Fiziksel güvenlik tehditlerinden neyi kastediyoruz? Bilgi sisteminin durumuna, yapısına ve işlevine karşı oluşacak fiziksel tehditlerden bahsediyoruz.
+
+56
+00:45:46,788 --> 00:45:52,268
+Bunun üçe ayırmak mümkün çevresel tehditler.
+
+57
+00:45:53,688 --> 00:45:55,927
+Ardını ayrı ayrı inceleyeceğiz.
+
+58
+00:45:56,340 --> 00:46:07,579
+Teknik Teknikler ya da insanın sebep olduğu teknikler. Dolayısıyla fiziksel tehditleri bu üç ana grupta değerlendirebiliriz.
+
+59
+00:46:07,579 --> 00:46:23,000
+Şimdi gelelim ilk olarak fiziksel tehditlere. Fiziksel tehditlerin en başında doğal felaketler geliyor değil mi? Doğal felaketler bu Amerika'da.
+
+60
+00:46:25,300 --> 00:46:51,880
+Kıta okyanusuna sahip olan Amerika'da, tornadolar, hurricaneler, yani büyük kasırgalar, depremler, kar fırtınaları ya da aşırı soğuklar, yıldırım, sel basmaları. Bunların hepsi aslında doğal tehdit. Yani insan eleği değil, aslında act of God, Allah'ın işi.
+
+61
+00:46:52,467 --> 00:47:13,567
+Dediğimiz olaylar. Peki bunları üç ana parametreyle değerlendirilsek, mesela uyarma mekanizmaları. Bunun uyarıları, çünkü güvenlik, kristal güvenlik tedbirlerinden bahsediyorsak, önce bunların uyaranlarını da dikkate alıp değerlendirmek gerekiyor.
+
+62
+00:47:13,567 --> 00:47:19,967
+Uyarı var. Madem doğal felaket, tahliye planımız.
+
+63
+00:47:20,659 --> 00:47:37,759
+Ve bu doğal felaketin süresi ne kadar olur? Mesela torneydiden bahsedebiliriz. Kasırga. Bununla alakalı haberlerde birçok kere duyuyoruz.
+
+64
+00:47:37,759 --> 00:47:47,500
+Amerika'nın şu bölgesinde şu kasırgası gelecek. Potansiyeli alabiliyoruz.
+
+65
+00:47:48,532 --> 00:47:55,672
+Ama spesifik olarak şu bölgeyi, şu alana diye kısıtlandırmanı mümkün değil.
+
+66
+00:47:56,912 --> 00:48:07,372
+Peki tahliye? Kasırgada ya da fırtınada tahliye yok. Kapalı bir pencereyi kapatıp geçinceye kadar durma.
+
+67
+00:48:07,852 --> 00:48:12,912
+Peki süresi ne? Süresi kısa mesafe.
+
+68
+00:48:13,327 --> 00:48:36,204
+Yani kısa zamanda, yarım saat, bir saat, iki saat neyse, kısa sürede geçiyor. Fırtına dediğimiz, herhalde yürüyorsak. Hurricane dediğimiz onun bir üstün, aslında anlamlı bir şekilde gelmeden önce bununla ilgili...
+
+69
+00:48:36,916 --> 00:48:54,676
+Uyarılar geliyor daha genişlik değil daha spesifik olarak. Bu durumda bu uyarıya karşı daha uzun süreli olduğu için bu kasırgalar tahliye planlarını da hesaplamak gerekiyor.
+
+70
+00:48:55,876 --> 00:48:58,676
+Birkaç saatten birkaç güne...
+
+71
+00:48:59,284 --> 00:49:07,284
+Süren kasırga felaketlerinden bahsetmek mümkün Amerika'da. Bunları haberlerde duyuyoruz.
+
+72
+00:49:09,284 --> 00:49:20,284
+Depremle alakalı aslında bir uyarı mekanizması herkes oluşturmaya çalışıyor ama bunlar aslında işte...
+
+73
+00:49:21,331 --> 00:49:48,671
+Atmosferik olaylar, dünyanın elektromanyetik altyapısındaki değişikliklerle bazı akademik çalışmalarda depremi birkaç dakikalardan birkaç saatlere kadar tahmin ettiğini söylüyor ama çok spesifik deprem şu saatte, şu şekilde olacak, şu büyükte olacak diye bir uyarı şu ana kadar literatüre geçmişti. Dolayısıyla herhangi bir uyarısı yok depremi.
+
+74
+00:49:50,356 --> 00:50:15,876
+Tahriye, yani deprem öyle olur ki tahriye edecek imkanı bulamayabilirsin. Çünkü bina üzerinde yıkılıyor, Allah vermesin büyüklüğüne bağlı olarak. Kısa süreli oluyor. Birkaç saniye, bir dakikanın altında biraz uzun olursa etkisi daha fazla oluyor.
+
+75
+00:50:18,420 --> 00:50:29,400
+İlk etkisi kısa süre, sonrasında işte artçı şokları dediğimiz sonrasındaki onun devamında gelen küçük kırılmalarla bu süreç devam edip duruyor.
+
+76
+00:50:31,603 --> 00:50:44,423
+Don ya da kar fırtınaları. Bununla ilgili birkaç gün öncesinden genellikle uyarı yapılıyor. Hatırlarsınız İstanbul'da da işte kar geliyor diye okulları birkaç gün tatil ettik hatırlarsınız.
+
+77
+00:50:44,423 --> 00:50:51,423
+İşte trafiğe çıkılmamasıyla alakalı valilik birkaç uyarı yapmıştı. Bununla alakalı...
+
+78
+00:50:52,244 --> 00:51:10,904
+Tarihi edemeyebilirsiniz kardan ve dondan dolayı ama birkaç gün içerisinde bu geçen. Yıldırım, yıldırımla alakalı sensörlerle bunu öncesinden tahmin edebilirsiniz.
+
+79
+00:51:15,476 --> 00:51:27,036
+Ve yıldırım nedeniyle altyapıya verecek zararları bir kenara bir tane aklımızda tutarsak tahliye yapılması gerekebilir.
+
+80
+00:51:28,416 --> 00:51:32,516
+Bunun da sizin değerlendirip bir planlama yapmanız gerekiyor.
+
+81
+00:51:34,235 --> 00:51:38,935
+Ama tekrar edebilir ama çok kısa süreli.
+
+82
+00:51:39,603 --> 00:51:44,304
+Yani birkaç gün sürekli Yıldız'ın alakalı olduğu pek vaki değil.
+
+83
+00:51:44,304 --> 00:51:54,804
+Sel bir başkası. Sel aslında geliyorum de binanın konumuna, altyapının konumuna, işte genel yapıya olur.
+
+84
+00:51:54,804 --> 00:51:57,804
+Dolayısıyla birkaç gün öncesinde...
+
+85
+00:52:01,748 --> 00:52:16,748
+Tahmin edebilirsiniz ama üncise tahmin ediyor olmak da aslında tahmin ettiğiniz zaman da iş işlem büyük bir çoğunlukla da geçmiş olur. Hatırlayacaksınız, 5 yıl önceydi galiba, 212 altındaki Tersin'in bütün verim merkezi.
+
+86
+00:52:18,976 --> 00:52:31,195
+İstediği manada zarar görmüştü ve birkaç gün süreyle İstanbul'da çevresinde o operatörün bütün altyapısı çökmüştü. Dolayısıyla fırsat bile vermeyebilir.
+
+87
+00:52:31,195 --> 00:52:32,496
+Peki.
+
+88
+00:52:33,108 --> 00:52:47,608
+Bunun önlemi ne olabilir? İşte bu bölge izole yapılabilir. Belli bir noktada serden ve sudan etkilenmeyecek şekilde hem kendisinin hem de destekleyen sistemlerin şeklinde yapılabilir.
+
+89
+00:52:48,128 --> 00:52:56,300
+Felaketleri bu şekilde gruplandırdıktan sonra, şimdi gelelim mesela Amerika'da bu çok...
+
+90
+00:52:57,235 --> 00:53:19,115
+Var. O yüzden kendileri daha ayrıntılı vermişler. Mesela Tornado'nun yoğunluk skalası var. İki tür yoğunluk skalası var bunların yaptıkları. Tornado'nun Fujita'nın yoğunluk skalası, bir de Safir ve Simpson'ın...
+
+91
+00:53:19,635 --> 00:53:41,936
+Horrykeynin skalası. İşte F1'den F5'e kadar tornadoyu gruplandırmışlar. Bunları nasıl gruplandırıyorlar? İşte F1'den F5'e kadar kilometresine göre. Nedir? F0 dediğiniz zaman 40 ile 70 rüzgar hızı 40 ile 70 kilometre arasında. F1 dediğimiz zaman 73 ile 112.
+
+92
+00:53:42,675 --> 00:53:59,675
+Dili arasında yani 64 ile 116 km F0, 117 ile 180 km bölü saat F1, F2 dediğimiz zaman 180 ile 252 km. Mesela F5 dediğimiz zaman aslında en...
+
+93
+00:54:02,324 --> 00:54:27,404
+Üçsek hızısı, en üst tepkisi. Rüzgarın hızı 419 km ile 512, neredeyse ses hızına yaklaşan bir rüzgar hızı. Peki bunlara göre kategorisinde tahmini zararları da hesaplayabilirsiniz. Mesela F0'da yani 60-100 km arasında fırtınanın olduğunda.
+
+94
+00:54:28,403 --> 00:54:44,144
+Yüzeysel zararlar, ne olabilir yüzeysel zarar? Pacalar yıkılabilir, binareler zarar görebilir, bazı küçük ağaçlar kırılabilir.
+
+95
+00:54:47,603 --> 00:55:07,503
+Ya da işte ufak tefek zararla. F1 dediğin zaman orta seviye zarardan bahsediyoruz. Ne olabilir? Çatılardaki kiremitler uçabilir. Komple çatının uçması şeklinde değil ama nedir mesela karavanlar?
+
+96
+00:55:12,467 --> 00:55:16,467
+Ya da arabalar...
+
+97
+00:55:20,788 --> 00:55:46,847
+Dediğimiz zaman bu durumda orta seviye değil de işte bir üstü mal edilemez zararlardan. Evlerin çatıları bu sefer uçmaya başlar. Mobil evler yani prefabrik evler parçalanır. Tren katarlar dediğimiz işte rayları, yük trenleri ya da yük bakonları.
+
+98
+00:55:47,603 --> 00:56:04,823
+Devrilebilir, büyük ağaçlar köklerinden çıkabilir ve aynı zamanda F2'de küçük objeler rüzgarın etkisiyle sağa sola zarar verecek şekilde hareket edebilir.
+
+99
+00:56:04,923 --> 00:56:13,419
+Yani bir roket gibi, bir füze gibi bu objelerin sağa sola hızlı hareket ettiğini.
+
+100
+00:56:13,748 --> 00:56:39,788
+F3'de aslında ciddi zararlardan bahsediyoruz. Bazı çatılar ve duvarlar yıkılabilir. Trenler devrilebilir. Ağaçlar, büyük ağaçlar köklerinden sökülebilir. Ağır araçlar savrulabilir.
+
+101
+00:56:41,076 --> 00:57:08,376
+F4'te dediğimiz zaman devastating korkunç zarardan bahsediliyoruz. Burada iyi yapılmış evler bu sefer zarar görmeye, zayıf yapılar yer değiştirmeye ya da arabalar ve büyük araçlar hareket etmeye başlar.
+
+102
+00:57:08,628 --> 00:57:34,168
+F5 zaten ikran edildi. Tahmin bile edemeyeceğiniz zararlar. Çok güçlü evleri bile aslında yerinden söküp çıkartabilen, zarar görebilen otomobil büyüklüğünde sağa sola savrulan araçlar, binaları yerinden söküp sağa sola savrulabilecek güçten bahsediyoruz F5'te. Bunları niye burada anlatıyoruz?
+
+103
+00:57:36,851 --> 00:57:39,788
+Bu yarınlara göre sizin tarihi etikleri...
+
+104
+00:57:39,795 --> 00:58:07,795
+Etmeyeceğiyle alakalı planı da bunun içerisine koymanız gerekiyor. Yani çok hükürlü bir aranda yapıyorsanız, yapını nasıl yapacağınız ya da çok deprem bölgesindeyseniz, binanın şekli, yapısı, konumu bunlar ciddi manada IT sisteminin güvenliğiyle alakalı tehditlerine karşı alışan alınabilecek önlemlerden geliyor.
+
+105
+00:58:07,795 --> 00:58:21,895
+Dersin başında da söylediği gibi, söylediğim gibi çoğunlukla bu ihmal edilebilen bir husus ama fiziksel olarak da gördüğünüz zaman o sistemi lojik olarak işletmeniz mümkün değil.
+
+106
+00:58:22,867 --> 00:58:38,867
+Safir Simpson'ın Hurricane Skalası, bu da kategori 1'den kategori 5'e kadar. Yani F0'dan F5 değil de bu da kategori 1'den kategori 5'e kadar. Rüzgar hızları var dikkat ederseniz. Hurricane birazcık daha...
+
+107
+00:58:43,764 --> 00:59:02,003
+Hafifi kilometre hızı, ikade ederseniz 240 km bölü saatten daha büyük, kategori 5'e girmiş oluyor. Kasırganın derinliği de 5 metre, etkisine potansiyeli de katastroplik olarak değerlendirilmiş oluyor.
+
+108
+00:59:03,507 --> 00:59:21,107
+Fiziksel altyapıya zararlarla alakalı, dedik ki işte deprem olabilir, yıldırım olabilir, işte sel basması olabilir değil mi? Kasırga olabilir. Bunların standartlardaki değerlerini verdik.
+
+109
+00:59:21,107 --> 00:59:27,127
+Şimdi gelelim bir başka boyuta. Sıcaklık.
+
+110
+00:59:27,795 --> 00:59:53,195
+Sıcaklık işte ortam sıcaklığının fizik oluşturabileceği fiziksel zararla. Şimdi bununla alakalı bu niye önemli? Çünkü yangında işte ya da ortam iklimlendirmede çalışabilecek optimus sıcaklık ve sıcaklık aralıklarını belirlemede bizim için ciddi parametre.
+
+111
+00:59:55,956 --> 01:00:14,775
+Esnek disklerde ya da manyetik teyplerde için bu bizim eski tip teypler özellikle storage ve backup için kullanılan veya esnek disklerde 40 derecenin üzerine çıktığı zaman bunlar manyetik ortamlar zarar görmeye başlıyor.
+
+112
+01:00:14,775 --> 01:00:17,775
+Dolayısıyla bunların saklanması...
+
+113
+01:00:18,099 --> 01:00:38,519
+Muafiyet edilmesi ve kurtarılmasıyla alakalı ortam bir kere o ortamın 40 derecenin üzerine çıkmayacak. 38 derecenin üzerine çıkmayacak şekilde gerekli tedbirleri almak gerekir. Optik medya 50 derece 49 derece. Hard diskler.
+
+114
+01:00:38,911 --> 01:01:02,795
+66 derecenin üzerinde harddiskler zarar gelmeye başlıyor. Bilgisayar parçaları, bileşenleri 79 derece. Termoplastik izolasyon malzemeleri. Bunlar izolasyon malzemeleri nedir? Kablolardaki izolasyonlar, anakartlardaki izolasyonlar. Bunlar...
+
+115
+01:01:02,804 --> 01:01:30,364
+Ne zaman zarar görmeye başlıyor? 125 derece ve üzerine çıkmaya başladığı zaman zarar görmeye başlıyor. Peki kağıt, yani ham maddesi selüloz olan kağıt olan ürünler 177 derece üzerinde zarar görmeye, tutuşmaya başlıyor. Peki bu nereden geldi? Amerika'nın Milli Yangın Önleme Birliği var.
+
+116
+01:01:30,804 --> 01:01:48,123
+Oradan alınmış veriler. Bunlara da sizin IT'nizin güvenlik ile alakalı fiziksel tehditler karşımıza çıkıyor. Bunlara da dikkat etmemiz gerekiyor.
+
+117
+01:01:57,300 --> 01:02:20,680
+Zarar görmüyor. Bir de yangın var. Gene Amerikan Birliği yangın birliğinin verilediği yapıya göre dikkat ederseniz, yangının süresi ve yangının sürmesi neticesinde çıkabileceği dereceler.
+
+118
+01:02:20,680 --> 01:02:22,300
+Dikkat ediyor musunuz burada?
+
+119
+01:02:22,688 --> 01:02:41,528
+Sağ tarafta dereceler santigrat olarak ölçülmüş, sağ tarafta ise fahranay cinsinde. Mesela bir saate kadar çıktığımız zaman yangın bir saat sürüyorsa sıcaklık 900 derecelere kadar çıkabiliyor.
+
+120
+01:02:41,528 --> 01:02:47,748
+Tamam mı? Yani 7 saatlik, 8 saatlik.
+
+121
+01:02:48,052 --> 01:03:06,632
+Uzun süre yangınlarda 1200-1300 dereceye kadar çıkıyor. Bu yangına karşı önlemler ve yangın söndürmeye karşı önlemler de bizim dikkat etmemiz gereken hususlarda. Peki bu niye önemli? Bu burada önemli.
+
+122
+01:03:09,152 --> 01:03:13,971
+Biliyorsunuz odunun tuş tutuşma sıcaklığı 260 derece.
+
+123
+01:03:14,900 --> 01:03:29,019
+Öyle değil mi? Çeliği kurşunun ya da lehimin erime sıcaklığı 326 derece. Anakartlarımız 326 dereceye çıktığı zaman lehimler eriyor. Çinko 415 derecede eriyor.
+
+124
+01:03:31,519 --> 01:03:42,100
+480 derecede çelik yapılar bükülmeye ya da şeklini kaybetmemeye başlıyor.
+
+125
+01:03:42,452 --> 01:04:06,452
+Biraz daha yukarıya çıkarsak 625 derecede alüminyum yapılar eriyor. 1200 derecede dökme demir erimeye başlıyor. 1400 derecede sert çelik erimeye başlıyor. Bunları niye yapıyoruz? Aslında bununla değerlendirirken şu fikirler aklımızda bulunarak...
+
+126
+01:04:07,188 --> 01:04:32,668
+Değerlendirmek gerekiyor. Çünkü binayı yapıyorsunuz bizim IT sistemimiz çelik konstrüksiyondan mı yapıldı? Kapı ve izolasyonlarımız alüminyum doğrama mı? Ahşap mı? Yoksa çelik mi? İzolasyon malzemelerimiz neden yapılıyor? Ve bunlara karşı bunların listesini çıkartıp sonra yangın olması durumunda.
+
+127
+01:04:33,300 --> 01:04:55,300
+Ne kadar sürede, nereye zarar geliyor, hangi sıcaklıklara kadar çıkabiliyor, bunlara göre bir eylem planı hazırlamak için gerekli. Çünkü aslında sizin altyapınızda ahşapı kullanmışsanız aslında yangında çok hassas bir veri merkeziniz var.
+
+128
+01:04:58,036 --> 01:05:25,255
+Donanımlarda işte kuş lehimler var, izolasyon malzemeleri var, alüminyum doğrama kullanmasınız. Onunla dikkat ettiğiniz zaman aslında 600 dereceye, bir saatlik bir yangın da 900 dereceye kadar çıkabiliyor bunlar. Dolayısıyla binanızın sadece içindeki donumu değil, lisel altyapının da komple kullanılamaz hale gelmesi gibi bir durum.
+
+129
+01:05:26,483 --> 01:05:47,823
+Söz konusu. Ne yaptık? Doğal afetleri verdik, yangını verdik. Şimdi gelelim suya. Su ile alakalı verilebilecek zararlar nedir? Aslında suyun ana zararı nereden kaynaklanıyor? Elektriksel kısa devre.
+
+130
+01:05:53,619 --> 01:06:15,799
+Ve anakartlarda ya da bilgisayar elemanlarında havanın izolasyonuyla sağlanan birçok yerler var. Ve kapalı değil. Bunlar açık soğutma nedeniyle. Buraya suyun gelmesi neticesinde elektriksel olarak kısa devre nedeniyle bu donanımların kullanılamaz hale gelmesi.
+
+131
+01:06:17,619 --> 01:06:35,399
+Başka? Peki bu ana zararımız. Peki nasıl oluşur bu? İki tür oluşma yöntemi var. Ben bunun bir tanesini gözümde gördüm. Bir tane sistem odasını, bayağı da ciddi bir üniversiteydi, sistem odasının yangın söndürme mekanizmasını sulu yapmışlardı.
+
+132
+01:06:36,307 --> 01:07:04,307
+Sulu yangın söndürme, yukarılara su püskürtme vanalarını herhangi bir şekilde duman alarmında ya da sıcaklıkla alakalı yangın olması durumunda suyla soğutma. Hatta bunu düşünmemişler. Ben gittim IT yöneticisine söylemiştim. Kim tavsiye etti bunu size? Niye hocam? Dedim ki arkadaş ufak bir tehlike olsan siz belki yangını burada birisi...
+
+133
+01:07:04,307 --> 01:07:26,307
+Kiprit çaksa, belki bunu üfleseniz söndürebileceksiniz ama bu sıcaklık farkından dolayı suyun verdiği zararı size hiçbir şey vermeyecek. Burayı gazlı söndürmeniz yapmanız, vakumlu söndürme yapmanız lazım, ıcağılsak yapmanız lazım. Kafasına yatmış ve onu değiştirmişti. Aman dikkat, özellikle...
+
+134
+01:07:26,356 --> 01:07:52,795
+Sulu söndürme sistemlerinin devreye girmesi ya da kazayla devreye girmesi nedeniyle ulaşabilecek zararla ciddi manada risk. Aynı risk su iletim hatları çok önemli. Çünkü bunlar borular belki sistem odasının yakınından, civarından geçiyor olabilir ve bunlar bir haliyle kullanmadan dolayı.
+
+135
+01:07:54,900 --> 01:08:12,059
+Bu konuda deforme olup delinebilir, patlayabilir ya da en büyük risk özellikle soğuk havalarda boruların içerisindeki suların donması ile biliyorsunuz su donduğu zaman genleşiyor.
+
+136
+01:08:12,440 --> 01:08:17,799
+Genleştiği zaman da bu hattın eklem yerlerinden patlıyor.
+
+137
+01:08:18,515 --> 01:08:27,495
+Ve bu da ciddi manada suyun, sizin IT sisteminizin yakınlarında böyle bir risk varsa ciddi manada zarar görmesine sebep veriyor.
+
+138
+01:08:31,347 --> 01:08:53,507
+Peki, başka ne zararı var? Seli dikkat edelim. Seli tahmin etmek mümkün değil. Mümkün ama tahliye ile alakalı mümkün değil. Sadece selde suyun verdiği zarardan daha büyük zarar aslında, bir en az o kadardan, suyun bıraktıktan sonra, selin bıraktıktan sonraki çamur.
+
+139
+01:08:54,355 --> 01:09:08,215
+Ve bu malzemenin donanımlarda, özellikle donanımların hareketli parçalarında vereceği zarar. Bu da gene suyun verdiği zarar olarak karşımıza çıkıyor. Ne yapmamız lazım?
+
+140
+01:09:21,492 --> 01:09:24,752
+Yapmamız gerekiyor.
+
+141
+01:09:26,172 --> 01:09:38,311
+Peki başka neler var? Bir başkası kimyasal, radyolojik ya da ışınma ile alakalı ya da biyolojik tehditler.
+
+142
+01:09:41,684 --> 01:10:01,684
+Nedir biyolojikler, kimyasal tehditler? Siz gazlı sistem, soğutma sistemi yaptınız ya da vakumlu sistem yaptınız. Bunun kaza ile bunun boşalması ciddi manada operatörlere tehdit ya da elektriksel sistemin...
+
+143
+01:10:03,283 --> 01:10:15,903
+ile alakalı ışımadan dolayı oluşabilecek yüksek frekanstaki ve yüksekkenlikteki elektromanyetik ışımanın donanımlara verdiği tehdit.
+
+144
+01:10:17,395 --> 01:10:41,615
+Biyolojik, biyolojikten kastımız aslında biyolojik organizmalar böcekten, fareden, sıçandan, kediden de bahsedebiliriz. Dolayısıyla sistem odasındaki bu hayvanların, hayvancıkların elektriksel donanım üzerinde gezerken çarpılmaları, ölmeleri, çürümeleri neticesinde bunların kısa devreye sebep vermelerinden oluşan.
+
+145
+01:10:42,131 --> 01:11:05,099
+Aynı zamanda sel de biyolojik ve kimyasal kontaminasyon da içerebildiği için bunlar da fiziksel tehdit olarak karşımıza çıkıyor. Aslında kimyasal tehditleri, ya ne olacak kimyasal? Bizim fiziksel güvenlikten biz sadece IT sistemimizin, donanımlarımızın güvenliğinde...
+
+146
+01:11:05,555 --> 01:11:23,895
+İlk adı almıyoruz ya da onu kastetmiyoruz. O IT sistemimizi işleten personelin de güvenliği bizim fiziksel güvenlik kavramımız içerisinde. IT sistemimizi bakımını yapan kişilerin güvenliği de bizim fiziksel güvenlik.
+
+147
+01:11:24,307 --> 01:11:35,307
+İçerisinde değerlenmemiz gerekiyor. Dolayısıyla bu gazdan zehirlenme ya da kimyasal kontaminasyonundan zehirlenme nedeniyle bizim operatörlerimizin...
+
+148
+01:11:35,859 --> 01:11:56,019
+Sistemi kullanamaz hale gelmesi aslında fiziksel tehdit olarak ele alınması ve fiziksel tehdit olarak değerlendirilmesi gerekiyor ve önemli bir şey arkadaşlar. Dolayısıyla ne alaka bununla dolayı değerlendirilmiş diye düşünmemek gerekiyor.
+
+149
+01:12:01,779 --> 01:12:21,739
+Güvenliğiyle alakalı bir planlama yaptığınız zaman sadece lojik düzeyde kalmamamız gerekiyor. Daha geniş kapsamda değerlendirmemiz ve bunlara karşı da her birine karşı da ayrı ayrı eylem planlarını değerlendirmemiz gerekiyor.
+
+150
+01:12:21,739 --> 01:12:28,539
+Peki, başka tehditler ne? Toz.
+
+151
+01:12:30,003 --> 01:12:56,003
+Küf, pas ya da mantar, bunlar da bizim için fiziksel tehditler. Özellikle toz çok göz ağır verilir. İşte nereden gelir? Ayaklardan gelir, açık pencerelerden gelir. Bunlar çoğunlukla ihmal edilir.
+
+152
+01:12:57,971 --> 01:13:16,251
+Ne zarar verebilir? Bir kere bu toz özellikle depolama medyalarının, bilgisayar fanlarının, özellikle bilgisayar fanlarında hareketli parçaların işlev göremez hale gelmesine sebebiyet verir.
+
+153
+01:13:17,395 --> 01:13:25,435
+Sonunda sekonder olarak bilgisayarın soğutulamamasına ve sıcaklık deneyle zarar görmesine sebebiyet verir.
+
+154
+01:13:25,435 --> 01:13:38,195
+Aynı zamanda toz iklimlendirme sistemlerinin de çalışmamasına, fikrelerin tıkanmasına, dolayısıyla ortamın soğutulamamasına sebebiyet verebilir.
+
+155
+01:13:38,835 --> 01:13:41,435
+Aynı zamanda ufak...
+
+156
+01:13:43,220 --> 01:13:58,360
+Nereden sebebiyetleriz bu pozda? Belki ayaklardan aynı zamanda ya da yakınlardaki, inşaattaki bizim görmediğimiz küçük seyredeciklerle ya da rüzgarla.
+
+157
+01:13:58,739 --> 01:14:19,739
+Ya da bina içerisindeki ufak tadilatlarla, tamiratlarla, matkapla duvarda dübeli açmakla oluşacak tozlar bunların hepsi aslında Newton'un fensizi var ya hiçbir şey var, yok yoklardan var olamaz. O toz çıkıyorsa bir yere de gidecek.
+
+158
+01:14:19,739 --> 01:14:21,739
+Peki,
+
+159
+01:14:22,484 --> 01:14:37,804
+Organik materyaller nedir? Yaşayan organizmalar nereden oluşur? Yüksek nemden ve yüksek nem nedeniyle özellikle elektronik cihazların çalışamaz hale gelmesine.
+
+160
+01:14:48,180 --> 01:15:06,480
+İmha, yer yer, ihmal ederek ya da bunların elektriksel yapı içerisinde ölmesi ya da elektriğe kapılıp ölmeleri nedeniyle oluşacak kısa devrelerde bizim fiziksel tehdit olarak karşımıza çıkıyor.
+
+161
+01:15:06,480 --> 01:15:08,700
+Ne yaptık şu ana kadar?
+
+162
+01:15:09,524 --> 01:15:30,703
+Fiziksel teknikleri üçe ayırmıştık. Çevresel teknikler ve teknik teknikler değil mi? Dolayısıyla çevresel teknikleri şu ana kadar inceledik. Biraz ara verelim. 15 dakika. Tamam mı? 11'e çeyrek kala başlarız.
+
+163
+01:15:31,220 --> 01:15:37,120
+Teknik Tekniklerle bu ve devamında bu kısmı bitirmiş oluruz.
+
+164
+01:15:37,380 --> 01:15:42,020
+Soracağınız bir şey var mı bu oraya kadar arkadaşlar? Bir 15 dakika çayelere kadar ara verelim.
+
+165
+01:15:42,820 --> 01:15:44,280
+Tamam hocam. Tamam.
+
+166
+01:15:44,280 --> 01:15:45,180
+Tamam.
+
+167
+01:15:45,180 --> 01:15:46,340
+Tamam profesör.
+
+168
+01:15:46,340 --> 01:15:46,760
+Tamam.
+
+169
+01:15:47,480 --> 01:15:57,980
+Anlaşılmayan bir husus var mı? Anlıyoruz. Zaten kolay şeyler ama dikkate almadığımız ama bir bütün olarak değerlendirmemiz gereken hususlar olarak düşünüyorum.
+
+170
+01:15:59,828 --> 01:16:20,748
+Burası lisans ütlü ders. Aslında lisans teklif dersin üzerine daha çok yönetimsel işlerin işlenmesinin daha uygun olduğu için bu konuda devam ettim. Sonrasında zaten şifrelemeye birazcık daha ciddi manada girmiş olacağız devamında. 15 dakika sonra görüşürüz.
+
+171
+01:44:35,060 --> 01:45:00,819
+Arkadaşlar, birkaç dakika geç kaldım galiba. Neyse, devam edelim. Eksilen var mı? Neyse, bekleyelim. Gelelim teknik tehditlere. Ne yaptık? Çevresel tehditleri bitirdik, tehdit tehditleri. Teknik tehditleri aslında nedir? Bizim IT sistemimiz elektrikle çalışıyor.
+
+172
+01:45:01,363 --> 01:45:09,963
+Dolayısıyla elektrik güç ihtiyacı bizim cihazlarımızın çalışması için temel bir ihtiyaç.
+
+173
+01:45:09,963 --> 01:45:25,503
+Peki elektriksel problemler ne olabilir? Bir, düşük voltaj. Değil mi? 220 volt 50 Hz'de çalışıyorsa. İşte yüklenme nedeniyle. Bir dakika arkadaşlar.
+
+174
+01:45:46,676 --> 01:46:12,596
+Düşük voltaj bir tehlike. Nübet sistemimiz işte aşı yüklenmeden dolayı veyahut da tesisatın düzgün yapılmamasından dolayıydı. Mesela bir priz vardır. Bu priz işte 2 ampere kadar yapmışsınız. Siz üçlüye üçlü ekleyerek çekilen akımı yükseltirsiniz. Dolayısıyla gerilim düşümü artar, kablo asınır.
+
+175
+01:46:12,927 --> 01:46:34,007
+Hem yangın riski hem de düşük voltaj riski. Düşük voltaj olduğu zaman bunu AC-DC konvertörlerle düşük voltaj, AC-DC gerilim üretir. O da sizin cihazlarınızın düşük voltajda çalışmasına ve zarar görmesine.
+
+176
+01:46:39,604 --> 01:46:56,604
+Çipin zarar görmesine, peki yüksek voltaj neye sebep verir, neden oluşabilir? İşte yıldırım düşmesi, öyle değil mi? Ya da gerilim dalgalanmalarından sebep. Bir başkası, gürültü.
+
+177
+01:46:57,268 --> 01:47:14,568
+Özellikle elektriksel iletim hatlarındaki enerjiden oluşan elektromanyetik dalganın oluşturduğu gürültü yandaki cihazlara zarar verir.
+
+178
+01:47:14,568 --> 01:47:23,568
+Bu zarar aslında bildiğimiz Faraday Endüksiyon Yasası. İçinizde elektrik mühendisleri varsa bilip eğer manyetik alan içerisinde...
+
+179
+01:47:23,823 --> 01:47:41,823
+Bir akım taşıyan, manyetik alanda içerisinde hareket eden telde bir gerilim endiklenir. Gerilim oluşur. Bu gerilim de sizin cihazınızı zarar verecek boyutta olabilir ya da sizin iletilen sinyalinizi...
+
+180
+01:47:42,355 --> 01:48:07,935
+Değiştirecek boyutta olabilir. Çünkü eğer siz işte iletim hattında bu işte STP kablo olabilir ya da işte BNC kablo olabilir. Buradaki dalgalanmalar sizin sonuçta ilettiğiniz bitleri farklı algılamanıza sebebiyet verir. Bunlar elektriksel tehditler ve dikkat etmesi gereken tehditler.
+
+181
+01:48:08,724 --> 01:48:33,244
+Elektromanyetik etkileşim, elektromanyetik interferens dediğimiz EMI nedir aslında? Güç kablo iletim hatlarındaki gürültülerin, motorların, motorların, fanların ya da ağır bilgisayar cihazlarının, cep telefonlarının, mikrodalga cihazlarının, antenlerin.
+
+182
+01:48:33,716 --> 01:48:49,855
+veya yakınlardaki radyo istasyonlarının, işte radyo vericilerinin oluşturduğu cihaz gürültülere, biz elektromanyetik gürültü ve bunların elektri etkileşimine de elektromanyetik interferans diyoruz.
+
+183
+01:48:49,855 --> 01:49:01,716
+Yani ortada güçlü bir radyo istasyonu varsa bunun oluşturacağı gürültü, elektromanyetik gürültü sizin sinyalinizin doğru iletilmemesine, doğru iletilmemesine...
+
+184
+01:49:01,716 --> 01:49:02,655
+neticesinde
+
+185
+01:49:02,655 --> 01:49:04,316
+kollijina
+
+186
+01:49:04,316 --> 01:49:07,796
+ve paket kayıtlarına
+
+187
+01:49:07,796 --> 01:49:09,115
+ve hatalara
+
+188
+01:49:09,115 --> 01:49:11,056
+sebebiyet verir.
+
+189
+01:49:11,836 --> 01:49:13,155
+Ve gürültü
+
+190
+01:49:13,844 --> 01:49:29,724
+Uzayda ve kablo iletim hatları boyunca hareket edebilir ve dolayısıyla bilgisayarın içerisinde de bilgisayar bileşenlerinde de gürültü zarar verme potansiyeli var.
+
+191
+01:49:38,996 --> 01:49:40,796
+Dediğimiz zaman bunları anlıyoruz.
+
+192
+01:49:41,855 --> 01:49:45,435
+İnsan kaynaklı tehditlere gelelim.
+
+193
+01:49:45,956 --> 01:49:52,095
+İnsan kaynaklı tehditler aslında insan organik yaratık.
+
+194
+01:49:53,476 --> 01:49:57,576
+Tahmin etmesi, davranışını tahmin etmesi çok zor.
+
+195
+01:49:58,576 --> 01:49:59,996
+Dolayısıyla...
+
+196
+01:50:00,000 --> 01:50:20,000
+Birçok parametre içeriyor. Bunların önlemiyle alakalı ölçeklendirmek de teknik sorunlara oluşturacağı çözümlerle, insana oluşturacağı çözümler çok farklı ve insanlıkta oluşan tehditler...
+
+197
+01:50:23,667 --> 01:50:48,047
+Daha zor. Nedir mesela? Patronla kızar, tehdit, morali bozuktur, tehdit, maaşını düzgün bulmamıştır, tehdit, terfi edememiştir, tehdit, fiziksel maddi menfaati vardır, davranışı vardır, tehdit, başka yerden yüksek maaşla transfer tehdit almıştır, bunlar tehdit ve bunları tehditleri
+
+198
+01:50:50,003 --> 01:51:06,064
+Ölçeklendirmesi, bunlara karşı tedbir alması gereken insanın kendisi de aslında bir tehdit. Dolayısıyla daha kompleks, daha parametrik bir sorun karşılıklı.
+
+199
+01:51:14,591 --> 01:51:30,531
+Bizi insan kaynaklı tehditler olarak değerlendirebiliriz. Bir sistem odasına yetkisiz girme ya da bir binaya yetkisiz girme ya da bir cihazın donanımın çalınması.
+
+200
+01:51:32,115 --> 01:51:52,115
+Bir insan kaynaklı tehdit olarak karşımıza çıkıyor. Niye çalınabilir? Bunu alıp satabilir ya da cansızlık için, dinleme için kullanabilir. Bunların hepsi insan kaynaklı tehdit olabilir. Peki bu tehditler içten de gelebilir. Yani personeliniz de aslında…
+
+201
+01:51:52,304 --> 01:52:15,523
+Bir tehdittir. Aynı zamanda dış kaynaklı derde tehdittir. Sonuçları ne olabilir? Cihazlara, dokümanlara, verilere imha ya da zarar verme olarak çıkabilir ya da o kaynakların yanlış kullanımı.
+
+202
+01:52:16,724 --> 01:52:20,619
+İlhan kaynaklı tehdit olarak karşımıza çıkıyoruz.
+
+203
+01:52:25,427 --> 01:52:39,467
+Peki, fiziksel güvenlik tehditlerine karşı önleme ve tedbir azaltma yöntemlerinden birazcık bahsedelim.
+
+204
+01:52:39,467 --> 01:52:52,807
+Birinci önleme yöntemi aslında çok yaygın olarak günlük hayatına giren yapı bulut ilişim.
+
+205
+01:52:53,716 --> 01:53:09,536
+Taşı buluta uçsun gitsin. Nedir bina sorunun yok yıkıldı, yandı yıkıldı yok. Dolayısıyla hatırlarsanız biz riski nasıl değerlendiriyorduk? Bir riski transfer edebiliriz, riski azaltabiliriz.
+
+206
+01:53:10,612 --> 01:53:38,612
+Riski önlemenin yönleri. Riski transfer edebiliriz, riski azaltabiliriz, riski kabullenebiliriz. Öyle değil mi? Şimdi buluta taşıma aslında riski transfer etme yöntemi. Yani siz fiziksel sorunlardan, elektriksel dalgalanmalar, donanımın çalınması, verinin çalınmasıyla alakalı her türlü fiziksel kaynaklı, depremden, yangından, sel baskı...
+
+207
+01:53:38,612 --> 01:53:56,912
+Bu konuda alakalı risklerden siz transfer ediyorsunuz. Riski birinci yöntem bu. Peki, başka ısıya ve neme karşı tedbirler alabilirsiniz.
+
+208
+01:54:01,939 --> 01:54:26,799
+Çelik üniversitesi kontroller için klima koyabilirsiniz, online UPS'ler koyabilirsiniz, gerilim, dalgalanma yönliliği için regülatörler koyabilirsiniz. Bunları tamamı teknik olarak ısıya ve neme karşı iklimlendirme. Yangına ve dumana karşı alarmlar koyabilirsiniz.
+
+209
+01:54:27,988 --> 01:54:40,427
+Yangın söndürme sistemleri kurabilirsiniz. Yangın alarmları kurabilirsiniz. En başında sigara içilmesini önleyebilirsiniz bu sistemlerde.
+
+210
+01:54:40,427 --> 01:54:47,427
+Suya karşı su iletim haklarına göre donanımlarınızın konumlarını...
+
+211
+01:54:51,091 --> 01:55:07,951
+...ayarlayabilirsiniz. Ya da otomatik devre kesici sensörler koyabilirsiniz. Dolayısıyla suyu tespit ettiği an, retriği kesen, koruma altına alan, sistemi izole eden yapabilirsiniz.
+
+212
+01:55:14,420 --> 01:55:25,000
+Temiz oda kurabilirsiniz, gürültüye ve toza karşı. Böceklere karşı gerekli tedbirleri alabilirsiniz.
+
+213
+01:55:25,000 --> 01:55:38,920
+İlaçlanmadır ya da girişçilerle alakalı alanların kapatılması gibi, ilaçlanma gibi bunlar da diğer önlemler. Amacımız ne?
+
+214
+01:55:39,828 --> 01:55:45,028
+Önleme ya da tesislerini azaltmak için alabileceğimiz fiziksel tedbirler.
+
+215
+01:55:46,228 --> 01:55:48,828
+Peki bunları gruplandırır isek...
+
+216
+01:55:52,404 --> 01:56:08,524
+Teknik tehditlere karşı neler yapabiliriz? Bir kere UPS, her bir kritik cihazımızın teknik elektriksel dalgalanmaların önlenmesi için UPS koyabiliriz.
+
+217
+01:56:19,796 --> 01:56:31,796
+Desteği koyabiliriz. Elektromanyetik interferense karşı önlem için, işte Faraday kapasları ile elektromanyetik idrasyon yapabiliriz.
+
+218
+01:56:31,796 --> 01:56:44,796
+İşte duvarlarımızı kurşun plakalarla kaplayıp, dışarıdaki elektromanyetik etkileşimden IT sistemimizin zarar görmesini.
+
+219
+01:56:45,492 --> 01:57:05,851
+Engelleyebiliriz. Bunlar teknik. Biraz önceki genel itibariyle çevresel tehditlere karşı nasıl önlemler ve birleştirmeler yapabiliriz. Burada teknik tehditlere karşı oluşturabileceğimiz etkiyi azaltıcı yöntemler.
+
+220
+01:57:14,036 --> 01:57:29,707
+Bu örneğe bakalım.
+
+221
+01:57:33,908 --> 01:57:34,636
+Bu alanları...
+
+222
+01:57:41,171 --> 01:57:48,711
+Kirlik mekanizmaları koyabiliriz. Ekranlar koyabiliriz.
+
+223
+01:57:53,171 --> 01:58:03,251
+Takip cihazlar, özellikle hareketli donanımlara karşı disklerdir, diğer donanımlardır takip cihazlara yerleşebiliriz.
+
+224
+01:58:07,123 --> 01:58:14,203
+Güvenlik donanımlarını güç kontrolü, switchlerle kontrol edebiliriz.
+
+225
+01:58:14,203 --> 01:58:27,203
+Sızma sensörleri ve alamlar ve güvenlik kameraları ile sistemi 7.24 real time uzaktan denetleyebiliriz.
+
+226
+01:58:27,823 --> 01:58:34,203
+Bunlar da insan kaynaklı tehditlere karşı alınabilecek örneğe.
+
+227
+01:58:35,283 --> 01:58:46,564
+Şimdi gelelim, ne yaptık? Bizim IT sistemimiz var. Bu IT sistemimizle alakalı, fiziksel güvenliğiyle alakalı her şeyi yaptık.
+
+228
+01:58:46,564 --> 01:58:59,564
+İşte çevresel faktörlere karşı, tehditlere karşı önlemimizi aldık. Teknik faktörlere karşı önlemimizi aldık.
+
+229
+01:59:00,372 --> 01:59:23,332
+İnsan kaynaklı oluşabileceği tehditlere karşı önlemimizi aldık ama gene de oldu. Güvenlik nedeni zafiyeti oldu, fiziksel güvenlik nedeni zafiyeti oldu ve bundan nasıl geriye dönüş yapacağız ve bunlara alakalı nasıl planlar yapacağız? En temel.
+
+230
+01:59:26,996 --> 01:59:42,996
+Geriye dönüş, tehditden sonra, hasardan sonra geriye dönüş, yedek. Ne yapabiliriz yedek? Verimizin yedeğini alabiliriz. Dolayısıyla bu veri kaybını önler. Aynı zamanda...
+
+231
+01:59:47,283 --> 01:59:59,963
+Asıl ideal olan, benim canlı yedeği olduğu gibi, off-site'de yani orada olmayan bir lokasyonda rutin aralıklarla sistemimizin yedeğini almak.
+
+232
+02:00:00,083 --> 02:00:07,215
+Dolayısıyla orada fiziksel bir deprem oldu, yangın oldu, söz oldu, disk oldu, tb yedeği alıyoruz ama onu da aynı...
+
+233
+02:00:07,216 --> 02:00:26,176
+Bu konumda tutuyoruz. Dolayısıyla diski yedeğini de, kudrumlu diski de aynı yerde. O hırsızlık olduğu zaman ikisi de çalındığı zaman gitti. Dolayısıyla ideal olan bunun o site dışındaki farklı bir yerde yedeğini alabiliriz.
+
+234
+02:00:27,176 --> 02:00:34,316
+Yedeğini aldık, kurtardık ama verimizin gizliliği bakımından şifreleme yapabiliriz.
+
+235
+02:00:35,796 --> 02:00:52,056
+Ya da herhangi bir sorun olduğu zaman kritik durumlarda operasyonu anlık olarak üzerine alacak yapıyı oluşturabiliriz.
+
+236
+02:00:54,275 --> 02:01:02,595
+Fiziksel ekipmanlardaki geriye dönüşü değerlendirirsek aslında bu...
+
+237
+02:01:02,612 --> 02:01:29,612
+Birazcık fiziksel zararın boyutuna bağlı depremle bina yıkıldıysa bunun geri dönüşü yeni bir bina yapmak. Sel nedeniyle su baskını olduysa bunun geri dönüşü ortamın temizlenmesi, zarar gören cihazların yenilenmesi. Dolayısıyla bu özellikle fiziksel donanımların zarar görmesiyle alakalı teknik olarak bir...
+
+238
+02:01:30,100 --> 02:01:42,840
+Recovery Plan oluşturmak gerekiyor. Bunlar fiziksel güvenlik sahafiyetlerine karşı alınacak tepkiler.
+
+239
+02:01:42,840 --> 02:01:53,840
+Şimdi gelelim. Bizim bir IT sistemimiz var. IT sistemimizin barındığı bir fiziksel donanım var. O donanımın bulunduğu bir...
+
+240
+02:01:54,131 --> 02:02:15,711
+Oda var, odanın bulunduğu bina, binanın bulunduğu bir kurum. Dolayısıyla bunların entegrasyonu, yani kullanıcılarla üzerindeki veritabanındaki bilgilerimiz ya da bir iletim hattı ise bunun network donanımıyla alakalı.
+
+241
+02:02:16,500 --> 02:02:41,500
+Ayakta durması ile alakalı, logik konseptin yanında fiziksel konsepti de dikkat etmek gerekiyor. Dolayısıyla logik güven tehditlere karşı firewall'larla ya da biometrik access control mekanizmalarıyla sisteme login oluyorsak, aynı zamanda o donanımların firewall'ın bulunduğu lokasyonun da güvenliğini...
+
+242
+02:02:43,731 --> 02:03:09,692
+Karşılaşabilecek tehditleri de dikkat etmemiz gerekiyor. Bunlarla alakalı standart var mı? Var. FIPS 201'e 1. Şu anda yeni versiyonu yeni yayınlandı 2022'de. 201'e 3. İnternetten bunu indirebilirsiniz. Açık kaynak katlı. Kişisel kimlik verifikasyonu yani doğrulaması. PIB, P4.
+
+243
+02:03:10,131 --> 02:03:26,051
+Bu federal işletmeler ve kontraktörler, yani yüklenicilerle alakalı PID kontratı ve bu standart aslında birçok yapıyı veriyor. Bu ne yapıyor?
+
+244
+02:03:39,252 --> 02:03:54,272
+İlişkilendirilmesiyle alakalı hususlar var. Aslında bu birçok algılama ve önleme cihazını içeriyor. Merkezi bir kontrol yapısı kurabilir iseniz bu daha etkin.
+
+245
+02:03:58,868 --> 02:04:11,408
+Ve bu entegrasyon aslında fiziksel ve lojik güvenlik fonksiyonlarının bir arada değerlendirilmesini, bir arada kullanılmasını içeriyor.
+
+246
+02:04:11,408 --> 02:04:26,148
+Bu fikir aslında CIPS 201'deki model, grafik, PID kartı çıkartan ve bunları yöneten bir otorite kısmımız var.
+
+247
+02:04:26,560 --> 02:04:54,284
+Güvenlik kontrolümüz var. Yanında da ön yüz. Bir kişi, ben, siz ya da buradaki arkadaş sisteme giriyorsak ne yapacak? Burada da bileşenleri, sembollerle alakalı oklar, direkşin, bilginin akışını, kara kutuları, prosesleri, yamuk ve...
+
+248
+02:04:55,091 --> 02:04:57,091
+Bu tabanında bileşenleri gösteriyor.
+
+249
+02:04:59,091 --> 02:05:02,091
+PID, Card Assurance'tan ne yapıyor?
+
+250
+02:05:02,091 --> 02:05:04,091
+Public Key
+
+251
+02:05:04,724 --> 02:05:10,363
+Management Directori, Public Key'lerin tutulduğu direktörü bu sertifika veriyor, yetkilendirme.
+
+252
+02:05:11,244 --> 02:05:22,484
+İşte ne yapıyor? Kimliğin doğrulanması, kartların basılması, anahtarların yönetilmesi aslında bu ID kontrol mekanizması.
+
+253
+02:05:22,484 --> 02:05:29,484
+Ne tür bir birleşiklik var? Kart leader ile bu kart tutarak bilebiliyoruz ya da PID kimlik kartıyla bilebiliyoruz.
+
+254
+02:05:30,084 --> 02:05:32,724
+Ekstra olarak bu kart artı ipin kutusu.
+
+255
+02:05:32,724 --> 02:05:58,504
+Bu suyla, şifreyle girebiliriz. Nereye? Ama aslında bu ön yüzden ya da biyometrik liderlerle, parmak izle, gözümüz, yüzümüz ve front endten sisteme. Nereye giriyoruz? Akses kontrol mekanizmasına. Burada physical access kontrol nedir? Kimlikle kişinin o kişi olduğu ile alakalı. Ne için?
+
+256
+02:05:58,895 --> 02:06:19,376
+Identification and Access Control, Fiziksel Access Control ve Authorization yetki. Ya da Lojik olarak bir bilgisayara login olacaksa, bir router'a login olacaksa, Lojik yani Identification, Access Control ve Authorization. Yani fiziksel ortama giriş.
+
+257
+02:06:19,583 --> 02:06:35,463
+Prosesi de aslında bir akses kontrol mekanizması ve fiziksel kaynaklara, disklere, teyitlere ya da donanımlara ya da lojik kaynaklara, CPU'lara ya da disk alanlara, verilere, tablolara.
+
+258
+02:06:36,144 --> 02:06:41,283
+Hatırlarsanız bunlar akses kontrol iki feyzi olarak değerlendirmek gerekiyor.
+
+259
+02:06:45,460 --> 02:06:47,840
+bulabilirsiniz ve dediğim gibi
+
+260
+02:06:47,840 --> 02:06:50,340
+şu anda güncel olanı
+
+261
+02:06:50,340 --> 02:06:51,380
+201'e 3.
+
+262
+02:06:51,579 --> 02:06:54,359
+2022'yi güncelerken gördüm orada.
+
+263
+02:06:54,980 --> 02:06:55,980
+O da şu anda yeni
+
+264
+02:06:55,980 --> 02:06:57,880
+yayınlanmış.
+
+265
+02:06:58,000 --> 02:06:59,720
+Orayı da inceleyebilirsiniz.
+
+266
+02:07:00,800 --> 02:07:02,140
+Bu aslında
+
+267
+02:07:02,140 --> 02:07:04,199
+daha geniş
+
+268
+02:07:04,199 --> 02:07:06,480
+kapsamlı bir
+
+269
+02:07:06,480 --> 02:07:09,159
+yapım.
+
+270
+02:07:09,159 --> 02:07:10,640
+Mesela büyük bir
+
+271
+02:07:11,636 --> 02:07:24,435
+Süpermarket zinciri düşünün ya da mesela Immigros düşünebilirsiniz ya da büyük bir firma ya da Vestel gibi bir şirket düşünün.
+
+272
+02:07:25,195 --> 02:07:37,855
+Merkezde ne var? İşte PID, ilişim kontrol veritabanı ya da yetkilendirmeyle alakalı veritabanlar. Merkezde işin güvenliğinde.
+
+273
+02:07:38,579 --> 02:07:54,779
+Peki bu sisteme nasıl fiziksel akses sağlayabilirsiniz? Binaya, işte, işte optik olarak biyometrik liderlerle, elinizde tuttuğunuz kartlarla bu fiziksel sisteme enter giriş yapabilirsiniz.
+
+274
+02:07:54,779 --> 02:07:59,779
+Aynı zamanda işte marketlerde, kasada işte...
+
+275
+02:08:01,555 --> 02:08:13,555
+Kasayı bunu sisteme entekre ederek, smart kartlarla alışveriş yapması ya da biyomatik veritabanlarına ya da bilgisayarlara bunun içerisinde kullanması.
+
+276
+02:08:13,555 --> 02:08:23,555
+Peki, bunları kartları basan otorite, fotoğrafını çekiyor, kartları basıyor, programlıyor ya da optik...
+
+277
+02:08:23,583 --> 02:08:48,460
+Verileri giriyor. Bunları da sol tarafta burada altta görebiliyoruz. Aynı zamanda işte bu kullanıcıların sisteme girişleriyle alakalı aktif direktör yapısı bu sisteme entegre, insan kaynakları veritabanı bu sisteme entegre ya da diğer veritabanları nedir? Mesela işte bir marketten ya da bir...
+
+278
+02:08:48,787 --> 02:09:06,188
+Stoklarla alakalı yapılan buna entegre çalışıyor. Aslında daha geniş ve bütüncül bir yaklaşım. Yani IT'li yönetiminden daha çok aslında bilginin yönetimi olarak dikkat etmemiz gerekiyor.
+
+279
+02:09:08,327 --> 02:09:12,107
+İnsan kaynaklarıyla alakalı...
+
+280
+02:09:13,427 --> 02:09:31,768
+Güvenlik seviyeleri ve kontrolü, özellikle koronaklı olanların güvenlik seviyeleri ve kontrollerle alakalı FM3-1930 bu da bir standart doküman. Buna da bakabilirsiniz. Bunda sınıflandırılması var güvenlik kontrolü ilgili.
+
+281
+02:09:41,427 --> 02:10:06,787
+Yeşil alanlar bunlar herhangi bir güvenliğin dikkat alınmadığı. Kontrollü alanlar aslında girişin kontrol edilerek aldığı alanlar. Herkes kimliği olan herkes buraya girebiliyor ya da ziyaretçi bu alana girebiliyor. Dolayısıyla güvenlikle alakalı sadece kimin girdiğiyle alakalı bir kısıtlama var.
+
+282
+02:10:07,152 --> 02:10:20,791
+Ya da hangi amaçla gittiği, ne de olduğu ile alakalı. Sınırlı alanlar aslında bizim güvenliği ile alakalı yapımıza yakın olan bölgelerden bahsediyoruz.
+
+283
+02:10:21,271 --> 02:10:30,652
+Buraya artık kontrollü girişten daha ziyade her kontrollü giren kişi bu kısıtlandırılmış alana giremiyor.
+
+284
+02:10:33,492 --> 02:10:38,492
+Yanında birinin refakatinde buraya girebiliyor.
+
+285
+02:10:38,492 --> 02:11:00,492
+Exclusion alanlar, kısıtlı alanlar ya da yasak bölge dediğimiz alanlar aslında buraya kontrolsüz, harekete izin verilmeyen, herhangi bir kişinin girmediği ya da sadece yetkili bir kişinin, birkaç kişinin girdiği alanlar olarak karşımıza çıkı, dörtlüğü sınıflandırmak.
+
+286
+02:11:01,587 --> 02:11:21,587
+Bu son şeklimiz, akses kontrol modeli, kimlikler, girişleri, herhangi bir şekilde. En baştaki unrestricted bölge. Dolayısıyla herhangi bir kimliğe olmayan, elini kontrolü yaparak girebilir.
+
+287
+02:11:29,471 --> 02:11:54,591
+Bu konuda ilgili kontrolle girilen bölge. Limited alanlara dikkat ediyorsanız, biyolojik olarak sadece belli kişilerin girdiği alanlar, limited alanlar, biyolojik kontrol var. İçerisinde exclusion alanlara hepsinin birleşimi aslında akses kontrol. Hem şifreyle hem biyolojide belli kişi daha sıkı alanlar olarak karşımıza çıkıyor.
+
+288
+02:11:56,659 --> 02:12:11,599
+Fiziksel konu tehditleri, önlemeye, azaltma etkiyi azaltmaya ve herhangi bir sorun olması durumunda geri dönüşle alakalı kısımları bitirmiş olduk.
+
+289
+02:12:11,979 --> 02:12:15,459
+Böylelikle bu haftaki konularımızı da bitirdik.
+
+290
+02:12:16,399 --> 02:12:21,459
+Gelecek hafta, eğer isterseniz arkadaşlar gelecek hafta...
+
+291
+02:12:22,032 --> 02:12:25,112
+Yüz yüze yapalım mı? Ya da online'dan mutlu mu?
+
+292
+02:12:28,851 --> 02:12:30,851
+Hocam bence...
+
+293
+02:12:30,851 --> 02:12:32,851
+Online daha iyi bizde.
+
+294
+02:12:32,851 --> 02:12:34,851
+Bence.
+
+295
+02:12:34,851 --> 02:12:37,851
+Dersi tekrar izlemek açısından online daha iyi oluyor hocam.
+
+296
+02:12:37,851 --> 02:12:44,851
+Tamam o zaman. Yani çünkü buraya gel... Ama üstünden bir ricam var arkadaşlar.
+
+297
+02:12:44,851 --> 02:12:56,811
+25 kişi, 25, 23, 25 kişi ama ders alan 50'ye yakın kişi. Bu demek ki fizikapın %50'si katılmıyor dersin. Öyle değil mi?
+
+298
+02:12:58,323 --> 02:13:22,623
+Bunlar acaba gitmiyorlar mı, yürüyorlar mı? Devamda aslında o bağlamda haftaya da online yapalım. En azından vizelere kadar online gidelim. Zaten vize sınavımız yok. Ondan sonra bir tanışmak bakımından bir iki hafta yüzde de devam edebiliriz. Tamam mı?
+
+299
+02:13:23,783 --> 02:13:24,463
+Olur canım.
+
+300
+02:13:26,036 --> 02:13:27,796
+Sorunuz var mı bu konuyla alakalı?
+
+301
+02:13:27,796 --> 02:13:43,096
+Şimdi diyebilirsiniz çok basit gibi ama aslında güvenlikle alakalı lisans ürünlerse birazcık üst perdeden, üstten sistemin yönetilmesi bakımından bu işe dikkat almak gerekiyor.
+
+302
+02:13:43,216 --> 02:13:49,476
+Yoksa lisansdaki gibi işte akses kontrol, biyometrik kontrol cihazlar, bu tür veriler bu şekilde gidiyor.
+
+303
+02:13:49,856 --> 02:13:52,816
+Zaten bunları her birinizin bildiğini kabul ediyoruz.
+
+304
+02:13:57,460 --> 02:14:15,060
+Herkes online diye yazmış. O zaman haftaya da online arkadaşlar. Her ne kadar ben okuldayım ama fazla kişi katılabilmesi bakımından online yapmaya devam ediyoruz. Haftaya 9.30'da görüşmek üzere. Hepinize sağlıklı bir hafta diliyorum.
+
+305
+02:14:16,420 --> 02:14:18,800
+Teşekkürler. İyi haftalar. İyi haftalar hocam.
+
+306
+02:14:18,859 --> 02:14:20,220
+Teşekkürler hocam.
+
+307
+02:14:20,220 --> 02:14:22,220
+Teşekkür ederim hocam.
+
+308
+02:14:23,503 --> 02:14:24,844
+Teşekkürler.
+
+309
+02:14:24,963 --> 02:14:25,583
+İyi günler.
+
+310
+02:14:27,024 --> 02:14:28,583
+Kolay gelsin. Görüşmek üzere.

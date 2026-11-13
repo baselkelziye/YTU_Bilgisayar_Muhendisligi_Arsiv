@@ -1,0 +1,1551 @@
+1
+00:14:46,388 --> 00:14:51,268
+Arkadaşlar, bizim geliyor mu? 9 kişiyiz sadece. Yerleri nerede?
+
+2
+00:14:56,307 --> 00:15:03,148
+Günaydın.
+
+3
+00:15:06,932 --> 00:15:18,932
+Başlayalım diğerlerde gelir umuyorum. Bu geçen hafta bu Türkiye'deki siber güvenlikle alakalı hukuki süreci hazırlayacak arkadaş burada mı? Yoksa daha hiç baş gelmedi mi?
+
+4
+00:15:35,379 --> 00:15:55,700
+Bu hafta yeni bir konuya başlayacağız. O da ağ güvenliği. Ağ güvenliği aslında 3 haftalık bir konu ama sadece dönemin bitmesine 2 haftamız kaldığı için sadece internet güvenlik protokolları ve güvenlik standartlarından biraz bahsedeceğiz.
+
+5
+00:15:59,604 --> 00:16:15,604
+Kimlik doğrulama uygulamaları üzerine oturacağız. Kablosuz ağ güvenliğini size tavsiyem sunuyu koydum size. Oradan alıp ona da bir bakabilirsiniz faydalı olacağını düşünüyorum.
+
+6
+00:16:17,384 --> 00:16:26,744
+Evet, bu haftaki konumuz aslında internet güvenlik protokolleri ve güvenlik standartları. Hepinizin bildiği ve hatırlayacağınız gibi
+
+7
+00:16:28,052 --> 00:16:55,372
+İnternet başlangıçta askeri amaçlı olarak bir mesajlaşma olarak tasarlanmıştı. Dolayısıyla cihazlar belli. Zaten güvenli bir ağ içerisinde internete bağlı cihazların güvenli olduğu ve çalışanlara da güvenilir olduğu düşüncesiyle aslında başlangıçta internet protokolları tasarlanırken güvenlik ve güvenilirlik.
+
+8
+00:16:58,899 --> 00:17:15,859
+İnternet protokolları bütünüyle tekst tabanlı protokoller ve güvenlik internetin yaygınlaşması ile ve uygulama alanlarına ve kullanıcı sayılarının hızla artması ile bir sorun haline dolu geldi.
+
+9
+00:17:26,163 --> 00:17:44,844
+Giydirilmeye başlandı. Dolayısıyla biz burada güvenlik protokollerine, yani normal internet protokolleri üzerine güvenlik protokolleri ve standartları nasıl giydirilmiş, onların üzerine birazcık bakacağız.
+
+10
+00:17:44,844 --> 00:17:46,667
+İlk başta...
+
+11
+00:17:50,516 --> 00:17:58,796
+Güvenli E-mail ve Secure Multimedia Multipurpose Internet Mail Extension'dan, MINE'den ve S-MINE'den bahsedeceğiz.
+
+12
+00:17:58,796 --> 00:18:07,115
+Sonrasında etki alanı anahtar tanımlı maillerden bahsedeceğiz.
+
+13
+00:18:07,396 --> 00:18:16,076
+Sonrasında TCP üzerine kurulu Güvenli Socket Layer SSL ve TLS.
+
+14
+00:18:16,511 --> 00:18:33,511
+Protokollerinden bahsedeceğiz. Sonrasında ise HTTP, biliyorsunuz web protokolüydü. Güvenli HTTP üzerine HTTPS protokolü de yani Triless üzerine Google HTTP üzerinden bahsedeceğiz.
+
+15
+00:18:33,511 --> 00:18:43,915
+En sonunda ise IP versiyonu 4 ve IP versiyonu 6 da güvenlik nasıl sağlanıyor. Bunlarla alakalı ilgilerle tuttu.
+
+16
+00:18:43,923 --> 00:19:09,903
+İlk başta mail'den bahsedelim. Mail protokolü, Simple Mail Transpter Protokolü var. Bu Simple Mail Transpter Protokolü aslında ne var? Temel e-mail sender var. Yani gönderici, alıcı.
+
+17
+00:19:10,963 --> 00:19:29,384
+Konusu ve tekst tabanlı metin mesajı. Öyle değil mi? Dolayısıyla RFC 822 aslında maili ve mail protokollerini tanımlıyor. Dolayısıyla RFC 822'ye bakarsanız burada basit header'lar var.
+
+18
+00:19:38,195 --> 00:19:49,195
+Temel alıyor. Peki, günümüz e-maillerinde neler var? Günümüz e-maillerinde bir kere attach edebiliyoruz, ekleyebiliyoruz.
+
+19
+00:19:49,195 --> 00:19:59,195
+Resim ekleyebiliyoruz, video ekleyebiliyoruz, audio ekleyebiliyoruz, binary executable dosya ekleyebiliyoruz. Peki, aklınıza hiç geldi mi?
+
+20
+00:20:00,000 --> 00:20:10,539
+RFC dokümanı okurayacaksanız, tamamen tekst tabanlı ve metni ASCII tekst formatında kabul ediyor ve hala o protokol kullanılıyor.
+
+21
+00:20:10,539 --> 00:20:14,539
+Nasıl oluyor da biz ASCII tabanlı...
+
+22
+00:20:14,804 --> 00:20:28,403
+Mail formatı üzerinde resimlerimizi, dokümanlarımızı, videolarımızı, audiyolarımızı ya da koşturulabilir programlarımızı nasıl gönderiyoruz?
+
+23
+00:20:28,756 --> 00:20:49,756
+Bunlarla alakalı ilk, işte extension. Aslında mine dediğimiz multipurpose internet mail extension kısaltılması. Çok amaçlı internet mail eklentisi. Bu 822'deki bu eksikliği gidermek üzere...
+
+24
+00:20:50,451 --> 00:21:15,451
+Oluşturulmuş bir ekstensiyon. Biliyorsunuz, 822, Aleksis 822 1982'de oluşturulmuştu ve e-mail'lerle alakalı temel standartları belirliyordu. Peki, MINE ne sağlıyor? MINE, standart alıcı, verici ve sapacak ve üzerine...
+
+25
+00:21:15,508 --> 00:21:38,148
+E-maillere resim, video ve audio ekleyebilmenizi, resimde maildeki formatı, text formatını değiştirmenizi sağlayabilen header field'lar ve mesajın gövdesiyle alakalı tanımları ve eklentileri içeriyor.
+
+26
+00:21:42,932 --> 00:21:59,572
+MINE'ın yani Multi Purpose E-mail, Internet Mail Extension'in güvenli hale getirilmiş versiyonu ya da güvenlik linkineği eklenmiş versiyonu.
+
+27
+00:21:59,572 --> 00:22:06,892
+Dolayısıyla MINE'deki internet e-mail formatı üzerine LSA
+
+28
+00:22:07,508 --> 00:22:35,340
+Veri güvenlik protokolleri, şifreleme protokolleriyle güvenliği sağlıyor. Peki, esma ne sağlıyor aslında ilmeğiyle? Şifreleme ve imzalama yeteneği veriyor. İmzalama hakkında bir doküman görüyorsunuz. Bu dokümanı normal standart bir kağıttaki doküman imzalarmış gibi maili imzalamanızı ya da...
+
+29
+00:22:36,435 --> 00:22:46,859
+Mesajı şifreleme imkanı veriyor. Peki, aklınıza şu gelebilir. Neydi? Şifreledi. Doğru. Ama hala...
+
+30
+00:22:47,124 --> 00:23:08,024
+SMTP protokolünü kullanıyorum ve hala giden mesaj ASCII Text Formatı'nda. Dolayısıyla şifrediğimiz mesajı da ASCII Text Formatı'na dönüştürmüş olacak. Yani ASCII Text Formatı'nda gidiyor. Bunları da işte bu haftaki içerikler içerisinde bunlardan da birazcık bahsedeceğiz.
+
+31
+00:23:08,024 --> 00:23:08,923
+Peki.
+
+32
+00:23:10,324 --> 00:23:22,004
+Es ve Esma'yı kontent tiplerinin multipartisi var. Yani imzalayabiliyoruz. Dolayısıyla açık imzalı mesajları,
+
+33
+00:23:22,004 --> 00:23:33,364
+mesajı imzaladığımız zaman aslında mesaj iki parçalar oluşmaya başlıyor. Birisi mesajın body'si, birisi de material message'ın.
+
+34
+00:23:33,392 --> 00:23:45,772
+İmza hali ve bunlarla alakalı content tipleri, mine ve s mine'in content tipleri ve açıklamalarını burada görebiliyoruz.
+
+35
+00:23:46,172 --> 00:23:55,192
+Birazcık daha açarsak, s mine'in ve mine'in fonksiyonları bir kere zarflanmış veri.
+
+36
+00:23:55,796 --> 00:24:23,084
+Zarflanmış veri nedir aslında? Siz gerçek hayatta analoji olarak bahsederseniz, siz bir mektup yazıyorsunuz. O mektubu zarfın içerisine koyuyorsunuz, zarfın içerisine adresi veriyorsunuz ve zarfı gönderiyorsunuz. İçerik kapalı zarfın içerisinde. Dolayısıyla şifrelenmiş kontent ve kontente ilişkilendirilmiş anahtarı zarfın içerisine koyup gönderiyorsunuz. İmzalanmış veriyi gönderebilirsiniz.
+
+37
+00:24:23,571 --> 00:24:44,771
+Dolayısıyla bu imzalanmış ve de iki tür bir mesajın kendisi bir de imzalanmış. Dolayısıyla bunu iki tarz yapabilirsiniz. Mesajı şifreleyerek imzalı gönderebilirsiniz. Mesajı şifrelemeden imzalı gönderebilirsiniz. Ve üzerine üstlük bunların hepsini de tutup zarf içerisine koyarsınız.
+
+38
+00:24:51,380 --> 00:25:00,140
+Ne yapıyoruz aslında? Mesajımız var biz mesajı yazdık değil mi? Sonra mesajı yazdıktan sonra...
+
+39
+00:25:03,155 --> 00:25:30,155
+Bu da alakalı imzalamamız gerekiyor. Ama imzalarken mesajdan bağımsız bir imza yaparsak, sonrasında bu imza alanında başka mesajlara da beklenmesi gibi bir durum sözü karısı olur. Öyle değil mi? Dolayısıyla ben bu imzayı alırım. Başka, nasıl mesela bir dokümanı imzaladınız? Doğru. Ama o imza tarafını kestim, başka yere transfer ettim zaman. İmzalamamış olmamanıza rağmen o dokümandaki imzayı da...
+
+40
+00:25:30,804 --> 00:25:47,644
+Kullanabilirsiniz. Peki bunun önüne geçmek için metinle ilişkilendirmek gerekiyor. Burada ne yapıyoruz aslında? RSI örnek olarak RSI algoritması ya da ŞA256'yı kullanarak signature üretiyoruz. Neyle üretiyoruz?
+
+41
+00:25:57,652 --> 00:26:03,251
+Gizli anahtarıyla şifre üretiyor. Bu şifre ŞA256 nedir?
+
+42
+00:26:03,251 --> 00:26:16,412
+İnput ya da bu bildiğimiz basit hash fonksiyonları ya da özet fonksiyonları da olduğu gibi input'un girişin büyüklüğü ne olursa olsun aynı büyüklükte çıkış üretiyor.
+
+43
+00:26:16,731 --> 00:26:21,432
+Peki bu çıkışımızın boyutu aynı ama nenin fonksiyonu?
+
+44
+00:26:21,791 --> 00:26:24,852
+Mesajın kendisinin artı.
+
+45
+00:26:26,836 --> 00:26:40,276
+Mesajın, bizim kendi gizli anahtarımızın formüsü. Dolayısıyla mesaj değişirse, anahtar farklıysa bu unreversible signature'ı üretmesi mümkün mü? Hayır, değil.
+
+46
+00:26:40,276 --> 00:26:53,635
+Peki ne yaptık bunu? Mesajı ürettik. Dolayısıyla mesajımızın ardına bu bizim gizli anahtarımızla ürettiğimiz imzamızı da ekledik.
+
+47
+00:26:53,872 --> 00:27:01,872
+Sonra bunu gizlememiz gerekiyor. Yani şifrelememiz gerekiyor. Bunu da nasıl yapıyoruz?
+
+48
+00:27:06,099 --> 00:27:20,099
+Bir tane anahtar üretiyoruz biz kendimiz. Bu anahtarla bu mesajı artı imzayı şifreliyoruz. Şifrelerken de AS128'i kullanabiliriz ya da...
+
+49
+00:27:23,988 --> 00:27:31,188
+Şifreleme, buradaki örnekti kullanabiliriz. Sonrasında ne yapıyoruz? Biz bunu zarfa koyuyoruz.
+
+50
+00:27:31,188 --> 00:27:40,367
+Mesaj şifrelenmiş, mesaj artı bu mesajı şifrelerken kullandığımız anahtarla beraber ne yapıyoruz?
+
+51
+00:27:42,407 --> 00:27:50,307
+Alıcının public anahtarı ile alıcının göndereceğimiz kişinin public anahtarı ile şifreleyip
+
+52
+00:27:50,675 --> 00:28:17,548
+Karşı tarafa gönderiyoruz. Tamam mı? Dolayısıyla biz ne yaptık? Dökümanı imzaladık. Ekledik dokümanımıza. Sonra mesaj ve dokümanla beraber kendi ürettiğimiz bir anahtarla şifreledik. Sonra bunu zarf içerisine, şifrediğimiz mesaj ve anahtarı zarf içerisine koyduk. Ve bu zarfı da neyle şifreledik? Alıcının...
+
+53
+00:28:17,844 --> 00:28:25,523
+Public Anahtarı ile şifreledi. Bu bizim sender tarafında güvenli e-mail'de yaptığımız işlem.
+
+54
+00:28:25,523 --> 00:28:34,844
+Birinci işlem bu. Peki Receiver tarafında ne oluyor? Receiver tarafında asimetrik şifreleme kullanıyor orada hatırlarsanız.
+
+55
+00:28:40,723 --> 00:28:45,923
+Public Anahtar ile şifrelenmiş doküven ne ile sadece şifresi çözülebilir?
+
+56
+00:28:45,923 --> 00:28:51,923
+Alıcının özel anahtarıyla, gizl anahtarıyla. Dolayısıyla ne yapıyoruz biz?
+
+57
+00:28:51,923 --> 00:29:00,523
+Gelen mesajı alıcının özel anahtarıyla şifresi çözülüyor. Çözdük mü? Çözdük. Çözüldüğü zaman ne elimiz etti?
+
+58
+00:29:00,523 --> 00:29:06,523
+Şifrelenmiş bir imzalı mesaj artı, bunu şifrelere...
+
+59
+00:29:06,836 --> 00:29:19,655
+Simetrik anahtar. Ayırdık. Sonra bu elde ettiğimiz simetrik anahtarla mesajın kendisini şifreledik. Sonrasında ne yaptık?
+
+60
+00:29:20,051 --> 00:29:46,491
+Bizim elimize mesaj ve signature geldi. Biz bunu sendiren yani gönderecinin public keydede mesajı açtığımız zaman imzalı metneye ulaşabilmiş oluyoruz. Aslında bu esmayının fonksiyonel akışı resimleştirilmiş hali aslında sistematik ve adım adım yapılan prosedürden ibaret.
+
+61
+00:29:52,019 --> 00:30:12,200
+Devam edersek, peki şifreli ve clear sign data aslında mesaj şifresiz ama imzalanmış data nasıl oluyor? Bunları nasıl, hangi algoritmalarla, hangi adımlarla?
+
+62
+00:30:12,544 --> 00:30:20,300
+Bu işlemleri yapıyoruz. Bunları burada görebiliriz. Aslında Esma'ın için RSA'yı...
+
+63
+00:30:21,844 --> 00:30:38,043
+Veyahut da DSA, Digital Signature Algoritmi ya da Digital Signature Algoritmi, DSA ne ile örtülmüştü? ŞA266 mesaj özet fonksiyonu ile üretilmiş şifrelenmeyi kullanılmış.
+
+64
+00:30:38,043 --> 00:30:48,043
+Peki bu proses nasıl çalışıyor? Biraz önceki resim alırsak. MESSAGE'in kendisini alıyor.
+
+65
+00:30:48,339 --> 00:31:02,339
+Ve bunun SHA256 algoritması kullanarak bunu 256 bitlik fix bir çıktı üretiyor. Hatchlenmiş veri üretiyor. Tamam mı?
+
+66
+00:31:02,339 --> 00:31:12,339
+Dolayısıyla bu mesaj neyinin fonksiyonu bizim biraz önceki resimde gördüğümüz gibi mesajın kendisinin ve şifrelenmiş...
+
+67
+00:31:13,299 --> 00:31:26,299
+Mesajın kendisini ve bizim anahtarımızın fonksiyonu. Dolayısıyla bu 256 bitlik özet fonksiyonu bizim şifremizin ve mesajın için unique. Tamam mı?
+
+68
+00:31:26,299 --> 00:31:39,299
+Dolayısıyla bunu bir imza olarak kullanabiliyoruz. Dolayısıyla Esma'yı RSI algoritması kullanarak bu output'u şifreliyor ve
+
+69
+00:31:39,923 --> 00:31:54,923
+Neyle şifreliyor? Göndericini private anahtarıyla şifreliyor ve bu bizim output'umuz bizim göndericinin şifresi olmuş oluyor. Tamam mı?
+
+70
+00:31:54,923 --> 00:32:06,923
+Sonrasında ne yapıyoruz? Bu aslında kişinin şifresini kontrolü de alıcı da senderin public keys'ini yaparak
+
+71
+00:32:07,796 --> 00:32:33,376
+Ve Alıcı'nın public iziyle mesajı çiftelenmiş imzayı çözdük. Elimizde bir mesaj var. Bir de ŞA256 ile üretilmiş bir tane digest var. Peki bu imzanın bu kişiye ait olduğunu ya da bu mesajın bu imzayla imzalandığını nasıl algılıyoruz? O durumda ŞA256 algoritmasıyla gelen mesajı.
+
+72
+00:32:35,571 --> 00:32:48,051
+Biz kendimiz bir digest ile düz üretiyoruz. Sonrasında göndericinin gönderdiği Uygu ZL 6 bitlik Eşik Box'u ile bizim ürettiğimiz çıkışı karşılaştırıyoruz.
+
+73
+00:32:48,051 --> 00:33:00,051
+Eğer ikisi eşitse, aynı ise, identik olsa bizim dokümanımız değişmedi ve bu kişi tarafından imzalandı diyebiliriz.
+
+74
+00:33:00,051 --> 00:33:01,251
+Peki.
+
+75
+00:33:04,948 --> 00:33:19,208
+Zarflanmış veriden birazcık bahsedersek, aslında default şifreleme algoritmaları, yani Esmail'de mesajları kullanılan nedir, AES'tir, AES'tir, AES'tir, bunlar yine kullanılıyor.
+
+76
+00:33:20,488 --> 00:33:27,087
+Ne yapıyoruz aslında? Zarfın içerisine koymak için biz mesajla şifreyi de şifrelememiz gerekiyor.
+
+77
+00:33:29,875 --> 00:33:55,875
+Biz ne yapıyoruz? Random, üstte random bir jeneratörle bir şifre sayısı üretiyoruz. Sonra bunun ile mesaj ve digest şifrelerinin halini şifreliyoruz. Sonra bunun alıcının public anahtarı ile şifreliyoruz.
+
+78
+00:33:56,723 --> 00:34:20,323
+Tamam. Sonrasında bizim mesajımız, aslında text formatında olduğu için 64 bitlik Radix 64 kodlaması var. İnternete bakarsanız bu kodlamayı öğrenebilirsiniz. Radix 64 şu, 2 üzeri 64, 2 üzeri 6. Yani 64 farklı.
+
+79
+00:34:22,643 --> 00:34:49,863
+Semboller var. Bunlar ASCII karakterler. İşte A, B, C, D, Işık'tır, Büyük'tür, Turuşat'ta semboller. 64 farklı sembolümüz var. Peki ne yapıyoruz? Bizim şifrelediğimiz veri, eşlenmiş veri, 3 byte'lık bloklara ayırıyoruz. Tamam mı? 3 byte'lık blok kaç bitti? 24 bitti. Öyle değil mi?
+
+80
+00:34:50,192 --> 00:35:05,131
+Sonrasında 24 bit olduğu için ve Radix64'ü kullandığımız için kodlamak için ASCII formatında 24 bitlik veriyi 6'şer bitlik dilimlere, gruplara ayırıyoruz.
+
+81
+00:35:05,131 --> 00:35:16,971
+Her bir 6 biti de bunların hepsini binary düzeyinde yapıyoruz. Her bir 6 bitlik veriyi de Radix64'e göre ASCII formatında kodluyoruz.
+
+82
+00:35:17,427 --> 00:35:34,947
+Tamam. Dolayısıyla ne oldu? Bizim 3 byte'lik binary verimiz, kodlanmış binary verimiz, 4 tane ASCII sembolüne, rakam, harf neyse sembolü haline geldi. Tamam.
+
+83
+00:35:34,947 --> 00:35:44,947
+Bu şekilde ve zaten bizim normal SMTP protokolümüz de ASCII formatındaydı. Bizim şifrelerimiz veriyi
+
+84
+00:35:45,172 --> 00:36:08,811
+TextBase üzerinden bu şekilde gönderiyoruz. Burada anahtar nokta şu, unutmamak lazım. Üçer byte'lık gruplar halinde alıp, altı byte'lık alt gruplara bölüp her birini de Radix64'e göre kodladığımız için bizim output'umuz dördün katı olmalı. Öyle değil mi?
+
+85
+00:36:09,235 --> 00:36:23,076
+Çünkü 3 byte'li 4 tane asker karakter. Dolayısıyla bizim output'umuz 4'ün katından, yani bizim metnimiz 3 byte'li kısımlarla 4'ün katı olmaz ise eksikliği gönderirken nasıl tamamlıyoruz?
+
+86
+00:36:23,076 --> 00:36:34,335
+Eksik kalan kısımlara eşittir sembolü kullanarak göndermiş oluyoruz ve ulaşış tarafında bu eşittirleri öküp, generadex64'ler bunları binary veriyor.
+
+87
+00:36:34,592 --> 00:37:01,492
+Çeviriyoruz. Sonra, ledadis64'te 4 tanesi 3 bayitlik veriye denk geliyor. Buradan bizim verimizi elde ediyoruz. Sonra bunu alıcının private anahtarıyla açıyoruz. Binary kodlanmış veriyi. Sonra, PSTO Random jeneratörden üretilmiş anahtarları alıyoruz. Bu anahtarla mesaj ve şifreyi aşıyoruz. Elimizde bir mesaj var.
+
+88
+00:37:01,840 --> 00:37:07,320
+Bir de şifre var. Şifre ne ile? Göndericinin private anahtarı ile.
+
+89
+00:37:07,760 --> 00:37:34,900
+Şifrelenmiştir. Bizde de göndericinin public anahtarı var. Biz göndericinin public anahtarıyla bu digest'i, yani 256 bitlik, özet fonksiyonu elde ettik. Sonra gelen mesajı da LSI ya da ŞA256'yı göre hash diyoruz. İkisi birbirine hash ise mesajımız orijinal ve bu iş tarafına imzalanmış diyoruz. Ve böylelikle güvensiz tekstabanlı.
+
+90
+00:37:35,315 --> 00:37:45,335
+SMTP protokol üzerinden güvenli bir iletişim sağlanmış oluyoruz. Aslında basit, sistematik bir çözüm.
+
+91
+00:37:45,335 --> 00:37:46,815
+Peki.
+
+92
+00:37:51,860 --> 00:38:12,860
+Bunu birazcık daha sistematik haline getirelim. Nasıl sistematik? Bir şirketin personelisiniz. Her birinize ayrı ayrı anahtar vermek yerine, domain olarak bunu şifrelemek. Yani siz o firmanın...
+
+93
+00:38:14,771 --> 00:38:40,532
+Bir personeli olarak da firma adına mail atıyorsunuz. Aslında e-mail mesaj sisteminin belli bir etki alanı çerçevesinde güvenli hale getirmesi ve sorumluluğu bu etki alanına vermesi bakımında etki alanı anahtar, kimlik doğrulanmış mail ya da dikim geliştirilmiş. Bu internet standardı RFC 4871.
+
+94
+00:38:41,588 --> 00:38:45,088
+Yine bu domen ile alakalı.
+
+95
+00:38:49,235 --> 00:38:59,235
+Güvenli E-mail sisteminde bunu kullanabiliriz. Peki bunları kimler kullanıyor? Mesela Yahoo Mail, Gmail. Bunlar Domain Anahtarları.
+
+96
+00:38:59,235 --> 00:39:03,235
+Yani Gmail sisteminden Gmail sistemine ya da Gmail sisteminden dışarıya.
+
+97
+00:39:03,235 --> 00:39:13,235
+Buna siz Gmail'i ürün atıyorsanız, Gmail kendisi Domain Anahtarıyla güvenli bir şekilde bunu karşı tarafa iletiyor. Aynı zamanda ISP'ler.
+
+98
+00:39:13,556 --> 00:39:18,615
+Gerek duyulması durumunda işte büyük firmalar bunu kullanmış oluyor.
+
+99
+00:39:20,275 --> 00:39:25,275
+Evet [öğrenci] sunum için hazırmış. Hazırsın değil mi [öğrenci]?
+
+100
+00:39:27,395 --> 00:39:29,416
+Evet hocam sesim geliyor mu?
+
+101
+00:39:29,775 --> 00:39:33,836
+Tamam geliyor. Bir saat kaç oldu şimdi bakın.
+
+102
+00:39:36,980 --> 00:39:44,720
+Tamam. Bir dört dakika ben bir iki slide daha gideyim. Üçüka kadar sen sunarsın. Ondan sonra on lira kadar biraz ara vermiş oluruz. Olur mu?
+
+103
+00:39:45,180 --> 00:39:46,699
+Tamam. Teşekkürler hocam.
+
+104
+00:39:46,720 --> 00:39:48,859
+Tamam. Ben biraz sonra ekran yönetimini sana vereceğim.
+
+105
+00:39:49,340 --> 00:39:49,920
+Tamamdır.
+
+106
+00:39:54,452 --> 00:40:04,972
+Şimdi devam edelim arkadaşlar. Peki, internet mail mimarisinden birazcık bahsedelim. Nasıl mesajlaşıyoruz?
+
+107
+00:40:04,972 --> 00:40:19,972
+Şimdi bir mesajın göndercisi var, bir mesajın alıncısı var ve arkada mail sisteminin arkasında mesaj iletim ya da message handling sistem, message handling sistem aslında.
+
+108
+00:40:20,884 --> 00:40:30,284
+SMTP protokolü ile mesajlar transfer ediliyor. Dolayısıyla hem alıcı tarafında hem verici tarafında mesaj transfer ajanları var.
+
+109
+00:40:30,284 --> 00:40:40,083
+Ve bu ajanlarla SMTP protokolü üzerinden göndericinin mail sürücüsüne gönderiyor.
+
+110
+00:40:40,083 --> 00:40:41,284
+Sistemimiz...
+
+111
+00:40:41,715 --> 00:40:58,975
+SMTP protokolü yani tekst tabanlı. Peki biz bunu ne yapıyoruz? Esmi ekliyoruz, video ekliyoruz, audio ekliyoruz. Dolayısıyla biz SMTP temel basına SMTP'yi muayeni ya da esmi ayeni yoluyla Extended SMTP protokolü.
+
+112
+00:40:59,199 --> 00:41:22,839
+Kullanıyoruz ve Message User Agent ile bir e-mail protokolü, bir e-mail programı olabilir, bir browser üzerinde çalışan bir uygulama olabilir. Bununla biz mesajımızı yazıyoruz. Bu mesaj, SE SMTP protokolü ile aslında arka planda SMTP protokolünde gönderilebilecek.
+
+113
+00:41:23,184 --> 00:41:49,704
+ASCII tabanlı mesaj metni alıcı ve verici ve subjet kısımları haline getiriliyor. Ve dönüş tarafındaki SMTP protokolü tekrar orijinal mesaj haline getirmiş oluyor. Ve biz bunları alıcı, yani mail alıcısı sürekli alert vaziyette mail gelip gelmediğini kontrol ettik.
+
+114
+00:41:51,827 --> 00:42:01,108
+Ya da lokal programı çalıştırarak bu maillerin inbox'una düşmesini sağlamış oluyoruz. Aslında işlem biraz basit.
+
+115
+00:42:01,108 --> 00:42:09,307
+Peki, Dikim, yani hatırlarsanız Domain Key Identified Mail Sistemi de nasıl oluyor?
+
+116
+00:42:14,356 --> 00:42:15,596
+agentler burada
+
+117
+00:42:15,596 --> 00:42:18,316
+message user agentler
+
+118
+00:42:18,316 --> 00:42:19,576
+mesaj yazılıyor.
+
+119
+00:42:19,976 --> 00:42:21,376
+SMTP protokolüyle
+
+120
+00:42:21,376 --> 00:42:24,596
+MSA'ye message agentlerle
+
+121
+00:42:24,596 --> 00:42:25,836
+imzalanıyor.
+
+122
+00:42:27,336 --> 00:42:27,536
+Ve
+
+123
+00:42:27,536 --> 00:42:30,156
+o agentin yani
+
+124
+00:42:30,156 --> 00:42:31,976
+etki alanı tarafından blok olarak
+
+125
+00:42:31,976 --> 00:42:33,496
+imzalandıktan sonra
+
+126
+00:42:33,496 --> 00:42:35,516
+SMTP protokolüyle
+
+127
+00:42:35,516 --> 00:42:37,956
+karşı tarafa gönderiyoruz. Karşı taraf
+
+128
+00:42:38,483 --> 00:43:04,483
+Gelen mailin o etki alanından olup olmadığını sorgulamak için gelen anahtarı, Agent'ın DNS serverına anahtar sorgulaması yapıyor. Anahtar sorgulaması ile bunun o etki alanından gelen mesaj olduğunu doğruladıktan sonra, user'ın alıcının inbox'una düşürmüş oluyor. Dolayısıyla bu da...
+
+129
+00:43:05,396 --> 00:43:15,396
+Belki nasıl çalıştığıyla alakalı yapı. Soket layer'a geçmeden önce [öğrenci]'ye ekranı verelim.
+
+130
+00:43:16,235 --> 00:43:17,596
+Hemen alıyorum hocam.
+
+131
+00:43:19,735 --> 00:43:23,315
+Sana yetki verdim. Ekranı paylaşabiliriz [öğrenci].
+
+132
+00:43:24,036 --> 00:43:24,695
+Tamamdır.
+
+133
+00:43:31,956 --> 00:43:33,136
+Ekran geliyormuş ha?
+
+134
+00:43:33,856 --> 00:43:34,476
+Geldim.
+
+135
+00:43:35,176 --> 00:43:37,136
+Tamam, süper. Paylaşıyorum hemen.
+
+136
+00:43:39,195 --> 00:43:48,356
+Herkese selamlar. Bugün Türkiye'de bilişim sektöründeki suçlar ve fikri sinayi hakları üzerine bir sunum gerçekleştireceğim.
+
+137
+00:43:48,356 --> 00:43:52,356
+Bu kapsamda ceza hukukunda bilişim suçlarının düzenlenmesi.
+
+138
+00:43:52,735 --> 00:44:14,415
+İki kısımda oluşturulmuş. Biri özel kanunla, yani direkt farklı bir kanun oluşturularak birleşim suçlarına yönelik maddeler eklenmiş. Bunda üç tane örnek var dünya genelinde. İlki Amerika'da 1986 tarihli bilgisayar sahtekarlı ve bilgisayarın köke kullanılması kanununun eklenmesi.
+
+139
+00:44:20,960 --> 00:44:36,840
+Diğeri de Hindistan'da 2000 tarihli Bilgisayar Mühendisliği kanunu şeklinde. Bunun haricinde yani özel tekrar yeni bir kanun yazılması yanı sıra mevcut ceza kanunun içerisinde bazı maddelerin eklenmesiyle de bu suçlar düzenlenebiliyor.
+
+140
+00:44:48,960 --> 00:44:57,199
+Bu mevcut suç tariflerin açıklamaları ekleniyor. Bu madde de yer alan ülkeler arasında Fransa, Türkiye ve Lüksanburg gibi ülkeler yer almakta.
+
+141
+00:44:57,720 --> 00:45:07,039
+Almanya, Kanada, Japonya ve İsviçre ülkelerde korunan hukuki menfaat ölçüsünü çıkartarak bu kanunlar içerisinde yer alınmış, kanun grupları içerisinde.
+
+142
+00:45:07,599 --> 00:45:12,699
+Türk Ceza Hukukundaki bilim suçlarının düzenlenmesi sistematiği de aslında karma bir yapı var.
+
+143
+00:45:16,960 --> 00:45:25,400
+Bu ışın tuşları kısımları eklenmiş. [öğrenci], slide değişmiyor ama sende değişiyor.
+
+144
+00:45:25,400 --> 00:45:33,119
+Öyle mi? Evet. Ekranı paylaş, sunumu paylaşma. O durumda sunumu paylaşırsan tek tek slide da değiştirmen gerekiyor.
+
+145
+00:45:33,500 --> 00:45:37,920
+Tamam hocam. Ekranı paylaşırsan daha rahat olur. Tamamdır.
+
+146
+00:45:42,387 --> 00:45:45,728
+Çok teşekkür ederim haber verdiğiniz için bu arada.
+
+147
+00:45:50,547 --> 00:45:51,787
+Şu an geliyor mu?
+
+148
+00:45:51,787 --> 00:45:59,307
+Geldi, evet. Şimdi sen ekranda değiştirdikçe hepimiz de takip ediliyor olacağız.
+
+149
+00:45:59,307 --> 00:46:01,787
+Şu an geliyor değil mi? Değiştirdim ekranı.
+
+150
+00:46:01,787 --> 00:46:02,787
+Evet, evet geliyor.
+
+151
+00:46:03,123 --> 00:46:11,823
+Tamam, süper. Özel kanun ve mevcut ceza kanunu olarak iki sistematik şekilde ilerlediğini söylemiştik. Ceza Kukluna Bilişim Kuşları'nın dünya genelinde.
+
+152
+00:46:12,603 --> 00:46:26,963
+Türk Ceza Kukluna Bilişim Kuşları'nın düzenlenmesi sistematiğinde kanun yapıda olduğunu, yani hem özel bir yeni tasarlanmış kanun veya mevcut kanun içerisinde eklenen maddeler şeklinde olduğunu anlattım bu slide'a kadar.
+
+153
+00:46:26,963 --> 00:46:29,863
+Bu maddede şöyle bir durum var.
+
+154
+00:46:31,123 --> 00:46:53,943
+Konuyu hakkında düzenleme gerçekleştirilmeden önce bilşim suçları kapsamındaki fiiller hırsızlık, dolandırıcılık, nası zırar yani mala zarar verme gibi maddeler adı altında bilşim tekniği çağdaş hayatta büyük süratle yaygınlaştığı için yerleştirilmiş program, veri ve diğer bütün unsurları en büyük hassasiyetle korumak zaruriyetle hükümlerin getirmesi gerektirmiştir diyor.
+
+155
+00:46:59,123 --> 00:47:10,543
+Okuduğum bu madde aslında iki ceza mevzuatına dahil olan ifadeyi belirtmekte. Bu da 2001 yılında paylaşılmış bir maddeydi.
+
+156
+00:47:11,411 --> 00:47:35,591
+Türkiye'de aslında ilk bilişim suçlarına yönelik madde 765 sayılı Mülga dediğimiz eski Türk Ceza Kanunu. Bu 1926 yılında çıkmış. 2005 yılında kadar geç halletini sürdürmüş. Aslında 1985 yılında bazı güncellemeler yapmış ciddi güncellemeler ama bunun 1926 ile 2005 arasında geçtiği söyleniyor.
+
+157
+00:47:39,411 --> 00:47:57,992
+765 sayılı ETCK yani Eski Türk Ceza Kanunu'na göre 1991 yılında eklenen bilgileri otomatik işleme tabi tutan sistem ibaresiymiş. Bundan sonra ortaya çıkan ihtiyaçlar neticesinde birçok kanuna, bilişimle ilgili hükümler ders edilmiştir. Yani eklenmiştir demek istiyor.
+
+158
+00:47:57,992 --> 00:48:06,992
+Kanun koyucu 6. ay 14. 1991 tarihli ve 37.756 sayılı kanunun 20. maddesiyle.
+
+159
+00:48:07,411 --> 00:48:35,411
+Bu sayı ile eski Türkiye Cumhuriyeti Kanunu 521. maddeden sonra gelmek üzere bilişim alanında suçlar ana başlığı altında eklenmiş bir 11. kısımlar ibaret olduğu söyleniyor. Bu 765 sayılı eski Türk Ceza Kanunu'nda 4 tane madde var. Verilerin ele geçirilmesi ve zarar vermek amacıyla dağıtımı. Bu birinci madde. Bunun suç ibaret de şu. Bir yıldan üç yıla kadar hapis ve bir milyon liradan on beş madde.
+
+160
+00:49:03,411 --> 00:49:09,771
+Bütün bu dört maddede de hep verilir yazısına dikkat çekmemiz gerekiyor.
+
+161
+00:49:10,471 --> 00:49:13,211
+Onu da bu üç ve dördü anlattıktan sonra söyleyeceğim.
+
+162
+00:49:13,211 --> 00:49:17,032
+Sahte belge oluşturulması ve kullanılması amacıyla verilerde tahrip.
+
+163
+00:49:17,152 --> 00:49:24,271
+Bir yıldan üç yıla kadar tahrip edilmiş olanları bilerek kullananlara altı aydan iki yıla kadar iç cezası veriliyor.
+
+164
+00:49:24,831 --> 00:49:27,211
+Dördüncü son maddede ek yaptırımlar.
+
+165
+00:49:27,471 --> 00:49:29,351
+Feri cezalar adı altında yer alıyor.
+
+166
+00:49:29,851 --> 00:49:31,411
+Meslek icrası sırasında veya...
+
+167
+00:49:31,411 --> 00:49:40,251
+İcrası dolayısıyla suçun işlendiği bir kamu hizmetinden veya meslek veya sanat veya ticaretten 6 aydan 3 yıla kadar yasaklanması cezası da verilir diyor.
+
+168
+00:49:40,251 --> 00:49:58,391
+Buradaki verilir kesin bir yargı olduğu için yazılı bir kanun olarak geçiyor. O yüzden buradaki ceza hakimlerine aslında karar verirken kendi insetifleri yerine bu kanuna uymak zorunda olduklarını gösteriyor. Verilir ifadesi.
+
+169
+00:49:59,155 --> 00:49:59,975
+760
+
+170
+00:50:00,000 --> 00:50:08,960
+İlginç 5 sayılı kanundan sonra, 1926 ile 2005 yılı arasına kadar sürekli bir güncellenmeye çalışılmış.
+
+171
+00:50:09,179 --> 00:50:20,219
+En sonunda 1 Nisan 2005 tarihinde 756 sayılı, 765 sayılı kanun yerini 5237 sayılı Yeni Türkiye Cumhuriyeti Kanunu'na bırakmış.
+
+172
+00:50:20,500 --> 00:50:28,000
+Bu kanunla birlikte bilinçli suçları da çağın gereklerine göre yorumlanarak ilgili kanun maddeleri yeniden düzenlenmiş.
+
+173
+00:50:28,000 --> 00:50:45,299
+Yeni Türkiye Cumhuriyeti Kanunu'nda özel hükümler içeren suç tipleri ve yaptırımların yer aldığı ikinci kısımda devleti önde tutan anlayıştan sıyrılarak bireyin ön plana çıkarıldı ve Avrupa'nın modern ceza kanunlarında sistematik uyumun sağlandığını belirtilmiş.
+
+174
+00:50:46,299 --> 00:50:56,000
+5237 sayılı kanunda bilişim alanında suçlar başlığı altında üç tane madde var. Bu üç maddeden biri 243, 243, ikincisi 243.
+
+175
+00:50:56,000 --> 00:51:09,879
+Bu da 246. madde olarak gözüküyor. O da 2016 yılında eklenmiş bir madde.
+
+176
+00:51:10,804 --> 00:51:38,804
+Bu sayılı ceza kanunu kapsamında dört tane kanun maddesi yer alıyor demiştim. 243, 244, 245 ve 246. Bunlardan 243 bilişim sistemine girme, 244 sistemi engelleme, bozma, verileri yok etme veya değiştirme, 245 banka veya kredi kartlarının kötüye kullanılması, yasak cihaz veya programlar adı altında da atılıyor.
+
+177
+00:51:38,804 --> 00:51:46,443
+Dört madde de TÜZÜLER KİŞİLER HAKKINDA GÜVANLIK TEDBİRİ UYGULANMASI ADA ALTINDA DÖRT MADDEYE KANUNA YER VERİLMİŞ.
+
+178
+00:51:47,884 --> 00:51:52,804
+Eski bir yerin Türk yazmayı karşılaştırmak istersek burada...
+
+179
+00:51:53,139 --> 00:52:12,820
+Eski Türk Ceza Kanunu bulunmayıp ondan farklı olarak yeni kanunda bulunan 245. madde öne çıkıyor. Banka ve kredi kartların kötü kullanılması suç açısından bir ayrım yapılmış burada. Koruduğu hukuksal değer gözetilmeksizin bilim sistemlerine karşı suçlar bölümünde düzenlenmiş burada.
+
+180
+00:52:17,460 --> 00:52:36,560
+Suç tipinin bilim sistemine girme olduğu görülüyor burada. Bu suç tip her ne kadar işte 765 eski kanununda da var olması olsa da bu maddeye ek olarak girip çıkılması yani güvenlik duvarı tedbirleri aşılması gibi suç oluşturmadığını çünkü verinin ele geçilmesinin şart olduğu sayılmak saymış.
+
+181
+00:52:36,560 --> 00:52:45,360
+Böylece herhangi bir verinin elde edilip edilmediğine bakılmaksızın hukuk kaybı bir bilim sistemine girmenin bu madde kapsamında suç olduğu gözüküyor.
+
+182
+00:52:45,460 --> 00:52:58,000
+Eski maddede 765'te sisteme girdi ama veri alamadıysa bir suç teşkil etmiyordu. Ama bu yeni maddede her türlü bir suç teşkil etti ve bunun hüküm altına alınması gerektiği belirtilmiş.
+
+183
+00:52:58,900 --> 00:53:13,539
+İlaveten 765 sayılı kanunda bilgileri otomatik işleme tabi tutan sistem ibadesi yeni kanunda bilişim sistemi olarak değiştiriliyor. Yani bilişim sistemi kavramı 5237 sayılı kanunda karşımıza çıkıyor.
+
+184
+00:53:26,900 --> 00:53:40,380
+İncelenmeye başlıyor. Ayrıca eski kanunda yer alan program, veri veya herhangi bir usul kavramları yerine yeni kanunda sadece veri ibadesi kullanılmış. Bunlar iki kanun arasındaki farklardı belirgin.
+
+185
+00:53:40,980 --> 00:53:53,380
+Yeni kanundaki ilk maddemiz bilişim sistemine girilmeydi. Madde 243 olarak karşımıza çıkıyor. Burada madde 243'ün ilk maddesi...
+
+186
+00:53:53,811 --> 00:54:13,171
+Bilgisayar Mühendisliği, Bilgisayar Sistemleri'nin bütününe veya bir kısmına hukuka aykırı olarak giren veya orada kalmaya devam eden kimseye bir yıla kadar hapis veya adli para cezası verilir. Yani içinden bir şey almasa bile sisteme girdiğinde ceza alacağına, bu hapis veya para cezası olarak alacağına.
+
+187
+00:54:13,536 --> 00:54:25,816
+Bir kanıt niteliğinde bu madde. İkinci madde, yukarıdaki sıkrada tanımlanan fiillerin bedeli karşılığı yararlanılabilen sistemler hakkında işlenmesi halinde verilecek ceza yarı oranına kadar indirilir.
+
+188
+00:54:26,516 --> 00:54:37,556
+Bu da bir indirimin açıklandığı bir madde. Üçüncü madde, bu fiil nedeniyle sistemin içerdiği veriler yok olur veya değişirse 6 aydan 2 yıla kadar hapis cezasına hükmü olunur.
+
+189
+00:54:38,003 --> 00:54:53,103
+Dördüncü son maddede bir bilişim sisteminin kendi içinde veya bilişim sistemleri arasında gerçekleşen veril nakillerini sisteme girmeksizin teknik araçlarla hukuka aykırı olacak izleyen kişi bir yıldan üç yıla kadar hapis cezasını cezalandırılır diyor.
+
+190
+00:54:53,764 --> 00:55:04,643
+Şimdi bu dört maddeye yönelik ben bir tane örnek buldum. İki farklı tüzel kişiye ait iki ayrı internet alışveriş e-ticaret sitesi yani şu anki online e-ticaret sitelerinden biri olarak düşünelim.
+
+191
+00:55:06,003 --> 00:55:14,123
+Bir sitesi sahibi tüzel kişilerden birinin temsilcisinin rakip internet alışveriş sitesi sistemine bir hacker ile anlaşarak girmesi durumunda,
+
+192
+00:55:14,684 --> 00:55:24,023
+hacker ve tüzel temsilcisinin şahsi ceza sorumlu olduğu gibi, yarayına suç işlenen ilgili tüzel kişi hakkında da güvenlik tedbirlerine hükmedilir diyor.
+
+193
+00:55:24,023 --> 00:55:33,023
+Yani burada bir kişinin benim ortağım olduğunu düşünün. Ortağım benim ticaret siteme yönelik karşı firmaya bir hacker tutup,
+
+194
+00:55:34,003 --> 00:55:47,764
+Ve bizim firmamıza yararına bir hamle yaptığında benim hiçbir olaya ilgim veya suç unsurum olmamasına rağmen aslında ben de bu hükümlerden yargılanabileceğimi gösteriyor bu.
+
+195
+00:55:47,884 --> 00:55:56,063
+Çünkü benim ortam benden habersiz yapsa bile benim de ticari bir kar sağlayacağım için bundan ben de sorumlu tutulabileceğim söyleniyor.
+
+196
+00:56:00,371 --> 00:56:06,251
+Engelleme, bozma, belirleri yok etme veya değiştirme. Bu madde 244 olarak karşımıza çıkıyor.
+
+197
+00:56:08,179 --> 00:56:32,019
+Basamağı da bir bilişim sisteminin işleyişini engelleyen veya bozan kişi bir yıldan beş yıla kadar hapis cezası ile cezalandırıldığı söyleniyor. İkinci maddesi ise bir bilişim sistemindeki verileri bozan, yok eden, değiştiren veya erişilmez kılan sisteme veri yerleştiren, var olan verileri başka bir yere gönderen kişi altı aydan üç yıla kadar hapis cezası ile cezalandırılıyor.
+
+198
+00:56:36,179 --> 00:57:00,159
+Dördüncü maddede, yukarıdaki suhralarda tanımlanan fiillerin işlenmesi suretiyle kişinin kendisinin veya başkasının yarayına haksız bir çıkar sağlamasının başka bir suç oluşturmaması halinde iki yıldan altı yıla kadar hapis ve beş bin güne kadar da adli para cezasına...
+
+199
+00:57:00,159 --> 00:57:17,639
+Hükmedildiği söyleniyor. Bu maddelere de vereceğimiz bir örnek var. Burada şikayetiye ait Facebook adresine sanık tarafına şifresinin kırılması yoluyla girildiği ve şifresinin değiştirilmesi suretiyle eşlemez hale getirildiği iddiasıyla açılan bir dava var.
+
+200
+00:57:18,612 --> 00:57:46,612
+Bu davada sananın tüm aşamalardaki savunmasına şifreyi kendisinin 115 değiştirmediğini, değiştirmediğini savunması karşısında sana ait bilgisayarlar şikayetçinin Facebook hesabına giriş yapıldığı tespit edilmese de şikayetçinin adresine girişinin engellendiğine dair bir tespitin bulunmaması karşısında şikayet tarihinden önce Facebook adresinin faal olup olmadığı, şikayetçi tarafından kendi adresine erişim sağlaması...
+
+201
+00:57:46,612 --> 00:58:09,092
+Sağlanmadığı araştırılarak ve şifrenin değiştirilmediği değiştirilmişse de hangi tarihte ve hangi IP numarasından sağlanan değiştirildiği bilgi internet sağlayıcısından ve Facebook şirketinden sorulup erişilmez kalındığı takdirde Türkiye Cumhuriyeti Kanunu 244. maddesinin ikinci alt maddesi.
+
+202
+00:58:10,291 --> 00:58:11,291
+Fıkra mı hocam?
+
+203
+00:58:11,451 --> 00:58:12,791
+Evet, evet. İkinci fıkrası.
+
+204
+00:58:12,791 --> 00:58:27,511
+İkinci fıkrası. Aksi takdirde de aynı yasanın 243. maddesinin birinci fıkrasındaki kapsamında suç oluşturacağı gözetilerek sanığın hukuki durumunun takdir ve tayini gerekirken eksik araştırma ile yazılı şekilde hüküm kurulması.
+
+205
+00:58:27,511 --> 00:58:32,511
+Bu tarz önümde bir tane şey var, dava var. Bu davanın...
+
+206
+00:58:32,980 --> 00:58:48,760
+Bu davada şunu gösteriyor. Eksik araştırma yapılarak gidildiğinde, sistem engelledi veya bir şey değiştirdi, bozdu ama bunun kanıtlanmadığı sürece ceza almayacağını gösteriyor. Bu onun örneğiydi.
+
+207
+00:58:49,268 --> 00:59:13,867
+Bunun alt oyununda da değiştirme, çalma, boğulma bilmem şeyde dijital oyun sektörüne baktık. Dijital oyun sektörünün suçla ilgisi de şu şekilde. Dijital oyun sektöründe oyun geliştiricilerinin fikri haklar, özellikle telif hakları konusunda sorun yaşadığı, oyuncuların ise genellikle büyük bir zaman ve maddiyat harcadıkları oyun karakterlerinin başkalarının eline geçme problemleriyle karşı karşıya oldukları bildirilmiş.
+
+208
+00:59:17,268 --> 00:59:31,307
+Ticari değer taşıdığı herkes tarafından biliniyor. Karakterler oluşturuluyor. O karakterlerin başka kişiler tarafından çalındığında bu kişinin Fükri ve Sinai haklar gereği hem madde hem manevi zarara uğradığı söyleniyor.
+
+209
+00:59:31,987 --> 00:59:59,987
+Bunun için de yine bir tane örneğimiz var. 2011 yılına ait bir dava örneği bu. İşte nokta nokta isimli oyunu oynarken bilgi ve rızası dışında e-post adresine girilerek çifresinin ve e-post adresinin değiştirildiğini ve oyun karakterlerinin çalındığını, karakterlerini çalan şahsın olaydan on dakika önce kendisine mesaj gönderdiğini, oyuncu iletişim sayesinde çalınan oyun karakterlerini, nokta nokta isimli şahsın satın aldığını beyan...
+
+210
+01:00:23,891 --> 01:00:51,871
+Kimin kullanımında olduğunun ve olaydan önce katılana mesaj gönderen kişinin kim olduğunu araştırılarak yine talimat mahkemesinde beyanı alındığı sırada katılan tarafından dosya ibraz edilen CD içeriğiyle tüm deliller birlikte değerlendirilip, gerektiğinde bilişim suçlarından anlayan, tercihen bilgisayar mühendisliği bir bilirkişten raporda alınmak suretiyle toplanan ve toplanacak delillerin birlikte değerlendirilmesiyle sonucuna göre tüm deliller çerçevesi.
+
+211
+01:00:51,891 --> 01:01:12,991
+Karar verilmesini, verilen hukuka aykırı olarak ele geçilip bundan da yarar sağlanmasının ekonomik değer taşısa dahi veriyi taşınır mal haline getirmeyeceği bu itibarla suçun sübültü halinde eylemin 5237 sayılı Türkiye Cumhuriyeti Kanunu 244. maddesinin 4. fıkrasındaki suçu oluşturacağı.
+
+212
+01:01:19,891 --> 01:01:47,391
+Bunlar fükü ve sınayi kişiye ait bir mülk gibi değerlendirildiği için bunun bir suç teşkil edeceği söyleniyor. Bu da iki bin on sekiz yılında yargı sayın vermiş olduğu bir kararmış. Burada yukarıdaki karardan karakter, eşya, sanal dünyaya ait diğer bütün verilerin hukuka aykırı olarak ele geçirilmesi ve erişilmez kılınması kanunun iki yüz kırk dördüncü maddesinin ikinci fikrasındaki suça bundan yarar sağlanması.
+
+213
+01:01:47,891 --> 01:01:58,971
+Bahse konu örneklerinin kullanılması veya bir başkasına menfaat karşılığı temin edilmesi halinde ise bu kez 244. maddenin 4. fıkrasındaki suçtan ceza alabileceğini söylüyor.
+
+214
+01:01:59,711 --> 01:02:07,211
+Bu yüzden küçük yaştaki çocukların bu tarz şeylerle bulaşmaması için kurulmaya çalışıldığı söyleniyor dijital üniversite platformlarındaki.
+
+215
+01:02:07,491 --> 01:02:15,151
+Bu yeni kanundaki 3. maddenizde banka ve aktif kartlarının kötüye kullanılması. Madde 245 olarak geçiyor.
+
+216
+01:02:15,891 --> 01:02:41,211
+Oradaki ilk fıkra başkasına ait bir banka veya kredi kartını her ne suretle olursa olsun ele geçiren veya elinde bulunduran kimse, kart sahibinin veya kartın kendisine verilmesi gereken kişinin cüzası olmaksızın bunu kullanarak veya kullandırtarak kendisine veya başkasına yarar sağlarsa, 3 yıldan 6 yıla kadar hapis ve 5000 güne kadar adli para cezası ile cezalandırılır deniyor.
+
+217
+01:02:43,891 --> 01:02:59,271
+Ayrıca bank hesaplarıyla ilişkilendirerek sahte banka veya kredi kart üreten, satan, devreden, satın alan veya kabul eden kişi 3 yıldan 7 yıla kadar hapis ve 10 bin güne kadar adli para cezasıyla cezalandırılır.
+
+218
+01:02:59,603 --> 01:03:20,844
+Üçüncü fıkrası şu şekilde, sahte oluşturulan veya üzerinde sahtecilik yapılan bir banka veya kredi kartını kullanmak suretiyle kendisine veya başkasına yarar sağlayan kişi, fiil daha ağır cezayı gerektiren başka bir kut oluşturmadığı takdirde 4 yıldan 8 yıla kadar hapis ve 5 bin güne kadar adli tara cezasıyla cezalandırılır diyor.
+
+219
+01:03:21,972 --> 01:03:31,652
+Burada son iki maddemiz de şu şekilde. Dördüncü maddemiz birinci fikrada yer alan suçun A maddesi haklarında ayrılık karar verilmemiş eşlerden birinin.
+
+220
+01:03:31,652 --> 01:03:39,092
+B üst soy veya alt soyunun veya bu derece kayın kısımlarından birinin veya evlat edinen veya evlatlığı.
+
+221
+01:03:39,612 --> 01:03:49,972
+C aynı konukla beraber yaşayan kardeşlerden birinin zararını olarak işlenmesi halinde ilgili akraba hakkında cezaya hükmü olunmaz diyor. Bu önemli bir maddemiz.
+
+222
+01:03:49,972 --> 01:04:04,792
+Ayrılmamış eşler veya aile içinde yaşayan birinci derece yakınlar şeklinde bu tarz kartların kullanımında aslında izin alınmış olduğu varsayılarak bir cezaya hüküm olunmadığı söyleniyor.
+
+223
+01:04:05,332 --> 01:04:15,712
+Beşinci maddede ise birinci fıkra kapsamına giren fiillerle ilgili olarak bu kanunun mal varlığına karşı suçlara ilişkin etkin pişmanlık hükümleri uygulandığı söyleniyor.
+
+224
+01:04:17,043 --> 01:04:31,804
+Bunda da bir tane örneğimiz var. Hayali hesaplara bağlı olarak üretilen kartlarla işlem yapılarak doğrudan banka veya finans kurumunun mal varlığına zarara yol açılmışsa, ilgili banka ya da finans kurumu suçun mağduru sayılıyor.
+
+225
+01:04:32,500 --> 01:04:52,160
+Yargıtay'da sahte kart oluşturulması ve bu tür kartlardan haksız yarar sağlanmasını düzenleyen 245. maddenin ikinci fıkrası ve üçüncü fıkrasında yer alan suçlarda adına kart üretilen kişilerin davaya katılma hakkının bulunmadığına karar vermiş ve suçun mağdurunu banka olarak kabul etmiş.
+
+226
+01:04:52,160 --> 01:04:59,079
+Yani banka suçlu olarak kabul edilmiyor. Yani örnek veriyorum. Ben X bankasını kullanıyorum.
+
+227
+01:04:59,407 --> 01:05:18,947
+Benim adıma bir sürü sahte kart üretilmiş. Yani burada banka mağdur, bankayı suçlayamıyoruz. Bu kartları üreten kişi suçlu oluyor sadece. Banka ya da ekstra tazminat davası falan açılmaya kalktığında okuduğum maddelerde genellikle biraz olumsuz dönüş yapıldığı söyleniyor. Bankanın herhangi bir güvenlik açığı olmadığı sürece.
+
+228
+01:05:20,884 --> 01:05:44,644
+Bu kapsamda Türkiye Cumhuriyeti Kanunu'nun 245. maddenin 4. fıkrası uyarılınca aşağıdaki durumlarda atıfta bulunan kişi suçun faili olsa da cezalandırılması mümkün olmayacaktır. Aslında biraz önce 4. fıkrada saydığımız şeyler bunlar. Evlilik birliği içerisindeki eşler arasında bu suçun işlenmesi durumu, haklarına ayrılık kararı verilmesi hariç.
+
+229
+01:05:45,023 --> 01:06:05,443
+Üst soy dediğimiz anne baba, anneanne, dede varsa bunların üstleri veya alt soy çocuk, torun, torunun çocuğu varsa bunların altları veya bu derece kayın hısımları ya da evlat edinen evlatlık zararını bu suçun işlenmesi. Aynı konukta yaşamak şartıyla da kardeşler arasında bu suçun işlenmesi halin. Bunlar ceza alamıyor.
+
+230
+01:06:11,603 --> 01:06:13,603
+Bu da, bu ne?
+
+231
+01:06:14,195 --> 01:06:32,376
+Tüzelkişe hakkında güvenlik tedbiri uygulanması. Bu 246. madde. Bunun birinci fıkrası. Bir tane fıkra var burada. Bu bölümde yer alan suçların işlenmesi suretiyle yararına haksız menfaat sağlanan tüzelkişe hakkında bunlara özgü güvenlik tedbirlerine hükmü olunur diye bir madde var.
+
+232
+01:06:32,376 --> 01:06:42,195
+Burada suçla tüzelkişe yararına menfaat sağlanması faal olmamakla birlikte tüzelkişinin doğrudan veya dolaylı bir şekilde suçun içinde olmasını gerektiriyor.
+
+233
+01:06:43,795 --> 01:07:03,415
+Kanunun 20. maddesinde Tüzelkişer hakkında ceza yaptırımı uygulanamaz ancak suç dolayısıyla kanunda ön görülen güvenlik tedbiri niteliğindeki yaptırımlar saklıdır. Aslında bu biraz önce verdiğimiz bir örnek vardı, e-ticari sitesi. Benim ortağım bir suç işlese bile aslında benim de sorumlu olacağımdı.
+
+234
+01:07:10,943 --> 01:07:17,943
+Buna ne denir? Fail mi denir hocam? Evet, fail olabileceğimizi söylüyor burada.
+
+235
+01:07:18,931 --> 01:07:46,651
+Bunların güvenlik tedbirleri dört tane. Madde 60'da açıklanmış bu. Bir kamu kurumunun verdiği izne dayalı olarak faaliyette bulunan özel hukuk, tüzel kişinin, organ veya temsilcilerinin iştirakiyle ve bu iznin verdiği yetkinin kötü kullanılması suretiyle tüzel kişi yararına işlenen kısıtlı suçlardan mahkum.
+
+236
+01:07:46,931 --> 01:08:12,391
+Mahkumiyet halinde iznin ithaline karar verir diyor. İkinci madde, müsaadele hükümleri yararına işlenen suçlarda özel hukuk tüzel kişileri hakkında da uygulanır. Üçüncü madde, yukarıdaki fıkralar hükümlerinin uygulanması işlenen fiile nazaran daha ağır sonuçları ortaya çıkarabileceği durumlarda hakim bu tedbirlere hüküm etmeyebilir. Bu madde hükümleri kanunun ayrıca belirttiği hallerde uygulanır.
+
+237
+01:08:14,931 --> 01:08:25,811
+Her kişide daha çok böyle ceza hakimine, ceza hakiminin kararına bırakmış gibi diyor. Çünkü kesin olarak çok kesin hükümler yok bir iki madde haricinde.
+
+238
+01:08:27,031 --> 01:08:34,731
+Son kısma geliyoruz. Bunlar ayrı maddeler. Özel hayata ve hayatın gizli alanına ilişkin suçlar başlıyor.
+
+239
+01:08:35,119 --> 01:08:52,319
+Kanunun kişilere karşı suçlar başlıklı ikinci kısmının dokuzuncu bölümünde 132 ile 140. maddeleri arasında kişiler arasındaki haberleşmeye ilişkin ihlaller, özel hayatın gizliliğine müdahale ve kişisel verilerin korunmasına dair suç tipleri düzenlenmiş.
+
+240
+01:08:52,319 --> 01:09:02,779
+Bu üç suç tipine de ben detaylı olarak girmedim. Genel olarak ses kaydı veya kişinin mahram fotoğraflarının çekilmesi tarzı şeylerden bahsediyoruz.
+
+241
+01:09:03,119 --> 01:09:18,979
+Başlıkta yerini bulan özel hayatın gizliliğini ihlal edilmesi hususu 136. maddede de yaptırma bağlanmış ve bu fiilin görüntü veya seslerin kayda alınması suretiyle ihlal edilmesi halinde cezanın alt sınırının bir yıldan az olmayacağı ifade edilmiştir.
+
+242
+01:09:18,979 --> 01:09:31,119
+Ayrıca kişilerin özel hayatına ilişkin görüntü veya sesleri ifşa edenler de aynı maddeye dayanarak cezalandırılabilecek olup fiilin basın ve yayın yoluyla işlemesi halinde de aynı cezaya hükmede.
+
+243
+01:09:31,119 --> 01:09:43,619
+Yani burada ceza katlanacak diyor. Bir kişi kendi suçu işledi. Bir de bunu basın yoluyla yaydıysa suçunun iki katı çıkacağını ifade ediyormuş bu madde.
+
+244
+01:09:46,239 --> 01:09:53,779
+5846 sayılı bir diğer maddemiz var bizim. Fikir ve sanat eserleri kanun düzenlenmeleri. Aslında bu birçok şeyi kapsıyor.
+
+245
+01:09:55,007 --> 01:09:58,608
+Sanat adı altında yaptığımız birçok şey. O neydi?
+
+246
+01:10:00,500 --> 01:10:22,159
+Patent başvurularını falan da kaptıyor. Bu maddede şu, fikri mülkiyet hakları şahsa ait ancak maddi nitelikte olmayan fikir ve düşünceler üzerindeki hak ve yetkileri ifade ediyor. Bu kapsamda büyük emek ve çaba sarf edilerek ortaya çıkartılan fikir ve sanat eserlerini meydana getiren eser sahiplerinin haklarının muhafaza altına alınması gerekli.
+
+247
+01:10:28,500 --> 01:10:53,799
+Bu kanunda 1995 yılında yapılan değişiklikle birlikte bilişim yazılımları, bilgisayar programları da dahil eser kavramı içine alınmış olup buna gerekçi olarak ülkemizde hızla gelişen yazılım sektörünün ürünleri olan bilişim yazılımlar üzerindeki fikri halkların fikir ve sanat eserleri kanunu tarafından açık ve net bir şekilde korunması gözetilmiştir deniyor.
+
+248
+01:10:54,355 --> 01:11:21,735
+Burada aslında iki kısma ayrılıyor. Mali haklar ve manevi haklar. Mali haklar olarak işleme hakkı, çoğaltma hakkı, yayma hakkı, temsil hakkı, işaret, ses veya görüntün hakkına yarayan araçlarda umma iletim hakkı, güzel sanat eserlerinin satışından pay alma hakkı, manevi hak olmak üzere ise umma arz yetkisi, adın belirtilmesi, eserde değişiklik yapılmasının yasaklanma yetkisi.
+
+249
+01:11:22,355 --> 01:11:28,895
+Bu kadar da beni dinlediğiniz için teşekkür ediyorum.
+
+250
+01:11:29,115 --> 01:11:29,775
+Teşekkürler.
+
+251
+01:11:30,115 --> 01:11:32,315
+Bunu mail olarak bana atabilir misin?
+
+252
+01:11:33,155 --> 01:11:34,456
+Tabii atarım hocam.
+
+253
+01:11:34,575 --> 01:11:37,935
+Tamam, saat on birde kaldığımız yerden devam edelim.
+
+254
+01:11:38,615 --> 01:11:40,355
+Tamamdır, çok sağ olun.
+
+255
+01:11:41,135 --> 01:11:41,975
+Teşekkürler.
+
+256
+01:43:53,524 --> 01:44:03,384
+Arkadaşlar, kaldığımız yerden devam edelim. Bu arada [öğrenci]'ye de teşekkür ediyoruz bu değerli araştırması için. Gerçekten kapsamlı bir çalışma olmuş.
+
+257
+01:44:05,384 --> 01:44:20,024
+Şimdi hatırlarsanız, demiştik ki internet başlangıçta tekst tabanlı ve güvenlik temel alınarak kurulmuş bir yapı değil. Ama sonrasında ihtiyaçlar neticesinde.
+
+258
+01:44:21,555 --> 01:44:35,796
+Güvenli hale getirilmesi ya da güvenlik ihtiyaçları yerine modif edilmesi, geliştirilmesi ihtiyaçları. SSR ve GLS yani Transport Layer Security.
+
+259
+01:44:35,796 --> 01:44:47,075
+Bu aslında güvenlik servisleri olarak en sıklıkla kullanılan iki tane ana protokol ailesi olarak düşünülebiliriz.
+
+260
+01:44:50,003 --> 01:45:17,583
+RCP protokolü üzerine yani Transport Layer protokolü üzerine inşa edilmiş protokol. Dolayısıyla bunlarla alakalı ilk dokümanlar RCP 4646, 4346 Transport Layer Security. Bu 2006 yılında yayınlanmış bir protokol ve SSL protokolü de gene giriş üzerine kurulu bir güvenlik yaygın olur.
+
+261
+01:45:19,891 --> 01:45:32,891
+Dolayısıyla amaçlar altta bulunan, güvenli olmayan TCP protopor üzerine güvenlik için bir katman oluşturmak aslında.
+
+262
+01:45:32,891 --> 01:45:44,891
+Hatırlarsanız TCP katmanları neyimiz vardı? Uygulama değerimiz vardı, transport değerimiz vardı, network değerimiz vardı, link değerimiz vardı ve fiziksel değerimiz vardı.
+
+263
+01:45:44,891 --> 01:45:47,692
+TCP katmanları 5 taneydi.
+
+264
+01:45:49,235 --> 01:46:15,635
+Transport Layer'da kullanılan protokoller TCP ya da UDP protokolleri vardı. Bunlar TCP Reliable yani güvenilir bir birleşim ortamı sağlıyordu. Connection Oriented'di yani bağlantı abandıydı. UDP protokolleri bağlantısız bir protokollü. Dolayısıyla Unreliible güvenilmez bir.
+
+265
+01:46:17,363 --> 01:46:24,363
+İletim ortamı sağlıyordu ama hızlıydı. Dolayısıyla verinin hızlı bir şekilletlenmesi kullandığı zaman yürüdü.
+
+266
+01:46:24,363 --> 01:46:32,363
+Peki, özellikle ağ teknolojileri de güvenlikle yaptığımız zaman üstte de geniş bir application layer'ımız var.
+
+267
+01:46:32,363 --> 01:46:43,363
+Şimdi aslında yapılan işler aslında application layer'da alt tabakada yani visipil layer ile bağlantı noktası tabakada gizli layer'lar oluşturarak
+
+268
+01:46:45,908 --> 01:47:03,908
+Bu özellikler sağlanabiliyor diyebiliriz. Mesela burada Network Layer'da ID protokolü var, Transport Layer'da Disiplin protokolü var. Onun üzeri aslında Application Layer. Ama Application Layer'a geçmeden önce iki tane Layer.
+
+269
+01:47:05,076 --> 01:47:31,076
+Bu SSL ve CSL katmanları iki tabakalı bir katman oluşturuyoruz. Altta bir Record protokolü var. Kayıt protokolü. Onun üzerine Record protokolünü kullanan Handshake protokolü, Change Chipper Speck protokolü, Change Speck protokolü, Anahtar Değiştirme protokolü aslında. Alarm protokolü eşitlik.
+
+270
+01:47:32,659 --> 01:47:43,319
+Protokolü ve hard bit, kalp atışı protokolü olmuş oluyor. Şimdi bunların hepsini peker peker bir inceleyelim.
+
+271
+01:47:44,779 --> 01:47:52,460
+Nedir? TCP ya da TLS, Transport Layer Security kavramına baktığımız zaman
+
+272
+01:47:55,636 --> 01:48:21,436
+Disiplin üzerine kurulu. Dolayısıyla TLS iki ana kavram tarafından oluşuyor. Birincisi TLS Session, diğerisi TLS Connection. TLS Session aslında Client ve Server arasında oluşturulan bir bağlantı, bir session. Ve bu session nasıl oluşturuluyor? Handshake protokolü kullanılar. Three-way Handshake protokolü olarak kullanılıyor.
+
+273
+01:48:21,887 --> 01:48:43,067
+Ve bu her şey protokol yapılırken de ne yapıyoruz biz? Şifreleme ve güvenlik parametrelerini ses ediyoruz, tanımlıyoruz. Dolayısıyla o sesin üzerine birden fazla bağlantı kurulabilir. O sesin için güvenlik şifreleme parametrelerini ses ediyoruz.
+
+274
+01:48:47,988 --> 01:48:59,388
+Her seferinde bağlantı kurulup, şifre değiştirilip, göndermek yerine bir sesim oluşturup, bir seferde bu işi yapmayla bir yükü kaldırmış oluyoruz.
+
+275
+01:49:07,764 --> 01:49:35,104
+Güvenli bir, uygun bir servis sağlıyor. Pirtü pirt karşılıklı ilişkisi var. Transparent. Dolayısıyla her bir bağlantı bir session ile ilişkilendirilmiş durumda. Peki nasıl çalışıyor? Aslında bizim application'ımız, mesaj olabilir, uygulama olabilir, video olabilir, audio olabilir fark etmez. Mesajımız bir blog.
+
+276
+01:49:35,507 --> 01:50:02,347
+Ama hem TCP'nin hem de UDP'nin payload ya da bir taşıyabileceği maksimum veri kapasitesi var. Dolayısıyla bizim uygulama verisini bu TCP ya da UDP'nin payloaduna uygun olarak parçalara bölmemiz gerekiyor. Biz buna fragmentasyon ya da bölümleme, bölütleme diyebiliriz. Bunu bölüyoruz.
+
+277
+01:50:02,771 --> 01:50:19,271
+Sonra daha az yer işgal etmesi için sıkıştırıyoruz. Sonra sıkıştırdıktan sonra Media Access Message Authentication Code.
+
+278
+01:50:19,271 --> 01:50:29,771
+Hatırlarsanız eski figürlerde bir şifreyle bir rs256 ile bir kodla mesajı kullanıp bir kod ekliyoruz.
+
+279
+01:50:30,100 --> 01:50:44,659
+Sonra bunu şifreliyoruz. Sonra şifreledikten sonra SSL Kayıt Hedder'ı ekliyoruz. Dolayısıyla aslında biz şifreli olarak o parçacığı, bu SSL Kayıt'ın içerisinde ne olabilir?
+
+280
+01:50:44,659 --> 01:50:54,420
+İşte kullandığımız anahtarı alıcının public anahtarıyla şifrelemiş olabiliriz. Daha önceki şekillerde hatırlayacağımız gibi.
+
+281
+01:50:54,420 --> 01:50:56,268
+Peki...
+
+282
+01:50:56,948 --> 01:51:19,948
+İş şifreleme işlemlerini bir önceki burada yapıyoruz ama bazen bazı aralıklarla bazı dönemlerde bu anahtarın değiştirilmesi gerekiyor. Bu değiştirilmesine karşı tarafı nasıl haberdar edeceğiz? Burada Change Chipper Speck Protokol kullanmış oluyoruz. Aslında bu...
+
+283
+01:51:20,627 --> 01:51:43,127
+GELES özel protokollerin en basiti ve en sık kullanılanı. Aslında bir tane mesaj, bir byte'lık mesaj seriyor. O bir byte'lık verdiğinde tamamı değeri, lojik bir. Bunu anlamışı bu mesajı aldığınız zaman anahtar değişiyor.
+
+284
+01:51:47,216 --> 01:51:51,576
+suite değişecek mesajını karşı tarafa iletmiş oluyoruz.
+
+285
+01:51:51,576 --> 01:52:00,176
+Alert protokolü aslında bu veri aktarımında alakalı alertler için içeriyor.
+
+286
+01:52:00,515 --> 01:52:06,275
+Aslında alert mesajları da sıkıştırılıp şifreleniyor.
+
+287
+01:52:06,916 --> 01:52:12,775
+Dolayısıyla her bir mesaj 2 byte içeriyor.
+
+288
+01:52:14,783 --> 01:52:38,463
+Uyarı. İkinci byte'lı veri ise fatal uyarı ya da birinci byte'ın da uyarı mı ya da fatal bir hata olduğunu da belirleyen byte. İkinci kısmı ise bu spesifik alarma, bu uyarıya karşı.
+
+289
+01:52:39,891 --> 01:53:07,211
+Kodu içeriyor. Eğer ilk byte'lık veride bu alert hayatı ise TLS, TSL bütün bağlantıyı termine etkiliyor. Tamam mı? Eğer bir hata değil de fatal değil de security ile alakalı bir mesaj ise session'a
+
+290
+01:53:07,859 --> 01:53:22,259
+Termine etmiyor. Bazı seçimlerinde, StoConnection'da değişiklikleri yaparak aynı seçimlerden devam edebiliyor. Dolayısıyla alert protokolü de bu amaçla kullanılıyor.
+
+291
+01:53:22,840 --> 01:53:35,319
+Handshake protokolü aslında TLS protokolünün en kompleks kısmını hissediyor. Dolayısıyla uygulama verisinin iletilmeden önce
+
+292
+01:53:36,819 --> 01:53:59,319
+Bağlantıyı sağlayan bir protokol. Dolayısıyla ne yapıyor server ve client'e de? Her bir server ve client'in birbirini kimlik doğrulaması yapmasını, şifreleme ve message authentication kod algoritmaları üzerinde uzlaşmasını,
+
+293
+01:53:59,828 --> 01:54:08,828
+Sağlıyor ve aynı zamanda şifreleme için kullanılacak anahtar üzerinde de uzlaşılmasını sağlayan bir protokol.
+
+294
+01:54:09,828 --> 01:54:13,408
+DLS protokolünün en kompleksi hali.
+
+295
+01:54:14,108 --> 01:54:21,208
+4 fazı içeriyor. Burada faz 1, faz 2, faz 3 ve faz 4 olarak burada görebiliyoruz.
+
+296
+01:54:21,608 --> 01:54:25,588
+Faz 1'de büyük bir karşılıklı mesajlaşma.
+
+297
+01:54:26,131 --> 01:54:50,131
+Sonra mesaj verken sunucu sertifikasını gönderiyor, anahtarı gönderiyor. Sonrasında karşı taraftan da anahtarını talep ediyor. İkinci fazda. Üçüncü fazda client bu sefer sertifikasını gönderiyor. Exchange anahtarını gönderiyor.
+
+298
+01:54:52,435 --> 01:55:16,335
+Karşı taraftan gelen sertifikayı da verifiye edilmiş halini gönderiyor. Sonrasında dördüncü fasda iletim başlıyor. Şifrelenmiş spekler gönderilmeye başlıyor. Sonrasında sunucu da şifrelenmiş veri gönderecek. Sonlar iletiyor. Karşıda iletim var ve bağlantı.
+
+299
+01:55:16,948 --> 01:55:42,788
+Sonlandırılıyor. Dolayısıyla dikkat ederseniz mesajlaşma fazı, sunucunun sertifikayı göndermesi, alıcının sertifikayı göndermesi, sunucunun sertifikasını verify etmesi, sonra veri alışverişi diye dört parçası olarak HandCheck protokolünü, CLS'te kullanılan HandCheck protokolünü
+
+300
+01:55:47,828 --> 01:56:02,327
+Artbit protokol, güvenli bir retim kurduk ama aslında bu protokol periyodik üretilen bir sinyal, donanımsal ya da yazılımsal olarak üretilen bir sinyal.
+
+301
+01:56:02,327 --> 01:56:13,324
+Ne için kullanılıyor? Normal operasyonun devam ettiğini ve sistemdeki partilerin, alıcı ve vericinin ya da bu bileşenlerin,
+
+302
+01:56:13,427 --> 01:56:21,427
+Normal sekrenize olarak normal süreçinde olduğunu gösteriyor. Tamam mı? Bu protokol...
+
+303
+01:56:22,420 --> 01:56:32,859
+Uygunluğu, erişilebilirliği, yani partilerin ileten ve alan partilerin uygunluğu erişilebilirliğinin takip edilmesi amacıyla kullanılıyor.
+
+304
+01:56:33,340 --> 01:56:41,159
+Hardbit protokolü RFC dokumen olarak 62-50 olarak 2012 yılında tanımlanmış oluyor.
+
+305
+01:56:41,699 --> 01:56:45,420
+GELES Rekord protokolü üzerinde koşuyor.
+
+306
+01:56:46,707 --> 01:57:06,327
+Dolayısıyla Heartbeat protokolü Faz 1'de, Hello Karşılık, Hello Mesajısı var ya, orada gerçekleşen bir iş. Dolayısıyla iki tür hizmeti var. Birisi her bir partinin hayatta olduğunu ve
+
+307
+01:57:07,188 --> 01:57:18,787
+Normal idle periyotlarında bile bağlantının aktif olarak hayatta olduğunu kontrol etmek üzere kullanılan bir protokol.
+
+308
+01:57:18,787 --> 01:57:23,188
+Şimdi gelelim TLS üzerine saldırılara.
+
+309
+01:57:26,292 --> 01:57:35,771
+GLS Record protokol üzerindeki, hatırlarsanız Handshake protokolü vardı, işte Chipper Spec protokolümüz vardı değil mi?
+
+310
+01:57:35,771 --> 01:57:53,172
+Peki, ataklar nedir? Bu Handshake protokolü üzerine yapılan ataklar Record protokolü ve Yağ Application verileri, veri protokolü üzerine yapılan ataklar Public Private Key.
+
+311
+01:57:55,475 --> 01:58:03,655
+PKI üzerine, Persone 2'ler üzerine yapılan ataklar ve diğer ataklar olmak üzere dört kategoride.
+
+312
+01:58:04,515 --> 01:58:15,815
+Şimdi ilk başta BIA tarafından rapor 2014 yılında keşfedilen ve rapor edilen bir ataktan bahsedelim.
+
+313
+01:58:18,068 --> 01:58:43,208
+TLS'deki bir eksiklikten kaynaklanmış bir atak değil. Sadece yazılımsal olarak bir eksiklikten, yani TLS protokolünün mimarisini geliştirirken HandCheck protokolündeki yazılımsal zayıflıktan kaynaklı bir atak. Peki, nasıl çalışıyor?
+
+314
+01:58:44,307 --> 01:58:49,607
+DLS, HeartBit Protokolü'nün exploit edilmesi demiştik.
+
+315
+01:58:49,607 --> 01:58:51,607
+Client ne yapıyor?
+
+316
+01:58:51,607 --> 01:59:00,607
+HeartBit talebi gönderiyor. Bu HeartBit Request'i gönderiyor.
+
+317
+01:59:00,607 --> 01:59:08,107
+Tamam mı? Bunu gönderirken de Bay'lik büyüklükte bir paket gönderiyor. Tamam mı?
+
+318
+01:59:08,107 --> 01:59:10,807
+Sonra Server bunu alıyor.
+
+319
+01:59:13,268 --> 01:59:35,987
+Adir kısmına kendi hayatta olduğu ile alakalı cevabı gönderiyor. Sonra devamında Client'in gönderdiği, oradaki küpteki gönderdiği veriyi ekliyor gönderiyor. Dolayısıyla Client Server ile alakalı bilgileri ve kendi verisini check ederek karşı tarafında hayatta olduğunu algılıyor.
+
+320
+01:59:36,051 --> 01:59:53,331
+Peki bunu nasıl exploit edebiliriz? Şimdi, Client bu arkasına dolgu koyarken bu dolgunun büyüklüğünü de iletiyor. Diyor ki ben 64K'lık bir dolgu koyuyorum. Tamam mı?
+
+321
+02:00:02,676 --> 02:00:29,615
+İçerisine 64K'lık dolgu koymuyor. Server bunu cevaplarken kendinin alakalı bilgileri cevaplıyor. Sonra 64K'lık bilgiyi sanki Client'ten almış gibi RAM'de o bölgede 64K'lık ne kadar bilgi varsa onu koyup gönderiyor. Dolayısıyla bu bilgiler...
+
+322
+02:00:29,615 --> 02:00:40,115
+Başkasına ait veriler olabilir, başka uygulamaya ait kendileri, işletim sistemine ait veriler olabilir. Bunları ne yapmış oluyor? Klein bir haliyle elde etmiş oluyor.
+
+323
+02:00:40,115 --> 02:00:47,715
+Hardbit X2'yı da aslında birazcık buffer overflow attack var biliyorsunuz. Buffer'ın taşma hatası.
+
+324
+02:00:47,715 --> 02:00:54,015
+Bunda da gene buffer'ın size'ının kontrol edilmemesi kaynaklı. Bellekteki bir sonraki...
+
+325
+02:00:54,804 --> 02:01:09,764
+Kodlara ulaşma ve orada executable parçalarla başka program koşturma, saldırı satırlarsanız, vapura vurup, ona benzer bir vulnerability ve onun exploit edilmiş aile.
+
+326
+02:01:10,068 --> 02:01:29,068
+Şimdi gelelim HTTP SL. HTTP aslında nedir? HTTP over SSL. Bu ne yapıyor? HTTP protokol ile SSL'in daha güvenli bir web browser ve web server iletişimi için geliştirilmiş bir kombinasyonu.
+
+327
+02:01:36,083 --> 02:01:44,483
+Arama motorları HTTPS'i desteklemiyor. Çünkü arama motorları genel bir arama olduğu için HTTPS'lerinde çalışmıyor.
+
+328
+02:01:45,483 --> 02:01:53,483
+Web adresleri HTTPS ile başlayan web adresleri aslında HTTPS over SSR desteği var.
+
+329
+02:02:04,051 --> 02:02:23,051
+Dolayısıyla HTTP Server ve Client aslında TLS Server ve Client bağlantısı üzerinde HTTP verisinin iletilmesinden ibaret.
+
+330
+02:02:27,188 --> 02:02:44,907
+Peki gelelim şimdi IP Secure. IP versiyonu 4, güvenlik ihtiyaçlarına göre geliştirilmiş bir IP değil. 32 bit üzerine her bir Secure bitten 4 parçaya, dolayısıyla 2 bitir 32 bit.
+
+331
+02:02:45,555 --> 02:02:51,995
+Bittik Unique adres üretilebiliyor. A, B, C, D, E, F, E, Classlar halinde Classlar ayırabiliyoruz.
+
+332
+02:02:51,995 --> 02:03:07,055
+Bazı bölgeleri yeniden kullanılmak için dynamic bölgeler olarak ayırmışız. Bu şekilde yapı. Ama hiçbir zaman güvenlik birinci amaçlı.
+
+333
+02:03:10,895 --> 02:03:23,796
+TCP layırlarını katmanlar kullanarak SSMine'la, Kerberos'la, SSL'le, HTTPS'le aslında güvenlik mekanizmasını koyduk.
+
+334
+02:03:23,796 --> 02:03:31,096
+Alt Layır'larla güvenlik mekanizmasını koyduk. Ama IP versiyonu 6 aslında doğrudan...
+
+335
+02:03:31,184 --> 02:03:51,184
+IPsec'i desteklemiş oluyor. Peki, IPsec ne? Eğer bir firewallı ya da rutra ile iklemente edilirse, aslında uçtan uca bütün trafiğin güvenli parametre üzerinden...
+
+336
+02:03:53,492 --> 02:04:00,692
+gelişmesini sağlıyor. Dolayısıyla By Volume Bypass edilmesini önlemiş oluyor.
+
+337
+02:04:00,692 --> 02:04:15,692
+Ve IPsecül kullanılması ile aslında uç kullanıcılar için transparent bir iletim ortamı sağlamış oluyor. Uçtan uça güvenliği sağlıyoruz ama bu kullanıcıya transparent oluyor.
+
+338
+02:04:20,692 --> 02:04:27,692
+Güvenli bir iletim ortamı ve güvenli bir routing mimarisi sağlamış oluyor.
+
+339
+02:04:27,692 --> 02:04:36,692
+Aslında iki tane ana fonksiyonu var. Atendi, ikimlik doğrulama, şifreleme fonksiyonu.
+
+340
+02:04:36,692 --> 02:04:44,692
+Buna Encapsulating Security Payload, DSP diyoruz. Bir de Anahtar Değişim fonksiyonu.
+
+341
+02:04:44,756 --> 02:05:11,496
+Aynı zamanda IPsec ile kimlik doğrulama fonksiyonları ya da sadece kimlik doğrulama işini Edge ile yani Authentication Header ile sağlayabiliriz. VPN kullanarak, Virtual Private Network kullanarak hem Authentication'da hem şifrelemeyi tek bir yapı altında birleştirebiliriz.
+
+342
+02:05:11,956 --> 02:05:36,115
+IPsec'i kullanılarak. Yalnız IPsec'le alakalı spesifik bir RFC dokümanı değil. Aslında her bir uygulama için, güvenli uygulamalar için birden fazla RFC dokümanını incelemek gerekiyor. Ne bunlar? İşte 24.01 dokümanı.
+
+343
+02:05:38,804 --> 02:05:58,444
+Mimdre 01 Security Architecture for the Internet Protocol 1998 yılındaki RFC 4302 IP Authentication Hether, IP kemik doğrulama hederinin IP paket ücretlerine eklenmesiyle alakalı RFC dökümünün 2005'te yayınlandı.
+
+344
+02:06:05,615 --> 02:06:28,215
+Yeni 2005'te yayınlanmış RFC'si. Bir de 4306 var. O da Internet Key Exchange protokollü RFC'si. Bu RFC'lerle aslında bunu, IP Security üzerindeki parçalara yayınlanmış oluruz.
+
+345
+02:06:28,884 --> 02:06:52,283
+Peki, güvenlikle alakalı aslında tek yönlü bir ilişki alıcı ile verici arasında güvenli bir trafik elde etmek için tek yönlü bir ilişkiden bahsediyoruz. Dolayısıyla ya da birleşen yönlü bir security gerektiriyorsa aslında iki yönlü bir security.
+
+346
+02:06:56,243 --> 02:07:01,067
+Güvenlikle alakalı, güvenlik parametrelerinin...
+
+347
+02:07:04,532 --> 02:07:16,532
+İdekselmesi, IP Destination adresleri ve Protokoll Identifier olarak üç tane parametre tanımlanmış oluyoruz.
+
+348
+02:07:16,532 --> 02:07:21,532
+IP Set'teki bu ESP format, bunu hatırlarsanız şurada vermiştik.
+
+349
+02:07:29,203 --> 02:07:33,603
+Payload dediğimiz anlamlı veri. Bu anlamlı veri nedir?
+
+350
+02:07:33,603 --> 02:07:41,603
+Headers'ın dışında Payload kısmına koyduğumuz application dataları olan veriydi.
+
+351
+02:07:41,603 --> 02:07:51,203
+Ama biz bunu güvenli hale getirmek için bir de Payload içerisinde ESP, Encounterated Security Payload'u eklemiş olur.
+
+352
+02:07:51,203 --> 02:07:55,119
+Bu Payload nereden hatırlarsanız bu bir...
+
+353
+02:07:55,119 --> 02:08:08,119
+IP Security ESP formatı. Burada şu kısım Payload kısmı. Burada Security Parameter İndeksi, ESP içerisinde, şurası ESP tarafı Payload kısmında.
+
+354
+02:08:08,119 --> 02:08:19,692
+Parametrelerin Exchange Diversitesi. Bu paketin Sıra Nambar'ın numarası Payload'larla alakalı veriler nedir? Payload'un büyüklüğü, Payload'un tipe.
+
+355
+02:08:20,243 --> 02:08:35,923
+İşte padding dediğimiz dolgu malzemesi, bu dolgu malzemesi payload'un verileriyle alakalı boyut kısmı ise bunu 250 bir tamamlamak için ne kadarlık dolgu malzemesi kullandık.
+
+356
+02:08:41,235 --> 02:08:53,235
+Ne kadarının dolgu olduğunu ulaşma tarafında bile bilgiler. Bu da altyazı sekültü, eski formatı.
+
+357
+02:08:53,235 --> 02:09:00,235
+Şimdi gelelim güvenliği resimle alakalı iki tür moddan bahsedeceğiz.
+
+358
+02:09:00,235 --> 02:09:06,235
+Birinci modumuz transport modu, iletim modu. İkinci modumuz da tünel modu.
+
+359
+02:09:06,644 --> 02:09:19,324
+Şimdi, iletim modunda IP paketleri üzerine payload arasında işleme yapılarak güvenliğini sağlanması işlemi.
+
+360
+02:09:19,324 --> 02:09:32,324
+Aslında ne yapıyoruz? Giden ve gelen verilerin güvenliğini sağlaması aslında transport modu. Her bir paketi biz ayrı ayrı...
+
+361
+02:09:33,235 --> 02:09:38,355
+Güvenli hale getiriyoruz her bir paketi. Nerede? Transport modda.
+
+362
+02:09:38,355 --> 02:09:44,636
+Panel modda ise, biz uçtan uça bir tünel oluşturuyoruz.
+
+363
+02:09:44,636 --> 02:09:58,315
+Ve bu tünel oluşturduğumuz zaman, uçtan uça tünel oluştuğu zaman, bu tünel içerisindeki veriler artık tünel içerisine karşısında şifrelenerek gidiyor.
+
+364
+02:10:00,051 --> 02:10:24,051
+Tünel içerisinden akan her bir IP paketi aslında güvenli. Dolayısıyla bütün IP paketlerine güvenli bir iletişim ortamı sağlamış oluyor. Dolayısıyla tünel üzerinden, IP network üzerinden tünel içerisinden bütün paketi orijinal haliyle...
+
+365
+02:10:24,404 --> 02:10:47,624
+Gönderiyoruz. Herhangi bir transfer moddaki gibi herhangi bir ESP ya da Payload'a ekstra bir eklentiler yapmamış oluyoruz. Dolayısıyla eğer uçtan uça kullanıldıysa güvenli bir gateway oluşturulmuş oluyoruz.
+
+366
+02:10:51,475 --> 02:11:06,855
+Hayvold'lar üzerinden final modunda kullandığımız zaman aslında Holokola'daki bütün paketleri uçtanıca orijinal haliyle güvenli bir şekilde iletilmesini sağlamış oluruz.
+
+367
+02:11:06,855 --> 02:11:13,015
+Evet arkadaşlar, bu haftaki anlatımız da bundan ibaret.
+
+368
+02:11:13,935 --> 02:11:15,555
+Sormak istediğiniz bir şey var mı?
+
+369
+02:11:16,795 --> 02:11:18,295
+Haftaya son dersimiz.
+
+370
+02:11:18,771 --> 02:11:43,611
+Ama haftaya arkadaşlar, benim bir doktor randevum var. O yüzden haftaya ders yapamayabiliriz. Onunla alakalı son durumu size söylerim ama ayın üçünde sabahtan benim doktor randevum var. O yüzden onun bir haliyle ya telafi ederiz ya da sizler sunumlardan bakmış olursunuz.
+
+371
+02:11:43,796 --> 02:11:47,876
+Haftaya ders yokmuş gibi düşünebiliriz. Anlaştık mı?
+
+372
+02:11:47,876 --> 02:11:50,196
+Tamam hocam. Geçmiş olsun.
+
+373
+02:11:50,196 --> 02:11:57,796
+Yok, rutin değil, kontrol. İhtiyarlayınca böyle ara sıra doktora ben hayattayım.
+
+374
+02:11:57,796 --> 02:12:01,956
+İşte heartbeat'i göndermek gerekiyor. Bizim şeyimiz rutin.
+
+375
+02:12:01,956 --> 02:12:06,796
+Bir şey olduğundan değil, ben sağlıklı ve hayattayım.
+
+376
+02:12:06,796 --> 02:12:09,156
+Sinyalim, öyle diyelim.
+
+377
+02:12:11,380 --> 02:12:12,380
+Teşekkür ederim.
+
+378
+02:12:12,380 --> 02:12:15,380
+Hocam salcakla kapısından yukluyorsun.
+
+379
+02:12:15,380 --> 02:12:23,380
+Hepinize sınavda görüşmek üzere. Sınav tarihini ben biliyorum. Size duyurduğu zaman ben de haberdar alacağım.
+
+380
+02:12:23,380 --> 02:12:28,380
+Sınav dediğim gibi iki şeyden oluşacak birinci kısım...
+
+381
+02:12:29,076 --> 02:12:55,176
+True-False, bu preregücite kısımlardan bir 15-20 tane basit, temel güvenli kavramına hakim misiniz alakalı? True-False sorusu soracağım. Bir de bizim işlediğimiz kısımlarla alakalı bir ya da iki tane size yorum sorusu, senaryo üzerinde ya da bir case'lerinde yorum sorusu olacak. İki tane ödev vermiştik.
+
+382
+02:12:55,503 --> 02:13:20,363
+Bir tanesini, işte kişiler yaptı, bayağı bir arkadaşınız yapmış bir firma üzerinde, IT Management üzerine, Security Management üzerine bir rapor hazırlayın demiştik. Bir de, Atice ile Lisan'da, Atice Türkiye'deki Lisan'da kendi ülkelerindeki Cyber Security üzerine hukuki sürecidir.
+
+383
+02:13:20,819 --> 02:13:41,699
+Onların da belli bir katkısı olacak. Ama hiç ödev vermemiş olanlar için de bir sıkıntı yok. Sınavı belirtilen tarihte iki kısım halinde tahmin ediyorum bir saatlik kısa bir sınav olur diye düşünüyorum. Hepinize başarılar diliyorum.
+
+384
+02:13:43,319 --> 02:13:44,639
+Teşekkürler. Sağ olun.
+
+385
+02:13:44,839 --> 02:13:46,419
+Teşekkürler hocam. Sağ olun.
+
+386
+02:13:47,667 --> 02:13:48,547
+Kolay gelsin.
+
+387
+02:13:49,228 --> 02:13:50,268
+Sağ olun, efendim. Görüşürüz.
+
+388
+02:13:51,327 --> 02:13:53,087
+İyi günler hocam. Teşekkürler.

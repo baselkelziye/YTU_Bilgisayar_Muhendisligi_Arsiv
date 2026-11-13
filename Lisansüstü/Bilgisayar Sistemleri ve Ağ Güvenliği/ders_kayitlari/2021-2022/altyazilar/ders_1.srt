@@ -1,0 +1,1135 @@
+1
+00:00:52,851 --> 00:00:53,331
+Günaydın.
+
+2
+00:00:54,771 --> 00:00:56,251
+Günaydın arkadaşlar.
+
+3
+00:00:58,131 --> 00:01:00,711
+Günaydın hocam.
+
+4
+00:01:38,195 --> 00:01:41,415
+Herkes sınıfı görebiliyor değil mi? Bir sıkıntı yok.
+
+5
+00:01:43,096 --> 00:01:43,756
+Evet, görüyorum.
+
+6
+00:01:44,135 --> 00:01:45,876
+Kaç kişiyiz şu anda sınıfta?
+
+7
+00:01:55,188 --> 00:02:03,308
+Bayağı var. Arkadaşlar, bir 15-20 dakika bekleyelim, herkes gelsin. Saat buçukta başlatalım, olur mu?
+
+8
+00:02:05,927 --> 00:02:06,628
+Olur hocam.
+
+9
+00:02:07,048 --> 00:02:09,108
+Tamam hocam.
+
+10
+00:31:05,299 --> 00:31:07,059
+Herkese günaydın arkadaşlar.
+
+11
+00:31:10,139 --> 00:31:11,440
+Günaydın Profesör.
+
+12
+00:31:12,599 --> 00:31:15,000
+Günaydın hocam.
+
+13
+00:31:15,079 --> 00:31:18,220
+Kişiyiz şu anda sınıfta. 26 kişiyiz ama yeterli.
+
+14
+00:31:19,240 --> 00:31:20,899
+Geçen hafta ders yapamamıştık.
+
+15
+00:31:21,980 --> 00:31:24,659
+Daha önce belirlenmiş bir randevum vardı.
+
+16
+00:31:24,960 --> 00:31:27,700
+Ders programı da Cuma günü olunca değiştiremedik.
+
+17
+00:31:28,659 --> 00:31:30,859
+Ama bu haftadan itibaren artık Cuma günü.
+
+18
+00:31:31,604 --> 00:31:42,004
+Yapabilmiş oluruz. Aslında niyetim sizlerle yüz yüze ders yapmakta ama olmayınca olmuyor. Yapacak da fazla bir şey yok.
+
+19
+00:31:45,943 --> 00:31:56,004
+Evet, dersimiz Bilgisayar Sistemleri ve Ağ Güvenliği. Lisansüstü ders. Bu dersi...
+
+20
+00:31:56,915 --> 00:32:01,375
+Testsiz yüksek lisans olarak alan arkadaşlar var mı içinizde?
+
+21
+00:32:02,715 --> 00:32:02,995
+Var.
+
+22
+00:32:03,995 --> 00:32:13,655
+Peki, background olarak bilgisayar, elektronik dışındaki programlardan mezun arkadaşlar ya da matematik mühendisi dışındaki programlardan mezun arkadaşlar var mı?
+
+23
+00:32:14,175 --> 00:32:15,295
+[kişisel bilgi]
+
+24
+00:32:15,695 --> 00:32:18,375
+Fizik, fizikte uzak değil. Temel bilimler sonuçta.
+
+25
+00:32:19,347 --> 00:32:25,036
+Yalnız şöyle bir şey, bu lisansüstü bilgisayar sistemleri ve ağ güvenliği olduğu için...
+
+26
+00:32:29,044 --> 00:32:34,824
+Önce buradan başlayalım. Daha iyi olur. Biliyorsunuz ismim Hasan Hüseyin Balık.
+
+27
+00:32:48,403 --> 00:32:53,844
+Burada haftalık sunuları görebilirsiniz. Bu ders lisansüstü bir ders.
+
+28
+00:32:54,451 --> 00:33:17,912
+Ve tesis alan arkadaşlar da sahadan arkadaşlar, benim anladığım kadarıyla Teknopark firmalarında çalışan arkadaşlar. Bunun dışında var mı bilmiyorum. Ya da lisans üstü tezde yüksek lisans yapan arkadaşlar. Bu ders temel bir ders değil. Temel dersi aslında Bilgisayar Mühendisliği bölümünde 40.11.
+
+29
+00:33:18,432 --> 00:33:33,432
+Bilgisayar Sistemlerinin Güvenliği diye, Bilgisayar Sistemlerinin Güvenliği diye bir dersimiz var. O dersi de güz yarı yılında ben verdim. Aslında bu derste, yani lisans dersinde...
+
+30
+00:33:33,807 --> 00:33:48,407
+Temel bilgisayar güvenliği kavramlarını vermiştik. Burada da daha çok üst seviye, lisans üstü seviye. Önce yönetiminden başlayarak daha sonra ayrıntılara, lisansdaki ayrıntılara girmiş olacağız.
+
+31
+00:33:49,407 --> 00:33:56,667
+Kullandığım kitap William Sterling ve Laurie Brown tarafından 2018 yılında yazılan bir kitap.
+
+32
+00:33:57,587 --> 00:34:13,947
+Dördüncü baskısı var. İnternette de bulabilirsiniz. Kitapta da ya da Amazon'dan da isterseniz getirebilirsiniz. Çok faydalı bir kitap diye düşünüyorum eğer bilgisayar ve ağ güvenliği konusunda çalışıyorsanız ya da çalışma planınız var ise.
+
+33
+00:34:17,007 --> 00:34:22,268
+Ara sınav yapmayacağım. Sadece yıl sonu bir final sınavı olacak.
+
+34
+00:34:23,027 --> 00:34:34,527
+Dolayısıyla dersleri sunuları takip ederseniz bir de takip edebilmek için lisanstaki temel background'unuzun da olması gerekiyor diye düşünüyorum.
+
+35
+00:34:34,527 --> 00:34:48,687
+Peki, ne anlatacağız bu derste? Bu haftaki temel bir girişten ve neler var bilgisayar güvenliğinden bahsettikten sonra tamamen yönetimsel.
+
+36
+00:34:49,523 --> 00:35:13,824
+sorunlara bakacağız. Nedir mesela yönetici olarak? Eğer Ağ tarafında çalışan firmalarda arkadaşlar varsa bir IT güvenliğinin yönetimi ve risk değerlendirmesi, IT yönetiminin de kurulum, uygulama, fiziksel ve altyapı güvenliği.
+
+37
+00:35:14,175 --> 00:35:22,976
+Bunlardan bahsedeceğiz ve bunlarla alakalı kavramlar nasıl yapılıyor, nasıl riski değerlendireceğiz. Bunlardan bahsedeceğiz.
+
+38
+00:35:23,380 --> 00:35:42,140
+Sonrasında fiziksel ve altyapı güvenliğiyle devam etmiş olacağız. Bilgisayar güvenliği deyince sadece yazımsa olarak saldırılar, yetkisiz girişler şeklinde düşünmeyin. Fiziksel saldırılar da nedir? Diskin çalınması ya da…
+
+39
+00:35:42,547 --> 00:36:02,827
+İnsan kaynakları güvenliği dediğimiz zaman insanların bilerek ya da bilmeyerek kendi sistemlerine zarar vermeleri bunlarla alakalı önlemlere ve auditing kavramına bahsetmiş olacağız.
+
+40
+00:36:02,827 --> 00:36:08,827
+En son yönetimde hukuki ve etik kavramlar üzerinde.
+
+41
+00:36:09,780 --> 00:36:22,240
+Yönetim kısmını bitireceğiz. Sonrasında lisans tarafında verdiğimiz kriptografik kavramlarının bir üstüne koymuş olacağız.
+
+42
+00:36:22,240 --> 00:36:31,211
+Kriptografik algoritmalar, simetrik algoritmalar ve simetrik algoritmalar kullanılarak mesaj gizliliği.
+
+43
+00:36:32,148 --> 00:36:55,148
+Public Key ya da Asimetrik Kriptografi algoritmaları kullanarak da aslında mesajın kimlik doğrulaması. Çünkü dikkat ediyorsanız, simetrik algoritmalarda, şifrelemede gezilik üzerine yoğunlaşırken, asimetrikte de kimlik doğrulama üzerine yoğunlaşmış olacağız. En son vakit kalır ise...
+
+44
+00:36:55,539 --> 00:37:16,960
+Network Güvenliği'ne, internet güvenliği protokolleri ve bunlarla alakalı standartlar, internet kimlik doğrulama uygulamaları ve en sonunda ki ciddi manada yaygınlaştı kablosuz ağlar. Hem kampüs içerisinde hem şirket içerisinde. Eminim çoğunlukla kablosuz ağ kullanıyorsunuzdur.
+
+45
+00:37:20,447 --> 00:37:42,219
+Lisansüstü dersimizi bitirmiş olacağız. Peki bu derse başlamadan önce neleri bilmenizi umuyoruz. Çünkü bunlarla alakalı kavramlar üzerine durmuş olacağız ve lisans düzeyindeki bilgisayar güvenliği...
+
+46
+00:37:42,547 --> 00:38:04,087
+Teknolojileri ve bunların temel prinsipleri nedir? Ben simetrik şifreleme ya da asimetrik şifreleme dediğim zaman bunların ne anlama geldiğini biliyor olmanız lazım. Kimlik doğrulamayı biliyor olmanız lazım. Erişim kontrolünü biliyor olmanız lazım ne olduğunu. Veri tabanı ve veri merkezi güvenliği.
+
+47
+00:38:04,851 --> 00:38:24,692
+Kötüliyetli yazılımlar deyince nelerden kastettiğimizi, virüsler, molverler, trojanlar, botlar, bunları neler olduğunu, virüsle worm arasındaki farkı, nasıl yayıldıklarını bunları biliyor olmanız gerekiyor.
+
+48
+00:38:26,675 --> 00:38:51,615
+Güvenliğe yörelik saldırılar, first saldırı, availability yani erişilebilirliğe saldırı olan servis reddi saldırısı, sızmanın algılanması, güvenlik duvarları, firewalllar ve sızmanın önlenmesine dair sistemleri kullanıyor, biliyor, temel mantıklarını biliyor olmanız gerekiyor.
+
+49
+00:38:52,244 --> 00:39:07,043
+Sonrasında yazılım güvenliği ve güvenilir sistemlerde yazılımsal saldırılardaki en fazla kullanılan buffer overflow saldırısı. Bunun ne olduğunu, nasıl yapıldığını.
+
+50
+00:39:07,536 --> 00:39:26,895
+Temel itibariyle biliyor olmanız lazım. Yazılım güvenliği kavramı deyince neleri kastettiğimizi, ne tür adımları olduğunu hakim oluyor olmanız lazım. İşletim sistemi güvenliğinden bahsettiğim zaman gene temel kavramları anlıyor olmanız gerekiyor.
+
+51
+00:39:32,403 --> 00:40:00,000
+Çok yaygınlaştı. Hemen hemen bütün sistemler artık özellikle büyük sistemler cloud'ta koştuğunu hepiniz biliyorsunuz. Ve IoT dediğimiz internet of things zaten sensörler, algılayıcılar, akciğerler etrafımızda var. Şu anda IoT device'lar işte evimizdeki tost makinemizden, bulaşık makinemizden, air conditioner'dan kombiye kadar hepsi zaten internete bağlanabilir.
+
+52
+00:40:00,000 --> 00:40:25,180
+Ve sensörler vardır. Birbirleriyle haberleştirebilir bir akıllı ev mimarisi oluşturabiliyorsunuz. Zaten televizyonlar, smart tv ile uzun zamandır var. Bunların güvenliği nedir? Bunlarla alakalı temel kavramları biliyor diye düşünüyorum.
+
+53
+00:40:44,624 --> 00:40:52,483
+Preregustit diye ön koşu. Burada geçen dönem verdiğim sunuları buraya PDF'ini attım.
+
+54
+00:40:53,300 --> 00:41:19,420
+Bir ufaktan bir bakmak isteyen olursa buralardan indirip bu dosyaları bakabilir diye düşünüyorum. Yani bunları gidin bulun, nereden bulursanız bulun mantığıyla değil de bunları bilin, temel kavramları. Eğer nasıl bir şeyler olduğunu da merak ediyorsanız sağda solda araştırmayın. İşte buralarda var ya kitabı elde edebilirsiniz ya da buradaki sunumları.
+
+55
+00:41:19,891 --> 00:41:36,291
+Bakabilirsiniz. Bunlarla alakalı hem temel kavramlar hem de dersle alakalı bir sorunuz olduğu zaman da bana ulaşmanız yeterli. Zaten ofisli bölümdeki yeri biliyorsunuz. Orada gelip bana kolaylıkla ulaşabilirsiniz.
+
+56
+00:41:36,291 --> 00:41:44,112
+Evet, derste işleyeceğimiz konular ve bilmenizi düşündüğümüz kilisansüstü ders.
+
+57
+00:41:44,596 --> 00:41:54,536
+Yüksek lisansla belli bir temel üzerine inşa etmemiz gerekiyor. Bunların da neler olduğunu üzerinden geçtik.
+
+58
+00:41:54,795 --> 00:42:11,675
+Peki, çok hızlıca bir bakalım. Aslında bilgisayar ve ağ güvenliği deyince temel terminolojiyi, ortak şeyleri konuşmak adına hızlıca geçmek bağlamında konuşur isek.
+
+59
+00:42:12,032 --> 00:42:31,231
+Bilgisayar güvenliği kavramından birçoğunuz eminim biliyorsunuz ki bu dersi aldığınıza göre bu alana da ilgili olduğunuzu düşünüyorum. Bilgisayar güvenliği kavramını vereceğiz. Sonra tehdit nedir?
+
+60
+00:42:31,599 --> 00:42:43,960
+Saldırı nedir ve varlık, hasretler nedir? Bunları tamamıyla bilgisayar ve bilgisayar sistemleri bağlamında vermiş olacağız.
+
+61
+00:42:43,960 --> 00:42:55,760
+Ve güvenliğin fonksiyonel gereksinimlerinden bahsedeceğiz. Yani güvenlikle ilgili bil sistemin, bil ağın.
+
+62
+00:42:56,692 --> 00:43:14,831
+Güvenliğinden bahsettiğimiz zaman fonksiyon olarak ne tür gereklilikler var bunları bahsedeceğiz. Sonra temel güvenlik tasarım prensiplerinden bahsedip sonrasında saldırılar nasıl yapılıyor?
+
+63
+00:43:14,831 --> 00:43:20,652
+İşte saldırı yüzeyleri ve atak ağaçlarından temel itibariyle bahsedeceğiz.
+
+64
+00:43:21,076 --> 00:43:33,496
+Sonra bilgisayar güvenlik stratejileri ve güvenlikle alakalı standartı koyan firmalardan bahsedip, bu hafta zaten bir saatte tahmin ediyorum, bitiririm diye düşünüyorum.
+
+65
+00:43:35,576 --> 00:43:40,655
+Bunlardan bahsedip bu giriş kısmımızı tamamlamış olacağız.
+
+66
+00:43:42,936 --> 00:43:47,036
+Siyah'ın üçgenini hemen hemen birçoğunuz duymuşsunuzdur.
+
+67
+00:43:47,376 --> 00:44:00,596
+Confidentiality, Integrity ve Availability yani gizlilik, bütünlük ve erişilebilirlik kavramları güvenlik deyince hemen aklımıza geliyor.
+
+68
+00:44:01,336 --> 00:44:13,456
+Gizlilikten deyince neyin gizliliği, verinin gizliliği ve özel hayatın gizliliği, privacy dediğimiz kavramlar gizliliği kavramları içerisine geliyor.
+
+69
+00:44:15,635 --> 00:44:29,556
+Firmalar özellikle KBKK'nın çıkmasıyla Türkiye'de de veri güvenliği ve geziliği kişisel verilerin korunması kanunuyla belin bu noktaya kadar alındı ki Avrupa'da biraz daha önce başlamıştı.
+
+70
+00:44:29,635 --> 00:44:34,755
+Ama tam anlamıyla bunlar yeterli ve sistem bütünüyle anlaşıldı mı? Hayır.
+
+71
+00:44:41,235 --> 00:44:57,956
+Algılanması, bir duyarlılık oluşması, sonra bunlarla alakalı kanunların çıkması, kanunların yönetmeliklerin çıkması, akabinde de otoritenin bunu nasıl işleteceğini algılanması gerekiyor.
+
+72
+00:44:57,956 --> 00:45:07,596
+Hala kişisel verilerin koruma kanunu var ve kişisel veri diye düşündüğümüz bütün verilerle alakalı bütün firmalar.
+
+73
+00:45:08,275 --> 00:45:32,576
+Bazı dokümanlar, belgeler, şunlar bunlar imzalatıyorlar. İmzalatmazsanız ulaşılmayacağınızı düşünüyorlar. Artık bu kanunda kişisel olarak rahatsız eden telefonlar, reklamları almayacağınızı düşünüyorlar. Öyle bir şey hemen ölüşmedi. Niye? Çünkü hukuki olarak hakimlerin, savcıların, kollu kuvvetlerin bunu nasıl işleteceğini algılaması ve
+
+74
+00:45:32,992 --> 00:45:49,771
+Bunlarla alakalı eylemlerin de oluşması gerekiyor. Bunlar da zamanla oluşacaktır diye düşünüyorum ama her zaman gayri hukukiler farklı çözüm yolları bulabiliyor.
+
+75
+00:45:49,771 --> 00:45:59,992
+Onlarla alakalı da hızlıca yönetmelikler, kanunlar revize ederek o sistem oturmuş olacaktır diye düşünüyorum.
+
+76
+00:46:00,788 --> 00:46:25,788
+Gezelik bu. Bütünlük dediğimiz aslında mesela bir arkadaşınıza bir mesaj gönderiyorsunuz. E-mail olabilir, SMS olabilir, WhatsApp olabilir ya da bir dosya gönderiyorsanız. Bütünlük dediğimiz zaman o dosyanın, o mesajın değiştirilmediği, yani değiştirilmesi derken içerisindeki mesajın kontentinin oynanmadığı, silinmediği, değiştirilmediği.
+
+77
+00:46:28,304 --> 00:46:46,244
+Bütünlüğü kavramları, integriti kavramıdır. Erişilebilirlik zaten başlı başına bütüncül bir konu. Niye erişilebilirlik? Siz bir eticaret sitesini yönetiyorsunuz. Eticaret sitesini 724.
+
+78
+00:46:47,092 --> 00:47:15,092
+Erişilebilir olması gerekiyor. Erişilebilir olması demek aslında kabul edilebilir bir cevap süresine de sahip olmasını gerektiriyor. Bir siteyi bir sisteme sadece fiziksel ve de lojik olarak zarar vermezsiniz. Aynı zamanda o sistem orada duruyordur ama onu kullanıcıların o sisteme erişmesini engelleyerek de.
+
+79
+00:47:15,092 --> 00:47:32,891
+zarar verebilirsiniz. Bu güvenlikte erişebilir dediğimiz kavram bu. Buna iki tane yeni kavram daha ekleyebiliriz. Ne kadar siyah duruyor ama bazı kavramlar bakımında birisi autenticity.
+
+80
+00:47:40,980 --> 00:47:52,819
+Talep edenin özgün ve doğrulanmış, güvenilir olduğunun kontrolü.
+
+81
+00:47:57,364 --> 00:48:18,184
+Denetim Accountability yapılan eylemin unik olarak o talep edene kadar takip edilebilirlik olması. Bu iki kavram da aslında güvenliğe son zamanlarda ekleyebiliriz diye düşünüyoruz.
+
+82
+00:48:18,184 --> 00:48:22,823
+Dolayısıyla sadece Confidential Integrity ya da Availability.
+
+83
+00:48:23,360 --> 00:48:33,600
+Güvenlik konserleri değil, aynı zamanda Authenticity ve Accountability'yi de bunun içerisine sayabilmemiz mümkün.
+
+84
+00:48:35,460 --> 00:48:39,060
+Nedir bunları? Biraz detaya gidersek.
+
+85
+00:48:44,275 --> 00:49:03,195
+Yetkisiz ulaşımı, yetkisiz olarak bilginin ifşa edilmesi ve kişisel gizliliğin ve firma sağlıklı patentin ifşa olmasının önlenmesi olarak.
+
+86
+00:49:04,052 --> 00:49:24,172
+Düşünebiliriz gizliliği. Dolayısıyla yetkinin sınırlandırılması, bilginin ulaşımının sınırlandırılması, yetkilendirilmesi ya da bilginin, kişisel verilerin ve ticari sırların işe edilmesinin önlenmesi.
+
+87
+00:49:29,135 --> 00:49:38,975
+Ancak değiştirilmesinin, bozulmasının veya bir şeyler eklenmesinin engellenmesi olarak düşünebiliriz.
+
+88
+00:49:38,975 --> 00:49:47,975
+Availability, daha önce dediğim gibi sisteme ya da bilgiye ya da varlığa zamanında...
+
+89
+00:49:48,148 --> 00:49:57,028
+Ve güvenilir bir şekilde ulaşılabilmesi ve o bilgiyi kullanabilmesi olarak ifade etmek mümkün.
+
+90
+00:50:12,692 --> 00:50:37,291
+Talebin güvenli kaynaktan geldiğinin veyahut da mesaj geliyor mesela diyelim size. O mesajın sizin beklediğiniz kişiden geldiğinin kontrolü aslında. Accountu bildiği şey, o gelen mesajın ya da o sistemin takip edilebilmesi ya da herhangi bir sızma ya da...
+
+91
+00:50:37,652 --> 00:50:51,431
+Zarar durumunda bunlara karşı tekrar sistemi ayağa kaldırılması ve hukuki aksiyonlar da akantü bileti kavramında içerisine giriyor.
+
+92
+00:50:51,551 --> 00:50:59,412
+Nedir mesela? Hatanın izolasyonu, sızmanın algılanması, sızmanın önlenmesi.
+
+93
+00:50:59,871 --> 00:51:16,251
+Sızma sonrası önlendikten sonra tekrar sistemi ayağa kaldırılıp alınması gereken hukuki ve sistemsel aksiyonlar accountability kavramı içerisinde geliyor.
+
+94
+00:51:26,867 --> 00:51:49,287
+Eticaret sitesi olabilir. Herhangi bir saldırı anında sizin ilk önce etkiyi seviyelendirmeniz gerekiyor. Nedir etki? Etki seviyesi düşük mü, orta mı, yüksek mi? Çünkü bunlara göre alacağınız aksiyonlar da değişiyor doğal olarak.
+
+95
+00:51:49,972 --> 00:52:06,231
+Nedir mesela? Low dediğiniz zaman düşük. Etki var ama bu etki firmanızın ya da sisteminize hayati bir sorun oluşturmuyor. Ciddi bir sorun oluşturmuyor.
+
+96
+00:52:17,139 --> 00:52:36,679
+İçin bir fikir almak için bir anket tarzı bir şey koydunuz. Bir haliyle sisteminiz ele geçildi ve bu anketle alakalı veriler manipüle edildi. Sızma var mı? Var. Peki bu sızma nedeniyle?
+
+97
+00:52:37,300 --> 00:52:46,860
+Size bir zararı var, var ama sonuçta bu zarar firması olarak hayati bir zararı değil. O büyüğünle alakalı kısmı kapatırsınız, göstermezsiniz, olur biter.
+
+98
+00:52:48,440 --> 00:53:01,860
+Orta seviyede değiliz zaman ciddi bir zarar var. Bu zarar size belli bir noktaya kadar tolere edilebilir bir zarar. Hayati firmanızın kapanmasına ciddi...
+
+99
+00:53:04,340 --> 00:53:21,780
+Hasar vermesine sebebiyet vermiyor. Aynı örnek üzerinden gidelim. Firmalar işte web sitesi gele, et ticaret sitesi bir haliyle sitemiz ele geçirdi ve müşteri listelerinizi ele geçirdiler.
+
+100
+00:53:25,300 --> 00:53:45,000
+Bu size ciddi bir mali bir zarar verir mi? Verir. Ama sizin firmasınızı kayıpları tolere edebiliyorsanız, firmanızı batmanıza sebebiyet verme ciddi bir zarar. Bunu o seviye için orta seviye olarak değerlendirebilirsiniz.
+
+101
+00:53:45,000 --> 00:53:50,300
+Hayır da yine aynı firma için hesap düşünüyorsak.
+
+102
+00:53:50,739 --> 00:54:16,879
+Siz oradan hesap bilgilerinize ulaştı, işte post bilgilerinize ulaştı. Oradan sizlerin üzerinizden ciddi manada para transferi yaptı. Müşterilerinizle alakalı, faturalarla alakalı işlemlere ulaştı, hayali faturalar kesti. Bu nedir? Sizin işinizi kaybetmenize, firmanın bir daha iş yapamayacak hale gelmesine ciddi.
+
+103
+00:54:17,427 --> 00:54:41,688
+Kaldıramayacağı mali kayıpların yaşamasına sebebiyet veren bir etki diye hesaplayıp buna da hay diyebilirsiniz. Dolayısıyla bu tamamen size bağlı bir derecelendirme. Sistemin yapısına bağlı olarak neye hay neye low diyeceğiniz tamamen size bağlı.
+
+104
+00:54:44,916 --> 00:55:08,136
+Bir fikir edinme, mesela seçimlerle alakalı anket yapıyorsanız, yeticaret sitesindeki opinion anketlerinin etkisi low diye değerlendirilirken sizin amacınız, varlık sebebiniz o olduğu için o tarz bir ele geçirme sizin için high bir risk oluşturmuş.
+
+105
+00:55:08,724 --> 00:55:22,644
+Yüksek bir etki oluşturmuş olacak. Bu tamamen sizin sisteminizin, varlığınızın, varoluş sebebimize bağlı olarak yapılmış bir değerlendirme. Sadece örnek olarak.
+
+106
+00:55:22,644 --> 00:55:32,503
+Çünkü bir etkiyi dereceler karşı reaksiyon alabilmeniz için ya da doğru reaksiyonları alabilmeniz için
+
+107
+00:55:32,916 --> 00:55:45,155
+Etkiyi doğru seviyelendirmeniz gerekiyor. Bu çok önemli. Ama sistemden sisteme değişiklik gösterdiğini de söylemiştik.
+
+108
+00:55:45,155 --> 00:55:56,155
+Peki, Bilgisayar Sistemleri Güvenliği'ndeki challenge'lara bakarsak.
+
+109
+00:55:57,139 --> 00:56:05,771
+Eğer IT içerisindeyseniz hepiniz farkındasınızdır. Bilgisayar güvenliği aslında herkes tarafından çok...
+
+110
+00:56:05,972 --> 00:56:25,891
+Basit algılanıp, kolay algılanıp ve birçok zamanlarda underestimate yapılır. Yani doğru değerlendirilemez ve eğer güvenlikle alakalı bilginiz yeterli düzeyde değilse bunu küçük görebilirsiniz.
+
+111
+00:56:29,715 --> 00:56:49,275
+Çoğunlukla güvenlik hep sonradan düşünülür. Bir web sitesi tasarlanıyor ve ticaret sitesi. Bütün program, proje gerçekleştirilir. En sonunda sızma testleridir. Güvenlikle alakalı işlemler yapılır. Bir network sistemi kurulur.
+
+112
+00:56:49,715 --> 00:57:12,975
+Bütün switchler, routerlar, kenar cihazlar alınır ve güvenlikle alakalı işlemler sonradan kalır. Bütün yatırım yapılır. Sonrasından güvenlikle alakalı para kalırsa düşünmeye başlanacak bir durum ki bunu hepiniz eğer sektörün içerisindeyken canlı olarak yaşamışsınızdır.
+
+113
+00:57:14,452 --> 00:57:27,072
+Güvenlik de aslında ucu açık bir kavram. Yani sizin varlığınızın ya da koruduğunuzun değeriyle orantılı bir güvenlik.
+
+114
+00:57:27,072 --> 00:57:38,012
+Ve sizin aldığınız ya da güvenlikle alakalı yetkililerini aldıkları, genellikle kullanıcıları rahatsız eden, kullanımını zorlaştıran,
+
+115
+00:57:38,612 --> 00:57:51,311
+Ve user friendly olmayan işlemler olarak algılanır. Ve ilk başta düşünülmez.
+
+116
+00:57:52,032 --> 00:58:02,572
+Güvenlikle alakalı saldırgan sadece bir tane zayıflığı bilmesi sistemiyle geçirmesi için yeterliyken,
+
+117
+00:58:03,155 --> 00:58:27,456
+Güvenlikle alakalı sistem administratorları muhtemel bütün riskleri gözlemleyip, düşünüp bunlara karşı gerekli tedbirleri alması gerekir. Bu güvenlik tedbirleri aslında sadece lojik olarak düşünmemek gerekir. Fiziksel.
+
+118
+00:58:27,923 --> 00:58:36,283
+Saldırılara karşı da güvenlik tedbirleri, bilgisayar sistemleri güvenliği kavramına girer.
+
+119
+00:58:53,056 --> 00:59:18,215
+Güvenlikle alakalı risklerin içerisine girer. Dolayısıyla tamamen geniş kapsam ve güvenlik aynı zamanda tamam tedbirleri aldınız. Herhangi bir şekilde saldırdan sonra fiziksel ve lojik olarak tekrar hayata gelme.
+
+120
+00:59:18,612 --> 00:59:43,912
+Geriye dönmeyle alakalı işlemleri de bu güvenlik kavramı içerisine giriyor. Legal aksiyonlar da kavramına giriyor. Bir başkası, diyelim ki sistemi kurdunuz, gayet de güvenli. Tamam, bir sistem kurulup anahtar teslim edilir, unut.
+
+121
+00:59:44,596 --> 00:59:59,635
+Çalıştır, unut kavramı değildir güvenlik. Sürekli kontrol edilmesi, düzenli olarak kontrol edilmesi ve monitör edilmesi gereken bir kavram.
+
+122
+01:00:01,396 --> 01:00:22,396
+Getirisi olmayan, yani eğer iyi bir güvenlik sistemi kurduysanız saldırıları önlüyorsunuz demektir. Ve yöneticiler tarafından bu algılanmaz. Sistem çalışıyor. Dolayısıyla bana bu kadar yaptığım yatırımın ne getirisi var diye düşünmelerine ve sizden açıklama...
+
+123
+01:00:25,364 --> 01:00:44,364
+Bu sorunu engelledin, bu kadar yatırım boşa gitmedi. Boşa gitti çünkü niye hiçbir şey olmadı bana? Olsaydı bir de aslında yatırım kaynak bulurken...
+
+124
+01:00:45,184 --> 01:01:09,963
+En çok sorulandığınız bir alan ama bir sorun olduğu zaman da ilk topun ağzına konulan bir alan. Dolayısıyla para harcanırken en son akla gelen ama bir sorun olduğu zaman da ilk akla gelen durum diye düşünebiliriz güvenlik kavramını ve güvenlikle alakalı işlemleri.
+
+125
+01:01:13,684 --> 01:01:39,624
+İnternet ve bilgisayar internet güvenlikle alakalı standart koyan kuruluşlar var. Bunlardan bir tanesi internet, IETS. Biraz sonra zaten standart kuruluşlarını en sonunda da vermiş olacağız. Bunlar standart olarak RFC.
+
+126
+01:01:40,307 --> 01:01:49,648
+Dökümanları yayınlar. Yeter net teknolojisiyle alakalı bir detaylı bilgi alacaksanız ilgili RFC dokümanını indirmeniz yeterli.
+
+127
+01:01:49,648 --> 01:02:05,407
+İşte güvenlikle alakalı ağ güvenliği, netfek güvenliği, kablosuz ağ güvenliği bunlarla alakalı terimleri, detayları yine ilgili RFC dokümanlarında bulabilirsiniz.
+
+128
+01:02:07,731 --> 01:02:31,072
+Bilgisayar Güvenliği Terminolojisi ile alakalı da gene RFC dokümanımız 28-28 dokümanı. Bu Internet Security Glossary Mayıs 2000'de yayınlanmış bir standart. Bu standartta saldırgan, adversary, attack, saldırı, countermeasure tedbir, risk, security politikaları.
+
+129
+01:02:31,539 --> 01:02:59,199
+Sistem kaynakları, aset diyeceğiz, varlık diyeceğiz, tehdit ve zayıflık kavramları tanımlanmış durumda. Advisory aslında bu tanıma göre sizin sisteminizi ya da yaptığınız aktiviteyi engellemeye çalışan birey, grup, organizasyon ya da
+
+130
+01:02:59,376 --> 01:03:26,115
+Devlet olabilir. Yani saldırgan sadece bir kişi ya da bir grup değil de buna devlet de. Çünkü aslında güvenlik her şey network üzerinden olduğuna göre devletlerin savaşı da aslında dijital olarak oluşmaya başladı. Bunları zaten görüyorsunuz Rusya savaşında, Rusya ve Ukrayna savaşında öncesinde.
+
+131
+01:03:26,576 --> 01:03:50,796
+İran krizinde bunların hepsini ciddi bir şekilde gördük ve görmeye de devam ediyoruz. Saldırı zaten herhangi bir tipte, kötü niyette aktivite. Ne için? Seni rahatsız etmek için, sana zarar vermek için, senin hizmetini geciktirmek için.
+
+132
+01:03:51,284 --> 01:04:02,344
+Seni bütünüyle çalışamaz hale getirmek için ya da ticari bir sırrını ele geçirmek için olabilir saldırım.
+
+133
+01:04:03,043 --> 01:04:11,623
+Countermeasure'da, tedbir de bunları önlemeye yönelik her şey aslında.
+
+134
+01:04:12,744 --> 01:04:17,484
+İşte bir device olabilir, bir teknik olabilir. Bunu önlemeye yönelik risk.
+
+135
+01:04:18,099 --> 01:04:36,420
+Bu saldırının oluşma potansiyeline risk demiş oluyoruz. Risk, düşük riskli, orta riskli ve düşsek riskli. Bunu yine sizin verdiğiniz hizmete ve sizin varlığınızın değerine bağlı olarak.
+
+136
+01:04:36,851 --> 01:04:51,351
+Riskiniz de artar ya da azalır. Dolayısıyla ne kadar çok risk varsa o kadar kişinin dikkatini çektiğiniz demektir ve o kadar saldırı alacaksınız anlamına geliyor.
+
+137
+01:05:02,516 --> 01:05:14,796
+Ya da yaptığınız, verdiğiniz servisin devamına yönelik oluşturduğunuz politikalar, güvenlik politikaları.
+
+138
+01:05:14,796 --> 01:05:18,796
+Sistem kaynakları ya da SET'ler dediğimi eğer siz...
+
+139
+01:05:20,275 --> 01:05:36,155
+Bir e-ticaret sitesiyseniz sizin kaynağınız sitede ulaşılabilirlik. Eğer siz ISP'seniz, bir network firmasınız, sizin ağınızın, sizin asitiniz ya da mesela bir cloud.
+
+140
+01:05:36,628 --> 01:05:55,188
+Bu firmasıyseniz, sizin ve sigsel kaynaklarınız, CPU kullanımınız, RAM kullanımınız, disk kullanımınız, bunların hepsi, diskleriniz, bunlar hepsi sizin için asset varlık haline geliyor.
+
+141
+01:05:55,188 --> 01:05:57,728
+Threat, tehdit.
+
+142
+01:05:58,516 --> 01:06:13,416
+Tehdit aslında atak aksiyona geçmiş, tehdit olarak düşünebiliriz. Potansiyel, zarar verme potansiyeli ya da zarar verme potansiyeli biz buna tehdit olarak...
+
+143
+01:06:13,588 --> 01:06:35,208
+Algılamış ya da tanımlandırmış olabiliyoruz. Zayıflık ise sizin bilgi sisteminizde ya da güvenlik prosedürünüzde, sadece fiziksel sisteminizde değil, sizin oluşturduğunuz güvenlik politikalarında ya da sistemi altyapının inşasında oluşan
+
+144
+01:06:35,635 --> 01:07:00,696
+Kötüye kullanılabilecek her türlü zayıflığı biz vulnerability olarak tanımlamış oluyoruz. Dolayısıyla sistem güvenliğinden sorumlu kişi bütün muhtemel zayıflıkları tespit edip bunları kapatmak zorundayken saldırgan sadece bir tane zayıflığı bilmesi yeterli.
+
+145
+01:07:03,923 --> 01:07:25,423
+Şimdi bu kavramı ve bu ilişkileri bir flow chart olarak görebiliriz aslında. Hepsi var. Ortada bizim varlığımız var. Varlık dediğim gibi bir network hizmeti, bir varlığınız, web sitesine erişilebilirlik, bir varlığınız, bir bankasınız, elektronik bankacılık yapıyorsunuz.
+
+146
+01:07:25,728 --> 01:07:52,448
+Şubelere insanlar yığılmasın istiyorsunuz ama sitenize erişilmiyor. Bankacılık işlemlerinde yapılmıyor, cevap vermiyor, taymaata düşüyor. Bunlar ortada sizin varlığınız var. Varlık dediğim gibi verdiğiniz hizmete göre her şey olabilir. Peki varlığın sahibine göre o varlığın bir değeri var, bir ederi var. Öyle değil mi?
+
+147
+01:07:52,916 --> 01:08:14,796
+O ederim, muhafaza etmek için o edere zarar gelmesin diye tedbirler alıyor. Tedbirler alırken de para harcıyor. Peki bu harcadığı para neye oranla? Varlığın değerine oranla. Varlık 100 lira ise sen ona 200 lira harcamazsın.
+
+148
+01:08:15,284 --> 01:08:41,224
+Varlık 10 liraysa 100 lira harcamazsın ama varlık 1000 liraysa 100 lira gözüne gelmez. Dolayısıyla amacın ne? Riski düşürmek. Neredeki riski? Varlığındaki riski. Peki sahibinin, varlığın sahibinin amacı nedir? Riski minimize etmek. Hedef bu.
+
+149
+01:08:42,068 --> 01:09:00,788
+Sol taraf. Peki sağ taraf, saldırgan olarak baktığın zaman saldırganın amacı bir haliyle, bir zayıflığı kullanarak o varlığı zarar vermek, kötüye kullanmak, amacı dışında kullanmak.
+
+150
+01:09:01,728 --> 01:09:06,768
+Ejinti bu. Peki bunu yapmak için ne yapar? Tehditler oluşturur.
+
+151
+01:09:10,996 --> 01:09:32,976
+Nereye arttırır? Riske arttırır. Risk arttıkça owner'ın alması gereken countermeasure'lar artmış olur. Dolayısıyla bu tamamen bir kapalı döngü. Ortada hiç saldırgan yoksa risk yoktur, risk yoktur, tedbir yoktur. Saldırıcı çoksa.
+
+152
+01:09:33,555 --> 01:09:59,956
+Risk vardır. Risk varsa tedbir de almaz. Gerekir. Çünkü kötüye kullanılabilir. Bu döngü birbirini besleyecek şekilde devam eder. Peki limitleri ne? Limitleri bütünüyle bilgiler varlıyor. Mesela şöyle bir örnekte verebiliriz. Bir şifreleme yapıyorsunuz. Bir mesaj. Saldırganlar da bu mesajı çözmeye çalışıyor. Mesajın çözmesi.
+
+153
+01:10:00,000 --> 01:10:20,920
+Şifreleme biliyorsunuz işte amaç burada çözülemez şifreler elde etmek değil aslında. Amaç çözüldüğü zamanki değerinin oluşmaması.
+
+154
+01:10:26,899 --> 01:10:47,340
+Savaşı ile örnek verelim. İşte Ruslar kendi askerlerine bir mesaj gönderiyor. Şifreli bir mesaj. Bunu Ukraynalılar ele geçirdi. Değerli nedir? Bu mesajın içeriğinin askerler tarafından gerçekleştirilmeden önce.
+
+155
+01:10:48,500 --> 01:11:05,760
+Elde ediliyor olması. Yoksa gerçekleştikten sonra elde etmenin pratik bir anlamı kalmamış oluyor. Bu tarz örnekleri arttırabilmiş oluruz. Peki, bilgisayar sistemlerindeki varlıklardan biraz bahsedelim.
+
+156
+01:11:05,760 --> 01:11:15,159
+Varlık dediğimiz zaman donanım bir varlık olarak değerlendirilebilir. Verdiğimiz nedir mesela? Bilgisayar sisteminin kendisi.
+
+157
+01:11:15,631 --> 01:11:30,912
+Ya da Processing Birimleri, Storage Birimleri, Communication İletişim Civa, Router, Switch'i, CPU'su, RAM'i, disk'i, donanımsal asset olarak karşımıza çıkıyor.
+
+158
+01:11:40,435 --> 01:12:02,835
+Yazılımsal eset olarak karşımıza çıkıyor. Data dediğimiz zaman dosyalar, veritabanları, aynı zamanda güvenlikle alakalı, güvenlik politikalarıyla, güvenlik kurallarıyla alakalı veriler, şifre dosyaları, kural dosyaları bunların hepsi.
+
+159
+01:12:03,283 --> 01:12:24,724
+Veri, varlığı, aset olarak karşımda çıkıyor. Son aset ise Communication, iletişim cihazları ve ah nedir mesela bunlar? Wide Area Network, Communication, Linkler, Bridgeler, Routerler, Switchler, Access Pointler, bunların hepsi.
+
+160
+01:12:25,587 --> 01:12:32,487
+Link ile alakalı, Communication Link ile alakalı asset olarak karşımıza çıkıyor.
+
+161
+01:12:32,487 --> 01:12:42,475
+Peki, dedik ki, Threat, Attack ve Bonitivity kavramlarını...
+
+162
+01:12:48,148 --> 01:13:07,208
+Tanımlarını vermiştik. Peki bunları bir kategorilendirelim. Zayıflık, tehdit ve ata. Kategorilendirirsek zayıflığı. Integrity, mesela corrupted, bozulma.
+
+163
+01:13:07,615 --> 01:13:21,996
+Neden kaynaklanıyor? İşte bütünlüğün kaybedilmesine ya da sızma, gizliliğin kaybedilmesine ya da sistemdeki yavaşlama ya da ulaşılmama, availability'nin kaybedilmesine.
+
+164
+01:13:22,399 --> 01:13:45,739
+Sebebiyet veriyor. Dolayısıyla zararı neredeyse, çünkü siyah üçgeninden bahsetmiştim dersin başında. Neyi kaybederseniz ne oluyor? Buradaki siyah üçgenlerinden bir tanesine üzerine etki diye düşünebiliriz. Peki tehditler aslında, tehdit dediğimiz ne?
+
+165
+01:13:48,275 --> 01:14:04,815
+Zayıflığı kötüye kullanma kabiliyeti. Zayıflığı kötüye kullanma kabiliyetine biz tehdit olarak ya da elinizdeki varlığa zarar verme potansiyeli.
+
+166
+01:14:05,235 --> 01:14:19,036
+İkisini de tehdit olarak tanımlayabiliriz. Tehditleri aksiyon türüne bağlı olarak ikiye, nereden geldiğini orijinine bağlı olarak da yine ikiye ayırabiliriz.
+
+167
+01:14:21,036 --> 01:14:28,036
+Tehditleri aksiyonuna bağlı olarak pasif tehditler ve aktif tehditler. Pasif tehditler aslında...
+
+168
+01:14:28,916 --> 01:14:50,916
+Sistemin bütünlüğüne ya da hizmetine zarar vermeyen ama bilgi toplamaya yönelik saldırılara biz pasif saldırılar demiş oluyoruz. Nedir mesela? Siz network'ü sniff ediyorsun. Normalde network'ün çalışmasına herhangi bir fiziki bir...
+
+169
+01:14:51,604 --> 01:15:16,764
+Etkisi yok. Amaç ne? Buradan bilgi toplamak. Ne bilgi? Karşılıklı mesajlaşma bilgileri, şifre bilgileri, internete erişim bilgileri. Bunlar pasif. Aktif atak ise sistemin işleyişini değiştirmeye, veriyi değiştirmeye yönelik ya da sisteme ulaşılmaması, ulaşımını engellemeye yönelik aktif.
+
+170
+01:15:17,876 --> 01:15:25,596
+Saldırılara ya da saldırılara da biz aktif saldırılar demiş oluyoruz.
+
+171
+01:15:25,596 --> 01:15:34,195
+Peki, geldiği yere göre nasıl bunları sınıflandırabiliriz?
+
+172
+01:15:35,416 --> 01:15:45,216
+İçeriden geliyorsa insider. Dolayısıyla aslında saldırıların %80'i de içeriden geliyor. Bu normal.
+
+173
+01:15:45,939 --> 01:16:12,899
+Uluslararası raporlara girmiş bir durum. Yani siz bir sistem kuruyorsunuz. Sistemi korumak için dışarıdan firewalllar, politikalar, şunlar bunlar yapıyorsunuz ama içeriden sizin kızgın bir personelinizden, işte maaşını, zammı beğenmemiş, promosyonu ya da terfiyi beğenmemiş, arkadaşına kızmış, patronuna kızmış.
+
+174
+01:16:13,971 --> 01:16:32,971
+Ters tarafından uyanmış kişilerin bilerek ya da bilmeden sosyal enjinirin ile ele geçirmiş, patrondan bir mail gelmiş gibi yapıp onu tıklayarak sisteme botlar kurdurmuş ve bu botlar kullanılarak da sisteme zarar verilmiş.
+
+175
+01:16:40,083 --> 01:16:55,363
+Sizin içeriden gelmiş, dışarıdan ise sizin primitenizden yani sisteminizin dışarıdan gelen saldırılara da biz alsaydı demiş oluyoruz.
+
+176
+01:16:56,363 --> 01:17:00,083
+Hocam, önceki slide'a gelebilir misiniz?
+
+177
+01:17:00,083 --> 01:17:01,463
+Ne bağırın, geldim.
+
+178
+01:17:02,739 --> 01:17:10,840
+Şimdi bir geldiği yere göre sınıflandırıyoruz. İçeriden dışarıdan. Bir de aktif pasifi neye göre sınıflandırıyoruz?
+
+179
+01:17:10,860 --> 01:17:22,680
+Aksiyonuna göre. Mesela biraz önce dedim ya. Şimdi sen network'u sınıf ediyorsun. Tamam mı? Network'ün akışına, veri iletimine bir zarar veriyor musun?
+
+180
+01:17:23,600 --> 01:17:23,780
+Yok.
+
+181
+01:17:23,780 --> 01:17:28,440
+Vermiyorsun. Amacın ne buradan? Bilgi toplamak.
+
+182
+01:17:29,684 --> 01:17:50,943
+Buradaki pasif saldırdan kasıt bilgi toplamak. Tamam mı? Sistemle alakalı bilgi toplamak. Aktif saldırdı. Sen network'ün paketler gönderiyorsun ki network'ü işgal ediyorsun. Dolayısıyla diğerleri artık veri gönderemez oluyor. Bu ne yapıyor? Bu aktif saldırı oluyor. Tamam mı?
+
+183
+01:17:52,004 --> 01:17:52,724
+Anladım hocam.
+
+184
+01:17:54,868 --> 01:18:19,528
+Evet, şimdi gelelim tedbirlere. Şimdi güvenlik amacımız, sistemimiz çünkü değerli. İş yapıyoruz, para kazanıyoruz, verileri tutuyoruz, kanuni yükümlülüklerimiz var. Amacımız ne? Önce saldırını önlemek. Öyle değil mi?
+
+185
+01:18:20,275 --> 01:18:40,416
+Saldırıyı önlemek güvenlikteki birinci amacımız. Ama bir haliyle sızma oldu, saldırı oldu. Algılamak da önemli. Çünkü cehalet erdemdir mantığıyla siz saldırıldığının farkında varmazsınız, kendinizi güvenli hissedersiniz. Öyle değil mi?
+
+186
+01:18:40,851 --> 01:19:07,832
+Onun algılanması da, yani bu pasif ataklarda size girmiş birisi veri topluyor, bütün akan verileri, mesajları topluyor, sisteme zarar vermiyor. Ve sistemde bir sorun olmadığında sorun yok. Güvenlik sistemim tıkır tıkır işliyor diye düşünebilirsiniz. Bunu algılamak da önemli ve algılama içinde.
+
+187
+01:19:08,336 --> 01:19:35,316
+Ciddi yatırımlar yapılması gerekiyor ve yapılıyor da. Peki, algıladın saldırı var ve bu saldırıdan sonra tekrar eski haline dönmek, recover. Dolayısıyla bunların hepsi bizim güvenli kavramımızın içerisine giriyor. Peki, tedbirlerimizi niye alırız?
+
+188
+01:19:36,724 --> 01:20:03,583
+Riski düşürmek üzerine alırız. Doğru mu? Evet. Peki ne yaptık? İşte güvenlik sistemimiz vardı. Güvenlik sistemiyle alakalı bir tane firewall koyduk. Tamam, güzel. Risk azalttı. Ama her bir donanım ve yazılımın kendisine ait zayıflıkları da aslında biz sistemimizin içerisine dahil ettik.
+
+189
+01:20:03,988 --> 01:20:17,108
+Dolayısıyla her bir tedbir aynı zamanda sistemin büyümesine ve yeni zayıflıkların oluşabilme ihtimali arttıracaktı.
+
+190
+01:20:17,108 --> 01:20:31,507
+Amacımız burada ne? Bizim varlığımıza karşı riski minimize etmek. Ama her bir eklediğimizde bir zayıflık olarak.
+
+191
+01:20:31,891 --> 01:20:56,711
+Sisteme dahil ediyor. Dolayısıyla bu tedbirlerin de ve önlemlerinde, önlem için koyduğumuz cihazların da zayıflıklarını takip ediyor ve bunları da dikkate alıyor ve oradan gelecek saldırıların da olabileceğini düşünüyor olmamız gerekiyor.
+
+192
+01:20:57,555 --> 01:21:13,895
+Evet, şimdi gelelim bunların tiplerine nasıl oluyor saldırılar? İşte tretin, tehditin oluşması, yetkisiz açığa verme ya da ifşa etme.
+
+193
+01:21:14,868 --> 01:21:35,468
+Nasıl olur? Kişisel verilerin ya da duyarlı verilerin yetkisiz kişiler tarafından açığa verilmesi ya da verilerin yetkisiz kişiler tarafından erişilmesi.
+
+194
+01:21:35,935 --> 01:21:55,495
+Ya da verilerinize, yetkisiz kişiler tarafından verilerinize alakalı herhangi bir şekilde zarar vermek bakımından değil de engel olmak bakımından.
+
+195
+01:21:55,956 --> 01:22:15,476
+Ya da sızma. Bunların hepsi aslında aksiyon olarak karşımıza çıkıyor. Bu tablo aslında genel bir tablo. Bunları üzerinden sizler de geçebilirsiniz. Mesela disruption dediğiniz zaman, incapacitation, corruption ve obstruction. Obstruction engelleme zaten.
+
+196
+01:22:20,148 --> 01:22:30,427
+Saldırı tipine karşı ne tür eylemlerle karşılaşabiliriz bunları bu tabloda özetlemiş oluyoruz.
+
+197
+01:22:30,427 --> 01:22:38,427
+Şimdi gelelim. Aslında bilgisayar sistemi şu anki günümüzde eskiden...
+
+198
+01:22:39,119 --> 01:22:56,180
+Bilgisayarlar, Single Tasking, Single User sistemlerdi. Sonrasında teknolojinin gelişmesiyle Multitasking ama Single User sistemler çıktı.
+
+199
+01:22:56,180 --> 01:23:04,899
+Ama sonrasında Multitasking, Multi User sistemler, şu anda günümüzde yaygın olarak nedir? Distributed.
+
+200
+01:23:06,547 --> 01:23:33,608
+Çoklu kullanıcılığı ve çoklu sistemler. Burada baktığımız zaman bir bilgisayar sisteminde kapıcı A ve B sistemi diyelim. Burada verilerimiz var. Verilere, bu sistemlere ulaşan sistemden talepte bulunan kullanıcılarımız var.
+
+201
+01:23:34,387 --> 01:23:48,907
+Kullanıcıların kullandığı programlar var. Programların eriştiği datalar var. Bilgisayarları birbirine bağlayan linkler var.
+
+202
+01:23:58,579 --> 01:24:24,819
+Kontrol etmemiz gerekiyor. Bu nedir? User Access Control. Aynı zamanda verilerin sisteme girişini kontrol etmesiniz gerekiyor. Sistem üzerindeki kullanıcıların kullandığı proseslerin etkilerine göre verilere ulaşmasını kontrol etmemiz gerekiyor.
+
+203
+01:24:25,524 --> 01:24:48,164
+Verilerin bilgisayardan bir sistemden diğer sisteme iletilirken linkin güvenliğini almamız gerekiyor. Aslında tamamen kompleks ve çok seviyeli, çok katmanlı bir kavram olarak düşünebiliriz.
+
+204
+01:24:51,155 --> 01:25:17,036
+Bu tabloya birazcık bakalım. Satırlarımız aslında bizim asetlerimiz, yani varlıklarımız, donanımsal varlıklar. Hatırlarsanız işte CPU'sundan tutumda fisi olarak disk space'ine, devicelerin kendisine yazımsal varlıklarımız, verilerimiz ve kommunikasyon linklerimiz.
+
+205
+01:25:19,123 --> 01:25:46,523
+Bizim SIA, güvenlik üçgenimiz, eriştebilirlik, gizlilik ve bütünlük. Donanımsal olarak Availability'ye tehdit ne olabilir donanım olarak? O donanımın fiziksel olarak çalınması, öyle değil mi? Ya da disable edilmesi. Disable edilirse ne olur donanım?
+
+206
+01:25:47,123 --> 01:26:11,644
+Siz hizmet veremez hale gelir. Bu, erişilebilirliğe tehditler donanımsal. Peki, gizliliğe teslimler ne olur? Unkriptit ya da şifrelenmemiş CD'nizin, DVD'nizin, diskinizin çalınması gizliliğe tehditler.
+
+207
+01:26:15,731 --> 01:26:31,112
+Yok. Niye? Çünkü donanım bir bütündür. Bütünlüğü kaybederse o donanım işlefsiz hale gelir. Dolayısıyla integritiyle alakalı bir şey aklıma gelmiyor. Donanım ya birdir ya sıfırdır. Ya çalışır ya çalışmaz.
+
+208
+01:26:41,300 --> 01:27:06,420
+Engellenmesi ya da programın erişimi reddetmesi bu eriştirebilirliğe bir tehdit olarak karşımıza çıkıyor. Gizliliğe tehdit programımızın, yazılımımızın yetkisiz bir kopyasının alınması olabilir. Bütünlüğe bir tehdit ise çalışan bir programımızın değiştirilmesi.
+
+209
+01:27:07,539 --> 01:27:16,799
+Peki bu değiştirilerek aslında iki amaç. Değiştirilerek programın çalışılamaz hale getirilmesi de integrity'ye, bütünlüğe bir tehdit.
+
+210
+01:27:16,799 --> 01:27:20,799
+Ya da çalışılmaz değiştirilerek...
+
+211
+01:27:21,492 --> 01:27:42,992
+Bu programın işlevi dışarısında başka işlevler de yapabilir hale getirilmesi de bütünlüğe bir eşdeğer. Nedir mesela? Sizin bir yazılımınız var. Bu yazılım temel işlevi verileri tutuyor ya da verileri kaydediyor.
+
+212
+01:27:43,507 --> 01:28:06,288
+Verilerinizi şifreliyor mesela. Programınız değiştirdi, çalışılamaz hale getirildi. Bu integritiyete çalıştı. Değiştirildi. Hala şifreleme yapıyor. Hala sizin beklediğiniz işlemi yapıyor ama arka planda da o yaptığı verileri başka alana, başka internet verik üzerinden başka yere gönderiyor.
+
+213
+01:28:09,716 --> 01:28:34,936
+İntegratiyi tehdit olarak düşünebiliriz. Veri, Available'da dosyanın silinmesi ya da kullanıcıların erişimine engellenmesi, konfig geziliğe verinizin yetkisiz bir kopyanın alınması ya da verilerinizin üzerinizde istatistiksel işlemler yapılması, bilgi çekilmesi bunlar.
+
+214
+01:28:35,408 --> 01:28:51,908
+Gizeliğe, bütünlüğe veri üzerinde değişiklik yapılması ya da sizin veriniz yerine fabrika başkasının veriniz yerinden veri inşa edilmesi, bütünlüğe tehdit.
+
+215
+01:29:01,011 --> 01:29:07,191
+İletişim linkine ulaşılamaz hale getirilmesi, ilişkilebilirliğe tehdit.
+
+216
+01:29:08,771 --> 01:29:24,471
+Mesajın okunması, network'unuza ait trafik patronunun çıkartılması, dinlenmesi, bu gizliliğe bütünlüğe ise mesajın değiştirilmesi, geciktirilmesi.
+
+217
+01:29:25,524 --> 01:29:39,463
+Yeniden sıralanması veya mesajınızın dublike edilmesi, çoklanması, yanlış mesajların üretilmesi bunlara da bütünlüğe eşit.
+
+218
+01:29:40,916 --> 01:30:08,376
+Bütünlük üzerindeki tehditler olarak düşünebiliriz. Dikkat ediyorsanız mesajın yok edilmesi available diye tehditken mesajın okunması, girziliğe ama mesajın değiştirilmesi, geciktirilmesi. Dikkat ederseniz bütünlükte ulaşıyor mesaj ama mesaj gönderilen mesaj değil. Gönderilen içeriği değiştirilmiş olabilir.
+
+219
+01:30:08,884 --> 01:30:32,264
+Mesaj sıralı bir mesaj ise sırası değiştirilmiş olabilir. Aynı mesaj tekrar edilerek farklı sıralarda farklı konseptler çıkartılmaya çalışıyor olabilir. Ya da araya fabrika edilmiş mesajlar da insert edilmiş olabilir. Bunlar integrity ile alakalı husus var.
+
+220
+01:30:32,692 --> 01:30:50,492
+Şimdi pasif ve aktif atakları biraz önce [öğrenci] arkadaşınız sormuştu. Pasif ataklar aslında sistemin genel işleyişini öğrenmeye çalışan ve sistemi etkilemeyen saldırılar olarak düşünebiliriz. Amaç ne?
+
+221
+01:30:57,171 --> 01:31:18,771
+Veya sizin iletiminizin monitör edilmesi, trafiğinizin monitör edilmesi. Amaç ne burada? Amaç saldırganın bilgi toplaması ve bu bilgiyi de daha sonra başka aktif saldırılarda kullanması olarak düşünebiliriz. İki tipi var.
+
+222
+01:31:22,963 --> 01:31:34,783
+Dağıtımı ya da trafik analizi, mesaj içeriğinin toplanması. Aktif atak aslında sisteminizi ya da kaynağınızı doğrudan değiştirmeye, yok etmeye.
+
+223
+01:31:35,699 --> 01:31:53,000
+Yönelik ataklar, aktif ataklar kavramı. Dört tip kategorisi var. Replay, yeniden gönderme, maskeleme, değiştirme veyahut da servis reddi. Dört tip atak olarak karşımıza çıkıyor.
+
+224
+01:32:02,768 --> 01:32:19,708
+Güvenlik gereksinimleri, güvenlik gereksinimleri, akses kontrol, güvenlik kontrolü ile alakalı ki bunların hepsini size proroküst olarak verdiğimiz sunularda hepsi ayrıntıları ile var.
+
+225
+01:32:30,804 --> 01:32:51,804
+Temel Güvenlik Tasarım Prensipleri nelerdir? Amaç burada aslında ekonomi. Yani minimum maliyetle maksimum güvenlik. Dolayısıyla ekonomi dizayn prensiplerinden bir tanesi.
+
+226
+01:32:58,484 --> 01:33:15,084
+Tekrar geriye dönebilme, modüler olması, açık olması, yetkilerin ayrıştırılmış olması. Yani herkes her yetkide değil, seviyeli, hiyerarşik bir yetkilendirme mekanizmasının olması.
+
+227
+01:33:18,355 --> 01:33:40,335
+İhtiyacı, herkese her yetki değil de kişilere ya da kullanıcılara, sistemlere gerekli olan minimum yetkinin verilmesi, minimum ortak mekanizmaların oluşturulması, yani mümkün olduğu kadar rollerin ayrılması, izolasyon.
+
+228
+01:33:40,916 --> 01:33:53,935
+İzolasyon çok önemli özellikle çünkü saldırıyı lokalize etmenizi ve etkinizi, etkiyi sınırlı tutmanızı sağlayacak.
+
+229
+01:33:53,935 --> 01:33:59,935
+Modülerlik, layering dediğimiz katmanlık ve en...
+
+230
+01:34:01,076 --> 01:34:20,595
+Sonuncusu aslında en önemlisi list as anıışı. Yani sizin derdiniz hayran bırakmak, milleti şaşkına çevirmek değil, güvenliği sağlamak. Dolayısıyla list as anıışının aslında temel prensiplerden bir tanesi.
+
+231
+01:34:20,595 --> 01:34:27,935
+Peki, ataklarla alakalı biraz bahsedelim genel kavramıyla. Atak yüzeyleri.
+
+232
+01:34:29,460 --> 01:34:48,739
+Atak yüzeyleri ne olabilir? Sizin sisteminiz üzerindeki bir tane açık bir port ya da web sitenizdeki ya da web servisinizdeki bir zayıflık, bir açık olabilir.
+
+233
+01:34:53,268 --> 01:35:14,488
+Firewall üzerindeki bir açıklık sizin açıklığınız olabilir. Yazdığınız koddaki bir açıklık ya da SQL arayüzlerindeki, veritaban arayüzlerindeki bir açıklık ya da çalışanınızın bir zafiyeti saldırı için bir saldırı yüzeyi olabilir.
+
+234
+01:35:14,488 --> 01:35:17,768
+Peki bunları gruplandırır isek.
+
+235
+01:35:18,100 --> 01:35:43,579
+Atak yüzeylerini aslında üç gruba ayırabilmemiz mümkün. Birincisi network atak yüzeyi, yazılım atak yüzeyi ya da insan atak yüzeyi. Network atak yüzeyi, network üzerindeki bütün cihazlar, cihazın üzerindeki portlar.
+
+236
+01:35:44,083 --> 01:36:00,463
+Açık portlar bunların hepsi aslında denetlenmeyen portlar. Network'te kullanılan protokollerindeki zafiyetler network atak yüzeyi olarak karşımıza çıkıyor.
+
+237
+01:36:00,463 --> 01:36:09,603
+Software atak yüzeyi, software dediğimiz zaman işletim sisteminde dahil olmak üzere kullanılan bütün programlardaki zayıflıklar.
+
+238
+01:36:10,804 --> 01:36:36,703
+Net yazılım atak yüzey. İnsanla alakalı bu geniş bir kavram. Yani bilerek, bilmeyerek, isteyerek, istemeyerek çalışanların bir haliyle ele geçirilmesi. Eğitim eksikliğinden olabilir, kötü niyetten olabilir. Bu da insan atak yüzey olarak.
+
+239
+01:36:37,199 --> 01:36:40,011
+Karşımıza çıkıyor. Hatırlarsanız...
+
+240
+01:36:41,108 --> 01:36:58,788
+Sanex saldırısı vardı. Amerika'nın, İran'ın nükleer tesisleriyle alakalı diyorsunuz. Onlarla alakalı nükleer santrallerdeki çevrim yapan motorların Zimans'ın SKADA sistemleriyle kontrol ediliyor.
+
+241
+01:36:58,788 --> 01:37:06,028
+Ve Amerika Sanex saldırısıyla bunların sistemlerini çalışamaz hale getirdi. Nasıl yaptı?
+
+242
+01:37:07,247 --> 01:37:24,587
+Motorla 700 devir bölü dakikada çalışıyor. Bir kullanıcı bir haliyle, flash diskle bu SCADA sistemine sızan SNAX kötü niyetli yazılımıyla sisteme girip.
+
+243
+01:37:24,895 --> 01:37:45,515
+Bunların 1000 RPM'de dönmesini ama kontrol panellerinde 700 RPM olarak gösterilmesini sağladı ve burada sistemi çalışamaz, fiziksel olarak çalışamaz hale getirdi. Aslında ciddi manada sıkıntı insan atak yüzey.
+
+244
+01:37:49,235 --> 01:37:58,995
+Seviyelendirmeye bakalım. Hatırlarsanız güvenliği layering yapmak, güvenlik stratejilerinden katmanlı yapmak stratejilerinden bir tanesiydi.
+
+245
+01:38:02,612 --> 01:38:19,471
+Eğer azsa ya da katman derken bunu yetkilendirmeyi de katman katman yaparsınız, güvenlikleri de katman katman yaparsınız. Mesela yetki olarak bir tane yetki var, admin yetkisi. Dolayısıyla ki insanlar ya kullanıcı ya admin.
+
+246
+01:38:20,083 --> 01:38:40,463
+Ufak bir program kuracağı da etmiyet etkisi veriyorsunuz. Network'ta bir işlem yapacağı da etmiyet. Çünkü kullanıcılar kısıtlı kullanıcı. Dolayısıyla attack surface'inizin small olması bile sizin layer katman sayınız az olması durumunda bile.
+
+247
+01:38:41,492 --> 01:39:01,872
+Size ciddi bir risk oluşturacak demektir. Eğer atak sörferiniz daha azı olursa zaten high risk olarak yüksek risk grubuna girmiş oluyor. Ama siz düzgün bir katmanlı yapı kurdunuz. Kişilere sadece ihtiyacı kadar yetkiyi verdiniz.
+
+248
+01:39:04,724 --> 01:39:23,384
+Sistemi izole, saldırı izole edecek yapıyı oluşturdunuz. Bu durumda atak sörfeslerinin küçük olması size düşük risk oluşturacak. Büyük olması ise medium risk. Çünkü izole etme kabiliyetinizden var demektir.
+
+249
+01:39:29,395 --> 01:39:41,036
+Nedir güvenlik? User Authentication'dan access kontrolü kadar politikaların önceden belirlenmesi.
+
+250
+01:39:57,363 --> 01:40:06,363
+Ve geriye dönmek için ne kadarlık bir süre gerekli? Bunlar bütünüyle stratejinin...
+
+251
+01:40:08,916 --> 01:40:32,475
+Kapsamı içerisinde. Evaluation hesaplama. Aslında gelecek haftadan itibaren IT Security Management'ta zaten evaluation'larla girmiş olacağız. Çünkü sizin hem riski değerlendirmeniz gerekiyor, hem varlığınızı değerlendirmeniz gerekiyor. Ve buna göre de bir güvenlik stratejisi belirlemeniz gerekiyor.
+
+252
+01:40:36,115 --> 01:40:53,435
+Haftasıydı. Son slide'ım. Standart. Güvenlik çok geniş bir kavram. Artı saldırı da artık lokalize değil. Çünkü her şey internette şu anda. Her yerden.
+
+253
+01:40:53,908 --> 01:41:10,288
+Ulaşabilirsiniz. Evinizdeki buzdolabından, çamaşır makinesine, akıllı smart tv'nizden, cihazınızdan, klimanıza kadar uzaktan erişebilirsiniz.
+
+254
+01:41:10,788 --> 01:41:20,307
+Siz uzaktan erişebiliyorsanız saldırganlar da uzaktan erişebiliyor demektir. Dolayısıyla artık sınır yok.
+
+255
+01:41:20,756 --> 01:41:42,235
+Peki, güvenlikle alakalı standartları belirleyen kuruluşlar, uluslararası kuruluşlar, çünkü aynı şeylerden bahsediyor olmamız gerekiyor. Bunlardan bir tanesi, Amerikan National Institute of Standard and Technology NIST ya da Internet Security.
+
+256
+01:41:42,804 --> 01:42:04,784
+International Society, ISAC, International Telecommunication Union, ITUT, International Organization and Standardization, ISÖ, dünyada bu tür standartları belirleyen ve bunları public olarak dokümanları yayınlayan kuruluşlar olarak karşımıza çıkıyor.
+
+257
+01:42:09,811 --> 01:42:35,352
+Bu kadar arkadaşlar. Tamamen giriş yapmaya çalıştım. Söylediğim gibi lisans üstü bir ders. Biz güvenlikle alakalı temel kavramları, hususları bildiğinizi varsayıyor olacağım ve bunun üzerine geceler haftadan itibaren IT Management ile başlıyor olacağız.
+
+258
+01:42:36,243 --> 01:42:49,483
+Evet arkadaşlar, benim bu haftaki sunumum bu kadar. Sorunuz varsa alayım, yoksa haftaya inşallah yüz yüze kar, yağmur, çamur olmazsa yüz yüze yapmış oluruz.
+
+259
+01:42:50,503 --> 01:42:53,343
+Hocam haftaya da ders dokuz buçukta mı başlayacak?
+
+260
+01:42:54,043 --> 01:43:00,743
+Dokuz buçuk yapalım arkadaşlar, hem toparlanmak için yeterli olur. Dokuz buçukta başlatırız. Ama yüz yüze olur okulda.
+
+261
+01:43:02,043 --> 01:43:02,423
+Tamam.
+
+262
+01:43:04,500 --> 01:43:06,140
+Var mı arkadaşlar sorunuz?
+
+263
+01:43:06,579 --> 01:43:08,279
+Hocam notlandırma nasıl?
+
+264
+01:43:09,479 --> 01:43:12,380
+Yüzde yüz final. Ara sınav yapmayacağım.
+
+265
+01:43:13,279 --> 01:43:13,979
+Tamam hocam.
+
+266
+01:43:13,979 --> 01:43:29,880
+Ama finalin içeriği nasıl olacak ona daha karar vermedim. Biraz birkaç hafta dersler devam etsin. Sizlerin durumuna bağlı olarak çünkü sizlerin derslere ilgisi çok önemli.
+
+267
+01:43:31,091 --> 01:43:54,971
+Ve alakası, eğer sizlerde bir ilgisizlik, lakayetlik görürsem normal yıl sonu sınav olur. Ama baktım sizler ilgilisiniz, devamınız geliyor. Almış olmak için almamışsınız. O zaman finalle alakalı hususunda oturup görüşmüş oluruz. Belki bir proje vermeye de dönebiliriz.
+
+268
+01:43:56,851 --> 01:44:21,711
+Ama şu anda final sınav yapmayı düşünüyorum. Çünkü çok fazla kişi alıyor dersi, 50'ye yaklaştı. Normalde lisans dersi gibi nasıl oldu ben de bilmiyorum. Bir de şuna karar vermemiz gerekiyor arkadaşlar. Derste benim sunularım İngilizce ve yabancı arkadaşlar da var. Birçoğu da belki Türkçe'yi de anlamakta zorlanıyor.
+
+269
+01:44:22,355 --> 01:44:37,915
+Eğer Türk arkadaşların İngilizce konusunda bir sıkıntı yoksa gelecek haftadan itibaren sunuları İngilizce verebiliriz. Arada da Türkçe ufak açıklamalar yaparız.
+
+270
+01:44:38,375 --> 01:44:48,035
+Hocam, geçen dönem ben sizin dersinizi yeni almıştım. O zaman İngilizce'ye dönmüştük. Ama şey oluyor biraz.
+
+271
+01:44:49,460 --> 01:44:50,399
+Zor mu oluyor?
+
+272
+01:44:51,300 --> 01:44:57,579
+[kişisel bilgi] O yüzden İngilizce takip etmekte zorlanıyorum.
+
+273
+01:44:58,000 --> 01:45:18,819
+Tamam mı? Başka bir tane itiraz olursa zaten yapacak bir şey yok. Çünkü geçen dönem hatırlarsın derste de bir tane itiraz olursa Türkçe anlatırım demiştim. Dolayısıyla ders Türkçe, sunular İngilizce bir haliyle diğer arkadaşlara arada İngilizce özet geçmiş oluruz. Tersini yaparız.
+
+274
+01:45:20,260 --> 01:45:21,199
+Teşekkür ederim.
+
+275
+01:45:22,163 --> 01:45:27,443
+Peki arkadaşlar haftaya görüşmek üzere. Hepinize sağlıklı bir hafta diliyorum.
+
+276
+01:45:28,243 --> 01:45:31,563
+Teşekkürler hocam.
+
+277
+01:45:32,884 --> 01:45:34,264
+Uygulay hocam.
+
+278
+01:45:34,783 --> 01:45:35,344
+Teşekkürler.
+
+279
+01:45:35,804 --> 01:45:39,344
+Teşekkürler hocam.
+
+280
+01:45:40,403 --> 01:45:41,863
+Ve güzel bir hafta.
+
+281
+01:45:43,923 --> 01:45:46,043
+Hayırlı cumalar herkese arkadaşlar.
+
+282
+01:45:47,203 --> 01:45:48,783
+Teşekkürler hocam.
+
+283
+01:45:48,783 --> 01:45:49,663
+Hayırlı cumalar.
+
+284
+01:45:51,155 --> 01:46:00,876
+Teşekkürler.

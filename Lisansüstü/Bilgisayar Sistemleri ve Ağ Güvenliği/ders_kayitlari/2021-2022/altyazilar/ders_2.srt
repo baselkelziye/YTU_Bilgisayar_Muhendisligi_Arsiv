@@ -1,0 +1,1907 @@
+1
+00:27:44,084 --> 00:27:45,203
+Günaydın arkadaşlar.
+
+2
+00:27:48,980 --> 00:27:50,539
+Sesim ulaşıyor mu herkese?
+
+3
+00:27:50,620 --> 00:27:51,420
+Duyuyoruz.
+
+4
+00:27:51,900 --> 00:27:52,480
+Güzel.
+
+5
+00:27:52,700 --> 00:27:53,779
+Günaydın ha can duyuluyor.
+
+6
+00:27:54,240 --> 00:27:54,779
+Ne güzel.
+
+7
+00:27:55,279 --> 00:27:56,559
+20 kişi var sınıfta.
+
+8
+00:27:58,000 --> 00:27:59,539
+Şunun yoklamasını bir alayım.
+
+9
+00:28:00,660 --> 00:28:01,539
+Nasıl tanıyor acaba?
+
+10
+00:28:01,539 --> 00:28:02,539
+Ne var?
+
+11
+00:28:06,819 --> 00:28:08,519
+Okey, öğrenir sonra.
+
+12
+00:28:12,372 --> 00:28:16,592
+Münay günü hocam.
+
+13
+00:28:26,644 --> 00:28:41,284
+Evet arkadaşlar, ikinci haftamızı yüz yüze yapmayı planlıyorduk ama elimizde olmayan nedenlerle tekrar online'a döndü.
+
+14
+00:28:41,284 --> 00:28:54,003
+Karda ufak ufak başladı. İstanbul'un değişik yerlerindeki arkadaşlar değişik kar manzaraları görüyordur eminim. Bu hafta da yüz yüze değil.
+
+15
+00:28:54,516 --> 00:29:00,355
+Online olarak devam edeceğiz. Ekranımızı paylaştıralım.
+
+16
+00:29:04,627 --> 00:29:20,627
+Görüyoruz arkadaşlar değil mi? Ekranımızı. Evet arkadaşlar, bilgisayar sistemleri ve ağ güvenliği konusundaki geçen hafta bir giriş kısmı yapmıştık.
+
+17
+00:29:20,627 --> 00:29:28,768
+Yine online olarak bu hafta devam edeceğiz. Başlamadan önce geçen hafta söylediğimi bir daha tekrar edeyim.
+
+18
+00:29:30,304 --> 00:29:57,464
+Bu derste temel güvenlik kavramlarını bildiğinizi kabul ediyoruz. Çünkü bu lisansüstü ders. Dolayısıyla daha çok yönetimsel süreçleri ve üst seviye konuları işliyor olacağız. Bu bağlamda sizlerin temel güvenlik kavramlarını, işte mol ver nedir, virüs, bot, worm bu kavramları bildiğinizi kabul ediyorum.
+
+19
+00:29:57,903 --> 00:30:16,263
+Eğer bu konuda eksikliğiniz olduğunu düşünüyorsanız, gene web sitesinde projek üstü altında sunuları gördüm. Bunları tam olarak kavramadan bu dersin üzerine bunları algılamanız, bir şeyler anlıyor olabilirsiniz ama algılamanız zor olduğunu düşünüyorum.
+
+20
+00:30:16,263 --> 00:30:24,983
+O yüzden en azından bir kere bu sunuları, verdiğim sunuları okumanızı anlayarak okumanızı tavsiye ediyorum.
+
+21
+00:30:25,587 --> 00:30:38,327
+Aynı zamanda finalde de yaklaşık 50 puanlık kısım test ya da boşluk doldurma olarak bu yaptığımız ploroküsit kısmından gelecek.
+
+22
+00:30:38,528 --> 00:30:42,627
+Onu da şimdiden söyleyeyim, sonradan duymadık, etmedik demeyin.
+
+23
+00:30:43,288 --> 00:30:45,847
+O yüzden şimdiden ufak ufak okumaya başlayayım.
+
+24
+00:30:45,847 --> 00:30:48,208
+Bu sizi endişelendirmesin.
+
+25
+00:30:50,259 --> 00:31:09,360
+Bilmeniz gereken kavramlar üzerinde sorular sormuş olacağım. Çok ayrıntı ve detay sormayacağım. O yüzden en azından bir kere okumanız bu 50 puanlık test ya da boşluk doldurma sorusunu yapmanıza yeterli olacaktır diye düşünüyorum.
+
+26
+00:31:13,920 --> 00:31:29,320
+Bu hafta yönetimsel süreçlere bakacağız. Çünkü dediğim gibi lisansüstü dersinde temel kavramlardayı daha üst düzey kavramlardan bahsetmemiz gerektiğini düşünüyorum.
+
+27
+00:31:29,320 --> 00:31:37,259
+Dolayısıyla yönetimsel süreçlerden başlayacağız. Yönetimsel süreçleri beş hafta.
+
+28
+00:31:37,652 --> 00:32:03,432
+Bu hafta IT, güvenlik yönetimi ve risk değerlendirme konusuna bakacağız. Burada güvenlik yönetimi nasıl yapılır, riskler nasıl değerlendirilir, varlıklar nedir, bu varlıklara göre riskleri nasıl hesaplanır burada sizlere vermeye çalışacağız. Gelecek hafta.
+
+29
+00:32:03,807 --> 00:32:16,887
+Güvenlik kontrolü, planlaması ve prosedürlerde bahsedeceğiz. Sonraki hafta fiziksel ve altyapı güvenliği. Sonrasında insan kaynakları güvenliği.
+
+30
+00:32:16,887 --> 00:32:30,008
+Çünkü IT yönetimi dediğimiz zaman sadece cihazların ve altyapının yönetimi değil, aynı zamanda o altyapıyı kullanan, cihazları kullanan kişilerin de.
+
+31
+00:32:31,124 --> 00:32:49,584
+Bu yüzden farkındalığının ve güvenliği ayrı bir husus olarak karşımıza çıkıyoruz. Bunların da insan kaynakları güvenliği kavramında bitirmiş olacağız. En son bu güvenlik yönetimindeki en son kısmımız güvenlik auditing.
+
+32
+00:32:51,316 --> 00:33:15,655
+Evet, IT güvenlik yönetimi ve risk değerlendirme. Nelerden bahsedeceğiz? IT güvenlik kavramını temel itibariyle vereceğiz. Organizasyonel içerikler ve güvenlik politikalarını tanımlayacağız. Sonra güvenlik risk değerlendirmesi nasıl yapılıyor?
+
+33
+00:33:16,339 --> 00:33:43,500
+Onun üzerinde temel kavramlar nedir, standartlar nedir? Onları verdikten sonra detaylı bir güvenlik analizi nasıl yapılır? Kaç farklı güvenlik analizlerinden ve risk analizlerinden bahsediyor olacağız? Bunları verdikten sonra kitapta olunan bir tane çalışma, gümüş yıldız, madencilik.
+
+34
+00:33:43,827 --> 00:34:04,208
+İşletmesinin güvenlik yönetimi ve risk hesaplaması nasıl yapıyor? Bunun üzerinden de aslında sizler firmaların ya da üniversitenin ya da çalıştığınız yerin riskini nasıl hesaplayacağınızı öğrenebilmiş oluruz.
+
+35
+00:34:10,068 --> 00:34:27,088
+Üç tane temel soruya cevap arıyor ve bu temel soruyu cevaplandırıyor olmamız gerekiyor. Birinci ve en temel soru şu, güvenlik ihtiyacı olan varlıklarımız neler?
+
+36
+00:34:35,168 --> 00:34:47,568
+Bundan belki 20 yıl önce Bilgisayar ve Ağ dendiği zaman sadece bilgisayar firmaları ya da büyük çaplı firmalardan bahsediyor olabilirdik.
+
+37
+00:34:47,568 --> 00:34:53,324
+Ama şu anda bilgisayar ve ağın içerisine girmediği herhangi bir...
+
+38
+00:34:53,396 --> 00:35:13,676
+Yapı çalışma yok diye düşünüyorum. Kaldı ki güvenlik yönetimi aslında ağ güvenliği değil, temel kavramlar üzerinden bakmak da gerekiyor. Dolayısıyla buradaki her ne kadar güvenlik özelinde biz bilgisayar ve ağ güvenliğinden bahsediyor olsa da temel güvenlik ve risk.
+
+39
+00:35:14,260 --> 00:35:36,820
+Değerlendirme genel beynelmeler kurallar. Dolayısıyla ilk bulmamız gereken ve düşünmemiz gereken husus şu. Güvenliğe değer ne tür varlıklarımız var? Eğer bir kuyumcunun güvenliğinden sözü diyor iseniz, güvenliğe değer varlıklar kuyumcuda bulunan kıymetli mücevherler.
+
+40
+00:35:38,384 --> 00:35:57,403
+Makine otelcisine ya da bir oto tamircisinden bahsediyorsunuz. Oranın güvenliği nedir? Oradaki değerli aletler, cihazlar. Bir bilgisayar, bir üniversiteden bahsediyorsanız oradaki güvenli varlıklar nedir?
+
+41
+00:35:57,403 --> 00:36:04,284
+İşte kütüphanedeki kitaplar, öğrencilerle alakalı sınav evraklarıdır ve diğer.
+
+42
+00:36:04,755 --> 00:36:31,235
+İşlemlerde kayıtlar ve temel güvenlik. Dolayısıyla temel itibariyle bizim güvenliğe ihtiyaç duyan ya da korumamız gereken varlıklarımız neler? Bunları önce bir çıkarmamız gerekiyor. Yani birinci adımımız bu. İkinci adımımız bu güvenliğe ihtiyacı duyan varlıklarımız, değerlerimiz.
+
+43
+00:36:31,615 --> 00:36:55,056
+Nasıl tehdit edilebilir ya da hangi tehditler üzerinde var? Bir kuyumcuda dediğim gibi mücevher çalınma tehdidi var. Bir bilgisayar sisteminde, veri tabanında verilerin afişe olması var.
+
+44
+00:36:55,407 --> 00:37:19,748
+Bir bankada, kasadaki paraların çalınması var. Dolayısıyla nasıl tehdit edilebilir? Bütün yönleriyle bunları bizim ya da güvenlikle alakalı güvenlik yönetiminde bunu çıkartmamız gerekiyor. Bir, ne tür varlıklarımız var güvenliğe ihtiyacı olan korumamız gereken. İki, bu korumamız gereken.
+
+45
+00:37:20,112 --> 00:37:42,431
+Varlıklarımız nasıl tehdit edilebilir? En küçüğünden en büyüğüne kadar bunları çıkarmamız gerekiyor. Çünkü güvenlikden sorumlu kişiler olarak sizleri bütün muhtemel tehditleri değerlendirmeniz gerekiyor. Ama saldırgan herhangi birini kullanarak ona zarar verebilir.
+
+46
+00:37:44,911 --> 00:37:52,631
+Bunlara karşı, bu tehditlere karşı nasıl savunma yöntemleri kullanabiliriz?
+
+47
+00:37:52,631 --> 00:37:59,491
+Aslında güvenlik yönetimi dediğimiz zaman bu üç sorunun cevabından ibaret.
+
+48
+00:38:00,291 --> 00:38:09,551
+Bunu yaparken de cost effective yani maliyet etkin bir çözüm bulmamız gerekiyor.
+
+49
+00:38:10,704 --> 00:38:19,923
+10 lira değerinde bir varlık için 20 liralık masraf çıkarmamız mümkün değil.
+
+50
+00:38:20,024 --> 00:38:27,543
+Yani bunu arabamıza yaptırdığımız kasko ya da evimize yaptığımız sigorta gibi düşünebilirsiniz.
+
+51
+00:38:27,543 --> 00:38:30,543
+Dolayısıyla bulduğumuz çözümler...
+
+52
+00:38:31,219 --> 00:38:43,279
+Varlığımızı yeterli düzeyde korumalı ama nasıl korumalı? Minimum maliyette ya da etkin bir maliyette korumalı.
+
+53
+00:38:43,279 --> 00:38:50,279
+Aynı zamanda her bir varlığın ayrı ayrı...
+
+54
+00:38:50,288 --> 00:39:00,648
+Korumaya da değerlerine ve risklerinin tanımlarına bağlı olarak ayrı ayrı riskini değerlendirmeniz de gerekebilir.
+
+55
+00:39:04,083 --> 00:39:26,804
+Kademeli ve değerine bağlı olarak da ve gelebilecek tehditlere bağlı olarak da yani bir kuyumcu düşünün. Kasadaki ziynet eşyalarının korunması ile işte teşhirdeki ziynet eşyalarının korunması ve bunlara karşı gelebilecek tehditler aynı tehditler değil.
+
+56
+00:39:29,460 --> 00:39:47,880
+Yönetimsel, operasyonel ve teknik olarak riskleri düşürecek yöntemleri tanımlamanız ve bunları önceden belirlemeniz gerekiyor.
+
+57
+00:39:47,880 --> 00:39:55,059
+Yani herhangi bir risk durumunda veya tehdit durumunda ne tür prosedürsel, yönetimsel?
+
+58
+00:39:55,376 --> 00:40:18,456
+Nedir? Operasyonel ve teknikler ne tür adımlar atılacak? Tehdit anında kimler alınacak? Hangi tür reaksiyonlar verilecek? Bunların tek tek çıkartılıp belki bir checklist halinde tanımlanmış olması gerekiyor.
+
+59
+00:40:22,452 --> 00:40:28,712
+Bizim bu dersteki amacımız, primel amacımız IT. Bir dakika arkadaşlar.
+
+60
+00:41:46,771 --> 00:41:55,692
+Kusura bakmayın arkadaşlar. Evet, bizim dersimizin primer konusu IT.
+
+61
+00:41:56,307 --> 00:42:16,547
+Güvenliği. Peki bu IT güvenliğiyle alakalı güvenlik standartlar ne? Bilgi güvenliği 27.001, 27.003, 27.005, 27.006 bu güvenlik, bilgi güvenliği standartlarını İSO'nun hepiniz duymuşsunuzdur.
+
+62
+00:42:16,547 --> 00:42:23,547
+27.000 serisi 2006'da yayınlanmış aslında bilgi güvenliği yönetim sistemleri.
+
+63
+00:42:24,307 --> 00:42:37,728
+Genel bir bakış ve terminoloji üzerine ve bu 27.000 ailesindeki tüm standartlarda kullanılan terminoloji ve tanımlamaları içeriyor.
+
+64
+00:42:38,143 --> 00:42:52,563
+Bunların tamamını sizler internetten indirmeniz mümkün. 27.001 2013'te yayınlanmış ISO standardı. Bu da bilgi güvenliği yönetim sistemlerinde gereksinimleri.
+
+65
+00:42:53,300 --> 00:43:19,700
+O işletilme, gözlem, inceleme, muhafaza etme, iyileştirme dökümanları. 27.002 yine 2013'te yayınlanmış bilgi güvenlikleri için pratik kodlar, kılavuzlar.
+
+66
+00:43:20,063 --> 00:43:35,344
+Tanımlamış oluyor. Aslında bu standart eskiden ISO'nun 17799 standartın yeni versiyonu, bilgi güvenliği kavramı familyası içerisinde değerlendirilmiş. 27003 var.
+
+67
+00:43:40,288 --> 00:43:51,168
+Yönetiminin Dekes Sistem Kurulumu için bir kılavuz. Detaylı incelemeler, prosedürler, kurulum planları.
+
+68
+00:45:36,788 --> 00:45:53,447
+Pardon arkadaşlar. 27004 ölçeklendirme, ölçme. Aslında bu güvenlik seviyesinin ölçülmesiyle alakalı doküman. 27005 yine risk yönetimi.
+
+69
+00:45:54,099 --> 00:46:12,359
+Bu konusunda risk yönetimsel prosedürleri tanımlayan bir doküman. Aynı zamanda bu 13.335'e 3 ve 4 dokümanların yerine çıkmış standart.
+
+70
+00:46:20,480 --> 00:46:35,840
+sertifikasyonu ve audit üzerine doküman. Bu dokümanlar aslında bizim şu anda risk yönetimiyle alakalı bütün dokümanları içine almış oluyor diyebiliriz.
+
+71
+00:46:42,228 --> 00:46:45,728
+Bunları ezberden bilmemiz gerekiyor mu hocam?
+
+72
+00:46:45,728 --> 00:46:59,628
+Yok arkadaşlar, 27.000 serisini bilseniz yeterli. Arkadaşlar, burası lisansüstü dersi. Biz bu derste sizlere hafızlık yaptırmayacağız.
+
+73
+00:47:00,115 --> 00:47:25,175
+Burada siz her biriniz derinlemesine bu güvenlik konusunda çalışacak arkadaşlar var ya da firmalarında lisansüstü çalışmalar yaparken bu güvenlikle alakalı belli noktalara kariyer yapmak isteyen arkadaşlar var. Bunlar guideline yani standart dokümanlar. Bunları sizler kullanabileceğiniz dokümanlar.
+
+74
+00:47:25,619 --> 00:47:49,239
+Yoksa ezberlemeniz gereken dökümanlar değil. Ama 27.000 serisinin ne olduğunu bilmenizde fayda var. Tamam? Ezberlemeye gerek yok ama temel olarak 27.000 serisinde neler var, nereleri nereden bulabilirsiniz bunu bulmanızda fayda var. Peki.
+
+75
+00:47:50,324 --> 00:48:16,543
+Güvenliğe devam edersek, güvenlik yönetimine. Güvenlik yönetimi aslında bir hatırlarsanız geçen haftaki giriş dersinde SIA'nın üçgeninde yani gizlilik, bütünlük ve erişebilirlik, confidential integrity ve availability buna hesap verilebilirlik ve özgünlük.
+
+76
+00:48:16,916 --> 00:48:38,796
+Ve güvenilirliği de eklemek mümkün. Aslında güvenlik yönetimi dediğimiz zaman buradaki altı tane kavramın hangi seviyede muhafaza edileceğini, hangi seviyede bunları gerçekleştireceğinizin yönetimi aslında temel itibariyle.
+
+77
+00:48:41,460 --> 00:49:02,460
+Bütünlük, sizin yaptığınız işe bağlı olarak bunların seviyesi çok önemli. Yani siz bir e-ticaret sitesi iseniz ya da onu işletiyor iseniz sizin için erişilebilirlik ve güvenilirlik, reliability ve gizlilik önemli.
+
+78
+00:49:03,027 --> 00:49:18,027
+Yani authenticity'yi belki alışveriş yaptıktan sonra para ödemi aşamasında postları başka bankaların güvenlik yapıları üzerine yıkıyor olabilirsiniz. Dolayısıyla sizin yönettiğiniz risk...
+
+79
+00:49:18,804 --> 00:49:33,708
+Ve asitleriniz yani varlıklarınıza göre bir yönetimden bahsediyoruz. Nedir aslında bu güvenlik yönetimi? Sizin organizasyonunuzun IT güvenliği...
+
+80
+00:49:33,907 --> 00:50:00,327
+Amaçlarının satıcıları ve politikalarına karar vermek aslında risk yönetimi. Başka, güvenlik gereksinimlerine karar vermek aslında risk yönetimi içerisinde. Aynı zamanda güvenlik tehditlerini.
+
+81
+00:50:00,719 --> 00:50:19,679
+Nereye? Organizasyon içerisindeki varlıklarınıza oluşabilecek, varlıklarınız üzerinde oluşabilecek güvenlik tehditlerini tanımlamak ve analiz etmek güvenlik yönetimi kavramı altında değerlendiriliyor.
+
+82
+00:50:20,083 --> 00:50:40,603
+Başka varlıklarımızı tanımladık, analiz ettik. Sonra bunları neyi analiz etmemiz gerekiyor ya da tanımlamamız? Riskleri, bu varlıklar üzerinde oluşabilecek riskleri tanımlamak ve analiz etmek gerekiyor.
+
+83
+00:50:44,052 --> 00:51:09,332
+Bunlara göre risklerimizi tanımladık. Her bir işin ayrı ayrı uygun yerinde ve yeterli. Bu çok önemli. Çünkü dedik ya, gizlilik, bütünlük, erişilebilirlik, hesap verilebilirlik, özgünlük ve güvenilirlik kavramlarındaki ne sizin her bir varlığınız için uygun ve yerinde.
+
+84
+00:51:09,791 --> 00:51:34,192
+Güvenlik tedbirlerini sizin tanımlamamız gerekiyor. Aslında güvenlik yönetimi dediğimiz zaman bu kur ve çık değil. Güvenlik dediğimiz zaman aslında 724 gözleme kurulumu ve operasyonel işlemleri de içine arıyor.
+
+85
+00:51:37,748 --> 00:52:00,188
+724 güvenli ve güvenilir için tedbirler alıyoruz ama bunu nasıl yapmak gerekiyor? Cost effective yani maliyet etkin bir şekilde organizasyon içerisinde varlıklarımızda ulaşacak risklere göre 724 monitör etmeniz, takip etmeniz gerekiyor.
+
+86
+00:52:00,188 --> 00:52:02,427
+Bu yetmiyor.
+
+87
+00:52:03,539 --> 00:52:20,759
+Aynı zamanda güvenlik farkındalığı programlarını sizin sürekli yapıyor olmanız gerekiyor. Çünkü bu varlıkları kullanan insan, bu insanları sizin eğitiyor.
+
+88
+00:52:22,356 --> 00:52:40,396
+Farkındalığını bunlara veriyor olmanız gerekiyor. Siz %100 güvenli bir sistem kurabilirsiniz ama kullanıcılarınız o sistemin şifrelerini 1-2-3-4 verirlerse bu sizin güvenlik sisteminizin hiçbir geçerliği yok demektir.
+
+89
+00:52:50,356 --> 00:53:11,976
+İndirip kurarlarsa sizin yatırdığınız bütün paralar boşa gidiyor demektir. Yani en büyük yatırım aslında farkındalık, güvenliğin farkındalığı. Çünkü biz zincirin gücü en zayıf halkasının gücünden ibaret.
+
+90
+00:53:12,335 --> 00:53:23,655
+Sisteme bir kere sızıldıktan sonra sizin saldırıların dışarıdan değil, tedbir almadığınız noktadan içeriden geliyor olacaktır.
+
+91
+00:53:23,655 --> 00:53:36,095
+Aynı zamanda siz %100 tedbir aldınız, para harcadınız, insanları eğittiniz. Tamam. Artık bir şey yapmamıza gerek yok. Hayır. Herhangi bir şekilde.
+
+92
+00:53:37,012 --> 00:53:55,192
+Buna rağmen bir sızma olur ise, bir güvenlik ihlali olur ise, bu olaylara karşı ne tür reaksiyon alacağınızı da detaylı bir şekilde çıkartıyor olmanız gerekiyor risk yönetiminde.
+
+93
+00:54:05,012 --> 00:54:26,892
+Riski haline ne kadar sürede getirebiliriz? Kayıpları nasıl en aza indirebiliriz? Nasıl legal aksiyonlar almamız gerekiyor? Hangi avukatı, hangi yöneticiyi, 724 kimleri aramamız gerekiyor? Bunları tek tek çıkarmamız gerekiyor.
+
+94
+00:54:27,264 --> 00:54:39,764
+Yani güvenlik yönetimi aslında ciddi manada komprensif, geniş kapsamlı bir işten bahsediyoruz.
+
+95
+00:54:48,436 --> 00:54:50,235
+Nasıl yok ederim ben? Bir dakika.
+
+96
+00:54:53,748 --> 00:54:57,387
+Bir dakika arkadaşlar. Şurayı yok etmem lazım.
+
+97
+00:55:04,724 --> 00:55:08,244
+Bir dakika tekrar share diyeyim.
+
+98
+00:55:19,123 --> 00:55:43,224
+Peki, bu aslında IT güvenlik yönetimiyle alakalı bütün aşamaları burada görebiliyoruz. IT güvenlik politikaları ve organizasyonlar, asetler, varlıklarımız, bizim girdilerimiz, bu IT güvenlik politikaları, şirket politikaları olabilir, hukuki.
+
+99
+00:55:43,764 --> 00:56:06,264
+Gereksinimler olabilir, kanuni zorunluluklar olabilir. Bunlarla alakalı politikalar size zorlayıcı politikalar olarak karşımıza çıkıyor. İlk başta ne yapacaktık? Riske analiz edecektik. Analizi nasıl ederiz? Temel bir risk analiz politikaları uygulayabiliriz.
+
+100
+00:56:08,211 --> 00:56:22,791
+Resmi ve gayri resmi risk analiz yapabiliriz. Bunların ayrıntılarıyla biraz sonra bahsedeceğiz. Baseline'den neyi kastediyoruz? İnformaldan ve formaldan ve kombineden bütünleşikten bunları bahsedeceğiz.
+
+101
+00:56:33,568 --> 00:56:38,268
+Geliştirilmesi. Aslında risk analizi dediğimiz zaman bunu
+
+102
+00:56:38,719 --> 00:57:03,880
+Kast ediyoruz. Yedilerimiz var. Güvenlik politikaları, kurumsal şirket politikalar, hukuki politikalar, kurumumuzun varlıkları var ve bunlara göre analiz yöntemlerinden bir tanesini ya da bütünleşik olarak analizimizi yaptık. Kontrol mekanizmalarımızı seçtik ve security planımızı ve prosedürümüzü geliştirdik. Bitti. İkinci aşama kurulum.
+
+103
+00:57:07,188 --> 00:57:29,328
+Kurulumda nasıl kuracağız? Bir kere güvenlik kontrollerimizin kurulması gerekiyor ve aynı zamanda güvenlik için farkındalık ve eğitimler. Çünkü risk analiz yaptık, kurduk, firewall'lar aldık.
+
+104
+00:57:29,632 --> 00:57:44,811
+Serverimizdeki şifrelerle alakalı politikaları belirledik. Her bir gerçekleştirilmiş süreçlerle alakalı adımları belirledik. Bunlarla alakalı oluşabilecek zayıflıkları belirledik.
+
+105
+00:57:45,780 --> 00:58:07,640
+Bunlarla ilgili yapıları oluşturduk, kurduk ve güvenlikle alakalı kontrollerimizi de geliştirdik. Peki bunları hala kullanacak insanlar, yeni güvenlik geliştirilen güvenlik politikalarına göre insanları eğitmek ve bir farkındalık oluşturmak gerekiyor. Bu kurulum tarafı.
+
+106
+00:58:08,307 --> 00:58:32,948
+Takibinde, demiştik ya, güvenlik aslında kur unut değil aslında. Kur uykusuz geceler geçir gibi bir şey. Çünkü sürekli takip etmek gerekiyor. Takibinde kurulum güvenlikle alakalı oluşabilecek tehditlere karşı yönetimsel değişiklikler.
+
+107
+00:58:33,364 --> 00:58:44,943
+Güvenlik ihlali olması durumunda nasıl bu ihlale karşı alacağımız reaksiyonlar bunlar da takibinde olan süreçler.
+
+108
+00:58:44,943 --> 00:58:52,484
+Peki, bu aslında bir yaşam döngüsü. Nasıl bir yaşam döngüsü?
+
+109
+00:58:55,092 --> 00:59:02,652
+Politikalarıyla alakalı şirketin, kurumun ya da hukuk olarak ihtiyaçlar var.
+
+110
+00:59:04,340 --> 00:59:25,119
+Bunların kurucuları var, kullanıcıları var ve bunlardan faydalanıcılar var. İki tane yüzü aslında. Dolayısıyla siz güvenlik kurallarını ne kadar sıkı yaparsanız aslında kullanıcı etkinliğini de o kadar feragat ediyorsunuz demektir.
+
+111
+00:59:25,119 --> 00:59:32,340
+Bu mesela yüz tanımayla alakalı sistemler.
+
+112
+00:59:32,340 --> 00:59:46,779
+Parmagazıyla alakalı sistemler aldınız. Gerekli kartla. Bunlarla alakalı false pozitiflerle false negatifleriyle alakalı o optimum noktayı bulmak sizin için önemli.
+
+113
+01:00:00,000 --> 01:00:13,659
+Gerçekten kendisi olmasına rağmen yüz tanımadaki ufak %100 meç gerekmesi durumunda rahatsız olacak demektir ve her seferinde size şikayette bulunacak.
+
+114
+01:00:13,659 --> 01:00:23,960
+Peki, siz bir planlama yapıyorsunuz. Birinci aşamada. Sonra bu planlamayı yapıyorsunuz, gerçekleştiriyorsunuz.
+
+115
+01:00:24,275 --> 01:00:49,275
+Sonra bunlar gerçekleştirdikten sonra kontrol ediyorsunuz. Kontrol ettikten sonra akabinde sorunları düzeltiyorsunuz ve bunu kural haline getiriyorsunuz. Ve bu döngü sürekli devam ediyor. Çünkü dediğim gibi güvenlikle alakalı husus.
+
+116
+01:00:49,615 --> 01:00:54,916
+Kur unut mantığıyla işleyen bir yapı değil.
+
+117
+01:00:59,764 --> 01:01:07,984
+Evet, organizasyon, sağlı kontekstler, içerikler ve güvenlik politikalarından biraz bahsedelim.
+
+118
+01:01:12,123 --> 01:01:22,963
+Güvenlik politikaları aslında sürekli yenilenmesi ve güncellenmesi gereken bir yapı.
+
+119
+01:01:23,315 --> 01:01:41,135
+Dolayısıyla periyodik aralıklarla her ne kadar belki sizler dışarıdan üçüncü partileri kiralayarak, ücreti duyarak sızma testleri yaptırıp belli güvenlik aralıklarla bunları inceleyip incelemeniz gerekiyor.
+
+120
+01:01:49,300 --> 01:02:11,400
+Yenilemeniz, değiştirmeniz gerekiyor. Aynı zamanda IT organizasyon içerisindeki IT'nin önemini ve rolünü irdelemeniz, incelemeniz, bunlarla alakalı da yönetimsel farkındalığı oluşturmanız gerekiyor.
+
+121
+01:02:14,815 --> 01:02:39,235
+Şimdi organizasyonun IT güvenliğindeki ilk incelemeniz gereken ne? Önce amaçlar. IT güvenliğinin çıktılarından ne amaçlanıyor? Yani niye biz güvenlik alıyoruz? Derdimiz ne? Bunun amaçları ortaya koymak gerekiyor.
+
+122
+01:02:40,851 --> 01:02:55,771
+Bunlarla alakalı amaçlar doğrultusunda stratejilerimizi belirleyip, stratejilerle ilgili bu amaçların nasıl gerçekleştirdiğimizi ortak koymamız gerekiyor.
+
+123
+01:02:55,771 --> 01:02:59,771
+Sonra politikaları oluşturup…
+
+124
+01:03:00,351 --> 01:03:13,171
+Politikalar da aslında bu amaçları nasıl yapacağımızı, nasıl gerçekleştireceğimizi, hayata geçireceğimizi belirleyen politikalar.
+
+125
+01:03:13,171 --> 01:03:25,891
+Dolayısıyla objektif strateji ve politika aslında bizim ilk güvenlikte incelemeniz gereken, değerlendirmemiz, irdelememiz gereken husus.
+
+126
+01:03:26,547 --> 01:03:28,927
+Peki, güvenlik politikaları.
+
+127
+01:03:33,844 --> 01:03:57,244
+Güvenlik politikaları aslında neyi amaçlıyoruz güvenlik politikalarından? Bizim yaptığımız işin, amacımızın, işimizin amaçları, hukuki ve kanuni zorunluluklarıyla alakalı
+
+128
+01:03:58,900 --> 01:04:17,640
+Zorunlulukların bizlere ya da firmaya yüklediğini, bu bizim güvenlik politikaları içeriyor olması gerekiyor. Yani sadece güvenlikle amacımız bizi korumak değil, hukuki zorunlulukları da karşılıyor olması gerekiyor.
+
+129
+01:04:23,476 --> 01:04:41,895
+İstediğinizde verilerin loklanmasıyla alakalı zorunluluklar, yaptığımız işin gereği olarak regulasyon kurumlarının bizden istediği zorunlulukların da güvenlik politikalarının içerisinde olması gerekiyor.
+
+130
+01:04:42,235 --> 01:04:49,476
+Aynı zamanda IT güvenlik ihtiyaçlarımızı karşılıyor olmamız gerekiyor.
+
+131
+01:04:50,036 --> 01:05:06,635
+Sorumluluklarımızı gerçekleştiriyor olmamız gerekiyor. Yönetimsel, risk yönetimsel yaklaşımları içermesi gerekiyor. Güvenlik, farkındalık ve eğitimleri bu politikalarımızın içermesi gerekiyor.
+
+132
+01:05:13,108 --> 01:05:33,927
+Ve kanuni zorunlulukların içermesi gerekiyor. Sistemlerin kurulumuna güvenliğin entegrasyonu, sınıflandırma aşamaları, işimizin süreklilik planlamasının takibi.
+
+133
+01:05:36,115 --> 01:05:55,076
+Güvenlikle alakalı sızmaların algılanması ve bunlarla alakalı oluşabilecek sızmalarda ya da sorunlarda nasıl bir yol takip edeceğimizi ve nasıl ve ne zaman?
+
+134
+01:05:55,795 --> 01:06:23,635
+Bu politikaları yeniden gözden kontrol etmek için yeniden gözden geçireceğimizi güvenlik politikaları içerisinde barındırmamız gerekiyor. Sadece politikayı kısır değil, aslında bütün bu listelediğimiz hususlar güvenlik politikası içerisinde bulunması gerekiyor. Aslında güvenlik yönetiminin bir parçası olarak bunları karşılıyor.
+
+135
+01:06:23,795 --> 01:06:42,895
+Olmamız gerekiyor. Peki, yönetimsel destekler neler? Aslında en büyük destek patrondan. Güvenlikle alakalı bir sorun yaşadığınız zaman bununla ilgili ilk yapmanız gereken patronun ikna edilmesi.
+
+136
+01:06:50,931 --> 01:07:14,391
+Bu sizin ortaya koyduğunuz güvenlik politikalarının işlenmesi, güvenlik politikalarının takibi açısında. Peki, güvenlikle ilgili sorumluluk kişinin ihtiyaçları ne aslında?
+
+137
+01:07:15,027 --> 01:07:28,267
+Sürekli ve bütünsel bir süpervizyon, danışmanlık bulmak ve bu konuda yöneticileri sürekli bilgilendirmek.
+
+138
+01:07:28,820 --> 01:07:54,060
+IT'nin amaçları, stratejileri ve politikalarını muhafaza etmek. Oluşan sızmalar ya da olaylar durumunu ile alakalı işlemleri takip etmek. Bunlara alakalı reaksiyonları almak. Güvenlik, farkındalık ve eğitim programlarını hazırlamak ve bunları yönetmek.
+
+139
+01:07:54,483 --> 01:08:08,844
+IT projelerindeki diğer projelerle ilgili IT ile alakalı ve güvenlikle alakalı etkileşimleri takip etmek ve bunların kurulumlarını sağlamak.
+
+140
+01:08:09,223 --> 01:08:20,844
+Aynı zamanda büyük organizasyonlarda, Yıldız Teknik Üniversitesi gibi ya da bankalar gibi IT projelerini, özellikle IT güvenlik projelerini
+
+141
+01:08:22,163 --> 01:08:39,083
+IT güvenliğinin aslında büyük bir proje olduğunu ve bunun farklı bir organizasyon, bu güvenli yönetim tarafında, farklı bir organizasyon tarafında yapılması gerektiği hususunu da aklımızda tutmak gerekiyor. Küçük bir firmada belki bir kişi.
+
+142
+01:08:39,923 --> 01:08:49,244
+İnformal olarak bu işi takip edebiliyor ama büyük organizasyonlarda bunun için ayrı bir birim olması gerekiyor.
+
+143
+01:08:49,543 --> 01:08:49,764
+Peki.
+
+144
+01:08:50,404 --> 01:08:52,844
+Hocam küçük bir yorum ekleyebilir miyim?
+
+145
+01:08:52,863 --> 01:08:53,304
+Tabii tabii.
+
+146
+01:08:53,304 --> 01:09:07,923
+Biz Kanada'da proje yapıyoruz. Mesela Türkiye'de genelde çok rastlamıyoruz ama orada projenin her aşamasında bir güvenlik uzmanı girerek yapılıyor.
+
+147
+01:09:07,923 --> 01:09:09,984
+İşlerin kontrolünü yapıyor.
+
+148
+01:09:10,824 --> 01:09:12,083
+Olması gereken o.
+
+149
+01:09:12,083 --> 01:09:22,164
+Ve yurt dışında özellikle sadece güvenlikle alakalı onlarca üçüncü parti test firmaları var.
+
+150
+01:09:22,283 --> 01:09:26,503
+Bunların amacı da güvenlikle alakalı zafiyetleri test etmek.
+
+151
+01:09:27,283 --> 01:09:30,904
+Ve bunlarla alakalı ciddi paralar kazanmış oluyorlar.
+
+152
+01:09:35,188 --> 01:09:55,068
+En son para harcanan ama bir sorun olduğu zaman da ilk kovulan kişilerin başında geliyor. Çünkü güvenlikle alakalı alacağınız her tedbir, maliyet, koyduğunuz her bir politika, kural aslında kullanıcı için bir külfetmiş gibi gözüküyor.
+
+153
+01:10:00,000 --> 01:10:08,000
+Teşekkürler katkını için. Aslında yönetimsel olarak...
+
+154
+01:10:08,083 --> 01:10:31,603
+Resmi büyük görmek gerekiyor ve yöneticileri iyi ikna etmek gerekiyor. Aksi halde, mesela düşünün yazılım firmalarında çalışan arkadaşlarınız vardır. Küçük yazılım firmalarında. Önce yazılım yazılır, her şey yapılır. Güvenlikle alakalı hususlar en son.
+
+155
+01:10:32,148 --> 01:10:49,288
+değerlendirilir. Ya da bir sorun olduğu zaman değerlendirilir. Ya da bazılarının dediği gibi ignorance is wisdom, cehalet erdemdir gibi farkında değilseniz mutlusunuzdur. Mantığıyla yola çıkarak.
+
+156
+01:10:51,279 --> 01:10:56,399
+Paradan da kaçma, masraftan kaçma gibi bir durumda söz konusu.
+
+157
+01:10:56,840 --> 01:10:58,739
+Ben katılabilir miyim hocam bir sefer?
+
+158
+01:10:58,760 --> 01:10:59,239
+Tabii tabii.
+
+159
+01:10:59,879 --> 01:11:06,920
+[kişisel bilgi] Biz elimizde sopayla bekliyoruz açıkçası.
+
+160
+01:11:06,920 --> 01:11:18,379
+Evet, evet. Kesinlikle. Yani bir şey yapıyor. Aman patron duymasın, aman takip etmesin. Bunu ufaktan nasıl yok edebiliriz?
+
+161
+01:11:19,279 --> 01:11:36,680
+Böyle bir durum karşılaşıyoruz ama aslında hukuki regulasyonlar hep sonradan geliyor. Bunlarla alakalı ciddi manada kanuni yükümlülükler de Avrupa'da, dünyada ve Türkiye'de ufak ufak gelmeye başlıyor.
+
+162
+01:11:45,568 --> 01:11:51,628
+Aşina ve görüyorlar ve uyguluyorlar birçok kısmını bilerek ya da bilmeyerek.
+
+163
+01:12:06,515 --> 01:12:29,895
+Risklerini bir kere değerlendirmemiz gerekiyor. Bunun için ne yapmak gerekiyor? Aşamalı. Bizler mühendisiz ya da mühendislik yapıyoruz. İşlemlerimizde, işlerimizdeki kritik bileşenler neler? Yani bazı bileşenler vardır. İşinizin ana kaynağı odur. Ona bir şey olursa siz dükkanı kapatmanız gerekiyor.
+
+164
+01:12:33,716 --> 01:12:58,615
+Firması düşünün. Ne yapıyor bu? Araçlar geliyor, bir tane cihaz var, o cihazda egzoza takıyor, emisyonu alıyor, ölçüyor, belgeyi veriyor, parayı da alıyor. Peki buradaki kritik bileşen ne aslında? Oradaki ölçüm cihazı, öyle değil mi? Ölçüm cihazı olmazsa o işte olmaz. Ya da mesela eticaret sitesi düşünün.
+
+165
+01:12:59,155 --> 01:13:14,155
+Sizin kritik komponentiniz ne? Ticaret sitenizin ayakta kalıyor olması. Parasal işlemlerin güvenli bir şekilde yapılabiliyor olması. Bu sizin ilk önce risk değerlendirirken...
+
+166
+01:13:16,659 --> 01:13:34,139
+Varlıklarınızdaki riski, güvenlik risklerinizi değerlendirirken kritik bileşenleri bir kere tespit etmeniz gerekiyor. Aynı zamanda ideal olarak her organizasyonuza ait her bir varlığı ayrı ayrı.
+
+167
+01:13:34,868 --> 01:13:59,268
+İncelemeniz gerekiyor. Sadece işinize ait kritik bileşenleri değil, her biri. Çünkü her birini gözen kaçacak en büyük bir bileşen sizin ana bileşeninizi çalışmaz hale getirebilir. Aynı zamanda ama bu çok büyük organizasyonlarda çok da mümkün değil. Peki risklerin?
+
+168
+01:14:00,275 --> 01:14:16,015
+IT altyapısındaki, organizasyon altyapısındaki risklerin azaltılması, tespiti yönündeki belirlenmesi ve risklerin azaltılması yönündeki yaklaşımları.
+
+169
+01:14:16,884 --> 01:14:39,463
+Temel alabilirsiniz. Kanunu, minimum kriterleri zorlayabilirsiniz. Çünkü varlıklarınız pek de önemli değildir ama hukuki olarak yapmanız gereken vardır. Yani bir ticarethanedir, içeride değerli hiçbir şeyiniz yoktur. Ama temel olarak ne yaparsınız? Kapınızda bir kilit vardır. Akşam giderken o kapınızı kilitliyorsunuzdur.
+
+170
+01:14:40,435 --> 01:15:04,835
+Temel bir baseline'ınız, temel bir minimum, dip bir güvenlik şeyiniz vardır. Ya da informal olarak bir arkadaşınız vardır. Bu işle ilgileniyordur. Gidip sorup, ya hocam ya da Ahmet bu işi nasıl yaparız? Bilgisayara programları kullanıyorum. Buraya bir antivirüs hangisini önerirse? Informal.
+
+171
+01:15:05,235 --> 01:15:25,335
+Duygusal, kişisel ikili ilişkilerle ya da detaylı bir formal risk analizi alabilirsiniz. Bir firmadan, bir kişiden ödeyerek bunu yapabilirsiniz ya da kombine, bütünleşik yapabilirsiniz. Bunlar tamamen yaklaşıma bağlı olarak değişiyor.
+
+172
+01:15:27,220 --> 01:15:48,720
+Bunları yukarıdan başlayarak aşağıya doğru ufak ufak verelim. Temel yaklaşım aslında ortak kamın en çok karşılaşılan tehditlere karşı kabul görmüş.
+
+173
+01:15:49,140 --> 01:16:12,180
+Yöntemleri kurmaktan ibaret aslında. Nedir genel kavram? Kapın açıkça hırsızlık olur o zaman kapımı kilitleyin. İşte bilgisayar varsa işte bir antivirüs programı kurayım. Temel kabul görmüş, çok da ayrıntılı bir risk analizi değil, genel kabul görmüş.
+
+174
+01:16:12,560 --> 01:16:34,260
+Kurallar aslında. Bu endüstrinin best practice dediğimiz uygula gör kavramıyla aslında biraz da minimum kriterlere göre. Peki baseline ne? Ucuz, kolay ve
+
+175
+01:16:34,703 --> 01:17:00,564
+Çok kolay replike edilebilir. Yani Ahmet'e de kurarsanız, Mehmet'e de kurarsanız. Genel pratikleri içeriyor. Genel bir düşünce yok, genel bir hesaplama yok. Sizin yaptığınız işe göre, varlığınızın değerine göre bir risk analizi yok. Yani bazı dükkanında 10 liralık malzeme vardır ama işte bir beyaz eşyacı da işte daha büyük ama aldığınız her ikinizin de aldığı risk.
+
+176
+01:17:01,043 --> 01:17:22,843
+Farklı iken güvenlik tedbiri kapıyı kilitlemekten ibaret olabilir. Çok fazla veri ama çok az güvenlik. Yani reklamı, makyajı çokdır ama çok az, genellikle çok az güvenlik verir.
+
+177
+01:17:27,252 --> 01:17:47,112
+Veyahut da ya daha yapısal yaklaşımlara parası olmayan organizasyonlara önerilebilecek güvenlik yönetimidir. Baseline temel yaklaşım. Minimum para, maksimum.
+
+178
+01:17:47,539 --> 01:18:01,860
+Görüntü ve reklam ama minimum güvenlik diye düşünebiliriz. Arkadaşlar bir 15 dakika çay molası verelim. Tamam. Saat 20 kala devam edelim. Olur mu?
+
+179
+01:18:19,828 --> 01:18:39,828
+Bir arkadaşınız soru sormuş. Bu standartlara IT dünyasında uyulmaması bir sıkıntıya sebep oluyor mu? Tabii ki oluyor. Yani 27001 standartı aslında şu anda güvenlikle alakalı birçok güvenlik yapan firmadan isteniyor. İhalelerde isteniyor. Uymazsanız.
+
+180
+01:18:40,243 --> 01:18:56,804
+Belki çok büyük ihalelere katılamıyorsunuz. Aynı zamanda yaptığınız işin de farkında olmuyorsunuz aslında. Bu size bir disiplin getiriyor bunlara uyulması. Aslında hep baştan beri söylediğimiz farkındalık da bu aslında.
+
+181
+01:19:05,203 --> 01:19:27,323
+Kayıbın yaşandığı, iş bırakmanın, büyük hayati kayıplarını ki biraz sonra göreceğiz bu riski de değerlendirmek gerekiyor. Bunların oluştuğu noktalar. Dolayısıyla güvenlik yönetimi ciddi manada üst yöneticilerin iknasını ve güvenlik farkındalığından geçmiş oluyor.
+
+182
+01:30:18,003 --> 01:30:20,644
+Evet arkadaşlar, devam edelim isterseniz.
+
+183
+01:30:32,787 --> 01:30:58,927
+Gelelim informal, gayri resmi yaklaşıma. Gayri resmi yaklaşım aslında tamamen alışılagelmiş temel bir güvenlik politikasından daha ziyade pragmatik yani uygulamaya dayalı faydacı risk analizlerini ve organizasyonun risk analizlerini, temel risk analizlerini içeriyor.
+
+184
+01:30:59,699 --> 01:31:14,359
+Ve bu analistin tecrübesi, bilgi birikiminin aslında kullanılmasından ibaret. Yani ayrıntılı bir bilimsel bir yaklaşım yok aslında.
+
+185
+01:31:15,359 --> 01:31:21,579
+Nispeten hızlı ve ucuz değil ama diğer yaklaşımlara göre.
+
+186
+01:31:23,283 --> 01:31:28,123
+Nispeten ucuz bir yaklaşım olarak karşımıza çıkıyor.
+
+187
+01:31:32,051 --> 01:31:46,072
+Aslında temel yaklaşımda, temel güvenlik politikasında minimum kriterleri karşılanması, herkese uygulanabilen temel kriterlerin karşılanmasıydı.
+
+188
+01:31:46,072 --> 01:31:54,912
+Dolayısıyla bu yaklaşımda aslında temel yaklaşımda olmayan birçok zayıflığı,
+
+189
+01:31:55,636 --> 01:32:21,775
+Adresleyebiliyoruz, belirleyebiliyoruz ve bunlara karşı da güvenlik tedbirleri alınıyor diye düşünebiliriz. Ama bizim informal yaklaşımımız analistin kişisel tecrübesine ve bilgilerine dayandığı için bazı riskleri adresleyebiliriz ama yanlış adresleme ihtimali de var.
+
+190
+01:32:23,283 --> 01:32:24,224
+Şansı takıyor.
+
+191
+01:32:36,243 --> 01:32:47,304
+Dolayısıyla tamamen analistin görüşlerine bağlı ve zaman zaman da bu görüşler değişebilir.
+
+192
+01:33:03,855 --> 01:33:17,015
+IT işi yapmayan küçük ve orta ölçekli organizasyonlarda kullanabilecek bir yaklaşım olarak değerlendirebiliriz. İnformal yaklaşımı.
+
+193
+01:33:17,015 --> 01:33:30,655
+Gelelim daha bilimseli, biraz diğerlerine göre daha pahalısı detaylı risk analizi ya da formal yaklaşım.
+
+194
+01:33:31,475 --> 01:33:52,775
+Bu detaylı risk analizi daha şümürlü, daha geniş kapsamlı yaklaşımları içeriyor. Formal, yapısal prosesleri kullanmayı nedir? Tanımlamayı nedir? Birden fazla aşama, güvenlik aşamalarını belirleyebilirsiniz.
+
+195
+01:33:53,279 --> 01:34:19,020
+Tehditleri belirleyip ve varlıkların zayıflıklarını ve tehditleri belirleme aşamalarını içeriyor. Risklerin oluşma olma yüzdelerini, olasılıklarını belirlemeye içeriyor. Dolayısıyla daha kapsamlı birden fazla aşama içeren.
+
+196
+01:34:19,956 --> 01:34:39,576
+Daha önce dersin başından beri söylediğiniz varlıkların tespitinden, değerinden, muhtemel tehditler, bu tehditlerin oluşma yüzdesi, bu varlıklarımızın bizim için önemi, değeri, hesaplanması hepsi içine alıyor.
+
+197
+01:34:46,899 --> 01:35:05,260
+Bir proses. Aynı zamanda hukuki gereksinimleri de içerebilir. Hukuki alınması gereken gereksinimleri de bunun içerisine, detaylı risk analizi içerisine dahil edebilir.
+
+198
+01:35:11,283 --> 01:35:26,064
+IT sistemlerinin kendi işi için kritik olduğu bir yazılım firmasında, bir donanım firmasında gerekli olan bir analiz yaklaşımı olarak karşımıza çıkıyor.
+
+199
+01:35:29,003 --> 01:35:32,107
+Kombine yaklaşım aslında bunların...
+
+200
+01:35:32,692 --> 01:35:48,371
+Birleşiminden ibaret. Aslında temel gayri resmi ve detaylı analizi yaklaşımlarının biraz pragmatik yaklaşımla birleştirilmesinden ibaret.
+
+201
+01:35:48,371 --> 01:35:57,371
+Aslında temel kavramı kombine yaklaşımda şu, aslında makul bir güvenliği,
+
+202
+01:35:58,484 --> 01:36:17,484
+En kısa sürede ve bakul bir fiyata kurma amacıyla yapılmış bir yaklaşılmış gibi düşünebiliriz. Hemen acil tedbirleri alması gerekiyor. Dolayısıyla zayıflıkların hızlıca tespiti bunlarla alakalı temel...
+
+203
+01:36:19,412 --> 01:36:26,372
+Tedbirlerin alınması ve zaman içerisinde bunların rafine edilmesi şeklinde de değerlendirebiliriz.
+
+204
+01:36:27,372 --> 01:36:35,872
+Ne ile başlıyor? İlk başta bütün sistemleri için tavsiye edilen temel güvenlik tedbirlerinin alınmasıyla başlıyor.
+
+205
+01:36:35,872 --> 01:36:46,731
+Sonrasında organizasyon için kritik olan asetlerin, varlıkların belirlenmesi, bunlara karşı risklerin belirlenmesi.
+
+206
+01:36:47,347 --> 01:37:13,228
+Risklerin, gerçekleşme olasılıklarının belirlenmesi ve bunlara göre de farklı tedbirlerin bunların üzerine oluşturulması amaçlanıyor. Dolayısıyla süreç daha uzun, prosesler içeriyor. Zaman içerisinde de iyileştirme ve fiyat etkin bir güvenlik.
+
+207
+01:37:13,631 --> 01:37:18,031
+Oluşturulma amaçlanmış oluyor kombine yaklaşımında.
+
+208
+01:37:20,152 --> 01:37:23,551
+Gelelim detaylı risk analizinden birazcık bahsedelim.
+
+209
+01:37:25,571 --> 01:37:30,891
+Formal yaklaşımda hatırlarsanız burada detaylı risk analizinden bahsetmişti.
+
+210
+01:37:30,971 --> 01:37:33,491
+Detaylı risk analizinde neler bulunmalı?
+
+211
+01:37:34,971 --> 01:37:36,011
+Bu nedir?
+
+212
+01:37:38,739 --> 01:37:56,819
+Güvenlik Riskenin bir organizasyondaki IT sistemlerinin güvenlik risklerinin hesaplanması en doğru şekilde hesaplanmasını içeriyor. Dolayısıyla detaylı bir analiz raporu ve dolayısıyla maliyeti yüksek.
+
+213
+01:38:00,819 --> 01:38:01,819
+Başlangıçta...
+
+214
+01:38:02,515 --> 01:38:14,376
+Güvenlik konserlerine, güvenlik endişelerine karşı savunmanın belirlenmesi üzerine fokussediliyor.
+
+215
+01:38:14,376 --> 01:38:29,376
+Ve genellikle bu zorlayıcı neden. Bir detaylı risk analizi bazı firmalar için özellikle hükümet organizasyonları, devlet kuruluşları ve...
+
+216
+01:38:29,615 --> 01:38:57,036
+Büyük iş kurumları için, büyük iş işletmeler için kanuni bir zorunluluk olarak karşımıza çıkıyor. Dolayısıyla detaylı risk analizini özellikle kamu organizasyonlarında ve büyük işletmelerde sıklıkla zorunlu olarak alması gerekilen bir analiz raporu şeklinde düşünebiliriz.
+
+217
+01:38:58,228 --> 01:38:58,728
+Peki.
+
+218
+01:39:03,859 --> 01:39:27,819
+Detaylı risk değerlendirme prosesi hangi adımlardan içeriyor? Aslında temel olarak dört adımımız var. Birinci adım değerlendirme için hazırlık. Nereden hazırlık yapıyorsun? Organizasyonun varlıkları üzerinden bir hazırlık yapıyorsun.
+
+219
+01:39:28,304 --> 01:39:39,644
+Dolayısıyla varlıkların tek tek tespit edilmesi, varlıkların belirlenmesi, detaylı risk analizinin birinci adımı.
+
+220
+01:39:39,644 --> 01:39:52,484
+Sonra riskin analizinin gerçekleştirilmesi. Ne yapıyorsunuz? Her bir varlık için oluşabilecek tehditler nelerdir?
+
+221
+01:39:53,460 --> 01:40:17,460
+Bu tehditler, zayıflıklar, her bir varlık üzerindeki zayıflıklar. Bu tehditlerin gerçekleşme yüzdesinin olasılığının belirlenmesi, etkinin azaltılmasının nasıl azaltılacağının kararı verilmesi ve riskin...
+
+222
+01:40:18,228 --> 01:40:24,147
+Belirlenmesi. Bunlar aslında ikinci aşamada riskin analiz edilmesinde.
+
+223
+01:40:28,307 --> 01:40:55,307
+İki işlem, riskin hesaplanması. Sonra bunları bu risklerin sunulması gerekiyor. Yukarıda iletilmesi gerekiyor. Sonuçların iletildikten sonra gelen cevaplara göre bu assessment'ın, bu raporun maintain edilmesi, muhafaza edilmesi, sürekli güncellenmesi aslında risk analiz proseslerimizin.
+
+224
+01:40:56,307 --> 01:40:59,407
+Dört adımı olarak karşımıza çıkıyor.
+
+225
+01:41:00,547 --> 01:41:10,788
+Şimdi kontekstin belirlenmesi. Risk analizinde ilk başta başlayacağımız neydi? Kontekstin belirlenmesi. Başlangıç aşamamız nedir?
+
+226
+01:41:12,927 --> 01:41:21,228
+Risk değerlendirmesinin parametrelerinin, temel parametrelerinin belirlenmesi, başlangıç aşaması.
+
+227
+01:41:23,155 --> 01:41:32,835
+Aynı zamanda başlangıç aşamasında incelenecek varlıkların da belirlenmesi birinci aşaması.
+
+228
+01:41:39,123 --> 01:42:02,384
+Organizasyonun işlediği ya da organizasyonun hizmet verdiği sosyal ve politik çevrenin incelenmesi gerekiyor. Bunlar nedir? Hukuki ve yönetimsel kısıtlar nelerdir? Bunları bir kere, yani yaptığınız iş için kanuni zorunluluklar var mı?
+
+229
+01:42:02,771 --> 01:42:22,671
+Yönetmeliksel ya da yönetim şirketin politikaları gereği yapılan zorunluluklar, kısıtlar var mı? Bunların belirlenmesi. Sonra riskin oluşmasına için temel bir baseline, temel belirlemek gerekiyor.
+
+230
+01:42:26,771 --> 01:42:52,452
+Kaldırma kabiliyeti diyebiliriz ya da risk iştahı diyebiliriz. Bu nedir aslında risk iştahı ya da risk kaldırma kapasitesi? Eğer varlığımız üzerinde bir güvenlik sorunu oluşması durumunda ne kadarlık bir riski biz kabul edebiliriz? Sıfır risk mi?
+
+231
+01:42:53,908 --> 01:43:20,548
+Ya da işte sızma olsun ama şuraya kadar işte bizim noktalarımızı görebilir ama işte sepetleri kurcalayabilir ama işte parasal kısımlara girmesin. Dolayısıyla kabul edilebilir risk seviyelerinin de belirlenmesi bizim ilk önce kontekstin tanımlanması aşamasında.
+
+232
+01:43:21,024 --> 01:43:40,424
+Vermemiz gereken kararlar. Aslında bunlar önemli. Nedir? Risk parametreleri, varlıkların tespiti, hukuki zorluklar, kısıtlar ya da şirket politikalarıyla alakalı kısıtlar, temel bir risk.
+
+233
+01:43:44,404 --> 01:43:51,043
+Temelin belirlenmesi ve riskin gerçekleşmesi durumunda kabul edilebilir risk seviyesi.
+
+234
+01:43:52,783 --> 01:44:11,764
+Bakalım aslında genel organizasyonel risk içeriklerine. Yapı, bir inşaat firması için nedir? Sızma IT ile alakalı güvenlik işte less, daha az zayıf. Nedir mesela? Tarım.
+
+235
+01:44:12,756 --> 01:44:34,036
+Medya, emlak, iletişim, eğitim. Yukarıya doğru dikkat ederseniz risk nedir mesela bizimle alakalı? Risk eğitimle ilgili bu verdiğimiz uzaktan derse, derse kayıt olmayan kişilerin de dahil olması.
+
+236
+01:44:34,496 --> 01:45:00,155
+Kabul edilebilir. Bir risk değil ama kabul edilebilir. Risk ya da bu ders kayıtlarının internette açılık hale gelmesi. Risk olmaması gerekiyor ama kabul edilebilir. Dedik ya risk appetite, risk iştaha ya da risk kaldırma kapasitesi önemli. İletişim, telekomünikasyon.
+
+237
+01:45:00,627 --> 01:45:11,707
+Yani noktadan noktaya iletişim olmayabilir. Bu yukarıya doğru çıkıyor yaptığınız işe bağlı olarak.
+
+238
+01:45:11,707 --> 01:45:25,347
+Bazı işte üretim, bakın risk yukarıya doğru çıkıyor. İletim, sağlık, bakın daha hassas hale geliyor. Bankacılık ve finans.
+
+239
+01:45:25,971 --> 01:45:50,672
+Kamu hizmetleri bakın yukarıya doğru. Dolayısıyla siz organizasyonunuzun risk iştahını yaptığınız sektöre, şirketinizin büyüklüğüne, şirketinizin varlığına, işte o varlığın değerine, riskin oluşma ihtimaline göre iyi bir değerlendirmeye tabi tutmak gerekiyor.
+
+240
+01:45:58,771 --> 01:46:22,111
+Peki, sonraki nedir? Birinci aşama içeriğin belirlenmesi. Sonrasında varlıkların belirlenmesi aslında. Varlıkların güvenlikle alakalı ya da analizle takip edecek varlıkların belirlenmesi.
+
+241
+01:46:29,043 --> 01:46:44,543
+Bu varlıklarla alakalı personelinle alakalı interviveler, kim kullanıyor, ne amaçla kullanıyor, nasıl kullanıyor, etkinliği nelerdir? Bunların teker teker belirlenmesi gerekiyor.
+
+242
+01:46:44,543 --> 01:46:55,884
+Aslında varlık deyince, buradaki 27 bin dokümanlarından da anılmış, korumaya ihtiyaç duran her şey bir varlıktır.
+
+243
+01:46:56,307 --> 01:47:18,407
+Dolayısıyla insan kaynakları firması için insanın kendisi bir varlıktır. Yani dışarıya hizmet satıyor. Diyelim ki bir taşeron firma, temizlik hizmeti veriyor. Temizlik hizmeti veriyor. Bu firma için en büyük varlık nedir? İnsanın kendisi, iş gücüdür.
+
+244
+01:47:19,283 --> 01:47:39,823
+İşte bankada en büyük varlık nedir? Paranın kendisidir. İletişim firmasında, komünikasyon firmasında en büyük varlık nedir? İletişim hizmeti. Yani ana faaliyet alanı. Biraz önce demiştik ya, ana faaliyet alanındaki kritik varlıkların belirlenmesi.
+
+245
+01:47:41,203 --> 01:48:01,984
+Güvenliğe, korumaya ihtiyaç duyan her şey bir varlıktır. Çünkü bu varlığın organizasyonunda, kendi işini yapmasında bir firma için, organizasyon için bir değeri vardır. Dolayısıyla varlığımızın belirlenmesi gerekiyor.
+
+246
+01:48:02,899 --> 01:48:18,739
+Burada KBKK'yı da örnek verebiliriz değil mi hocam? Aslında her şirketin asetlerin içerisinde olan bir şeydi ama kişisel veriliği koruma kanunuyla beraber bu aset seküritisi daha fazla kazandı.
+
+247
+01:48:18,739 --> 01:48:23,739
+Zaten şurada hatırlarsanız arkadaşlar risk analizi ile alakalı burada...
+
+248
+01:48:24,112 --> 01:48:42,051
+Kontekstin belirlenmesi diyoruz ya ilk başta. Legal ve regulatory constraints. Hukuki ve yönetimsel kısıtlar neler? İlk başta onu koyuyoruz. Yani KVKK bizim yukarıda var. Yani hiçbir şey yapmazsa KVKK gerekliklerini karşılamamız gerekiyor.
+
+249
+01:48:43,028 --> 01:49:01,028
+Ya da bizim riski oluşturması durumundaki baseline'ımız neler? Yani en zor şeyler vardı ya iş yerlerinde, yangında ilk kurtarılacak kırmızı etiket, sarı etiket, yeşil etiket. Bunları belirlememiz gerekiyor. Yani işe başlamadan önce...
+
+250
+01:49:01,460 --> 01:49:25,700
+Bizim temelimizi belirlememiz gerekiyor. Başka türlü yapamayız. Parametreleri belirlememiz gerekiyor. Koruyacağımız varlıkları belirlememiz gerekiyor. Bunlarla alakalı hukuki kısıtları belirlememiz gerekiyor. Aynı zamanda risk appetite dediğimiz risk iştahı ya da risk kaldırma kabiliyetini belirlememiz gerekiyor.
+
+251
+01:49:29,460 --> 01:49:45,840
+Mesela bankacılıkta para kaybı bir yolda bile yüzde yüz değil. Yani özellikle ticaret siteleri ya da mesela kredi kartlarında örnek verelim. Size kredi veriyor. Kredinin dönmesi için her türlü tedbir alıyor ama her krediyi herkes ödeyemiyor ki.
+
+252
+01:49:47,315 --> 01:50:02,956
+Bunlarla alakalı risk epitahitini de ne kadarlık kaldırabileceği riski de belirlemek gerekiyor. Yani buradaki ticari şeye göre firmanızın bulunduğu sektöre bağlı olarak hassas, güvenliğe göre daha hassas.
+
+253
+01:50:03,380 --> 01:50:20,899
+Veyahut da hiç az hassas ve çok hassas diye kendinizi pozisyonlandırmanız gerekiyor. Yani güzel bir nokta. O KVKK hukuki bir zorunluluk. Hiçbir şey yapmazsan KVKK'yı uygulamak zorundasın.
+
+254
+01:50:22,559 --> 01:50:30,239
+Terminoloji. Hep diyoruz ya, şu ana kadar dört temel terminoloji gördük. Varlık, tehdit.
+
+255
+01:50:31,091 --> 01:50:53,492
+Zayıflık ve risk. Ve bütün terminolojilerde bunu görürsünüz arkadaşlar. Ana terminolojimiz risk yönetiminde ya da güvenlik yönetiminde varlık. Varlık aslında kaynak. Korumak için değerli olan kaynak. Mesela bir hostik firması düşünün.
+
+256
+01:50:53,971 --> 01:51:09,711
+İşte sanal sunucu veriyor, barındırma hizmeti veriyor. Bunun için kaynak nedir? Sistemin kendisi bir kaynaktır. CPU, bandwidth öyle değil mi? Ya da bir network, ISP düşünün. Bandwidth bir kaynaktır.
+
+257
+01:51:20,275 --> 01:51:46,975
+Riskindir. Yani oluşmamış aslında. Varlığa zarar verebilecek güvenlik sorunlarına biz risk diyoruz. Zayıflık ise aslında varlıkların tasarımında, geliştirilmesinde, organizasyon süreçlerde kötüye kullanılabilecek, tehditlere karşı kötüye kullanılabilecek her şeye biz
+
+258
+01:51:47,380 --> 01:52:14,279
+Her zayıflığa biz vulnerability demiş oluyoruz. Risk ise likelihood yani ihtimallerin, risklerin, tehditlerin, zayıflıkları kullanarak varlığa zarar verme ihtimalinin hesaplanması. Risk bir sayı.
+
+259
+01:52:14,836 --> 01:52:38,696
+Yani riskimiz sıfır demek gerçekleşme, zayıflıklara karşı gerçek tehditin gerçekleşme olası yok demektir. İşte yüzde yirmi demek yüz tane tehditin yirmi tanesi saldırıya dönüşebiliyor demektir. Bu risk de bir kuantatif bir kombinasyonel bir sayı.
+
+260
+01:52:43,412 --> 01:53:00,412
+Peki risk ne? Hatırlarsanız biz 6 tane kavram verdik dersin başında ve dedik ki IT, güvenlik yönetimi ve risk değerlendirmesi ve bu 6 terimin, 6...
+
+261
+01:53:02,612 --> 01:53:19,992
+İfadenin gerçeklenmesi üzerine. Dolayısıyla nedir bunlar? Gizlilik, confidentiality, integrity, bütünlük, erişilebilirlik, availability, accountability, hesap verilebilirlik, authenticity, özgünlük, reliability, güvenliyirlik.
+
+262
+01:53:29,328 --> 01:53:55,528
+Zarar verebilecek, zarar vermekte değil, gizliliğinin, mesela bir gizli bilgimizin afişe olması bir tehdittir. Neye tehdittir? Confidentialiyeti'ye bir tehdittir. Ya da telefon görüşmelerimizin dinlenmesi, mesajlarımızın açığa verilmesi. Bu nedir? Confidentialiyeti'ye tehdittir.
+
+263
+01:53:56,724 --> 01:54:13,743
+Mesajımızın değiştirilmesi, mesajlarımızın sıralarının değiştirilmesi, dosyamızın işte bir programımızın kendi işlevi dışında başka işlevsel yapı hale getirilmesi ya da verinin içerisine.
+
+264
+01:54:14,387 --> 01:54:33,387
+Başka veriler eklenmesi. Bu nedir? İntegratiye teklittir. Bir web sitemizin, bir bankacılık sitesi olabilir, bir eticari site ulaşılamaması. Bunlar her bir tehditin hangi tür anahtara, anahtar güvenlik...
+
+265
+01:54:33,935 --> 01:54:56,916
+Terimine tehdit olduğunu, hatta bununla alakalı hatırlarsanız, pre-reküsü derslerin içerisinde, molverlerde görürsünüz aslında neyin hangisine tehdit olduğu ve neleri hedeflediği aslında oradaki dokümanlarda ayrıntılarıyla var. Dersin başında söylediğim gibi onları incelemenizde fayda var.
+
+266
+01:54:56,916 --> 01:54:58,916
+Peki.
+
+267
+01:55:01,460 --> 01:55:19,800
+Ne yaptık biz? Hukuki olarak temelimizi belirledik. Varlıklarımızı belirledik, hukuki kısıtlarımızı belirledik. Sonra risk iştahımızı belirledik. Sonra varlığımızın değerini belirledik. Sonra tehditleri belirledik. Peki nedir?
+
+268
+01:55:20,340 --> 01:55:38,340
+Tehdit, zayıf riskin oluşması için bir yapı. Peki, tehdit nereden gelebilir? Birincisi Allah'ın işi. Öyle değil mi? Kaza ile olabilir. Herhangi bir şekilde. Dolayısıyla herhangi bir...
+
+269
+01:55:38,804 --> 01:56:02,563
+Dış kaynaktan değil, nedir mesela? Siz dediğim gibi bir taşeron firmasınızdır temizlik. Sabah gelirken sizin çalışanlarınızdan bir tanesinin ayağı kayarak, buzda kayarak ayağını kırması. Birisi özellikle oraya buz atmadıysa ya da geçerken ittirmediyse bu Allah'ın işi ya da sistem rutin çalışıyor.
+
+270
+01:56:03,007 --> 01:56:29,907
+İşte yıldırım düşmesi nedeniyle, elektrikteki dalgalanma nedeniyle sisteminizin disklerinin zarar görmesi. Bunlar aktif kat dediğimiz doğal kaynaklar. Bunların bir riskini hesaplamanız gerekiyor aslında ama teme itibariyle bu var. İkincisi insan yapısı.
+
+271
+01:56:31,028 --> 01:56:44,268
+İnsan yapısı dediğiniz bir saldırgan vasıtasıyla saldırgan ne olabilir? Karşı firma tarafında olabilir ya da patrona kızmış bir çalışan olabilir.
+
+272
+01:56:44,268 --> 01:56:53,448
+Ya da dolayısıyla saldırgan kaynağı kazarı olabilir ya da bilerek.
+
+273
+01:56:55,315 --> 01:57:06,735
+Yapılmış olabilir bu tehditler. Dolayısıyla kaynağı doğru tespit etmek gerekiyor ve bunlara göre iyi hesaplamalar yapmak gerekiyor.
+
+274
+01:57:06,735 --> 01:57:19,095
+Peki, insan tehditlerine bir bakalım. İnsan tehditleri bir motivasyonu. Niye sizi tehdit etsin? Ne kazanacak sizden? O önemli.
+
+275
+01:57:21,971 --> 01:57:32,731
+Gördük mesela dün Ruslar Ukrayna televizyonunu ele geçirmiş ve teslim olun diye görüntüler yayınlamışlar.
+
+276
+01:57:32,831 --> 01:57:41,931
+Ya da dünyadaki diğer hackerlar Rus sitelerini ele geçiriyor, yapıyı işleyemez hale getiriyor.
+
+277
+01:57:41,991 --> 01:57:45,371
+Motivasyonu ne? Politik motivasyon olabilir. Bunları da gene.
+
+278
+01:57:45,775 --> 01:58:11,175
+Verdiğim dokümanlarda verdim. Mali motivasyon olabilir, politik motivasyon olabilir. Bunlar önemli. Peki bu insan kaynağının, tehditin kapasitesi önemli. Ne kadar bilgililer? Bu işi yapmak için ne kadar bilgililer? Bunu iyi değerlendirmek gerekiyor. Ve bu işi yaparkenki finansman, kaynak çok önemli.
+
+279
+01:58:11,828 --> 01:58:30,588
+Yani mali olarak çünkü para varsa yetenekli insanları da bulabilirsiniz. Ve saldırının ihtimali. Bunlar çok önemli. Bunları teker teker hesaplamamız gerekiyor.
+
+280
+01:58:31,952 --> 01:58:49,092
+Ne yaptık? Temelleri belirledik, risklerimizi belirledik, güvenlikle alakalı kavramımız üzerindeki neyi hedefliyoruz onları belirledik, tehdidi belirledik. Şimdi geleceğiz, zayıflığın belirlenmesi. Bu da önemli.
+
+281
+01:58:49,587 --> 01:59:10,007
+Çünkü tehdit var ama bizim varlığımıza zayıflık üzerinde. Peki zayıflık aslında kötüye kullanılabilecek IT sisteminde veya işleyişte, organizasyonel işleyişte kötüye kullanılabilecek her şey aslında zayıflık olarak ifade ediliyor.
+
+282
+01:59:11,220 --> 01:59:27,039
+Dolayısıyla bu zayıflığın organizasyon içerisinde ya da organizasyonu tehditteki bu zayıflığın anlamı, uygulanabilme kapasitesi ve etkisinin belirlenmesi gerekiyor.
+
+283
+01:59:37,971 --> 02:00:01,171
+Riskin hesaplanması gerekiyor. Dolayısıyla biz aslında tehditlerin listesi, zayıflıkların kaba bir özet bir tanımı ve bu zayıflıkların nasıl ve niye kullanılacağı ve nasıl
+
+284
+02:00:01,684 --> 02:00:15,483
+Yani aseptör üzerinde nasıl bir risk oluşturacağının belirlenmesi aslında zayıflık belirlenmesi kavramı içerisinde sayılıyor.
+
+285
+02:00:16,020 --> 02:00:30,560
+Şimdi gelelim riskin analiz edilmesine. Hemen hemen bütün bileşenlerimiz var. Temel baseline'ımız var, security requirement'larımız var, tehditlerimizi belirledik, zayıflarımızı belirledik. Şimdi geldik riskin hesaplanmasına.
+
+286
+02:00:43,764 --> 02:01:00,563
+Gerçekleşme, yani riskin, trivetin atağa dönüşme olasılığını bizim hesaplanması risk analizi kavramı içerisinde geliyor.
+
+287
+02:01:00,563 --> 02:01:11,163
+Aynı zamanda bu trivet atağa dönüşmesi durumunda sonuçlarının belirlenmesi.
+
+288
+02:01:12,083 --> 02:01:30,963
+Dolayısıyla risk eşittir. Türetin, tehditin oluşma yüzdesi çarpı bunun organizasyona maliyeti eşittir size risk. Yani sizin organizasyona maliyeti yüz bin.
+
+289
+02:01:32,787 --> 02:01:42,047
+Lira ise ve bunun oluşması yüzde on ise aslında nedir? Risk eşittir. On bin liradır. Öyle değil mi?
+
+290
+02:01:56,336 --> 02:02:16,636
+Hesaplanması ya da hesaplanabiliyor olması aslında doğru bir risk. Bunun için sayısal rakamsaldan daha ziyade kaliteye yönelik değerlendirmeler kullanılıyor.
+
+291
+02:02:19,475 --> 02:02:30,275
+Nadiren, sıklıkla, muhtemel şeklinde kualitif yaklaşımlar karşımıza çıkıyor.
+
+292
+02:02:30,675 --> 02:02:45,395
+Aynı zamanda mevcut kontrol mekanizmalarının, güvendik kontrol mekanizmalarının da analiz edilmesi, risk analizi kavramında tehditlerin minimize edilmesi.
+
+293
+02:02:45,844 --> 02:03:11,903
+Bağlamında karşımıza çıkıyor. Security kontroller, güvenli kontrolleri neyi içeriyor? Yönetimsel süreçlerin kontrol edilmesi, operasyonel süreçlerin kontrol edilmesi, analiz edilmesi, teknik proseslerin ve prosedürlerin kontrol edilmesi. Dolayısıyla bunun için bir checklist.
+
+294
+02:03:13,460 --> 02:03:37,840
+Oluşturup bu checklist'te hepsinin kontrol edilmesi kilit personelle de görüşme yapılmasını içeriyor bu risk analizi. Peki, riskin, dedik ya kooperatif yapacaktı, kuantatif değil. Bir dakika arkadaşlar, bir çay alıp gelin.
+
+295
+02:04:12,627 --> 02:04:36,707
+Evet, devam edelim. Riskin, likelihood dediğimiz oluşma ihtimali. Aslında anketlerdeki liker ölçeğine benziyor. Birden beşe kadar değer. İşte bir nadiren, iki işte bazen ihtimal dahilinde çoğunlukla ya da kesinlikle.
+
+296
+02:04:37,171 --> 02:05:02,891
+Şeklinde değerlendirebiliriz. Katılıyorum, kısmen katılıyorum, ortadayım. Nadiren şeklinde var ya, beşilik her tür şey. Dolayısıyla bir, çok az. Bunu sizin sisteminize göre birden beşe kadar değerlendirmeniz. Benzer şekilde riskin sonuçlarını da.
+
+297
+02:05:03,380 --> 02:05:24,960
+Altı seviye. Bunlar tamamen sizin analizde kullandığınız seviyelendirmeye bağlı. Nedir mesela? Birisi riskin sonuçları, işte demiştik ya risk appetite'i, riske kaldırmaya da kabul edilebilir risk. Burada karşımıza çıkıyor.
+
+298
+02:05:26,131 --> 02:05:48,411
+Olma oluşması durumunda anlamsız, minor etkisi, moderate dediğimiz orta etki, yüksek etkili, çok yüksek etkili ve doomsday dediğimiz felaket. Bunlar riskin konsekvensleri ya da sonuçlarını değerlendirmemiz gerekiyor.
+
+299
+02:05:53,460 --> 02:06:19,600
+Riskin seviyesini de low, medium, high ve ekstrem olarak seviyelendirirsek neydi bizim? Konseküvençlerimiz vardı, likelihood'larımız vardı olma ihtimali ve sonunda da bunlara göre de risk seviyesi çok yüksek, yüksek, orta ve düşük şeklinde yaparsak likelihood'ları rare'den yani nadirenden
+
+300
+02:06:19,952 --> 02:06:38,952
+Hemen hemen olması gereken, çoğunlukla dediğim, almost certain'ı kıyaslarsak, konseküvensleri de altı seviyede de doomsday'da insignifikante çevirirsek, risk aslında…
+
+301
+02:06:38,975 --> 02:06:48,855
+Almost Certain'da Doomsday'da ekstrim, en yüksek. Aslında dikkat ediyorsanız, hemen hemen olacaksa minor etkilerde bile risk high.
+
+302
+02:06:49,427 --> 02:07:01,527
+Bakın dikkat ediyorsanız olması yüksek olduğu için ama nadirenlerde sadece Doomsday'da ekstrem koyup diğer de High ve Low diye sınıflandırmanız mümkün.
+
+303
+02:07:01,527 --> 02:07:06,947
+Tamamen etki ve sizin belirlediğiniz kısıtlara bağlı olarak.
+
+304
+02:07:10,771 --> 02:07:28,431
+Peki bununla alakalı ne yapacağız? Bizim bir tane listemiz olması gerekiyor. Varlık. Nedir mesela üniversite için? İnternet router. Tehdit ne olabilir? Tehdit hackerların saldırısı. Existing Control mekanizmamız ne?
+
+305
+02:07:29,363 --> 02:07:43,684
+Admin'in pasfordü, başka bir güvenliği yok ya da mesela bir başka koyduk. İşte VLAN, özel kapalı bir ağ içerisinde VLAN içerisine koyduk. Dolayısıyla sadece admin girişleri oradan yapıyor.
+
+306
+02:07:44,604 --> 02:07:48,663
+Likelihood, tamamen router dışarıdan açık olduğu için.
+
+307
+02:07:49,363 --> 02:08:14,583
+Lacklyhood nedir? Possible, biraz ortanın üstünde ya da almost certain'da diyebiliriz. Dolayısıyla consequence nedir? Possible ise moderate diyebilirsiniz ya da katastropik diyebilirsiniz. Level of risk ne? Eğer router ele geçirirse high. Ve bir network için risk prioritisi nedir? Sizin bir numarada. Sonra data center.
+
+308
+02:08:16,148 --> 02:08:36,928
+Ne olabilir? Data Center için sizin belirleyeceğiniz risk, işte kazara yangın çıkması ya da su baskın olması. Existing Control ne? Bu Act of God dediğimiz Allah'ın işi. Dolayısıyla herhangi bir disaster planın yok.
+
+309
+02:08:37,971 --> 02:09:04,971
+Öyle değil mi? Ya da elektrik kesilmesi, bununla alakalı disaster planı nedir? İşte jeneratörün var. Oluşması unlikely, nadiren. Yani yangın ya da sel baskını olması nadiren. Ama konseküntüsü ne? Major diyebilirsiniz. Ya da katastrofik diyebilirsiniz olursa ve high level riski ve risk priority'ni bu şekilde sizin risk register'daki bütün...
+
+310
+02:09:05,171 --> 02:09:25,811
+Asetlerinizi tek tek çıkartıp zayıflığına, mevcut kontrollerine, oluşma ihtimaline ve sonucuna ve buna göre de oluşturacağı riske göre belirleyip sonra bunu risk acısı da yukarıdan aşağıya sıralamanız ve countermeasureları bunlara göre alıyor olmanız gerekiyor.
+
+311
+02:09:25,811 --> 02:09:31,891
+Peki risklerin karşı tedbirler.
+
+312
+02:09:33,203 --> 02:09:37,243
+Dediğiniz aslında risk seviyesi ve para.
+
+313
+02:09:38,404 --> 02:09:38,923
+Öyle değil mi?
+
+314
+02:09:39,524 --> 02:09:50,163
+Dolayısıyla sizin elinizdeki bütçeye göre maksimum güvenlik tedbirini kullanmanız gerekiyor.
+
+315
+02:09:50,163 --> 02:09:59,944
+Dolayısıyla risk level'ları ilk başta nedir? Minimum para ödeyerek maksimum riskleri yok.
+
+316
+02:10:00,000 --> 02:10:24,760
+Ötmek aslında primer hedef olmalı. Sonrasında para arttıkça diğerlerine de tedbir alıyor olmanız gerekiyor. Yani likelihood olma listesi. Buna göre sizin için bu asetin varlığı ödeyeceğiniz parayla doğru orantılı.
+
+317
+02:10:30,996 --> 02:10:57,456
+Paranız yok, riskiniz var. Alternatif neler var? Bunları da bir değerlendirelim. Öyle değil mi? Her şeyi yaptınız, listeyi de oluşturdunuz, rejisteri de yaptınız, her birinizi koydunuz. Ama paranız yok ya da belli bir seviyeye kadar paranız var. Alternatifler. Birincisi riski kabullenme.
+
+318
+02:10:58,707 --> 02:11:09,867
+Nedir? Daha yüksek seviye risk appetite'ı belirlersiniz ve onu kabullenirsiniz. Dersiniz ki ben tamam herkese kredi veriyorum ama.
+
+319
+02:11:10,420 --> 02:11:37,960
+Bu kredinin %20'si dönmeyecek ve ben bu %20'yi diğer kredi alanlarının üzerine maliyeti yükselteyim. Bunu düşürmek için daha az kredi vermem gerekir. Daha çok insanları iyi analiz etmem gerekir. Ama bu da maliyetli. Ne yaparsınız aslında riskiniz? Fiyatınızı arttırır.
+
+320
+02:11:38,484 --> 02:11:49,904
+Kabul edilebilir ama bu işle alakalı belli bir seviyede kabul edilebilir riski yukarıya çekebilirsiniz. Riskten sakınabilirsiniz.
+
+321
+02:11:52,144 --> 02:12:02,904
+Nedir riskten? Tespit ederseniz en büyük güvenlik riski neresi oluşturuyor? O işten vazgeçersiniz. O aktiviteden vazgeçersiniz.
+
+322
+02:12:06,420 --> 02:12:32,640
+Bir şey mi soracaksınız? Dolayısıyla paranızda yoksa riskten sakınabilirsiniz ya da riski transfer edebilirsiniz. Nedir riski transfer? Sizin data centerinizde yanma, yıkılma faaliyeti var ya da hırsızlık olayları çok oluyor. Arabanız var, kasko yapamıyorsunuz. Birisi çiziyor.
+
+323
+02:12:33,235 --> 02:12:59,055
+Ne yaparsınız? Bir otoparka çekersiniz. Riski otoparka transfer edersiniz. Altınınız var, zenginsiniz, evinizde bulunduruyorsunuz. Ama evinize güvenlik sistemi alacaksınız, şunu yapacaksınız. Ne yaparsınız? Gidersiniz bankaya koyarsınız. Riski transfer edersiniz. Bu da bir başka yöntem.
+
+324
+02:12:59,699 --> 02:13:25,000
+Riskin sonuçlarını düşürürsünüz. Yani olabilecek sonuçlarını, riskin olma yüzdesini düşürmeye çalışırsınız. Ne yaparsınız? Yapısal bazı değişiklikler yaparsınız. Ya da bu asetin organizasyon için önemli, alakalı organizasyon değişiklikler yaparsınız. Dolayısıyla sonuçları düşürdüğünüz zaman.
+
+325
+02:13:25,439 --> 02:13:45,920
+Riski de düşürmüş olursunuz ya da riskin oluşma yüzdesini düşürürsünüz. Nasıl yaparsınız? Kullanıcıları eğitirsiniz, daha sıkı güvenlik politikaları uygularsınız, para harcamadan yapacağınız yöntemlerle riskin oluşma yüzdesini düşünerek alternatif yöntemler oluşturabilirsiniz.
+
+326
+02:13:47,060 --> 02:13:59,580
+Risk Treatment Alternatifleri olarak karşımıza çıkıyor ki bunları eminim sektörde çalışan birçok arkadaşınız zaten aşina birçoğu da kullanıyor ya da karşılaşmışlardır diye düşünüyorum.
+
+327
+02:13:59,880 --> 02:14:01,340
+Bir şey ekleyebilir miyim hocam?
+
+328
+02:14:01,440 --> 02:14:01,960
+Tabii tabii.
+
+329
+02:14:01,960 --> 02:14:15,060
+Para olmadığı durumlarda genelde mesela bir sunucu düşünün datacenter'da barındırılıyor. Yedekleme için para yoksa, güvenlik için para yoksa, firewall için yoksa ya da ona benzer şeyler için para yoksa.
+
+330
+02:14:15,060 --> 02:14:23,820
+Genellikle erişim olmayan zamanlarda erişime kapatılıyor. Ya da her gün manuel yedekleme.
+
+331
+02:14:24,372 --> 02:14:28,471
+O ne oluyor? İşte konsekünsleri azaltıyorsun değil mi?
+
+332
+02:14:28,891 --> 02:14:40,511
+Aynen öyle. Yedekleme alanı için ekstra ücret ödemektense yedeğinizi kendiniz alıyorsunuz, indiriyorsunuz, yeriniz dolduğunda eskileri kaldırıp yenileri koyuyorsunuz gibi şeyler oluyor.
+
+333
+02:14:40,511 --> 02:14:52,372
+Evet işte diyorum ya bunlar da aslında risklerle alakalı alternatifler. Bankalar ne yapıyor? İşte kredi maliyetleri, herkese kredi veriyor ama kredi maliyetleri...
+
+334
+02:14:52,372 --> 02:15:16,792
+Kredi kartı, gerçi sizin yaşınız küçüktür. Eskiden sokakta gezene bile kredi kartı veriliyordu. Niye? Çünkü krediyi yaygınlaştıracak ama adam ödeyemiyordu. Ödeyemediği zaman ne yapıyordu? Oradaki o maliyetleri diğer çalışanlardan, diğer rutin ödeyenlerden. Aynı şey elektrikli de söz konusu değil mi? Kayıp kaçak oranında.
+
+335
+02:15:17,203 --> 02:15:39,304
+Evet. Ödemeyenlerin parasını ödeyenlerden bir haliyle alıyorlar. Dolayısıyla işletme maliyetleri artıyor. Evet, bir tane örnek. Diyelim ki bizim gümüş stel madenimiz var. Altın madeni olsun, gümüş madeni ne değilsin. Aslında bu fictional yani hayali.
+
+336
+02:15:39,988 --> 02:16:01,028
+Kurgusal bir global maden firmamız olduğunu düşünelim. Bunun üzerinden gidelim ki benzer şekilde sizler de bir organizasyonu inceleyebilirsiniz. Detaylı risk analizi yapabilirsiniz.
+
+337
+02:16:02,467 --> 02:16:04,688
+Hatta şöyle bir şey yapalım.
+
+338
+02:16:05,108 --> 02:16:24,448
+Güzel bir risk analizi hazırlayıp getirenlere, mesela bir firma bir şey bulup, kendi firmanız da olabilir, final notuna yüzde otuz katkı sağlayacağız. Anlaştık mı? Ama birbirinizin aynısı olursa ikisini de kabul etmem.
+
+339
+02:16:25,619 --> 02:16:28,680
+İyi olur hocam. Hem kendi firmamızı da incelemiş oluruz.
+
+340
+02:16:28,680 --> 02:16:47,600
+Ama dediğim gibi siz kendiniz yaparsanız %30. Ama birbirinin aynısı olursa, çünkü inceleyeceğim, çünkü ciddi bir etki. %50 zaten geçmiş konulardan test yapacaktık. %30 da buradan geliyor, %20 de süreç içerisinde bir yerlerden buluruz.
+
+341
+02:16:49,236 --> 02:16:54,376
+Hocam peki süresi ne zamana kadar yapalım bu risk analizmin?
+
+342
+02:16:54,816 --> 02:17:00,276
+Vizelere kadar yapalım. Olmaz mı? 3-4 haftamız var. Ama lütfen arkadaşlar.
+
+343
+02:17:02,611 --> 02:17:23,291
+Birbirinin aynısı olursa ya da birbirinizden yapmış olursanız verene de alana da sıfır. Yani değerlendirme yapmam. Onu söyleyeyim. Sadece final notu üzerinden değerlendirilmiş olur. Onu söyleyeyim. O yüzden herkes kendi firmasını bakın burada ayrıntıları var analiz edebilir. Hayali bir firma kurar onu analiz edebilir.
+
+344
+02:17:27,888 --> 02:17:34,468
+Ama sizin olsun. Tamam. Yapmak zorunda değilsiniz. Ama finale yüzde otuz etkisi var.
+
+345
+02:17:35,268 --> 02:17:35,768
+Tamam hocam.
+
+346
+02:17:35,768 --> 02:17:38,728
+Hocam, yapılacak şey nedir? Ben tamamlayamadım.
+
+347
+02:17:38,747 --> 02:17:40,168
+Bu derste anlattığımız işte.
+
+348
+02:17:40,819 --> 02:18:01,939
+En son şimdi mesela Gümüş Sıtar kampanası var ya, maden firmasının yapıldığı gibi varlıklarınızı çıkartıp esetlerinizi buna göre değerlendirme, muhtemel zayıflıklar ve bunlara göre likelihoodların belirlenmesi bunlarla alakalı yapı. Bir rapor hazırlayacaksınız.
+
+349
+02:18:02,579 --> 02:18:09,799
+Hocam, firmanın tamamı yerine, firmanın mesela sadece data center'ına yönelik bir risk analizi yapabilir miyiz?
+
+350
+02:18:09,899 --> 02:18:25,579
+Ya data center'ına da yaparsın ama biraz global düşünmek gerekiyor. Sadece odayla sınırlı değil. Data center'ın binası var, güvenliği var, elektriği var, suyu var, gazı var. Onları da içine almanız gerekiyor. Data center derken data center firmasıymış gibi düşüneceksiniz bunu.
+
+351
+02:18:26,100 --> 02:18:46,940
+Sadece Data Center'ın içerisine girip burada ne var? Switch var, elektrik var, sunucular var. Sunucuların riski şu, öyle değil. Eğer öyle yaparsanız o zaman daha detaylı analiz o zaman. İşletim semeği, kullanıcı, utility'ler, firewall'lar daha ayrıntıya girmeniz gerekiyor.
+
+352
+02:18:47,700 --> 02:18:48,900
+Anladım hocam, tamam.
+
+353
+02:18:49,119 --> 02:18:49,680
+Anlaştık.
+
+354
+02:18:50,548 --> 02:19:12,548
+Evet, şimdi gelelim. Dedik ya, bu bizim firmamız. Büyük bir firma. Uluslararası Madencilik firması. Altın çıkartıyoruz Güney Afrika'da. Dolayısıyla büyük bir IT altyapımız var. Tamam mı? Bunun içerisinde, IT altyapı içerisinde kullandığımız özel amaçlı...
+
+355
+02:19:13,299 --> 02:19:31,679
+Ve genel kullandığımız spesifik yazılımlar var. Özel amaç dediğimiz işte oradaki SCADES sistemleri var. İşte rayların sistemleri bunlar. Özel donanımlarda koşan sistemler var. Aynı zamanda çalışanlarımızın kullandığı veri merkezlerimiz, sunucularımız, serverlarımız, işte web sitemiz, şunumuz, bunumuz var.
+
+356
+02:19:40,479 --> 02:20:05,479
+Madenden çıkartıyoruz. Dolayısıyla oradaki asansörün yazılımına müdahale ederseniz adamları ölebilir. Ya da havalandırma sistemiyle alakalı yazılımlar. Dolayısıyla doğrudan IT'mizin yapısı doğrudan sağlıkla ve güvenlikle alakalı. Tamam mı? Eskiden izoleydi ama şu anda tamamen hepsini network'e bağladık. Dolayısıyla...
+
+357
+02:20:06,484 --> 02:20:27,484
+Uzaktan havalandırmaya da ulaşabiliyoruz. Asansöre de ulaşabiliyoruz. Alttan madeni çıkartan trenlere de ulaşabiliyoruz. Onların yönetimi. Ve ne yapmaya karıştık? Kombine bir yaklaşımımız olacak. Paramız var, global firmayız.
+
+358
+02:20:27,956 --> 02:20:55,076
+Mining Endüstrisinin hatırlarsanız riskimiz az riskli bölgede, öyle değil mi? Daha çok inşaat, low vulnerability demiştik ya. Ama ciddi manada hukuki ve şirketsel gereksinimlerimiz var. Yani sağlıkla alakalı ciddi hukuki gereksinimlerimiz var. Güvenlikle alakalı, sağlığı güvenliğiyle alakalı bir dünya.
+
+359
+02:20:55,540 --> 02:21:11,520
+Hukuki zorunluluklarımız var ve firmamız orta ve düşük riskleri kabul ediyor. Bizim için tedbir yüksek risklerde. Hani risk appetite vardı ya.
+
+360
+02:21:12,020 --> 02:21:27,380
+Sizin oradaki hesabınıza göre orta ve düşük riskler için para harcamayacağız. Yüksek riskler ve yüksel için para harcayacağız. Bak bunları belirledik. Tamam. Nelerimiz var bizim?
+
+361
+02:21:28,468 --> 02:21:50,087
+SCADA sistemlerimiz var. Bunların SCADA sistemlerinde ne olabilir güvenlik? Hatırlarsanız availability, confidentiality, integrity, accountability hatırlarsanız liability. SCADA sistemleri, SCADA düğümlerde bütünlüğüne bir saldırı olabilir ya da güvenilirliğine bir saldırı olabilir değil mi?
+
+362
+02:21:53,236 --> 02:22:15,476
+Bütünlüğüne bir saldırı olabilir. Finansal sistemimizin ulaşılabilirliğine ve bütünlüğüne saldırı olabilir. Üretim tedarik sistemimizin bütünlüğüne bir saldırı olabilir.
+
+363
+02:22:16,020 --> 02:22:44,000
+Üretim sistemimizin bakımına ya da yapısının bütünlüğüne bir saldırı olabilir. Ya da mail serverımız var. Mail serverımızda finansal teklifler alıyoruz, siparişler alıyoruz, ödemeler yapıyoruz, çalışmalarımız var. Bunların gizliliğine, bütünlüğüne ve mail sunucumuzun erişilebilirliğine bir saldırı olabilir. Varlıklarımızı çıkarttık. Dikkat ediyorsunuz, varlıklarımızın tehditlerini de çıkarttık. Tamam mı?
+
+364
+02:22:44,020 --> 02:22:51,500
+Nasıl yapacağınızı sormuştunuz ya. Bu şekilde. Şimdi gelelim. Bir dakika arkadaşlar. Şu telefonla bir bakayım.
+
+365
+02:24:03,507 --> 02:24:26,768
+Evet arkadaşlar, evdeki uzaktan çalışmayı bu yüzden seviyorum. Böyle telefonu çalıyor, kapısı çalıyor. Evet, hatırlarsanız ne yapmıştık biz? Orta ve düşük riskleri para harcamayacaktı. Bizim için önemli olan yüksek ya da çok yüksek risklerdi. Çıkarttık varlıklarımızı, register'da.
+
+366
+02:24:27,667 --> 02:24:48,347
+Trettimizi de ve vulnerabilityimizi de çıkarttık. Existing kontroller neler? Gerçekleşme ihtimali neler? Sonuçları neye mal olur? Ve riski ne? Ve priorities nedir? Sikada sistemimizin bütünlüğünün ve güvenilirliğinin.
+
+367
+02:24:49,043 --> 02:25:14,443
+Bizim için bir varlığımız. Ne olabilir? Anotorize, yetkisiz. Bu SCADA sistemimizin, SCADA kontrol sistemimizin değiştirilmesi. Nasıl koruyoruz? Bu SCADA sistemi network'a bağladık ama firewall'larımız var ve sunucularla bunları kontrol ediyoruz. Firewall olduğu için olma ihtimali düşük ama sonucu yüksek.
+
+368
+02:25:15,092 --> 02:25:40,312
+Dolayısıyla sonucu bizim için ciddi sorun oluştuğuna göre riski ne yaptık? High koyduk ve sıralamada bir numaraya. Sonra veri tabanımızdaki verilerimizin bütünlüğü ne olabilir? Veri tabanımızda bir sıkıntı olabilir, liste bir sorun olabilir, veri tabanımızda hırsızlık olabilir. Ne yapıyoruz? Firewall'larla koruyoruz.
+
+369
+02:25:40,819 --> 02:26:01,939
+Likely ihtimal halinin dahilinde. Çünkü bir dünya personel var, ona ulaşıyor. Dolayısıyla konseküans hala measure yüksek. Dolayısıyla risk ekstrem. Sonra finansal sistemimiz, koyduk firewalllar, prosedürler. Bunlara farklı kontrol mekanizmaları da koyduk.
+
+370
+02:26:02,324 --> 02:26:21,564
+Listeyi oluşturduktan sonra maliyete göre hatırlarsanız riskin transferiyle alakalı işlemler nedir? Mesela veritabanlarımızla alakalı işlem var. Bunun için yedeklemenin kurulması, soğutma daha pahalıya geliyor. Ne yaparız? Bunu bir barındırma hizmetiyle dışarıya aktarabiliriz.
+
+371
+02:26:28,819 --> 02:26:51,000
+Koyduk. Atakların gelmesi, firewalllarımız ve ekstrem. Bunlarla alakalı bakın. Likely hood'u almost certain. Olabilir yani. Meyli saldırı. Ama konsekücüs ne? Minor. Niye? Çünkü biz güvenli bilgilerimizi buradan götürmezsek riski azaltabiliriz.
+
+372
+02:26:52,912 --> 02:27:19,628
+Bu örneğe bakalım.
+
+373
+02:27:19,636 --> 02:27:27,536
+Zorunda kalabilirsiniz eğer sistemin üzerinde yönetimsel bir şeyler yapıyorsanız.
+
+374
+02:27:28,536 --> 02:27:33,675
+Evet arkadaşlar, bu haftalıkta bu kadar yeter diye düşünüyorum.
+
+375
+02:27:35,416 --> 02:27:36,756
+Şu paylaşımı da kapatayım.
+
+376
+02:27:37,396 --> 02:27:38,935
+Duracağınız bir şey var mı gençler?
+
+377
+02:27:42,515 --> 02:27:43,815
+Teşekkür ederiz hocam.
+
+378
+02:27:44,396 --> 02:27:44,736
+Evet.
+
+379
+02:27:45,236 --> 02:27:46,655
+Evet hocam, teşekkür ederim dersler.
+
+380
+02:27:47,635 --> 02:27:56,435
+Gelecek hafta, beklentim yüz yüze ama gelecek hafta ne? Cuma günü değil mi? Yok, Cuma günü de arkadaşlar online yapalım, tamam?
+
+381
+02:27:57,615 --> 02:27:58,515
+Tamam hocam.
+
+382
+02:27:58,655 --> 02:28:05,115
+Ondan sonraki Allah kerim yani. Online'da bir sıkıntı şu ana kadar yok. Katılanlar katılıyor galiba.
+
+383
+02:28:06,067 --> 02:28:07,268
+Evet hocam, tekrar mı?
+
+384
+02:28:07,268 --> 02:28:24,687
+Dersle alakalı tekrar edeyim. Bu prerogusit diye koyduğum sitedekileri bir kere bir okuyun arkadaşlar. Oradan 50 puanlık test gibi. Yani şu anlattıklarımız da içinde olacak. 50 puanlık bir test olarak sormuş olacağız.
+
+385
+02:28:25,467 --> 02:28:30,987
+30 puan eğer düzgün bir şekilde hazırlarsanız bir rapor.
+
+386
+02:28:31,603 --> 02:28:40,664
+Bugünkü anlattıklarımızla alakalı 30 puan etkisi olacak. Ama vermek zorunda değil ama verirseniz faydanıza olur diye düşünüyorum.
+
+387
+02:28:41,299 --> 02:29:04,819
+İleriki süreçte geri kalan 20'yi nasıl tamamlayacağız? Onları da konuşmuş oluruz. Ama bu ders içerisinde katılanlarla alakalı tamamlayarak belki finaldeki bu 50 puanlık o test dışında bir şeyle karşılaşmayacak arkadaşlarınız olacak eğer derse katılıp iyi bir şekilde dinler iseniz.
+
+388
+02:29:06,388 --> 02:29:12,608
+Ödevde 27.500 bize yardımcı olabilir değil mi?
+
+389
+02:29:12,888 --> 02:29:20,888
+Tabii tabii, oradaki 27.000 serisiste yardımcı olur kesinlikle. Zaten bu dersin içeriği de onları kullanarak yapılmış oluyor.
+
+390
+02:29:22,888 --> 02:29:25,587
+[öğrenci] bir şey mi söylüyorsun, sesim mi demiyor?
+
+391
+02:29:25,587 --> 02:29:26,388
+Hocam, hocam.
+
+392
+02:29:27,508 --> 02:29:28,008
+Efendim?
+
+393
+02:29:28,688 --> 02:29:31,308
+Çekil zükran olarak bir ilgileniş hocam.
+
+394
+02:29:32,208 --> 02:29:33,668
+Anlamadım, bir daha söyler misin?
+
+395
+02:29:34,579 --> 02:30:00,000
+İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngilizce, İngiliz
+
+396
+02:30:15,700 --> 02:30:36,684
+Açıkçası ve bu sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir sorunlarla ilgili bir
+
+397
+02:30:36,724 --> 02:30:41,724
+ve bir arkadaşın aynı rapor ile ilgili bir rapor verir,
+
+398
+02:30:41,724 --> 02:30:47,724
+bu raporun iki raporun bir rapor verir.
+
+399
+02:30:47,724 --> 02:30:49,724
+Bu doğru, understood?
+
+400
+02:30:49,724 --> 02:30:51,724
+Evet hocam, teşekkür ederim.
+
+401
+02:30:51,724 --> 02:30:52,724
+Tamam.
+
+402
+02:30:52,724 --> 02:30:54,724
+Anlaştık.
+
+403
+02:30:58,724 --> 02:31:01,724
+[öğrenci], bir şey diyorsun ama hiç anlamıyorum.
+
+404
+02:31:03,283 --> 02:31:09,463
+[öğrenci], [öğrenci], can you repeat or not?
+
+405
+02:31:14,355 --> 02:31:16,355
+Or you can make it.
+
+406
+02:31:20,355 --> 02:31:22,355
+Evet, ses gitmeyelim.
+
+407
+02:31:29,876 --> 02:31:51,355
+[öğrenci] kapatalım seni, mühit yapalım. Çünkü kimse duyulmuyor. Sözü ettiğiniz doküman online'da yok. Tabii ki yok. Çünkü siz hazırlayacaksınız. Yüzde ellilik kısım. Oğlum siz hazırlayacaksınız diyorum. Nereden bulacaksınız? Bulduğunuz şeyi yüzde otuzluk size niye vereyim? Firma seçeceksiniz. Bak buradaki.
+
+408
+02:31:53,332 --> 02:32:05,672
+Neyi kastettin? Dökümanları mı? Bak dökümanlar şurada. Paylaşayım ekranımı. Evet, şimdi ekranı paylaştık. Şimdi web siteme gireyim.
+
+409
+02:32:15,667 --> 02:32:19,347
+Gördünüz mü burayı arkadaşlar? Burada yok mu?
+
+410
+02:32:21,207 --> 02:32:21,847
+Evet hocam.
+
+411
+02:32:22,067 --> 02:32:22,507
+Evet sir.
+
+412
+02:32:23,028 --> 02:32:25,727
+Bu olur mu yok? Bak burada krasör var gördünüz mü?
+
+413
+02:32:26,108 --> 02:32:28,608
+Birer öküsüp diye. Tıklayınca bak geldi.
+
+414
+02:32:31,368 --> 02:32:32,828
+On iki tane.
+
+415
+02:32:33,396 --> 02:32:44,096
+Ağzı Kriptoğrafik tool, user authentication, access control, database, malicious software, denial of service, intuition detection, firewall, buffer overflow. Can you see this?
+
+416
+02:32:44,916 --> 02:32:45,476
+Yes, sir.
+
+417
+02:32:45,936 --> 02:32:47,835
+Can choose from this topic?
+
+418
+02:32:49,916 --> 02:32:50,515
+Anlamadım?
+
+419
+02:32:51,556 --> 02:32:52,136
+What did you say?
+
+420
+02:32:52,816 --> 02:32:55,115
+We are choice from this topic.
+
+421
+02:32:55,603 --> 02:32:58,343
+No, bu prenecesi.
+
+422
+02:32:58,583 --> 02:33:02,523
+I suppose that you already know this subject.
+
+423
+02:33:02,943 --> 02:33:03,103
+Okay?
+
+424
+02:33:03,423 --> 02:33:04,103
+Okay.
+
+425
+02:33:04,224 --> 02:33:08,903
+What you are going to do, you are going to read all this presentation.
+
+426
+02:33:09,724 --> 02:33:11,323
+Just for prenecesi.
+
+427
+02:33:11,323 --> 02:33:20,843
+And in the final exam, I am going to ask you some multiple choice questions about these subjects.
+
+428
+02:33:21,716 --> 02:33:31,515
+Tamamdır arkadaşlar. Başka soracağınız bir şey var mı?
+
+429
+02:33:33,416 --> 02:33:37,475
+Can you talk a little bit about the report?
+
+430
+02:33:37,475 --> 02:33:39,716
+Report you are going to prepare.
+
+431
+02:33:40,515 --> 02:33:48,363
+Here, the Finkshin Company, Silver Star Mining Company, I have...
+
+432
+02:34:14,688 --> 02:34:38,308
+Ama enough number of pages is acceptable. If you prepare only one page without any explanation, it won't be accepted anyway. So you are going to set first, then the risk, then the vulnerabilities in detail, and then you are going to prepare the register.
+
+433
+02:34:39,156 --> 02:34:48,175
+Okay, one last question. Is it required to submit the subject to you by email to get approved firstly or?
+
+434
+02:34:48,175 --> 02:35:06,636
+No, no, no, no. You are just going to prepare the report and when the midterm start at that week, I'm going to collect them by email. It's not mandatory anyway. If that report is accepted, you are going to get
+
+435
+02:35:06,879 --> 02:35:11,039
+30% max.
+
+436
+02:35:11,579 --> 02:35:14,979
+And it is going to be added to your final grade.
+
+437
+02:35:16,079 --> 02:35:19,779
+But if it's not accepted, no need to cry.
+
+438
+02:35:19,919 --> 02:35:24,539
+So you still have a final exam anyway.
+
+439
+02:35:39,700 --> 02:35:56,200
+Tamam. Bu final exam contains multiple choice questions about the subject you must already know.
+
+440
+02:35:56,200 --> 02:35:56,580
+Okay?
+
+441
+02:35:57,580 --> 02:35:58,300
+Okay, okay.
+
+442
+02:35:58,560 --> 02:36:06,260
+Then 50% for the subject that I have given here throughout this semester.
+
+443
+02:36:07,283 --> 02:36:11,683
+Onların arası kaçta bilmiyorum. Bugün cuma diye farklı bir saat var.
+
+444
+02:36:11,923 --> 02:36:12,843
+Tamam arkadaşlar.
+
+445
+02:36:13,383 --> 02:36:15,383
+Çocukları başlatmasak iyi.
+
+446
+02:36:16,383 --> 02:36:16,903
+Söyle.
+
+447
+02:36:16,903 --> 02:36:18,023
+Ben mi başka sorun nasıl?
+
+448
+02:36:18,523 --> 02:36:19,183
+Teşekkür ederim.
+
+449
+02:36:20,064 --> 02:36:22,224
+Hello, sir. Can I ask, please?
+
+450
+02:36:22,763 --> 02:36:24,064
+You can ask me some.
+
+451
+02:36:24,524 --> 02:36:31,963
+Thank you, sir. What I heard now, there will be 30 degree or 30 percent on the report.
+
+452
+02:36:32,484 --> 02:36:32,904
+Yes.
+
+453
+02:36:33,064 --> 02:36:37,904
+50 percent on the 12 lectures, the prerequisites.
+
+454
+02:36:38,184 --> 02:36:38,583
+Yes.
+
+455
+02:36:38,963 --> 02:36:41,064
+And the rest 20 percent.
+
+456
+02:36:41,224 --> 02:36:48,004
+The rest 20 percent we are going to see. Maybe a couple of weeks later, I may ask you some other report.
+
+457
+02:37:10,995 --> 02:37:15,995
+İzlediğiniz için sadece multiple seçeneğe sorarsanız.
+
+458
+02:37:16,995 --> 02:37:19,995
+Tamam, çok teşekkür ederim.
+
+459
+02:37:22,995 --> 02:37:31,995
+Yok, final notuna ekstradan 30 puan getirecek bir rapor değil bu. Final notuna doğrudan 30 puan etkileyecek.
+
+460
+02:37:35,283 --> 02:37:52,443
+Diyelim ki mesela iki tane daha report yaptınız. Finalde sadece teste gireceksiniz. O kadar. Ama bunların hiçbirini vermezseniz 50 puanlık test yapacaksınız. Artı bu derste alakalı 3 ya da 5 tane klasik soru soracağım. Onları cevaplayacaksınız.
+
+461
+02:37:55,504 --> 02:37:56,583
+Tamam mı [öğrenci]?
+
+462
+02:38:00,628 --> 02:38:08,728
+Evet arkadaşlar, haftayı online olarak görüşmek üzere. Gelecek haftanın sunusunu web sitesine koydum. Oradan bakabilirsiniz.
+
+463
+02:38:11,788 --> 02:38:23,728
+Arkadaşlar, defalarca söylüyorum vize yok, final var ama finalin içeriği %50 testten gelecek. %50 de...
+
+464
+02:38:24,608 --> 02:38:34,168
+Final sınavından ama final sınavına herkes girmeyebilir. Bu arada rapor verenler final sınavından, yüzde elli kısmından muaf olabilecek.
+
+465
+02:38:39,860 --> 02:38:42,940
+Hocam, the next week online also?
+
+466
+02:38:43,680 --> 02:38:45,460
+Next week is online too.
+
+467
+02:38:46,080 --> 02:38:46,420
+Okay.
+
+468
+02:38:48,180 --> 02:38:50,440
+Okay, see you next week online.
+
+469
+02:38:51,740 --> 02:38:52,280
+İyi günler.
+
+470
+02:38:52,280 --> 02:38:53,040
+Teşekkür ederim.
+
+471
+02:38:53,880 --> 02:38:55,280
+[öğrenci], teşekkürler. Hayırlı cumalar.
+
+472
+02:38:55,780 --> 02:38:57,360
+Hayırlı cumalar, görüşmek üzere.
+
+473
+02:38:57,880 --> 02:38:58,380
+Bay başkanım.
+
+474
+02:38:58,720 --> 02:38:59,540
+Hayırlı cumalar hocam.
+
+475
+02:38:59,640 --> 02:39:00,300
+Herkese harap size.
+
+476
+02:39:00,500 --> 02:39:02,200
+Hayırlı cumalar hocam, hoşçakalın.
+
+477
+02:39:02,360 --> 02:39:03,319
+Hayır hocam, sağ olun.

@@ -1,0 +1,899 @@
+1
+00:19:04,948 --> 00:19:06,948
+Ediyorum [öğrenci]. Ediyorum.
+
+2
+00:19:24,852 --> 00:19:25,612
+Öğretmenciğim.
+
+3
+00:19:26,612 --> 00:19:46,700
+Tekrar günaydın herkese. Bu hafta Bilgisayar Sistemleri ve Ağ Güvenliği'nde üçüncü haftamız. Bir haftayı da online yapıyoruz. Gerçi okuldayım ama daha rahat katılım olması bakımından online yapması bahsede gelen fayda var diyebilirim.
+
+4
+00:19:55,796 --> 00:20:15,635
+Yönetimsel hususlara başlamıştık dikkat ederseniz. Geçen hafta IT güvenlik yönetimi ve risk hesaplamayı görmüştük. Hatta bununla alakalı da bir tane size isterseniz böyle bir çalışma yapabilirsiniz. Bunu finalde sayarım 30 puan kısmına demiştik.
+
+5
+00:20:21,971 --> 00:20:34,632
+Güvenlik yönetimi ve risk hesaplamada tamam her bir varlığımızla alakalı tehditleri çıkardık. Bunları koyduk ama...
+
+6
+00:20:34,771 --> 00:20:54,771
+Sadece bu değil, güvenlik yönetimi sürekli bir süreçti. Dolayısıyla ikinci aşamada aslında bir sonraki adıma geçmiş olacağız. IT güvenlik kontrolü planlaması ve prosedürler. Yani birincide varlıklarımızı tespit ettik.
+
+7
+00:20:55,604 --> 00:21:10,203
+Güvenlik yönetimi ile alakalı çalışmalarımızı yaptık. Risklerimizi oluşturduk. Sonrasında bunun kontrolü, planlaması ve prosedürleri belirlenmesi gerekiyor. Bu hafta onlara devam edeceğiz.
+
+8
+00:21:14,067 --> 00:21:17,167
+kurulumundan, implementasyonundan
+
+9
+00:21:17,167 --> 00:21:19,067
+bahsedeceğiz. Çünkü her şey
+
+10
+00:21:19,067 --> 00:21:20,268
+kağıt üstte değil bir de bunun
+
+11
+00:21:20,268 --> 00:21:22,647
+realize edilmesi var.
+
+12
+00:21:23,288 --> 00:21:25,048
+Bundan bahsedeceğiz. Sonra
+
+13
+00:21:25,048 --> 00:21:27,067
+kontrol, güvenlik
+
+14
+00:21:27,067 --> 00:21:29,548
+kontroller ve önlemlerden
+
+15
+00:21:29,548 --> 00:21:31,147
+bahsedeceğiz. Çünkü
+
+16
+00:21:31,147 --> 00:21:33,147
+her bir varlığımız varsa, varlığımız
+
+17
+00:21:33,147 --> 00:21:34,427
+üzerinde tehdit varsa
+
+18
+00:21:34,427 --> 00:21:37,268
+bu tehditin saldırıya dönüşmemesi
+
+19
+00:21:37,268 --> 00:21:39,347
+için önceden alacağımız
+
+20
+00:21:39,347 --> 00:21:41,288
+güvenlik kontrolleri ve
+
+21
+00:21:41,288 --> 00:21:42,067
+önlemlerden bahsedeceğiz.
+
+22
+00:21:42,067 --> 00:22:01,407
+İT güvenlik planlarını deneyeceğiz. Sonra kurulumu yaptığımız, planladığımız ve kurulumu yaptığımız ve gerekli önlemleri oluşturduğumuz planın kontrolü nasıl yapılacak?
+
+23
+00:22:01,791 --> 00:22:16,131
+Ve güvenlik, dedi ki 7-24 kontrolü sürekli geliştirmeyi gerektiren bir husus. Nasıl durduğunu gözlemleyeceğiz. Listeri nasıl gözlemleyeceğiz bunları bu hafta bahsetmiş olacağız.
+
+24
+00:22:16,131 --> 00:22:27,311
+Sonrasında yine Gümüş Yıldız Madenimizde. Geçen hafta hatırlarsanız güvenlik yönetimle alakalı varlıklarımızı çıkartmıştık.
+
+25
+00:22:29,299 --> 00:22:38,740
+Tehditleri ve seviyelendirmemizi yapmıştık. Şimdi bunlarla alakalı ikinci aşamada devam etmiş olacağız. Bu hafta anlattıklarımızı da içerisine yerleştireceğiz.
+
+26
+00:22:38,740 --> 00:22:42,879
+Tesis tedi olarak. Bunu hatırlıyorsunuz.
+
+27
+00:22:43,347 --> 00:23:08,367
+Bizim IT yönetimindeki aşamada 3 tane ana aşamamız vardı. Birinci aşama risklerimizi seviyelendireceğiz. Çünkü yaptığımız IT yönetimi aslında maliyet etkin bir IT yönetimi olması gerekiyor. Varlığımızın bizim için bir değeri var. Kabul edebileceğimiz bir.
+
+28
+00:23:08,819 --> 00:23:34,000
+Risk seviyesi var. Ona göre riskleri seviyelendirmemiz gerekiyor. Seviyelendirdikten sonra ikinci aşamada riske karşı cevaplarımız. Ne yapacağız? Önce riske karşı cevaplarımıza karar vereceğiz. Ne tür bir tedbir alacağız? Riske kabul mü edeceğiz? Bu da vardı hatırlarsınız.
+
+29
+00:23:34,291 --> 00:23:52,831
+Riske FK dediğimiz ya da risk A'm üstünü ödediğimiz hususta riski kabullenebiliriz. Riskten sakınabiliriz. Riskten tesirini azaltabiliriz. Ya da riski paylaşırız.
+
+30
+00:24:02,291 --> 00:24:20,831
+Ne olacağına karar vermemiz gerekiyor. Sonra bu karar neticesinde oluşturduğumuz cevap planında kontrol seçeneklerini, tavsiye edilen kontrol seçeneklerini değerlendirmemiz gerekiyor.
+
+31
+00:24:21,236 --> 00:24:42,236
+Sonrasında bunların her birinin farklı bir maliyeti var. Mesela sizin sisteminize bir tane firewall alacaksınız. Bu tavsiye edilen bir kontrol seçeneği, kullanıcıları itelep daha etkin kullanmaları, başka bir seçimlik, bu şekilde listelediniz.
+
+32
+00:24:42,675 --> 00:25:10,379
+Kontrol seçeneklerinizi değerlendirdiniz. Her birinin maliyeti var. Sonra bunlara göre, sonraki aşamada hangi kontrolleri seçtiniz ve bunları gerçekleyeceksiniz. Gerçekleme planını geliştireceksiniz ve gerçekleyeceksiniz. Bitti mi? Bitmedi. Çünkü güvenlik yapıp...
+
+33
+00:25:10,804 --> 00:25:38,304
+Kutulduğumuz bir ırkçı sayı sürekli bu riskleri monitör edip verdiğimiz tekbirlere karşı neler gerçekleşiyor, neler gerçekleşmiyor bunları takip edip yaptığımız planı sürekli 7 yılda değerlendirip inceleme yapmamız gerekecek. Dolayısıyla bu plan bir IT yönetimde kullandığımız yön temalara karşımıza çıkıyor.
+
+34
+00:25:38,483 --> 00:25:56,943
+Peki, güvenlik kontrolü. Güvenlik kontrolü, RFC dökümanları hatırlarsanız 27.000 serisi izo serilerini geçen hafta vermiştik. Bunlar güvenlikle alakalı hemen hemen bütün hususları belirtiyordu. Peki, nedir aslında güvenlik kontrolü?
+
+35
+00:26:04,596 --> 00:26:26,255
+Güvenliğin zafiyete uğrasılmasını ya da kötüye kullanılmasını önlemek ya da elimine etmek için veya oluşması durumunda zararı minimize etmek için veyahut da oluşması durumunda doğru aksiyonları.
+
+36
+00:26:26,771 --> 00:26:47,471
+Dolayısıyla doğr aksiyonları tespit etmek, bunları raporlayabilmek için kullandığımız ya da kullanılan her türlü aksiyonlar, cihazlar, prosedürler ve diğer yöntemler güvenliği kontrolü olarak karşılıklı çıkıyor.
+
+37
+00:26:47,471 --> 00:26:49,211
+Aslında güvenliği kontrolü nedir?
+
+38
+00:26:49,536 --> 00:27:03,532
+Güvenlik zafiyetinin önlenmesi ya da azaltılması yönünde ya da oluşması durumunda zararın azaltılması ya da onlara karşı alınacak aksiyonların...
+
+39
+00:27:04,468 --> 00:27:17,408
+Doğru aksiyonların belirlenmesi yolunda alacağımız her türlü önlem, tedbir, prosedür, cihaz, güvenlik kontrolü ya da kısaca kontrol olarak tanımlanıyor.
+
+40
+00:27:17,408 --> 00:27:25,368
+Nereden geliyor bu tanımımız? Bu tanımımız ilgili RFC dokümanlarında ya da ISA dokümanlarında yazılan kontrol.
+
+41
+00:27:25,988 --> 00:27:31,188
+Peki, kontrol böyle geniş bir kavram.
+
+42
+00:27:32,115 --> 00:27:57,655
+Biz bunu üçe ayırabiliriz. Yönetimsel kontrol, operasyonel kontrol ve teknik kontrol. Ve bunların ayrı ayrı neler olduğunda içinde tanımlayabiliriz. Mesela yönetimsel kontrol nedir? Ne yaptık? Biz sistemimizi güvenli hale getirmek için politikalar uyguladık, planlamalar yaptık.
+
+43
+00:27:57,920 --> 00:28:07,259
+Kılavuzlar ve standartlar, bilgi güvenliği ile alakalı 27.000 bir standartı var ya da 27.000 serisini kullanıyoruz.
+
+44
+00:28:07,259 --> 00:28:24,720
+Ve bunlarla alakalı riski azaltmaya ya da organizasyonun, şirketimizin misyonunu muhafaza etmeye, repütasyonunu ya da devamlılığını muhafaza etmeye yönelik her türlü oluşturulan
+
+45
+00:28:25,107 --> 00:28:32,107
+Planlama, kılavuz, politikaların kontrolü ne kapsamında değerlendiriliyor?
+
+46
+00:28:32,487 --> 00:28:36,268
+Yönetimsel kontrol kapsamında değerlendiriliyor.
+
+47
+00:28:37,107 --> 00:28:46,927
+Operasyonal kontrol aslında yukarıda yapılan güvenlik politikalarının, standartların uygulanmasına
+
+48
+00:28:47,635 --> 00:28:57,135
+Doğru şekilde uygulanmasına yönelik her türlü kontroller, operasyonlar kontroller kapsamında geliyor. Bu kontroller ne ile alakalı?
+
+49
+00:29:02,740 --> 00:29:16,280
+Sistemsel değil operasyonel kontrol, kişiler üzerinde bu sistemi kullanılan kişisel kişiler üzerinde, kişiler tarafından öncelikle implemente edilen mekanizmalar ve prosedürlerle alakalı.
+
+50
+00:29:16,280 --> 00:29:26,780
+Yani operasyonel kontrol de aslında o işi gerçekleştiren, o güvenliği gerçekleştiren kişilerle alakalı her türlü mekanizmalar ve prosedürler.
+
+51
+00:29:27,220 --> 00:29:47,440
+Ne için kullanıyoruz operasyonel kontrolü? Sistemimizin ya da bir grup sistemimizin güvenliğini iyileştirmek için çalışan kişileriyle alakalı her türlü kontrol mekanizmasına biz operasyonel kontrol demiş oluyoruz.
+
+52
+00:29:50,804 --> 00:30:10,564
+Sistemdeki güvenliğe yönelik her türlü donanımsal ve yazılımsal cihazların ya da yazılımların doğru bir şekilde çalıştığına dahil yapılan kontrollerde biz teknik kontrol diyoruz.
+
+53
+00:30:10,564 --> 00:30:12,704
+Teknik kontrolümüz çok basit.
+
+54
+00:30:12,991 --> 00:30:30,152
+Ölçümlerden daha kritik ve hassas verilerin ve IT sistemlerinin beraber çalışmasıyla alakalı kontrolü biz Teknik Kontrol kapsamında değerlendirmiş oluyoruz.
+
+55
+00:30:31,931 --> 00:30:37,351
+Gelelim Teknik Kontrol Güvenlik Kontrolüne.
+
+56
+00:30:41,971 --> 00:30:58,052
+Evet arkadaşlar, bu aslında bize aksiyonlar veriyor. Pembe ya da siz nasıl görüyorsunuz? Kırmızılar aslında belli bir amaca yönelik kontrolleri geçiriyor. Bizim elimizde bir sistemimiz var.
+
+57
+00:31:00,084 --> 00:31:13,264
+Sistemimizin sağ tarafında kaynaklar var. Yani varlıklarımız, esetlerimiz var. Sonra tarafında ise bu varlıkları kullanan kullanıcılar ya da prosesler.
+
+58
+00:31:13,504 --> 00:31:21,544
+Çünkü iletişim halinde olan cihazlar da bu bizim varlıklarımıza ulaşıyor olabilir. Peki biz bunlarla ne yapıyoruz?
+
+59
+00:31:27,476 --> 00:31:49,635
+Ulaşım kontrolü var. Bunları ne amaçla yapıyoruz? Herhangi bir sızmanın tespitine. Çünkü akses kontrol mekanizmasını geçerek sistemimize sızabilir. Bunlarla alakalı sürekli audit, benetim olarak topları tutuyoruz.
+
+60
+00:31:51,316 --> 00:31:52,635
+Bütünlüğünü...
+
+61
+00:31:53,299 --> 00:32:18,759
+Kontrol ediyoruz ve amacımız ne? Bu saldırıyı önlemek ya da güvenliğe, sisteme destek olmak. Peki sorun olması durumunda ne yapacağız? Güvenlik zafiyetini algılamamız gerekiyor. Herhangi bir saldırı durumunda da bundan nasıl recover yapabiliriz? Nasıl eski halimize dönebiliriz?
+
+62
+00:32:20,980 --> 00:32:24,259
+Bu iletişime
+
+63
+00:32:25,907 --> 00:32:53,907
+Güvenli bir iletişim kanalından yapıyoruz. Neyi önlemek için? Aslında derimizin sızmasını, mesajımızın sızmasını ya da bilgimizin sızmasını, bilgimizin değiştirilmesini ya da bilgimizin başka bir bilgiyle değiştirilmesini, aynı bilginin birden fazla tekrar ederek sistemi manipüle etmesini önlemeye yönelik güvenli.
+
+64
+00:32:53,907 --> 00:33:12,427
+Bir iletişim ortamı oluşturmaya çalışıyoruz. Evacımız aslında bunu yaparken de identification, bir kimliklendirme ya da kimlik doğrulama bizim kullandığımız yöntemler amacımız yukarıda listelemişti.
+
+65
+00:33:15,167 --> 00:33:17,708
+Bilginin bütünlüğünü ve güvenliği için.
+
+66
+00:33:18,771 --> 00:33:34,031
+Triptografik şifreleme kullanabiliriz. Şifrelemende kullanılan anahtarların yönetimi, aslında teknik güvenlik kontrolü kapsamında güvenliğin yönetimi ve sistemin korunması.
+
+67
+00:33:44,115 --> 00:34:05,215
+Sistemi, prosesleri ayırmak yönünde, izole etmek yönünde yöntemler kullanabiliriz. Aslında bu bizim teknik güvenlik kontrolü ile alakalı proseslerimizi güzel bir şekilde özetleyen, seviyelendiren, katmanlandıran bir örnek olarak karşımıza çıkıyor.
+
+68
+00:34:13,684 --> 00:34:14,584
+İncelemeye.
+
+69
+00:34:18,228 --> 00:34:37,528
+Peki dedik ki biz management kontrolü, yönetimsel kontrolü yapabiliriz, operasyonel kontrol yapabiliriz ya da teknik kontrol yapabiliriz. Doğru, bunlardan birisini ya da her birini ayrı ayrı uygulamamız gerekiyor. Bütünsel bir güvenlik.
+
+70
+00:34:38,260 --> 00:34:53,540
+Elde edebilmek için. Peki kontrol sınıflarımız neler? Aslında 2-3 tür kontrol yapabiliriz. Birisi destekleyici kontrol.
+
+71
+00:34:55,795 --> 00:35:08,975
+İkincisi önleyici kontrol. Üçüncüsü ise algılayıcı ve iyileştirici ya da kabul edici kontrol olarak karşımıza çıkıyor.
+
+72
+00:35:08,975 --> 00:35:17,975
+İsimleri zaten belli. Aslında IT destekleyici kontrol de IT güvenlik yeteneklerini...
+
+73
+00:35:21,235 --> 00:35:37,375
+Kullanılan kontrol mekanizmalarıyla geliştirdiğimiz IT güvenlik yeteneğimizi destekleyici yöndeki kontrolü biz destekleyici, soportif kontrol demiş oluruz.
+
+74
+00:35:47,699 --> 00:36:08,699
+Kötüye kullanılacak tedbirleri ya da zayıflığın, zafiyetin kötüye kullanılmasını önleyici her türlü tedbirlere de biz Preventing ya da önleyici kontrol olarak karşımıza çıkıyoruz.
+
+75
+00:36:14,675 --> 00:36:41,735
+Sızmanın oluşması durumunda ya da zafiyetin kötüye kullanımının oluşması durumunda bunların algılamasına yönelik ve oluştuktan sonra tekrar sistemin eski haline dönmesiyle alakalı yapılan işlemlerin kontrolüne biz algılama ve iyileştirme kontrolü olarak.
+
+76
+00:36:42,931 --> 00:36:46,531
+Geriye dönüş kontrol olarak sınıflandırabiliyoruz.
+
+77
+00:36:49,131 --> 00:36:50,531
+Hatırlarsanız,
+
+78
+00:36:51,131 --> 00:36:55,931
+dökümanlar vardı. Bu dökümanlar da siz de elde edebilirsiniz.
+
+79
+00:36:55,931 --> 00:37:01,931
+List SP853 Security Control dökümanındaki
+
+80
+00:37:04,631 --> 00:37:07,884
+listeyi biz 3 tip
+
+81
+00:37:08,436 --> 00:37:14,596
+Yönetimsel operasyonel ve teknik diye. Bunlara göre gruplandırmamız mümkün.
+
+82
+00:37:14,916 --> 00:37:24,096
+Mesela kontrolün planlanması bir yönetimsel kontrol. Yönetim planı yönetimsel kontrol.
+
+83
+00:37:24,096 --> 00:37:35,436
+Riskin hesaplanması yönetimsel kontrol sınıfında ya da güvenliğin hesaplanması ve etkilendirme yine yönetimsel.
+
+84
+00:37:35,827 --> 00:37:49,087
+Sistem ve servislerinle alakalı işlemler gene. Peki, operasyonel kontrol neydi? Bu sistemi kullanan ya da kullanacak kişilerle alakalı kontrolü. Nedir bunlar?
+
+85
+00:37:53,619 --> 00:38:19,563
+Bu, bu
+
+86
+00:38:24,019 --> 00:38:48,559
+Bakım faaliyetleri, medyaların korunması, teypil, disipil ya da harici medyaların ya da sistemsel donanımların kullanılması, personelin güvenliği, fiziksel ve çevresel muhafaza edilmesi ve sistemin ve bilginin bitmişsinin ile alakalı.
+
+87
+00:38:51,891 --> 00:38:54,431
+Operasyonel Kontrol Kapsamında.
+
+88
+00:38:55,771 --> 00:38:58,331
+Şimdi gelelim Teknik Kontrol. Nedir?
+
+89
+00:38:58,652 --> 00:39:03,571
+Teknik Kontrol, Kullanıcıların Sistemi Ulaşımı ile Alakalı Akses Kontrol ve Erişim Kontrolü,
+
+90
+00:39:14,784 --> 00:39:24,384
+ile alakalı sistemdeki işlemler, sistem ve komünikasyon iletişimin korunması da teknik kontrol kapsamında.
+
+91
+00:39:24,384 --> 00:39:35,115
+Bunları nereden listeledik? SP-853 güvenlik dökümanında bunlar var. İsterseniz sizlerden kolaylıkla indirebilirsiniz.
+
+92
+00:39:38,387 --> 00:39:46,587
+Sadece bu doküman yok hatırlarsanız, bir liste vermiştik size güvenlik yönetimi kontrolü implementasyonu ile alakalı.
+
+93
+00:39:46,587 --> 00:40:03,087
+Onlarla ilgili ISO'nun 27002 güvenlik kontrolü dokümanlarında da yine var. Bunlar da ayrı ayrı tanımlamış güvenlik politikaları, bilgi güvenliğinin organizasyonu.
+
+94
+00:40:03,411 --> 00:40:27,612
+İnsan kaynaklarının güvenliği, varlıkların yönetimi, erişim kontrolü, şifreleme, fiziksel ve çevresel güvenlik, operasyon güvenliği, iletişim güvenliği, sistemin geliştirilmesi, güvenlik sisteminin geliştirilmesi ve bakımı, ilişkiler.
+
+95
+00:40:28,000 --> 00:40:47,559
+Bilgi güvenliği ile alakalı faaliyet planları, bilgi güvenliğinin devamlılığı, yine security planlarıyla alakalı access kontrolü neleri kapsıyor,
+
+96
+00:40:55,764 --> 00:41:09,684
+gerekli dokümanlarda, RFC'lerde ya da ISO'nun dokümanlarında ya da NIST dokümanlarında bunları ayrıntıları da bulabilirsiniz.
+
+97
+00:41:09,684 --> 00:41:17,684
+Burada tek tek içerisine girip ayrıntıya girmeye de gerek yok ama...
+
+98
+00:41:18,036 --> 00:41:39,956
+Bu planlamayla alakalı genel kavramda baktığınız zaman içini doldurulması yönünde, mesela Media Protection'a gerekirse, medyanın diske, heybe, der tabanlarına, kaynaklara, ulaşımlarıyla alakalı prosedürler, politikalar.
+
+99
+00:41:40,384 --> 00:42:05,003
+Bunların etiketlenmesi, medyaların depolanması, medyaların transportu yani nakledilmesi ve alakalı ve inha edilmesi bunların hepsi Media Protection Kamban'ın içerisinde sizin planlamanız gereken kursus da bakımda da zaten...
+
+100
+00:42:05,876 --> 00:42:26,636
+Sistemin bakımıyla alakalı kontrol, bakımla alakalı kullanacağınız hükümanlar, tool'lar, araçlar, bakım yapacak personeller, bakım zamanı, bunların planlanması, bakım politikaları, prosedürleri hepsi bakım kapsamında.
+
+101
+00:42:33,748 --> 00:42:56,488
+Tedbir alınacak, olayın oluşması durumunda verilecek cevapla alakalı eğitimler, bunların test edilmesi, uygulanması hepsi Instance Response kısmında değerlendirebilmemiz.
+
+102
+00:42:58,195 --> 00:43:20,195
+Aynı işte SP-853'ü devam ederse planlama, güvenlik planlaması, politikaların ve prosedürlerin ya da kuralların nedenlenmesi hepsi bu dokümanda ayrıntılarıyla verilmiş durum.
+
+103
+00:43:23,827 --> 00:43:33,827
+Peki, sistem bir bütün, canlı bir sistem ve siz sistemi sürekli monitör ediyorsunuz.
+
+104
+00:43:35,827 --> 00:43:49,927
+Monitör ettiğiniz zaman yeni veya yeni bir kural güvenliği artırmaya yönelik yeni bir kural oluşturuyorsunuz ya da mevcut kuralı iyileştiriyorsunuz. Bunların hepsi mümkün.
+
+105
+00:43:50,356 --> 00:44:03,976
+Peki amacınız ne? Amacınız aslında hataya ya da zararı, oluşabilecek zararı düşürmeye yönelik yaptığınız kontroller ve iyileştirmeler.
+
+106
+00:44:18,036 --> 00:44:45,336
+Bu çiddetini de azaltmaya yönetelim. Nedir mesela siz bir tedbir aldınız? Buraya bir firewall koyacağız. Bununla alakalı gerekli politikaları oluşturduğunuz sisteme yerleştirdiniz. Peki yeni cihaz yeni riskler olarak karşımıza çıkıyor. Yeni bir personel aldınız. Bununla alakalı yeni görevler, ruhlar tanımladınız.
+
+107
+00:44:45,523 --> 00:45:04,783
+Aslında burada kendi içerisinde bir risk oluşturuyor mu? Oluşturuyor. Bunların hepsini sizin planlamanız gerektirir diyor. Artık risk dediğimiz kavram da bu. Ve bu döngü sürekli devam eden bir döngü.
+
+108
+00:45:13,108 --> 00:45:29,688
+Peki maliyet etkili bize dendi ki bizim sistemimizle alakalı güvenlik yönetimini bir incele, bununla alakalı bize bir raporsun tedbirleri koy, bir analiz sun bize. Amacımız ne aslında?
+
+109
+00:45:34,003 --> 00:45:50,003
+Organizasyonun mevcut kaynaklarını en iyi şekilde kullanmasına ve yönetilmesine yönelik bir çalışma. Ve bu çalışma nitel de olabilir, nicel de olabilir.
+
+110
+00:45:59,315 --> 00:46:14,115
+Subjektif değerlendirmeler de, ister de iyileştirmeler, dolayısıyla sizin hazırladığınız bu analiz kuantatif de olabilir, yani rakamsal da olabilir, nitel de olabilir, nitel de olabilir.
+
+111
+00:46:14,115 --> 00:46:25,115
+Peki, bu hazırladığınız rapor bir maliyet ortaya getirecek. Bu maliyet...
+
+112
+00:46:26,164 --> 00:46:53,164
+Cihaz maliyeti, personel maliyeti ve bu maliyeti sizin değerlendirip, neye göre değerlendireceğiz? Riski azaltmadaki etkilerine göre değerlendirmeniz gerekir. Nerede? Sizin analizinizde. Peki bunu değerlendirirken neyi de içermesi lazım? Siz bu riski tanımlayıp,
+
+113
+00:46:53,460 --> 00:47:20,119
+Sızması ya da varlığınızın zarar vermesi durumunda oluşabilecek maliyet, şirketi oluşacak maliyeti hesaplamanız, bunu kurmanız durumunda ne kadarlık bir eski bertaraf ediyor, bunu ne kadarlık maliyete bertaraf ediyor, bunu açık.
+
+114
+00:47:20,467 --> 00:47:29,507
+Bir şekilde ortaya koymanız gerekiyor. Yani siyah ile beyaz gibi, günlük ile gece gibi ayırmanız gerekiyor.
+
+115
+00:47:46,452 --> 00:47:57,452
+ve bunlarla alakalı kontrolün kullanması ya da kullanılmaması durumunda da riskin maliyeti, oluşacak kostüm maliyetini...
+
+116
+00:48:02,356 --> 00:48:07,016
+Yönetimin patronun önüne sundunuz.
+
+117
+00:48:07,916 --> 00:48:25,756
+Şimdi aslında amaç burada yöneticinin bu riski çok fazla mı düşürecek, yeterince mi düşürecek, ne kadarlık maliyeti göze alıyor.
+
+118
+00:48:32,563 --> 00:48:58,903
+Karar vermesi gereken husus. Bütünüyle de uygulayabilir. Hesaplamaya göre belli bir riski göze alarak da uygulayabilir. Dolayısıyla temel olarak karar patronun kararı. Biz de seçim. Yani kesinlikle patronun yönetimin vermesi gereken bir husus. Sizin analizdeki aşamaları bu şekilde listedeye biliriz.
+
+119
+00:49:00,884 --> 00:49:10,404
+Gelelim planlamaya. Planlamadan önce ben 5 dakika bir kahve alıp geleyim. Bundan sonra planlamayla devam edelim.
+
+120
+00:49:14,867 --> 00:49:17,207
+Biz de kahve alalım o zaman.
+
+121
+00:49:17,387 --> 00:49:20,527
+Tamam, hepiniz kahve alın. Yoksa uyumayalım böyle.
+
+122
+00:49:20,768 --> 00:49:28,707
+Kaç kişi olduk sınıfta? 21'i kadar kötü değil. Ama 50-30 kişi, geri kalan 30 kişi ne yapıyor? Uykuya mı kaldı?
+
+123
+00:49:33,972 --> 00:49:34,811
+Yorum yap.
+
+124
+00:49:39,731 --> 00:49:42,112
+Arkadaşlarınızı da uyandırın, onlar da katılsınlar.
+
+125
+00:54:38,099 --> 00:54:42,559
+Kahrolmaya gidince arkadaşlarınızdan birkaçı da yok olmuş, öyle gözüküyor.
+
+126
+00:54:45,380 --> 00:54:46,300
+Neyse.
+
+127
+00:54:48,220 --> 00:54:50,739
+Evet arkadaşlar, devam edelim.
+
+128
+00:54:51,819 --> 00:54:58,980
+Peki bizim güvenlik planımız neyi veriyor aslında baktığınız zaman temel itibariyle?
+
+129
+00:55:00,039 --> 00:55:02,880
+Nelerin yapılacağını, öyle değil mi?
+
+130
+00:55:03,380 --> 00:55:19,600
+Ve bunun hangi kaynaklarla yapılacağını ve kim tarafından yapılacağını. Sizin IT planınız bu üç tane sorunun cevabını açık ve net bir şekilde açığa koyması gerekiyor.
+
+131
+00:55:20,079 --> 00:55:24,480
+Nedir aslında bu? Amacımız ne?
+
+132
+00:55:24,884 --> 00:55:40,764
+Risk profilindeki, risk profil içerisinde, risk alanı içerisindeki zayıflıkların tanımlanması ve bunları iyileştirmeye yönelik her türlü detaylı aksiyon.
+
+133
+00:55:41,204 --> 00:56:06,364
+Bu konuların belirlenmesi amacıyla yapılmış bir plana güvenlik planı ya da güvenlik planı bu amaçla yapılır diyebiliriz. Peki güvenlik planınızda ne olmalı? Güvenlik planınızda riskler olmalı, tavsiye edilen kontroller olmalı ve aksiyonlar.
+
+134
+00:56:07,603 --> 00:56:14,163
+Yani ne tür aksiyon ol, ne yapılacak ve bunların da önceliklendirmesi olmalı.
+
+135
+00:56:14,163 --> 00:56:29,163
+Aynı zamanda seçilen kontroller, her bir esete karşı seçilen kontroller ve bu kontroller için gerekli olan kaynaklar içermeli.
+
+136
+00:56:34,068 --> 00:56:48,568
+Ve bunun ne zaman yapılacağı ve bakım için gerekli olanlar sizin güvenlik planınızda, IT güvenlik planınızın içerisinde içeriyor olmalı.
+
+137
+00:56:48,568 --> 00:57:00,768
+Aslında bu maddediğimiz dört tane madde de aslında ne yapılacağı, hangi kaynaklarla yapılacağı ve kim tarafından yapılacağıyla alakalı sorumuza cevaptan ibaret.
+
+138
+00:57:07,987 --> 00:57:19,347
+Peki, gelelim bu kurulum planına, implementasyon planına. Çünkü güvenlikle alakalı planımızı yaptık bu planda.
+
+139
+00:57:34,068 --> 00:57:56,048
+İçeriye alan ya da içerideki interneti dışarıya bağlayan, bizi dış dünyaya bağlayan router. İnternet router. Riskimiz ne? Varlığımız ne? İnternet router. Riskimiz ne? Atak saldırganlar tarafından bu router'ımızın saldırıya uğraması. Risk ne? Riskimiz yüksek. Çünkü internete açık.
+
+140
+00:57:57,043 --> 00:58:20,683
+Öyle değil mi? Biz içeriden kullanıyoruz, içeriden içeride bulunan e-mail sunucumuza, veri tabanımıza, web sunucumuza bu internet rütu üzerinden talepler geliyor. Dolayısıyla bütünüyle açık. Dolayısıyla riskimiz yüksek. Ne yapabiliriz? Recommended, tavsiye edilen kontroller.
+
+141
+00:58:21,168 --> 00:58:39,068
+Mesela dışarıdan, dış IP'den, dış bacaktan telnet aksesini kapatabiliriz. Niye telnet aksesini kapatıyoruz? Çünkü konfigürasyon telnetle yapılıyor. Öyle değil mi? Dolayısıyla nedir? Mevcut konfigürasyonun değişmesinin önüne geçebiliriz.
+
+142
+00:58:45,235 --> 00:59:00,475
+Detaylı kimlerin yetkili olduğu, hangi aşamada nasıl kullanacağıyla alakalı gerekli denetimleri detaylandırabilir ve bu denetimleri, uygulanacak denetimleri kullanabiliriz.
+
+143
+00:59:02,516 --> 00:59:17,516
+Güçlü bir admin, dikşineli atağa karşı ya da diğer yöntemlere karşı daha dayanıklı olan yöneticinin şifresini daha...
+
+144
+00:59:18,324 --> 00:59:30,884
+Güvenlikli bir politika ile ya da daha sert bir politika tanımlayabiliriz. Ne için? Edmin şifresinin daha güçlü hale getirilmesine.
+
+145
+00:59:33,204 --> 00:59:40,423
+Router konfigürasyon dosyası için bir yedekleme stratejisi belirleyebiliriz.
+
+146
+00:59:40,980 --> 00:59:51,839
+Dolayısıyla herhangi bir şekilde konfigürasyon değişikmesi durumunda hemen yedekten tekrar sıfırdan konfigür etme yerine yedekten tekrar konfigürasyonu yükleyebiliriz.
+
+147
+00:59:51,839 --> 01:00:00,159
+Ya da router konfigürasyonu için kontrol politikalarını değiştirebiliriz.
+
+148
+01:00:08,275 --> 01:00:34,516
+Ne için? Bizim dış router'ımıza gelen saldırılara, saldırgan atara ulaşabilecek ataklara karşı yapılabileceğimiz yöntemler. Peki bunların prioritisi ne? Risk high ise bunları yapmakta yüksek öncelikli. Patron ne yaptı?
+
+149
+01:00:35,539 --> 01:00:57,939
+Parası bol. Yukarıdaki bütün kontrollerin, çünkü dedik ya aşama aşama siz bunları ayrıntılı yaptınız. Geceyle gündüz gibi gerçekleştirmeyi her bir sızma durumunda ya da risk durumunda firmaya, firmanın misyonuna oluşabilecek zararları listelediniz. Patron bunlar dedi ki tamam hepsini uygulayalım.
+
+150
+01:00:58,643 --> 01:01:15,983
+Yani çünkü parayla alınacak bir şey yok. Yeni bir rütbe alınması ya da taşınmasıyla alakalı. Hepsini uygulayalım dedi. Peki bunlarla alakalı aksiyon planlarında ne? Bütün kontrollerin uygulanması.
+
+151
+01:01:16,467 --> 01:01:42,027
+Ve prosedürlerin, bu kontrol prosedürlerin update edilmesi ve bunu kullanacak, bundan etkilenecek personellerin de eğitilmesi. Öyle değil mi? Çünkü bunların hepsi bir zaman ve bir maliyet. Çünkü sadece bunları uyguladık, tamam bunları yapacak, admin pasördü verecek kişinin eğitilmesi ya da backup alacak kişinin eğitilmesi.
+
+152
+01:01:43,376 --> 01:02:06,596
+Bu da önemli. Kaynaklarımız ne? 3 gün IT Network Admin'inin bu router konfigürasyonunu backup'ı için ya da audit daha detaylı log alması için, politikalar yazması için 3 gün verdik.
+
+153
+01:02:07,827 --> 01:02:31,048
+Tamamen hesaplama ve bir günde bunu kullanacak, operasyonel kontrol de bunun içerisinde, bunu kontrol edecek personelinde bir günlük eğitime. Değil mi? Peki kim yapılacak? İşte Ahmet bu işi verecek. Kime verecek? İşte takıma.
+
+154
+01:02:31,923 --> 01:02:56,763
+Ne zaman başlayacak? Şubat 6'sında başlayacak. 3 günlük eğitimi o arada, 3 günde yaparken de 1 günde eğitimi de bu arada yapacak. Peki daha başka tavsiyelerimiz ne? Periyodik testler yapılması ve politikanın konflikasyonunun güncel tutulması da tavsiye edilen yöntemler gördük.
+
+155
+01:03:00,211 --> 01:03:02,231
+İçerisinde mevcut.
+
+156
+01:03:04,811 --> 01:03:10,711
+Planladık. Şimdi gelelim kurulmasına, implementasyonuna.
+
+157
+01:03:14,612 --> 01:03:37,852
+Peki, IT güvenlik plan dökümanında ne var bizim? Biraz önce hazırladık ya burada, detaylı planda. Her bir seçilen kontrol için yapılması gerekenlerle alakalı ihtiyaçlar var. Değil mi? Sorumlu personel var.
+
+158
+01:03:39,188 --> 01:04:00,088
+Ve bu amaçla kullanılacak kaynaklar ve zaman dilimi var. Öyle değil mi? Peki, tanımlı personeller ne? Yeni veya geliştirilmiş kontrolü implemente edecek personeller.
+
+159
+01:04:00,884 --> 01:04:26,864
+Tanınladığımız bu personeller geliştirdiğimiz ya da yeni kontrolü implement edecek. Dolayısıyla sistemimizde konflikasyon değişikliğini gerekli duyması durumunda upgrade yazılımların ya da fire firmwarelerin upgrade edilmesine ve gerekli olması durumunda da yeni sistemin kurulmasına.
+
+160
+01:04:27,476 --> 01:04:42,795
+Yeni yazılımların kurulmasında yetkili kişiler. Aynı zamanda süreç içerisinde geliştirilmiş yeni ve geliştirilmiş prosedürlerin geliştirilmesini de içerebilir.
+
+161
+01:04:42,795 --> 01:04:51,996
+Çünkü süreç yapılırken dikkate alınmamış ya da sonradan kurulum esnasında ortaya çıkan riskleri de oluşturabilmek adına,
+
+162
+01:04:54,260 --> 01:05:07,560
+Süreç içerisinde de yeni ya da geliştirilmiş prosedürleri de yapabilecek personellerdir bizim tanımladığımız güvenlik planında tanımladığımız personel.
+
+163
+01:05:07,560 --> 01:05:19,532
+Aynı zamanda yönetimin kontör edilmesi ve desteklenmesi yönünde her türlü ihtiyaca karşı da...
+
+164
+01:05:19,699 --> 01:05:23,119
+Cevap verecek personelleri tanımlıyoruz.
+
+165
+01:05:24,239 --> 01:05:24,699
+Tamam mı?
+
+166
+01:05:24,699 --> 01:05:34,699
+Eğer bu kurulum tamamlandığında yönetim otoriteleri ve...
+
+167
+01:05:37,844 --> 01:06:00,784
+Yöneticiler sistemin operasyonel kullanımına açmış oluyor. Yani bu implementasyondan sonra yeni plana göre yönetimin iradesi ile açılmış oluyor. Zaten bu tür güvenlik planlamasında yönetimin herhangi bir iradesi yoksa ciddi bir başarı elde etmeniz mümkün değil.
+
+168
+01:06:02,264 --> 01:06:04,784
+Devamında bitti mi? Bitmedi.
+
+169
+01:06:08,403 --> 01:06:12,784
+Güvenlik yönetimi aslında bir döngüsel bir işlem.
+
+170
+01:06:13,652 --> 01:06:40,152
+Niye döngü serişsem? Çünkü her zamanında yeni tedbirler, yeni riskleri oluşturuyor. Yeni yazılımlar, yeni riskleri oluşturuyor. Ve sürekli sadece IT yönetimi tedbir almıyor. Saldırganlar da yeni yöntemler bulmaya çalışıyor. Dolayısıyla yeni personel geliyor.
+
+171
+01:06:40,755 --> 01:07:02,936
+Yeni bilgisayar katılıyor. Bu tamamen döngüsel bir proses. Dolayısıyla sürekli olarak IT sisteminin ve risk çevresinin, kaynaklarımız üzerindeki risklerin değiştiği,
+
+172
+01:07:03,507 --> 01:07:11,347
+Ve bu değişime karşı da gerekli cevabın sürekli olarak geliştirilmesi gereken bir husus.
+
+173
+01:07:12,207 --> 01:07:13,447
+Güvenlik yönetimi.
+
+174
+01:07:13,447 --> 01:07:25,447
+Peki, sadece sistemi kurmak yeterli değil. Kontrolün implementasyonunu takip edecek mekanizmalara da...
+
+175
+01:07:26,132 --> 01:07:51,312
+İhtiyacımız var. Yani sızmanın, saldırının takibiyle alakalı mekanizmalara da ihtiyacımız var. Ve bu neyi yapacak? Bu aslında güvenlik kurulumuyla alakalı değişiklikleri hesaplamamıza, buna göre yaptığımız politikaları güncellememize, iyileştirmemize, gerekli duyulması durumunda.
+
+176
+01:07:51,807 --> 01:08:09,707
+Yeni politikalar oluşturmamızda yardımcı olacak denetim, monitör mekanizmalarını da ihtiyacımız var ve bunu da IT güvenliği kapsamı içerisinde değerlendirip içerisine eklemek gerekiyor.
+
+177
+01:08:14,976 --> 01:08:39,836
+Zafiyetlerinden ya da sızmalara karşı kalmamız olasılık olmuş olacak ya da ihtimal artmış olacak. Peki bu neleri içeriyor aslında güvenlik politikalarının ya da güvenlik kurulumlarının değişimlerinin hesaplanması?
+
+178
+01:08:40,304 --> 01:09:03,264
+Güvenlik kontrollerinin bakımını, güvenlik politikalarının sürekli kontrol edilmesini, konflikasyonların yönetimini ve konflikasyondaki değişiklikleri ya da herhangi bir saldırı durumunda saldırıya karşı yapılması gereken işlemleri içeriyor.
+
+179
+01:09:05,224 --> 01:09:07,123
+Gelelim bakıma.
+
+180
+01:09:09,076 --> 01:09:36,536
+Dedik ki güvenlik yönetimi saygılık bir proses, yani döngüsel bir proses. Dolayısıyla amacımız ne? Bizim sistemimizin sürekli bir şekilde doğru fonksiyon vermesi ve uygunluğunun doğru bir şekilde takibine yönelip her türlü yönetim.
+
+181
+01:09:37,363 --> 01:10:00,663
+Ve kontrol faaliyetlerini bakım içerisinde değerlendirmemiz mümkün. Peki amacımız ne bu bakımda? Aslında sistemimizin istenilen şekilde, istenilen performansta çalışmasını garanti etmek. Başka bir şey değil.
+
+182
+01:10:02,163 --> 01:10:22,984
+Peki, işle yapılan işlemle, yapılan işlem aslında bütün kontrollerin periyodik olarak incelenmesi. Bir checklist gibi düşünün. Ve kontrollerin yeni ihtiyaçlara göre, gereklilik olması durumunda update edilmesi, güncellenmesi.
+
+183
+01:10:27,828 --> 01:10:35,708
+Diğer kontrolleri etkileyip etkilemediğinin kontrol edilmesi, etkilemeyecek şekilde yapılması.
+
+184
+01:10:36,500 --> 01:10:58,739
+Aynı zamanda bu sürekli bir süreç olduğu için yeni tehditleri ve yeni zafiyetleri de tespitine yönelik çalışmalar bizim aslında periyodik kontrol kapsamında ya da bakım kapsamında değerlendirdiğimiz hususlar olarak karşımıza çıkıyor.
+
+185
+01:11:03,667 --> 01:11:28,027
+Bunda neleri yapıyoruz? Güvenlik proseslerinin incelenmesini, denetmesiyle alakalı prosesler, sistemimizin istediğimiz şekilde, istenilen şekilde, planlandığı şekilde çalışmasına yönelik yapılan planlamalar.
+
+186
+01:11:30,547 --> 01:11:55,528
+Şeklinde dizayn edebiliriz. Nedir mesela checklistler? Bu yapılan kontroller neticesinde uygun politikalar ve planlar oluşturulmuş mu? Gerekli olan uygun kontroller seçilmiş mi?
+
+187
+01:11:56,372 --> 01:12:08,872
+Ve bu kontroller uygun şekilde kurulmuş ve kullanılmakta mıdır? Bunların hepsini checklistler şeklinde kontrol etmek gerekiyor.
+
+188
+01:12:08,872 --> 01:12:19,564
+Bu bir denge arkadaşlar. Niye denge? Çünkü yönetimsel olarak ya da güvenliği arttırma yönelik olarak...
+
+189
+01:12:19,572 --> 01:12:44,572
+Yaptığınız her türlü değişiklik bir başka risk, artık bir risk oluşturma ihtimali var. Bu geliştirilen ya da önerilen değişiklikler formal olabilir, informal olabilir ve bu testler...
+
+190
+01:12:44,979 --> 01:13:08,500
+Sistemin ve diğer uygulamaları etkilemeyecek şekilde yapılması gerekir ve etkiyi de sizin değerlendiriyor olmanız gerekiyor. Aynı zamanda sistem bir bütün olarak düşünürsek bu sistem daha bir başka sistemleri de yönetimsel olarak.
+
+191
+01:13:09,492 --> 01:13:25,752
+Etkiliyor olabilir. Dolayısıyla sizin yaptığınız bir iyileştirme ya da güncelleme başka sistemlerle ilişkili olabilir. Mesela diyelim ki siz Java'da bir güncelleme yaptınız.
+
+192
+01:13:35,920 --> 01:13:46,579
+Yapmadıysanız bu sefer diğerlerinde sıkıntı olacak demektir. Dolayısıyla hem donanımı hem de uygun versiyondaki yazılımın her birinde.
+
+193
+01:13:47,123 --> 01:14:12,463
+Ayrı ayrı kurulduğunun ve yaptığınız bu güncellemenin diğerinin çalışmasını engellemediğinden emin olmanız gerekiyor. Yani ufak bir değişiklik yaptığınız zaman bu değişikliğin bütünsel olarak diğer sistemlere oluşturabilecek etkisini de ayrı ayrı değerlendiriyor olmak gerekiyor.
+
+194
+01:14:14,036 --> 01:14:22,036
+Şimdi gelelim bizim meşhur gümüş yıldız maden şirketimize.
+
+195
+01:14:24,336 --> 01:14:30,816
+Geçen hafta yapmıştık. Verilen risklere göre, varlıklarımızdaki verilen risklere göre.
+
+196
+01:14:31,347 --> 01:14:45,307
+Şimdi muhtemel kontrolleri tanımlayacağız burada. Çünkü geçen hafta isteri verilmiştik. Hayır, işte yüksek, orta, düşük bunların etkileri. Şimdi bunlarla ilgili kontrolleri tanımlayacağız. Ne yapacağız?
+
+197
+01:14:48,488 --> 01:14:56,288
+Değerlendirmeye göre birçok kategoriyi kullanılan kategori içerisinde değerlendirmemiz olacak.
+
+198
+01:14:59,539 --> 01:15:14,219
+Hatırlarsanız oradaki listemiz vardı. Nedir mesela? Asetimiz bir genel bir sistemin kendisini bir varlık olarak düşünürsek, bütün riskler, genel uygulamalar nedir?
+
+199
+01:15:27,283 --> 01:15:53,804
+Önlenmesi, bunlar kontroller. Monitor edilmesi, analiz edilmesi. Niye? Sunucular üzerindeki sunucu aktivitelerinin analiz edilmesi, rapor edilmesi. Bunlar recommended controller. Planlama ve sistemin backup. Bunlar tavsiye edilir. Priority 1.
+
+200
+01:15:54,771 --> 01:16:13,952
+Ve patronun da 5'inde seçtiğini düşünelim. Ne vardı? SCADA sistemimiz vardı. SCADA'nın Network düğümüne bağlanmasının, bağlanan Network düğümündeki güvenilirliği ve bütünlüğü yüksek. Niye?
+
+201
+01:16:14,644 --> 01:16:39,684
+Çünkü bu saldırıya uygulayabilir. Recommended Control'üne, buraya bir Intrusion Detection ve Cevap Sistemi, Intrusion IPS Kurulumu. Priority'ne 2, çünkü bütün genelleri aldıktan sonra 2. Ne seçildi? Bu seçilmiş. Önerilen cihaz alınması için.
+
+202
+01:16:40,435 --> 01:17:06,095
+Dosya veri tabanıyla alakalı. Ekstrim çünkü veri tabanımız uçarsa hepsi gider. Ne yaptık recommended control olarak? Kritik dokümanları üzerine denetim mekanizmasının kurulması, bu dokümanların oluşturulması ve depolanmasıyla alakalı etkin ve efektif politikalar oluşturulması.
+
+203
+01:17:08,532 --> 01:17:16,631
+Kullanıcı güvenliği konusunda eğitilmesi ve bunlarla alakalı gerekli eğitimlerin verilmesi.
+
+204
+01:17:16,631 --> 01:17:34,172
+Priorities 3, 3'ü de seçildi. Finansal sistemimizin ile alakalı, esetimiz herhangi bir şekilde recommendation önermemiş, genel kontroller.
+
+205
+01:17:34,868 --> 01:17:55,868
+E-mail sistemimizin gizliliğinin ve bütünlüğünün ve erişilebilirliği risk yüksek. Bununla alakalı bir planlama ve E-mail sistemimizin backup bir E-mail servisin devreye alınması önerilen kontrol ve bu da...
+
+206
+01:17:56,115 --> 01:18:19,395
+Selective Control'de en sağdaki de Biznes Teşiliği'nin dediğimiz yönetimin tercihi olarak karşınıza çıkıyor. Hatırlarsanız amacımız güvenlik yönetimi, güvenlik yönetimiyle alakalı kontrol mekanizmalarını da bu hafta görmüş olduk.
+
+207
+01:18:24,372 --> 01:18:28,731
+Bitti arkadaşlar. Gördüğünüz bir şey var mı bununla alakalı?
+
+208
+01:18:29,872 --> 01:18:31,752
+Şunu mu internet sitenize?
+
+209
+01:18:32,252 --> 01:18:34,012
+Koydum. Geçen hafta koydum.
+
+210
+01:18:35,311 --> 01:18:37,072
+Bu var mıydı? Bunu göremedim.
+
+211
+01:18:37,731 --> 01:18:39,352
+Bak göstereyim mi isterseniz.
+
+212
+01:18:40,792 --> 01:18:41,711
+Ben açayım ben.
+
+213
+01:18:43,292 --> 01:18:45,471
+Bir, iki, üç olarak koymuşsunuz galiba hocam. Gördüm ben ya.
+
+214
+01:18:45,532 --> 01:18:47,952
+Evet, evet. Üç var ya bak ben seni.
+
+215
+01:18:48,787 --> 01:18:56,807
+Şuradan paylaşıma da vereyim. Oradan ekranlarını görelim. Üç tane var biliyorum. Evet, üç tane. Dördüncü tane.
+
+216
+01:18:56,807 --> 01:19:09,387
+Burada bakın. Üçüncü var. Üçüncü haftayı yaptık. Pro Regüste'de de geçmiş konular vardı hatırlarsanız. Şimdi dördüncü haftayı da biraz sonra koyarım isteyen. Tamam mı?
+
+217
+01:19:09,387 --> 01:19:10,367
+Teşekkürler.
+
+218
+01:19:10,667 --> 01:19:13,087
+Haftaya yine online yapalım arkadaşlar.
+
+219
+01:19:13,939 --> 01:19:28,479
+En azından çalışan arkadaşlar için bizlere kadar böyle devam edelim ki devamsızlık sıkıntısı yaşamasını sonrasında yüz yüze başlarız. Tamam. Haftaya da online. Soracağınız bir şey var mı?
+
+220
+01:19:33,363 --> 01:19:34,583
+Yok, teşekkürler.
+
+221
+01:19:35,863 --> 01:19:40,404
+Haftaya görüşmek üzere. Herkese sağlıklı bir hafta diliyorum.
+
+222
+01:19:40,904 --> 01:19:41,984
+Sağ olun hocam. Görüşürüz.
+
+223
+01:19:41,984 --> 01:19:43,023
+Hoşçakalın hocam.
+
+224
+01:19:43,263 --> 01:19:45,743
+Görüşürüz.
+
+225
+01:19:45,884 --> 01:19:49,703
+Hoşçakalın.
