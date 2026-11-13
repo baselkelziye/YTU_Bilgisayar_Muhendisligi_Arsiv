@@ -1,0 +1,2463 @@
+1
+00:05:43,956 --> 00:05:44,795
+Hıcam merhaba.
+
+2
+00:05:47,276 --> 00:05:48,036
+Merhaba.
+
+3
+00:05:48,936 --> 00:05:57,456
+Biz üç hafta önce sunumu yapamamıştık. Acaba bu hafta sunum yapabilecek miyiz?
+
+4
+00:05:58,656 --> 00:05:59,235
+En sonda.
+
+5
+00:05:59,975 --> 00:06:00,756
+En sonda mı?
+
+6
+00:06:01,376 --> 00:06:09,876
+Evet, akışı bu noktada bozmayacağımı söylemiştim. Hani ne zaman vakit olursa, ne zaman aşağı olursa. Bugün de son hafta ve son gün olduğu için.
+
+7
+00:06:10,387 --> 00:06:13,847
+Bugün bütün sunumlar bittikten sonra sizinkine göre gideceğiz.
+
+8
+00:06:14,048 --> 00:06:15,087
+Evet, şu an kaynaklı.
+
+9
+00:06:15,207 --> 00:06:17,587
+Tamam. Teşekkür ederim hocam.
+
+10
+00:08:15,507 --> 00:08:30,467
+Evet, hepinize merhaba arkadaşlar. Bugün de sunumlarımızla devam edeceğiz dersimize. Bugünün ilk grubu [öğrenci] ve [öğrenci]. Sanırım buradasınız arkadaşlar.
+
+11
+00:08:31,487 --> 00:08:32,648
+Merhabalar hocam, buradayız.
+
+12
+00:08:33,247 --> 00:08:41,867
+Merhabalar. Buyurun o zaman ben herkese vermiş olmam lazım, ekran paylaşım hakkını. Buyurun söz sizin.
+
+13
+00:08:41,867 --> 00:08:42,967
+Paylaşıyoruz hocam hemen.
+
+14
+00:08:56,755 --> 00:08:57,635
+Lütfen geldi mi?
+
+15
+00:08:59,035 --> 00:08:59,596
+Geldi.
+
+16
+00:09:13,364 --> 00:09:38,543
+[kişisel bilgi]. Şu an Yıldız Teknik Üniversitesi Bilgi Teknik Kur'anında yüksek istans yapmaktayım. [kişisel bilgi]. Bugün sizleri ekip arkadaşım [öğrenci] ile beraber SmartNem Ölçüm Cihazı projemiz hakkında sunum yapacağız.
+
+17
+00:09:39,443 --> 00:09:43,203
+Gül istersen, sen de kendini tanıtırsan, ondan sonra devam ederim ben.
+
+18
+00:09:49,460 --> 00:09:50,920
+[öğrenci] bizi duyabiliyor musun?
+
+19
+00:10:01,203 --> 00:10:02,583
+Hocam herhalde bir gülü.
+
+20
+00:10:06,131 --> 00:10:07,351
+[öğrenci] sesimiz geliyor mu?
+
+21
+00:10:11,028 --> 00:10:27,888
+Hocam, sesim geliyor mu benim? Senin sesin geliyor. Senin sesinde bir sıkıntı yok. [öğrenci] ortada yok. Yani... Ben devam edeyim isterseniz. Lütfen. Yani boşuna vakit kaybetmeyelim. Zaten sınırlı bir... Tamam hocam, ben devam ediyorum. Hemen devam ediyorum.
+
+22
+00:10:30,888 --> 00:10:32,888
+Bizim hemen...
+
+23
+00:10:33,076 --> 00:10:43,916
+İhtiyaç nedenine geliyorum projemizdeki. Piyasada bulunan mevcut ürünlerde genel olarak masaüstü tipi, piliyle çalışan, ölçümün kendi üzerindeki ekranda gösterilen ürünlerden oluşmaktadır.
+
+24
+00:10:44,796 --> 00:10:51,676
+Bu nedenden dolayı ölçüm değerlerini öğrenmek için her seferinde cihazın üzerindeki ekrana bakılması gerekmektedir.
+
+25
+00:10:52,135 --> 00:10:56,836
+Herhangi bir sıcaklık veya nem değeri değişimlerinde cihaz üzerinde alem oluşturulamamaktadır.
+
+26
+00:10:57,248 --> 00:11:05,028
+Örnek vermek gerekirse üst solum yolu rahatsızlığı bulunan astım gibi kronik hastalarda ortam nem ve sıcaklığı önem arz etmektedir.
+
+27
+00:11:05,708 --> 00:11:08,968
+Ortağın ve nem sıcaklığı derdiden sürekli takip edilmesi gerekmektedir.
+
+28
+00:11:08,968 --> 00:11:14,968
+Fakat piyasada bulunan ürünlerde ortam ve nem sıcaklığını takip edecek bir ürün bulunmamaktadır.
+
+29
+00:11:17,076 --> 00:11:38,036
+Çözüm olarak ne yaptık? Ürüne yeni özellikler ekledik. Projemizde bu cihada smart özelliği ekledik. Diğer IoT özellikli olacağı için aynı zamanda sanayide ve ev ortamlarında kullanabilecektir. Veri toplama, alarm oluşturma, nesnenin birbirleriyle içimi gibi birçok özelliği ihtiyar duyabilecek alanlarda kullanabilecektir.
+
+30
+00:11:38,451 --> 00:11:59,491
+Smart özelliği ile beraber cihazı kullanacak müşterilere de birçok kolaylık sağlayacaktır. Örnek vermek gerekirse yine fabrika ortamlarında sıcaklık ve nem değerlerini, ölçümlerine ihtiyaç duyulan sistemlerde kullanabilecek. Data centerlarda sıcaklığın ve nem takip edilmesi gereken her alanda kullanılma imkanı sağlayacak.
+
+31
+00:11:59,956 --> 00:12:12,076
+Aynı zamanda ev ortamında kullanabilecek. Cihazın bulunduğu odada set edilen değerler harcinde farklı bir değer oluştuğunda cep telefonuna alarm ya da SMS olarak bilgi alınabilecek.
+
+32
+00:12:15,475 --> 00:12:31,316
+Ürünümüz, ürüne yeni özellik olarak USB bağlantısı ekleyeceğiz. Cihazın enerjisini pil yerine USB-R yüzünden sağlayacak. Böylelikle pil kullanımının önüne geçerek doğaya katkı sağlamanın yanı sıra pil değişimi sonuna ortadan kaldırma hedefliyoruz.
+
+33
+00:12:31,495 --> 00:12:40,956
+Aynı zamanda cihazı avalış model eklenerek smartphone veya bilgisayar üzerinden de yönetebilir hale getireceğiz. Böylelikle cihazı AYT özelliğe de eklenmiş olacaktır.
+
+34
+00:12:43,475 --> 00:12:49,135
+Herhalde farklı bir değer oluştuğunda anlık olarak alarm alıp müdahale edilir duruma gelebileceğiz.
+
+35
+00:12:49,655 --> 00:12:53,475
+Yerli kaynaklar kullanarak piyasa daha ucuza üretim yapılması hedeflenmektedir.
+
+36
+00:12:53,935 --> 00:12:56,935
+Açık kaynaklı kod olacağı için cihaz gelişimi açık olacaktır.
+
+37
+00:12:58,235 --> 00:13:02,556
+Bundan sonra sözü [öğrenci] arkadaşıma bırakacağım ama burada mı?
+
+38
+00:13:03,995 --> 00:13:05,175
+Yoksa ben devam edeceğim.
+
+39
+00:13:05,175 --> 00:13:07,475
+Hocam tekrar bir...
+
+40
+00:13:07,475 --> 00:13:08,415
+[öğrenci] bizi duyuyor musun?
+
+41
+00:13:12,884 --> 00:13:14,024
+Ben devam ediyorum hocam.
+
+42
+00:13:14,564 --> 00:13:14,783
+Tamam.
+
+43
+00:13:15,508 --> 00:13:33,368
+Pazar payı ve hedef kitlemiz olarak sanayi ve ev elektroninde kullanı uygun olacağı için birçok alanda ihtiyaç giderecektir. Ürün ortam sıcaklığı ve nem değerlerinin ölçme kabiliyetine sahip olduğu için bireysel son kullanıcı ve sanayi sektörü potansiyel müşteri olarak görülmektedir.
+
+44
+00:13:33,368 --> 00:13:43,368
+Türkiye'de yıllık ortalama 1.200.000 canlı doğum gerçekleşmektedir. Ebeveynler yeni doğan çocukların odalarının nem ve sıcaklık değerlerini çocukların sağlamak.
+
+45
+00:13:43,508 --> 00:13:58,587
+Sağlığı için takip etmek isterler. Cep telefonu üzerinden takip edebilen bir ürün olduğu için çocukların odanın annem ve ısı ölçüm cihazı alan ev beynlerine hitap edeceği düşünülmektedir. Sanayi ortamında da veri toplama ve ölçüm içinde kullanabilecektir.
+
+46
+00:14:00,500 --> 00:14:09,319
+Rakiplerimiz piyasadan bir sanayi tipi bir de ev tipi iki tane ürünle kıyasla mukayese ettik.
+
+47
+00:14:10,319 --> 00:14:14,500
+Bu kıyasladığımız ürünlerde genelde IoT desteği yok.
+
+48
+00:14:14,599 --> 00:14:21,639
+USB port bulunmuyor, valiz desteği bulunmuyor, smartphone desteği bulunmuyor, open source desteği bulunmuyor.
+
+49
+00:14:21,639 --> 00:14:26,539
+Bizim projemizdeki bu üründe bunların hepsi olacak.
+
+50
+00:14:27,923 --> 00:14:40,563
+Aynı zamanda diğer ürünler pil ile çalışmaktadır. IoT destekleri bulunmamaktadır. Bizim ürünümüzde cihazda USB portu olacak. USB'den enerji ihtiyacını karşılayabilecek.
+
+51
+00:14:40,644 --> 00:14:50,183
+IoT özelliği olacak. Smartphone bağlantısı, cep telefonu bilgisayarla yönetilme özelliği bulunacak. Yerli üretim olmasını hedefliyoruz.
+
+52
+00:14:53,408 --> 00:15:14,627
+Gelir model olarak da birinci yıl 1100 adet üreteceğiz. 1000 tane müşteriye ulaşmaya hedefliyoruz. Tahmin ortama fiyatımızda 310 TL olacak. Tahmin ciro'muzda 310.000 TL olarak hedefliyoruz. İkinci yıl 1500 müşteriye ulaşmaya hedefliyoruz, satmaya hedefliyoruz. Tahmin ürün miktarımızda 1600 TL.
+
+53
+00:15:14,899 --> 00:15:26,579
+civar ürün üreteceğiz. Tahmin ortalama üretim fiyatı da 320 lira olacak ürün fiyatı. Tahmin cilomuz da 480 bin TL. Üçüncü yıl 2000.
+
+54
+00:15:27,104 --> 00:15:51,084
+müşteri sayısına ulaşmayı dedikliyoruz. Tahmin ürün miktarı 2100, tahmin ortamlı ürün fiyatımız da 330 TL olacak. Tahmin ciro da 660.000 TL olarak ederdik. Son olarak dördüncü yılda 2300 müşteriye ulaşmayı dedikliyoruz. Tahmin ürün miktarımız 2500 tane üreteceğiz. Tahmin ortamlı ürün fiyatımız da 340 TL. Tahmin ciro da 782.000 TL olarak ısıtladık.
+
+55
+00:15:53,172 --> 00:16:16,971
+İş paketimiz 5 ay olarak planladık. Birinci iş paketli nomos proje yönetimi 5 ay sürecek zaten. İkinci saf malzemenin temin edilmesi 1 ay. Üçüncü iş paketimiz ürünün donumsu olarak ihmal edilmesi 2 ay. Dördüncü iş paketimiz ürünün yazılımın kurulması 1 ay. Beşinci iş paketimiz de testlerin yapılması 1 ay olarak planladık.
+
+56
+00:16:17,875 --> 00:16:42,295
+Ekipte bu projede görev alacak arkadaşlarımızın bazı ödüzelerini tekrar buraya yazdık. Ben baskı devlet kart dizaynı ve elektrik devlet konusunda deneyime sahibiyim. [kişisel bilgi]. IT ödüzelerinde projelerde görev aldım. [öğrenci] arkadaşımıza yine IT ürün testleri hakkında deneyime sahip. Pazar araştırmaları ve inceleme projelerinde görev almış. Elektronik programı konusunda deneyime sahiptir.
+
+57
+00:16:43,539 --> 00:16:47,259
+Bizi dinlediğiniz için teşekkür ederim. Varsa sorunuz alabilirim.
+
+58
+00:16:54,131 --> 00:16:55,411
+Teşekkürler [öğrenci].
+
+59
+00:16:56,591 --> 00:17:03,331
+Ben teşekkür ederim hocam. [öğrenci], bilmiyorum, speaker'ın da mı ağzı var? Hani bizi duyamadı hocam ama. Burada gözüküyor ama.
+
+60
+00:17:04,411 --> 00:17:08,831
+Evet, dersin başından beri burada görüyorum ama şu an sınıva katılmamış gözüküyor bende de.
+
+61
+00:17:09,395 --> 00:17:20,815
+Böyle değerlendirilecek. Yani bu plan, program belli bir standartta gidiyor. Burada olması ve atılması gerekiyordu. Yapacak bir şey yok. Teşekkürler sana bu arada.
+
+62
+00:17:21,335 --> 00:17:22,135
+Teşekkür ederim.
+
+63
+00:17:22,275 --> 00:17:32,056
+Diğer gruba geçebiliriz. [öğrenci] ve [öğrenci]. Konuşamadım bir an. Kusura bakmayın. Burada mısınız arkadaşlar?
+
+64
+00:17:32,855 --> 00:17:34,096
+Merhaba hocam, buradayız.
+
+65
+00:17:34,695 --> 00:17:35,375
+Merhaba [öğrenci].
+
+66
+00:17:35,827 --> 00:17:40,467
+Merhaba [öğrenci], buyurun. Söz sizin.
+
+67
+00:17:43,107 --> 00:17:44,927
+Ben yansıyım.
+
+68
+00:17:53,011 --> 00:17:54,851
+Ekranım, geldi mi acaba?
+
+69
+00:17:55,871 --> 00:17:57,391
+Geldi, gördüm ben.
+
+70
+00:17:57,991 --> 00:17:58,311
+Tamam.
+
+71
+00:17:59,551 --> 00:18:01,672
+İsmim [öğrenci].
+
+72
+00:18:02,251 --> 00:18:05,551
+[öğrenci] ile birlikte bu projeyi çalıştık.
+
+73
+00:18:06,211 --> 00:18:08,551
+Sunumun ilk kısmını kendisi aktarıyor olacak.
+
+74
+00:18:08,731 --> 00:18:10,251
+Ardından ben sözü devralacağım.
+
+75
+00:18:13,268 --> 00:18:32,867
+Merhaba, [öğrenci]. Bilgisayar programcısıyım. [kişisel bilgi]. Şu an Yıldız Teknik Üniversitesi'nde bilgi teknolojileri alanında yüksek sansıma devam ediyorum. [kişisel bilgi].
+
+76
+00:18:41,268 --> 00:18:49,307
+İnsanların en çok ihtiyaç duyduğu gıda gereksinimlerini karşılarak fayda sağlayacağını düşündüğümüz için böyle bir proje yapmaya karar verdik.
+
+77
+00:18:50,528 --> 00:18:59,827
+Projemizin amacı, ihtiyaç sahipleri gerçek kişilerle bağışçı tarafların bir araya geldiği güvenli bir platform oluşturmak.
+
+78
+00:19:01,448 --> 00:19:06,427
+Belediyelerin belirleyecek olduğu ihtiyaç sahipleri sistem ve gıda ihtiyaçlarına girecek.
+
+79
+00:19:06,932 --> 00:19:14,932
+Başçı taraflar ise bu ihtiyaçları görüntüleyerek istedikleri ihtiyacı karşılayabilecek bir platform planlanmaktadır.
+
+80
+00:19:18,211 --> 00:19:22,592
+Peki, biraz işleyişe bakalım süreç nasıl ilerleyecek?
+
+81
+00:19:23,771 --> 00:19:26,451
+Öncelikle platformda bizi bir üyelik sistemi karşılıyor.
+
+82
+00:19:26,451 --> 00:19:27,971
+Taraflar üyelik.
+
+83
+00:19:28,367 --> 00:19:37,867
+sisteme üye olduktan sonra ihtiyaç sahipleri gıda gereksinimlerine girerek sisteme talep oluşturacaklar.
+
+84
+00:19:38,467 --> 00:19:47,407
+Bağışçı taraflarsa yine üyelikten sonra bu ihtiyaçları görüntüleyerek istedikleri ihtiyacı karşılama talebinde bulunabileceklerdir.
+
+85
+00:19:49,627 --> 00:19:53,927
+Tarafların bu taleplerini sistem yöneticileri karşılayacak ve onaylayacaktır.
+
+86
+00:19:54,644 --> 00:19:57,804
+Peki, taşıma ve lojistik nasıl ilerleyecek?
+
+87
+00:19:59,183 --> 00:20:09,043
+Bağışçı taraflar doğrulama süreci tamamlandıktan sonra ihtiyacı kendilere ulaştırabilecekleri gibi taşıma desteği de talep edebileceklerdir.
+
+88
+00:20:09,043 --> 00:20:21,043
+Taşıma desteği taleplerini de yine yöneticiler karşılayacak ve gerekli planlamaları yaparak tarafların uygun olduğu tarih, saat...
+
+89
+00:20:21,632 --> 00:20:24,332
+belirlenerek teslimat gerçekleşecektir.
+
+90
+00:20:26,452 --> 00:20:46,452
+Raporlama yürütücü tarafının kullandığı bir arayüz. Buradan detaylı çıktı alınabilecek, örnek verecek olsak son bir ayda karşılanan ihtiyaçlar ya da sisteme kayıtlı bağışçıların bilgileri gibi belirli periyotlar daha aylık, haftalık gibi.
+
+91
+00:20:47,731 --> 00:20:49,672
+Doküman çıksı alabileceklerdir.
+
+92
+00:20:52,371 --> 00:21:04,511
+Ekibimiz ihtiyaç duyulması halinde kullanıcı desteği, iş süreçleriyle alakalı olabilir ya da proje geliştirme alanlarında danışmanlık hizmeti verecektir.
+
+93
+00:21:05,072 --> 00:21:07,851
+Bu sayede ek gelir sağlamayı hedeflemekteyiz.
+
+94
+00:21:10,052 --> 00:21:13,692
+Projemizin yenilikçi yönü, en önemli yeniliği
+
+95
+00:21:14,099 --> 00:21:20,900
+diye gösterebileceğimiz gıda alanında hizmet verecek tek platform olacak olmasıdır.
+
+96
+00:21:22,279 --> 00:21:25,539
+İhtiyaç sahibi gerçek işlere ulaşmayı hedefliyoruz.
+
+97
+00:21:26,659 --> 00:21:30,859
+İhtiyacı karşılanma süresini en aza indirmeyi hedefliyoruz.
+
+98
+00:21:31,859 --> 00:21:35,319
+Bu noktada ben sözü demete bırakıyorum. Teşekkür ederim.
+
+99
+00:21:37,428 --> 00:22:00,008
+Teşekkürler [öğrenci]. Bundan sonraki süreci de ben aktarıyor olacağım. İş zaman çubuk grafiğimize bakacak olursak biz genel olarak projemizi 3 temel adıma böldük. Analiz, tasarım, kodlama, uygulama, geliştirme ve entegrasyon, test süreci. Burada en uzun zaman alacak kısım ikinci adım olacağı için proje planında o kısmı diğer adımlardan daha uzun planladık.
+
+100
+00:22:00,884 --> 00:22:10,304
+Proje öncesi pazar analizine baktığımızda sektörde aslında çokça yardımlaşma amaçlı oluşturulmuş site, sosyal medya hesabı bulunduğunu gördük.
+
+101
+00:22:10,304 --> 00:22:17,003
+Ve bunları incelediğimizde ve bağışçı tarafların yorumlarına da baktığımızda en büyük problemin güven problemi olduğunu gördük.
+
+102
+00:22:17,624 --> 00:22:21,304
+Biz de bu platformu sağlarken bağışçı tarafların güven problemi...
+
+103
+00:22:21,304 --> 00:22:26,304
+Kapsa almayacağını düşünüyoruz. Kapsa almayacağını düşünüyoruz. Kapsa almayacağını oluşturduk.
+
+104
+00:22:30,708 --> 00:22:45,148
+Kusura bakma, araya başka birinin konuşması girdi. Ben de kendisini mühür ettim. Bu tip şeylerin ne kadar yakışıksız olduğunu daha önce uyarmıştım olduğunda. Buna rağmen oluyor olması can sıkıcı. Kusura bakma, buyur sen devam et.
+
+105
+00:22:46,048 --> 00:22:47,748
+Teşekkürler hocam, problem değil.
+
+106
+00:22:49,940 --> 00:23:11,740
+Güven probleminden söz ediyordum. En önemli problemin güven sorunu olduğunu gördük. Biz de platformumuzu tasarlarken bağışlı tarafların da yapacakları bağışlıların doğru kişilere ulaştırılmasında herhangi bir problem yaşamamak adına bu noktada belediyelerle iş birliği yaparak gerçek ihtiyaç sahiplerinin tespit edilmesi yönünde bir planlama yaptık.
+
+107
+00:23:11,740 --> 00:23:17,940
+Ve platformumuza en yakın olan iki platformu inceledik özellikle. İhtiyaç haritası ve askıda.
+
+108
+00:23:17,940 --> 00:23:30,559
+Bunlara baktığımızda ihtiyaç haritasının aslında gıda, giysi ve benzeri birçok ihtiyaca cevap verdiğini gördük. Bizim ürünümüz burada sadece tüm insanlığın ortak ihtiyacı olan gıda ihtiyacına odaklanıyor olacak.
+
+109
+00:23:31,059 --> 00:23:45,940
+Askıda Fatura da sadece fatura ihtiyacını karşılayan bir platform. Dağıtım olarak baktığımızda ihtiyaç haritasında aslında daha çok bağışçılar iletecekleri, ihtiyaç sahiplerine iletecekleri şeyleri kendileri gönderirken.
+
+110
+00:23:45,940 --> 00:23:57,260
+Online Gıda Yardımlaşma'da [öğrenci]'nin de bahsettiği gibi bağışçının dilerse lojistik hizmeti alabileceği bir portalde bir hizmette sağlıyor olacağız. Bu da yine diğerlerinden farklı bir adım olacak.
+
+111
+00:23:58,579 --> 00:24:10,119
+Pazarlama planımıza bakacak olursak, burada rekabet stratejisi anlamında düşük maliyeti bir avantaj olarak gördük. Bunu sağlayabilmek adına da aslında şunu söyleyebiliriz.
+
+112
+00:24:10,960 --> 00:24:22,779
+Biz proje detaylarında [öğrenci], ben ve bir yazılımcı olmak üzere üç kişi, üç personelle planlamamızı yaptık ve herhangi bir outsource personel çalıştırmamak üzere proje planımızı kurgulamıştık.
+
+113
+00:24:22,779 --> 00:24:26,579
+O yüzden in-house bir üretim olacağı için burada düşük maliyet avantajını...
+
+114
+00:24:26,579 --> 00:24:39,519
+sahip olacağımızı düşünüyoruz. Proje tamamlandıktan sonra dağıtım yöntemi anlamında beledilerle görüşerek yüz yüze iletişim ve demo sunumlarıyla tanıtımını ve pazarlamasını yapmayı planlıyoruz.
+
+115
+00:24:39,960 --> 00:24:51,079
+Ve bu kapsamda da ilk yıl için en az 3 belediyede, 2. yıl 6, 3. yıl 10 ve son yılda 15 belediyeye bu platformun kullanımını sağlayabileceğimizi planladık.
+
+116
+00:24:53,203 --> 00:25:07,203
+Toplam maliyetimize bakacak olursak aslında toplam tahmini maliyetin neredeyse yarısını genel giderlerimizin oluşturacağını düşündük. Burada hem lokasyon hem dokümentasyon gibi genel tüm proje boyunca...
+
+117
+00:25:08,852 --> 00:25:16,731
+İlk olarak harcamalarımızı göz önüne alarak böyle bir plan çıkardık. İkinci en önemli maliyet kalemimizin de personel maliyeti olduğunu düşündük.
+
+118
+00:25:17,092 --> 00:25:26,751
+Onun dışında seyahat, alet, teçhizat ve malzeme maliyetlerimiz de yine küçük bir kapsamda proje boyunca harcamalarda görülecek diye planladık.
+
+119
+00:25:27,412 --> 00:25:35,072
+Herhangi bir danışmanlık ya da az soru personel çalıştırma planımız olmadığı için bu kapsamda bir maliyet kalemi tahmin etmedik.
+
+120
+00:25:36,788 --> 00:25:43,907
+Anlatacaklarımız bu kadardı. Herhangi bir sorunuz olursa cevaplayabiliriz. Dinlediğiniz için teşekkürler.
+
+121
+00:25:50,708 --> 00:25:55,068
+Teşekkürler arkadaşlar. Bir sonraki gruba geçebiliriz.
+
+122
+00:25:57,968 --> 00:26:04,568
+22 numaralı, [öğrenci] ve [öğrenci]. Burada mısınız arkadaşlar?
+
+123
+00:26:04,748 --> 00:26:05,588
+Burada, hocam.
+
+124
+00:26:06,948 --> 00:26:09,008
+Buyurun, sözü size bırakıyorum ben.
+
+125
+00:26:10,068 --> 00:26:12,428
+Ben hemen slide ekranınızı paylaşıyorum.
+
+126
+00:26:13,488 --> 00:26:14,028
+Tamam.
+
+127
+00:26:24,564 --> 00:26:25,444
+Gözüküyor muyuz?
+
+128
+00:26:26,344 --> 00:26:31,884
+Evet, şu an gözüküyor. Büyük ekran yaparsam daha iyi olur. Teşekkürler.
+
+129
+00:26:32,004 --> 00:26:32,824
+Büyük ekrandayım.
+
+130
+00:26:33,444 --> 00:26:37,484
+Tamam, harika. O zaman başlayalım. Herkese merhaba.
+
+131
+00:26:37,904 --> 00:26:42,704
+B-512 Teknogürelçik Sermayi Desi Programı kapsamındaki iş fikrimizden bahsetmek istiyoruz.
+
+132
+00:26:42,924 --> 00:26:45,344
+İş fikrimizin adı motosiklet kiralama uygulaması.
+
+133
+00:26:51,380 --> 00:27:06,480
+Sunumuza başlamadan önce kısa içindeler olacak bahsedelim. Motosiklet kiralama uygulaması nedir? İş fikrimiz nereden ortaya çıktı? Peki bu uygulama nasıl kullanılır? Kiralama nasıl gerçekleşir? Ücretlerimiz, rakiplerimizden farklarımız nelerdir? Bunlardan bahsediyor olacağız.
+
+134
+00:27:09,811 --> 00:27:23,831
+Benim ismim [öğrenci]. [kişisel bilgi]. Şu anda Yıldız Teknik Üniversitesi Bilgi Teknoloji Bölümünde Tesis Yüksek Lisansı yapmaktayım. [kişisel bilgi].
+
+135
+00:27:26,231 --> 00:27:36,912
+Merhaba, ben [öğrenci]. [kişisel bilgi]. [kişisel bilgi].
+
+136
+00:27:37,268 --> 00:27:41,807
+Şu anda da Yıldız Teknik Üniversitesi Bilgi Teknolojileri Yüksek Distans yapmaktayım.
+
+137
+00:27:46,048 --> 00:27:48,327
+Motosiklet kiralama uygulaması nedir?
+
+138
+00:27:49,347 --> 00:28:03,407
+Ev ile iş arasında çok uzun mesafe olmayan, tercihe göre olan, şehir içinde market alışverişlerinde, kafeye, sahile gitmek amaçlı kullanmak için araba çok pratik olmamaktadır.
+
+139
+00:28:04,915 --> 00:28:17,556
+Burada biz ihtiyaç duyduğumuz anda yakınımızda kolaylıkla erişebileceğimiz, yani gitmek istediğimiz yere daha rahat, trafiksiz bir ulaşım sağlamak için bu mobil uygulamayı iş planımıza dahil ettik.
+
+140
+00:28:18,036 --> 00:28:25,756
+İş fikrimizin çıkma sınavının ilk önceliği trafiğin yoğun olduğu bölgeleri ele almak ve buralarda hizmet vermek istiyoruz.
+
+141
+00:28:26,256 --> 00:28:32,915
+Kişilerin dakikalık ve saatlik motosiklet kiralama ihtiyacılarını bu mobil uygulama üzerinden karşıda biliyor olacağız.
+
+142
+00:28:36,692 --> 00:28:43,811
+Bu uygulama nasıl kullanılır? İlk önce uygulamayı Apple Store ve Google Play Store'dan akıllı cihazlarımıza indirmeliyiz.
+
+143
+00:28:44,692 --> 00:28:50,331
+İndirme işlemini tamamlandıktan sonra uygulama kişisel bilgilerimize girmemiz gerekmektedir.
+
+144
+00:28:50,892 --> 00:28:57,231
+Kişisel bilgilerimize girmeden üyelmemiz mümkün değil. Bunların hepsine eksiksiz bir şekilde girmemiz gerekmektedir.
+
+145
+00:28:57,231 --> 00:29:03,831
+Bu kişisel bilgilerimiz nelerdir? Kimlik bilgilerimiz, ehliyetimiz ve kredi kartı bilgilerimizdir.
+
+146
+00:29:04,276 --> 00:29:28,276
+Burada altını çizmek istediğim bir nokta ehliyet. Elektrikli motosikletler ve normal hızlı 45'i aşmayan motosikletlerde B sınıfı ehliyet kullanılabilmektedir. Biz bu yüzden hızlı 45'i geçmeyen ve elektrikli motosikleti tercih ettik. B sınıfı ehliyeti daha fazla kitleye erişmemizi sağladığı için...
+
+147
+00:29:29,140 --> 00:29:36,680
+Bunu tercih ettik diyebiliriz. Üyelik bilgilerimiz kontrol edildikten sonra kiralama işlemini mobil uygulama üzerinden gerçekleştirebiliriz.
+
+148
+00:29:39,220 --> 00:29:45,859
+Mobil uygulamada iyi olduktan sonra harita kısmındaki girerek bize en yakın motosikleti bulmamız gerekmektedir.
+
+149
+00:29:46,500 --> 00:29:48,619
+Kiralama işlemini nasıl yapabiliriz?
+
+150
+00:29:48,720 --> 00:29:51,240
+Mobil uygulamada yer alan karabar kodu var.
+
+151
+00:29:51,819 --> 00:29:56,179
+Buna tıklayarak kiralama işlemini sayfamızda biz yönlendirecektir.
+
+152
+00:29:56,259 --> 00:29:58,519
+Buna göre kiralama işlemini tamamlayabiliriz.
+
+153
+00:29:58,519 --> 00:30:00,000
+Kiralama işlemini tamamlayabiliriz.
+
+154
+00:30:00,000 --> 00:30:08,459
+Anlayabilmek ve motoru kullanabilmek için QR barcode ile anahtara erişiyor olacağız ve mutlaka kast takılması gerekmektedir.
+
+155
+00:30:08,759 --> 00:30:13,079
+Bu kasta QR barcode kodu ile erişebiliyor olacak, kildi açılıyor olacaktır.
+
+156
+00:30:15,740 --> 00:30:26,799
+Kiralama sonlandırma işlemi ise hizmet bölgesi içerisinde kuralları uygun bir şekilde park edip, gerekli barcode'ları okutup kiralama işlemini sonlandırabiliriz.
+
+157
+00:30:29,940 --> 00:30:34,720
+Ücretlendirme kısmına [öğrenci] devam edecek. Beni dinlediğiniz için teşekkür ederim.
+
+158
+00:30:35,980 --> 00:30:39,099
+Teşekkürler [öğrenci]. Buradan sonra ben devam edeceğim.
+
+159
+00:30:39,940 --> 00:30:46,160
+Ücretlendirme politikamız dakika başı olacak. Dakika başına 80 kuruş ile fiyatlandırıyoruz.
+
+160
+00:30:46,879 --> 00:30:49,940
+Kiralama sonlandığında mobil uygulamanızdan...
+
+161
+00:30:51,380 --> 00:30:58,320
+ne kadar dakika kiraladığınızı ve ne kadar ücret ödemeniz gerektiğinizi görebilirsiniz.
+
+162
+00:30:58,900 --> 00:31:04,120
+Ayrıca bilgilerinizi girdiğinizde tanınladığınız kredi kartınızdan bu ücret otomatik olarak tahsis edilmektedir.
+
+163
+00:31:04,120 --> 00:31:19,120
+Peki köprü ücretleri, köprüden geçersek motor spretlerimizin üzerinde GSM olduğu için gittiğiniz yolları takip edecek ve köprüden geçtiğinizde sistem otomatik olarak onun ücretini kiralama ücretine dahil ederek...
+
+164
+00:31:19,380 --> 00:31:40,880
+Bu nasıl işlemini gerçekleştirecektir? Peki, rakiplerimizden farkımız ne? Rakiplerimiz ilk önce yerli rakibimiz Tic Tac. Tic Tac bir mobil araba kiralama uygulaması. Motor skit kiralamıyor. Bizim ondan farkımız elektrikli motor skit kiralıyor oluşumuz.
+
+165
+00:31:41,523 --> 00:31:55,043
+Yabancı kiralama uygulaması ise Vatacars. Vatacars'ta motor var ama elektrikli değil. Yani bizim diğer rakiplerimizden en büyük farkımız elektrikli motosiklet kiralıyor oluşumuz.
+
+166
+00:31:55,843 --> 00:32:05,283
+Ayrıca motosikletlerde A ehliyeti yerine B ehliyetini tercih edecek şekilde motor sahibi olmamız bizi rakiplerimizin önüne de geçiriyor.
+
+167
+00:32:06,003 --> 00:32:19,844
+Ayrıca diğer rakitlerimizden gibi ofis, su ve gitmeye gerek kalmadan dakikalar içinde hızlı ve güvenilir bir şekilde kiralama işleminizi gerçekleştirebiliyorsunuz.
+
+168
+00:32:21,943 --> 00:32:31,703
+Burada biraz ticari kazancımızdan bahsetmek istiyorum. Proje kapsamında biz 4 yıllık bir ticari kazanç tahmini oluşturduk.
+
+169
+00:32:32,180 --> 00:32:53,960
+Burada birinci yılda, misli sayımızın 500 kişi olacağını tahmin ediyoruz. Ürün sayımız buna bağlı olarak 30 motor stres. Ürün fiyatımız ise ortalama 80 kuruş olacaktır. Bu hesaplamalara bakarsak birinci yıl tahmini cüromuz 3 milyon civarı olacak. O şekilde hesapladık.
+
+170
+00:32:54,483 --> 00:33:08,183
+İkinci yıl ise tahmini müsteriş sayımız 700 kişiye oluşacağını planlıyoruz. Ürün miktarımızı arttırarak 40 motor siklete çıkartacağız. Ürün fiyatımızı da 5 kurutu arttırarak 85 kurutu olarak hesapladık.
+
+171
+00:33:09,144 --> 00:33:20,903
+Dönem son tahmini cüromuz da yaklaşık 4 milyon olarak ortaya çıktı. Üçüncü yıl ise tahmini müsteriş sayımız 800 kişiye yükseleceğini hedefliyoruz.
+
+172
+00:33:21,428 --> 00:33:23,308
+Ürün mikrofonu da
+
+173
+00:33:24,723 --> 00:33:34,544
+45 motor siklete çıkacak. Ürün fiyatımız ise sabit kalarak 85 gruptan devam edeceğiz. Tahmini jüromuz yaklaşık 5 milyon olacak.
+
+174
+00:33:35,124 --> 00:33:44,903
+Dördüncü yıl ise müşteri sayımız 850 şeye ulaşacak. Ürün miktarımızı birazcık daha yükselterek 50 motor siklet düşünüyoruz.
+
+175
+00:33:44,903 --> 00:33:52,723
+Ortalama ürün fiyatımız da yine 5 gru taktırarak 90 grupla yılı kapatıp tahmini jüromuzla yaklaşık 7 milyon.
+
+176
+00:33:52,723 --> 00:33:56,223
+Bilim video olarak gözüksek, bu şekilde hesapladık.
+
+177
+00:33:57,463 --> 00:34:02,723
+Bizi dinlediğiniz için teşekkür ederiz. Eğer sorularınız varsa alabiliriz.
+
+178
+00:34:10,291 --> 00:34:21,112
+Teşekkürler arkadaşlar. Bir sonraki grup, 27 numaralı grup. Onlara geçelim. [öğrenci] ve [öğrenci].
+
+179
+00:34:22,271 --> 00:34:22,632
+Merhaba.
+
+180
+00:34:23,271 --> 00:34:24,492
+Buradayız hocam, merhaba.
+
+181
+00:34:25,032 --> 00:34:27,132
+Süper, tamam buyurun, sözü size bırakıyorum.
+
+182
+00:34:28,271 --> 00:34:31,452
+Şöyle bir ekran paylaşımına geliyorum hocam.
+
+183
+00:34:32,371 --> 00:34:47,951
+Merhabalar herkese. Ben [öğrenci]. Bugün size TÜPİTAK 1512 BİK kapsamında geliştirilmiş olduğumuz bilen kart projemizden bahsedeceğim. Projeden bahsetmeden önce kendimi tanıtmak isterim. Ben [öğrenci], [öğrenci].
+
+184
+00:34:48,271 --> 00:34:56,072
+[kişisel bilgi]. [kişisel bilgi].
+
+185
+00:34:57,112 --> 00:35:00,051
+Sunumdan bahsedecek olursak öncelikle bir içeriye gelelim.
+
+186
+00:35:00,051 --> 00:35:00,891
+Pardon.
+
+187
+00:35:04,652 --> 00:35:06,451
+Çok özür dilerim.
+
+188
+00:35:08,659 --> 00:35:25,699
+İçerikte projeyi tanıtıp amacını anlatacağım. Daha sonra hitap ettiğimiz kullanıcılar kimler bunlardan bahsedeceğiz. Yapılan pazar analizinden bahsedeceğiz. Daha sonra maliyet hesaplarından bahsedeceğiz. En sonunda rekabet yani rakiplerle karşılaştırmalardan bahsedeceğiz.
+
+189
+00:35:36,659 --> 00:35:42,460
+Bölünerek numaralandırıldı ve numaraların farklı renklere karşılık geldiği bir boyama sanıdır.
+
+190
+00:35:43,059 --> 00:35:45,579
+Biraz daha açıklayıcı olması için bir görselle açıklayacağım.
+
+191
+00:35:45,579 --> 00:35:53,380
+Yan taraftaki görseli görüyorsunuz. Sağ tarafta bizim müşteriden aldığımız bir görsel var. Biz bunu sol taraftaki hale çeviriyoruz.
+
+192
+00:35:54,039 --> 00:36:00,399
+Gördüğünüz gibi burada mesela farklı sayılar farklı renklere denk geliyor. Bu şekilde bir sistem yaptık.
+
+193
+00:36:01,268 --> 00:36:13,047
+Peki neden Bilengard? Bir kere yetişkin insanlar da refleks becerilerini geliştiriyor. Bu el ve göz koordinasyonu sağlıyor. Bu da tabii ki refleks becerilerini geliştiriyor. Stresi azaltmayı sağlıyor.
+
+194
+00:36:13,827 --> 00:36:23,228
+Şöyle duygu ve düşüncelerimizi bazen karşı tarafa aktarırken yanlış anlaşımalar olabiliyor. Ama burada tamamen kendi kendimize kaldığımız için özgürce ifade edebiliyoruz.
+
+195
+00:36:23,228 --> 00:36:28,288
+Ve bu da bizim stresi azaltmamızı sağlıyor. Konsantrasyon arttırıyor tabii ki.
+
+196
+00:36:29,364 --> 00:36:57,364
+Sonuçta dediğimiz şartlardan yani el ve göz koordinasyonu şartları işte bir odak gerektirmesi sebebiyle konsantrasyonu arttırıyor. Duygusal zekanın da artmasını sağlıyor. Bu nasıl oluyor? Bu da aslında beynin sağ logunu çalıştırıyor. Beynin sağ logu da hem yaratıcılık hem de işte duygusal zekanın olduğu bir log. Bu da duygusal zekanın artmasını sağlıyor. Aynı zamanda çocuklarda da işte sabrı arttırdığı, konsantrasyon, motivasyonu arttırdığını söyleyebiliriz.
+
+197
+00:36:57,364 --> 00:37:11,324
+Peki, ürünümüzde neler var? Üründe müşterinin isteği doğrultusunda istenilen resmi ya da hazır formatta elde ettiğimiz resmi sayılarla boyama tablosuna dönüştürüyoruz ve bunun bir tuval çıkısını alıyoruz.
+
+198
+00:37:12,644 --> 00:37:23,844
+Daha sonra 24 renk akrilik boya setimiz var ve 3 farklı uç tipine sahip bir fırça setimiz var. Örnek olarak buradan görebilirsiniz. Bu şekilde bir ürün veriyoruz.
+
+199
+00:37:24,947 --> 00:37:36,688
+Bu son resimde gördüğünüz bizim son çıktığımız, yani çıktık dalını boyandıktan sonraki halini görüyorsunuz burada da.
+
+200
+00:37:36,827 --> 00:37:43,887
+İşte tuval olarak çıktısını alıyoruz. Bu şekilde. Ben sunumun kendi mic'ı dinleyelim.
+
+201
+00:37:50,260 --> 00:37:53,579
+Merhabalar. Ekranımı paylaşıyorum.
+
+202
+00:37:54,200 --> 00:37:58,420
+Pardon, benim kapatmam lazım. Kapattım sanırım şu an. Kapatmadım mı?
+
+203
+00:37:58,440 --> 00:38:00,039
+Evet. Kapattım. Tamam.
+
+204
+00:38:02,079 --> 00:38:09,880
+Öncelikle hedef kitlemizden bahsetmek istiyorum. Pazarlama stratejimiz büyük oranda sosyal medya, özellikle Instagram.
+
+205
+00:38:09,880 --> 00:38:13,600
+Ne? Şey. Halk gözükmüyor.
+
+206
+00:38:14,320 --> 00:38:14,740
+Pardon.
+
+207
+00:38:16,579 --> 00:38:17,260
+Ben ağabeyim.
+
+208
+00:38:23,699 --> 00:38:25,079
+Şu an gözüküyor mu acaba?
+
+209
+00:38:25,399 --> 00:38:29,199
+Kaylaşıyor diyor ama benim, evet şu an gözüküyor. Kullanıcılarda kaldık.
+
+210
+00:38:29,199 --> 00:38:30,619
+Tamam.
+
+211
+00:38:35,764 --> 00:38:53,644
+Pazarlama stratejimiz büyük oranda sosyal medya, özellikle Instagram ve YouTube gibi platformlar üzerine planlandığı için bu platformları aktif olarak kullanan, hobi ve sanatsal aktiviteleri ilgi duyan bireyler hedef kitlemiz olarak bezirlenmiştir.
+
+212
+00:38:54,124 --> 00:38:59,644
+Ayrıca resim yapmak çocukların algı, beceri, yaratıcılık gibi kabiliyetlerinin yanı sıra,
+
+213
+00:39:00,179 --> 00:39:10,979
+Duygusal, sosyal eğitimlerine de katkı sağladığı için, 40-50 olan normal tuval boyutumuzun yanında, 20-25 boyutlarında çocuklara özel tablolarda hazırlıyoruz.
+
+214
+00:39:12,340 --> 00:39:17,460
+Dolayısıyla veliler ve ilkokul çağındaki çocuklarda hedef kitlemiz arasında yer almaktadır.
+
+215
+00:39:20,159 --> 00:39:21,963
+Bu alanda...
+
+216
+00:39:23,123 --> 00:39:39,963
+Pazar analizinde ülkemizde e-ticaret firmalarına altyapı sağlayan ve e-ticaret alanında otorite sayılan Ideosoft'un 2020 verilerine göre hobi sektörünün satış hacmi ve sipariş sayısı bir önceki yıla kıyasla büyük oranda bir artış göstermiştir.
+
+217
+00:39:40,903 --> 00:39:47,023
+Aynı rapora göre ülkemizde kişiselleştirilmiş ürünlere de büyük bir talep gösterilmektedir.
+
+218
+00:39:47,327 --> 00:39:52,627
+Bu yüzden ürünümüzün bu sektörde büyük bir potansiyele sahip olduğunu söyleyebiliriz.
+
+219
+00:39:54,627 --> 00:40:04,327
+Satış yeri olarak online marketleri, kendi web sitemize, çeşitli ticaret platformlarını edebiliyoruz.
+
+220
+00:40:05,047 --> 00:40:08,927
+Ayrıca kırtasiye ve marketlere de ürün sağlayacağız.
+
+221
+00:40:12,340 --> 00:40:34,619
+Tahmini müşteri sayımız ilk yıl için 1800 olarak belirlenmiştir. Bu 1800 müşteriye 2400 ürün satmayı planlıyoruz. Ortalama 165 liradan bir yıllık tahmini ciro mu 39600 lira olarak belirlenmiştir.
+
+222
+00:40:42,099 --> 00:40:48,159
+Aramızdaki en büyük farkın kişiselleştirilmiş tablolar ve teslimat süreleri olduğu anlaşılmaktadır.
+
+223
+00:40:50,039 --> 00:40:53,779
+Kişiselleştirilmiş tabloların bu sektördeki öneminden bahsetmiştik.
+
+224
+00:40:55,099 --> 00:41:04,539
+Ürünler özellikle bir hediye olarak sipariş edildiğinde, müşteriye bir an önce ulaşması gerektiği için bu alanda büyük bir avantaj sağlıyoruz.
+
+225
+00:41:08,884 --> 00:41:11,724
+Evet, anlatacaklarımız bu kadar. Teşekkür ederiz.
+
+226
+00:41:15,539 --> 00:41:23,559
+Peki, teşekkürler arkadaşlar. Bir sonraki grup, 30 numaralı grup [öğrenci] ve [öğrenci]. Burada mısınız arkadaşlar?
+
+227
+00:41:24,939 --> 00:41:30,880
+Buradayım hocam. Yalnız [öğrenci]'in mi interneti gitmişse bir sorayım tekrar.
+
+228
+00:41:38,579 --> 00:41:39,840
+Bir saniye bekleyeceğim hocam.
+
+229
+00:41:47,443 --> 00:41:48,864
+[öğrenci] sıra bizde.
+
+230
+00:41:59,827 --> 00:42:00,407
+Sonuç?
+
+231
+00:42:01,427 --> 00:42:02,268
+Bağlanıyor hocam hemen.
+
+232
+00:42:03,568 --> 00:42:16,407
+Arkadaşlar, böyle bir sistematik yok. Sunum saati, sunum takvimi, günü her şeyi belli. Bunu burada hazır oluyor olmanız lazım. Böyle bir yaklaşım yok. Sona kaldınız, bekleyeceksiniz. [öğrenci] burada mı?
+
+233
+00:42:18,467 --> 00:42:18,988
+Peki hocam.
+
+234
+00:42:20,447 --> 00:42:21,507
+Evet hocam, buradayım.
+
+235
+00:42:22,068 --> 00:42:23,208
+Lütfen, sıra sende, buyur.
+
+236
+00:42:23,807 --> 00:42:24,407
+Tamam, bekle.
+
+237
+00:42:24,748 --> 00:42:25,488
+Hocam, merhaba.
+
+238
+00:42:25,488 --> 00:42:26,108
+Teşekkür ederim.
+
+239
+00:42:27,443 --> 00:42:29,224
+[öğrenci] ben hocam.
+
+240
+00:42:33,492 --> 00:42:34,731
+Hocam sesim geliyor mu?
+
+241
+00:42:35,311 --> 00:42:35,712
+Geliyor.
+
+242
+00:42:36,752 --> 00:42:38,932
+Ya internetim bir an kesildi de.
+
+243
+00:42:40,152 --> 00:42:41,152
+Tamam arkadaşlar.
+
+244
+00:42:41,992 --> 00:42:43,712
+Şu an [öğrenci]'le devam edeceğiz.
+
+245
+00:42:43,972 --> 00:42:44,231
+Tamam.
+
+246
+00:42:44,231 --> 00:42:46,132
+Tamam peki.
+
+247
+00:42:50,835 --> 00:42:52,375
+Ekran görünüyor mu şu anda?
+
+248
+00:42:54,875 --> 00:42:55,375
+Evet.
+
+249
+00:42:57,135 --> 00:43:00,135
+Merhabalar herkese, umarım hepiniz iyisinizdir.
+
+250
+00:43:05,364 --> 00:43:06,463
+Buyur, sendeyiz.
+
+251
+00:43:10,164 --> 00:43:30,684
+Uygulamamın ismi Akıllı Dolap. Günümüzde sosyal medyanın da etkisiyle beraber kullanıcıların, yani bizim normal hayatımızda özellikle çalışan insanların çok muzdarip olduğu bir konu var. Alışverişe çıkamama ve online alışveriş yapama problemi. Ben bununla ilgili olarak proje geliştirmek istedim.
+
+252
+00:43:32,467 --> 00:43:46,467
+[kişisel bilgi]. [kişisel bilgi].
+
+253
+00:43:49,807 --> 00:43:57,188
+Projenin tanımı, akıllı dolap, hava durumu ve iş programına göre giyim kombine oluşturma ve mobil uygulama olarak hizmet verecek.
+
+254
+00:43:57,523 --> 00:44:11,123
+Bu uygulama sayesinde kullanıcı, mobil uygulama üzerinden alışverişe çıktığında, bulunduğu zamanın modasına ve bulunduğu coğrafi bölgenin hava şartlarına uygun, uyumlu kombinlerin oluşturulması ve öne sürülmesi adına yardımcı asistanlık hizmeti verecek.
+
+255
+00:44:11,764 --> 00:44:17,804
+Aynı zamanda günümüzde popüler olan sanal gerçeklik ile seçilen kıyafetler kullanıcının üzerinde gözükebilir durumda olacak.
+
+256
+00:44:18,324 --> 00:44:34,844
+Uygulamanın aynı zamanda fiziksel hali olacağını düşünüyorum. Gelişmekte olan 5G teknolojisiyle birlikte kullanıcının ihtiyaçlarına göre dolabında olan ürünler ile günlük 3 adet kombin yapacak ve kullanıcı dolabını açtığında bu kombinler ile karşılaşacak ve günlük kombin aslında hazır olmuş olacak.
+
+257
+00:44:34,844 --> 00:44:45,324
+Bu bizim akşamdan hazırlamaya çalıştığımız ve genelde sosyal yaşantımızdan ödün vererek yaptığımız şey için oldukça verimli olacağını düşünüyorum.
+
+258
+00:44:46,003 --> 00:44:58,923
+İş fikriyle oluşturulacak ürün ve hizmetler kısmında ise hava durumu, günlük kombin önerileri, moda analizleri, kullanıcının günlük programı ve kullanıcı yaparak kendi alışverişlerinde kişiye özel indirimler sunacak.
+
+259
+00:45:00,244 --> 00:45:22,604
+Bu uygulamanın özellikleri ise, günümüz dünyasında oluşan pandemi ve iş yoğunlukları sebebiyle insanlar online alışverişe yöneldi. Bu yönelimlerde insanlar aldıkları ürünleri ya beğenmiyor ya da kendilerini olup olmayacağını bilmiyorlar. Bu nedenle yaptığımız proje kapsamında hem kullanıcılar tereddüt etmeden alışveriş yapabiliyor olacak, hem de kargo şirketlerinde oluşan iade yoğunluğu azalmış.
+
+260
+00:45:23,251 --> 00:45:29,791
+Uygulama üzerinde markalar ile anlaşma yapıldığı takdirde ürünlerini daha kolay bir şekilde satılabilir konumda olacak.
+
+261
+00:45:30,492 --> 00:45:38,592
+Kullanıcı eğer entegre dolap sistemini satın alırsa, giyeceği kıyafetleri seçmek için saatlerini harcamak zorunda kalmayacak, ötü yapmaktan kullanacaklar.
+
+262
+00:45:39,271 --> 00:45:42,672
+Ben bu entegre dolap sistemini biraz açmak istiyorum.
+
+263
+00:45:42,672 --> 00:45:45,492
+Bu entegre dolap sistemi olarak bahsettiğim konu,
+
+264
+00:45:45,907 --> 00:45:57,788
+Dolabımızın içerisinde bir entegre sistem yerleştirilecek ve bunda bir kamera sistemi ve buharlı bir ütü tankı gibi bir sistem olacak.
+
+265
+00:45:57,788 --> 00:46:13,907
+Ve günlük olarak bu buharlı ütü ile birlikte sıcak hem o sıcağın verdiği etkiyle üzerinde olan virüsleri yok etmiş olacak. Hem kırşıklıkları azaltmış olacak. Hem de o günümüz şartlarına uygulayacak.
+
+266
+00:46:13,907 --> 00:46:21,707
+Uygun olarak dolabımızda bulunan kıyafetlere göre yapay zekamız bize uygun üç adet kombin üretmiş olacak.
+
+267
+00:46:23,188 --> 00:46:30,448
+Ticari beklentimiz ve sürdürülebilirlikte ise tasarlanma makalı dolap uygulaması, tüm kullanıcılara ücretsiz olarak sunulacak,
+
+268
+00:46:31,188 --> 00:46:42,128
+keşitli reklam ve sponsorluk anlaşmaları yapılması planlanmakta, uygulama ile bütünleşik olarak sistem satın alındığında kullanıcıların uygulama üzerinde VIP konuda olacak ve reklamlarından muhasıl olacak.
+
+269
+00:46:42,568 --> 00:46:49,428
+Uygulamanın çalışan kadınlar ve modaya ilgisi olan her insanın kullanacağını düşünerek tasarlanıp içerikler oluşturulacaktır.
+
+270
+00:46:49,619 --> 00:46:52,460
+Bu nedenle popülerliğinin yüksek olması beklenmektedir.
+
+271
+00:46:54,280 --> 00:47:01,840
+Rekiplerimiz, potansiyel kullanıcılarımıza sunacağımız hizmet ile birlikte değişen yaşam sitiline uygun bir uygulama olmasını hedeflemekteyiz.
+
+272
+00:47:02,320 --> 00:47:07,500
+Bu kapsamda yurt dışında bağlan Smart Wardrobe projesinde gelişmiş halini yerli olarak yapmak istiyoruz.
+
+273
+00:47:08,119 --> 00:47:13,340
+Rekiplerimizden farkımız ise gelişmekte olan 5G teknolojisini kullanarak kullanıcılara hizmet verebiliyor olmak.
+
+274
+00:47:14,003 --> 00:47:26,744
+Burada ise bir timeline oluşturduk ve bu timeline üzerinde kaç yılda nereye kadar gelebileceğimiz konusunda bir düzen yapmaya çalıştık.
+
+275
+00:47:27,064 --> 00:47:33,064
+Yaklaşık yazılım ile birlikte tüm uygulamanın baştan sona iki yıl süreceğini düşünmekteyiz.
+
+276
+00:47:33,463 --> 00:47:40,884
+Daha sonrasında iki yılın sonunda uygulama açık olacak ve altı ay boyunca uygulama tamamıyla VIP konumunda ücretsiz olarak.
+
+277
+00:47:41,331 --> 00:48:03,251
+servis edilecek. Daha sonrasında da kullanıcılar bu VIP konuma geçmek istediklerinde 6 ay sonra belirli cüzi bir rakam uygulanacak. Bu cüzi rakamın bir kısmı belirli derneklere bağışlanacak diye düşünüyorum. Dinlediğiniz için de teşekkür ederim. Sormak istediğiniz soru varsa da alabilirim.
+
+278
+00:48:10,516 --> 00:48:14,596
+Soru yok galiba. Bir sonraki grup [öğrenci] ve [öğrenci].
+
+279
+00:48:15,996 --> 00:48:17,816
+Merhaba hocam, selamlar, buradayız.
+
+280
+00:48:18,536 --> 00:48:20,396
+Tamam, buyurun, söz sizin.
+
+281
+00:48:23,816 --> 00:48:25,536
+Herkese merhaba öncelikle.
+
+282
+00:48:45,588 --> 00:48:51,408
+[kişisel bilgi].
+
+283
+00:48:52,648 --> 00:49:00,588
+[kişisel bilgi].
+
+284
+00:49:01,868 --> 00:49:11,268
+Bugün size genişletilmiş polis tren, yani parantez içinde buna daha sonra kısaca EPS diyeceğiz, agrega içeren beton teknolojilerinden bahsedeceğim.
+
+285
+00:49:11,891 --> 00:49:20,871
+Bu projeyi yapmaktaki amacımız genel olarak ısı yalıtımı sağlamak. Yani ilk amacımız bu diyelim.
+
+286
+00:49:24,628 --> 00:49:32,408
+Ama şimdi bu konulara başlamadan önce size kısaca bir betondan ve betonun muhteviyatından bahsetmek istiyorum.
+
+287
+00:49:33,188 --> 00:49:39,408
+Betonun içerisinde neler var? Öncelikle bundan başlayalım. Kısaca sizi sıkmadan anlatmaya çalışacağım.
+
+288
+00:49:40,108 --> 00:49:46,108
+Betonun içerisinde çimento var, agrega var. Agrega dediğimiz şey aslında taş.
+
+289
+00:49:46,108 --> 00:49:51,108
+Yani önceden bunlar doğal olarak toplanıyordu. Artık...
+
+290
+00:49:51,503 --> 00:50:09,183
+Tesislerde kırılıyor. Sonra mineral katkılar var ve bir de su var. Suda bağlayıcı olarak bulunuyor. Betonu genel olarak hepiniz biliyorsunuz. Konutlarda, barajlarda, yollarda, havalimanlarında birçok yerde beton kullanıyoruz.
+
+291
+00:50:09,183 --> 00:50:18,743
+Yani daha birçok insanın bilmediği aslında çok geniş alanı olan bir yapı malzemesi ve bütün dünyaca kabul görmüş bir yapı malzemesi beton.
+
+292
+00:50:19,795 --> 00:50:26,475
+Şimdi diyeceksiniz bu görsel ne? Görsel de şöyle aslında, beton yapmak pasta yapmaya çok benziyor.
+
+293
+00:50:27,315 --> 00:50:37,095
+Betonların çok fazla çeşidi var. Yani suda yüzen beton var, çok sağlam betonlar var ama aslında yaptığımız şey hep aynı.
+
+294
+00:50:38,375 --> 00:50:46,495
+Bileşenleri doğru bir şekilde karıştırmak. Bunun haricinde beton yapmak aslında çok kolay. Sadece doğru yerde.
+
+295
+00:50:47,027 --> 00:50:49,307
+Doğru bileşeni koymamız gerekiyor.
+
+296
+00:50:51,507 --> 00:50:56,507
+Şimdi bizim yaptığımız peki betonda bizim farklı olarak yaptığımız şey ne?
+
+297
+00:50:57,507 --> 00:51:03,467
+EPS yani agregaya bizim betonun içine koyduğumuz taşların içine EPS koymak.
+
+298
+00:51:03,687 --> 00:51:05,767
+EPS dediğim şey de polistiren.
+
+299
+00:51:06,164 --> 00:51:10,264
+Dediğiniz maddeye artık EPS diyeceğim sizi bunaltmamak için.
+
+300
+00:51:10,784 --> 00:51:21,204
+Bir petrol atığı ve bu malzeme şu an zaten hali hazırda bütün dünyada yalıtım malzemesi olarak, ısı yalıtım malzemesi olarak kullanılan bir malzeme.
+
+301
+00:51:21,524 --> 00:51:25,024
+Ve bu malzemenin ısı yalıtımı çok yüksek.
+
+302
+00:51:28,284 --> 00:51:32,564
+Projemiz hakkında biraz daha şöyle genel bir bilgi vereyim.
+
+303
+00:51:33,364 --> 00:51:58,703
+Tabii ki en büyük özelliğimiz ısı yalıtımı dedik. Bunun yanında çevre dostu olmayı planlıyoruz. Neden planlıyoruz? Aslında doğrudan ve dolaylı olarak çok fazla etkiliyor bu bizim projemizi. En basitinden biz beton bloklarımızı hafiflettiğimiz zaman içerisine EPS koyarak bu bizim beton harme kesitlerimizi azaltacak hesaplarda bulunan.
+
+304
+00:51:59,380 --> 00:52:12,579
+Temel kalınlığımızı azaltacak ve benzeri birçok kolonların, kilişlerin kesitlerini azaltacağı için daha az kötü malzeme dünyaya yaymış olacağız. Bu şekilde çevre dostu olacağız.
+
+305
+00:52:13,579 --> 00:52:15,699
+Biraz önce söylediğim gibi hafif bir malzeme.
+
+306
+00:52:16,211 --> 00:52:36,332
+Yine şimdi kesitleri azalttığımız için aynı zamanda da düşük maliyet. Yani bir inşaata 100 para harcıyorken bunu kullandığımda 99 para harcıyor olabileceğim. Ve aynı zamanda hafif bir malzeme olduğu için sahada işlenilebilirliği çok yüksek olacak, işçiliği ucuz olacak.
+
+307
+00:52:40,211 --> 00:53:00,612
+Söylediğim gibi bizim aslında yaptığımız tek şey sol taraf normal beton. İçerisinde çimento var, agrega var, su var, kimyasal ve mineral katkılar var. Bu genel tanım değişebilir bunlar. Yani dediğim gibi yapmak istediğimiz betona göre değişir bunlar. Bizim yaptığımız tek şey agreganın yanında biraz EPS koymak.
+
+308
+00:53:03,764 --> 00:53:21,324
+EPS bize ne sağlar? Biraz daha üstünden geçmek istiyorum. Normalde bizim yapı malzemelerinde kullandığımız betonlarda bu 0.63 lambda dediğim aslında bir malzemenin ısıyı ne kadar ilettiğini anlatan değer.
+
+309
+00:53:22,244 --> 00:53:29,084
+Isıyı ne kadar fazla iletiyorsa o kadar az yalıtımlı demek oluyor. Bu değer ne kadar düşükse bizim yalıtımımız o kadar yüksek.
+
+310
+00:53:29,456 --> 00:53:41,336
+Normalde bu 0.63 iken biz pastamızdaki miktara göre, o miktarlarla oynayarak 0.17 ile 0.56 arası değiştirebiliyoruz bu değerleri.
+
+311
+00:53:45,523 --> 00:54:09,663
+Onun haricinde yine biraz önce bahsettim. Rakiplerine göre bu %25 tabii ki de değişecektir. Ben buraya araştırmalarım sonucunda ortalama bir değer yazdım. Ama yapacağımız iş hafif bir iş olacağı için bu bizi kâra sokacaktır. Yani hem sahada bu ürünü sattığımız adam kazanacak hem de biz kazanıyor olacağız.
+
+312
+00:54:12,596 --> 00:54:33,296
+Biraz da şeyden bahsetmek istiyorum, tamam güzel, çok güzel ama nasıl yapacağız biz bu işi? Şöyle bir şey planladık [öğrenci] Bey'le beraber. İlk başta biz bu işin ARGE aşaması için, yani bizim çalışmalarımız için Yıldız Teknik Üniversitesi'nin İnşaat Mühendisliği Yapı Malzemeleri Anabilim Dalı'ndan danışmanlık alacağız.
+
+313
+00:54:33,907 --> 00:54:50,067
+Aynı zamanda yine Teknopark'ı ve bölümün laboratuvarlarını kullanılabiliyor olacağız. Tabii ki de belli paralar karşılığında. Bu aşamada biz deneylerimizi yapacağız. Deneylerden birazdan bahsedeceğim.
+
+314
+00:54:53,396 --> 00:55:05,596
+Şimdi ben buraya üç tane deney yapacağız yazdım. Bu aslında bizim minimum deney sayımız olabilir ve biz bu deneydeki numunelerimizi değiştirme, esnetme özgürlüğüne sahibiz.
+
+315
+00:55:05,736 --> 00:55:17,056
+Çünkü atıyorum beton yapmak, deneme yanılma işi, özellikle işin keşfi kısmında. Yani bir reçete çıkartmanız gerekiyorsa ilk başta deneme yanılma yapmanız gerekiyor.
+
+316
+00:55:17,056 --> 00:55:21,396
+O yüzden numune sayılarımızı değiştirebileceğiz. Gerekirse deney sayılarımızı değiştirebileceğiz.
+
+317
+00:55:21,396 --> 00:55:36,736
+Hızı da değiştirebileceğiz. Ve biz bu çalışmaların sonunda, Yıldız Teknik Üniversitesi Laboratuvarı'nda yaptığımız çalışmaların sonunda bizim için başarılı proje demek aslında bizim için aşağıda yazdığım hafiflik, en az ısı geçirgenliği ve sağlamlık.
+
+318
+00:55:36,736 --> 00:55:46,736
+Bunların hepsini birden sağlayabilen, en çok sağlayabilen reçete bizim ürünümüz olacak. Biz bu reçeteyi, o kağıt parçasını satıyor olacağız aslında.
+
+319
+00:55:48,532 --> 00:56:10,352
+Başta da söylediğim gibi, beton yapmak, pasta yapmak gibidir. Yani sadece doğru yerde, doğru zamanda doğru karışımı elde edebilmek önemli. Biz müşterinin ne istediğine göre kendimizi bu sayede şekillendirebiliyor olacağız. Sözü [öğrenci] Bey bırakıyorum. Teşekkür ederim dinlediğiniz için.
+
+320
+00:56:12,467 --> 00:56:32,207
+[kişisel bilgi]. [kişisel bilgi]. [kişisel bilgi].
+
+321
+00:56:38,867 --> 00:56:44,547
+Arkasından da biraz finansal hakkında bilgi vereceğim, projenin finansal bilgileri hakkında.
+
+322
+00:56:45,647 --> 00:56:53,127
+ARGE çalışmaları yapacak olan şirketimizin, [öğrenci] Bey'in de söylediği gibi, Yıldız Teknik Üniversitesi Teknoparkı'nda kurulması planlanıyor.
+
+323
+00:56:55,007 --> 00:57:04,707
+ARGE çalışmaları biz kendimizce gerçekleştirilecek, üniversite personelinden de faydalanarak, üniversite laboratuvarlarında gerçekleştirilecek.
+
+324
+00:57:05,235 --> 00:57:12,235
+Çıkacak olan teknoloji ile üretim müşteri firma tarafından gerçekleştirilecek.
+
+325
+00:57:12,555 --> 00:57:23,535
+Teknolojinin satılacağı üretici firma, projenin son aşamasında gerçekleştirilecek ürün tanıtım kampanyası sürecinde müzakere edilecek firmalar arasından seçilecektir.
+
+326
+00:57:24,455 --> 00:57:27,135
+Beş iş paketi tanımladık.
+
+327
+00:57:27,135 --> 00:57:29,515
+Birinci paket işletmenin kurulması.
+
+328
+00:57:31,572 --> 00:57:58,731
+Beş paketin tamamını iki yıla yaygın bir şekilde toplamda 24 ay olacak şekilde planladık. Birinci paket ilk üç ayı kapsayacak. Burada Teknokent'te yer bulunması, marka isminin bulunması, işletmenin resmi kuruluş işlemleri, ofis malzemesi alımı vesaire olacak. İkinci pakette ihtiyaç analizi ve kurulum gerçekleştirilecek. Burada RG sürecinin planlaması kritik önem taşıyor.
+
+329
+00:57:59,572 --> 00:58:18,092
+En önemli paketimiz üçüncü paket. RG araştırma geliştirme yapacak bir şirket olarak on dört aylık süreci araştırma geliştirme için ayırdık. Burada ilgili laboratuvarla anlaşılması, araştırma takımından oluşturulması, kullanılacak beton malzemenin tespit edilmesi.
+
+330
+00:58:18,675 --> 00:58:35,135
+Ve tespit edilen malzemenin tedarikçi firmalarının bulunması vs. Ve arkasından denemeler, deneyler 3 deney olarak ve bunlar sonucunda çıkacak numune sonuçlarının elde edilmesi ve kayıt altına alınması şeklinde plan yaptık.
+
+331
+00:58:35,615 --> 00:58:40,235
+Ve sonucunda en başarılı numunenin prototipinin üretilmesi hedefleniyor.
+
+332
+00:58:46,675 --> 00:59:09,596
+Ürünün patentlemesi işlemleri gerçekleştirilecek ve arkasından bir pazar araştırması neticesinde yapılacak ürün tanıtım kampanyası çerçevesinde tedarikçi bir firma ve satış sözleşmesinin yapılması, ürünün bu firmaya devriyle ilgili hukuki süreçlerin tamamlanması planlanıyor.
+
+333
+00:59:10,463 --> 00:59:19,783
+Bir sonraki slide'ımızda genel olarak finansal maliyetlerimizin maliyet kalemlerini genel olarak verdik.
+
+334
+00:59:20,344 --> 00:59:23,163
+2022 ve 2023 yılları için.
+
+335
+00:59:24,103 --> 00:59:28,463
+Buradaki en büyük maliyet kalemimiz %70 işini oluşturuyor bütün maliyetimizin.
+
+336
+00:59:29,103 --> 00:59:31,763
+Araştırmacılar dahil olmak üzere personel.
+
+337
+00:59:32,364 --> 00:59:38,043
+Burada kritik olan araştırmacılar, doğru araştırmacıların tespit edilmesi ve araştırma takımının oluşturması.
+
+338
+00:59:38,463 --> 00:59:52,163
+Buna ilave olarak bir de danışmanlık hizmet alımı öngörülüyor. Beton teknolojilerinde uzman bir müşahver desteği alınacak. Bu da %25 gibi bir şeyi kapsıyor maliyetin.
+
+339
+00:59:52,163 --> 01:00:05,043
+Diğer maliyetler, alet, teçhizat, yazılım, yayın, diğer malzemeler ve genel giderler şeklinde planlandı ve toplam 2 milyon TL'lik bir maliyet kalemi çıkartıldı.
+
+340
+01:00:06,099 --> 01:00:31,480
+Bunun dışında [öğrenci] Bey zaten teknik bilgilerle ilgili, teknik detaylarla ilgili ayrıntılı bilgi verdi. Bununla ilgili bir literatür taramamız da oldu. Bir sonraki slide'da son çıkan makalelere yer veriliyor. Bunun dışında şu an için soru gelirse sorulara göre cevap ve ayrıntılı cevap verebileceğiz. Teşekkürler dinlediğiniz için.
+
+341
+01:00:32,532 --> 01:00:33,312
+Teşekkür ederiz.
+
+342
+01:00:39,923 --> 01:00:48,043
+Evet, sanırım soru yok. O zaman bir sonraki gruba geçelim arkadaşlar. [öğrenci] ve [öğrenci], burada mısınız?
+
+343
+01:00:50,603 --> 01:00:53,683
+Merhabalar hocam, buradayız.
+
+344
+01:00:54,344 --> 01:00:56,063
+Tamam, buyurun söz sizin.
+
+345
+01:00:58,884 --> 01:01:00,703
+Ekran paylaşımı yapıyorum şu an.
+
+346
+01:01:12,340 --> 01:01:13,760
+Ekranı görebiliyor musunuz şu an?
+
+347
+01:01:15,340 --> 01:01:16,240
+Evet, geldi ekran.
+
+348
+01:01:17,200 --> 01:01:19,480
+Öncelikle merhaba hocam, arkadaşlar merhaba.
+
+349
+01:01:28,520 --> 01:01:31,300
+Genel işlevleriyle sizlere bunları tanıtmak istiyoruz.
+
+350
+01:01:32,240 --> 01:01:35,240
+İsmim [öğrenci], takım arkadaşım [öğrenci].
+
+351
+01:01:35,648 --> 01:01:45,048
+[kişisel bilgi]. Profesyonel iş hayatıma, vantaj kirmetindeki taşımacılığında bilgi teknoloji uzmanı olarak devam etmekteyim.
+
+352
+01:01:46,988 --> 01:01:59,148
+[kişisel bilgi]. [kişisel bilgi]. [kişisel bilgi].
+
+353
+01:03:23,347 --> 01:03:32,307
+Aynı zamanda da daha uygun fiyatlara daha kısa zamanda ulaşmasını sağlıyor. Açık arttırmaya örnek gösterebilecek, bu açık arttırmalara da örnek gösterebilecek bir uygulama.
+
+354
+01:03:32,788 --> 01:03:40,288
+Sıfır ve ikinci el olarak alıcının istediğine göre verilen ilanlara bu ürüne sahip ya da muadil bir ürüne sahip kişilerce teklifler verilebilecek.
+
+355
+01:03:41,708 --> 01:03:42,708
+Uygulama özellikleri
+
+356
+01:03:43,380 --> 01:03:51,539
+Unutulmuş veya kullanılmayan eşyaları, alıcı taleplerine istinaden yeniden işlevsel hale geleceği uygun satış platformu oluşturulmuştur.
+
+357
+01:03:51,960 --> 01:04:00,519
+Alıcının istediği ürün bazında, ilan verdiği fiyat aralığında gereksiz pazarlık diyaloglarına son verilerek daha hızlı hizmet ortamı oluşturulmuştur.
+
+358
+01:04:00,960 --> 01:04:04,739
+Anlaşmalı kargo şirketleriyle, barko sistemi üzerinden satıcılar,
+
+359
+01:04:05,172 --> 01:04:24,512
+İçin kolay kargolama hizmeti sunulmaktadır. Konum hizmetlerinden yararlanarak, sim kartlarla entegre olmuş bir şekilde alıcı ve satıcının daha rahat karşılaşması için çift taraflı pop-up bilgilendirme mesaj uygulama tarafından otomatik olarak gönderiliyor.
+
+360
+01:04:25,588 --> 01:04:45,768
+Uygulama hedeflerimiz, içerik yönetimi yetenekleri, promosyon ve indirim kodu araçları, kullanım kolay bir ödeme yöntemi, arama motoru, optimize edilmiş kod ve düzen, raporlama araçları, entegre bir blok veya makale bölümü, e-posta pazarlama entegrasyonu, çoklu ödeme seçenekleri, platform ölçeklendirme yeteneği.
+
+361
+01:04:46,768 --> 01:04:50,548
+[öğrenci] devam edebilirsin. Teşekkür ederim.
+
+362
+01:05:09,884 --> 01:05:14,623
+Bu şirketlerden farklarımızı anlatacağım size.
+
+363
+01:05:16,275 --> 01:05:33,655
+Alıcının ilan vermesi üzerine burada satıcıyı alıcıya ulaştırıyoruz. Aynı zamanda kripto parayla ödeme imkanı sunuyoruz. Alıcı ve satıcının birbirleriyle bellenen mesafe içerisinde olması halinde ufak bir bilgilendirme ekranında mesaj gönderiyoruz.
+
+364
+01:05:35,795 --> 01:05:52,035
+Kısa, orta, uzun vadedeflerimizden bahsedecek olursak, bir yıl içerisinde gerçekleştireceğimiz tanıtım hizmetleriyle sektörde tanınmak istiyoruz. Yine bir yıl içerisinde müşteri memnuniyetimiz %95 ve üzeri seviyeye gelmesini planlıyoruz.
+
+365
+01:05:52,724 --> 01:06:10,304
+İki yıl içerisinde ise aktif kullanıcı sayımızın 1 milyon üzeri seviyeye gelmesini bekliyoruz. Yine iki yıl içerisinde havayolu ve toplu taşıma şirketleriyle anlaşıp reklam yapmak istiyoruz. Beşinci yıl sonunda da yurt dışında faaliyet göstermek istiyoruz.
+
+366
+01:06:13,108 --> 01:06:41,108
+Geçebilir miyiz? İç zaman çubuk grafiğimizden bahsedecek olursam, burada ilk iki ayımız işletme kuruluşu ve analiz işlemleriyle gerçekleşecek. Sonraki altı ayımız mobil uygulama ve web sitesinin geliştirilmesi işlemleriyle gerçekleşiyor. Altıncı işlemimiz olan donanım işleminde birazcık güvenlik ürünü ve yazılımlarına önem vermek istediğimiz için burayı birazcık daha uzun tuttum.
+
+367
+01:06:41,108 --> 01:06:49,648
+Sonrasında müşteri ilişki yeri yöntemi ve son testten sonra ürünümüzü pazara sunmayı planlıyoruz.
+
+368
+01:06:50,908 --> 01:06:55,388
+Bizi dinlediğiniz için teşekkür ederiz. Sormak istediğiniz soruları cevaplayabiliriz.
+
+369
+01:07:07,411 --> 01:07:14,072
+Teşekkürler arkadaşlar. Bir sonraki gruba geçeceğiz. 40 numaralı grup. [öğrenci].
+
+370
+01:07:21,108 --> 01:07:26,008
+Merhaba hocam. Buradayım hocam. Evet, sendeyiz.
+
+371
+01:07:33,523 --> 01:07:36,383
+Ekran, böyle şu an olacağım şu an.
+
+372
+01:07:44,947 --> 01:07:51,027
+Merhaba hocam, merhaba arkadaşlar. [öğrenci] arkadaşımızla beraber güvenci işler imzadan bahsedeceğiz.
+
+373
+01:07:51,635 --> 01:08:00,356
+[kişisel bilgi]. [kişisel bilgi]. [kişisel bilgi].
+
+374
+01:08:01,476 --> 01:08:12,096
+Öncelikle kısaca dijital imzadan bahsedersem, dijital imza elektronik ortamda imza yerini kullanabilen yasal kimlik doğrulama sistemidir.
+
+375
+01:08:12,096 --> 01:08:19,095
+Teknolojinin gelişmesiyle beraber, kağıttan daha çok dijital ortama geçmekle beraber bu alanda da...
+
+376
+01:08:19,636 --> 01:08:23,736
+Bu imkanı dijital olarak sunmaktayız.
+
+377
+01:08:24,340 --> 01:08:49,000
+Tabii ki burada bazı eksiklikler, noksanlar ya da farklı şekilde çalışma alanları mevcut. Biz bu projede dijital imzaya ek olarak güvenli olması açısından iris veya parmak okuyucu şeklinde iki tane alternatif olması yönünde de bazı ek, alternatifler ekledik. Bunun üzerine bu projeyi geliştirdik.
+
+378
+01:08:49,587 --> 01:09:02,448
+Dijital imza 28 Ekim'de dijital imzaya izin veren tüketici halkları yönetimliğinde resmi gazetede yayınlanmıştır. Zaten şu anda da bazı firmalar bunu yasal olarak yürütmektedir.
+
+379
+01:09:04,051 --> 01:09:10,031
+Elektronik ortamda imza gerektiren tüm işlemlerin sağlanması için oluşturacak bir sistemdir.
+
+380
+01:09:10,031 --> 01:09:19,391
+Pratik, hızlı ve kolay kullanımın sayesinde hem kullanıcı dostu hem de güvenlik açısından diğer sistemlerden daha sağlıklı ve güvenli bir uygulama olarak görülüyor.
+
+381
+01:09:19,811 --> 01:09:24,191
+Henüz tam yaygın değil ama daha ilerleyen dönemlerde yaygın olacağı kesin.
+
+382
+01:09:26,579 --> 01:09:33,500
+Avantajları nedir? Tabii ki de öncelikle evden çıkmadan imza gerektiren tüm işlemleri yapabilmek adına oluşturulmuştur.
+
+383
+01:09:35,283 --> 01:09:45,083
+Aynı zamanda yapılan işlemler sırasında oluşabilecek kişisel veri eksikliklerinin ve yanlışlarının kolayca tespit edilebilmesi amaçlanmıştır.
+
+384
+01:09:45,863 --> 01:10:01,144
+Aynı zamanda mobil imza, ıslık imza ile hukuki geçerliliği olan elektronik ortamda işlem yapılmasını sağlayan bir servis olması nedeniyle tabii ki de bahsettiğim gibi güvenlik önemlerinin eklenmesi ihtiyacını doğurmuştur.
+
+385
+01:10:03,123 --> 01:10:13,543
+Bunun haricinde imkan sağlayan sektörün sağlanması bu anlamda da bu ihtiyacı doğurmuştur aynı zamanda.
+
+386
+01:10:14,068 --> 01:10:32,427
+Evrak kaybama riskinin azaltılması da bu alanda önemli bir ihtiyaç. Günümüzde çok fazla veri olması, çok fazla işlem yapılması ve bunun evrakları taşıması, bunun saklanması vesaire oluşan zorluklar bizi dijital dünyaya bir nevze daha itmekte.
+
+387
+01:10:32,427 --> 01:10:39,827
+Tabii ki bununla beraber aşırılaması, sorunun çözülmesi, dijital ortama geçmekle beraber bu da amaçlanıyor.
+
+388
+01:10:42,068 --> 01:10:47,307
+Tersiye masraflarının önlenmesi. Bu da önemli bir detay aynı zamanda.
+
+389
+01:10:48,916 --> 01:11:13,716
+Diğer önemli bir konu da tabii ki de kişiye özel evlatların ve kimlik fotokollerinin alınmasının engellenmesi amaçlanmıştır. Burada gittiğimiz herhangi bir telefon bayisinde bu gibi tehlikelerle karşılaşabiliriz ki bunun olduğu durumlarda mevcut. Dijital ortamda bunun tabii ki de biraz önüne geçilmiş oluyor.
+
+390
+01:11:15,507 --> 01:11:35,907
+Neden? Şu şekilde açıklayabilirim. Özel bir belge sahte olarak düzenlenip kullanılması, özel bir belgenin başkalarını aldatılacak şekilde değiştirerek kullanılması, sahte olduğunu bilerek özel belge kullanılması, bu nedenle yaşanan mağduriyetlerin ortadan kaldırılması gibi bu şekilde açabiliriz.
+
+391
+01:11:35,907 --> 01:11:41,227
+Neden? Kağıt değil de dijital ortam gibi.
+
+392
+01:11:43,507 --> 01:11:51,927
+Bunun sağlandığı sektörler dediğimiz gibi telekombinasyon sektörü. Burada Türksel bu anlamda önce olmuştur zaten.
+
+393
+01:11:53,448 --> 01:11:59,347
+Finans ve bankacılık işlemlerinde burada da hesap açma vesaire bu gibi alanlarda kullanılıyor.
+
+394
+01:12:01,047 --> 01:12:06,007
+Tıp sektörü, medikal, ilaç vesaire bu alanda da gelişimin söz konusu.
+
+395
+01:12:11,104 --> 01:12:18,564
+[öğrenci] arkadaşımız devam edecek. Sorularınız varsa sonunda alabiliriz.
+
+396
+01:12:22,676 --> 01:12:25,195
+Merhaba hocam, merhaba arkadaşlar.
+
+397
+01:12:31,796 --> 01:12:39,376
+Teşekkürler [öğrenci]. AllSafe yazılım olarak önce bizim şirketin vizyonundan bahsetmek istiyorum.
+
+398
+01:12:39,596 --> 01:12:45,956
+IT sektöründe limit bir şirket olup iki ortak kurucu toplam beş çalışını ile hayata geçirme planladığımız bir proje.
+
+399
+01:12:46,956 --> 01:12:51,876
+Oluşturulacak sistem dijil ortamda kişiye özel güvenli bir ünza modeli oluşturmayı amaçlamaktadır.
+
+400
+01:12:59,539 --> 01:13:06,260
+Öncelikle bankacılık ve telekom şirketleri olmak üzere faz süreçleri belirlenecek. Ekim ayında ise canlı çıkması planlanmaktadır.
+
+401
+01:13:07,100 --> 01:13:13,399
+Devamında ise finans ve hizmet sektörü için pazar analizi yapılarak uygun sektördeki şirketlerle görüşmeye devam edilecektir.
+
+402
+01:13:14,620 --> 01:13:22,200
+Özellikle önceliğimizin bankacılık ve telekom şirketleri olmasının sebeplerinden bahsedeceğim.
+
+403
+01:13:22,771 --> 01:13:43,572
+Bunlar dışında da yine potansiyel müşterilerimiz neler? Bunları konuşalım. Teknoloji sektörü ve tıp sektörü, örneğin işte vatan, teknoloji ve benzeri gibi mağazalar bu hizmeti sunmayı, pazarlama düşündüğümüz şirketler arasında.
+
+404
+01:13:47,091 --> 01:13:57,811
+Güncel olarak Turkcell'in uyguladığı bir güvenli dijital imza hizmeti var. Bu hizmetin bizim sunacağımız sistemden ne gibi bir farkı var? Şimdi onu anlatacağım.
+
+405
+01:14:01,091 --> 01:14:08,572
+Turkcell dijital imza şansı sunuyor ama parmak izi ve iris taraması gibi özellikler, opsiyonlar sunmuyor.
+
+406
+01:14:09,524 --> 01:14:18,304
+Bizim sunacağımız hizmette aynı zamanda hem parmak izi taraması hem de iris taraması sunarak daha güvenli bir hizmet sağlayacağız.
+
+407
+01:14:19,364 --> 01:14:25,384
+Diğer bir rakip firmamız Uluslararası Güvenlik Teknolojisi grubunun siber güvenlik teknolojileri.
+
+408
+01:14:25,384 --> 01:14:30,384
+Çok gelişmiş iris tarama teknoloji cihazlarına sahip ama...
+
+409
+01:14:31,220 --> 01:14:51,039
+Minimum 32 megapiksel kameraya ihtiyaç duyuyor bu taramanın gerçekleşmesi için. Bizim sunacağımız projede, sistemde 8 megapiksel herhangi bir cihazınız varsa tablet olabilir, telefon olabilir. Bir bayiye gitmeden bu şekilde tarama gerçekleşebilecek.
+
+410
+01:14:53,180 --> 01:14:55,039
+Projenin adımları...
+
+411
+01:14:55,572 --> 01:15:13,252
+Öncelikle backend tarafında kullanılacak dilim ve kütüphaneleri belirlenmesi. Daha sonra bu uygulamanın bir app'i olacak mobil için. Bu app'te kullanılacak mobil için bir dil ve motorun seçilmesi var.
+
+412
+01:15:13,663 --> 01:15:25,103
+Grafik tasarımların responsif tasarım olması var ve tüm bu süreçlerin tamamında bir yazılım geliştirme sürecimiz var. Demoya kadar da test süreci ve kalite güvence işlemlerini gerçekleştirmeyi planlıyoruz.
+
+413
+01:15:27,324 --> 01:15:32,824
+Yine imzalama yöntemlerinde tablet üzerinden, akıllı telefon üzerinden veya bayıl üzerinden yapılabilecek.
+
+414
+01:15:33,136 --> 01:15:43,896
+Eğer kullandığınız cihazlar, tablet ya da akıllı telefon, kamerası 8 megapikselin üzerindeyse bir bayiye gitmeden bunu gerçekleştirebileceksiniz.
+
+415
+01:15:44,836 --> 01:15:58,136
+Bayiler üzerinden nasıl gerçekleştireceksiniz? Biz bu hizmeti işte telekom şirketlerine, işte Turkcell, Vodafone, Türk Telekom gibi telekom şirketlerine pazarlayıp daha sonra kullanıcılarını eğer...
+
+416
+01:15:58,416 --> 01:16:06,036
+8 megapikselden daha düşük bir cihaz kullanıyorlarsa yine bayileri gidip çok kısa bir şekilde bu işlemlerini gerçekleştirebilecekler. Böyle bir imkan tanıyoruz.
+
+417
+01:16:07,736 --> 01:16:17,656
+Güvenlik özelliklerimiz neler? Iris okuyucu, parmak izi okuyucu, imza hareket analizi ve kişiye özel dijital veriler. Bunlar inme, basınç, hız ve konum.
+
+418
+01:16:19,347 --> 01:16:37,347
+Yine başarı ölçütümüz olarak son olarak bundan bahsedeyim. Amacımız bu doğrulama algoritmalarının bir arada kullanılması ile sahte imza kullanan taklitçilerin önüne geçmek, bunları ortadan kaldırmak bu problemleri. Bizi dinlediğiniz için teşekkür ederiz. Sorunuz varsa alabiliriz.
+
+419
+01:16:42,707 --> 01:16:50,707
+Teşekkürler arkadaşlar. Bir sonraki grup, 42 numaralı grup, [öğrenci] [öğrenci] ve [öğrenci].
+
+420
+01:16:52,047 --> 01:16:53,887
+Merhabalar, sesim geliyordur umarım.
+
+421
+01:16:54,608 --> 01:16:55,147
+Geliyor.
+
+422
+01:17:11,380 --> 01:17:29,039
+[kişisel bilgi]. Sizlerle birlikte Yıldız Egek Üniversitesi Bilgi Teknolojileri Bölümünde devam etmekteyim. Kimseye git sansıma. [öğrenci]?
+
+423
+01:17:29,399 --> 01:17:37,819
+Ben de [öğrenci], [öğrenci] olan. [kişisel bilgi].
+
+424
+01:17:38,003 --> 01:17:42,644
+Bir görev yapıyorum. [kişisel bilgi].
+
+425
+01:17:44,644 --> 01:17:50,764
+Evet, bugün size yapı güvenliği izleme cihazından bahsedeceğiz.
+
+426
+01:17:51,463 --> 01:17:54,404
+Sunum genel anlamda bu akışa göre devam edecek.
+
+427
+01:17:55,724 --> 01:17:58,404
+Öncelikle yapı güvenliği izleme cihazı nedir?
+
+428
+01:17:59,164 --> 01:18:00,844
+Onun hakkında biraz bahsetmek istiyorum.
+
+429
+01:18:01,344 --> 01:18:21,463
+Binalar, büyük yapılar, gökdelenler, hastane gibi işletmelerin 724 yapı güvenliğini ve bu yapı güvenliğindeki, yani bu binalardaki mekanik değişimlerin izlenmesi için geliştirdiğimiz bir cihaz.
+
+430
+01:18:21,463 --> 01:18:25,003
+Yani biliyorsunuz ülkemiz maalesef deprem kuşağında.
+
+431
+01:18:26,484 --> 01:18:32,164
+724 böyle büyük yapıların izlenmesi çok büyük önem arz edecektir.
+
+432
+01:18:34,984 --> 01:18:40,104
+Öncelikle cihazımızda kullanılan ana komponentlerden bahsetmek istiyorum.
+
+433
+01:18:41,624 --> 01:18:51,784
+Tilt sensörü, iç 3x iğme sensörü, ultrasonik sensör ve analog verilerimizi dijital verilere çevirecek bir entegremiz olacak.
+
+434
+01:18:53,811 --> 01:19:00,252
+Bu entegremize gelen giriş parametreleri analog şekilde gelecek tabii ki.
+
+435
+01:19:00,412 --> 01:19:08,252
+Müziksel bir yerler olduğu için eğim verisi, im verisi ve frekans, ultrasonik işsansörümüzden gelen frekans verisi olacak.
+
+436
+01:19:09,592 --> 01:19:13,672
+Çıkış parametrelerimiz de dediğim gibi dijital oranda olacak.
+
+437
+01:19:13,912 --> 01:19:19,511
+Anlık olarak dataların notlanması ve aplikasyon arayüzünde gösterilmesi adına.
+
+438
+01:19:21,140 --> 01:19:28,240
+Yani eğimimiz, 3 eksende eğimimiz ve bir frekans verimiz elimizde olacak.
+
+439
+01:19:30,040 --> 01:19:34,360
+Öncelikle til sensörümüzden eğim verisini elde edeceğiz.
+
+440
+01:19:35,079 --> 01:19:47,280
+Yatayda veya dikeyde anlık olarak bir değişim söz konusu olduğunda, yani gözde görülsün veya görülmesin anlık olarak bir değişim olduğunda
+
+441
+01:19:47,663 --> 01:19:56,663
+Bunu til sensörümüzde kavramış olacağız ve görmüş olacağız. Aplikasyon arayacağımızda anlık olarak mutlata gelmiş olur.
+
+442
+01:19:58,663 --> 01:20:02,543
+Bir de 3x'enli iMesh sensörü kullanacağız dedik.
+
+443
+01:20:02,543 --> 01:20:28,943
+X, Y, Z parametrelerinden gelecek verilerle liseden beri öğrendiğimiz hız, ime hız ilişkisi, hız yol ilişkisiyle ve bunun da getirdiği harmonik kayıpların da hesaba hata payına katılarak, yani buradaki konstant sayı gibi, V sıfarı ile X gibi, hat hesaba katılarak, anlık olarak ime verisini elde etmiş olacağız.
+
+444
+01:20:29,587 --> 01:20:32,307
+Tabii ki şöyle bir şey olacak.
+
+445
+01:20:33,707 --> 01:20:41,887
+Yani kilit sensöründen ve iğme sensöründen elde edeceğimiz verilerle tabii ki ikisinden de eğim elde edebiliyoruz.
+
+446
+01:20:42,488 --> 01:20:43,547
+Mümkündür tabii bu.
+
+447
+01:20:44,028 --> 01:20:50,307
+Ama verilerin gerçeklenmesi adına veya karşılaştırmalı veri için
+
+448
+01:20:50,676 --> 01:20:57,836
+Bu ikisini de anlık olarak alacağız ve gerçeğe, realiteye daha yakın bir sonuçlar elde edeceğiz.
+
+449
+01:21:00,316 --> 01:21:12,176
+Başka bir verimiz, frekans. Ultrasonik sensör kullanılacak. Ultrasonik sensör nasıl çalışacak? Çalışma prensibinden şöyle bahsedebilirim.
+
+450
+01:21:13,971 --> 01:21:29,751
+Ses dalgalarını merkezi konumlandırma ile kirişlere gönderecek. Bu merkezi konumlandırma ile eşit mesafelerle kirişe ses dalgaları gönderecek ve bu.
+
+451
+01:21:30,195 --> 01:21:55,435
+Frekanslar tekrar yansıyacak. Bu frekanslar yansırırken tabii ki yeraltının geolojik yapısına göre, rüzgarlara göre belki değişecektir. Bunun anlık olarak izlenmesi çok büyük önem arz edecektir ve dediğim gibi 3 tane karşılaştırmaları verilmemizle gerçeğe, realiteye çok yakın bir verimiz olacak.
+
+452
+01:21:57,108 --> 01:22:00,828
+Buradan sonra [öğrenci] devam edecek. Beni dinlediğiniz için teşekkürler.
+
+453
+01:22:04,127 --> 01:22:05,248
+Ekranı ben alayım abi.
+
+454
+01:22:16,884 --> 01:22:19,904
+Ekranım geldi mi? Geldi. Bana bir bilgi verir misin?
+
+455
+01:22:21,084 --> 01:22:23,064
+Evet, geldi. Slight gösteri satalım.
+
+456
+01:22:34,036 --> 01:22:41,176
+Aslında baktığınız zaman, NATO'lu arkadaşım size arka tarafta işin biraz daha mühendislik kısmını aktardı.
+
+457
+01:22:41,516 --> 01:22:50,376
+Biz bunun elektronik açıdan doğruluğunu araştırdık ve birkaç önemli kaynaktan da bilgi edindik.
+
+458
+01:22:51,336 --> 01:22:55,076
+Tabii önemli olan bu tarafta çok büyük bir süreç.
+
+459
+01:22:55,076 --> 01:23:00,996
+Tabii bu süreci aslında bir ürün haline getirmek bizim en temel amacımız.
+
+460
+01:23:01,427 --> 01:23:10,108
+Aslında kaba tabirle sensörlerden okuduğumuz veriyi anlık olarak raporladığımız bir de ön tarafta uygulamalarımız olacak.
+
+461
+01:23:10,108 --> 01:23:24,467
+Tabi bu uygulamalar hem sensörlerden gelen veriyi veri tabanına kaydedip hem de bir şekilde o verileri hesaplayıp çeşitli ölçümler ve alarm sistemlerini çağıracak.
+
+462
+01:23:24,948 --> 01:23:45,768
+Bizim aslında genel olarak amacımız çok büyük bir ekosistem yaratmak. Bu tarafta da aslında bizim sistemimize ne kadar çok bina dahil olursa, ne kadar çok client'ımız olursa aslında bizim yapacağımız sistem, bizim yapacağımız uygulama daha verimli, daha doğru bir sonuç ortaya koyacak.
+
+463
+01:23:46,163 --> 01:23:56,083
+Keza bu şekilde bizim uygulamamızın arka planda devamında makine öğrenmesi tarzı daha modern uygulamalarda olacak.
+
+464
+01:23:56,819 --> 01:24:06,159
+Ki daha farklı bina yapılarında, daha farklı toprak titriplerinde en doğru sonucu elde etmek bizim genel amacımız.
+
+465
+01:24:06,159 --> 01:24:20,879
+Bu tarafta binaların kullanacağı, yani klientlerin kullanacağı web uygulamaları, mobil uygulamalar ve alarm aplikasyonları bizim ön tarafta uygulamada geliştirme yapacağımız yerler.
+
+466
+01:24:22,195 --> 01:24:46,055
+Tabii biz uygulama geliştirirken cloud ortamları aktif bir şekilde kullanıyor olacağız. Çünkü biz cloud'a veri aktarmanın, cloud'dan veri çekmenin çok hızına inanan bir ekibiz. Bu tarafta aslında bizim anlık olarak veri yapılarımız, anlık olarak veri sakladığımız alarm yapılarımızın bunların hepsi aslında cloud ortamlarda barınacak.
+
+467
+01:24:46,452 --> 01:25:13,032
+Ve baktığınız zaman aslında biz ortaya gün sonunda SaaS ürün ortaya çıkaracağız. Yani kullanıcıların hiçbir yazılım, hiçbir donanım, hiçbir server, hiçbir güvenlik kaygısı olmadan biz sadece işin bina güvenliği kısmında biz kullanıcıların en büyük bu faydasını sağlayacağız.
+
+468
+01:25:16,756 --> 01:25:26,836
+Bu sensörlerden anlık veri çekmek için de çeşitli hem elektronik hem de yazılım tarafında çeşitli aslında özellikler var.
+
+469
+01:25:26,836 --> 01:25:34,476
+Bu tarafta da tabii bizim bina ve proje bazındaki kullandığımız sensörler değişiklik belki olabilir.
+
+470
+01:25:34,816 --> 01:25:44,756
+Belki hala hazırda binada böyle bir çalışma vardır ve biz bu sensörlerden anlık veri çekme üzerine tabii...
+
+471
+01:25:44,756 --> 01:26:11,016
+çalışmalar da yapacağız. Keza dediğim gibi sistem kendi kendini öğrenen ve kendi kendini geliştiren bir yapıda olacak. Biz tabii tüm sisteme dahil bütün binalardan veri çekiyor ve veri okuyor olacağız. Ve o açıdan alarm sistemlerimizi ve o dashboardlarımızı aktif bir şekilde kullanıcılara sunuyor olacağız.
+
+472
+01:26:12,180 --> 01:26:30,380
+Neden biz sorusuna aslında gelirsek de, biz çok genç ve enerjik bir ekibiz öncelikle. Bizim Netul arkadaşımızın elektronik tecrübesi, benim de yazılım tecrübemle birlikte aslında baktığınız zaman uçtan uca bu ürünü ortaya çıkarıyor olacağız.
+
+473
+01:26:32,500 --> 01:26:49,720
+Yani bu motto bizim en büyük motto'muz arkadaşlar. Deprem öldürmez, bina öldürür. Yani sonuçta bu önlenebilir ve önüne geçilir bir doğal afet. Biz de yani ekibimiz olarak, proje olarak buna odaklandık.
+
+474
+01:26:53,619 --> 01:27:09,420
+Keza baktığınız zaman da Türkiye üzerindeki depremleri ve can kayıplarını da baza alırsak, hem devlet açısından hem de özel konular açısından çok değerli bir proje olacağına tüm ekibin inaydı tam.
+
+475
+01:27:13,235 --> 01:27:17,256
+Bizim sunumuz bu kadar arkadaşlar. Sorusu olan varsa buyursunuz.
+
+476
+01:27:23,956 --> 01:27:24,576
+Sanırım yok.
+
+477
+01:27:25,715 --> 01:27:31,235
+Peki, arada sunum yapamayan [öğrenci] ve [öğrenci].
+
+478
+01:27:33,036 --> 01:27:33,795
+Evet hocam.
+
+479
+01:27:34,695 --> 01:27:35,135
+Buyurun.
+
+480
+01:27:36,135 --> 01:27:36,975
+Tamamdır.
+
+481
+01:27:58,420 --> 01:28:05,820
+Öncelikle herkese merhaba. [öğrenci] ben. Bugün [öğrenci] arkadaşımla birlikte yeni nesil kahve teknolojimizi anlatacağım size.
+
+482
+01:28:07,091 --> 01:28:22,991
+Günümüzdeki kahve makineleri ve kahve teknolojileri görseldeki gibidir. Yani teknolojik olarak teknolojilerin kadar hızlı gelirse de bu sektörde çok yavaş ve standart süreçte gitmektedir.
+
+483
+01:28:22,991 --> 01:28:33,071
+Bizim fikrimizin ortaya çıkışı aslında benim günlük hayatta yaşadığım deneyimlerle ortaya çıkmıştır.
+
+484
+01:28:33,619 --> 01:28:46,539
+Örnek verecek olursak, işte ofiste, AVM'de ya da herhangi bir kahve zincirine kahve almak istediğimizde, işte bazen uzun kuyruklarla karşılaşıyoruz.
+
+485
+01:28:46,679 --> 01:28:54,119
+Bazen istediğimiz kahveyi bariste veya işte makineye yaptıramıyoruz.
+
+486
+01:28:55,720 --> 01:29:00,979
+Herkesin farklı damak tadı var, herkese uygun kahveye erişemiyor herkes.
+
+487
+01:29:01,344 --> 01:29:11,943
+Bundan dolayı da böyle bir teknoloji geliştirmek, yani böyle bir sorun olduğu için bu sorunu geliştirmek adına bir fikir düşündük.
+
+488
+01:29:11,943 --> 01:29:15,943
+Bu fikirde...
+
+489
+01:29:16,511 --> 01:29:30,871
+Günümüzde IOTU teknolojisiyle birlikte biz bu kahve makinelerini nasıl akıllı hale getirebiliriz ve nasıl en iyi kullanıcı deneyimini sunarız diye düşündük. Böylelikle projemizin fikri ortaya çıktı.
+
+490
+01:29:34,420 --> 01:29:52,960
+Bu kahve makinesini akıllandırmak için bir elektronik kart, sonrasında bu elektronik kartı cloud üzerinden yönetebilecek bir mobil uygulama, son kullanıcıların kullanabileceği bir mobil uygulama tasarlamayı düşündük.
+
+491
+01:29:54,780 --> 01:29:58,640
+Fikrimizde bu nasıl olacak onu anlatayım biraz.
+
+492
+01:30:02,228 --> 01:30:11,988
+Bir kahve almak istediğimizde, telefonlar aplikasyonu açtığımızda, en yakın bize bu kahveyi alabileceğimiz lokasyonu gösterecek.
+
+493
+01:30:12,087 --> 01:30:17,528
+Bu makinenin olduğu, bizim makinemizi konumlandırdığımız makinenin olduğu yeri gösterecek.
+
+494
+01:30:28,948 --> 01:30:51,088
+Çekirdek cinsi, yoğunluğu, şeker miktarı, süt miktarı, varsa aroma miktarını mobil uygulama üzerinden hassas bir şekilde ayarlayarak siparişimizi mobil uygulama üzerinden verip, makinenin yanına gidene kadar hazırlanmasını sağlayıp ve hazırlandığında bize mobil uygulama üzerinden bir bildirim göndererek
+
+495
+01:30:53,011 --> 01:31:02,151
+makinenin başına gittiğimizde, onay verdikten sonra kahvemizi almaya yarayacak bir teknoloji oluşturduk.
+
+496
+01:31:02,511 --> 01:31:10,171
+Burada bu teknolojiyle birlikte nasıl bir avantajımız oldu?
+
+497
+01:31:10,931 --> 01:31:15,151
+Mobil uygulama üzerinden kolay kullanım ve en iyi müşteri deneyimini sağladık.
+
+498
+01:31:15,439 --> 01:31:21,979
+Yeni nesil kahve makinesi ile kullanıcılar kendi damak tatlarına göre kişisel kahvelerine her zaman her yerde ulaşabilmesini sağladık.
+
+499
+01:31:22,759 --> 01:31:33,959
+Bulut teknolojileri entegrasyonuyla sistemin her zaman izlenebilmesini sağlayarak sistemde oluşabilecek olumsuzlukları en kısa sürede gidermemizi sağlayan bir teknoloji.
+
+500
+01:31:34,579 --> 01:31:44,559
+Bu teknolojik altyapı sayesinde aynı zamanda arka plandaki operasyonu yönetimi ve en iyi müşteri deneyimini ortaya çıkardık.
+
+501
+01:31:46,131 --> 01:32:13,971
+Altyapısı da şu şekilde olacak. Var olan bir kahve makinesine, kahve otomatına, biz bir Raspberry Pi elektronik kartı koyarak, bunu o makine entegre ederek, o makinenin komponentlerini entegre ederek ve internete bağlanmasını sağlayarak bir bulut sistem üzerinden, son kullanıcı, mobile application üzerinden istediği kahveyi oluşturabilecek.
+
+502
+01:32:14,131 --> 01:32:20,451
+istediği kahve sipariş verebilecek ve herhangi bir sıra beklemeden kahve otomatının yanına gittiğinde,
+
+503
+01:32:20,451 --> 01:32:33,291
+işte kahve almayı onayladığında otomat ona o kahveyi almasına izin vererek en iyi kahve deneyimi yaşamasını ortaya koydu.
+
+504
+01:32:33,431 --> 01:32:36,271
+Bu şekilde bir teknolojik altyapısı bulunuyor.
+
+505
+01:32:37,747 --> 01:32:42,867
+Bundan sonraki şeyi, [öğrenci] arkadaşımız devam edecek.
+
+506
+01:32:45,427 --> 01:32:47,528
+Ben paylaşımı durdurayım.
+
+507
+01:32:54,484 --> 01:32:55,744
+Ekranım geliyor mu [öğrenci]?
+
+508
+01:32:57,923 --> 01:32:58,984
+Evet, geliyor.
+
+509
+01:32:59,684 --> 01:33:03,844
+Merhabalar. Ben de [öğrenci]'in kaldığı yerden devam edeyim, pazar analizinden.
+
+510
+01:33:05,244 --> 01:33:09,904
+Petrolden sonra dünyada ticari hacmi en büyük olan emtia kahvedir.
+
+511
+01:33:10,804 --> 01:33:21,144
+ICO'nun verilerine göre Türkiye piyasası 1 milyon doların üzerinde ve kişi başı kahve tüketimi 1.1 kilograma ulaşmış bulunmaktadır.
+
+512
+01:33:21,876 --> 01:33:31,836
+Türkiye'de bulunan bir araştırma şirketi, Backfield'ın araştırmalarına göre, Türkiye'de en hızlı büyüyen sektör kahve sektörüdür ve bu oran %70 civarındadır.
+
+513
+01:33:33,216 --> 01:33:42,236
+Diğer ülkelerdeki kahve mağaza sayılarına bakıldığında, Türkiye'nin biraz geride kaldığını, ancak gelişme sürecinde olan bir ülke olduğunu görebiliriz.
+
+514
+01:33:43,616 --> 01:33:47,876
+Bu slide'ımızda kahve alışkanlıkları ve kahve tüketim tercihleriyle ilgili...
+
+515
+01:33:48,020 --> 01:33:50,420
+Bazı istatistikler, bilgiler bulunmakta.
+
+516
+01:33:51,100 --> 01:33:59,980
+Burada önemli olanlar dünyanın en popüler ikinci içeceği olması ve dünyada bulunan insan nüfusunun üçte ikisinin kahve tercih ediyor olması.
+
+517
+01:34:01,100 --> 01:34:02,539
+Önemli olan maddeler bunlardı.
+
+518
+01:34:04,420 --> 01:34:09,660
+Burada kahve makinesi için gerekli ekipmanların ithalatıyla ilgili veriler bulunmakta.
+
+519
+01:34:10,644 --> 01:34:23,644
+Bu veriler TÜİK'e ait. 2019 ve 2020 verilerine baktığımız zaman %60 civarında bir artış olduğu görülmekte. Bu da sektör için önemli bir ölçüt olduğunu düşünüyoruz.
+
+520
+01:34:25,024 --> 01:34:31,984
+Sol tarafta Starbucks hisse değerleri bulunmakta. 2018'den itibaren 2020'lere kadar.
+
+521
+01:34:32,627 --> 01:34:44,347
+Yükseliş trendi var. Fakat 2020'de global piyasadaki düşüşlerden etkilenmiş ve hissederleri değer kaybetmiş. Buradan sonra tekrar bir artış görülmekte. Burada piyasanın ne kadar canlı olduğunu görebiliriz buradan.
+
+522
+01:34:45,987 --> 01:34:57,687
+Sağ tarafta ise ülkelerde bulunan Starbucks şube sayılarını görebiliriz. Burada gelişmiş ülkelerdeki şube sayılarının diğerlerine nazaran daha yüksek olduğunu görebiliriz.
+
+523
+01:34:58,387 --> 01:35:05,267
+Ve dikkat çeken diğer bir ayrıntı ise gelişmekte olan ülkelerde Starbucks bayilik vererek işlerine devam etmiş.
+
+524
+01:35:06,467 --> 01:35:08,527
+Yani şirket üzerinden ilerlememiş.
+
+525
+01:35:09,227 --> 01:35:13,627
+Burada ICO'nun 2021 Ocak verileri bulunmakta.
+
+526
+01:35:14,827 --> 01:35:18,387
+Burada Türkiye kahve tüketimi ile ilgili bu veri seti.
+
+527
+01:35:18,387 --> 01:35:25,567
+Burada Türkiye'ye baktığımız zaman 2017 ile 2021 arasında %8.4'lük bir artış.
+
+528
+01:35:26,323 --> 01:35:38,063
+bulunmakta. Sağ tarafta ise ABD'nin ait bir kahve tüketim grafiği var. Burada 2010'dan itibaren lineer bir artış olduğunu görebiliyoruz.
+
+529
+01:35:39,643 --> 01:35:41,823
+Üç yıllık cüro hedeflerimizden bahsedeceğim.
+
+530
+01:35:42,452 --> 01:35:53,832
+Biz ilk yılın sonunda ilk prototipi elde edip ikinci yıl itibariyle yerel firmalarla seri üretim için anlaşmalar yapmaya başlayacağız.
+
+531
+01:35:54,332 --> 01:36:01,872
+Ve bu anlaşmalar yapıldıktan sonra ikinci yılın sonunda 30, üçüncü yılın sonunda ise bin adet ürün hedeflemekteyiz.
+
+532
+01:36:02,452 --> 01:36:07,711
+Bu bin adet ürün ciro bazında 150 milyon Türk Lirası'na tekabül etmektedir.
+
+533
+01:36:08,916 --> 01:36:28,395
+Bundan sonra yurtdışı anlaşma hedeflerimizden bahsedeceğim. İkinci yıl itibariyle yaptığımız seri üretim için yapılan anlaşmalardan sonra kahve tüketiminin fazla olduğu ülkeler, Almanya, ABD ve İskandinav ülkeleri ve özellikle yerleşik kahve kültürüne sahip.
+
+534
+01:36:29,268 --> 01:36:39,127
+Finlandiya, İllanda ve Yemen gibi ülkelerde bulunan orta ölçekli fakat rekabetçi yönü daha yüksek firmalarla anlaşma yapmayı planlamaktayız.
+
+535
+01:36:41,887 --> 01:36:52,867
+İlk prototip üretimine kadar ekibimiz dört kişiden oluşacak. [öğrenci] ve ben bir makine mühendisi ve bir endüstriyel tasarım mühendisiyle devam edeceğiz ilk aşamada.
+
+536
+01:36:55,252 --> 01:36:57,252
+Slide'ımız bu kadar da teşekkürler.
+
+537
+01:37:00,231 --> 01:37:02,612
+Sorunuz varsa sorununuzu alabiliriz.
+
+538
+01:37:10,195 --> 01:37:13,195
+Peki, teşekkürler arkadaşlar. [öğrenci], burada mısın?
+
+539
+01:37:14,515 --> 01:37:15,235
+Buradayım hocam.
+
+540
+01:37:16,675 --> 01:37:18,036
+Evet, sıra sizde.
+
+541
+01:37:26,420 --> 01:37:30,399
+Sesim geliyor mu?
+
+542
+01:37:31,319 --> 01:37:31,920
+Evet, geliyor.
+
+543
+01:37:31,920 --> 01:37:32,920
+Tamam.
+
+544
+01:37:40,595 --> 01:37:46,796
+Herkese merhaba. [kişisel bilgi].
+
+545
+01:37:47,555 --> 01:37:55,095
+1512 Tekno Girişim Sermaye Desteği kapsamında [öğrenci]'la birlikte geliştirdiğimiz Rydron Projesi'nin sunumunu gerçekleştireceğim.
+
+546
+01:37:55,891 --> 01:38:07,112
+Projemizin sunumunu 3 ana başlık altında yapacağız. İlk olarak ürün tanıtımı, ikinci olarak ekip tanıtımı ve son olarak da kazarlama ve strateji ana başlığı altında.
+
+547
+01:38:07,112 --> 01:38:19,212
+Tarım sektörü ülkemizin hassas tarıma karşı olan tavrı, ulusal ve uluslararası rakipler, hedef kitle, fiyat ve ürünün kar marjıyla birlikte satış stratejimizi anlatıp sunumunu sonlandıracağım.
+
+548
+01:38:23,923 --> 01:38:30,604
+Biliyorsunuz ki son bilhassa 20-30 senedir kuresel ısınmanın etkilerini büyük miktarda hissetmekteyiz.
+
+549
+01:38:30,724 --> 01:38:42,724
+Aynı zamanda endüstriyel atıklar ya da pestisik gibi zirai kimyasalların da toprak kalitesinin düşünmesinden kaynaklı olarak tarımsal verimde bir düşüş söz konusu.
+
+550
+01:38:42,864 --> 01:38:50,123
+Ama bununla ek olarak da aslında nüksa artışından dolayı gıda talebindeki artışla birlikte yüksek bir verim elde etme isteği var.
+
+551
+01:38:51,923 --> 01:39:03,104
+Karmaşı problemlere karşı aslında teknolojik gelişimle de birlikte karşımıza hassas tarım ya da akıllı tarım ya da dijital tarım dediğimiz kavram çıkmaktadır. Peki hassas tarım nedir?
+
+552
+01:39:05,268 --> 01:39:13,308
+Uzaktan algılama, nesnelerin interneti gibi bilişim teknolojilerinin tarımsal üretime dahil olmasıyla oluşan modern yönetim konseptidir.
+
+553
+01:39:13,768 --> 01:39:22,788
+Ve hassas tarımla hedeflenen aslında bir cimneyi böyle kısaca söylemek gerekirse hem ucuz hem de sağlıklı ve temiz bir ürün elde edebilmektir.
+
+554
+01:39:24,532 --> 01:39:39,072
+Bu çalışma kapsamında çeşitli sağ çalışmalarından yararlandık ama bununla birlikte en çok faydalandığımız çalışma, Kredi Kayıt Bürosu tarafından gerçekleştirilen ve 2019 senesinde yapılan Türkiye Tarımsal Görünüm Sağ Araştırması.
+
+555
+01:39:39,072 --> 01:39:52,532
+Bu çalışma kapsamında çiftçilerin üretim esnasındaki yaşadıkları sorunlarla ilgili bir çalışma yürütülmüş ve %83 ile girdilerin pahalılığı, %36 ile hastalıklar ve zararlılar gibi farklı sorunlar var.
+
+556
+01:39:52,532 --> 01:40:16,972
+sorunlarla karşılaşılmış. Peki, Zirai Drone nedir ve aslında ne sağlıyor bize? Zirai Drone çiftçilerin mahselerini havadan yüksek çözünürlüklü kamera yardımıyla sürekli olarak izlemelerini ve normal koşularda bulamayacakları ya da daha hızlı bir şekilde tespit edebilecekleri sorunları tespit edip hızlı bir şekilde müdahale etmelerini olanak sağlayan bir drone.
+
+557
+01:40:17,747 --> 01:40:26,288
+Ziray drone yardımıyla hastalık, yabanat ya da böceklenme gibi çevresel etkileri aslında fazla indirerek maliyetleri optimize etmeyi amaçlar.
+
+558
+01:40:26,427 --> 01:40:35,688
+Aynı zamanda da potansiyel mahkup kayıplarının azalmasına yardımcı olarak bilme mevsim sonucunda iyi tahminler yaparak çiftçi dostlu bir ürün diyebilirim.
+
+559
+01:40:36,627 --> 01:40:38,068
+Ziray drone nasıl çalışıyor?
+
+560
+01:40:38,528 --> 01:40:51,427
+Strydron, öncelikli olarak yüksek çözünürlüklü kamera yardımıyla tarlığınızdan görsel veriler toplar. Bu verileri sizin istediğiniz bir zamanda toplayabilir ya da belirlenen tarih aralıklarında da toplayabilir.
+
+561
+01:40:55,828 --> 01:41:14,148
+Derin öğrenme ve görüntü işleme teknolojisiyle geliştirdiğimiz programımız sayesinde bu topladığınız görsel verilerin analizleri ve yorumları yapılır. Bu analizler neticesinde de besin eksikliği, hastalık, yabana otistilatı gibi tarımsal sorunlar tespit edilerek ayrıntılı haritalar oluşturulup çiftçiler bilgilendirilir.
+
+562
+01:41:15,368 --> 01:41:21,568
+Ekip tanıtımı açıkçası, süremiz kısıtlı olduğu için bu kısmı hızlıca geçiyorum.
+
+563
+01:41:22,836 --> 01:41:37,115
+Pazarlama ve strateji. Tarım sektörü yüksek risk ve belirsizlik barındırdığı için aslında sıkıntılı bir sektör de diyebiliriz. Ama buna ek olarak daha uzun ve belirli zamanlarda yoğunlaşmış bir üretim söz konusu.
+
+564
+01:41:38,195 --> 01:41:51,235
+Tarım sektörü çeşitli sektörlerin gıda sektörü gibi ya da farklı sektörlere doğrudan bağlı olması ve ham madde üretmesi açısından da büyük bir öneme sahiptir. Bu yüzden de doğal kaynaklara ve teknolojik gelişmelere bağımlıdır.
+
+565
+01:41:52,775 --> 01:42:00,895
+Tarım sektörü Türkiye, yani Türkiye'deki tarım sektör Avrupa'nın en büyük, dünyanın ise yedinci büyük tarımsal üretimine sahiptir.
+
+566
+01:42:01,264 --> 01:42:09,743
+11. Kalkınma Planı'na göre aslında hassas tarım ya da dijital tarıma karşı ülkemizin ya da devletin bir eğilim söz konusudur.
+
+567
+01:42:10,836 --> 01:42:22,976
+Bu şekilde çeşitli üniversitelerin, özel sektörün ya da ARG'lerin desteği de alınarak aslında ve devlet tarafından da teşvik edilerek çeşitli çalışma ve projeler yürütülmektedir.
+
+568
+01:42:23,356 --> 01:42:27,236
+Bu yüzden de 2020 senesinde Tarımda Dijitalleşme Yılı ilan edildi.
+
+569
+01:42:27,336 --> 01:42:34,616
+Aynı zamanda Tarım ve Orman Bakanlığı tarafından da Gıda ve Tarım Örgütü ile eşit birliği içerisinde çeşitli projeler gerçekleştirilmektedir.
+
+570
+01:42:35,155 --> 01:42:40,615
+Benim anlatımım burada sonu anlaştır. Sözü ekip arkadaşım belki de bırakıyorum.
+
+571
+01:42:49,908 --> 01:42:50,988
+Ekranım görünüyor mu?
+
+572
+01:42:53,648 --> 01:42:54,927
+Evet, görünüyor.
+
+573
+01:42:57,507 --> 01:43:07,728
+Rakiplerimiz birincisi DJI Phantom 4 multispektral drondur. Bu drone bitki ve toprak analizi için özel olarak DJI tarafından yönetilmiştir.
+
+574
+01:43:07,868 --> 01:43:15,368
+Altı kamerası vardır ve multispektral teknoloji çekim yapar. 50 km saat hızlı uçar ve Çin menşeili bir drondur.
+
+575
+01:43:15,988 --> 01:43:31,547
+Gamaya, Zirai Drone'a benzer ancak Zirai Drone, Haudrum datalarını toplamaz. Gamaya toplar, dronlarla birlikte ve uçak, uydu tabanları uzaktan alınma yöntemleriyle sağlar. İsviçre meşeili bir şirkettir.
+
+576
+01:43:32,087 --> 01:43:42,427
+Robotics daha çok meyve boyutu, rengi gibi özelliklere yoğunlaşmış bir şirkettir. Ağaç sayı ve ürün verimini hesaplar.
+
+577
+01:43:43,988 --> 01:44:03,387
+Bir şirkettir. Amig Bird Technologies, havadan görüntü yakalama, görüntü işleme ve engellendi hizmetleri sağlar. 100 bin hektar daha fazla tarım arazisine kaplıyordur hizmetleri. 24 saat içerisinde raporu teslim ediyordur. İngiltere menşeili bir şirkettir.
+
+578
+01:44:04,448 --> 01:44:09,387
+Hedef kitlemiz, büyük ve orta ölçekli zirai faaliyette bulunan şirketler.
+
+579
+01:44:10,239 --> 01:44:19,619
+Ve bunun yanı sıra 39 yaş altı genç çiftçilerdir ki bu genç çiftçiler %30.1'ini oluşturmaktadır tüm çiftçilerin.
+
+580
+01:44:21,000 --> 01:44:30,880
+Fiyat ve ürünün kar marjı konusunda ise Unique International firmasından Unique Typhoon H Plus drone'u tercih edilecektir.
+
+581
+01:44:34,644 --> 01:44:58,203
+Anlaşılan perakende maliyet fiyatı 15.333 TL'dir. Düşünülen perakende satış fiyatı ise 41.500 TL'dir. Beklenen kar marjı ise %12.5'tur. Bu da 5.318 TL'ye karşılık gelmektedir. 4K kameraya sahiptir ve 48.28 km saatte hızlı uçar.
+
+582
+01:44:58,771 --> 01:45:20,991
+Gelir gider farkı olarak ilk sene 9318 TL zarar, ikinci sene 335352 TL kar, üçüncü sene ise 440.020 TL kar beklenmektedir. İlk seneki zararı çıkarmak için teşvik alması, teşvik için başvurulmuştur.
+
+583
+01:45:22,452 --> 01:45:33,791
+Hedeflenen büyüme nasıl sağlanacak? Tanıtım yaparak, büyük ve küçük ölçekli firmalarla fuarlarda görüşerek, ürünü denemelerini sağlayarak bu şekilde yapılabilir.
+
+584
+01:45:33,791 --> 01:45:46,411
+Sosyal medya ayağında PR çalışmaları yapılabilir. Bunun yanı sıra e-ticaret sitesi kurulup, satışlarımızı bu e-ticaret sitesi üzerinden yapma amaçlanmıştır.
+
+585
+01:45:47,220 --> 01:45:51,920
+Bu sayede değerimizi arttırabiliriz ve karlılığımızı arttırabiliriz.
+
+586
+01:45:53,860 --> 01:45:57,080
+Bizi dinlediğiniz için teşekkür ederim. Sorularınız varsa alabiliriz.
+
+587
+01:46:06,260 --> 01:46:17,300
+Peki, teşekkürler arkadaşlar. Bu günle beraber bütün sunumları tamamlamış olduk yapılacak ona. Başka eksik bir şey kalmadı diye biliyorum.
+
+588
+01:46:19,440 --> 01:46:32,500
+Bundan sonra final sınavımız olacak. Final sınavının tarihi bölüm tarafından duyuruluyor. İlan edilen tarihte online sistem üzerinden bir sınav yapıyor olacağız. Sınav çoktan çok seçmeli olur.
+
+589
+01:46:34,292 --> 01:46:54,552
+Kısaca açıklamak gerekiyorsa, çoktan seçmelisiniz, biliyorsunuz. Her soru için birkaç tane şıkkınız olur, birini seçersiniz. Doğru ya da yanlış olur. Çoktan çok seçmeli de size verilen şıkların birden fazlası doğru olabilir. Sorunun doğru olarak değerlendirilmesi için doğru olan tüm şıkları seçmeniz gerekir.
+
+590
+01:46:54,552 --> 01:47:02,292
+Yani örneğin A, B, C ve D şıklarından B ve C doğru ise bu ikisini de seçtiğiniz durumda soru doğru.
+
+591
+01:47:02,292 --> 01:47:17,431
+Doğru olarak değerlendirilir. Yanlış herhangi bir şıkkı seçtiğiniz zaman soru yanlış olarak değerlendirilir. Her çoklu seçim, çoktan seçme sınavda olduğu gibi yanlışlar doğruları götürecektir şık sayısına bağlı olarak.
+
+592
+01:47:19,823 --> 01:47:28,323
+Ders kapsamında konuştuğumuz ilk haftalarda benim anlattığım yaklaşık 7 hafta civarı olması lazım, yanlış hatırlamıyorsam.
+
+593
+01:47:28,743 --> 01:47:34,203
+Anlattığım konulardan sorumlusunuz, onlardan bir sorumlusunuz, orada konuştuğumuz sürelerden bir sorumlusunuz.
+
+594
+01:47:34,823 --> 01:47:39,183
+Zaten hani şıklı bir sınav olacağı için çok uzun olmayacaktır süresi.
+
+595
+01:47:40,123 --> 01:47:46,203
+O yüzden lütfen hani atlamamaya, şey yapmamaya çalışın, kaçırmamaya çalışın.
+
+596
+01:47:48,020 --> 01:48:00,400
+Onun dışında sizin bir sorunuz varsa onu alayım. Yoksa hepinize hem iyi akşamlar dileyeceğim hem de dönemi kapattığımız için de hayırlı olsun diyeceğim.
+
+597
+01:48:03,040 --> 01:48:05,640
+Hocam vize sonuçlarımızı ne zaman açıklarsınız?
+
+598
+01:48:07,120 --> 01:48:14,240
+Vize sonuçlarımızı açıklamayacağım. Çünkü GESİS'te bu sonuçlara girebileceğim herhangi bir şey yok.
+
+599
+01:48:15,507 --> 01:48:17,688
+Yani mail yoluyla falan diye sormuştum.
+
+600
+01:48:18,927 --> 01:48:25,887
+90 küsur kişiye tek tek mail atmak gibi bir fantezim de yok. Kusura bakmayın arkadaşlar. Yani öyle bir yapıya vesaireye girmeyeceğim.
+
+601
+01:48:27,927 --> 01:48:30,108
+Hocam ben de bir soru sorabilir miyim? [öğrenci] ben.
+
+602
+01:48:30,108 --> 01:48:30,287
+Tabii.
+
+603
+01:48:31,279 --> 01:48:42,739
+Bu hani bize bir liste atmıştınız ya, slide'ları yapılmasına göre. Orada üstümüzde bazı kişilerin sarı ve kırmızı çizilmişti. Onların bir anlamı var mı? Nedir anlamı?
+
+604
+01:48:42,739 --> 01:48:46,159
+Var, bu daha önce soruldu ve daha önce cevapladım ama bir daha cevaplayayım.
+
+605
+01:48:48,500 --> 01:49:03,500
+İyi hazırlarken ben kendi Excel'im üzerinden gidiyorum. Excel üzerinde de bir şekilde mesela teslimi söylenen şekilde yapmayan, mesela mailin başlığını yanlış yazan, mesela tarihinde zamanında vermeyen, mesela kendi...
+
+606
+01:49:04,307 --> 01:49:23,028
+ad, soyad, numara bilgisini yazmayan ya da arkadaşının bilgilerini yanlış yazan ya da kendi bilgilerini yanlış yazan herkes için, teslime uymayanlar için farklı kodlarla, farklı şekillerde yaptıklarının, yaptıkları nasıl diyeyim, kural hatalarına göre farklı renklerle işaretledim.
+
+607
+01:49:23,108 --> 01:49:31,547
+Dolayısıyla onlara ifade ediyor. Yani sizin açınızdan çok bir şey ifade etmiyor. Ama benim açımdan çok şey ifade ediyor. Öyle söyleyeyim.
+
+608
+01:49:32,564 --> 01:49:34,464
+Anladım hocam, teşekkürler.
+
+609
+01:49:34,784 --> 01:49:35,124
+Ne demek?
+
+610
+01:49:38,644 --> 01:49:40,944
+O zaman hepinize iyi akşamlar arkadaşlar.
+
+611
+01:49:42,584 --> 01:49:43,404
+İyi akşamlar hocam.
+
+612
+01:49:43,524 --> 01:49:43,924
+Gitmiş olsun.
+
+613
+01:49:44,084 --> 01:49:44,704
+İyi akşamlar.
+
+614
+01:49:44,924 --> 01:49:45,384
+Sağ olun.
+
+615
+01:49:46,164 --> 01:49:46,804
+Teşekkürler.
+
+616
+01:49:48,284 --> 01:49:50,176
+İyi akşamlar.
