@@ -1,0 +1,3811 @@
+1
+00:00:37,908 --> 00:00:39,347
+Günaydın arkadaşlar.
+
+2
+00:00:45,128 --> 00:00:52,628
+Sınavı 10 yazmışlar. Ben onu yeni fark ettim. Ama dedim açayım varsa başlayalım erkenden.
+
+3
+00:00:55,567 --> 00:01:03,048
+Nasıl? Ben bu kadar erkene koyacaklarını hiç tahmin etmemiştim sınavı. İlk hafta ilk güne ilk saate koymuşlar bir de.
+
+4
+00:01:04,403 --> 00:01:14,663
+Yetiştirenlerinkine bakacağım. Yetiştiremeyenler varsa, bu hafta içinde yetiştirebilir mi bilmiyorum. Olmadı [öğrenci]'e. Aman [öğrenci] diyorum.
+
+5
+00:01:15,603 --> 00:01:22,804
+[kişisel bilgi]
+
+6
+00:01:23,263 --> 00:01:24,084
+[kişisel bilgi]
+
+7
+00:01:24,463 --> 00:01:25,063
+[kişisel bilgi]
+
+8
+00:01:25,563 --> 00:01:30,864
+[kişisel bilgi]
+
+9
+00:01:31,144 --> 00:01:32,864
+[kişisel bilgi]
+
+10
+00:01:33,304 --> 00:01:34,763
+[kişisel bilgi]
+
+11
+00:01:35,763 --> 00:01:36,983
+[kişisel bilgi]
+
+12
+00:01:39,443 --> 00:01:42,343
+[kişisel bilgi]
+
+13
+00:01:43,091 --> 00:01:47,632
+[kişisel bilgi]
+
+14
+00:01:47,632 --> 00:02:03,891
+[kişisel bilgi]
+
+15
+00:02:04,756 --> 00:02:07,795
+[kişisel bilgi]
+
+16
+00:02:08,096 --> 00:02:10,575
+[kişisel bilgi]
+
+17
+00:02:10,855 --> 00:02:12,276
+[kişisel bilgi]
+
+18
+00:02:12,596 --> 00:02:13,295
+[kişisel bilgi]
+
+19
+00:02:14,716 --> 00:02:15,955
+[kişisel bilgi]
+
+20
+00:02:29,460 --> 00:02:35,740
+[kişisel bilgi]
+
+21
+00:02:36,100 --> 00:02:36,699
+[kişisel bilgi]
+
+22
+00:02:36,699 --> 00:02:40,120
+[kişisel bilgi]
+
+23
+00:02:41,740 --> 00:02:45,400
+[kişisel bilgi]
+
+24
+00:02:45,519 --> 00:02:49,639
+[kişisel bilgi]
+
+25
+00:02:50,900 --> 00:02:53,139
+Sanıyorum dört numaralıydı Hufman.
+
+26
+00:02:53,300 --> 00:02:55,620
+Ne yaptığını bana söyle. Numarası önemli değil.
+
+27
+00:02:56,015 --> 00:02:58,396
+Renkli resimler üzerinde ofman.
+
+28
+00:02:58,635 --> 00:03:00,375
+Tamam, resim sıkıştırma.
+
+29
+00:03:09,907 --> 00:03:17,247
+Önce bir kodun üzerinden hızla şurada şu işlemi yaptım, burada bu işlemi yaptım diye geçelim. Sonra çalıştıralım.
+
+30
+00:03:17,780 --> 00:03:43,799
+Şöyle, ekran görünüyor mu şu an? Görüyorum, görüyorum. Tamam. Ben bu huffman dışında bir şey daha ekledim. Quantization yaptım, k-means'ı resmi. İstediğimiz renkte işte 32 rengi ya da 64 rengi, 128 rengi indirgeyip onu da sıkıştırılmış halini, karşılaştırma adına onu da ekledim. Burası k-means'ı kuantize etme fonksiyonu.
+
+31
+00:03:44,627 --> 00:03:52,647
+Burada çıktı, hazır duruyor. 32 renge düşürüldüğünde biraz daha renkler kayboluyor gibi sanıyoruz.
+
+32
+00:03:52,647 --> 00:03:54,307
+Yukarıdaki True Color değil mi?
+
+33
+00:03:54,307 --> 00:03:58,147
+Evet, bu orijinal resim. Bu da 32 renkli hali.
+
+34
+00:03:58,147 --> 00:04:07,108
+Burası da Human kodunun bulunduğu yer. Öncesinde Image Load.
+
+35
+00:04:07,108 --> 00:04:11,587
+Ben şeyini söyle, header'ın da neyi gönderdi?
+
+36
+00:04:12,627 --> 00:04:25,727
+Hedder'ımı şöyle ayarladım. İlk önce benim yaptığım şey imgeyi böyle okuyup bir listeye atıp, sonra piksel numaralarının tekrarlamasını burada şey yapıyorum.
+
+37
+00:04:27,048 --> 00:04:34,487
+Tekrarlama sayısına göre sıralıyorum. Sonra bir node construct şeyim var. Burada nodeları oluşturuyorum.
+
+38
+00:04:34,487 --> 00:04:39,347
+Tree construct ile de bu nodeları sıralıyorum.
+
+39
+00:04:41,267 --> 00:05:02,267
+Yani bu header'da yolladığım şey değişken oluyor. Şurada, burada şey oluşturduğum resmi gönderip oluşturduğum listeyi node oluşturduktan sonra şu şekilde şey yapıyor. Coding table'a ekliyor. Eğer varsa...
+
+40
+00:05:05,459 --> 00:05:07,120
+Nasıl çevireceğimi bilemedim.
+
+41
+00:05:08,060 --> 00:05:10,379
+Decompress ettiğini yeri açabilir misin?
+
+42
+00:05:11,039 --> 00:05:11,340
+Tamam.
+
+43
+00:05:12,319 --> 00:05:15,279
+Decompress'te bir yerden header'dan bilgi alacaksın.
+
+44
+00:05:16,539 --> 00:05:27,879
+Decompress'te ben şeyi yolluyorum. Coding Table'u yolluyorum. Coding Table'da okuduğu şey varsa eğer dönüştürüyor. Eğer Coding Table'da yoksa Coding Table'un output'unu da şöyle göstereyim.
+
+45
+00:05:28,244 --> 00:05:33,483
+Coding Table dediğin şey kodlar ve pikselin renginden oluşuyor.
+
+46
+00:05:33,584 --> 00:05:41,444
+Evet, mesela şu en az neyle ifade edebilmişim? Şu bu arada kuantize edilmiş şeyin Code Table'a, 32 renkle.
+
+47
+00:05:42,103 --> 00:05:42,884
+5 bit var.
+
+48
+00:05:42,884 --> 00:05:53,144
+75 value'yu 5 bitle göstermişim. En fazla 204'ü şu kadar bit sayısını gösterebile ifade edebilmişim.
+
+49
+00:05:55,411 --> 00:06:13,711
+Peki. Burada da işte kuantize etmeden bir deneme yaptım. Burada da en az sanıyorum 7 bit. Evet, 7 bitle ifade etmiş. 92 piksel values'unu.
+
+50
+00:06:16,307 --> 00:06:31,108
+Burada da size'larını kıyaslamak için orijinal size buymuş. Quantize ettiğimde buna düşmüş. Bu da decompress ve quantize edilmişsin decompress size'ları. Yani decompress edildikten sonra bir kayıp yok. Aynı boyuttalar.
+
+51
+00:06:31,108 --> 00:06:37,947
+Onu diyecektim. Quantization yapınca K-Mins'te bir daha orijinaline nasıl dönebildi?
+
+52
+00:06:38,351 --> 00:06:50,491
+Şöyle, kuantize ettiğim zaman kuantize etmek burada bu kullanımda bir tercih. Orijinaline dönüş yok. Eğer resimdeki şu kaybı göze alıyorsanız kuantize edebilirsiniz.
+
+53
+00:06:50,752 --> 00:06:52,411
+Yani o seçimlik mi kuantize?
+
+54
+00:06:52,692 --> 00:06:59,012
+Evet, evet. Ben kıyas için koydum. Hani kuantize etsem ne kadar düşer, kuantize etmezsem ne boyutu ne olur?
+
+55
+00:06:59,312 --> 00:07:00,391
+Bayağı düşüyor değil mi?
+
+56
+00:07:00,391 --> 00:07:06,351
+32 şey yaptığım zaman, 32 color yaptığım zaman şöyle bayağı düşüyor derken böyle renkleri...
+
+57
+00:07:06,351 --> 00:07:12,031
+En çok arada bir arada olduğu resimlerde düşüyor. Ama benim mesela dediğim başka bir tane resim vardı.
+
+58
+00:07:12,031 --> 00:07:15,151
+Resim kayıt düşünden bahsetmedim. Compression ratio düşüyor.
+
+59
+00:07:16,915 --> 00:07:18,975
+Yani daha iyi sıkıştırıyor değil mi?
+
+60
+00:07:18,995 --> 00:07:24,235
+Daha iyi sıkıştırıyor, evet. Ama mesela şu resimde, Palyaço'nun resminde çok fazla...
+
+61
+00:07:24,235 --> 00:07:28,596
+Acayip bir resim. Sanki üç boyutlu çıkacakmış gibi duruyor.
+
+62
+00:07:29,076 --> 00:07:35,495
+Burada çok fazla beyaz olduğu için örnek verecek olursak, kuantize ettiğinde de çok bir fark elde etmiyoruz.
+
+63
+00:07:35,555 --> 00:07:41,716
+Sadece bu kırmızının tonlarını falan kuantize etmiş oluyor. O yüzden sıkıştırma sonucunda çok fazla bir şey fark etmiyor.
+
+64
+00:07:42,355 --> 00:07:44,915
+Ama böyle bu fotoğraftaki gibi farklı renkler var.
+
+65
+00:07:44,915 --> 00:07:47,415
+Varsa daha iyi bir sonuç elde ediliyor.
+
+66
+00:07:48,615 --> 00:07:51,776
+Hiç hazır kullandığın bir kod parçası oldu mu?
+
+67
+00:07:53,555 --> 00:08:04,815
+Ağaç oluşturmayı hazır kullandım. Ağaç oluşturma dışındaki quantization olsun, bu size'ları almalar olsun, onun dışında kod table ben oluşturdum.
+
+68
+00:08:06,815 --> 00:08:08,696
+Peki, bir konuştur bakalım.
+
+69
+00:08:09,235 --> 00:08:21,435
+Çalıştır bakalım. Önce o palyo çayı çalıştır mesela. Tamam. Quantization yapmadan çalıştıralım. Kodu çalıştığında ikisini de yapacak zaten baştan sonuna.
+
+70
+00:08:27,315 --> 00:08:31,795
+32 rengi indirildiğinde böyle oluyor. Hepsini bir çalıştırayım.
+
+71
+00:08:41,139 --> 00:08:51,200
+Bu palyaço resminde kuantize edildiğinde 254 değerini tek bitle gösterebilmiş. Çünkü çok fazla tekrardan, çok fazla beyaz kısım olduğu için.
+
+72
+00:08:51,639 --> 00:08:54,779
+O 254 beyaza mı geliyor, o turuncumsu şey mi geliyor?
+
+73
+00:08:55,860 --> 00:09:01,220
+Yok, 254 dediği şey RGB'lerdeki ayrı ayrı 254, 254, 254 olabilir.
+
+74
+00:09:01,819 --> 00:09:04,319
+Yani o nedir? Beyaza karşılık geliyor herhalde.
+
+75
+00:09:04,340 --> 00:09:05,639
+Beyaza karşılık geliyor, evet.
+
+76
+00:09:13,940 --> 00:09:15,700
+Şu an ne yapıyor? Çalışıyor mu?
+
+77
+00:09:16,240 --> 00:09:17,680
+Şu an enkode ediyor.
+
+78
+00:09:18,180 --> 00:09:18,500
+Okey.
+
+79
+00:09:23,187 --> 00:09:24,947
+Dikot mu daha uzun sürüyor?
+
+80
+00:09:25,508 --> 00:09:34,187
+Dikot daha uzun sürüyor. Kuantize kısmını geçersem şimdi aşağıdaki kısımlarda sayısı kısmında belki sıkıntı yaratabilir ama...
+
+81
+00:09:38,419 --> 00:09:41,359
+Şöyle yapalım. Ben kuantizeyi çalıştırmayayım.
+
+82
+00:09:46,259 --> 00:09:58,379
+Sadece direkt orijinal imgi üzerinden çalıştırayım. Ama palyaço resmi biraz büyük bir resim olduğu için boyut olarak. Şu kedi resmini üstünde deneyebilirim.
+
+83
+00:09:58,379 --> 00:10:01,779
+Tamam, bir tane çalışan bir şey görüyorum. Ay bunu düşürün.
+
+84
+00:10:02,079 --> 00:10:03,539
+Uzun süreç için beklettim.
+
+85
+00:10:12,916 --> 00:10:17,615
+32 rengi düşürdüğünde işte gözündeki maviler falan kaybıyor. Arkada bulanıklar başlıyor.
+
+86
+00:10:20,884 --> 00:10:22,884
+Bu daha hızlı olacaktır diye tanrını dönüyor.
+
+87
+00:10:28,820 --> 00:10:36,460
+Bunda da sıfır değerini 2 bit ile ifade edebilmiş. Arkada biraz siyah renk fazla olduğu için.
+
+88
+00:11:17,652 --> 00:11:24,292
+Tabi burada kuantize edilmiş halinin sıkıştırması, dikod edilmesi daha kısa süre daha az değerli okur için.
+
+89
+00:11:24,312 --> 00:11:25,732
+Daha az, ağacın seviyesi daha az.
+
+90
+00:11:26,092 --> 00:11:30,312
+Evet, burada en kısa sıfır değerini 3 bitle şey yapabilmiş.
+
+91
+00:12:15,347 --> 00:12:22,347
+Bu kadar da sürmez.
+
+92
+00:12:22,347 --> 00:12:25,347
+Yani hocam çok fazla şey var.
+
+93
+00:12:25,347 --> 00:12:27,347
+Bir de çok ekrana yazdırıyorsun.
+
+94
+00:12:27,347 --> 00:12:35,347
+Evet, ekrana yazdırdığımdan kaynaklı olabilir. Çok fazla farklı yani 0, 1, 2, 3 çok fazla renk değeri var.
+
+95
+00:12:35,347 --> 00:12:38,347
+Ve kuantize edilmediğinde.
+
+96
+00:12:40,052 --> 00:12:50,131
+Farklı renkler çok fazla bir arada olduğunda böyle olabiliyor. Az önce ilk başta, önceden çalıştırılmış Lena imgesini göstermiştim. Orada daha kısa çalışıyor mesela.
+
+97
+00:12:51,131 --> 00:12:53,451
+Evet, %90'a geldik.
+
+98
+00:13:04,019 --> 00:13:23,220
+Orijinal size mi? Onları şöyle nasıl böleceğim? 25. Evet, 25 kilovayt gibi. Daha doğrusu şöyle, açıkçası bunlar… Kuantaze ettiğinde çok azalmış. Evet. Yani çok az bir küçülme var. Evet.
+
+99
+00:13:29,620 --> 00:13:30,940
+O dekompresiymiş.
+
+100
+00:13:31,160 --> 00:13:35,480
+Bu arada bir kayıp olmadığını göstermek için, saycılarını şey yapmak için.
+
+101
+00:13:36,140 --> 00:13:38,560
+Beşte birine neredeyse düşmüş.
+
+102
+00:13:39,280 --> 00:13:42,520
+Yüzde seksene yakın orijinalden bir sıkıştırma yapmış.
+
+103
+00:13:43,340 --> 00:13:51,560
+Kuantize edilmiş halini de orijinale kıyasla yüzde seksen iki nokta doksan dört, kuantize haline kıyasla yüzde seksen üç tüküstürmüş.
+
+104
+00:13:53,203 --> 00:13:54,143
+Bir daha söyle.
+
+105
+00:13:54,143 --> 00:14:07,623
+Şöyle, orijinal imgeye kıyasla yüzde 82.94 sıkıştırmış kuantize ettiğim zaman, rengini indirgediğim zaman. Ama direkt kuantize edilmiş resmi verip sıkıştırmış zaman yüzde 83.
+
+106
+00:14:08,843 --> 00:14:18,103
+[kişisel bilgi]
+
+107
+00:14:18,740 --> 00:14:26,379
+[kişisel bilgi]
+
+108
+00:14:27,039 --> 00:14:27,819
+[kişisel bilgi]
+
+109
+00:14:33,491 --> 00:14:42,251
+[kişisel bilgi]
+
+110
+00:14:47,059 --> 00:14:50,179
+[kişisel bilgi]
+
+111
+00:14:52,399 --> 00:14:53,199
+[kişisel bilgi]
+
+112
+00:14:53,439 --> 00:14:55,039
+[kişisel bilgi]
+
+113
+00:14:55,740 --> 00:14:56,059
+[kişisel bilgi]
+
+114
+00:14:56,699 --> 00:14:59,779
+[kişisel bilgi]
+
+115
+00:15:05,120 --> 00:15:11,919
+[kişisel bilgi]
+
+116
+00:15:12,659 --> 00:15:18,679
+[kişisel bilgi]
+
+117
+00:15:19,700 --> 00:15:22,779
+[kişisel bilgi]
+
+118
+00:15:22,779 --> 00:15:27,420
+[kişisel bilgi]
+
+119
+00:15:27,879 --> 00:15:28,620
+[kişisel bilgi]
+
+120
+00:15:28,620 --> 00:15:29,560
+[kişisel bilgi]
+
+121
+00:15:29,940 --> 00:15:33,660
+[kişisel bilgi]
+
+122
+00:15:33,660 --> 00:15:38,600
+[kişisel bilgi]
+
+123
+00:15:39,160 --> 00:15:43,519
+[kişisel bilgi]
+
+124
+00:15:44,532 --> 00:15:50,992
+[kişisel bilgi]
+
+125
+00:15:51,592 --> 00:15:54,972
+[kişisel bilgi]
+
+126
+00:15:55,471 --> 00:16:22,351
+[kişisel bilgi]
+
+127
+00:16:23,860 --> 00:16:41,320
+Bunu tekst gibi düşündün. Evet, daha rahat olur diye düşündüm. Peki, nasıl bir yol izledin? Aslında şöyle aritmetik kodik izledim buradan. Aritmetik kodlama yaptım. Biraz internetten yardım aldım. Biraz kendim yapmaya çalıştım. Ne yapabilirim de?
+
+128
+00:16:42,388 --> 00:16:52,048
+Mesela aritematik kodinkte ben derste karakterlerin olasılıklarını çıkarıyorduk ve hesaplanıyordu. Burada sen neyi aldın?
+
+129
+00:16:52,048 --> 00:17:06,048
+Ben de karakterlerin asli kodlarını çıkartıp onların sıklıklarını oluşturuyorum. O sıklıklarına göre kümülatif şeklinde topluyorum listemde. Daha sonra aradıklarını...
+
+130
+00:17:08,147 --> 00:17:16,367
+Alarak yani low-high değeri olarak alarak yeni low-high değillerini oluşturuyorum. Öyle söylüyor.
+
+131
+00:17:17,487 --> 00:17:30,167
+Şunu sormak istedim. Şimdi Jason'da da XML'de de çok tekrar eden patronlar var. Aslında kalıplar var. O kalıpları karakter karakter değil de mesela end kalıbı.
+
+132
+00:17:31,284 --> 00:17:39,264
+Table diye bir kalıp. Bunları böyle sıkıştırmayı düşünmedim mi? Yani karakter değil de o etiketin tamamını.
+
+133
+00:17:39,796 --> 00:17:44,675
+Yok hocam, ben tekst olarak yaptım.
+
+134
+00:17:44,675 --> 00:18:03,796
+Aslında bu egzemel, Jason gibi şeylerde sıkıştırmanın farkı o. Karakter bazlı değil de onların içerisinde tekrar eden, çok sık geçen patronlar var. Onları bir kelime gibi düşünüp kelimelere bir kod veriyorsun. Mesela ending kodu 1-1.
+
+135
+00:18:04,500 --> 00:18:15,820
+Yoksa sen üç tane karakterin koduyla endikodlayacaksın. Peki, bir kodun da ilerle. Nerede ne yaptığını bir söyle.
+
+136
+00:18:16,599 --> 00:18:24,440
+Şurada sıklıklarını çıkartıyorum. Bir sıklık tablosu oluşturuyorum. 256'ya kadar. 256. karakteri de endofen, bitiriş olarak alıyorum.
+
+137
+00:18:27,284 --> 00:18:41,284
+Sonra bunların numara karşılıklarını yazıyorum dosyaya. Sonra kompres yapıyorum, sıkıştırıyorum. Enkoder'la şu ayetin içerisinde update'li.
+
+138
+00:18:41,284 --> 00:18:52,284
+Burada range değerimi alıyorum. Bunu kümülatif topladıktan sonra yapıyorum. 0-0, 0-4 veya 0-8 geldikçe değerler.
+
+139
+00:18:52,980 --> 00:18:59,559
+Burada low high değerlerimi aldıktan sonra yeni low oluşuyorum.
+
+140
+00:19:00,880 --> 00:19:04,059
+Çarp, toplama bölüp toplam karakter.
+
+141
+00:19:05,059 --> 00:19:08,880
+Tamam, o kadar detaya gerek yok. Biliyoruz zaten algoritmayı.
+
+142
+00:19:10,079 --> 00:19:15,780
+Sonrasında bunların bit karşılıklarını yazıyorum hocam.
+
+143
+00:19:16,780 --> 00:19:17,940
+Enkoder'da.
+
+144
+00:19:19,251 --> 00:19:24,251
+Şimdi de oluşturup…
+
+145
+00:19:24,251 --> 00:19:36,251
+Aritmatik codingde de mesela header'ı nasıl gönderdin? Bir tablomuz vardı bizim. Burada da öyle bir şey mi oluşturdun? Karşı taraf neye göre açacak bunu?
+
+146
+00:19:39,092 --> 00:20:06,092
+Aslında öyle bir şey yapmadım hocam, öyle söyleyeyim. Yani düşünmedim, header tarafını hiç düşünmedim, öyle söyleyeyim. Peki nasıl bunu açıyorsun geri? Aynı kodun içinde açıyorsun ve kapatıyorsun. Yok, aynı kodun içerisinde değil aslında. Farklı bir API olarak yazmıştım onu. Yine dosyayı aldıktan sonra 256 şeklinde dönüp...
+
+147
+00:20:06,324 --> 00:20:11,104
+Değerleri set ediyorum aslında başta. Yine tablo oluşturuyorum.
+
+148
+00:20:11,104 --> 00:20:12,844
+Üniversitesi tablosu, sıklık tablosu.
+
+149
+00:20:13,524 --> 00:20:18,544
+İşte bu tabloyu nasıl götürüyor? Yani dekompress tarafına bu tabloyu nasıl iletiyorsun?
+
+150
+00:20:23,028 --> 00:20:29,768
+Karşı tarafın bunu açabilmesi için karakterlerin sıklıklarını bilecek ki ona göre açacak.
+
+151
+00:20:48,115 --> 00:21:04,255
+Ben hatırlayamadım hocam nasıl yaptım. Peki çalıştır bakayım. Böyle küçük bir resim alalım, çok uzun sürmesin. Resimle alalım diyoruz yani bir tane dosya.
+
+152
+00:21:04,948 --> 00:21:18,248
+Mesela RNA falan filan bunlar bir JSON ya da XML dosyası değil ki. Bir tane JSON dosyasını al. Tamam şu JSON dosyasını alın. Veya şey kitap users'larla ilgili bir JSON dosyası vardı. Tamam.
+
+153
+00:21:18,248 --> 00:21:21,888
+Bunu alıp gönderelim.
+
+154
+00:21:26,963 --> 00:21:28,460
+Tamam mı amca?
+
+155
+00:21:32,147 --> 00:21:42,147
+Bu şekilde sıkışıyor hocam. Kaçtan kaça indi? Tamam, içine baktığımızda anlamayız. Orijinali neydi, ne oldu?
+
+156
+00:21:42,147 --> 00:21:52,147
+Orijinali 25.529 kb'dir hocam. 16.581 kb'ye düştü.
+
+157
+00:21:54,003 --> 00:22:03,443
+Zaten o label'ları alsaydın çok daha iyi şey olacaktı. Sıkıştırılacaktı. Tamam geri aç bakayım. Kayıplı mı yapıyorsun, kayıpsız mı?
+
+158
+00:22:04,483 --> 00:22:05,603
+Kayıpsız yapıyorum hocam.
+
+159
+00:22:18,836 --> 00:22:20,955
+25, 25, 29.
+
+160
+00:22:21,455 --> 00:22:22,955
+Orijinaliyle aynı mı?
+
+161
+00:22:23,495 --> 00:22:24,596
+Orijinaliyle aynı hocam.
+
+162
+00:22:27,296 --> 00:22:29,695
+Dur, kesinlikle aynı şeyi de göreyim.
+
+163
+00:22:30,435 --> 00:22:31,756
+Bunun orijinali hangisi?
+
+164
+00:22:33,056 --> 00:22:34,235
+Şu C kitap mı?
+
+165
+00:22:35,756 --> 00:22:36,276
+Bir dakika.
+
+166
+00:22:36,475 --> 00:22:37,135
+O altındaki.
+
+167
+00:22:37,796 --> 00:22:39,675
+O sıkıştırılmış hali.
+
+168
+00:22:44,596 --> 00:22:51,636
+Şu orijinali. Orijinali buydu. Şu sıkıştırılmış aydı. Şu tekrardan de kompleş edilmiş aydı.
+
+169
+00:22:52,456 --> 00:23:05,096
+[kişisel bilgi]
+
+170
+00:23:06,376 --> 00:23:08,596
+[kişisel bilgi]
+
+171
+00:23:08,776 --> 00:23:09,016
+[kişisel bilgi]
+
+172
+00:23:12,084 --> 00:23:14,524
+[kişisel bilgi]
+
+173
+00:23:14,624 --> 00:23:15,164
+[kişisel bilgi]
+
+174
+00:23:15,344 --> 00:23:17,924
+[kişisel bilgi]
+
+175
+00:23:22,195 --> 00:23:48,095
+[kişisel bilgi]
+
+176
+00:23:50,195 --> 00:23:52,756
+Hangi sıkıştırma yöntemini kullandın?
+
+177
+00:23:52,756 --> 00:23:55,355
+Hoofman'da sıkıştırdım.
+
+178
+00:23:55,355 --> 00:24:00,155
+Zaten şey hocam, Hoofman'da ödevim konusu, ikinci ödev.
+
+179
+00:24:00,155 --> 00:24:00,796
+Tamam.
+
+180
+00:24:00,796 --> 00:24:03,036
+Kalı Tebbi Hoofman'la sıkıştırmaktı.
+
+181
+00:24:03,036 --> 00:24:04,036
+Tamam.
+
+182
+00:24:06,036 --> 00:24:09,115
+Hocam benim kodda şöyle küçük bir sorun var.
+
+183
+00:24:09,115 --> 00:24:12,316
+Heather bilgisini tam şey yapamıyorum.
+
+184
+00:24:12,316 --> 00:24:15,675
+Renklilik olsa da gri çıktı elde ediyorum.
+
+185
+00:24:15,759 --> 00:24:24,220
+Yani o Color Table'ın karşılığındaki şeyi elde edemiyorum tam olarak. 0-255'le çeviriyorum ama gri kalıyor.
+
+186
+00:24:24,220 --> 00:24:31,640
+Şimdi bir saniye, Color Table deyince ben şunu anlıyorum. Elinde 256 renklik bir resim olabilir.
+
+187
+00:24:32,180 --> 00:24:32,559
+Evet.
+
+188
+00:24:33,119 --> 00:24:39,980
+Zaten o Color Table'da da her renk kodunun karşılığında Red, Green, Blue değeri var.
+
+189
+00:24:41,268 --> 00:25:03,648
+Yani şöyle söyleyeyim, kırmızıyı 8 biti kopuyor. Sen de alıyorsun bu 256 tane farklı rengi kullanım sıklıklarını çıkarıp Hoffman kodlarını oluşturuyorsun. Açarken ne yapıyorsun da gri çıkıyor onu anlayamadım.
+
+190
+00:25:09,268 --> 00:25:18,268
+Ben bir şey çıkartabiliyorum. Dosyanın boyutu aynı oluyor ama o dediğimiz sıfırın karşılığındaki renk karşılığını aktaramadım.
+
+191
+00:25:18,268 --> 00:25:22,268
+Ama sen renkleri değiştiriyor musun ki?
+
+192
+00:25:22,612 --> 00:25:37,052
+Yok, hayır. Bir daha geri kapatırken şey yapamadım. Hayır, şöyle bir şey yapma sakın. Byte olarak tanımlıydı, sonra gört olarak tanımladın, bir şey yaptın. Yok hocam, göstereyim. Tamam, göstermek istiyorum.
+
+193
+00:25:37,052 --> 00:25:48,252
+Şimdi kodu ilk başta anlatayım hocam. Burada direkt gömülü olarak şu an test edeceğimiz için. Dosya normalde temlerden okuyor mu? Şu an gömülü.
+
+194
+00:25:48,607 --> 00:26:07,548
+Aldıktan sonra hocam dosyayı ilk önce bir histogram hesaplatıyorum. Histogramdan sonra Hufman ağacını oluşturuyorum. Hufman'dan sonra ağaç oluşturuluyor. Ağaçtaki bilgilere göre de bu data kısmını yani fotoğrafın matriz kısmını sıkıştırmaya başlıyorum.
+
+195
+00:26:08,564 --> 00:26:20,564
+Sıkıştırdıktan sonra hocam, 1-0 diye uzunca bir string elde ediyorum. Bu stringte de 8'i 8'i bölerek byte'ları elde etmeye başlıyorum.
+
+196
+00:26:20,564 --> 00:26:29,564
+Byte'ları elde ettikten sonra byte'ları yine, text array dedim burada ama byte'ları yine dosyama koyuyorum.
+
+197
+00:26:29,564 --> 00:26:35,564
+Sıkıştırılan dosyada öncelikle dosyanın ismini saklıyorum. Geri açarken o dosya ismiyle açmak için.
+
+198
+00:26:36,211 --> 00:26:44,211
+Sonrasında bir data kısmını saklıyorum. Burada Hook One Tree'yi yolluyorum. Daha basit bir şekilde.
+
+199
+00:26:44,211 --> 00:26:54,211
+Geri işimi sıkıştırdığım zaman hocam tam sekiz, sekizli sekizli bölemiyorum. Bazen dört, üç kalabiliyor sonda. Oraları sıfır ekliyorum.
+
+200
+00:26:54,211 --> 00:27:01,932
+O sıfırları silmek için de burada bir tane Lent tutuyorum. O fazlalığı atmak için, yanlış bir şey oluşturmaması için.
+
+201
+00:27:02,516 --> 00:27:06,675
+Daha sonra biter height ve dimension'a gönderiyorum. Dosya yazıyorum.
+
+202
+00:27:07,235 --> 00:27:10,995
+Dosyayı okuduktan sonra da decompress yolluyorum.
+
+203
+00:27:11,715 --> 00:27:17,955
+Decompress'ten gelen diziyi matrice çevirip, normalde burada decompress atıp da bir dizi geliyor.
+
+204
+00:27:18,355 --> 00:27:23,475
+O diziyi kullanarak da matrice'i geri elde edip, geri yazıyorum burada.
+
+205
+00:27:26,355 --> 00:27:29,276
+Anlattığımda ters bir şey yokmuş gibi duruyor.
+
+206
+00:27:29,276 --> 00:27:36,796
+Evet hocam zaten hatta şey, kodu çalıştırayım. Çıktılar da tam olarak demek istediğimi göstereceğim.
+
+207
+00:27:36,796 --> 00:27:37,395
+Tamam.
+
+208
+00:27:37,395 --> 00:27:45,395
+Mesela şurada sizin verdiğiniz şey kullanmıştım ben. Şurada niye? Renkli ikiyi kullanacağım.
+
+209
+00:27:45,395 --> 00:27:49,875
+Şöyle bir dakika da çalıştırmayacağım. Bir saniye.
+
+210
+00:27:57,107 --> 00:28:00,367
+Sıkıştırmaya başladı hocam. Sıkıştırınca şurada bir dosya ismi oluşturacağız.
+
+211
+00:28:06,163 --> 00:28:28,523
+Şimdi burada bunu sıkıştırdı hocam. Şöyle. Normalde 34 diye başlayan bir sayı. Ben bunu 9'a kadar indiriyorum sıkıştırdığımda. Şimdi biraz sonra geri açacak.
+
+212
+00:28:28,523 --> 00:28:33,104
+Yine 33, 34 diyorsun ama renkler sakitliyor.
+
+213
+00:28:33,536 --> 00:28:48,695
+Şimdi hemen göstereceğim. Şurada gri oluşuyor. Özelliklerini göstereyim hemen. Sol tarafta orijinal görüntü, sağda da benim oluşturdum. Birebir hani 362'ye kadar.
+
+214
+00:28:48,695 --> 00:28:51,536
+Renk nasıl oluyor da değişiyor?
+
+215
+00:28:51,615 --> 00:29:05,355
+İşte hocam, şu bisiklik boyutla alakalı diye düşünüyorum. Burada bir durum var. Boyutlar aynı, birebir aynısını çıkartacağım ama o kısmı aktaramadım. Yani bilmiyorum. Bana da çok saçma geldi. Bütün madresi inceledim.
+
+216
+00:29:05,940 --> 00:29:18,700
+Yani öyle bir şey oluyor ki, gri seviyesinde bir şey düşüyor. Ben yeniden söyleyeceğim. Yani sanki 8 bit değil de 7 bit ile işlem yapıyormuşsun gibi.
+
+217
+00:29:19,420 --> 00:29:33,039
+Yok hocam, şöyle inceledim. Hatta matrisleri de karşılaştırdım. Birebir aynı matrisler. Daha sonrasında dediğim gibi dosya boyutlarına da baktım. Dosya boyutları da son byte'ına kadar aynı.
+
+218
+00:29:33,844 --> 00:29:39,844
+Ama dediğim gibi o kalır kısmını aktaramadım. Renk bilgisini aktaramadım. Ben niye gitmedi onu bilmiyorum.
+
+219
+00:29:39,844 --> 00:29:45,844
+Yani sıkıştırdığım şeyi açtığımda grey seviye, grey lexif geliyor.
+
+220
+00:29:45,844 --> 00:29:56,844
+Evet. Şu son kısımda şu görüntüyü tam olarak yazma fonksiyonuyla belki çözemedim ama bayağı aradaşladım. Bir haftadır buna çalışıyorum ama...
+
+221
+00:30:00,000 --> 00:30:02,480
+Şey kullanır diyor, kalır palet olarak yazar diyor.
+
+222
+00:30:03,140 --> 00:30:07,620
+RGB karşılığı olarak yazar diyor ama o kısmı tam bir şey yapamadılar.
+
+223
+00:30:09,059 --> 00:30:12,240
+Neyse onu şimdi ben de bir şey söyleyemem.
+
+224
+00:30:12,819 --> 00:30:17,519
+Basit bir şey olması lazım. Gözünden kaçıyor. Acaba ne? Bilmiyorum.
+
+225
+00:30:19,028 --> 00:30:30,107
+Peki [öğrenci], bu gösterenler raporlarını koymayı unutmasınlar. Defalarca söylüyorum. Çünkü her dönem unutan çıkıyor. Peki sağ ol, teşekkür ederim.
+
+226
+00:30:30,107 --> 00:30:31,008
+Tamam hocam.
+
+227
+00:30:31,647 --> 00:30:44,567
+[kişisel bilgi]
+
+228
+00:30:46,291 --> 00:31:13,971
+Duyuyor musunuz hocam? Tamam. Bu arada [öğrenci]'un karşılaştığı sorunla ben ve birkaç arkadaşlar karşılaştık. Sorun hocam header bilgisiyle alakalı diye düşündük en sonunda. Siz çözünüz mü? Yok biz de çözemedik çünkü BMP'nin özelliği o. Yani şöyle biz çevirince matris olarak tekrardan döndürüyoruz ya. Evet. Sıfırdan bir imgi oluşturduğumuzda onu default olarak gri olarak algılayıp.
+
+229
+00:31:14,256 --> 00:31:20,596
+O header'ı ona göre oluşturuyor. Tekrardan sizin header'ı oluşturmanıza da imkanı tanımıyor. Yani BMP'nin de üzerinde bir problem.
+
+230
+00:31:24,627 --> 00:31:26,627
+Ben ekran paylaşayım.
+
+231
+00:31:30,627 --> 00:31:33,627
+Hocam ben çok basit bir arayüz yaptım.
+
+232
+00:31:33,627 --> 00:31:34,627
+Tamam.
+
+233
+00:31:38,627 --> 00:31:46,627
+Şuradan şöyle. Bir tane imge seçiyoruz buradan. Lena'yı seçtim atıyorum. Tek kompresidir diye bir şey.
+
+234
+00:31:47,059 --> 00:31:48,379
+O ne demek?
+
+235
+00:31:48,980 --> 00:31:51,879
+Yani iki farklı header denedim. Şunu görebiliyor musunuz?
+
+236
+00:31:51,960 --> 00:31:52,740
+Evet, görüyorum.
+
+237
+00:31:53,279 --> 00:31:59,915
+İki farklı header denedim. İşte birincisinde ilk header'da direkt hangi değerin karşılığı, hangi...
+
+238
+00:32:00,084 --> 00:32:07,304
+Ne bitse onu yazıp yolladım. Diğerinde de ağacı yolladım. Bu ikisinin karşılaştırmasına ne kadar fark var birbirlerine?
+
+239
+00:32:07,304 --> 00:32:09,683
+Evet, hederi küçültüyor mu, büyültüyor mu?
+
+240
+00:32:09,923 --> 00:32:10,284
+Evet.
+
+241
+00:32:11,584 --> 00:32:12,644
+Ne gördün sonuç?
+
+242
+00:32:13,084 --> 00:32:19,344
+Ağaç olarak yolladığımızda dekompress tarafında daha yavaş olsa da daha fazla sıkıştırabiliyoruz.
+
+243
+00:32:19,544 --> 00:32:19,824
+Evet.
+
+244
+00:32:20,403 --> 00:32:25,824
+Diğer tarafta tekrardan ağacı oluşturmamız gerekiyor. Burada kompres dediğimde işte kompres hep başlıyor.
+
+245
+00:32:26,264 --> 00:32:28,024
+İmiciğim küçük olduğu için hemen gelmesi lazım.
+
+246
+00:32:28,024 --> 00:32:30,943
+Şeyi seçtim dedin Lena. Lena'nın resmini göstermedi.
+
+247
+00:32:31,524 --> 00:32:32,644
+Göstereyim hocam hemen.
+
+248
+00:32:33,003 --> 00:32:35,144
+Hayır hayır. Şeyde, arayüzünde.
+
+249
+00:32:35,923 --> 00:32:41,503
+Burada göstermedim evet. Şurada Lena BMP olarak seçtiğim file'ın adını yazmıştım sadece.
+
+250
+00:32:42,355 --> 00:32:48,355
+İşte bu kompres dediğimde şuraya kompres ettiği Hufman şeyini geliyor işte Modified.
+
+251
+00:32:48,355 --> 00:32:54,355
+Şimdi gelen. Bunu tekrardan işte buradan geleyim, bunu seçeyim tekrardan.
+
+252
+00:32:54,355 --> 00:33:01,355
+İşte değişti. Decompress dediğimde de şuraya bu Lena'nın imgesini atıyor. Orada da işte Modified'ın üzerinde.
+
+253
+00:33:01,355 --> 00:33:05,215
+Aynısı geliyor yani. Aslında burada biraz işte decompressed.
+
+254
+00:33:05,215 --> 00:33:15,115
+Compress uzun olduğu için script yazdım bir tane. Orada da ne yapıyor? İşte bir tane imgi alıyor. Şu imgi 2'ye alsın atıyorum. Şuna.
+
+255
+00:33:15,667 --> 00:33:17,387
+Görüntü buldum internetten.
+
+256
+00:33:17,827 --> 00:33:24,327
+İşte alıyor. Ondan sonra bizim ağaç oluşturduğumuzla bir kompres, decompress ediyor.
+
+257
+00:33:24,887 --> 00:33:29,627
+Sonra arasında eğer fark yoksa, işte image compression, decompression, okey yazıyor şurada.
+
+258
+00:33:30,407 --> 00:33:40,567
+Diğer türlü de aynısını yapıyor. Yani header bilgisini göndermeden, yani ağacı göndermeden direkt değerleri gönderip yapıyor ve birbiriyle karşılaştırıyor.
+
+259
+00:33:41,707 --> 00:33:42,427
+Şöyle.
+
+260
+00:33:43,028 --> 00:33:55,628
+Ben kapatayım şunları. Çalıştırayım. Sıkıştırma işlemini yapıyor. Hedro olarak. Yüzde on beş sıkıştırdı. Diğerini de yüzde on iki sıkıştırdı.
+
+261
+00:33:57,468 --> 00:34:04,868
+Yüzde on iki olan ağaç gönderdiğin mi? O yüzde on iki ne demek? Yüzde seksen mi?
+
+262
+00:34:05,375 --> 00:34:12,416
+Bu compression performans hocam da compression ratio. Compression ratio 0.84'den 87'ye çıkmış.
+
+263
+00:34:12,416 --> 00:34:26,376
+Yani aslında şurada göstereyim. Burada mesela şu imgeler. Tamam tamam anladım anladım. Bir de şey denedim işte bu. Quantization artırırsak ne olur?
+
+264
+00:34:26,768 --> 00:34:52,688
+Bu Lena'nın orijinal resiminde %6'lık performans geliyor. Ama quantizationı 32'den giderek düşürürsek performansımız artmaya devam ediyor. Bu şekilde. Ağaçlarımı da oluşturuyorum aslında her seferinde. İşte şurada biraz önceki görüntü için çok büyük bir ağaç var. Bunu nasıl anlayabiliriz? Şurada mesela bir tane göstereyim hemen en kısa olanı.
+
+265
+00:34:53,039 --> 00:34:56,279
+Mesela şu kırmızılar sıfır. Siz göremiyor olabilirsiniz tabii.
+
+266
+00:34:56,460 --> 00:34:58,680
+Yok, görüyorum. Kırmızı ve maviler var.
+
+267
+00:34:59,079 --> 00:35:09,039
+Bu kırmızılar sıfır. Mesela bu en üstteki ruttan sıfır. Burada sıfır yine. Şurası da...
+
+268
+00:35:09,579 --> 00:35:10,800
+Geliyorum.
+
+269
+00:35:11,820 --> 00:35:14,260
+Altında o kadar çok alt dallar var ki.
+
+270
+00:35:14,260 --> 00:35:16,600
+Evet. Sıfır, sıfır.
+
+271
+00:35:18,592 --> 00:35:19,971
+Neyse ya, kaç bitlik?
+
+272
+00:35:19,971 --> 00:35:20,811
+Neyse, ödüm bitlik.
+
+273
+00:35:20,912 --> 00:35:21,252
+Evet.
+
+274
+00:35:22,012 --> 00:35:24,711
+Akıl kârı değil yani orada ilerlemek.
+
+275
+00:35:25,431 --> 00:35:33,072
+Şurada aynalarının bit karşılıklarını yazıyorum. Kimisi uzun, kimisi kısa çıkıyor. Genelde mesela sıfır olanlar, biraz önceki bilmedi.
+
+276
+00:35:33,332 --> 00:35:35,851
+O iki bitli ifade edilen beyaz mı?
+
+277
+00:35:36,271 --> 00:35:38,132
+Sıfır hocam, siyah olması lazım.
+
+278
+00:35:38,211 --> 00:35:38,492
+Siyah.
+
+279
+00:35:40,492 --> 00:35:44,271
+Doğru, beyaz 254 de o resimde, 255 beyaz.
+
+280
+00:35:44,271 --> 00:35:45,092
+Tamam.
+
+281
+00:35:45,811 --> 00:36:12,072
+[kişisel bilgi]
+
+282
+00:36:13,523 --> 00:36:18,523
+[kişisel bilgi]
+
+283
+00:36:18,863 --> 00:36:25,083
+[kişisel bilgi]
+
+284
+00:36:25,144 --> 00:36:31,804
+[kişisel bilgi]
+
+285
+00:36:32,144 --> 00:36:33,103
+[kişisel bilgi]
+
+286
+00:36:33,443 --> 00:36:34,703
+[kişisel bilgi]
+
+287
+00:36:35,483 --> 00:36:39,423
+[kişisel bilgi]
+
+288
+00:36:39,791 --> 00:36:47,851
+[kişisel bilgi]
+
+289
+00:36:48,011 --> 00:36:48,331
+[kişisel bilgi]
+
+290
+00:36:52,275 --> 00:37:10,895
+[kişisel bilgi]
+
+291
+00:37:18,612 --> 00:37:42,851
+Bu görüntüyü okudum input olarak. Daha sonra bu okuduğum input array'ini bitstream için, öncelikle bin count'ta her pikselden kaç tane var, bu histogramlarını çıkarttım. Daha sonra probability'lerini hesapladım. Probability'lerini oluşturduktan sonra da Huffman ağacını oluşturdum.
+
+292
+00:37:43,347 --> 00:38:02,747
+Daha sonra ağaç üzerinde traverse edip, yani iterate edip işte bu bit stringlerini oluşturdum. Onu da şöyle göstereyim. Hem probability değerini hem de şöyle. Burada olasılık değerlerini görüyorsunuz. Her piksel değeri için 0, 1'den işte 255'e kadar gidiyor.
+
+293
+00:38:12,371 --> 00:38:21,371
+Bitstream'lerini oluşturdum. Yani kodlarını oluşturdum. Bu şekilde burada sıralı değiller ama işte ortalama hemen hemen hepsini görebiliyorsunuz.
+
+294
+00:38:21,371 --> 00:38:27,980
+Oluşturduktan sonra işte bütün array'i ilk başta flatten edip enkode ettim.
+
+295
+00:38:28,083 --> 00:38:40,384
+Enkode ettikten sonra ben hızlı olması açısından dosyayı dump etmedim. Zaten tek bir stream halinde olduğu için onlar. Daha sonra okuyup şeyi de bildiğimiz için, ben bunları bir dikşineride kaydetmişim.
+
+296
+00:38:40,384 --> 00:38:48,243
+Gösterdiğim şunu, yani şunun değerinin bu olduğu, bunun değerinin de şu olduğu zaten içeride bunu kaydettim.
+
+297
+00:38:55,572 --> 00:39:08,572
+Dekod ettim. Dekod ettiğim yeri de göstereyim. Burada okuyup dekod ettim. Dekod ettikten sonra da dosyayı yazdım. Bu şekilde şurada decoded olanını görelim.
+
+298
+00:39:08,572 --> 00:39:11,572
+Bu arada senin resimlerin turuk kalır mı?
+
+299
+00:39:11,572 --> 00:39:13,572
+Evet. Tamam.
+
+300
+00:39:13,572 --> 00:39:21,572
+Bu şekilde. Hatta çalıştırayım hocam. Compression rate'i de görelim.
+
+301
+00:39:23,380 --> 00:39:31,380
+Hızlı çalışıyor zaten. Tamam, decode da etti. Şimdi şurada göstereyim aslında daha güzel gözükür.
+
+302
+00:39:31,380 --> 00:39:40,380
+Burada input bit sayısı var, output bit sayısı var. %9'luk bir sıkıştırma yüzdesi elde etmişiz.
+
+303
+00:39:40,380 --> 00:39:48,332
+Burada şu formülü kullandım ben. Bit sayılarına bakarak hesapladım ve %9'luk bir sonuç elde ettim.
+
+304
+00:39:48,628 --> 00:39:59,108
+Aslında başka görüntü de denedim ama onda daha fazla renk vardı. Zannediyorum ondan dolayı biraz daha düşük bir, yani 1.7 küsür bir şey elde ettin, sonuç elde ettin.
+
+305
+00:40:00,000 --> 00:40:10,000
+Quantization yapmazsan görüntüde çok yüksek başarı alamazsın. Yani sıkıştırma performansı yüksek çıkar. Sen quantization yapmadın çünkü.
+
+306
+00:40:10,560 --> 00:40:23,720
+Yok, hani şöyle bir şey yaptım aslında. Hani bunu da internetten gördüm. Bu şeyleri, RGB bantların değerlerini verirken onları belli, hani piksel değerlerini düşürmek için belli ağırlıklarla çarpmış.
+
+307
+00:40:23,720 --> 00:40:27,980
+Onu uyguladım. O şekilde böyle çıktı. Yani hem bu şeyi de elde etmiş olduk.
+
+308
+00:40:28,000 --> 00:40:42,100
+Hızı da kazanmış olduk. Onu 0-1 alanında bir weight ile çarpıp o piksel değerlerini daha düşük bir aralığa çekmiş olduk. Bu şekilde hocam. Ben başka sorunuz varsa cevaplayayım hocam.
+
+309
+00:40:43,300 --> 00:40:46,620
+[kişisel bilgi]
+
+310
+00:40:46,900 --> 00:40:47,440
+[kişisel bilgi]
+
+311
+00:40:48,040 --> 00:40:49,600
+[kişisel bilgi]
+
+312
+00:40:50,160 --> 00:40:51,120
+[kişisel bilgi]
+
+313
+00:40:54,708 --> 00:40:58,367
+[kişisel bilgi]
+
+314
+00:41:00,687 --> 00:41:05,167
+[kişisel bilgi]
+
+315
+00:41:07,507 --> 00:41:08,467
+[kişisel bilgi]
+
+316
+00:41:09,347 --> 00:41:11,047
+[kişisel bilgi]
+
+317
+00:41:11,708 --> 00:41:16,748
+[kişisel bilgi]
+
+318
+00:41:16,807 --> 00:41:17,708
+[kişisel bilgi]
+
+319
+00:41:20,692 --> 00:41:39,432
+[kişisel bilgi]
+
+320
+00:41:47,679 --> 00:41:48,859
+[kişisel bilgi]
+
+321
+00:41:48,879 --> 00:41:51,039
+[kişisel bilgi]
+
+322
+00:41:51,579 --> 00:41:52,819
+[kişisel bilgi]
+
+323
+00:41:53,099 --> 00:41:55,639
+[kişisel bilgi]
+
+324
+00:41:57,259 --> 00:42:00,339
+[kişisel bilgi]
+
+325
+00:42:00,339 --> 00:42:05,379
+[kişisel bilgi]
+
+326
+00:42:05,699 --> 00:42:14,179
+[kişisel bilgi]
+
+327
+00:42:14,579 --> 00:42:20,579
+[kişisel bilgi]
+
+328
+00:42:21,579 --> 00:42:30,420
+[kişisel bilgi]
+
+329
+00:42:30,420 --> 00:42:31,619
+[kişisel bilgi]
+
+330
+00:42:33,684 --> 00:42:43,984
+[kişisel bilgi]
+
+331
+00:42:44,824 --> 00:42:51,164
+[kişisel bilgi]
+
+332
+00:42:51,164 --> 00:42:59,924
+[kişisel bilgi]
+
+333
+00:43:01,780 --> 00:43:08,000
+[kişisel bilgi]
+
+334
+00:43:08,000 --> 00:43:17,420
+[kişisel bilgi]
+
+335
+00:43:19,300 --> 00:43:27,780
+[kişisel bilgi]
+
+336
+00:43:28,436 --> 00:43:30,356
+[kişisel bilgi]
+
+337
+00:43:34,291 --> 00:43:35,251
+Devam edeyim mi hocam?
+
+338
+00:43:36,131 --> 00:43:37,851
+Açamıyor musun görüntünü?
+
+339
+00:43:38,131 --> 00:43:39,231
+Açtım ama gelmiyor.
+
+340
+00:43:39,571 --> 00:43:44,791
+Ha, görmüyorum. Ben boşuna mı konuşuyorum ya? Oyalıyorum insanları.
+
+341
+00:43:46,451 --> 00:43:48,511
+Olmuyorsa geç vakit kaybetmeyelim.
+
+342
+00:43:48,511 --> 00:43:50,891
+Diğer şey mi yükselden gözükmesi lazım?
+
+343
+00:43:51,711 --> 00:43:53,531
+Neyse, gözükmedi. Boş ver.
+
+344
+00:43:54,351 --> 00:43:54,611
+Tamam.
+
+345
+00:44:00,052 --> 00:44:24,392
+Proje 2'nin konusu 0.255 arasında renklerden oluşan yani Color Table bir resmi Hufman algoritması ile sıkıştırmak. Projeden istenenler yani 0.255 zaten 8 bit oluyor. Bir resmi Hufman algoritması ile sıkıştırılmak, sıkıştırılan dosyayı decode eden metodu yazmak ve işlem sonucunda bunun bir kayıpsız bir algoritma olduğunu göstermek.
+
+346
+00:44:26,003 --> 00:44:44,483
+Algoritma şöyle çalışıyor. Önce tabi resmi okuyoruz. Sonra iki boyutlu bunun bir ereğe çeviriyoruz piksel değerlerini. Sonra bu piksel değerlerinden oluşan frekansların oluşan bir strut tanımlıyorum. Frekanslarına göre histogram oluşturuyorum. Sonra bunu fupantreye oluşturuyorum.
+
+347
+00:44:51,572 --> 00:44:56,572
+Piksel en küçük bit değerini vererek, hıfman triyı oluşturuyorum. Sonra görüntüyü enkode ediyorum.
+
+348
+00:44:57,572 --> 00:45:01,572
+Sonuç olarak sizin önceden ödevde verdiğiniz...
+
+349
+00:45:01,572 --> 00:45:04,572
+Ya ünlü olacağım bu resimle yani.
+
+350
+00:45:04,572 --> 00:45:05,572
+Evet.
+
+351
+00:45:05,572 --> 00:45:08,572
+Uyduru kaydırıp bir şey yaptım oraya, her renk olsun diye.
+
+352
+00:45:08,572 --> 00:45:09,572
+Tamam.
+
+353
+00:45:09,572 --> 00:45:11,572
+Sekiz bitlik bir resim bu.
+
+354
+00:45:11,572 --> 00:45:18,572
+Bunun compression ratiosu 0.21, sıkıştırma performansı da 178 çıktı.
+
+355
+00:45:19,731 --> 00:45:23,311
+Demoma geçeyim istiyorsanız.
+
+356
+00:45:32,052 --> 00:45:35,152
+Sonumdaki resim buydu.
+
+357
+00:45:37,012 --> 00:45:39,972
+Şu an ben PowerPoint'i görüyorum halen.
+
+358
+00:45:52,019 --> 00:45:58,820
+O paylaşımı kapat, yeniden paylaş deyip screen'e geç. Bana öyle diyordunuz ya.
+
+359
+00:46:02,771 --> 00:46:04,332
+Screen'den yeniden aç.
+
+360
+00:46:12,628 --> 00:46:14,748
+Şu an gözüküyor mu hocam? Evet.
+
+361
+00:46:15,948 --> 00:46:19,288
+Şu an resim... Yok, direktriği görüyorum.
+
+362
+00:46:20,048 --> 00:46:22,448
+Tamam, diğer şeye geçmiyorum o zaman.
+
+363
+00:46:24,387 --> 00:46:29,708
+Resminin özelliklerini gösterecektim de 8 bit olduğunu göstermek için.
+
+364
+00:46:30,028 --> 00:46:32,208
+Tamam, 8 bit olduğuna inandım, evet.
+
+365
+00:46:46,003 --> 00:46:56,103
+Ben C'yi de kodladım hocam. Tamam fark etmez. Burada işte DATS PMP çalıştırıyorum.
+
+366
+00:47:19,092 --> 00:47:21,251
+Şu an ne yapıyoruz? Çalıştırıyor musun?
+
+367
+00:47:21,352 --> 00:47:23,292
+Şu an debugger. Evet hocam, çalıştırıyorum.
+
+368
+00:47:43,188 --> 00:48:06,168
+Sonuçlandı. Bu resim 467, 467'lik 8 bitlik bir resim. Bunun vidin ayetini ve piksel değerlerini okudum. Sonra iki boyutlu piksel erayeni oluşturdum. Gri resimlerden oluşuyor. Yani 131 oda karşılığı.
+
+369
+00:48:06,612 --> 00:48:14,732
+Burada işte burası uzun tabii, 437-437 olduğu için. Aşağıya geçelim.
+
+370
+00:48:19,443 --> 00:48:27,884
+Şimdi 131 en çok tekrarlayan ve frekansın yüksek olduğu için bunun olasılığı yani frekansın yüksek büyükten küçüğe sıraladım bu piksel değerleri de.
+
+371
+00:48:30,443 --> 00:48:40,304
+Ve bunlara ufmak kodları verdim. Burada 131'e en küçük bitlerini vermemiz gerekiyor. Onu da şöyle bakabiliriz.
+
+372
+00:48:40,964 --> 00:48:43,004
+İşte orada var bir tane sıfır.
+
+373
+00:48:43,004 --> 00:48:44,584
+131'e sıfır bitini vermiş.
+
+374
+00:48:45,235 --> 00:49:06,895
+Çünkü frekans en yüksek. En yüksek frekans en küçük bitle vermeyle iski sıkıştırma yüksek olsun. Ortalama biti zonlu 1.31 çıkmış. Sıkıştırılan görüntünün toplam bit uzunluğu bu değer çıkmış. Compression ratio 0.16 çıkmış bu resimde. Compression performance %83 çıkmış.
+
+375
+00:49:09,364 --> 00:49:20,264
+Burada da tabii Huffman Tree'nin karşılıkları var. Dekot işlemi de bundan sonra gerçekleştiriliyor. Huffman Tree bu şekilde. Yani toplayarak gittiği için ağaç oluşturuyor, olasıkları topluyor.
+
+376
+00:49:21,264 --> 00:49:26,423
+Dekot ettiğimizde de, şöyle göstereyim hocam.
+
+377
+00:49:39,987 --> 00:49:41,987
+Şu an bir şey görmüyorum.
+
+378
+00:49:41,987 --> 00:49:43,987
+Bir saniye.
+
+379
+00:49:45,987 --> 00:50:02,859
+Decoded image de böyle tekrar sıkıştırdığım dosya decode ederken kayıpsız olduğunu göstermek için aynı bu piksel erayları bu şekilde decode edebiliyoruz.
+
+380
+00:50:06,099 --> 00:50:07,639
+Yük o düzeninde bu şekilde.
+
+381
+00:50:08,179 --> 00:50:16,019
+Bu gibi şeyde mesela hani bunu çizdirmedin ya, sen başlangıçta Bitmap dosyasını verdin, PNG mi?
+
+382
+00:50:17,279 --> 00:50:17,819
+Bitmap.
+
+383
+00:50:18,339 --> 00:50:22,659
+Bitmap'in başındaki header kısmını olduğu gibi saklardın.
+
+384
+00:50:25,108 --> 00:50:35,608
+Sonra header'dan bunları açtırıp çizdirebilirdin. Hatta buradan 131 kaç tanesinin birinci satırda olacak pikseller olduğunu biliyorsun.
+
+385
+00:50:35,608 --> 00:50:46,367
+131'in renk kodunu basarak da kolon sayısı da olduğunda bir aşağı satıra aynı piksel değerlerini basarak resmi çıkarabilirdin. Peki.
+
+386
+00:50:47,288 --> 00:50:47,847
+Olur.
+
+387
+00:50:48,596 --> 00:50:52,556
+Ben bu PowerPoint sunumunu final dosyası olarak diyebilir miyim hocam?
+
+388
+00:50:52,576 --> 00:50:57,756
+Hayır, PowerPoint sunumu olmaz. Onu lütfen bir yazılı metin haline getir.
+
+389
+00:50:58,416 --> 00:50:58,696
+Tamam.
+
+390
+00:50:59,176 --> 00:51:02,836
+Çünkü sınav evrakı olacak, öyle PowerPoint şeyi olmaz, tamam mı?
+
+391
+00:51:03,156 --> 00:51:05,196
+Tamam, PDF haline getir.
+
+392
+00:51:06,099 --> 00:51:18,339
+Bak, şey, Kimle konuştum? Ha, [öğrenci], PowerPoint'ı PDF haline getirme. Yani şu işlemi yaptım, oradaki tablolarını al, koy, öyle PDF haline getirme.
+
+393
+00:51:18,339 --> 00:51:23,480
+Evet, evet. Yani iki sayfalık istemiştiniz herhalde. Onu ben kısa özetler halde getiririm.
+
+394
+00:51:23,819 --> 00:51:24,460
+Tamamdır.
+
+395
+00:51:25,219 --> 00:51:25,900
+Teşekkürler.
+
+396
+00:51:28,779 --> 00:51:31,940
+Ekranını kapat, paylaşımı durdur.
+
+397
+00:51:33,300 --> 00:51:52,420
+[kişisel bilgi]
+
+398
+00:51:56,115 --> 00:52:16,815
+Hocam mesajda birisi de yazmış ben de geldim diye. Tamam, başa yeniden döneceğim. Şimdi ben kaldığım yerden devam ediyorum. Senin çalışma konu neydi? Metin Sıkıştırma hocam, Al-Azhevay ile. Hangi algoritma ile? Al-Azhevay.
+
+399
+00:52:16,815 --> 00:52:20,815
+Al-Azhevay.
+
+400
+00:52:23,731 --> 00:52:35,731
+Evet hocam. Ben direkt birkaç örnekten yapayım. Şu daha büyük metinlerden göstereyim. Çünkü anlatacağım küçük metinlerde yaşadığım sıkıntıyı.
+
+401
+00:52:35,731 --> 00:52:41,612
+Küçük metinlerde belki de sıkıştırma performansın çok çok düşük olur.
+
+402
+00:52:41,619 --> 00:52:55,619
+Düşük değil hocam ters oldu. Çünkü sözlük boyutu, literatürde özellikle gördüm hep İngilizce için 256 yapmışlar. Ben hani Türkçe metinleri de deneyebilirim diye. Onu biraz daha büyüttüm.
+
+403
+00:53:03,923 --> 00:53:14,104
+O çok etkilemiyor ama küçük metinlerde şöyle sıkıntı oldu. O sözlük boyutu çok fazla şey için.
+
+404
+00:53:15,344 --> 00:53:21,244
+Peki, dolduğu kadarını kullan. Açtığının hepsini niye karşı tarafa taşıyorsun?
+
+405
+00:53:22,547 --> 00:53:34,847
+Bu o kadar aklıma gelmiş. Hocam ben şey yapmaya çalıştım. Metindeki var olan kelimeler, harflerden sözlük oluşturmaya çalıştım ama o bunu bir kompres edince metin alamadım.
+
+406
+00:53:34,847 --> 00:53:40,927
+Bir saniye, sen LZV'de sözlük karakter tabanlı mı oluşturdun?
+
+407
+00:53:41,867 --> 00:53:42,167
+Evet.
+
+408
+00:53:43,067 --> 00:53:44,127
+Pek tek karakter.
+
+409
+00:53:45,396 --> 00:54:10,496
+Başta evet tek karakter sonra büyüyor. Başta işte başta sonucu bu 350'nin onun cevabı tek karakter değil. Başta el ve sonra büyüyor. Mesela şunun gibi biraz daha büyüyor. Mesela tekrarlanmış. O yüzden hani büyük mesela şu kaynaktan doldum. Hani Esya Ev oldu.
+
+410
+00:54:10,831 --> 00:54:34,795
+Farklı, bugünkü. Onu iyi sıkıştırıyor. Yani az çok. Ben iki şeyle yaptım. Çözük uzunluğu sonsuz büyüyor. Sonra biz derste gördüğümüz gibi biraz daha sınırlandırsam sözük boyutunu. Yine farklı sonuç alıyorum. Biraz daha sıkıştırma performansı düşüyor.
+
+411
+00:54:35,251 --> 00:54:50,251
+Mesela aynı korpustan sürekli tekrar eden A-A harflerini sürekli tekrar eden metnin en iyi performans burada gördüm.
+
+412
+00:54:50,420 --> 00:54:57,299
+Yüzde doksan sekiz olarak sürekli tekrarlandığı için. Yine aynı konkursda random kelimeler varmış mesela.
+
+413
+00:54:57,299 --> 00:55:05,059
+Büyük olmasına rağmen yine ters sıkıştırma. Sıkıştıramıyor aslında. Büyüyor tam tersi.
+
+414
+00:55:05,059 --> 00:55:13,139
+Dediğim gibi optimizasyon yapmıyorum. Sadece yaptığım iki tane deneme yaptım. Sözlük boyutu sınırlı.
+
+415
+00:55:13,204 --> 00:55:25,204
+Veya sınırsız büyüyan şeklinde. Bunlar sıkıştırmaya çalışıyor. Dekompres edince alıyorum aslında metinleri geri ama...
+
+416
+00:55:26,260 --> 00:55:47,420
+Büyüyor. 25 byte'dan 40 yıl. Oysan bir tane kantar böreği korkusunu aldın. Mesela onun içinde evet text var ama çok farklı şeyler de var. Ne bileyim içinde bir list dosyası da var. İçinde bir başka şey de var. Yani formatları değişik textler var.
+
+417
+00:55:47,420 --> 00:55:48,100
+Evet.
+
+418
+00:55:48,719 --> 00:55:54,940
+Ben genelde TXT üzerinde çalıştım. Daha bölüm etine yakın olan şeylerden hani.
+
+419
+00:55:54,940 --> 00:56:03,900
+Asa bunun dekompres edilmiş halini göstereyim. Önce bir kompres edilmiş halini görseydim.
+
+420
+00:56:03,900 --> 00:56:11,420
+Burada gördüm. 94. Evet. Mesela bu orijinali.
+
+421
+00:56:17,268 --> 00:56:30,387
+Geri alabiliyorum kayıpsız şekilde. Ama dediğim gibi o sıkıntıyı çözemedim. O dediğiniz şey aklıma gelmedi. Hepsini doldurmamak gibi.
+
+422
+00:56:31,967 --> 00:56:40,108
+Bu da deneyim. Aynı şeyleri ben de yaşamışımdır demek ki. Peki [öğrenci].
+
+423
+00:56:41,652 --> 00:56:48,771
+Bu kadar hocam. Teşekkür ederim. Bir kişiye daha bakıp bir beş dakika ara vereceğim arkadaşlar.
+
+424
+00:56:50,391 --> 00:56:54,331
+Nasıl kapatıyoruz bunu? Stokşehir var en altta.
+
+425
+00:56:58,612 --> 00:57:09,932
+Çıkamıyorum. Dur ben seni atmayı becerirsem atayım ama ben [öğrenci]'yı göremiyorum. Sayamıyorum, aşağıdakiler donmuş. Dur bir dakika, dur.
+
+426
+00:57:14,420 --> 00:57:39,960
+Birazcık bekle. Kanım dondu. Şimdi galiba oldu hocam. Hayır, ben seni attım. Öyle mi? Tamam. Teşekkür ederim. Tamam. [öğrenci]'yı aldık. [öğrenci]. Burada mı? Buradayım hocam. Tamam. [öğrenci], seni de bir hatırlayabilir miyim? Sen de yüksek lisansın değil mi?
+
+427
+00:57:41,396 --> 00:57:47,736
+[kişisel bilgi]
+
+428
+00:57:49,056 --> 00:57:52,576
+[kişisel bilgi]
+
+429
+00:57:52,576 --> 00:57:57,596
+[kişisel bilgi]
+
+430
+00:57:58,136 --> 00:58:00,416
+Tamam. Senin konun ne?
+
+431
+00:58:01,811 --> 00:58:06,771
+Benim de hocam görüntüyü Hufman'la sıkıştırma ve sonrasında dikkat etme.
+
+432
+00:58:07,572 --> 00:58:09,012
+Bende şey var mı? Cooperation?
+
+433
+00:58:10,472 --> 00:58:11,392
+Yok.
+
+434
+00:58:11,771 --> 00:58:12,052
+Tamam.
+
+435
+00:58:17,268 --> 00:58:19,208
+Şimdi hemen ben de paylaşıyorum.
+
+436
+00:58:25,715 --> 00:58:29,415
+Şöyle şurayı altta alabilirim.
+
+437
+00:58:35,603 --> 00:58:38,223
+Hep resimlerin desktopta kalmış.
+
+438
+00:58:39,063 --> 00:58:47,663
+Evet hocam, bilerek oraya koydum. Kodu da buraya attım. Bilerek şey yapayım, direkt aynı yerden erişeyim diye. Çalıştırayım mı?
+
+439
+00:58:49,123 --> 00:58:51,283
+O ilk baştaki o matrisler nedir?
+
+440
+00:58:53,043 --> 00:58:53,983
+Şunlar değil mi?
+
+441
+00:58:54,483 --> 00:58:56,763
+Hayır, hayır. Siyah zeminde, konsolda.
+
+442
+00:58:57,223 --> 00:58:58,884
+Bu şey görüntü matrisleriydi.
+
+443
+00:59:00,467 --> 00:59:09,687
+Hepsini tek tek yazdırıyordu falan. Şimdi ilk olarak hocam sizin yine meşhur görüntüyle başlamak istiyorum.
+
+444
+00:59:09,687 --> 00:59:14,867
+Van Gogh geçtim. Böyle akut resimler yapan Van Gogh muydu?
+
+445
+00:59:17,987 --> 00:59:23,947
+Salvador Dali var. Van Gogh'ta. Birçoğu şey deniyor hocam.
+
+446
+00:59:25,652 --> 00:59:27,652
+Şimdi bunu başlattım.
+
+447
+00:59:27,652 --> 00:59:30,652
+Sesini aklo gittin.
+
+448
+00:59:30,652 --> 00:59:37,652
+Evet. Burada da o sırada şeye bakabiliriz. İlk baştaki boyutuna. Neden açmadın?
+
+449
+00:59:37,652 --> 00:59:40,652
+Şey yaptığı için sanırım.
+
+450
+00:59:40,652 --> 00:59:46,604
+Evet, output'um burada.
+
+451
+00:59:46,996 --> 00:59:53,196
+Arkada mı kalıyor bu? Burada açmış tamam. İlk başta 347 kilobaytlık bir boyutu var.
+
+452
+00:59:54,576 --> 00:59:56,736
+Ne yaptın onu? Nereye ettin?
+
+453
+00:59:58,416 --> 01:00:04,615
+Kapattım hocam. Sonra da burada tekrar açtım yenisini. Outputum da 61 kilobayt olmuş.
+
+454
+01:00:06,656 --> 01:00:11,316
+Sonra burada şeyi göstermek istiyorum. Hufman Tree'yi gösterebilirim.
+
+455
+01:00:12,115 --> 01:00:14,675
+Orada yerleştirdiğim halini vesaire.
+
+456
+01:00:14,695 --> 01:00:17,295
+Dışarıdan aldığın bir kod parçası oldu mu?
+
+457
+01:00:18,496 --> 01:00:19,335
+Oldu hocam.
+
+458
+01:00:19,795 --> 01:00:20,695
+Neresini aldın?
+
+459
+01:00:22,135 --> 01:00:24,255
+Şey, dikot kısmı.
+
+460
+01:00:25,496 --> 01:00:28,935
+Yani birçok yerde de hani baktım zaten esinlendim de.
+
+461
+01:00:29,615 --> 01:00:31,895
+Burada işte şey, Hufman'ı gösterebilirim.
+
+462
+01:00:31,895 --> 01:00:33,955
+Sol taraflara bir verdim.
+
+463
+01:00:34,596 --> 01:00:37,955
+Sağ taraflara sıfır vererek ilerledim işte her bir level'ında.
+
+464
+01:00:38,931 --> 01:00:47,351
+Bu şekilde birleştirirken de buralara göre bitkopları elde ediyorum. Sonra de işte dekompres edip yeniden veriyorum.
+
+465
+01:00:48,871 --> 01:00:52,211
+Bu şekilde şeyi de daha önce. Şurada da bir tane.
+
+466
+01:00:52,611 --> 01:00:57,651
+Bir dakika bir şey soracağım. Siyah beyaz bir resim versem bu algoritma çalışır mı?
+
+467
+01:01:00,291 --> 01:01:02,711
+Denemedim hocam ama çalışır diye düşünüyorum.
+
+468
+01:01:02,711 --> 01:01:04,151
+Deneyebilir miyiz?
+
+469
+01:01:04,820 --> 01:01:08,980
+Siyah beyaz. Hemen bir o zaman Lena bulalım şuradan olmadan.
+
+470
+01:01:10,500 --> 01:01:14,099
+Lena Grey tükerleyeyim.
+
+471
+01:01:15,940 --> 01:01:18,099
+Şöyle hemen şunu bir indirsek.
+
+472
+01:01:27,668 --> 01:01:29,888
+Bunu direkt Lerade'ye kaydettim.
+
+473
+01:01:33,988 --> 01:01:38,508
+Bunu PNG şey yaptım ama BBP'ye dönüştüreyim mi?
+
+474
+01:01:38,948 --> 01:01:39,548
+Direkt böyle vereyim mi?
+
+475
+01:01:39,548 --> 01:01:40,208
+Hakk eder mi?
+
+476
+01:01:41,108 --> 01:01:41,948
+Etmez aslında.
+
+477
+01:01:43,648 --> 01:01:45,847
+Hemen yeniden başlattım.
+
+478
+01:01:48,347 --> 01:01:52,168
+Şuradaki Output ve Compress şeylerini de sileyim şuradan.
+
+479
+01:01:55,635 --> 01:01:57,096
+Üzerine yazarım ama yine de.
+
+480
+01:02:06,579 --> 01:02:32,960
+Evet, burada dikot da biraz uzun sürdü. Şu arka desktop'a açılmış halinde, evet. Şimdi hemen ilk bunun infosuna bakalım. Neden illa oraya götürüyor? 130 kilobaytmış. Yenisine de bakalım. O da 130. Evet. Dur bakayım.
+
+481
+01:02:33,811 --> 01:02:53,412
+İyi mesela hiç denemediğin bir şeyi risk aldın, olabilir dedin. Evet. Kullanmış olsan bile de hakim olmuşsun. Peki, teşekkür ediyorum sana da. Ben teşekkür ederim hocam. Hemen şu paylaşımı kapatacağım. Ben de şeyden bulabilirim.
+
+482
+01:02:53,412 --> 01:03:00,831
+10-25 arkadaşlar, bir 10.30'a kadar izin istiyorum. Bir 5 dakika geleceğim, tamam mı?
+
+483
+01:03:01,427 --> 01:03:02,628
+Tamamdır hocam.
+
+484
+01:11:43,315 --> 01:11:59,015
+[kişisel bilgi]
+
+485
+01:12:01,515 --> 01:12:05,275
+[kişisel bilgi]
+
+486
+01:12:06,495 --> 01:12:07,515
+[kişisel bilgi]
+
+487
+01:12:09,011 --> 01:12:11,011
+[kişisel bilgi]
+
+488
+01:12:11,011 --> 01:12:13,011
+[kişisel bilgi]
+
+489
+01:12:13,011 --> 01:12:18,011
+[kişisel bilgi]
+
+490
+01:12:18,011 --> 01:12:20,011
+[kişisel bilgi]
+
+491
+01:12:20,011 --> 01:12:25,011
+[kişisel bilgi]
+
+492
+01:12:25,011 --> 01:12:26,011
+[kişisel bilgi]
+
+493
+01:12:26,011 --> 01:12:30,011
+[kişisel bilgi]
+
+494
+01:12:30,011 --> 01:12:34,011
+[kişisel bilgi]
+
+495
+01:12:34,011 --> 01:12:35,011
+[kişisel bilgi]
+
+496
+01:12:35,636 --> 01:12:40,716
+[kişisel bilgi]
+
+497
+01:12:41,236 --> 01:12:50,636
+[kişisel bilgi]
+
+498
+01:12:51,316 --> 01:12:53,056
+[kişisel bilgi]
+
+499
+01:12:54,612 --> 01:13:10,772
+[kişisel bilgi]
+
+500
+01:13:10,772 --> 01:13:17,891
+Şöyle hocam, kodu yazmadan önce bütün internete baktım, gezdim.
+
+501
+01:13:19,028 --> 01:13:21,888
+Bir saniye, ekranı paylaşmaya çalışıyorum bir yandan.
+
+502
+01:13:26,579 --> 01:13:27,739
+Şu an gözüküyor mu hocam?
+
+503
+01:13:27,760 --> 01:13:28,619
+Evet, görüyorum.
+
+504
+01:13:29,219 --> 01:13:35,779
+Tamam. Geçen seferki sunumda da başaramamıştım Macbook'ta ama biraz kocaladım, oldu.
+
+505
+01:13:35,779 --> 01:13:46,459
+Şimdi şöyle, internetten baktığım kodlardan bakarak kendim yazdım kodu. Zaten çok basit. Burada ilk başta alıyorum.
+
+506
+01:13:48,064 --> 01:14:13,684
+[öğrenci]'nın aynı sıkıntıyı ben de yaşadım. Size'ı 200 tuttum. O daha yüksek tutmuş ama. Burada 200'den başlatmamın sebebi ASCII karakteri alıyorum. ASCII karakteri aldıktan sonra 200'den sonrasına kendi sözlüğüme ekliyorum. Mesela A97 karşılığı. AA olduğu zaman işte ilk ikili karakteri aldığım zaman 200'e koyuyor. Akabinde 200 bir, 202 şeklinde devam ediyor.
+
+507
+01:14:16,340 --> 01:14:26,680
+Şurada aşağıda da onu dekompres ederken yine aynı mantık. Burada ikisini aynı vermem gerekiyor. 200-200 vermem gerekiyor. Aksi durumda dekompres edemiyor.
+
+508
+01:14:29,260 --> 01:14:32,979
+Burada da herhangi bir sözü oluşturmuyorum. Tekrar kendi oluşturuyor.
+
+509
+01:14:33,460 --> 01:14:34,460
+Aynı mantıkla.
+
+510
+01:14:34,920 --> 01:14:40,739
+Okey. Sizde, sende de sözlüğün boyu memoriyle mi sınırlı?
+
+511
+01:14:40,979 --> 01:14:41,780
+Evet, evet.
+
+512
+01:14:41,860 --> 01:14:42,520
+Tamam, peki.
+
+513
+01:14:42,520 --> 01:14:48,720
+Ben burada bir tane örnek çalıştıracağım hocam. Sonra da daha başka yaptığım örnekleri göstereceğim.
+
+514
+01:14:48,960 --> 01:14:49,199
+Okey.
+
+515
+01:14:51,639 --> 01:14:53,300
+Raporunu yüklemeyi unutma.
+
+516
+01:14:53,680 --> 01:14:54,479
+Raporu yükledim.
+
+517
+01:14:54,899 --> 01:14:55,319
+Ha, iyi.
+
+518
+01:14:56,720 --> 01:15:00,235
+Şimdi şöyle, şurada bizim...
+
+519
+01:15:00,564 --> 01:15:17,724
+Tekstimiz şu şekildeydi. Bu kompres edilmiş hali. Açarım teksti de açarım. 97A'yı yazıyor. Akabinde 200'ü 2A şeklinde yazıyor. Bu şekilde devam ediyor. Bu 32 gördüğümüz boşluk karakteri. Buraya geldiğinde boşluğu basıyor.
+
+520
+01:15:18,384 --> 01:15:28,024
+Yine burada mesela en son şuradaki 6 tane A var galiba. 204 karşılığı o şekilde yapıyor. Sıkıştırma oranı küçük dosyalarda sıkıntılı biraz.
+
+521
+01:15:29,171 --> 01:15:50,011
+Onun sebebi ilk başta şey olması. Az dosya var. Ben bir karakteri üç karakterle gösterdiğim için sıkıştırma performansı küçük dosyalarda sıkıntılı oluyordu. Ama büyük dosyalarda başarılıydı. Ama şöyle, mesela yine internette buldum. Bir milyon karakterli pi sayısının dosyası vardı.
+
+522
+01:15:50,579 --> 01:16:04,180
+Hiçbir şekilde benzer bir şey yakalayamıyor. Orada sıkıştırmak yerine dosya daha büyük oluyordu. Ama genel ortalamaya baktığımda yüzde altmış beş ile yetmiş beş arası bir sıkıştırma oradan ortaya çıkmıştı.
+
+523
+01:16:04,180 --> 01:16:07,180
+Mesela şurada...
+
+524
+01:16:07,583 --> 01:16:30,404
+Bir şey, Bible Text dosyası diyor ya, mesela normal, standart bir doğal dilde bir dosya. Yüzde yetmiş beşler. Zaten daha fazlasını da bekleyemeyiz. Belki yüzde seksenlere çıkar. O A, B harf serileri bunlar özellikle hazırlanmış dosyalar. Normal hayatta öyle şeyler yoktur.
+
+525
+01:16:30,404 --> 01:16:34,003
+Evet yok. Bunu zaten ben kendim hazırlamıştım. Bu ufak bir dosya.
+
+526
+01:16:34,899 --> 01:16:50,420
+Derste yaptığımız A, A, B, A, A, B şeklindeki dosyadan oluşan bir dosya. Burada kanser dosyaları ve dönükken dosyalardan oluşan örnekleri denelim. Küçük olduğu zaman dosya baya büyüdü hatta. Şurada gözüküyor belki fayda gözüküyor bilmiyorum da.
+
+527
+01:16:50,420 --> 01:16:51,600
+Evet, evet.
+
+528
+01:16:51,739 --> 01:16:56,659
+Ama daha büyük olduğu zaman benzerlikler çok fazla yakaladığı için.
+
+529
+01:16:57,268 --> 01:16:57,948
+Bayağı...
+
+530
+01:16:57,948 --> 01:17:04,587
+Özelliklerin de olması önemli. Petrinler yakalayacak. Ne kadar uzun Petrin yakalarsa o kadar başarılı olur.
+
+531
+01:17:07,188 --> 01:17:10,728
+[kişisel bilgi]
+
+532
+01:17:11,048 --> 01:17:12,087
+[kişisel bilgi]
+
+533
+01:17:13,728 --> 01:17:14,968
+[kişisel bilgi]
+
+534
+01:17:16,087 --> 01:17:16,688
+[kişisel bilgi]
+
+535
+01:17:17,188 --> 01:17:19,068
+[kişisel bilgi]
+
+536
+01:17:19,667 --> 01:17:28,967
+[kişisel bilgi]
+
+537
+01:17:28,967 --> 01:17:39,768
+Buradayım hocam. Tamam. Şöyle kameramı da açayım. [öğrenci]. Bir dakika. Kalemim bitiyor.
+
+538
+01:17:43,347 --> 01:18:07,347
+Sen hangi konuyu aldın? Ben Jason ve İzamel sıkıştırma yöntemini aldım istatiksel yöntemlerde. Tamam. Bunu alan bir de kim vardı? [öğrenci] vardı. Evet, bir de [öğrenci] vardı. Sen nasıl yaptın? [öğrenci] gibi mi yaptın? Yoksa olması gerektiği gibi mi yaptın? [öğrenci]'ı ben dinleyemedim hocam. Sabah bir toplantım vardı. Bir de başladığınızı da bilmiyordum. O hangi yöntemle yapmıştık?
+
+539
+01:18:07,347 --> 01:18:09,847
+Tamam. Oha, hayır. Patronlar yakalamamış.
+
+540
+01:18:10,207 --> 01:18:13,207
+Karakter bazında almış, hepsini sıkıştırmış.
+
+541
+01:18:13,448 --> 01:18:15,587
+Ben de karakter bazında yaptım.
+
+542
+01:18:16,967 --> 01:18:19,787
+Shannon Pano kullandım ben de.
+
+543
+01:18:21,047 --> 01:18:22,887
+Algoritmasını kendim kodladım.
+
+544
+01:18:24,147 --> 01:18:28,608
+Yani önemli olan, yeniden söylüyorum, onu duymamışsındır o zaman.
+
+545
+01:18:29,108 --> 01:18:33,407
+Jason'da olsun, XML'de olsun, HTML dosyaları olsun.
+
+546
+01:18:33,407 --> 01:18:36,987
+Bunlar da hep tekrar eden patronlar olduğu için.
+
+547
+01:18:37,395 --> 01:18:55,435
+O pattern'ın tamamına bir kod vermek bayağı bir sıkıştırma sağlıyor. Mesela html düşün, a referans, bilmem ne bilmem ne. Onlar hep bir kalıp. O tek kalıbı bir tane kod atadığın vakit bayağı bir sıkıştırma yapmış oluyorsun.
+
+548
+01:18:57,315 --> 01:18:59,796
+Anladım hocam. Tamam peki.
+
+549
+01:19:01,395 --> 01:19:03,075
+Şimdi ben şöyle paylaşayım.
+
+550
+01:19:04,884 --> 01:19:16,423
+Evet. Ben de hocam şeyi kullandım. Shannon Fanoy'u kullandım. Kısaca bir kodu gösterecek olursak, olursam daha doğrusu.
+
+551
+01:19:16,463 --> 01:19:17,923
+Shannon Fanoy'u niye seçtin?
+
+552
+01:19:18,543 --> 01:19:30,283
+Shannon Fanoy'u tercih etmemin sebebi hocam. Hani kendim algoritmasını kodlayacağım için. Böyle en hakim olduğum algoritma buydu. O yüzden bunu tercih ettim. Hani çıktılarını da bir göreyim gibisinden düşündüm.
+
+553
+01:19:31,539 --> 01:19:47,520
+Burada, Shonofana'da da aslında karakter bazında ilerlediğim için her bir karakterin frekans listesini elde ettim. Frekans listesini elde ettikten sonra bunları büyükten küçüğe doğru sıralayıp orada kod karşılıklarını buldum.
+
+554
+01:19:59,539 --> 01:20:25,860
+Bunların binary karşılığını bir array'de tutup onları binary bir dosya olarak output çıkardım. Bu çıkardığım output dosyasını da noktaşan uzantılı olarak yaptım. Burada ekstra olarak şöyle bir yapı kullandım. Böyle bir header bilgisi kullandım dosyanın başında. Bu dosyanın en başındaki header bilgisinin ilk alanda gelen değer bilgisi bu kaç tane dikşinirde kaç tane karakter olduğunu gösteriyor.
+
+555
+01:20:26,323 --> 01:20:44,663
+Bu işte 255'den küçükse direkt o değeri koyuyorum. 255'in iki katından büyükse işte katı 255 ve sayısı gibi koyuyorum. Her bir ara eleman separator olarak böyle sıfırın karşılığı denk gelen.
+
+556
+01:20:45,203 --> 01:21:01,163
+Binary değeri koydum. Ondan sonra burada birden fazla o dictionary içerisindeki kelimeler var. Bu kelimelerin ilk önce şey karşılığı geliyor. Karakter karşılığı geliyor. Asli karşılığı. Sonrasında yine bir separator geliyor. Ondan sonrasında da bunun kod karşılığı geliyor.
+
+557
+01:21:13,203 --> 01:21:34,603
+İşte ilk kodlayacağım bloğun kaç bitini kodlayacağımı yazıyorum. 8'i kodluyorum binary olarak. Sonrasında o ilk 8 bitlik kısmını kodluyorum. Sonra diyelim 10 bitlik bir kod karakteri. Sonrasında da 2 numarasını giriyorum. Sonrasında da kalan 2.
+
+558
+01:21:36,115 --> 01:21:52,675
+Bittik kısmın başına sıfır koyarak onu kodluyorum. Böyle bir header bilgisi elde ediyorum. Bu sayede de dosyayı dekompres ederken de buradaki header bilgisinden faydalanarak dictionary'yi elde ediyorum tekrardan. Buradan da tekrardan birebir elde edebiliyorum dosyayı.
+
+559
+01:22:04,307 --> 01:22:14,007
+GetRequest'e attım. XML dosyası döndü. Onun üzerinden ilerledim. Onun kodu da şu şekilde çağırıyorum.
+
+560
+01:22:16,667 --> 01:22:24,207
+Şöyle Python input dosyası olarak GoogleRequest'e çağırıyorum.
+
+561
+01:22:27,147 --> 01:22:29,788
+XML dosyası, output'umda.
+
+562
+01:22:31,764 --> 01:22:47,244
+Google Shannon, 10.45, Shannon. C parametresi de kompres edeceğimi belirtiyor. Bunu kompres ettiğimde şöyle bir frekans listesi çıkıyor aslında. Sonunda da elde ettiğim Shannon kodları çıkıyor.
+
+563
+01:22:48,283 --> 01:22:59,363
+Burada direkt input dosyası ile bunu kıyaslayacak olursam da şöyle bir compression script'i de yazdım.
+
+564
+01:23:00,275 --> 01:23:01,275
+Burada...
+
+565
+01:23:21,363 --> 01:23:23,163
+Xml Output'a da Google.
+
+566
+01:23:28,180 --> 01:23:47,380
+Burada size kontrolü olarak arattığımda bu küçük bir dosyaydı. Bu küçük dosyada yaklaşık %23'lük bir completion ratio elde ettiğini görüyorum. Burada baya büyük bir dosya için de aynısını oluşturmuştum. Bunun için de bakacak olursak burada nereden baksanız.
+
+567
+01:23:47,380 --> 01:23:49,600
+Bu başarısı daha mı yüksek oluyor?
+
+568
+01:23:49,860 --> 01:23:52,880
+Daha yüksek çıktı. %50 civarında çıktı.
+
+569
+01:24:01,043 --> 01:24:03,863
+File, A tuttada.
+
+570
+01:24:14,003 --> 01:24:19,763
+Bunu tam doğru giremedim sanıyorum. Şurada yukarıda bloglardan gösterebilirim.
+
+571
+01:24:23,988 --> 01:24:25,608
+Raporunda yok mu çıktısı?
+
+572
+01:24:26,427 --> 01:24:32,448
+Raporuma eklememiştim. Bunu sabah denerken şey yapmıştım. Şurada %46 olarak ben basmışım buraya.
+
+573
+01:24:32,888 --> 01:24:34,268
+%46 olarak yaklaşık.
+
+574
+01:24:34,268 --> 01:24:34,808
+%23'lü değil mi?
+
+575
+01:24:35,468 --> 01:24:43,888
+Aynen. Dosya büyüdüğünde muhtemelen karakter şeyi daha fazla oluyor. Öyle olunca da bu çıktığı daha iyi gösterebiliyor.
+
+576
+01:24:45,128 --> 01:24:48,608
+Bir de aynı şekilde de şey metodum da var.
+
+577
+01:24:50,195 --> 01:24:51,935
+Decompress metodum da var.
+
+578
+01:24:53,996 --> 01:24:56,195
+Burada da bu şekilde...
+
+579
+01:25:01,460 --> 01:25:04,460
+Bunu dekompleş ederken de...
+
+580
+01:25:09,460 --> 01:25:20,420
+48 Jason D parametresiyle bunu çağırıyorum. Yanlış şeyleri çağırdım.
+
+581
+01:25:21,420 --> 01:25:25,039
+Çok zor yani. 40 tane şey yazıyorsun.
+
+582
+01:25:26,420 --> 01:25:35,260
+Evet. Burada da input dosyam da oluştu. Bunları kıyasladığım zaman da
+
+583
+01:25:51,444 --> 01:26:15,544
+Bunların doğruluğunu kıyasladığım zaman da hemen hemen doğru geldiğini görüyorum. Sadece bir tane karakter anmeç ediyor. Bu da sanırım Python dosyayı kaparken endokarlı koymuyor. Dolayısıyla da orada bir kayıp oluyor. Onun dışında kayıpsız bir şekilde bunları dekompeste edebiliyorum. Bunun kıyaslamasında tek tek karakter karakter kıyaslayarak yaptım aslında şuradaki.
+
+584
+01:26:18,068 --> 01:26:21,868
+Sadece en sondaki o byte'da fazla derdi.
+
+585
+01:26:22,408 --> 01:26:34,228
+Aynen şöyle karakter karakter bunu kontrol edip unmatch ve match değerlerini hesapladım. Size de direkt o spec'in get size'ını kullanarak ilerledim.
+
+586
+01:26:34,228 --> 01:26:41,668
+Dediğim gibi decompress'te de o yaptığım yapıdan header bilgisini alıp oradan açarak ilerliyorum.
+
+587
+01:26:42,507 --> 01:26:43,908
+Tamam teşekkür ediyorum.
+
+588
+01:26:46,260 --> 01:26:47,079
+Öğ...
+
+589
+01:26:50,228 --> 01:27:15,828
+[kişisel bilgi]
+
+590
+01:27:17,395 --> 01:27:20,895
+[kişisel bilgi]
+
+591
+01:27:21,576 --> 01:27:22,996
+[kişisel bilgi]
+
+592
+01:27:23,215 --> 01:27:25,755
+[kişisel bilgi]
+
+593
+01:27:26,735 --> 01:27:30,815
+[kişisel bilgi]
+
+594
+01:27:30,895 --> 01:27:31,456
+[kişisel bilgi]
+
+595
+01:27:31,975 --> 01:27:32,576
+[kişisel bilgi]
+
+596
+01:27:33,695 --> 01:27:34,595
+[kişisel bilgi]
+
+597
+01:27:34,707 --> 01:27:39,767
+[kişisel bilgi]
+
+598
+01:27:40,167 --> 01:27:42,887
+[kişisel bilgi]
+
+599
+01:27:42,887 --> 01:27:48,707
+[kişisel bilgi]
+
+600
+01:27:48,767 --> 01:27:50,927
+[kişisel bilgi]
+
+601
+01:27:51,847 --> 01:27:54,767
+[kişisel bilgi]
+
+602
+01:27:56,467 --> 01:28:07,687
+[kişisel bilgi]
+
+603
+01:28:08,667 --> 01:28:10,147
+[kişisel bilgi]
+
+604
+01:28:11,327 --> 01:28:15,107
+[kişisel bilgi]
+
+605
+01:28:15,287 --> 01:28:18,487
+[kişisel bilgi]
+
+606
+01:28:18,996 --> 01:28:24,436
+[kişisel bilgi]
+
+607
+01:28:25,436 --> 01:28:32,155
+[kişisel bilgi]
+
+608
+01:28:32,336 --> 01:28:34,976
+[kişisel bilgi]
+
+609
+01:28:35,596 --> 01:28:38,936
+[kişisel bilgi]
+
+610
+01:28:38,936 --> 01:28:44,636
+[kişisel bilgi]
+
+611
+01:28:44,975 --> 01:29:01,435
+[kişisel bilgi]
+
+612
+01:29:01,435 --> 01:29:12,975
+[kişisel bilgi]
+
+613
+01:29:12,975 --> 01:29:22,475
+[kişisel bilgi]
+
+614
+01:29:24,715 --> 01:29:25,315
+[kişisel bilgi]
+
+615
+01:29:25,615 --> 01:29:29,135
+[kişisel bilgi]
+
+616
+01:29:29,215 --> 01:29:31,055
+[kişisel bilgi]
+
+617
+01:29:31,235 --> 01:29:33,655
+[kişisel bilgi]
+
+618
+01:29:35,595 --> 01:29:37,995
+[kişisel bilgi]
+
+619
+01:29:38,452 --> 01:29:40,252
+[kişisel bilgi]
+
+620
+01:29:40,311 --> 01:29:41,252
+[kişisel bilgi]
+
+621
+01:29:42,351 --> 01:29:44,212
+[kişisel bilgi]
+
+622
+01:29:44,212 --> 01:29:45,212
+[kişisel bilgi]
+
+623
+01:29:45,292 --> 01:29:46,712
+[kişisel bilgi]
+
+624
+01:29:46,932 --> 01:29:49,532
+[kişisel bilgi]
+
+625
+01:29:50,392 --> 01:29:51,692
+[kişisel bilgi]
+
+626
+01:29:51,712 --> 01:29:58,832
+Onu orada kaybederim diye ben hemen bir yere bunun notunu alıyorum. Sen başla teze. Ama teze diyorum projeye.
+
+627
+01:30:00,051 --> 01:30:03,111
+Hangi ekran gözüküyor şu an sizde? Rapor ekranı mı gözüküyor?
+
+628
+01:30:03,111 --> 01:30:11,391
+Bir saniye, ben şu an onu kendime mail attığım için senin ekranına bakmıyorum. Evet, PowerPoint bir sunum var.
+
+629
+01:30:11,991 --> 01:30:13,451
+Rapor aslında hocam, PDF'de.
+
+630
+01:30:13,471 --> 01:30:14,831
+Tamam, o zaman onu görüyorum.
+
+631
+01:30:15,823 --> 01:30:30,363
+Ben, algoritmanın adımlarını, hepsini tek tek geçmeyeyim. Zaten arkadaşlar da anlattı. Önce pikselleri sayıyorum, sayılarını çıkarıyorum. Derste yaptığımız gibi toplamı arka arkaya ekle ekle ekle, eksi kat sayısıyla ekliyorum diziye. Ağacı oluşturuyorum.
+
+632
+01:30:30,836 --> 01:30:58,736
+Ağacı oluşturduktan sonra da header bilgisine önce resmin bit değerinin 255'e bölümünü kalanını, sonra hate değerinin bölümünü kalanını yazdırıyorum. Bazen çok büyük resimler oluyor çünkü. Patlattı birkaç kere kodu. Sonra header bilgisinin uzunluğunun 255'e bölümü kalanını yazdırıyorum. Bu üçünü yazdıktan sonra resimdeki kanal sayısını yazıyorum. Yani grayscale ise 2, RGB ise 3. Bir de bir tane resim indirmiştim. O da 4 kanalıymış. O da patlatmıştı. Sonra onu da 3 bite çıkardım. O yüzden.
+
+633
+01:30:58,836 --> 01:31:13,776
+4 de gönderebiliyorum yani. Ağacın L'nere bittiğisini taranmış haline gönderiyorum. Karşı tarafa sıkıştırılmış ağacı. Renk sayısını ve renkleri gönderiyorum. Şurada bir tanesi için sonucu buraya kaydettim. Şimdi ara yüzlerimde göstereceğim.
+
+634
+01:31:14,163 --> 01:31:36,383
+Sizin resmi verdim, karşılaştırdım. Bende de BMP resimleri kaydetmekte sorun oldu. Payton'a BMP kaydedilmiyordu. Hatta resmin bütün atribütlerini kopyaladım. Yani böyle paletini falan da götürsün diye. Yine olmuyor. Direkt resmin pointerını kopyalayınca oluyor. Ben de o yüzden pikseller arasındaki fark sıfırsa direkt o resmi okuyorum BMP'de. Diğer resimler için farklı bir şey yapıyorum.
+
+635
+01:31:37,492 --> 01:31:53,471
+Buradaki bu resimde sıkıştırma oranı %61 gelmiş. En küçük ufman kodu 1, en fazla 14 gelmiş. Ortalama da benim resim içinde gönderdiğim değil, oluşturduğum bütün piksellerin ortalama ufman kodu aslında. Şimdi bir de arayüzü göstereyim size.
+
+636
+01:31:59,380 --> 01:32:01,120
+Görünüyor mu şu an sizde hocam? Evet.
+
+637
+01:32:02,180 --> 01:32:07,120
+Burada bir tane resim seçiyoruz. Önce kuantize edilmemiş bir jpeg resmi seçeyim.
+
+638
+01:32:10,771 --> 01:32:24,011
+Bunu gönderdiğinde bu şekilde sonuç alıyoruz. Minimum 7, maksimum 12 diye. Averajı 8,5. Sıkıştırma oranı %3 gelmiş bu resimde. Şimdi bunun kuantize edilmiş halini bir de göndereyim.
+
+639
+01:32:25,511 --> 01:32:28,571
+Bayağı bozulmuş. 16 denge mi indirilmiş?
+
+640
+01:32:28,571 --> 01:32:34,651
+Evet. Bu %50'ye çıkardı sıkıştırma oranını. 64'lüğünü göndereyim.
+
+641
+01:32:36,500 --> 01:32:47,880
+Bu da %26'ya çıkardı. Bir tane de BMP resimlerinden Lena'yı seçeyim, hemen göstereyim. Lena'da %6 geliyor hiçbir kuantize işlemi yapmazsak.
+
+642
+01:32:47,880 --> 01:32:48,720
+Evet.
+
+643
+01:32:50,319 --> 01:32:55,539
+Okey, başı sonu belli olan bir çalışma olmuş.
+
+644
+01:32:57,171 --> 01:33:04,551
+Ark tolistimiz diyelim. Tamam, teşekkür ediyorum. Ben teşekkür ederim, sağ olun.
+
+645
+01:33:05,032 --> 01:33:09,771
+Sıraya, dur bakayım nerede kaldık? [öğrenci]'u alacağım.
+
+646
+01:33:11,711 --> 01:33:13,371
+Hocam ben yapmıştım geçen.
+
+647
+01:33:17,043 --> 01:33:19,144
+Geçen hafta ilk yapan ekipten.
+
+648
+01:33:24,275 --> 01:33:26,275
+Hocam sanırım mikrofonunuz kapalı.
+
+649
+01:33:30,387 --> 01:33:31,827
+Hocam mikrofonunuz kapalı.
+
+650
+01:33:34,187 --> 01:33:37,847
+Yükleme alanım kapalı ne demek? Dün gönderdiğim linki mi?
+
+651
+01:33:40,287 --> 01:33:43,667
+Biz sizi duyamadık az önce. Mikrofonunuz kapalıydı.
+
+652
+01:33:43,787 --> 01:33:52,467
+Tamam söylüyorum. Size dün atmış olduğum mailde bir adres vardı. Oraya mı yüklüyorsunuz da kapalı?
+
+653
+01:33:53,787 --> 01:33:55,107
+Kimse kapalı demedi.
+
+654
+01:33:55,828 --> 01:34:03,948
+Tamam, tamam. Kör duymaz uydurur, sağır duymaz uydurur misali oldu.
+
+655
+01:34:04,208 --> 01:34:06,008
+Ben geçen hafta göstermiştim.
+
+656
+01:34:06,488 --> 01:34:07,847
+Tamam, yükledim mi [öğrenci]?
+
+657
+01:34:07,868 --> 01:34:08,468
+Yükledim, evet.
+
+658
+01:34:08,648 --> 01:34:13,548
+[kişisel bilgi]
+
+659
+01:34:14,288 --> 01:34:15,148
+[kişisel bilgi]
+
+660
+01:34:15,347 --> 01:34:21,688
+[kişisel bilgi]
+
+661
+01:34:22,899 --> 01:34:29,619
+[kişisel bilgi]
+
+662
+01:34:30,039 --> 01:34:30,779
+Buradayım hocam.
+
+663
+01:34:36,051 --> 01:34:38,051
+Bir iki dakika geliyorum.
+
+664
+01:35:06,355 --> 01:35:15,355
+Ne yaptın? Hocam benim de Hufman'la resim sıkıştırma. Önce kendimi göstereyim hocam hatırlarsınız.
+
+665
+01:35:15,355 --> 01:35:29,355
+Şuraya notlarımı da alıyorum. Göster kendini. Evet seni de tanıyorum. Evet sen neler yaptın bakalım?
+
+666
+01:35:33,300 --> 01:35:38,760
+Mesela bunu değil de şunu deneyelim. Şöyle bir resim deneyelim mesela.
+
+667
+01:35:39,960 --> 01:35:40,920
+Ayy.
+
+668
+01:35:41,460 --> 01:35:42,899
+Çok güzel değil mi? Aşk olsun.
+
+669
+01:35:49,684 --> 01:35:54,043
+Burada hıfman ağacını yazdım. Sonrasında enkod ediyorum.
+
+670
+01:35:55,184 --> 01:35:57,644
+Sen hıfman da header'ı nasıl oluşturdun?
+
+671
+01:35:58,963 --> 01:36:00,003
+Hocama şurada.
+
+672
+01:36:00,923 --> 01:36:05,743
+Söyle mesela ağacı gönderdim, frekansları gönderdim, kodu gönderdim. Ne yaptın sen?
+
+673
+01:36:07,224 --> 01:36:14,623
+Hedder'ı burada oluşturuyor. Frekansları da burada alıyorum. Sonrasında hıfman ağacını oluşturuyor.
+
+674
+01:36:15,572 --> 01:36:19,572
+Kompres ederken de bu ağacı gönderiyormuş şuradan.
+
+675
+01:36:19,572 --> 01:36:22,572
+Ağacı mı gönderiyorsun?
+
+676
+01:36:22,572 --> 01:36:32,572
+Evet. Hocam mesela bu resmin boyutu sıkıştırılımından önce böyle, sıkıştırıldıktan sonra böyle. Yüzde elli olmuş kompresim.
+
+677
+01:36:32,572 --> 01:36:39,572
+Bu kurut işlemi birazcık uzun süreli. Şu an ekran paylaşım yaptığım için uzun süreli. Az önce on saniye falan sürmüştü.
+
+678
+01:36:39,572 --> 01:36:40,460
+Tamam.
+
+679
+01:36:42,131 --> 01:36:44,591
+Dışarıdan yardım aldın mı kodda?
+
+680
+01:36:45,011 --> 01:36:50,311
+Hocam birçok kod inceledim. Küçük küçük alıntılar başlattı.
+
+681
+01:37:05,844 --> 01:37:16,164
+Bilgisayarı bayağı kastı. Evet. Şurada boyutları aynı bunların. Çıkıştırdıktan sonra açılan resim de bu şekilde.
+
+682
+01:37:16,164 --> 01:37:20,804
+Bu dekomplez edilmiş resim değil mi? Evet şu an.
+
+683
+01:37:25,555 --> 01:37:29,555
+Peki sen siyah beyaz bir resim verirsen çalışır mı?
+
+684
+01:37:29,555 --> 01:37:35,555
+Hocam onu da az önce denettiğiniz için şunu indirdim. Yaptığımı tekrar yapalım.
+
+685
+01:37:45,395 --> 01:37:48,995
+Burada da yüzde 45 çıkıyor, sıkıştırma oranı.
+
+686
+01:38:00,916 --> 01:38:05,996
+Şöyle, bir kilobayt düşmüş oluyor. Az önce benziğimde de böyle olmuş.
+
+687
+01:38:06,095 --> 01:38:08,215
+O şey mi o da? Endofyden mi?
+
+688
+01:38:09,015 --> 01:38:09,395
+Evet.
+
+689
+01:38:11,795 --> 01:38:14,935
+Peki [öğrenci], [öğrenci] hangisini kullanıyorsun?
+
+690
+01:38:16,115 --> 01:38:20,115
+[kişisel bilgi]
+
+691
+01:38:20,115 --> 01:38:22,875
+Peki teşekkür ederim sana.
+
+692
+01:38:23,195 --> 01:38:23,895
+Ben teşekkür ederim.
+
+693
+01:38:29,395 --> 01:38:30,115
+[öğrenci]?
+
+694
+01:38:33,427 --> 01:38:38,427
+Evet hocam buradayım. Merhabalar. Merhaba, [öğrenci]'yi tanıyorum.
+
+695
+01:38:41,067 --> 01:38:46,667
+Haleşeyim mi? Sesim geliyor mu? Evet, sesim geliyor. Senin konun hangisiydi?
+
+696
+01:38:47,807 --> 01:38:51,627
+Hocam bende de renkli görüntüyü hafman yoluyla sıkıştırmaydı. Tamam.
+
+697
+01:38:55,380 --> 01:38:58,039
+Şimdi ekranı paylaştım. Görünüyor mu acaba?
+
+698
+01:38:58,399 --> 01:39:01,960
+Bir dakika dur. Yazı yazıyorum. Evet, gözüküyor.
+
+699
+01:39:03,340 --> 01:39:10,380
+Şimdi hocam şöyle başlayayım. Ben konuyu seçtikten sonra tabii yine bir internette bir araştırma yaptım konuyla ilgili.
+
+700
+01:39:11,060 --> 01:39:11,960
+İnternette...
+
+701
+01:39:12,180 --> 01:39:28,180
+Hafmanın sıkıştırılmasına dair kodların hepsi stringin sıkıştırılması. Yani bir string value verdiğimiz zaman, bir cümle olarak mesela random harfler verdiğimiz zaman onun nasıl sıkıştırılır? Her harfin hangi kodu olur? Öyle şekildeydi. Yani resmi olarak bulamadım ama bulduğum...
+
+702
+01:39:28,435 --> 01:39:41,935
+Daha doğrusu araştırdığım, esinlendiğim kodları buna renkli bir resme uygulayıştırmaya çalıştım. Şimdi burada sizin ödevde verdiğiniz resmi kullandım.
+
+703
+01:39:42,131 --> 01:39:54,131
+Bu resmin tabii bildiğimiz gibi RGB olduğu için 3 boyutlu bir array formatında oluyor. Bunu sadece bir kısmını göstermek için bunu yazdım. Show image'le de resmi kendisine gösteriyorum.
+
+704
+01:39:54,131 --> 01:40:09,131
+Az önce söylediğim gibi bir kodun string olarak aldığı için ilk önce resmin 3 boyutlu array'den 1 boyutlu bir liste indiremem gerekti. Bunun burada gördüğünüz gibi 3 tane iç içe.
+
+705
+01:40:09,908 --> 01:40:16,128
+For kullandım ve bunun sayesinde resmin tüm piksellerini bir listeye dönüştürdüm.
+
+706
+01:40:17,028 --> 01:40:20,548
+Burada listenin tabii kaç bit olduğu da yazıyor.
+
+707
+01:40:20,648 --> 01:40:23,008
+Bizim ödevde kullandığımız resmin bit boyu.
+
+708
+01:40:23,468 --> 01:40:26,368
+Bu arada BMP filini kullandım biliyorsunuz.
+
+709
+01:40:26,368 --> 01:40:32,228
+Burada bizim resmin bit boyu 3.187.728 bit.
+
+710
+01:40:33,128 --> 01:40:35,148
+Ondan sonra artık algoritma.
+
+711
+01:40:35,520 --> 01:40:50,880
+Algoritma kısmı burada her bir node'un sol tarafı ve sağ tarafı bu kodda ya 0'ya 1 oluyor. Bunun sayesinde bir simbol verdiğimiz zaman onun tree'de ağaçta bulunması için sola ya da sağa gideceğini hesaplıyor.
+
+712
+01:40:51,880 --> 01:41:00,220
+Bu basit bir fonksiyon. Her bir şeyin item'ın, distinct yani farklı item'ın ne kadar kullanıldığını dictionary'a yazıyor.
+
+713
+01:41:01,076 --> 01:41:08,675
+Bu da onun kodunu hesaplıyor. Bu da toplamda bütün kodları bir array toplamak için kullanılıyor.
+
+714
+01:41:09,675 --> 01:41:22,076
+Bu total gain'de sıkıştırmadan önceki ve sonraki bitlerin ne kadar olduğunu hesaplamak için ama bunun daha kolay yolunu sonradan fark ettim. Bunu kullanmıyorum.
+
+715
+01:41:23,028 --> 01:41:39,028
+Bu da Huffman Encoding'in kodun yani tam versiyonu. Tabi burada function'ları çağırdım. Oradaki yukarıda gösterdiğim function'ları tek tek çağırarak hallediyor. Sonra da decode kısmı da tabi o işlemin tersi.
+
+716
+01:41:49,587 --> 01:42:02,787
+Data, daha doğrusu variable'ını assign ediyorum. Ondan sonra artık function'ı çağırıyorum. Function'ı çağırdıktan sonra bizim fotoğrafımızdaki, resimimizdeki distinct value'lar, piksellerin value'ları buraya yazılıyor.
+
+717
+01:42:02,787 --> 01:42:10,387
+Yani 255, 240, 251 bunlar toplamda bu kadar farklı piksel değeri var. Ve bunların da...
+
+718
+01:42:10,804 --> 01:42:19,484
+Aşağıda bu gördüğünüz ne kadar kullanıldığı. Burada Probabilites yanlış yazmışım. Probabilites değil aslında ne kadar count yani ne kadar kullanıldığı.
+
+719
+01:42:19,484 --> 01:42:27,623
+Bu biraz o kadar da iyi tertibat olmadı çünkü buradan böyle bakmam gerekiyor. 240'a ikinci oradan 14352 uygun geliyor.
+
+720
+01:42:27,623 --> 01:42:36,304
+Burada da ama alttaki dictionary de her bir. En çok kullanılan tabii 255 olduğundan dolayı onun için kullanılan kodda en kısa olması gerekiyor ve bu da sıfır.
+
+721
+01:42:36,351 --> 01:42:42,351
+En uzununda, en az kullanılan da 251 ve 220 olduğu için en uzun onlar için kullanılmış.
+
+722
+01:42:42,351 --> 01:42:51,351
+Burada bu dediğim gibi Total Gain metodunu kullandım ama bu gerekmiyordu. Bundan daha kısa bir şekilde yazmam mümkündü.
+
+723
+01:42:51,351 --> 01:43:00,351
+Encoded Output'ta bizim Function'ımızı real ettikten sonra aldığımız toplam kodu gösteriyorum şimdi size. Böyle bir şey ortaya çıkıyor.
+
+724
+01:43:00,927 --> 01:43:10,528
+Bunu çok sade bir şekilde, işte encoding toplam bu array'in ismi, assign ettiğim. Onun lengsini bulduğumuz zaman zaten bize biti veriyor.
+
+725
+01:43:10,528 --> 01:43:17,228
+Altta bunu header formatında da yazdım. Daha doğrusu yukarıda yazmıştım. Burada gösterdiğim gibi.
+
+726
+01:43:17,228 --> 01:43:27,828
+Çok pardon, burada gösterdiğim gibi. Aşağıda da dekod işlemini gerçekleştiriyorum. Şimdi dekod işlemini gerçekleştirdiğim zaman bunu yeniden bir boyutlu listeye çeviriyorum.
+
+727
+01:43:28,020 --> 01:43:42,020
+Bir boyutlu listeye çevirdikten sonra bunu yeniden 3 boyutlu RGB resmine çevirmek için küçük bir algoritma kullandım. O algoritmayı da burada takdim ediyorum. Bu arada sadece rakam olarak bitlerin...
+
+728
+01:43:42,676 --> 01:43:48,996
+Sadece rakam olarak bitlerin sayısına uygun olarak kayıp olup olmadığını kontrol ettim.
+
+729
+01:43:49,096 --> 01:43:56,636
+Ve dekodada 8'e çarptıktan sonra ilkin başta aldığım 3 milyonu yine az önce söylediğim 187.728'e aldım.
+
+730
+01:43:57,096 --> 01:44:01,756
+Ondan sonra az önce söylediğim algoritmayı yazdım. Yani 3 boyutlu erreye çevirmek için.
+
+731
+01:44:02,484 --> 01:44:24,844
+Çünkü resim öyleydi. Gördüğünüz gibi üç boyutlu erreye böyle çevrilmiş oldu. Tabi bu şey biraz basit bir işlem oldu. Neden? Çünkü fotoğrafın şeyi belli, width'i belli ve onun o yüzden burada gördüğünüz gibi sadece imicin sıfırıncı sırasının uzunluğunu yazdık da zaten yetiyor. Her biri için çünkü aynı hepsi için.
+
+732
+01:44:25,043 --> 01:44:34,243
+Ve bundan sonra da bilgisayarlar görme dersinde öğrendiğim basit bir Show Function metoduyla da fotoğrafı yeniden gösterileştirdim.
+
+733
+01:44:34,243 --> 01:44:34,923
+Resmi?
+
+734
+01:44:34,923 --> 01:44:42,444
+Ondan sonra da burada ilk önce kullandığım fotoğrafı, resmi gösterileştirdim.
+
+735
+01:44:42,444 --> 01:44:44,243
+Ya fotoğraf değil, resim. Fotoğraf ayrı.
+
+736
+01:44:44,243 --> 01:44:46,043
+Tamam resmi gösterileştirdim.
+
+737
+01:44:46,043 --> 01:44:49,243
+Ne bileyim, takdim ettiğim kelimesini kullanmışsın.
+
+738
+01:44:49,587 --> 01:44:59,467
+[kişisel bilgi]
+
+739
+01:45:00,827 --> 01:45:09,447
+[kişisel bilgi]
+
+740
+01:45:09,447 --> 01:45:15,107
+[kişisel bilgi]
+
+741
+01:45:16,307 --> 01:45:19,068
+[kişisel bilgi]
+
+742
+01:45:22,068 --> 01:45:24,087
+[kişisel bilgi]
+
+743
+01:45:25,787 --> 01:45:31,127
+[kişisel bilgi]
+
+744
+01:45:31,127 --> 01:45:39,627
+[kişisel bilgi]
+
+745
+01:45:40,047 --> 01:45:43,447
+[kişisel bilgi]
+
+746
+01:45:43,872 --> 01:45:46,092
+[kişisel bilgi]
+
+747
+01:45:46,912 --> 01:45:50,092
+[kişisel bilgi]
+
+748
+01:45:50,952 --> 01:45:56,032
+[kişisel bilgi]
+
+749
+01:45:56,392 --> 01:46:02,552
+[kişisel bilgi]
+
+750
+01:46:03,452 --> 01:46:06,992
+[kişisel bilgi]
+
+751
+01:46:07,988 --> 01:46:15,408
+[kişisel bilgi]
+
+752
+01:46:16,188 --> 01:46:25,368
+[kişisel bilgi]
+
+753
+01:46:26,248 --> 01:46:28,828
+[kişisel bilgi]
+
+754
+01:46:30,003 --> 01:46:33,324
+[kişisel bilgi]
+
+755
+01:46:33,524 --> 01:46:33,804
+[kişisel bilgi]
+
+756
+01:46:34,344 --> 01:46:39,224
+[kişisel bilgi]
+
+757
+01:46:39,344 --> 01:46:44,384
+Evet, çok sıkıştırma. Bugün Lena görmekten bıktım galiba.
+
+758
+01:46:44,984 --> 01:46:47,623
+Lena'yı öğrenciliğimden beri görüyorum.
+
+759
+01:46:49,003 --> 01:46:51,344
+Hemen ekran paylaşıyorum.
+
+760
+01:46:52,244 --> 01:46:52,524
+Evet.
+
+761
+01:46:56,659 --> 01:47:05,579
+Geldi sanırım hocam. Geldi. Önce bir demo göstereyim, öyle başlayayım. Lena'yı artık evimizin kızı oldu.
+
+762
+01:47:08,579 --> 01:47:15,319
+Ben de Lena'yı edileceğim. Bir de şey vardı, Monster.
+
+763
+01:47:16,724 --> 01:47:29,624
+Monster değil, Monkey şey, bir şampanze. Bir tane de dürbünlü adam. Ünlü üç tane resim. Bütün görüntü işleme kitaplarında onlar vardır.
+
+764
+01:47:29,624 --> 01:47:44,204
+Evet. Nene'yi gittim. Kodu sen kendin mi yazdın? Bir yerlerden yararlanmış mı? Huffman'ın kodunu internetten buldum.
+
+765
+01:47:44,627 --> 01:47:51,947
+Bundan sonra sıkıştırma kısımlarının, onların kodu bağlanması vesaire o kısımları kendim yazdım.
+
+766
+01:47:51,947 --> 01:47:59,547
+Quantization yaptın mı? Evet hocam şuradan hemen atarak göstereyim. Quantization'da ne kullandın?
+
+767
+01:48:01,547 --> 01:48:04,587
+Quantization'da direkt olarak şey yapıyor.
+
+768
+01:48:06,587 --> 01:48:08,547
+Bu düzeninden göstereyim.
+
+769
+01:48:19,667 --> 01:48:30,667
+Burada hocam, hangi tarafa daha yakınsa o tarafa gidiyor. Yani 12 ise 10'a, 18 ise 20'ye yuvarlanıyor gibi. Öyle bir quantization yaptım.
+
+770
+01:48:31,068 --> 01:48:32,807
+Bunu sen mi uydurdun?
+
+771
+01:48:33,948 --> 01:48:36,948
+İnternetten araştırma yaptım. Bu şekilde yapan biri gördüm.
+
+772
+01:48:37,448 --> 01:48:38,967
+Bu yöntemin adı neymiş?
+
+773
+01:48:39,731 --> 01:48:50,332
+Yani yakına dediğin sağındaki ve solundaki pikselleri hangisine yarın etse? Evet. Mesela 161 olan piksel, 160'a arkadaşlarmış.
+
+774
+01:48:50,332 --> 01:48:51,432
+Neden 161?
+
+775
+01:48:51,432 --> 01:48:57,432
+5'ten küçükse aşağıya, 5'ten yüksekse o şekilde.
+
+776
+01:48:57,432 --> 01:49:05,423
+O şekilde adı var. Ama şu anda da aklıma gelmedim. Bir şeylere bölüyorsun, parçalara.
+
+777
+01:49:05,423 --> 01:49:15,423
+O parçaların alt ve üst sınırlarına yuvarlıyorsun. Okey. Evet. Bu normal pikseller. Bu da quantization yapılmış alandır.
+
+778
+01:49:15,423 --> 01:49:23,948
+Bu 366.614 byte'miş. Bu dönemimiz. Daha sonra burada frekansları çıkartıyorum.
+
+779
+01:49:27,539 --> 01:49:37,260
+Bitlerin hepsinin frekanslarını çıkartıyorum. Daha sonra burada Huffman çalışıyor. Huffman ile beraber kodlanmış halde mesela 150 001 verilmiş.
+
+780
+01:49:37,260 --> 01:49:41,699
+150'nin frekansı çok yüksekti. 150'nin frekansı 6154.
+
+781
+01:49:41,699 --> 01:49:54,659
+Burada entropilerine göre bitleri kodlanmış halde. Daha sonra bu direkt olarak resmenin bütün kodlanmış halde bitleriyle beraber.
+
+782
+01:50:03,028 --> 01:50:15,488
+Sıkışılan dosyayı şurada 1000 olarak saklıyor. 66 kilobayt girmiş, 34 kilobayt olarak çıkmış. Daha sonra dekomple seziliyor. Bu da 66 kilobayt.
+
+783
+01:50:17,347 --> 01:50:20,568
+Burada dekod edilmiş pikselleri. Buradan böyle bir karşılaştırdım. Aynı.
+
+784
+01:50:23,731 --> 01:50:35,072
+Burada compression ratio 0.5, sıkıştırma %6, %48 çıktı. Birkaç farklı resimle de denedim. Genelde %40, %50 arasında.
+
+785
+01:50:35,992 --> 01:50:39,352
+Aldığın bu neler? Greyscale bir resim mi?
+
+786
+01:50:39,672 --> 01:50:51,731
+Evet. Arkadaşların yaşadığı problemin aynısını ben de yaşıyorum. Bu BMP'ye renkleri aktarırken aktaramadım yani. O yüzden renkli bir şey de koysam greyscale olurum.
+
+787
+01:50:51,731 --> 01:50:57,671
+çıkıyor çıktı da onu bir türlü beceremedim girdi olarak nefede versem
+
+788
+01:50:57,671 --> 01:51:02,131
+hedefler sence pek de varsa yine çıktı hep bir skeç çıkıyor
+
+789
+01:51:02,131 --> 01:51:11,851
+isterseniz burada uzman zaten açık kaynak olarak internette vardı da
+
+790
+01:51:19,347 --> 01:51:39,347
+Burada enkodedilen yer. Burada renkleri alıyor. Burası compression kısmı. Daha sonra decode kısmı.
+
+791
+01:51:46,228 --> 01:51:57,568
+Bu DNF Teknik Üniversitesi'nin en üstünü ben de anlayamamıştım. Biraz da endişelenmiştim arkadaşların da annesinin yaşadığını duyunca. Şimdi dedim acaba neden? Çünkü ben de araştırdım ve bulamadım neden yaptığınızı.
+
+792
+01:51:57,568 --> 01:52:01,628
+Ama bu kadar mühendis bir araya geldiniz ve bu problemi çözemediniz.
+
+793
+01:52:01,988 --> 01:52:02,568
+Maalesef.
+
+794
+01:52:02,908 --> 01:52:08,008
+Öyle mi? Peki, tamam. Teşekkür ederim sana da.
+
+795
+01:52:08,328 --> 01:52:09,968
+Teşekkür ederim. Teşekkür ederim.
+
+796
+01:52:09,968 --> 01:52:11,908
+Evet, bakalım.
+
+797
+01:52:13,652 --> 01:52:22,572
+[kişisel bilgi]
+
+798
+01:52:22,992 --> 01:52:23,792
+[kişisel bilgi]
+
+799
+01:52:24,132 --> 01:52:24,572
+[kişisel bilgi]
+
+800
+01:52:25,152 --> 01:52:25,912
+[kişisel bilgi]
+
+801
+01:52:26,532 --> 01:52:28,172
+[kişisel bilgi]
+
+802
+01:52:28,632 --> 01:52:30,452
+[kişisel bilgi]
+
+803
+01:52:31,391 --> 01:52:32,351
+[kişisel bilgi]
+
+804
+01:52:33,032 --> 01:52:35,292
+[kişisel bilgi]
+
+805
+01:52:37,524 --> 01:52:53,884
+[kişisel bilgi]
+
+806
+01:52:54,448 --> 01:52:59,528
+[kişisel bilgi]
+
+807
+01:52:59,548 --> 01:53:12,388
+[kişisel bilgi]
+
+808
+01:53:13,288 --> 01:53:14,348
+[kişisel bilgi]
+
+809
+01:53:14,348 --> 01:53:19,348
+[kişisel bilgi]
+
+810
+01:53:19,699 --> 01:53:25,836
+[kişisel bilgi]
+
+811
+01:53:25,908 --> 01:53:47,927
+[kişisel bilgi]
+
+812
+01:53:47,927 --> 01:53:50,768
+[kişisel bilgi]
+
+813
+01:53:51,347 --> 01:53:53,688
+[kişisel bilgi]
+
+814
+01:53:53,908 --> 01:54:10,807
+[kişisel bilgi]
+
+815
+01:54:10,807 --> 01:54:18,127
+[kişisel bilgi]
+
+816
+01:54:19,572 --> 01:54:32,412
+[kişisel bilgi]
+
+817
+01:54:32,832 --> 01:54:40,912
+[kişisel bilgi]
+
+818
+01:54:41,492 --> 01:54:59,311
+[kişisel bilgi]
+
+819
+01:54:59,615 --> 01:55:26,956
+[kişisel bilgi]
+
+820
+01:55:27,615 --> 01:55:45,735
+[kişisel bilgi]
+
+821
+01:55:46,931 --> 01:55:48,572
+[kişisel bilgi]
+
+822
+01:55:48,952 --> 01:55:55,532
+[kişisel bilgi]
+
+823
+01:55:57,051 --> 01:56:02,811
+[kişisel bilgi]
+
+824
+01:56:03,380 --> 01:56:06,540
+[kişisel bilgi]
+
+825
+01:56:06,540 --> 01:56:16,940
+[kişisel bilgi]
+
+826
+01:56:17,587 --> 01:56:20,148
+[kişisel bilgi]
+
+827
+01:56:20,528 --> 01:56:30,408
+[kişisel bilgi]
+
+828
+01:56:30,768 --> 01:56:32,248
+[kişisel bilgi]
+
+829
+01:56:33,148 --> 01:56:43,608
+[kişisel bilgi]
+
+830
+01:56:44,115 --> 01:57:08,876
+[kişisel bilgi]
+
+831
+01:57:10,068 --> 01:57:29,547
+[kişisel bilgi]
+
+832
+01:57:29,547 --> 01:57:35,668
+[kişisel bilgi]
+
+833
+01:57:37,619 --> 01:58:00,219
+[kişisel bilgi]
+
+834
+01:58:01,235 --> 01:58:03,735
+[kişisel bilgi]
+
+835
+01:58:04,235 --> 01:58:05,475
+[kişisel bilgi]
+
+836
+01:58:06,675 --> 01:58:13,615
+[kişisel bilgi]
+
+837
+01:58:14,615 --> 01:58:15,035
+[kişisel bilgi]
+
+838
+01:58:15,635 --> 01:58:17,935
+[kişisel bilgi]
+
+839
+01:58:22,515 --> 01:58:32,455
+[kişisel bilgi]
+
+840
+01:58:38,836 --> 01:58:53,836
+[kişisel bilgi]
+
+841
+01:58:53,836 --> 01:58:58,836
+[kişisel bilgi]
+
+842
+01:59:09,140 --> 01:59:13,579
+[kişisel bilgi]
+
+843
+01:59:13,579 --> 01:59:19,380
+[kişisel bilgi]
+
+844
+01:59:19,380 --> 01:59:21,859
+[kişisel bilgi]
+
+845
+01:59:24,579 --> 01:59:26,659
+[kişisel bilgi]
+
+846
+01:59:26,659 --> 01:59:34,579
+[kişisel bilgi]
+
+847
+01:59:34,868 --> 01:59:40,868
+[kişisel bilgi]
+
+848
+01:59:44,868 --> 01:59:49,868
+[kişisel bilgi]
+
+849
+01:59:50,868 --> 01:59:56,868
+[kişisel bilgi]
+
+850
+01:59:56,868 --> 01:59:59,868
+[kişisel bilgi]
+
+851
+02:00:00,020 --> 02:00:20,660
+[kişisel bilgi]
+
+852
+02:00:26,260 --> 02:00:51,699
+[kişisel bilgi]
+
+853
+02:00:52,851 --> 02:00:57,851
+Açtığın vakit orijinaline dönemedin.
+
+854
+02:00:57,851 --> 02:00:59,851
+Evet, evet.
+
+855
+02:00:59,851 --> 02:01:08,851
+Kompresi, büyük kompresi yüzeylerden, 3 bitkini yüksek.
+
+856
+02:01:08,851 --> 02:01:11,851
+Şimdi bir örneği göstereceğim.
+
+857
+02:01:11,851 --> 02:01:15,851
+Peki bunu düzeltmek için zaman ister misin?
+
+858
+02:01:17,716 --> 02:01:39,556
+Yani eğer varsa olur yani. Bugün ya da yarına kadar. Yani çarşamba akşamına kadar zaman veririm. Tamam tamam daha iyi olur. İyi tamam sen anlat yine de. Tamam bir defa bir fotoğraf alacağım.
+
+859
+02:01:47,060 --> 02:01:49,060
+Çey...
+
+860
+02:02:15,475 --> 02:02:42,555
+Here, after compression, this information will appear, original data length and encoding length and PSNR, which is required to measure the compression, compute the peak signal to noise ratio.
+
+861
+02:03:20,307 --> 02:03:31,028
+Ok, the original values, data name, and the encoded link is here. Compression ratio is here. After decompression...
+
+862
+02:03:35,444 --> 02:03:47,444
+B-S-N-R is showing 100. That means there is no damaging in the picture on the second side, the decompression step.
+
+863
+02:03:47,444 --> 02:03:59,444
+So let's check the file size. See, this is the original and the decoded is here, it's the same size.
+
+864
+02:04:00,404 --> 02:04:03,404
+Evet, aynı cısı değildi.
+
+865
+02:04:03,404 --> 02:04:07,404
+Değil bir kısımda da aynı cısı değildi.
+
+866
+02:04:07,404 --> 02:04:13,404
+Yani hiçbir kısımda bir kısımda kaybeder.
+
+867
+02:04:16,948 --> 02:04:27,548
+Bu bir de bu
+
+868
+02:05:09,716 --> 02:05:15,416
+Ok, so after decompression, you can check.
+
+869
+02:05:25,587 --> 02:05:30,587
+Bu da
+
+870
+02:05:30,587 --> 02:05:32,587
+7 kbps'ı
+
+871
+02:05:32,587 --> 02:05:34,587
+daha yüksek.
+
+872
+02:05:34,587 --> 02:05:37,587
+Bu da bir şey var.
+
+873
+02:05:37,587 --> 02:05:40,587
+Bu da
+
+874
+02:05:40,587 --> 02:05:42,587
+bu da
+
+875
+02:05:42,587 --> 02:05:45,587
+bir şey.
+
+876
+02:05:45,587 --> 02:05:48,587
+Bu da
+
+877
+02:05:53,735 --> 02:05:54,795
+İlk
+
+878
+02:06:03,699 --> 02:06:11,539
+Bu bir ilk başta, normalde Hofman'ın kodak.
+
+879
+02:06:31,923 --> 02:06:34,403
+Hockmann Dictionary,
+
+880
+02:06:43,532 --> 02:06:56,532
+Bu information on the second side for decompression side with the data so we can get the original shape.
+
+881
+02:07:01,140 --> 02:07:27,000
+If there is any question, I can answer. And if I have a chance to revise the code, because I think I must get the second size after decryption, at least smaller size if possible.
+
+882
+02:07:28,595 --> 02:07:33,095
+Bu, şimdi, araylarına kadar daha yüksek daha daha yüksek.
+
+883
+02:07:33,975 --> 02:07:37,975
+Bu, bu, bir problemiyle ilgili bir soru var.
+
+884
+02:07:45,300 --> 02:08:01,300
+Ben anlamadım şeyi. Sen kompres ettin Lena'yı, dekompres ettin, orijinalini açtı. Sen dedin ki açamıyorum dedin.
+
+885
+02:08:07,060 --> 02:08:14,060
+Bu konuyu örneklerle anlatacağız. Çünkü bu konuyu birçok birçok. Bu konuyu birçok. Bu konuyu birçok.
+
+886
+02:08:34,804 --> 02:08:39,304
+Düzeltebilirsen bana haber ver, tamam mı? Tamam.
+
+887
+02:08:48,500 --> 02:08:49,579
+Teşekkür ediyorum.
+
+888
+02:08:50,020 --> 02:08:50,600
+Geçen bir ay.
+
+889
+02:08:51,440 --> 02:09:01,100
+Şimdi, şey paylaşımı durdurur musun? Şimdi biri daha vardı. [öğrenci].
+
+890
+02:09:03,860 --> 02:09:08,680
+[öğrenci]? Sesin kapalı ya da ben duymuyorum.
+
+891
+02:09:21,587 --> 02:09:48,328
+[kişisel bilgi]
+
+892
+02:10:00,000 --> 02:10:27,399
+Ben bir alıntı da yaptım hocam. Normal tek için yazılan kodlardan da esinlendim. İlk önce her pikselin frekansını alıyor, sonra frekansları sıralıyor. Her yaprak düğümleri oluşturuyor. Ondan sonra da sağına sonra bir sıkı derleniyor burada da. Sonra o düğümleri birleştirmeye başlıyor.
+
+893
+02:10:30,484 --> 02:10:42,484
+Ağacı oluşturdu. Sonra frekanslardan emin ettiğimiz binalik kodlarını kodluyor. Onları da dekod işlemine yolluyor.
+
+894
+02:10:44,484 --> 02:10:46,484
+Buradan bir tanesini çalıştırayım.
+
+895
+02:11:11,828 --> 02:11:23,427
+Bir dekotex'in hocam, ben reformans ya da resimler için olan analizi göstereyim ama. Şu resimler kullanım, birinci, ikinci resim olarak.
+
+896
+02:11:23,427 --> 02:11:35,228
+Bir resimde ilkinde, ilk önce renklerin biraz yerinden farklı olmasını istedim. İkincisinde daha normal resim. Üçte de giderek artık hep aynı tonda olan resim kullanmak istedim.
+
+897
+02:11:36,627 --> 02:11:47,327
+Birbirleri arasındaki oran bu şekilde sıkıştırma oranları açısından birinci resim değil, üçüncü resim daha yüksek sıkıştırma oranına sahip üç arasından.
+
+898
+02:11:52,404 --> 02:12:06,104
+Bu üç resmin sıkıştırılmış boyutları, orijinal boyutları burada var. Aralarındaki fark, bug bazında. Sıkıştırma oranları yine üçüncü resimde, yani şu Rockus'un olduğu resimde daha yüksek.
+
+899
+02:12:10,420 --> 02:12:37,720
+Yine de %50 ile %60 arasında gidip geliyor. Evet. Bu şekilde dekod işleminde de sanırım %60. Peki burada hedef nasıl oluşturulmuş bu kodda? Binary kodları yolluyor hocam. Kodları gönderiyor. Evet. Peki başka söyleyecek bir şeyin var mı? Yok. Şunu göstereyim en sonunda pek edilmiş halde.
+
+900
+02:12:46,931 --> 02:13:09,552
+Bu kadar hocam. Tamam, teşekkür ediyorum [öğrenci]. Ben 20 kişiyle, şu an listemde 20 kişinin ismi var. 18 kişiyiz. Aramızda göstermeyen var mı şu an?
+
+901
+02:13:13,684 --> 02:13:28,104
+Sen gösterdin [öğrenci]. Göstermedim mi? Göstermedim hocam ya. Bir tane daha gösterecektim. Yükledim de şey, bir tanesi sorun vermişti ya hocam. Ben bir tanesini göstermedim.
+
+902
+02:13:28,104 --> 02:13:33,644
+Tamam ben istemi o kadar şey ki. Sen nasıl unutabilirim?
+
+903
+02:13:34,515 --> 02:13:38,875
+Nasıl unutabilirim? Niye aklımda kalmıyorsun sen? Anlamıyorum.
+
+904
+02:13:39,335 --> 02:13:42,715
+[kişisel bilgi]
+
+905
+02:13:43,035 --> 02:13:43,355
+[kişisel bilgi]
+
+906
+02:13:46,575 --> 02:13:53,835
+[kişisel bilgi]
+
+907
+02:13:54,635 --> 02:13:58,575
+[kişisel bilgi]
+
+908
+02:13:59,095 --> 02:14:01,275
+[kişisel bilgi]
+
+909
+02:14:01,939 --> 02:14:10,539
+[kişisel bilgi]
+
+910
+02:14:10,679 --> 02:14:12,199
+[kişisel bilgi]
+
+911
+02:14:12,199 --> 02:14:28,019
+[kişisel bilgi]
+
+912
+02:14:28,884 --> 02:14:48,143
+[kişisel bilgi]
+
+913
+02:14:48,143 --> 02:14:55,143
+[kişisel bilgi]
+
+914
+02:14:55,728 --> 02:15:00,807
+[kişisel bilgi]
+
+915
+02:15:00,827 --> 02:15:01,367
+[kişisel bilgi]
+
+916
+02:15:01,807 --> 02:15:02,487
+[kişisel bilgi]
+
+917
+02:15:02,487 --> 02:15:02,967
+[kişisel bilgi]
+
+918
+02:15:03,547 --> 02:15:04,987
+[kişisel bilgi]
+
+919
+02:15:05,427 --> 02:15:10,367
+[kişisel bilgi]
+
+920
+02:15:10,688 --> 02:15:15,307
+[kişisel bilgi]
+
+921
+02:15:15,307 --> 02:15:19,547
+[kişisel bilgi]
+
+922
+02:15:20,212 --> 02:15:39,832
+[kişisel bilgi]
+
+923
+02:15:42,224 --> 02:15:57,264
+Şöyle bir şey yaptım, 1234 kendi adımla Lede Çenliği bir dosya oluşturdum aslında. Bunu normal gelip buradan upload ettim. Sonra da yeni proje üzerinde açtığım zaman kodu koyup bunu çalıştırdım.
+
+924
+02:15:59,380 --> 02:16:21,180
+Histogramda bana verdi. Bunların her bir tanesi bir karakteri. 1, 2, 3, 4, 1'i verdi. A'dan bir tane kullanılmış yani aslında. Mesela E'den dört tane kullanılmış. I'dan iki tane. L, M, N, R, S'den. Diğerleri sıfırlar karşılıklı. Böyle bir tablo çıktı. Bunu da sunuma ekledim. Fakat burada şöyle bir sunum çıktı hocam.
+
+925
+02:16:25,971 --> 02:16:38,291
+Bu kodları çıkarırken sen mi algoritmayı yazdın, var olan bir yerden yardım aldın mı?
+
+926
+02:16:38,291 --> 02:16:45,412
+Yok, hazır aldım hocam ama hata çalıştı. Bizim bilgisayar mühendisi hocamızdan yardım istedim.
+
+927
+02:16:45,412 --> 02:16:46,191
+Kimden?
+
+928
+02:16:47,412 --> 02:16:47,891
+Kim?
+
+929
+02:16:49,843 --> 02:17:08,063
+Resul Kara diye dekan bir ağrımız var. Elif Hocamız. Onlardan yardım istedim. Onlardan geldi. Çünkü çalıştırdım. Birkaç kez hata verdi. Bir de sonucu alamadım. Sadece rakamları geri döndürdü. Şeyi döndüremedim. Tekrar.
+
+930
+02:17:09,492 --> 02:17:22,952
+Evet, kodlar gelmedi. Rakamlar geldi. İsimleri geri çeviremedim ikinci de. Ben de bunun üstüne Python'da çalıştım. Onu işte Python'da dosya driver'ı yüklemek.
+
+931
+02:17:33,620 --> 02:17:42,880
+Bir şey gözüküyordur şurada diye. Standart web sitelerinde kullanılan bir loropsum aldım. Burada sadece bunu çevireyim diye. Sonra onu yükledim.
+
+932
+02:17:49,012 --> 02:17:53,531
+Fazla vaktinizi almayacağım buradan. Her kere resim benimkisi yazı oldu ama.
+
+933
+02:17:54,952 --> 02:17:59,752
+Evet. Sonuç ekranında böyle bir sonuç aldım.
+
+934
+02:18:00,672 --> 02:18:06,272
+Burada baktığım zaman ana dosyada 27.760 iken 14.791 aslında.
+
+935
+02:18:07,272 --> 02:18:10,832
+Yani paysımda aslında daha iyi sonuç verdi. Onu görmüş oldum hocam.
+
+936
+02:18:12,912 --> 02:18:15,292
+Bunları da şöyle.
+
+937
+02:18:15,956 --> 02:18:17,416
+Bir dakika hemen paylaşım.
+
+938
+02:18:24,084 --> 02:18:35,664
+Şunları da şöyle temize çektim hocam. Böyle kod sayfalarını hem kodları yükledim tek tek dosya. Veri sıkıştırma projesi diye. Şöyle tek tek şekillerine de koydum. Hedefimi verdim. Aldım, dosyayı verdim.
+
+939
+02:18:37,804 --> 02:18:47,623
+Yaptığım ekranların tek tek görüntülerini sunumlarda çağrılan veri sonucunu, histograma tek tek verdim. Değerlendirmeyi yazdım sonuçta çıkan.
+
+940
+02:18:48,115 --> 02:18:59,296
+Harfleri geri çağrılamadığına kadar verdim. Bir de Python'la alakalı ama Python'ın o ekranlarını da koyacağım hocam. Python'daki sonucu da burada paylaştım. Aradaki o dosyayı. Bunu da sisteme yükledim hocam.
+
+941
+02:18:59,396 --> 02:19:01,655
+Bu da sonucu. Peki.
+
+942
+02:19:05,332 --> 02:19:06,551
+Teşekkür ediyorum.
+
+943
+02:19:07,592 --> 02:19:08,752
+Ben teşekkür ederim hocam.
+
+944
+02:19:12,652 --> 02:19:14,792
+Aranızda göstermeyen kaldı mı?
+
+945
+02:19:18,963 --> 02:19:44,043
+Tamam. O zaman bugün en geç saat 15'e kadar yüklerseniz raporlarınızı. Notları ben gireceğim. Fakat sisteme girmek için de kimi bekleyecektim? Biri düzeltme yapabilecekti. Kimdi o? [öğrenci]. [öğrenci] eğer düzeltme yaparsa bana haber verecek. Öyle ilan ederim.
+
+946
+02:19:44,724 --> 02:19:56,664
+Gösterebilen arkadaşları da aynı bütünleme gününde böyle online projelerine bakacağım. Başka bana soracak bir şeyiniz yoksa tanıştığımızda sizlerle memnun oldum.
+
+947
+02:19:57,664 --> 02:20:07,904
+İnşallah başlayalım şimdi derslerimiz. Efendim? Bitiyor mu artık bütünlemeyi kalmıyor. Sonra kompresi yok mu? Her dönem bir tane kompresim var senin için.
+
+948
+02:20:08,884 --> 02:20:18,083
+[kişisel bilgi]
+
+949
+02:20:18,083 --> 02:20:20,324
+Yani daha yeni başladık çünkü daha yıllar mı?
+
+950
+02:20:21,683 --> 02:20:31,723
+Tamam bir yerde yollarımız yine çakışacaktır. Tamam görüşmek üzere o zaman yine koridorlarda orada burada birbirimizin karşısına çıkarız. Size başarılar diliyorum.
+
+951
+02:20:32,371 --> 02:20:35,351
+Teşekkürler hocam.
+
+952
+02:20:36,072 --> 02:20:37,072
+Fakiriz helal olsun.
+
+953
+02:20:37,451 --> 02:20:38,331
+Helal olsun.
