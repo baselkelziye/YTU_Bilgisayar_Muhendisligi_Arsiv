@@ -1,0 +1,4507 @@
+1
+00:03:24,243 --> 00:03:33,403
+Evet arkadaşlar, merhaba. Bu hafta nin proje sunumlarında ikinci haftadayız.
+
+2
+00:03:34,264 --> 00:03:40,783
+Geçen hafta 10 arkadaşımız sunum yaptı. Bu haftada en az 10 kişinin sunum yapmasını bekliyorum.
+
+3
+00:03:41,783 --> 00:03:51,044
+Gönüllü olarak ilk sırada [öğrenci], ikinci sırada [öğrenci], [öğrenci], üçüncü sırada [öğrenci], dördüncü sırada [öğrenci] var.
+
+4
+00:03:51,539 --> 00:03:58,939
+Yine çete isimlerinizi yazmaya devam edebilirsiniz. Ben de oradan sizi sıraya alırım.
+
+5
+00:04:00,399 --> 00:04:09,500
+[öğrenci] sunum için ekranını paylaşabilirsin. Sunum yapacak tüm arkadaşlara şöyle bir açıklamam var. 15 dakika süreniz var.
+
+6
+00:04:09,907 --> 00:04:14,807
+Sunumun başında kameranızı açıyorsunuz. Mutlaka görüyoruz sizi.
+
+7
+00:04:15,707 --> 00:04:24,767
+Ve proje konusunu, neden bu konuyu seçtiğinizi de sunuma başlamadan açıklamanızı rica ediyorum.
+
+8
+00:04:25,807 --> 00:04:31,887
+Evet, [öğrenci] merhaba. Ekranını da paylaşırsan sevinirim.
+
+9
+00:04:33,947 --> 00:04:36,228
+Evet, görebiliyoruz.
+
+10
+00:04:39,187 --> 00:04:50,228
+Tam ekran yapalım. Tamam, bu da güzel oldu. Evet, [öğrenci], söz sizin. 15 dakika süreniz var. Buyurun.
+
+11
+00:04:51,327 --> 00:05:00,108
+Herkese merhaba. Benim seçtiğim makale öğrenci istihdam edilebilirliğini belirler. Makine ve derin öğrenme yaklaşımıyla eğitim verim maden.
+
+12
+00:05:00,127 --> 00:05:04,067
+[öğrenci], [öğrenci] sesin çok az geliyor. Şu an geliyor mu hocam?
+
+13
+00:05:04,819 --> 00:05:09,719
+Ben şeyi de arttırdım. Biraz daha yüksek sesle lütfen.
+
+14
+00:05:10,439 --> 00:05:11,300
+Şu an iyiyim hoca?
+
+15
+00:05:11,759 --> 00:05:12,699
+Evet, şu an iyiyim.
+
+16
+00:05:13,019 --> 00:05:20,639
+Tamamdır. Ben bu makaleyi seçme sebebim, bu makalede özelliklerin önemini şaf analiziyle belirlemiş.
+
+17
+00:05:20,740 --> 00:05:25,399
+Ben de özellik seçimiyle ilgilendiğim için bu makaleyi seçmiş oldu.
+
+18
+00:05:26,516 --> 00:05:29,156
+Hangi bölümün öğrencisiydiniz?
+
+19
+00:05:29,475 --> 00:05:31,256
+[kişisel bilgi]
+
+20
+00:05:31,316 --> 00:05:34,076
+[kişisel bilgi] Peki, devam.
+
+21
+00:05:34,796 --> 00:05:40,216
+İlk önce makalede yapılan çalışmadan bahsedip daha sonra kendi uygulamama geçeceğim.
+
+22
+00:05:40,836 --> 00:05:48,196
+Bu makalenin amacı öğrenciler mezun olduktan sonra daha kolay iş bulabilmeleri için ve iş hayatlarında başarılı olmaları için
+
+23
+00:05:48,196 --> 00:05:54,516
+gerekli olan özellikleri veri madenciliği teknikleri, makine öğrenimi ve derin öğrenme algoritmaları kullanarak...
+
+24
+00:05:54,516 --> 00:06:03,096
+Bu özellikleri belirleyip mezunlarında da bu özellikler geliştirildiğinde istihdam edilebilirlik iyileştirebilmesi amaçlanmış.
+
+25
+00:06:04,216 --> 00:06:17,576
+Son yıllarda istihdam edilebilirlik tahmini için genellikle rastgele orman, diskriminat analizi, doistik regresyon, Naive Bayes, karar ağacı, destek vektör makinesi ve yapay sinir ağları gibi algoritmalar kullanılmış.
+
+26
+00:06:17,576 --> 00:06:22,516
+Ve veri setlerinde demografik özellikler, akademik geçmiş, öğrenci notor...
+
+27
+00:06:22,516 --> 00:06:25,735
+ve müfredat dışı etkinlikler önemli olarak belirlenmiş.
+
+28
+00:06:26,255 --> 00:06:30,596
+Fakat öğrencilerin sosyal beceri özellikleri kullanılmamış.
+
+29
+00:06:30,735 --> 00:06:36,416
+Ayrıca derin öğrenmeli çalışma yapılmadığı için bu makalede bu eksiklikler giderilmiş.
+
+30
+00:06:37,747 --> 00:06:45,528
+Genel olarak çalışmada ilk önce veri seti analizi yapılıyor, sonra ön işleme, daha sonra veri seti eğitim ve test olarak ayrılıyor.
+
+31
+00:06:46,127 --> 00:06:54,467
+Daha sonra 3 kat çapraz doğrulama ile çalışmada kullanılacak olan algoritmalar, Gris Search uygulanarak en iyi hiperparametreler belirleniyor.
+
+32
+00:06:54,467 --> 00:07:02,768
+Daha sonra performans metrikleri ile modeller karşılaştırılıyor ve şap analizi ile de özellik önemleri belirlenmiş oluyor.
+
+33
+00:07:03,699 --> 00:07:15,560
+Çalışmada öğrenci istihdam edilebilirliği veri seti kullanılıyor. Bu veri seti de Filipinler'de farklı üniversitelerden alınan sahte iş görüşmelerinin sonuçlarından oluşuyor.
+
+34
+00:07:16,319 --> 00:07:25,800
+9 tane özellik var. 1982'de kayıt var. Öğrenci adı veri setinden çıkarılıyor çünkü her kayıt için farklı değerlere sahip.
+
+35
+00:07:26,560 --> 00:07:31,699
+Hedef özellikle istihdam edilebilir ve daha istihdam edilebilir olmak üzere.
+
+36
+00:07:31,699 --> 00:07:33,300
+İki sınıflı bir veri seti.
+
+37
+00:07:34,319 --> 00:07:38,180
+İstihdam edilebilir sınıfında yüzde elli sekiz oranında kayıt var.
+
+38
+00:07:38,379 --> 00:07:43,120
+Daha az istihdam edilebilir sınıfında ise yüzde kır iki oranında kayıt var.
+
+39
+00:07:43,959 --> 00:07:46,339
+Çalışmada bu veri seti dengeli olarak kabul ediliyor.
+
+40
+00:07:48,115 --> 00:07:53,275
+Daha sonra burada özellikler arasındaki korrelasyon kat sayıları verilmiş.
+
+41
+00:07:54,755 --> 00:07:59,615
+Özelliklerle sınıf arasındaki korrelasyon kat sayılarına baktığımızda çok düşük olduğu görülüyor.
+
+42
+00:07:59,735 --> 00:08:03,455
+Yani bir sınıfta tahmin etmede tek bir özellik yeterli değil.
+
+43
+00:08:05,395 --> 00:08:10,435
+Özellikler arasındaki korrelasyon kat sayılarına baktığımızda genel olarak 0.5'in üstünde.
+
+44
+00:08:10,596 --> 00:08:13,216
+Yani birbirleriyle bağlantılı özellikler.
+
+45
+00:08:13,875 --> 00:08:21,536
+Daha sonra veri setinde istihdam edilebilir sınıfı 0, daha da istihdam edilebilir sınıfı 1 olarak kodlanıyor.
+
+46
+00:08:22,387 --> 00:08:40,447
+Veri seti %80 eğitim ve %20 test olarak bölünüyor. Destek vektör makinesi, lojistik regresyon, karar ağacı, rastgele orman, gradyan artırma, yapay sinir ağları, GRO ve LSTM algoritmalarıyla 3 kat çapraz doğrulamayla, Gris Search uygulanarak en iyi hiperparametreler belirleniyor.
+
+47
+00:08:41,248 --> 00:08:47,548
+En iyi hiperparametreler belirlendikten sonra tekrar model kurularak test veri seti üstünde test ediliyor.
+
+48
+00:08:50,388 --> 00:08:55,908
+Matev korrelasyonu, coin kapa kasası ve rock eğrisi ile de karşılaştırma yapılıyor.
+
+49
+00:08:57,067 --> 00:09:00,208
+Burada modellerin karışıklık matrislerini verdim.
+
+50
+00:09:00,528 --> 00:09:06,648
+Destek vektör makinesine baktığımızda istihdam edilebilir sınıfını en iyi şekilde tahmin ettiği görülüyor.
+
+51
+00:09:07,148 --> 00:09:12,668
+Dojistik regresyona baktığımızda hatalı tahminleri fazla, bu yüzden düşük bir performans sergilemiş.
+
+52
+00:09:13,587 --> 00:09:20,268
+Karar ağacına baktığımızda daha az istihdam edilebilir sınıfı en iyi şekilde tahmin edilmiş.
+
+53
+00:09:20,268 --> 00:09:28,268
+Rastgele ormanla gradiyan artırma algoritmaları da aynı karışlık matrislerini vermiş ve karar ağacına göre...
+
+54
+00:09:28,528 --> 00:09:46,508
+göre biraz daha düşük bir performans vermiş. Yapay sinir ağları da karar ağacına göre ve rastgele ormana göre daha düşük bir performans verdiği görülüyor. Yeru ve LSTM modelleri ise her iki sınıf içinde daha iyi sonuç verdiği görülüyor.
+
+55
+00:09:47,059 --> 00:09:58,319
+ROG eğrilerine geldiğimizde ise, lojistik regresyona baktığımızda tahmini karar sınırına yakın, yani bu da düşük performans gösterdiği anlamına geliyor.
+
+56
+00:09:58,460 --> 00:10:00,799
+Yani sınıfları ayırt edememiş.
+
+57
+00:10:01,579 --> 00:10:09,019
+Karar ağacı, rastgele orman, graden artırma, GRO ve LSTM modelleri daha iyi sonuç verdiği buradan görülüyor.
+
+58
+00:10:10,119 --> 00:10:12,379
+Burada sınıflandırma raporlarını verdim.
+
+59
+00:10:13,427 --> 00:10:24,508
+İlk olarak destek vektör makinesine baktığımızda %90 üzerinde doğruluk vermiş ve her iki sınıf içinde kesinlik oranları %90 üzerinde yani her iki sınıfta da iyi tahminler yapmış.
+
+60
+00:10:25,187 --> 00:10:34,807
+Lojistik regresyona baktığımızda genel olarak düşük performans göstermiş her metrik için. Bu da bu veri seti için uygun olmadığını belirtmiş çalışmada.
+
+61
+00:10:35,827 --> 00:10:41,627
+Karar ağacına baktığımızda rastgele ormana göre biraz daha iyi performans göstermiş.
+
+62
+00:10:42,827 --> 00:10:48,087
+Gradyan artırmada rastgele ormanla aynı sınıflandırma raporuna sahip.
+
+63
+00:10:48,347 --> 00:10:54,807
+Yapay sinir ağları da baktığımızda rastgele ormana göre ve karar ağacına göre biraz daha düşük bir performans vermiş.
+
+64
+00:10:58,772 --> 00:11:09,192
+derin öğrenme modelleri olduğundan dolayı birbirine bağlı verilerde, doğrusal olmayan verilerde daha iyi sonuç verdiği için bu veri setinde de iyi sonuçlar vermiş.
+
+65
+00:11:09,872 --> 00:11:20,332
+Buraya baktığımızda, genel olarak bütün metriklere baktığımızda, LSTM modeli en iyi model olarak seçilmiş ve bu modelle SHAP analizi yapılmış.
+
+66
+00:11:20,892 --> 00:11:26,352
+SHAP analizinde de bir özelliğin modelin tahminine katkısı hesaplanıyor. Bu da şu şekilde.
+
+67
+00:11:26,772 --> 00:11:37,432
+tahmine katkısı hesaplanması istenen özellik haricindeki diğer özelliklerle alt kümeler kuruluyor ve modelin tahminli olan katkıları hesaplanıyor.
+
+68
+00:11:38,227 --> 00:11:50,307
+Daha sonra bu özellik, bu alt kümeleri dahil edilerek tekrardan bir hesaplama yapılıyor ve belli işlemler sonucunda da sadece o özelliğin tahmin olan katkısı bulunmuş olunuyor.
+
+69
+00:11:51,048 --> 00:11:56,927
+Şimdi ilk grafiğe baktığımızda istihdam edilebilir sınıfına yapılan katkılar gösteriliyor.
+
+70
+00:11:57,067 --> 00:12:03,567
+Burada genel olarak özelliklerin yüksek değerleri istihdam edilebilir sınıfına pozitif katkı sağlamış.
+
+71
+00:12:06,196 --> 00:12:15,015
+Tam tersi, özelliklerin düşük değerleri daha az istihdam edilebilir sınıfının tahminine pozitif katkı yapmış.
+
+72
+00:12:15,375 --> 00:12:20,176
+Üçüncü grafikte ise özelliklerin ortalama şart değerleri verilmiş.
+
+73
+00:12:20,336 --> 00:12:26,036
+Burada da özgüven ve fikirleri sunma yeteneğinin en önemli iki özellik olduğu anlamına geliyor.
+
+74
+00:12:26,580 --> 00:12:34,120
+İletişim becerisi ve konuşma biçimi de en az iki önemli özellik olarak burada görülüyor.
+
+75
+00:12:34,880 --> 00:12:41,660
+Bunun sonucunda özgüven fikirleri sunma becerisi özellikleri istihdam edilebilirlikte daha önemli olduğuna karar verilmiş.
+
+76
+00:12:42,160 --> 00:12:49,020
+Birçok işverende kişinin fikir üretme ve problem çözme becerilerine önem veriyor ve bunların hepsi de fikir sunma becerisi gerektiriyor.
+
+77
+00:12:49,844 --> 00:13:02,684
+İletişim becerisi ve konuşma biçimi de en az etkili olan özellikler olarak görülüyor. Burada aslında önemli olan iletişim ve konuşma değil, iletilen şeyin açık ve anlaşılır bir şekilde sunulmasıdır.
+
+78
+00:13:03,668 --> 00:13:10,567
+Sosyal beceri gelişimin eğitim müfredatlarına dahil edilmesi sonucu çıkarılıyor bu çalışmanın sonucunda.
+
+79
+00:13:10,827 --> 00:13:17,288
+Ayrıca düşük istihdam edilebilir riski taşıyan öğrenciler için de özel eğitim planları yapılmasını öneriyor.
+
+80
+00:13:17,888 --> 00:13:21,408
+Bu şekilde öğrencilerin iş piyasasındaki başarılara artırılabilir.
+
+81
+00:13:21,940 --> 00:13:33,660
+LSTM modelinde ise doğursal olmayan ve birbirine bağlı verilerde daha iyi performans verdiği için eğitim veri madenciliği alanında gelecekte de kullanılması gerektiği düşünülüyor.
+
+82
+00:13:34,300 --> 00:13:42,440
+Ayrıca modelini tam olarak iyileştirmek ve doğrulamak için de daha kapsamlı gerçek bir veri seti üstünde çalışılması gerektiğini vurgulamışlar.
+
+83
+00:13:43,700 --> 00:14:06,200
+Şimdi kendi uygulama geçecek olursam, ben aynı veri setini kullandım. İlk önce gerekli kütüphaneleri yükleyip veri setini okuttum. Daha sonra kayıp veri ve aykırı veri kontrolü yaptım. Kayıp veri de yoktu, aykırı veri de yoktu. İstihdam edilebilir sınıfını 0, daha az istihdam edilebilir sınıfını 1 olarak kodladım. Veri setini %80 eğitim ve %20 test olarak ayırdım.
+
+84
+00:14:11,700 --> 00:14:18,740
+Doğrulamayla Gliss Search uyguladım. En iyi hiper parametre belirleyip, tekrardan model oluşturup, test veri seti üstünde test ettim.
+
+85
+00:14:20,115 --> 00:14:31,835
+Şimdi burada şöyle bir şey yaptım. Kendi uyguladığım Gris Search'den elde ettiğim hiperparametrelerle model kurup, bunu sol tarafta sınıflandırma raporu olarak verdim.
+
+86
+00:14:32,395 --> 00:14:39,055
+Sağ tarafta ise makalede kullanılan hiperparametreleri kullanarak bir model oluşturdum.
+
+87
+00:14:39,055 --> 00:14:46,635
+Burada destek vektör makinesine baktığımızda hemen hemen iki modelde de aynı sonuçları elde ettim.
+
+88
+00:14:47,251 --> 00:15:04,951
+Yine %90 üzerinde doğruluk elde ediyorum. Lojistik regresyonda da yine makaledeki hiperparametrelere göre bende bazı hiperparametre farklı çıktı. Burada da yine iki modelde de düşük sonuçlar elde ettim. Demek ki bu veri seti için uygun bir model değil lojistik regresyon.
+
+89
+00:15:05,940 --> 00:15:16,700
+Karar ağacında da yine aynı şekilde hiperparametre makaledekine göre bazıları farklı çıktı. Ama sonuçlar hemen hemen yine aynı şekilde yüksek çıktı.
+
+90
+00:15:17,491 --> 00:15:21,912
+Rastgele ormanda ise makaledeki ile aynı hiperparametreleri buldum.
+
+91
+00:15:23,031 --> 00:15:29,312
+Baktığımızda da sonuçları yine %90'ın üzerinde doğruluk, kesinlik, duyarlılık, F1 puanını buldum.
+
+92
+00:15:30,091 --> 00:15:36,271
+Gradyen artırma da aynı şekilde yine benim bulduğum hiperparametre makaledekine göre farklı çıktı.
+
+93
+00:15:36,711 --> 00:15:40,991
+Ama her iki modelde de performanslar tamamen aynı çıktı.
+
+94
+00:15:42,067 --> 00:15:47,187
+Yapay sinir ağları, YRO ve LSTM algoritmalarında şöyle bir şey oldu.
+
+95
+00:15:48,447 --> 00:15:54,147
+Kendi bulduğum hiperparametrelerle model kurduğumda yüksek sonuçlar elde ettim.
+
+96
+00:15:54,227 --> 00:15:57,427
+Mesela yapay sinir ağlarında %88 doğruluk elde ettim.
+
+97
+00:15:57,867 --> 00:16:02,587
+Fakat makaledeki hiperparametrelerle model kurduğumda da sonuçları düşük buldum.
+
+98
+00:16:02,767 --> 00:16:04,767
+Mesela %59'da kaldı doğruluk.
+
+99
+00:16:05,299 --> 00:16:13,319
+Growth ve LSTM için de aynı şekilde oldu. Yine kendi parametrelerimi kullandığımda yüksek sonuçlar elde ettim.
+
+100
+00:16:13,459 --> 00:16:17,519
+Fakat makaldeki hiper parametreleri kullandığımda düşük sonuçlar elde ettim.
+
+101
+00:16:18,419 --> 00:16:29,939
+LSTM'de de yine aynı şekilde kendi bulduğum parametrelerle model kurduğumda elde ettiğim sonuçlara baktığımızda en iyi bende de model LSTM modeli çıktı aslında.
+
+102
+00:16:30,939 --> 00:16:39,559
+Bununla şap analizi yapmam gerekiyordu fakat kodda hatalarla karşılaştığımdan dolayı rastgele orman kullanarak şap analizi yaptım.
+
+103
+00:16:46,419 --> 00:16:56,539
+Fikirleri sunma yeteneği en önemli iki özellik çıktı bende de. Benim anlatacaklarım bu kadardı. Dinlediğiniz için teşekkür ederim. Eğer sorularınız varsa alabilirim.
+
+104
+00:16:57,740 --> 00:17:03,639
+Teşekkürler [öğrenci]. İlginç bir çalışmaymış. Sorunuz var mı sevgili arkadaşlar?
+
+105
+00:17:06,067 --> 00:17:09,827
+Senin sunumun için alkışlıyoruz. Ben bir soru sorayım.
+
+106
+00:17:12,168 --> 00:17:18,508
+Bu vermiş olduğun Class Confusion matrislerde Class 1 daha az istihdam edilebilir.
+
+107
+00:17:18,508 --> 00:17:19,148
+Evet hocam.
+
+108
+00:17:20,435 --> 00:17:20,915
+Evet.
+
+109
+00:17:21,675 --> 00:17:27,915
+Hedef, sınıf o mu? Yani daha çok onu mu doğru bulmaya hedeflenmiş? Niye öyle bir seçim yapmış?
+
+110
+00:17:28,556 --> 00:17:34,996
+Evet hocam, çünkü daha az istihdam edilebilir sınıfı bir vererek onu bulmaya çalışmış.
+
+111
+00:17:34,996 --> 00:17:45,516
+Çünkü öğrencilerde daha az istihdam edilebilir riski taşıyan öğrencilere bu özellikleri geliştirerek iş payı piyasasını hazırlamak istenmiş burada.
+
+112
+00:17:46,355 --> 00:18:10,115
+Peki. Ekran paylaşımlarında hep şey vardı, verdiğin tablolarda hem sınıf, klas 0 için hem de klas 1 için tüm metrikleri veriyorsun ve ondan sonra onun altında da ağırlıklı ortalama diyorsun. Çok güzel. Bence de öyle yapılması gerekirdi. Oradaki ağırlıklı ortalamada ne yapılıyor sence?
+
+113
+00:18:14,355 --> 00:18:19,076
+Her sınıf için çıkan sonucu, mesela iki sınıflı ise ikiye bölüyor.
+
+114
+00:18:19,516 --> 00:18:27,036
+Hani dengeli gibi kabul ediyor ama ağırlıklandırılmış ortalamada sınıfların oranlarıyla çarpıp bölme yapıyor.
+
+115
+00:18:27,596 --> 00:18:33,875
+Hani dengesiz veri setlerinde daha kesin sonuç veriyor diyeyim ağırlıklandırılmış olan.
+
+116
+00:18:34,036 --> 00:18:36,755
+Makro biraz daha dengeli veri setlerinde kullanılıyor.
+
+117
+00:18:37,172 --> 00:18:53,731
+Güzel, çok güzel. Bence de öyle yapılması gerekirdi. Zaten klas 0 ve klas 1'i bir arada değerlendirdiği için, her ikisinin de metriklerini verdiği için orada, hangisine klas 0, hangisine klas 1 dediği çok önemini de yitiriyor bir anlamda.
+
+118
+00:18:53,731 --> 00:19:03,192
+Çünkü iki tarafı da doğru bilmek hedef bir taraftan. İlginç bir çalışma. Teşekkür ediyoruz [öğrenci]. Ben teşekkür ederim hocam.
+
+119
+00:19:04,403 --> 00:19:08,683
+Evet, ikinci sırada [öğrenci] var. Ali, ekran paylaşımı yapabilirsiniz.
+
+120
+00:19:09,643 --> 00:19:11,103
+Alo hocam, sesim geliyor mu?
+
+121
+00:19:11,463 --> 00:19:12,223
+Evet, geliyor.
+
+122
+00:19:13,483 --> 00:19:14,003
+[öğrenci].
+
+123
+00:19:19,892 --> 00:19:21,172
+Ekranım geliyormuş şu an.
+
+124
+00:19:22,532 --> 00:19:24,612
+Gördük, ekran da geldi.
+
+125
+00:19:25,612 --> 00:19:26,152
+Tamam mıydı?
+
+126
+00:19:26,331 --> 00:19:29,572
+Tam ekran yaptınız, tamam, güzel. Buyurun, sizi dinliyoruz.
+
+127
+00:19:31,451 --> 00:19:33,331
+Ben yalnız sizi göremiyorum.
+
+128
+00:19:33,912 --> 00:19:40,892
+Hocam, şöyle bir durum var, evet. Şu an laptopda edelim ben, masa üstündeyim. Masanın üstünde şey yok, kamerası yok. Kameramı o yüzden açamayacağım.
+
+129
+00:19:41,951 --> 00:19:44,271
+Cep telefonunda mı yok? Oradan da bağlan, aç.
+
+130
+00:19:45,211 --> 00:19:47,251
+Cep telefonundan zooma mı girmem gerekiyor?
+
+131
+00:19:47,635 --> 00:19:48,615
+Herhalde.
+
+132
+00:19:49,935 --> 00:19:53,275
+O biraz uzar ama hocam. Çünkü zoom yok sanırım benim telefonumda.
+
+133
+00:19:55,056 --> 00:19:59,855
+Olmaz ki böyle. Her şeyi önceden düşüneceksiniz. Ben mi anlatacağım arkadaş?
+
+134
+00:20:00,000 --> 00:20:04,319
+Peki hadi sizi böyle dinleyelim. Bu an kırdım ama.
+
+135
+00:20:04,619 --> 00:20:06,279
+Kusura bakmayın hocam. Daha alır.
+
+136
+00:20:07,619 --> 00:20:17,259
+Şöyle aslında ben direkt başlıktan başlayayım. Yaygın tablosal veriler için aslında zaman dizisi, derin öğrenme yaklaşımının incelenmesi ve yeniden üretimini aslında bugün sizlere anlatmaya çalışacağım.
+
+137
+00:20:17,920 --> 00:20:27,019
+Burada Time Securities Deep Learning for Ubiquitous Tabular Data makalesini seçtim. Bu 2024 yılında yazılmış bir makaleydi. Bunu seçmemin amacı aslında şey.
+
+138
+00:20:28,276 --> 00:20:56,256
+Tablosal verilerde, kredi riski veya müşteri analizi gibi tablosal verilerde geleneksel yöntemler yani makine öğrenmesi yöntemlerinin aslında hakim olduğunu biliyoruz. Burada derin öğrenme yöntemleri biraz daha arka planda kalıyor makine öğrenmesi yöntemlerine göre. Burada derin öğrenme yöntemleri kullanarak aslında makine öğrenmesi yöntemlerinin skorlarını geçebilir miyiz diye ben test etmeye amacı güttüm. O yüzden bu makaleyi seçtim. Burada makalenin önerisi aslında tablosal veriye tek adımlık bir zaman serisi.
+
+139
+00:20:56,276 --> 00:21:07,076
+gibi manipüle ederek, yani araya aslında bir dimension'ı koyarak birazdan göreceğiz. Hele SEM ağlarının gücünden faydalanmak. Onları uygun hale getiriyoruz veriyi ilk başta. Tabler data verimizi.
+
+140
+00:21:08,372 --> 00:21:36,372
+Bizim amacımız burada aslında önerilen bu Sticket by Directional LSM mimarisini sıfırdan kodlamak. Herhangi bir kod base yoktu zaten makalenin. GitHub reposu falan paylaşmamışlardı. Sıfırdan ben kodladım. Burada iki farklı API kullandım. Birbirisi PyTorch, birisi Keras kütüphanesi olmak üzere iki farklı kullandım. Makaledeki yüksek başarı iddialarını doğrulama amacı güttüm. Biraz reproduz edebiliyor muyuz diye skorlara baktım aslında. Diğer, üçüncü amacım da aslında yöntemin eksiklerini tespit edelim.
+
+141
+00:21:36,372 --> 00:21:38,771
+İyileştirmeler sunabiliyor muyum diye baktım.
+
+142
+00:21:40,632 --> 00:21:41,471
+İki tane geçtim.
+
+143
+00:21:43,155 --> 00:21:50,836
+Burada önerilen yöntem aslında 3 boyutlu tensor manipülasyonu. Burada geleneksel yaklaşımımız bizim aslında tablosal verilerimiz 2 boyutlu.
+
+144
+00:21:51,216 --> 00:21:58,056
+Bildiğimiz gibi satır ve stunlardan oluşuyor. Satırlarımız aslında sample'larımızı, stunlarımız da attribütlerimizi aslında belirtiyor bizim.
+
+145
+00:21:58,615 --> 00:22:03,155
+Makalenin yeniliği her bir veri satırını bağımsız bir zaman serisi gibi düşünüyoruz.
+
+146
+00:22:03,675 --> 00:22:09,236
+Veriyi LSM katmanlarına uygun hale getirmek için de aslında bunu 3 boyutlu tensor formatına dönüştürüyoruz.
+
+147
+00:22:09,236 --> 00:22:11,096
+Dönüşüm formülümüz de bu şekilde.
+
+148
+00:22:11,155 --> 00:22:27,736
+Burada aslında sample size'ımızı F'de, feature size'ımızı belirtmekte. Çıktığımızda yine burada N, virgül 1, virgül F'deki 1 de aslında buradaki bizim zaman adımımız. Bunu tamamen LSM'e uygun hale getirmek için yapıyoruz aslında. Manipüle ediyoruz yani aslında biraz daha formatını değiştiriyoruz.
+
+149
+00:22:30,395 --> 00:22:37,196
+Model mimarısına biraz bahsedelim. Yapımız aslında 3 katmanlı bir yığınlanmış çift yönlü LSM mimarisi.
+
+150
+00:22:37,551 --> 00:23:00,191
+Burada katman detaylarımızı görüyoruz. 60 ünite birinci katmanımızda, 80 ünite ikinci katmanımızda, 120 ünite üçüncü katmanımızda. Burada görselde 120-160-240 olmasının sebebi aslında alistiyem yapımızın bizim çift yönlü olması. O yüzden 012 dersek ikinci dimensionımız 120-160-240 olarak belirtilmiş görselde.
+
+151
+00:23:01,460 --> 00:23:21,759
+Çıktığımızda ise dense katmanı kullanıyoruz. Burada sigmoid fonksiyonunu kullanıyoruz. Sigmoid fonksiyonu da aslında bize sıfırla bir arasında bir olasılık değeri veriyor. Targetımız üzerinde. Kayıp fonksiyonu olarak da aslında min square değer kullanıyorum. Makale burada binary cross entropy yerine emesi tercih etmiş. Buna sadık kaldık. Burayı değiştirmedik loss fonksiyonu olarak.
+
+152
+00:23:23,667 --> 00:23:51,507
+DNSL kurulumumuz olarak kütüphanelerimizi aslında bahsetmiştim. İki farklı kütüphane kullandım. PyTorch'ta ayrı bir implementasyon yazıp, Keras'ta ayrı bir implementasyon yazdım aslında. Burada standartizasyon olarak aslında tüm rastgelelik içeren CPU, GPU, lampy gibi yapıları kullanan kütüphanelerin rastgeleliklerini 42CD ile beraber aslında tek bir yapıya indirdim. Burada bunu yapmamın sebebi bütün run'larda aslında aynı.
+
+153
+00:23:51,667 --> 00:24:06,887
+sonucu elde edebilmek. Diğer yandan 5 katlı çapraz zorlamayı kullandım. Veri seti olarak 6 tane veri seti kullandım. Birincisi German Credit. German Credit'in 2 farklı yapısı vardı. German Credit kategorik ve numerik olmak üzere 2 ayrılıyor.
+
+154
+00:24:07,427 --> 00:24:13,547
+Australian Credit, Taiwan Credit, GMSC, Helog ve Adult Income olmak üzere 6 farklı veri seti kullandım.
+
+155
+00:24:14,963 --> 00:24:31,943
+Ön işleme olarak da aslında eksik veriler için min mod değişimlerini kullandım. OneHotE encoding kullandım. MinMaxScaler ile 0 ile 1 arasına indirdim bütün verilerimi aslında. OutlierClipping olarak da derste de örneğini vermiş olduğunuz IQuery kullandım aslında.
+
+156
+00:24:33,523 --> 00:24:47,803
+Kritik bulgu 1. Burada makalenin iddiası aslında karar eşiği, threshold olarak, sabit olarak 0.57'yi seçmişti. Burada 0.57 biraz yanlış geldi bana. Ben bunları implementasyon ederken yanlış olduğunu fark ettim.
+
+157
+00:24:47,803 --> 00:25:01,523
+Çünkü GameSumCredit yani GameFC veri setinde aşırı dengesizlik vardı. %93 negatif, %7'de de pozitif sampalım vardı bu veride. Bu veriyi prefer ses edip eğittiğimde ise...
+
+158
+00:25:01,523 --> 00:25:09,483
+Hatayı düşürmek için tüm tahminleri 0.05 ile 0.10 arasında sıkıştırıyordu. Atıyorum 0.10 verdiğinde bir...
+
+159
+00:25:10,259 --> 00:25:37,719
+Bu eşlik değerim 0.57 olduğu için aslında model bütün sampullara 0 yani negatif prediction'ı veriyordu. Bu durumda FP1 skorunun dead olmasına yani 0 olmasına yol açıyordu. Makale bu dengesizliği nasıl açtığını herhangi bir şekilde belirtmiyordu. Bu da makalenin eksiği olarak tespit etti. Çünkü verdikleri algoritmada herhangi bir proporcet aşamasına bunu değinmemişlerdi.
+
+160
+00:25:38,963 --> 00:25:51,384
+Çözüm önerim ise aslında bunu Adaptive Trash Holding ile beraber çözebilir miyim diye denedim. Burada sabit 0.57 yerine, veri setinin karakterisine göre yani en iyi eşlik değeri dinamik olarak bulabilir miyim aslında diye denedim.
+
+161
+00:25:51,384 --> 00:26:06,063
+Nasıl çalışıyor bu Adaptive Trash Holding? Aslında her foldda, eğitimimdeki her foldda doğrulama setindeki F1 skorunu maksimize edecek şekilde eşlik değerini tarıyorum. Bu eğitimim biraz daha uzun sürmesine yol açıyor.
+
+162
+00:26:06,963 --> 00:26:10,584
+Daha yüksek skorlar elde etmeme yardımcı oluyor.
+
+163
+00:26:11,283 --> 00:26:13,963
+Test setinde de bu optimize edilmiş aslında eşlik değerini kullanıyorum.
+
+164
+00:26:14,543 --> 00:26:15,543
+Onunla beraber test ediyorum.
+
+165
+00:26:16,183 --> 00:26:24,463
+Etkisi özellikle dengesiz yani GMSC gibi aslında dengesiz veri setlerinde FP1 skorunun aslında sıfır verilmesinin durumundan kurtulmuş oluyoruz.
+
+166
+00:26:24,463 --> 00:26:28,263
+Birazdan zaten tablolarda görmüş olacağız implementasyon sonuçlarından.
+
+167
+00:26:29,748 --> 00:26:43,048
+Burada ilk tablomda aslında makaledeki orijinal sonuçları direkt tablo haline getirdim. Burada German dataset'in iki farklı halinin olduğunu zaten bahsetmiştim. Australian, Taiwan.
+
+168
+00:26:43,539 --> 00:27:01,779
+GMSC, Heloku, Adult Income'ı görüyoruz. Burada farklı metrik değerlerini görüyoruz. Sağ tarafta ise benim PyTorch implementasyonunda aldığım kendi değerlerim görülmekte. Makaledeki sonuçları bir türlü alamadım. Dediğim gibi Proporations aşamasında makalenin verdiği bütün yöntemleri denememe rağmen böyle geldi.
+
+169
+00:27:02,516 --> 00:27:15,135
+Burada 0 almamın sebebini de zaten az önce belirtmiştim mesela. GİMISAM kredit veri setinde Precision Recall F1 değerleri full 0 geliyor. Çünkü bahsettiğim nedenden dolayı aslında ölü F1 skoru geliyor.
+
+170
+00:27:17,299 --> 00:27:37,039
+Şimdi kendi önerdiğim yönteme geçiyoruz. Burada da aslında Adaptive Thresholding'e geçiyoruz. Yine bu yöntemi iki farklı kütüphane içinde implement ettim. Acaba aralarında skor değişimi yaşanıyor mu, yaşanmıyor mu diye aslında test etmek için bunu yaptım. PyTorch ve Kerast'a test ettik. İkisinde de Adaptive Thresholding'i kullandım.
+
+171
+00:27:37,428 --> 00:27:47,428
+Şöyle aslında farkı gösterebilirim. Mesela burada 0.75 araya undercurved German kategorik verisiyetini de görüyoruz PyTorch'ta. Bir önceki...
+
+172
+00:27:47,455 --> 00:27:58,735
+tablomda da 0.65 görüyorum. Aslında burada benim Hard Trash Holding'im 0.65 verirken Adaptive Trash Holding'im 0.75 değerini verebiliyor.
+
+173
+00:27:58,735 --> 00:28:08,855
+Yani aslında sonuçları arttırmış oluyorum. Fakat makaledeki verilen sonuçlar tabii ki 0.92 mesela German kategoriler için. Bu şekilde tablolarım.
+
+174
+00:28:10,291 --> 00:28:15,291
+Buraya da geçebiliriz. Tartışma ve analiz. Burada GMSC anomalisinden bahsettik.
+
+175
+00:28:15,392 --> 00:28:20,851
+Yazarların raporlamadığı bir veri dengeleme, SMOT gibi, önceki sunumlarda da arkadaşlar bahsetmişti zaten.
+
+176
+00:28:20,851 --> 00:28:25,771
+Bu işlemi veya eşlik değeri, eşlik ayarı yaptığı kesinleşmiş oluyor aslında.
+
+177
+00:28:26,432 --> 00:28:30,851
+Orijinal algoritma adımları, yani bu makalede verilen algoritma bir...
+
+178
+00:28:31,220 --> 00:28:57,639
+Yapısında, proporsiz yaşamalarının aslında eksik olduğunu fark ediyoruz. Kütüphane farkı, PyTorch varsayılan aralık başlatma yöntemlerinin nedeniyle, farklılığı nedeniyle aslında Keras'a göre biraz daha kararlı çalışmakta. Aslında yukarıdaki tablolarda onun biraz farkını görüyoruz. Keras mesela 0.74.81 alırken, PyTorch'la aldığımda da 0.75.65 alıyorum. 0.1'lik gibi bir fark oluyor aslında her birinde.
+
+179
+00:28:59,731 --> 00:29:11,131
+Veri sürümü olarak da German Credit'in iki farklı halinin olduğunu söylemiştim zaten, numerik ve kategorik alınmak üzere. Bunların aralarında da aslında %5'lik bir başarım farkı oluyor.
+
+180
+00:29:11,431 --> 00:29:20,091
+Makalede numerik versiyonda daha düşük, kategorik versiyondaysa daha yüksek sonuçlar aldığım tavlolardan zaten görüyorum. Makale sonuçlarına bakarsak.
+
+181
+00:29:23,092 --> 00:29:32,592
+Burada sonuç olarak ise doğrulama. Önerilen bu 3D tensor ve by directional LSTM yaklaşımı teknik olarak çalışmakta.
+
+182
+00:29:33,132 --> 00:29:38,092
+Tablosal verilerde öğrenme yeteneklerimiz görüyoruz zaten, öğreniyor da gayet iyi bir şekilde.
+
+183
+00:29:38,092 --> 00:29:42,732
+Fakat eleştirimiz makalede yeniden üretilebilirlik açısından eksik oldu.
+
+184
+00:29:43,112 --> 00:29:50,132
+Çünkü makalenin bütün verdiği proporsiz aşamalarını uygulamamıza rağmen kendi verdiklerinin sonuçlarını bir türlü yakalayamıyoruz.
+
+185
+00:29:50,816 --> 00:30:07,195
+Katkımız ise Adaptive Thresholding, mesela makalede böyle bir yöntem yoktu. Tamamen hard olarak thresholding kullanılıyordu. Bu yöntemi kazandırmış olup aslında skorların biraz daha artmış olmasını sağladık. 0.10'luk gibi bir artış gördük.
+
+186
+00:30:09,635 --> 00:30:12,375
+Benim sunumum bu kadardı. Dine dizinin için teşekkür ederim tekrardan.
+
+187
+00:30:12,375 --> 00:30:16,955
+Teşekkür ediyoruz [öğrenci] sunumun için.
+
+188
+00:30:19,731 --> 00:30:23,251
+Nasıl durduruyorum?
+
+189
+00:30:25,031 --> 00:30:27,932
+Evet, seni alkışlıyoruz bunun için.
+
+190
+00:30:28,511 --> 00:30:29,291
+Teşekkürler.
+
+191
+00:30:29,352 --> 00:30:32,311
+Şimdi, soru var mı arkadaşlar?
+
+192
+00:30:35,091 --> 00:30:37,791
+Gene kimse soru sormuyor tabii, ben sorayım.
+
+193
+00:30:38,951 --> 00:30:44,011
+Bu Adaptive Threshold olayını her fold için farklı mı seçiyorsun [öğrenci]?
+
+194
+00:30:44,811 --> 00:30:45,632
+Evet hocam.
+
+195
+00:30:46,516 --> 00:31:00,016
+Olarak öyle. Biraz daha uzun sürüyor eğitimim. Fakat uzun sürmesine rağmen aslında ben burada 0.10'luk bir skor artışı yakalamış oluyorum. Skor artışı için eğitimimin uzun sürmesini aslında göze almış oluyorum gibi oluyor.
+
+196
+00:31:00,016 --> 00:31:06,016
+Adaptif treş olduğu eğitim sırasında mı kullanıyorsun? Sadece çıkan sonuçları...
+
+197
+00:31:08,564 --> 00:31:14,524
+Threshold'dan geçirmek için mi kullanıyorsun? Neden uzun sürsün ki?
+
+198
+00:31:15,064 --> 00:31:23,344
+Şöyle, aslında her fold'umda, eğitimdeki her fold'umda, validasyon setindeki FP skorunu maksimize edecek şekilde bunu, değeri tarıyorum.
+
+199
+00:31:24,104 --> 00:31:31,163
+Daha sonra da bu değeri, bulduğum bu değeri test setinde optimize edilmiş bir şekilde eşlik değerini kullanıyorum gibi oluyor.
+
+200
+00:31:34,451 --> 00:31:47,711
+Yani maksimum verdiği confidence değeri üzerinden bunu açmıyor musun? 0-1 aralığına ya da %100 aralığına, 0-100 aralığına.
+
+201
+00:31:48,631 --> 00:31:49,091
+Evet.
+
+202
+00:31:50,531 --> 00:31:53,371
+Bunu validasyon sırasında da mı yapıyorsunuz?
+
+203
+00:31:54,891 --> 00:31:55,731
+Evet.
+
+204
+00:31:56,627 --> 00:31:58,267
+Onun için uzun sürüyor.
+
+205
+00:31:58,307 --> 00:31:58,747
+Evet, evet.
+
+206
+00:31:59,747 --> 00:32:04,047
+Anladım. Tamam. Teşekkür ediyoruz [öğrenci] sunumunun için.
+
+207
+00:32:04,567 --> 00:32:05,127
+Teşekkürler.
+
+208
+00:32:05,527 --> 00:32:13,347
+Evet. Ekran paylaşımının sonlanmadığı gibi ama [öğrenci] sizi dinliyoruz. Siz bir deneyin. Ekran paylaşabiliyor musunuz?
+
+209
+00:32:14,747 --> 00:32:17,407
+Deneyeyim. Ama şu an başkası paylaşıyor diyor.
+
+210
+00:32:18,707 --> 00:32:19,627
+İzin vermiyor mu sana?
+
+211
+00:32:20,907 --> 00:32:21,987
+İstek gönderebiliyorum.
+
+212
+00:32:21,987 --> 00:32:22,667
+Tamam.
+
+213
+00:32:23,207 --> 00:32:23,807
+Gönder.
+
+214
+00:32:24,531 --> 00:32:48,711
+Tamam. Hello, izin verdim. Okey. Şöyle yapsam, şu an geliyor mu hocam ekran? Evet, geldi. Şöyle yaparsam, şu an geliyor mu? Hı hı. Tam ekran. Bilinlik tutayım da hocam, o yüzden bazen hata oluyor, olmuyor vesaire. Emin olmayın. Evet, evet.
+
+215
+00:32:49,715 --> 00:32:54,175
+Buyurun. Neden bu konuyu seçtiğinizle başlayayım hocam?
+
+216
+00:32:54,275 --> 00:33:10,175
+Tamamdır. Bu Pima Indians Diabet veri seti üzerinde bir sınıflandırma anızi çalışması. Bu çalışmayı niye seçtim? Aslında çalışmayı üstün körü, tam seçerken böyle biraz üstün körü göz attım ve hani derin öğrenme tarafında çok fazla bir şey olmadığını gördüm.
+
+217
+00:33:10,495 --> 00:33:17,175
+Dedim ki belki bu çalışmaya derin öğrenme tarafından bir şeyler katabiliriz. O açıdan iyi olur diye düşündüğüm için seçtim aslında.
+
+218
+00:33:17,779 --> 00:33:45,359
+Ama çalışmayı okuyunca biraz çalışmanın aslında çok iyi bir çalışma olmadığını da fark ettim. Çünkü ne işte ön işlemeyle alakalı bir bilgi vermişler, işte veri hakkında yarım yamalak bilgi vermişler. Veride erkek veri yok, insan verisi yok ama işte %50 erkek var gibisinden veriler vermişler. Biraz yanlış bir çalışma olmuş ve bu çalışmanın biraz Elsevier'de yayılanması da garip geldi bana. Hani böyle saygın bir şeyde.
+
+219
+00:33:46,067 --> 00:33:50,268
+Çalışmada yanlış verinin olduğu bir şey çalışmanın yayınlanması.
+
+220
+00:33:52,387 --> 00:33:56,067
+Burada şey hakkında bir fun fact verebilirim.
+
+221
+00:33:57,648 --> 00:34:03,948
+Bu şeyin, nasıl diyeyim, diabet verisinin toplandığı kişiler Pima Indians diye geçiyor.
+
+222
+00:34:04,728 --> 00:34:10,307
+Aslında bunlar Amerika'da yerli bir, Pima adında bir kabile, yani Kızılderili kabilesi gibi bir şey.
+
+223
+00:34:10,835 --> 00:34:29,315
+Indians demelerinin sebebi de aslında Amerika'nın keşfinde Christoph Coulomb'ın Hindistan'a vardığını zannetmesiyle o zaman Indian olarak kalıyor isimleri. Biz Kızılderililer diyoruz ama onlar için aslında Indians kelimesi Kızılderililere tekabül ediyor diyebiliriz.
+
+224
+00:34:30,135 --> 00:34:37,935
+Önce referans çalışmadan ve veri setinden bahsedeceğim biraz. Veri setinde toplam 768 hasta var ve 8 öz nitelik var.
+
+225
+00:34:38,387 --> 00:34:52,347
+çalışmadaki herkes kadın. Öz niteliklerden birazdan bahsedeceğiz. Glikoz seviyesi, BMI, hamilelik sayısı vs. gibi veriler var.
+
+226
+00:34:52,820 --> 00:35:00,320
+Burada referans çalışmada veri ön işleme ve model eğitim parametreleriyle ilgili bir bilgi verilmemiş.
+
+227
+00:35:00,900 --> 00:35:06,880
+Sadece böyle bir tablo var. Echorisi ve Sensitivity tablosunu vermişler. Kullandıkları modelleri vermişler.
+
+228
+00:35:07,840 --> 00:35:14,500
+Echorisi bazında en fazla logistik rekreasyon SOX82.46 almış. Recall bazında da.
+
+229
+00:35:15,188 --> 00:35:25,748
+68.88 ile Random Forest en iyi değeri almış. Bu çalışma için aslında Sensitivity yani Recall değeri de daha önemli. Onun neden daha önemli olduğunu birazdan göreceğiz.
+
+230
+00:35:26,668 --> 00:35:32,467
+Veri setine baktığımız zaman nasıl dengesiz bir veri seti olduğunu görüyoruz. 0 olanlar sağlıklı, 1 olanlar sağlıksız.
+
+231
+00:35:32,467 --> 00:35:39,668
+Toplam 768 kişiden 500'ü sağlıklı aslında. Yani 3'te 2'si diyebiliriz kabaca.
+
+232
+00:35:40,659 --> 00:36:01,119
+kalanları hasta. Burada korrelasyon maddesine baktığımız zaman outcome değeriyle aslında en fazla korrelasyon gösteren değerleri görüyoruz. Burada en fazla korrelasyon glikoz değeriyle göstermiş diyebiliriz. Ve hamilelik ve BMI değerleri en fazla korrelasyon gösteren değerler ve yaş da yüksek korrelasyon gösteriyor.
+
+233
+00:36:02,739 --> 00:36:19,819
+Veri setin incelediğimizde, veri setin de aslında biyolojik olarak imkansız değerlerin olduğunu görüyoruz. Özellikle bu kırmızıda işaretlediğim değerlerde, işte glikoz, kan basıncı, deri kalınlığı, insülin ve BMI değerlerinde sıfır olan kısımlar görüyoruz. Mesela işte insülin de sıfır.
+
+234
+00:36:20,244 --> 00:36:30,744
+çok fazla var. Veri kalınlığında da 0 çok fazla var. Aslında bu da veri seti oluşturulurken, ölçüm yapılmamış hastaların 0 olarak doldurulduğu anlamına da geliyor bir yandan.
+
+235
+00:36:31,264 --> 00:36:40,423
+O yüzden bizim bu 0 olan verileri doğru verilerle doldurmamız gerekiyor. Bunun için ön işleme adımları bir pipeline oluşturdum ben.
+
+236
+00:36:40,768 --> 00:36:50,368
+Önce veride imkansız değerleri sıfır olarak işaretliyoruz. Yani bu aslında belirlediğimiz 5 özellik için geçerli bu. İmkansız değerleri non olarak işaretliyoruz.
+
+237
+00:36:51,188 --> 00:37:04,807
+Ardından veri doldurma kısmında mesafe bazlı bir teknik kullanacağımız için bütün bu öz nitelikler için yani 8 öz nitelik için hepsini standart satma normalizasyonu ile normalize ediyoruz.
+
+238
+00:37:05,264 --> 00:37:29,324
+Bu sayede, aslında örnek veriyorum, işte glikoz burada bakacak olursak, işte insülin için belki 400-500 gibi veriler normalken, işte BMI'de 20-30 daha fazla. Bunlar arasındaki aslında farkın, bu KN-imputer yönteminde yanlış bir anlama gelmemesini istiyoruz aslında. O yüzden standart satma normalizasyonu ile normalize ediyoruz.
+
+239
+00:37:30,068 --> 00:37:46,608
+En son K&N impütür ile verileri dolduruyoruz. Bu yöntem de ne yapıyor? Bir örnek veriyorum işte insülin değeri için bakacak olursak, X verisi için, X hastası için, insülin hariç diğer bütün şeylere göre.
+
+240
+00:37:47,155 --> 00:38:03,835
+Stunlara göre kendisine en yakın benzeyen K tane hastayı buluyor ve o K hastanın insülün sayısal bir değer, ortalama insülün değerini o eksik olan hasta için yerleştiriyoruz aslında.
+
+241
+00:38:05,795 --> 00:38:11,315
+Ön işleme adımlarından sonra öncesi böyle, sonrası böyle biz 5 tanesi uyguladığımız için aslında önemli olan 5 tanesi.
+
+242
+00:38:11,744 --> 00:38:23,144
+Bunu görüyoruz. Burada aslında standart satma normalizasyonu yaptığımız için verilerin çoğu x2 ile x2 arasında ve normal dağılımdan biraz kaymış da olsa yine normal dağılıma benziyor çoğu.
+
+243
+00:38:25,164 --> 00:38:29,184
+Burada işte eksik verilerin vesaire aslında tamamlandığını görüyoruz bir yandan da.
+
+244
+00:38:30,764 --> 00:38:38,104
+Model eğitim sürecinde referans çalışmalarının verdiği 4 modelin üzerine ben bir de MLP koymak istedim.
+
+245
+00:38:38,612 --> 00:38:49,791
+MLP ile eğitmek istedim. Buna ayk olarak Grid Search parametre optimizasyonu ile bu modellerde optimizasyon yapılabilen modellerin optimizasyonlarını yaptım.
+
+246
+00:38:50,372 --> 00:39:00,652
+Eğitim sürecinde K-Fold eğitim yöntemini kullandım. Yani Train Test diye bölmedim de 5-Fold eğitim bölme ile eğittim.
+
+247
+00:39:01,235 --> 00:39:15,335
+Ve sınıf ağırlıklandırma kullandım. Bazı modellerde bu sınıf ağırlıklandırmayı kullanmak gerekebiliyor. Özellikle ağaç bazlı yöntemlerde. Çünkü dengesiz olduğu için bu aslında ekür simetriğinin önemli olması ile de bağıntılı biraz.
+
+248
+00:39:16,403 --> 00:39:28,723
+750 verinin 500 tanesi zaten sağlıklı ve 500 tanesinin hepsine sağlıklı demeyi öğrense %75 ekorisi alacak mesela. O yüzden öyle öğrenmemesi için sınıf ağırlıklandırmayı kullanıyoruz.
+
+249
+00:39:29,323 --> 00:39:34,663
+Ve veri ön işlemeyi de her fold için ayrı ayrı yapıyoruz. Bu sayede veri sızıntısının olmasını da engellemiş oluyoruz.
+
+250
+00:39:35,803 --> 00:39:37,403
+Sonuçlarımıza gelecek olursak bu.
+
+251
+00:39:37,972 --> 00:39:59,992
+Ecuris ve Recall bazında bir karşılaştırma. Soldakiler bizim verilerimiz, maviler bizim elde ettiğimiz değerler. Bu mor olanlarda referans çalışmanın elde ettiği değerler. Burada Ecuris bazında aslında hepsinin geride kaldığını görebiliyoruz. Ama Recall bazında bizim bütün modellerimiz bu Naive Bayes.
+
+252
+00:40:00,000 --> 00:40:12,000
+özellikle bu SVM %17'ye yakın bir performans artışı göstermiş. Burada EQS'in bazında neden geçemediğini düşünecek olursak bu...
+
+253
+00:40:12,052 --> 00:40:24,252
+Referans çalışma aslında eğitim yaparken train, test, speed kullanmış. Yani bizim gibi k-fold kullanmamış. Bu sebepten bu da çok fazla veri olmadığı için bizim veri setimizde.
+
+254
+00:40:24,912 --> 00:40:34,988
+Test veri setine daha dengesiz bir dağılım düştüğü zaman aslında eğer ki test verisinde çok fazla şey varsa...
+
+255
+00:40:34,996 --> 00:40:45,056
+hasta olmayan kişi varsa ekolizmisi daha yüksek gelmiş olabilir. O yüzden aslında recall bazında bakmak ve bu açıdan değerlendirmek daha doğru diye düşünüyorum.
+
+256
+00:40:46,387 --> 00:40:52,707
+Tüm modellerimizi karşılaştıracak olursak aslında burada MLP Classifier'ın da rolünü görebiliyoruz.
+
+257
+00:40:53,707 --> 00:40:58,627
+Burada Naive Bayes'den iyi ama çok daha fazla iyi olmadığını görüyoruz.
+
+258
+00:40:59,067 --> 00:41:01,748
+%67.9 bir recall değeri almış.
+
+259
+00:41:03,248 --> 00:41:10,967
+Genel olarak baktığımız zaman SVM modeli en iyi aslında recall değerini alarak en iyi performansı göstermiş diyebiliriz.
+
+260
+00:41:11,360 --> 00:41:13,360
+Burada Confusion Matrix'lere bakıyoruz.
+
+261
+00:41:14,080 --> 00:41:14,680
+Recall
+
+262
+00:41:15,443 --> 00:41:19,923
+Recall'ın aslında ne olduğunu burada daha önemli, daha iyi bir şekilde görebiliriz.
+
+263
+00:41:20,023 --> 00:41:23,364
+SVM üzerinden bakacak olursak, gerçekten hasta olanlar burada.
+
+264
+00:41:23,844 --> 00:41:26,143
+Aslında bu 53 kişi gerçekten hasta.
+
+265
+00:41:27,163 --> 00:41:32,344
+Ve bizim hasta olmasına rağmen hasta değil demememiz gerektiği için aslında Recall metri daha önemli.
+
+266
+00:41:32,943 --> 00:41:38,844
+Hasta olmayan kişilere hasta demek, tedbir açısından o kadar kötü bir sonuç doğurmaz.
+
+267
+00:41:38,844 --> 00:41:42,563
+Ama hasta olan kişilere hasta değil demek daha kötü bir sonuç doğurabilir.
+
+268
+00:41:43,219 --> 00:41:53,579
+referans çalışmayla karşılaştırdığımızda da, pardon, yine aslında Echorice bazında geçemediğimizi görüyoruz.
+
+269
+00:41:53,659 --> 00:42:00,239
+Ve recall bazında Naive Bayes'e bütün modellerin referans çalışmaya geçtiğini görüyoruz diyebiliriz.
+
+270
+00:42:00,779 --> 00:42:05,779
+Burada Precision'un aslında bütün modeller için az olduğunu da bir yandan görüyoruz.
+
+271
+00:42:06,579 --> 00:42:27,579
+Bu da aslında model veri setinde değerler arasında yani sample'lar arasında çok fazla ayrışmanın olmadığını bize gösteriyor diyebiliriz. Çünkü bunun standart satması da çok fazla. Mesela %2, %3 belki kabul edilebilir bir değer ama %7 artık bayağı artmış bir standart satma.
+
+272
+00:42:29,811 --> 00:42:42,771
+Genel olarak bu şekilde. Zaten bu yorumları da aralarda sıkıştırdım. Bunun haricinde eklemediğim bir şey yok sanırım. Bu şekilde teşekkür ederim. Sorunuz varsa soru alabilirim.
+
+273
+00:42:44,755 --> 00:43:09,775
+Teşekkürler [öğrenci]. Bu diabet konusu benim epeydir ilgimi çeken bir konu. Aslında burada sadece yazarların çok eski bir veri seti ve pek çok çalışmada bugüne kadar kullanılmış. Bu araştırmacılar da herhalde bu veri setini kullanarak bir şeyler yapmak istemişler. Biraz sığ bir data aslına bakarsak.
+
+274
+00:43:12,755 --> 00:43:22,816
+artık bence eksiki bir veri anlamına geliyor. O yüzden de sonuçlar biraz düşük kalmış olabilir.
+
+275
+00:43:23,576 --> 00:43:25,896
+Hocam 1984'te falan çıkmış olmanız lazım.
+
+276
+00:43:26,275 --> 00:43:31,635
+Evet, çok eski, çok eski kesinlikle. Soru var mı arkadaşlar?
+
+277
+00:43:35,380 --> 00:43:41,380
+Evet, soru gelmedi. Seni de sunumum için alkışlıyoruz. Teşekkürler.
+
+278
+00:43:41,380 --> 00:43:41,820
+Teşekkürler.
+
+279
+00:43:42,280 --> 00:43:43,000
+Size sorunuz varsa?
+
+280
+00:43:44,240 --> 00:43:47,520
+Yok, gayet net, açık.
+
+281
+00:43:49,420 --> 00:43:50,100
+Teşekkür ederim.
+
+282
+00:43:50,100 --> 00:44:01,440
+Evet, geçen haftadan [öğrenci] mesaj attı. Onu da listeye ekleyeceğim.
+
+283
+00:44:03,603 --> 00:44:10,763
+[öğrenci], [öğrenci], sizi [öğrenci]'den sonra alayım. Şimdi [öğrenci].
+
+284
+00:44:12,383 --> 00:44:13,423
+Merhaba hocam, merhaba.
+
+285
+00:44:14,423 --> 00:44:17,743
+Evet, [öğrenci], kameramızı açıyorsunuz. Buyurun, söz sizin.
+
+286
+00:44:18,903 --> 00:44:23,743
+Tamamdır. Şu an slide'ımı paylaştığım görünüyor mu acaba?
+
+287
+00:44:24,943 --> 00:44:25,403
+Evet.
+
+288
+00:44:26,223 --> 00:44:27,743
+Tamam, kameramı da açıyorum.
+
+289
+00:44:29,743 --> 00:44:30,703
+Evet.
+
+290
+00:44:30,963 --> 00:44:52,603
+Merhabalar, ben [öğrenci]. Bugün sizlere AYT tabanlı fabrikalarda animal tespitini sunacağım. Bu çalışmayı seçmemin sebebi ise gerçekleştirdiğim staj süresince oradaki üretim tesisini gezme fırsatı buldum.
+
+291
+00:44:54,324 --> 00:45:16,304
+kullanılan sensör altyapıslarını gördüm ve oradaki bir arzanın bu sensör üyeleri üzerinden erken aşamada tespit edebileceğini fark etmemi sağladı. Bu nedenle aklıma böyle bir çalışma geldi ve araştırma yaptığımda da böyle bir yayına denk geldim. O nedenle bu yayını seçtim.
+
+292
+00:45:17,244 --> 00:45:19,903
+Teşekkürler. [öğrenci], bir tam ekran yapabilir misiniz?
+
+293
+00:45:21,076 --> 00:45:23,936
+Sunum moduna geçelim. Daha büyük olacak o zaman.
+
+294
+00:45:24,536 --> 00:45:25,076
+Tabii ki.
+
+295
+00:45:27,576 --> 00:45:28,556
+Şu anda iyi değil.
+
+296
+00:45:29,195 --> 00:45:30,795
+Oldu, gayet iyi. Buyurun.
+
+297
+00:45:32,855 --> 00:45:47,695
+Öncelikle buradaki veri seti yayın tarafında kullanılan Endüstriyel Üretim Tesisinde 6 aylık süreçte toplanmış gerçek sensörlerden toplanan 15 bin sensör kaydından oluşuyor.
+
+298
+00:45:48,275 --> 00:46:04,056
+Buradaki feature'larımız, ortam sıcaklığı, ışık şiddeti, hareket algılama, kapı pencere durumları ve güç tüketimi olmak üzere bir fabrikadaki genel davranışları temsil ediyor.
+
+299
+00:46:04,215 --> 00:46:09,655
+Bu sağ tarafta da verilerin dağılımını gösteriyor.
+
+300
+00:46:15,344 --> 00:46:34,183
+1 olarak işaretleniyor veri setinde. Bu da %17.4 gibi bir orana sahip. Yani dengesiz bir veri seti karşımıza çıkıyor. Anomali tespitinde de bu veri setleri dengesiz olma durumu normal bir durumdur.
+
+301
+00:46:35,923 --> 00:46:41,183
+Ön işleme adımlarında ise öncelikle eksik veriler median ile dolduruluyor.
+
+302
+00:46:41,715 --> 00:47:02,755
+Aykırı değerler ise Modified Z-Score eşik değeri 3.5 an olarak kullanılıyor. Ölçeklemede Min Max Normalizasyon kullanılıyor. Sınıf dengelemede ise SMOT yöntemi sadece eğitim veri setinin olmak üzere dengesizlik giderilmesi çalışılıyor.
+
+303
+00:47:03,923 --> 00:47:29,364
+Model seçiminde ise burada 3 tane model karşımıza geliyor. Birinci model Logistik Boosting modeli. 100 zayıf öğrenci ve maksimum ağaçlarını 5 olarak seçiliyor. Bu modelin güçlü yönü dengesiz veri setleriyle iyi çalışması. Random Forest kullanılıyor. Burada da 100 ağaç yapısı kullanılıyor.
+
+304
+00:47:30,132 --> 00:47:51,371
+Support Vector Machine 3. modelimiz. Bu da yüksek boyutlu veri uzaylarında etkili. Ek olarak ise özellik mühendisliği alanında da 5 adımlı hareketli ortalama ve PCI yöntemi kullanılarak veri boyutu indirgenerek %95'te varyant koruması sağlanıyor.
+
+305
+00:47:53,043 --> 00:47:59,563
+Model performanslarının karşılaştırmasında en başarılı model, Logistic Boosting yöntemi olarak karşımıza çıkıyor.
+
+306
+00:48:00,820 --> 00:48:26,820
+Burada %96.6 accuracy, precision %93 ve recall %94 olarak tatlim edici seviyede diyebiliriz. Rock Aeus ise 0.99 gibi bir güçlü bir değerle çıkıyor. Soldaki grafikten de diğerlerinin lojistik boosting'e yakın olduğunu yine de görebiliyoruz.
+
+307
+00:48:26,900 --> 00:48:32,900
+Ama tüm metriklerde, logistik boosting'in daha iyi olduğunu görüyoruz.
+
+308
+00:48:35,200 --> 00:48:41,400
+Burada önemli olan bir konu olarak hata profil analizi yapıyoruz.
+
+309
+00:48:41,400 --> 00:48:47,900
+Bu ne demek? Yani bir endüstride, endüstril fabrikada...
+
+310
+00:48:49,492 --> 00:49:06,092
+Anomali'leri kaçırmak istemeyiz. Bu durumda da Random Forest ile karşılaştığımızda mesela 401 false negative oranı sayısı varken, Logistic Boosting'de çok daha düşük bir 117 değer karşımıza çıkıyor.
+
+311
+00:49:06,911 --> 00:49:16,072
+Diğer tarafta ise gereksiz alamlar yani bir anomali olmadığını, yani bizim anomali olarak
+
+312
+00:49:16,532 --> 00:49:32,992
+bulduğumuz şeyin aslında animali olmadı. Yani gereksiz alarm olduğunu pozitif ile baktığımızda 280 SVM, 134 Logistik Boosting. Burada yine Logistik Boosting'in operasyonel maliyeti düşürdüğünü görüyoruz.
+
+313
+00:49:34,832 --> 00:49:42,212
+En dengeli ve güvenilir bir hata profili sunduğu için Logistik Boosting daha başarılı bir model olarak karşımıza çıkıyor.
+
+314
+00:49:42,931 --> 00:49:59,011
+Özellik katkı analizinde ise hangi özelliğin bizim sonucumuzu daha çok etkilediğine bakıyoruz. Burada güç tüketimi, F1 skorunda %6.2'lik bir düşüş etkisi gerçekten önemli bir düşüş bu.
+
+315
+00:50:00,820 --> 00:50:10,900
+Hareket algılamada ise F1 skorunda %4.8'lik bir düşüş etkisi görüyoruz. Bu da sonucumuz üzerinde önemli bir etki yaratır.
+
+316
+00:50:11,540 --> 00:50:21,300
+Çevresel özelliklerin yani ışık ve kapı pencere durumu gibi çevresel özelliklerin performansa %2 ve 6 etki yaptığını görüyoruz.
+
+317
+00:50:21,300 --> 00:50:28,260
+Bu da diğerlerine nazaran bayağı düşük bir etki yapıyor. Burada öne çıkan güç tüketimi ve hareket algılama.
+
+318
+00:50:28,639 --> 00:50:31,839
+özelliklerinin daha çok katkı sağladığını görüyoruz.
+
+319
+00:50:32,839 --> 00:50:39,039
+Logistik Boosting'in neden teknik üstünlüğü olduğunu anlatıyor yayında.
+
+320
+00:50:39,039 --> 00:50:43,639
+Burada ilk olarak Ensemble öğrenme yapısı karşımıza çıkıyor.
+
+321
+00:50:43,639 --> 00:50:51,239
+Daha sonra sınıf dengesizliğine karşı dayanıklılığı ön planda oluyor.
+
+322
+00:50:52,211 --> 00:51:06,871
+Daha sonra non-linear yani dorsalama ilişkileri daha iyi tespit ediyor ve hızlı yakınlama ile aynı zamanda overfitting'den de kaçarak 80 itirasyonu da optimum'da hale geliyor.
+
+323
+00:51:07,311 --> 00:51:14,412
+Eğitim süresi de çok kısa olması, gerçek zamanlı ve age sistemler için ideal bir performans sergiliyor.
+
+324
+00:51:14,932 --> 00:51:18,192
+Benim çalışmama geliyorum şimdi de.
+
+325
+00:51:19,795 --> 00:51:30,795
+Bu Kegel'daki Pump Sensor Data veri setini kullandım. Bu Spon Pass sistemlerindeki 52 sensörün ölçümlemiş olduğu veriler var bu veri setinde.
+
+326
+00:51:30,795 --> 00:51:45,707
+Etiket bilgisi ise normal, arızala yakın ve arızalı var. Ben arızala yakın ve arızalı kısmını anomen olarak etiketledim. Yani binary classification haline çevirdim bu sayede.
+
+327
+00:51:46,356 --> 00:52:13,356
+Bizim veri setimiz de yine dengesiz bir veri setiydi. Benim kullandığım. Metodolojide veri ön işleme açısından zaman serisi yapısı kullanarak, korunarak enterpolasyon kullandım. Yani yayında Median kullanılmıştı. Ben farklı olarak enterpolasyon kullandım. Robust Scaler kullandım. Outlier değerleri. Çünkü...
+
+328
+00:52:13,519 --> 00:52:27,920
+daha korumak istediğim için çünkü outlierVeri anomaller olabiliyor. Bunları da veri setinden benim kaldırmamam lazım veya bunları doğru ölçekli olmam lazım.
+
+329
+00:52:27,920 --> 00:52:41,320
+Bu nedenle RoboScore'ı tercih ettim. Boyd indirgeme yaptım. PCA ile 52 tane feature'ı 10 temel birleşeni indirgedim. Model eğitiminde de XGBoS tercih ettim.
+
+330
+00:52:41,652 --> 00:52:59,911
+Scale Post Weight ile de anomallerin hata payını, yani cezasını daha fazla modele geri döndürüyor. Bu sayede anomali tespitlerin hatası daha maliyetli oluyor model için.
+
+331
+00:53:02,483 --> 00:53:29,264
+X-Bus modelinin performans sonuçlarına baktığımızda 198, ekörüsü, 95, precision ve 91, recall aldım. F1, score 93. Sağda da confusion, matrix'imiz var. Rock, e-sü değerimiz gayet iyi bir değer. Mükemmel yakın bir değer gösterdi. Hem animali duyarlı hem de düşük.
+
+332
+00:53:29,972 --> 00:53:34,572
+Yanlış alarm oranı ile dengeli bir performans sundu.
+
+333
+00:53:35,352 --> 00:53:40,972
+Şimdi aynı şekilde yayındaki modelleri de kendi veri sitimde eğittim.
+
+334
+00:53:40,972 --> 00:53:45,592
+Onların bir karşılaştırmasını burada görebiliriz.
+
+335
+00:53:45,592 --> 00:53:48,652
+Burada XGBUS modelinin
+
+336
+00:53:51,212 --> 00:53:53,772
+diğer modellere göre daha dengeli bir
+
+337
+00:53:53,876 --> 00:53:58,476
+model olduğunu tespit ettik. Sadece
+
+338
+00:53:59,756 --> 00:54:06,416
+Precision'da diğer modellerin gerisinde kalıyor. Recall'da ve FP-Score'da
+
+339
+00:54:06,416 --> 00:54:09,496
+daha başarılı olduğunu gözlemledim.
+
+340
+00:54:12,556 --> 00:54:14,356
+Bu şekilde
+
+341
+00:54:15,635 --> 00:54:17,675
+Dibini dinlediğiniz için teşekkür ederim.
+
+342
+00:54:19,219 --> 00:54:27,879
+Teşekkürler [öğrenci], ilginç bir çalışma. Şimdi hemen sunumun için seni alkışlıyoruz.
+
+343
+00:54:28,199 --> 00:54:28,980
+Teşekkür ederim.
+
+344
+00:54:30,719 --> 00:54:37,599
+Soru var mı diye sınıfa dönüp soruyorum ama her seferinde kimse soru sormuyor. Var mı soru?
+
+345
+00:54:39,359 --> 00:54:41,379
+Yok peki, ben sorayım yine [öğrenci].
+
+346
+00:54:41,940 --> 00:54:50,179
+Veriyi bu modele verirken hangi bölme tekniğini kullandın? KFORD CROSSVOLVATION mı yaptın, yüzdesel mi böldün?
+
+347
+00:54:51,539 --> 00:54:57,480
+Ben zamansal böldüm. Zaman verisi olarak şey yaptım, düşündüm.
+
+348
+00:54:59,219 --> 00:55:00,900
+Şurada veri setim vardı benim.
+
+349
+00:55:02,739 --> 00:55:16,919
+Bu sensörlerin zamana göre değişmesi de bizim için önemli olabileceğini düşünerek bu zamansal ilişkiyi korumak için de belirli periyotlara göre böldüm aslında.
+
+350
+00:55:17,559 --> 00:55:20,439
+Pencereleme tekniği dediğimiz tekniği alıyorsun değil mi?
+
+351
+00:55:20,859 --> 00:55:23,079
+Evet, zaman serilerinde kullanılan teknik.
+
+352
+00:55:23,079 --> 00:55:27,079
+Evet, tamam, güzel. Peki...
+
+353
+00:55:28,596 --> 00:55:39,096
+Yine bu modeli kullanıyor olsan da bir miktar veriyi train için, bir miktar veriyi test için kullanacağım. Ne kadar test, ne kadar train sample'ın oldu böyle yapınca?
+
+354
+00:55:39,096 --> 00:55:48,096
+Ben %75'e %25 kullandım. Anomaliler çok az olduğu için...
+
+355
+00:55:48,115 --> 00:55:57,896
+teste %80'e 20'i böldüğüm zaman çok anomali teste düşmüyor. O nedenle biraz daha testi %25'e çıkardım.
+
+356
+00:55:59,996 --> 00:56:01,156
+Bu şekilde tercih edelim.
+
+357
+00:56:01,472 --> 00:56:18,452
+Güzel. Peki bu denge, sende de dengesiz veri var ve anomali sayısı az dedin. Bunu dengeye getirmek için bir yöntem kullanmayı düşündün mü? Ya da makalede kullanılmış mı?
+
+358
+00:56:19,452 --> 00:56:26,452
+Makalede kullanılan yöntem var. Smart Tekniği.
+
+359
+00:56:26,784 --> 00:56:40,384
+kullanılıyor makalede. Siz kullandınız mı? Ben kullanmadım açıkçası. Çünkü veri setinde anomalilerin az olması doğal bir durum bence.
+
+360
+00:56:41,523 --> 00:56:49,643
+Muhakkak anomalinin az olması doğal bir durum ama çok az olduğunda da model train etmek çok mümkün olmuyor ya.
+
+361
+00:56:50,783 --> 00:56:59,523
+%50-%50 yapmasanız da belli bir seviyede denge getirme işe yarayabilir. Bir deneyin olur mu?
+
+362
+00:57:00,583 --> 00:57:02,804
+Olur hocam, mutlaka denerim.
+
+363
+00:57:03,443 --> 00:57:05,583
+Teşekkür ediyoruz tekrar [öğrenci].
+
+364
+00:57:05,763 --> 00:57:07,463
+Ben teşekkür ederim dinlediğiniz için.
+
+365
+00:57:08,083 --> 00:57:24,143
+Evet, şimdi bir ara verelim 10 dakika. Aradan sonra [öğrenci]'la başlayacağım. [öğrenci] geçen hafta sunum listesindeydi fakat süre yetmediği için kendisine söz verememiştik.
+
+366
+00:57:32,596 --> 00:57:40,375
+diye devam edeceğiz. Süremiz el verdiğince. 10 dakika ara, 5 geçe, 6 geçe görüşürüz.
+
+367
+01:07:17,523 --> 01:07:20,943
+Sevgili arkadaşlar, kaldığımız yerden devam ediyoruz.
+
+368
+01:07:22,764 --> 01:07:27,403
+Sırayla şimdi [öğrenci]'ı dinleyeceğiz. [öğrenci], burada mısınız?
+
+369
+01:07:28,523 --> 01:07:29,764
+Sesim geliyor mu hocam?
+
+370
+01:07:31,183 --> 01:07:41,063
+Evet, geliyor. Ekran paylaşımı da yapalım. Neden bu konuyu seçtiğinizle başlayarak konuyu anlatabilirsiniz.
+
+371
+01:07:42,324 --> 01:07:44,564
+Geldi mi şu an hocam? Evet.
+
+372
+01:07:46,464 --> 01:08:03,604
+Ben Transformer Mimaris'in meraklısı olduğum için bu konuyu seçmiştim. Tabular veri üzerinde transfer öğrenimine dair bir şey görünce de, makale görünce de bunu seçmek istemiştim hocam.
+
+373
+01:08:03,604 --> 01:08:08,604
+Siz de seçmiştiniz bundan önce, iki tane daha vardı ama bunu seçmiştiniz.
+
+374
+01:08:10,099 --> 01:08:16,979
+Burada Sparse Attention'ı tabular veri üzerinde kullanılan bir makale var. Bunlar öncesinde de aslında kullanılıyor.
+
+375
+01:08:17,299 --> 01:08:21,739
+Şimdi bu transfer öğrenimi, Transformer'ı da aradan biraz bahsedeceğim.
+
+376
+01:08:23,539 --> 01:08:34,819
+Normalde şunu da eklemem gerekiyor ki başlarken, geleneksel kullandığımız hali hazırda var olan Random Forest gibi şeyler hala daha çok güçlüler bu tabular data üzerinde.
+
+377
+01:08:35,359 --> 01:08:40,359
+Çünkü korrelasyon kurmada hala daha bir sıkıntı çıkmadan bize doğru sonuçları verebiliyorlar.
+
+378
+01:08:40,899 --> 01:08:44,979
+Fakat biz bunu Transformer mimarisinde nasıl olacağını mı geleceğiz bu sunumunda?
+
+379
+01:08:45,600 --> 01:08:51,539
+Çünkü Transformer mimarisinde tabii eğitim süresi daha uzun sürüyor, daha büyük sıkıntılar var.
+
+380
+01:08:51,539 --> 01:09:06,680
+meydana geliyor ama daha iyi, daha doğru sonuçlar elde etmemize yarıyor ve daha da önemlisi burada anlatılan bir, hani attention mekanizmasının da bize ufak verilerde ve büyük ve özellikle veri büyüdükçe yardımı da artıyor.
+
+381
+01:09:06,799 --> 01:09:10,319
+Yavaşlamaya başlıyor, evet ama elde ettiğimiz şeyler.
+
+382
+01:09:11,956 --> 01:09:24,896
+ekürsiler artmaya başlıyor. Buradaki sıkıntı bizim aslında küçük verilerde bazen anlam kayması yaşanabiliyor korelasyonlarda ve transfer, transformer mimarisinde de aslında burada bize katkı da sağlıyor.
+
+383
+01:09:25,796 --> 01:09:32,536
+Şimdi öncelikle makalenin kullandığı, önerdiği bir model var. Ondan önce de geliştirilmiş bir model var. Önce o modelden bahsedeceğim.
+
+384
+01:09:32,536 --> 01:09:38,615
+Yandex ekibi tarafından 2021 yılında gerçekleştiriliyor. Adı Feature Tokenizer Transformer.
+
+385
+01:09:39,956 --> 01:09:59,876
+Kısaca FTT diyorlar buna. Tabular data'yı X ve Y olarak düşüneceksek, feature'ları X ile çıktığı Y olarak tokenize ettikten sonra, feature tokenization işlemini yaptıktan sonra bir tane classifier class oluşturuyorlar. Bu classifier'ımız bizim Y'miz. Daha sonrasında öteki aslında çıkılarda bizim feature'larımız.
+
+386
+01:10:00,000 --> 01:10:05,199
+Yani ikisilerimiz. Bunu Transformer modeline öğretiyoruz. Daha sonrasında da tahminde bulunmasını istiyoruz.
+
+387
+01:10:06,159 --> 01:10:12,779
+Bunu kullanırken, burada linkini de paylaştım, istiyorsanız ona da bakabilirsiniz. Bu 2021 yılında yapılan bir makale.
+
+388
+01:10:12,779 --> 01:10:20,319
+Ben bu makalenin üzerine yazılan makaleden bahsedeceğim. Burada da kullanılan bir şey var. Relu yerine Reglu kullanılıyor.
+
+389
+01:10:20,399 --> 01:10:26,380
+Ben de bunu makalede keşfettim. 2020 yılında kullanılan normal Torch ya da TensorFlow gibi.
+
+390
+01:10:27,123 --> 01:10:43,763
+hazır kütüphanelerde bulamayacağınız bir şey. Üzeri formülünü de buraya ekledim. İnternette bulabiliyorsunuz. Var git hatta. Model çıktısını da buraya ekledim. Burada biraz anlamanıza yardımcı olsun diye. Şimdi burada öncelikle bilgiyi aktarırken
+
+391
+01:10:45,363 --> 01:10:57,123
+Datayı iki şekilde incelemek istiyoruz ve eğitim kısmı ne kadar uzun sürdüğünü biliyoruz. Özellikle transform numarası. Fakat ince ayarla da biz bunu düzenlemek istiyoruz.
+
+392
+01:10:58,387 --> 01:11:26,387
+Aslında ilk yapıldığımda FTT, böyle upstream ve downstream diye ayırmıyorlar. Tamamen direkt upstream ve downstream çalışıyor. İki farklı şekilde incelemiyorlar. Öncelikle mimarinin kendisinden biraz bahsedeyim. Zaten future tokenizer'ı söyledim. Aslında elimizde future'lar var. Fakat bu future'lar kategorik yapıda olduğunda biz bunların arasında bir korrelasyon kurabiliyoruz. Bunların sayısal ve kategorik özellikleri arasındaki korrelasyon kurmada biz kendimiz veriye oturup...
+
+393
+01:11:26,387 --> 01:11:29,968
+İnceleyip üzerinde detaylandırma yaptıktan sonra bunu yapabiliyoruz.
+
+394
+01:11:30,260 --> 01:11:40,619
+Fakat Transformer'lar sayesinde direkt 10.000 ise 10.000, 20.000 ise 20.000, 22.000 ise 22.000 gibi bu sayısal veriler üzerinde de bir tokenizer'lar sağ olsun.
+
+395
+01:11:41,260 --> 01:11:48,700
+Anlam kurabiliyoruz, yani korrelasyon kurabiliyoruz. Burada CLS token'ı zaten bahsettiğim, sınıflandırma token'ı. Kısaca CLS, KDD token.
+
+396
+01:11:49,300 --> 01:11:57,360
+Burada tam dikkat kullanarak yapıyorlar. Bu önemli olan kısım değil. Çünkü önerilen mimari de şöyle bir şey öneriliyor.
+
+397
+01:11:57,939 --> 01:11:59,219
+Pre-training kısmında
+
+398
+01:12:00,115 --> 01:12:10,275
+Biz sparse attention kullanalım. Yani verinin tamamıyla korrelasyonuna bakmak yerine çıktı. Ve çıktığı da futurelar arasında bir attention yaparak bakalım.
+
+399
+01:12:11,395 --> 01:12:17,755
+Pre-training kısmında %80'lik kısımda bunu yaptıktan sonra %20'lik fine tuning kısmında da full attention kullanalım.
+
+400
+01:12:18,136 --> 01:12:27,576
+Ki sparse attention burada verinin %80'inde gerçekleşeceği için bize transformer da vakit kazandırıyor ve aynı zamanda performansı da arttırdığı gözlemleniyor.
+
+401
+01:12:27,952 --> 01:12:46,272
+Dediğim gibi upstream'de %80 kullanılıyor makalede belirtilen bu, %20'de downstream'de kullanılıyor. Şunu da eklemek isterim, training validation ve testte de %65 test, training de %15 validation, %20'de testing de kullanılıyor. Bunu eklemeyi unutmuşum.
+
+402
+01:12:48,792 --> 01:12:54,792
+Şimdi deney düzeyimizde veri kümeleri zaten belirlik veri kümeleri bunlar fakat her biri farklı.
+
+403
+01:12:55,731 --> 01:13:05,711
+Her biri üzerinde hem normal bizim baseline modellerimiz hem de bu makalede tanıtsılan dört farklı modeli inceleyeceğiz.
+
+404
+01:13:06,072 --> 01:13:11,891
+Full attention demiştim. Şimdi sparse attention ve full attention da demiştim. Onları burada anlatayım biraz.
+
+405
+01:13:12,371 --> 01:13:13,992
+En başta full attention ile yaparken
+
+406
+01:13:14,336 --> 01:13:37,775
+Yani asıl en önemli vurgulanan kısım şu pretrain. Sparse attention ve daha sonra da fine tuning kısmında full attention yapılması öneriliyor. Bunun dışında diğer üçü de test ediliyor. Yani ne demek istiyorum? Full attention'a full attention'a, full attention'a sparse attention'a ya da sparse attention'a sparse attention'a. Bunlar da test ediliyor. Bir de baseline modellerimiz var. Bunlar da test edilecek.
+
+407
+01:13:40,304 --> 01:13:50,083
+Makalede yapıldığı için ben de makaleden alarak bu deneyi yaptım. Bu arada kodları kendi yazmam gerekti. Makalede şey paylaşamamıştı. Sparse attention mekanizması.
+
+408
+01:13:51,796 --> 01:14:01,596
+Öncelikle gesture veri seti üzerinde gesture veri setinden 200 veri, 400 veri, 600 veri, 800 veri alarak aslında biz elimizdeki modellerin kendi aralarındaki kıyaslamalarını yapıyoruz.
+
+409
+01:14:02,156 --> 01:14:06,876
+Burada aslında bir sıkıntı var, onu görebilirsiniz. Bu neden olduğu hiçbir fikrim yok.
+
+410
+01:14:08,467 --> 01:14:28,927
+Full Attention'dan Full Attention'a geçen FTT, FTT modelinde 800'e gelindiğinde bir sıkıntı çıkıyor. Normalde çıkmaması gerekiyor. Hatta makalede de çıkmıyor. Fakat gene buna rağmen şunu da görebiliyoruz ki Sparse Attention'la red train edilmiş ve daha sonrasında Full Training'te de, pardon, Fine Tuning'te de Full Attention kullanılmış.
+
+411
+01:14:31,252 --> 01:14:39,272
+veri olduğunda, yani veri sayısı hakkında, sparse retention ile yapılan mimarının daha iyi olduğunu görüyoruz.
+
+412
+01:14:40,152 --> 01:14:51,092
+Makayanın çıktısı da bu şekilde aslında. Biraz benziyor ama onlarınki daha linear gidiyor. Benimkinde özellikle şey kısmında bir hata var. Neden bilmiyorum. Belki yazdığım koltuğun kaynaklıdır.
+
+413
+01:14:51,872 --> 01:14:54,532
+Bu da benim elde ettiğim verilerim Pandas'tan direkt çıktılar.
+
+414
+01:14:57,363 --> 01:15:24,163
+Ben diğer modelleri de ekledim burada. Burada dikkat çeken iki tane model var. Biri XGBoost, diğeri de Random Forest. Random Forest gerçekten yüksek bir performans elde ediyor. Data 200, 400, 600 ve 800 şeklinde arttırsak da liderliği kurmaya çalışıyor yani. Kötü bir şey yok. Bunu daha sonra tekrardan çıktılar da deyince. Makalenin çıktısında bu şekilde paylaşılmış.
+
+415
+01:15:24,916 --> 01:15:52,876
+Burada denediği deneyler ve 200, 400, 600, 800 arasında data arttıkça ölçülen performanslar var. Şunu eklemek istiyorum. Burada %80 elde edilirkenleri, benimkinde daha düşük elde ediliyor. Bu da benim çıktılarım. Benim çıktılarım da aslında makalenin çıktılarına paralel ilerliyor. Fakat nedense benimkiler düşükten başlıyor. Şunu da eklememde fayda var. Makaleye göre 15 farklı test yapmış.
+
+416
+01:15:52,916 --> 01:15:58,876
+15 farklı seedle, 15 farklı test yapmışlar ve ona göre en iyi çıkıları almışlar. Onu da ekleyeyim.
+
+417
+01:16:01,235 --> 01:16:08,275
+Tekrardan makaladan verilen çıkılarda gesture, i, genis, ballcard ve auto veri setleri üzerinde, bütün veri setleri üzerinde yapılan bu.
+
+418
+01:16:08,355 --> 01:16:13,336
+Az önce 200, 400, 600, 800 lütü sample size'ı farklı şekiller kest edilmiş.
+
+419
+01:16:13,976 --> 01:16:18,396
+Şunu tekrar ekleyeyim. Burada Random Forest yine iyi bir performans gösteriyor.
+
+420
+01:16:19,859 --> 01:16:25,639
+Önerilen modelimiz tabii daha yüksek çıktısı da, Random Force hala daha yüksek.
+
+421
+01:16:25,920 --> 01:16:27,719
+Ve Random Force çok daha hızlı çalışıyor.
+
+422
+01:16:28,959 --> 01:16:36,079
+Makalede verilen çıktılara göre baktığımızda da, burada Sparse Attention'a, Full Attention'a geçen mimarinin gene,
+
+423
+01:16:36,760 --> 01:16:40,199
+Gesture'da ve Opto'da gördüğünüz gibi yüksek performanslar elde ettiğini biliyoruz.
+
+424
+01:16:40,199 --> 01:16:41,643
+Ama XGBoost'un da...
+
+425
+01:16:41,684 --> 01:16:55,283
+Aslında burada geri kalori yanı olmadığını görebiliyoruz. Hatta daha yüksek performansı elde etmiş, ortada kısmında. Benim çıktılarımdaysa şöyle bir şey oldu. İşaretlemeye çalıştığım belli olayını bilmiyorum.
+
+426
+01:17:00,787 --> 01:17:14,608
+FTC'den FTC Plus'a geçerken, yani Full Attention'dan Sparse Attention'a geçerkenki mekanizma daha yüksekken, Sparse Attention'dan Full Attention'a geçen mekanizma, Gesture'da ve Otto'da iyi performans gösteriyor.
+
+427
+01:17:14,608 --> 01:17:24,087
+Ve Otto'da tekrar şuna da dikkat etmek lazım, Random Forest gene 0.98-24'da aslında geride kalsa da yüksek bir performans elde ediyor.
+
+428
+01:17:24,547 --> 01:17:27,327
+Zaten makalenin eklediği şeylerden biri de bu.
+
+429
+01:17:28,083 --> 01:17:34,644
+Burada biraz modeli göstermeye çalıştım. Grassifier token'ı ve Sparse attention, Full attention'ı kısımlar.
+
+430
+01:17:35,603 --> 01:17:43,163
+Buradan elde ettiklerimize göre öncelikle şunu söyleyebiliriz. Küçük V-setlerinde 200'den 800'e giderken önce ön eğitim, daha sonrasında ince yer yaptığımızda,
+
+431
+01:17:43,443 --> 01:17:50,884
+yani önce Sparse attention, sonra Full attention şeklinde bu attention mekanizmasını kullandığımızda etkili olduğunu görüyoruz aslında.
+
+432
+01:17:52,043 --> 01:17:55,403
+Ama tabii ki şunu tekrardan eklemekte fayda var.
+
+433
+01:17:56,083 --> 01:18:01,683
+Random Forest ile geleneksel yöntemler hala da eğitim hızı açısından ve basitlik açısından daha hızlı hala geçerliler.
+
+434
+01:18:02,343 --> 01:18:08,743
+Burada sadece Transform Mimarisinde bunları biz kıyaslamaya çalışıyoruz ve Transform Mimarisinde aynı sonuçları elde etmeye çalışıyoruz.
+
+435
+01:18:09,183 --> 01:18:10,943
+Ki daha gelecek çalışmalar için.
+
+436
+01:18:13,283 --> 01:18:15,463
+Burada da benim gelecek çalışmalar için önerilerim var.
+
+437
+01:18:15,903 --> 01:18:18,804
+Belki daha akıllı bir seyreklilik gerçekleştirebilir.
+
+438
+01:18:19,483 --> 01:18:22,083
+Belki hibrit zeka ile yani hibrit...
+
+439
+01:18:22,420 --> 01:18:47,920
+Modeller belki olsun olabilir. Çünkü transform numarası artık hibrit modeller aralı. Hibrit modellerle alakalı yeni yeni bir sürü makale çıkıyor. Biraz popüler bir alan. Bir de çoklu veri türlü dedim. Yani buradan kastım işte video ve fotoğraf gibi şeyler acaba tabularda tabii bunların verilerinin olması lazım. Acaba bunlar üzerinde de yapılabilir mi? Bu kadardı. Diminiz için teşekkür ederim.
+
+440
+01:18:51,891 --> 01:18:57,572
+Teşekkür ediyoruz [öğrenci] sunumun için. Seni de alkışlıyoruz.
+
+441
+01:19:03,692 --> 01:19:05,631
+Soru var mı arkadaşlar?
+
+442
+01:19:08,631 --> 01:19:09,832
+İyi anlatabilirim.
+
+443
+01:19:10,292 --> 01:19:30,811
+Yok, gayet güzel anlattınız. Ben şeyi soracağım, orayı kaçırdım. Bir yerde Random Forest ve XGBoost aslında daha hızlı çalışıyor dediniz bu attention, sparse attention ve değişik kombinasyonlara göre.
+
+444
+01:19:31,279 --> 01:19:50,259
+Ama bir yerde de avantajlarını yazarken sanki bunların daha hızlı çalıştığına dair bir şey yazdı ekranda. Çok emin olamadım. Bir de gürültülü veride daha başarılı olduğunu söylüyordu Sparse Attention için. Doğru mu?
+
+445
+01:19:51,380 --> 01:20:08,819
+O doğru hocam ama ben hani o performansı tam elde edemedim. O var, makalede çıktılarından biri o. Gültürlüğü daha iyi elde ediliyor diyor. O kısımda da hocam XGBoost for Random Forest hızlılar demiştim. En son kısımda da hızlılar yazıyor. Göstereyim istiyorsanız.
+
+446
+01:20:08,819 --> 01:20:10,979
+O kısımda.
+
+447
+01:20:18,931 --> 01:20:21,172
+Avantajlarını yazdığınızda sanki.
+
+448
+01:20:21,592 --> 01:20:24,231
+Hala geçerli ve güçlü diye burada belirtiyorum.
+
+449
+01:20:24,832 --> 01:20:27,131
+En başta söylemiştim, bir de burada yazdım.
+
+450
+01:20:27,371 --> 01:20:32,051
+Bir üst maddede de Sparse Attention sadece hesaplama maliyetini düşürür.
+
+451
+01:20:32,551 --> 01:20:35,072
+Bununla kalmayıp diye devam ediyor.
+
+452
+01:20:38,036 --> 01:20:49,076
+Hocam, burada attention mekanizması, yani transform numarası için yazdım onu. Yoksa buna rağmen diye onu ikinci ekleme, belki ben yanlış yazarken şey yapmışımdır.
+
+453
+01:20:49,315 --> 01:20:52,195
+Buna rağmen kısmını da o yüzden ekledim hemen altına.
+
+454
+01:20:52,195 --> 01:20:56,235
+Tamam, biraz böyle çelişkili geldi, o yüzden sormak istedim. Teşekkür ediyoruz.
+
+455
+01:20:56,235 --> 01:20:58,195
+Benim benim anlatışımdan sen, kusura bak.
+
+456
+01:20:58,315 --> 01:21:02,195
+Yok yok, estağfurullah. Teşekkürler [öğrenci] sunum için.
+
+457
+01:21:03,095 --> 01:21:05,815
+Şimdi [öğrenci]'yi dinleyelim. [öğrenci].
+
+458
+01:21:06,036 --> 01:21:08,155
+Merhabalar hocam.
+
+459
+01:21:09,456 --> 01:21:11,716
+Merhaba, ben soyadını yanlış mı yazdım?
+
+460
+01:21:12,212 --> 01:21:16,792
+[öğrenci]. Yani bir iki sorun var da burada şu an tek yazıyor.
+
+461
+01:21:17,252 --> 01:21:19,032
+Tamamdır. Evet [öğrenci].
+
+462
+01:21:19,492 --> 01:21:20,832
+Tunum geldi mi acaba hocam?
+
+463
+01:21:21,391 --> 01:21:26,971
+Evet, tam ekran olarak görüyoruz. Buyurun sizi dinliyoruz. Neden bu konu diyerek başlayın.
+
+464
+01:21:27,252 --> 01:21:33,811
+Tabii ki. Merhabalar herkese. Ben [öğrenci]. [kişisel bilgi]
+
+465
+01:21:33,811 --> 01:21:40,212
+Benim bugünkü konum LLM tabanlı veri soy takibi. Bu konuyu seçme sebebim, yani yüksek insanlık...
+
+466
+01:21:40,212 --> 01:21:44,432
+Şimdiye kadar aldığım birkaç derslerde hep LLM ile alakalı çalışmalar yaptım.
+
+467
+01:21:45,392 --> 01:21:50,012
+Şimdiye kadar yaptığım çalışmalar hep modele eğitip bununla ilgili çalışmalardı.
+
+468
+01:21:50,132 --> 01:21:53,852
+Hiç veri ön işleme adımında da bunun uygulanabilirliği aklıma gelmemişti.
+
+469
+01:21:54,372 --> 01:22:01,292
+Konu araştırırken de acaba LLM de burada uygulanabiliyor mu diye bir araştırdım ve güncel 2025'e ait makaleler gördüm.
+
+470
+01:22:01,612 --> 01:22:03,612
+İlgi alanım LLM olduğu için bunu seçtim.
+
+471
+01:22:04,595 --> 01:22:16,215
+Referans aldığım makale, An LLM Guided Platform for Multigranural Collection and Management of Data Provenience dediğim gibi güncel bir makale. Bu makalede şöyle bir çalışma yapılıyor.
+
+472
+01:22:16,819 --> 01:22:32,520
+Bir veri ön işleme adımları, veri ön işlemeler yapılmış oluyor. Bu işlemler elelemle birlikte inceleniyor, çıktıları ele alınıyor ve bu çıktılarla beraber değişen yerler neler, bunların hikayesi nedir bunu inceliyor.
+
+473
+01:22:32,760 --> 01:22:44,819
+Bundan önce yapılan çalışmalarda farklı olarak tabii ki işin içine elelem girdi. En önemli olan şey bu. Bir de bir arayüz oluşturuluyor ve de önceki çalışmalarda tek seviyeyle veya iki seviyeyle
+
+474
+01:22:44,819 --> 01:22:50,800
+inceleme yapılırken bu makalede dört farklı seviye ile inceleme yapılıyor. İlerleyen slide'larda bunları da değineceğiz zaten.
+
+475
+01:22:51,891 --> 01:23:19,771
+Peki problem neydi ve bu makalada neden böyle bir çözüm uygulandı? Günümüzde neredeyse her alanda artık makine öğrenmesi, yapay zeka işlemiş durumda ve genellikle bir model eğitiliyor. Bu modelin çıktısına bakılıyor. Eğer çıktı bizim istediğimiz gibi değilse modelin parametrelerini değiştirmek ilk akla gelen şey oluyor. Ama burada şuna değiniliyor. Aslında veri ne kadar doğruysa, veri ne kadar güzel şekillendirildi.
+
+476
+01:23:19,891 --> 01:23:29,311
+modelin sonucu da o kadar iyi olur. Belki de aslında verinin ön işleme adımlarında hata vardır diyerekten böyle bir problemi nasıl çözebiliriz diye bu makalede değinilmiş.
+
+477
+01:23:32,595 --> 01:23:44,275
+Makalenin konusu olan veri soy takibi nedir? Veri soy takibi bir verinin yaşam döngüsünü Uçin Hoca izlemeye amaçlar. Bu sayede bir çıktının neden ve nasıl bu hale geldiğini görürüz.
+
+478
+01:23:44,275 --> 01:23:57,055
+Aslında bir hücreyi ya da bir sütunu veya bir veri setini artık sizin varlığınız neyse onun şimdiye kadar olan tarihçesinin, historisini görüyoruz diyebiliriz veri soy takibiyle.
+
+479
+01:23:58,036 --> 01:24:15,195
+Veri soy takibinin 3 temel birleşeni var. İlki varlıklar, entitiler. Bu sizin neyi takip etmek istediğinize bağlı. Yani neyin geçmişini öğrenmek istiyorsunuz? Bir şücreyi mi? Bir sütünü mü? Veya tamamen veri setinin kendisini mi? Etkinliklerde bunlara uygulanan işlemler.
+
+480
+01:24:15,195 --> 01:24:22,036
+İşte eksik satırları silmek veya onları dönüştürmek veya kategorik olarak kodlayabilmek.
+
+481
+01:24:22,579 --> 01:24:32,279
+İlişkilerde bu etkinliklerle varlıklar arasındaki ilişkiler yani bir şey tarafından üretildiyse ya da biri tarafından kullanıldıysa bunların bilgisine de biz ilişkiler diyoruz.
+
+482
+01:24:32,359 --> 01:24:36,300
+Bu üç temel birleşen sayesinde biz veri soyu takibini oluşturuyoruz.
+
+483
+01:24:38,515 --> 01:25:06,515
+Bu makalenin en önemli şeylerinden biri bu veri soy takibini görsel olarak inceleyebilmek. Şu ekranda gördüğünüz görsel bu makalede yapılmış olan arayüz çalışması. Her veri ön işleme adımıyla alakalı işlemler burada tek tek gösteriliyor. Sırasıyla nasıl yapıldığını ilerletiyor. Bu makalenin en önemli şeylerinden biri de bu yani aslında. Biz koddan bilgiyi alarak bunu nasıl görselleştirebiliriz? Analiz yapılması nasıl kolaylaştırılır?
+
+484
+01:25:06,515 --> 01:25:10,295
+çok kolay hale gelebilir. Buna da Prolit adını vermişler.
+
+485
+01:25:13,171 --> 01:25:39,631
+Başta da bahsettiğim gibi birçok farklı seviyeler var. Bazı makalelerde tek seviye uygulanırken bazılarında iki ama bu makalede dört farklı seviye var. Bu seviyelerin neler olduğuna değinmek gerekirse, ilki Sketch Level. Sketch Level bunların arasında en özet olan hali diyebiliriz. Sadece hangi işlemlerin uygulandığı bilgisini bize veriyor. İşte boş satırları sildik ya da
+
+486
+01:25:41,171 --> 01:25:54,751
+şu değer yerine bunu yaz gibi düzeltmeler yaptık. Yani hangi işlemlerin sırayla uygulandığı bilgisini veriyor. Derivation level'da veri setine bir işlem uyguladınız. Yeni üretilen veri setinin ne olduğunu tutuyor.
+
+487
+01:25:54,751 --> 01:26:06,491
+Yani üretilen ara veri setlerinin neler olduğunu elde tutuyor. Siz işlem uygulanmış halini elde tutmuş oluyorsunuz. İşlemler yine sırasıyla var. Yani skeç level'dan biraz daha detay içeriyor diyebiliriz.
+
+488
+01:26:07,347 --> 01:26:20,847
+Bir sonraki seviyede Full Level. En çok detay içeren, yani içeride verilerin, hücrelerin değişikliğe uğrasa da uğramasa da hangi hallerde olduğunu hepsini tutan seviye Full Level.
+
+489
+01:26:21,327 --> 01:26:27,887
+Çok detaylı bilgi içirebiliyor ama tabii ki bu avantajın yanında bir de dezavantajı var. Maliyeti çok yüksek.
+
+490
+01:26:28,884 --> 01:26:43,823
+Son seviyede ve makalenin önerdiği seviye Only Column Level sadece değişiklik yapılan hücreleri tutuyor. Hangi hücre değişiklik yapıldıysa onun bilgisini veriyor size. Diğer bilgileri göstermiyor. Böylece maliyetten tasarruf sağlamış oluyor.
+
+491
+01:26:44,404 --> 01:26:50,004
+Yandaki görsellerde de bunların zaten grafik çizimlerini görüyorsunuz. En karmaşık yapıya sahip olan Full Level.
+
+492
+01:26:50,684 --> 01:26:58,044
+Tabi veri setinin büyüklüğüne bağlı olarak diğerleri de karmaşıkları değişiyor. Ama orta seviye derivation ile only columns diyebiliriz.
+
+493
+01:27:01,716 --> 01:27:17,056
+Bu çalışmada çok farklı veri setleri var. 7 farklı veri seti kullanılıyor. Her birinin feature özellikleri farklı. Satır sayıları da farklı. Küçük ölçekli, büyük ölçekli, orta ölçekli diyebileceğimiz birçok veri seti var diyebiliriz.
+
+494
+01:27:17,056 --> 01:27:29,556
+Ben de kendi demo çalışmamı yaparken iki tane veri setini ele aldım. Biri car veri seti. Use car diye de geçiyordu Kegel'da. Orta ölçekli diyebileceğimiz bir veri seti. 12 feature'u var. 42.000'de satır var.
+
+495
+01:27:29,716 --> 01:27:41,836
+Bir diğeri de titanik veri seti. Bu da küçük ölçekli veri seti. Makalede veri setinin büyümesine bağlı olarak bu işlemlerin değişmediği gözlemleniyor. Her birinde de başarılı sonuç veriyor.
+
+496
+01:27:44,020 --> 01:28:06,100
+Peki ne yapılıyor genel olarak? Bir Python Script'i yazılıyor Jüpiter ortamında. Sonrasında bazı manipülasyon işlemleri uygulanıyor. Bunların bazıları gerçekten de LLM bunları yakalıyor mu diye kötü amaçlı şeyler. Bazıları da modeli iyi yanıt verecek şeyler. En sonunda da LLM ile hangi işlemlerin uygulandığını gösterip ProLit de bize gösteriyor.
+
+497
+01:28:08,819 --> 01:28:20,720
+Benim çalışmamdan bahsedecek olursak, Titanik veri seti için. Titanik veri setinde yolcuların demografik yapılarını, seyahat bilgilerini, bilet bilgilerini içeren bir veri seti.
+
+498
+01:28:20,859 --> 01:28:30,420
+İşte yolcu hayatta kalıyor mu, kalmıyor mu şeklinde bir sınıflandırma sunuyor. Ben bu veri setinde şu şekilde manip işlemler uyguladım, veri ön işleme adımlarında.
+
+499
+01:28:36,819 --> 01:28:53,699
+içerisinde yer alan yolcuların yaşını sıfır yap. Aslında bu çok doğru bir şey değil ama elenen bunu görüp bize bildirecek mi acaba? Onun dışında cinsiyet sütunumdaki değerler ÇAR karakterini ÇAR olarak yer alıyordu. Onları ben sayısal değerlere dönüştürdüm.
+
+500
+01:29:04,819 --> 01:29:12,579
+Normalde burada çar karakteri varken bu model eğitiminde daha kolay işlem yapabilmesi için onların sayısına değerleri döndürmüştüm.
+
+501
+01:29:12,960 --> 01:29:16,199
+Bir de önemli birkaç tutunu sildim. Name, ticket ve cabin.
+
+502
+01:29:18,387 --> 01:29:35,248
+100K virüs eti de bir diğer virüs eti. Burada da ikinci el araçların fiyat tahminini yapıyor. Bizim elimizde araçların teknik özellikleri, kilometre bilgileri vs. var. Buna dayalı olarak gerçekten fiyatını doğru tahmin ediyor mu, etmiyor mu? Bunun sonucunu veriyor.
+
+503
+01:29:36,115 --> 01:29:45,115
+Burada yaptığım çalışmada şöyle bir şey vardı. Araçların vites durumu vardı. Manüel otomatik. Otomatik vitesli araçların fiyatlarını bir buçuk katıyla arttırmıştım.
+
+504
+01:29:45,115 --> 01:29:55,115
+Sonrasında da ilgili olmayan bir kolon ekledim. Sütun. Bunun değerleri de 0 setlemiştim. Ve yine birkaç sütun sildim. Bazıları önemli, bazıları önemsizdi.
+
+505
+01:30:00,692 --> 01:30:12,572
+tablo gibi bir şey görüyoruz diyebiliriz. Normalde size gösterdiğim makaledeki arayüz şöyle bir şey. Tabi bu arayüzün kodu açık kaynaklı paylaştırılmadığı için onu kullanamadım ama
+
+506
+01:30:12,572 --> 01:30:25,931
+kendim Python'da böyle bir şey yazmıştım. Ama arayüzün oluşturduğu şeylerin aynısını yapıyor. Burada şimdi mesela şunları görebiliyoruz. Titanik veri seti için hangi kolonların etkilendiğini bize direk veriyor.
+
+507
+01:30:28,692 --> 01:30:29,132
+video.
+
+508
+01:30:29,684 --> 01:30:38,003
+Mesela burada yaş var, cinsiyet var, sildiğimiz kolonlar var Titanic için ve hangi işlemlerin yapıldığını da bize yazılı olarak veriyor.
+
+509
+01:30:38,003 --> 01:30:50,724
+Yaş sütununda işte S kabinindeki kişilerin yaşını sıfır yapmış gibisinden. Burada da kar virüs etinde de yine etkilenen kolon bilgilerini bize veriyor ve ne işlem yaptığımızı söylüyor.
+
+510
+01:30:51,923 --> 01:30:56,743
+Only column level seviyesinde işte dediğim gibi sadece etkilenen sütunları bize veriyor.
+
+511
+01:30:57,684 --> 01:31:11,083
+Bütün, tamamen hepsini vermiyor. Ben şöyle düşünmüştüm. Biz yazılımcılar tabii ki kodlamayı biliyoruz. Koda bakarken bunları da görebiliriz ama analit arkadaşlarımız iş kurallarına daha hakim.
+
+512
+01:31:11,484 --> 01:31:19,743
+Bu şekilde bu tablolara bakarak aslında neyin mantıklı, neyin mantıksız olduğunu tespit edip kodda düzenleme yapmamıza yardımcı olurlar.
+
+513
+01:31:19,743 --> 01:31:25,623
+Bu makalede de aslında amaç bu. Biraz daha görselleştirip veri ön işleme adımlarında.
+
+514
+01:31:25,684 --> 01:31:27,684
+neler yapıldığını göstermek.
+
+515
+01:31:27,684 --> 01:31:42,684
+Tabi ki de bu işin bir tasarruf analizi kısmı var. Az önce de bahsettiğim gibi on ekalım seviyesinde işlem sayısına bağlı olarak etkilenen kayı sayısı 6 iken full level'da
+
+516
+01:31:43,188 --> 01:31:49,688
+Çarptığımız zaman şöyle bir değer elde ediyoruz. 4.460 kar verisleti. Verisleti büyüdükçe tabii bu sayı daha da artıyor.
+
+517
+01:31:50,088 --> 01:31:56,807
+Ve tabii ki de tasarruf oranımız da artıyor verisleti büyüdükçe. Makaledeki tasarruf oranları da buna benzerdi.
+
+518
+01:31:57,728 --> 01:32:02,967
+Ben ona benzer tamamen ön işlem adamları uygulamadım ama işlem sayıları aynı.
+
+519
+01:32:06,163 --> 01:32:31,883
+Sonuç olarak LLM destekli otomatik veri soyu takipte uygulanmıştır. Biz LLM sayesinde yazılan kodun görsel olarak nasıl oluştuğunu görüyoruz. Bunu inceleyerek veri ön işlemi adında daha neler iyi yapılabilir onu görüyoruz. Etkilenen bilgileri manuel incelemeye gerek kalmadan tamamen görmüş oluyoruz. Ve tabi ki de onun kalınmış level seviyesi sayesinde tasarruflu bir şekilde bunları elde etmiş oluyoruz.
+
+520
+01:32:32,692 --> 01:32:34,252
+Dinlediğiniz için teşekkür ederim.
+
+521
+01:32:37,112 --> 01:32:42,652
+Teşekkür ediyoruz [öğrenci]. Güzel sunumun için seni de alkışlıyoruz.
+
+522
+01:32:43,572 --> 01:32:44,412
+Teşekkür ederim.
+
+523
+01:32:44,712 --> 01:32:45,912
+Evet, soru var mı?
+
+524
+01:32:51,283 --> 01:32:52,563
+soru yok galiba.
+
+525
+01:32:53,443 --> 01:32:56,844
+Neden bu konuyu seçtim demişti [öğrenci].
+
+526
+01:32:57,427 --> 01:33:02,887
+Hocam, bu ders dışında benim seçtiğim kolektif öğrenme, hesaplamalı anlam bilim dersleri vardı.
+
+527
+01:33:03,087 --> 01:33:07,228
+[kişisel bilgi]
+
+528
+01:33:07,228 --> 01:33:14,567
+Bu bölümde neredeyse her şeyi elelemle inceleyince, bu veri ön işleme adımda da acaba elelemle ilgili bir şey var mıdır diye araştırdım.
+
+529
+01:33:14,648 --> 01:33:20,027
+Size gönderdiğim tüm makaleler de elelemle ilgiliydi. İlgi alanım boğulduğu için buna yöneldim daha çok.
+
+530
+01:33:20,435 --> 01:33:29,355
+Evet, evet. Peki, çok teşekkür ediyoruz. Benden de soru yok. Bir sonraki sunuma geçelim o zaman. [öğrenci] [öğrenci].
+
+531
+01:33:29,775 --> 01:33:31,375
+Merhaba hocam. Sesim geliyor mu şu an?
+
+532
+01:33:31,895 --> 01:33:35,535
+Evet, seni duyabiliyoruz. Ekran paylaşımı da alalım.
+
+533
+01:33:38,835 --> 01:33:41,495
+Şu an ekranım gelmiş olması lazım.
+
+534
+01:33:41,995 --> 01:33:42,815
+Evet, geldi.
+
+535
+01:33:44,855 --> 01:33:46,495
+Şu biti kapatayım.
+
+536
+01:33:48,404 --> 01:33:50,123
+Şu an görünüyor değil mi hocam? Sıkıntı yok.
+
+537
+01:33:51,184 --> 01:33:54,583
+Görebiliyoruz. Tam ekran yapalım bakalım bu da gelecek mi?
+
+538
+01:33:57,108 --> 01:33:58,788
+Çok güzel. Buyurun.
+
+539
+01:33:59,148 --> 01:34:02,728
+Öncelikle makalemin konusundan ve sonra da neden seçtiğimden bahsedeceğim.
+
+540
+01:34:03,188 --> 01:34:13,408
+Bu makale Kore'de 1997'den 2021 yılına kadar olan enerji tüketimini makine öğrenimi yöntemleriyle nasıl tahmin edebileceğimizi araştırıyor.
+
+541
+01:34:13,528 --> 01:34:25,108
+Bu kapsamda aynı zamanda benim bu makaleyi seçme nedenim makine öğrenme yöntemlerinin enerji tüketimini tahmin etme üzerine ne kadar etkili olduğu ve korona gibi ekstrem...
+
+542
+01:34:25,108 --> 01:34:31,148
+durumlarda bu tahminlerin nasıl etkilendiğinin incelenmesi. İlk olarak...
+
+543
+01:34:31,252 --> 01:34:40,852
+kullanıldıkları yöntemlerden bahsedeceğim. Makalede 3 farklı yöntem kullanılıyor. Bir random forest, bir XGBoost, bir de long short term memory kullanılıyor.
+
+544
+01:34:41,812 --> 01:34:49,852
+Ardından değişkenlerden bahsetmek istiyorum. Değişken olarak dediğim gibi öncelikle veri seti 96 yılından 2021 yılına kadar uzanıyor.
+
+545
+01:34:57,076 --> 01:35:05,615
+Nüfus, ortalama sıcaklık ve toplam elektrik üretimi kullanılıyor değişkenler olarak ve bu veriler aylık çözünürlükte inceleniyor.
+
+546
+01:35:06,452 --> 01:35:19,372
+İlk olarak iki periyoda bölünüyor. İlk periyodda 1997 yılından 2013 yılına kadar eğitiliyor. Ardından 2014-2015 arasında validasyon ve 2016-2017 ile test seti olarak kullanıyorlar.
+
+547
+01:35:19,912 --> 01:35:27,272
+İkinci dönemde yani korona dönemini içeren dönemde ise eğitim setine 97 yılından 2017'ne kadar 2017'den 2019'a validasyon.
+
+548
+01:35:27,672 --> 01:35:33,292
+2019'dan korona döneminde içeren 2021 dönemine kadar da test dönemini kullanıyorlar.
+
+549
+01:35:34,452 --> 01:35:42,452
+İki dönem daha istikrarlı ve düşük volatilitenin olduğu bir dönem. İkinci dönem ise daha çok sapmalar ve volatil bir dönem Covid-19 nedeniyle.
+
+550
+01:35:42,452 --> 01:35:56,043
+Şimdi bu iki dönemdeki tahminlerin değişikliğini inceleyeceğiz. İstikrarlı dönemde Long Short Term Memory modeli diğer modellere göre daha iyi bir sonuç veriyor.
+
+551
+01:35:56,275 --> 01:36:12,795
+Şok döneminde ise en iyi sonucu Random Forest modeli bize veriyor. Bu da bize gösteriyor ki LSTM modeli istikrarlı trendlerde daha başarılı iken Random Forest böyle sapmalın ve voliteliğin olduğu dönemlerde daha yüksek bir başarı oranını yakalayabiliyor.
+
+552
+01:36:14,163 --> 01:36:27,343
+Burada da aynı zamanda modellerin karşılaştırması var. XGBUS hem stabil dönemde hem ise şok döneminde ortalama bir sonuç veriyor diğer modellere kıyasla.
+
+553
+01:36:29,283 --> 01:36:36,343
+Periyodikide tabii ki tüm modellerde bir şok enerji tüketiminde ani değişiklikler olduğu için tüm modellerde bir hata arttırıyor.
+
+554
+01:36:37,587 --> 01:36:45,487
+Burada en az şekilde bu hataydan etkilenen model Random Forest modeli oluyor ve daha güvenli bir sonuç üretiyor.
+
+555
+01:36:47,787 --> 01:36:54,107
+Burada da aynı şekilde modellerin özellikle ve neden başarılı olduklarına aynı şekilde değiniyor.
+
+556
+01:36:56,819 --> 01:37:00,960
+Kore yaklaşımı, Kore makalesinden farklı olarak ben şöyle bir şey yapmak istedim.
+
+557
+01:37:01,359 --> 01:37:05,219
+Kore makalesinde aylık veri inceliyor ve belli başlı değişkenler ekleniyor.
+
+558
+01:37:05,299 --> 01:37:10,799
+Ben bunun Türkiye'de günü ki piyasada saatlik bir şekilde nasıl tahmin edilebileceği üzerine çalışmak istedim.
+
+559
+01:37:11,399 --> 01:37:13,139
+Kendi projemi Türkiye üzerine kurguladım.
+
+560
+01:37:13,719 --> 01:37:18,219
+Türkiye'de saatlik çözünürlükte EPH'ten enerji tüketim verilerini aldım.
+
+561
+01:37:18,219 --> 01:37:21,460
+Sonra bunları farklı modellerde eğittim.
+
+562
+01:37:24,819 --> 01:37:39,500
+Bu modeli de kullandım. Daha gelişmiş bir doğruluk elde etmek için. Bunun yanı sıra COVID-19 şokunun etkisini modeller öğretmek için Oxford'un COVID-19 sıkılık indeksini kullandım.
+
+563
+01:37:40,819 --> 01:37:51,819
+Burada kullandığım yöntemler Light GBM, Koronamak Aresi'nden farklı olarak Bi-Directional LSTM Profit modeli ve Stacking Ensemble modelini kullandım.
+
+564
+01:37:52,259 --> 01:37:53,179
+Yaklaşımını kullandım.
+
+565
+01:37:54,003 --> 01:38:01,203
+Şimdi bizim veri seti, bizim future'larımızı inceleyecek olursak saatlik çözünürlükle çalışıyoruz, saatlik tahmin yapacağız.
+
+566
+01:38:01,724 --> 01:38:09,463
+Ve hava durumu önemli bir etken enerji tüketiminde. Bunun için 5 büyük şehrin nüfus ağırlıklı sıcaklık verileri eklendi.
+
+567
+01:38:09,703 --> 01:38:16,443
+Ve Türkiye'deki enerji tüketiminin en etkilen faktörlerden biri de dolar kuru. Dolar kuru da aynı zamanda eklendi.
+
+568
+01:38:16,943 --> 01:38:20,143
+Enerji tüketimini etkileyen bir başka özellik Türkiye'de olan tatiller.
+
+569
+01:38:20,591 --> 01:38:27,931
+Resmi ve dini tatiller ve hatta bu tatiller olan gün sayıları, tatilden bir gün, iki gün öncesi de aynı zamanda belirleyici faktörler.
+
+570
+01:38:28,551 --> 01:38:38,171
+Aynı zamanda modelin günlerin birbirleri olan ilişkilerini daha iyi anlaması için sinüs-kosinüs dönüşümleriyle bu modele bunları verdim, günleri.
+
+571
+01:38:38,612 --> 01:38:45,052
+Dediğim gibi COVID-19'un etkilerini öğrenmesi için Oxford sıkılık endeksini ekledim.
+
+572
+01:38:45,452 --> 01:38:54,952
+Aynı zamanda o gün, o saatte, bir gün öncesinde veya bir saat öncesinde, bir gün öncesinde, bir hafta öncesinde nasıl bir tüketim olmuş onların değerlerini verdim.
+
+573
+01:38:55,332 --> 01:39:00,592
+Aynı zamanda ortalamalarını ve standart sapmalarını da modele değişken olarak tanıttım.
+
+574
+01:39:02,323 --> 01:39:17,383
+Burada dediğim gibi Türkiye'deki şehirlerin ağırlıklı ortalaması ile sıcaklık verileri, dolar kuru, günlerin döngüsel olarak eklenmesi. Burada az önce bahsettiğim şeyler zaten.
+
+575
+01:39:26,292 --> 01:39:34,632
+Daha böyle stabil bir artış görebiliyoruz. Bizim verimizde saatlik olduğunda mevsimsellik gibi özellikleri daha iyi yakalıyoruz.
+
+576
+01:39:35,272 --> 01:39:41,732
+Mevsimlere göre enerji tüketiminin nasıl dağıldığını grafik üzerlerinde daha net bir şekilde görebiliyoruz.
+
+577
+01:39:45,939 --> 01:39:56,759
+Zaten en yüksek saatle tüketimin arasındaki ilişki. Sonra sıcaklık hem soğuk ve hem sıcak olmasına göre tüketimi değiştiriyor.
+
+578
+01:39:56,880 --> 01:40:01,500
+Ve hafta sonu olup olmaması da aynı şekilde tüketimi negatif yönde etkiliyor.
+
+579
+01:40:02,000 --> 01:40:09,299
+Bunun sonucunda bizim başarılı olduğumuz en iyi iki model, Light GBM ile Stacking and Sable modeli.
+
+580
+01:40:09,659 --> 01:40:19,299
+Burada gerçek değer ve modelin yaptığı tahmin değerlerinin dağılımını görebiliyorsunuz. İkisinde de neredeyse birbirine yakın değerler aldı.
+
+581
+01:40:20,899 --> 01:40:24,699
+Ama şunu fark ettik, buradaki grafiklerden de görebileceği üzere.
+
+582
+01:40:25,136 --> 01:40:39,416
+Enerji tüketim miktarı ne kadar artarsa modelin o kadar hata oranında artmaya başlıyor. Yani daha uç enerji seviyelerinde model daha yüksek hatalar yapmaya başlıyor.
+
+583
+01:40:40,787 --> 01:40:55,587
+Burada da mesela 7 günlük RMSE ortalamasını görüyorsunuz. Burada yaklaşık 2023'ün Ağustos ayında böyle bir peak dönemi olmuş modelin. Böyle volatili değerler de var aynı zamanda.
+
+584
+01:41:04,051 --> 01:41:10,391
+En iyi sonucu, validation testinde en iyi sonucu Stacking Ensemble modelinde aldık.
+
+585
+01:41:12,431 --> 01:41:19,351
+Ardından test setinde ise RMSE olarak LightGBM ve Stacking Ensemble'de benzer sonuçlar aldık.
+
+586
+01:41:19,831 --> 01:41:25,231
+Yani ikisinin birbirine çok yakın. Profit modelinde diğerlerine göre daha kötü bir sonuç aldık.
+
+587
+01:41:26,484 --> 01:41:36,764
+Bidirectional LSTM'de de ortalama bir sonuç aldık. Şimdi bizim burada daha iyi bir sonuç almamız tabii ki Kore makalesine göre normal.
+
+588
+01:41:36,764 --> 01:41:54,423
+Çünkü orada bir aylık bazda incelenen bir şey var ve hata olma olası da daha yüksek. Biz daha saatlik düzeyde inceliyoruz ve diğer saatler ve bir önceki saat arasındaki enerji tüketim miktarları ve birçok eklediğimiz future'lar zaten.
+
+589
+01:41:54,484 --> 01:42:01,364
+Bizim tahminimizi zaten kolaylaştırıyor ve daha düşük bir hata oranı zaten elde ediyoruz saatlik anlamda.
+
+590
+01:42:04,364 --> 01:42:13,484
+Burada da aynı şekilde 3 modelin Lasso modeliyle kullanılarak Stacking Ensemble yönteminden bahsediyoruz.
+
+591
+01:42:16,979 --> 01:42:37,659
+Bunun sonucunda da günüçü piyasada saatlik değerlerle daha iyi bir ekonomiye ulaşmak veya tasarruf sağlamak, kaynakların kullanımını ona göre planlamak gibi şeyler sağlanabilir.
+
+592
+01:42:38,579 --> 01:42:41,599
+Benim bahsedeceklerim bu kadar hocam. Sormak istediğiniz sorular olursa.
+
+593
+01:42:44,243 --> 01:43:00,083
+Teşekkürler [öğrenci]. Seni de sunumun için alkışlıyoruz. EPH verisini kullanıyorum dedin tahmin için. Hangi tarih aralığını aldığını söylemiş miydin?
+
+594
+01:43:01,003 --> 01:43:06,304
+Hocam yazıyordu da söylemiş miydim hatırlamıyorum. Söyleyeyim. 2018'den hocam, 2023'ün sonuna kadar.
+
+595
+01:43:08,692 --> 01:43:12,092
+O zaman senin elinde de COVID dönemi var.
+
+596
+01:43:12,692 --> 01:43:26,112
+Evet, COVID dönemi var. COVID döneminden yanı sıra COVID sıkılık endeksi de var, o sordun. O da yanlış hatırlamıyorsam 2021 COVID'in başlangıcından 2022'nin ortalarına kadar devam ediyor.
+
+597
+01:43:27,764 --> 01:43:40,424
+Anladım. Yani hani COVID döneminin hani çalışmada böyle COVID öncesi, COVID sonrası diye bölmüştü ya ama senin verimde onu yapacak kadar geniş bir boşluk yok herhalde.
+
+598
+01:43:40,424 --> 01:43:41,124
+Evet.
+
+599
+01:43:41,784 --> 01:43:50,924
+2018 zaten 2021, 2020'de başladı COVID. İki sene falan data var elinde. Öyle olmuş oluyor.
+
+600
+01:43:51,924 --> 01:43:52,204
+Evet.
+
+601
+01:43:55,636 --> 01:44:00,876
+Günlük sıcaklıklarla vesaireyle sen mi birleştirdin yoksa böyle hazır bir veri var mıydı?
+
+602
+01:44:01,356 --> 01:44:03,056
+Yok ben birleştirdim. Böyle bir veri yoktur hocam.
+
+603
+01:44:03,756 --> 01:44:09,056
+Kore makalesindeki gibi ben de illere göre ağırlıklı sıcaklık ortalamalarını ekledim.
+
+604
+01:44:10,856 --> 01:44:16,396
+EPIH'den ayrı veriyi aldım. Ağırlık ortalığı sıcaklıkları ayrı aldım. Dolar kurunu ayrı aldım. Kendim birleştirdim.
+
+605
+01:44:17,395 --> 01:44:26,495
+Evet, baya ilginç bir şey. Baya veri hazırlama süreci de zaman alan bir iş olmuş senin için yani. Sadece modelleri uygulamak değil.
+
+606
+01:44:27,252 --> 01:44:50,492
+Teşekkürler. İlginç bir çalışma. Ve aslında güncel bir konu. EPIH'ın bu tüketim tahminleri üzerine epey çalıştığını da biliyoruz. Çünkü bunu bilip üretimi ona göre planlamak istiyorlar. Fiyatlamaları değiştiriyor. O açıdan gerçekten önemli bir konu. Tekrar teşekkürler [öğrenci].
+
+607
+01:44:50,492 --> 01:44:51,692
+Ben de teşekkür ederim hocam.
+
+608
+01:44:52,192 --> 01:44:53,112
+Evet, sırada.
+
+609
+01:44:54,232 --> 01:44:54,712
+Bozar.
+
+610
+01:44:58,195 --> 01:44:59,036
+Adamsınız.
+
+611
+01:45:00,855 --> 01:45:03,315
+Evet hocam, hemen paylaşıyorum.
+
+612
+01:45:04,596 --> 01:45:05,115
+Buyurun.
+
+613
+01:45:26,163 --> 01:45:29,944
+Bir de kameranızı açalım, sizi görelim.
+
+614
+01:45:32,364 --> 01:45:35,163
+If you want, you can speak in English.
+
+615
+01:45:36,724 --> 01:45:39,524
+That would be very comfortable, [öğrenci]. Thank you.
+
+616
+01:45:40,524 --> 01:45:41,243
+Okay.
+
+617
+01:45:43,243 --> 01:45:49,524
+Alright, good afternoon everyone. Name is Bowser. I'll be presenting to you the...
+
+618
+01:45:50,260 --> 01:45:55,740
+İmlemeting actionable knowledge discovery for employee retention.
+
+619
+01:45:56,820 --> 01:46:02,440
+This is a, okay, first, let me see why I chose this topic.
+
+620
+01:46:03,080 --> 01:46:10,360
+So this is a replica of the paper titled, actionable knowledge discovery for increasing enterprise profit.
+
+621
+01:46:11,280 --> 01:46:14,640
+And I was happy to come across this paper because
+
+622
+01:46:15,136 --> 01:46:22,136
+Önceye kadar, bu konuda da bazıları
+
+623
+01:46:22,136 --> 01:46:29,136
+çalışanlarına da bir işe paylaşanlar.
+
+624
+01:46:29,136 --> 01:46:36,136
+Bu konuda, saları ile ilgili çok fazla işe paylaşanlar.
+
+625
+01:46:36,340 --> 01:46:39,260
+ve işe yargı,
+
+626
+01:46:39,260 --> 01:46:40,460
+ve daha iyi bir
+
+627
+01:46:40,460 --> 01:46:41,260
+daha iyi
+
+628
+01:46:41,260 --> 01:46:41,900
+ve hizmeti
+
+629
+01:46:41,900 --> 01:46:43,340
+ve
+
+630
+01:46:43,340 --> 01:46:43,819
+hizmeti
+
+631
+01:46:43,819 --> 01:46:44,460
+ve
+
+632
+01:46:44,460 --> 01:46:44,779
+hizmeti
+
+633
+01:46:44,779 --> 01:46:45,460
+ve
+
+634
+01:46:45,460 --> 01:46:46,779
+hizmeti
+
+635
+01:46:46,779 --> 01:46:47,340
+ve
+
+636
+01:46:47,340 --> 01:46:52,460
+bu
+
+637
+01:46:51,072 --> 01:46:59,492
+ve nedeni de, en büyük birçok
+
+638
+01:47:14,775 --> 01:47:28,715
+bu
+
+639
+01:47:13,967 --> 01:47:39,724
+Bu, bu
+
+640
+01:47:40,020 --> 01:47:42,020
+Bu videoyu izlediğiniz için,
+
+641
+01:47:42,020 --> 01:47:46,020
+bu konuda basitelerini arayacak,
+
+642
+01:47:46,020 --> 01:47:49,660
+bu konuda 3M'in DDDM'in
+
+643
+01:47:49,660 --> 01:47:51,700
+ve bu konuda,
+
+644
+01:47:51,700 --> 01:48:06,020
+bu konuda,
+
+645
+01:48:06,112 --> 01:48:10,112
+ve bu konuda yorumlarla ilgili bir soru var.
+
+646
+01:48:10,112 --> 01:48:13,112
+Bu, bu konuda,
+
+647
+01:48:13,112 --> 01:48:33,112
+bu konuda,
+
+648
+01:48:34,228 --> 01:48:40,228
+ve normalizasyon, ama daha fazla bilgilerin, daha fazla bilgilerin, daha fazla bilgilerin, daha fazla bilgilerin.
+
+649
+01:49:01,427 --> 01:49:03,427
+Evet.
+
+650
+01:49:03,427 --> 01:49:11,068
+Diyanlarının
+
+651
+01:49:11,068 --> 01:49:13,427
+20 milyonlarla ilgili birçok konusunda
+
+652
+01:49:13,427 --> 01:49:15,427
+bu konusunda gerçekleştirmek için
+
+653
+01:49:15,427 --> 01:49:19,427
+bu konusunda
+
+654
+01:49:19,427 --> 01:49:21,427
+daha fazla sorunlu bir sorunlu
+
+655
+01:49:21,427 --> 01:49:22,427
+ve bu konusunda
+
+656
+01:49:22,427 --> 01:49:23,427
+bu konusunda
+
+657
+01:49:23,427 --> 01:49:24,427
+ve bu konusunda
+
+658
+01:49:24,427 --> 01:49:25,427
+bu konusunda
+
+659
+01:49:25,427 --> 01:49:26,427
+ve bu konusunda
+
+660
+01:49:27,315 --> 01:49:51,851
+Bu, bu
+
+661
+01:49:53,619 --> 01:49:59,839
+So, let us look at this simple example. Let us say employee X is 28.
+
+662
+01:50:00,000 --> 01:50:05,000
+ve 2 yılında çalışan bir çalışma için çalışmalı.
+
+663
+01:50:05,000 --> 01:50:09,000
+Bu çalışmalı, 1K'da çalışmalı ve çalışmalı.
+
+664
+01:50:09,000 --> 01:50:11,000
+Bu çalışmalı, 1K'da çalışmalı.
+
+665
+01:50:11,000 --> 01:50:15,000
+Bu çalışmalı, bu çalışmalı,
+
+666
+01:50:15,000 --> 01:50:25,000
+bu çalışmalı,
+
+667
+01:50:28,000 --> 01:50:35,000
+Bu konuda çalışmalı birçok birçok konusunda
+
+668
+01:50:35,000 --> 01:50:39,000
+ve her şeyden birçok konusunda birçok konusunda
+
+669
+01:50:39,000 --> 01:50:41,000
+ve bu konuda nasıl birçok konusunda
+
+670
+01:50:41,000 --> 01:50:44,000
+bu konuda çalışmalıdır.
+
+671
+01:50:44,000 --> 01:50:49,984
+Bu konuda çalışmalıdır.
+
+672
+01:50:49,984 --> 01:50:56,984
+Bu birçok.
+
+673
+01:50:56,984 --> 01:51:04,984
+Birçok birçok birçok birçok birçok birçok birçok birçok birçok.
+
+674
+01:51:04,984 --> 01:51:08,984
+Bu birçok birçok birçok birçok birçok.
+
+675
+01:51:08,984 --> 01:51:12,908
+Bu birçok birçok birçok birçok.
+
+676
+01:51:13,043 --> 01:51:28,443
+The paper argues that, for example, if you tell the owner of the company that last year we lost 20 million pounds, this year we lost 18% more, the man is going to ask you, the CEO of the company is going to ask you, so what should I do?
+
+677
+01:51:29,363 --> 01:51:34,863
+It is this actionable knowledge discovery that is trying to answer that question, what should we do?
+
+678
+01:51:36,692 --> 01:51:42,692
+Ok, so according to the paper, the proposed solution is as...
+
+679
+01:51:43,764 --> 01:51:59,563
+As presented here, that we try to, you know, get the data, sample it, do the necessary cleaning, and then we get a decision tree, and then we pass it through the domain knowledge simultaneously.
+
+680
+01:51:59,563 --> 01:52:05,359
+That is, for that specific domain, we select the necessary attributes, we select the...
+
+681
+01:52:05,359 --> 01:52:32,683
+Bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konusunda, bu konus
+
+682
+01:52:32,787 --> 01:52:34,787
+Bu da bu da soru.
+
+683
+01:52:34,787 --> 01:52:37,787
+Şimdi, bu dağıtık.
+
+684
+01:52:37,787 --> 01:52:53,707
+Bu dağıtık.
+
+685
+01:52:53,908 --> 01:53:00,908
+Fiziksel, stabil, kestik, kestik, kestik, kestik, kestik ve net profit ve net profit fonctions
+
+686
+01:53:00,908 --> 01:53:12,368
+were defined only for the HR dataset. As a result, replicating the algorithm for other datasets was not possible.
+
+687
+01:53:13,171 --> 01:53:20,171
+Bu hr data seti var daha kolay, çünkü her şeyin
+
+688
+01:53:20,171 --> 01:53:21,171
+bu da bir şey var.
+
+689
+01:53:21,171 --> 01:53:25,171
+Bu bir data seti bir şey.
+
+690
+01:53:25,171 --> 01:53:32,171
+Bu da bir data seti var, 1470 rörelse,
+
+691
+01:53:37,235 --> 01:53:43,895
+Atreşen means leaving, so we had only, this is almost times five.
+
+692
+01:53:44,155 --> 01:53:51,255
+The number of employees that's left is one over five of the employees that's dead.
+
+693
+01:53:52,115 --> 01:53:54,495
+So now, in this case, what do we do?
+
+694
+01:53:54,495 --> 01:53:59,555
+Usually when we have imbalancator, we need to balance it so that our model will not be biased,
+
+695
+01:53:59,695 --> 01:54:02,855
+but the paper actually used this data set as it is.
+
+696
+01:54:03,444 --> 01:54:17,024
+I was also surprised to see that, but with the aim of trying to replicate exactly what the paper did and to use the algorithm as well, in order to see if we can get better results, I also use the data as it is.
+
+697
+01:54:17,144 --> 01:54:24,503
+I also try to balance the data set and see if we get better results.
+
+698
+01:54:41,395 --> 01:54:48,395
+Evet, bu adıcırıcılık için bir adıcırı var.
+
+699
+01:54:48,395 --> 01:54:52,395
+Bu adıcırı var.
+
+700
+01:54:52,395 --> 01:54:56,395
+Eksik olarak, bu adıcırıcı bir adıcırı var.
+
+701
+01:54:56,395 --> 01:55:01,395
+Bu adıcırıcı bir adıcırı var.
+
+702
+01:55:01,395 --> 01:55:05,395
+Bu adıcırıcı bir adıcırıcı bir adıcırıcı bir adıcırıcı.
+
+703
+01:55:11,823 --> 01:55:13,823
+Çünkü bu kadar da bir değer var.
+
+704
+01:55:13,823 --> 01:55:15,823
+Bir de çok zeri var.
+
+705
+01:55:22,612 --> 01:55:29,612
+Evet, bu da
+
+706
+01:55:29,612 --> 01:55:31,612
+C4.5 algoritma.
+
+707
+01:55:31,612 --> 01:55:34,612
+Ama ben de yazdım,
+
+708
+01:55:34,612 --> 01:55:37,612
+bu da cede yazdım.
+
+709
+01:55:37,612 --> 01:55:39,612
+Bu da cede yazdım,
+
+710
+01:55:39,612 --> 01:55:42,612
+bu da cede yazdım.
+
+711
+01:55:42,612 --> 01:55:46,612
+Bu da cede yazdım.
+
+712
+01:55:50,100 --> 01:55:56,460
+Açık bir parçal olarak, bu parçal olarak, bir liste de bir parçal olarak,
+
+713
+01:55:56,460 --> 01:56:01,100
+bir parçal olarak, bu parçal olarak,
+
+714
+01:56:01,100 --> 01:56:05,100
+ve bu parçal olarak, bir parçal olarak,
+
+715
+01:56:05,100 --> 01:56:09,100
+bir parçal olarak, bir parçal olarak, bir parçal olarak,
+
+716
+01:56:09,100 --> 01:56:16,100
+bir parçal olarak, bir parçal olarak,
+
+717
+01:56:16,307 --> 01:56:41,131
+Bu, bu
+
+718
+01:56:41,268 --> 01:56:45,268
+Bu, each of the flexible attributes, we define a cost for changing them.
+
+719
+01:56:45,927 --> 01:56:51,707
+For example, the cost of changing over time from no to yes or yes to no is $70.
+
+720
+01:56:52,927 --> 01:57:01,608
+And then we calculated, we defined a profit formula according to what the paper is.
+
+721
+01:57:02,047 --> 01:57:04,407
+Basically, we calculate a gain.
+
+722
+01:57:04,851 --> 01:57:08,171
+ve bu konuda da bir konuda alabilirsiniz.
+
+723
+01:57:08,171 --> 01:57:12,171
+Bu konuda alabilirsiniz.
+
+724
+01:57:12,171 --> 01:57:14,251
+Bu konuda alabilirsiniz,
+
+725
+01:57:14,251 --> 01:57:20,171
+bu konuda alabilirsiniz.
+
+726
+01:57:20,171 --> 01:57:26,171
+Bu konuda alabilirsiniz.
+
+727
+01:57:26,612 --> 01:57:44,300
+Bu, bu
+
+728
+01:57:45,235 --> 01:57:48,815
+A FASTA means to achieve the same result as this.
+
+729
+01:57:49,255 --> 01:57:50,395
+So what is that FASTA means?
+
+730
+01:57:50,455 --> 01:57:59,695
+The FASTA means is that instead of us going through all the branches of the tree, we only go through the important branches.
+
+731
+01:57:59,895 --> 01:58:05,635
+The important branches in this case are those that will give us the results we want.
+
+732
+01:58:07,604 --> 01:58:34,380
+Evet, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu konuda, bu
+
+733
+01:58:34,484 --> 01:58:57,484
+Result, a similar net profit. So net profit in this case is that for all the employees who are scheduled to leave, if we apply all the actionable rules that were suggested by the algorithm, they are going to stay back. So for that, we achieved a...
+
+734
+01:58:57,631 --> 01:59:12,471
+net profit, that is the company, will be saving $184,000. And for my implementation, we got $176,000. But the implementation time was way faster.
+
+735
+01:59:14,707 --> 01:59:18,707
+Şimdi, birçok şey var.
+
+736
+01:59:18,707 --> 01:59:21,707
+İmplemenizde, birçok bir şey var.
+
+737
+01:59:35,475 --> 01:59:44,175
+So, I'm not sure exactly why the paper did not define monthly income as a flexible attribute because I believe that is something we can change.
+
+738
+01:59:45,555 --> 01:59:57,175
+So, I feel that in future walks, that is one thing that maybe can be done to compare results.
+
+739
+01:59:57,855 --> 01:59:59,475
+However, for this specific...
+
+740
+02:00:00,916 --> 02:00:03,916
+ve bu çalışma başlaması için,
+
+741
+02:00:03,916 --> 02:00:05,956
+aynı zamanda gerçekleştirmek için
+
+742
+02:00:05,956 --> 02:00:09,355
+gerçekleştirmek için
+
+743
+02:00:09,355 --> 02:00:11,396
+bu çalışma başlaması için
+
+744
+02:00:11,396 --> 02:00:13,355
+ve bu çalışma başlaması için
+
+745
+02:00:13,355 --> 02:00:15,355
+bir şey olduğunu gördüm.
+
+746
+02:00:15,355 --> 02:00:15,836
+Bu çalışma başlaması için
+
+747
+02:00:15,836 --> 02:00:18,396
+birçok başlaması için
+
+748
+02:00:18,396 --> 02:00:20,396
+164,
+
+749
+02:00:20,396 --> 02:00:22,636
+ve bu çalışma başlaması için
+
+750
+02:00:22,636 --> 02:00:23,636
+45.
+
+751
+02:00:25,359 --> 02:00:47,775
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+752
+02:00:47,775 --> 02:00:53,775
+Bu da bu da bu da bu da bu.
+
+753
+02:01:02,195 --> 02:01:27,916
+Bu %50'e %50
+
+754
+02:01:27,956 --> 02:01:54,507
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+755
+02:02:18,368 --> 02:02:38,888
+M
+
+756
+02:02:45,363 --> 02:02:48,963
+Evet, bu da benim için. Teşekkürler.
+
+757
+02:02:51,263 --> 02:02:53,223
+Teşekkürler, [öğrenci].
+
+758
+02:02:54,844 --> 02:02:56,283
+Anya soru?
+
+759
+02:03:00,020 --> 02:03:19,740
+Evet, size alkışlıyoruz sunumumuz için. Sınıfta soru yok herhalde. Evet, peki. Bir sonraki sunuma geçelim. [öğrenci], [öğrenci].
+
+760
+02:03:21,200 --> 02:03:21,960
+Evet hocam.
+
+761
+02:03:21,960 --> 02:03:25,900
+Bir ara versek ya, vallahi bence bir kahve molası verelim.
+
+762
+02:03:26,287 --> 02:03:28,467
+yüzümüz kapanmaya başladı çünkü.
+
+763
+02:03:29,547 --> 02:03:30,987
+10 dakika ara veriyoruz.
+
+764
+02:03:31,387 --> 02:03:31,487
+Tamam.
+
+765
+02:03:32,027 --> 02:03:33,907
+Sonra sizinle devam edeceğiz.
+
+766
+02:03:34,067 --> 02:03:35,287
+Ondan sonra [öğrenci] var.
+
+767
+02:03:36,347 --> 02:03:38,927
+Sonra bir arkadaşımız daha vardı.
+
+768
+02:03:40,647 --> 02:03:41,547
+Saat şu anda.
+
+769
+02:03:43,927 --> 02:03:44,727
+12 geçiyor.
+
+770
+02:03:45,007 --> 02:03:46,227
+12 geçe görüşürüz.
+
+771
+02:13:49,332 --> 02:13:52,332
+Evet, sevgili arkadaşlar, kaldığımız yerden devam.
+
+772
+02:13:54,811 --> 02:13:55,811
+[öğrenci]?
+
+773
+02:13:56,952 --> 02:13:57,792
+Buradayım hocam.
+
+774
+02:13:58,692 --> 02:13:59,551
+Tekrar merhaba.
+
+775
+02:14:00,292 --> 02:14:01,332
+Evet, buyurun.
+
+776
+02:14:02,412 --> 02:14:04,332
+Hemen ekran paylaşabilirsen.
+
+777
+02:14:08,332 --> 02:14:15,152
+Sunum süresi 15 dakika demiştim ve neden bu konuyu seçtiğinizi.
+
+778
+02:14:15,731 --> 02:14:30,131
+belirterek başlıyorsunuz. Şimdi [öğrenci] sırada, bir sonra [öğrenci] ve ondan sonra [öğrenci]. [öğrenci] da hazırmış. [öğrenci]'yı dinleyeceğiz. Üç kişi daha son yapacak. Buyurun.
+
+779
+02:14:31,131 --> 02:14:32,532
+Ekranım geldi mi hocam?
+
+780
+02:14:33,043 --> 02:14:34,744
+Evet, çok güzel görünüyor.
+
+781
+02:14:35,963 --> 02:14:42,463
+Merhabalar herkese, ben [öğrenci]. [kişisel bilgi]
+
+782
+02:14:43,024 --> 02:14:50,024
+Fırat kontrolleriyle çok ilgileniyorum. Bu anlamda makale seçerken de bu alanda yapılmış çalışmaları biraz merak ettim.
+
+783
+02:14:50,404 --> 02:14:57,024
+O yüzden oraya odaklanmayı tercih ettim. Bunun için de yayınlanan güncel bir çalışma olmasına dikkat etmiştim.
+
+784
+02:14:57,024 --> 02:15:01,024
+Onun yüzden 2025 yayın tarihli bir çalışma.
+
+785
+02:15:01,043 --> 02:15:16,824
+Ben bugün size bahsetmeye çalışacağım. Genel olarak çalışma kredi kartı dolandırılığı senaryosunu son derece dengesiz bir veri setinde makine öğrenmesi yöntemlerinin nasıl daha etkili bir hale getirebileceğini araştıran bir çalışma bu.
+
+786
+02:15:18,420 --> 02:15:32,559
+Kredi kartı dolandırıcılığı finans sektöründe yalnızca teknik değil, aynı zamanda çok yüksek maliyetli bir problem. İşlem hacimleri arttıkça, dolandırıcılık yöntemleri de farklılaştıkça, çeşitlendikçe daha da karmaşık bir hale geliyor.
+
+787
+02:15:33,939 --> 02:15:42,480
+Neden zor bir problem? Buradaki en temel sorun şu, dolandırıcılık işlemleri toplam işlemlerin çok çok küçük bir kısmını oluşturuyor.
+
+788
+02:15:42,920 --> 02:15:47,939
+Bu da bizde doğrudan aslında imbalans data dediğimiz o sınıf dengesizliği problemine götürüyor.
+
+789
+02:15:48,619 --> 02:15:53,680
+Veri setinde normal işlemler sayısı çok fazla, dolandırıcılık işlem sayısı ise çok az.
+
+790
+02:15:54,199 --> 02:15:59,199
+Bu durumda bir model işleme sadece normal dese bile yüksek doğruluk elde edebiliyor.
+
+791
+02:15:59,199 --> 02:16:01,340
+Ama buradaki kritik nokta şu.
+
+792
+02:16:01,939 --> 02:16:09,159
+Yalnız, false negatifler, yani dolandıcılığı kaçırmak, bankalar için doğrudan maddi bir kayıp anlamına geliyor.
+
+793
+02:16:09,579 --> 02:16:18,920
+Dolayısıyla buradaki problemdeki amaç, yalnızca ekürüsü arttırmak değil, fraud işlemlerini gerçekten yakalayabilen bir model geliştirmek oluyor.
+
+794
+02:16:20,819 --> 02:16:26,960
+Şimdi makaledeki genel çözüm yaklaşımı üç başlıkta aslında odaklanıyor.
+
+795
+02:16:27,199 --> 02:16:34,779
+Verinin ön işleme süreci, sınıf dengesizliği ile başa çıkma, farklı makine öğrenmesi modellerinin karşılaştırılması şeklinde.
+
+796
+02:16:35,619 --> 02:16:41,020
+Genel yöntem akışı da şu şekilde. Elimizde bir etiketlenmiş bir data var.
+
+797
+02:16:41,639 --> 02:16:48,599
+Bu datanın öncelikli veri ön işlemesi yapılıyor. Daha sonra train ve test olarak iki parçaya bölünüyor.
+
+798
+02:16:48,819 --> 02:17:00,219
+%20 test verisi, %80 de eğitim verisi şeklinde. Sonrasında SMOT işlemi uygulanıyor ve bu sadece train veri setine uygulanıyor.
+
+799
+02:17:00,219 --> 02:17:08,779
+Farklı modellerle bu veri setine yaklaşım gözlenerek en sonunda da en başarılı model üzerinde çalışma tamamlanıyor.
+
+800
+02:17:09,971 --> 02:17:16,971
+Biraz SMOT'tan bahsetmek istiyorum. SMOT dengesiz veri setlerinde azınlık sınıfı sentetik olarak
+
+801
+02:17:17,332 --> 02:17:24,152
+Arttıran bir yöntem aslında. Burada önemli olan nokta şu. SMOT, azınlık sınıfı rastikele kopyalamıyor.
+
+802
+02:17:24,572 --> 02:17:31,912
+Yani bunun yerine mevcut örneklerin, komşuluk ilişkilerini de kullanarak öz nitelik uzayında yeni örnekler üretiyor.
+
+803
+02:17:32,452 --> 02:17:37,811
+Bu yaklaşım bize neyi sağlıyor peki? Model fraud'a takılabilecek işlemleri daha iyi öğreniyor.
+
+804
+02:17:38,131 --> 02:17:43,371
+İşte overfitting riski azalıyor. Özellikle recall ve f1 score gibi metriklerde iyileşmeler sağlanıyor.
+
+805
+02:17:44,180 --> 02:18:07,760
+Tabi SMOT'un çok kritik bir riski var. Eğer tüm veri setini uygularsak, data leke işlediğimiz o veri sızıntısı oluşabiliyor. Bu yüzden makale SMOT'u yalnızca eğitim veri setine uyguluyor. Test veri setinde ise orijinal dağılımı koruyor. Bu noktada çalışmanız aslında akademik açıdan en güçlü taraflarından biri ve en çok üzerinde durduğu noktalardan da biri.
+
+806
+02:18:11,200 --> 02:18:18,880
+farklı modellerin veri üzerindeki davranışlarını öğrenmek için farklı yaklaşım sergileyen modeller kullanılıyor.
+
+807
+02:18:19,636 --> 02:18:21,636
+Temel olarak dört model üstünde duruluyor.
+
+808
+02:18:22,655 --> 02:18:26,296
+Logistik regresyon, temel bir referans modeli olarak.
+
+809
+02:18:26,736 --> 02:18:32,956
+DBSCN, tekil karar ağaçları, veri setinde o gürültüye daha da duyarlı ve aşırı öğrenmeye yatkın bir model.
+
+810
+02:18:33,536 --> 02:18:37,596
+Neural Network, daha karmaşık örüntüleri yakalayabilen bir yapı.
+
+811
+02:18:38,056 --> 02:18:42,416
+Random Forest, Ensemble yapısı sayesinde ana model olarak öne çıkıyor.
+
+812
+02:18:43,247 --> 02:18:55,887
+Peki neden başlıklı random forest geçiyor? Bunun nedeni şöyle, çok sayıda karar ağacının birleşmesinden oluşan bir model olduğu için dengesiz veri setlerinde daha kararlı sonuçlar üretebiliyor.
+
+813
+02:18:56,288 --> 02:19:01,587
+Bu yüzden makale bu random forest modelini birazcık daha ana model olarak konumlandırıyor.
+
+814
+02:19:03,028 --> 02:19:26,048
+Veri setinden bahsedecek olursam, Kaggle üzerinden alınmış, gerçek dünya kredi kartlı işlemlerinden oluşuyor. Veri gizliliği nedeniyle özellikler PCI ile anonimleştirilmiş. 31 kolonlu, toplam yaklaşık 280 bin satırlık bir veri seti. İçerisinde klas etiketi var. 1, fraudda takılan işlemler, 0 ise takılmayan normal işlemleri gösteriyor.
+
+815
+02:19:31,028 --> 02:19:42,788
+tutarı ve işlem zamanı gibi kolonlar da var burada. Bu geniş aralıklı değişkenlerin model baskın etkisini azaltmak için bir normalizasyon işlemi uygulanıyor. Daha önce
+
+816
+02:19:43,443 --> 02:19:59,844
+Daha sonra veri seti ikiye bölünüyor. Train ve test şeklinde. Makale içerisinde korrelasyon analizi kısmından da bahsediliyor. Model karmaşıklığını azaltmak amacıyla öz nitelikler korrelasyon analizi ile de değerlendiriliyor. Yüksek korrelasyona sahip ve
+
+817
+02:20:00,000 --> 02:20:05,720
+veya daha düşük bilgi taşıyan değişkenlerin, özellikle lojistik, regresyon, neural network gibi modellerde,
+
+818
+02:20:06,119 --> 02:20:14,420
+genelleme performansını olumsuz etkileyebileceği de göz önüne bulundurularak, bazı özetlilikler veri listesinden çıkarılabilir şeklinde bir tavsiyede bulunuyor.
+
+819
+02:20:15,059 --> 02:20:17,700
+Ama bu süreç biraz değerlendirme olarak görülüyor.
+
+820
+02:20:17,700 --> 02:20:23,000
+Elenen veya elenmeyen kullanılara dair çok net veya kesin ifadeler yok.
+
+821
+02:20:23,380 --> 02:20:26,420
+Bu birazcık tavsiye neticesinde de bahsedilmiş olabilir.
+
+822
+02:20:26,720 --> 02:20:27,700
+Tam o kısımda bir...
+
+823
+02:20:28,000 --> 02:20:49,860
+kesinlik söz konusu değil. Model performansını arttırmak ve aşırı öğrenmeyi azaltmak amacıyla da grid search, çapraz doğrulama gibi yöntemler kullanılıyor. Random forest modeli için ağaç sayısı, maksimum, derinlik, minimum, yaprak örnek sayısı gibi temel hiperparametre optimizasyonu yapılıyor.
+
+824
+02:20:51,219 --> 02:21:03,279
+Sonuçta makaledeki çalışmanın elde ettiği bulgulara bakarsak, Random Forest modeli tüm modeller arasında açıkça en yüksek performans sergilediğini görebiliyoruz.
+
+825
+02:21:03,279 --> 02:21:16,939
+Bu sonuç makalede de vurgulandığı üzere, ensembl tabanlı yöntemlerin son derece dengesiz veri setinde o dolandırıcılığı yakalama oranını arttırdığını hem de false pozitifliğe sınırladığını görebiliyoruz.
+
+826
+02:21:19,219 --> 02:21:20,319
+Karar ağacı modelleri.
+
+827
+02:21:20,979 --> 02:21:30,059
+Nispeten yüksek doğruluk değerlerine ulaşsa da, recall ve FP score açısından Random Forest'ın biraz daha gerisinde kaldığını görüyoruz.
+
+828
+02:21:30,500 --> 02:21:37,039
+Bu durum aslında az önce bahsettiğim gibi, küresi doğruluğunun tek başına yeterli bir metrik olmadığını da bize göstermiş oluyor.
+
+829
+02:21:38,059 --> 02:21:44,119
+Neural Network modeli ise dengeli bir Precision Recall değeriyle güçlü bir alternatif de sunuyor.
+
+830
+02:21:44,119 --> 02:21:48,979
+Ama hesaplama maliyeti, model karmaşıklığı da göz önünde bulundurduğumuz...
+
+831
+02:21:48,979 --> 02:21:56,819
+O zaman Random Forest modeli hem performans hem de maliyet açısından bize daha uygun, daha erişilebilir olarak seçiliyor.
+
+832
+02:21:58,100 --> 02:22:03,220
+Şimdi bunun üzerine ben de makaledeki bu çalışmayı simüle etmeye çalıştım.
+
+833
+02:22:03,220 --> 02:22:07,060
+Elde ettiğim sonuçlar da sağdaki tablo şeklinde.
+
+834
+02:22:07,060 --> 02:22:14,500
+Şimdi sonuçlara baktığım zaman makaledeki raporlanan performans metrikleriyle genel eğilim açısına aslında uyumlu.
+
+835
+02:22:14,500 --> 02:22:18,659
+Metrik düzey, değerleri düzeyinde bazı farklılıklar tabii gösteriyor.
+
+836
+02:22:18,659 --> 02:22:24,020
+Her iki çalışmada da Random Forest modeli en başarılı yöntem olarak öne çıkıyor.
+
+837
+02:22:26,100 --> 02:22:34,100
+Bu arada, işte, decision tree ve logistik regresyon modelleri diğerlerine görece biraz daha düşük performans sergiliyor.
+
+838
+02:22:34,100 --> 02:22:44,100
+Bu durum model bazı sıralamayı aslında makale tutarlı olduğunu bize gösteriyor ama makale içerisinde şöyle bilgiler pek sınırları çizilmemiş.
+
+839
+02:22:44,100 --> 02:22:53,100
+Yani öz nitelik eleme adına ne yapıldığı, işte modellerin metrik değerleriyle ilgili detay bilgiler tanımlanmamış ya da işte daha genel bilgiler üzerinden ilerlenmiş.
+
+840
+02:22:54,100 --> 02:23:01,360
+Ben de bu genel standart modellerde kullanılan değerlerle açıkçası bu sonuçları elde ettim.
+
+841
+02:23:01,360 --> 02:23:09,639
+İşte hiperparametre optimizasyonu gibi faktörler de aslında bu tarz sapmalara yol açabiliyor.
+
+842
+02:23:11,924 --> 02:23:24,004
+Son olarak da şöyle bir çalışma da yapılmış. Makalede geliştirilen bu dolandırıcılık tespit modeli gerçek zamanlı kullanım hedefiyle web tabanlı bir yapıya entegre edilmiş.
+
+843
+02:23:24,684 --> 02:23:29,744
+Eğitilen model işte files tabanlı bir web uygulaması üzerinden erişilebilir hale getirilmiş.
+
+844
+02:23:30,283 --> 02:23:39,184
+Bu arayüz sayesinde kullanıcılar işlem verilerini sisteme yükleyerek işte dolandırıcılık analizini hızlı ve kolay bir şekilde gerçekleştirilebilmesini sağlamışlar.
+
+845
+02:23:39,924 --> 02:23:46,404
+Web integrasyonu da aslında pratik uygulanabilirlik açısından finansal sistemlere de uyumlu olduğunu bize belirtmişler.
+
+846
+02:23:47,283 --> 02:23:55,164
+Gelecek çalışmalar içerisinde derin öğrenme modellerini siteme dahil edilmesiyle performansın daha da artabileceğini öngörüyorlar.
+
+847
+02:23:56,524 --> 02:24:01,544
+Genel olarak benim de bahsedeceklerim bu şekilde hocam. Teşekkür ederim.
+
+848
+02:24:03,764 --> 02:24:05,684
+Teşekkürler [öğrenci].
+
+849
+02:24:06,175 --> 02:24:10,135
+sunumun için seni de alkışlıyoruz.
+
+850
+02:24:10,655 --> 02:24:11,216
+Teşekkür ederim.
+
+851
+02:24:11,855 --> 02:24:16,195
+Ve soru var mı diye hemen sınıfa soruyorum.
+
+852
+02:24:18,876 --> 02:24:20,655
+Kimse soru sormuyor.
+
+853
+02:24:20,835 --> 02:24:22,975
+Peki, şunu soracağım [öğrenci].
+
+854
+02:24:23,716 --> 02:24:26,695
+Veriyi dengeye getirmek için SMOT kullanıyorsun ya.
+
+855
+02:24:26,695 --> 02:24:28,695
+Orada...
+
+856
+02:24:29,043 --> 02:24:37,543
+İki yöntemi bir arada kullanmak, yani biraz normal işlemleri undersampling ile azaltmak.
+
+857
+02:24:37,940 --> 02:24:45,119
+Ve sonra da SMOD'la diğer sınıfı biraz arttırmak gibi yapıp bir orta noktada buluşturmak.
+
+858
+02:24:45,239 --> 02:24:49,399
+Yani birebir aynı sayıda örnek üretmek bana çok mantıklı gelmiyor.
+
+859
+02:24:49,940 --> 02:24:57,299
+Onu hiç denedin mi? Yani normal örneklerin tamamını hep kullanıyor musun?
+
+860
+02:24:59,100 --> 02:25:01,500
+Normal şey, eğitim tarafı mı mı hocam?
+
+861
+02:25:01,560 --> 02:25:01,799
+Evet.
+
+862
+02:25:02,739 --> 02:25:17,319
+Ya şöyle, yani benim yaptığım çalışmada, dediğim gibi SMOK'ta tamamen eşitleyip denemiştim hocam, şey olarak denememiştim. Ama o zaman ben yine başı şeyin düşeceğini düşünüyorum. Çünkü tespit et, yani modelin öğrenmesi için biraz, şey, data sayısı çok az olduğu için Fırat işlemlerde.
+
+863
+02:25:17,779 --> 02:25:28,639
+Biliyorum, biliyorum öyle. Zaten söylemek istediğim şu, normal işlemlerde undersampling ile orayı biraz azaltalım. Mesela yüzde ellisini alalım.
+
+864
+02:25:29,332 --> 02:25:31,231
+Hı hı. Normallerin.
+
+865
+02:25:31,231 --> 02:25:41,452
+Hı hı. Fraudları da, onun seviyesine, yüzde yüz aynı miktarda olmasın da, ne bileyim onun yüzde altmışı kadar olsun mesela.
+
+866
+02:25:41,452 --> 02:25:42,292
+Hı hı. Anladım.
+
+867
+02:25:42,292 --> 02:25:45,252
+Gibi. Hı hı. Denememiştim hocam.
+
+868
+02:25:45,252 --> 02:25:49,531
+Böyle bir şeyi denesen nasıl olur acaba, bir bakabilirsin belki.
+
+869
+02:25:49,531 --> 02:25:50,332
+Tamam.
+
+870
+02:25:50,332 --> 02:25:52,531
+Diye düşündüm. Teşekkürler.
+
+871
+02:25:52,531 --> 02:25:53,851
+Teşekkür ederim.
+
+872
+02:25:54,739 --> 02:25:57,139
+Peki, sırada [öğrenci] var.
+
+873
+02:25:59,000 --> 02:26:02,540
+Merhaba hocam, sesim ve görüntüm geliyor mu şu anda emin değilim ama.
+
+874
+02:26:02,540 --> 02:26:03,739
+Evet, geliyor.
+
+875
+02:26:04,200 --> 02:26:07,020
+Çıkı da paylaşımı sonlandırabilir misin?
+
+876
+02:26:07,799 --> 02:26:08,540
+Tamam.
+
+877
+02:26:11,680 --> 02:26:14,219
+Şu an geliyorum ben.
+
+878
+02:26:15,479 --> 02:26:16,200
+Zaten bilmedi.
+
+879
+02:26:17,811 --> 02:26:22,432
+Ekran göründü. Sesin yalnız kesikli gelmeye başladı bu arada.
+
+880
+02:26:24,512 --> 02:26:30,572
+Şu an daha iyi mi? Bilemedim ama. Kötüyse telefon internetime bağlanacağım.
+
+881
+02:26:31,347 --> 02:26:35,927
+Biraz devam edelim bakalım. Olmadı kamerayı kapatırız.
+
+882
+02:26:36,288 --> 02:26:40,047
+Tamam, bir sıkıntı olursa uyarırsınız. Ben anında aksiyon almaya çalışırım.
+
+883
+02:26:40,628 --> 02:26:42,207
+Evet, sizi dinliyoruz. Buyurun.
+
+884
+02:26:42,367 --> 02:26:45,887
+Merhabalar hocam, ben [öğrenci]. [kişisel bilgi]
+
+885
+02:26:46,047 --> 02:26:49,808
+Bugün Amazon Yorum Veri Seti üzerinde veri madenciliği yaptım.
+
+886
+02:26:49,867 --> 02:26:52,528
+Birazcık daha onun üzerine çalıştığım bir şey oldu.
+
+887
+02:26:53,247 --> 02:26:56,108
+Makalemin ismi Suspicion Transactionleri bulunmaydı aslında.
+
+888
+02:26:56,108 --> 02:26:59,347
+Amazon Yorum Veri Seti üzerinden ilerliyordu. Neden bu kadar?
+
+889
+02:26:59,347 --> 02:27:19,567
+Test konumda da behavioral patternler üzerine, yani aslında davranış patternlerine baktığım bir şey vardı, araştırmam vardı. O yüzden birazcık da pattern detection, pattern recognition üzerine çalışmak istemiştim. Bundan dolayı da aslında insanların davranışlarını incelemek istediğim bir makale seçtim özellikle diyebilirim.
+
+890
+02:27:20,115 --> 02:27:25,695
+Makalede teki giriş kısmı, yani bugünkü sunumda bu şekilde bir akış olacak.
+
+891
+02:27:25,835 --> 02:27:30,835
+Giriş de referans çalışmadan, yani makalede yapılan çalışma ve neler yapılmış, ondan bahsedeceğim.
+
+892
+02:27:30,835 --> 02:27:37,775
+Veri setinin incelemesi, benim uyguladığım metodoloji, sonuçlar ve tartışma ve kısmı sonuç olarak bahsedeceğim.
+
+893
+02:27:38,495 --> 02:27:41,955
+Bu makalede Amazon'un veri setini kullanıyorlardı, yorum veri setini.
+
+894
+02:27:42,036 --> 02:27:46,396
+Burada işte pen puan alanı vardı, aynı zamanda da yorum kısmı vardı.
+
+895
+02:27:48,115 --> 02:28:14,515
+İşte aldım, ürün güzel, kötü vesaire şeklinde yorumların yapıldığı bir kısım var Amazon'daki. Bu çalışma neden önemli aslında? Burada şunu yapmak istiyor. Markalara olan güven aslında yoruma bakılarak, bizde de şu an bir ürün almak istediğimiz zaman yorumlara bakıyoruz. Yorumlar sonrasında diyoruz ki evet bunu alabilirim ya da alamam diye aslında bir karar veriyorsun. Bazı yorumlar öyle ki diyorsunuz ki bu bot yazmış, bu benim için sahte bir yorum deyip yorumlar yaptığımız bir kısım var.
+
+896
+02:28:16,115 --> 02:28:17,916
+Marketing dergisinin bir makalesi.
+
+897
+02:28:18,256 --> 02:28:22,536
+Yani esas çalışma aslında teknik tarafa odaklanmak değil de daha çok şeye bakıyor.
+
+898
+02:28:23,655 --> 02:28:32,655
+Yapılan yorumların tespiti ve bunun aslında marka güvenine olan kazancı ve kaybı üzerine aslında yanılaştığını düşünebiliriz.
+
+899
+02:28:32,995 --> 02:28:35,435
+O yüzden teknik taraftan birazcık eksik bir makale.
+
+900
+02:28:35,736 --> 02:28:37,576
+Yani çünkü o tarafa odaklanmamışlar tamamen.
+
+901
+02:28:38,260 --> 02:28:56,620
+Burada 11 taneydi sanırım. Fazlaca bir kategorisi vardı aslında. Bu kategoriler ürünlerin farklı farklı alanlarda olduğunu gösteriyor. Ben burada 3 tane kategori kullandım. Müzik enstrümanları, kitap ve grocery olması lazım.
+
+902
+02:28:57,152 --> 02:29:13,092
+grocery and government food denilen üç tane kategoriyi seçtim. Tamamen random seçtim bunu. Birazcık daha reviewları, yorumları yüksek olan ve öznerliği birazcık da olabilecek daha human prediction'a ihtiyaç duyan aslında şeyleri seçmeye çalıştım gibi düşünebilirsiniz.
+
+903
+02:29:13,092 --> 02:29:25,152
+İçindeki formatta da aslında puanı, oradaki kullanıcının verified olup olmaması, kullanıcının yorum yapanın ismi ve metnini geçiyor gibi düşünebilirsiniz.
+
+904
+02:29:25,152 --> 02:29:36,292
+Düşünebilirsiniz. Bu veri setinde şöyle bir sıkıntı var aslında. Okuduğum makalede de bu aynı şekilde sorundu. Yani sorun değil de çözme şekli farklıydı aslında. Farklı metotlar uygulanabilir tabii ki de bunda ama.
+
+905
+02:29:37,452 --> 02:29:48,312
+Burada hani makalenin ismi Suspicious Transaction. Ben ilk seçerken aslında detayına o kadar bakmadım. Hani veri seti içinde Suspicious olanları yani şüpheli olanları markladığını yani işaretlediğini düşünmüştüm.
+
+906
+02:29:48,312 --> 02:29:53,152
+Ama aslında bunu yapmamış. Şöyle bir metot işlemiş orada. Kendisi belli bir kümeyi alıyor.
+
+907
+02:29:53,152 --> 02:29:59,932
+O kümeyi inceliyor ve diyor ki evet bu şüpheli olabilir, bu olmayabilir diye aslında tamamen human production'ın aslında kendisi.
+
+908
+02:30:00,595 --> 02:30:11,775
+İşte %1 oyalan bir veriyi tamamen kendisi markalıyor. Devamında da bunu işte binary regression'a sokarak diyor ki sen de gerisini buna göre tahminle dediği bir yapı var aslında.
+
+909
+02:30:12,256 --> 02:30:20,675
+Yani bu veri setinde bizim gerçekten bu yorum sahte mi değil mi diye bir yorum yapabildiğimiz bir alanımız yok gibi düşünebilirsiniz.
+
+910
+02:30:20,675 --> 02:30:22,675
+Yani tamamen bizim...
+
+911
+02:30:23,219 --> 02:30:27,779
+Kendi yorumumuzda yapılacağımız, yani aslında top 10 skorları vardır.
+
+912
+02:30:27,959 --> 02:30:33,279
+1, 2, 3, 1, 5, 10 diye giden, onların bile hesabının yapılmadığı bir makale gibi düşünebilirsiniz.
+
+913
+02:30:33,659 --> 02:30:35,399
+Tamamen yoruma dayalı aslında.
+
+914
+02:30:36,500 --> 02:30:41,539
+O yüzden bir skor hesaplaması çok da şey olmuyor, yapılamıyor gibi düşünebilirsiniz.
+
+915
+02:30:42,059 --> 02:30:44,479
+Burada ilk seçtiğim kategorim müzik enstrümanlarıydı.
+
+916
+02:30:44,479 --> 02:30:49,479
+Buradaki işte yıllara ait, 2004 yılından itibaren 2018'e kadar ortalama...
+
+917
+02:30:50,324 --> 02:31:03,564
+Ne kadar pozitif ve negatif yorum geldiğine baktım. Çünkü makalede de aynısına bakmıştı. Bir yorumun şüpheli olup olmadığına aslında ilk başta bir santiment analiz yapılarak bakılması lazım diyordu. Ben de o yüzden bir analizine baktım.
+
+918
+02:31:04,244 --> 02:31:13,484
+Burada LLM model kullanarak aslında, pardon, Scentus Transformation kullanarak aslında şeye baktım.
+
+919
+02:31:13,544 --> 02:31:17,864
+Yani direkt birden sıfıra kadar pozitif mi negatif mi oranına baktığım bir yapı vardı.
+
+920
+02:31:18,224 --> 02:31:22,444
+Burada gördüğünüz gibi bir oranı, en pozitif oranlar sıfır negatifliğe yaklaşıyor.
+
+921
+02:31:22,524 --> 02:31:23,684
+Burada da ortalaması var aslında.
+
+922
+02:31:24,104 --> 02:31:27,664
+Yıl bazında ne kadar çok ortalama oran geldiğini görüyoruz.
+
+923
+02:31:27,664 --> 02:31:29,664
+Aynı şekilde burada da...
+
+924
+02:31:29,907 --> 02:31:41,147
+Puanları verdim. Ortalama toplamda değerlerde ne kadar fazla beş puan var, ne kadar düşük puan var. Yani aslında nerede bir yığımı olduğunu daha anlamak için yaptım.
+
+925
+02:31:41,147 --> 02:31:57,907
+Bunu yapmamın amacı da şu, devamında ben bunu prediction ederken belli bir yerde kümeleme kalmasın istiyordum. Çünkü makaleyi okurken ilk şey diyordu, işte üç kelimeden, üç harften, pardon, üç harften azsa bunu direkt ele. Yani çok kısa bir yorumu yaptıysa bu aslında bir yorum değildir, hatadır gibi düşünüyorum.
+
+926
+02:31:57,907 --> 02:32:06,608
+Mesela bunları direkt elemişti. Ben de o yüzden bir anlamak istedim. Hani nerede nasıl bir hareketlilik var aslında diye ilk başta veriyi analiz etmeye çalıştım.
+
+927
+02:32:07,108 --> 02:32:09,644
+Sonrasında grocery yani market kısmına baktığım zaman...
+
+928
+02:32:09,811 --> 02:32:32,912
+Burada da daha fazla veri vardı. Gene aynı şekilde ilk yıllardaki yorumların daha olumlu olduğunun sonraki yıllarda daha negatif yorumlara evrildiğini gördüm. Gene burada da görüldüğü üzere yani 5 sayısı yani en yüksek puan verme oranı daha yüksek geliyor aslında. Yani her şeyde bölümde aslında departmanda birazcık daha yüksek puan verme oranı yükseliyor gibi düşünebiliriz.
+
+929
+02:32:37,811 --> 02:33:04,671
+sayısı çok yüksekti ve burada gerçekten farklı bir trend oluştu. Yani diğerlerinde normalde daha böyle gittikçe negatifin artan bir yorumu varken burada tam tersine yıllara baktığın zaman hani daha çok pozitifin arttığı ama hiçbir zaman bir seviyesine ulaşılmadı. Yani tam manasıyla pozitif bir yorumun olmadığı bir yapı var. Gene tabii ki de beş oranı yüksek ama burada da. Burada bakmamız gereken şey şu aslında. Hani neden ben bundan bahsetmek istiyorum?
+
+930
+02:33:05,811 --> 02:33:16,811
+Sonuçlarda da bu dikkatimizi çekecek. Boks'un birazcık daha şüpheli bulma ihtimali diğerlerine göre daha düşük çıkıyor. Yani ben ilk başta kendim bir kümeleme yapıp devamında bunu...
+
+931
+02:33:17,695 --> 02:33:44,935
+Bir daha modelde incelediğimde hani birazcık daha düşük çıkacak. Çünkü buks kategorisi birazcık daha öznel bir şey. Yani atıyorum bir müzik enstrümanı alırsın, atıyorum gitarın telli kalitelidir ve uzun yollarda oynar. İşte onun belli bir materyali vardır. Buna göre yorum yapabilirsin ama buksda böyle bir şey yok. Yani bir kitabı sevip sevmemek için kitabın kapağına bakıp da hani demezsin kitabın kapağı kalındı ben bunu sevdim demezsin. Yani kitabın okursun ve kitabı beğenip beğenmediğini söylersin. Tamamen öznel bir yapım var.
+
+932
+02:33:45,695 --> 02:33:48,175
+Burada aslında birazcık da analiz daha düşük yorumlar veriyor.
+
+933
+02:33:48,275 --> 02:33:54,576
+Çünkü burada direkt olarak bir yorum yapılması, bir sentiment analizi yapılması da aslında daha zor olan bir yapısı var gibi düşünebiliriz.
+
+934
+02:33:55,123 --> 02:34:09,923
+Genel olarak puan dağılımlarına baktığım zaman da zaten 5'te daha yüksek olduğunu her bir kategori içerisinde de ama books da daha fazla count bazlı olduğu için burada books'un daha fazla örneği olduğunda görmüş oluyoruz aslında gibi düşünebilirsiniz.
+
+935
+02:34:21,780 --> 02:34:31,340
+Doğruluk ya da yanlışlık durumu olduğu genel olan, hemfikir olan konularda yani topiklerde aslında daha trend analizinin birbirine yakın olduğunu görüyoruz burada da.
+
+936
+02:34:32,275 --> 02:34:44,636
+Burada ilk başta logistik regresyonu inceledim. Burada şöyle yapmıştı makalede de. Kendisi işte belli bir kümeyi alıyor. O kümeyi aldıktan sonra binary'yi modele atıp devamında işte kendisinin bunu işaretlemesini istiyor.
+
+937
+02:34:45,036 --> 02:34:52,396
+Sonrasında bunu işte train ve test diye bölüp daha sonra buna karşılık da işte ekürüs hesaplaması yapıyor. Yani burada kesin bir sonuç yok aslında.
+
+938
+02:34:52,396 --> 02:35:00,275
+Tamamen binary regresyonu yapmış ve burada baktığımız zaman aslında 91.09 gibi bir oran çıkıyor. Bu logistik regresyon tek bir model kullanan.
+
+939
+02:35:00,275 --> 02:35:05,675
+makalenin kendisi kullanmıştı. Tek bir modelde bunu bu şekilde yapabiliriz şeklinde bir yorum yapmıştı.
+
+940
+02:35:06,420 --> 02:35:25,880
+Burada gayet yüksek bir oran elde etmiş. Aynı şekilde market kategorisinde 90 üstünde 90.77 çıktığını görüyoruz. Ama books'a geldiğimiz zaman bu 96'ına düşüyor. Az önce de açıkladığım gibi aslında şeyde, yani tamamen oradaki öznerliğin daha yüksek olmasından kaynaklı burada books kategorisinin rekreasyonu daha düşük çıkıyor.
+
+941
+02:35:25,880 --> 02:35:34,420
+Şimdi diyeceksiniz ki sen burada makalenin yaptıklarını yapmışsın, sen ne farklı yapmaya çalıştın, ne ispat ediyoruz biz burada diye soracaksınız. Ben de şunu yapmaya çalıştım aslında.
+
+942
+02:35:34,420 --> 02:35:38,200
+Aslında, [öğrenci] arkadaşımız da bahsetmişti zaten derste.
+
+943
+02:35:38,279 --> 02:35:44,880
+Bizim başka derslerden de öğrendiğim bilgileri de kullanarak burada Assemble model kullanıp aynı zamanda LLM kullanmak istedim.
+
+944
+02:35:45,239 --> 02:35:46,819
+İkisiyle bir kıyaslama yapmak istedim.
+
+945
+02:35:47,200 --> 02:35:50,319
+Burada net bir ekürüs yok çünkü benim burada kesin olan bir sonucum yok.
+
+946
+02:35:50,819 --> 02:35:53,279
+Birazdan yorumları göstereceğim zaten İngilizce yorumları.
+
+947
+02:35:53,279 --> 02:35:56,959
+Hani şey diyeceksiniz, evet bu şüpheli de olabilir, olmayı da bilir.
+
+948
+02:35:57,700 --> 02:36:00,059
+Kişisel bir şey gibi aslında yorumlandığından dolayı.
+
+949
+02:36:00,159 --> 02:36:02,340
+Tek bir doğruluğu olmayan bir yapısı.
+
+950
+02:36:02,420 --> 02:36:10,420
+Burada eksik veriler varsa eğer onları temizledim. Aynı kullanıcı atıyorum birden fazla yorum attıysa, aynı şeyi iki kere yaptıysa onları temizledim.
+
+951
+02:36:11,159 --> 02:36:23,659
+Onun dışında da bu kısık kategorisinde çok fazla veri vardı. O yüzden de Reservoir Stampling yaptım. Bu metot şeyden farklı yani. Normalde ilk 10.000'i almıyor ama kendisi akış esnasında yani birazında.
+
+952
+02:36:24,659 --> 02:36:29,360
+Streaming yapıyor ve o streaming akışı esnasında seçtiği için aslında dengeli bir dağılımı yapıyor.
+
+953
+02:36:29,799 --> 02:36:38,439
+Bu kategorisinin çok fazla verisi olduğu için hatırlayamıyorum şu anda 10 milyon muydu neydi? Baya bir kaydı var. Ondan dolayı aslında bunu yapmam gerekti.
+
+954
+02:36:38,759 --> 02:36:40,579
+Ama diğer kategorileri tam veri olarak aldım.
+
+955
+02:36:41,108 --> 02:36:53,988
+Onun dışında da makalede bahsettiğim gibi onlar kendisinin başta belli bir kümeyi marklıyordu yani işaretliyordu ve devamında binary modelde bunu devamındaki bütün sentence'ları aslında şüpheli mi değil mi diye eşliyordu.
+
+956
+02:37:00,852 --> 02:37:28,852
+Şey yapmaya çalıştım. Şüphelimi, pardon, yanlış söyledim. Burada şeyi atladım, kusura bakmayın hocam. Makalede şey vardı bir de. Aynı ürünler için birden fazla işlem yapmayalım diyordu. Orada da asini eşleştirmesi diye bir şey var. Bu asin dediğimiz şey aslında globalde bütün ürünleri, yani her bir ürünün aslında tek bir ID'si var. Bu barkodda yazan, yani bizim normal barkod değil de aslında bir ürünün global bir ID'si vardır. Dünyanın neresine giderseniz gidin, o ID...
+
+957
+02:37:28,852 --> 02:37:34,792
+Bütün dünyada aynıdır ve bununla size aynı ürün olduğuna eşleyebilirsiniz aslında.
+
+958
+02:37:35,412 --> 02:37:37,952
+Burada makalede aynı, asıl eşleştirmesi yapmıştı.
+
+959
+02:37:38,092 --> 02:37:41,972
+Yani şey, aynı ürünler varsa bunları grupla ve ona göre hesapla diyordu.
+
+960
+02:37:43,012 --> 02:37:44,731
+Ben de burada aslında şey yaptım.
+
+961
+02:37:44,731 --> 02:37:46,272
+Aynı ürün mesela atıyorum.
+
+962
+02:37:47,123 --> 02:38:15,123
+Şu an aklıma gelmedi. Mesela gitar var mesela. İki gitarını da mesela atıyorum. Ahşap gitar diye atıyorum. Böyle bir ürün var. İkisi de yani ahşap gitarsa ben burada kosyon similority ile aslında bir nevi bu grupları da birleştirip bu şekilde hesap yapmaya çalışıyorum. Yani bir küme oluşturup kendimi gruplayıp bu grup altındakileri kendi içinde inceledim. Yani birazcık daha kümeleri büyük gruplar haline almış oldum. Onun dışında da şüpheli yorumları da ben burada Ziraşat modelle aslında yaptım.
+
+963
+02:38:15,123 --> 02:38:23,263
+Facebook'un BART modeliyle, BART large modeliyle aslında suspicious'un yani şüpheli mi değil mi diye aslında eşleştirdiğim bir şey oldu.
+
+964
+02:38:23,523 --> 02:38:30,963
+Aynı zamanda burada bir de Assemble model uyguladım. Assemble modelden de kastım şu, makalede zaten Logistics tek başına kullanmıştı.
+
+965
+02:38:30,963 --> 02:38:34,963
+Ama ben burada Logistics Regression, Multinominal, Naive Bayes ve Linear...
+
+966
+02:38:36,211 --> 02:38:50,671
+vektör ile kullanarak aslında, support vektör ile şey yapmaya çalıştım. Bir jüri oluşturup, mesela atıyorum, rolojistik regresyon o sentence için bir diyorsa, multinamonal naiv de bir diyorsa ve linear sıfır diyorsa bu birdir gibi aslında.
+
+967
+02:38:51,131 --> 02:38:57,051
+Hepsinin eşit olarak geldi ama en yüksek, yani hepsinin eşit olarak değerlere katıldı yani.
+
+968
+02:38:57,440 --> 02:39:16,299
+Nasıl diyeyim? Dengeli olarak katıldı. Yani birinin daha önceliği yok. Dengeli olarak gelip bir jüri ortalama, jüri kararıyla aslında şüpheli mi değil mi dediği bir de yönteme kıyasladım. Yani aslında burada normalde makarının yaptığı lojistiğin üzerine hem Assemble test ettim hem de LLM modelle test ettim gibi düşünebilirsiniz.
+
+969
+02:39:17,203 --> 02:39:35,024
+Burada Asamble modelin çıktısını görüyorsunuz. 91.05. Diğerinde de bu arada çok yakındı. 91.09'du. Yani oranlar çok yakın birbirine aslında. Şurada 90.66 çıktı. Aynı şekilde lojistikli, yani makalenin lojistiğinde 90.77.
+
+970
+02:39:38,772 --> 02:39:48,392
+87.75, Assemble modeli için şeydeyse de, lojistik regresyondaysa da 87.81. Yani oranlar aslında bakıldığında birbirine çok yakın çıktı.
+
+971
+02:39:48,812 --> 02:39:55,912
+Şey diyeceksiniz, neden o zaman Assemble yapalım ki? Tek bir modelde binary model işimi görüyorsa, neden üstüne ben bir şey katıyorum diyeceksiniz.
+
+972
+02:39:56,292 --> 02:39:58,912
+Haklısınız, performansa soruna gerek yok.
+
+973
+02:40:00,000 --> 02:40:14,420
+Tamamında eğer daha geniş, nasıl diyeyim, daha büyük veri setlerinde, daha labellı bir, yani daha ne bileyim karmaşık bir veri seti varsa, daha böyle kirli bir veri seti varsa aslında Assemble model daha verimli sonuçlar elde edecektir.
+
+974
+02:40:14,420 --> 02:40:24,599
+Yani çünkü Assemble model zaten lojistiğin de kat sayısını alıyor ama aynı zamanda diğer modellerde baktığı için aslında jüri kararıyla ortak bir değer kararı veriyor gibi düşünebilirsiniz.
+
+975
+02:40:26,388 --> 02:40:54,388
+Burada ama dediğim gibi kendilerine küçük bir küme verip devamında ben predik ediyorum. Yani aslında kendi içinde bunu bir daha anlamaya çalışıyor gibi düşünebilirsiniz. Bu verimli bir şey mi? Değil aslında bakıldığınız zaman. Çünkü bütün hepsi aslında label değil. Kesin olarak ben bunu 87 oranında doğruluk verdiğini söyleyemiyorum. Bunun için bir insan aslında human factorinin devreye girmesi lazım. Sunumuna en sonuna zaten örnek koydum. O örneklere bakarak aslında gerçekten iyi mi değil mi diye yorum birlikte yaparız.
+
+976
+02:40:54,388 --> 02:40:56,208
+Aslında diye düşündüm.
+
+977
+02:40:57,488 --> 02:41:01,848
+Aynı zamanda burada elelen modelden de bahsetmek istiyorum ama ilk başta çıkan sonuçları göstermek istiyorum.
+
+978
+02:41:01,848 --> 02:41:04,568
+Mesela musical instrumentlarda mesela şey vardı.
+
+979
+02:41:06,708 --> 02:41:15,288
+Bunların şüpheli olup olmadığına karar verirken mesela şey demiş, doesn't work and the seller won't accept a return.
+
+980
+02:41:15,388 --> 02:41:23,587
+Mesela bu tarz böyle daha kısa cümleleri aslında, mesela dump demiş direkt mesela buksda, hiçbir şey dememiş, sadece dump deyip puan verip geçmiş mesela.
+
+981
+02:41:24,388 --> 02:41:27,888
+Gibi aslında daha kısa ve anlamlı terimler mesela.
+
+982
+02:41:34,708 --> 02:41:37,587
+Bunu şüpheli değil kategorisine korumaya daha eğilimli.
+
+983
+02:41:37,868 --> 02:41:46,448
+Ama daha kısa ve daha genel gündelik kelimeler kullanıyorsa bunu aslında şüpheliye koyma ihtimali daha çok artıyor gibi düşünebilirsiniz aslında.
+
+984
+02:41:47,219 --> 02:42:04,819
+Gibi bir durum var. Burada da gördüğü gibi işte dump mesela yorumunu şüpheli olarak labellamış. Aynı zamanda LLM modeline de baktığım zaman da gene books da dump'ı LLM modelde şüpheli olarak koymuş. Onun dışında mesela güvenilir aday ne var o zaman dediğimizde? Daha uzun mesela.
+
+985
+02:42:15,219 --> 02:42:43,180
+Bir yorum yaptığı, daha anlamlı olan şeyleri daha çok güvenilir adam. Yani bu şüpheli değil deme eğilimine sahip olduğunu görüyoruz. Burada net bir şekilde eküristi vermek aslında doğru değil. Çünkü benim elimde verim setimde bu şüpheli ya da bu şüpheli değil diyen bir şey yok. Ben şu an birlikte hani isterseniz şey de yapabiliriz mi? Evet aslında dump biraz şüpheli gibi. Hani neden sadece dump deyip geçebilirsin? Ya da adam yorum yapmak istemiyordur. Sinirlenmiştir, yazıp geçmiştir. Bu da olabilir tabii ki de ama.
+
+986
+02:42:43,219 --> 02:42:53,279
+Burada aslında bakıldığı zaman, genel yorum baktığımız zaman kısa kelimelerin, kısa cümlelerin daha aslında ve negatif olanların daha çok şüpheli işleme girdiğini.
+
+987
+02:42:53,279 --> 02:42:54,279
+Aynı şekilde...
+
+988
+02:42:55,360 --> 02:43:17,780
+Uzun ve terim geçenlerin daha güvenilir aday olduğunu görmüş oluyoruz. Yani bir yorumlara baktığımız zaman aslında bunların etkili olduğunu fark ediyoruz. Anlayış şekilde daha böyle spesifik ve öznel olan konularda, kategorilerde ise aslında bir şüpheli ya da değil kavramının karar verilmesinin çok da rahat olmadığını fark ettik gibi bir durum var aslında.
+
+989
+02:43:19,219 --> 02:43:27,860
+Yani burada işte anlamsal analizlerden daha çok kritik oldu. Aslında benim bahsettiğim şeylerden olduğunu bahsediyor.
+
+990
+02:43:27,920 --> 02:43:32,579
+Gene aynı şekilde de SMB destekli modellerde de yenilikçi bir yaklaşım olarak kullanılabilir.
+
+991
+02:43:32,659 --> 02:43:35,899
+Ama sonuç açısından büyük bir fark yarattı mı maalesef yaratmadı.
+
+992
+02:43:35,979 --> 02:43:40,739
+Ama farklı veri setlerinde farklı sonuçlar elde edebileceğimizi görmüş olduk diye düşünüyorum.
+
+993
+02:43:41,360 --> 02:43:44,739
+Kaynakçılar ve dinlediğiniz için teşekkür ederim. Sorunuz varsa alabilirim.
+
+994
+02:43:47,731 --> 02:43:49,191
+Teşekkürler [öğrenci].
+
+995
+02:43:49,536 --> 02:44:17,536
+Çok hızlı konuşuyorsun. Bravo yani. Baya hızlı anlattın. Şimdi dedin ki, bu şüpheli işlem etiketi veride yoktu. Bunu ben ürettim dedin. Train ettiğin model için. Veriyi sen hazırlıyorsun. Peki yine içinde geçen kelimelerin sayısına ya da toplam kelime sayısına veya geçen kelimelerin türüne bakar mısın?
+
+996
+02:44:17,536 --> 02:44:19,375
+Yaptın mı? Nasıl yaptın?
+
+997
+02:44:19,835 --> 02:44:45,536
+Şöyle yaptım hocam. Yani şimdi iki tane burada şey denedim. Bir SMB model denedim, bir de LLM model denedim. SMB modelde aslında similarity'ye baktım. Sizin dediğiniz gibi aslında orada. Çünkü binary metodları kullandım. Tamamen burada şurada yazmıştım. Kullandığım üç tane aslında model var binary. Logistic regression, multinomial Bayes ve linear aslında. Burada similaritiesine bakarak aslında aldığım bir yapı var. Bir de LLM'de baktım, denedim. Burada da zero shot'ta. Bu zero shot'ta zaten ben bir şey...
+
+998
+02:44:45,536 --> 02:44:57,655
+Kendisi tamamen pratik etmeye başlıyor. Orada da kendisi aslında tamamen klasifay etti. Sizin de dediğiniz gibi burada similarity aslında binary'de kullandım ama şeyde buna ihtiyaç duymadım zaten LLM modelde.
+
+999
+02:44:57,655 --> 02:45:06,655
+Kendisi zaten ZeroShot'ın anlamı zaten kendisinin bunu tahminlemesiydi. Ben devamında sadece şeye baktım. Gerçekten o iki örnek...
+
+1000
+02:45:06,932 --> 02:45:15,892
+İkisinde de geçiyor mu? Hani bazı örneklere baktım. Mesela dump için ikisi de şey demiş. Evet, ikisi de şüpheli demişti mesela. İkisine de baktığım zaman ikisi de dump'u şüpheli olarak almıştı.
+
+1001
+02:45:15,892 --> 02:45:27,572
+Ha bende buradan, bu arada makalada şey demişti hani bir tane human predictor gelsin ve ben yorum yani kendisi de şey demişti en sonunda. Ben gelip devamında baktım. Gerçekten bu şüpheli mi değil mi diye demişti.
+
+1002
+02:45:27,872 --> 02:45:34,892
+Ben de aynısını uyguladım aslında. Geldim baktım abi ikisinde de dump var mı? Evet, okey ikisinde de dump varsa demek ki benim modellerim...
+
+1003
+02:45:34,932 --> 02:45:35,852
+Bu konuda bir kese içinde kullanılabilir.
+
+1004
+02:45:36,500 --> 02:45:55,860
+Peki ben neden LLM gibi büyük model kullanabileyim burada diyeceksiniz. Burada da şey çıkıyor aslında. Future Extraction yaparken hani biz burada Cosmine Simulity'ye baktım mesela binarilerde ama LLM'de ben hiçbir şey vermedim. Bu da demek oluyor ki LLM'in de demek ki Future Extraction'ı yorumlarda etkili çalışıyor demek oluyor aslında.
+
+1005
+02:45:55,860 --> 02:46:04,500
+Yani Future Extraction'ı çünkü bazı modeller spesifik alanda train edilmiş olabiliyor ama benim kullandığım Facebook'un Bart modelinde, Large modelinde birbirlerine ben...
+
+1006
+02:46:04,500 --> 02:46:13,340
+Benzer olduğunu, benzer sonuçlar elde ettiğini ve feature extraction'da aslında verimli sonuçlar verebildiğini göstermeye çalıştım gibi düşünebilirsiniz.
+
+1007
+02:46:13,460 --> 02:46:21,079
+Çünkü net bir sonuç yok. Tamamen yoruma dayalı bir sonuç çıktısı var aslında. Makalede de öyleydi. Burada da ben de aynı şeyi yapmak istedim.
+
+1008
+02:46:23,219 --> 02:46:24,379
+Cevap oldu mu?
+
+1009
+02:46:24,700 --> 02:46:33,619
+Teşekkür ediyoruz. Evet. Gayet açık oldu. Sunumundan dolayı seni almışlıyoruz. Teşekkür ediyoruz.
+
+1010
+02:46:34,299 --> 02:46:35,200
+Teşekkür ederim hocam.
+
+1011
+02:46:38,020 --> 02:46:45,500
+Eğer hazırsa [öğrenci], hızlı bir şekilde sizi dinleyebiliriz. Yoksa haftaya bırakabiliriz. Hazır mısınız? Ne yapalım?
+
+1012
+02:46:47,539 --> 02:46:48,459
+[öğrenci]?
+
+1013
+02:46:50,420 --> 02:46:54,440
+Hocam, sesim geliyor mu?
+
+1014
+02:46:55,400 --> 02:46:55,800
+Evet.
+
+1015
+02:46:57,220 --> 02:47:04,020
+Yani fark etmez hocam, nasıl isterseniz anlatabilirim. Haftaya da anlatabilirim.
+
+1016
+02:47:04,660 --> 02:47:06,520
+Hazırsa sunumunuz çok hızlı ama.
+
+1017
+02:47:07,252 --> 02:47:08,772
+Tamam hocam.
+
+1018
+02:47:10,291 --> 02:47:15,012
+Zişan çok hızlı konuşuyordu. Öyle hızlı konuşuyorsun. Hadi bakalım.
+
+1019
+02:47:15,391 --> 02:47:17,252
+Hocam yetişmesi için yaptım. Üzgünüm.
+
+1020
+02:47:17,811 --> 02:47:22,811
+Yok güzel de. Yani uyanık tutuyor insana. İyi oluyor.
+
+1021
+02:47:24,452 --> 02:47:28,512
+[kişisel bilgi] Kusura bakmayın o yüzden.
+
+1022
+02:47:40,564 --> 02:47:46,784
+Ekranımı görebiliyor musunuz? Paylaştım.
+
+1023
+02:47:46,784 --> 02:47:50,124
+Bekirası hala gelmedi. İnternet bağlantınız mı zayıf?
+
+1024
+02:47:54,355 --> 02:47:58,135
+Bilmiyorum ki hocam, ekran paylaşımı yapıyorsunuz gibi ama.
+
+1025
+02:47:58,135 --> 02:47:59,355
+İşte görmedik burada ama [öğrenci].
+
+1026
+02:48:00,295 --> 02:48:01,175
+Ben deklamıyorum.
+
+1027
+02:48:03,036 --> 02:48:04,735
+Bir daha şöyle bir deneyeyim.
+
+1028
+02:48:05,395 --> 02:48:06,375
+Tamam, şimdi geldi.
+
+1029
+02:48:07,995 --> 02:48:09,075
+Sanırım biraz yavaş.
+
+1030
+02:48:09,095 --> 02:48:09,295
+Tamam.
+
+1031
+02:48:10,215 --> 02:48:11,335
+İnternet, evet.
+
+1032
+02:48:13,695 --> 02:48:15,275
+Hadi başlayın bakalım, çok hızlı.
+
+1033
+02:48:16,675 --> 02:48:19,895
+Tamam hocam, kendi kapatayım isterseniz.
+
+1034
+02:48:20,036 --> 02:48:20,635
+Çok pardon.
+
+1035
+02:48:26,067 --> 02:48:34,948
+Bu çalışmayı seçme sebebim [kişisel bilgi]
+
+1036
+02:48:35,608 --> 02:48:45,007
+Ama zaman selilerinin kümelenmesi, kümeleme algoritmaları ve deterministik öğrenme konusuna çok yabancıydım.
+
+1037
+02:48:45,807 --> 02:48:49,628
+Açıkçası bu çalışmayı da biraz daha kendimi zorlamak için seçtim.
+
+1038
+02:48:50,567 --> 02:48:54,067
+Deterministik konunun başta şu şekilde deterministik öğrenme...
+
+1039
+02:48:54,067 --> 02:48:58,827
+Dinamik sistemlerin zaman serilerinin kümelenmesi.
+
+1040
+02:49:04,020 --> 02:49:07,840
+Neden ilerlemiyor? Hocam bir saniye, ilerleyemiyorum ama.
+
+1041
+02:49:31,347 --> 02:49:32,728
+Değişmişti sayfa.
+
+1042
+02:49:37,172 --> 02:49:41,712
+Niye böyle oldu? Anlayamadım. Şu an gözüküyor mu?
+
+1043
+02:49:42,492 --> 02:49:43,792
+Evet, görüyoruz.
+
+1044
+02:49:43,792 --> 02:49:44,612
+Tamam.
+
+1045
+02:49:47,032 --> 02:49:47,652
+Evet, tamam.
+
+1046
+02:49:49,152 --> 02:49:59,792
+Şimdi şöyle, bu çalışmada öncelikli olarak 3 boyutlu dinamik sistemler...
+
+1047
+02:50:00,000 --> 02:50:16,399
+sistemlerin davranışları kümeleme algoritmalarıyla sınıflandırılmıştır, yani gruplandırılmıştır. Şöyle bahsetmek gerekirse, burada farklı dinamik sistemlere ait zaman serileri görülmektedir.
+
+1048
+02:50:16,399 --> 02:50:28,000
+Bu zaman serilerindeki görülen bu sinyallerdeki her bir nokta aslında dinamik bir davranışı temsil etmektedir. Burada farklı farklı.
+
+1049
+02:50:28,000 --> 02:50:42,360
+sistemlerin farklı davranış örüntüleri, resimleri görülmektedir. Literatürde ki genel olarak kullanılan kümeleme yöntemlerinde bu sinyallerin daha çok nasıl göründüğüne odaklanılıyor.
+
+1050
+02:50:55,667 --> 02:51:08,347
+Gruplandırma veya kümeleme işlemi yapılmaktadır. Ancak bu çalışmada zaman serilerinin nasıl göründüğünden ziyade ne şekilde, nasıl davrandığına odaklanılmıştır.
+
+1051
+02:51:08,987 --> 02:51:16,227
+Şöyle söyleyebiliriz, bir dinamik sistemin davranışından kastımız nedir? Öncelikli olarak ondan bahsedeyim.
+
+1052
+02:51:23,667 --> 02:51:29,067
+Karametreler değiştikçe öngörülemez şekilde hareket eden sistemleri dinamik sistemler diyoruz.
+
+1053
+02:51:29,827 --> 02:51:43,067
+Gerçek hayatta da çok fazla modeli vardır. Öngörülemeyen sistemler olarak düşündüğümüzde burada başlangıç koşullarına hassas bağımlılık zaman serilerinde de hassasiyeti artırmaktadır.
+
+1054
+02:51:43,067 --> 02:51:50,347
+Yani aynı dinamik davranışa sahip olan iki sistem farklı görünümlere sahip olabilir.
+
+1055
+02:51:51,667 --> 02:51:58,307
+Bir minimum başlangıç koşulu çok farklı dinamik desenler ortaya çıkartabilir.
+
+1056
+02:51:59,007 --> 02:52:09,927
+Bizler ise bu örüntüye sahip olan, bu davranışa sahip olan sistemleri tanımayı amaçlıyoruz bu çalışmada.
+
+1057
+02:52:09,927 --> 02:52:18,947
+Şöyle söyleyebiliriz, burada geleneksel olarak yaklaşım yani literatürdeki yaklaşımlar durum tabanlı dediğimiz yani
+
+1058
+02:52:19,667 --> 02:52:33,727
+Niyelin geliş şekli, grafiği ve noktalar arasındaki mesafeyi baz alarak oluyorken yeni sistemde daha çok içsel dinamiği sisteme öğreterek kümeleme yapmaya çalışıyoruz.
+
+1059
+02:52:33,867 --> 02:52:44,467
+Burada şurada gördüğümüz sistem X üzeri nokta eşittir F fonksiyonuyla gösterdiğimiz buradaki parantez içindeki X durum vektörünü P'de parametreyi göstermektedir.
+
+1060
+02:52:47,667 --> 02:52:58,907
+Dediğimiz dinamik sistem değişir. Bu dinamik sistemde aslında zaman serisinin dinamik davranışını ortaya koyan bir dinamik fonksiyona karşılık gelir.
+
+1061
+02:52:59,067 --> 02:53:08,907
+Her seferinde yeni bir dinamik fonksiyon üretilir ve sisteme bu çalışmada her seferinde üretildikten sonra sisteme bu öğretilmiştir.
+
+1062
+02:53:09,556 --> 02:53:22,936
+Burada şunu da söylemek istiyoruz. Burada kümelemeyi zaman serileri üzerinden değil, dinamik sistemlerin davranışını kümelemeyi amaçlamaktayız.
+
+1063
+02:53:25,139 --> 02:53:28,959
+Bunun için deterministik öğrenme teorisi kullanıldı.
+
+1064
+02:53:29,059 --> 02:53:38,639
+Determistik öğrenme teorisi de non-linear bir sistemin dinamiklerini zaman serisi verilerinden yerel olarak doğru şekilde modellemeyi sağlayan bir yaklaşımdır.
+
+1065
+02:53:38,759 --> 02:53:41,819
+Bunun için de RBF sinir ağları kullanılmıştır.
+
+1066
+02:53:41,819 --> 02:53:50,799
+İlk olarak zaman serisine, ham bir zaman serisi alınıp daha sonra bu diferansiyel denklemlerin çözümlerinden.
+
+1067
+02:53:52,275 --> 02:53:59,275
+Çözüldükten sonra elde edilen durum vektörleri RBF sinir ağları tarafından...
+
+1068
+02:54:00,340 --> 02:54:15,620
+eğitilmiştir ve burada F, X, P ile gösterdiğimiz dinamik sistemin davranışını bir ne diyelim bir sabit vektöre atadıktan sonra sistem öğrenmeyi gerçekleştirir.
+
+1069
+02:54:15,620 --> 02:54:28,340
+Burada sinir ağı her bir dinamik sistem buna imza deniliyor. Dinamik sistem imzasını sabit bir ağırlık vektörü olarak saklanıyor.
+
+1070
+02:54:28,340 --> 02:54:56,340
+Bunun matematiksel geri planı şu şekildedir. F dediğimiz XP'ler karmışık sistemi gösteriyor. Yani dinamik sisteme karşılık geliyor. Öğrenilen sabit ağırlıklar omegalarla gösteriliyor. Bunlar RBF ağının çıktısı olan sabit ağırlıklardır ve dinamik özellikleri her birisinde ayrı ayrı saklı tutar. Bizim buradaki kümelemedeki amacımız da daha sonra bu sabit vektörlerden vektörleri.
+
+1071
+02:54:56,340 --> 02:55:02,579
+vektörler arasındaki mesafeleri hesaplayarak en sonunda...
+
+1072
+02:55:02,963 --> 02:55:14,184
+mesafe matrisleriyle kümelemeyi yapabilmektir. Devamında hemen ondan bahsediyoruz. Burada şu kısmı da bahsettik.
+
+1073
+02:55:14,724 --> 02:55:24,963
+Ağırlık vektörleri, sabit ağırlık vektörleri tarafından dinamik sistemin yapısı öğrenilir. Ondan sonra da burada diğer iki tane...
+
+1074
+02:55:25,811 --> 02:55:53,811
+İki zaman serisinin dinamikleriyle, şimdi birincisi öğrendikten sonra ikincisiyle bu kez kıyaslanarak birbirini, daha doğrusu serilerin birbirini tanıması sağlanır. Burada bir tanıma hatası formülü var, birazdan göstereceğim. O formüle göre dinamik mesafe ölçülür, L1 normunda ve bu dinamik mesafe ölçüldükten sonra da...
+
+1075
+02:55:53,811 --> 02:56:04,211
+matrisler oluşturulur ve sonrasında zaman serileri, benzer dinamikleri olanları kümeleyecek şekilde gruplandırılır.
+
+1076
+02:56:04,211 --> 02:56:08,531
+Burada çalışma aşamaları şu şekilde.
+
+1077
+02:56:10,260 --> 02:56:22,319
+RBIF A yapısında veri noktaları nöron merkezleri olacak şekilde, veri uzayını kapsayacak şekilde nöron merkezleri yerleştirilir.
+
+1078
+02:56:22,420 --> 02:56:29,260
+Şurada gördüğümüz faz uzayı 3 boyutlu, burada 5 tane dinamik sistem alacağız 3 boyutlu.
+
+1079
+02:56:29,539 --> 02:56:32,039
+Burada hemen hemen hepsinin benzer örüntüsü var.
+
+1080
+02:56:32,039 --> 02:56:38,219
+Ancak çok küçük değişiklikler var iç kısmında. Zaten o yüzden burada sınıflandırmak, kümelemek zor.
+
+1081
+02:56:38,260 --> 02:56:45,260
+Aşağı tarafta da şimdi şöyle RBFA yapısıyla sistem...
+
+1082
+02:56:46,451 --> 02:57:03,391
+Şuna dayanarak, Liponov kararlığına dayanarak ağırlıklar güncelenir şu formülle birlikte. Bu aslında Liponov kararlığına dayalı öğrenme kuralı aynı zamanda deterministik öğrenme teorisinin de çalışılma sebebidir.
+
+1083
+02:57:03,531 --> 02:57:14,451
+Çünkü her seferinde sabit bir ağırlığa atama yapıldığı için dolayısıyla rastgele olasılıksal bir şekilde ağırlıklar güncellenmiyor ve veri en baştan itibaren...
+
+1084
+02:57:14,451 --> 02:57:24,891
+Aslında hep belirli şekilde ilerliyor. O yüzden kullanılmaktadır. Daha sonrasında burada yakın saklıktan bahsettiğimiz şey aslında sabit bir vektöre atanması.
+
+1085
+02:57:25,311 --> 02:57:34,031
+Burada gördüğümüz de şu şekildeki bir faz uzayındaki kaotik sistemin her bir zaman serisinin bir noktayı yakın saklığına karşılık gelmektedir.
+
+1086
+02:57:34,191 --> 02:57:42,251
+Sinyaller artık düz çizgilere dönüşmüştür. Dolayısıyla aslında modelimiz eğitilmiş. Yani dinamik yapı öğrenilmiş.
+
+1087
+02:57:42,451 --> 02:57:51,271
+Burada daha sonrasında iki zaman serisi arasındaki dinamik mesafeyi ölçmeye çalışıyoruz.
+
+1088
+02:57:51,971 --> 02:58:01,191
+Bunun için de şimdi şurada omega A ile gösterilenler az önceki RBF ağının çıktıları olan sabit vektörler.
+
+1089
+02:58:02,195 --> 02:58:30,195
+Bunları kullanarak bir dinamik tahminci oluşturuluyor. Şu şekilde bu tahminciye ikinci zaman serisinin verileri de girdiği olarak veriliyor. Daha sonrasında da ikisi arasındaki farktan tanıma hatası oluşturuluyor. Bu tanıma hatasına göre de bu L1 normuna göre şurada norma alındığında da iki zaman serisi arasındaki mesafe ölçülüyor. Buradaki mesafe asimetriktir. O yüzden de
+
+1090
+02:58:30,195 --> 02:58:51,036
+Burada kullanılan algoritma K-Means değil, K-Means'tir. Çünkü K-Means'ler geometrik ortalama ve ortalamaya göre çalıştığı için burada kullanılamıyor. K-Means'ler, Medoans'ler dediğimiz algoritma yapıları burada kullanılıyor. Ben de burada bunları yeni öğrendim.
+
+1091
+02:58:51,572 --> 02:59:06,752
+Şöyle baktığımızda da eğer buradaki metrik yani iki zaman serisi arasındaki tanıma hatası birbirinden ne kadar küçükse aslında o kadar da birbirine benzeyen zaman serileri olduğunu söyleyebiliriz.
+
+1092
+02:59:10,291 --> 02:59:26,511
+Neden K-MEDOİT'si açıklamıştık? Şimdi K-MİS'te küme merkezlerini hesaplamak için ortalama alınıyordu. Ancak K-MEDOİT's'te her bir veri noktası küme merkezi olarak alınmaktadır.
+
+1093
+02:59:27,172 --> 02:59:36,371
+Dolayısıyla da o yüzden de asimetrik mesafeleri tolere eden bir algoritmadır. Burada algoritma adımlarını vermiştik. Geçiyorum.
+
+1094
+02:59:38,291 --> 02:59:58,191
+Kendi çalışmamda şunu yaptım ben, makalede de öyleydi. Makale ikiye ayrılıyor. Bir sentetik veriyle çalışmış, bir de gerçek veri setiyle, iki tane gerçek veri setiyle çalışmış. Ben açıkçası kendi çalışmalarında da daha sonra öğrenip yapabilmek için sentetik veri setiyle çalışmayı tercih ettim.
+
+1095
+03:00:00,000 --> 03:00:16,319
+Dinamik Sistem, Lorenz'in 3 tane parametreye bağlı farklı zaman serileri, Çen ve Lü sistemi üzerindeki dinamik davranışlarından elde edilen yapay veri setini oluşturdum.
+
+1096
+03:00:16,819 --> 03:00:24,379
+Burada uzunluk olarak 2000 zaman adımına sahip 3 boyutlu durum vektörlerinden oluşan bir veri seti kurduk.
+
+1097
+03:00:24,920 --> 03:00:27,760
+Toplamda 1000 adet zaman serisi oluştu.
+
+1098
+03:00:28,000 --> 03:00:33,500
+Her dinamik sınıf içinde 200 tane örnek çalışıldı.
+
+1099
+03:00:33,500 --> 03:00:45,520
+İki tane ayrı ayrı karışıklık madreslerinde görülmektedir ki burada Lorenz'in 3 farklı parametreye bağlı olarak karışıklık madresleri verilmiştir.
+
+1100
+03:00:45,600 --> 03:00:50,899
+Gördüğümüz gibi %100 doğrulukla kümeleme gerçekleştirilmiştir.
+
+1101
+03:00:51,000 --> 03:00:56,000
+Bu arada burada 3 tane sol alt köşede 3 tane birbirinden farklı sistemler var.
+
+1102
+03:00:56,000 --> 03:01:11,340
+Dikkat ederseniz, hepsinin davranışları, yani şekilleri birbirine çok benziyor. Ancak birbirinden tamamen farklı sistemlerdir. Ona rağmen bu kümeleme yöntemiyle %100 oranında gruplandırma başarılmıştır.
+
+1103
+03:01:11,340 --> 03:01:19,819
+Burada performans değerlendirme ölçütü olarak literatürden farklı olarak REI dediğimiz.
+
+1104
+03:01:20,435 --> 03:01:40,115
+Rank indeksi, yani iki küme arasındaki benzerlik ölçü, bir de NMI dediğimiz normalize edilmiş karşılıklı bilgi, yani küme kalitesinin hassasiyet ölçüsü dediğimiz iki benzerlik ölçütü kullanılmıştır.
+
+1105
+03:01:48,435 --> 03:01:54,615
+Çok daha iyi doğruluk ve kümeleme sonucu verdiği görülmüştür.
+
+1106
+03:01:54,615 --> 03:02:04,976
+O kısım benim yaptığım ve makaleyle örtüşen kısımdı. Bu kısımda da makalede gerçek veri setleriyle iki ayrı çalışılmış.
+
+1107
+03:02:07,476 --> 03:02:18,956
+Şöyle söyleyebiliriz, eksener akışlı kompresör dediği aslında havacılık ve enerji üretimindeki tehlikeli olayların istikrarsızlığını tespit etmek için,
+
+1108
+03:02:18,956 --> 03:02:24,575
+tespit etmek için ne diyelim,
+
+1109
+03:02:27,283 --> 03:02:35,423
+Diğer tarafta da mekanik olaylardaki arızaları tahmin edemeymek için kullanılmıştır.
+
+1110
+03:02:35,543 --> 03:02:38,583
+Çünkü bu davranışlar da öngörülemeyen davranışlardır.
+
+1111
+03:02:38,984 --> 03:02:43,283
+Buradaki davranışlar da yine bir kaotik sistemle temsil edilmektedir.
+
+1112
+03:02:44,804 --> 03:02:50,343
+Ve musla yöntemine göre, çünkü literatürde en çok güçlü olarak kullanılan yöntem musla yöntemi.
+
+1113
+03:02:50,343 --> 03:02:53,943
+O yüzden makalede bununla kıyaslama yapılmış ve birbirine çok yakın.
+
+1114
+03:02:55,283 --> 03:03:11,804
+NMA ve NMA doğruluk ölçütleri elde edilmiştir bakıldığında. Dolayısıyla son olarak da bu çalışmayla birlikte aslında şu yapılmış, deterministik öğrenme etiketsiz verilerle ilk kez uygulanmış burada.
+
+1115
+03:03:13,244 --> 03:03:20,283
+Gerçekten de bu çalışmada en başta verileri etiketlemiyoruz, ayırmıyoruz zaten kümelemede.
+
+1116
+03:03:23,283 --> 03:03:37,683
+Benzerlik ölçütleri kısmında etiketlenmiş verileri, etiketleri kullanıyoruz. İkinci olarak da dinamik farklılıklara dayalı yeni bir benzerlik ölçütü geliştirilmiştir.
+
+1117
+03:03:38,583 --> 03:03:48,884
+Ve asimetrik maddesler içinde KMOITS algoritması bu çalışmada dinamik sistemler için uygulanmıştır.
+
+1118
+03:03:49,940 --> 03:03:52,940
+Hocam, inşallah hızlı anlatmışımdır, bilmiyorum ama.
+
+1119
+03:03:55,040 --> 03:03:56,579
+Bayağı hızlı anlattın, evet.
+
+1120
+03:03:56,700 --> 03:03:57,620
+Hızlı mı anlattın?
+
+1121
+03:03:58,319 --> 03:04:01,239
+Güzel, süreyi fazla aşamadık yani.
+
+1122
+03:04:01,876 --> 03:04:09,355
+İyi oldu çünkü haftaya sınava gireceksiniz siz mağaziyet sınavına. O yüzden bu hafta anlatmanız daha iyi oldu.
+
+1123
+03:04:10,015 --> 03:04:13,155
+Evet hocam ben size mail atacaktım dersin sonunda.
+
+1124
+03:04:14,095 --> 03:04:17,615
+Evet sizi de alkışlıyoruz sunumunuz için. Soru var mı sınıfta?
+
+1125
+03:04:19,835 --> 03:04:20,515
+Yok.
+
+1126
+03:04:21,012 --> 03:04:44,971
+Peki, o zaman bu hafta dersi kapatıyorum. Teşekkür ediyorum sunumumu yapan arkadaşlara. Haftaya online olarak sunumlar devam edecek. Biz de sınavına giremeyen bir iki öğrencimiz vardı. Onlar için bir mazeri sınavı da yapacağız. Ders saatinde olacak o da. Evet, bugün bu kadar. Haftaya görüşmek üzere. Hoşçakalın.
+
+1127
+03:04:46,731 --> 03:04:48,391
+Hoşçakalın hocam. Teşekkürler.
