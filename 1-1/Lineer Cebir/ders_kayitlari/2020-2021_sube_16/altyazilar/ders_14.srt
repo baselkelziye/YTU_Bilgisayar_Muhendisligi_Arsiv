@@ -1,0 +1,2591 @@
+1
+00:01:07,796 --> 00:01:08,776
+Arkadaşlar merhaba.
+
+2
+00:01:16,308 --> 00:01:17,288
+Sesim geliyor mu?
+
+3
+00:01:19,208 --> 00:01:20,487
+Geliyor hocam, merhaba.
+
+4
+00:01:22,548 --> 00:01:24,648
+Şümartesi günü bir ders yapmıştık.
+
+5
+00:01:25,948 --> 00:01:27,268
+Hatta iki ders yaptık.
+
+6
+00:01:27,608 --> 00:01:33,428
+Ona katılan arkadaşlar, daha doğrusu katılamayan arkadaşlar biraz sıkıntı yaşayacaktır ama.
+
+7
+00:01:36,328 --> 00:01:37,608
+Yapacak bir şey yok.
+
+8
+00:01:38,328 --> 00:01:40,068
+Şimdi kaldığımız yerden devam edeceğiz.
+
+9
+00:01:40,208 --> 00:01:41,868
+Ben sadece bir hatırlatma yapacağım burada.
+
+10
+00:01:42,208 --> 00:01:43,308
+Çünkü geçiş matrisleri biraz...
+
+11
+00:01:45,427 --> 00:02:09,307
+Zor anlaşılabilir bir konuydu. Hemen hızlıca bir hatırlatma yapıp, bir tane de örnek çözüp sonra bu haftanın konusuna geçeceğim. Zaten bugün son dersimiz. Bir de bana mesaj atan arkadaşlar notlarına tekrar bakmam için. Onlara bakmadım, bakacağım arkadaşlar. Kusura bakmayın.
+
+12
+00:02:10,036 --> 00:02:13,936
+Biraz malum, hem rahatsızım bir türlü atamadım, hem de biraz yoğunluk vardı.
+
+13
+00:02:15,355 --> 00:02:18,276
+Bökünce onların her birine cevap yazacağım, yani daha bakmadım.
+
+14
+00:02:18,756 --> 00:02:19,036
+Tamam mı?
+
+15
+00:02:21,135 --> 00:02:27,795
+Peki, şimdi o zaman geçiş maddesi neydi, koordinat geçiş maddesi neydi, ondan bahsedelim.
+
+16
+00:02:29,056 --> 00:02:32,195
+Bir tane örnek çözeyim, sonra yeni konuya geçelim.
+
+17
+00:02:38,867 --> 00:02:51,548
+İki tane taban var arkadaşlar. Bir vektör uzayının birden farklı tabanı olabilir demiştik. Bunlara B1 ve B2 denmiş.
+
+18
+00:02:53,687 --> 00:03:00,548
+V vektör uzayındaki her bir elemanı biz taban elemanları cinsinden tek türlü yazabiliyorduk.
+
+19
+00:03:05,939 --> 00:03:20,719
+V elemanını buradan, V elemanları, V için, V'yi, mesela B1 bazının elemanları cinsinden, tek türlü yazabiliyorduk.
+
+20
+00:03:20,879 --> 00:03:31,000
+A1, V1 artı, A2, V2 artı, AN, VN biçiminde, tek türlü yazabiliyorduk.
+
+21
+00:03:33,683 --> 00:03:57,983
+Şimdi iki tane baz var. B1 ve B2 bazları. Hatta bu V vektörünü bu şekilde yazınca, bu şekilde yazınca, V vektörünün hangi baza göre bu? B1'e göre koordinat vektörü şu elde ettiğimiz,
+
+22
+00:03:59,764 --> 00:04:11,043
+Sabitlerde A1, A2 aynı. Bu lineer denklem sistemini çözünce elde ettiğimiz sabitlere V'nin B1 bazına göre koordinat vektörü diyorduk.
+
+23
+00:04:20,788 --> 00:04:31,888
+Şimdi, B1'in ya da B2'nin her bir elemanı, sonuçta V'nin elemanları olduğu için, bunlar da diğer baz elemanlar cinsinden yazılabilir.
+
+24
+00:04:33,207 --> 00:04:40,807
+Yani, V1'i ben, B2 bazı cinsinden yazabilirim değil mi?
+
+25
+00:04:43,288 --> 00:04:46,048
+Ona da, neyse A11 diyelim.
+
+26
+00:04:48,307 --> 00:04:50,307
+W1 artı
+
+27
+00:04:50,307 --> 00:04:52,827
+A1 2
+
+28
+00:04:52,827 --> 00:04:55,508
+W2 artı
+
+29
+00:04:55,508 --> 00:04:57,707
+A1 ne
+
+30
+00:04:57,707 --> 00:05:00,427
+W ne
+
+31
+00:05:00,427 --> 00:05:02,268
+Aynı şekilde
+
+32
+00:05:02,268 --> 00:05:05,048
+B1'in bütün elemanlarını
+
+33
+00:05:05,048 --> 00:05:07,087
+Yani V2 ile
+
+34
+00:05:07,087 --> 00:05:09,327
+A2 1
+
+35
+00:05:09,327 --> 00:05:11,728
+W1 artı
+
+36
+00:05:11,728 --> 00:05:13,628
+A2 2
+
+37
+00:05:13,628 --> 00:05:15,307
+W2 artı
+
+38
+00:05:15,636 --> 00:05:21,296
+A2N, WN biçiminde yazabiliyoruz.
+
+39
+00:05:22,355 --> 00:05:24,355
+Bu şekilde arkadaşlar, bakın ne yaptım ben?
+
+40
+00:05:24,536 --> 00:05:34,656
+V1'in elemanlarını, pardon, V1'in elemanlarını, V2 elemanları cinsinden yazabildim.
+
+41
+00:05:34,656 --> 00:05:37,875
+Burada elde ettiğim şu kat sayıları, ne yapacağım yine?
+
+42
+00:05:38,836 --> 00:05:40,636
+Bunları ston olarak bir maddese yazacağım.
+
+43
+00:05:43,252 --> 00:05:49,372
+A11, A12, A1 ne?
+
+44
+00:05:51,432 --> 00:05:54,512
+A21, A2 ne?
+
+45
+00:05:56,132 --> 00:05:59,032
+AN1, AN ne?
+
+46
+00:06:01,172 --> 00:06:06,912
+Bu şekilde oluşan matrise ben, hangisinden hangisine?
+
+47
+00:06:07,052 --> 00:06:07,652
+B1'den
+
+48
+00:06:16,596 --> 00:06:21,175
+B1'den B2'ye geçiş maddesi diyorum arkadaşlar.
+
+49
+00:06:23,515 --> 00:06:25,995
+B1'den B2'ye geçiş maddesi diyorum.
+
+50
+00:06:26,975 --> 00:06:29,175
+Bir de şöyle bir özelliği var bu maddesin.
+
+51
+00:06:35,507 --> 00:06:38,747
+D1'den D2'ye geçiş maddesi,
+
+52
+00:06:40,707 --> 00:06:42,587
+D2'den
+
+53
+00:06:48,372 --> 00:06:52,651
+B2'den B1'e geçiş matrisinin tersiydi.
+
+54
+00:06:54,031 --> 00:06:54,432
+Tamam.
+
+55
+00:06:56,112 --> 00:06:56,492
+Bir de,
+
+56
+00:06:57,612 --> 00:06:58,911
+bir de,
+
+57
+00:07:04,276 --> 00:07:30,276
+Şunları bakın yazdık. Burada kas sayıları niye hoca öyle yazdı diye düşünmeyin. Burada matris düzgün olsun diye kas sayıları A11, A21 olarak almış. Ben A11, A12 olarak aldım. Önemli değil. Önemli olan şunları her bir vektör için sütun olarak yazacaksınız. Bakın ne oldu? A11, A21 böyle sütun olarak yazmış buraya. Tamam mı?
+
+58
+00:07:32,884 --> 00:07:39,564
+Bu madde şu işe yarıyor. Mesela bir V vektörünün
+
+59
+00:07:46,132 --> 00:07:48,132
+Biri v vektörünün
+
+60
+00:07:48,132 --> 00:07:51,852
+b1 bazına göre
+
+61
+00:07:51,852 --> 00:07:56,132
+koordinat vektörü
+
+62
+00:08:03,315 --> 00:08:03,956
+Vängen.
+
+63
+00:08:17,300 --> 00:08:36,519
+V2'den V1'e geçiş maddesi çarpı, V'nin V2'ye göre koordinat vektörü olarak bir eşitlik yazabiliyorsunuz. Tamam. Bunları öğrenmiştik cumartesi günü. Tekrar etmiş olduk. Şimdi bir soru üzerinde buna bakalım.
+
+64
+00:08:37,759 --> 00:08:44,259
+Yine bir sormak istediğiniz bir şey varsa lütfen sorun. Burada şu sorum çok önemli.
+
+65
+00:08:47,731 --> 00:08:53,892
+Önce söylediğim şey, B2'den B1'e geçiş maddesi, B1'den B2'ye geçiş maddesinin tersidir.
+
+66
+00:08:54,912 --> 00:09:02,551
+Hangisini kolaylıkla bulabiliyorsanız onu bulun, diğeri onun tersi olacak eğer hani diğeri de sorulduysa önemli değil.
+
+67
+00:09:05,652 --> 00:09:13,111
+Onun B1'e göre koordinat vektörü, B2'den B1'e geçiş maddesi çarpı, B2'ye göre koordinat vektörü aynı şekilde.
+
+68
+00:09:15,028 --> 00:09:26,728
+bir v elemanının b2'ye göre koordinat vektörü, b1'den b2'ye geçme matris çarpı, b1'e göre koordinat vektörüne eşit.
+
+69
+00:09:29,427 --> 00:09:30,807
+Bunu çözmüştük galiba.
+
+70
+00:09:33,188 --> 00:09:34,867
+Burada bir tane başka örnek var.
+
+71
+00:09:36,327 --> 00:09:39,468
+Sınavda da buna yakın bir şey çıkabilir, o yüzden onu çözmek istiyorum.
+
+72
+00:09:43,923 --> 00:09:47,523
+Şimdi burada hepsini tek tek hesaplamış, biz öyle yapmıyorduk arkadaşlar.
+
+73
+00:09:48,124 --> 00:09:49,803
+Onunla söyleyeyim, ondan da bahsedeyim.
+
+74
+00:09:50,843 --> 00:09:53,343
+Şimdi burada hangisi kolayınıza geliyorsa öyle yapın.
+
+75
+00:09:54,503 --> 00:09:56,963
+Ben hani sizi illa böyle yapın demiyorum.
+
+76
+00:09:59,843 --> 00:10:02,323
+Allah Allah, nerede bu bir, nereden başlıyor?
+
+77
+00:10:02,323 --> 00:10:03,003
+Neyse.
+
+78
+00:10:08,820 --> 00:10:20,400
+Bakın burada soruda şu var. B1'den B2'ye geçiş maddesini soruyor arkadaşlar. Mesela A şıkkında. B1'den B2'ye geçiş maddesini bulmanız demek ne demek?
+
+79
+00:10:36,307 --> 00:10:51,367
+A11, W1 artı, A12, W2 artı, A13, W3 şeklinde yazıp, A11, A12, A13'ü buldam ek. Sonra, V2 için aynı şey.
+
+80
+00:11:03,155 --> 00:11:04,695
+ve 3 içinde
+
+81
+00:11:05,455 --> 00:11:06,475
+aynı şey.
+
+82
+00:11:22,803 --> 00:11:29,703
+Ya bunları ayrı ayrı yazıp, tek tek bunları hesaplar yazarsınız, ya da bunun kolay yolu var dedi.
+
+83
+00:11:29,943 --> 00:11:37,523
+Hatta bu B1'den B2'ye geçiş maddesini de arkadaşlar şöyle yazıyoruz. Sebebi de şuydu.
+
+84
+00:11:38,983 --> 00:11:43,043
+Şimdi bunların hepsinin üçünü birleştirip şöyle yazıyorsunuz.
+
+85
+00:11:47,412 --> 00:12:07,192
+W1, W2, W3, sonra V1, V2, V3. Neden böyle yazıyorsunuz? Şundan dolayı. Bunu da hatta P ile göstermiştik.
+
+86
+00:12:07,192 --> 00:12:14,472
+İngilizce kaynaklar da böyleydi. Bana nereden nereye geçiş matrisini soruyor. B1'den B2'ye.
+
+87
+00:12:20,244 --> 00:12:36,364
+B1'den B2. Demek ki sol tarafta B2'nin elemanları olacak. Sağ tarafta da B1'nin elemanları olacak. Bu maddesi, elementer satır işlemleriyle, sol tarafı,
+
+88
+00:12:40,500 --> 00:12:53,240
+sol tarafı birim matris haline dönüştürünce, elementer satır işlemleri yardımıyla, burada 3 mertebeli, 3, 3, şu sağ tarafta oluşan da ne oluyor?
+
+89
+00:12:55,639 --> 00:13:06,079
+M, B1, B2 oluyor. İsterseniz böyle yaparsınız, isterseniz de tek tek bunları çözersiniz. Zaten aynı şey, neden?
+
+90
+00:13:08,980 --> 00:13:31,040
+Kas sayılarını bulacaksınız. A11, A12, A13. Bunu matrise yazdığınız zaman ilk sütun bundan oluşacak. Yani bunun çözümünden oluşacak. Aynı şekilde ikinci sütun da bunun çözümünden oluşacak. Bir fark yok aslında. Ama daha belki pratik olabilir. Siz nasıl öğrendiyseniz ya da aklınıza nasıl kalıyorsa öyle çözün.
+
+91
+00:13:40,947 --> 00:13:43,347
+Bu da bakın, bayağı bir hepsini tek tek çözmüş.
+
+92
+00:13:44,347 --> 00:13:45,508
+Hepsini tek tek çözmek.
+
+93
+00:13:45,847 --> 00:13:46,967
+Hatta tamam, şöyle yapalım.
+
+94
+00:13:47,227 --> 00:13:48,048
+Şunu çözelim önce.
+
+95
+00:13:49,388 --> 00:13:50,888
+Zaten vaktimiz bayağı var.
+
+96
+00:13:51,128 --> 00:13:51,807
+Bir şey değil yani.
+
+97
+00:13:52,368 --> 00:13:53,788
+Çünkü bugün az bir konu kaldı.
+
+98
+00:13:55,268 --> 00:13:56,868
+Ya niye bu kadar uzatmış ki bunu?
+
+99
+00:13:56,967 --> 00:13:57,528
+Allah Allah.
+
+100
+00:14:04,467 --> 00:14:06,347
+Ama B1'i B2'yi görmemiz lazım.
+
+101
+00:14:11,860 --> 00:14:15,140
+Şuraya yazarız, sonra altı işlemlere devam ederiz.
+
+102
+00:14:28,532 --> 00:14:42,572
+Şimdi arkadaşlar, B1'den B2'ye, B1'den B2'ye geçiş matrisini soruyor. O halde, B1'in elemanları, oraya yazmıştım, yine yazayım, siz de yazın, o zaman karıştırmazsınız.
+
+103
+00:14:51,572 --> 00:14:59,791
+A1, 3, W3 şeklinde, A1, 1, A1, 2, A1, 3'ü bulacağım. Aynı şekilde V2 ve V3 için de aynı şeydir yazacağım. Demek ki,
+
+104
+00:15:06,419 --> 00:15:27,080
+Demek ki arkadaşlar, ne olacak? Benim genişletilmiş kas sayılar matrisim, W1, W2, W3'ten oluşacak. Eşitliğin sağ tarafında da V1, V2, V3 olacak.
+
+105
+00:15:37,748 --> 00:15:42,328
+Tamam. O zaman yazalım. W1, W2, W3 neymiş?
+
+106
+00:15:44,488 --> 00:15:49,968
+Sıfır. Görün diye yapıyorum bunu. Belki ilk defa görenler var. Cumartesi derse katılmayanlar varsa.
+
+107
+00:15:52,388 --> 00:16:04,148
+Sıfır, iki, bir. Bunları sütunlara yazıyoruz yani. W2, eksi bir, sıfır, bir. W3 de eksi bir.
+
+108
+00:16:04,916 --> 00:16:17,475
+3, 0. Sonra, kas sayılar maddesi bu. Artık her biri için genişletilmiş kas sayılar maddesini ayrı ayrı yazmak yerine aynı yere yazıyorum.
+
+109
+00:16:19,316 --> 00:16:29,036
+1, 2, 0. 2, 0, 1. 1, 2, 1.
+
+110
+00:16:34,964 --> 00:16:36,423
+Şimdi bu sistemi çözeceğim.
+
+111
+00:16:40,788 --> 00:16:52,288
+Ne yapacağım arkadaşlar? Burasını elementer satır işlemleri yardımıyla, tabi buraya da aynı şeyi uygulamam lazım. Birim matrize dönüştürmem lazım. O yüzden üçüncü satırı birinci satırla yer değiştireyim.
+
+112
+00:16:55,731 --> 00:16:56,351
+Ne oluyor?
+
+113
+00:16:58,032 --> 00:16:58,792
+1, 1, 0
+
+114
+00:17:06,163 --> 00:17:11,503
+0, 1, 1, 2'nin iç satır değişmedi.
+
+115
+00:17:12,503 --> 00:17:26,223
+2, 0, 3, 2, 0, 2, 3'nin iç satır, 0, 1, 1, 2, 1.
+
+116
+00:17:26,723 --> 00:17:32,344
+Şimdi bana yardımcı olun, bunun üstünü de silip değiştireyim, yanlış yapmayayım arkadaşlar, beraber yapalım.
+
+117
+00:17:37,236 --> 00:17:39,476
+Maviyle yazalım ki belli olsun ne yazdığımız.
+
+118
+00:17:42,416 --> 00:17:43,416
+Şimdi ne yapacağım?
+
+119
+00:17:44,156 --> 00:17:46,496
+Binic satırı eksi 2 ile çarpıp buraya ekleyeceğim değil mi?
+
+120
+00:17:47,256 --> 00:17:48,256
+Buraya 0 yapmam lazım.
+
+121
+00:17:48,496 --> 00:17:50,316
+Eksi 2 ile çarptım, bekledim. Burası ne oldu?
+
+122
+00:17:51,316 --> 00:17:51,796
+0.
+
+123
+00:17:54,176 --> 00:17:54,736
+Burası.
+
+124
+00:17:57,396 --> 00:17:58,316
+Eksi 2.
+
+125
+00:17:59,036 --> 00:17:59,556
+Burası.
+
+126
+00:18:02,836 --> 00:18:03,756
+Eksi 2.
+
+127
+00:18:05,523 --> 00:18:09,384
+Burası 0. Güzel.
+
+128
+00:18:14,344 --> 00:18:20,603
+Bunu 3'ünün satırı eksi 3 ile çarpıp buraya ekleyeyim ki burası 1 olsun. Buranın 1 olmasını istiyorum.
+
+129
+00:18:21,183 --> 00:18:25,463
+3'ü eksi 3 ile çarpıp buraya ekledim. Ne oldu? Burası 1.
+
+130
+00:18:29,779 --> 00:18:41,799
+Eksi 3 ile çarptım, burası 6. Eksi 3 ile çarptım, burası eksi 1. Eksi 3 ile çarptım, eksi 6, eksi 8.
+
+131
+00:18:46,228 --> 00:19:06,567
+Eksi 3 ile çarptım, burası. Eksi 3. Şimdi, burayı eksi 1 ile çarpıp, birinci satıra ve bunu bu satıra ekleyeyim. Önce üçüncü satıra ekleyelim, ne olur? Burası 0 olur. Burası 5 olur.
+
+132
+00:19:10,132 --> 00:19:11,811
+Burası 0
+
+133
+00:19:18,259 --> 00:19:22,500
+İnşallah takip ediyorsunuzdur beni, yoksa yanlış çözersem cevap da yanlış bulunur arkadaşlar.
+
+134
+00:19:23,819 --> 00:19:27,679
+Burası eksi 6, burası eksi 2.
+
+135
+00:19:29,759 --> 00:19:34,099
+Tamam. Bunu da eksi ile çarpıp buraya ekledim. Ne oldu? 0.
+
+136
+00:19:38,708 --> 00:19:48,608
+eksi altı, bir, dokuz, dört.
+
+137
+00:19:49,688 --> 00:19:50,188
+Tamam.
+
+138
+00:19:51,748 --> 00:19:55,788
+Şimdi burayı, bir bölü beşle çarpacağım.
+
+139
+00:19:57,388 --> 00:19:58,327
+Ki bir yapsın.
+
+140
+00:20:04,211 --> 00:20:05,751
+1 bölü 5 ile çarpıyorum.
+
+141
+00:20:09,203 --> 00:20:18,304
+1, eksi 6 bölü 5 oldu, eksi 2 bölü 5 oldu. Güzel.
+
+142
+00:20:20,224 --> 00:20:26,864
+Şimdi burayı, eksi 6 ile çarpıp, ikinci satıra 6 ile çarpıp, birinci satır ekleyeceğim.
+
+143
+00:20:27,403 --> 00:20:33,043
+Onu da şuraya yazalım artık, karışacak iyice. Birinci satır ne olacak arkadaşlar? 1,
+
+144
+00:20:33,619 --> 00:20:37,379
+0, 6 ile çarpı, buraya eklemiştim, 0.
+
+145
+00:20:41,395 --> 00:20:42,076
+1
+
+146
+00:20:42,076 --> 00:20:46,335
+bunu ne ile çarptım?
+
+147
+00:20:47,516 --> 00:20:48,135
+6 ile
+
+148
+00:20:48,135 --> 00:20:49,715
+9 eksi
+
+149
+00:20:54,228 --> 00:21:00,948
+54 bölü 5, değil mi? 45, ne oldu? Eksi 9 bölü 5.
+
+150
+00:21:08,596 --> 00:21:11,456
+Peki. Sonra bunu neyle çarpmıştım?
+
+151
+00:21:12,956 --> 00:21:14,135
+Eksi 6 ile çarptım.
+
+152
+00:21:15,235 --> 00:21:17,415
+Bir dakika, eksi 6 ile çarptım değil mi bunu?
+
+153
+00:21:19,735 --> 00:21:21,215
+Pardon, 6 ile çarptım. Tamam.
+
+154
+00:21:21,855 --> 00:21:24,436
+6 ile çarptım. Eksi 12 bölü 5, 4 eksi.
+
+155
+00:21:26,036 --> 00:21:27,956
+12 bölü 5, 28 bölü 5.
+
+156
+00:21:35,092 --> 00:21:45,992
+Evet. Burası aynen kalıyor. Pardon, aynen kalmıyor. Burayı da eksi 6 ile çarpıp buna ekliyorum.
+
+157
+00:21:47,472 --> 00:22:01,951
+0, hangisi? 36 bölü 5. 9 eksi 36 bölü 5 mi oluyor? Yanlış mı yaptım? Şuydu değil mi bu? 6 ile, evet 36 bölü 5. 54 nereden geldi? 9'a çarpmış.
+
+158
+00:22:03,251 --> 00:22:07,652
+Doğru söylüyorsun bu sıra, teşekkür ederim. 45, 9 bölü 5 olacak o zaman.
+
+159
+00:22:09,291 --> 00:22:09,811
+Tamam.
+
+160
+00:22:12,132 --> 00:22:19,731
+0, 1, 0, eksi 1, neyle çarptım bunu?
+
+161
+00:22:20,951 --> 00:22:25,091
+Eksi 6 ile, şimdi ne oldu? Eksi 6 ile çarpınca 36 bölü 5.
+
+162
+00:22:28,307 --> 00:22:30,907
+x'i 8, 40, x'i 4, bölü 5
+
+163
+00:22:35,955 --> 00:22:46,335
+Eksi 6 ile çarptım. 12 bölü 5, eksi 3, ne yaptı? 15, eksi 3 bölü 5.
+
+164
+00:22:49,875 --> 00:23:00,096
+3. satırla aynı. Kaldı. 0, 0, 1, 0, eksi 6 bölü 5, eksi 2 bölü 5.
+
+165
+00:23:02,296 --> 00:23:08,076
+Yani arkadaşlar, bakın burada birim elde ettim, bu 3. Bu matris de neymiş?
+
+166
+00:23:09,036 --> 00:23:16,735
+M, B1'den, B2'ye geçiş matrisiymiş. Tamam mı?
+
+167
+00:23:18,996 --> 00:23:25,796
+Ya da tek tek, burada örnekte sunumda yapıldığı gibi tek tek de yapabilirsiniz. Gerçekten doğru mu bulduk?
+
+168
+00:23:27,076 --> 00:23:36,355
+1, 9 bölü 5, 8 bölü 5 ilk satır. Nerede acaba bu? Neyse, şunun bir şeyini alalım. Görüntüsünü nasıl alacağız? Şuradan.
+
+169
+00:23:54,675 --> 00:23:56,215
+Bakalım aşağıda nerede bulunmuş.
+
+170
+00:24:02,003 --> 00:24:04,003
+O kadar kişi yaptık herhalde doğru yapmışızdır.
+
+171
+00:24:12,788 --> 00:24:20,687
+1, 9 bölü 5, 8 bölü 5, eksi 1, eksi 4 bölü 5, aynı şeyi aslında arkadaşlar.
+
+172
+00:24:21,347 --> 00:24:22,327
+Tamam doğru yapmışız.
+
+173
+00:24:23,127 --> 00:24:27,067
+Ama bu tek matrisle işlem yaptırıyor.
+
+174
+00:24:27,207 --> 00:24:29,207
+Diğeri 3 tane matris yapmanız lazım.
+
+175
+00:24:29,907 --> 00:24:32,367
+Hangisi kolayınıza geliyorsa ama bence bu daha kolay.
+
+176
+00:24:34,207 --> 00:24:38,048
+Burada sadece işte o yüzden o şeyi yazdım arkadaşlar.
+
+177
+00:24:40,276 --> 00:25:02,816
+Hangisini sol tarafa, hangisini sağ tarafa yazacağınızı karıştırmamanız lazım. Yani B1'den B2'ye geçiş maddesini soruyorsa, B1'in her bir elemanını, B1'in elemanları V'lerdi. Mesela V1 eşittir, işte A çarpı W artı B çarpı W1 artı B çarpı W2 artı C çarpı W3 şeklinde yazacağız. O halde,
+
+178
+00:25:03,827 --> 00:25:30,807
+Sol tarafta, matrisin sol tarafında W'lar olacak, sağ tarafta V'ler olacak. Yani bunu ayırt edebiliyorsanız, bunu kullanın. Kafanız karışıyorsa o zaman normal denklem sistemi çözüp, çözdüklerinizi ne yapacaksınız? Sütuna yazacaksınız. Tamam. Anlaşıldı mı bu? Anlaşılma bir şey varsa sorun. Herhalde yok.
+
+179
+00:25:32,084 --> 00:25:35,484
+Sizler anlayışlı arkadaşlarsanız anlıyorsunuz. Tamam. Peki.
+
+180
+00:25:37,764 --> 00:25:46,924
+Ne sormuştu başka? B2'den B1'e geçiş matrisin sorunu olacak. Bunun tersi. Matris alacaksınız. Matrisin tersini alacaksınız daha doğrusu.
+
+181
+00:25:48,384 --> 00:25:54,804
+Tabii bu güzel bir örnek olmamış. Böyle rasyonel kesirli ifadeler var. Neyse olsun. Aldıksınız bunun tersini.
+
+182
+00:26:02,003 --> 00:26:12,263
+U, B1'e göre koordinat maddesi nasıl yazılıyordu? Ondan da bahsedelim, madem buraya yer gelmişken.
+
+183
+00:26:14,223 --> 00:26:20,303
+U'nun B1 bazına göre yazılımını bulacağız arkadaşlar. U eşittir. İşte burada yine değişkenler var.
+
+184
+00:26:20,883 --> 00:26:29,023
+Y1 çarpı V1 artı Y2 çarpı V2 artı Y3 çarpı V3. Burada Y1, Y2, Y3'i bulacaksınız. Ya da U neydi? Bu niye yazmamış ki?
+
+185
+00:26:29,779 --> 00:26:36,679
+U235'miş. Arkadaşlar, burada direkt görebiliyorsanız, mesela burada direkt görülür mü?
+
+186
+00:26:38,899 --> 00:26:39,839
+3 yapacak.
+
+187
+00:26:41,179 --> 00:26:42,919
+Bu 3 yapacağı için,
+
+188
+00:26:45,619 --> 00:26:47,419
+3 yaptırmak biraz zor olabilir.
+
+189
+00:26:48,419 --> 00:26:52,099
+Yani şu, gözle görülüyorsa hemen hızlıca, mesela atıyorum,
+
+190
+00:26:52,099 --> 00:26:53,219
+bunu,
+
+191
+00:26:56,500 --> 00:27:22,100
+2 ile çarpsam, olmaz. Çünkü burada 3 var. 3 yapabilmesi için, 3 de 6 olmuyor. 4 ile çarpsam, 8. Bu herhalde yine kesili bir şeyler çıkıyor. Y1, Y2, Y3'ü bulacaksınız buradan. Denklem sistemi çözeceksiniz.
+
+192
+00:27:23,092 --> 00:27:46,872
+Kesili çıkmıyormuş. Bayağı da kesili çıkıyormuş yani. Şu koordinat vektörü oluyor. Koordinat vektörümüz bu. Onun B1 bazına göre. Yani U'yu B1'deki vektörlerle hangi sayıları çarpıp toplarsak U'yu hallederiz. Amacımız o.
+
+193
+00:27:47,539 --> 00:27:50,860
+Onlar da bunlarmış. Baya da garip ifadeler.
+
+194
+00:27:53,200 --> 00:27:59,240
+B2 bazına göre yazılımını soruyordu herhalde. Teoremi kullandıracak aslında.
+
+195
+00:27:59,980 --> 00:28:07,420
+Teoremi kullanmadan da B2 bazına göre yazılımını bulabilirsiniz. Çünkü baz belli değil mi?
+
+196
+00:28:07,900 --> 00:28:12,519
+Aynı şekilde burada X1'i, X2, X3'ü bulabilirsiniz arkadaşlar.
+
+197
+00:28:16,819 --> 00:28:22,359
+Ne çıkıyormuş? Bu örnek hiç güzel bir örnek değilmiş. Neyse, hep böyle kesildiği ifadeler şu çıkıyor.
+
+198
+00:28:25,359 --> 00:28:31,420
+B2'ye göre yazılım da bu. Peki, teorem ne diyordu? Herhalde onu gösterecek size. Teoremin ne söylediğini gösterecek.
+
+199
+00:28:31,420 --> 00:28:32,720
+Mesela diyordu ki,
+
+200
+00:28:38,579 --> 00:28:54,119
+B2 bazına göre koordinat vektörü, biz B1'den B2'ye geçiş matrisini bulmuştuk ya, B1'den B2'ye geçiş matrisi çarpı, U'nun B1 bazına göre yazılımı diyor.
+
+201
+00:28:54,220 --> 00:29:01,440
+U'nun B1'i göre yazılımını bulmuştuk, koordinat vektörünü de bulduk. İkisini çarparsanız bunu elde edersiniz yani.
+
+202
+00:29:06,740 --> 00:29:14,440
+Direkt yazmak daha kolay değil mi? Burada tek lineer denklem sistemi çözüyorsunuz. Burada hem B1'e göre bulacaksınız, sonra bir de geçiş maddesini bulacaksınız falan.
+
+203
+00:29:15,059 --> 00:29:27,519
+Yani eğer şartlar sizi bu çarpımı yapmaya itmiyorsa, yani B2 bazının elemanları varsa o zaman direkt B2'ye göre koordinat vektörünü bulabilirsiniz.
+
+204
+00:29:27,519 --> 00:29:31,620
+Yani bu teoremi kullanmanıza gerek yok. Ama böyle de bir eşitlik olduğunu bilin.
+
+205
+00:29:34,228 --> 00:29:48,688
+Tamam mı? Önemli yani, çok önemli hatta. Mesela şöyle yapabilirler sınavda yine, yapıyorlar ya hep öyle. Yani bunu bir şekilde ne yapar? Şöyle yapar.
+
+206
+00:29:54,451 --> 00:29:56,811
+U'nun tersiyle çarpar sağ taraftan.
+
+207
+00:29:59,412 --> 00:30:00,951
+Koordinat vektörüne eşitler.
+
+208
+00:30:02,572 --> 00:30:05,491
+Siz mecburen koordinat vektörünü bulmak zorunda kalabilirsiniz.
+
+209
+00:30:05,491 --> 00:30:09,051
+Yani böyle biraz kulağı tersten göstermeyi seviyorlar ya sınavda.
+
+210
+00:30:12,723 --> 00:30:26,263
+Son soru var, o önemli dedim, onu çözelim, sonra diğer konuya geçelim. Nerede? Bu hala bitirmedi galiba, çözüyor soruyu. Pardon, bitirmiş. Önüne geçtik mi?
+
+211
+00:30:31,796 --> 00:30:34,256
+Arkadaşlar, bakın burada şeyi vermemiş.
+
+212
+00:30:37,336 --> 00:30:40,256
+V1'in, V2'nin, V3'ün ne olduğunu vermemiş.
+
+213
+00:30:41,056 --> 00:30:42,276
+W'yu da vermemiş.
+
+214
+00:30:42,856 --> 00:30:50,696
+Ancak, V1 eşittir, W1 artı W2 eksi W3, V2 eşittir, bu, V3 eşittir, bu.
+
+215
+00:30:58,355 --> 00:31:23,955
+M, B1'den B2 geçiş maddesini ararken, B1'in her bir elemanını, V1 eşittir, A1, W1 artı, A2, W2 artı,
+
+216
+00:31:24,819 --> 00:31:52,319
+A3, W3 olacak şekildeki A1'i, A2'yi, A3'i aramıyor muyuz? Evet. Zaten burada direkt vermiş bakın. V1 eşittir. W1 artı W2 eksi W3. O halde burada A1 dediğim 1, A2 dediğim 1, A3 dediğimde eksi 1. Yani iç sütun ne? Geçiş maddesindeki 1, 1, eksi 1.
+
+217
+00:31:53,523 --> 00:32:03,483
+İkinci sütun ne? 2-1, 1. Üçüncü sütun ne? 1-0, 2.
+
+218
+00:32:09,076 --> 00:32:10,875
+Bu ne maddesi arkadaşlar?
+
+219
+00:32:13,395 --> 00:32:22,516
+M, B1'den B2'ye, geçiş maddesi. Onu sormuş. Onu bulduk.
+
+220
+00:32:23,895 --> 00:32:31,336
+Sınavda böyle bir sorun çıkma ihtimali çok yüksek. O yüzden burada anlaşılmalı bir şey varsa lütfen sorun arkadaşlar. Anlaşılmalı bir şey varsa. Olur mu?
+
+221
+00:32:32,723 --> 00:32:37,523
+B2'den B2'ye geçiş maddesini nasıl bulacaksınız? Bu maddesin tersini alacaksınız arkadaşlar.
+
+222
+00:32:38,103 --> 00:32:39,283
+Onu da ben şimdi almayayım.
+
+223
+00:32:42,503 --> 00:32:44,423
+Maddesin tersini nasıl alacağını biliyorsunuz değil mi?
+
+224
+00:32:48,383 --> 00:32:51,403
+B2'den B1'e geçiş maddesi eşittir.
+
+225
+00:32:55,700 --> 00:33:00,160
+B1'den B2'ye geçiş maddesinin tersi, bu da eşittir.
+
+226
+00:33:01,200 --> 00:33:08,220
+1 bölü, determinant, işte buna P maddesi diyelim artık yazıp durmayayım.
+
+227
+00:33:08,620 --> 00:33:13,840
+Determinant P çarpı ek P şeklinde bulacaksınız.
+
+228
+00:33:16,160 --> 00:33:21,740
+Peki, geldik 3. soruya, şıkka.
+
+229
+00:33:23,188 --> 00:33:35,087
+Üçte ne diyor? Üçte de diyor ki, onun B1'e göre bazı buysa, şey pardon, koordinat vektörü buysa, B2'ye göre nedir diyor.
+
+230
+00:33:36,688 --> 00:33:47,228
+Şimdi mecburen burada biz B1, B2, B3, W1, W2, W3 bilmediğimiz için arkadaşlar, ne yapmamız gerekiyor? Bu teoremi.
+
+231
+00:33:48,051 --> 00:34:01,352
+Biraz önce üstünü çizdiğim teoremi kullanmamız lazım. Yani 1, 0, 3 eşittir.
+
+232
+00:34:05,107 --> 00:34:05,607
+Ne
+
+233
+00:34:13,652 --> 00:34:22,891
+B2'den B1'e U B2.
+
+234
+00:34:24,492 --> 00:34:35,351
+Ben neyi arıyorum? U B2'yi arıyorum. O halde sol taraftan ne ile çarpacağım? Şunun tersi ile çarpacağım.
+
+235
+00:34:41,492 --> 00:34:44,771
+B1, B2 ile çarparsam,
+
+236
+00:34:48,244 --> 00:34:54,664
+Neyi elde ederim? U, B2'yi elde ederim. Doğru mu?
+
+237
+00:35:01,108 --> 00:35:02,488
+Burası anlaşıldı mı arkadaşlar?
+
+238
+00:35:08,980 --> 00:35:32,600
+Peki. Yani bu soru tam sınavda çıkacak soru. Tekrar üstüne basıyorum, bakın söylüyorum. Yani sınav sorusunu ben hazırlamıyorum ama ben olsam böyle bir şey sorardım. Çünkü diğerleri hem çok uğraştırıyor hem de ne derler? Yani şu teoremi uygulamanın bir şeyi yok orada, anlamı yok ama burada mecburen uyguluyorsunuz bakın.
+
+239
+00:35:40,500 --> 00:35:43,300
+ve B2'ye göre nedir?
+
+240
+00:35:44,819 --> 00:35:52,279
+M, B1'den B2'ye ve B1'dir.
+
+241
+00:35:54,679 --> 00:35:56,420
+Bunu arıyorum ben.
+
+242
+00:35:57,279 --> 00:35:59,519
+Soldan şu maddesin tersiyle çarpacağım.
+
+243
+00:35:59,599 --> 00:36:00,939
+Bu maddesin tersi nedir?
+
+244
+00:36:01,880 --> 00:36:04,439
+B2'den B1'e geçiş maddesidir.
+
+245
+00:36:04,439 --> 00:36:05,000
+O halde.
+
+246
+00:36:09,780 --> 00:36:19,400
+B2'den B1'e geçiş maddesi çarpı, işte bu neymiş? 2-1, 2-2 eşittir.
+
+247
+00:36:21,220 --> 00:36:25,600
+V'nin B1'e göre koordinat vektörüne.
+
+248
+00:36:27,380 --> 00:36:30,480
+Tamam mı arkadaşlar? Bunlara tekrar bakın, çözün kendiniz.
+
+249
+00:36:44,659 --> 00:36:51,699
+Evet. Bu konuyu zaten anlatmıştık ama bir tekrar ettik. Burada sormak istediğiniz bir şey var mı?
+
+250
+00:36:58,099 --> 00:37:04,960
+Biraz anlaşılması zor bir konu ama arkadaşlar, zor bir konu değil, anlaşılması zor sadece.
+
+251
+00:37:06,359 --> 00:37:10,859
+Tekrar ederseniz, bir iki tane soru çözerseniz, anlaşılmayacak hiçbir şey yok. Peki.
+
+252
+00:37:13,099 --> 00:37:15,920
+Geldik şimdi, özdeğer ve özvektörler.
+
+253
+00:37:16,819 --> 00:37:18,720
+Burada şeyden de bahsedilmiş arkadaşlar.
+
+254
+00:37:24,884 --> 00:37:27,684
+Bunlar yok bizim konularımızın iç dersinde.
+
+255
+00:37:32,980 --> 00:37:50,260
+Mehmet Emin Hoca genel kültür olsun diye koymuş herhalde ama şu anda genel kültürlük bir durumumuz yok. Merak edenler baksınlar. Yani benim yok en azından çünkü konular yetişmiyor. Güzel konular bunlar. Bunlar yok.
+
+256
+00:37:54,099 --> 00:37:58,319
+Olmaması lazım. Şimdi aklıma şey düşüyor. Bir bakayım hemen hızlıca.
+
+257
+00:38:13,076 --> 00:38:29,115
+Evet, koordinat geçişim matrisi, bunu hallettik, özdeğer, özvektör, Kale-i Hamut'ın töre mi? O kadar. Diagonalleştirme ya da neydi diğeri? Benzer matrisler yok. Tamam.
+
+258
+00:38:36,019 --> 00:38:41,179
+Özdeğer ve özvektör konusu çok kolay bir konu, zevkli de bir konu, bunu seversiniz diye birbiriyle diyorum.
+
+259
+00:38:48,340 --> 00:38:58,320
+Arkadaşlar, elinizde bir karisel matris var, kara matris, ve sıfırdan farklı bir tane x vektörü var.
+
+260
+00:39:00,340 --> 00:39:09,260
+Eğer a çarpı x vektörü a matristi, a çarpı x vektörü eşittir, yani vektör dedim aslında benim ne arkadaşlar?
+
+261
+00:39:10,079 --> 00:39:13,500
+Sütun matris, yani hani vektörle matris nasıl çarpıyoruz diye düşünmeyin.
+
+262
+00:39:16,436 --> 00:39:35,195
+Tanımlamıştık zaten. A çarpı x eşittir, lambda çarpı x eşitliğini sağlayan lambdalara, A maddesinin özdeğeri, eigen valyosu, bu eigen şeyden geliyor, Almancadan proper, temel gibi bir şey, yani demek.
+
+263
+00:39:36,716 --> 00:39:42,336
+Ya da esas demek herhalde. Esas değeri de deniyor mu bilmiyorum. Zaten ki özdeğeri diyor burada.
+
+264
+00:39:44,083 --> 00:39:46,083
+özdeğeri deniyor.
+
+265
+00:39:46,963 --> 00:39:47,123
+Tamam.
+
+266
+00:39:48,543 --> 00:39:57,943
+A çarpı x eşittir, lambda çarpı x koşulunu sağlayan lambdalara ne deniyormuş?
+
+267
+00:40:01,460 --> 00:40:16,360
+A maddesinin özdeğeri, bu lambda'ya karşılık gelen x'lere de, lambda'ya karşılık gelen özvektör, aygâmektör deniyor.
+
+268
+00:40:21,043 --> 00:40:40,063
+Bilmemiz gereken şu eşitlik, a çarpı x eşittir, lambda çarpı x koşulunu sağlayan, lambdalara özdeğer, bu özdeğeri yerine yazıp, denklemi çözdüğünüz zaman elde ettiğiniz x'lere de, lambda karşılık gelen özvektör deniyor.
+
+269
+00:40:42,643 --> 00:40:47,563
+Sıfır vektörü özvektör olamıyor. Neden? Çünkü sıfırdan farklı vektör dedi tanımda.
+
+270
+00:40:48,596 --> 00:40:59,675
+x için. Ancak bu eşitliği çözdüğünüzde özdeğer sıfır olabilir. Yani özdeğer sıfır çıkabilir. Ancak ne olacak o zaman?
+
+271
+00:41:01,175 --> 00:41:09,755
+a çarpı x eşittir. Bu defa sıfır olacak. Yani a maddesinin tersi olmayacak.
+
+272
+00:41:12,659 --> 00:41:22,359
+Buradan güzel bir sonuç çıkar o zaman. Demek ki A maddesinin tersi olabilmesi için, bakın bu önemli güzel bir teorem.
+
+273
+00:41:25,639 --> 00:41:30,659
+Demek ki öz değerlerinden hiçbirinin sıfır olmaması gerekiyor.
+
+274
+00:41:38,003 --> 00:42:00,783
+A maddisinin tersi varmış. Şimdiye kadar A maddisinin tersinde olması için neyi kullanıyorduk mesela? Determinatın sıfırdan farklı olmasını kullanıyorduk. Şimdi mesela özdeğerini, sıfır özdeğerini içermemesi olarak da kullanabiliriz. Yani sınavda da böyle bir şey karşınıza çıkarsa şaşırmayın. Tamam mı?
+
+275
+00:42:07,507 --> 00:42:26,288
+Karısel matrisinin lambda özlerine karşılık gelen özvektörlerin kümesine A matrisinin özuzayı da deniyor. Bunu çok kullanmıyoruz ama özuzay da deniyor buna. Yani özvektörlerini buluyorsunuz. Özvektörlerinden oluşan kümeye özuzay da deniyor.
+
+276
+00:42:40,659 --> 00:42:41,700
+Şuradan size bir
+
+277
+00:42:47,476 --> 00:42:48,496
+Örnek yazayım.
+
+278
+00:42:50,936 --> 00:42:52,656
+1, 1, eksi 2, 4.
+
+279
+00:43:20,820 --> 00:43:21,640
+2, 2,
+
+280
+00:43:23,840 --> 00:43:25,080
+x'i 1,
+
+281
+00:43:26,340 --> 00:43:26,640
+2.
+
+282
+00:43:32,500 --> 00:43:42,639
+Bu maddesin arkadaşlar, özdeğer ve özvektörlerini bulalım. Hiçbir şey bilmiyoruz şu anda. Sadece deneyelim bakalım, bulabilecek miyiz elimizdeki bilgilerle.
+
+283
+00:43:42,639 --> 00:43:58,860
+Sadece neyi biliyorum ben? A çarpı x vektörü eşittir. Lambda çarpı x olacak şekilde lambdalara ne deniyormuş? Özdeğer.
+
+284
+00:43:59,315 --> 00:44:10,836
+Önce özveri bulunmamız lazım. Peki, burada x vektörü mecburen ne olmalı? 2 çarpı 1 tipinde, yani x1, x2 formunda olmalı.
+
+285
+00:44:27,411 --> 00:44:38,751
+x2 eşittir, lambda çarpı x1, x2. Bu durumda ne olacak arkadaşlar? İki tane x1,
+
+286
+00:44:42,547 --> 00:44:47,647
+Artı iki tane x2, eşittir.
+
+287
+00:44:49,647 --> 00:44:51,407
+Lambda çarpı x1,
+
+288
+00:44:54,607 --> 00:44:56,167
+eksi bir tane x1,
+
+289
+00:44:57,667 --> 00:44:59,187
+artı iki tane x2,
+
+290
+00:45:00,687 --> 00:45:01,307
+eşittir.
+
+291
+00:45:04,067 --> 00:45:05,467
+Lambda tane x2.
+
+292
+00:45:08,083 --> 00:45:21,703
+Peki, burada x1 var, burada da x1 var. Diğer tarafa atalım, bu x1, x2'yi. Bu durumda ne oluyor arkadaşlar? x1 parantezinde 2 eksi lambda.
+
+293
+00:45:25,427 --> 00:45:31,647
+x1 artı iki tane x2 eşittir ne? 0.
+
+294
+00:45:35,731 --> 00:45:37,032
+Bununla bu tarafa aldım.
+
+295
+00:45:37,931 --> 00:45:45,172
+Eksi x1 artı 2 eksi lambda.
+
+296
+00:45:47,172 --> 00:45:49,331
+Şöyle yazayım niye buradan başladıysam.
+
+297
+00:45:52,751 --> 00:45:56,751
+Eksi x1 artı 2 eksi lambda.
+
+298
+00:45:59,431 --> 00:46:01,251
+x2 eşittir 0.
+
+299
+00:46:01,748 --> 00:46:16,528
+Şimdi, ben bu homojen denklem sisteminin sıfır çözümünden başka çözümünün olmasını istiyorum. Neden? Neden sıfır çözümünden başka çözüm olmalı? Bilen var mı?
+
+300
+00:46:20,851 --> 00:46:37,211
+Çünkü sıfır çözüm olursa, bu durumda x vektörü, evet, x vektörü sıfır vektörü olur. O zaman da ben ne özdeğerden bahsedebilirim, ne özvektörden bahsedebilirim. O yüzden bu homojen denklem sisteminin sıfır çözümünden başka çözümünün olması lazım.
+
+301
+00:46:57,748 --> 00:47:04,987
+Bunun da yolu ne? Determinantın, Cassieler matrisinin determinantının nedir o da?
+
+302
+00:47:06,228 --> 00:47:18,307
+2 eksi lambda, 2, eksi 1, 2 eksi lambda. Bu determinantın sıfıra eşit olması.
+
+303
+00:47:18,867 --> 00:47:23,327
+Çünkü sıfıra eşit olursa sonsuz sayıda çözüm vardır. Eğer sıfırdan farklı olsaydı,
+
+304
+00:47:23,891 --> 00:47:32,092
+Tek çözüm olurdu. O da neydi? Sıfır çözümü. O halde, bu ne oldu? 2 eksi lambdanın karesi,
+
+305
+00:47:37,811 --> 00:47:46,631
+Artı 2, eşittir 0. İşte buradan lambdaları bulabiliriz. Değil mi arkadaşlar? İnşallah güzel bir denklem çıkar.
+
+306
+00:47:48,691 --> 00:47:55,911
+Çünkü kafadan uydurdum matrisi. Ne oldu? 4 eksi 2 lambda, pardon 4 lambda.
+
+307
+00:48:00,307 --> 00:48:04,467
+Artı lambda kare, artı iki eşittir sıfır.
+
+308
+00:48:06,407 --> 00:48:07,427
+Lambda kare,
+
+309
+00:48:11,603 --> 00:48:27,263
+eksi 4, lambda, artı 6, eşittir 0. Bunun güzel bir çözümü var mı? Yok herhalde. Tamam.
+
+310
+00:48:32,628 --> 00:48:34,220
+lambda iksi
+
+311
+00:48:42,579 --> 00:48:43,579
+Ne çıkıyor buradan?
+
+312
+00:48:52,275 --> 00:49:12,336
+Kökler, kökle kök şey mi çıkıyor? Daha güzel bir şey olsaydı keşke. Evet. Kafadan atınca. Şimdi arkadaşlar, tamam, şöyle yapılıyor. Size böyle irasyonel bir şey sorulmaz. Ben bunu kafadan attığım için böyle çıktı.
+
+313
+00:49:13,795 --> 00:49:17,615
+Diyelim ki, şöyle olsun bu. Yaptık.
+
+314
+00:49:19,092 --> 00:49:38,411
+Ama tabi orada yerine yazınca farklı çıkar ama yapacak bir şey yok. Lambda kare eksi, 5 lambda artı 6 oldu. O zaman ne olur bu? 3'e 2. Lambda eşittir 2 ve lambda eşittir 3. İki tane özdeğer bulduk. Bu arada matris kaça kaçtıksa o kadar özdeğer çıkıyor. Değil mi?
+
+315
+00:49:40,788 --> 00:50:05,988
+Daha sonra bu bulduğunuz özvektörü bulacağız ya, örnek yapacağız. Ben daha mantığını anlatmak için bunu yazdım. Lambda eşittir 2'ye karşılık gelen neyi bulacağız arkadaşlar? Özvektörü. Ne yapacaksınız? Tabii bu aslında 2 bunun şeyi değil ama ne derler? Öz değeri değil ama öyleymiş gibi yazıyorum. Şurada lambdanın yerine 2 yazacaksınız.
+
+316
+00:50:11,059 --> 00:50:34,500
+Lambda'nın yerine 2 yazarsak, burası da 2 oluyor, burası da 2 oluyor. Bu durumda tabii büyük ihtimalle yanlış çıkacak. Bunlar gitti, x2 0 çıkıyor tabii evet yanlış çıktı. x2 0 çıkarsa x1 de 0 çıkıyor. Oradan vektörü bulacağız. Tamam mı? Böyle yapılıyor.
+
+317
+00:50:36,500 --> 00:50:39,139
+Karakteristik denklem neymiş? Şuymuş.
+
+318
+00:50:42,931 --> 00:50:44,351
+Karakteristik denklem.
+
+319
+00:50:45,112 --> 00:50:52,071
+N çarpı N tipindeki karisel matris için, dedik ya, A çarpı X eşittir, lambda çarpı X olacak.
+
+320
+00:50:52,692 --> 00:50:55,011
+Lambda X'i bu tarafa aldık biraz önce yaptığımız gibi.
+
+321
+00:50:55,871 --> 00:50:57,172
+X parantezine aldık.
+
+322
+00:50:58,192 --> 00:51:01,031
+Şimdi X parantezine alınca, ne oldu?
+
+323
+00:51:02,231 --> 00:51:04,112
+A çarpı lambda çarpı IN.
+
+324
+00:51:04,311 --> 00:51:05,531
+Neden lambda çarpı IN?
+
+325
+00:51:07,331 --> 00:51:09,172
+Çünkü bu bir sabit.
+
+326
+00:51:09,748 --> 00:51:22,527
+Sabiti bir ile çarpamazsın. Çünkü matris olması lazım. Matrisle işlem yapıyorum. O yüzden birim matris. A eksi lambda çarpı birim matris çarpı x eşittir sıfır.
+
+327
+00:51:26,867 --> 00:51:37,148
+Burada arkadaşlar, biraz önce neden determinant aldık? Bunun sıfır çözümünden başka çözümün olabilmesi için determinant aldık, hatırlayın.
+
+328
+00:51:37,148 --> 00:51:42,587
+İşte o yüzden diyor ki, şu aşağıdaki notta.
+
+329
+00:51:49,940 --> 00:52:16,380
+Determinant yazmayı unutmuş buraya. Pardon, 0 diyor. Tamam, aşağıda da determinant diyecek. Ne kadar uzatmış ki? Evet arkadaşlar, determinant A eksi lambda çarpı Ön eşittir 0 denklemine biz A denkleminin karakteristik denklemi diyoruz.
+
+330
+00:52:17,043 --> 00:52:25,043
+Karşınıza çıkacak, lambda'ya bağlı polinoma da, A'nın karakteristik polinomu diyoruz.
+
+331
+00:52:27,663 --> 00:52:33,163
+Determinant, A-lamba çarpı, Ön, eşittir sıfırı yapıyorsunuz.
+
+332
+00:52:34,703 --> 00:52:38,823
+Buradan, lambdaları buluyorsunuz, özdeğerleri buluyorsunuz.
+
+333
+00:52:39,563 --> 00:52:41,323
+Özdeğerleri bulduktan sonra da,
+
+334
+00:52:42,003 --> 00:52:48,364
+O öz değerlere karşılık özvektörleri, şu eşitliği kullanarak,
+
+335
+00:52:53,588 --> 00:52:54,347
+buluyoruz.
+
+336
+00:52:57,048 --> 00:53:04,108
+Şimdi burada çok hayati bir not var. Bakın bu da çok önemli arkadaşlar.
+
+337
+00:53:12,947 --> 00:53:17,127
+Polinomda baş kas sayı mı deniyor polinomun?
+
+338
+00:53:17,647 --> 00:53:19,027
+an-1 yani şu
+
+339
+00:53:25,748 --> 00:53:26,947
+Ne yapmış? A ne eksik?
+
+340
+00:53:27,728 --> 00:53:29,807
+Buna gerek yok ya. Şu arkadaşlar.
+
+341
+00:53:32,367 --> 00:53:38,967
+Polinom, karakteristik polinom, neye eşitmiş? Bakın, 2 çarpı 2 tipindekiler için söylüyor.
+
+342
+00:53:39,887 --> 00:53:41,788
+2 çarpı 2 tipinde bir A maddesi için.
+
+343
+00:53:44,268 --> 00:53:48,788
+Lambda kare eksi iz A çarpı lambda artı determinant A.
+
+344
+00:53:48,987 --> 00:53:52,487
+Bakın bu çok önemli ve çok kullanışlı bir tören.
+
+345
+00:53:54,452 --> 00:54:08,152
+Tamam mı? Genel anlamda da polinomun sabiti, a'nın determinantına eşit.
+
+346
+00:54:10,672 --> 00:54:13,512
+A ne? Eksi bir yanlış yazdı sanki onu.
+
+347
+00:54:28,179 --> 00:54:35,079
+İyi de o kasayı ne işimize erecek ki bizim? Neyse, yapacak bir şey yok. O şeyden geliyor. Tamam.
+
+348
+00:54:37,900 --> 00:54:49,099
+Özellikten geliyor. Tamam. An-1 de, yani bunu bir arada kullanmıyoruz ama, şu An-1 de, yani N-1 dereceye sahip.
+
+349
+00:54:52,019 --> 00:55:01,820
+Polinomun ne eksi birinci dereceden ki kas sayısı da şu eşitlikte bulunuyor. Ama sabit önemli bence. Bir de şu denklem önemli.
+
+350
+00:55:05,588 --> 00:55:09,588
+Bir tane de örnek olması lazım ama...
+
+351
+00:55:13,811 --> 00:55:15,831
+Burada, şey not, pardon.
+
+352
+00:55:17,411 --> 00:55:26,091
+Şimdi arkadaşlar, size bir madris verildiğinde, karşısal madris verildiğinde özler ve özvektörleri nasıl buluyorsunuz?
+
+353
+00:55:26,091 --> 00:55:36,091
+Bir, determinant, a-lambda, ön, eşittir sıfırı yazıp, buradan lambdaları buluyorsunuz.
+
+354
+00:55:37,111 --> 00:55:39,471
+Yani önce karakter eksik polinom çıkıyor tabii karşınıza.
+
+355
+00:55:39,856 --> 00:55:44,716
+Bu karakteristik polinom kökleri size özdeğerleri veriyor.
+
+356
+00:55:46,436 --> 00:55:50,516
+Yani lambda 1, lambda 2, işte kaç çarpı kaçlıksa.
+
+357
+00:55:51,756 --> 00:55:59,376
+Bulunan bu özdeğerleri şu denklemde yerine yazarak her bir özdeğer için o özdeğere karşılık gelen neyi buluyoruz?
+
+358
+00:56:00,956 --> 00:56:03,456
+Özvektörü buluyoruz. Bu kadar.
+
+359
+00:56:06,516 --> 00:56:14,175
+Eğer, bakın yine bu da çok hayati bir not, özellik ne derseniz deyin, işinizi çok kolaylaştırır.
+
+360
+00:56:17,115 --> 00:56:22,756
+Üşgensel bir matris ise özdeğerler, köşegendeki elemanlardır.
+
+361
+00:56:23,756 --> 00:56:26,336
+Üşgensel dediği alt üçgensel, üst üçgensel de olabilir.
+
+362
+00:56:27,135 --> 00:56:33,816
+Demek ki köşegendeki elemanlar, üçgensel matris de bize özdeğerleri veriyormuş.
+
+363
+00:56:35,347 --> 00:56:44,867
+Eğer katlı kökü varsa, karakteristik polinomun, bu durumda katlı özdeğeri de olacak.
+
+364
+00:56:45,048 --> 00:56:52,528
+Tabii o özdeğeri karşılık gelende, mesela atıyorum, lambda 1 eşittir, lambda 2, o da eşittir, 2 çıktı.
+
+365
+00:56:53,648 --> 00:56:59,367
+Bu durumda, lambda 1 eşittir 2 için, 2 tane özvektör çıkıyor arkadaşlar.
+
+366
+00:57:03,155 --> 00:57:07,055
+Çünkü bir lambda 1 eşittir 2, bir de lambda 2 eşittir 2 için.
+
+367
+00:57:12,596 --> 00:57:22,596
+Gelelim şimdi. Bu direkt böyle şey örnekle başlamış. Ben diğer örneği yazmak istiyorum. Buna da bakarız.
+
+368
+00:57:24,596 --> 00:57:25,796
+Bakayım şurada.
+
+369
+00:57:32,148 --> 00:57:36,548
+Şimdi şeyi yazayım, Mısır'a, katlı kök derken şundan bahsediyor.
+
+370
+00:57:40,403 --> 00:57:46,884
+Determinant, a-lambda çarpı öne eşittir sıfır yazdınız.
+
+371
+00:57:50,804 --> 00:58:17,804
+Buradan lambda'ya bağlı, mesela atıyorum, lambda eksi 2'nin karesi eşittir, sıfır çıktı bu denklemde. Bu durumda ne oldu? Lambda 1, lambda 2 eşittir, 2. 2, 2 katlı kök. Yani 2 özdeğer ama katlı özdeğer, onu söylüyorum. Tamam mı?
+
+372
+00:58:20,532 --> 00:58:22,832
+Şimdi şu maddesi değil de
+
+373
+00:58:27,827 --> 00:58:29,927
+Bununla katlı köp çıkıyor muydu? Bakalım.
+
+374
+00:58:34,728 --> 00:58:37,307
+1, 2, eksi 1, 1, 0, 1.
+
+375
+00:58:38,648 --> 00:58:39,987
+1, 2, eksi 1.
+
+376
+00:59:02,387 --> 00:59:03,507
+4x4, 5
+
+377
+00:59:09,172 --> 00:59:16,052
+Evet arkadaşlar, verilen A maddesinin bütün özdeğer ve özvektörlerini bulalım.
+
+378
+00:59:18,692 --> 00:59:23,612
+Bunun için ne yapacağız? Önce karakteristik polinomu oluşturacağız. Karakteristik polinom neydi?
+
+379
+00:59:30,036 --> 00:59:34,715
+a eksi, lambda çarpı, burada i ne olacak? i3.
+
+380
+00:59:38,135 --> 00:59:42,036
+Eşittir, sıfır eşit diyeceğiz. Peki, determinant için de yazalım şunu.
+
+381
+00:59:50,643 --> 00:59:56,343
+a eksi lambda çarpı i3. Kafanız karışıyorsa lambda i3'ü de hemen yazın buraya.
+
+382
+01:00:04,820 --> 01:00:07,120
+1-Landa
+
+383
+01:00:10,612 --> 01:00:24,452
+2-1, 1, 0-Lamda, 1, 4-4, 5-Lamda.
+
+384
+01:00:33,940 --> 01:00:38,260
+Eşittir sıfır ise, determinantı alalım arkadaşlar. Ne oluyor?
+
+385
+01:00:40,559 --> 01:00:41,579
+Bir eksi lambda.
+
+386
+01:00:49,331 --> 01:00:53,291
+Eksi lambda çarpı, bir eksi lambda, beş eksi lambda.
+
+387
+01:01:03,603 --> 01:01:06,423
+Sonra 2 artı 8
+
+388
+01:01:06,423 --> 01:01:09,923
+Sonra
+
+389
+01:01:09,923 --> 01:01:12,123
+Artı 4
+
+390
+01:01:12,123 --> 01:01:15,003
+Sonra
+
+391
+01:01:15,003 --> 01:01:20,123
+Eksi 4 lambda
+
+392
+01:01:24,500 --> 01:01:25,139
+Sonra,
+
+393
+01:01:27,139 --> 01:01:28,639
+eksi iki çarpı,
+
+394
+01:01:33,076 --> 01:01:34,336
+5 eksi lambda.
+
+395
+01:01:37,016 --> 01:01:37,715
+Sonra
+
+396
+01:01:41,715 --> 01:01:43,235
+Artı 4 çarpı,
+
+397
+01:01:44,335 --> 01:01:47,195
+Artı 4 çarpı 1 eksi lambda.
+
+398
+01:01:50,076 --> 01:01:50,416
+Evet.
+
+399
+01:01:56,371 --> 01:01:57,111
+Şuraya yazalım.
+
+400
+01:02:06,099 --> 01:02:15,099
+Lütfen beni takip edin. Yanlış çarpma ihtimalim çok yüksek. O yüzden önce şöyle yapayım.
+
+401
+01:02:15,099 --> 01:02:31,559
+Eksi lambda artı lambda kare çarpı 5 eksi lambda artı 12.
+
+402
+01:02:34,547 --> 01:02:39,847
+eksi 4, lambda, eksi 10,
+
+403
+01:02:46,963 --> 01:02:48,783
+Eksi 10 artı 2 lambda.
+
+404
+01:02:56,403 --> 01:03:00,563
+Artı 4 eksi 4 lambda. Şimdi şurayı yapalım.
+
+405
+01:03:02,623 --> 01:03:05,043
+Ne olacak arkadaşlar? Eksi 5 lambda.
+
+406
+01:03:07,543 --> 01:03:08,763
+Artı lambda kare.
+
+407
+01:03:10,423 --> 01:03:12,043
+Artı 5 lambda kare.
+
+408
+01:03:16,596 --> 01:03:17,415
+Üçsün
+
+409
+01:03:21,588 --> 01:03:35,348
+Lambda küp, şimdi diğerlerini de yapalım bakalım ne oluyor. 12, 2, 6, artı 6, eksi 4, eksi 2 lambda, eksi 6 lambda değil mi?
+
+410
+01:03:36,228 --> 01:03:48,408
+Eksi 6 lambda. En son ne oldu? Eksi lambda küp, 5 lambda kare, artı 6 lambda kare.
+
+411
+01:03:52,371 --> 01:03:54,471
+İkisi 11 lamba.
+
+412
+01:03:57,940 --> 01:04:01,079
+Artı 6 eşittir 0.
+
+413
+01:04:10,804 --> 01:04:21,744
+Biz tabii genel anlamda, ben en azından siz de öylesinizdir. Şu en yüksek dereceli terminin negatif olmasını sevmeyiz. Bunu şöyle de yazabiliriz arkadaşlar. Eksi ile çarpma olan her tarafı.
+
+414
+01:04:25,811 --> 01:04:26,611
+Şuraya yazalım.
+
+415
+01:04:29,051 --> 01:04:32,231
+Bu karakteristik polinom değil mi? P lambda yani.
+
+416
+01:04:34,831 --> 01:04:37,891
+P lambda eşittir. Eksiyle çarptım.
+
+417
+01:04:39,111 --> 01:04:46,471
+Lambda küp, eksi 6 lambda kare artı 11 lambda eksi 6.
+
+418
+01:04:47,131 --> 01:04:52,171
+Şimdi bunun kökleri ne olacakmış? Bana öz değerleri verecekmiş.
+
+419
+01:04:53,364 --> 01:05:00,483
+Üçüncü dereceden, ikinci dereceden polinomun köklerini bulmasını biliyoruz ama, üçüncü dereceden polinomun köklerini nasıl buluyoruz kolay yoldan?
+
+420
+01:05:01,443 --> 01:05:04,923
+Bir tane kök önce belirlememiz lazım, bu denklemi sağlayan.
+
+421
+01:05:05,503 --> 01:05:06,344
+Eşittir sıfır.
+
+422
+01:05:06,963 --> 01:05:08,163
+Bu da nedir arkadaşlar?
+
+423
+01:05:08,384 --> 01:05:14,423
+Ya artı eksi birdir, ya da şu sabitin çarpanlarından birisidir.
+
+424
+01:05:15,315 --> 01:05:26,495
+Artı eksi ikidir ya da artı eksi üçtür. Kolaylık olarak önce bence bir deneyelim. Bir yazdım ne oldu? Lambda eşittir bir için.
+
+425
+01:05:30,260 --> 01:05:47,180
+1, eksi 5, artı 6, ooo sıfır, süper. Demek ki lambda 1 eşittir 1 için, lambda 1 diyelim hatta buna, neyse.
+
+426
+01:05:48,600 --> 01:05:52,920
+T1 eşittir 0 olduğundan, lambda 1 eşittir 1, bir kök.
+
+427
+01:05:53,280 --> 01:05:55,540
+Bu durumda şöyle yapıyorsunuz arkadaşlar.
+
+428
+01:05:56,100 --> 01:06:09,220
+Lambda bir kökse bunu lambda küp eksi 6 lambda kare artı 11 lambda eksi 6'yı lambda eksi 1'e bölüyorsunuz.
+
+429
+01:06:09,220 --> 01:06:16,160
+Çünkü lambda bir kök olduğu için bu polinom lambda eksi 1 çarpı ikinci dereceden bir polinom demek. Değil mi?
+
+430
+01:06:17,860 --> 01:06:20,220
+Şimdi o ikinci dereceden polinomu bulursak.
+
+431
+01:06:20,596 --> 01:06:23,436
+İki dereceden polinomları köklerine ayırmayı biliyoruz.
+
+432
+01:06:24,275 --> 01:06:27,576
+Lambda küpün içinde lambda kaç defa var? Lambda kare tane var.
+
+433
+01:06:30,036 --> 01:06:42,576
+Çarptım. Lambda küp eksi lambda kare. Bunu çıkarttım. Ne oldu? Eksi 5 lambda kare mi oldu?
+
+434
+01:06:43,699 --> 01:07:09,039
+Eksi 5 lambda kare, artı 11 lambda, eksi 6. Bunu da 5 lambda, eksi 5 lambda ile çarpmam lazım. Ne yaptı? Eksi 5 lambda kare, artı 5 lambda. Bunu da çıkarttım. 0, 6 lambda, eksi 6.
+
+435
+01:07:09,876 --> 01:07:19,876
+6 ile çarpmam gerekiyor. Artı 6. Çarparsam ne oluyor? 6 lambda eksi 6, 0. Demek ki, PL' amda...
+
+436
+01:07:23,572 --> 01:07:34,971
+Eşittir. Lambda eksi bir çarpı, lambda kare eksi beş lambda artı altı imiş. Bunun kökleri neler? Eksi bu.
+
+437
+01:07:38,579 --> 01:07:43,059
+Bunun köklere, eksi 2 ile eksi 3'ün çarpımı, eksi 2 ile eksi 3'ün toplamı yani,
+
+438
+01:07:46,400 --> 01:07:56,279
+lambda eksi 1 çarpı, lambda eksi 2 çarpı, lambda eksi 3. O halde özdeğerler neymiş arkadaşlar?
+
+439
+01:07:58,420 --> 01:08:04,900
+Özdeğerler, lambda 1, 1, lambda 2, 2,
+
+440
+01:08:05,684 --> 01:08:17,324
+Lambda 3 eşittir, 3'müş. Özdeğerleri bulduk. Tamam. Buraya kadar anlaşılmayan bir şey var mı?
+
+441
+01:08:24,948 --> 01:08:25,748
+Yok herhalde.
+
+442
+01:08:27,988 --> 01:08:38,448
+Bulduktan sonra, eğer özvektörleri sordu ya bize, özvektörleri mesela lambda bir eşittir bir için, bire karşılık gelen özvektörleri bulacağız. Şurayı siliyorum.
+
+443
+01:08:41,188 --> 01:08:41,708
+Silemiyorum.
+
+444
+01:09:11,220 --> 01:09:27,500
+Şimdi de, a eksi, lambda çarpı, ön çarpı x, eşittir, sıfır olacak şekildeki x'i arıyorum.
+
+445
+01:09:28,059 --> 01:09:35,020
+Lambdanın yerine ne yazacağım? Lambda bir eşittir, bir için ben özvektör arıyorum. O halde, a matrisi neydi?
+
+446
+01:09:35,020 --> 01:09:36,819
+Ne güzel, a matrisi.
+
+447
+01:09:38,260 --> 01:09:42,500
+1, 2, eksi, 1. Neyi çıkartacağız bundan? Birimi çıkartacağız.
+
+448
+01:09:47,988 --> 01:09:48,587
+Yani
+
+449
+01:09:52,180 --> 01:09:54,180
+Birden bir çıktı, sıfır,
+
+450
+01:09:57,120 --> 01:09:58,060
+iki eksi bir,
+
+451
+01:10:03,636 --> 01:10:05,636
+1-1
+
+452
+01:10:10,644 --> 01:10:19,364
+1, 4, eksi 4, 5'ti bu, 5 eksi 1, 4 kaldı.
+
+453
+01:10:22,104 --> 01:10:27,724
+x1, x2, x3 eşittir, 0.
+
+454
+01:10:28,524 --> 01:10:31,424
+Buradan x1, x2, x3'ü çekeceğiz arkadaşlar.
+
+455
+01:10:34,184 --> 01:10:37,484
+Denklemi yazmama gerek yok. Var mı?
+
+456
+01:10:39,252 --> 01:10:41,471
+Yani yazayım hadi, bu defalık.
+
+457
+01:10:43,152 --> 01:10:43,731
+x2
+
+458
+01:10:43,731 --> 01:10:47,832
+eksi
+
+459
+01:10:47,832 --> 01:10:50,912
+x3 eşittir sıfır. Buradan
+
+460
+01:10:50,912 --> 01:10:53,471
+x2 eşittir x3 çıktı.
+
+461
+01:10:55,971 --> 01:10:57,432
+x1 eksi
+
+462
+01:10:57,432 --> 01:10:58,372
+x2
+
+463
+01:10:58,372 --> 01:11:01,352
+artı x3
+
+464
+01:11:01,352 --> 01:11:02,652
+eşittir sıfır.
+
+465
+01:11:07,988 --> 01:11:34,708
+Buradan da, 4 tane x1 eksi, 4 tane x2, artı 4 tane x3 eşittir 0. Normalde bunu, şeyle, Gauss-Jordan'la ya da işte kramer ile falan çözebilirsiniz. Ama hiç gerek yok. Neden hiç gerek yok? x2 eşittir, x3'müş. Bu durumda x1 ne çıkıyor? 0.
+
+466
+01:11:37,076 --> 01:11:38,536
+Hangi baştaki mısra?
+
+467
+01:11:41,756 --> 01:11:43,036
+Baştaki 2 çarpı 2.
+
+468
+01:11:45,876 --> 01:11:47,036
+İki satır şu.
+
+469
+01:11:48,775 --> 01:11:50,076
+0 çarpı x1
+
+470
+01:11:50,076 --> 01:11:53,216
+artı 2 tane x2.
+
+471
+01:11:54,015 --> 01:11:54,996
+Doğru söylüyorsun.
+
+472
+01:11:55,896 --> 01:11:57,756
+Evet, evet, evet. Doğru söylüyorsun. Pardon.
+
+473
+01:11:58,376 --> 01:12:00,355
+Ben bunu neye göre yazdım ki? O zaman yanlış oldu.
+
+474
+01:12:00,536 --> 01:12:00,976
+Tamam, pardon.
+
+475
+01:12:02,056 --> 01:12:02,956
+Teşekkürler. Sağ olun.
+
+476
+01:12:03,380 --> 01:12:23,039
+0x1 artı 2x2, eksi x3 eşittir. 0, buradan x3 eşittir. Tamam, onu yazmama gerek yok.
+
+477
+01:12:32,083 --> 01:12:35,943
+Şimdi arkadaşlar, şunu elementer satır işlemleriyle hemen şeye dönüştürelim.
+
+478
+01:12:37,523 --> 01:12:40,404
+Şey, şu düzelttim mi dedin değil mi [öğrenci]? Onu yanlış yazmışım.
+
+479
+01:12:42,523 --> 01:12:45,543
+Tamam, onu demişsin, tamam. Peki. Hemen şey yapalım.
+
+480
+01:12:47,543 --> 01:12:48,503
+Şuradan göremiyorum ki.
+
+481
+01:12:53,235 --> 01:12:53,755
+1,
+
+482
+01:12:55,536 --> 01:12:56,175
+x1,
+
+483
+01:12:56,935 --> 01:12:57,376
+1,
+
+484
+01:13:02,579 --> 01:13:19,960
+0, 2, eksi 1, 4, eksi 4, 4. Bunu eksi 4 ile çarpıp buraya ekliyorum. Ne oldu? 0, 0, eksi 4 ile çarptım değil mi? 0, eksi 4 ile çarptım 0, eksi 4 ile çarptım 0. Süper.
+
+485
+01:13:22,100 --> 01:13:26,079
+Sonra bunu 1 bölü 2 ile çarptım.
+
+486
+01:13:29,652 --> 01:13:37,412
+1-1 bölü 2. Sonra, bunu buraya ekledim.
+
+487
+01:13:43,028 --> 01:13:49,648
+0, 1 bölü 2. Bu durumda ne oldu arkadaşlar? Bakın, x3, 0 zaten.
+
+488
+01:13:58,515 --> 01:13:59,376
+Pardon, pardon.
+
+489
+01:14:05,203 --> 01:14:31,363
+x1 artı 1 bölü 2 x3 eşittir 0, x2 eksi 1 bölü 2 x3 eşittir 0, x3'ü de ne olarak alacaksınız? R keyfi bir eleman. Çünkü x3 kat sayısı 0 zaten.
+
+490
+01:14:32,115 --> 01:14:51,236
+O halde x1 ne oldu? Yani bunun çözümü şöyle olacak. x1 eşittir, x'i 1 bölü 2, x2 eşittir, 1 bölü 2, x3 eşittir, x3 eşittir, ya da bunu şöyle verirler.
+
+491
+01:14:52,236 --> 01:14:54,515
+Aşağıdakilerden hangisi? Lambda 1.
+
+492
+01:14:55,315 --> 01:15:07,136
+eşittir, 1, R karşılık gelen, özvektörlerden biri olabilir, diye sorar, olabilir. Bu durumda bunu daha güzel yapacak bir ifadeyle çarparsınız.
+
+493
+01:15:07,136 --> 01:15:11,636
+Bu R çarpı, şöyle ya.
+
+494
+01:15:16,340 --> 01:15:28,539
+R çarpı, eksi, 1 bölü 2, 1 bölü 2, 1 ya, ya bu vardır özvektör olarak, ya da bunun şu kesirlerden kurtulmuş hali, yani R'yi 2 olarak alır.
+
+495
+01:15:29,200 --> 01:15:31,180
+R'yi 2 olarak alırsanız ne olur bu?
+
+496
+01:15:37,395 --> 01:16:00,456
+Eksi bir, bir, iki. Sonsuz çözüm var ya, o yüzden ilk bulduğunuz, ya da şu formda yazdığınız özvektör ya da bunu kesirli ifadeden kurtardığınız özvektör olarak yazabilirsiniz. Tamam mı? Anlaşıldı mı? Şimdi gelelim buradaki soruya.
+
+497
+01:16:06,323 --> 01:16:10,724
+Mehmet Emin önce işin kolayına kaçmış diyeceğim ama, yok hesaplamış.
+
+498
+01:16:11,863 --> 01:16:13,203
+Şimdi bu matris nasıl bir matris?
+
+499
+01:16:14,703 --> 01:16:15,943
+Üst üçgensel bir matris.
+
+500
+01:16:17,923 --> 01:16:21,683
+Üst üçgensel matrisde ben ne olduğunu biliyorum arkadaşlar.
+
+501
+01:16:23,683 --> 01:16:29,804
+Bunların, köşegendeki elemanların, özdeğerler olduğunu biliyorum.
+
+502
+01:16:29,804 --> 01:16:31,644
+Demek ki lambda bir eşittir, üç.
+
+503
+01:16:32,948 --> 01:16:39,008
+Lambda 2 eşittir 0, Lambda 3 eşittir 2, özdeğerlenmiş.
+
+504
+01:16:42,388 --> 01:16:44,748
+Gerçekten de öyle mi? İsterseniz kontrol edelim.
+
+505
+01:16:46,868 --> 01:16:49,568
+Çünkü karakteristik polinomu da soruyor.
+
+506
+01:16:53,043 --> 01:16:58,423
+Determinant, a-lamba çarpı u3, eşittir sıfır.
+
+507
+01:17:02,003 --> 01:17:23,484
+3, 2, 6, eksi 8, 0, eksi 1, 6, 0, 0, 1. Eşittir. Lambdalar nereye gitti ya? Arkadaşlar, pardon, bu ne olacak? 3 eksi lambda olacak.
+
+508
+01:17:25,923 --> 01:17:26,644
+Tamam.
+
+509
+01:17:27,956 --> 01:17:29,595
+Bu da eşitli lambda olacak.
+
+510
+01:17:33,235 --> 01:17:34,695
+Bu da iki eksi lamba olacak.
+
+511
+01:17:40,212 --> 01:17:47,532
+Ben zaten bunun determinantının köşegen matris olduğu için ne olduğunu biliyorum. Köşegendeki elemanların çarpımı olduğunu biliyorum.
+
+512
+01:17:49,852 --> 01:17:54,672
+f lambda eşittir. 3 eksi lambda çarpı.
+
+513
+01:17:56,252 --> 01:17:57,672
+Eksi lambda çarpı.
+
+514
+01:18:01,203 --> 01:18:05,603
+İşte, x lambda böyle yazınca sanki eksiymüş gibi görünüyor. O yüzden mecburen böyle yazıyorum.
+
+515
+01:18:06,344 --> 01:18:12,363
+Eksi lambda çarpı, 3 eksi lambda çarpı, 2 eksi lambda.
+
+516
+01:18:14,443 --> 01:18:15,503
+Eşittir sıfır.
+
+517
+01:18:18,724 --> 01:18:24,804
+İse, neyi bulurum ben? Lambdaları bulurum. Lambda bir eşittir sıfır.
+
+518
+01:18:25,484 --> 01:18:28,003
+Burada sırası önemli değil arkadaşlar. Yani şurada öyle yazdım ama.
+
+519
+01:18:28,340 --> 01:18:42,059
+Lambda 1 eşittir 2, lambda pardon 0, lambda 2 eşittir 3, lambda 3 eşittir 2. Yani demek ki gerçekten de köşegendeki elemanlar özdeğerlermiş.
+
+520
+01:18:43,600 --> 01:18:53,979
+Eğer karakteristik polinomu sorduysa bunu ne yapacaksınız? Dağıtacaksınız. Üçüncü dereceden bir polinom karşınıza çıkacak. Mecburen dağıtmanız lazım yoksa şey halini göremezsiniz. Peki.
+
+521
+01:18:54,579 --> 01:19:16,819
+Lambda 1 eşittir sıfıra karşılık gelen neyi bulalım? Özvektörü bulalım. Diğerleri zaten var burada bakarsınız. O halde a eksi lambda çarpı u 3 çarpı x eşittir sıfır olacak şekilde x'i arıyorum.
+
+522
+01:19:22,100 --> 01:19:38,980
+O halde, a çarpı x yani, şuradan, 3 tane x1 artı, 6 tane x2 eksi, 8 tane x3 eşittir, 0.
+
+523
+01:19:44,659 --> 01:19:52,100
+Buradan da 6 tane x3 eşittir, 0 çıktı.
+
+524
+01:19:55,731 --> 01:20:04,771
+Tamam. Bir de ne var? Pardon, iki tane var. Bir de iki tane x3 eşittir. Sıfır çıktı.
+
+525
+01:20:08,275 --> 01:20:15,755
+Bu ne demek? x3 eşittir 0'mış o zaman. x3 eşittir 0, x2'ye r diyeceğim.
+
+526
+01:20:22,804 --> 01:20:25,844
+Niye bu kadar dar oldu ki bu?
+
+527
+01:20:30,644 --> 01:20:47,644
+x3 eşittir 0, x2 eşittir r dedim. Bu durumda x1 ne oldu? Buna r dedim. Bu tarafa aldım. 2r mi oldu? x2r mi oldu x1?
+
+528
+01:20:51,764 --> 01:21:04,584
+Evet, pardon. Evet, evet. x1 eşittir. Eksi 2r. O halde benim lambda eşittir sıfıra karşılık gelen özvektörüm, ona da x1 diyeyim.
+
+529
+01:21:04,584 --> 01:21:18,123
+R çarpı neymiş? Eksi 2, 1, 0 formulaymış. Tamam.
+
+530
+01:21:21,332 --> 01:21:38,231
+A'ya göre çözdük. Çünkü lambda'yı sıfır aldım ya, lambda bir eşittir sıfır özdeğerine karşılık gelen özvektörü bulmak istiyorum. Burası sıfır oldu zaten. Burada bir işimiz kalmadı o zaman. Direkt A'ya göre çözdüm o zaman. Tamam.
+
+531
+01:21:42,676 --> 01:22:06,816
+Diğerleri de burada vardır herhalde. Bakalım, tamam, öz değerleri buldu, karakteristik polinom. Burada sıfırla çarptığımız için sadece a kaldı. Buradan da x3 eşittir 0, yani z dediği, x eşittir eksi 2'ye, yani eksi 2, 1, 0. Artık.
+
+532
+01:22:07,315 --> 01:22:28,255
+O sizin sistemi çözümümüze bağlı. Sistemi çözeceksiniz, bulacaksınız. Diğerleri için de benzer şekilde bulursunuz özvektörleri. Tamam. Bunlar yok dedim sınavda. Benzer matrisler ve şeyler yok. Köşegenleştirme yok.
+
+533
+01:22:33,011 --> 01:22:33,992
+Bunlara bakmayın.
+
+534
+01:22:36,251 --> 01:22:38,671
+Yine çok önemli bir konu, Kale Hamilton töremi.
+
+535
+01:22:39,391 --> 01:22:42,971
+Çok çok önemli arkadaşlar, sınavda muhakkak bundan sorulur.
+
+536
+01:22:44,311 --> 01:22:46,072
+Sorulmaması imkansız gibi bir şey.
+
+537
+01:22:51,188 --> 01:22:53,208
+Kylie Hamilton Törü'mi şunu söylüyor.
+
+538
+01:22:55,887 --> 01:23:08,247
+Eğer sizin ne çarpı ne tipinde karasel bir maddisiniz varsa, bu karasel maddisin karakteristik polinomu, karakteristik polinomu nasıl bulacağımızı öğrendik.
+
+539
+01:23:09,728 --> 01:23:16,247
+Karakteristik polinomu maddisi sağlar. Daha doğrusu maddis karakteristik polinomunu sağlar. Yani burada...
+
+540
+01:23:16,467 --> 01:23:18,927
+Lambda yerine A yazdığınız zaman
+
+541
+01:23:22,420 --> 01:23:34,039
+Bu denklem sağlanır diyor, Carly Hamilton. Yani PAA eşittir sıfır.
+
+542
+01:23:39,636 --> 01:23:45,876
+Her matris kendi karakteristik polinomunu sağlar. Kyle Hamilton teorema onu söylüyor arkadaşlar.
+
+543
+01:23:48,176 --> 01:23:50,976
+Şimdi bu ne işimize yarıyor bizim? Çok işimize yarıyor.
+
+544
+01:23:55,412 --> 01:24:13,412
+Bu denklem yardımıyla, denklemi matris kendisi sağladığı için, matrisin daha yüksek kuvvetlerini işlem yapmadan bulabiliyorsunuz ya da bir matrisin tersini bulabiliyorsunuz. Nasıl buluyoruz? Şöyle buluyoruz.
+
+545
+01:24:21,587 --> 01:24:45,567
+P, A da bunu sağlayacak. Eşittir sıfır. Burada tabii şunu da unutmayın. Mesela burada kas sayı sabit A sıfır ya, bunu maddes olarak yazdığınız zaman, lambda yerine A'yı yazdığınız zaman ne olacak? A sıfır çarpı bir maddes olacak. Bunu unutmuyorsunuz. Yani burada sabitle toplayamazsınız bir maddesi. Maddesi maddesi toplarsınız. O yüzden.
+
+546
+01:24:47,091 --> 01:24:51,871
+Şimdi a üzeri neyi buradan çekerseniz bakın ne oluyor?
+
+547
+01:24:52,591 --> 01:25:08,571
+a üzeri ne eşittir, eksi, an eksi bir, a üzeri ne eksi bir, eksi, a bir, a eksi, a sıfır, öne olarak bulunuyor.
+
+548
+01:25:10,100 --> 01:25:18,020
+Herhangi bir kuvvetini, mesela a, n artı 1 sorarsa da her tarafı a ile çarpıyorsunuz. Peki, a'nın tersini nasıl bulursunuz?
+
+549
+01:25:19,800 --> 01:25:26,060
+a'nın tersini de şöyle, bu sefer a sıfır, ı neyi yalnız bırakıyorsunuz? Bunları diğer tarafa aldık.
+
+550
+01:25:29,684 --> 01:25:32,404
+Tamahneyi böyle bulduk. Evet. A üzerindeyi.
+
+551
+01:25:35,923 --> 01:25:36,543
+Buradan
+
+552
+01:25:41,460 --> 01:25:47,639
+A0 iğneyi yalnız bırakıyorsunuz, A'nın tersiyle çarpıyorsunuz her iki tarafı.
+
+553
+01:25:48,439 --> 01:25:54,559
+A'nın tersiyle çarparsanız, bu tabi A üzeri eksi 1 olacak, şurada, kaymış biraz.
+
+554
+01:25:58,199 --> 01:25:59,399
+1 bölü A0 olacak.
+
+555
+01:26:01,319 --> 01:26:06,979
+Çarpı, çarpı değil, çarpı şu maddes, A'nın tersini veriyor bize.
+
+556
+01:26:07,859 --> 01:26:08,099
+Tamam.
+
+557
+01:26:10,420 --> 01:26:20,460
+Kale Hamilton'da demek ki iki tane şey var. Bir, matrisin tersini bulabiliyoruz. İki, herhangi bir kuvvetini bulabiliyoruz.
+
+558
+01:26:21,199 --> 01:26:30,800
+Şimdi örnek vermiş diyor ki, karakteristik polinomunu, özdeğerlerini, özvektörlerini, bu dördü iptal ediyoruz. Tabii bizim dörtle bir işimiz yok.
+
+559
+01:26:36,948 --> 01:26:40,968
+Kale-Hammert'in teoremi kullanarak A'nın tersini ve A üzeri 5'i bulun.
+
+560
+01:26:42,488 --> 01:26:46,548
+Hemen karakteristik polinomu bulalım. Ne olacak arkadaşlar?
+
+561
+01:26:48,388 --> 01:27:02,048
+Determinant A eksi lambda çarpı I 2 eşittir 0 ise 1 eksi lambda 4 2 3 eksi lambda eşittir 0.
+
+562
+01:27:04,212 --> 01:27:05,832
+1-lamba çarpı
+
+563
+01:27:09,268 --> 01:27:34,788
+3 eksi lambda, eksi 8 eşittir 0. Buradan da, lambda kare, eksi 3, eksi 4 lambda, 3, eksi 5 mi oluyor bu? 2 artı 3, evet. Eksi 5 eşittir 0 bu.
+
+564
+01:27:35,283 --> 01:27:45,103
+Ne oldu bunun? Karakteristik polinom oldu. Karakteristik polinom kökleri bize özdeğerleri verecek. Bu da nedir?
+
+565
+01:27:47,583 --> 01:28:01,323
+Eksi 5'e artı 1, yani lambda eşittir, eksi 1, lambda 2 eşittir, 5, özdeğerler.
+
+566
+01:28:03,572 --> 01:28:08,792
+Tamam. Şimdi ona karşılık gelen şeyi bulalım şuradan.
+
+567
+01:28:17,779 --> 01:28:21,339
+Matris nerede? Matris'i göreyim, ona göre yazayım. Yazmamış mı?
+
+568
+01:28:24,659 --> 01:28:27,799
+Lambda birleşittir, eksi 1'e karşılık gelen neyi arayacağım ben?
+
+569
+01:28:29,039 --> 01:28:36,559
+Öz vektörü arayacağım. A çarpı lambda eksi 1'de, yani A artı 2 demiş burada direkt.
+
+570
+01:28:37,379 --> 01:28:45,079
+Bu da 2'ye 4, 2'ye 4 yapıyor. Bunu toplarsanız 0, 0. Buradan ne çıkar arkadaşlar karşınıza?
+
+571
+01:28:48,627 --> 01:28:53,147
+x1 eşittir, eksi 2x2, değil mi?
+
+572
+01:28:54,967 --> 01:28:57,007
+x2 eşittir, r, yani,
+
+573
+01:28:59,188 --> 01:29:08,228
+eksi 2r'ye, r, yani, r çarpı, eksi 2, 1, özvektörü.
+
+574
+01:29:12,564 --> 01:29:37,923
+Diğer için de 5 için de şu matris elde edilmiş. Bunda elementer satış işlemleri yardımıyla satırca indirgenmiş eşelon formu getirdiğimizde burada da ne oluyor? x1 eşittir, x2 oluyor. Yani r1'e 1 bunun çözümü.
+
+575
+01:29:38,368 --> 01:29:41,967
+Yani özvektör, R çarpı 1, 1 formundaymış.
+
+576
+01:29:44,507 --> 01:29:45,387
+Tamam mı?
+
+577
+01:29:47,248 --> 01:29:49,887
+Bunu biliyoruz zaten. Şimdi çayı hesaplayalım.
+
+578
+01:29:50,688 --> 01:29:51,547
+4'ü geçtik.
+
+579
+01:29:53,927 --> 01:29:55,007
+5'le ne diyordu?
+
+580
+01:29:55,127 --> 01:29:56,728
+Kiley Hamilton teoremi yardımıyla,
+
+581
+01:29:58,127 --> 01:30:00,448
+a üzeri eksi 1 ve,
+
+582
+01:30:00,847 --> 01:30:02,347
+a üzeri 5'i hesapla diyordu.
+
+583
+01:30:06,931 --> 01:30:20,692
+Tabi bu 2x2'lik bir matris olduğu için, a üzeri eksi 1'i direkt oradan da hesaplayabilirsiniz ama, Kylie Hamilton teoremi nasıl çalışıyor onu görmek için bu örneği yazmış arkadaşlar.
+
+584
+01:30:21,271 --> 01:30:28,412
+Karakteristik polinom neydi? Lambda kare eksi 4, lambda eksi 5 eşittir 0'dı.
+
+585
+01:30:29,716 --> 01:30:42,036
+Kiley Hamilton töreninde diyor ki, her matriz kendi karakteristik polinomunu sağlar. O halde lambda'nın yerine A yazdık. Ne oldu? A'nın karesi eksi 4A, eksi 5 çarpı birim matriz eşittir 0.
+
+586
+01:30:43,416 --> 01:30:55,655
+Şimdi ben ilk önce A'nın tersini bulayım. A'nın tersini nasıl bulacağım arkadaşlar? Şöyle bulacağım. 5I'yi yalnız bıraktım. 5I2 eşittir.
+
+587
+01:30:56,532 --> 01:31:09,832
+A'nın karesi eksi 4 tane A ise, her tarafı soldan A'nın tersiyle çarpınca, 5 tane A'nın tersi eşittir.
+
+588
+01:31:10,351 --> 01:31:15,552
+A'nın tersiyle çarpıyorum soldan. A'nın tersiyle A'nın karesini çarparsam ne olur arkadaşlar?
+
+589
+01:31:16,731 --> 01:31:23,891
+A olur. A eksi, A ile A'nın tersini çarparsam da birim matris elde ederim.
+
+590
+01:31:24,239 --> 01:31:26,119
+4 tane birim.
+
+591
+01:31:26,900 --> 01:31:28,400
+O halde A'nın tersi neymiş?
+
+592
+01:31:30,619 --> 01:31:31,579
+1 bölü 5
+
+593
+01:31:35,380 --> 01:31:39,619
+a eksi dört tane birim.
+
+594
+01:31:41,500 --> 01:31:43,220
+Bakın ne kadar kolay bulunmuş değil mi?
+
+595
+01:31:44,600 --> 01:31:45,340
+O da eşittir.
+
+596
+01:31:45,420 --> 01:31:46,239
+Bir bölü beş.
+
+597
+01:31:47,699 --> 01:31:48,619
+a neydi acaba?
+
+598
+01:31:49,380 --> 01:31:50,239
+Hatırlayanımız var mı?
+
+599
+01:31:51,920 --> 01:31:52,539
+a bu muydu?
+
+600
+01:31:52,880 --> 01:31:53,739
+Yok bu p'miş.
+
+601
+01:31:55,100 --> 01:31:55,680
+a neydi ya?
+
+602
+01:32:04,659 --> 01:32:05,659
+Allah Allah.
+
+603
+01:32:07,319 --> 01:32:08,640
+Heh, 1, 4, 2, 3.
+
+604
+01:32:10,140 --> 01:32:10,659
+Tamam.
+
+605
+01:32:20,051 --> 01:32:41,971
+1, 4, 2, 3, eksi, 4, 0, 0, 4, bu durumda A'nın tersi neymiş? Eksi, 3 bölü 5, 4 bölü 5, 2 bölü 5,
+
+606
+01:32:45,971 --> 01:32:47,331
+Eksi 1 bölü 5
+
+607
+01:32:51,188 --> 01:32:53,568
+Böyle daha kolay oldu arkadaşlar.
+
+608
+01:32:57,811 --> 01:32:59,492
+Peki, A üzeri 5'i nasıl bulacağız?
+
+609
+01:33:10,068 --> 01:33:34,467
+A'nın karesi bu. A üzeri 5'i bulmam için her iki tarafı soldan A ile çarpmam lazım. Çarptım. A'nın kübü eşittir. A ile çarptım. 4 tane A'nın karesi artı 5 tane A. Arkadaşlar, A'nın karesini de yerine yazıyorum. Bakın A'nın karesi ne? Buna eşit. Bu da eşittir. 4 tane.
+
+610
+01:33:36,979 --> 01:34:00,699
+4A artı 5I2 artı 5A. Bu halde A'nın küpü ne oldu? 16A burada, 5A da burada. 21A artı 20I2. Bu A'nın küpü.
+
+611
+01:34:03,796 --> 01:34:05,916
+Bir kere daha a ile çarptım.
+
+612
+01:34:07,456 --> 01:34:08,276
+a üzeri 4
+
+613
+01:34:08,276 --> 01:34:13,056
+a üzeri 4 eşittir.
+
+614
+01:34:14,496 --> 01:34:16,476
+21 tane a'nın karesi
+
+615
+01:34:21,587 --> 01:34:29,887
+Artı 20 tane A. Bu da eşittir, 21. A'nın karesi neymiş? 4A artı 5I2.
+
+616
+01:34:37,235 --> 01:35:01,475
+Nerede? Şu. Artı 20I2. Peki, bu da ne olacak arkadaşlar? 84A artı 105, 125, 20A mı olacak? Hangisi 20A?
+
+617
+01:35:03,539 --> 01:35:13,380
+Şu İ2, pardon, evet, evet, sağ ol, mısra, İ20A. O halde bu ne oldu? 84, 104A.
+
+618
+01:35:17,011 --> 01:35:43,792
+Artı, 105, bu 2, bu A üzeri 4'müş, A üzeri 5'te, eşittir, 104 çarpı A'nın karesini yazayım artık direkt, 4A artı, 5,
+
+619
+01:35:44,404 --> 01:35:45,203
+I2
+
+620
+01:35:45,203 --> 01:35:47,644
+artı 105A
+
+621
+01:35:47,644 --> 01:35:53,163
+Yani ne oldu? A üzeri 5 eşittir
+
+622
+01:35:53,163 --> 01:35:55,003
+16
+
+623
+01:36:00,275 --> 01:36:08,376
+416, 105 de burada var, ne yaptı? 521 mi yaptı? 521a,
+
+624
+01:36:15,731 --> 01:36:22,632
+Artı, 520, birim yaptı.
+
+625
+01:36:25,512 --> 01:36:26,231
+Tamam.
+
+626
+01:36:28,972 --> 01:36:37,952
+Şıklarda ya böyle olur, ya da, zaten 2 çarpı 2'lik olduğu için 521 ile, gerçi zaten bu kas sayı önemli değil ki.
+
+627
+01:36:38,731 --> 01:36:41,972
+Yani kas sayı ile çarpılmış halde bulunabilir yani.
+
+628
+01:36:44,083 --> 01:36:48,863
+Demek ki Kylie Hamilton töreni böyle uygulanıyormuş arkadaşlar.
+
+629
+01:36:52,467 --> 01:37:12,448
+Şey yapmamış tabii. Mehmet Emin Hoca bunları böyle yazmış. Aslında bu böyle yazılması çok doğru değil. Yani dağıtacaksın, edeceksin falan. Böyle yapın arkadaşlar. Zaten şu şekilde kapalı formu koyarsanız bir işinize yaramaz yani. Bu ne anlam ifade ediyor ki?
+
+630
+01:37:15,467 --> 01:37:18,828
+Belki işlemleri kolaylaştırır. Şurada önce işlemi yaparsınız.
+
+631
+01:37:19,380 --> 01:37:43,779
+Sonra buradaki işlemi de yaparsınız. Sonra bununla bunu çarparsınız. Sonra bununla da bunu çarparsınız falan ama işler karışır. Kişiklerde büyük ihtimalle böyle bir şey göremeyeceksiniz. Şöyle bir şey göreceksiniz. Tamam mı? Peki. Arkadaşlar, bugünlük ve bu dönemlik sizlere anlatacaklarım, söyleyeceklerim bu kadar.
+
+632
+01:37:46,676 --> 01:38:08,796
+Sormak istediğiniz bir şey var mı? Söylemek istediğiniz sorun, söyleyin. Bir dönem geçirdik, yani tabii sıkıntılı bir dönemdi, pandemi sürecine dek geldi. Bunda da şükür yapacak bir şey yok. Elimizden geldiğince bir şeyler anlatmaya gayret ettim sizlere.
+
+633
+01:38:09,268 --> 01:38:35,427
+Yani öyle zaten aramızda herhangi bir şey olmadı kimseyle ama yüz yüze de görüşmediğimiz için. Ama olur ya yani insanlık hali belki derste falan böyle sizleri kıracak, özecek bir şey söylediysem affedin. Yani size karşı bir şeyim yok zaten. Dediğim gibi öyle bir yüz yüze şeyimiz de yok. İnşallah önümüzdeki dönemlerde yine görüşürüz. Yani bir şekilde. Ben matematik bölümündeyim. Muhakkak beklerim gelin yani.
+
+634
+01:38:36,307 --> 01:38:56,568
+[öğrenci] dersin kaydı olmuyor. Daha önce de maalesef onu çok uğraştık. Yani bu ayrıyeten oluşturulan bir kayıt olduğu için o kayıt sadece benim sayfamda görünüyor. Daha doğrusu okul onu sadece kaydediyor, sistemde görünüyor. Ama ona siz hiçbir şekilde ulaşamıyorsunuz yani. Maalesef.
+
+635
+01:38:58,963 --> 01:39:04,943
+Yani onu hafta içi de yapsak aynı şekilde. Yani dersin dışında bir ders olduğu zaman onu kaydediyor.
+
+636
+01:39:04,943 --> 01:39:08,863
+Bunu sizin ulaşımınıza vermiyor yani maalesef.
+
+637
+01:39:11,243 --> 01:39:15,843
+Sınava da önce ikinci sınavdan sonraki kısma çalışın öncelikle.
+
+638
+01:39:16,663 --> 01:39:19,723
+Çünkü o konulardan hiç soru sorulmadı. Öncelikle oralardan sorulur.
+
+639
+01:39:20,403 --> 01:39:23,303
+Daha sonra tabii bütün konuları bilmeniz gerekiyor bu final sınavı.
+
+640
+01:39:25,235 --> 01:39:51,315
+Zor olmaz arkadaşlar, şey yapmayın. Sadece size yeni konular yeni olduğu için belki, ya da lineerce bir ilk defa gördüğünüz için farklı geliyor olabilir. Ancak bu lineer bağımlılık, bağımsızlık, taban, germe, koordinat, geçiş matrisleri, bunlar biraz soyut kavramlar. Lütfen bunlar üzerinde biraz durun, anlamaya çalışın. Anlamazsanız sınavda yapamıyorsunuz.
+
+641
+01:39:51,988 --> 01:40:09,547
+Yani neden öyle olduğunu anlamaya çalışın. Yoksa fazla soru bulamıyorsunuz zaten. Sizin dersin duvarında finale yönelik de sorular var. Çözüm sorular, sınavda çıkmış sorular. Onları geçen şeyde yüklemiştim. Artık onlara bakabilirsiniz. Çözümleri de olduğu için onların faydası olacağını düşünüyorum.
+
+642
+01:40:11,667 --> 01:40:15,488
+Tamam. O zaman dönemi kapatalım.
+
+643
+01:40:15,988 --> 01:40:21,628
+Ben teşekkür ederim her şey için arkadaşlar. Her zaman yine bir sorunuz olduğu zaman sorabilirsiniz.
+
+644
+01:40:22,728 --> 01:40:27,608
+Dediğim gibi yani inşallah şu pandemi geçtikten sonra da hepinizi bekliyorum.
+
+645
+01:40:29,347 --> 01:40:32,427
+Olur mu? Ziyaretime gelirsiniz artık. Size hobi veririm.
+
+646
+01:40:33,807 --> 01:40:35,668
+Tamam. Sizler de dikkat edin arkadaşlar.
+
+647
+01:40:36,628 --> 01:40:39,148
+Ne dediğim gibi bir sorunuz olursa mail atın.
+
+648
+01:40:40,500 --> 01:41:04,960
+Sınav kağıtlarınıza da, şeylere de pardon, notlara da tekrar bakacağım. Yani onda endişeniz olmasın. Herhangi bir sıkıntı varsa düzeltirim. Tamam mı? Peki, o zaman arkadaşlar. Sağlıcakla kalın hepiniz. Başarılar diliyorum. Hem bu dersinizde, hem diğer dersinizde, hem de hayatınızda. İnşallah daha güzel günlerde tekrar görüşmek üzere deyip, hoşçakalın diyorum.

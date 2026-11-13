@@ -1,0 +1,1895 @@
+1
+00:01:44,787 --> 00:01:45,688
+Arkadaşlar, merhaba.
+
+2
+00:01:50,132 --> 00:01:53,912
+Soruları görüyor musunuz ekranda? Bir iki dakika bu sorulara baka durum.
+
+3
+00:02:16,563 --> 00:02:21,663
+Niye kimse selamını anlıyor? Arkadaşlar, merak edelim ama herhalde duymuyorsunuz beni. Böyle anlıyorum.
+
+4
+00:02:22,723 --> 00:02:24,183
+Duyuyoruz hocam. Merhaba.
+
+5
+00:02:28,852 --> 00:02:30,792
+Sağ olun arkadaşlar. Teşekkürler.
+
+6
+00:02:38,195 --> 00:02:43,656
+Bakabildiniz mi bu sorulara? Daha önceki geçen hafta yüklemiştim bunları. Bakan var mı? Çözen var mı?
+
+7
+00:03:15,219 --> 00:03:16,360
+[öğrenci] var mı arkadaşlar?
+
+8
+00:03:38,228 --> 00:03:39,487
+Baktın, çözdün mü [öğrenci]?
+
+9
+00:03:46,163 --> 00:03:48,603
+Notlara bakmışlar, sadece menis bakmış herhalde.
+
+10
+00:03:49,803 --> 00:03:56,383
+Şimdi, şunla uğraşıyorum da, bir arkadaşınızı bu derse davet etmek istiyorum arkadaşlar. Bunu nereden yapacağım ya?
+
+11
+00:03:58,123 --> 00:04:00,303
+Niye? Daha önce yapmıştım, şimdi bulamadım.
+
+12
+00:04:01,683 --> 00:04:02,243
+Var mı [öğrenci]?
+
+13
+00:04:06,804 --> 00:04:09,548
+Normalde buradan linki göndermem lazım ama...
+
+14
+00:04:19,348 --> 00:04:23,307
+Hocam, linki kopyalanıp gönderilmiyor mu? Sol üst tarafta.
+
+15
+00:04:24,307 --> 00:04:26,468
+Direkt linki kopyalanıp göndersen olur mu?
+
+16
+00:04:27,108 --> 00:04:27,548
+Evet.
+
+17
+00:04:27,548 --> 00:04:28,548
+Tamam.
+
+18
+00:04:36,307 --> 00:04:37,728
+Teşekkürler, sağ olun.
+
+19
+00:04:52,019 --> 00:05:02,139
+Geçen haftadan beri biraz rahatsızım arkadaşlar. İnşallah bu dersi kazasız atlatırız.
+
+20
+00:05:04,179 --> 00:05:09,120
+Kıpağızın işi yapıyorum. Yani konuşmakta zorluk çekiyorum. Sağ olun arkadaşlar. Teşekkürler.
+
+21
+00:05:11,019 --> 00:05:16,759
+Şimdi sınav var malum. Geçen hafta konuşmuştuk sınavla alakalı sizle galiba.
+
+22
+00:05:20,884 --> 00:05:29,244
+Sınav oncu haftaya kadar, yani en son işlediğimiz vektör uzayları ve alt vektör uzaylarına kadar.
+
+23
+00:05:31,864 --> 00:05:36,064
+Ben örnek sınav sorularını yükledim, geçen haftadan bu yana.
+
+24
+00:05:37,543 --> 00:05:40,504
+Onlara bakarsanız sınav hakkında size bir bilgi verir.
+
+25
+00:05:41,163 --> 00:05:44,524
+Yani böyle şeyler, benzer şeyler çıkıyor.
+
+26
+00:05:44,524 --> 00:05:47,744
+Şu şimdi çözeceğim dersteki sorular da.
+
+27
+00:05:47,987 --> 00:05:49,187
+Çok önemli sorular.
+
+28
+00:05:51,768 --> 00:05:58,327
+Bundan önce, derse başlamadan önce bir hızlıca şey yapayım, bir tekrar yapayım istiyorum.
+
+29
+00:05:59,608 --> 00:06:01,788
+Hem de o dökümanı şey, yüklerim.
+
+30
+00:06:05,524 --> 00:06:16,443
+Dersimizin doğarına, oradan bakarsınız. Olmaz mı? Şöyle o zaman yeni bir şey yapalım. Yeni bir sayfı açalım.
+
+31
+00:06:38,516 --> 00:06:41,615
+Herhalde şeyle başlamıştık. Neydi?
+
+32
+00:06:43,716 --> 00:06:45,336
+Yine denklem sistemleriydi.
+
+33
+00:07:01,875 --> 00:07:05,695
+Arkadaşlar, lineer denklem sistemlerini çözmeyle biz ilgileniyorduk.
+
+34
+00:07:07,635 --> 00:07:14,195
+M çarpı net pinde olan kas sayılar matrisi, şöyle yazayım mı? Yazayım mı? Olacak.
+
+35
+00:08:20,755 --> 00:08:26,315
+Arkadaşlar, böyle bir denklem sistemini çözme için ne kullanıyorduk? Ondan bahsedeceğim şimdi.
+
+36
+00:08:26,716 --> 00:08:36,675
+Öncelikle bu M tane bilinmeyenden, N tane denklemden oluşan, tam tersi, M denklem.
+
+37
+00:08:46,644 --> 00:08:48,124
+Ne bireyim meynda luşa.
+
+38
+00:08:53,716 --> 00:08:56,716
+Ne bileyim ben ne? Yine her denklem sistem.
+
+39
+00:09:04,211 --> 00:09:11,692
+Şimdi arkadaşlar, bu lineer denklem sisteminin çözümü için biz kasseler matrisine bakıyorduk.
+
+40
+00:09:13,152 --> 00:09:14,511
+Kasseler matrisi de neydi?
+
+41
+00:09:30,580 --> 00:09:32,200
+A ile gösteriyorduk onu.
+
+42
+00:09:34,500 --> 00:09:35,600
+Şöyle denklemek iyi.
+
+43
+00:09:39,475 --> 00:09:50,196
+Bilinmeyenlerin, bu x1'ler, x2'ler, x2'ler bilinmeyen ney tane? Bunların kas sayılarından oluşan ilk eklemin bilinmeyenlerin kas sayılarını x0'a.
+
+44
+00:10:19,124 --> 00:10:20,224
+Köszönöm, matris.
+
+45
+00:10:33,427 --> 00:10:38,427
+Şimdi bir de artırılmış kas sayılar matris vardı. O da...
+
+46
+00:10:42,484 --> 00:10:50,484
+A matisinin yanına sağ taraftaki B matisini yapıyordunuz. Bu arada arttırılmış kasayla matisi yapıyorduk.
+
+47
+00:11:10,196 --> 00:11:13,676
+Şimdi, lineer denklem sisteminin çözümü nasıl yapılıyor arkadaşlar?
+
+48
+00:11:15,255 --> 00:11:18,036
+Asıl amacımız o, lineer denklem sisteminin ne olduğunu öğrendik.
+
+49
+00:11:41,587 --> 00:11:47,467
+Burada iki farklı yöntem, üç farklı yöntem gördük.
+
+50
+00:11:47,768 --> 00:11:49,367
+Değil mi arkadaşlar? Birincisi neydi?
+
+51
+00:11:52,487 --> 00:11:55,247
+Farklı renkle yazalım. Gauss'un indirgeme yöntemi.
+
+52
+00:12:22,067 --> 00:12:24,067
+Bu yöntemle arkadaşlar,
+
+53
+00:12:33,844 --> 00:12:36,244
+Artırılmış kas sayılar matrisi,
+
+54
+00:12:49,395 --> 00:12:52,596
+Elementar satır işlemleri yardımıyla, bakın sadece satır.
+
+55
+00:13:17,139 --> 00:13:19,139
+Ne hale getiriliyordu?
+
+56
+00:13:21,139 --> 00:13:23,947
+Söpürce indirgenmiş, eşelon formu getiriliyordu.
+
+57
+00:13:50,292 --> 00:14:09,211
+Şimdi burada biz satırca indirgenmiş eşelon form yardımıyla ilk önce bu verilen denklem sisteminin çözümü var mı yok mu belirleyebiliyorduk.
+
+58
+00:14:09,211 --> 00:14:11,312
+Şöyle ki arkadaşlar.
+
+59
+00:14:16,692 --> 00:14:20,052
+Buradan ranka bakacağız. Satıcı [öğrenci] gelmiş eşelon formdan.
+
+60
+00:14:24,211 --> 00:14:25,211
+Eğlesin.
+
+61
+00:14:28,307 --> 00:14:38,528
+Bank, hemen açık yazayım bakta, bank A B, eşittir,
+
+62
+00:14:43,764 --> 00:14:44,964
+İşik değildir.
+
+63
+00:14:46,244 --> 00:14:48,044
+Rank A ise
+
+64
+00:14:54,899 --> 00:14:58,699
+Burada ne dersiniz? Bakalım biliyor musunuz?
+
+65
+00:15:03,796 --> 00:15:08,756
+Sanki A ve A'ya eşit değilse ne oluyor arkadaşlar? Çözüm yok. Güzel.
+
+66
+00:15:14,515 --> 00:15:15,336
+Çözüm yok.
+
+67
+00:15:26,836 --> 00:15:27,596
+Eğles
+
+68
+00:15:31,700 --> 00:15:36,200
+Rank A, B eşittir.
+
+69
+00:15:38,259 --> 00:15:44,019
+Rank A, bu arada çözüm yok demek tutarsız da deniliyor, onu söylemiştim galiba.
+
+70
+00:15:47,860 --> 00:15:53,559
+Banka eşittir, banka b ise çözüm var.
+
+71
+00:16:02,772 --> 00:16:12,172
+Bu durumda iki farklı durum çıkıyor davranışı bu durum için.
+
+72
+00:16:16,563 --> 00:16:23,803
+Şöyle yapalım. Aslında sağ tarafa diğerlerini yazacaktım ama, neyse artık yapacak bir şey yok. Böyle oldu.
+
+73
+00:16:26,943 --> 00:16:33,303
+Ama olsun. Neyse, sağ tarafa yazayım. Altta yazacağım. Burada iki farklı durum var.
+
+74
+00:16:36,692 --> 00:16:39,751
+A diyelim, ya da 1 diyelim, A diyelim.
+
+75
+00:16:40,692 --> 00:16:41,211
+1
+
+76
+00:16:45,683 --> 00:16:50,983
+Rank, artık rank A değil, rank A eşit, yani o tekrar yazmama gerek yok.
+
+77
+00:16:51,783 --> 00:16:59,463
+Eğer rank A eşit bir ne ise, bu ne demek?
+
+78
+00:17:00,903 --> 00:17:10,003
+A'nın o rankı bilinmeyen sayısının eşit ise, bu durumda nedir arkadaşlar?
+
+79
+00:17:15,988 --> 00:17:16,867
+Bu çözüm vardır.
+
+80
+00:17:32,276 --> 00:17:33,276
+Teşekkürler.
+
+81
+00:18:04,115 --> 00:18:05,255
+Ya zank.
+
+82
+00:18:13,364 --> 00:18:15,463
+Şöyle destek daha güzel olabilir burada.
+
+83
+00:18:16,604 --> 00:18:18,483
+Rank A ve eşittir Rank A.
+
+84
+00:18:18,564 --> 00:18:19,943
+Buna da R diyelim arkadaşlar.
+
+85
+00:18:29,748 --> 00:18:31,087
+Çünkü diğer gibi bu sefer.
+
+86
+00:18:53,779 --> 00:18:55,779
+ve eşittir ne ise
+
+87
+00:18:57,779 --> 00:18:58,779
+tek çözüm var.
+
+88
+00:19:09,779 --> 00:19:11,779
+R küçüktür neyse
+
+89
+00:19:16,788 --> 00:19:19,327
+N-R, K-P parametreye bağlı.
+
+90
+00:19:28,211 --> 00:19:29,711
+Sonsuz çözüm var.
+
+91
+00:19:30,211 --> 00:19:31,912
+Şimdi bunlar çok önemli.
+
+92
+00:19:38,163 --> 00:19:39,784
+Çünkü sen arası olacaktı.
+
+93
+00:19:46,579 --> 00:19:52,739
+Bu şekilde çözüme biz Gauss-Jordan indirgeme yöntemi diyoruz.
+
+94
+00:19:56,980 --> 00:19:58,400
+Şimdi burada bir de
+
+95
+00:20:07,892 --> 00:20:10,552
+Homojen lineer denklem sisteminden bahsedelim.
+
+96
+00:20:19,923 --> 00:20:22,344
+Ondan önce diğer yöntemi de yazalım şuraya.
+
+97
+00:20:24,683 --> 00:20:25,604
+Neydi?
+
+98
+00:20:26,463 --> 00:20:27,264
+Kremer yöntemi.
+
+99
+00:20:27,963 --> 00:20:28,604
+Başlayayım.
+
+100
+00:20:30,183 --> 00:20:30,584
+Efendim?
+
+101
+00:20:33,304 --> 00:20:34,223
+Bana mı söylediniz?
+
+102
+00:20:41,332 --> 00:20:45,772
+Gramer yöntemi ve kas sayıların tersi, bir çözüm.
+
+103
+00:20:47,052 --> 00:20:48,492
+Kas sayıların matrisinin tersi.
+
+104
+00:21:18,516 --> 00:21:24,576
+Arkadaşlar, mikrofon açık olanı ben göremiyorum da siz rica arkadaşımıza uyarır mısınız?
+
+105
+00:21:36,516 --> 00:21:40,516
+Evet, şimdi mikrofon açık, görebiliyor musunuz?
+
+106
+00:21:44,276 --> 00:21:51,056
+[öğrenci], genelde hep senin mikrofonun mu açıklıyor sayınca içinde? Günahını almayayım ama. Peçen de sayınca öyle bir şey olmuştu.
+
+107
+00:21:53,875 --> 00:21:56,036
+Evet, kramer yöntemi neydi arkadaşlar?
+
+108
+00:21:59,096 --> 00:22:00,615
+Kramer yönteminde şöyle.
+
+109
+00:22:08,819 --> 00:22:09,719
+Bilinmeyen
+
+110
+00:22:13,299 --> 00:22:15,299
+Hatta ikisi için de geçerli bu.
+
+111
+00:22:21,715 --> 00:22:23,215
+Ne bilinmeyen?
+
+112
+00:22:27,667 --> 00:22:29,027
+Ne? Denklem olmalı.
+
+113
+00:22:37,268 --> 00:22:39,268
+Temel yöntemle karşılaşabiliriz. Bir de...
+
+114
+00:22:45,428 --> 00:22:49,028
+Kat sayılar, matrisi A'nın,
+
+115
+00:22:54,003 --> 00:22:56,003
+determinantı
+
+116
+00:22:58,003 --> 00:23:00,003
+sıfırdan
+
+117
+00:23:00,003 --> 00:23:01,451
+farklı olmalı.
+
+118
+00:23:10,548 --> 00:23:14,907
+[öğrenci], beni duyuyorsan mikrofonu kapatabilir misin? Eğer sana zahmet olmasın.
+
+119
+00:23:21,236 --> 00:23:34,176
+Demek ki kramer yöntemi, kasar matrisinin tersi yöntemiyle çözüm yapabilmemiz için, birincisi, ne bilmeyen ne denklemler olmalı, yani biner denklem sistemi.
+
+120
+00:23:34,655 --> 00:23:40,036
+İkincisi de kasar matrisinin, determinant sıfırdan farklı olmalı.
+
+121
+00:23:40,036 --> 00:23:41,596
+Şimdi kramer yönteminde,
+
+122
+00:23:46,228 --> 00:23:47,347
+Kremer için
+
+123
+00:23:57,748 --> 00:24:12,168
+Bu durumda böyleyse zaten arkadaşlarımda yazalım. Ne bilmeyen ne denklemden oluşan ve kast sayılar matrisinin determinatısı buradan farklı ise bu durumda tek bir çözüm vardır.
+
+124
+00:24:29,299 --> 00:24:31,619
+Bunu sormuştum galiba ama tekrar sorayım.
+
+125
+00:24:32,960 --> 00:24:38,299
+Arkadaşlar, şimdi ne bilinmeyen, ne denklemden oluşan bir tane denklem sistemi verin size.
+
+126
+00:24:39,159 --> 00:24:44,279
+Tuttunuz bunun kas sayılamatçının determinantına baktığınız, determinant sıfır çıktı. Ne dersiniz?
+
+127
+00:24:50,195 --> 00:24:53,755
+Bu sistemin çözümü var mıdır yok mudur? Determat sıkıntısı.
+
+128
+00:25:02,036 --> 00:25:02,816
+Masalutu.
+
+129
+00:25:06,420 --> 00:25:15,900
+[öğrenci] vardır, vardır derken yani kesin anlamında evet olabilir, yoktur diyemezsin. Bu sadece şunu söylüyor size.
+
+130
+00:25:16,940 --> 00:25:25,600
+Kremer yöntemini ve kasiyeler matrisin tersi yöntemi kullanabilmeniz için, şimdi yazacağım buraya, nasıl kullandığımıza hatırlatacağım.
+
+131
+00:25:26,600 --> 00:25:30,620
+A'nın terslenebilir olması lazım, kasiyeler matrisin tersini kullanabilmeniz için.
+
+132
+00:25:31,380 --> 00:25:35,900
+Kramer'ı kullanabilmeniz için de determinantı 0'dan farklı olması lazım.
+
+133
+00:25:37,519 --> 00:25:41,480
+Determinant 0'sı demek ki bu yöntemleri kullanamazsınız. O zaman ne yapacaksınız?
+
+134
+00:25:43,300 --> 00:25:44,660
+O zaman not düşelim buraya.
+
+135
+00:25:47,160 --> 00:25:50,900
+Determinant A 0 ise...
+
+136
+00:25:54,036 --> 00:26:03,036
+Gauss, Jordan ile çözüm yapılır.
+
+137
+00:26:10,355 --> 00:26:14,115
+determinant ağın nasıl sorulması çözümsüzdür anlamına gelmiyor.
+
+138
+00:26:16,036 --> 00:26:16,776
+Kremerde
+
+139
+00:26:26,259 --> 00:26:27,460
+Bu önemli bir identifi.
+
+140
+00:26:46,932 --> 00:26:49,932
+Kramer yönteminde nasıl duyduk?
+
+141
+00:26:54,132 --> 00:27:13,831
+x1 eşittir, determinant A1 bölü, determinant A, xn eşittir, determinant A n bölü, determinant A şeklinde bulunuyordu.
+
+142
+00:27:14,831 --> 00:27:17,851
+Tabi burada determinant A1, determinant A n dediğimiz ne?
+
+143
+00:27:18,612 --> 00:27:20,751
+B maddesini, artık yerimizde bunu yazmayalım.
+
+144
+00:27:21,203 --> 00:27:31,903
+B matrisini x1 için birinci sütuna, x2 için sağ taraftaki B matrisini ikiinci sütuna, n için, n'inci sütuna yazıyorduk. Tamam mı?
+
+145
+00:27:35,700 --> 00:27:37,140
+Kas sayınların tersi?
+
+146
+00:27:50,516 --> 00:27:52,316
+Tersi yöntemi nasıldı?
+
+147
+00:27:54,836 --> 00:27:56,516
+Bizim lineer denklem sistemimiz,
+
+148
+00:27:58,996 --> 00:28:01,655
+A x eşittir bir formundaydı.
+
+149
+00:28:07,827 --> 00:28:30,748
+A'vi üzeri 1 ile çarpıyoruz. Ne oluyor? A'vi üzeri soldan A'vi üzeri 1 çarpı A çarpı X eşittir. A'vi üzeri 1 çarpı B yani X eşittir. A'vi üzeri 1, B'de verilen denklem sisteminin çözümünü veriyor size.
+
+150
+00:28:34,932 --> 00:28:47,932
+Krasiyeler ve kremel yönteminin ne zaman kullanılacağı, nasıl kullanılacağını söyledi. Tamam mı? Şimdi bir de homojen denklem sistemleri vardı.
+
+151
+00:29:43,347 --> 00:29:45,291
+Bunlar da arkadaşlar...
+
+152
+00:29:54,067 --> 00:30:06,968
+B1 eşittir, B2, O da eşittir, Bn, O da eşittir, 0 olan denklem sistemleri.
+
+153
+00:30:12,435 --> 00:30:18,995
+Şimdi burada dikkat edilmesi gereken yine bir iki önemli kural var.
+
+154
+00:30:25,460 --> 00:30:34,840
+Rank AB, yani rank A0, artık B0 olduğu için, rank A olacağında,
+
+155
+00:30:42,836 --> 00:30:43,836
+Bu müjel sistemin
+
+156
+00:30:52,019 --> 00:30:52,659
+Her zaman
+
+157
+00:30:56,627 --> 00:30:57,827
+çözümü
+
+158
+00:31:04,243 --> 00:31:07,423
+Tamam, bunu bileceğiz.
+
+159
+00:31:15,380 --> 00:31:22,960
+Burada da yine iki farklı durum çıkacak karşımıza. Eğer rank eşittir ne ise,
+
+160
+00:31:27,827 --> 00:31:28,587
+Sadece
+
+161
+00:31:33,619 --> 00:31:34,819
+Cifre çözünürlmez.
+
+162
+00:31:41,011 --> 00:31:42,491
+Sokut çözüm demek ne demek?
+
+163
+00:31:50,836 --> 00:32:00,115
+x1 eşittir, 0, o da eşittir, x2, o da eşittir, ikisine o da eşittir, 0. Yani bu da sadece 0 çözüm deniyor.
+
+164
+00:32:02,735 --> 00:32:03,795
+R bu, bu arada.
+
+165
+00:32:08,723 --> 00:32:09,723
+2
+
+166
+00:32:11,884 --> 00:32:14,723
+Eğer r küçüktür ne ise
+
+167
+00:32:16,163 --> 00:32:18,723
+n-r parametreye bağlı
+
+168
+00:32:25,619 --> 00:32:27,059
+Son, son, son, son, son, son, son.
+
+169
+00:32:37,779 --> 00:32:45,359
+Arkadaşlar, lineer denklem sistemleriyle alakalı başka bir şey kaldı mı? Benim söylemeye sizin hatırladığınız.
+
+170
+00:32:47,440 --> 00:32:51,719
+Mesela söyleyecekler ki, bir homojen lineer denklem sistemi verilsin.
+
+171
+00:32:53,719 --> 00:32:58,980
+Bu denklem sisteminin sıfır çözümünden başka çözümün olabilmesi için,
+
+172
+00:32:59,700 --> 00:33:06,039
+İşte rank ne olmalıdır gibi. Ya da işte orada belki bir bilinmeyen varmıştır. O bilinmeyen ne olmalıdır?
+
+173
+00:33:09,907 --> 00:33:10,748
+Ama şu duumu.
+
+174
+00:33:16,660 --> 00:33:19,340
+lineer denklem sistemleri böyleydi. Bir de ne var?
+
+175
+00:33:23,092 --> 00:33:24,892
+Ondan sonra ne gördük arkadaşlarımız?
+
+176
+00:33:31,220 --> 00:33:36,220
+Vektörler mi diyor. Vektörler, evet.
+
+177
+00:33:39,955 --> 00:33:42,015
+vektörlerde ve yine bilmeniz gereken
+
+178
+00:34:18,003 --> 00:34:19,223
+Evet, şiddet.
+
+179
+00:34:26,356 --> 00:34:42,776
+A0, B0, C0, Q eşittir, A1, B1, C1.
+
+180
+00:34:46,771 --> 00:34:50,699
+Elemanlar RGQ için
+
+181
+00:34:54,324 --> 00:35:05,724
+P3 demek, S3'te, yani her bir bileşiğinin A0, B0, C0 ile her sayılar olan üçlüler demek.
+
+182
+00:35:06,644 --> 00:35:13,684
+Yani nokta olarak da bakabilirsiniz bunlara. Şu anda vektör olarak da bakabilirsiniz.
+
+183
+00:35:27,731 --> 00:35:53,211
+Şöyle diyeyim. Elemanıdır. Neyse, nokta olduğunu anladınız siz. İçin, PQ vektörü nasıl bulunuyordu arkadaşlar? Bu başlangıç noktası, bu da bitiş noktası. Bitiş noktasından başlangıç noktasını çıkarttık. Yani A1-A0, P1-E0.
+
+184
+00:35:54,387 --> 00:36:00,788
+c1-c0 bizim tq vektör.
+
+185
+00:36:11,956 --> 00:36:14,735
+Bu vektörün uzunluğu, normu
+
+186
+00:36:19,476 --> 00:36:24,476
+Karaköp içerisinde, birleşenlerin, karelerin toplamıydı.
+
+187
+00:36:53,523 --> 00:36:59,603
+Normu ya da boyu. Bazen modülü de deniyor.
+
+188
+00:37:05,331 --> 00:37:07,331
+Bir de bunu da söyleyelim.
+
+189
+00:37:15,572 --> 00:37:19,972
+İki tane vektörü biz toplayabiliyorduk ya da çıkartabiliyorduk.
+
+190
+00:37:22,311 --> 00:37:25,712
+Bir de bisiklerle çarpamıyorduk. Artık onlara gerek yok.
+
+191
+00:37:33,172 --> 00:37:41,172
+Boyu 1 olan ise U'ya prim vektör deniyor.
+
+192
+00:37:48,788 --> 00:37:52,387
+her vektörün
+
+193
+00:37:58,900 --> 00:38:00,780
+boyuna bölünürse
+
+194
+00:38:04,532 --> 00:38:05,771
+biçiminde yazılarak
+
+195
+00:38:11,731 --> 00:38:13,891
+Birim vektör haline getirilebilir.
+
+196
+00:38:16,551 --> 00:38:20,671
+Yani birim vektörden farklı bir vektörü de birim vektör olarak yazabiliyorsun.
+
+197
+00:38:42,804 --> 00:38:43,703
+Ve şu vardı.
+
+198
+00:39:04,755 --> 00:39:05,755
+R3T
+
+199
+00:39:10,835 --> 00:39:12,779
+Sabah mı bekliyorlar bunlar?
+
+200
+00:39:28,211 --> 00:39:38,211
+R3'teki her R eşittir ABC vektörü
+
+201
+00:39:43,860 --> 00:39:52,660
+ve eşittir, a i artı, d j artı, c k şeklinde yazılabiliyor.
+
+202
+00:40:01,684 --> 00:40:11,324
+Bunlar, neyse onlara iş çarpımı ve şeyleri vereyim. Tamam, bununla geçtik. Yardım için bir asıl önemli konu.
+
+203
+00:40:17,940 --> 00:40:20,640
+İç çarpım, ya da sıkıver çarpım, ya da noktada çarpım.
+
+204
+00:40:26,516 --> 00:40:27,215
+Skönöş.
+
+205
+00:40:30,963 --> 00:40:36,724
+nokta ya da iş çarpımı.
+
+206
+00:40:52,115 --> 00:40:53,195
+Skoracatom.
+
+207
+00:40:59,027 --> 00:41:01,027
+bütün bir
+
+208
+00:41:03,027 --> 00:41:04,027
+Rn'de
+
+209
+00:41:05,527 --> 00:41:06,443
+tanımlıdır.
+
+210
+00:41:12,211 --> 00:41:25,851
+Skabel çarpımın sonucu, oradan geliyor zaten bu Skabel çarpımın lafı, çarpımın sonucu, bir real sayıdır arkadaşlar.
+
+211
+00:41:27,952 --> 00:41:28,992
+Vektör değildir yani.
+
+212
+00:41:55,284 --> 00:41:56,876
+Bu işittir
+
+213
+00:42:12,179 --> 00:42:17,380
+O0, O1, O0, O0, O0.
+
+214
+00:42:21,235 --> 00:42:30,916
+B eşittir, B sıfır, B bir, B ne? Bunlar nerede vektörler? B yüciri neydi? Vektörleri için.
+
+215
+00:42:45,556 --> 00:42:50,536
+İş çarpım bu şekilde gösteriliyor ve kadar çarpım.
+
+216
+00:43:05,523 --> 00:43:31,483
+eşittir. Her bir birleşiğini karşılıklı olarak çarpıyoruz. Diğerleriyle topluyoruz. U0, V0 artı, U1, V1 artı, U1, V1. Bu da toplam simbolu ile gösterecek olursak, I eşittir sıfırdan N'ye kadar, U1 çarpı, V1, bu da bir.
+
+217
+00:43:32,788 --> 00:43:33,347
+Jess.
+
+218
+00:43:38,900 --> 00:43:56,640
+Şimdi ben şeyi yazmıyorum. Arkadaşlar, iş çarpımın özelliklerini muhakkak bilin. İş çarpımın özellikleri vardı ya, doğal özellikler falan, diğer özellikler. Onları yazmayacağım.
+
+219
+00:44:00,755 --> 00:44:08,576
+Kendimce önemli gördüğüm, diğerleri de önemli, bakın yine tekrar ediyorum, iş çarpımı ve vektöre çarpımın bütün özelliklerini bilin.
+
+220
+00:44:10,635 --> 00:44:20,096
+İş çarpımla alakalı bilmeniz gereken, benim aklıma gelen en azından, bazı özellikler diyeyim.
+
+221
+00:44:27,219 --> 00:44:43,059
+Şöyle bir şey olmasın, onu da söyleyeyim, işte hoca bunu vermedi falan değil. Ben vermişimdir daha önceki derste, şimdi sadece hatırlatma yapıyorum arkadaşlar. Sadece bunlara bakıp da sınava girmeyin. Olur mu? O yüzden bazı özellikler yazıyor.
+
+222
+00:44:48,019 --> 00:45:03,460
+Adınız gibi bilmeniz gereken özellik şu. O ile V vektörlerinin iç çarpımı, O'nun norm çarpı, V'nin norm çarpı, ikisinin arasındaki açının kosyonüsü.
+
+223
+00:45:04,280 --> 00:45:09,039
+Bunu adınız gibi bileceksiniz arkadaşlar. Tamam mı? Bu çok önemli.
+
+224
+00:45:13,139 --> 00:45:13,699
+İki
+
+225
+00:45:17,940 --> 00:45:30,779
+O ile V'nin iş çarpımı 0 ise U vektörü V vektörüne bittir.
+
+226
+00:45:33,279 --> 00:45:34,680
+Tamam mı?
+
+227
+00:45:36,819 --> 00:45:38,668
+Bir de...
+
+228
+00:45:42,324 --> 00:45:49,324
+O ile O'nun çarpımı ne olacak?
+
+229
+00:45:52,484 --> 00:45:56,324
+Norm O'nun karesi olacak.
+
+230
+00:46:06,675 --> 00:46:12,675
+Tabi buradan iki vektör arasındaki açı da buluyorsunuz değil mi? Kosinist ete, hatta yazayım şuraya da.
+
+231
+00:46:14,675 --> 00:46:16,675
+Kosinist ete eşittir.
+
+232
+00:46:19,675 --> 00:46:29,675
+O ile V vektörlerinin çarpımı bölü, normu çarpı, normu.
+
+233
+00:46:44,563 --> 00:46:48,123
+geldik vektör al çarpma
+
+234
+00:47:10,356 --> 00:47:18,956
+Arkadaşlar, yine aldığınız gibi bilmeniz gereken çok çok önemli bir özellik, vektörel çarpım.
+
+235
+00:47:23,027 --> 00:47:24,507
+Nerede tanımılırlar mı bilen?
+
+236
+00:47:30,771 --> 00:47:41,532
+Arkadaşlar, vektörer çarpım.
+
+237
+00:47:45,043 --> 00:47:45,824
+Sadece
+
+238
+00:47:49,588 --> 00:47:50,628
+R3
+
+239
+00:47:50,628 --> 00:47:55,148
+üzerinde tanımlıdır.
+
+240
+00:47:57,728 --> 00:47:59,228
+[öğrenci], bunları ben şey yapacağım.
+
+241
+00:48:00,228 --> 00:48:01,088
+Tam yukarı da aldım.
+
+242
+00:48:02,088 --> 00:48:03,368
+Sayfanızı da yükleyeceğim.
+
+243
+00:48:06,128 --> 00:48:06,968
+Stres yapmayın.
+
+244
+00:48:17,043 --> 00:48:18,724
+Sahri reyüb üzerinde
+
+245
+00:48:18,724 --> 00:48:22,684
+tanımlıdır.
+
+246
+00:48:29,235 --> 00:48:29,735
+İki
+
+247
+00:48:36,596 --> 00:48:39,315
+vektörel çarpımın sonucu
+
+248
+00:48:43,315 --> 00:48:51,795
+Sonucu yine bir vektördür.
+
+249
+00:48:56,916 --> 00:48:57,576
+Alamak.
+
+250
+00:49:11,443 --> 00:49:15,543
+Demek ki rektörel çarpım sadece rekt üzerindeki rektörlerde tanınmamış.
+
+251
+00:49:17,323 --> 00:49:23,844
+Şöyle de şeker güzel olur. Sadece rekt üzerindeki rektörlerde.
+
+252
+00:49:45,204 --> 00:49:55,963
+Aslında vektörel çarpım dediğimiz bu vektörel çarpım ve bunu zaten göstermiştim ben.
+
+253
+00:50:03,572 --> 00:50:06,412
+Hem U'ya
+
+254
+00:50:06,412 --> 00:50:10,172
+Hem de
+
+255
+00:50:10,172 --> 00:50:13,051
+V'ye dik olan
+
+256
+00:50:17,780 --> 00:50:18,680
+Vektör.
+
+257
+00:50:24,115 --> 00:50:25,836
+Hem buraya hem de yedik.
+
+258
+00:50:29,844 --> 00:50:34,284
+vektörel çarpımla alakalı, vektörel çarpımını nasıl buluyoruz?
+
+259
+00:50:36,744 --> 00:50:40,844
+O vektörel çarpım Z eşittir.
+
+260
+00:50:44,324 --> 00:50:56,503
+I, J, K, U1, U2, U3 yani birinci vektörün birleşenleri.
+
+261
+00:50:58,804 --> 00:51:17,524
+V1, V2, V3. Hatta yazayım hadi. Ne yapacağım? Burayı kapatacağım. Burayı kapatacağım. Bu bir, birebir pozitif. U2, V3.
+
+262
+00:51:21,460 --> 00:51:35,180
+Eksi U3V2, I, Eksi, J'den bu da eksi gelecek çünkü birinci satır, ikinci tutumda bunu kapattım. U1V3.
+
+263
+00:51:39,027 --> 00:51:42,807
+Eksi, U3V'imiz
+
+264
+00:51:47,188 --> 00:51:59,128
+G, harta, ubir veik, etse, uite veber.
+
+265
+00:52:10,771 --> 00:52:17,771
+Yine tekrar ediyorum, vektörer çarpımla alakalı diğer özellikleri muhakkak bilin.
+
+266
+00:52:20,612 --> 00:52:24,051
+Hangi özellikler varsa arkadaşlar.
+
+267
+00:52:24,771 --> 00:52:26,072
+Mesela şuradan.
+
+268
+00:52:29,811 --> 00:52:37,131
+Biz neyi biliyoruz? Bir determinatta herhangi bir satır veya sütun yer değiştirdiğinde determinat işaret değiştirir.
+
+269
+00:52:37,131 --> 00:52:52,331
+O halde buradan U1 ve V1 vektörünü yer değiştirdiğinizde ne olur? Eksi gelir. Yani U vektöre şartı.
+
+270
+00:52:52,724 --> 00:53:00,824
+ve eşittir, eksi, ve vektören çarpım bu olur. Yani buradan direkt kendinize çıkartabilirsiniz.
+
+271
+00:53:05,204 --> 00:53:11,284
+Bir de şey, şu özellik. Arkadaşlar, bunu da yine adınız gibi bilin.
+
+272
+00:53:18,099 --> 00:53:32,079
+u vektörer çarpı v'nin normu u çarpı, norm v çarpı sinüs teta.
+
+273
+00:53:34,880 --> 00:53:36,279
+Bunu aldığınız gibi bileceksiniz.
+
+274
+00:53:43,572 --> 00:53:44,771
+Buradan da
+
+275
+00:53:48,980 --> 00:53:50,640
+Şu sonuç çıkartılabilir.
+
+276
+00:53:53,340 --> 00:53:55,619
+Sinüs teteği zaten buradan da bulursunuz da teteği.
+
+277
+00:53:56,340 --> 00:53:57,019
+Şöyle yazayım.
+
+278
+00:54:01,619 --> 00:54:05,619
+yazacaktım ya. Bunlar da çok önemli.
+
+279
+00:54:07,619 --> 00:54:11,619
+Non u çarpı v
+
+280
+00:54:14,996 --> 00:54:23,275
+U, V, V vektörleri tarafından
+
+281
+00:54:29,684 --> 00:54:30,423
+oluşan,
+
+282
+00:54:32,224 --> 00:54:33,224
+oluşturulan
+
+283
+00:54:36,692 --> 00:54:39,192
+oluşturulma
+
+284
+00:54:39,192 --> 00:54:41,811
+paralel kenarın
+
+285
+00:54:45,588 --> 00:54:46,568
+Alalım neşe.
+
+286
+00:54:52,563 --> 00:54:53,323
+Çok önemli.
+
+287
+00:55:01,300 --> 00:55:06,300
+U ve V vektörleri tarafından
+
+288
+00:55:16,179 --> 00:55:17,239
+oluşturulan
+
+289
+00:55:24,211 --> 00:55:25,411
+Üçgenin alanı
+
+290
+00:55:33,204 --> 00:55:39,804
+U ile benim normal bölüm 2.
+
+291
+00:55:40,804 --> 00:55:42,524
+Tamam. Şöyle.
+
+292
+00:56:06,579 --> 00:56:26,300
+Bu u, bu v. Ne oluyor? Para ve kenar dalanı u ile v'nin normlarının çarpımıydı. Şey, u ile v'nin vektörer çarpımının normuydu. O halde bu üçgenin alanı ne oluyormuş? Bu x'i bölü 2. Hatta şöyle diyebiliriz buraya.
+
+293
+00:56:33,300 --> 00:56:39,840
+B, plus B, alan,
+
+294
+00:56:43,699 --> 00:56:52,880
+parallel kenarının alanı, iki ve üçgenin alanı da, B.
+
+295
+00:57:00,436 --> 00:57:16,796
+Bir de vektör açıya alakalı başka ne diyecektim? Şu çok önemli dedik. Üçgenin alanı normal 2, dörtgen, para ve kenar alanı da.
+
+296
+00:57:27,443 --> 00:57:31,003
+Başka?
+
+297
+00:57:37,940 --> 00:57:42,279
+Bekutlayç yapımın öncelikleri size kalıyor arkadaşlar. Siz şey yapacaksınız.
+
+298
+00:58:00,532 --> 00:58:01,032
+ve
+
+299
+00:58:04,563 --> 00:58:05,563
+W
+
+300
+00:58:07,323 --> 00:58:08,764
+vektörlerin
+
+301
+00:58:12,820 --> 00:58:13,820
+Telefondan.
+
+302
+00:58:17,364 --> 00:58:26,244
+oluşan, oluşturulan, paralel yüzlünün
+
+303
+00:58:37,076 --> 00:58:37,796
+Hajmi
+
+304
+00:58:42,164 --> 00:58:46,764
+Ve
+
+305
+00:58:50,324 --> 00:58:51,324
+Ne hişifte?
+
+306
+00:59:10,643 --> 00:59:11,643
+O
+
+307
+00:59:15,219 --> 00:59:22,899
+iş çarpım ve vektör al çarpım W
+
+308
+00:59:27,347 --> 00:59:28,407
+başına eşit
+
+309
+00:59:31,731 --> 00:59:33,751
+Bu özellikler de vardı sanki zaten.
+
+310
+00:59:38,739 --> 00:59:44,739
+W vektora çarptım V vektora çarptım.
+
+311
+00:59:46,739 --> 00:59:55,739
+Ve vektora çarptım.
+
+312
+01:00:04,628 --> 01:00:05,068
+Cool.
+
+313
+01:00:12,307 --> 01:00:22,347
+Bunu da şu olarak nasıl yazmıştık arkadaşlar? Determinat formunda.
+
+314
+01:00:39,956 --> 01:00:58,536
+U1, U2, U3, V1, V2, V3, W1, W2, W3'ün determinant olarak yazmış bilinç.
+
+315
+01:01:04,019 --> 01:01:16,019
+Zaten bu diğerleri de buradan geliyor değil mi? Mesela bu W'yi başa almış, U ile V ile yer değiştirmiş.
+
+316
+01:01:17,739 --> 01:01:26,439
+Tamam mı? O yüzden eksi gelmiyor. Bu arada paralel yüzünün hacmi sorulursa size, siz bu üçlüden herhangi birini alabilirsiniz.
+
+317
+01:01:27,219 --> 01:01:40,739
+Eğer hacim sorduysa, negatif bulduysanız, onu mutlaka olarak alıp, yani eksi 20 buldunuz mesela, hacim eksi 20 değildir, 20'dir yani. Tamam mı?
+
+318
+01:01:43,479 --> 01:01:45,439
+Heh, onu unutuyorduk, güzel.
+
+319
+01:01:49,019 --> 01:01:50,439
+O, V, V.
+
+320
+01:01:54,068 --> 01:01:55,068
+W
+
+321
+01:01:57,868 --> 01:02:03,168
+vektörlerinin
+
+322
+01:02:04,568 --> 01:02:06,168
+aynı düzlemle
+
+323
+01:02:11,860 --> 01:02:13,860
+yer alabilmesi için
+
+324
+01:02:24,947 --> 01:02:26,859
+Bu vektörler tarafından
+
+325
+01:02:36,563 --> 01:02:40,963
+oluşturulan paralel yüzlüğünün
+
+326
+01:02:47,380 --> 01:02:52,619
+gözlüğünün azmi sıfır olmalıdır.
+
+327
+01:02:58,291 --> 01:02:58,911
+Yani.
+
+328
+01:03:04,467 --> 01:03:11,747
+O ve W aynı düzlemdeler.
+
+329
+01:03:18,931 --> 01:03:20,131
+Ancak ve ancak
+
+330
+01:03:27,476 --> 01:03:29,416
+Eşittir, sıfır.
+
+331
+01:03:50,132 --> 01:03:50,992
+Çocukşu'ya kalan.
+
+332
+01:03:55,668 --> 01:03:56,887
+Evet, turuz uzayları var.
+
+333
+01:04:19,188 --> 01:04:22,188
+Umarım bir şey atlamamışımdır herhalde. İnşallah atlamamışımdır.
+
+334
+01:04:23,587 --> 01:04:26,028
+Üçlü vektörel çarpım vardı, onu unuttuk.
+
+335
+01:04:28,068 --> 01:04:29,268
+Onu hemen söyleyelim.
+
+336
+01:04:36,692 --> 01:04:40,572
+Tabii tabii, vektör uzayları da var, alt vektör uzayları da var, hepsi var.
+
+337
+01:04:45,972 --> 01:05:04,612
+u vektörel çarpım ve vektörel çarpım w. Arkadaşlar yine tekrar ediyorum, bakın burada yazmadığım sınavda yok diye düşünmeyin. Ben sadece hatırlatma yapıyorum, unutmuş olabilirim. Şöyle yapılıyordu, uzaktaki ile çarpıyordum iş çarpım.
+
+338
+01:05:10,132 --> 01:05:14,731
+Sonra diğerini yazıyorum buraya ve eksi yakındaki.
+
+339
+01:05:25,619 --> 01:05:28,319
+Bu da iki kat vektörer çarpım edilir.
+
+340
+01:05:48,947 --> 01:05:54,067
+Bu arada [öğrenci] derse katılabildi mi acaba? [öğrenci] burada mısın?
+
+341
+01:05:55,587 --> 01:05:57,987
+Sana mailim geldi mi? Ya da ulaşabildim mi?
+
+342
+01:06:02,356 --> 01:06:03,996
+Deşler, boyu, muhkik.
+
+343
+01:06:26,708 --> 01:06:28,708
+vektör uzayı ya da real vektör uzayı.
+
+344
+01:06:36,884 --> 01:06:44,884
+ve kümesi ve artı
+
+345
+01:06:50,804 --> 01:06:56,264
+Artı ve skalerle çatma işlemleri için.
+
+346
+01:07:03,827 --> 01:07:10,827
+9 tane, 10 tane koşul vardı, değil mi arkadaşlar? Onları yazmayacağım. Onlar şey yapıyor zaten, onları biliyorsunuz.
+
+347
+01:07:10,827 --> 01:07:13,827
+Sadece ben ilk ikisini yazayım.
+
+348
+01:07:13,827 --> 01:07:17,827
+Ya da yazayım, ne olacak?
+
+349
+01:07:17,827 --> 01:07:22,827
+U ve elemanıdır.
+
+350
+01:07:22,827 --> 01:07:29,827
+V için U artı ve elemanıdır.
+
+351
+01:07:32,851 --> 01:07:33,351
+ve
+
+352
+01:07:33,351 --> 01:07:35,532
+olmalı
+
+353
+01:07:41,396 --> 01:07:42,336
+vektör al.
+
+354
+01:07:45,940 --> 01:07:49,019
+Toplamaya göre, kapalı.
+
+355
+01:07:52,532 --> 01:07:54,692
+Sonra bir de ne vardı?
+
+356
+01:08:48,564 --> 01:08:51,463
+Bu da ne? Birleşme özelliği.
+
+357
+01:09:10,963 --> 01:09:12,963
+u elemanıdır v için
+
+358
+01:09:16,163 --> 01:09:18,163
+u artı sıfır eşittir
+
+359
+01:09:19,363 --> 01:09:20,963
+sıfır artı u
+
+360
+01:09:21,363 --> 01:09:23,363
+u da eşittir u olacak şekilde
+
+361
+01:09:30,484 --> 01:09:38,244
+sıfır elemanıdır ve var. Buna da ne diyorduk? Toplamsal birim.
+
+362
+01:09:45,652 --> 01:09:46,271
+Evet.
+
+363
+01:09:55,475 --> 01:10:21,795
+Her u elemandır v için u artı v eşittir v artı u, o da eşittir sıfır olacak şekilde v eşittir eksi u elemandır v var.
+
+364
+01:10:24,243 --> 01:10:28,083
+Bu da toplamsel ters.
+
+365
+01:10:47,475 --> 01:10:48,615
+B kısmından
+
+366
+01:10:58,355 --> 01:11:11,996
+U elemandır V ve C elemanıdır V için C'ı kadar çarpım U elemanıdır V.
+
+367
+01:11:16,404 --> 01:11:17,624
+Skalac yapmaya göre.
+
+368
+01:11:25,140 --> 01:11:25,860
+Kapalı olduk.
+
+369
+01:13:00,819 --> 01:13:01,319
+Son.
+
+370
+01:13:17,363 --> 01:13:26,003
+Evet, bu on koşulu sağlıyorsa, V vektör uzayına bu işlemlerle beraber V vektör uzayı görüyoruz.
+
+371
+01:13:27,884 --> 01:13:32,083
+Vektör uzayı değil, vektör uzaylı olmadığını kontrol için.
+
+372
+01:14:01,939 --> 01:14:02,739
+Ne yapıyorsunuz?
+
+373
+01:14:15,636 --> 01:14:17,516
+İlk önce...
+
+374
+01:14:23,636 --> 01:14:36,896
+vektörel toplama ve skalerle çarpma altında kapalı mı?
+
+375
+01:14:43,188 --> 01:14:43,728
+Yani
+
+376
+01:15:03,155 --> 01:15:05,155
+Buna bakıyorsunuz.
+
+377
+01:15:07,155 --> 01:15:08,043
+Sonra...
+
+378
+01:15:14,292 --> 01:15:18,052
+Eğer öyleyse, zaten kapalı değilse vektör uzayı değiller.
+
+379
+01:15:22,484 --> 01:15:25,644
+Sonra, toplamsal birim var mı?
+
+380
+01:15:33,235 --> 01:15:46,036
+Yani, u artı sıfır eşittir sıfır artı u, u da eşittir, u olacak şekilde.
+
+381
+01:15:52,851 --> 01:16:03,112
+0, elementer ve var mı? Ona bakıyorsunuz. Eğer o da varsa diğer hepsini kontrol etmeniz gerekiyor.
+
+382
+01:16:03,112 --> 01:16:19,451
+Ama bu ilk üçünü kontrol ederken herhangi birisinde eğer sağlanmazsa, toplumsal vektörer toplam evleri ya da skater çarptığı evleri kapalı değilse, o zaman direkt vektör uzayı değildir ya da
+
+383
+01:16:19,507 --> 01:16:27,067
+Toplamsal birim yoksa, direkt vektör uzayı değildir, diyebilirsiniz.
+
+384
+01:16:28,188 --> 01:16:30,387
+Vektör uzayı örnekleri önemli.
+
+385
+01:16:38,644 --> 01:16:41,283
+Bunda şimdi zamanım yok. Tek tek söyleyemeyeceğim.
+
+386
+01:16:49,011 --> 01:16:50,631
+Ama belki şey yazabiliriz.
+
+387
+01:16:52,771 --> 01:16:53,271
+Mesela,
+
+388
+01:16:55,431 --> 01:17:00,611
+R artı çarpı, yani bu bilinen toplama, bu bilinen çarpma işlemi,
+
+389
+01:17:01,971 --> 01:17:02,811
+bir vektör uzay değil mi?
+
+390
+01:17:37,300 --> 01:17:38,540
+Benzer şekilde
+
+391
+01:17:52,467 --> 01:17:54,608
+Toplama ne? Matrislerdeki toplama.
+
+392
+01:18:21,395 --> 01:18:24,735
+Bir tane de vektör uzayı olmayan örnek verelim.
+
+393
+01:18:49,108 --> 01:18:53,788
+Bilinen derken her zaman yaptığımız işlemler arkadaşlar bunlar.
+
+394
+01:19:12,435 --> 01:19:17,175
+Peki, Q, rasyonel sayılar, Q, nesi bilinen toplam ve çarpma altında ve Q uzay mıdır?
+
+395
+01:19:23,380 --> 01:19:23,800
+Sure.
+
+396
+01:19:42,163 --> 01:19:43,144
+Verdam, [öğrenci]?
+
+397
+01:19:49,587 --> 01:19:50,307
+Her zaman değil.
+
+398
+01:19:58,644 --> 01:19:59,504
+Let's see, man.
+
+399
+01:20:05,684 --> 01:20:13,384
+Niye iki reasyonel sayıyı çıkartırsan yine bir reasyonel sayı elde etmez misin? Bilinen toplama.
+
+400
+01:20:45,492 --> 01:20:46,971
+vektör uzay değil arkadaşlar.
+
+401
+01:20:51,028 --> 01:20:51,828
+Neden diye?
+
+402
+01:20:57,971 --> 01:20:58,891
+Söylemiş o.
+
+403
+01:21:02,420 --> 01:21:09,720
+Eğer siz köküçüyle mesela şey alıyoruz ya, sıkıdan çarpmaya göre de kapalı olması lazım ya.
+
+404
+01:21:15,604 --> 01:21:21,604
+Yine Q2 elemanıdır, R ve bu elemanıdır, Q için.
+
+405
+01:21:23,604 --> 01:21:27,212
+K2 çarptı, bu elemanıdır, Q olur mu?
+
+406
+01:21:30,355 --> 01:21:40,355
+Olmaz değil mi? O yüzden bu bir vektör uzayı değil arkadaşlar.
+
+407
+01:22:14,036 --> 01:22:16,036
+En son ne kaldı?
+
+408
+01:22:18,355 --> 01:22:20,355
+Alt vektör düzenleri kaldı.
+
+409
+01:22:32,372 --> 01:22:33,932
+Ondan da bası değil, bitireyim.
+
+410
+01:23:15,731 --> 01:23:17,211
+Ve bir dektör uzayın.
+
+411
+01:23:22,036 --> 01:23:29,655
+ve W'da V'nin 16 kübesi.
+
+412
+01:23:37,363 --> 01:23:41,683
+Eğer, hatta şöyle de şeydikler diyorum.
+
+413
+01:24:04,115 --> 01:24:09,775
+V kümesi, bu işlemden altında bir vektör uzayı ve W'da bunun bir alt kümesi olsun.
+
+414
+01:24:19,155 --> 01:24:20,296
+Eğer W
+
+415
+01:24:24,756 --> 01:24:30,515
+Bu aynı işlemler altında bir vektör uzayı oluyorsa,
+
+416
+01:24:36,979 --> 01:24:44,299
+W'ya, line, alt uzayı, ya da alt vektör uzayı.
+
+417
+01:24:54,131 --> 01:25:02,451
+Tabii biz alt vektör uzayı olmayı bu şekilde göstermiyorduk. Söğrenme gösteriyorduk.
+
+418
+01:25:06,707 --> 01:25:08,707
+Ya uzay kesti diyeyim hatta no.
+
+419
+01:25:37,300 --> 01:25:37,940
+İyiyas.
+
+420
+01:25:52,659 --> 01:25:54,659
+W'dan aldığım iki tane eleman.
+
+421
+01:25:58,260 --> 01:26:00,020
+Toplum evre kapalıysa
+
+422
+01:26:22,931 --> 01:26:23,931
+ise
+
+423
+01:26:25,931 --> 01:26:26,931
+w
+
+424
+01:26:32,435 --> 01:26:35,435
+ve ne alt uzayları.
+
+425
+01:26:40,756 --> 01:26:41,756
+Tamam mı?
+
+426
+01:26:41,756 --> 01:26:42,508
+Şimdi.
+
+427
+01:26:50,707 --> 01:26:52,527
+Başka da bir şey kalmadı herhalde.
+
+428
+01:27:05,011 --> 01:27:15,371
+Var mı arkadaşlar sizin sormak istediğiniz bir şey? Sorularla alakalı olabilir. Yani sorulara bakanlar için söylüyorum. Bakmayanlar şimdi bu saatten sonra tekrar baksın artık. Genel bir tekrar yapayım.
+
+429
+01:27:28,340 --> 01:27:29,520
+Kaç sayfa olmuş bu?
+
+430
+01:27:30,540 --> 01:27:32,260
+Gördün mü? Kaç sayfa oldu? Her neyse.
+
+431
+01:27:33,399 --> 01:27:35,260
+Herhalde 4-5 sayfa şey yaptık.
+
+432
+01:27:35,620 --> 01:27:36,920
+Bunlar sınavda işinize yarar.
+
+433
+01:27:39,020 --> 01:27:41,560
+Sınavda çıkmış sorular var arkadaşlar sizde.
+
+434
+01:27:41,560 --> 01:27:44,840
+Bakın, daha önce yüklediğim sorular da bu değişik.
+
+435
+01:27:48,467 --> 01:27:59,188
+Daha önce yıkılmış olduğum, yani ilk sınavdan önce yıkılmış olduğum dosyada lineer denklem sistemleriyle alakalı kısım da var. Mesela bakalım, bulalım bir tane.
+
+436
+01:28:14,739 --> 01:28:15,479
+Bunda yok muydu?
+
+437
+01:28:16,559 --> 01:28:17,399
+Nereden denklem sistemler?
+
+438
+01:28:22,612 --> 01:28:28,051
+Diyor ki, lineer denklem sisteminin çözümün olabilmesi için ABC değerlerle arasındaki bantı ne olmalı? Ne yapıyorsunuz?
+
+439
+01:28:29,332 --> 01:28:33,992
+Aslında bir şey. Şöyle de yapılabilir bu da.
+
+440
+01:28:36,692 --> 01:28:39,631
+Bir, iki, üç, üç, bilinmeyen üçte denklemler oluşuyor.
+
+441
+01:28:40,851 --> 01:28:48,771
+Bunu Kasiyer Maddesi'nin determinantına bakarak da söyleyebilirsiniz. Ancak bir defa ABC'yi alamıyorsunuz. Böyle bir sıkıntı var.
+
+442
+01:28:49,203 --> 01:29:03,884
+Mecburen ne yapmanız lazım? Bunu Gauss-Jord'un eliminasyon yöntemiyle, indirgeme yöntemiyle çözmeniz lazım. Genişletilmiş kastöyler matrisini yazdım. Bunu satıcıya indirgenmiş eşelon forma getirdim. Nerede? Şurada.
+
+443
+01:29:05,523 --> 01:29:14,263
+Şimdi diyor ki, ne diyor? Çözümün olabilmesi için rank A, B'nin rank A'ya eşit olması lazım. Değil mi arkadaşlar?
+
+444
+01:29:14,931 --> 01:29:28,431
+Şimdi bu rank A'da, rank A sıfır eksik zaten, sıfır sıfır. Demek ki bu da sıfır olursa, ancak o zaman çözüm olur. O halde A'nın 3B-7C'ye bir yerine sıfır olmalı diyecek. O kadar.
+
+445
+01:29:33,427 --> 01:29:37,427
+Bu da yine benzer şekilde, Gauss'un oradan endirya melatonine çözüyorsunuz.
+
+446
+01:29:40,128 --> 01:29:42,427
+Ne diyor bu? Matris'in tersini.
+
+447
+01:29:43,628 --> 01:29:46,927
+Matris'in tersini biz daha önce gördük ya bu.
+
+448
+01:29:46,927 --> 01:29:47,927
+Ha, önceki şey.
+
+449
+01:29:50,927 --> 01:29:52,927
+Şey diyor arkadaşlar.
+
+450
+01:30:06,323 --> 01:30:08,043
+Matris'in tersini bulunmuyor yani.
+
+451
+01:30:26,228 --> 01:30:49,047
+Neyse, burada var. Bakarsanız diğerine bakalım. Burada da vektörlerle alakalı kısım var. Mesela büyük alfa ve beta vektörler için ik alfa ve eksi beta vektörü ile a ile b vektörü ile vektörler çarpma arasındaki açığı bulunuyor. Ne yapacaksın? Önce ik alfa ve eksi beta oluşturacaksın. İk alfa dediği, bunu iki ile çarpacaksın hepsini.
+
+452
+01:30:49,652 --> 01:30:54,912
+Eksi altı yayı, artı iki kökü, iki işte falan. Eksi betada bunun eksi işaretçisi.
+
+453
+01:30:56,211 --> 01:31:04,951
+A vektör çarpım betada, şey yardımıyla, determinant yardımıyla buldunuz. Daha sonra ikisinin arasındaki açı nasıl olacak?
+
+454
+01:31:10,676 --> 01:31:14,396
+Ya şunu kullanacaksınız.
+
+455
+01:31:22,292 --> 01:31:22,832
+Ya da?
+
+456
+01:31:32,372 --> 01:31:34,811
+Bu ne yapacaksın? Sadece kulayacaksın. Hangi kulayacaksın? Hangi kulayacaksın?
+
+457
+01:31:46,547 --> 01:31:48,368
+Bunlar kayla anlatımı görmedikten.
+
+458
+01:31:51,128 --> 01:31:54,547
+Yalnız şunu da söyleyeyim arkadaşlar, ben sizin sınıfa biraz kırgınım.
+
+459
+01:31:55,208 --> 01:32:07,747
+Şu olarak, ben bu kadar bakın, hasta hasta tamamen şey yapmıyorum yani, genelde iştirmiyorum ama, o kadar böyle şey yapayım istiyorum ama sizden böyle tepki gelmeyince,
+
+460
+01:32:07,747 --> 01:32:13,887
+hiç böyle derse sanki odaklanamıyor musunuz gibi geliyor. O da beni açıkçası çok şey yapıyor yani, üzüyor.
+
+461
+01:32:14,287 --> 01:32:22,167
+Her neyse, inşallah sınavda başarılı olursunuz diyeyim. Ne diyeyim? İlginç, anlamadım.
+
+462
+01:32:22,827 --> 01:32:26,108
+Kramer yöntemiyle çözün diyor, işte kramer yönteminin ne olduğunu biliyorsunuz.
+
+463
+01:32:26,768 --> 01:32:32,887
+Peki. Ben bu dosyaya yükleyeceğim şeye, şu dosyayı.
+
+464
+01:32:36,916 --> 01:32:37,456
+System.
+
+465
+01:32:41,779 --> 01:32:47,859
+Bir de vektörlerle, vektör uzaylarıyla alakalı bir şey var. Onu da bulabilirsem onu da yükleyeyim.
+
+466
+01:32:50,359 --> 01:33:00,539
+Sınavlar şu anda herhalde çıkabilecek bütün her şeyi anlattım size. Sorulara da bakamadık ama çözümleri var zaten burada.
+
+467
+01:33:01,359 --> 01:33:03,859
+Yani çözüm olan bir şey de tekrar çözümünün bir şeyi yok.
+
+468
+01:33:08,979 --> 01:33:26,299
+Bakıp da anlamadığınız bir şey varsa sorabilirsiniz. Var mı bakıp da anlamadığınız bir şey? Yok herhalde. Tamam arkadaşlar, hepimize başarılar diliyorum o zaman sınavda.
+
+469
+01:33:29,811 --> 01:33:31,771
+Haftaya görüşürüz inşallah.
+
+470
+01:33:34,992 --> 01:33:37,291
+Yalnız iki hafta geriye düştük.
+
+471
+01:33:37,531 --> 01:33:38,252
+Bunu da söyleyeyim.
+
+472
+01:33:38,451 --> 01:33:39,672
+Zaten bir hafta gerideyiz.
+
+473
+01:33:46,420 --> 01:33:55,600
+Sınava aynı şekilde gidersiniz [öğrenci]. Şu anda ayarlama yapıyorlardır büyük ihtimalle. Sıkıntı olmaz. Sınav tarihi ve gününde size tanımlanır.
+
+474
+01:33:58,600 --> 01:34:05,860
+Peki. Kendinize iyi bakın arkadaşlar. Sağlıcakla kalın. Hepinize başarılar diliyorum tekrar.

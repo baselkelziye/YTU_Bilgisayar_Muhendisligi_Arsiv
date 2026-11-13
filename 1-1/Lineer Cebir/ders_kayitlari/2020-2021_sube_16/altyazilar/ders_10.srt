@@ -1,0 +1,2051 @@
+1
+00:01:40,180 --> 00:01:41,200
+Arkadaşlar, merhaba.
+
+2
+00:01:52,052 --> 00:01:54,052
+Nasılsınız? İyisinizdir. Umarım.
+
+3
+00:02:03,668 --> 00:02:10,307
+[öğrenci], sen bana mail atmışsın, teşekkür ederim. Ona cevap yazacağım. Şu anda çok vaktim olmadığı için cevap yazamadım. Sağ olun.
+
+4
+00:02:10,987 --> 00:02:12,207
+Sağ olun hocam, size sağ olun.
+
+5
+00:02:16,051 --> 00:02:18,891
+Bizde iyiyiz. Biraz yoğunuz arkadaşlar bu aralar.
+
+6
+00:02:21,512 --> 00:02:21,771
+Peki.
+
+7
+00:02:23,591 --> 00:02:27,491
+Sınavınız ikinci sınav 12. haftada olacak arkadaşlar.
+
+8
+00:02:28,831 --> 00:02:31,471
+Şu anda 9. haftadayız.
+
+9
+00:02:36,372 --> 00:03:00,172
+Yani 9, 10, 15. 11. haftanın sonuna kadar olur büyük ihtimal. Sen nereden biliyorsun [öğrenci]? Bizim 10. haftadayız, pardon. Hayır, konu olarak diyorum. Yani 11. haftanın sonuna kadar sorumlu olacaksınız büyük ihtimal. Finale bilmiyorum [öğrenci].
+
+10
+00:03:03,668 --> 00:03:09,968
+Yani iki haftalık daha, bununla beraber üç haftalık daha konumuz var. İkinci vize için.
+
+11
+00:03:12,948 --> 00:03:23,328
+Bugün vektörlere başlayacağız. Vektörler kolay bir konu. Çoğumuz da biliyor musunuzdur zaten. O yüzden çok fazla görmeyeceğim sizi bugün.
+
+12
+00:03:45,907 --> 00:03:51,467
+vektör yönüne doğru parçasına deniyordu. Başlangıç noktası var.
+
+13
+00:03:53,147 --> 00:03:54,147
+A
+
+14
+00:03:55,147 --> 00:03:56,747
+Başlangıç noktası.
+
+15
+00:03:58,187 --> 00:04:04,747
+A'dan B'ye doğru, doğru çiziyorsunuz. Bu da bitiş noktası.
+
+16
+00:04:08,372 --> 00:04:17,692
+Yönlü doğru parçasına, vektör deniyor. Matrislerde vektör olarak ne almıştık? Hatırlayın arkadaşlar.
+
+17
+00:04:19,612 --> 00:04:23,971
+N çarpı bir tipinde matrisler.
+
+18
+00:04:29,971 --> 00:04:33,252
+Evet arkadaşlar, mikrofonunuzu kapatırsanız.
+
+19
+00:04:34,612 --> 00:04:36,152
+Eğer benimle konuşmuyorsanız.
+
+20
+00:04:36,992 --> 00:04:40,492
+NKP'nin bir tipindeki matrisleri de vektör demiştik.
+
+21
+00:04:47,532 --> 00:04:51,711
+Konuşanı ben göremiyorum da siz görüyorsanız uyarır mısınız arkadaşlar size zahmet.
+
+22
+00:04:54,572 --> 00:04:56,732
+Yönün doğru parçasına vektör dedik.
+
+23
+00:04:57,032 --> 00:04:59,592
+A başlangıç noktası, B bitiş noktası.
+
+24
+00:05:00,492 --> 00:05:01,432
+Tamam, teşekkürler.
+
+25
+00:05:02,163 --> 00:05:08,124
+AB'de üzerinde böyle vektörle gösteriliyor bir vektör.
+
+26
+00:05:10,624 --> 00:05:20,063
+Şimdi biz bu derste daha çok 3 boyutlu uzayda ya da 2 boyutlu uzayda vektörlerden bahsedeceğiz.
+
+27
+00:05:21,024 --> 00:05:24,364
+3 boyutlu uzay demek ne demek arkadaşlar? 3 tane bileşeni var.
+
+28
+00:05:26,355 --> 00:05:34,795
+x ekseni, y ekseni ve z ekseninde, yani bulunduğumuz dünya aslında. Daha çok 3 boyutlu uzaydan bahsedeceğiz bu derste.
+
+29
+00:05:35,836 --> 00:05:47,056
+R küp demek de her bir birleşiğine real sayı arkadaşlar. 3 tane re'nin birleşimi yani. Real, real, real, re'küp. 3 boyutlu vektör uzayında 2 tane nokta.
+
+30
+00:05:59,795 --> 00:06:23,135
+Şimdi şurada bir nokta olduğunu düşünün arkadaşlar. Bunun bir x bileşeni var. x ekseninde bir yeri var bunun. y ekseninde bir yeri var. Bir de z ekseninde yeri var. O yüzden bir nokta 3 boyutlu uzayda 3 tane koordinat da veriliyor.
+
+31
+00:06:24,435 --> 00:06:37,255
+İki tane noktamız varmış. x0, y0, z0, x1, y1, z1. Bu iki noktanın oluşturduğu, neyse bunu P'ye almış oldum artık. Herhalde burada vardır. Bakayım yok.
+
+32
+00:06:45,651 --> 00:06:46,851
+Aynı aslında.
+
+33
+00:06:54,196 --> 00:07:03,016
+P0 ve P1 noktalarından, P0 başlangıç noktası, P1 bitiş noktası olan vektörü, aynı şekilde,
+
+34
+00:07:07,956 --> 00:07:22,355
+Gösterebilirsiniz. Bu vektörde arkadaşlar, x0-x0, y1-y0, z1-z0 şeklinde tanımlanacak.
+
+35
+00:07:23,576 --> 00:07:27,556
+İki noktadan geçen doğrumun koordinatları bunlar.
+
+36
+00:07:31,987 --> 00:07:47,008
+Bir de bir vektörün normu, uzunluğu ya da boyutunu bulabiliyorsunuz arkadaşlar. O da mutlak değer içinde ya da çift çizgiyle de gösteriliyor bazen bu bazı kaynaklarda.
+
+37
+00:07:49,388 --> 00:07:59,008
+Eğer vektörün bileşenleri, koordinatları x0, x1, x0, y1, y0, z1, z0 şeklindeyse,
+
+38
+00:07:59,923 --> 00:08:12,203
+Bu vektörün boyu, ya da normu, ya da uzunluğu, her bir koordinatının, kareleri toplamının, kare kökü.
+
+39
+00:08:12,443 --> 00:08:20,743
+Yani x1-x0'ın karısı artı, y1-x0'ın karısı artı, z1-z0'ın karısı şeklinde.
+
+40
+00:08:21,743 --> 00:08:24,203
+Örnek olarak iki boyutlu uzayda iki nokta verilmiş.
+
+41
+00:08:25,812 --> 00:08:51,172
+Bu iki noktadan geçen vektör ya da doğru ne olacak? 3-1-1, 3-2, yani 5 vektörü. Bu vektörün uzunluğu da ya da bu yu da, kara kök için, eksi 2'nin karesi artı, 5'in karesinden ne olacak? Kök 29.
+
+42
+00:08:55,316 --> 00:09:06,316
+Eğer bir vektörün uzunluğu 1 ise arkadaşlar, boyu 1 ise bu vektöre birim vektörü deniyor. Siz her vektörü birim vektörü haline getirebilirsiniz.
+
+43
+00:09:06,316 --> 00:09:10,316
+Eğer bir V vektörünün...
+
+44
+00:09:15,475 --> 00:09:19,375
+v vektörünü boyuna bölerseniz,
+
+45
+00:09:28,500 --> 00:09:36,180
+birim vektör olmuş olur. Yani her vektör birim vektör haline getirilebilir.
+
+46
+00:09:43,347 --> 00:09:50,447
+Bu arada şurada vektörlerin anentik ifadesinden de bahsedeyim arkadaşlar. Burada bahsedilmemiş galiba.
+
+47
+00:09:56,019 --> 00:10:02,980
+Bizim 3 boyutlu uzayda, 2 boyutlu uzayda da kullanabiliriz. Özel baz vektörlerimiz var.
+
+48
+00:10:06,360 --> 00:10:11,860
+IJK, belki fizik dersinde ya da kendi mühendislik derslerinizde görmüşsünüzdür.
+
+49
+00:10:21,331 --> 00:10:23,331
+Bunlar birim vektörler.
+
+50
+00:10:34,772 --> 00:10:37,451
+vektörlerin analitif ifadesi diyelim şuraya.
+
+51
+00:10:54,388 --> 00:11:11,868
+i eşittir, 1, 0, 0, j eşittir, 0, 1, 0, k eşittir, 0, 0, 1. Bunlar 3 boyutlu uzayda birim vektörler, özel vektörler.
+
+52
+00:11:11,868 --> 00:11:20,748
+2 boyutlu uzayda alırsanız, o zaman ne olacak? k olmayacak. i eşittir, 1, 0, j eşittir, 0, 1 olacak.
+
+53
+00:11:23,796 --> 00:11:26,635
+Peki, şöyle diyelim.
+
+54
+00:11:47,412 --> 00:11:49,312
+Bu da iki boyutlu uzayda.
+
+55
+00:11:50,392 --> 00:11:52,412
+Şimdi arkadaşlar, biz bir vektörü...
+
+56
+00:11:54,092 --> 00:11:55,192
+Yok, fark etmez.
+
+57
+00:11:57,192 --> 00:12:00,632
+Ben öyle çizdim. Farklı çizilebilir [öğrenci].
+
+58
+00:12:04,211 --> 00:12:08,812
+Ama genel şey böyle, siz farklı gördüyseniz olasını bilmiyorum.
+
+59
+00:12:17,427 --> 00:12:18,488
+Şöyle de yapıyorlar.
+
+60
+00:12:26,707 --> 00:12:29,707
+daha yaygın
+
+61
+00:12:30,407 --> 00:12:32,331
+şekliyle yazayım o zaman.
+
+62
+00:12:37,395 --> 00:12:50,895
+Şimdi arkadaşlar, bu baz vektörleri, baz vektör derken, tabi bazları bilmiyorsunuz şu anda siz, temel vektörler diyelim bunlara, baz vektör demeyelim.
+
+63
+00:12:52,255 --> 00:12:56,836
+Bunlar, 3 boyutlu ve 2 boyutlu uzayı oluşturan temel vektörler.
+
+64
+00:12:56,836 --> 00:13:01,836
+Bu vektörler yardımıyla siz diğer bütün vektörleri ifade edebiliyorsunuz.
+
+65
+00:13:07,412 --> 00:13:28,491
+ve 3 boyutlu uzayda bir vektör ise, ve siz arkadaşlar, A çarpı in, bugün niye bu kadar kötü yazıyorum onu anlayabilmiş değilim.
+
+66
+00:13:30,899 --> 00:13:35,320
+Bu arada vektörlerin üzerinde ok işaretiyle gösteriyoruz arkadaşlar.
+
+67
+00:13:36,440 --> 00:13:37,720
+Noktalarla karışmasın diye.
+
+68
+00:13:37,720 --> 00:13:48,480
+A çarpı i artı B çarpı j artı C çarpı k şeklinde yazabiliyoruz.
+
+69
+00:13:48,860 --> 00:13:49,980
+Bu ne ifade ediyor?
+
+70
+00:13:51,379 --> 00:13:53,600
+İinci koordinatı yani aslında x.
+
+71
+00:13:54,180 --> 00:13:55,799
+Şöyle düşünebilirsiniz arkadaşlar bunu.
+
+72
+00:13:57,971 --> 00:13:59,971
+ve z gibi düşünün.
+
+73
+00:14:00,971 --> 00:14:10,971
+inci koordinatı, yani x koordinatı, a, z inci koordinatı, b, k inci koordinatı da c.
+
+74
+00:14:10,971 --> 00:14:16,971
+Bütün vektörleri bu şekilde analitik olarak yazabilirsiniz.
+
+75
+00:14:16,971 --> 00:14:22,971
+Bunlar vektörlerin analitik ifadesi deniyor. Bazen vektörler bu şekilde de verilebilir size.
+
+76
+00:14:22,971 --> 00:14:24,427
+Tamam mı?
+
+77
+00:14:24,436 --> 00:14:30,436
+İki boyutta uzayda olsaydı, ona da W diyelim. W eşittir.
+
+78
+00:14:34,436 --> 00:14:37,436
+D, F olsun.
+
+79
+00:14:41,011 --> 00:14:43,351
+Bu duruma nasıl yazacağız? W eşittir.
+
+80
+00:14:45,191 --> 00:14:53,971
+D çarpı i artı F çarpı j olarak yazacağız.
+
+81
+00:14:54,571 --> 00:15:01,511
+Bu vektörlerin anetlik ifadesi. Bu şekilde de vektörler ifade edilebilir.
+
+82
+00:15:06,451 --> 00:15:08,872
+Birim vektörler, arkadaşlar,
+
+83
+00:15:18,259 --> 00:15:29,040
+Bunların güzel özellikleri var. Şimdi iş çarpımı verdikten sonra ondan da bahsedeceğiz. Vektörlerin anetik ifadesi de bu şekilde.
+
+84
+00:15:30,960 --> 00:15:33,259
+İki vektörün toplamı arkadaşlar...
+
+85
+00:15:35,604 --> 00:15:44,124
+karşılıklı bileşenlerinin toplamına eşit, yani aynı uzunlukta olmalılar, toplanabilmesi için, aynı matrislerde olduğu gibi düşünün.
+
+86
+00:15:44,124 --> 00:15:53,683
+Zaten vektörü de n çarpı bir formunda matris demiştik. İşte burada aslında anetik formda yazılması daha şık olabilirdi ama olsun, bu şekilde de olur.
+
+87
+00:15:54,384 --> 00:15:55,824
+Yani u vektörü aslında neymiş?
+
+88
+00:15:57,504 --> 00:15:59,144
+u vektörü u bir
+
+89
+00:16:00,788 --> 00:16:04,868
+Ama tabi burada ne uzunluğunda olduğu için doğru, analitik formüla yazması daha zor olur.
+
+90
+00:16:07,208 --> 00:16:08,208
+Ne tane bileşen var?
+
+91
+00:16:11,328 --> 00:16:16,668
+Birinci bileşeni, ikinci bileşeni, neyinci bileşeni, v'ninki de birinci ve neyinci bileşeni. Ne yapacaksınız?
+
+92
+00:16:16,668 --> 00:16:25,948
+U artı v, u bir artı v bir, u iki artı v iki, işte u üç artı v üç, u ne artı?
+
+93
+00:16:26,515 --> 00:16:38,595
+Vn şeklinde. Şimdi bazı arkadaşlarımızın şöyle bir soru aklına geldi büyük ihtimal. Hocam siz işte anatik ifade İ, J, K, 3 boyutlu uzayda dediniz.
+
+94
+00:16:41,955 --> 00:16:53,335
+R3'te. Bu mesela N boyutlu uzayda, Rn'de. Rn'de bu baz nasıl oluyor ya da temel vektörler nasıl oluyor? Evet orada da var arkadaşlar.
+
+95
+00:16:54,548 --> 00:17:13,548
+Onlar da E ile gösteriliyor. E1 ile. E1, 1, 0, ne tane bileşeni var? İşte E2, ikinci bileşeni 1. Bu şekilde. Yani temel vektörler...
+
+96
+00:17:16,243 --> 00:17:26,543
+Her boyutlu uzayda var. Tamam mı? Ama biz genelde 3 boyutlu uzayı kullandığımız için bu dersle, EJK'yı kullanıyoruz. Pratiklik açısından. Tamam mı?
+
+97
+00:17:33,076 --> 00:17:42,615
+Peki iki vektörün toplamı karşılıklı birleşenlerinin toplamına eşitmiş.
+
+98
+00:17:48,468 --> 00:17:55,968
+U ile V vektörlerini toplarsanız ne elde edersiniz? 1 artı eksi 1, eksi 2 artı 3, 0, 1 vektörünü elde edersiniz.
+
+99
+00:17:59,635 --> 00:18:07,695
+Bunu, x'i eksenini gösterirsek, iki boyutlu olduğu için, ne yapıyordu? Yine hatırlayın.
+
+100
+00:18:33,619 --> 00:18:41,619
+Bu iki vektörün toplamı demek arkadaşlar, U vektörünün ucuna V vektörünü ekliyorsunuz.
+
+101
+00:18:41,619 --> 00:18:44,427
+Ekledik. Daha sonra...
+
+102
+00:18:49,236 --> 00:18:55,236
+u vektörünün başlangıç noktası ile v vektörün bitiş noktasını birleştiriyorsunuz.
+
+103
+00:18:55,236 --> 00:18:58,736
+Bu, u artı v vektör oluyor.
+
+104
+00:18:59,635 --> 00:19:02,236
+Ya da paralel kenar oluşturuyorsunuz.
+
+105
+00:19:03,236 --> 00:19:03,976
+O da aynı şey.
+
+106
+00:19:05,836 --> 00:19:06,736
+Ne yapıyorsunuz?
+
+107
+00:19:08,756 --> 00:19:13,236
+v vektörünü u'nun ucuna...
+
+108
+00:19:14,099 --> 00:19:18,599
+u vektöründe v'nin ucuna ekliyorsunuz. Burada bir paralel kenar oluştu bakın.
+
+109
+00:19:18,599 --> 00:19:24,099
+Tamam, şu bir paralel kenar. Keşke biraz daha paralel kenar gibi görünen bir şey olsaymış.
+
+110
+00:19:24,099 --> 00:19:31,599
+Daha sonra ikisinin başlangıç noktasından bitiş noktalarını birleştiriyorsunuz. Bu ne yapıyor bize?
+
+111
+00:19:35,099 --> 00:19:37,599
+u artı v vektörünü veriyor.
+
+112
+00:19:42,996 --> 00:19:51,556
+Biz iki vektörü toplayabildiğimiz gibi çıkartılabiliriz aslında. Değil mi? Gerçi onu skalarla çarpmadan sonra verecek herhalde.
+
+113
+00:19:55,859 --> 00:20:21,859
+Aslında arkadaşlar, bunlar hep matrislerde yaptığımız işlemler. Neye çarpı? Bir formunda bir matrisimiz var. Ona vektör dedik. Matrislerde ne vardı? İki matrisin toplamı ve farkı vardı. Bir matrisi skalerle çarpma vardı. Matrisi skalerle çarpmak demek ne demekti? Matrisin bütün bileşenlerini, yani vektörün bütün bileşenlerini o skalerle...
+
+114
+00:20:23,412 --> 00:20:29,412
+Çarpılması demek, lambası kadarıyla her bir bileşeni çarpıyorsunuz.
+
+115
+00:20:30,032 --> 00:20:33,192
+Tabi bir vektörün bu boyunu uzatır arkadaşlar.
+
+116
+00:20:34,652 --> 00:20:45,052
+Ama, bir skalarla çarpmak, eğer çarptığınız skalar sıfırdan büyükse, yani pozitifse,
+
+117
+00:20:46,932 --> 00:20:51,072
+Bu durumda, lambda çarpı u ile u vektörleri aynı yönde olacak.
+
+118
+00:20:53,352 --> 00:20:56,932
+Eğer sıfırdan küçükse, bu defa zıp yönlü olacak.
+
+119
+00:20:56,932 --> 00:21:01,132
+İşte, lambda eksi bir ile bir arasında ise, bu defa ne olur?
+
+120
+00:21:01,552 --> 00:21:04,811
+Lambda çarpı u'nun boyu, u'dan küçük olur.
+
+121
+00:21:04,932 --> 00:21:07,652
+Çünkü bu, bir rasyonel ifadeyle çarpmışsınız bunu.
+
+122
+00:21:09,092 --> 00:21:11,271
+Eğer lambda eksi birden küçükse de,
+
+123
+00:21:15,412 --> 00:21:18,811
+Bu durumda ne olur? Bunda bunun ne farkı var?
+
+124
+00:21:20,371 --> 00:21:31,092
+Lambda eksiği birden küçük ve birden büyükse de, bu durumda da lambda çarpı onun boyu, u'dan büyük olur.
+
+125
+00:21:32,092 --> 00:21:34,092
+Çok önemli değil açıkçası.
+
+126
+00:21:38,708 --> 00:22:03,907
+İki boyutta uzayda, v vektörü verilmiş, 1, 1. Bunu x2 ile çarparsak, x2, x2 vektörünü elde ediyoruz. Bunu yine eksende gösterirsek, x2 ekseninde. V vektörü bu arkadaşlar. Lambda skaleri negatif olduğu için, eksi yönde olacak.
+
+127
+00:22:06,420 --> 00:22:11,880
+2 ile çarpmışız. Demek ki, eksi yönde, v'nin iki katı şeklinde.
+
+128
+00:22:12,720 --> 00:22:13,480
+Eksi 2v.
+
+129
+00:22:16,620 --> 00:22:19,660
+Ya da yine matrislerde olduğu gibi, bunu şöyle yapabilirsiniz.
+
+130
+00:22:20,480 --> 00:22:24,800
+Eksi 2 çarpı, bir 1 olarak alırsanız, bu v idi.
+
+131
+00:22:26,519 --> 00:22:27,900
+Eksi 2v.
+
+132
+00:22:34,932 --> 00:22:38,311
+Bundan matris çarpma işleminde bahsetmiştim arkadaşlar.
+
+133
+00:22:39,971 --> 00:22:42,132
+Burada skader çarpım diye karşımıza çıkıyor.
+
+134
+00:22:43,331 --> 00:22:45,771
+Aslında iş çarpım ya da nokta çarpım.
+
+135
+00:22:45,771 --> 00:22:49,211
+Bu çok önemli bir çarpım.
+
+136
+00:23:00,339 --> 00:23:14,440
+Skader çarpım için iki tane vektör alıyorsunuz arkadaşlar. Ne boyutunda olsun bunlar, ne uzunluğunda olsun, ne bileşenli olsun ya da özür dilerim. Ne bileşenli iki tane vektörün iç çarpımını biz tanımlamıştık değil mi?
+
+137
+00:23:15,028 --> 00:23:27,607
+Her bir bileşenin çarpı, toplanmasıydı. Yani, U1 çarpı V1 artı, U2 çarpı V2 artı, işte, UN çarpı VN. Bu da toplam sembol içinde, şu şekilde gösterilebilir.
+
+138
+00:23:28,208 --> 00:23:36,028
+Birden N'ye kadar, Uİ, Vİ'lerin çarpımının toplamın iş çarpımında.
+
+139
+00:23:37,408 --> 00:23:41,587
+Bu da, skalar çarpım, iki bir türün, skalar çarpımı idi.
+
+140
+00:23:47,539 --> 00:23:57,339
+4 boyutta uzayda 2 tane vektör verilmiş. Bu 2 vektörün iç çarpımı, 2 çarpı, eksi, 1 artı, 1 çarpı, 1 artı, 0 çarpı, 3 artı, 1 çarpı, 2.
+
+141
+00:23:58,299 --> 00:24:06,659
+Burada önemli bir nokta şu, 2 vektörün iç çarpımı ya da skalat çarpımı ne? Arkadaşlar, bakın.
+
+142
+00:24:08,899 --> 00:24:11,219
+Bir real sayı.
+
+143
+00:24:15,571 --> 00:24:25,631
+İki vektörün iş çarpımı neymiş? Bir real sayıymış. Peki o zaman size bir soru sorayım.
+
+144
+00:24:29,971 --> 00:24:40,771
+İki vektörün, iki vektörü iş çarpabiliyoruz değil mi? Peki, üç vektörün iş çarpımı var mıdır?
+
+145
+00:24:48,884 --> 00:24:49,884
+Vardır hocam.
+
+146
+00:24:50,663 --> 00:24:52,003
+Kim o vardır diyen? Adı ne?
+
+147
+00:24:53,163 --> 00:24:54,243
+Ben, [öğrenci].
+
+148
+00:24:54,683 --> 00:24:58,343
+[öğrenci], isminizi görmüyorum da o yüzden. [öğrenci] neden vardır peki?
+
+149
+00:25:00,223 --> 00:25:10,863
+Hocam çünkü, 3 boyutlu olarak çarpabiliriz, x, y, z, aynı şekilde, 2 vektörü çarptığımız gibi, o 1, v 1.
+
+150
+00:25:16,544 --> 00:25:18,404
+Çarpabiliriz bence.
+
+151
+00:25:19,064 --> 00:25:20,384
+Tamam, başka fikri olamam.
+
+152
+00:25:26,195 --> 00:25:27,296
+[öğrenci] yoktur diyor.
+
+153
+00:25:28,796 --> 00:25:30,175
+Neden yoktur [öğrenci]?
+
+154
+00:25:35,412 --> 00:26:00,672
+Dördüncü boyut yok da ondan. Nasıl? Dördüncü boyut yok ondan hocam. Dördüncü boyutla alakalı değil ki. Ya üç tane boyutu çarptığın zaman. Şimdi şöyle arkadaşlar şöyle yapalım. Güzel. Bravo. Şimdi diyorum ki iki tane vektörün iş çarpımı bir real sayı.
+
+155
+00:26:01,619 --> 00:26:29,119
+Mesela V ile W vektörünü çarptım. Bu bir real sayı. Burada iş çarpım var. İki vektörün iş çarpımından bahsediyorum ben. O zaman U vektörü ile bir real sayı nasıl iş çarpacağım? Tamam mı? O yüzden üç tane vektörün iş çarpımından bahsedilemez arkadaşlar. Tamam mı?
+
+156
+00:26:30,291 --> 00:26:56,151
+Bu da belki sınavda karşınıza çıkabilir ya, bakın. Yazın bir yere, bir not tutuyorsunuz, ne yapıyorsunuz. Yazın yani. Tamam mı? Peki. Biz iş çarpım yardımıyla, buraya yazmışız zaten, iki vektörün iş çarpımı birer sayıdır. İş çarpımın birleşme özelliği yoktur deyin.
+
+157
+00:26:59,188 --> 00:27:17,068
+Nasıl? [öğrenci] anlamadım. Evet, [öğrenci], 5 puan cepte. [öğrenci], sorun anlamadım. Yani 4 uzunluklu ve 6 uzunluklu vektörleri mi diyorsun? Çarpamazsın. Çift sayılı.
+
+158
+00:27:21,556 --> 00:27:23,556
+Çarparsın, niye çarpamayacaksın?
+
+159
+00:27:24,195 --> 00:27:25,715
+Ha, burada çarpmış bak.
+
+160
+00:27:27,556 --> 00:27:29,556
+He he, yok, yok.
+
+161
+00:27:30,836 --> 00:27:35,155
+Yok, onları da çarpamazsın [öğrenci]. Neden çarpamazsın? Yine aynı yere geliyor.
+
+162
+00:27:42,132 --> 00:27:43,092
+İş çarpım.
+
+163
+00:27:45,971 --> 00:27:48,031
+Buna da K diyelim.
+
+164
+00:27:49,332 --> 00:27:52,231
+Tamam, bu iki vektör, bu da iki vektör. Bunları iş çarptık.
+
+165
+00:27:52,912 --> 00:27:53,571
+Real sayı.
+
+166
+00:27:55,971 --> 00:27:56,951
+Bu da real sayı.
+
+167
+00:27:57,692 --> 00:28:02,392
+Ben vektörleri ancak iş çarpım için kullanabilirim.
+
+168
+00:28:02,432 --> 00:28:04,991
+Bak burada vektörel iş çarpım var, line olmaz.
+
+169
+00:28:05,832 --> 00:28:06,152
+Tamam mı?
+
+170
+00:28:07,231 --> 00:28:09,451
+Sadece iki tane vektörü iş çarpabilirsiniz.
+
+171
+00:28:11,700 --> 00:28:12,360
+Oldu mu?
+
+172
+00:28:26,612 --> 00:28:33,551
+İsterseniz bakın, şurada yine bunlar somut şey, soyut geliyorsa, şu son örnek üzerine göstereyim size.
+
+173
+00:28:34,731 --> 00:28:39,311
+Şimdi u ile v vektörü var. Bir tane de sizin için w vektörü ekleyeyim buraya ben.
+
+174
+00:28:40,551 --> 00:28:44,912
+Hatta w vektörü de 1, 0, 0, 0 olsun. Uğraştırmasın bizi, önemli değil.
+
+175
+00:28:47,051 --> 00:28:49,031
+Ben şu vektörü arıyorum.
+
+176
+00:28:53,652 --> 00:28:55,652
+çarpı, iş çarpım bunlar.
+
+177
+00:28:56,412 --> 00:28:58,412
+tabuli vektörünü arıyorum.
+
+178
+00:28:58,412 --> 00:29:01,092
+u çarpı v burada bulduk. Neymiş?
+
+179
+00:29:01,092 --> 00:29:02,092
+1.
+
+180
+00:29:02,092 --> 00:29:06,452
+1 bir sayı. 1 ile bu vektörü nasıl çarpacağım?
+
+181
+00:29:06,452 --> 00:29:09,012
+Ancak skaler çarpma yapabilirim.
+
+182
+00:29:09,012 --> 00:29:10,812
+değil mi? 1 ile bu vektörü.
+
+183
+00:29:10,812 --> 00:29:12,812
+Yani iş çarpım olmaz.
+
+184
+00:29:13,612 --> 00:29:14,572
+Tamam mı?
+
+185
+00:29:20,531 --> 00:29:30,351
+[öğrenci], onların gösterimi farklı zaten. Burada bak, nokta var. Hatta bu çoğu yerde nokta olarak değil de şöyle gösteriliyor.
+
+186
+00:29:32,372 --> 00:29:41,311
+Yani, skalerle çarpma, lambda çarpı o. Burada nokta falan bir şey koymaz arasına. Tamam mı?
+
+187
+00:29:42,571 --> 00:29:45,311
+Ama, iş çarpım varsa...
+
+188
+00:29:47,347 --> 00:29:55,187
+Ortaya nokta koyar belli olacak şekilde ya da şöyle buna ne parantez diyorsunuz bilmiyorum.
+
+189
+00:29:57,407 --> 00:29:59,047
+Bu parantez içinde de gösteriliyor.
+
+190
+00:30:01,027 --> 00:30:04,167
+Bazen şu parantez içinde de gösteriliyor.
+
+191
+00:30:06,287 --> 00:30:06,527
+Tamam.
+
+192
+00:30:08,847 --> 00:30:10,267
+Yani anlarsınız bunu muhakkak.
+
+193
+00:30:11,267 --> 00:30:12,587
+Normal çarpmada.
+
+194
+00:30:14,163 --> 00:30:38,604
+Herhangi bir nokta falan yok. Ya da soruda mesela der, işte iş çarpımı aşağıdaki gibi olmak üzere, ya da skaler çarpımı aşağıdaki gibi olmak üzere der. Burada niye skaler çarpmadı demiş, onu da anlayabilmiş değilim ama normalde bu iş çarpım, yani nokta çarpım. Çünkü skaler çarpım deyince skalerle çarpmaya gidiyor aklınız. Yapacak bir şey yok, öyle denmiş Türkçe.
+
+195
+00:30:39,443 --> 00:30:49,803
+İngilizcesi normalde buna inner product arkadaşlar. Scaly product değil yani. Bakayım hatta. Evet, inner product. 3 çarpım yani.
+
+196
+00:30:53,428 --> 00:30:55,488
+İşçi hapının çok önemli özellikleri var.
+
+197
+00:31:03,731 --> 00:31:07,611
+Ben ki burada söylemeliydik, iş çarpımın birleşme özelliği yoktur diye.
+
+198
+00:31:17,236 --> 00:31:31,296
+U ve V ne uzunluğunda, ne bileşenli uzunluğunda değil, özür dilerim. Ben kullandığım, benim çalışmaların kodlama teorisi arkadaşlar, orada da vektörleri kullanıyoruz.
+
+199
+00:31:31,296 --> 00:31:40,536
+Biz vektörün uzunluğu bileşen sayısı olarak aldığımız için, baktım oraya gidiyor, pardon, uzunluk değil, bileşen değil. Ne bileşenli U vektörü ile,
+
+200
+00:31:41,140 --> 00:32:04,940
+n bileşenli v vektörü ve w vektörleri. Bunlar rn'de. Çünkü n tane bileşenleri var. Tamam mı? Her biri de real sayı bileşenleri. Ve alfa ve beta da skalerler, real sayılar. İş çarpımın, nokta çarpımın ya da skaler çarpımın değişme özelliği var arkadaşlar.
+
+201
+00:32:06,420 --> 00:32:10,779
+u ile v'nin iş çarpımı v ile u'nun iş çarpımına eşit.
+
+202
+00:32:11,940 --> 00:32:12,700
+Tamam mı?
+
+203
+00:32:16,500 --> 00:32:21,819
+İş çarpımın, iki vektörün toplamı ve farkı üzerine dağılma özelliği var.
+
+204
+00:32:23,779 --> 00:32:35,539
+Yani, U iş çarpımı V artı W, U ile V'nin iş çarpımı artı U ile W'nun iş çarpımı. Bu da yine önemli bir özellik.
+
+205
+00:32:37,811 --> 00:32:48,172
+Eğer iş çarpımı skellerle çarparsanız, bu skeller vektörlerin içine girebiliyor. Bunu söylüyor. Burada çok ahım şahım bir şey yok.
+
+206
+00:32:49,291 --> 00:32:53,491
+Sıfır vektörüyle herhangi bir vektörü iş çarparsanız zaten sıfır çıkar.
+
+207
+00:32:56,652 --> 00:33:02,672
+İki vektörün iş çarpımı, bakın bu da önemli. Hatta önemlilere şöyle ben yıldız koyayım.
+
+208
+00:33:02,672 --> 00:33:04,731
+Böyle tık attık ama.
+
+209
+00:33:08,180 --> 00:33:13,819
+İki vektörün iş çarpımı, normunun karesine eşit.
+
+210
+00:33:18,067 --> 00:33:20,768
+Bir vektörün normu nedir? Neydi?
+
+211
+00:33:39,892 --> 00:33:47,512
+U ile U vektörünün iş çarpımı ne olacak arkadaşlar?
+
+212
+00:33:48,632 --> 00:33:50,052
+U1 çarpı U1.
+
+213
+00:33:50,912 --> 00:33:55,532
+U1'in karesi artı U2 çarpı U2.
+
+214
+00:33:55,812 --> 00:34:00,272
+U2'nin karesi artı U'n'nin karesi.
+
+215
+00:34:00,472 --> 00:34:01,132
+Bu da neymiş?
+
+216
+00:34:01,772 --> 00:34:02,632
+U ile U'nun.
+
+217
+00:34:03,892 --> 00:34:13,891
+İş çarpımı imiş, iş çarpımı imiş. O halde bakın, U'nun kendisiyle iş çarpımı normal'un karesine eşit. Tamam mı?
+
+218
+00:34:22,036 --> 00:34:27,956
+Şu 7 çok hayati bir özellik biliyorsunuzdur zaten, bilmeyenler de öğrensin.
+
+219
+00:34:30,376 --> 00:34:38,956
+U ile V'nin iş çarpımı, U'nun normu çarpı, V'nin normu çarpı, ikisinin arasındaki açının kusünüsü.
+
+220
+00:34:40,076 --> 00:34:43,235
+Arkadaşlar, biz buradan iki vektör arasındaki açıyı bulacağız birazdan.
+
+221
+00:34:44,756 --> 00:34:46,155
+Yani kusünüs seteyi çekip.
+
+222
+00:34:46,771 --> 00:34:50,771
+İki vektör arasındaki açıyı iş çarpım yardımıyla bulacağız.
+
+223
+00:35:03,572 --> 00:35:24,092
+Şu 8'de yine çok önemli bir özellik. Bunu da sıkça kullanıyoruz arkadaşlar. Eğer 2 vektörün iş çarpımı 0 ise, 2 vektörün iş çarpımı 0 ise, arkadaşlar şimdi,
+
+224
+00:35:24,916 --> 00:35:48,016
+UV vektörleri sıfırdan farklı vektörler olarak alıyoruz. Yani sıfır vektör alırsanız zaten bir esprisi olmaz. İki vektörü iş çarptığına sıfır çıktı. Bu şu demek, sıfır olabilmesi için UV vektörlerinin sıfırdan farklı olduğunu düşünürseniz, non'ları da sıfırdan farklı. Demek ki sıfır kosünüs tetadan geldi. Neyin kosünüsü sıfır yapar?
+
+225
+00:35:51,603 --> 00:36:14,884
+Bu durumda neymiş demek ki? Bu iki vektör birbirine dikse iş çarpımları sıfırdır. Ya da iş çarpımları sıfır olan iki vektör birbirine neymiş? Dikmiş. Tamam mı? Bu çok önemli bir özellik.
+
+226
+00:36:15,539 --> 00:36:31,439
+Şu 9'u çok kullanmıyoruz. Onu vektörel çarpımda aslında söyleyeceğiz ama aynı mantıkla eğer teta eşittir 0 ise veya teta eşittir pi ise bu vektörler çakışık ya da birbirine paralel diyebilirsiniz arkadaşlar.
+
+227
+00:36:31,439 --> 00:36:41,899
+Tamam mı? O ve v vektörleri birbirine paralel ne zaman teta sıfır veya teta eşittir pi ise.
+
+228
+00:36:43,987 --> 00:36:50,387
+Onun zaten, hani şeyle iş çarpımla çok bir alakası yok. O yüzden yani burada verilmesinin bir manası yok.
+
+229
+00:36:52,327 --> 00:36:56,707
+Zaten tt0 veya ttpi ise iki vektörün paralel olduğunu görüyorsunuz.
+
+230
+00:36:57,427 --> 00:36:58,987
+Bu sekizinci özellik çok önemli.
+
+231
+00:37:00,747 --> 00:37:06,007
+İki vektör arasındaki açı, eğer 90 derece ise,
+
+232
+00:37:08,340 --> 00:37:21,140
+İş çarpımları sıfırdır. Ama bizim için asıl önem olan şu, eğer iş çarpım sıfırsa iki vektör birbirine diktir ya da ikisi arasındaki açı nedir? 90 derecedir.
+
+233
+00:37:24,460 --> 00:37:30,860
+Hemen sonrasında iki vektör arasındaki açı geldi. Bu biraz önce iş çarpımda verdiğimiz formül arkadaşlar.
+
+234
+00:37:31,860 --> 00:37:33,920
+Kosünüs tetreyi yalnız bırakmış burada.
+
+235
+00:37:34,420 --> 00:37:42,420
+U ile B'nin iş çarpımı, U'nun normal çarpı, V'nin normal çarpı, ikisi arasındaki açının kosünüsü.
+
+236
+00:37:43,119 --> 00:37:46,000
+Buradan kosünüs atayı çekince bu şekilde yazarsınız.
+
+237
+00:37:46,720 --> 00:37:54,619
+Theta da her iki tarafın arkını alırsanız, theta eşittir, ark kosünüs işte şu olur.
+
+238
+00:38:00,115 --> 00:38:04,336
+Evet, O ve V vektörleri arasındaki ışıda tepklen.
+
+239
+00:38:08,884 --> 00:38:21,024
+U'yu vermiş, V'yu vermiş, 4 boyutlu uzayda. İkisi arasındaki açıyı bulalım arkadaşlar, ne olacak? Ben şöyle yazıyorum, size de öyle tavsiye ederim. Gerek yok yani kosünüsü çekmeye.
+
+240
+00:38:30,036 --> 00:38:35,536
+Tabi bu iş çarpım değil. O yüzden bu noktayı sileyim. Şu iş çarpım.
+
+241
+00:38:38,655 --> 00:38:41,376
+U ile V'nin iş çarpımı neye eşit arkadaşlar?
+
+242
+00:38:43,076 --> 00:38:47,655
+Eksi 2, artı 2, sıfır, sıfır, 2. Tamam mı?
+
+243
+00:38:48,815 --> 00:38:52,036
+2 eşittir. U'nun normu, U'nun karesinin...
+
+244
+00:38:53,652 --> 00:39:12,572
+Artı, bunun karesi artı, bunun karesinin kare kökü. Yani, 4, 8, 9'un kare kökü 3. 3 çarpı, ve eninkine bakalım. 1 artı, 1 artı, 2 artı, 4, kök altı mı yapıyor?
+
+245
+00:39:16,980 --> 00:39:21,659
+Ben nokta koyuyorum da, nokta koymamak lazım. Karışmasın aklınız.
+
+246
+00:39:23,980 --> 00:39:28,880
+Cosmesteta. Buradan, cosmesteta ne oluyor?
+
+247
+00:39:35,411 --> 00:39:36,411
+2 bölüm
+
+248
+00:39:38,911 --> 00:39:39,911
+3 kök
+
+249
+00:39:40,291 --> 00:39:41,291
+6 oluyor
+
+250
+00:39:44,563 --> 00:39:46,563
+Bu da ne yapar?
+
+251
+00:39:48,563 --> 00:39:49,563
+Ne yapar?
+
+252
+00:39:53,492 --> 00:39:57,851
+Bildiğimiz bir şey yapmıyormuş. Neyse çok önemli değil. Böyle bıraksanız da yeter.
+
+253
+00:39:57,851 --> 00:40:05,292
+Cos'un üst teta eşittir 2 bölü 3 kök 6. Buradan da teta eşittir, arka küs'ün üst 2 bölü 3 kök 6.
+
+254
+00:40:09,556 --> 00:40:29,515
+İzdüşüm vektöründen bahsedilmiş ama bundan ben bahsetmeyeceğim. Bunda bir işimiz yok. Burada herhalde Mehmet Hoca şey yaptı biraz. Farklı bilgiler vermek istedi. Faktınız kalırsa döner bakarız. İzdüşüm vektörüyle bir işimiz yok. En azından bu derste.
+
+255
+00:40:42,547 --> 00:40:49,807
+Şimdi burada da yine hayati bir not.
+
+256
+00:40:52,187 --> 00:40:57,887
+Yani not derken öyle yani. Not olarak sadece benim verdiğim bir şey değil. O anlamda söyledim.
+
+257
+00:40:59,067 --> 00:41:00,768
+Vektörel çarpım arkadaşlar.
+
+258
+00:41:06,003 --> 00:41:07,364
+Neyse, niye yazıyorum ki?
+
+259
+00:41:08,824 --> 00:41:09,543
+Sadece
+
+260
+00:41:14,068 --> 00:41:16,788
+R3'te tanımlıdır.
+
+261
+00:41:19,248 --> 00:41:20,228
+Bakın bu çok önemli.
+
+262
+00:41:22,328 --> 00:41:28,688
+Demek ki, 3 tane bileşene sahip vektörleri biz, vektörel çarpabiliyoruz.
+
+263
+00:41:30,528 --> 00:41:31,048
+Tamam mı?
+
+264
+00:41:32,328 --> 00:41:37,887
+Sadece, R3'teki, vektörler için, tanımlı.
+
+265
+00:41:38,547 --> 00:41:46,447
+vektör al çarpımla aslında arkadaşlar çok basit bir şey var, mantığı var. Şöyle.
+
+266
+00:41:59,092 --> 00:42:01,092
+güzel çizemedim ama neyse.
+
+267
+00:42:01,092 --> 00:42:02,764
+u vektörü
+
+268
+00:42:13,396 --> 00:42:14,956
+vektörü de
+
+269
+00:42:22,068 --> 00:42:30,288
+Bunlar 3 boyutlu uzayda vektörler. Arkadaşlar, vektörel çarpım dediğim, böyle bir vektör ki,
+
+270
+00:42:33,876 --> 00:42:35,155
+Hem u yedik,
+
+271
+00:42:39,251 --> 00:42:41,112
+hem de V yedik.
+
+272
+00:42:54,708 --> 00:43:05,948
+Bunda şöyle, çarpma işlemi gibi, ilkokulda yaptığımız ya da lisede de mi böyle gösteriyordunuz bilmiyorum.
+
+273
+00:43:06,288 --> 00:43:19,688
+U çarpı, V, ya da şöyle de gösteriliyor, ters V şeklinde.
+
+274
+00:43:21,780 --> 00:43:33,240
+Demek ki iki vektörün vektörel çarpımı sadece üç boyutlu uzayda tanımlıymış ve hem U vektörüne hem de V vektörüne dik bir vektör imiş.
+
+275
+00:43:34,159 --> 00:43:40,320
+Şimdi burada aslında W vektörünün birleşenliğini siz bulabilirsiniz arkadaşlar.
+
+276
+00:43:41,980 --> 00:43:44,079
+Nasıl bulursunuz? Var mı fikri olan?
+
+277
+00:43:46,079 --> 00:43:47,159
+Biraz.
+
+278
+00:43:48,692 --> 00:43:50,572
+Tartışalım bakalım, nasıl bulursunuz?
+
+279
+00:43:51,152 --> 00:43:52,452
+Hocam bir daha söyler misiniz?
+
+280
+00:43:53,471 --> 00:43:56,652
+Bu W vektörü hem U'ya hem V'ye dik ya.
+
+281
+00:43:57,331 --> 00:43:57,631
+Evet.
+
+282
+00:43:59,152 --> 00:44:04,291
+Peki, W vektörünün bileşenlerini, yani W1, W2 ve W3'ü nasıl bulursunuz?
+
+283
+00:44:08,083 --> 00:44:10,083
+Hocam, U ile V'yi çarparız.
+
+284
+00:44:12,083 --> 00:44:13,083
+Nasıl çarpacağım?
+
+285
+00:44:13,083 --> 00:44:15,083
+U ile V vektörünü çarparız.
+
+286
+00:44:16,083 --> 00:44:17,083
+Nasıl çarpacağım?
+
+287
+00:44:17,083 --> 00:44:21,083
+Çarptığımda, önce U...
+
+288
+00:44:25,364 --> 00:44:27,604
+Hatta şöyle diyeyim, bu daha güzel olsun.
+
+289
+00:44:27,604 --> 00:44:29,724
+60 derece arasını şey yapar, sahip.
+
+290
+00:44:30,064 --> 00:44:32,624
+Evet, [öğrenci] yakaladığı gibi biraz daha.
+
+291
+00:44:33,224 --> 00:44:35,224
+Sıkadar çarpacağım da ne yapacaksın sonra [öğrenci]?
+
+292
+00:44:37,264 --> 00:44:38,744
+Buna X.
+
+293
+00:44:42,579 --> 00:44:45,900
+Evet, yani eşit ama neye eşit?
+
+294
+00:44:45,900 --> 00:44:46,539
+Sıfıra eşit diyeceğiz.
+
+295
+00:44:46,719 --> 00:44:48,259
+Sıfıra eşit.
+
+296
+00:44:48,380 --> 00:44:49,239
+Evet, aynen öyle. Güzel.
+
+297
+00:44:49,259 --> 00:44:50,719
+Doksan ya araların derecesi.
+
+298
+00:44:51,980 --> 00:44:55,119
+Yani şunu yapacağız arkadaşlar. Yapmayacağız da, yani mantık o.
+
+299
+00:44:57,019 --> 00:45:04,679
+W, U'ya dik olduğu için W ile U'yu iş çarpacaksınız. Sıfıra eşit diyeceksiniz.
+
+300
+00:45:12,340 --> 00:45:18,540
+W ile V'yi iş çarpacaksınız, sıfıra eşitleyeceksiniz. Tamam mı?
+
+301
+00:45:19,620 --> 00:45:21,340
+Oradan şu iki denklem gelecek.
+
+302
+00:45:23,980 --> 00:45:25,140
+U, bakalım şu.
+
+303
+00:45:27,240 --> 00:45:35,120
+U1x artı U2'ye artı U3z eşittir sıfır.
+
+304
+00:45:38,260 --> 00:45:55,000
+V1x artı, V2y artı, V3z eşittir, sıfır. Artık siz bu denklem sistemini, homojen denklem sistemini közebilirsiniz, değil mi? Buradan x'i, y'yi, z'yi bulacaksınız arkadaşlar.
+
+305
+00:45:56,340 --> 00:46:01,960
+Tabii biz öyle yapmıyoruz. Daha kolay yolu var. Ama buradan çıktığını bilin yani, tamam mı?
+
+306
+00:46:03,539 --> 00:46:06,340
+Demek ki sadece C3'te tanımlıymış.
+
+307
+00:46:08,259 --> 00:46:10,319
+İki vektörün vektörel çarpımı.
+
+308
+00:46:12,019 --> 00:46:18,219
+Ve, bu da çok önemli ama niye direkt burada böyle önemli olan şeyi not olarak vermiş?
+
+309
+00:46:18,340 --> 00:46:20,400
+Neyse ben örneği de çözerim arkadaşlar.
+
+310
+00:46:23,239 --> 00:46:27,739
+İki vektörün vektörel çarpımı arkadaşlar, şu U, şu da V vektörleri.
+
+311
+00:46:36,916 --> 00:46:42,236
+Bu iki vektörün belirlediği paralel kenarın alanına eşit.
+
+312
+00:46:42,696 --> 00:46:53,216
+Pardon, vektörel çarpımın normu, bu iki vektörün belirlediği paralel kenarın alanına eşit.
+
+313
+00:46:53,216 --> 00:47:02,056
+Yani siz iki vektörün vektörel çarpıp, bunun normunu alırsanız, iki vektörün belirlediği paralel kenarın alanını,
+
+314
+00:47:03,219 --> 00:47:21,460
+bulmuş oluyorsunuz. Bu çok önemli bir özellik. Ama bunun direkt burada mutlu olarak verilmesini çok yadırgadım açıkçası. Neyse çok önemli değil. Yani şey yapacağız. Birazdan bununla alakalı soru çözeceğim size. Burada da belki vardır.
+
+315
+00:47:36,244 --> 00:47:43,264
+İki vektörün vektörel çarpımı normalde işte o, dedim ya, iki tane reklam var, homojen reklam sistemi.
+
+316
+00:47:44,964 --> 00:47:52,284
+Orada x'i, y'yi, z'yi çekerseniz arkadaşlar, u çarpı v'nin ya da w'nun bileşenlerini bulursunuz.
+
+317
+00:47:52,284 --> 00:47:59,584
+Ama o zor bir yöntem, yani oradan bulmak. Biz bunu determinant yardımıyla buluyoruz arkadaşlar.
+
+318
+00:48:01,684 --> 00:48:05,324
+i, j, k bunlar bileşenler, temel bileşenler.
+
+319
+00:48:07,144 --> 00:48:11,044
+i, j, j ve k bileşenler, re, 3'te tanımlı ya vektör açarpım.
+
+320
+00:48:11,544 --> 00:48:21,024
+Daha sonra u'nun bileşenlerini ilk satıra, v'nin bileşenlerini ikinci satıra yazıyorsunuz.
+
+321
+00:48:21,964 --> 00:48:24,324
+Burada ne yapıyorsunuz? Determinant alıyorsunuz arkadaşlar.
+
+322
+00:48:25,944 --> 00:48:27,884
+Determinantı da şöyle alalım isterseniz.
+
+323
+00:48:32,532 --> 00:48:37,751
+Birinci satır boyunca, ne yapalım? Laplas açılımı.
+
+324
+00:48:40,652 --> 00:48:48,072
+i çarpı, eksi 1 üzeri 1 artı, buradan burası pozitif, burayı kapattım, burayı kapattım, değil mi?
+
+325
+00:48:50,211 --> 00:48:51,751
+u2 çarpı v3
+
+326
+00:48:56,692 --> 00:49:09,892
+Eksi U3, V2, J, birinci satır, ikinci tutunda, o zaman önünde eksi var.
+
+327
+00:49:12,392 --> 00:49:24,251
+Eksi J, ne yapıyorum? Burayı kapatıyorum. U1 çarpı V3, eksi U3 çarpı V1.
+
+328
+00:49:28,436 --> 00:49:29,496
+Dallim [öğrenci].
+
+329
+00:49:34,452 --> 00:49:51,992
+K birinci satır, üçüncü sütunda olduğu için, eksi bir üzeri dörtten pozitif olacak, artı, K çarpı, ne yaptım, burayı kapattım, burayı kapattım, U1V2, eksi U2V1.
+
+330
+00:49:52,412 --> 00:49:59,052
+Demek ki iki vektörün vektör al çarpımını, ne yapıyormuşsunuz, determinant yardımıyla buluyormuşsunuz.
+
+331
+00:49:59,052 --> 00:50:00,152
+Tamam.
+
+332
+00:50:02,356 --> 00:50:12,256
+Demek ki x buymuş, biraz önce aradığımız x, y buymuş, z de buymuş. Tabi bunları bulmak çok kolay değilmiş bakın. Gördünüz mü?
+
+333
+00:50:13,856 --> 00:50:17,796
+Ama determinant yardımıyla bu kolayca bulunabiliyor.
+
+334
+00:50:23,347 --> 00:50:50,847
+Burada determinant olarak yazmış. Yani bunu böyle ezberleyebilir misiniz bilmiyorum açıkçası arkadaşlar. Bana çok mantıklı da gelmiyor. Yani bu şekilde yazmak. Eğer bu şekilde hafızanızda kalıyorsa bilin. Çok da önemli değil benim için açıkçası. Ama dediğim gibi yani burada yapılan şey şu. Birinci satıra göre ne yapıyorsunuz? Daptas açılımını kullanıyorsunuz. O kadar yani. Çok fazla da işin bir esprisi yok.
+
+335
+00:50:51,827 --> 00:51:19,367
+Ama bu şekilde, bakayım nasıl böyle ezberlenir mi ki? Şunu kapatıyor herhalde. Tamam, birinci için. İkinci için, yok, bilmiyorum. Yani bu şekilde yazmanın mantığını, yani mantığım derken, nasıl böyle direkt yazdı onu bilmiyorum. Şuradan geliyor da, yani nereden geldiğini biliyorum da.
+
+336
+00:51:21,043 --> 00:51:24,324
+Neyse, çok önemli değil. Tamam, determinant yani.
+
+337
+00:51:26,704 --> 00:51:29,264
+Vektör çarpım sadece L3'te tanımlı dedik.
+
+338
+00:51:43,699 --> 00:51:44,940
+İkinci yon ne ya?
+
+339
+00:51:57,108 --> 00:52:06,668
+Arkadaşlar, ikinci yol değil o. Bu aynı şey. Yani burada tek yaptığı şey şu, şu sütunla şu sütunu yer değiştirmiş.
+
+340
+00:52:08,568 --> 00:52:16,108
+Biliyorsunuz ki determinatta herhangi iki sütun ya da satır yer değiştirirse, determinant önüne eksi alıyordu. Bunun önüne de eksi vardı.
+
+341
+00:52:17,428 --> 00:52:20,948
+Dolayısıyla bunu değiştirdiğiniz zaman burası pozitif oldu.
+
+342
+00:52:21,407 --> 00:52:34,507
+Burada da bir espri yok. Yani aslında bununla bu aynı. Yani ikinci yol diye verilmesi çok doğru değil bence yani. İkinci yol değil o. Aynı şey. Bir şey ifade etmiyorum. Hemen yapalım.
+
+343
+00:52:36,007 --> 00:52:39,567
+i, j, k yazıyorsunuz. U ile V vektörlerinin iç çarpımını bulacağız.
+
+344
+00:52:42,003 --> 00:52:48,063
+U'nun bileşenleri 1, 2, eksi 1, V'nin bileşenleri, eksi 2, 3, 4, ne yapıyoruz arkadaşlar?
+
+345
+00:52:48,543 --> 00:53:00,704
+İ'yi kapatıyorum, İ çarpı, şu determinant, 8 eksi, eksi 3, yani 11, 11İ, eksi J.
+
+346
+00:53:06,516 --> 00:53:10,776
+4-2'den 2, değil mi? 2j.
+
+347
+00:53:12,396 --> 00:53:16,716
+J'yi yazdım ki önce şey olmasın, böyle güzel görünmüyor mu olsun? Yapacak bir şey yok.
+
+348
+00:53:20,467 --> 00:53:41,607
+artı, K çarpı, 3 artı 4'ten 7. Yani neymiş? 11i, eksi 2j, artı 7k. Ya da şu şekilde de verilebilir değil mi bu vektör? W vektörü.
+
+349
+00:53:42,607 --> 00:53:47,027
+11, eksi 2, 7 şeklinde de.
+
+350
+00:53:47,507 --> 00:53:48,547
+yazabilirsiniz.
+
+351
+00:53:51,067 --> 00:53:54,268
+İsterseniz bir deneyelim bakalım, gerçekten de ikisi ne dedik mi?
+
+352
+00:53:54,507 --> 00:53:57,668
+Değil mi? U ile W'yu iş çarpalım, ne oluyor?
+
+353
+00:53:57,907 --> 00:54:03,407
+11, artı, eksi 4, artı, eksi 7, ne yaptı? 0.
+
+354
+00:54:05,688 --> 00:54:06,827
+Bir de V ile çarpalım.
+
+355
+00:54:08,208 --> 00:54:14,027
+Yani öyle bir kontrol edebilirsiniz, eğer vektör al çarpımı doğru yapıp yapmadığınızı merak ediyorsanız.
+
+356
+00:54:14,708 --> 00:54:23,708
+V ile iş çarpalım. Eksi 22, eksi 6 da, eksi 28, artı 28, sıfır yapıyor.
+
+357
+00:54:29,364 --> 00:54:34,703
+Bu ikinci yolu ben kabul etmiyorum açıkçası. Yani aynı şey, çok iyi, esprisi yok.
+
+358
+00:54:38,516 --> 00:54:44,775
+Şimdi geldik vektörer çarpımın ne gibi özellikleri var? Bunun da özellikleri önemli.
+
+359
+00:54:46,775 --> 00:54:47,775
+Arkadaşlar.
+
+360
+00:55:02,452 --> 00:55:04,044
+Bu, anma burada lastikten var.
+
+361
+00:55:21,940 --> 00:55:24,700
+Bir de şeyden bahsedeyim de, ondan bahsetmedim.
+
+362
+00:55:26,700 --> 00:55:27,940
+Dedik ya baz vektörleri...
+
+363
+00:55:36,244 --> 00:55:58,443
+R3'te İ, J, K idi. Bunlar nasıl vektörlerdi arkadaşlar? Birim vektörlerdi. Tamam mı? Bir de bunların şöyle bir özelliği var. Zaten burada da, yani 3 boyutlu uzayda ya da normal yaşadığımız dünyada da aslında şey yapabilirsiniz, çıkarım yapabilirsiniz.
+
+364
+00:56:04,019 --> 00:56:09,199
+vektöral çarpımı arkadaşlar, K'ye eşit.
+
+365
+00:56:12,500 --> 00:56:31,480
+J ile K'nınki İ'ye eşit, K ile İ'ninki de J'ye eşit. Çok güzel bir özellik değil mi? İ ile J'ninki K'ya, J ile K'nınki, pardon.
+
+366
+00:56:37,139 --> 00:56:43,619
+J ile K'nınki, I'ye, K ile İ'ninki de,
+
+367
+00:56:47,443 --> 00:56:51,043
+Bunu böyle bir şeyle de gösteriyorlar.
+
+368
+00:56:52,543 --> 00:56:53,844
+Çemberle.
+
+369
+00:56:56,916 --> 00:56:57,996
+Ben tam yapamadım ama.
+
+370
+00:57:00,135 --> 00:57:03,336
+İ, J, K.
+
+371
+00:57:05,836 --> 00:57:14,396
+İ ile J'ininki K'ya, K ile J'ininki J'ye, başka J ile K'nınki İ'ye eşit.
+
+372
+00:57:15,196 --> 00:57:15,996
+Vektör açı altı.
+
+373
+00:57:16,396 --> 00:57:18,836
+Yani birbirine ikişerli olarak dikler.
+
+374
+00:57:20,696 --> 00:57:23,615
+K, İ ve J'ye dik.
+
+375
+00:57:24,019 --> 00:57:39,800
+J, i ve k yedik, işte i, k ve j yedik. Tamam mı? Bu da baz vektörlerinin önemli özelliği. Şimdi geldik, vektörer çarpımı ne özelliği var?
+
+376
+00:57:40,860 --> 00:57:46,320
+Skader çarpımı neydi? Değişmeliydi. Ancak bakın, vektörer çarpımı değişmeli değil.
+
+377
+00:57:50,708 --> 00:57:56,508
+eksi v ile u'nun vektörer çarpımına eşit.
+
+378
+00:57:58,928 --> 00:58:05,728
+Bu neden kaynaklanır? Acaba buradan bir çıkarımda bulunacak, söyleyecek olan var mı?
+
+379
+00:58:07,488 --> 00:58:10,848
+Neden öyle sizce? Çok zor olmasa gerek.
+
+380
+00:58:13,876 --> 00:58:18,175
+Biz skaler çarpımı nasıl, özür dilerim, vektörer çarpımı nasıl tanımladık?
+
+381
+00:58:18,675 --> 00:58:26,715
+O zaman vektörer çarpımına çarptığın zaman yönü değişiyor. Yani, eğer çarpacaksak, başka bir vektörde.
+
+382
+00:58:27,295 --> 00:58:35,376
+Yönü değişiyor da, biz vektörer çarpımını nasıl tanımladık? Neyle tanımladık? Ne yardımıyla?
+
+383
+00:58:38,215 --> 00:58:39,315
+Determinat, bravo.
+
+384
+00:58:39,827 --> 00:59:03,727
+Evet, güzel arkadaşlar, aynen öyle. Ne diyorduk? İlk satıra U'nun bileşenlerini, diğer satıra da V'nin bileşenlerini yazıyorduk. Ama V çarpı U dediğiniz zaman, bu defa ilk satıra V'nin, diğer satıra U'nun bileşenlerini yazacağım. Yani determinantta ne yaptı? İki satır yer değiştirdi. O halde determinant önüne eksi aldı. Bu kadar. Tamam mı?
+
+385
+00:59:08,307 --> 00:59:16,387
+Yine bir skalerle vektörel çarpımı çarpabiliyorsunuz arkadaşlar. Skaler vektörler arasında değişebiliyor, önemli değil.
+
+386
+00:59:18,767 --> 00:59:28,407
+İki böyüklerin toplamını, başka bir vektörle skaler çarpımı, skaler çarpımı dağılma özelliği olarak kullanabiliyorsunuz.
+
+387
+00:59:28,407 --> 00:59:34,447
+Yani u vektörel çarpım ve artı u vektörel çarpım dağılıyor.
+
+388
+00:59:35,731 --> 00:59:38,351
+Bu sağdan ve soldan oluyor. Çok bir şey değil.
+
+389
+00:59:41,072 --> 00:59:42,931
+Bu iş çarpımı bakın arkadaşlar.
+
+390
+00:59:46,231 --> 00:59:47,572
+Beşinci özellik.
+
+391
+00:59:48,871 --> 00:59:51,871
+U ile
+
+392
+00:59:51,871 --> 00:59:56,351
+V ile W'nun vektörer çarpımının iş çarpımı
+
+393
+00:59:56,351 --> 01:00:00,411
+U ile V'nin vektörer çarpımı ile
+
+394
+01:00:00,411 --> 01:00:01,731
+W'nun
+
+395
+01:00:02,228 --> 01:00:03,348
+Neyine eşitmiş?
+
+396
+01:00:07,699 --> 01:00:17,039
+İş çarpımla eşitmiş. Bu da çok ne bir özellik? Çok güzel bir özellik açıkçası.
+
+397
+01:00:23,764 --> 01:00:38,063
+Üç tane vektörü biz bakın, vektörel olarak çarpabiliyoruz, o da şuna eşit, bunu zaten vereceğiz, ne diyeceğiz, çoklu çarpım diyeceğiz herhalde buna.
+
+398
+01:00:41,556 --> 01:00:44,056
+Bunu şöyle ben ezberliyorum arkadaşlar.
+
+399
+01:00:44,496 --> 01:00:46,976
+Yani hatırımla öyle kalıyor.
+
+400
+01:00:49,275 --> 01:00:56,695
+U ile uzaktakinin, yani en sondakinin, W'nun iç çarpımı, iç çarpımı olarak hatırımda kalıyor.
+
+401
+01:00:56,695 --> 01:01:00,416
+Diğeri zaten normal çarpımı arkadaşlar, vektör çarpımı.
+
+402
+01:01:01,195 --> 01:01:02,016
+Buraya sayıya.
+
+403
+01:01:02,896 --> 01:01:05,596
+Eksi U ile yakındakinin.
+
+404
+01:01:06,099 --> 01:01:13,599
+İş çarpımı. Yani uzaktaki, eksi, uzaktaki ile iş çarpımı. Eksi, yakındaki. O kadar. Tamam mı? Şöyle.
+
+405
+01:01:16,299 --> 01:01:22,279
+Önce uzaktaki, sonra yakındaki. Uzaktaki, eksi, yakındaki.
+
+406
+01:01:25,076 --> 01:01:47,076
+Şu yedinci özellik de çok önemli bir özellik. Ama bunu da şöyle kullanacağız arkadaşlar. Normunu alacağız. Çünkü burada ne dediğim benim birim bir vektör. Yani bu özelliği bu şekilde kullanmak çok kolay değil ya da faydalı değil. Şöyle yapıyorsunuz. Her iki tarafın normunu alıyorsunuz.
+
+407
+01:01:52,371 --> 01:01:54,551
+normu eşittir.
+
+408
+01:01:55,191 --> 01:01:56,071
+O'nun normu
+
+409
+01:02:01,876 --> 01:02:13,416
+çarpı, v'nin normu çarpı, sinüs, teta. Çünkü n zaten birim olduğu için, birim vektör olduğu için normu 1.
+
+410
+01:02:19,155 --> 01:02:43,175
+Buradan da arkadaşlar, dedik ya, iki vektör birbirine, pardon, iki vektörün iç çarpımı sıfırsa iki vektör birbirine diktir dedik. İki vektörün vektörel çarpımı sıfır ise arkadaşlar, bu durumda bu iki vektör birbirine diktir. O da sekizde verilmiş ama öyle bir şey söylenmemiş. Teteştir sıfır veya teteştir pi diyor.
+
+411
+01:02:46,931 --> 01:02:48,851
+ve paralel.
+
+412
+01:02:50,691 --> 01:02:58,731
+Benim tavsiyem şu, eğer paralellikle alakalı bir şey arıyorsanız, vektör çarpımı kullanın.
+
+413
+01:03:00,591 --> 01:03:09,411
+Diktörle alakalı bir şey kullanıyorsanız da, skaler çarpımı kullanırsanız daha kolay olabilir.
+
+414
+01:03:12,211 --> 01:03:13,211
+Tamam.
+
+415
+01:03:19,668 --> 01:03:27,028
+Bu ne diyor? 9'da. Tamam bunu söylemiştik zaten değil mi? U, U çarpı V'ye, bu V olacak herhalde.
+
+416
+01:03:29,327 --> 01:03:32,307
+Ve de yine U çarpı V'ye diktir.
+
+417
+01:03:38,612 --> 01:03:42,471
+Vektörel çarpım dediğim, benim her iki vektöre de dikti. Onu söylüyor.
+
+418
+01:03:45,451 --> 01:03:57,351
+Karışık çarpım, biraz önce özelliklerde vardı. Ama şöyle bulunuyor arkadaşlar. Bu da yine determinant yardımıyla bulunuyor.
+
+419
+01:03:58,931 --> 01:03:59,811
+Bir vektörle,
+
+420
+01:04:01,076 --> 01:04:11,456
+Diğer iki vektörün vektörel çarpımlarının iş çarpımı, yani u iş çarpım ve vektörel çarpım w. Bu defa i, j, k yerine ne yazıyorsunuz arkadaşlar?
+
+421
+01:04:13,076 --> 01:04:27,756
+İlk vektörün bileşenlerini yazıyorsunuz, yani u1, u2, u3. Diğerine de vektörel çarpımdaki vektörlerin bileşenlerini yazıp ne yapıyorsunuz? Determiant alıyorsunuz.
+
+422
+01:04:28,692 --> 01:04:30,011
+Kırışık çarpım deniyor.
+
+423
+01:04:34,164 --> 01:04:34,923
+Bu da önemli.
+
+424
+01:04:39,251 --> 01:04:44,672
+Karışık çarpım sadece R3 uzayında tanımlıdır diyor. Çünkü içinde rektör var yani.
+
+425
+01:04:53,715 --> 01:04:56,355
+İki vektörün
+
+426
+01:04:59,923 --> 01:05:11,784
+Karışık çarpımı, özür dilerim, 3 vektörün karışık çarpımı, bu vektörlerin oluşturduğu paralel yüzlünün hacmini veriyor arkadaşlar.
+
+427
+01:05:11,784 --> 01:05:13,744
+Bu da yine.
+
+428
+01:05:17,780 --> 01:05:30,720
+Şöyle ifade edelim. Bakın elimizde ne var? U vektörü nerede? Burada. V vektörü ve W vektörü var.
+
+429
+01:05:44,052 --> 01:05:59,752
+Normu neyi veriyordu? V ile W'nun oluşturduğu paralel kenarı alanını veriyordu. Yani şu şey, şurası alanı veriyor bana. Bu alanı veriyor.
+
+430
+01:06:01,892 --> 01:06:02,692
+Peki.
+
+431
+01:06:07,668 --> 01:06:34,887
+Ben, bu paralel kenarın, paralel, özür dilerim, paralel kenar değil, paralel yüzlü, paralel yüzlü mü deniyor ki buna? Neyse, paralel yüzlü diyelim, çok şey değil. Paralel yüzlünün hacmi nedir arkadaşlar? Taban alanı çarpı, yükseklikte. Taban alanı bu. Yüksekliği nasıl bulacağım ben? Yükseklikte arkadaşlar,
+
+432
+01:06:38,260 --> 01:06:58,120
+Şu u vektörüyle, u vektörüyle, şu açının, kosünüsüne eşit, çarpımına eşit. Peki, bu vektörü nasıl, şey pardon, fi açısını nasıl bulurum ben?
+
+433
+01:07:00,860 --> 01:07:05,040
+Fi açısını da, yine iş çarpım yardımıyla bulurum.
+
+434
+01:07:05,684 --> 01:07:18,423
+Bu durumda, v dediğim benim, u iş çarpım, v ile w'nun vektörel çarpımı. Tamam mı?
+
+435
+01:07:20,423 --> 01:07:23,463
+Bu da aslında şuna eşit. Onu da yazalım.
+
+436
+01:07:25,604 --> 01:07:26,644
+Özelliklerde vardı.
+
+437
+01:07:34,099 --> 01:07:53,140
+U ile V'nin vektörel çarpımına, bu da V ile W ile, pardon, O'nun vektörel çarpımına eşit.
+
+438
+01:07:54,140 --> 01:07:55,039
+Tamam mı?
+
+439
+01:08:07,860 --> 01:08:17,640
+Karşı çarpımı buluyor. Ne yapacaksınız? O'yu ilk satıra, V'yi ikinci satıra, W'yu da üçüncü satıra yazıp, determinantı bulacaksınız. Bu kadar.
+
+440
+01:08:20,399 --> 01:08:21,440
+Determinatı hesabı.
+
+441
+01:08:28,467 --> 01:08:38,407
+Karışık çarpanın özelliklerini de vermiş ama karışık çarpanın özellikleri çok bizim işimize yarayacak türden değil.
+
+442
+01:08:38,608 --> 01:08:40,647
+Sadece şu, onu da yazdım zaten arkadaşlar.
+
+443
+01:08:42,147 --> 01:08:44,547
+Bu da paralel yüzlüğünün hacmini verdiği için.
+
+444
+01:08:47,028 --> 01:08:47,587
+Bu önemli.
+
+445
+01:08:49,547 --> 01:08:51,507
+Diğerleri de bulunsun sizde.
+
+446
+01:08:51,787 --> 01:08:54,507
+Ama çok kullandığımız özellikler değil açıkçası yani.
+
+447
+01:08:57,043 --> 01:09:08,963
+Yani biz karışık çarpım sadece o 3 vektör tarafından belirlenen paralel yüzlüğünün hacmini bulmak için kullanıyoruz. O kadar.
+
+448
+01:09:12,064 --> 01:09:22,963
+İki kat vektörel çarpım dediği de nedir? 3 tane vektörü vektörel çarpım alır. Özellikler de söylemiştim. Ben şöyle bunu kafamda hatırlıyorum.
+
+449
+01:09:24,404 --> 01:09:37,244
+Uzaktaki ve çarpım eksi, yakındakini çarpım. Yani u ile w'nin iş çarpımı çarpı v. Bu arada burası bu vektör arkadaşlar. Buraya sayıya.
+
+450
+01:09:39,244 --> 01:09:50,664
+Yani bir skaler ile v vektörünün çarpımı eksi, u ile v'nin skaler çarpımı, bu da yine r sayı olduğu için.
+
+451
+01:09:51,039 --> 01:09:55,760
+Yani bir vektör eksi bir vektör bu. Tamam mı? Örnek varsa bakalım.
+
+452
+01:09:58,539 --> 01:10:02,619
+Evet, iki kat vektöre çarpım sonucu diyor. Revit uzayında bir vektördür.
+
+453
+01:10:03,420 --> 01:10:05,139
+Mesela şöyle bir soru sorulabilir.
+
+454
+01:10:07,879 --> 01:10:10,760
+Aşağıdaki ifadelerin hangisi ya da hangileri doğrudur?
+
+455
+01:10:11,879 --> 01:10:16,180
+İşte şöyle bir şey vermiş size. U, V ve W vektörleri için.
+
+456
+01:10:16,576 --> 01:10:21,136
+u çarpı v çarpı w bir real sayıdır.
+
+457
+01:10:23,416 --> 01:10:29,376
+Değilir. Sizde aklınıza iş çarpımı gelir ya, evet falan doğru derseniz yanlış.
+
+458
+01:10:30,435 --> 01:10:39,396
+Vektör al çarpımın sonucu bir vektör, iş çarpımın ya da skeler çarpımın sonucu bir real sayı.
+
+459
+01:10:39,396 --> 01:10:40,656
+Tamam mı?
+
+460
+01:10:48,692 --> 01:10:53,652
+u çarpı v çarpı w'yu bulacağız.
+
+461
+01:10:56,231 --> 01:10:57,112
+Bulalım.
+
+462
+01:10:58,572 --> 01:11:00,872
+Uzaktaki ile iş çarpacağım.
+
+463
+01:11:03,391 --> 01:11:06,072
+Sonra diğeri zaten, hangisi ise, eksi.
+
+464
+01:11:06,952 --> 01:11:07,912
+Sonra yakındaki ile.
+
+465
+01:11:17,844 --> 01:11:19,844
+U ili dobbil, no, işçarpma.
+
+466
+01:11:22,844 --> 01:11:23,844
+Şöyle yazayım.
+
+467
+01:11:30,420 --> 01:11:31,819
+Bülüner'de 2-1-0.
+
+468
+01:11:36,595 --> 01:11:38,095
+ve vektörü nerede? Burada.
+
+469
+01:11:39,955 --> 01:11:42,255
+Eksi, iki, üç, dört.
+
+470
+01:11:43,455 --> 01:11:43,835
+Eksi.
+
+471
+01:11:44,955 --> 01:11:47,235
+Şunu bir yapalım, eksiyi sonradan buluruz.
+
+472
+01:11:47,955 --> 01:11:48,895
+Bir çarpı iki.
+
+473
+01:11:55,699 --> 01:12:02,779
+Artı 2 çarpı 1, artı, eksi 1 çarpı 0.
+
+474
+01:12:04,579 --> 01:12:09,959
+Eksi 2, 3, 4, burası ne yaptı? 2, 4.
+
+475
+01:12:11,739 --> 01:12:21,899
+4 çarpı, eksi 2, 3, 4, yani, eksi 8, 12, 16. Burası bir vektör.
+
+476
+01:12:22,420 --> 01:12:46,239
+Bu da bir vektör çıkacak. Nasıl bir vektör çıkacak? Hemen yapalım şurada. U çarpı V'yi bulalım. Eksi 2, artı 6, artı 4, eksi 4, 0. Burası 0 çıktı zaten. Bu durumda istenen vektör buymuş. Tamam.
+
+477
+01:12:53,844 --> 01:12:54,304
+Evet.
+
+478
+01:12:56,863 --> 01:12:59,863
+Şimdi biraz vaktimiz var herhalde.
+
+479
+01:13:04,851 --> 01:13:06,172
+Aynı şey ama olsun.
+
+480
+01:13:17,363 --> 01:13:19,083
+Çünkü, nereye yazalım?
+
+481
+01:13:41,971 --> 01:13:43,152
+Komşu kenarları
+
+482
+01:13:50,515 --> 01:13:52,555
+Bu eşittir. 2, 1, 3.
+
+483
+01:13:56,884 --> 01:13:58,043
+Ve eşittir.
+
+484
+01:13:59,104 --> 01:14:00,104
+Eksi bir,
+
+485
+01:14:01,664 --> 01:14:03,424
+üç iki,
+
+486
+01:14:07,507 --> 01:14:16,268
+W eşittir, 1, 1, 2, vektörleriyle verilen,
+
+487
+01:14:30,963 --> 01:14:33,263
+Paralel yüzlünün hacmini bulunur.
+
+488
+01:14:58,804 --> 01:15:01,304
+hacim v eşittir nedir arkadaşlar?
+
+489
+01:15:02,824 --> 01:15:03,684
+u çarpı
+
+490
+01:15:03,684 --> 01:15:06,604
+v ile
+
+491
+01:15:06,604 --> 01:15:08,304
+w
+
+492
+01:15:08,304 --> 01:15:11,344
+bu nedir?
+
+493
+01:15:11,963 --> 01:15:12,703
+o'ninkileri
+
+494
+01:15:12,703 --> 01:15:14,384
+ilk satıra
+
+495
+01:15:14,384 --> 01:15:18,023
+v'ninkileri ikinci satıra
+
+496
+01:15:18,023 --> 01:15:21,064
+w'yu da
+
+497
+01:15:23,347 --> 01:15:26,788
+3. satır yazıp determinantı alacağız. Ne yapar?
+
+498
+01:15:28,487 --> 01:15:37,028
+6, x12, artı, x3.
+
+499
+01:15:43,155 --> 01:15:43,876
+S3
+
+500
+01:15:43,876 --> 01:15:46,675
+artı 2
+
+501
+01:15:50,420 --> 01:15:51,059
+eksi
+
+502
+01:15:57,779 --> 01:15:58,340
+Eksi on üç.
+
+503
+01:15:59,519 --> 01:16:00,420
+Eksi dokuz.
+
+504
+01:16:05,811 --> 01:16:06,771
+Eksüge.
+
+505
+01:16:10,804 --> 01:16:33,884
+Eksi 4. Ne yaptı? Eksi 15, eksi 24, eksi 28, eksi 30, eksi 28. Şimdi determinant eksi 28 çıktı. Şunu diyebilirsiniz, ya hocam bir şey, hacim eksi olur mu? Arkadaşlar, eksi çıkmasını seviyor büyük ihtimalle şu.
+
+506
+01:16:34,452 --> 01:16:36,832
+Alt kısımdadır yani X veya Y'si.
+
+507
+01:16:37,092 --> 01:16:44,731
+Evet, evet. Aynen öyle. Bunun çiğini alacaksınız, mutlak değerini alacaksınız. Yani hacim 28'dir. Tamam mı?
+
+508
+01:16:47,452 --> 01:16:47,971
+Peki.
+
+509
+01:16:52,532 --> 01:16:58,412
+Arkadaşlar, benim bugünlük anlatacaklarım bu kadar. Var mı sormak istediğiniz, söylemek istediğiniz bir şey.
+
+510
+01:17:07,572 --> 01:17:08,851
+Hocam teşekkür ederiz. Sağ olun.
+
+511
+01:17:09,672 --> 01:17:17,652
+Peki. Ben de sizlere teşekkür ediyorum. Arkadaşlar, haftaya görüşürüz inşallah. Dikkat edin kendinize. Sağlıcakla kalın.
+
+512
+01:17:19,152 --> 01:17:20,092
+Görüşmeyeceğiz hocam.
+
+513
+01:17:32,659 --> 01:17:38,159
+Kimseden ses gelmiyor [öğrenci]. Peki. Arkadaşlar, tekrar sağlıcakla kalın. Görüşmek üzere.
