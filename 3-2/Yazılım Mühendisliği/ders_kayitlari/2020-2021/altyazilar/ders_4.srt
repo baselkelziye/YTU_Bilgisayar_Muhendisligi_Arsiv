@@ -1,0 +1,2455 @@
+1
+00:00:05,331 --> 00:00:26,211
+Evet, merhabalar. Bu hafta gereksinim analizi üzerinde duracağız. Bununla ilişkili tüm alt başlıkları inceleyeceğiz. Şimdi slide'ı paylaşıyorum.
+
+2
+00:00:51,828 --> 00:00:54,108
+29 kişi olmuş derse katılan.
+
+3
+00:00:58,899 --> 00:01:12,900
+Gereksinim Mühendisliği, Requirement Engineering, Requirement Analiz kapsamında hangi işleri gerçekleştiriyoruz? Bunun üzerinde duracağız bu hafta.
+
+4
+00:01:23,444 --> 00:01:38,984
+Analiz aşamasında gerçekleştirdiğimiz işlemleri daha basit olarak anlatmıştık. Şimdi daha fazla alt başlığa ayırıp bu aşamada gerçekleştirdiklerimizi anlatacağız.
+
+5
+00:01:40,019 --> 00:01:48,859
+Burada yaptığımız işlemleri anlattıktan sonra bir tane SRS örneği üzerinde bakacağız.
+
+6
+00:01:50,120 --> 00:01:57,219
+SRS'in ne olduğu üzerinde geçen sene de tanımını yapmıştık sistem analizinde.
+
+7
+00:02:02,516 --> 00:02:13,276
+Bir proje vereceğiz demiştim size. Büyük bir ihtimalle önümüzdeki hafta size konuları vereceğiz.
+
+8
+00:02:13,795 --> 00:02:29,996
+Ve bu konular içinden seçtiğiniz bir tanesi üzerinde sizlerde planlama, gereksinim analizi, tasarım, gerçekleştirme adımlarını oluşturacaksınız.
+
+9
+00:02:30,463 --> 00:02:48,123
+Şimdi gereksinim mühendisliğinde, gereksinim analizinde hangi alt başlıklar var? Başlangıç aşaması, bilgi toplama aşaması, işleme, elaboration, aslında işleme, modelleme anlamında.
+
+10
+00:02:57,364 --> 00:03:16,003
+Farklı anlatımlarının doğrulanması, tanımlama, specification ki tanımlama aşamasında SRS'in gerçekleştirilmesi, doğrulama, validation yani bu gereksinim analizi raporu doğru mudur?
+
+11
+00:03:21,139 --> 00:03:31,120
+Yeni bir adım değil de bütün bu adımların doğru yönetilmesi anlamında yönetimden bahsediyoruz.
+
+12
+00:03:32,919 --> 00:03:45,560
+Ve bu adımları hangi yazılımı geliştireceksek onun yapısına göre, kullandığımız sürece göre farklı düzenleyebiliriz.
+
+13
+00:03:45,919 --> 00:03:57,979
+Biliyorsunuz sürece göre dediğimizde geçen hafta ve ondan önceki hafta yazılım geliştirme süreç modellerinden bahsettik.
+
+14
+00:03:57,979 --> 00:04:06,979
+Yazılım geliştirme süreç modelleri, klasik yaklaşım ve çevik yaklaşım olmak üzere.
+
+15
+00:04:08,819 --> 00:04:32,539
+Farklı inceledik. Çevik yaklaşımı geçen hafta gördük. XP ve Scrum üzerinde de hangisi hangi amaçla kullanılıyor, nelere ağırlık veriliyor. Bunların üzerinde çalıştık geçen hafta.
+
+16
+00:04:32,927 --> 00:04:57,387
+Artık modeller üzerinde durmuyorum ve agile süreçleri de geçen hafta tamamıyla ona ayırdığımız için agile süreçler üzerinde de bu hafta tekrar yapmıyorum biliyorsunuz. Bir önceki haftayı önce bir tekrar ederdim. Ama bu hafta doğrudan gereksinim analizinin alt adımlarına geçiyorum.
+
+17
+00:04:59,060 --> 00:05:08,060
+Müşterinin gereksinim analizinin başarılı olması için, müşterinin ekibin bir parçası olarak çalışması burada çok önemli.
+
+18
+00:05:08,060 --> 00:05:23,680
+Çünkü gereksinim analizinde, analiz aşamasında yaptığımız neydi? Ne yapıyoruz? Problem nedir? Onu iyice tüm ayrıntılarıyla öğrenmek.
+
+19
+00:05:29,459 --> 00:05:53,339
+Alt başlıklara daha detaylı baktığımızda, başlangıç aşamasında yazılım projelerinin, yazılım projesinin ilk aşamasından başlatılıp başlatılmamasına karar verilen adım, yeni bir iş gereksinimi belirlenmesi,
+
+20
+00:05:53,908 --> 00:06:15,768
+Neden bir yeni projeye başlanır? Yeni bir iş gereksinimi mevcut iş süreçlerinde güçlükle karşılaşılıyorsa üst düzey karar vericilerin gördükleri bir gereksinimle başlayabilir.
+
+21
+00:06:17,588 --> 00:06:29,668
+Eğer bir uygulama yazılımı geliştirilecekse, mesela yazılım evi, yeni bir ürün geliştirilecekse, yeni bir pazar veya hizmetin farkına varılması,
+
+22
+00:06:32,068 --> 00:06:44,048
+yazılım şirketinin üst düzey karar vericileri ve teknik ekibin böyle bir karar oluşturmasıyla yeni bir proje başlayabilir veya yeni bir müşteri bulunur.
+
+23
+00:06:44,367 --> 00:06:59,087
+Bu müşterinin istediği işin genel olarak herkesin de ihtiyacı olduğu düşünülebilir. Böylece bir başlangıç aşamasında söz edebiliriz.
+
+24
+00:06:59,087 --> 00:07:10,048
+Başlangıç aşamasında paydaşlar belirlenmeli. Paydaşlar kimlerdir?
+
+25
+00:07:10,932 --> 00:07:24,151
+Gerçekleşecek, yani geliştirilecek sistemden doğrudan ya da dolaylı olarak faydalanabilecek olan herkes sistemin paydaşıdır.
+
+26
+00:07:25,752 --> 00:07:30,971
+Ve her paydaş da bizim sistemimize farklı bir açıdan bakar.
+
+27
+00:07:33,939 --> 00:07:41,199
+Projenin başarısı veya başarısızlığı farklı paydaşları farklı şekillerde etkiler.
+
+28
+00:07:42,139 --> 00:07:58,339
+Bu yüzden kullanıcılara ve tüm paydaşlara soru sorarken, gerçekleştirecek sistemle ilişkili ayrıntıları öğrenirken, paydaşların bakış açıları.
+
+29
+00:07:59,636 --> 00:08:08,815
+Paydaşları etkileyecek nedenler ve bunların sonuçlarının ne olacağı üzerinde durulması gerekir.
+
+30
+00:08:10,415 --> 00:08:23,076
+Şimdi bu paydaş dediğimiz zaman mesela basit bir işletme üzerindeki basit bir örnekten bahsedelim.
+
+31
+00:08:27,252 --> 00:08:45,392
+Fatura hazırlama işi. Bu fatura hazırlama işinde hem farklı paydaşlar var, hem muhasebe tarafı var, hem satın alma tarafı var. Kasada bulunan kişi var.
+
+32
+00:08:47,091 --> 00:09:10,711
+Alışveriş yapan kişi var. Şimdi bunların hepsi birer paydaş. Bunların hepsi burada geçen olayı kendi bakış açılarıyla anlatacaktır. O zaman bunların tümüne yani hem satın almadan birinin hem muhasebeden birinin bulunması gerekir bu olayı anlatırken.
+
+33
+00:09:12,724 --> 00:09:20,904
+Bir uygulamanın paydaşları dediğimizde bu şekilde bir farklılık görüyoruz.
+
+34
+00:09:23,724 --> 00:09:31,484
+Bundan sonraki aşama bilgi toplama aşaması.
+
+35
+00:09:40,052 --> 00:09:51,412
+Ayrıntılı bilgiler edinmeye çalışmak gerekir. Burada da tüm paydaşların etkin katılımı.
+
+36
+00:09:51,412 --> 00:09:59,552
+Az önce verdiğim örnekte bir fatura hazırlanması için geliştirilen bir yazılım için.
+
+37
+00:10:00,115 --> 00:10:22,475
+Hem muhasebede nasıl bir fatura hazırlandığında geliri nasıl aktarılacak bu gösterilmeli. Satın alma tarafında satın alınan birimlerin faturaya nasıl aktarılacağını o taraftan birisinin anlatması gerekir.
+
+38
+00:10:22,847 --> 00:10:42,527
+Ve tüm paydaşların katıldığı toplantılar da yapılmalıdır. Bu toplantılarda gündem belirlenir ve herkes bir arada olabilir. Ayrıca tek tek bunlarla görüşme de yapılabilir.
+
+39
+00:10:44,211 --> 00:10:52,491
+Yani her birisinin yaptığı işi önce anlayıp sonra hepsiyle beraber bir toplantı yapılabilir.
+
+40
+00:10:52,491 --> 00:10:55,892
+Elucidation, bilgi toplama aşaması.
+
+41
+00:10:56,792 --> 00:11:00,395
+Bilgi toplama aşamasında...
+
+42
+00:11:07,187 --> 00:11:18,728
+Bilgi toplama aşamasında, şimdi hatırlayalım geçen seneden, sistem analizi sırasında bilgi toplama gerçekleştiriyorduk.
+
+43
+00:11:19,948 --> 00:11:24,728
+Burada hem kişilerle tek tek görüşme yapıyorduk, hem...
+
+44
+00:11:27,668 --> 00:11:52,927
+Yerinde inceleme yapıyorduk. Hem benzer uygulamaları inceliyorduk. Bunların hepsi bilgi toplama aşamasında yapılacak şeyler. Bilgi toplama yolları üzerinde sistem analiz dersinde de ayrıntılı olarak durmuştuk.
+
+45
+00:12:07,988 --> 00:12:09,508
+[öğrenci] burada mı?
+
+46
+00:12:16,532 --> 00:12:17,492
+[öğrenci].
+
+47
+00:12:33,011 --> 00:12:34,411
+Başka birisine soralım.
+
+48
+00:13:03,124 --> 00:13:04,604
+[öğrenci], burada mısın?
+
+49
+00:13:07,484 --> 00:13:08,724
+Buradayım hocam.
+
+50
+00:13:10,424 --> 00:13:21,064
+Şimdi, geçen seneden de hatırladığın kadarıyla, bilgi toplama yollarından az önce biraz hatırlattım. Bahsedebilir misin?
+
+51
+00:13:21,488 --> 00:13:32,568
+Bir sistem analizi, gereksinim analizi yaptığımız zaman nasıl bilgi toplarız o sistemin ne yaptığı hakkında?
+
+52
+00:13:34,248 --> 00:13:39,008
+Benzer uygulamaları öncelikle inceleriz.
+
+53
+00:13:42,968 --> 00:13:48,728
+Teknik bir araştırma yapılabilir. Neler kullanabiliriz?
+
+54
+00:13:49,120 --> 00:13:57,780
+Ya da ekip bunu sağlayabilecek mi? Buna bakabiliriz. Müşteri ne istiyor? Buna bakabiliriz.
+
+55
+00:13:57,780 --> 00:14:11,100
+Evet, yani müşteriyle planlı olarak önce yönetimden sonra işi gerçekleştirenler bunlarla görüşmeler yaparız değil mi? Review işlemi gerçekleştiririz.
+
+56
+00:14:13,340 --> 00:14:15,700
+Yerinde inceleme nasıl olur?
+
+57
+00:14:17,268 --> 00:14:26,268
+İşin nasıl yapıldığını mesela bir depoda çalışılıyorsa, depoya bir uygulama yapıyorsa, depoya gidip orada sistemin nasıl istediğini görmek gibi olabilir.
+
+58
+00:14:27,107 --> 00:14:40,048
+Evet, böylece o sistemde işi gerçekten yapanla birebir çalışarak gereksinimlerin neler olduğunu anlayabiliriz, bilgi toplayabiliriz.
+
+59
+00:14:40,927 --> 00:14:42,087
+Evet, teşekkürler.
+
+60
+00:14:42,947 --> 00:14:43,807
+Teşekkür ederim.
+
+61
+00:14:51,539 --> 00:15:18,340
+Şimdi bilgi topladık. Bilgi toplama aşamasından sonra modelleme gerçekleştireceğiz. İşleme. Bilgi toplama aşamasında toplanan ham bilgilerin işlenmesi. Son kullanıcının ve diğer paydaşların yazılımla nasıl etkileşimde bulunacağının belirlenmesi.
+
+62
+00:15:19,220 --> 00:15:26,600
+Ve bu etkileşimler kullanım senaryolarıyla belirtilir.
+
+63
+00:15:32,340 --> 00:15:53,500
+Kullanıcılar, sistemin kullanıcıları hangi işlemleri gerçekleştiriyorlar? Aralarında nasıl bir ilişkilendirme var? Daha sonra nesneye yönelik analiz ve tasarımda bunlardan bahsedeceğiz. Geçen sene yine sistem analizinde bir giriş yapmıştık bu kavramlara.
+
+64
+00:15:54,100 --> 00:16:03,080
+Modelleme sırasında kimi bilgilerin daha genişletilmesi de gerekir. Bazı bilgilerin özetlenmesi gerekir.
+
+65
+00:16:03,080 --> 00:16:21,540
+Ve gereksinimlerin sınıflandırılmasında normal gereksinimler, beklenen gereksinimler belirtilebilir. Yani hangi işler gerçekleştirilecek?
+
+66
+00:16:21,903 --> 00:16:30,204
+Müşterinin ayrıca daha isteyeceği başka işlemler var mıdır? Bunlar ortaya çıkarılır.
+
+67
+00:16:30,204 --> 00:16:45,204
+Kısacası bu modelleme sırasında kullanım senaryolarını hazırlayacak şekilde bir çalışma gerçekleştirilir.
+
+68
+00:16:48,563 --> 00:16:51,963
+Model oluşturulur.
+
+69
+00:16:52,783 --> 00:16:55,723
+Elaboration işleme aşamasında.
+
+70
+00:16:57,063 --> 00:16:59,423
+Oluşturduğumuz modelde de
+
+71
+00:17:01,299 --> 00:17:15,539
+Her bir sistemin kullanıcısının sistemle ilişkileri yaptığı işler ortaya çıkacaktır. Bu modelleme kısmı üzerinde tabii ki daha fazla duracağız.
+
+72
+00:17:18,548 --> 00:17:29,488
+Nesne yönelik analiz tasarım dersinde de, Nesne yönelik programlama dersinde de duruldu. Burada da durulacak.
+
+73
+00:17:32,168 --> 00:17:40,688
+Kullanım senaryolarını kullanarak modelleme gerçekleştireceğiz.
+
+74
+00:17:43,188 --> 00:17:53,188
+Geçen sene hatırlıyorsanız analiz aşamasında bilgi toplama, modelleme ve raporlama olarak...
+
+75
+00:17:53,811 --> 00:18:08,311
+Gereksinim raporunun oluşturulması olarak üç adımdan bahsetmiştik. Burada da aslında bu üç temel adımı daha fazla ayrıntılandıracak başka adımlar da eklemiş bulunuyoruz.
+
+76
+00:18:20,627 --> 00:18:39,748
+Hangi istekle başladı? Müşteri tarafından beklenti nedir? Yazılım geliştirici ekip buna ne kadar katkı sağlayacak? Bu başlangıç çalışmaları yapılıyor. Bilgi toplama aşamasında da.
+
+77
+00:18:41,428 --> 00:19:05,648
+Sistem hakkında, sistemin ne yaptığı hakkında ve gereksinimlerin neler olduğu hakkında bilgi toplanıyor. Bunun için de farklı kullanıcı grupları ile görüşmeler yapılıyor. İşleme aşaması, modelleme aşamasında da, elaborasyon aşamasında da buradaki gibi.
+
+78
+00:19:06,144 --> 00:19:26,144
+Bu, gereksinimler net olarak ortaya çıkarılmış oluyor. Böyle bir sistemden standart beklenen gereksinimler nelerdir? Müşteriyi heveslendirecek olanlar nelerdir? Etkileşimler nelerdir? Bunlar belirlenmiş oluyor.
+
+79
+00:19:31,923 --> 00:19:39,923
+sistem üzerinde çalışacağımız sistem ayrıntılarıyla nedir'i belirlemiş oluyoruz.
+
+80
+00:19:42,564 --> 00:19:54,203
+Bundan sonrasında tasarıma hazırlık olarak tasarımda gerçekleştirdiğimiz şeyde.
+
+81
+00:19:54,675 --> 00:20:05,016
+Bu tasarımda biz bu gereksinimleri sağlamak için nasıl bir bilgi sistemi, nasıl bir yazılım oluşturmalıyız?
+
+82
+00:20:06,016 --> 00:20:21,395
+Yazılımın yapısı üzerinde duracağız. Ama gereksinim analizinde böyle bir uygulama kapsamında hangi işlemler gerçekleştirilmelidir? Bunun üzerinde duruyoruz.
+
+83
+00:20:23,667 --> 00:20:44,207
+Negotiation, pazarlık aşaması. Şimdi her müşteriden gerekli olan bilgileri aldık. Her kullanıcıdan daha doğrusu. Müşteri bir tanedir ama farklı kullanıcılar vardır müşteri grubunun altında.
+
+84
+00:20:47,827 --> 00:20:58,447
+Şimdi kullanıcı taraf ve müşteriyi temsil eden taraf aşırı isteklerde bulunabilir.
+
+85
+00:21:02,447 --> 00:21:14,607
+Bizim yazılım geliştiriciler olarak ne yapabileceğimizi belirleyip bu aşırı istekleri seçebilmemiz gerekir.
+
+86
+00:21:15,124 --> 00:21:26,723
+Bazen teknik olarak mümkün olan şeylerde insan, zaman, bütçe kaynakları çerçevesinde karşılanamayacak durumda da olabilir.
+
+87
+00:21:28,023 --> 00:21:40,223
+Farklı paydaşların gereksinimleri birbiriyle çelişebilir ve paydaşlar gereksinimleri farklı önem düzeyinde görebilirler.
+
+88
+00:21:40,768 --> 00:22:05,008
+Pazarlık sonucunda tüm paydaşların razı olacağı bir gereksinimler listesi elde edilecektir. Yani bilgi toplama ve modelleme sonucunda sistemin yapısı ortaya konur ama burada paydaşlar gereksinimleri
+
+89
+00:22:07,251 --> 00:22:23,731
+Farklı önem düzeylerinde görüyorlarsa, birbiriyle çelişiyorsa, tüm paydaşların razı olacağı bir gereksinimler listesi elde etmek hedeflenir pazarlık sırasında.
+
+90
+00:22:29,299 --> 00:22:39,039
+Bunu tekrar özetleyeyim. Pazarlık negociyasında iki temel istek var aslında. İki temel ihtiyaç için yapılıyor.
+
+91
+00:22:39,039 --> 00:22:47,759
+Bir, müşterilerin istekleriyle yazılım geliştiricilerin yapabilecekleri arasındaki pazarlık.
+
+92
+00:22:56,564 --> 00:23:04,444
+Daha fazla ölçüleri daha büyükse
+
+93
+00:23:04,852 --> 00:23:20,572
+Ama yazılım geliştirici ekibin sınırlı insan zaman ve bütçe kaynakları çerçevesinde karşılamayacaklarını düşündükleri şeyler varsa o zaman burada bir orta yolun bulunması gerekir.
+
+94
+00:23:21,612 --> 00:23:27,752
+İşte sistem analistlerinin desteğiyle de bu pazarlık aşaması bu şekilde aşılır.
+
+95
+00:23:27,752 --> 00:23:31,471
+Bir başka gereklilik de paydaşlar arasında.
+
+96
+00:23:32,852 --> 00:23:45,852
+Dediğimde uygulama yapısı içindeki paydaşlar bir fatura hazırlama olayında bir taraf...
+
+97
+00:23:46,836 --> 00:24:09,176
+Muhasebe tarafı, diğeri satın alma tarafı, diğeri de stoktaki taraftır. Her biri farklı anlatır, kendi bakış açısıyla anlatır. Arada sorularınız olabilir her birinin farklı anlattığıyla, birbiriyle çelişen tanımlamalar olabilir.
+
+98
+00:24:09,176 --> 00:24:14,836
+İşte herkes kendi yaptığını önemseyerek ön plana.
+
+99
+00:24:14,836 --> 00:24:37,836
+Bu noktada da daha açık, dışarıdan birisinin bakış açısıyla gerçek sistemi anlaması gerekecektir. Böylece pazarlık aşaması iki temel...
+
+100
+00:24:38,675 --> 00:25:02,375
+Bir, müşteri tarafıyla yazılım geliştirici tarafında net yapılabilecekler listesi çıkar. Bir de burada esas hedef gereksinim analizinde geliştirecek sistemin ne yaptığıdır.
+
+101
+00:25:02,804 --> 00:25:24,443
+Bu ne yaptığını farklı kullanıcılar farklı şekilde anlatacakları için burada da bir sadeleştirme ve tarafsız bir gözle olayın akışının sürecin anlaşılabilmesi sağlanmalıdır.
+
+102
+00:25:27,703 --> 00:25:29,604
+Buraya kadar sorunuz var mı?
+
+103
+00:26:00,627 --> 00:26:14,408
+Bundan sonrası artık bilgi topladık, topladığımız bilgiyi modelledik. Model üzerinden daha iyi anlamaya çalıştık sistemi ve yapılamayacakları çıkarmaya çalıştık.
+
+104
+00:26:25,299 --> 00:26:37,039
+Pazarlık sonucunda uzlaşılan haliyle kağıda dökme, raporlama anlaşılır. Burada tanımlama araçları, konuşma dili,
+
+105
+00:26:37,587 --> 00:26:50,008
+Yani gereksinim listesi verilebilir. İşte fonksiyonel gereksinimler, fonksiyonel olmayan gereksinimler bir liste halinde verilebilir.
+
+106
+00:26:50,008 --> 00:27:02,748
+Kullanıcı senaryoları, bu da yine nesne yönelik analizde göreceğimiz kullanıcı senaryoları, kullanım şemaları.
+
+107
+00:27:03,955 --> 00:27:24,375
+Diagramlar, formal diller, gerekirse bazı matematiksel modellemelerle oluşturmak veya bir ön ürün yani prototip oluşturmak. Bunların hepsini birlikte de yapabiliriz. Sadece birini seçip kullanabiliriz.
+
+108
+00:27:25,907 --> 00:27:47,907
+Gereksinimlerin tanımlanması aşamasında. Bu tanımlama specification için iki tane ek bilgimiz olacak bugünkü derste. Bir, SRS belgesi formatı ve SRS yapısı. İkincisi de...
+
+109
+00:27:48,627 --> 00:28:04,907
+Kalite özelliklerini gözden geçirerek kalite özelliklerinin hangi tür gereksinimlerde kullanılabileceğini belirlemiş olacağız.
+
+110
+00:28:17,203 --> 00:28:29,284
+Bu arada bir de validation doğrulama aşamasından söz ediyoruz. Tanımlanmış gereksinimler bir kontrol edilir rapora aktarılırken.
+
+111
+00:28:29,683 --> 00:28:45,783
+Gereksinimler açıkça tanımlanmış mı? Yani gereksinimler eğer konuşma dilinde anlatılıyorsa her bir cümle bir gereksinimi anlatacak şekilde basit cümlelerle belirtilir.
+
+112
+00:28:45,783 --> 00:28:53,324
+Birbiriyle çelişen gereksinimler var mı? Gereksinimlerde hatalar ve eksiklikler var mı?
+
+113
+00:28:53,776 --> 00:29:03,855
+Eksik gereksinimler var mı? Gerçekçi olmayanlar var mı? Bunlara bakarak bir doğrulama işlemi gerçekleştirilir.
+
+114
+00:29:05,675 --> 00:29:16,935
+Tabii ki burada izlenecek olan yolun teknik değerlendirme, technical review olması istenir.
+
+115
+00:29:17,556 --> 00:29:38,395
+Yani bu gereksinim analizini yapan kişi, anlatanlar bunların doğrulanması değil de yapılan işin gereksinimlerin doğrulanmasıdır. Buna dikkat etmek gerekiyor.
+
+116
+00:29:38,836 --> 00:29:59,296
+Ayrıca bir özet geçme şeklinde de değil, bütün raporumuzdaki gereksinimlerin bu maddeler dikkate alınarak, gereksinimler açıkça yoruma yer bırakmayacak şekilde tanımlanmış mı?
+
+117
+00:30:00,000 --> 00:30:12,759
+Çelişiyor mu? Gereksinimlerde hata ve eksiklikler var mı? Gerçekçi olmayanlar var mı? Bu açıdan doğrulama işi sağlanmalıdır.
+
+118
+00:30:21,779 --> 00:30:32,360
+Burada yönetim açısından baktığımızda yazılım geliştirme süreci içinde değişiklikler olabilir.
+
+119
+00:30:33,799 --> 00:30:44,460
+Yani daha gereksinimleri belirledik, yazılım geliştirmeye geçtik, yeni gereksinimler eklenebilir.
+
+120
+00:30:44,460 --> 00:30:48,940
+Mevcut gereksinimlerden bazıları geçerliğini yitirebilir.
+
+121
+00:30:49,428 --> 00:31:13,648
+Önem sırası değişebilir. Bazı hatalı tahminler nedeniyle bazı gereksinimlerden vazgeçilebilir. Ne tür gereksinimlerde ne tür değişiklikler nasıl ve hangi şartlarda yapılabilecek?
+
+122
+00:31:15,604 --> 00:31:19,723
+Bunu belirlemek gerekir.
+
+123
+00:31:21,943 --> 00:31:34,544
+Yani yazılım geliştirme süreci içinde gereksinim raporları, gereksinimler nasıl yönetilecek?
+
+124
+00:31:36,692 --> 00:31:51,812
+Burada hem bu dikkate alınır hem de gereksinim analizi süresince gerçekleştirilen bütün bu adımlar arasındaki ilişkilendirme doğru yönlendirilsin.
+
+125
+00:31:52,731 --> 00:31:58,635
+Yönetim management adımının iki hedefi var. Bir tanesi...
+
+126
+00:31:58,675 --> 00:32:16,296
+Gereksinim mühendisliği çalışmaları içinde, başlangıç, bilgi toplama, işleme, pazarlık, tanımlama, doğrulama adımları doğru yürütülüyor mu? Onun yönetimini sağlamak.
+
+127
+00:32:16,296 --> 00:32:26,355
+Bir de yazılım geliştirme süreci içinde bizim bu çalışma sonunda hazırladığımız SRS belgesi.
+
+128
+00:32:26,644 --> 00:32:50,324
+Bütün yazılım geliştirme süreci boyunca yönetilebilsin. Nedir yönetmekten kasıt? Gerekirse yeni gereksinimler eklensin. Mevcut gereksinimlerden bazılarının geçerliliğini yitirmesi durumunda belirlensin, çıkarılsın.
+
+129
+00:32:52,596 --> 00:32:58,635
+Gereksinimlerin önem sırasının değişmesi söz konusuysa bunun güncellenmesi.
+
+130
+00:32:59,715 --> 00:33:04,316
+Bazı gereksinimlerin artık olmaması gerektiğine karar verilmesi.
+
+131
+00:33:07,056 --> 00:33:09,796
+Yani bu değişiklikleri nasıl yapabileceğiz?
+
+132
+00:33:10,355 --> 00:33:15,695
+Yönetim tarafında bunun bir resmi sözleşme haline getirilmesi gerekir.
+
+133
+00:33:19,519 --> 00:33:34,700
+SRS belgesi aslında geliştiriciyle, yani yazılım geliştiriciyle kullanıcı arasında, müşteri arasında bir şartname niteliğini korur.
+
+134
+00:33:41,779 --> 00:33:57,579
+Bir bilgi sistemi geliştirme işinin, kullanıcı gereksinim analizine koyduğu isteklerinin karşılanmadığını belirtir.
+
+135
+00:33:58,039 --> 00:34:00,539
+Yazılım geliştiricide karşılanmıştır der.
+
+136
+00:34:01,059 --> 00:34:05,279
+İşte bu noktada elimizde sadece gereksinim belgesi olacaktır.
+
+137
+00:34:05,279 --> 00:34:09,019
+Her iki tarafında anlaşmaya vardı.
+
+138
+00:34:10,804 --> 00:34:23,064
+Bu yüzden bunun bu aşamada belirlenmiş olması gerekir. Değişiklik sonradan yapılacaksa nasıl yapılacak?
+
+139
+00:34:29,012 --> 00:34:40,352
+Yönetim aşamasında yazılım geliştirme süreci içinde gereksinimler gerçeklendi mi?
+
+140
+00:34:41,108 --> 00:35:03,728
+Ya da gereksinimlerde değişiklik yapıldı mı? Bunun izleme tabloları, traceability table ile izlenebilmesi gerekir. Mesela gereksinim 1, gereksinim 2, gereksinim 3, B1, B2, B3'te sisteme farklı bakış açıları.
+
+141
+00:35:06,132 --> 00:35:10,511
+Bu gereksinimler hangi modüllerle sağlanıyor?
+
+142
+00:35:11,051 --> 00:35:17,572
+Hazırlanan modüllerle hangi sınıflar gerçekleştiriliyor?
+
+143
+00:35:17,731 --> 00:35:22,251
+Yani hangi gereksinim nerede karşılanıyor?
+
+144
+00:35:22,655 --> 00:35:37,655
+Yazılım içindeki hangi modülde, hangi pakette, hangi sınıfta bu gereksinim karşılanıyor. Böylece yazılım geliştirme süreci içinde gereksinimlerin…
+
+145
+00:35:40,596 --> 00:35:57,036
+Ne kadar karşılandığı ve değişiklik olduysa, nerede değişiklik olduğunun belirtilmesi ve takip edilmesini sağlayan tabloda diyebiliriz traceability table için.
+
+146
+00:35:57,036 --> 00:36:00,036
+Şimdi biz burada...
+
+147
+00:36:00,467 --> 00:36:24,807
+Gereksinim analizinin alt başlıklarını konuştuk. Gereksinim analizinde hangi alt başlıklar var? Bunları şöyle bir tekrar hepsine birden bakalım. Zaten hepsinin adı da her seferinde geçiyor.
+
+148
+00:36:31,668 --> 00:36:36,368
+Başlangıç aşaması. Şöyle hepsinin üzerinden bir geçelim.
+
+149
+00:36:49,300 --> 00:37:15,100
+Başlangıç aşaması, inception. Burada yazılım projelerinin başlangıcına karar verildiği aşama. Yeni bir gereksinim mi var? Mevcut iş süreçlerinde mi değişiklik var? Yeni bir işin farkına mı varıldı?
+
+150
+00:37:17,748 --> 00:37:34,700
+Bu gereksinim analizi başlangıç aşamasında biz bu uygulamayı, yazılım geliştirme işini hangi...
+
+151
+00:37:34,835 --> 00:37:41,456
+Temel ihtiyaç için gerçekleştiriyoruz. Bunun farkındalığının yaratılması.
+
+152
+00:37:42,056 --> 00:37:57,795
+Tabii ki bu gereksinim analizine gelene kadar proje planlama aşamasında da bu sistem nereden çıktı, neden bu işi yapıyoruz, bu sorgulama yapılmıştır.
+
+153
+00:38:00,659 --> 00:38:27,659
+Tekrar böyle bir gereksinim tanımları için iş süreçleri açısından neden böyle bir sistem üzerinde çalışıyoruz? Bu tekrar proje planlamadaki problemin tanımından devam ederek burada ilk başta tekrar gerçekleştirilir.
+
+154
+00:38:28,371 --> 00:38:52,751
+Başlangıç aşamasında çalışırken paydaşlar kimlerdir? Yani bu uygulamanın farklı kullanıcı tipleri nelerdir? Bunlar sisteme hangi açıdan bakarlar? Hangi işi yaparken bunlar devrededirler? Bunun üzerinde durularak sağlanır.
+
+155
+00:39:03,411 --> 00:39:24,611
+Bundan sonraki aşama bilgi toplamaydı. Bilgi toplama Elistation'da. Gereksinimler tüm paydaşların katılımıyla toplantıda değerlendirilir. Ama bunun öncesinde her paydaşla bir görüşme gerçekleştirilir. Belki yerinde inceleme sırasında sorular sorulabilir.
+
+156
+00:39:25,135 --> 00:39:42,175
+Ama bütün farklı paydaşlarla bir toplantıda gerçekleştirilir. Bazı tıkanıklıklar varsa bunu çözmek için de bu toplantılardan faydalanır.
+
+157
+00:39:48,148 --> 00:40:02,847
+Modelleme, ham bilgilerin işlenmesi nasıl gerçekleştirilecek ve bu çalışma sonucunda kullanım senaryolarının hazırlanması söz konusudur.
+
+158
+00:40:04,967 --> 00:40:09,387
+Gereksinimlerin hepsi ortaya çıkarılır modelleme sırasında.
+
+159
+00:40:11,603 --> 00:40:19,363
+Pazarlık aşaması daha önce sistem analizinde üzerinde durmadığımız bir tarafıydı.
+
+160
+00:40:21,363 --> 00:40:37,383
+Müşteriler ve geliştiriciler arasında ve farklı müşteri paydaşları arasında yapılan doğru yolu bulma çalışmaları diyebiliriz biz pazarlık negotiation için.
+
+161
+00:40:38,356 --> 00:40:53,096
+Bundan sonraki adım tanımlama, SRS belgesinin oluşturulması. Burada tanımlama amacı konuşma dilin, gereksinimler konuşma dilinde nasıl yazılmalıdır da burada göreceğiz.
+
+162
+00:40:58,835 --> 00:41:05,975
+Matematiksel modeller ve bir prototip model oluşturulması.
+
+163
+00:41:10,804 --> 00:41:15,923
+Gereksinim tanımlama specification aşamasında söyleyeceklerimiz.
+
+164
+00:41:16,623 --> 00:41:26,204
+Specification raporu, yani yazılım gereksinim raporunu oluşturduktan sonra bir doğrulama gerçekleştiririz.
+
+165
+00:41:26,204 --> 00:41:31,483
+Bu doğrulama validation şeklinde.
+
+166
+00:41:32,844 --> 00:41:35,043
+Gereksinimler tutarsız mı?
+
+167
+00:41:38,579 --> 00:42:03,019
+Açıkça tanımlanmış mı yoksa yoruma mı dayalı? Birbiriyle çelişen gereksinimler var mı? Hatalı ve eksik gereksinimler var mı? Gerçekçi olmayanlar var mı? Bunu sağlamak için de bir teknik değerlendirme review gerçekleştirilir. Yönetim aşamasını da söyledik az önce.
+
+168
+00:42:03,795 --> 00:42:19,715
+değişiklikler olduğunda gereksinimlerde veya geçerliğini yitiren gereksinimler varsa o zaman nasıl davranılacak bunun yapısı?
+
+169
+00:42:23,715 --> 00:42:29,996
+İzleme tablosunda da hangi gereksinim ne kadar sağlandı?
+
+170
+00:42:30,547 --> 00:42:54,987
+Hangi gereksinimde nasıl değişiklikler oldu? Bunun takibinin yapıldığı tabloya da traceability izlenebilirlik tabloları diyoruz. Daha doğrusu bu izlenebilirlik tablosu türünde bir tabloyu gereksinimleri izlemek üzere kullanıyoruz.
+
+171
+00:43:01,684 --> 00:43:08,644
+Şimdi, gereksinim analizi kapsamında sorunuz var mı?
+
+172
+00:43:19,987 --> 00:43:23,907
+Gereksinim analizi kapsamında sorunuz var mı?
+
+173
+00:43:24,788 --> 00:43:25,947
+Bir şey sorabilir miyim?
+
+174
+00:43:26,407 --> 00:43:26,728
+Evet.
+
+175
+00:43:27,887 --> 00:43:37,387
+Bir yazılım firmasına geliştirtiyor tabii uygulama. Yönetim kimde oluyor? Yazılım firmasında herhalde değil mi?
+
+176
+00:43:38,107 --> 00:43:39,648
+Bir daha tekrarlar mısın?
+
+177
+00:43:40,467 --> 00:43:55,667
+Bir projeyi geliştirecek bir firma outsource olarak dış bir firmaya yaptırıyorsa, bir yazılım firmasına yaptırıyorsa, yönetim kimde oluyor bu gereksinim mühendisliği yönetimi? Geliştirici firmada mı?
+
+178
+00:43:55,667 --> 00:44:06,547
+Evet, outsource işi gerçekleştiriliyorsa bunun hangi bölümü outsource ediliyor?
+
+179
+00:44:07,731 --> 00:44:24,211
+Şöyle diyeyim, çok sene önce darphanenin yazılımları, bütün bilgi sistemi güncelleniyordu.
+
+180
+00:44:24,211 --> 00:44:34,172
+Burada üniversite bu işin şeyinde.
+
+181
+00:44:34,900 --> 00:44:57,059
+analiz, tasarım ve danışmanlık aşamasında çalışıyordu. Buradaki çalışmalarda analiz, tasarım raporlarından üniversite sorumlu yazılım geliştirme işini de başka firmalara devrediyor.
+
+182
+00:45:00,467 --> 00:45:13,407
+Ama yazılım geliştirmek için gerekli olan analiz aşamasındaki bilgilendirme kurumun çalışanları tarafından yapılacak.
+
+183
+00:45:24,947 --> 00:45:42,107
+Kullanıcıların doğru seçilmesi kapsamında sorumlu. Üniversite tarafı da analiz ve tasarımın doğru yapılması kapsamında sorumlu.
+
+184
+00:45:42,527 --> 00:46:05,827
+Dolayısıyla hem kurum yönetimi hem de analiz ve tasarımı outsource ettiği kurum analiz tasarımdan sorumlu oluyordu. Ama bu anlaşmalara göre değişik olabilir. Yani tamamen bir firma ise bu.
+
+185
+00:46:08,244 --> 00:46:26,244
+İşin bu tarafını geliştiren yine burada şartnamede belirtilmelidir. Yani işi anlatacak olanlar hem…
+
+186
+00:46:26,900 --> 00:46:40,639
+Gereksinimleri doğru anlatmakta hem de daha sonra testleri gerçekleştirmekte sorumludur. O şeyin iyi yazılması gerekir.
+
+187
+00:46:44,275 --> 00:47:05,835
+Anladım hocam, teşekkür ederim. Bu üçlü yapı değil de, üçlü yapı daha uygun anlattıklarınıza da, ikili bir yapı olsaydı, bir firma dediğiniz gibi bir yazılım evine geliştiriyor olsaydı, yönetim kimde olacaktı? Bu pazarlıktaki o tarafsızlığı falan etkileme faktörü olmaz mıydı? O kısımları aslında merak etmiştim ben. O nasıl bir yönetim?
+
+188
+00:47:05,835 --> 00:47:10,475
+Evet, evet. Yani söylediğin örnek şöyle.
+
+189
+00:47:10,992 --> 00:47:17,771
+Bir yazılımı geliştiren firma kendi kullanımı için mi geliştirtiyor?
+
+190
+00:47:19,912 --> 00:47:20,932
+Diyelim öyle.
+
+191
+00:47:21,512 --> 00:47:24,731
+Yoksa yazılım genel amaçlı bir yazılım evi mi?
+
+192
+00:47:26,612 --> 00:47:30,791
+Firma kendisi için geliştirtiyor ama dışarıda bir yazılım evine geliştirtiyor.
+
+193
+00:47:31,215 --> 00:47:40,675
+Evet, evet. İşte bu anlaşmalarda her ikisinin de sorumluluklarının ayrı ayrı yazılması gerekiyor.
+
+194
+00:47:41,039 --> 00:48:02,099
+Tamam, analiz tasarımın, gereksinim analizinin doğru yapılması geliştiren firmanın görevi ama işin anlatımı konusunda seçilen paydaşların denetlenmesi ve çalışmalara katılması da firmanın sorumluluğunda olur.
+
+195
+00:48:05,811 --> 00:48:06,632
+Teşekkür ederim.
+
+196
+00:48:11,956 --> 00:48:13,735
+Başka sorusu olan var mı?
+
+197
+00:48:32,340 --> 00:48:35,380
+o zaman bir 10 dakika ara verelim.
+
+198
+01:02:25,235 --> 01:02:41,436
+Evet, şimdi derse devam ediyoruz. Az önce gereksinim analizinde hangi alt başlıklar var, onları gördük, neler yapıyoruz, hangi adımlarda yapıyoruz.
+
+199
+01:02:41,907 --> 01:03:03,487
+Şimdi, yazılım gereksinim spesifikasyonu dediğimizde, yazılım gereksinim spesifikasyonunda hangi başlıklar var, bunu göreceğiz. Daha doğrusu nasıl bir yapıda?
+
+200
+01:03:09,940 --> 01:03:22,360
+Software Requirement Specification, IEEE'nin yazılım gereksinim belgesi, standardı.
+
+201
+01:03:22,360 --> 01:03:34,040
+Burada yalnız bir takip edebiliyor musunuz? Belgeyi inceleyebiliyor musunuz?
+
+202
+01:03:36,371 --> 01:03:37,871
+Evet, teşekkür ederim.
+
+203
+01:03:38,391 --> 01:03:42,231
+Software Requirement Specification üzerindeyiz şu anda.
+
+204
+01:03:43,991 --> 01:03:48,652
+İşte hangi projenin, hangi versiyonu, kim tarafından yazıldı?
+
+205
+01:03:51,391 --> 01:03:58,291
+Bu 99'dan beri kullanılan bir belge, standardı.
+
+206
+01:03:59,211 --> 01:04:03,631
+Arada bazı ufak değişiklikler yapılıyor ama temeli değişmedi.
+
+207
+01:04:04,340 --> 01:04:28,079
+İçerik listesi, kaçıncı revizyonu, başlangıç girişte bu belgenin amacı ve nasıl inceleneceği konusunda yardımlar.
+
+208
+01:04:28,480 --> 01:04:52,800
+Alan, hangi ürünün gereksinim belgesi, ürün perspektifi, ürünün gerçekleştirdiği işlevler nelerdir, fonksiyonlar nelerdir, kullanıcı sınıfları, hangi kullanıcılar var, paydaşlardan bahsetmiştik.
+
+209
+01:04:56,596 --> 01:05:13,796
+İşletim ortamı nasıl bir ortamda çalıştırılacak? Tasarım ve gerçekleştirme için kısıtlar varsa bunların belirtilmesi, kullanıcı dokümentasyonu olacak mı? Kabuller.
+
+210
+01:05:14,239 --> 01:05:25,879
+Neler? Önce kısıtları verdik, sonra kabuller var mı bu gereksinim sırasında?
+
+211
+01:05:26,643 --> 01:05:41,383
+Dış ara birim gereksinimleri, kullanıcı ara birimleri, donanım ara birimleri, yazılım ara birimleri gibi sistem özellikleri. Sistem özellikleri dediğimizde bunlar fonksiyonel gereksinimler.
+
+212
+01:05:41,383 --> 01:05:53,543
+Özellikle bu belgeyi paylaşıyorum sizinle ki bir SRS yani gereksinim analiz raporunda, ayrıntılı raporunda.
+
+213
+01:05:54,452 --> 01:06:11,672
+İki şey vardır mutlaka. Burada bir, iki bölüm formal bir raporlamaya giriş için belirtilen tanımlamalar.
+
+214
+01:06:13,684 --> 01:06:25,043
+Ara birimler nelerdir? Farklı ekran yapıları, farklı alt başlıklar. Sistem özellikleri belirtilecek.
+
+215
+01:09:13,555 --> 01:09:18,835
+Evet, şimdi tekrar devam edeceğim. Yeniden paylaşıyorum belgeyi.
+
+216
+01:09:29,524 --> 01:09:32,284
+Evet, belgeyi takip edebiliyor musunuz şu anda?
+
+217
+01:09:33,584 --> 01:09:34,324
+Evet hocam.
+
+218
+01:09:35,204 --> 01:09:39,024
+Teşekkür ederim. Özür dilerim, az önce bir ara vermek zorunda kaldım.
+
+219
+01:09:40,851 --> 01:10:00,000
+Şimdi burada işlevsel olmayan gereksinimler var. İşlevsel olmayan gereksinimler nelerdir? İşlevsel gereksinimler nelerdir? Functional requirement, non-functional requirement. Functional requirement bizim...
+
+220
+01:10:00,627 --> 01:10:17,448
+Yazılımımızda gerçekleştirilen temel işlemler, hangi fonksiyonlar var? O yazılıma özgü. Mesela fatura kesme yazılımını örnek verdim baştan beri.
+
+221
+01:10:24,083 --> 01:10:43,283
+Uygulama gerçekleştireceğiz. Öncelikle hangi işlemler olacak? Alınacak ürünler belirlendi mi? Her bir ürün için hangi bilgilerin olması gerekiyor? Fiyat, miktar.
+
+222
+01:10:44,979 --> 01:10:59,019
+Faturaya başlangıçta hangi bilgiler olması gerekiyor, kime kesiliyor fatura ve hangi tarihte? İlk başta bunların olması gerekiyor.
+
+223
+01:10:59,019 --> 01:11:07,659
+Bu sistem özelliklerinde fonksiyonel gereksinimlerde.
+
+224
+01:11:08,095 --> 01:11:24,835
+Dikkat edeceğimiz şeyler, bunu use case diagramlarıyla da belirtebiliriz. Olayın nasıl işlediğini, taraflar arasındaki ilişkinin nasıl olduğunu ya da madde madde kısa cümlelerle de yazabiliriz.
+
+225
+01:11:24,835 --> 01:11:36,095
+Yani doğal dil yapısında. Bu doğal dil yapısında olduğunda basit bir cümlede sadece bir gereksinim olacak. İkinci gereksinim.
+
+226
+01:11:36,095 --> 01:11:53,195
+Bu gereksinim olmayacak ve büyük bir uygulamada alt parçalara da bölünerek verilebilir bu gereksinimler. Bu şekilde tanımlanması gerekecek.
+
+227
+01:11:55,731 --> 01:12:04,792
+Non-functional requirement'lar. Yani functional requirement anlaşıldı mı? Sorusu olan var mı functional requirement'la ilişkili?
+
+228
+01:12:07,380 --> 01:12:16,120
+Sistemin yapacağı işleri anlatıyor ama bunu belli bir düzen dahilinde anlatmamız gerekiyor.
+
+229
+01:12:16,120 --> 01:12:35,380
+Büyük bir uygulama için alt başlıklara bölerek ve sıralayarak karışıklık olmaması için daha sonra kullanıcı testi sırasında kolay takip edebilmemiz için her cümlede
+
+230
+01:12:35,380 --> 01:12:40,940
+Bir gereksinim olacak şekilde gereksinimlerin tanımlanması gerekiyor.
+
+231
+01:12:43,720 --> 01:12:51,000
+Çünkü bu raporun, SRS raporunun hedefi az önceki derste de söyledim.
+
+232
+01:12:51,347 --> 01:12:59,167
+Müşterilerle geliştiriciler arasında bir sözleşme niteliği taşıyor.
+
+233
+01:12:59,167 --> 01:13:16,167
+Burada şu özelliği gerçekleştirecek, şu fonksiyonu gerçekleştirecek dediğimiz şeyi kullanıcı kabul testinde de takip edebilecek şekilde olmamız gerekiyor.
+
+234
+01:13:19,347 --> 01:13:23,747
+Anlaşılır şekilde yazılması gerekiyor.
+
+235
+01:13:29,076 --> 01:13:34,735
+Bu dokümanda üç ve dördüncü adımlarda mı yazıyoruz hocam bunları? Functional requirements'ları hangi başlık altında?
+
+236
+01:13:40,372 --> 01:13:41,631
+Bir daha sorar mısınız?
+
+237
+01:13:44,092 --> 01:13:50,791
+Şu anda ekranda 2, 3, 4 ve 5. adımlar gözüküyor. Hangi başlıkları altına yazıyoruz?
+
+238
+01:13:50,791 --> 01:13:52,051
+Functional requirements.
+
+239
+01:13:52,471 --> 01:14:03,592
+Şimdi şöyle, az önce onu söylemeye çalıştım. Dördüncü başlıkta system features var.
+
+240
+01:14:04,064 --> 01:14:18,524
+Buradaki aslında sistem, buradaki gereksinimler, yani fonksiyonel gereksinimler, sistemin özellikleri dediğim.
+
+241
+01:14:21,703 --> 01:14:24,923
+Fonksiyonel 2 diye de yazabiliriz.
+
+242
+01:14:24,923 --> 01:14:26,923
+Bunun öncesindeki 3,
+
+243
+01:14:34,420 --> 01:14:49,619
+1 ve 2 genel tanım, ürünün bir use case diagramı ile yapılacaksa, kullanıcı sınıflarını, karakteristiklerini, genel yapısını, kullanıcı belgesi var mı?
+
+244
+01:14:51,460 --> 01:14:54,000
+Genel yapısını anlatıyor.
+
+245
+01:14:54,619 --> 01:14:57,200
+1 ve 2. Ürünün alanı nedir?
+
+246
+01:14:59,252 --> 01:15:16,292
+Hedef nedir? 1 ve 2 genel döküman başlangıcı. 3. bölüm ara birimler var mı? Mesela kullanıcı ekranları, donanım ara birimleri gibi. Esas bizim şeyimiz 4 ve 5.
+
+247
+01:15:20,595 --> 01:15:24,415
+Evet. Herhalde sorunuz açıklığa kavuştu mu?
+
+248
+01:15:25,175 --> 01:15:34,135
+Açık hocam, teşekkür ederim. Bir de bir şey sorabilir miyim? Bu başlıkla ilgili değil ama Türkçesi var mı bu dokümanın? Hepinizce mi hazırlamak gerekiyor yoksa?
+
+249
+01:15:34,555 --> 01:15:43,015
+Şöyle, şimdi ben size orijinal dokümanı veriyorum. Şu üstte de yazıyor siz görebiliyor musunuz bilmiyorum. Artıklayın 830.
+
+250
+01:15:44,275 --> 01:15:57,995
+Bu IEEE 830, software, şimdi kalite bölümünü incelerken, bunlardan bahsedeceğim standartlardan.
+
+251
+01:15:59,835 --> 01:16:09,995
+Software standart diye, yazılım standartları diye, hem IEEE'nin, hem ISO'nun, hem DOD'nin farklı kurumları…
+
+252
+01:16:14,131 --> 01:16:24,912
+Bu standart tanımı da IEEE'nin çok kullanılan belge tanımı, SRS belgesi tanımı.
+
+253
+01:16:38,036 --> 01:16:50,155
+Türkçe hazırlanmış buna uygun belgelerde Türkçesinde bulabiliriz. Ama orijinali zaten IEEE'nin hazırladığı bu format üzerinden gitmiş.
+
+254
+01:16:52,851 --> 01:17:02,191
+Bu formatı veriyorum ama siz belgelerinizde bu formatın aynısını kullanmak durumunda değilsiniz.
+
+255
+01:17:02,191 --> 01:17:05,751
+Çünkü bu çok fazla detay içeren bir belge.
+
+256
+01:17:23,539 --> 01:17:38,719
+Sonra non-functional requirement'lar, işlevsel olmayan requirement'lar diye belirteceksiniz. İşlevsel olmayan gereksinimleri de zaten biz şeyde bulacağız.
+
+257
+01:17:39,796 --> 01:17:58,796
+Yazılım kalite özellikleri ile çakışan değerler bunlarda. Biraz sonra da ona geleceğim zaten. Ama fonksiyonel gereksinimler dediğimizde bu yazılım ne iş yapıyor? Bu yazılımın gerçekleştirdiği işi...
+
+258
+01:17:59,956 --> 01:18:21,336
+Belirten maddeler olacak. Ben ayrıca sizinle Avesiz sayfamda bu formatı paylaşacağım. Bununla ilişkili bu belgeyi kullanan bir dışarıda yapılmış bir öğrenci ödevi var.
+
+259
+01:18:21,792 --> 01:18:39,912
+Onu da örnek olarak verebilirim. Çünkü mesela burada maddeler halinde sistem fonksiyonlarını, fonksiyonel gereksinimleri sıralıyoruz. Bunu bir use case diagramıyla da birleştirerek daha anlaşılır yapabiliriz.
+
+260
+01:18:42,515 --> 01:19:01,483
+Dediğim gibi burada hedef fonksiyonları nelerdir? Bu sistem hangi işleri gerçekleştirecek? Bunu eğer cümlelerle yazıyorsak her cümlede bir gereksinim olacak şekilde basit cümlelerle...
+
+261
+01:19:04,819 --> 01:19:10,899
+Dördüncü konusunda sorunuz var mı? Fonksiyonel gereksinim konusunda bir alta geçeceğim.
+
+262
+01:19:15,315 --> 01:19:17,076
+Yok hocam açık oldu. Teşekkürler.
+
+263
+01:19:17,956 --> 01:19:21,996
+Teşekkürler. İşletsel olmayan gereksinimlere gittik zaman.
+
+264
+01:19:28,243 --> 01:19:54,263
+Non-functional requirement'lar, performans gereksinimleri, güvenlik gereksinimleri, gizlilik gereksinimleri, diğer yazılım kalite özellikleri, işletmecilikle ilişkili bazı kurallar varsa bunlar işlevsel olmayan gereksinimler altında sıralanır.
+
+265
+01:19:56,083 --> 01:19:58,884
+Nedir bu işlevsel olmayan gereksinimler?
+
+266
+01:19:58,884 --> 01:20:10,083
+Yani yazılımın yaptığı iş değil de yazılımın karakteristiğiyle ilişkili gereksinimler.
+
+267
+01:20:11,083 --> 01:20:12,884
+Performansı...
+
+268
+01:20:13,203 --> 01:20:29,283
+İşte güvenliği, kullanılabilirliği gibi daha başka şeyler de ekleyebiliriz. Neler ekleyebileceğimizi görmek için yazılım kalite özelliklerine geçeceğim zaten biraz sonra diğer derste de.
+
+269
+01:20:29,283 --> 01:20:37,463
+Bu bilgilerin verilmesi isteniyor. Non-functional requirement'larda.
+
+270
+01:20:40,239 --> 01:20:56,699
+İster öğrenci bilgi sistemi olsun, ister fatura sistemi olsun, isterse üretim planlama sistemi olsun. Bunların fonksiyonel gereksinimleri farklı her birinin.
+
+271
+01:21:03,391 --> 01:21:19,152
+Yazılım kalite özelliklerinden hangileri ön plana çıkacaksa, ki bunlar yazılımdan yazılıma değişecek özellikler değil, sadece bazılarında daha önemli olacak.
+
+272
+01:21:20,819 --> 01:21:45,500
+Özellikler. Bunların belirtilmesi isteniyor. Performansı nasıl olacak? Uzaktan erişilebilirliği nasıl olacak? Mesela öğrenci bilgi sistemi 724 çalışır durumda olacak. Bunu sağlamak için gerekli özelliklerin katılması isteniyor gibi.
+
+273
+01:21:46,015 --> 01:22:03,815
+Tanımlamalar verilecek veya öğrenci bilgi sisteminde not giriş sistemi, güvenlik gereksinimi, gizlilik gereksinimi şu seviyede olmalıdır vereceğiz.
+
+274
+01:22:10,868 --> 01:22:26,808
+Tabirlerimiz, özelliklerimiz yazılımdan yazılıma fark etmeyecek tanımlamalar içerecek. Bu da güzel olmayan gereksinimleri tanımlamış olacak.
+
+275
+01:22:35,792 --> 01:22:44,632
+Bu uygulamaya has tanımlamalar, analiz modelleri, analiz modelleri dediğimizde use case diagramlarını anlıyoruz.
+
+276
+01:22:46,432 --> 01:22:49,012
+Açıklanacak bilgiler.
+
+277
+01:22:49,012 --> 01:22:55,012
+Şimdi geneline bakalım belgenin.
+
+278
+01:22:56,492 --> 01:23:01,212
+Kaçıncı revizyonun bu SRS belgesinin?
+
+279
+01:23:01,652 --> 01:23:29,051
+SRS belgesinin az önceki bütün başlıkları burada takip edebiliriz. Bu kullanıcı gereksinimleri bu dokümanda belirtilen ürünün şu numaraları, lezzinin gereksinimleridir ve ürünün alanını açıklar.
+
+280
+01:23:29,652 --> 01:23:46,311
+Ürün alanı nedir? İşte muhasebe programı mı yoksa satın alma programı mı? Standartlar nelerdir? Bu SRS belgesi de öncelikler nelerdir?
+
+281
+01:23:57,231 --> 01:24:00,032
+Kimler okumalıdır?
+
+282
+01:24:03,032 --> 01:24:12,131
+Bununla ilgili de işte testerler, userler, proje yöneticileri incelemelidir.
+
+283
+01:24:12,252 --> 01:24:13,532
+Ürünün alanı nedir?
+
+284
+01:24:13,532 --> 01:24:15,152
+Yani yazılım.
+
+285
+01:24:15,796 --> 01:24:24,796
+Hangi amaçla geliştirildi? Referanslar, işte SRS belgesini hazırlarken hangi referanslar kullanıldı?
+
+286
+01:24:43,695 --> 01:24:52,155
+Ürün perspektifi, ürünün fonksiyonları, biraz daha ürünü daha ayrıntılı anlatmak burada.
+
+287
+01:24:52,695 --> 01:24:55,115
+Kullanıcı sınıfları nelerdir?
+
+288
+01:24:58,716 --> 01:25:06,495
+Kullanım sıklığı, kullanım yapısı, nasıl bir ortamda işletilecek?
+
+289
+01:25:09,823 --> 01:25:29,463
+Nasıl olmalı bunun? Tasarım ve gerçekleme kısıtları var mı? Burada özellikle geliştiricilerin sağlaması gereken özellikler belirtiliyor.
+
+290
+01:25:34,612 --> 01:25:45,211
+Tasarım ve implementasyon kısıtlarında geliştiricilere bir kısıt tanımı yapacak mıyız?
+
+291
+01:26:00,992 --> 01:26:21,851
+Kısıtlamalarımız var mı? Standartlar, hepsi hepsiyle ilişkili tasarım ve gerçekleme kısıtlarımız var mı? Bunu bildireceğiz. Ayrıca kullanıcı dokümentasyonu da verilecek mi?
+
+292
+01:26:27,923 --> 01:26:47,703
+Kabuller nelerdir? Yani bu yazılımı geliştirirken, bu gereksinim analizini yaptığımız şeyi oluştururken, burada planlanan kısıtlar gibi kabuller var mı?
+
+293
+01:26:47,703 --> 01:26:55,103
+Mesela bunun şu ortamda geliştirileceği, işletim sistemi olarak şu ortamın seçileceği kabul edilmektedir.
+
+294
+01:26:55,699 --> 01:27:17,479
+Bu kabuller projeyi etkileyebilir. Yani yanlış, hatalı bir kabul verilmişse, daha sonra değişirse bunlar projeyi etkileyebilir.
+
+295
+01:27:19,412 --> 01:27:24,792
+Projeyle bağlılıklar da tanımlanmalıdır.
+
+296
+01:27:27,532 --> 01:27:33,352
+Evet, az önce şeyde de belirttiğimiz gibi içindekiler listesinde
+
+297
+01:27:39,155 --> 01:27:44,376
+Kullanıcı ara birimleri, donanım ara birimleri,
+
+298
+01:27:49,043 --> 01:28:14,224
+Hata mesajlarını belirtmek, ekran yapılarını belirtmek gibi tanımlamalar, donanım ara birimleri veya yazılım ara birimleri, spesifik yazılım komponentleri, veri tabanı, işletim sistemi gibi yapıların
+
+299
+01:28:17,395 --> 01:28:27,155
+Gerekli tanımlamaları varsa bunların belirtilmesi veya iletişimle ilişkili ara birimler.
+
+300
+01:28:28,755 --> 01:28:35,735
+Şimdi sistem özelliklerine geçtik. Esas önemli olan bunlar demiştim.
+
+301
+01:28:45,492 --> 01:28:47,891
+Bir ya da birkaç kelime.
+
+302
+01:28:51,592 --> 01:29:01,372
+Bu özellik, sistem fonksiyonu ayrıca öncelik de belirtilebilir.
+
+303
+01:29:01,752 --> 01:29:05,692
+Yüksek öncelikte, orta öncelikte, daha düşük öncelikte gibi.
+
+304
+01:29:25,363 --> 01:29:35,683
+Bu arada zaten alt başlıklarda önce sistem özelliklerini belirtip fonksiyonel gereksinimlere arkasından geçiyoruz.
+
+305
+01:29:39,183 --> 01:29:49,523
+Şimdi bir tane sistemin özelliğini yazıp bu özelliği sağlamak için hangi fonksiyonel gereksinimler gerçekleştiriliyor?
+
+306
+01:29:52,243 --> 01:29:57,563
+Requirement 1, Requirement 2 diye devam edeceğiz.
+
+307
+01:30:00,083 --> 01:30:17,423
+Şöyle söylemiştim ben, fonksiyonel gereksinimlerde eğer büyük bir uygulamaysa alt modüllere, alt başlıklara ayrılabilir. İşte buradaki System Feature 1, System Feature 2 bu alt başlıkları temsil ediyor.
+
+308
+01:30:28,083 --> 01:30:34,143
+Sesimlerle gerçekleştiriliyor. Bunu belirtmiş oluyoruz.
+
+309
+01:30:36,023 --> 01:30:37,683
+Bir sorunuz var mı?
+
+310
+01:30:37,963 --> 01:30:46,543
+Panjabi, 36 yaşında. Babası Raj Kapon, 65 yaşında, maliden emekli. Arkadaşları Panjabi'nin sesinin çok iyi olduğunu söyledi. Şimdi bir şarkı isteyeceğiz.
+
+311
+01:30:47,203 --> 01:30:48,743
+Can you sing a song for us please?
+
+312
+01:30:49,083 --> 01:30:49,463
+Yes.
+
+313
+01:30:51,203 --> 01:30:52,643
+[öğrenci], Şamil [öğrenci].
+
+314
+01:31:01,908 --> 01:31:03,048
+[öğrenci]
+
+315
+01:31:06,676 --> 01:31:07,876
+Efendim hocam?
+
+316
+01:31:09,316 --> 01:31:11,176
+Ses senden mi geliyordu?
+
+317
+01:31:12,096 --> 01:31:14,176
+Yalnızlıkla açmış olabilirim kusura bakmayın.
+
+318
+01:31:14,176 --> 01:31:14,836
+Tamam.
+
+319
+01:31:16,756 --> 01:31:22,856
+Bu katılımcı listesini açmışken sorayım.
+
+320
+01:31:23,536 --> 01:31:26,176
+Fonksiyonel gereksinimler...
+
+321
+01:31:27,123 --> 01:31:38,384
+Herkes tarafından anlaşıldı mı? Kendi sisteminizin fonksiyonel gereksinimlerini feature feature blocklayer yazabilecek durumda mısınız?
+
+322
+01:31:47,315 --> 01:31:53,615
+Hocam bu bölümün bir baş tarafını gösterebilir misiniz? Tekrar şu 4.1.2'nin birazcık üzerine çıkabilir misiniz?
+
+323
+01:31:53,915 --> 01:31:54,175
+Tamam.
+
+324
+01:32:09,971 --> 01:32:30,911
+Yani dördüncü bölümün başlığı System Features. Sistemin özellikleri. Bunu yani küçük bir uygulamada doğrudan fonksiyonel gereksinimler deyip sırayla maddeleyebiliriz. Çok küçük bir uygulama için. Ama uygulamamız büyükse.
+
+325
+01:32:31,315 --> 01:32:53,315
+Bizim sistemimizin pek çok özelliği var, pek çok modülü var veyahut da bunları ayırarak System Feature 1, işte bu özellik hangi önceliklidir? Yüksek mi, orta mı, düşük öncelikli mi? Ondan sonra bu...
+
+326
+01:32:54,036 --> 01:33:02,516
+Sistemin alt başlıkları nelerdir? Yani bu özelliğin fonksiyonel gereksinimleri.
+
+327
+01:33:03,764 --> 01:33:25,384
+Requirement 1, 2 diye sıralıyoruz. Ondan sonra geçiyoruz System Feature 2'ye. Yine bunun da alt başlıklarını, yani bu modülü gerçekleştirmek için hangi fonksiyonlar yapılıyor, bu da belirtiliyor yine.
+
+328
+01:33:26,804 --> 01:33:33,423
+Hocam, örnek olarak faturalama modülü, irsaliye, stok gibi bu şekilde mi?
+
+329
+01:33:33,423 --> 01:33:34,644
+Evet, evet.
+
+330
+01:33:36,104 --> 01:33:46,804
+Yani bunun için yapılacak işlemler, şunun için yapılacak işlemler diye alt başlıklara ama bu işlemleri sadece adını yazmıyoruz.
+
+331
+01:33:47,804 --> 01:33:54,804
+Requirement bir de bir cümleyle işte bu özelliği sağlamak için sırasıyla yapılması gerekiyor.
+
+332
+01:33:54,804 --> 01:33:55,923
+Gereken işlemler.
+
+333
+01:33:58,823 --> 01:33:59,543
+Anlaşıldı mı?
+
+334
+01:34:01,064 --> 01:34:02,184
+Anlaşıldı hocam, sağ olun.
+
+335
+01:34:05,224 --> 01:34:10,403
+Evet, non-functional requirement'larda işte performans gereksinimleri.
+
+336
+01:34:15,252 --> 01:34:29,372
+Performansla ilişkili alt şeyler olabilir, gereksinimler olabilir. Yani her bir başlıkta sadece bir gereksinim değil de birden fazla gereksinim yazabiliriz.
+
+337
+01:34:30,832 --> 01:34:41,832
+Başka yazılım kalite özellikleri de varsa ekleyeceğimiz o zaman onları da veriyoruz veya
+
+338
+01:34:42,292 --> 01:35:04,752
+İş kuralları varsa, yine bunlar işlevsel gereksinimler değil, işte belirli işlevsel gereksinim kurallarını buradan çıkarabilsek de bunu da yine işlevsel olmayan özelliklere yazılmışız.
+
+339
+01:35:08,884 --> 01:35:25,963
+Analiz modelleri optional. Yani eğer doğal dille ifade edebilmişsek değil. Ama zaten biz yazılımın analiz ve tasarımında analiz modellerini oluşturmuşsak bunları da ekleyeceğiz.
+
+340
+01:35:25,963 --> 01:35:35,916
+Yani sizin için de data flow diagram, sınıf diagramı veya use case diagramı.
+
+341
+01:35:35,923 --> 01:35:39,784
+diye analiz modellerinizi ekleyebilirsiniz.
+
+342
+01:35:45,011 --> 01:35:46,252
+Bir şey sorabilir miyim hocam?
+
+343
+01:35:46,492 --> 01:35:46,752
+Evet.
+
+344
+01:35:47,931 --> 01:36:10,712
+Bu security ile ilgili, non-functional requirements da, biraz önce söylediğiniz öğrencilerin uzaktan bağlanması gibi bir uygulama olacaksa, orada encryption falan gibi şeyler mi yoksa, işte kullanıcının hangi ekranlara ve modüllere erişebileceği gibi bir matriz şeklinde öyle bir, onlar da dahil mi?
+
+345
+01:36:11,891 --> 01:36:31,532
+Yani her ikisi de olabilir. Bunu da az önce geçerken o yüzden söyledim zaten. Mesela security ve safety var. Burada bu bölüm içinde tek bir gereksinim değil, birden fazla gereksinim yazabiliriz.
+
+346
+01:36:33,672 --> 01:36:37,712
+Yani security requirements diyoruz.
+
+347
+01:36:38,228 --> 01:36:43,507
+Security'yi tarif edecek birden fazla gereksinim yazabiliriz.
+
+348
+01:36:44,768 --> 01:36:47,788
+Burada da zaten örnekler vermiş.
+
+349
+01:36:50,608 --> 01:36:59,507
+Bu yazılım ürünü için, kullanılan veri için, ürün tarafından kullanılan veri için, kullanıcı...
+
+350
+01:37:00,916 --> 01:37:17,256
+Tanımlaması için hangi kullanıcılar şeydir. Bunların hepsini belirten gereksinimleri burada sıralayabiliriz. Yani bu da bir blok şey değil. Tek bir gereksinim olması gerekmiyor altında.
+
+351
+01:37:18,452 --> 01:37:20,011
+Herhalde soru buydu değil mi?
+
+352
+01:37:20,011 --> 01:37:31,351
+Evet, evet. Yani anladığımı bir özetlemek istersem, seyfesinde zannedersem daha çok external requirements, security de daha çok internal security.
+
+353
+01:37:31,988 --> 01:37:46,108
+Yani burada da şey değil, biz bunları sadece safety requirement, security requirement diye kısıtlamayın. Bunu örnek olarak vermiş.
+
+354
+01:37:46,568 --> 01:37:59,988
+Fonksiyonel gereksinimlere girmeyen, yazılım kalite özelliklerinden çıkaracağımız herhangi gereksinimleri burada ana başlık yapabiliriz. Hangisi bizim uygulama?
+
+355
+01:37:59,988 --> 01:38:01,771
+Bu konuları, yazılım süreç modelleri, başlamamız için önemliyse.
+
+356
+01:38:05,043 --> 01:38:06,703
+Bunlar bir örnek.
+
+357
+01:38:07,423 --> 01:38:12,003
+Ama bu kısımların önemli olduğunu düşünüyorum ben. Özellikle şu yemek sepeti falan.
+
+358
+01:38:13,344 --> 01:38:14,083
+Tabii ki.
+
+359
+01:38:14,703 --> 01:38:16,063
+Tabii ki. Yani önemli.
+
+360
+01:38:16,844 --> 01:38:24,903
+Ama uygulamaya göre mesela reliability de öne çıkabilir.
+
+361
+01:38:27,903 --> 01:38:29,743
+Güvenirlik de öne çıkabilir.
+
+362
+01:38:32,180 --> 01:38:35,260
+O zaman onu bir başlık olarak yazılabilir.
+
+363
+01:38:38,060 --> 01:38:39,360
+Anladım hocam, teşekkür ederim.
+
+364
+01:38:41,524 --> 01:39:01,243
+O zaman bir ara verelim. Ondan sonra belki bunu örnekleyen, şimdi bu pdf'i açamadım ama örnek olarak onu açabilirsem arada onu da görürüz. Başka bir öğrencinin yaptığı bir ödev aslında o da.
+
+365
+01:39:01,747 --> 01:39:18,167
+Bir de hep bu Software Quality Attributes diyoruz. Bu aslında daha sonraki haftaları konusu ama şunları da bir açıklığa kavuşturacağım. Nedir kalite özellikleri?
+
+366
+01:39:21,652 --> 01:39:24,452
+[öğrenci] sorun mu var?
+
+367
+01:39:24,891 --> 01:39:35,931
+Hocam, AVS sayfanızda geçen seneye ait derslerimizin notları mevcut da, acaba bu seneki yeni alanları ne zaman yükleyeceksiniz? Siz proje için yardımcı olsun diye paylaşacağım demiştiniz de.
+
+368
+01:39:35,931 --> 01:39:48,532
+Evet, evet. Ben de onları var diye baktım ama bu sene kullandığım farklı şeyler de var, onları ekleyeceğim.
+
+369
+01:39:50,163 --> 01:39:51,224
+Tamam, teşekkür ederim.
+
+370
+01:40:17,555 --> 01:40:29,515
+Tekrar 10 dakika ara diye yazdım. Bu aradan sonra yazılım kalite özellikleri üzerinde duracağız.
+
+371
+01:49:26,963 --> 01:49:36,144
+Evet, derste devam edebiliriz. Herkes takip edebiliyormuş şu anda.
+
+372
+01:49:42,003 --> 01:49:42,923
+Evet hocam.
+
+373
+01:49:42,923 --> 01:50:04,344
+Tamam. Şimdi az önce bir problem olmuştu ama bu pdf'i açabildim. Bir örnek var. Daha önceki yıllardaki bizim arkadaşlarınızın örnekleri de var ama bunu internetten aldım.
+
+374
+01:50:11,859 --> 01:50:28,059
+Aluminium Database, yani kişiler hakkında webden erişerek mezunlarla ilgili bilgi bakabileceğimiz bir uygulama.
+
+375
+01:50:36,564 --> 01:50:52,464
+Gereksinim analizini oluşturduktan sonra hazırladığımız raporda bu birinci, ikinci, hatta üçüncü adımlar çok kısa geçilebilir böyle küçük projelerde.
+
+376
+01:50:56,467 --> 01:51:13,467
+Ürünün tanımı ve ürünün her bir özelliğiyle ilişkili tanımlamalar, use case diagramları yardımıyla, use case belgeleri yardımıyla böyle...
+
+377
+01:51:15,123 --> 01:51:31,403
+Maddeler halinde fonksiyonları ayrıca yazarak değil, use case belgelerinde belirterek, yine orada da yol adımlarımızı maddeler halinde tanımlıyorduk.
+
+378
+01:51:31,844 --> 01:51:43,123
+Bu şekilde belirtmişler bu örnekte. İki türlü de yapabilirsiniz. İsterseniz sadece yazıyla bildirirsiniz, isterseniz böyle use case diagramlarıyla belirtirsiniz.
+
+379
+01:51:43,123 --> 01:51:49,064
+Şimdi içerik listesini geçip, direkt içini inceleyelim.
+
+380
+01:51:49,876 --> 01:52:02,056
+Dökümanın amacı mesela az önce standartta dökümanın amacı için 4-5 tane alt başlık vardı.
+
+381
+01:52:02,716 --> 01:52:09,956
+Halbuki burada bizim daha kısa olarak bir ders projesi olduğu için, bu da bir ders projesi zaten.
+
+382
+01:52:12,176 --> 01:52:31,556
+Açık olarak, şu ürünün, yazılım ürünün yeteneklerini açıklamak için hem uç kullanıcılar hem de yazılım geliştiriciler tarafından
+
+383
+01:52:34,292 --> 01:52:43,232
+Hem işlevsel olmayan gereksinimlerini hem işlevsel gereksinimlerini belirtmektir hedef.
+
+384
+01:52:44,932 --> 01:52:50,372
+Yani daha az formal bir içerik var burada.
+
+385
+01:52:50,372 --> 01:52:59,392
+Belgeye bakışta da işte belgede üçüncü bölümden itibaren neler olduğunu.
+
+386
+01:53:01,908 --> 01:53:03,408
+Belirtiyor.
+
+387
+01:53:04,688 --> 01:53:19,668
+Önce projenin genel tanımı, sonra fonksiyonel gereksinimler, sonra en son bölümde de işletsel olmayan gereksinimler belirtilecektir şeklinde tanımlıyor.
+
+388
+01:53:29,300 --> 01:53:50,380
+tanımı, işte mezunlar hakkında bilgi sağlamak. Fakat buraya kimler erişecek? Bunu belirtiyor. Ürünün hedefi nedir? Şu andaki durum nedir? Ürünün hedefi nedir?
+
+389
+01:53:53,555 --> 01:54:05,835
+Ürünün kapsamı nedir? Bu da genel bir şeyle. Tabi burada bazı hatalar da olabilir. Sonuçta bir öğrenci projesi ama bir örnek olsun diye veriyorum size.
+
+390
+01:54:07,295 --> 01:54:19,395
+İnternetten başka kullanılan şirketler tarafından kullanılan daha profesyonel SRS örnekleri de bulabilirsiniz. Bu şimdi sizin çapınızda bir şey olduğu için.
+
+391
+01:54:21,140 --> 01:54:22,699
+Örnek olarak veriyorum.
+
+392
+01:54:25,363 --> 01:54:42,883
+İşte görevli, üniversitenin web serverı, bölümün serverı ve veri tabanı. Bunun faydaları nelerdir bu yazılımın? Ve fonksiyonel gereksinimleri nelerdir?
+
+393
+01:54:42,883 --> 01:54:52,303
+Şimdi burada use case diagramıyla açıklanacağı için aktörler önce açıklanmış.
+
+394
+01:54:53,363 --> 01:55:11,323
+Aktörler, mezunlar ve sekreterlikteki görevli bu sistemin aktörleri. Yukarıda da gördük zaten onu açıklamış oluyoruz.
+
+395
+01:55:17,492 --> 01:55:19,652
+Sistem sınırları nelerdir?
+
+396
+01:55:21,731 --> 01:55:26,632
+Sistem sınırları içinde hangi işlemler gerçekleştiriliyor?
+
+397
+01:55:28,632 --> 01:55:31,752
+Bir genel use case diagramıyla.
+
+398
+01:55:38,260 --> 01:55:48,880
+Daha sonra, use case tanımlarında bizim esas fonksiyonel gereksinimlerimiz verilecek demiştik.
+
+399
+01:56:09,876 --> 01:56:12,516
+Burada şeyi yazmamışlar herhalde.
+
+400
+01:56:15,275 --> 01:56:17,316
+Exception Pad var.
+
+401
+01:56:18,936 --> 01:56:21,155
+Basic Pad zaten sadece iki tane.
+
+402
+01:56:22,235 --> 01:56:23,316
+Onu atlamışım ben.
+
+403
+01:56:27,316 --> 01:56:29,316
+Genel giriş bölümünde.
+
+404
+01:56:33,395 --> 01:56:51,595
+Bunları biliyorsunuz. O yüzden her birini açıklamıyorum. Yani bir use case belgesi de, use case'in adı, bu şeyin use case'in ne iş yaptığı.
+
+405
+01:56:52,015 --> 01:57:15,355
+Önceliği, ön koşulu nedir ve temel işlemleri. Temel işlemleri burada bunun az zaten. Server'a nasıl bağlanacak? Yani erişimi anlatıyor bu şeyin, mezunlar veritabanının erişim bölümü.
+
+406
+01:57:15,988 --> 01:57:22,248
+Bir diğer use case de bir anketin doldurulması.
+
+407
+01:57:27,539 --> 01:57:43,180
+Ön koşul nedir? Önce tabii ki sayfaya erişmesi gerekiyor. Ondan sonra yapılacak işler. Burada her bir işin madde madde tanımlanması gerekiyor.
+
+408
+01:57:53,908 --> 01:58:05,168
+Her bir adımı gösteriyor aslında. Birden fazla iş belirtilmeyecek her bir adımda. Tek bir iş belirtilecek.
+
+409
+01:58:05,168 --> 01:58:18,007
+Ve anketin doldurulması için gerekli 6 tane işlem var.
+
+410
+01:58:19,796 --> 01:58:33,115
+Sırayla veriliyor. Bunu biz sadece yazıyla gereksinimler diye yazsaydık da, şunları bu bölümün fonksiyonel gereksinimleri diye yazacaktık.
+
+411
+01:58:36,787 --> 01:58:41,087
+Daha sonra yeni bir giriş yaratma işi.
+
+412
+01:58:44,327 --> 01:58:50,887
+Ve burada da yine ön koşul var. Gerçekleştirilecek işlemler var.
+
+413
+01:58:54,887 --> 01:59:01,667
+Burada hatta iki tane iş birleştirilmiş galiba. Daha ayrılabilir burada.
+
+414
+01:59:03,380 --> 01:59:11,300
+Bunlar belirtiliyor. Eğer bir exception varsa nereye gideceğini gösteriyor.
+
+415
+01:59:15,091 --> 01:59:25,891
+Güncelleme olacaksa, güncelleme içinde alt başlıkları verebiliriz.
+
+416
+01:59:27,152 --> 01:59:38,452
+Şimdi, işte arama işlemi, yani hangi işlemler oluyorsa hepsinin fonksiyonları nasıl yürüyor, onu belirtiyoruz.
+
+417
+01:59:38,452 --> 01:59:40,452
+Şimdi geldik.
+
+418
+01:59:40,819 --> 01:59:57,839
+İşlevsel olmayan gereksinimlere. İşlevsel olmayan gereksinimlerde, az önce söylemiştim, kalite özelliklerinden bu uygulama için önemli olanları seçerek buraya koyuyoruz.
+
+419
+01:59:57,839 --> 02:00:02,559
+Kullanıcı ara birim gereksinimleri, performans gereksinimleri.
+
+420
+02:00:03,220 --> 02:00:26,280
+İşte burada da sistemle ilişkili performans gereksinimleri belirtiliyor. Bu aslında performans gereksinimleri, burada iki cümleyle yazılmış. Bunu maddeler haline getirse 521, 522 diye daha anlaşılır olurdu. Sizlerin öyle yapmanızı istiyorum.
+
+421
+02:00:27,891 --> 02:00:43,011
+Mesela kullanılabilirlik ve reliability. Az önce arkadaşınızın sorusuyla, işte safety, security, performans bunlar nasıl olmalıdır, nasıl yazacağız diye sormuştu.
+
+422
+02:00:43,711 --> 02:00:52,492
+Yazılım kalite özelliklerinden her uygulama için sadece bunlar önemlidir, bu paragraflar verilecek diye bir koşul yok demiştim.
+
+423
+02:00:52,492 --> 02:00:55,891
+İşte burada da performans gereksinim.
+
+424
+02:00:55,891 --> 02:01:21,192
+Gereksinimleri var. Kullanıcı ara birim gereksinimleri var. Erişilebilirlik ve güvenirlik var. Aslında availability, reliability birleştirilmese de olurdu. Reliability ayrı da yazılabilirdi. Yine security gereksinimleri var.
+
+425
+02:01:21,663 --> 02:01:33,304
+Bu da üç cümle var burada. Bunu da yine alt maddeleri belirterek, sayarak vermesi daha iyi olurdu.
+
+426
+02:01:33,600 --> 02:01:55,060
+Evet, bu şekilde non-functional requirements'dan anladığımız, yani yaptığı iş nedeniyle olan özellikler değil de bu işi yaparken gerekli olan sistem kaynakları ve şeyler açısından belirtimler olmalı.
+
+427
+02:02:05,203 --> 02:02:07,304
+Projeyle ilişkili sorunuz var mı?
+
+428
+02:02:12,595 --> 02:02:19,495
+Bu örnekle ilişkili sorunuz var mı? Bunu kendi örneğinizle eşleştirebiliyor musunuz?
+
+429
+02:02:22,095 --> 02:02:24,035
+Daha doğrusu daha örneği vermedik ama.
+
+430
+02:02:25,171 --> 02:02:35,551
+Yok, teşekkürler. Bir şey dikkatimi çekti. Ufak tefek hatalar var demiştiniz. Bir tanesi de Table of Contents'te 4-3'ün altına geçmiş herhalde maddelerde.
+
+431
+02:02:35,551 --> 02:02:49,271
+Evet, evet. Şimdi benim burada göstermek istediğim, bu bir deneme örneği.
+
+432
+02:02:51,828 --> 02:03:10,608
+Siz de bazı ufak tefek hatalar yapabilirsiniz ama genel olarak bu standardın, az önce gösterdiğim kapsamlı olan standardın aynı maddelerini yazmak zorunda değilsiniz.
+
+433
+02:03:19,699 --> 02:03:41,079
+Özetlemeyi yaparken, çok farklı şeyler yapmayın. Yine içerik özünde işlevsel gereksinimleri, işlevsel olmayan gereksinimleri sisteminizin kapsamında hepsini sıralamış olmanız burada. Hedef bu.
+
+434
+02:03:42,355 --> 02:03:55,395
+Tabii ki girişte, başlıklarda bazı hatalar olabilir. Olmamasına çalışın ama olabilir. Bu da bir öğrenci projesi.
+
+435
+02:03:59,636 --> 02:04:01,456
+Başka sorusu olan var mı?
+
+436
+02:04:09,332 --> 02:04:18,771
+Evet, o zaman buradan çıkıyorum. Örnek olarak bunu görün istemiştim.
+
+437
+02:04:20,112 --> 02:04:26,132
+Ve burada bir de şey var, yani işlevsel ve işlevsel olmayan gereksinimleri sıralamanız önemli.
+
+438
+02:04:26,132 --> 02:04:29,292
+Bir de önemli nokta.
+
+439
+02:04:31,091 --> 02:04:44,091
+İşlevsel gereksinimleri, isterseniz özellik 1'in, özellik 2'nin gereksinimleri diye yazıp cümlelerle yazabilirsiniz.
+
+440
+02:04:44,891 --> 02:04:49,831
+Yazıyla, requirement 1, requirement 2, şu özelliğin gereksinimleri diye.
+
+441
+02:04:49,831 --> 02:04:52,831
+Ya da...
+
+442
+02:04:53,844 --> 02:04:56,363
+UZCASE belgeleriyle yazabilirsiniz.
+
+443
+02:04:57,023 --> 02:05:12,443
+Ama hangisini kullanırsanız kullanın, gereksinimleri basit cümlelerle her cümlede bir gereksinim olacak şekilde.
+
+444
+02:05:15,123 --> 02:05:30,063
+Belirtmeniz gerekiyor. Neden bunu böyle dedik? Çünkü kullanıcı kabul testinde her cümleyi eşleştirerek bakabilmek için.
+
+445
+02:05:34,195 --> 02:05:46,036
+Evet, o zaman şimdi bu belgeyi de çıkarıyorum. Yazılım kalite özellikleri üzerinde duracağız şimdi.
+
+446
+02:06:21,908 --> 02:06:23,808
+Evet, yazılım kalite özellikleri.
+
+447
+02:06:26,808 --> 02:06:40,848
+Yazılım kalite özellikleri için bizim farklı şeylerimiz var. Kalite özelliklerini belirten standartlar var.
+
+448
+02:06:40,848 --> 02:06:43,848
+ISO'nun 9126 standardı.
+
+449
+02:06:44,787 --> 02:07:07,188
+Onu biraz sonra chatte de yazarım, ISO 9126'da. Bütün kalite özelliklerini sırayla yazar, böyle üçe bölerek yazmaz. Ama McCall bir modelleme çalışması yapmış ve McCall'un kalite üçgeni diye belirtilen bir çalışma bu.
+
+450
+02:07:10,036 --> 02:07:14,635
+çalışması sırasında ürünün kalite özellikleri.
+
+451
+02:07:16,659 --> 02:07:32,519
+Ürünün bir sistemden başka sisteme geçişi ya da sistem üzerinde diğer uygulamalarla çalışması sırasında önemli olan kalite özellikleri şuradakiler.
+
+452
+02:07:32,519 --> 02:07:44,559
+Bir de ürünün düzeltilmesi, ürünün bakım yapılabilmesi sırasındaki özellikler, ürün revizyonu özellikleri.
+
+453
+02:07:44,659 --> 02:08:12,099
+Bunların hepsi yazılım kalite özellikleri diye geçiyor. Ürünün çalışması sırasında aslında buraya eksik yazmışım. İki tane daha var. Doğruluğu önemli. Bu doğruluğa ne kadar güveneceğiz? Yani güvenirlik önemli. Burada şeyi karıştırmayın. Safety ile güvenlikle, güvenirlik farklı şeyler.
+
+454
+02:08:12,659 --> 02:08:22,140
+Usability bize bir doğru sonuç veriyor correctness da ama bu doğru sonuca yüzde kaç sınır aralığında güvenebiliriz?
+
+455
+02:08:22,599 --> 02:08:25,659
+Güvenirlik, usability, kullanışlılık.
+
+456
+02:08:26,003 --> 02:08:42,463
+Integrity, bütünlük, efficiency, etkinlik. Ürün geçişliliğine baktığımızda portability, taşınabilirlik, yeniden kullanılabilirlik, başka uygulamalarda da kullanabiliyor muyuz?
+
+457
+02:08:43,824 --> 02:08:48,543
+Veya bu reusability özelliğiyle mi geliştirilmiş yazılım?
+
+458
+02:08:49,108 --> 02:08:55,347
+Interoperability ise birlikte çalışabilirlik anlamında.
+
+459
+02:09:07,859 --> 02:09:22,319
+Esnekliği, test edilebilirliği. Burada da sistemde, yani yazılım sisteminde daha sonra bir değişiklik yapılacaksa bunun yapısıyla ilişkili.
+
+460
+02:09:22,420 --> 02:09:35,039
+Tabii ki burada maintainability, bakım yapılabilirlik için alt özellikler dökümanın olması. Dökümanı varsa bakım yapılabilir.
+
+461
+02:09:44,435 --> 02:09:52,755
+Burada correctness McCall modelinde bir de şu önemlidir.
+
+462
+02:09:54,315 --> 02:10:01,715
+Burada mesela doğruluk, şunlar kalite özellikleri, bunlar da ölçütler.
+
+463
+02:10:01,715 --> 02:10:09,575
+Şimdi bu kalite özelliklerine baktığımızda bizim kalite özelliklerimiz şey değil.
+
+464
+02:10:12,340 --> 02:10:16,979
+Tanımsal. Yani biz bunları doğrudan ölçemiyoruz.
+
+465
+02:10:22,659 --> 02:10:23,052
+Ama...
+
+466
+02:10:25,587 --> 02:10:39,728
+Sağ taraftakiler daha ölçülebilir olanlar. Dolayısıyla sol taraftaki kalite özelliklerini ölçütlerin bir bileşimi olarak değerlendirebiliyoruz farklı kat sayılarla.
+
+467
+02:10:49,652 --> 02:11:07,231
+Bunların farklı kat sayılarla birleştirilmesiyle bulunuyor. Reliability dediğimiz zaman, reliability'de önemli olanlar bir doğruluk bir de hata toleransı. Yani doğru ama ne kadar hatayla doğru.
+
+468
+02:11:10,528 --> 02:11:18,587
+Etkinlik, çalışma etkinliği, yani ne kadar sürede cevap veriyor, bir de bellek etkinliği.
+
+469
+02:11:19,868 --> 02:11:25,307
+Integrity dediğimizde erişim kontrolü, erişimin denetimi.
+
+470
+02:11:27,707 --> 02:11:34,847
+Usability dediğimizde kullanışlılık, operability, eğitim şeyi nedir?
+
+471
+02:11:37,844 --> 02:11:47,344
+İletişim kolaylığı nedir? Çalıştırılabilirliği, eğitim verilmesi. Bunların hepsi kullanışlılığı gösterir.
+
+472
+02:12:05,460 --> 02:12:24,779
+Kendi kendini ne kadar iyi tanımlıyor? Aslında burada belgenin şeyi, hem yazılımın iç açıklamaları hem belgelemesi bakım yapılabilirliği arttırıyor.
+
+473
+02:12:27,667 --> 02:12:51,268
+Modüleritesi, eğer modülerse bakım yapılabilirliği daha fazladır. Yine aynı şekilde birlikte çalışabilirlik, verinin genelliği, iletişim genelliği ve modüleritesi, interoperabiliteyi belirleyen.
+
+474
+02:12:51,891 --> 02:12:56,152
+Özellikler, ölçütler diyebiliriz.
+
+475
+02:12:56,931 --> 02:13:03,372
+Şimdi bunlar bizim için önemli.
+
+476
+02:13:04,032 --> 02:13:09,051
+Burada hangi diğer şeyleri kullanıyorduk?
+
+477
+02:13:11,051 --> 02:13:17,131
+Başka özellikleri?
+
+478
+02:13:21,140 --> 02:13:31,439
+Üçü ayırdık biz bunları. Şöyle, ürün geçişliliği, ürünün çalıştırılması ve ürünün düzeltilmesi.
+
+479
+02:13:31,439 --> 02:13:44,840
+Ve burada da hepsini sırayla yazdık. Böyle ayırmadan ve ölçütlerle ilişkisi üzerinde durmadan ISO,
+
+480
+02:13:49,076 --> 02:13:50,615
+Şuraya yazacağım bir dakika.
+
+481
+02:14:11,891 --> 02:14:28,351
+ISO 9126'da, chatte yazdım, Uluslararası Standartlar Organizasyonu'nda ISO 9126'da da yazılım kalite özellikleri açıklanır.
+
+482
+02:14:33,395 --> 02:14:41,176
+Farklı isimlerle de olsa bunlar belirtilir ama gruplanmadan belirtilir.
+
+483
+02:14:48,180 --> 02:14:54,520
+Burada tekrar bakarsak, mesela test edilebilirlik, test edilebilirlik basit.
+
+484
+02:14:57,235 --> 02:15:18,235
+Tasarımla gerçekleştirilir. Yine test edilebilir olması için yazılımın içinde açıklamalar veya dökümanların da olması gerekir. Test edilebilirliğin başka bir şeyi de yine modülerse daha kolay test edilebilir yazılımlar.
+
+485
+02:15:18,623 --> 02:15:45,783
+Böylece esneklik dediğimiz zaman esneklikte ne kadar genişletilebilir, genelleştirilebilirliği ne kadardır bunları belirtiyor. Portability taşınabilirlikte yazılım sisteminden ne kadar bağımsız ve bilgisayardan ne kadar bağımsız bu önemlidir.
+
+486
+02:15:46,623 --> 02:16:04,903
+Reusability özelliği ise basitlik, genellik, modülerlik, yazılım sisteminden bağımsızlık, makineden bağımsızlık diye açıklayabiliriz reusability'yi de.
+
+487
+02:16:05,460 --> 02:16:24,719
+Çünkü yeniden kullanılabilir yazılım parçaları geliştirmenin bir önemli tarafı da bu şekilde makineden bağımsız özellikle daha genel yapıda yazılımın geliştirilmesidir.
+
+488
+02:16:33,268 --> 02:16:50,388
+Anlattıklarımı tekrar başa dönüp bir toparlayacağım. Gereksinim analizi üzerinden gideceğim şimdi. Yani bu yan bilgileri elde ettikten sonra biz gereksinim analizinde neyi hedefliyoruz?
+
+489
+02:16:59,327 --> 02:17:09,768
+SRS belgesini doğru hazırlamayı ve koşulları için uygun olan yapıda hazırlamayı.
+
+490
+02:17:10,388 --> 02:17:29,008
+Sonra teslim sırasında baktığımızda bu şartname yerine geçecek belgeye herhangi bir hata kalmaması için bunu doğru hazırlamamız gerekiyor.
+
+491
+02:17:31,427 --> 02:17:36,388
+Şimdi bütün bu anlattıklarımla ilişkili sorunuz var mı?
+
+492
+02:17:52,084 --> 02:17:56,084
+Evet, o zaman şimdi tekrar slide'ı değiştiriyorum.
+
+493
+02:18:26,868 --> 02:18:36,927
+Baktığımızda, gereksinimleri Software Requirement Specification belgesi altında topluyoruz.
+
+494
+02:18:37,927 --> 02:18:41,768
+SRS raporuna yönelik çeşitli standartlar var.
+
+495
+02:18:43,247 --> 02:18:46,268
+IEEE 830'u biz inceledik.
+
+496
+02:18:46,772 --> 02:19:09,172
+Bir de yazılım yaşam döngüsü içinde gereksinim analizini de katan ISO, IEG ve IEEE'nin 2011'de gerçekleştirdiği bir yazılım gereksinim analizi.
+
+497
+02:19:11,443 --> 02:19:16,903
+Süreci nasıl gerçekleşiyor? Bunu belirten bir standart da var.
+
+498
+02:19:18,243 --> 02:19:24,443
+Buradaki üç isim, yani hem IEEE hem uluslararası...
+
+499
+02:19:36,147 --> 02:19:46,647
+Standartlar Örgütü organizasyonu hepsinin birlikte oluşturduğu 29.148 numaralı standart.
+
+500
+02:19:46,647 --> 02:19:57,647
+Burada gereksinim mühendisliği ve gereksinim analizinde hangi...
+
+501
+02:20:00,051 --> 02:20:26,252
+Metin, şema, yazı oluşturmamız gerekiyor. Yani kod dışında gereksinim modelimizi nasıl oluşturuyoruz ve gereksinim modelimiz içinde hangi diagramlar olacak, hangi metin şeklinde yazılar olacak bunları doğru tanımlamamız gerekiyor.
+
+502
+02:20:26,899 --> 02:20:37,720
+Şimdi birkaç soru soracağım. [öğrenci], [öğrenci] duyabiliyor musun? [öğrenci].
+
+503
+02:20:39,540 --> 02:20:40,779
+Evet duyabilirim hocam.
+
+504
+02:20:40,779 --> 02:20:50,779
+Tamam. Şimdi biz burada diyoruz ki, gereksinim analizini yapıyoruz. Gereksinim analizindeki...
+
+505
+02:20:51,360 --> 02:21:09,560
+Bilgileri, modelleri saklamamız gerekiyor. Bu raporda bulunması gerekiyor. Neden, ne işe yarıyor bu SRS belgesindeki tanımlamaları? Nerede kullanıyoruz?
+
+506
+02:21:10,060 --> 02:21:18,460
+Biz modelimizi oluştururken bu gereksinimlere bakarak kendi ürünümüzü kullanıcıya en uygun şekilde.
+
+507
+02:21:19,092 --> 02:21:31,092
+Ayarlıyoruz. Yani bir tasarımda kullanıyoruz. Tasarımı doğru yapabilmek için. Gereksinimden bizim bunları almamız gerekiyor. Başka?
+
+508
+02:21:33,612 --> 02:21:43,172
+Aynı zamanda işimizi bitirdiğimizde eğer ürünümüz istediğimiz şeyi yapıyor mu diye kontrol etmek için. Sonuçlarda cross-check yapmak için kullanabiliriz bunu.
+
+509
+02:21:43,540 --> 02:21:59,540
+Evet, yani biz tabii ki kontrol edeceğiz de bir de kullanıcıyla aramızda da şartla mendetliğinde. Kullanıcı da kabul işlemini gerçekleştirirken buraya bakıyor. Siz başta neler yapacağım demiştiniz.
+
+510
+02:22:00,595 --> 02:22:15,975
+İşte karşısına çek atabilecek. Bunu yapıyor mu sistem, bunu yapıyor mu, bunu yapıyor mu? O anlamda da bir şartname, bir belge niteliğini taşıyor. Evet, teşekkürler.
+
+511
+02:22:16,695 --> 02:22:17,155
+Teşekkür ederim.
+
+512
+02:22:19,135 --> 02:22:20,335
+[öğrenci] değil mi?
+
+513
+02:22:22,216 --> 02:22:23,015
+Evet hocam.
+
+514
+02:22:26,420 --> 02:22:27,279
+Vermesi açısından.
+
+515
+02:22:28,020 --> 02:22:30,280
+Test aşamasında da işimize yarıyor hocam değil mi?
+
+516
+02:22:30,319 --> 02:22:41,979
+Test aşamasında evet. Az önce arkadaşınız tasarımı söyledi. Sonra bitirince de biz bakıyoruz dedi. Arkasından ben de ekleyince, o da hatırladı zaten.
+
+517
+02:22:42,920 --> 02:22:55,340
+Test, yani test dediğim kabul testi sırasında kullanıcı neleri istemiştim, nasıl açıklamıştım. Hani yanlış açıkladıysa da bazı şeyleri orada çıkacak.
+
+518
+02:22:56,020 --> 02:23:00,139
+O yüzden iki tarafın da bunu kontrol etmesi gerekiyor.
+
+519
+02:23:10,355 --> 02:23:19,435
+Evet, ben burada arada sorular soruyorum. Bunun hedefi şey, yani ne kadar takip ediyorsunuz? Basit sorular soruyorum.
+
+520
+02:23:19,435 --> 02:23:33,056
+Ve burada sorduğum sorularla ilgili bazı artı, eksi veya dereceli bir not gibi bir şey veriyorum. Bunun şeyde bir karşılığı yok tabii ki.
+
+521
+02:23:36,275 --> 02:23:52,975
+Arada kaldığım durumlarda buraya bakacağım. Ama pozitif anlamda bakıyorum. Bu sorduğum sorulara karşılık veren arkadaşlarınız için böyle bir liste tutuyorum.
+
+522
+02:24:04,884 --> 02:24:26,844
+Evet, şimdi gereksinim analizindeki diğer yaptığımız işlemleri bu bilgiler çerçevesinde gözden geçirirsek, gereksinim analizinde bir defa geçen seneki sistem analizi dersindeki bilgilerle eşleştirirsek,
+
+523
+02:24:28,463 --> 02:24:48,644
+Analizde, gereksinim analizinde de, sistem analizinde de ne sorusuna cevap veriyoruz? Bunun anlamı bizim üzerinde yazılım geliştireceğimiz sistem nedir? Bunu anlamaya çalışıyoruz ve bu nasıl anladığımızı da belgelemeye çalışıyoruz. Analizde bunu yapıyoruz.
+
+524
+02:24:54,036 --> 02:25:17,236
+En iyi çalışacak şekilde bilgisayar yazılım sistemi olarak nasıl tasarlarız? Nasıl bir yazılım mimarisi kullanmalıyız? Modüller arasındaki ilişkilendirme nasıl olmalı? Nesneye yönelikse sınıfları nasıl tanımlamalıyız? Bu da tasarım sırasındaki görevimiz.
+
+525
+02:25:22,036 --> 02:25:39,376
+Oluşturuyoruz, daha iyi anlamak için yapılacak işe ama biz şey yapmıyoruz, yazılım hazırlamıyoruz daha. Yazılımını hazırlayacağımız sistemi anlamaya çalışıyoruz.
+
+526
+02:25:39,760 --> 02:26:03,220
+Başlangıçta bununla ilişkili, başlangıç aşamasında bir genel yukarıdan bakış görüş alıyoruz. Sonra bilgi toplama aşamasında üzerinde çalışılan sistem, mint çalışma kuralları nelerdir?
+
+527
+02:26:03,631 --> 02:26:16,611
+Hangi tip kullanıcıları vardır? Bu kullanıcılar neler gerçekleştiriyorlar? Yaptıkları işi anlatmalarını isteyeceğiz.
+
+528
+02:26:16,611 --> 02:26:22,851
+Ve geçen seneden kalan bilgilerimizle bilgi toplama yollarımız, anket düzenleme,
+
+529
+02:26:23,327 --> 02:26:40,327
+Eğer yaygın bir kullanıcı ağı varsa, anket düzenleme, görüşme yapma, interreview işlemi ve...
+
+530
+02:26:41,332 --> 02:27:04,191
+Yerinde inceleme, benzer ürünleri inceleme, bunların hepsi bilgi toplama yolu. Eğer bu bir kurumsa, kurumun işleyişi nedir, hangi görevi kim yapar, bu da görülecek bir şey. Daha sonra da burada bir işlem modelleme yapacağız.
+
+531
+02:27:09,332 --> 02:27:10,792
+Buna da bakalım.
+
+532
+02:27:18,388 --> 02:27:44,228
+Başlangıç aşamasında paydaşlarımızı seçiyorduk. Kimler var bunu kullanıcıları arasında? Ondan sonra bu kullanıcılara bilgi toplama sırasında hepsine soru soruyoruz. Daha sonra da modelleme aşamasında yazılımla nasıl ilişkide bulunacak tüm paydaşlar, kullanım senaryoları oluşturabilme.
+
+533
+02:27:44,819 --> 02:28:07,979
+Kullanım senaryosu mu artık veri akış diagramı ne oluşturacaksak, bazı bilgilerin genişletilmesi, bazılarının özetlenmesi ve gereksinimlerin sınıflandırılması. Bunlar kullanıcıyı çok etkileyen gereksinimler nelerdir şeklinde.
+
+534
+02:28:10,355 --> 02:28:30,855
+Daha sonra pazarlık aşaması üzerinde durmuştuk. Farklı kullanıcılardan gelen bilgilerin düzeltilmesi, müşteriler aşırı istekte bulunmuşlarsa, müşterilerle yazılım geliştiriciler arasında.
+
+535
+02:28:32,147 --> 02:28:48,608
+Bir değerlendirme gerçekleştirmek, farklı paydaşların verdiği bilgiler farklıysa bunları düzeltmek. Bunlar da bizim pazarlık sırasında gerçekleştireceğimiz işlemler.
+
+536
+02:28:54,548 --> 02:28:57,668
+Böylece tekrar etmiş oluyoruz bugünkü konuyu.
+
+537
+02:28:58,728 --> 02:29:02,468
+Tanımlama da, tanımlama üzerinde zaten çok durduk.
+
+538
+02:29:02,848 --> 02:29:16,448
+Buradaki tanımlama hiçbir belgesi yoksa bir yazılım geliştirme projesinin bir SRS belgesi vardır.
+
+539
+02:29:21,236 --> 02:29:22,936
+Tanımlama önemli.
+
+540
+02:29:23,936 --> 02:29:30,536
+Gereksinimler pazarlık sonucunda uzlaşılan haliyle kağıda dökülür.
+
+541
+02:29:30,916 --> 02:29:40,335
+Bu kağıda dökme, artık çok iyi biliyoruz, fonksiyonel gereksinim nedir, fonksiyonel olmayan gereksinim nedir.
+
+542
+02:29:41,796 --> 02:29:45,936
+Çok iyi biliyoruz diyorum ama yine de ondan emin olalım.
+
+543
+02:29:53,363 --> 02:29:55,144
+[öğrenci] burada mı?
+
+544
+02:29:59,347 --> 02:30:00,843
+[öğrenci]
+
+545
+02:30:12,147 --> 02:30:12,887
+[öğrenci].
+
+546
+02:30:16,275 --> 02:30:24,827
+[öğrenci]
+
+547
+02:30:31,667 --> 02:30:42,139
+[öğrenci]
+
+548
+02:30:52,020 --> 02:30:53,180
+[öğrenci] [öğrenci].
+
+549
+02:30:56,139 --> 02:30:57,120
+Evet hocam buradayım.
+
+550
+02:30:57,120 --> 02:31:03,260
+Evet nihayet birisini bulduk. Herkes açıp kaçmış bilgisayarın karşısından.
+
+551
+02:31:12,979 --> 02:31:15,119
+Evet, sana bir soru sorayım şimdi.
+
+552
+02:31:16,259 --> 02:31:18,520
+Fonksiyonel gereksinim nedir?
+
+553
+02:31:19,419 --> 02:31:21,840
+Fonksiyonel olmayan gereksinim nedir?
+
+554
+02:31:26,899 --> 02:31:28,599
+Fonksiyonel gereksinim nedir?
+
+555
+02:31:29,419 --> 02:31:34,039
+Şimdi gereksinimleri raporluyoruz ya, fonksiyonel gereksinim nedir?
+
+556
+02:31:36,020 --> 02:31:39,099
+Fonksiyonel gereksinim, sistem özellikleri olabilir mi hocam?
+
+557
+02:31:39,099 --> 02:31:43,139
+Yani sistemin nasıl özellikleri?
+
+558
+02:31:45,959 --> 02:31:52,159
+Sistemin kullanıcıların erişebileceği özellikler, sistemi kullanan kişilerin.
+
+559
+02:31:52,915 --> 02:31:56,095
+Sistemi kullanan, mesela bir şey örnek ver.
+
+560
+02:31:57,455 --> 02:32:08,135
+İşte az önceki benim fatura örneğimde, nasıl bir özellik, fonksiyonel özellik, fonksiyonel gereksinim olabilir?
+
+561
+02:32:11,015 --> 02:32:13,275
+Yani sistemi kullanışlılığı olabilir.
+
+562
+02:32:14,175 --> 02:32:19,235
+Kullanışlılığı, yani sistemin uygulamanın ne kadar iyi kullanılabildiği.
+
+563
+02:32:20,435 --> 02:32:26,335
+Ne kadar iyi kullanılabildiği nedir? Fonksiyonel midir, fonksiyonel olmayan mıdır?
+
+564
+02:32:27,635 --> 02:32:29,515
+Yani fonksiyonel gibi geliyor ona ama.
+
+565
+02:32:33,775 --> 02:32:36,876
+[öğrenci], sen söyle bakalım.
+
+566
+02:32:40,788 --> 02:32:42,108
+[öğrenci]
+
+567
+02:32:52,915 --> 02:32:54,475
+[öğrenci] yok mu?
+
+568
+02:33:01,172 --> 02:33:02,492
+Alaaddin [öğrenci].
+
+569
+02:33:04,372 --> 02:33:05,391
+Buradayım hocam.
+
+570
+02:33:06,412 --> 02:33:08,312
+Fonksiyonel gereksinim nedir?
+
+571
+02:33:09,112 --> 02:33:17,612
+Fonksiyonel gereksinim daha çok bu sistemin altyapısını ve yapısal sürecini ortaya koyan oluyordu galiba.
+
+572
+02:33:17,812 --> 02:33:23,051
+Fonksiyonel olmayan da biraz daha kullanıcının gördüğü bu fiziksel ortamlar, arayüzler.
+
+573
+02:33:23,827 --> 02:33:28,047
+Kullanıcı adaklı olması, güvenliği falan da fonksiyonel olmayan gereksinler.
+
+574
+02:33:28,407 --> 02:33:31,547
+Fonksiyonel olmayan tamam. Fonksiyoneli bir tane örnek ver.
+
+575
+02:33:32,567 --> 02:33:33,948
+Bir tane örnek.
+
+576
+02:33:36,987 --> 02:33:39,647
+Bilmiyorum hocam şu an aklıma gelmedi bir örnek.
+
+577
+02:33:40,067 --> 02:33:44,907
+Şimdi fatura örneğinin bir tane şey ver bana.
+
+578
+02:33:54,708 --> 02:33:56,227
+Ben kaçırmışım galiba.
+
+579
+02:34:24,628 --> 02:34:35,387
+Öğrenci bilgi sisteminde hangi işleri yapması gerekir? Bir tane örnek ver.
+
+580
+02:34:38,291 --> 02:34:55,951
+Öğrenci bilgisayarında fonksiyonel gereksinimler bu ders seçimimizde mesela alt seçimini gerçekleştirebilmesi. Ders seçimini gerçekleştirirken önce öğrencinin alttan aldığı ders var mı ona bakıyor. Bu bir fonksiyonel gereksinim.
+
+581
+02:34:55,951 --> 02:34:59,971
+Bu altyapıyla ilgili olan kısımlar da öğrencinin ders seçiminde fonksiyonel.
+
+582
+02:35:06,291 --> 02:35:15,072
+Bu yazılımın gerçekleştireceği işle ilişkili gereksinimler, fonksiyonel gereksinimler.
+
+583
+02:35:15,072 --> 02:35:28,752
+Ama o iş dışında, o işi yapması için gerekli altyapı özellikleri, kalite özellikleri de fonksiyonel olmayan özellikler, gereksinimler.
+
+584
+02:35:32,340 --> 02:35:33,659
+Anlaşıldı mı?
+
+585
+02:35:34,319 --> 02:35:35,099
+Anlaşıldı hocam.
+
+586
+02:35:35,680 --> 02:35:36,939
+Tamam, teşekkür ederim.
+
+587
+02:35:40,435 --> 02:35:44,675
+Evet, bugünkü dersle ilişkili sorunuz var mı?
+
+588
+02:35:49,459 --> 02:35:54,699
+Sorulara başlayınca katılımcı sayısı birden 34'e inmiş. 50'ydi az önce.
+
+589
+02:35:58,644 --> 02:36:05,463
+Hocam, bu gördüklerimiz klasik yazılım geliştirme ve agile süreçlerin her ikisinde de aynı mı?
+
+590
+02:36:05,463 --> 02:36:26,603
+Yani agile süreçleri de kullansanız bir SRS belgesi hazırlamanız gerekir. Ama bu belgeyi hazırlayacağınız zaman sürecin takibi, işte analiz bitiyor, tasarıma başlıyor şeklinde değil. Belki küçük küçük hepsinin.
+
+591
+02:36:26,644 --> 02:36:48,123
+Analiz, tasarım, gerçekleştirme, test yapacağınız birimlere bölüyorsunuz. Yani süreç farklı ama bu belge hepsinde var ve diğer belgeler de var tabii ki. Yani ecel diye hiç belgesiz çalışıyoruz, artık programcılık zanaatı yapıyoruz diye bir şey söz konusu değil.
+
+592
+02:36:51,064 --> 02:36:52,024
+Anlaşıldı mı?
+
+593
+02:36:53,172 --> 02:36:54,572
+Evet hocam, teşekkürler.
+
+594
+02:36:54,871 --> 02:36:55,092
+Tamam.
+
+595
+02:36:58,092 --> 02:37:02,371
+Evet, dersi birazdan bitireceğim. Sorunuz varsa sorabilirsiniz.
+
+596
+02:37:07,252 --> 02:37:23,772
+Önümüzdeki hafta ayın 7'si oluyor. Tam 9'da derse başlayacağım. Ve 11'e 10 kala bitirmek zorundayım. Başka bir toplantım olduğu için. Programınızı ona göre yapın.
+
+597
+02:37:27,316 --> 02:37:32,956
+9'da derste başlayacağız. 11'e 10 kala da bitireceğiz.
+
+598
+02:37:36,435 --> 02:37:37,475
+Anlaşıldı mı?
+
+599
+02:37:38,916 --> 02:37:39,655
+Tamamdır hocam.
+
+600
+02:37:40,135 --> 02:37:43,935
+Evet, bu ara yazan bir arkadaşınız var.
+
+601
+02:37:44,975 --> 02:37:45,556
+Evet, tamam.
+
+602
+02:37:46,615 --> 02:37:48,695
+Tekrar sorayım, sorunuz var mı?
+
+603
+02:37:52,819 --> 02:37:58,279
+Sorunuz var mı bu haftaki dersle ilgili veya bu dersle ilişkili başka konularda?
+
+604
+02:38:01,420 --> 02:38:02,880
+Sorusu olan var mı?
+
+605
+02:38:12,852 --> 02:38:16,191
+Evet, teşekkür ederim. İyi haftalar diliyorum.
+
+606
+02:38:17,051 --> 02:38:17,871
+İyi haftalar hocam.
+
+607
+02:38:18,531 --> 02:38:20,132
+Biz teşekkür ederiz hocam, iyi haftalar.
+
+608
+02:38:20,512 --> 02:38:21,371
+İyi haftalar.
+
+609
+02:38:21,652 --> 02:38:22,551
+İyi haftalar hocam.
+
+610
+02:38:22,551 --> 02:38:28,231
+Evet, bugün yalnız niye bu kadar az katılım oldu, niye katılmadı arkadaşlarınız, onu anlayamadım.
+
+611
+02:38:30,352 --> 02:38:31,352
+Ürktüler herhalde.
+
+612
+02:38:32,512 --> 02:38:33,112
+Neredeler?
+
+613
+02:38:34,031 --> 02:38:36,912
+Sorulardan ürktüler herhalde, ürküttünüz diyorum.
+
+614
+02:38:40,308 --> 02:38:42,067
+Evet, iyi haftalar diliyorum.

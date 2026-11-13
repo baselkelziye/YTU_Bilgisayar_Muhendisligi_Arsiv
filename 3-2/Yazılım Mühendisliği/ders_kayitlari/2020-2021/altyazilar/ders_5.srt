@@ -1,0 +1,1047 @@
+1
+00:00:11,220 --> 00:00:12,100
+Merhabalar.
+
+2
+00:00:35,380 --> 00:00:48,600
+Evet, bugün analiz aşamasında neler yapıldı? Hat bir de değerlendirmek istedik. Biz de çalışmalarını burada [öğrenci] Bey ve [öğrenci] Bey daha çok yakından takip ediyor.
+
+3
+00:00:48,600 --> 00:00:58,460
+Evet, birinizin telefonundan ses geliyor çocuklar. Herkes beni duyabiliyor mu şu anda?
+
+4
+00:01:01,555 --> 00:01:02,695
+Görüşürüz hocam.
+
+5
+00:01:02,995 --> 00:01:10,475
+Tamam, teşekkür ederim. Özür dilerim, benim bir bağlantı problemim oldu geç başladım. Bugün zaten erken bitireceğimizi söylemiştim.
+
+6
+00:01:10,995 --> 00:01:31,536
+Şimdi bu hafta nesneye yönelik analiz konusu üzerinde duracaktık. Biraz sistem analizi dersinde görmüştük. Biraz da nesneye yönelik programlama dersinde bu konuyla ilişkili çalışmalar gerçekleştirdiniz.
+
+7
+00:01:32,308 --> 00:01:54,008
+Geçen hafta biliyorsunuz gereksinim analizi üzerinde durduk. Gereksinim analiziyle ilişkili sorunuz var mı? Özellikle gereksinim spesifikasyonu üzerinde durmuştuk. Bu konuda geçen haftadan aklınıza takılan bir konu var mı?
+
+8
+00:02:04,819 --> 00:02:08,019
+Sorunuz var mı geçen haftayla ilişkili?
+
+9
+00:02:08,479 --> 00:02:08,919
+Yok hocam.
+
+10
+00:02:08,919 --> 00:02:10,919
+Tamam, teşekkür ederim.
+
+11
+00:02:12,120 --> 00:02:16,919
+Şimdi, gereksinim analizinde biliyorsunuz geçen hafta…
+
+12
+00:02:20,147 --> 00:02:29,288
+Uğraşacağımız uygulamayla ilişkili sistemin yapısı hakkında çalıştığımızı söylemiştim.
+
+13
+00:02:29,407 --> 00:02:41,907
+Ve bu yapının anlaşılması için de SRS raporunun oldukça ayrıntılı ve gerçekçi bir şekilde hazırlanması gerektiğini söylemiştim.
+
+14
+00:02:48,147 --> 00:02:55,007
+İşlevsel gereksinim ve işlevsel olmayan gereksinim konusunda bilgi verebilmek üzere.
+
+15
+00:02:55,508 --> 00:03:22,987
+Sizlere son derste yazılım kalite özelliklerinden bahsetmiştim. Yazılım kalite özellikleri işlevsel olmayan gereksinimlerin kaynağı aslında. Bu özelliklerden hangileri bizim bu uygulamamızda daha ön plana çıkıyor? Bunu irdelemeye çalışıyoruz fonksiyonel olmayan non-functional requirements'larda.
+
+16
+00:03:23,508 --> 00:03:43,508
+Şimdi analiz aşamasında bilgi toplamadan sonra modellemenin gerçekleştirilmesi gerektiğini ve burada da nesneye yönelik olarak nasıl çalışacağımızı...
+
+17
+00:03:45,651 --> 00:04:12,591
+Veya bildiklerinizin üzerinden geçeceğiz. Burada biliyorsunuz nesneye yönelik analiz için use case diagramları, use case belgeleri kullanıyoruz. Daha sonraki haftalarda da bunlarla ilişkili bir toplam örnek çalışma oluşturacağız.
+
+18
+00:04:13,075 --> 00:04:18,475
+Şimdi, nesneye yönelik analiz yaklaşımı.
+
+19
+00:04:20,468 --> 00:04:41,427
+Nasıl gerçekleşiyor? Bir defa çözümleme analiz, bir şeyi anlayabilmek için parçalara ayırmak, uygulama problem alanının anlaşılması, kullanıcı gereksinimlerinin anlaşılması, koddaki sınıflar ve nesneler ile bunlar arasındaki üst düzey etkileşimlerin belirlenmesi,
+
+20
+00:04:41,971 --> 00:04:53,291
+Ve böylece çözümleme modelinin oluşturulması nesne yapısında, analiz aşamasında gerçekleştirmemiz bunlar.
+
+21
+00:04:56,291 --> 00:04:59,891
+Şöyle büyüterek kullanayım isterseniz.
+
+22
+00:05:09,492 --> 00:05:16,652
+Mesne-yönelik analizde uygulama alanının çözümlenmesine domain analiz diyoruz.
+
+23
+00:05:17,812 --> 00:05:28,032
+Uygulama alanını önce anlayalım. Uygulama alanını anlamak ve elde edilen bilgileri analiz modeline taşımak.
+
+24
+00:05:28,032 --> 00:05:33,712
+Uygulama alanı hakkında hangi kaynaklardan bilgi edinebiliriz?
+
+25
+00:05:36,656 --> 00:05:46,656
+İşte bir ticari bir yazılım hazırlanacaksa, muhasebe, satış...
+
+26
+00:05:46,867 --> 00:06:14,867
+Analizleri gibi bir konuda. Önce o konuyla ilişkili literatür ya da daha teknik bir yazılım geliştireceğiz. O teknik alanda literatür incelemesi gerçekleştireceğiz. Yani buradaki anahtar kelimeler nelerdir? Bir nevi sözlük oluşturmak, mevcut uygulamalar, başka ekiplerin yaptığı, kullanılan uygulamaları incelemek.
+
+27
+00:06:14,867 --> 00:06:21,867
+Müşteri anketlerini incelemek, uzman tavsiyelerini incelemek ve böylece...
+
+28
+00:06:22,483 --> 00:06:35,483
+Şu andaki çalışanlarla, kullanıcılarla görüşerek de mevcut ve gelecekteki gereksinimler konusunda da bilgi sahibi olmaktır hedef.
+
+29
+00:06:35,483 --> 00:06:49,024
+Bunu biz geçen sene sistem analizi dersinde bilgi toplama yolları diye, analiz aşamasındaki bilgi toplama yolları diye daha detaylı görmüştük.
+
+30
+00:06:50,483 --> 00:07:01,843
+Aslında burada yazlıklarımızı, işte teknik literatürü oluşturmak, uygulama alanı, domeyn analizi gerçekleştirmek için.
+
+31
+00:07:03,699 --> 00:07:10,599
+O alanda geçerli olan bizim bilmediğimiz bir sözlük oluşturmamız gerekiyor.
+
+32
+00:07:12,039 --> 00:07:16,959
+Mevcut uygulamaları incelememiz gerekiyor. Yine orada da bahsetmiştik bundan.
+
+33
+00:07:33,043 --> 00:07:43,683
+Dinlememiz gerekecek. Bu arada tabii ki interview, görüşme ve yerinde inceleme yapıyoruz. Burada bunlar yok ama geçen seneden biliyoruz.
+
+34
+00:07:44,884 --> 00:08:01,003
+Interview'de olayla farklı bakış açılarıyla ilişkisi olan kişilerle görüşmeler yapıp bunlardan zaten üzerinde çalıştıkları sistemi anlama sağlamamız.
+
+35
+00:08:01,043 --> 00:08:19,863
+Ve yine bu sistemle ilişkili yerinde incelemede de var olan uygulamaları görmek için
+
+36
+00:08:21,172 --> 00:08:37,872
+Şu anda kullandıkları sistemle nasıl çalıştıkları konusunda bir yaşayıp görerek yerinde inceleme gerçekleştirmemiz gerekiyor.
+
+37
+00:08:37,872 --> 00:08:44,272
+Şimdi gereksinimlerin belirlenmesi sırasında.
+
+38
+00:08:44,755 --> 00:08:56,675
+Müşterinin programdan beklentilerini anlatan, doğal konuşma diliyle yazılmış bir belge istiyoruz.
+
+39
+00:08:56,995 --> 00:09:08,675
+Müşteriden ya biz dinleyeceğiz, notlar alacağız ya da ondan bir yaptığı işle ilişkili bir...
+
+40
+00:09:10,548 --> 00:09:14,268
+Paragraf, doğal dil yazısı isteyeceğiz.
+
+41
+00:09:15,648 --> 00:09:23,807
+Şimdi bu Next Gen Post parakende satış programı aslında şuradan geliyor.
+
+42
+00:09:24,087 --> 00:09:27,008
+Bunu şeye de yazayım, chatte de yazayım.
+
+43
+00:09:27,908 --> 00:09:29,548
+Nereden alıyoruz?
+
+44
+00:09:49,011 --> 00:09:57,131
+LARMA'nın Object Modeling kitabından, internette de bunu bulabilirsiniz.
+
+45
+00:09:58,631 --> 00:10:00,000
+Nesneye yönelik analiz...
+
+46
+00:10:00,000 --> 00:10:13,560
+ve tasarımı her iki grupta da Lerman'ın kitabından kısaltarak alıyoruz. Buradaki örnekleri daha ayrıntılı olarak da bu kitaptan bakabilirsiniz.
+
+47
+00:10:13,560 --> 00:10:18,560
+Yine bu kitaptaki örnek, bu Next Gen Post Parakende Satış Programı.
+
+48
+00:10:22,515 --> 00:10:27,796
+Yazılım ihtiyaçlarımızı, şu andaki yazılım ihtiyaçlarımızı karşılayamadığı için yenilenecek.
+
+49
+00:10:31,039 --> 00:10:46,519
+donanımı ile birlikte yenilenecek parakende satış programımız. Parakende satış programında program kasada yapılan alışveriş işlemlerine yardımcı olacak şekilde tasarlanacak.
+
+50
+00:10:56,563 --> 00:11:09,543
+Yani harici olarak çalışan bir bütçe uygulamamız var. Maliye bilgileri buraya göndereceğiz. Mal çıkış bilgilerini ise bu uygulamadan hariç çalışan envanter sistemimiz var.
+
+51
+00:11:11,635 --> 00:11:27,416
+Saklanan işlemler üzerinde daha sonra raporlamalar ve analizler yapılabilmesi isteniyor. Sistem tarafından yapılan alışverişler karşılığında müşteriye fiş verilmesi isteniyor.
+
+52
+00:11:33,395 --> 00:11:39,695
+Envanterle ilişkili, bütçeyle ilişkili işlemler gerçekleştirilmiyor.
+
+53
+00:11:40,695 --> 00:11:51,455
+Sadece yapılan satış işlemlerinde müşteriye fatura verilmesi sağlanıyor.
+
+54
+00:11:59,604 --> 00:12:23,063
+Satış işlemleri konusunda raporlamalar ve analizler yapılması hedefleniyor. Bunun haricinde işte bu ihtar bütçe sistemine girdi olarak aktarılacak. Yani bütçe sistemiyle, envanter sistemiyle olacak bizim bu hazırladığımız programın.
+
+55
+00:12:30,899 --> 00:12:32,359
+Bir dakika.
+
+56
+00:12:34,579 --> 00:12:34,839
+Evet.
+
+57
+00:12:41,172 --> 00:12:47,152
+Derse biraz geç başladık. Sınıfta bir eklenme var mı diye bakıyorum.
+
+58
+00:13:00,755 --> 00:13:27,735
+Daha sonra analizler yapılabilmelidir diyoruz. Sistem yapılan alışveriş karşılığında müşteriye fiş verecek sadece. Yapılan her satış için KDV de hesaplanacak. Ayrıca bu da belirtilecek. Şirketin birden fazla şubesi var ve tüm şubelerdeki işlemler merkezi sunucuya iletilecek. Böyle de bir yapısı var üzerinde çalıştığımız sistemin.
+
+59
+00:13:28,755 --> 00:13:34,215
+Şimdi bu doğal dille yazılmış gereksinimler.
+
+60
+00:13:34,215 --> 00:13:38,215
+Burada sistemimizi...
+
+61
+00:13:38,580 --> 00:13:47,140
+Çok fazla detaylandırmadan ama gerekli olacak, çerçeveyi çizecek şekilde anlatmış oluyoruz.
+
+62
+00:13:47,420 --> 00:13:56,940
+Eğer bu yazıyı biz kullanıcıya bırakırsak, kullanıcı kendisi için önemli olan, önemli olduğunu düşündüğü gereksiz ayrıntılara da yer verir.
+
+63
+00:14:06,580 --> 00:14:14,800
+Yapıyı, bu yazı bloğunu kendimiz hazırlamaya çalışırsak daha faydalı olur aslında.
+
+64
+00:14:16,800 --> 00:14:32,080
+Şimdi gereksinimleri belirleyelim ve daha sonra da gereksinim öyküsünden nasıl satış işlemine geçeceğiz onu görelim.
+
+65
+00:14:37,620 --> 00:14:50,559
+Şimdi biz gereksinimleri belirlerken kullanım öykülerini oluştururuz. Programın yapacağı işleri ayrıntılı adımlarla ve belli kurallara uyarak anlatan belgeler haline getiririz.
+
+66
+00:14:50,559 --> 00:15:01,299
+Kullanım öyküleri yani use case belgeleri olarak dediğim gibi biraz sistem analizi dersinde de görmüştük.
+
+67
+00:15:05,620 --> 00:15:16,620
+Ürünün çalışma ortamını belirlemektir hedef. Son kullanıcı ve yazılım ekibi arasında da bir anlaşma zemini belirlemektir.
+
+68
+00:15:16,620 --> 00:15:21,220
+Zaten biz geçen hafta da gereksinim analizi belgesi.
+
+69
+00:15:22,803 --> 00:15:38,983
+Hiçbir belgeniz yoksa bile uygulamada bir gereksinim analizi raporunuz olmalıdır. Çünkü gereksinim analizi raporu, SRS belgesi bizim kullanıcıyla, müşteriyle aramızda sözleşme niteliğini taşır demiştim.
+
+70
+00:15:40,628 --> 00:15:59,548
+Son kullanıcı ve yazılım ekibi arasında bir anlaşma zemini oluşturmaktır gereksinimde hedef. Son kullanıcı ve sistemin birbirleriyle nasıl etkileşimde bulunacağını açık ve belirsizlikten uzak olarak tanımlamak gerekir.
+
+71
+00:15:59,548 --> 00:16:06,427
+Yani mümkün olduğunca net tanımlamalar gerçekleştirmemiz gerekir.
+
+72
+00:16:10,580 --> 00:16:19,919
+Ve aynı zamanda doğrulama testleri için bir zemin oluşturmak gerekir.
+
+73
+00:16:19,919 --> 00:16:33,860
+Yani validation, kullanıcı doğrulaması gerçekleştirdiğimizde bu rapora bakarak adım adım gidebilmemiz gerekiyor.
+
+74
+00:16:38,227 --> 00:16:41,987
+Kullanıcı testi gerçekleştirebilmesi gerekiyor.
+
+75
+00:16:43,727 --> 00:16:53,148
+Kullanım öyküsünün bölümleri, giriş bölümü, sistemin neyi, hangi koşullar ve sınırlar içerisinde yapması gerektiğini anlatır.
+
+76
+00:16:53,148 --> 00:16:59,967
+Ana senaryo, ana başarılı akış, her şey yol.
+
+77
+00:17:02,292 --> 00:17:23,112
+Yürütülecek eylemler nelerdir? Zaman sırasıyla da uygulamada gerçekleşecek adımlar belirlenir. Alternatif senaryolarda bir aksilik olması halinde yapılacak işlemler belirtilir.
+
+78
+00:17:28,372 --> 00:17:43,211
+Giriş bölümünde neyi hangi koşullar altında, hangi sınırlar içinde yapması gerektiği de, işte bizim kullanım öykümüzün adı, aktörü kimdir, birinci laktörü kimdir, diğer ilgilileri kimlerdir.
+
+79
+00:17:43,211 --> 00:17:45,211
+Bunları...
+
+80
+00:17:45,748 --> 00:17:58,668
+Bu sistemin çalışmaya başlaması için ön koşul nedir? Sistemin çalışmasını bitirmesi için son koşul nedir? Bunların belirtilmesi gerekecek.
+
+81
+00:18:01,332 --> 00:18:09,172
+Bakalım bir tane kullanıcı öyküsü örneği oluşturalım.
+
+82
+00:18:09,872 --> 00:18:16,652
+Kullanıcı öyküsü bu az önce belirttiğim satış NextGenPost'daki satış işlemi.
+
+83
+00:18:17,012 --> 00:18:19,432
+Birinci laktörümüz burada kasiyer.
+
+84
+00:18:25,460 --> 00:18:53,000
+Birinci aktörümüz. Hatırlarsak yine bu use case belgesinin yapısından veya nesne kavramında bir işlemler var, bir de aktörler var. Aktörleri use case diagramında çöp adamlarla çiziyoruz. Her zaman aktörün canlı olması gerekmiyor. İlgililer, aktörler dediğimizde.
+
+85
+00:18:53,460 --> 00:19:04,259
+Burada diğer ilgililer, birinci aktörün dışındakiler canlı da olabilir.
+
+86
+00:19:10,387 --> 00:19:18,367
+Sensör olabilir veya kasadaki işlemlerin gerçekleştirildiği yer olabilir.
+
+87
+00:19:18,907 --> 00:19:23,607
+Şimdi burada birinci laktörümüz kasiyer. İlgililer ve ilgi alanları neler?
+
+88
+00:19:26,228 --> 00:19:50,628
+Birinci ilgili, birinci laktör zaten. Ne istiyor? Doğru ve hızlı giriş istiyor. Kasa açığı maaşından kesiliyor. Dolayısıyla ödeme hataları istemiyor. Programın bunları sağlaması onun için çok önemli. Bir, şu anda yaptığından daha hızlı çalışması. İkincisi de hiçbir ödeme hatasının olmaması.
+
+89
+00:19:51,220 --> 00:20:01,419
+Satıcı ne ister? Şimdi kasiyer ürünü geçiriyor ve
+
+90
+00:20:03,604 --> 00:20:08,423
+Kasada ürünün geçişini gerçekleştiriyor, fatura kesimini idare ediyor.
+
+91
+00:20:09,624 --> 00:20:21,384
+Satıcı markette veya ne mağazasıysa burada müşteriye satış yapan, o da komisyonlarının günlüğü.
+
+92
+00:20:21,683 --> 00:20:38,064
+Doğru güncellenmesini istiyor. Çünkü kasaya gittiğinde hangi satıcının işlem yaptığı kodu var. Yani bu uygulamada da var. Her mağazacılıkta olmaz ama bu uygulamada var. Müşteri ne istiyor? Bir de müşteri var burada.
+
+93
+00:20:38,624 --> 00:20:57,423
+Birinci aktör olmayan ama olayla ilgili olan kişi. En az çabayla hızlı hizmet istiyor. Ürün iadesi yapabilirim diye. Bu fişinin doğru hazırlanmasını ve hızlı hazırlanmasını istiyor.
+
+94
+00:20:57,791 --> 00:21:16,412
+Burada ön koşulumuz nedir? Önce kasiyer kasayı açtığında kimlik doğrulaması gerçekleştiriliyor. Son koşul nedir? Yani bu uygulamadaki işin bittiğini ne belirtir? Ödeme tahsil edilir, satış kaydedilir, fiş yazılır.
+
+95
+00:21:29,875 --> 00:21:46,796
+Satış da ilgili yerlere aktarılır. İlgili yerler neydi? Az önce görmüştük. Şurada mali bilgileri bütçe sistemine, mal çıkış bilgileri envanter sistemine aktarabilmemiz.
+
+96
+00:21:54,900 --> 00:22:09,299
+Nelerdir? Burada geçen hafta gereksinimlerde de, işte bunlar işlemsel gereksinimlerimiz. Bu gereksinimlerde söylemiştik.
+
+97
+00:22:16,884 --> 00:22:24,144
+İşleme bakalım. Bunlar aynı zamanda işlemsel gereksinimlerimiz, fonksiyonel requirementlar.
+
+98
+00:22:25,299 --> 00:22:40,359
+Müşteri kasaya alacağı ürünlerle gelir. Kasiyer yeni bir satış işlemi başlatır. Bunların her biri bir işlem. Yani birleştirmiyoruz çok ki sonra kontrol ederken bunların her biri doğru çalışıyor mu diye bakalım.
+
+99
+00:22:40,359 --> 00:22:50,059
+Kasiyer ürünün bar kodunu girer veya okutur. Sistem bir satış kanalı maddesi oluşturur. Bir satış oluşturur.
+
+100
+00:22:50,352 --> 00:23:00,192
+Bu maddede ürünün tanımı, fiyatı, toplam bedel aynı maldan birden fazla da alınmış olabilir, yer alır.
+
+101
+00:23:02,192 --> 00:23:08,712
+Kasiyer üçüncü ve dördüncü işlemleri bütün ürünler için tekrarlar.
+
+102
+00:23:14,675 --> 00:23:19,035
+Toplam bedeli vergi iadesiyle birlikte hesaplar.
+
+103
+00:23:20,855 --> 00:23:23,175
+KDV'siyle beraber veya hatta.
+
+104
+00:23:23,815 --> 00:23:27,255
+Kasiyer, müşteriye toplamı bildirir ve ödeme ister.
+
+105
+00:23:27,875 --> 00:23:32,415
+Müşteri ödemeyi yapar, sistem ödemeyi tahsil eder.
+
+106
+00:23:33,715 --> 00:23:56,835
+Yani 8'de 2 tane işlem gibi görünüyor ama ödeme yapıldığı anda sistem tahsil ediyor. Sistem tamamlanan işlemin kaydını tutmayı gerçekleştirir. Harici envanter sistemine ve mali sisteme de gerekli bilgiyi gönderir. Çünkü müşteriden parayı aldı.
+
+107
+00:23:57,556 --> 00:24:01,516
+Artık bu kaydı tamamlayabilir.
+
+108
+00:24:04,796 --> 00:24:15,635
+Envanter sistemine, maliyet sisteme bilgileri gönderir, fişi verir, müşteri de işi bitmiş olarak ayrılır.
+
+109
+00:24:25,203 --> 00:24:33,203
+Görmüş olduk ve burada bir use case belgesi.
+
+110
+00:24:35,203 --> 00:24:41,703
+Şimdi bu işe devam edelim.
+
+111
+00:24:44,564 --> 00:24:51,644
+Şimdi bu düz gittiğinde gördüğümüz işlemler, yani bizim use case belgemiz daha tamamlanmadı.
+
+112
+00:24:51,644 --> 00:25:03,304
+Use case belgemizin tamamlanması için burada alternatif öyküleri de görmemiz gerekiyor.
+
+113
+00:25:05,023 --> 00:25:11,363
+Kullanım öyküsü, use case belgesine devam ediyoruz. Satış işlemi use case belgesi.
+
+114
+00:25:11,363 --> 00:25:27,363
+Burada satış işleminde alternatif öykü var mı? Yani bu 11 tane işlem hep düz gidecek değil. Eğer arada bir şey varsa...
+
+115
+00:25:28,544 --> 00:25:32,084
+3 ve 4 hep tekrar ediliyor demiştik.
+
+116
+00:25:35,743 --> 00:25:39,683
+Birincisi, geçersiz kod.
+
+117
+00:25:40,435 --> 00:25:54,235
+Barkot okuyamadı, sistem uyarı mesajı verdi ve kayıt girişini reddetti. Bu durumda işte burada Barkot'u okumak için tekrarlayacak bu aşamayı.
+
+118
+00:26:01,460 --> 00:26:25,240
+Herhangi bir anda alışverişten çıkarmak ister. İşte bu durumda da farklı bir işlem yapacak. O zaman kasiyer satıştan çıkarmak üzere ürünün bar kodunu okuyacak ve sisteme güncel toplayacak.
+
+119
+00:26:28,627 --> 00:26:42,827
+Tekrarlar ve şurada yazdığımız ana öyküdeki her şeyin, mesela kasiyer müşteriye toplamı bildirdi.
+
+120
+00:26:43,316 --> 00:27:00,556
+Ödeme istedi. Müşteri baktı, cebimde o kadar para yok. Ben bazı malları çıkarmak istiyorum. İşte burada 7A olacak ve tekrar başa dönüp buradaki işlemleri bir kısmını tekrar edecek.
+
+121
+00:27:14,516 --> 00:27:36,036
+Kullanıcı gereksinimleri belgesinden ve kullanım senaryolarından bu uygulamada hangi sınıflar var? Bu sınıflar hakkında bilgi alabiliyoruz. Hangi sınıflar var? Aday sınıflar elde edilir.
+
+122
+00:27:38,132 --> 00:27:45,372
+Saklanan bilgi nedir? Sistemi çalışması süresince her bir varlığın durumu saklanmalıdır.
+
+123
+00:27:49,172 --> 00:28:09,172
+Hangi hizmetler var? Bu varlığın hizmetlerine ihtiyaç duyan başka varlıklar olabilir. Problemin çözümüyle ilişkili bilgi üreten ve problemin çözümü için bilgi tüketen varlıklar. Bunlar hakkında...
+
+124
+00:28:10,420 --> 00:28:22,300
+Obje sınıf tanımları yapılmalıdır. Böylece sistemin tanımı gerçekleştirilmiş olur.
+
+125
+00:28:23,680 --> 00:28:32,240
+Sınıfları belirlerken sıfat ve eylemler taranır, sorumluluklar belirlenir.
+
+126
+00:28:37,332 --> 00:28:53,332
+CRC kartları, class, responsibility, ilişkiler, yani sınıflar arasında sorumluluk ilişkileri, sorumlulukları...
+
+127
+00:28:53,491 --> 00:29:12,231
+Dağıtma işini gerçekleştirmemiz gerekiyor. Bir yerde yoğunlaşmaması gerekiyor. Sorumlulukların genelden özele doğru tanımlanması gerekiyor. Kalıtım hiyerarşisinde genelden özele doğru gidilmesi gerekiyor.
+
+128
+00:29:19,763 --> 00:29:26,263
+Bu kalıtımdan, encapsulation'dan faydalanmamız gerekiyor.
+
+129
+00:29:26,943 --> 00:29:34,383
+Encapsulation, bir bilgiyle ilgili davranışların o bilgiyle aynı sınıfta yer alması.
+
+130
+00:29:34,383 --> 00:29:45,523
+Encapsulation, sorumluluklar da genelden özele doğru gidecek dediğimizde, önce o sınıfın temel özellikleri,
+
+131
+00:29:46,324 --> 00:29:59,084
+Ve o sınıfın temel özelliklerinden aşağıdaki o sınıfa ait bütün nesnelerin hangi genel özellikleri aldığı belirlenir.
+
+132
+00:30:01,084 --> 00:30:07,804
+Evet, bu CRC kartlarını agile yaklaşımda özellikle XP'de görmüştük.
+
+133
+00:30:11,988 --> 00:30:27,888
+Sınıfların sorumlulukları ve işbirlikleri nelerdir? Bunları belirten kartlar vardı. O zaman da bu kartların tanımını yapmıştık.
+
+134
+00:30:30,451 --> 00:30:39,612
+Demek ki gereksinimleri belirleyip kullanım öykülerini tamamladığımızda artık bu uygulamada
+
+135
+00:30:40,180 --> 00:31:04,299
+Kullanıcı gereksinimleri belgesinden ve kullanım senaryolarından yola çıkarak bu uygulamada hangi sınıflar var, hangi sınıfların özellikleri nelerdir, hangi sınıflar diğer sınıflarla iş birliği içerisindedir. Bunları belirleyebiliyoruz.
+
+136
+00:31:10,099 --> 00:31:25,440
+Sınıfların belirlenmesi sırasında üyeleri belirliyoruz. Hangi eylemler gerçekleşecek bunları belirlememiz gerekiyor.
+
+137
+00:31:28,051 --> 00:31:42,851
+Kullanım senaryosu, kullanım senaryo belgesi ve kullanım senaryo diagramları. Burada aktörler var. Bunları çöp adamlarla gösteriyoruz.
+
+138
+00:31:54,516 --> 00:32:01,915
+Başka bir sistemse bunu da bir kareyle gösterebiliyoruz.
+
+139
+00:32:01,915 --> 00:32:16,756
+Use case'ler birer eylem. Bu aktörler hangi eylemleri gerçekleştiriyorlar? Bunları da elipsle gösteriyoruz.
+
+140
+00:32:21,779 --> 00:32:23,600
+Bu konuda sorunuz var mı?
+
+141
+00:32:28,115 --> 00:32:31,115
+Burada iki tane çöp adam olması, iki tane...
+
+142
+00:32:32,211 --> 00:32:35,231
+Ayrı işlem olduğunu mu gösteriyor yoksa?
+
+143
+00:32:35,312 --> 00:32:43,092
+Hayır hayır. Şimdi işlemimiz use case senaryomuz. Gerçekleşen işlemi anlatıyor.
+
+144
+00:32:43,092 --> 00:32:56,072
+Ve burada iki tane aktör var. Ama bir tanesini birinci aktör olarak belirliyoruz. Yani ikisi de birinci aktör değil.
+
+145
+00:33:00,211 --> 00:33:15,352
+Bu konusu anlatırken, bu olayla birinci aktörümüz kasiyer dedik, uygulamada satış fişini kesen kişi. Ama iki tane daha ilgili var, bunları ilgili diye tanımladık.
+
+146
+00:33:16,147 --> 00:33:34,567
+Bunlara aktör de diyebiliriz ama birinci aktör değil. Diğer aktörler nelerdir? İşte müşteri ve bir de müşteriyle mağazada ilgilenmiş olan ve komisyonunu bekleyen satıcı var. Bunlar da aktörler.
+
+147
+00:33:34,567 --> 00:33:44,067
+Burada iki tane çizmişiz. Yani aynı şeyin NextGenPost'un şeyi değil bu. Genel olarak nasıl bir yapı?
+
+148
+00:33:44,147 --> 00:33:57,427
+kullanım senaryosunda ve genelleştirilmiş halinde. Bunu görüyoruz. Sistemi de bütünüyle bir kare içine almış. O gerekli de olmayabilir.
+
+149
+00:34:01,407 --> 00:34:15,688
+Eylemler, yani bütün bir sistemi bir dörtgen içine alabiliriz. Bu bütün sistem içinde mesela temel olarak dört tane alt senaryo vardır.
+
+150
+00:34:16,467 --> 00:34:34,407
+Her bir use case, bu sistem yapısını düşünün, bu sistem yapısını büyütüp bu aktörlerin ilişkili olduğu 3 tane, 4 tane temel ana senaryomuz olabilir.
+
+151
+00:34:34,407 --> 00:34:42,407
+Burada sadece uygulamayı tek bir use case ile, nasıl veri akış diagramlarında da böyle...
+
+152
+00:34:43,827 --> 00:35:09,367
+Daha özetten, daha ayrıntıya doğru gidiyoruz. Use case'de de böyle bir yaklaşım var. Önce bütün uygulamanın bir sistem içinde temel olarak işte kaç tane alt senaryosu var bunu gösteririz. Hangi aktörlerle ilişkili bunu gösteririz. Genel use case diagramında, temel elemanlarda.
+
+153
+00:35:10,708 --> 00:35:29,288
+Ama o sistem içinde iki temel use case de olabilir, dört temel use case de olabilir. Ondan sonra bu her bir use case'i ayrı ayrı diagramlarda da daha açıklamalı olarak çizebiliriz.
+
+154
+00:35:37,652 --> 00:35:41,992
+Bu anlaşıldı mı?
+
+155
+00:35:42,891 --> 00:35:44,612
+Gayet açık oldu hocam, teşekkür ederim.
+
+156
+00:35:45,012 --> 00:35:46,231
+Tamam, teşekkürler.
+
+157
+00:35:57,780 --> 00:36:11,199
+Az önce bahsettiğim şuydu, şimdi bir bankada bakım yapan kişi, banka müşterisi ve bankanın şeyi,
+
+158
+00:36:16,148 --> 00:36:37,407
+Banka memurları, ATM'de yapılan işi bir makineye para doldurma falan işlemini yapan bakım personeli var. Bir de bankanın ana merkezinde bu işleri idare eden kişi var. Bir de banka müşterisi.
+
+159
+00:36:39,188 --> 00:36:53,268
+Sistemi gösteriyor demiştik ya az önce sözlü olarak bahsettiğimde. Bu da ATM sistemi. Yani siz para çektiğinizde neler oluyor? Hangi senaryolar yürüyor?
+
+160
+00:36:57,972 --> 00:37:07,272
+Hangi senaryolar yürüyor? İşte bir nakit para çekimi, fon transferi ve başka işlemler.
+
+161
+00:37:07,272 --> 00:37:17,872
+Bu işlemi bir şeyler yapıyor. O tuşa bastıkça bu taraftaki banka memuru da kontrol ediyor.
+
+162
+00:37:21,907 --> 00:37:41,008
+Bakım yapan kişisi de şube içinde ya da şube dışında arada gelip bakan personel de para bittikçe makineye para dolduruyor. Bu bir ATM makinesinin nasıl çalıştığını belirten bir use case diagramı.
+
+163
+00:37:48,083 --> 00:38:09,903
+Şurada da use case diagramının birincisi dedik. Bu genel hali. Bundan sonra buradaki işlemler ne kadar detaylı oluyor, hangisi nasıl çalışıyor, bunun bir detaylısını daha hazırlayabiliriz.
+
+164
+00:38:11,219 --> 00:38:32,059
+Şimdi burada hedef neydi? Buraya kadar olan bölümde kullanım senaryolarını, kullanım senaryo belgesi ve kullanım senaryo diagramları olarak gereksinim analizinde
+
+165
+00:38:32,527 --> 00:38:42,667
+İşlemsel fonksiyonları, işlemsel fonksiyonel gereksinimleri,
+
+166
+00:38:43,056 --> 00:39:01,755
+Daha iyi gösterebilmemiz, nesneye yönelik kavramlarla. Tabii ki nesneye yönelik kavramlarda bir de veri tarafı var işin. Biz hangi sınıfları kullanıyoruz? Bu sınıflar arasındaki ilişkiler nelerdir?
+
+167
+00:39:06,675 --> 00:39:21,135
+Şimdi bu yazılım mühendisliği dersinde biz bir nesneye yönelik olarak analiz ve tasarımı göreceğiz.
+
+168
+00:39:21,896 --> 00:39:30,175
+Geçen sene daha klasik yaklaşımı ve nesneye yönelik yaklaşımı her ikisinde de görmüştük.
+
+169
+00:39:33,108 --> 00:39:58,188
+Şey farkı var, veri bir yerde tutuluyor, işlemler başka bir yerde yapılıyor. İşlemleri gerçekleştirirken veriyi kullanmak istediğimizde bu veriyi bizim o işlemlere aktarmamız gerekiyor.
+
+170
+00:39:58,188 --> 00:40:00,000
+Yapısal yaklaşım.
+
+171
+00:40:00,000 --> 00:40:10,891
+Bu şekilde çalışıyor. Nesneye yönelik yaklaşımda ise biz bir sınıf tanımladığımız zaman bu sınıfı...
+
+172
+00:40:10,931 --> 00:40:34,192
+Özelliklerini belirtiyoruz. Yani yapısal yaklaşımdaki varlıklarda olduğu gibi. Özelliklerini belirtiyoruz. Ve bu veri üzerinde, bu nesne üzerinde hangi işlemler gerçekleşebilir? Bunları da sayıyoruz.
+
+173
+00:40:38,931 --> 00:40:46,652
+Hem bu nesnenin özellikleri var hem de bu nesneye hangi işlemler uygulanabilir bunları tanımlıyoruz.
+
+174
+00:40:46,652 --> 00:41:01,311
+Bu işlemler belirtiliyor sınıf tanımında ve bu sınıf tanımından da yola çıkılarak.
+
+175
+00:41:01,907 --> 00:41:08,708
+Hangi metotlarla bunları çağrıştıracağız? Bunu da belirlemiş oluyoruz.
+
+176
+00:41:10,367 --> 00:41:16,427
+Bununla ilişkili başka bir slide daha kullanacağım.
+
+177
+00:41:16,427 --> 00:41:22,927
+Şimdi bunu değiştirmek için bir beş dakika sadece ara veriyorum.
+
+178
+00:41:25,184 --> 00:41:29,543
+Bu slide'ı değiştirip tekrar sizinle paylaşacağım ve devam edeceğiz.
+
+179
+00:41:31,003 --> 00:41:32,463
+Buraya kadar sorunuz var mı?
+
+180
+00:41:35,443 --> 00:41:36,324
+Yok hocam, sağ olun.
+
+181
+00:41:36,324 --> 00:41:40,083
+Bu arada şeyi bildireyim.
+
+182
+00:41:41,804 --> 00:41:51,403
+Size ben önümüzdeki hafta proje konularınızı vereceğim.
+
+183
+00:41:51,923 --> 00:42:06,304
+Ve proje konularınızı seçip çalışmaya başlayacaksınız. Bu hafta değil, önümüzdeki hafta bildireceğim bunu.
+
+184
+00:48:49,204 --> 00:48:59,744
+Evet, sesi açmamışım. Tekrarlıyorum. Şu anda ekran paylaşımımı görebiliyor musunuz?
+
+185
+00:49:05,139 --> 00:49:07,099
+Varlıkların karakteristikleri.
+
+186
+00:49:08,359 --> 00:49:08,920
+Evet hocam.
+
+187
+00:49:09,339 --> 00:49:10,539
+Tamam, teşekkür ederim.
+
+188
+00:49:11,679 --> 00:49:18,119
+Şimdi burada geleneksel yapıda bizim bir varlık tanımımız var.
+
+189
+00:49:19,839 --> 00:49:23,679
+Varlıklar arasında ilişkiler var, özellikler var.
+
+190
+00:49:25,679 --> 00:49:29,059
+Veritabanı dersinde de gördüğünüz gibi.
+
+191
+00:49:31,507 --> 00:49:43,927
+Varlıkların farklı varlıklar arasındaki ilişkileri çıkarabiliyoruz.
+
+192
+00:49:44,447 --> 00:49:54,847
+Ve mesela müşteriler dediğimizde müşterilerin hepsinin hangi özellikleri olduğunu, müşteri varlığının özelliklerini görebiliyoruz.
+
+193
+00:49:55,987 --> 00:50:10,387
+Bir veri varlığında, varlık ilişki diagramında gösterdiğimiz özellikleri üzerinden nasıl ilişkilendirdiğini görebiliyoruz.
+
+194
+00:50:10,947 --> 00:50:15,788
+Veri varlıklarını bu şekilde tanımlıyoruz ve modelliyoruz.
+
+195
+00:50:22,835 --> 00:50:38,775
+Sistemde bilgi depolar hem davranışlarını hem özelliklerini saklarlar. Bir sınıf bir varlık tipidir. Bunun özel hali nesnedir.
+
+196
+00:50:38,775 --> 00:50:47,576
+Ve bu nesnelere gerçekleştirilen davranışlarda metotlarla tanımlanır.
+
+197
+00:50:48,083 --> 00:51:03,083
+Burada şu resmi tanımlamaya çalıştım aslında az önce. Şu yukarıdaki resim süreçlerle yani işlemlerle…
+
+198
+00:51:03,923 --> 00:51:16,923
+Veri varlığı arasında ilişki var ama ayrı yerlerdeler. Bir veri tabanındaki veri varlığına…
+
+199
+00:51:17,619 --> 00:51:28,639
+İşlemler uygulanır, uygulamalardaki işlem 1, işlem 2, işlem 3 girdiler ve çıktılar olur. Bu veri varlığını da kullanır.
+
+200
+00:51:28,639 --> 00:51:43,219
+Ama nesneler veriyi enkapsüle eder ve bu nesnenin kullanacağı metotlarla da bu veri işlenir.
+
+201
+00:51:45,619 --> 00:52:05,440
+Nesne tanımında verinin nesneye ait olan veri vardır. Özelliklerini tanımlarız. Daha sonra altında da bu veriyi işleyen metotlar hangileridir? Bunları tanımlarız.
+
+202
+00:52:12,831 --> 00:52:27,271
+başlatılır. Mesajlar bu şeyin başlaması için etki eder. Bu varlıklar ve nesneler arasındaki farklılığı
+
+203
+00:52:27,603 --> 00:52:49,663
+Geçen sene kullandığınız sistem analizi kitabından özellikle hatırlatmak istedim. Bunları biliyorsunuz, işte ER diagramlarının nasıl kullandığımızı, varlıklar arasındaki ilişkiyi, nesneler arasında da biz sınıf diagramlarında benzer ilişkileri kuruyoruz.
+
+204
+00:52:51,219 --> 00:53:19,199
+Bunlar hep klasik IR diagramlarında kullandıklarımız. Sınıf diagramlarında nasıl yapıyoruz? Madem ki biz use case belgelerini gördük, use case diagramlarını gördük ve bu use case belgesi use case diagramından sonra analiz aşamasında genel bir sınıf diagramına da aktarım yapmamız gerekiyor.
+
+205
+00:53:19,219 --> 00:53:33,419
+O analiz sırasında. Yalnız analizde hazırladığımız sınıf diagramında biz bu metotlara çok girmiyoruz. Tasarım sırasında o metotları daha detaylandırıyoruz.
+
+206
+00:53:33,419 --> 00:53:44,199
+Sınıflar, nesneler ve veri varlıkları arasındaki farklılıklar.
+
+207
+00:53:44,543 --> 00:53:47,503
+Ve daha fazla şey içerirler.
+
+208
+00:53:48,179 --> 00:54:02,480
+Genelleştirme ve özelleştirme hiyerarşileri vardır bir sınıf diagramında. Genel süper sınıflar vardır ve özelleştirilmiş alt sınıflar vardır.
+
+209
+00:54:02,480 --> 00:54:16,179
+Bu alt sınıflara doğru süper sınıfların özellikleri alt sınıflara doğru kalıtımla geçer.
+
+210
+00:54:16,179 --> 00:54:40,519
+Agregation olabilir. Yani sınıflar üzerinde genelleştirme olur, aggregation olur. Bir parça, sınıflar parçalarıyla da ilişkilidir ve parçalarıyla da tanımlanırlar.
+
+211
+00:54:43,679 --> 00:54:45,319
+UML...
+
+212
+00:54:45,460 --> 00:55:00,239
+Şuna bakalım önce. Genelleştirme ve özelleştirme. Yani bunu birçoğunuz biliyorsunuzdur ama burada bir daha analiz aşamasında bunları seçeceğimizi bildirerek gösteriyorum.
+
+213
+00:55:13,460 --> 00:55:30,639
+Mesela bir sedan dediğimizde arabanın bütün özelliklerini kalıtımla alacak. Böyle kiyerarşi ve özelleştirme arasında bir gidiş geliş var.
+
+214
+00:55:34,996 --> 00:55:56,675
+Aggregation, bir bütünün parçalarıyla ilişkisi nedir? Burada bir bilgisayar elemanları arasında ilişki var. Buradaki ilişkiler de tanımlanabiliyor.
+
+215
+00:55:58,547 --> 00:56:18,027
+Sınıf sembolü, sınıf diagramı, bunu da yine biliyorsunuzdur. Müşteri, müşterinin özellikleri ve müşteriye uygulanacak işlemler. Bunları görebiliyoruz.
+
+216
+00:56:31,411 --> 00:56:43,251
+Banka muhasebe sistemi sınıf diagramına baktığımızda, şimdi yavaş yavaş şurada sınıfı gördük, sınıf yapısı tek başına.
+
+217
+00:56:45,760 --> 00:57:11,260
+Hem genelleştirme, özelleştirme var kalıtı mı gösteren, hem sınıflar arasındaki ilişkiler var. Bu bir analiz sırasındaki sınıf diagramı. Hesap, müşteri hiç hesabı olmayabilir. Birden fazla hesabı da olabilir. 0.0.Yıldız sınıf diagramında.
+
+218
+00:57:11,956 --> 00:57:27,996
+Bu sınıflar arasındaki ilişkiyi, yani ER diagramının bu birebirli, bireçoklu ilişkilerini burada farklı bir gösterişle görebiliyoruz sınıflar arası ilişkilendirmeyi yapmak için.
+
+219
+00:57:29,996 --> 00:57:37,275
+Hesap, farklı genelleştirme altında bir hesap diyoruz üst sınıf.
+
+220
+00:57:39,027 --> 00:57:49,788
+Farklı hesaplar olabilir. Farklı hesap türlerine de farklı işlemler uygulanabilir.
+
+221
+00:57:49,788 --> 00:58:01,507
+Şimdi buradaki özellikler nelerdir? Account'un bütün özelliklerine sahip, ayrıca bir de interest rate diye başka bir özelliğe sahip.
+
+222
+00:58:06,291 --> 00:58:30,092
+Sınıf diagramı daha görelim. Bu sınıf diagramında da derse kayıt sınıf diagramı, sınıflar arasındaki ilişkileri biraz daha ayrıntılı görelim. Bizim konumuzla da ilişkili, yani bizim içinde bulunduğumuz konularla dersler, seçilen dersler.
+
+223
+00:58:30,483 --> 00:58:50,143
+Derse kayıt ve öğrenci. Şimdi öğrenci sınıfı şurada, öğrenci sınıfı, öğrenci özellikleri ve öğrencinin gerçekleştirecek işlemler burada.
+
+224
+00:58:54,996 --> 00:59:01,576
+Bir öğrenci bir dersi hiç seçmemiş, bir dersin şubesini seçmemiş olabilir.
+
+225
+00:59:05,619 --> 00:59:10,859
+Çok da fazla da seçmiş, birden fazla da seçmiş olabilir. 0.0.Yıldız.
+
+226
+00:59:11,299 --> 00:59:21,440
+Aynı şekilde bir dersin şubesini de hiçbir öğrenci seçmemiş olabilir ya da çok sayıda öğrenci seçmiş olabilir.
+
+227
+00:59:24,619 --> 00:59:30,500
+Bir dersin hiç şubesi olmayabilir.
+
+228
+00:59:31,219 --> 00:59:51,460
+Birden fazla da olabilir. Derse kayıt sırasında da öğrenci ders arasındaki ilişkiyi not özelliğiyle ve notun girilişi özelliği işlemiyle tanımlayabiliriz.
+
+229
+00:59:58,643 --> 01:00:09,643
+Analizini gördükten sonra, yeniliksizlim raporu, spesifikasyonu nasıl hazırlanır gördükten sonra, bu haftada nesneye yönelik analizdeki...
+
+230
+01:00:10,483 --> 01:00:38,483
+Birinci kademeyi gördük önce. Birinci kademe, gereksinim analizi sırasında use case belgelerinin oluşturulması. Use case belgesini oluşturmadan önce yaptığımız iş neydi? Önce kullanıcıdan konuşma dilinde bir hikaye almaktı. Bu hikayeyi doğru almak için biz yönlendirmek durumundayız.
+
+231
+01:00:38,483 --> 01:00:44,483
+Daha sonra bu kullanıcı hikayesini...
+
+232
+01:00:46,291 --> 01:01:04,132
+Belgeyi oluşturduk ve diagramı çizdik. Bu sizin tercihiniz. İkisini aynı anda yapmaya çalışabilirsiniz. Önce diagramla başlayayım, bir genel oluşturayım, ondan sonra detayları yazayım dersiniz.
+
+233
+01:01:14,291 --> 01:01:24,112
+Belgeyi ve diagramı. Buradan da sınıfları belirleyip sınıf diagramını oluşturmanız gerekiyor analiz aşamasında.
+
+234
+01:01:24,112 --> 01:01:40,891
+Sınıf diagramında şöyle bir şey var. Analiz aşamasında şuradaki sınıf tanımındaki bu işlemlere çok girmeden hangi sınıflar, hangi özellikleri var, aralarında nasıl bir ilişki var, ilk genel bir yaklaşımla şöyle bir kabaca çizmek.
+
+235
+01:01:42,291 --> 01:01:58,871
+Bu detayları daha iyileştirerek ve araya tasarım kalıplarını da ekleyerek, design patternları, tasarımımızı daha iyileştirmek tasarım sırasında yapılacak işlemlerde.
+
+236
+01:01:59,871 --> 01:02:02,271
+Evet, sorunuz var mı bugünle ilişkili?
+
+237
+01:02:05,271 --> 01:02:06,411
+Anlaşıldı mı?
+
+238
+01:02:08,771 --> 01:02:09,512
+Anlaşıldı.
+
+239
+01:02:10,996 --> 01:02:16,596
+Başka arkadaşlarınızdan sorusu olan var mı?
+
+240
+01:02:23,764 --> 01:02:26,224
+Sorusu olan var mı? Anlaşıldı mı?
+
+241
+01:02:29,143 --> 01:02:33,744
+Bu arada yine siz gruplarınızı oluşturmaya çalışın.
+
+242
+01:02:35,543 --> 01:02:38,583
+Dört ya da beş kişilik gruplar halinde.
+
+243
+01:02:38,583 --> 01:02:44,284
+Ve önümüzdeki hafta proje konularınızı vereceğiz.
+
+244
+01:02:44,543 --> 01:02:47,683
+Ondan sonraki bir hafta içinde de seçiminizi yapacaksınız.
+
+245
+01:02:50,643 --> 01:02:51,763
+Sorunuz var mı?
+
+246
+01:02:53,063 --> 01:02:57,063
+Hocam, Larman kitabının adı neydi? Applying UML patterns diye bir şey var.
+
+247
+01:02:57,403 --> 01:02:57,844
+Efendim?
+
+248
+01:02:59,243 --> 01:03:02,203
+Larman'ın kitabı söylediğiniz neydi?
+
+249
+01:03:03,423 --> 01:03:05,023
+Okuduğunu bir daha söyler misin?
+
+250
+01:03:07,183 --> 01:03:09,703
+Applying UML patterns diye bir şey.
+
+251
+01:03:09,703 --> 01:03:10,864
+Evet, evet.
+
+252
+01:03:11,003 --> 01:03:11,223
+O mu?
+
+253
+01:03:11,643 --> 01:03:12,403
+Evet, evet.
+
+254
+01:03:12,820 --> 01:03:38,380
+Yani bütün UML diagramları. Hatta onun bir yerinde de şey de yazar, objekt modelin filan da yazar. Eski baskısında mı yazıyordu? Ama hem design patternların kullanılması hem de onun birincisi de galiba şey, objekt modelin de olabilir. Bir de öyle bir araştır bakalım.
+
+255
+01:03:39,603 --> 01:03:45,264
+Ama esas UML diagramlarının çizimi ve tasarım kalıplarının kullanılması.
+
+256
+01:03:53,012 --> 01:03:56,152
+Başka sorunuz yoksa bitiriyorum bugün dersi.
+
+257
+01:04:03,315 --> 01:04:06,635
+Önümüzdeki hafta tasarım tarafına geçeceğiz.
+
+258
+01:04:16,307 --> 01:04:18,227
+Tekrar sorayım, sorunuz var mı?
+
+259
+01:04:22,708 --> 01:04:23,668
+Teşekkürler hocam.
+
+260
+01:04:25,388 --> 01:04:27,348
+Teşekkürler, iyi haftalar diliyorum.
+
+261
+01:04:29,108 --> 01:04:30,108
+Sağ olun, iyi günler.
+
+262
+01:04:31,048 --> 01:04:31,828
+İyi haftalar hocam.
