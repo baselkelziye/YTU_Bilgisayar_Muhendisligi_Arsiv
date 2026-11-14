@@ -1,0 +1,2587 @@
+1
+00:04:33,108 --> 00:04:34,247
+Günaydın arkadaşlar.
+
+2
+00:04:40,851 --> 00:04:45,131
+Geçen senenin nostaljisini yapalım. Uzaktan eğitim olsun.
+
+3
+00:04:53,012 --> 00:04:58,651
+Bugün de herkes bilgisayara ve interneti var mı? O erişim problemi var. Bakalım nasıl olacak?
+
+4
+00:05:21,396 --> 00:05:27,196
+Sizinle biz en son sınavdan önce Structure konusuna geldik diye hatırlıyorum.
+
+5
+00:05:32,052 --> 00:05:33,072
+Var mı hatırlayan?
+
+6
+00:05:34,472 --> 00:05:37,652
+Evet hocam, o başlıkta kalmıştınız. Sınavdan sonra devam ettim.
+
+7
+00:05:41,076 --> 00:05:48,276
+Diğer grupta biraz Yunus Hoca geri kalmış da orayı dün tamamladık. Burada kalmıştık.
+
+8
+00:05:53,555 --> 00:05:56,235
+Hocam yanlışlıkla galiba WhatsApp ekranınızı paylaşırsanız.
+
+9
+00:05:57,235 --> 00:05:57,596
+Öyle mi?
+
+10
+00:05:58,235 --> 00:05:58,555
+Evet.
+
+11
+00:06:21,875 --> 00:06:24,435
+Şu an slide geldi herhalde.
+
+12
+00:06:24,435 --> 00:06:25,215
+Evet hocam.
+
+13
+00:06:45,012 --> 00:06:46,012
+Teşekkürler.
+
+14
+00:07:09,684 --> 00:07:11,004
+Bir iki dakika daha bekleyelim.
+
+15
+00:07:21,939 --> 00:07:23,939
+Müzik
+
+16
+00:09:43,892 --> 00:09:46,332
+Evet arkadaşlar, şimdi başlayabiliriz.
+
+17
+00:09:48,132 --> 00:09:51,112
+Şimdi geldik en önemli konularımızdan birisine.
+
+18
+00:09:53,272 --> 00:09:54,372
+Structure konusu.
+
+19
+00:09:56,192 --> 00:09:57,812
+Ve bunlardan türen unionlar.
+
+20
+00:09:59,712 --> 00:10:01,372
+Konuya şöyle girelim.
+
+21
+00:10:03,892 --> 00:10:05,892
+Örneğin öğrencilerin...
+
+22
+00:10:09,395 --> 00:10:35,775
+Bilgilerini tutan bir veri tavana projesi oluşturacaksınız. Biz biliyoruz ki programlarda üç temel yapı var. Sıralı yapı, şartlı yapı, tekrarlı yapı. Yani for, if veya temel atama, toplama, çıkarma işlemleri. Bunlarla bir yere kadar problem çözemiyoruz. Ne yaptık? Dizileri dahil ettik, mantısleri dahil ettik. Öğrencinin bilgilerini saklamak istediğimizde öğrencinin nitelikleri nedir?
+
+23
+00:10:37,235 --> 00:11:03,235
+Soyad, ondan sonra No, ID gibi şeyler var. Ondan sonra Vize var, Pinar var. Hangi ders kodu olabilir? Bir sürü ders alabiliyor falan. Böyle bir şeyi modellememiz gerekiyor, soyutlamamız gerekiyor arkadaşlar. Çünkü ben öğrencilerin isimleri için bir karakter dizisi...
+
+24
+00:11:03,956 --> 00:11:21,776
+Ne tutan bir dizi, yani karakter matrisi oluşturmam lazım. Örneğin kar, işte bin tane öğrenci, her birinin ismi de en fazla 50 karakter olsun dersek şöyle bir şey. Aynısı soyad için bir daha olacak. Öğrencilerin numarası için string dersek işte bin yine onun gibi bir şey lazım.
+
+25
+00:11:22,227 --> 00:11:47,947
+Vize finali için belki double değerler tutacağız. Ders kodları, diğer bilgiler, her şey böyle ayrı ayrı değişkenlerle. Yani bir sürü değişken tanımlamak zorundayız. Bu, yazılım mühendisliği açısından program yazmayı gerçekten zorlaştıran bir şey. Öğrenci diye bir şey var, bir varlık var gerçek dünyada. Ama o varlığın bilgisayarda modellenmesi böyle ayrı ayrı değişkenlerle olmaması gerekir.
+
+26
+00:11:48,467 --> 00:12:12,627
+Onun için artık biz kendimiz yeni bir tip, değişken tipi tanımlayacağız. İş buradan kaynaklanıyor. Nasıl bir değişken tipi tanımladıktan sonra değişken o türden türetiliyorsa artık ben öğrenci diye bir şey tanımlayınca O1 tanımlayabileceğim. Ondan sonra O1'in dizisini tanımlayabileceğim. O1 ile mallok yapıp onun pointerını tutup.
+
+27
+00:12:12,927 --> 00:12:26,628
+En tane O1 elemanı oluşturabileceğiz. Matrisini tanımlayabiliriz. İşte O1'in adresini alıp, mesela şurada O2 diyelim, O1'in adresini alıp bir pointerla erişebileceğiz.
+
+28
+00:12:27,248 --> 00:12:30,447
+Tabii bunu önce bizim söylememiz gerekiyor.
+
+29
+00:12:31,628 --> 00:12:32,207
+Mevzul bu.
+
+30
+00:12:33,288 --> 00:12:37,268
+Burada tanımlanması, iç içe strukturlar.
+
+31
+00:12:37,971 --> 00:12:44,951
+Bu işin en temel bağlantısı. Biz bu konuya gelmeden önce, Structure'ın öncesinde ne gördük?
+
+32
+00:12:45,912 --> 00:12:53,531
+Dynamic Memory Allocation gördük, Functions'lar gördük. Yani diziler diyebiliriz Dynamic Memory Allocation'la.
+
+33
+00:12:54,711 --> 00:13:01,611
+Temel, en zor diyebileceğimiz, en önemli diyebileceğimiz bu iki konu. Artık bunlarla kombine edeceğiz.
+
+34
+00:13:03,155 --> 00:13:27,415
+Structure'ların dizileri, Structure'ların fonksiyonlara parametre olarak geçişi veya bir fonksiyondan Structure return etme konusu. Mesela burada Scopteration hala önemli bir konu. Yani oradaki bilgilerimizi kullanacağız. Pointer aynı şekilde kullanacak. Yani şuraya siz aslında Pointer da dahil edin. Pointer gerçi de aynı kümrün içinde ama Structure ve Pointer'ın birlikte kullanımı da var.
+
+35
+00:13:27,988 --> 00:13:33,988
+Bu konuyu da gördükten sonra şurada da bazı örnekler, Union vs. bunların kullanımına bakacağız.
+
+36
+00:13:35,168 --> 00:13:44,827
+Evet, amaç şu. Yani böyle bir bin tane işçinin bilgisini tutacaksak, her biri için şöyle ayrı ayrı değişkenler tanımlamak gerekmiyor.
+
+37
+00:13:44,827 --> 00:13:52,668
+İşte bin tane kişinin isimleri, bin tane kişinin soy isimleri, bin tane kişinin ID'leri, bin tane kişinin maaşları. Böyle bir şey çok.
+
+38
+00:13:53,043 --> 00:14:20,223
+Rahatsız edici oluyor. Yönetilmesi bir yerden sonra mümkün hale gelmiyor. Ama biz kesinlikle ve kesinlikle structure tanımladığında bu primitive dataları yine kullanmak durumundayız. Bütün temel veri tipleri kompozit veri tiplerinin oluşturulmasında kullanılmak durumundayız. Bu iş aslında birazcık abstraction dediğimiz soyutlama. Ne demek soyutlama sizce?
+
+39
+00:14:21,844 --> 00:14:24,584
+Bu kelimeyi duyunca aklımıza ne geliyor?
+
+40
+00:14:37,043 --> 00:14:39,963
+İllaki programlama anlamında düşünmeyin.
+
+41
+00:14:44,659 --> 00:14:55,339
+Soyutlama. Kendinizi soyutlayınca ne yapıyorsunuz? İzole etmek gibi bir şey gerçi aklınıza gelebilir mi? O başka bir şey.
+
+42
+00:14:56,799 --> 00:15:05,860
+Şimdi şöyle söyleyeyim arkadaşlar. Şu ve şu. İkisi arasında bir fark var mı?
+
+43
+00:15:13,043 --> 00:15:16,823
+Bunu okumayı biliyorsunuz değil mi? Hem de bir şey söylüyorsunuz.
+
+44
+00:15:19,343 --> 00:15:20,543
+Nasıl bir fark var?
+
+45
+00:15:20,963 --> 00:15:24,104
+Ne açıtan? Biri büyük bir iki fark.
+
+46
+00:15:25,104 --> 00:15:34,364
+Tamam. Şey olarak baktığımızda, görüntü olarak elbette fark var. Bunun kodlaması karşılığı olarak farklı.
+
+47
+00:15:34,364 --> 00:15:35,523
+Aski kodları farklı.
+
+48
+00:15:36,003 --> 00:15:38,543
+Yok yok öyle düşünme. Normal okuyoruz.
+
+49
+00:15:39,187 --> 00:15:43,347
+Okuduğumuzda bunu görünce başka bir ses, bunu görünce başka bir ses çıkmıyor değil mi?
+
+50
+00:15:43,367 --> 00:15:44,048
+Çıkmıyor, evet.
+
+51
+00:15:44,048 --> 00:16:04,947
+Yani E diye bir sesimiz var. O bizde Türkçe'de olan bir ses. Biz bunu bu şekilde karşılamışız. Mesela İngiliz bunu iyi diyor buna genellikle. Yani tamamen o gerçek dünyada var olan bir sesi bu şekilde sembolize etmişiz. Yani E'ye karşılık şöyle bir şey söylenseydi.
+
+52
+00:16:05,460 --> 00:16:19,259
+Ve biz bunu görünce yine E-Sesi çıkarmayacaktık, çıkaracaktık. Kodlama bu şekilde yapmış. Bakın bu bir abstraction. Sonra hafta sonu diye bir şey var mesela değil mi? Gerçekte hafta sonu diye bir şey olur mu? Veya hafta içi diye bir şey olur mu?
+
+53
+00:16:23,347 --> 00:16:25,528
+Var mı bu da gerçekte hafta sona bir şey?
+
+54
+00:16:32,820 --> 00:16:33,660
+Teşekkürler.
+
+55
+00:16:38,611 --> 00:17:02,932
+Yoktur değil mi arkadaşlar? Sonuçta günler bir şeye göre değişmiyor. Biz belli bir periyot verilmişiz. 5 gün hafta sonu, ondan sonra 2 gün, 5 gün hafta içi, ondan sonra 2 gün, hafta sonu diyeceğiz. Bu tamamen bizim işlerimizi kolaylaştırmak için yaptığımız, gerçek hayatta yaptığımız soyutlama. Aynısını burada da programlamada yapacağız. Çünkü gerçek anlamda öğrenciyi sen burada 0 ve 1'lerle saklayacaksan,
+
+56
+00:17:03,539 --> 00:17:06,359
+Bir şekilde bu dönüşümü yapman gerekiyor.
+
+57
+00:17:07,759 --> 00:17:13,400
+İşte bu işin Structure'ı da tanımlamak gerekiyor arkadaşlar. Structure tanımında Struct Keyword'unu kullanıyoruz.
+
+58
+00:17:13,579 --> 00:17:16,500
+Örnekleri ayrıca yapacağım ben. Buradan biraz gidelim.
+
+59
+00:17:17,500 --> 00:17:19,159
+Buraya bir isim veriyoruz Structure'a.
+
+60
+00:17:19,159 --> 00:17:25,659
+Sonra şu köşeli parantezle başlayıp.
+
+61
+00:17:27,028 --> 00:17:33,927
+Şuraya kadarki kısımda, noktalı bir güle kadar kısımda, Structure değişkeninin üye değişkenlerini yazıyoruz.
+
+62
+00:17:35,488 --> 00:17:37,107
+Member, beraberiz.
+
+63
+00:17:40,723 --> 00:17:52,063
+Bu member variabler artık structure'ın alt bölümleri oluyor. Ben bellekte bir yer ayırdığımda bu structure değişken için bu örneğin tek bir değişken olacak.
+
+64
+00:17:53,183 --> 00:18:03,263
+Bu tek bir değişken altında bir, iki, üç, dört tane alan var. Bunlardan bir tanesi name, bir tanesi surname, bir tanesi id, bir tanesi salary.
+
+65
+00:18:09,236 --> 00:18:35,196
+Önce name, sonra surname, sonra id, sonra seller diye peş peşe gelecek. Ama burada pointer aritmetiğini kullanamıyoruz. Name'e şu kadar eklersen surname'e gidersin diyemeyiz. Çünkü şunun size'ı tamam burada karakter ama hepsi böyle şey olması gerekmiyor. Mesela karakterden sonra şurada integer gelmiş. Mesela bu bir şeylik, tabii bir şarpı yirmi olacağı yirmi.
+
+66
+00:18:35,667 --> 00:18:59,527
+Ondan sonra şu da 20, ondan sonra bu 4, bu da 8 gidiyor mesela. Onun için pointer aritmetiği burada doğrudan kullanmayacağız ama başka şekillerde kullanmayacağız. Bu tek bir structure değişkeninin bellekteki görüntüsü. Ben bu structure değişkeni tanımladıktan sonra genellikle main'den önce tanımlarız. Yani bir fonksiyon prototipi gibi düşünebilirsiniz. Artık buradan şu şekilde değişkenler üreteceğim.
+
+67
+00:19:02,355 --> 00:19:22,236
+Değişken üretirken bunu yazıyoruz. Nasıl integer a yazıyorsak, burada da bunun structure değişkeni olduğunu söylemek için struct yazıyoruz. Structure'ın ismini yazıyoruz. Employee. Sonra buradan üreteceğimiz değişken işte e1. Bakın bu tek bir değişken üretimi. Ondan sonra şunu yapabiliriz.
+
+68
+00:19:29,011 --> 00:19:32,172
+Pointer değişkeni üretmek istiyorsak böyle bir şey yapabiliriz.
+
+69
+00:19:33,071 --> 00:19:36,411
+Çift pointer yapabiliriz gibi şey.
+
+70
+00:19:36,612 --> 00:19:44,451
+Eğer dizi oluşturacaksak, Strat Employee, Employee izlediğinde bin elemanlı, yani şu şeyden hiçbir farkı yok.
+
+71
+00:19:44,451 --> 00:19:48,612
+Integer B, bin yazmaktan hiçbir farkı olmayan bir şey çıkıyor.
+
+72
+00:19:49,751 --> 00:19:51,692
+Bunlar temel tanımlamalar.
+
+73
+00:19:54,420 --> 00:20:09,920
+Structure tanımlamada, şurada devsi açalım. Benim kullandığım genellikle ders anlatırken slide'ların dışında iki tane temel örneğim vardır. Birisi karmaşık sayılar, birisi polinom. Bu sene polinomlar üzerine gitmek istiyorum ben.
+
+74
+00:20:09,920 --> 00:20:14,220
+Şimdi bir Structure tanımlayalım. Önce programımızı yazıyoruz.
+
+75
+00:20:31,827 --> 00:20:46,148
+Polinom. Bir polinom nelerden oluşur? Polinomu soyutlama yapmak istesek, modellemek istesek hangi özellikleri vardır?
+
+76
+00:20:58,900 --> 00:21:00,120
+Kat sayı ve derece. Güzel.
+
+77
+00:21:01,400 --> 00:21:07,099
+Şimdi kat sayıyı mesela biz float olarak yapabiliriz veya double olarak yazabiliriz.
+
+78
+00:21:08,539 --> 00:21:09,059
+Kat sayı.
+
+79
+00:21:11,120 --> 00:21:12,920
+Derece ne olması gerekiyor?
+
+80
+00:21:12,920 --> 00:21:15,240
+Tam sayı olması gerekiyor polinomda.
+
+81
+00:21:15,440 --> 00:21:17,059
+Integer derece.
+
+82
+00:21:19,400 --> 00:21:24,660
+Yazdığımız sıranın bellekteki yerleşimiyle alakalı bir önemi var arkadaşlar.
+
+83
+00:21:25,715 --> 00:21:44,875
+Dolayısıyla önce katsayı değişkenine bellekte yer açılacak. Ondan sonra derece değişkenine bellekte yer açılacak. Tersten de yazabiliriz. Problem değil. Şimdi buradan değişken üretirken, Struct, Polino, P1 şeklinde değişken üretebiliyoruz.
+
+84
+00:21:53,332 --> 00:21:55,792
+Bu arada tabii şöyle de, şunları da gösterelim.
+
+85
+00:22:00,500 --> 00:22:12,039
+E2, Ne bileyim, E3 diyelim. Bunların her birisi yapılabilir şeyler. Dizi de yapabiliyoruz. Hiçbir farkı yok.
+
+86
+00:22:13,440 --> 00:22:22,160
+Şimdi bu struct struct diye yazmak yerine sürekli biraz daha normal integer gibi tek bir şey yazmanın yolu var mı? O da var.
+
+87
+00:22:22,160 --> 00:22:24,460
+Şimdi bizim type depth diye bir şeyimiz vardı.
+
+88
+00:22:26,675 --> 00:22:53,815
+TypeDef ne yapıyor? A, B diyelim. A'nın yerine B'yi kullanabiliyoruz. Örneğin, TypeDef, Integer, Tam Sayı dediğimizde ne oluyor? Bütün Integer'lar yerine Tam Sayı diyoruz. Aslında burada da bir yerine substitution yerine koyma var. Nerede sen Tam Sayı yazarsan onun yerine Integer gelip kopyalanıyor program derlenir.
+
+89
+00:22:54,451 --> 00:23:09,031
+O zaman biz Structure'ın şu tanımlanan kısmına önüne Type Def koyarsak şu kısma kadarki yani noktalı virgüle kadarki bölüm yani A olacak.
+
+90
+00:23:09,031 --> 00:23:19,351
+Bundan sonraki kısma da şey diyebiliriz. Tabii noktalı virgül dahil değil burada. Şöyle diyelim noktalı virgül alacağız. Şu araya örneğin.
+
+91
+00:23:20,051 --> 00:23:34,331
+Genellikle Structure isimleri de büyük harfle yazılır. M, Glow, Yi diyeceğim. Bundan sonra yapacağımız şey doğrudan Struct kelimesini kullanmadan bu değişkenin bunun üzerinden şey oluşturacağız. Şimdi gelelim bakalım.
+
+92
+00:23:35,751 --> 00:23:45,711
+Tabi bunun da iki yolu var. Type Def'i kullanmanın. Type Def, Structure dedi. Bakın şuraya hiçbir şey yazmadı. Geleceğiz şimdi oraya. Yine aynı üyeler var.
+
+93
+00:23:46,355 --> 00:23:52,855
+Bu diyor ki, şu gördüğünüz şuraya kadarki olan şey, çünkü Type Def boşluğa göre çalışıyor.
+
+94
+00:23:53,796 --> 00:24:01,276
+Şu bölüm başlayınca Structure'ın tanımı yapılacak, ondan sonraki boşlukta da Structure'ın tanımının yerine konacağı etiket yazılacak.
+
+95
+00:24:01,715 --> 00:24:12,756
+Bu şekilde işlem yapabilir. O zaman ben buradan değişken üretirken, Mplo'yi yaptığımda E1 diyebilirim. Herhangi bir Structure'ı kullanmama gerek yok.
+
+96
+00:24:13,556 --> 00:24:25,235
+Veya şurada olduğu gibi bir dizi oluşturabiliyorum. Bu Structure'ın tamamını Structure'a dahil olmak üzere karşılayan bir kolaylık.
+
+97
+00:24:26,036 --> 00:24:27,956
+Ve bunu kullanmanızı biz daha çok istiyoruz.
+
+98
+00:24:30,255 --> 00:24:37,484
+Buradaki büyük harf kullanımı aslında bir gelenek haline gelmiştir. Bu üretilen değişken, normal bir...
+
+99
+00:24:38,036 --> 00:25:05,135
+değişken değil, Structure türünde bir değişkendir. Bunu görünce arkada bir struct vardır, onu anlıyoruz. Örneğimiz file konusuna gelince şöyle bir şey göreceğiz. File pointer diye bir şey üreteceğiz. Bu bize diyor ki, demek ki file diye bir Structure var, oradan bir değişken üreteceğiz, bunu anlayacağız. Biz de bütün Structure tanımlamalarımızla bunu kullanalım. Şimdi burada iki farklı şekilde bir iş yapılabilir.
+
+100
+00:25:05,907 --> 00:25:21,587
+Onu bir göstereyim önce. Ben polinom olarak şunu biraz önce yazdık. Diyorum ki type def boşluk. İşte buna polinom 1 diyelim. Aynı ismi yazamayız.
+
+101
+00:25:30,708 --> 00:25:51,528
+P4 değişkeni üretebiliyorum. Şuradakilerden hiçbir farkı yok. Bunları da yapabiliriz. Burada şuraya polinom 1 yazarsam hem böyle üretebilirim hem de sıkrak polinom 1 T5. İkisi de olur.
+
+102
+00:25:52,668 --> 00:25:55,848
+Üçüncü yol biraz önce slide'daki gösterdiğimiz yol.
+
+103
+00:25:57,940 --> 00:26:14,800
+Structure ve Type Defile alıp şuradan şöyle bir şey yapmak. Bu sefer mesela buraya polinom 2 diyelim. Polinom 2 deyip aynı şekilde E6 böyle bir değişken üretebiliyor.
+
+104
+00:26:16,180 --> 00:26:23,860
+Bunun farkı ne? Burada polinom 1 struct yazarak bir şey oluştururken burada yazacak herhangi bir şey olmadığı için
+
+105
+00:26:24,192 --> 00:26:39,491
+Strat Keyword'ünü kullanarak şuradan bir şey üretemem. Değişken tanımlayamam. Farkı bu. Benim size tavsiyem şunu kullanmanızdır. Açık olsun diye veya bunu kullanabilirsiniz. Şunu çok fazla tercih etmiyoruz.
+
+106
+00:26:40,432 --> 00:26:48,491
+Daha böyle kompakt, güzel bir şekilde yazılması için. Şurada genellikle küçük harflerden oluşur.
+
+107
+00:26:48,799 --> 00:26:59,059
+Burada da onun büyük harflerden oluşan halini yazarız. İşte buraya polinom yazsak burada büyük harflerden onunla oluşan halini yazacağız. Buraya kadar bir sorumuz var mı?
+
+108
+00:27:04,468 --> 00:27:06,428
+Peki. O zaman ben şunları siliyorum.
+
+109
+00:27:09,248 --> 00:27:10,908
+Hangisi kalsın? Şunu da silelim.
+
+110
+00:27:12,868 --> 00:27:14,728
+Şimdi önce bir derleyelim mesela bunu.
+
+111
+00:27:18,228 --> 00:27:22,168
+Desktop
+
+112
+00:27:22,168 --> 00:27:23,508
+diye yazayım da.
+
+113
+00:27:30,036 --> 00:27:32,456
+Sırakt.
+
+114
+00:27:37,447 --> 00:27:37,508
+.
+
+115
+00:27:37,508 --> 00:27:38,447
+Desktop.
+
+116
+00:27:38,447 --> 00:27:39,447
+.
+
+117
+00:27:39,447 --> 00:27:39,508
+Desktop.
+
+118
+00:27:39,508 --> 00:27:39,567
+.
+
+119
+00:27:39,567 --> 00:27:39,947
+Desktop.
+
+120
+00:27:39,947 --> 00:27:40,508
+.
+
+121
+00:27:36,884 --> 00:28:01,604
+Bir. Bu arada bu da bu dönemin, yani bu dersin en mühim konularından bir tanesi. Birisi dynamic neural location, diğeri de bu arkadaşlar. Bundan sonraki pilot konusu mesela o kadar önemli şey değil. Belli fonksiyonlar var ama modelleme yapmanız için, yani bir projeyi gerçekleştirmeniz için dönem projesi de zaten genellikle sıraklar üzerine olacak.
+
+122
+00:28:01,968 --> 00:28:20,448
+Bundan sonraki dönemdeki veri yapıları dersinde bu konuyu çok fazla kullanacaksınız. Evet, şöyle diyebiliriz. Evet, böyle bir değişken ürettik. Biz bu değişkenin üyelerine nasıl erişebiliriz? Önce slide'dan sonra buradaki örnek üzerinden gideceğiz. Biraz daha devam edelim.
+
+123
+00:28:26,463 --> 00:28:34,144
+İki farklı yöntem var. Birincisi pointer ile erişme, diğeri pointer olmadan erişme.
+
+124
+00:28:34,144 --> 00:28:39,423
+Şimdi şu değişken üzerinde pointer olmadan erişmek için biz nokta operatörüne kullanıyoruz.
+
+125
+00:28:39,423 --> 00:28:47,543
+Aslında ikisinde de nokta kullanılıyor. Böyle bir değişkene, Yunus'un ID alanına erişmek için 1, 2, 3, 4 yazıyoruz.
+
+126
+00:28:48,364 --> 00:28:51,483
+Gelelim bu erişme işine biraz bakalım.
+
+127
+00:29:00,211 --> 00:29:15,211
+Örneğin ben erişmek için ne yapabilirim? P1'in derecesi eşittir 0 olsun. P1'in kat sayısı eşittir 0 olsun. Başlangıçta böyle bunların nal yapabiliriz.
+
+128
+00:29:28,339 --> 00:29:30,099
+Üzeri işaretini şöyle vereceğim.
+
+129
+00:29:31,479 --> 00:29:32,139
+Yüzde de.
+
+130
+00:29:37,907 --> 00:29:57,867
+Burada yazacağımız şey de yine p1'in katsayısı virgül p1'in derecesi. Şu katsayı double olduğu için burayı böyle yüzde d ile yazmayalım. Değişiklik olur. Yanlış şeyler görüyoruz. Bakın böyle hem değer atadım hem de değerleri okuyabildim.
+
+131
+00:29:58,907 --> 00:30:05,127
+Sıfır sıfır sıfır. Hatta gelin şurayı da 2.2 yapalım. Daha güzel hoş görün.
+
+132
+00:30:06,228 --> 00:30:10,068
+Peki bunu ScanF'te nasıl kullanacağız? Asıl şey orada geliyor.
+
+133
+00:30:10,588 --> 00:30:18,508
+Şimdi bu bir Structure olduğu için bu bir değişken. Ben bu değişkenin adresini almam lazım. Çünkü ScanF ne gerekiyordu? Ampersand kullanmayı gerekiyordu.
+
+134
+00:30:19,788 --> 00:30:21,468
+Bunlar şöyle yapalım.
+
+135
+00:30:23,128 --> 00:30:28,508
+Derece ve kat sayı yeriniz diyelim.
+
+136
+00:30:32,468 --> 00:30:49,548
+Mesela önce dereceyi alalım. Yüzde de bir gün. Ben P1'in adresini bulabilirim. Fakat bana P1'in adresinden ziyade P1'in altındaki derece alanının adresi lazım.
+
+137
+00:30:49,548 --> 00:30:58,728
+Bu da çok bir şey değil. P1'in derecesine git, oradaki adresi getir diyeceğiz. P1'in derecesi bir yer.
+
+138
+00:30:59,188 --> 00:31:03,788
+Yani bir değer tutuyor. Onun adresi deyince bu bana adresini veriyor. Hiçbir farkı yok.
+
+139
+00:31:05,188 --> 00:31:06,328
+Tekrar şöyle geliyorum.
+
+140
+00:31:09,528 --> 00:31:12,208
+Okuyacağım şey double olacağı için long float dedim.
+
+141
+00:31:12,768 --> 00:31:14,668
+T1 nokta kat sayı diyorum.
+
+142
+00:31:17,628 --> 00:31:20,728
+Şurada tekrardan değerleri ekrana yazdı.
+
+143
+00:31:27,284 --> 00:31:30,104
+4 çarpı x üzeri 5 gibi bir şey yaptık. Tamam mı?
+
+144
+00:31:33,424 --> 00:31:33,944
+Peki
+
+145
+00:31:35,724 --> 00:31:38,284
+Normal bir değişkenden bakın hiçbir farkı kalmadı.
+
+146
+00:31:38,804 --> 00:31:41,104
+Şimdi ben bir tane daha değişken üretiyorum. Polinom
+
+147
+00:31:42,124 --> 00:31:43,404
+Bu sefer p2
+
+148
+00:31:44,184 --> 00:31:46,744
+p2 şu an bir yeri gösteriyor mu arkadaşlar?
+
+149
+00:31:53,428 --> 00:31:54,988
+P2 bir yeri gösteriyor mu?
+
+150
+00:31:57,807 --> 00:32:00,307
+Göstermiyor. Yani ben gelip şurada
+
+151
+00:32:00,307 --> 00:32:06,188
+P2 nokta katsayı, P2 derece gibi bir şey yazsam
+
+152
+00:32:06,188 --> 00:32:08,228
+ne göreceğim?
+
+153
+00:32:09,488 --> 00:32:11,748
+Saçma sapan şeyler göreceğim. Hatta diyor ki
+
+154
+00:32:11,748 --> 00:32:13,307
+herhangi bir
+
+155
+00:32:13,307 --> 00:32:17,848
+buna request yapamazsın. Çünkü bu zaten pointer.
+
+156
+00:32:19,923 --> 00:32:45,843
+Herhangi bir şey değil diyor. Önce bunun bir yeri point etmesi gerekiyor. P2 pointer'ını mesela gelelim şurada. Önce bir point ettirelim. P2 eşittir. P1'in adresi. Artık bunun yoluyla normal değişkenlerde olduğu gibi bu şeyi kullanabiliriz. Şimdi burada erişim yaparken iki farklı durum var.
+
+157
+00:32:47,059 --> 00:33:01,759
+Önce slide'a gelelim. Eğer ben bir pointer üzerinden erişeceksem, önce şunu anlatayım. Yine nokta operatörünü kullanıyorum. Fakat operatör önceliği konusunu hatırlayalım. Hatta şuradan bir şey açayım.
+
+158
+00:33:18,996 --> 00:33:42,996
+Size paylaştığım tabloyu şuradan açalım. Bakın, dot operatörü en yüksek öncelikte. Structure or and minimum union member access. Arrow da aynı şekilde. Peki bizim bir de neyimiz var? O adresteki değeri getireceğiz. De-referans operatörümüz var. Dolayısıyla burada nokta önce...
+
+159
+00:33:43,635 --> 00:33:50,155
+Hesaplanın, işleme alınacak. Nokta önce işleme alınca şöyle bir şey oluyor.
+
+160
+00:33:53,295 --> 00:34:00,675
+E-PTR'in ID alanından bir şey bulmaya çalışır. Eğer noktayı kullanırsak, yani parantezi olmadığını kabildi.
+
+161
+00:34:00,675 --> 00:34:09,395
+E-PTR'in ID'sinin bir adres olduğunu düşünün. 3, 5, 10 gibi bir sayı. O sayıdaki değeri getir demek.
+
+162
+00:34:10,291 --> 00:34:28,391
+İznimiz olmayan bir yere erişmek demektir. Örneğin şöyle yazsaydık eptr.id'nin değeri. Önce şurası çalışacak. Buradan mesela 5 gibi bir şey geldi. 5 nolu adresteki değere ulaşmak gibi. Buna zaten izin vermiyor.
+
+163
+00:34:36,148 --> 00:35:00,307
+Oradaki değerin ID alanına, yani o adresi getir, oraya 1, 2, 3, 4 değerini yaz. Bu böyle tabii hem parantez, hem nokta, hem dereferans operatörü çok böyle göze hoş görünmediği için buna bir çözüm bulmuşlar. Eğer bir pointer varsa ve bu pointer bir yeri şey yapıyorsa, point ediyorsa şu ok operatörüyle oraya erişebiliyoruz yazar.
+
+164
+00:35:02,559 --> 00:35:21,500
+Slide'da belki bunu söyleyebiliriz. E alttan tere PTR şu arada ne bileyim Yunus değişkenin adresine atans. Doğrudan bunları ayrı ayrı kod gibi düşünürsek bu olmaz. Çünkü bu şu an için şu iki satır bir yeri point etmiyor. Buna da dikkat edelim.
+
+165
+00:35:33,108 --> 00:35:33,448
+Bye.
+
+166
+00:35:38,675 --> 00:35:49,615
+Burada P2'nin kat sayısını yazdır. P2'nin kat sayısını yazdır diyerek P1 adresi, P1'deki alanları yazdırabiliyoruz.
+
+167
+00:35:51,735 --> 00:35:53,435
+Bunu bir önce görelim.
+
+168
+00:35:57,715 --> 00:36:13,576
+İşte ne oluyor? İkisi de çalışıyor. Herhangi bir sıkıntı yok. Şimdi burada şöyle bir şey açmak istiyorum. Printf. Yüzde P. Yüzde P. Bir tane daha yüzde P. Bir tane daha yüzde P.
+
+169
+00:36:23,699 --> 00:36:34,380
+Değerini yazdırmak istiyorum ki aynı şey gelecek. Sonra ben P1'in altındaki derece alanı bellekte hangi adrestir bunu yazmak istiyorum.
+
+170
+00:36:34,380 --> 00:36:46,380
+Şimdi P1'in derecesi dediğimde bu oradaki değeri getirir bana. Onun sayısal adres değerini getirmek istersem şunu kullanabilirim.
+
+171
+00:36:47,460 --> 00:36:47,699
+Peki.
+
+172
+00:36:48,788 --> 00:37:15,907
+Şunu yapmaya kalkarsak, P2'nin üzerinden mesela katsayı bulalım. P2'nin katsayı istediğim bu da adres değil. Bu operatörde veya şu operatörde adres elde etmek için başına bunu getirmemiz gerekiyor. Çünkü bu bana oradaki değeri getirecek. Şu da oradaki değeri getiriyor. Biri pointer, biri normal değişken.
+
+173
+00:37:16,532 --> 00:37:22,271
+İkisinin başına amperesant yazmamız lazım. Hatta farkının olmadığını göstermek için bir %p daha ekleyelim.
+
+174
+00:37:24,132 --> 00:37:34,652
+Oraya da p2'nin kat sayısı değil de p1'in kat sayısını yazalım.
+
+175
+00:37:49,300 --> 00:37:58,940
+Bakın bu, şöyle yapayım. İlk gördüğüm şey structure'ın bellekte, structure'a bellekte ayrılan yerin adresi.
+
+176
+00:37:59,820 --> 00:38:08,820
+Şimdi o adreste yer ayrıldıktan sonra hemen başlangıç adresine katsayı dediğimiz değişkenin adresi yerleşecek.
+
+177
+00:38:09,920 --> 00:38:15,880
+Dolayısıyla bakın şu 62FH0 hem P1 hem P2 tarafından gösteriliyor.
+
+178
+00:38:16,851 --> 00:38:22,391
+Burada şey var, Little Ending olduğu için tam tersten yerleşim yapılıyor.
+
+179
+00:38:24,071 --> 00:38:25,051
+Yok yok, katsayı doğru.
+
+180
+00:38:25,551 --> 00:38:31,811
+62 FE 0 ilk oluşturulan değişken, bakın Struction adresiyle aynı çünkü hemen orada başlayacak.
+
+181
+00:38:31,811 --> 00:38:37,511
+İkinci değişkenimiz 62 FE 08.
+
+182
+00:38:38,387 --> 00:38:59,087
+Bir dakika, burada nasıl oldu? Evet, P1 derece, şu derecenin ismi, şu da katsayı. İki farklı şekilde erişmiş olduk. Bunların hepsini kullanabileceğiz arkadaşlar. Kullanmamız lazım, gerekecek. Yeri geldiğinde birini kullanacağız. İşte, call by referans, call by veriyor hangisini yapacaksak bunlara ihtiyacımız olacak.
+
+183
+00:39:06,579 --> 00:39:30,319
+Şurayı kopyalayalım. Derece ve kat sayı giriniz dedik. Ben P1 değil de P2'yi kullanmak istiyorum. P2'yi kullanırken şimdi P2'nin derece ismindeki alana şu şekilde erişebiliriz. Bu değerin adresini elde etmek için yine burada ampersant kullanmam lazım. Ama hocam ya P2 pointer'da hani.
+
+184
+00:39:30,804 --> 00:39:52,003
+P2'nin Pointed olması önemli değil arkadaşlar. P2'nin derecesi lazım. P2'nin derecesi bir değer gösteriyor. O değerin adresini elde etmem gerekiyor. Burada da P1 kat sayılacağız. Bu şekilde olur. Şimdi şurayı tekrardan yazacağım.
+
+185
+00:39:59,059 --> 00:40:11,039
+Operatörü değiştiriyorum. Yine P2 üzerinden erişeceğiz. Şimdi P2'nin derecesi olmuyordu. Yıldız koyacaktı. Yıldız da olmuyordu. Şunu kullanmamız lazımdı.
+
+186
+00:40:13,699 --> 00:40:20,099
+P2'nin derecesinin değeridir. Buradaki değeri elde etmek için yine buraya amperesant koymamız gerekiyor.
+
+187
+00:40:22,708 --> 00:40:26,628
+Ampersand, Karantez, Yıldız, Sil.
+
+188
+00:40:30,804 --> 00:40:43,864
+Yine bakın burada da, tabi bu P2, derece ve kat sayıyı şuradaki işleme göre bulabiliyoruz. Şuraya gelelim tekrar yazalım.
+
+189
+00:40:54,420 --> 00:41:09,619
+Poli ne oldu? Ha bu P1 olmaz arkadaşlar. Bu P2 olacak. Çünkü P1 normal bir değişken. Ok operatörünün normal değişkenleri de kesinlikle kullanamayız. Pointer olması lazım.
+
+190
+00:41:10,560 --> 00:41:20,380
+Dörde dört dedim. İkiye iki dedim. Üçe üç dedim. Hepsinde de gördüğünüz gibi çalıştı.
+
+191
+00:41:20,947 --> 00:41:24,707
+Bu varyasyonların hepsine hakim olmamız lazım.
+
+192
+00:41:24,707 --> 00:41:29,827
+Şimdi dünkü anlattığım kısma bir bakayım. Orada farklı bir örnek çözmüş müyüm?
+
+193
+00:41:39,764 --> 00:41:51,943
+Evet, mesela burada biz değişkene atama yapabiliyoruz. Burada da aynı şekilde atama yapabiliyoruz. Şunları konuştuk. Bunları konuştuk.
+
+194
+00:41:55,572 --> 00:42:00,692
+Mesela P2'nin derecesinin adresi. Burada adresleri ekrana yazdırabiliriz.
+
+195
+00:42:07,764 --> 00:42:09,003
+Şurayı şöyle alacağım.
+
+196
+00:42:13,556 --> 00:42:21,996
+P1 var, P2 var. P1'in derecesini bu şekilde aldık. P2'nin kat sayısını da şöyle alalım artık.
+
+197
+00:42:23,136 --> 00:42:40,496
+Yine P2 pointer türde olduğu için P2'nin kat sayısının adresi, P1'in kat sayısının adresi. Bu şekilde şu ikisinin aynı sonuç vermesi gerektiğini görebiliriz burada da.
+
+198
+00:42:43,603 --> 00:42:51,684
+1, 1, 2, 2, 3, 3. Ne oluyor? Bakın şuradakiler aynı değerleri veriyor.
+
+199
+00:42:54,144 --> 00:42:55,804
+Buraya kadar sorumuz var mı?
+
+200
+00:42:59,251 --> 00:43:07,692
+Bakın atama yaptık. Pointer'la da atama yapalım. Pointer'la atama yapmak için önce şu kısma geleceğiz.
+
+201
+00:43:07,692 --> 00:43:24,332
+P2'nin gösterdiği yerdeki dereceye git, 33 yap. P2'nin katsayı alanını önce işlem önceliği yapıp
+
+202
+00:43:28,211 --> 00:43:33,751
+Bu şekilde gerçekleştirebiliyoruz.
+
+203
+00:43:38,003 --> 00:43:47,823
+Peki gelelim. Bir polinom nasıl yazılır? A1 çarpı x üzeri n.
+
+204
+00:43:51,603 --> 00:44:10,963
+Artı a2 çarpı x üzeri n-1 böyle gider. Artı a n çarpı x üzeri 0'dır değil mi arkadaşlar?
+
+205
+00:44:12,123 --> 00:44:13,863
+Polinom dediğim şey böyle bir şey olmaz mı?
+
+206
+00:44:19,699 --> 00:44:21,019
+Şu uyuştu mu sizce?
+
+207
+00:44:26,003 --> 00:44:33,503
+Ben böyle bir polinomu buradan üreteceğim şöyle bir P1 değişkeniyle sağlayabilir miyim?
+
+208
+00:44:39,027 --> 00:44:40,027
+Hayır, niye hayır?
+
+209
+00:44:45,940 --> 00:44:54,340
+Tek derece var. Kat sayıları dizide tutarsak. Şurada şöyle mi yapalım? Bir saniye arkadaşlar. Buyurun.
+
+210
+00:45:43,507 --> 00:46:10,707
+Polinom erreyi olabilir. Kat sayıları dizide tutarsan. Şimdi kat sayıları dizide tutmak için şöyle bir şey yapabiliriz. Fakat kaç tane terim olacak, kaç tane kat sayı olacak bunu bilmek zor. O zaman ya pointer tutup bir şey yapacağız, dizi oluşturacağız. Yani şöyle bir şey diyebiliriz. Kat sayılar tutalım, bir de dereceler tutalım.
+
+211
+00:46:11,987 --> 00:46:38,127
+Ama burada da kat sayıyla derecenin uyuşması lazım. Hani üçüncü dereceli terimin kat sayısı birbiriyle tutacak. İşte en tane kat sayım varsa en tane derecem olacak dememiz lazım. Aşağıda bir yerde bir double dizisiyle malloc yapacağız. Veya işte bir integer dizisiyle malloc yapacağız. Bakın çok sağlıklı olmadı bu. O zaman modellemeyi birazcık daha değiştirmemiz gerekiyor.
+
+212
+00:46:39,411 --> 00:47:00,572
+Veya şu, [öğrenci]'nin söylediği olabilir. Polinom şeyinden n tane bir dizi, dinamik dizi yapmak daha mantıklı. Yani böyle 10 eleman, 100 eleman değil de bir polinom mallok diyeceğiz birazdan.
+
+213
+00:47:07,251 --> 00:47:09,591
+Size of falan oraya geleceğim.
+
+214
+00:47:14,099 --> 00:47:34,019
+Bu tek bir şeyden oluşmuyor. Yani bir tane bir şey oluşturunca içerisinde iki tane şey saklıyoruz. Halbuki bizim n çarpı ikilik bir alana ihtiyacımız var. Mesela bunu önce mallokla yapalım. D2 eşittir. Hazır elimizde bir tane şey var. Pointer var.
+
+215
+00:47:35,027 --> 00:48:00,627
+Mallock fonksiyonu ne yapıyordu? Bir parametre istiyor. Ben n diye bir şey gireceğim. n çarpı. Burada size of vermem gerekiyor. Bakın size of'un güzelliği. Buraya siz polinom verince bu polinom structure'ının karakter şeyi, size neyse. Integer'ın size'ı 4 olsun. Kat sayının size'ı 8 olsun. Toplam 12 byte'tır bir tanesi de. n çarpı 12 byte'lık bir yer alıyor. Bunu da daha sonra.
+
+216
+00:48:01,556 --> 00:48:26,076
+Polinom türünde bir pointer'a kest ediyorum. Böyle yer tutabiliriz. Bakın burada dinamik memori allokasyonu da işin içine girildi. Sonra bir for döngüsüyle, hatta bunu şöyle yapalım. Alt kısma indireyim. Bu polinoma değerler okuyabiliriz.
+
+217
+00:48:27,123 --> 00:48:37,763
+İnteger n diyeyim. Eşittir ne bileyim 5 olsun. İnteger n yapalım. Tabi şunları buradan alacağım. Şuraya koyacağım.
+
+218
+00:48:45,108 --> 00:49:11,028
+For i eşittir 0, i küçüktür işte n, i plus plus. Böyle bir şey mümkün mü mümkün? Mesela diyelim ki print veya scanf diyelim hadi. Şimdi benim elimde p2 var. Yüzde d. Katsayı gireceğiz. Bu yüzde d ne olacak? p2'nin.
+
+219
+00:49:11,956 --> 00:49:38,996
+İ ince elemanının şimdi P2'nin İ ince elemanının kat sayısı veya derecesi. Tabii önce dereceyi alalım. Pardon, kat dereceyi alalım. Şimdi bunun adresine gitmem gerekiyor. Çünkü P2'nin İ'sini biliyoruz, adresini bulabiliriz ama sonra çünkü P2 şey pointer. P2'nin İ'si adres döndürür ama onun derece alanına ulaşmak için adresini almamız gerekiyor.
+
+220
+00:49:39,956 --> 00:49:55,816
+Ondan sonra şurada da P2'nin İ'sinin kat sayısı diyelim. Buradan da bunu alırız. Sonra bunları ekrana yazdır. Ne yapıyorsan yap. Bu mümkün.
+
+221
+00:50:07,284 --> 00:50:12,443
+Bir şey mallokla yer açtık. Bu en tane polinom demektir. Şimdi bunu şöyle çizmeye çalışacağım.
+
+222
+00:50:17,492 --> 00:50:44,492
+Bizim Structure'mız neydi? Bir tane dereceden bir de kat sayıdan oluşuyordu. Ben bundan n tane oluşturunca, derece kat sayı böyle içerisi dolduruluyor.
+
+223
+00:50:45,427 --> 00:50:58,847
+Ve ben bunun bir tanesine polinom dedim. Fakat bizim bu ifademizde söylediğimiz şeyle, verdiğimiz isimle oluşturduğumuz değişken arasında birazcık uyumsuzluk oldu.
+
+224
+00:50:59,567 --> 00:51:10,187
+Çünkü polinom A x üzeri n artı, tabii şöyle dedim, A1 x üzeri n, A2 x üzeri n eksi bir nokta nokta A n x üzeri sıfır gibi bir mantıcı yapıdadır.
+
+225
+00:51:10,579 --> 00:51:27,880
+Şunların her birisi bir terimdir. Kolinomda. Ve her birisinin ortak özelliği var. Bir tane derecesi, bir tane kat sayısı var. O zaman bizim böyle bir modelleme yapmak yerine daha farklı bir model oluşturmamız gerekiyor.
+
+226
+00:51:28,259 --> 00:51:35,299
+Şimdi yeni bir şey açacağım. Sourced File açacağım. Saatimiz kaç? 48 geçiyor. Şunu söyleyeyim. Hemen bırakalım.
+
+227
+00:51:43,923 --> 00:51:58,183
+Şimdi önce terim diye bir structure oluşturacağım. O terimi de polinom isminde bir başka structure'a ekleyeceğim. Buna da işte nested structure, iç içe structure'lar diyoruz.
+
+228
+00:52:11,027 --> 00:52:20,067
+Double katsayı. Dedikten sonra bir struct daha oluştuyorum. Bunların oluşturulma sırası önemli.
+
+229
+00:52:20,947 --> 00:52:27,747
+Type tab struct. Tabii şurada isim vereceğiz. İşte buna terim diyelim.
+
+230
+00:52:29,887 --> 00:52:31,927
+Şuna da polinom diyeceğim.
+
+231
+00:52:37,780 --> 00:53:02,079
+N tane terim tutacak. O zaman N tane terim tutması için diyeceğim ki terim türünde yani istersek tabi terimler diyelim buna dizi de oluşturabiliriz ama dizinin kaç tane elemandan olacağı belli bu şekilde. Dinamik bir halde yazmamız için burada bir pointer tutuyorum.
+
+232
+00:53:03,219 --> 00:53:23,440
+İstersek burada ayrıca değerler tutabiliriz. Örneğin terim sayısı. Eğer ben bu polinomdan bir değişken ürettiysem ve ileride terim sayısı işime lazım olacaksa, çünkü mallokla oluşturduk, o bitti. Bu lazım olacaksa terim sayısını ayrıca burada bir üye değişken olarak tutabiliriz.
+
+233
+00:53:28,275 --> 00:53:39,615
+Önce n tane sayımız var. Bunu kullanıcıdan aldık. Ne yapacağız? İlk başta bir polinom türünde bir değişken üretiyorum.
+
+234
+00:53:39,615 --> 00:53:45,615
+Polinom E1 dedim. Sonra polinom oldu.
+
+235
+00:53:49,492 --> 00:54:15,052
+Bu P1'in içindeki terimler alanına eşittir diyeceğim. Mallock n çarpı size of terim. Bu kadar terimlik yer aç. Şimdi bu kadar terimlik açılan yeri neye döndüreceğiz? Terim türünde pointer olacak bu ve bu terim türündeki pointerı şurada.
+
+236
+00:54:15,572 --> 00:54:32,532
+Saklayacağız. Burada ayrıca şey de diyebiliriz. P1 nokta terim sayısı eşittir. N diyebiliriz. Şurada N yerine getirip terim sayısı diye de yazabilirsiniz. Eğer kodunuzun daha böyle modüler olmasını istiyorsanız. O zaman önce şöyle yapalım.
+
+237
+00:54:33,532 --> 00:54:42,992
+Sayısını set edelim. Bu şekilde bir yapı bir polinomu daha iyi resmediyor. Anladık mı burayı?
+
+238
+00:54:45,940 --> 00:54:56,699
+Bir ara verelim. Geldiğimizde bunun daha detayları var. Onlarla devam edeceğiz arkadaşlar. Saat 10.15 geçe. Görüşmek üzere.
+
+239
+00:54:59,259 --> 00:55:04,840
+Hocam bir şey sorabilir miyim? Bu mallı onun başındaki terine neden point track dedik?
+
+240
+00:55:05,759 --> 00:55:06,259
+Şuraya mı?
+
+241
+00:55:06,599 --> 00:55:07,139
+Evet hocam.
+
+242
+00:55:07,476 --> 00:55:20,016
+Nasıl integer dizisi oluşturduğumuzda integer pointer olacaksa bu sonuçta terimler tutan bir dizi. Bu dizinin başlangıç adresi pointer olacak. O nedenle terim türünde pointer oluşturmamız lazım.
+
+243
+00:55:21,016 --> 00:55:21,596
+Anladım hocam.
+
+244
+00:55:21,596 --> 00:55:33,676
+Int'te nasıl bunu yapıyorsak terimde de bu şekilde yapacağız. Çünkü şu tarz, şuradaki bu pointer değişkeni bir diziyi gösterecek. Tamam mı?
+
+245
+00:55:35,027 --> 00:55:36,367
+Anladım hocam, teşekkür ediyorum.
+
+246
+01:06:55,603 --> 01:06:56,603
+Evet arkadaşlar.
+
+247
+01:06:59,603 --> 01:07:02,603
+Devam edelim mi? Geldiniz. Ben merkezim geldim.
+
+248
+01:07:11,059 --> 01:07:13,179
+[öğrenci] bir şey mi soracaksın? El kaldırmışsın.
+
+249
+01:07:40,659 --> 01:07:41,759
+Ses geliyor mu arkadaşlar?
+
+250
+01:07:43,259 --> 01:07:43,759
+Geliyor canım.
+
+251
+01:07:44,259 --> 01:07:44,759
+Tamamdır.
+
+252
+01:07:44,759 --> 01:08:01,539
+Şimdi Nested Structure dediğimiz yapı biraz önce polinomda da olduğu gibi bazen soyutlama yaparken üzerinde çalıştığımız varlıkları iç içe modelleme yapmak zorunda kalabiliyoruz.
+
+253
+01:08:02,164 --> 01:08:27,324
+Örneğin kişiler var. Kişilerin burada askere gittiği tarih veya doğum tarihi. Tarih dediğimiz şey gün, ay, yıl, dakika, saniye gibi şeylerden oluşuyor. Bunu ayrı bir structure elemanı olarak düşünüp bunun içerisinde yerleştireceğiz. İlla ki pointer'ını yazmak zorunda değiliz. Bir kişi bir defa askere gittiyse dolayısıyla bir tane değişken yeterli.
+
+254
+01:08:28,500 --> 01:08:53,920
+Bir kişinin doğum tarihi bir keredir. Ama mesela başka yurt dışına çıkış tarihlerini düşünecek olursak o zaman ne deriz? Date. Yurt dışı çıkış tarihleri pointer saklayabiliriz. Bu sayede daha modüler bir modelleme yaklaşımı içerisindeyiz. Ben buradan oluşturduğum bir değişken de işte employee.
+
+255
+01:08:55,956 --> 01:09:19,835
+Değişkeninde, işte Yunus diye bir değişkenimiz olsun. Bunun year alanına erişim sağlamak istiyorsam Yunus içindeki, enlisted içindeki year alanına eriş 2008 yap. Mesela pointerla yapmış olsaydık bunu işte bir e pointerımız olsun. E de Yunus'un adresini göstersin.
+
+256
+01:09:24,148 --> 01:09:50,608
+Enlisted'ın içindeki year alanına eriş 2009 yaptık. Yine E pointer olacağı için bu alana bu şekilde erişmemiz gerekiyor. Eğer bu enlisted pointer olsaydı onun içindeki derken o zaman şöyle derdik. E enlisted year. Böyle bir şey söylerdik. Şimdilik o duracak. Bu yapı nested structure.
+
+257
+01:09:53,300 --> 01:09:55,340
+Biz kodumuza devam edelim.
+
+258
+01:09:58,040 --> 01:10:01,620
+Şu yapıyı kurguladıktan sonra, mesela,
+
+259
+01:10:07,620 --> 01:10:12,579
+polinoma değerler okuyalım arkadaşlar. Önce random değerler alalım.
+
+260
+01:10:19,091 --> 01:10:32,091
+Bir şey diyeyim. Önce printf sayısı 1.
+
+261
+01:10:40,692 --> 01:10:48,692
+Terim sayısına girdikten sonra bu terimleri polinom dizine yerleştireceğiz. Çünkü mallopla yer açtık.
+
+262
+01:10:48,692 --> 01:10:53,692
+For, i eşittir sıfır, i küçüktür.
+
+263
+01:10:53,692 --> 01:10:59,692
+k1 nokta terim sayısı i plus plus
+
+264
+01:11:04,916 --> 01:11:07,675
+Mesela burada terimleri random atalım.
+
+265
+01:11:07,675 --> 01:11:13,675
+T1'in terimlerinin i. olanına...
+
+266
+01:11:17,684 --> 01:11:43,783
+Bunun derecesine, mesela dereceler ne olsun da oradan i olsun. P1'in terimlerinin i'incisinin hat sayısına da eşittir. Random %5 diye bir şey diyelim. Şurada da seed random diyorum.
+
+267
+01:11:49,971 --> 01:11:57,911
+Böyle değerleri aktardık. Şimdi bunu birazdan skenefle falan da yaparız. Ekrana yazdırmak istiyorum.
+
+268
+01:12:01,876 --> 01:12:28,355
+printf. Ekrana yazdırırken nedir diyeceğiz? Polinom formatını da yazalım. Yani şuradaki formata benzer bir şey olsun. %d. Önce kat sayı, sonra x, sonra üst işareti, sonra %d gelecek. Bundan sonra da artı gelsin. Böyle bir şey bulalım.
+
+269
+01:12:29,108 --> 01:12:45,908
+İlk yüzde D'miz ne olacak? Kat sayılar. T1'in iyincisinin terimlerinin kat sayısı. Tabi bu yüzde D olmaz. Yüzde LF diyelim. Long float.
+
+270
+01:12:55,636 --> 01:13:11,036
+Pardon arkadaşlar, yanlış yazıyordum. P1'in terimlerinin iyisi. Çünkü terimler burada dizi. P1'in terimlerinin iyisinin derecesi.
+
+271
+01:13:15,123 --> 01:13:25,144
+Bunu yaz. Görelim bakalım ne göreceğiz. Hafta 7, Structure 2 diyelim buraya.
+
+272
+01:13:29,076 --> 01:13:29,576
+Sev.
+
+273
+01:13:32,136 --> 01:13:33,775
+Dört terimden olsun.
+
+274
+01:13:34,935 --> 01:13:36,076
+Oo, bayağı bir şey yazıyor.
+
+275
+01:13:38,456 --> 01:13:41,296
+Şimdi ScanF'i yukarı almamız lazım biraz daha.
+
+276
+01:13:42,536 --> 01:13:43,335
+Nerede?
+
+277
+01:13:44,115 --> 01:13:45,495
+Evet, şurada.
+
+278
+01:13:47,636 --> 01:13:50,495
+Şunu oluşturmadan önce tabii şey oluyor.
+
+279
+01:13:53,811 --> 01:13:58,612
+Burada yazarsak, önceki çöp değer neyse onu alıyor bakın içerisini sıfırlamadığı için.
+
+280
+01:14:04,083 --> 01:14:16,783
+Bu şekilde yazabiliriz. Şurayı 2.2 yapayım veya 2.1 yapayım.
+
+281
+01:14:21,908 --> 01:14:25,648
+Yalnız şurada bir tane fazladan artı var. Bunu nasıl yok edebiliriz?
+
+282
+01:14:48,756 --> 01:14:55,756
+Evet, ne yapabiliriz? Forun içinde kat sayı yazdırırken yüzde...
+
+283
+01:14:59,636 --> 01:15:04,656
+Katsayıdan kastım şey şu ifadeden sonra.
+
+284
+01:15:09,235 --> 01:15:32,555
+En basit yol arkadaşlar, bir terim sayısı bir öncesine kadar gideriz. Son kısımdaki son terim iyi sonuçta bir daha artacak. Son terimi dışarıda yazarız. O zaman bu bize neyi söylüyor? Aslında biz şunu bir fonksiyonda yapsak şu yazdırma işini.
+
+285
+01:15:33,524 --> 01:15:40,024
+Sadece ben oraya P1 Struct'ını göndersem ki fonksiyonlara gelince onu yapacağız.
+
+286
+01:15:41,144 --> 01:15:43,664
+Sürekli böyle kopyala yapıştır, kopyala yapıştır uğraşmayacağım.
+
+287
+01:15:46,024 --> 01:15:48,324
+Peki tersten yazdırmak istersek ne yapabiliriz?
+
+288
+01:15:48,703 --> 01:15:51,224
+Döngüyü tersten çalıştırırız. Şöyle yapalım.
+
+289
+01:15:55,155 --> 01:15:58,155
+Bu P1 terim sayısından başlasın.
+
+290
+01:16:01,811 --> 01:16:13,131
+Niye eksi birden başlatıyorum? Çünkü terim sayısı kadar dizim yok. Yani dizinin bir önceki elemanından başla. Büyükken, nereden büyükken? İşte sıfırdan büyükken.
+
+291
+01:16:16,412 --> 01:16:20,492
+İ büyük sıfırken. Bunu azalt.
+
+292
+01:16:23,011 --> 01:16:27,731
+Oradaki değeri yazdır. Çıkınca en son İ sıfır olduğunda sıfırıncıyı yazdır.
+
+293
+01:16:30,579 --> 01:16:31,559
+Diyebiliyoruz.
+
+294
+01:16:33,280 --> 01:16:36,720
+Tabii en son şurada bir backslash n.
+
+295
+01:16:37,500 --> 01:16:40,239
+Şurada bir backslash n diyebiliriz.
+
+296
+01:16:45,460 --> 01:17:01,720
+Böyle. Gelelim burada elemanları kullanıcıdan almaya. Yani şunu yine alacağım. Hatta şunu alayım. Böyle random değil de scanf kullanarak bu işi yapalım.
+
+297
+01:17:03,180 --> 01:17:09,220
+Sıfırdan p1 terim sayısına kadar git. Artı artı falan. Şurası dursun.
+
+298
+01:17:14,163 --> 01:17:19,963
+Yüzde de, şimdi serimen katı sayısı.
+
+299
+01:17:27,923 --> 01:17:43,663
+Bizim elimizde P1 var. P1'in içinde terim sayısı diye bir alan var. Terimler diye bir alanımız var. Bunun iyisi var. Bunun altında işte ne vardı? Önce derece mi vardı? Derece var.
+
+300
+01:17:44,623 --> 01:17:50,684
+Bunu yazdığımda P1'in terimlerinin iyisinin, derecesinin bu adresini mutlaka söylemem gerekiyor.
+
+301
+01:17:51,604 --> 01:18:09,684
+T1'in adresini zaten T1 bize söylemez. T1 doğrudan değer. Onun terimlerini dersek tamam şu T1'in terimleri adresi söylüyor ama onun altındaki derece alanının adresini yine bilmiyoruz. Mecburen bunu kullanmak zorundayız arkadaşlar.
+
+302
+01:18:11,524 --> 01:18:15,123
+Derece, kat sayı önce mi demişiz?
+
+303
+01:18:16,864 --> 01:18:18,184
+Kat sayı diyelim.
+
+304
+01:18:19,731 --> 01:18:35,912
+Tabi bu okuyacağımız şey long flow olacak. Bu şekilde ScanF ile de bunu kullanabiliyoruz. Bunu yaptıktan sonra, şurayı alayım, tekrardan yazalım şuraya. Ve bakalım.
+
+305
+01:18:40,979 --> 01:18:50,559
+3 tane olsun. Dedi ki şu terimin kat sayısı. Tabi %d'nin burada karşılığını yazmadık. Şuraya i yazalım.
+
+306
+01:18:56,948 --> 01:19:21,908
+Katsayı 1.2 derece 3. Ondan sonra 2 derece 8. 5 derece 6. 1.2 üzeri 3. 2.0 üzeri 8. 5.0 x üzeri 6. Böyle değerleri de alıp okuyabiliyoruz.
+
+307
+01:19:24,948 --> 01:19:26,407
+Pointer değişkeni üreteceğim.
+
+308
+01:19:32,916 --> 01:19:46,355
+Bu pointer değişkeni yoluyla mesela scanf yapalım, ekrana yazdıralım, ne bileyim tekrardan ekrana yazalım, böyle şeyler deneyelim.
+
+309
+01:19:46,355 --> 01:19:55,876
+Bir kere P2'nin ampersand P1 diyerek bunu göstermesini yazmamız lazım.
+
+310
+01:19:56,835 --> 01:19:59,956
+Önce ne yapabiliriz? Önce ekrana yazdırmayla.
+
+311
+01:20:00,000 --> 01:20:02,319
+Basit olanla başlayalım. Yani şunu alacağım.
+
+312
+01:20:07,796 --> 01:20:25,956
+Bir kere P2'nin terim sayısına kadar git diyeceğim artık. Hani P2'yi kullanacaksak terim sayısı doğrudan bir değişken. P2'nin terim sayısına kadar giderken şurada yazacağım şeylerde ne değişecek?
+
+313
+01:20:36,180 --> 01:20:42,460
+Bu terimlerin i'incisine ulaş. O i'incinin altındaki kat sayılara ulaş.
+
+314
+01:20:43,980 --> 01:20:54,100
+Diyebiliriz. Aynı şekilde P2 terimler i derece.
+
+315
+01:20:55,960 --> 01:20:59,760
+Bunu şöyle yapalım. Kok operatörünü kullanmayalım. Burada noktayı kullanalım.
+
+316
+01:20:59,760 --> 01:21:02,200
+Noktayı kullanacaksak o zaman diyeceğiz ki
+
+317
+01:21:02,963 --> 01:21:04,144
+Şurada, pardon.
+
+318
+01:21:08,692 --> 01:21:10,155
+Yılız
+
+319
+01:21:13,876 --> 01:21:20,015
+E2'nin terimlerinin iyisinin derecesini yazdır. Şurayı da alalım şöyle.
+
+320
+01:21:27,859 --> 01:21:31,539
+Burada doğrudan ekrana yazdırabiliriz bu şekilde.
+
+321
+01:21:33,539 --> 01:21:38,340
+Şeyi görelim, ScanF ile nasıl kullanabiliriz?
+
+322
+01:21:42,931 --> 01:21:50,992
+ScanF ile kullanırken yine P2'yi yazacağız. Şurayı siliyorum.
+
+323
+01:21:55,347 --> 01:22:11,247
+P2 bir pointer'da. Bu pointer ile biz terimlere gideceğiz. Terimlerden i inciyi bulacağız. i inci'den kat sayıyı bulacağız. Bu bize bir değer döndürecek. Şu an buradaki değeri alabiliriz. Bu değerin adresini almak için de şunu kullanacağız.
+
+324
+01:22:22,195 --> 01:22:25,395
+Derecesinin adresi.
+
+325
+01:22:26,876 --> 01:22:27,935
+Böyle yapabiliriz.
+
+326
+01:22:29,115 --> 01:22:32,095
+Bundan sonra şöyle ekrana bastıralım burayı.
+
+327
+01:22:34,136 --> 01:22:35,015
+Ve çalıştırıyorum.
+
+328
+01:22:36,855 --> 01:22:38,275
+Ne var burada?
+
+329
+01:22:42,163 --> 01:22:44,163
+İnvalid Argument.
+
+330
+01:22:48,020 --> 01:22:52,579
+Oradan sonra nokta, şey nokta kullanmamız gerekiyor herhalde. Terimler i'den sonra.
+
+331
+01:22:52,700 --> 01:23:05,740
+Şurada evet. Terimler i derece. Çünkü terimler i'nin altında bir pointer yok. Terimler i eğer pointer türünde bir şey olsaydı, içerisinde pointer saklasaydı olurdu. Burada niye öyle bir hata yaptıysak.
+
+332
+01:23:08,212 --> 01:23:18,092
+Bu terimler iyi bir dizi. O dizinin altında derece alanları veya kat sayı alanları var. Şurada yapmışız da şurada nedense ona girmişiz.
+
+333
+01:23:22,420 --> 01:23:23,540
+3 terimli olsun.
+
+334
+01:23:23,960 --> 01:23:24,899
+33 oldu.
+
+335
+01:23:29,011 --> 01:23:44,671
+1, 1, 2, 2, 3, 3. Sonra bu birinci yazım şekli. 1, 1, 2, 2, 3, 4 diyelim. Bu da bu şekilde arkadaşlar.
+
+336
+01:23:48,435 --> 01:23:49,695
+Evet, sorumuz var mı?
+
+337
+01:23:54,868 --> 01:24:03,268
+Dinamik numara lokasyonu, pointer, ondan sonra structure şu an hepsi birbiriyle böyle kombin bir şekilde kullanılıyor.
+
+338
+01:24:06,708 --> 01:24:11,128
+Normalde dün bir derste buraya kadar geldik arkadaşlar. Burada bu konuyu bitireceğim.
+
+339
+01:24:11,388 --> 01:24:14,408
+Şimdi bir anlatmam gereken bir şey daha var onu da anlatayım.
+
+340
+01:24:15,888 --> 01:24:17,048
+Call by reference ile alakalı.
+
+341
+01:24:24,948 --> 01:24:33,948
+Ben aslında kısmen söyledim de sorguyu çözerken sizlerden de birileri vardı. Ama orada unuttuğum bir şey vardı. Şimdi daha değerli toplu anlatayım.
+
+342
+01:24:34,948 --> 01:24:52,247
+F fonksiyonuna değerler aktaracağım. Burada şöyle diyelim. X değişkenim olsun. İçerisinde 5 olsun. Y değişkenim olsun. İçerisinde 6 olsun.
+
+343
+01:24:54,228 --> 01:25:09,048
+x'i böyle gönderiyorum. y'yi call by reference'la gönderiyorum. Yani karmaşık şekilde. void ve integer x integer pointer y diye gönderelim.
+
+344
+01:25:12,048 --> 01:25:19,528
+Burada x eşittir 0, y eşittir 0. Tabi y'nin gösterdiği yerdeki değer eşittir 0 diyeceğiz.
+
+345
+01:25:23,923 --> 01:25:26,324
+Bu da after before delete print f.
+
+346
+01:25:27,523 --> 01:25:29,123
+Use the d.
+
+347
+01:25:30,724 --> 01:25:32,324
+It's really ideal.
+
+348
+01:25:51,956 --> 01:25:52,956
+Buna da şey deyelim.
+
+349
+01:25:54,095 --> 01:25:54,716
+Constant.
+
+350
+01:26:13,939 --> 01:26:23,699
+Şimdi 5-6-5-0. Bu normal bildiğimiz call by bölü, call by referans mekanizması.
+
+351
+01:26:24,739 --> 01:26:32,139
+Şimdi x'i aktardığımızda derin kopyalama oluyordu. Y'yi aktardığımızda derin kopyalama olmuyordu.
+
+352
+01:26:33,579 --> 01:26:39,723
+Adresler kopyalanıyordu. Şimdi bu tarz şeyler structure'larda da var. Eğer ben structure değişkenini...
+
+353
+01:26:39,923 --> 01:26:59,844
+Fonksiyonu aktarırsam, daha sonra gelecek hafta bunu konuşacağız detaylı olarak. Fonksiyonu aktarırsam, Structure buraya birebir kopyalanıyor. Dolayısıyla CallByValue çok tercih edilen bir şey değil. Çünkü hem bellekte fazladan yer tutacak hem de kopyalamanın da bir maliyeti var.
+
+354
+01:27:00,984 --> 01:27:06,963
+Bunun için biz CallBy referansı daha çok tercih ediyoruz. Fakat CallBy referansında şöyle bir problem var.
+
+355
+01:27:07,699 --> 01:27:26,399
+Eğer ben x'i aktarıp x'in değişmesini istemiyorsam, örneğin yazdıracağım bir fonksiyonda. Bir diziyi yazdı, bir şeyleri yazdıracağım. Değişmesini istemiyorsam buna da bir engel koymam lazım. Tamam, kol bay referansı ikisini ama her şeye de sahip olmasın o fonksiyonu.
+
+356
+01:27:37,395 --> 01:27:45,036
+Bu oluşan sayısal değeri, yani integer değeri değiştiremezsin manasındadır.
+
+357
+01:27:46,295 --> 01:27:47,295
+Şunu alalım şöyle.
+
+358
+01:27:51,764 --> 01:28:06,863
+Compile ederken bakın diyor ki neymiş bu? Şurada read-only bir değişkene assignment yapamazsın. Yani sen bu değişkenin gösterdiği yerdeki değeri değiştiremezsin.
+
+359
+01:28:08,543 --> 01:28:17,244
+Buna invaded diyelim. Niye invaded? Çünkü değer üzerinde değişim yok. Ama şu yapılabilir.
+
+360
+01:28:18,036 --> 01:28:27,076
+Bu şu an y'yi gösterirken, burada, artık bu y değişkeni şunu göstersin diyebiliriz.
+
+361
+01:28:28,675 --> 01:28:31,015
+Buradaki x'in değerini göstersin.
+
+362
+01:28:32,515 --> 01:28:36,655
+Buradaki x'in değeri, bu fonksiyona ait bir yeni bir x değişkeni var.
+
+363
+01:28:37,756 --> 01:28:38,956
+Bunun değerini gösterecek.
+
+364
+01:28:39,916 --> 01:28:43,595
+Dün burada ufak bir hata almıştık zaten. O şey, direkt x yazıyordum ben.
+
+365
+01:28:44,500 --> 01:28:48,340
+x'in değerini göstersin dediğimizde bakın bu engel vermiyor.
+
+366
+01:28:49,840 --> 01:28:50,479
+Bu valid.
+
+367
+01:28:52,340 --> 01:28:59,239
+Bundan sonra zaten burada yaptığım bir değişiklik hiçbir şekilde şuradakini bozmaz, değiştirmez.
+
+368
+01:28:59,239 --> 01:29:04,239
+Yani ben y'nin gösterdiği adresteki değeri al, 66 yap dediğimde.
+
+369
+01:29:06,819 --> 01:29:10,180
+Tabi burada yine şey yapamayız.
+
+370
+01:29:10,459 --> 01:29:11,139
+Çünkü constant.
+
+371
+01:29:11,636 --> 01:29:24,376
+Şuradaki değer neyse o aynen kalacak. Buna hiçbir şey yapamıyoruz. Gösterilen, point edilen adresi değiştirebiliyorum. Bu birinci durum. Şimdi ikinci durumu al bakalım.
+
+372
+01:29:39,796 --> 01:29:58,916
+Point edilen değişkeni değiştiremezsin diyor. Yani şunu yapmak invalid bir şey. Diyor ki bu read only bir şey. Bu pointer read only. Yani point edilen yer read only olduğu için şunu şöyle invalid diyelim.
+
+373
+01:30:06,836 --> 01:30:32,296
+Sıfırla diyebiliyoruz. Çünkü oradaki değer, bakın sıkıntı yok, çalıştı. Mesela F2'yi çağıralım. Şurada X eşittir, Y eşittir, ne bileyim 7 diye bir şey yapalım. F2'yi nasıl çağıracağız? X yazacağız. Sonra Y'nin adresini yazacağız.
+
+374
+01:30:34,579 --> 01:30:36,039
+En adresi.
+
+375
+01:30:42,292 --> 01:30:42,792
+Compile.
+
+376
+01:30:46,228 --> 01:30:52,167
+Tabii çağırmadık. Şunun öncesinde bir daha çağıralım.
+
+377
+01:30:56,756 --> 01:31:08,316
+7, 7, 7, 0. F2 de bunu sağladı. Yani bu mantıkla çalışıyor. Eğer bir pointerı sabit yaparız. Peki hem pointerı hem değeri sabit yapmak istiyorsak.
+
+378
+01:31:09,536 --> 01:31:20,716
+F3, constant, integer, constant, pointer, y. Bakın bu ikisi de invaded oldu.
+
+379
+01:31:23,988 --> 01:31:51,548
+Şimdi biz call by value'yu çok fazla tercih etmiyoruz arkadaşlar. Niye tercih etmiyoruz? Çünkü maliyet ve performans açısından maliyetli. Onun için call by referansı kullanmak lazım. Ama call by referansı kullanırken de özellikle C++'cılar şöyle bir şey yazarlar. Constant ifadesini mutlaka kullanırlar. İçeride bir değişiklik yapılması istenmiyorsa fonksiyonun tanımında constant'ı yazarız.
+
+380
+01:31:52,692 --> 01:32:16,711
+Bunu da anlatmış olalım. Şimdi şu bizim işimize nerede yarayacak? Şurası. Linked Listelerde, Structure'larda bir konu var. Mesela ekleme, silme yaparken bağlı listeye, LinkedListe'ye bir şeye ihtiyacımız olacak. Bir durum, bir case ile karşılaşacağız. Bu da head elemanın değişme ihtimali.
+
+381
+01:32:17,235 --> 01:32:25,935
+Linkli listeleri ayrık matematikte kağıt üzerinde anlattık da burada da kod üzerinde konuşacağız. Şöyle yapalım. Bu bir liste.
+
+382
+01:32:30,131 --> 01:32:32,131
+Bu da böyle otomatik shape üretiyor.
+
+383
+01:32:32,992 --> 01:32:36,311
+Şimdi ben eğer şu düğümü, şurada da head'im var.
+
+384
+01:32:38,351 --> 01:32:43,091
+Eğer ben bu düğümü sileceksem, head değişkenlik göstermesi gerekiyor.
+
+385
+01:32:43,091 --> 01:32:46,451
+Head'i değiştirmek için bir mekanizmaya ihtiyacım var.
+
+386
+01:32:47,091 --> 01:32:50,011
+Fonksiyonda shift pointer falan kullanacağız.
+
+387
+01:32:50,152 --> 01:32:51,371
+Yeri gelince onları konuşacağız.
+
+388
+01:32:52,751 --> 01:32:55,111
+Şimdilik bir saniye arkadaşlar.
+
+389
+01:33:20,659 --> 01:33:27,539
+Arkadaşlar, odada bir çalışma olacaktır. 15 dakika ara verelim. Geldiğimizde biraz daha devam edip dersi bitireceğim. 15 dakika sonra görüşürüz.
+
+390
+01:39:56,435 --> 01:39:58,715
+Evet arkadaşlar, devam edelim.
+
+391
+01:40:01,215 --> 01:40:01,915
+Burada mıyız?
+
+392
+01:40:04,315 --> 01:40:04,575
+Evet.
+
+393
+01:40:06,075 --> 01:40:10,935
+Bugün böyle bir, öğleden sonraki derste de biraz kesinti olabilir.
+
+394
+01:40:11,875 --> 01:40:13,135
+Odada bir tadilat işi var.
+
+395
+01:40:14,355 --> 01:40:14,575
+Neyse.
+
+396
+01:40:17,215 --> 01:40:20,555
+Daha çok şunu kullanıyoruz arkadaşlar, şuradakini.
+
+397
+01:40:21,975 --> 01:40:23,456
+Değer referans da gelsin.
+
+398
+01:40:24,180 --> 01:40:32,500
+Aslında en garantisi, hiçbir şey değişmesini istemiyorsanız, şunu kullanmaktır. Bunların farkları böyle.
+
+399
+01:40:32,500 --> 01:40:38,500
+Bunu da zaten size paylaşacağız. Şunu kaydet diyelim.
+
+400
+01:40:42,131 --> 01:40:47,191
+Dün yaptığımız örneklerden bir tane daha vardı. Bunu da açayım.
+
+401
+01:40:51,220 --> 01:41:14,860
+Konuşmadığımız bir şey varsa o daha eksik kalmasın. Normal bir structure oluşturduk. Şu tanımlamaların hepsini yapabilmemiz mümkün. Üçüncü derece, dördüncü derece istediğiniz şekilde pointer tanımlayabilirsiniz. Bakın burada bir dizi var. Bu P4 içerisinde ikişer tane kat sayı derece on tane eleman tutar. Yani bakın bu normal bir dizi.
+
+402
+01:41:15,475 --> 01:41:42,296
+İnteger dizisinden değer saklayan bir dizi. Şu da bu türde adres saklayan bir dizi. İçerisindeki işte bu kat sayı derecelerin adreslerini falan saklayabilirsiniz. Matris tanımlanabilir. Şurada zaten erişimle alakalı örnekleri yapmıştık. Bu örneği de ayrıca eklerim. Veya şu baştaki kısımları ekleyeyim. İşte derece kat sayı nedir ne değildir. Şunları konuştuk.
+
+403
+01:41:42,899 --> 01:41:47,500
+Burada da bir fark yok. Devam edelim şuradan biraz.
+
+404
+01:41:50,579 --> 01:41:55,779
+Şimdi fonksiyonlara parametre olarak structure'ların aktarılması, gönderilmesi.
+
+405
+01:41:57,399 --> 01:42:09,559
+Bir structure iki şekilde gönderiliyor. Default olarak arkadaşlar structure elemanını bir şeye gönderdiğinizde, fonksiyona gönderdiğinizde call by value ile gidiyor.
+
+406
+01:42:10,420 --> 01:42:12,559
+Yani bir dip kopyalama işlemi var.
+
+407
+01:42:13,880 --> 01:42:16,420
+O zaman şu az önceki örneğimizi...
+
+408
+01:42:16,979 --> 01:42:17,760
+Neredeydi o?
+
+409
+01:42:18,960 --> 01:42:19,520
+Bir açayım.
+
+410
+01:42:21,600 --> 01:42:22,340
+Hafta yedi.
+
+411
+01:42:26,676 --> 01:42:32,195
+Structure 2'yi kopyalayacağım. Structure 3 diyeceğim buna. Farkını görmeniz açısından.
+
+412
+01:42:40,532 --> 01:42:44,532
+Şu ikide bir yazdırma işlemlerini kapatıyorum buradan.
+
+413
+01:42:49,532 --> 01:42:53,532
+Void, polinom, yaz diyelim.
+
+414
+01:42:58,323 --> 01:43:02,523
+Bunu yazarken, mesela şuradakilerden birini alalım.
+
+415
+01:43:06,036 --> 01:43:09,876
+Şuraya yapıştıralım. Geri kalanların hepsini siliyorum.
+
+416
+01:43:11,156 --> 01:43:15,515
+Veya silmeyelim de, ihtiyacımız olduğu yerde polinom çağrısını diyorum.
+
+417
+01:43:16,275 --> 01:43:19,355
+Örneğin şurada atamayı yaptık, şurada yazdıracağız.
+
+418
+01:43:20,636 --> 01:43:23,195
+Polinom yaz dedik.
+
+419
+01:43:24,476 --> 01:43:29,836
+Ben bu polinomu gönderirken t1 şeklinde çağırırsam, işte bu kolbay veriyorum.
+
+420
+01:43:34,515 --> 01:43:38,515
+Şimdi şurayı iptal edebiliriz.
+
+421
+01:43:40,515 --> 01:43:47,775
+Gelelim içeriğini yazalım. Buraya bir polinom gelecekse, polinom, işte P dedik. Hatta P1 dedik.
+
+422
+01:43:49,235 --> 01:43:50,975
+İçeride bir tane integer iyi tanımlayalım.
+
+423
+01:43:52,175 --> 01:43:57,735
+Şimdi P1 artık bu şey değil, normal bir değişken. P1'in terim sayısına kadar git.
+
+424
+01:44:00,051 --> 01:44:11,631
+P1'in terimlerinin kat sayısını yazdır. Ondan sonra P1'in terimlerinin derecesini yazdır. Şurayı da alalım. Şöyle yapalım.
+
+425
+01:44:28,083 --> 01:44:39,963
+Derimlerin sıfırıncının kat sayısını eşittir sıfır desem. Yukarıda yansıyacak mı bu? Çağırılan yere.
+
+426
+01:44:43,956 --> 01:44:48,836
+Hayır, yansımayacak. Çocuğu bu başka bir yerde. Hatta bunu görmek adına şöyle yapalım. Printf diyelim.
+
+427
+01:44:50,015 --> 01:44:51,336
+%p diyorum.
+
+428
+01:44:53,015 --> 01:44:54,976
+Polinom adres.
+
+429
+01:44:56,976 --> 01:44:58,495
+İşte 2 diyelim buna.
+
+430
+01:45:01,255 --> 01:45:03,296
+P1'in adresini yazdır.
+
+431
+01:45:07,699 --> 01:45:24,199
+Yukarıda da geliyorum buraya. Polinom yazdıktan önce polinom adres 1 diyorum. Şuradaki P1'in adresini yazdır diyorum. Şundan aşağısı gitsin. Şimdilik burayı bir kapatalım.
+
+432
+01:45:30,292 --> 01:45:31,132
+4 dedim.
+
+433
+01:45:32,392 --> 01:45:33,032
+O bayağı iyi.
+
+434
+01:45:34,311 --> 01:45:39,632
+Şurada backslash endi.
+
+435
+01:45:44,275 --> 01:46:11,476
+Bakın bunun adresi 62F'de F0, 62F'de E0. Böyle bir farkı var. Gördüğünüz gibi ikisi birbirinden farklı. Ben şu fonksiyonu şurada tekrar çağırdığımda, P1'in değerlerinin sıfırlanmadığını göreceğim. Şuraya hatta I artı bir diyelim sıfırlanmadığını göstersin bize.
+
+436
+01:46:13,779 --> 01:46:33,840
+Önceki 1x1, 3x2, 0x3'müş. Bir dakika nasıl oldu? İçeride yazıyoruz tabii. İçeride yazınca 1x1, 3x2, 0x3.
+
+437
+01:46:39,956 --> 01:46:43,796
+P1'in terimlerinin derecesi.
+
+438
+01:46:44,876 --> 01:46:54,316
+Ha, tabii burada şu var arkadaşlar. Şunu iptal edeyim. Şöyle diyeceğim. P1 nokta terim sayısı. Mesela o dizi olduğu için diziden kaynaklı mı yapıyor diyeceğim de.
+
+439
+01:46:55,256 --> 01:46:56,536
+Yok, yapmaması lazım aslında.
+
+440
+01:47:00,979 --> 01:47:02,519
+Geri alayım, bir daha çalıştıracağım.
+
+441
+01:47:07,028 --> 01:47:27,087
+Şimdi önce şunu yaptı, sonra bunu sıfırlayabildi. Allah Allah. Bunun kuralı default olarak şey miydi? Yani böyle aktarılmasına rağmen ama değerler değişik. Birisi FD, F0, birisi FD, E0. Niye böyle bir durum var?
+
+442
+01:47:30,771 --> 01:47:33,331
+Burada tekrar sıfırlamış olmaması gerekiyor.
+
+443
+01:47:39,667 --> 01:47:41,427
+Şöyleştireşipim.
+
+444
+01:47:46,547 --> 01:47:49,107
+Bunu bir daha bakacağım da arkadaşlar, bir de şunu deneyelim.
+
+445
+01:47:51,827 --> 01:47:56,227
+P1 nokta, serim sayısı eşittir.
+
+446
+01:47:57,847 --> 01:47:59,267
+28 diyeyim.
+
+447
+01:48:04,979 --> 01:48:11,379
+Şurada printf e1 nokta derim sayısı.
+
+448
+01:48:27,347 --> 01:48:30,128
+Burada önce terim sayısı, ne girersek o.
+
+449
+01:48:40,212 --> 01:48:40,972
+Bunu da şöyle yapayım.
+
+450
+01:48:48,180 --> 01:49:11,960
+Bakın 3'e 3. Muhtemelen burada dizi kullandığımız için bu diziyi kopyalamıyor. Evet. Ha şey doğru tamam. İçerisinde böyle dinamik memoriyle saklanmış bir alan olduğu için dipkopi aslında yapıyor. Fakat şu bir adres tutuyor arkadaşlar. Dolayısıyla bu adresin dipkopisi yapılacağı için.
+
+451
+01:49:12,851 --> 01:49:37,491
+Dizinin orijinalinin değiştiğini görüyoruz. Ama bakın bu değişmedi. Zaten Structure'da bir konu vardır. Structure Copy diye zaman gelince konuşacağız. Structure Copy yapmakta hiçbir sıkıntı yok ama içerisinde böyle polino yani bir mallokla oluşturmuş veya pointerla tutulan bir değişken varsa orada sıkıntı var. Şu birebir dip copy oluyor. Şu da adres üzerinden dip copy oluyor.
+
+452
+01:49:38,228 --> 01:50:00,408
+Normalde bakın, şu fonksiyonda p1'in adresi başkaydı, dışarıdaki p2'nin ki başkaydı. Biz buna yine call by value diyeceğiz arkadaşlar ama. Tamam mı? Birinci durum böyle. Terim sayısının farklı olduğunu gördük. Şuradaki pointerdan kaynaklı o farklılık önemli değil. Onu daha sonra ayrıca konuşacağız zaten.
+
+453
+01:50:01,768 --> 01:50:04,287
+Şimdi şunu kapatıyorum, şunları siliyorum.
+
+454
+01:50:06,484 --> 01:50:24,284
+Şimdi artık şurada terim sayısı, tersten yazdırma falan var. Hani onları silelim. Bununla işimiz yok. Sonra mesela ben şu ScanF ile yaptığım işi yapmak istiyorum. Ctrl X diyeceğim.
+
+455
+01:50:26,784 --> 01:50:31,784
+Void, Polinom, Okulu yer.
+
+456
+01:50:34,676 --> 01:50:40,676
+Daha da modüler hale getiriyoruz. Yine burada Call by Value yapmaya çalışacağım.
+
+457
+01:50:42,676 --> 01:50:54,316
+Call by Value yaptığında şurası dizi olduğu için içerisini değiştirebiliyoruz. Çünkü belli bir adresi tutuyor. Bunda da problem olmaz.
+
+458
+01:51:01,492 --> 01:51:03,492
+Polinom oku, E1.
+
+459
+01:51:05,492 --> 01:51:08,492
+Sonra tekrardan polinomu yazdırıyoruz.
+
+460
+01:51:15,283 --> 01:51:25,884
+Şunu şöyle alalım. Şuraya diyelim. İçerideki terimler isimli enter.
+
+461
+01:51:28,384 --> 01:51:38,283
+Üzünden call by ref gibi çalışır diyelim. Yani içerimi kısmen değiştiriyoruz ama...
+
+462
+01:51:38,463 --> 01:51:46,203
+Mesela P1'in içerisindeki o terim sayısı değişkenini maalesef değiştiremiyoruz. İçerisi aynen kalıyor.
+
+463
+01:51:47,163 --> 01:51:50,323
+Polinom yaz dedik. Şunu da iptal edebiliriz.
+
+464
+01:51:51,364 --> 01:51:54,984
+Şimdi geldik. P2'ye ben P1'i göstereceğim.
+
+465
+01:51:54,984 --> 01:52:03,984
+P2'ye P1'i gösterince P2 yoluyla bir polinom yaz fonksiyonu.
+
+466
+01:52:05,908 --> 01:52:26,988
+Yazmak istiyorum. Ben oraya diyeceğim ki P2'yi gönder veya P1'in adresini gönder diyebiliriz. Polinom yaz versiyon 2 diyorum buna. Şimdi şu polinom yaz versiyon 2'yi birazcık güncellememiz gerekiyor. Artık oradan biliyoruz ki bir pointer gelecek. Pointer geleceği için şunları da silelim.
+
+467
+01:52:29,619 --> 01:52:41,000
+Bir kere kolbay referans mekanizması gibi çalışacak. Bu pointerdan dolayı, hatta şurayı da düz yazdıralım arkadaşlar. Tersten yazmasın. Şurayı da iptal edeyim.
+
+468
+01:52:46,292 --> 01:53:00,832
+Artık şurayı değiştireceğim. Bu P1'in terimlerinin iyisinin kat sayısı, P1'in terimlerinin iyisinin kat sayısı, P1'in terimlerinin iyisinin kat sayısı.
+
+469
+01:53:02,032 --> 01:53:02,852
+Bir saniye arkadaşlar.
+
+470
+01:53:09,395 --> 01:53:18,916
+Bu şekilde polinom Structure'ını pointer vasıtasıyla fonksiyona aktarabiliyoruz.
+
+471
+01:53:18,916 --> 01:53:22,335
+Polinom yaz versiyon 2 diyelim.
+
+472
+01:53:24,735 --> 01:53:33,635
+Artık şu şey yine aynı şekilde polinom yaz versiyon 2 deyip aslında polinom okuyu böyle yazmak gerekiyor.
+
+473
+01:53:35,060 --> 01:53:38,020
+Ben P1'in adresini göndermek istiyorum.
+
+474
+01:53:39,460 --> 01:53:41,699
+Ve burada terim sayısını da kullanıcıdan alalım.
+
+475
+01:53:43,939 --> 01:53:47,159
+Hani her şey fonksiyonun içerisinde olsun.
+
+476
+01:53:47,159 --> 01:53:50,480
+Onun için önce integer n dedim.
+
+477
+01:53:51,939 --> 01:53:56,819
+Terim sayısı yerine dedim.
+
+478
+01:54:00,819 --> 01:54:02,819
+Buraya gelen şey artık pointer.
+
+479
+01:54:05,819 --> 01:54:07,139
+%d
+
+480
+01:54:12,659 --> 01:54:23,500
+P1'in terim sayısı ne olacak? Eşittir n olacak. Burada n'i tanımlamak zorunda değiliz. Şunu da yapabiliriz. Hatta n'i silelim.
+
+481
+01:54:25,380 --> 01:54:36,319
+P1'in terim sayısının adresine git diyeceğiz. Terim sayısına girdik. Sonra P1'in terim sayısı kadar dön.
+
+482
+01:54:38,895 --> 01:54:48,015
+Terimlerinin kat sayısını al. E1'in terimlerinin derecelerini al. Kullanıcıdan oku. Buna da versiyon 2 diyorum.
+
+483
+01:54:53,140 --> 01:55:16,579
+Polinom Oku, Polinom Yaz. Başka bir alternatif var mı? Mesela şurada ne yapıyoruz? Bu önemli değil. Yani burada tekrardan istersek Polinom Oku Yaz versiyon 2'yi çağırabiliriz. Şunu zaten yukarıda benzerini, aşağıda benzerini yaptık. Bunu da geçelim. Şunlar da zaten aynı yazdırma işlemleri.
+
+484
+01:55:19,475 --> 01:55:26,475
+Bakın bu polinomların veya herhangi bir structure'ın fonksiyona iki farklı şekilde geçecek.
+
+485
+01:55:26,475 --> 01:55:28,475
+CallByRef.
+
+486
+01:55:29,475 --> 01:55:31,475
+Veya işte şurada bir CallByRef.
+
+487
+01:55:33,475 --> 01:55:35,475
+İçeriği kesinlikle değişecek.
+
+488
+01:55:37,475 --> 01:55:38,475
+Compile edelim.
+
+489
+01:55:39,475 --> 01:55:44,475
+Burada ne var? Versiyon 2 burada terim sayısı şu olacak. Eski yazlıklarımızı kopyaladığımız için.
+
+490
+01:55:46,100 --> 01:55:52,239
+Arada ufak tefek kaçaklar olabilir. Şurada da Integer E tanımındaymış.
+
+491
+01:55:57,876 --> 01:56:04,176
+İntajör E'yi sokmuş. Hatta bunu buraya tanımlamamamız lazım. En başa yazacağız.
+
+492
+01:56:17,492 --> 01:56:18,091
+Siderik.
+
+493
+01:56:29,332 --> 01:56:30,612
+Bu şekilde yeterli olur herhalde.
+
+494
+01:56:33,592 --> 01:56:38,712
+Tabi bir yerde polinom oku versiyon 2'yi çağırmadığımız için şuradaki şeyi görmedik zaten onu da denersiniz.
+
+495
+01:56:41,492 --> 01:56:43,572
+Slide'dan biraz daha devam edeyim.
+
+496
+01:56:46,512 --> 01:56:47,992
+Call by reference, call by value.
+
+497
+01:56:49,072 --> 01:56:54,732
+Bunun call by referansın ve pass by referansın daha hızlı olduğunu ve daha etkili olduğunu konuşmuştuk.
+
+498
+01:56:55,764 --> 01:57:21,323
+Ben referansı tercih ederim arkadaşlar. Diğer dillerde de bazı C++, C++ da onu kullanıyoruz. Bu pointer şeyin tamamına refer ediyor. Bunun field'larına refer etmiyor. Dolayısıyla şunu veya bunu kullandığınızda bir pointerda scanf gibi bir şey kullanıyorsunuz. Ampersand yazmak zorundayız.
+
+499
+01:57:22,547 --> 01:57:25,307
+Şimdi gelelim bir başka konuya.
+
+500
+01:57:29,395 --> 01:57:36,035
+Bunu da anlatsam buraya haftaya gireriz herhalde. Detayına bir bakalım da.
+
+501
+01:57:42,131 --> 01:57:43,151
+Şunu kapatıyorum.
+
+502
+01:57:45,751 --> 01:57:46,811
+Bunu kapatıyorum.
+
+503
+01:57:49,811 --> 01:58:01,571
+Ben şeyle pek uğraşmak istemiyorum arkadaşlar. Soruyu birazcık daha değişik hale getireceğim. Aynı polinom devam edecek. Fakat birazcık değişiklik yapacak.
+
+504
+01:58:09,524 --> 01:58:21,703
+Mallok'la bir yer ayırdığımızda, örneğin 10 elemanlı bir polinom oluşturalım dediğimizde, 10 terimli bir polinom oluşturalım dediğimizde, ne oluyor?
+
+505
+01:58:23,283 --> 01:58:31,304
+Bu 10 ile kalıyor. Eğer 11 yapmak istersek bu terimleri realok yapmamız lazım. Bunu bileceğiz.
+
+506
+01:58:36,979 --> 01:58:59,039
+Terim ekleyeyim. Burada Linked Listler devreye girer. Siz ekledikçe liste genişler. Silerseniz liste tekrar daralır. Tekrardan reallog yapmayla uğraşmazsınız. O zaman şu yapıyı birazcık değiştireceğiz. Bizim yine polinomuzda terimler olacak. Şurada çizmeye çalışalım önce.
+
+507
+01:59:01,439 --> 01:59:04,039
+Şunun ayarları vardı ya bu.
+
+508
+01:59:07,444 --> 01:59:10,364
+İnan dediğiniz bir otomatikçe çevriyor.
+
+509
+01:59:12,923 --> 01:59:14,123
+İnanın tüşebi.
+
+510
+01:59:17,747 --> 01:59:44,247
+İşte bir polinom var. Polinomun içinde terimler var. Yani bu bir terimler tutuyor. İçinde ayrıca dizi. Böyle bir şey olsun istemiyorum. Bir de işte burada ne var? Terim sayısı var. Şurada her bir terim için bir dizimiz var. Yapımız böyle.
+
+511
+01:59:44,851 --> 02:00:08,252
+Ben diyorum ki bunu daha farklı halde yapalım. Örneğin, ilk şekle geri dönecek olursak, derece, kat sayı, derece, kat sayı, böyle bir mantıkla şey yapacağız.
+
+512
+02:00:13,011 --> 02:00:39,971
+Next dediğim şey. Gösteren buraya bir pointer ekleyeceğim. Bir sonraki ne türünde olacak? Bu terim türündeyse, yani terim diye söylersek, bir sonraki de terim türünde bir şey gösterir. Yani terimin pointer'ını tutacağız. Bu da aynı şekilde. O zaman şöyle bir yapıya ihtiyacımız var. Zaten Linked List'in mantığı neydi? Kendinden sonraki düğümü tutacaktır.
+
+513
+02:00:40,372 --> 02:01:07,292
+Ben bunu programda yazarken burada bir data, datanın ne olduğu önemli değil. Bu da bir sonraki, next. Hatta istersek bir önceki. Şu yapıya node diyoruz. Bu noddan bir süre olursa bu da linked list oluyor. O zaman benim node tarzı bir pointer tasarlamam gerekecek. Bunu yaparken de ilk bahsettiğimiz şeye terimler üzerinden bunu yapalım diyorum. Benim bir tane terimim var.
+
+514
+02:01:08,435 --> 02:01:29,155
+Bu terimin içerisine bir sonraki diye bir şey yazacağım. Şimdi terimin bir sonrakinin next'ini yazarsam bu olmaz. Çünkü bu bir değişken demek. Bir sonrakinin adresini yazacağız. Şu şekilde ifade ediyoruz.
+
+515
+02:01:29,716 --> 02:01:52,376
+Şimdi self-structure dediğimiz yapı budur arkadaşlar. Yapı kendi içinde bir adres, kendisinin adresini saklıyor. Burada da şöyle bir problem var. Bir kere önce şunu söyleyeyim. Bu olmazsa böyle bir yapıyı tasarlayamam. Mesela type-def structure, ne bileyim polinom dedik, integer a diyelim, b diyelim.
+
+516
+02:01:58,836 --> 02:02:03,176
+Next diyor. Önce şunu bir kapatalım.
+
+517
+02:02:13,332 --> 02:02:14,972
+Structure.
+
+518
+02:02:18,931 --> 02:02:39,931
+Dedi ki bu henüz diyor bilinmeyen bir şey. Yani şu satıra geldin ama daha polinom diye bir şey yok. Onun için bunu type, def, struct deyip boş bırakamıyorum. Buraya bir polinom diye bir şey yazacağız. Ve burayı structure bir defaya mahsus polinom şeklinde ifade edeceğiz. Her durumda bu böylesi.
+
+519
+02:02:45,684 --> 02:03:10,923
+İnkomplete olan, daha tanımlaması bitmedi. Yani bu dediği olup bitmiş bir şey değil ki sen bunu burada yapasın. Buna da izin vermiyor. Onun için zaten pointer'ını yazmamız gerekecek. Bakın şimdi bu yapıyı kurabiliyoruz. Self-structure dediğimiz kendi içerisinden adres tutan, kendinde kendinin adresini tutan veya kendi içerisinde kendi türünden bir adres tutan yapı tasarlanmış oluyor.
+
+520
+02:03:12,659 --> 02:03:14,659
+Peki biz bunu şuna uyarlayalım.
+
+521
+02:03:14,659 --> 02:03:16,659
+Type Dev Structure
+
+522
+02:03:16,659 --> 02:03:18,659
+Derimlerim
+
+523
+02:03:22,036 --> 02:03:32,856
+Struct, Terim, Next diyorum. Sonraki Terim. Şu şeyi bir daha açayım. Open diyelim.
+
+524
+02:03:34,856 --> 02:03:37,316
+Struct all, ne oldu? Close.
+
+525
+02:03:41,108 --> 02:04:06,167
+Şu yapı önceden yani klasik bir diziyle dinamik memural lokasyonu ama 10 tane 100 tane ne girersen o en tane şeklinde diziyle yapmaya uygun bir şey. Ama ne sıkıntısı var? Bellekte peş peşe en tane yer bulamama problemi var. Normal dizilerle arasındaki hiçbir fark dizilerle yaşadığımız sorun.
+
+526
+02:04:07,904 --> 02:04:21,963
+Artık diyeceğim ki ben terim şeyini böyle saklayacağım. Bir sonraki terim, bir sonraki terim diye devam edip gideceğiz. Peki burada terim sayısını nerede tutabiliriz?
+
+527
+02:04:28,724 --> 02:04:30,463
+Terim sayısını nerede tutabiliriz?
+
+528
+02:04:36,948 --> 02:04:38,448
+Şunun içine eklesem olur mu?
+
+529
+02:04:40,848 --> 02:04:41,448
+Şuraya.
+
+530
+02:04:51,828 --> 02:05:04,648
+Niye olmaz? Her bir terimin içerisinde gereksiz yere terim sayısı terim sayısı diye bir değişken çok yer kaybettir. Bunu ayrı bir değişkenle veya Linked List'in özel bir elemanı vardı. Onun adı neydi?
+
+531
+02:05:11,091 --> 02:05:32,951
+Linkli listenin özel elemanın adı HelpNode. Güzel. Diyorum ki arkadaşlar şöyle bir şey yapalım. Ben linkli listenin terimlerini buradan elde edeceğim. TypeDev, Struct, yine Polinom diyorum. Sonra geliyorum. Şuraya da Polinom yazacağım.
+
+532
+02:05:38,163 --> 02:05:58,523
+Bu polinom şu terimleri tutacak. O zaman ben terim türünde bir headnoda ihtiyacım var. Diziyi tutabilmem için, polinomu tutabilmem için headnoda ihtiyacım var. Buradan bir tane pointer tutuyoruz. Sonra diyorum ki integer terim sayısı. Eğer terim sayısına bir ihtiyaç varsa.
+
+533
+02:06:05,363 --> 02:06:20,563
+Linkli listenin sonuna eleman eklemeye kalkarsak, nasıl bir karmaşıklık, algoritmik karmaşıklık gerekir? En tane eleman varsa linkli listede kaç defa kontrol yapmam lazım? Sonuna gitmek için.
+
+534
+02:06:25,619 --> 02:06:30,619
+Linkli listenin sonuna eleman eklemek istiyorum. Kaç defa işlem yapmamız lazım arkadaşlar?
+
+535
+02:06:33,619 --> 02:06:48,220
+En defa. Ama ben şunu bilsem ki her sona eklediğimde son adresin, yani son düğümün adresini saklasak, işte buna da last desek.
+
+536
+02:06:51,167 --> 02:06:57,607
+Son düğme gitsem, o last'ın gösterdiği yere eleman eklesem daha güzel olur değil mi?
+
+537
+02:06:57,607 --> 02:07:09,707
+Tabi ilk başta bizim head'imiz de last'ımız da null olacak. Hatta terim sayımız da sıfır olacak.
+
+538
+02:07:10,927 --> 02:07:17,347
+Ekleme yaptığımda head'i güncelleyeceğim. Aynı zamanda last'ı güncelleyeceğim. Daha sonra bunun detaylarına geleceğiz.
+
+539
+02:07:17,971 --> 02:07:34,791
+Şu an sadece ben bir aslında şu bile yeterli bir polinom saklamak için. Ama ben bunu biraz daha hani terim sayısı kaç tane, bu polinomda kaç tane işte hangi terim ilk terim, hangisi son terim bunları bulmak isteyebilirim.
+
+540
+02:07:34,791 --> 02:07:43,171
+Şimdi bir de anlatmadığımız şey kaldı. Onu da anlatayım. Yavaş yavaş bitireceğim.
+
+541
+02:07:43,828 --> 02:07:48,948
+Şurada arkadaşlar, ben bir polinom oluşturduğumda ilklendirme yapabilirim.
+
+542
+02:07:50,988 --> 02:07:53,028
+Polinom P3 diyelim.
+
+543
+02:07:54,288 --> 02:08:01,547
+Şimdi, ilklendirme yaparken eşittir demeyeceğiz burada. Küme parantezi açıyoruz. Aynı dizilerde olduğu gibi.
+
+544
+02:08:03,167 --> 02:08:04,667
+Yok, eşittir diyeceğiz ya. Pardon.
+
+545
+02:08:05,988 --> 02:08:11,127
+Mesela önce dereceyi yazmam gerekiyor. Derece, işte integer bir şey. Sonra 2.5 diyorum.
+
+546
+02:08:12,180 --> 02:08:14,180
+Şuradaki tanımına uygun olarak
+
+547
+02:08:15,760 --> 02:08:16,279
+burada
+
+548
+02:08:17,039 --> 02:08:19,100
+bu işlemi yapabiliriz. Şimdi compile edelim.
+
+549
+02:08:20,380 --> 02:08:21,399
+Tamam, bir sıkıntı yok.
+
+550
+02:08:21,659 --> 02:08:25,500
+Diyorum ki ne vardı? Bizim fonksiyonlar var mı? Di yokmuş şurada. Tamam.
+
+551
+02:08:26,260 --> 02:08:26,779
+Printed
+
+552
+02:08:30,644 --> 02:08:34,644
+Hatta bunu şeye yazalım arkadaşlar, buranın bütünlüğü bozulmasın.
+
+553
+02:08:36,644 --> 02:08:39,644
+Open diyelim, Structure 1'e yazalım.
+
+554
+02:08:50,612 --> 02:08:53,931
+P3 diyorum.
+
+555
+02:08:55,211 --> 02:09:00,331
+Mesela burada 4.5,6 şekilde yazacağız.
+
+556
+02:09:05,211 --> 02:09:08,531
+Yüzde long float, yüzde de
+
+557
+02:09:10,331 --> 02:09:11,612
+P3 nokta
+
+558
+02:09:13,652 --> 02:09:16,971
+Katsayı, P3 nokta derece
+
+559
+02:09:22,579 --> 02:09:38,900
+Eğer içerisinde bir başka structure varsa, biraz önceki şunda olduğu gibi, o zaman da iç içe yapmak için önce bir terim oluşturacağız.
+
+560
+02:09:38,900 --> 02:09:50,020
+Bakın onu yazalım. Terim isminde bir t şeyi oluşturuyorum. Eşittir diyorum ki bu 3,4 olsun.
+
+561
+02:09:51,123 --> 02:10:15,844
+4.0 olsun. Sonra polinom isminde bir T2 oluşturacağım. Eşittir. Şimdi bunu ilklendirirken terimlere atacağım şey T'nin adresi olacak. T'nin adresi doğrudan buraya. Tabi bu sefer bir tane atayabiliriz. Terim sayısı da işte ne olsun? 6 olsun diyebilirim.
+
+562
+02:10:17,844 --> 02:10:29,324
+Bizim şu Structure 2... Bir dakika, bunu şeye yazayım arkadaşlar. Öbür taraftaki neredeydi? Structure 3'e yazalım. Şunu alıyorum.
+
+563
+02:10:32,851 --> 02:10:36,252
+Muda Bozmian, Şurda Epa'y.
+
+564
+02:10:41,395 --> 02:10:49,895
+H1 var. 3'e 4.0. Diyeceğim ki şurada kolinom yaz. Hatta versiyon 2 vardı bizim.
+
+565
+02:10:54,484 --> 02:10:55,864
+P3 diyelim buna da.
+
+566
+02:10:57,364 --> 02:10:59,544
+P3'ü yaz, adresiyle gönder.
+
+567
+02:11:00,724 --> 02:11:01,904
+Öbür tüm de yazabiliriz.
+
+568
+02:11:05,124 --> 02:11:08,604
+P burada 3 dedik buna.
+
+569
+02:11:09,424 --> 02:11:10,164
+Şuna gerek yok.
+
+570
+02:11:14,131 --> 02:11:27,131
+4.3'e sıfırlık. Yani 4 çarpı x üzeri 3'lük bir şey. Tamam mı? Burada bir tane değer var. O da onu yazıyor. Böyle iklendirmeler yapabiliriz.
+
+571
+02:11:28,671 --> 02:11:40,131
+Şunu da close diyelim. Şunu da close diyorum. Şunu da close diyorum. Peki. Burada peki şeyi nasıl yapacağız? Bu ifadenin...
+
+572
+02:11:42,836 --> 02:11:49,996
+değişken üretimini yapalım. Örneğin ben önce bir terim oluşturacağım. Terim t1 dedim.
+
+573
+02:11:51,536 --> 02:11:56,916
+t1'in hatta iklendirmesini yapalım. 1,1 diyorum.
+
+574
+02:11:58,956 --> 02:11:59,996
+Compile
+
+575
+02:12:01,275 --> 02:12:02,796
+Ne dedi burada?
+
+576
+02:12:07,956 --> 02:12:09,956
+Bu da bir artya bir şey ataslar.
+
+577
+02:12:13,395 --> 02:12:14,395
+Tim Lust.
+
+578
+02:12:21,555 --> 02:12:27,655
+Atama burada olmuyor arkadaşlar. Pardon ben yanlış yaptım. Atama burada başka dilde var.
+
+579
+02:12:29,175 --> 02:12:32,155
+T1 şeyini atadık. Sonra bir terim daha oluşturuyorum.
+
+580
+02:12:34,275 --> 02:12:36,076
+Bir terim daha oluşturuyorum.
+
+581
+02:12:40,595 --> 02:12:43,595
+2
+
+582
+02:12:43,595 --> 02:12:46,595
+3
+
+583
+02:12:46,595 --> 02:12:50,075
+Sonra bir terim oluşturacağım ama bu
+
+584
+02:12:50,075 --> 02:12:51,595
+şey olacak.
+
+585
+02:12:52,475 --> 02:12:54,855
+Değişken olacak. Yani pointer değişken olacak.
+
+586
+02:12:55,295 --> 02:12:56,395
+T4 veya buna
+
+587
+02:12:56,395 --> 02:12:57,995
+T hat diyelim.
+
+588
+02:12:59,835 --> 02:13:01,275
+Diyorum ki T hat bizim
+
+589
+02:13:01,275 --> 02:13:04,555
+ilk elemanımız ne olsun? Mesela T3 olsun.
+
+590
+02:13:06,235 --> 02:13:06,915
+T3
+
+591
+02:13:09,908 --> 02:13:35,408
+T3'ün adresini t-head'te tut. Sonra t3'ün next alanına, t3'ün next'i dediğim şey bir pointer, eşittir diyorum. T2'nin adresini göster. Ondan sonra t2'nin next'ine eşittir.
+
+592
+02:13:36,724 --> 02:13:37,623
+P1'i göster.
+
+593
+02:13:43,412 --> 02:13:47,492
+T1'in Next'ini de alayım.
+
+594
+02:13:51,699 --> 02:14:11,920
+Burada bu diziyi ekrana yazdıralım. Mühendisliği, Mühendisliği, T-Head'in gösterdiği yeri göstersin.
+
+595
+02:14:18,771 --> 02:14:37,132
+Naldan farklı iken, printf, Mp'nin gösterdiği yerdeki derece, yüzde d, kat sayı, yüzde lf.
+
+596
+02:14:38,132 --> 02:14:46,192
+Mp'nin gösterdiği yerdeki dereceyi yaz. Mp'nin gösterdiği yerdeki kat sayıyı yaz.
+
+597
+02:14:47,123 --> 02:14:50,963
+Sonra tmp eşittir. tmp next yap.
+
+598
+02:14:52,764 --> 02:14:58,123
+Bu tmp pointer türde. Bunun nextine erişmek için şöyle bir şey yazacağım.
+
+599
+02:14:58,643 --> 02:15:01,963
+Ne yapıyor? Bu döngü baştan sona dönecek.
+
+600
+02:15:03,243 --> 02:15:05,563
+Şurada da şöyle diyelim.
+
+601
+02:15:06,063 --> 02:15:07,603
+Şurada bağlamayı yaptık.
+
+602
+02:15:09,403 --> 02:15:10,163
+Bir yerinde de
+
+603
+02:15:11,183 --> 02:15:14,003
+Aşağıda ekrana yazdırıyoruz. Bakalım da hatamız var mı?
+
+604
+02:15:16,180 --> 02:15:26,280
+3 3 2 2 1 1 Tamam mı? İstediğimiz kadar düğüm ekleyebiliriz. Terim ekleyebiliriz.
+
+605
+02:15:27,160 --> 02:15:32,520
+Peki şu ifadeye göre bunu yapsak. Böyle terim pointer oluşturmak birazcık zor.
+
+606
+02:15:33,340 --> 02:15:39,560
+Diyorum ki ben şuradan şey kullanacağım. O zaman polinom türünde bir tane şey olsun.
+
+607
+02:15:39,560 --> 02:15:43,520
+Polinom. Benim bir tane polinomum var. P1.
+
+608
+02:15:45,684 --> 02:15:53,423
+Ben diyorum ki bu P1'in altındaki head dediğim şey, örneğin burada ne olsun? T1'in adresi olsun.
+
+609
+02:15:55,884 --> 02:16:01,644
+Şimdi şurada T1'in next'ini null yaptığım için artık bunu değiştirmem gerekiyor.
+
+610
+02:16:01,644 --> 02:16:11,943
+Çünkü T1'in next'i burada çalışmayacak. Ondan sonra T1'in next'ini diyorum ki T2 olsun artık.
+
+611
+02:16:14,036 --> 02:16:25,115
+Ve şuradaki bağlar kopar arkadaşlar. Yani ben bu satıra geldiğinde şuradaki bağlar kopar. Şu satırı tekrar çalıştırırsam TMP üzerinden farklı sonuçlar görürüm.
+
+612
+02:16:25,115 --> 02:16:40,048
+P1'in neksti T2 olacak. Terim 2'nin neksti T3 olacak. Terim 3'ün...
+
+613
+02:16:40,048 --> 02:16:46,448
+Bunu da böyle bıraktım şimdilik. Diyorum ki yine TMP düğümüm vardı benim.
+
+614
+02:16:49,683 --> 02:17:09,243
+Bu TMP ile biz neyi yazacağız? Terimleri yazacağız. İlla ki bir TMP düğümüne ihtiyacım var. Eşittir. Diyorum ki P1'in pedini al, TMP'ye kopyalım. Ekranda ne görürüz şimdi? Şurada. 1, 1, 2, 2, 3, 3 şeylerimiz.
+
+615
+02:17:18,675 --> 02:17:40,115
+Önce T1'i gösterdiği için şundan 1-1 yazılır. Sonra bir sonrakine geçilir. T2'yi gösteriyor. 1-1 yazılır. Sonra bir sonrakine geçiyor. T3'ün sonrakisi ne? T3'ün sonrakisi T2.
+
+616
+02:17:46,291 --> 02:18:12,351
+Sonra T2'nin next'i T3 olduğu için sonsuza kadar devam edeceğiz arkadaşlar. Bakın burada. Bakarsak hep 3-2, 3-2 veya 2-3, 2-3 diye sonuç görüyoruz. Veya burada ne diyebiliriz? T3'ün next'i eşittir. Ampersand.
+
+617
+02:18:12,736 --> 02:18:25,716
+T1 diyelim. Burada da ne var? Dairesel bir liste oldu. 1-2-3, 1-2-3, 1-2-3 diye devam edip gidiyor. Böyle sonsuza kadar yazdırabiliriz.
+
+618
+02:18:25,716 --> 02:18:40,556
+Şimdi burada şunu kullanmak, polinom olarak bir şey kullanmak pek de tercih edilmiyor arkadaşlar. Onun için polinomun adresi,
+
+619
+02:18:40,623 --> 02:18:48,504
+üzerinden yapmak da var. Böyle bir olasılığımız da var. P2 dedik. Şimdi şurayı şöyle kopyalayacağım.
+
+620
+02:18:52,308 --> 02:19:06,948
+Elimizde bir polinom yok ama terimler var. Diyorum ki polinom 2'nin hedi T1. T1 diye bir terim var. Onun için polinom 2'nin hedi bundan sonra T1'i gösterir.
+
+621
+02:19:07,288 --> 02:19:14,268
+T1'in meksti T2, T2'nin meksti T3, T3'in meksti T1. Hatta bunu artık nal yapalım şurada da.
+
+622
+02:19:16,728 --> 02:19:18,384
+Temporary dediğimiz şey de...
+
+623
+02:19:18,384 --> 02:19:20,384
+P2'nin head'i olacak.
+
+624
+02:19:22,484 --> 02:19:23,763
+Geçici düğümümüz.
+
+625
+02:19:25,543 --> 02:19:28,884
+Ve ben burada temporary gezdiğimde bakın P2
+
+626
+02:19:29,644 --> 02:19:34,004
+bir pointer saklıyor. O pointerın içindeki head alanı
+
+627
+02:19:34,263 --> 02:19:36,043
+neyi sakladı?
+
+628
+02:19:36,304 --> 02:19:37,844
+T1'in adresini sakladı.
+
+629
+02:19:39,123 --> 02:19:40,144
+Şurada
+
+630
+02:19:41,164 --> 02:19:42,443
+Şurayı kapatayım.
+
+631
+02:19:44,504 --> 02:19:46,023
+O sonsuz döngü.
+
+632
+02:19:48,852 --> 02:19:53,752
+3, 2, 1. Doğru bir şekilde sıralım.
+
+633
+02:19:53,752 --> 02:19:55,252
+P, bir dakika.
+
+634
+02:19:58,963 --> 02:19:59,884
+Yapkan iyi yazmadı.
+
+635
+02:20:07,283 --> 02:20:10,263
+P2'nin hediye T1'in adresini gösterecek.
+
+636
+02:20:13,811 --> 02:20:14,811
+Tamam.
+
+637
+02:20:34,579 --> 02:20:46,619
+Bir polinom oluşturmadığı için mi diyeceğim de, evet tamam. Bu şekilde olmuyordu arkadaşlar. Bunu illaki bir polinom oluşturacağız, öyle yapacağız. Onda bir sıkıntı yok.
+
+638
+02:20:47,119 --> 02:20:56,079
+Bakın birinci yöntem, LinkedDiskler'de konuşacağız daha fazla bunu. Şu şekilde, yani şöyle bir structure'ım yok, sadece bu var elimde.
+
+639
+02:20:56,860 --> 02:20:59,920
+Bir tane head'im var, head'den diğerlerine gidebiliyoruz.
+
+640
+02:21:00,340 --> 02:21:26,659
+Ve diğerlerini ucuca ekleyeceğiz. Tabi bu ekleme işini daha sonra otomatize fonksiyonlarla yapacağız. Böyle elle yapmayacağız. Dizinin başına ekleme, sonuna eklemelerle uğraşacağız. Şimdilik bu kadar. Self Structure konusu ve düğümler arasındaki ilişkinin nasıl olduğunu bugünlük bu kadar anlatalım. Yeterli. Herhangi bir sorumuz var mı? Şurayı sileyim o zaman.
+
+641
+02:21:28,051 --> 02:21:48,891
+Açalım. Haftaya kaldığımız yerden devam ederiz. Link listin implementasyonuyla alakalı burada bazı şeyler var. Biz burada farklı örneklerinden anlatıyoruz. Ona da geleceğiz. Link listlerden haftaya devam ederiz. Sadece self-structure anlatmış olalım.
+
+642
+02:21:51,011 --> 02:21:52,092
+Evet.
+
+643
+02:21:55,123 --> 02:22:04,304
+Sorunuz yoksa hepimize iyi günler arkadaşlar. Şimdi bitirelim. Sinyal dersine gelecek olanlarla görüşürüz. Hoşçakalın. İyi günler.
+
+644
+02:22:06,943 --> 02:22:18,023
+Proje konusunu Linked List'ten sonraya mı diyorsunuz? Şimdi proje konusunu yazıyoruz. Structure'ları anlattıktan sonra işte bir file operation var ama file görmeden proje konusunu ilan edeceğim.
+
+645
+02:22:18,675 --> 02:22:41,255
+Nasıl bir proje? Veri tabanı tarzı bir proje olacak. Yani öğrenciler derse kayda olacak, dersi sileyeceğiz, dersleri olacak. Bunların arasında ilişkiler olacak ve burada bir arkada veri yapısı tasarlayacağız. Linkedlister olacak bu işin içinde. Bunların hepsini kodlayacağımız ve yeterince zaman olacak. Şimdi okullar herhalde ocağın ikinci haftası mı son?
+
+646
+02:22:42,036 --> 02:23:07,036
+Birinci haftası. Ben bu hafta bunu yazarsam bir aylık bir süreç olur projeyi yapmak için. O da zaten yeterli. Proje 14-15 günde kodlanacak bir şey. Eğer günde böyle yarım saat, bir saat bakan birisi olursa. Total saat olarak dersen 10 saatlik bir proje kodlanmamız yeterli olur. Bu hafta içerisinde yazarsam herhalde haftaya kadar buyurmuş olur. Bir Yunus Hoca ile de konuşmamız lazım.
+
+647
+02:23:12,051 --> 02:23:14,592
+Ben teşekkür ederim. Hoşçakalın arkadaşlar. Görüşmek üzere.

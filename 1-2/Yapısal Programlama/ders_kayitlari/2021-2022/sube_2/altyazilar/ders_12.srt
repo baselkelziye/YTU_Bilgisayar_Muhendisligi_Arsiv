@@ -1,0 +1,2135 @@
+1
+00:10:56,340 --> 00:10:57,300
+Haydi arkadaşlar.
+
+2
+00:11:02,899 --> 00:11:04,899
+Sesin geliyor mu?
+
+3
+00:11:04,899 --> 00:11:06,635
+İnanın hocam geliyor. Geliyor acaba evet.
+
+4
+00:11:10,323 --> 00:11:12,563
+Bir iki dakika daha bekleyelim, hemen başlarız.
+
+5
+00:13:16,307 --> 00:13:18,508
+Şu an ekran paylaşımı geldi herhalde.
+
+6
+00:13:18,508 --> 00:13:19,388
+Tevsil.
+
+7
+00:13:28,052 --> 00:13:38,272
+Evet, önce geçen haftaki link listelerle alakalı basit bir şey yapacağız. Uygulama yapacağız. Hem de fonksiyon pointerlerle alakalı.
+
+8
+00:13:39,932 --> 00:13:53,052
+Sonra dersimizin kalan konuduruna devam edeceğiz. Öğleden sonra sinyal dersine yüz yüze gelmek isteyen olabiliriz. Yani dersi diğer gruptan alacaklar. Onun için ben iki blog yapıp...
+
+9
+00:13:53,875 --> 00:14:05,576
+Saat 11.30'a doğru bitirmek istiyorum. Aralar biraz belki 60-65 dakika dersen ara verirsen tekrar devam ediyoruz.
+
+10
+00:14:06,515 --> 00:14:19,535
+Şu employee örneğimiz vardı ya, bunu biraz hem tekrar olsun diye global değişken, global head kullanmadan hem de bir fonksiyon pointer ile bir şey yapalım arkadaşlar.
+
+11
+00:14:23,956 --> 00:14:27,456
+Bu ne?
+
+12
+00:14:37,043 --> 00:14:38,364
+Traktörümüz oluşturalım.
+
+13
+00:14:59,283 --> 00:14:59,663
+Evet.
+
+14
+00:15:20,755 --> 00:15:32,655
+Biz bir kayıt ekleyelim. Kayıt ekleme başı olsun. Pardon, kayıt eklemeyi nasıl yapıyorduk? Neyse bir kayıt ekleme metodu yapalım.
+
+15
+00:15:38,655 --> 00:15:47,655
+Burada employee olarak heading'i alacağım. Heading değişme ihtimali olduğu için bu şekilde ediyoruz.
+
+16
+00:15:48,820 --> 00:15:55,480
+Bir tane remove record yapalım. Niye integer olduğunu söyleyebilirim arkadaşlar.
+
+17
+00:16:02,611 --> 00:16:18,291
+Bir de şimdi print report diye veya kayıtları listeli diye bir şey yazacağım. Eğer elinizde böyle bir liste varsa, kayıtları listeli bu bir ana fonksiyondur. Bunun altında bir fonksiyon daha olacak.
+
+18
+00:16:19,511 --> 00:16:27,011
+Buraya yine mbluei türünde hediye alayım. Yalnız burada isme göre, soy isme göre, id'ye göre.
+
+19
+00:16:27,604 --> 00:16:36,204
+Önce adı yaz, sonra soyadı yaz. O tabi bir şey olacak. Onun için buraya bir void pointer alıyorum. Hangi türde yazmak istiyorsam onu çağıracağız.
+
+20
+00:16:36,204 --> 00:16:47,204
+Buraya bir fonksiyon pointerı gelecek. Bu fonksiyon pointerı parametre olarak bir düğüm employee pointerı gönderecek.
+
+21
+00:16:53,172 --> 00:17:09,511
+Parametri olacağını göndereyim, söyleyelim. Burada mesela bu ayet diyelim. Print name first. Önce ada göre.
+
+22
+00:17:20,115 --> 00:17:23,435
+Bir de Surname yapalım yeterli.
+
+23
+00:17:34,612 --> 00:17:46,612
+Gelelim programına. Basit bir menümüz olsun. Bu menüde bir Option kullanalım. İlk başta 0 diyelim buna.
+
+24
+00:17:51,412 --> 00:17:53,092
+Çıkışı için 3'ü kullanacağız.
+
+25
+00:17:54,531 --> 00:17:56,152
+3'den farklı iken.
+
+26
+00:18:03,508 --> 00:18:05,508
+Add yapalım.
+
+27
+00:18:36,596 --> 00:18:37,375
+Bir şey var.
+
+28
+00:18:39,816 --> 00:18:55,875
+Name ve sorneği mi? Yok. Aynı yazdırmaktan kast o değil [öğrenci]. Yani önce adını yaz, sonra soyadını yaz, sonra ID yaz veya önce soy isim yaz, sonra işte name yaz, sonra ID yaz veya önce ID. Altı farklı şekilde yazabiliriz.
+
+29
+00:18:56,531 --> 00:19:04,531
+Sadece şurada hangi isme göre, isme göre sırala, soy isme göre sırala diyoruz ya, öyle bir şey yapacağız.
+
+30
+00:19:05,531 --> 00:19:08,531
+Evet, burada Switch kullanalım.
+
+31
+00:19:14,531 --> 00:19:18,531
+Eğer case'imiz birse Add Report yapalım.
+
+32
+00:19:19,531 --> 00:19:23,531
+Add Record yapabilmek için head'in adresini göndereceğiz. Başka bir şey gerek yok.
+
+33
+00:19:24,019 --> 00:19:28,759
+Sonra bunu yapar yapmaz print report diyelim.
+
+34
+00:19:30,380 --> 00:19:36,299
+Şimdi gönderelim ve print name first'e göre yapsın.
+
+35
+00:19:38,240 --> 00:19:42,659
+Hatta şunu surname demeyelim, id diyelim arkadaşlar.
+
+36
+00:19:44,119 --> 00:19:46,500
+Buna göre yap bracket.
+
+37
+00:19:47,159 --> 00:19:51,159
+Eğer case'imiz iki ise remove.
+
+38
+00:19:51,316 --> 00:20:00,436
+Burada head'imizin değişme ihtimali var. Yine baştaki bir payı da seyrederiz.
+
+39
+00:20:00,436 --> 00:20:06,256
+Trend record. Head'i gönder diyorum.
+
+40
+00:20:10,036 --> 00:20:12,036
+Print ID first.
+
+41
+00:20:18,291 --> 00:20:19,391
+Bir dakika arkadaşlar.
+
+42
+00:20:49,971 --> 00:20:51,412
+Menümüz bu şekilde.
+
+43
+00:20:55,011 --> 00:20:57,011
+Yerelim fonksiyonlarımızı yazmaya.
+
+44
+00:20:57,731 --> 00:21:03,251
+Şimdi record işleminde, burada doğrudan bir kısıt vermemiş, en başa ekleyebiliriz.
+
+45
+00:21:04,172 --> 00:21:05,172
+integer diyelim.
+
+46
+00:21:05,571 --> 00:21:07,092
+Add record.
+
+47
+00:21:08,851 --> 00:21:11,811
+Doe olarak bir head alacağız.
+
+48
+00:21:18,099 --> 00:21:30,199
+Bir tane TMP düğme ihtiyacım var. Çünkü başa kayıt eklerken hatırlarsanız, böyle bir linkli sitemiz varsa.
+
+49
+00:21:37,011 --> 00:21:41,111
+Bu da head'i gösteren bir şeydi. Bir düğümümüz. Head dedik.
+
+50
+00:21:43,411 --> 00:21:45,451
+Önce bir düğüm oluşturacağız.
+
+51
+00:21:46,731 --> 00:21:48,791
+Şu next alanını...
+
+52
+00:21:51,351 --> 00:21:57,231
+Şurası next'i. Önce bunun burayı göstermesi lazım. Bunu nereden öğreniriz? Bunu head'den öğrenebiliriz.
+
+53
+00:21:57,491 --> 00:22:00,051
+Önce diyeceğiz ki head'i bunun next'ine aktar.
+
+54
+00:22:00,811 --> 00:22:01,591
+Sonra...
+
+55
+00:22:02,579 --> 00:22:07,179
+Hed'i güncellemek için de ne yapacağız? Bunun adresini head'e gönder diyeceğiz.
+
+56
+00:22:08,220 --> 00:22:10,519
+Bunun için önce düğüm oluşturalım.
+
+57
+00:22:13,339 --> 00:22:17,420
+Envloy, hatta burada düğüm olarak tmp demişiz yeterli.
+
+58
+00:22:17,679 --> 00:22:18,960
+Tmp eşittir.
+
+59
+00:22:20,240 --> 00:22:22,299
+Bu Envloy türünde bir düğüm olacak.
+
+60
+00:22:22,799 --> 00:22:26,139
+Mallocle oluşturmamız lazım. Bunun sürekli yaşaması gerekiyor.
+
+61
+00:22:26,900 --> 00:22:29,720
+Size of Envloy.
+
+62
+00:22:31,251 --> 00:22:40,251
+if mp buradan al olabilir. Bizi yeterince doldurabiliriz.
+
+63
+00:22:40,251 --> 00:22:48,251
+return-1 diyor. Eğer mesela burada bir return kontrolü yapacaksak kayıt eklenemedi falan diye,
+
+64
+00:22:48,251 --> 00:22:55,251
+burada dönen değeri alıp onun için integer gönderebiliriz. Tarz durumlarda olabilir. Onun için integer yaptım.
+
+65
+00:22:58,163 --> 00:23:01,104
+Demek ki bir düğüm oluşturulabildi. Print app diyorum.
+
+66
+00:23:02,764 --> 00:23:10,963
+Enter, name, name, id, prospect, query.
+
+67
+00:23:12,764 --> 00:23:14,223
+Sırası ile girmişiz.
+
+68
+00:23:14,223 --> 00:23:22,163
+Scan app, yüzdesi, yüzdesi, yüzdesi.
+
+69
+00:23:23,163 --> 00:23:24,443
+Geldik.
+
+70
+00:23:25,587 --> 00:23:50,387
+Bu alanların üçü de karakter dizisi olduğu için doğrudan isimlerini pointer gibi kullanabiliyoruz. Dolayısıyla ben Employee'nin, Mp'nin name alanına, Mp'nin surname alanına ve Mp'nin id alanına gelişebilirim.
+
+71
+00:23:54,067 --> 00:24:09,967
+tmp name deyince, normalde tmp başka bir integer değişken olsaydı, onun adresini şu şekilde belirtmem lazım. Ama zaten şu tmp surname de bana adresi veren bir şey. Yazsak da olur, yazmasak da olur stringler için.
+
+72
+00:24:09,967 --> 00:24:17,807
+Peki, düğümü bağlamak kalıyor sadece. Bu tmp'nin next alanı eşittir.
+
+73
+00:24:18,451 --> 00:24:24,451
+Yalnız, head buraya çift derece pointer ile geldiği için, head'in gösterdiği yer olacak.
+
+74
+00:24:24,451 --> 00:24:32,451
+Head'i güncellememiz gerekiyor. İşte, head'i burada güncelliyoruz. Head'eşiftir. Bu da tmp olacak. Head'in gösterdiği yerdeki değer.
+
+75
+00:24:32,451 --> 00:24:39,451
+Eğer buraya kadar sıkıntısız gelmesek, return 0 yapıyoruz. Ve kaydımız tamamlanıyor.
+
+76
+00:24:39,451 --> 00:24:45,451
+Şimdi, size genelde kod yazmanızda bir tavsiyem. Önce bir konfile edelim, kaydedelim.
+
+77
+00:24:48,819 --> 00:25:01,619
+Burada yaptığımız iş sağlıklı oldu mu, olmadı mı? Buna bir bakalım. Tabii şurada head tanımlı olmamışız. Employee olarak bir head tanımlı yapınca bunu yapalım arkadaşlar.
+
+78
+00:25:07,539 --> 00:25:17,539
+Bu pointer olacak herhangi bir yeri göstermediği için. Undefined References dediği de şu an için şunları tanımlamadım.
+
+79
+00:25:17,539 --> 00:25:25,539
+Şimdi biz Print Records'u bir yazalım. Ondan sonra Remove'a gelirim. En azından yaptığımız sağlık bunu değil mi? Onu görelim.
+
+80
+00:25:25,539 --> 00:25:30,539
+Point Method Print Records.
+
+81
+00:25:36,915 --> 00:25:41,275
+Burada bir tane boyut alacağız. Fonksiyon olarak.
+
+82
+00:25:56,723 --> 00:25:58,144
+MMP ile başlıyorum.
+
+83
+00:25:59,144 --> 00:26:00,764
+Hatta bunu nedir atalım.
+
+84
+00:26:01,443 --> 00:26:04,203
+Burada niye peki tek pointer ile aldım?
+
+85
+00:26:09,683 --> 00:26:11,683
+Çift pointer ile almam gerekmiyormuş.
+
+86
+00:26:12,563 --> 00:26:14,003
+E alsam olmaz mı?
+
+87
+00:26:19,988 --> 00:26:32,907
+Yazdırırken bir headde değişiklik yapmayacağız arkadaşlar. Yani listeyi yazdırıyoruz. Dolayısıyla head'i sadece input olarak vermemiz yeterli.
+
+88
+00:26:48,500 --> 00:27:00,280
+Şu fonksiyon pointerına hangi fonksiyon gönderildiyse onu bastıralım. O zaman fptr diyorum. tmp düğümü gönder diyorum.
+
+89
+00:27:01,180 --> 00:27:06,360
+Diyor ki bu null değil. Onda sonra ne yapıyorum? tmp'nin next'i değil.
+
+90
+00:27:09,099 --> 00:27:14,940
+Bu hangi fonksiyona gönderecek? Ya şuna ya da buna. O zaman bunları da yazalım.
+
+91
+00:27:17,140 --> 00:27:23,019
+Sadece burada implementasyon farklı, başka basit bir fonksiyon mu?
+
+92
+00:27:23,019 --> 00:27:31,980
+Burada ne diyeceğiz? printf %s %s %s backslash n
+
+93
+00:27:31,980 --> 00:27:38,140
+mflow i'nin önce neydi? isim.
+
+94
+00:27:38,140 --> 00:27:45,132
+mflow i'nin ondan sonra soy isim olsun.
+
+95
+00:27:46,867 --> 00:27:50,867
+ID alanımız.
+
+96
+00:27:50,867 --> 00:27:53,867
+Name first böyle.
+
+97
+00:27:53,867 --> 00:27:55,867
+Kopyalıyorum.
+
+98
+00:27:55,867 --> 00:27:59,867
+Bunu ID first yapalım.
+
+99
+00:27:59,867 --> 00:28:04,867
+Şurada ID yazalım. Şurada name yazalım.
+
+100
+00:28:04,867 --> 00:28:08,867
+Şurada her name yazalım.
+
+101
+00:28:08,867 --> 00:28:13,867
+Hangisini istediysek o çalışacak.
+
+102
+00:28:15,028 --> 00:28:21,427
+Peki şu an için Remove Record fonksiyonunun da gövdesini boş olarak yazayım, bir test edeyim.
+
+103
+00:28:22,967 --> 00:28:27,067
+Edit Record'un zaten benzeri o da. Şöyle yapıyorum.
+
+104
+00:28:30,548 --> 00:28:31,548
+Remold.
+
+105
+00:28:37,619 --> 00:28:50,839
+İderliyoruz. Yani bunu ne için yapıyoruz? Burada acaba bir şey hatamız var mı? Sintaks hatamayla. İşin sonuna geldiğimizde sintaks hatasını görmek zor olabilir. Mesela burada ne varmış?
+
+106
+00:29:05,619 --> 00:29:10,900
+As no member ID. Ha şu ID alanı şu kalpli olacak.
+
+107
+00:29:16,084 --> 00:29:19,164
+UndefinedRefrencDdPrintReport
+
+108
+00:29:22,451 --> 00:29:25,771
+Şurada S'sini yazmamışız.
+
+109
+00:29:27,731 --> 00:29:29,092
+Başka bir sıkıntı yok.
+
+110
+00:29:29,951 --> 00:29:30,652
+Çalıştıralım.
+
+111
+00:29:32,172 --> 00:29:34,251
+Şimdi add diyelim.
+
+112
+00:29:34,251 --> 00:29:37,532
+İşte a, a, a.
+
+113
+00:29:38,271 --> 00:29:39,532
+Add diyorum.
+
+114
+00:29:40,331 --> 00:29:41,432
+B, b, b.
+
+115
+00:29:41,532 --> 00:29:47,092
+Bakın bu başa ekleyeceği için sürekli ilk düğümden itibaren gelen verileri göreceğiz.
+
+116
+00:29:49,236 --> 00:30:15,376
+Burada bir sıkıntı yok. Şimdi neye göre sıralıyor, yazıyordu. Hediye attığımızda neyime göre sıralıyor. Güzel. Record şeyini de tamamlayalım. Bu arada şimdi bizim şu menümüz çalıştığında önceki verileri sildirmek isteyebilirsiniz arkadaşlar. Şu ana kadarki veriler ekrandan silinsin.
+
+117
+00:30:17,203 --> 00:30:32,243
+Bazı konut satırları var. Bunlardan bir tanesi sisteme veri gönder demek. Sistem dediğimizde Windows ise ayrı, Linux ortamları ise ayrı çalışan bir yapıda.
+
+118
+00:30:44,051 --> 00:30:53,951
+Unix'te de buna benzer komut var. Bu komutu oraya gönderirsek ekranı sildirebiliriz. Neyse, DMV yazalım, orada test ederiz.
+
+119
+00:30:53,951 --> 00:31:05,951
+Bir kaydı sileceğiz. Kaydı silmek demek ne demek? Bir ID gireceğiz. ID sileyle kaydı silelim. O zaman baştan da silebiliriz, ortadan da silebiliriz, sonundan da silebiliriz.
+
+120
+00:31:08,288 --> 00:31:25,907
+Karakter ID diyorum. 12'lik bir kullanıcından karakter alacağız. Mesela Found diye bir şeyim var. Bulabildiysem devam etmeyelim. Böyle bir flag değişkeni kullanacağım. Bir de burada gezinti yapmam lazım.
+
+121
+00:31:36,243 --> 00:31:55,304
+Şimdi gezerken de neyse önce döngüyü yazayım. Diyorum ki while tmp naldan farklı iken dön. Veya ne zaman dön? Bulamadıysan dön. Ya bulana kadar döneceğiz. Ya da dizinin sonuna kadar.
+
+122
+00:32:02,163 --> 00:32:04,263
+Ya da bulmuşuz, silmişizdir.
+
+123
+00:32:05,583 --> 00:32:08,263
+Tabii bir önce kullanıcıdan bir şey alalım arkadaşlar.
+
+124
+00:32:08,263 --> 00:32:09,263
+Şurada.
+
+125
+00:32:10,364 --> 00:32:11,263
+Enter.
+
+126
+00:32:14,364 --> 00:32:15,623
+ID.
+
+127
+00:32:26,963 --> 00:32:29,743
+İd diyelim.
+
+128
+00:32:32,243 --> 00:32:43,923
+Tekrar ediyorum. Bu karakter dizisi olduğu için burada ampersant yazmadım. Yazsam da olur, yazmasam da olur. Ama diğer değişkenlerde böyle bir durum yok. Hep yapılan hatalar.
+
+129
+00:32:44,923 --> 00:32:51,304
+Hocam bunda niye yazmadın diyorsun deniyor. İşte bu karakter dizisi olduğu için zaten pointer ile aynı şey demek.
+
+130
+00:32:53,103 --> 00:32:53,783
+Evet.
+
+131
+00:32:54,867 --> 00:33:04,867
+Şimdi, burada şuna bakacağız arkadaşlar. İki tane stringi karşılaştıracağız. İki stringi eşittir operatörü ile karşılaştıramayız.
+
+132
+00:33:04,867 --> 00:33:15,867
+STR Compare dememiyoruz. Çünkü eşittir operatörü stringlerin, yani ID ile TMP'nin ID'sini karşılaştırırlar.
+
+133
+00:33:22,579 --> 00:33:32,179
+mp'nin id'si ile şurada girilen id'yi karşılaştır diyoruz. Arka planda bütün verileri karşılaştır demektir.
+
+134
+00:33:33,980 --> 00:33:38,879
+Eğer şeyse demek ki bulduk. Önce bir kere found'ı bir yapı.
+
+135
+00:33:39,879 --> 00:33:48,259
+Bulduysak, nerede bulduğumuza göre iş değişiyor.
+
+136
+00:33:49,140 --> 00:34:09,220
+İlk elemanda bulmuş olabiliriz veya sonraki elemanlarda bir yerde bulmuş olabiliriz. Dolayısıyla burada ilk elemanda bulmak ne demek ona bakacağız. Yalnız silme yaparken şuna dikkat etmemiz lazım. Bir önceki düğümle bir sonraki düğümü bağlamamız gerekiyor.
+
+137
+00:34:10,228 --> 00:34:36,867
+Bir önceki düğüm dediğimiz örneğin ben bunu sileceksem bunu TMP ile geziyorum. Şimdi TMP bunu gösterdiğinde bunun bir öncekisi şunu göstermesi tutacak bir değişkene ihtiyacım var. Yani biz aramayı ne yapıyoruz? TMP ile arıyoruz. TMP'nin Next'inin Next'i gibi şeyi yapmadık. O tarz algoritmalarda çözümler de çıkabilir de biz TMP ile dizi içerisinde eleman arıyoruz. O zaman bir öncekini de bir yerde...
+
+138
+00:34:37,076 --> 00:34:40,275
+Saklamam lazım. Şurada
+
+139
+00:34:43,275 --> 00:34:51,876
+Crew diye yedek 4 point'ı oluşacak. İlk başta bu null olacak. Niye? Head'in bir önceki düğümü yoktur.
+
+140
+00:34:53,275 --> 00:34:56,275
+Şimdi aradığımda bulduğum eleman eğer
+
+141
+00:34:57,675 --> 00:35:01,275
+Crew eleman null ise yani bu head demektir.
+
+142
+00:35:03,795 --> 00:35:16,335
+Head eleman, ilk eleman öyle değil mi? O zaman bu ilk elemanı silmek bizim için kolay. Yani headin bulunduğu yeri sileceğiz. Şöyle yapalım.
+
+143
+00:35:27,855 --> 00:35:30,456
+İlk elemanı silerken nedir diyeceğiz.
+
+144
+00:35:31,635 --> 00:35:35,735
+Ped'in gösterdiği yerdeki değer ne olsun eşittir?
+
+145
+00:35:36,235 --> 00:35:40,076
+tmp'nin next olsun yani doğrudan bir sonraki kayda bağla.
+
+146
+00:35:40,855 --> 00:35:44,695
+Eğer böyle değilse yani arada herhangi bir yerdeysek
+
+147
+00:35:45,975 --> 00:35:49,296
+Şu işte prove dediğimiz eleman öncekinin sonrakisi
+
+148
+00:35:51,596 --> 00:35:55,195
+next eşittir tmp'nin next oluyor.
+
+149
+00:35:55,695 --> 00:35:57,496
+Ve aradaki düğümü ne yapıyoruz?
+
+150
+00:35:57,907 --> 00:36:19,927
+Devreden çıkartıyoruz. Ama aradaki düğüm hala yaşıyor mu? Yaşıyor. Çünkü TMP şu an için yine TMP'nin Next'ini gösteriyor. Bu şey bittiğinde, şöyle diyeceğiz. TMP hangi yeri gösteriyorsa, yani hedi de gösterebilir, aradaki yer hangi bir düğümde gösteriyor. Bunu free ediyoruz.
+
+151
+00:36:20,628 --> 00:36:39,927
+Sonra arama işleminin devam etmesi için güncelleme yapacağız. Şimdi tmp eşittir. tmp'nin max diyeceğiz. Ama mevcut tmp'yi bir yerde tutmamız gerekiyor. Çünkü bir tmp var bir de onun öncesi var. Onun için önce tmp yapalım diyoruz.
+
+152
+00:36:42,655 --> 00:36:54,576
+Found değişkenini buradan gönderelim. Eğer bulduysak, bulmuşuzdur, bulamadıysak, eğer buradan mesela sıfır döndüyse şurada deriz ki aradığınız kayıt bulamadı gibi bir şey söylenebilir.
+
+153
+00:36:55,795 --> 00:36:58,255
+Compile ediyorum. Bir sıkıntı yok.
+
+154
+00:37:00,536 --> 00:37:04,215
+Burada da ID'ye göre, bir silme işlemi yapınca ID'ye göre. Önce 1 dedim.
+
+155
+00:37:05,935 --> 00:37:07,475
+A, A, A diyorum.
+
+156
+00:37:09,043 --> 00:37:14,043
+Tabi burada hemen şey yapınca ekrandan silindi. Neyse şimdi şunu kapatalım.
+
+157
+00:37:15,043 --> 00:37:24,043
+Hani belki bunu nerede yapabiliriz? Hani ekranda şeyleri görelim. Şundan sonra belki olabilir.
+
+158
+00:37:27,043 --> 00:37:31,043
+Diyeceğim ama yok faydası olmaz. Neyse şimdilik bunu kapatalım dursun.
+
+159
+00:37:34,996 --> 00:37:39,456
+A, A, B, B, B, B.
+
+160
+00:37:43,923 --> 00:37:55,923
+Bu yapalım. Mesela B'yi silelim. B'yi sildikten sonra bana neye göre yazdırıyor? Bakın, tabi hepsi aynı olduğu için. Şöyle bir daha düzelteyim arkadaşlar.
+
+161
+00:37:57,923 --> 00:38:10,923
+A, B, C dedim. X, Y, B dedim. M, M, P dedim. Remove etmek istediğimde mesela.
+
+162
+00:38:11,860 --> 00:38:28,619
+ID'yi, ZID ile olanı siler. ZID ile olanı silince o aradan kayıt gidiyor. Daha sonra o ID'ye göre yazdır. P, M, N, sonra C, A, B yazacak. Şöyle de ekleyip çıkabiliriz. Herhangi bir sorun var mı?
+
+163
+00:38:31,159 --> 00:38:37,619
+Geçen haftayı bu şekilde bir tekrar etmiş olalım arkadaşlar. Slidemizden.
+
+164
+00:38:37,844 --> 00:38:59,104
+Konumuzla alakalı devam edeceğiz. Structure'ların align edilmesi. Normalde bir structure oluşturduğumuzda bunun kapasitesi, yani size ne kadardır? İşte şunun size artı, şunun size artı, bunun size'dır. Üçünün toplamı kadardır.
+
+165
+00:39:01,268 --> 00:39:28,847
+Bazı bilgisayarlar bu toplam yerden daha fazla yere ihtiyaç duyabilirler. Çünkü bunları bellekte, bunlara yer açarken işte member gelecek, daha sonra mem 2 gelecek, daha sonra mem 3 gelecek. Arada boşluklar olabilir. Dolayısıyla bunun hizalanmış olması veya işte daha düzgün yazılmış olması o boşlukları azaltıyor ve daha az bellek işgaline neden olabiliriz.
+
+166
+00:39:30,356 --> 00:39:50,776
+Alignment konusu bu. Mesela eğer herhangi bir alignment restriction'umuz yoksa normalde şu şekilde saklayabiliriz bunu. Önce memdir, bu bir byte, şu iki byte, sonra şurası bir, yani dört byte'lık veriyi şuradan şuraya kadar saklayabiliriz. Ve bu gayet güzel oldu değil mi?
+
+167
+00:39:56,467 --> 00:40:04,667
+Ekstradan yerlere ihtiyaç varsa, çift adresleri kullanıyorsa, arada boşluklar olursa şöyle bir durum olabilir.
+
+168
+00:40:04,667 --> 00:40:16,268
+Dolayısıyla bizim structure'ımızın yerleşimi 4 byte'i geçiyor. Hatta 5 byte, belki 6 byte gibi bir şey oluyor karakterler için.
+
+169
+00:40:16,268 --> 00:40:23,268
+Onun için, hani burada bitfield gibi kullanımlara bakacağız.
+
+170
+00:40:24,307 --> 00:40:29,847
+Mümkün olduğunca mesela aynı tipteki verileri peş peşe koymak daha bir çözüm olabiliyor.
+
+171
+00:40:30,087 --> 00:40:35,528
+İşte önce karakter, sonra şu karakter, sonra üçüncüde bunu yazmak daha faydalı olabilir.
+
+172
+00:40:36,688 --> 00:40:37,347
+Bu kadar.
+
+173
+00:40:38,427 --> 00:40:46,028
+Burada biraz daha bu alanları verimli kullanım diye bit field dediğimiz bit alanları kullanıyoruz.
+
+174
+00:40:46,028 --> 00:40:50,007
+Örneğin bizim bir karakter değişkenimiz 8 bitlik.
+
+175
+00:40:51,507 --> 00:41:18,407
+Acaba bu 8 bitin hepsine ihtiyacımız var mı? Daha az sayıda bitle bazı işlerimizi halledebilir miyiz? Örneğin kar, id, bir bitlik olsa. Şimdi bu bit olması durumunu iki nokta söyleyelim. İki nokta deyip şuraya yazacağız sadece. Bir bitlik bir id. Mesela biz bu ilim değişken saklamak istiyoruz. Sıfır veya bir. Biz burada sıfır veya bir saklayabiliriz. Mesela bir bit yeterli bizim için.
+
+176
+00:41:19,315 --> 00:41:40,795
+Bu tarz durumlarda Bitfield'lardan kullanıyoruz. Bunun bazı özellikleri var. Bitfield'ın adresi elde edilemiyor arkadaşlar. Yani ben Scanner, %C, Structure'ın ismi T olsun, T'nin ID'sinin alanına eriş, burada yapamıyorum.
+
+177
+00:41:42,099 --> 00:42:04,019
+Bir de bu bitfield'lar üzerinde dizi tanımlayamıyorum. Yani şöyle bir şey olmuyor. Car, ID, 2.1, 10 gibi bir şey olmuyor. Bu iki konuya dikkat ediyoruz. Peki şunu nasıl yapacağız? Geçici bir değişkenimiz olacak. Bu geçici değişkene veriyi aktarıp daha sonra bu alana veri kopyalayacağız. Çünkü şu adres operatörü bu işler için çalışmıyor.
+
+178
+00:42:05,940 --> 00:42:30,559
+Tanımlama, tipimizi yazıyoruz, isim yazıyoruz, iki nokta koyup kaç bit uzunlukta olacağını söylüyoruz. Genellikle burada tip alanında, base type alanında integer, unsigned integer, signed integer kullanılır. Çünkü pozitif sayılar veya negatif sayılar ayrı bir yer kaplar. Orada işaret bitini de değerlendirmek isteyebiliriz. Siz sadece pozitif sayılar olacaksa şunu kullanmanız daha güzel.
+
+179
+00:42:33,523 --> 00:42:50,324
+Evet. Ve burada saklanacak verinin kontrolünü yapmamız lazım. Yani ben 5 bit ile işaretli sayı ne kadar saklayabilirim? 0'dan 2 üzeri 5'e kadar, 2 üzeri 5 eksi 1'e kadar. Yani 0'dan 31'e kadar veri saklayabilirim.
+
+180
+00:42:50,824 --> 00:42:59,324
+Dolayısıyla girdiğim verinin bu aralıkta bir şey olmasına da dikkat edeceğim. Yani orada yük bize ait. Programcı bunu kontrol etmesi lazım.
+
+181
+00:43:04,403 --> 00:43:17,224
+Mesela şöyle bir şey, illegal arkadaşlar. Eğer makinenizde integer'ınız 16 bit uzunluktaysa, yani 2 bytes ise sizin böyle bir şey yapmanıza izin vermez. Hata alırsınız. Buna da dikkat etmek gerekiyor.
+
+182
+00:43:18,195 --> 00:43:31,235
+Herhangi bir şeyin uzunluğunu yani veri türünün uzunluğunu geçmeyecek. Bakın şöyle tasarlıyoruz. A integermiş 3 byte, 3 bitlik. B integermiş 7 bitlik. C integermiş 2 bitlik.
+
+183
+00:43:31,235 --> 00:43:43,155
+Dolayısıyla normalde bu ne kadar yer tutardı? Integri 4 byte kabul edersek, bir integer 4 byte ise 4 çarpı 8'den 32 bit.
+
+184
+00:43:44,724 --> 00:43:58,484
+Yer kaplayan bir şeydi. Hatta üç tane değişken var. 96 bitlik yer kaplıyor. Ama biz burada 12 bit ile buradaki işimizi görebiliyoruz.
+
+185
+00:43:58,484 --> 00:44:05,224
+Bunun kullanım alanları örneğin kimlik numarası gibi veya böyle kısıtlamalı gün, ay, yıl mesela öyle düşünün.
+
+186
+00:44:06,675 --> 00:44:27,735
+Gün dediğim şey 0 ile 31 aslında. Yani 5 bit ile yeterli. Ay 1'den 12'ye kadar. Burada da 4 bit yeterli. Yıl 1999 işte veya 9999 böyle şeyler kullanıyoruz. Burada da 11 bit, 12 bit falan yeterli. Yani 4 byte 32 bitlikçe çok fazla gerek yok.
+
+187
+00:44:31,188 --> 00:44:49,068
+Genelde arkadaşlar, bunlar peş peşe yazılır. Eğer integer'ın bir sınırı yeni bir bellek alanı için bazen aşıyorsa, yani burada 10 tane bit oluştur, kalan 10 bit buraya yetmedi.
+
+188
+00:44:49,068 --> 00:44:58,068
+16 bitlik bir bellek olduğunu düşünerek. Yetmediyse şuraya boşluk bırakıyor yine. Ona yapacak bir şey. Bazı derleyiciler...
+
+189
+00:44:58,420 --> 00:45:24,560
+Şuradan aşağıya kaydırma yapabiliyorlar. Bu da mümkün. Span diyoruz. Örneğin şurada bakalım. StructureDate oluşturmuş gün, ay, yıl. İşte 5, 4 ve 11'lik. Şu şekilde. Bu diyor ki compiler bit bilgilerini en yakın karaktere göre paketliyor ve integer'ın boundary'ini aşağıya şey yapıyor. Yani bu mümkün.
+
+190
+00:45:25,204 --> 00:45:33,484
+Aradaki boşlukları önemsemeyip, şunları boş geçecek, biraz daha şuradaki boşlukları değerlendirebiliyor.
+
+191
+00:45:34,804 --> 00:45:47,444
+Diğer taraftan, soldaki figür diyor ki, compiler en yakın şeyleri short'a göre. Yani burada karaktere göre olduğu için burada karakter sığabilir deyip, kar tipinde de yapıyor.
+
+192
+00:45:48,403 --> 00:45:52,444
+Burada short tipinde kullanıp, short tipi gibi değerlendirip,
+
+193
+00:45:52,788 --> 00:45:56,367
+Öyle hizalamış. Yani şuradaki boşlukları bırakmak durumunda kalıyor.
+
+194
+00:45:57,307 --> 00:46:03,228
+Ve herhangi bir şekilde aşağıya kaydırma olmuyor. Yani year burada duracak, aşağıya kaydırma olmayacak.
+
+195
+00:46:03,228 --> 00:46:05,488
+Bu tamamen compiler'larla alakalı şeyler.
+
+196
+00:46:07,668 --> 00:46:12,387
+Şimdi biz bir örnek daha yapalım.
+
+197
+00:46:13,507 --> 00:46:14,228
+Önce...
+
+198
+00:46:17,844 --> 00:46:27,003
+Buradaki örnek neymiş? Buradaki örneğe ayrıca bakarız. Herhalde burada, evet bizim örneğimizi biraz daha değiştiriyor. Ben önce başka bir kod yazmak istiyorum.
+
+199
+00:46:54,036 --> 00:47:03,636
+Mesela bir Structure'ımız olsun. Buna Date diyelim. Şurada da isim yazmaya gerek yok.
+
+200
+00:47:07,059 --> 00:47:20,180
+Şimdi bunlar bir kere unsigned olacak. Yani gün ay yıl bilgisi negatif olmaz. Unsigned integer day, month ve year şöyle yazabiliriz. Üç tane ayrı ayrı yazmaya da gerek yok.
+
+201
+00:47:20,180 --> 00:47:34,119
+Şimdi bu kaç byte diğer kaplar? Her biri 4 byte'dan 4x3 12 byte yani 96 bit.
+
+202
+00:47:36,532 --> 00:47:50,032
+Bunu alternatif olarak yapacağımız şey, Type Definition Structure Page 1 diyelim. Şuraya bir şey yazmak durumunda değiliz çünkü şu an için kullanmayacağız.
+
+203
+00:47:53,632 --> 00:48:01,231
+Unsigned integer. Diyorum ki şu B5 olsun.
+
+204
+00:48:05,844 --> 00:48:08,443
+M4 bit olsun.
+
+205
+00:48:12,788 --> 00:48:15,087
+Bu da 11 bit olabilir mesela.
+
+206
+00:48:16,108 --> 00:48:17,148
+Burada ne oldu?
+
+207
+00:48:18,427 --> 00:48:19,188
+11
+
+208
+00:48:20,208 --> 00:48:22,507
+16 20 yani 20 bitle
+
+209
+00:48:27,443 --> 00:48:34,203
+Gayet bir yer kazanmış olduk. Gelelim bunların size'larına bir bakalım ne oluyormuş.
+
+210
+00:48:36,684 --> 00:48:49,203
+Şimdi bizim size of diye bir operatörümüz vardı. Yüzde D diyorum. Hatta size of D eşittir. Bizde de.
+
+211
+00:48:55,251 --> 00:48:56,251
+Teşekkürler.
+
+212
+00:49:02,612 --> 00:49:04,612
+Eğit bir içinde şunu yapacağım.
+
+213
+00:49:14,643 --> 00:49:16,643
+Ne dediği, respected.
+
+214
+00:49:17,943 --> 00:49:20,143
+Sırak yerine sıtkarka kat yazdınız.
+
+215
+00:49:20,143 --> 00:49:20,643
+Ha.
+
+216
+00:49:22,643 --> 00:49:23,543
+Şürekli yapıyorum.
+
+217
+00:49:27,543 --> 00:49:30,063
+Stop'ta 9'u içine kaydedeyim.
+
+218
+00:49:35,572 --> 00:49:39,572
+Bir tanesi byte çiğsinden 12, diğeri 4 byte.
+
+219
+00:49:45,427 --> 00:50:02,127
+Bakın ne oldu? 11, 4, yani 20 bit var ama 4 byte. Yani 16 bitlik yer ayırdı. Demek ki orada bir optimizasyon yapıyor derleyiş.
+
+220
+00:50:04,427 --> 00:50:09,647
+Şöyle bakarsak bir daha. Optimizasyonu nasıl yapıyor onun detayını bilmiyorum.
+
+221
+00:50:11,764 --> 00:50:24,724
+Byte çiyesinden verdiği şey bu. Bunlara değer okumak için şu date kısmında herhangi bir sıkıntı yok. Yani bizim date dediğimiz şey mesela D diyelim.
+
+222
+00:50:38,547 --> 00:50:53,768
+Bir tane %d oku, bir %d daha oku, bir %d daha oku. Normal bir structure yani herhangi bir bitfield yok. Diyeceğiz ki d'nin d'sinin adresi.
+
+223
+00:50:57,460 --> 00:51:09,039
+D'nin m'sinin adresi, D'nin y'sinin adresi oku. Sonra bunları printf yapalım. %d, %d, %d.
+
+224
+00:51:11,800 --> 00:51:16,320
+D'nin d'si, virgül d'nin m'si, virgül d'nin y'si.
+
+225
+00:51:26,420 --> 00:51:31,340
+5, 12, 28. Böyle bir şey.
+
+226
+00:51:33,460 --> 00:51:37,920
+Bunda problem yok. Şimdi my date, yani date1 diyelim.
+
+227
+00:51:39,840 --> 00:51:40,579
+D1 diyelim.
+
+228
+00:51:41,800 --> 00:51:45,340
+Aynı şunu burada da deneyeceğiz.
+
+229
+00:51:46,440 --> 00:51:51,980
+Şimdi bu bitfield'ların, şunların adreslerini elde edemiyoruz.
+
+230
+00:51:52,788 --> 00:52:07,868
+Yani D1.D, D1.M, D1.Y dediğimde derleyici bakın. Cannot take address of bitfield. Bu bitfield adres alanını elde edemez. Bunu ne yapacağız? İllegal diyelim.
+
+231
+00:52:09,708 --> 00:52:12,868
+Niye illegal? Because...
+
+232
+00:52:16,500 --> 00:52:17,640
+Mi...
+
+233
+00:52:27,155 --> 00:52:27,775
+Teşekkürler.
+
+234
+00:52:30,963 --> 00:52:39,963
+Peki kendi printfimizi, scanfimizi bir daha yazalım. Peki nereye alacağız? O zaman burada yedek değişken kullanmamız gerekiyor.
+
+235
+00:52:39,963 --> 00:52:53,963
+Integer mesela day, year, month diyelim. Scanf, %d, %d, %d.
+
+236
+00:52:56,943 --> 00:53:24,304
+Day'in adresine, month'un adresine ve year'in adresine birileri al. Ondan sonra bunları bitfield'lara atama yapacağız. Fakat atama yaparken bir kontrol yapmak iyi olur. Bir if. Mesela burada day. Buna business logic diyoruz. Büyük eşittir birse. Aynı zamanda day.
+
+237
+00:53:24,820 --> 00:53:40,500
+Küçüktür, eşittir, 31'se. Öyle değil mi? O zaman D'in objesi ataması doğru. Diyeceğiz ki D1 nokta D eşittir bizim şuradaki D'ye. Aynısını if.
+
+238
+00:53:45,331 --> 00:54:11,331
+Bu, month için yapabiliriz. Month büyüktür, eşittir 1 iken aynı zamanda, month küçüktür, eşittir 12 iken. Böyle bir durum varsa d1.month eşittir, d1.m eşittir month.
+
+239
+00:54:13,940 --> 00:54:38,940
+D1 nokta ye eşittir. D1'in D1'in M'si, D1'in Y'si diyorum. Arada bu hatamız yoksa 05 12 2008. 08 14 2009.
+
+240
+00:54:40,532 --> 00:55:07,032
+0,8'i aldı, 2009'u aldı, 14'ü yanlış kedi değilmişim tabii. Onu otomatik olarak sıfırlıyor. Bu şekilde veri saklayabiliyoruz. Başka da bunun bir şeyi yok. Şimdi bakın burada diziden bahsettik ya, şurada dizi oluşturamaydı arkadaşlar. Bakın burada bir day 10 desem aşağıda bir problem yok, burada bir sıkıntı yok ama şunu yapamıyorum.
+
+241
+00:55:11,027 --> 00:55:13,907
+Bunu hatta bursun.
+
+242
+00:55:16,907 --> 00:55:18,427
+Buna illegal diyelim.
+
+243
+00:55:22,068 --> 00:55:24,628
+Onun dizisi oluşmuyor, izin vermiyor derleyici.
+
+244
+00:55:25,648 --> 00:55:28,208
+Ha şunu yapabilir miyiz? Yapabiliriz. Mesela date 1.
+
+245
+00:55:32,532 --> 00:55:42,892
+D'den 10 tane şey oluştur. Bakın buna D2 diyelim. Bunda sıkıntı yok. Ama bitfieldların şeyi oluşmuyor.
+
+246
+00:55:45,372 --> 00:55:58,332
+Şimdi bir de structure'ların topyalanmasıyla alakalı bir örneğim var. Belki objective sortu anlatalım bir de önce.
+
+247
+00:55:58,996 --> 00:56:04,116
+Bunun hazır kodunu yazmıştım. Şimdi tekrar yazmayacağım. Vakit geçmesin arkadaşlar.
+
+248
+00:56:05,956 --> 00:56:08,576
+Geçen derste ve laboratuvarda bir şeyler sıraladınız.
+
+249
+00:56:09,496 --> 00:56:14,776
+Şimdi bir şey sıralarken örneğin öğrencileri sırala. Bir kritere göre sıralama yapıyorsunuz.
+
+250
+00:56:15,276 --> 00:56:21,756
+Bu sıralama yapıldığında da structure'ın içerisinde bir değişim gerçekleşmesi gerekiyor.
+
+251
+00:56:21,916 --> 00:56:25,856
+Çünkü dizide ne yapıyoruz genelde sıralama yaptığımızda? Bir swap işlemi var değil mi?
+
+252
+00:56:26,739 --> 00:56:51,219
+Structure elemanlarının swap'i de şununla şunun swap edilmesi diye düşünün. Buradaki içeriğin buradaki içerikte yer değişmesi gerekecek. Tabi link list olursa iş başka da içerik olarak baktığınızda bir dizi şeklinde düşünelim. İşte bunun da içerisinde bir sürü alan var, bunun da içerisinde bir sürü alan var. Bunların swap yapılması demek buradaki içeriğin yer değiştirmesi demek.
+
+253
+00:56:52,083 --> 00:57:18,244
+İçeriği yer değiştirirken bireysel olarak yani her bir üyeyi tek tek yer değiştirebilirsiniz. Yani burada bakın 3 tane değişken var. Bunlar tek tek yer değiştirebilir. Fakat her zaman böyle bir şey yapmak sağlıklı değil. Niye sağlıklı değil? Yani içerisinde 3 tane değil de 30 tane üye olsaydı 30 tane SWEP kodu yazmanız lazımdı. 30 çarpı 3'ten her birini 3 satır dersek 90 satır kod yazmak pek mantıklı değil.
+
+254
+00:57:19,956 --> 00:57:33,076
+Structure'lar üzerinde eşittir operatörü tanımlı olduğu için bu swap işlemini tek bir geçici structure değişkenin üzerinde normal bir integer'ı veya başka bir şey swap eder gibi edebiliyoruz.
+
+255
+00:57:33,076 --> 00:57:44,835
+Şöyle bir structure'ım var. Bu da kişinin adını, soyisinin takımını, average bilgilerini kullanıcıdan alıyorum. Sonra diyoruz ki bunları sıralayalım.
+
+256
+00:57:45,300 --> 00:58:08,760
+Bunları sıralarken yapacağım şey de işte TNM'e göre, takım isimlerine göre sıralama yapalım falan demiş. Ne yapıyor? Burada bir sıralama algoritması var. Bakın, temporal elektürde kişilerin takımlarını yer değiştiriyoruz. Halbuki bu çok sağlıklı bir şey değil.
+
+257
+00:58:09,748 --> 00:58:28,788
+Yani sadece takımları yer değiştir. Ondan sonra sadece neyimleri yer değiştir. Bunun yerine yapacağımız şey, bir structure birazdan göreceğiz. Hatta uygulamada da gördünüz bunu. Structure değişkeni üretip, ha burada temp demişiz. Temp değişkeni üzerinden bu işi yapmak.
+
+258
+00:58:30,896 --> 00:58:42,615
+Bir tane name, ondan sonra aynı üç satır tnm için, aynı üç satır id için yazmak gereksiz. Bu işi yaptığımızda dikkat etmemiz gereken bir şey var.
+
+259
+00:58:43,896 --> 00:58:50,896
+Structure'ın içerisinde bir atama yapıyorsak, yani tmp'ye ben bir structure atıyorsam.
+
+260
+00:58:51,215 --> 00:59:18,275
+İçerisinde pointer'lı bir şey olmamasına dikkat edelim. Eğer burada mesela integer yıldız p olsaydı bu mesela bir mallokla oluşturulmuş dizi olabilir. Dolayısıyla tem yani swap de yapsam burada yanlış bir şey yapabiliriz. Ama bunlar ne oluyor? İçerik olarak pname, tname, average yer değiştiriyor. Swap yapılıyor. Bakın burada yapılan swap işte tmp'ye jimciyi alıyor. Şu şart işte hangisi büyüksediyor.
+
+261
+00:59:18,900 --> 00:59:25,920
+J artı 1 ile yer değiştiriyor. Daha sonra TMP'yi aktarıyor ve straktı sıralıyoruz. Şimdi bakalım, çalıştıralım burada.
+
+262
+00:59:37,844 --> 00:59:47,504
+A, A, A, C, B, B diye gitti. C, C, C, B, B.
+
+263
+00:59:49,184 --> 00:59:54,704
+Sonraki alanda bir şey var. Onların değerlerini, average'ları girmemem gerekiyor. Yani sayısal girmem gerekiyor.
+
+264
+00:59:55,464 --> 00:59:56,764
+Orada bir hatamız var arkadaşlar.
+
+265
+00:59:58,004 --> 01:00:03,304
+Şimdi A, A girdi. Daha sonra C, B yaptı. İşte burada bir kritere göre sıralıyor. Kriter de şey.
+
+266
+01:00:04,084 --> 01:00:04,684
+Şuradaki.
+
+267
+01:00:05,300 --> 01:00:20,820
+Team name alanı buna göre sıraladı. Tabii şurada yapmamız gereken şöyle bir durum var. Şimdi ben player name girip enter'a bastığımda o enter hafızada kaldığı için standart input'u temizlemem gerekiyor.
+
+268
+01:00:26,324 --> 01:00:29,884
+Şurada temizleme yapmaya gerek yok. Çünkü burada zaten integer alacağız.
+
+269
+01:00:29,884 --> 01:00:49,484
+Diyelim ki A, A, 2, V, V, 3, V, V, 4, E, E, 7, W, W, 8.
+
+270
+01:00:51,155 --> 01:00:54,996
+Bakın, buraya göre kayıtlarımızı sıralamış olduk.
+
+271
+01:00:57,556 --> 01:01:02,195
+Şu işin yapılabildiğini gösterme tadına söyledim.
+
+272
+01:01:04,195 --> 01:01:12,096
+Bunun bir diğer yolu daha var. Eşittir Operatörü ile bu şey yapılabildiği gibi bir diğer yolu daha var.
+
+273
+01:01:12,096 --> 01:01:13,275
+Şimdi ona bakalım bir de.
+
+274
+01:01:15,695 --> 01:01:18,295
+Şöyle yine şey açacağım.
+
+275
+01:01:18,804 --> 01:01:45,084
+Bunu bir yerden almıştım. Bu kodda zaten bir hata vardı. O hatayı düzelttim. Ondan sonra şey yaptık. Bakın student structure'ımız var. ID, name, percentage alanlarımız var. Şöyle bir structure'ım var. Record 1 demiş. Daha sonra buna record 2, record 3 ve record 4. Kodun orijinalinde şurada pointer vardı arkadaşlar. Onun için orada bir hata vardı.
+
+276
+01:01:46,835 --> 01:01:48,596
+Kodu yazan kişinin hatası olarak.
+
+277
+01:01:49,675 --> 01:01:51,755
+Şimdi diyor ki bunun kayıtlarını şurada yazdıralım.
+
+278
+01:01:53,395 --> 01:01:55,815
+Ben ekstradan şunları da yazdırdım.
+
+279
+01:01:56,115 --> 01:01:57,415
+Adreslerini yazdırdım.
+
+280
+01:01:57,415 --> 01:02:03,815
+Sonra bütün structure'ı eşittir operatörüyle record2'ye kopyaladım.
+
+281
+01:02:04,475 --> 01:02:07,355
+Sonra dedim ki record1'in name1'ini x yap.
+
+282
+01:02:08,615 --> 01:02:11,915
+Yani şunu x yaptık.
+
+283
+01:02:12,635 --> 01:02:13,415
+Sonra record...
+
+284
+01:02:14,260 --> 01:02:22,300
+Birinin kayıtlarını tekrar yazdırıyorum. Sonra Record 2'yi yazdırıyorum. Şuraya kadar bir yorum yapalım.
+
+285
+01:02:26,099 --> 01:02:37,599
+Ne oluyor? Atama yapmış olmama rağmen record1 içerisinde yaptığım bir değişiklik, işte şurada Raju diye yazılan şey, burada x ile yazılacak.
+
+286
+01:02:38,599 --> 01:02:43,559
+Fakat ikinci kayıtta dipkopi yapıldığı için burada ikinci kayıtta biz orijinal kaydı göreceğiz.
+
+287
+01:02:47,443 --> 01:03:01,224
+Eşittim Operatörü demek ki ne yapıyormuş Structure'larda? Orijinal kaydı gösteriyormuş. Bakın. Şurada Raju, Rx, Ju, şurada da Raju. Adreslerine baktığımızda adreslerin de farklı olduğunu görüyoruz.
+
+288
+01:03:02,224 --> 01:03:14,604
+Bunun ilk kaydın adresi neymiş? İşte şu 62FDF0, daha sonra FDF4. Sonra aynısını yine yazdırdık. Zaten ikinci defa yazdırmıştık. Aynı yerler. Şu ikinci kayıt.
+
+289
+01:03:15,155 --> 01:03:25,916
+Record 2, FD, C0, FD, C4, FD, E4 diyor. Demek ki bunlar başka yere birebir kopyalanıyor ve değerler daplike ediliyor.
+
+290
+01:03:26,736 --> 01:03:30,856
+Şimdi bu bir metot. Şimdi ikinci metodumuz memcopy fonksiyonu.
+
+291
+01:03:32,076 --> 01:03:40,416
+Memcopy fonksiyonu diyor ki bir destination'a, şöyle yazımına bakalım memcopy, bu stdlib'in içinde.
+
+292
+01:03:41,012 --> 01:03:52,152
+Diyor ki bir destination pointer ver, kaynak pointer ver, hangi türde olursa olsun bakın void pointer ve bir size ver. Şimdi size nereden bulabiliriz? Size of ile bulabiliriz.
+
+293
+01:03:53,152 --> 01:04:03,432
+Önce destination yazıyorum. Destination diyor ki şu point edilecek alana git. Şimdi record 3 biraz önce şuydu. Burada şu yazmıyordu orijinal kodda.
+
+294
+01:04:04,788 --> 01:04:21,768
+Diyor ki bu bir yer. Tamam da şu an için bir yer göstermiyor. Onun için bu Record 3'ü böyle yazmamız lazım. Sonra geldik. Record 3'ün adresinin içerisine, ptr1'in adresinin gösterdiği yerden Record 1'in kaydı kadar veriyi kopyalar.
+
+295
+01:04:21,768 --> 01:04:29,428
+Record 1 bir yerden başlıyor. Bunun size'ı kadar veriyi alacak. Blog şekilde Record 3'ün olduğu yere kopyalayacak.
+
+296
+01:04:30,260 --> 01:04:52,860
+Sonra şurada mesela demiş ki Record 3'ün adresini kullanarak buradaki veriye erişelim yazmışız. Niye bunu yaptım? Record 3'den de erişebilirim doğrudan. Hiçbir engel yok. Bir de burada pointer kullanmışız. İkisi de yapılabilir. Hatta burada percentage alanında şöyle diyebiliriz. Record 3 nokta percentage. Yani bu da olur, şunlar da olur.
+
+297
+01:04:54,860 --> 01:04:57,860
+Ne oluyor? Aşağıda gördüğümüz değer işte şunlar.
+
+298
+01:04:58,675 --> 01:05:21,976
+Tabi burada orijinali Rxcu diye değiştirdik. Artık Ptr1 üzerinden. İsterseniz bunu mesela record2'nin adresi diyelim. Onu da yapabiliriz. Record2'nin bu sefer kopyasını göreceğiz. Bu şekilde. Bir diğer kopyalımı da.
+
+299
+01:05:22,387 --> 01:05:45,228
+individual memberların birebir kopyalanması. Yani bu bazen yapılır da çok fazla tercih edilen bir şey değil. Neden çok fazla tercih edilmez? Çok fazla memberımız olabilir. Yani 30 tane member olsa her biri için ayrı ayrı kopyalama pek sağlıklı değil. Bir de eğer içerisinde böyle integerlar dışında stringler varsa string copy fonksiyonunu kullanmanız lazım. Bu da yapılabiliyor mu? Yapılıyor.
+
+300
+01:05:46,324 --> 01:05:54,524
+Daha çok biz memcopy'i veya eşittir operatörünü kullanacağız. Eşittir operatörünü veya memcopy'i kullanırken içeride pointer olup olmalısına dikkat edin.
+
+301
+01:05:54,524 --> 01:06:12,724
+Siz mesela şunu çalışabilirsiniz. Bir linked listimiz olsun. Çalışma sorusu olarak yapın. Link listemizde, gerçi bu böyle olmaz. Link liste şöyle olacak. Bunlar birbirine bağlı.
+
+302
+01:06:13,940 --> 01:06:38,039
+Herhangi iki düğümü, şunu mesela, Swap yaptığınızda, bunu buraya getirdiğinizde ne olacak? Bunun Next'ini bir yerde tutmamız lazım değil mi? Swap yaparken listenin boğuluş. Çünkü ben bunu aldığımda, şuraya getirsem bu yine burayı göstermeye devam edecek. Bunu getirdiğimizde bunun sonrası yine nal olacak. Bunun öncesi.
+
+303
+01:06:38,384 --> 01:06:51,844
+Bu da burayı göstermeye devam edecek. Swap yaparken link sitelerde doğrudan swap yapamıyor. Aradaki bu next büyümleri ne yapmamız lazım? Değiştirmemiz gerekiyor. Mesela bunu bir çalışın. Güzel bir çalışma sorusu olur.
+
+304
+01:06:52,563 --> 01:07:05,364
+Peki bizim şu grid field'larla alakalı örneğimize bakalım. Kişinin bilgilerini arkadaşlar, doğum tarihi, günay, yıl bilgilerini sadece şu şekilde saklanmış. Başka hiçbir farklılık yok.
+
+305
+01:07:06,291 --> 01:07:17,512
+Bir de bakın Type Def'in şöyle kullanım da mümkün. Eğer siz burada Structure'ı böyle tanımlarsanız, Type Def yazmadan şu şekilde daha sonradan bir Type Def yapabilirsiniz. Program başlamadan önce.
+
+306
+01:07:17,512 --> 01:07:24,532
+Diyakı Struct, Personal State, Element. Artık Element'i aşağıda istediğiniz gibi kullanabiliriz.
+
+307
+01:07:25,911 --> 01:07:32,692
+Elemanların yazdırılması, listenin yazdırılması her şey aynı. Sadece veriler okunurken değişiklik olacaktı burada.
+
+308
+01:07:33,168 --> 01:07:42,887
+Bakın şuraya kadar da her şey aynı. Ama dikkat edin, şurada unsigned veriler alınıyor. Bir value değişkenine daha sonra burada kopyalanıyor. Sadece değişiklik burada.
+
+309
+01:07:44,168 --> 01:07:54,407
+Niye? Çünkü onların adreslerine erişemiyordu. Bitfiltlerin adresine erişilmez. Add element, insert after the read element, find bunlar aynı kodlar.
+
+310
+01:07:54,927 --> 01:08:00,568
+Ve buradaki main de aynı. Kodu çalıştırıp deneyebilirsiniz. Buraya kadar bir sorumuz var mı?
+
+311
+01:08:09,619 --> 01:08:17,299
+Şimdi bir de şu nested structure'larla alakalı bir iki şey daha göstereyim. Ondan sonra ara vereceğiz.
+
+312
+01:08:18,579 --> 01:08:23,219
+İçiçe yapıları tasarırken birkaç farklı şey var.
+
+313
+01:08:39,412 --> 01:08:42,211
+Şöyle yapabiliriz. TypeTipStruct
+
+314
+01:08:46,868 --> 01:08:48,868
+2. Yuen
+
+315
+01:08:53,619 --> 01:08:55,532
+Ne karıyorsunuz gerçekten?
+
+316
+01:09:03,220 --> 01:09:04,280
+Bunu tarih dedik.
+
+317
+01:09:12,467 --> 01:09:22,188
+Biz bu Structure'ı başka bir yerde kullanabiliriz. İstersek bir Struct içerisinde de kullanabiliriz. Mesela bir Type Def daha yazayım.
+
+318
+01:09:28,083 --> 01:09:43,644
+Farih diye alalım. Bu tarz kullanımda mümkün. Fakat aynı yapıyı, şu yapıyı mesela, deneme diyeyim.
+
+319
+01:09:48,180 --> 01:09:52,079
+Böyle bir tasarlayabilir. Ben tarihi burada başka bir yerde kullanmayacaksam.
+
+320
+01:09:53,520 --> 01:09:57,600
+Tarihi alırım. Structure, Integer, Dayer falan şu kısmı alırım.
+
+321
+01:09:59,380 --> 01:10:05,200
+Şunun içerisine kopyalarım. Bakın burada bir Nested Struct oldu ama bunun değişkenin adını yazmak durumundayız.
+
+322
+01:10:06,260 --> 01:10:07,780
+Ne diyelim? İşte tarih diyelim.
+
+323
+01:10:09,060 --> 01:10:14,620
+Önce Structure tanımlanıyor ve bu Structure'dan bir değişken üretiliyor. Bu değişkenin adı da tarih oluyor.
+
+324
+01:10:15,091 --> 01:10:26,231
+Tabi bu bir kere kullanılabilir bir şey. Başka bir yerde tarih isminde, ya ne bileyim şurada bir isim de versem, böyle bir şey mümkün değil.
+
+325
+01:10:31,923 --> 01:10:33,583
+Deneme bir diyelim.
+
+326
+01:10:37,844 --> 01:10:40,443
+Diyor ki main'imiz yok diyor. Bir tane main'i yapalım.
+
+327
+01:10:47,796 --> 01:10:52,936
+Bakın burada tarih isminde bir şey oluşturabilir miyim?
+
+328
+01:10:53,036 --> 01:10:53,896
+Oluşturabiliriz.
+
+329
+01:10:56,155 --> 01:11:00,615
+Ama tarih şöyle struct.
+
+330
+01:11:00,615 --> 01:11:04,256
+Struct.
+
+331
+01:11:05,735 --> 01:11:07,836
+Tarih 2.
+
+332
+01:11:08,536 --> 01:11:13,316
+Dediğimde böyle bir şey struct.
+
+333
+01:11:16,819 --> 01:11:18,819
+Bir dakika, niye yapmadım?
+
+334
+01:11:21,319 --> 01:11:27,319
+Şimdi bunu görmemesi lazım. Gerçi de yapacağız. Sadece struct dedik. Değişken.
+
+335
+01:11:29,319 --> 01:11:33,319
+Struct tarih 2. Tarih 2 diye bir yere yazdık mı yazmadık?
+
+336
+01:11:35,819 --> 01:11:37,579
+D nokta.
+
+337
+01:11:38,644 --> 01:11:51,264
+Muhtemelen bu şeyi yapıyoruz arkadaşlar. Görüyor ama printf, mesela diyelim ki d nokta, yüzde d diyelim. Mesela d nokta dediğim gibi zaten bana bir şey çıkarmıyor. D nokta, ay diyelim mesela. Şuraya yazalım.
+
+338
+01:12:00,884 --> 01:12:13,363
+Herhangi bir şey döndürmeyecek. Hatta bir yanlış bir şey döndürdü. Yani bunu bir defa daha kullanamıyoruz. Sadece şu deneme 1'in altındaki oluşturulacak structure.
+
+339
+01:12:14,195 --> 01:12:22,755
+Bir defaya mahsul, yani burada kullanılabilir, buradan erişilebilir. Ama böyle bir şey yapmayalım. X-Pod gibi başka şeyler de zaten buna izin vermiyor.
+
+340
+01:12:22,755 --> 01:12:30,396
+Devsi bunu muhtemelen kendisi şurada görüyor. Gördüğü için kendisi izin veriyor. Normalde olmayan bir şey.
+
+341
+01:12:32,896 --> 01:12:37,695
+Saatimiz kaç? Daha var. 10 dakikamız daha varmış. Bunu da böylece söylemiş olayım.
+
+342
+01:12:39,195 --> 01:12:41,695
+Şimdi bir de geldik.
+
+343
+01:12:43,123 --> 01:12:56,844
+Union'a. Şunlar bir kapansın. Şimdi Structure'lar içerisinde değişkenler bellekte farklı yerlerde tutuluyor. Yani Structure'ın üyeleri.
+
+344
+01:12:56,844 --> 01:13:08,583
+İşte Struct C falan, Integer X, Integer Y. Bu bellekte X ve Y için ayrı yerler ayrılacağını söyler.
+
+345
+01:13:09,363 --> 01:13:35,963
+Fakat burada bellek structure içerisindeki bütün elemanların aynı yeri kullanmasını söyleyebiliriz. Yani ya bunu kullanacak ya bunu kullanacak. İkisinden bir tanesi. İki tane yere ihtiyaç yok dediğimizde buna da yüneliyoruz. Bellek bölgesinin aynı sorunu. Bu aynı bellek yerinin farklı şekillerde yorumlanmasını kullanmada karşımıza geliyor.
+
+346
+01:13:36,948 --> 01:13:54,587
+Örnek olarak bir kayıt yapılacak. Türkiye Cumhuriyeti vatandaşı yabancı vatandaş. Türkiye Cumhuriyeti vatandaşı ise kimlik numarası değilse pasaport numarası gibi bilgi alınır. Bunlar da mesela bir stnikte saklanır.
+
+347
+01:13:55,764 --> 01:14:04,963
+İki tane ayrı, yani pasaport numarası olan ve TC kimlik numarası için ayrı ayrı yerler saklamaya, fiziksel olarak ayrı yerler saklamaya gerek yok.
+
+348
+01:14:05,724 --> 01:14:10,144
+Bir union altında aynı yeri gösterecek iki farklı değişken tutabiliyoruz.
+
+349
+01:14:10,904 --> 01:14:14,684
+Yaptığımız şey şu arkadaşlar, Type Def Union diyeceğiz. Aynı Structure tanımı gibi.
+
+350
+01:14:15,404 --> 01:14:21,043
+Diyor ki bunun altında bir tane X, bir tane J, bir tane de Struct tanımla C1, C2.
+
+351
+01:14:21,619 --> 01:14:37,819
+Şimdi bu bakın 1000'den 1003'e kadar yani 4 byte'lık bir alanı tutuyor. Şurada birisi var, burada birisi var, burada J var, aynı zamanda burada X var. Peki bunun size'ı neye göre belirlemiyor? Şu 1000'den 1004'e olan şey.
+
+352
+01:14:42,003 --> 01:14:45,644
+Durduk yere hani 4 bayt kafasına göre vermeyecekler herhalde.
+
+353
+01:14:53,203 --> 01:15:07,443
+Bu Structural'ın size, hani biraz önce eğer bunların hepsi toplam size yapıyorduk. Eğer bu şey olsaydı, Struct olsaydı, şunun size artı, bunun size artı, bunun size. Peki Union olduğunda ne olacak?
+
+354
+01:15:09,583 --> 01:15:11,363
+En büyüğüne göre...
+
+355
+01:15:11,363 --> 01:15:12,304
+Aynen, çok güzel.
+
+356
+01:15:12,304 --> 01:15:13,663
+Çok güzel.
+
+357
+01:15:14,943 --> 01:15:16,304
+İçerisindeki memberların...
+
+358
+01:15:17,268 --> 01:15:42,247
+En büyük boyutlu olanına göre kendisini adjust'ı ayarlıyor. Burada en büyük boyutlu olan zaten j ve float. İkisi de 4 byte. Otomatik olarak 4 byte oluyor. Normalde karakterler 1 byte. Yani şu structure'ımız 2 byte. Tek bir karakter olsaydı 1 byte'lık şey. Kullanım arkadaşlar bu şekilde bir değişken ürettik. Diyor ki example s.c1a olsun. Geldi a buraya yerleşti.
+
+359
+01:15:42,676 --> 01:16:03,256
+S.C2B olsun, B'de buraya yerleşti. B buraya yerleşirken A'yı bozmadı. Ve bakın kalan bölgeler boş duruyor. Ama ben example J dediğimde ne yapacak? Bunu böylece bozacak, gidecek buraya 5 yazacak. Çünkü 5 integer bir şey, 4 bir diğer kapıyor. Eski veriler gidiyor.
+
+360
+01:16:07,195 --> 01:16:09,976
+Bunun aynısını biz de tasarlayalım.
+
+361
+01:16:14,771 --> 01:16:15,771
+İlk bilikç.
+
+362
+01:16:17,572 --> 01:16:18,572
+Serti de ayarlar.
+
+363
+01:16:18,572 --> 01:16:19,572
+Mesh.
+
+364
+01:16:23,315 --> 01:16:28,175
+Sadece union diyoruz. Structure'ne.
+
+365
+01:16:36,051 --> 01:16:43,051
+Bu bir değişken içeride yapmamış.
+
+366
+01:16:57,395 --> 01:17:12,595
+printf sizeof car eşittir yüzde de virgisayaz. Bunu biliyoruz.
+
+367
+01:17:19,315 --> 01:17:21,315
+Size of integer.
+
+368
+01:17:22,315 --> 01:17:24,315
+Bunu da biliyoruz.
+
+369
+01:17:24,315 --> 01:17:28,315
+Hatta şunu double yapmışız. Bu da double. Bunu daha yazalım.
+
+370
+01:17:32,404 --> 01:17:46,703
+Size of u. Ben buradan bir değişken üreteceğim. Buraya u diyelim. U element falan diyelim. Doğrudan u da diyebiliriz. Çünkü tek bir tane yapıdır.
+
+371
+01:17:55,796 --> 01:18:23,216
+Karakter 1, bu 8 maksimumuna göre ayarladı kendisini. Ben buradan bir element oluşturdum. Elementin C'sinin A'sına eşittir A diyorum. Tabi bu karakter olduğu için tek karakter yapacağız. Elementin C'sinin B'sine eşittir B diyorum.
+
+372
+01:20:09,076 --> 01:20:15,515
+Arkadaşlar, hoca 15 dakika ara dedi. İnternet gitmişinde okulda. 15 dakika sonra baş devam edecekleriz.
+
+373
+01:42:44,564 --> 01:42:45,824
+Ses geliyor mu arkadaşlar?
+
+374
+01:42:51,412 --> 01:42:52,612
+Şu an geliyor hocam.
+
+375
+01:42:57,052 --> 01:43:02,152
+Okulun internetindeki problem devam ediyor da mecbur telefondan halledelim.
+
+376
+01:43:03,412 --> 01:43:08,252
+Çok fazla renk etmek istemiyorum. Belki dersiniz vardır.
+
+377
+01:43:08,252 --> 01:43:13,912
+Şimdi en son şunları yazdırıyorduk. Element A, Element C, B.
+
+378
+01:43:19,764 --> 01:43:35,144
+x'e 5 atayım. Aynısını tekrar görelim.
+
+379
+01:43:44,212 --> 01:44:06,172
+Elementin y'sine nokta dört atalım. Tekrar görelim. Şuraya kadar a ve b'yi göreceğiz. Bunu yaptıktan sonra a ve b'nin üzerine yazılacak. Yani y de üzerine yazılacak. Sonra bunu yapınca x, a ve b hiçbir şey göremeyeceğiz. Sadece y'nin değerini görebileceğiz. Diğer değerler, farklı değerler çıkacak.
+
+380
+01:44:07,475 --> 01:44:20,536
+Çünkü ne yapıyor? Oradaki bit değerleri işte byte'a çeviriliyor ve integer'a çeviriliyor. Karşılık olan değerler orada gösteriliyor. İşte şurada A, B'yi gördük, burada 5'i gördük, burada 4'ü gördük. Bu şekilde inceleyebiliriz.
+
+381
+01:44:21,855 --> 01:44:22,615
+Sorumuz var mı burada?
+
+382
+01:44:30,036 --> 01:44:49,815
+Şimdi buradaki örnekte arkadaşlar şunu yapmış, birazcık değiştirmiş. Demiş ki, eğer Türkiye Cumhuriyeti vatandaşı mı diye bir şey koy, böyleyse bunu tutsun, değilse kişinin doğum tarihi bilgisini tutsun.
+
+383
+01:44:49,815 --> 01:44:56,755
+Şimdi bunu normalde böyle yaparsak, Türkiye Cumhuriyeti vatandaşı olmayan kişinin de, pardon doğum yerini tutsun.
+
+384
+01:44:57,811 --> 01:45:16,532
+Türkiye Cumhuriyeti vatandaşı olmayan kişinin de doğum yeri bilgisi tutulur. Fakat bunu bir düğününle tasarlarsak, gereksiz yere yer kaybı olmama satına, ya bunu tutacaktır ya bunu tutacaktır. Bakın şöyle bir bite ihtiyacım var. Bir bittik. Bu sayede daha verimli bir şekilde bunu kullanabiliyoruz.
+
+385
+01:45:19,172 --> 01:45:23,492
+Yaptığı şey sadece bu. Şimdi Rikörj'ün konusuna bugün burada girmeyeceğim.
+
+386
+01:45:24,948 --> 01:45:42,268
+Projenizle alakalı faydalı olabilecek birkaç şey var. Onlara bir bakalım. Size onu slide olarak da paylaşacağım. Hatta dün de anlattım. Birazdan dersi bitirirsek oradan da hani o dünkü kayıtlardan da izleyebilirsiniz. Onu Google Drive'a ekledim.
+
+387
+01:45:42,268 --> 01:45:51,228
+Şimdi karakterlerin ve input output işlemlerinin formatlı yapılması ile alakalı bir bölüm.
+
+388
+01:45:52,595 --> 01:45:54,595
+Burada gayet güzel örnekler de var.
+
+389
+01:45:56,095 --> 01:46:03,296
+Bir çoğunda biliyorsunuz, yani printf'in nasıl kullanılacağı veya başka bir şeyin nasıl kullanılacağı. Örneğin olarak karakterlerle başlayalım.
+
+390
+01:46:03,296 --> 01:46:12,296
+Biliyorsunuz ki karakterler aslında bir sabit sayı. Fakat biz bunları iki tırnak arasında yazdığımızda integer değerinin karşılığını getiriyor.
+
+391
+01:46:12,895 --> 01:46:17,895
+Stringler karakterlerin bir dizisi. Fark olarak ne var sadece arkadaşlar?
+
+392
+01:46:18,484 --> 01:46:43,704
+Bu karakter dizisi bir kere şeyle ifade ediliyor. Şu çift tırnaklarla ifade ediliyor. Bir de bunun sonunda otomatik olarak backslash 0 geliyor. Başka bir şey yok. Bir şeyi backslash %s ile yazdırmaya çalıştırdığınızda ilk karakterden başlayacak backslash 0'ı görüne kadar bütün string yazacaktır.
+
+393
+01:46:46,036 --> 01:47:13,136
+Eşitlerin sağ tarafındaki kısmı bu şekilde tanımladıktan sonra eşitlerin sol tarafında şu ikisini de yapabiliriz. İkisi de zaten aynı anlama geliyor arkadaşlar. Siz Color PTR yazdığınızda %S ile Printed içerisinde ne olur? Oradaki değerler klavye ekranına bastırılır. Burada Color 5 elemanlıdır. Şunu dizinin sonunda yani 1, 2, 3, 4, onu da dahil ediyor. Onun için 5 elemanlı bir sayf göreceğiz.
+
+394
+01:47:14,931 --> 01:47:18,931
+İmput işlemi zaten bu bildiğimiz işlemler.
+
+395
+01:47:21,431 --> 01:47:26,931
+Karakter Handic'le alakalı, Library'e baktığımızda C-Type.
+
+396
+01:47:26,931 --> 01:47:41,431
+Buradaki bazı fonksiyonları projenizde kullanabilirsiniz. Herhangi bir karakter dijit mi, alfanumerik mi, dijit veya letter mi, alfabetik veya letter mi, hegzadesimal bir karakter mi?
+
+397
+01:47:41,684 --> 01:48:02,203
+Büyük karakter mi, küçük karakter mi? Büyük karaktere çevirme, küçük karaktere çevirme. Boşluk mu? Mesela boşluk olanlar backslash end'den kaynaklı olabilir, şu olabilir, şundan olabilir, şundan olabilir, bundan olabilir, bundan olabilir. Eğer bunlardan bir tanesiyse verilen karakter true verecek. Değilse false verecek.
+
+398
+01:48:02,676 --> 01:48:27,516
+Kontrol karakteri mi? Yani kontrol tuşundan basılmış. Punctuation dediğimiz bizim noktalama işaretleri gibi şey mi? Printing karakter mi? Yani bu yazılacak herhangi bir karakter mi? Yazılabilir karakter mi? Bir grafik karakter mi? Bunlara bakıyor. Örneğin biraz önce şu kalp sembolü falan çıkmıştı ya. Onlar bu aralıkta çıkıyor. Şurada örnekleri de var.
+
+399
+01:48:28,467 --> 01:48:49,608
+Yani bunların ne olduğu, true-false cevapları, bunları kullanabilirsiniz. Bunlar artık hangisi projede karşınıza gelirse. Şimdi String Conversion için STDLib'i kullanıyoruz. STDLib bize herhangi bir argümanı, String olan argümanı farklı tiplere çevirmeyi sağlıyor.
+
+400
+01:48:50,260 --> 01:49:06,700
+Bunu mesela main argümanlarında kullanmıştık. Argümanı float'a, argümanı integer'a, argümanı long'a çevirebiliyoruz veya tam tersi herhangi bir argümanı double'a, argümanı long'a pointer'ı veya unsanet long'a çevirme.
+
+401
+01:49:07,891 --> 01:49:24,371
+şeyleri var. Burada baktığımız zaman örneğin argümanı float. Bu string bir şey ama buna ne olabilir? Double'a dönüşebilir. Burada 99.xyz gibi bir şey olsaydı burada hata alırdık. İçerideki ifademin bunun kontrolü bizde. Doğru yazmış olmamız gerekiyor.
+
+402
+01:49:25,451 --> 01:49:34,912
+Matematik işlem yapabilir. Şimdi std.io'da birkaç tane konfisyon var. Get karakter. Bu ne yapılır? Şurada yani
+
+403
+01:49:35,507 --> 01:50:00,868
+Bir yerde programın tek bir karakter okumasını istiyorsanız, bunu kullanabilirsiniz ve bu integer bir değer döndürüyor. Yani kullandığı şey integer bir. Eğer bir string almak istiyorsanız, standard input'tan, bu string parametre olarak veriliyor, getString diye. Bunun sayesinde mesela a, b, c, x, y, z'yi doğrudan scanf ile alamıyoruz.
+
+404
+01:50:01,555 --> 01:50:10,735
+Ama getString dediğinizde backslash en görene kadar ki her şeyi alıyor. Çünkü abc, xyz'de abc'yi alıyor. Boşluğu gördüğü için almıyordu.
+
+405
+01:50:12,155 --> 01:50:18,975
+Bir karakter bastırmak için putcar, putString'de hangi string yazacaksanız puts ile yazılıyor.
+
+406
+01:50:18,975 --> 01:50:25,555
+Şimdi sprintf, sscanf. Bunlar bizim fprintf, fscanf veya şeye benziyor.
+
+407
+01:50:25,971 --> 01:50:43,971
+Print Fsken F'e ben ediyorum. Herhangi bir karakter dizisinden, karakter dizisine bir format vererek string oluşturabiliyoruz. Onun örneğini hızlıca yazayım. Şurada yapabiliriz.
+
+408
+01:50:52,148 --> 01:50:59,827
+Diyor ki önce Destination String'i ver. Car name. Mesela 50 olsun.
+
+409
+01:51:02,708 --> 01:51:06,987
+Diyor ki buraya name'i verdim. Şunu hatta alta alalım.
+
+410
+01:51:11,636 --> 01:51:26,636
+Sonra diyorum ki bu neyime? %d, %d, %c, ondan sonra abc, %s, %lf'den oluşan bir sinik oluştur. Bu %d ne olsun mesela? 3 olsun.
+
+411
+01:51:27,636 --> 01:51:32,836
+Ondan sonra bu %d ne olsun? Yukarıda mesela bir integer x tanımlayalım.
+
+412
+01:51:37,011 --> 01:51:50,931
+5 olsun. Burada bir tane karakter işte A karakteri olsun. Sonra abc bir tane yüzde s var. İşte burada deneme diyelim. Long float var. Şu elementin y'sini alalım.
+
+413
+01:51:52,611 --> 01:52:01,471
+Buraya gönderelim. Bakın ne oldu? Burada bir string inşa ettik. Put string diyorum. Nami yaz.
+
+414
+01:52:06,996 --> 01:52:21,095
+3, 5, A, B, C denilen. Bakın böyle bir string oluşturabiliyoruz. Şimdi sscanf de oluşturulan herhangi bir stringi değişkenlere pars etmenizi sağlıyor. Mesela neyimi kullanalım. sscanf.
+
+415
+01:52:23,916 --> 01:52:31,175
+Diyor ki, sorsumuz ne olacak? Sorsumuz yine neyimi olsun? Diyorum ki buradan bir tane %d al.
+
+416
+01:52:31,699 --> 01:52:56,619
+Bir yüzde D al. Ondan sonra bir tane yüzde C al. Bir tane yüzde S al. Ondan sonra bir yüzde S daha al. Boşluktan sonraki bir boşluk alacak bir yüzde S. Bir tane de long flow al. Bu yüzde D'nin bir tanesini mesela X değişkenimiz olsun, Y değişkenimiz olsun, C değişkenimiz olsun, S değişkenimiz olsun, S bir değişkeni olsun.
+
+417
+01:53:01,555 --> 01:53:28,835
+Y, Y değişkeni. Ben şurada değişkenlerini tanıtacağım. Integer X, Y, Kar C, eğer isimlerinde sıkıntı yoksa, Kar, işte S 50, Kar S 1 50, bir de Double.
+
+418
+01:53:29,779 --> 01:53:55,520
+Y, Y. Bu değişkenler buna aktarılacak. Aktarılırken de yalnız şimdi hata alacağız. Demiş ki bu X, Y'yi silelim. Yukarıda normalde yalanır. Aktarılırken tabi burada ScanF'te gördüğümüz hatayı alacağız. Bakın ne oldu? Segmentasyon hatası aldık, program hata verdi.
+
+419
+01:53:55,760 --> 01:54:19,319
+Çünkü diyor ki bunun adreslerini ver. Bunun adresini ver, bunun adresini ver. Ondan sonra bunun adresini ver. Şunun adresini vermesek de olur. Niye? String zaten kendi pointer adres tutuyor. Şunların adresini ver. Sonra gelelim mesela printf. Hepsini yazmayacağım. Yf, yüzde lf diyelim. Yf.
+
+420
+01:54:24,948 --> 01:54:38,008
+Dört noktadır. Şimdi bu nerede kullanılır? Projemizin dokümanlarını bir açayım. Örneğin öğrenciler.
+
+421
+01:54:39,068 --> 01:54:48,528
+Şimdi mesela formatlı okumayla fprintf'le fskf'le gidip şuradaki verileri şunu al, virgül al, bunu al, virgül al, böyle okuyabiliriz. Bu mümkün.
+
+422
+01:54:48,528 --> 01:54:51,608
+Bir de şöyle okuyabiliriz. Bu satırı tamamen okuruz.
+
+423
+01:54:52,340 --> 01:54:59,000
+Bu satırı tamamen okuyup bir string'e alırız. Şuradaki gibi bir name diye bir string'e aldık.
+
+424
+01:55:00,659 --> 01:55:05,280
+Satır okuma fonksiyonu get line'da hatırlarsanız. Yani gidip oradan tek bir şeyi aldık.
+
+425
+01:55:06,740 --> 01:55:13,500
+Sonra bunu okuduğumuz bu değişkeni, sskeni şöyle değişkenlere parçalayabiliyoruz.
+
+426
+01:55:14,440 --> 01:55:18,000
+Böyle bir faydası var. Burayı anladık mı?
+
+427
+01:55:22,612 --> 01:55:23,112
+Evet, evet.
+
+428
+01:55:23,112 --> 01:55:46,112
+S printf, s scanf. Örnekleri var. GetString dediğimizde, mesela burada reverse yapıyor. Basit bir algoritma ile buna bakabilirsiniz. Sonra string manipulation demiş. String manipulation ne demek? String'i kopyalama. Bu S2'yi S1'in içerisine, yani şu destination bu source olacak. Şunu alacak, şunun içine kopyalayacak. Bir string'i öbürüne aktaracak.
+
+429
+01:55:46,384 --> 01:56:13,604
+String'in belli bir karakterini, ilk beş karakterini almak istiyorsanız şunu yazmak gerekiyor. String Concatenation dediğimiz, şunun üstüne şu String'i ekleyecek. Bunun üzerine şu String'i ilk şu kadar karakteriyle ekle derseniz String and Concatenation kullanabilirsiniz. Burada örnekleri var, çıktıları da var, bakılabilir. Sonra String Comparison. Bakın String'i eşittir eşittir ile kesinlikle kontrol yapmıyoruz.
+
+430
+01:56:14,355 --> 01:56:38,655
+String Compare diyor ki, eğer String birbirine eşitse 0 döndürür. Eğer S1, S2'den küçükse, bu küçüklükten karakter karakter kontrol ediyor. Yani büyük A'ya bakıyor, küçük A'ya bakıyor. Hangisi küçük? Büyük A daha küçük. Negatif bir şey döndürüyor. Eğer S1, S2'den büyükse, karakter karakter pozitif bir şey döndürüyor. Ve buna göre hangi String daha büyüktür? Genelde biz eşittir kullanırız, eşitliğe bakarız.
+
+431
+01:56:41,587 --> 01:56:49,767
+N karakterine bakacaksak da burada üçüncü olarak N compare dediğimiz bir şey vereceğiz. Yani üç karakterlik kontrol et, beş karakterlik kontrol et gibi.
+
+432
+01:56:53,395 --> 01:57:20,255
+Şu string üzerinde arama işlemleri yapıyor. Örneğin, string içerisinde bulunan ilk lokasyonu gönder. Bunlara bakabilirsiniz. Bununla bazı örnekler var. İşte this, the value is, şu demiş. String 2 de bu demiş. Şunun içerisinde şundan geçen karakterler var mı? Diyor ki mesela, the length of initial segment of string bir containing only character from string 13. Yani bu kadar şey var demiş.
+
+433
+01:57:20,884 --> 01:57:29,884
+Örneklere bakarsanız, buradaki açıklamalar uzun uzun söylememe gerek yok. Güzel kullanışlı fonksiyonlar var.
+
+434
+01:57:29,884 --> 01:57:37,884
+Şimdi şu çok önemli, tokenizer stringi parçalarına ayırıyor arkadaşlar.
+
+435
+01:57:37,884 --> 01:57:43,724
+Tokenize etmek, parçalamak demek. Bunu da zaman zaman kullanıyoruz. Örneğin burada...
+
+436
+01:57:44,180 --> 01:57:54,680
+Bir string değişkenimiz var. Diyor ki, bunu token pointer'larına koy. Yani buradan bir pointer tutacağız. Bu bir sürü string'in pointer'ını tutacak demek.
+
+437
+01:57:54,680 --> 01:58:08,479
+Şu boşluğa göre bunları token'larına ayırt. Sonra diyor ki, bu token'ları tekrardan işte, yani ilk token mesela burada şeydir, d'dir. Pardon, distir.
+
+438
+01:58:09,939 --> 01:58:15,619
+Sonra tekrar token ayırıyor. Öbüründen is alacak, öbüründen e alacak falan. Sentence böyle devam edip gidecek.
+
+439
+01:58:16,279 --> 01:58:23,859
+İstersek burada başka bir karakterde söyleyebiliriz. Virgüllere göre ayır. Mesela bizim şu örneğimizde virgüllere göre tokenize yapmamız mümkün.
+
+440
+01:58:23,859 --> 01:58:32,659
+Dolayısıyla burada her bir token'ı ayrı ayrı alıp mesela değişkende saklayabilirsiniz. Başka bir yerde kullanabilirsiniz. Gayet kullanışlı bir fonksiyon bu da.
+
+441
+01:58:34,220 --> 01:58:35,260
+Ne oldu bu? Crash etti.
+
+442
+01:58:37,171 --> 01:58:38,151
+İlk tarzı çalıştırma.
+
+443
+01:58:54,739 --> 01:58:55,539
+Yaşos.
+
+444
+01:59:01,876 --> 01:59:04,275
+Bir de arkadaşlarımın seyredeniz.
+
+445
+01:59:15,699 --> 01:59:17,699
+O niyeyse foksit açıklıyor.
+
+446
+01:59:35,699 --> 01:59:59,139
+Tokenizer çok kullanabileceğimiz bir şey. Şimdi bir de standart library ile STDLib'in içinde yine bazı şeylerimiz var. Örneğin bunların parametrelerinin void olduğunu görüyoruz genellikle. Void herhangi bir tip için çalışabileceğini gösteriyor. Çünkü çok çalışıyor. Örneğin memcopy biraz önce gördük.
+
+447
+02:00:00,000 --> 02:00:16,000
+Bir veri kopyalamak için kullanılıyor. strCopy memcopy'nin özelleştirilmiş hali, stringler için yazılmış hali. memcompare, ondan sonra memset, mesela bir yere belli bir aralıkta memset yaparak karakterlerle dolduruyorsunuz bir veriyi.
+
+448
+02:00:16,000 --> 02:00:27,979
+Diyorsun ki şu karakterlerle şu kadar doldur. Şurada örnekleri var. Homesweet home demiş. Burada move yapıyor. Bir stringi alıyor, bir yerden bir yere taşıyor.
+
+449
+02:00:28,372 --> 02:00:51,692
+Bu şekilde. İşte böyle bir şey verdiğinde şunu alacak, suite alacak, başa getirecek, taşıma yapacak. Standart error ve strl'lerini biliyoruz da standart error'da bazı hatalar vardır. Örneğin iki numaralı dosya bulunamada hatası mıydı? Öyle bir şeydi. Böyle bir dosya veya klasör yok.
+
+450
+02:00:52,275 --> 02:00:58,136
+Bu önceden tanımlı bir şey. Bazı standart errorları yazmak için kullanılan bir fonksiyon.
+
+451
+02:00:58,636 --> 02:01:01,996
+STRL'lerini zaten biliyoruz. String'in size'ını verecek bir şey.
+
+452
+02:01:02,815 --> 02:01:08,576
+Mem copy, mem set. Mesela burada mem copy'yi çok kullanıyoruz. Mem compare bazen kullanılıyor.
+
+453
+02:01:09,936 --> 02:01:12,315
+Hani her zaman ihtiyacımız da yok hepsine.
+
+454
+02:01:13,235 --> 02:01:15,355
+Şimdi formatlı input output'a bakalım biraz da.
+
+455
+02:01:16,692 --> 02:01:34,872
+Formatlı input-output sadece klavyeden yapılacak bir şey değil. S-scan-f ve printf değil. Bu dosyadan yapılacak formatlı input-outputları da söylüyor. Bunun için streamler dediğimiz getString, putString, getCar, putCar gibi fonksiyonları burada anlatıyor.
+
+456
+02:01:34,872 --> 02:01:42,291
+Stream dediğimiz şey de arkadaşlar, sadece klavye ve ekrandan aklımıza gelmesin. Dosyalar da stream'in bir parçası.
+
+457
+02:01:43,188 --> 02:01:53,347
+Örneğin Printf'den burada bahsetmiş. Printf'in hangi format spesifier'ları, %d neyi gösterir, %i neyi gösterir, bunlar zaten bildiğimiz şeyler.
+
+458
+02:01:54,148 --> 02:02:00,668
+İşte şunu bastırınca, mesela bu nedir? 455'in oktal halini bastıracak, hexadismal halini bastıracaktır.
+
+459
+02:02:00,668 --> 02:02:02,668
+Şimdi 455...
+
+460
+02:02:02,836 --> 02:02:12,836
+Yani decimal şunu 8'lik sisteme çevirecek. Floating Point'leri yazdırırken eğer eksponansiyel bir formda yazmak istiyorsak E veya O'yu kullanıyoruz.
+
+461
+02:02:14,115 --> 02:02:26,115
+F zaten %F çok kullandığımız bir şey. G'yi kullanabiliriz. Herhangi bir non-trailing zero. Eğer sonunda böyle şeyler sıfırların yazmasını istemiyorsa G'yi kullanabiliyorsunuz P yerine.
+
+462
+02:02:26,115 --> 02:02:28,016
+Büyük G veya küçük G.
+
+463
+02:02:28,819 --> 02:02:48,079
+Örnek olarak şurada baktığımızda işte şu nedir? Şu sayılar, bunlar eksponansiyel gösterim. Yani E üzeri bir şey şeklinde. Şunlar floating point. Şurada da en alttakinde de direkt, gerçi burada sıfırlar yok da doğrudan bu şekilde gösterilebiliyor outputları. Zaman zaman lazım olacak.
+
+464
+02:02:48,539 --> 02:02:56,079
+Stringleri ve karakterleri %C'lerle, %S'lerle konuştuğumuzu zaten hep konuştuk, anlattık.
+
+465
+02:02:57,268 --> 02:03:23,208
+Örneğin bu bir karakter yazdıracak şu. Şu bir string yazdıracak. Backslash 0'ı görene kadar sonundakini. Bakın bu da bir string. String pointerı. Bunları görüyoruz. Bir adres yazdırmak için bu. Şimdi kaç tane satır, kaç tane karakter yazıldığını görmek için de n'i kullanıyoruz arkadaşlar. Ama bu n şu şekilde ifade ediliyor.
+
+466
+02:03:24,020 --> 02:03:49,180
+Mesela, ayrıca işte yüzde işaretini yazmak için de iki defa yüzde yazmamız lazım. Hani şunlar bildiğiniz şeyler de, this line has 28 karakter falan demiş işte burada, pardon, total characters printed on this line is percent n. Şu percent n'i gördüğü yerde bu satırda kaç tane karakter şimdiye kadar bastırılmış o bilgiyi size döndürüyor. O bilgi de şurada.
+
+467
+02:03:49,652 --> 02:04:02,631
+Y değişkeninin şeyi ama Y değişkenini aktarım adresiyle yazılmış burada gerçek. O 2841'i görecek. İşte bu döndürdüğü değer de printf ile zaten aynı.
+
+468
+02:04:03,667 --> 02:04:08,028
+Total karakter dediği, bunu ne yapıyor? Bunun döndürdüğü değeri şuna aktarıyor.
+
+469
+02:04:08,627 --> 02:04:13,667
+Ve buradan dönen sayısal değeri de işte şurada tekrar 28 falan diye yazdırıyor.
+
+470
+02:04:13,807 --> 02:04:14,927
+Yani bir de burada yazmış.
+
+471
+02:04:15,547 --> 02:04:20,127
+Şu da bize satır sayısından satırdan dönen kaç tane karakter yazıldığını verir.
+
+472
+02:04:20,228 --> 02:04:20,988
+Bu da verir.
+
+473
+02:04:22,148 --> 02:04:23,087
+Bunu da söylemiş olalım.
+
+474
+02:04:26,996 --> 02:04:51,935
+Peki. Bir de verileri yazarken sabit boyut, yani dosyadan okuma yazma yaparken de bunu kullanacaksınız. İşte ne kadarlık yerden veri okuyacaksınız. %4D, %5D, %3.2D gibi şeyler. Bu size bir şey veriyor. Bu Fixed Width dediğimiz. Eğer virgüllü sayılarla bunu yapacaksanız bize hassasiyet belirtebiliyorsunuz. Şimdi şurada var.
+
+475
+02:04:52,372 --> 02:05:13,332
+Bu mesela virgülden sonra üç basamak olsun. Virgülden önce beş basamak, virgülden sonra üç basamak olsun gibi. Eğer şu yıldızı kullanırsanız da bunun en uygun olanını söylemek demektir. Kendinize istediğiniz şeyi verebilirsiniz bunun yerine.
+
+476
+02:05:14,228 --> 02:05:32,688
+Negatif olmasını, yani sola hizalı yazılmasını istiyorsanız önüne eksi yazacağız. Sağ hizalıysa pozitif yazacağız. Precision mutlaka pozitif olması lazım ama bunun önüne artı, eksi birazdan örnekler var. Bir şeyler yazdığımızda verileri sola hizalı, sağ hizalı dosyada veya ekranda yazdırabiliyoruz.
+
+477
+02:05:34,452 --> 02:05:57,452
+Şöyle Precision'lar, işte virgülden sonra 4 basamak, virgülden sonra 9 basamak olsun diye şeyler yapılmış. Bunları ona göre hizalıyor. Mesela 873 dediği şey şurada. Şu 873, ondan sonra şuradaki değer. Bunu 9 basamak olacak şekilde yazıyor, decimal olarak. Eğer virgüllü sayılarımız varsa da bunları şuradaki basamak sayısına göre ayarlayabiliyor.
+
+478
+02:06:00,659 --> 02:06:24,479
+İnternetimizin yanıymış insan. Telefonun internette bitmeden dersi bitiririz. Şimdi flagler şu plus ve şey arkadaşlar bir de şu space için kullandığımız flagler var. İşte izahlamada kullanılan şeyler. Şurada örneğini söyleyeyim. Şöyle bir şey yazdığımızda bu default olarak write justified'tır.
+
+479
+02:06:25,587 --> 02:06:42,728
+Buradan itibaren yazmaya başlar. Şu şekilde yazdığımızda sola, yani tam hizalamayı değiştiriyor. Yani bu 10 karakterlik yer ayır, şunu yaz. Ondan sonra 10 karakterlik yer ayır, bunu yaz. Bu şekilde sonuçlar görüyoruz. Hepsini sağa sola hizalıyor.
+
+480
+02:06:44,867 --> 02:06:51,827
+Şu da ifadeleri arkadaşlar, oktal, hexadesimal formatta yazmak için.
+
+481
+02:06:52,180 --> 02:07:16,000
+Yani bu C dediğimiz 1427'nin hexadesimal formatını bulmak için önüne şu diyezi koyarsanız ve X yazarsanız bunun hexadesimal karşılığını yazdırsın. Mesela 1024 desek ne oluyor? 1024'ün hexadesimal karşılığı 16 olacak. Hangisiydi? 2 üzeri 10'da bulacağız. Gerçi 1024'ün hexadesimal karşılığı 256 dediğimizde.
+
+482
+02:07:16,659 --> 02:07:39,519
+1, 0, 0 bulmamız lazım. 1, 16, 256 ya oradan 100 görürüz. Şunu 256 yaparsanız orada da 100'ü görebiliriz. Bu işler için kullanılıyor. Escape karakterlerin çoğunu biliyoruz. Arada tırnak yazdırmak, çift tırnak yazdırmak istiyorsak, soru işareti veya backstage yazdırmak istiyorsak bunları kullanacağız. Ses duymak istiyorsak pek kullanmayız. Şu yazılır. Eskiden kullanılırdı.
+
+483
+02:07:42,015 --> 02:07:56,015
+Bir pozisyon geri almak için Back, ondan sonra başlangıç noktasını almak için şunu alt satır zaten bu. Bunu başlangıç noktasına almak için yine kullanılan bir şey.
+
+484
+02:07:56,015 --> 02:08:09,015
+Tab'ı biliyoruz yatay olarak. Eğer dikey tab yapmak istiyorsak Backslash V'yi kullanacağız. Scan F'i çok kullandık. Scan F'in burada hangi parametreler istediği falan var.
+
+485
+02:08:10,547 --> 02:08:37,587
+Eğer ScanF'te arkadaşlar bir önemsiz karakter yazmak istiyorsanız, şunu kullanabilirsiniz. Bir de kaç tane karakter okunduğunu söylemek için şunlar kullanılıyor. Burada bazı örnektir var. Ama ScanF'te şunu bilmemiz lazım. Eksponansiyel. A, E, I, O, U dışında bir şey mesela oku demektir. Şöyle yapalım, örnek göstereyim.
+
+486
+02:08:39,764 --> 02:09:04,123
+Bizim şurada S1'imiz var. ScanF diyorum. %S oku dediğimde şey ama %S'yi şöyle şapka diyorum. Buna regular expression'larda çok kullanacaksınız. A, E, I, O. Bunlardan herhangi birini görene kadar oku demektir. Bu kümeden. Nereye okuyalım? S1 stringini okuyalım.
+
+487
+02:09:07,347 --> 02:09:11,507
+İzdeşse, Seviyebiyen.
+
+488
+02:09:16,627 --> 02:09:17,627
+Mesela,
+
+489
+02:09:19,627 --> 02:09:24,627
+tlkjgmnp
+
+490
+02:09:24,627 --> 02:09:29,627
+Şuna kadar kaldı. O kümeden herhangi bir tanesini görünce onu almadı.
+
+491
+02:09:30,627 --> 02:09:33,627
+Biz burada mesela backslashn yaparsak ne oluyordu?
+
+492
+02:09:34,627 --> 02:09:36,627
+Bir stringi toptan okuyabiliyoruz.
+
+493
+02:09:37,627 --> 02:09:38,603
+Şöyle.
+
+494
+02:09:38,868 --> 02:09:45,587
+Niye? Backslash, en sonunda yazdığım Enter demektir. Bir String'i tamamen bu sayede boşluklarıyla beraber alabiliyoruz.
+
+495
+02:09:46,868 --> 02:09:49,507
+Ama GetString bunu zaten arka planda kendi yapıyor.
+
+496
+02:09:51,608 --> 02:09:56,988
+Şimdi bir de Skipping Karakter dediğimiz şu var. Örneği mesela şöyle diyelim.
+
+497
+02:09:58,047 --> 02:10:04,127
+Enter String dedi, %C, %S dediğimde siz ilk okuduğunuzu şuraya, ikinciyi buraya alırsınız.
+
+498
+02:10:04,127 --> 02:10:04,927
+Şimdi input.
+
+499
+02:10:05,811 --> 02:10:20,832
+Arada bir boşluk var. Ne oluyor? S ve sanda'ya girdiğimizde karakteri şunu alıyor, kalanını da bunu alıyor. Çünkü bir tanesini şey yaptı, bir tanesini bunu aldı.
+
+500
+02:10:21,652 --> 02:10:30,912
+Fakat, burada da diğer şunun örneği varmış zaten. Geçelim. Örneğin, biz yıl bilgisi almak istiyoruz şu formatta.
+
+501
+02:10:31,667 --> 02:10:56,488
+Bu formatta alırken aradaki boşluk karakterleri önemseme diye yıldız koyabiliriz. Bu ne demek? Bir tane integer oku, sonrakini önemseme. Sonraki bir karakteri önemseme. Şöyle. Bir tane integer oku, sonraki bir karakteri önemseme. Şimdi bir tane integer oku demek ne demek? Şurada mesela 128 girdim, tıra girdim. Gün olmaz da. 128'i alacak, integer atayacak. Neredeki bir karakter gördü?
+
+502
+02:10:56,847 --> 02:11:00,068
+Bu karakteri işte ignore edecek, yok sayacak.
+
+503
+02:11:01,127 --> 02:11:03,467
+Ve bunlara ilgili değişkenleri kopyalayabileceksin.
+
+504
+02:11:03,627 --> 02:11:05,927
+İşte manta kopyalay, d'ye kopyalay, yere kopyalay.
+
+505
+02:11:06,568 --> 02:11:12,728
+Mesela bu şekilde veri girebilirsiniz veya aynı şeyi işte arada slaslarla girersiniz.
+
+506
+02:11:12,868 --> 02:11:17,248
+Ne oluyor? Bakın bu hiç slas kontrolü veya şey kontrolü yapmaya gerek kalmıyor.
+
+507
+02:11:17,248 --> 02:11:19,748
+Mesela normalde ScanF'te şunu yazabiliriz.
+
+508
+02:11:21,467 --> 02:11:23,307
+Şurada X ve Y'miz var.
+
+509
+02:11:24,627 --> 02:11:42,847
+ScanF, %d, %d, %d dediğimde araya tıre koymam lazım. Bunu da x'in adresine, y'nin adresine yapalım.
+
+510
+02:11:46,847 --> 02:11:51,627
+%d diyorum, x, y diyorum.
+
+511
+02:11:57,235 --> 02:12:22,296
+Şimdi 5-8 dediğimde 5-5 tireyi aldım. Fakat burada ben trenin dışında bir şey girsem. 6-8 desem. 6'yı alıyor, yıldızı alıyor, 8 alıyor. Bakın biraz önceki gibi ayrı ayrı almadım. Niye? Çünkü orada iş bozuluyor. Bunu düzeltmek için mesela Y8 dediği şey.
+
+512
+02:12:22,996 --> 02:12:44,216
+Gerçi y'ye girdik bunun değil de. Bunun karşılığını yazar problem değil. Aradaki şu tıre işi bozuyor. Bunun yerine %Yıldız C dediğimizde. Şuradaki gibi %Yıldız C. Ne girersek girelim.
+
+513
+02:12:51,091 --> 02:12:57,311
+Geç üstte girelim. T4 ve 6. Bunu niye peki aldı burada?
+
+514
+02:13:02,260 --> 02:13:08,800
+İki seveyi bunu atmaması lazım. Özel karakter olduğu için bir daha şunu deneyelim, başka bir şey deneyelim.
+
+515
+02:13:14,640 --> 02:13:15,340
+Allah Allah.
+
+516
+02:13:19,923 --> 02:13:37,784
+Bunun içerisinde, std.ion içinde. Şunu yapması lazım yani year, month ve şey olarak alması lazım. Bir eksiğimiz var. Yıldız c, yüzde yıldız ve x'in v'nin. X dediğimiz değişken integer.
+
+517
+02:13:45,844 --> 02:13:51,123
+Şuradaki karakteri buna dahil etmemesi lazım. Bunlar ayrı ayrı şeyler. İkisi de intaj sonuçta.
+
+518
+02:13:59,507 --> 02:14:01,648
+Dört, tre, beş.
+
+519
+02:14:09,268 --> 02:14:33,407
+Arkadaşlar, şu görünüyor. Tamam. Daha girmemiş oluyorum bir dakika. 4-5. Yani girdiğim şey bu. Enter'a bastıktan sonra yazacak bunu. Arada bir tane daha yukarıda var ya, ben yukarıdaki şu skeneflerle şunu kapatalım.
+
+520
+02:14:37,076 --> 02:14:56,076
+Şimdi 4-5 diyelim. Onu bir tane, yukarıda bir tane daha skenef var. En son şunu yaptığımızda bir yerde daha skenefimiz nerede vardı? Printf, printf. GetString falan da var arada. Bir yerde şunu da iptal edelim.
+
+521
+02:14:59,891 --> 02:15:17,051
+4-5 dediğinde şimdi bakın alabiliyoruz. Yukarıdaki skeneflerden unuttuk onu. Bu da bunu sağlıyor. Yani bu tarz şeyde kullanabiliriz. Yoksa hepsini ayrı ayrı değerlendirmek gerekecek. Hatta şunu tekrar deneyelim. %d tere.
+
+522
+02:15:19,192 --> 02:15:20,591
+%d diyelim.
+
+523
+02:15:23,591 --> 02:15:24,371
+Burada
+
+524
+02:15:24,884 --> 02:15:45,984
+5-7 girmem lazım. Şimdi tamam. Ama 5 yıldız 8 gibi bir şey girdiğinde ne yapıyor? Bundan sonrakini dikkate almayacak. Yani yıldızı şeyle eşleştiremiyor türeyle. Onun yerine % yıldızca kullanabiliriz. Sorumuz var mı burada?
+
+525
+02:15:50,771 --> 02:16:16,452
+Evet, haftaya kaldığımız yerden devam edeceğiz. Dosyalarla devam edeceğiz. Bunları sizlerle ayrıca paylaşacağım arkadaşlar. Anlatayım istedim. Çünkü projenizde buradaki bazı fonksiyonlar sizi kolaylık sağlayacak. Bunları kullanmanız serbest. Herhangi bir sorunuz yoksa bugünlük bu kadar yeter. Öğleden sonraki dersi 12'yi çeyrek geçe başlayacağım. Sinyal dersine arkadaşlara haber verirseniz iyi olur.
+
+526
+02:16:16,979 --> 02:16:22,039
+Okulda internet yok. Mecburen eve gidip evden yetişmeye çalışacağım arkadaşlar.
+
+527
+02:16:24,380 --> 02:16:25,559
+Evet, [öğrenci].
+
+528
+02:16:27,399 --> 02:16:31,899
+Hocam, online yıldızı da giremiyoruz da. [öğrenci] linkini paylaşabilir misiniz?
+
+529
+02:16:32,500 --> 02:16:37,559
+Siz giremiyorsanız muhtemelen ben de giremeyeceğim. Öğlene kadar bir bakalım. Ben haber göndereyim.
+
+530
+02:16:39,040 --> 02:16:41,000
+[öğrenci], sen sinyali benden mi alıyordun?
+
+531
+02:16:42,399 --> 02:16:44,840
+Hocam, ben yaz okulunda aldım. Sinyali de getirmeyordun.
+
+532
+02:16:45,236 --> 02:16:59,636
+Tamam, başka burada dedik ki arkadaş daha var. Tamam, ben bir şekilde haber göndereceğim arkadaşlarım. OBS'ye de girilmiyordur. Üniversitenin genelinde bir problem varmış. Olmadı, dersi yani daha sonra yapacak şekilde telafi ederiz.
+
+533
+02:17:00,536 --> 02:17:01,516
+Hocam, teşekkür ederim.
+
+534
+02:17:02,056 --> 02:17:03,136
+İyi günler, görüşmek üzere.
