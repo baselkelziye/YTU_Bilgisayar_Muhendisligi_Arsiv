@@ -1,0 +1,2115 @@
+1
+00:08:55,572 --> 00:09:19,072
+Evet, merhaba arkadaşlar. İyisinizdir. Umarım bu hafta geçen hafta kaldığımız yerden devam ediyor olacağız. Objeler arasındaki ilişkilerden biraz bahsediyorduk. Geçen hafta hiç böyle bakıp bir şeylere soruyu biriktiren sorusu olan arkadaşımız var mı? İsterseniz önce onlarla başlayabiliriz. Öyle bir sorayım ben.
+
+2
+00:09:22,515 --> 00:09:47,995
+Yok herhalde, güzel. Bu haftada biraz devam edeceğiz ilişkilerle ilgili. Sonrasında örnekte yapıyor olacağız. Öncelikle bir teori kısmını anlatalım. Kalan üç tane ilişkimiz vardı. Daha önce bu hafta ikisini anlatırız. Kalıtımla ilgili şeyleri de, inheritance'ı önümüzdeki hafta bakarız.
+
+3
+00:09:48,368 --> 00:09:51,968
+Böyle bir slide paylaşarak başlayalım isterseniz.
+
+4
+00:09:54,488 --> 00:09:59,668
+Evet, şimdi ilişkiler, netmenler arası, doğumcular arası.
+
+5
+00:10:00,000 --> 00:10:14,700
+İlişkilerden temelde bahsediyoruz. Association'ı geçen hafta gördük. Dependency'yi gördük. Bu hafta aggregation ve composition'a bakıyor olacağız. İlişkitikleri bakımından. Yine bunlarla ilgili çeşitli örnekler yaparız.
+
+6
+00:10:15,500 --> 00:10:28,000
+Hani başta şeyi söyleyeyim. Aggregation ve composition, UMLN diagramında ekstradan özel bir gösterim de söz konusu. Ama bu gösterim bazen mesela composition kısmını sizin çıkarttığınız gerekebilir.
+
+7
+00:10:28,000 --> 00:10:40,360
+Çünkü o association gibi de gösterilebiliyor veya işte dependency gibi de gösterilebiliyor. Onlara beraber bu hafta bakıyor olacağız. Şimdi aggregation ne?
+
+8
+00:10:40,947 --> 00:11:04,867
+Buna whole part relationship deniliyor. Birazdan anlatacağımız composition'a göre biraz daha güçsüz bir ilişki söz konusu. Sembolide bir elmas işareti ile belirleniyor. İçi boş, yani elmas veya işte yamuk ne dersen buna bir ifade ile.
+
+9
+00:11:05,587 --> 00:11:08,467
+UML diagramında gösterim yapılıyor.
+
+10
+00:11:09,147 --> 00:11:10,827
+Bu şu manaya geliyor.
+
+11
+00:11:10,987 --> 00:11:13,407
+A instance has multiple B instances.
+
+12
+00:11:13,627 --> 00:11:22,528
+Yani A instance'ı, B instance'ını attribute olarak içerisinde barındırıyor.
+
+13
+00:11:23,127 --> 00:11:27,587
+Dediğim gibi bunu aslında association'mış gibi de düşünebilirsiniz.
+
+14
+00:11:33,587 --> 00:11:47,927
+şekillerde bir araya gelmesinden oluşuyorsa, yani B küçük küçük parçalar, onlar bir araya gelip A'yı oluşturuyorsa bu aggregation ilişkisi olmuş oluyor.
+
+15
+00:11:48,447 --> 00:11:57,548
+B'yi farklı yerlerde de tabii ki kullanabiliriz ama A'nın temel oluşma olayı B ise bu şekilde söylüyoruz.
+
+16
+00:11:59,155 --> 00:12:16,935
+Egregation, composition gibi ilişkilerde kardinali değerleri üzerinde belirtilmese de A'dan bir tane, yani şurada bir tane, şurada da many tane veya en az şu kadar olsun, en az şu kadar olsun gibi sembollerde kullanıldığını zaman zaman burada yürüyor olacağız.
+
+17
+00:12:16,935 --> 00:12:26,975
+Yani bir renlik bir ilişki olduğunu temelde düşünüyor olalım. Bazen YÖMLN diagramının içerisinde bu şekilde.
+
+18
+00:12:27,155 --> 00:12:37,195
+verildiğini, değerlerini görürsünüz. Görmediğiniz durumda da ilişkinin böyle olduğunu biliyor olalım. Onu söylemek istiyoruz biz.
+
+19
+00:12:37,620 --> 00:12:46,039
+Temelde aggregation kısmı association'a ilişkidir ki association'ın biraz daha kuvvetli hali.
+
+20
+00:12:46,039 --> 00:13:05,620
+Çünkü association tarafına bakıldığında neydi? İki nesnenin yine bir şekilde ilişkisi var. Association ilişkisi. O association ilişkisinde A ile B arasında bir association olmuş olsun. Bu ne demekti? A nesnesinin içerisinde B nesnesinin çeşitli özelliklerin barındığı.
+
+21
+00:13:05,620 --> 00:13:12,419
+Bunu kullanıyor. Ama aggregation kısmında ise A nesnesi B nesnesinden oluşuyor.
+
+22
+00:13:14,484 --> 00:13:42,344
+Bunu bir ayrı, hani bu şekilde ayırabilir istememde. Yoksa mesela association kısmında A'nın hem B hem C hem D ile association ilişkisi olabilir. Burada ama A'nın oluşması B ile alakalı ise B'nin bir araya girerek A'yı oluşturduğu durumlar varsa buna aggregation diyoruz. Biraz daha böyle örnek verdiğimizde zannımca gözünüzde daha heyecanlanacak. Mesela bir otobüs rotası.
+
+23
+00:13:42,484 --> 00:13:54,824
+41 AT'nin rotasını düşünelim. Buradan Yılıs Eklif Üniversitesi'nden kalkıyor, İTÜ'ye kadar, AYZ'a kadar, oralara kadar gidiyor. Bunun bir rotası var. Rotasının içerisinde çeşitli duraklar, otobüs durakları söz konusu.
+
+24
+00:13:56,596 --> 00:14:16,115
+Otobüs duraklarının da çeşitli özellikleri var. En başında hangi lokasyonda yer alıyor, hangi ilçede yer alıyor, akıllı mı, yani o bilgi ekranları var mı, yoksa manuel bir otobüs durağı mı gibi siz otobüs duraklarını tutabileceğiniz bir nesne oluşturduğunuzu düşünün.
+
+25
+00:14:16,500 --> 00:14:24,159
+Ayrı bir nesne de otobüs rotasıları, rotası, zaten oradan rota oluşturursunuz.
+
+26
+00:14:24,599 --> 00:14:30,859
+Otobüs rotasında ise temelde nedir rota? Durakların bir araya gelmesiyle oluşan şey.
+
+27
+00:14:30,859 --> 00:14:44,500
+Yani sallıyorum şu an, 41 AT'nin 50 tane durağı söz konusuysa, bu durakların her birisinin farklı farklı tabii ki instanslar olduğu için özellikleri söz konusudur, değerleri söz konusu.
+
+28
+00:14:44,500 --> 00:14:52,359
+Ama en nihayetinde bu otobüs rotası tüm o durakların bir araya gelmesinden oluşur.
+
+29
+00:14:53,039 --> 00:14:56,500
+İşte bu tam olarak bir aggregation'a örnek gibi düşünebiliriz.
+
+30
+00:14:57,859 --> 00:15:05,460
+Bus route dediğimizde işte otobüs bir tane otobüs rotası bir en az iki tane diye hani burada da ya.
+
+31
+00:15:05,779 --> 00:15:18,419
+şeyde koyulmuş, karneliyeti değerini görebiliyoruz. İki tane otobüs durağından n'e kadar olabilecek sayıda otobüs durağını kapsayabilir.
+
+32
+00:15:18,839 --> 00:15:24,939
+Şimdi burada dikkat edilecek hususlardan birisi şu, aggregation'ı anlatırken bundan hemen bahsediyor olayım.
+
+33
+00:15:25,939 --> 00:15:33,199
+Otobüs durağı dediğimiz şey birden fazla rota için kullanılıyor olabilir.
+
+34
+00:15:33,844 --> 00:15:56,264
+Yani Cevizli Bağ durakını örnek verelim. Sadece oradan 41 AT'ye geçmiyor olabilir. Farklı farklı bir sürü hat da geçiyor olabilir. Sadece 41 AT'nin geçtiği duraklar da vardır. Orası ayrı mevzu. Ama bir otobüs durağı sadece ve sadece tek bir rota için kullanılmak zorunda değil. Farklı farklı rotalar için de kullanılabilir.
+
+35
+00:16:00,659 --> 00:16:12,779
+Strong, hani perimi o. Çok kuvvetli demiyoruz buna. Büyük bir ilişki var diyoruz. Ama bütününü oluşturan parçalar, whole part ilişkisi söz konusu.
+
+36
+00:16:14,868 --> 00:16:19,728
+Şimdi işte buna dair çeşitli şeyler konuşuyor olacağız. Ama öncelikle bir de kompozisyonu görelim.
+
+37
+00:16:20,107 --> 00:16:29,928
+Aggregation ile composition bir diliyle çok benzer ifadeler. Arasında ufak böyle nüanslar söz konusu onlara bakıyor olacağız.
+
+38
+00:16:30,488 --> 00:16:35,288
+Aggregation'a dediğimiz gibi çok benziyor fakat onun daha kuvvetli bir hali.
+
+39
+00:16:36,327 --> 00:16:42,868
+Composition ilişkisi yine aggregation ilişkisi gibi elmas işaretiyle gösteriliyor fakat içi dolu bir şey.
+
+40
+00:16:42,868 --> 00:17:04,168
+Bu şekilde olduğunda onun kompozisyon ilişkisinin olduğunu anlamış oluyoruz. Az önce durak örneğinden gidecek olursak birden fazla durak bir araya gelerek bir otobüs rotasını oluşturuyordu. Fakat o duraklar farklı farklı otobüs rotaları içinde kullanılabilirdi. Kompozisyon da bu böyle değil.
+
+41
+00:17:04,528 --> 00:17:18,268
+birden fazla nesne bir araya gelerek başka bir nesneye oluşuyorsa, onun kompozisyonunu oluşturuyorsa sadece orada olabilir, başka hiçbir yerde olamaz diyorsak buna kompozisyon diyoruz.
+
+42
+00:17:18,268 --> 00:17:24,268
+Mesela bir takım, futbol takımı düşünelim. İşte Bursa Sport. Bursa Sport bir takım.
+
+43
+00:17:24,592 --> 00:17:37,312
+Takım denilen şey oyunculardan oluşur. Bu oyuncular bakıldığında A takımında oynayabilirken aynı zamanda B takımına kayıtlı olup orada da oynayamaz.
+
+44
+00:17:37,592 --> 00:17:47,352
+Muhakkak sadece A takımında oynaması lazım. Sözleşme yenilenir, başka bir şey olur. B takımına geçemezsin, geçebilir. Ama o zaman A takımıyla ilişkisi kesilmiş olur.
+
+45
+00:17:47,796 --> 00:18:07,876
+Veya üniversite öğrencileri olarak bakalım. Üniversite tabii birçok farklı şeyin bir araya gelmesiyle oluşur ama sadece öğrencilerden oluştuğunu düşündüğümüz durumda. Yani bir yerde üniversite öğrencisiyseniz başka bir yerde üniversite öğrencisi olmamanızı beklenir. Varsa da kaydınız silersiniz başka bir üniversiteye.
+
+46
+00:18:08,339 --> 00:18:24,460
+Yata geçiş, dike geçiş neyse geçiş usulleri o şekilde geçersiniz. Eğer ki böyle bir ilişki varsa yani parçalar bütünü oluştururken sadece o bütüne ait olmak zorundaysa biz buna composition ilişkisi diyoruz.
+
+47
+00:18:24,879 --> 00:18:36,339
+Aggregation'a tekrar dönelim. Aggregation'daysa yine composition gibi benzer. O parçalar o bütünü oluşturur. Fakat aynı parçalar başka şeyler içinde kullanılabiliyorsa buna da aggregation.
+
+48
+00:18:36,339 --> 00:18:38,000
+İlişkisi diyoruz.
+
+49
+00:18:39,659 --> 00:18:41,500
+Burada sorusu olan var mı?
+
+50
+00:18:42,839 --> 00:18:44,259
+Bir duralım, soluklanalım.
+
+51
+00:18:44,879 --> 00:18:46,419
+İpselleştirmiş olun siz de.
+
+52
+00:18:48,852 --> 00:19:16,852
+Güzel. Şimdi devam edelim. Hani kafanızda canlanmıyorsa dediğim gibi tekrar tekrar üzerinden geçeriz bazı noktaları. Temelde çünkü çok fazla gördüğünüz ilişki tipi yok nesneler arasında. Association'dan bahsettik, dependency'den bahsettik, aggregation, composition. Dört tane ilişki tipimiz oldu. Sizin de hani direkt bakıldığında aslında yürülecek şeylerden birisi de şu. Başta söylediğim gibi hem aggregation hem de composition.
+
+53
+00:19:16,852 --> 00:19:23,231
+Composition ilişkisi association'a çok benziyor. Association daha da fazla şeyi kapsıyor aslında.
+
+54
+00:19:23,992 --> 00:19:28,711
+Aggregation ve composition daha özel, association'ın daha özel durumlarını ifade ediyor.
+
+55
+00:19:29,271 --> 00:19:41,352
+Bazen bu yüzden dediğim gibi UML diagramında aslında gösterimi beklenen şey hem composition için hem de aggregation için elmas işaretleri olsa da association işaretlerini görebilirsiniz.
+
+56
+00:19:41,352 --> 00:19:44,352
+Ama siz onun composition ve aggregation olduğunu...
+
+57
+00:19:44,852 --> 00:19:46,152
+çıkartmanız beklenir.
+
+58
+00:19:48,791 --> 00:19:52,152
+Evet. Yani implementasyonu da aynı.
+
+59
+00:19:52,852 --> 00:19:56,291
+Tamamen. Hani burada onu da söylemiş oluyoruz.
+
+60
+00:19:56,372 --> 00:19:58,352
+Bire M implementasyonu.
+
+61
+00:19:58,352 --> 00:20:00,000
+Hem association hem de...
+
+62
+00:20:00,000 --> 00:20:13,140
+Şimdi hem kompozisyon da aynı. Yani ilklendirmek, attribütün içerisinde diğer sınıfın dizi halinde kullanıyor olmak burada söz konusu.
+
+63
+00:20:14,996 --> 00:20:42,836
+Şimdi kompozisyon dediğimizde n tane nesneyi düşünüyoruz ve parçayı düşünüyoruz ve bir tane olması zaten o zaman association yap. Bir tane varsa association yap. N tane olduğu durumda ilgili gelişim veya kompozisyon kullanılır diyoruz. Böyle olduğu durumlarda da işte bir veri yapısını seçmemiz gerekiyor. Geçen hafta ArrayListler hatta, ayrıca listeler, Stakeler, Q'lar, Heatler, Triler, Graph'lar bunları da bu ders kapsamında çeşitli örneklerini görüyor olacağız.
+
+64
+00:20:42,996 --> 00:20:53,296
+Her birisi bize Java'nın farklı kütüphaneleri içerisinde sağlanmış durumda kullanıyor olacağız.
+
+65
+00:20:54,635 --> 00:20:58,976
+Şimdi, kompozisyonla ilgili bir örnek yapalım.
+
+66
+00:21:03,376 --> 00:21:06,796
+Şöyle bir şeye bakalım, problem için. Bunun kodunu yazacağım.
+
+67
+00:21:08,096 --> 00:21:10,296
+Aslında hani temelde biraz...
+
+68
+00:21:10,900 --> 00:21:19,440
+Olan kodu çalıştırayım mı diye baktım ama hadi baştan yazalım ki kafamızda bazı şeyler otursun diye tekrardan.
+
+69
+00:21:20,000 --> 00:21:25,559
+Yoksa hani hala hazırda Yun Semre hocam hazırlamıştı bunların hepsinin kodları var. Muhtemelen sizin elinizde de vardır.
+
+70
+00:21:25,559 --> 00:21:37,420
+Ama böyle bazen kod içerisinden büyük bir bütünün içerisinden küçükleri yakalamak zor oluyor. Boş bir sayfada böyle adım adım gitmek daha kolay olabilir belki sizin için.
+
+71
+00:21:37,759 --> 00:22:05,240
+diye tekrardan baştan yazalım istiyorum. Ama diğer söylediğimi de yapıyor olacağım. Çünkü bazı haftalar çok fazla şey anlatmamız gerekiyor olacak size. Her şeyi baştan yazmak çok elverişli olmayacak. Şimdi şu NYP04 isimli package'e baktığımız durumda package'in içerisinde 4 tane temelde sınıf görüyoruz. Person, Car, Gallery ve Main Program 04 olmadığıyla 4 tane sınıf görüyoruz burada.
+
+72
+00:22:05,748 --> 00:22:20,067
+Bu dört sınıfı ince ettiğimizde birbirleriyle çeşitli ilişkileri var. En temelde oklara baktığımızda association ve dependency ilişkilerini görüyoruz. Main program car ve galeri sınıfıyla dependency ilişkisinde.
+
+73
+00:22:20,668 --> 00:22:26,807
+Person car ile association ilişkisinde, galeri car ile association ilişkisinde, person galeri ile association ilişkisinde.
+
+74
+00:22:26,807 --> 00:22:30,887
+Şimdi hala hazırda bu perspektiften baktığımızda.
+
+75
+00:22:31,476 --> 00:22:45,916
+Acaba biz bu ilişkileri, bu şekilde verilmiş association ilişkilerini, composition ve aggregation'ını bir yere oturtabilir miyiz bu ilişkilerin içerisinde diye şöyle bir düşündüğümüzde,
+
+76
+00:22:46,396 --> 00:22:50,796
+geçen hafta yapmıştık hatırlarsanız bir insanın bir arabası olabiliyordu.
+
+77
+00:22:50,796 --> 00:22:59,296
+Bu association ilişkisi doğuruyordu ve person'ın içerisinde gördüğümüz şey temelde neydi?
+
+78
+00:22:59,476 --> 00:23:08,756
+attribute'larının içerisinde onun kullanıldığına, yani diğer associate olduğu sınıfın bilgisinin kullanıldığına dairdi.
+
+79
+00:23:08,756 --> 00:23:19,696
+Yine bir person ile bir galerinin ilişkisi olabilir. Nasıl bir ilişkisi olabilir? Tahmin edebileceğiniz üzere ben o galerinin sahibiyimdir. O şekilde bir ilişkim olabilir.
+
+80
+00:23:19,896 --> 00:23:27,476
+Bakın, galeri sahibi bir person olarak tanımlanmış bir insan sonuçta bir isminin peyecekimi kurması üzerine neyse kayıt.
+
+81
+00:23:27,476 --> 00:23:29,476
+Bu konuda çok önemli.
+
+82
+00:23:29,476 --> 00:23:31,476
+Siz biliyorsunuzdur.
+
+83
+00:23:31,476 --> 00:23:34,476
+O yüzden yine bir association ilişkisi var.
+
+84
+00:23:34,476 --> 00:23:39,476
+Şuraya bakıldığında ise, car ile galeri arasında bir ilişki söz konusu.
+
+85
+00:23:39,476 --> 00:23:42,476
+Car dediğimizde, the car olarak bakalım.
+
+86
+00:23:42,476 --> 00:23:44,476
+Yani sınıf, evet.
+
+87
+00:23:44,476 --> 00:23:48,476
+Ama o sınıftan üretilmiş her bir plaka numarası belli.
+
+88
+00:23:48,476 --> 00:23:50,476
+Veya motor numarası mı diyorlar?
+
+89
+00:23:50,476 --> 00:23:54,476
+Onları belli olan bir araba olarak düşünelim bunları.
+
+90
+00:23:55,476 --> 00:24:01,416
+Galeri ile ilişkisi nedir? Galeri dediğimiz şey özel olarak araba veya
+
+91
+00:24:01,971 --> 00:24:08,231
+taşıt mı diyeyim yani sadece belki otomobil olmayabilir, farklı farklı taşıtlar da satıyor olabilir.
+
+92
+00:24:08,851 --> 00:24:10,971
+Hepsine kar diyelim biz genel olarak.
+
+93
+00:24:11,371 --> 00:24:12,791
+Satmak için kurulan bir kuruluş.
+
+94
+00:24:12,871 --> 00:24:18,132
+Yani siz galeriden gidip ben sizden işte sos çeker alacağım diyemezsiniz.
+
+95
+00:24:18,431 --> 00:24:22,211
+Arabalar bir araya gelerek bir galeriyi oluşturur.
+
+96
+00:24:22,211 --> 00:24:29,971
+Şimdi burada yani galeri ile kar arasında association'ın daha özelleşmiş bir hali acaba söz konusu...
+
+97
+00:24:29,971 --> 00:24:46,632
+olabilir mi diye düşünüyoruz. Düşündüğümüzde de evet olabilir. Yani galeride arabalardan oluşacaktır. Bir galerinin içerisinde bulunan arabaların listesi, dizisi, ne şekilde söylersem galeriyi oluşturacak.
+
+98
+00:24:47,451 --> 00:24:55,632
+Tabii burada şöyle de bir durum söz konusu. Hukuksal işleyişin ne şekilde olduğunu bilmek gerekir. Yani ben...
+
+99
+00:24:56,000 --> 00:25:06,019
+İşte bir plakalı arabayı A galerisinde satmak için galerinin üstüne kaydettiysen aynı araba B galerisinde de satılıp pazarlanabiliyor mu?
+
+100
+00:25:06,867 --> 00:25:24,087
+Yani işte pazarlanabiliyorsa aggregation, pazarlanamıyorsa composition. Yani o kısmı anlamışsınızdır diye düşünüyorum. Eğer ben bir arabayı işte galeriye koydum, galerinin envantarı olsun dediğim gibi ne olduğunu bilmiyorum. Envanter olsun. O envanterine işlendiyse.
+
+101
+00:25:24,596 --> 00:25:32,456
+Başka bir galeri üzerinden satılma ihtimali yoksa artık biz buna composition ilişkisi diyoruz.
+
+102
+00:25:32,456 --> 00:25:38,576
+Ama hani bençin hukuk hukuk ona da el veriyordur veya gün geldiğinde el verecektir.
+
+103
+00:25:38,875 --> 00:25:44,936
+Bir araba dört farklı galerinin envanterinde olabilir. Hangisi önce satarsa karı o alır.
+
+104
+00:25:45,268 --> 00:26:12,928
+Salladım. Şeklinde bir ilişki de olabilir. Yani burada gördüğümüz ilişki association olarak temellendirilmesi temelde aslında doğru. Ama hani işin içine detayına girdiğimizde duruma göre association, aggregation'a, duruma göre composition'a doğru kayabilir. Bizim örneğimizde kafamızda en temelde canlanan şey nedir? Composition. Çünkü arabaların ruhsatı vardır.
+
+105
+00:26:13,268 --> 00:26:27,948
+Araba bir kişiye kayıtlı olmak zorundadır. Yani benim üzerime bir araba varsa onu ben E-Devlet'ten de girip görebilirim. Benim üzerime ise o araba aynı zamanda başka birisi aynı plakalı, aynı motor numaralı bir arabayı satın alamaz.
+
+106
+00:26:28,372 --> 00:26:53,372
+Yani şu an sadece bir arabanın teki sahibi olduğunu düşünüyorum. Çünkü üç kişi bir araya girip bir arabanın sahibi olabiliyor mu hukuken bilmiyorum. Olabiliyorsa da onları hiç düşünmüyorum. Bir arabanın hukuken sadece bir tane sahibi olabilsin. Ve ben arabayı galeriye sattım. Sahibi kim? Galeri. O da bir tüzel kişilik olmuş olsun burada. İşte ona sattıysa o da diğer galeriye satmadığı sürece...
+
+107
+00:26:54,099 --> 00:27:03,219
+Diğer galeri onu satışa çıkartamayacağını düşündüğümüz için sanki arabayla galeri arasında da bir kompozisyon ilişkisi olduğunu düşünüyor olamam.
+
+108
+00:27:03,667 --> 00:27:31,667
+İşte gördüğünüz gibi çeşitli attribütleri, private ve çeşitli metotları var. Bunları yazalım. Yine burada da aynı şekilde çeşitli attribütler ve metotlar var. Bunları yazalım. Bir kısmı setter ve getter görüyorsunuz zaten. Onları direkt ben işte setter, getter'ları ve işte constructor'ları otomatik olarak oluşturuyor olacağım. Biraz daha hızlanalım diye. Bu noktada UML diagramıyla soruş olan arkadaşımız yoksa.
+
+109
+00:27:31,667 --> 00:27:35,887
+Eclipse tarafından geçiyorum. Bir buraya bakarız, bir oraya bakarız. Gerçeklemeye çalışırız.
+
+110
+00:27:38,087 --> 00:27:39,027
+Var mı sorusu olan?
+
+111
+00:27:41,267 --> 00:27:44,967
+Yok. Şurada sadece dikkat etmemiz gereken şey şu olmuş olsun.
+
+112
+00:27:47,107 --> 00:27:48,667
+Karın içerisinde...
+
+113
+00:27:49,119 --> 00:28:15,699
+Person içerisinde kar attribute'u, karın içerisinde de person attribute'u var. Yani hangisini önce yazarsak yazalım, ben şunu tanımıyorum diye uyarı verecek. O konuda sıkıntı yok. Bir yerinde tanımladığınızda o problemler ortadan kalkıyor olacaktır. O zaman şimdi sadece ben size Zoom'u paylaşmıştım. Zoom'u paylaşmaktan var için tüm ekranı paylaşmam lazım. Bunu bir yapalım. Paylaşımı durdur.
+
+114
+00:28:16,403 --> 00:28:38,163
+dedik. Şimdi tekrardan paylaşımı açalım. Tıkladık. Şurayı. Evet, bu ekranı artık paylaşıyorum sizinle. Evet. Şimdi eklipsi bir taraftan açalım. Eklipsi görebiliyor musunuz şu an? Görebiliyoruz hocam.
+
+115
+00:28:38,559 --> 00:28:39,240
+Tamam, güzel.
+
+116
+00:28:40,579 --> 00:28:45,920
+Şimdi yeni bir proje oluşturarak başlayalım.
+
+117
+00:28:46,400 --> 00:28:50,299
+NYF Ders 4 demiş olayım.
+
+118
+00:28:50,400 --> 00:28:55,519
+Bu projenin içerisine ekleyeceğim çünkü diğer şeyleri de.
+
+119
+00:28:56,960 --> 00:29:00,480
+İşte bir tane paket ismi Galeri.
+
+120
+00:29:01,011 --> 00:29:27,431
+Paketi olmuş olsun. Çünkü galeriyle ilgili şeyler oluyor olacak. Hemen bir sınıflarımı oluşturayım. Bir person sınıfımız oluyor olacak. Onun yanında yani yine bir araba sınıfımız oluyor olacak. Bir galeriydi de anlamayacağı galeri sınıfımız.
+
+121
+00:29:28,307 --> 00:29:54,347
+Oluyor, olacak. Bir de main metodu içerisinde barındıran o sınıfa ne demiş? Main program 4 demiş. Tamam, main program diye bir sınıfımız olmuş olsun. O da içerisinde main metodu barındıracak. Onu nereye koydum ben? A, main pro çok özür diliyorum. Yanlış. Yani proje yapmışım ondan. Aslında proje değildi.
+
+122
+00:29:54,963 --> 00:30:00,423
+Sınıf yapmak istemiştim. Şunu yapmak istemiştim. İçinde hazır main method da barındıracak. Main.
+
+123
+00:30:02,900 --> 00:30:13,600
+4 tane sınıfımız bu şekilde söz konusu. En son name metodda her şey güzel bir şekilde çalışıyor mu derlemek için kullanacağımız yer. Öyle söyleyebiliriz.
+
+124
+00:30:13,600 --> 00:30:28,640
+Şimdi person'ın ne tarzı attribütleri var bakalım. Bir name var, bir de araba attribütü var. Tipleri string name'in. Private olduklarını gördük zaten. String name, yine private.
+
+125
+00:30:29,523 --> 00:30:31,803
+Araba adını ne koymuşuz acaba?
+
+126
+00:30:32,323 --> 00:30:33,443
+Ehe kar koymuşuz.
+
+127
+00:30:34,003 --> 00:30:34,283
+Kar.
+
+128
+00:30:34,708 --> 00:30:45,708
+diye iki tane attribute'umuz var. Bunlara dair hemen bakalım. Bir constructor var. Bir tane constructor var. O da kişinin ismini alarak oluşturuluyor.
+
+129
+00:30:47,088 --> 00:30:57,408
+Source'dan gidiyorduk. Generate constructor. Bunların tabii kısa yolları falan da var. Oralardan direkt oluşturabilirsiniz. Arabayı başlangıçta üstüne vermiyorum. Sadece.
+
+130
+00:30:58,099 --> 00:31:23,979
+şeyi verdim. Neden ona? İsmini, o kişinin ismini vermiş oldum. Süperi sildim. Dediğim gibi inheritance'ı anlattığımızda süper daha kapımızda oturacak. Get name, get card, set card. Yani şeyin set'ırı yok. Set name diye bir şey yok. Diğerlerinin set'ırı get'ırı söz konusu. Gelin onları da oluşturalım. Şurası.
+
+131
+00:31:24,723 --> 00:31:49,323
+Kar için her ikisi de söz konusu. NAME için sadece getter varmış. Bir, iki, üç tane metodumuzu da bu şekilde oluşturmuş olduk. Elle yazmıyorum. Geçen hafta bir kısmını elle yazmıştım zaten. Bu getter setter'larının hiçbirisini elle yazmanıza gerek yok. Sınavı tabii siz elle yazarsınız ama burada vakit kaybı olmasın diye elle yazmıyorum.
+
+132
+00:31:52,723 --> 00:32:09,343
+Bunu elle yazalım. Diğer taraflara da kopyalayayım. Public tipi olduğunu biliyorum. Geriye string döndürüyor. Public, string, self, method, introduction, self, self.
+
+133
+00:32:09,907 --> 00:32:20,727
+İçerisine herhangi bir parametre alınımını şuradan görüyorum. Geriye string döndüreceğin ise buradaki geri dönüş parametresinden görüyorum.
+
+134
+00:32:21,287 --> 00:32:31,947
+Aslında temelde yapılacak şey şu. Benim ismim şudur. Üzerine araba kayıtlıysa eğer, işte arabam da şudur diye söylemesini bekliyoruz.
+
+135
+00:32:31,947 --> 00:32:37,727
+O yüzden burada bir string oluşturalım. Intro olmuş olsun.
+
+136
+00:32:37,907 --> 00:32:46,347
+Başlangıçta boş bir string içi. En nihayetinde de bu intro değerini geriye döndürüyor olacağız.
+
+137
+00:32:46,747 --> 00:32:53,307
+Introyu hadi şekillendirelim. Eşittir intro artı. Benim adım.
+
+138
+00:32:57,267 --> 00:33:03,207
+İki nokta istediğiniz gibi şey yapabilirsiniz. This nokta name.
+
+139
+00:33:03,955 --> 00:33:08,675
+Diyelim. Ondan sonra da şöyle güzel görünsün.
+
+140
+00:33:09,475 --> 00:33:12,975
+Tırnak içinde nokta koyalım.
+
+141
+00:33:13,536 --> 00:33:20,316
+Şimdi eğer ki arabası varsa arabasına dair de bilgileri göstermemiz gerekir.
+
+142
+00:33:20,316 --> 00:33:23,316
+Onu da burada direkt söyleyebiliriz.
+
+143
+00:33:24,056 --> 00:33:27,576
+Ama arabasının olup olmadığını kontrol etmemiz lazım.
+
+144
+00:33:28,135 --> 00:33:29,516
+This.car
+
+145
+00:33:30,067 --> 00:33:36,067
+Farklıysa nulldan gibi bir temel kontrol gerçekleştirebiliriz burada.
+
+146
+00:33:36,067 --> 00:33:56,367
+Bu kart şeyden farklıysa nasıl söyleyelim, nulldan farklıysa oluşmuşsa introya artı olarak, intro işittir, intro artı, arabam da var, arabam da var.
+
+147
+00:33:56,756 --> 00:34:06,456
+Arabanın acaba plaka diye bir yatırım işi var mı? Var. Plakası şu. Plaka numarası. Numarası.
+
+148
+00:34:08,980 --> 00:34:36,279
+Şöyle yazalım. Şimdi burada tabii ki benim car diye bir sınıfımın artık get plate diye bir metodunu henüz yazmadım ama birazdan yazıyor olacağım. Şimdilik kullanalım. Bana şey eclipse kızacaktır yani böyle bir metod yok diye. Çok önemli değil. Birazdan onu nedenle ona şey yaparız. Discard diyelim hatta bunun olduğu da anlaşılsın. Plaka numarası bu diye.
+
+149
+00:34:36,980 --> 00:34:44,420
+söylemiş olduk. Bu, introducer. Yani, arabası yoksa da, hadi onu da yazsın.
+
+150
+00:34:45,519 --> 00:34:51,159
+Intro, benim arabam yoktur diye onu da söylemiş olsun.
+
+151
+00:34:52,380 --> 00:34:54,619
+Yani nereyi yanlış yapıştırdım.
+
+152
+00:34:56,559 --> 00:34:58,680
+Arabam yok.
+
+153
+00:34:59,572 --> 00:35:12,292
+diye buna dair de bir bilgi vermiş olsun. Şunların hepsinin sonunda del bir slash n olursa, yani neyse savaşına gelmiyorum, onu yazdırırken Elen'le yazdırdık, bir sonraki satıra gitsin diye.
+
+154
+00:35:12,792 --> 00:35:19,572
+Arabam yok. Kendisini bu şekilde tanıtmış olduk. Person'dan beklenen bu. Bakalım. İki etli büyüdük, ikisini de yaptık.
+
+155
+00:35:19,572 --> 00:35:27,572
+Constructor'ını oluşturduk. İki tane getiri vardı, bu getirileri oluşturduk. O ardından...
+
+156
+00:35:27,572 --> 00:35:30,552
+Ve denir ona şey vardı, set car.
+
+157
+00:35:30,963 --> 00:35:58,963
+diye bir setör vardı. Onu almıştırdık. Introduce self. Introduce self de dediğim gibi şurayı şimdilik böyle yazdım. Birazdan düzeltebilirim. Ona göre nasıl olacağına bakalım. Eğer ki şey dersek, orada public dersek direkt burada attribütünü da kullanabiliriz. Bakalım nasıl olacağına. Ona göre birazdan orayı düzenleyeceğim. Şimdilik orası boşta kalsın. Arba sınıfına geçiyorum. Plague ve Olmur olmak üzere iki tane attribüt.
+
+158
+00:35:58,963 --> 00:36:10,603
+Detributor, search also. Detributor, private, private, person, owner.
+
+159
+00:36:11,476 --> 00:36:14,195
+Bu iki tane attribute'ı söz konusu.
+
+160
+00:36:14,695 --> 00:36:22,876
+Constructor'ında hem bakın arabanın plakasını alıyoruz hem de kime ait olduğunu burada direkt söylememiz gerekiyor.
+
+161
+00:36:23,235 --> 00:36:34,956
+O yüzden constructor'ı oluştururken her ikisini de kullanmamız bizden temelde bekleniyor.
+
+162
+00:36:35,155 --> 00:36:36,775
+Biz de ikisini kullandık.
+
+163
+00:36:38,963 --> 00:37:05,764
+Tamamına dair getter ve setter'lar söz konusu. Onları da isterseniz direkt otomatik olarak şuradan oluşturuyor olayım. İkisini de şöyle direkt seçiyorum ki otomatik olarak oluşturmuş olsun. Bakın, plate'in setter'ı getter'ı, aynı şekilde all'un getter'ı ve setter'ı. Bir diğer metod ne? Introduce Set. Şuradan biraz tıklayalım onu. Onun üzerinden.
+
+164
+00:37:06,192 --> 00:37:07,652
+Gidelim.
+
+165
+00:37:08,952 --> 00:37:15,791
+Tabii artık şu an bu bir araba. Merhaba, ben bir arabayım diye uyarsın.
+
+166
+00:37:15,791 --> 00:37:29,192
+İşte plakam, plaka numaram, this.plate yazalım. Plaka numaram şudur.
+
+167
+00:37:29,588 --> 00:37:41,387
+Bakıldığında, benim klakanımda, sahibde, constructora bakıldığında, bu arabanın sahibi olmadan bu araba construct edilemiyor.
+
+168
+00:37:42,108 --> 00:37:47,208
+O yüzden muhakkak sahibi vardır diye düşünmemiz gerekiyor.
+
+169
+00:37:47,208 --> 00:37:54,507
+O yüzden ekstradan bu bilgileri, yani buradaki ilk kontrolünü falan yazmamıza gerek yok.
+
+170
+00:37:54,804 --> 00:37:57,724
+Direkt benim plaka numara bu.
+
+171
+00:37:58,324 --> 00:38:01,583
+Sahibimin ismi, öyle diyelim.
+
+172
+00:38:02,264 --> 00:38:14,384
+Sahibimin ismi, benim owner'ımın yet neyimi.
+
+173
+00:38:16,211 --> 00:38:17,731
+Bu şekilde kullanabiliriz.
+
+174
+00:38:18,311 --> 00:38:23,231
+Person'a baktığımızda buradaki şey zaten düzelmiş oldu.
+
+175
+00:38:23,471 --> 00:38:32,192
+Niçin? Niçin? Benim otomatik olarak oluşturduğum getplate metodu da geldiği için oradaki hatanın da ortadan kalktığını görüyorsunuz.
+
+176
+00:38:32,192 --> 00:38:38,452
+Tekrar söylüyorum burada diğerinde ip kullandım çünkü bir kişinin arabası olmayabilir.
+
+177
+00:38:38,768 --> 00:38:51,367
+Ama bir araba varsa muhakkak sahibi olması lazımdır. Bunu şuradaki constructor yapılarından çıkartıyorum bu durumu. O yüzden bu şekilde tanımı gerçekleştirdim.
+
+178
+00:38:51,367 --> 00:39:05,768
+Bir diğeri, Gallery. Gallery'nin ismi, söz konusu, yine private string. Gallery name miydi o? Gallery.
+
+179
+00:39:06,516 --> 00:39:29,275
+Nail, söz tonusu, Galerineye, Arabalar dizisi var burada. Yani bunu geçen hafta öğrendiğimiz ArrayList gibi tutalım. İsterseniz ArrayList her birisi karlardan oluşuyor olacak. Ne demişiz pekala burada buna? Cars.
+
+180
+00:39:29,811 --> 00:39:47,671
+Demişiz. Okey. Sıkıntı yok. Bir diğeri araç sayısı. Aslında bu araç sayısı ArrayList'in boyutu kadar olacak. Çekebilirsiniz. Ama burada ekstradan bir attribüt olarak yazılması istermiş. Onu da yazabiliriz biz de.
+
+181
+00:39:48,755 --> 00:40:04,935
+Car Counts. Her seferinde ona göre güncellemek lazım tabii ki. Bir de bunun Galeri Owners'ı söz konusu. Onu da insan olduğu için person sınıfından üretmiş oluyoruz.
+
+182
+00:40:05,523 --> 00:40:11,604
+Bu temelde bakıldığında burada gördüğümüz 4 attribute'ü private olarak yazdım.
+
+183
+00:40:12,043 --> 00:40:14,243
+Hemen constructor'ına gelelim.
+
+184
+00:40:14,703 --> 00:40:19,923
+Constructor'ında ise galerinin ismini ve sahibinin ismini vermemiz gerekiyor.
+
+185
+00:40:20,844 --> 00:40:25,344
+Yani sahibi olmayan bir galeri olamaz, ismi olmayan bir galeri olamaz.
+
+186
+00:40:25,764 --> 00:40:29,663
+Tek bir tane constructor mı var, bakalım galeri başka var mı? Yok.
+
+187
+00:40:30,104 --> 00:40:33,523
+Sadece bir tane constructor var. Bir tane constructor olduğu için...
+
+188
+00:40:33,523 --> 00:40:44,144
+Şimdi, tahmin edebileceğiniz üzere, bunun muhakkak sahibi olması gerekir olmadan, ilklendiremeyeceğimiz bir durum söz konusu.
+
+189
+00:40:44,623 --> 00:40:48,963
+Constructor'ını oluşturarak başlıyor olalım.
+
+190
+00:40:50,543 --> 00:40:51,523
+Şu yok, şu yok.
+
+191
+00:40:51,923 --> 00:40:52,923
+Beliremeyeceğimiz gibi.
+
+192
+00:40:55,315 --> 00:41:22,115
+Şu, tamam. Constructlarını yaptım. Bakın ilk metot gitti. SetGaleryName, setGaleryGet, yani GaleryName için SetterVGet'ır söz konusu. Başka da SetterVGet'ır yok. Sadece Galery ismini SetVGet yapabiliyorsunuz. O yüzden onların yerin SetterVGet'ırlarını oluşturuyor olanı sadece Galery isminin SetterVGet'ır var. Şunlar da gitti.
+
+193
+00:41:23,315 --> 00:41:24,916
+Search gun, search gun.
+
+194
+00:41:25,460 --> 00:41:51,760
+Evet, iki tane araba aramaya dair metodum var. Fakat birisi plaka numarasından arıyor. Geçen abonunu yapmıştık. Birisi ise arabanın, nasıl söyleyelim, araba objesi üzerinden arıyor. Araba objesi üzerinden ararsa geriye bling döndürüyor. String üzerinden ararsa car döndürüyor. Remove ve sell car olmak üzere çeşitli metodlar var. Bir de en son introduce self var. Sırayla yazalım.
+
+195
+00:41:53,460 --> 00:42:03,139
+Başlıyorum. AddGard içerisine araba objesi alıyor. Geriye de Boolean değer döndürüyor. Private mıydı? Public'tir.
+
+196
+00:42:03,819 --> 00:42:13,180
+Evet, public. Public. Add. Geriye Boolean değer döndürdüğünü söylemiştik. AddGard.
+
+197
+00:42:13,523 --> 00:42:18,724
+İçerisine de araba sınıfından bir araba alıyor.
+
+198
+00:42:19,123 --> 00:42:28,943
+Yapacağımız, tahmin edebileceğiniz üzere, add-car işlemi sonucunda yapacağım şey, şurada gördüğümüz cars dizisine, biz onu array olarak oluşturmuştuk.
+
+199
+00:42:29,323 --> 00:42:31,903
+Bunun ekleniyor olması.
+
+200
+00:42:32,463 --> 00:42:34,403
+Bir de gelin şöyle bir şey yapalım.
+
+201
+00:42:34,563 --> 00:42:41,523
+Bu arabanı galerinin konstruktöründe, galeriye oluşturur oluşturmaz, bu car countunu da...
+
+202
+00:42:41,523 --> 00:43:05,744
+0 yapalım, disk diyelim kadarına. Yani DereLi oluştu, üzerine hiç araba yok. Başlangıçta countu 0 olsun. Araba ekledikçe countunu arttıracağım. Araba azaldıkça demiyorum. Araba çıktıkça da oradan araba satıldıkça veya neyse o countu düşürüyor olacağım.
+
+203
+00:43:09,523 --> 00:43:31,063
+Benim ArrayList'imin adı buydu. Bakın direkt et diye bir metodu söz konusu. Ekar diye ben tanımlamıştım zaten bunu. Araba ekleme işini bu şekilde hızlıca yapabiliriz. Fakat bakıldığında şuraya bu metodun bir geri dönüş değeri bullying olarak tanımlı olmuş olması lazım.
+
+204
+00:43:31,764 --> 00:43:46,764
+Yani bu listeye bunu ekledim, ekleyemedim şeklinde bir geri dönüş olacak. O yüzden ben bunu return diyerek döndürdüğümde geri dönüş düğün değerini sağlıyorum. Fakat...
+
+205
+00:43:47,059 --> 00:43:49,399
+Fakat şöyle bir durum söz konusu.
+
+206
+00:43:50,099 --> 00:43:56,799
+Burada bu listeye ben eklediğimde araba sayısını da arttırmak isteyeceğim bir yerde.
+
+207
+00:43:56,799 --> 00:44:05,159
+Ya bu cars array listinin size'ını gidip direkt cars count'a koyabilirsiniz bir yerde ya da bir arttırabilirsiniz değeri.
+
+208
+00:44:05,599 --> 00:44:09,259
+Şimdi gelin olayın lojiğini beraber kurgulamaya çalışalım.
+
+209
+00:44:09,659 --> 00:44:12,779
+Mesela ilk aklımıza gelen şey şurada yapayım.
+
+210
+00:44:13,204 --> 00:44:23,224
+Bunu, kar, kansu, bir artırayım. Böyle olduğu bir durumda, yani ya bu ekleme işlemi false dönerse.
+
+211
+00:44:24,148 --> 00:44:52,128
+Yani ekleyememişiz ama arttırmışız. Geriye de false dönmüş. Bir problem. Yani hemen tabii gelmeyecektir aklımda da. Olası gelenler için söyleyeyim. O zaman ben bunu alta koyayım diye düşündüğünüzde return'e zaten dönüyor. Döndükten sonra herhangi bir şey arttırmayacak. Kesin dönüyor. Ya doğru ya yanlış dönüyor. Yani o yüzden burada ekstradan bir yapıp uygulamamız lazım. Sonucunun doğru mu yanlış mı olduğunu bence kontrol etmek gerekiyor.
+
+212
+00:44:52,148 --> 00:44:57,268
+O yüzden if ifademizle bunu kontrol edebiliriz.
+
+213
+00:44:57,648 --> 00:45:01,148
+Eğer ki arabayı başarılı bir şekilde eklemişsem...
+
+214
+00:45:01,972 --> 00:45:20,192
+Burada arabanın değerini, şey, car count değerini arttırayım ve return true döneyim. Aksi durumda, yani buraya else de yazabilirsiniz, yazmayı da bilirsiniz. Zaten öte bir durumda direkt alt tarafa düşecek. O tamamen sizin tasarımınıza kalmış durumda.
+
+215
+00:45:21,192 --> 00:45:28,972
+Ekleyemediği durumda arabanın car count'unu arttırmadım ve geriye false döndürdüm.
+
+216
+00:45:29,972 --> 00:45:41,372
+Aslında temelde basit, geriye herhangi bir şey dönmesi, istenmesi ekliyorum. Ama ekleyip eklemediğimde merak ediliyor olabilir. Ne tarz durumlarda ekleyemeyiz kısmına da geliyor olacak.
+
+217
+00:45:41,552 --> 00:45:49,572
+Onunla elinde de olacağı örneğimiz oluyor, olacak. Buraya kadar sorusu olan var mı? Bir soralım, devam edelim diğerleri de yapmaya.
+
+218
+00:45:53,684 --> 00:45:55,744
+Yok, burada ne anlaşılıyor.
+
+219
+00:45:55,744 --> 00:45:59,844
+Şimdi search car bir listenin içerisinde.
+
+220
+00:46:00,644 --> 00:46:08,044
+Öncelikle içerisine arabayı direkt metot olarak verdiğimiz search car'ı yapıyor olalım arkadaşlar.
+
+221
+00:46:08,744 --> 00:46:12,184
+Bu da yine public tanımlanmış durumda.
+
+222
+00:46:12,744 --> 00:46:14,584
+Search car geriye ne döndürüyor?
+
+223
+00:46:15,224 --> 00:46:17,084
+Boolean değer döndürüyor.
+
+224
+00:46:17,084 --> 00:46:18,204
+Boolean.
+
+225
+00:46:19,219 --> 00:46:41,419
+Değer döndürüyor. Search car. Bunun içerisine direkt bir araba veriyoruz. Birden fazla search car olacak. İlki bu. İstediğim şey şu. Benim şu listemin içerisinde, bu listemin içerisinde bu araba var mı?
+
+226
+00:46:42,068 --> 00:46:55,748
+Tamam mı? Listenin çeşitli metotları olabilir. Hemen aklımıza o gelsin. Yapılacak şey temelde nedir? Bakıldığında listenin her bir elemanını gezeyim. Bu araba o arabaya eşitlidir.
+
+227
+00:46:56,596 --> 00:46:57,596
+Diye bakayım.
+
+228
+00:46:58,496 --> 00:47:01,416
+Logical olarak mantıklı olabilir.
+
+229
+00:47:02,675 --> 00:47:09,536
+Ama hani zaten o bir liste, onun içerisinde direkt objeleri direkt karşılaştırabileceği bir metodu var mı?
+
+230
+00:47:09,896 --> 00:47:11,076
+Gelin beraber bakalım.
+
+231
+00:47:12,115 --> 00:47:14,416
+Hani contents gibi bir şeyler göreceğiz biraz daha.
+
+232
+00:47:14,836 --> 00:47:16,236
+Şimdi add'leri var, okey.
+
+233
+00:47:16,456 --> 00:47:17,916
+Clear'i var, temizliyor.
+
+234
+00:47:18,376 --> 00:47:20,036
+Başka bir tane daha aynı siteler kovuyor.
+
+235
+00:47:20,135 --> 00:47:21,016
+Bakın, contents.
+
+236
+00:47:21,615 --> 00:47:24,596
+Direkt yan tarafta, bütün idelerde hemen hemen...
+
+237
+00:47:24,596 --> 00:47:35,556
+Bunun açıklaması da var. Return true if this list contains the specific element. Bizim verdiğimiz objeyi içerisinde barındırıyorsa true dönüyor. Tamam mı?
+
+238
+00:47:36,096 --> 00:47:50,996
+More formulae return true if and only if this list contains at least one element as such d. Yani aynı arabadan birden fazla da ekleyebiliyormuşuz demek ki. O yüzden at least demiş. Direkt bunu kullanabilirim ben.
+
+239
+00:47:52,244 --> 00:47:54,284
+Bu karı barındırıyor.
+
+240
+00:47:55,784 --> 00:47:58,443
+Geri dönüş değerine bakmayı unuttum.
+
+241
+00:47:58,523 --> 00:47:59,203
+Beraber bakalım.
+
+242
+00:47:59,324 --> 00:48:02,264
+Bakın zaten bullying değer döndürüyor.
+
+243
+00:48:02,643 --> 00:48:03,903
+True veya false olarak.
+
+244
+00:48:04,403 --> 00:48:12,423
+Ben bu sonucu neticesinde bu araba var mıdır, vardır veya yoktur diye bir değer dönüyor olacak.
+
+245
+00:48:13,423 --> 00:48:17,163
+Hocam yani search car metodunu çağıracağımız yerde.
+
+246
+00:48:17,652 --> 00:48:44,491
+Direkt o arabanın işte bu metodunu çağırsak olmaz mı? Ama yani biz şimdi temelde şeyi bilmiyoruz. Bu arabanın ilgili şeyleri public mi, private mi? Nasıl erişeceğiz? Burada direkt cars.contain diye erişiyoruz. Ama o zaman işte erişmek için ekstradan işlemler yapmamız gerekecek. Sınıfın içerisinde yapmak bunu daha güzel. Gördüğünüz gibi sınıfın search car metoduna erişmek.
+
+247
+00:48:44,884 --> 00:48:59,723
+Public. Tamam. Ama direkt o listeye benen bir şeyimdesiniz, o, private. O yüzden böyle bir yaklaşım sergiliyoruz. Yapılmaz değil, biraz orada daha çetrefilli işleri söz konusu. Onu da zaman içerisinde göreceksinizdir.
+
+248
+00:49:00,303 --> 00:49:10,623
+Şimdi arabanın bir tane daha hali vardı, search gun'ın. Public. Geriye car tipinde bir şey göndürüyordu.
+
+249
+00:49:11,155 --> 00:49:17,976
+Search, Car, içerisine ise Plaka numarasını alıyoruz.
+
+250
+00:49:18,612 --> 00:49:24,452
+Geriye arabayı döndürecek. İçerisine plaka numarasını alacak.
+
+251
+00:49:24,452 --> 00:49:34,612
+Şimdi, yine az önceki gibi hemen aklınıza o gelmiş olsun. Şu contains'in içinde öyle bir şeyler var mı diye şöyle hani neler olabilir?
+
+252
+00:49:34,731 --> 00:49:45,972
+Metotların isimleri zaten anlayacağımız şekilde az çok şekillendiriliyor. Doğru isim oluyor. Siz de metotlarınıza isim verirken o şekilde isim vermeniz kesinlikle güzel.
+
+253
+00:49:46,612 --> 00:50:02,251
+olacaktır ki daha sonra siz de aynısını kullanmak istediğinizde faydanızı olsun. Yok. Bakın işte bu sefer for'la dönebilirim. Tüm listeyi dönüp bulduğunda çıkabilirim. Yani tüm listeyi while'la dönüp.
+
+254
+00:50:02,483 --> 00:50:24,883
+Bulduğumda çıkabilirim. Ama yani search car yapıyorsam, hani normalde arabaları ararken bunların her birisinin indeksi üzerinden gitsem aradığım tek noktada buluyor olacağım. Plakayı aramak için de ekstradan nasıl söyleyeyim güzel searching algoritmalarımız olması lazım aslında. Düşünün yani 10 milyon tane araba var.
+
+255
+00:50:25,248 --> 00:50:50,468
+Siz onun içerisinde teker teker stream karşılaştırması yaparsanız 10 milyon daha stream karşılaştırması olur. Bunlar bir şekilde sıralı değilse ve bizi yorar. Ama burada temelde yapacağım şey o. O yüzden veriyi daha tasarlarken daha güzel tasarlanabiliriz. Bir ForEach döngümüzün olduğundan bahsetmiştim size. Şunu disk diyeyim de bizim yukarıdaki sınıfın arabaları olduğunu anlayalım. Bir tane araba.
+
+256
+00:50:50,996 --> 00:51:18,996
+Yani bu class ArrayList'inin içerisinden ilk elemanını alacak, for dönecek. Ondan sonra ikinci elemanını alacak, for dönecek. Üçüncü elemanını alıp for dönecek. Ne zamana kadar? Ya tüm elemanlar bitene kadar ya da arada return bir şeyler koyduysam o zaman çıkıncaya kadar. Şu perspektiften olaya bakıldığında dizinin şu forun adının for each olması anlaşılabiliyordur zannede.
+
+257
+00:51:18,996 --> 00:51:24,256
+Tüm dizinin elemanları için bir döngü gerçekleştiriliyor olacak.
+
+258
+00:51:24,256 --> 00:51:26,936
+Karın plakası,
+
+259
+00:51:27,507 --> 00:51:31,147
+Bu artık plaka geriye string bir değer döndürüyor, gap play.
+
+260
+00:51:31,667 --> 00:51:34,987
+String ise onun equals diye bir metodu vardı.
+
+261
+00:51:35,127 --> 00:51:36,307
+Geçen hafta görmüştük.
+
+262
+00:51:36,867 --> 00:51:39,748
+Equals ise neye? Plakaya.
+
+263
+00:51:39,748 --> 00:51:42,967
+O zaman size bir sonuç dönüyor olacak.
+
+264
+00:51:43,347 --> 00:51:49,748
+Equals olduğu durumda bakın yine açıklamayı nedeni okuyarak da bunu anlayabiliriz.
+
+265
+00:51:50,507 --> 00:51:52,367
+Compare this string to spesifle oluyor.
+
+266
+00:51:52,507 --> 00:51:55,248
+Yani o verdiğimiz şeyi birbiriyle karşılaşacak.
+
+267
+00:51:55,507 --> 00:52:04,187
+Eğer ki sonuç doğru ise, the result is true if the only arlının üstüne atman tamam.
+
+268
+00:52:04,307 --> 00:52:10,127
+Okey, gayet güzel. Eğer ki bu plaka buna eşitse, tabii şurada bir şeyler kaymış.
+
+269
+00:52:11,764 --> 00:52:38,584
+Play yazamamışım ben çok özür diliyorum. Bu aramanın plakasını aldım. Şuraya yazıyorum. Equals plaka. Equals geriye bir değer döndürüyor direkt. True veya false şeklinde. Ben direkt bir ifin içerisinde onu kontrol edebilirim. Eğer ki bulduysam equal olarak direkt o karı geri döndürebilirim. Tamam mı?
+
+270
+00:52:38,815 --> 00:52:40,427
+Şimdi...
+
+271
+00:52:40,628 --> 00:53:06,688
+equals ise buldum, döndürdüm. For geri kalanlarına dönmedi, direkt çıktı. Pekala, tüm diziyi gezip bulamadıysa ne olacak? Muhakkak geriye kart gibi bir şey döndürmemiz lazım. İşte o zaman da döndüreceğimiz objeler için null döndürebiliriz. Hiçbir şey bulamadığım manasında kullanılacak bir şey. Null da aslında o objenin olmadığını söyleyen bir şey. Bu şekilde olayı tasarlayabiliriz.
+
+272
+00:53:08,628 --> 00:53:23,307
+gibi ifadelerin, contents gibi veya ifadelerin lütfen açıklamalarını siz de hani bu şekilde parantezinden sonra yazdıktan sonra bir okuyun. Niye yazdım? Şuraya gelelim. Bir açıklamalarını okuyun isterim ben.
+
+273
+00:53:29,492 --> 00:53:37,711
+Bir döner, iki döner, üç döner ona göre, döndüğü şeylere göre siz de karşılaştırma işleminizi gerçekleştirirsiniz.
+
+274
+00:53:38,331 --> 00:53:42,452
+Search car'lar da tamam. Remove car yazalım hemen.
+
+275
+00:53:45,452 --> 00:53:54,112
+Public. Geriye ne döndürüyoruz? Remove car'da. Car döndürüyoruz. Car. Remove car.
+
+276
+00:53:54,739 --> 00:54:01,599
+içerisine arabanın plaka numarasını alıyoruz.
+
+277
+00:54:02,599 --> 00:54:05,719
+Plaka numarasını aldım.
+
+278
+00:54:06,099 --> 00:54:16,499
+Şimdi aslında şuradaki işleme çok benzer bir işlem gerçekleştiriyor olacağım. O yüzden biraz onu şöyle direkt kopyalayıp yapıştırayım.
+
+279
+00:54:16,919 --> 00:54:24,839
+Remove Car yaptığımızda tahmin edebileceğiniz yere ne olacak? Bu galeriden bu araba çıkmış oluyor. Listeden çıkacak.
+
+280
+00:54:25,268 --> 00:54:53,268
+Yani satılma gibi düşünebilirsiniz ama hemen altında satılmaya dair bir şey söz konusu. Bizim istediğimiz şey bu arabayı bu galerinin listesinden çıkartmak. Şu an sadece bir yapmak istediğimiz şey o. Plaka numarası üzerinden gittiğimiz için teker teker dönüp bulmam lazım. Buldum. Tamam mı? Yani şuraya geldiğimde o plakalı aracı buldum. Nasıl remove ediyorum? Carson dizisinin içerisinde yine remove diye bir...
+
+281
+00:54:53,268 --> 00:55:01,268
+Bir metot var. İndeksini alıyor. Car, get değil de car, onun da bir indeks gibi bir şeyi vardır.
+
+282
+00:55:01,708 --> 00:55:17,268
+Index of olabilir mi hocam? Olabilir. Bakalım. Şöyle diyelim o zaman. Dur bakalım. Önce bir karın şeyinden gidelim. Direkt onun üzerinden bir şeyler çıkacaktır gibi hissediyorum.
+
+283
+00:55:20,532 --> 00:55:23,172
+Bakalım neleri olabilir.
+
+284
+00:55:24,072 --> 00:55:27,711
+Yani sanki çok olasıymış gibi geliyor ama okey, yok.
+
+285
+00:55:27,711 --> 00:55:35,271
+Şimdi, tabii car count da yazdı ya, ona da azaltmamız gerektiğini şimdi fark etmiş oldum ben.
+
+286
+00:55:35,751 --> 00:55:36,711
+Şu car...
+
+287
+00:55:37,588 --> 00:55:57,487
+Bu dizinin, nasıl söyleyeyim, şu ArrayList'in bir elemanı fakat kaçıncı elemanı, ona bakmamız lazım. Dönüyor en nihayetinde, iterate geliyor. IndexOf gibi bir metot var, o da cars'ın içerisindeki bir metot mu? IndexOf.
+
+288
+00:55:57,807 --> 00:56:05,807
+Burada alıcı şey nedir? Obje alacak. Direkt tamam. Şu karı veriyor olacağız. Çok güzel.
+
+289
+00:56:06,804 --> 00:56:18,943
+Car içerisine yazıyor. Biraz parantez sayısını azda koymuş olabilirim ben belki. Şimdi Car dizisinin içerisinden bir şeyi remove edeceğim. Remove edeceğim şeyin indeksini vermem lazım. Bakın o şekilde çalışıyor.
+
+290
+00:56:18,943 --> 00:56:34,724
+Pekala ben remove edeceğim Car'ı buldum. O Car bu dizinin kaçıncı indeksinde onu da bu ArrayList'in diyelim dizide meyelim. ArrayList'in kaçıncı indeksinde bu şekilde tespit edebiliyoruz. Verdiğimizde
+
+291
+00:56:34,804 --> 00:56:49,423
+Artık bunu siliyor olacak. Sildiğimiz karı tabii ki tahmin edebileceğiniz üzere şu, nasıl söyleyelim, aracın araç sayısını da azaltmamız lazım.
+
+292
+00:56:49,423 --> 00:57:02,744
+Fakat bir film içinde birden fazla işlem yapacağımdan hatırlıyorum, şunları şöyle süslü paranteze alayım ve en nihayetinde hangi karı sildiysem onu da geri döndürmem bekleniyor.
+
+293
+00:57:02,804 --> 00:57:13,443
+Onu da geri döndürmüş oluyorum. Böylece işte bir arabayı başka bir sahibe atamadan önce silmiş oldum.
+
+294
+00:57:18,516 --> 00:57:44,256
+Bir ara verelim mi? Yani yazmaya devam edeceğim. Benim kutu falan da yazıyorum ama uzayıp sıkılmayın istiyorum sizle. Bir ara verelim. Saat 3. Sizin için de uygunsa ve sonusu olan arkadaşımız yoksa saat 3'ü çeyrek geçe burada olur. Uygun mudur? 3'ü çeyrek geçe burada olur. Devam edelim. Çok uzun sürmeyecektir. Yani bu işi tamamlamamız bir süre sonra bitiriyor olacağız.
+
+295
+00:57:45,619 --> 00:57:47,539
+Evet, 3-3eyrekli buradayız.
+
+296
+01:15:53,524 --> 01:15:56,144
+Tekrardan merhaba arkadaşlar.
+
+297
+01:15:56,824 --> 01:15:58,284
+Kaldır videoyu devam edelim.
+
+298
+01:16:02,931 --> 01:16:28,871
+Şimdi en son ne yazdık? Remove car'ı yazdık. Bir sonraki de sel car, plaka numarası ve kişi bilgisini parametre olarak veriyoruz buraya. Geriye ne döndürüyor? Buriyeni döndürüyor. Neyse hadi yazalım burada. Public.
+
+299
+01:16:29,779 --> 01:16:43,279
+Gleon, cell, car, plaka bilgisi, string, bir de kişi bilgisini alıyoruz.
+
+300
+01:16:44,467 --> 01:17:06,227
+Başka unuttuğumuz bir şey var mı? Bakalım, program içinde Fishi kişisini, hani Mim O'nunlarını alıyoruz burada. Tamam, okey, bakılır. Mim O'nun. Zaten biz de eski sahibinin kim olduğu, biz de kayıtlı olduğu için Mim O'nunlarını alıyoruz ve arabayı onun üzerine geçiriyor olacağız. Satacağız yani en nihayetinde.
+
+301
+01:17:12,467 --> 01:17:16,747
+Bunun sahibi değişiyor olacak. Farklı bakış açılarını gerçekleştirebiliriz.
+
+302
+01:17:17,207 --> 01:17:19,627
+Ben öncelikle şöyle bakayım bu olaya.
+
+303
+01:17:20,147 --> 01:17:28,067
+Biz bir araba oluşturuyoruz. Arabayı galerinin içerisindeki işte bir ne denir ona alana kaydediyoruz.
+
+304
+01:17:28,067 --> 01:17:32,768
+ArrayList dedik ona. O ArrayList'ten çıkartmamız durumunda bunu.
+
+305
+01:17:33,307 --> 01:17:35,807
+Hala daha o kar objesi oluyor olacak.
+
+306
+01:17:36,448 --> 01:17:40,467
+İşte artık ama o galerinin içerisinde olmayacak. Ona dikkat etmemiz gerekiyor.
+
+307
+01:17:40,467 --> 01:18:03,368
+Değişen şey pekala ne olacak? Değişen şey bizim adımıza bakıldığı durum için sahibi değişecek bir. İkincisi yine o galerinin Car ismindeki ArrayList'inden bir tane azalma olacağı için araba sayısını azaltıyor, otomatik olarak azaltıyor olacağız.
+
+308
+01:18:03,988 --> 01:18:28,828
+Yapalım. Şimdi öncelikle o arabayı bulmamız gerekiyor. Hali hazırda bakın burada search ile ilgili çeşitli metodları biz yazmıştık. Hem plakasından hem de ne denir ona kendi arabanın kendisinden. Mesela direkt plakasından olan search metodunu kullanabiliriz. Nasıl kullanacağımıza bakalım. Beraber karar vereyim.
+
+309
+01:18:31,604 --> 01:18:51,604
+K olmuş mu? K olmuş bu. Yanlış yapmışım. Bu arabayı search ediyorum. Bana geriye ne dönüyordu bu search'ın sonunda? Beraber bakalım. Eğer ki öyle bir araba varsa araba dönüyor. Yoksa nal dönüyor. Bunu direkt bir arabanın içerisine yeni...
+
+310
+01:18:52,404 --> 01:19:06,824
+Kar diye dönem sonucu atabiliriz. Eğer ki bu dönem sonucu yani sonuçta biz silemeye de biliriz o arabayı. Eğer ki öyle bir araba yoksa yani şey satamaya da biliriz. Eğer ki nalsa.
+
+311
+01:19:07,507 --> 01:19:35,427
+nalda dönebiliyordu hatırlarsanız. O zaman bu arabayı silemeyeceğiz. Biz geriye burada sadece false döndürüyor olalım. Diğer tarafta main metodun içerisinde kontrol ederken false ise böyle bir araba silmek istediğiniz, satmak istediğiniz araba zaten sistemde yoktur gibi bir ekstradan uyarı verebiliriz. O yüzden sadece burada return false.
+
+312
+01:19:35,507 --> 01:19:39,047
+ile olayı noktalandırıyorum. Hadi şusu olsun.
+
+313
+01:19:39,587 --> 01:19:43,907
+Pekala, eğer ki nal değilse böyle bir araba var.
+
+314
+01:19:45,028 --> 01:19:49,608
+Ve bu arabayı ben artık yeni sahibine kavuşturmam lazım.
+
+315
+01:19:50,208 --> 01:19:51,567
+Arabamız Yenikar.
+
+316
+01:19:52,567 --> 01:20:00,000
+Yeni karın içerisinde bir şey oluşturuyor.
+
+317
+01:20:00,000 --> 01:20:17,619
+sahibi bilgisini değiştirmeniz gerekecek. Onun için de çeşitli metotlar var. Bir diye yani setter bilgisi söz konusu oluyor olacak. Bu setter bilgisini new orglarla beraber set ettik.
+
+318
+01:20:18,219 --> 01:20:24,799
+Fakat şimdi burada sizin aklınızda canlanıyor mu bilmiyorum ama ben başlangıçta bir tane araba oluşturdum.
+
+319
+01:20:25,119 --> 01:20:34,119
+O arabayı bir ArrayList'in içerisine ekledim. Ondan sonra ben onu işte yeni bir...
+
+320
+01:20:34,707 --> 01:20:57,907
+Kar tipinde, yeni kar isiminde bir objenin içerisine atarsam, set onları yaparsam, onları değişir mi hakikaten? Güzel bir soru. Bunu main metodda bakalım. Ona göre ufak bir değişiklikler söz konusu olacak. Bir diğeri benim yine araba listem var. Bunun içinden bunu remove etmem gerekiyor.
+
+321
+01:20:58,420 --> 01:21:06,300
+Onu da şu şekilde remove edeyim. Hatta önce remove edeyim sonra onların değiştiriyor olayım.
+
+322
+01:21:06,300 --> 01:21:17,739
+Yine bir diğer, tabii remove edemeye de bilirim. Öyle bir arabanın olduğunu söyledikten sonra remove edememek için ne sebebimiz olabilir?
+
+323
+01:21:17,908 --> 01:21:33,968
+Yani şurada öyle bir araba var. Search ettik, geldi. Remove ederiz diye düşünüyorum. Şurada çünkü o kontrolü yaptık, remove ettik ve car count'u bu liste için azaltmamız gerekiyor.
+
+324
+01:21:33,968 --> 01:21:45,908
+Tabi bir de bu işi başarılı bir şekilde yaptığımızı döndürmek için true değerini döndürüyoruz. Böylece artık olmuşsa...
+
+325
+01:21:45,908 --> 01:22:06,488
+Bakacağız. Arabanın yeni bir sahibi var. O bizden gitti. Hatta şunu da kullanabiliriz. Gerçi bu Remove Car plaka alıyor direkt. Direkt bunu da çağırabiliriz. Biraz onu da hani kullanmış olalım. Nerede o? Şurada. Remove Car. Direkt şuradaki.
+
+326
+01:22:07,007 --> 01:22:32,708
+plakayı da alarak remove car yapabiliriz. Yani kendi yazdığımız metotları da böylece biraz kullanmış olalım. Üst tarafta yazmıştık hatırlarsanız. Bu plakalı aracı da buradan remove edelim diye. Şimdi takılacağımız temel nokta şu olmuş olur. Zaten burada biz remove ettiğimizde azaltıyoruz. Şurada azaltmaya gerek var mı? İşte burada tekrardan azaltmaya gerek yok.
+
+327
+01:22:35,007 --> 01:22:43,567
+Bakıldığında, az önceki gördüğünüz gibi sadece remove metodunu kullanırsam tak diye listelerin içerisinden remove ediyor olacak.
+
+328
+01:22:44,108 --> 01:22:51,247
+Buradaysa remove edeceğimiz plakayı tekrardan gidip search ediyor, arıyor. Daha fazla bir iş yükü söz konusu.
+
+329
+01:22:51,247 --> 01:22:57,788
+Yani ben plakayı değil, arabanın kendisini biliyorsam tekrardan remove etmek için bu çabaya girmemem daha doğru olur.
+
+330
+01:22:57,927 --> 01:23:02,987
+Ama kendi yazdığımız metodu da kullanalım diye size göstermek istediğim için burada yazıyorum.
+
+331
+01:23:03,007 --> 01:23:26,887
+Bunu. Yoksa, yani diğer tarafta hocam daha uygun bir sorun çözeriz. Evet, çözeriz. Onu da ekstradan söyleyelim. Başka ne var? Introduce Serp. Şuralarda vardı. Onlardan yine alalım. Introduce Serp. Geriye burada tabii döndürecek şey bu bir galeri artık. Merhaba, ben bir galeriyim.
+
+332
+01:23:27,412 --> 01:23:44,852
+Diyelim. Üzerine kayıtlı çeşitli araçlar olacak. Mesela şöyle başlayalım isterseniz. Toplam car count'u buraya yazıyorum.
+
+333
+01:23:54,868 --> 01:24:14,968
+Araba kayıtlı. Araba var. Şöyle diyelim, ben bir galeriyim. Gale üzerinde toplam 3 tane araba kayıtlı. Satışa hazır diyelim. Hatta şöyle daha biliyorsun satışa.
+
+334
+01:24:15,380 --> 01:24:17,559
+Hazır. Dedik. Okey.
+
+335
+01:24:18,319 --> 01:24:22,460
+Şimdi bu araçların çeşitli bilgilerini de verebiliriz istersek.
+
+336
+01:24:22,460 --> 01:24:26,559
+Doğruçuk her birisinin plaka numarasını mesela verebiliriz.
+
+337
+01:24:26,819 --> 01:24:32,120
+Onun için yine bir for each döngüsü gibi bir şey döndürüyor olacağım.
+
+338
+01:24:33,380 --> 01:24:35,720
+Teker teker. Hop. Çok oldu.
+
+339
+01:24:36,059 --> 01:24:38,120
+Reiter'ı bir şey değil de. For each.
+
+340
+01:24:39,280 --> 01:24:43,039
+Discuss. Dis yazmamıza gerek olmuyor. Aynı şey olduğu için.
+
+341
+01:24:43,380 --> 01:24:46,399
+Tek isim kullanmamış ama anlaşılsın diye söylüyorum.
+
+342
+01:24:47,200 --> 01:24:50,399
+Şuraya şöyle bir şey daha ekliyor onu.
+
+343
+01:24:50,960 --> 01:24:52,539
+Intro eşittir.
+
+344
+01:24:52,539 --> 01:25:02,940
+Intro galeride bulunan araçların plakaları diyelim.
+
+345
+01:25:04,435 --> 01:25:07,075
+Yeni bir satıra inmiş olun.
+
+346
+01:25:07,475 --> 01:25:11,235
+Burada işte o teker teker plakaları yazabiliriz.
+
+347
+01:25:11,235 --> 01:25:13,255
+cars.get
+
+348
+01:25:14,547 --> 01:25:40,707
+Get Plate ile şu araçlar üstüne kayıtlı şeklinde söyleyebiliriz. Hatta daha böyle capcaplı bu işi yapmak istiyorsak şöyle doğrudur. Neyse, counterman, sayalım falan diyecektim de hiç saymaya gerek yok. Plakaları teker teker yazmış olsun. Bunun da introduce serfini görmüş olduk.
+
+349
+01:25:42,547 --> 01:25:44,487
+için kendisi otomatik eklemişti.
+
+350
+01:25:45,108 --> 01:25:46,347
+Galeri 10 lira hiçbir yerde
+
+351
+01:25:46,347 --> 01:25:47,547
+kullanmamıştık.
+
+352
+01:25:48,087 --> 01:25:49,527
+Şurada set ediyoruz şimdi.
+
+353
+01:25:50,148 --> 01:25:50,728
+Tamam.
+
+354
+01:25:52,068 --> 01:25:52,867
+Bu.
+
+355
+01:25:53,439 --> 01:26:11,340
+Yani person'ı, car'ı ve galeri'yi bu şekilde tamamlamış olduk. Main program içerisinde. Şimdi biraz araba yapıp, biraz kişi yapıp onları üzerine çeşitli arabalar alıp satma işlemini gerçekleştiriyor olacağız. Buraya kadar sorusu olan var mı diye önce bir sorayım.
+
+356
+01:26:13,479 --> 01:26:20,379
+Yok. Güzel. Şimdi birkaç tane person oluşturalım. Kişi bir. Nil.
+
+357
+01:26:20,815 --> 01:26:38,655
+Hemen zaten metodu var, adı var. Haydar, Osman olmuş olsun. Osman. Ama üç tane kişimiz olmuş olsun. Birisi galeri sahibi olur. Diğerleri işte üzerlerine araba koyduğumuz kişiler olmuş olur.
+
+358
+01:26:38,655 --> 01:26:46,995
+New, person, moalla, tetik.
+
+359
+01:26:47,279 --> 01:27:13,119
+Yani sallıyorum üstünde, o kadar bir anlamı. Person, kişi, 3 dediğimizde ise, person, ne olsun, deniz, uzak, bil. Mesela 3 tane gördüğünüz gibi kişimiz var. Şimdi birkaç tane de araba sınıfından, araba nesnesi oluşturuyor olalım. Araba, 1.
+
+360
+01:27:13,716 --> 01:27:19,176
+New Constructor'ı, Constructor'ını çağıracağız.
+
+361
+01:27:19,936 --> 01:27:24,216
+Bir plakayı veriyoruz, bir de kişiyi vereceğiz.
+
+362
+01:27:24,736 --> 01:27:27,976
+Mesela kişi birin üzerine kayıtlı, ne olsun?
+
+363
+01:27:28,176 --> 01:27:38,256
+34, T, Y, U, 12, 43 gibi işte bir plakası olmuş olsun.
+
+364
+01:27:39,096 --> 01:27:40,896
+Şunları hızlı olması adına.
+
+365
+01:27:42,228 --> 01:27:47,988
+Araba 2, 3, 4 diye şöyle gitsin.
+
+366
+01:27:50,268 --> 01:27:54,048
+4, 5, 6 tane arabamız olmuş olsun.
+
+367
+01:27:54,587 --> 01:27:58,667
+Bir kısmı Bursa'dan olmuş olsun.
+
+368
+01:28:01,468 --> 01:28:05,927
+Yani değiştirmeyin bir kere kadar. Sadece başlarını değiştireyim farklı yerlerden olsun.
+
+369
+01:28:06,587 --> 01:28:07,347
+İzmir olsun.
+
+370
+01:28:07,855 --> 01:28:29,576
+Ankara olmuş olsun, Kocaeli olsun, Yavalı olsun gibi. Şuna bir tane daha şey koyalım da aklı olacak anlaşılsın. Şimdi her birisini de tabii aynı kişiye atamayayım burada. 2, 2, 3, 3 olmuş olsun. Yani her birinin ikişer tane arabası var.
+
+371
+01:28:29,855 --> 01:28:57,855
+Şimdi bunlardan birisi tabii ki galeri sahibi. Galeri sahibinin üzerine olan arabalar, hatta deniz denilen kişi galerinin sahibi olmuş olsun. Galeriyi de konstat edelim birazdan. Onun üzerine olan arabaları galerinin içerisine kaydedebileceğimiz gibi oradan direkt galeriye kaydettiğimizde o kişinin aslında bir tüzel kişiliği olması gerekiyor. Orada lojiyi biraz kendimize göre yorumlayalım. Tam çünkü güzel kurgulanma.
+
+372
+01:28:57,855 --> 01:29:23,395
+Olabilir belki şey tarafında. Burada constructor da aynen onu yazıyoruz. Bir galerimiz olacak. Adı da The Galeri olmuş olsun. New Galeri Constructor'ı, galerinin ismi Super Galeri olmuş olsun. Sahilde 3 numaralı kişi olmuş olsun.
+
+373
+01:29:23,712 --> 01:29:49,891
+Şimdi şu perspektiften bakıldığında mesela unuttuğum şeylerden birisi aklıma geliyor. Hani daha önceki geçen haftaki örnekte yapmıştık. Şimdi bir tane şurada ArrayList sınıfından bir cars var. Bunun ilklendirilmesi lazım. Ne zaman ilklendirilmesi lazım? İşte bu galerinin içerisinde onu yapmamız gerekiyor ki olayı kurtarabilelim. ArrayList car.
+
+374
+01:29:50,515 --> 01:29:51,235
+Java var.
+
+375
+01:29:53,235 --> 01:29:56,575
+ArrayList olarak itlendirdi.
+
+376
+01:29:56,815 --> 01:29:58,355
+Ama artık card'a itlendirdi.
+
+377
+01:29:58,456 --> 01:29:59,975
+İlklendirmeden...
+
+378
+01:30:00,000 --> 01:30:06,300
+anahtar sözcüğüyle içerisine eklemesin ve şunu bunu yapamayacağımız bir durumla karşılaşabiliriz.
+
+379
+01:30:06,380 --> 01:30:14,060
+Şimdi galerinin, arabaların falan çeşitli ne denir ona? Artık attribütleri var. Bunları kullanabiliriz.
+
+380
+01:30:14,200 --> 01:30:28,000
+Mesela galerinin etkar diye bir attribütü söz konusu. O attribütün içerisine ben şu an yazacağım şey işte mesela araba beşi kaydedim.
+
+381
+01:30:28,000 --> 01:30:55,960
+Bu galeriye araba dördü veya araba altıyı kaybedeyim. Şimdi burada şöyle bir lojik var aslında. Yani galeri sizin ne güzel bir şekilde daha güzel kafanıza canlansın diye ben de düşünerek yorum yapıyorum. Ben olsam nasıl kurgularım bu işi? Galeri devlet açısından bakan güzel bir kişilik yani bir dükkan. Orada bulunan çeşitli nedeni.
+
+382
+01:30:56,000 --> 01:30:58,120
+Onun bir sahibi olabilir, okey.
+
+383
+01:30:58,720 --> 01:31:02,360
+Sahibinin kendi arabası olabilir, galeride satacağı arabalar olabilir.
+
+384
+01:31:02,500 --> 01:31:05,180
+Bu ikisinin birbirinden normalde temelde farklı şeyler.
+
+385
+01:31:05,180 --> 01:31:10,040
+O yüzden şimdi biz bir araba oluşturduğumuzda muhakkak sahibi oluyor.
+
+386
+01:31:10,804 --> 01:31:34,944
+Değil mi? Bu sahibinin burada mesela 3 bizim galerimizin de sahibi bu ama bence lojik olarak şöyle olması lazım. Her ne kadar UML'den bunu çıkaramıyorsak. UML böyle yaptı, okey böyle yapıyorum. Ama lojik olarak şöyle olması lazım. Ben bu araba beşi galeriye eklediğimde bu sahibinin artık galeri olması lazım.
+
+387
+01:31:35,188 --> 01:32:03,188
+Yani bir de galeri diye bir kişiniz olması gerekiyor. Onun üzerine eklenmesi gerekiyor. İsterseniz onu yapalım. Ya da bu alan kişi kısmına bir arabayı oluşturmak için kişisini boş bırakamıyoruz. Muhakkak dolu olması lazım. Yani arabayı oluştururken kişiyi atamamız gerekiyor. Galeri diye bir kişi oluşturup onun üzerine kaydedilmez. Ya da galeriye kaydettiğimizde...
+
+388
+01:32:03,188 --> 01:32:09,388
+yani etkarı kullandığımızda bunun kişisi galeri olarak set edilebilir.
+
+389
+01:32:10,308 --> 01:32:12,548
+Demek ki sizden anlatabildim mi bilmiyorum ama.
+
+390
+01:32:13,048 --> 01:32:14,528
+Şöyle ki, şöyle ki.
+
+391
+01:32:16,248 --> 01:32:17,268
+Aaa, nerede o?
+
+392
+01:32:17,788 --> 01:32:18,328
+Etkar.
+
+393
+01:32:18,728 --> 01:32:20,128
+Şu şekilde ekliyoruz ya.
+
+394
+01:32:20,667 --> 01:32:23,667
+Bir arabayı başarılı bir şekilde ekleyebilsem sayısı artıyordu.
+
+395
+01:32:23,667 --> 01:32:30,788
+O arabanın sahibini şöyle, ekarın.
+
+396
+01:32:31,956 --> 01:32:55,935
+sahibi, yani set, owner, galerinin sahibi olacak şekilde bence güncellenmesi gerekir, hoş olur. Yoksa yani şey değişiyor olacak. Nasıl söyleyelim? Lojik değişiyor olacak. Fakat şimdi bunu burada yaptığımız durumda şöyle lojiğine yine olayım güzel bakalım.
+
+397
+01:32:59,956 --> 01:33:19,692
+kodu ile beraber, evet, sahibini galeri sahibi olarak değiştirdim arabanı. Burada eklemeye çalıştım. Yani, ArrayList doldu, bir şeyler oldu, şu bu, ekleyemedim, false oldu. Yani, bir şekilde hukumsal bir engel çıktı diyelim. Bu arabayı galeriye ekleyemedim. Lütfen, false döndü. Eee, galeri...
+
+398
+01:33:19,891 --> 01:33:43,912
+Sahibi olarak da galericiyi değiştirmiştim. Nasıl olacak? Böyle bir durumda. Ona bakmamız lazım. Pekala şöyle yapsam nasıl olur? Bunu şuraya koysam nasıl olur? Zaten bu geçici bir değişkenli. Ben bir önceki sahibi üzerinden ekledim. True'a döndü. Ondan sonra onun sahibini böyle güncelleyebilir miyim?
+
+399
+01:33:44,243 --> 01:34:12,243
+Bu da bir soru işareti. Şurada başka bir şeyler yapmamız gerekecek gibi hissediyorum ben. Evet, sizin de kafanızda canlanan şey ekledikten sonra sahibinin de güncellenmesi lazım. Ya da bir önceki sahibine tekrardan set edilebilecek bir yapı kurmamız lazım. Temp değişkeni alacaksın. False'tayken ona set edecek. Ona bir bakalım isterseniz. Nasıl da olabilir? En nihayetinde ben bu arabayı bu listeye ekledim.
+
+400
+01:34:12,243 --> 01:34:26,663
+Okey. O arabayı bulup onun sahibini değiştirmem lazım. Yani cars'ın içerisinde mesela get ile obje arayabiliyor muyum? Arayan adını gördüm. İndeksini illa bulmam gerekiyor.
+
+401
+01:34:34,100 --> 01:34:44,980
+Cars desem, o arabayı bulsam, ardından bunun set owner'ını, Galerie owner olarak, acaba böyle mi eklemem lazım?
+
+402
+01:34:45,320 --> 01:34:47,020
+Hocam, Cars bir dizi değil miydi?
+
+403
+01:34:47,860 --> 01:34:49,340
+Cars ve ArrayList, evet.
+
+404
+01:34:49,840 --> 01:34:52,440
+Index of'un içine direkt şey attık ya tamamını.
+
+405
+01:34:53,920 --> 01:34:55,600
+Çok özür diliyorum, şurası kar olacak.
+
+406
+01:34:56,300 --> 01:34:57,260
+Yo, e-kar olacak.
+
+407
+01:34:57,844 --> 01:35:11,304
+O kaldı, tamam. Teşekkür ediyoruz. Şimdi bu Kars dizisinin içerisindeki Ekar'ın kaçıncı indekste olduğunu buluyoruz. Şurada ekleyebildiğimize göre bulmuşuzdur.
+
+408
+01:35:11,699 --> 01:35:30,079
+Kaçıncı indekste olduğunu buluyoruz. Bulduktan sonra o indeksteki arabanın set onlarını galeri onları olarak değiştiriyorum. Yani şununla şunun arasındaki fark anlaşıldığımı bilmiyorum. Siz de böyle deneyip ikisini de çalıştırırsanız bir sonuç elde edeceksiniz. Güzel olacaktır.
+
+409
+01:35:39,699 --> 01:36:05,359
+eklesen bu sefer sahibi değişiyor olacak. Hakikaten değişiyor mu? Onlara bir bakıyor olalım. Bir tane daha orada ekleyelim galeriye. Bir de dörde ekleyelim. İki, dört, altı galeriye eklenmiş olsun. Diğerlerinde bir ekstradan kullanırız. Şimdi bir kişinin introdüsel şeyini çalıştıralım. Bakalım neler söylüyor olacak.
+
+410
+01:36:08,756 --> 01:36:28,056
+Pardon, neydi? Introduce Set metodunu çağırdığında geriye string bir değer döndürüyordu. Şuradan bakılacağı bölgeye. Geriye string bir değer döndürüyor. Hiç arabası olmayan birisi de olsun aslında. O da güzel olur. Bir dördüncü kişiye ekleyelim. Onun da hiç arabası olmaz. Mesela o da arabam yok diye kendisini tanıca.
+
+411
+01:36:30,816 --> 01:36:31,416
+Uzay.
+
+412
+01:36:32,212 --> 01:36:41,552
+Çelik olmuş olsun. Mesela önce kişi 4 kendisini tanıtsın. Kişi 4'ün üzerine herhangi bir arabasının olmadığını görüyor olalım.
+
+413
+01:36:42,484 --> 01:36:45,704
+Geriye string değer döndürüyor.
+
+414
+01:36:45,864 --> 01:36:48,064
+Onu da ekrana yazmak için bir tarz bir şey yapmam lazım.
+
+415
+01:36:48,624 --> 01:36:49,264
+Çalıştıralım.
+
+416
+01:36:49,804 --> 01:36:52,164
+Hatalarımız varsa onları görmüş olalım.
+
+417
+01:36:52,264 --> 01:36:54,264
+Merhaba benim adım İzay Çelik Araban Yol.
+
+418
+01:36:54,644 --> 01:36:59,423
+Pekala biraz mesela hani şurada bir boşluk bıraksam daha şık görünecekmiş.
+
+419
+01:36:59,804 --> 01:37:01,104
+Noktadan sonra boşluk olur.
+
+420
+01:37:01,204 --> 01:37:03,084
+Bunlara da muhakkak dikkat etmeniz lazım.
+
+421
+01:37:03,664 --> 01:37:07,304
+Belki BBG derslerinde hocalarımız söylüyor defaatle anlatıyorlar size.
+
+422
+01:37:07,304 --> 01:37:09,304
+Ama bir programın...
+
+423
+01:37:10,484 --> 01:37:21,123
+Kullanıcı tarafından gözle okuyup değerlendirilecekse muhakkak Türkçe kurallarına dikkat ederek veya noktalama işaretlerine dikkat ederek yazılması lazım.
+
+424
+01:37:21,583 --> 01:37:27,123
+Onları da ekstradan vurgulamış. Yani devrik cümle kullanmadan ifade etmek gerekiyor.
+
+425
+01:37:27,503 --> 01:37:34,344
+Karşı tarafın kafasında tam güzel şekilde anlaşılacak şekilde teknik terimlerden de uzak.
+
+426
+01:37:34,344 --> 01:37:37,884
+Çünkü kullanan kişi hiç galeri sahibi bu programı kullanacak.
+
+427
+01:37:38,484 --> 01:37:53,403
+İşte şöyle bir uyarı vermeniz doğru olmayacaktır. Yani constructorını çağırmadığımız için şu an burada bu macazı çağıramıyorum diye ekrana uyarı yazmanın bir mantık yok. Bu ancak bir bak etmek için bir programcının yazması beklenen şeydir.
+
+428
+01:37:55,543 --> 01:37:57,823
+Biri çağırıyor olalım.
+
+429
+01:37:59,412 --> 01:38:04,051
+Şimdi kişi 1'e bakıyor olalım. Kişi 1, şurada görüyorsunuz.
+
+430
+01:38:04,492 --> 01:38:10,572
+Şimdi bu kişinin temelde bir problem olduğunu buradan hemen anlıyorsunuzdur diye düşünüyorum.
+
+431
+01:38:11,051 --> 01:38:13,351
+Bu kişinin temelde iki tane arabası var.
+
+432
+01:38:14,831 --> 01:38:22,511
+Neydi? Bu arabaların konstraktörünün içerisinde, gidelim, bakın hani lojik olarak nasıl yaptığımız bir şey görüyorum.
+
+433
+01:38:23,231 --> 01:38:26,912
+Konstraktörünün içerisinde arabaları oluşturuyorum. Konstrakt ediyorum.
+
+434
+01:38:27,359 --> 01:38:34,019
+Ama bu person'ın set car metodu çağırarak o person'a o araba atanmamış oluyor.
+
+435
+01:38:35,059 --> 01:38:37,300
+Anlatabildim mi problemi burada bilmiyorum ama.
+
+436
+01:38:37,659 --> 01:38:38,739
+Şimdi tekrar söyleyelim.
+
+437
+01:38:39,099 --> 01:38:40,500
+Bir tane kişi oluşturduk.
+
+438
+01:38:40,500 --> 01:38:40,739
+Şu.
+
+439
+01:38:41,199 --> 01:38:58,399
+Bir tane de araba oluşturduk. Araba oluştururken kişiyi söylüyoruz. Yani burada geçen hafta söylediğimiz şey problemi var. Association'ın çift yönlü olduğu durumda biraz daha işler karmaşık olduğunu söylemiştik. O karmaşıklığı bizim kontrol etmemiz gerekiyor.
+
+440
+01:38:58,676 --> 01:39:09,456
+Normalde hani beklenen şey nedir? Ben yeni bir araba oluşturduğumda bunun sahibi de o kişi olarak set edilmesi lazım.
+
+441
+01:39:10,536 --> 01:39:16,676
+Bakalım geliyoruz. Car, yeni bir araba oluşturduğunda yapılacak şey ne?
+
+442
+01:39:17,176 --> 01:39:25,376
+Bu kişinin, onların set car metoduyla bu arabayı set etmemiz lazım.
+
+443
+01:39:27,123 --> 01:39:28,344
+Böyle olur mu acaba?
+
+444
+01:39:30,823 --> 01:39:34,384
+Düşündürücü. Acaba burada mı yapmam lazım? Bu şekilde olur mu?
+
+445
+01:39:34,983 --> 01:39:39,563
+Ya da bu şekilde olmaz gibi geliyorsa mesela şunu.
+
+446
+01:39:40,183 --> 01:39:41,344
+Lütfen bunları test edin.
+
+447
+01:39:41,344 --> 01:39:47,623
+Bakın. Şunu mesela şurada yapsam muhtemelen kafanıza daha fazla anlaşılır olacak bu.
+
+448
+01:39:48,243 --> 01:39:52,384
+Ben kişi bir ondan sonra set car dedim.
+
+449
+01:39:52,844 --> 01:39:54,723
+Araba biri de buna set et.
+
+450
+01:39:56,595 --> 01:40:12,355
+Yani bu zannımca kafanızda oturuyordur diye düşünüyorum. Tamam, onu da onu set edelim. Ama burada mı yapmam lazım yoksa arabanın setarında mı yapmam lazım? Bakıldığında yani burada yapmak çift yönlü ilişkilerde hep gözden kaçacaktır.
+
+451
+01:40:12,916 --> 01:40:40,916
+diye düşünüyorum. Kaçırmayabilirsiniz. Tabi ki programların dikkatliyle alakalı en nihayetinde bu durum. Kaçırmayabilirsiniz ama gözden kaçmaya çok müsait. Ve teker teker şunu yapmak lazım. Tüm artık kişiler için burada bunu eklemeniz lazım. Yani çok logical bir şey gibi de durmuyor. Constructor'ın içerisinde yapmamız tabi ki daha mantıklı olacak bu işi. Geçen hafta slide'larında
+
+452
+01:40:40,916 --> 01:40:56,456
+Ona dair de çeşitli örnekler vardır. Onu bir gözden geçirin. Az önce yazdığım gibi diğer tarafa seterle koyduğunuzda diz yazarak onu o arabaya atayabilecek misiniz? Size ödev olmuş olsun. Lütfen ona bir bakın.
+
+453
+01:40:56,456 --> 01:41:05,355
+Şimdi böyle çalıştırsam pekala, kaçıncı kişiye bakıyorduk ki? Birinci kişi Haydar Osman'ın arabası olacak.
+
+454
+01:41:09,427 --> 01:41:34,207
+Tamam, bir arabam var. O arabam olduğu kısmı da şöyle bir boşluk bırakalım. Tekrar çalıştıralım. Bakın dikkat etmekte. Arabam var. Plakanın nasıl şu? Şimdi bir kişinin kaç tane arabası olabilir? Onu da UML'den bakıyoruz. Tamam mı? Bir kişinin sıfır veya bir tane arabası olabiliyormuş.
+
+455
+01:41:34,355 --> 01:41:51,655
+Biz biraz Loji'yimizi yanlış kurmuşuz yani. Şurada. Ben Loji'yi yanlış kurmuşuz yani şurada atama konusunda çok fazla araba yapmışız. Yani bir kişinin bir tane arabası olabiliyorsa ben de o zaman şunları bir sileyim. Hop uçurdum. Şu ikiyi de uçuralım.
+
+456
+01:41:51,923 --> 01:41:55,503
+Biri de uçalım. Tamam. Şimdi daha marklı olmuş oldu.
+
+457
+01:41:55,903 --> 01:41:58,304
+Ama artık araba 3-5, bir 3-5'im var.
+
+458
+01:41:58,764 --> 01:42:03,363
+Şunları da tekrardan değiştirelim. Kaç olsun? Bir olsun, üç olsun.
+
+459
+01:42:06,604 --> 01:42:10,043
+Dördüncü kişiyi de, bunu nerede kullandım bilmiyorum. Neyse, şimdilik dursun.
+
+460
+01:42:10,403 --> 01:42:13,983
+Yani o lojiyi bakın, ben de kaçarım. Şimdi işinin bir tane arabası olacak.
+
+461
+01:42:14,484 --> 01:42:40,163
+Hıh acaba bunu kontrol de etmemiz gerekir mi? Ama sorulardan birisi de bu. Bence gerekir. Yani yapılması gereken şey nedir aslında? Bunun setcar metodunun içerisinde bunun herhangi bir şekilde arabası var mı yok mu getcarla kontrol edip varsa bu kişinin arabası var ekleyemiyorum diye uyarı vermek daha doğru olacaktır. Yani sadece setrı yazıp geçmemek gerekiyor. Çok basit. Yani if.
+
+462
+01:42:40,948 --> 01:42:50,948
+get car, o kişiye aydın çünkü bu metodu. Size döndüreceği şey bir car. Eğer ki ne olsa...
+
+463
+01:42:51,699 --> 01:43:08,380
+Ama bu arabayı ilklendir değilse bir uyarı verebilir, bir şeyler döndürebilir. Yani bu setter metodunu ona göre ya ekranın bir şey yazabilir ya şurada void değil de boolean bir değer döndürebilirsin. Bir şeyler döndürebilirsin. Bir şekillendirmenin lazım kendinize.
+
+464
+01:43:08,380 --> 01:43:19,699
+Void diye yazdığı için ben üzerine gitmiyorum ama sizin gitmenizi tavsiye ederim kurcalarken bu programı. Şimdi geldik tekrardan olaya bakıyoruz. Bir araba...
+
+465
+01:43:19,699 --> 01:43:23,640
+2 arabam var, 3 arabam var, galerim var. 2 tanesini de galeriye ekledim.
+
+466
+01:43:23,980 --> 01:43:30,980
+Birinci kişinin şu an kaç tane arabası, birinci kişi tanıttığında benim üzerime araba var diyecek mi?
+
+467
+01:43:31,380 --> 01:43:37,239
+Dedim. Şu, 34'te başlayan araba benim üzerime var dedim.
+
+468
+01:43:38,159 --> 01:43:43,400
+Şimdi burada bir problem var mı? Yoksa her şey olması gerektiği gibi mi?
+
+469
+01:43:43,760 --> 01:43:46,420
+Yorum yapacak arkadaşımız var mı? Öncelikle onu bir sorayım.
+
+470
+01:43:53,363 --> 01:44:21,039
+Evet, problemi olduğunu düşünen arkadaşımız var mı? Yok. Bu sessizlik problem yok. Her şey güzel demek. Ama ben size bir problem söyleyeyim o zaman. Madem yok, siz bir bakın. Şimdi bunu şu satırda yazmakla şu satırda yazmak arasında bir fark olması lazım. Yani ikisini de çalıştırayım. Bakın nasıl çalıştığını bir görün. İkisi de aynı şeyi söylüyor. Fakat...
+
+471
+01:44:21,039 --> 01:44:27,360
+Araba 1 özelinde konuşuyorum. Onu bir galeriye eklemişim ben.
+
+472
+01:44:28,595 --> 01:44:49,475
+Galeriye eklemişim ve dönüp galerinin etkar metoduna bakıldığında onun sahibini de aslında değiştiriyorum. Yani sahibini de başka birisi yapacağım. Kim yapacağım? Galerinin sahibi. Galerinin sahibi kimdi? Kişi 3. Yani bu kişinin üzerine burada araba varken şurada hala daha araba olmasını gerekiyor.
+
+473
+01:44:50,355 --> 01:44:54,175
+Sorun değil gibi görüyorsanız o zaman size öderim tekrardan.
+
+474
+01:44:54,635 --> 01:44:58,715
+Ben, Java'ya bir sorun. Ona dikkat etmemiz gerekiyor. O kanaat değil.
+
+475
+01:44:59,095 --> 01:45:03,795
+Şimdi mesela arabanın introduysel metotlarını çalıştıralım.
+
+476
+01:45:04,795 --> 01:45:06,895
+Neler diyecek? Onu görüyoruz.
+
+477
+01:45:07,575 --> 01:45:10,015
+İşte merhaba ben bir arabayım. Plakanı var mı bu?
+
+478
+01:45:10,015 --> 01:45:13,835
+Sahibimin ismi Deniz Uzak Gelin.
+
+479
+01:45:14,875 --> 01:45:16,015
+Allah Allah.
+
+480
+01:45:16,500 --> 01:45:43,000
+Nasıl oldu? Şimdi burada da sanki bir gariplik söz konusu. Değil mi? Yani bu araba Haydar Osman'ındı. İşte şu plaka, o 34'te baktığım plaka Haydar Osman'ındı. Ama burada benim sahibim Deniz Uzakgil diyor. Şunu şurada çalıştırsam pekala ne diyecek acaba? Bakın çalıştırıyorum. Burada çalıştırınca Haydar Osman diyor. Pekala burada çalıştırınca niye böyle diyor?
+
+481
+01:45:44,020 --> 01:45:45,560
+Bakın, deniz uzak gelir.
+
+482
+01:45:46,440 --> 01:45:51,400
+İşte Edgar kısmında yaptığımız şurada, galeride bir trik var.
+
+483
+01:45:51,659 --> 01:45:52,859
+O bunların da değiştiriyoruz.
+
+484
+01:45:53,199 --> 01:45:57,699
+Ama person'ın içerisinde onun sahip olduğu araba bilgisini de değiştirmemiz lazım.
+
+485
+01:45:58,560 --> 01:46:01,000
+Yani problemi inşallah anlayabiliyorsunuzdur burada.
+
+486
+01:46:02,220 --> 01:46:04,600
+Bir düzenleme yaptık şurada.
+
+487
+01:46:05,319 --> 01:46:07,680
+Bir tane daha düzenleme yapmamız lazım.
+
+488
+01:46:08,532 --> 01:46:21,912
+Hocam, Akar üzerinden sahibini çağırıp oradan da nul değişkeni atabilir miyiz? Hani şimdi galeriyi verdiğimize göre artık sahibinin bir arabası olmaması gerek. Öyle bir şey yapabilir miyiz?
+
+489
+01:46:22,355 --> 01:46:23,515
+Burada mı? Yapalım.
+
+490
+01:46:23,795 --> 01:46:24,475
+Şeyde.
+
+491
+01:46:25,496 --> 01:46:26,615
+Tamam.
+
+492
+01:46:26,615 --> 01:46:27,195
+Okulu diyorum.
+
+493
+01:46:27,195 --> 01:46:29,456
+Şurada bir şeyler yapmanız lazım.
+
+494
+01:46:29,715 --> 01:46:30,956
+Tamam mı? Yani onu demek istiyorum.
+
+495
+01:46:31,355 --> 01:46:34,235
+Burada bir şeyler yapmamız gerekiyor.
+
+496
+01:46:34,435 --> 01:46:38,615
+O top sizde. Hani hiç sorun yok gibi bakıp bakıp baktınız ya. Onun için söylüyorum.
+
+497
+01:46:39,076 --> 01:46:42,235
+O top sizde. Lütfen şuraya bir satır ekleyeceksiniz. Çok basit bir satır.
+
+498
+01:46:42,715 --> 01:46:45,255
+Kafanızda canlansın diye size bırakıyorum.
+
+499
+01:46:45,635 --> 01:46:47,255
+Hani şu kısmı ben yapmış oldum.
+
+500
+01:46:47,735 --> 01:46:50,355
+Lakin dikkat edilecek hususlardan bir...
+
+501
+01:46:50,355 --> 01:46:57,355
+Bakın bunu kullanarak sahibini değiştirebildim. Buradan onu görebiliyorum.
+
+502
+01:46:57,615 --> 01:47:02,576
+Aha yapabilir miyim acaba gidip oraya kullandığımızda bakalım dediğimde anlaşılır demiştim.
+
+503
+01:47:02,935 --> 01:47:11,175
+Bunu kullandığımda yapabildiğimizi görmüş olduk. Başka ne yazık? Ha, Galerie'yi introducer yaptıralım.
+
+504
+01:47:11,315 --> 01:47:16,536
+Onun da bir introducer kısmı vardı. Bir de o yapsın bakalım ne yazacak.
+
+505
+01:47:18,452 --> 01:47:43,083
+Merhaba, ben bir galeriyim. Galerimde toplam iki tane araç satışı yazdım. Galerimde bulunan araçların plakaları. Onu da nerede yazmıştık? Bakalım. Galerinin introduce self mesajında. Ben bir galeriyim. Bu, bu, bu, bu. Ondan sonra da galerde bulunan araçların plakaları şu. Burada tabii bunu yapmamız lazım. Niye böyle yapmışım bilmiyorum. O araçlarım benim de kapağım sarkıydı.
+
+506
+01:47:43,188 --> 01:48:08,367
+İntro artı diyelim ki sırası düzgün olmuş olsun. Çünkü bu geriye bir şey döndürüyor en nihayetinde. Şimdi çalıştığımızda artık doğru sıra doğru yetiyor. Ama bakın bir sıra alta geçmesini bekliyordum. Alta geçmediği için de bunu buraya ekledikten sonra şuralara bir yere bir yeni satır şeyi atarsak.
+
+507
+01:48:11,188 --> 01:48:25,887
+O regexlerin tamamını kullandığımızda yazdırırken regexlere göre yazdırıyor olacak. Bakın galeriye kayıtlı iki tane var. Hakikaten önemli. Bu var. 41'e eklemedik bu galeriye. Eklemişiz. Mesela onu da ekleyelim. Ulan üç tane arabası olduğunu göreceğiz.
+
+508
+01:48:29,487 --> 01:48:37,567
+Üç tane arabam var. Arabaların perspektifinden tekrar söylüyorum. Arabaların perspektifinden baktığımızda
+
+509
+01:48:37,652 --> 01:48:45,791
+Olayı görebiliyoruz. Yani bakın bu 3 numaralı araba değil de, evet 3 numaralı arabanın sahibi kişi 2 idi. Kişi 2 idi muhalla tetik.
+
+510
+01:48:46,355 --> 01:49:10,135
+Ama daha sonra ben bunu galeriye sattığımda sahibinin ismi galeri sahibinin ismi olarak değişmiş oldu. Hatta galeri sahibi de dört olsun. Hiç üzerine araba kayıtlı olmayan birisi olmuş olsun. Galeri sahibinin üzerine geçmiş oldu. Fakat o kişiden de silmemiz lazım. Oradaki topta sizde olunca ufak bir satır yerine siz arkadaşımın bir kısmını söyledi zaten.
+
+511
+01:49:11,728 --> 01:49:15,528
+Evet, başka yazacağımız bir şey var mı? Yok.
+
+512
+01:49:15,927 --> 01:49:18,967
+Kabaca böyle. Bu noktada soru soran arkadaşımız var mı?
+
+513
+01:49:23,380 --> 01:49:24,319
+Yok, güzel.
+
+514
+01:49:24,639 --> 01:49:25,899
+Hocam ben bir şey sorabilir miyim?
+
+515
+01:49:25,979 --> 01:49:26,519
+Tabii, buyurun.
+
+516
+01:49:27,300 --> 01:49:29,800
+Hocam ben null değerini set edebilir miyim?
+
+517
+01:49:30,279 --> 01:49:32,119
+Hani set get metotları yazdık ya mesela.
+
+518
+01:49:32,659 --> 01:49:35,880
+O değerinin içinde null yazsam kabul ediyor mu?
+
+519
+01:49:35,880 --> 01:49:36,979
+Yalan.
+
+520
+01:49:37,619 --> 01:49:59,579
+Yani set etmek için temelde nul kullanılan bir şey değil. Yani hani o setsizlik olmuş olur o zaman. Yani set etmek kavramıyla doğrudan eşleşen bir şey değil. Fakat demek istediğin şey yani bir kişiye ben nasıl söyleyeyim bu kişiye set karla araba atadım ve bu arabayı bunun üzerinden çıkartmak istiyorum. Çünkü
+
+521
+01:50:00,000 --> 01:50:10,960
+Remove Car diye bakın bir şeyi yok yani. Set Car ile şuraya direkt parametre olarak nul vermeyi kast ediyorsun sen değil mi? Set etmekten kast ediyorsun. Evet hocam, aynen. Muhtemelen yapacaksın. Bir dene.
+
+522
+01:50:11,311 --> 01:50:39,311
+Nasıl sonuçlar verecek bir dene muhakkabı mı? Çünkü o kişi üzerinden silmemiz gerekiyor. Null, null, nasıl okursanız, null bir obje aynı zamanda burada. Obje olduğu için objelerin içerisine atama yapabiliyorsunuz. Tipsiz bir obje. Her obje null değerini alabiliyor yani. Siz ilklendirmediğiniz zaman zaten null değerine sahip. İlklendirmediğiniz durumda null değerine sahipse karşınıza çıkın.
+
+523
+01:50:39,311 --> 01:51:03,491
+JkTay'da null point'in exemption onu da söylemiş olalım. Mesela şunu yapmasak nasıl bir hata olurduk onu da deneyim. Bunları biraz sizin kurcana kadar. Mesela şu şurada olmasa ne olacak? Anlatabiliyor muyum? Ben yazıyorum bazı şeyler güzel oluyor hata olursa ben düzeltiyorum falan ama lütfen siz de biraz bu işlere kafa yorum bakın. Yazmadan, pratik yapmadan anlaşılabilecek şeyler değil.
+
+524
+01:51:05,011 --> 01:51:06,952
+Başka soru soran arkadaşımız var mı?
+
+525
+01:51:10,515 --> 01:51:18,795
+Şimdi ben şurada şeyi gördüm. Aslında bu derse devam edecektim, hazırlandım ama şöyle bir durum var.
+
+526
+01:51:20,180 --> 01:51:43,980
+Kalıtım anlatacağım ben. Şimdi dersim kalan kısımda. Fakat kalıtım bizim Müsvü Zerat'ta 6. hafta. Yani önümüzdeki hafta değil sonraki hafta. Şimdi bugün kalıtım anlatmaya başlarsam baya önden gitmiş olacağız. O yüzden ara veriyorum bu noktada derse. Önümüzdeki hafta artık kalıtımla o zaman başlıyor. Bu hafta burada böylece bitirmiş oldu.
+
+527
+01:51:44,372 --> 01:51:49,612
+Haftaya ilişkilerde kalıtım ilişkisiyle beraber başlamış oluyoruz.
+
+528
+01:51:51,392 --> 01:51:54,972
+Evet, kendinize iyi bakın diyorum. Sağlıcakla kalın. Haftaya görüşürüz.
+
+529
+01:51:55,792 --> 01:51:58,092
+İyi günler hocam.

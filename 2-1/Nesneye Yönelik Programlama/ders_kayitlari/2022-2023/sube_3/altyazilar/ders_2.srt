@@ -1,0 +1,2067 @@
+1
+00:01:11,924 --> 00:01:33,804
+Evet, merhaba kıymetli arkadaşlar. Hepinize selamlar. Bu dönem geçen hafta yapamamıştı derslerinde. O yüzden ilk ders, Ultimate, Netten Yönelik Programlama dersi. Hepinize hayırlı olsun. İnşallah güzel bir dönem geçiririz diye ümit ediyorum. Bir slide'ı paylaşarak başlayalım lütfen.
+
+2
+00:01:41,203 --> 00:02:02,903
+Şimdi ilk dersimiz olduğu için, geçen hafta da temelde ders yapamadığımız için biraz neler şey yapıyoruz, neler yapacağız, nasıl değerlendireceğiz onlardan bahsedeyim. Ondan sonra yani ilk dersi biraz hafif geçiyorduk ama yani ilk derste daha daha bir başladığımız için bugün olabildiğince ders yapmaya çalışıyor olacağım.
+
+3
+00:02:03,668 --> 00:02:28,968
+Derslerimiz şarşamba günü 2'de başlıyor olacak. Şimdilik tüm dersler online ortamda. Kübrik Şehir'de şu an eğitimimiz yok. O belki siz de duymuşsunuzdur. Nisan ayında değişebilir diye bir durum var. Net değil. Baya soran öğrenci arkadaşımız olmuş, meyla attıdanlar olmuş. Onlara da net cevap veremedim. Hala daha bir netlik yok. Ama yani aksi bir durum.
+
+4
+00:02:29,747 --> 00:02:35,087
+İlan edinceye kadar şu an online olarak devam ediyor olacağız.
+
+5
+00:02:36,207 --> 00:02:43,108
+Duyurular için dersle ilgili benim Avesiz sayfamı takip edebilirsiniz.
+
+6
+00:02:43,108 --> 00:02:45,871
+Aynı zamanda ben...
+
+7
+00:02:45,872 --> 00:02:55,072
+Böyle ekstradan duyuru yapmak istediğimde size hızlı ulaşsın diye istediğimde OBS'den toplu mesaj gönderiyorum ders alan öğrenci arkadaşlarımıza.
+
+8
+00:02:55,732 --> 00:03:08,752
+Dersle ilgili slide'lar veya ek diğer materyaller veya işte proje ile ilgili işte duyurular paylaşacağız, laboratuvarda ilgili duyurular paylaşacağımız zaman bu ikisini de paylaşıyorum ama en çok da classroom'u kullanıyorum.
+
+9
+00:03:09,352 --> 00:03:13,592
+Bir classroom hesabımız var, sınıfımız var.
+
+10
+00:03:13,872 --> 00:03:35,292
+Burada kodunu görüyorsunuz. Aynı zamanda AVS'de orada linkini ekledim ben. Oradan da kayıt olabilirsiniz. Bu sınıfa kayıt olmanız, katılmanız veya sizin adınız da güzel olur. Proje falan vereceğiniz zaman, grupları falan oluşturmak için genellikle bilgileri oradan topluyor olacağım. Onu da burada belirtmiş olayım.
+
+11
+00:03:35,695 --> 00:03:45,975
+Genellikle dersimizi, işte Online Yıldız İl'in bizi yönlendirdiği Zoom linkinden yapıyor olacağız. Fakat üniversitenin sistemlerinde bazen sıkıntı çıkabiliyor.
+
+12
+00:03:46,479 --> 00:04:05,759
+Online YouTube'da ZDT'ye bağlanamayınca doğal olarak ister istemez Zoom linki de alamıyoruz. Böyle durumlarda benim kişisel Zoom odamı kullanıyor olacağız. Onu da o yüzden burada slide'a koyuyorum. Online YouTube'da ZDT'ye çalışmıyorsa yine dersimizi biz yaparız.
+
+13
+00:04:06,324 --> 00:04:17,104
+Aksi bir durum olmadığı sürece veya sistem kesildi bir şey oldu. Benim Zoom hesabımdan iletişime geçeceğiz. Dersleri oradan devam ediyor.
+
+14
+00:04:17,632 --> 00:04:35,091
+olacağız. Dersle ilgili veya sizin yaptığınız çeşitli projeler vardır. Bunlarla ilgili benimle görüşmek istediğiniz durumda randevu alabileceğiniz bir mekanizma var. Daha önce belki de benden ders alan arkadaşlar varsa burada onlar kullanmış olabilirler.
+
+15
+00:04:37,184 --> 00:05:05,184
+Bir Simply Book diye bir web sayfamız var. Orada oluşturduğumuz. Buradaki linkten erişebilirsiniz ona. Oradan randevu saatlerini falan tamamını görebiliyorsunuz zaten. Oradan randevu alabiliyorsunuz. E-mail'le randevu vermiyorum yani. Çünkü öte yıkılıyor. İnanılmaz karışık oluyor. Teker teker ben zamanlarını tutamıyorum. Burada benim için güzel bir planlama yapma imkanı doğuyor. Hem yüz yüze hem online olarak görüşmek istediğiniz durumda yine randevu alabilirsiniz. Bunu ama randevu yapabilirsiniz.
+
+16
+00:05:05,184 --> 00:05:10,464
+esnasında orada anlatılan direktifler ölçüsünde belirtmeniz gerekiyor.
+
+17
+00:05:12,024 --> 00:05:14,944
+Şimdi dersimiz nesneyle programlama.
+
+18
+00:05:15,891 --> 00:05:34,891
+Geçtiğimiz eğitim planımızda, bundan bir önceki eğitim planımızda bu ders iki farklı dersten oluşuyordu. Öncelikle kavramlar anlatılıyordu, sonra programlama kısmı anlatılıyordu. Daha sonra müfredat yenilenirken bu iki ders birleştirilmiş oldu.
+
+19
+00:05:34,891 --> 00:05:43,891
+Yani bu dersi anlatırken nesneye yönelik kavramların kafamızda oturması için zaman zaman bazı şeylerin tanımlarında eksikliyordu.
+
+20
+00:05:43,891 --> 00:05:47,532
+Ekstradan yapıyor olacağız. Oldukça fazla kavram var, görüyor olacaksınız.
+
+21
+00:05:48,391 --> 00:05:52,771
+Hali hazırda tekrar alan arkadaşımız yoksa, belki alanlar da olabilir, bilmiyorum.
+
+22
+00:05:53,872 --> 00:06:00,872
+Şimdiye kadar gördüğünüz, işte C gibi, Assembri gibi programlama dillerinden daha farklı bir yapısı oluyor olacak Java'nın.
+
+23
+00:06:01,300 --> 00:06:09,320
+Bu arada, onu da söylemiş olalım, Nesne Yönelik Programlama dersinde kullanacağımız Nesne Yönelik'in dil Java oluyor olacak.
+
+24
+00:06:09,880 --> 00:06:18,240
+Fakat programlama kavramları tüm object-oriented Nesne Yönelik'in programlama dilleri için aynı şekilde geçerli oluyor.
+
+25
+00:06:18,360 --> 00:06:23,620
+Çok benzerlerini de orada diğer Nesne Yönelik'in programlama dillerini de buluyor olacaksınız.
+
+26
+00:06:29,300 --> 00:06:40,520
+Nesneye Yönelik kavramları anlamamız. Hangi programlama dilini kullanırsanız kullanın bu kavramlarla işlemler yapabiliyor olmalı. Hemen beklediğimiz nokta bu.
+
+27
+00:06:42,420 --> 00:07:10,399
+Bir aksilik olmazsa iki tane sınav yapacağız. Sınavların şekillerini henüz bilmiyorum açıkçası. Yani tüm dönem online olmaya devam edecekse sınavların da tabii ki online şekilde devam ediyor olacak. Ama hani ekstradan bir duyuru falan yapılırsa sınavlar yüzde yapılacak gibi biz de size onları iletmiş oluruz. İki tane sınav yapmayı planlıyoruz. Onun haricinde herhangi bir şekilde resmi akademik tatile denk gelmiyor.
+
+28
+00:07:10,420 --> 00:07:38,340
+Programımız geri kalan haftalarımızda ders yapıyor olacağız. Bu dersin aynı zamanda bir laboratuvar var. Bununla ilgili de hepiniz bilgi sahibisinizdir diye düşünüyorum. Laboratuvarda çeşitli uygulamalar ve not alabileceğiniz laboratuvar etkinlikleri gerçekleştiriliyor olacak. Onları da zaman zaman asistan arkadaşlarımız sizleri duyuruyor olacak.
+
+29
+00:07:38,420 --> 00:07:43,300
+Belki ilk birkaç hafta biz konularda ilerleyinceye kadar çok fazla etkinlik yapmayacaklardır onlarda.
+
+30
+00:07:44,319 --> 00:07:49,620
+Lütfen asistan arkadaşlarımızın duygularını takip edin.
+
+31
+00:07:49,680 --> 00:07:53,660
+Ben de şu an tam olarak açıkçası kimler görevli bilmiyorum.
+
+32
+00:07:54,600 --> 00:07:58,259
+Önümdeki hafta belki size onları da söylemiş olurum.
+
+33
+00:07:59,252 --> 00:08:07,172
+Gördüğünüz gibi yani buradaki içerikte genellikle nesne önemli programlama dili kavramları var haftalık içeriklerde.
+
+34
+00:08:08,532 --> 00:08:14,951
+Java özelinde konuşmuyor olacağız, onu tekrardan söylüyorum. Java özelinde tüm uygulamalarımızı yapacağız.
+
+35
+00:08:15,771 --> 00:08:18,752
+Ben de sürekli kodları Java'da yazıyor olacağım.
+
+36
+00:08:19,156 --> 00:08:23,776
+Laboratuvarlar ve uygulamalarda yine Java temelli oluyor olacak.
+
+37
+00:08:23,776 --> 00:08:33,655
+Ama tüm nesne yönelikli programlama dilleri için ortak olan çeşitli kavramlardan sizlere bu ders kapsamında bahsediyor olacağız.
+
+38
+00:08:34,196 --> 00:08:50,236
+Belki C programlama dili için kullanmışsınızdır. Data'lerin Halkı Program Java kitabı yine oldukça bu işi ben güzelce kavramak istiyorum, kitaplar takip etmek istiyorum diyorsanız.
+
+39
+00:08:51,379 --> 00:08:57,000
+PDF versiyonlarına hem de kendi kitap versiyonlarına erişebilirsiniz.
+
+40
+00:08:57,000 --> 00:08:59,580
+En güzel oradan takip edebilirsiniz diye düşünüyorum.
+
+41
+00:08:59,680 --> 00:09:03,039
+Diğer tüm kaynaklarla tabii ki yararlanabilirsiniz.
+
+42
+00:09:03,572 --> 00:09:31,331
+İki tane sınavımız olacağından bahsetmiştik, ara sınav. Tabii bu dersi yine Mehmet Aktaş ve Yunus Emre Hocamla ortak veriyoruz. Böyle olunca tüm etkinliklerimiz ortak. Yani sınav yapacağımız zaman ortak sınav yapıyor olacağız. Proje vereceğimiz zaman ortak proje veriyor olacağız. Yani şimdi yine bu şekilde planladık. Aksi bir durum gerçekleşirse sizlere bu konuda yine bilgilendiriyor oluruz.
+
+43
+00:09:31,572 --> 00:09:36,395
+Yine bir proje vermeyi düşünüyoruz. Projenin de ağırlığı %100.
+
+44
+00:09:36,436 --> 00:09:59,516
+20 olacak şekilde. Doğal olarak ara sınavlar ve projelerin toplam ağırlığı %60, yani yıl içini oluşturacak. Tünel sınavında %40 bir etkisi olacak. Burada görebildiğiniz ölçüde 100 üzerinden bir not alıyor olacaksınız. Bu dersin teorik kısmı için. Ayrıca bir de laboratuvar notunuz oluyor olacak. Laboratuvardan da 100 üzerinden bir not aldınız.
+
+45
+00:10:00,000 --> 00:10:20,540
+Geçtiğimiz yıl teorik kısım %75, laboratuvar kısmı %15 olacak şekilde uygulamıştınız anlamca. Ona henüz karar vermedik. Hocalarımız da karar verdiğimizde bu ikisinin ağırlığı ne şekilde olacağını size bildiriyor oluruz. 15'ten aşağı olmayacaktır. Belki nasıl yapacağımızı bilmiyorum laboratuvarları.
+
+46
+00:10:21,231 --> 00:10:30,491
+Karar vermememizin temel sebebi de şu an işte laboratuvarla ilgili etkinlikler yapacaksanız Nisan'dan soruya bırakın belki bir şeyler değişir falan dediler ya o yüzden.
+
+47
+00:10:31,059 --> 00:10:43,019
+Nasıl yapacağız bilmiyorum. Ona göre tekrardan size ilan ediyor olacağız. Burada gördüğünüz zaman sadece teorik dersin oranları ekstradan laboratuvardan da bir not almış olacaksınız.
+
+48
+00:10:43,559 --> 00:10:55,999
+Buraya kadar dersin işleyişiyle ilgili sorusu olan arkadaşlarımız varsa alabiliriz. Yoksa Java ile ilgili nesminin en önemli programlama dilleriyle ilgili genel kavramlardan bahsederek dersimize başlıyor olacağız.
+
+49
+00:11:00,340 --> 00:11:20,039
+Yok herhalde. Yani normalde bu dersi anlatırken böyle hani her bir ders konusu benim 3 saate sığıyor. Öyle söylüyor olayım. Yani hani dersin saati 3 saat. Tüm dersler için geçerli bu. Yani [öğrenci]'yi de ben online anlattığım zaman oldu. Veri iletişimde birçok dersi de.
+
+50
+00:11:20,480 --> 00:11:33,519
+Online, o yüz yüze anlatırken, üç saat süren ders, online anlatırken daha kısa sürüyor. Onu da söyleyeyim. Çünkü çok fazla öğrenci arkadaşlarınız, yani sizler çok soru sormuyorsunuz.
+
+51
+00:11:33,879 --> 00:11:48,019
+Tabii bunun sebeplerinden birisi de, ya zaten kaydoluyor bunlar, ben daha sonra o kayıttan izleyip tekrardan anlamaya çalışırım diye düşünüyor olabilirsiniz. Ama biraz daha kısa sürüyor derste. Böyle üç saat dolu dolu ders.
+
+52
+00:11:48,480 --> 00:11:51,639
+Yaptığımız belki durumlar olur ama daha kısa sürdüğünde şaşırmayın lütfen.
+
+53
+00:11:52,840 --> 00:12:02,980
+Online olduğu için ve dersin kayıtlarını da daha sonradan izleme imkanı olduğu için yoklama ile ilgili herhangi bir zorunluluk yok.
+
+54
+00:12:03,799 --> 00:12:11,360
+Onu söyleyeyim. Yani hani ben bir telefonla açayım, bir kenara koyayım, orada katılımcı listesinde ismim görünsün diye ekstradan hiçbir şekilde düşünmenize gerek yok.
+
+55
+00:12:11,459 --> 00:12:13,459
+Boşuna internet kodanızdan yemeyin.
+
+56
+00:12:14,292 --> 00:12:26,131
+Yoklama ile ilgili online olduğu sürece, 100 düzü olur falan, orasını bilemem ama online olduğu sürece herhangi bir devam zorunluluğu aramıyor olacağız bu derste.
+
+57
+00:12:27,812 --> 00:12:33,672
+Şimdi Java, biraz Java temellerinden bahsedelim. Çünkü Java'yı kullanıyor olacağız.
+
+58
+00:12:35,440 --> 00:12:38,880
+Çişte özellikleri var. Onlardan bahsediyor olacağız.
+
+59
+00:12:39,140 --> 00:12:42,920
+Şimdi Java'ya bakıldığımızda birkaç farklı versiyonu var aşağıdım.
+
+60
+00:12:43,360 --> 00:12:53,779
+İlki Java Standard Edition. Biz genellikle bu ders kapsamında Standard Edition'ın sunduğu özellikleri kullanıyor olacağız.
+
+61
+00:12:54,439 --> 00:12:58,799
+Temelde farklı farklı programlama metodolojilerini destekliyor.
+
+62
+00:12:58,799 --> 00:13:11,360
+Yani prosedürel programlama dediğimiz şimdilik sizin gördüğünüz C programlama dili gibi, Pascal programlama gibi, diller gibi çeşitli dillerin kendi içine...
+
+63
+00:13:11,360 --> 00:13:14,480
+O da mimaride yazılmasını destekliyor.
+
+64
+00:13:14,899 --> 00:13:21,039
+Asıl bizim odaklanacağımız object-oriented programming kısmını, yani nesne yönelik programming kısmını destekliyor.
+
+65
+00:13:21,620 --> 00:13:31,519
+Jenerik programlama dediğimiz parametrik yapılar üzerinden ön tanımlı algoritmaların gerçekleştirilebildiği çeşitli yapılar var.
+
+66
+00:13:31,960 --> 00:13:34,740
+Onları destekliyor ki göreceğiz yine bu ders kapsamında.
+
+67
+00:13:34,740 --> 00:13:39,299
+Aynı zamanda bir fonksiyonel programlama dili gibi de.
+
+68
+00:13:39,360 --> 00:13:41,759
+Çalışabilecek çeşitli özellikleri söz konusu.
+
+69
+00:13:42,279 --> 00:13:50,360
+Fonksiyonel programlama dilleri dediğimizde de işte Scala gibi çeşitli diller, belki kısmen Python gibi çeşitli diller aklınıza...
+
+70
+00:13:50,624 --> 00:14:18,484
+Geliyor olsun. Bu, Standard Edition'ın içerisinde barındırdığı programlama metodolojilerinin desteği. Bunların hepsini bu ders kapsamında görüyor olacağız. Bir diğeri, Java'nın Enterprise Edition. Standard Edition'a ek olarak özellikle büyük çaplı şirketlerin sıkça kullanmak istedikleri ikinci, üçüncü kütüphaneleri, sanki birinci kütüphaneymiş gibi o şeyin içerisinde.
+
+71
+00:14:18,624 --> 00:14:23,663
+Framework'ın içerisinde barındıran bir yapı sunuyor Enterprise Edition.
+
+72
+00:14:24,423 --> 00:14:28,264
+İşte veri tabanıyla ilgili çeşitli bağlantısal işlemler yapacaksınız.
+
+73
+00:14:28,624 --> 00:14:35,524
+Bunları size hızlı bir şekilde sağlayabilecek çeşitli arayüzleri, kütüphaneleri diyelim daha güzel anlayın.
+
+74
+00:14:35,943 --> 00:14:37,364
+Kütüphaneleri falan var.
+
+75
+00:14:38,283 --> 00:14:43,443
+O yüzden daha kapsamlı büyük projeler yapılmak istendiğinde Enterprise Edition kullanılıyor.
+
+76
+00:14:43,443 --> 00:14:46,004
+Bir diğeri de Java Micro.
+
+77
+00:14:46,624 --> 00:15:07,083
+Bunu da daha çok gömülü sistem tarafında, IoT tarafında veya Simbian gibi versiyonları vardı veya mobil telefonlarda. Onlar da belki bilmiyorum gömülü sistem diyemeyiz temelde ama o tarz yapılarda kullanılıyor Java'nın micro edition'ı.
+
+78
+00:15:07,083 --> 00:15:14,624
+Daha küçük donanım kapasitesine sahip işlem birimleri üzerinde çalışılıyor.
+
+79
+00:15:14,624 --> 00:15:39,543
+çalışma üzere tasarlanmış bir yapı. Onu söyleyebiliriz. Şimdi Java ile ilgili bunları anlattık. Sizin temelde bu ders kapsamında standart edition versiyonunu kullanmanız yeterli olacaktır. Ama zaten Java açık kaynakları programlama gibi farklı farklı tüm editionlarına erişim imkanınızda söz konusu. Onu da söylemiş olduk.
+
+80
+00:15:39,923 --> 00:15:45,923
+Şimdi gelelim Nesne Yönelik Programlamanın kavramlarına. Bu kavramların güzel oturulması lazım.
+
+81
+00:15:46,103 --> 00:15:53,203
+Yani şimdi C programlama dili iki dönem üst üste alıyorsunuz. Belki üç dönem üst üste C ile ilgili bir şeyler görüyorsunuz.
+
+82
+00:15:53,623 --> 00:16:03,543
+İnanılmaz bir şekilde kafada oturuyor. Artık işte ikinci sınıfın ilk döneminde bitirdiğinizde ya ben C'de bir şeyler yapabiliyorum hissiyatı veriyor.
+
+83
+00:16:04,243 --> 00:16:07,923
+Ondan sonra Java, ya Java'ya ne gerek vardı C'de her şeyi yapabiliyorum.
+
+84
+00:16:07,923 --> 00:16:11,683
+Biliyoruz. Neslin'in elimde çok...
+
+85
+00:16:12,275 --> 00:16:17,115
+Efektif gelmiyor bana, öğrenmesi de zor diye düşünüyor öğrenciler.
+
+86
+00:16:17,235 --> 00:16:23,936
+Ben de zamanında ilk Nesne Yönelik Programlama Dili dersi aldığımda böyle düşünmüştüm açıkçası.
+
+87
+00:16:24,675 --> 00:16:36,295
+Ama Java ve Nesne Yönelik Programlama Dilleri mezun olduğunuzda, piyasada bir işe girdiğimizde daha fazla kullanıyor olacağınız programlama dillerinden oluyor olacak.
+
+88
+00:16:40,275 --> 00:16:42,775
+size güzel bir şekilde aktarabilmeye çalışacağımlar.
+
+89
+00:16:43,135 --> 00:16:44,295
+Bu kavramlar önemli.
+
+90
+00:16:44,456 --> 00:16:48,275
+Çünkü programlama sistematiği...
+
+91
+00:16:48,628 --> 00:16:58,628
+Standart, prosedürel dillere göre oldukça farklı. Standart, prosedürel dillerde olduğu gibi de programlama yapabiliyorsunuz Java'da.
+
+92
+00:16:58,828 --> 00:17:02,628
+Onu da desteklediğini az önce söylemiştik. O metodolojiyi de desteklediğini söylemiştik.
+
+93
+00:17:03,048 --> 00:17:14,928
+O yüzden ben Java kodu yazıyorum diyerek sadece yani nesne yönelimli program, nesne yönelimli yapıyı hiç kullanmadan Java kodu da yazabilirsiniz.
+
+94
+00:17:14,928 --> 00:17:16,628
+Ve başlangıçta da genel...
+
+95
+00:17:16,627 --> 00:17:43,327
+Genelde öğrenci arkadaşlarım bu şekilde başlıyor. Olabilir. Ama bu kavramları yavaş yavaş oturtmamız gerekiyor. İlki bunların class, snooklar. Yani çeşitli tabii amaçları var bunların, bu kavramların oluşturulmasını veya alt, daha bu nesne önünde programlama dillerine göre daha alt seviyede olan programlama dillerinde de belki benzer yapıların tasarlanmaya çalışıldığı versiyonları görüyor olacaksınız.
+
+96
+00:17:44,627 --> 00:17:54,387
+Java ile beraber bunlar daha güzel kafamızda oturuyor olacak. İlki bunların sınıf. Şimdi nesne yönelik programlama dillerinde her şey sınıf.
+
+97
+00:17:54,847 --> 00:18:08,087
+Classlardan oluşuyor. Nesnelerimizi bu classlardan üretiyor olacağız. Class dediğimiz şey çeşitli içerisinde üye alanları olan attribute diye olacağız bunlara.
+
+98
+00:18:08,087 --> 00:18:12,187
+Üye alanları olan, çeşitli metotları olan yapılar.
+
+99
+00:18:12,576 --> 00:18:15,195
+Mesela bir örnek verelim.
+
+100
+00:18:17,556 --> 00:18:19,415
+İşte cep telefonu class'ı.
+
+101
+00:18:19,731 --> 00:18:22,612
+Cep telefonu classının çeşitli özellikleri vardır.
+
+102
+00:18:22,811 --> 00:18:36,412
+İşte bataryası ne kadar gidiyor, ekran boyutu ne, markası ne, modeli ne gibi çeşitli bir sürü sayabileceğiniz e-mail numaraları falan filan bir sürü özelliğinin olduğunu düşünüyor olalım.
+
+103
+00:18:36,412 --> 00:18:40,791
+Aynı zamanda da çeşitli gerçekleştirebildiği fonksiyonlar vardır.
+
+104
+00:18:41,211 --> 00:18:45,211
+Bu fonksiyonlara nesne yönelimin tarafta metot diye olacağız arkadaşlar.
+
+105
+00:18:45,791 --> 00:18:47,491
+Mesela ne tarz metotlar olabilir?
+
+106
+00:18:47,731 --> 00:18:57,092
+Telefon birisini telefondan arayabilirsiniz. Onun için numarasına girmeniz gerekir, belli bir tuşa basmanız gerekir. O birisini arar, sizinle bir bağlantı var.
+
+107
+00:18:57,551 --> 00:19:03,971
+İnternette gezinim yapabilirsiniz. Telefonlar akıllı mı değil mi tabii ona göre değişir. İşte SMS yollayabileceğiniz metotları vardır.
+
+108
+00:19:03,971 --> 00:19:10,291
+Bir sürü telefonun gerçekleştirebileceği fonksiyonları metot olarak tanımlayabilirsiniz.
+
+109
+00:19:10,652 --> 00:19:15,731
+Şimdi sizin telefon diye bir sınıfınız oldu. Bu bir tanım...
+
+110
+00:19:15,731 --> 00:19:38,211
+gibi düşünmeniz lazım. Sanki kompleks bir veri tipi tanımlıyoruz. Yani integer gibi veya işte char gibi veri tipi değil de sanki daha kompleks bir veri tipi tanımlıyoruz. TypeDef yaparak veya abstract tanımlarmış gibi C'de o şekilde bir veri tipi tanımladığımızı düşünün.
+
+111
+00:19:38,288 --> 00:19:48,327
+sınıftan, daha sonra bu sınıfı kullanarak bu sınıfın özelliklerini içerisinde barındıran bunlardan istanslar üretiyoruz.
+
+112
+00:19:48,928 --> 00:19:54,228
+Yani cep telefonu sınıfının tanımlıdır. Bu bir kavram. Sanki integer gibi bir değişken olduğunu düşünün.
+
+113
+00:19:54,228 --> 00:20:00,000
+Int A diye bir tanım yaptınız. Bu ne demektir? A diye bir değişken ürettiniz ve tipi...
+
+114
+00:20:00,000 --> 00:20:10,980
+integer. İşte integer kavramını buradaki tam olarak sınıfa özdeşleştirmek lazım. A'yı da instance'ı özdeşleştirmek lazım. Bu instance'lara obje diyoruz işte.
+
+115
+00:20:11,476 --> 00:20:29,536
+Nesne diyelim veya Türkçe. Nesne diyoruz. Bizim telefonumuz mesela belli imimisi var, şusu var, busu var. Yani bu telefon olarak özetlediğimiz anda o bir obje oluyor ama telefon sınıfından üretilmiş.
+
+116
+00:20:29,536 --> 00:20:39,476
+Her telefonun farklı bir aileysi vardır, farklı fonksiyonları kullanabilme kabiliyeti vardır veya aynı anda aynı fonksiyonları aynı şekilde kullanmaya çalışıyoruz.
+
+117
+00:20:39,476 --> 00:20:58,636
+Sınıf dediğimiz bu. Tabi burada şeyler biraz kaynmış yapılar. Nesneye Yönelik Programlamayı niye kullanıyoruz? Temelde Reusability. Aslında en önemli kısmı bu. Yani yazdığımız bir kodu tekrar tekrar tekrar tekrar kullanabilirim.
+
+118
+00:20:58,928 --> 00:21:08,088
+Böyle olunca daha az eforla aynı işi yerine getirebileceğimiz çeşitli yapılar gerçekliyor olabileceğiz.
+
+119
+00:21:08,188 --> 00:21:11,028
+Nesneye Yönelik Programlama dillerinde.
+
+120
+00:21:11,668 --> 00:21:18,268
+Böyle bu sorunun cevabını ara ara konuları anlattıkça tekrardan üzerinden geçeceğim.
+
+121
+00:21:18,368 --> 00:21:21,568
+Yeniden kullanılabilirlik demiş oldum.
+
+122
+00:21:22,068 --> 00:21:25,768
+Ama birçok farklı alanda çok farklı faydaları var.
+
+123
+00:21:25,768 --> 00:21:26,808
+Onları da görüyor.
+
+124
+00:21:26,928 --> 00:21:27,888
+olacağız.
+
+125
+00:21:29,408 --> 00:21:33,068
+Class ile obje arasındaki ilişkiyi zannımca anlatabildim.
+
+126
+00:21:33,468 --> 00:21:36,188
+Yani sınıflarımız var, telefon gibi.
+
+127
+00:21:36,828 --> 00:21:41,428
+O sınıftan bir tane telefon nesnesi üretiyorum ben.
+
+128
+00:21:41,848 --> 00:21:43,108
+N tane üretebilirim.
+
+129
+00:21:43,408 --> 00:21:46,188
+Yani bunun sınıfı bir kavram olarak düşünün.
+
+130
+00:21:46,528 --> 00:21:47,248
+Mesela insan.
+
+131
+00:21:47,923 --> 00:22:13,183
+Yani insan dediğimizde aklınıza gelen şeyler neler? Gözü var, kulağı var, ayakları var, eli var. O şekilde hareket ediyorlar. Çeşitli fonksiyonlar var. Yürüyebilir, ne bileyim görebilir, duyabilir. Yani düşünebilir diyeceğim ama tabii ki her insan için ortak bir kavram değil o. Bu tarz çeşitli insanların hem fonksiyonları var hem de özellikleri var.
+
+132
+00:22:15,923 --> 00:22:20,104
+Furkan Çakmak üretildiği anda bu bir nesne olmuş oluyor.
+
+133
+00:22:20,743 --> 00:22:25,703
+Yani sınıfla nesne arasındaki farkı böylece ayırt edebilmemiz lazım.
+
+134
+00:22:26,284 --> 00:22:30,284
+Metot dediğimiz şey sınıfların içerisinde tanımlanır.
+
+135
+00:22:31,155 --> 00:22:37,015
+O sınıfın hangi fonksiyonları yerine getirebileceğini belirlemek için kullanılır.
+
+136
+00:22:37,455 --> 00:22:39,535
+Mesela işte bir metot düşünelim.
+
+137
+00:22:39,675 --> 00:22:41,875
+İnsan sınıfı için yürümek.
+
+138
+00:22:42,355 --> 00:22:43,075
+Bir metottur.
+
+139
+00:22:43,555 --> 00:22:48,355
+Nasıl yüründüğünü o metodun kodu içerisinde sizin tanımlamanız lazım.
+
+140
+00:22:48,915 --> 00:23:03,556
+Veya işte araba sürme yine bir metottur insan sınıfı içerisinde. Bu metotların tanımı sınıfların içerisinde yapılır ama metotlar objeler tarafından kullanılır.
+
+141
+00:23:03,776 --> 00:23:17,895
+Yani nasıl yürüleceğinin tanımı insan sınıfının içerisindedir. Bir insanı yürütmek istiyorsak ise o işte Furkan Çakman bir insandı. Furkan Çakman yürü komutu veririz. Yürü metodunu çalıştırırız onu. O yürümeye başlar.
+
+142
+00:23:20,180 --> 00:23:33,380
+Üye alan diye bir kavramımız var. Bu üye alan Türkçe'ye bu şekilde çeviriyoruz ama belki İngilizcenin tam karşılığı değil. Attribute veya behavior olarak da farklı farklı kaynaklarda bunu görüyor olacaksınız.
+
+143
+00:23:33,824 --> 00:23:41,364
+Her objenin bağlı olduğu sınıfın çeşitli attribütleri vardır.
+
+144
+00:23:41,584 --> 00:23:49,183
+Az önce bahsettiğim gibi insanı insan yapan veya o sınıfı o sınıf yapan özellikleri barındırır burada.
+
+145
+00:23:50,044 --> 00:23:52,044
+Mesela nasıl örnek vereceğim?
+
+146
+00:23:52,223 --> 00:23:55,243
+İşte insanın eli vardır, beş tane parmağı vardır.
+
+147
+00:23:57,683 --> 00:24:08,283
+Gözü vardır, ayakları vardır, iç organları vardır gibi böyle çeşitli tanımlar. Genellikle primitiv tipler kullanılarak bu tanımlar yapıyoruz.
+
+148
+00:24:08,372 --> 00:24:30,832
+Yani bir insanın mesela yaş bilgisini siz tutmak istiyorsanız sınıf içerisinde, integer, yaş dediğinizde bu sınıfın bir etribüdüdür. Tipi integer'dır. İsmi ise yaştır. Doğum tarihini tutmak istiyorsanız daha kompozit bir veri tipi vardır, date diye. O veri tipini kullanarak doğum tarihini tutabilirsiniz.
+
+149
+00:24:36,372 --> 00:24:41,772
+Bu tarafta daha çok string diye olacağız. String şekilde tutabilirsiniz.
+
+150
+00:24:42,832 --> 00:24:50,532
+Instance'ı bunların hepsini ben tabii anlatırken söyledim ama üzerinden geçerken peker peker geçiyor olalım her seferinde.
+
+151
+00:24:50,972 --> 00:24:57,032
+Şöyle ki sınıftan bir obje ürettiğimiz zaman ona işte instance diyoruz.
+
+152
+00:24:57,523 --> 00:25:13,363
+Bir sınıfın bir objesine bir instance demiş oluyoruz, bir örneği. Encapsulation kısmı bizim için Nesne Önemi Programlama dillerindeki önemli kısımlardan birisi. Ne demek istiyoruz? Encapsulation'la, kapsülleme.
+
+153
+00:25:13,791 --> 00:25:18,812
+Yani, birçesi tam olarak ödükemiyorum, muhakkul teren kapsüllebilir.
+
+154
+00:25:19,352 --> 00:25:26,552
+Yaptığımız şey şu aslında, dediğimiz gibi çeşitli sınıflar ve çeşitli metotlar vardır bu sınıfların içerisinde.
+
+155
+00:25:27,251 --> 00:25:32,731
+Sınıfların metotlarını veya işte statik metotlarını onlardan bahsediyor olacağız.
+
+156
+00:25:33,392 --> 00:25:37,211
+Bazı özelliklerini birbirlerinden saklayabiliriz.
+
+157
+00:25:37,779 --> 00:26:03,240
+Saklamak zorunda değiliz. Muhakkak saklayalım diye bir şey yok. Ama saklamak istediğimizde onların nasıl çalıştığını bilmeden o metotları da yine kullanabiliriz. Bunlara encapsulation deniliyor. Bunların hepsini tabii ki nesneye yönelik programlama dilleri destekliyor. Bunları görüyor olacağız. Nasıl yapıldığını encapsulation'ın. Ardından kalıtım yani inheritance tavrımı var.
+
+158
+00:26:05,779 --> 00:26:12,420
+Birbirlerinin özelliklerini bazı sınıflar, daha doğrusu, birbirlerinin özelliklerini barındırabilirler.
+
+159
+00:26:13,060 --> 00:26:19,019
+Mesela örnek veriyor olalım. Elektronik cihazlar diye sizin bir sınıfınız olmuş olsun.
+
+160
+00:26:19,620 --> 00:26:23,380
+Elektronik cihazların genel bir özelliği ne olabilir mesela?
+
+161
+00:26:24,960 --> 00:26:29,700
+İşte ağırlığı sallıyorum yani şu an. Kaç voltla çalıştığı.
+
+162
+00:26:30,163 --> 00:26:38,163
+ID'si gibi çeşitli böyle tüm elektronik cihazların ortak olarak barındırdığı özellikleri düşünün.
+
+163
+00:26:38,604 --> 00:26:41,744
+Ve aynı zamanda fonksiyonları, metotları düşünün.
+
+164
+00:26:41,744 --> 00:26:47,864
+Bu elektronik cihazlardan o özellikleri ortak olarak barındıran yeni elektronik cihazlar.
+
+165
+00:26:48,192 --> 00:27:08,172
+Kalıtım yoluyla üretebiliriz. Mesela cep telefonu. Bir elektronik cihazdır. Elektronik cihazların bulundurduğu tüm özellikleri üstünde barındırır ama ona ek olarak özellikleri vardır. Telefonla arama yapabilirsin, SMS gönderebilirsin ve benzeri. Veya elektronik cihaz.
+
+166
+00:27:08,884 --> 00:27:17,923
+Buzdolabı. Yani, veya gerçek, buzdolabına demeyelim, onlar daha çok. Hani elektronik yazdı ama beyaz eşya kategorisine gidiyor ya. Mesela ne dediğim, bilgisayar.
+
+167
+00:27:18,160 --> 00:27:38,460
+İşte bilgisayarla bakıldığında temelde içine bir sim kart takıp arama yapamıyorsun. Bunun farklı bir özelliği var. Veya işte akıllı saat, bu da bir elektronik cihazdır. Veya işte mağazaya girdiğimiz akıllı televizyonlar, şunlar bunlar, görebildiğiniz her şey, kulaklıklar, oyun konsolları, bunların hepsi temelde elektronik cihazdır.
+
+168
+00:27:46,160 --> 00:27:56,040
+ana sınıfa, yani elektronik cihaz sınıfına ait, daha sonra ayrıldığı çeşitli özellikleri varsa bunları kalıtımla türettiğimiz yeni sınıflara yerleştiriyoruz.
+
+169
+00:27:56,580 --> 00:28:02,640
+Bu kalıtım haftası geldiğinde tabii daha güzel anlatacağız ama biraz daha kafanızda canlansın diye söylüyorum.
+
+170
+00:28:02,640 --> 00:28:10,160
+Mesela kalıtım dediğimizde kalıtımla ilgili bahsedeceğimiz önemli bir örnek şöyle olmuş olsun.
+
+171
+00:28:12,692 --> 00:28:40,192
+Bizim üniversitemizde çalışan çeşitli personel var, öyle söyleyelim. Personel veya çalışanlar diye bir sınıf oluşturalım. Bunların hepsinin orta gözellikleri var. Neler? TC kimlik numarası. Çünkü çalışanlarda TC kimlik numarası adı, soyadı, doğum tarihi ekstra bir sürü bilgisini tutabilirsiniz. Ardından bir akademik personel bir de idari personel olmak üzere.
+
+172
+00:28:40,692 --> 00:28:44,411
+İki gruba ayrılan bir yapı, bir dallanma sözcüsü.
+
+173
+00:28:44,411 --> 00:28:54,791
+Siz akademik personelin özelliklerini tanımlarken tekrardan ya bu adamın yaşının bilgisini tutayım, doğum tarihini tutayım diye uğraşmazsınız.
+
+174
+00:28:54,891 --> 00:28:57,211
+Çünkü zaten personel kısmından o bilgiler var.
+
+175
+00:28:57,651 --> 00:29:00,672
+Personelden kalıtımla akademik personeli üretirsiniz.
+
+176
+00:29:01,172 --> 00:29:03,851
+Akademik personelin ekstradan çeşitli özellikleri var.
+
+177
+00:29:04,371 --> 00:29:08,692
+Kaç tane yayın yapmıştır, hangi dersleri veriyordur, kaç öğrendi mezun veriyor.
+
+178
+00:29:08,692 --> 00:29:30,531
+gibi ek bilgiler tutulur. İdari personele yenildiğinde ise onların ek özellikleri ise işte kaç yıldır çalışıyor, sekreter mi veya ne bileyim ne olur işte güvenlik görevlisi mi, farklı farklı stüphirlerde mi çalışıyorlar. Yani bunları da ek onların kendi içerisinde tutarsınız.
+
+179
+00:29:30,784 --> 00:29:52,604
+Tabii ki idare personel de kalıtımla üretilebilir. Sekreter yapabilirsiniz. Daire başkanı, güvenlik personeli, genel temizlik hizmeti personeli gibi ayrı ayrı personel. Akademik personellerin ünvanına göre belki tekrardan kalıtımla üretebilirsiniz. Yani kalıtımla üretilen bir sınıf üzerinden tekrardan kalıtımla başka bir sınıf da üretilebilir.
+
+180
+00:29:58,784 --> 00:30:09,064
+Özelliklerini alt sınıflarda kullanabilirim. Bu yapı Nesne Yönelik'in tarafında önemli kavramlardan birisi bunun üzerinde duruyor olacağız.
+
+181
+00:30:10,384 --> 00:30:21,784
+Dediğim gibi bunları çok detaylı anlatacağız. Kalıbın da bir sürü özelliği var ama sadece bu dersimizde kavramlar şimdiden biraz kulaka aşınaslığı sizde...
+
+182
+00:30:22,387 --> 00:30:48,028
+Yaratmış olsun diye söylemek istiyorum. Bir diğeri interface'leri çok sık göreceğiz. Veya burada var mı abstract class'lar falan? Yok herhalde. Interface'ler, abstract class'lar. Şimdi biz interface dediğimizde yine haftası geldiğinde detaylı bir şekilde anlatacağız ama metotlarını veya işte çeşitli attribute'lerini sonradan tanımlayarak
+
+183
+00:30:50,195 --> 00:31:03,035
+kullanabileceğimiz üst sınıflar oluşturabiliyoruz. Yani sadece sanki üst sınıfların, kalıtımla türetilebilecek üst sınıfların prototiplerini oluşturup tüm gerekli şeyleri alt sınıflarda tanımlayabiliyoruz.
+
+184
+00:31:03,035 --> 00:31:18,155
+Yani mesela diyelim ki bir insan sınıfı, interface olmuş olsun, bir metodu var yürüme ama nasıl yürüyeceğini üst sınıfta tanımlamıyoruz, alt sınıfta tanımlıyoruz ki her insan yürür ama
+
+185
+00:31:18,195 --> 00:31:35,655
+Akademik personel ise farklı yürürür, sekreter ise farklı yürürür. Öyle değil de hani örneklerine kadar açıklıyorum, yanlış anlaşılmasın bir durum gibi gibi alt sınıflarda tanımlayabileceğimiz çeşitli işte abstract class gibi, interface'ler gibi çeşitli kavramlar var. Bunlardan sizlere bahsediyor olacağız.
+
+186
+00:31:46,195 --> 00:32:13,195
+Akış diagramı sistematiği vardı, flow chartlar. Buradaysa kullanılan bu sembolize eden sisteme biz UML, Unified Modeling Language diyoruz. UML'in çeşitli kavramları var, size onlardan bahsediyor olacağız. Nasıl ki şu an bir algoritma tasarlamak istediğimizde akış diagramını çizip nasıl aktığını, verinin nereden nereye dolaştığını ve
+
+187
+00:32:13,844 --> 00:32:37,724
+Sonucunun ne şekilde gerçekleşeceğini tasarlayabiliyorsanız, bir nesne önemli program yazmak istediğinizde öncelikle UMLN ile bu programın sınıflarını, attribütlerini, üye alanlarını, birbirleriyle olan ilişkilerini tanımlayıp ardından tüm tasarımı gerçekleştirdikten sonra beklediğimiz şey programı yazmaya başlamayız.
+
+188
+00:32:38,096 --> 00:32:59,715
+O yüzden UML'le ilgili de çeşitli kavramlardan bahsediyoruz. Bu derste görüyor olacaksınız UML'i. Kısmen belki Sistem Analiz ve Tasarım dersinde görüyor olacaksınız. Ve en son farklı özellikleriyle beraber yazılım mühendisliği dersinde görüyor olacaksınız. Belki Sistem Analiz ve Tasarım dersini aldınız bilmiyorum. Orada gördüyseniz burada da biraz daha özelliklerinden bahsediyor olacaksınız.
+
+189
+00:33:00,016 --> 00:33:25,016
+Bir diğeri Java Runtime Environment, JRE. Java Runtime Environment bilgisayarınıza kurulu olmadan herhangi bir şekilde Java çalıştıramazsınız. Öncelikle onu söylemek istiyorum. Bakın programcılık kısmını bir kenara bıraktım. Java ile geliştirilmiş herhangi bir uygulamayı programınıza yükleyip, bilgisayarınıza yükleyip, onun üzerinden işte...
+
+190
+00:33:26,420 --> 00:33:34,519
+Ne sağlıyorsa o programı kullanmak istiyorsanız muhakkak bilgisayarınızda Java Run-Time Environment yüklü olması lazım.
+
+191
+00:33:34,519 --> 00:33:38,519
+Pekala Java Run-Time Environment dediğimizde...
+
+192
+00:33:39,892 --> 00:34:07,892
+Bilgisayardan bilgisayara tabii ki çeşitli özellikleri değişebilir. Yani biraz şeyi kastediyorum. Bilgisayardan bilgisayardan bizim oradan kullanılan bilgisayarları değil de işte Java Micro Edition kullanıyorsam daha böyle light runtime environment'ler de vardır. Fakat sürekli güncellenen versiyonlama sistemine sahip. Bu derse başlarken sizden ricam bilgisayarınızdaki Java Run...
+
+193
+00:34:07,892 --> 00:34:08,891
+Tamam, tamam, tamam.
+
+194
+00:34:09,396 --> 00:34:15,876
+versiyonunu lütfen kontra edin ve en son versiyonu neyse onu kullanın.
+
+195
+00:34:16,236 --> 00:34:19,836
+En son versiyonunu kullanın dememden sebep de şudur.
+
+196
+00:34:19,936 --> 00:34:23,596
+Geriye yönelik uyumluluk diye bir durum var biliyorsunuz.
+
+197
+00:34:23,596 --> 00:34:33,216
+Yani versiyonlama yapılırken bir sonraki çıkan versiyon her daim bir önceki kendisinden önce çıkan versiyonların özelliklerini de destekler.
+
+198
+00:34:33,996 --> 00:34:37,396
+Desteklemeyeceği zaman zaman çeşitli özellikler olur ama bunu...
+
+199
+00:34:37,396 --> 00:34:40,676
+Çok önceki versiyonlardan itibaren söylemeye başlarlar.
+
+200
+00:34:40,756 --> 00:34:46,115
+Haberin olsun 17 versiyon sonra bunu desteklemeyeceğiz diye şimdiden söylemeye başlarlar.
+
+201
+00:34:46,483 --> 00:35:14,483
+Ondan da neden olanı bahsetmiş oldum. Java Runtime Environment yani JRE olmadan bilgisayarınızda Java programı çalıştıramazsınız. Bir diğeri Java Development Kit, JDK. Bu da artık bizi ilgilenmiyor. Yani bilgisayar mühendisiyiz. Bu ders kapsamında Java programı yazacağız. Bilgisayarımızda Java geliştirmesi yapabilmemiz için, Java Development'ı yapabilmemiz için Java Development Kit'i çalışacağız.
+
+202
+00:35:14,483 --> 00:35:16,644
+çalıştırabiliyor olmamız lazım.
+
+203
+00:35:18,083 --> 00:35:18,284
+Evet.
+
+204
+00:35:22,036 --> 00:35:41,215
+Böyle. Java Development Kit'i de ayrıca yüklemeniz gerekiyor. Yani JDK'yı, eğer bilgisayarınızda hiç JRE kurulu değilse, siz JDK'yı yüklemek istediğiniz durumda muhtemelen diyecektir ki yani senin JRE'en de yok, onu da yükleyelim falan diye demeyebilir bilmiyorum.
+
+205
+00:35:41,215 --> 00:35:49,976
+Ben bir ara yüklerken diyordu. Ama yani ikisini hemen önce JRE'yi sonra JDK'yı yüklemenizi tavsiye ederim.
+
+206
+00:35:50,036 --> 00:36:02,855
+Ondan sonra sizin kullanımı açısından gözünüze hoş gelen veya ne bileyim daha önceki tecrübelerimizden hoşunuza giden bir ide seçebilirsiniz Java destekleyen.
+
+207
+00:36:03,199 --> 00:36:09,179
+inanılmaz farklı farklı yazabileceğiniz, tahmin edebileceğiniz üzere ideler var.
+
+208
+00:36:09,179 --> 00:36:15,779
+Ben bu ders kapsamında çok çok büyük oranda Eclipse ve NetBeans'i kullanıyor olacağım.
+
+209
+00:36:16,299 --> 00:36:24,219
+Ama dediğim gibi platform bağımsız bir din olduğu için hem Linux, Mac,
+
+210
+00:36:24,608 --> 00:36:35,888
+Java tarafında, Windows tarafında farklı farklı iddelerde her birisinde bunu çalıştırabilirsiniz. Java Runtime Envignment ve Java Development Kit'iniz olmak koşuluyla.
+
+211
+00:36:36,268 --> 00:36:40,688
+Şimdi bu geçen haftanın konusuydu. Hani yapamadık ya dersi, öyle yapabiliriz ya da ders yapabiliriz.
+
+212
+00:36:40,688 --> 00:36:42,388
+Hocam, bir soru sorabilir miyim?
+
+213
+00:36:42,708 --> 00:36:48,048
+Tabii ki. Soruları alalım. Ondan sonra bir ara verelim. Yeni şeye başlayalım. Buyurun.
+
+214
+00:36:48,568 --> 00:36:52,528
+Hocam, burada JRE'yi indirip daha sonrasında programı çalıştırabiliriz dediniz.
+
+215
+00:36:52,608 --> 00:37:00,768
+Biz ya, örneğin bir C programında ex-usantılı dosyayı eksport ettiğimizde C kurulu olmasa bile onu çalıştırabiliyorduk.
+
+216
+00:37:00,768 --> 00:37:04,168
+SM bile çeviriliyordu. Bunda neden böyle bir şey yok?
+
+217
+00:37:04,532 --> 00:37:32,532
+Burada çünkü bahsedeceğiz ondan. Burada bir sanal makine durumu söz konusu. Java'nın çalışabileceği bir ortamı kurgulamamız gerekiyor. Sanal makine denilen bir yazılım arka tarafta sürekli kontrol ediyor bazı şeyleri. İşte garbaç kalıptır, bir sürü özelliği var. Onlardan bahsediyor olacağız. Yani Java çalıştırmak istiyorsak muhakkak Java runtime environment olmasa. Muhtemelen hepinizin bilgisayarını yüklüyoruz. Çünkü Java tabanda birçok şey çalıştırıyorsunuz.
+
+218
+00:37:32,532 --> 00:37:42,072
+Ama versiyonuna bir bakın, onu demek istiyorum. Hali hazırda yüklü bir JRE'niz varsa, en son versiyonunu yüklediğiniz onun üstüne zaten güncel bir.
+
+219
+00:37:43,512 --> 00:37:44,472
+Teşekkür ederim.
+
+220
+00:37:44,831 --> 00:37:48,771
+Ben teşekkür ederim. Başka sorusu olan arkadaşımız var mı?
+
+221
+00:37:50,152 --> 00:37:51,692
+Hocam bir tane daha sorun var da.
+
+222
+00:37:52,751 --> 00:37:56,072
+Sohbete yazmıştım. Burada C++ üzerinden...
+
+223
+00:37:56,072 --> 00:38:12,552
+Bu arada önce şey bahsedeyim. Benim benim inanılmaz karışık bir sürü şey görüyorum. Sohbette yazılan soruları maalesef okuyup cevaplayabilme, yönetilme imkanı. O yüzden soracaksanız [öğrenci], senin şimdi sorduğun gibi lütfen, arkadaşlarımıza söylüyorum yani sesli olarak soruyor olalım.
+
+224
+00:38:12,891 --> 00:38:18,972
+Beni istediğiniz zaman, yani daha önce ders alanlar vardır, biliyordur. İstediğiniz zaman böyle bilirsiniz. Her soruyu cevaplarız bu arada.
+
+225
+00:38:19,635 --> 00:38:25,236
+Hıram, benim burada sormak istediğim şey şu, hani bir buçuk senedir C'de belli bir alt yapı oluşturdum.
+
+226
+00:38:25,635 --> 00:38:31,135
+Neden C++ üzerinden nesneyi görmüyoruz? Bu sektör stratejisi mi?
+
+227
+00:38:32,476 --> 00:38:38,376
+Java ile C++, her ikisi de C temelleri. Yani onu belki söylemeyi unutmuş olabilirim.
+
+228
+00:38:38,756 --> 00:38:44,456
+C kodunu Java'ya yapıştır, çalışar. Eğer merak ettiğin şey buysa.
+
+229
+00:38:44,980 --> 00:38:48,959
+C++ yani Java bambaşka bir dil.
+
+230
+00:38:49,327 --> 00:39:14,219
+C++'ı C'nin üzerine kurulmuş bir dildir gibi düşünmeyin asla. Her ikisi de C temelli gibi bakabilirsiniz olaya. C++'ın kullanıldığı çeşitli alanlar var. Özellikle oyun geliştirilmede çalışanlar için inanılmaz fazla C++ kullanılır. Ama onun haricindeki sistem uygulamalarını geliştirme tarafında piyasada Java daha fazla kullanılır.
+
+231
+00:39:14,931 --> 00:39:16,931
+Tamamdır hocam, teşekkür ederim.
+
+232
+00:39:17,071 --> 00:39:27,891
+Evet, yani burada kesinlikle bir strateji yok. Her ikisi de C'ye ne kadar yakınsa o kadar yakın. Birisi daha fazla yakında, birisi daha fazla yakında bir durum yok.
+
+233
+00:39:30,331 --> 00:39:32,651
+Evet, teşekkür ederim. Başka sorusu olan var mı?
+
+234
+00:39:35,188 --> 00:39:49,307
+Saate bakıyoruz, 40 geçiyor, 55 geçe burada olalım. Arkadaşlar, kaldığımız yerden devam edelim. Bu ilk dersimizi böylece bitirmiş olalım. Bir ara verelim. Yani diğer konuya başlamadan ara vermek istiyorum çünkü. Bir ara verelim sonra diğer konumuza başlıyoruz.
+
+235
+00:55:08,019 --> 00:55:21,000
+Tekrardan merhaba arkadaşlar. İlk derse başladığımda şöyle 20 kişi falan da. Bu yüzden böyle hazır mevcut yapmışken genel birkaç duyuru da yapmış olayım.
+
+236
+00:55:21,679 --> 00:55:28,039
+Yani şimdi sizin seçtiğiniz atarlığınız mı bilmiyorum ama bu dersi beraber yürütüyor olacağız.
+
+237
+00:55:29,108 --> 00:55:41,608
+Java ile ilgili özellikle hiçbir bilginiz yoksa ilk tanışmanız, mesleğiniz dolanma dilleriydi. Yine benimle, benim aracı dağımla oluyor olacak. O yüzden ben kendimi bu konuda sorunlu ad ediyorum.
+
+238
+00:55:42,728 --> 00:55:50,947
+Yani nerede takılıyorsanız, anlamadığınız nereden oluyorsa, işte kod yazmışsınız, bir çeşitli hatalar vardır falan.
+
+239
+00:55:51,572 --> 00:56:00,791
+Lütfen sorun, vakitlice hatta sorun. Üzerinden geçelim. Geçtiğimiz dönemlerde benlerden, benle ders alın arkadaşlar.
+
+240
+00:56:00,972 --> 00:56:06,372
+Yani hani tekrar tekrar aynı şeyleri gelip burada ders gibi anlattığım arkadaşlarımız da oldu.
+
+241
+00:56:07,112 --> 00:56:16,632
+Bu dönem şöyle hep beraber güzel bir şekilde Java'yı anlayalım. Onunla ilgili güzel uygulamalar yapabilecek seviyeye gelelim istiyorum.
+
+242
+00:56:16,632 --> 00:56:18,211
+Benim temel derdim o.
+
+243
+00:56:18,643 --> 00:56:21,643
+Bunu da buradan duyurmuş olurum.
+
+244
+00:56:24,003 --> 00:56:31,884
+Evet, şimdi biraz da UML tarafından bahsediliyor olacağız.
+
+245
+00:56:33,283 --> 00:56:36,063
+Yine Java ile ilgili çeşitli kavramlardan bahsedeceğiz.
+
+246
+00:56:36,743 --> 00:56:39,283
+Bu kısımda böyle devam ediyor olacak.
+
+247
+00:56:40,019 --> 00:56:53,000
+Şimdi bir Java source kodu yazıyorsunuz. Genelde uzantısı Java olur. Ekstra birkaç özel durum var. Gömül sistem falan yazıyorsanız ama onlara değiniriz.
+
+248
+00:56:54,000 --> 00:57:02,940
+Java uzantılı bir doküman hazırladığınız içerisinde Java kodu var. Bunu Java compiler'ından geçiriyorsunuz.
+
+249
+00:57:03,347 --> 00:57:30,728
+Tabi ki hepiniz artık IDE kullanmaya alışmış durumdasınız. Yukarıdaki Compile and Run butonuna tıkladığınızda arka tarafta hepsi automatik olarak oluyor. Program direkt çalışmaya başlıyor hata yoksa ama nasıl arka tarafta işler cereyan ediyor onu da görün istiyorum. Eğer doktor Java'da falan yazarsanız bu aşamadan siz kendiniz komut satırından Java'la Java kodu derlemeniz falan gerekir. Bilmiyorum belki hala da bu şekilde derleyen arkadaşlarımız da vardır.
+
+250
+00:57:31,347 --> 00:57:33,208
+Aklınızda bulunsun yani.
+
+251
+00:57:33,627 --> 00:57:36,647
+Sonra bir compile kod ortaya çıkıyor.
+
+252
+00:57:36,748 --> 00:57:40,407
+Yani derlenmiş, compile aşamasından geçmiş bir kod çıkıyor.
+
+253
+00:57:40,507 --> 00:57:42,867
+Bunun uzantısı class oluyor arkadaşlar.
+
+254
+00:57:43,527 --> 00:57:45,347
+Yani class uzantılı bir...
+
+255
+00:57:46,164 --> 00:58:10,404
+Dosya gördüğünüzde, onun içerisini açtığınızda Java kodu göremeyeceğinizi bilin. Bir çeşit object kod. Geriye dönüş yapılabilir tabii object koddan Java'ya doğru geçiş yapılabilir ama her daimde bu mümkün olmayabilir. Şifrelenmiş çeşitli veya gizlenmiş çeşitli bilgiler söz konusu olabilir. Compile edilmiş bir object kodumuz var. Nota class uzan kodu.
+
+256
+00:58:12,724 --> 00:58:20,164
+Ardından bunu link ediyoruz. Linker'dan geçiriyoruz. Ve executable bir kod ortaya çıkıyor.
+
+257
+00:58:20,496 --> 00:58:28,716
+Bu aşamaya kadar, yani nokta class uzantılı dosyanın üzerine tıkladığımızda çalıştırılabilir bir şey değil.
+
+258
+00:58:29,096 --> 00:58:35,956
+Bunu linker'dan geçirmeyi biliyorsunuzdur diye tahmin ediyorum.
+
+259
+00:58:36,376 --> 00:58:44,996
+Birden fazla object dosyanız varsa onları beraber bir şekilde linkleyip tek bir çalıştırılabilir program üretmiyorsunuz.
+
+260
+00:58:44,996 --> 00:58:48,436
+Burada executable bir kod ortaya çıkıyor.
+
+261
+00:58:48,496 --> 00:59:01,916
+Ardından işletim sistemi tarafından bu başarılı bir şekilde veya işte runtime hatası alarak çalıştırılıyor veya sonlandırılıyor. Süreç temelde bu şekilde işliyor.
+
+262
+00:59:07,027 --> 00:59:13,107
+Java nasıl bir dildir? Veya şöyle, çeşitli tanımlar görmüşsünüzdür, duymuşsunuzdur şimdiye kadar.
+
+263
+00:59:13,527 --> 00:59:23,107
+Compile edilen diller, interpret edilen diller, yani derlenen diller, yorumlanan diller, bunlar birbirinden farklıdır gibi çeşitli kavramlar duymuşuydu.
+
+264
+00:59:23,208 --> 00:59:25,768
+Pekala Java, compile mi ediliyor, derleniyor mu?
+
+265
+00:59:26,128 --> 00:59:49,908
+Bu soruya bazı kaynaklar abarttığında da compile ediliyor diye görürsünüz. Bazı kaynaklar abarttığında derleniyor diye görürsünüz. Bazı kaynaklarda da yorumlanıyor diye görürsünüz. Ama bazı kaynaklarda da yine her ikisi de Java'nın içerisinde vardır diye görürsünüz. Şöyle nereleri compile ediliyor, nereleri interpret ediliyor onlardan bahsedelim isterseniz.
+
+266
+00:59:54,128 --> 01:00:04,748
+Ondan sonra Java sanan makinesinin yönetiminde linkerlardan geçerek çalışması sürecine kadar giden aşama interpret ediliyor arkadaşlar.
+
+267
+01:00:05,300 --> 01:00:28,039
+Şey kısmıysa, ne denir ona? Source koddan, compile kod üretmek adı üzerinde compile den geçiriyoruz. Derden geliyor. Ve bu kısım Java Development Kit'iniz olması durumunda, Java olması durumunda yapabileceğiniz bir şey. Yani Java runtime environment'ınız varsa Java'da yazılmış bir programı çalıştırabilirsiniz.
+
+268
+01:00:28,039 --> 01:00:33,260
+Ama geliştirme yapmak istiyorsanız, yani derleyeceğim.
+
+269
+01:00:33,300 --> 01:00:40,640
+Derleme hatalarını göreyim, dene uyarsın, tekrardan onu düzelteyip, sintaksi olarak tekrardan derlemeye çalışayım.
+
+270
+01:00:40,760 --> 01:00:43,500
+Bu serüveni yaşamak istiyorsanız, JDK'nız olması lazım.
+
+271
+01:00:43,500 --> 01:00:50,500
+Bu arada söylemedim ama ideleri falan yüklediğinizde otomatik kendisi, JDK'larınız yoksa eğer, JRE'yi bile bazen yüklüyorlar.
+
+272
+01:00:51,000 --> 01:00:52,720
+Onu da ekstradan bahsetmiş olayım.
+
+273
+01:00:54,160 --> 01:00:58,800
+Çalıştırma kısmı ise Java Runtime Environment'da gerçek bir şey, onu söylemiştik.
+
+274
+01:00:58,920 --> 01:01:01,039
+Bu da Java Virtual Machine var.
+
+275
+01:01:01,300 --> 01:01:24,200
+Java Virtual Machine tüm Java programının akışını kontrol eden bir yapısı var. Çeşitli durumlarda Java'da ürettiğimiz, çeşitli kullanmadığımız değişkenleri temizleyen veya sınıflar arasındaki bağlantıları gerçekleştiren birçok kapsamlı yapısı var.
+
+276
+01:01:24,200 --> 01:01:29,200
+Onları zaten vakti geldiğinde detaylı bir şekilde Java Virtual Machine'in görevlerinde...
+
+277
+01:01:29,300 --> 01:01:43,960
+Sizlerle paylaşıyor olacağız. Bu arada sorusu olan varsa istediği zaman sorabilir. Ben bazen sorusu olan var mı diye soruyorum ama yani düşünün bir bilgisayar karşısında oturuyorum. Tek başıma odada bazen klima çalışıyor.
+
+278
+01:01:44,628 --> 01:01:58,268
+Klemanın sesi geliyor. Onun haricinde bir bilgisayara karşı bunları anlattığım için ne kadar kişi bilmiyor, ne kadar bir atraksiyon var ve sorunuz var mı diye sormayı unutamıyoruz. Lütfen size sorunuz olursa arada sorun.
+
+279
+01:01:58,608 --> 01:02:06,748
+Şimdi gelelim UML şemalarının nasıl temsil edildiğine. Bunlarla ilgili çeşitli kanalardan bahsediyoruz.
+
+280
+01:02:09,235 --> 01:02:28,936
+Temelde, işte UML diagramında, işte interaction diagramları, UML interaction diagramları, UML sequence diagramları farklı farklı yapılar var. Bizim kullandığımız bir önceki saatte size anlattığım bu nesne yönelikli kavramları sembolize nasıl ediyoruz bunlardan bahsediyoruz.
+
+281
+01:02:29,907 --> 01:02:39,727
+Renkten bağımsız bir şekilde bir dikdörtgenin içerisinde büyük harfle başlayarak yazılmış bir ifade görüyorsanız o %100 sınıftır.
+
+282
+01:02:40,647 --> 01:02:49,747
+Büyük harf kısmı önemli. Bir de programlama yapıyorken o dillerin çeşitli teamülleri var.
+
+283
+01:02:50,063 --> 01:02:56,223
+Yani doğrudan sintaksal bir hataya sebebiyet vermenizi istediğiniz gibi çalıştırabilirsiniz bazı şeyleri.
+
+284
+01:02:56,223 --> 01:03:05,103
+Teamnüller kısmında ama sizin nasıl söyleyelim o kurallara uyumanız beklenir ki her ki...
+
+285
+01:03:05,103 --> 01:03:14,863
+Java yazan veya her nesne önemli programlama biliği yazan kişi bu kurallara uyuyorsa daha önce başka birisinin yazdığı okudu okuyup anlaması çok daha rahat olacaktır.
+
+286
+01:03:14,863 --> 01:03:29,063
+UML diagramında bir kare dikdörtgen içerisinde bir büyük harfle başlayan ifade görüyorsunuz. Bu bir sınıf ismidir. Ondan bahsedebiliriz.
+
+287
+01:03:29,407 --> 01:03:52,427
+Yine aynı dikdörtgene benzer, bunların boyutları farklı şekilde olabilir, aynı dikdörtgene benzer bir sembolün içerisinde iki noktayla ayrılmış sağ tarafta büyük harfle başlayan bir isim, sol tarafta da yine genelde küçük olur, küçük harfle başlayan bir isim görüyorsanız bu da bir objeyi temsil eder.
+
+288
+01:03:52,427 --> 01:03:55,527
+Sağ taraftaki bulunan şey class ismidir.
+
+289
+01:03:55,764 --> 01:04:11,944
+Kar sınıfından, araba sınıfından kit isminde bir obje üretilmiş. Yani insan sınıfı olsaydı insandan kit diye bir kişi üretilecekti. O şekilde düşünün. Kit diye bir objemiz olduğunu düşünelim. Şimdi bakın.
+
+290
+01:04:13,204 --> 01:04:27,543
+farklı farklı gösterimler var. Onları da görmüş olun. Altı çizili olduğunda bu aynı zamanda bir obje olduğunu bize söylüyor. Her durumda bu yeni client'lı örnekte gördüğünüz gibi
+
+291
+01:04:29,300 --> 01:04:37,600
+Objenin sınıfı her durumda bize söylenmeyebilir ama küçük artta yazılmış ve altı çizilmişse onun bir obje olduğunu biliyoruz.
+
+292
+01:04:37,720 --> 01:04:41,600
+Büyük artta yazılmışsa onun bir sınıf olduğunu biliyoruz.
+
+293
+01:04:41,680 --> 01:04:44,260
+Şimdi sol tarafta client objesi var.
+
+294
+01:04:45,200 --> 01:04:47,260
+Sağ tarafta da kit objesi var.
+
+295
+01:04:47,635 --> 01:04:54,135
+Kit objesine özel olarak bakıldığında biz car sınıfından türetildiğini görüyoruz.
+
+296
+01:04:54,536 --> 01:04:58,696
+Client objesine bakıldığında sınıfının ne olduğunu bilmiyoruz.
+
+297
+01:04:59,036 --> 01:05:01,216
+Belki hiçbir zaman da bilemeyeceğiz.
+
+298
+01:05:01,556 --> 01:05:05,155
+Bazı objelerin sınıflarını bilmeden de işlem gerçekleştirebiliyor olacağız.
+
+299
+01:05:05,316 --> 01:05:06,356
+Onları da göreceksiniz.
+
+300
+01:05:06,856 --> 01:05:14,476
+Şimdi bu bir sequence diagram, bir akış diagramı, bir programın akışını temsil eden bir şey.
+
+301
+01:05:15,635 --> 01:05:37,756
+Burada gördüğünüz uzunlamasına olan dikdörtgenler nesnelerin yaşam döngüsünü bize anlatıyor. Yani bir dikdörtgen başladığı anda bu nesne artık create edilmiş. Yani oluşturulmuş, memori'de artık yer kaplayan bir vaziyette yaşamı başlıyor ve bittiğinde de sonlanıyor.
+
+302
+01:05:38,228 --> 01:05:48,527
+Şimdi, client nesnesinin yaşama başlamış belli bir süre sonra bir getplate isimli bir fonksiyon çağırılmış.
+
+303
+01:05:49,007 --> 01:05:52,507
+Burada fonksiyonlara metot dediğimizden az önce bahsetmiştim.
+
+304
+01:05:53,047 --> 01:06:00,447
+Metot dediğimizde bir sınıfın gerçekleştirebileceği çeşitli eylemler, çeşitli fonksiyonlar.
+
+305
+01:06:00,447 --> 01:06:01,407
+Tekrar söylüyorum.
+
+306
+01:06:02,688 --> 01:06:06,228
+Okun yönü incelendiğinde hemen de...
+
+307
+01:06:06,228 --> 01:06:09,427
+Flight nesnesinin GetPlayT ile birlikte
+
+308
+01:06:10,003 --> 01:06:32,023
+Kit'e gidip yani kar sınıfından üretilmiş nesneye soruluyor. Yani senin plakan ne? Aslında öğrenilmek istenilen şey bu. Nesneler arasında sürekli etkileşim olacak. Bir nesne diğer nesneye çeşitli sorular soracak. Onlardan çeşitli cevaplar bekliyor olacak. Bunu görselleştirebildiğimiz bu diagramı UMLS diagramı diyoruz.
+
+309
+01:06:37,364 --> 01:06:56,364
+Ona bu soru geldiği anda ömrü başladı. Bunları tabii sanal makine yönetiyor. Ömrü başladı. Ardından işte kendisinin adının ne olduğunu, çeşitli belki işlemler gerçekleştiriyor olacak, arasında sorgular gerçekleştiriyor olacak. Bunları gerçekleştirdi ve geri cevap olarak...
+
+310
+01:06:57,619 --> 01:07:21,960
+plate'i döndürdü. Yani getplate'in bir geri dönüş tipi varmış. O da plakaymış. O şekilde düşük. Şimdi tip bağımsız konuştuğumuz için o yüzden tiplere henüz girmiyoruz. Ama getplate olan getplate metodunun neticesinde bir geri dönüş yapılmış plakayı göstermiş. Bu temelde sequence diagramımızın en basit gösterimi.
+
+311
+01:07:24,692 --> 01:07:34,631
+En basit gösterim. Şimdi devam ediyor onun. Bir diğer göreceğiniz semboller şunlar. Paketleme mantığı var.
+
+312
+01:07:35,027 --> 01:08:02,647
+Nesne Yönelik'in programlama dillerinde. Sınıflar belli paketlerin içerisinde yer alsın veya belli paketler başka paketlerin içerisinde yer alsın. Sanki bir dizinleme, bir klasörleme sistemi gibi düşünebilirsiniz. Öncelikle bir proje yazacaksak bir paket oluşturuyoruz, paketin içerisine çeşitli sınıflarımızı yerleştiriyoruz. O paketin içinde başka paketler olabilir, başka paketler olabilir, onların üstünde ek sınıflar olabilir gibi düşünebilirsiniz.
+
+313
+01:08:03,027 --> 01:08:20,627
+UML diagramında ise paketi şu şekilde gösteriyoruz. Bakın, package1 isimli bir paket varmış. İçerisinde class A ve class B olmak üzere iki tane sınıf varmış. Aynı zamanda içerisinde package2 diye yeni bir paket varmış ve onun içerisinde de class C sınıfı varmış.
+
+314
+01:08:30,576 --> 01:08:56,115
+yapısında erişmek istiyorsak, paket 2'ye erişmek istiyorsak muhakkak paket 1'den bahsetmemiz gerekiyor. Yani paket 1 nokta, paket 2 gibi böyle noktayla her klasör dizinin de içeriye doğru gidip gitmek istiyorsak nokta koyarak yeni isimleniyordur, yukarıya doğru çıkmak istiyorsak isimlerini silerek noktaları da arada siliyoruz.
+
+315
+01:08:58,579 --> 01:08:59,692
+Arkadaşlar, class, object,
+
+316
+01:09:01,268 --> 01:09:05,568
+Öncelikle şunlardan bahsediyor olalım. Ondan sonra bir yerine gelelim.
+
+317
+01:09:07,048 --> 01:09:11,988
+Görünebilirlik kurallarımız denilen bir kural dizimiz söz konusu.
+
+318
+01:09:12,648 --> 01:09:23,427
+Burada temelde aslında bilgiyi sınıflar birbiriyle veya objeler birbiriyle ne şekilde paylaşsın, ne şekilde gizlesin onları tutuyoruz.
+
+319
+01:09:28,703 --> 01:09:36,703
+Public manasına geliyor ve bu alan benim diğer...
+
+320
+01:09:36,979 --> 01:09:59,979
+Sınıflar benim projem içerisinde bulunan diğer sınıflar tarafından da erişilip kullanılabilir alanlar olsun diye istediğim attribute'ler veya metotlar varsa onları public olarak tanımlamam gerekiyor. Böylece diyelim ki ben ne bileyim ortalama hesaplama diye bir sınıf yazmışım. Bir sürü iş yapıyor. Başka bir sınıftan bunun çeşitli...
+
+321
+01:10:00,000 --> 01:10:08,360
+Tribüutları ve metotlarının da kullanılabilmesini istiyorsak bunu public olarak isimlendiriyoruz. Bir diğeri private, UML gösterimi eksi.
+
+322
+01:10:09,235 --> 01:10:27,115
+Bu şekilde. Böyle olduğu durumda, private olduğu durumda biz nest şeyi, ne denir ona, attributeları ve metotları sadece kendi yazdığımız sınıf içerisinde kullanmak istiyorsak private olarak işaretlememiz gerekiyor.
+
+323
+01:10:27,695 --> 01:10:33,296
+Tanım olarak Java kodu yazarken private diyeceğiz ama UML'de gösterirken eksi.
+
+324
+01:10:33,844 --> 01:10:47,224
+Veya tire nasıl şekilde isimlendirseniz sembolünü kullanıyor. Bir diğeri protected. Bunlar dediğim gibi visibility kuralları olduğu için temelde nedeni olarak kullanıyoruz.
+
+325
+01:10:47,344 --> 01:11:01,243
+Protected aslında private ve zaman zaman public içeren bir yapı. Kullandığımız çeşitli durumlar söz konusu olacak ama artık çok fazla günlük kullanılmıyor. Onu da söyleyeyim.
+
+326
+01:11:01,844 --> 01:11:15,363
+Ve siz protected tanımı yaparak belli başlı yerlere erişimi private, belli başlı yerlere erişimiyle indiğinde public bir yapıda çalışabilsin diye söyleyebiliyoruz.
+
+327
+01:11:15,443 --> 01:11:26,523
+Bundan bahsedebiliyoruz. Bir diğeri package. O da tilda işareti. Package olduğundaysa o paket içerisinde bulunan
+
+328
+01:11:26,868 --> 01:11:32,568
+tüm classlar tarafından bu bilgilere erişilebildiği manasına geliyor.
+
+329
+01:11:32,688 --> 01:11:33,888
+Mesela bir örnek yapalım.
+
+330
+01:11:34,260 --> 01:11:38,239
+Class'ın bir önceki tanımını şöyle görmüştük.
+
+331
+01:11:38,340 --> 01:11:39,940
+Yani şuradaki car sınıfına bakın.
+
+332
+01:11:40,420 --> 01:11:44,079
+Ama bu şekilde genellikle tanımlanmaz.
+
+333
+01:11:44,180 --> 01:11:48,380
+Evet, yukarıda bir dikdörtgen var ama altında metotlarını ve attribütlerini yazarız.
+
+334
+01:11:48,380 --> 01:11:49,819
+Bakın şöyle tanımlanırız.
+
+335
+01:11:49,860 --> 01:11:52,920
+Öncelikle class ismini yazıyoruz.
+
+336
+01:11:53,380 --> 01:11:55,300
+Ardında yine bir dikdörtgen oluyor.
+
+337
+01:11:55,540 --> 01:11:57,700
+Buraya attribütler yazılır şu alana.
+
+338
+01:11:58,200 --> 01:12:00,420
+Altında tekrardan bir dikdörtgen olur.
+
+339
+01:12:00,840 --> 01:12:02,260
+Bu alana da metot.
+
+340
+01:12:02,260 --> 01:12:09,280
+Yani önce attribute alanlarını yazıyorum. Ondan sonra da fonksiyonlarını yani metotlarını yazıyorum.
+
+341
+01:12:09,380 --> 01:12:11,260
+Classini yazdınız. Bakın.
+
+342
+01:12:11,631 --> 01:12:39,631
+Naming kurallarına lütfen dikkat edin. Class isminde işte ilk harfi büyük. Ondan sonra yeni bir karakter, yeni bir kelime başlıyorsa bitiş yazılacak. Ama ikinci harfi yine büyük. Yani tüketici elektroniği diye bir classımız olsun. T'si büyük, yine E'si de büyük. Farklı kelimelerden oluşuyorsa bu şekilde büyütebiliriz. Yani bunu Java anlıyor mu ki iki farklı kelime olduğunda büyüteyim? Hayır. İşte bunlar isimlendirme kuralları. Teamül dediğim basit.
+
+343
+01:12:39,631 --> 01:13:07,411
+bahsettiğim şeyler okunabilirliği kolaylaştırması adına lütfen siz de bu yapıya yavaş yavaş alışıyor olun. Bakın attribute isimleri küçük hafda başlamış. Bir tane attribute küçük hafda başlamış ama kendisinden sonra gelen her bir kelime tekrardan büyük hafda başlamış. Bir tane private değil. Nereden private olduğunu anlıyoruz. Değişkinin isminin private olmasından değil. Önünde direkt işareti olduğu için private.
+
+344
+01:13:07,631 --> 01:13:25,631
+olduğunu söyleyebiliriz. Bakın bu, o attributun ismi, bu da iki noktadan sonra attributun tipi. Bu şekilde görselleştiriyoruz. Ardından artı sembolüyle beraber verilmiş bir, iki, üç, dört tane public tipte metot var. Metotlar...
+
+345
+01:13:26,228 --> 01:13:51,087
+Fonksiyon gibi düşündüğümüzde içerisine girdi de alabilir, almaya da bilir. Geriye değer de döndürebilir, dönmeye de bilir. Bakın, e-public void metodu düşünün. İçerisine hiçbir şekilde bir parametre girdi almamış ve geriye hiçbir şey döndürmemiş. Geriye hiçbir şey döndürmediğini nasıl anlıyoruz? Eğer geriye bir şey dönseydi iki nokta koyup return tipinin ne olduğunu belirtmemiz gerekiyordu. Sanki bir fonksiyon prototipiymiş gibi düşünün.
+
+346
+01:13:51,471 --> 01:14:01,112
+Eğer ki içine bir veri girmesini istiyorsak, onun içerisine de hangi tipte veya parametrenin isminin ne olacağını söylememiz gerekiyor parantez içinde.
+
+347
+01:14:01,551 --> 01:14:08,752
+Mesela bir tane public metodum var. Yine hiçbir parametre almamış ama geriye bir veri döndüreceğim. Onun tipini yazıyorum.
+
+348
+01:14:09,252 --> 01:14:11,231
+Yine bir tane parametre alan metodum var.
+
+349
+01:14:11,731 --> 01:14:39,731
+Burada içerisine bir tane parametre almışım. Parametre ismini ve tipini yazıyorum ama yeriye hiçbir şey göndürmüyor. Burada da onun iki parametre bir versiyonu var. Arabadan buna örnek verecek olursak bakın. Car. Bir tane attribute var bunun. O da play, plaka. Yani eksi olduğu için private ve herhangi bir şekilde bizim sırtımız tarafından başka bir yerden erişilemez. Ve tipi de string'miş. İki tane de mesela.
+
+350
+01:14:39,731 --> 01:14:44,492
+getplate ve setplate diye. Bunların tiplerinde public olduğunu görebiliyoruz.
+
+351
+01:14:44,851 --> 01:14:51,231
+getplate metodu içerisine hiçbir şekilde parametre almıyormuş ama geriye string tipinde bir parametre dönmüyormuş.
+
+352
+01:14:51,692 --> 01:14:57,112
+string dediğimiz, şimdiye kadar tabii çok fazla string ile ilgili kavramı görmemiş olabilirsiniz.
+
+353
+01:14:57,791 --> 01:15:04,731
+Karakter dizisinin özel bir tanım şekli. Öyle söyleyelim. Karakter dizisi. Tamam mı? Kata, string.
+
+354
+01:15:05,332 --> 01:15:18,372
+SetPlate dediğimizde de arabanın plakasının ne olduğunu kaydetmek istiyoruz. Öyle düşünün. O attribute'un içerisine yazmak istiyoruz. İçerisine parametre olarak string tipinde bir veri.
+
+355
+01:15:18,931 --> 01:15:40,771
+veriyor olacağız ve çıktı olarak herhangi bir şey geri bize döndürmeyecek. Bakın parametre içerisine tanımı yaparken parametrenin ismi iki nokta tipi de yazabilirsiniz, direkt tipi de yazabilirsiniz. Her ikisi de kabul. C'de de fonksiyonun prototipini belirlerken sadece int de yazsanız oluyordu. Int a da yazsanız parametre olarak içerisine verdiğimiz şeyi oluyordu hatırlarsanız.
+
+356
+01:15:42,676 --> 01:15:43,856
+Hocam bir şey sorabilir miyim?
+
+357
+01:15:43,856 --> 01:15:46,316
+Burada da çok benzer bir durum var. Evet, [öğrenci], buyurun.
+
+358
+01:15:46,776 --> 01:15:56,596
+Hocam, Kar isimli benim bir sınıfım var ya, onun hangi paketten olduğunu nasıl anlayacağım? Sonuçta biz private'leri eksi yapıyorduk, public'leri artı yapıyorduk.
+
+359
+01:15:57,171 --> 01:16:01,251
+Package isimlerini de eksiyle belirtiyorduk ya, tam olarak onu nasıl karşılatacağız?
+
+360
+01:16:01,751 --> 01:16:08,371
+Package isimlerini eksiyle belirtiyoruz diye bir şey yok. Package isimlerini, yani visibility tipini mi, şunu mu diyorsun?
+
+361
+01:16:08,631 --> 01:16:09,791
+Evet, aynen, onu diyorum.
+
+362
+01:16:09,931 --> 01:16:20,111
+Bu eksi değil de tilde işareti. Tildayı biliyor musun? Yani bu şöyle yamuk olan bir işaret var ya, başka bir adı var onu bilmiyorum ama.
+
+363
+01:16:20,152 --> 01:16:21,211
+Tamam, biliyorum hocam onu.
+
+364
+01:16:21,211 --> 01:16:23,291
+Tamam, o eksi değil, tilde.
+
+365
+01:16:25,235 --> 01:16:41,536
+Burada tilde yok şu an. Olan örnekler olacaktır. Onlara bakıyor olacağız. Evet, devam edelim. Şimdi members dediğimiz şey, attribute'lara ve metotlara total olarak members diyoruz. Alanlar yani.
+
+366
+01:16:42,036 --> 01:17:06,435
+Bakalım ne tarz alanlar var. Şimdi static member keyword'lar var. Yani static diye bir keyword var. O static keyword'ün hem metotlar için hem de attribute'lar için kullanabiliyoruz. Tamam mı? Bak şuradan bakalım. Attribute neydi? Bakın şu attribute, tekrar söylüyorum, car için bu attribute, bu da metot. Tamam mı?
+
+367
+01:17:07,412 --> 01:17:14,612
+Bunu tanımlarken hem attribute tanımlarken statik hem de method tanımlarken statik kullanabiliyoruz.
+
+368
+01:17:15,091 --> 01:17:19,231
+Kafanızda lütfen yanlış anlaşılmasın bu.
+
+369
+01:17:19,771 --> 01:17:23,692
+Statik ve final anahtar sözcüklerini kullanıyor olacağız.
+
+370
+01:17:23,692 --> 01:17:29,611
+Bu her ikisi farklı şimdiye kadar öğrendiğiniz programlama dillerinde yine reserve work'tur.
+
+371
+01:17:29,912 --> 01:17:31,752
+Ama farklı anlamlarda kullanılıyor olabilir.
+
+372
+01:17:32,091 --> 01:17:34,332
+Lütfen buradaki anlamlarına dikkat edin.
+
+373
+01:17:34,431 --> 01:17:39,011
+Şimdi benim tanımladığım çeşitli statik alanlar olabilir.
+
+374
+01:17:39,551 --> 01:17:41,692
+Bu alan eğer ki statikse...
+
+375
+01:17:42,804 --> 01:17:56,844
+Sınıfın bir sınıftan herhangi bir şekilde instance üretmeden, obje üretmeden de direkt o sınıfın statik alanlarını ben erişip kullanabilirim.
+
+376
+01:17:57,283 --> 01:18:06,203
+Veya öyle statik alanlar vardır ki bütün üretilen nesneler için değeri de ortaktır.
+
+377
+01:18:06,323 --> 01:18:09,063
+Tamam mı? İçerisine girdi yapılan değeri ortak.
+
+378
+01:18:09,443 --> 01:18:10,703
+Hocam ne demek istiyorsunuz?
+
+379
+01:18:11,103 --> 01:18:16,503
+Düşünün, Yıldız Teknik Üniversitesi'nde okuyan öğrencilerin bir tane alanı var, okuduğu üniversite.
+
+380
+01:18:17,323 --> 01:18:20,963
+Yani nasıl yani? Herkes Yıldız Teknik Üniversitesi'ne verir tabanı zaten bu.
+
+381
+01:18:21,483 --> 01:18:27,263
+Herkesinki ortaksa bu şekilde direkt orayı statik olarak tanımlayabilirsiniz.
+
+382
+01:18:27,263 --> 01:18:31,724
+Sizin oluşturduğunuz nesneler, ondan sonra oluşturduğunuz nesnelerin içerisinde direkt olur.
+
+383
+01:18:33,652 --> 01:18:41,851
+Bir nesne üzerinden değil, direkt sınıfın static attribütürünün ismini yazarak erişebilirsin. Bunları görüyor olacağız.
+
+384
+01:18:42,471 --> 01:18:52,112
+Aynı şey metotlar için de geçerli. Öyle metotlar vardır ki, instance'ını üretmeden de direkt sınıf ismiyle kullanabileceğim şekildedir.
+
+385
+01:18:52,112 --> 01:19:01,112
+Veya yine member'da olduğu gibi, kendisinden üretilen tüm metotların aynı şekilde...
+
+386
+01:19:01,652 --> 01:19:05,152
+tüm objelerde aynı şekilde kullanıldığı durumda.
+
+387
+01:19:05,328 --> 01:19:26,768
+Bir diğeri final anahtar sözcüğü. Final anahtar sözcüğünü hem değişkenler yani attribute'da hem class'lar hem de metotlar için kullanabiliyorum. Yani variable'ın başına final yazdığımda farklı manaya geliyor. Class'ın başına final yazdığımda farklı manaya geliyor. Metodun başına final yazdığımda farklı manaya geliyor. O manalar da burada.
+
+388
+01:19:26,768 --> 01:19:33,328
+Eğer variable bölümdülü yazıyorsam constant hiç değiştirilemez bir değişken.
+
+389
+01:19:33,328 --> 01:19:46,148
+Ben yapmak istiyorum. Yani ben final tipinde bir değişken yapıyorsam onun değeri 17, 17 yani programın önümüzü alıncaya kadar 17. Bu static ve final çok karışıyor o yüzden.
+
+390
+01:19:46,388 --> 01:19:57,408
+Static yani hani final yapmaya çalışırken statik kullanıyorsunuz. Anlı şey değil. Final yaptığınızda constant değişken oluşturmak için eğer variable'larda kullanıyorsanız.
+
+391
+01:20:00,000 --> 01:20:08,440
+class'tan herhangi bir şekilde inheritance yapılmasını engellemek istediğiniz, kalıtım yapılmasını engellemek istediğinizi belirtmek istiyorsunuz.
+
+392
+01:20:08,800 --> 01:20:12,000
+Metotla kullanıyorsak overriding diye bir kavram.
+
+393
+01:20:12,467 --> 01:20:26,907
+Söz konusu. O metodun ismiyle alt sınıflarda veya nasıl söyleyelim aynı sınıfta olduğu çeşitli örnekler de olabilir tabii.
+
+394
+01:20:27,448 --> 01:20:34,407
+Tekrardan bu metodun ismiyle farklı işlevleri yerine getirebilen metot yazılamaz. Bir tek ben olayım.
+
+395
+01:20:35,068 --> 01:20:37,768
+Mesela şimdi şöyle düşünelim. Şöyle düşünelim.
+
+396
+01:20:38,144 --> 01:20:55,144
+Bu kavramı tabii C'de çok fazla görmemişsinizdir veya Semmel'de de yoktu. Mesela Semmel'de bir prosedür yazalım. Aynı isimde iki farklı prosedür olursa sistemin kafası karışık. C'de de öyleydi. Ama burada aynı isimde birden fazla metot yazabiliyoruz.
+
+397
+01:21:04,467 --> 01:21:14,608
+Alt sınıfında o metodun farklı şekilde çalışmasını istiyorum. Buna da override diyoruz işte. Bu kavramlardan bahsediyoruz. Eğer ki siz override yapılmasını engellemek istiyorsanız.
+
+398
+01:21:17,043 --> 01:21:36,043
+Final anahtar sözcüğünü kullanmanız gerekiyor. Final bir kere kullanılsın, bir daha kullanılmasın demek için. Yani özetle, statik anahtar sözcüğü ise tüm bu sınıftan üretilen tüm nesnelerde ortak bir şekilde bu alan değeri belirlensin diye kullanıyoruz.
+
+399
+01:21:36,263 --> 01:21:36,644
+Hocam.
+
+400
+01:21:37,224 --> 01:21:38,324
+Buyurun, [öğrenci].
+
+401
+01:21:38,763 --> 01:21:41,423
+Bugün şeye geçecek miyiz herhangi bir kod yazmaya da?
+
+402
+01:21:42,228 --> 01:21:43,907
+İzen'in nasıl çalıştığını görme gibi.
+
+403
+01:21:44,448 --> 01:21:45,827
+Ona göre mi dersten çıkacaksın?
+
+404
+01:21:46,327 --> 01:21:47,667
+Yok, dersten çıkmayacağım hocam ya.
+
+405
+01:21:47,827 --> 01:21:48,407
+Onu hiç sormadım.
+
+406
+01:21:48,927 --> 01:21:52,407
+Yani bugün bilmiyorum yazar mıyız, yazmayı da.
+
+407
+01:21:52,868 --> 01:21:55,547
+Yani kodlar çeşitli kod örnekleri olacaktır illa.
+
+408
+01:21:56,128 --> 01:21:56,667
+Slide'dan.
+
+409
+01:21:57,007 --> 01:22:02,487
+Yani normalde diğer hocalarımız derste kod yazdığını ben düşünmüyorum ama ben bu dersi anlatırken hep kod yazıyor olacağım.
+
+410
+01:22:03,128 --> 01:22:05,648
+Bugün belki yazmayız çünkü geçen hafta dersimiz olmadık.
+
+411
+01:22:05,648 --> 01:22:06,467
+İlk dersimiz.
+
+412
+01:22:06,667 --> 01:22:08,507
+Oradan kalan da arttıklar var.
+
+413
+01:22:09,043 --> 01:22:10,363
+Ama yazıyor olacağız.
+
+414
+01:22:10,844 --> 01:22:14,644
+Öyle daha iyi anlaşıldığını düşünüyorum da onun için hani bir şey yapmıyordum hocam, sorayım dedim yani.
+
+415
+01:22:15,083 --> 01:22:19,384
+Tamam yani işte sizin biraz bakman lazım. Önce kavramları anlatıyoruz.
+
+416
+01:22:20,043 --> 01:22:24,824
+Kod yazdığımız çeşitli durumlarda olacak ama şu an daha tam kod yazıcıları hale gelmedi.
+
+417
+01:22:24,824 --> 01:22:27,083
+Başka diğer kavramları da öğrenmemiz lazım.
+
+418
+01:22:29,484 --> 01:22:30,683
+Evet, tamam.
+
+419
+01:22:31,859 --> 01:22:35,019
+Mesela constructorlar olmadan kodu yazamayız.
+
+420
+01:22:35,459 --> 01:22:45,679
+Şimdi constructor, bu da constructor ve finalizer, neyse, sonlandırıcılar.
+
+421
+01:22:45,859 --> 01:22:54,519
+Yani buna işte finalleştiriciler diye Java'da söylenmiş ama mesela C++ buna baktığınızda deconstructor olarak görürsünüz.
+
+422
+01:22:55,079 --> 01:22:56,059
+Onu da söylemiş olalım.
+
+423
+01:22:56,459 --> 01:22:57,500
+Şimdi bu bir metot.
+
+424
+01:22:58,619 --> 01:22:59,079
+Tamam mı?
+
+425
+01:22:59,507 --> 01:23:21,387
+Bu bir metot. Metot şu şekilde oluyor. Siz az önce bahsettim ya bir class'ınız var. O class'ınızdan bir instance oluşturmak istiyorsanız, bir obj oluşturmak istiyorsanız, o class'ın constructor metotlarını kullanmanız lazım.
+
+426
+01:23:22,579 --> 01:23:39,800
+Yani bir metottur, tekrar söylüyorum. Farkı, constructor olduğunu nasıl anlarım? Hocam, yani bir sınıfın içerisinde 17 tane metot var. Hangisi constructor? Sınıfın ismiyle aynı olan isimde bir metot varsa o constructor.
+
+427
+01:23:45,199 --> 01:24:12,859
+Genellikle new anahtar sözcüğüyle beraber oluşturduk. Tekrar söylüyorum bir sınıfımız var, insan. Bu insan sınıfından bir instance üreteceğiz, bir obje üreteceğiz, Furkan Çakmak. İşte bu insan sınıfından Furkan Çakmak üretmek için kullandığımız metoda constructor metodu diyoruz. Az önce bahsettim, overriding. Bu da overloading. Overloading şu, aynı isimde birden fazla metot olabilir ama
+
+428
+01:24:13,199 --> 01:24:18,319
+parametreleri birbirinden, aldığı parametreler birbirinden farklı olabilir.
+
+429
+01:24:18,839 --> 01:24:24,659
+Yani sizin bir tane sınıfınız olsun bunun dört farklı constructori olabilir.
+
+430
+01:24:24,659 --> 01:24:34,779
+Bu ne demektir? Yani dört tane metodunun ismi aynı, o da sınıfın ismi ama her birisi farklı sırada veya farklı sayıda, farklı özelliklerde giriş parametresi alabilir.
+
+431
+01:24:35,119 --> 01:24:36,199
+Örnek veriyor olacağız.
+
+432
+01:24:37,300 --> 01:24:47,699
+Bunu oluşturmadan o nesnenin ömrünü başlatamıyorsunuz. Yani constructor ile beraber başlıyor. Ondan sonra şurada gördüğünüz gibi deconstructor kullanarak sonlanıyor.
+
+433
+01:24:48,219 --> 01:25:02,599
+Deconstructor tarafı bazı dillerde memory management'ı genellikle nasıl söyleyelim programcının elinde ve kabiliyetinde yerdisinde olan dillerde deconstructor çok sıkça kullanılıyor.
+
+434
+01:25:05,300 --> 01:25:08,439
+Sanal makine handle'una bırakılmış durumda.
+
+435
+01:25:10,599 --> 01:25:13,899
+O yüzden deconstructor işiyle çok fazla uğraşmıyoruz.
+
+436
+01:25:14,579 --> 01:25:17,359
+Construct etme ve deconstruct etme bu şekilde.
+
+437
+01:25:17,899 --> 01:25:21,423
+Muhakkak bir nesneyi kullanmadan önce construct etmemiz lazım.
+
+438
+01:25:21,423 --> 01:25:29,304
+lazım. Fiyatlarını da doğru şekilde ayarlamamız gerekiyor. Onların nasıl olduğundan yine bahsediyor olacağız.
+
+439
+01:25:29,743 --> 01:25:47,344
+Şimdi kendinize ait bir sınıf ve o sınıftan bir obje üretmek isteyelim. Bakın, car isminde bir sınıfımız var. Bir tane attribüt var. Mesela şu örneği verdik. Bunun kaç tane attribütü vardır? Bir tane. O da play. Tipi string'miş. Özelliği de private'miş. Car isminde bir metodu var.
+
+440
+01:25:48,083 --> 01:25:52,383
+Her isimde bir metodu varsa sınıfın ismiyle aynı. Bu nedir? Constructor metod.
+
+441
+01:25:52,756 --> 01:26:10,556
+İçine bir tane parametre alıyor, plaka numarasını alıyor. Metodun tipi string'miş. Ardından getplate ve setplate olmak üzere plakanın değerini atayan ve plakanın değerini atayan ve plakanın değerinin ne olduğunu söyleyen iki tane metot var.
+
+442
+01:26:10,556 --> 01:26:19,376
+Ardından introduce set diye bir metot var. Bu gördüğünüz gibi ne içerisine bir şey alıyor ne de bir şey döndürüyor. Bu muhtemelen şu demek.
+
+443
+01:26:21,043 --> 01:26:26,804
+ekrana, komut satırına bir şeyler yazıyor olacağım. Muhtemelen kendimi o şekilde tanıtıyor olacağım.
+
+444
+01:26:26,804 --> 01:26:36,304
+Ve son olarak da main metodumuz var. Yine C'den alışık olduğunuz üzere programın akışı burada da main metoddan başlıyor.
+
+445
+01:26:36,744 --> 01:26:46,324
+Main metod da harici komut satırından çalıştırılabileceği gibi veya farklı uygulamalardan çalıştırılabileceği durumlar için kendi içerisine de string tipte parametre alabiliyor.
+
+446
+01:26:46,944 --> 01:26:49,024
+Sizin aldığınız parametrenin tipi string değil.
+
+447
+01:26:49,043 --> 01:27:00,604
+İstediğiniz gibi aldıktan sonra cast edebilirsiniz, integer yapabilirsiniz. Ama giriş olarak parametre Spring kutunu da alıyor. Bakın bu arabanın yaşam döngüsünü inceliyor olalım.
+
+448
+01:27:03,564 --> 01:27:12,804
+Şimdi bir tane bizim kart sınıfıyla obje üreteceğimiz bir yapı söz konusu.
+
+449
+01:27:15,764 --> 01:27:23,583
+Daha güzel anlaşılması adına aslında bu şekilde iki tane gösterilmiş. Fakat bir kısım şeyler kendi üzerinde cereyan ediyor.
+
+450
+01:27:24,104 --> 01:27:29,523
+Şimdi sağ tarafta kar sınıfımız var ve buradan bir tane kart üretilmiş, bir tane araba üretilmiş.
+
+451
+01:27:29,983 --> 01:27:38,923
+Kendi içerisinde yani bunu main method gibi düşünün. Şu tarafı tamam mı? Kar sınıfının içerisindeki main metodu şuradan içerisinde cereyan ediyormuş gibi düşünün.
+
+452
+01:27:43,764 --> 01:27:47,163
+New anahtar sözcük constructor ile beraber kullanılıyordu.
+
+453
+01:27:47,583 --> 01:27:50,363
+Constructor'ın içerisinde bir tane constructor var zaten.
+
+454
+01:27:50,604 --> 01:27:53,743
+Plaka aldığı durum var. Plakasını söylüyorum. Bir tane araba oluşturdum.
+
+455
+01:27:53,844 --> 01:27:55,583
+Bakın bu nesnenin yaşam bölgesi başladı.
+
+456
+01:27:56,104 --> 01:27:56,844
+Geldim böyle.
+
+457
+01:27:58,676 --> 01:28:08,716
+plakayı başarılı bir şekilde oluşturduktan sonra şurada gördüğünüz geriye herhangi bir değer döndürmediği için bu nesnenin oluştuğunu bildiriyoruz.
+
+458
+01:28:08,876 --> 01:28:12,476
+Ama üstünde herhangi bir mesaj yok, geriye dönen herhangi bir mesaj yok.
+
+459
+01:28:12,476 --> 01:28:16,856
+Ardından introduce, serve diyorum. Ne olduğunu bize anlat.
+
+460
+01:28:18,056 --> 01:28:19,976
+Kendi yaşam döngüsü üzerinde.
+
+461
+01:28:20,404 --> 01:28:38,804
+Kendi metodunu çağırarak getplate, bunun kendi metodu getplate, şu gösterim o demek. Kendi metodunu çağırarak ayrı bir orada instance gibi oluşturup hemen değeri okuyup ondan sonra o değerin ne olduğunun geri döndürülmesi gibi bir durum söz konusu olabilir.
+
+462
+01:28:38,804 --> 01:28:47,964
+Evet, burada ama direkt şeyin içerisinde, şurada herhalde olaylar cerreyen ediyor. Aslında olması gereken şey main tarafa döndürülür.
+
+463
+01:28:48,404 --> 01:28:53,484
+Burada görselleştirme ameliyede çok yazılmamış ama şurada plakanın ne olduğu döndürülebilir.
+
+464
+01:28:53,904 --> 01:28:56,884
+Ama introduce self metodu olduğu için bu.
+
+465
+01:28:57,244 --> 01:29:00,444
+Introduce self metodunun geri dönüşü yok bakın şurada.
+
+466
+01:29:00,948 --> 01:29:20,448
+Geri dönüşüyor. Yani introduce self metodu çok yüksek bir olasılıkla ekrana bir şeyler yazacak. O yüzden şuradan geri dönüş beklemiyorum. Geri dönüş nerede gerçekleşiyor? Şu get plate ile beraber gerçekleşiyor. Burada çeşitli işlemler gerçekleşiyor. Ondan sonra introduce self metodu bunun uzaktan çağrılmış oluyor.
+
+467
+01:29:20,448 --> 01:29:24,387
+Şimdi bir diğeri primitive'ler ve gropper'lar.
+
+468
+01:29:24,467 --> 01:29:28,327
+Burada veri tiplerinden biraz bahsediyor olacağız size.
+
+469
+01:29:28,787 --> 01:29:29,987
+Primitive veri tipleri
+
+470
+01:29:31,091 --> 01:29:35,751
+Diğer alt seviye programlama dillerinde gördüğünüz veri tiplerinin aynısı.
+
+471
+01:29:35,891 --> 01:29:44,572
+Flow'dur, integer'dır, double'dır, char'dır gibi primitive veri tiplerini Java programlama dili destekliyor.
+
+472
+01:29:44,631 --> 01:29:46,471
+SMM programlama dili destekliyor.
+
+473
+01:29:47,072 --> 01:29:53,572
+Bunlarla beraber her bir primitive veri tipinin ve farklı farklı veri tiplerinin oluştuğu wrapperlar var.
+
+474
+01:29:53,971 --> 01:29:57,652
+Yani int diye integer bir veri tipi vardır.
+
+475
+01:29:57,791 --> 01:29:59,051
+Primitive bir veri tipidir bu.
+
+476
+01:29:59,091 --> 01:30:01,091
+Ama aynı zamanda...
+
+477
+01:30:01,823 --> 01:30:27,443
+İ'sini I olarak yazdığımız Integer diye de bir wrapper vardır. Integer sınıfının sanki o primitive veri titriği bir sınıf gibi oluşturup onun çeşitli özelliklerini kullanabileceğimiz yapılar var. Bunlara temelde wrapper diyoruz. Bu wrapperlar Java pakicinin altında bulunan LAND pakicinin altında konumlandırılmış durumdadır.
+
+478
+01:30:27,807 --> 01:30:37,547
+Kullanmak istediğimiz default özellikle first party kutubaneler varsa onlar direkt bizim JDK ile beraber gelecektir.
+
+479
+01:30:38,287 --> 01:30:45,247
+Java.lank'ı import ettiğimizde kutubaneler kodumuzun içerisine bunları kullanabiliyor olacağız.
+
+480
+01:30:45,688 --> 01:30:55,127
+Mesela ne tarz özellikler var bunlarla ilgili yani o wrapper veri tiplerinin işte compare gerçekleştirebiliyoruz.
+
+481
+01:30:55,828 --> 01:30:59,148
+Bunun integer değerini sorgulayabiliyoruz.
+
+482
+01:30:59,608 --> 01:31:01,248
+Veya integer'a cast edebiliyoruz.
+
+483
+01:31:01,348 --> 01:31:03,868
+Yani parse integer'a bu string'i cast et.
+
+484
+01:31:04,408 --> 01:31:07,588
+ToString dediğimizde bunun string olan halini bana döndür.
+
+485
+01:31:08,020 --> 01:31:26,160
+Veya string mesela işte bir içerisine integer sayı verip onun stringini bana döndür gibi veya işte bunun integer değerini bana döndür gibi çeşitli ek metotları var bu rapor tarafında. Bunlardan beraber bahsediyor olacağız.
+
+486
+01:31:26,680 --> 01:31:35,460
+Öncelikle string classının içerisine bilgilerin. Bakın siz sürekli derste kod yazacağız. Int diye bir veri tipimiz var.
+
+487
+01:31:36,020 --> 01:31:48,860
+primitivdir. Char diye veritifi var, primitivdir. Double kullanacağım. Neyse, farklı farklı veritifleri kullanacağım. Bunlar primitivdir. Ama string, dedim ya, char dizisi, string bir cluster. Yani bir rapor.
+
+488
+01:31:50,644 --> 01:32:17,583
+Mesela ne tarz metotları var? Hani biraz örnek olsun diye. Envai çeşit metodu vardır. Bunların hepsinin üzerinden geçeceğiz. Kendimiz de belki ekstradan farklı farklı şeyler yapıyor olacağız. Ama default olarak neler yapabiliyoruz hala hazırdır. Bir veri tipini tanımladığımız anda onlara bakalım. Leng, stringin boyutu ne? Yani 17 karakterden oluşan bir kelime vardır. Onu compare'de iki tane string'i birbiriyle karşılaştırmak istiyoruz.
+
+489
+01:32:17,876 --> 01:32:23,876
+Büyük küçük harf duyarsız bir şekilde karşılaştığını istiyoruz. Bu iki değer birbirlerine...
+
+490
+01:32:26,131 --> 01:32:47,011
+Eşit midir? İşte karşılaştırdığımızda mesela compare to integer sonuç döndürülmüş. Birden fazla değer yani döndürüyor. Farklı farklı döndürdüğü değerlerin bir manası var ama equals dediğimde doğru veya yanlış ya eşittir ya değildir. Buradaysa işte eşit olup olmamasına göre compare ediliyor yani. Size farklı sonuçlar dönüyor.
+
+491
+01:32:48,884 --> 01:32:54,023
+Veya aynı şekilde büyük küçük artı ignore ederek de bir booleum değer döndürebiliyoruz.
+
+492
+01:32:54,384 --> 01:32:58,743
+Bir stringin kendi içerisinde daha küçük bir stringi barındırabiliyor mu? Ona bakıyoruz.
+
+493
+01:32:59,283 --> 01:33:07,884
+Stringin tüm karakterlerini büyük artı yap, küçük artı yap gibi böyle bir sürü ekstradan metot, string tipinde bir şey tanımladığımız anda görüyoruz.
+
+494
+01:33:08,583 --> 01:33:10,963
+Onu söyleyelim. Bir diğeri matematik kütüphanesi.
+
+495
+01:33:11,463 --> 01:33:16,063
+Matematik kütüphanesine baktığımızda ise bir random metodu ile birlikte
+
+496
+01:33:16,884 --> 01:33:22,684
+İstediğimizce random sayı üretebiliyoruz. Mutlak değerini maksimum, minimumlu alabiliyoruz.
+
+497
+01:33:23,224 --> 01:33:34,884
+İşte aşağı yuvarlayabiliyoruz, yukarı yuvarlayabiliyoruz veya 0.5'ten hassasiyeti yukarıdaysa yukarı, aşağıdaysa aşağı yuvarla diye yuvarlayabiliyoruz veya işte...
+
+498
+01:33:35,636 --> 01:33:56,676
+Karakökü, karakökünü falan alabiliriz. Bir sürü ekstradan metotları var. Random sayılar düşünüldüğümde işte mesela next boolean diye bir nedenle bana Java util'in altında random sınıfının içerisinde bir random sayılarla işimiz varsa next boolean dediğimizde sıradaki true veya false'u yani rans gele.
+
+499
+01:33:56,676 --> 01:34:03,636
+Next double dediğimizde 0.0'la bakın 1.0'a bir double değer. Next float dediğimde de bu arada next is...
+
+500
+01:34:03,636 --> 01:34:05,916
+next int dediğimde şu aralıkta.
+
+501
+01:34:06,456 --> 01:34:17,696
+Yine belli bir eğer değer veriyorsak içerisinde parametre 0 ile o aralıkta next long dediğimizde 248 arasında bir değer bize temelde üretiyor.
+
+502
+01:34:17,696 --> 01:34:21,936
+Bunlar rastgele kütüphanesinin çeşitli metotları.
+
+503
+01:34:22,304 --> 01:34:42,744
+Genel olarak böyle bu rapor tarafına bakıldığında. Tekrar söylüyorum. Bizim bir primitiv veritiplerimiz var. Sizin C'de şimdiye kadar kullandığınız veritipler. Bir de biraz daha kompleks olan veritiplerimiz var. Listeler var. Göreceksiniz ArrayListler, Generator'la ilgili çeşitli şeyler. Bir sürü farklı farklı veritiplerimiz de olacak. Onları da görüyor olacağız.
+
+504
+01:34:43,444 --> 01:34:50,284
+Bugün temelde anlatacağımız şeyleri böyle noktalandırmış olalım. Önümüzdeki hafta biraz da kod yazarak.
+
+505
+01:34:50,304 --> 01:34:53,944
+bunları size gösteriyor olmak isterim.
+
+506
+01:34:54,364 --> 01:35:01,244
+Yani arkadaşımız, bir arkadaşımız söz anlıyor. [öğrenci]'da herhalde kodu yazacak mısınız diye önemli kesinlikle.
+
+507
+01:35:01,923 --> 01:35:07,224
+Sadece slide'dan kodları göstermek istemiyorum.
+
+508
+01:35:07,344 --> 01:35:11,244
+Biraz da yazıp nasıl çalıştığını göstermek istiyorum. Yanlış yazıp...
+
+509
+01:35:11,471 --> 01:35:39,431
+Bazen bilerek yanlış yazıyoruz. Bazen de ben de fark etmiyorum. Yani yanlış yazıyorum. Ama hani orada şeyi görün. Nasıl reaksiyon veriyoruz? Ne hata verdiğimde ne şekilde nereyi düzelterek o problemi çözmeye çalışıyoruz? Onları da görün. Yani her daim kasıtlı olarak yanlış yapmıyoruz. Bazen hakikaten yanlış yapıyoruz. Onları da görün istediğim için dersin böyle son kısımlarında bu haftadan itibaren biraz da önü çözmeye gayret ediyor olacağım. Buraya kadar soru soran arkadaşımız var.
+
+510
+01:35:39,471 --> 01:35:42,791
+Onları alabiliriz. Yoksa dersi bu hafta burada noktalarında alabiliriz.
+
+511
+01:35:47,604 --> 01:35:53,344
+Yok herhalde. Çok teşekkür ediyorum dinlediğiniz için kıymetli arkadaşlar. Önümüzdeki hafta görüşürüz.
+
+512
+01:35:55,264 --> 01:35:55,963
+İyi günler hocam.
+
+513
+01:35:56,463 --> 01:35:57,024
+İyi günler.
+
+514
+01:35:57,623 --> 01:35:59,144
+Hocam ağzınıza sağlık, sağ olun.
+
+515
+01:35:59,524 --> 01:36:02,483
+Teşekkür ederiz [öğrenci] Bey. Kendinize iyi bakın. Sağlıcakla kalın.
+
+516
+01:36:03,203 --> 01:36:04,663
+Eyvallah hocam. Çok sağ olun.
+
+517
+01:36:05,024 --> 01:36:05,543
+Görüşürüz.

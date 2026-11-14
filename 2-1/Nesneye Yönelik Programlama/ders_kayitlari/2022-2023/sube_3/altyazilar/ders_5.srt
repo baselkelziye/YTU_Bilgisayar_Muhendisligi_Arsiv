@@ -1,0 +1,1051 @@
+1
+00:11:05,556 --> 00:11:12,596
+Evet, merhaba kıymetli arkadaşlar. Umarım güzel bir gün geçiriyorsunuzdur.
+
+2
+00:11:12,596 --> 00:11:21,556
+Şimdi geçtiğimiz haftalarda hatırlarsanız nesnelerin birbirleriyle ilişkileri üzerindeki yapılarak üzerinde durmuştuk.
+
+3
+00:11:23,036 --> 00:11:29,855
+Şimdiye kadar association, dependency, aggregation ve composition ilişkilerini görmüştük.
+
+4
+00:11:30,323 --> 00:11:35,803
+Bu hafta son olarak inheritance ilişkisini görüyor olacağız.
+
+5
+00:11:37,063 --> 00:11:45,764
+Inheritance ilişkisi bir de farklı bir ilişki, özel çeşitli yapıları var. Onlara bakıyor olacağız.
+
+6
+00:11:46,443 --> 00:11:48,524
+Slide'ımızı paylaşarak başlayalım.
+
+7
+00:11:57,556 --> 00:12:02,056
+Görebiliyorsunuzdur. Göremiyorsanız uyarın lütfen. Slider.
+
+8
+00:12:02,740 --> 00:12:26,899
+Şimdi tabii bir tık ileride gidiyoruz. Olsun. Zaman zaman belki ekstradan işimiz çıkabilir, ders yapamayabiliriz veya örnek çözelim diye bazı dersleri genişletebiliriz. O yüzden hızla gitme konusunda bir sıkıntı görmüyorum. Ama bugün sadece kalıptımı anlatıyor olacağım. Çok uzun sürmeyecekler diye düşünüyorum.
+
+9
+00:12:26,899 --> 00:12:30,740
+Şimdi tekrardan şöyle bir göz gezdireceğim.
+
+10
+00:12:30,740 --> 00:12:36,240
+Önce olursak association, dependency, segre gelişim ve kompozisyon ilişkilerini böylece görmüş olduk.
+
+11
+00:12:37,059 --> 00:12:40,340
+Son olarak da inheritance'a bakıyor olacağız.
+
+12
+00:12:40,460 --> 00:12:47,100
+Inheritance Türkçesi tahmin edebileceğiniz üzere kalıbın, normal dünyayı düşünüyor olalım.
+
+13
+00:12:53,460 --> 00:13:02,480
+İşte bizim parent'ımızdan, ailemizden edindiğimiz çeşitli genler neticesinde biz çeşitli özellikler taşıyoruz.
+
+14
+00:13:03,180 --> 00:13:05,820
+Buna kalıtım deniliyor.
+
+15
+00:13:06,560 --> 00:13:10,960
+Şeyde de Nesne Yönelik tarafında da bu kalıtım ilişkisi çok benzer.
+
+16
+00:13:10,960 --> 00:13:17,500
+Bir parent sınıf söz konusu oluyor olacak, bir de child sınıf söz konusu oluyor olacak.
+
+17
+00:13:18,160 --> 00:13:21,460
+Eğer ki child sınıf, parent sınıfın çeşitli özellikler...
+
+18
+00:13:21,460 --> 00:13:30,240
+İçerisinde barındırabilecek bir düzeyde ise inheritance ilişkisi arada kurmanın mantıklı olduğunu söyleyebiliriz.
+
+19
+00:13:32,015 --> 00:13:40,275
+Gösterimine bakıldığında ise bir içi dolu ok işareti şeklinde gösteriliyor.
+
+20
+00:13:41,035 --> 00:13:52,055
+Şu ilişki A ile B arasındaki ilişki okunduğunda A, parent sınıf, B ise child sınıf olarak isimlendiriliyor.
+
+21
+00:13:52,055 --> 00:13:59,915
+Yani okun yönü önemli. Okun gösterdiği tarafta bulunan sınıf, parent sınıf olması bekleniyor.
+
+22
+00:14:00,015 --> 00:14:18,515
+Tabii sadece parent ve child ifadeleri değil, parent için süper, child için de sub ifadelerinin kullanıldığını literatürde veya dinlediğiniz çeşitli videolarda ve okuduğunuz çeşitli kitaplarda görebilirsiniz.
+
+23
+00:14:22,995 --> 00:14:32,596
+Child için türetilmiş sınıf olduğunu söyleyen kaynaklar da olacaktır.
+
+24
+00:14:32,695 --> 00:14:36,195
+Biz genellikle parent-child ilişkisi üzerinden gidiyor olacağız.
+
+25
+00:14:36,295 --> 00:14:37,855
+Bu kavramları kullanıyor olacağız.
+
+26
+00:14:38,635 --> 00:14:40,076
+Onu da buradan bahsedeyim.
+
+27
+00:14:40,076 --> 00:14:47,855
+Tabii burada nesnelerin gizlediğiyle ilgili etrobüytlarının ve metodlarının çeşitli durumlar vardı.
+
+28
+00:14:48,015 --> 00:14:48,768
+Hatırlıyorsunuz.
+
+29
+00:14:48,768 --> 00:14:59,728
+Bunu. Buradaki gizlilik seviyesi yine private ve protected olacak şekilde değişiyor. Bunların örneklerine değiniyor, bakıyor olacağız.
+
+30
+00:14:59,728 --> 00:15:04,927
+Şimdi override diye bir kavram var. Bu önemli kavramlardan birisi.
+
+31
+00:15:05,620 --> 00:15:23,320
+Overwrite kavramı. Hem metotlar, daha çok tabii metotların için tekrardan o metotları alt sınıflarda da aynı isimde, aynı parametre diziminde oluşturabiliyor muyum? Buna override diyoruz.
+
+32
+00:15:23,320 --> 00:15:33,620
+Eğer ki bir metot final olarak tanımlanmışsa üst sınıfta, final anaklar sözcüğünden bahsederken bu da gündemimize gelmişti. Final olarak tanımlanmış.
+
+33
+00:15:33,620 --> 00:15:59,240
+kullanmışsa alt sınıfta bu override edilemiyor. Ama temelde üst sınıfta bir metot düşünün. İsmi işte B metodu olsun. Alt sınıfta da aynı metodu, aynı parametre dizisiyle isterseniz farklı işler yapacak şekilde kurgulayabilirsiniz. Buna temelde overriding deniliyor.
+
+34
+00:16:01,620 --> 00:16:08,524
+Biz bunu nasıl görüyor olacağız? Dilerseniz ona bakalım. UML tablosu da. Dediğimiz gibi...
+
+35
+00:16:08,628 --> 00:16:11,788
+Bir ok işaretiyle gösteriyoruz.
+
+36
+00:16:12,388 --> 00:16:22,248
+Person sınıfından mesela student, employee ve retired diye üç tane ekstradan sınıf kalıtımla türetilmiş.
+
+37
+00:16:22,607 --> 00:16:25,768
+Bunu nasıl okumamız lazım? Ona bakıyor olalım.
+
+38
+00:16:25,888 --> 00:16:30,927
+Yani bu ne manaya geliyor? Nasıl bir ilişki var? Ona bakıyor olalım.
+
+39
+00:16:31,028 --> 00:16:36,628
+Şimdi person dediğimiz varlık herhangi bir görevde oluyor olabilir.
+
+40
+00:16:36,628 --> 00:16:55,248
+Kişi, birey, insan nasıl isimlendirirseniz hepsinin orta güzelliği nedir? Adı vardır, soyadı vardır, doğum tarihi vardır, medeni durumuna dair çeşitli bilgiler vardır, PC kimlik numarası vardır, belki üzerine kayıtlı evi, arsası, şu sonusu.
+
+41
+00:17:04,627 --> 00:17:27,927
+attribütler ve ortak bulunan metotlar varsa bu bir üst sınıfta yani person sınıfında bilgilerin toplanması beklenir. Ama daha da aşağıya indikçe yani özelleştikçe bir insandan bir öğrenci türettiğimizde artık öğrenci ekstradan insandan farklı olan alanları vardır.
+
+42
+00:17:28,211 --> 00:17:50,692
+İşte öğrenci numarası, aldığı dersler, geçtiği dersler, not ortalaması. Bunlar her insanın ortak özelliği değildir. Ama öğrenci ise o insan kendisinin attribute olarak içerisinde barındırması gereken özelliklerdir. Sadece attribute olduğunu düşünmeyin. Metotlar da aynı şey. Öğrenci olduğunda person ile ne metotlar farklı?
+
+43
+00:17:56,211 --> 00:18:00,291
+gibi çeşitli böyle ekli metotları söz konusu olabilir.
+
+44
+00:18:00,672 --> 00:18:08,511
+Employee'ye baktığımız tarafta ise, yani çalışanına baktığımız tarafta ise, evet insanın tüm özelliklerini taşıyor olacaktır.
+
+45
+00:18:08,511 --> 00:18:21,092
+Ama buna ek olarak işte bir sigorta numarası veya işte bu ay kaç gün çalıştı, kaç gün rapor aldı, kaç gün izinli ona göre bir maaş hesap olması yapılacaktır.
+
+46
+00:18:24,211 --> 00:18:42,211
+Bilgileri, çok da bilmiyorum ama işte Bağkur bilgileri, terfi alacak mı, almayacak mı ona dair çeşitli bilgiler ekstradan hem kişi sınıfından hem öğrenci sınıfından ayrıldığı çeşitli özellikler olduğu için kendi içerisinde barındıracaklar.
+
+47
+00:18:42,211 --> 00:18:48,072
+Aynı şekilde emekli de böyle. Kaç yıl çalışıklı emekli olmuş, hangi?
+
+48
+00:18:48,468 --> 00:19:03,628
+En son çalıştığı kurumun ismine, hangi meslekten emekli olmuş, emekli maaşı nedir gibi ekstradan emekli olan kişilerin de içerisinde barınadıracağı çeşitli özellikler mevcut olabilir.
+
+49
+00:19:04,048 --> 00:19:09,508
+Tabii şuraya bakıldığında bu UML diagramından doğrudan bunu okumak mümkün değil.
+
+50
+00:19:09,648 --> 00:19:15,307
+Ben hani yorum yapıyorum, bu tarz alanları da vardır gibi sizin de gözünüzde güzel canlansın diye.
+
+51
+00:19:16,468 --> 00:19:26,708
+Ve tabii bu ilişki, inheritance, kalıtım ilişkisi götürebildiğiniz yere kadar bir ağaç yapısında gidecektir doğal olarak.
+
+52
+00:19:27,468 --> 00:19:40,408
+Employee'den mesela işte director ve part-time çalışan iki tane yani yönetici mi veya part-time çalışan mı diye employee de işte şeyler ne dönür ona?
+
+53
+00:19:40,408 --> 00:19:43,828
+Ekstradan sınıflar türetilmiş. Öğrenci olduğunu düşünün.
+
+54
+00:19:44,468 --> 00:19:59,448
+Üniversite öğrencisi mi, ilkokul öğrencisi mi veya yabancı ünlüklü öğrencisi mi? Alt tarafta bir sürü ekstradan şeyler de orada da üretebilirsiniz. Burada da yani evet bir şirkette çalışan, yönetici de olsa, full time çalışan da olsa, part time çalışan da olsa.
+
+55
+00:20:00,000 --> 00:20:17,140
+Hepsi o şirketin çalışanıdır. Çalışanların özelliklerini ve metotlarını barındırır. Lakin buna ek olarak part-time çalışanın içerisinde barındırdığı bilgilerle ve yapabilecekleri metotlarla bir yöneticinin veya bir full-time çalışanların
+
+56
+00:20:17,556 --> 00:20:28,195
+Yapabileceği işler farklılık gösterecektir. O sebeple bu ilişki sınıfı güzel. Bizim için ne avantajı var?
+
+57
+00:20:30,548 --> 00:20:54,788
+Yönetici düşünüyoruz. Veya bir part-time çalışanı düşünelim mesela şirkette. Yani bu kişinin adını ben tutmak istiyorum. Yani tekrardan burada tutmama gerek yok. Employee sınıfında tutabilirim. Ama employee sınıfı da bir üst sınıftan kalıtımla gelmiş. Ben o zaman hepsini burada tutabilirim. Tekrardan alt sınıflarda, üst sınıflarda yaptığımız o işlevleri yapmamızın herhangi bir gereği söz konusu değil.
+
+58
+00:20:58,548 --> 00:21:16,607
+Burada kalıtım ilişkisine bakıldığında, evet, parent'tan dediğine kalıtım söz konusu. Fakat orada çift parent var. Yani babanızın veya annenizin sadece onun özellikleri alamıyorsunuz. Orada bir crossover durumları söz konusu oluyor. Burada ise tek bir karat var.
+
+59
+00:21:17,172 --> 00:21:29,612
+Yani önemli olan doğal dünyanın farklı temelde o. Tek bir karım var ve doğal olarak o karantını kullanmak istediğimizde tüm özelliklerini kalıtım olarak alt sınıfa alabiliriz.
+
+60
+00:21:29,612 --> 00:21:31,612
+Yani sadece diyelim ki...
+
+61
+00:21:32,211 --> 00:22:00,211
+Anneden veya babadan türüyebildiği bir durum düşünün. Tüm özelliklerini alt sınıflarda da barındırabildiğini düşünün. Anneniz esmersiz, siz de esmersiniz. Ne bileyim babanız olsa siz de olursunuz gibi düşünebilirsiniz bunu. Bu şekilde bir hiyerarşik ağacımız söz konusu olacak. Dediğim gibi, yani gidebildiği yere kadar, lojiyunu götürebildiğiniz yere kadar tekrardan kalıdığında bir şeyler türetebilirsiniz.
+
+62
+00:22:00,211 --> 00:22:07,892
+En kaba tabirle bu ilişkiye genelleştirme ve özelleştirme ilişkisi deniliyor.
+
+63
+00:22:08,492 --> 00:22:21,632
+Ağaca baktığımızda bu ağaç da yukarıdan aşağıya doğru giderken bir özelleşme durumunun söz konusu olduğunu, aşağıdansa yukarıya doğru çıkarken bir genelleştirme durumunun söz konusu olduğunu görebiliriz.
+
+64
+00:22:21,632 --> 00:22:26,971
+Inheritance'a en çok bu ifade zannedince kullanılıyor diyebiliriz.
+
+65
+00:22:28,211 --> 00:22:51,572
+veriyor onun. Araba olduğunu düşünün. Bir araba sınıfı var. Araba sınıfının içerisinde barındıracağı attribütleri ve metodları zaten daha öncesinde konuşmuştuk. Onların hepsini tüm araba sınıflarında, arabaya dair olan her şeyde ortak olarak barındırdığını düşünün. Ardından station wagon. Buradan bir araba türetilmiş. Tipi station wagon.
+
+66
+00:22:52,788 --> 00:22:56,268
+Biliyorsunuz şu arkası daha büyük bagaja sahip olan.
+
+67
+00:22:56,723 --> 00:23:24,723
+Araçlara station wagon deniliyor. İşte yarış arabası. Yarış arabasının çeşitli özellikleri yine söz konusudur. İçerisinde barındırıcı veya işte Jeep diye yazmışız buraya ama Jeep bir marka diyorsanız SUV diyelim buna. SUV araçlar yerden daha yüksek ve farklı özellikler barındırıyordur. Yani bu şekilde kalıcınla temelde türetebiliriz. Ama ne zaman türetmemiz lazım? Türettiğimiz bu alt sınıfların da kendisine ayrıca...
+
+68
+00:23:24,723 --> 00:23:44,243
+ekstradar attribütleri ve metotları varsa türetmemiz lazım. Eğer ki yoksa, sadece bunlar birer sınıf olarak kalacaksa, üst sınıfın attribütleri ve üst sınıfın metotları kullanmak yeter. Bunlar da ayrı bir sınıf olsun dediğimiz durumda acaba kalıta ilişkisi kullanmalı mıyız diye düşünelim.
+
+69
+00:23:44,576 --> 00:23:56,016
+Bunu farklı bir belki association ilişkisiyle ifade etmeye, bu kadar da farklı farklı sınıf tanımlamamaya özen göstermeniz gerekebilir.
+
+70
+00:23:56,355 --> 00:23:59,936
+Yazıcıya bakıldığında işte yazıcıların çeşitli özellikleri vardır.
+
+71
+00:24:00,655 --> 00:24:07,956
+İşte nokta vuruşlu yazıcılar, mürekkepli yazıcılar veya işte lazer yazıcılar farklı farklı yazıcı tipleri söz konusu.
+
+72
+00:24:07,956 --> 00:24:12,456
+Bunların her birisinin kendisine ait özelliği vardır. Birisinin kartuşu oluyor.
+
+73
+00:24:12,576 --> 00:24:26,336
+Birisinin oneri oluyor, birisi yazma hızı A kadar oluyor, diğerinin B kadar oluyor gibi gibi farklı farklı özellikleri söz konusu olabilir.
+
+74
+00:24:26,912 --> 00:24:47,072
+O sebeple genel olarak bu kalıtım ilişkisini şöyle bir burada özetlemek gerekirse, üst sınıfta daha genelleştirilebilir bilgiler söz konusu, alt sınıflara indikçe o sınıfların özelinde kullanılan çeşitli bilgiler söz konusu.
+
+75
+00:24:47,331 --> 00:24:54,892
+Mesela yanlış bir kullanım işte bir örnek. Diyelim ki bir tane graphic user interface'in bir GUIN'in butonu söz konusu.
+
+76
+00:24:54,912 --> 00:25:21,311
+Bu bir sınıf. Bu butonun çeşitli özellikleri var. Action'ları vardır. Ne bileyim, üzerine geldiğinde neler yazacağına dair çeşitli şeyleri vardır. Yani buton olmanın özgürsle özelliği var. Siz bunu işte kırmızı, sarı, mor, neyse diye ayırmanız hiç mantıklı olmayacaktır. Yani bu inheritance'la kalıtımla gelen bir şey değil de bu GUI butonunun bir attribütüdür.
+
+77
+00:25:22,912 --> 00:25:30,951
+Bir renk ise siz renk diye bir sınıf oluşturursunuz. O sınıfın içerisinde farklı farklı attribütler söz konusu olmuş olur.
+
+78
+00:25:31,331 --> 00:25:37,652
+Ardından association ilişkisi kurarsınız bu yurtlarıyla. İşte burada yaptığı şey temelde o.
+
+79
+00:25:37,851 --> 00:25:44,612
+Görüyorsunuz şurada RGB sınıfını kullandığı için association ilişkisinin ne olduğunu söyleyebiliriz.
+
+80
+00:25:44,612 --> 00:25:50,751
+Böyle bir kullanım neredeyse inheritance'a en yanlış kullanım örneklerinden birisi olacaktır.
+
+81
+00:25:50,912 --> 00:25:54,471
+Veya en yanlışı burada göreceğimiz örnek alıyorsam.
+
+82
+00:25:54,791 --> 00:26:00,811
+Şimdi bir tane hasta söz konusu. Bu sizin sınavlarda ve ödevlerde çok sık yaptığınız bir şey.
+
+83
+00:26:00,811 --> 00:26:04,811
+Zannediyorsunuz ki yani ben şu şekilde...
+
+84
+00:26:05,152 --> 00:26:13,552
+Oku koyduğum durumda bu inheritance'tır. Nereye koyduğumun dönemde kalıtmak istemişim anlayabilirsiniz. Hayır, doğru kalıtmamız lazım.
+
+85
+00:26:13,552 --> 00:26:23,552
+Hasta var, hastanın çeşitli özellikleri var. Doktor var, çeşitli özellikleri var. Doktor hastadan kalıtılırsa hastanın tüm attribütlerini kendi içerisinde barındırması gerekir.
+
+86
+00:26:23,923 --> 00:26:39,443
+Yani doktor hasta olman zorunda değil, tahmin edebileceğiniz üzere hastadır, doktor da temelde direkt insandır. Bakıldığında o yüzden insan diye bir sınıfım olur. Hastanın ve doktorun ek özellikleri varsa o özellikler kullanılması gerekir.
+
+87
+00:26:39,804 --> 00:26:48,003
+Şurada gördüğünüz inheritance'ın sembolü, burada gördüğünüz ise association ilişkisinin bir sembolü.
+
+88
+00:26:49,663 --> 00:26:54,503
+Buraya kadar sorusu olan var mı? Yanlış kullanımlara ve inheritance ile ilgili.
+
+89
+00:26:57,163 --> 00:26:58,163
+Devam edelim.
+
+90
+00:27:01,124 --> 00:27:09,304
+Şimdi, inheritance ilişkisini şöyle bir değerlendiriyor. Neler söyleyebilir miyim?
+
+91
+00:27:10,451 --> 00:27:20,872
+ilişkisiyle temelde bakıldığında runtime esnasında herhangi bir değişikliğe uğratamayacağımız sınıf seviyesinde bir ilişki.
+
+92
+00:27:22,072 --> 00:27:30,912
+Müdahale yani runtime programın çalışma esnasında akışını bozmamızın bu ilişkinin mümkünatı yok. Onu söyleyebiliriz burada.
+
+93
+00:27:31,412 --> 00:27:48,072
+Tecrübeli, object-oriental programcıları eğer ki kesin gözde görülür, anlaşılır bir şekilde genelleştirme ve özelleştirme durumu söz konusu ise ancak inheritance'ı kullanalım.
+
+94
+00:27:48,072 --> 00:27:59,412
+Onun haricinde diğer, işte burada yazan association, composition, activation ve dependency gibi ilişkileri kullanalım diye bir yaklaşımları söz konusu oluyor.
+
+95
+00:27:59,412 --> 00:28:17,491
+Bunu da burada aktarmış bulmalım. Yani kesin böyle bir ayrım varsa, işte kişi çalışan employee dedik ona veya kişiden employee, kişiden stüdyum bunları söylediğimizde zaten otomatik olarak anlaşılıyor zannınca durum.
+
+96
+00:28:19,892 --> 00:28:35,492
+O sebeple bir şey net olması lazım. O özelleştirme ve genelleştirme durumu net mi? Sanmımca bu böyle derste örnekler yaptıkça, yaptıkça kafanızda güzel canlanacaktır diye düşünüyorum.
+
+97
+00:28:37,492 --> 00:28:39,072
+Burada ne demişiz?
+
+98
+00:28:41,428 --> 00:29:09,128
+Tabii, şimdi, Design Patterns diye bir tasarım kalıpları söz konusu. Üçli çetenin yaptığı, belki hani duyanlarınız vardır. Bununla ilgili de İlginç Hembrun Hocam yüksek lisansa da bir ders veriyor. Ama neslinin tarafta işte bir tasarım gerçekleştirmek istiyorsanız, programınızı bir tasarımı oturtmak istiyorsanız, hala hazırda bir sürü farklı farklı tasarım kalıpları.
+
+99
+00:29:09,428 --> 00:29:16,067
+O kalıplardan birisini kullanabilirsiniz ve sizin ihtiyacınızı genel olarak karşılayıp görecektik diye bir yaklaşım söz konusu.
+
+100
+00:29:17,128 --> 00:29:27,288
+Buradaki inheritance'ın doğru bir şekilde kullanımı, özellikle böyle tasarım kalıplarıyla çalışacaksanız çok önem arz ettiğini.
+
+101
+00:29:27,923 --> 00:29:50,703
+Burada vurgulamak ekstradan istemişiz. Tasarım kalıbı yani design patterns kavramını şimdiye kadar büyümüş arkadaşlarımız olabilir. Bu nesne yönelik programlama dersinde hiç bahsedeceğimiz bir konu değil. Ama bu alanda çalışacaksanız, nesne yönelik programlama geliştireceğiniz bir iş yapacaksanız muhakkak da muhakkak dizaynik patternslara şöyle bir göz geldim.
+
+102
+00:29:55,923 --> 00:30:00,000
+Güzel bir şekilde bilip diğerlerinin de kalacağı neler olduğunu...
+
+103
+00:30:00,000 --> 00:30:03,839
+Bilmemizi, acizane tavsiye ederim.
+
+104
+00:30:04,259 --> 00:30:06,400
+Şimdi, overriding dedik.
+
+105
+00:30:06,519 --> 00:30:12,920
+Buna, genel olarak, alt sınıflarda aynı metodların kullanılmasına, polymorphism de deniliyor.
+
+106
+00:30:13,559 --> 00:30:17,259
+İşte bizim bir employee, bir person sınıfımız var.
+
+107
+00:30:17,400 --> 00:30:22,500
+Person sınıfından student, employee ve retirement diye bir alt sınıflar türetmiştik.
+
+108
+00:30:22,500 --> 00:30:28,000
+Diyelim ki, person sınıfının bir introduce self diye metodu...
+
+109
+00:30:28,000 --> 00:30:42,720
+olmuş olsun. Siz eğer ki türettiğiniz person sınıfından türettiğiniz bir alt sınıfta bu metodun aynı isimde bir metodu tanımlamak istiyorsanız aynı parametre dizisi ile tanımlayabilirsiniz.
+
+110
+00:30:42,720 --> 00:30:49,839
+Yani böyle bir durum söz konusu. Eğer tanımlamazsanız bir üst sınıfın
+
+111
+00:30:50,324 --> 00:31:00,964
+o metodunu kullanabilirsiniz. Introduce Center'ı çağırdığınızda direkt o metodu kullanabilirsiniz. Ama tanımladığınız durumda, yani içerisinde yapacağınız işler değişmiş olabilir.
+
+112
+00:31:01,523 --> 00:31:11,143
+Bir kişi kendisini tanıtırken ve merhaba benim ismim şu der. Öğrenci kendisini tanıtırken merhaba benim ismim şu, şu okulda öğrenciyim der. Mesela biraz değişmiş olabilir.
+
+113
+00:31:11,143 --> 00:31:29,363
+Veya çalışan kendisini tanıtırken işte şu şirkette çalışıyorum gibi bir ek bilgi söyleyebilir. Emekli tanıtırken işte şu kadar yıl TCDD'de çalıştığım gibi böyle emekliye dair bir şeyi de söylemiş.
+
+114
+00:31:29,523 --> 00:31:57,483
+Olabilir. Burada dikkat edilecek, tekrar söyleyelim, hususlardan birisi. Diyelim ki Employment Introduce Sert diye bir metodunun burada hiç yazılmadığını düşünelim. Böyle bir durumda Person'un Introduce Sert metodunu kalıtımla kullanabiliyor. Kalıtım ilişkisi olduğu için kullanabiliyor. Ama dilerse aynı metodun. Farklı işe yapıyorsa tabii ki, aynı işe yapıyorsa zaten tanımlanmanıza gerek yok. Inheritance'ın amacı o. Ama farklı işe yapıyorsa burada.
+
+115
+00:31:57,523 --> 00:32:18,563
+Ona göre kullanabiliriz. Buna işte polymorphism deniliyor. Eğer ki bir üst sınıfın attribute'lerini, metotlarını kullanacaksak bunları süper ilişkisiyle şekillendiriyoruz. Şimdiye kadar o konstruktörü, ben hep süperleri siliyordum. Bugün de süperleri de kullanıyor olacağız.
+
+116
+00:32:22,720 --> 00:32:40,600
+Şöyle kabaca güzel anlaşılsın bu konu diye bir inheritance ilişkisi kuracağımız örneğimize. Bunun kodu üzerinden de geçeceğim birazdan. Şimdi bakalım bir person'ımız var. Person'un adı.
+
+117
+00:32:41,172 --> 00:32:59,791
+String olarak tanımlanmış durumda. Constructor'ın da sadece ismi alınıyor ve getName diye de bir metodu söz konusu. Sadece getR'ı var. Bakın setR'ı yazılmamış. Yani buradan mesela sınavda tabii şöyle söylemiyoruz bu sınıfı yaparken.
+
+118
+00:32:59,791 --> 00:33:08,391
+İşte bir person sınıfı oluşturun. Bir name diye. String tipinde bir getR'ı büyük olsun. Constructor'ın içerisi sadece string olsun.
+
+119
+00:33:09,172 --> 00:33:14,231
+Ve sadece name attribute için getter yazın.
+
+120
+00:33:15,031 --> 00:33:17,731
+Yani bu şekilde söylemiyoruz. Bir hikaye anlatılıyor.
+
+121
+00:33:18,172 --> 00:33:20,371
+Tamam mı? Bir hikayenin akışı söz konusu.
+
+122
+00:33:20,911 --> 00:33:24,911
+Siz o hikayenin akışında olayı kurgulamanız lazım.
+
+123
+00:33:25,571 --> 00:33:35,271
+Mesela işte bir kişi oluşturulurken ismi önceden belirlenir ve daha sonra isminin herhangi bir şekilde değiştirilmesine izin verilmez.
+
+124
+00:33:36,307 --> 00:33:40,167
+Dedik, yani bu setir koyma diyor yani adam sana bunu.
+
+125
+00:33:40,867 --> 00:33:47,807
+Veya işte o kişinin ismi gerekli görüldüğü durumda öğrenilmesi beklenir.
+
+126
+00:33:48,267 --> 00:33:50,147
+Dediğinde getir yaz diyor.
+
+127
+00:33:50,147 --> 00:33:59,607
+Yani şu an tabii sözcükleri uydurduğum için tam belki doğru şeyi ifade etmemiş olabilirim ama.
+
+128
+00:33:59,731 --> 00:34:12,652
+Yani o şeyin akışından, ifadenin akışından ve siz hangi metotları ne şekilde tanımlayalım, hangilerini tanımlayalım, hangilerini tanımlamayalım bunu temelde çıkartmanız beklenir.
+
+129
+00:34:14,551 --> 00:34:21,572
+Employee tarafına geldiğimizde, employee, cursory sınıfından kalıbında üretilmiş bir sınıf.
+
+130
+00:34:21,811 --> 00:34:44,131
+Buradan onu görebiliyoruz. Salary isminde, integer tipinde bir attribute var. Bu attribute, mesela şurada şunu söyleyelim, employee'nin kaç tane attribute'i var? Dediğimizde bunun cevabı 2. Niye? Bir salary, niye attribute var? Bir de kalıtımla geldiği tüslahı tanıttan name diye bir attribute var.
+
+131
+00:34:44,563 --> 00:35:03,123
+Tamam mı? Bu sorunun cevabı 2. Employee'nin iki tane attribütü vardı. Bakın, employee'nin constructorına bakın. Hem name, yani bir üst sınıftan gelen o name, hem de salary'i parametre olarak alan bir constructori söz konusu.
+
+132
+00:35:12,563 --> 00:35:28,523
+set salır diye ekstradan bir metot gördüğümüze göre buradan hemen şunu çıkartmamız lazım. Bu sefer de tam tersini yapalım. Yani UMLN değerde onu yorumlayalım. Bir kişinin maaşı değişebilir. Bir kişinin maaşı değişebilir. Yani başlangıçta o kişinin maaşı yükse.
+
+133
+00:35:28,943 --> 00:35:39,043
+Bir süre sonra 101 olabilir. Ülkemize gittiği zaman 150 olmayabilir. Zamlar 101, 102 o şekilde gidiyor. Bir süre sonra 101 olabilir.
+
+134
+00:35:40,203 --> 00:35:47,684
+Get metodu olduğundaysa zaten tahmin edebileceğiniz göre o maaşın ne kadar bir miktarda olduğunu öğrenmek istiyoruz her dair.
+
+135
+00:35:52,436 --> 00:36:08,516
+Sınıf türetilmiş, manager isminde bir sınıf. Bu sınıfın da kendisine has sadece bonus diye bir metodoloji attribütü var ama üst sınıflarda bulunan salary ve name attribütlerinde yine içerisinde barındırılır süper ilişkisi vardır.
+
+136
+00:36:09,519 --> 00:36:22,239
+Ve menajeri tanımladığımızda bakın, A person'dan gelen mail ve employee'den gelen salary attributlarını alarak bir constructor oluşturduğunu görüyoruz.
+
+137
+00:36:22,512 --> 00:36:33,452
+Bonus set edilebiliyor burada. Tabii özel bir hali var herhalde. Bonus get edilmiyor, set ediliyor. Onu demek ki maaşın içerisine yediriliyor.
+
+138
+00:36:34,132 --> 00:36:43,391
+Jack, bilmiyorum. Birazdan ona bakarız. Yani şimdi bu bonus denilen şey madde olarak adamın ne kadar aldığıdır? Maaşını eklenecek herhalde bu durum.
+
+139
+00:36:43,391 --> 00:36:50,512
+Ki sadece get salariyle döndürüldü. Çünkü ne constructor da bir işe yarıyor ne de ben onu okuyayım.
+
+140
+00:36:50,512 --> 00:37:05,432
+duyamıyorsam, bonus hem de private, başka sınıflar tarafından public olarak erişilemeyen bir alan, bonusu set etmemin bir manası yok. Muhakkak bir şekilde onu get etmem lazım. Muhtemelen şu get salarinin içerisine eklenmiş durumdadır.
+
+141
+00:37:06,003 --> 00:37:33,783
+Kodda. Company diye ayrıca bir sınıfım olacak. Dördüncü sınıfım bu. Bu sınıfım da hem employee hem manager. Burada gösterememiş ama belki person'a, biz de el ödücü çevirip person'la da bir şekilde ilişkisini kurabiliriz belki. İlişkisi olacak. O da sadece tek bir main method var. Main method içerisinde şu dependents'e ilişkilerini görüyor olacağız. Gelin bir kod akışına bakıyor olalım.
+
+142
+00:37:34,003 --> 00:37:39,943
+O yüzden sizde sadece slide'ı paylaşmışsak slide'ı paylaşmayı durdurun.
+
+143
+00:37:40,923 --> 00:37:41,824
+Acaba gözüküyordu.
+
+144
+00:37:42,344 --> 00:37:43,663
+Gözüküyor muydu ekliyordu?
+
+145
+00:37:43,783 --> 00:37:44,523
+Gözüküyor.
+
+146
+00:37:45,003 --> 00:37:46,743
+Tamam, süper, çok güzel.
+
+147
+00:37:48,043 --> 00:37:50,123
+Şimdi bir person'ı açalım isterseniz.
+
+148
+00:37:50,324 --> 00:37:53,123
+Yani geçen hafta söylemiştim artık.
+
+149
+00:37:56,340 --> 00:38:13,300
+Baştan, sil baştan kodu yazmayacağım. Kodlar üzerinden geçiyor olacağım. Ama lütfen anlamadığımız yerde sorun. Hatta denirse ki hocam ya bu hızlı oldu. Yani önündeki hafta bir hafta daha en azından baştan yazalım derseniz kodları baştan da yazabiliriz.
+
+150
+00:38:13,300 --> 00:38:23,400
+Şimdi bakın bir person'ın string tipinde name vardı. Nereden tabi buna ediniyorum? Bu UML'e bakarak yazıyorum yani açıkçası bunu.
+
+151
+00:38:24,340 --> 00:38:52,300
+Bu tipinde bir name'i vardı. Constructor'ına baktığımızda sadece name parametresini içerisinde alıyordu. Bir getter'ımız vardı. Bunları ben ekledim. Şimdilik bunların olmadığını düşünüyor olalım. Çünkü hocam burada toString var ama burada toString görünmüyor diyebilirsiniz. Evet bunları da size göstermek için az önce ekledim. Hani değişiklik yapmak adına. Bu kadar. Yani bir tane getter'ımız var, bir tane constructor'ımız var. Bunların incisi de metot'tu.
+
+152
+00:38:52,340 --> 00:39:11,840
+ve bir tane de etli bir ücümüz var. Person böyle bir şey. Yani rahat anlaşılsın diye kompleksleştirmediğimiz için yoksa person diye bir sınıf tanımladığımızda düşünün yani bir kişinin hangi bilgileri burada vardır ekstradan inanılmaz yoğun bir bilgi olacak.
+
+153
+00:39:13,460 --> 00:39:27,519
+Yine bizim employee sınıfımıza baktığımız durumda. Ben pekala hep dedim işte constructor üst sınıftan kalıtıyorum alt sınıfa. Inheritance'ın sembolü bu.
+
+154
+00:39:27,600 --> 00:39:34,380
+Pekala programda nasıl yazılıyor musun? Java programda. Extend anahtar sözcüğünü kullanıyorum. Extend.
+
+155
+00:39:34,880 --> 00:39:58,739
+Anahtar sözcüğünü kullanıyorum. Person sınıfından estent oluyor. Employee. Bunu söylemiş oluyoruz. Yani bu dikkat edilmesi gereken bir ifade. Bunu yazmazsak eğer ben üst sınıftan gelen o attributeları ve metodları kullanmam. Bunu yazdıktan sonra onları kullanılabilir hale getiriyorum.
+
+156
+00:40:00,000 --> 00:40:28,000
+olarak bir de salary söz konusuydu. Onu da nereden hatırlıyorum? Şuradan bakın maaş. Constructor'ına gelelim. Constructor'ın da içerisine name ve salary alıyorum. Bakın süperi burada ilk defa kullanıyorum. Aldığım bu name'i benim süper class'ım olan yani parent'ım olan o name'in içerisine yaz. Tamam mı? Burada da zaten o name.
+
+157
+00:40:28,000 --> 00:40:52,000
+name'i görüyoruz. Bir üst sınıfın name'inin içerisine bunu yerleştirmiş oluyorum. Farklı farklı kullanımları olacak süperin. Görüyor olacağız. Farklı şekilde isimlendirilirli şeyleri olacak. Görüyor olacağız. İlk özellik olarak bunu görelim. Bir name durumu söz konusu. Birden fazla parametresi olsaydı...
+
+158
+00:40:52,659 --> 00:41:12,259
+String name, string TC kimlik numarası, string doğum tarihi, süperle beraber araya virgül koyarak bunların hepsini verebiliriz. Yani süperde tek bir parametre set edebiliriz diye düşünmeyin. Araya virgül koyarak hepsini verebiliriz. Onları ilerleyen örneklerde görüyor olacağız kıymetli arkadaşlar.
+
+159
+00:41:20,659 --> 00:41:48,579
+Set ettim. Bakın iki tane parametre alıyoruz. İkisini de set etmemiz lazım. Birisini şu şekilde diğerini de üst sınıftan gelen neyimin içerisine bu şekilde set ediyorum. Süper anahtar sözcüğünü gördüğünüzde farklı farklı alanlarda kullanılacak ama kullandığımız önemli alanlardan birisinin inheritance olduğunu burada söylemek isterim. Bir getter söz konusu bir de setter söz konusu. Bunların üzerinde davranı durumların farklı alışmışsını.
+
+160
+00:41:48,659 --> 00:42:06,099
+Manager sınıfına geldiğimizde ise, manager sınıfının diğerlerinden farklı çeşitli belki alanları var. Onlara bakıyor olacağız. İlki, manager sınıfı employee'den ekstent edilmiştir.
+
+161
+00:42:06,579 --> 00:42:34,579
+Employee'ye baktığınızda Employee ile Person'dan Extend edilmiş durumdaydı. Yani Person'a kadar uzuyor. Şöyle bir yanılgı, şöyle bir şey yanılgı olur. İşte Public Class Manager, Employee Extend Person diye yazmanıza gerekiyor. Zaten Employee, Person'dan türetildiği için siz direkt Employee'den Manager sınıfını türetebilirsiniz. Böylece Employee'nin türetildiği sınıfta aldığı o tür etkiler...
+
+162
+00:42:34,579 --> 00:42:40,340
+attribute'leri manager'ın içerisinde de kullanabilirsiniz. Herhangi bir sakıncası yok.
+
+163
+00:42:40,759 --> 00:42:50,139
+Private integer bonus. Bir tane integer tipinde bonus attribute var. Manager'ın constructor'ına bakalım. Name ve salary alıyor. Doğru mu?
+
+164
+00:42:51,347 --> 00:43:18,847
+Name ve Salary alıyor. Bakın, birden fazla alan set edilmek istendiğinde süper, Name, Salary, virgülle bunları ayırabiliyorum. Özellikle dikkat etmenizi istiyorum. Salary benim hemen üstümdeki sınıfın attribute'uydu. Name ise iki üstümde bulunan sınıfın attribute'uydu. Süper ile yukarıya doğru gidebildiği yere kadar.
+
+165
+00:43:19,347 --> 00:43:22,188
+Nerede bulursa onu gidiyor olacak.
+
+166
+00:43:22,827 --> 00:43:28,708
+Ayrıca bu constructorın içerisinde bonus değeri sıfır olarak set edilmiş.
+
+167
+00:43:29,087 --> 00:43:33,827
+Eğer ki yani burada mesela şöyle düşünmek gerekiyor olabilir.
+
+168
+00:43:33,967 --> 00:43:37,867
+Hiç parametre olarak bonusu vermiyorum ama bonus da set ediliyor.
+
+169
+00:43:38,627 --> 00:43:40,228
+Constructorın içerisinde.
+
+170
+00:43:40,228 --> 00:43:46,087
+O yüzden aslında 3 değeri de set eden bir constructor söz konusu.
+
+171
+00:43:46,648 --> 00:43:47,007
+Bonus.
+
+172
+00:43:47,347 --> 00:44:09,728
+set bonus diye bir metodumuz vardı. Bonusun ne olduğunu değerini seyredildik. Salary'nin get'ı var. Bakın, bakın, burada dikkat etmemiz gereken önemli hususlardan birisi. Get salary diye bir metot var. Yani burada salary maları yok. Görüyorsunuz. Hani attribute olarak salary diye bir şey yok. Get salary metodu.
+
+173
+00:44:10,387 --> 00:44:30,947
+Bir üst sınıfın get salary metodunu çağırıyor. Yani employee'nin get salary metodunu çağırıyor. Onu nasıl anlıyoruz? Başına süper geldiği için. Süper dediğimizde bir üst sınıfın get salary metodunu çağırıyorum ve bonusu ekliyorum.
+
+174
+00:44:31,487 --> 00:44:38,327
+Maaşım 10 bin liraydı. Her ayda 2 bin lira bonus alıyorum. Bana yönetici olduğum için döndüreceğim.
+
+175
+00:44:38,387 --> 00:44:42,367
+12.000 lira gibi oluyor. Olacak burada mesela.
+
+176
+00:44:42,847 --> 00:44:54,688
+Şu, yani sadece bir şekilde attribütleri set ederken değil, aynı zamanda metotları da çağırırken süper anahtar sözcüğünün nasıl kullanıldığına dikkat ediyor olalım.
+
+177
+00:44:55,047 --> 00:45:04,188
+Tek vurgulamamız gereken nokta üst sınıfa final olarak tanınanmışsa, onlar alt sınıfta süperle kullanamıyoruz.
+
+178
+00:45:06,387 --> 00:45:30,228
+Bir kez daha vurgu yapmış olalım. Bu ne? Bir tane daha constructorım var. Burada yok bu. Ekstradan eklenmiş. Bakalım ne farkı var? Bir de bonus eklenmiş. Normalde bonusu şurada sıfıra set ediyorduk ya. Burada bir de bonus eklenen constructor var. Bu UML diğerlerinde olmadığı için olsun da olur. Olması da olur. O yüzden şimdilik bunu komente alaya yorum.
+
+179
+00:45:30,835 --> 00:45:35,935
+SİDEKİ gibi blog, commente alabiliyoruz. Burada böylece görmüş oldunuz.
+
+180
+00:45:36,595 --> 00:45:38,795
+Buraya kadar sorusu olan arkadaşımız var mı?
+
+181
+00:45:42,195 --> 00:45:46,835
+Her şey güzel anlaşılıyordur diye ümit ederim.
+
+182
+00:45:46,835 --> 00:45:54,835
+Şimdi bakın ben kampanyi sınıfının içerisinde main method'ın içerisindeyim.
+
+183
+00:45:55,155 --> 00:45:58,235
+Main method demek ne demek? Programın akışı buradan başlayacak.
+
+184
+00:45:58,675 --> 00:46:12,695
+Bir tane employee dizim söz konusu. Her bir elemanı employee olan staff isminde bir dizim söz konusu. Üç elemanlı olarak tanımlamışım bunu. Üç tane eleman yeldirtmeyeceğim içerisine.
+
+185
+00:46:13,364 --> 00:46:27,144
+Bir tane manager tipinde bus oluşturmuşum. Bunun bir konstruktörü söz konusuydu. İsmini ve maaşını alacaktı. Bakın yöneticinin ismi buymuş, maaşı da buymuş.
+
+186
+00:46:29,856 --> 00:46:56,816
+şeyini, bonusunu set etmişiz. 2500 lirada bonus almış. Şu komende alınan satırda diğer constructorla, benim şurada komende aldığım constructorla yapılan bir ilgilendirme var. Böyle set yapmak yerine diğer constructor kullanıp virgüyle beraber 2500'ü gire edebilirsiniz. Onu diyor. Yani şimdi bir işimiz yok. Şimdi bu bası,
+
+187
+00:46:57,856 --> 00:46:59,215
+Fırın içerisine aldık.
+
+188
+00:46:59,715 --> 00:47:01,876
+Üç elemanlı bir dizi bu.
+
+189
+00:47:02,175 --> 00:47:06,456
+İlk elemanının içerisine bir yönetici yerleştirdi.
+
+190
+00:47:06,456 --> 00:47:07,372
+Şimdi...
+
+191
+00:47:08,403 --> 00:47:15,963
+Kafanızda nasıl canlanıyor, ya bu nasıl olabilir diyen arkadaşlarınız içten işe belki vardı.
+
+192
+00:47:16,603 --> 00:47:20,163
+Bazıları ne olduğunun farkında bile değildir belki.
+
+193
+00:47:20,743 --> 00:47:25,563
+Ama siz farkında olmayan arkadaşlar için vurgu yapayım, diğer arkadaşlar için de açıklama yapayım.
+
+194
+00:47:25,563 --> 00:47:28,623
+Şimdi, staff dizimin tipi employee.
+
+195
+00:47:29,743 --> 00:47:32,083
+Tamam bakalım, staff dizimin tipi employee.
+
+196
+00:47:33,063 --> 00:47:35,723
+İçine eklediğim basın tipi ise manager.
+
+197
+00:47:36,659 --> 00:47:55,300
+Yani siz bir integer dizisi oluşturuyorsunuz içerisine sizin koyuyorsunuz gibi bir durum söz konusu aslında. İkisi birbirinden farklı tipler. Ama manager, employee'den özelleştiği için içerisine employee dizisini koyabiliyor.
+
+198
+00:47:55,923 --> 00:48:16,104
+Daha özel olan bir şeyi daha genel olan bir dizinin içerisine yerleştirebiliyorum. Bu konuda herhangi bir sıkıntı vermeyecektir. Yani stop dizisinin sıfırıncı elemanın içerisinde bir manager sınıfı varken birinci ve ikinci elemanın içerisinde bir employee sınıfından bir veri olacak.
+
+199
+00:48:17,523 --> 00:48:26,923
+Bu lütfen kafanızda güzel canlanıyor olsun. Ben bu sınıfın içerisinde kalıtımla türetilmişse bu durum söz konusu.
+
+200
+00:48:28,244 --> 00:48:44,124
+Bu sınıfın içerisinde, bu dizinin içerisindeki o elemanlar employee olabilir, manager olabilir. Yani hangisi diye ekstradan kontrol edelim. Bakın nasıl her bir elemanın bilgisini ekrana yazdırmak istediğimi düşünün.
+
+201
+00:48:45,204 --> 00:48:53,664
+İşte for each döngüsü. Bakın if ile nasıl kontrol ediyorum. Other, yani şurada for each'in içerisine attığımız her bir eleman.
+
+202
+00:48:54,099 --> 00:49:19,980
+instance of manager. Yani bu bir manager mıdır? Manager değilse nedir? Employee'dir. Eğer manager ise başına 3 tane yıldız koy. Ondan sonra o kişinin işte get name'ini ve get salarisini ekrana yazdır. Yani ismini ve maaşını ekrana yazdır. Tamam. Çalıştıralım.
+
+203
+00:49:21,652 --> 00:49:22,652
+Bu...
+
+204
+00:49:24,152 --> 00:49:26,152
+Birisini kaydetmemişim herhalde.
+
+205
+00:49:28,152 --> 00:49:31,152
+Şimdi çalıştırdığımda bakın...
+
+206
+00:49:31,699 --> 00:49:59,699
+Bir kişi manajerdı. Yani o dizinin elemanlarını yazıyor. Manajer olanın ürüne 3 tane yıldız eklenmiş durumda. Manajer olmayanların ise direkt bilgileri verilmiş durumda. Yine dikkat etmenizi istediğim nokta get salarileri çalışıyor. Manager'ın salarisi 8000'di. Bir de 2500 bonus vardı. Onun getir metodu, manager'ın getir metodu bu ikisini toplayarak geri döndürmek üzerine olduğu için bu şekilde.
+
+207
+00:49:59,699 --> 00:50:05,699
+Bu şekilde geri döndürüyor. Şimdi şu toString'leri de bir açalım.
+
+208
+00:50:07,699 --> 00:50:16,699
+Enflowing'in de toString'ini açıyor olalım. Manager'ın da toString'ini açıyor olalım.
+
+209
+00:50:18,699 --> 00:50:21,643
+Yok, neyse bunu da açalım hadi.
+
+210
+00:50:22,324 --> 00:50:47,284
+toString'ini açıyorlar. Person'unkine geldiğinde, yani burada o sınıfı direkt ekrana yazdır dediğinde, merhaba ben bir insanım, adam şu diyor olacak. Mesela hani ona bir örnek yapalım şurada, s-y-s-o, şunu ekrana yazdır dediğimizde, toString metodu bu arada,
+
+211
+00:50:48,724 --> 00:51:03,364
+Geriye string döndüreceği için özel bir metot, override ettiğimiz bir metot. Ben direkt o sınıfı koyduğumda eğer toString metodu varsa ekrana string olarak döndürdüğü şeyi yazar.
+
+212
+00:51:03,923 --> 00:51:14,083
+Yani bunu yapmakla toString metodu için nokta toString demek arasında bir fark yok. Anlatabilmişimdir umarım bunu.
+
+213
+00:51:14,512 --> 00:51:26,052
+string üzerinde bir şey tabii ki bu. O yüzden ekrana bakın. Ne diyor? Merhaba, bendir çalışanım, alım, yaşam, uğurlu, ölçüm, maaşım şu kadar. Direkt yazdırabiliyoruz.
+
+214
+00:51:31,215 --> 00:51:54,755
+olduğu için sadece name, attribute'u söz konusu. Çalışana baktığımızda ekstradan maaşını da eklesin. Yöneticiye baktığımızda ben bir yöneticiyim. Bonusla beraber maaşım şu kadar diye to string metodu farklı olsun. Gelin bu şeyi de employee tipindeki bu diziyi de en genelleştirilebilir hale person.
+
+215
+00:51:55,280 --> 00:52:23,200
+Çekelim. Biraz oynayalım yani kodun üzerinde. Kafanızda daha güzel, canlanabilsin diye. Üç tane person'dan oluşan bir şey olmuş olsun. Yine bir tabii ki manager tanımlıyor olayım. Yani staff değiştirmiyorum bunu çok zaman alması diye. Bası bunun içerisine aldım. Bir tane employee koydum. Bir tane de person koyayım. Person'un constructorında tabii ki maaşlık herhangi bir durum söz konusu değil.
+
+216
+00:52:23,280 --> 00:52:47,788
+Şurası da person oluyor olacak. Mesela şu eğer manager ise man yazsın başına veya işte biz bunu employee mi diye
+
+217
+00:52:49,012 --> 00:53:11,412
+M yazsın gibi başına böyle ekstradan çeşitli ifadeler yazabilirsiniz. Ondan sonra her birisinin to string metodunu çağıralım. Bakalım ne yazacak? Yani staff dizisinin, staff dizisi zaten person. Öyle değil mi? Person. Person'ın to string metodu var. Sadece isimlerini yazdırıyor.
+
+218
+00:53:12,788 --> 00:53:33,607
+Her birisinin sadece isimlerini yazdırıyor. Görebiliyorsunuz burada. Ben o zaman bu staff is a person'ı her birisini for each to author isminde bir değişkenin içerisine atayım. Hani şuraları boş verelim. Buralar çok önemli değil. Her birisinin to speak method'unu çağırayım. Ne sonuç verecek? Bakalım.
+
+219
+00:53:34,483 --> 00:53:56,203
+Bakın, ne dedi? İlki için, dizinin ilk elemanı şuydu. Merhaba, ben bir yöneticiyim. Yani yaptığımız şey author. Author ne? Person. Person'un to string metodunu çağırıyorum. Person'un to string metodunu çağırıyorum ama iki alt sınıfı olan manager'ın to string metodu çağırmıyor.
+
+220
+00:53:56,884 --> 00:54:11,483
+İşte bu durumu şu şekilde de kontrol edebiliyoruz. Yani o person bir manager mıdır, bir employee midir, bunu kontrol edip ona göre farklı farklı işler de yaptırabiliriz.
+
+221
+00:54:12,963 --> 00:54:21,824
+Pekala, mesela diyelim ki bunun to string metodu olmasaydı no. Manager'ın to string metodu yok.
+
+222
+00:54:24,083 --> 00:54:40,843
+Bir düşünün. Ben de çalıştırayım bu arada. Bakın. Manager'ın toString metodu yoksa, nerede o? Şu. Manager'ın toString metodu yoksa artık bir üst sınıfın sadece toString metodunu kullanıyor olacak.
+
+223
+00:54:42,843 --> 00:54:51,403
+Onlar oradan çünkü kalıtımlar gelmiş durumda. Mesela nasıl diyelim? Manager'ın toString metodu olsun.
+
+224
+00:54:52,148 --> 00:54:54,728
+employee'nin olmasın.
+
+225
+00:54:55,148 --> 00:55:02,248
+Employee bu sefer yine kendisinin bir üst sınıfının toString metodunu kullanıyor olacak.
+
+226
+00:55:02,248 --> 00:55:05,807
+Ama kendisinin de employee olduğunu vurguluyor bakın.
+
+227
+00:55:05,927 --> 00:55:06,748
+Ben employee'yim.
+
+228
+00:55:07,315 --> 00:55:18,835
+Ama kendimin to-stake methodu yok. Büyü üst sınıfımın to-stake methodu var. Onu kullanıyorum. I employ'yim bir. Diğerinde employee değil ve sadece büyü üst sınıfınınkini kullanmış oluyor.
+
+229
+00:55:19,476 --> 00:55:30,215
+Sadece üst sınıfta tanımlanırsa to-stake methodu, alt sınıfların hiçbirisinde to-stake methodu olmazsa hepsi aynı to-stake methodunu kullanıyor olacaktır.
+
+230
+00:55:31,155 --> 00:55:34,915
+Şunları simgesen bir yere alalım. Evet, buraya kadar sorusu olan arkadaşımız var mı?
+
+231
+00:55:36,436 --> 00:55:37,536
+Hocam ben sorabilir miyim?
+
+232
+00:55:37,896 --> 00:55:38,615
+Tabii ki, buyurun.
+
+233
+00:55:39,615 --> 00:55:45,235
+Mesela biz person, hani ana sınıfta bir tane fonksiyonuz. Burada toString örneği olsun mesela.
+
+234
+00:55:45,916 --> 00:55:47,336
+Burada merhaba ben bir insanım.
+
+235
+00:55:47,796 --> 00:55:56,135
+Bu alt sınıfta tanımladığımız toString fonksiyonlarında bu cümle artı ek bir şey ekleyebilir miyiz?
+
+236
+00:55:56,255 --> 00:55:58,675
+Yani direkt sıfırdan fonksiyon tanımlamak yerine...
+
+237
+00:55:58,675 --> 00:56:02,896
+Yani şunu demek istiyorsun değil mi? Super'in toString'ini çağıralım.
+
+238
+00:56:03,668 --> 00:56:05,407
+Devamı da böyle olsun.
+
+239
+00:56:06,628 --> 00:56:07,768
+Galiba öyle oluyor.
+
+240
+00:56:08,108 --> 00:56:09,807
+Hiç böyle bir şey demeyelim.
+
+241
+00:56:09,907 --> 00:56:10,768
+Çalıştıralım bakalım.
+
+242
+00:56:10,987 --> 00:56:11,568
+Nasıl olacak?
+
+243
+00:56:11,867 --> 00:56:12,827
+Eklediğini görelim.
+
+244
+00:56:14,048 --> 00:56:16,447
+Şimdi ekledi ama karışık oldu biraz.
+
+245
+00:56:16,807 --> 00:56:17,487
+Doğru ekledi mi?
+
+246
+00:56:17,588 --> 00:56:18,168
+Emin değilim.
+
+247
+00:56:20,007 --> 00:56:21,387
+Bunu nereye ekledik?
+
+248
+00:56:21,847 --> 00:56:23,168
+Employee'ye ekledik.
+
+249
+00:56:23,503 --> 00:56:44,523
+Merhaba ben bir insanım. Bakın, employee olmasına rağmen merhaba ben bir insanım diyor. Adamın şu olduğunu söylüyor. Buraya kadar bitti. İşte süperin two stringi. Bu da şeyin two stringi. Yani süperin two stringini artı yaptık. Geri kalın da şurası.
+
+250
+00:56:45,396 --> 00:57:08,036
+Bunu istediğiniz gibi sonra değiştirilmiş yapabilirsiniz. Merhaba, benim adım şu dedikten sonra şunlara gerek yok yani. Değil mi? Mesela şöyle olabilir. Hani bakıldığında. Merhaba, benim adım şu, maaşım şu. Ek olarak. İnşallah sorunuzu doğru anlamış mıdır? Evet, evet bunu sormuştun hocam. Teşekkür ederim. Evet, ben teşekkür ederim.
+
+251
+00:57:08,724 --> 00:57:13,403
+Burada da keza aynısını yapabiliriz. Mesela şöyle şeyler deneyelim.
+
+252
+00:57:14,943 --> 00:57:15,623
+Östetireyim.
+
+253
+00:57:16,483 --> 00:57:17,043
+Artı.
+
+254
+00:57:17,523 --> 00:57:18,364
+Yak bunu yemedi.
+
+255
+00:57:18,764 --> 00:57:20,304
+İki sınıfa alırım diye de yok.
+
+256
+00:57:20,384 --> 00:57:22,844
+Bir sınıfa alıyor olacağı.
+
+257
+00:57:23,123 --> 00:57:25,003
+Evet, başka soru soran arkadaşımız var mı?
+
+258
+00:57:29,427 --> 00:57:36,427
+Evet, o zaman örnekte başka eksik kalan neyimiz var? Onların hepsini yapmış olduk.
+
+259
+00:57:37,268 --> 00:57:43,728
+Evet, bu hafta genel olarak anlatacağımız şeyler bu kadar. Inheritance'ı bir gördük. Şöyle de bir örnek yapmış olduk.
+
+260
+00:57:43,967 --> 00:57:50,148
+Bundan sonra biraz daha farklı konuları işliyor olacağız ve daha kapsamlı örnekler yapıyor olacağız dersimizde.
+
+261
+00:57:50,608 --> 00:57:57,188
+Çünkü ilişkileri önce oturttuğumuz gerekiyordu. Ondan sonra bir böyle örnek üzerine o ilişkileri kurgulayalım istiyoruz.
+
+262
+00:57:58,027 --> 00:58:02,527
+Ekstradan soru soran arkadaşımız yoksa bugünkü dersimizi burada noktalandırabiliriz.
+
+263
+00:58:05,947 --> 00:58:09,931
+Kendinize iyi bakın diyorum. Haftaya görüşürüz. Sağlıcakla kalın.

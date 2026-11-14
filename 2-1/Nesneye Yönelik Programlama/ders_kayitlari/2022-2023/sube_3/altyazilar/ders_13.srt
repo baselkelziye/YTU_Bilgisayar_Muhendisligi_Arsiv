@@ -1,0 +1,1659 @@
+1
+00:15:25,587 --> 00:15:34,967
+Özgür [öğrenci]. Diğer arkadaşlar labralarımı bilmiyorum ama onlar da birazdan dahil olurlar diye düşünüyorum.
+
+2
+00:15:36,767 --> 00:15:51,507
+Evet. Zaten kaydoluyor bu ders. Geç kalanlar veya bugünkü derse gelmek istemeyenler, kayıttan dinleriz diyenler oradan da dinleyebilirler.
+
+3
+00:15:51,923 --> 00:16:12,723
+Şimdi bugün redlerden bahsediyor olacağız. Buna paralel programlama ismini veriyoruz. Şöyle yansıya yansılarak başlayalım. Son haftalara yaklaşıyoruz tabii ki. Önümüzdeki hafta son dersimizi yapacağız ve GUI.
+
+4
+00:16:13,971 --> 00:16:21,351
+Anlatacağız, Graphic User Interface'i anlatacağız. Bu hafta da paralel programlamaya, yani thread mekanizmasına girişi anlatacağız.
+
+5
+00:16:21,779 --> 00:16:27,220
+Sadece bunu şimdiye kadar herhangi bir derste görmemiş olabilirsiniz.
+
+6
+00:16:27,360 --> 00:16:31,399
+C dersinde veya Sambri dersinde orada da thread mekanizmasını kullanabilirsiniz.
+
+7
+00:16:31,519 --> 00:16:32,439
+O tarz yapılar var.
+
+8
+00:16:33,000 --> 00:16:34,240
+Ayrıca kütüphaneler var.
+
+9
+00:16:34,240 --> 00:16:38,139
+Ama nesne yönelik programlamayla özdeşleşmiş bir şey.
+
+10
+00:16:38,679 --> 00:16:43,980
+Bu thread mantığını kullanmak, paralel programlama yapılarını kullanmak.
+
+11
+00:16:44,419 --> 00:16:48,059
+O yüzden biz de bu derste anlatıyor olacağız.
+
+12
+00:16:48,299 --> 00:16:49,779
+Ama siz bunu kullanacağınız...
+
+13
+00:16:49,779 --> 00:16:54,659
+Tüm programlama dillerinde bu kavramı bilerek ona göre ilerlemeniz lazım.
+
+14
+00:16:54,799 --> 00:16:55,879
+Çok önemli bir kavram.
+
+15
+00:16:56,279 --> 00:17:00,899
+Multitrebing kısmı, multitasking kısmı, paralel programlama kısmı.
+
+16
+00:17:00,899 --> 00:17:07,339
+Biz biraz Java'da bu işler nasıl ceryan ediyor onlara dair çeşitli örnekler veriyor olacağız.
+
+17
+00:17:07,799 --> 00:17:09,400
+Şimdi bahsettiğimiz kavramlar.
+
+18
+00:17:09,875 --> 00:17:16,495
+Bu ders kapsamında multitasking, multiple processes ve multitrading oluyor olacak.
+
+19
+00:17:17,016 --> 00:17:37,875
+Multitasking dediğimiz şey bir tane programın, bir tane programdan daha fazla bir programınız varsa aynı anda bunların çalıştırılabiliyor olması, concurrency diyorum buna, eş zamanlı bir şekilde birden fazla programın çalıştırılabiliyor olmasına multitasking diyoruz.
+
+20
+00:17:37,875 --> 00:18:03,875
+Tabii bizim günümüzde artık işlemci dediğimiz CPU'ların birden fazla çekirdeği söz konusu. Ben programımı yazarken, gerçekleştirirken sadece tek bir çekirdekli çalışabilecek şekilde yazdığımda diğer çekirdekleri belki bazen boşta bırakıp tek çekirdeği %100 kullanma durumum söz konusu olabilir. Eğer ki problemim paralelleştirilebiliyorsa...
+
+21
+00:18:04,372 --> 00:18:14,492
+Ondan da birazdan bahsedeceğiz. Ne ters şeyler paralel olabilir diye. Problemin paralelleştirilebiliyorsa bu yapıyı kullanmak kesinlikle güzel olacaktır.
+
+22
+00:18:14,492 --> 00:18:22,052
+Birden fazla çekirdeği böylece kullanabiliyor. Hale geleceğim. Bir çekirdeğin üzerine iş yükünü alıyor olacağım.
+
+23
+00:18:22,572 --> 00:18:32,172
+Tabii her problem paralelleştirilemeyebilir. Öyle de bir durum var. Ama paralelleştirilebiliyorsa bu yaklaşımı oluşturabiliyor olmamız.
+
+24
+00:18:33,076 --> 00:18:47,476
+lazım. Yani bizim tabii işlemci mimarimizin buna el vermesi gerekiyor ama artık günümüzdeki neredeyse tüm mimariler bu işe el verişli hale hallederim diye düşünüyorum.
+
+25
+00:18:47,476 --> 00:19:01,076
+Bu alt yani bizim prosesimizi alt çeşitli proseslere bölüp paralelleştirme işlemi sonucunda çıkan her bir prosese konkurrent bir şekilde çalışacak her bir.
+
+26
+00:19:01,076 --> 00:19:04,276
+bir procese subproses diyoruz biz arkadaşlar.
+
+27
+00:19:08,147 --> 00:19:33,087
+Yani tabii şimdi şöyle de bir durum söz konusu. Evet, bir problemimizi paralelleştirmek istiyoruz. Mesela eğer çekirdeğiniz el veriyorsa, mesela belki bunu GPU'da yapacaksınız bilmiyorum, bin parçaya böldünüz. Ondan sonra her bir parçada bir sonuç hesaplandı. O sonucu tekrardan bir yerde birleştirmeniz gerekiyor. Bazen bu süreci oldukça hızlandırabilir.
+
+28
+00:19:33,364 --> 00:19:44,524
+Ama bunu mantıklı bir şekilde kullanmazsanız, rojini doğru kurgulamazsanız, her bir prosesin bu şekilde paralelleştirilmesi ve aynı zamanda işlem gücü iyi olacak.
+
+29
+00:19:45,144 --> 00:19:50,284
+Ve elde edilen sonuçların tekrardan birleştirilmesinin kompleksitesi burada çok önemli.
+
+30
+00:19:50,963 --> 00:19:57,244
+Orada da bir kompleksite probleminiz varsa, bazı durumlarda paralel hale getiriyor olmak işi,
+
+31
+00:20:00,000 --> 00:20:04,440
+Sadece seri bir şekilde çalışmasından daha uzun da sürebilir.
+
+32
+00:20:05,059 --> 00:20:09,319
+O yüzden problemi doğru bir şekilde seçmek gerekiyor.
+
+33
+00:20:10,324 --> 00:20:15,824
+Buradan da, burada da temelde ondan bahsetmiş durumdayız.
+
+34
+00:20:15,824 --> 00:20:21,304
+Tabii bir de aynı zamanda concurrent bir şekilde çalışan eş zamanlı.
+
+35
+00:20:21,324 --> 00:20:24,184
+Concurrent ne demek? Birisi çalışırken diğeri de çalışıyor.
+
+36
+00:20:24,324 --> 00:20:27,384
+Aynı anda işlem gerçekleştiriyor.
+
+37
+00:20:27,864 --> 00:20:36,423
+Concurrent bir şekilde çalışan threadlerde zaman zaman aynı kaynağa erişmeyle ilgili bir durumla karşılaşabilirsiniz.
+
+38
+00:20:36,423 --> 00:20:38,324
+Yani her ikisi de gidip...
+
+39
+00:20:38,324 --> 00:20:44,844
+ilgili memori'deki veya diskdeki değerleri okuyup ona göre işlem gerçekleştirmek isteyebilir.
+
+40
+00:20:45,364 --> 00:20:49,004
+Sadece okumak değil, yazma yönünde hareketler gerçekleştirebilir.
+
+41
+00:20:49,443 --> 00:20:56,064
+Böyle olduğu durumda da bir senkronize halde bu threadlerin çalışıyor olması gerekir.
+
+42
+00:20:56,423 --> 00:20:58,824
+Onunla da ilgili hem bir keywordümüz var.
+
+43
+00:20:58,824 --> 00:21:06,324
+Bir metodun nasıl senkronize hale getirileceğine dair ve bu senkronizasyon olması.
+
+44
+00:21:06,324 --> 00:21:11,184
+Mas zannetat problemler oluşuyor. Bugün onlara da değiniyor olacağız.
+
+45
+00:21:11,564 --> 00:21:17,584
+Lakin şunu unutmayın, paralelleştirme süreci de aynı zamanda bir iş gücü.
+
+46
+00:21:17,584 --> 00:21:23,584
+Yani sadece paralel bir single haldeyken...
+
+47
+00:21:23,647 --> 00:21:51,607
+10 saniyede çalışıyordu. Ben 10 parçaya böldüm bunu. Artık 10 tane de çekirdeğim var. Her birisi 1 saniyede çalışacak için totalde program 1 saniyede çalışır diye bir şey yok. Bunların paralelleştirilip en nihayetinde her birisinin ürettiği verilerin toplanıp single hale getirilmesi bir durum söz konusu. Bu da hiç uçursuz zaman alacaktır. Belki 3-4 saniyeleri bulabilirsiniz. Eğer izler kurgulamazsanız single halde çalışan, seri bir şekilde çalışan programını.
+
+48
+00:21:51,647 --> 00:21:54,647
+Daha uzun bile sürebilir.
+
+49
+00:21:54,647 --> 00:21:55,407
+Şimdi
+
+50
+00:21:56,051 --> 00:22:02,011
+Tabii ki bir akışımız söz konusu ve çeşitli metodlarımız söz konusu.
+
+51
+00:22:02,511 --> 00:22:09,251
+Öncelikle bizim oluşturacağımız sınıfımız runnable bir sınıf olması gerekiyor.
+
+52
+00:22:09,731 --> 00:22:11,831
+Birazdan bunlardan bahsediyor olacağız.
+
+53
+00:22:11,831 --> 00:22:16,111
+Belli yerlerden türetilmesi gerekiyor yani.
+
+54
+00:22:17,132 --> 00:22:23,692
+Programımızı thread olarak çalıştırmak istiyorsak bunu çalıştıracak bir scheduler ayarlıyor olacağız.
+
+55
+00:22:24,051 --> 00:22:31,611
+zaman zaman durduracak, zaman zaman uykuya geçirecek, zaman zaman çalışmasını sağlayacak bir yapıda çalışıyor.
+
+56
+00:22:31,991 --> 00:22:36,251
+Ardından scheduler'ın el verdiği ölçüde bizim thread'imiz çalışıyor olacak.
+
+57
+00:22:36,391 --> 00:22:40,172
+Çeşitli kriterler doğrultusunda bloklanabilir.
+
+58
+00:22:40,711 --> 00:22:44,271
+Yani başka bir thread'in çıktısını bekliyor olabilir.
+
+59
+00:22:44,771 --> 00:22:47,652
+Network'ten bir datanın gelmesini bekliyor olabilir.
+
+60
+00:22:47,652 --> 00:22:52,011
+Veya kendisi diğer thread'lerden daha önce işlerini bitirip
+
+61
+00:22:52,051 --> 00:23:13,692
+Bekleme moduna geçmiş olabilir. Herhangi birisi olabilir. Çeşitli durumlarda tekrardan block duruma geçip tekrardan running durumuna geçtiği durumlar söz konusu olacaktır. En sonunda da termine ediyoruz ve o thread yapısını çalışması sona erdirdikten sonra ortadan kaldırıyoruz.
+
+62
+00:23:20,051 --> 00:23:21,951
+Ondan bahsediyor olalım isterseniz.
+
+63
+00:23:22,431 --> 00:23:25,051
+Tabii karşısına çıkacak çeşitli engeller.
+
+64
+00:23:25,271 --> 00:23:35,511
+Buradaki, konförün çalışmadaki en büyük problemi ve aynı işi yapıyorsa ki, bu trendler genellikle paralel programlıyoruz ya, aynı işi yapmak için kurgulanmış şeylerdir.
+
+65
+00:23:35,511 --> 00:23:40,871
+Ötek türlü farklı işi yapıyorsa, bunlar zaten farklı bir program oluyor olacaklar.
+
+66
+00:23:41,152 --> 00:23:48,051
+Aynı işi yaptıkları için çok yüksek bir olasılıkla gidip aynı kaynağa da okuma ve yazma yönünde erişmeye çalışacağız.
+
+67
+00:23:48,051 --> 00:24:09,051
+Bunların önünde bir engel olması gerekiyor. Yoksa ben okumuşum, değiştirmişim, o okumuş, değiştirmiş. Tam okumuşum, değiştirmeden o okumuş, ben değiştirmişim. Yani böyle karman çorman bir yapıya dürünebilir. Aynı anda çok fazla da kretiniz varsa içinden çıkılmaz bir hal alabilir. O yüzden...
+
+68
+00:24:09,152 --> 00:24:17,472
+Bazı durumlarda threadler bazı işleri gerçekleştirmek için sıraya girmesi, beklemesi gerekiyor.
+
+69
+00:24:17,572 --> 00:24:22,112
+Tabii burada bir kaynağa erişmeyi kastettik ama networkten bir veri geliyordur.
+
+70
+00:24:22,231 --> 00:24:32,231
+Veya kullanıcıdan bir klavyeden olabilir, bir ne bileyim mouse'dan olabilir veya bir girdi sağlayacak herhangi bir veriyi bekliyor olabilir.
+
+71
+00:24:32,231 --> 00:24:34,472
+Yüz tanıma işlemi gerçekleştireceksinizdir.
+
+72
+00:24:34,791 --> 00:24:37,152
+Web kameraya insan geldiğinde yiyen...
+
+73
+00:24:37,152 --> 00:24:58,152
+Kavramda bir akış olduğunda çalışan bir tretiniz belki söz konusudur. Yani çeşitli böyle akışlar neticesinde çalışması gerekebilir. Fakat treti bekletmek demek busy waiting yapmak değil. Busy waiting nedir? Boş yere belli bir süre bekletiyorsunuz. Soru durumu tekrardan kontrol ediyorsunuz. Mesela...
+
+74
+00:25:00,884 --> 00:25:21,884
+Çok özür diliyorum. While bin dediniz. Bu ne demek? Yani işte belli bir iterasyon boyunca onu bekleyin. While bin'den katkı hiçbir zaman bin olmayacak, sonsuza kadar dönecek de belli bir şeyi saydırıyorsunuz içeride ve işte bin tane clock cycle'lık bir bekleme döngüsü oluşturuyorsunuz.
+
+75
+00:25:22,867 --> 00:25:47,067
+Yani hiçbir iş yapmıyorsunuz, sadece beklesin istiyorsunuz. Bunu kastetmiyorum. Bu aynı zamanda gidip işlem gücünü düzü de tüketecektir. Tamam mı? Bir korunuzun bir işlem gücünü neyi saydırıyorsanız, düzü veytik yaparken boşuna tüketecektir ve siz o saydırma esnasında tam müsait olduğunuz zaman yakalayamayabilirsiniz.
+
+76
+00:25:47,279 --> 00:26:01,279
+Diyelim ki bir saydırma işlemi gerçekleştiriyorsunuz, 3 saniye bekletiyorsunuz ama sizin 1.5 saniyenizde saymanız devam ederken threadin beklediği koşullar jeryan etmiş olsa bile siz 1.5 saniyeden ekstradan beklemiş oluyorsunuz.
+
+77
+00:26:02,019 --> 00:26:06,039
+O yüzden böyle bir yapı kullanmak çok fazla elverişli değil.
+
+78
+00:26:06,239 --> 00:26:15,279
+Onun yerine bizim Java tarafında ve Object Oriental Programlama tarafında bakıldığında sleep yani threadleri uyutma konu.
+
+79
+00:26:15,279 --> 00:26:28,119
+Bu söz konusu. Uyuyan deliklet bizim şimdiye kadar gördüğümüzün aksine yani bizi ve itinkin aksine herhangi bir şekilde bizim kaynaklarımızı tüketecek bir yapıda çalışmıyor.
+
+80
+00:26:28,119 --> 00:26:43,279
+Ama en önemli problemlerden biz çok fazla ceryen karşımıza çıkmaz aslında bu ama bazı uyuttuğumuz tretleri de çeşitli koşulları güzel bir şekilde ayarlayamamışsak uyandıramayabiliriz.
+
+81
+00:26:43,279 --> 00:26:44,043
+Arkadaşlar, class, object,
+
+82
+00:26:44,115 --> 00:26:58,036
+O yüzden uyandıramama riski olduğundan ötürü muhakkak bir try-catch bloğu içerisinde bunu kontrol etmek gerekiyor. Interruptive Exception tarafında bir Exception yakalanabiliyor.
+
+83
+00:26:58,036 --> 00:27:12,036
+Yani try-catch bloğunun içerisinde uyandıramama durumunda catch bloğuna Interruptive Exception yakalarsak ona göre bir check Exception yakalamış olup programın akışını istediğimiz gibi biz kendimiz...
+
+84
+00:27:12,115 --> 00:27:13,915
+yönlendirebiliriz.
+
+85
+00:27:15,576 --> 00:27:19,795
+Pekala, bu thread olayını nasıl yapacağız?
+
+86
+00:27:19,895 --> 00:27:22,056
+Biz bir programımız var.
+
+87
+00:27:22,715 --> 00:27:28,635
+Aynı anda çalışmaya müsait, paralelleştirilmeye müsait.
+
+88
+00:27:28,976 --> 00:27:31,016
+Pekala, bunu nasıl paralelleştireceğiz?
+
+89
+00:27:31,215 --> 00:27:34,036
+Burada biraz ondan bahsediyor olacağız.
+
+90
+00:27:34,496 --> 00:27:48,356
+Her bir sınıfımızın paralel bir şekilde çalışmasını istediğimiz metotları varsa onu runable'dan türettikten sonra tabii ki birazdan bunlara örneğini göstereceğiz.
+
+91
+00:27:48,836 --> 00:27:52,715
+Run metodunun içerisine yani bir tane run metodu olacak.
+
+92
+00:27:53,256 --> 00:27:56,996
+İsmi run olması gerekiyor. Nasıl main metodun ismi main'i değiştirmiyoruz.
+
+93
+00:27:56,996 --> 00:27:58,516
+Bir run metodu olacak.
+
+94
+00:27:59,892 --> 00:28:05,692
+Run metodunun içerisine paralel çalışmasını istediğimiz kodu yazacağız.
+
+95
+00:28:06,032 --> 00:28:15,432
+Tekrar söyleyelim, Runable interface'den implement edilmiş olması gerekiyor o sınıfın ve o sınıfın Run metodu olması lazım.
+
+96
+00:28:15,572 --> 00:28:21,692
+Runable interface'den siz implement etmezseniz bunu, Run metodunuzu sanki kendiniz yazmışsınız gibi olur.
+
+97
+00:28:22,132 --> 00:28:25,652
+Ekstradan bir içerisine mana yüklenmemiş olur.
+
+98
+00:28:25,652 --> 00:28:27,892
+Bu class'ımızı bu şekilde oluşturuyor.
+
+99
+00:28:27,892 --> 00:28:51,912
+Paralel çalışmasını istediğimiz metodu run'ın içerisine yerleştirdik. Ardından bu class'tan bir tane obje üretiyoruz. New anahtar sözcüğüyle tahmin edebileceğiniz üzere. Ve yine runable olan bu sınıftan bir thread üretiyoruz. Bakın önce objeyi üretiyoruz. Ardından thread'i üretiyoruz. Bu objeyi içerisinde göreceksiniz. Birazdan parametre olarak vereceğiz.
+
+100
+00:28:55,892 --> 00:28:56,452
+kullanıyoruz.
+
+101
+00:28:56,688 --> 00:29:00,588
+Bakın önemli, vurguluyorum, start metodunu kullanıyoruz.
+
+102
+00:29:01,508 --> 00:29:05,827
+Hocam, biz buna start diye bir metot tanımlamadık.
+
+103
+00:29:06,188 --> 00:29:07,827
+Tanımladığımız metot run'dı.
+
+104
+00:29:08,148 --> 00:29:10,008
+O yüzden run'ı çalıştırsak olmaz mı?
+
+105
+00:29:10,288 --> 00:29:16,288
+Run'ı çalıştırsanız da run'ın içerisindeki, o metodun içindeki işler gerçekleşiyor olacak.
+
+106
+00:29:16,508 --> 00:29:20,788
+Ama paralel bir şekilde çalıştırmanın önüne geçmiş olacaksınız.
+
+107
+00:29:21,428 --> 00:29:22,188
+Engelleyeceksiniz.
+
+108
+00:29:22,288 --> 00:29:24,688
+Böylece seri bir şekilde programına kalacaksınız.
+
+109
+00:29:24,688 --> 00:29:31,248
+Arkışı gerçekleşecek. Sizin çalıştırmanız gereken o threadin metoduysa start olmak zorunda.
+
+110
+00:29:31,248 --> 00:29:38,248
+Tabii bir de aynı zamanda bir threadten işte...
+
+111
+00:29:38,640 --> 00:29:59,640
+Kendi kodunuzun içerisinde tekrardan başka bir thread inherit etmenin, yani olayın lojiğine aykırı bir durumu söz konusu olmuş oluyor. Ona da dikkat etmeniz gerekiyor. Boşuna bir inheritance orada gerçekleştirilmiş olsun. Birazdan kod...
+
+112
+00:30:00,051 --> 00:30:05,132
+üzerinde göstereceğim. O zaman bunlar daha güzel anlaşılıyor olacak.
+
+113
+00:30:05,271 --> 00:30:07,991
+Şimdi şöyle bir örneğimiz var okulun içerisinde.
+
+114
+00:30:08,451 --> 00:30:12,711
+Bir futbol müsabakası olduğunu düşünüyor olalım.
+
+115
+00:30:12,711 --> 00:30:14,791
+Bir maç yapılacak. İnsanlar bunu izliyor.
+
+116
+00:30:14,891 --> 00:30:17,891
+Farklı farklı takımın taraflarları var.
+
+117
+00:30:18,791 --> 00:30:21,991
+Diyelim ki bunlar çeşitli tezahüratlar yapıyor.
+
+118
+00:30:22,192 --> 00:30:24,523
+Nonsense dediği hani...
+
+119
+00:30:24,660 --> 00:30:36,620
+Şey, hani saçma gibi değil de hani böyle bir şey olması, böyle bir program yazmasın ama siz güzel anlayın diye olayı nasıl paralelleştirilebiliyor, güzel anlaşılsın diye böyle bir örnek yapılmış.
+
+120
+00:30:37,000 --> 00:30:46,640
+Yani şöyle düşünün, tezahürat yapma, taraflardan tezahürat yapmasını düşünelim. Nasıl bir problemdir bu? Hepsi aynı anda bağırabilir.
+
+121
+00:30:47,019 --> 00:30:51,640
+Bazısı yorulur, bağırmayı bırakır, birisi sürekli bağırır.
+
+122
+00:30:52,660 --> 00:30:59,940
+Farklı farklı tezahüratlar atılabilir. Bazısının tezahürat sıklığı fazladır, bazısının tezahürat sıklığı azdır.
+
+123
+00:30:59,940 --> 00:31:10,160
+Ama paralel her bir oradaki birey, taraftar sanki paralel bir şekilde çalışıyormuş gibi düşünebiliriz.
+
+124
+00:31:10,680 --> 00:31:17,280
+Burada temelde ondan bahsediliyor ve buna dair de bir örnek yapıyor olacağım sizlere.
+
+125
+00:31:19,000 --> 00:31:20,660
+Burada işte dediği şey...
+
+126
+00:31:20,660 --> 00:31:31,120
+Her bir o taraftar saniyede bir kez, yani sıfır ile bin milisaniye arasında bir tezahürat yapma ihtiyacı hissediyor içinden.
+
+127
+00:31:32,320 --> 00:31:37,780
+Tamam mı? Bir saniye mesela ilk milisaniyelerinde de yapabilir bunu. Bir saniye bekleyebilir.
+
+128
+00:31:38,180 --> 00:31:44,180
+Rastgele buradan bir değer üretilecek demek ki konunun içerisinde bir tezahürat yapıyor.
+
+129
+00:31:47,284 --> 00:31:56,244
+10 kez tezahürat yaptıktan sonra çok fazla yorgun düştüğü için artık tezahürat yapmaya ara veriyor.
+
+130
+00:31:56,584 --> 00:32:02,344
+Şimdi gelin bunun eklifis kodunu beraber bir inceliyor olalım.
+
+131
+00:32:04,784 --> 00:32:08,704
+Eklifis de inceliyor olalım ben bulabilirsem. Evet buldum.
+
+132
+00:32:09,268 --> 00:32:25,648
+Şimdi şöyle, tabii biraz temel sınıflarımızdan bahsediyor olayım size, için içerisinde neler var. Bunlardan ilki futbol taraftarının sınıfı. Bakın, implement runnable.
+
+133
+00:32:26,067 --> 00:32:53,448
+Çok önemli. Runable arayüzünden, interface'inden implement etmeniz gerekiyor. Onu paralel çalıştıracaksınız bir thread olarak kullanacaksanız. Step ve delay diye iki tane final yani değiştirilemez attribute oluşturulmuş. Bunlar da birisi bin milisaniye kadar bekliyordu her tezahürat arasında. Diğeri de kaç tane tezahürat yapacağı manasına.
+
+134
+00:32:54,067 --> 00:32:59,567
+Takımın adı ve tezahüratının ne olduğuna dair de iki tane attribüt var.
+
+135
+00:33:00,028 --> 00:33:08,067
+Ve o futbol taraftarını oluştururken takımın adı ve tezahüratının isminin ne olduğunu kullanarak oluşturuyoruz.
+
+136
+00:33:08,988 --> 00:33:10,648
+Bakın kastettiğim şey buydu.
+
+137
+00:33:10,827 --> 00:33:12,408
+Public Void Round.
+
+138
+00:33:12,915 --> 00:33:40,915
+Açtık, şurada kapattık. Public, void run. Yani biz bunu bir thread mekanizmasında çalıştıracaksak zaten yazacağımız her şey bir metodun içerisine girecektir. Burada yaptıracağınız tezahürat yapma işlerini en kötü siz kendiniz public, string, tezahürat diye bir metot yazacaktınız. Onun içerisine yerleştirecektiniz. Bu metot paralel çalışmasını istiyorsanız tüm taraftarlar için sonuçta bu bir sakır tam. Siz bundan en tane üretici...
+
+139
+00:33:40,915 --> 00:33:48,915
+ve any de paralel çalışsın istiyorsanız yapacağınız şey o paralel çalışacak şeyi run metodunun içerisine yerleştirmek.
+
+140
+00:33:49,256 --> 00:33:51,436
+Ardından bir random sayı.
+
+141
+00:33:51,892 --> 00:34:19,632
+üretiliyor ve şu try geçimleri geçelim. 10, stepimiz 10'du. 10 kere bir tezahürat yapmak için ekrana şu değer yazdırılıyor. Ondan sonra belli bir süre uyutuluyor. Tamam mı? Şu generator üretilen, generator sınıfının içinde ne kadar uyutulacağı söz konusu. Next int dediğimizde sıfırla bin arasında bir değer üretiyor.
+
+142
+00:34:19,891 --> 00:34:26,992
+Generator, Random sınıfından üretilen obje ve Tretimizin belli bir süre uyumasını sağlayacağız.
+
+143
+00:34:27,051 --> 00:34:31,511
+Yani ekrana şu değeri yazacak, takımının ismini ve tezahüratını yazacak.
+
+144
+00:34:31,871 --> 00:34:36,891
+Sallıyorum, 500 milisaniye uyuyacak. Ondan sonra uyanıp bir daha yazacak.
+
+145
+00:34:37,072 --> 00:34:42,931
+Belki 10 milisaniye uyuyacak, bir daha yazacak. Sonra belki 900 milisaniye uyuyacak, bir daha yazacak.
+
+146
+00:34:42,931 --> 00:34:45,171
+Bu işlemi 10 kere tekrarlıyor olacak.
+
+147
+00:34:47,891 --> 00:35:15,811
+gibi thread'i uyutuyoruz belli bir süre. O belli bir süre uyuduktan sonra çeşitli durumlar cereyan edip bu thread'i uyandıramayabilme durumumuz söz konusuysa diye bunu try catch bloğunun içerisine yerleştiriyoruz. Yani interap almışız ve o interap doğru bir şekilde tekrardan geri dönemiyorsa bunu burada sadece bir print back trace diyerek bunun
+
+148
+00:35:15,891 --> 00:35:25,451
+İzini, yani bu interapp'ın oluşmasının, exception'ın oluşmasının programcı açısından ne tercih bir yansıması var, onu görüyoruz.
+
+149
+00:35:25,771 --> 00:35:37,652
+Yoksa aslında yapılması gereken şey, burada bir exception alındığı durumda, catch-bluğuna düşüldüğü durumda olayı programcının handle ediyor olması.
+
+150
+00:35:38,451 --> 00:35:42,751
+Suckerfunk bu şekilde, sınıf olarak bakıldığında. Bir de hakem var.
+
+151
+00:35:43,891 --> 00:35:50,911
+Hakem'de bakın Sakırfan'dan türetilmiş. Sakırfan'dan türetilmiş bir hakem söz konusu.
+
+152
+00:35:52,431 --> 00:35:54,791
+Kalıcımla türetilmiş, görüyorsunuz.
+
+153
+00:35:54,791 --> 00:36:01,451
+Şimdi Sakırfan'ın bir arayüzden implement edildiğini biliyoruz.
+
+154
+00:36:02,036 --> 00:36:16,836
+Ve onun içerisinde run metodu var ve seri paralel bir şekilde çalıştırmaya olanak tanıyor. Ben hakemi de rüpliği de sakır pandan kalıtımla türettiğimde bu özelliklerine ısrarlıyorum.
+
+155
+00:36:17,108 --> 00:36:44,847
+Artık o da paralel çalışabilecek yapıda bir özelliğe yani run metoduna sahip. Bakıldığında bu da başlangıcına, boşluk değerine alıyor. Hiçbir değeri almıyor. Çünkü herhangi bir takıma ait değil. İlk değeri süperle beraber neyi set edersiniz? Bunun konstruktörünün içerisindeki iki değeri set edersiniz. İlk neydi? Takım ismi kalıbına geldiği için. İkincisiydi tezahürat. Belki hakem tezahürat yapmayacak.
+
+156
+00:36:45,108 --> 00:37:05,028
+Bu şeyler söyletmeye çalışılacak. Programın akışında beraber müddetimiz. Yani bir bol taraftar var, bir de hakemler var. Gelin maçın içerisine girelim. Bu işlerin nasıl ceryan ettiğini beraber görüyoruz. Bakın öncelikle bir thread tanımlanmış. Bir tane thread tanımlanmış. Ardından bu thread, yani şöyle de yazılabilirdi. Hiç kışkızı.
+
+157
+00:37:05,876 --> 00:37:09,576
+Bu şekilde de olabiliyor. Hatta birisi de bu şekilde olmuş olsun.
+
+158
+00:37:10,296 --> 00:37:16,115
+New Trade. İçerisine bir tane sakırhan alıyor. Bu da böyle olabilirdi.
+
+159
+00:37:16,115 --> 00:37:28,115
+Yani hani bu böyle yazınca kafanız karışıyorsa diye bir sefer ayrı yazmış olalım bunu. Ondan sonra...
+
+160
+00:37:28,403 --> 00:37:32,184
+Diğer örnekler de direkt işin içerisinde olacak.
+
+161
+00:37:32,283 --> 00:37:37,923
+Yani öncelikle bir sakırpan tanımlanmış takımının ismi var, tezahüratının ismi var.
+
+162
+00:37:38,403 --> 00:37:48,583
+Ardından thread tanımlanmış ve thread'in içine bu muhakkak runable interfazinden türetilmiş olan o objeyi veriyoruz.
+
+163
+00:37:48,724 --> 00:37:54,083
+Artık bir thread'imiz oldu. Ondan sonra bunu start, anahtar sözcüğüyle, metoduyla başlatıyoruz.
+
+164
+00:37:56,403 --> 00:38:24,403
+thread tanımlayıp onu başlatıyoruz. Tabii aynı isimlendirme olabilir. O manada herhangi bir sıkıntı yok. Başka bir thread tanımlayıp onu başlatıp başkasını tanımlayıp onu başlatmış durumdayız. Şöyle bir küçültelim. Konsol aşağı gelsin. Yazıcıları şeyleri buraya yazıyor olacak bakıldığında. Yani gördüğümüz şey ne? Galatasaray, Trabzon, Beşiktaş ve Fenerbahçe'ye dair 4 tane taraflar var. Bunlar çıkacaklar. Çeşitli tezahüratlar yapacaklar. Her birisi...
+
+165
+00:38:24,403 --> 00:38:29,403
+10 kere tezahürat yapacak ve rastgeleli öyle bir denk gelirse...
+
+166
+00:38:29,652 --> 00:38:57,452
+rastgelelik. Yani birisi her rastgele çektiğinde bir saniye beklemenin zorunda kaldı. Maksimum süre bin milisaniye beklemenin zorunda kaldı. Diyelim on saniyede maksimum bu olayın bitmesi lazım. Bakın karman çorman bir şekilde bir o söylüyor, bir o söylüyor, bir o söylüyor, bir o söylüyor. Belli bir süre sonra bitiyor. Mesela öyle bir denk gelmiş ki Beşiktaş en son üç tezahüratı.
+
+167
+00:38:57,652 --> 00:39:25,572
+İçiktaş taraftarı yapmış. Farklı çalıştırdığımızda rastgeleliklerinden ötürü bu sefer en sona farklı taraftar tezahüratları gelecektir. Bakın bu sefer Galatasaray 2 geldi. Randomluk var bir. Bir diğer ikincisi her bir şuradaki treti ben oluşturduğumda onun run metodu bakın. Hocam ne çalışıyor burada? Çalışan şey run metodu arkadaşlar. Tekrar söylüyorum. Çalıştığında sonuç ortaya çıkmış oluyor. Pekala ben.
+
+168
+00:39:25,652 --> 00:39:43,912
+Hocam, start'ını değil de hani dediniz ya bunların run metodu var. Bu threadlerin run metodunu çalıştırayım. Bakın, run metodu. Hali hazırda, şurada da run metodunu yazdık. O zaman paralelleşmişiz zaten. Runable'dan geliyoruz ve run'ı çalıştırsak ne oluyor? Bakın çalıştırayım.
+
+169
+00:39:44,403 --> 00:39:59,963
+Önce Galatasaray, Treti, Ran oluyor. 10 kere tezahürtünü yaptı. Ondan sonra Trabzon'un seyircisi tezahürtünü yapıyor 10 kere. Fenerbahçe'ye Beşiktaş'a geçti ve en sonunda da hakem Saki.
+
+170
+00:40:00,000 --> 00:40:07,439
+İnan olun diye bunlara bir uyarı yapıyor olacak. Paralel çalışmadığı durumda zaten karşımıza çıkacak şey buydu.
+
+171
+00:40:07,439 --> 00:40:14,300
+Tahmin edebileceğiniz üzere. Yani önce birisi çalışıyor, sonra diğeri çalışıyor, sonra diğeri, sonra diğeri, sonra diğeri çalışıyor.
+
+172
+00:40:14,679 --> 00:40:22,779
+Böyle paralel değil, seri çalıştırmış oluyoruz. Paralel çalıştırdığımız versiyon da bir o söyleyeyim, bir o söyleyeyim, bir o söyleyeyim, bir o söyleyeyim.
+
+173
+00:40:23,800 --> 00:40:26,639
+Yani zaten olayın amacı bu.
+
+174
+00:40:28,000 --> 00:40:39,619
+edilmesi gereken husus, tekrar söylüyorum, run metodunu değil, bütün işleri run metodunun içerisine yazıyoruz ama run metodun değil, start metodunu çağırmamız bekleniyor.
+
+175
+00:40:41,359 --> 00:40:46,439
+Tabii şöyle de bir şey yapabilirsiniz, hani bizim lojiyumuz neye el verir?
+
+176
+00:40:52,947 --> 00:41:20,947
+Objen, fan 1 objen, sucker fan'dan çıkan, runable'dan implement edilmiş ve run metodu var. Ben direkt bunu çağırayım o zaman. Tret emirate ihtiyaç yok. Böyle olduğunda da yani yapacağınız şey sanki run metodunu kendiniz yazmışsınız gibi seri bir şekilde çalışacak. Tret mekanizmasını kullanmadığınız sürece onu paralel çalıştırabilmenize herhangi bir şekilde olanak tanımlı.
+
+177
+00:41:20,947 --> 00:41:23,587
+Onu da ekstradan söylemiş olalım.
+
+178
+00:41:24,068 --> 00:41:31,547
+Yine aynı şekilde yani tek bir thread'in içerisinde bir thread'i tekrardan reuse ederek onun üzerine yazarak da gidebilirsiniz.
+
+179
+00:41:32,027 --> 00:41:34,027
+Yani integer A diye bir değişken tanımlamışsın.
+
+180
+00:41:34,467 --> 00:41:35,467
+Farklı farklı kullanıyorsun.
+
+181
+00:41:35,627 --> 00:41:37,228
+Tekrar A boşuna düştü bir daha kullanıyorsun.
+
+182
+00:41:37,327 --> 00:41:38,507
+A boşuna düştü bir daha kullanıyorsun.
+
+183
+00:41:38,688 --> 00:41:42,847
+Yapabilirsin veya her birisi ayrı ayrı thread de burada tanımlayabilirsin.
+
+184
+00:41:42,987 --> 00:41:46,507
+Böyle olduğu durumda da paralel çalıştığını yine göreceksin.
+
+185
+00:41:46,688 --> 00:41:48,927
+Her birisi aynı thread'de olmak zorunda.
+
+186
+00:41:48,947 --> 00:41:57,007
+Aynı thread ismiyle isimlendirilmek zorunda. Daha doğrusu değil. Paralel çalışmaya olanak tanınması için.
+
+187
+00:41:57,407 --> 00:42:07,307
+Veya bir diğeri yani hiçbir şeye atamazsınız. Direkt new thread, new sucker fun deyip en sonunda start metodunu çağırırsınız.
+
+188
+00:42:07,667 --> 00:42:11,447
+Yani şuraya kadar oluşturduğumuz şeyi ne yaptık? Önce bunu tanınalım.
+
+189
+00:42:11,447 --> 00:42:16,867
+Hatta şurada bakarsanız önce bir sucker fun tanınalım. Ondan sonra bunu tanınalım. Ondan sonra start thread.
+
+190
+00:42:16,947 --> 00:42:23,367
+Şunu dışarıya kadar aldığınızda, yani şunu yazıp direkt çalıştırabilirsiniz.
+
+191
+00:42:23,907 --> 00:42:30,907
+Bazı durumlarda bu örneğin de sıkça bazı kütüphanelerde özellikle kullanıldığını görüyor olacaksınız.
+
+192
+00:42:31,247 --> 00:42:33,967
+O yüzden bunu da örneği koyduk buraya.
+
+193
+00:42:33,967 --> 00:42:41,507
+Yani thread tanımlarken direkt böyle herhangi bir ekstradan bir thread objesi oluşturayım.
+
+194
+00:42:41,568 --> 00:42:44,787
+Obje üzerinden bir deyin değil de herhangi bir geçici.
+
+195
+00:42:44,947 --> 00:42:49,547
+Obje ismi olmadan bu tredi tanımlayayım şeklinde de ilerleyebilirsiniz.
+
+196
+00:42:49,707 --> 00:42:51,867
+Bu da paralel bir şekilde çalışacak.
+
+197
+00:42:52,467 --> 00:42:55,627
+Run metodum değil, tekrar söylüyorum, hep hata yaparsınız bu konuda.
+
+198
+00:42:55,627 --> 00:43:02,268
+Stat metodumu çağırdığımız sürece herhangi bir sıkıntı söz konusu olmayacak.
+
+199
+00:43:03,007 --> 00:43:05,648
+Buraya kadar sorusu olan arkadaşımız var mı?
+
+200
+00:43:11,123 --> 00:43:14,443
+Yok. Güzel. Devam edelim. Olamaz. Slide'dan devam edecek.
+
+201
+00:43:15,923 --> 00:43:24,864
+Biraz kafamıza canlandı zannımca thread mekanizmalarının ne şekilde çalıştığı.
+
+202
+00:43:25,543 --> 00:43:32,923
+Bu kodları çalıştırarak gösterdim size. O yüzden detaylı ilerlemiyorum.
+
+203
+00:43:33,083 --> 00:43:39,083
+Şimdi tabii önemli hususlarımızdan birisi thread havuzları.
+
+204
+00:43:39,443 --> 00:44:05,543
+Şimdi siz bir iş gerçekleştireceksiniz. Gerçekleştirirken bu işi paralel bir şekilde yapmak istiyorsunuz ve her birisine ayrı ayrı çalıştırıldığı durumlar söz konusu olabilir. Yani biri treti başlattın bir işi yapacak, diğerini başlattın bir iş yapacak, diğerini başlattın bir iş yapacak ama hepsi aynı işi yapıyor olacak. Çünkü lojik paralelleştirme olduğu için.
+
+205
+00:44:07,443 --> 00:44:34,403
+Bunları eğer ki yüklü bir şekilde thread sayın varsa bunları bir havuzun içerisine yerleştirip bir thread havuzu oluşturur. Sanki şöyle düşünün. 3 tane sayı arasından en büyük sayı hangisidir? Dediğimizde bunu bir diziye atıp o dizinin en büyük değerini bulmaya uğraşmak istemezseniz birkaç tane if else kullanarak 3 tane sayıdan en büyüğünü bulursunuz. Ama bu sayı 150 tane olsa.
+
+206
+00:44:34,784 --> 00:45:02,743
+Ama manage etmesi, ne kadar ifhers kullanmanız lazım, onun yerine bir dizinin içerisine koyarsınız veya bir for döngüsüyle bu işi halletmeye çalışırsınız. Hiç dizi kullanmasanız da for kullanmak istersiniz if yerine, sadece if yerine. Burada da böyle bir durum var. Eğer birkaç tretiniz varsa az önce gösterdiğim gibi çalıştırabilirsiniz. Fakat yoğun bir şekilde paralelleştirme işlemi gerçekleştirebileceğiniz bir durum söz konusuysa o zaman bir thread havuzu kullanmanız beklenir burada.
+
+207
+00:45:02,784 --> 00:45:06,923
+Onu söyleyebiliriz. Small number varsa acceptable diyor.
+
+208
+00:45:11,476 --> 00:45:39,195
+Yani şeyi de unutmamak lazım, tekrar söylüyorum. Bir şeyi iki parçaya bölmek bazen seri bir şekilde gitmesinden daha uzun sürede çalışabilir. Çünkü thread mekanizmasının oluşturulması, çıkan sonuçların bir araya getirilip kümülatif bir değerin elde edilmesi en nihayetinde o da bir kost. Yani computational power ejected. Bunu da unutmamak gerekiyor.
+
+209
+00:45:39,476 --> 00:45:50,296
+Eğer daha büyük hacimde thread oluşturabileceğiniz hastalar varsa bunun için thread havuzu kullanmanız sizin adınıza güzel olur diyoruz.
+
+210
+00:45:50,296 --> 00:46:01,976
+Şimdi buraya bakıldığında yine bir executor interface'imiz var. Execute bu havuz için kullandığımız bir şey. Java yıkıl concurrent'un altındaymış. Bakın, packaging'ın altındaymış.
+
+211
+00:46:06,420 --> 00:46:09,280
+şey, obje alıyor ve o
+
+212
+00:46:09,780 --> 00:46:30,579
+Havuzun içerisinde bulunan threadleri çalıştırmaya yarıyor. Bu interface'in executor'un nasıl olunca alt tarafta tabii gerçeklenebilir, değiştirilebilir. Bu execute interface'inden executor service diye bir interface yine kalıtımla türetilmiş.
+
+213
+00:46:37,780 --> 00:46:42,940
+Çeşitli metotlar var. Bunların her birisinin nasıl çekiştığına değiniyor olacağım birazdan.
+
+214
+00:46:43,360 --> 00:46:50,400
+Ardından executors kısmında ise, çalıştıracak kısmında ise, new fixed thread pool ve new cash thread pool.
+
+215
+00:46:50,480 --> 00:46:57,500
+Yani fixed thread pool'un ne farkı var? Cash thread pool'un ne farkı var? Ona değiniyor olacağım.
+
+216
+00:46:57,500 --> 00:47:05,739
+Şimdi shutdown ilki. Dediğim gibi javoidun concurrent'ın altında executor servis sınıfının içerisindeki shutdown.
+
+217
+00:47:05,780 --> 00:47:22,360
+Shutdown metodu. Ben bir havuzu, Shutdown metodunu çağırdığımda o havuz içerisinde 15 tane thread çalışıyor olsun. 15 tane thread var oluyor olsun. Bunlardan 10 tanesi görevini bitirmiş olsun, 5 tanesi hala çalışmaya devam ediyor olsun.
+
+218
+00:47:22,592 --> 00:47:33,152
+Tam bu sırada Shutdown metodunu çağırdığında Shutdown metodu diğer 5 tane threadin güvenli bir şekilde sonlanmasını bekliyor olacak.
+
+219
+00:47:33,311 --> 00:47:36,480
+Sonlandıktan sonra tekrardan bu threadleri...
+
+220
+00:47:36,480 --> 00:47:42,460
+Hala hazırda işini tamamlamış threadlerin tekrardan çağrılması gibi bir durumu gerçekleştirecek olayı kapatacak.
+
+221
+00:47:42,560 --> 00:47:48,880
+Yani güvenli bir şekilde aslında olayı sonlandırmak için kullandığımız bir yapı.
+
+222
+00:47:49,280 --> 00:47:55,060
+Shutdown Now ise eğer ki bazıları bitmiş bazıları hala devam ediyor olsa bile
+
+223
+00:47:55,060 --> 00:48:04,239
+Shutdown Now metodu çalıştığında hala hazırda devam eden threadlerin o RAM metotlarının içerisindeki lojik de tek seferde kesiliyor.
+
+224
+00:48:04,480 --> 00:48:09,079
+Ve doğru bir sonuç üretilmemiş olacak takdir edersiniz ki oradan.
+
+225
+00:48:09,460 --> 00:48:13,680
+Ve bu threadlerden hangileri yarıda kesildi?
+
+226
+00:48:14,060 --> 00:48:17,720
+Bunlar bir liste şeklinde geri döndürülüyor.
+
+227
+00:48:17,840 --> 00:48:20,520
+Bakın geri dönüş değeri bir liste.
+
+228
+00:48:20,840 --> 00:48:22,820
+Tamamlanmışlar herhangi bir şekilde.
+
+229
+00:48:23,480 --> 00:48:25,239
+Onlarla bir işimiz yok.
+
+230
+00:48:25,619 --> 00:48:30,199
+Veya işte bu executor'umuz kapatılmış mıdır?
+
+231
+00:48:30,199 --> 00:48:32,440
+Yani shutdown metodu.
+
+232
+00:48:32,480 --> 00:48:36,500
+bir yerde çağrılmış mıdır diye is shut down'ı kontrol edebilirsiniz.
+
+233
+00:48:37,020 --> 00:48:41,980
+Is shut down'ın sonucunda kapatılma komutunun verilip verilmediğini görürsünüz.
+
+234
+00:48:41,980 --> 00:48:46,780
+Hala daha o havuzun içerisindeki bazı threadler çalışıyor olabilir.
+
+235
+00:48:47,220 --> 00:48:49,900
+Tekrar söylüyorum çünkü shut down onu çalıştırıyordu.
+
+236
+00:48:50,260 --> 00:48:53,140
+Çalıştırmaya devam ediyordu. Güvenli sonlanmasını sağlıyordu.
+
+237
+00:48:53,600 --> 00:48:58,820
+Ama en son is terminated metodunu kullanırsak bu şu manaya gelir.
+
+238
+00:49:00,480 --> 00:49:08,480
+Kodun içerisindeki treplerin hepsi çalışıp başarılı bir şekilde sonlanmış mıdır diye bunu kullanabiliriz.
+
+239
+00:49:09,140 --> 00:49:23,859
+Mesela tüm trepler üzerine düşen işlerin tamamını yaptı ve artık oradaki sonuçları ben değerlendireyim parçasına geçmek istiyorsanız kodun exterminated'ı kullanabilirsiniz.
+
+240
+00:49:23,859 --> 00:49:28,039
+Executor tarafına geldiğimizde ise bir execute metodu var.
+
+241
+00:49:28,480 --> 00:49:41,900
+edebileceğiniz üzere verilen taskı çalıştırıyor. Ve yine executor'un içerisinde bir new fixed thread tool, bir de new cache thread tool diye iki farklı havuz oluşturabiliyoruz.
+
+242
+00:49:41,900 --> 00:49:51,779
+Bir fixed size'da havuz, sabit size'da havuz yani içerisinde beş tane thread'i barındıracak. Aynı anda işte
+
+243
+00:49:52,371 --> 00:49:59,992
+Belli sayıda thread işlemi gerçekleştirilecek. Birisi sonlandığında diğeri hali hazırda daha önceden kullanılır.
+
+244
+00:50:00,000 --> 00:50:28,000
+O hani thread'i, size'ı belli olan sayıdaki thread'i reuse yapabilecek, kullanabilecek bir yapı. Yani size'ı belli. NewCash thread'e geldiğimizde ise size doğrudan belli değil. Uca açık. Siz yeni yeni thread'ler create edip bu havuzun içerisine ekleyebilirsiniz. Daha önceden çalıştırdığınız ama şimdilik programın bu akışında kullan...
+
+245
+00:50:28,000 --> 00:50:44,000
+kullanmadığını, threadlerde cache'e alınıyor ve ihtiyaç durumunda onlar da reuse yapılabiliyor. Bir fixed size bir de böyle cache ve size olmayan bir havuzumuz söz konusu. Gelin yine bunlara da bizim...
+
+246
+00:50:45,684 --> 00:50:58,924
+idemizde nasıl ceryan ediyor olayla görüyor olun. Aynı kod üzerinden gidiyor olacağım kıymetli arkadaşlar. Havuza şöyle bir bakalım nasıl oluşturulduğuna.
+
+247
+00:50:58,924 --> 00:51:12,964
+Şimdi şu minisaneye kısmına geçiyorum. Birazdan ne anlama geldiğini konuşuyor oluruz onu. Öncelikle executor servis oluşturulmuş. Nereden? Executor'da new cache thread bulundan. Yani cache edilmiş thread.
+
+248
+00:51:13,684 --> 00:51:15,264
+Bir sayı yok.
+
+249
+00:51:15,404 --> 00:51:17,924
+İstediğimiz kadar bunun içerisine yerleştirebiliyoruz.
+
+250
+00:51:18,384 --> 00:51:19,704
+Bir havuz oluşturulmuş.
+
+251
+00:51:19,784 --> 00:51:21,624
+Bakın havuzun execute metodu var.
+
+252
+00:51:21,764 --> 00:51:25,324
+Execute metodunun içerisine run metodu olan
+
+253
+00:51:26,099 --> 00:51:36,059
+Runable interface'inden implement edilmiş bir sınıfın içinde run metodu varsa onları buraya yerleştirebiliyoruz ancak.
+
+254
+00:51:36,519 --> 00:51:41,119
+Yerleştiriyoruz. İşte tezahürat mevzusunu yerleştiriyoruz, yerleştirdik, yerleştirdik.
+
+255
+00:51:41,500 --> 00:51:47,280
+Ardından bu işlerin hepsi gerçekleştikten sonra shutdown metodunu çağırıyoruz.
+
+256
+00:51:47,280 --> 00:51:53,660
+Shutdown metodunu çağırdıktan sonra tahmin edebileceğiniz üzere hala daha bunlar çalışıyor olacaktır.
+
+257
+00:51:54,099 --> 00:52:11,280
+diye çağrılıyor olacak. Ama bunlar çalışmaya devam ediyor olacak. Çünkü bu satır mesela şöyle gerçekleşiyor olay. 8. satır çalıştı. Tretler çalışmaya başlıyor. Maksimum 10 saniye kadar çalışıyor olacak tahmin edebileceğiniz üzere. O 10 saniye daha başladığı anda 9. satır.
+
+258
+00:52:11,699 --> 00:52:28,439
+Komutu, çalışma komutu veriliyor sadece yani. Çalışma komutu veriliyor. Bitmesi beklenmiyor. Bizim traditional tarafta neydi? O işlemin sonlanması beklenir. O before'sa veya while'sa sonuna kadar bitmesi beklenir. Burada öyle bir şey yok. Vermişsin trade'e ne zaman biterse. Şurada.
+
+259
+00:52:29,748 --> 00:52:57,268
+En son bu havuzu kapatıyorum. İçerisine havuzu kapattıktan sonra o havuzun içerisine yeni bir thread eklenmesi, çalıştırılması gibi bir durum söz konusu olmayacaktır. Ondan sonra işte shutdown, initialize dedikten belli bir süre sonra tabii ki shutdown gerçekleşecek ve o pool is terminated. Yani o pool'un içerisinde bulunan tüm threadler görevini yapıp sonlandıktan sonra da 17. satıra düşecek.
+
+260
+00:52:57,748 --> 00:53:24,468
+olduğu için tahmin edebileceğiniz üzere programlar işi o şekilde gerçeklenmiş. Ardından shutdown, bakın, initialize edilmesi farklı, complete edilmesi farklı zamanlarda oldu. Birazdan çalıştırdığımızda göreceksiniz. Ardından bir başlangıçta kronometre çalıştırılmış, bitirdiğinde kronometre durdurulmuş ve bitişten başlangıç süresi çıkartılmış. Ne kadar sürede bu işin ceryan edildiği öylece görülebiliyor olacak.
+
+261
+00:53:25,972 --> 00:53:53,972
+Yukarıdan bakalım. Bakın, biz bunları çalıştırmaya başladığımız andan itibaren Shutdown Initialize dedik. Artık şey başladı. Initialize etme, kapatmayı initialize etme başladı. Zaman zaman hakem konuşuyor, zaman zaman taraftarlar konuşuyor. Shutdown Completed dedi ve yaklaşık yarım saniye kadar veya 0.6 saniye kadar sürmüş. Her çalıştırdığımızda farklı saniye sürmesini...
+
+262
+00:53:53,972 --> 00:54:21,972
+Çünkü rastgele değerler çekiyoruz. Ona göre bekliyoruz. Maksimum 10 saniye sürüyor olacak rastgele değerler çekildiğinden ötürü. Ortalamada da 5 ile 6 arasında çeşitli değerler çıkıyor. Bunu da görüyorsunuz burada. Bazı durumlarda işte 6 ile geçiyor. Pekala, pekala. Hiç sayıda geldiğimizde değişen hiçbir şey yok. Aynı lojik söz konusu. Sadece içerisinde çalışan.
+
+263
+00:54:21,972 --> 00:54:41,652
+Bir şey diyecek thread sayısı maksimum şudur diye bunu fiksliyoruz. Ekstradan belli bir size'dan sonra eklemesine izin vermiyoruz. Bunu da çalıştırdığımızda yine aynı sonucu bize üretiyor, veriyor olacak. Belli sürelerde çalışması gerçekleşiyor olacak.
+
+264
+00:54:42,291 --> 00:54:44,031
+Bunu yapmak istememiştim.
+
+265
+00:54:45,211 --> 00:54:50,251
+Pekala, bir akışın ne şekilde gerçekleştiğini isterseniz bir görelim.
+
+266
+00:54:50,451 --> 00:54:53,291
+Hem programın akışında belli yerlerde...
+
+267
+00:54:54,708 --> 00:55:22,708
+Adı basamak basamak işte birden 12'ye kadar sayılar yazıyor olacağız. Onların arasında da zaman zaman çeşitli başka yazılar yazıyor olacak. Bir de bu şekilde isterseniz programın akışını beraber değerlendiriyor olalım. Bakın 1, 2, 3, 4, 5, 6, 7 komple yazdı. 1, 2, 3, 4, 5, 6, 7 şuraya kadar komple geldi. Ondan sonra şunu da muhtemelen çalışacak ama bu arada.
+
+268
+00:55:22,708 --> 00:55:42,947
+Şu diğer threadler de artık çalışmaya başladı. Muhtemelen nerede konsol sonucu? Evet, bakın diğer threadler de şurada çalışmaya başladı. Birer kez en azından tezahürat yapıyorlar. Ondan sonra 8 numaralı ekrana yazdım ve threadleri burada kapattık. Bakın.
+
+269
+00:55:43,603 --> 00:55:45,483
+Şurada.
+
+270
+00:55:46,003 --> 00:55:47,463
+Ve 9'u yazdık.
+
+271
+00:55:47,903 --> 00:55:50,463
+Sonra hemen 9'un ardından şunu yazdık.
+
+272
+00:55:50,804 --> 00:55:52,003
+Geldi. Çok güzel.
+
+273
+00:55:52,523 --> 00:55:54,483
+Ondan sonra 10'u yazdık.
+
+274
+00:55:54,723 --> 00:55:56,623
+Ve akış buradan sonra devam ediyor.
+
+275
+00:55:56,884 --> 00:56:04,503
+Şu exterminated olmadığı sürece, şu tezahüratlar bitmediği sürece 11 ve 12'yi hiçbir şekilde yazmamasını bekliyoruz.
+
+276
+00:56:04,824 --> 00:56:10,604
+Bazen hakem çok hızlı davranmış, sinirlenmiş, süresi sürekli ardı ardına gelmiş yani.
+
+277
+00:56:10,963 --> 00:56:15,804
+Çok kısa kısa zamanlar çekmiş, sürekli güzel bir maç olsun dileğini yenilemiş.
+
+278
+00:56:16,463 --> 00:56:21,704
+Fenerbahçeliler en geride kalmış, 11 ve 12'den sonra ise bunları en son yazmasını bekliyorduk.
+
+279
+00:56:21,704 --> 00:56:24,844
+Totalde işte yarım saniye civarında.
+
+280
+00:56:24,884 --> 00:56:26,523
+Bir süre almış.
+
+281
+00:56:27,824 --> 00:56:36,083
+Evet, tret havuzlarının da ne şekilde kullanıldığını, çalıştırıldığını böylece sizlere göstermiş oldum. Bu noktada bir sorusu olan arkadaşımız var mı?
+
+282
+00:56:41,235 --> 00:56:43,456
+Güzel. Slide'dan devam ediyor onları zaman.
+
+283
+00:56:47,456 --> 00:56:50,356
+Evet. Şimdi slide'da tekrardan döndük.
+
+284
+00:56:53,356 --> 00:56:54,076
+Tabii.
+
+285
+00:56:54,608 --> 00:56:59,728
+Siz dediğiniz gibi bir exception alma durumunuz seslenmesi olabilir.
+
+286
+00:57:00,327 --> 00:57:07,847
+Exception'ı check exception aldığınızda, işte interrupt exception'ı üretiliyor olacak.
+
+287
+00:57:08,407 --> 00:57:12,068
+Bunu bir şekilde catch-blownun içerisinde handle edebilirsiniz.
+
+288
+00:57:12,068 --> 00:57:18,068
+Ya da unchecked exception'da kendi istediğimiz exception sınıfını yazıp ona göre...
+
+289
+00:57:19,572 --> 00:57:22,232
+Kontroller gerçekleştirebiliyorduk. Çok fazla böyle
+
+290
+00:57:22,771 --> 00:57:45,231
+Tavsiye edilen bir şey değil ama normal, rutin, bizim hala hazırda yaptığımız, exemption'ları anlattığımız haftada yaptığımız, troughs'la beraber atılan, exemption'la aynı şekilde burada da oluşturup, onu istediğiniz gibi isimlendirip, burada some checked exemption demiş, istediğiniz gibi isimlendirip, try catch-brior'un içerisinde kullanabilirsiniz.
+
+291
+00:57:45,231 --> 00:57:50,711
+Bu yapıyı da gerçekleştirebilirsiniz. Çünkü farklı durumlar cereyan ederek,
+
+292
+00:57:50,771 --> 00:58:18,231
+bir exception da üretilebilir. Sizin RAM metodunuzun içerisinde gerçekleştireceğiniz şey sadece thread'in slip'ten uyanmaması veya interapp'ının doğru bir şekilde handle edilememesi değil. Aynı zamanda o RAM metodunun akışı gereği bazı exception'larla karşılaşabilirsiniz. Bunların herhangi birisi tanımlanmış bir exception olmayabilir. Siz kendiniz tanımlayıp ona göre nasıl handle edileceğine karar verebilirsiniz.
+
+293
+00:58:18,719 --> 00:58:22,839
+Bahsettiğimiz en önemli konu race condition. Yani bir kaynak var.
+
+294
+00:58:23,347 --> 00:58:46,807
+Hepsi artık program parçacıklarının paralel çalıştığı için hepsi aynı kaynağa erişmek istiyor. Buna race condition deniliyor. Yani ortada bir tane değer var. Ben bu değeri okumak istiyorum. Diğeri okumak istiyor. Diğeri okumak istiyor. Bazıları da değiştirmek istiyor. Hangisi önce davranıyor olacak? İşletim sistemleri dersi aldığınızda bunu daha detaylı bir şekilde görürsünüz.
+
+295
+00:58:51,347 --> 00:58:54,008
+Semofor mantıklarını falan da görürsünüz.
+
+296
+00:58:54,528 --> 00:58:59,807
+Burada Java tarafında bakıldığında bu kaynağı doğru bir şekilde nasıl yönetebiliriz?
+
+297
+00:58:59,928 --> 00:59:04,807
+Tret mekanizması kullandığımızda buna değiniyor olacağız.
+
+298
+00:59:06,931 --> 00:59:22,371
+Yani threadler birbirlerinin ayağını dolanabilir. Biraz onlarda ondan bahsediyoruz ve bizim istediğimiz datayı tam istediğimiz şekilde almadan önce diğer thread değiştirmiş olabilir. Buna temelde biz race condition diyoruz.
+
+299
+00:59:22,371 --> 00:59:34,552
+Şimdi bir tane örneğimiz var bunun güzel anlaşılması için. Runable interface'inden türetilmiş üç tane sınıf var ve bir tane de içerisinde main metodu barındıran bank simulation var.
+
+300
+00:59:34,931 --> 00:59:37,771
+Bunu size anlatıyor olacak.
+
+301
+00:59:39,012 --> 00:59:40,592
+Bunun bir akışı var.
+
+302
+00:59:40,791 --> 00:59:42,492
+Biraz slide'ın bir iki ilerisinde.
+
+303
+00:59:42,931 --> 00:59:44,152
+Orada daha güzel anlayacaksınız.
+
+304
+00:59:44,271 --> 00:59:45,451
+Sonra kodunu çalıştıracağım.
+
+305
+00:59:45,791 --> 00:59:47,931
+Başımıza neler geldiğini orada görebilirsiniz.
+
+306
+00:59:47,931 --> 00:59:55,192
+Ama bu problemden, böyle bir race condition problemden nasıl kurtarıyoruz ona değiniyor olacağız.
+
+307
+00:59:55,951 --> 00:59:57,132
+Değinelim mi?
+
+308
+00:59:57,811 --> 00:59:58,231
+Şurada.
+
+309
+00:59:58,532 --> 00:59:59,771
+Bunu sonra anlatalım.
+
+310
+01:00:00,000 --> 01:00:01,759
+Bir sonraki slide'a geçelim, sonra dönelim.
+
+311
+01:00:01,860 --> 01:00:04,860
+Şimdi diyelim ki bir bank account'umuz var.
+
+312
+01:00:05,199 --> 01:00:06,360
+Tamam, bankada paramız var.
+
+313
+01:00:06,699 --> 01:00:08,679
+Bin lira olduğunu düşünelim.
+
+314
+01:00:09,159 --> 01:00:10,119
+İki tane de müşteri var.
+
+315
+01:00:10,199 --> 01:00:11,480
+Birisi Alice, birisi de Bob.
+
+316
+01:00:12,000 --> 01:00:12,420
+Tamam mı?
+
+317
+01:00:12,739 --> 01:00:14,820
+Alice ve Bob'ın çeşitli metotları var.
+
+318
+01:00:15,039 --> 01:00:19,780
+Bunlardan burada gördüğümüz withdrawal, yani bankadan belli bir miktar para çekecek.
+
+319
+01:00:20,179 --> 01:00:21,400
+Withdrawal yapacak.
+
+320
+01:00:21,780 --> 01:00:27,920
+Aynı şekilde Alice'in de Buff'ın da aynı metodu var. Şimdi bankadaki para 1000 lira.
+
+321
+01:00:28,340 --> 01:00:54,940
+Her ikisinin de run metodu eş zamanlı bir şekilde çalıştığını düşünelim. Yani beni bir süre bekliyor veya beklemiyor. Herhangi birisi, burada Alice gösteremiş ama VAT da ilk sırada erişebilir buraya. Her ikisi de bank account'un withdraw metodunun içerisine geldi. Ve ilk çalışan şey get balance. Yani şu an bankanın balance'ının ne olduğunu Alice öğrenmek istiyor. Hop öğrenmiş bin lira.
+
+322
+01:00:56,340 --> 01:00:56,448
+Arkadaşlar, class, object, constructor, inheritance, polymorphism,
+
+323
+01:01:02,119 --> 01:01:24,447
+archer,
+
+324
+01:00:56,447 --> 01:01:24,447
+Bob öğrenmiş, o da 1000 lira. Hiç zamanlı bir şekilde çalışıyor ama bazısı diğerinden daha önce daha sonra da çalışabilir. Sonuçta yani bu iki tane account'ın aynı network hızında erişim sağlayamaya da bir distributed sistem de söz konusu olabilir. O yüzden burada nasıl çalıştığını güzel anlamamız lazım. Her ikisi de bankadaki hesabın şu an 1000 lira olduğuna kanaat edilir.
+
+325
+01:01:24,447 --> 01:01:36,447
+Ardından Alice için çekmek istediği 100 TL miktarı 1 liradan düştü ve yeni balans değeri Alice için...
+
+326
+01:01:36,980 --> 01:02:04,859
+900 lira olmuş oldu. Aynı işlem 900 lira oldu ve kendisi daha sonra metoduna geri döndü. Artık kendi Alice şeyin içerisinde, nedenir ona sınıfının, objesinin içerisinde. Bunu bir bankamatik uygulaması olarak düşünürseniz, Alice de Bob'un ortak kullandığı bir bankaya hesabı var. Orada tutan da 1000 lira vardı. Alice bankamatiğe gitti, 100 lirasını.
+
+327
+01:02:04,980 --> 01:02:32,759
+Çekti. Aynı anda BAP da bu işlemleri gerçekleştiriyor. BAP'a da ilk baş 1000 lira demiştik. O da 50 lira çekmek istemişti. BAP da en sonunda balansı 900'e, 950'ye set etti. Niye? Çünkü 50 lira çekti. Ve o 900 olan banka hesabı şu an 950 lira oldu. Ve BAP da tekrardan kendi sınıfına, objesine geri dönmüş oldu.
+
+328
+01:02:32,980 --> 01:02:38,480
+Yani bin liralık bir hesaptan birisi yüz, birisi de elli lira çekti, totalde yüz elli lira çekildi.
+
+329
+01:02:38,859 --> 01:02:43,339
+Olması gereken hesabın son değeri seyit yüz elli iken dokuz yüz elli kaldı.
+
+330
+01:02:43,339 --> 01:02:54,980
+Yani bankanın bir programcısınız. Bilgisayar mühendisi olarak bankaya girmişsiniz, çalışıyorsunuz.
+
+331
+01:02:55,639 --> 01:02:59,259
+Bu sistemi sizin yazmanız istendi ve böyle yazmanız.
+
+332
+01:02:59,539 --> 01:03:25,300
+Diyelim ki, banka sahiplerini kızdıracak sınıftır. Tahmin edeceğiniz üzere. O yüzden bu problemi pekala ortadan nasıl kaldırırız? Veya bu problem hocam hakikaten gerçekten cereyan edebilecek bir problemdir diye düşünürseniz gelin bir Actbit tarafında size bunu yine detaylı bir şekilde gösteriyor olayı. Bunların hepsini kapatıyorum.
+
+333
+01:03:27,476 --> 01:03:55,436
+Şimdi bakın, account, account bildiğimiz sınıf. Bir işte balance değeri var, account'ın içinde ne kadar para var. Constructor'ına bakıldığınızda balance ile set ediyoruz. Get balance ile ne kadar olduğunu anlıyoruz. Withdraw, yani para çekeceğim balance'dan. Get balance'ı alıyorum. Possible delay. Belli bir süre bekliyorum. Çünkü balance'ı bankanın o sisteminden çekmek, yani diske gidecek.
+
+334
+01:03:55,476 --> 01:04:03,496
+bir yerlere, network'te takılacak falan filan belli bir süre bekliyor olması gerekir doğal olarak o sonucun gelmesini.
+
+335
+01:04:03,956 --> 01:04:08,656
+Bu possible delay'e hemen gelelim isterseniz. Şurada bir metodo. Private olarak tanımlamış.
+
+336
+01:04:08,736 --> 01:04:14,916
+Possible trade. De delay. Trade'i 5 saniye uyut. 5 milisaniye, özür dilerim, uyut.
+
+337
+01:04:15,376 --> 01:04:18,496
+Beklediğimiz sürede çok az yani. 5 milisaniye.
+
+338
+01:04:18,804 --> 01:04:34,784
+5 milisaniye burada uyuyor. Ardından current balance'dan benim ne kadar çekmek istiyorsam, withdraw'umu ona çıkartıyor. Yeni balance'ı set ediyor. Veya deposit yapmak istiyorum, yatırmak istiyorum, para yatırmak istiyorum yani. Get balance'da.
+
+339
+01:04:35,284 --> 01:04:49,324
+Alıyorum, ondan sonra ne kadar yatırma işlemleri üzerine ekliyorum ve balansa set ediyorum. Yaptığım iş account tarafında bu. Bir account depositör, bir de para yatıran account, bir de para.
+
+340
+01:04:49,940 --> 01:04:57,719
+Çeken account var. Onlara bakalım. Bakın bunlar artık nereden türetilmiş? Runnable interfacenden implement edilmiş.
+
+341
+01:04:58,319 --> 01:05:08,400
+İçerisinde bir account barındırıyor. Account da tahmin edebileceğiniz üzere az önce oluşturduğumuz sınıf ve o accountın içerisinde double değeri var.
+
+342
+01:05:08,400 --> 01:05:17,739
+Her ikisiyle beraber constructor oluşturuluyor ve run metodunda yani thread'in paradigiden çalıştırılmasında o account'ın depoziti.
+
+343
+01:05:17,940 --> 01:05:23,500
+Deposit'i amount ile beraber burada çağrılıyor olacak.
+
+344
+01:05:23,699 --> 01:05:25,900
+Aynısının withdraw'u da söz konusu.
+
+345
+01:05:26,340 --> 01:05:29,340
+O ekranın withdraw'u amount ile beraber çağrılıyor olacak.
+
+346
+01:05:29,719 --> 01:05:33,279
+Şuraya bakıldığında withdraw ve deposit çağrılacak şeyler bunlar.
+
+347
+01:05:33,659 --> 01:05:39,000
+Bir üst sınıfı bunu çağıran runable olduğu için bunlar da terapinin içerisinde çalışacak metotlar.
+
+348
+01:05:39,000 --> 01:05:45,880
+Yani bakın aslında kendisi bir runable'dan interface, runable'dan implement edilmiş.
+
+349
+01:05:45,940 --> 01:05:59,139
+değil. Ama bu metotların çağrıldığı yer, Runable'dan implement edildiği için onlar da bir metot şeklinde, bir paralel şekilde ilerliyor oluyor.
+
+350
+01:05:59,259 --> 01:06:09,440
+Banka simülasyonuna girelim. Bir bankada hesabım var, bin lira. Banka hesabının ne kadar olduğu yazılmış. Bir tane thread havuzu oluşturmuşum.
+
+351
+01:06:13,331 --> 01:06:24,891
+100 kere 1 TL'ye yatırmışım. Ama thread olarak çalışıyor yani. Okuya yatırıyor, okuya yatırıyor. Öyle düşünün. 100 kere yatırmışım. Buraya bakalım.
+
+352
+01:06:25,971 --> 01:06:33,331
+Bitdra, 50 kere de 1 lira çekmişim. Yani bizim açımızdan bakıldığında olay ne? 100 lira yatırmışım, 50 lira çekmişim.
+
+353
+01:06:34,643 --> 01:06:42,383
+50 lira olması lazım en sonundaki değeri ama öyle olacak mı hakikaten ona bakıyor olacağız.
+
+354
+01:06:42,563 --> 01:06:52,823
+Ardından thread havlığını kapatıyoruz belli bir süre bekliyoruz en son ki belli bir süre bekliyoruz derken threadlerin tamamı sonlanıncaya kadar bekliyoruz ve en son account değerini tekrardan yazıyoruz.
+
+355
+01:06:52,943 --> 01:07:00,783
+Bakalım. Before bin, after bin bir. Yani bin elli olması lazım. Bir daha çalıştıralım.
+
+356
+01:07:04,019 --> 01:07:08,339
+Azaldı bile. Yani hani artması gerekirken.
+
+357
+01:07:09,399 --> 01:07:13,579
+Bin iki falan olacak mı diyordum. Oldu. Bazı durumlarda bin iki, bin üç.
+
+358
+01:07:13,579 --> 01:07:18,480
+Yani okuyor yazıyor, okuyor yazıyor. Karmakarışık bir senaryo gerçekleşiyor.
+
+359
+01:07:18,899 --> 01:07:21,179
+Elde etmek istediğim parayı bulamıyorum yani.
+
+360
+01:07:22,500 --> 01:07:29,139
+O bekleme süresinde işte çıldan çıkıyor. Bazen bin olduğu da oluyor. Görüyorsunuz.
+
+361
+01:07:29,423 --> 01:07:32,083
+Çalıştırdığında şöyle tekrar bir 1002'yi falan görelim.
+
+362
+01:07:32,283 --> 01:07:33,263
+Güzel oluyor aslında.
+
+363
+01:07:33,884 --> 01:07:35,463
+Orada hızlı baktığım için tutuşa.
+
+364
+01:07:35,983 --> 01:07:36,523
+Evet, bakın.
+
+365
+01:07:36,683 --> 01:07:37,443
+1000, 1002.
+
+366
+01:07:37,983 --> 01:07:39,083
+1050 olması lazım.
+
+367
+01:07:39,203 --> 01:07:40,543
+1100'e kadar gitmesi lazım.
+
+368
+01:07:40,683 --> 01:07:46,503
+Şu olmasa en sonunda çalışıp olacağı değer bu.
+
+369
+01:07:46,723 --> 01:07:47,123
+Nerede?
+
+370
+01:07:48,211 --> 01:08:14,991
+Bu niye böyle? Bu bile şey değil yani. Tretler. Düşünün. Yani siz 100 lira yatırmaya çalışıyorsunuz. Her birisi ayrı bir tret olarak çalışıyor. 100 tane tretin var yani. 100 tane tretin var. O 1 lirayı yatırmak isterken, diğeri de 1 lirayı yatırmak ister. Diğeri de 1 lirayı. Hepsi paralel yatırmak istiyor. Diğerleri de paralel birer lira çekmek istiyor. Ama değeri okuyor. 1000. E 1 yatırıyor.
+
+371
+01:08:15,668 --> 01:08:39,487
+Bin bir diye hepsi aynı anda okuduğu için. Hepsi bin olarak okumuş oluyor. Bazısı geçkenler sonradan bin birin üzerine ekleyip bin iki yapmışlar yani durumu. Öyle bir problem var. Görüyorsunuz problemin nasıl bir şey olduğunu. Veya bir başka örneğe bakalım. Accountımız yine bin lira. Tek bir tane şu an threatimiz var. O threat yüz lira. Withdrawal yapacak.
+
+372
+01:08:40,212 --> 01:08:57,352
+50 lira daha withdraw. Yani hem birisi 100 lira çekecek, diğeri de 50 lira çekecek. Olması gereken şey, beklediğim gibi bu program çalıştığında 850 lira olması hesapta. 950, 900, belki bazen 850 de olur.
+
+373
+01:08:58,228 --> 01:09:25,208
+Yani görüyorsunuz farklı farklı sonuçlar. Her program çalıştığında, hele bankacılık sistemi, özellikle buraya bu ornele ton olmuş, yani bankacılık sisteminde kuruşun bile önemi var. Milyonlarca müşterim var. Her birisinin bir kuruş borcu olsan 100 milyon kuruş. Yani çok para bakıldığında. Her günde bu başına geliyorsa, ki kuruştan daha büyük rakamlar görüyorsunuz en nihayetinde karşılaştığımız şeyler. Yani bu bir problem.
+
+374
+01:09:25,648 --> 01:09:52,448
+Buna race condition diyoruz. İşte bunu çözmek için bizim şey olarak çalıştırdığımız, ne denir ona? Paralel olarak çalıştırdığımız metotlarımızın senkronize çalışması lazım. Onu da bir diğer örneğimizde görüyor olacağız nasıl ilerlediğini. Bakın, withdrawal, çağırdığımız bu withdrawal ve deposit metotları synchronized.
+
+375
+01:09:52,851 --> 01:09:58,692
+anahtar sözcüğüyle senkronize bir şekilde çalışmasının sağlanması gerekir.
+
+376
+01:10:00,000 --> 01:10:14,239
+şey, thread safe bir çalışma tekniğidir. Ben gidip o değeri okuyup yazma yönünde bir işlem yapıyorken başka birisinin oraya müdahale etmesini engelleyebilecek bir yapıda çalışır.
+
+377
+01:10:14,559 --> 01:10:27,819
+Synchronize bir şekilde bir metodun çalışması bu manaya gelir. Başka değiştirilen hiçbir şey yok. Bakın bu runları, lift draw'un ve depozitörün aynı. Gelin aynı örneği tekrar yapalım.
+
+378
+01:10:28,000 --> 01:10:34,420
+100 tane 1 lira yatıralım ve yine 100 tane 1 lira çekiyor olalım.
+
+379
+01:10:34,879 --> 01:10:36,699
+50 tane 1 lira çekiyor olayım.
+
+380
+01:10:36,920 --> 01:10:39,859
+Bakın başlangıçta bindi, şimdi binelli.
+
+381
+01:10:40,319 --> 01:10:41,319
+Sürekli çalıştıralım.
+
+382
+01:10:43,379 --> 01:10:45,359
+Her seferinde binelli sonucunu ver mesela.
+
+383
+01:10:45,539 --> 01:10:49,859
+Al önce bin bir, bin iki, dokuz yüz doksan doku falan girdi hatırlarsınız.
+
+384
+01:10:50,515 --> 01:11:05,655
+Her seferinde aynı sonucu vermesi gerekiyor. Bunun için muhakkak çalıştırdığınız o metotların run'ın içerisinde synchronized anahtar sözcüğüyle senkronize bir şekilde çalışacak, trade safe bir şekilde çalışacak hale getirmeniz gerekir.
+
+385
+01:11:05,655 --> 01:11:17,975
+Yine aynı ikinci simülasyona baktığımızda birisi 100, birisi de 50 TL çekiyordu. En nihayetinde 850 değerini bulmamız gerekiyordu. Bakın 850.
+
+386
+01:11:18,515 --> 01:11:25,895
+Değerini böylece her çalıştırdığımda, her seferinde bulmuş oluyorum. Bu kısım önemli.
+
+387
+01:11:26,076 --> 01:11:28,636
+Direct safe bir şekilde çalışması için.
+
+388
+01:11:28,636 --> 01:11:37,716
+Şimdi bu örneği tekrardan şöyle geriye saracak olursak, geçen hafta hatırladığımız, anlattığımız data structure'ları hatırlıyorsunuzdur.
+
+389
+01:11:38,175 --> 01:11:46,056
+Vektörler, işte hash table'lar, hash map'ler gibi, ArrayList'ler, LinkedList'ler gibi.
+
+390
+01:11:46,515 --> 01:12:08,796
+yapılarını nasıl kullanıldığını anlatmıştık. İşte vektörler ArrayList'lerin trade safe hali, hash table da hash mapping trade safe hali demiştim. Burada kastım ne? Burada kastımız şu. Vektörlerin metotları, vektörün kullanacağınız o metotların her birisi synchronized yapılmış.
+
+391
+01:12:14,515 --> 01:12:37,095
+Synchronized değil veya ArrayList'inki Synchronized değil ama Vector ve Hashtable'ın her bir metodu Synchronized çalışıyor. O yüzden bunlara ThreatSafe diyoruz. Multi Threat'iniz olduğu durumda güvenli bir şekilde o değerinin içerisine yazma okumayı paralel bir şekilde yapabileceğiniz bir mantıklar.
+
+392
+01:12:37,095 --> 01:12:41,975
+Yani Vector ile ArrayList arasında farklılıyor. Niye onu kullanılacak? Bunu kullanmıyorum.
+
+393
+01:12:42,515 --> 01:12:50,595
+Label ile HMF arasındaki fark ne dediğimizde arka tarafta lütfen hemen bu aklınıza geliyor olsun.
+
+394
+01:12:52,716 --> 01:12:56,556
+Evet, buraya kadar sorusu olan arkadaşımız var mı?
+
+395
+01:12:58,935 --> 01:13:04,775
+Çok güzel, sessiz sessiz, sakin bir ders oldu. Hiç kimsenin sorusu yok.
+
+396
+01:13:06,775 --> 01:13:07,576
+Mevcudumuz daha.
+
+397
+01:13:08,212 --> 01:13:36,212
+Ben de maricimde 9 kişi olmuş, güzel. Okey, bugün bu kadar. Başka benim anlatacağım bir şey yok. Tretlerle ilgili. Yani çok detaylı zaten örnekler yapma durumu söz konusu değil. Onlarla siz uğraşırsınız. Tretlere dair sizin bilmenizi istediğimiz tüm durumlarda burada bahsetmiş olduk. Önemli olan tret kullanırken bir iş arelalleştirilir.
+
+398
+01:13:36,212 --> 01:13:56,572
+Buna dikkat etmeyiz. Çünkü paralelleştiği durumda karşınıza çıkacak problem, yani problem demeyelim buna da ekstra iş yükü paralelleştirmeye ayrılan zaman ve paralelleştirilmiş o verinin tekrardan birleştirilmesi.
+
+399
+01:13:56,979 --> 01:14:00,059
+Bunu da hesaba katarak ilerliyor olmanız lazım.
+
+400
+01:14:00,619 --> 01:14:10,059
+Eğer ki çok sayıda thread kullanmanız gerekiyorsa, bir forum içerisine yazmışsınız, dursun threadle bu iş gerçekleşsin diyorsanız, thread havuzlarından yararlanmanız gerekiyor.
+
+401
+01:14:10,159 --> 01:14:11,819
+Yine ona değinmiş olduk.
+
+402
+01:14:12,279 --> 01:14:16,079
+Thread safe bir şekilde metotların çalışması için segonine olması lazım.
+
+403
+01:14:16,239 --> 01:14:17,600
+O lock yapıyor, kitliyor.
+
+404
+01:14:18,119 --> 01:14:20,299
+Başka bir thread o an ona erişemiyor.
+
+405
+01:14:20,299 --> 01:14:23,979
+Tabii ki bu zaman konusunda daha yavaş çalışmaya olanaklanır.
+
+406
+01:14:24,979 --> 01:14:39,520
+Hatchtable ben kullanayım hocam, Hatchmap kullanmayayım derseniz Hatchtable, thread yapısında tabii ki synchronized olduğu için daha yavaş çalışacaktır. O yüzden Hatchmap var. Eğer sizin bu race condition'lı bir durumunuz yoksa Hatchtable değil, Hatchmap kullanılır.
+
+407
+01:14:39,760 --> 01:14:55,340
+Veya ArrayList kullanıp race condition'a hiç düşmeyeceğinizi varsayıyorsanız ama race condition'a düşme durumunuz varsa biraz zamandan kaybetseniz de yine synchronized halde olan vektör ve ArrayList'i kullanmanız sizlerden beklenir.
+
+408
+01:14:55,659 --> 01:15:07,760
+Yine önemli hususlardan birisi threadleri tanımlıyoruz. Threadlerin içerisinde o runnable interfacinden implement ettiğimiz objeyi yerleştiriyoruz. O objenin bir run metodu var.
+
+409
+01:15:07,760 --> 01:15:12,000
+Fakat thread'i çalıştırmak istediğimizde o thread'in start metodunu çalıştırıyorduk.
+
+410
+01:15:12,420 --> 01:15:22,100
+O içerisine parametre olarak verdiğimiz runable'dan implement edilen sınıfın run metodunu bizim adımıza çağırıyor.
+
+411
+01:15:22,220 --> 01:15:26,819
+Sadece run'ı çağırdığımızı seri bir şekilde ilerlediğimde burada sizlere göstermiş olduk.
+
+412
+01:15:27,123 --> 01:15:30,244
+Şöyle diyeceğiz bir dersin sonunda özetlemiş oldum.
+
+413
+01:15:31,264 --> 01:15:34,484
+Sorusu olan arkadaşımız varsa bu noktada alabiliriz.
+
+414
+01:15:35,003 --> 01:15:43,644
+Sorusu olan arkadaşımız yoksa önümüzdeki hafta bu ileri, arayüzleri nasıl olduğunu anlatıyor olacağız.
+
+415
+01:15:46,523 --> 01:15:51,443
+Yok, çok güzel. Önümüzdeki hafta görüşürüz diyorum. Kendinize iyi bakın, sağlıcakla kalın.

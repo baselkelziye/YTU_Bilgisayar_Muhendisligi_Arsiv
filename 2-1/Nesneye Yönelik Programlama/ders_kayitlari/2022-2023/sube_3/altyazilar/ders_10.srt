@@ -1,0 +1,1779 @@
+1
+00:05:33,620 --> 00:05:44,620
+Evet, merhaba sevgili arkadaşlar. Hepiniz hoş geldiniz. Bir nesne dersimizle daha beraberiz. Bu hafta...
+
+2
+00:05:45,172 --> 00:05:54,712
+Normalde sınavdan önceki hafta bir ders anlatacak bir konuda kalmıştı. O yüzden sınavdan önceki haftanın hiçbir konusunu anlatıyor olacağız.
+
+3
+00:05:55,892 --> 00:06:03,052
+Biraz typecasting, şimdiye kadar bahsettiğimiz typecasting kavramını biraz toparlıyor olacağız ve özel halleri var. Biraz onlara bakıyor olacağız.
+
+4
+00:06:03,572 --> 00:06:12,172
+Ondan sonra dosyalarla ilgili işlemler nasıl yapılıyor, dosyaya yazma işlemleri nasıl gerçekleştiriliyor.
+
+5
+00:06:12,755 --> 00:06:23,015
+Onlara baktıktan sonra bir de inner class kavramımız var. Onları açıklayarak bugünü böylece tamamlamış olacağız.
+
+6
+00:06:24,395 --> 00:06:37,115
+Sınav notlarımızı falan ilan etmiştik. Onları görmüşsünüzdür diye ümit ediyorum. Genel olarak ortamalar güzel, daha da iyi olur. Yine onlar da diye ümit ediyor olalım.
+
+7
+00:06:37,552 --> 00:07:05,312
+Tekrardan hatırlatıyorum. Bize de hatırlatmamızı istiyorlar. Final sınavları filminde arkadaşlar muhakkak yüz yüze olacak. Bununla ilgili hazırlıklarımızı şimdiden yapmaya başlayın. Çünkü bugün 3 Mayıs 10. haftadayız. Dönem 14 hafta. Sizin de malumunuz. Yani bu şu demek oluyor. Bundan sonra 4 hafta daha şekilde ders oluyor olacak.
+
+8
+00:07:05,552 --> 00:07:16,072
+gibi bir süre sonrasında finaller başlıyor olacak. Haziran'ın artık ilk haftası final sınavlarıyla geçiyor olacak.
+
+9
+00:07:16,072 --> 00:07:18,172
+Şimdi ben ekran paylaşma yapalım.
+
+10
+00:07:18,532 --> 00:07:20,772
+Onun için konumuza başlayalım.
+
+11
+00:07:24,352 --> 00:07:25,272
+Evet.
+
+12
+00:07:27,668 --> 00:07:45,788
+Şimdi dediğim gibi bir önceki haftanın konusuna bakıyor olacağız bu hafta. Biraz eksik gibi oluyor olabiliriz ama onlara hızlıca telafi edip anlatacağımız tüm konuları dönem bitmeden anlatmış oluruz.
+
+13
+00:07:46,100 --> 00:08:02,820
+Typecasting kavramı önemli kavramlardan birisi. Şimdiye kadar çeşitli örneklerde bunu yaptığımı görmüşsünüzdür. Özellikle süper classlarla child classlar arasında typecasting biz default olarak yaparak çeşitli şeyler kullanıyoruz.
+
+14
+00:08:03,580 --> 00:08:14,100
+Lakin bunun böyle cast yani nasıl bir değişkeni integer gibi primitif değişkenleri double gibi değişkenleri cast dediği gibi.
+
+15
+00:08:14,100 --> 00:08:20,860
+Burada da Snipcast'leri yapabiliyoruz. Typecast'i yapıyoruz buna. Onlara biraz bakacağız.
+
+16
+00:08:21,740 --> 00:08:31,560
+Burada hani şimdiye kadar dediğim gibi biraz belki örneklerde fark ettiğiniz ama biraz da hani bize vurgulamak istediğiniz bir nokta var.
+
+17
+00:08:36,895 --> 00:08:47,895
+Alt sınıfla ilgili işlem yapmak istiyorsak, alt sınıfla ilgili işlem yapmak istiyorsak onu tanımlarken üst sınıfının ismiyle tanımlayabiliyoruz. Yani diyelim ki bir...
+
+18
+00:08:48,083 --> 00:09:16,063
+employee var. Employee'lerin altında işte engineer'i var, sekreterisi var. Farklı farklı kişiler olmuş olsun. Employee'lerin altında. Ben bir sekreter tanımlayacağım zaman onu bir employee sınıfından türetebiliyordum. Bu aslında en temel baş şimdiye kadar kullandığımız typecastingler. Bunlara typesafe operation'lar deniliyor. Ve tabii buradaki önemli hususlardan.
+
+19
+00:09:16,083 --> 00:09:21,503
+Bu işlemi gerçekleştirirken herhangi bir şekilde bilgi kaybına sebebiyet vermiyoruz.
+
+20
+00:09:21,563 --> 00:09:28,463
+Ne demek istiyorsunuz hocam derseniz, şimdi üst sınıfları düşündüğünüzde daha az bilgi barındırırlar.
+
+21
+00:09:28,783 --> 00:09:33,583
+Alt sınıflarda onlardan ekstra olarak çeşitli bilgiler de söz konusudur.
+
+22
+00:09:34,123 --> 00:09:39,863
+Biz üst sınıflarla alt sınıflar arasında kestik yaparken herhangi bir bilgi kaybı olması gerçekleşmiyor.
+
+23
+00:09:39,863 --> 00:09:44,043
+Bu yine muhakkak dikkat etmemiz gereken önemli hususlar.
+
+24
+00:09:44,083 --> 00:09:59,983
+Buna ek olarak biz kendimiz de manuel casting gerçekleştirebiliriz. Onları da ne şekilde yapıyoruz? Burada onlar verilmiş. Bir interfaceden bir sınıfa casting yapabiliyoruz veya bir super class'tan bir alt class'a.
+
+25
+00:10:00,000 --> 00:10:09,139
+Casting yapabiliyoruz. Bunlarla ilgili çeşitli kavramlara, örneklere, nasıl ilerlediğine bakıyor olacağız.
+
+26
+00:10:09,559 --> 00:10:14,000
+Şimdi şu şekilde bir göğmen diagramımız olmuş olsun. Gelin beraber yorumlayalım.
+
+27
+00:10:14,000 --> 00:10:19,940
+Bir tane interface var. Interface tekrar söylüyorum, göğmen diagramında bir sınıf gibi.
+
+28
+00:10:20,563 --> 00:10:26,443
+sembolize edilip gösterilse de interface bir sınıf değildir.
+
+29
+00:10:26,644 --> 00:10:28,303
+Interface nedir? Interface'dir.
+
+30
+00:10:28,783 --> 00:10:30,644
+Sınıftan harici bir şey yani.
+
+31
+00:10:30,644 --> 00:10:33,803
+Bir interface tanımlanmış, ismi item.
+
+32
+00:10:33,983 --> 00:10:39,583
+Item interface'inden türetilmiş iki tane sınıfımız söz konusu.
+
+33
+00:10:39,783 --> 00:10:41,503
+Food ve electronics diye.
+
+34
+00:10:42,083 --> 00:10:45,903
+Electronics sınıfında biraz bilgiler gizlenmiş.
+
+35
+00:10:46,583 --> 00:10:48,563
+Ne attributlara ne de?
+
+36
+00:10:48,563 --> 00:11:15,963
+metodlarını göremiyoruz. Bu olmadığı manasına gelmez. Hidden Information denilen bir kavramdan bahsetmiştik hatırlarsanız. Biraz da tabii UML diagramının üzerinde çeşitli notlar düşürmüş görüyorsunuz. Electronics'lerin son kullanma tarihi yoktur ve bazı itemlerin son kullanma tarihleri olabilir. Son kullanma tarihlerine göre çeşitli işlemler gerçekleştirilmesi gerekir diye.
+
+37
+00:11:16,563 --> 00:11:37,243
+Eğer ki item elektronik ise evet son kullanma tarihi yok. Yani tabii onun da bir taraftan amortisman medeli bir ömrü söz konu. Ama burada kastedilen şey bilgisayarı aldığınızda arkasında son kullanma tarihi yazmıyor. Ama bir markete gidip yiyecek aldığınızda, kek aldığınızda arkasında son kullanma tarihi yazıyor. Onu kastediyorlar aslında temelde.
+
+38
+00:11:37,727 --> 00:11:58,367
+Food kısmına baktığımızda ise expired date isminde bir attribute'u, bir constructor'ı ve ne zaman süresinin dolacağını getter ile çekebileceğimiz bir getter'ı ve süresi dolmuş mudur diye kontrol edebileceğimiz date karşılaştırması içerisinde muhtemelen yapan bir Boolean geri döndüren metodu söz konusu.
+
+39
+00:11:58,367 --> 00:12:05,727
+Tabii, interface'de bu iki tane sınıfımızı tırttıktan sonra bir de market share diyebilirsiniz.
+
+40
+00:12:05,727 --> 00:12:32,707
+Sınıfı olması söz konusu. Marketimiz yani. Marketimizin içerisinde itemler olacak. Burada linkli liste olarak gösterilmiş. Her ne kadar size ilk hafta linkli liste ve ArrayListlerle ilgili örnek yapmış olsam da diziler yerine bundan sonra Java'da bunları daha fazla kullanıyor olacağız desem de bunlar aslında jenerik sınıflar temelde ve bunları jenerik sınıf tanımları üzerinden ilerleniyor. Yani bunları da daha detaylı.
+
+41
+00:12:33,727 --> 00:12:37,788
+Haftaya, belki belki sonraki haftalarda anlatıyor olacağız.
+
+42
+00:12:37,788 --> 00:12:40,788
+Yine tabii bir market rafını...
+
+43
+00:12:41,844 --> 00:12:56,663
+Çeşitli metotları var. İşte oraya bir ürün ekleyebiliyoruz. Ürün var mıdır diye kontrol edebiliyoruz ve bu marka etrafında hangi ürünler vardır diye bir ekrana bilgi mesajı yazdırabiliyoruz.
+
+44
+00:12:56,663 --> 00:13:08,663
+Ve bakıldığında da ilişki bir association ilişkisi ama bire emlik bir ilişki. Bu da nedenle konuyor? Bir marka etrafında bir tane item bulunabilir.
+
+45
+00:13:09,844 --> 00:13:13,524
+Bir yorumladık UML diagramını.
+
+46
+00:13:14,124 --> 00:13:21,403
+Bunu gelip isterseniz bir sınıflarını ve interface'ini yazıyor olalım beraber.
+
+47
+00:13:26,284 --> 00:13:32,244
+Tamam, bakın, interface'ini yazdığı bir taraf var mı diye bakıyorum örneklerde.
+
+48
+00:13:32,564 --> 00:13:35,644
+Direkt tag casting kısmına mı odaklanmış?
+
+49
+00:13:36,083 --> 00:14:00,583
+Tam typecasting'in kısıtlılığına odaklanılmış. O yüzden direkt yani interface'in ve food ve elektroniğin tanımlı olduğunu düşünelim. Olur mu? Biz sadece typecasting'i nasıl yapacağız ona bakalım diye bir örnek koymuşuz buraya. Link listeyle tanımlanmalarımız gerçekleştirilmiş. İşte var mıdır yok mudur diye forage ile dolaşıyoruz.
+
+50
+00:14:00,927 --> 00:14:28,927
+hali hazırda. Onu da görmüş olduğunuz burada. Şimdi bir market shelf'imiz var. Üzerinde çeşitli metotları var. Burada bakıldığında biz bir metodumuz Print Expired Item. Yani bu rafta bulunan ürünlerin son kullanma tarihine dair bilgileri de içerisinde barındırıp son kullanma tarihi geçtikçe onların bilgilerini ekrana yazan bir...
+
+51
+00:14:28,927 --> 00:14:50,307
+Metot tanımlıyor olanı. Markette bulunan şeylerin her birisi birer item. Tabii ki bakın. Dolaşırken ne yapıyoruz? Item olarak dolaşıyoruz. Ama bu item'ların bazıları foodtur, bazıları elektroniktir. Bakarken nasıl bakıyoruz? Bu item bir food mudur? Yani elektroniğin son kullanma tarihi olmayacağı için item food mudur?
+
+52
+00:14:50,772 --> 00:15:03,991
+Eğer ki food ise ilerliyoruz. Food değilse zaten son kullanma tarihi beni doğrudan alakadar etmiyor. Eğer ki food ise bu ipin içerisine girdim. Daha sonra bunu, bu item'ı bakın food'a cast ediyorum.
+
+53
+00:15:03,991 --> 00:15:18,751
+Cast ediyorum. Sanki işte C dilindeki mesela bir değeri nasıl integer'a cast ederken falan sizde integer'i yazıyorsunuz. Çok benzer şekilde cast ediyorum. Ama subclass, child class ilişkisi.
+
+54
+00:15:18,772 --> 00:15:22,971
+süper class, sub class ilişkisi söz konusu olduğunu biliyorum.
+
+55
+00:15:23,392 --> 00:15:29,032
+Veya bir interfeisten türetilen bir alt sınıf olduğunu bunu biliyorum.
+
+56
+00:15:29,172 --> 00:15:31,131
+O yüzden bu şekilde kest yapabiliyorum.
+
+57
+00:15:31,451 --> 00:15:32,871
+Her şey her şey kest olmaz.
+
+58
+00:15:33,091 --> 00:15:34,652
+Yani tahmin edebileceğiniz üzere.
+
+59
+00:15:35,131 --> 00:15:38,652
+Ardından bunun is expired metodunu kullanabilirim.
+
+60
+00:15:38,652 --> 00:15:46,432
+Eğer ki Electronics'e kest etseydim, Electronics'in is expired diye bir metodu olmayacağı için bu şekilde bir metodu çağır doldu.
+
+61
+00:15:46,772 --> 00:15:54,711
+Bize derleyici hata verecekti. Böyle bir metodu bunun yok diye. Ona göre programın akışı ilerliyor, gerçekleşiyor.
+
+62
+00:15:54,711 --> 00:16:01,111
+Şimdi bir diğeri de tabii çok sık kullandığımız belki date.
+
+63
+00:16:01,844 --> 00:16:06,524
+Bazı şeyler birbirinden sürüyor.
+
+64
+00:16:06,744 --> 00:16:09,644
+Ona da dikkat etmenizi beklerim.
+
+65
+00:16:09,724 --> 00:16:11,344
+Belki söylemişimdir, bilmiyorum.
+
+66
+00:16:11,944 --> 00:16:17,384
+Bilgisayar sistemlerinde, özellikle önümüzdeki dönem veritabanı sistemleri alacaksınız.
+
+67
+00:16:17,624 --> 00:16:23,084
+Orada veritabanı üzerinde çalışırken tarih biraz daha belki zaman, tavrım biraz daha önemli oluyor olacak.
+
+68
+00:16:23,744 --> 00:16:29,844
+Bilgisayar sistemlerinde tarih 1 Ocak 1970'den başlıyor.
+
+69
+00:16:29,844 --> 00:16:41,224
+ve günümüze kadar kaç milisaniye geçmiş bu bir işte double ne bileyim long hangi değerin içerisine sığıyorsa o değerin içerisinde saklanın.
+
+70
+00:16:41,584 --> 00:16:48,264
+Siz sistemin zamanını öğrenmek istediğinizde bu bir fonksiyondan veya bir metoddan geçirilir.
+
+71
+00:16:48,684 --> 00:16:56,284
+Bugün 1970'e göre kaçıncı yıldayım, kaçıncı aydayım, kaçıncı saat saniye diye alt kırılımlara bölün.
+
+72
+00:16:57,875 --> 00:17:19,564
+Bu ekstra bir bilgi olmuş olsun size. Şimdi burada bir kalender, bir paklime dair bir mesle sınıfımız var. Bir de date mesleğimiz var. Şurada bakın bir kalender sınıfı, bir de date sınıfı. Birbirlerinin çeşitli özelliklerini kullanarak burada da aslında temelde...
+
+73
+00:17:19,731 --> 00:17:26,731
+Yapılan şey bir casting. Date sınıfının içerisine bakıldığında date sınıfının barındırdığı bilgi...
+
+74
+00:17:27,539 --> 00:17:34,799
+Günay yıl olabileceği gibi kalender bundan daha fazla veya daha az bilgi barındırabilir.
+
+75
+00:17:35,159 --> 00:17:44,900
+Yani kalenderin bir alt hükümesi de itikapsıyorsa yine böyle bir casting işlemi doğru metotlar kullanarak gerçekleştirebiliriz.
+
+76
+00:17:45,039 --> 00:17:47,119
+Burada da ona dair bir örnek verilmiş.
+
+77
+00:17:47,659 --> 00:17:51,539
+Bunu ekstradan çalıştırmayacağım. Siz çalıştırıp bakabilirsiniz.
+
+78
+00:17:51,539 --> 00:17:53,219
+Casting kısmı basit olduğu için.
+
+79
+00:17:55,539 --> 00:18:07,099
+kısımlarına odaklanmak istiyorum. Burada ne söylemişiz? Evet, yani burada da tabii tarihin, burada önemli hususlarından birisi bakın, bir metodunu görüyoruz.
+
+80
+00:18:07,460 --> 00:18:19,199
+Expired date, yukarıda tanımlanmış bir tarih. Ben de yeni bir bugüne dair tarih oluşturuyorum. Bunlar birbirinden önce midir, sonra mıdır diye karşılaştırma işlemi gerçekleştirebiliyorum.
+
+81
+00:18:23,539 --> 00:18:51,539
+Fender'le ilgili çeşitli kavramlar Java tarafına bakıldığında bazı sınıfların ömrü dolabiliyor. Onları bazen sarıyla boyar. Yani bunu, bu date sınıfını bu şekilde konstral etme diye zaman zaman size uyarılar gelebilir. Onlara dikkat ederek hangi konstral tırlar kullanımdan kalkmayacak ilerleyen versiyonlarında onları...
+
+82
+00:18:51,539 --> 00:18:57,019
+Bu konuda doğru bulup doğru şekilde kullanmanız, ilklendirmenizi buradan size tavsiye ederim.
+
+83
+00:18:57,179 --> 00:19:05,299
+Date'in de önce midir, sonra mıdır diye bakın before ile ilgili bir karşılaştırmasının söz konusu olduğunu burada görebiliyoruz.
+
+84
+00:19:05,679 --> 00:19:10,539
+Tabii mesela hani siz biraz kendinize örnek olması adına şey de yapabilirsiniz.
+
+85
+00:19:11,155 --> 00:19:31,076
+Burada size az önce kodlarında gösterdiğim UML diagramında item interface'i bir abstract class olarak tanımlayıp bu abstract class olduğunda üst tarafa hangi metotlar taşınıyor olacak veya taşınabilecek çeşitli şeyler var mı, nasıl ilerler onları da kendiniz kurulayabilirsiniz.
+
+86
+00:19:39,155 --> 00:19:43,635
+Programlama dilinde muhtemelen dosya işlemlerine dair birçok şey yaptınız.
+
+87
+00:19:44,076 --> 00:19:46,596
+Burada da benzer durumlar söz konusu.
+
+88
+00:19:47,016 --> 00:19:50,235
+Yani dosyadan yazma, okuma işlemleri gerçekleştiriyoruz.
+
+89
+00:19:50,235 --> 00:20:00,000
+Tabii bakıldığında komple topikün bir programlama yaklaşımı düşündüğünüz gibi.
+
+90
+00:20:00,000 --> 00:20:13,119
+Bir büyük bir program, bir otomasyon sistemi, bir desktop application, mobil application, web application geliştirdiğinizde doğrudan dosyalarla çalışmak belki istemeyeceksiniz.
+
+91
+00:20:13,240 --> 00:20:18,880
+Dosyalarla çalışmak, dosyanın içerisinde yazık veriyi okumak her daim o kadar efficient değil.
+
+92
+00:20:19,000 --> 00:20:25,279
+Bunu daha güzel, efektif bir şekilde gerçekleştirebileceğiniz temelde bir yapı var.
+
+93
+00:20:25,279 --> 00:20:26,960
+Veritabın yönetim sistemleri.
+
+94
+00:20:28,000 --> 00:20:30,240
+Dersini önümüzdeki yıl alacaksınız.
+
+95
+00:20:30,759 --> 00:20:37,480
+Veritab'ın yönetim sistemleri dersini gördüğünüzde bu dosyalar memoride ne şekilde organize,
+
+96
+00:20:37,480 --> 00:20:48,799
+memori diyorum ikinci disk yani secondary memorilerde, disklerde ne şekilde organize ediliyor, nasıl tutuluyor, nasıl onlara erişiliyor gibi çeşitli kavramları.
+
+97
+00:20:49,940 --> 00:20:55,299
+Ve onların bir de sorgulama dili var, marka plengu içi var, SQL diye.
+
+98
+00:20:56,000 --> 00:20:58,920
+O dili üzerinden görüyor olacaksınız.
+
+99
+00:20:59,799 --> 00:21:06,279
+Buradaki olaysa bir dosyaya veya bir klasöre yazmak.
+
+100
+00:21:06,279 --> 00:21:07,276
+Mesela...
+
+101
+00:21:07,347 --> 00:21:11,347
+İşte siz bir dosyalama sistemi yapmak istiyorsunuz.
+
+102
+00:21:11,528 --> 00:21:25,427
+Kendi uygulamanız içerisinden yani şu klasörün içerisine şöyle bir dosya ekleyelim veya şu klasörün içerisine başka bir klasör ekleyeyim gibi çeşitli işlemler yapmak istiyorsunuz.
+
+103
+00:21:25,807 --> 00:21:30,648
+Bunu yapabileceğiniz arayüzler burada size sağlanıyor olacak.
+
+104
+00:21:30,788 --> 00:21:34,067
+Şimdi ilişkili olduğumuz öncelikle exception'larla başlayalım.
+
+105
+00:21:34,067 --> 00:21:35,347
+Sınavdan önceki...
+
+106
+00:21:35,347 --> 00:21:36,867
+Sınavda Exception'ları anlatmıştık.
+
+107
+00:21:36,967 --> 00:21:38,847
+Malumunuz sınavda sormadık.
+
+108
+00:21:38,927 --> 00:21:42,087
+Çünkü tüm hocalarımız Exception konusuna kadar işleyememişler.
+
+109
+00:21:42,087 --> 00:21:49,327
+Ama önümüzdeki karşınıza çıkacak sınavlarda Exception konusu da gelecektir.
+
+110
+00:21:49,748 --> 00:21:55,648
+Muhakkab olduğumuz Exception'lara bakıldığında IO Exception en temel başta muhakkak olduğumuz Exception.
+
+111
+00:21:56,188 --> 00:22:03,087
+Eğer ki dosyada okuma ve yazmaya denildik işlemlerle ilgili bir...
+
+112
+00:22:03,347 --> 00:22:11,487
+problemle karşılaştığımız durumda, IO Exception'ın altında bulunan, ondan ekstent edilmiş çeşitli Exception'ları alabiliriz.
+
+113
+00:22:11,907 --> 00:22:15,688
+IO Exception sadece dosyalarla ilgili şeyler değildi hatırlarsanız.
+
+114
+00:22:15,827 --> 00:22:18,648
+Yani networkten veriler gibi bir stream söz konusu.
+
+115
+00:22:19,127 --> 00:22:21,788
+Orada da herhangi bir problem olabilirdi.
+
+116
+00:22:21,907 --> 00:22:26,788
+Memoriye erişimlerle ilgili çeşitli IO problemlerimiz olabildi.
+
+117
+00:22:27,167 --> 00:22:30,548
+Bunlardan ilki bakıldığında end of file Exception.
+
+118
+00:22:31,124 --> 00:22:40,243
+Siz dosya içerisinde 15 tane veriye ulaşmayı edebiliyorsunuz ama dosyada 14 tane veri var, 12 tane veri var.
+
+119
+00:22:40,583 --> 00:22:51,624
+Herhangi bir şekilde dosyanın sonuna ulaşmanıza rağmen hala daha okumaya devamlı diyorsanız size karşınıza çıkacak hata End of Exception hatası olacak.
+
+120
+00:22:51,624 --> 00:22:59,083
+Veya bir dosyaya erişmek istiyorsunuz, şu işin dosyayı aç diyorsunuz. O dosyanın ismi zannettiğiniz isim de olmayabilir.
+
+121
+00:22:59,124 --> 00:23:09,543
+Veya o dosya sizin baktığınız dizinde yani PET'te, classer'de olmayabilir. Böyle bir durumda da file not found exception hatasını alıyor olacaksınız.
+
+122
+00:23:09,543 --> 00:23:27,124
+Veya dosyalara ve classer'lere farklı kullanıcı tiplerinin yazma ve okuma yönünde farklı erişim düzeyleri söz konusu olabilir. Siz eğer ki erişim düzeyiniz farklıysa o dosya üzerinde erişiminiz kısıtlı.
+
+123
+00:23:27,124 --> 00:23:34,943
+Kısıtlanabilir veya o kısıtlar hiç olmayabilir, erişebilirsiniz ama kısıtlandığı durumda dosyaya dair security exemption gibi.
+
+124
+00:23:35,539 --> 00:24:03,519
+bir exception üretilip alınabilir. Yani bu exceptionları öncelikle söylüyorum. Bunun temel sebebi de şu. Dosya işlemleri gerçekleştirirken exceptionlarla karşılaşma ihtimalimiz çok büyük. Böyle olduğu için de muhakkak ve muhakkak bizim yapmamız gereken şey kodlarımızı try-catch blogları içerisinde değerlendirmek. Try ile beraber exception olabilecek.
+
+125
+00:24:03,539 --> 00:24:18,839
+kod bloklarını kapsamak ve catch kısmında da exception olduğunda bunu nasıl handle edebileceğimizi üzerinde durmak veya işte final kısmında neler yapmamız gerekiyorsa onları yapmak.
+
+126
+00:24:21,599 --> 00:24:27,379
+Burada Java tarafına bakıldığında dosya işlemleri temelde iki kategoride inceleniyor. Birisi file management.
+
+127
+00:24:27,759 --> 00:24:39,119
+Ben lisans öğrencisiyken muhtemelen 2. sınaftım. Dosyada böyle dönem projesi ödevi olarak Java'da file management.
+
+128
+00:24:39,488 --> 00:24:47,308
+verilmişti. Bir konsol uygulaması olarak File Management yapan bir sistem geliştirmemiz istenmişti.
+
+129
+00:24:47,408 --> 00:24:53,408
+File Management, buradaki File Management kısmı şu. Dosya, yeni bir dosya oluşturmak istiyorum.
+
+130
+00:24:54,008 --> 00:25:01,628
+Oluşturulan dosyanın ismini değiştirmek istiyorum. Dosyayı silmek istiyorum gibi veya işte klasör oluşturmak istiyorum.
+
+131
+00:25:02,148 --> 00:25:06,548
+Alt alta iç içe geçmiş, casketli bir yapıda 10 tane klasör oluşturacağım.
+
+132
+00:25:07,488 --> 00:25:12,328
+10 klasörü getirip buraya kopyalayacağım gibi tüm işlemler file management kısmında.
+
+133
+00:25:12,968 --> 00:25:22,868
+Bir file'ın içerisindeki veriyi değiştirmek istiyorsak, yani file management kısmında a.txt dosyası var.
+
+134
+00:25:23,228 --> 00:25:26,068
+Bunu ismini değiştirip b.txt yapabiliyoruz.
+
+135
+00:25:26,148 --> 00:25:27,728
+Kopyalıyoruz, bir tane daha alıştırıyoruz.
+
+136
+00:25:28,088 --> 00:25:30,588
+IA operation kısmında ise bu dosyanın içerisine gidiyoruz.
+
+137
+00:25:30,588 --> 00:25:35,328
+İçerisine yazan bilgileri, verileri temelde değiştiriyoruz.
+
+138
+00:25:35,488 --> 00:25:46,488
+Ben IO operation kısmında normalde neyse ona değineceğiz herhalde. Bunun içinde Java IO'nun altında bulunan file.
+
+139
+00:25:46,867 --> 00:26:13,307
+Sınıfın özelliklerini kullanıyor olacağız. Bu sınıfın altında bulunan yine sınıfları ve o sınıfların metodlarını kullanıyor olacağız. Bakın sınıflardan birisi file. Bu sınıfın konstruktörü dosya ismi alarak başlıyor. Yani siz bir file oluşturmak istiyorsanız o dosyanın ismini vererek konstrukt edebiliyorsunuz. Bir uyarı verilmiş burada.
+
+140
+00:26:14,867 --> 00:26:33,167
+class'ın ismini verecekseniz full pet vermenizi bekleniyor. Yani işte hangi diskten itibaren bunu yerleştirmek istiyorsanız şu diskin ne bileyim işte şu klasörünün altında, bu klasörün, bu klasörün, bu klasörün altında bir yere yerleşeyim.
+
+141
+00:26:33,167 --> 00:26:42,627
+Veya işte relative pet yani hali hazırda bildiğiniz bir relative durum environment değişkeni olarak saklanıyor olabilir.
+
+142
+00:26:42,867 --> 00:26:58,867
+Mesela home klasörünün altından başlayacak şekilde devam edilir. Veya desktop'ın altından başlayacak şekilde devam edilir. Böyle çeşitli environment variablerimiz olabilir. Onlara göre relatif bir şekilde yerleştirebilirsiniz.
+
+143
+00:26:58,867 --> 00:27:08,867
+Pet Separator olarak Windows'da ters slash. Unix, Linux tarafında ise düz slash kullanılıyor.
+
+144
+00:27:10,548 --> 00:27:38,327
+Eğer ters slashı siz yine ters slash kullanmanız gerektiğinde petin içerisinde yani öyle bir şey yapmak istemerseniz ama ola ki yapmak istediğiniz escape karakter olarak yine ters slash kullanmanız gerekiyor. O yüzden bazı petlere erişim sağlarken çift ters slashla erişim sağladığınız olacak. Birazdan bakacağız. Ben de bunu da kullanıyorum. Linipsne biraz daha rahat tek slashla erişiyorsunuz.
+
+145
+00:27:38,548 --> 00:27:58,628
+Siz eğer ki separatorların nasıl bir şekilde handle edildiğini ve separatorın ne olduğunu bilmiyorsanız, statik olarak tanımlanmış file separator ve file separator çarp gördüğünüz gibi kullanımınıza hazır veriler var. Bunlar üzerinden işlem gerçekleştirebilirsiniz.
+
+146
+00:27:58,628 --> 00:28:06,548
+Tabii ki file'ın birden fazla constructor'ın da olduğunu burada görüyoruz. Eminim bunlardan da daha fazla farklı constructor'ları var.
+
+147
+00:28:06,548 --> 00:28:08,448
+Mesela...
+
+148
+00:28:08,448 --> 00:28:30,128
+Demiştik ya, file, string, file name alıyor diye. Bunu petini ayrı, ismini ayrı olarak verebiliyormuşuz. Yani siz for döngüsüyle bir şeyler yapmak istiyorsunuz. 100 tane bir dosyayı bir aynı petin içerisine farklı isimlerle yerleştiriyor olacaksınız diyelim ki. Mesela böyle bir yapı kullanabilirsiniz.
+
+149
+00:28:36,448 --> 00:28:50,268
+Dosyanın isimlendirilmesine de izin veren bir constructor yapısı bize sağlıyormuş. Bunu da böylece görmüş olduk. Buna dair birazdan örnek yapıyor olacağım. Kafamızda daha güzel canlansın diye.
+
+150
+00:28:51,548 --> 00:29:04,307
+Java, IO file tarafına bakıldığında bunun altında çeşitli metotlar var. Tahmin edebileceğiniz gibi bunların haricinde de tabii de çok metot vardır ama en çok kullanılanları buraya yazmışız. Yani böyle bir dosya.
+
+151
+00:29:04,448 --> 00:29:18,067
+var mıdır? Bu bir dosya mıdır? Klasör de olabilir çünkü erişmek istediğimiz şey. Bu bir dosya mıdır? Bu klasörün veya bu dosyanın bulunduğu klasörün veya dosyanın üst klasörlerin, parent file'larını.
+
+152
+00:29:18,612 --> 00:29:46,612
+Ben erişmek istiyorum. Onlar nelerdir? Onu bize verir. Veya bu dosyanın full peti nedir? Ona erişebiliriz. Bu dosyanın okumaya veya yazmaya izinleri var mı? Ona erişebiliriz. Yeni bir dosya oluşturmak istediğimizde, yeni bir klasör veya yeni bir klasör dizisi kasketli bir yapıda oluşturmak istediğimizde, bir dosyanın ismini değiştirmek istediğimizde veya onu silmek istediğimizde kullanılabiliriz.
+
+153
+00:29:46,612 --> 00:30:02,212
+Tabii ki buradaki dikkat etmemiz gereken şeyler her daim yeniden adlandırma, papyalama da belki öyle değil ama silme gibi çeşitli işlemler olduğunda bu metotların hiçbirisi emin misin diye sana sormaz. Yani bu dosyayı sil.
+
+154
+00:30:02,804 --> 00:30:27,324
+Şirkette çalışanların tüm bilgileri olan bir dosyan var. Maaşları tutuluyor, özgür hakları tutuluyor, her şeyi tutuluyor. Bu dosyayı sil. Takviyesiler. Yani silmek istiyor musun, emin misin? Bak bunun içinde önemli veriler var. Bu tarz hiçbir soru size yöneltmeyecektir. Doğal olarak siz bunu kullanırken programcı olduğunuz için kullanıcıya bu soruları sormanız lazım.
+
+155
+00:30:28,980 --> 00:30:47,840
+Şu isimli dosyayı silmek istediniz, onaylıyor musunuz? gibi bir adama mesela pop-up çıkarıp veya komut satırından sorup, onun mesela tekrardan dosyanın ismiyle beraber durumu görüp kontrol etmesini isteyebilirsiniz.
+
+156
+00:30:47,960 --> 00:30:53,180
+Dosyada çok önemli veriler varsa bazı şeyleri için onu yapabilirsiniz. Onaylıyorum da emin misin?
+
+157
+00:30:53,844 --> 00:31:10,464
+Eminim, son kararımı gibi birkaç kez belki sorabilirsiniz. Bazen çünkü şöyle şeyler olabiliyor. Bir veri siliniyor. Mesela işte Windows bilgisayardan insanlar çok fazla alışıyor. Yani bir klasörü deleğe basıp siliyorsun. Ah onu silmeyecektim deyip Ctrl-Z yapıyorlar.
+
+158
+00:31:10,963 --> 00:31:30,403
+Tak diye geliyor classer. Ama sizin programınızı yani bir sileyin. Geri alırım falan filan özellikleri yoksa bir uyarı da vermeniz lazım. Bakın siz bunu silmek istediniz. Lakin sildikten sonra bir daha bunu erişeyim sağlayamazsınız gibi dosya kısımları bu manada oldukça önem arz ediyor.
+
+159
+00:31:31,028 --> 00:31:51,807
+Tabii dosyalarla uğraşırken bir stream yapısını kullanıyoruz. Byte dizisi diyelim stream için. Sadece tabii ki streamler dosyalarla uğraşırken olmuyor. Memoriye bir veri yerleştirmek istediğimizde, network'ten akan veriyi takip etmek istediğimizde bunların hepsi stream olarak.
+
+160
+00:31:52,592 --> 00:32:02,192
+karşılığa çıkıyor. IO operationları da temelde stream olarak değerlendiriliyor. Bunun için birazdan göreceğiz. Serileştirme yapıları olacağız.
+
+161
+00:32:03,271 --> 00:32:18,531
+Ve dosya tutarken binary ve text formatında dosyayı yerleştirebiliyoruz diskin içerisine. Şimdi binary format dediğimizde 1 ve 0'lardan oluşan bir format. Text formatı dediğimizde ise
+
+162
+00:32:19,028 --> 00:32:28,668
+Biz text formatının içerisini açtığımızda bir insan olarak, bir kullanıcı olarak tam olarak veriler ne şekilde tutulmuş okuyabiliyoruz.
+
+163
+00:32:29,208 --> 00:32:37,307
+Ama binary formatında bazı karakterler binary formatta eğer ki printable karakterlerse ekrana tabii ki yazacaklar.
+
+164
+00:32:37,307 --> 00:32:47,028
+Ama böyle ne bileyim işte yıldızlar, gündemler, tildalar, pipelar gibi tablo şeyin içerisinde dosyanın içerisinde.
+
+165
+00:32:47,028 --> 00:32:51,067
+çeşitli noktaların şartları veya non-printable
+
+166
+00:32:51,067 --> 00:32:53,147
+karakterler, newline karakterler
+
+167
+00:32:53,147 --> 00:32:55,067
+farklı farklı karakterler görme
+
+168
+00:32:55,067 --> 00:32:56,768
+durumunu söz konusu. Binary
+
+169
+00:32:56,768 --> 00:32:59,208
+üzerinde çalışıyorsak insanoğlu
+
+170
+00:32:59,208 --> 00:33:00,928
+tarafından okunulması
+
+171
+00:33:00,928 --> 00:33:02,968
+o kadar elverişli değil fakat
+
+172
+00:33:02,968 --> 00:33:04,968
+veri hızı hem okuma
+
+173
+00:33:04,968 --> 00:33:06,908
+hem yazma yönünde oldukça fazla
+
+174
+00:33:06,908 --> 00:33:08,748
+oluyor olacak.
+
+175
+00:33:08,968 --> 00:33:11,107
+Text tarafında ise
+
+176
+00:33:11,107 --> 00:33:12,867
+veri hızı düşük ama
+
+177
+00:33:12,867 --> 00:33:15,028
+insanoğlunun okuması çok elverişli
+
+178
+00:33:15,028 --> 00:33:30,028
+verişçi oluyor olacak. Yani nasıl bir ihtiyacınız varsa ona göre davranmanız lazım. Bu önemli kavramlardan birisi. Bir diğeri de veriye nasıl eriştiğimiz. Bu kavramı BBG...
+
+179
+00:33:30,352 --> 00:33:56,971
+1 veya BBG dersinde ilk haftalarda herhalde zanlıca hocalarımız size anlatmıştır. Bir kez daha burada söyleyelim. Veriye erişirken randomized bir şekilde mi erişiyoruz veya sequential access mi erişiyoruz? Bu kısım önemli. Random access kavramını biliyorsunuzdur zaten. Random access memory dediğimiz RAM sürekli kullandığınız için sequential access memoriler de var.
+
+180
+00:33:58,352 --> 00:34:08,612
+İşte farklı farklı tabii memoratifleri var. Sequential Access durumu söz konusuysa bir veriye erişmek için ondan önceki tüm verilere erişmemiz gereken bir durum.
+
+181
+00:34:09,007 --> 00:34:31,487
+Bahsediyoruz demek. Random Access erişimde ise disk içerisinde, memori içerisinde bulunan herhangi bir veriye erişmek istediğimiz durumda ondan önceki verilere doğrudan erişmemize gerek yok. Böyle bir yapı. Bizim şu an kullandığımız bilgisayar sistemleri genellikle Random Access Memori olarak çalışıyor.
+
+182
+00:34:37,007 --> 00:34:43,487
+2015-2016 yıllarda görürken Orduvanki arkadaşlar en son nesilde herhalde.
+
+183
+00:34:44,547 --> 00:34:52,087
+Önceden video kasetler veya ses kasetleri sanatçıların veya plaklar.
+
+184
+00:34:52,188 --> 00:34:58,688
+Şimdi belki görüyorsunuz hala daha çok popüler sanatçıların plakları da çıkıyor.
+
+185
+00:34:58,787 --> 00:35:00,287
+Gramofonda veya plak.
+
+186
+00:35:00,592 --> 00:35:19,431
+Çalarda dinlemek isteyenler orada analog sesi yakalayabildikleri için alıp dinliyorlar. Öyle bir durumda, yani kaset gibi bir şey düşünelim. Bir şarkıyı dinlemek için mesela 12 numaralı şarkıyı dinleyeceksiniz. Ondan önceki 11 numaralı şarkıyı dinlemeniz gerektir.
+
+187
+00:35:19,827 --> 00:35:40,047
+Ya da ileri sarmak diye bir özellik vardır onlarda. İleri sararsınız, o da vakit alır. Yani aslında ileri sarmak ne demek? Sesini oynatmadan, sesini dışa vermeden hızlı bir şekilde o manyetik teyfi dolamak demek. Ama MP3 çalarlarını düşünelim, telefonları düşünelim.
+
+188
+00:35:40,416 --> 00:35:52,856
+Youtube, Spotify'ı hiç rastetmiyorum bile. Yani orada herhangi bir şartı dinlemek istediğimizi üstüne tutuyoruz. Rastgele bir şekilde ona erişiliyor ve istediğimiz zaman dinleyebiliyoruz.
+
+189
+00:35:53,376 --> 00:36:06,996
+Diskler tabii ki günümüzde kullandığımız hem hard diskler hem solid state diskler, farklı farklı formlarda da diskler olsa bunlar genellikle random akses olarak erişilebiliyor.
+
+190
+00:36:08,416 --> 00:36:35,615
+Kaniyeti teyit olan diskler vardır. Özellikle security tarafında kullanılıyordur. Eminim. Ama genel olarak söylemek gerekirse random access olarak erişiliyor. Ama mesela işte networkten gelen veriyi düşünelim. Yani siz veriyi alıyorsunuz, bir yere verip duruyorsunuz. Yani bir 10 gigawatt değil bir veri geliyor. O veriyi network size belli sırayla yolluyor. Yani 3.
+
+191
+00:36:36,340 --> 00:36:48,420
+Çünkü 3. Gigabyte'daki deviler almak için ilk ikisinin zaten gelmiş olmasına direkt onu okuyeyim diyemeyebiliyorsunuz. Network'ün hareket şekli göz önünde bulundurulduğunda.
+
+192
+00:36:48,788 --> 00:37:06,948
+Tabii ki burada ben örneklerde daha çok bizi muhakkak eden binary formatta nasıl dosyayı tutarız, binary formatta nasıl alırız, past to efficient dedik ya, nasıl yazarız ve nasıl okuruz bunun üzerinde duruyor olacağım.
+
+193
+00:37:06,948 --> 00:37:16,148
+Onun için de yapmamız gereken şeylerden birisi serileştirme operasyonu, serileştirme yani serileştirmeyi niçin?
+
+194
+00:37:16,788 --> 00:37:41,108
+Temelde yapıyoruz. Bir objeyi tamamını, yani bir sınıftan üretilmiş objenin tamamını disk'in içerisine binary formatında yazmak için o objenin serileştirilmiş olması gerekiyor. Bunu da Java.io sınıfından türeterek gerçekleştiriyoruz.
+
+195
+00:37:41,108 --> 00:37:44,788
+Output, object output stream ve file output.
+
+196
+00:37:44,788 --> 00:37:51,347
+CloudStream objelerini kullanarak zincirleme bir şekilde serileştirme işlemini gerçekleştirebiliyoruz.
+
+197
+00:37:51,347 --> 00:37:56,988
+Tabii ki bir de Transient Keyword'ı var.
+
+198
+00:37:57,467 --> 00:38:06,188
+Şimdi diyelim ki bir çalışanı siz sisteme kaydediniz ve bunun verilerinin tamamını dosyanın içerisine yazacaksınız.
+
+199
+00:38:06,608 --> 00:38:09,948
+10 tane çalışanız, 100 tane çalışanız olsun. Önemli değil.
+
+200
+00:38:10,528 --> 00:38:14,468
+Bazı öyle veriler vardır ki dosyayı yazmak istemeyebilirsiniz.
+
+201
+00:38:14,628 --> 00:38:17,248
+Security sebepleri olabilir, farklı sebepler olabilir.
+
+202
+00:38:17,748 --> 00:38:19,868
+Dosyaya o veriyi yazmak istemezsiniz.
+
+203
+00:38:20,148 --> 00:38:26,288
+O veri dosyaya yazılmıyorsa eğer o dosyayı okuduğunuzda o veriyi de bulmak istemezsiniz.
+
+204
+00:38:26,288 --> 00:38:29,208
+Mesela şöyle söyleyelim. Bir çalışan düşünelim.
+
+205
+00:38:29,448 --> 00:38:31,428
+10 tane alanı var, attribute var.
+
+206
+00:38:31,868 --> 00:38:34,588
+Maaş bilgisini dosyaya yazmak istemiyorsun sen.
+
+207
+00:38:34,608 --> 00:38:54,908
+9 tanesini o çalışanın yazmak istiyorsun. Ne denir ona? Dosyaya serileştirilmiş bir şekilde. Ama bir tane alanını, maaş alanını yazmak istemiyor. Ya maaş alanını sileyim mi? Ne yapayım? Nerede tutayım diye düşünmeyensiniz diye Transim key wordü.
+
+208
+00:38:55,443 --> 00:39:14,804
+Var burada. Eğer ki veri değişken tanımlarken bu keyword'ı kullanırsanız serileştirildiği durumda o değiş, o attribütün set edilmiş hali olsa bile hiç bir değeri yokmuş gibi, sıfırmış gibi, nalmış gibi size sonuç döndürüyor olacak okumaya çalıştığınızda.
+
+209
+00:39:14,804 --> 00:39:23,443
+O yüzden transient kelimesi buradaki önemli keyword'lerden birisi. Özellikle dediğim gibi security tarafında iş yapılacak.
+
+210
+00:39:23,443 --> 00:39:28,396
+Jatırım'da her şey dosyaya yazılmak istemedi. Dosyaya yazılma ne oluyor? Adam...
+
+211
+00:39:29,268 --> 00:39:43,288
+Plastiske dosyayı alıp gidebiliyor. Siz onu da ekstradan tabii ki çeşitli güvenlik önlemleri göz önünde bulundurarak çeşitli şifreleme teknikleriyle IS'lerden neyse, OTAs, kripto, tekniklerden geçirip şifreleyebilirsiniz.
+
+212
+00:39:43,407 --> 00:39:52,147
+Hiç hoşnutuz. Ama yazmak istemeyebilirsiniz yani her durumda. Böyle durumlar için TransLink Keyword'in de olduğunu görüyor.
+
+213
+00:39:57,076 --> 00:40:01,816
+Aslan hocalarımız bahsetmişti falan demiştiniz. Onlardan konuşalım.
+
+214
+00:40:01,816 --> 00:40:06,655
+Add keywordü ile beraber kullanılan annotationlar.
+
+215
+00:40:07,476 --> 00:40:12,496
+Artık Java'nın belli bir sürümünden sonra çok sık kullanılır hale geldi.
+
+216
+00:40:13,216 --> 00:40:21,496
+Bazı derleyiciye bazı şeyleri bizim söylediğimiz idelerle belki konuşmamızı falan sağlayan bir yapı temelde.
+
+217
+00:40:22,016 --> 00:40:23,724
+Meta seviyede...
+
+218
+00:40:23,764 --> 00:40:51,344
+bir bilgi içeriyor. Sınıfa dair, attribute'e dair, metoda dair, hepsine dair bir annotation tanımlayabiliyoruz. Temelde compiler'a, IDE'ye veya farklı programlara bilgi paslamak için kullandığımız bir mekanizma veya işte ne bileyim sistemde bir sürü warning söz konusudur. O warningler sarı sarı mesela IDE altını çizer.
+
+219
+00:40:51,764 --> 00:40:57,624
+Onları görmezden gelmek istediğiniz durumda onları baskılayabilecek çeşitli annotationlar.
+
+220
+00:40:57,684 --> 00:41:05,384
+Ya bunun farkındayım, tamam, warninglerin ama daha fazla bana warning verme diye yazabilirsiniz.
+
+221
+00:41:05,384 --> 00:41:06,384
+Tabii ki warninglerin...
+
+222
+00:41:07,891 --> 00:41:19,091
+Yani Java'da olsa bile warninglere tabii ki dikkat etmek gerekir warning sonuçta. Bir error değil ama onu da söylemek lazım. Error olduğu durumda muhakkak ilgilenmek gerekiyor.
+
+223
+00:41:19,491 --> 00:41:30,611
+Warningler bazen yani bu bir sonraki versiyonlarda kullanılmayacak, onun yerine şimdiden yenisini sundu, kullan diye bile olabilecek çeşitli şeyler olabilir.
+
+224
+00:41:31,315 --> 00:41:34,535
+Tabi onları değerlendirmeye alalım.
+
+225
+00:41:34,695 --> 00:41:41,275
+İşte baskılamak istediğimiz durumda warningleri yazdığımız çeşitli ifadeler var.
+
+226
+00:41:41,395 --> 00:41:43,315
+Onları da annotationlarla kullanıyoruz.
+
+227
+00:41:43,875 --> 00:41:56,755
+Yine bir sonraki yıl mesela veritabanı yönetim sistemleri dersi aldığınızda orada artık hibernate gibi bir kavram.
+
+228
+00:41:57,364 --> 00:42:01,423
+göreceksiniz ve Baruklarda Aslan Arkadaşlar üzerinde bahsediyor olacaklardır.
+
+229
+00:42:01,903 --> 00:42:09,723
+Orada mesela snuffların her birisinin ayrı ayrı, belki 30'a yakın, 40'a yakın farklı annotationları,
+
+230
+00:42:11,251 --> 00:42:27,531
+Veri tabanı tablolarıyla göreceksiniz onları. Java veya işte nesne yönelikli programlamakta o objeleri tablolarla eşleştirebileceğimiz, özelliklerini koyabileceğimiz inanılmaz farklı annotationlar var.
+
+231
+00:42:28,431 --> 00:42:34,891
+Bu saatten sonra da biz de bu dersin ilerleyen isimlerinde bolca annotation'ın kod yazıyor olacağız.
+
+232
+00:42:35,059 --> 00:42:47,300
+Evet, buraya kadar sorusu olan arkadaşımız var mı? Yoksa bir kod gösterimi üzerinden anlatıma devam edeceğim. Şu IO işlemleri nasıl yetiyor? Onun üzerinden geçiyor olacağım.
+
+233
+00:42:50,039 --> 00:42:52,200
+Tamam, şimdi eklepisi paylaşalım.
+
+234
+00:42:52,200 --> 00:42:54,920
+O zaman, sorusu olan yoksa.
+
+235
+00:42:57,660 --> 00:42:59,920
+Evet, eklepisi paylaştı.
+
+236
+00:43:00,340 --> 00:43:01,880
+Şimdi, devam edelim ki, şu.
+
+237
+00:43:02,996 --> 00:43:04,195
+Bakalım.
+
+238
+00:43:05,875 --> 00:43:06,915
+Ne için açalım?
+
+239
+00:43:07,036 --> 00:43:07,576
+Ondan açalım.
+
+240
+00:43:08,255 --> 00:43:09,195
+Şey yapalım.
+
+241
+00:43:09,415 --> 00:43:09,875
+Yütelim.
+
+242
+00:43:10,556 --> 00:43:14,755
+Şimdi, bakın arkadaşlar, kontak diye bir sınıfı var.
+
+243
+00:43:15,096 --> 00:43:19,675
+Kişilerin bilgilerini içerisinde barındıran bir sınıf.
+
+244
+00:43:19,775 --> 00:43:22,815
+Attribütleri, metotları buna özel oluyor diye.
+
+245
+00:43:22,915 --> 00:43:26,875
+Ben bu kontak bilgisini dosyanın içerisine kaydetmek istiyorum.
+
+246
+00:43:27,891 --> 00:43:43,811
+Bakış açım bu. Serileştirmemiz gerektiğini söylemiştim. O yüzden bakın burada gördüğümüz bir serileştirme interfazinden bunu implement ediyoruz.
+
+247
+00:43:43,811 --> 00:43:53,431
+Temelde bakıldığında. Implement ederken yine tabii versiyon uyumluluğuna derleyici zaman zaman takılabilir.
+
+248
+00:43:55,891 --> 00:44:01,211
+Machine version uyumuna. O yüzden bu ifadeyi yazman gerekiyor diye uyaracaktır seni.
+
+249
+00:44:01,592 --> 00:44:05,612
+Farklı farklı versiyon UID değerlerini buraya yazabilirsiniz.
+
+250
+00:44:06,511 --> 00:44:08,891
+Versiyon Lama amacıyla olan bir şey.
+
+251
+00:44:08,971 --> 00:44:12,672
+Ama biz temelde şuraya baktığımızda 3 tane attribut var.
+
+252
+00:44:12,871 --> 00:44:15,112
+Contact yani kişilerin bilgilerini tutuyoruz.
+
+253
+00:44:15,491 --> 00:44:18,552
+Bunların bir tane constructorı var.
+
+254
+00:44:18,552 --> 00:44:23,891
+Sadece kişinin ismini vererek oluşturduğum doğal olarak hemen setter'larının olması gerektiğini tahmin ediyoruz.
+
+255
+00:44:23,891 --> 00:44:43,612
+Ne diyorsunuz? Yani settle, settle ve getterlarına dair de çeşitli bilgiler, söz konusu. Bir de toString metodu var ki toString metoduyla ben o kontağın isminin ne olduğunu işte şurada verdiğim formatta ekrana yazdırıyor olacak.
+
+256
+00:44:50,112 --> 00:45:08,271
+Dosyaya yazdırmak istediğim için serileştirmem gerekiyor. O yüzden buradan implement ettim. Onu söylemiş olalım. Bir diğer ürettiğim sınıf ise create contact diye bir sınıf. Bunun içerisinde main metod var. Önce şuna bakalım. Create contact, main metod var.
+
+257
+00:45:18,708 --> 00:45:24,347
+Alınan bilgiler ölçüsünde kontaklar oluşturup onlar kaydediliyor.
+
+258
+00:45:24,847 --> 00:45:27,168
+Ve beraber programın akışına bakalım isterseniz.
+
+259
+00:45:27,288 --> 00:45:29,048
+Bir tane Scanner sınıfı tanımlamış.
+
+260
+00:45:29,467 --> 00:45:33,748
+Bunu daha önce size ve beraber tanımlayıp kullanmıştık.
+
+261
+00:45:34,068 --> 00:45:35,608
+Scanner sınıfı ekranda.
+
+262
+00:45:36,436 --> 00:45:48,756
+Komut satırından, ekrandan dediğim yani, komut satırından klavyerlerine veya farklı bir giriş arayüzü üzerinden bilgi almaya yarayan bir sınıf, input isminde.
+
+263
+00:45:49,176 --> 00:45:56,596
+Ardından ekrana işte bu programın ne işe yaradığı yazılmış ve bir tane soru soruyor bakın, kaç tane kontak gireceksiniz?
+
+264
+00:45:56,596 --> 00:46:03,596
+Burada Skinner sınıfının nextint metoduyla ekrandan aldığımız o değer okunup bir kontak.
+
+265
+00:46:04,436 --> 00:46:16,956
+sayısı değişkeninin içerisine atılıyor. Ondan sonra kontakt tipinde, benim az önce oluşturduğum sınıfın tipinde bir dizi oluşturuluyor.
+
+266
+00:46:17,356 --> 00:46:22,736
+Kullanıcının girdiği sayı kadar elemanı olan bir dizi oluşturulmuş olunuyor.
+
+267
+00:46:24,076 --> 00:46:28,436
+Bu herhalde o şeyleri yakalamak için olan bir şey. Niye koymuş?
+
+268
+00:46:28,436 --> 00:46:32,296
+Kodu yazan bilmiyorum ama enter'ları falan yakalamak için olan bir şey.
+
+269
+00:46:32,436 --> 00:46:34,936
+Şimdi ardında
+
+270
+00:46:36,672 --> 00:47:04,452
+Kontak kişisi sayısı kadar dönmem gerekecek. Yani normal, standart bir ordan üstü. Çeşitli sorular soruyor. Ne diyor? Birinci kontağının ismi ne? Diyor. Ardından onu construct ediyor. Hatırlarsanız şurada, construct kısmında sadece ismiyle construct edebiliyordum. Birinci kontak, construct ediliyor ve ilgili dizinin ilgili gözüne.
+
+271
+00:47:04,672 --> 00:47:16,672
+İyi kaçsa yazılıyor. Ardından telefon numarası ne dediğimde telefon numarası okunup set ediliyor. Ardından adres bilgisi ne dediğimde adres bilgisi okunup yine...
+
+272
+00:47:17,108 --> 00:47:36,068
+E-mail adresi tabi ki bu. E-mail adresi set ediliyor. Şu Ford dizisinden çıkıldığı anda kullanıcıdan okuduğumuz şekliyle Contacts isimli kontakt dizisinden dizisinin tüm elemanları doldurmuş oluyor.
+
+273
+00:47:36,068 --> 00:47:45,068
+Şimdi ben bu dizinin elemanlarını gelin dosyanın içerisine yazıyor olayı. Şimdi bakıldığında bu dosyayı yazma işlemleri...
+
+274
+00:47:45,108 --> 00:47:59,408
+Hatayla karşılaşma ihtimalimizin çok yüksek olduğunu sizlere söylemiştim. O yüzden try-catch blokları içerisinde bu işlemin gerçekleştirebilmesi oldukça mantıklı olacak. Biz de burada böyle yapacağız.
+
+275
+00:47:59,928 --> 00:48:07,428
+Öncelikle bir dosya da oluşturmuşuz. Dosyanın uzantısını istediğiniz formatta yazabilirsiniz.
+
+276
+00:48:07,711 --> 00:48:25,632
+Yani bir dosyanın uzantısının dogex olması onu word dosyası yapmaz. Word dosyası yapan şey onun metadatasıdır. Yani bir PNG dosyanın uzantısını doge olarak değiştirdiğinizde doge olmaz. O yüzden istediğiniz gibi uzantı verebilirsiniz.
+
+277
+00:48:26,291 --> 00:48:39,951
+dosyalara. Eğer içerisinde data barındırıyorsa, serilizerde data barındırıyorsa genelde dat diye isimlendirilir. Ama bu tamamen sizin kontrolünüzde olan bir şey. Onu da söylemiş olayım.
+
+278
+00:48:39,951 --> 00:48:53,951
+Size az önce şunu söylemiştim. FileOutputStream ve ObjectOutputStream cascade bir şekilde kullanılarak bizim seri...
+
+279
+00:48:54,291 --> 00:49:03,652
+gerçekleştirdiğimiz verileri dosyaya yazma ve okuma işlemlerini gerçekleştirmemize yardımcı oluyordu.
+
+280
+00:49:03,652 --> 00:49:08,311
+Bakın öncelikle file output stream oluşturmuş bir tane.
+
+281
+00:49:08,771 --> 00:49:14,471
+Buradan çıkan objeyi object output stream'in içerisine vermiş.
+
+282
+00:49:14,611 --> 00:49:21,192
+Kafanız karışıyorsa eğer aslında temelde yapmak istediği şey kabaca şu.
+
+283
+00:49:22,452 --> 00:49:23,872
+Şöyle silelim.
+
+284
+00:49:25,852 --> 00:49:27,852
+Ve diyelim, file output stream.
+
+285
+00:49:32,275 --> 00:49:33,635
+Şöyle bir şey yani.
+
+286
+00:49:35,095 --> 00:49:37,375
+Böyle daha güzel anlaşılıyorsa böyle bir konu.
+
+287
+00:49:37,435 --> 00:49:40,295
+Öncelikle bir file output stream oluşturmuş.
+
+288
+00:49:40,295 --> 00:49:48,775
+Ardından bu file output stream'i object output stream'i construct ederken kullanmış.
+
+289
+00:49:48,935 --> 00:49:58,975
+Ve benim object output stream isminde yazıcı tipinde yazıcı isminde artık bir objem var.
+
+290
+00:50:00,000 --> 00:50:05,700
+Bu nesnenin sınıfından gelen çeşitli özelleşmiş metotları var tabii.
+
+291
+00:50:06,119 --> 00:50:07,160
+Onlar kullanılıyor olacak.
+
+292
+00:50:07,280 --> 00:50:10,160
+Bakın bir yazıcının altında neler var.
+
+293
+00:50:10,240 --> 00:50:10,960
+Write object.
+
+294
+00:50:11,160 --> 00:50:12,420
+Öncelikle neyi yazmış?
+
+295
+00:50:12,860 --> 00:50:14,440
+Veri, yani bir datamız var.
+
+296
+00:50:14,619 --> 00:50:16,320
+İstediğimiz formatta yazabiliriz.
+
+297
+00:50:16,320 --> 00:50:22,539
+Ama okumayı da biz yaptığımız için hangi formatta yazmışsak o formatta okumamız lazım.
+
+298
+00:50:22,980 --> 00:50:26,460
+Yani siz dosyanın içerisine kişi sayısını yazmışsınız.
+
+299
+00:50:26,619 --> 00:50:28,000
+Kişi sayısından...
+
+300
+00:50:28,000 --> 00:50:32,539
+kişilerin bilgilerinin bir kısmını koymuşsunuz.
+
+301
+00:50:33,076 --> 00:50:58,036
+Sonra başka kısmını koymuşsunuz. Ama bunu okurken de bu şekilde okumamız lazım. O yüzden mesela öncelikle burada işte kaç tane kontak var onların bilgisi yazılmış. Sonra bir for each döngüsüyle her bir kontağın bilgisi o yazıcı objesiyle beraber yazılmış. Daha sonra yazıcı objesi close edilmiş. Ondan sonra da başarılı bir şekilde.
+
+302
+00:50:58,739 --> 00:51:02,139
+Bu işlem gerçekleştirildi diye bize bilgi verilmiş.
+
+303
+00:51:02,440 --> 00:51:07,960
+Şimdi şöyle bir duruma bakıldığında bu dosyayı ilgili dizinde oluşturamayabilirim.
+
+304
+00:51:08,219 --> 00:51:13,659
+Şimdi ben bu dosyayı bu şekilde tam petini vermeden yazdığımda bu Java
+
+305
+00:51:14,143 --> 00:51:24,243
+Uzantılı dosya, her neredeyse onun dizinin olduğu yerde bu kontaks.dat isminde dosya oluşturulacak.
+
+306
+00:51:24,243 --> 00:51:27,243
+Siz kendi...
+
+307
+00:51:27,711 --> 00:51:55,711
+Diskinizin içerisinde, c, d, d, d, d neyse istediğiniz herhangi bir yerde oluşturabilirsiniz. Onun için bunun full petini vermeniz lazım. Her pete de ilişkinin yetkiniz olmayabilir. Supervisor yetkileri gerekebilir. O yüzden çeşitli hatalarla karşılaşabilirsiniz. Dosyayı yazdırırken çeşitli hatalar olabilir. Siz burada dosyayı açmışsınızdır, şuralarda bir yerde kapatıp ardından tekrar yazmaya çalışıyorsunuz gibi gibi farklı sebeplerle...
+
+308
+00:51:55,711 --> 00:52:22,612
+Hatalar olabilir. Bu hataların herhangi bir sene ceryan etmesi durumundaysa sizi bu exemption karşılıyor olacak. Biz bakın ekrana bir bilgi veriyoruz. Dosya yazma sırasında bir exemption oluştu. Printstextrace ise programcı için bir uyarıydı. Bunu da söylemiştik. Programcı için uyarı olduğu zaman hangi sınıfın, hangi satırında bir hata ceryan etti.
+
+309
+00:52:23,251 --> 00:52:31,052
+O satır şu mesneyi çağırıyordu, o mesnenin o metodunu çağırıyor, hadi oraya git tamamıyla bize trace edilebilir bir iz bırakır.
+
+310
+00:52:32,492 --> 00:52:39,932
+Ve programcı için anlamlıdır. Şuraya yazdığımız bilgi ise temelde kullanıcı için anlamlıdır.
+
+311
+00:52:46,496 --> 00:52:53,316
+Daha doğrusu mühendis bakışıyla, programcı bakışıyla değil de bir mühendis bakışıyla şunu söylemek gerekir.
+
+312
+00:52:53,655 --> 00:53:02,936
+Yani siz try, catch dediniz. Olası bir dosyada hata çıktı. Yapmamız gereken şey ne? Ekrana hata ile karşılaştım diye bir şey mi yazmak?
+
+313
+00:53:03,316 --> 00:53:08,776
+Belki yani burada tekrardan dosya ismini hani bir hata olduğuna dair tabii ki uyarı ver.
+
+314
+00:53:08,776 --> 00:53:13,456
+Ama programın akışını tekrardan şuraya döndürür. Burada işler tekrardan başlasın.
+
+315
+00:53:14,496 --> 00:53:28,276
+Dosya ismine farklı bir şey girerek devam etmek ister misiniz? Bu dizime kaydedemiyorum, şuraya kaydedeceğim sizin için uygun mudur gibi programın akışını yönlendirici çeşitli ifadelerle kullanmanız bu noktada beklenebilir.
+
+316
+00:53:28,276 --> 00:53:38,896
+Neyse, exception geçerildiğinde buraya bir uyarı mesajı ve hatanı izleyebileceğimiz bir bilgi mesajı yazılmış.
+
+317
+00:53:42,496 --> 00:53:48,316
+input scanner sınıfının input mesnesi close edilmiş.
+
+318
+00:53:48,516 --> 00:53:50,135
+Artık tekrar okuma yapamayız.
+
+319
+00:53:50,476 --> 00:53:52,675
+Bir de try'in içerisinde finali bloğu.
+
+320
+00:53:53,268 --> 00:54:21,188
+söz konusu oluyor olacak. Siz eğer ki dosya açma işlemi, oluşturma işlemi nerede o? Şunu farklı bir blogda yapıyorsanız o da try cash içinde olabilir. Bunun en sonunda finali ile şu kapama işlemini gerçekleştirebilirsiniz. Yani keçe düştüğünüz durumda şu satırda mesela bir hata aldıysanız keçe düşecek ama bu satırda hata aldıysanız şu satırları çalıştırmayacak tabii ki takdir edersiniz ki doğru olarak.
+
+321
+00:54:21,268 --> 00:54:28,188
+Ama her halükarda sen şunları da çalıştır dediğiniz bir şey olursa en son try catch'in içerisinde finali bloğuna onu yerleştirirdik.
+
+322
+00:54:28,628 --> 00:54:30,688
+Şimdi bir çalıştıralım dilerseniz.
+
+323
+00:54:31,467 --> 00:54:32,867
+Şunu küçültüp çalıştırayım.
+
+324
+00:54:33,268 --> 00:54:54,708
+Biz programı seviyorsanız, evet, bizim, yani şurada yazılan bilgilerden ne yazıyor diyorum. Şu bilgiyi yazıyor. Şunu gelin, kırmızıyla yazdıralım. Bu program bu bilgileri ekrana, dosyaya kaydeder diyor. Kaç tane kontak vermek istiyorsunuz? Bakalım, bir tane kontak vermek istiyorum. Kontağın ismi nedir?
+
+325
+00:54:55,507 --> 00:55:08,967
+Furkan, Jack McCormick'in telefon numarasını [kişisel bilgi] diyelim. Furkan, et, bilgiler neyse yazıyoruz yani.
+
+326
+00:55:08,967 --> 00:55:23,367
+Yazı, edi, t, e, e, contacts.dat isimli dosyaya bunu kaydettik diyor. Şurayı refresh ettiğimde göreceksiniz o dosyayı. Bakın aynı dizimde bir dosya. Serileştirilmiş bir şekilde konulduğu için.
+
+327
+00:55:23,507 --> 00:55:27,627
+Bazı kısımlarını tabii biz okuyabiliyoruz görüldüğünde.
+
+328
+00:55:28,187 --> 00:55:29,707
+Değiştirmek için istemiyorum.
+
+329
+00:55:30,227 --> 00:55:35,547
+Bazı kısımları da bizim için çok fazla anlam ekleden kısımlar olmayabilir.
+
+330
+00:55:36,107 --> 00:55:44,487
+Gelin bunu bir de yazdığımız bu dosyadan okuyan kısma beraber bakıyalım.
+
+331
+00:55:44,947 --> 00:55:50,187
+Nasıl çalıştığını sizlerle beraber görelim isterseniz.
+
+332
+00:55:52,788 --> 00:55:53,288
+Ah.
+
+333
+00:55:54,164 --> 00:55:59,724
+Bu dosyadan okuyacağım. Tabii ki hangi dosyadan okuyacağınızı burada söylemeniz gerekiyor.
+
+334
+00:56:00,244 --> 00:56:12,524
+Ardından bu sefer bir output stream değil de file input stream, object input stream, cascade bir yapıda kullanılarak bir reader objesi oluşturuluyor.
+
+335
+00:56:12,524 --> 00:56:22,104
+Reader objesinin okuduğu bakın, read object diyerek okuduğu ilk integer değer, integer'e kest edilmiş görüyorsunuz, ilk integer değer.
+
+336
+00:56:22,164 --> 00:56:27,984
+kontak kavram. Yani kaç tane kontağının olduğunu burada ilk sırada yazmıştık.
+
+337
+00:56:30,864 --> 00:56:35,484
+Nerede? Şurada okuduk. Nerede yazıyorduk?
+
+338
+00:56:35,987 --> 00:57:02,607
+Şuralarda bir yerde yazıyoruz. Evet, şurada ilk sırada kontak count sayısını yazıyordum. Burada da ilk başta onu okuyoruz. Çünkü şu for döngüsünü ona göre döndüreceğim. Ardından gelen her bir obje okuyoruz. Bir data yayını söz konusu. Objeyi okuyorum, onu kontağa kestediyorum. Bu ne demek biliyor musunuz? Bir kontak objesi boyutunda sadece veri.
+
+339
+00:57:03,987 --> 00:57:31,947
+Oradan alıyoruz. Kontağı kestettim. Bir kontak oluşturdum. Onun bilgilerini ekrana yazdırdım. Böyle yazarsam ne yapar? Spring metodu çağrılmış olur. Ardından reader'ı kapatıyorum. Tabii ki bir IOException söz konusu olabilir. Girişçik iş bilimleriyle ilgili. Onu yazdım. Eğer şöyle bir dosya değil, ne bileyim bu iki olursa, class, land, font hatası, exemption gelir. Burada onunla da karşılaşmış oluruz. Deneyelim.
+
+340
+00:57:31,987 --> 00:57:38,927
+İşte File Not Found gibi bir hatayla karşılaşmış olduk.
+
+341
+00:57:40,115 --> 00:58:07,476
+Çünkü böyle bir dosya söz konusu değil. Dosyamızın ismi ikili değil, tek versiyonu. Çalıştırdığımızda ise bakın o dosyanın içerisine kaydettiğimiz verileri buradan görebiliyoruz. Benim şu create contact tarafına bakıldığında dosya her seferinde yeniden oluşturuluyor. Yeniden oluşturulduğu için bu kod her çalıştırıldığında şu contacts.dat dosyasının üzerindeki verilerin tamamı silinip yeni veriler yazılıyor.
+
+342
+00:58:08,115 --> 00:58:32,215
+üstüne. Siz ama hala hazırda kontakt.dat varsa onu düzenle şeklinde bir onun üzerine ekleme yap şeklinde bir yapı kendinizde burada kurabilirsiniz. Gelin şu şeyi yapabilirsek. Mesela, mesela, private.
+
+343
+00:58:32,851 --> 00:58:54,851
+Private, transibles ifadesi vardı ya. Neyi yapalım? E-mail'ini yapalım. Şunları şöyle ayırayım. String, E-mail. Şurada bir keyword vardı hatırlarsanız. Transcine diye yazılan. Onunla beraber...
+
+344
+00:58:58,324 --> 00:59:20,944
+Şu e-maili oluşturalım. Ondan sonra kaydedelim ve tekrardan okumuşalım. Şimdi bunu görüyoruz. Bakalım nasıl olaylar cereyan edecek. Serileştirdikten sonra ona tekrardan bakıyorum. Yine bir iki şeye gireceğim. Aynı bilgileri gireyim. İstediğiniz gibi tabii ki giriş yapabilirsiniz. Ben şurayı sallıyorum. Çok daha uğraşmayın.
+
+345
+00:59:24,019 --> 00:59:28,019
+Kay dolduğunu söyledi.
+
+346
+00:59:29,619 --> 00:59:37,320
+Refresh dediğimde hala o dosyanın burada olduğunu görüyoruz. Son telefon numarasının değiştiğinden dosyanın değiştiğini görebiliyorsunuz aslında.
+
+347
+00:59:38,559 --> 00:59:45,280
+Çalıştırdığımızdaysa bakın Furkan Çakmak geldi, telefon numası geldi.
+
+348
+00:59:46,019 --> 00:59:51,119
+Şeyi de okumak istedim ama e-mail'i girmiştim. O objenin içerisinde vardı.
+
+349
+00:59:51,119 --> 00:59:57,119
+Fakat serileştirilip dosyanın içerisinde kaydedilmesini istemediğim için...
+
+350
+00:59:57,619 --> 01:00:10,160
+ifadesini kullanmıştım. O yüzden null olarak döndürdü. İntecir olsa muhtemelen 0 falan döndürdü derhalde. Ben tam ne döndürdüğünü bilmiyorum ama sizin set ettiği değeri yazmıyor hiç diske. Onu söylemek isterim.
+
+351
+01:00:12,000 --> 01:00:14,240
+Evet. Buraya kadar soru soran arkadaşımız var mı?
+
+352
+01:00:21,619 --> 01:00:40,920
+Her şey çok yanlış oluyor demek ki. Bir ara verelim arkadaşlar. Ondan sonra bir de inner classları anlatacağım. O da çok sürmez. Bir yarım saate bitiriyoruz onları da. On geçe, değil mi? 57 geçiyor. On geçe burada olalım. Kalan kısma devam ediyor. On geçe.
+
+353
+01:14:11,859 --> 01:14:14,299
+Evet, tekrardan merhaba arkadaşlar.
+
+354
+01:14:17,039 --> 01:14:20,279
+Şöyle ekranımızı paylaşarak devam ediyor olalım.
+
+355
+01:14:21,119 --> 01:14:23,259
+Ha, şimdi dosyalarla ilgili işlemler böyle.
+
+356
+01:14:23,979 --> 01:14:35,779
+Hani siz bolca evde oturup bununla ilgili örnek yaparsanız bu canlı dosya oluşturup, kişi klasörler oluşturup klasörlerin işlemi dosyalara ekleyip.
+
+357
+01:14:36,047 --> 01:14:45,487
+veya işte dosyaların içerisinde kaldığı yerden tekrarmaya devam eden üstü işlem gerçekleştirebilir misiniz? Bu konuda bibliotek kazanmış olursunuz.
+
+358
+01:14:46,028 --> 01:14:48,747
+Menfaatiniz de olur diye ümit ediyorum.
+
+359
+01:14:49,487 --> 01:14:58,807
+Şimdi inner class'lar dediğimiz class'lar var. Özellikle thread'leri ve GUI'leri anlatmanın önce bu konuyu anlatmam gerekiyor.
+
+360
+01:14:58,927 --> 01:15:01,028
+Çünkü orada çok sık kullanılan yakılar bunlar.
+
+361
+01:15:01,555 --> 01:15:23,915
+Inner class dediğimiz şey bir sınıfın içerisinde başka bir sınıf tanımlanması. En temel bakıldığında bu şekilde söyleyebiliriz. O ana sınıfa outer class, o outer class'ın içerisinde yazılan yeni sınıfaysa inner class diyoruz.
+
+362
+01:15:23,915 --> 01:15:29,055
+Pekala inner class'ın avantajları veya özellikleri neler? Onlara bir bakıyorum.
+
+363
+01:15:29,136 --> 01:15:29,435
+Olovo.
+
+364
+01:15:30,515 --> 01:15:43,335
+Inner class'ın içerisinde private olsalar bile outer class'ın tüm attribütlerine erişim gerçekleştirebiliyoruz. Böyle bir yapısı söz konusu.
+
+365
+01:15:43,335 --> 01:15:58,335
+Fakat dışarıdan bakıldığında da bu pakette olmayan diğer sınıflardan erişim sağlamak istendiğinde de bu sınıfın altında başka bir sınıfın olduğu bilgisi doğrudan.
+
+366
+01:15:58,515 --> 01:16:03,536
+Erişirebilir, gözlemlenebilir bir bilgi olmamış oluyor.
+
+367
+01:16:03,536 --> 01:16:11,615
+Ve yine temelde bakıldığında bizim inner class'ımızın ismi gizli kalmış oluyor.
+
+368
+01:16:12,075 --> 01:16:22,536
+Herhangi bir şekilde isimlendirme, özellikle multi-tredik ve kuyu kısmı yaptığımız durumda isimlendirmeye ihtiyaç olmadan bu işi gerçekleştirebiliyoruz.
+
+369
+01:16:23,495 --> 01:16:26,515
+Önümüzdeki haftalarda bu konuları sizlerle beraber.
+
+370
+01:16:26,515 --> 01:16:28,515
+Bu konuda işliyor olacağız.
+
+371
+01:16:29,376 --> 01:16:31,335
+Pekala ne yapalım diyoruz.
+
+372
+01:16:31,515 --> 01:16:35,456
+Statik bir metod, inner class içerisinde tanımlayamıyoruz.
+
+373
+01:16:35,595 --> 01:16:38,655
+Bunun da bilgisini böylece vermiş olalım.
+
+374
+01:16:38,995 --> 01:16:43,655
+Şimdi bununla ilgili de çeşitli örnekler gösteriyor olacağım.
+
+375
+01:16:43,835 --> 01:16:49,715
+O yüzden yine eklepsi sizinle paylaşıyor olayım.
+
+376
+01:16:50,484 --> 01:17:06,484
+Şimdi 13'dir herhalde orada, 13'den itibaren. Bakın bir tane Herson Plosum var. Bunun bir ismi var, bir de constructor var. Bunlar bildiğimiz şeyler. Herson sınıfının içerisinde...
+
+377
+01:17:07,188 --> 01:17:34,968
+Private tipinde bir employee sınıfı oluşturuyorum. Inner class'a başlıyorum. Onun da bir maaşı var, onun da bir constructori var, işte setörleri, yetörleri var, stringi var. Bakıldığında şu başlı başına bir sınıfmış gibi temelde duruyor. Ama person sınıfının içerisinde inner bir sınıf, alt bir sınıf nasıl kullanıldığını, ne tarz özelliklerinin olduğunu görüyor olacağız. Private olarak adam.
+
+378
+01:17:35,188 --> 01:17:49,248
+tanımladığım anda bu paketin içerisinde olmayan başka paketlerden person sınıfına erişilebilir ama person sınıfının altında bulunan employee sınıfına person'a erişmeler, erişim gerçekleştirilemez. Onu söylemiş oluruz.
+
+379
+01:17:49,248 --> 01:17:50,288
+Peki, halen nasıl bir?
+
+380
+01:17:51,412 --> 01:18:19,372
+Kullanımı var. Ona bakalım dilerseniz. Yani sanki böyle kalıtımla da yaptığımızda da ne oluyordu? Üst sınıfın, süper classın çeşitli attribütlerini ve metotlarını subclasslarda kullanabiliyorduk. Benzer bir yapı temelde bakıldığında. Şimdi bir employee dizisi, üç elemanlı bir employee dizisi oluşturmuşum.
+
+381
+01:18:19,412 --> 01:18:41,992
+Employee bakın, bir inner class. Ardından bir person oluşturuyorum. Bu person da bizim alpha class'ımızdı. İsmini verdim bu kişi, person da diye. Nasıl tanımladığına lütfen dikkat edin. New anahtar sözcüğünü falan nasıl kullanıldığından dikkat edin.
+
+382
+01:18:47,412 --> 01:18:59,412
+içerisine maaş bilgisini vererek tanımlıydım. Employee 10.000 neyse, staff 0'ın içerisine yazıyorum. Bakın, bu kavramı belki şimdiye kadar görüp...
+
+383
+01:19:00,212 --> 01:19:06,932
+Yani baktığınız Java kodlarına karıştırdığımız kodlarla görüp tam olarak ne yapmak istediğini anlamamış olabilirsiniz.
+
+384
+01:19:07,292 --> 01:19:12,572
+Burada tam olarak yapılmak istemilen şey bir author sınıfım var, bir inner sınıfım var.
+
+385
+01:19:13,012 --> 01:19:15,572
+Author sınıfımdan bir obje tanımlamışım.
+
+386
+01:19:15,952 --> 01:19:24,372
+Ardından onun içinde olan inner sınıftan da tabii ki constructor'ımı kullanarak yine bir obje tanımlıyorum.
+
+387
+01:19:24,512 --> 01:19:26,072
+Şunun çiftlisi bize ne olacaktır?
+
+388
+01:19:26,072 --> 01:19:27,852
+Bir employee objesi verecek.
+
+389
+01:19:28,212 --> 01:19:39,012
+Onu staff 0'ın içerisine koyuyorum. Ardından başka bir kişi daha oluşturmuşum. Staff 1'in içerisine koymuşum. Başka bir kişi daha oluşturmuşum. Staff 2'nin içerisine koymuşum.
+
+390
+01:19:39,444 --> 01:19:51,924
+Sonra for each döngüsüyle dolaşıp put string metodlarını çalıştırdığında her birisinin öncelikle gördüğümüz gibi ismi ardından maaş bilgisi var.
+
+391
+01:19:52,204 --> 01:19:59,924
+Yani şurada gördüğümüz name aslında author sınıfın attributu. Biz buna buradan erişebiliyoruz. Kendi attributu olan.
+
+392
+01:20:00,000 --> 01:20:03,940
+Saberi'ye zaten erişmekle ilgili herhangi bir problemi yok.
+
+393
+01:20:04,399 --> 01:20:14,860
+Dikkat etmenizi istediğim hususlardan birisi buradaki name private olmasına rağmen inner sınıfta buna erişim sağlayabiliyoruz.
+
+394
+01:20:14,860 --> 01:20:27,600
+Pekala ben inner ve outer sınıfı yazdığım bu person class'ının içerisinde main metodu kalmadım. Böyle olmak zorunda mı?
+
+395
+01:20:28,000 --> 01:20:45,399
+Hayır, farklı farklı şimdi örnekler yapalım buna dair. Yine bir person sınıfım var. Employee sınıfım aynı şekilde kurgulanmış. Benim main metodun ise başka bir sınıfın içerisine yazıldığını düşünelim.
+
+396
+01:20:45,615 --> 01:21:03,296
+Artık sınıf değişiyor. Yani main numberta. Aynı işlemi burada da aynı şekilde gerçekleştirebiliriz. Yani bir person oluşturup bundan alt sınıfı, inner sınıfını, constructorını kullanarak bir alt sınıf oluşturabiliriz.
+
+397
+01:21:03,296 --> 01:21:08,296
+Yani bakıldığında bunu benzer bir şekilde...
+
+398
+01:21:08,595 --> 01:21:12,015
+Kalıtım ilişkisi kurarak da yapabiliriz.
+
+399
+01:21:12,195 --> 01:21:22,355
+Ama özellikle ben alt sınıfın ne şekilde isimlendirmem gerektiğiyle uğraşmamam gereken çeşitli yapılar kullanacağız.
+
+400
+01:21:22,536 --> 01:21:28,195
+GUI'ler yaparken özellikle o zamanlarda çok sık bunları kullanıyorum diyeceğiz.
+
+401
+01:21:28,575 --> 01:21:33,615
+Bunu da çalıştırdığımızda bize aynı sonucu verdiğini görebiliyoruz.
+
+402
+01:21:33,615 --> 01:21:36,575
+Bununla ilgili bir tane daha örneğimiz vardı.
+
+403
+01:21:36,595 --> 01:21:38,915
+Ona da bakalım orada ne yapmışız.
+
+404
+01:21:40,855 --> 01:21:43,175
+Yine person sınıfımız var.
+
+405
+01:21:43,175 --> 01:21:57,415
+Person sınıfının içerisinde bakın bir tane person sınıfının içerisinde kendi inner sınıfı olan bir sınıftan bir attribute üretilmiş durumda.
+
+406
+01:21:58,131 --> 01:22:06,851
+Person sınıfının içerisinde kendi ina sınıfı olan employee ile bir attribute üretilmiş durumda.
+
+407
+01:22:06,851 --> 01:22:08,851
+Ardından constructor var.
+
+408
+01:22:10,051 --> 01:22:14,771
+İşte enlist diye bir metodu söz konusu.
+
+409
+01:22:15,271 --> 01:22:22,851
+O employee'nin constructorını çalıştırarak ya maaşını verdiğiminde o employee'nin constructorını...
+
+410
+01:22:23,731 --> 01:22:28,131
+Çağıran ve bunu set eden bir metot gibi düşünüyoruz.
+
+411
+01:22:28,471 --> 01:22:30,871
+To-seed-link dediğimizde ise adamın adını yazıyor.
+
+412
+01:22:31,032 --> 01:22:37,551
+Eğer ki Endless metodu çağırdık, Employee set olmuşsa onun da maaş bilgisini ekrana yazıyor.
+
+413
+01:22:37,791 --> 01:22:39,711
+Employee'de herhangi bir değişiklik yok.
+
+414
+01:22:40,092 --> 01:22:42,391
+Bakın bu bilgi de enteresan bir bilgi.
+
+415
+01:22:42,511 --> 01:23:10,511
+En nihayetinde ben employee'yi bambaşka harici bir class yapsaydım o class'ı attribute olarak burada kullanabilirdim. Bir ilişki kurabilirdik burada sınıflar arasında. Fakat kendi inner sınıfımından bir obje üreterek onun konstantlarında ilklendirebileceğim bir metot oluşturarak bu iş.
+
+416
+01:23:10,511 --> 01:23:21,491
+Bu konuda gerçekleştire de bildiğimi görmüş oluyorsunuz. Yine main metodu geldiğimizde farklı bir sınavın içerisinde bir insan oluşturulmuş.
+
+417
+01:23:22,051 --> 01:23:32,351
+Bir person, üç elemanları person listi oluşturulmuş. Daha sonra o person listinin, person'ın, constructor kullanılarak ilklendiriliyor.
+
+418
+01:23:32,351 --> 01:23:38,031
+Ve bakın en list metodu kullanılarak parametresi set ediliyor. Bu person.
+
+419
+01:23:38,612 --> 01:23:55,612
+end list metodu kullanarak parametresi set ediliyor. Dikkat etmenizi istiyorum. Hani bakıldığında staff da person, end list, hani set edebileceğim o salary de aslında temelde...
+
+420
+01:23:55,988 --> 01:24:03,908
+Person'a doğrudan ait bir şey değil. Salary, employee'nin değeriydi. Fakat o da burada saklanmış durumda.
+
+421
+01:24:04,288 --> 01:24:13,368
+Yani aslında employee üzerinden işler ceyari yani diyor. Fakat ortada employee memployee hiç görebilir bir şekilde yok.
+
+422
+01:24:13,488 --> 01:24:20,087
+Bu şekilde de gizleyebiliyorsunuz. Çalıştırdığımız aynı şekilde sonuçların döndüğünü görebilirsiniz.
+
+423
+01:24:20,787 --> 01:24:23,707
+Bu noktaya kadar soru soran arkadaşımız var mı?
+
+424
+01:24:24,307 --> 01:24:26,688
+Inner class'larla ilgili.
+
+425
+01:24:26,867 --> 01:24:37,067
+Dediğim gibi hem threadleri kullanırken, önündeki haftalarda hem de GUI'leri anlatırken, grafik yüzyılırı, interfazları anlatırken bunları bolca kullanıyor olacağız.
+
+426
+01:24:41,524 --> 01:24:48,423
+Yok, zanlıca. Soru olmadan da tabii işler çok hızlı ilerliyor.
+
+427
+01:24:50,043 --> 01:24:56,304
+Evet, bugünü burada noktalandırıyoruz. Böylece o zaman. Madem sorunumuz yok.
+
+428
+01:24:56,463 --> 01:25:00,264
+Önümüzdeki hafta yine kaldığımız yerden devam ederiz.
+
+429
+01:25:01,404 --> 01:25:08,264
+Bir hafta böyle konular bir sıkışmış olacak. Bu hafta yoğun ders alınıyor. Bir hafta unutamadık ya. Onu da bir sıkıştırırız.
+
+430
+01:25:09,300 --> 01:25:11,620
+Eksiğimizi kapatırız diye ümit ediyorum.
+
+431
+01:25:12,880 --> 01:25:16,760
+Soracak sorularımız yoksa bugünlük dersi burada noktalandırıyor olacağım.
+
+432
+01:25:18,980 --> 01:25:19,500
+Hocam.
+
+433
+01:25:20,360 --> 01:25:21,120
+Evet, buyurun.
+
+434
+01:25:21,980 --> 01:25:25,700
+Bu hafta veya önümüzdeki hafta sınav sorularına bakma şansımız olur mu?
+
+435
+01:25:26,960 --> 01:25:27,840
+Çözümlerine.
+
+436
+01:25:28,600 --> 01:25:30,980
+Sınav zaten soruları testti.
+
+437
+01:25:31,340 --> 01:25:32,860
+Gelirseniz bakabilirsiniz.
+
+438
+01:25:33,060 --> 01:25:35,020
+Online göstermek istemiyorum doğrudan.
+
+439
+01:25:35,412 --> 01:25:57,752
+Bu noktada. Yani şöyle bir sınav okusumuz var. Zaman zaman bu sınav sorularının farklı parametre indeyse tekrar tekrar soruyoruz. Açıkçası. O yüzden yani benim randevu sistemim var biliyorsunuz. Gelirseniz sizin cevaplarınız üzerinden de geçelim. Detaylı bir şekilde hepsini konuşabiliriz yani. O manada bir sıkıntı yok.
+
+440
+01:25:58,211 --> 01:25:59,891
+Tamamdır hocam. Teşekkür ederim.
+
+441
+01:26:00,391 --> 01:26:01,252
+Ben teşekkür ederim.
+
+442
+01:26:01,939 --> 01:26:04,199
+Başka soru soran arkadaşım var mı?
+
+443
+01:26:07,636 --> 01:26:11,396
+Kendinize iyi bakın. Sağlıcakla kalın. Önümüzdeki hafta görüşürüz arkadaşlar.
+
+444
+01:26:13,096 --> 01:26:13,996
+İyi günler hocam.
+
+445
+01:26:14,336 --> 01:26:14,935
+İyi günler.
