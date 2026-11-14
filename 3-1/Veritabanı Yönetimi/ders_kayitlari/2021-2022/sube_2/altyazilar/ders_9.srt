@@ -1,0 +1,1119 @@
+1
+00:01:55,188 --> 00:01:55,927
+Merhaba, John.
+
+2
+00:02:01,299 --> 00:02:02,700
+Efendim, şimdi size nasıl yaptın?
+
+3
+00:02:04,219 --> 00:02:05,640
+Tamam, teşekkür ederim hocam.
+
+4
+00:02:05,879 --> 00:02:07,479
+Rica ederim, iyi dersler, görüşmek üzere.
+
+5
+00:07:00,180 --> 00:07:07,680
+Merhaba arkadaşlar, selamlar. Ufaktan başlayalım. Şöyle ekranı paylaşayım.
+
+6
+00:07:10,420 --> 00:07:15,139
+Şimdi önce şu projeleri konuşalım. Bu duyuruyu görmüşsünüzdür.
+
+7
+00:07:16,319 --> 00:07:22,360
+Yani ders kapsamında bir proje yapmanız bekleniyor. Bu projeler 3 kişilik olacak.
+
+8
+00:07:24,564 --> 00:07:32,984
+Onun için de hani biz kim kimle grup olmak istiyor o bilgiyi almamız lazım. Bunun için de şeyi uygulamıyoruz. Google Form üzerinden bunu toplamayı.
+
+9
+00:07:34,424 --> 00:07:43,044
+Şuradan girip bilgilerinizi dolduruyorsunuz. Tek kişiyseniz ya da iki kişiyseniz de buradan dolduruyorsunuz ki kalan kişileri atayabilelim.
+
+10
+00:07:44,324 --> 00:07:49,044
+Yarın son hani bunu kaydı dinleyecek varsa şeyden sonra.
+
+11
+00:07:50,228 --> 00:07:57,567
+Buradan bilgisini girmeyen proje alamamış olacak. Şuradan bir girelim. Bayağı da zaten giriş yapılmış.
+
+12
+00:08:03,732 --> 00:08:15,792
+Kırk bir diyor. Zaten QIYS'e de bir kırk kişi gelmişti. Herkes yapmış herhalde. Yani ilgilenen. 50 küsur kişi alsa da. Tamam.
+
+13
+00:08:16,532 --> 00:08:22,072
+Onun haricinde biraz şeyin ayrıntılarından bahsedeyim projenin. Yani ne bekliyoruz, nasıl bir şey olacak.
+
+14
+00:08:23,592 --> 00:08:30,932
+Şimdi sabit projeler olacak. Hani nasıl diyeyim, hastane yönetim sistemi, envanter takip sistemi işte böyle bir şey gibi bunlar.
+
+15
+00:08:31,411 --> 00:08:35,192
+Hazır tanımlı olacaklar ve gruplara rastgele atanacaklar.
+
+16
+00:08:36,471 --> 00:08:46,031
+Burada bazı şeyler de söyleyeceğiz. En az şu kadar tablo olsun, programın yapacağı işlevleri de belirteceğiz.
+
+17
+00:08:47,231 --> 00:08:52,891
+Bu istenen uygulamayı istediğiniz programlama dilinde kodlayabileceksiniz. Programlama dili kısıtımız yok.
+
+18
+00:08:53,251 --> 00:08:55,491
+İşte Java ile yapmak ya da şunu yapmak zorunda değilsiniz.
+
+19
+00:08:57,299 --> 00:09:01,799
+Ama veritaban olarak bu işte labda gördüğümüz PostgreSQL'i kullanmanızı istiyoruz.
+
+20
+00:09:04,620 --> 00:09:09,939
+Onun harici böyle bir de şey olacak. Hani konsoldan yazılım olduğu çalışıyor gibi değil de.
+
+21
+00:09:11,480 --> 00:09:14,980
+Nasıl denir? Hani bir arayüzü olacak. Böyle bir şeyler görmesi lazım.
+
+22
+00:09:15,299 --> 00:09:19,879
+Tabii yani bir ara proje veya işte yazılım mühendisliğindeki sistem analizindeki kadar da bir proje değil.
+
+23
+00:09:20,879 --> 00:09:22,799
+Yani basit böyle yapabileceğiniz bir şey.
+
+24
+00:09:23,572 --> 00:09:24,932
+Vakitte var zaten.
+
+25
+00:09:26,831 --> 00:09:29,152
+Öyle bu projelerle ilgili sorusu olan var mı?
+
+26
+00:09:29,612 --> 00:09:30,591
+Detayıyla, şeyle ilgili.
+
+27
+00:09:30,711 --> 00:09:33,451
+Zaten hani projeler açıklandığına da şey olmuş olur.
+
+28
+00:09:34,591 --> 00:09:37,792
+Nasıl diyeyim daha ayrıntılar netleşir, sizin de kafanızda netleşir.
+
+29
+00:09:41,908 --> 00:09:44,347
+Hocam, ben minik birkaç şey sorabilir miyim ya?
+
+30
+00:09:44,788 --> 00:09:45,768
+Tabii sorabilirsin.
+
+31
+00:09:46,168 --> 00:09:52,488
+Biz grup 3'teyiz ama 3. arkadaşımız bizim grup 2'de mesela böyle şeyler falan sıkıntı olmuyor değil mi?
+
+32
+00:09:52,847 --> 00:09:56,268
+Yok, isteyen istediği grupla grup arkadaşı olabiliyor.
+
+33
+00:09:56,768 --> 00:10:04,427
+Tamam, bir de bir şey daha soracağım. Bir telefonun içinde çalışan bir database uygulaması gibi bir şey mi istiyorsunuz tam olarak? Nasıl olacak?
+
+34
+00:10:05,528 --> 00:10:08,368
+Telefonun içine derken mobil olmasına gerek yok.
+
+35
+00:10:09,107 --> 00:10:10,847
+Web olur yani değil mi?
+
+36
+00:10:11,847 --> 00:10:18,548
+Web olur, web olmasına da gerek yok. Yani web olabilir, tamamen kabuller ama normal masaüstünde çalışan bir şey de olabilir.
+
+37
+00:10:19,887 --> 00:10:24,847
+Tamam, yani hepsi kabulünüz olacak değil mi? Yeter ki çalışsın.
+
+38
+00:10:25,847 --> 00:10:26,807
+Evet, biraz öyle.
+
+39
+00:10:27,528 --> 00:10:31,667
+Bir de bize gösterebileceğiniz bir örnek var mıdır projelerden?
+
+40
+00:10:32,887 --> 00:10:35,507
+Şu an yok ama öbür laba bakabilirim.
+
+41
+00:10:36,275 --> 00:10:39,716
+Ya da aslında ufak bir şey var da neyse.
+
+42
+00:10:40,795 --> 00:10:42,695
+Göstersen, işten almaz hocam ya.
+
+43
+00:10:42,775 --> 00:10:45,275
+Tamam, dersin akışı içerisinde açacağım onu.
+
+44
+00:10:46,255 --> 00:10:51,735
+Şey, istediğiniz dili kullanabiliyorsunuz dediğim gibi ama şey, veritabanı PostgreSQL olacak.
+
+45
+00:10:52,935 --> 00:10:57,955
+Bu, bu kadar. Onun harici derse geçelim. Başka diyeceğim bir şey var mıydı?
+
+46
+00:10:58,316 --> 00:11:01,255
+Son minik bir şey daha soracağım hocam. Ödev ne kadar süreli olacak?
+
+47
+00:11:02,535 --> 00:11:03,275
+Ödev...
+
+48
+00:11:05,652 --> 00:11:17,652
+Yani tahmini konuşuyorum. Açıklandığı final haftasından önceki hafta, yani o zamana kadar olur. Yani finallerden önceye olur diye tahmin ediyorum.
+
+49
+00:11:18,752 --> 00:11:21,592
+Peki ayrıca sunum hazırlamamız gerekecek mi?
+
+50
+00:11:23,112 --> 00:11:27,572
+Ya şöyle olacak, projeyi yapacaksınız. Ondan sonra sunacaksınız hangi hocaya renk gelirse.
+
+51
+00:11:29,395 --> 00:11:33,695
+O sunum artık sizde. Programın çalışmasını da gösterebilirsiniz, kodları da gösterebilirsiniz.
+
+52
+00:11:34,275 --> 00:11:37,855
+Yani diagramları gösterebilirsiniz. Atıyorum bir 10-15 dakika bir sunum olacak.
+
+53
+00:11:38,836 --> 00:11:39,076
+Tamam.
+
+54
+00:11:39,556 --> 00:11:43,415
+Sunum dediğim, PowerPoint olabilir, olmaya da bilir. O size bağlı.
+
+55
+00:11:44,415 --> 00:11:47,955
+Ama programın çalıştığını gösterip bir şekilde öyle bir kontrol olacak işte.
+
+56
+00:11:48,556 --> 00:11:50,015
+Tamam hocam, teşekkür ederim.
+
+57
+00:11:50,495 --> 00:11:51,235
+Rica ederim.
+
+58
+00:11:53,935 --> 00:11:56,655
+Şöyle açalım, şunları biraz sağa çekelim.
+
+59
+00:11:58,004 --> 00:12:09,864
+Tamam, şimdi bu dersler ne göreceğiz? Hep biz veritabanını bu pgadminden açıyorduk, kodumuzu yazıyorduk. Yani aşağıda da tablomun sonuçları çıkıyordu. Şöyle açalım hattı.
+
+60
+00:12:14,548 --> 00:12:27,008
+Yani onu görüntülüyorduk. Ama bunun asıl şeyi, bir programlama dilinin esnekliğini düşünün, bütün forlar ve her şeyle, oradan ona bağlanıp bir şeyler yapmak çok daha efektif olacaktır.
+
+61
+00:12:27,567 --> 00:12:30,888
+Yani çok büyük esnekliği sağlayacak ve istediğimizi yapabilmemizi sağlayacak.
+
+62
+00:12:31,316 --> 00:12:44,536
+Ama ikisi arasında direkt bir bağlantı yok. Bu kendi kendine bir şey. Burada çalışan bir program. Bir de programlama dillerimiz var. Ayrı, compile ediliyor, skip veya çalışıyorlar. Bunlar arasında bir bağlantıyı göreceğiz. Bunu da Java dilinde göreceğiz. Şurada şifre mizilelim.
+
+63
+00:12:47,355 --> 00:12:48,916
+3, 3, 4 dedim. 1, 2, 3 olacak.
+
+64
+00:12:51,736 --> 00:12:56,956
+Burada server diyor. Tamam, şunu bir açalım. Geçen haftayı tekrar edeceğiz.
+
+65
+00:12:58,227 --> 00:12:59,247
+OKRU, TOOL diyelim.
+
+66
+00:13:02,407 --> 00:13:07,927
+Şimdi, ilk olarak bir geçen hafta olmuyor aslında, birkaç haftalığı geçen labı hatırlayalım.
+
+67
+00:13:09,927 --> 00:13:15,407
+Proje ne diyor? Ortalama 30 saatten fazla çalışılan projelerin isimlerini alfabetik olarak istediğine sorguyu yazınız diyor.
+
+68
+00:13:17,227 --> 00:13:22,227
+Şimdi, nasıl yapıyorduk? Bir SELECT, FROM, LER, biraz peşin peşin yazıyordum ben.
+
+69
+00:13:24,884 --> 00:13:26,604
+Soruyu da unutuyorum, nasıl yapacağız?
+
+70
+00:13:36,275 --> 00:13:38,275
+Proje isimlerini diyor, demek ki PNNM olacak.
+
+71
+00:13:40,555 --> 00:13:42,596
+Tamam, bu proje isimleri nerede?
+
+72
+00:13:45,855 --> 00:13:47,215
+Şuradan bakalım, şurada.
+
+73
+00:13:48,475 --> 00:13:49,995
+Demek ki projek tablosu olacak.
+
+74
+00:13:53,076 --> 00:13:57,895
+Bir de 30 saatten fazla demiş, bu çalıştığı saat bilgisi de lazım, o da şu Workzone tablosundan.
+
+75
+00:14:02,259 --> 00:14:04,259
+O yüzden Workson tablosunu da kullanacağım.
+
+76
+00:14:08,692 --> 00:14:16,692
+Şimdi iki tablo kullandığına göre bunları birleştirmem lazım. Neye göre birleşiyor bunlar? Project Number'ına göre birleşiyor. Bunlar PNUMBER, bunlar PNEO.
+
+77
+00:14:16,692 --> 00:14:27,692
+Şimdi ortalama 30 saatten fazla dediğim, şöyle şurada mesela 61 numaralı projede bir 40 saat çalışmış.
+
+78
+00:14:27,692 --> 00:14:33,515
+Bu projede ortalama kaçsa bu böyle devam ediyor. Başka bir yerde 30 mesela. Bir ortalaması var.
+
+79
+00:14:34,067 --> 00:14:53,548
+Bunu alacağım ama direkt şöyle AVG diye verden sonra yazamıyordum. Bu atıyorum, salari değil de hani şöyle bir şey yazamıyordum yani. Buraya araya bir GROUP BY'den sonra bu şeydi, HAVING'den sonra yazabiliyordum. Şimdi ona bakacağız.
+
+80
+00:14:53,936 --> 00:15:02,056
+Bir de ortalama 30 saat dediği için, bunlar da ayrı ayrı ya, bir tane şey yok, bir projede birden fazla kez rakam var, bunların bir gruplanması lazım.
+
+81
+00:15:02,696 --> 00:15:10,956
+Yani bu 61'in yanındaki bunların ortalamasından bahsediyor soru. O yüzden bir proje neyimine göre gruplayalım, büyük yazalım.
+
+82
+00:15:15,604 --> 00:15:42,824
+Şimdi o dediğim şey şartını yazabiliriz. Burada da HAVING diyordum. Ondan sonra AVERAGE, şey neydi? AOURCE olarak tutuluyormuş. Bunun 30'dan büyük olmasını istiyor. Bir bakıyorum şöyle bir şey var mı? Bir şöyle bir çalıştıralım. Tamam, bir de bunun alfabetik olarak olmasını diyor. Onu da ORDER BY komitülü ödüyor.
+
+83
+00:15:43,731 --> 00:15:53,891
+Direkt normal yazdığımızda zaten alfabetik oluyordu. Ters olmasını istiyorsak da şöyle bir şey yazıyorduk. Ama bizde bu kadar lazım. O yüzden şöyle çalıştırmış olduk.
+
+84
+00:15:55,411 --> 00:16:09,891
+Bu geçen haftaydı. Şimdi burada da zaten çözümümüz var. Bu hafta bu nasıl okunuyor bilmiyorum da JDBC ile Java'ya bağlanacağız. Ve bu Java programıyla bizim bu...
+
+85
+00:16:10,004 --> 00:16:14,063
+PostgreSQL'imize, tablolarımıza erişip sorgular yapmayı göreceğiz.
+
+86
+00:16:16,703 --> 00:16:23,524
+Şimdi, bir Java Client'ı ile veritabanı server arasında iki bağlantıyı kurardır, iletişimini yapardır.
+
+87
+00:16:23,583 --> 00:16:30,563
+Şimdi Java Client'ı şu, bizim yazdığımız bu konsolda çıktısına baktığımız, for iffile atama işlemlerini yaptığımız şey o Client.
+
+88
+00:16:31,323 --> 00:16:34,484
+Veritabanı server da bu, bakın burada server diyor, bunun için de PostgreSQL var.
+
+89
+00:16:35,379 --> 00:16:40,179
+Bu clientten bu servera bir istek atacağız, bilgi alacağız, bilgi işleyeceğiz.
+
+90
+00:16:40,639 --> 00:16:43,319
+Şimdi serverımız bir tane ama clientımız birden fazla olabilir.
+
+91
+00:16:44,299 --> 00:16:47,019
+Bir servera birden fazla client istekte bulunan bir yani.
+
+92
+00:16:48,759 --> 00:16:55,100
+Bir de bu server aslında bizim şu an X'de, benim bu bilgisayarda ama bu başka bir bilgisayarda da olabilirdi.
+
+93
+00:16:55,699 --> 00:16:58,379
+Bu bilgisayarlar birbirine bağlıdır, bu server başka bir bilgisayarda da.
+
+94
+00:16:58,879 --> 00:17:00,819
+Veya tabii o da başka bilgisayarda olmuş oluyor da.
+
+95
+00:17:01,395 --> 00:17:28,476
+Bu internette başka bir yerde de olabilir. Yani bu server Fransa'da da yer alıyor olabilir. Ben buradan ona internet üzerinden bir istik atıyor olabilir. Ama iki tane ayrı şey var burada. Bir çalışkan bizim programımız yazdığımız şey, Client, bir de veritabanı serverı. Tamam, şimdi bu ikisi arasında bir bağlantı kuracağız. Bunu da açık kaynaklı bir kodla GDB, CLAB resmi yazmışlar. Biz de bunu kullanarak, bunun sağladığı metotlar, fonksiyonlar, classlar.
+
+96
+00:17:29,395 --> 00:17:34,455
+Neyse, o bağlantıyı sağlayacağız. Şimdi bunu şuradan indirebiliriz. Bunu bir açalım.
+
+97
+00:17:35,775 --> 00:17:44,715
+Şu, zoom şeyinden nereye gitti, göremiyorum. Böyle bir sayfa geliyor. Bunu işte current versiyonu deyip, şuraya attı. Şuradan indirebilirsiniz.
+
+98
+00:17:46,415 --> 00:17:53,875
+Bunu, hani, CR dosyası çalıştırılabilir olduğu için böyle bir şey diyor ama, güvenilir zaten açık kaynaklı. Bu şekilde indirebilirsiniz.
+
+99
+00:17:55,827 --> 00:18:03,508
+Şimdi, mesela Ceva bir tane projesini açalım. Bunu oraya yüklemeye çalışacağız. Şöyle lap 5 diyelim.
+
+100
+00:18:07,763 --> 00:18:08,763
+index diyelim.
+
+101
+00:18:11,763 --> 00:18:12,763
+modül istemeyelim.
+
+102
+00:18:16,948 --> 00:18:19,268
+Yani bir çalışıyor mu diye bir sınıf yazalım.
+
+103
+00:18:38,771 --> 00:18:41,851
+Deneme diye yazdırır. Demek ki tamam, EJava çalışıyor.
+
+104
+00:18:42,851 --> 00:18:46,271
+Şimdi bunun şöyle önceden yazılmış kodlar var. Şuradan açalım.
+
+105
+00:18:47,771 --> 00:18:48,971
+Şu konsola girelim.
+
+106
+00:18:53,236 --> 00:18:56,516
+Şu şey bir, tam kopyalasın.
+
+107
+00:18:59,456 --> 00:19:04,296
+Şimdi, kullanacağımız şeyi daha yüklemedik, onu bir hata alalım diye önce şey yaptım.
+
+108
+00:19:04,416 --> 00:19:07,796
+Hatta şuraya da şöyle bir inelim, adım adım, bir şey olalım, burayı bir komentleyelim.
+
+109
+00:19:11,412 --> 00:19:33,632
+Şimdi, genelde sadece bu Java'da, PostgreSQL'de değil, bir veritabanına bağlanıyorsak bir connection string'imiz oluyor. Hani hangi veritabanına bağlanıyoruz, nerede, onun şifresi vs. Yani bir, nasıl diyeyim, connection string diye bir kavram var. Hani bu veritabanına bağlanacaksak, bu programımız boyunca böyle bir şey olacak, ona bağlanacağız, ona doğru girmemiz gerekiyor.
+
+110
+00:19:36,980 --> 00:19:44,300
+Şuraya kadar sabit zaten. Bundan sonra bir port numurası var. Bunu default olarak değiştirmediyseniz, key büyük ihtimalle değiştirmemişsinizdir.
+
+111
+00:19:45,079 --> 00:19:56,360
+5432 olarak geliyor. Bunu şuradan bir yerden bulabiliriz. Properties diyelim. Connection portumuz bu. Yani bu portta çalışıyor şu anda. Sonra bunu giriyoruz.
+
+112
+00:19:57,279 --> 00:19:59,980
+Sonra da veritabanımızın adını giriyoruz. Biz de şurada company...
+
+113
+00:20:00,000 --> 00:20:05,720
+gibi yazdığı için o kampanyayı, hadi şuna bağlanacak olsak, PostgreSQL yazacağız, buna bağlanacak olsak, Quest yazacağız.
+
+114
+00:20:07,380 --> 00:20:12,159
+Bir de yine programı kurarken bize kullanıcı adı şifre soruyordu, oradaki bilgileri, ona girmemiz lazım.
+
+115
+00:20:13,360 --> 00:20:19,539
+Ondan sonra bu şeyin içindeki bir nesne, connection nesnesinden, işte driver manager, get connection, bu stringimizi yazıyoruz.
+
+116
+00:20:19,539 --> 00:20:21,519
+Sonra kullanıcı adı şifremizi yazıyoruz.
+
+117
+00:20:22,800 --> 00:20:24,920
+Ve bağlanıyor olmamız lazım.
+
+118
+00:20:25,779 --> 00:20:42,420
+Şimdi burada alabileceğimiz biraz hataları ala ala gidelim. Şimdi bir ilk çalıştırdığımızda şöyle bir hata almayı bekliyoruz. Böyle bir driver bulunan mıklığı. Hani şurada indirdik ya ama sadece indirdik. Onu nereden bilecek yani? Bunu bir şekilde projeye dahil etmemiz lazım.
+
+119
+00:20:52,788 --> 00:20:58,248
+Sonra, add external, jord diyor. Hani bizim bu dışarıdan aldığımız bir şey olduğu için buna tıklıyoruz.
+
+120
+00:20:59,088 --> 00:21:05,008
+Buradan, şu daha eski bir versiyon, bu yeni indirmiş olduğumuz. Bunu kuralım.
+
+121
+00:21:06,088 --> 00:21:11,788
+Sonra, apply and close diyoruz. Hani bunu siz mesela Java'da yapmıyorsanız, başka...
+
+122
+00:21:12,115 --> 00:21:23,375
+Bir şey ekleyeceksiniz. Onu Google'a yazıp veya Eclipse kullanmıyorsanız, How to add external jor in NetBeans veya ne kullanıyorsanız onu yazıp bulmanız gerekiyor.
+
+123
+00:21:25,135 --> 00:21:28,855
+Tamam, şimdi sadece bunu ekledik. Şimdi çalıştırdığımızda bu hatayı almamamız lazım.
+
+124
+00:21:28,855 --> 00:21:33,715
+Çünkü bu sefer şeyi projeye dahil ettik.
+
+125
+00:21:34,316 --> 00:21:39,496
+Burada yanlış yaptım. Şuradan main'i çalıştırmam. Yok main'i de değil. Şunu çalıştırmam lazım.
+
+126
+00:21:43,316 --> 00:21:56,416
+Şimdi bu sefer, işte şifre, authentication hatası verdi. Çünkü benim şifrem [şifre], burada [şifre], onu da celtelim. Başka bile şu an çalışacak da şunu iki yapalım ki bir çalışmasın yine.
+
+127
+00:21:57,275 --> 00:22:04,336
+Hani bu yine ilk, yani bu tarz veri tabanına bağlanan bir projeyi ilk defa yapacak olsanız genelde şu aşamayı açtıktan sonra gerisi gelir.
+
+128
+00:22:04,819 --> 00:22:11,199
+O yüzden böyle biraz, yani şu an direkt çalışacak da hani böyle basit basit alabileceğiniz hataları göstermemizi istiyorum.
+
+129
+00:22:12,299 --> 00:22:16,379
+Burada da böyle bir garip taban yok diyor. Yani açık açık neyse yazıyor.
+
+130
+00:22:19,139 --> 00:22:22,440
+Tamam, bu kadardan itibaren çalışması lazım.
+
+131
+00:22:25,319 --> 00:22:28,960
+Tamam, şimdi program çalıştı. Hiçbir şey de yazdırmadığımız şey olduğu için şurada term-aid oldu.
+
+132
+00:22:29,172 --> 00:22:33,211
+Yani şu şeyle, şu veritabanı şu an bağlanmış olduk.
+
+133
+00:22:34,731 --> 00:22:35,852
+Bundan sonra...
+
+134
+00:22:40,660 --> 00:23:03,380
+Şimdi bir sorguyu buraya yazıyorduk. Buradan bir query editor açıyorduk. Sonucu da burada görüyorduk. Burada sorgumuz dolayısıyla string olarak olması gerekiyor. Şu üstteki sorumuzu okuyalım. Ne diyor? Database sistem tutuşu açısında çalışan kadın işlerin ad süreç ve maaşlarının listeleyin diyor. İşte bu sorgumuz, yani bunu zaten yapabileceğimiz bir şey.
+
+135
+00:23:03,827 --> 00:23:09,147
+Adı söyledi ve maaşlarını söylediği için first name, last name, salary demişiz.
+
+136
+00:23:11,407 --> 00:23:17,847
+Bu tabloları birleştirmek için sonun devamında ne diyor? Database projesini ne diyor?
+
+137
+00:23:18,768 --> 00:23:23,567
+Şurada projenin ismi var. Bu tablodan ismini, soy ismini yazdığım için de buraya gitmem lazım.
+
+138
+00:23:24,367 --> 00:23:28,927
+Buradan buraya gidebilmek için de bu tablodan PNO ile buraya, bu tablodan da buraya gitmem lazım.
+
+139
+00:23:29,460 --> 00:23:39,039
+Dolayısıyla bu üç tabloyu yazmışız buraya. Bunlara da bir de isim vermişiz. Alanları farklıysa vermemiz gerekiyor, değilse, ki bakıyorum değil galiba, vermesek de olurmuş.
+
+140
+00:23:40,400 --> 00:23:47,700
+Şimdi bu tabloları kullandığımız için bu tabloları birleştirdik. Daha sonra kadın işçiler dediği için, gençli kadın yaptık ve projenin isim dediği için o yaptık.
+
+141
+00:23:47,700 --> 00:23:53,639
+Burada sorgulacağımız query, yani şuraya yazdığımız şeyi buraya yazmış olduk.
+
+142
+00:23:54,675 --> 00:23:57,875
+İlk aşama buydu. İkinci ve üçüncü aşama şunlar.
+
+143
+00:24:11,412 --> 00:24:22,652
+Daha sonra bir tane statement nesnesi oluşturmamız gerekir. Bunu da bu oluşturduğumuz transaction nesnesi vardı. Bunu create statement diye bir şey oluşturuyoruz. Sonra bunun execute query metodu var.
+
+144
+00:24:25,072 --> 00:24:33,811
+Bunun içine bu query'imizi yazıyoruz. Bu bize bir şey dönüyor. Result set tipinde bir şey dönüyor. Buraya kadar çalıştıralım. Bir sorun var mı diye.
+
+145
+00:24:35,380 --> 00:24:52,940
+Şimdi, mesela bunun veritabanın verisini siz tasarladığınız için nasıl bir şey olabilir? Yani, bu sorgu boşta dönebilirdi. Yani, yok 100 tane satır da olabilirdi. Birden fazla kolon olabilirdi. Bunun içini şu şekilde yapmışlar. Bunun bir tane next diye bir metodu var. En kritik metot bu.
+
+146
+00:24:54,940 --> 00:24:56,480
+Bu sefer olacak mı bakalım.
+
+147
+00:24:59,440 --> 00:25:00,260
+Şimdi bu metot,
+
+148
+00:25:01,140 --> 00:25:08,220
+Şunu yapıyor. Bunu çağırdığınızda, bu ilk query'yi çalıştırdığınız artık, true ya da false dönüyor.
+
+149
+00:25:09,960 --> 00:25:18,160
+Şimdi bu true ya da false şöyle, true dönüyorsa diyor ki, birinci satırında bir veri var.
+
+150
+00:25:18,160 --> 00:25:27,280
+Yani true döndüyse, birinci satırda şey var, bir daha çağırdığınızda, bir daha true dönerse ikinci veri var, bir daha true dönerse üçüncü veri var, bir daha true dönerse de ödüncüdür.
+
+151
+00:25:27,604 --> 00:25:30,204
+Veri var. False dönerse, bundan sonra veri yoktur.
+
+152
+00:25:31,024 --> 00:25:39,324
+Turu bir kere döndükten sonra, bu AR'dan bu bilgileri almamız lazım. Şuradaki ilk tablo düşün. Yani şurada basit bir şey yapalım.
+
+153
+00:25:46,355 --> 00:25:53,655
+Şimdi böyle birden fazla tablo olacak. Mesela first name almak istiyorsak iki şekilde alabiliriz.
+
+154
+00:25:55,276 --> 00:25:59,495
+Bir get stringin içine o stringin ismin neyse onu yazıyoruz. Direkt b name.
+
+155
+00:25:59,495 --> 00:26:03,536
+Ya da şuraya direkt bir yazıyoruz. Yani birinci stringdakini getir şeklinde.
+
+156
+00:26:04,155 --> 00:26:07,576
+Buradaki veriyi ne olarak almak istiyorsak mesela string olarak alabiliriz.
+
+157
+00:26:08,403 --> 00:26:22,884
+işte double olarak almak için de double yazıyoruz basitçe. Bunu maaş sayı olduğu için double alabiliriz ama string alabiliriz. Yani şu da birebir çalışır. O yani maaşı sadece string olarak yazdırmış olur.
+
+158
+00:26:25,384 --> 00:26:26,564
+Şöyle inelim.
+
+159
+00:26:28,624 --> 00:26:29,244
+Tamam, şimdi
+
+160
+00:26:29,748 --> 00:26:37,508
+Birincisi için true dönüyor dedim ya, daha sonra istediğimiz verileri alıyoruz. Bunları işte bir değişkenlere tatık artık istediğimizi yapabiliriz.
+
+161
+00:26:37,508 --> 00:26:43,628
+Buradaki değişkenler buradaki ile aynı olmuş da bunlar tabii farklı da olabilir. Sadece isim vermek için anlaşılır olsun diye.
+
+162
+00:26:46,388 --> 00:26:52,847
+Böyle. Yani bu ne yapacak? Bu sorgunun sonuçlarını bir de vayel döngüsü olarak düşünürseniz.
+
+163
+00:26:53,200 --> 00:26:58,900
+İlkinde true döndü. Bütün bilgileri aldı yazdırdı. Bir daha çağırdığında ikincisi için true döndü. Yine bilgileri aldı yazdırdı.
+
+164
+00:26:59,279 --> 00:27:06,120
+Belli bir noktada false dönecek ve bu döngüden çıkmış olacak. O döngüden çıkma şartı da burada veri şeyi kalmaması.
+
+165
+00:27:08,519 --> 00:27:09,560
+Böyle bir çalıştıralım.
+
+166
+00:27:15,539 --> 00:27:40,259
+Yani sorgun cevabında iki tane örnek varmış. İsimleri bunlarmış, maaşları da bunlarmış. Bir de bu şeyleri çalıştırdıktan sonra statementımızı ve connectionımızı kapatmamız gerekiyor. Yani veritabanından sürekli bağlık almamızın da sakıncaları var. Hani bu normal programlamadaki dosyaları kapatmak için işimiz bittikten sonra o bağlı olduğumuz şeyleri kapatıyoruz.
+
+167
+00:27:41,203 --> 00:27:48,263
+Bu örneğe çok benzer 3 örnek var. Onları bir çok hızlıca görelim. Sonra diğer şeylerle devam edelim.
+
+168
+00:27:51,483 --> 00:27:57,983
+Burada ne diyor? Chicago'da bulunan departmanlarda çalışan işlerin isim ve maaş bilgilerini yazdığım.
+
+169
+00:27:58,763 --> 00:28:01,843
+İsim, soy isim, maaşı, hangi tablodan? Employee tablosundan.
+
+170
+00:28:02,483 --> 00:28:12,383
+Burada da bunu tek satür olarak da yazabilirdi. Böyle ayırmışız tek bir ekranda görünüşün. Şöyle sağ gitmeyelim diye. Bu tek bir sking aslında şurada yazdığımız biri.
+
+171
+00:28:14,083 --> 00:28:24,683
+Bu sorgunun şeyi bu. Bu birebir aynısı. Yine şunları yazdırdığımız için. Buna çok bir şey yok. Şuradan bakalım.
+
+172
+00:28:26,036 --> 00:28:31,196
+Her bir departmandaki çalışanların sayısını olup, departman ismine göre alfabetik olarak isteleyin.
+
+173
+00:28:32,276 --> 00:28:37,456
+İşte departman name, count, departman, employee, dnumber, dno, grup by.
+
+174
+00:28:37,615 --> 00:28:39,536
+Yani bunun sorgusu, bu yine bakabilirsiniz.
+
+175
+00:28:40,016 --> 00:28:41,655
+Burada diğerinden farklı olarak yetint var.
+
+176
+00:28:42,076 --> 00:28:46,635
+Diyelim ki bunu hangi veriye almak istiyorsanız, ona göre o metodu çağırmanız gerekiyor.
+
+177
+00:28:47,596 --> 00:28:49,556
+Şöyle bir, bunu nasıl soruyoruz acaba?
+
+178
+00:28:50,436 --> 00:28:53,236
+Yani burada bunun çok fazla sayıda metodu var.
+
+179
+00:28:58,483 --> 00:29:13,363
+Bu da aynı. Olması lazım. Tamam. Şimdi şu ana kadar kullandıklarımız hep Statement nesnesi gibi de PreparedStatement diye bir şey var. Şimdi onu göreceğiz.
+
+180
+00:29:21,875 --> 00:29:46,675
+Şimdi diğerinde, sorgu belliydi, çalıştırıyordu, şurada da yazdırıyordu ama bunun bir şeyi yok. Yani ben onu zaten burada da yapıyorum. Biraz programlama olunca bir kullanıcıdan bir şeyler almak, onu dağıtmanın bir şeyler yapmak gerekiyor. Bu yüzden statement bir şeyi göreceğiz. Yani bunu nasıl diyeyim, şimdi şunu anlatayım da onu anlatayım da farklarını anlatayım.
+
+181
+00:29:48,500 --> 00:29:58,200
+Şimdi bu sefer sorgumuzu yazarken, mesela bize diyor ki, biz bu sorguyu yazabilirdik, bu SSL neyse de onu yazardık, bu bize işte soyadırma maaşını dönerdi.
+
+182
+00:29:58,480 --> 00:30:02,940
+Ama biz şu an SSL'i bilmiyoruz, hangi SSL'e girilirse ona göre yazılsın istiyoruz.
+
+183
+00:30:03,920 --> 00:30:07,440
+O yüzden sorgumuzu bu belli olmayan yerlerine soru şartı olarak yazıyoruz.
+
+184
+00:30:08,060 --> 00:30:10,780
+Sonra bu soru şartı olan şeyleri kullanıcıdan alacağız.
+
+185
+00:30:12,531 --> 00:30:23,731
+Oraya o otomatik olarak yerleştirecek. Hani bunu şununla yapıyor olsaydık, hani şu şekilde yapabiliyorduk. Buraya boş bırakırdık, kullanıcıdan alırdık. Sonra, yani şunu demek istiyorum, bu böyle.
+
+186
+00:30:27,604 --> 00:30:30,243
+Şuradan kullanıcıdan bir şey aldım, query artı eşittir dedim.
+
+187
+00:30:31,443 --> 00:30:34,064
+İşte ABC değişken olsun, bunu ekledim. Böyle böyle de yapabiliriz.
+
+188
+00:30:34,423 --> 00:30:40,683
+Ama bunun hem daha zor hem performans olarak düşük olacak buradaki yaptığımız şeye göre.
+
+189
+00:30:41,963 --> 00:30:47,483
+Yani şuradaki prefer statement nesnesi yerine şu an prefer statement nesnesi oluşturduk.
+
+190
+00:30:51,988 --> 00:31:17,447
+Dümdüz oluşturmuştuk. Yani herhangi bir parametre vermedik. Hani şurada sorgu bir alt satırda olsa da olurdu. Yani concrete statement bitti. Ama burada içine sorguyu da veriyor. Bu statement nesnesini oluştururken. Bu şey yapıyor. Bu şeyi hani bir sorun var mı ya da çalıştırmayı hazırlıyor gibi diyelim. Bir sorguya bakıyor. Daha sonra burada kullanıcıdan SSN'i okuyoruz.
+
+191
+00:31:18,836 --> 00:31:25,836
+Bu kullanıcıdan beri almak için, Piceva'da yazılan kod, bu günün hatalar için, kısaca okuyamıştır. Şunu, açalım.
+
+192
+00:31:34,067 --> 00:31:39,327
+Şu tıpçı karakterler, tıpçı düştü diyeceğim. Öyle bir şey yok. Ha, varmış. Onu ben geliştim.
+
+193
+00:31:40,428 --> 00:31:50,827
+Tamam. Burada SSN'i okuyoruz. Şurada artık şu string ve SSN değişkeninde, string olan SSN değişkeninde buraya bizim yazdığımız şey var.
+
+194
+00:31:52,407 --> 00:31:55,968
+Sonra şu kullanıcıdan almak için yazdığımız kordu. Bunu kapatmışız.
+
+195
+00:31:57,167 --> 00:31:58,508
+Şunu şu an geçelim.
+
+196
+00:31:59,635 --> 00:32:21,696
+Şu setstring 1 dediğimiz birinci soru işareti yerine şu değişkeni yaz. Burada yaptığımız şey, buradan o 1, 2, 3'ü okuduk. Bu okuma için yazdığımız kod, bu kullanıcı bilgilendirmek için. Bu da okuma kodu. Okuyan nesne, bu da okuma kodu. Sonra okuyan şeyi kapattık, onun işimiz bitti. Daha sonra o okuduğumuzu bu sorguya yedireceğiz.
+
+197
+00:32:22,804 --> 00:32:29,444
+Onun için de birinci soru şerhtiyen de SSM'i koyu şeklinde. Daha sonra yine Execute Query deyip Query'imizi çalıştırabiliyoruz.
+
+198
+00:32:30,944 --> 00:32:34,884
+Şimdi bu bir tane satır dönünce için burada Wireless If koymuşuz.
+
+199
+00:32:35,044 --> 00:32:39,684
+Zaten Wireless If'in daha genelleştirilmiş hali bir, yani birden fazla hali bir diye düşünemelisiniz.
+
+200
+00:32:41,304 --> 00:32:44,608
+Eğer böyle bir SSM'e sahip biri varsa...
+
+201
+00:32:44,607 --> 00:32:50,367
+bu if true dönecek. Yani bu next true dönecek. Dolayısıyla burada bilgileri yazdıracağız ama mesela olmayan bir şey gibi.
+
+202
+00:32:56,884 --> 00:33:01,683
+Şurada 5-5-5 girdimizde öyle bir şey yok. Program terminatikleri kapandı ama herhangi bir mantığı olmamış oldu.
+
+203
+00:33:02,564 --> 00:33:04,644
+Bir de şurada gerçek bir yönü girelim.
+
+204
+00:33:06,844 --> 00:33:07,403
+Girelim.
+
+205
+00:33:07,403 --> 00:33:08,763
+Bak görünüyor.
+
+206
+00:33:11,403 --> 00:33:12,783
+Neye çalıştırdık.
+
+207
+00:33:13,903 --> 00:33:16,683
+Bunu gördüğümüzde işte bu kişinin adı ve maaşını yazdırmış oldu.
+
+208
+00:33:18,483 --> 00:33:31,223
+Burada, yani yazacağımız sorgu belliyse, bu şekildeyse ve bu sorguyu birden fazla kez işleyeceksen, hani bunu burada bir tane aldık ve bitti, atıyorum 10 tane SSL alacağız, 10 tane kişinin yazdıracağız vs.
+
+209
+00:33:31,983 --> 00:33:39,183
+Bu tarz durumlarda, aynı sorguyu birden kez yapacağımız durumlarda bu şekilde kullanılmak çok daha efektif ve avantajlı oluyor.
+
+210
+00:33:40,263 --> 00:33:45,983
+Çünkü öbüründe tek tek sıfırdan sorguyu yazıyor, bunda böyle bir sorgu var değil, bunu hafızaya bir yere atıyor gibi düşünebilirsiniz.
+
+211
+00:33:46,771 --> 00:33:49,491
+Çok da iyi çalışıyor. Şu ikinci örnek nede.
+
+212
+00:33:52,551 --> 00:33:55,011
+Burada da yeni bir şey var mı bakıyorum.
+
+213
+00:33:58,091 --> 00:34:01,112
+Yok, bunda da zaten ilk örneklerde gördüğümüz şeyler.
+
+214
+00:34:02,511 --> 00:34:03,791
+Bir de bu biraz şeylere bakalım.
+
+215
+00:34:04,011 --> 00:34:08,112
+Şimdi mesela ilk çalıştırdığımda şurada 1-2-3-4-7'nde hata alıyordum.
+
+216
+00:34:09,231 --> 00:34:11,331
+Program dolayısıyla sonlanıyordu.
+
+217
+00:34:12,340 --> 00:34:22,900
+Bu hataları, yani burada da alabilirim hatayı. Mesela şurada da employee şöyle bir tablo yok, böyle bir tablo yok diye hata alabilirim, doğru olmasına rağmen.
+
+218
+00:34:23,699 --> 00:34:31,940
+Biz burada, şurada hataları throws ettiğimiz için, yani onları hiçbir şekilde yönetemiyoruz. Burada işte böyle bir tablo yok, burada şey yanlışlık diyor, hani program bitiyor.
+
+219
+00:34:33,680 --> 00:34:35,539
+Bunları burada şey yapmasak.
+
+220
+00:34:36,436 --> 00:34:59,416
+Tek tek bu sefer Java bize hata oluşabilecek yerleri gösteriyor. Diyor ki mesela bunu try catch'in alıyoruz. Diyoruz ki bunu yapmayı dene. Tamam denedi. Sorun yoksa yok. Sonra altına devam ediyor. Ama eğer bir hata oluştuysa burada onu düzeltebiliriz. Yani direkt şurada program bitiyordu ya kırmızı şeyler geliyordu. Alt satırlar çalışmıyordu.
+
+221
+00:35:00,052 --> 00:35:04,672
+Burada onunla ilgili önlemimiz, şeyimiz neyse, onları yapabiliriz.
+
+222
+00:35:04,992 --> 00:35:08,731
+Ve bunu, mesela deminki şurada hata veriyoruz diye tahmin ediyorum.
+
+223
+00:35:10,252 --> 00:35:11,792
+Yani şu tabloyu yanlış girdiğinde.
+
+224
+00:35:16,148 --> 00:35:27,268
+Onun hatasını da burada düzeltiririz ama biz onlarla uğraşmak istediğimiz için şurada direkt ne hata varsa gitsin şeklinde yaptık. Boyalı oldu, onu bilerek yapmadım. Acaba neden oldu?
+
+225
+00:35:32,596 --> 00:35:33,576
+Tamam, yani bu da böyle.
+
+226
+00:35:36,695 --> 00:35:39,855
+Şimdi bunlar şeydi, yani konsolda çalışan uygulamalar.
+
+227
+00:35:39,855 --> 00:35:42,175
+Bir tane de form uygulamamız var.
+
+228
+00:35:54,739 --> 00:36:12,379
+Bir kılasını bulmamız lazım. Ah, buymuş direkt. Şunu bir kılış yapacağım. Şimdi burada şeyi anlatmaya gerek yok herhalde. Yani dersin şeyinde değil. Bunun bu ismini anlatmak. Biz çalıştırıp asıl programını yaptıkları görelim.
+
+229
+00:36:18,068 --> 00:36:23,208
+Şimdi bunu çalıştırınca, şurada bir şeyler yazıyordu, bunu çalıştırınca bu açılmış oldu. Bu hani bir arayüzü tasarlanmış.
+
+230
+00:36:24,608 --> 00:36:28,188
+Ne diyor? Bir departman numarasını girelim diyor. Mesela ne girelim? 3 gidelim.
+
+231
+00:36:29,588 --> 00:36:37,988
+Böyle bir departman bulunamamaktadır diyor. Bakalım gerçekten yok mu? Gerçekten 1'den 4'e geçmişiz. Şöyle 5 diyelim, bir search'u aramış olalım.
+
+232
+00:36:39,380 --> 00:36:51,680
+Şimdi ne yapıyor? Aslında kullanıcı ile böyle bir ara yüzü ile hiç program alınmayan biri ile şey yapabilecek şekilde, 5'i gösterdiğinde 5'teki çalışanları gösteriyor. 6'yı desem 6'dakileri gösterecek.
+
+233
+00:36:52,400 --> 00:37:04,960
+Ve mesela bu bilgi, departman numarasından bilgiyi nasıl yazıyor olabilir? Şu tabloyla şu tabloyu birleştiriyordur. Nereden birleştiriyordur? DNA'mırdan. Daha sonra bilgilerini yazıyordur.
+
+234
+00:37:05,748 --> 00:37:17,548
+Yöneticisinin ismi de yazıyor. Onu şuradaki SSN'den alıyordur vs. İçinde program bakabiliriz, sorgular var. Bir de buna çalışan ekleyebiliyormuşuz.
+
+235
+00:37:18,608 --> 00:37:25,368
+Mesela bir tane ekleyelim. Şurada zaten benim örnek eklediğim var herhalde. Çıkladım. Çıkartmayacağım şimdi.
+
+236
+00:37:26,448 --> 00:37:31,748
+Söyle demeseydim. Şimdi 7 diyelim. Şurada hata verdik ama devam ediyor programı.
+
+237
+00:37:32,820 --> 00:37:40,760
+Şuraya mesela çalışanı ekleyelim. Adı A. Sesini sayıyorsun. Doğum tarihi şöyle.
+
+238
+00:37:50,867 --> 00:37:57,347
+eklemedi çünkü orada maaşla da A'ya girdim, Dins'e de A'ya girdim. O gibi şeylerden olabilir. Bir tane daha.
+
+239
+00:37:58,867 --> 00:38:00,467
+Hızlı yapacağım derken.
+
+240
+00:38:14,675 --> 00:38:23,815
+Şimdi şurada ekledi galiba, pot çalışmış. Onu birer de gösterdiğimde bu şekilde eklemiş oldum.
+
+241
+00:38:27,572 --> 00:38:32,391
+Bunlar tamam. Şimdi bir de şundan kısaca bahsedeyim.
+
+242
+00:38:36,115 --> 00:39:01,016
+bulursam, burada biz execute query metodunu kullanıyorduk. Ama bu şey, SELECT FROM verli yazdığımız şeylerde bunu çalıştırıyoruz. Bir şey ekleyeceksek değil, insert into, delete from, drop vesaire gibi komutları kullanıyoruz. O zaman bu execute query değil, update, execute update miydi, update query miydi öyle bir şey çalıştırıyoruz.
+
+243
+00:39:03,219 --> 00:39:05,539
+Şu execute update'i çalıştırıyoruz.
+
+244
+00:39:06,840 --> 00:39:12,800
+Şu da şey, biz bu yaptığımız değişiklikler, mesela bir şey eklediğimizde anında eklenmesini istiyor olabiliriz.
+
+245
+00:39:13,260 --> 00:39:16,559
+Çalıştırdık, eklendi, şurada yazdığımızı düşünün.
+
+246
+00:39:17,139 --> 00:39:20,519
+Ya da bir sürü yapacağız yapacağız, ondan sonra eklensin istiyor olabiliriz.
+
+247
+00:39:20,939 --> 00:39:25,260
+O zaman direkt autocomite, false'a çekip işlemler bittikten sonra komite edebiliriz.
+
+248
+00:39:25,639 --> 00:39:28,800
+Ya da bu zaten hiç onlarla uğraşmayacak dediğimizde ekleyecektir.
+
+249
+00:39:29,899 --> 00:39:30,800
+O yüzden yazılmış olur.
+
+250
+00:39:31,168 --> 00:39:56,868
+Burada bunun kodlarına bakabilirsiniz. Çok basit bir program ama kullanıcı arayüzüyle, şurada zaten çalışıyordum, istenilen departmanı gösteriyor ve alınan bilgileri alınan bilgilerine göre şeye ekliyor. Bizim projemiz tabii ki bundan, bu çok çok basit hali ama herhangi bir web uygulaması ile internete bağlanması gerekmiyor.
+
+251
+00:39:58,003 --> 00:40:06,684
+arayüz üzerinden, işte istenilen işlemleri yapabiliyor. Bunun daha karmaşığını bekliyoruz diyelim.
+
+252
+00:40:09,043 --> 00:40:10,724
+İsterimiz proje bu şekilde.
+
+253
+00:40:13,784 --> 00:40:14,264
+Başka?
+
+254
+00:40:19,539 --> 00:40:21,539
+Şöyle bir slide'lara gidelim, orada bir şey var.
+
+255
+00:40:34,708 --> 00:40:54,327
+Burada mesela, ben bundan baktım, biraz daha farklı. Siz işte, neyi kullanıyorsunuz, ona göre ekleyeceksiniz. Şu üstte kullandığımız library, en üstte, şurada eklememiz gerekiyor. Tam bu projenin içine gelip de, şu kodun içine de eklememiz gerekiyor, şuradan bakalım. Burada hepsini ekleyelim, dolayısıyla hepsini kullanabiliyoruz.
+
+256
+00:40:56,668 --> 00:41:00,788
+Evet, bu şekilde. Bunları zaten şeyin içinde gördük.
+
+257
+00:41:02,099 --> 00:41:17,099
+Demin bahsettiğim, Execute'leri, SELECT, FROM'lu olanları çalıştırırken bu da veriyi değiştiren, ekleyen, güncelleyen, silen sadece gösteriyordu. Bu veri üzerinde değişiklik olan, FROM'ları çalıştırırken kullanıyoruz. Onların örneği.
+
+258
+00:41:19,099 --> 00:41:22,099
+Bir de mesela hep şurada bir şeyler aldık ya.
+
+259
+00:41:23,891 --> 00:41:31,011
+Yaptık get string dedik, 1. string, bunu atar, 2. string. Bunların tipini bilmiyor olabiliriz. Yani burada get string diyoruz da buradan ne gelecek onu bilmiyor olabiliriz.
+
+260
+00:41:31,751 --> 00:41:42,751
+Bunun dışında şöyle bir metot yazmışlar. Bu sorgulunun sonucu yanlış yeri açtım. ResultSet objesi değil ya. Bunun içinde get metadata diye bir obje var.
+
+261
+00:41:43,952 --> 00:41:51,091
+Bunu şeye attık. Üçüncü kolonun type'ını merak ediyorsa bu şekilde yazdırıp atıyorum stringse string işte double ise double yazacak şekilde.
+
+262
+00:41:51,635 --> 00:42:00,935
+Yine sorgu üzerinden koduda şeyin tipini de öğrenebiliyoruz. Burada şeyi diyeyim, mesela şunu bir kapatalım. Şunu next'te bir daha anlatabilmek için.
+
+263
+00:42:01,515 --> 00:42:06,635
+Bunu çalıştığım, next olmadan şunu yapamıyoruz. Yani onu eksiklikle kesin, çağırmamız gerekiyor burada.
+
+264
+00:42:11,027 --> 00:42:16,568
+SQL çalıştırdığında, ne diyor, result set doğru konulmamıştır, next işlerini çağırmanız gerektiği.
+
+265
+00:42:17,747 --> 00:42:23,188
+Yani bunu çağırdıktan sonra, hani ben onun içinde veri olduğunu biliyorum, zaten true dönecek biliyorum gibi değil.
+
+266
+00:42:23,688 --> 00:42:28,467
+Bunu çağırdım, true döndü. Hani bunu normalde is control işine koymam lazım da şu an, şöyle yaptım.
+
+267
+00:42:28,947 --> 00:42:33,148
+Bunu çağırdıktan sonra artık birinci döndüğü şeyin bilgilerini alabilirim.
+
+268
+00:42:33,148 --> 00:42:38,148
+Yani şu an bunun içinde birinci satırdaki verinin,
+
+269
+00:42:38,483 --> 00:43:05,323
+İlk gibi şey var, yani şu var aslında, bu, Spor'sa bir sorgu. Bu da tamam. Buna bir bakalım. Aynı sorgu, tekrar tekrar, farklı şeyler için çalıştıracaksak, programı tercih edebiliriz. Hem yazması da daha kolay şey olarak. Bu, hani, performansın sebebi de veritabanın belleğini bir örneği tutulması.
+
+270
+00:43:06,996 --> 00:43:14,676
+diyebiliriz. Bu kadarmış anlatacaklarımız. Sorunuz var mı? Yoksa kapatalım dersin.
+
+271
+00:43:15,695 --> 00:43:17,576
+Hocam bu slide'ı paylaşacak mısınız?
+
+272
+00:43:18,216 --> 00:43:20,216
+Paylaşacağız. Kodları da paylaşacağız.
+
+273
+00:43:22,655 --> 00:43:23,815
+Tamam, teşekkür ederim.
+
+274
+00:43:27,155 --> 00:43:29,916
+Tamam arkadaşlar, iyi akşamlar. Kendinize iyi bakın.
+
+275
+00:43:32,244 --> 00:43:35,324
+Dediğim gibi projeler atalım, onun duyurusuna bakarsınız.
+
+276
+00:43:37,083 --> 00:43:38,444
+O şekilde oradan da şey olursunuz.
+
+277
+00:43:38,543 --> 00:43:43,984
+Onunla ilgili direkt bir sorunuz olursa da mail adresini yazarsanız cevap verelim.
+
+278
+00:43:44,824 --> 00:43:44,944
+Öyle.
+
+279
+00:43:45,963 --> 00:43:47,804
+Sağımdır hocam, teşekkürler, iyi akşamlar.
+
+280
+00:43:48,364 --> 00:43:49,604
+Teşekkürler, iyi akşamlar.

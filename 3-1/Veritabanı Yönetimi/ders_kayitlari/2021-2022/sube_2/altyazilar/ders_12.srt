@@ -1,0 +1,411 @@
+1
+00:02:13,012 --> 00:02:15,252
+Hocam, host oldum. Teşekkür ederim.
+
+2
+00:02:15,632 --> 00:02:18,072
+Merhaba hocam, iyi dersler. Ben çıkıyorum. Görüşmek üzere.
+
+3
+00:02:18,211 --> 00:02:18,812
+Görüşmek üzere.
+
+4
+00:05:55,283 --> 00:06:07,884
+Arkadaşlar, bu hafta XQuery'yi göreceğiz. XQuery, bir SQL gibi bir sorgulama değil. Ama XML dosyaları üzerinde bir sorgulama işlemi yapabiliyoruz. O yüzden önce bir XML'li görmemiz iyi olacaktır.
+
+5
+00:06:11,252 --> 00:06:12,292
+Bilgisayar da onları.
+
+6
+00:06:34,324 --> 00:06:47,324
+Mesela XML dosyaları ne oluyor? Önce niye var? Onu konuşmak gerekir belki. Veri tabanı, veri yapıları, veri bilimi vesaire işimiz genelde veriyle oluyor.
+
+7
+00:06:47,324 --> 00:06:59,324
+XML de veriyi tutmak için bir format. Elimizde bir veri var. Bu nesneler programlamadaki gibi olabilir, bizim SQL tablolar halinde olabilir, çeşitli özellikler olabilir, olmayabilir.
+
+8
+00:07:00,307 --> 00:07:11,307
+Bir şekilde bir veri tutacağız. Bu da şey nokta o. O yüzden çıkmış. Bunu sadece STIL olarak tutacağız. Veriyi Excel'de de tutabiliriz. Ama ben de Excel yoksa o veriyi açamam.
+
+9
+00:07:11,307 --> 00:07:25,259
+Veya işte PostgreSQL olarak sarklayabiliriz. Veritabanı Yönetimi'ne ediliriz. Ama onun için de PostgreSQL olması lazım. Bu Excel'de sadece bir TXT olacak. Yani not defter açabilen bir şey de sarklanabilir.
+
+10
+00:07:26,548 --> 00:07:34,548
+Şimdi, nasıl oluyor? Mesela burada, bir şey açıyoruz ve kapatıyoruz. Açma ve kapama şöyle, büyüktür, küçüktür arasında ne olduğunu yazıyoruz.
+
+11
+00:07:35,747 --> 00:07:42,548
+Mesela şunların hepsi Colors'mış. Yani Colors başladı, Colors başladı, Colors başladı, Colors bitti.
+
+12
+00:07:43,048 --> 00:07:46,548
+Daha sonra bunun içinde bir tane daha yine böyle bir şey olayabilir, olayabilir.
+
+13
+00:07:48,148 --> 00:07:53,483
+Color 1 açıldı, kapandı ve onun ne olduğu. Color 2 açıldı, kapandı, onun ne olduğu.
+
+14
+00:07:53,747 --> 00:08:03,747
+Mesela şurada başka örnek. İşte bütün XML dosyası bir job için. Bir job başlıyor, bitiyor. Epson'un içinde bir graf yapısı gibi, bir aç yapısı gibi.
+
+15
+00:08:03,747 --> 00:08:10,747
+Ya da işte tablo gibi düşünebiliriz. Bizim kampen, DB'yi ve kontrol e-zame ile çevireceğiz. Çevirelim şahı, cemden geleceğiz.
+
+16
+00:08:10,747 --> 00:08:20,267
+Production başlıyor, bitiyor. Yine o production içinde neler olduğunu var. Şu slide'daki yorumlara bakalım. Mesela burada bizim bir bookstore'ımız var.
+
+17
+00:08:21,779 --> 00:08:28,939
+Bu bookstore'ın içinde booklar var. Bookların title'ları, yazarları, yılları, fiyatları vs. var.
+
+18
+00:08:29,739 --> 00:08:36,959
+Bir de şurada iken, açmışken, büyük bir, küçük gibi arasında açıyoruz dedim ya, burada bir şey de, attribute de verebiliyoruz.
+
+19
+00:08:37,600 --> 00:08:43,879
+Zorunda değiliz ama burada bunun kategorisi, bu gibi bir şey de diyebiliriz. Bunu şuraya direkt aşağıya yazabiliriz. Bir şey fark etmez.
+
+20
+00:08:44,879 --> 00:08:47,720
+Biraz esnek bir yapı burada izlemek.
+
+21
+00:08:48,148 --> 00:08:54,807
+Tabloda mesela departman dediğimizde, yeni departman gibi işte şey var, üstün ismi var. Oraya bir tane departman yazıyoruz.
+
+22
+00:08:54,948 --> 00:09:00,228
+Burada mesela şurada bir tane alt gibi bir tane yazar varken burada 4-5 tane yazar olabilmiştir.
+
+23
+00:09:01,448 --> 00:09:06,687
+Bunlara estetiklik sağlıyor. Burada bileceğimiz hani keywordler, kelime var.
+
+24
+00:09:07,148 --> 00:09:12,847
+Root elementimiz bookstore. Yani hepsi bir bookstore içerisinde. Nereden anlıyoruz? XmL onunla başlamış.
+
+25
+00:09:13,508 --> 00:09:15,847
+Bundan sonra bunun içinde elementlerimiz var.
+
+26
+00:09:16,436 --> 00:09:22,196
+Bunlar kitap elementi. Onun içinde, bu tarz elementi kitabın içinde.
+
+27
+00:09:22,196 --> 00:09:39,436
+İşte burada yazıyor. Bunlar Child, şu. Biz bütün şey, company gibi, egzemele çevirip, onun üzerinde aynı SQL sorgusu gibi sorgular yapacağız. Neydi? SQL gibi.
+
+28
+00:09:42,131 --> 00:09:44,432
+Bir bakalım, bu bildirdiğimiz gibi sorgulama dili.
+
+29
+00:09:45,711 --> 00:09:48,151
+XML dosyalarında arama yapıldığı için geliştirdim.
+
+30
+00:09:48,231 --> 00:09:56,511
+Bunu sakladığınız için, bütün vereniniz XML dosyalarında, onun içinde çeşitli sorgular, aramalar, belli mantıksal yapılar içerisinde şeyler yapacağız.
+
+31
+00:09:56,932 --> 00:10:01,711
+Şunlar, büyük-türk-çürk arasına şey yaptım, bunlara tek etiket deniyor işte.
+
+32
+00:10:02,331 --> 00:10:06,451
+Şu başlangıcı aynı şekilde bitiyor, sadece şurada bir tane şu işaretten var.
+
+33
+00:10:07,892 --> 00:10:12,652
+Veritabanları SQL ile sorguluyorum, examenleri X2 ile sorguluyoruz.
+
+34
+00:10:13,372 --> 00:10:18,772
+Viking yazdığımız SQL ifadelerini, X2 kodunu yazabiliriz.
+
+35
+00:10:19,852 --> 00:10:25,332
+Burada relational, algebra veya relation yok, direkt gündüz yazıyoruz.
+
+36
+00:10:25,332 --> 00:10:28,612
+Öncelikle söylediğim birden fazla yazar olabileceği gibi.
+
+37
+00:10:31,124 --> 00:10:38,364
+İşte bunu web servislerinde vesaire herkes aynı bireyi kullanırsa birbiri daha esin de rahat geçişler olabilir diye düşünülmüş.
+
+38
+00:10:38,364 --> 00:10:43,844
+Ama artık kullanımı azaldı, daha çok yer kapatı için artık daha çok JSON kullanılıyor diyebiliriz.
+
+39
+00:10:44,403 --> 00:10:50,163
+Bunu hani yazacağız diyelim, SQL kodlarımızı nerede yazacağız?
+
+40
+00:10:50,163 --> 00:10:57,443
+Basics de yazabiliriz. Bunun sitesine gidip basics.org.au lanse'dan buradan işte CR dosyasını, Excel dosyasını.
+
+41
+00:10:57,652 --> 00:10:59,652
+Hangisini istiyorsanız indirip kurabilirsiniz.
+
+42
+00:11:00,951 --> 00:11:02,632
+Burada bir egzaman önlemimiz var.
+
+43
+00:11:03,312 --> 00:11:07,332
+Burada da CompanyDB, diye, şey olarak görüyoruz, egzaman olarak görüyoruz.
+
+44
+00:11:07,872 --> 00:11:09,372
+Company, tagiyle başlıyor, bitiyor.
+
+45
+00:11:09,892 --> 00:11:12,372
+Bu, mesela bir tane employee'miz bizim.
+
+46
+00:11:12,792 --> 00:11:15,272
+Şurada SSN'ini bu şekilde yazmışız.
+
+47
+00:11:16,772 --> 00:11:19,872
+Diğer tablodaki alanları, burada belirtiyoruz.
+
+48
+00:11:19,971 --> 00:11:23,372
+Yani FirstName, başlıyor, bitiyor. Arasına yazdığımız string, işte FirstName bu demişti.
+
+49
+00:11:24,371 --> 00:11:32,371
+Bütün tablo tarzı verileri, yeterli olmak zorunda değil. Herhangi bir tüpür istediğimiz veri tipini examene çevirebiliyoruz.
+
+50
+00:11:32,371 --> 00:11:39,371
+Burada, şunlar attribute olarak verilmiş. Bunlar bizim şeydeki primary keylere denk geliyor.
+
+51
+00:11:41,371 --> 00:11:45,371
+Başka burada söyleyebileceğimiz, biraz ilerleyelim.
+
+52
+00:11:46,371 --> 00:11:49,371
+Şimdi, arama yaparken, buraya da geçelim.
+
+53
+00:11:50,207 --> 00:11:55,647
+Şu ifadeleri kullanacağız sadece. Flower diye böyle kısaltılmış akılda kalırsın diye.
+
+54
+00:11:55,647 --> 00:11:59,528
+Ya da bu keywordler for, let, var, order by ve return.
+
+55
+00:12:01,327 --> 00:12:04,127
+Şurada örnekten çok daha rahat görülecek.
+
+56
+00:12:04,127 --> 00:12:08,807
+Şimdi xpath var, bir xquery var. Bu xpath ile xquery'in içinde kullanacağız gibi düşünün.
+
+57
+00:12:10,487 --> 00:12:12,687
+Yani asıl bunu yazacağız gibi.
+
+58
+00:12:12,687 --> 00:12:15,687
+Bu da ona düzgün yol gibi düşünüyoruz.
+
+59
+00:12:16,211 --> 00:12:20,451
+Şimdi mesela tüm çalışan bilgilerin XTAD ve XSQUARE sorgusuyla bulunmuyor.
+
+60
+00:12:22,811 --> 00:12:29,152
+Şimdi bunu normal SQL'de yapsak nasıl? SELECT, STAD, FROM, EMPLOYE diyoruz. Hepsini yazdırıyor basitçe.
+
+61
+00:12:30,451 --> 00:12:37,071
+Bunu XPAD'da yapacaksak, şimdi şu zaten dosyamızın adı. Bütün bilgilerimiz CAMPAIGN.examun içerisinde.
+
+62
+00:12:38,831 --> 00:12:43,271
+Bunun içinden CAMPAIGN tagine git, o CAMPAIGN taginin içinden de EMPLOYE tagine git.
+
+63
+00:12:43,519 --> 00:12:53,439
+Ama bundan birden fazla varsa hepsini de getir. Bunun query halinde şunu yazıyoruz, before dönmüşsün, hani dönen bir dinleyicimiz var, tek tek tüm satırları oluyor, o diyoruz ve return bu diyoruz.
+
+64
+00:12:53,439 --> 00:12:59,659
+Bunu burada tek bir değişken gibi değil de hepsi bunun içine birikiyor gibi de düşünüyoruz. Hatta şurada çalıştıracağım.
+
+65
+00:13:01,939 --> 00:13:05,059
+Yani bu bize tek tek işte employee'leri dönmüş durumda bu şekilde.
+
+66
+00:13:06,519 --> 00:13:08,939
+Hatta şu neler olduğunu bir anlamak için.
+
+67
+00:13:21,524 --> 00:13:36,524
+Bu, eczema hali yap. Buradan, kampanyinin içerisine gir. Yani şu dosyanın adı, çok eczema, değiştirsen o da değişecek. Tamam, kampanyinin içerisine gir. Bunun tekinin içerisinde employee olanları getir. Employee'yı getir, employee'yı getir.
+
+68
+00:13:36,524 --> 00:13:49,292
+Gibi gibi. Şimdi daha, mesela bunun içerisinden bunları seçmeyi göreceğiz, başka alanları seçmeyi göreceğiz ya da direkt bunu bunun içinden değil de direkt kampanyeden şuraya gitmeyi vesaire de göreceğiz. İlerleyen sınavlara da bakalım onlara.
+
+69
+00:13:51,028 --> 00:14:06,528
+Ne diyor? Şirkette olan departmanların isimlerini bulan SQL sorgusunu yazın. Bu da aslında üsttekinle aynısı. Sadece şurada star yanı, DNA'yı demişiz. Onu da yine egzamanımıza görüyoruz. Buradan departmanı bulacağız. Böyle uzun şey ama.
+
+70
+00:14:08,367 --> 00:14:18,447
+Departmanı bulduk, tamam. Bunun içerisinden diyoruz ki şurada, bunu buraya da yazabilirim, şuraya yazmışız. DNA'yı, yani bu sorguların DNA'yı mı getir? [öğrenci] DNA'yı burada.
+
+71
+00:14:20,148 --> 00:14:30,548
+Bu şekilde. Yani sadece şu şeyi yazdıracağım. Bir üsttekinde hepsini yazdırıyorken bütün şeylerini. Şurada sadece deneyim dediğimiz için onu yazdırıyor.
+
+72
+00:14:33,348 --> 00:14:40,548
+Hani şeyde SQL'de böyle %100 içerisinde hani bu string bunun içerisinde geçiyorsa gibi bir ifademiz var bu şekilde yazıyordu.
+
+73
+00:14:40,548 --> 00:14:46,548
+Bunu burada match fonksiyonuyla yapıyoruz. Hani adres şu Seattle'la match ediyorsa, eşleşiyorsa şeklinde.
+
+74
+00:14:47,091 --> 00:14:49,011
+Bütün sorgumuz şu halde.
+
+75
+00:14:53,043 --> 00:14:59,043
+Burada, şimdi şuradaki sorgu sonucuna bakacak olursak, yine eczamel olarak dönüyor bunu.
+
+76
+00:14:59,043 --> 00:15:06,043
+Bunu şuradaki gibi başına data alırsak, sadece o skin kalleri dönüyor. Onu da yapabiliriz.
+
+77
+00:15:08,043 --> 00:15:19,043
+Yavaş yavaş şöyle, yani şunu bunu dönmek istiyorum. Şöyle böyle göreceğimizi eczamel halinde, daha direkt skin kalleri görüyoruz. Ama burada daha hoş olmadı.
+
+78
+00:15:20,371 --> 00:15:22,371
+İç, iç, iç, iç gibi oldu.
+
+79
+00:15:23,771 --> 00:15:34,771
+Neyse, burada gördüğümüz şey, data'yı aldığımızda şu taglerden kurtulmuş hale bir şey yapıyoruz. SQL'deki yüzde arasına yazdığımız şeyi, match fonksiyonuyla, XQuery'de sağlayabiliyoruz.
+
+80
+00:15:38,171 --> 00:15:47,371
+Yine bir, işte, yazabildiğimiz SQL sonuçsunun şeye dönmesini görüyorum. Burada, birden fazla hani, ver koşulumuz var.
+
+81
+00:15:48,244 --> 00:15:53,504
+Şu tablolardan PNO'yu getir, şurada tabloları birleştir, burada da şu isimli diyorum.
+
+82
+00:15:53,644 --> 00:16:01,803
+Burada bunu tekrar tekrar yazmak yerine bunu bir değişkeni atayıp kullanabiliyoruz. Böyle sorgularınız o şekilde de ilerleyebiliyor.
+
+83
+00:16:04,163 --> 00:16:15,764
+Burada attributelere erişirken şöyle add-şerdi kullanıyoruz. Diğerlerine eriştiğimizde şu sıraşı kullanıyorken burada attribute ise add diyerek erişmemiz gerekiyor.
+
+84
+00:16:17,043 --> 00:16:37,783
+Burada aslında iki tabloyu getiriyorduk. Burada bir tanesini getiriyoruz, burada diğerini getiriyoruz. Sonra VER de eşit diyoruz. Şurada yaptığımız gibi. Burada TC değişkenini atadık. Burada da ETC'yi atadık. Dolayısıyla burada da O'na eşitken dedik. Kullandığımız değişkenlerin başına dolar işaret koyuyoruz. O önemli olabilir.
+
+85
+00:16:39,379 --> 00:16:45,339
+Eczamanın içerisinde olanlar bu şekilde direkt FNV, yani bu devam etsiyel, slash şu, slash şu şeklinde yazabilirim.
+
+86
+00:16:46,139 --> 00:16:50,199
+En sonra hepsi bittikten sonra, PNO'yu döndürmek istediğimiz için PNO'yu yazıyoruz.
+
+87
+00:16:50,879 --> 00:17:01,339
+Şurada SSN'e aldığımız o değişken, şurada dönen bir, sonunda dönen şey olduğu için, o PNO özelliği onun içerisinde olduğu için bu şekilde döndürmüşüz.
+
+88
+00:17:04,180 --> 00:17:09,579
+Daha sonra, satış departmanının sayısını hangi şehirlerde okusunu bulan SQL sonuçsunu yazın demiş.
+
+89
+00:17:11,980 --> 00:17:16,460
+Tamam, bu da aslında çok benziyor. İki tabloyu yine birleştireceğiz.
+
+90
+00:17:16,460 --> 00:17:19,980
+Şurada SQL'de isim veriyorduk, NT'yi birleştiriyorum.
+
+91
+00:17:21,019 --> 00:17:28,660
+Burada ise şu departman tablosu ile işlem yapıyoruz bu for dolarla başlayıp olanı bir web location şimdi burada yapıyoruz.
+
+92
+00:17:29,844 --> 00:17:35,844
+Burada istediğimiz bilgileri getiriyoruz gerek olarak kullanacağımız, yazdıracağımız veya işleyeceğimiz.
+
+93
+00:17:35,844 --> 00:17:40,844
+İsim gerekli için mesela burada isim almışız. Şu DnCumber'ı şurada işleyeceğimiz için onları almışız.
+
+94
+00:17:41,844 --> 00:17:47,844
+Tamam, sonra ver koşulumuz yine bu tabloları şurada birleştirip şurada aldığımız beşgenleri birleştiriyoruz.
+
+95
+00:17:49,844 --> 00:17:55,820
+Daha sonra da isme göre de filtre istediği için onu o şekilde tutuyoruz. En son da DLocation yazdığı için onu yazdırıyoruz.
+
+96
+00:17:56,115 --> 00:18:09,375
+Değişken tanımlarken başına led yazıyoruz. Şurada hani, orada öncüsü içerisinde değil de şu, normal içeride bir şey yapacaksak, led deyip o değişkeni tanımlıyoruz. Hani int, i diyeceğimizde, CD'de ki burada led, bir de dolar, ondan sonra değişkenin ismini bir şekilde.
+
+97
+00:18:10,976 --> 00:18:11,855
+Tanımlıyoruz.
+
+98
+00:18:14,855 --> 00:18:22,755
+Burada hani aynı tabloyu birden kez kullandığımız soru, bu ismini tarafında var. Mesela employee tabloyu bir şey yapalım, bir E1, bir E2 diyordur.
+
+99
+00:18:23,316 --> 00:18:33,316
+Onunla ilgili bir örnek. Yine bütün dosyamıza kolaylaştırıcı bir şey. Onu kom değişkenine atamışız. Daha sonra komun employee'sine git. Şurada tekrar employee'sine git.
+
+100
+00:18:33,316 --> 00:18:50,059
+Şurada farklı değişkenler atıyorum ki, aynı şeyi yine şuradaki gibi E1 ve E2 diye işleyebilirim. Daha sonra Elizabeth'e göre dediği için ona göre sorguluyorum. Adını ve söylediğini istediği için onları yazdırıyorum. E1'den mi, E2'den mi olacağına dikkat et.
+
+101
+00:18:50,579 --> 00:18:54,880
+Burada da, şurada, I2'ye benzerken şekilde yazdırmış oluyorum.
+
+102
+00:19:11,251 --> 00:19:18,572
+Önce o sorgumuzu sor, o sorgumuzu daha sonra bütün fitrelerimizi gerçekleştirip isim ve soy isimini döndürebiliriz.
+
+103
+00:19:18,652 --> 00:19:31,331
+Bunu inceleyebilirsiniz. Bugün böyle bir kısa ders yapmış olalım. Şöyle durduralım. Görüşmek üzere diyelim. Dersimizi sonlandıralım.
