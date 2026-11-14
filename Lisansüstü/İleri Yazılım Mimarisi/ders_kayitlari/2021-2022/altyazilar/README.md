@@ -2,7 +2,7 @@
 
 Bu klasör, 2021-2022 eğitim öğretim yılı Güz dönemindeki İleri Yazılım Mimarisi (BLM5126 - 1. şube) ders kayıtlarının altyazılarını içerir.
 
-* **Dersi Veren Akademisyen:** Dr. Göksel Biricik
+* **Dersi Veren Akademisyen:** Göksel Biricik
 
 Kayıt arşivindeki ilk ders kaydı 20 Aralık 2021 Pazartesi gününe aittir. Dosya adlarındaki `ders_x.srt` ifadesinde `x`, ders haftasını değil, ilgili kaydın kayıt arşivindeki ders sıra numarasını gösterir. Tarihler YTÜ Video Ambarı kayıt tablosundan alınmıştır. Altyazılardaki öğrenci adları `[öğrenci]` ile maskelenmiştir.
 
