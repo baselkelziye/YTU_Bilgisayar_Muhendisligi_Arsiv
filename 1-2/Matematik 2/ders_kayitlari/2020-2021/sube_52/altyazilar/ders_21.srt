@@ -1,0 +1,4127 @@
+1
+00:01:01,012 --> 00:01:07,811
+Okay. Have a nice good afternoon friends. How are you after the exam?
+
+2
+00:01:11,796 --> 00:01:12,596
+Can you hear me?
+
+3
+00:01:22,548 --> 00:01:24,567
+I hope you're good.
+
+4
+00:01:29,748 --> 00:01:35,188
+Evet gençler, ne yaptınız sınavda? İnşallah umarım iyi yapmışsınızdır sınavda.
+
+5
+00:01:44,563 --> 00:01:46,103
+Okay, let's get started.
+
+6
+00:01:47,423 --> 00:01:53,083
+So, I think we didn't introduce definition of critical boeing. Did we introduce definition of critical point?
+
+7
+00:02:00,403 --> 00:02:10,623
+Okay, if you got some point, less than what you expected, so just send some email, okay, to my email address.
+
+8
+00:02:15,283 --> 00:02:17,903
+Ok, let's talk about critical point.
+
+9
+00:02:22,611 --> 00:02:23,411
+Critical
+
+10
+00:02:28,852 --> 00:02:29,492
+Poin.
+
+11
+00:02:44,051 --> 00:02:59,275
+Şimdi, birçok, bir
+
+12
+00:03:06,451 --> 00:03:14,852
+ve some point, so this is very important, condition, and some point,
+
+13
+00:03:15,991 --> 00:03:18,931
+contained by domain of f.
+
+14
+00:03:19,651 --> 00:03:19,931
+Okay.
+
+15
+00:03:21,271 --> 00:03:21,972
+So then,
+
+16
+00:03:23,412 --> 00:03:25,252
+then,
+
+17
+00:03:25,531 --> 00:03:27,412
+this point
+
+18
+00:03:27,412 --> 00:03:31,811
+is called
+
+19
+00:03:33,044 --> 00:03:34,783
+A critical point
+
+20
+00:03:39,443 --> 00:03:46,824
+A critical point of f function, if and only if.
+
+21
+00:03:49,223 --> 00:03:52,123
+So we have two case, either
+
+22
+00:03:56,500 --> 00:03:58,099
+Either gradient,
+
+23
+00:03:58,099 --> 00:04:05,480
+f, gradient of f at the point p,
+
+24
+00:04:05,480 --> 00:04:08,480
+is zero vector,
+
+25
+00:04:08,480 --> 00:04:12,699
+or
+
+26
+00:04:12,699 --> 00:04:16,540
+gradient vector
+
+27
+00:04:16,540 --> 00:04:19,540
+of p
+
+28
+00:04:19,540 --> 00:04:23,139
+is indefinite.
+
+29
+00:04:26,803 --> 00:04:42,024
+Okay, now as you see, so if you have some function with single variable case, okay, now so in fact derivation is a vectoral quantity, so in that case you are going to obtain some vector with single components.
+
+30
+00:04:42,644 --> 00:04:46,823
+Okay, recall the definition of critical points for single variable functions.
+
+31
+00:04:46,823 --> 00:04:54,323
+As you see, this is the extension of critical point given in the single variable case to multivariable case.
+
+32
+00:04:54,803 --> 00:05:00,103
+You may put here some n variables, x1, x2, dot, dot, dot, xn.
+
+33
+00:05:00,323 --> 00:05:02,923
+Okay, now, so this is very important.
+
+34
+00:05:02,923 --> 00:05:07,303
+So let me choose another chalk here.
+
+35
+00:05:07,644 --> 00:05:13,283
+So this means, this means, this means each component.
+
+36
+00:05:19,252 --> 00:05:24,235
+Tamam, bu 0 ve...
+
+37
+00:05:30,836 --> 00:05:33,975
+0, ok. Now, so this means
+
+38
+00:05:40,148 --> 00:05:41,768
+Dismiss, at least.
+
+39
+00:05:45,684 --> 00:05:51,004
+One component, at least one of
+
+40
+00:06:04,148 --> 00:06:05,828
+İndefinite.
+
+41
+00:06:09,555 --> 00:06:10,096
+Okay.
+
+42
+00:06:11,295 --> 00:06:14,336
+I think this definition is clear to everyone.
+
+43
+00:06:14,675 --> 00:06:16,795
+Any question about this definition?
+
+44
+00:06:19,196 --> 00:06:23,216
+Okay, let me ask you, which color is the best one?
+
+45
+00:06:25,076 --> 00:06:28,975
+For you, red one or white one?
+
+46
+00:06:33,843 --> 00:06:38,163
+Okay, I think everyone prefer to see.
+
+47
+00:06:39,683 --> 00:06:40,004
+Okay.
+
+48
+00:06:45,204 --> 00:06:47,844
+Let me introduce some basic example.
+
+49
+00:06:49,283 --> 00:06:50,644
+Example.
+
+50
+00:06:52,764 --> 00:06:54,604
+Consider this example.
+
+51
+00:06:58,387 --> 00:06:59,927
+half of xy
+
+52
+00:06:59,927 --> 00:07:03,827
+given by
+
+53
+00:07:03,827 --> 00:07:06,067
+this quadratic expression
+
+54
+00:07:06,067 --> 00:07:08,288
+x squared plus
+
+55
+00:07:08,288 --> 00:07:09,747
+y squared
+
+56
+00:07:09,747 --> 00:07:12,327
+minus 4y
+
+57
+00:07:12,327 --> 00:07:14,447
+plus 9.
+
+58
+00:07:15,047 --> 00:07:16,467
+Okay, let's investigate
+
+59
+00:07:16,467 --> 00:07:18,627
+all critical points of
+
+60
+00:07:18,627 --> 00:07:19,667
+this function
+
+61
+00:07:19,667 --> 00:07:22,287
+given by two independent
+
+62
+00:07:22,287 --> 00:07:23,167
+variables.
+
+63
+00:07:23,668 --> 00:07:26,487
+So, recall the definition of critical point.
+
+64
+00:07:27,247 --> 00:07:34,148
+Now, first of all, let me compute derivation of f with respect to x, 2x.
+
+65
+00:07:34,627 --> 00:07:43,747
+And let's compute derivation of f with respect to y, that is 2y minus 4.
+
+66
+00:07:44,028 --> 00:07:50,148
+Look at here, since this is the polynomial with two variables, so...
+
+67
+00:07:51,124 --> 00:08:02,783
+Derivations of polynomial functions are defined everywhere. That's why there is not any critical point coming from this condition, coming from this condition.
+
+68
+00:08:03,283 --> 00:08:14,124
+So we need to focus on critical points coming from this condition. Okay. Now that's why. So we need to solve common lead this system of...
+
+69
+00:08:14,932 --> 00:08:40,072
+İkincisi, ok, if you try to solve commonly this equation, ok, if you try to solve the first equation, so you got this, there are many solution here, so the first component is zero and second component is arbitrary, ok, there are infinitely many solutions here, many solutions, many zero y pairs satisfying the first.
+
+70
+00:08:41,812 --> 00:08:51,011
+If you try to solve this equation, okay, so we are going to obtain many solutions, many pairs, satisfying.
+
+71
+00:09:16,436 --> 00:09:19,436
+Bu bir soru var.
+
+72
+00:09:19,436 --> 00:09:20,436
+Tamam.
+
+73
+00:09:21,436 --> 00:09:24,436
+Bu bir soru var.
+
+74
+00:09:25,436 --> 00:09:27,436
+X 0
+
+75
+00:09:29,436 --> 00:09:31,436
+Y 2
+
+76
+00:09:36,436 --> 00:09:44,012
+Bu bir soru var.
+
+77
+00:09:44,851 --> 00:09:47,811
+of gradient vector 0.
+
+78
+00:09:48,091 --> 00:09:54,672
+Dikkat edin, 0, 2 ikilisi, gradient vektörün her bir ilişkinini 0 yapıyor.
+
+79
+00:09:55,091 --> 00:09:55,771
+Tamam mı gençler?
+
+80
+00:09:56,771 --> 00:09:59,831
+Okay, an equation, so this is a critical point.
+
+81
+00:10:11,475 --> 00:10:11,956
+Ok.
+
+82
+00:10:15,764 --> 00:10:17,163
+So, let me...
+
+83
+00:10:20,467 --> 00:10:22,467
+İntroluğun bir diğer
+
+84
+00:10:26,707 --> 00:10:28,427
+Ok, let me introduce this theorem.
+
+85
+00:10:30,827 --> 00:10:31,467
+Theorem.
+
+86
+00:10:35,347 --> 00:10:37,307
+This is very important theorem.
+
+87
+00:10:41,076 --> 00:10:55,196
+If f has a local extremum value,
+
+88
+00:11:05,076 --> 00:11:25,995
+At the point AB, then we say that the PAB is a critical point. So from the logical point of V, we can directly conclude that
+
+89
+00:11:28,659 --> 00:11:34,620
+Critical point is necessary condition for existence of local extramon value.
+
+90
+00:11:34,740 --> 00:11:40,460
+Okay, so let me recall this concept from logical point of view.
+
+91
+00:11:40,599 --> 00:11:42,039
+Okay, let me write here.
+
+92
+00:11:42,139 --> 00:11:49,639
+So if you have some logical implication, sorry, so that is, that must be Q.
+
+93
+00:11:50,676 --> 00:11:59,496
+So if you are given this logical statement, condition case, so this is called necessary condition, necessary condition.
+
+94
+00:12:01,056 --> 00:12:04,676
+So this is P, let me write here, this is P.
+
+95
+00:12:05,120 --> 00:12:13,100
+So, let's say this is q, as you see from the logical point of v, we can express this theorem by this implication, logical implication.
+
+96
+00:12:13,100 --> 00:12:17,740
+So, q is necessary condition, but not sufficient condition.
+
+97
+00:12:18,079 --> 00:12:25,179
+Okay, so this means that there is no, okay, there is no at every at each.
+
+98
+00:12:25,519 --> 00:12:47,139
+Critical Point. There is no any local extreme value at every critical point. Dikkat edin arkadaşlar. Her kritik noktada ekstremum değer olmaz. Her zaman olmaz. Olmak zorunda değil. Varsa ekstremum değer kritik noktadadır. Ama her kritik noktada bir ekstremum değer olmak zorunda değil. Bu çok önemli. Tamam mı gençler?
+
+99
+00:12:48,467 --> 00:12:53,508
+Ok, let's go on. So let me introduce second order derivation test.
+
+100
+00:12:54,388 --> 00:13:02,727
+Second order derivation test.
+
+101
+00:13:10,004 --> 00:13:10,484
+Okay.
+
+102
+00:13:12,583 --> 00:13:13,024
+Now,
+
+103
+00:13:13,024 --> 00:13:16,864
+you are given some function.
+
+104
+00:13:50,707 --> 00:14:04,347
+Now, we can define, so define some discriminant function, define discriminant, discriminant f.
+
+105
+00:14:08,211 --> 00:14:19,412
+Fxx times Fyy minus Fxy
+
+106
+00:14:23,764 --> 00:14:26,803
+Ok, so this is a different discriminant function.
+
+107
+00:14:29,764 --> 00:14:33,303
+Now we can introduce these cases.
+
+108
+00:14:33,303 --> 00:14:51,224
+The first case, if the value of second order derivation of f at the point p is negative and
+
+109
+00:14:52,628 --> 00:15:02,208
+discriminant value, value of discriminant function at the point P is positive.
+
+110
+00:15:04,008 --> 00:15:06,488
+Then we can say that
+
+111
+00:15:11,091 --> 00:15:32,932
+F has a local max, local maximum value at the point a, b. As you see, this is the extension of second order derivation test given in the case of single variable function.
+
+112
+00:15:33,932 --> 00:15:36,072
+Okay, now focus on this part.
+
+113
+00:15:37,748 --> 00:15:46,588
+But if you have some a variable, but there is no second variable, so in that case, we got single variable case.
+
+114
+00:15:46,588 --> 00:15:54,412
+Okay, now the second case, if...
+
+115
+00:15:57,556 --> 00:16:03,556
+second order derivation value at the point P with respect to x,
+
+116
+00:16:03,556 --> 00:16:13,556
+okay, okay, here, and positive and discriminant value at the point P is positive.
+
+117
+00:16:13,556 --> 00:16:21,259
+Then we can say that F has a local minimum.
+
+118
+00:16:22,163 --> 00:16:25,603
+Minimum value at the point BAB.
+
+119
+00:16:26,143 --> 00:16:29,903
+Okay, now let's introduce the third case.
+
+120
+00:16:32,423 --> 00:16:33,463
+If
+
+121
+00:16:46,676 --> 00:16:47,336
+0
+
+122
+00:16:58,292 --> 00:17:12,532
+Then, p point is a saddle point. I think we did introduce definition of saddle point last week.
+
+123
+00:17:13,751 --> 00:17:17,032
+Semer noktasıdır. Semer noktasının ne olduğunu açıklamıştı.
+
+124
+00:17:32,596 --> 00:17:50,476
+Pardon, bu beni karıştırdım gençler. Kusura bakmayın. Semer noktası diyebilmemiz için, şura negatif olacak. Tam tersini yazdım. Zihnimden şimdi düşündüm de. Evet, olmuyor. Bir dakika. So, we make mistake here.
+
+125
+00:17:55,284 --> 00:17:58,184
+Ok, so we make mistake here, so this is negative.
+
+126
+00:18:10,003 --> 00:18:12,003
+Test fails.
+
+127
+00:18:12,003 --> 00:18:16,003
+Then the test fails.
+
+128
+00:18:16,003 --> 00:18:18,003
+Inconclusiv.
+
+129
+00:18:18,003 --> 00:18:20,003
+Dikkat edin arkadaşlar.
+
+130
+00:18:24,003 --> 00:18:26,003
+Ok, look at here.
+
+131
+00:18:26,003 --> 00:18:28,003
+In order to talk about local max or local mean,
+
+132
+00:18:28,003 --> 00:18:29,803
+this is precondition.
+
+133
+00:18:30,579 --> 00:18:42,659
+Necessary condition, but not sufficient. But in order to identify whether our point is local max or local min, we need to focus on these conditions. Okay? Here.
+
+134
+00:18:45,332 --> 00:18:55,492
+Eğer discriminant value negative, we say that p is a saddle point. Whenever discriminant value is 0 at the point p, we say that the test is inconclusive.
+
+135
+00:18:56,012 --> 00:19:08,092
+Attention here, you may change here, you may replace this x with y, so in that case nothing changed. Okay, you may write here, so f.
+
+136
+00:19:08,884 --> 00:19:19,403
+Fyy times Fxx minus Fyx square.
+
+137
+00:19:21,428 --> 00:19:38,068
+Burada, bu konuda, derivasyon, mixed derivasyon, ve 2. ordur derivasyon, bu konuda, bu konuda, bu konuda, bu konuda, 2. ordur derivasyon testi, 2. ordur derivasyon testi, dikkat edin.
+
+138
+00:19:38,528 --> 00:19:48,208
+Karma çift türev, ikinci mertebe eden türevlerin mevcut olması gerekir. Yoksa zaten yazamayız. Şurada xx yerine yy yazsanız da olur gençler. Tamam mı?
+
+139
+00:19:49,940 --> 00:19:54,840
+You may replace x variable and y variable.
+
+140
+00:19:55,039 --> 00:19:58,260
+Any question about this test?
+
+141
+00:19:59,059 --> 00:20:02,180
+Bu testle alakalı soru sormak isteyen var mı gençler?
+
+142
+00:20:03,619 --> 00:20:04,500
+Yoksa geçiyorum.
+
+143
+00:20:08,339 --> 00:20:11,460
+Ok, let's introduce this definition.
+
+144
+00:20:12,399 --> 00:20:14,179
+Now, let's introduce this example.
+
+145
+00:20:26,708 --> 00:20:27,248
+Ok.
+
+146
+00:20:34,548 --> 00:20:54,627
+Example, f of xy given by this quick expression x cubed y cubed minus 3xy plus 4.
+
+147
+00:20:56,768 --> 00:20:58,168
+Okay.
+
+148
+00:20:58,740 --> 00:21:03,740
+Now, first of all, we need to identify critical points of this function.
+
+149
+00:21:04,440 --> 00:21:13,660
+Okay, for this, first of all, we need to compute this f sub x, 3x square, minus 3y.
+
+150
+00:21:14,559 --> 00:21:16,759
+So, you need to solve this equation.
+
+151
+00:21:16,759 --> 00:21:22,720
+F sub y, derivation of f with respect to y, 3y square.
+
+152
+00:21:23,923 --> 00:21:28,183
+minus, minus 3x.
+
+153
+00:21:29,183 --> 00:21:32,384
+So let's try to solve commonly this system.
+
+154
+00:21:32,983 --> 00:21:38,183
+So this implies that y is equal to x squared.
+
+155
+00:21:38,183 --> 00:21:40,463
+This implies that
+
+156
+00:21:40,784 --> 00:21:44,864
+x is equal to y square.
+
+157
+00:21:45,584 --> 00:21:51,443
+When you substitute one of them, okay, let's substitute x into the first equation.
+
+158
+00:21:52,384 --> 00:21:59,884
+So y is equal to, y is equal to x to 4.
+
+159
+00:22:00,144 --> 00:22:03,184
+Dikkatin, x yerine y üzeri 4, şunu yazalım arkadaşlar.
+
+160
+00:22:03,184 --> 00:22:06,860
+When you solve this equation, y to 4.
+
+161
+00:22:06,963 --> 00:22:09,624
+4 minus y is equal to 0.
+
+162
+00:22:10,183 --> 00:22:16,244
+So this implies that y times y cube minus 1 is equal to 0.
+
+163
+00:22:16,244 --> 00:22:22,163
+This implies that y1 is equal to 0.
+
+164
+00:22:22,784 --> 00:22:29,243
+Or y cube y2 is 1.
+
+165
+00:22:30,203 --> 00:22:33,403
+So as you see, we have two possible solution.
+
+166
+00:22:34,548 --> 00:22:49,508
+So, this implies that by using one of them, so x1 is 0, and x2 is 1.
+
+167
+00:22:50,168 --> 00:22:53,067
+Okay, now we have two critical points.
+
+168
+00:22:53,268 --> 00:22:56,607
+The first critical point, x1, y1, 0, 0.
+
+169
+00:22:59,763 --> 00:23:07,323
+x2, y2, 1, 1. Any question about this calculation? I think everyone got this solution.
+
+170
+00:23:08,323 --> 00:23:21,903
+Now, so let's compute discriminant value of this, discriminant value of this function at the point P1, P2.
+
+171
+00:23:22,023 --> 00:23:24,623
+So what is the f sub xx?
+
+172
+00:23:25,023 --> 00:23:38,163
+f sub x x, attention here, so we got 2x, and f sub y y, we got 6y.
+
+173
+00:23:42,675 --> 00:23:59,076
+Ok, now we got this. F sub x y. Şunlardan birini arkadaşlar x'e göre türetin. Mesela şunu türetebilirsiniz. Bunun x'e göre türevi nedir arkadaşlar? Eksi 3. Tamam mı gençler?
+
+174
+00:24:12,723 --> 00:24:14,223
+Okay, so we got this.
+
+175
+00:24:21,107 --> 00:24:28,287
+Şimdi, bu, delta P1, delta P1, delta 0, 0.
+
+176
+00:24:30,287 --> 00:24:31,847
+So, we got this.
+
+177
+00:24:32,587 --> 00:24:34,927
+Now, this is negative, as you see.
+
+178
+00:24:35,207 --> 00:24:41,548
+Whenever discriminant value of f at the point 0, 0, we got saddle point.
+
+179
+00:24:41,687 --> 00:24:45,887
+This means that the point 0, 0 is a saddle point.
+
+180
+00:24:48,468 --> 00:24:54,948
+vekizde, bir nokta ekstremal varlığı, atı point, sattı point, sorry.
+
+181
+00:24:57,828 --> 00:25:04,548
+Now, similarly, if you compute discriminant value of f at the point P211,
+
+182
+00:25:05,748 --> 00:25:11,108
+now you are going to obtain a positive value, as you see.
+
+183
+00:25:11,604 --> 00:25:30,364
+Now, so this means that there is some local extra moon value, but in order to identify whether this local extra moon value mean or max, so you need to investigate, you need to investigate the second order derivation value at 0.11.
+
+184
+00:25:30,364 --> 00:25:36,864
+Okay, now as you see, we got positive value here.
+
+185
+00:25:37,268 --> 00:25:45,067
+Also, you may investigate this, doesn't matter, you are going to obtain the positive value.
+
+186
+00:25:45,067 --> 00:26:03,548
+Okay, now, so this means that these two information says that this point, 1,1, is a local minimum because of this fact, local minimum.
+
+187
+00:26:04,276 --> 00:26:04,916
+point.
+
+188
+00:26:06,036 --> 00:26:16,456
+The corresponding value, f of 1,1, is a local minimum value.
+
+189
+00:26:17,696 --> 00:26:23,176
+Okay, you may compute the value of this f of 1,1 by using the rule of f.
+
+190
+00:26:23,176 --> 00:26:27,336
+Any question about this problem?
+
+191
+00:26:31,700 --> 00:26:53,279
+Ok, so that is mixed derivation. This is mixed derivation. Ok, let me choose different color here. So let's choose open blue. Ok, so this means mixed derivation. Mixed derivation. So if you are given some polynomial function,
+
+192
+00:26:54,579 --> 00:27:05,179
+We know that polynomial function derivations are defined everywhere. That's why we have always this equality. So this means that
+
+193
+00:27:09,844 --> 00:27:14,743
+Tamam, bu da 2nd order derivation, bu da mixed derivation, ya.
+
+194
+00:27:36,500 --> 00:27:37,659
+İkaitin anymore?
+
+195
+00:27:39,659 --> 00:27:40,159
+Okay.
+
+196
+00:27:42,920 --> 00:27:44,200
+Everyone got this.
+
+197
+00:27:46,359 --> 00:27:48,200
+Okay, let me ask you some question.
+
+198
+00:27:48,619 --> 00:27:51,000
+Please try to solve this problem.
+
+199
+00:27:55,347 --> 00:28:07,339
+Evet arkadaşlar, bir tane soru soracağım. Bunu herkes bulsun, önünde kağıt, kalem bulunsun. Ders, derste öğrenilir. Sloganımızı unutmayın. Umarım sınavda...
+
+200
+00:28:10,996 --> 00:28:25,836
+İyi yapmışsınızdır. Derste çalışanlar, derste, ders, derste öğrenenler çok zorlanmamıştır diye umut ediyorum. Baya bir kişi güzel, 90 üzerinde not almış. Tebrik ediyorum arkadaşları. Çalışarak yapanları tabii ki.
+
+201
+00:28:30,963 --> 00:28:34,403
+Evet, şöyle güzel bir soru arıyorum ama sınavlarda bakayım.
+
+202
+00:28:34,983 --> 00:28:36,583
+Çıkmış bir soru var mı?
+
+203
+00:28:41,364 --> 00:28:41,864
+Ok.
+
+204
+00:28:45,907 --> 00:28:48,228
+Okay, this is a nice question.
+
+205
+00:28:52,627 --> 00:29:06,827
+Buna benzer soru çözdük aslında. Bunu yapmayalım. Aynısını sanki benzerini yaptık. Bekleyin arkadaşlar. Şöyle siz tabii ki yazmak isteyenler vardır. Küçülteyim şöyle. Siz rahat rahat yazın.
+
+206
+00:29:11,092 --> 00:29:12,952
+Şöyle güzel bir soru var mı diye.
+
+207
+00:29:17,619 --> 00:29:22,619
+Şimdi bu bir soru.
+
+208
+00:29:22,619 --> 00:29:27,619
+Bir soru.
+
+209
+00:29:30,900 --> 00:29:45,460
+Given some function, 2x² plus y² plus z² minus 2xz,
+
+210
+00:29:52,339 --> 00:29:54,940
+Minus 2 is equal to 0.
+
+211
+00:29:55,299 --> 00:29:56,539
+Implicitli given,
+
+212
+00:29:57,299 --> 00:29:59,700
+Implicitli, not explicitly,
+
+213
+00:30:00,819 --> 00:30:02,180
+Implicitli given,
+
+214
+00:30:03,819 --> 00:30:06,700
+z is equal to f of x, y.
+
+215
+00:30:07,980 --> 00:30:09,019
+Now, classify,
+
+216
+00:30:11,019 --> 00:30:14,740
+classify all critical points.
+
+217
+00:30:20,403 --> 00:30:26,624
+of z is equal to f of xy given by implicit form.
+
+218
+00:30:27,803 --> 00:30:30,703
+I think you may see such question in the next
+
+219
+00:30:30,703 --> 00:30:33,503
+exam, final exam.
+
+220
+00:30:34,183 --> 00:30:36,163
+Okay, please try solve this problem.
+
+221
+00:30:36,943 --> 00:30:42,144
+Attention here, our function z is equal to f of xy is given by
+
+222
+00:30:42,144 --> 00:30:45,624
+an implicit form, not explicit form.
+
+223
+00:30:54,740 --> 00:30:56,559
+Yapsın bakalım herkede arkadaşlar.
+
+224
+00:31:20,596 --> 00:31:30,415
+Classify means you need to identify whether critical point are local max or local min or saddle point.
+
+225
+00:31:30,415 --> 00:32:33,607
+Okay.
+
+226
+00:32:35,647 --> 00:32:36,728
+Any question?
+
+227
+00:32:38,587 --> 00:32:39,528
+Var mı arkadaşlar?
+
+228
+00:32:39,707 --> 00:32:41,367
+Did anybody find the answer?
+
+229
+00:32:43,528 --> 00:32:46,207
+How many critical points are there?
+
+230
+00:32:47,488 --> 00:32:51,367
+First of all, try to identify the number of critical points.
+
+231
+00:34:05,556 --> 00:34:08,876
+Arkadaşlar, ya siyah çok ruhumu kararttı ya.
+
+232
+00:34:18,452 --> 00:34:20,092
+Rahatsız oldum siyah renkte.
+
+233
+00:34:27,507 --> 00:34:28,028
+Evet.
+
+234
+00:34:41,876 --> 00:34:44,436
+Ulan var mı? Orada mısınız gençler?
+
+235
+00:34:45,216 --> 00:34:45,676
+Can you hear me?
+
+236
+00:34:49,907 --> 00:34:53,467
+Arkadaşlar, orada olanlar bir buradayım yazabilir mi? Chatboard'a.
+
+237
+00:34:58,260 --> 00:35:00,260
+Şu an 66 kişi gözüküyor ama...
+
+238
+00:35:20,115 --> 00:35:23,056
+Ok, let's see, let's solve.
+
+239
+00:35:25,376 --> 00:35:32,355
+Ok, if some function is given by an implicit form, how can we compute its derivation?
+
+240
+00:35:32,715 --> 00:35:43,416
+The derivation of that with respect to x, so minus capital F of derivation with respect to x.
+
+241
+00:35:45,300 --> 00:36:12,539
+Okay, so here, so f of x, y, z here, this is f of x, y, z. Now, minus derivation of capital F with respect to x, 4x minus 2z over derivation of capital F with respect to z, 2z.
+
+242
+00:36:15,092 --> 00:36:19,092
+minus 2x.
+
+243
+00:36:19,752 --> 00:36:23,992
+Now, as you see, we got this expression.
+
+244
+00:36:26,752 --> 00:36:27,912
+When you solve this,
+
+245
+00:36:30,672 --> 00:36:31,471
+2z
+
+246
+00:36:31,471 --> 00:36:35,811
+minus 4x
+
+247
+00:36:35,811 --> 00:36:37,471
+is equal to 0.
+
+248
+00:36:38,512 --> 00:36:39,572
+This means that
+
+249
+00:36:39,572 --> 00:36:42,052
+z is equal to
+
+250
+00:36:42,643 --> 00:36:43,884
+2x.
+
+251
+00:36:44,623 --> 00:36:46,344
+Okay, z is equal to 2x.
+
+252
+00:36:46,423 --> 00:36:48,443
+This is the first component.
+
+253
+00:36:49,483 --> 00:36:52,523
+Let's compute second component of gradient vector
+
+254
+00:36:52,523 --> 00:36:55,543
+minus capital F sub y
+
+255
+00:36:55,543 --> 00:36:58,683
+over capital F sub z.
+
+256
+00:37:00,283 --> 00:37:02,884
+Dariation of capital F with respect to y
+
+257
+00:37:02,884 --> 00:37:04,183
+2y
+
+258
+00:37:05,619 --> 00:37:11,000
+over derivation of capital F, which is back to z, 2z minus 2x.
+
+259
+00:37:11,539 --> 00:37:13,679
+Now let's try to solve this equation.
+
+260
+00:37:14,039 --> 00:37:18,739
+So this implies that y is equal to 0.
+
+261
+00:37:19,359 --> 00:37:24,679
+So when you solve, when you solve commonly this, but so in order to solve,
+
+262
+00:37:24,679 --> 00:37:31,199
+by substituting this expression and this expression into our,
+
+263
+00:37:33,331 --> 00:37:54,971
+Implicit form, ok, let's try to solve this equation, 2x square plus y is 0, 0 square plus z is 2x, 2x square minus 2x times z is 2x minus 2 is equal to 0.
+
+264
+00:38:00,211 --> 00:38:27,659
+Bu, bu
+
+265
+00:38:27,860 --> 00:38:29,760
+Z-value, ok?
+
+266
+00:38:31,699 --> 00:38:32,140
+Now,
+
+267
+00:38:33,640 --> 00:38:35,659
+so we have two critical points,
+
+268
+00:38:36,320 --> 00:38:37,860
+x1-1,
+
+269
+00:38:38,039 --> 00:38:39,320
+y1-0,
+
+270
+00:38:39,860 --> 00:38:40,960
+z1,
+
+271
+00:38:41,960 --> 00:38:44,020
+z1-2,
+
+272
+00:38:47,140 --> 00:38:48,220
+and p2,
+
+273
+00:38:50,579 --> 00:38:51,860
+x21,
+
+274
+00:38:52,119 --> 00:38:53,400
+y2-0,
+
+275
+00:38:53,600 --> 00:38:54,360
+z22,
+
+276
+00:38:54,360 --> 00:38:54,579
+but,
+
+277
+00:38:55,092 --> 00:39:02,471
+In order to apply discriminant function, we need to use the first component here, x1, y1. Attention here.
+
+278
+00:39:03,172 --> 00:39:12,931
+Now, so we need to compute derivation of, derivation of that with respect to x.
+
+279
+00:39:13,572 --> 00:39:22,572
+Okay, here. So how can we compute this? So we know this by using this expression and by using
+
+280
+00:39:23,635 --> 00:39:29,695
+The caution rule for derivation, you are going to obtain this.
+
+281
+00:39:32,135 --> 00:39:37,175
+Okay, dot dot dot, finally, uzun uzun yapmıyorum arkadaşlar, siz yaparsınız.
+
+282
+00:39:39,015 --> 00:39:43,195
+P noktasını, P1 noktasını yerleştirince arkadaşlar,
+
+283
+00:39:43,827 --> 00:39:55,827
+1, 0, 2. Aslında şöyle yapalım. P2'yi yerleştirmiş ilk önce. Evet, burası P2 olmuş. P2'yi yerleştirirsek arkadaşlar, burası eksi 2 gelecek. Tamam mı?
+
+284
+00:40:07,251 --> 00:40:22,112
+Now, in that case, you are going to use this expression and quotient rule, but taking take out the fact that z depends on x, but in that case, you cannot apply implicit function formula.
+
+285
+00:40:22,112 --> 00:40:25,391
+Okay, now dot, dot, dot, finally.
+
+286
+00:40:29,844 --> 00:40:34,923
+Bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nesilin bu nes
+
+287
+00:40:37,940 --> 00:40:40,559
+Minus 1 over 4.
+
+288
+00:40:41,220 --> 00:40:41,519
+Ok.
+
+289
+00:40:46,132 --> 00:40:52,791
+Evet arkadaşlar, bu şekilde. Benzer şekilde şunları da hesaplarsınız.
+
+290
+00:41:07,347 --> 00:41:07,908
+Tool
+
+291
+00:41:15,092 --> 00:41:15,952
+P1
+
+292
+00:41:20,820 --> 00:41:23,900
+Orda, 1 over 4.
+
+293
+00:41:26,720 --> 00:41:27,060
+Okay.
+
+294
+00:41:27,680 --> 00:41:28,079
+Now,
+
+295
+00:41:28,440 --> 00:41:30,900
+you need to compute this.
+
+296
+00:41:39,347 --> 00:41:47,387
+Bunu da yaparsanız arkadaşlar, tanımlı olduğundan dolayı ister x ondan sonra y fark etmez. Birinden birini yapın arkadaşlar.
+
+297
+00:41:50,387 --> 00:42:00,427
+Uzun uzun yapmıyorum. Bunların p2'de aldığı değer, önce p2 yapmış, p2'de aldığı değer 0.
+
+298
+00:42:08,659 --> 00:42:14,279
+P1'de aldığı değer, arkadaşlar, o da sıfır gelmiş.
+
+299
+00:42:15,199 --> 00:42:15,479
+Okay.
+
+300
+00:42:16,439 --> 00:42:20,500
+So, let's just focus on this expression by using these values.
+
+301
+00:42:20,960 --> 00:42:22,079
+Attention here.
+
+302
+00:42:28,403 --> 00:42:30,844
+So, by using discriminant function,
+
+303
+00:42:33,804 --> 00:42:38,244
+discriminant value at the point P2,
+
+304
+00:42:42,963 --> 00:42:48,083
+So you are gonna then minus 1 over 2, which is, oh sorry.
+
+305
+00:42:55,092 --> 00:42:58,412
+So, which is positive? Okay, 1 over 2.
+
+306
+00:43:03,219 --> 00:43:24,076
+Bu, bu
+
+307
+00:43:31,347 --> 00:43:47,068
+This means that P2 is a local, a local max, simon point. And similarly, you can compute this P1.
+
+308
+00:43:49,068 --> 00:43:53,887
+So this is negative, oh sorry, positive.
+
+309
+00:43:56,688 --> 00:43:57,467
+And
+
+310
+00:44:00,596 --> 00:44:10,076
+Ok, let me write here, and, let me write here, and, f sub xx, p1, so this is,
+
+311
+00:44:12,775 --> 00:44:15,636
+Buna gelmiş arkadaşlar, bu da,
+
+312
+00:44:20,148 --> 00:44:24,688
+Negatif gelmiş, pozitif gelmiş. Kaç gelmiş onu göremedim.
+
+313
+00:44:26,688 --> 00:44:29,868
+Ok, that is pozitif. 2 gelmiş. Tamam arkadaşlar.
+
+314
+00:44:30,748 --> 00:44:36,788
+P1 is a local minimum point.
+
+315
+00:44:38,307 --> 00:44:38,988
+Ok.
+
+316
+00:44:39,827 --> 00:44:48,307
+Dikkat edin arkadaşlar. Şimdi bazı kaynaklarda şöyle bir şey var. In some books, so discriminant is defined by this.
+
+317
+00:44:48,307 --> 00:45:03,788
+So, discriminant function, in some books, discriminant function defined by this fxy or minus fxx times fyy.
+
+318
+00:45:07,668 --> 00:45:16,967
+Fxx times Fyy minus Fxy squared.
+
+319
+00:45:16,967 --> 00:45:24,168
+Generally, I prefer to use this, but in some books discriminant is defined by this.
+
+320
+00:45:24,168 --> 00:45:33,068
+But in this case, the precondition for existence of local extreme value here, so we can say that
+
+321
+00:45:33,248 --> 00:45:38,928
+So, exists, there exists, extramon value, okay, extramon value.
+
+322
+00:45:39,668 --> 00:45:52,728
+But, if you prefer to use this definition, discriminant, if discriminant is positive, then we can say that there exists, extramon value, okay.
+
+323
+00:45:53,168 --> 00:46:00,168
+But because of this positiveness, I prefer to use this definition, but I do not prefer to use this definition, okay.
+
+324
+00:46:00,628 --> 00:46:04,628
+Bu da gerçek. Ama bizim dersimizde bunu kullanmak istiyorum.
+
+325
+00:46:04,628 --> 00:46:14,628
+Dikkat edin arkadaşlar, ben dersimde pozitif sonucu veren olanı tercih etmeyi, kullanmayı tercih ediyorum arkadaşlar. Ona dikkat edin. Tamam mı?
+
+326
+00:46:14,628 --> 00:46:15,628
+Tamam.
+
+327
+00:46:19,155 --> 00:46:21,655
+Kaynaklarda görürseniz kafanız karışmaz.
+
+328
+00:46:28,755 --> 00:46:34,595
+ekstra bir değer nasıl hesaplanır? O zaman şurada bir tane daha teorem veriyorum.
+
+329
+00:46:47,476 --> 00:46:52,256
+If f is continuous
+
+330
+00:46:55,987 --> 00:46:56,788
+over
+
+331
+00:46:56,788 --> 00:47:00,567
+some closed domain
+
+332
+00:47:07,987 --> 00:47:08,547
+On
+
+333
+00:47:12,115 --> 00:47:12,756
+Ben.
+
+334
+00:47:18,675 --> 00:47:34,735
+The absolute max and absolute mean value on this domain.
+
+335
+00:47:39,891 --> 00:47:53,871
+Eğer f'niz düzlemde kapalı bir bölge üzerinde sürekli ise, o zaman bu fonksiyonun alabileceği maksimum ve minimum değer vardır. Tamam mı gençler?
+
+336
+00:47:53,871 --> 00:48:06,331
+Şimdi bir örnek ile taşlandıralım bu. Sınavlarda karşınıza gelebilecek bir soru yazalım. Şöyle basit bir soru ama mantığı bizim için önemli.
+
+337
+00:48:07,219 --> 00:48:14,340
+Ok, so, example, question, given,
+
+338
+00:48:18,068 --> 00:48:21,387
+Dömen,
+
+339
+00:48:27,411 --> 00:48:29,192
+buy this
+
+340
+00:48:33,556 --> 00:48:35,396
+Let me sketch this domain.
+
+341
+00:48:42,547 --> 00:48:43,987
+So, this is our domain.
+
+342
+00:48:46,907 --> 00:48:50,247
+So, this is the point 0, 9.
+
+343
+00:48:50,587 --> 00:48:54,307
+This is the point 9, 0.
+
+344
+00:48:56,767 --> 00:48:57,487
+Okay.
+
+345
+00:48:58,887 --> 00:49:09,847
+And let's say this is the domain R, and F defined on R.
+
+346
+00:49:10,643 --> 00:49:33,323
+Then, define on R by this, by this rule, by this rule, f of x, y, 2 plus, 2x plus, 2y, minus x square,
+
+347
+00:49:34,291 --> 00:49:35,891
+Y2, y2.
+
+348
+00:49:36,191 --> 00:49:43,331
+Okay, now for this function, maybe some cost function of some company.
+
+349
+00:49:43,571 --> 00:49:43,791
+Okay.
+
+350
+00:49:45,431 --> 00:49:46,751
+Producing some object.
+
+351
+00:49:47,511 --> 00:49:50,971
+But as you know, so we have some limited sources.
+
+352
+00:49:51,311 --> 00:49:55,151
+Okay, we can represent our limited sources by this closed domain.
+
+353
+00:49:56,071 --> 00:50:01,431
+Okay, taking into account this domain, which represents the limited sources.
+
+354
+00:50:01,920 --> 00:50:07,920
+And our cost function given by this.
+
+355
+00:50:08,920 --> 00:50:09,820
+Okay? Rule.
+
+356
+00:50:10,480 --> 00:50:16,340
+So then, compute the maximum cost or minimum cost, whatever you like.
+
+357
+00:50:16,440 --> 00:50:21,220
+Okay? Now, dikkat edin arkadaşlar. Bir tane şirket var. Bir ürün üretiyor.
+
+358
+00:50:21,740 --> 00:50:26,900
+Tabi bu şirketin ürünü üretirken kısıtları vardır. Doğru mu arkadaşlar? Sınırlı kaynağa sahiptir.
+
+359
+00:50:27,507 --> 00:50:48,867
+Bu x, y'ler olsun, x kaynağı, y kaynağı, iki tane ürüne bağlı olsun. Dolayısıyla maliyeti de fx, y şeklinde olsun, misal diyelim. O zaman ne olacak? En az maliyetle ya da en yüksek kar ile satmak istiyorsunuz. Bu kar fonksiyonu da olabilir. Satmak istiyorsanız ne yapacaksınız? İşte bunu bulacaksınız.
+
+360
+00:50:51,923 --> 00:51:10,763
+Mutlak problemi. Mutlaktır burada arkadaşlar. Neden? Bu teoreme göre bir en büyük değer veya en küçük değer olacaktır. Çünkü sürekli bizim fonksiyonumuz ve bölgemiz de kapalı. Dolayısıyla en büyük ve en küçük değerden bahsedebilirsiniz. Mutlak, max ve mutlak minden yani. Tamam mı? Solution.
+
+361
+00:51:10,763 --> 00:51:10,884
+Solution.
+
+362
+00:51:12,543 --> 00:51:13,143
+Okey.
+
+363
+00:51:13,603 --> 00:51:14,963
+Let me try here.
+
+364
+00:51:17,619 --> 00:51:30,719
+We investigate the existence of absolute points on bounds of this closed domain and critical points.
+
+365
+00:51:30,719 --> 00:51:36,319
+But this is critical point, possibly. This is critical point. This is critical point. Okay?
+
+366
+00:51:36,319 --> 00:51:42,779
+And there may be some absolute point inside this domain. Okay.
+
+367
+00:51:46,675 --> 00:51:53,556
+İlk başta, ilk ilk kritik bir şey, ilk kritik bir şey.
+
+368
+00:51:59,923 --> 00:52:26,504
+f sub x, 2 minus 2x, let's try to solve this equation, f sub y, 2 minus 2y, when you solve this, x is 1, when you solve this, y is 1, so common solution, so this is critical point, 1, 1.
+
+369
+00:52:26,931 --> 00:52:30,011
+Ok, so I see 1,1 somewhere here.
+
+370
+00:52:31,031 --> 00:52:33,431
+There is some critical point, 1,1 here.
+
+371
+00:52:33,531 --> 00:52:36,511
+There may be some local extreme value at the critical point.
+
+372
+00:52:37,111 --> 00:52:43,791
+Ok, we need to check out whether there exists some extreme value or not at the point P.
+
+373
+00:52:44,791 --> 00:52:46,475
+Ok, now...
+
+374
+00:52:47,635 --> 00:53:13,516
+F sub x x, f sub x x, so this is minus 2, so actually this is always negative, f sub y, y, so that is minus 2, and f sub x y, f sub x y, okay, that is 0.
+
+375
+00:53:13,972 --> 00:53:17,492
+Now, taking into account this fact, discriminant value,
+
+376
+00:53:20,012 --> 00:53:26,452
+discriminant of this function at the point 11, f sub xx,
+
+377
+00:53:27,952 --> 00:53:30,552
+times f sub yy,
+
+378
+00:53:31,572 --> 00:53:37,252
+minus the square of f sub xy,
+
+379
+00:53:38,512 --> 00:53:40,752
+so this is positive.
+
+380
+00:53:41,235 --> 00:54:07,692
+Bu, bu
+
+381
+00:54:07,827 --> 00:54:08,827
+A local
+
+382
+00:54:08,827 --> 00:54:27,588
+Maximum point, maximum value, sorry, maximum value at the point one one. So the maximum value here f of one one by using the rule of function.
+
+383
+00:54:28,115 --> 00:54:29,915
+You can compute this.
+
+384
+00:54:30,415 --> 00:54:37,215
+F of one one. Ne geliyor arkadaşlar? F bir bir. Hesaplarsanız, şuradan hesaplayalım. F bir bir.
+
+385
+00:54:38,455 --> 00:54:44,355
+2 artı 2 artı 2 eksi 1 eksi 1. Şunlar gider. 4 mi geldi?
+
+386
+00:54:45,036 --> 00:54:54,195
+Ok. F of one one is four. So just consider this value. Just register this value. Let me use this.
+
+387
+00:54:55,411 --> 00:54:56,411
+Red color.
+
+388
+00:54:57,652 --> 00:54:58,011
+Okay.
+
+389
+00:54:58,491 --> 00:54:58,791
+Done.
+
+390
+00:55:00,051 --> 00:55:01,371
+So let's investigate.
+
+391
+00:55:02,371 --> 00:55:04,172
+Let's investigate
+
+392
+00:55:04,172 --> 00:55:08,631
+some local extremum values
+
+393
+00:55:08,631 --> 00:55:09,672
+leaving on
+
+394
+00:55:09,672 --> 00:55:13,411
+boundaries or boundary curves
+
+395
+00:55:13,411 --> 00:55:14,192
+on this.
+
+396
+00:55:14,579 --> 00:55:33,159
+Dikkat edin, içeride bir bir noktasında bir ekstra mum değer var, lokal ekstra mum değer var. Sınırlarda da arkadaşlar, dikkat edin, burada uç noktalarda ekstra mum değerler olabilir. İkinci türev testinden gelmez onlar arkadaşlar. Onu özel olarak inceleyeceksiniz.
+
+397
+00:55:33,159 --> 00:55:39,299
+Ne yapacaksınız? Onun için, second step, let me right here, second step.
+
+398
+00:55:44,083 --> 00:55:49,063
+Investigate extremist values of this function at boundary curves.
+
+399
+00:55:49,824 --> 00:55:59,663
+So, for example, 4x values living in this interval.
+
+400
+00:56:00,583 --> 00:56:02,903
+So, in this case, y is 0.
+
+401
+00:56:03,223 --> 00:56:07,523
+So, this means that, let me sketch this domain again.
+
+402
+00:56:11,027 --> 00:56:14,027
+Bu 0.09.
+
+403
+00:56:14,027 --> 00:56:25,027
+Bu 0.90.
+
+404
+00:56:25,027 --> 00:56:29,027
+Bu 0.
+
+405
+00:56:32,724 --> 00:56:59,756
+Bu, bu
+
+406
+00:57:00,019 --> 00:57:03,279
+Şimdi, bu, minus 2.
+
+407
+00:57:03,960 --> 00:57:07,019
+So, critical point of this.
+
+408
+00:57:08,460 --> 00:57:10,559
+So, x1, 1.
+
+409
+00:57:11,519 --> 00:57:14,079
+So, you see, because of this fact,
+
+410
+00:57:16,159 --> 00:57:17,639
+that is negative.
+
+411
+00:57:18,359 --> 00:57:24,579
+So, this means that, so, 1 is a critical, 1 is a local extreme value for this function.
+
+412
+00:57:24,759 --> 00:57:25,739
+This means that,
+
+413
+00:57:27,668 --> 00:57:36,708
+F10, that is 3, is a local, is a local maximum value.
+
+414
+00:57:37,827 --> 00:57:38,188
+Okay.
+
+415
+00:57:38,847 --> 00:57:43,088
+Now let me register this value.
+
+416
+00:57:43,387 --> 00:57:43,628
+Okay.
+
+417
+00:57:43,628 --> 00:57:51,048
+Now, so let's investigate other case here.
+
+418
+00:57:52,188 --> 00:57:53,628
+Now for...
+
+419
+00:57:56,628 --> 00:58:20,628
+y-values, leaving between 0 and 9. So in this case, x-coordinates are always 0. Then, so we got this 0y. Okay, when you substitute 0y pairs in the rule of function, you are going to obtain this expression to
+
+420
+00:58:20,947 --> 00:58:23,867
+2y minus y squared.
+
+421
+00:58:23,867 --> 00:58:31,347
+Okay, similarly, if you do the similar calculation, you are going to obtain this.
+
+422
+00:58:33,467 --> 00:58:44,427
+F01 results in 3 is a local maximum value.
+
+423
+00:58:48,083 --> 00:59:13,664
+Ok, so this is the third value, which must be registered. Ok, now, finally, you need to investigate, existence of local extreme value at this line. So let me write, so let me write here, x over 9 plus y over 9.
+
+424
+00:59:14,164 --> 00:59:41,580
+Bu, bu
+
+425
+00:59:41,652 --> 00:59:48,512
+f, ok, x, 9 minus, 9 minus x.
+
+426
+00:59:49,211 --> 00:59:52,271
+So in that case, we have this.
+
+427
+00:59:55,731 --> 01:00:15,092
+Uzun uzun yazacaksınız arkadaşlar. 2 artı 2x artı 2 çarpı 9 eksi x diye gördüğünüz yere 9 eksi x yazacaksınız. Eksi x kare eksi 9 eksi x'in karesi. Buradan arkadaşlar türevini alırsanız bunu.
+
+428
+01:00:15,923 --> 01:00:37,364
+Tek değişkenli olduğundan dolayı arkadaşlar, tek değişkenli olduğundan dolayı türevini alırsanız x'e göre ne gelecek arkadaşlar? Sıfıra eşlerseniz, sıfıra eşlerseniz, buradan 4x-4x artı 18 eşittir 0. Buradan kritik nokta x eşittir 9 bölü 2. This is critical point.
+
+429
+01:00:41,652 --> 01:01:02,731
+Yani y'ye de 9 bölü 2 gelecek arkadaşlar. Bu da 9 bölü 2 gelecek. Bunu da yaparsanız arkadaşlar, ikinci mertebeden türevini de alırsanız, 9 bölü 2, 9 bölü 2, tabi buradaki kısıtlara göre ne geliyor o da? Yaparsanız, uzun uzun yapmıyorum arkadaşlar, negatif gelmiş.
+
+430
+01:01:03,951 --> 01:01:09,031
+Okey, diz mi ister? Diz mi ister?
+
+431
+01:01:13,364 --> 01:01:16,023
+So, this is the local maximum value.
+
+432
+01:01:17,603 --> 01:01:21,563
+9 bölü 2, 9 bölü 2'yi hesapladığınızda, bu da,
+
+433
+01:01:22,943 --> 01:01:23,443
+eksi,
+
+434
+01:01:25,143 --> 01:01:27,183
+61 bölü 2 geldi arkadaşlar.
+
+435
+01:01:30,364 --> 01:01:32,123
+Local maximum value.
+
+436
+01:01:33,963 --> 01:01:36,203
+This is local maximum value.
+
+437
+01:01:37,743 --> 01:01:39,743
+Okay. Now just compare
+
+438
+01:01:41,556 --> 01:02:07,775
+Just compare all values obtained here. So compare this value. Let me make it smaller. Compare these values, these values, these values, okay? And these values. Which one is the greatest one? Of course, this one. So this is the absolute, absolute, this is the absolute.
+
+439
+01:02:12,692 --> 01:02:13,931
+Maximum value.
+
+440
+01:02:16,051 --> 01:02:18,951
+Anlaşıldı mı arkadaşlar? Herhalde anlaşıldı.
+
+441
+01:02:26,164 --> 01:02:28,104
+Mutlak, maksimum, değer.
+
+442
+01:02:32,596 --> 01:02:35,596
+Evet, geçiyorum arkadaşlar. Sorusu olan var mı? Anyquation.
+
+443
+01:02:41,907 --> 01:02:43,427
+Sorusu olan yok galiba.
+
+444
+01:02:54,835 --> 01:02:56,375
+Bir ara verelim. Have a break.
+
+445
+01:02:57,036 --> 01:02:57,556
+10 minutes.
+
+446
+01:02:58,496 --> 01:03:00,695
+15 minutes. 15 dakikara verelim arkadaşlar.
+
+447
+01:03:03,556 --> 01:03:05,795
+Şöyle, yazmak isteyen vardır belki.
+
+448
+01:03:18,516 --> 01:03:40,856
+Sınavda böyle bir soru bekliyorum arkadaşlar. Sorabiliyorlar. Bir fonksiyon, kapalı bir bölge, sınırlı bir bölge arkadaşlar. Şurayı closet'tan kastımız arkadaşlar, yani karıştırmayın. Topolojik kapalıkla karışmasın. Sınırlı diyelim. Some, closet and, bounded diyelim.
+
+449
+01:03:52,211 --> 01:03:52,632
+Evet.
+
+450
+01:18:43,347 --> 01:18:45,207
+Merhaba gençler, sesim geliyor mu?
+
+451
+01:18:50,036 --> 01:18:51,076
+Okay, let's go on.
+
+452
+01:18:54,456 --> 01:18:58,716
+Taylor formula, Taylor formula of two variable function.
+
+453
+01:18:58,716 --> 01:19:00,636
+A new topic, Taylor.
+
+454
+01:19:14,707 --> 01:19:29,587
+Okay, don't worry [öğrenci], I saw your view. Okay, Taylor formula. So let's recall the Taylor formula for the case single variable function.
+
+455
+01:19:32,867 --> 01:19:36,227
+So we know that, so this is the Taylor formula.
+
+456
+01:19:43,636 --> 01:19:45,916
+of any function with single variable.
+
+457
+01:19:50,836 --> 01:19:53,775
+Okay, so this is a single variable case.
+
+458
+01:19:56,416 --> 01:19:56,936
+Single
+
+459
+01:20:01,108 --> 01:20:02,748
+multivariable case.
+
+460
+01:20:03,408 --> 01:20:05,788
+So what about multivariable case?
+
+461
+01:20:05,788 --> 01:20:07,528
+So let's given
+
+462
+01:20:07,528 --> 01:20:10,028
+let
+
+463
+01:20:10,028 --> 01:20:13,328
+that f of x, y
+
+464
+01:20:17,235 --> 01:20:18,475
+BF function
+
+465
+01:20:23,604 --> 01:20:27,824
+whose all function, whose all derivation exist.
+
+466
+01:20:28,564 --> 01:20:30,264
+Okay, so this is very important.
+
+467
+01:20:39,283 --> 01:20:41,283
+And open,
+
+468
+01:20:43,043 --> 01:20:45,043
+Open disk,
+
+469
+01:20:46,923 --> 01:20:48,923
+Center it,
+
+470
+01:20:50,724 --> 01:20:52,724
+At the point,
+
+471
+01:20:55,323 --> 01:20:56,323
+AB.
+
+472
+01:20:58,243 --> 01:21:01,228
+Taylor expansion of this,
+
+473
+01:21:04,467 --> 01:21:10,847
+function around AB point, around AB point, so given by this.
+
+474
+01:21:16,275 --> 01:21:18,536
+So let me use this notation.
+
+475
+01:21:20,015 --> 01:21:25,296
+X minus a times, let me use this notation.
+
+476
+01:21:25,415 --> 01:21:27,275
+I will explain this notation later.
+
+477
+01:21:28,056 --> 01:21:29,716
+But first of all, let me write here.
+
+478
+01:21:30,675 --> 01:21:36,536
+Y minus b, d sub y to n.
+
+479
+01:21:37,876 --> 01:21:38,355
+Okay.
+
+480
+01:21:41,855 --> 01:21:43,636
+Now we apply this.
+
+481
+01:21:45,332 --> 01:21:48,891
+We apply this operation to f.
+
+482
+01:21:50,512 --> 01:21:59,712
+And so you need to compute value of this at the point a, b, at the point b, over m!
+
+483
+01:22:00,712 --> 01:22:03,072
+So let me explain this.
+
+484
+01:22:07,923 --> 01:22:10,003
+Operation. So what does it mean?
+
+485
+01:22:11,304 --> 01:22:13,363
+So this is, for example,
+
+486
+01:22:15,123 --> 01:22:16,443
+4 and 0,
+
+487
+01:22:17,064 --> 01:22:18,824
+you are going to obtain this.
+
+488
+01:22:20,404 --> 01:22:22,263
+F of x, y.
+
+489
+01:22:22,923 --> 01:22:24,263
+4 and 1,
+
+490
+01:22:25,603 --> 01:22:27,603
+you are going to obtain this.
+
+491
+01:22:28,023 --> 01:22:29,884
+x minus a
+
+492
+01:22:29,884 --> 01:22:31,923
+times
+
+493
+01:22:31,923 --> 01:22:34,463
+dx, in fact
+
+494
+01:22:34,899 --> 01:22:59,500
+D over dx, plus y minus b, times, d over dy, ok, now here, fxy, so this means that x minus a, times, df over dx, plus y minus b,
+
+495
+01:22:59,872 --> 01:23:02,791
+df over dy.
+
+496
+01:23:02,791 --> 01:23:24,551
+Now, similarly, if you substitute n2, so just take square of this expression, so x minus a times d over dx plus y minus b d over dy square.
+
+497
+01:23:25,203 --> 01:23:27,724
+So, let's compute this, first of all.
+
+498
+01:23:29,343 --> 01:23:51,984
+Now, if you compute this, if you compute it, if you take the square of this expression, so this is x minus a square times b square over the x square plus x minus a times y minus b times d square.
+
+499
+01:23:53,332 --> 01:23:56,131
+Ok, over dx dy.
+
+500
+01:23:58,311 --> 01:24:01,572
+Ok, we need to put this 2x.
+
+501
+01:24:03,712 --> 01:24:08,652
+Birinci de ikinin çarpımın iki katı arkadaşlar. Artı ikincinin karesi.
+
+502
+01:24:14,644 --> 01:24:16,584
+Ok, so we got this.
+
+503
+01:24:19,783 --> 01:24:29,543
+And f sub x y, and you can compute similarly other terms.
+
+504
+01:24:29,543 --> 01:24:31,904
+Ok, so 4 and 3.
+
+505
+01:24:32,904 --> 01:24:35,275
+So you need to take q po...
+
+506
+01:24:35,636 --> 01:24:49,256
+of this expression. x-a, ddx, artı y-b, d bölü dy'nin küpünü alarak devam edeceksiniz arkadaşlar. Tamam. Yani binomial. By using binomial formula, you can obtain this.
+
+507
+01:24:50,256 --> 01:24:52,436
+Now, so let me introduce some example.
+
+508
+01:25:03,380 --> 01:25:04,960
+Consider this example.
+
+509
+01:25:08,220 --> 01:25:11,000
+Cosine x, y.
+
+510
+01:25:14,996 --> 01:25:42,604
+ve f'i'
+
+511
+01:25:42,644 --> 01:26:08,224
+x, y, and compute the value of this function at the point 1, 0. So that is 0. F sub x, x, bir daha x'e göre türevini alsanız, x, y kare, kısmi türev, x, y, okay, derivation value at the point,
+
+512
+01:26:09,076 --> 01:26:31,995
+1, 0, here, 0. Now we need to compute f-sub, let me use different color, f-sub, y, minus x, sin, x, y, derivation value of this function at the point 1, 0.
+
+513
+01:26:35,091 --> 01:26:37,412
+f sub yy
+
+514
+01:26:37,412 --> 01:26:41,611
+minus
+
+515
+01:26:41,611 --> 01:26:44,091
+x square
+
+516
+01:26:44,091 --> 01:26:45,412
+cosine
+
+517
+01:26:45,412 --> 01:26:46,811
+x y
+
+518
+01:26:46,811 --> 01:26:49,671
+and value of this expression
+
+519
+01:26:49,671 --> 01:26:50,871
+at the point
+
+520
+01:26:50,871 --> 01:26:52,572
+1 0
+
+521
+01:26:52,572 --> 01:26:55,791
+minus 1
+
+522
+01:26:55,791 --> 01:26:57,711
+ok
+
+523
+01:26:57,711 --> 01:27:02,611
+dikkat edin arkadaşlar, bu şekilde gidiyor.
+
+524
+01:27:08,372 --> 01:27:12,272
+Başka şeyleri de alabilirsiniz. Böyle gideceğiz arkadaşlar.
+
+525
+01:27:20,724 --> 01:27:28,024
+Ok, diğerlerini de bulabilirsiniz. Ama ben şöyle yapayım. Diğerleri sıfır gelecek arkadaşlar. Tamam.
+
+526
+01:27:30,864 --> 01:27:39,203
+Ya da şuraya şöyle yapalım. Diğerleri sıfır gelecek mi bilmiyorum. Compute Taylor polynomial of this function. Second order Taylor polynomial.
+
+527
+01:27:39,203 --> 01:27:45,844
+Ok, now so Taylor polynomial given by this from 0 to infinite.
+
+528
+01:27:51,091 --> 01:27:54,211
+x minus a, a is 1,
+
+529
+01:27:58,452 --> 01:28:00,092
+y-0
+
+530
+01:28:07,091 --> 01:28:13,371
+Apply this and take this over m-factory.
+
+531
+01:28:14,271 --> 01:28:18,371
+So compute at the point 1, 0.
+
+532
+01:28:19,091 --> 01:28:33,191
+Okay, if you expand this, f of 1, 0 plus x minus 1 times f sub x, 1, 0.
+
+533
+01:28:33,747 --> 01:29:00,067
+y minus 0, f of f sub y, 1, 0. So this is 4, and 1. Okay, so this is 4 and 0. So this corresponds, and 1, and
+
+534
+01:29:04,724 --> 01:29:31,943
+Let me write here, so we got 2 factorial here. Now x minus 1 times f sub xx at the point 1 0, square of this, plus 2 times x minus 1 times y times f sub xy 1 0.
+
+535
+01:29:34,323 --> 01:29:40,323
+Dikkat edin arkadaşlar, birincinin karesi, birincinin çarpımının iki katı, artı ikincinin karesi yapıyorum.
+
+536
+01:29:41,363 --> 01:29:42,663
+Artı benim karesi gibi.
+
+537
+01:29:43,743 --> 01:29:50,884
+Artı y square f sub y y one zero.
+
+538
+01:29:52,443 --> 01:29:54,863
+Ok, we need to compute this attention here.
+
+539
+01:29:55,103 --> 01:29:59,323
+We did not compute this f sub x y mixed derivation.
+
+540
+01:30:00,163 --> 01:30:01,063
+Hiç çalışmıyor ya.
+
+541
+01:30:01,876 --> 01:30:05,515
+Karmaşık türevi hesaplamadık arkadaşlar. Onu da hesaplardınız.
+
+542
+01:30:05,515 --> 01:30:10,336
+Let's compute f sub x y.
+
+543
+01:30:11,556 --> 01:30:13,316
+You are going to obtain that.
+
+544
+01:30:18,676 --> 01:30:19,176
+0
+
+545
+01:30:24,724 --> 01:30:30,344
+Okay, now, if you substitute x1, y0,
+
+546
+01:30:34,228 --> 01:30:41,548
+Bunları yapacak olursanız arkadaşlar, diğerleri gidiyor tabii ki böyle gidiyor. Artı bu şekilde gidiyor.
+
+547
+01:30:42,676 --> 01:30:49,716
+yaptığımızda, ikinci mertebedene kadar bulun arkadaşlar. Ondan sonrasını yapmayın. Genellikle sınavda ikinci mertebedene kadar soruyor.
+
+548
+01:30:49,716 --> 01:30:59,096
+Şimdi, in the exam generally you are asked to compute second or third order polynomial, Taylor polynomial of given function.
+
+549
+01:30:59,695 --> 01:31:10,195
+Okay, f of 1, 0, that is 1. So we got this, y square over 2 plus other terms.
+
+550
+01:31:10,899 --> 01:31:15,420
+Tamam mı arkadaşlar? İkinci dereceden Taylor Polynomu, bir eksi y kare bölü iki.
+
+551
+01:31:15,619 --> 01:31:18,079
+So this is the second order Taylor Polynomial.
+
+552
+01:31:18,079 --> 01:31:31,739
+Second order Taylor Polynomial of f.
+
+553
+01:31:33,739 --> 01:31:35,059
+Around
+
+554
+01:31:38,195 --> 01:31:41,675
+around the point 1, 0.
+
+555
+01:31:44,195 --> 01:31:45,615
+Evet, anlaşıldı galiba.
+
+556
+01:31:52,787 --> 01:31:54,467
+Sorusu olan var mı? Eni Koy için.
+
+557
+01:31:57,387 --> 01:31:59,207
+Şarj aletini takayım arkadaşlar.
+
+558
+01:32:13,363 --> 01:32:13,884
+Tamam.
+
+559
+01:32:16,884 --> 01:32:18,963
+Taylor polinomunu da sunduk.
+
+560
+01:32:19,703 --> 01:32:22,023
+Çıkması muhtemel sorulardan bahsettik.
+
+561
+01:32:22,203 --> 01:32:26,543
+Genellikle der ki ikinci mertebeden veya üçüncü mertebeden Taylor polinomunu bulur.
+
+562
+01:32:26,923 --> 01:32:31,243
+Bu şekilde sorular gelir. Gelirse tabii o da düşük ihtimal her zaman gelmiyor.
+
+563
+01:32:33,123 --> 01:32:35,923
+Tamam. Did we talk about linearization before?
+
+564
+01:32:37,843 --> 01:32:39,963
+Doğrusallaştırmadan bahsetmiş miydik arkadaşlar?
+
+565
+01:32:48,916 --> 01:32:50,595
+Orada mısınız gençler? Can you hear me?
+
+566
+01:32:54,996 --> 01:32:58,235
+Doğrusu anlaştırmadan bahsettiysek sıkıntı yok.
+
+567
+01:33:03,123 --> 01:33:08,923
+Toplam diferansiyelden bahsettik. Okey, bitti arkadaşlar. Şimdi multiple integrations.
+
+568
+01:33:13,043 --> 01:33:16,583
+Multiple integrations. Katlı integraller.
+
+569
+01:33:16,923 --> 01:33:19,884
+Let me talk about multiple integrations.
+
+570
+01:33:22,023 --> 01:33:24,663
+Konuları bitirip soru çizeceğim arkadaşlar yine.
+
+571
+01:33:26,183 --> 01:33:27,183
+Hızlı gidebilirim.
+
+572
+01:33:28,203 --> 01:33:29,503
+Multiple integrations.
+
+573
+01:33:41,108 --> 01:33:53,548
+Okay, let me, let's recall single variable case, one single variable case, one single variable case.
+
+574
+01:33:55,688 --> 01:34:03,128
+So, given some continuous function, over closed interval,
+
+575
+01:34:10,771 --> 01:34:12,412
+Let's consider this.
+
+576
+01:34:20,787 --> 01:34:24,927
+Continuous function, over AB interval.
+
+577
+01:34:25,927 --> 01:34:34,987
+Okay, now, so we can estimate area of region which is below the graph YF of X and above the interval AB.
+
+578
+01:34:35,507 --> 01:34:37,587
+So let's try to estimate.
+
+579
+01:34:41,300 --> 01:34:47,780
+The area of this region, which is above interval a, b, and below the graph y, f of x.
+
+580
+01:34:48,260 --> 01:34:53,159
+So to manage this, in fact, so we put here, so let me put here some.
+
+581
+01:34:56,627 --> 01:35:00,807
+Sama bar, here, look at this bar.
+
+582
+01:35:01,887 --> 01:35:20,688
+Now, if you scan this region by these vertical bars, okay, you can obtain, okay, you can obtain this region by integrating, by integrating infinitely many red bars, okay. In fact, there is no area for this red bar.
+
+583
+01:35:21,363 --> 01:35:31,304
+In fact, there is no, this is line, line, just line. But if you, if you zoom on this, zoom,
+
+584
+01:35:35,028 --> 01:35:39,028
+Bu, bu, bu, bu.
+
+585
+01:35:42,868 --> 01:35:52,108
+We can suppose that, so this line, red line, is a bar, rectangular bar, which is sufficiently teeny.
+
+586
+01:35:53,007 --> 01:36:02,507
+Okay, so we call this, we call this thickness, so let me write this thickness.
+
+587
+01:36:03,988 --> 01:36:05,128
+Kalemli kalın ya.
+
+588
+01:36:05,728 --> 01:36:06,048
+Okay.
+
+589
+01:36:08,368 --> 01:36:09,847
+So this is thickness.
+
+590
+01:36:11,923 --> 01:36:13,923
+Dx.
+
+591
+01:36:13,923 --> 01:36:14,923
+Ok.
+
+592
+01:36:14,923 --> 01:36:41,463
+Dx.
+
+593
+01:36:37,268 --> 01:36:39,268
+Yükselin bir kısmı var.
+
+594
+01:36:39,268 --> 01:36:43,268
+Bu bir kısmı var.
+
+595
+01:36:43,268 --> 01:36:57,268
+Bir kısmı var.
+
+596
+01:36:58,003 --> 01:37:01,003
+Bu bölümde bu bölümde.
+
+597
+01:37:09,904 --> 01:37:15,024
+Indefinite integration of di, da, results in the area function.
+
+598
+01:37:15,744 --> 01:37:18,984
+So this is indefinite integration, f of x dx.
+
+599
+01:37:19,623 --> 01:37:23,184
+As you see, so we have some bounds for this scanning.
+
+600
+01:37:23,564 --> 01:37:28,424
+So lower bound for this vertical scanning is xa line.
+
+601
+01:37:28,604 --> 01:37:35,904
+So here, xa, x is equal to a, line is the...
+
+602
+01:37:36,051 --> 01:37:59,787
+Buna baktığınızı kullanarak, bu şekilde A'B'A'B
+
+603
+01:38:02,003 --> 01:38:24,404
+So, this is lower bound, lower vertical bar for vertical scanning, and this is the upper bound, upper bound, upper vertical line for vertical scanning.
+
+604
+01:38:27,828 --> 01:38:46,796
+bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölgeye bu bölge
+
+605
+01:38:51,636 --> 01:39:01,536
+Lower bound is always on the interval, a, b. And upper bound is always on the y, f of x. Can you see that?
+
+606
+01:39:03,836 --> 01:39:16,536
+So this means that we can scan our region by one attempt. Okay? Dikkat edin, altındaki ve üstündeki o kırmızı çubukların altındaki ve üstündeki eğri veya doğru değişmiyor.
+
+607
+01:39:16,536 --> 01:39:18,536
+Ben bunu genelleyebilirim tabii ki.
+
+608
+01:39:19,315 --> 01:39:25,175
+Aynı mantıkla neyi genelleyebilirsiniz? İki eğri arasındaki kalan bölgenin alanını hesaplamayalım.
+
+609
+01:39:25,315 --> 01:39:29,195
+Şimdi, aynı mantığı ben çok değişkenlerde de kullanabilirim arkadaşlar.
+
+610
+01:39:30,195 --> 01:39:35,095
+Hatırlarsanız ne yapıyorduk arkadaşlar? Şöyle, ilk önce iki eğri arasında kalan bölgenin alanını düşünün.
+
+611
+01:39:37,015 --> 01:39:39,496
+Tabii burada bazı bölgeler de kesişebilir.
+
+612
+01:39:41,496 --> 01:39:41,876
+Okey.
+
+613
+01:39:44,180 --> 01:39:50,000
+Area of this region, which is between yf of x and yg of x.
+
+614
+01:39:50,300 --> 01:39:53,000
+Here, let's say this is yf of x.
+
+615
+01:39:53,819 --> 01:39:57,620
+Let's say this is yg of x.
+
+616
+01:39:58,020 --> 01:40:00,059
+Let's say this is lower bound.
+
+617
+01:40:01,844 --> 01:40:22,844
+XA, let's say this is upper bound, XB. So again, we put some vertical bar, it is better to scan this region by vertical cross-section. Okay, let me write here, vertical scanning. Okay, okay, vertical scanning is the best one. Now, so during this vertical scanning,
+
+618
+01:40:23,764 --> 01:40:50,444
+Yf'e yf'
+
+619
+01:40:50,963 --> 01:41:00,003
+of the bar, black bar, is by the distance formula, absolute of f of x minus g of x.
+
+620
+01:41:00,544 --> 01:41:14,384
+Okay, now, the area of that bar, the a, absolute of f of x minus g of x, which is the height of this bar, times thickness of bar, the width of bar.
+
+621
+01:41:14,384 --> 01:41:17,003
+When you integrate this from a to b,
+
+622
+01:41:17,395 --> 01:41:43,855
+So from a to b, so we got the area, so d a, now we got this from a to b, absolute of f of x minus g of x, times dx. You can, you can write this integration explicitly from a to c, we know that upper bound is always on the f of x, that's why we first write f of x.
+
+623
+01:41:44,307 --> 01:41:50,788
+Then we write secondly g of x dx plus from c to b.
+
+624
+01:41:51,448 --> 01:42:00,128
+So in this case from xc to xp, upper bound is always on the g of x minus lower bound is always on the f of x.
+
+625
+01:42:00,588 --> 01:42:05,868
+Okay, so in order to obtain positive value, in fact we use absolute function here.
+
+626
+01:42:06,868 --> 01:42:08,128
+Okay, so we got this.
+
+627
+01:42:08,948 --> 01:42:09,688
+Anlaşıldı mı arkadaşlar?
+
+628
+01:42:10,387 --> 01:42:26,796
+Bu, bu
+
+629
+01:42:32,435 --> 01:42:33,775
+So let's write this.
+
+630
+01:42:35,695 --> 01:42:41,595
+Domain, let's say this is x, let's say this is y, let's say this is z.
+
+631
+01:42:41,595 --> 01:42:47,555
+You are given some closed domain and bounded domain, something like that.
+
+632
+01:42:48,255 --> 01:42:53,315
+Okay, now, so you have some surface here.
+
+633
+01:42:53,955 --> 01:42:55,536
+Continuity is very important.
+
+634
+01:42:55,715 --> 01:42:57,795
+We suppose that R.
+
+635
+01:43:01,779 --> 01:43:06,859
+Okay, our function is continuous over domain D.
+
+636
+01:43:07,600 --> 01:43:20,180
+Suppose that f z is equal to f of x y is continuous on the domain D.
+
+637
+01:43:20,180 --> 01:43:25,020
+Okay, now let me illustrate this domain by this.
+
+638
+01:43:27,891 --> 01:43:30,072
+Ok, let me put here some bar.
+
+639
+01:43:32,992 --> 01:43:33,891
+Ok, let's use...
+
+640
+01:43:55,891 --> 01:43:59,372
+We know that there is no precise definition for point.
+
+641
+01:44:00,572 --> 01:44:02,731
+Okay, let me write here.
+
+642
+01:44:06,323 --> 01:44:07,844
+There is some point here.
+
+643
+01:44:10,583 --> 01:44:12,003
+Look at this point.
+
+644
+01:44:12,163 --> 01:44:14,163
+So in fact, this is point, zoom.
+
+645
+01:44:16,183 --> 01:44:18,643
+Since there is no precise definition,
+
+646
+01:44:19,283 --> 01:44:21,423
+we can suppose that this point
+
+647
+01:44:21,423 --> 01:44:24,623
+is a
+
+648
+01:44:24,623 --> 01:44:28,764
+square region.
+
+649
+01:44:28,764 --> 01:44:29,323
+Okay.
+
+650
+01:44:30,063 --> 01:44:31,123
+Square region.
+
+651
+01:44:31,403 --> 01:44:32,783
+And so this is also
+
+652
+01:44:33,939 --> 01:44:35,179
+İkola region.
+
+653
+01:44:35,759 --> 01:44:40,479
+Now, if you zoom, so you are going to obtain this rectangular region.
+
+654
+01:44:41,799 --> 01:44:43,999
+Okay, let me skate, let me write this.
+
+655
+01:44:50,899 --> 01:44:52,019
+Ne çalışmıyor bu ya?
+
+656
+01:44:52,139 --> 01:44:52,439
+Ah, okay.
+
+657
+01:44:53,019 --> 01:44:55,787
+Now, if you zoom...
+
+658
+01:45:05,555 --> 01:45:27,435
+Ok, so we got this rectangular prism. So this is the basement area, so dx, so here, so we got dx, dy, area of this basement area, let's say that is da, dx times dy, or dy times dx.
+
+659
+01:45:31,539 --> 01:45:42,739
+Volumen of this rectangular prism, let's say that is dv, we suppose that f of x is positively defined, but this is not a necessary condition, okay?
+
+660
+01:45:43,180 --> 01:45:51,119
+So there may be some negative values, okay, but we suppose that f of x, y is positively defined, so dv.
+
+661
+01:45:58,836 --> 01:46:11,516
+Now, volume of this rectangular prism, dv, z, f of xy, f of xy, z is f of xy, times, and dA.
+
+662
+01:46:12,615 --> 01:46:12,936
+Okay.
+
+663
+01:46:13,615 --> 01:46:15,276
+Now, so this is only one piece.
+
+664
+01:46:15,416 --> 01:46:21,796
+There are infinitely many bars with high, z, and the basement area, dA.
+
+665
+01:46:21,796 --> 01:46:23,532
+If we, if we...
+
+666
+01:46:23,764 --> 01:46:30,764
+Eğer bu green bar'a geçerli, bu domeniyen D'ye kadar
+
+667
+01:46:30,764 --> 01:46:33,764
+bir solit'e geçerli.
+
+668
+01:46:33,764 --> 01:46:36,764
+Bir solit'e geçerli.
+
+669
+01:46:37,395 --> 01:47:01,103
+B'nin yi'nin
+
+670
+01:47:01,104 --> 01:47:25,783
+double integration symbols, because we have two, we have two independent variables. We integrate over the domain d, f of x, y, d, a. Okay? Now, if you integrate this, if you integrate this by double integration, you are going to obtain v.
+
+671
+01:47:27,891 --> 01:47:35,711
+Okay, now, so this is the integration. So let me write, let me write general case.
+
+672
+01:47:36,711 --> 01:47:45,591
+So this is the integration is double integration, is double integration.
+
+673
+01:47:50,739 --> 01:47:52,100
+Double integration
+
+674
+01:47:52,100 --> 01:47:55,180
+Of
+
+675
+01:47:55,180 --> 01:47:56,980
+F
+
+676
+01:47:56,980 --> 01:47:59,159
+Over D
+
+677
+01:47:59,159 --> 01:48:01,640
+Attention here, if
+
+678
+01:48:01,640 --> 01:48:04,060
+F of x, y is positively
+
+679
+01:48:04,060 --> 01:48:06,220
+Defined, then you are going to obtain
+
+680
+01:48:06,220 --> 01:48:06,819
+Some
+
+681
+01:48:08,500 --> 01:48:16,319
+Volume. Volume of solid which is above domain, the end below that f of xy.
+
+682
+01:48:16,800 --> 01:48:22,399
+Fx'ye pozitif olsaydı arkadaşlar, ne olacaktı? Hemen bir hacim olacaktınız.
+
+683
+01:48:22,760 --> 01:48:30,519
+Üst yüzeyi, fx'ye olan, alt taban B olan bir katı cismin hacimini hesaplamış olacaktınız. Tamam mı gençler?
+
+684
+01:48:31,659 --> 01:48:32,579
+Var mı sorusu olan?
+
+685
+01:48:33,524 --> 01:48:38,664
+Hocam ben anlamadım dediğiniz yer var mı? Mantığı gayet basit. İstiyorsanız Türkçe anlatırım.
+
+686
+01:48:39,123 --> 01:48:56,903
+Noktanın matemaksiyel tanımı yoktur. Arkadaşlar, noktanın matemaksiyel tanımı olmadığından ben noktayı işime göre tabii ki, problemin yapısına göre, benim işime yarayacak şekilde, yeterince küçük bir nesne olarak düşünebilirim.
+
+687
+01:48:56,903 --> 01:49:06,983
+Bu durumda ben şimdi atıyorum Z-Extil-Efix-Y yüzeyine sahip, D tabağına sahip bir katı cismin hacmini hesaplamak istiyorsam, ne yaparım?
+
+688
+01:49:07,123 --> 01:49:14,163
+E bölgesinde seçtiğim bir noktayı, yeterince küçük bir noktayı, ben bir kare olarak düşünebilirim.
+
+689
+01:49:14,223 --> 01:49:16,443
+Yeterince küçük bir kare olarak düşünebilirim.
+
+690
+01:49:16,443 --> 01:49:33,523
+Dolayısıyla o karenin üzerine kurgulanan dikdörtgenler prizması, tabii ki Z yükseklikli, yani FX'ye yükseklikli dikdörtgenler prizmalarını ben birleştirirsem arkadaşlar, söz konusu hacmini aradığım nedir arkadaşlar?
+
+691
+01:49:33,943 --> 01:49:35,123
+Katı cismin yalnızca...
+
+692
+01:49:35,123 --> 01:49:41,403
+katı cismin hacmini buluyorum. Sadece bir parçasını ben hesaplarım. O da dörtgenler prizması. Fx'ye çarpı d-a.
+
+693
+01:49:41,843 --> 01:49:48,183
+Tabii ben onların hepsini toplamam lazım sonsuz sayıda. Onu da integrasyonla gerçekleştirebilirim.
+
+694
+01:49:48,623 --> 01:49:53,583
+Ne dedik? Eğer tabii ki Fx'ye pozitif olursa bana hacim verir. Tabii her zaman pozitif olmak zorunda değil.
+
+695
+01:49:53,583 --> 01:49:59,623
+Eğer pozitif olmaz ise arkadaşlar, ne diyeceğiz? Şöyle bir ifade görürsek, bu ne demektir?
+
+696
+01:50:00,000 --> 01:50:10,160
+ister pozitif tanımlı olsun, ister negatif tanımlı olsun, fx, y'nin d bölgesi üzerinde katlı integrali, iki katlı integrali olarak karşımıza çıkar.
+
+697
+01:50:10,539 --> 01:50:18,560
+Herhalde anlaşıldı mantığı. Çok detaya girmiyorum. Toplamlar, sigmatik notasyonları var. O kadar detaya girmeye gerek yok. Mantığını siz anladınız zaten.
+
+698
+01:50:18,560 --> 01:50:20,500
+Evet.
+
+699
+01:50:25,939 --> 01:50:29,099
+Now, so let me remark here.
+
+700
+01:50:34,068 --> 01:50:37,788
+İntegrelisi için çok önemli çünkü
+
+701
+01:50:37,788 --> 01:50:39,708
+2 tane varı var.
+
+702
+01:50:51,667 --> 01:51:19,467
+So, which kind of cross-section is the best one? So, we don't know this. Okay. Now, it depends on the structure of function f of x, y, and geometric shape of domain on which our function define. Okay. So, in order to identify whether we can easily compute this double integration or not, so we need to focus on geometric shape of integration domain and structure of function.
+
+703
+01:51:19,667 --> 01:51:21,907
+This is very important investigation.
+
+704
+01:51:22,247 --> 01:51:33,367
+Dikkat edin arkadaşlar, çift katlı bir integralin rahat bir şekilde hesaplanmayacağını incelemek için söz konusu integral bölgesinin şekli, geometrik şekli bizim için çok önemli.
+
+705
+01:51:33,867 --> 01:51:37,787
+Bir de integralini alacağımız fonksiyonun yapısı çok önemli.
+
+706
+01:51:37,947 --> 01:51:42,707
+Bu ikisini dikkate alarak siz yöntemler geliştirirsiniz.
+
+707
+01:51:42,707 --> 01:51:43,287
+Tamam mı?
+
+708
+01:51:43,687 --> 01:51:44,427
+Daha dikkat edin.
+
+709
+01:51:48,148 --> 01:51:51,148
+Bu ne? Bu ne? Bu ne? Bu ne?
+
+710
+01:51:54,292 --> 01:51:55,192
+Bu beni istiyorum.
+
+711
+01:52:17,684 --> 01:52:20,804
+Let integral domain
+
+712
+01:52:25,747 --> 01:52:27,247
+A Rectangular Region
+
+713
+01:52:37,908 --> 01:52:50,448
+Ok, we may consider this. For example, x is bigger than a, smaller than b, y is bigger than c, smaller than d.
+
+714
+01:52:50,448 --> 01:52:55,968
+Ok, so let's say this is the region r. Let me sketch this.
+
+715
+01:53:04,916 --> 01:53:08,876
+This is A, B, this is C, this is D.
+
+716
+01:53:09,815 --> 01:53:14,256
+So this is our domain, integral domain.
+
+717
+01:53:15,436 --> 01:53:22,252
+Okay, now so F define on, and F...
+
+718
+01:53:25,363 --> 01:53:28,403
+Define on R
+
+719
+01:53:28,403 --> 01:53:34,543
+Then
+
+720
+01:53:38,163 --> 01:53:49,604
+Double integration of f of x y on the r given by this.
+
+721
+01:53:50,703 --> 01:53:51,944
+So let me write here.
+
+722
+01:53:51,944 --> 01:53:57,923
+So first of all, let me use blue color.
+
+723
+01:53:58,123 --> 01:53:58,524
+From.
+
+724
+01:54:05,460 --> 01:54:09,640
+Neden maviyi vermedi anlamadım. Maviyi seçiyorum, mavi olmuyor ya.
+
+725
+01:54:14,515 --> 01:54:19,635
+Ok, from x a to x b,
+
+726
+01:54:27,796 --> 01:54:38,916
+X'a to X'b, from Y'c to Y'd, F of X'y.
+
+727
+01:54:40,216 --> 01:54:41,155
+So, attention here.
+
+728
+01:54:41,796 --> 01:54:46,036
+So, first of all, you need to integrate this with respect to Y.
+
+729
+01:54:46,956 --> 01:54:49,556
+Then, we write here.
+
+730
+01:54:49,556 --> 01:54:54,676
+So, this is equal to, from,
+
+731
+01:54:55,539 --> 01:54:59,539
+y is equal to c, y is equal to d.
+
+732
+01:55:03,060 --> 01:55:06,800
+İntegration from xa to xb
+
+733
+01:55:10,996 --> 01:55:21,595
+f of x y, in this case, we first integrate with respect to x, so then we integrate with respect to y.
+
+734
+01:55:22,395 --> 01:55:35,095
+Now, so attention here, the order of integration doesn't matter. You may choose one of them because of the fact that our integration domain is rectangular region.
+
+735
+01:55:35,095 --> 01:55:38,295
+You can directly change order of integration.
+
+736
+01:55:38,703 --> 01:55:42,703
+Tamam, şimdi, bir şey konuştu.
+
+737
+01:55:46,931 --> 01:55:55,911
+KripliTolKey, so let's say this is integration operator, let's say integration operator,
+
+738
+01:56:00,916 --> 01:56:11,076
+operasyon, ve respect to x, let's say this is the integration operator, with respect to y,
+
+739
+01:56:12,196 --> 01:56:20,516
+okay, those are any kind of function in fact, acting on functions, so, composite of this,
+
+740
+01:56:21,300 --> 01:56:31,260
+Not always equal to each other. Okay, so composite of this function, this operation, not always commutative. Okay, here.
+
+741
+01:56:33,659 --> 01:56:34,139
+Attention.
+
+742
+01:56:36,500 --> 01:56:41,500
+Here. So, but this is true. This is true.
+
+743
+01:56:44,079 --> 01:56:46,220
+This is true. Whenever
+
+744
+01:56:50,228 --> 01:57:05,528
+true is true, whenever our integration domain is a rectangular region. This is a very important fact, rectangular region.
+
+745
+01:57:07,888 --> 01:57:16,748
+Okay, if you are given two functions, in fact, composition of two functions is not commutative. F composite G is not equal to G composite F.
+
+746
+01:57:17,427 --> 01:57:35,927
+We may consider those operations as functions, with respect to, okay, as functions, which is integration function, with respect to x, so that is integration operation, with respect to y, but not their composites, f composite g, and g composite f, not equal to each other, okay?
+
+747
+01:57:36,248 --> 01:57:41,948
+But these compositions are equal to each other, whenever r is a rectangular region.
+
+748
+01:57:41,948 --> 01:57:45,427
+Normalde iki funksiyonun birleşikesi, p birleşikti g, yani foc...
+
+749
+01:57:45,427 --> 01:57:52,128
+Kofa eşit değil, değil mi arkadaşlar? X'e göre integral ile Y'ye göre integral, bileşgelerini düşündüğümüzde normalde eşit değil birbirine.
+
+750
+01:57:52,347 --> 01:57:59,488
+Ama ne zaman eşit olur diyoruz? Eğer integral bölgeniz ilk dörtgensel olursa, tamam, X'e göre integral, daha sonra Y'ye göre.
+
+751
+01:57:59,488 --> 01:58:07,448
+İlk önce ister Y'ye, sonra X'e, hiç fark etmez. Sırayı değiştirebilirsiniz. Tabii ki R'nin ilk dörtgensel olması lazım.
+
+752
+01:58:07,587 --> 01:58:11,828
+Kolay bir şekilde değiştirebilirsiniz arkadaşlar. Hiçbir şekilde oynamaksız, hiçbir yeriyle. Tamam mı?
+
+753
+01:58:12,275 --> 01:58:13,416
+Bir örnek vereyim.
+
+754
+01:58:13,695 --> 01:58:14,336
+Example.
+
+755
+01:58:23,699 --> 01:58:27,539
+So, f of xy
+
+756
+01:58:31,572 --> 01:58:58,932
+100 minus 6x square y, define on, define on, r, given by these inequalities, x is bigger than or equal to 0, smaller than or equal to 2, and y is bigger than or equal to,
+
+757
+01:58:59,380 --> 01:59:02,820
+Minus 1, smaller than or equal to 1.
+
+758
+01:59:03,220 --> 01:59:08,160
+Okay, now then compute integration of this function.
+
+759
+01:59:15,667 --> 01:59:17,747
+So, first of all, let's compute this.
+
+760
+01:59:21,887 --> 01:59:24,727
+From x0 to x2,
+
+761
+01:59:26,727 --> 01:59:30,327
+from y minus 1 to y1,
+
+762
+01:59:31,507 --> 01:59:35,567
+and f of xy, let me write f of xy here,
+
+763
+01:59:36,487 --> 01:59:37,647
+f of xy,
+
+764
+01:59:38,647 --> 01:59:41,687
+f of xy 100 minus
+
+765
+01:59:42,515 --> 01:59:49,835
+6x² y, ve
+
+766
+01:59:49,835 --> 01:59:51,835
+y,
+
+767
+01:59:51,835 --> 01:59:52,835
+ok.
+
+768
+02:00:01,235 --> 02:00:05,235
+y, y, y, y.
+
+769
+02:00:05,235 --> 02:00:10,235
+So, that's why we first write here dy, there must be consistency.
+
+770
+02:00:10,235 --> 02:00:22,235
+And then, we need to integrate, this is x, so this is x2, so this is x operation, so this dy, attention here.
+
+771
+02:00:22,235 --> 02:00:27,235
+Okay, now if you do this, oh, so this is the dx.
+
+772
+02:00:49,876 --> 02:01:17,016
+y, y square over 2, if you substitute upper bound and lower bound, y minus 1, y plus 1, and so this is dx. Now, if you do this operation from 0 to 2, ne oluyor arkadaşlar? 100, y yine 1 yazdım, eksi 3x kare, eksi 3x kare geldi. Doğru mu arkadaşlar?
+
+773
+02:01:18,100 --> 02:01:29,520
+y yerine eksi bir yazarsam, eksi bir yazarsam, eksi yüz, eksi altı x kare, üç x kare geldi tekrardan.
+
+774
+02:01:30,619 --> 02:01:35,699
+Okay, so, this is dy. Now, you are going to obtain this.
+
+775
+02:01:45,747 --> 02:02:11,547
+D y, if you integrate this 200, okay, this is the x, sorry, this is the x, 200, the x integration, 2 x, from 0 to 2, 400. Okay, you are going to update 400. But similarly, you can compute, you can compute this from
+
+776
+02:02:19,412 --> 02:02:29,212
+Ok, double integration of this function. In this case, we can integrate first with respect to x.
+
+777
+02:02:30,412 --> 02:02:45,792
+From y minus 1 to y1, integrate this from x to x, x2, ok, 100 minus 6x square y.
+
+778
+02:02:46,355 --> 02:02:51,615
+İntegre, this first with respect to x, then with respect to y.
+
+779
+02:02:52,275 --> 02:02:59,436
+Attention here, we have some consistency here, x, here, y.
+
+780
+02:03:00,136 --> 02:03:06,556
+Okay, now if you do this similarly, you are going to obtain the same answer, 400.
+
+781
+02:03:07,096 --> 02:03:13,176
+As you see, composition of integration with respect to x and with respect to y,
+
+782
+02:03:13,939 --> 02:03:28,219
+Fog is equal to Goff. Dikkat edin. F bileşke G, G bileşke F'ye. X'e göre integral, bileşke Y'ye göre integral eşittir. Y'ye göre integral, bileşke X'e göre integral'e eşit oldu. Tamam mı? Okey.
+
+783
+02:03:33,395 --> 02:03:43,955
+Hemen break. Terminist. Bir on dakika ara verelim gençler. Sorusu olan var mı? Eni koyayım için. Sorusu olan yok galiba.
+
+784
+02:03:46,675 --> 02:03:48,215
+Hocam ben bir şey sorabilir miyim?
+
+785
+02:03:52,435 --> 02:03:53,595
+Sor, dinliyorum.
+
+786
+02:03:53,955 --> 02:03:57,755
+Tamam hocam. Şimdi eşit olmasaydı hocam, o zaman ne yapacak tek?
+
+787
+02:03:58,395 --> 02:04:00,295
+Örnekleri vereceğim, bekle. Tamam?
+
+788
+02:04:00,675 --> 02:04:01,175
+Tamam hocam.
+
+789
+02:11:13,363 --> 02:11:39,403
+Evet, merhaba gençler. Kaldığımız yerden devam edelim. Eğer integral bölgemiz, fonksiyonumuzun üzerinde tanımlı olduğu integral bölgesi, diktördensel bir bölge ise, ister ilk önce x'e göre alın, ister y'ye göre alın, hiç fark etmez arkadaşlar. Sonuç aynı olur. Tabii ki hangisinin integralini almak daha kolay ise ona göre yaparsınız. Tamam mı gençler?
+
+790
+02:11:40,851 --> 02:11:43,471
+Klinik Koremi, yine bunu söyler.
+
+791
+02:11:43,891 --> 02:11:51,471
+Şimdi, integral bölgesi, bir dörtgensel olmazsa, what if, our integration domain,
+
+792
+02:11:57,300 --> 02:12:22,159
+What if r is not a rectangular region? So in that case, we cannot directly change, okay, so this, in this case, composite y not equal to directly this. So there is some method, okay.
+
+793
+02:12:26,644 --> 02:12:28,904
+Consider this spatial case.
+
+794
+02:12:29,623 --> 02:12:30,543
+Suppose that
+
+795
+02:12:35,956 --> 02:12:41,956
+R is given by this region, given by this region.
+
+796
+02:12:57,268 --> 02:13:02,028
+What does it mean? So this means that our region is something like that.
+
+797
+02:13:12,372 --> 02:13:34,796
+Bu, bu
+
+798
+02:13:35,091 --> 02:13:44,591
+During this vertical scanning, upper end point of this bar on the always, upper end point is always on the g of x.
+
+799
+02:13:45,132 --> 02:13:49,992
+So let me use this. Upper end point always on the g of x.
+
+800
+02:13:51,771 --> 02:13:56,792
+Lower end point always on the f of x. Can you see that?
+
+801
+02:13:58,771 --> 02:14:14,539
+Bu, bu
+
+802
+02:14:20,467 --> 02:14:22,827
+Ok, let
+
+803
+02:14:28,979 --> 02:14:42,819
+Let fh function hf of xy, defined on r.
+
+804
+02:14:56,692 --> 02:15:00,271
+can be computed by only this integration.
+
+805
+02:15:00,271 --> 02:15:07,612
+So from xa to xb, first of all,
+
+806
+02:15:08,243 --> 02:15:32,907
+Yeni Y
+
+807
+02:15:34,420 --> 02:15:48,420
+So during this vertical scanning, so upper endpoint, upper endpoint of this vertical scanning is always on the G of X, and lower endpoint is always on the F of X.
+
+808
+02:15:48,420 --> 02:15:57,420
+Okay, so right-hand side integration symbol stands for the length of the bar scanning your region, okay, and H of X, Y.
+
+809
+02:15:59,412 --> 02:16:01,492
+ve, in this case, look at here.
+
+810
+02:16:02,032 --> 02:16:04,931
+So, let me use different color here.
+
+811
+02:16:05,412 --> 02:16:09,952
+So, we first integrate with respect to y, because of this case, by.
+
+812
+02:16:11,492 --> 02:16:13,372
+Then, we first integrate,
+
+813
+02:16:14,372 --> 02:16:16,971
+secondly, we integrate with respect to x,
+
+814
+02:16:17,492 --> 02:16:17,771
+here.
+
+815
+02:16:18,311 --> 02:16:20,011
+So, we can integrate
+
+816
+02:16:20,500 --> 02:16:45,760
+bu h over r by using these vertical cross sections. Okay, there is no another method here in this case, but you cannot direct write this. You cannot direct write this f of x, g of x, so from a, b, h of x, y, and dx.
+
+817
+02:16:46,131 --> 02:16:49,432
+y, so not equal to each other.
+
+818
+02:16:49,432 --> 02:16:51,511
+Okay, dikkat edin.
+
+819
+02:16:51,511 --> 02:16:55,912
+So you need to use these vertical cross sections.
+
+820
+02:16:55,912 --> 02:17:00,851
+Dikkat edin, burada sol integral, yani sol taraftaki integral daima.
+
+821
+02:17:00,851 --> 02:17:04,912
+Let me express general situation, this symbol.
+
+822
+02:17:04,912 --> 02:17:11,631
+So this symbol means, left-hand side means, stands for,
+
+823
+02:17:14,100 --> 02:17:25,520
+Stans for the bar, the limits, limits of scanning.
+
+824
+02:17:28,020 --> 02:17:32,659
+Tarama kısıtlarını, sınırlarını belirtir arkadaşlar.
+
+825
+02:17:33,120 --> 02:17:33,600
+Tamam mı?
+
+826
+02:17:34,020 --> 02:17:39,200
+Sağ taraftaki integral, tarama çubuğu mantığıyla düşünüyorum, farklı bir renk kullanayım.
+
+827
+02:17:42,355 --> 02:17:58,736
+This represents the length of the bar scanning your region.
+
+828
+02:18:01,315 --> 02:18:07,175
+Evet. Tarama mantığıyla düşünürseniz böyle zihninize kodlayabilirsiniz. Hiç ezber yapmanıza gerek yok arkadaşlar.
+
+829
+02:18:07,827 --> 02:18:12,307
+Şuradaki gösterim benim işimi hallediyor. Mesela şöyle olsaydı ne olur o zaman?
+
+830
+02:18:24,915 --> 02:18:36,515
+And x is bigger than, let's suppose that g of x, g of y, sorry, f of y.
+
+831
+02:18:38,015 --> 02:18:41,455
+Now, so this means that our region is something like that.
+
+832
+02:18:44,500 --> 02:19:11,720
+So in this case, we scan our region by horizontal cross sections here. We can verify this situation here. So during this horizontal scanning, right hand point here always on the x is equal to f of y. Left hand point is always on the, here x is equal to g of y.
+
+833
+02:19:12,852 --> 02:19:23,452
+ve bu
+
+834
+02:19:23,452 --> 02:19:34,700
+bu
+
+835
+02:19:34,995 --> 02:19:59,995
+During this horizontal scanning, right hand point is always on the f of y, and left hand point is always on the g of y. As you see, f of y and g of y determines the length of your bar, scanning your region. Okay, now, so double, so define, so some function defined on this region, let's say that is h, h.
+
+836
+02:20:00,463 --> 02:20:07,463
+bu
+
+837
+02:20:00,211 --> 02:20:04,591
+bu region R'ınca bu.
+
+838
+02:20:25,556 --> 02:20:30,556
+Y bar horizontal scanning is determined by Y a horizontal line.
+
+839
+02:20:30,556 --> 02:20:35,556
+So lower bound for this from Y b to Y c.
+
+840
+02:20:37,556 --> 02:20:40,556
+And during this horizontal scanning,
+
+841
+02:20:40,556 --> 02:20:47,556
+so left hand point of this horizontal bar always on the G of Y.
+
+842
+02:20:47,556 --> 02:20:48,332
+And
+
+843
+02:20:48,404 --> 02:21:15,564
+Bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'e de bu y'
+
+844
+02:21:15,827 --> 02:21:20,968
+except for this. There is no another way except for this in such cases.
+
+845
+02:21:21,207 --> 02:21:21,427
+Okay.
+
+846
+02:21:29,332 --> 02:21:40,252
+Barman açmayın bir yere, yukarı çıktım arkadaşlar. Böyle olursa, dikey çubuklarla, yatağı fark etmez. Her zaman integral, sol taraftaki integral sembolü,
+
+847
+02:21:41,203 --> 02:21:47,863
+Sizin tarama sınırlarınızı belirler. O yüzden ilk önce bölgeyi nasıl bir çubukla tarayacaksınız, onu belirlemeniz lazım.
+
+848
+02:21:48,003 --> 02:21:55,783
+Dikey bir çubukla tarayacaksanız, o zaman sol taraftaki integral sınırları x eşittir a'dan x eşittir b'ye kadar olur burada.
+
+849
+02:21:56,403 --> 02:22:02,043
+Tamam mı? Peki dikey bir şekilde tararken, tarama esnasında tarama çubuğun üst uç noktası,
+
+850
+02:22:02,515 --> 02:22:11,315
+Ve alt uç noktası tarama çubuğunun uzunluğunu belirler. Onu da ikinci integral sembolüyle belirtirsiniz.
+
+851
+02:22:11,495 --> 02:22:22,396
+Yani ikinci integral sembolünün alt sınırı çubuğun alt uç noktasındaki eğridir. Üst sınırda çubuğun üst uç noktasındaki eğri olacaktır. Bunlara dikkat edin.
+
+852
+02:22:22,675 --> 02:22:30,355
+Tabii Fugino'da olduğu gibi ben böyle direkt yazamam. Bu eşitlik yok. Dikkat edin. Çünkü tarama mantığıyla gidersen öyle olmadığını görürsün.
+
+853
+02:22:30,515 --> 02:22:39,076
+Tamam mı gençler? Var mı sorusu olan? Şimdi bir örnek çözelim. Sorusu olan yoksa bir örnek çözelim.
+
+854
+02:22:47,924 --> 02:22:49,684
+Okay, now example.
+
+855
+02:22:55,123 --> 02:23:15,083
+So, given some double integration, given double integration from 3 to 4, and from x to x plus 2, and f of x, y, f is any function.
+
+856
+02:23:20,275 --> 02:23:26,155
+Item A, then, Item A, sketch,
+
+857
+02:23:30,036 --> 02:23:32,036
+İnteklisi
+
+858
+02:23:38,260 --> 02:23:38,939
+Doma'n.
+
+859
+02:23:41,060 --> 02:23:43,260
+So, this is the example from Passy writing.
+
+860
+02:23:44,380 --> 02:23:46,439
+So, and change.
+
+861
+02:23:50,355 --> 02:23:51,995
+The order of integration.
+
+862
+02:23:52,855 --> 02:23:57,115
+Okay, your task is not compute to integration value.
+
+863
+02:23:57,275 --> 02:24:00,476
+Your task is to apply these steps.
+
+864
+02:24:00,476 --> 02:24:02,476
+Okay, is to obtain...
+
+865
+02:24:05,843 --> 02:24:07,403
+Order of Integration
+
+866
+02:24:11,156 --> 02:24:24,516
+So, the changing of, changing of order of integration means you need to change the position of the bar, scanning your region. Yani integral sırasını değiştirmek demek.
+
+867
+02:24:25,459 --> 02:24:35,979
+Söz konusu sorunun orijinalinde verilen integralde çubuk bölgenizi nasıl tarıyorsa, dikey tarıyorsa yatay yapacaksınız, yatay tarıyorsa dikey yapacaksınız.
+
+868
+02:24:36,340 --> 02:24:41,779
+Tamam mı? Bakın arkadaşlar, size bağımsız değişkenler verilir genelde bu şekilde integralde.
+
+869
+02:24:42,119 --> 02:24:46,819
+Ben ne yapıyorum? Hemen burada bağımlı değişkenleri işlem tutup istiyorsanız olduğundan dolayı işlem arkadaşlar.
+
+870
+02:24:46,819 --> 02:24:50,039
+Ne yapıyorum? Şöyle hemen.
+
+871
+02:24:50,644 --> 02:25:08,864
+O zaman ne olur? Şuraya y eşittir x, y eşittir x artı 2. İntegral sınırlar genellikle bağımsız değişkeni ifade eder. Ben eşitliğin sol tarafına bağımlı değişkeni yazarak bulurum. O zaman bu da x eşittir 3, x eşittir 4. Yani x burada
+
+872
+02:25:09,780 --> 02:25:16,260
+3'ten 4'e dikey bir şekilde doğrularla tarıyorum demektir. Hemen bakın, buradan anladım ben.
+
+873
+02:25:16,659 --> 02:25:22,240
+Okay, this means that you scan your integration domain by vertical cross-sections.
+
+874
+02:25:22,600 --> 02:25:29,020
+Okay, the minimum vertical line x3, the maximum vertical line x4.
+
+875
+02:25:29,020 --> 02:25:37,780
+Okay, now doing this vertical scanning, so upper end point of this bar given by...
+
+876
+02:25:37,780 --> 02:25:41,000
+Y, X plus 2, Y is equal to X plus 2.
+
+877
+02:25:41,000 --> 02:25:46,120
+Lower end point of this vertical bar is Y is equal to X.
+
+878
+02:25:46,120 --> 02:25:47,740
+Okay, now we have this.
+
+879
+02:25:47,740 --> 02:25:49,740
+So let me sketch this region.
+
+880
+02:25:50,960 --> 02:25:52,640
+Let me sketch this region.
+
+881
+02:26:04,468 --> 02:26:04,788
+Gördüğü.
+
+882
+02:26:09,716 --> 02:26:18,236
+x eşittir 3'ten, x eşittir 4'e kadar, şöyle bir kısıt var.
+
+883
+02:26:21,716 --> 02:26:23,896
+Çizelim arkadaşlar. X eşittir 3'den.
+
+884
+02:26:26,495 --> 02:26:28,716
+X eşittir 4'e kadar tarayacağım.
+
+885
+02:26:29,495 --> 02:26:31,175
+Y eşittir X var tabii ki.
+
+886
+02:26:32,476 --> 02:26:33,835
+Y eşittir X var.
+
+887
+02:26:35,195 --> 02:26:35,876
+Şurada.
+
+888
+02:26:42,708 --> 02:26:44,628
+Bir de y eşitir x artı 2 var.
+
+889
+02:26:46,788 --> 02:26:48,808
+y eşitir x artı 2.
+
+890
+02:26:50,208 --> 02:26:52,708
+O da 2 şurada olsa.
+
+891
+02:26:53,847 --> 02:26:55,980
+Oransız çizdik ama birazcık...
+
+892
+02:27:09,556 --> 02:27:10,556
+Evet.
+
+893
+02:27:11,796 --> 02:27:14,056
+Böyle bir şey. Tamam mı gençler?
+
+894
+02:27:14,396 --> 02:27:18,896
+Tamam. So this is y is equal to x plus 2.
+
+895
+02:27:18,896 --> 02:27:20,476
+So this is our region.
+
+896
+02:27:20,476 --> 02:27:21,896
+Attention here.
+
+897
+02:27:30,388 --> 02:27:34,908
+Çünkü bu faktörler, bu faktörler,
+
+898
+02:27:36,308 --> 02:27:37,948
+bu faktörler için,
+
+899
+02:27:53,843 --> 02:28:12,907
+Bu, bu
+
+900
+02:28:13,971 --> 02:28:41,531
+So from x3 to level, x4 level, vertical level. So we can, okay, so this is our integration domain. So let's change its order. So let me use different color here. So if you change its order, so look at here. So from, so you have this level, from this level, so let me make it bigger, from this level,
+
+901
+02:28:43,347 --> 02:28:53,047
+So from this level to this level, right hand point is always on the y, x plus two, and left hand point is always on the x three.
+
+902
+02:28:53,047 --> 02:29:06,128
+Okay, so as you see in this case, from, so integration f of x, y, da is equal to y,
+
+903
+02:29:06,739 --> 02:29:16,419
+So let me write here, from y is equal to 4, look at here, from y3, yx, so this level is y3 here.
+
+904
+02:29:19,987 --> 02:29:44,167
+Y3, y3 level to here, y4 level, y4 level, y4, y4, right hand point, so let me write here, right hand point, you need to express here,
+
+905
+02:29:44,852 --> 02:29:51,132
+Y'e x plus y, y'e x plus 2.
+
+906
+02:29:51,132 --> 02:29:57,612
+Y'e x plus y, y'e x plus y.
+
+907
+02:30:12,308 --> 02:30:14,308
+3.
+
+908
+02:30:14,308 --> 02:30:17,308
+Bu ilk bir şey.
+
+909
+02:30:17,308 --> 02:30:20,308
+F .
+
+910
+02:30:20,308 --> 02:30:22,308
+Bu ilk bir şey.
+
+911
+02:30:39,987 --> 02:31:04,075
+Y5, bu y5'e y5'
+
+912
+02:31:04,211 --> 02:31:10,891
+Right, right hand point always on the x4, left hand point is always on the x3. Can you see that?
+
+913
+02:31:13,731 --> 02:31:29,791
+From x3 to x4. F of xy dx dy. Okay, now the final piece.
+
+914
+02:31:30,291 --> 02:31:32,592
+of this expression, look at here.
+
+915
+02:31:33,971 --> 02:31:36,752
+So from y5
+
+916
+02:31:36,752 --> 02:31:37,951
+here,
+
+917
+02:31:38,791 --> 02:31:39,711
+so this level,
+
+918
+02:31:40,051 --> 02:31:42,131
+attention here, this level,
+
+919
+02:31:44,331 --> 02:31:47,191
+horizontal level y6.
+
+920
+02:31:47,191 --> 02:31:48,231
+Okay.
+
+921
+02:31:48,932 --> 02:31:50,611
+Now from y5,
+
+922
+02:31:51,211 --> 02:31:54,391
+from y5
+
+923
+02:31:54,391 --> 02:31:56,511
+to y6,
+
+924
+02:31:57,299 --> 02:32:02,860
+Right hand point, look at here. Right hand point always on the x.
+
+925
+02:32:04,180 --> 02:32:08,299
+For left hand point is always on the...
+
+926
+02:32:08,899 --> 02:32:09,759
+Gördünüz mü arkadaşlar?
+
+927
+02:32:11,500 --> 02:32:13,619
+Ben yanlış mı yaptım arkadaşlar bir yerde?
+
+928
+02:32:14,459 --> 02:32:16,360
+Şurada yanlış yaptım. Niye uyarmadınız beni?
+
+929
+02:32:18,399 --> 02:32:22,360
+Şurada arkadaşlar yer değişecek. Şu x eşittir 3 ile...
+
+930
+02:32:28,755 --> 02:32:37,695
+Tamam, burada sıkıntı yok. X eşittir 3, X eşittir 4. Şurada bir yerde yanlış yaptık galiba arkadaşlar.
+
+931
+02:32:40,835 --> 02:32:45,735
+Yanlış. Nerede yanlış yaptık? Bir küçültüyorum, bir büyütüyorum, göremedim.
+
+932
+02:32:47,735 --> 02:32:55,635
+Şurada Y eşittir 3'ten, Y eşittir 4'e kadar. Sağda kim var? Y eşittir X var değil mi? X eşittir 3'ten.
+
+933
+02:32:56,020 --> 02:33:03,060
+x eşittir 4'e kadar, y eşittir 3'ten y eşittir 4'e kadar, çorba olduğundan göremedim.
+
+934
+02:33:04,639 --> 02:33:12,020
+Solda x eşittir 3 var, sağda y eşittir x var, x eşittir y var, doğru mu?
+
+935
+02:33:12,739 --> 02:33:16,220
+Şurası x eşittir y olacak arkadaşlar, sağda x eşittir y olacak.
+
+936
+02:33:17,279 --> 02:33:18,439
+Şurayı görmedik.
+
+937
+02:33:18,963 --> 02:33:42,023
+Dikkat edin, burası x eşittir y olacak. Ondan sonra y eşittir 5'ten, y eşittir 4'ten, y eşittir 5'e kadar, solda x eşittir 3, sağda x eşittir 4. Ondan sonra y eşittir 5'ten y eşittir 6'ya kadar devam edersek, solda kim var? Solda x eşittir y eksi 2 var.
+
+938
+02:33:42,804 --> 02:33:56,004
+Solda x eşittir y eksi 2 var. Sağda x eşittir 4 var. Gördünüz mü arkadaşlar? Buraya bakın, buraya bakın. Sağda x eşittir 4 var. Bu şekilde olacak. Evet.
+
+939
+02:33:59,144 --> 02:34:08,244
+Şeyde olduğundan anlatamadım. Şöyle daha rahat görürsünüz. Bu sefer de şey oldu. Evet.
+
+940
+02:34:10,260 --> 02:34:33,959
+Tamam mı gençler? Çubuk yöntemine ne yapıyorsunuz? Bu şekilde. Which one is the best one? So, this is not good. Horizontal cross-section is not good. That's why it is better to apply vertical cross-section. But in the case of vertical cross-section, you need to write this. So, you directly this. So, it is better to compute this.
+
+941
+02:34:35,924 --> 02:34:46,804
+Tamam gençler. Bakın gördüğünüz gibi çubuğun yönünü değiştirdiğinizde integral almak zorlaşıyor. Mesela bir tane güzel bir örnek yapalım. Bu somut bir örnek yapmak istiyorum.
+
+942
+02:34:46,804 --> 02:34:49,864
+Ok, let's do this concrete example.
+
+943
+02:34:57,620 --> 02:35:16,680
+Let's write this region. R is a region given by these inequalities from pi to 2 pi and from y is equal to 0 to x and compute this integration.
+
+944
+02:35:28,468 --> 02:35:30,468
+Ok, let's complete this equation.
+
+945
+02:35:32,308 --> 02:35:35,628
+So, first of all, let me sketch this region.
+
+946
+02:35:39,028 --> 02:35:39,528
+Ok.
+
+947
+02:35:45,492 --> 02:36:10,252
+So, this is x pi. So, this is x 2 pi. Let's sketch y x. So, this is our region. This is our region. Integration domain. So, this is integration domain. Let's...
+
+948
+02:36:11,540 --> 02:36:35,240
+Okay, which one is the best one? Vertical cross-section or horizontal cross-section? If you put vertical cross-section, so by this vertical cross-section, let's write this from sine x over x dA, this integration from x pi to x to pi.
+
+949
+02:36:35,924 --> 02:36:44,963
+So, during this vertical cross-section, upper endpoint on the yx, lower endpoint on the y0.
+
+950
+02:36:45,904 --> 02:37:01,424
+Now, so, integrant function, integrant function, sine x over x, we first integrate with respect to y, then,
+
+951
+02:37:02,164 --> 02:37:23,884
+İntegre ile ilgili x'e, ok? Y'e vertical cross-section. So we got this. Now, can you easily integrate this with respect to y? Yes, we can easily integrate this from pi to 2 pi. So from 0 to, ok, let's integrate this.
+
+952
+02:37:25,492 --> 02:37:39,492
+So if you integrate this with respect to y sin x over x times y, substitute this bounds dx.
+
+953
+02:37:40,131 --> 02:37:47,492
+Now, so this is equal to from pi to 2 pi sin x.
+
+954
+02:37:47,492 --> 02:37:49,492
+So we got this dx.
+
+955
+02:37:50,355 --> 02:38:05,495
+Ok, now if you integrate this, minus cosine x from x pi to x to pi, so we got minus 1 plus, ne geliyor arkadaşlar?
+
+956
+02:38:05,876 --> 02:38:11,256
+Eksi 1 geldi, eksi, eksi, artı, eksi 1, cevap eksi 2 mi geldi?
+
+957
+02:38:11,256 --> 02:38:11,775
+Evet.
+
+958
+02:38:12,275 --> 02:38:20,675
+So we got minus 2. So just try to just try to compute this integration by horizontal cross sections.
+
+959
+02:38:23,236 --> 02:38:29,316
+So if you try to compute this integration by horizontal cross sections let's compute this
+
+960
+02:38:29,316 --> 02:38:38,595
+double integration this so f of x y d a so in this case so from y
+
+961
+02:38:39,443 --> 02:39:02,783
+0 to y pi, this level is y pi, y pi, now integrate this right hand point on the x 2 pi, left hand point on the x pi, and sine x over x, we first integrate with respect to x, and plus,
+
+962
+02:39:03,316 --> 02:39:28,748
+Y'e y
+
+963
+02:39:29,203 --> 02:39:45,523
+So, unit right x is y, right hand point is always on the x to pi, x to pi, sine x over x, we first integrate with respect to x, then we integrate with respect to y.
+
+964
+02:39:45,903 --> 02:39:49,203
+So, can you easily integrate this? Can you easily integrate this?
+
+965
+02:39:52,144 --> 02:39:55,083
+Simdi 6 bölü x'i kolay bir şekilde integral alabilir misiniz arkadaşlar?
+
+966
+02:39:57,683 --> 02:39:59,423
+Alın bakalım, nasıl alacaksınız?
+
+967
+02:40:02,703 --> 02:40:12,503
+As you see, it is not so easy to integrate sin x over x with respect to x, but it is easy to integrate sin x over x with respect to y.
+
+968
+02:40:12,823 --> 02:40:19,783
+That's why it is better to apply vertical cross-section method, not horizontal cross-section method.
+
+969
+02:40:19,783 --> 02:40:20,263
+Okay?
+
+970
+02:40:21,843 --> 02:40:41,163
+Complexity of integration depends on the position of your barn. Dikkat edin. Yani integralin karmaşıklığı çubuğun konumuyla çok alakalı. Sırayla denersiniz. İlk önü dikey denersiniz. Bakıyorsunuz rahat bir şekilde integral alabiliyor musunuz? Eğer alamıyorsanız sıkıntı var. O zaman çubuğun pozisyonunu değiştireceksiniz demektir.
+
+971
+02:40:41,163 --> 02:40:47,423
+Evet. Herhalde anlaşıldı arkadaşlar. Bir tane daha örnek yapalım.
+
+972
+02:40:47,987 --> 02:40:49,567
+Bunu siz yapmaya çalışın.
+
+973
+02:41:05,620 --> 02:41:08,320
+Şöyle bir bölge, integral bölgesi bu olsun arkadaşlar.
+
+974
+02:41:24,211 --> 02:41:27,011
+Bu bizim integral bölgemiz olsun. Şekli doğrudan verdim.
+
+975
+02:41:29,072 --> 02:41:30,011
+Fonksiyon da şu.
+
+976
+02:41:32,051 --> 02:41:33,652
+R bölgesi üzerinde.
+
+977
+02:41:43,443 --> 02:41:45,083
+Right integration
+
+978
+02:41:50,515 --> 02:41:54,655
+by vertical cross-sections
+
+979
+02:42:00,564 --> 02:42:07,004
+Right, integration by, horizontal cross sections.
+
+980
+02:42:12,211 --> 02:42:15,291
+C, compute integration.
+
+981
+02:42:19,572 --> 02:42:21,492
+Evet, herhalde anlaşıldı soru.
+
+982
+02:42:22,452 --> 02:42:24,791
+6 dakikamız var. Uzatabiliriz, sıkıntı değil.
+
+983
+02:42:25,152 --> 02:42:26,252
+Herkes yazıp bakayım.
+
+984
+02:42:27,752 --> 02:42:30,432
+Tarama yöntemiyle integral yazın.
+
+985
+02:42:30,511 --> 02:42:33,952
+A şıkkında, B şıkkında yatay tarama yöntemiyle.
+
+986
+02:42:34,319 --> 02:42:51,139
+İntegrali yazın, C şıkkında integrali hesaplayın. İster yatayla, ister dikeyle yapın, aynı sonucu yakalayacaksınızdır. Ama onlardan birisi hesaplamak ötekine göre muhtemelen daha kolay olacaktır. Bakın bakalım hangisi daha kolay.
+
+987
+02:43:05,683 --> 02:43:07,043
+Yapıyorsunuz değil mi gençler?
+
+988
+02:43:10,363 --> 02:43:14,403
+Burada olanlar buradayım yazabilir mi? Merak ettim. Kaç kişi var şu anda?
+
+989
+02:43:15,443 --> 02:43:19,483
+58 kişi gözüküyor ama umarım derstediriz herkes.
+
+990
+02:43:50,131 --> 02:43:51,711
+Evet, durum vahim.
+
+991
+02:43:53,572 --> 02:43:55,511
+30'da, 12'ye düşmüş demek ki.
+
+992
+02:43:58,995 --> 02:44:01,075
+Ok, let's do item A.
+
+993
+02:44:03,635 --> 02:44:04,595
+Item A.
+
+994
+02:44:06,615 --> 02:44:15,195
+So, by the vertical cross-sections, doing these vertical cross-section, vertical bars, so we write double integration.
+
+995
+02:44:15,195 --> 02:44:24,395
+So, from x0 to x2, from x0,
+
+996
+02:44:25,427 --> 02:44:27,427
+x2, x2,
+
+997
+02:44:30,427 --> 02:44:33,427
+during this vertical scanning,
+
+998
+02:44:34,727 --> 02:44:37,427
+upper endpoint always on the y4,
+
+999
+02:44:39,327 --> 02:44:42,327
+lower endpoint is always on the yx2.
+
+1000
+02:44:42,628 --> 02:44:49,427
+Okay, so we rewrite this, and x plus y, we first integrate with respect to y.
+
+1001
+02:44:50,548 --> 02:44:53,548
+İntegrate ile ilgili ile ilgili bir şey var.
+
+1002
+02:44:53,548 --> 02:44:54,548
+Tamam.
+
+1003
+02:44:54,548 --> 02:44:59,548
+Şimdi, İntegration ile ilgili bir şey var.
+
+1004
+02:44:59,548 --> 02:45:06,316
+İntegration ile ilgili bir şey var.
+
+1005
+02:45:11,636 --> 02:45:12,216
+Kıya.
+
+1006
+02:45:16,564 --> 02:45:18,443
+İndi, item B,
+
+1007
+02:45:20,963 --> 02:45:24,123
+so we use horizontal cross-section.
+
+1008
+02:45:24,123 --> 02:45:29,204
+During this horizontal cross-section, lower bound for horizontal scanning y0,
+
+1009
+02:45:30,484 --> 02:45:35,123
+maximum bound, upper bound for horizontal cross-section y4.
+
+1010
+02:45:35,844 --> 02:45:42,804
+Okay, from y0 to y4, during this horizontal cross-section,
+
+1011
+02:45:43,316 --> 02:45:55,156
+horizontal scanning. Right-hand point, look at here, right-hand point on the x is equal to square of y, left-hand point is always on the x zero.
+
+1012
+02:45:56,276 --> 02:46:07,556
+Right-hand point, x is equal to square root of y, left-hand point, x is equal to zero, x plus y, dx, dy.
+
+1013
+02:46:20,147 --> 02:46:40,627
+y, here, so this is dy, attention here, dy, x, y, plus y square over 2, y eşittir x kareden, y eşittir 4'e, daha sonra bunu x'e göre integralini alacaksınız arkadaşlar. Şurası d'yi unutmayın.
+
+1014
+02:46:41,327 --> 02:47:08,367
+Ne yaparsınız? Bunu integraline aldıysanız sıfırdan ikiye yerleştirirseniz şunları, y yerine dört yazarsak, dört x artı, dört mü geldi? Sekiz geldi. Doğru mu? Eksi, y yerine x, x kare yazarsak, x küp, eksi, x üzeri dört bölü iki. Evet, bunun integralini şimdi x'e göre alacaksınız.
+
+1015
+02:47:09,108 --> 02:47:25,188
+Böyle hesaplayacaksınız. 4x kare bölü 2 artı 8x eksi x üzeri 4 bölü 4 eksi x üzeri 5 bölü ne geliyor? 10. Hata yapmak değil mi arkadaşlar? 0'dan 2'ye hesaplayın.
+
+1016
+02:47:25,747 --> 02:47:28,328
+Gelelim şuna bakalım. Bu böyle geldi.
+
+1017
+02:47:32,595 --> 02:47:33,595
+Bunu yapalım.
+
+1018
+02:47:34,995 --> 02:47:39,835
+Sıfırdan dörde ilk önce x'e göre integral alacağız.
+
+1019
+02:47:40,376 --> 02:47:44,635
+x kare bölü 2 artı y x.
+
+1020
+02:47:45,416 --> 02:47:50,975
+Tabii ki burada x alt sınır sıfır, üç sınır x için kök y.
+
+1021
+02:47:51,495 --> 02:47:54,716
+Bunları yaptık. Daha sonra y'ye göre integral alırız.
+
+1022
+02:47:55,355 --> 02:47:59,135
+Sıfırdan dörde x yerine kök y yazarsam.
+
+1023
+02:47:59,540 --> 02:48:12,080
+y kare, y gelir. Bu pozitif orada y'ye dikkat edin. y bölü 2 artı x yerine y yazarsak, kök y yazarsak, y üzeri 3 bölü 2. Doğru mu arkadaşlar?
+
+1024
+02:48:14,100 --> 02:48:26,220
+Ondan sonra 0 yazarsak, 0 gelir. x yerine 0 yazdık. d y, bunun da integralini alırsanız, y kare bölü 4 artı
+
+1025
+02:48:26,559 --> 02:48:29,279
+Y üzeri, tabii şurası 3 bölü 2 olacak, pardon.
+
+1026
+02:48:31,979 --> 02:48:39,399
+1 bölü 2 çarpı Y üzeri 5 bölü 2 bölü 5 bölü 2.
+
+1027
+02:48:40,159 --> 02:48:41,000
+Niye kaydı ya?
+
+1028
+02:48:42,439 --> 02:48:45,200
+Bir gariplik var bu tablette ama anlamadım.
+
+1029
+02:48:47,239 --> 02:48:50,180
+Evet, Y bölü 1 bölü 2.
+
+1030
+02:48:50,804 --> 02:49:06,023
+çarpı, y üzeri 5 bölü 2 bölü 5 bölü 2. Evet, sınırları yazar sıfırdan dörde. Bilmiyorum, hangisi kolayınıza geliyorsa, sanki bu daha kolaymış gibi duruyor. Evet, var mı soru sola?
+
+1031
+02:49:11,827 --> 02:49:14,327
+Soru sorun var mı? Aniquation? Do you have aniquation?
+
+1032
+02:49:21,780 --> 02:49:47,159
+Herhalde anlaşıldı. Hocam ben mantığını anlamadım dediğiniz yer var mı? Önemli olan mantığını anlamak. İşlem kısmı size ait. Zaten gençsiniz. Sizin işlemcileriniz, beyin işlemcileriniz daha iyi çalışıyor beninkinden. Mantığını anladığınız zaman sıkıntı yok. Bol bol pratik yaparsınız. Tamam mı gençler? Kendinize iyi bakın. Yarın görüşmek üzere. Sağlıcakla kalın.

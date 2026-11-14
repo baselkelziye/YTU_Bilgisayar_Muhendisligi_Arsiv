@@ -1,0 +1,2591 @@
+1
+00:00:08,884 --> 00:00:10,243
+Evet, merhaba gençler.
+
+2
+00:00:21,620 --> 00:00:23,320
+Birkaç dakika bekleyelim.
+
+3
+00:01:47,091 --> 00:01:54,891
+Ok, let's summarize topics yesterday, topics of yesterday from this lecture notes.
+
+4
+00:01:55,591 --> 00:02:11,872
+Ok, so as recall, the arc length of a polar curve is computed by integration from theta alpha to theta beta of square root of f of theta square plus
+
+5
+00:02:12,723 --> 00:02:15,203
+Derivation of f of theta square.
+
+6
+00:02:15,443 --> 00:02:21,643
+Okay, now, so in fact, so r is f of theta.
+
+7
+00:02:21,903 --> 00:02:25,663
+Attention here, r is f of theta.
+
+8
+00:02:26,383 --> 00:02:28,643
+So there are many examples.
+
+9
+00:02:29,283 --> 00:02:32,763
+There are many examples.
+
+10
+00:02:33,843 --> 00:02:35,643
+Pardon arkadaşlar, bizim çocuk geldi.
+
+11
+00:02:37,395 --> 00:02:41,895
+Ok, there are many examples about computing arc lengths of polar curves.
+
+12
+00:02:43,175 --> 00:02:52,315
+So, for example, we introduced some examples about cardioid, and I think, so we can solve this.
+
+13
+00:02:52,948 --> 00:03:20,948
+Bakın, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarıda, bu yukarı
+
+14
+00:03:23,439 --> 00:03:34,240
+ve d x, so in such integrations, indefinite integrations, it is better to do this trigonometric substitution. Let me use tangent t.
+
+15
+00:03:35,000 --> 00:03:40,819
+Okay, here x is theta, attention here, so that's why it is better to do this trigonometric substitution.
+
+16
+00:03:41,600 --> 00:03:46,340
+Theta is equal to a is 1, 1 times tangent t.
+
+17
+00:03:46,680 --> 00:03:51,439
+So by substituting this trigonometric transformation into our indefinite,
+
+18
+00:03:51,439 --> 00:04:12,739
+İndefinite integration, we are going to obtain these indefinite integrations, and you are going to obtain this. In fact, so if it's a k, if it's a k, the graph of r is equal to theta, look at here, r is equal to theta. So let's sketch this graph, polar curve. So look at here, so we put some, let me make it bigger.
+
+19
+00:04:19,220 --> 00:04:27,620
+At the position theta, for example, pi over 4, the distance to origin, and so r is pi over 4.
+
+20
+00:04:28,320 --> 00:04:39,019
+So at the position theta, theta is equal to pi over 2, the distance to origin is r is pi over 2.
+
+21
+00:04:39,200 --> 00:04:43,000
+Okay, so as you see, we have this spiral curve.
+
+22
+00:04:43,300 --> 00:04:44,720
+Okay, it's called spiral curve.
+
+23
+00:04:45,684 --> 00:04:46,884
+Okay, is there an equation?
+
+24
+00:04:53,012 --> 00:04:59,951
+Now, I think we introduced such example yesterday. That's why I pass over this equation.
+
+25
+00:05:02,391 --> 00:05:08,192
+Okay, let me summarize topics of vectors in three-dimensional space.
+
+26
+00:05:08,951 --> 00:05:17,872
+So, x, y, z, so right-handed coordinate system. So, you know, you recall this right-handed coordinate system from physics.
+
+27
+00:05:18,451 --> 00:05:29,631
+Okay, so there are many planes, but we have spatial planes, xz plane, okay, xy plane, xyz plane.
+
+28
+00:05:32,148 --> 00:05:40,888
+And also, we can talk about coordination of any point in the three-dimensional space, if you are given some point in the three-dimensional space.
+
+29
+00:05:41,108 --> 00:05:49,848
+So we can express this point in terms of Cartesian coordinates. So we just consider orthogonal projection of this point.
+
+30
+00:05:49,968 --> 00:05:57,008
+Okay, if you take the orthogonal projection of this point onto xy plane, you are going to obtain some point with coordinates A.
+
+31
+00:05:57,492 --> 00:06:04,892
+B, and Z coordinate 0, but if you take the orthogonal projection of this point onto x-axis, you are going to obtain this point.
+
+32
+00:06:05,552 --> 00:06:17,072
+So A, so all other coordinates 0. Okay, if you take the orthogonal projection of this point onto y-axis, you are going to obtain some point with some coordinates here.
+
+33
+00:06:17,572 --> 00:06:25,492
+So A 0 and B, okay, non-zero in this special case, and 0. Okay, now I just...
+
+34
+00:06:25,492 --> 00:06:35,331
+By using these orthogonal projections, we can express this point in the three-dimensional space in terms of Cartesian coordinate, A, B, C.
+
+35
+00:06:35,331 --> 00:06:36,171
+Okay.
+
+36
+00:06:37,459 --> 00:06:52,299
+Now, distance, okay, but this is out of topic. You may also express this point in the three-dimensional space in terms of spherical coordinates, but we're out of topic. Okay, maybe you are going to see this spherical coordinate system.
+
+37
+00:06:52,299 --> 00:07:04,579
+Küresel koordinat sistemleri var arkadaşlar. Şu an bu konunun dışında. Önceden vardı, kaldırıldı, keşke kaldırılmasaydı diye diyorum arkadaşlar. Ama internette yazın küresel koordinat sistemi diye.
+
+38
+00:07:05,459 --> 00:07:11,399
+görebilirsiniz. Çok sıklıkla kullanılan, mühendisiklerde çok sıklıkla kullanılan bir koordinatlandırma sistemidir.
+
+39
+00:07:13,019 --> 00:07:24,459
+Okay, everyone knows the distance formula. So I have this. So midpoint, I can, we can compute the midpoint of two given points in the three dimensional space. Okay, as you see.
+
+40
+00:07:26,932 --> 00:07:41,552
+Evet, bu çok önemli, bu midpoint. Bu, eğer, birçok, data, birçok, vektör, yani data.
+
+41
+00:07:41,552 --> 00:07:48,951
+Evet, şimdi, we can compute, we can compute, average, average value of this data.
+
+42
+00:07:49,524 --> 00:08:04,524
+So, let me use red color. So, we have some average values. Let's suppose that this is U1 vector. Let's suppose that this is U2 vector. Let's suppose that this is U2 vector. Okay, so let me...
+
+43
+00:08:06,524 --> 00:08:16,724
+Okay. So, there are many vectors, something like that. So, in fact, they are data. So, we have some data.
+
+44
+00:08:17,331 --> 00:08:25,491
+consisting of vectors 1, u2, those are vectors in three dimensions, so you add.
+
+45
+00:08:26,171 --> 00:08:29,451
+Okay, so this is data, friends, attention here.
+
+46
+00:08:30,051 --> 00:08:33,271
+So corresponding to any object.
+
+47
+00:08:33,932 --> 00:08:42,031
+Now, so average value of this data, average vector.
+
+48
+00:08:43,731 --> 00:08:59,632
+given by this addition of from i1 to nth, ii vector, and divide by this vector addition by, so let me multiply 1 over n.
+
+49
+00:09:00,172 --> 00:09:09,011
+So this is here, so this is average vector. Let me use blue color for this average vector. So this is the average vector, okay?
+
+50
+00:09:09,460 --> 00:09:12,840
+somewhere here, katlı here, here.
+
+51
+00:09:17,683 --> 00:09:26,763
+Okay, this is point. Attention, those are points. But if you make connection between this point and origin, you are going to obtain vector. Okay, attention here.
+
+52
+00:09:27,347 --> 00:09:53,427
+Dikkat edin arkadaşlar. Veriler genellikle nokta olarak düşünülür ama orijine bağlarsanız vektör olur. Dolayısıyla o vektörleri arkadaşlar toplayıp işte ene bölerseniz dolayısıyla ne yapıyorsunuz? O verilerin merkezindeki şeyi buluyorsunuz. Mesela örnek diyelim insan yüzüne dair bir sürü özellikler var. Doğru mu? İnsan yüzüne dair özellikler burada. Atıyorum bir görüntü şeyi yapacaksınız.
+
+53
+00:09:53,940 --> 00:10:04,340
+Görüntü tanıma algoritması inşa edeceksiniz. İnsan yüzüne dair şey burada. Ondan sonra bir başka insan yüzüne dair özellikler burada.
+
+54
+00:10:11,251 --> 00:10:19,311
+Evet. Şimdi mesela bir tane arkadaşlar, ne yapıyorum? Bir tane şöyle, bir tane ayırma yöntemi yapıyorum.
+
+55
+00:10:19,311 --> 00:10:28,091
+We have some plane, okay, separating these vectors to these dots, okay, these points.
+
+56
+00:10:28,711 --> 00:10:34,891
+Okay, if you input some new phase, so for example somewhere here,
+
+57
+00:10:40,403 --> 00:10:41,943
+Ok, let me use different color.
+
+58
+00:10:45,683 --> 00:10:49,644
+A new input, a new phase.
+
+59
+00:10:51,423 --> 00:11:00,984
+So your algorithm can classify, okay, so your algorithm can assign some class, okay, for this new phase.
+
+60
+00:11:00,984 --> 00:11:08,024
+Okay, your computer says that this new phase belongs to this class, not this class, okay, for example.
+
+61
+00:11:08,563 --> 00:11:29,883
+Okay, so this is machine learning. Okay, but those are dates, those are points, but if you make connection between these, you are going to obtain vectors. Attention here. So look at here, you are going to obtain some average feature here. So this is the average feature.
+
+62
+00:11:32,203 --> 00:11:34,003
+Average feature.
+
+63
+00:11:35,700 --> 00:11:40,639
+So, that is the mean of all points.
+
+64
+00:11:40,980 --> 00:11:49,759
+Okay, so, in order to compute this average feature, you need to create some vectors. Otherwise, you cannot operate on the points.
+
+65
+00:11:50,120 --> 00:11:57,040
+Noktalar üzerinde işlem yapamazsınız arkadaşlar. Vektörler üzerinde işlem yaparsınız. Noktaları orijinlere bağlarsınız. Ondan sonra ne yaparsınız?
+
+66
+00:11:57,040 --> 00:12:03,580
+Geçen dün anlattığımız işte toplama işlemlerini ne yapabilirsiniz? Yapabilirsiniz. Skader ile çarpma işlemini. Bakın.
+
+67
+00:12:03,700 --> 00:12:15,100
+Dolayısıyla bu ne oluyor? Buradaki ortalama özellik, bir yüze ait ortalama özellik nedir? Bir bölü en çarpı, ne yapıyorum? K1'den N'e kadar bütün vektörleri topluyorum.
+
+68
+00:12:15,100 --> 00:12:22,800
+Atıyorum insan yüzüne dair özellikler, bir insan yüzüne dair özellikler, onu da Pİ diyelim, PK diyelim.
+
+69
+00:12:24,740 --> 00:12:31,080
+Öteki de burada olacaktır. Dolayısıyla bunlara göre kıyaslayacak. Hangi merkeze daha yakınsa ona.
+
+70
+00:12:32,019 --> 00:12:38,679
+atfedecek yeni yüzü. Evet. Herhalde anlaşıldı. Bunlardan bahsetmiştim zaten.
+
+71
+00:12:39,439 --> 00:12:44,639
+So, if you are given two points, you can create some vectors. Okay, so PQ vectors.
+
+72
+00:12:49,908 --> 00:12:52,668
+Vektör operatiyonlar, çok önemli.
+
+73
+00:12:53,408 --> 00:12:58,108
+So, addition of vectors, substraccional vectors, and product by scalar.
+
+74
+00:12:58,408 --> 00:13:01,088
+So, we talked about properties of those operatiyonlar.
+
+75
+00:13:01,508 --> 00:13:11,908
+And paralelogram rule, if you are given two vectors, okay, so u plus v is denoted by this green line segment directed from some point to...
+
+76
+00:13:12,403 --> 00:13:32,331
+Bu bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir noktada bir nok
+
+77
+00:13:33,043 --> 00:13:56,268
+ve ve
+
+78
+00:13:56,628 --> 00:14:03,707
+Dikkat edin arkadaşlar, yüksek boyutlu uzaylarda uzunluk kavramını kullanmak doğru değil. Norm kavramını kullanmak daha mantıklı.
+
+79
+00:14:05,868 --> 00:14:07,508
+Bunları geçiyorum arkadaşlar.
+
+80
+00:14:07,508 --> 00:14:08,447
+That product.
+
+81
+00:14:09,128 --> 00:14:13,108
+Okay, so just talk about that product.
+
+82
+00:14:13,908 --> 00:14:18,548
+In fact, that product is given by this, but this is another definition.
+
+83
+00:14:18,788 --> 00:14:21,228
+So that product, you, that, you.
+
+84
+00:14:22,451 --> 00:14:31,812
+So from I1 to N, okay, here, so we consider spatial case, lower dimensional space.
+
+85
+00:14:33,091 --> 00:14:38,292
+Okay, but so in order to define the angle between U and V, we introduced this definition.
+
+86
+00:14:38,292 --> 00:14:43,331
+In fact, this is definition for the angle between given two vectors.
+
+87
+00:14:43,331 --> 00:14:46,012
+Okay, let me use these vector notations here.
+
+88
+00:14:46,451 --> 00:14:49,932
+Okay, so this is zero vector. Let me use zero, zero.
+
+89
+00:14:50,512 --> 00:14:55,032
+Attention here. So if that product of this, okay, zero.
+
+90
+00:14:56,711 --> 00:14:59,752
+So we say that they are orthogonal to each other here.
+
+91
+00:15:00,312 --> 00:15:00,752
+Okay.
+
+92
+00:15:01,792 --> 00:15:08,611
+If that product of two vectors is zero, we say that the angle between this vector is pi over two.
+
+93
+00:15:09,011 --> 00:15:34,011
+Okay, so we got this rule, attention here. So that product of two vectors is negative whenever the angle between you and v, okay, bigger than 90 degree. Can you see that? So this is negative. So because of this cosine theta. Okay, look at here. So the angle between you and v is pi. Can you see that? They have reverse direction.
+
+94
+00:15:36,851 --> 00:15:40,491
+The angle between u and v is 0, theta 0.
+
+95
+00:15:40,891 --> 00:15:43,731
+Okay, this means that they are in the same direction.
+
+96
+00:15:44,871 --> 00:15:45,192
+Okay.
+
+97
+00:15:46,004 --> 00:15:53,783
+ortogonal vectors, we talked about that. If dot product of vector 0, those are called ortogonal vectors.
+
+98
+00:15:53,783 --> 00:16:00,024
+Okay, so this is theorem. In fact, so this is theorem. You can also introduce this is a definition.
+
+99
+00:16:00,943 --> 00:16:07,943
+So by using this rule, okay, so you can prove that this is true. Okay, so this is just proof.
+
+100
+00:16:10,515 --> 00:16:22,195
+Evet arkadaşlar, o ispahatı var, ispahatını geçiyorum. Herkes biliyor zaten bunu. The law of cosine, cosine teore. Kosinus kuralı.
+
+101
+00:16:23,095 --> 00:16:36,915
+Okay, so let's talk about that product. Okay, so you can compute that product here. So you can compute the angle between u and v by using that definition. Okay.
+
+102
+00:16:38,292 --> 00:16:42,912
+Geçiyorum buralar arkadaşlar. Properties of that product, we talked about this.
+
+103
+00:16:44,491 --> 00:16:49,111
+Okay. Orthogonal projection. Okay, let me talk about orthogonal projections.
+
+104
+00:16:49,711 --> 00:16:58,912
+I think we missed this yesterday. Orthogonal projections for this, let me share some whiteboards.
+
+105
+00:17:00,692 --> 00:17:03,792
+Orthogonal projections is very important in engineering.
+
+106
+00:17:04,819 --> 00:17:07,579
+Also in data analysis and machine learning.
+
+107
+00:17:09,099 --> 00:17:12,839
+Evet, veri analizinde arkadaşlar, ortakonel dikiz düşümler çok önemli.
+
+108
+00:17:14,839 --> 00:17:20,199
+Belki de bazılarınız, branşınızla alakalı veri analizi olacaksınız, veri analizce.
+
+109
+00:17:21,500 --> 00:17:21,779
+Evet.
+
+110
+00:17:23,779 --> 00:17:25,740
+Okey, let me...
+
+111
+00:17:26,900 --> 00:17:37,292
+Öncelikle bu videonunca ortogonal projediği gibi bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde verilen bir şekilde
+
+112
+00:17:41,971 --> 00:17:47,971
+As you know, we can transport some vector without changing its direction and magnitude.
+
+113
+00:17:48,331 --> 00:17:50,791
+So this is a well-known fact from physics.
+
+114
+00:17:51,711 --> 00:17:59,511
+Even if they are separate vectors, so we can transport them to each other, and we can obtain this shape.
+
+115
+00:17:59,511 --> 00:18:06,511
+And let's talk about orthogonal projection of this u vector to...
+
+116
+00:18:06,511 --> 00:18:09,195
+...to...
+
+117
+00:18:09,875 --> 00:18:17,195
+V ve, on to V vektör. Okay, so look at here, so we have orthogonal projection here, vektör.
+
+118
+00:18:18,291 --> 00:18:27,011
+So, orthogonal projection, let me show this. So, the orthogonal projection of u onto v, let's use this notation.
+
+119
+00:18:27,971 --> 00:18:36,291
+Generally, I prefer to use this notation, but I never seen this notation anywhere. Okay, this is my notation. I prefer to use this notation.
+
+120
+00:18:36,291 --> 00:18:44,211
+Orthogonal projection, let me write here, orthogonal projection. So, orthogonal projection.
+
+121
+00:18:46,387 --> 00:18:51,547
+Projection of u onto v.
+
+122
+00:18:52,067 --> 00:18:55,647
+Okay, now how can we compute this orthogonal projection vector?
+
+123
+00:18:55,887 --> 00:18:57,447
+So this is very important.
+
+124
+00:18:57,887 --> 00:19:03,887
+Evet, ilk olarak, bu noktada bir noktada bir noktada bir noktada bir noktada bir noktada.
+
+125
+00:19:25,011 --> 00:19:46,151
+Now, so, so my question is, how can we compute this vector? But this is not vector, this is just the magnitude of the orthogonal projection vector. So, how to compute, how to compute this orthogonal projection? Think about that.
+
+126
+00:19:46,151 --> 00:19:48,691
+Evet, herkes yorumunu kastın arkadaşlar.
+
+127
+00:19:49,556 --> 00:20:03,756
+Nasıl hesaplayabiliriz? Tamam ben ortaklığına dikiz düşün vektörünü. Ben neyini buldum? Uzunluğunu buldum. Ama ben vektörün kendisini istiyorum. Vektörün kendisini nasıl hesaplarım? Düşünün bakayım birazcık.
+
+128
+00:20:08,692 --> 00:20:11,291
+Oradasınız değil mi gençler? Sesim geliyor mu?
+
+129
+00:20:25,748 --> 00:20:32,408
+Evet, düşündünüz mü? Diki düşünmek teorinin uzunluğunu buldum. Peki, Diki düşünmek teorinin nasıl hesapların?
+
+130
+00:20:54,740 --> 00:20:55,539
+Of course.
+
+131
+00:20:57,400 --> 00:20:58,920
+Good for you, [öğrenci].
+
+132
+00:20:59,319 --> 00:21:03,100
+Okay, so let me use blue color here.
+
+133
+00:21:03,100 --> 00:21:14,240
+So we have, okay, as you see, orthogonal projection has the initial point, the same with v-vector.
+
+134
+00:21:14,420 --> 00:21:15,240
+Okay, so here.
+
+135
+00:21:16,600 --> 00:21:20,220
+Okay, as you see, the angle between,
+
+136
+00:21:21,652 --> 00:21:28,412
+And v-vektör have the same direction.
+
+137
+00:21:33,652 --> 00:21:37,731
+İmpli that, implying that,
+
+138
+00:21:43,892 --> 00:21:46,732
+There, there exists
+
+139
+00:21:46,732 --> 00:21:51,112
+Some lambda
+
+140
+00:21:51,112 --> 00:21:55,032
+Values, color, number, such that
+
+141
+00:21:59,251 --> 00:22:02,451
+ortogonal projection is nothing else than this.
+
+142
+00:22:03,031 --> 00:22:04,372
+So they are co-linear.
+
+143
+00:22:04,811 --> 00:22:07,011
+So recall the definition of co-linear.
+
+144
+00:22:07,912 --> 00:22:18,332
+So in fact, so if the angle between you and V is the zero or pi, we say that they are co-linear,
+
+145
+00:22:18,711 --> 00:22:23,051
+implying that there exists some lambda scalar such that
+
+146
+00:22:23,279 --> 00:22:37,819
+u is equal to lambda times v. Okay, so we can write this. So what about this? Let's compute this. What about this? What do you think? What is this? Okay, so this is lambda. Let me say this is lambda.
+
+147
+00:22:42,036 --> 00:22:52,115
+Okay, but, okay, this is not lambda. Okay, sorry, sorry, sorry. This is not lambda. We need to create some unit vector. This is not lambda. That is mistake.
+
+148
+00:22:54,195 --> 00:22:58,615
+Okay, we need to obtain another vector here.
+
+149
+00:23:04,019 --> 00:23:31,259
+So, this is the unit vector. We can obtain some unit vector. Unit vector v. We divide v vector by the magnitude of v. Okay. So, this is good. And so, uv and the unit vector. So, let me use here. Okay. So,
+
+150
+00:23:31,892 --> 00:23:35,892
+V over, okay, now, let's do it.
+
+151
+00:23:37,872 --> 00:23:38,272
+Okay.
+
+152
+00:23:39,492 --> 00:23:56,552
+Now, as you see, the orthogonal projection vector and the unit vector obtained by V, if you divide any vector by its magnitude, you are going to obtain, you are going to obtain some unit vector. Unit vector means its length is 1.
+
+153
+00:23:56,932 --> 00:23:58,132
+Okay, now,
+
+154
+00:23:59,092 --> 00:24:24,352
+So now we can say that lambda is this. So lambda is this. Now as you see, the unit vector, orthogonal projection vector is lambda here. So we write this. The norm of orthogonal projection times v over this.
+
+155
+00:24:25,428 --> 00:24:34,284
+So, just substitute this, and the u norm times...
+
+156
+00:24:37,971 --> 00:24:44,331
+Bunu aslında bir şeyden biliyoruz arkadaşlar. Bu neye eşitti?
+
+157
+00:24:46,331 --> 00:24:48,652
+So, let's recall this.
+
+158
+00:24:49,112 --> 00:24:52,711
+U.v.
+
+159
+00:24:53,432 --> 00:24:56,652
+The norm of u times
+
+160
+00:24:56,652 --> 00:24:59,211
+The norm of v times
+
+161
+00:24:59,700 --> 00:25:21,800
+The angle between this. So we are looking for this. Attention here. So this is the length of orthogonal projection. So as you see, lambda is u dot v over this. Okay, so we got this. Attention here.
+
+162
+00:25:23,420 --> 00:25:25,580
+So let me erase this.
+
+163
+00:25:29,587 --> 00:25:44,587
+So we got u dot v, so this is scalar, attention here, the square of this, so this is scalar times v.
+
+164
+00:25:46,587 --> 00:25:51,587
+Okay, so this is the orthogonal projection vector.
+
+165
+00:25:51,587 --> 00:25:55,276
+Okay, so let me...
+
+166
+00:25:55,827 --> 00:26:22,987
+So, but we suppose that, attention here, so here we suppose that theta is between pi over 2 and 0. But also you may consider this, this case. So, attention here. So in this case, so angle is between the u and v is bigger than pi over 2. So in that case, the orthogonal projection vector
+
+167
+00:26:23,508 --> 00:26:47,988
+has reverse direction here, somewhere here. Can you see that? So here, orthogonal projection. Let me use, so this is, so this is the orthogonal projection of V onto U. Okay. Somewhere here. So you may study this. Evet arkadaşlar. For example, example,
+
+168
+00:26:52,788 --> 00:26:57,427
+1, 2, minus 1, ve,
+
+169
+00:27:05,428 --> 00:27:06,428
+Evet.
+
+170
+00:27:06,428 --> 00:27:08,428
+V,
+
+171
+00:27:08,428 --> 00:27:11,428
+2,
+
+172
+00:27:11,428 --> 00:27:13,428
+3,
+
+173
+00:27:13,428 --> 00:27:14,428
+1.
+
+174
+00:27:14,428 --> 00:27:17,428
+Let's compute,
+
+175
+00:27:17,428 --> 00:27:21,428
+item A, let's compute
+
+176
+00:27:21,428 --> 00:27:26,428
+the length of orthogonal projection
+
+177
+00:27:31,508 --> 00:27:58,888
+Ok, you don't need to memorize formulas. Ok, it's very simple. U is, let's say this is U, let's say this is V. So as you see, so this is the orthogonal projection vector. So U, the length of orthogonal projection of U onto V is given by this, the norm of U times cosine theta.
+
+178
+00:27:59,440 --> 00:28:26,840
+I don't want to compute the cosine theta. So instead of computing cosine theta, so I would prefer to use that product. So we know that. So this is nothing else than u dot v over the norm of v. Okay, we know this. Okay, by using the definition of that product.
+
+179
+00:28:28,403 --> 00:28:31,523
+Okay, now, so let's compute u dot v.
+
+180
+00:28:31,523 --> 00:28:44,323
+u dot v, 1 times 2, 1 times 2, plus 2 times 3, plus minus 1 times 1.
+
+181
+00:28:44,983 --> 00:28:48,063
+Okay, the answer is 7. Is that correct?
+
+182
+00:28:49,283 --> 00:28:50,963
+And this is 7.
+
+183
+00:28:52,403 --> 00:29:15,964
+Oh, let's compute the norm of v. Let's compute the norm of v. The norm of v is given by this square root of v dot v. And this is 2 square, 3 square, 1 square, square root of this. Is that correct?
+
+184
+00:29:17,236 --> 00:29:25,896
+ve, as you see, we have computed the length of orthogonal projection. This is not orthogonal projection vector.
+
+185
+00:29:27,859 --> 00:29:37,379
+We need to compute orthogonal projection vector, but first of all, we need to compute some unit vector in the direction of orthogonal projection vector.
+
+186
+00:29:37,979 --> 00:29:45,979
+So we know the vectors v, so the unit vector, if you divide v by its norm, you are going to obtain some unit vector.
+
+187
+00:29:45,979 --> 00:29:54,939
+So the norm of v square root of 15, so 1 over square root of 15 times v vector.
+
+188
+00:29:55,923 --> 00:30:02,644
+Ok, let me see the coordinate of v-vector, 2, 3, 1. Ok, now we got this.
+
+189
+00:30:05,244 --> 00:30:18,163
+So, this is the unit vector. You can see, really, this is unit vector. If you compute its length, you are going to see that the norm of this vector is 1.
+
+190
+00:30:18,163 --> 00:30:22,004
+The length of this vector is 1. So, this is the unit vector.
+
+191
+00:30:22,496 --> 00:30:39,896
+which has same direction with the orthogonal projection vector, but if you multiply, if you multiply this unit vector by the normal projection vector, you are going to obtain orthogonal projection vector.
+
+192
+00:31:11,316 --> 00:31:14,255
+Ok, as you see, we are going to obtain.
+
+193
+00:31:23,443 --> 00:31:26,044
+Okey, so this is the orthogonal projection vector.
+
+194
+00:31:27,923 --> 00:31:29,764
+Orthogonal projection vector.
+
+195
+00:31:32,903 --> 00:31:34,484
+Sorusu olan var mı?
+
+196
+00:31:35,403 --> 00:31:37,044
+Dikil düşüm konusu önemli.
+
+197
+00:31:38,144 --> 00:31:39,943
+Veri analizinde özellikle arkadaşlar.
+
+198
+00:31:40,663 --> 00:31:41,224
+Çok önemli.
+
+199
+00:31:43,044 --> 00:31:43,264
+Evet.
+
+200
+00:31:43,763 --> 00:31:53,003
+Bu konuyu veriyorum. Çoğunlukla bu dikiz düşünme alakalı bugüne kadar hiç soru gelmedi sınavlarda ama ileride belki kullanırsınız. Geçiyorum. Sorusu olan yoksa geçiyorum.
+
+201
+00:31:59,859 --> 00:32:17,859
+Okay, we talked about cross product or vector product. So we talked about this property. Okay, we got this property. Distributed property is very important. Look at here. So we got this property. We talked about this property.
+
+202
+00:32:19,955 --> 00:32:46,235
+So we got this cross product rule. You recall this from physics. Okay, you can compute this really. This is true. So i cross j results in k. k cross i results in j. But those are cross product, vectoral products. Okay, not the usual products. Okay, attention here. So we told about this before. Okay.
+
+203
+00:32:46,836 --> 00:32:50,296
+So I introduced some brief notation, not like that.
+
+204
+00:32:51,415 --> 00:32:51,655
+Okay.
+
+205
+00:32:54,276 --> 00:32:56,915
+I see you can compute the area of triangle.
+
+206
+00:32:56,915 --> 00:33:02,596
+If you are given three points, which are not on the same line,
+
+207
+00:33:02,716 --> 00:33:05,996
+then we can talk about some triangle and its area.
+
+208
+00:33:06,536 --> 00:33:07,276
+So look at here.
+
+209
+00:33:07,476 --> 00:33:10,516
+If they are on the same line, you cannot talk about.
+
+210
+00:33:12,307 --> 00:33:37,548
+You cannot talk about area. Also, you are going to obtain zero area. Zero area means they are on the same line. Evet, sıfır alan elde ederseniz arkadaşlar burada mesela vektörel çarpım sıfır gelecek. Sıfır alan bulursunuz. Normalde sıfır olarsanız sıfır vektörün de onu sıkılır sadece. O zaman dersiniz ki üçü aynı, doğru üzerindedir. Üçgenden bahsedemezsiniz. Doğru mu? Evet.
+
+211
+00:33:40,084 --> 00:33:42,344
+Okay, we talked about this before.
+
+212
+00:33:45,284 --> 00:33:47,064
+Okay, herhalde anlaşıldı.
+
+213
+00:33:47,744 --> 00:33:51,884
+Let me talk about lines in three-dimensional space.
+
+214
+00:33:52,004 --> 00:33:54,384
+Let me use whiteboard.
+
+215
+00:33:56,224 --> 00:33:56,864
+Line.
+
+216
+00:33:59,700 --> 00:34:15,519
+Ama önce bir cüzlemden bahsedeyim arkadaşlar. Ondan sonra önce lines'dan bahsedelim. Tamam. Lines in high dimensional space. But first of all, let me use lower dimensional space. Lines in three dimensional space.
+
+217
+00:34:24,724 --> 00:34:26,724
+İzlediğiniz için bir drone var.
+
+218
+00:34:26,724 --> 00:34:30,724
+Ve bu drone var.
+
+219
+00:34:30,724 --> 00:34:32,724
+Ve bu bir bir line var.
+
+220
+00:34:32,724 --> 00:34:36,724
+Ve bu point var.
+
+221
+00:34:36,724 --> 00:34:44,724
+Bu bir point var.
+
+222
+00:34:44,724 --> 00:34:46,724
+Ve bu point var.
+
+223
+00:34:46,724 --> 00:34:48,724
+P0 var.
+
+224
+00:34:49,715 --> 00:35:05,175
+x0, y0, z0. This is not vector, so this is just point. So your drone travel through this point. Okay, now, so let me sketch its orbit.
+
+225
+00:35:10,132 --> 00:35:13,052
+Bu orbe de drone, bu orbe de bir drone.
+
+226
+00:35:38,132 --> 00:35:47,211
+So, so, given, this point given, input, and so we need to input direction for this drone.
+
+227
+00:35:47,952 --> 00:35:55,072
+Okay, so let me put some direction, but direction means, direction means vector.
+
+228
+00:35:55,072 --> 00:36:01,391
+Okay, so let me use this coordinate attention here.
+
+229
+00:36:02,692 --> 00:36:03,592
+Okay, input.
+
+230
+00:36:04,884 --> 00:36:19,824
+Input, a direction, so a point, p0, x0, y0, z0, input, input, sorry, input.
+
+231
+00:36:25,172 --> 00:36:28,692
+Vector, which is direction.
+
+232
+00:36:32,659 --> 00:36:36,439
+B, A, B, C.
+
+233
+00:36:39,019 --> 00:36:47,420
+Okay, so, by these inputs, so, we can talk about the motion of this drone. Okay.
+
+234
+00:36:48,340 --> 00:36:53,420
+Now, so, how can we obtain motion equation of this drone? Okay.
+
+235
+00:36:55,219 --> 00:37:18,960
+Dikkat edin arkadaşlar, P0 noktasından geçiyor. Yani onu biz vereceğiz, bilgisayara tanıtacağız. Bir de ona bir yön tayin edeceğiz. Bir V vektörü ile. Ve o zaman bu drone'u hareket ettireceğiz. Ama işte bunu hareket denklemini, ben nasıl ona tanıtacağım? Sorumuz bu. Tamam mı arkadaşlar? Ne yapacağım o zaman? Şöyle yapıyorum, geliyorum. Vektörler bir şekilde. O zaman burada herhangi bir nokta alıyorum.
+
+236
+00:37:23,059 --> 00:37:29,699
+on this orbit. Let's say the coordinate of this position. So x, y, z.
+
+237
+00:37:31,720 --> 00:37:38,440
+Okay, so let me obtain vectors here. So this is all p0 vector.
+
+238
+00:37:42,260 --> 00:37:43,596
+Bu, bu
+
+239
+00:37:48,755 --> 00:37:51,755
+O, P vektör.
+
+240
+00:38:01,300 --> 00:38:26,000
+P0, P-vektör. Can you see that? So let me use X, sorry. So OX, let me write OX. So P0, X. Now as you see, so OX vector, O P0 vector, plus P0, X vector, results in OX vector.
+
+241
+00:38:27,411 --> 00:38:54,291
+O P0 vector, so X0, Y0, Z0, plus P0 X vector, X minus X0, Y minus Y0, Z minus Z0, equals to O X vector. O X vector, X.
+
+242
+00:38:54,704 --> 00:38:56,523
+y, z.
+
+243
+00:38:57,023 --> 00:39:10,144
+But look at here, so at this stage, we do not use this direction vector, but if you compute this equation, you can see that x is equal to x, y is equal to y, z is equal to z.
+
+244
+00:39:10,579 --> 00:39:34,679
+Does not make sense. So how can we use this? X is equal to x, y is equal to y, and z is equal to z. So this does not make sense. So in order to use this equality, so we need to spin it to input this directional vector. So how can we input this directional vector into our problem? So look at here. So this directional vector
+
+245
+00:39:35,699 --> 00:39:47,339
+Direktional vector v is parallel to the P0, P0x vector, sorry, P0x vector.
+
+246
+00:39:49,339 --> 00:39:59,199
+So this means that they are co-linear, there exists some, there exists some lambda, lambda parameter, okay.
+
+247
+00:40:00,532 --> 00:40:19,072
+Some lambda parameter, also some you may write here, so let me use t parameter, let me use t parameter, not lambda, let's say, so we have some t parameter, and such that, such that,
+
+248
+00:40:19,635 --> 00:40:25,596
+P0x vector, t times v vector.
+
+249
+00:40:26,175 --> 00:40:34,076
+Okay, we substitute P0x, t v, t times v into here, 0x here.
+
+250
+00:40:34,076 --> 00:40:42,795
+So I see x0, y0, z0 plus, so here, so this is t times v.
+
+251
+00:40:44,628 --> 00:40:50,848
+Z equal to x, y, z, let me write here, sorry, let me write v, sorry.
+
+252
+00:40:54,739 --> 00:40:57,579
+A, V-vector, B, C.
+
+253
+00:40:58,820 --> 00:41:00,619
+X, Y, Z.
+
+254
+00:41:00,980 --> 00:41:07,059
+So by using this vectoral equation, you are going to obtain this.
+
+255
+00:41:07,059 --> 00:41:14,099
+X is equal to X0 plus A times T.
+
+256
+00:41:15,019 --> 00:41:19,900
+Y is equal to Y0 plus B times T.
+
+257
+00:41:20,532 --> 00:41:26,692
+z is equal to z zero plus c times t.
+
+258
+00:41:27,552 --> 00:41:33,311
+Okay, so we may regard, so t is some time parameter.
+
+259
+00:41:33,791 --> 00:41:38,492
+So we can suppose that, so our drone starts to move at the moment t zero.
+
+260
+00:41:38,492 --> 00:41:47,211
+If you substitute t zero here, this means that your drone starts to move at the position p zero and
+
+261
+00:41:47,699 --> 00:42:00,699
+Göz in this direction, goes in direction v. But if you put some here, so if you suppose t is negative, so this means that your drone moves in the reverse direction of v.
+
+262
+00:42:00,699 --> 00:42:15,699
+Eğer t sıfırdan büyük değerler yazarsam, sıfır yazarsam zaten x sıfır, y sıfır, z sıfır konumunda olacak benim aracım. Eğer sıfırdan büyük değerler yazarsam, o zaman p sıfır, v vektörü yönünde hareketmiş olacak. T yine negatif değerler girersem,
+
+263
+00:42:15,699 --> 00:42:21,920
+Benim aracım o zaman P0'dan dönecek, ters yönde hareket edecek. Yani kodu buna göre yapacaksınız. Tamam mı gençler?
+
+264
+00:42:23,619 --> 00:42:31,539
+Herhalde anlaşıldı. Atıyorum bir otomatik, kendi başına hareket eden bir drone tasarlayacaksınız. Ne yapacak?
+
+265
+00:42:31,699 --> 00:42:37,759
+İşte karşısına bir nesne gelirse, gelinceye kadar düz devam edecek. Karşısına bir nesne gelince ne yapacak?
+
+266
+00:42:37,759 --> 00:42:41,639
+O nesnenin büyüklüğünü sensörleriyle ölçecek. Ondan sonra ne yapacak?
+
+267
+00:42:42,547 --> 00:42:53,387
+Hemen orada bir kavis alacak. Ondan sonra tekrardan rutasına girecek. Mesela böyle bir kod yazabilirsiniz. Düşünen bir drone. Kendi başına hareket ediyor. Tamam mı gençler? Var mı anlaşmayan bir yer? İzlenenik bu için.
+
+268
+00:42:57,235 --> 00:42:58,375
+Sorusu olan yok galiba.
+
+269
+00:43:06,132 --> 00:43:06,552
+Evet.
+
+270
+00:43:11,476 --> 00:43:13,675
+Okay, this is called parametric equation.
+
+271
+00:43:15,456 --> 00:43:17,956
+Parametric equation of line.
+
+272
+00:43:18,496 --> 00:43:21,195
+Parametric equation.
+
+273
+00:43:26,483 --> 00:43:27,863
+4 line.
+
+274
+00:43:29,143 --> 00:43:46,583
+Or look at here, so we can obtain this x minus x0 over a, so y minus y0 over b, z minus z0 over c, but here equal to b.
+
+275
+00:43:46,683 --> 00:43:52,783
+So we suppose that, so a, b, they are non-zero.
+
+276
+00:43:56,371 --> 00:44:12,031
+Okay, but if one of them zero, so we can write this x minus x zero over a, y minus y zero over b, okay, and z is equal to z zero, so this means that a is not zero.
+
+277
+00:44:12,947 --> 00:44:16,247
+ve b'e non-zero, c'e zero.
+
+278
+00:44:16,247 --> 00:44:20,727
+Attention here, so if you put c'e zero, you are going to obtain this.
+
+279
+00:44:20,727 --> 00:44:35,127
+This means that, so u travels on the x, y, z is equal to z zero plane, so this means that, so let me sketch this case.
+
+280
+00:44:36,567 --> 00:44:38,327
+This means that your drone...
+
+281
+00:44:39,315 --> 00:44:44,115
+So, we choose some z0. So, we have some plane here.
+
+282
+00:44:46,255 --> 00:44:48,035
+Passing through z0.
+
+283
+00:44:49,195 --> 00:44:51,515
+Okay, here, z0.
+
+284
+00:44:52,015 --> 00:44:55,755
+And z is equal to, we are going to talk about plane.
+
+285
+00:44:58,164 --> 00:45:22,084
+Z zero, z zero. Okay, your drone is traveling on this, that is equal to that zero plane in the three-dimensional space, but in the direction, so here, something like that, so here, some V vector, so A is non-zero, B is non-zero, C is zero, okay, now here, something like that.
+
+286
+00:45:26,132 --> 00:45:26,632
+Tamam.
+
+287
+00:45:29,251 --> 00:45:30,132
+İzinen için,
+
+288
+00:45:31,592 --> 00:45:33,172
+also you may also
+
+289
+00:45:33,172 --> 00:45:34,251
+other
+
+290
+00:45:34,251 --> 00:45:37,351
+cases. Diğer durumlarda
+
+291
+00:45:37,351 --> 00:45:39,491
+bender şekilde inşa edebilirsiniz.
+
+292
+00:45:39,612 --> 00:45:41,172
+Tamam arkadaşlar? This is called
+
+293
+00:45:41,172 --> 00:45:42,692
+has a form of line.
+
+294
+00:45:43,692 --> 00:45:45,572
+Buna da has şekli deniyor arkadaşlar.
+
+295
+00:45:45,771 --> 00:45:47,211
+Doğrunun. Ama biz genellikle
+
+296
+00:45:47,211 --> 00:45:49,471
+karimetrik iklimleri kullanıyoruz.
+
+297
+00:45:49,692 --> 00:45:49,831
+Tamam.
+
+298
+00:45:50,675 --> 00:46:05,095
+Buraya kadar anlaşıldı herhalde. Anlaşmayayım, bir yer yok. Umarım. Doğrudan bahsettik. Mesela bir noktanın doğruya olan uzaklığını hesaplayın derlerse, o tarz sorular gelebilir.
+
+299
+00:46:05,095 --> 00:46:17,955
+Ama hiç ancak gelmiyor. Ama ben size bir noktanın doğruya olan uzaklığını nasıl hesaplayabilir? Onu göstermiştik arkadaşlar. Evet, geçiyorum.
+
+300
+00:46:22,420 --> 00:46:23,500
+Hemen notlara bakalım.
+
+301
+00:46:25,580 --> 00:46:27,840
+Okay, we talked about this before.
+
+302
+00:46:30,060 --> 00:46:33,000
+Equation of a line, we talked about this.
+
+303
+00:46:37,268 --> 00:46:43,288
+Okay, so this is very simple. So this is the starting point of motion.
+
+304
+00:46:44,275 --> 00:47:06,135
+So, and, okay, so this is starting point of motion, and this is the direction vector, x is equal to x0 plus, so this is x0, this is y0, this is z0, okay, so this is the a, this is the b, this is the c, x is equal to x0 plus at, y is equal to y0 plus z, x is equal to 0 plus ct, okay.
+
+305
+00:47:06,612 --> 00:47:12,392
+Now, so this is the vectoral form of this motion, vectoral form, so this is parametric form.
+
+306
+00:47:12,712 --> 00:47:16,372
+Okay, so parametric form can be obtained from vectoral form.
+
+307
+00:47:18,092 --> 00:47:18,612
+Okay.
+
+308
+00:47:20,072 --> 00:47:27,952
+Now, look at here, so this is the vectoral form of motion, x is equal, this is x0, this is 80.
+
+309
+00:47:28,732 --> 00:47:29,772
+Okay, can you see that?
+
+310
+00:47:29,952 --> 00:47:30,372
+This is...
+
+311
+00:47:31,284 --> 00:47:37,403
+y, y is equal to y zero plus et, z is equal to z zero plus et, attention here.
+
+312
+00:47:37,984 --> 00:47:43,164
+So, find the equation of line segment, b, b, 0, and p, 1.
+
+313
+00:47:44,144 --> 00:47:44,484
+Okay.
+
+314
+00:47:45,964 --> 00:47:51,064
+Look at here, so your task is to obtain line segment, not equation of line.
+
+315
+00:47:51,544 --> 00:47:55,724
+So, this means that your drone travels from the point p, 0, p, 1.
+
+316
+00:47:55,724 --> 00:47:57,604
+Just write.
+
+317
+00:47:58,068 --> 00:48:03,028
+...equation of this bounded motion, not unbounded.
+
+318
+00:48:03,028 --> 00:48:10,468
+Okay, so this makes sense more than line equation.
+
+319
+00:48:12,211 --> 00:48:18,311
+Evet, dikkat edin. Gromunuz P0 noktasından, P1 noktasından düz bir şekilde hareket edecek.
+
+320
+00:48:18,831 --> 00:48:25,391
+Gromun hareket teklemini yazdı. Tabii siz hızınızı biliyorsunuz arkadaşlar. Hızınızı ayarlayacaksınız orada.
+
+321
+00:48:26,072 --> 00:48:30,351
+Zaten arkadaşlar, hızı aslında yön vektörünün normudur arkadaşlar.
+
+322
+00:48:36,884 --> 00:48:37,900
+Uzunlu.
+
+323
+00:48:42,931 --> 00:48:45,112
+Evet, yapın bakalım gençler.
+
+324
+00:48:47,711 --> 00:48:48,552
+Bekliyorum.
+
+325
+00:48:50,172 --> 00:48:56,052
+Aracınız P0'dan P1 noktasına hareket edecek. Bu hareketin denklemini ifade edin zamana bağlı olarak.
+
+326
+00:49:17,300 --> 00:49:18,080
+Ulan var mı?
+
+327
+00:49:32,244 --> 00:49:35,884
+Is there anybody who could find the equation for this motion?
+
+328
+00:50:09,076 --> 00:50:35,275
+Evet.
+
+329
+00:50:35,539 --> 00:50:38,860
+is equal to P0, P1.
+
+330
+00:50:40,740 --> 00:50:43,440
+Okay, so P0, P1 vector.
+
+331
+00:50:44,559 --> 00:50:48,880
+And so this is 0 minus 3, minus 3.
+
+332
+00:50:49,360 --> 00:50:53,059
+And 5 minus minus 1, 6.
+
+333
+00:50:53,700 --> 00:50:56,180
+And 2 minus 4, minus.
+
+334
+00:50:57,056 --> 00:51:00,056
+Evet.
+
+335
+00:51:21,715 --> 00:51:25,715
+a times t, y is equal to
+
+336
+00:51:29,427 --> 00:51:38,367
+y0 plus b times t, z is equal to z0 plus c times t.
+
+337
+00:51:38,827 --> 00:51:52,447
+But if you suppose that your drone starts to move at the moment, t0 here, so t0 is equal to 0, so this is x0, let's suppose that p0, this is x0.
+
+338
+00:51:54,195 --> 00:51:58,456
+This is y0, and this is z0, okay?
+
+339
+00:51:59,215 --> 00:52:06,076
+Now, so suppose that t is 0, corresponds to p0, okay?
+
+340
+00:52:06,936 --> 00:52:20,056
+Now, so as you see, if you substitute t is equal to 0, we are going to obtain this, x0 is 3 plus, minus, sorry, a is, so this is, let's suppose that this is a, this is b, and this is c.
+
+341
+00:52:20,500 --> 00:52:47,340
+Minus 3 times t, z0 is, y0, sorry, minus 1, so y0 is minus 1, and p, 6 times t, z0 is 4, 4 plus, and c, minus 2, sorry, minus 2 times t.
+
+342
+00:52:47,664 --> 00:52:54,104
+Ok, by taking into account this correspondence, t is equal to 0 corresponds to 0 point.
+
+343
+00:52:54,264 --> 00:53:00,344
+Really, we can confirm this. If you substitute t 0 here, you are going to obtain x 0, y 0, z 0 here.
+
+344
+00:53:01,104 --> 00:53:08,424
+Ok, now, so in order to obtain p1, so t, so we need to compute t value.
+
+345
+00:53:08,424 --> 00:53:12,084
+So x1, so this is 0.
+
+346
+00:53:13,876 --> 00:53:15,436
+5, 2.
+
+347
+00:53:16,796 --> 00:53:18,516
+And t is what?
+
+348
+00:53:19,076 --> 00:53:22,836
+For what values of t we can obtain p1?
+
+349
+00:53:25,596 --> 00:53:26,896
+Buldu mu herkes onu?
+
+350
+00:53:27,836 --> 00:53:30,956
+Neydi o? 0, 5, 2.
+
+351
+00:53:32,715 --> 00:53:35,755
+Hangi t değeri için p1'i elde ederiz arkadaşlar?
+
+352
+00:53:37,896 --> 00:53:39,496
+Öyle bir t değeri olacak.
+
+353
+00:53:40,776 --> 00:53:41,296
+Buldunuz mu?
+
+354
+00:53:44,371 --> 00:53:46,371
+T0 için P0'u yakaladım.
+
+355
+00:53:50,900 --> 00:53:56,440
+Okay, if you substitute t1, okay, so if you substitute t1,
+
+356
+00:54:01,556 --> 00:54:25,056
+Şimdi t1'e 0'
+
+357
+00:54:25,056 --> 00:54:27,215
+X1, Y1, Z1.
+
+358
+00:54:27,315 --> 00:54:32,536
+Okay, now, so we can suppose that, okay, so this is, the input is bound.
+
+359
+00:54:35,715 --> 00:54:41,195
+Okay, so this is the equation of motion of your drone.
+
+360
+00:54:41,755 --> 00:54:44,456
+Okay, your drone starts to move.
+
+361
+00:54:46,195 --> 00:54:50,295
+0, ve destek point P1.
+
+362
+00:54:50,715 --> 00:54:50,995
+Okay?
+
+363
+00:54:50,995 --> 00:54:56,935
+And if you compute, if you compute the norm of, if you compute the norm of V,
+
+364
+00:55:05,684 --> 00:55:10,924
+This is 4. So this will be velocity of your drone.
+
+365
+00:55:11,544 --> 00:55:12,904
+Okay? Unit.
+
+366
+00:55:13,704 --> 00:55:17,744
+Tabi birim. Neosiyeline bağlı arkadaşlar. Kullandığınız birim önemli.
+
+367
+00:55:18,424 --> 00:55:21,304
+Ona göre işte bu drone'un gücüne göre orada bir birim koyacaksınız.
+
+368
+00:55:21,424 --> 00:55:25,724
+Metre mi artık, kilometre mi neyse. Tabi zamana da birim koyacaksınız.
+
+369
+00:55:26,228 --> 00:55:33,167
+Bir saat mi, bir dakika mı, o filme göre değişir. O zaman onlar ona göre değişecek. Kullandığınız bilime göre. Var mı anlaşmayan bir yer?
+
+370
+00:55:33,487 --> 00:55:34,147
+İzereli koyduk.
+
+371
+00:55:37,387 --> 00:55:38,347
+Soru yok galiba.
+
+372
+00:55:45,235 --> 00:55:57,396
+Okey, so have a break. Bir on dakika ara verelim. Sorusu olan varsa cevaplayabiliriz. Yoksa ara verelim. Okey, ten minutes break.
+
+373
+01:15:44,020 --> 01:15:45,060
+Merhaba gençler.
+
+374
+01:15:48,140 --> 01:15:49,360
+Okay, let's go on.
+
+375
+01:15:51,820 --> 01:15:57,140
+Let me talk about equation of plane, how to obtain equation of a plane.
+
+376
+01:16:01,268 --> 01:16:05,268
+Okay. Now, first of all, let me talk about...
+
+377
+01:16:27,539 --> 01:16:33,659
+Ok, do you think, is it sufficient to obtain the unique plane by using only one point?
+
+378
+01:16:38,644 --> 01:16:51,123
+You are given some point, let's say this is P0, let's say P, x0, y0, z0.
+
+379
+01:16:52,184 --> 01:16:58,924
+Do you think it is sufficient to have this unique point, to have some unique equation?
+
+380
+01:17:00,372 --> 01:17:07,072
+Bu noktadan geçen bir tane düzlem. Yalnızca bir tane düzlem mi vardır, yoksa sonsuz sayıda mı düzlem vardır?
+
+381
+01:17:07,891 --> 01:17:21,872
+There are infinitely many planes passing through this point. That's why it is not sufficient to have this point in order to talk about some unique, unique plane. That's why we need extra parameter.
+
+382
+01:17:38,355 --> 01:17:39,975
+Let's say this is our plane.
+
+383
+01:17:43,475 --> 01:17:44,735
+So let's...
+
+384
+01:17:49,555 --> 01:17:58,835
+Let me put here some vector, which is perpendicular to play.
+
+385
+01:17:58,835 --> 01:18:15,815
+Okay, now input given, let me say, given a point P, x0, y0, z0, and a vector
+
+386
+01:18:18,836 --> 01:18:23,996
+And let's say this is A, B, C.
+
+387
+01:18:25,076 --> 01:18:42,976
+Then, then, there is, there is unique, there is unique, clean, passing through.
+
+388
+01:18:50,868 --> 01:18:51,868
+Pass it through.
+
+389
+01:18:51,868 --> 01:18:55,868
+Let me use which cloth structure here.
+
+390
+01:18:55,868 --> 01:18:58,868
+Not ing cloth.
+
+391
+01:18:58,868 --> 01:19:05,868
+So, unique plane which is perpendicular.
+
+392
+01:19:11,988 --> 01:19:15,908
+2n vektör ve passing through.
+
+393
+01:19:22,963 --> 01:19:25,184
+Passing through the point P.
+
+394
+01:19:26,324 --> 01:19:26,664
+Okay.
+
+395
+01:19:28,824 --> 01:19:38,423
+Now I see it is sufficient to have two parameters, some vector n and P point, and our plane is perpendicular to n and passing through P.
+
+396
+01:19:38,543 --> 01:19:42,123
+Then we can talk about uniquely one plane.
+
+397
+01:19:42,564 --> 01:19:44,904
+So how can we obtain its equation?
+
+398
+01:19:45,623 --> 01:19:47,524
+So how to obtain its equation?
+
+399
+01:19:48,744 --> 01:19:49,904
+How to obtain...
+
+400
+01:19:50,836 --> 01:19:52,155
+İçin bir ekran.
+
+401
+01:20:15,060 --> 01:20:24,600
+x, y, z, those are points, okay, points. Now look at here, so we can talk about px, okay, px.
+
+402
+01:20:25,140 --> 01:20:44,340
+As you see, Px vector is a vector on the plane. N is perpendicular to our plane. It's obvious that N vector is orthogonal to, perpendicular to Px vector.
+
+403
+01:20:44,340 --> 01:20:53,120
+Okay, so everyone recalls the orthogonality condition, so we know that. So those are orthogonal vector if and only.
+
+404
+01:20:53,140 --> 01:21:14,560
+If necessary, sufficient condition, that product of those vectors is zero. Okay, everyone knows this. Okay, so that product. Okay, let me write here, A, B, C, those are coordinates of n vector, and Px, x minus x, zero.
+
+405
+01:21:15,380 --> 01:21:40,819
+y minus y zero, and z minus z zero. Okay, now equals to zero. If you simplify this expression, if you expand this, ax minus, okay, let me do it step by step, but a times x minus x zero plus b times y minus y zero.
+
+406
+01:21:41,268 --> 01:22:07,307
+plus c times z minus z zero, is equal to zero, if you manipulate on this expression, a times x, plus b times y, plus c times z, is equal to d, where d is, d is a times x zero, plus b times y zero,
+
+407
+01:22:07,859 --> 01:22:11,500
+plus c times z zero.
+
+408
+01:22:11,639 --> 01:22:21,219
+Attention here, so this is the confirmation of the fact that our plane passing through p zero.
+
+409
+01:22:21,219 --> 01:22:31,179
+Okay, if you substitute p point into this equation, okay, into this equation, you are going to obtain this.
+
+410
+01:22:31,840 --> 01:22:34,519
+Okay, so this is a very simple idea, I think.
+
+411
+01:22:34,847 --> 01:22:45,608
+Bu konfirmation of the fact that your plane is passed through P0 point with coordinate x0, y0, z0. I think it's a clear idea.
+
+412
+01:22:46,827 --> 01:22:59,648
+Okay, look at here. So A, B, C, A. So this is the coefficient of x, y, z announced. Okay, here A, B, C.
+
+413
+01:23:00,340 --> 01:23:04,340
+Tamam, so generally we prefer to use some unit vector,
+
+414
+01:23:04,340 --> 01:23:06,340
+but here it is not necessary to be unit.
+
+415
+01:23:06,340 --> 01:23:09,340
+Okay, so if this is unit,
+
+416
+01:23:09,340 --> 01:23:15,340
+if n is unit vector,
+
+417
+01:23:15,340 --> 01:23:19,340
+unit vector means its norm is 1,
+
+418
+01:23:19,340 --> 01:23:21,340
+it's called normal vector.
+
+419
+01:23:21,340 --> 01:23:26,340
+It's called normal vector.
+
+420
+01:23:26,739 --> 01:23:51,020
+Normal vector, that's why we use this n letter, okay? But you don't need to study always unit vector, even if it is not unit vector, okay, sometimes, okay, generally, it is sufficient to study by using non-unit vector here, okay, so perpendicular condition is enough, I think.
+
+421
+01:23:53,332 --> 01:23:57,712
+No, okay, example. So, example is very simple. Example.
+
+422
+01:24:00,652 --> 01:24:16,391
+So, given some point, so given some vector, so let me write 1, 2, 3. So, given some point, 1, minus 1, 2. Okay, this is vector.
+
+423
+01:24:18,391 --> 01:24:19,752
+This is point.
+
+424
+01:24:22,804 --> 01:24:29,764
+Obtaining the equation of plane, which is perpendicular to this vector, and
+
+425
+01:24:30,515 --> 01:24:32,235
+Passing through this point.
+
+426
+01:24:33,075 --> 01:24:41,175
+Now, so if you memorize formula, it's very easy, but some substitutants like to memorize formulas.
+
+427
+01:24:41,175 --> 01:24:47,855
+So this is A, this is B, this is C, this is X0, this is Y0, this is Z0.
+
+428
+01:24:48,515 --> 01:24:56,875
+Okay, 1 times X plus 2 times Y plus 3 times Z is equal to D.
+
+429
+01:24:56,995 --> 01:24:58,395
+How to compute this?
+
+430
+01:24:58,515 --> 01:25:11,875
+If you substitute x0 here, 1 times 1, x0, 1, plus 2 times y0 minus 1, plus 3 times z0 is 2, this is d.
+
+431
+01:25:12,055 --> 01:25:19,275
+Okay, now d is equal to 1, 6, ne geliyor arkadaşlar? 6, 4, 5 mi geliyor? Evet.
+
+432
+01:25:21,195 --> 01:25:26,111
+Okay, d is 5, d is 5. So this is the equation of...
+
+433
+01:25:26,112 --> 01:25:52,524
+...
+
+434
+01:25:52,724 --> 01:25:58,684
+Okay, the direction of vector is not so important in order to obtain the equation of plane.
+
+435
+01:25:58,824 --> 01:26:02,904
+So just coordinate, right coordinate of vector.
+
+436
+01:26:03,484 --> 01:26:09,164
+So this is perpendicular to our plane for which we look equation.
+
+437
+01:26:09,783 --> 01:26:15,604
+Now, so just put x and any point on the plane, x, y, z.
+
+438
+01:26:15,604 --> 01:26:17,604
+It's very simple to that.
+
+439
+01:26:18,144 --> 01:26:20,283
+It's very simple to find out.
+
+440
+01:26:20,851 --> 01:26:26,111
+So, n-vector is perpendicular to px-vector.
+
+441
+01:26:26,111 --> 01:26:47,111
+Okay, so this means that, by the definition of orthogonality, this means that dot product of n and px-vector, px-vector x-1, y-y-1, y-1, y-1, and z-0, z-2.
+
+442
+01:26:47,539 --> 01:27:11,460
+Okay, so that product is zero, you are going to obtain the same. If you apply that product definition here, x minus 1 plus 2 times y plus 1 plus, so let's put here 1, 2, and 3 times z minus 2 is equal to zero. If you simplify this expression, you are going to obtain the same.
+
+443
+01:27:12,083 --> 01:27:19,663
+Plane equation. Any question about this? I think everyone can understand this.
+
+444
+01:27:21,344 --> 01:27:24,484
+Okay. So, another example.
+
+445
+01:27:25,684 --> 01:27:28,123
+Example, compute,
+
+446
+01:27:29,123 --> 01:27:32,703
+compute the equation.
+
+447
+01:27:37,300 --> 01:27:39,180
+of plane,
+
+448
+01:27:42,100 --> 01:27:43,460
+which passes through,
+
+449
+01:27:49,427 --> 01:27:51,147
+True, which path is true.
+
+450
+01:27:57,140 --> 01:28:10,960
+The points, let me write here, p, 1, those are points, attention here, not vectors, q, 2, 1, 1, and r.
+
+451
+01:28:12,120 --> 01:28:20,520
+So, is that possible to obtain some unique plane, which is passing through these three points?
+
+452
+01:28:20,940 --> 01:28:24,079
+So, that is possible under the condition that
+
+453
+01:28:24,627 --> 01:28:28,167
+These three points are not on the same line.
+
+454
+01:28:28,947 --> 01:28:33,787
+If they are on the same line, we cannot talk about some unique plane.
+
+455
+01:28:33,787 --> 01:28:39,148
+So R, 3, 1, 0.
+
+456
+01:28:39,667 --> 01:28:48,067
+If they are on the same line in the three-dimensional space, they cannot constitute some unique plane.
+
+457
+01:28:49,007 --> 01:28:51,567
+Eğer onlar aynı doğru üzerinde olursa,
+
+458
+01:28:51,872 --> 01:28:54,572
+Tek bir doğrudan bahsedemezsiniz. Dikkat edin.
+
+459
+01:28:56,551 --> 01:28:59,811
+Okay, so just compute the equation of plane. Okay, this is your task.
+
+460
+01:29:02,372 --> 01:29:08,072
+Attention here, if they are on the same line here,
+
+461
+01:29:10,072 --> 01:29:16,372
+there are infinitely many planes passing through these three points.
+
+462
+01:29:17,532 --> 01:29:19,271
+Okay, on the same.
+
+463
+01:29:20,979 --> 01:29:39,379
+On the same line, they are on the same line. This means that infinitely many, infinitely many planes passing through, passing through.
+
+464
+01:29:40,115 --> 01:30:03,851
+Bu, bu
+
+465
+01:30:03,988 --> 01:30:10,908
+So, passing through these three points. Üçü aynı doğru üzerinde değil ise, biz ne yapabiliriz arkadaşlar?
+
+466
+01:30:13,668 --> 01:30:18,347
+Tek bir düzemden bahsedebiliriz. O noktalardan geçen.
+
+467
+01:30:18,888 --> 01:30:20,208
+Okay, so what is the equation?
+
+468
+01:30:25,395 --> 01:30:33,095
+Passing through these points, p, q, r, which are not on the same line in the three dimensional space.
+
+469
+01:30:36,036 --> 01:30:40,635
+Evet, bulunmak lazım. Nasıl bulacağız? Yorum yapın.
+
+470
+01:30:42,536 --> 01:30:49,716
+Formüle ezberleriz. Önemli olan yorum yapmak, bildiklerimizi kullanarak bilmediklerimize ulaşmak.
+
+471
+01:30:49,876 --> 01:30:52,115
+İnsan aklının çalışma şeyi budur arkadaşlar.
+
+472
+01:30:52,851 --> 01:30:58,551
+Bildiklerinden hareket ederek bilmedikleri hakkında mantıklı, tutarlı yorumlar yapmak.
+
+473
+01:30:59,551 --> 01:31:01,492
+Bilim dediğim şey kısaca budur.
+
+474
+01:31:03,072 --> 01:31:05,551
+Bilinenden hareket ederek bilinmeyeni anlamaya çalışmak.
+
+475
+01:31:07,072 --> 01:31:12,311
+Herkes kendine göre bir bilim tanımı yapar arkadaşlar. Siz de kendinize göre bir bilim tanımı yapın.
+
+476
+01:31:16,884 --> 01:31:20,683
+Birden fazla tanım olabilir. En tutarlı hangisi ise ona sarılırsınız.
+
+477
+01:31:24,003 --> 01:31:31,144
+Evet, bilinenler belli. Üç tane nokta. Ama bu üç noktanın aynı doğru üzerinde olmaması lazım.
+
+478
+01:31:32,484 --> 01:31:40,304
+Eğer aynı doğru üzerinde değil ise, farklı doğrular üzerinde ise, üçü, yani atıyorum üçünü aynı doğru üzerine koyamıyorum.
+
+479
+01:31:41,304 --> 01:31:44,043
+O zaman tek bir düzlemden bahsederim bu üçünden geçen.
+
+480
+01:31:45,011 --> 01:32:09,871
+O zaman bu düzlemin denklemini nasıl bulurum? Yukarıdaki bilgiyle. O zaman bana ne lazım? Bu 3 noktayı kullanarak ben bir tane nokta, 3 tane nokta var zaten bir tanesi 3 tane verilmiş bana. Bana bir tane nokta verilirse, bir tane de şöyle bir N vektörü verilirse düzlem elde etmek için yeterli oluyordu. Ama şimdi ben 3 noktayı kullanarak
+
+481
+01:32:10,163 --> 01:32:27,603
+Bir tane nokta elde edebilir miyim? 3 tane var. Bir tane bile olmasına göre 3 tane var. Bırakın bir taneyi. Tamam, bu koşul sağlandı. Bir tane o zaman normal vektör. Yani 3 noktayı üzerinde barındıran düzleme dik bir tane vektör inşa edebilir miyim? Edebilir miyim gençler?
+
+482
+01:32:37,876 --> 01:32:49,695
+Bir dakika [öğrenci]. İki nokta arasında doğru denklemi yazarım. Doğru denklemi yazmana gerek yok. Diğer noktadan çizdiğim doğruya.
+
+483
+01:32:55,283 --> 01:33:13,804
+Yok, dikin denklemi falan değil. Bak, yaklaştın ama eksik [öğrenci]. Şimdi, ben size dün ilk anlatırken noktayla vektör arasındaki farkı anlatmıştım. Neydi noktayla vektör arasındaki fark ve ilişki vardı? Noktayı orijine bağlarsak bir vektör elde ediyorduk. Doğru mu değerli arkadaşlar?
+
+484
+01:33:15,188 --> 01:33:19,708
+İki noktayı birbirine bağlar, yön tayin edersek, yine bir vektör verir.
+
+485
+01:33:20,028 --> 01:33:24,827
+İşte o zaman burada iki noktayı birbirine bağlayıp, yön tayin edersem bana bir vektör verir.
+
+486
+01:33:24,827 --> 01:33:27,128
+Tamam mı? Şimdi buna P diyorum.
+
+487
+01:33:28,807 --> 01:33:30,087
+Tamam mı? P zaten.
+
+488
+01:33:30,728 --> 01:33:33,448
+Buna Q diyelim, buna da R diyelim.
+
+489
+01:33:33,587 --> 01:33:37,628
+Şimdi ben birleştirerek bunları vektörle, o zaman düzlem üzerinde olur bunlar.
+
+490
+01:33:38,407 --> 01:33:40,768
+Tamam mı? P, R vektörü düzlem üzerinde olur.
+
+491
+01:33:41,300 --> 01:34:01,180
+tq vektörü düzlem üzerinde olur. Tamam mı? Ben üçünün aynı doğru üzerinde olmadığını biliyorum. Tamam mı? Eğer bana denklem vermez ise, sıfır eşitir sıfır gibi bir şey çıkarsa, o zaman ne olacak? Denklem bulamadım, üçünün aynı doğru üzerinde olduğunu söylerim. O zaman düzlemden bahsedemem.
+
+492
+01:34:01,652 --> 01:34:20,652
+Şimdi, sıfır eşitir sıfır şeklinde bir şey gelmemesi lazım karşıma. Karşıma bildiğiniz ax artı b y artı c z eşitir d şeklinde bir denklem gelmesi gerekir. Ne yapacağım? O zaman burada pq ile pr'yi ne yapardık? Hatırlayın, cross çarpımı. Eğer iki vektörü...
+
+493
+01:34:21,171 --> 01:34:37,691
+Vektörel çarpım işlemine tabi tutarsak, elde ettiğim sonuç bir vektör idi ve bu vektör ne oluyordu? O çarpımdaki her bir çarpım elemanına ne oluyordu? Dik oluyordu. Ya da o vektörleri üzerinde barındıran düzleme dik oluyordu.
+
+494
+01:34:44,500 --> 01:35:11,460
+Okay, so recall the properties of cross product. So by making connection between given points, so we obtain PR vector and PQ vector. So if you multiply, if you obtain cross product of PQ and PR. So as you see, let's say this is N. So as you see, N is orthogonal to, let me put here X, so PX.
+
+495
+01:35:13,363 --> 01:35:39,183
+Px. So you can write this. So the first method, the first method, the first method, here, compute, compute Pq cross, Pq cross Pr, and the first step, and second step,
+
+496
+01:35:42,452 --> 01:35:58,992
+N, so let's say this is N, and N dot Px is equal to zero. This is the first method in order to compute the equation, and second method, second method here.
+
+497
+01:36:01,492 --> 01:36:07,051
+So, now, so N, sorry for that, so N.
+
+498
+01:36:07,636 --> 01:36:12,656
+So, we know that n is perpendicular to px.
+
+499
+01:36:13,656 --> 01:36:21,516
+This means that n dot, okay, n dot px is zero.
+
+500
+01:36:23,096 --> 01:36:33,016
+Let's write n in terms of pq and pr, and pq cross product pr.
+
+501
+01:36:35,315 --> 01:36:37,855
+dot, dot product, Px.
+
+502
+01:36:38,775 --> 01:36:40,636
+Okay, this is called mixed product.
+
+503
+01:36:40,976 --> 01:36:44,435
+You are going to see this later in the course of linear algebra.
+
+504
+01:36:45,096 --> 01:36:47,056
+This is called mixed product.
+
+505
+01:36:49,636 --> 01:36:58,395
+The reason why for this notation, so as you see, we have both of them, the cross product and dot product, mixed product.
+
+506
+01:37:00,627 --> 01:37:16,011
+Bu, bu
+
+507
+01:37:16,115 --> 01:37:42,836
+pq vector, let me use determinate symbol, first of all, we need to write, but you can reverse the ordering in this determinate because of this zero, okay, equal to zero, okay, doesn't matter the order of this writing, pq vector, okay, so let me write p, pq, pq, pq vector here, so 2 minus 1,
+
+508
+01:37:43,475 --> 01:38:06,155
+1, 1-1, 2, 1-1, 0. Okay, let's write PQ, PR vector, PR vector, this is the starting point and this is destination point, 3-1, 2, 1-1, 2,
+
+509
+01:38:06,931 --> 01:38:11,271
+ve 0, minus 1, minus 1.
+
+510
+01:38:11,972 --> 01:38:12,912
+Ok, I see.
+
+511
+01:38:13,684 --> 01:38:23,824
+This vector is not some multiple of this vector, so implying that P, Q, R points are not on the same line.
+
+512
+01:38:24,423 --> 01:38:35,224
+Suppose that they are on the same line, in that case P, Q and P, R vectors are co-linear, meaning that P, Q vector is equal to lambda times P, R.
+
+513
+01:38:35,536 --> 01:38:41,516
+Meaning that one of them is the multiple of other one, not all this.
+
+514
+01:38:41,516 --> 01:38:54,796
+Okay, now, okay, just substitute one PQ, coordinates one, two, zero, and PR two, two, three.
+
+515
+01:38:54,836 --> 01:38:57,876
+ve px vectör
+
+516
+01:38:57,876 --> 01:38:59,695
+let me write px vectör
+
+517
+01:38:59,695 --> 01:39:01,296
+px
+
+518
+01:39:01,296 --> 01:39:03,216
+so x is any point
+
+519
+01:39:03,216 --> 01:39:05,136
+on the plane xyz
+
+520
+01:39:05,136 --> 01:39:06,735
+with coordinate xyz
+
+521
+01:39:06,735 --> 01:39:09,376
+and px vectör
+
+522
+01:39:09,376 --> 01:39:11,056
+x minus 1
+
+523
+01:39:11,408 --> 01:39:29,368
+y minus y minus 1, y plus 1, and z minus 1. Okay, substitute coordinator px vector into determinant. Okay, so we got x minus 1, y plus 1, z minus 1. So let me put this.
+
+524
+01:39:29,779 --> 01:39:53,760
+Determinant symbol is equal to zero. So everyone recalls the Saro's rule here, I think. So let me write the first row, bottom of this determinant. So 2, 2 minus 1. And product of this, okay, and 2z minus 2, the product of this, zero.
+
+525
+01:39:54,323 --> 01:40:01,323
+ve
+
+526
+01:40:19,060 --> 01:40:20,860
+Ok, here.
+
+527
+01:40:21,579 --> 01:40:22,900
+So, let me...
+
+528
+01:40:27,764 --> 01:40:32,824
+Product this term, 0 times 2 times x minus 1, results in 0.
+
+529
+01:40:33,484 --> 01:40:37,604
+And product of this term, let me use different color.
+
+530
+01:40:38,744 --> 01:40:40,144
+Product of this term,
+
+531
+01:40:40,543 --> 01:41:00,343
+minus y minus 1, and the product of these terms, 4z minus 4. Is there any calculation error here? Left hand side sum, 4z minus y minus 5.
+
+532
+01:41:10,644 --> 01:41:13,923
+Minus, left sum,
+
+533
+01:41:15,304 --> 01:41:17,284
+is equal to zero.
+
+534
+01:41:17,664 --> 01:41:17,764
+Okay.
+
+535
+01:41:18,564 --> 01:41:21,864
+So, equation of this,
+
+536
+01:41:23,043 --> 01:41:26,864
+okay, let me write it, minus 2x plus y,
+
+537
+01:41:27,724 --> 01:41:29,923
+and minus 2z,
+
+538
+01:41:31,164 --> 01:41:34,804
+and is equal to minus 5.
+
+539
+01:41:34,804 --> 01:41:36,604
+So, this is the,
+
+540
+01:41:38,515 --> 01:41:41,735
+Equation of playing.
+
+541
+01:41:42,295 --> 01:41:42,515
+Okay.
+
+542
+01:41:43,215 --> 01:41:46,395
+Now, so this is homework for you, the first method.
+
+543
+01:41:48,755 --> 01:41:56,795
+Hangisi kolayınıza geliyorsa arkadaşlar, ister şeyden buradan yapın, birinci metoddan, PQ ile P ağrıçı vektörer çarpım yapın.
+
+544
+01:41:56,875 --> 01:41:58,995
+Neyi elde ediyorsun? Hadi onu yapalım.
+
+545
+01:41:59,444 --> 01:42:25,724
+Let me apply the first method. First of all, n is equal to PQ cross PR. So let me write, let me use this notation. First of all, we substitute 1, 2, 0, and 2, 2, minus 1. But in this case, the ordering of, okay, here.
+
+546
+01:42:26,452 --> 01:42:52,524
+Şimdi bu,
+
+547
+01:42:52,595 --> 01:42:55,135
+2 minus 2.
+
+548
+01:42:56,135 --> 01:42:57,475
+Okay, look at here.
+
+549
+01:42:57,615 --> 01:43:01,076
+So minus 2 plus 1.
+
+550
+01:43:01,275 --> 01:43:02,576
+I think we made mistake.
+
+551
+01:43:03,475 --> 01:43:04,195
+Zero.
+
+552
+01:43:05,135 --> 01:43:06,855
+Bir yerde hata yaptık arkadaşlar biz.
+
+553
+01:43:08,555 --> 01:43:10,395
+Şurada bir yerde hata yaptık.
+
+554
+01:43:10,895 --> 01:43:13,335
+So we made mistake somewhere here.
+
+555
+01:43:16,435 --> 01:43:21,115
+Burada bir hata yapmadık değil mi arkadaşlar? 1, 2, 0, 2, 2, eksi 1.
+
+556
+01:43:25,844 --> 01:43:39,104
+Of course, 2 minus 4. You're right. Şurada hata yaptık. Doğru. Burayı kapatırsak, 2 eksi 4. You're right. Minus 2. We made mistake here.
+
+557
+01:43:52,948 --> 01:43:55,087
+perpendicular to Px.
+
+558
+01:43:56,707 --> 01:43:58,648
+This means that N
+
+559
+01:44:02,996 --> 01:44:26,776
+That product, Px, Px, okay, let me write here, Px here, Px, x minus 1, y plus 1, x minus 1, y plus 1, z minus 1, that product of this, 0, minus 2x plus 2, plus y plus 1, minus 2z.
+
+560
+01:44:27,199 --> 01:44:30,139
+plus 2 is equal to 0.
+
+561
+01:44:30,679 --> 01:44:37,099
+So as you see, minus 2x plus y minus 2z is equal to minus 5.
+
+562
+01:44:37,619 --> 01:44:40,779
+So as you see, we got the same equation, not different.
+
+563
+01:44:42,539 --> 01:44:44,119
+Okay? Is that correct?
+
+564
+01:44:45,339 --> 01:44:46,239
+Yeah, that's correct.
+
+565
+01:44:47,379 --> 01:44:48,159
+Is there an equation?
+
+566
+01:44:49,439 --> 01:44:50,299
+Soru soran var mı?
+
+567
+01:44:51,979 --> 01:44:54,599
+Hangisi kolayınıza geliyorsa oradan yapın gençler.
+
+568
+01:44:54,996 --> 01:44:56,876
+Sanki şu daha kolaymış gibi.
+
+569
+01:44:59,016 --> 01:44:59,316
+Evet.
+
+570
+01:45:04,148 --> 01:45:10,427
+Ok, let's go on. Burayı siliyorum arkadaşlar. Çok küçük yazmak zorunda kaldım. Çok çorba oldu.
+
+571
+01:45:21,363 --> 01:45:22,604
+Ok, let's go.
+
+572
+01:45:28,532 --> 01:45:31,112
+Bir tane daha örnek yapalım.
+
+573
+01:45:34,192 --> 01:45:35,332
+Ok, compute
+
+574
+01:45:35,332 --> 01:45:39,712
+Compute the equation
+
+575
+01:45:45,235 --> 01:45:49,615
+Compute equation of, play.
+
+576
+01:45:59,060 --> 01:46:05,060
+Plane, which is, which is perpendicular,
+
+577
+01:46:12,212 --> 01:46:12,891
+The line
+
+578
+01:46:55,091 --> 01:46:59,871
+Perpermanı kılırtlı line, and passing through.
+
+579
+01:47:06,868 --> 01:47:07,608
+The point
+
+580
+01:47:07,608 --> 01:47:10,408
+1
+
+581
+01:47:10,408 --> 01:47:12,308
+Minus 1
+
+582
+01:47:12,308 --> 01:47:13,188
+3
+
+583
+01:47:13,188 --> 01:47:16,548
+Evet. Dikkat edin.
+
+584
+01:47:17,968 --> 01:47:18,908
+Doğruya dik
+
+585
+01:47:18,908 --> 01:47:23,208
+Tamam arkadaşlar. Ve P1-13 noktasından
+
+586
+01:47:23,208 --> 01:47:24,808
+geçen. Şimdi o zaman
+
+587
+01:47:24,808 --> 01:47:27,308
+şöyle bir şekil çiziyorum.
+
+588
+01:47:27,428 --> 01:47:28,268
+Daha iyi anlamam için.
+
+589
+01:47:30,368 --> 01:47:32,568
+Benim bir tane drone'um varmış.
+
+590
+01:47:33,288 --> 01:47:34,208
+Bu drone'un
+
+591
+01:47:34,260 --> 01:47:37,460
+Bir düzlemden geçecek. Bu drone'un yörüngesi,
+
+592
+01:47:38,260 --> 01:47:44,300
+Bu drone'un yörüngesi şu arkadaşlar, bu düzleme dik olacak şekilde,
+
+593
+01:47:45,200 --> 01:47:51,360
+Düzlemin yörüngesi bu, drone'un yörüngesi bu arkadaşlar. Düzleme dik olacak şekilde,
+
+594
+01:47:52,420 --> 01:47:53,100
+This is playing.
+
+595
+01:47:54,720 --> 01:47:54,920
+Okey.
+
+596
+01:47:56,380 --> 01:48:00,039
+Ve benim düzlemim de bu noktadan geçiyormuş, P.
+
+597
+01:48:00,595 --> 01:48:10,055
+Ne der arkadaşlar? 1-1, 3. Bunun denklemi soruluyor. The equation of this plane.
+
+598
+01:48:14,055 --> 01:48:20,415
+Düşünün arkadaşlar, haftaya, tamam bunu deftere kaydedin arkadaşlar.
+
+599
+01:48:22,415 --> 01:48:23,215
+Doldu.
+
+600
+01:48:24,243 --> 01:48:29,243
+Ya da isteyenler çıkabilir, isteyenler kalabilir. Yapalım onu, bitirelim. Haftaya tekrar iş çıkmasın bize.
+
+601
+01:48:29,683 --> 01:48:37,403
+Evet, devam ediyorum arkadaşlar. İsteyen çıkabilir, sıkıntı değil. Zaten çıkıyorsunuz, isteyenler çıkabiliyor. Zorla güzellik olmuyor.
+
+602
+01:48:37,403 --> 01:48:44,183
+Evet, ne yapıyor arkadaşlar? Bu düzenin denklemi isteniyor bizden. Önce ne yapacağız? Dik olduğunu biliyorum.
+
+603
+01:48:44,323 --> 01:48:51,183
+Ben benim bir tane, o zaman yörünge dik ise, o zaman bu yörünge ne yapacağız? Yani bu drone'un hareket yönü.
+
+604
+01:48:51,279 --> 01:49:06,519
+vektör ile ifade edilir. O zaman V'yi ben ifade etmem lazım. V eşittir ne? O zaman buradan şunu çıkacağım. V nedir arkadaşlar? V'yi bulmam lazım. Burada V'yi bulabilmek için ne yapmam lazım? Şuna dikkat edin. Hatırlayın. Neydi?
+
+605
+01:49:14,804 --> 01:49:24,583
+z eksi z sıfır bölü c, eşittir t demiştik. Bu Hesse formüydü. Ne olacak? x eksi x sıfır.
+
+606
+01:49:24,948 --> 01:49:50,507
+AT, yani x eşittir x0 artı AT, y eşittir y0 artı BT, z eşittir z0 artı CT. T sıfır anda zaten x0, y0, z0'dan geçiyordu. Ama buradaki x0 ile şeyi karıştırmayın. Buradaki x0, y0, z0, 1-1-3 değil. Bu düzlemin geçtiği nokta. Şuradaki şeyi de karıştırmayın. Buradaki, benim kastettiğim nokta buradaki bu. A, x0, y0, z0. Öğrenciler genellikle bunu karıştırıyorlar.
+
+607
+01:49:52,948 --> 01:50:10,387
+bunlar. Buradaki yoksa x0, y0, z0 değil. Bana dikkat edin. O zaman ne olur? Bana ama hangi formatta verilmiş? 2x-1 bölü 2, eksi y artı 1 bölü 2,
+
+608
+01:50:11,220 --> 01:50:30,740
+3z-6 bölü 4 şeklinde sizin kafanızı karıştırmak için, yanıltmak için verilmiş. İşin mantığını kavramazsanız, ezberi hareket ederseniz, burada hata yaparsınız. O zaman bunu düzenlemem lazım. Bu formata getireceğim. Doğru mu? Ne olacak? 2'ye böleceğim pay paydayı. O zaman bir şey değişmez.
+
+609
+01:50:34,484 --> 01:50:42,243
+Y eksi, o zaman burayı eksi ile çarpacağım. Y eksi bir bölü, burası ne oldu? Eksi iki.
+
+610
+01:50:43,844 --> 01:50:47,144
+Burada ne yapacağım? Pay paydayı üç ile böleceğim.
+
+611
+01:50:49,543 --> 01:50:54,684
+Üç ile bölersem, dört bölü üç. Gördünüz mü? O zaman benim A'm bu.
+
+612
+01:51:03,123 --> 01:51:05,984
+C. Burada X0'ımız bu.
+
+613
+01:51:07,644 --> 01:51:08,743
+Y0'ımız bu.
+
+614
+01:51:09,963 --> 01:51:11,083
+Z0'ımız bu.
+
+615
+01:51:11,663 --> 01:51:13,804
+Ama hangi X0, Y0, Z0? Bu işte.
+
+616
+01:51:14,804 --> 01:51:17,324
+Şurada. Yani düzlem üzerinde olmak zorunda değil.
+
+617
+01:51:17,864 --> 01:51:20,564
+Orada, drone'un ilk harekete başladığı nokta.
+
+618
+01:51:20,923 --> 01:51:21,304
+Tamam mı?
+
+619
+01:51:21,944 --> 01:51:23,163
+Ne oluyor o zaman?
+
+620
+01:51:23,743 --> 01:51:24,684
+V'miz de burada.
+
+621
+01:51:25,904 --> 01:51:27,284
+A'yı, B'yi, C'yi yaptık.
+
+622
+01:51:27,344 --> 01:51:28,344
+Pardon, V'miz burada.
+
+623
+01:51:30,100 --> 01:51:48,000
+Bu V. O zaman benim V vektörüm belli. V vektörü, drone'un hareket yön vektörü, 1, eksi 2 ve 4 bölü 3. Bu aslında drone'un yörüngesi düzleme dik olduğundan bu nedir? Doğru mu?
+
+624
+01:51:48,000 --> 01:51:54,760
+Şimdi o zaman drone'un dik bir şekilde dalış yaptığı düzlemin denklemi isteniyor bizden.
+
+625
+01:51:55,315 --> 01:52:21,615
+O da ne olur? Hangi düzlemin yükseldiği, hangi noktadan geçiyor? P noktasından geçiyor. O zaman P noktasından geçiyorsa arkadaşlar, şurada bir tane X diye bir nokta seçersem, düzlem üzerinde, PX vektörüne dik olacak. Doğru mu? Benim drone'un yörüngesi, hareket yönü ya da ne olacak arkadaşlar? PX vektörüne dik olacak. Şimdi ne? Diktir PX vektörüne.
+
+626
+01:52:22,612 --> 01:52:25,771
+Px vektörümüz ne? Burada hemen yapalım.
+
+627
+01:52:25,912 --> 01:52:31,171
+X bir nokta, düzlem üzerinde, koordinatları x, y ve z olan.
+
+628
+01:52:31,692 --> 01:52:34,692
+Px vektörü düzlem üzerinde bir vektördür.
+
+629
+01:52:35,231 --> 01:52:36,551
+O da ne olur arkadaşlar?
+
+630
+01:52:37,192 --> 01:52:39,452
+Px ya da xp fark etmez.
+
+631
+01:52:39,452 --> 01:52:40,792
+Çünkü sıfıra çağıracağım ya.
+
+632
+01:52:40,851 --> 01:52:48,751
+Px, x eksi bir, y eksi eksi bir, artı bir, z eksi üç.
+
+633
+01:52:49,072 --> 01:52:49,692
+Dikkat edin.
+
+634
+01:52:50,131 --> 01:53:08,152
+Evet, Px vektörümüz bu. O zaman neyle iç çarpıma, yani nokta çarpıma tabi tutarsam, neyimiz 1, eksi 2, 4 bölü 3, Px'imiz 1, eksi 2, pardon Px'i inşa ediyoruz, yazıyoruz.
+
+635
+01:53:09,152 --> 01:53:15,372
+Px'imiz x eksi 1, y artı 1 ve z eksi 3.
+
+636
+01:53:16,020 --> 01:53:19,840
+Bu dik olduklarından birbirine nokta çarpımları sıfır olacak.
+
+637
+01:53:20,119 --> 01:53:29,840
+Eksi eksi bir, eksi ikiye, eksi iki, artı dört bölü üç z, eksi ne geliyor arkadaşlar? Dört mü geliyor?
+
+638
+01:53:30,539 --> 01:53:38,079
+Düzenlerseniz, bizim drone'umuzun dik bir şekilde dalış yaptığı düzlemin denklemi nedir arkadaşlar? Budur.
+
+639
+01:53:38,699 --> 01:53:39,720
+Var mı anlaşmayan bir yer?
+
+640
+01:53:41,819 --> 01:53:43,520
+Anlaşmayan bir yer yok galiba.
+
+641
+01:53:44,275 --> 01:53:44,855
+Evet.
+
+642
+01:53:51,572 --> 01:53:57,551
+Bunlar önemli arkadaşlar. İleride uygulamalarda çok rahatlıkla kullanabileceğiniz şeyler.
+
+643
+01:53:57,952 --> 01:54:02,152
+Tabi illa bu hep drone örneğini veriyorum. İlla drone örneği olacak diye bir şey yok.
+
+644
+01:54:02,631 --> 01:54:09,912
+Matematik arkadaşlar, bildiğiniz gibi evrendeki var olan o güzelliğin neyidir arkadaşlar?
+
+645
+01:54:10,212 --> 01:54:14,072
+Sembolik ifade edilişidir. Siz bunu her şeye uygulayabilirsiniz bu mantığı.
+
+646
+01:54:14,515 --> 01:54:40,755
+Kimyaya, biyolojiye, her şeye uygulanabilir. Tamam mı? Eğer öyle bir güzel bir örnek bulabilirseniz, aranızda var mı kimya mühendisi, gıda mühendisi? Bakın bakalım, mesela doğru denklemler, uzaydaki doğu ya da yüksek boyutlu uzaylarda, doğru denklemlerin, işte kimyada, biyolojideki uygulamalar nelerdir? Gelin bize burada anlatın, sesli bir şekilde bağlanırsınız, şöyle 5-10 dakika anlatın, sunum yapabilirsiniz. Tamam mı gençler?
+
+647
+01:54:41,747 --> 01:54:44,627
+Var mı sorusu olan? Sorusu olan yok da bitiriyorum dersi.
+
+648
+01:54:47,167 --> 01:54:49,207
+Evet, görüşmek üzere haftaya. Kendinize iyi bakın.

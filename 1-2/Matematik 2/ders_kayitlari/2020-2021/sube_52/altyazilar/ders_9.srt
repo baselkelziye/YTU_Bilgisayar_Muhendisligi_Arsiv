@@ -1,0 +1,4211 @@
+1
+00:00:24,307 --> 00:00:25,687
+Evet, merhaba gençler.
+
+2
+00:00:30,675 --> 00:00:31,635
+Sesim geliyor mu?
+
+3
+00:00:58,707 --> 00:01:01,007
+Evet, 5. haftadayız biz değil mi gençler?
+
+4
+00:01:33,908 --> 00:01:40,968
+Okay, so let's introduce how to compute arc length of polar curves.
+
+5
+00:01:42,087 --> 00:01:48,507
+First of all, let me share my whiteboard.
+
+6
+00:01:56,915 --> 00:02:15,915
+Okay, my goal is to finish all topics before the first midterm exam, and we are going to solve many exercises before exam, general exercises. Okay, so now we aim to finish all topics before exam.
+
+7
+00:02:22,068 --> 00:02:22,368
+Ok.
+
+8
+00:02:29,907 --> 00:02:34,907
+Şimdi, bu transition ile arkaçı ile ilgili bilgiler var.
+
+9
+00:02:34,907 --> 00:02:36,907
+Yani arkaçı ile ilgili bilgiler var.
+
+10
+00:02:41,075 --> 00:02:42,075
+Ark Leng,
+
+11
+00:02:43,995 --> 00:02:44,475
+of
+
+12
+00:02:45,475 --> 00:02:46,475
+polar curves.
+
+13
+00:02:56,507 --> 00:02:59,067
+Ama 7 hafta,
+
+14
+00:03:10,947 --> 00:03:13,067
+Bir de webde de,
+
+15
+00:03:13,067 --> 00:03:15,067
+Department of Mathematik.
+
+16
+00:03:18,740 --> 00:03:36,879
+Ok, the week of the first midterm exam, the 11th week, only the Mayısmış arkadaşlar, ben kontrol etmedim, 17 May, the date of first midterm exam, 17 May, ok.
+
+17
+00:03:53,524 --> 00:03:55,084
+Midterm Exam.
+
+18
+00:03:56,584 --> 00:03:58,283
+At which o'clock? Do you know?
+
+19
+00:04:00,204 --> 00:04:02,963
+Saat kaçtı arkadaşlar? Ona baktınız mı?
+
+20
+00:04:07,187 --> 00:04:08,147
+Saati belli mi?
+
+21
+00:04:18,228 --> 00:04:19,228
+Ok, at
+
+22
+00:04:23,475 --> 00:04:25,436
+16 Oktober, afternoon. Okay.
+
+23
+00:04:28,656 --> 00:04:35,115
+Okay, now y is equal to r times sine theta.
+
+24
+00:04:35,656 --> 00:04:41,355
+So this is the transition between polar coordinates and Cartesian coordinates.
+
+25
+00:04:42,875 --> 00:04:45,495
+Now we know the arc length.
+
+26
+00:04:48,211 --> 00:05:00,371
+In terms of polar coordinates, in terms of Cartesian coordinate system, so we got this coming from the Pythikorium theorem, so the arc length differential.
+
+27
+00:05:00,371 --> 00:05:09,891
+Okay, now so we consider some point on the curve as a sufficiently small triangle.
+
+28
+00:05:10,708 --> 00:05:21,488
+And if you compute the length of hypotenuse of this triangle, in terms of differentials, we are going to obtain arc length differential.
+
+29
+00:05:21,488 --> 00:05:35,488
+Okay, now, so given some polar curve, given a polar curve, polar curve, so r is equal to f of theta.
+
+30
+00:05:36,211 --> 00:05:55,651
+As you see, r is equal to f of theta means that r is the distance of point on the curve to origin, and theta is the angle, positive angle between this radius r and x-axis.
+
+31
+00:05:55,651 --> 00:05:57,312
+Okay, positive x-axis.
+
+32
+00:06:03,124 --> 00:06:11,423
+R is equal to f of, R is equal to f of theta into this transition, so we got this.
+
+33
+00:06:11,423 --> 00:06:24,264
+X is equal to f of theta times cosine theta, y is equal to f of theta and times sine theta.
+
+34
+00:06:24,755 --> 00:06:36,015
+So, if you differentiate both sides of this equality with respect to theta-irgc, we can express each Cartesian coordinate in terms of theta.
+
+35
+00:06:36,015 --> 00:06:49,096
+So, if you differentiate x coordinate with respect to theta, so we got this f prime of theta times both sine theta.
+
+36
+00:06:49,620 --> 00:06:59,540
+minus, minus f of theta, times derivation of cosine theta, with respect to theta, sine theta.
+
+37
+00:07:00,339 --> 00:07:04,319
+Now, as you see, you can differentiate this, you can,
+
+38
+00:07:06,459 --> 00:07:12,740
+okay, so let me put here, as some factor here, times the theta.
+
+39
+00:07:13,599 --> 00:07:14,480
+Okay, similarly,
+
+40
+00:07:15,220 --> 00:07:32,920
+You can express differential y in terms of theta here, f prime of theta times sine theta plus f prime of, not f prime, sorry.
+
+41
+00:07:37,396 --> 00:07:45,076
+f of theta times derivation of sine theta, cosine theta, do not forget the theta.
+
+42
+00:07:45,076 --> 00:08:03,555
+So, recall these area differentials in terms of Cartesian coordinate, just substitute these differentials written in terms of theta into this.
+
+43
+00:08:04,980 --> 00:08:28,120
+Okay, so in that case, so we got this. If we integrate all pieces RL from theta alpha to theta beta, so we are going to obtain this. So R square plus R prime, derivation of R with respect to theta, square.
+
+44
+00:08:28,735 --> 00:08:33,775
+ve katlı, so attention here, r is equal to f of theta.
+
+45
+00:08:34,895 --> 00:08:35,255
+Okay.
+
+46
+00:08:36,316 --> 00:08:38,316
+Now, so this is the
+
+47
+00:08:38,316 --> 00:08:40,655
+arc length formula
+
+48
+00:08:40,655 --> 00:08:42,615
+of a polar
+
+49
+00:08:42,615 --> 00:08:45,395
+curve. Okay, so for example,
+
+50
+00:08:46,395 --> 00:08:48,076
+something like that, for example.
+
+51
+00:08:49,955 --> 00:08:51,475
+Okay, here.
+
+52
+00:08:52,515 --> 00:08:53,375
+So from
+
+53
+00:08:54,676 --> 00:08:57,676
+From theta is equal to alpha to...
+
+54
+00:08:58,776 --> 00:08:59,936
+Okay, sorry for that.
+
+55
+00:09:00,916 --> 00:09:02,036
+My phone is calling.
+
+56
+00:09:10,995 --> 00:09:12,195
+Ok, let's go on.
+
+57
+00:09:12,935 --> 00:09:15,655
+Now, given some polar curve,
+
+58
+00:09:18,855 --> 00:09:25,535
+by r is equal to f of theta, the length of this curve, arc length of this curve,
+
+59
+00:09:26,336 --> 00:09:32,135
+here, the length of this curve, even by this formula.
+
+60
+00:09:36,307 --> 00:09:52,887
+I don't know [öğrenci]. I don't know the number of midterm exam. It may be one midterm exam or two midterm exam. The last semesters there were two midterm exam. Okay. I don't know. It may change.
+
+61
+00:09:56,067 --> 00:09:57,748
+Okay. So example.
+
+62
+00:10:04,436 --> 00:10:27,615
+Consider r is equal to one plus sine theta, so this is cardioid, and let's suppose that theta changes from zero to pi over four, and compute the arc length.
+
+63
+00:10:29,615 --> 00:10:30,735
+Okay.
+
+64
+00:10:31,443 --> 00:10:42,403
+Now, so first of all, you don't need to change, you don't need to sketch here, but so in order to make it more simple, so let me sketch its graph.
+
+65
+00:10:48,244 --> 00:11:08,683
+Okay, so this is the cardioid, so with main axis y here, so this is the ray theta, this is the ray theta 0, okay, this is the ray theta i over 2, so this is the ray.
+
+66
+00:11:13,235 --> 00:11:16,515
+θ i over 4.
+
+67
+00:11:16,895 --> 00:11:20,515
+So our goal is to compute this
+
+68
+00:11:20,515 --> 00:11:22,336
+arc length.
+
+69
+00:11:22,855 --> 00:11:23,015
+Okay.
+
+70
+00:11:23,796 --> 00:11:26,056
+So the length of this
+
+71
+00:11:26,056 --> 00:11:29,795
+piece of cardioid
+
+72
+00:11:33,844 --> 00:11:38,984
+From 0 to pi over 4.
+
+73
+00:11:40,724 --> 00:11:44,563
+Ok, so we need to take square of this.
+
+74
+00:11:45,943 --> 00:11:49,744
+Bilmiyorum arkadaşlar, rastgele yazdım. Öyle kolay bir integral gelmeyebilir.
+
+75
+00:11:52,144 --> 00:11:56,803
+Tabii sınavda size integrallik kolay bir şekilde hesaplanan bir şey gelecektir.
+
+76
+00:11:57,764 --> 00:12:00,344
+Çoğu zaman bilgisayara ihtiyaç duyuluyor.
+
+77
+00:12:01,587 --> 00:12:04,027
+Hesaplama yapmak öyle kolay değil her zaman.
+
+78
+00:12:04,827 --> 00:12:05,767
+Belirteyim size.
+
+79
+00:12:06,587 --> 00:12:15,548
+Ok, derivation of 1 plus sine theta, cos theta square.
+
+80
+00:12:16,548 --> 00:12:16,887
+Ok.
+
+81
+00:12:17,667 --> 00:12:21,987
+So, r square plus r prime square d theta.
+
+82
+00:12:23,667 --> 00:12:25,967
+Yani kolay bir integral mi bakalım.
+
+83
+00:12:26,548 --> 00:12:27,927
+Öyle kolay gibi görünmüyor.
+
+84
+00:12:33,395 --> 00:12:47,495
+Bir artı iki sin teta artı sin kare teta artı kos kare teta. Eh, kolay gibi sanki.
+
+85
+00:12:48,315 --> 00:12:51,135
+Okay, let's go on. So I think we can manage to solve this.
+
+86
+00:12:51,935 --> 00:12:59,715
+So from 0 to pi over 4. And so this is 1 always. And so we got
+
+87
+00:13:01,076 --> 00:13:08,295
+2 times 1 plus sin theta, theta.
+
+88
+00:13:09,295 --> 00:13:12,615
+So, as you see, we can express this.
+
+89
+00:13:14,355 --> 00:13:16,635
+We can express this term.
+
+90
+00:13:16,795 --> 00:13:17,515
+Let's recall.
+
+91
+00:13:19,716 --> 00:13:22,135
+Onu bir şey cinsinden yazabilir miyiz arkadaşlar?
+
+92
+00:13:26,740 --> 00:13:28,040
+Onu yazmamız mümkün mü?
+
+93
+00:13:29,040 --> 00:13:29,879
+Şey cinsinden.
+
+94
+00:13:31,019 --> 00:13:34,740
+Kos kare teta veya kos kare iki teta.
+
+95
+00:13:35,420 --> 00:13:40,360
+Neydi? Kosünüs kare teta.
+
+96
+00:13:40,360 --> 00:13:43,279
+Ben bunu buradan şöyle yapıyorum.
+
+97
+00:13:43,420 --> 00:13:48,980
+Bir eksi kosünüs iki teta bölü iki.
+
+98
+00:13:50,676 --> 00:14:06,096
+Buradan yapamadım arkadaşlar. Bunu cinsinden yazamadım. Şunu yakalasaydım, tamam yapacaktım. Şurası artı olacak. Şöyle yapalım. Bu kolay değil arkadaşlar. Bunu nasıl yazabiliriz? Sin kareli falan, kos kareli yazamıyoruz değil mi?
+
+99
+00:14:07,536 --> 00:14:16,216
+Can we write this one plus sine theta in terms of some expression containing cosine square theta? It's not so easy, I think.
+
+100
+00:14:22,676 --> 00:14:23,276
+Okey.
+
+101
+00:14:26,156 --> 00:14:27,975
+Onu yazamadık arkadaşlar.
+
+102
+00:14:30,056 --> 00:14:31,235
+Bunu böyle bırakın.
+
+103
+00:14:32,855 --> 00:14:33,896
+Okey, not easy.
+
+104
+00:14:34,716 --> 00:14:35,816
+Şimdilik göremedim ben.
+
+105
+00:14:36,475 --> 00:14:38,456
+Şuna bakın, daha kolay bir şey yapmak istiyorum.
+
+106
+00:14:47,635 --> 00:14:49,295
+Ok, consider this one.
+
+107
+00:14:50,475 --> 00:14:51,495
+Ok, sorry for that.
+
+108
+00:15:06,515 --> 00:15:07,015
+Ok.
+
+109
+00:15:14,740 --> 00:15:20,479
+Consider this example, 1 plus cosine theta.
+
+110
+00:15:23,988 --> 00:15:28,788
+Bunda geliyorum arkadaşlar. Birinde gelecekti ama hangisinde olduğunu hatırlamıyorum. Biri basitti.
+
+111
+00:15:52,307 --> 00:15:58,307
+R' minus sin theta, kısmi türev ve katlı.
+
+112
+00:15:58,307 --> 00:16:05,028
+Okay, now, so as you see, let me put, let me erase this.
+
+113
+00:16:05,528 --> 00:16:08,587
+So let's write here, theta is equal to 0.
+
+114
+00:16:09,248 --> 00:16:11,888
+Let's write here, theta is equal to,
+
+115
+00:16:16,211 --> 00:16:41,951
+teta is equal to pi over 4. I think this is good. Now we can easily compute this from 0 to pi over 4. So this is r square. So this is r prime square. As you see. Now, so if you collect this, you are going to obtain 2 plus 2 cos theta. Okay, so this is very nice.
+
+116
+00:16:42,419 --> 00:16:44,379
+So, we can easily compute this.
+
+117
+00:16:45,579 --> 00:16:46,919
+So, d theta.
+
+118
+00:16:47,719 --> 00:16:56,059
+Now, so, L is equal to from 0 to pi over 4 integration.
+
+119
+00:16:56,059 --> 00:17:04,779
+So, we know that 1 plus cosine, so, we know that cosine square theta.
+
+120
+00:17:05,523 --> 00:17:27,923
+is equal to one plus cosine two theta over two. By using these trigonometric identities, okay, so we can write here square root of two, one plus cosine theta is equal to two times
+
+121
+00:17:30,003 --> 00:17:33,384
+cosin2, theta over 2.
+
+122
+00:17:34,563 --> 00:17:36,903
+Okay, now we can write this.
+
+123
+00:17:49,971 --> 00:17:50,412
+Okay.
+
+124
+00:17:52,231 --> 00:18:05,291
+Now, by substituting this, you can write it from 0 to pi over 4, 2 times absolute of cosine theta over 2, d theta.
+
+125
+00:18:05,771 --> 00:18:13,811
+Now, we know that cosine theta over 2 is positively defined over the interval 0 pi over 4.
+
+126
+00:18:13,951 --> 00:18:16,532
+That's why you don't need to put this absolute here.
+
+127
+00:18:18,355 --> 00:18:23,875
+So, if you integrate this, two times,
+
+128
+00:18:26,836 --> 00:18:33,496
+integrederseniz ne olur arkadaşlar? Sinus, teta bölü 2, tabi bir tane daha 2 koyacaksınız.
+
+129
+00:18:35,076 --> 00:18:35,375
+Okay.
+
+130
+00:18:36,715 --> 00:18:40,115
+Here, from 0 to pi over 4.
+
+131
+00:18:45,523 --> 00:18:46,884
+4 times.
+
+132
+00:18:48,403 --> 00:18:49,203
+Ne geliyor arkadaşlar?
+
+133
+00:18:49,543 --> 00:18:51,823
+Sign pi over.
+
+134
+00:18:54,823 --> 00:19:00,503
+Pi bölü 4 yazarsak, pi bölüsünüz, pi bölü 8, eksi 0.
+
+135
+00:19:00,884 --> 00:19:01,823
+Cevap bu arkadaşlar.
+
+136
+00:19:03,423 --> 00:19:04,643
+Evet, is there any mistake?
+
+137
+00:19:05,523 --> 00:19:06,163
+Hata var mı?
+
+138
+00:19:07,303 --> 00:19:08,023
+İşlem hatası.
+
+139
+00:19:08,403 --> 00:19:08,843
+Yok değil mi?
+
+140
+00:19:15,443 --> 00:19:27,284
+Evet, anlaşıldı mı arkadaşlar? Ama, ok, if you want to wish to compute this, so just transport this, ok, just rotate this, ok, rotate this.
+
+141
+00:19:29,643 --> 00:19:39,864
+So if you rotate this, you are going to obtain some cardioid of the form A times 1 plus cosine theta. After rotating this, you can easily compute this, ok?
+
+142
+00:19:41,140 --> 00:19:46,300
+Döndürdükten sonra arkadaşlar, 1 artı sintetalı şeyi döndürürsünüz 90 derece.
+
+143
+00:19:46,980 --> 00:19:50,680
+Ondan sonra zaten 1 artı kosinist etayı döndürdüğünüzde tabii ki ne olur?
+
+144
+00:19:50,759 --> 00:19:53,880
+O zaman şuradaki dönen parça başka bir yere gelecek.
+
+145
+00:19:54,539 --> 00:19:55,700
+Şurada bir yere mi gelecek?
+
+146
+00:19:56,400 --> 00:20:02,180
+Evet, bunu 90 derece döndürürsek, o zaman şuradaki açı şurada bir yer olacak.
+
+147
+00:20:02,180 --> 00:20:05,840
+Ondan sonra 1 artı kosinist etayı üzerinden hesaplarsınız.
+
+148
+00:20:06,079 --> 00:20:06,360
+Tamam mı?
+
+149
+00:20:06,960 --> 00:20:08,280
+Onu da öyle hesaplarsınız artık.
+
+150
+00:20:09,076 --> 00:20:35,376
+Çünkü bilmiyorum, burada bir artı sin tetayı yazabilir misiniz? Sin kare tetalı veya kos kare tetalı burada olduğu gibi kolay görünmüyor. Yani sin kare tetayı işte bir eksi kosinus iki teta bölü iki, oradan bir şey gelmiyor. Öyle kolay görünmüyor. Tamam mı gençler? Evet. Okey. Herhalde anlaşıldı. Yani şeyleri de hesaplayabilirsiniz arkadaşlar.
+
+151
+00:20:36,915 --> 00:20:39,895
+Evet, ok, let's compute this, another example.
+
+152
+00:20:49,395 --> 00:20:59,476
+So this is r is equal to 2a times sine theta. So let's compute.
+
+153
+00:21:15,347 --> 00:21:16,547
+P bölü 4 olsun.
+
+154
+00:21:17,748 --> 00:21:19,867
+Let's compute this arc line.
+
+155
+00:21:20,748 --> 00:21:21,748
+So express
+
+156
+00:21:25,428 --> 00:21:27,428
+Expressed Integration
+
+157
+00:21:31,092 --> 00:21:32,632
+4 ark length,
+
+158
+00:21:38,932 --> 00:22:00,351
+Okay, now L from 0 to pi over 4, so this is the formula, R square plus R prime square d theta, so R prime is equal to 2A times cosine theta.
+
+159
+00:22:00,351 --> 00:22:05,351
+Okay, now from 0 to pi over 4.
+
+160
+00:22:05,940 --> 00:22:23,320
+R'2, 4A'2, sin2, d'eta.
+
+161
+00:22:31,071 --> 00:22:42,451
+And so 2a, a is positive, and so we got this data. Is that correct? Hatay yapmadım değil mi?
+
+162
+00:22:46,132 --> 00:22:56,992
+Now, this is integration model. 2A times theta from 0 to pi over 4. You can easily compute this.
+
+163
+00:22:58,792 --> 00:23:04,312
+P A over 2. Okay, let me put my charge.
+
+164
+00:23:07,052 --> 00:23:10,532
+Bir dakika bekleyin arkadaşlar. Tarz aleti.
+
+165
+00:24:19,988 --> 00:24:24,268
+Okay, another example. Okay, this is your task.
+
+166
+00:24:37,556 --> 00:24:41,715
+Okay, so you are given some cardioid, and
+
+167
+00:24:50,900 --> 00:25:00,800
+So, this is r is equal to 2a times sine theta.
+
+168
+00:25:02,800 --> 00:25:10,700
+And let's say this is r is equal to 2b, or not 2b.
+
+169
+00:25:10,700 --> 00:25:16,620
+So, let's say this is b times 1 plus...
+
+170
+00:25:16,852 --> 00:25:18,572
+cosine theta.
+
+171
+00:25:19,332 --> 00:25:21,292
+So, the question here,
+
+172
+00:25:22,272 --> 00:25:24,092
+you may see such question,
+
+173
+00:25:24,852 --> 00:25:26,532
+so this is question, not example,
+
+174
+00:25:27,572 --> 00:25:30,632
+you may see such question in the test exam,
+
+175
+00:25:31,752 --> 00:25:33,172
+question, express
+
+176
+00:25:33,172 --> 00:25:36,092
+which of the following integrals
+
+177
+00:25:36,092 --> 00:25:38,652
+represents
+
+178
+00:25:38,652 --> 00:25:41,632
+represents arc length
+
+179
+00:25:41,632 --> 00:25:43,152
+of
+
+180
+00:25:43,152 --> 00:25:44,432
+curve
+
+181
+00:25:45,140 --> 00:25:50,740
+which is inside, which is inside this circle.
+
+182
+00:25:56,276 --> 00:26:05,276
+Ok, expression, express, let me write here, express, express the,
+
+183
+00:26:08,276 --> 00:26:10,276
+Arkline, express the integration,
+
+184
+00:26:13,907 --> 00:26:15,667
+of arc length
+
+185
+00:26:15,667 --> 00:26:19,727
+of the piece
+
+186
+00:26:19,727 --> 00:26:23,187
+of
+
+187
+00:26:23,187 --> 00:26:28,627
+r is equal to b times
+
+188
+00:26:28,627 --> 00:26:31,047
+1 plus
+
+189
+00:26:31,047 --> 00:26:33,447
+cosine theta
+
+190
+00:26:33,447 --> 00:26:39,447
+which is inside
+
+191
+00:26:40,723 --> 00:26:47,124
+The circle r is equal to 2a sin theta.
+
+192
+00:26:48,723 --> 00:26:49,084
+Okey.
+
+193
+00:26:51,423 --> 00:26:52,384
+Evet.
+
+194
+00:26:54,384 --> 00:26:55,183
+Ne yapacaksınız?
+
+195
+00:26:55,263 --> 00:27:01,203
+B çarpı 1 artı cos theta'nın hangi parçası?
+
+196
+00:27:07,763 --> 00:27:13,783
+Uzunluğunun integralini ifade ediniz. Sadece integral ifade edin arkadaşlar.
+
+197
+00:27:23,124 --> 00:27:29,223
+Bu sizin göreviniz arkadaşlar. Herkes yapsın bakalım. Tınağlarda gelmesi muhtemel soru tarzlarından birisi.
+
+198
+00:28:01,076 --> 00:28:05,775
+Evet, [öğrenci] diri. Orada mısın [öğrenci]? Arideğer [öğrenci].
+
+199
+00:28:13,460 --> 00:28:17,179
+[öğrenci] hiç yok burada. [kişisel bilgi]
+
+200
+00:28:32,500 --> 00:28:33,599
+Buldunuz mu gençler?
+
+201
+00:28:36,879 --> 00:28:41,559
+Integral hesaplamayacaksınız. Sadece integral'i ifade edeceksiniz.
+
+202
+00:28:41,740 --> 00:28:47,539
+Ok, first of all, you need to compute interception rays.
+
+203
+00:28:54,099 --> 00:28:58,920
+So you need to solve commonly, if you solve commonly,
+
+204
+00:29:02,900 --> 00:29:15,920
+Solution, so r is equal to b times 1 plus cosine theta is equal to 2a times sine theta.
+
+205
+00:29:18,860 --> 00:29:30,420
+So, if it's all commonly, this b plus b times, yani bunu tabii uygun değerler verilir arkadaşlar. Ben şimdi şey yapmıyorum. Tamam mı?
+
+206
+00:29:30,900 --> 00:29:40,539
+Sınavda A, B özel dedim. A'yı mesela B'yi 1 seçerseniz ne olur? Sanki gelir gibi. A'yı 1 seçersek B'yi geliyor gibi.
+
+207
+00:29:40,539 --> 00:29:48,840
+Ok, so theta is equal to alpha and theta is equal to, şurada kesişmişler arkadaşlar.
+
+208
+00:29:52,788 --> 00:29:58,587
+Gerçi orada kesişmeyi söylememize gerek yok. Bakın, theta, alfa. Bu çok da önemli değil.
+
+209
+00:29:58,788 --> 00:30:03,847
+Okay, so let's write here. Theta is equal to alfa.
+
+210
+00:30:04,887 --> 00:30:08,927
+But this is the interception ray. Theta is equal to alfa, let's say.
+
+211
+00:30:08,927 --> 00:30:15,048
+But this is the theta pi.
+
+212
+00:30:22,771 --> 00:30:48,451
+teta pi. Now, so if you compute this arc length from teta alpha to teta pi, if you substitute teta pi here, the distance to origin will be zero here. Okay? Can you see that? Now, from teta alpha integration L, from teta alpha,
+
+213
+00:30:48,915 --> 00:31:16,336
+So, theta, beta, r square, square root of r square, so square root of r square, okay, plus b times 1 plus cosine theta square, plus derivation of this, minus b times sine theta,
+
+214
+00:31:16,895 --> 00:31:29,435
+Ok, so this is our integration model, giving us the arc length of cardioid piece, which is inside circle.
+
+215
+00:31:29,915 --> 00:31:35,296
+Dikkat ediyor musunuz arkadaşlar? Sınavda böyle. Hesaplama yapma istenirse hesaplarsınız.
+
+216
+00:31:35,475 --> 00:31:42,135
+Integral isteniyor çoğunlukla. Integralde burayı düzenlersiniz, bulursunuz. Tamam? Var mı anlaşmayan bir yer?
+
+217
+00:31:47,508 --> 00:32:10,427
+Geçiyorum. Daha çok soru çözeceğiz arkadaşlar. Konuyu öğrendiniz galiba. Konuyu öğrendiyseniz sıkıntı yok gençler. Şimdi vektörler konusuna giriş yapacağım arkadaşlar. Bitireceğim. Haftaya biraz genel yapacağım. Hatta yarın yapabiliriz. Vektörler konusunu da verelim.
+
+218
+00:32:15,955 --> 00:32:26,256
+Sorusu olan var mı? Hocam ben kutupsal koordinatları hiç anlamadım. Hiç mantıma yatmadı. Dediğiniz yer varsa orayı izah edelim. Yoksa yeni konuya geçiyorum.
+
+219
+00:32:26,256 --> 00:32:31,556
+If you don't have any question, just introduce next topic, vectors.
+
+220
+00:32:37,107 --> 00:32:42,407
+Evet. Bugün birazcık konu işleyelim. Yarın örnek çözelim.
+
+221
+00:32:52,339 --> 00:32:58,339
+Okay, so what is point, so everyone knows. So generally, we generally...
+
+222
+00:33:08,243 --> 00:33:14,243
+Bu ne?
+
+223
+00:33:19,059 --> 00:33:20,119
+So, for example,
+
+224
+00:33:24,211 --> 00:33:37,612
+So, point on the coordinate, we write this, x, y, or the point p, x, y. So, this is just point, not vector. Attention here.
+
+225
+00:33:38,892 --> 00:33:44,172
+So, let me sketch Cartesian coordinate system.
+
+226
+00:33:45,779 --> 00:34:01,559
+So, we study on the plane. Also, we can talk about point in the three-dimensional space. Just take some point. This is just point P, X, Y. So, we can obtain some vector.
+
+227
+00:34:03,420 --> 00:34:11,000
+Okay, so consider this line segment. Let me use red color. Consider this line segment.
+
+228
+00:34:11,923 --> 00:34:16,604
+ve, let's just put some direction for this, okay?
+
+229
+00:34:17,304 --> 00:34:19,623
+But this is point, attention here.
+
+230
+00:34:22,224 --> 00:34:28,104
+And so, this is the point, origin point, 0, 0, okay?
+
+231
+00:34:29,064 --> 00:34:38,655
+Now, so, a line segment, oh, let me write you, and...
+
+232
+00:34:38,655 --> 00:34:39,796
+Directed
+
+233
+00:34:43,827 --> 00:34:45,148
+line segment
+
+234
+00:34:45,148 --> 00:34:49,407
+is denoted
+
+235
+00:34:49,407 --> 00:34:52,288
+by
+
+236
+00:34:52,288 --> 00:34:56,087
+here, so O, P
+
+237
+00:35:00,436 --> 00:35:07,316
+is equal to x, y. So as you see, so we, we, we, we remove the letters.
+
+238
+00:35:09,236 --> 00:35:13,155
+Okay, so this is vector. And called
+
+239
+00:35:13,155 --> 00:35:16,396
+a vector.
+
+240
+00:35:20,052 --> 00:35:40,072
+İntiyel point, İntiyel point, O, and the destination point, destination point, P.
+
+241
+00:35:40,072 --> 00:35:40,952
+Okay.
+
+242
+00:35:44,884 --> 00:36:11,403
+Bu, bu
+
+243
+00:36:11,635 --> 00:36:14,876
+Now, this notational difference is very important.
+
+244
+00:36:16,596 --> 00:36:26,515
+Now, we can also talk about, okay, let me put here another point here, q, so x, y.
+
+245
+00:36:27,435 --> 00:36:39,096
+So, if you are given some point on the plane, so we can obtain some vector, again, so oq vector, let me put here oq vector.
+
+246
+00:36:39,731 --> 00:36:53,311
+So, this is O, P vector. So, this is O, Q vector. So, what about the vector with the initial point P and destination point Q?
+
+247
+00:36:53,311 --> 00:36:54,752
+So,
+
+248
+00:36:59,987 --> 00:37:09,207
+So, how can we express this? So, p, q, p, q, point. So, what is this in terms of some pair, something like that?
+
+249
+00:37:09,847 --> 00:37:17,467
+So, let me write here. So, let's say this is x1, y1. Let's say this is x2, y2.
+
+250
+00:37:18,068 --> 00:37:29,728
+So, how can we express this p2 vector with initial point p and destination point q in terms of some pairs by using x1, x2, y1, y2?
+
+251
+00:37:30,347 --> 00:37:42,807
+So, as you see, in order to express such p2 vectors in terms of x1, x2, y1, y2, we need some algebraic operations.
+
+252
+00:37:42,807 --> 00:37:43,807
+Okay.
+
+253
+00:37:44,403 --> 00:37:48,403
+Şimdi, nasıl yapabiliriz?
+
+254
+00:38:11,668 --> 00:38:26,068
+The motion, the orbit of motion, OP plus and PQ, OK, orbit, resulting in OQ orbit. OK, so here.
+
+255
+00:38:28,648 --> 00:38:35,688
+OP yörüngesi artı PQ yörüngesi toplamış gibi düşünüyorum. Aslında O'dan Q'ya hareket etmişim gibi düşünüyorum.
+
+256
+00:38:36,052 --> 00:38:39,392
+Okay, so how can we define this addition?
+
+257
+00:38:40,912 --> 00:38:42,231
+This is very important.
+
+258
+00:38:42,672 --> 00:38:43,652
+So what is this?
+
+259
+00:38:46,231 --> 00:38:48,332
+Okay, now we need this.
+
+260
+00:38:48,472 --> 00:38:53,892
+In fact, this is called vector addition.
+
+261
+00:38:53,892 --> 00:39:02,811
+Okay, in order to express, to express pq in terms of coordinates.
+
+262
+00:39:06,643 --> 00:39:11,384
+We need some algebraic operations.
+
+263
+00:39:20,019 --> 00:39:28,859
+Ok, we need some algebraic operations, such as vector addition.
+
+264
+00:39:38,164 --> 00:39:39,403
+ve
+
+265
+00:39:43,188 --> 00:40:09,927
+Okay, so first of all, let me talk about vector addition. So, so let me, let me generalize this situation into higher dimension space. Okay, so this is the point, so this is the point in the higher dimensional space, not vector at the moment. Okay, the point, a point, so let me write here, vector addition, vector addition.
+
+266
+00:40:13,876 --> 00:40:20,716
+A point in the higher dimensional space, n-dimensional space.
+
+267
+00:40:21,516 --> 00:40:30,716
+Okay, so a vector of P, so we got this, x1, x2, dot, dot, dot, xn.
+
+268
+00:40:33,172 --> 00:40:54,751
+Let me write here, so, okay, so let me use u notation, not x1, x2. Okay, I think it is better to use u notation here. So u1, u2, un. So u1, u2, dot, dot, un. Let's say this is u vector. Let me write this.
+
+269
+00:40:55,135 --> 00:41:12,195
+So, let me use u notation here. So, this u, in fact, so op, so we can write here op, so u, u1, u2, let me use this notation, u1, u2, dot, dot, un.
+
+270
+00:41:12,195 --> 00:41:21,195
+Okay, now let's give some another point, u, u2, okay, so we got v vector.
+
+271
+00:41:21,907 --> 00:41:27,387
+Let's say this is v-vector, v1, v2, dot, dot, dot, vn.
+
+272
+00:41:27,527 --> 00:41:37,547
+Okay, those are vectors, vectors, two vectors in higher dimensional space, not points.
+
+273
+00:41:37,547 --> 00:41:40,568
+Okay, so this is, let me use, this is q.
+
+274
+00:41:41,811 --> 00:41:44,791
+v1, v2, dot, dot, dot, vn.
+
+275
+00:41:45,152 --> 00:41:45,371
+Okay.
+
+276
+00:41:45,992 --> 00:41:52,971
+Now, so, addition of these two vectors, so, let's define this addition.
+
+277
+00:41:53,631 --> 00:42:02,091
+So, we consider point-wise addition, u1 plus v1, u2 plus v2.
+
+278
+00:42:02,791 --> 00:42:07,171
+In fact, this is the generalization of addition in the set of real numbers.
+
+279
+00:42:07,603 --> 00:42:15,684
+The set of real numbers can be considered as the set of one-day dimensional vectors.
+
+280
+00:42:15,684 --> 00:42:17,023
+Okay, here.
+
+281
+00:42:17,764 --> 00:42:18,644
+All right, let's see.
+
+282
+00:42:20,163 --> 00:42:22,403
+So, properties of this addition.
+
+283
+00:42:23,023 --> 00:42:24,804
+Properties of this addition.
+
+284
+00:42:26,684 --> 00:42:29,043
+The first rule.
+
+285
+00:42:29,583 --> 00:42:33,123
+So, this addition is commutative.
+
+286
+00:42:36,467 --> 00:43:04,087
+Okay, you can change their position in the addition. So, komutatif, komutatif, namely abelion, değişmeli arkadaşlar. Bir artı iki eşittir, iki artı bir gibi. Tamam? Okay, now, the second property, associatif. So, addition is independent from,
+
+287
+00:43:06,547 --> 00:43:07,708
+Parantezis.
+
+288
+00:43:09,587 --> 00:43:13,967
+This means that you may ignore parantezis here.
+
+289
+00:43:15,708 --> 00:43:22,127
+Associative rule, birleşme özelliği, toplama birleşme özelliğine sahiptir arkadaşlar.
+
+290
+00:43:23,147 --> 00:43:25,827
+Yani parantezden bağımsızdır diye düşünebilirsiniz.
+
+291
+00:43:25,827 --> 00:43:26,407
+3.
+
+292
+00:43:28,087 --> 00:43:30,347
+Ok, there exists.
+
+293
+00:43:32,659 --> 00:43:58,119
+There exists some null vector, zero vector. There exists the zero vector, null vector. Some people use this notation, null vector. So we denote null vector here, theta, zero. You may write here, theta or zero. Okay, zero.
+
+294
+00:43:58,675 --> 00:44:15,615
+0, 0, dot, dot, dot, 0, such that, such that u vector, any vector, over 0 vector is equal to identity element.
+
+295
+00:44:15,835 --> 00:44:24,435
+You may say identity element with respect to addition. Etkisiz element diyebilirsiniz arkadaşlar. Neutral element with respect to addition.
+
+296
+00:44:24,980 --> 00:44:29,820
+Okay, now zero plus u vector.
+
+297
+00:44:30,119 --> 00:44:31,400
+Okay, for all u.
+
+298
+00:44:32,320 --> 00:44:34,420
+For all u vectors.
+
+299
+00:44:35,860 --> 00:44:36,860
+You may write here.
+
+300
+00:44:36,960 --> 00:44:38,300
+For all u vectors.
+
+301
+00:44:41,360 --> 00:44:44,300
+Now we can write here.
+
+302
+00:44:44,900 --> 00:44:46,079
+So, ne olacak arkadaşlar?
+
+303
+00:44:46,280 --> 00:44:47,139
+Etkisiz eleman var.
+
+304
+00:44:47,219 --> 00:44:47,740
+Bir de ne olacak?
+
+305
+00:44:49,360 --> 00:44:50,240
+Tersi olacak.
+
+306
+00:44:50,380 --> 00:44:50,699
+Doğru mu?
+
+307
+00:44:52,436 --> 00:45:14,436
+Okay, there exists, there exists, there exists minus u, such that, u plus minus u, minus u is given by this.
+
+308
+00:45:15,715 --> 00:45:17,815
+Okay, let me write here.
+
+309
+00:45:18,708 --> 00:45:27,388
+Minus u is defined by this, minus u1, minus u2, dot, dot, dot, minus u n.
+
+310
+00:45:27,388 --> 00:45:41,788
+Okay, now such that, holding this condition, such that, minus u plus u is equal to zero vector, and minus u plus u.
+
+311
+00:45:42,028 --> 00:45:43,008
+Okay, inverse.
+
+312
+00:45:44,275 --> 00:46:02,595
+There exists inverse elements for every u vector. Her u vector için bir ters vector vardır arkadaşlar. Yani görselleştirmek yüksek boyutlarda mümkün değildir. Ama görselleştirmek 3 boyutlu uzayda çalışıyoruz gibi düşünelim.
+
+313
+00:46:02,595 --> 00:46:08,995
+Ok, so this is very important.
+
+314
+00:46:09,523 --> 00:46:17,324
+dikkat ediyor musunuz arkadaşlar? Başka hangi özellikleri var? Hepsini söyledik galiba. Evet. Bunlar bizim özelliklerimiz arkadaşlar.
+
+315
+00:46:17,503 --> 00:46:32,043
+This is vector addition. So, let's turn back to this, this spatial example. So, if you are given some three-dimensional space here, so just given some point,
+
+316
+00:46:33,780 --> 00:46:53,400
+So consider spatial case and tree. So we study on the three-dimension space, x, y, z. So given some point p, so x1, y1, z1, given point p, x2, y2, z2.
+
+317
+00:46:57,076 --> 00:47:21,740
+Bu, bu
+
+318
+00:47:21,748 --> 00:47:36,427
+As you see, from the physical point of view and algebraic point of view, we can write this OP vector plus PQ vector is equal to OQ vector.
+
+319
+00:47:36,427 --> 00:47:48,367
+Okay, so we can write this. So let's write these OP vectors tupled in terms of X1, I1, X1, Y1, Z1.
+
+320
+00:47:48,788 --> 00:47:56,088
+Plus, we don't know pq vector, we need to express pq vectors in terms of coordinates.
+
+321
+00:47:56,907 --> 00:48:05,588
+Okay, but we know the oq vectors in terms of coordinates, x2, y2, z2.
+
+322
+00:48:06,288 --> 00:48:15,927
+So, okay, here, so this is just op vector, so we can express, in fact, here, so this implies that op vector,
+
+323
+00:48:16,596 --> 00:48:42,855
+Plus, let me write, set my q vecter, minus, minus OP vector plus PQ vector, is equal to minus OP vector plus OQ vector. We can do this. Okay. Okay. Also, let me write here. Forget this OP vector.
+
+324
+00:48:44,211 --> 00:48:47,432
+P-vektör plus P-q-vektör.
+
+325
+00:48:47,852 --> 00:48:55,811
+Okay, so look at here, this is null vector, zero vector, zero vector plus P-q-vektör results in P-q-vektör.
+
+326
+00:48:55,972 --> 00:49:01,872
+Okay, so we can express P-q-vektörs in terms of this.
+
+327
+00:49:04,352 --> 00:49:06,672
+Okay, we can write this because of this.
+
+328
+00:49:06,672 --> 00:49:08,372
+Okay, x1.
+
+329
+00:49:08,947 --> 00:49:21,427
+y1, z1. In fact, this is nothing else than this, x2 minus x1, y2 minus y1, z2 minus z1. As you see,
+
+330
+00:49:23,347 --> 00:49:32,047
+so if you are given two points, look at here, p, x1, x2, so y1, z1, q,
+
+331
+00:49:32,916 --> 00:49:36,856
+x2, y2, z2.
+
+332
+00:49:37,236 --> 00:49:39,356
+So, this is the starting point.
+
+333
+00:49:39,476 --> 00:49:41,136
+This is the destination point.
+
+334
+00:49:41,416 --> 00:49:50,676
+But as you see, this is the coordinate of, x coordinate of, destination point, x coordinate of, starting point, y coordinate of, destination point.
+
+335
+00:49:51,376 --> 00:49:54,336
+Okay, so, y coordinate of, starting point.
+
+336
+00:49:54,416 --> 00:49:56,496
+As you see, we can directly obtain this.
+
+337
+00:49:57,496 --> 00:50:00,000
+If you are given two points, you can obtain...
+
+338
+00:50:00,000 --> 00:50:01,000
+vektörs.
+
+339
+00:50:01,759 --> 00:50:09,000
+Note that,
+
+340
+00:50:10,000 --> 00:50:12,159
+Two points, given two points,
+
+341
+00:50:15,719 --> 00:50:17,199
+Two points, P,
+
+342
+00:50:18,079 --> 00:50:19,460
+X1,
+
+343
+00:50:20,119 --> 00:50:21,079
+Y1,
+
+344
+00:50:21,799 --> 00:50:23,420
+Z1, and
+
+345
+00:50:23,956 --> 00:50:41,816
+Q, x2, y2, z2, implies, implies a vector, pq, or qp.
+
+346
+00:50:51,027 --> 00:51:14,427
+p-vektör, ok? Now we know that p-q-vektör is x2 minus x1, y2 minus y1, z2 minus z1, ok? Now all q-vektör, q-p-vektör is,
+
+347
+00:51:15,347 --> 00:51:25,187
+So in that case, x1 minus x2, y1 minus y2, z1 minus z2.
+
+348
+00:51:25,707 --> 00:51:30,147
+Okay, so I see we need to put some operations here.
+
+349
+00:51:31,067 --> 00:51:33,307
+Product by scalar.
+
+350
+00:51:33,667 --> 00:51:36,027
+Okay, so we need another operation.
+
+351
+00:51:36,907 --> 00:51:38,747
+Product by scalar.
+
+352
+00:51:38,747 --> 00:51:39,427
+Product.
+
+353
+00:51:42,260 --> 00:51:44,220
+by a scolar.
+
+354
+00:51:47,040 --> 00:51:52,940
+So, but, so this is some operation, so given some vector, given a vector,
+
+355
+00:51:55,040 --> 00:52:04,040
+let's say this is u, so we study on higher dimensional space, u1, u2, dot, dot, dot, un, okay.
+
+356
+00:52:05,360 --> 00:52:08,460
+So, and a scolar, and
+
+357
+00:52:09,588 --> 00:52:12,807
+A lambda scalar, which is real number.
+
+358
+00:52:13,488 --> 00:52:13,588
+Okay.
+
+359
+00:52:15,588 --> 00:52:16,347
+Then,
+
+360
+00:52:17,468 --> 00:52:19,668
+the product by scalar,
+
+361
+00:52:20,228 --> 00:52:21,448
+defined by this.
+
+362
+00:52:23,307 --> 00:52:23,988
+So,
+
+363
+00:52:24,708 --> 00:52:25,988
+lambda times
+
+364
+00:52:25,988 --> 00:52:27,448
+1,
+
+365
+00:52:28,347 --> 00:52:30,327
+lambda times u2,
+
+366
+00:52:31,028 --> 00:52:31,867
+dot, dot, dot,
+
+367
+00:52:32,468 --> 00:52:34,268
+lambda times u n.
+
+368
+00:52:34,268 --> 00:52:36,688
+As you see, again, we have some
+
+369
+00:52:37,268 --> 00:52:42,067
+Vektör, kontainded by n-dimensyal space.
+
+370
+00:52:42,967 --> 00:52:45,127
+Okay, now properties of this.
+
+371
+00:52:50,164 --> 00:53:01,104
+So, the first property, so this product by scalar is distributed to additional vectors. We can do this.
+
+372
+00:53:05,043 --> 00:53:06,187
+ve
+
+373
+00:53:11,507 --> 00:53:13,967
+So, you are given to scalar.
+
+374
+00:53:15,587 --> 00:53:17,228
+So, this is vector.
+
+375
+00:53:17,867 --> 00:53:18,827
+Attention here.
+
+376
+00:53:19,007 --> 00:53:22,827
+So, this is the product of scalar.
+
+377
+00:53:23,027 --> 00:53:25,268
+This is real number.
+
+378
+00:53:25,527 --> 00:53:28,127
+But this is the product by scalar.
+
+379
+00:53:28,327 --> 00:53:28,987
+Attention here.
+
+380
+00:53:29,087 --> 00:53:30,208
+This is real number.
+
+381
+00:53:30,567 --> 00:53:31,527
+This is vector.
+
+382
+00:53:32,288 --> 00:53:33,547
+Okay, you can write this.
+
+383
+00:53:34,188 --> 00:53:38,327
+Lambda times v times u.
+
+384
+00:53:38,867 --> 00:54:06,635
+Bu da bu
+
+385
+00:54:06,931 --> 00:54:08,431
+Now we got this rule.
+
+386
+00:54:11,351 --> 00:54:29,991
+So, lambda plus mu, product by scalar u, lambda times u, plus mu times product by scalar, times means product by scalar u.
+
+387
+00:54:30,612 --> 00:54:57,632
+Okay, so this is the usual addition in the set of real numbers. Okay, let me use this. Let's suppose that this is the vector addition here. Vector addition. Okay, here. So this is vector addition. The usual, the usual addition. This is the usual addition. This is the vector addition. Vector addition.
+
+388
+00:54:59,315 --> 00:55:02,675
+Vektör toplamı, öteki de klasik toplam.
+
+389
+00:55:03,115 --> 00:55:03,835
+Tamam mı gençler?
+
+390
+00:55:04,995 --> 00:55:06,827
+Evet, şu telefonu bir dakika ekleyeceğiz.
+
+391
+00:55:16,916 --> 00:55:18,456
+Ya da bir ara verelim arkadaşlar.
+
+392
+00:55:18,696 --> 00:55:20,336
+Okay, have a break for 10 minutes.
+
+393
+00:55:21,776 --> 00:55:23,796
+Son özelliği de verelim, ondan sonra ara verelim.
+
+394
+00:55:23,856 --> 00:55:24,316
+Wait a minute.
+
+395
+00:55:24,316 --> 00:55:26,436
+Okay, now last property.
+
+396
+00:55:28,676 --> 00:55:36,316
+Zero times, zero times u vector result in zero vector.
+
+397
+00:55:36,896 --> 00:55:37,756
+It's obvious fact.
+
+398
+00:55:38,956 --> 00:55:41,316
+And one times...
+
+399
+00:55:43,411 --> 00:55:45,571
+U-vector results in U.
+
+400
+00:55:47,351 --> 00:55:51,371
+Bunlar bilinen arkadaşlar, çıkartılan özellikler.
+
+401
+00:55:52,091 --> 00:55:53,811
+Bir tane örnek verelim.
+
+402
+00:56:00,244 --> 00:56:09,084
+123-125
+
+403
+00:56:13,331 --> 00:56:19,731
+2 times u vector, minus 3 times v vector.
+
+404
+00:56:22,451 --> 00:56:40,371
+Okay, so this is 2, 4, 6, plus 3, minus 6, minus 15, 5, minus 2, minus.
+
+405
+00:56:41,204 --> 00:56:46,764
+Is that correct? Tamam arkadaşlar. Evet. Devam edeceğiz arkadaşlar.
+
+406
+00:56:47,624 --> 00:56:52,364
+Okay, let's give some break. Break 50 minutes.
+
+407
+01:18:17,684 --> 01:18:27,884
+Evet, merhaba gençler. Kaldığımız yerden devam edelim. Vektörlerdeki vektör nedir, nokta nedir, vektörler üzerindeki temel işlemlerden bahsettik.
+
+408
+01:18:34,323 --> 01:18:35,563
+Şimdi arkadaşlar,
+
+409
+01:18:42,036 --> 01:18:44,115
+Ok, next topic.
+
+410
+01:18:47,336 --> 01:18:48,456
+Unitvektörs.
+
+411
+01:18:56,115 --> 01:19:03,515
+I1, 1, 0, dot, dot, dot, 0, I2.
+
+412
+01:19:04,895 --> 01:19:08,456
+We study in the higher dimensional space.
+
+413
+01:19:12,659 --> 01:19:25,280
+dot dot dot, the nth unit vector, 0, 0, all terms are 0, except for the nth coordinate is 1.
+
+414
+01:19:25,559 --> 01:19:27,880
+Okay, so those are unique vectors.
+
+415
+01:19:27,880 --> 01:19:38,300
+So if you are given some vectors, any vectors, u1, u2, dot dot dot, u n,
+
+416
+01:19:38,771 --> 01:19:43,971
+So, this u-vector came written in terms of unit vectors.
+
+417
+01:19:43,971 --> 01:20:06,172
+Then, so we can express these u-vectors in terms of u1 times i1 unit vector, u2, okay, sorry, this is not vector, this is scalar, u2 times i2.
+
+418
+01:20:07,123 --> 01:20:31,904
+dot dot dot, un times i n vector, so we can express this by sigma notation, so u i times, okay, let's use k, not i, uk times i k vector, okay.
+
+419
+01:20:32,467 --> 01:20:46,567
+So, we can express any vectors in terms of unit vectors, spatial case and two, so and three, sorry, spatial case and three.
+
+420
+01:20:46,567 --> 01:20:58,547
+So, unit vector is denoted by i vector, one, zero, zero, j vector, zero, one, zero.
+
+421
+01:21:00,724 --> 01:21:15,324
+This is three dimensional space unit vector. Evet, üç boyutlu vektör uzayı, yani bizim içinde yaşadığımız evrenin, arkadaşlar, evrendeki bir vektör, ikka ile gösterilir. Tamam mı arkadaşlar?
+
+422
+01:21:23,315 --> 01:21:40,755
+As you see, we can express some vector, some vector 1, 2, 3, in terms of this, 1 times i vector, plus 2 times j vector, plus 3 times k vector.
+
+423
+01:21:50,899 --> 01:22:02,659
+Plus 2 times k, minus 3 times, oh so this is j, sorry, this is j, this is k.
+
+424
+01:22:04,500 --> 01:22:04,840
+Okey.
+
+425
+01:22:06,559 --> 01:22:08,379
+Is that clear?
+
+426
+01:22:09,059 --> 01:22:11,179
+Herhalde anlaşılır. Zaten biliyorsunuz bunları.
+
+427
+01:22:11,899 --> 01:22:12,819
+Sadece kısaca özellikle.
+
+428
+01:22:12,899 --> 01:22:14,579
+Tabii ben genel anlamda verdim.
+
+429
+01:22:14,899 --> 01:22:17,619
+En boyutlu uzayda da düşünebilirsiniz aynı işleri.
+
+430
+01:22:18,292 --> 01:22:52,235
+Evet.
+
+431
+01:22:35,315 --> 01:22:52,235
+Bu, bu
+
+432
+01:22:52,595 --> 01:23:02,935
+Euclidean geometriği is based on this product, dot product. By using this dot product, we can define angle, we can define cosine, sine, okay.
+
+433
+01:23:02,935 --> 01:23:19,415
+Now, so given two vectors, so this is general definition, given two vectors in the n-dimensional space, okay, dot product,
+
+434
+01:23:20,692 --> 01:23:25,492
+Sometimes it's denoted by this dot.
+
+435
+01:23:26,492 --> 01:23:31,431
+Some people use this notation, bracket.
+
+436
+01:23:31,971 --> 01:23:38,051
+So bracket is very important notation in the quantum computer system.
+
+437
+01:23:38,951 --> 01:23:39,672
+Okay, so this.
+
+438
+01:23:40,787 --> 01:24:07,467
+Okay, you may see such notation. If you study on the complex vectors here, so each component is a complex number, so this you are going to study in the complex system. Okay, now, so in that case, we use this notation. U, this. Okay, bracket notation. This is out of topic.
+
+439
+01:24:08,083 --> 01:24:18,683
+Evet arkadaşlar, birleşenleri karmaşık sayılar olan vektörler düşünürsek arkadaşlar, oradaki dot product, iç çarpın, braket notasyonuyla gösterilir.
+
+440
+01:24:18,783 --> 01:24:28,144
+Kuantum mekanikte, kuantum hesaplamada, kuantum devre kapıları var. Kuantum bilgisayarlar için önemli bunlar arkadaşlar. Notasyonlar bunlar. Tamam mı?
+
+441
+01:24:28,532 --> 01:24:41,932
+Ama biz klasikte çalışıyoruz. Bizim bilgisayarlarımızın arkadaşlar üzerinde çalıştığı nesneler aslında bunlar. Dikkat edin. Klasik. Evet, devam ediyorum.
+
+442
+01:24:49,011 --> 01:25:01,791
+u1 times v1 plus u2 times v2 plus u3 times v3 plus dot dot dot, un times vn.
+
+443
+01:25:02,572 --> 01:25:07,731
+Okay, so let me express this addition in terms of sigma notation.
+
+444
+01:25:08,731 --> 01:25:14,611
+K starts by 1 goes to n, u, uk times vk.
+
+445
+01:25:15,060 --> 01:25:16,960
+So, this is dot product.
+
+446
+01:25:19,360 --> 01:25:22,680
+Okay, let me introduce some example.
+
+447
+01:25:23,180 --> 01:25:26,320
+So, consider three-dimensional space.
+
+448
+01:25:27,540 --> 01:25:40,240
+So, one, so let me use this, i plus 2j plus k and v-vector minus i.
+
+449
+01:25:41,524 --> 01:25:46,384
+plus 3j minus k.
+
+450
+01:25:47,524 --> 01:26:08,604
+Okay, dot product of these vectors, u dot product, v, the coefficient of i in the first vector, 1, the coefficient of i in the second vector, minus i, 1 times minus 1 plus 2 times 3 plus 1 times minus 1.
+
+451
+01:26:09,203 --> 01:26:18,884
+Ok, so minus 2, minus 2. Ok, minus 1, minus 1, minus 2. Ok, 4 mi kalıyor arkadaşlar? 4.
+
+452
+01:26:21,363 --> 01:26:28,283
+Ok, so this is asper. As you see, dot product, so this is a vector. So let me express. So this is a vector.
+
+453
+01:26:31,163 --> 01:26:32,443
+This is a vector.
+
+454
+01:26:35,324 --> 01:26:35,844
+But
+
+455
+01:26:36,340 --> 01:26:43,900
+That product of given two vectors results in some scalar.
+
+456
+01:26:45,180 --> 01:26:46,780
+Okay, not vector.
+
+457
+01:26:47,380 --> 01:26:48,700
+Let's see if we got some scalar.
+
+458
+01:26:51,940 --> 01:26:54,540
+Okay, is there any question about that product?
+
+459
+01:26:57,739 --> 01:27:00,140
+No, so we can define definition.
+
+460
+01:27:04,307 --> 01:27:30,728
+The norm of a vector, norm of a vector, okay, given some higher dimensional vector space and a vector, so this is the element of n-dimensional vector space, so u, let's say u1, u2, so we have n components.
+
+461
+01:27:33,716 --> 01:27:59,976
+Okay, now the norm of the length. I think the notation norm is better than the length. Okay, that's why I prefer to use the norm, not length. The norm of u, the norm of u is given by this formula. We use this notation double.
+
+462
+01:28:00,500 --> 01:28:02,460
+Absolute, U
+
+463
+01:28:06,139 --> 01:28:08,139
+Evet.
+
+464
+01:28:05,939 --> 01:28:32,843
+Sqağrıo
+
+465
+01:28:33,460 --> 01:28:40,920
+Ok, so in the case of higher dimensional space. Bakın dikkat edin arkadaşlar, uzunluk kavramını kullanmadım.
+
+466
+01:28:41,332 --> 01:29:07,391
+Genel en boyutlu uzayda çalışırken, biz matematikçiler hep böyle düşünürüz genellikle. Fizikçiler ama böyle düşünmüyor. En boyutlu uzayda arkadaşlar, 5 boyutlu uzayda bir şeyin, bir bektörün uzunluğu, 5 boyutlu uzayda bir bektörünü nasıl hayal edeceksin? Hayal edemezsin ama akıl gözümüzde görebiliriz. Üzerinde işlemler yapabiliriz. O yüzden biz uzunluk yerine genellikle norm kavramını kullanmayı tercih ediyoruz. Tamam mı arkadaşlar? Norm.
+
+467
+01:29:09,332 --> 01:29:14,811
+indirgersek işimizi, o zaman uzunluk kavramını kullanabilirsiniz. Evet.
+
+468
+01:29:16,192 --> 01:29:33,592
+Okay, so as you see, if you consider the special case, so in that case, so the norm is reduced, the norm is reduced the length, the length, the length of vector.
+
+469
+01:29:35,828 --> 01:29:42,448
+Okay, so if you are given some, okay, consider this three-dimensional space case.
+
+470
+01:29:43,087 --> 01:29:59,988
+So you are given some, let's say this is z, let's say this is x, given some point p, so x, y, z, and the distance of this point p into origin, okay.
+
+471
+01:30:00,000 --> 01:30:03,199
+So, in fact, by PyTekorium Theorem, you can compute this.
+
+472
+01:30:03,199 --> 01:30:05,195
+So, but, so, by...
+
+473
+01:30:05,300 --> 01:30:31,039
+by, in terms of, vector, so OP vector, x, y, z. In fact, the distance of this p point to origin, given by, you know, the norm of OP, okay, the norm of OP, namely the length of OP, you may use this OP, some people use this, but I do not prefer to use this notation, okay.
+
+474
+01:30:33,300 --> 01:30:49,200
+So, given by this notation, op.product, op, so as you see, now here, so op.op, x² plus y² plus z².
+
+475
+01:30:49,200 --> 01:30:54,979
+Okay, now I see, in fact, this is the length, the length of this line vector.
+
+476
+01:30:56,724 --> 01:31:03,164
+Gördüğünüz gibi 3 boyutlu uzayda arkadaşlar norm kavramı uzunluk olarak karşımıza çıkacak.
+
+477
+01:31:03,484 --> 01:31:09,583
+Tabii 4 boyutlu, 5 boyutlu, 6 boyutlu uzaylarda uzunluk kavramını kullanmak bence doğru değil.
+
+478
+01:31:10,023 --> 01:31:12,764
+O yüzden norm kavramını kullanmayı tercih ediyorum.
+
+479
+01:31:13,064 --> 01:31:14,064
+Tamam mı? Evet.
+
+480
+01:31:15,104 --> 01:31:16,783
+Var mı sorusu olan? Yok galiba.
+
+481
+01:31:18,344 --> 01:31:20,463
+Tabii 4 boyutlu uzayda hemen bir tane daha örnek.
+
+482
+01:31:20,463 --> 01:31:21,184
+Example.
+
+483
+01:31:21,971 --> 01:31:42,031
+Another example, so u-vector, u-vector, 1, 2, 3, minus 1, let me write here, v-vector, 1, minus 1, 2, 2.
+
+484
+01:31:49,876 --> 01:31:50,876
+Normal u,
+
+485
+01:31:50,876 --> 01:31:52,876
+square root of
+
+486
+01:31:52,876 --> 01:31:54,876
+u dot u,
+
+487
+01:31:54,876 --> 01:31:56,876
+1 square,
+
+488
+01:31:56,876 --> 01:31:57,876
+2 square,
+
+489
+01:31:57,876 --> 01:31:59,876
+3 square,
+
+490
+01:31:59,876 --> 01:32:01,876
+and minus 1 square.
+
+491
+01:32:01,876 --> 01:32:03,876
+Ok, 2 dot 2
+
+492
+01:32:03,876 --> 01:32:04,876
+results in this.
+
+493
+01:32:04,876 --> 01:32:06,876
+Ok, so you can do that.
+
+494
+01:32:06,876 --> 01:32:07,876
+So,
+
+495
+01:32:08,876 --> 01:32:11,876
+the normal v vector,
+
+496
+01:32:13,876 --> 01:32:15,876
+square root of v dot v,
+
+497
+01:32:16,467 --> 01:32:24,407
+1 sqa, minus 1 sqa, 2 sqa, 2 sqa, and item C.
+
+498
+01:32:33,811 --> 01:32:56,532
+And the norm of u minus v, okay, now here, so in that case, so we write u minus v, 1 minus 1, square, plus 2 minus minus 1, square, 2 minus 2, so 3 minus 2, square.
+
+499
+01:32:57,395 --> 01:33:00,395
+ve, minus 1, minus 2, kısmi türev.
+
+500
+01:33:00,395 --> 01:33:11,395
+Ok, so this norm of u minus v can be regarded as difference between u object and v object in the four-dimensional space.
+
+501
+01:33:11,395 --> 01:33:20,047
+So you may see some, u is some, let's suppose that u is some data, ok.
+
+502
+01:33:20,047 --> 01:33:30,708
+Some data, a data, and v is another data. The difference between u data and v data can be computed by the norm of u minus v.
+
+503
+01:33:31,108 --> 01:33:40,967
+U verisi ile v verisi arasındaki fark, ikisinin farkının normu olarak düşünülebilir arkadaşlar, veri analizinde. Tamam mı? Bu önemli.
+
+504
+01:33:44,127 --> 01:34:02,427
+Makine öğrenmesini arkadaşlar kurgularken ne yapıyorsunuz? En az hatayı belirleyecek şekilde arkadaşlar kat sayılar, ağırlıklar belirliyorsunuz. Orada en az hatayı belirlerken işte bu normdan faydalanıyorsunuz. Evet, ileride göreceksiniz muhtemelen. Devam.
+
+505
+01:34:09,268 --> 01:34:11,028
+Nokta çarpımı anlaşıldı galiba.
+
+506
+01:34:16,500 --> 01:34:19,100
+Ok, let me, let me, another definition.
+
+507
+01:34:22,280 --> 01:34:25,180
+Definition, another definition.
+
+508
+01:34:29,363 --> 01:34:29,863
+Sorry.
+
+509
+01:34:33,555 --> 01:34:42,475
+Okay. Definition. So given two vectors in higher dimensional space,
+
+510
+01:34:45,475 --> 01:34:53,755
+so we can define u dot v.
+
+511
+01:34:57,268 --> 01:35:08,188
+The u norm times the norm of u times the norm of b times cosine theta.
+
+512
+01:35:08,708 --> 01:35:13,347
+In fact, this is definition. So we may regard this as definition. This is definition.
+
+513
+01:35:13,347 --> 01:35:22,708
+Cosine theta where where theta is.
+
+514
+01:35:24,243 --> 01:35:35,123
+is the angle, angle between, between u and v.
+
+515
+01:35:36,203 --> 01:35:36,603
+Okay.
+
+516
+01:35:38,203 --> 01:35:40,003
+Now, so you can compute this.
+
+517
+01:35:41,123 --> 01:35:42,083
+R cosine.
+
+518
+01:35:45,971 --> 01:36:01,971
+So, angle between two vector u and v given by this definition, r cosign u dot v over the norm of u times the norm of v.
+
+519
+01:36:02,912 --> 01:36:12,031
+Okay, so this is the definition of angle between two vectors in the higher dimensional space, in the n dimensional space.
+
+520
+01:36:12,871 --> 01:36:13,152
+Okay.
+
+521
+01:36:17,939 --> 01:36:19,939
+Bu çok önemli.
+
+522
+01:36:19,939 --> 01:36:23,939
+Bu konuda bu konuda,
+
+523
+01:36:23,939 --> 01:36:26,939
+bu konuda bu konuda
+
+524
+01:36:26,939 --> 01:36:29,939
+bu konuda,
+
+525
+01:36:29,939 --> 01:36:31,939
+u'n ortogonel,
+
+526
+01:36:31,939 --> 01:36:33,939
+u'n ortogonel
+
+527
+01:36:33,939 --> 01:36:35,939
+v'n ortogonel
+
+528
+01:36:35,939 --> 01:36:39,939
+v'n ortogonel,
+
+529
+01:36:39,939 --> 01:36:42,939
+v'n ortogonel
+
+530
+01:36:42,195 --> 01:36:44,796
+According to this definition, look at here.
+
+531
+01:36:45,536 --> 01:36:54,015
+So, the angle must be between, angle between this u and v must be pi over 2 according to this definition, look at here.
+
+532
+01:36:54,576 --> 01:36:59,296
+So, 0, okay, this is not 0 vectors, this is 0.
+
+533
+01:37:00,935 --> 01:37:02,895
+This is 0, okay.
+
+534
+01:37:05,332 --> 01:37:24,032
+Okay, so this is the definition of orthogonality, definition of perpendicularity. Okay? U vektörü, V vektörüne diktir arkadaşlar. Tabi üç boyutlu uzayda hayal edebilirim ben bunu. Okay, if you study in three-dimensional space, so you can sketch this.
+
+535
+01:37:29,844 --> 01:37:53,904
+u.produk b0. For example, consider these basic vectors. So this is i vector somewhere here. Let me use black, red color. This is i vector.
+
+536
+01:37:58,452 --> 01:38:20,132
+1, 0, 0, let's write, this is j vector, j vector, 0, 1, 0, let me sketch, k vector, those are basic, simple, unit vectors, k vector, 0, 0, 1.
+
+537
+01:38:26,068 --> 01:38:28,748
+J is 0.
+
+538
+01:38:29,948 --> 01:38:32,468
+Okay, so those are orthogonal to each other.
+
+539
+01:38:32,588 --> 01:38:33,948
+Okay, we can write this.
+
+540
+01:38:37,684 --> 01:38:47,524
+i.k 0, j.k 0.
+
+541
+01:38:48,863 --> 01:38:51,283
+Okay, those are ortak-ınaltı, each other.
+
+542
+01:38:52,084 --> 01:38:53,363
+Okay, unit vector.
+
+543
+01:38:59,123 --> 01:39:00,984
+Unit vector, general unit vector.
+
+544
+01:39:01,984 --> 01:39:04,023
+You are given some vector
+
+545
+01:39:04,023 --> 01:39:10,463
+in the higher dimensional space, n-dimensional space.
+
+546
+01:39:12,283 --> 01:39:13,163
+Okay.
+
+547
+01:39:13,963 --> 01:39:16,863
+Now, u is called
+
+548
+01:39:16,863 --> 01:39:18,904
+unit,
+
+549
+01:39:19,324 --> 01:39:22,744
+a unit vector,
+
+550
+01:39:22,744 --> 01:39:25,144
+if and only if
+
+551
+01:39:25,747 --> 01:39:31,227
+The norm of u is 1, okay?
+
+552
+01:39:33,688 --> 01:39:37,567
+The norm of u means u1 squared.
+
+553
+01:39:37,707 --> 01:39:46,707
+This implies that u1 squared plus u2 squared plus dot dot dot, un squared is 1.
+
+554
+01:39:46,707 --> 01:39:50,268
+Okay, so this is very important definition.
+
+555
+01:39:54,583 --> 01:39:56,583
+v'n ortogonel
+
+556
+01:39:53,076 --> 01:40:18,091
+...
+
+557
+01:40:22,068 --> 01:40:30,307
+Okay, the difference between the distance between u and b vector, so op vector, let me write here.
+
+558
+01:40:38,804 --> 01:40:40,283
+Ok, let me write PM.
+
+559
+01:40:41,724 --> 01:40:42,324
+PM.
+
+560
+01:40:51,123 --> 01:40:54,203
+is a sphere
+
+561
+01:40:54,203 --> 01:40:57,003
+centered
+
+562
+01:40:57,003 --> 01:41:00,403
+at
+
+563
+01:41:00,403 --> 01:41:03,163
+m point
+
+564
+01:41:03,163 --> 01:41:04,844
+m1
+
+565
+01:41:04,844 --> 01:41:06,583
+m2 dot dot
+
+566
+01:41:06,583 --> 01:41:08,804
+mn
+
+567
+01:41:08,804 --> 01:41:13,243
+with radius
+
+568
+01:41:13,243 --> 01:41:16,043
+r.
+
+569
+01:41:17,140 --> 01:41:24,320
+En boyutlu uzayda küre. Tabii üç boyutlu uzaydayı çizebiliyoruz. Mesela örnek verelim. A spatial case M3.
+
+570
+01:41:25,060 --> 01:41:36,900
+So this is, in fact, let me write here. So if you write here, so Pm vector. We know that Pm vector, Pm, those are points.
+
+571
+01:41:42,292 --> 01:42:09,752
+M1, X1, X1 minus M1, X2 minus, yani M1, M2 diyebilirsiniz ya da Mp diyebilirsiniz, fark etmez. Şunu şöyle düzelteyim şurayı, burası M olsun arkadaşlar, bakın. Burası fark etmez, Mp olsun. Evet. Değişen bir şey olmayacak ama, daha iyi anlayasınız diye, kafanız karışmasın diye.
+
+572
+01:42:11,604 --> 01:42:14,804
+en boyutlu uzayda küreyi de öğrenmiş oluyorsunuz böylelikle.
+
+573
+01:42:16,244 --> 01:42:17,684
+Evet. Ne oldu arkadaşlar?
+
+574
+01:42:17,884 --> 01:42:19,764
+P, M'yi eşittir R'yi yazacağım.
+
+575
+01:42:20,744 --> 01:42:22,504
+Şurası M, P.
+
+576
+01:42:23,764 --> 01:42:24,284
+Tamam mı arkadaşlar?
+
+577
+01:42:24,524 --> 01:42:31,204
+X1, M1, X2, M2, .
+
+578
+01:42:31,204 --> 01:42:33,764
+Xn, Mn.
+
+579
+01:42:34,644 --> 01:42:35,944
+İşte bunun normu
+
+580
+01:42:36,435 --> 01:42:56,435
+Arkadaşlar, R'yi verecekmiş. Ne demek normunu R'ye? Normunu hesaplayacak olursam ben bunu, 1-m1'in karesi, x2-m2'nin karesi, nokta nokta, xn-m'nin karesi, r kare.
+
+581
+01:42:56,615 --> 01:43:01,575
+Eşitliğin her iki tarafın karesini aldım arkadaşlar. Normalde burada kare kök vardı hatırlarsanız.
+
+582
+01:43:03,604 --> 01:43:11,284
+Ok, if you take this, so we got this equation. So this is the algebraic equation of hypersphere.
+
+583
+01:43:12,503 --> 01:43:29,284
+Ok, now, so everyone knows this. So for example, if you study in the three-dimensional space, so you are given some point, this is center, let's say m1, m2, m3.
+
+584
+01:43:31,123 --> 01:43:34,123
+ve if you secate some sphere here,
+
+585
+01:43:45,268 --> 01:43:47,268
+Okay, so the point that...
+
+586
+01:43:51,475 --> 01:44:06,955
+Bu, bu
+
+587
+01:44:07,060 --> 01:44:34,060
+So, this, okay, so this, this PM, PM vector, as you see, we can write PM or MP. So, let's write MP, MP vector. So, I see, MP vector, the length of MP must be, the length of MP vector must be R. So, if you, if you use this, so this is nothing else than this square root of MP dot MP.
+
+588
+01:44:35,956 --> 01:44:52,356
+R, if you use this, if you expand this dot product, you can, you are going to obtain this x1 minus m1, square plus x2 minus m2, square plus x3 minus m3, square is equal to r square.
+
+589
+01:44:52,536 --> 01:44:57,276
+So this is the equation of sphere in three-dimensional space.
+
+590
+01:44:57,276 --> 01:45:02,196
+Okay, so all points on the sphere holds this equation.
+
+591
+01:45:02,771 --> 01:45:09,412
+Küre üzerindeki bütün noktaları arkadaşlar ne yapar? Bu denklemi sağlar, küre denklemini sağlar.
+
+592
+01:45:10,579 --> 01:45:38,579
+Benzer şekilde 4 boyutlu, 5 boyutlu uzayda tabi cebirsel olarak tanımladık. 4 boyutlu uzayda küre nedir desek gösteremeyiz. 5 boyutlu uzayda küreyi gösterin derlerse gösteremeyiz. Sadece onların dikiz düşünlerini, daha düşük 3 boyutlu, 2 boyutlu uzaylardaki dikiz düşünlerini sadece yorumlayabiliriz. Diğer türlü sadece mantıksal işlemler yapabiliriz. Değil mi arkadaşlar? Biz sadece gördüğüne inananlar değiliz. Aynı zamanda göremediğimiz şeyleri...
+
+593
+01:45:38,579 --> 01:45:44,079
+işaretlerini araştırıp inceleyebiliriz. Mantıken onları görebiliriz. Evet, devam.
+
+594
+01:45:46,220 --> 01:45:51,319
+Is there any question about this dot product? Dot product is very important.
+
+595
+01:46:03,188 --> 01:46:07,827
+Ok, cross product, cross product.
+
+596
+01:46:18,452 --> 01:46:40,332
+Şimdi, bu kısımda
+
+597
+01:46:42,899 --> 01:46:47,459
+So we are going to introduce cross product for three dimensional space.
+
+598
+01:46:47,459 --> 01:46:52,899
+So you are given two vectors in the three dimensional space.
+
+599
+01:46:54,179 --> 01:46:57,420
+U1, U2, U3.
+
+600
+01:47:01,524 --> 01:47:07,324
+ve bir diğer vektör, bir 3-dimeniyse.
+
+601
+01:47:11,188 --> 01:47:13,887
+V1, V2, V3.
+
+602
+01:47:16,208 --> 01:47:18,288
+Okay, let me introduce these definitions.
+
+603
+01:47:19,908 --> 01:47:21,088
+So, u cross,
+
+604
+01:47:23,788 --> 01:47:25,668
+u cross v,
+
+605
+01:47:27,268 --> 01:47:30,387
+u veç ve, some people use veç notation,
+
+606
+01:47:30,387 --> 01:47:32,908
+so some people use this notation,
+
+607
+01:47:33,387 --> 01:47:36,028
+this, u veç ve.
+
+608
+01:47:37,076 --> 01:47:52,675
+But I generally prefer to use this cross, u cross b. So this is just definition, this is not true, in fact. So let me put here, let me put here some absolute notation, determinate notation.
+
+609
+01:47:53,496 --> 01:48:03,855
+But if you study linear algebra, but this kind of notation, in fact, is not true. But in order to illustrate this definition,
+
+610
+01:48:29,268 --> 01:48:44,027
+Koordinatel U-vektörs, here in the second row, U1, U2, U3, and in the final row, we write koordinatel V-coordinatel V1,
+
+611
+01:48:44,500 --> 01:48:49,019
+V2, V3. Bu, just notation. Bu, just definition.
+
+612
+01:48:49,819 --> 01:48:57,559
+Okay, so now let me write here. So, this is just notation. Okay, in order to memorize this definition.
+
+613
+01:48:59,340 --> 01:49:05,420
+Okay, now, so, first of all, we need to obtain, okay, we need to obtain some vector.
+
+614
+01:49:05,420 --> 01:49:10,659
+This is vector, this is vector, and the cross product results in some vector.
+
+615
+01:49:11,252 --> 01:49:14,752
+Ok, result is a vector, not scalar.
+
+616
+01:49:16,152 --> 01:49:23,052
+Now, so first of all, we ignore the first row, first column.
+
+617
+01:49:23,972 --> 01:49:26,752
+Ok, ignore the first row, first column.
+
+618
+01:49:27,512 --> 01:49:32,912
+So we write here, minus 1, 2, first row, the first column.
+
+619
+01:49:33,352 --> 01:49:37,632
+Ok, so we need to obtain sign of this.
+
+620
+01:49:38,804 --> 01:49:50,824
+Bu, bu, just definition, times, ok, compute determinate of the resting matrix U2, U3, V2, V3.
+
+621
+01:49:51,744 --> 01:49:57,544
+And, so look at this interception vector here, let me use different color here.
+
+622
+01:49:59,463 --> 01:50:04,264
+Ok, just use this i, ok, so we put here i.
+
+623
+01:50:06,003 --> 01:50:09,463
+Şimdi, let's go on, let's try to obtain second component.
+
+624
+01:50:10,223 --> 01:50:18,263
+Now, in order to compute second component, first of all, again, we need to compute the sine minus 1 to,
+
+625
+01:50:19,343 --> 01:50:31,263
+okay, the first row and second column here, minus 1 to the first row plus the second column times,
+
+626
+01:50:32,819 --> 01:50:49,920
+So, compute resting matrix. So, in that case, determinate of resting matrix, u1, u3, and v1, v3. Is that correct? And times, let me use this color here. Okay, we can use this.
+
+627
+01:50:55,188 --> 01:50:58,588
+So we put J here.
+
+628
+01:51:00,588 --> 01:51:09,688
+And plus, so again, we first open sign, minus 1 to 1 plus the first row.
+
+629
+01:51:11,088 --> 01:51:14,008
+And let me use different color here.
+
+630
+01:51:15,688 --> 01:51:19,688
+The first row and the final column.
+
+631
+01:51:20,500 --> 01:51:44,640
+ve 3rd column, bu, times, ok, if we ignore the first row and the final column and compute the resting, determinate the resting, metics u1, u2, v1, v2, and focus on the, this interception, vector k.
+
+632
+01:51:45,300 --> 01:51:48,860
+Evet, aslında bu konuda bir konuda,
+
+633
+01:51:48,860 --> 01:51:53,180
+bu konuda bir konuda,
+
+634
+01:51:53,180 --> 01:51:55,180
+bu konuda bir konuda.
+
+635
+01:51:55,180 --> 01:51:58,180
+Bu konuda bir konuda?
+
+636
+01:51:58,180 --> 01:52:01,868
+Bu konuda bir konuda.
+
+637
+01:52:02,260 --> 01:52:28,520
+So we can write here, so coefficients, so we can write, this is always positive, okay, here positive, so we got minus sign here, and so this is positive here, let me use here, okay, let me use another notation, I do not prefer to use this notation, I prefer to use this notation, so I just write here, so this notation, okay, Taylor notation, but
+
+638
+01:52:28,948 --> 01:52:30,828
+Let me use another notation.
+
+639
+01:52:31,688 --> 01:52:39,188
+So, I put some, okay, so I prefer to use this notation.
+
+640
+01:52:39,608 --> 01:52:48,648
+We write this U1, U2, U3, V1, V2, V3.
+
+641
+01:52:48,648 --> 01:52:50,928
+So, I put directly here.
+
+642
+01:52:51,508 --> 01:52:54,248
+So, plus, so, plus.
+
+643
+01:52:54,771 --> 01:53:19,791
+Minus, plus, I put this coefficient here, as you see, here, then, so, just right here, so, so, if you ignore the first column and this, okay, u2 times v3 minus v2 times u3, and just compute second.
+
+644
+01:53:22,228 --> 01:53:39,667
+Component, ok, ignore this, and compute this and this. Coefficient is minus here, so minus u1 times v3 minus v1 times u3, and
+
+645
+01:53:41,492 --> 01:53:45,252
+Ok, let's compute the final component of cross product.
+
+646
+01:53:45,252 --> 01:53:48,731
+So, we ignore the final component here.
+
+647
+01:53:49,172 --> 01:53:54,431
+So, in that case, so, we do these operations.
+
+648
+01:53:54,971 --> 01:54:08,252
+So, the coefficient of this operation, ok, plus u1 times u1 times v2 minus v1 times u2.
+
+649
+01:54:08,979 --> 01:54:21,099
+Okay, so I think this is simply, more simple than the former notation. Okay, dikkat edin arkadaşlar, ben daha hızlı yapmak için bunu kullanıyorum. Example, example.
+
+650
+01:54:36,372 --> 01:54:39,712
+plus j plus k.
+
+651
+01:54:40,692 --> 01:54:43,812
+So, just compute u cross v
+
+652
+01:54:43,812 --> 01:54:46,412
+vector. So, I prefer to use
+
+653
+01:54:46,412 --> 01:54:49,212
+this notation. One, two, three,
+
+654
+01:54:50,032 --> 01:54:52,532
+minus one, one, one.
+
+655
+01:54:52,712 --> 01:54:54,432
+Okay, first of all, let me put this
+
+656
+01:54:55,347 --> 01:55:20,807
+Ok, notation plus, minus, plus. Ok, let me open parenthesis for vector components. Ok, now, so ignore this part. And so 2 times 1 minus 3 times 1. And let's compute second component. For second component, we ignore the second column. So in that case, we compute this.
+
+657
+01:55:21,395 --> 01:55:28,235
+So, but, co-efficient is minus, minus, okay, 1 times 1 minus 3 times minus 1.
+
+658
+01:55:28,956 --> 01:55:31,496
+Okay, now compute the final component.
+
+659
+01:55:32,595 --> 01:55:34,336
+Let me use black color here.
+
+660
+01:55:34,735 --> 01:55:46,055
+So, if you ignore the final component and compute this product, okay, the co-efficient is plus, okay, you don't need to put parentheses here.
+
+661
+01:55:47,283 --> 01:55:54,403
+Now, so 1 times 1, minus minus 1 times 2.
+
+662
+01:55:55,243 --> 01:55:55,524
+Okay.
+
+663
+01:55:56,264 --> 01:55:59,483
+Now, so the cross product minus 1.
+
+664
+01:55:59,703 --> 01:56:03,104
+So here, 4 minus 4.
+
+665
+01:56:03,583 --> 01:56:04,123
+Is that correct?
+
+666
+01:56:04,783 --> 01:56:05,923
+Here, 3.
+
+667
+01:56:08,863 --> 01:56:10,163
+Okay, this is cross product.
+
+668
+01:56:10,163 --> 01:56:13,703
+In terms of unit vectors, minus i.
+
+669
+01:56:14,100 --> 01:56:15,800
+Minus 4C
+
+670
+01:56:15,800 --> 01:56:18,580
+and 3K
+
+671
+01:56:18,580 --> 01:56:22,380
+İzerenin kuyu için
+
+672
+01:56:22,380 --> 01:56:31,180
+anlaşıldı herhalde. Evet, herkes bir tane örnek yapsın, pekiştirsin. Bekliyorum. Bir tane daha örnek veriyorum.
+
+673
+01:57:00,948 --> 01:57:01,368
+Evet.
+
+674
+01:57:10,068 --> 01:57:33,908
+Item A, compute u dot v. Item B, compute u cross v. Item C, verify if u cross v is perpendicular.
+
+675
+01:57:48,243 --> 01:57:48,724
+Okey.
+
+676
+01:57:50,743 --> 01:57:51,823
+Evet, herkes yattın bakalım.
+
+677
+01:57:53,043 --> 01:57:56,503
+Bekliyorum. Basit bir örnek konuyu özetliyor arkadaşlar.
+
+678
+01:58:00,659 --> 01:58:18,000
+A şıkkında nokta çarpım, B şıkkında vektörel çarpım veya kros çarpım, C şıkkında U vektörel V çarpımın, U ve V'nin vektörel çarpımının hem U'ya hem V'ye dik olup olmadığını teyit ediniz.
+
+679
+01:58:23,699 --> 01:58:26,340
+Bir ara verelim arkadaşlar. 5 dakika ara olsun.
+
+680
+01:58:28,279 --> 01:58:28,699
+Tamam mı?
+
+681
+02:05:50,260 --> 02:05:50,600
+Ok.
+
+682
+02:05:57,555 --> 02:06:00,375
+I think item A is very easy.
+
+683
+02:06:02,635 --> 02:06:06,195
+So let's do item A. Item A is very easy.
+
+684
+02:06:07,535 --> 02:06:20,695
+1 times 1, u dot product v, 1 times 1, minus 3 times 2, plus, oh sorry, we made mistake.
+
+685
+02:06:23,395 --> 02:06:24,875
+1 times 1.
+
+686
+02:06:25,876 --> 02:06:50,496
+plus 0 times 2, plus minus 3 times 2. The answer is minus 5. So as you see, we got some scalar numbers. So item B, so we need to do cross product. So let me write U cross B vector product.
+
+687
+02:06:50,899 --> 02:06:52,819
+Let me use this notation.
+
+688
+02:06:53,119 --> 02:06:58,719
+The coordinate of u, so 1, 0, minus 3.
+
+689
+02:06:58,719 --> 02:07:04,359
+The coordinate of v-vector, 1, 2, and 2.
+
+690
+02:07:05,219 --> 02:07:10,119
+Okay, so let's put these signs.
+
+691
+02:07:13,119 --> 02:07:16,679
+So, plus, minus, plus.
+
+692
+02:07:18,707 --> 02:07:34,487
+So, if you ignore the first row, so first column, sorry, and just compute this, and 0 minus 2 times minus 3, okay?
+
+693
+02:07:34,487 --> 02:07:40,395
+You don't need to put this parenthesis here, and minus...
+
+694
+02:07:41,876 --> 02:07:54,615
+Let me use black color here, just ignore second column, and this, 1 times 2 minus 1 times minus 3.
+
+695
+02:07:55,975 --> 02:07:57,155
+Okay, is that correct?
+
+696
+02:07:59,895 --> 02:08:04,775
+So let's use different color here, let's use blue color.
+
+697
+02:08:05,775 --> 02:08:08,376
+So ignore this, in that case,
+
+698
+02:08:09,939 --> 02:08:15,720
+Coefficient is plus, attention here, 1 times 2 minus 1 times 0.
+
+699
+02:08:17,439 --> 02:08:27,720
+And the answer is 6 and minus 5 and 2.
+
+700
+02:08:28,199 --> 02:08:35,519
+Okay, so you can write this 6 times i minus 5 times j.
+
+701
+02:08:36,692 --> 02:08:38,952
+plus 2 times k.
+
+702
+02:08:39,851 --> 02:08:40,112
+Okay.
+
+703
+02:08:40,811 --> 02:08:41,391
+Now,
+
+704
+02:08:42,652 --> 02:08:44,252
+let's verify
+
+705
+02:08:44,252 --> 02:08:47,012
+whether this u cross v
+
+706
+02:08:47,012 --> 02:08:50,472
+u cross v
+
+707
+02:08:50,472 --> 02:08:52,931
+is perpendicular to
+
+708
+02:08:52,931 --> 02:08:55,212
+u.
+
+709
+02:08:56,431 --> 02:08:58,212
+Okay. In order to
+
+710
+02:08:58,212 --> 02:09:01,052
+check out this,
+
+711
+02:09:01,052 --> 02:09:02,052
+we need to
+
+712
+02:09:06,515 --> 02:09:10,895
+Check out dot product of u cross v and u.
+
+713
+02:09:12,135 --> 02:09:18,395
+Is this dot product zero, then we can say that those are perpendicular to each other.
+
+714
+02:09:19,195 --> 02:09:32,175
+Okay, now so u cross v, u cross v here, so we can write this 6 minus 5, 2, dot product u.
+
+715
+02:09:33,108 --> 02:09:42,707
+Let me write u coordinates of u. 1, 0, minus 3. So just apply that product definition here.
+
+716
+02:09:45,007 --> 02:09:58,927
+So 6 times 1 minus minus, plus minus 5 times 0, plus 2 times minus 6. Is that correct? Yes, that's true. So as you see, that's true.
+
+717
+02:10:00,000 --> 02:10:01,640
+V'ye ortakonel to U.
+
+718
+02:10:02,519 --> 02:10:03,119
+Similarly,
+
+719
+02:10:03,559 --> 02:10:05,739
+you can see that
+
+720
+02:10:05,739 --> 02:10:09,260
+U'ye ortakonel to V.
+
+721
+02:10:09,939 --> 02:10:11,979
+Okay, similarly you can show that.
+
+722
+02:10:12,640 --> 02:10:14,239
+So let me introduce
+
+723
+02:10:14,239 --> 02:10:15,159
+properties.
+
+724
+02:10:16,599 --> 02:10:17,319
+Properties.
+
+725
+02:10:29,332 --> 02:10:31,132
+Properties of cross product.
+
+726
+02:10:32,572 --> 02:10:43,412
+The first rule, u cross v is equal to minus v cross u.
+
+727
+02:10:43,972 --> 02:10:47,232
+So you may see this property, you may verify this is true.
+
+728
+02:10:47,232 --> 02:10:48,692
+Look at this definition.
+
+729
+02:10:50,012 --> 02:10:53,592
+So look at this definition here.
+
+730
+02:10:54,752 --> 02:10:56,632
+Okay, if replace their position,
+
+731
+02:10:57,460 --> 02:11:04,880
+So you are going to obtain some minus factor as multiple of v cross u.
+
+732
+02:11:04,880 --> 02:11:06,820
+Okay, now second rule.
+
+733
+02:11:08,360 --> 02:11:13,380
+So if you substitute u is equal to v in the first rule.
+
+734
+02:11:18,739 --> 02:11:27,579
+Okay, now here you are going to obtain zero. So zero vector, not zero scalar. So this is the spatial case.
+
+735
+02:11:37,363 --> 02:11:38,163
+Okay, here.
+
+736
+02:11:39,883 --> 02:11:46,963
+So, in that case, u 2 times u cross u 0 vector.
+
+737
+02:11:47,283 --> 02:11:54,983
+So, this results in u cross u vector 0 vector.
+
+738
+02:11:55,163 --> 02:12:00,043
+Bir vektörü kendisi'li çarpıma tabi, şey, vektörü çarpıma tabi tutarsanız sonuç 0 vektör olur.
+
+739
+02:12:06,036 --> 02:12:18,916
+v-vektör, is zero-vektör, if u is equal to lambda times v.
+
+740
+02:12:20,076 --> 02:12:25,096
+Lambda, okay, lambda may be zero-vektör, doesn't matter, okay.
+
+741
+02:12:28,056 --> 02:12:31,916
+Okay, so this is generalization of the second rule here.
+
+742
+02:12:34,355 --> 02:12:37,615
+You can also prove this by using definition.
+
+743
+02:12:39,695 --> 02:12:41,055
+Lambda sum scalar.
+
+744
+02:12:43,055 --> 02:12:43,815
+Okay.
+
+745
+02:12:44,775 --> 02:12:45,675
+The third rule,
+
+746
+02:12:48,916 --> 02:12:52,416
+Lambda times, sorry, u times u cross
+
+747
+02:12:52,416 --> 02:12:56,655
+v plus
+
+748
+02:12:56,655 --> 02:13:00,076
+w, you are given three vectors.
+
+749
+02:13:00,627 --> 02:13:05,148
+So, cross product is distributive.
+
+750
+02:13:14,323 --> 02:13:16,484
+Ok, now we got this.
+
+751
+02:13:32,340 --> 02:13:34,119
+Ok, let's go on.
+
+752
+02:13:35,020 --> 02:13:35,760
+U
+
+753
+02:13:35,760 --> 02:13:39,100
+Dot
+
+754
+02:13:39,100 --> 02:14:05,091
+U
+
+755
+02:13:42,836 --> 02:13:44,596
+V cross
+
+756
+02:13:44,596 --> 02:13:46,576
+W
+
+757
+02:13:46,576 --> 02:13:48,996
+is equal to determinant
+
+758
+02:13:48,996 --> 02:13:52,096
+of U
+
+759
+02:13:52,096 --> 02:13:53,256
+V
+
+760
+02:13:53,256 --> 02:13:54,336
+W.
+
+761
+02:13:54,895 --> 02:13:55,935
+Okay, look at here.
+
+762
+02:13:56,296 --> 02:13:57,655
+So, this is vector.
+
+763
+02:13:58,076 --> 02:13:58,615
+Let me
+
+764
+02:13:58,615 --> 02:14:00,636
+use different color.
+
+765
+02:14:00,796 --> 02:14:05,956
+This is vector.
+
+766
+02:14:07,555 --> 02:14:08,676
+Oh, sorry.
+
+767
+02:14:18,612 --> 02:14:20,032
+Nereye gittik biz ya?
+
+768
+02:14:21,532 --> 02:14:22,631
+Elim kaydı arkadaşlar.
+
+769
+02:14:22,791 --> 02:14:23,451
+Kusura bakmayın.
+
+770
+02:14:26,996 --> 02:14:27,255
+Evet.
+
+771
+02:14:31,956 --> 02:14:33,555
+Evet, bayağı dağınıp çalıştığından.
+
+772
+02:14:46,323 --> 02:14:47,843
+Biz buraları geçmedik mi ya?
+
+773
+02:14:50,283 --> 02:14:52,883
+Kayboldu resmen ya sayfada.
+
+774
+02:15:01,076 --> 02:15:02,515
+Silindi resmen ya.
+
+775
+02:15:08,595 --> 02:15:24,355
+Aşağıda mı kal? Aşağıya inmiyor. İndiremedim. Aşağıya çekiyorum. Silinmiş. Elim mi dokundu bir yere? Neyse. Tuvaletemizle diyeyim. Kafam karışmasın. Kaldığımızı biliyoruz. Tamam.
+
+776
+02:15:37,460 --> 02:16:02,859
+V plus W, so V cross, sorry, not V cross W. So this is vector, this is vector, this is vector, and results in a vector. So this is vector, results in, because of this dot product, this is scalar.
+
+777
+02:16:04,851 --> 02:16:27,231
+Okay, so we can write here, determinant U, V, W. You can show this, you can prove this. So what does it mean, determinant of U, V? The coordinate of U, U1, U2. First of all, we write coordinate of U, U vector, U3. So V1.
+
+778
+02:16:28,467 --> 02:16:30,367
+v2, v3.
+
+779
+02:16:31,087 --> 02:16:34,108
+And finally, we write the coordinate of v-vector
+
+780
+02:16:34,108 --> 02:16:37,347
+w1, w2, w3.
+
+781
+02:16:37,987 --> 02:16:42,868
+So this is a determinant of 3 cross 3 type matrix.
+
+782
+02:16:43,507 --> 02:16:46,327
+So how can we compute determinant of this?
+
+783
+02:16:46,327 --> 02:16:48,048
+So by Saru's rule.
+
+784
+02:16:50,448 --> 02:16:51,788
+So let me write here.
+
+785
+02:16:51,868 --> 02:16:53,167
+First of all, we write.
+
+786
+02:17:21,268 --> 02:17:25,507
+V1, W2, U3.
+
+787
+02:17:26,227 --> 02:17:28,548
+And the product of these terms,
+
+788
+02:17:29,987 --> 02:17:33,907
+W1, U2, V3.
+
+789
+02:17:34,327 --> 02:17:37,167
+And just add those opt-in results.
+
+790
+02:17:37,427 --> 02:17:38,388
+Okay, write some.
+
+791
+02:17:40,347 --> 02:17:41,448
+Write some.
+
+792
+02:17:41,548 --> 02:17:42,227
+Let me write here.
+
+793
+02:17:42,288 --> 02:17:42,907
+Write some.
+
+794
+02:17:43,388 --> 02:17:46,227
+Okay, let's use different color here.
+
+795
+02:17:47,443 --> 02:18:13,043
+So, product of these terms, w1, v2, u3, and product of these terms, u1, w2, v3, and product of these terms, v1, u2, w3, and left sum.
+
+796
+02:18:13,043 --> 02:18:14,984
+So, let's say this is left sum.
+
+797
+02:18:17,620 --> 02:18:28,360
+And this determinant, by Saru's rule, right sum, right sum, minus left sum.
+
+798
+02:18:30,520 --> 02:18:32,460
+Okay, so by Saru's rule.
+
+799
+02:18:39,252 --> 02:18:46,252
+Tamam, şimdi, şimdi, şimdi,
+
+800
+02:18:46,252 --> 02:18:54,952
+Şimdi,
+
+801
+02:18:52,275 --> 02:18:53,155
+Final Rule
+
+802
+02:18:57,427 --> 02:19:14,007
+U cross V is a vector, is a vector which is, which is perpendicular.
+
+803
+02:19:19,507 --> 02:19:24,299
+...
+
+804
+02:19:27,724 --> 02:19:36,724
+2,
+
+805
+02:19:27,316 --> 02:19:29,736
+ya da d demeyelim, e demek yeterli.
+
+806
+02:19:31,296 --> 02:19:32,636
+Birden fazla düzen olabilir.
+
+807
+02:19:32,836 --> 02:19:34,896
+A plane, on which
+
+808
+02:19:40,551 --> 02:19:44,551
+2,
+
+809
+02:19:39,700 --> 02:19:42,680
+On which you and we
+
+810
+02:19:47,132 --> 02:19:58,132
+2,
+
+811
+02:19:46,195 --> 02:19:56,655
+Biliyor muy? Okey. Demek ki u ile v'yi vektörel çarpım yaparsak elde ettiğimiz sonuç, u ve v'yi üzerinde barındıran yüzleme bir dik vektördür.
+
+812
+02:19:56,796 --> 02:20:09,596
+So what does it mean? So suppose that given two vectors not ko-linear, ko-linear means u and v, u is not multiple of v, okey.
+
+813
+02:20:12,531 --> 02:20:26,151
+Ok, so u v, so let me, this, so, so this is plane, on which u and v lives.
+
+814
+02:20:32,180 --> 02:20:37,500
+Okay, I think this is better. Şöyle yapalım arkadaşlar, bir dakika, şöyle daha güzel olur, daha iyi anlarsınız.
+
+815
+02:20:40,680 --> 02:20:44,080
+Okay, first of all, okay.
+
+816
+02:20:46,360 --> 02:20:48,120
+So, let's say this is u.
+
+817
+02:20:50,120 --> 02:20:52,000
+Let's say this is v vector.
+
+818
+02:20:54,740 --> 02:20:57,840
+So, consider some, here, some play.
+
+819
+02:20:58,388 --> 02:21:01,328
+On which our vectors live
+
+820
+02:21:07,443 --> 02:21:08,603
+U x V
+
+821
+02:21:12,819 --> 02:21:19,000
+Okay, you may write, so, the reverse direction, u cross v.
+
+822
+02:21:20,039 --> 02:21:23,259
+So, u cross v is perpendicular to both of them.
+
+823
+02:21:23,699 --> 02:21:23,840
+Okay.
+
+824
+02:21:25,079 --> 02:21:39,840
+That's why u cross v, so this implies that u cross v, u cross v is perpendicular to every vector, every vector on the plane.
+
+825
+02:21:40,371 --> 02:21:40,891
+Ok.
+
+826
+02:21:42,651 --> 02:21:44,551
+Obtained by U and V.
+
+827
+02:21:45,412 --> 02:21:50,691
+U ve V'nin üzerinde yaşadığı, düzlemin üzerindeki her vektöre dik olur arkadaşlar.
+
+828
+02:21:51,291 --> 02:21:51,592
+Tamam mı?
+
+829
+02:21:52,151 --> 02:21:52,631
+Yani ok.
+
+830
+02:21:52,851 --> 02:21:55,791
+For example, you got some point here.
+
+831
+02:21:56,891 --> 02:21:59,651
+So, let's write here P.
+
+832
+02:21:59,791 --> 02:22:01,131
+Let's say this is A.
+
+833
+02:22:01,131 --> 02:22:03,592
+So, AP vektör.
+
+834
+02:22:04,404 --> 02:22:07,844
+ve vektör ve vektör ve vektör, aynı zamanda.
+
+835
+02:22:18,195 --> 02:22:21,155
+Tamam, şimdi, birinci bir rule, birinci bir rule.
+
+836
+02:22:25,075 --> 02:22:34,355
+The length of u vector, u cross v vector, is equal to
+
+837
+02:22:38,388 --> 02:22:43,927
+The product of the length of u and v times sine theta.
+
+838
+02:22:46,328 --> 02:22:49,148
+Okay, so this is very important.
+
+839
+02:22:52,852 --> 02:23:02,292
+Geometrik interpretasyon,
+
+840
+02:23:08,115 --> 02:23:08,655
+Bu atas.
+
+841
+02:23:15,156 --> 02:23:17,636
+Ok, so give us some...
+
+842
+02:23:23,379 --> 02:23:28,719
+A point, let's say this is a point, not vector, attention here.
+
+843
+02:23:29,639 --> 02:23:36,219
+So, let's say this is a point, so we study in the three-dimensional space, okay.
+
+844
+02:23:37,159 --> 02:23:38,859
+Now, so we got...
+
+845
+02:23:46,484 --> 02:23:51,743
+Ok, we got three points in the three-dimensional space, let me write here.
+
+846
+02:23:57,459 --> 02:24:00,519
+X, Y, Z.
+
+847
+02:24:03,199 --> 02:24:05,459
+Now, how can we...
+
+848
+02:24:07,139 --> 02:24:07,459
+So,
+
+849
+02:24:07,979 --> 02:24:15,119
+if you are given two points in the two-dimensional space, you are going to obtain some line.
+
+850
+02:24:15,719 --> 02:24:16,039
+Okay.
+
+851
+02:24:17,379 --> 02:24:19,059
+Line passing through.
+
+852
+02:24:24,915 --> 02:24:27,295
+A and B points.
+
+853
+02:24:27,815 --> 02:24:29,635
+Those are points, attention here.
+
+854
+02:24:31,495 --> 02:24:33,556
+Okay, so compute,
+
+855
+02:24:34,275 --> 02:24:37,275
+compute the distance,
+
+856
+02:24:37,995 --> 02:24:46,675
+distance of P to the line.
+
+857
+02:24:47,895 --> 02:24:51,015
+Okay, so your goal is to compute
+
+858
+02:24:51,891 --> 02:24:55,471
+bu point P, bu point I.
+
+859
+02:24:55,471 --> 02:24:57,471
+Let's say this is L.
+
+860
+02:24:57,471 --> 02:24:59,471
+So how can we compute?
+
+861
+02:25:00,231 --> 02:25:08,667
+Nasıl hesaplarız?
+
+862
+02:25:14,611 --> 02:25:27,811
+Düşünün bakayım, nasıl hesaplarız sizce? 3 boyut uzayda çalışıyorsunuz. Bir noktanın doğru yolağın uzaklığı. Lisede gösterdiler mi size bunu anantik yönetimde? Böyle bir şey görmediniz değil mi?
+
+863
+02:25:35,443 --> 02:25:40,583
+Üç boyut uzayda mı gördünüz? İki boyut uzayda mı?
+
+864
+02:25:46,579 --> 02:25:48,619
+İki boyut, üç boyutta çalışıyoruz biz.
+
+865
+02:25:51,540 --> 02:25:57,639
+İşte o formülün elde edilişi, iki boyutta da bir formülle direkt formülün çıkartılışını gösterdiler mi bilmiyorum.
+
+866
+02:25:58,399 --> 02:25:59,899
+Göstermeleri lazım normalde.
+
+867
+02:26:01,299 --> 02:26:05,520
+Formülü arkadaşlar, herkes ezberler. Önemli olan formülün çıkartılışı.
+
+868
+02:26:05,520 --> 02:26:07,079
+Tamam, nasıl birleştirilir?
+
+869
+02:26:10,675 --> 02:26:17,435
+So we obtain AB vector. So let me write here. So let's say this is
+
+870
+02:26:23,891 --> 02:26:28,072
+Let's say this is C. So this is interception point A, C.
+
+871
+02:26:31,763 --> 02:26:36,223
+Okay, now, so you can obtain this AC vector.
+
+872
+02:26:46,579 --> 02:27:03,600
+So, AP vector, we can obtain AP vector. So, this is AC vector. Can you see that? AC vector. So, we got some theta angle here. So, the L is nothing else than AP.
+
+873
+02:27:08,659 --> 02:27:14,200
+AP norm, AP vector norm, times sine theta.
+
+874
+02:27:16,520 --> 02:27:18,020
+Is that correct?
+
+875
+02:27:18,920 --> 02:27:34,920
+So, we know also that AP cross AC, norm of AP and AC, AP cross AC, AP vector,
+
+876
+02:27:36,595 --> 02:28:03,475
+times ac vector, times sine theta. So we are looking for ap times sine theta, which is the distance of p to the line. Okay, now, so l is nothing else than the cross of the norm of ap cross ac over
+
+877
+02:28:05,971 --> 02:28:07,652
+AC, ok?
+
+878
+02:28:11,667 --> 02:28:12,667
+Evet.
+
+879
+02:28:12,667 --> 02:28:14,667
+Şimdi bu.
+
+880
+02:28:20,948 --> 02:28:31,828
+Gördünüz mü arkadaşlar? Oradaki uzaklığı ben hesaplayabiliyorum. Yani bir noktanın uzayda doğruya olan uzaklığını vektörer çarpım yardımıyla hesaplayabilirsiniz.
+
+881
+02:28:32,927 --> 02:28:35,087
+Evet, var mı sorusu olan izlenenikoy için?
+
+882
+02:28:40,404 --> 02:28:46,224
+Okay, next, next geometric interpretation.
+
+883
+02:28:53,492 --> 02:28:54,972
+Let's say this is you.
+
+884
+02:28:59,316 --> 02:29:03,136
+Let's say this is V vector.
+
+885
+02:29:03,136 --> 02:29:10,416
+So, you are going to obtain some parallelogram region.
+
+886
+02:29:14,675 --> 02:29:17,995
+So, how can we compute area of this parallelogram region?
+
+887
+02:29:20,155 --> 02:29:32,396
+So, this is, let's say this is h, the area of this parallelogram region, area of this parallelogram region, corresponding to given u and v vector.
+
+888
+02:29:33,195 --> 02:29:41,415
+So, area, the h times, h times the norm of v.
+
+889
+02:29:41,940 --> 02:30:06,940
+Can we write this? Yes, we can write this. Suppose that the angle between u and v is theta, and we know that h is equal to u norm, the norm of u times sine theta. Is that correct? Now by substituting this, u...
+
+890
+02:30:09,299 --> 02:30:14,559
+Norm times v norm times sine theta.
+
+891
+02:30:15,559 --> 02:30:22,759
+Ok, so we suppose that theta is between 0 and pi.
+
+892
+02:30:23,539 --> 02:30:25,899
+Yani 0 ile 90 arasında kabul edersiniz arkadaşlar.
+
+893
+02:30:26,099 --> 02:30:31,119
+Şeyi kabul ederseniz, yani o da olur, 180 kabul etseniz de olur, sıkıntı olmaz.
+
+894
+02:30:31,819 --> 02:30:34,519
+0 ile 180 arasında da olur, fark etmiyor. Pozitif yani.
+
+895
+02:30:34,927 --> 02:30:45,628
+Tamam, şimdi, bu hep pozitif. We suppose that theta is between 0 and pi. Şunlar yok arkadaşlar, eşitlik olmasın.
+
+896
+02:30:47,628 --> 02:31:00,867
+Tamam, şimdi, bu konuda, bu konuda, bunun arkadaşlar, normu. Buradan başka bir şey değildiniz.
+
+897
+02:31:01,620 --> 02:31:04,720
+u x v
+
+898
+02:31:04,720 --> 02:31:08,540
+norm
+
+899
+02:31:08,540 --> 02:31:11,680
+area.
+
+900
+02:31:14,079 --> 02:31:15,200
+Can you see that?
+
+901
+02:31:16,240 --> 02:31:17,799
+The norm of u x v
+
+902
+02:31:17,799 --> 02:31:20,240
+is nothing else than area or parallelogram
+
+903
+02:31:20,240 --> 02:31:22,639
+corresponding to given u and v.
+
+904
+02:31:23,240 --> 02:31:24,700
+So, for example,
+
+905
+02:31:25,579 --> 02:31:28,340
+example,
+
+906
+02:31:29,907 --> 02:31:34,148
+So, given, given 3 points,
+
+907
+02:31:37,971 --> 02:31:53,912
+A, 1, minus 1, 2, B, 2, 1, minus 1, C, 0, 1, 2.
+
+908
+02:31:56,432 --> 02:32:02,131
+Then, item A, investigate.
+
+909
+02:32:11,924 --> 02:32:33,784
+whether these points, these points, yields, yield, sorry, yield a triangle, or not, in a three-dimensional space.
+
+910
+02:32:38,100 --> 02:32:45,540
+Bu üç noktanın bir üçgen oluşturup oluşturmadığını inceleyiniz.
+
+911
+02:32:46,659 --> 02:32:47,819
+Üç boyutlu uzayda.
+
+912
+02:32:51,763 --> 02:33:06,984
+If yes, then compute the area of this triangle.
+
+913
+02:33:06,984 --> 02:33:08,923
+Triangle.
+
+914
+02:33:11,063 --> 02:33:12,603
+Evet.
+
+915
+02:33:13,984 --> 02:33:14,563
+Ne yapacağız?
+
+916
+02:33:15,443 --> 02:33:16,484
+Solution.
+
+917
+02:33:18,304 --> 02:33:18,543
+So.
+
+918
+02:33:19,379 --> 02:33:26,419
+So if you are on the same line, we cannot say, okay, so this yields yield a triangle.
+
+919
+02:33:27,159 --> 02:33:32,360
+So in order to manage this, so you don't need to sketch some coordinate system.
+
+920
+02:33:32,360 --> 02:33:35,439
+So let me write any point.
+
+921
+02:33:35,639 --> 02:33:40,279
+So A, B, and C.
+
+922
+02:33:41,360 --> 02:33:42,360
+So just...
+
+923
+02:33:42,739 --> 02:33:50,419
+So, those are points, attention here, not vectors, points, c.
+
+924
+02:33:50,719 --> 02:33:58,879
+So, we need to make some vectors, a, b vectors, so we can write this a, b vector.
+
+925
+02:34:00,259 --> 02:34:03,439
+Let's obtain this a, c vector.
+
+926
+02:34:04,139 --> 02:34:05,520
+Okay, so a, c vector.
+
+927
+02:34:08,979 --> 02:34:28,220
+Now, if you are on the same line, A, B, C, AB vector, so in that case, AC vector, and AC vector here, AC vector, are koordinat.
+
+928
+02:34:28,691 --> 02:34:30,871
+are co-linear.
+
+929
+02:34:31,371 --> 02:34:32,711
+So what does it mean co-linear?
+
+930
+02:34:33,471 --> 02:34:36,951
+So AC is equal to lambda times AB.
+
+931
+02:34:37,231 --> 02:34:38,371
+So we can obtain this.
+
+932
+02:34:39,331 --> 02:34:42,271
+So in that case, you cannot obtain some triangle.
+
+933
+02:34:42,491 --> 02:34:47,511
+This means that the angle between AB and AC, 0 or pi.
+
+934
+02:34:47,511 --> 02:34:48,031
+Okay.
+
+935
+02:34:48,691 --> 02:34:53,131
+And AB ile AC arasındaki açı, arkadaşlar, ne olacak?
+
+936
+02:34:53,271 --> 02:34:55,511
+Ya sıfır, ya da...
+
+937
+02:34:55,631 --> 02:35:02,271
+ne olacak? P olacak. O zaman benim işime yaramıyor. Zaten sinüs 0 ile sinüs P sıfırdı.
+
+938
+02:35:02,271 --> 02:35:22,752
+Okay, now consider this. The area of this triangle here. So area of this triangle, 1 over 2 times the normal AB.
+
+939
+02:35:24,564 --> 02:35:26,564
+A'C'e.
+
+940
+02:35:28,363 --> 02:35:30,783
+Şimdi bu.
+
+941
+02:35:31,584 --> 02:35:37,863
+Bu bir 0.
+
+942
+02:35:37,940 --> 02:35:43,159
+This means that the angle between AB and AC is either 0 or pi.
+
+943
+02:35:43,579 --> 02:35:46,040
+So let's compute AB cross AC.
+
+944
+02:35:46,639 --> 02:35:49,540
+So first of all, we need to compute AB vector.
+
+945
+02:35:49,779 --> 02:35:52,900
+So we know that AB vector OB minus OA.
+
+946
+02:35:54,200 --> 02:35:56,020
+So OB minus OA.
+
+947
+02:35:56,959 --> 02:35:58,239
+So 2 minus 1.
+
+948
+02:35:59,819 --> 02:36:01,100
+1 minus 1.
+
+949
+02:36:01,239 --> 02:36:02,560
+1 minus minus 1.
+
+950
+02:36:03,572 --> 02:36:11,492
+ve, minus 1, minus 2, so 1, 2, minus 3. Is there any calculation error?
+
+951
+02:36:12,391 --> 02:36:28,592
+So, ac vector, so ac vector, we know that, orc vector minus ora vector, so orc, 0 minus 1, minus 1, if I write directly, 1 minus minus 1, 2.
+
+952
+02:36:30,131 --> 02:36:33,031
+And 2 minus 2, 0.
+
+953
+02:36:33,971 --> 02:36:34,311
+Okay.
+
+954
+02:36:35,171 --> 02:36:38,671
+Now let's compute AB cross.
+
+955
+02:36:40,731 --> 02:36:42,551
+AB cross.
+
+956
+02:36:44,391 --> 02:36:45,272
+AC.
+
+957
+02:36:46,631 --> 02:36:48,612
+The coordinate of AB.
+
+958
+02:36:49,216 --> 02:37:11,476
+1, 2, minus 3, the coordinate of AC, minus 1, 2, 0. So, this is just notation, not determinar symbol. Attention here. So, plus, minus, plus. So, if you ignore this, okay, 0, minus 6. So, if you ignore this,
+
+959
+02:37:12,211 --> 02:37:33,431
+So, we got some minus coefficient, attention here, 0, minus 3, so minus 3, minus 0, minus 0 times 1, minus, minus 1 times minus 3, attention here, so,
+
+960
+02:37:33,907 --> 02:37:46,627
+If you ignore this final column, so coefficient is plus here, so 1 times 2, minus 2 times minus 1, and minus 6.
+
+961
+02:37:47,527 --> 02:37:58,967
+So this is minus 3 and plus 3. Is that correct? And 4. So this is the cross vector.
+
+962
+02:38:00,020 --> 02:38:03,639
+Okay, cross product of AB and AC.
+
+963
+02:38:03,639 --> 02:38:12,716
+So norm of this, an area is 1 over 2, and norm of this, square root of...
+
+964
+02:38:20,948 --> 02:38:32,348
+Hesaplayın arkadaşlar, bir şey geliyor mu? Gelecek. Hesap makinası ile yapacaksınız muhtemelen. Evet, var mı soru sola? Bizden enikoy için.
+
+965
+02:38:35,348 --> 02:38:36,788
+Hocam, benim bir sorum var.
+
+966
+02:38:37,927 --> 02:38:38,368
+Sor.
+
+967
+02:38:39,188 --> 02:38:47,768
+Hocam, şimdi item A, şimdi bir üçgen oluşturuyor mu? O üç nokta yoksa oluşturmuyor mu? Biz nasıl anladık?
+
+968
+02:38:48,852 --> 02:38:50,711
+Eğer burası sıfır gelseydi.
+
+969
+02:39:01,620 --> 02:39:03,620
+Tamam, teşekkür ederim.
+
+970
+02:39:11,156 --> 02:39:15,216
+IT may zaten belli zaten. Şurada. Yes. Answer is yes.
+
+971
+02:39:16,896 --> 02:39:19,136
+Neden yes? O aşıkar zaten. AB ile
+
+972
+02:39:19,136 --> 02:39:21,116
+AC'nin
+
+973
+02:39:21,116 --> 02:39:24,376
+şey neydi? Hatırlarsan AB'nin normu
+
+974
+02:39:24,376 --> 02:39:28,376
+çarpı AC'nin normu
+
+975
+02:39:28,376 --> 02:39:29,996
+çarpı bunun normu hatta
+
+976
+02:39:29,996 --> 02:39:34,416
+çarpı sinüs teta. Doğru mu?
+
+977
+02:39:35,507 --> 02:39:40,047
+Eğer burası sıfır olsaydı, bu sıfır olsaydı, o zaman buradan ne gelecek?
+
+978
+02:39:40,708 --> 02:39:42,347
+AB'nin normu sıfırdan farklı.
+
+979
+02:39:44,328 --> 02:39:46,648
+AC'nin normu da sıfırdan farklı.
+
+980
+02:39:47,927 --> 02:39:48,368
+Doğru mu?
+
+981
+02:39:49,427 --> 02:39:51,188
+They are not zero vectors.
+
+982
+02:39:51,907 --> 02:39:53,328
+So this implies that
+
+983
+02:40:05,971 --> 02:40:07,171
+This means that
+
+984
+02:40:07,171 --> 02:40:17,572
+Bunu böyle diyecektim. Peki bu ne? Böyle bir şey var mı? Böyle bir şey var mı? Böyle bir şey görebiliyor musun?
+
+985
+02:40:28,435 --> 02:40:31,475
+Koliner
+
+986
+02:40:31,475 --> 02:40:33,095
+Koliner means
+
+987
+02:40:33,095 --> 02:40:35,015
+A, B
+
+988
+02:40:39,219 --> 02:41:01,399
+Lambda is scalar, non-zero. Can you see such relation between AB and AC? AB is the multiple of AC, do you think? Look at AB vector here. AB, look at AC. Do you think AB is the multiple of AC? No.
+
+989
+02:41:02,227 --> 02:41:28,948
+Not multiple of AC, that's why they are not on the same line. A, B, C points are not on the same line. Okay, so this is contradiction. This is contradiction. So at the beginning, we suppose that they are on the same line. This means that they cannot yield some triangle.
+
+990
+02:41:29,456 --> 02:41:45,096
+Ama, if you suppose this is true, so you got some contradiction. This means that your assumption is false. So from the logical point of this, okay, this is some type of proof. Yani bir şeyi doğru kabul edersiniz.
+
+991
+02:41:45,492 --> 02:41:51,672
+Doğru kabul edip ilerlediğinizde, biri bir yere kadar geleceksiniz, ilerleyeceksiniz ama bir yerde tıkanacaksınız.
+
+992
+02:41:52,272 --> 02:42:00,272
+Yani bir çelişki üretecek kabulünüz. Eğer kabulünüz çelişki üretiyorsa arkadaşlar, kabulünüz yanlıştır, kabulünüzün değili doğrudur.
+
+993
+02:42:00,852 --> 02:42:07,112
+Bu mantıklı arkadaşlar, keşke herkese mantık dersi öğretilse, maalesef birçok mühendis mantık dersini almıyor.
+
+994
+02:42:07,891 --> 02:42:10,512
+Daha sonra arkadaşlar çok büyük hataların altına imza atıyorlar.
+
+995
+02:42:12,115 --> 02:42:25,915
+İspatlama teknikleri. Tamam mı? Ben gördüğünüz gibi arkadaşlar, ne yaptım? Yani doğrudan ispatla yapabilirdim. Dolaylı ispat yaptım. Yani ne yaptım? Bir şeyin olmadığını, aynı düzdenin üzerinde olduğunu, aynı pardon, aynı doğru üzerinde olduğunu kabul ettim.
+
+996
+02:42:25,915 --> 02:42:35,415
+Bu ne demektir? Aralarındaki açı, theta 0 ile theta pi olacak demektir. Bunun böyle olması demek, aynı düzdenin, aynı.
+
+997
+02:42:36,404 --> 02:42:55,943
+Doğru üzerinde olacak demek ki. Böyle kabul ettim. Kabul edince ne yaptım? Hani burada olduğu gibi. Bir çelişki elde ettim. Ama bak böyle bir şey var mı? Lambda sıfırdan farklı. Olacak şekilde AB eşittir. Lambda çarpı AC'yi yakalayabiliyor muyum? Burada AB burada, AC'de burada. Yok işte AB.
+
+998
+02:42:57,363 --> 02:43:05,644
+Eşittir. Lambda çarpı ac olacak şekilde bir lambda bulamıyorsun. Bir çelişki buluyorum. Dolayısıyla benim kabulüm yanlıştır.
+
+999
+02:43:06,524 --> 02:43:14,283
+Kabul neydi? Üçünün aynı doğru üzerinde olmasıydı. Yani aralarındaki açının sıfır ya da pi olması demekti.
+
+1000
+02:43:15,004 --> 02:43:22,664
+Ama öyle yapıyorum, kabul ediyorum. Çelişki üretiyor bana. Yanlış yani. Aynı doğru üzerinde değil.
+
+1001
+02:43:25,556 --> 02:43:36,236
+üçgen üretir güçlü de. Eğer aynı düzlem üzerine, aynı nokta üzerinde, pardon, aynı doğru üzerinde değillerse, aralarındaki açı sıfır ya da pi değil.
+
+1002
+02:43:37,736 --> 02:43:42,796
+Ya da cross çarpımı ne yaptım? Sıfır gelmedi. Bak burada yaptım.
+
+1003
+02:43:45,536 --> 02:43:51,736
+Sorry, şurada AB ile AC'yi karıştırdım. Şurası AB, şurası AC. Pardon, şura, şuna.
+
+1004
+02:43:52,244 --> 02:44:19,764
+This is not zero. AB cross AC is not zero vector. So this means that, this means that A, B, C points are not, are not on the same line. This means that
+
+1005
+02:44:20,404 --> 02:44:26,804
+They constitute, they make a triangle.
+
+1006
+02:44:28,804 --> 02:44:33,764
+So this is the result I obtained.
+
+1007
+02:44:34,684 --> 02:44:42,984
+Evet, 3 noktanın aynı düzlem üzerinde, aynı pardon, aynı doğru üzerinde olmaması demek, 3'ü ne yapar? Bir üçgen oluşturur demek.
+
+1008
+02:44:42,984 --> 02:44:45,644
+Ya da 3'ünün üçgen oluşturması neye denktir?
+
+1009
+02:44:46,004 --> 02:44:53,584
+vektörel çarpımlarının sıfır vektörden farklı olması demektir. Biz bunları ispat edebiliriz, çıkartabiliriz. Bunlar denktir birbirine.
+
+1010
+02:44:54,144 --> 02:44:55,564
+Var mı taşımın diğer gençler?
+
+1011
+02:44:56,603 --> 02:44:58,783
+Hocam bir şey sorabilir miyim ben de?
+
+1012
+02:44:58,844 --> 02:44:58,984
+Sor.
+
+1013
+02:44:59,644 --> 02:45:05,684
+Bu yöntemden değil de, üçgenin kenar uzunluklarını kıyaslayarak yapsak da bulabilir miyiz?
+
+1014
+02:45:06,195 --> 02:45:11,435
+Üçgenin kenar uzunluklarını kıyaslayarak, üçgenin kenar uzunluğunu buldun, olur.
+
+1015
+02:45:11,716 --> 02:45:17,236
+Kenar uzunluğunu, AB'yi buldun, AC'yi buldun, BC'yi uzunluklarını buldun, olur olur.
+
+1016
+02:45:18,115 --> 02:45:21,335
+Ama ben burada ne yapıyorum? Bu bilgiyi daha sonra ileride kullanacağım.
+
+1017
+02:45:21,475 --> 02:45:22,956
+Mesela şöyle bir soru sorsam ne olur?
+
+1018
+02:45:27,835 --> 02:45:30,095
+Bilmiyorum, daha işi kolaylaştırmak için.
+
+1019
+02:45:31,316 --> 02:45:34,355
+İlerleyen konularda bu işimine yarayacak bu bilgi.
+
+1020
+02:45:34,476 --> 02:45:35,916
+For what values?
+
+1021
+02:45:40,564 --> 02:45:57,543
+For what values of k are the points 1 k minus 1 q minus 1 2 1 and r?
+
+1022
+02:46:01,492 --> 02:46:19,371
+Those are points, attention here, are 0, 1, k. On the same, on the same line.
+
+1023
+02:46:23,092 --> 02:46:29,452
+K'nın hangi değerleri için P, Q, R noktaları aynı doğru üzerinde olur?
+
+1024
+02:46:31,452 --> 02:46:32,752
+Gayet basit.
+
+1025
+02:46:35,752 --> 02:46:38,711
+Aynı doğru üzerindeylerse o zaman ne yaparım ben?
+
+1026
+02:46:44,659 --> 02:46:53,360
+Yani ne olacak? Ya da şöyle düşünün. Aynı doğru üzerinde olmasın. Aynı doğru üzerinde değillerse neydi arkadaşlar? Böyle böyle.
+
+1027
+02:46:53,360 --> 02:47:10,979
+PQR. This implies that PQ cross PR not equal to zero vector. Okay, so this is equivalent to this statement.
+
+1028
+02:47:11,667 --> 02:47:13,667
+is equivalent to this statement.
+
+1029
+02:47:14,367 --> 02:47:22,547
+So negation of this, negation of this, this, they are on the same line, pqr,
+
+1030
+02:47:23,827 --> 02:47:35,747
+and negation of this, from the logical point of view, pq, and pr, is zero vector.
+
+1031
+02:47:36,567 --> 02:47:38,768
+So attention here, so we got this.
+
+1032
+02:47:39,283 --> 02:47:55,243
+vek
+
+1033
+02:47:59,924 --> 02:48:08,443
+Bir vektörün normu 0 ise, o vektör 0 vektördür. 0 vektör ise normu 0'dır. Bunu biliyoruz zaten. Öyle olmak zorunda norm tanımından.
+
+1034
+02:48:09,044 --> 02:48:15,484
+Gördünüz mü? Ben böyle işi kurgulayabilirim. Ben bunu kullanacağım. Gördünüz mü? O zaman ne yaparım?
+
+1035
+02:48:16,783 --> 02:48:21,344
+PQ ile PRE'nin vektörel çarpımının ne olması lazım?
+
+1036
+02:48:22,484 --> 02:48:27,724
+0 olması lazım. 0 veriyorsa, 0 veren, o zaman k değerleri için olur.
+
+1037
+02:48:28,263 --> 02:48:30,144
+PQ ile PR'yi oluşturalım.
+
+1038
+02:48:30,603 --> 02:48:32,703
+PQ ile PR'yi oluşturacaksınız.
+
+1039
+02:48:33,304 --> 02:48:38,423
+Ondan sonra arkadaşlar, onu 0 yapan k değerlerini bulacaksınız.
+
+1040
+02:48:39,004 --> 02:48:40,064
+PQ'muz ne burada?
+
+1041
+02:48:40,064 --> 02:48:41,543
+PQ vektör.
+
+1042
+02:48:44,603 --> 02:48:46,443
+So, minus 2.
+
+1043
+02:48:47,724 --> 02:48:49,404
+2 minus k.
+
+1044
+02:48:50,835 --> 02:49:09,735
+And 1 minus minus 1, 2. And pr vector, pr vector, 0 minus 1, minus 1. And 1 minus k, 1 minus k. And k minus minus 1, k plus 1.
+
+1045
+02:49:10,376 --> 02:49:16,095
+Okay. Now we got this. Ondan sonra ne yapacaksınız arkadaşlar?
+
+1046
+02:49:17,396 --> 02:49:28,896
+PQ ile PR'yi vektörel çarpımını bulacaksınız. Şurada bulalım. Süremiz de doldu gerçi ama siz evde yaparsınız artık arkadaşlar. Evdesiniz zaten.
+
+1047
+02:49:33,268 --> 02:50:00,000
+Bunu buluyorsunuz arkadaşlar. Böyle yapıyorsunuz. Bulduk. Ondan sonra bulduğunuz vektörü sıfıra işleyeceksiniz. İşte burada bir şeyler bulacaksınız. Ondan sonra burada sıfır vektör sıfır sıfır sıfır. Buradan arkadaşlar bunu dikkat edin. K'ya bağlı denklemler bulacaksınız. Burada şu eşitliği sağlayan uygun K değerleri var mı yok mu diye bakacaksınız. Varsa o zaman diyeceksiniz ki
+
+1048
+02:50:00,000 --> 02:50:06,840
+Evet, 3'ü bütün K değerleri için ne olacak? Ya da şu K değerler için 3'ü aynı doğru üzerinde olur.
+
+1049
+02:50:07,420 --> 02:50:17,399
+Ama yoksa eğer öyle bir K yoksa, o zaman diyeceksiniz hiçbir K değeri için PQR'yi biz aynı doğru üzerinde konumlandıramayız.
+
+1050
+02:50:17,639 --> 02:50:23,200
+Yani hiçbir zaman PQR aynı doğru üzerinde konumlanamaz. K'ya ne verirsek verelim.
+
+1051
+02:50:23,619 --> 02:50:27,540
+Şeklinde bir cevap bulacaksınız. Tamam mı gençler? Var mı ulaşmayan bir yer?
+
+1052
+02:50:28,000 --> 02:50:31,439
+sorusu olan var mı?
+
+1053
+02:50:37,716 --> 02:50:41,076
+Sorunuz yoksa bitmiyorum arkadaşlar. Yarın görüşmek üzere.

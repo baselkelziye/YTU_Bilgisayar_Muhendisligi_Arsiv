@@ -1,0 +1,1847 @@
+1
+00:00:09,811 --> 00:00:12,211
+Arkadaşlar, geliyorum birkaç dakikaya.
+
+2
+00:01:44,084 --> 00:01:46,463
+Evet, merhaba arkadaşlar. Nasılsınız?
+
+3
+00:01:58,963 --> 00:02:00,164
+Sesim geliyor mu gençler?
+
+4
+00:02:35,572 --> 00:02:45,111
+Evet, biz değil Çoşkür. Başlayalım dersimize, biraz soru çözelim. Öğrendiklerimizi pekiştirelim.
+
+5
+00:02:53,939 --> 00:02:57,439
+Bundan, dün bahsetmiştik herhalde, bu soruyu çözmüştük.
+
+6
+00:03:00,280 --> 00:03:06,939
+Bunlar, arkadaşlar, N'ci dereceden, Taylor polinomlarını bulunuz, şeklinde sorular.
+
+7
+00:03:08,340 --> 00:03:14,479
+Yani, ne yapacaksınız? Sıfırdan N'e kadar türevlerini alacaksınız.
+
+8
+00:03:14,599 --> 00:03:18,219
+Sıfırıncı türev, kendisi. Birinci türevi, ikinci türevi, şeklinde.
+
+9
+00:03:19,000 --> 00:03:21,159
+Devam ederek bulduğunuz arkadaşlar.
+
+10
+00:03:21,780 --> 00:03:34,780
+Sürerleri, değerlerini verilen noktada alıp, m! ile bölüp, x-a'nın kuvvetlerini alıp, toplayacaksınız. Bir tane yapalım istiyorsanız.
+
+11
+00:03:42,931 --> 00:03:46,571
+Bunlar basit, gerçi siz de yapabilirsiniz.
+
+12
+00:03:51,828 --> 00:03:58,427
+Mesela, şuna bakalım arkadaşlar. 37. soru.
+
+13
+00:03:58,427 --> 00:04:07,427
+Ok, let's compute and order Taylor polynomial of this function.
+
+14
+00:04:08,627 --> 00:04:11,268
+Around a is equal to 1.
+
+15
+00:04:12,307 --> 00:04:14,627
+So, everyone recalls to Taylor polynomial.
+
+16
+00:04:15,627 --> 00:04:18,127
+Taylor polynomial of a function.
+
+17
+00:04:19,091 --> 00:04:21,552
+Define by this.
+
+18
+00:04:22,252 --> 00:04:33,711
+From n k 0 to n, let me use k as variable of sigma sum notation.
+
+19
+00:04:45,267 --> 00:04:49,587
+x minus a to power f.
+
+20
+00:04:50,107 --> 00:04:50,347
+Okay.
+
+21
+00:04:52,127 --> 00:04:52,627
+Now,
+
+22
+00:04:53,387 --> 00:04:58,427
+okay, so this is our function f of x.
+
+23
+00:04:59,147 --> 00:05:00,707
+Evet, herkese hesaplatsan arkadaşlar.
+
+24
+00:05:06,196 --> 00:05:08,816
+Öründe kağıt, kalem olsun herkesin.
+
+25
+00:05:34,163 --> 00:05:36,283
+Arkhancant'ın türevini biliyorsunuz.
+
+26
+00:05:40,627 --> 00:05:42,827
+Ok, let me see your whiteboard.
+
+27
+00:06:07,603 --> 00:06:12,443
+Ok, so this is our function, f of x.
+
+28
+00:06:22,387 --> 00:06:26,067
+f of x, arcten x,
+
+29
+00:06:29,747 --> 00:06:33,548
+plus x² plus 1.
+
+30
+00:06:34,247 --> 00:06:43,087
+So, we need to expand this function around a is equal to 1, but from k0 to n.
+
+31
+00:06:43,727 --> 00:06:49,548
+Okay, so first of all, we need to compute the value of function at the point.
+
+32
+00:06:49,548 --> 00:06:55,807
+This is the zero-order function, f1, zero-order derivation.
+
+33
+00:06:56,531 --> 00:07:06,651
+f of 1, arkantan 1, pi over 4 plus 2.
+
+34
+00:07:07,432 --> 00:07:13,331
+Okay, so this is pi over 8 over 4.
+
+35
+00:07:14,012 --> 00:07:20,432
+Now, so we need to compute the first order derivation.
+
+36
+00:07:22,644 --> 00:07:24,524
+First order derivation.
+
+37
+00:07:25,964 --> 00:07:28,684
+So derivation of what tangent x?
+
+38
+00:07:29,484 --> 00:07:35,364
+1 plus, 1 over 1 plus x square.
+
+39
+00:07:35,984 --> 00:07:42,724
+So we substitute x1 plus, okay, let me write this.
+
+40
+00:07:44,464 --> 00:07:47,364
+Okay, plus 2x.
+
+41
+00:07:48,144 --> 00:07:49,303
+So we substitute.
+
+42
+00:07:50,420 --> 00:08:08,820
+x1 into this derivation value. So the answer is 1 over 2 plus 2, 5 over 2, and the second order derivation,
+
+43
+00:08:11,320 --> 00:08:14,659
+and derivate this minus
+
+44
+00:08:16,019 --> 00:08:29,280
+2x over 1 plus x square, square, and plus 2. So we need to substitute x is equal to 1.
+
+45
+00:08:30,980 --> 00:08:39,799
+Now you are going to obtain minus 2 over 4 plus 2. Is that correct? Is there any mistake?
+
+46
+00:08:43,668 --> 00:08:51,347
+Bu şekilde gideceksiniz arkadaşlar. İkinciye kadar yapalım. Uzatmanın anlamı yok.
+
+47
+00:09:11,283 --> 00:09:19,844
+k! times x minus a, which is 1, to k power.
+
+48
+00:09:19,844 --> 00:09:28,283
+Now, so if you do this, evet arkadaşlar, ilk önce bununla başlıyorum.
+
+49
+00:09:38,419 --> 00:09:43,939
+5 over 2 over 1!
+
+50
+00:09:43,939 --> 00:09:44,299
+1!
+
+51
+00:09:46,139 --> 00:09:49,179
+Times x minus 1
+
+52
+00:09:49,179 --> 00:09:53,339
+Plus 3 over 2!
+
+53
+00:09:53,339 --> 00:09:56,139
+And second order derivation value at 0.1
+
+54
+00:09:56,139 --> 00:09:57,500
+Over 2!
+
+55
+00:09:57,500 --> 00:10:00,959
+Times x minus 1
+
+56
+00:10:00,959 --> 00:10:03,299
+Square. Is that correct?
+
+57
+00:10:03,796 --> 00:10:11,596
+Now, so this is the second order Taylor polynomial of this function.
+
+58
+00:10:11,596 --> 00:10:25,676
+Attention here, f of x, in fact, approximates this infinite order Taylor polynomial, Taylor expansion.
+
+59
+00:10:32,340 --> 00:10:43,180
+k! x-1, 2k, but this approximates, f of x approximates,
+
+60
+00:10:47,059 --> 00:10:50,799
+P to x.
+
+61
+00:10:52,799 --> 00:10:53,079
+Okay.
+
+62
+00:10:54,419 --> 00:10:58,859
+Now, so we, since this is convergent, okay, over
+
+63
+00:10:58,859 --> 00:11:02,619
+convergent interval.
+
+64
+00:11:05,460 --> 00:11:07,439
+Convergent interval
+
+65
+00:11:07,439 --> 00:11:11,419
+of Taylor serisi.
+
+66
+00:11:14,644 --> 00:11:23,384
+Evet arkadaşlar, yakınsaklık aralığı üzerinde bir fonksiyon atıyorum, en izi dereceden bir Taylor polinomuna yakınsar.
+
+67
+00:11:23,483 --> 00:11:32,084
+Eni arttırırsanız arkadaşlar ne olur? Tam bir yakınsaklık elde etmiş olursunuz. Tamam, hata azalmış olur.
+
+68
+00:11:32,923 --> 00:11:39,644
+Evet, var mı buraya kadar anlaşmayayım bir yer? Yok galiba. Polinomları öğrenmiş olduk.
+
+69
+00:11:41,748 --> 00:11:46,788
+Ok, now consider this
+
+70
+00:11:51,283 --> 00:11:59,884
+problem, from n0 to infinite, compute, the value of this.
+
+71
+00:12:08,340 --> 00:12:09,400
+Infinite sum.
+
+72
+00:12:09,980 --> 00:12:12,340
+So how can we compute this infinite sum?
+
+73
+00:12:12,880 --> 00:12:13,480
+So recall,
+
+74
+00:12:16,940 --> 00:12:23,360
+Evet, n bölü 2 üzeri n'lerin, arkadaşlar toplamı, n eşit sıfırdan sonsuza.
+
+75
+00:12:24,460 --> 00:12:26,840
+Nasıl hesaplarız? Düşünün bakalım birazcık.
+
+76
+00:12:30,100 --> 00:12:31,259
+Sesim geliyor değil mi gençler?
+
+77
+00:12:40,596 --> 00:12:52,276
+Hatırlarsanız neydi arkadaşlar? Eğer ilk etapta demiştik ki bir serinin toplamı soruluyorsa serimiz ya geometrik seriyle ilişkili ya da teleskop seridir demiştik.
+
+78
+00:12:53,956 --> 00:12:59,296
+Arkadaşlar, burada herhangi bir fonksiyonun Taylor polinomu veya
+
+79
+00:12:59,827 --> 00:13:25,967
+Maclaurin açılımı şeklinde düşünülebilir mi diye düşüneceksiniz. Kağıdını önünüze koyun arkadaşlar. Kosünüsünün açılımına bakın. Sinüsünün Taylor açılımına bakın. Üstel fonksiyonun Taylor açılımına bakın. Onlardan birine benzemiyorsa yine aynı soruyu soracağız. Bu soru arkadaşlar geometrik seriyle mi ilişkili yoksa teleskop seriyle mi ilişkili bu seri diye kendimize yine soru soracağız.
+
+80
+00:13:26,416 --> 00:13:35,475
+Ya da dediğimiz gibi bir Taylor seri açıldı mı veya bir Maclaurin seri açıldı mı ile ilişkili mi? Şeklinde üçüncü bir soruyu arkadaşlar, ikinci bir soruyu soracağız. Evet.
+
+81
+00:13:37,735 --> 00:13:41,416
+Bakın orada N olmasaydı fark ettiniz mi?
+
+82
+00:13:42,316 --> 00:13:44,995
+Suppose that there is no N factor here.
+
+83
+00:14:14,163 --> 00:14:15,783
+Geometric series.
+
+84
+00:14:16,024 --> 00:14:27,483
+So, how can we illustrate this relation between this series and geometric series?
+
+85
+00:14:27,843 --> 00:14:28,423
+Dikkat edin.
+
+86
+00:14:28,683 --> 00:14:30,884
+Bakın, geometrik seriyle bir ilişki yakaladım.
+
+87
+00:14:34,259 --> 00:14:36,879
+Sizce o ilişkiyi nasıl ortaya koyabiliriz?
+
+88
+00:14:44,275 --> 00:14:45,816
+Evet, düşündünüz mü gençler?
+
+89
+00:14:55,283 --> 00:15:12,104
+Geometrik seri neyden, recall this, 1 over 1 minus x from n is equal to 0, infinite x to n.
+
+90
+00:15:12,264 --> 00:15:17,624
+So we know this, whenever absolute of x smaller than 1.
+
+91
+00:15:23,251 --> 00:15:27,851
+So, we can we compute this infinite sum.
+
+92
+00:15:31,316 --> 00:15:33,136
+So, find out the relation.
+
+93
+00:15:43,251 --> 00:15:44,591
+Ne yapabiliriz sizce?
+
+94
+00:15:58,259 --> 00:15:59,259
+ve consider
+
+95
+00:15:59,259 --> 00:16:03,059
+find
+
+96
+00:16:07,635 --> 00:16:10,316
+Aproper, Aproper.
+
+97
+00:16:13,940 --> 00:16:14,580
+Value.
+
+98
+00:16:16,460 --> 00:16:17,879
+A proper x value.
+
+99
+00:16:18,740 --> 00:16:21,100
+Bu kadar ipucu verdim arkadaşlar. Düşünün bakalım.
+
+100
+00:16:30,035 --> 00:16:30,515
+Evet.
+
+101
+00:16:32,275 --> 00:16:33,595
+Ne yapacağız sizce?
+
+102
+00:16:34,235 --> 00:16:36,035
+Öğrendiğimiz konuları hatırlayın.
+
+103
+00:16:37,035 --> 00:16:42,675
+Ne yapıyorduk biz bu fonksiyonların temsillerini bulurken arkadaşlar?
+
+104
+00:16:43,935 --> 00:16:49,335
+Bir fonksiyonun temsilini bulurken başka bir fonksiyonun temsilini de bulabiliyoruz.
+
+105
+00:16:49,395 --> 00:16:50,835
+Türevini falan alırken. Doğru mu?
+
+106
+00:16:50,835 --> 00:16:51,255
+Okey.
+
+107
+00:16:54,067 --> 00:17:20,988
+Let's derivate 1 over 1 minus x, derivation of this, 1 over 1 minus x to the power, equals to, let's derivate this term by term, we got this from n is equal to 1 to infinite n times x to n minus 1.
+
+108
+00:17:21,332 --> 00:17:37,192
+So, we got this. Now, so when you substitute x is equal to 1 over 2, let's substitute x is equal to 1 over 2, let's substitute here.
+
+109
+00:17:37,619 --> 00:17:59,299
+x is equal to 1 over 2. We can manage this because 1 over 2 is smaller than 1. So that's why we study on the convergence interval. So when you substitute 1 over 2, both sides of this equality, 1 over, ne geliyor burası arkadaşlar? 1 eksi 1 bölü 2, 1 bölü 4 mi geliyor? Doğru mu?
+
+110
+00:18:19,731 --> 00:18:37,451
+x yerine 1 bölü 2 yazıyorum arkadaşlar. 2 üzeri, yanlış olmasın, bir dakika. 1 bölü 2 üzeri, n eksi 1. Doğru mu arkadaşlar? O zaman ne olur? Şurası 4 olur.
+
+111
+00:18:40,451 --> 00:18:45,652
+n eşittir 1'den sonsuza, şurada 2 çarpanı alabilirim.
+
+112
+00:18:46,099 --> 00:18:55,219
+n bölü, ne geliyor arkadaşlar? 2 üzeri n. Doğru mu? Evet.
+
+113
+00:18:59,731 --> 00:19:01,771
+İşlem hatası yapmadık değil mi arkadaşlar?
+
+114
+00:19:06,355 --> 00:19:08,355
+Evet, şimdi bana bu lazım.
+
+115
+00:19:11,396 --> 00:19:13,336
+Okey, so we need to compute this.
+
+116
+00:19:17,748 --> 00:19:20,108
+4 is equal to 2 times.
+
+117
+00:19:22,188 --> 00:19:34,788
+Bana şöyle yapacak olursa, açarsam bunu, bakın arkadaşlar, bize şu, en yerine 0 yazarsak, 1 artı, en yerine 0 yazdım.
+
+118
+00:19:36,407 --> 00:19:38,307
+En yerine 1 yazalım.
+
+119
+00:19:41,028 --> 00:19:42,988
+Ok, we need to compute this.
+
+120
+00:19:45,523 --> 00:19:50,343
+Zaten burada var arkadaşlar. Gördüğünüz gibi. Silelim şunu.
+
+121
+00:19:58,036 --> 00:20:04,336
+Yani tekrar tekrar yazdım ama şunlar sadeleşti. Buranın 2 olduğunu gördüm de, doğru mu?
+
+122
+00:20:04,736 --> 00:20:14,155
+As you see, this is 2. The answer is 1 plus 2 is equal to 3. İşlem hatası var mı? Is there any calculation? Error?
+
+123
+00:20:16,016 --> 00:20:17,296
+Yok değil mi? Evet.
+
+124
+00:20:20,056 --> 00:20:21,056
+Cevap 3 arkadaşlar.
+
+125
+00:20:24,372 --> 00:20:26,652
+İzlere any questions? Sorusu olan var mı?
+
+126
+00:20:33,779 --> 00:20:56,759
+Okay, so, so if you derivate our geometric series, we got some series with initial term A1, but series given in the equation is with initial term A0, okay, and 0.
+
+127
+00:21:02,003 --> 00:21:04,823
+Seri is, a zero is one.
+
+128
+00:21:05,463 --> 00:21:07,143
+Sorry, a zero is zero.
+
+129
+00:21:07,483 --> 00:21:08,263
+Sorry, sorry, sorry.
+
+130
+00:21:09,083 --> 00:21:14,803
+Ah, bir dakika, şuradaki üsttesi gördüm, sıfır olacak, gerek yok buna, aynen öyle.
+
+131
+00:21:16,483 --> 00:21:20,344
+Tamam, doğru söylüyorsun, şurası sıfır geliyor zaten.
+
+132
+00:21:21,163 --> 00:21:23,683
+Bir gelmiyor, oradaki kuvvet gibi düşündüm.
+
+133
+00:21:24,543 --> 00:21:26,003
+Cevap arkadaşlar, iki.
+
+134
+00:21:26,623 --> 00:21:27,443
+The answer is two.
+
+135
+00:21:29,223 --> 00:21:29,483
+Tamam.
+
+136
+00:21:30,355 --> 00:21:35,936
+En yeşilte sıfır boş yazılmış orada. Cevap 2 geliyor arkadaşlar.
+
+137
+00:21:38,195 --> 00:21:39,255
+Evet, var mı soru sola?
+
+138
+00:21:46,675 --> 00:21:51,675
+Evet, güzel bir soruydu. Şimdi bir başka soru, yine aynı mantıkla.
+
+139
+00:21:54,675 --> 00:21:56,556
+So, how can we compute this?
+
+140
+00:22:34,644 --> 00:22:36,183
+Ok, let's compute this.
+
+141
+00:22:42,612 --> 00:22:45,472
+Aynı mantık. Ne yapacağız sizce bu sefer?
+
+142
+00:22:46,592 --> 00:22:47,432
+In this case,
+
+143
+00:22:52,852 --> 00:22:56,392
+Burada, birinci mertebeden türev aldım geometrik serinin. Burada,
+
+144
+00:23:09,395 --> 00:23:18,936
+Evet, herkes yapsın bakalım. İpucunu gördünüz. Geometrik serinin belli mertebeden türevini alarak bunu hesaplayabilirsiniz.
+
+145
+00:23:26,548 --> 00:23:36,188
+Taylor expansion, ok, we can compute this. Consider geometric series. Ok, if you derivate geometric series,
+
+146
+00:23:36,188 --> 00:23:45,887
+second time, if you obtain second order derivation of geometric series, now you can obtain this infinite sum.
+
+147
+00:24:04,147 --> 00:24:09,527
+Evet. Hesaplıyorsunuz değil mi gençler? [öğrenci] diri.
+
+148
+00:24:13,811 --> 00:24:14,931
+Orada mısın [öğrenci]?
+
+149
+00:24:25,044 --> 00:24:30,984
+[öğrenci], ne yaptın [öğrenci]? Aldın mı türevini, ikinci mertebeden türevini, geometrik serini?
+
+150
+00:24:45,140 --> 00:24:57,920
+Tamam, güzel. İkili mertebeden türevini alın. İşlem hatası yapmayın siz benim gibi. Serileri bakın, uyumlu geliyor mu? Türevlerini alırsanız. İndisleri de mesela burayı 3 yapabilirdim yani. 3 yaparsam o zaman burada.
+
+151
+00:25:00,435 --> 00:25:19,655
+Ötekinde artık terim olabilir. Hadi burayı 3 yapalım. Biraz zorlaştıralım. Sadece birazcık serinin birkaç terimini açacaksınız. Orada artık terim gelecek. Onu çıkartacaksınız, ekleyeceksiniz. Çok şey değil aslında. İlk terimleri farklı olunca o uygunluğu yakalamanız lazım.
+
+152
+00:25:35,988 --> 00:25:36,807
+Ulan var mı?
+
+153
+00:26:07,988 --> 00:26:09,788
+Evet, bakalım beraber.
+
+154
+00:26:14,483 --> 00:26:17,703
+So we consider our geometric series.
+
+155
+00:26:24,660 --> 00:26:29,740
+So, this convergence is true whenever absolute of x smaller than 1.
+
+156
+00:26:29,740 --> 00:26:39,620
+If you derivate this, so we got 1 minus x to minus x.
+
+157
+00:26:40,500 --> 00:26:49,100
+So, we got from n is equal to 1 to infinite n times x to n minus 1.
+
+158
+00:26:51,380 --> 00:27:11,480
+Gain, so you are going to obtain 2 times 1 minus x2 minus, let me write this, 2 over 1 minus x square, sorry, cube.
+
+159
+00:27:12,480 --> 00:27:13,359
+Okay.
+
+160
+00:27:13,960 --> 00:27:15,480
+Is equal to,
+
+161
+00:27:17,523 --> 00:27:28,283
+n is equal to 1, 2, infinite, n times, n minus 1 times, x2, n minus 2.
+
+162
+00:27:29,203 --> 00:27:35,303
+Okay, now as you see, taking into account the series given in the equation,
+
+163
+00:27:35,920 --> 00:27:59,400
+So, you need to choose some proper x values. If you substitute x 1 over 2, 2 over 1 minus 1 over 2 cube is equal to from n is equal to 2 to infinite n times n minus 1 times 1 over 2.
+
+164
+00:28:03,380 --> 00:28:03,700
+Ok.
+
+165
+00:28:07,412 --> 00:28:14,572
+Burası ne geliyor arkadaşlar? 1 bölü 2'nin 3. kuvveti 16 mı geliyor?
+
+166
+00:28:17,792 --> 00:28:18,152
+Evet.
+
+167
+00:28:19,832 --> 00:28:21,272
+Sağ taraf ne geliyor?
+
+168
+00:28:26,003 --> 00:28:50,283
+Şurası n çarpı, n eksi bir bölü, iki üzeri n, şurası dört. Doğru mu? Bunlar sadeleşirse, gördüğünüz gibi arkadaşlar, dört eşittir, n eşittir ikiden sonsuza n çarpı hata mı yaptık?
+
+169
+00:28:53,715 --> 00:28:55,955
+x yerine neden 2 koymadın?
+
+170
+00:28:58,555 --> 00:29:03,315
+Neden 2 koymadık x yerine? x yerine 2 koyarsak bunu yakalar mıyız? Bak bakalım.
+
+171
+00:29:04,115 --> 00:29:09,395
+x bir de 2'nin 2 birden büyük mü? 2'nin mutlak değeri şey birden büyük oluyor.
+
+172
+00:29:10,055 --> 00:29:15,895
+O yüzden koyamam. 1 bölü 2, x 1 bölü 2'nin mutlak değeri birden küçük olacak.
+
+173
+00:29:15,995 --> 00:29:19,815
+Yoksa yakınsak elde edemezsin. Tamam, işleme hatası yapmadık değil mi?
+
+174
+00:29:22,163 --> 00:29:39,083
+Evet, n çarpı n eksi bir bölü iki üzeri n. E şimdi bize soru da n üçten başlıyor. Doğru mu arkadaşlar? Bu soruluyor. O zaman şurada birkaç terim açacağım.
+
+175
+00:29:48,147 --> 00:29:51,807
+1 over 4, doğru mu arkadaşlar?
+
+176
+00:29:52,488 --> 00:30:01,867
+Plus, from n3 to infinite, n times n minus 1 over 2 to n.
+
+177
+00:30:01,867 --> 00:30:08,067
+So, our goal is to compute this series, and the answer,
+
+178
+00:30:11,827 --> 00:30:13,988
+15 over 4
+
+179
+00:30:26,387 --> 00:30:26,887
+Evet.
+
+180
+00:30:30,675 --> 00:30:43,836
+Tamam mı gençler? En yerine 2 yazıyoruz. 1 bölü 4G'dir arkadaşlar. En yerine 2 yazarsak 1 bölü 2. Evet ya. Zihnim iyice dalmış. Doğru söylüyorsun.
+
+181
+00:30:43,836 --> 00:30:46,296
+Okey.
+
+182
+00:30:52,180 --> 00:30:54,180
+Hep işleme hatası yapıyor nedense ya.
+
+183
+00:30:55,060 --> 00:30:56,360
+7 bölü 2 arkadaşlar cevap.
+
+184
+00:30:57,140 --> 00:30:57,960
+Teşekkür ederiz.
+
+185
+00:30:57,960 --> 00:30:58,560
+Evet.
+
+186
+00:31:03,539 --> 00:31:05,539
+Var mı soru sola? İzlerenik o için?
+
+187
+00:31:11,859 --> 00:31:13,139
+Sorusu olan yok herhalde.
+
+188
+00:31:20,531 --> 00:31:25,332
+Ok, let me share our lecture notes.
+
+189
+00:31:27,751 --> 00:31:35,072
+Now, we can apply Taylor series expansion to evaluating some limits.
+
+190
+00:31:35,832 --> 00:31:37,892
+For example, look at here.
+
+191
+00:31:38,612 --> 00:31:40,372
+So, limit as x goes to 0.
+
+192
+00:31:40,531 --> 00:31:45,152
+Let's compute this by using Taylor expansion.
+
+193
+00:31:45,731 --> 00:31:47,172
+There are some questions.
+
+194
+00:31:48,084 --> 00:31:58,963
+such that you cannot apply L'Hopital's rule. In such cases, it is better to substitute Taylor expansion of some well-known function.
+
+195
+00:31:59,743 --> 00:32:09,644
+Okay, so in this example, so we can substitute Taylor expansion of cosine x into limit problem.
+
+196
+00:32:09,644 --> 00:32:15,644
+So we know that cosine x is even function. That's why
+
+197
+00:32:15,968 --> 00:32:23,147
+Its Taylor expansion contains only monomials with even powers.
+
+198
+00:32:23,928 --> 00:32:26,488
+And plus minus plus minus x to zero.
+
+199
+00:32:27,347 --> 00:32:35,887
+And do not forget, so here 4 factorial, k, and 6 factorial goes in this way.
+
+200
+00:32:35,887 --> 00:32:42,607
+Now when you substitute this Taylor expansion of cosine x into limit problem,
+
+201
+00:32:43,092 --> 00:32:51,312
+You can simplify, you can transform your limit problem into limit problem of rational functions.
+
+202
+00:32:51,312 --> 00:32:52,452
+Okay.
+
+203
+00:32:59,124 --> 00:33:05,624
+Dikkat edin arkadaşlar. Şimdi geliyoruz mesela buna, mesela yapabilirsiniz hemen uygulayın arkadaşlar.
+
+204
+00:33:05,624 --> 00:33:24,683
+Şurada, limit yerine yazacak olursak limit as x goes 0, x square plus 2 times, if you substitute this, 1 minus x square over 2 factorial, and plus,
+
+205
+00:33:25,236 --> 00:33:47,836
+x to 4 over 4 factorial, and goes in this way. Okay. And minus 2 over 3 times x to 4. Evet. Yaptık arkadaşlar. Bakın, şunlar birbirine götürüyor. So, these and these simplified.
+
+206
+00:33:48,692 --> 00:33:54,331
+ve, if you distribute this, we got 2 over 4!
+
+207
+00:33:54,736 --> 00:34:10,655
+ve, if you divide each term here by x to 4, ok, you are going to obtain x term here, x terms, and as x goes to 0, this term goes to 0, this current, all terms goes to 0.
+
+208
+00:34:21,108 --> 00:34:26,528
+2 bölü 4! çarpı 3 geliyor arkadaşlar. Tamam mı?
+
+209
+00:34:27,788 --> 00:34:32,008
+24 ne geliyor? 36 mı geliyor? Evet, cevap bu olur arkadaşlar.
+
+210
+00:34:33,408 --> 00:34:44,387
+Okay, what about this problem? Limit as x goes to infinite, let's apply Taylor series method to compute this limit problem.
+
+211
+00:34:44,387 --> 00:34:47,887
+So, look at here, 1 over x.
+
+212
+00:34:48,659 --> 00:35:12,259
+Now, for 1 over x, you cannot expand your functions around infinite. That's why you need to change of variable. So we do this change of variable as x goes to infinite, t goes to 0. Now we can expand sine t around t0.
+
+213
+00:35:12,724 --> 00:35:22,984
+Okay, since sine is odd function, we got only monomials with odd powers.
+
+214
+00:35:23,624 --> 00:35:25,064
+Okay, in this way.
+
+215
+00:35:26,584 --> 00:35:35,003
+t to 5 over 5 factorial minus t to 7 over 7 factorial goes in this way.
+
+216
+00:35:35,003 --> 00:35:35,904
+Now,
+
+217
+00:35:36,500 --> 00:35:45,640
+After changing our variable, so we need to change our problem into a new problem in terms of t.
+
+218
+00:35:46,228 --> 00:35:59,248
+x is equal to 1 over t, we got, okay, 1 over t to 5, and so this is transformed into 6 over t to 4, and this is transformed into 1 over t square.
+
+219
+00:35:59,248 --> 00:36:12,668
+Now, if you simplify this expression, you got this, and if you substitute this sine t, Taylor expansion of sine t into here, so,
+
+220
+00:36:13,103 --> 00:36:39,323
+You are going to obtain, okay, let's see here. Now, if we substitute sine t expansion into problem, if you distribute this and you can cancel this. And as you see, we got here minus t cubed and this. Okay, those are resting terms.
+
+221
+00:36:40,148 --> 00:36:46,887
+Ve, look at here, this and this simplified, we got this, and so we got t terms here.
+
+222
+00:36:48,307 --> 00:37:00,087
+And as t goes to 0, t terms goes to 0, 0 goes to 0, goes to 0, and finally, the answer is 1 over 20.
+
+223
+00:37:00,467 --> 00:37:02,648
+Okay, is there any question?
+
+224
+00:37:10,804 --> 00:37:11,324
+Evet.
+
+225
+00:37:13,543 --> 00:37:17,923
+Similarly, you can compute, you can compute this integration
+
+226
+00:37:17,923 --> 00:37:20,623
+approximately.
+
+227
+00:37:24,980 --> 00:37:30,480
+Ok, let's compute this integration with approximately by using
+
+228
+00:37:36,851 --> 00:37:43,192
+Compute this integration approximately.
+
+229
+00:37:45,192 --> 00:37:58,251
+Now, we know that exponential t approximates 1 plus t plus t squared over 2 factorial.
+
+230
+00:37:58,963 --> 00:38:04,683
+plus t cubed over 3 factorial and goes in this way.
+
+231
+00:38:05,403 --> 00:38:11,403
+Now, from 0 to 1,
+
+232
+00:38:11,403 --> 00:38:17,603
+if you substitute t is equal to minus x squared into this,
+
+233
+00:38:23,347 --> 00:38:25,528
+Hepsini yazmak zorunda değilsiniz arkadaşlar.
+
+234
+00:38:26,668 --> 00:38:28,427
+Ama şöyle denilebilir sınavda.
+
+235
+00:38:29,148 --> 00:38:31,807
+Bunun kuvvet serisini bulun diye bir soru gelebilir.
+
+236
+00:38:31,927 --> 00:38:32,608
+Hepsini yazalım.
+
+237
+00:38:33,268 --> 00:38:33,528
+Okay.
+
+238
+00:38:34,148 --> 00:38:36,528
+In the exam you may see such question.
+
+239
+00:38:37,087 --> 00:38:42,768
+Express this integration by some series, infinite sum.
+
+240
+00:38:42,768 --> 00:38:46,288
+So how can you obtain this infinite sum?
+
+241
+00:38:46,427 --> 00:38:47,596
+So this is...
+
+242
+00:38:55,284 --> 00:39:14,804
+Okay, let me write here from n 0 to infinite, and t is equal to x square, minus x square, sorry, t is equal to minus x square, minus x square n over n factorial.
+
+243
+00:39:14,804 --> 00:39:21,963
+Okay, now, so we can distribute limit, we can distribute.
+
+244
+00:39:24,307 --> 00:39:25,987
+İnteklisi operator
+
+245
+00:39:25,987 --> 00:39:31,436
+İnteklisi
+
+246
+00:39:34,804 --> 00:39:40,503
+direkt integralini almadan önce şöyle yapabiliriz arkadaşlar. Faktoriyeli olanları da dışarı alalım.
+
+247
+00:39:40,503 --> 00:39:56,144
+Ok, minus 1 to n over n factorial integration from 0 to 1, x to 2n dx.
+
+248
+00:40:01,679 --> 00:40:22,420
+n0 to infinite minus 1 to n over n factorial times, if you integrate this, x to 2n plus 1 over 2n plus 1, just apply fundamental theorem, part 2.
+
+249
+00:40:23,731 --> 00:40:43,131
+So, from n0 to infinite, minus 1 to n over n factorial times, so we got 1 over, if you substitute upper bound and lower bound into anti-derivation of x to n, so we got 1 over 2 n plus 1.
+
+250
+00:40:43,452 --> 00:40:50,572
+As you see, so this is, this infinite sum approximates.
+
+251
+00:40:51,219 --> 00:40:53,659
+This integration.
+
+252
+00:40:54,899 --> 00:40:55,179
+Okay.
+
+253
+00:40:55,859 --> 00:40:57,639
+Now, generally, computers
+
+254
+00:40:57,639 --> 00:41:00,019
+use
+
+255
+00:41:00,019 --> 00:41:01,340
+such
+
+256
+00:41:01,340 --> 00:41:04,199
+infinite sum
+
+257
+00:41:04,199 --> 00:41:05,359
+approximation
+
+258
+00:41:05,359 --> 00:41:07,960
+to compute approximately
+
+259
+00:41:07,960 --> 00:41:10,639
+this integration because of the fact that
+
+260
+00:41:10,639 --> 00:41:12,219
+this
+
+261
+00:41:12,755 --> 00:41:15,635
+Function cannot be easily integrated.
+
+262
+00:41:15,935 --> 00:41:22,415
+A üzeri x x kareyi kolay bir şekilde entegre edemezsiniz arkadaşlar. Ona dikkat edin. Tamam mı gençler?
+
+263
+00:41:22,875 --> 00:41:24,875
+Mesela yaklaşık olarak hesaplayacaksınız.
+
+264
+00:41:24,956 --> 00:41:28,456
+For example, you can see from 0 to 1,
+
+265
+00:41:29,076 --> 00:41:34,895
+exponential minus x square, dx approximates
+
+266
+00:41:35,668 --> 00:41:41,568
+From n 0 to infinite, minus 1 to n, not infinite, sorry.
+
+267
+00:41:42,568 --> 00:41:44,508
+Or for example, you can write this.
+
+268
+00:41:46,467 --> 00:41:54,408
+From minus 1 to n over n factorial, times 1 over 2 n plus 1.
+
+269
+00:41:55,208 --> 00:41:57,168
+Answer for için bir.
+
+270
+00:41:57,927 --> 00:41:58,908
+And bir için.
+
+271
+00:41:59,476 --> 00:42:24,016
+Arkadaşlar, eksi, bir bölü üç. N2 için, artı, bir bölü beş, on mu geliyor? Bu şekilde. N3 için, eksi, N3 için, bir bölü altı, kırk iki mi geliyor? Evet. Okey.
+
+272
+00:42:24,467 --> 00:42:29,728
+So, this integration approximates this addition.
+
+273
+00:42:31,427 --> 00:42:33,568
+Tamam mı arkadaşlar? Var mı anlaşmayan bir yer?
+
+274
+00:42:36,568 --> 00:42:39,788
+Yok galiba. Sorusu olan yoksa.
+
+275
+00:42:41,068 --> 00:42:41,728
+Geçiyorum.
+
+276
+00:42:56,884 --> 00:42:57,384
+Evet.
+
+277
+00:42:59,844 --> 00:43:02,984
+Bunları arkadaşlar yapabilirsiniz. Basic skills.
+
+278
+00:43:03,144 --> 00:43:11,304
+So, by applying Taylor series expansion of cosine, arc tangent, you can compute these limits.
+
+279
+00:43:11,663 --> 00:43:11,903
+Okey.
+
+280
+00:43:13,543 --> 00:43:15,724
+Bunları siz yaparsınız diye düşünüyorum.
+
+281
+00:43:18,784 --> 00:43:22,163
+Hadi şunları bakalım. Siz bulun bakayım nasıl olacak.
+
+282
+00:43:25,108 --> 00:43:35,008
+Okay, find which of the following series is, okay, is converging to this integration.
+
+283
+00:43:35,307 --> 00:43:40,108
+So, for example, this is test exam equation, which of the...
+
+284
+00:43:44,019 --> 00:43:44,979
+The following.
+
+285
+00:43:49,780 --> 00:43:51,560
+Serisi, converged,
+
+286
+00:43:54,560 --> 00:43:55,900
+converged to,
+
+287
+00:44:04,436 --> 00:44:25,735
+Arktangent x dx. Gördünüz mü arkadaşlar? Size hemen bir test sorusu ürettim. Aşağıdaki serilerden hangisi? 0'dan 1 bölü 2'ye, arktangent x dx değerine yakınsak. Evet. Nasıl? Güzel bir soru değil mi? Konuyu öğrenmişseniz zorlanmazsınız.
+
+288
+00:44:28,436 --> 00:44:31,796
+Okey. Yapın bakayım, herkes yapsın.
+
+289
+00:44:33,523 --> 00:44:34,243
+Bekliyorum.
+
+290
+00:45:06,771 --> 00:45:25,011
+Evet gençler, Arktanjant'ın seri temsilini nasıl buluyorduk? Unutursak nasıl bulacağımızı biliyorduk. Arktanjant eksilin türevini mi alırsak, yoksa integralini mi alırsak, geometrik seri ile ilişkili bir ifade elde ederiz.
+
+291
+00:45:25,011 --> 00:45:33,572
+Şimdi bakın, hocalar zaten soruları hazırlarken dikkat ediyorlar arkadaşlar. Yani gerçekten konuyu bilip bilmeyeni ayırt edecek şekilde.
+
+292
+00:45:34,420 --> 00:45:35,920
+sorular geliyor.
+
+293
+00:45:41,523 --> 00:45:50,723
+Böyle bir soru güzel olur. Aşağıdakilerden hangisi? 0'dan 1 bölü 2 artanjan x serisine, integraline yakınsak.
+
+294
+00:46:10,547 --> 00:46:11,587
+Evet gençler.
+
+295
+00:46:21,396 --> 00:46:22,976
+Şöyle bir hatırlatma yapalım.
+
+296
+00:46:24,916 --> 00:46:27,256
+Arktanjant x'in türevi
+
+297
+00:46:27,256 --> 00:46:32,356
+1 bölü 1 artı x kare
+
+298
+00:46:32,356 --> 00:46:36,916
+1 bölü 1 eksi eksi x kare
+
+299
+00:46:36,916 --> 00:46:39,256
+geometrik seriyle ilişkiliydi.
+
+300
+00:46:39,256 --> 00:46:40,176
+Evet.
+
+301
+00:46:41,116 --> 00:46:43,276
+Hemen whiteboard'u paylaşayım.
+
+302
+00:46:51,891 --> 00:46:52,431
+Ok.
+
+303
+00:47:09,012 --> 00:47:11,432
+Now, we are looking for some series.
+
+304
+00:47:14,432 --> 00:47:23,452
+So, first of all, we need to compute power series representation of arctanjant x.
+
+305
+00:47:25,632 --> 00:47:32,092
+Arctanjant x'in türevi neydi? Bir bölü, bir artı x kare idi.
+
+306
+00:47:32,692 --> 00:47:47,612
+1 bölü, 1 eksi, eksi x kare, bu şekilde, r'yi eksi x kare olarak alırsak, geometrik seriyle ilişkilendirmeye çalışıyorum.
+
+307
+00:47:56,864 --> 00:48:06,083
+Okay, so minus x square, absolute of minus x square, smaller than one. Okay, now, so this is,
+
+308
+00:48:09,403 --> 00:48:22,923
+geometrics, this is Taylor serisi expansion of arctanjant x derivation, but in order to turn back, we need to, we need to integrate. If we integrate 1 over 1 plus,
+
+309
+00:48:25,300 --> 00:48:38,139
+İntegre, now, integrate both sides. So if you integrate this, we are going to obtain arctangent x plus c term coming from the indefinite integration.
+
+310
+00:48:39,840 --> 00:48:51,760
+So if you integrate this right hand side term by term, so you are going to obtain this from n0 to infinite minus 1 to n.
+
+311
+00:48:52,128 --> 00:49:17,548
+x to 2n plus 1 over 2n plus 1. We integrate x to 2n. Okay, now, if you substitute x 0 and c is 0, c is going to be 0. Now, so this is the power series representation of arctangent x. Is there any mistake?
+
+312
+00:49:18,099 --> 00:49:20,059
+I think there is no mistake.
+
+313
+00:49:20,559 --> 00:49:26,359
+So, just substitute this here from 0 to 1,
+
+314
+00:49:27,879 --> 00:49:31,779
+infinite sum from n 0 to infinite,
+
+315
+00:49:32,819 --> 00:49:37,559
+minus 1 to n times x2,
+
+316
+00:49:38,440 --> 00:49:42,519
+2n plus 1 over 2n plus 1.
+
+317
+00:49:43,219 --> 00:49:47,399
+Ok, so this is arc tangent x, do not forget to put the x.
+
+318
+00:49:47,879 --> 00:49:56,460
+So we know that the integration operator is linear, meaning that so we can distribute integration operator into sigma notation.
+
+319
+00:49:58,079 --> 00:50:03,079
+Ok, minus 1 to n over 2 n plus 1.
+
+320
+00:50:03,159 --> 00:50:07,460
+This factor is a constant with respect to x integration variable.
+
+321
+00:50:09,523 --> 00:50:19,043
+Now, if you integrate this, if you integrate this, x2, 2n plus 2 over,
+
+322
+00:50:23,827 --> 00:50:25,527
+2 n plus 2.
+
+323
+00:50:26,047 --> 00:50:26,288
+Okay.
+
+324
+00:50:27,407 --> 00:50:27,947
+Dikkat edin.
+
+325
+00:50:28,087 --> 00:50:33,747
+İki düzey iki n artı biri, entegre ediyorum arkadaşlar, from 0 to 1.
+
+326
+00:50:34,387 --> 00:50:35,307
+Attention here.
+
+327
+00:50:36,927 --> 00:50:48,788
+Now, if you integrate, if you substitute, if you substitute upper bound and lower bound into anti-derivation by using fundamental theorem, part,
+
+328
+00:50:49,684 --> 00:51:13,864
+2, minus 1 to n, over 2 n plus 1, times, if you substitute 1 into anti-derivation, we got 1 over 2 n plus 2. If you substitute lower bound, we are going to obtain 0. Okay, now, so this is, this series, infinite, this is alternating series, converts,
+
+329
+00:51:15,923 --> 00:51:24,764
+Converse to this definite integration. Var mı soru sola? Anlaşıldı galiba.
+
+330
+00:51:30,132 --> 00:51:42,012
+Evet gençler, sorunuz yoksa, devam ediyorum. Bugün arkadaşlar ara vermeyeceğim, vlog yapacağım. Biraz erken bitireceğim. Kendimi biraz iyi hissetmiyorum.
+
+331
+00:51:49,652 --> 00:51:55,531
+Evet, olayı kavradınız herhalde arkadaşlar. Hadi bunu siz yapın o zaman.
+
+332
+00:51:55,531 --> 00:52:08,011
+Ok, let's try to solve this problem. So, find out some power series which converts to this definite integration.
+
+333
+00:52:17,492 --> 00:52:21,391
+seri bulunuz, sonsuz toplam bulunuz. Evet.
+
+334
+00:52:33,268 --> 00:52:53,868
+Yapıyorsunuz değil mi gençler? Kosünüsün, şeyini biliyoruz zaten ezbere, kosünüs çift olduğundan, hep çift kuvvetler gelecek, tek terimlerin kuvveti çift olacak, 1 artı 1 eksi şeklinde gidecek, bir de x üzeri n bölü n farklı, x üzeri 2n bölü 2n faktörü şeklinde gelecek, ona dikkat edin.
+
+335
+00:52:55,476 --> 00:53:05,076
+Sinüs de tam tersi. Yine artı eksi şeklinde. Kuvvetler tek şeklinde gelecek. 2n artı 1. 2n artı 1 bölü 2n artı 1 faktöre şeklinde.
+
+336
+00:53:05,776 --> 00:53:11,436
+Evet. Ama orada x var. Dikkat edin. x ile çarpacaksınız. İki önünde kosünüs x'in kuvvet serisi temsilini yazacaksınız.
+
+337
+00:53:54,996 --> 00:53:56,256
+Evet, gençler.
+
+338
+00:54:12,820 --> 00:54:15,800
+[öğrenci]. [öğrenci], burada mısın [öğrenci]?
+
+339
+00:54:28,019 --> 00:54:32,160
+[öğrenci]. [öğrenci]. Yapıyor musun, çözüyor musun?
+
+340
+00:54:50,099 --> 00:54:51,079
+Evet gençler.
+
+341
+00:54:55,827 --> 00:54:57,387
+Arkadaşlarımız yok galiba.
+
+342
+00:55:10,291 --> 00:55:35,091
+Kosünüs x'in seri temsilini gelip, belirli integralde yerine koyarak, daha sonra x ile çarparak seri temsilini, daha sonra her bir terimin integralini, toplam, sonsuz toplamdaki her bir terimin integralini sıfırdan bire alarak, söz konusu belirli integrale yakın sayan bir,
+
+343
+00:55:35,699 --> 00:55:38,539
+sonsuz toplam bulmuş olursunuz.
+
+344
+00:55:43,092 --> 00:55:44,072
+Değil mi [öğrenci]?
+
+345
+00:55:54,068 --> 00:55:56,388
+[öğrenci], Akın diziye.
+
+346
+00:55:58,728 --> 00:56:00,128
+Orada mısın [öğrenci]?
+
+347
+00:56:01,288 --> 00:56:04,748
+Bayanlar genellikle burada da, erkekler arazi ya.
+
+348
+00:56:06,048 --> 00:56:09,088
+[öğrenci] buradaymış. [öğrenci] daima burada oluyor zaten.
+
+349
+00:56:10,568 --> 00:56:10,848
+Güzel.
+
+350
+00:56:15,731 --> 00:56:16,951
+[öğrenci].
+
+351
+00:56:17,851 --> 00:56:18,552
+Buldun mu [öğrenci]?
+
+352
+00:56:27,059 --> 00:56:30,920
+Bunu 1-2 dakikada en fazla yapmanız lazım arkadaşlar. Çok zor değil.
+
+353
+00:56:33,559 --> 00:56:35,360
+Kosünüsün seri açılımını biliyor musun?
+
+354
+00:56:39,347 --> 00:56:42,427
+Konstantinos'un seri açılımını biliyorsan, işin kolay.
+
+355
+00:56:50,324 --> 00:56:53,744
+Bilmiyorsan zaten formülden çıkartabilirsin.
+
+356
+00:57:07,603 --> 00:57:19,823
+Evet, bulan var mı gençler? Boşuna mı anlattık o kadar dersi ya? Öğrenen çıkmıştır. Bunu yapması lazım en fazla. 1-2 dakikada öğrenen kişi.
+
+357
+00:57:29,172 --> 00:57:40,472
+Evet, güzel, [öğrenci]. Birinci dönemden beri çalışıyorsun. Bayağı bir herhalde düzenli çalışıyorsun. Hemen cevapları yapıştırıyorsun. Evet.
+
+358
+00:57:43,152 --> 00:57:47,972
+Okey. So, let me share whiteboard here.
+
+359
+00:57:53,108 --> 00:57:56,708
+Our goal is to compute some infinite series,
+
+360
+00:57:57,668 --> 00:58:04,308
+which converts to this definite integration.
+
+361
+00:58:05,148 --> 00:58:10,988
+Okay, so we know that cosine x is an even function.
+
+362
+00:58:16,148 --> 00:58:38,128
+So, this is x1 minus x square over 2 factorial plus x to 4 over 4 factorial minus x to 6 over 6 factorial and goes in this way.
+
+363
+00:58:39,476 --> 00:58:43,875
+And we need to express this in terms of sigma notation.
+
+364
+00:58:43,875 --> 00:59:04,375
+So from 0 to 1, x times from n0 to infinite minus 1m plus, so not m plus, minus 1.
+
+365
+00:59:05,940 --> 00:59:24,000
+Minus 1 to n over x2 to n over 2 n factorial. Is that correct? If you expand this series, infinite sum series, you are going to obtain this expansion.
+
+366
+00:59:24,920 --> 00:59:30,120
+For n 0, we are going to obtain 1. For n 1, we are going to obtain this.
+
+367
+00:59:30,739 --> 00:59:33,900
+Fokus on the coefficient of x squared over 2!
+
+368
+00:59:34,340 --> 00:59:37,619
+If you substitute n1, we are going to obtain this.
+
+369
+00:59:38,440 --> 00:59:38,619
+Okay.
+
+370
+00:59:40,639 --> 00:59:41,900
+And goes in this way.
+
+371
+00:59:42,000 --> 00:59:42,819
+Okay, this is correct.
+
+372
+00:59:43,019 --> 00:59:46,199
+So do not forget to put dx.
+
+373
+00:59:47,699 --> 00:59:52,099
+Now, if you distribute this from 0 to 1,
+
+374
+01:00:06,579 --> 01:00:12,760
+Okay, now we are ready to distribute integration operator to sigma notation.
+
+375
+01:00:13,640 --> 01:00:26,200
+You know that integration operator is linear, implying that, so we can distribute that operation into terms of infinite series to n factorial.
+
+376
+01:00:26,860 --> 01:00:30,400
+So that is constant with respect to integration variable x.
+
+377
+01:00:30,960 --> 01:00:33,099
+That's why we can take out that constant.
+
+378
+01:00:33,715 --> 01:00:55,016
+Ok, now, from 0 to 1. So, if you integrate this, ok, let me integrate here, to n plus 1 dx. Bu kadar uzatmayacaksın test sınavında ama anlayın diye o tek tek yapıyorum arkadaşlar. Test sınavına direkt cevabı yapıştırırdınız.
+
+379
+01:00:58,003 --> 01:01:11,463
+Okay, now if we integrate this, so x2, 2n plus 2 over 2n plus 2, so we substitute upper bound, lower bound.
+
+380
+01:01:11,844 --> 01:01:21,963
+Now, as you see, finally, we got this from n0 to infinite, minus 1 to n over 2n factorial.
+
+381
+01:01:23,059 --> 01:01:38,119
+times, so, 1 over 2 n plus 2. So, this is series, infinite sum series, approximates this integration.
+
+382
+01:01:41,972 --> 01:01:43,152
+Gördünüz mü gençler?
+
+383
+01:01:43,932 --> 01:01:45,952
+Yani bir hesap makinası yapacaksınız.
+
+384
+01:01:46,912 --> 01:01:49,052
+Mesela şöyle yapabilirsiniz.
+
+385
+01:01:50,732 --> 01:01:51,272
+Dx
+
+386
+01:01:51,272 --> 01:01:55,972
+Genel bir C'den D'ye
+
+387
+01:01:55,972 --> 01:01:59,972
+A çarpı X çarpı kosünüs
+
+388
+01:01:59,972 --> 01:02:06,372
+Dx, Dx integralini hesaplayan genel bir formül yapabilirsiniz.
+
+389
+01:02:06,532 --> 01:02:07,012
+Homework.
+
+390
+01:02:14,036 --> 01:02:20,756
+Ok, but depending on C, D, A, B.
+
+391
+01:02:26,132 --> 01:02:26,612
+Evet.
+
+392
+01:02:31,251 --> 01:02:34,112
+Geçiyorum arkadaşlar. Burası anlaşıldı galiba.
+
+393
+01:02:39,284 --> 01:02:42,884
+Parametric Equation'lara geçmiyorum. Şöyle uygulamalara bir bakalım.
+
+394
+01:02:51,315 --> 01:02:52,675
+İndirilenlerde miydi?
+
+395
+01:03:03,507 --> 01:03:07,207
+Evet, burada çözmediğimiz uygulama var mıydı arkadaşlar?
+
+396
+01:03:18,387 --> 01:03:23,340
+Bunlar çözdük. Bunlar çıkmış sorular arkadaşlar, çoğu. Bunlar...
+
+397
+01:03:26,963 --> 01:03:29,144
+Bunları çözmüştük.
+
+398
+01:03:29,304 --> 01:03:30,744
+Pınar Hoca'nın şeyinden indirdim.
+
+399
+01:03:31,963 --> 01:03:32,804
+Bunları çözmüştük.
+
+400
+01:03:32,903 --> 01:03:34,604
+Benim kastettiğim bu değildi.
+
+401
+01:03:46,356 --> 01:03:49,796
+Bunlar Pınar Hoca'nın sayfasından indirebilirsiniz arkadaşlar.
+
+402
+01:03:49,956 --> 01:03:55,716
+You can download these exercises from the webpage of Pınar Hoca.
+
+403
+01:03:55,716 --> 01:03:56,436
+Okay.
+
+404
+01:03:57,736 --> 01:04:00,716
+Now, bu değil benim kastettiğim.
+
+405
+01:04:23,764 --> 01:04:24,284
+Ok.
+
+406
+01:04:36,916 --> 01:04:46,396
+Okay, so this is a very nice question. I think we can solve this. Did we solve this problem before? I think we didn't solve this problem before.
+
+407
+01:04:55,603 --> 01:04:57,123
+Okay, focus on this problem.
+
+408
+01:05:04,371 --> 01:05:13,871
+Ok, let's try to solve this problem. Find the summation of series by using the power series expansion of 1 over 1 minus x.
+
+409
+01:05:25,972 --> 01:05:51,851
+9'u çözmemiştik çünkü konuları anlatmamıştık. 9'u çözüm, bunlar basit, şunları çözmüyorum. Bunlar basit oldukları için. Bunlara bakmıyorum. Bunları çözmüştük diye hatırlıyorum birçoğunu. Evet. Bunları çözmedik mi? Bunları çözdük diye hatırlıyorum. Şunu çözmedik, 9'u çözmedik. 9'u çözelim. Hadi arkadaşlar.
+
+410
+01:05:53,715 --> 01:05:56,836
+Okay, let's try to solve this question.
+
+411
+01:05:57,856 --> 01:06:13,655
+Find the summation of series from n0 to infinite n plus 1 times n plus 2 over 2 to n by using the power series expansion of 1 over 1 minus x for absolute of x smaller than 1.
+
+412
+01:06:16,052 --> 01:06:24,912
+Mantığını anlatmıştım bu tarz şeylerin nasıl bulunduğunu. Orada n artı 1 ve n artı 2 1 olsaydı 1 bölü 2 üzeri n geometrik seri olacaktı.
+
+413
+01:06:26,152 --> 01:06:34,972
+Dolayısıyla geometrik serinin türevlerini alınca belirli mertebeden oradaki n artı 1 ve n artı 2 çarpanları gelecektir.
+
+414
+01:06:35,572 --> 01:06:38,412
+Türevlerini alıp uygun x değeri yazarsanız.
+
+415
+01:06:38,815 --> 01:06:44,435
+Söz konusu verilen, soruda verilen seri elde edilmiş olur değerli arkadaşlar.
+
+416
+01:06:46,155 --> 01:06:47,795
+Evet, çözün bakayım gençler.
+
+417
+01:07:05,907 --> 01:07:09,627
+[öğrenci]. Anlamıştın değil mi bu tarz soruların çözümünü?
+
+418
+01:07:26,900 --> 01:07:32,039
+Evet, [öğrenci] yok burada herhalde. [öğrenci], [öğrenci], pardon.
+
+419
+01:07:57,492 --> 01:07:59,292
+Evet gençler, yapan var mı?
+
+420
+01:08:35,539 --> 01:08:46,760
+Düzel [öğrenci], sen öğrendin o zaman konuyu. Bu soruyu yaptıysan, şu ana kadar anlattığımız birçok şeyi öğrenmişsin demektir. Tebrik et kendini. Tebrik ederim seni.
+
+421
+01:09:01,747 --> 01:09:09,107
+Evet, dersimiz derste öğrenilir arkadaşlar. Hiçbir zaman unutmayın, ders derste öğrenilir. Kendinizi zorlayacaksınız derste.
+
+422
+01:09:12,948 --> 01:09:19,968
+Yani ben elinden geldiğince, hızlı gitmem gereken yerde hızlı gidiyorum, yavaş gitmem gereken yerde yavaş gidiyorum.
+
+423
+01:09:22,708 --> 01:09:27,568
+Benim öğretme stratejim bu, bilmiyorum. Herkese belki bu uygun gelmiyordur ama.
+
+424
+01:09:47,123 --> 01:09:47,583
+Evet.
+
+425
+01:09:52,467 --> 01:10:14,547
+Bakalım beraber, ne yapıyorduk arkadaşlar? Geometrik seriyi yakınsadığı, şöyle silelim şuraya, geometrik serimizin yakınsadığı 1 bölü 1 eksi x'i belirli sayıda türevini alacaksınız. Ondan sonra uygun intis ötelemeleri.
+
+426
+01:10:14,996 --> 01:10:24,655
+ve uygun x değerleri yerleştirerek söz konusu verilen seriyi yakalamaya çalışacaksınız. Bakın, indi sötleme yöntemiyle de yapabilirsiniz.
+
+427
+01:10:26,996 --> 01:10:28,595
+Ok, focus on this.
+
+428
+01:10:29,595 --> 01:10:34,855
+As you see, if derivative 1 over 1 minus x first time, so we got this.
+
+429
+01:10:35,347 --> 01:10:42,288
+So if you derivate again, this first order derivation, you are going to obtain second order derivation, and we are going to obtain these terms.
+
+430
+01:10:42,927 --> 01:10:48,368
+So look at the initial terms here, k is 2, look at the initial term here, assign it to k1.
+
+431
+01:10:49,067 --> 01:10:56,268
+Now, so in order to obtain the series given in the equation, n plus 1, focus on this, n plus 1 times n plus 2.
+
+432
+01:10:56,728 --> 01:11:01,307
+So in order to obtain n plus 1 and n plus 2, so we do change of in this.
+
+433
+01:11:01,608 --> 01:11:03,288
+Okay, if you substitute k.
+
+434
+01:11:03,347 --> 01:11:29,907
+n plus 2, in order to obtain n plus 2 here. So here, n plus 2, n plus 1. If you substitute k n plus 2 here, initial term 2. If you substitute k 2 here, and the initial term n 0, and 0 must be 0 here. Now we got this. Okay. Now if you substitute x is equal to 1 over 2, so you are going to obtain this.
+
+435
+01:11:30,771 --> 01:11:32,012
+Var mı anlaşmayan bir yer?
+
+436
+01:11:33,912 --> 01:11:39,951
+Gördünüz mü? İndisi öteleme ile ne kadar basit yapabiliyorsunuz? Diğer türlü de uzun yoldan da yapabilirsiniz.
+
+437
+01:11:40,931 --> 01:11:43,492
+Evet. Sorusu olan var mı? İzleneni Koy için.
+
+438
+01:11:55,764 --> 01:11:58,043
+I think we did solve this problem before.
+
+439
+01:11:59,123 --> 01:12:02,324
+So we solve this problem yesterday.
+
+440
+01:12:02,324 --> 01:12:04,604
+So we solve this problem.
+
+441
+01:12:08,404 --> 01:12:15,624
+Did we solve this problem before? I think we didn't solve this problem before. Bunu çözdük mü arkadaşlar?
+
+442
+01:12:18,104 --> 01:12:25,204
+Sanki çözdük ki mi, çözmedik mi, o kadar benzer şeyler çözdük ki. Hatırlamıyorum arkadaşlar, siz daha iyi hatırlarsınız.
+
+443
+01:12:25,864 --> 01:12:33,463
+Find Maclaurin series of the function L of x from 0 to x cos t square. Sanki çözdük bunu ya.
+
+444
+01:12:35,891 --> 01:12:37,311
+Çözcük diye hatırlıyorum.
+
+445
+01:12:42,515 --> 01:12:46,755
+Bunu da, bunu da çövdük diye hatırlıyorum.
+
+446
+01:12:51,572 --> 01:12:52,652
+Bunu da çözdük.
+
+447
+01:12:56,948 --> 01:12:58,888
+Bunu da çözdüğümüzü hatırlıyorum arkadaşlar.
+
+448
+01:13:03,315 --> 01:13:30,755
+Evet, bitti. Çözmediğimiz soru var mı? Bunlar başka konular. Çözmediğimiz soru var mı diye bakıyorum ama yok. Bunlar başka sorular. Evet arkadaşlar, bugünlük bu kadar yeter. Zaten ben şu an devam edemeyeceğim. Tamam mı gençler? Sorunuz yoksa dersi bitirelim. Haftaya dediğimiz gibi yine bir özet geçerim. Yeni konuya başlarız.
+
+449
+01:13:31,636 --> 01:13:53,216
+Parametrik denklemler filan, çözmediğim soru tipleri var mı, yok mu, onlara bakarsın. Haftaya çözmediğimiz soru tiplerini gözden geçeriz. Zaten sınav öncesi yine yaz okulunda test sınavı yapmıştık. Onları çözeriz. Test sınavlarının sorularını da görürsünüz. Yani hazır bir şekilde girersiniz diye umut ediyorum.
+
+450
+01:13:54,136 --> 01:13:57,856
+Birinci vize tarihleri belli oldu mu gençler? Ben bakmadım siteye.
+
+451
+01:14:05,332 --> 01:14:06,472
+Belli olmadı değil mi?
+
+452
+01:14:08,811 --> 01:14:10,092
+Sağ olun gençler.
+
+453
+01:14:11,112 --> 01:14:14,512
+Birinci bize, tarihi 7. ve 8. hafta oldu.
+
+454
+01:14:14,592 --> 01:14:15,692
+Biz kaçıncı haftadayız?
+
+455
+01:14:15,772 --> 01:14:16,752
+Üçüncü haftadayız.
+
+456
+01:14:17,212 --> 01:14:18,532
+Zaten önde gidiyoruz.
+
+457
+01:14:18,852 --> 01:14:19,832
+Önde gitmemiz iyi.
+
+458
+01:14:20,192 --> 01:14:21,632
+Ama öğreniyor olmanız lazım.
+
+459
+01:14:21,752 --> 01:14:23,212
+Diyorsanız hocam çok hızlı gidiyorsunuz.
+
+460
+01:14:23,252 --> 01:14:23,852
+Yavaşlarım.
+
+461
+01:14:24,852 --> 01:14:30,192
+Ama yavaşlarsak sınav öncesi genel işte o değerlendirmeleri, soru çözümlerini yapamayız.
+
+462
+01:14:31,123 --> 01:14:49,244
+Örümden geldiğince, önden gidip, bitirip, genel değerlendirme yapmak istiyorum. O şekilde, gidelim, iyi olur diye düşünüyorum. Abi itiraz eden olursa değiştiririz. Sıkıntı yok. Evet, kendinize iyi bakın o zaman gençler, sorunuz yoksa. Hadi, görüşürüz.
