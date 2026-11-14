@@ -1,0 +1,3047 @@
+1
+00:12:30,611 --> 00:12:31,791
+Günaydın arkadaşlar.
+
+2
+00:12:44,820 --> 00:12:53,060
+Evet, bu hafta sunum sırası için yine sizlerden talep alacağım.
+
+3
+00:12:54,580 --> 00:12:59,700
+Ders duvarına sırayla kimler sunum yapmak istiyorsa lütfen isimlerini yazsın.
+
+4
+00:13:09,940 --> 00:13:14,640
+Evet, [öğrenci] ilk sırada. [öğrenci] ikinci sırada.
+
+5
+00:13:39,283 --> 00:13:41,283
+Ve şunu yuvmaz.
+
+6
+00:13:43,283 --> 00:13:44,283
+Örbuna.
+
+7
+00:13:46,783 --> 00:13:48,283
+Ve hatice.
+
+8
+00:13:48,984 --> 00:13:49,984
+[öğrenci].
+
+9
+00:13:54,676 --> 00:14:05,956
+İlk dördü belirledik. Onur sizinle başlayalım. Bir ekran paylaşımı yapın lütfen. Bir de kameranızı açın. Rica edeceğim.
+
+10
+00:14:10,611 --> 00:14:30,611
+Günaydın hocam. Günaydın. Ekranım şu an sunumu açıyorum hocam. Gözüküyor mu hocam? Evet gayet güzel sizi duyuyoruz, görüyoruz. Buyurun.
+
+11
+00:14:30,611 --> 00:14:34,451
+Evet merhabalar adım [öğrenci].
+
+12
+00:14:35,956 --> 00:14:45,956
+Ben T-set çalışmasını bugün anlatacağım size. Bunun yanı sıra kendi yaptığım segmentasyon çalışmasını anlatacağım.
+
+13
+00:14:45,956 --> 00:14:57,956
+Bu makaleyi seçmemin sebebi Vision Transformer temelli modeller üzerine deneyim kazanmak amacıyla bu makaleyi seçtim.
+
+14
+00:14:59,796 --> 00:15:04,676
+Bu çalışmada Vision Transformer temelli bir segmentasyon yapıyor.
+
+15
+00:15:07,556 --> 00:15:15,836
+Dünyada diş hizalanması problemi olan malüklüzyon hastalığından pek çok insan buzdarip.
+
+16
+00:15:16,716 --> 00:15:27,276
+Malüklüzyon çocuk yaşlarda, çocukluk sürecinde çevresel faktörlerin etkisiyle diş hizasının bozulması hastalığına deniyor.
+
+17
+00:15:27,892 --> 00:15:48,692
+Maliklüzyon hastalığı ortodontik tedavi ile iyileştiriliyor. İş hekimleri tarafından. Bu tedavi için de tıbbi görüntüleme gerekiyor. Genelde bu görüntüleme 3 boyutlu görüntüler üzerinde oluyor.
+
+18
+00:15:48,820 --> 00:15:57,500
+Bu 3 boyutlu görüntüler üzerinden de kullanılan yapay zeka modelleri mevcut.
+
+19
+00:15:57,500 --> 00:16:03,940
+Fakat bu 3 boyutlu görüntülerin alınması 2 boyutlu görüntülere göre daha maliyetli.
+
+20
+00:16:03,940 --> 00:16:12,740
+Genelde 3 boyutlu görüntüler üzerinde çalışıldığı için bu çalışmada da TITSEG modeli önerilmiş.
+
+21
+00:16:13,107 --> 00:16:20,107
+T-Seg modeli iki boyutlu görüntüler üzerinde çalışıyor. Bunun yanı sıra...
+
+22
+00:16:20,115 --> 00:16:29,556
+Bu çalışmada IO-150K adlı bir veri seti çalışmanın sonucunda edilmiş. Bu veri setini de birazdan tanışacağım.
+
+23
+00:16:29,556 --> 00:16:43,467
+IO-150K veri seti, 3 farklı veri setinden oluşan insan ve makineler hem de makinelerden faydalanarak etiketlenmiş bir veri seti.
+
+24
+00:16:43,604 --> 00:16:52,024
+Doktorlar tek tek görüntüleri etiketlemiş. Bunların yanı sıra makinelerle, bilgisayar yardımıyla da segmentasyon yapılmış ve verile etiketlenmiş.
+
+25
+00:16:53,903 --> 00:17:08,024
+T-Seg modeli şu şekilde çalışıyor. Bizim bir görüntümüz var. Bu görüntünün H yükseklik, W genişlik ve C kanal sayısını ifade ediyor.
+
+26
+00:17:09,983 --> 00:17:19,983
+Klip Enkoder'üne sokuluyor. Bu Vision Transformer temelli bir enkoder. Daha sonra bu enkoderdan tokenlar çıkartılıyor.
+
+27
+00:17:19,983 --> 00:17:34,983
+Tokenlarda görüntünün piksel değerlerinin sıralanmış hali oluyor. Bu tokenların yanı sıra ön ve arka plan yani diş ve diş olmama durumu. Arka planda ağız içinin geri kalanı oluyor.
+
+28
+00:17:35,059 --> 00:17:59,819
+Bu diş ve diş olmama durumunu barındıran tokenlar var. Bunun yanı sırada dişin ID'leri ve hangi klasa, hani dişlerin de klasları var işte azı dişi veya ön dişler falan. Hangi klasa ait olduğu bilgisini barındıran token oluşuyor Clip Encoder'dan. Bu tokenlar transformer katmanlarında dikkat mekanizmaları...
+
+29
+00:18:00,435 --> 00:18:16,935
+Bu skorlandırmalar sonucunda da 3 farklı yöntemle, Dinear Upscaler, Multi-Hit Cross Gating ve Interpolasyon ile farklı farklı özellik çıkarılımları yapılıyor.
+
+30
+00:18:17,036 --> 00:18:24,195
+Ve en sonunda bu özellik çıkarımları toplanıyor. Burası MSA bloğu oluyor. Burada yapılan özellik çıkarma işlemi MSA bloğu içerisinde yapılıyor.
+
+31
+00:18:28,435 --> 00:18:49,435
+Görüntüler Upscaling ediliyor. Çözünürlükleri arttırılıyor. Çözünürlüklerin arttırıldığı kısımda da bu tokenlar önce normal halleriyle daha sonrasında insan uzmanların etiketleme bilgileri dahil edilerek hem...
+
+32
+00:18:50,036 --> 00:19:16,196
+Bu çıktılar. Hem de insan uzmanların etiketleme, dişlerin birbirinden ayrı olma bilgisini barındıran özelliklerle dot product ediliyor. Daha sonrasında da her diş klasına göre sınıflandırılıyor. En sonunda da dişlerin hangi klasa ait olduğu bilgisi sınıflandırılmış oluyor bu algoritmanın. Bu algoritmanın özelliği şu.
+
+33
+00:19:17,556 --> 00:19:30,155
+Diş, iki boyutlu görüntüler üzerinde çalışıyor ve bunların yanı sıra sadece diş veya arka plan olarak ayırmaktan ziyade diğer algoritmalar bunu yapıyor.
+
+34
+00:19:30,155 --> 00:19:38,476
+Sadece dişleri segment ediyor ve dişlerin semantik bir segmentasyonu oluyor. Buradaki gibi instans segmentasyonu olmuyor.
+
+35
+00:19:39,376 --> 00:19:45,556
+Bu çalışmada hem dişlerin Class ID'leri, hangi klasa ait olduğu bilgileri...
+
+36
+00:19:45,556 --> 00:19:53,556
+Dişin ön ve arka plan olma durumu segment ediliyor.
+
+37
+00:19:53,556 --> 00:19:59,556
+Diğer çalışmalarda, daha önce yapılan çalışmalarda 3 boyutlu görüntüler üzerinde çalışılmış.
+
+38
+00:20:00,115 --> 00:20:14,235
+Bu üç boyunlu görüntülerde de genelde diş olma durumu veya arka plan olarak ayrılmış. Dişler ayrı ayrı klaslar şeklinde segmente edilmemiş. Önceki çalışmalardan da farkı burada başlıyoruz zaten.
+
+39
+00:20:14,963 --> 00:20:31,443
+Mask MSN, dişlerin nesnesini konumlandırıyor. Konvolisyon temelli çerçeveler var. Bunlar da dişlerin geometrik özelliklerini öğrenmesini geliştiriyor.
+
+40
+00:20:42,963 --> 00:20:49,963
+Bu, diğer örneğe, bu şekilde deşleri segment ediyor. Bunlar üç boyutlu görüntüler üzerinde yapılan çalışmalar.
+
+41
+00:20:49,963 --> 00:21:01,963
+Yöntem olarak dediğim gibi, Teat Segin hedefi yalnızca diş bölgeleriyle arka plan bölgelerini ayırt etmekten ziyade her dişin kategorisini de ayırt etmek, kılasını da ayırt etmek.
+
+42
+00:21:01,963 --> 00:21:06,763
+Aynı zamanda arka planda bir transformer mimarisi kullanılıyor.
+
+43
+00:21:07,571 --> 00:21:17,571
+Omurga olarak, klip kullanılmış. Bunun yanı sıra 2 boyutlu görüntüler üzerinde çalışıyor.
+
+44
+00:21:19,567 --> 00:21:36,967
+Veri etiketleme işlemi klinik alanda 4 ortodontist ile birlikte gerçekleştirilmiş. Az önce topladığım veri setini etiketlemişler. İş gücünün maliyetlerini azaltmak amacıyla hem insan hem de makine etiketleme kombinasyonu kullanılmış.
+
+45
+00:21:37,971 --> 00:21:58,411
+Karşılaştıran yöntemler de burada listelenmiş. Bunlar DeepLab, Segmenter, Segvon, Segformer ve Swing Transformer algoritmaları. İlk üçü Vision Transformer temelli segmentasyon algoritmaları. Swing Transformer, Vision Transformer temelli bir mimari.
+
+46
+00:21:58,411 --> 00:22:05,971
+Bait ve Wid Adapter de Eğitim başarısını arttırmaya yönelik.
+
+47
+00:22:05,971 --> 00:22:07,692
+Bu örneğe bakalım.
+
+48
+00:22:08,084 --> 00:22:32,144
+Bunların hepsi karşılaştırılmış TITSEC ile birlikte. Az önce liste edilen algoritmalar 30 epochta eğitilmiş ve her bir dişin Interception over Union skorlarını içeren bir listede gösterilmiş. Bunların her birinin Interception over Union skorlarının ortalamaları en sonunda gözüküyor.
+
+49
+00:22:36,084 --> 00:22:48,076
+Bu örneğe, genelde %80 civarı sonuç vermişken, T-TSEC modeli 5 epoch'ta eğitildiği haliyle bile %91 ortalama Insta-Exception Overunion.
+
+50
+00:22:48,243 --> 00:22:53,723
+Skoru elde etmiş. Yani daha başarılı olmuş diğer modellere ve yöntemlere göre.
+
+51
+00:22:54,003 --> 00:23:12,703
+Onur. Evet buyurun hocam. Bir geri gelebilir misin? Bitiyor galiba ama burada tecrübe T16'ya kadar 16 tane sınıf var diye görüyorum. Bu sınıf sayısı 16 ama 32 tane diş var ya. Oradaki numaralandırma mantığı nedir? Biraz açıklayabilir misin?
+
+52
+00:23:15,508 --> 00:23:32,887
+Üst çene ve alt çene olarak ayrılmış. Toplam 32 diş var ama bazı insanların ağzında 32 diş olmuyor. Daha eksik diş oluyor. 28 diş de olabiliyor. Ondan dolayı mesela şu T8 ve T16 dişleri nank almış. Çünkü verinin içinde muhtemelen diş yok.
+
+53
+00:23:33,395 --> 00:23:52,395
+Üst çenede 16 diş olarak bir tahmin yapılıyor. Diş sayısına göre sınıflandırma yapılıyor. Bunda 28 diş var herhalde. 30 diş var. Daha doğrusu 28 diş var.
+
+54
+00:23:53,056 --> 00:24:08,796
+Burada 32'ye çıkıyor. Yani eğer bu T1'den T16'ya kadar olanlar üst çenede ve alt çenede T1'ler diye ayrı ayrı etiketlenmemişse tek etiket verilmiş diye düşünüyorum.
+
+55
+00:24:08,796 --> 00:24:20,195
+16 çarpı 2, 32 yapıyor. Orada sorun yok. Ben şeyi anlayamamıştım. Dediğin gibi 3 çeneyle alt çenede diyorsun.
+
+56
+00:24:21,056 --> 00:24:26,056
+Ön Dişin numarası T1 mesela.
+
+57
+00:24:26,675 --> 00:24:53,415
+Evet hocam. Her diş kendine göre şeye ayrılmış. Bir de veri seti biraz karışık hocam. Hani çeşitli şu şekilde sadece alt dişlerin olduğu veriler de var. Hani bazı görüntülerde 3 farklı veri seti birleştirildiği için bazı görüntülerde sadece alt dişler var. Bunlar 2 boyutlu görüntüye çevrilmiş halleri. Normalde Challenge 80K mesela 3 boyutlu görüntüler. Ama bunları 2 boyutlu görüntüle çevrilmişler.
+
+58
+00:24:54,675 --> 00:25:21,516
+Veri setlerinden bir tanesinde bu şekildeydi. Sadece alt çene vardı. Diğer ikisinde de farklı. Çok fazla veri var. Verilerin çeşitleri farklı. İnsanlar da etiketlemiş falan. Veri seti büyük olduğu için net bir şey söylenmiyor hocam. Ama dediğim gibi alt çene ve üst çene olarak ayrılıyor yani.
+
+59
+00:25:22,163 --> 00:25:23,884
+Tamam, teşekkürler.
+
+60
+00:25:24,788 --> 00:25:50,387
+Burada kaynakçası verilmiş. Şimdi de benim anlattığım, daha doğrusu benim yaptığım çalışmayı anlatacağım. Ben veri seti olarak Cagle'da bulduğum bir veri seti kullandım. Bu veri setini şundan dolayı tercih ettim. Normalde veri setleri genelde diş olma ve arka plan, diş ve arka plan olarak segmentasyon maskesine sahip.
+
+61
+00:25:50,640 --> 00:25:58,640
+Fakat bu veri setin her diş içinde özel olarak label'lanmış maskelerini barındırıyordu.
+
+62
+00:25:58,640 --> 00:26:00,556
+Bunları...
+
+63
+00:26:01,364 --> 00:26:19,364
+Bunlar RGB format'taydı. Maskeleri çıkartılmış haldeydi. Maskeler değişti dediğim gibi. Kategori IDC ile birlikte verilmişti. 598 adet görüntü ve maskelerini içeriyordu.
+
+64
+00:26:29,364 --> 00:26:29,584
+Ne geliyor?
+
+65
+00:26:31,124 --> 00:26:52,124
+Bu, parçalara ayrılıyor görüntüler. Bu parçalara ayrılan, daha küçültülmüş, küçük görüntüler, parça görüntüler, adım adım çözünürlükleri düşürülerek özellik haritası çıkarılıyor.
+
+66
+00:26:59,124 --> 00:27:13,163
+Yapılıyor ve maskeler elde ediliyor. Eğitim, modelin eğitim ve başarısı durumu da bu şekilde. Training loss olarak eküresi kullandım. Validasyon.
+
+67
+00:27:14,036 --> 00:27:27,776
+Validasyon içinde Ortalama Interception Over Union skorunu hesaplattım. Veriyi %80'i eğitim, %10'u test olarak ayırdım. Modeli 20 Epoch boyunca eğittim.
+
+68
+00:27:28,056 --> 00:27:40,836
+Elde ettiğim skorlarda, Accuracy skoru 0.94, Interception Over Union skoru 0.55, bunlar eğitim verisinin skorları. Eğitim sürecindeki validasyon verisinin skorları.
+
+69
+00:27:42,036 --> 00:27:49,536
+Test verisinin skorları ise, accuracy 0.94, interception over union skoru da 0.54.
+
+70
+00:27:51,347 --> 00:27:53,067
+Beni dinlediğiniz için teşekkür ederim.
+
+71
+00:27:53,728 --> 00:27:54,367
+Evet, hocam.
+
+72
+00:27:54,367 --> 00:28:09,387
+Bu, accuracy 0.94 elde ettiğin accuracy'yi, intersection over union'ı belli bir eşiğin üstünde olanları doğru kabul ederek yapıyorsun muhtemelen, doğru mu?
+
+73
+00:28:09,847 --> 00:28:10,427
+Evet, hocam.
+
+74
+00:28:11,147 --> 00:28:12,887
+Kaç seçtin bir kreş oldu?
+
+75
+00:28:13,807 --> 00:28:15,027
+0.5 seçtim.
+
+76
+00:28:15,604 --> 00:28:31,963
+Tamam. Bir de Class Confusion Matrix üretebilir miydin acaba diye sorsam. Yani mesela orada senin 16 tane sınıfın var ya. Mesela sen de 16 yaptın muhtemelen. Burada en çok hata yaptığı dişler hangisi oluyor mesela onu görmek açısından?
+
+77
+00:28:32,523 --> 00:28:43,183
+Hocam ben onu şey daha doğrusu Class Confusion Matrix yapmadım. Bu veri setinde hocam 32 her diş ayrı ayrı şey yapılmıştı. 16 klas yoktu. 32 klas vardı.
+
+78
+00:28:43,796 --> 00:28:50,195
+Clans Confusion Matrix aklıma gelmedi açıkçası ya. Onu yapmadım.
+
+79
+00:28:50,420 --> 00:29:17,180
+Tamam. Rapora koyabilir misiniz? Bu kodları yüklemek için tüm arkadaşlara söylüyorum. Kodları yüklemek için bu online Yıldız Edu.tr'de alan açtım. Hem kodunuzu hem raporunuzu aslında yüklemenizi istiyorum. Raporda şey, bu kodda ne çalıştırdınız, ne elde ettiniz bunları anlattığınız kısa bir rapor olacak. Oraya koyarsanız güzel olur.
+
+80
+00:29:18,420 --> 00:29:22,099
+İkinci bir rapor mu olacak? Sadece kodları mı açıklayayım?
+
+81
+00:29:22,099 --> 00:29:30,820
+Yani hangi modeli uyguladın, ne sonuç elde ettin gibi. Sadece kendi kodunuzla ilgili kısım.
+
+82
+00:29:30,840 --> 00:29:31,099
+Tamam.
+
+83
+00:29:31,519 --> 00:29:33,980
+Teşekkür ediyoruz ve size sunumunuzdan dolayı altyazı yapıyoruz.
+
+84
+00:29:33,980 --> 00:29:35,000
+Ben teşekkür ederim hocam.
+
+85
+00:29:36,500 --> 00:29:42,620
+Teşekkürler [öğrenci]. İkinci sırada [öğrenci] var. [öğrenci] merhaba.
+
+86
+00:29:42,740 --> 00:29:43,360
+Merhaba hocam.
+
+87
+00:29:44,180 --> 00:29:48,059
+Evet, [öğrenci] bir ekran paylaşımı yapalım.
+
+88
+00:29:48,120 --> 00:29:49,000
+Aynen, teşekkür ederim.
+
+89
+00:29:54,451 --> 00:30:09,072
+Geldi mi? Yok gelmedi. Şöyle. Evet şu anda görebiliyoruz. Bu arada [öğrenci]. Evet buyurun. Konuyu neden seçtiğinizi de açıklayarak. Buyurun.
+
+90
+00:30:09,072 --> 00:30:19,811
+Ben burada tıbbi görüntüleme ile ilgili aslında bir çalışma arıyordum. Bunu ararken Federated Evidential Active Learning diye bir yöntem buldum.
+
+91
+00:30:20,500 --> 00:30:26,299
+Daha önce de federe öğrenme ile çalıştığım için ilgimi çektiği bu yöntem.
+
+92
+00:30:26,299 --> 00:30:29,799
+Ve bunu çalışmak istedim.
+
+93
+00:30:29,799 --> 00:30:36,200
+Şimdi öncelikle sunum boyunca çalışmanın neden önemli olduğunu,
+
+94
+00:30:36,200 --> 00:30:44,799
+ardından literatürdeki ilgili yöntemleri, sonra kullanılan veri setleri ve deneyleri anlatarak tamamlayacağım.
+
+95
+00:30:46,163 --> 00:31:10,743
+Öncelikle tıbbi verilerde genelde karşılaşılan iki tane problem var. Bunlardan ilki tıbbi görüntü verilerinin hem etik hem de yasal düzenlemeler nedeniyle kurumlar arası paylaşımda ciddi kısıtlamalara tabi olması ve bu yüzden de farklı sağlık merkezlerindeki verilerin bir araya toplanamıyor olması gibi bir problem var.
+
+96
+00:31:14,451 --> 00:31:30,271
+Etiketli verilerin az olduğu, az olması gibi bir problem var ve bu manuel etiketlemenin de maliyeti yüksek. Bu etiketleme için çünkü uzman kişiler olması gerekiyor. Etiketlemeyi yapacak kişilerin.
+
+97
+00:31:42,259 --> 00:31:45,339
+Medikal verinin gizliliğini koruyan bir yöntem aslında.
+
+98
+00:31:47,900 --> 00:31:54,539
+Ancak, Federated Learning yalnızca veri gizliliği problemini çözüyor.
+
+99
+00:31:55,059 --> 00:32:03,259
+Etiketli verinin azlığı problemini çözmüyor. Burada da, Federated Active Learning diye bir yöntem ortaya çıkıyor.
+
+100
+00:32:03,759 --> 00:32:09,400
+Federated Active Learning her sistemciler kendi verisindeki en bilgilendirici örnekleri seçip,
+
+101
+00:32:09,748 --> 00:32:20,508
+Uzmanlara yalnızca bu verileri etiketletmeyi amaçlıyor. Örneğin 1000 tane veri içerisinden 50 tane en bilgilendirici veriyi seçip yalnızca bunları etiketletiyor.
+
+102
+00:32:22,627 --> 00:32:36,107
+Bu sayede daha hızlı bir şekilde, daha düşük maliyetle bir eğitim yapmış oluyoruz. Ancak mevcut federatik takteli örnekler genellikle veri dağılımının homojen olduğunu
+
+103
+00:32:36,511 --> 00:32:47,511
+Varsayarak bir seçim yapıyor. Burada da Domain Shift gibi bir senaryoyla karşı karşıya kalabiliyoruz.
+
+104
+00:32:47,511 --> 00:33:01,291
+Federated Essential Active Learning'te ise global ve lokal modellerin dijitlet tavanlı kanıtlayıcı modellere dönüştürülmesiyle aleatrik yani veri kaynaklı ve epistemik yani model kaynaklı.
+
+105
+00:33:01,428 --> 00:33:08,348
+Belirsizlikleri ayırtıyor. Bu sayede heterojen ortamda da daha güvenli bir örnek seçimi mümkün olmuş oluyor.
+
+106
+00:33:10,908 --> 00:33:13,708
+Elite Ayetleri'deki örneklere bakacak olursak burada
+
+107
+00:33:13,968 --> 00:33:16,788
+Öncelikle Federated Learning, daha sonra
+
+108
+00:33:17,308 --> 00:33:20,108
+Sempervised Federated Learning yönteminden ve
+
+109
+00:33:20,628 --> 00:33:24,468
+Klasik Federated Taklifli Örnek yöntemlerinden bahsediyoruz.
+
+110
+00:33:27,571 --> 00:33:34,731
+Federated Learning verilerin bir merkeze toplanmadan uç cihazlarda eğitilen modellerin ağırlıklarını sunucuda birleştirir.
+
+111
+00:33:36,711 --> 00:33:42,751
+Bu birleştirme için kullanılan en popüler yöntem de Federated Averaging. Burada da akışını görebiliyoruz.
+
+112
+00:33:44,351 --> 00:33:54,192
+Sonucu güncel modeli sistemcilere yolluyor. Daha sonra sistemciler yerel verileriyle, birkaç adım burada kaç epo olarak verilemişsek o kadar eğitim yapıyor.
+
+113
+00:33:54,836 --> 00:34:02,435
+Daha sonra ağırlıklar sunucuya gönderiliyor ve burada sunucu ağırlıkları ortalayarak yeni bir global model ortaya çıkarıyor.
+
+114
+00:34:02,935 --> 00:34:09,635
+Ve bu istediğimiz Communication Round kadar bu işleyiş devam ediyor.
+
+115
+00:34:09,635 --> 00:34:11,235
+Akış devam ediyor.
+
+116
+00:34:13,536 --> 00:34:21,635
+Sim Supervised Federated Turning yöntemleri ise az sayıda etiketli veriden yararlanarak modelin yüksek güvenliğe tahmin ettiği etiketsiz
+
+117
+00:34:21,972 --> 00:34:29,972
+Verileri sudo etiket verip tekrar eğitim döngüsüne dahil ediyor. Bu sayede etiketsiz verileri de kullanmış oluyoruz.
+
+118
+00:34:29,972 --> 00:34:36,972
+Yani burada etiketsiz verileri etiketleyerek eğitime katma olayı var.
+
+119
+00:34:36,972 --> 00:34:42,972
+Burada federated learning den en büyük farkı
+
+120
+00:34:43,699 --> 00:34:50,039
+Etiketsiz verileri olması ve bu etiketsiz verilere bir etiket atayarak bunları tekrar eğitime dahil etmesi.
+
+121
+00:34:53,679 --> 00:34:54,719
+Federated Active Learning
+
+122
+00:34:54,719 --> 00:35:06,619
+Federated Learning ortamında her istemcinin kendi veri havuzunda belirsizlik temelli örnek seçimi yaparak etiketleme maliyetini minimize eden bir iteratif yöntem.
+
+123
+00:35:08,596 --> 00:35:20,895
+Burada adımları şu şekilde. Küçük bir etiketli veri ile başlangıç modeli eğitiliyor. Daha sonra bu eğitilen model uç cihazlara gönderiliyor.
+
+124
+00:35:20,895 --> 00:35:28,395
+Ve uç cihazlar etiketsiz veriye belirsizlik skoru atarak en yüksek belirsizlik taşıyan örnekleri etiketlemek üzere seçiyor.
+
+125
+00:35:28,395 --> 00:35:32,204
+Bunları seçildikten sonra uzmanlar bunları etiketliyor.
+
+126
+00:35:33,108 --> 00:35:36,688
+Etiketlenen verilerle lokal ve global modeller güncelleniyor.
+
+127
+00:35:36,688 --> 00:35:42,539
+Burada hedefe ulaşana kadar 2 ve 4. adımlar arası tekrarlanıyor.
+
+128
+00:35:47,027 --> 00:35:51,127
+Evet, burada Federated Evidential Active Learning yöntemine geçecek olursak.
+
+129
+00:35:53,947 --> 00:35:57,527
+Federated Evidential Active Learning heterojen dağılıma sahip.
+
+130
+00:35:58,027 --> 00:36:07,247
+Federated Learning ortamında hem veri belirsizliğini hem de model belirsizliğini ayrıştırarak en faydalı örnekleri seçmeyi amaçlıyor.
+
+131
+00:36:08,787 --> 00:36:12,887
+Evidential modelleme kısmı var bu.
+
+132
+00:36:13,204 --> 00:36:37,524
+Federated Evidential Learning'in, Active Learning'in. Burada her istemcideki sınıflandırıcı son katman logitlerini doğrudan kullanmak yerine dijilet dağılımı parametrelerine dönüştürüyoruz ve bu dönüşüm modelin kanıt olarak adlandırdığı, evidence olarak yani, her sınıfa ne kadar güven duyduğunu ölçen bir skor üretiyor.
+
+133
+00:36:39,507 --> 00:36:51,147
+Belirsizlik ayrıştırma konusu var. Burada aleatorik yani veri belirsizliği ve epistemik yani model belirsizliği ayrıştırılıyor.
+
+134
+00:36:52,747 --> 00:37:06,587
+Calibrated Evidential Sampling kısmı var. Burada hem global modelin hem de her istemcinin lokal modelinin aleatorik belirsizlik skorları bir arada değerlendiriliyor.
+
+135
+00:37:07,572 --> 00:37:16,971
+Epistemik belirsizlikte yalnızca global ölçekte hesaplanıyor ve bu bize modelin nerede daha fazla öğrenmeye ihtiyacı var sorusunu yanıtlamaya çalışıyor.
+
+136
+00:37:18,112 --> 00:37:31,592
+Seçilen örnekler arasında benzerlik örnek çeşitliliğini korumak üzere bir çeşit gevşetme, yani diversity relaxation mekanizmasıyla benzerliği az dağıtmaya çalışıyoruz.
+
+137
+00:37:32,820 --> 00:37:46,800
+Evidential Model Learning kısmı var. Burada da Federated Evidential Active Learning'te normal çarpmaz entropi kaybının yanı sıra bir kanıt düzeltme düzenleme yani Evidence Regularization terime ekleniyor.
+
+138
+00:37:46,900 --> 00:37:54,980
+Bu terim gereksiz yere aşırı güven oluşturmayı engelliyor ve belirsizliği daha doğru temsil eden bir model parametresinin öğrenilmesini sağlıyor.
+
+139
+00:37:55,980 --> 00:37:58,980
+Burada iteratif sürece bakacak olursak.
+
+140
+00:37:59,572 --> 00:38:06,572
+Sunucu mevcut global modeli istencilere gönderiyor. Aynı şekilde.
+
+141
+00:38:06,572 --> 00:38:15,572
+İstenciler etiketsiz verideki her örnek için Evidential modelleme yaparak aleatrik ve epistemik skorları hesaplıyor.
+
+142
+00:38:16,572 --> 00:38:25,387
+Daha sonra Calibrated Evidential Sampling ile en yüksek toplam belirsizliğe sahip bir
+
+143
+00:38:25,748 --> 00:38:30,207
+Birbiriyle çeşitlilik kriteri sağlayan örnekleri seçiyoruz.
+
+144
+00:38:30,207 --> 00:38:40,547
+Seçilen örnekler uzmanlar tarafından etiketleniyor ve hem normal hem de evlenişli kayıpları ile lokal modeller güncelleniyor.
+
+145
+00:38:40,547 --> 00:38:43,748
+Daha sonra güncellenmiş yerel modeller sunucuya gönderiliyor.
+
+146
+00:38:43,748 --> 00:38:51,748
+Burada da yine Federated Devocink gibi yöntemlerle global modellerle bu modeller birleştiriliyor.
+
+147
+00:38:53,139 --> 00:38:57,139
+İstediğimiz doğruluğa ulaşana kadar bu adımlar tekrarlanıyor.
+
+148
+00:38:59,739 --> 00:39:05,339
+Burada da kullanılan veri setlerinden bahsedeceğim.
+
+149
+00:39:05,939 --> 00:39:13,339
+5 tane veri set kullanılmış. Bunlardan ilk ikisi sınıflandırma için, kalan 3 tanesi de segmentasyon için kullanılmış.
+
+150
+00:39:14,260 --> 00:39:26,260
+FED-AİCİ Yöntemi Cilt Dezyonu Sınıflandırması yapan bir veri seti. Burada 4 farklı veri setinin birleşimiyle oluşturulmuş bir veri seti var elimizde.
+
+151
+00:39:26,260 --> 00:39:35,260
+FED-KAMERLYON Meme Kanseri ile ilgili bir veri seti. Burada da yine 5 farklı veri seti birleştirilmiş.
+
+152
+00:39:35,260 --> 00:39:41,260
+FED-POLIP Endoskopik polip segmentasyonu için kullanılıyor.
+
+153
+00:39:41,844 --> 00:39:45,844
+ve 4 farklı merkezden alınan veriler birleştirilmiş.
+
+154
+00:39:45,844 --> 00:39:51,844
+Fet Prostat, Prostat MRI segmentasyonu için kullanılıyor.
+
+155
+00:39:51,844 --> 00:39:54,844
+6 farklı kaynaktan alınan veriler var.
+
+156
+00:39:54,844 --> 00:39:58,844
+Fet Fundus da Retinal Fundus segmentasyonu için kullanılıyor.
+
+157
+00:39:58,844 --> 00:40:01,844
+ve 4 farklı merkezden alınmış veriler var.
+
+158
+00:40:01,844 --> 00:40:06,844
+Burada farklı farklı merkezlerden alınmış verileri birleştirmelerinin amacı aslında.
+
+159
+00:40:07,039 --> 00:40:13,039
+Daha gerçek dünya senaryosuna uygulamak için yapılmış bir şey.
+
+160
+00:40:13,039 --> 00:40:19,039
+İşte farklı client'larda farklı farklı veri setlerinden veriler olsun.
+
+161
+00:40:19,039 --> 00:40:25,039
+Bunların bazılarının mesela görüntüleme teknikleri de birbirinden farklı.
+
+162
+00:40:25,039 --> 00:40:31,039
+Bu sayede aslında gerçek dünyadaki farklı hastaneleri simüle etmiş oluyoruz.
+
+163
+00:40:33,300 --> 00:40:44,300
+Burada deney sonuçlarına gelecek olursak makalede yapılan. Bu yöntemlerin hepsi aslında Federated Active Learning yöntemleri.
+
+164
+00:40:44,300 --> 00:40:57,300
+F-A-L yöntemini de bunlarla karşılaştırmışlar. Burada yalnızca global modelinden global modelle bir belirsizlik tahmini yapılıyor.
+
+165
+00:41:00,244 --> 00:41:07,844
+Üçüncüde de ikisini de kullanarak aslında bir belirsizlik tahmini yaparak seçim yapılıyor.
+
+166
+00:41:10,724 --> 00:41:21,124
+Burada çizgiyle gösterilen kısım full dediği aslında yanlış hatırlamıyorsam supervised learning ile elde edilmiş sonuçlar.
+
+167
+00:41:22,724 --> 00:41:26,404
+Burada baktığımız zaman feda edicik veri setinde hem
+
+168
+00:41:26,496 --> 00:41:29,896
+Supervised Learning ile yapılmış sonuçları geçiyor.
+
+169
+00:41:29,896 --> 00:41:31,615
+Fair yöntemi hem de
+
+170
+00:41:32,376 --> 00:41:35,195
+Diğer Federated Active Learning
+
+171
+00:41:35,716 --> 00:41:38,276
+ile yapılan sonuçları geçiyor.
+
+172
+00:41:38,776 --> 00:41:44,155
+Burada 3. round'dan sonra özellikle bazılarında düşüş olduğunu görüyoruz.
+
+173
+00:41:44,416 --> 00:41:46,456
+Burada Domain Shift gibi
+
+174
+00:41:46,716 --> 00:41:49,276
+bazı problemlerin ortaya çıkmaya başladığını
+
+175
+00:41:49,536 --> 00:41:50,816
+öngörebiliriz.
+
+176
+00:41:52,596 --> 00:42:07,036
+FED Kameleon deri setindeki sonuçları da görecek olursak, Supervised yöntemi geçememiş ancak diğer Federated Aktur Önlük yöntemlerinin hepsinden çok daha iyi sonuçlar verdiğini görebiliyoruz.
+
+177
+00:42:14,963 --> 00:42:17,224
+Burada segmentasyon konuşmalarını görüyoruz.
+
+178
+00:42:17,224 --> 00:42:31,703
+Ya arada ben bir soru sorayım mı? Bir önceki slide'a gelirsen. O yukarıdaki çizgi için sen supervised dedin ama zaten diğer yöntemlerde supervised kullanmıyor muydun?
+
+179
+00:42:32,844 --> 00:42:36,304
+Şöyle, yani tüm veriler etiketli.
+
+180
+00:42:36,724 --> 00:42:42,364
+Tüm veriler etiketli. Tamamı anlamında söyledim.
+
+181
+00:42:42,364 --> 00:42:45,364
+Aynen. Orada yanlış bir ifade olmuş.
+
+182
+00:42:45,364 --> 00:42:48,444
+Tamam, teşekkürler. Devam edelim.
+
+183
+00:42:50,644 --> 00:43:02,384
+Burada segmentasyon sonuçlarını görüyoruz. Burada DICE skoru ve HD95 skorlarının karşılaştırıldığı bir şeyimiz var.
+
+184
+00:43:03,219 --> 00:43:16,219
+Burada da bakacak olursak, 5. Round sonunda, bütün veri setlerinde aslında Federated Evangelical Active Learning'in üstünlüğünü görüyoruz.
+
+185
+00:43:16,219 --> 00:43:28,219
+Burada tamamen etiketli veri setinde, FED Polyp ve FED Polyp de daha yüksek olduğunu görüyoruz. Yüzde ikilik bir fark ile.
+
+186
+00:43:28,436 --> 00:43:32,796
+Ancak Fet Prostat da %0.6 ile daha düşük kalmış.
+
+187
+00:43:33,296 --> 00:43:36,636
+Burada çok yine büyük bir fark değil.
+
+188
+00:43:37,136 --> 00:43:39,195
+Tüm verinin etiketli olmasının
+
+189
+00:43:39,436 --> 00:43:41,235
+çok zor olduğunu düşünürsek
+
+190
+00:43:41,756 --> 00:43:44,556
+aslında bu kabul edilebilir bir fark oluyor.
+
+191
+00:43:45,336 --> 00:43:46,355
+Fet Fundus'ta da
+
+192
+00:43:46,876 --> 00:43:54,036
+burada iki farklı segmentasyon var içerisinde. İki farklı bölgenin segmentasyonu var. O yüzden iki tane skor görüyoruz.
+
+193
+00:43:54,547 --> 00:44:01,047
+Burada 5. anının sonunda ikisinde de aslında daha yüksek bir sonuç görüyoruz.
+
+194
+00:44:01,827 --> 00:44:03,707
+Federated Evangelical Active Learning'de.
+
+195
+00:44:03,707 --> 00:44:06,627
+Burada da yine bir soru sorayım ben.
+
+196
+00:44:09,667 --> 00:44:19,987
+Bu yüzde kaçı etiketlenmeden ya da yüzde kaçı etiketliyken bu sonuçları elde edebiliyoruz?
+
+197
+00:44:20,467 --> 00:44:25,728
+Şöyle hocam, bunun detayları makalede vardı, yazmıştım sanırım.
+
+198
+00:44:26,228 --> 00:44:28,567
+Ortalama mesela yani hani.
+
+199
+00:44:29,507 --> 00:44:41,187
+Yüzdelik bir kısım değil. Öncelikle ilk bir eğitime başlamak için çok küçük bir ana bizim şeyimizde belli bir etiketli veri olması gerekiyor.
+
+200
+00:44:42,187 --> 00:44:45,407
+Ana sunucumuzda. Bu da çok büyük bir şey değil.
+
+201
+00:44:46,356 --> 00:45:10,396
+Örneğin 10.000 tane veri varsa orada 100 tane etiketli veri olması yeterli oluyor. Daha sonra da bu clientlerden gidip işte bir bütçe belirliyoruz. Örneğin her roundda 50 tane en belirsiz örneği seç diyoruz. Bu 50 tane en belirsiz örneği seçip uzmanlara etiketlettikten sonra bu 50 taneyi kullanıyoruz.
+
+202
+00:45:10,996 --> 00:45:12,836
+Aslında hani...
+
+203
+00:45:12,836 --> 00:45:16,355
+Kritik olan şey, zor olan örnekleri etiketletiyoruz diyorsun.
+
+204
+00:45:16,756 --> 00:45:17,596
+Aynen, aynen.
+
+205
+00:45:17,756 --> 00:45:19,496
+Ve farklı olanları belki.
+
+206
+00:45:19,496 --> 00:45:36,836
+Evet. Örneğin, kedi köpek bir verisletimiz varsa, yüzde elli, yüzde elli tahmin ettiği örneği biz etiketletmeye çalışıyoruz ki bunu öğrenirsem, bunun farkı neymiş bunu öğrenelim, buna göre bir eğitim yapalım.
+
+207
+00:45:37,844 --> 00:45:40,144
+Tamamdır, teşekkürler.
+
+208
+00:45:40,403 --> 00:45:45,784
+Burada da Federated Leveraging ile benim aslında yaptığım sonuçları görüyoruz. Burada
+
+209
+00:45:46,543 --> 00:45:51,403
+FedISIC veris etini kullanarak. Çok iyi sonuçlar elde edemedim çünkü
+
+210
+00:45:52,943 --> 00:45:53,724
+işte
+
+211
+00:45:53,963 --> 00:45:59,344
+Communication Round sayısı ve Post sayısı çok yüksek değildi kendi bilgisayarında çalıştırdığım için.
+
+212
+00:46:01,172 --> 00:46:08,851
+Bence Client 3 ve 4'te çok daha düşük sonuçlar görebiliyoruz. Burada muhtemelen 4 farklı veri seti vardı.
+
+213
+00:46:08,851 --> 00:46:15,092
+Bu veri setinden 1 ya da 2 tanesi bu iki Client'a dağılmış şekildeydi.
+
+214
+00:46:15,092 --> 00:46:26,851
+Burada tahmin edecek olursak neden olduğunu, DomainShift probleminin ortaya çıktığını düşünebiliriz.
+
+215
+00:46:29,268 --> 00:46:38,987
+3-4 tane Client ile kullanılan veri setinden belki farklı bir görüntüleme tekniği olduğu için
+
+216
+00:46:38,987 --> 00:46:47,447
+böyle sonuçlar ortaya çıkmış olabilir. Ya da Class dağılımları birbirinden farklı olduğu için böyle sonuçlar ortaya çıkmış olabilir.
+
+217
+00:46:47,447 --> 00:46:53,587
+Burada Fat-Pearl yani Semi-Supervised Federated Learning yöntemiyle
+
+218
+00:46:53,780 --> 00:46:58,460
+Yapılmış bir deri lezyonu, segmentasyonu, şey, klasifikasyonu görüyoruz.
+
+219
+00:47:00,100 --> 00:47:03,860
+Buradaki veri seti FedEyesik veri setinden biraz daha farklı.
+
+220
+00:47:04,760 --> 00:47:09,180
+Yalnız hatırlamıyorsam bir tane veri setinin yerine farklı bir tane veri set vardı.
+
+221
+00:47:09,340 --> 00:47:14,000
+Diğer yine üç tanesi aynı veri setini kullanıyor.
+
+222
+00:47:16,180 --> 00:47:19,800
+Burada da sonuçlara baktığımız zaman
+
+223
+00:47:20,851 --> 00:47:31,351
+Client fazla bir tane Client'da %52 gibi bir sonuç görüyoruz. Diğerlerinde işte en düşük %69, %71, %72 gibi sonuçlar görüyoruz.
+
+224
+00:47:33,032 --> 00:47:40,751
+Burada genele bakacak olursak belki fail yönteminden daha iyi bir sonuç elde etmiş gibi görünüyor olabiliriz.
+
+225
+00:47:40,751 --> 00:47:47,751
+Ancak burada bütün Client'lerde %20 verimizin etiketli olması gerekiyor. Yani elimizde...
+
+226
+00:47:48,148 --> 00:47:53,788
+Biraz önceki saydığım veri setlerinde bazılarında 100.000-200.000 kadar veri var.
+
+227
+00:47:53,788 --> 00:48:04,588
+Yani 200.000 veri olduğunda, elimizdeki verilerin %20'si yani 40.000 tanesi etketli olması gerekiyor ki bu da çok mümkün olmayan bir şey.
+
+228
+00:48:04,588 --> 00:48:06,908
+Medikal verilerde.
+
+229
+00:48:06,908 --> 00:48:09,588
+Benim sunumum bu kadar.
+
+230
+00:48:09,940 --> 00:48:10,880
+Teşekkür ediyorum.
+
+231
+00:48:11,680 --> 00:48:22,860
+Teşekkürler [öğrenci]. Son bir soru daha. Hemen sen kendi yaptığın bu uygulamada mesela bu deri lezyonu veya sol taraftaki de deri lezyonu değil mi?
+
+232
+00:48:23,220 --> 00:48:23,500
+Evet.
+
+233
+00:48:24,320 --> 00:48:34,400
+Bu full dediği çözümü yani tüm verinin etiketli olduğu durum için çözümü zaten paperda var diye tekrarlamadın mı?
+
+234
+00:48:37,344 --> 00:48:43,903
+Yani onun gibi, ona benzer bir sonuç oldu benimki de. Federated Average'in kullanarak.
+
+235
+00:48:43,903 --> 00:48:51,703
+Ne kadardı oradaki tamamını kullandığındaki sonuçlar? Orayı baz alacak olursak.
+
+236
+00:48:53,183 --> 00:48:59,003
+Burada %68'e yakın bir aslında sonuç var.
+
+237
+00:49:04,052 --> 00:49:31,632
+Ecurisy sonucuydu. Balanced Multi Class Ecurisy'ydi sanırım. Ancak ben bunu Ecurisy olarak hesaplamıştım. Daha sonradan onu fark ettim. Ancak tekrar bir hesaplayamadım. Çünkü uzun sürdüğü için eğitimin. Tekrar bir hesaplayama yapmadım. Ancak %68 şu iki tane client hariç.
+
+238
+00:49:33,076 --> 00:49:40,596
+ulaşabildiğini görebiliyoruz. Ancak bu iki klient de daha düşük bir ekürüsü sonucu elde etmişiz.
+
+239
+00:49:40,596 --> 00:49:50,536
+Tamam. Ama karşılaştırılabilir olması için aslında aynı şekilde bir fikri hesaplaman daha iyi oldu değil mi?
+
+240
+00:49:51,016 --> 00:49:51,256
+Evet.
+
+241
+00:49:51,496 --> 00:49:56,016
+Peki. Teşekkür ediyoruz [öğrenci] sunumun için. Seni alkışlıyoruz.
+
+242
+00:49:59,156 --> 00:49:59,976
+Sıra.
+
+243
+00:50:00,000 --> 00:50:11,480
+[öğrenci] da. [öğrenci] hazır mısın? Merhaba hocam. Merhaba [öğrenci]. Evet. Hazırım. Hemen paylaşıyorum sunumu.
+
+244
+00:50:16,884 --> 00:50:23,104
+Geldim ekran. Evet, bir de presentation moduna geçelim. Tamam.
+
+245
+00:50:26,643 --> 00:50:29,963
+Süper. Evet, sizi dinliyoruz. Buyurun.
+
+246
+00:50:29,963 --> 00:50:48,903
+Evet, merhaba öncelikle. Bugün Token Compost Text to Image Diffusion, Diffusion with Token Level Spurvision konusunu anlatıyor olacağım. Yani belirteç düzeyinde denetimle metinden görüntüye diffizyon modelini konuşuyor olacağız.
+
+247
+00:50:52,692 --> 00:51:20,632
+Sunum akışı şu şekilde olacak. Öncelikle bir giriş yapacağım. Problemin tanımından ve token kompozun amacından bahsediyor olacağım. Mimarisinden bahsettikten sonra kullanılan temel kavramları açıklayacağım. Yöntemlerle birlikte. Ardından token kompoz stable diffusion modeliyle birlikte kullanılıyor. Stable diffusion'dan bahsedeceğim ve token kompozlu stable diffusion ve normal stable diffusion'ın
+
+248
+00:51:20,692 --> 00:51:36,112
+Bu konuyu seçmemdeki amaç, metinden görüntüye, artık yapay zeka ile metinden görüntüye dönüşümler sıkça rastlanır oldu.
+
+249
+00:51:36,211 --> 00:51:41,272
+Bunu nasıl yapıldığını merak ettiğim için ve konuyu eğlenceli bulduğum için çalışmak istedim.
+
+250
+00:51:42,272 --> 00:51:45,872
+Metinden görüntüye üretim yapan difizyon modelleri var.
+
+251
+00:51:45,872 --> 00:51:48,692
+Bu difizyon modelleri şöyle çalışıyor.
+
+252
+00:51:48,692 --> 00:51:55,179
+İstem Prompt Metin
+
+253
+00:51:55,443 --> 00:52:23,443
+yola çıkarak gürültülü bir görüntü üzerinden gerçek görüntüye ulaşıyoruz. Buradaki metin kullanıcının verdiği doğal dil girdisi olarak karşımıza çıkıyor. Mesela burada bir görsel var. Korgi İnegard'ın metni verilmiş. Burada işte Korgi cinsi bir köpeğin bahçede olduğunu söylüyor. Ve difizyon modeli ise burada şunu yapıyor. Gürültülü bir görüntü alıyor. Başlangıçta tamamen gürültülü bir görüntüyle başlanıyor.
+
+254
+00:52:23,443 --> 00:52:47,223
+Bu görüntüden gerçekçi bir görüntüyü geri kazanmamızı sağlıyor. En sonunda da temizlenmiş ve gerçekçi bir görüntünün ortaya çıkması sağlanıyor. Üretilen görüntü metin istemiyle yüksek oranda tutarlı olmaya çalışıyor. Tıkun kompozda bu tutarlılığı artırmak amacıyla aslında geliştirilmiş bir yöntem.
+
+255
+00:52:48,371 --> 00:53:08,451
+Burada bu difüzyon modellerinde karşımıza çıkan problemler var. Evet, bu difüzyon modelleri yüksek kaliteli ve foto gerçekçiliği olan fotoğraflar, resimler üretmelerine rağmen birden fazla nesne içeren karmaşık promptlar karşısına çıktığında tutarlı ve doğru sahneler üretememekte.
+
+256
+00:53:09,011 --> 00:53:16,371
+Mesela bu tutarsızlığın sebebi de promptların gerçek dünyada nadiren birlikte görülen nesneleri içermesi.
+
+257
+00:53:16,371 --> 00:53:44,371
+Bu örneğe bakalım.
+
+258
+00:53:44,371 --> 00:53:53,711
+Bu bölgeye eşleşmesini sağlıyor ve böylece özellikle birden fazla nesne içeren promtlarda modelin başarısının arttığı görülüyor.
+
+259
+00:53:54,811 --> 00:54:08,431
+Ekveri etiketlemesine gerek kalmadan mevcutta kullanılan Stable Diffusion modeline entegre ediliyor ve foto gerçekçiliği bozmadan çoklu nesne üretimini daha iyi hale getirmiş oluyor.
+
+260
+00:54:10,931 --> 00:54:19,531
+Tukun kompoz mimarisinin genel yapısını bu görüntü üzerinde inceleyebiliriz. İlk önce eğitim metni alınıyor.
+
+261
+00:54:19,531 --> 00:54:28,371
+A donut and a cup of coffee sitting on a table in a restaurant gibi bir cümle ne olduğu önemli değil.
+
+262
+00:54:29,471 --> 00:54:34,592
+Ardından post tagger işlemine geçiliyor ve cümledeki isimler belirleniyor.
+
+263
+00:54:38,931 --> 00:54:46,572
+İstediği seçiliyor. Ardından Grounded Sem ile segmentasyon maskeleri üretiliyor. Her isim
+
+264
+00:54:46,572 --> 00:54:52,011
+belirtecine karşılık gelen ikili segmentasyon maskeleri otomatik olarak çıkartılıyor.
+
+265
+00:54:53,043 --> 00:55:07,844
+Daha sonra görseller gürültüleniyor. Rastgele gürültü ekleniyor. Diğer tarafta da metin kodlayıcı, text encoder ile gömme üretiliyor. Metin gömme vektörüne dönüştürülerek modele veriliyor.
+
+266
+00:55:08,764 --> 00:55:20,604
+Gürültülü görüntü üzerinden, başlangıçta bir gürültülü görüntü üzerinden, U-Net ile bu gürültü denoising işlemi yapılıyor. Yani gürültü temizleniyor.
+
+267
+00:55:21,844 --> 00:55:36,884
+Tabi burada çapraz dikkat haritaları da devreye gidiyor. Younet'in içinde. Her belirteç için dikkat haritaları oluşturuluyor. Ve dikkat haritasına karşılık gelen segmentasyon maskeleri ile eşleşip eşleşmediğine bakılıyor.
+
+268
+00:55:36,884 --> 00:55:48,704
+Token ve piksel kayıpları hesaplanıyor. Token kompozun içinde. L piksel, L token kayıp fonksiyonları hesaplanıyor.
+
+269
+00:55:49,844 --> 00:55:55,344
+ardından temiz görüntü oluşturuluyor. Gürültü giderme işleminin ardından.
+
+270
+00:55:57,108 --> 00:56:04,148
+Burada UNET dediğimiz şey Full Convalesion Network yapısına dayalı bir yapay sinir ağı.
+
+271
+00:56:04,148 --> 00:56:11,307
+UNET'in amacı her pikseli, görüntünün her pikselini sınıflandırmak. Yani segmentasyon yapmak.
+
+272
+00:56:11,847 --> 00:56:16,768
+Token Compose içinde UNET görüntülerin gürültüsünü temizliyor.
+
+273
+00:56:17,447 --> 00:56:25,108
+Metne göre görseli şekillendiriyor ve çapraz dikkat katmanıyla, cross attention katmanlarıyla her kelimenin görseldeki katmanları.
+
+274
+00:56:25,108 --> 00:56:27,788
+Karşılığının bulunmasına yardımcı oluyor.
+
+275
+00:56:29,523 --> 00:56:38,084
+Token Compose'un içindeki kullanılan diğer kavramlar Multigen Benchmarki kullanıyor. Yani kalite testi kullanılıyor.
+
+276
+00:56:40,604 --> 00:56:53,364
+Multigen kullanması burada Token Compose'a avantaj sağlıyor. Çünkü bir görüntüde birden fazla nesne kategorisinin doğru ve gerçekçi bir şekilde oluşturup oluşturulmadığını test eden bir araç bu.
+
+277
+00:56:57,523 --> 00:57:08,104
+Veri setlerinden rastgele 5 farklı nesne kategorisi seçiyor ve bu kategorileri işte ABCD şeklinde bir metin istemine dönüştürüyor.
+
+278
+00:57:08,704 --> 00:57:15,144
+Metin istem yani bu promptlar Stable Diffusion gibi bir metinden görsele üretim modeline veriliyor.
+
+279
+00:57:15,443 --> 00:57:17,943
+Orada bir görüntü oluşturulması sağlanılıyor.
+
+280
+00:57:18,704 --> 00:57:25,523
+Oluşturulan bu görüntüle de belirtilen nesne kategorilerinin varlığı, açık kelime dağarcığına sahip.
+
+281
+00:57:25,523 --> 00:57:45,604
+Her görüntü için hedeflenen kategoriden kaç tanesinin başarıyla oluştuğu sayılıyor. Ve bu süreç her veri kümesi için bin farklı metin istemiyle tekrarlanıyor.
+
+282
+00:57:53,523 --> 00:58:21,384
+Kedi seçiliyor. Ne olabilir bunlar? Ekap, eket, eket, kedi iki kez seçilmiş, eçehir, ekar ve e-pizza gibi kelimeler seçiliyor. Ardından bu kelimeler Stable Diffusion modeliyle bu kelimelerden, bu prompttan bir görüntü oluşturulması isteniyor. Mesela sağ tarafta kediyle ilgili işte iki tane kedinin, bir tane kafiye ve bir arabanın olduğu görüntüyü görüyoruz.
+
+283
+00:58:21,523 --> 00:58:44,624
+Ama mesela pizza kelimesinin karşılığı bu görüntüde yok. Sistem buna bakıyor. Ultigen Benchmarki. Burada bir tanesini eksik yaptığını tespit ediyor. Ve bunu sürekli 1000 kez olacak şekilde veri setinde tekrarlıyor. Bu şekilde daha yüksek başarı oranı elde etmesine yardımcı oluyor.
+
+284
+00:58:47,155 --> 00:58:52,955
+Segmentasyon haritalarının oluşturulduğunu söylemiştim. Segmentasyon haritaları
+
+285
+00:58:54,496 --> 00:59:04,216
+Metin istemindeki her bir isim için görüntüdeki karşılık gelen binary ikili maskeler, ikili haritalar olarak karşımıza çıkıyor.
+
+286
+00:59:04,856 --> 00:59:13,216
+Ve bu haritalar modelin her kelimeyi görselde doğru bir şekilde yerleştirilmesini sağlamak amacıyla kullanılıyor.
+
+287
+00:59:13,216 --> 00:59:19,316
+İşte şu alt tarafta ikili segmentasyon haritalarını görebiliriz bir önceki şekilden.
+
+288
+00:59:20,296 --> 00:59:22,496
+Bu haritaların oluşturulmasında da izlediğimiz.
+
+289
+00:59:22,496 --> 00:59:30,496
+Bu da bir de denilen yol var. Tukun kompost segmentasyon haritalarını oluşturmak için ilk önce post etiketleme sürecini yapıyor.
+
+290
+00:59:30,496 --> 00:59:39,496
+Yani metindeki isimleri belirliyor ilk önce ve her bir isim için görüntüdeki karşılık gelen bölgeyi otomatik tespit ediyor.
+
+291
+00:59:39,496 --> 00:59:49,496
+Bunu da Grandun sem yöntemiyle yapıyor. Ardından da her nesne için ayrı bir segmentasyon haritası oluşturuyor ve bu maskeleri kaydediyor.
+
+292
+00:59:50,496 --> 00:59:59,496
+Makaliden aldığım bir segmentasyon haritası örneği var. Burada metin olarak acake next to acake bird denilmiş.
+
+293
+01:00:00,000 --> 01:00:28,000
+klavyenin yanında bir kek olduğunu söylüyor. Stable Diffusion modelinin modeli sonucunda çıkan sonuçlar üst tarafta. Şimdi Stable Diffusion'ın versiyon 1.4'ünde kek için oluşturduğu segmentasyon haritasına baktığımızda klavyenin de burada olduğunu görüyoruz. Ya da klavye için oluşturmuş olduğu segmentasyon haritasında kek görüntüsünde burada görebiliyoruz.
+
+294
+01:00:28,000 --> 01:00:55,779
+Görüyoruz Aslında. Ya da eket sending ebo ve bekbek cümlesinde işte sırt çantasının üstüne oturmuş bir kedi promptunda kedi için oluşturulan segmentasyon haritasında işte kedi az çok belli çantayı da burada görebiliyoruz. Ya da bekbek için yine yaklaşık aynı sonuç karşımıza çıkmış kedinin varlığı hani birbirinden ayrılmamış aslında bu nesneler. Tukun kompoz.
+
+295
+01:00:56,000 --> 01:01:04,319
+Kendi segmentasyon haritasını oluştururken bunu başarılı bu ayrımı başarılı bir şekilde yapıyor. Alt tarafta gördüğümüz sonuçlarda Tulk'un kompoza ait.
+
+296
+01:01:04,319 --> 01:01:18,119
+Şimdi kek için oluşturmuş olduğu Tulk'un kompozun oluşturduğu segmentasyon haritasına baktığımızda kek kısmının beyaz tonlarda daha açık olduğunu geri kalan kısmı siyah olduğunu görebiliyoruz.
+
+297
+01:01:24,000 --> 01:01:30,539
+geri kalan kısımların siyah olduğunu görebiliyoruz. Yani konum olarak kenarları da daha net belirt.
+
+298
+01:01:31,443 --> 01:01:42,363
+O yüzden tutarlı görüntüler oluşturuyor. Yani görüntünün nerede konumlandırılabileceğini bu segmentasyon haritalarıyla belirleyebiliyoruz.
+
+299
+01:01:42,363 --> 01:01:59,363
+Ya da kedi için baktığımızda işte kedinin segmentasyon haritasında kedinin daha açık renkli, belirgin olduğunu, geri kalan kısmının hep siyah olduğunu ya da işte sırt çantası için baktığımızda sırt çantasının olduğu kısımların beyaz, geri kalan kısımların da.
+
+300
+01:01:59,443 --> 01:02:01,743
+siyah olduğunu görebiliyoruz.
+
+301
+01:02:03,507 --> 01:02:25,427
+Segmentasyon haritaları modelin metin ve görsel arasındaki tutarlılığı artırmasına yardımcı olur. Çünkü her kelime görselde doğru bir şekilde temsil edilmesini sağlar. Bu da birden fazla nesne içeren karmaşık sahnelerde önemli hale gelmiştir. Yani nesnenin konumunu belirlemekte önemli sonuçlar üretmemizi sağlıyor.
+
+302
+01:02:25,427 --> 01:02:30,107
+Burada bahsettiğimiz Ground-on-Sem yöntemi nedir?
+
+303
+01:02:31,507 --> 01:02:35,707
+İki güçlü bilgisayarlı görme modelinin birleşimi olarak karşımıza çıkıyor.
+
+304
+01:02:35,827 --> 01:02:42,147
+Token Compose bu iki yöntemi birlikte kullandığı için de başarılı sonuçlar elde ediyor.
+
+305
+01:02:42,147 --> 01:02:55,147
+Grounded Dino dediğimiz yöntemle yani metin tabanlı nesne algılama yöntemiyle segment ending model, sem modeli yani her şeyi segmentleme modelini birleştirerek kullanıyor ve ground sem yöntemi diyor.
+
+306
+01:02:59,507 --> 01:03:05,587
+Bu şekilde otomatik olarak tespit edip segmentasyon maskesi oluşturmayı da amaçlıyor.
+
+307
+01:03:12,148 --> 01:03:25,307
+Şimdi şuraya tekrar geldiğimde Ground Dino yöntemi kullanıcının verdiği metin açıklamasına göre görüntüdeki nesneleri algılamamızı sağlıyor ve onu bir kutuyla işaretlemeyi sağlıyor.
+
+308
+01:03:25,307 --> 01:03:36,348
+Semin yaptıysa bu kutuyla belirlenmiş alana göre piksel düzeyinde segmentasyon maskesi belirlemek. Yani tüm pikseller içinde olacak bir şekilde.
+
+309
+01:03:40,148 --> 01:03:45,148
+Neslene sınırlarını çok hassas bir şekilde belirlemiş oluyoruz.
+
+310
+01:03:46,835 --> 01:03:55,835
+Token kompoz mimarisi ile ilgili burada farklı bir görselimiz var. İşte gürültülü görüntüden gerçek görüntünün nasıl oluşturulduğu ile ilgili.
+
+311
+01:03:55,835 --> 01:04:09,495
+İşte prompt olarak a small dog standing on a green bench with four people. İşte küçük bir köpeğin yeşil bir bençte dört insanla oturduğunu söylüyor.
+
+312
+01:04:10,235 --> 01:04:13,535
+Ve gürültülü görüntü girdi olarak alınıyor.
+
+313
+01:04:14,835 --> 01:04:22,595
+Burada difizyon işlemi başlıyor. Dinoising işlemiyle işte yönet mimarisi birleşiyor ve bu gürültü temizlenmeye başlıyor.
+
+314
+01:04:22,595 --> 01:04:29,835
+Tabi tekst Enkoder'da buradaki teksti alıp içindeki
+
+315
+01:04:31,572 --> 01:04:42,672
+isimleri işaretlemeye başlıyor. İşte Dog, Green Bench, People gibi isimleri elde ediyor. Ardından Dinoising Unit ile birlikte
+
+316
+01:04:42,672 --> 01:04:55,072
+Unit Mimarisi gürültülü görüntüyü yavaş yavaş temizleyerek hedef görüntüyü oluşturmayı amaçlıyor. Burada Unit kısmında Cross Attention
+
+317
+01:04:55,603 --> 01:05:23,603
+kısmının olduğunu söylemiştik. Burada karşımıza kayıp fonksiyonları çıkıyor kullanılan yöntemlerde. Elpixel, Eltoken gibi kayıp fonksiyonları kullanması da Token Compose'un avantajlı yönderinden. Şimdi onları açıklıyor olacağım. Burada kullanılan yöntemlerde modelin eğitimi sırasında 3 tane ana kayıp fonksiyonu kullanılıyor. Bunlardan ilki LDM kaybı, latent defizyon.
+
+318
+01:05:23,603 --> 01:05:51,603
+Diffusion model yani gürültüyü tahmin kaybı. Aslında klasik difizyon kaybı olarak karşımıza çıkıyor. Token kompozun diğerlerinden farklı olarak el token ve el piksel kayıp fonksiyonlarını hesapladığını görüyoruz. El token belirteç düzeyinde kayıp fonksiyonu, el piksel de piksel düzeyinde kayıp fonksiyonu. Bunlarla birlikte optimize edilerek daha başarılı sonuçlar elde edilir.
+
+319
+01:05:51,603 --> 01:05:57,543
+El Tuk'un belirteç düzeyinde kayıp fonksiyonu dedik. Bunların önemli olduğunu söylemiştim.
+
+320
+01:05:58,183 --> 01:06:11,844
+Bu prompttaki her isim belirtecinin görüntü üzerinden semantik olarak karşılık geldiği bölge ile eşleşmesini sağlamak amacıyla önerilen belirteç düzeyinde kaybı tanımlıyor.
+
+321
+01:06:12,503 --> 01:06:19,563
+Mesela dog kelimesi için, yani köpek kelimesi için sadece köpeğin olduğu bölgelere dikkat etmesiniz.
+
+322
+01:06:19,603 --> 01:06:28,143
+Bu sayede de çok nesneli kompozisyonlarda nesnelerin eksiksiz ve doğru yerleştirilmesini öğrenmiş oluyor.
+
+323
+01:06:29,331 --> 01:06:48,331
+El piksel ise el token kayıp fonksiyonunun başarısını artırmak için karşımıza çıkmış olan piksel düzeyinde kayıp fonksiyonu. El token modelin dikkatini doğru nesne alanlarına yönlendirse de dikkat bazen nesnenin küçük bir kısmına yoğunlaşabiliyor.
+
+324
+01:06:57,331 --> 01:07:25,331
+Bu yalnızca bir kısmı gösterdiğinde temsil ettiğini sanıyor. Yani nesnenin tamamını temsil ettiğini sanıyor. Ama durum öyle değil. El piksel her pikselin doğru nesneye ait olup olmadığını kontrol eder. Amacı da dikkat haritasının örneğin köpeğin şekline tam olarak uyumlu uyumasını sağlamak. Bu kayıp fonksiyonu da her pikselin gerçekten nesnenin içinde mi dışında mı olduğunu dikkat ediyoruz.
+
+325
+01:07:25,331 --> 01:07:31,472
+Dikkatı alarak dikkat haritasının o konumuna ne kadar odaklanması gerektiğini öğretiyor.
+
+326
+01:07:32,916 --> 01:08:00,916
+Bu ve sonunda işte şu görsel üzerinden el piksel ve el token kayıp fonksiyonlarının birlikte kullanılması ile optimize edilmesi ile daha net sonuçlar elde ettiğini görebiliriz. El token burada dikkat yönünü öğretiyor. El piksel de dikkat yayılımının doğru konumlandırılmasını sağlıyor. Mesela kek için el piksel evet buraları işaretlemiş el token burada kekin burada olduğunu söylemiş.
+
+327
+01:08:00,916 --> 01:08:09,916
+Bu da bu şekilde görülmüş. Yoğunluğu ikisi birlikte kullanıldığında yoğunluğu direkt kekin sınırları doğru olacak şekilde belirleyebiliyor.
+
+328
+01:08:09,916 --> 01:08:21,916
+Ya da mesela klavye için aynı şekilde işte el piksel piksel olarak bir sonuç üretirken el token orada klavyenin olduğu konumu işaret ediyor.
+
+329
+01:08:21,916 --> 01:08:28,916
+Ve ikisi birlikte ele alındığında daha net sonuçlar elde ediliyor. Diğer görüntüler için de aynı şekilde.
+
+330
+01:08:28,916 --> 01:08:29,115
+Evet.
+
+331
+01:08:30,739 --> 01:08:45,500
+Bu Turkun Compose yaklaşının Stable Diffusion ile kullanıldığını söylemiştim. Stable Diffusion, metinden görsel üreten derin öğrenme tabanlı bir difizyon modeli olarak karşımıza çıkıyor.
+
+332
+01:08:45,500 --> 01:08:55,399
+Aslında başarılı yani verilen prompta göre gerçekçi ve sanatsal görseller üretmesiyle bilinen bir model.
+
+333
+01:08:58,739 --> 01:09:09,239
+Bu da işte nesnelerin eksikliği kısmında sorunlar yaşadığı görülüyor. Bunu geliştirmek amacıyla Token Compose ile birlikte kullanmak bu paperda önerilmiş.
+
+334
+01:09:09,239 --> 01:09:26,739
+Stable Defusion bir metin açıklamasını alıyor ve bu açıklamaya uygun bir görsel üretiyor. Eğer bu açıklama yani bu aldığı prompt daha gerçekçi metinlerse mesela bir kedi ve köpek birlikte oturuyor.
+
+335
+01:09:26,739 --> 01:09:32,800
+oluyor gibi bir şey ise bunu rahat bir şekilde oluşturuyor ama bu gerçekçilik dışına çıktıysa
+
+336
+01:09:32,800 --> 01:09:39,039
+yani daha fantastik ve soyut cümleler haline geldiyse bir kedi ve köpek birlikte kitap okuyor ya da
+
+337
+01:09:39,039 --> 01:09:47,019
+uçuyor gibi cümleler haline geldiyse o zaman bazı sıkıntılar yaşıyor ve doğru sonuçlar üretmeye
+
+338
+01:09:47,796 --> 01:09:59,536
+Stable Defusion çalışma mantığı da gürültülü bir görüntüden yavaş yavaş temiz görüntü üretme mantığında çalışıyor ve 3 birleşenden oluşuyor.
+
+339
+01:10:00,000 --> 01:10:11,739
+İlk birleşen metin kodlayıcı TextEncode'dur. Genellikle klip gibi modeller kullanıyor ve kullanıcının yazdığı metni sayısal bir vektöre çeviriyor.
+
+340
+01:10:11,739 --> 01:10:24,180
+Burada ne üreteceğini klipin metin vektörleri belirliyor. Bu sayede bir köpek dersek eğer köpek çıkıyor ya da uzaylı bir robot dersek mesela robot görüntü olarak karşımıza çıkıyor.
+
+341
+01:10:28,000 --> 01:10:55,739
+Fener defizyon modeli. Görsel doğrudan yüksek boyutlu pikseller üzerinden değil, sıkıştırılmış temsiller üzerinden üretiliyor. Görselleri doğrudan yüksek çözünürlüklü piksellerle işlemek çok zor ve yavaş hale geldi. Bunun yerine görsel önce küçük ve anlamlı bir temsil haline dönüştürülüyor. Bu temsil görselin sıkıştırılmış ama önemli bilgilerini taşıyor. Bu da modelin çok daha hızlı ve verimli çalışmasını sağlıyor.
+
+342
+01:10:56,000 --> 01:11:16,440
+Üçüncü birleşimde geri difizyon. Önce rastgele bir gürültü görseli ile başlıyordu mimari. Bu gürültü öğrenilmiş adımlarla yavaş yavaş anlamlı bir görüntüye dönüştürülüyor. Stable Difusion'ın nasıl çalıştığı da bu şekilde. Şimdi buradaki görselde
+
+343
+01:11:17,203 --> 01:11:29,203
+Stable Diffusion yönteminin tek başına kullanımı ve Stable Diffusion yönteminin Token Compose ile birlikte kullanılma sonucu ortaya çıkan görüntüleri görüyoruz.
+
+344
+01:11:29,203 --> 01:11:45,143
+Şu alt tarafta promptlarımız var. Buradan incelemeye başlarsak, mesela ilk promptumuzda yıldızlı bir gecede sakuralar püskürten bir volkanın denize patlaması demiş. Bunları ben makaleden aldım. Makalede olan görüntüler.
+
+345
+01:11:45,203 --> 01:12:13,123
+Stable Diffusion'a baktığımızda, burada bu cümle karşısında bir Volkan olduğunu görüyoruz. Ama Sakura etkisi mesela daha zayıf kalmış. Ya da Yıldızlı Gece görüntüsü daha zayıf kalmış. Ama alt tarafta Token Compose ile bu cümlenin görüntüye dönüşümüne baktığımızda, daha gerçekçi ya da daha başarılı bir sonuç olduğunu, Sakura renklerinin daha net olduğunu,
+
+346
+01:12:13,203 --> 01:12:21,903
+Gece atmosferinin daha başarılı olduğunu söyleyebiliriz. Burada tematik açıdan daha uyumlu bir görsel karşımıza çıkmış diyebiliriz.
+
+347
+01:12:22,996 --> 01:12:37,416
+İkinci görsele baktığımızda Samanyolu'nda file binen bir astronot, yanında kitaplar ve pizzalarla birlikte gibi işte fantastik, gerçeğe çok uygun olmayan metinler var.
+
+348
+01:12:37,916 --> 01:12:50,796
+Burada ilk veriyi incelediğimizde mesela pizza görüntüsünün olmadığını görüyoruz. Yani nesneler eksik ve birbirinden kopuk. Aslında burada file binen bir astronot demiş.
+
+349
+01:12:50,996 --> 01:12:58,996
+Astronotun ve Filin ayrı yerlerde olduğunu söyleyebiliriz. Token Compose ile çıkan sonuçlara baktığımızda
+
+350
+01:13:04,180 --> 01:13:11,360
+Pizza olduğunu görebiliyoruz. Kendi çalışmamda da ben yine bu cümleyi kullanmıştım. Birazdan onu da göstereceğim.
+
+351
+01:13:12,300 --> 01:13:20,739
+Diğer görüntüde okyanusun önünde bir tuvalet ve etrafında çimenler ve kara hindi bağlar büyüyor gibi bir cümle kurmuş.
+
+352
+01:13:20,739 --> 01:13:27,739
+İlk görüntüde zaten tuvalet sahneye oturmamış bir şekilde. Burada bağlamak daha kopuk olduğunu görebiliyoruz.
+
+353
+01:13:28,760 --> 01:13:31,800
+Ya da kara hindi bağlar var ama çok belirgin değil.
+
+354
+01:13:32,180 --> 01:13:44,120
+Çimenler de oluşmuş. Diğer görüntüye baktığımızda, Tukun kompozlu görüntüye baktığımızda, burada tam metne uygun bir görüntü olduğunu söyleyebiliriz.
+
+355
+01:13:44,120 --> 01:13:50,399
+Tuvalet görüntüsü var, çimen görüntüsü var, kara hindi bağlar var. Tam eşleşme sağlanmış aslında.
+
+356
+01:13:51,640 --> 01:13:58,239
+Diğerine baktığımızda, bir çölde önünde bir kaktüs olan küçük bir taşın yanında duran bir kardan adam.
+
+357
+01:13:58,608 --> 01:14:08,448
+Şimdi burada kar ve kum ortamı burada karışmış. Aslında işte kardan adam var. Kum var. Burada
+
+358
+01:14:08,448 --> 01:14:15,768
+gerçeklikten biraz daha zayıf görünüyor. Yani kopyala yapıştır yapmış gibi işte bu toprak görüntüsünün
+
+359
+01:14:15,768 --> 01:14:24,048
+üstüne bir kardan adam konulmuş. Kaktüs var ama gerçekçi değil. Ama diğer görüntüye baktığımızda
+
+360
+01:14:26,608 --> 01:14:33,728
+Kardanadan kum ve kaktüs görüntüsünün net bir şekilde daha başarılı üretildiğini söyleyebiliriz.
+
+361
+01:14:34,868 --> 01:15:02,868
+Diğer cümlede fenerler ve güllerle dolu rüya gibi bir odada ork çalan bir inek söylemi var. İlkine baktığımızda, stable diffusion oluşturduğu görüntüye baktığımızda, mesela inek görüntüsünü göremiyoruz. Belki burada bir insan var. Yani insan bir şey çalıyor gibi, bir flüt benzeri bir müzikal çalıyor gibi ama emin de değilim bundan.
+
+362
+01:15:02,868 --> 01:15:08,988
+Güllerin olduğunu, fenerlerin olduğunu söyleyebiliriz. Ama nesneler genel olarak eksik.
+
+363
+01:15:09,868 --> 01:15:15,908
+Alt tarafa baktığımızda bu metne karşılık gelen görüntünün oluştuğunu söyleyebiliriz.
+
+364
+01:15:15,908 --> 01:15:22,608
+Çünkü gerçekçi ışıklar, fenerler var, güller var. İnek orada ork çalıyor. Evet, bu da doğru.
+
+365
+01:15:23,568 --> 01:15:28,268
+Tüm nesneler eksiksiz bir şekilde oluşturulmuş. Tıpkı söylendiği gibi.
+
+366
+01:15:29,203 --> 01:15:37,763
+Son cümleye baktığımızda, Tropikal bir ormandan geçen bir trenin fotoğrafı birkaç penguen kayan yıldızlarla oynuyor demiş.
+
+367
+01:15:38,683 --> 01:15:45,083
+Buraya baktığımızda da, evet ilk görüntüde tren var ama penguen veya yıldızın olmadığını görüyoruz.
+
+368
+01:15:45,163 --> 01:15:47,703
+Tropikal bir ormanda olması, evet doğru.
+
+369
+01:15:47,703 --> 01:15:55,703
+Ama Torkun kompozlu yönteme baktığımızda trenin bir tropikal orman görüntüsünün olduğunu söyleyebiliriz.
+
+370
+01:15:57,203 --> 01:16:04,323
+Koyunlar var, kayan yıldızlar var. Eksiksiz bir şekilde üretim yaptığını söylememiz mümkün.
+
+371
+01:16:06,612 --> 01:16:27,112
+Token Compose ne sağlıyor bize? Stable Diffusion, metin ve görsel tutarlılığı açısından genellikle zayıf kalıyor. Token Compose'u Stable Diffusion ile kullandığımızda metin ve görsel tutarlılığın daha güçlü olduğunu ve her kelimeye karşılık gelen bir bölgenin olduğunu söyleyebiliriz.
+
+372
+01:16:27,112 --> 01:16:33,951
+Çoklu nesne desteğinde yani çoklu nesne içeren promptlarda Stable Diffusion'ın başarısız olduğunu gördük.
+
+373
+01:16:34,612 --> 01:16:44,532
+Token Compose bunun başarılı hale dönmesine yani her token için segmentasyon ürettiği için başarılı bir şekilde çoklu nesneleri ürettiğini söyleyebiliriz.
+
+374
+01:16:45,131 --> 01:16:53,971
+Ekstra eğitim gereksinimi Stable Diffusion'da gerekmiyor. Token Compose'da da segmentasyon maskeleri ile bir eğitim gerekiyor.
+
+375
+01:16:54,971 --> 01:17:02,612
+Çıkarım hızı olarak Stable Diffusion'ın hızlı olduğunu söyleyebiliriz. Token Compose da aynı şekilde hızlı. Sadece eğitim aşırı.
+
+376
+01:17:02,612 --> 01:17:19,291
+Bu aşamasında ek yükleri var. Foto gerçeklik ve kompozisyon açısından baktığımızda da Stable Diffusion'ın ortalama sonuçlar ürettiğini ama Token Compose Stable Diffusion'ın daha gerçekli, daha anlamlı kompozisyonlar ürettiğini söylememiz mümkün.
+
+377
+01:17:20,467 --> 01:17:34,288
+Sonuç olarak Stable Diffusion basit sahnelerde yeterli görülebiliyor. Ama karmaşık, fantastik, ütopik söylemlerde, promptlarda bu başarısının düştüğünü söyleyebiliriz.
+
+378
+01:17:34,288 --> 01:17:48,288
+Token Compose her kelimeyi görselde karşılık gelen bir bölge üretiyor. Bu da kompozisyonun doğruluk ve anlatım gücünü artırmasını sağlıyor. Yani Token Compose'lu modelin daha başarılı olduğunu söyleyebiliriz.
+
+379
+01:17:48,467 --> 01:18:08,927
+Ben de Stable Diffusion modelini uygulamaya çalıştım. Ve bu modele farklı cümleler verdim. Mesela Ad-Oxiting One A Wooden Bench In A Park dedim. Bir köpeğin ahşap bir benchte parkta oturduğunu söylediğimde Stable Diffusion'ın bana oluşturduğu görüntü buydu.
+
+380
+01:18:16,467 --> 01:18:33,347
+Bir görüntü de burada köpeğin bir parkta ahşap bir bencin üstünde oturduğunu söyledim. Diğerinde sadece işte bir bencin üzerinde oturduğunu söyledim. O yüzden ahşap kısmını mesela çizmedi. Hatta benci de tam olarak çizmedi.
+
+381
+01:18:34,567 --> 01:18:44,448
+Ardından paperda kullanılmış olan promptları ben de uygulamamda kullandım. İşte Samanyolu'nda file binen astronot.
+
+382
+01:18:44,467 --> 01:19:11,827
+Kotahtaki İneğin Ork Çaldığını
+
+383
+01:19:12,467 --> 01:19:40,467
+Bunu kendim Stable Defusion'a uyguladığımda bana şu sağ alttaki görüntüyü verdi. Yine inek görüntüsünü burada göremiyoruz. Mesela Tukum kompozda bu görüntüyü görmüştük. Hatta Ork çalan inek görüntüsünü görmüştük. Burada bir insana daha çok benzeyen bir şey var. Bir görüntü var. Tam net değil ne oldu. Onun dışında fenerleri yine daha iyi üretti. Aslında Stable Defusion'a uyguladığımda bu görüntü var.
+
+384
+01:19:40,467 --> 01:19:49,948
+Stable Diffusion modelinin şuradaki sonuçlara göre benim kullandığım Stable Diffusion daha net sonuçlar üretti.
+
+385
+01:19:50,067 --> 01:19:57,587
+Mesela şu fil ve astronot görüntüsü ya da fener dolu bir oda görüntüsü daha net.
+
+386
+01:19:57,587 --> 01:20:00,000
+Çünkü ben bunun versiyon 1.5'i...
+
+387
+01:20:00,000 --> 01:20:10,000
+Bu seçeneği kullandım. Paper'da versiyon 1.4 üzerinden görüntüler elde edilmiş. Evet anlatacaklarım bu kadar. Hepinize teşekkür ederim.
+
+388
+01:20:19,572 --> 01:20:29,752
+[öğrenci] teşekkür ediyoruz sunumun için. Bir ara vereceğiz. Seni alkışlıyorum. Tebrik ediyorum.
+
+389
+01:20:30,352 --> 01:20:30,912
+Teşekkür ederim.
+
+390
+01:20:30,932 --> 01:20:33,971
+Bir 10 dakika ara verelim sonra devam edeceğim.
+
+391
+01:20:34,252 --> 01:20:36,551
+Hocam bir şey rica edebilir miyim?
+
+392
+01:20:36,971 --> 01:20:37,192
+Evet.
+
+393
+01:20:37,532 --> 01:20:43,391
+Benim okula geçmem gerekiyor da başka bir dersim var 12'de. Onun için ara vermeden önce ben sunsam olur mu acaba?
+
+394
+01:20:43,891 --> 01:20:46,152
+Olur tamam. Hadi siz başlayın o zaman.
+
+395
+01:20:50,420 --> 01:20:56,720
+Hocam çok özür diliyorum tekrar. Şu an online toplantıdayım bir taraftan.
+
+396
+01:20:56,720 --> 01:20:57,840
+Evet.
+
+397
+01:20:59,840 --> 01:21:03,659
+Ben şu an ekranımı paylaşmaya çalışıyorum.
+
+398
+01:21:35,315 --> 01:21:36,395
+Evet, [öğrenci].
+
+399
+01:21:45,876 --> 01:21:47,416
+Atece düştü galiba.
+
+400
+01:21:51,507 --> 01:21:59,068
+Çok pardon. Şu an sesim geliyor mu? Evet duyabiliyoruz. Hemen açıyorum hocam.
+
+401
+01:22:13,619 --> 01:22:14,539
+Ekran geldi mi?
+
+402
+01:22:15,659 --> 01:22:21,119
+Evet, görebiliyoruz. Bir de tam ekran yaparsanız. Evet, tamamdır. Buyurun.
+
+403
+01:22:22,299 --> 01:22:24,899
+Herkese selamlar. Kameramı da açayım.
+
+404
+01:22:35,956 --> 01:22:50,015
+Güzel, selamlar. Ben [öğrenci]. Bugün size bir try-on projesi anlatacağım. Try-on projesindeki konumuz Textile Preserving the Vision Models for High Pipely Virtual Try-On diye geçiyor.
+
+405
+01:22:50,771 --> 01:23:10,992
+Bu projeyi seçme sebebim şu, geçen sene bir firmaya buna yönelik bir iş yapma fırsatım oldu benim. 2021 ya da 2022'di yanlış hatırlamıyorsam Dress in Order diye bir CVPR'de bir paper yayınlandı yine Tyrone Projesi'ne yönelik. Bu gerçekten ciddi anlamda ticari bir projeydi.
+
+406
+01:23:18,771 --> 01:23:24,472
+Dior projesinin geçtiğini iddia ediyor. O yüzden bunu sunmak istedim.
+
+407
+01:23:26,292 --> 01:23:53,632
+Şimdi Virtual Tryon dediğimiz şeye gelirsek hepimiz e-ticarette çok fazla alışveriş yapıyoruz ve özellikle bu giysi sektöründe ben bile örnek veriyorum bir şey beğendiysen bedeni olmazsa diye bir üst ya da bir alt bedenini birlikte sipariş ediyorum. Sonra olmayanı geri iade ediyorum. Bu ciddi bir maliyete sebep oluyor. Bu sebeple firmalar bu problemi çözmek istiyor. Bunun için de Virtual Tryon dediğimiz sanal deneme.
+
+408
+01:23:54,292 --> 01:24:01,892
+Bu giysi olur, gözlük olur. Bu incelediğim makalede bu projede giysiye odaklanmış.
+
+409
+01:24:02,804 --> 01:24:21,703
+Şimdi bunun motivasyonu şu, bu bir kere gerçek bir görüntü. Ali Baba'nın Outfit Anyone adlı bir projesi var. Dior paper'ını kullanarak oluşturdukları bir yapı. Burada kişinin postürüne herhangi verdiğimiz bir giysiyi şey yapabiliyor, ekleyebiliyor. Oldukça başarılı bu.
+
+410
+01:24:30,804 --> 01:24:48,283
+İki tane yapımız var. Bir kişinin kendi görüntüsü, iki de giysinin yapısı, görüntüsü. Bu sebeple bunların segment edilmesi lazım. Arka plandan ayrılması lazım. Bunu yaparken de kişinin postürüne uygun bir şekilde entegre edilmesi lazım. O yüzden kişinin postürü çıkartılıyor.
+
+411
+01:24:58,804 --> 01:25:16,844
+Overlay yapma kısmı deniliyor. Bu postürde şu noktalara bunu giydirebiliriz tarzı bir yapısı var. Warping dediği de şimdi bu kişinin postürü bu, bu giysi ya da herhangi bir imajı nasıl sündürebilirim, eğebilirim tarzı bir şey kurguluyor.
+
+412
+01:25:16,844 --> 01:25:26,804
+Sonra da try on network, kurguladığımız artık network mimarisine bunu vererek bu kişinin üzerine bunu giydirmiş oluyor. Temel motivasyon bu. Ama bunu yaparken...
+
+413
+01:25:26,804 --> 01:25:30,103
+Bazı problemler var. Paper'da buna odaklanmış.
+
+414
+01:25:30,612 --> 01:25:45,311
+Bu problemler ne? Kişinin bu giysiyi bükme kısımlarında falan giysinin dokusunu bozuyorlar. Örnek veriyorum bazı modeller, işte gül olur burada, kurdele olur, onların kaybettiğini gözlemlemişler.
+
+415
+01:25:45,311 --> 01:25:58,612
+Ve bir yöntem öneriyorlar. Bu yöntem de şu, diyor ki, kişinin ben görüntüsünü de, görüntüsünü bir sistemim var, görüntüye vermeden önce kişinin mevcut üzerine zaten bir giysi.
+
+416
+01:25:58,612 --> 01:26:10,072
+Ben bu giysinin bulunduğu kısmı diyor ve giysi vereceğim şey üst ve alt segment diye belirtmek zorundayım. Örnek veriyorum üst segment diyorsan bu kişinin üstüne bir maskeleme uyguluyorlar.
+
+417
+01:26:11,072 --> 01:26:21,152
+Ve zaten bu paperda da özellikle dikkat çektikleri kısım bu. Maskeleme işte. Decappled Mask Prediction diye geçiyor. DMF diye ben kısaca söyleyeceğim.
+
+418
+01:26:26,612 --> 01:26:42,311
+Bunları diyor, maskeleyeceğim. Sinme ya da ne yaptığını söylemiyor. Sadece maskeleme da altında paperda belirtmiş bunu. Bu noktalar diyor, maskelenecek. Artık giysiye göre de bunun işte ne yap, nasıl tahmin edeceğini attention kısmında anlatıyorum diyor.
+
+419
+01:26:43,188 --> 01:26:59,668
+Şimdi burada üç tane kısım var. Buradaki A kısmı image segmentation kısmı. Burada görüntü, kıyafet bu. Kişinin üstündeki kıyafet segment ediliyor, maskeleniyor. Bu bir tür şey, image sentezleme kısmı.
+
+420
+01:27:11,188 --> 01:27:37,648
+Burada paper'ın özellikle vurgulamak istediği şey wrapping free mekanizması uyguluyorum diyor. Çünkü wrapping free olmadığı zaman kişinin görüntünün belli segmenti kısımları var. Kenar bilgileri filan. Bunu postürden de gelen bir bilgi var. Bunu birleştiriyor. Cross attention yapısında birleştirerek modele eğitim veriyor. Ve bu çok ciddi bir hesaplama maliyetine sebep oluyor.
+
+421
+01:27:38,547 --> 01:28:06,547
+Bundan kaynaklı diyor ki, ben bu rep etme kısımlarını falan bırakıyorum. Cross Attention da yapmıyorum. Çünkü geneleksel bu tryon projelerinde 3 yapı var. Enkoder, Cross Attention mimarisi, bir de işte UNET tarzı. Böyle Self Attention'ların olduğu görüntü üretme mimarlarını kullanıyorlar. Bu kısım sadece diyor ki, ben Cross Attention falan kullanmayacağım. Paper'da odaklanıp UNET. Ben UNET'in kendi Self Attention'ını kullanacağım.
+
+422
+01:28:06,547 --> 01:28:19,287
+Ama Self-Interaction'a vermeden önce bir maskeleme yapıyor. Ondan sonra bir de boyama kısmı yapıyor. Bunu daha detaylı şöyle anlatayım. Kişiyi alıyor burada.
+
+423
+01:28:21,492 --> 01:28:49,492
+Şöyle post estimation kısımları falan var. Sekmende tarafları falan var. Bu paper'da ama çok yüzeysel anlatılmış. Hiçbir şekilde hangi yöntemi uyguladıkları söylemiyorlar. Ve maskeleme kısmında da ciddi bir gap var. Bu DMF dediği maskeleme kısmını hangi maskeleme yöntemini uyguladığını da belirtmemiş. Sadece burada diyor ki concunate ediyorum ben. Burada nasıl bir şey? Burada bir diffusion modeli var. Diffusion model olarak yönet kullanılır.
+
+424
+01:28:49,492 --> 01:29:17,011
+Diffusion modeli diyor ki, ben bunu şöyle kodladım, kendim paper'ı okuduktan sonra. Diffusion model bir akıllı terzi gibi düşünün. Ben kişinin görüntüsünü buradan alıyorum, maskeleme algoritmamı kullanıyorum DMF'le. Orada işte arka tarafta mask augmentation falan yapmış, maskelemede problem varsa tekrar bir maske öğret tarzı bir yapı var. Ama ciddi bir gap var. Hiçbir şekilde açıklanmamış paper'da orada nasıl yapıldı.
+
+425
+01:29:17,747 --> 01:29:44,868
+Sonra bu maskelenen kişinin görüntülerinde diyor deniliyor ki buraya bir şey yapılacak, bir işlem yapılacak bu maskeli kısma ve görüntü veriliyor. Bu kişi artık difüjü modele verilirken bunun kişinin orijinal görüntüsü, giysi ve maskelenmiş kısım veriliyor. Artık difüjü modeli bir akıl terzi gibi düşünelim dedik ya, orada bakarak deniyor ki bu kısma ben bir şey yapacağım.
+
+426
+01:29:45,747 --> 01:29:53,427
+Eski modellerde bu giysiler bükülerek falan yerleştirmeye çalışıyordu. Hiçbir şekilde bükülü olmadan boyama işlemine girmişler.
+
+427
+01:29:53,908 --> 01:30:00,000
+Deniyor ki işte şu kol kısmında hangi renk gelebilir, çizgi nasıl olabilir, doku nasıl olabilir tarzı boyama.
+
+428
+01:30:00,000 --> 01:30:28,000
+Diyam işlemi yapılıyormuş. Diffusion modelde işte UNET kullanıldığında da UNET zaten U yapısında olduğu için enkoder ve dekoder yapısı karşılıklı bir şekilde orada şey yapıyor. Feature özellikleri çıkartılıyor. Boyut küçültülüyor. Küçültülürken de feature'lar çıkartılıyor. Bunun diğer kenarındaki şeyde de dekod etme kısmında da birleştiriliyor ki yeni bir görüntü oluşturuluyor. Bu training aşamasında işte bu işlemler yapılır.
+
+429
+01:30:28,000 --> 01:30:47,739
+Burası dediğim gibi daha detaylı anlatmış ama gepler var. Hiçbir şekilde açıklanma yok şuralarda. Bunlar birleştiriyor. Şu beyaz tişörtü buna birleştirmeye çalışmış. Sonuçta bu görüntü üretiliyor. Yani bir boyama işlemi yapıyor. Ana görüntüye bakarak bu kişinin burasına ne gelebilir tarzı bir yapı kurgulamışlar.
+
+430
+01:30:48,884 --> 01:31:12,304
+Bunun başarılı sonuçları da şu şekilde. Bu isimlendirme naritçinin notlarından destek alacağım. FID dediğimiz şey, Fetched Inception Distance denen yapı. Bunun oldukça küçük olması bekleniyor. Çünkü bu şey, görüntünün gerçekliğini ve çeşitliliğini ölçen bir değer. Distance olduğu için ne kadar minimuma sıfra yakınsa o kadar gerçek görüntü üretildiği söyleniyor.
+
+431
+01:31:16,884 --> 01:31:36,144
+Bunun 1'e yakın olması bekleniyor. Ne kadar 1'e yakınsa o kadar iyi sonuç ettiği varsayılıyor. L-Pips'in açılımında Learned Perceptual Image Patch Similarity diye geçiyor. İnsanların ilki görüntüyü ne kadar ayırt edebildiğine yönelik, ne kadar düşükse o kadar biz gerçek görüntü ettiğimizi varsayıyor.
+
+432
+01:31:36,144 --> 01:31:40,283
+Burada zaten çeşitli modeller var.
+
+433
+01:31:41,663 --> 01:31:51,563
+İşte Vichin HD. Bu aslında bir şey. Vuitton HD. Bir veri seti ama bir tane bununla alakalı model de çıkıyor. HR Vuitton var.
+
+434
+01:31:51,983 --> 01:32:00,043
+Zaddi Vuitton, Paint by Example, bir de Aursa dağıtında kendi görüntüleri bunlar. Gerçekten de oldukça başarılı. Şöyle bakabilirsiniz siz de.
+
+435
+01:32:01,300 --> 01:32:11,539
+Özellikle şu görüntü, ben bunu kendim de denemiştim. Birçok modelde iyi sonuç vermiyordu. Gerçekten de çok başarılı sonuç veriyor. Dokuda bir kayıp çıkmıyor.
+
+436
+01:32:12,659 --> 01:32:25,840
+Buradaki başarı oranları da zaten oldukça iyi gözüküyor. 89 VITON verisletinde, VITON-HT'de de yaklaşık %90'lık bir esim oranı var.
+
+437
+01:32:25,840 --> 01:32:40,659
+Bu arada VITON-HT verisletleri şöyle verisletleri, kişilerin görüntüleri var ve kıyafetlerin şu şekilde arka plan beyaz olacak şekilde gösterilmiş verisletleri.
+
+438
+01:32:40,659 --> 01:32:56,760
+Setsler. Sonra çalışmada paperda şöyle bir vurgu yapılmış. Denilmiş ki bu SAT dediği self-attention mekanizmasını çıkarsaydım ben modelimden benim başarı oranım nasıl değişecekti? Bunu da Vuitton HD üzerinden yapmış.
+
+439
+01:32:56,760 --> 01:33:04,880
+Mesela normalde Vuitton HD'nin başarı oranına bakarsak 98.4.07.
+
+440
+01:33:06,131 --> 01:33:19,411
+Yaklaşık %5'lik bir düşüş, %3'lük bir artış. FID'nin küçük olmasını istiyorduk. Alpix'de de 0.5'lik bir artış var. Ciddi anlamda etkiliyor. Channel Dim Transfer kısmı da şu.
+
+441
+01:33:21,268 --> 01:33:30,988
+Bu kayıp diffusion kısmında biz hem görüntüyü veriyoruz, kişinin görüntüsünü hem de kıyafetin görüntüsünü veriyoruz.
+
+442
+01:33:31,087 --> 01:33:37,148
+Orada kıyafetin boyutu farklı olabiliyor. Onları bir transfer aşamasında eşleme yapmışlar.
+
+443
+01:33:37,547 --> 01:33:42,927
+O kısmı çıkarsaydık nasıl olur diye böyle yorumlar var. Gerçekten de ciddi anlamda etkiliyor başarıları.
+
+444
+01:33:43,867 --> 01:33:45,847
+Zaten onların kendi başarısı da şu.
+
+445
+01:33:46,271 --> 01:33:58,231
+Pardon. %98'e 4, 0.07. Zaten Paper'da yaptıkları en büyük vurguladıkları kısım geliştirme olarak mouse augmentation kısmıydı.
+
+446
+01:33:58,231 --> 01:34:07,771
+DMF ile birlikte. Bu ciddi anlamda probleme sabit oluyor. Maskelemeyi çıkardıkları an 27'ye kadar gerilemiş bunların başarısı.
+
+447
+01:34:08,291 --> 01:34:12,952
+O yüzden maskeleme gerçekten de Paper'da söyledikleri gibi ciddi bir önem taşıyor.
+
+448
+01:34:13,747 --> 01:34:34,107
+Ben ne yaptım bu çalışmada? Ben bu kodu çalıştıramadım hocam. Çünkü daha önce Dior'u da 6 ayda zaten çalıştırabilmiştik. Şöyle bir şey gözlemledim bu Tryon projelerinde. Bilerek kodda problemli yani çözülmemiş kod paylaşıyorlar. Şeylere de cevap vermiyorlar ticari ayağı olduğu için.
+
+449
+01:34:34,996 --> 01:35:02,255
+O sebeple ben de şey denemek istedim. Speed generator modelini denemek istedim. Speed generator modeli de şöyle hayal edebiliriz. Bu arkadaşların yaptığı çalışmayı akıllı terzi gibi düşündük ya, bunu da akıllı ressam gibi düşünebiliriz. Çünkü araştırmalarında speed generator'a öyle vurgu yapmışlar. Bu da ne yapıyor? Aslında bir tür normalizasyon yapıyor. Pix to Pix diye bir mimariyi hedef alarak yapmış.
+
+450
+01:35:03,220 --> 01:35:22,220
+Yani deniliyor ki normalde normal dağılımda nasıl yapar? Bir pikselin etrafındakileri alarak deriz ki biz bir şey yaparız. Genelleştirme yaparak bu piksel şudur tarzı bir genelleme yaparız. Ama bunda da bazı kenar ve köşe bilgileri kayboluyor. Bunu engellemek için...
+
+451
+01:35:22,931 --> 01:35:50,811
+Rigiddle Block diye bir şey var. Bu da alfa ve beta diye parametreleri var. Bunlar belirli feature'ları tutuyor. İşte köşe bilgisi, kenar bilgisi, renk doku bilgisi tarzı. Her normalizasyon arasında bu bloklar eklenmiş. Bu bloklar eklendikçe gerçekten aslında kayıp azaldığı görünmüş. O sebeple ben de bunu denemek istedim. Neyi de denedim? HR-Biton adlı bir dataset.
+
+452
+01:35:50,931 --> 01:35:58,923
+Bu da ne yapıyor? Feature Extraction, gene işte Speed Generator, buradaki kişinin featurelerini çıkardı.
+
+453
+01:35:59,252 --> 01:36:27,252
+Ve kıyafetin füçülerini çıkardı. Burada köşeler var, püsküller falan. Ama şöyle bir başarısız oldum. Benim FID değerim yaklaşık %29 geldi. Oldukça yüksek bir oran. Çünkü mesela paper'daki %8 falan da. Benim yüksek gelmesinin sebebi şu. Alfa ve Gamma'yı sürekli ayarladığım zaman şey kayboluyor. Ya postürde bir kayma oluyor ya giysi de kayma oluyor. O yüzden ben postürün...
+
+454
+01:36:27,252 --> 01:36:44,311
+Kilometre oranını daha yüksek tuttum. Ağırlığını daha yüksek tuttuğum için gördüğünüz gibi bu orijinal görüntüde direkt kıyafetin bu dokularını yok sayarak postüre uygun bir yerleştirme yaptı. Bu şekilde. Beni dinlediğiniz için teşekkürler. Sorunuz varsa alabilirim.
+
+455
+01:36:46,547 --> 01:37:09,247
+Teşekkürler [öğrenci]. Gerçekten ilginç bir konu. Tryon doğru. Bu konu çok ticari de bir konu. Biz de vaktiyle bir gözlük giydirme yapmıştık modele. Ama çok da aranan bir alan, ihtiyaç. Teşekkür ediyoruz sunumun için.
+
+456
+01:37:09,247 --> 01:37:12,927
+Soru var mı? Hiç sormadık ama.
+
+457
+01:37:14,899 --> 01:37:25,159
+Peki, kimse soru sormuyor zaten. Peki, bir ara veriyoruz. Aradan sonra [öğrenci], [öğrenci] ve [öğrenci] ile devam edeceğiz.
+
+458
+01:37:25,159 --> 01:37:28,539
+10 dakika, 15 dakika ara.
+
+459
+01:53:54,036 --> 01:53:56,296
+Tekrar devam edebiliriz arkadaşlar.
+
+460
+01:53:58,076 --> 01:54:00,036
+Burada mısınız? Bir elleri göreyim.
+
+461
+01:54:00,416 --> 01:54:01,856
+Tekrar paraleşiyorum hocam ben.
+
+462
+01:54:02,596 --> 01:54:03,556
+[öğrenci], tamam.
+
+463
+01:54:06,556 --> 01:54:08,956
+Evet, nerede sınıftaki arkadaşlar?
+
+464
+01:54:10,076 --> 01:54:11,516
+İki kişinin elini gördüm.
+
+465
+01:54:13,516 --> 01:54:14,076
+Beş.
+
+466
+01:54:16,216 --> 01:54:16,896
+Altı.
+
+467
+01:54:18,707 --> 01:54:38,487
+Evet, yoklamalar şeyde kullanılacak, proje puanının belirlenmesinde kullanılacak. Katılımınız orada önemli. Peki [öğrenci], seni dinliyoruz. Ekranını görebiliyorum. Seni görebiliyor muyum?
+
+468
+01:54:38,487 --> 01:54:43,047
+Görebiliyor musunuz hocam? Reaksiyonlar var ya şu an ondan beri.
+
+469
+01:54:43,731 --> 01:54:48,716
+Tamamdır. [öğrenci] sende. Buyurun.
+
+470
+01:54:48,819 --> 01:55:10,579
+Tamam. Merhabalar arkadaşlar, merhabalar herkese. Ben [öğrenci]. [kişisel bilgi] Bu iki lisansımın verdiği ilgi alanı doğrultusunda, sağlık alanında, medikal çalışmalarda, bilgisayarla görme ya da görüntü işleme ya da deep learning alanında çalışmak ve alanda ilerlemek istiyorum.
+
+471
+01:55:16,819 --> 01:55:23,419
+Kelt gibi kelimeler oluşturdu ve makale analizini seçerken web sitesinde bu anahtar kelimelerle bir tarama yaptım.
+
+472
+01:55:24,139 --> 01:55:30,859
+Onlarca yüzlerce olan makale arasında hangisinin benim için en uygun olabileceğini bulmak için böyle bir sınıflandırma kullandım.
+
+473
+01:55:31,419 --> 01:55:35,839
+Ve bu çalışma doğrultusunda bir tane makale ilgimi çekti.
+
+474
+01:55:36,039 --> 01:55:39,679
+Bu makalede bir derleme makalesi gibi diyebiliriz.
+
+475
+01:55:44,180 --> 01:56:08,860
+And Self-Supervised Learning for Medical Image Classification. Bu derleme makalesi aslında diğerlerinden ayrılan bir yönü var. Aslında sistematik olarak bir karşılaştırma yaparken iki ayrı metotta bunun bir yandan literatür taraması içinde sınırlı tutmayıp üzerine bir de deneysel çalışma, deneysel kurguyla beraber aslında bize sunup bir çalışma örneği gösteriyor.
+
+476
+01:56:12,916 --> 01:56:19,395
+Amaca baktığımızda makaleyi incelediğimizde sınırlayabileceğimiz iki ana başlığı var diyebiliriz.
+
+477
+01:56:19,536 --> 01:56:21,036
+İki ana amacı var diyebiliriz.
+
+478
+01:56:21,036 --> 01:56:34,395
+Bu da sınırlı etiketli veriyle çalışan tıbbi görüntü sınıflandırma sistemlerinde yarı denetimli, yani semi-supervised learning ve öz denetimli self-supervised learning karşılaştırmasını yapmak ve performansını değerlendirmek.
+
+479
+01:56:35,115 --> 01:56:40,916
+Burada baktığımızda şöyle, tıbbi görüntüler biliyorsunuz ki şu an E-Nabız'da veya ülkemizde E-Nabız'da veya dünya...
+
+480
+01:56:40,916 --> 01:56:48,155
+Dünya gelin de aslında çok yüksek çoğunlukla bulunan, yani elimizde bolca bulunan ama etiketinin de sınırlı olduğu veri türleri.
+
+481
+01:56:48,636 --> 01:56:53,555
+Tıbbi görüntülerin maliyet bakımından etiketlenmesi oldukça maliyetli.
+
+482
+01:56:53,916 --> 01:56:56,496
+Ama bolluğu açısından da avantajlı bir alan aslında.
+
+483
+01:56:56,496 --> 01:57:04,615
+O yüzden buraya çıkış amacı da sınırlı etiketli bir veriyle, bolca olan verinin biz performansını nasıl değerlendirebiliriz?
+
+484
+01:57:05,275 --> 01:57:08,416
+Günümüzde de aslında baktığımızda bu çalışma alanlarından biri.
+
+485
+01:57:08,916 --> 01:57:18,615
+İkinci amacımız da gerçekçi kaynak kısıtlı bir senaryo oluşturarak algoritmaların klinik veri setler üzerinde uygulanabilirliğini test etmek.
+
+486
+01:57:19,176 --> 01:57:28,576
+Günümüzde de aslında bu konu çok popüler. Sınırlı veriyle, küçük bir modelle yüksek doğruluk oranını geliştirebilen modeller geliştirmek.
+
+487
+01:57:28,576 --> 01:57:36,876
+Yani yüksek doğrulukta sistemler elde edebilmek günümüzde de çok popüler. İlgi alanlarından birisi çalışma alanları. Bu da baktığımızda bu makale.
+
+488
+01:57:36,916 --> 01:57:41,855
+Bu amaç doğrultusunda aslında ileriye dönük bir rehber niteliğinde bir çalışma ortaya koyuyor.
+
+489
+01:57:42,176 --> 01:57:44,996
+Ve bunu da medikal alanda yapıyor. Medikal alandaki verip olduğunda.
+
+490
+01:57:46,695 --> 01:57:46,956
+Peki.
+
+491
+01:57:47,828 --> 01:57:55,988
+Bu yöntemler nelerdir? Yöntemlere baktığımızda aslında bu ele alınan yöntemler supervised learning altında ele aldığımız yöntem.
+
+492
+01:57:56,168 --> 01:58:04,888
+3 ayrı yöntem var burada. Denetimli supervised, yarı denetimli semi supervised learning, öz denetimli self supervised learning diye 3 ayrı başlıkta ele alabiliriz.
+
+493
+01:58:05,608 --> 01:58:13,248
+Burada elinde alınan aslında çalışma 16 farklı metodu yer alıyor ama 13'ü üzerinde aslında ilerliyor.
+
+494
+01:58:13,248 --> 01:58:15,828
+Çünkü yarı denetimli ve öz denetimli 2 tane yöntemler.
+
+495
+01:58:15,828 --> 01:58:43,828
+Yöntem üzerinden ilerliyor. Peki bu nedir? Denetimli aslında elimizde verinin etiketli veriyle işlem yapılması, performans değerlendirilmesi. Yarı denetimli de elimizde kısıtlı, az etiketli verinin olması ve performans analizi diyebiliriz. Öz denetimli de ise aslında elimizde hiç etiketli veri yok. Bu modelde pre-taskler yani kendi içerisinde kendi kendine öğrenme modeli geliştiriyor. Kendine küçük görevler ediniyor ve bu görevler sonrasında
+
+496
+01:58:43,828 --> 01:59:01,448
+Örneğin, içerisinde kendine edindiği, kendi kendine öğrenirken sınıflandırdığı bir MR dokusunu düşünelim. MR dokusunun kanserli olup olmamasını iki ayrı sınıfa koyuyor.
+
+497
+01:59:01,448 --> 01:59:11,808
+Ve kendi kendine öğrendiği testle beraber bir grupta, örneğin varsayımsal olarak konuşuyoruz tabii ki de kanserli hücrelerin, kanserli dokunun yığılması özen.
+
+498
+01:59:11,828 --> 01:59:30,008
+Özel itimliye geliyor diyebiliriz. Diğerinde ise etiketli veri var. Etiketliyle aslında kendi yönelimini oluşturabiliyor. Kendi sınıfını oluşturabiliyor. Özel itimli de önce pre-tuning yapıyor. Sonra hyperparametre tünink yapıyor. Pre-training yapıyor. Sonra hyperparametre tünink yapıyor gibi farklı alanları var.
+
+499
+01:59:30,739 --> 01:59:39,420
+Yöntemleri ele alırken dediğim gibi 13 farklı yöntem var. 13 farklı yöntemi de 4 farklı veri seti üzerinde değerlendiriyor.
+
+500
+01:59:39,560 --> 01:59:52,720
+Ve baktığımızda nihayetinde sonuca vardığında yaklaşık 20.000'den fazla çalışma GPU çalışma saatiyle bir sonuca vardığını ve sonucunda da bir tane modelin iyi olduğunu öneriyor.
+
+501
+01:59:53,908 --> 02:00:00,000
+Bahsettiğim gibi uygulama ve deneysel kurgusunda gerçekçi ve adil bir yansıt.
+
+502
+02:00:00,000 --> 02:00:07,859
+Yaklaşım benimsemek istiyor ve diğer literatür çalışmalarından ziyade burada deneysel bir çalışma da ortaya koymak istiyor.
+
+503
+02:00:07,920 --> 02:00:12,199
+Bunu nasıl yapıyor? Donanım olarak tek bir tip donanım seçiyor.
+
+504
+02:00:12,680 --> 02:00:17,739
+Sonrasında veri setini ne göre 20 veya 100 saat çalışma modeli kurguluyor.
+
+505
+02:00:17,739 --> 02:00:27,220
+Örneğin Tissue Mint'si de 25 saat çalışıyor, Pet Mint'si de 50 saat çalışıyor gibi bir sınırlar koyuyor ve aynı donanım üzerinde çalıştırıyor.
+
+506
+02:00:27,764 --> 02:00:55,663
+Viri setlerini burada görüyoruz. Bu arada literatürde şöyle şuna da değiniliyor. Aslında bu makalenin çıkış noktası da belki buradan olabilir. Oliver ve arkadaşları diye bahsedilen bir çalışmada ele alınan çalışma, literatür genelinde itibariyle self ile semi supervised learning'i kıyaslayan bir çalışma yok. Aslında baktığımızda burada alanda bir açık olduğunu uygulayıcılar bahsediyor. Oliver ve arkadaşlarının ele aldığı makalede ise bu çalışmaya yöneliyor.
+
+507
+02:00:55,764 --> 02:01:19,743
+Ve diyor ki normalde işte biz train, validation, test, train 3 veri setinin dağılımında işte klasik modelde 60-20-20 gibi ya da test, train arasında 80-20 gibi yüzdesel bir büyüklük denge kurgularken burada normalde bunu yaparken semi-supervised learning'de veya self-supervised learning'de validation setini çok yüksek tutuyorlar.
+
+508
+02:01:19,823 --> 02:01:22,503
+Yani 50 kat büyük tutuyorlar ve bu da gerçekçi değil.
+
+509
+02:01:22,503 --> 02:01:23,764
+Bunun gerçekçi olmadığı.
+
+510
+02:01:23,764 --> 02:01:29,363
+Bu çalışmada gerçekçiye yakın adil bir sistemle kurgulamak istediklerini söylüyorlar.
+
+511
+02:01:29,764 --> 02:01:34,764
+Oliverba arkadaşlar da bundan 5 sene önce buna değinen bir çalışma yapıyorlar.
+
+512
+02:01:35,063 --> 02:01:51,764
+Ama çalışmalarında da onlar bunun gerçekçi olmadığını, validasyon setinin bu kadar büyük olmaması gerektiğine değindikleri halde yine de onlar çalışmalarını yaparken bir hariç 6-7 tane çalışmalarında testlerinde yine validasyon setinin büyük tutup sonuçları performans analizi yaptık.
+
+513
+02:01:51,764 --> 02:01:52,940
+Bu şekilde örneklerle anlatacağız.
+
+514
+02:01:53,268 --> 02:02:20,847
+Konuya geri dönecek olursam deneysel kurguda veri setlerine baktığımızda 4 farklı veri setimiz var. Tissue means, PET means, Timmat2, Arox diyebiliriz. Bunlar gene itibariyle düşük çözünürlük veya orta çözünürlüklü veri setleri. Peki bunlar nedir? İlki böbrek korteks hücre görüntüleri 8 sınıftan oluşuyor. Düşük çözünürlüklü. PET means 9 sınıftan oluşuyor. Doku kanser historisinin içeren görüntüler 9 sınıf dediğim gibi ve düşük çözünürlüklü.
+
+515
+02:02:21,268 --> 02:02:26,587
+Arsitu 4 sınıftan oluşuyor ve bu bir ultrason görüntüsü. Kalp ultrasonu, elektrokardiogram.
+
+516
+02:02:27,108 --> 02:02:31,248
+Aerox ise dengesiz biraz dağılmış ama biraz daha diğerlerinden orta çözünürlükte.
+
+517
+02:02:31,587 --> 02:02:35,828
+Retina fundus görüntülerini içeren renkli bir veri seti.
+
+518
+02:02:35,828 --> 02:02:40,908
+Burada baktığımızda da aslında labeled ve unlabeled kısmına baktığımızda
+
+519
+02:02:40,908 --> 02:02:44,948
+labeled kısmının sınırlı, unlabeled kısmının her veri setinde oldukça çok olduğunu,
+
+520
+02:02:45,368 --> 02:02:49,248
+tabii görüntülerde unlabeled kısmının gerçekten çalışılacak.
+
+521
+02:02:49,268 --> 02:02:50,688
+bir alan olduğunu da gösteriyor.
+
+522
+02:02:51,788 --> 02:02:52,927
+Sonrasında baktığımızda
+
+523
+02:02:52,927 --> 02:02:54,627
+çalışmaları ele aldığında
+
+524
+02:02:54,627 --> 02:02:57,328
+işte çeşitli parametrelerle
+
+525
+02:02:57,328 --> 02:02:58,967
+çeşitli hyperparametre tüniyle
+
+526
+02:02:58,967 --> 02:02:59,328
+adam
+
+527
+02:02:59,828 --> 02:03:21,268
+Optimizer ya da Cosine Learning gibi farklı uygulanan Hyperparameter Tuninglerle çıkılan sonuçlarda şunu fark ediyorlar. Normal referans değerimiz ele alınan referans değerinin üzerinden yani etiketli veri üzerinden Supervised Learning'den elde edilen Balance Eccurisy değerlerinin farklılıklarını görüyoruz.
+
+528
+02:03:21,268 --> 02:03:27,448
+Buradaki farklılık derken artı 12 üstüne çıkmış, eksi 1.6 aşağısına inmiş gibi düşünebiliriz.
+
+529
+02:03:27,828 --> 02:03:42,988
+Burası 68'lerde, burası 85'lerde, 83'lerde diyebiliriz. Bunun gibi baktığımızda, ele aldığımızda, işte PET'te en iyi gelenlerden biri, işte Dino ile Mismatch ya da Mixmatch ya da Tissue'de her biri farklı değeri ele almış diyebiliriz.
+
+530
+02:03:55,828 --> 02:04:03,488
+DNA kurgusunda MixMatch'in çok iyi sonuçlar verdiğini, en kararlı, en başarılı yarı denetimli yöntem olduğunu bize gösteriyor.
+
+531
+02:04:03,488 --> 02:04:11,908
+Her biri kendi içerisinde, simple CLR'de ya da diğer Dino'da güçlü temsil öğrenimi veya sınıflacıya duyarlı olduğunu gösteriyor.
+
+532
+02:04:12,268 --> 02:04:18,368
+Ya da T-Met2'nun gürültü etkisiz veri nedeniyle tüm yöntemler için düşük katkı verdiği gibi anekdotlar da paylaşılıyor.
+
+533
+02:04:20,728 --> 02:04:22,668
+Bu değerlendirmeyi yaparken...
+
+534
+02:04:22,668 --> 02:04:23,428
+Buyurun hocam.
+
+535
+02:04:23,731 --> 02:04:39,971
+Mix Match'in yapısal özelliklerini biraz daha vurgulayabilir misin geriye dönüp? Burada en iyi model olarak bunun öne çıktığını söyledin. Neydi bunun içerisindeki yapı?
+
+536
+02:04:41,363 --> 02:04:45,903
+Hocam Mixed Match, Pseudo Label oluşturuyor. Yanlış hatırlamıyorsam, birazdan da yine bahsedeceğim.
+
+537
+02:04:46,003 --> 02:04:52,163
+Pseudo Label'lar oluştururken biraz da soft etiketleme yapıyor. Bu bir Semi-Supervised Learning.
+
+538
+02:04:52,403 --> 02:04:58,043
+Yani içerisinde etiketli veri var. Etiketli veriyi alarak işleme, performans üretiyor.
+
+539
+02:04:58,043 --> 02:05:08,423
+Her biri içerisinde farklı yönelimleri var. Örneğin bir tanesi Fixed Match. Yanlış olmasın.
+
+540
+02:05:09,363 --> 02:05:13,083
+Ahmin'ini etiket olarak tayin edip sonrasında bunun üzerine öğrenme yapıyor.
+
+541
+02:05:13,083 --> 02:05:21,843
+Mix, Match'te yanlış hatırlamıyorsam hocam, soft label ama yani içerisinde kendi etiket tayiniyle pseudo label diye de geçiyordu.
+
+542
+02:05:22,283 --> 02:05:28,483
+Bir etiket tayin edip sonrasında da kendi performansını çıkartıyor diye hatırlıyorum.
+
+543
+02:05:28,583 --> 02:05:30,123
+Tam detaylı hatırlamamakla beraber.
+
+544
+02:05:36,404 --> 02:05:52,264
+Sonrasında baktığımızda işte Harper parametrelerinden bahsettik. Burada aslında bu veri setleri ResNet 18 ve ResNet 50. Bir de WhiteRes 28 üzerinde değerlendiriyor. Yani 3 model üzerinde çalışılıyor. Sadece 3 derin ağ üzerinde çalışılıyor.
+
+545
+02:05:52,264 --> 02:06:04,264
+ResNet 18 aslında biraz daha az katmanlı, küçük katmanlı bir modelimiz ağımız. ResNet 50 ise 50 katmanlı daha parametresinin fazla olduğu bir derin öğrenme ağımız diyebiliriz. Burada ilk katmanda ilk...
+
+546
+02:06:04,404 --> 02:06:19,784
+Yukarıki de ele alınan tüm 16 model değerlendiriliyor. 16 model aynı standartlarda, aynı sınırlarda eğitiliyor. Performans sonucuna bakıldıktan sonra 6 tanesi yanlış olmasın. En iyi 6 tanesi.
+
+547
+02:06:20,372 --> 02:06:48,092
+Air Rocks, biraz daha yüksek çözünürlüklü modelde ResNet 18 ve 50'ye nasıl bir response gösteriyor, nasıl bir sonuç veriyor, nasıl bir dönüt veriyor diye ikisi de değerlendiriliyor. Burada baktığımızda yine yukarıda ilk 6'ya giren işte Mix Match'imiz. Aşağıda da 2. Rowda da Air Rocks üzerinde test edildiğinde yine en yüksek semi-supervised turning'den olan Mix Match yüksek bir doğruluk gösteriyor ve yüksek bir başarı, balans ekorisi.
+
+548
+02:06:48,372 --> 02:06:50,672
+On test değerini bize sunuyor.
+
+549
+02:06:52,083 --> 02:07:01,703
+Sonuca bağlayacak olursak, bu çalışma aslında dediğimiz gibi, yani şu an günümüzde her birimiz lisans düzeyindeyken daha dengeli verilerle çalışıyoruz ya da etiketli verilerle çalışıyoruz.
+
+550
+02:07:01,884 --> 02:07:11,423
+Bu da farklı bir ufuk açıyor aslında, farklı bir alan oluşturuyor. Düşük veri setiyle, az veri setiyle, üzerine etiketsiz veriyle nasıl çalışabiliriz, nasıl performans geliştirebiliriz.
+
+551
+02:07:11,423 --> 02:07:20,083
+Bunun üzerine baktığımızda ortaya gerçekten güzel bir analiz, sınırlı kaynaklarla yapılan bir çalışmaya bize sunuyor ve bu noktada da aslında ilerleyen çalışmalar için yönelik.
+
+552
+02:07:20,083 --> 02:07:27,083
+Yöntem seçimi, veri stratejisi ve model geliştirme süreçlerinde bir rehber niteliğinde çalışma olduğunu görüyoruz.
+
+553
+02:07:27,083 --> 02:07:32,083
+Şimdi size sunumdan sonra şeyi göstermek isterim kodda.
+
+554
+02:07:39,923 --> 02:07:47,304
+ekranımı görüyor musunuz şu an hocam? Henüz değil bekliyoruz. Evet şimdi geldi.
+
+555
+02:07:47,699 --> 02:07:55,380
+Şimdi hocam burada da aslında şöyle. Bu çalışmanın kodu var GitHub'ta ama ben bu repoyu kendi bilgisayarımda kuramadım.
+
+556
+02:07:55,520 --> 02:08:05,119
+Kuramadığım için ben de işte Mix Match veya Fix Match gibi iki ayrı modeli nasıl kurgulayabilirim, nasıl deneyimleyebilirim diye Colab'de bunun çalışmasını yaptım.
+
+557
+02:08:05,119 --> 02:08:13,739
+İşte az önce de değindiğim gibi Mix Match etiket etiketsiz veriyi birleştirip mix eden bir, sof etiketlerle eğiten bir model.
+
+558
+02:08:13,980 --> 02:08:15,659
+Overfitting'i engelliyor ana amacı.
+
+559
+02:08:15,699 --> 02:08:22,680
+İşte FixMesh'te zayıf dönüşümlerle verilen zayıf dönüşümlerle güvenli tahmin almaya çalışan bir model.
+
+560
+02:08:23,220 --> 02:08:42,420
+Devamında dediğimiz gibi veriyi eğitiyorum. Burada Transform yapıyorum. Yani görüntüler üzerinde iki tane farklı Transform yapıyorum. Bir tanesi Strong Transform. Burada Horizontal Flip ve Rotation'a yer veriyorum. Normalde de ise, Weak'te ise sadece Grayscale uyguluyoruz.
+
+561
+02:08:42,420 --> 02:08:50,880
+Bunun içerisinde nasıl uygulayacağını, nasıl yönelim göstereceğini Fixed Match ve Mixed Match için gözlemleme şansı elde ettim.
+
+562
+02:08:51,220 --> 02:09:00,900
+Veri çok büyük veya dediğim gibi makalede de yer aldığı gibi aslında 20.000 saatten GPU saatinden fazla ele alınan bir makale.
+
+563
+02:09:00,900 --> 02:09:06,900
+Burada sınırlı bir saatle, sınırlı bir epox sayısıyla modeli eğittikten sonra...
+
+564
+02:09:07,220 --> 02:09:31,239
+Çalışmanın çıktılarını size göstermek istedim. Sadece deneyimlemek üzerine oldu. Geliştirmek veya bunun üzerindeki çıktılarını optimize etmek üzerine bir çalışma henüz yapmadım. Belki ilerleyen çalışmalarda sizlerle de görüştükten sonra neler yapılabilirse belki bunun üzerine yönelebilirim. Dediğim gibi tıbbi alanda tıbbi medikal görüntüler arasında çalışma motivasyonu mevcut. Dediğim gibi deneyim de bu şekildeydi kodlamada.
+
+565
+02:09:33,319 --> 02:09:34,579
+Beni dinlediğiniz için teşekkür ediyorum.
+
+566
+02:09:36,627 --> 02:09:43,647
+Teşekkür ediyoruz [öğrenci]. Bu neydi? Mix.
+
+567
+02:09:45,187 --> 02:09:46,087
+Match.
+
+568
+02:09:46,567 --> 02:09:50,827
+Mix-Match. Orayı biraz daha açsan güzel olacaktı bence.
+
+569
+02:09:53,327 --> 02:10:00,000
+Tamam, zaten etiketsiz veri var ama onu nasıl psüde etiket...
+
+570
+02:10:00,000 --> 02:10:28,000
+Etiketliyor. O kısmı biraz daha detaylı versen iyi olurdu diye düşünüyorum. Ama çok önemli bir konu ve hakikaten veri etiketletmek çok maliyetli. Sağlık tarafında uzmanlar bu işten çok kaçıyor. Bu noktada böyle bir çözüm üretmeye çalışmaları çok faydalı bence. Sunum için teşekkür ediyoruz ve seni de...
+
+571
+02:10:28,000 --> 02:10:31,020
+Teşekkür ederim hocam.
+
+572
+02:10:31,720 --> 02:10:32,960
+Devam çalışmaya.
+
+573
+02:10:34,340 --> 02:10:35,580
+Teşekkür ederim hocam.
+
+574
+02:10:35,580 --> 02:10:37,660
+[öğrenci] var sırada.
+
+575
+02:10:38,460 --> 02:10:41,580
+Ama ekranda göremiyorum [öğrenci]'yı.
+
+576
+02:10:42,380 --> 02:10:42,860
+Düştü mü?
+
+577
+02:10:45,760 --> 02:10:47,760
+Peki, bekleyemeyeceğiz.
+
+578
+02:10:48,100 --> 02:10:50,000
+[öğrenci] sizinle devam edelim.
+
+579
+02:10:50,420 --> 02:10:55,860
+[öğrenci] bağlanırsa eğer onu sonradan tekrar sıraya alabiliriz.
+
+580
+02:10:56,920 --> 02:10:57,880
+[öğrenci] hazır mısın?
+
+581
+02:11:01,779 --> 02:11:07,659
+Merhaba hocam. Merhaba [öğrenci]. Evet. Ekranımı da hemen paylaşıyorum. Bir dakika.
+
+582
+02:11:11,283 --> 02:11:13,363
+Tamam, şu an sanırım görüyorsunuz değil mi?
+
+583
+02:11:13,683 --> 02:11:17,263
+Evet, ekranını görebiliyoruz. Bir de tam ekran yaparsan.
+
+584
+02:11:17,983 --> 02:11:18,323
+Tabii.
+
+585
+02:11:20,595 --> 02:11:30,796
+Şu şekilde. Benim konumda yerel tutarlılık ve alan çeşitliliğiyle alan eğitimi, alan eğimi altında adil birleşik öğrenme diye Türkçe'ye çevirdiğim bir makale.
+
+586
+02:11:30,796 --> 02:11:42,815
+Aslında birleşik öğrenme dediğimiz Federated Learning. Bu konuyu seçmemin nedeni de birazcık bu farklı yaklaşımları, işte Federated Learning gibi farklı yaklaşımları merak etmemden kaynaklıydı aslında.
+
+587
+02:11:44,855 --> 02:11:48,176
+Federated Learning nedir diye başlayabilirim.
+
+588
+02:11:48,435 --> 02:11:55,615
+Verileri merkezi bir sunucuya toplamadan, kullanıcı cihazları gibi dağınık ortamlarda model eğitimi yapmayı sağlayan bir yöntemimiz.
+
+589
+02:11:56,195 --> 02:12:04,155
+Bu sistemde her makine öğrenimi, pardon, bu sistemde her cihaz kendi verisiyle yerel olarak modeli eğitiyor.
+
+590
+02:12:04,636 --> 02:12:08,836
+Ve veri setleri ana serverımızda, ana modelimizde hiçbir şekilde paylaşılmıyor.
+
+591
+02:12:08,836 --> 02:12:16,435
+Sadece model güncellemeleri sunucuya gönderiliyor. Böylece veri gizliliği korunmuş oluyor ve band genişliğinden de...
+
+592
+02:12:16,435 --> 02:12:18,036
+Aslında tasarruf ediyoruz.
+
+593
+02:12:19,036 --> 02:12:22,695
+Ve modelimizi de sağlıklı bir şekilde geliştirmeyi hedefliyoruz.
+
+594
+02:12:22,695 --> 02:12:23,216
+Burada.
+
+595
+02:12:24,115 --> 02:12:29,576
+Yani şu resim üzerinde anlatacak olursam bir tane ana sunucumuz var.
+
+596
+02:12:29,895 --> 02:12:32,576
+Ve burada belirlediğimiz bir model mimarisi var.
+
+597
+02:12:32,655 --> 02:12:33,695
+Bu model mimarisini...
+
+598
+02:12:35,028 --> 02:12:46,228
+Buradaki client'lara göndermeden önce ufak bir eğitimden geçirmiş de olabiliriz. Hiç bir şekilde eğitime sokmadan direkt olarak client'lara göndererek de başlayabiliriz.
+
+599
+02:12:46,228 --> 02:12:58,192
+Client'larda ise kendi dataset'leri var ve bu dataset'leri hiçbir şekilde bizle paylaşmadan, belirli epoch süreleriyle.
+
+600
+02:12:58,192 --> 02:13:06,811
+Eğittikten sonra ana servera gönderiyorlar parametrelerini ve bu ana sunucumuz da global modeli.
+
+601
+02:13:07,155 --> 02:13:25,895
+Gelen parametreleri belirli kurallarla birleştirerek yeni bir model oluşturuyoruz. Bu modeli tekrar client'lara gönderiyoruz. Bu şekilde süreç devam ediyor. Bir döngüde aslında. En sonunda ise ana modelimizin bütün dataset'ler üzerinde sağlıklı bir şekilde çalıştığını varsayıyoruz.
+
+602
+02:13:26,484 --> 02:13:45,663
+Bu şekilde anlatınca aslında çok güzel çalışan bir yöntem gibi geliyor ama bazı sorunları var tabii ki Federated Learning'in. İstemci verilerinin farklı alanlardan gelmesiyle oluşan bir sorunumuz var ve buna Domain Scale diyoruz. Biraz önce bahsettiğim gibi bütün istemcilerin verileri farklı olabiliyor.
+
+603
+02:13:46,195 --> 02:13:56,195
+Bu model güncellemelerinde tutarsızlıklara ve model birleştirme sürecinde ön yargılara yol açarak performans adaletsizliğini ortaya çıkarıyor.
+
+604
+02:13:56,195 --> 02:14:02,695
+Bu durumda düşük performans sergileyen istemcilerin model üzerindeki etkisinin gittikçe azalmasına neden oluyor aslında.
+
+605
+02:14:02,695 --> 02:14:11,695
+Biraz daha açıklayacak olursak Domains Key durumunu, istemcilerin verilerin tamamen farklı veri kaynaklarına veya alanlara ait olmasına deniyor.
+
+606
+02:14:11,859 --> 02:14:18,859
+Bu farklılıkta her cihazın model eğitimine farklı ve bazen çelişkili katkılar yapmasına neden oluyor. Bu ne demek?
+
+607
+02:14:19,479 --> 02:14:30,319
+Aslında ilk lokal modelimiz aynı parametreyi arttırmak isterken diğer bir lokal modelimiz ise aynı parametreyi düşürmeyi istiyor.
+
+608
+02:14:30,319 --> 02:14:39,099
+Ve bu şekilde global modele geri dönüş veriyor. Global model ise orada ikisinden birini seçmek durumunda ya da ortalamalarını alarak ilerliyor.
+
+609
+02:14:39,859 --> 02:14:43,399
+Bu direkt olarak bütün başarıyı etkiliyor aslında.
+
+610
+02:14:44,319 --> 02:14:50,419
+Ve özellikle verilerin türü veya kullanım senaryosu değiştiğinde Domain Scape'de daha belirgin hale geliyor.
+
+611
+02:14:51,679 --> 02:14:58,319
+Burada makalede bunu iki ana konu başlığı olarak nitelendirmişler.
+
+612
+02:14:58,319 --> 02:15:05,479
+Parametre güncelleme çatışması. Biraz önce de söylediğim gibi parametre güncelleme yönlerinde
+
+613
+02:15:05,775 --> 02:15:16,895
+Önemli tutarsızlıklara yol açıyor bu durum. Önemli parametrelerin daha az önemli olanlar tarafından da bastırılmasına neden oluyor.
+
+614
+02:15:17,315 --> 02:15:21,575
+Ve düşük performans sistemciler için önemli performans kayıplarına yol açıyor.
+
+615
+02:15:21,575 --> 02:15:27,575
+Model birleştirme önyargısı ise şöyle. Mevcut federated learning yöntemleri.
+
+616
+02:15:28,416 --> 02:15:33,276
+Ağırlıkların adil olmayan şekilde dağıtılmasına neden oluyor ve alan çeşitliğini göz ardı ediyor.
+
+617
+02:15:33,276 --> 02:15:45,115
+Yani bir istemci 1000 tane data ile çalışıyorken, diğeri 100 data üzerinde çalışıyorsa, birine 1000 birim ağırlık veriyor, diğerine 100 birim ağırlık veriyor.
+
+618
+02:15:45,356 --> 02:15:54,516
+Ve aslında 100 birimde çalışan istemcinin daha önemli bir dataset üzerinde çalışıyorsa bunu göz ardı etmiş oluyoruz.
+
+619
+02:15:56,416 --> 02:16:03,536
+Bu da önyargılı bir şekilde yakınsamaya neden oluyor aslında modeller arasında.
+
+620
+02:16:05,536 --> 02:16:12,976
+Peki makalede önerilen yöntem nasıl bir yöntem? Fatial yöntemi aslında ism olarak.
+
+621
+02:16:13,896 --> 02:16:19,536
+Burada söz konusu adaletsizlikleri gidermek amacıyla iki temel yaklaşım öneriyorlar.
+
+622
+02:16:20,051 --> 02:16:26,971
+İlki, yerel eğitim sürecinde belirli parametrelerin tutarlı şekilde aynı yönde güncellendiğini gözlemlemişler.
+
+623
+02:16:27,591 --> 02:16:36,451
+Ve buna dayalı olarak da yalnızca önemli parametrelerin güncellenmesini küresel modele yansıttıklarını söylüyorlar.
+
+624
+02:16:36,852 --> 02:16:48,172
+Yani şu şekilde bu parametre güncelleme çatışmalarını bazı parametreleri, bazı client'lardan gelen parametreleri önemli, bazılarını da önemli değil olarak sınıflandırıyorlar.
+
+625
+02:16:48,172 --> 02:16:59,172
+Ve birleştirirken sadece önemli olan parametreler, parametre güncellemelerin üzerinden bir birleştirme yapıyorlar veya güncelleme yapıyorlar.
+
+626
+02:17:02,420 --> 02:17:10,900
+Verilerin önemsizler olarak sönümlenmesini engellediklerini iddia ediyorlar. Bu şekilde de global modelin başarısını arttırdıklarını söylüyorlar.
+
+627
+02:17:11,924 --> 02:17:39,204
+Bu aşağıda da aslında 10 tane klas var burada, 0'dan 9'a kadar ve 4 farklı dataset'i var. Bu 4 dataset'i üzerinde bir Fed Average yöntemi, en çok kullanılan, en yaygın Federated Learning yöntemlerinden biri. Ona Fat Hill yönteminin eklenip ve eklenmeden önceki başarılarını tabloda listelemişler.
+
+628
+02:17:39,615 --> 02:17:45,456
+Gördüğünüz gibi standart sapmada bir düşüş ve genel olarak ekürüslerde de artış var.
+
+629
+02:17:46,556 --> 02:17:56,355
+İlk sorunu bu şekilde çözmeyi hedeflerken, ikinci olarak da küresel model ile yerel modeller arasındaki mesafelerin varyansını minimize etmeyi hedefliyorlar.
+
+630
+02:17:56,355 --> 02:18:05,355
+Yani global modelin aslında bütün klientlara eşit bir şekilde yaklaşmasını ve ön yargılarından kurtulmasını hedefliyorlar.
+
+631
+02:18:06,772 --> 02:18:17,652
+Yalnızca model toplama yani server-side'da aslında birleştirme kısmında FETIAL yöntemi gerçekleşiyor. Yani önerdikleri sistem gerçekleşiyor.
+
+632
+02:18:18,192 --> 02:18:24,692
+Dolayısıyla şu ana kadar kullanılan bütün Federated Learning sistemlerine çok kolay bir şekilde entegre edilebiliyor.
+
+633
+02:18:24,912 --> 02:18:32,312
+Zaten biraz sonra da göstereceğim hangilerine entegre edildiğini ama burada genel olarak FED Average üzerinden ilerleyeceğim.
+
+634
+02:18:32,623 --> 02:18:38,263
+Çünkü hem en yaygın olan o hem de genel olarak orada değerlendirmişler.
+
+635
+02:18:42,223 --> 02:18:48,583
+Makalenin içerisinde parametre güncelleme tutarlılığı adında bir şeyden bahsediyorlar.
+
+636
+02:18:48,583 --> 02:18:57,743
+Bunu aslında kendileri bulmuşlar ve ilk kez bahsediliyor bir makalede.
+
+637
+02:19:00,724 --> 02:19:12,724
+Şunu kapsayan bir şey. 4 farklı domeninden örneklenmiş veri seti ile çalışan bir ResNet 10 mimarisi kullanan bir sistem kuruyorlar.
+
+638
+02:19:12,724 --> 02:19:19,724
+Ve birçok parametrenin ardışık eğitim turlarında tutarlı yönlerle güncellendiğini gözlemliyorlar.
+
+639
+02:19:20,788 --> 02:19:29,488
+Şurada da gördüğünüz üzere 10 ve 100 artışık turda parametrelerin büyük bir bölümünün aynı yönde güncellendiğini gözlemliyorlar.
+
+640
+02:19:29,488 --> 02:19:47,488
+Yani kırmızılar, maviler ve yeşiller birer client olarak düşünecek olursak, aynı parametre üzerinde, bu en tane update de kırmızı sürekli olarak o parametreyi arttırmayı ya da düşürmeyi istiyorsa,
+
+641
+02:19:47,760 --> 02:20:02,779
+Diğerleri tam olarak karar veremiyorsa, kırmızının yani sürekli bu değer değişiyorsa, kırmızıyı parametre güncelleme tutarlılığına sahip bir güncelleme olarak nitelendiriyorlar.
+
+642
+02:20:02,779 --> 02:20:10,159
+Ve bunu önemli olarak nitelendirirken gördüğünüz gibi mesela mavi önce arttırmaya sonra azaltmaya çalışmış.
+
+643
+02:20:12,031 --> 02:20:24,651
+Round sayısı arttıkça. Dolayısıyla maviden gelen veri ise bu parametre özelinde önemsiz bir veri olarak nitelendiriyorlar ve birleştirmeye dahil etmiyorlar.
+
+644
+02:20:26,651 --> 02:20:31,591
+Biraz önce de bahsettim. Önemli parametreler ve önemsiz parametreler.
+
+645
+02:20:34,195 --> 02:20:41,376
+Burada önemli ya da önemsiz parametre dediğim parametre client'a göre değişiyor o zaman öyle mi?
+
+646
+02:20:43,347 --> 02:20:46,128
+Nasıl hocam anlamadım tam olarak sorunuzu.
+
+647
+02:20:46,128 --> 02:21:11,188
+Şimdi bir önceki şeye gel. Burada klient kırmızıyla gösterdiğin daha konsistent dedin. Maviyle gösterdiğin ve yeşille gösterdiğin ise daha düşük güven değerine ya da tutarlılığa sahip. O yüzden kırmızının tutarlı dediği şeyi esas alıyor. Mavi ve yeşilden gelenleri.
+
+648
+02:21:11,347 --> 02:21:14,907
+şey almıyor dedin, dikkati almıyor dedin. Doğru mu?
+
+649
+02:21:15,407 --> 02:21:20,968
+Evet, kırmızıyı önemli olarak nitelendirirken buradakileri önemsiz olarak nitelendiriyor birleştirme aşamasında.
+
+650
+02:21:21,488 --> 02:21:22,988
+Birleştirme aşamasında.
+
+651
+02:21:23,768 --> 02:21:24,608
+Tamam.
+
+652
+02:21:26,548 --> 02:21:45,847
+Biraz önce anlattığım gibi, önemsiz parametreler sıklıkla yön değiştirerek kararsız güncellemeler sergiliyor ve genel performans artışına çok sınırlı katkıda bulunduğu için bunu değerlendirmeye alıp önemli güncellemelerle çakışmamasını sağlıyorlar aslında.
+
+653
+02:21:47,347 --> 02:21:55,347
+Ağırlıklar sıfırlanıyor önlemsiz parametrelerde ve agregasyon sücidine dahil edin.
+
+654
+02:21:56,979 --> 02:22:24,979
+Bir diğer yöntem ise Momentum Temelli A güncellemesi. Bu da birleştirme ön yargısı problemi için kullanılan bir yöntem. Global model ile her bir yerel model arasındaki mesafelerin varyansını minimize etmeyi hedefliyorlar. Bu hedef, modelin her bir istemciye eşit uzaklıkta kalmasını sağlayarak domain bias'i azaltmayı hedefliyor. Ancak bu optimizasyon süreci büyük model parametreleri ve çok sayıda istemci nedeniyle hesaplama açısından maliyet.
+
+655
+02:22:24,979 --> 02:22:44,979
+Çünkü her adımda global model ve yerel modelleri konumlandırmak ve uzaklıklarını hesaplamak hem çok uzun sürüyor hem de gerçekten maliyetli bir işlem oluyor. Bu sebeple de bu hedefe yaklaşık olarak ulaşan daha basit bir yöntem öneriyorlar. Momentum temelli bir ağırlık güncelleme stratejisi adı verilen bir yöntem.
+
+656
+02:22:45,587 --> 02:22:51,528
+Daha büyük parametre değişiklikleri yapan istemcilere güncellemelerde daha yüksek ağırlık atanıyor.
+
+657
+02:22:51,528 --> 02:23:00,827
+Ve bu sayede aslında daha yüksek bir güncelleme değeri geliyorsa ben global model olarak o modele daha uzaktayımdır.
+
+658
+02:23:00,927 --> 02:23:03,528
+O yüzden ona daha fazla yaklaşmalıyım düşüncesi.
+
+659
+02:23:19,028 --> 02:23:20,971
+[öğrenci] ses gitti.
+
+660
+02:24:02,835 --> 02:24:05,915
+Evet, muazın bağlanmasını bekliyoruz şu anda.
+
+661
+02:24:11,283 --> 02:24:13,923
+Bu arada [öğrenci] henüz gelmedi galiba.
+
+662
+02:24:50,227 --> 02:24:51,687
+Merhaba hocam. Tekrar.
+
+663
+02:24:51,687 --> 02:25:03,327
+Evet, [öğrenci] arada kesildi. Ekran paylaşımı yaparken kameranı kapatabilirsin. Belki bağlantıyı zorluyor olabilir.
+
+664
+02:25:05,587 --> 02:25:09,407
+Tamamdır. En son nerede kesildi hocam tam olarak?
+
+665
+02:25:09,967 --> 02:25:10,627
+Geri gel.
+
+666
+02:25:12,407 --> 02:25:12,907
+Burada mıydı?
+
+667
+02:25:16,531 --> 02:25:18,531
+Daha geri gel bakalım.
+
+668
+02:25:19,531 --> 02:25:21,531
+Burayı anlattım sanırım.
+
+669
+02:25:21,531 --> 02:25:24,531
+Evet, burayı anlattın. Bundan sonraki slide ile devam edebiliriz.
+
+670
+02:25:25,531 --> 02:25:37,531
+Tamam. Momentum temelli ağırlık güncelleme adında bir sistem önermişler. Bu da aslında ikinci bahsettiğim sorunla alakalı bir çözüm.
+
+671
+02:25:37,808 --> 02:26:01,128
+Global model ile her bir yerel model arasındaki mesafelerin varyansını minimize eden bir optimizasyonu hedefliyor. Bu hedef modelin her bir istemciye üst uzaklıkta kalmasını sağlarken domain bayası azaltıyor. Ancak bu optimizasyon süreci büyük model parametreleri ve çok sayıda istemci nedeni de hesaplama açısından maliyetli. Yani her bir aşamada.
+
+672
+02:26:02,195 --> 02:26:12,495
+Her bir aşamanın sonucunda global modelle yerel modelleri uzaklıklarını hesaplamak aslında hem uzun sürüyor hem de maliyete neden oluyor.
+
+673
+02:26:12,495 --> 02:26:17,495
+Bu sebeple bu hedefe yaklaşık olarak ulaşılan daha basit bir yöntem öneriyorlar.
+
+674
+02:26:18,355 --> 02:26:21,976
+Momentum temelli bir ağırlık güncelleme stratejisi uyguluyorlar.
+
+675
+02:26:22,756 --> 02:26:26,536
+Daha büyük parametre değişiklikleri yapan istemcilere daha yüksek ağırlık atanıyor.
+
+676
+02:26:27,456 --> 02:26:29,096
+Aslında temel mantığı şu.
+
+677
+02:26:30,388 --> 02:26:40,628
+Eğer herhangi bir islemciden daha büyük bir değişiklik geliyorsa, parametre olarak global modeli, bu global modelin ona yeteri kadar yakın sayamadığını...
+
+678
+02:26:40,847 --> 02:27:01,327
+O yüzden ona daha fazla ağırlık vererek, ona daha fazla yaklaşmaya diğer küçük değişiklikler yapmak isteyen klantlara çok onun kadar ağırlık vermemeyi hedefleyip, daha merkezi bir noktada hepsine eşit uzak dolan bir global model oluşturmayı hedefliyorlar.
+
+679
+02:27:02,628 --> 02:27:07,227
+Daha önce ihmal edilen domenlere de daha fazla yaklaşması sağlanıyor bu şekilde.
+
+680
+02:27:09,396 --> 02:27:23,136
+Bu konu hakkında çok fazla görselleştirme ya da tablo yoktu açıkçası momentum temelli ağırlık güncelleme açısından makalede. Çok daha sözel bir anlatım vardı.
+
+681
+02:27:23,536 --> 02:27:33,335
+Ben hem makaleden hem de koddan çıkarımlarımla şöyle ufak bir görselleştirme yaptım. Çünkü daha net anlaşılabilir belki bu şekilde.
+
+682
+02:27:33,335 --> 02:27:38,835
+Yeşil ve kırmızılar bizim client modellerimiz.
+
+683
+02:27:39,636 --> 02:27:53,515
+Mavi ise global modelimizin güncellenmeden önceki hali. Göründüğü üzere yeşil modeli birazcık daha yakın ve yeşil modelden gelen güncellemeler işte eksi 3 değerinde olsun diyelim.
+
+684
+02:27:53,976 --> 02:27:58,195
+Eksenleri de bir söylersen yatay eksen neyi gösteriyor? Ne demek bu?
+
+685
+02:27:58,195 --> 02:28:06,195
+Aynı parametre üzerindeki gelen güncelleme değerleri hocam. Yani aynı parametre yeşil...
+
+686
+02:28:06,675 --> 02:28:18,396
+Yeriden model, yeşil lokal model, eksi üçlük bir güncelleme değeri atarken, kırmızı model ise artı ellilik bir güncelleme değeri atıyor. Aynı adımda.
+
+687
+02:28:20,536 --> 02:28:29,115
+Ve tabi bunların biraz önce bahsettiğim parametre güncelleme tutarlılığına sahip güncellemeler olmasına ihtiyacımız var.
+
+688
+02:28:33,811 --> 02:28:58,811
+Aynı şekilde eksi değeri döndürürken, kırmızı bir eksi bir artı değeri döndürürse burada kırmızının değerine güvenmiyoruz. Ve önemsiz olarak nitelendirdiğimiz için aslında momentum temelli ağırlık inceleme kısmına hiç gelmiyor bile. İkisinin de tutarlı olduğunu varsaydığımızda büyük değişikliğe daha fazla ağırlık veriyoruz. Ve model oraya daha fazla yakınlamaya çalışıyor. Bu şekilde de aslında ikisine de...
+
+689
+02:28:59,219 --> 02:29:07,139
+Eşit uzaklıkta olan, daha adil performansa sahip olan bir model oluşturmayı hedefliyorlar. Temel amaçları da bu şekilde.
+
+690
+02:29:07,979 --> 02:29:17,919
+Dediğim gibi bu görüntüyü ben hazırladım. Ufak çaplı bir hata falan olabilir. Ama çıkarımım ve anladığım buydu. Momentum temelli ağırlık güncelleme kısmında.
+
+691
+02:29:18,868 --> 02:29:39,668
+[öğrenci], burada küçük bir soru soracağım. Peki burada mesela client'lardaki örnek sayısı veya işte oradaki nasıl söyleyeyim örneklerin klaslara dağılımı gibi parametreler baştan biliniyor ve dengeye getiriliyor mu? Birinci sorun bu.
+
+692
+02:29:39,668 --> 02:29:46,868
+İkincisi, bu güncelleme sırasında işte o örnek sayısı da dikkate alınarak belli client'ları ağırlayacak.
+
+693
+02:29:46,868 --> 02:30:12,688
+Genel olarak kullanılan federated learninglerde aslında data sayısına göre güncellemeler atanıyor. Ama Fatial yöntemi ona birazcık karşı şey yapmışlar. Çünkü hani iki birim bir data üzerinde çalışan modelin aslında az da olsa çok değerli bir data'ya sahip olabileceğini düşünüyorlar.
+
+694
+02:30:13,172 --> 02:30:21,891
+Yani çok genel ve çok bilindik bir datayı belki çok fazla sayıda alabiliriz.
+
+695
+02:30:21,891 --> 02:30:35,391
+Ama değerli ve kısıtlı veriye sahip bir datayı daha küçük bir datasetinden elde edeceğimiz için bu datasetindeki örnekler üzerinden şey yapmamalıyız.
+
+696
+02:30:36,472 --> 02:30:38,871
+Üzerine geliştirilmiş bir yöntem aslında.
+
+697
+02:30:40,084 --> 02:30:49,763
+Dolayısıyla dataset içindeki fotoğraf sayılarına falan pek bakılmıyor. En azından bakılmadığı iddia ediliyor hocam.
+
+698
+02:30:50,484 --> 02:31:09,263
+Ama ben bunu birazcık merak edip, çünkü kodda tam olarak orayı göremedim, algılayamadım ya da. Merak edip ufak bir dataseti oluşturdum. Şurada gördüğünüz gibi dijitler üzerinde çalıştım ben. Bunu çalıştırmadım açıkçası. Burada 10 tane.
+
+699
+02:31:09,747 --> 02:31:14,247
+Klasımız var. 0'dan 9'a kadar rakamlar ve 4 farklı da dataset var.
+
+700
+02:31:14,247 --> 02:31:21,247
+El yazılarının siyah beyaz görüntüleri, birazcık daha bulanık hali ve plakaların üzerindeki sayılar.
+
+701
+02:31:21,247 --> 02:31:27,247
+Burada da rastgele resimlerin üzerine dijital olarak yazılmış sayılar mevcut.
+
+702
+02:31:28,247 --> 02:31:37,707
+Bu dataset'lerin hepsi 32-32'lik fotoğraflar içeriyor ve eşit sayıda örnekleri var.
+
+703
+02:31:38,100 --> 02:32:00,540
+Ve Mnist'te de en yüksek başarıyı genelde görüyor. Ya da işte USBs'de en yüksek başarıya sahip oluyor. Ben kendi denememde Mnist'i çıkarttım ve kendim böyle 200 fotoğraflık falan çok küçük bir dataset'i oluşturdum. 5 kişinin el yazısıyla oluşturulmuş ufak bir dataset'ti.
+
+704
+02:32:00,943 --> 02:32:27,963
+Bunu acaba aynı şekilde çok yüksek oranlara çıkabilir mi diye kontrol ettiğimde hocam %13'lerde falan kaldım açıkçası. Yani dataset boyutuna takılmıyor diyor Fatheal yöntemi. Kodda çok net bir karşılığını göremedim zaten ama denediğim kısım boyunca etkilendiğini düşündüm açıkçası. Çünkü %13 çok düşük bir başarı oranı diğer şeylere göre.
+
+705
+02:32:28,724 --> 02:32:55,844
+Yerel model %90'ları falan buluyordu ilk aşamalarda. Çünkü önceden eğitilmiş bir model değil. 10 epok boyunca yerel model kendi kendine eğitiyor ve başarı oranına göre bir geri model döndürüyor server'a. Yerel model ilk aşamalarda güzel sonuçlar döndürüyordu. Yani accuracy bayağı yüksekti. Ama gittikçe global modeli etki edemedi ve global modeldeki şey %13'lerde falan kaldı.
+
+706
+02:32:56,628 --> 02:32:58,628
+Başarı oranı o dataset'te.
+
+707
+02:32:58,628 --> 02:33:01,628
+Ne kadar da sample sayın?
+
+708
+02:33:01,628 --> 02:33:04,628
+200 fotoğraf falan.
+
+709
+02:33:04,628 --> 02:33:13,628
+Baya düşük ama 200 tane fotoğrafla yani her bir klas için mi 200?
+
+710
+02:33:14,963 --> 02:33:16,064
+Yok, totaş.
+
+711
+02:33:16,603 --> 02:33:23,644
+O zaman sıfırdan dokuza kadar sayılar var. Her birinden en fazla yirmi tane falan görüntü var anlamına gelir.
+
+712
+02:33:24,084 --> 02:33:24,724
+Evet hocam.
+
+713
+02:33:24,724 --> 02:33:27,064
+Böyle bir işi yapman hayal yani.
+
+714
+02:33:28,144 --> 02:33:29,664
+Büyürmek gerekir onun.
+
+715
+02:33:30,704 --> 02:33:35,664
+Lokaldeki parametreleri değerlendirildiği için öneminin çok olmayacağını düşündüm aslında.
+
+716
+02:33:35,984 --> 02:33:38,224
+Ama oldu. Yani nasıl oldu bilmiyorum. Oldu.
+
+717
+02:33:38,963 --> 02:33:51,683
+Yok yani. O çok anlamlı değil. Kesinlikle örnek sayısını arttırman gerektiğini düşünüyorum ben. Bu sizin yaptığınız çalışmanın sonucu mu?
+
+718
+02:33:53,063 --> 02:34:03,223
+Bu genel tablo hocam. Ben onu çok anlamlı bulmadığım için açıkçası buraya koymadım. Çünkü dediğiniz gibi 200 kuzah çok azdı. Sadece sorunuza cevap ben onu anlattım şu an.
+
+719
+02:34:04,724 --> 02:34:11,524
+Raporda başarısız denemeler olarak yazdım ama slide'da yer vermedim o denemeye.
+
+720
+02:34:12,384 --> 02:34:15,644
+Uygulamayı denediniz ama sonuç kötü diyorsunuz.
+
+721
+02:34:15,904 --> 02:34:20,324
+Yani sonuç sanırım benden kaynaklı. 200 fotoğraf çok az olduğu için.
+
+722
+02:34:20,984 --> 02:34:26,623
+Bebek onu arttırarak denemek bir şey olabilir. İyi bir yol olabilir.
+
+723
+02:34:27,204 --> 02:34:28,123
+Olabilir hocam hadi.
+
+724
+02:34:28,595 --> 02:34:54,443
+Teşekkür ediyoruz sunumun için. Arada sorular da sorduk. Sizi alkışlıyoruz. Daha vardı hocam aslında. Çok hızlı. Var mı? Sonuçlar gösterince bitti zannettim. Evet, devam o zaman. Çok kısa kaldı ama devam edeyim hemen hızlıca. Burada diğer eklenebilir metotlar ile karşılaştırması var tabloda. Fatial yönteminin diğer...
+
+725
+02:34:54,451 --> 02:35:15,572
+Agregasyon kısmında, yani birleştirme kısmında eklenen metotların metotlara göre karşılaştırması var. Göründüğünüz gibi Digit Class'ında diğer metotlara göre çok daha fazla bir artışa neden oluyor. Average kısmında, Average Accuracy kısmında ve standart satmayı da düşürüyor. Gözle görülebilir şekilde.
+
+726
+02:35:18,164 --> 02:35:22,324
+Neredeyse bütün testlerde daha başarılı sonuçlar veriyor.
+
+727
+02:35:22,324 --> 02:35:30,963
+Yaygın olarak kullanılan federated learning yöntemlerine entegre edilmesi sonucunda da genel doğruluk değerlerini arttırdığı görülüyor.
+
+728
+02:35:30,963 --> 02:35:34,204
+Bu Fed Average olabilir, Fed Prox olabilir falan.
+
+729
+02:35:34,204 --> 02:35:39,043
+Aynısı olursa olsun ciddi başarı artışlarına neden olmuş.
+
+730
+02:35:39,700 --> 02:36:02,440
+Bir de şöyle bir şey yaptım hocam. Merkezi eğitimle karşılaştırması nasıl olur acaba diye düşündüm. Yani aynı veri setleri ve aynı mimariyi, Resnet 10 mimarisini sadece 3 epok boyunca eğittim ve genel ekürsi %94'leri bulurken standart satmamız burada yazmıyor ama standart satmamız da 3 civarındaydı.
+
+731
+02:36:02,932 --> 02:36:05,932
+3.01 gibi bir şeydi yanlış hatırlamıyorsam.
+
+732
+02:36:05,932 --> 02:36:07,932
+Genelden kastım...
+
+733
+02:36:10,932 --> 02:36:21,932
+Evet, merkezi eğitim olarak. Yani bu dataset'i aynı şekilde bu Mnist, USB-C site'e 4 tane dataset'i verip 3 epok boyunca eğittim.
+
+734
+02:36:22,932 --> 02:36:29,932
+Aynı mimariyle. Ve %94'lük bir accuracy değerine denk geliyor.
+
+735
+02:36:30,708 --> 02:36:51,608
+Buradan aslında çıkaracağımız şey şu olabilir. Yani FL yöntemleri arasında gelişmiş bir yöntem olsa da bahsedilen problemleri tam olarak çözdüğü bence söylenemez. Çünkü tam olarak çözdüğünü söyleyebilmek için merkezi eğitimle neredeyse aynı sonuçları, en azından yaklaşık sonuçları görebiliyor olmamız gerekiyor.
+
+736
+02:36:57,907 --> 02:37:05,567
+Bazı modelleri çok fazla yakın sadığını, örneğin MNIST dataset'inde %90'lık bir başarı görürken,
+
+737
+02:37:05,567 --> 02:37:13,247
+SYN dataset'inde %46'lık bir accuracy'e sahibiz.
+
+738
+02:37:13,547 --> 02:37:21,608
+Aslında hala bazı client'lara fazlaca yakın sadığını ve ön yargısını tam olarak kaybedemediğimizi görüyoruz.
+
+739
+02:37:22,355 --> 02:37:46,075
+Dolayısıyla Federated Learning'in aslında merkezi eğitim yapabileceğimiz yerlerde çok fazla kullanılmaması daha mantıklı olabiliyor. Ama veri gizliliği gibi önemli noktalarda da kullanılması tercih edilebilir ve geliştirilmeye hala açık olabilecek, daha böyle merkezi eğitime yaklaştırılabilecek bir şey olarak yorumladım ben.
+
+740
+02:37:48,879 --> 02:37:54,939
+Genel olarak bu kadardı hocam. Bu, burayı biraz önce söyledim zaten. Teşekkür ederim.
+
+741
+02:37:56,020 --> 02:38:23,040
+Biz teşekkür ediyoruz [öğrenci]. Tabii ki tüm veriyle eğittiğimiz bir model her zaman daha başarılı. Ama bu dağıtık verinin o merkezden dışarı çıkarılamaması problemi özellikle kişisel verinin korunması kanunu sebebiyle hastaneler bu konuda çok hassas ve mecburiyetten kullandığımız bir çözüm federe öğrenme.
+
+742
+02:38:24,020 --> 02:38:40,479
+Burada bence karşılaştırmayı yaparken kaç client ile çalışıyoruz? Client sayısı arttıkça durum nasıl değişiyor gibi farklı analizler de yapmaları gerekmez mi acaba diye düşünüyorum. Burada mesela client sayısı kaçtı?
+
+743
+02:38:41,280 --> 02:38:42,840
+Onu şöyle yaptım hocam aslında.
+
+744
+02:38:43,296 --> 02:38:52,296
+Burada şu tabloda genel olarak her dataset'ten 5'er tane client var. Yani totalde de 20 tane client var.
+
+745
+02:38:52,296 --> 02:38:57,260
+Ben bunu bu şekilde kendi bilgisayarımda çalıştırdığımda yaklaşık olarak zaten bu sonuçlara vardım.
+
+746
+02:38:57,332 --> 02:39:15,912
+Daha sonra şey falan düşündüm hatta. İşte Mnist'te çok başarılı. Mnist'teki client sayısını 1'e düşüreyim. İşte SYN'de başarısı düşük. Client sayısını daha da arttırayım falan diye düşündüm. O tarz denemeler de yaptım ama gözde görülebilir çok net bir artış sağlanmadı.
+
+747
+02:39:19,711 --> 02:39:25,912
+Client sayısındaki dataset yoğunluğunun değişmesi falan çok net bir değişikliğe neden olmadı.
+
+748
+02:39:26,432 --> 02:39:35,671
+Client sayısı arttıkça başarının düşeceği aşikar da ne kadarlık bir düşüşe sebep olduğu belki araştırılabilir.
+
+749
+02:39:36,432 --> 02:39:41,711
+İlginç bir konu. Bu güzel bir araştırma konusu aslında.
+
+750
+02:39:42,691 --> 02:39:46,631
+Sunumun için tekrar teşekkür ediyoruz ve seni alkışlıyoruz.
+
+751
+02:39:47,987 --> 02:40:09,387
+Sevgili arkadaşlar, gördüğüm kadarıyla [öğrenci] da gelmedi tekrar. Bu durumda dersi bitirebiliriz. Güzel bir dönem oldu. Ben proje sunumlarınızı ilginç buldum. CVPR'daki konuların hepsi gerçekten çok ilginç konular.
+
+752
+02:40:11,615 --> 02:40:23,695
+Umarım size de yol gösterici olmuştur ve yüksek lisans doktora tezlerinizde belki kullanabileceğiniz bir çıktı olmuştur.
+
+753
+02:40:23,695 --> 02:40:27,695
+Final tarihleri sanıyorum açıklandı.
+
+754
+02:40:31,156 --> 02:40:48,996
+Evet, vizeden sonra çok fazla konu işlenmedi ama vizede çok sormadığım Deep Learning, Convolutional Neural Network konuları var. O konulara da odaklanmanızı istiyorum. O konularda da sorular soracağımı belirtmek isterim.
+
+755
+02:40:52,996 --> 02:40:56,996
+Takvimde 11'inde başlıyordu sınavlar.
+
+756
+02:40:59,603 --> 02:41:00,923
+Bilgisayarla Görme.
+
+757
+02:41:03,203 --> 02:41:06,484
+Final sınavı galiba ilk gün değil mi arkadaşlar?
+
+758
+02:41:07,843 --> 02:41:10,183
+11'i çarşamba gibi görünüyor bende.
+
+759
+02:41:12,063 --> 02:41:14,804
+Hocam sanırım ikinci haftaydı sınav.
+
+760
+02:41:16,723 --> 02:41:17,743
+Bilgisayarla Görme.
+
+761
+02:41:17,743 --> 02:41:18,804
+Evet.
+
+762
+02:41:23,891 --> 02:41:41,932
+Şu an bir kontrol edelim. Belki güncelleme olmuştur. Benim gönderilen de farklı olabilir. Ben de kontrol edeceğim. Hepinize final sınavında başarılar diliyorum şimdiden. Görüşmek üzere. Hoşçakalın arkadaşlar.
