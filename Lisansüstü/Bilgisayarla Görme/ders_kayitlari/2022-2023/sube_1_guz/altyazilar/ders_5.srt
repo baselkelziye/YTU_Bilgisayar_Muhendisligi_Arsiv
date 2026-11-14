@@ -1,0 +1,3351 @@
+1
+00:03:29,171 --> 00:03:31,532
+Arkadaşlar, merhabalar. Sesim geliyor mu?
+
+2
+00:03:38,195 --> 00:03:39,195
+Genel, çan. Merhaba.
+
+3
+00:03:47,955 --> 00:03:49,055
+Sesim geliyor mu?
+
+4
+00:03:50,935 --> 00:03:52,015
+Aynen hocam, geliyor.
+
+5
+00:03:53,015 --> 00:03:54,215
+Tamam, teşekkürler.
+
+6
+00:03:55,975 --> 00:03:59,695
+Bugünden itibaren sunumlarınızı yapacaktınız.
+
+7
+00:04:02,695 --> 00:04:10,995
+Ve tabii yüklemeleriniz olacaktı, proje yüklemeleriniz. Herhalde yapmışsınızdır.
+
+8
+00:04:14,963 --> 00:04:19,963
+Hazır olan birisiyle başlayalım. Kim ilk önce başlamak ister sunumlara?
+
+9
+00:04:21,343 --> 00:04:30,223
+Hocam, benimki ilk baştaydı. Bu yüzden ben biraz arkadaşların içine tecrübeli olabilirim.
+
+10
+00:04:30,223 --> 00:04:41,004
+Çünkü iki üç defa ders aldım. Bu yüzden çalıştığım konuyu anlatacağım. Slid'ini ekledim.
+
+11
+00:04:42,067 --> 00:04:48,548
+Tamam, sen başla. Ben ekran mı paylaşamayacağım? Ekran paylaş, evet.
+
+12
+00:04:54,387 --> 00:05:07,867
+Birinci screen'i paylaştığımda, bu açılca şey olur mu bakayım? Ekran geldi. Tamam, gözüküyor mu şimdi slide'ım? Evet, görünüyor.
+
+13
+00:05:12,276 --> 00:05:26,276
+Şimdi şöyle gidersem de olur. Benim konum Eris ile...
+
+14
+00:05:27,091 --> 00:05:40,251
+Sistemlerde Authentication konusuydu. Elis biometrisiyle nasıl sistemler Authentica ediliyor onlarla ilgili.
+
+15
+00:05:42,771 --> 00:05:51,291
+Makaraları, birçok makarayı inceledim geçmişe doğru. Onlardan yola koyularak.
+
+16
+00:05:51,891 --> 00:06:13,803
+Bazı fonları çıkardım. Kodumunu çalıştırdım. Ham MATLAB kodumun ham da Python. Sonra birazdan onu da göstereceğim. Şimdi, hani Iris dediğimizde gözün...
+
+17
+00:06:13,971 --> 00:06:32,111
+Şu kısmı, siyah renkli kısmı var. Göz bebeği ise onun içinde yer alan bölge. Sonra bunları...
+
+18
+00:06:32,112 --> 00:06:42,872
+Böyle daire şeklinde çizgi çizerek ya da hesaplayarak verilerini çıkaran birçok algoritma var.
+
+19
+00:06:44,012 --> 00:06:52,132
+Onlardan bir tanesi işte dolman algoritmasıydı. Başarılı olduğu için onu seçtim.
+
+20
+00:06:52,132 --> 00:06:55,972
+Şimdi ikinci slidimize geçersek.
+
+21
+00:06:58,708 --> 00:07:03,708
+Sistemlerde yavaş yavaş uygulanıyor.
+
+22
+00:07:03,708 --> 00:07:10,708
+Daha net Türkiye'de öyle bir sistem daha yok.
+
+23
+00:07:10,708 --> 00:07:14,708
+Katar... sesim geliyor mu?
+
+24
+00:07:14,708 --> 00:07:17,708
+Geliyor.
+
+25
+00:07:17,708 --> 00:07:25,708
+Katar'da Köyün bir Finans Bank bazı yerlerde uygulamış durumda.
+
+26
+00:07:26,004 --> 00:07:36,004
+İşte böyle erisiyle havaalanlarında pasaport olmadan geçiş sağlanması yapılebiliyor.
+
+27
+00:07:36,004 --> 00:07:45,932
+İşte örnekler bulunuyor. Diğer ülkelerde yapmışlar, ben görmedim. Onların resimleri var burada.
+
+28
+00:07:46,163 --> 00:07:55,743
+Fakat pasaportların sahte olmaması için geliştirilen bir şey.
+
+29
+00:07:58,743 --> 00:08:07,663
+İstanbul'da bizzat insan kendi gözüyle giriş yapabiliyor terminalerden.
+
+30
+00:08:07,663 --> 00:08:10,443
+Bu sahte pasaportları engelliyor.
+
+31
+00:08:11,091 --> 00:08:27,591
+Benim algoritmam Dolman algoritmasıydı. O başarısı daha yüksek olduğu için diğer algoritmaların içinde ben de Dolman algoritmasını seçtim.
+
+32
+00:08:31,591 --> 00:08:38,291
+Bu, Story Business demişim. Story Business yani tarihe göre.
+
+33
+00:08:38,484 --> 00:08:52,964
+Şerbet Guladya bir bayan şu ilde 12 yaştayken bir macer kampında resmi çekiliyor.
+
+34
+00:08:52,964 --> 00:09:00,264
+İşte da sadıfen şöyle kameraya bir ciddi şekilde bakmış.
+
+35
+00:09:01,427 --> 00:09:26,427
+Resmi alınmış. İller sonra, 18 yıl sonra tekrardan bayan araştırılıyor, bulunuyor sonunda. Afganistan'da. O tekrar gözünün resmini alıyorlar. Eski resmiyle karşılaştırılıyor. Bu algoritma çalıştırılıyor.
+
+36
+00:09:28,115 --> 00:09:49,816
+Şeye tutarlı, geçerli, daha güzel, autentik hedebiliyor mu? Onu görmek istiyorlar. İşte orada gözde değişiklik olmadığını ve eriş kısmında, 18 yıl sonra da değişiklik olmadığını.
+
+37
+00:09:50,515 --> 00:10:16,875
+ortaya koyuyor. Sonra işte Iris Patronzer yani o yüzden Unique olarak tanımlanıyor. Yaşa göre değişmediğini şey yapıyorlar, spot ediyorlar. Sonra contactless mesh hani bu uygulanırken herhangi bir sesten de
+
+38
+00:10:16,895 --> 00:10:20,895
+Tamaz edilmeden bunu söylemek istiyor. Daha basit oldu.
+
+39
+00:10:20,895 --> 00:10:34,895
+Ve algoritmanın kısaltılmış minimum formula getirmişler. Şu şekilde yazmışlar.
+
+40
+00:10:34,895 --> 00:10:43,895
+Ama bunun açılımı bayağı da uzundur. İntegralı alınıyor ve integral alınırken.
+
+41
+00:10:44,436 --> 00:11:07,115
+Kısmi trabı alınıyor. O parametreler, yani resmin eksi ekseninde işte daire şey için, daire şeklinde olduğu için, iki peri, eneri orada yarı çarpı gösteren bir parametre.
+
+42
+00:11:07,115 --> 00:11:11,296
+İşte böyle kısaca göstermişler ama.
+
+43
+00:11:11,860 --> 00:11:16,360
+Bunun açılımı kodda göstereceğim birazdan.
+
+44
+00:11:16,360 --> 00:11:29,860
+Unca ilk başta Ron ve Safiye Devri şu ilde bu algoritmayı önermiş.
+
+45
+00:11:29,860 --> 00:11:37,860
+Bundan sonra 1994 ilindeyse
+
+46
+00:11:37,971 --> 00:11:44,971
+Dolman diyen bir adam onun patentini almış. Sistemler de örgülemeye başlamışlar.
+
+47
+00:11:44,971 --> 00:11:55,971
+Algoritma 4 bölümden, 4 aşamadan daha doğrusu oluşuyor. Bu diagram, kendim çizim.
+
+48
+00:11:55,971 --> 00:12:05,899
+Eris ilk başta resmi kamerada çekiyor. Segmentasyon işlemi yapılıyor.
+
+49
+00:12:05,940 --> 00:12:30,700
+Ve segmentosun işleminden sonra normalize ediliyor. Algoritma ile integral ve kısmi türevi alınarak. Ondan sonra en son aşamada veri tabanına kaydedilerek ve o bilgileri çekip sistemlerde uyguluyorlar.
+
+50
+00:12:34,292 --> 00:12:49,372
+Akif şekli nasıl adım adım ilerliyor. Bunu çıkardım. İlk başta Trish, yani burada segmentasyon, resmini iyileştirme.
+
+51
+00:12:49,940 --> 00:13:05,660
+Bu ülkelerden bazı, mesela ışık, göz bebeğe düşünce biraz da parlıyor. O kısmı beyaz çıkıyor. Onları düzeltmek için thresholding konseptleri uygulanıyor.
+
+52
+00:13:05,660 --> 00:13:15,660
+Partial draviti ilk başta alınıyor resmin. Sonra integral işlemlerle uygulanıyor.
+
+53
+00:13:15,827 --> 00:13:33,168
+Derste gördüğümüz iki boyutlu Gauss formülü uygulanıyor. Sonra Iris aktarılıyor. Ondan sonra aktarılırken de aynı şekilde ustaki adımlar tekrarlanıyor.
+
+54
+00:13:41,024 --> 00:13:54,403
+İşte burada algoritmanın iki şekilde, iki adımdan oluşan fonksiyonu var. Çağırıyoruz. Bu nasıl çalışıyor?
+
+55
+00:14:01,268 --> 00:14:21,707
+Palugum belirlenerek, yavaş yavaş düşerek geliyor. Yarı çapı alınarak, yarı çapını biraz da indirerek en sonunda, Alice sonunda göz bebeği böyle ortaya çıkıyor.
+
+56
+00:14:21,707 --> 00:14:28,228
+İşte resimlerde de aynı şekilde göstermiş. İki kez konusunu çalıştırıyoruz.
+
+57
+00:14:28,980 --> 00:14:51,980
+Sonra yarı çarpın minimum 0.1 ve maksimum ise 0.8. Aynı şekilde burada bazı bilgiler buldum.
+
+58
+00:14:52,927 --> 00:15:04,927
+Eğer gözün şu parlaklık kısmı göz bebeğine benzersiz, siyah kısmı alt atlayarak burası mı diye de algoritma ilerliyor.
+
+59
+00:15:04,927 --> 00:15:13,927
+Bu yüzden bu parlamış göz bebeğinin bu kısmı, orasını matlabda...
+
+60
+00:15:14,484 --> 00:15:39,184
+Bazı algoritmaları var, doldurmuşlar. Bazı makallar geliştirmişler bundan dolayı. Sonra şu göz bebeğini ve risk bölgesindeki kısmı tam alabilsin diye. Fakat algoritmanın mantığı o şekilde.
+
+61
+00:15:40,211 --> 00:16:01,211
+Sonra koda gelecek olursak, bir tarafta ben matlab bazı kavramları çıkardım. Sonra bir tarafta ise python kodunu çıkardım. Bazı kavramlar var burada. Ona denk gelen.
+
+62
+00:16:01,491 --> 00:16:18,491
+Matlabda find diye geçen bir kısım, şeyde ise weir ile alınıyor. NumPy ile şu şekilde. Sonra, rows resmin birinci boyutunu almış.
+
+63
+00:16:27,635 --> 00:16:53,155
+Şu şekilde Image Shape'ın işi yapıyor. Sonra K'den, B'den tutarak ise kadar ilerlemek için ise dersin başında görmüştük. Arrange 0 ile 0'dan başlayarak ise kadar fordungu içinde dolaşıyor.
+
+64
+00:16:54,751 --> 00:17:20,291
+Algoritma'da eksi şöyle bir şey koymuş. Yani bunu none demiş. Sonra şeyde ise, matlabda ise none diye bir şey var. Ama onu atamış. Adaf, resimdeki, göz bebeğindeki bazı gereksiz bölgeleri atmak, silmek.
+
+65
+00:17:20,624 --> 00:17:24,624
+İyi bölgeleri elde etmek.
+
+66
+00:17:24,624 --> 00:17:31,624
+Burada MATLAB ile karşılaştırmasını yaptım. Bazı kavramları çıkartarak.
+
+67
+00:17:31,624 --> 00:17:40,624
+İşte dediğim MATLAB'da M-Complement resim var.
+
+68
+00:17:40,624 --> 00:17:47,624
+M-Fail ile yapmış. Holes, parlaklık kısımlarını doldurmaya çalışılmış.
+
+69
+00:17:48,915 --> 00:17:55,795
+Böyle işlemleri yapılmış. Ama Python kodunda bu işlem yapılmamış.
+
+70
+00:17:58,795 --> 00:18:01,915
+Python koduna gelecek olursak...
+
+71
+00:18:01,915 --> 00:18:03,915
+Perkizullah.
+
+72
+00:18:03,915 --> 00:18:04,915
+Efendim.
+
+73
+00:18:04,915 --> 00:18:08,915
+Bu kodlar çok küçük görünüyor.
+
+74
+00:18:10,915 --> 00:18:14,763
+Büyütebilir misin şeyi?
+
+75
+00:18:15,124 --> 00:18:21,124
+Tabi buydu. Ya da slide olarak gösterirsen de görünebilir.
+
+76
+00:18:21,844 --> 00:18:23,943
+İşte hocam şöyle yapayım o zaman.
+
+77
+00:18:24,824 --> 00:18:31,304
+Sen matlab kodunu hiç gösterme. Yani direkt Python kodunu gösterebilirsin.
+
+78
+00:18:32,044 --> 00:18:35,764
+Python kodunu gösteriyorum hocam. İlk fonksiyonumuz.
+
+79
+00:18:37,491 --> 00:18:40,931
+İlk fonçulumuz Eris Segtia.
+
+80
+00:18:41,172 --> 00:18:45,531
+Şeyi merak ettim. Az önceki bir formülüm vardı ya, o neydi?
+
+81
+00:18:48,911 --> 00:18:49,711
+Gelsene.
+
+82
+00:18:50,231 --> 00:18:50,511
+Bu mu?
+
+83
+00:18:51,371 --> 00:18:56,611
+Evet, bu formülle ne demek istiyor? Şimdi bir maksimum alıyor, öyle mi?
+
+84
+00:18:58,751 --> 00:19:04,431
+X'yi, X'yi, X'nin de resmin kısmı türevini alıyor.
+
+85
+00:19:04,915 --> 00:19:11,915
+Kısmi travını aldıktan sonra entegrasyonunu alıyor.
+
+86
+00:19:11,915 --> 00:19:19,915
+Önce şöyle, DS ne? Yani neye göre integral alıyor?
+
+87
+00:19:32,367 --> 00:19:45,947
+Şuraya koda geldiğimde şu kısmını iki parçaya ayırdım hocam. Adım adım. İlk başta hangisi yapılıyor diye. Onu gösterecektim ki orada hocam.
+
+88
+00:19:46,407 --> 00:19:49,347
+İntegralin tekrar türevini alıyor çünkü orada.
+
+89
+00:19:49,347 --> 00:19:56,788
+Evet, tekrar türevini alıyor. İki kez bir kere türevini alıyor sonra entegral kısmına geçiyor.
+
+90
+00:19:56,788 --> 00:19:59,987
+Tüm kodu anlatmana gerek yok. Mesela
+
+91
+00:20:00,000 --> 00:20:07,599
+O denklemi nerede, nasıl yapmış? Bunu göstermen yeterli.
+
+92
+00:20:08,099 --> 00:20:08,759
+Tamam hocam.
+
+93
+00:20:09,339 --> 00:20:13,539
+Yani burada bir Dağustos konvolisyonu sokuyor galiba.
+
+94
+00:20:14,219 --> 00:20:16,039
+Bunu şöyle göstereyim hocam.
+
+95
+00:20:16,039 --> 00:20:25,420
+Başta resmi aldık ya, I, X, Y, X'en var ya şurada hocam. Böyle 2P ile. Şu kısmını göstereyim ilk başta.
+
+96
+00:20:25,875 --> 00:20:42,115
+Bir polar koordinatlara mı çeviriyor bu yöntem? Çünkü R'ye göre türev almış. R yarı çap radyustansa, S'de angle mı acaba?
+
+97
+00:20:44,235 --> 00:20:45,275
+Değil mi?
+
+98
+00:20:45,779 --> 00:20:59,120
+DxU cam Dx diye getirmiş. Ds, dc. DsU, kodda ise dx demiş. Dx, x ekseninde demiş.
+
+99
+00:21:10,996 --> 00:21:37,076
+Baştan yavaş yavaş kodu anlat. Ne yapıyor? Bir görelim. İlk başta resmi MG'yi yollanıyor. Aldıktan sonra belirlenen minimum yarı çarp var, maksimum yarı çarp var. Resmi gösterilsin mi diye onu da koydum. Sonra resmi okuduktan sonra işte scale yapıyor.
+
+100
+00:21:37,715 --> 00:21:52,715
+İşte büyük resim, küçük resim. Biraz önce anlattım. Şey, orada erizyon işlem yapılıyor. Matlak kodundaysa Enfile ile yapmış. Enk implement içeriye alarak.
+
+101
+00:21:56,715 --> 00:22:01,475
+Şöyle sileyim. Bu ben kendim yapmıştım.
+
+102
+00:22:04,307 --> 00:22:24,307
+Tamam. Sonra gözün içindeki bazı o işlemleri yaptıktan sonra bazı kısımları silmek istiyor. Hani threshold. Hani iyileştirmek için. Şurada algoritma şeyi geçiyor.
+
+103
+00:22:28,147 --> 00:22:46,347
+Neredeydi? Şurada işe ilk başta kısmi türevini alıyor. Kısmi türev çağırıldıktan sonra bu şeyde, neredeydi bu? Ponsiyon şurada. Kısmi türev.
+
+104
+00:22:46,675 --> 00:23:04,675
+Aynı şekilde merkezi koordinatı geliyor. Yeri çarpı, minimum yeri çarpı, maksimum yeri çarpı, segment. Pluginsites diye almış. Pluginsites yani kaç olsun? 600 gönderiyor.
+
+105
+00:23:12,112 --> 00:23:28,632
+Koligon sayısı diye 600 bir diğer gönderiyor. Oradan diğer geldikten sonra şurada ise kısmı integral alırken şeye gönderiyor.
+
+106
+00:23:31,372 --> 00:23:36,212
+Kısmı trabunu aldıkken integral fonksiyonunu çağırıp orada
+
+107
+00:23:36,723 --> 00:23:52,963
+İntegralını alıyor. Oradan diğer dönüyor. Ondan sonra ise Search Fonsiyonu çalışıyor. Search Fonsiyonu şu oradaydı.
+
+108
+00:24:01,076 --> 00:24:07,276
+Normal editör üzerinden gösterebilirdin aslında. Yani böyle sunuma koymana gerek yoktu bunu.
+
+109
+00:24:07,776 --> 00:24:12,195
+Hocam, şurada var editör. Bunu da buraya da aldım.
+
+110
+00:24:13,175 --> 00:24:14,355
+Çalışıyor mu bu burada?
+
+111
+00:24:14,355 --> 00:24:18,236
+Aynen çalışıyor hocam. Sonuç şöyle hocam.
+
+112
+00:24:23,115 --> 00:24:23,796
+Evet.
+
+113
+00:24:28,372 --> 00:24:36,072
+Biraz büyüt bunu. Büyütebiliyor musun görüntüyü? Biraz daha büyüt.
+
+114
+00:24:39,859 --> 00:24:40,359
+Tamam.
+
+115
+00:24:45,844 --> 00:24:49,683
+İşte ilk başladığım kısım burasıydı.
+
+116
+00:24:54,544 --> 00:24:56,344
+Peki o denklem nerede?
+
+117
+00:24:58,044 --> 00:25:06,844
+Şurası, Arşal Trevetip diye. Oraya gittikten sonra entegral bunun içinde çalışıyor.
+
+118
+00:25:06,844 --> 00:25:11,844
+Yukarıda, o da, şu yukarıdaki şeyin içinde.
+
+119
+00:25:12,372 --> 00:25:24,571
+Partial derivative çalıştıktan sonra onun içinde 4 dönüşüyle 0 ve count arasında ilerliyor.
+
+120
+00:25:24,571 --> 00:25:36,172
+Temp, yukarıda bir dizi var. Integral line diye. Şunun içine atıyor. En sonunda ise onun dönüyor. Bu arada teyfo almış.
+
+121
+00:25:37,299 --> 00:25:41,680
+Türevini almış oluyor Diff'le. Diff'le ne yapar?
+
+122
+00:25:42,980 --> 00:25:45,700
+İçindeki desteği türevini alıyor.
+
+123
+00:25:46,539 --> 00:25:49,480
+Evet, türev almış olur. Diff'le türev almış olur.
+
+124
+00:25:49,940 --> 00:25:51,519
+Lesteği ilk başta.
+
+125
+00:25:51,519 --> 00:25:56,059
+Line integralin, normal line integralin içinde ne yapıyor?
+
+126
+00:25:59,340 --> 00:26:03,059
+Normal line integral, bakalım şurada.
+
+127
+00:26:03,667 --> 00:26:06,867
+Yokar, tabi ki, konksiyon.
+
+128
+00:26:10,291 --> 00:26:17,991
+İntegral bir nevi toplama olduğu için burada bir nevi toplama tarzı bir şey yapması lazım değil mi?
+
+129
+00:26:18,711 --> 00:26:19,011
+Aynen.
+
+130
+00:26:19,451 --> 00:26:22,072
+Entegrasyon toplamaya denk düşüyor çünkü.
+
+131
+00:26:24,072 --> 00:26:31,192
+Burada tita, bu aprilör var diye, oradaki.
+
+132
+00:26:31,192 --> 00:26:34,072
+Image shape, angle.
+
+133
+00:26:34,072 --> 00:26:34,751
+Gözlenmiş.
+
+134
+00:26:36,132 --> 00:26:37,711
+Kile çarpmış.
+
+135
+00:26:38,291 --> 00:26:54,151
+Sonra buradan gelen site resmi şeyleri, site 600, kendisi belirlemiş 600 diye. Onunla bölüyor.
+
+136
+00:27:03,476 --> 00:27:19,556
+Tüm açıları elde ediyor galiba. Teta'yı mesela 360'ı kaça bölecekse, N kaça bölecek galiba. 360'ı mesela N100 ise 100'e bölüyor veya N300 ise 300'e bölüyor.
+
+137
+00:27:29,236 --> 00:27:34,236
+Dizi oluşturuyor. Sonra ne yapıyor?
+
+138
+00:27:34,236 --> 00:27:48,236
+Dizimde şöyle koşula bakmış. Koşula göre koyup alınacak ise orasını çalıştırıyor.
+
+139
+00:27:56,339 --> 00:28:07,339
+Sonunda line gönderiyorum. Bu aşağıda eris var. Eris işlemci de uçtanın, fordöngüden oluşmuş.
+
+140
+00:28:07,339 --> 00:28:18,339
+Bu işlemleri yapıp kalp yüzünü koşuyla sokmamış. Yapıp yapıp ilerlemiş.
+
+141
+00:28:22,228 --> 00:28:25,147
+İmgedeki belirli bölgeleri topluyor.
+
+142
+00:28:30,099 --> 00:28:34,460
+Bir nevi toplama olarak implement etmiş o integrali.
+
+143
+00:28:34,460 --> 00:28:44,700
+Evet. Bire bir MATLAB koduyla eşleşecek şekilde ilerletmiş.
+
+144
+00:28:44,700 --> 00:28:57,579
+Round'un ne olduğu açık yani i n p e range birden n bölü sekize kadar.
+
+145
+00:28:58,836 --> 00:29:14,836
+Sonra, 3n bölü 8'den artı 1'den 5n bölü 8'e kadar, 7n bölü 8'den 8 artı 1'den n-1'e kadar.
+
+146
+00:29:21,844 --> 00:29:23,004
+Ne yapıyor burada?
+
+147
+00:29:27,508 --> 00:29:38,827
+Lime şeyini almış hocam. Rebov ederek bir şeylerini çıkardım baktığında. Diğerler çıkıyor. Toplu diğerler birbirini yapar.
+
+148
+00:29:40,827 --> 00:29:46,747
+Bu ne olabilir arkadaşlar? Niye bunları belirli aralıklarla topluyor olabilir?
+
+149
+00:29:58,355 --> 00:30:02,355
+İris için uçtanı şey yapmış. Neden bu uçtanı?
+
+150
+00:30:02,355 --> 00:30:13,355
+İşte bu kadar. Sonra ise almış. Burada da ise almış. Burada da aynı şekilde.
+
+151
+00:30:28,723 --> 00:30:50,564
+Bir nevi histogram gibi bir şey yapmış sanki. İris'in bulunduğu bölgelerin bölgelere bölmüş. Sanki açısal 0'dan 360'ya kadar ya açı. Belirli açı bölgelerindeki değerleri almış bence.
+
+152
+00:30:52,084 --> 00:31:05,084
+Şurada mesela 600 geldi, 8 ile böldü. Ondan sonra rağmenini alıp, birden oraya kadar ilerledi. Eksiye ekseninde.
+
+153
+00:31:05,084 --> 00:31:18,084
+O hal değerini atadı. Bu arada ise gelen 600'ü mesela 3 ile çarpmış, 8 ile bölmüş. Bu arada da aynı şekilde 5 ile çarpıp.
+
+154
+00:31:18,771 --> 00:31:38,611
+8'e koymuş yine 3. da diğer değiştirmiş 7 yapmış. Bunların anlamını anlamaya çalışıyorum. Yani niye mesela 7n bölü 8'den 8 artı 1'den. Şimdi bu e-range fonksiyonu ne?
+
+155
+00:31:42,324 --> 00:31:46,483
+Buradan başlayıp şeye kadar gidiyor.
+
+156
+00:31:46,483 --> 00:32:09,483
+Burada bir şey var hocam. Temel burası. Burasını ise şu Hindistan'da geliştirmiş. Bu kod standart. Buraya bakılıyor onun için.
+
+157
+00:32:10,195 --> 00:32:32,755
+Matlab'da ilk geliştirilmiş. Sonra buraya bakarak Python kodu geliştirilmiş. Biraz önceki bölge şurası hocam. Birebir, yani ilk başta yine 8 ile çarpıp roundunu almış. Burada 5 ile çarpmış. Bu arada ise 7 ile çarpmış mesela.
+
+158
+00:32:33,619 --> 00:32:49,119
+O arada da Python kodunda da aynı şekilde böyle uç 7 yazmış. Neden yazmış? Şu üstündeki komentte ne yazıyor?
+
+159
+00:32:59,380 --> 00:33:07,560
+Oklosyon, oklosyon, ve fakat faksal average is taken only from the...
+
+160
+00:33:07,560 --> 00:33:14,540
+Peki, yani burada işte belirli aralıklar belirlemiş benim anladığım kadarıyla.
+
+161
+00:33:18,120 --> 00:33:22,380
+Üç belirli aralık belirliyor. Oralarda...
+
+162
+00:33:24,915 --> 00:33:37,135
+Satır. O satırın o üç belirli bölgesinde değerleri topluyor. İntegral almış oluyor bu şekilde.
+
+163
+00:33:38,455 --> 00:33:41,415
+Tamam. Teşekkür ediyorum.
+
+164
+00:33:44,095 --> 00:33:47,135
+İşler zanetlik oldu. Burada çalıştırıyor.
+
+165
+00:33:47,215 --> 00:33:50,555
+Çalıştır bir görelim. Biraz geriye alabilirsin. Görünmüyor.
+
+166
+00:33:53,844 --> 00:34:10,003
+Bazı kutufanaların değişmiş, vaziyonu değişmiş, çalışmıyordu. Ondan sonra kutufanalarla içindeki kodları çıkardım.
+
+167
+00:34:10,364 --> 00:34:15,864
+Tamam, biraz hızlı olalım hafızlılayız. Çünkü çok vakit harcadık.
+
+168
+00:34:17,484 --> 00:34:20,484
+Yani zaten çalıştığını görüyoruz.
+
+169
+00:34:21,076 --> 00:34:33,615
+Evet, çalıştığını görüyoruz zaten. Aslında çalıştırmıştım. Bir dakika, şu an da. Drive'den resmi alıyorum ya.
+
+170
+00:34:37,235 --> 00:34:37,735
+Bu da.
+
+171
+00:34:47,123 --> 00:34:50,123
+Bu ne?
+
+172
+00:34:56,628 --> 00:35:04,168
+Bunları şeyden çıkardım, kutufanlardan çıkardım işlemler için. Çünkü kutufanların versiyonu değişmiş, çalışıyor.
+
+173
+00:35:04,168 --> 00:35:06,608
+Python kodu vardı değil mi internette?
+
+174
+00:35:06,807 --> 00:35:10,188
+Evet, Python kodunu da oraya koydum.
+
+175
+00:35:25,715 --> 00:35:28,055
+İşte bitanasını, şunu çalıştırıyorum hocam.
+
+176
+00:35:39,059 --> 00:35:45,899
+Hocam çok yavaş. Bu algoritmanın hizlendirmek için nasıl bir şey yapabiliriz onu bilmiyorum.
+
+177
+00:35:46,939 --> 00:35:54,760
+Orada iki tane uç çana fordüngü var. İkili nestedik alt alta. Uç çana bundan.
+
+178
+00:35:54,760 --> 00:36:03,639
+Bu uç çanayı başka bir yöntem bulursak, algoritma bir saniyenin altına düşecek.
+
+179
+00:36:06,931 --> 00:36:23,591
+Zaman alıyor. Bunu ben başka bilgisayarın uygulamalarında da çalıştırdım. Bayağı da yavaş ilerladı. Sonra Matlab'da çalıştırdım. Biraz ezleydi Matlab. Bilmiyorum. İşte böyle sonuç çıktı hocam.
+
+180
+00:36:23,591 --> 00:36:31,811
+Tamam, peki. Teşekkür ediyorum [öğrenci]. Sırada kim var arkadaşlar?
+
+181
+00:36:34,260 --> 00:36:38,620
+Kim anlatmak ister? Ben varmıyorum sıradan. Buyurun.
+
+182
+00:36:42,356 --> 00:36:44,356
+Ben şey yapayım.
+
+183
+00:36:45,096 --> 00:36:46,356
+Ersan, kapat.
+
+184
+00:36:47,155 --> 00:36:47,876
+İki anla.
+
+185
+00:36:48,376 --> 00:36:49,256
+Şuraya yapacağım.
+
+186
+00:36:57,684 --> 00:36:59,684
+Şuradan tutunayım.
+
+187
+00:36:59,684 --> 00:37:01,684
+Şehir.
+
+188
+00:37:01,684 --> 00:37:03,684
+Pevşehir.
+
+189
+00:37:03,684 --> 00:37:05,684
+Tamam mı?
+
+190
+00:37:22,867 --> 00:37:47,367
+Uçanım geldi mi? Evet, geldi arkadaşlar. Tamam. Konum, hiperspektör görüntülerin sınıflandırılması. Burada semi-supervised yöntemini kullanıyoruz. Çünkü az etiketli görüntülerde aslında sınıflandırılmayı amaçlıyoruz. Onlara geleceğim, niye böyle bir şey yapıyoruz diye.
+
+191
+00:37:48,403 --> 00:38:00,043
+Sunum planımız bu şekilde. İlk başta hiperspektral görüntüleme nedir? Sonra yarı denetimli öğrenme. İlk kullandığımız dataset olan Fahya Üniversitesi. Hangi yöntemini kullanıyoruz?
+
+192
+00:38:00,043 --> 00:38:09,043
+Kop örneklerinden bahsedeceğim. Çalıştığım kop örnekleri, sonuçları, kaynaklar ve sorunlarınız varsa sorunlarınızı alıp sunumu bitireceğim.
+
+193
+00:38:09,043 --> 00:38:15,043
+İlk başta hiperspektral görüntüleme nedir? Hiperspektral görüntüleme, zattan algılama.
+
+194
+00:38:15,295 --> 00:38:33,295
+Teknolojisinde yapılan ve bizim bildiğimiz görüntülerin dışında. Biz normalde VGB olarak görüntüleri biliyoruz ama Hipspektrol görüntülerde bu VGB dediğimiz alttaki şey bant aralığı daha fazla oluyor.
+
+195
+00:38:33,295 --> 00:38:39,295
+Hipspektrol görüntülerde bizim gözde göremediğimiz, insan gözünün gözle göremediği...
+
+196
+00:38:40,019 --> 00:38:46,579
+bilgileri de görmemizi ve bunların üzerinde bilgisayarda işlem yapımıza imkan veriyor.
+
+197
+00:38:47,219 --> 00:38:50,139
+Yanındaki şeyde gördüğünüzü fotoğrafta.
+
+198
+00:38:51,039 --> 00:38:58,019
+Burada her bir toprağın, suyun, ağaçların hipospektral görüntü.
+
+199
+00:38:59,059 --> 00:39:25,759
+Yani imza dediğimiz perspektral, imza dediğimiz şey farklı oluyor. Biz buradan sınıflandırma yapmayı sağlıyoruz. Bilgisayar ona göre şey yapıyor. Buradaki imzanın farklılığına göre, birbirlerine olan benzerliğine göre piksellerdeki sınıflandırma işlemini yapıyor. Peki perspektral görüntülerde kullanıyor daha çok çevresel deprem. Deprem olduğu zaman depremin etrafa verdiği zarar.
+
+200
+00:39:26,228 --> 00:39:39,228
+Askeri alanda, herhangi bir arazide askeri araç var mı veya orada tehlike oluşturacak herhangi bir etken var mı onların belirlenmesinde.
+
+201
+00:39:39,228 --> 00:39:53,228
+Madencilik de, herhalde madenlerinin çeşit yapılmasında. Tıbbi alanlarda da hastalığın erken teşhisinde ve bunun gibi birçok alanda kullanılıyor bu öntüleme.
+
+202
+00:39:54,099 --> 00:40:01,340
+Bizim burada kullandığımız makine öğrenmesi yöntemini, verif yönetiminde öğrenilmesinin hipervazı.
+
+203
+00:40:02,139 --> 00:40:10,659
+Burada bizim elimizde bir veri setimiz oluyor. Bu veri setinin büyük bir kısmı etiketsiz verilerden oluşuyor.
+
+204
+00:40:11,280 --> 00:40:13,340
+Küçük bir kısmı da etiketli verilerden oluşuyor.
+
+205
+00:40:13,340 --> 00:40:21,340
+Biz bu etiketli verilerden yola çıkarak modelimizi eğitiyoruz. Sonra etiketsiz verilerde...
+
+206
+00:40:21,619 --> 00:40:30,019
+Sözde etiket dediğimiz, bunları bir etiket yapıştırarak tekrar ikisini bir miktar modele veriyoruz ve bu şekilde modelimizi eğitiyoruz.
+
+207
+00:40:30,019 --> 00:40:37,659
+Şimdi normalde denetimsiz öğrenme var burada. Herhangi bir veri setimizde herhangi bir etiketli veri yok.
+
+208
+00:40:38,479 --> 00:40:43,419
+Biz bunu verdiğimizde makinenin burada gruplandırma yapması, sınıflandırma yapması zor oluyor.
+
+209
+00:40:43,840 --> 00:40:53,840
+Çünkü elde etiketleri olması lazım ki onun üzerinden makine hangi sınıfın hangi pikselin hangisinin ait olduğunu bulabilsin.
+
+210
+00:40:53,840 --> 00:41:04,840
+Bir diğer yöntem ise Supervisor yani denetimde öğrenme. Denetimde öğrenme değilse bizim data setimizin tamamının etiketli olması gerekiyor.
+
+211
+00:41:04,840 --> 00:41:10,840
+Buralarda HPEX Tabital yöntüler değil sadece bütün.
+
+212
+00:41:11,284 --> 00:41:36,844
+Öğrenme metotlarında bir verinin, bir data setin etiketlenmesi uzun, zahmetli bir iş olduğu için bu da çok tercih edilmiyor. Bunun yerine ikisinin ortası olan yarı denetimleri öğrenme. Yani hem semi-supervised dediğimiz, supervised ve unsupervised metotlarının birleşimindeki artı yönleri kullanarak modeli eğitmeyi amaçlıyor.
+
+213
+00:41:37,715 --> 00:41:47,715
+Tipik Yarı Denetmesi Tanıtımla Yöntemler arasında model oluşturma, kendi kendine işlemi, üklü eğitim gibi birçok farklı çeşidi bulunuyor.
+
+214
+00:41:49,715 --> 00:41:56,715
+Bulandığımız dataset Pavia Üniversitesi 610'a 610 normalde bunun boyutu pikselden oluşuyor.
+
+215
+00:41:56,715 --> 00:42:03,715
+Fakat bazı pikseller bilgi taşımadığı için sonrasından doğum.
+
+216
+00:42:04,016 --> 00:42:29,016
+Kırpılık veri seti 610 çarpı 340 piksellik bir hale sokulmuş oluyor. Kendisi de 103 spektral banttan oluşuyor. Şimdi şöyle düşündüğümüz zaman ilk resimde vardı ya, orada X, Y, Z koordinatı olarak düşünürsek, 610'a 340 X, Y'yi 103'de derinliği gösteriyor. 103 spektral banttan oluşuyor. Az önce dediğim gibi RGB.
+
+217
+00:42:29,876 --> 00:42:41,876
+Mesela üç bant oluşuyor fakat burada yüzünüz farklı spektral bant oluşuyor. Orijinal veri seti yaklaşık olarak 42.276 ve 9 sınıftan oluşuyor.
+
+218
+00:42:41,876 --> 00:42:54,668
+Sınıftan isimleri ve her sınıfta kaç tane piksel örneği olduğu yanında yazılıyor. Mesela burada gördüğünüz gibi Asphalt 6.671 örnekten oluşuyor. Ağaç.
+
+219
+00:42:54,867 --> 00:43:20,867
+3064 pikselden oluşuyor. Yan taraftan yine, sonunca sliktan baktığımızda ilk resim false color, yani bizim insan gözüyle gördüğümüz hali. İkincisi ortadaki resim, grand truth yani zemin gerçeği. Bütün verilerimizin aslında etiketlenmiş hali. Biz testimizi yaparken bu ortadaki...
+
+220
+00:43:21,427 --> 00:43:34,227
+Ortodaki resme göre, piksellere göre, verilere göre yaptığımız tahminlerin doğru mu ya da ne kadar doğru olduğunu tespit edebiliyoruz.
+
+221
+00:43:35,067 --> 00:43:44,027
+C şıkkında gözüken standard training samples ise burada aslında bizim farklı sınıflardan aldığımız örnekler.
+
+222
+00:43:48,980 --> 00:43:53,980
+Bir kısmı etiketli oluyor, geri kalanı etiketsiz oluyor.
+
+223
+00:43:53,980 --> 00:43:56,980
+Burada ortadaki resimde tamamı etiketli.
+
+224
+00:43:56,980 --> 00:44:02,980
+C'de gördüğümüz ise her klastan, her sınırtan belli örnekler alınmış hali.
+
+225
+00:44:02,980 --> 00:44:05,980
+Biz bunu kullanarak modüle eğitiyoruz.
+
+226
+00:44:05,980 --> 00:44:12,980
+Buradan sonra da ortadaki şeyle de yöntemimizin doğruluğunu tespit ediyoruz.
+
+227
+00:44:15,123 --> 00:44:42,123
+Burada çalışılan yöntem çapraz ölçekliği grafik prototip A diye geçiyor. XGPN. Genel olarak mimarisine baktığımızda 4 tane bileşimden oluşuyor. Çok ölçekli bitişik madrislerin oluşturulması, çapraz ölçekliği özgüklük öğrenme, SBA-A modeli aşağıda gösteriliyor zaten. Bir de prototip katman diye 4 tane katmandan oluşuyor.
+
+228
+00:44:43,188 --> 00:44:56,388
+Genel göz şekli de bu şekilde. Bizim elimizde hiper spektral görüntü var. Bunlar ilk aşamada graf konvilasyon işlemi yapılıyor.
+
+229
+00:44:56,388 --> 00:45:04,588
+Üç farklı aşamada yapılıyor. Bunlar da aslında bir aşamada da yapılabiliyor fakat...
+
+230
+00:45:05,204 --> 00:45:18,483
+Bu uygulamada, makalede yapılan çalışmalar sonucunda en verimli, en iyi sonucu veren kısmın üç tane aşamada gerçekleştiğini gördüğü için üç üzerinden devam ediyor.
+
+231
+00:45:18,643 --> 00:45:27,143
+Farklı farklı, bir, iki, üç, dört, beş şeklinde bütün şeyleri denemiş buradaki araştırmacı.
+
+232
+00:45:27,503 --> 00:45:38,943
+En iyi, en etkin kısmı üç tane ayrı katmandan yapılınca daha iyi sonuçlar verdiğini görmüş. Buradaki şekilde bundan dolayı aslında üç aşamada gösteriyor.
+
+233
+00:45:38,943 --> 00:45:47,664
+Üç başta graf kombinasyon işlemi yapılıyor. Sonra batch norm dediğimiz yığın normalleştirme işlemi yapılıyor.
+
+234
+00:45:47,664 --> 00:45:51,103
+Yığın normalleştirme niye yapılıyor? Yığın normalleştirme.
+
+235
+00:45:51,215 --> 00:46:08,215
+Katman, bir sonraki katmanın sonuçlarını beklemeden bizim modelimizi eğitmemize imkan veriyor. Bu şekilde de aslında diğerini beklemediğimiz için, katmanın sonuçlarını beklemediğimiz için hızlı bir şekilde eğitimimizi tamamlayabiliyoruz.
+
+236
+00:46:08,215 --> 00:46:13,215
+Aktivasyon fonksiyonu olarak Relo kullanılmış.
+
+237
+00:46:13,215 --> 00:46:16,215
+Relo yapıldıktan sonra
+
+238
+00:46:16,639 --> 00:46:37,300
+Aslında buradaki klasların, buradaki piksellerin daha iyi sonuç vermesini ve graf konvülasyon işleminden sonra çıkan ya da elde edilemeyen bilgilerin tam olarak elde edilebilmesi için bir de bir boyutlu konvülasyon işlemi yapılmış. Orada da yine aktivasyon fonksiyonu olarak böyle kullanılmış.
+
+239
+00:46:38,599 --> 00:46:43,559
+Üç katman sonucunda çıkan sonuçlar bu konvülasyon ve batch norm.
+
+240
+00:46:43,936 --> 00:47:00,315
+Yapıldıktan sonra çıkan sonuçlar, content dediğimiz birleştirilerek tekrardan bir aynı şekilde bir graph, konimlasyon, batch normalization. Sonrasında da drop-out dediğimiz.
+
+241
+00:47:01,268 --> 00:47:17,727
+Eğitimin aşırı öğrenmeyi engellemesi için burada katmanlar arasında oluşan bazı modüllerin, bazı noktaların düşürülmesi, silinmesi ve aşırı öğrenmenin önüne geçilmesi amaçlanıyor.
+
+242
+00:47:17,727 --> 00:47:28,447
+Drop-up dediğimiz kısımda da. En sonunda SBA modülünde öğrenilen, piksel toplu olarak öğrenilen bilgi.
+
+243
+00:47:28,815 --> 00:47:37,175
+Orta elde edilen hiperspektral imza sonuçları toplanarak da en sonunda,
+
+244
+00:47:37,175 --> 00:47:44,455
+çoğu tipikal layer katmanında da hangi kılası, hangi sınıfa ait olduğu ortaya çıkıyor.
+
+245
+00:47:44,455 --> 00:47:46,535
+Genel olarak çalışma mantığı bu şekilde.
+
+246
+00:47:48,375 --> 00:47:53,255
+Burada kodda proje parametreleri, normalde bunlar...
+
+247
+00:47:53,331 --> 00:48:01,331
+Ayrı ayrıydı. Ben bunları ayrı bir sınıfa aldım. Bütün hepsini burada yönetmek maksatıyla.
+
+248
+00:48:03,331 --> 00:48:11,331
+İşte Train Sam Talks burada her sınıftan kaç tane örnek olacağı. Aşağıda datasetlerimiz.
+
+249
+00:48:11,331 --> 00:48:17,331
+[öğrenci], bu kodun çalışır halini gösterecek misin?
+
+250
+00:48:18,195 --> 00:48:45,056
+Hocam, normalde çalıştırdım da, şimdi en son sabah denediğimde o TensorFlow'un bir 13.1 versiyonunu kullanıyor. Onu Corelap üzerinden şey yapmaya çalıştığında, install etmeye çalıştığında kaldırmışlar şeyi herhalde. O sürümü göremiyor. Yani çalıştırılmış halleri var bende. Daha önce birçok şey çalıştırmıştım bu parametreyle yapılan değişikleri. Ama şu anda çalıştırınca hata veriyor.
+
+251
+00:48:45,460 --> 00:48:47,460
+Onu gösteririm ben.
+
+252
+00:48:47,460 --> 00:48:58,460
+Yani şey diyecektim, hani direkt çalıştırma şeyinin üzerinde göstersen daha iyi olabilir.
+
+253
+00:48:58,460 --> 00:49:05,460
+Tamam. Burada şeyi göstereyim hocam. Zaten çok fazla burada şey yapmayacağım. İki tane şey yapacağım. Sonra koda geçiyorum.
+
+254
+00:49:05,460 --> 00:49:11,460
+Parametreler burada. Hangi dataset kullanılmamız? Dediğim gibi burada biz...
+
+255
+00:49:11,583 --> 00:49:35,983
+Pagro'yu kullandığımız için aslında AID'yi 1 veriyoruz. Sonra burada Epoch değeri kaç tane eğitmeniz kaç döngüden oluşuyor. Buradaki eğitimciyi binle ben denemiştim. Ki zaten makalede de binle denemişti. Bu biraz uzun sürüyor. Yani 2,5-3 saate yakın eğitimini tamamlıyor.
+
+256
+00:49:37,076 --> 00:49:48,175
+Burada da numscale var. Az önce dediğim o 3 katman niye özellikle 3 verilmiş? Onu söylemiştim. 3 daha iyi sonuç verdiği için 3 tercih edilmişti.
+
+257
+00:49:48,175 --> 00:50:01,415
+Bir sonraki ağın parametre ayarları. Burada da bizim eğitim için oluşturduğumuz ağın hangi parametrelerden oluştuğu ve hangi değerler verildiği gözüküyor.
+
+258
+00:50:02,996 --> 00:50:30,315
+Graf konvülasyon işlemi için Hidden Units 32.16 verilmiş. Dropout değeri, yani oluşturulan noktaların kaç tanesi düşsün, kaç tanesi kalsın birisinden 0.2 verilmiş. Bu başka bir ölçe için, dataset için 0.3 olarak verilmiş. Bunları geçmeden önce ben koda şey yapayım, sonra kod çalıştırma sonuçlarına geleyim.
+
+259
+00:50:32,947 --> 00:50:36,407
+Gott var það.
+
+260
+00:51:11,092 --> 00:51:14,012
+Slide'ları görüyoruz hala [öğrenci].
+
+261
+00:51:14,092 --> 00:51:24,532
+Slide'ları mı? Kapattım ama şu anda durdu herhalde şey. Şu anda geldi mi? Uygulama bayağı krom tuttuğu için arada donmuyor öyle.
+
+262
+00:51:26,112 --> 00:51:31,672
+Hayır gelmedi. Bir durdur tekrar başlat.
+
+263
+00:51:41,108 --> 00:51:43,108
+Çok teşekkür ederim.
+
+264
+00:51:55,891 --> 00:51:58,791
+Arada şey yaptığı için, takıldığı için.
+
+265
+00:51:59,191 --> 00:52:03,371
+Yani sen kodu çalıştırma zaten bu saatte.
+
+266
+00:52:04,251 --> 00:52:07,271
+Kodu çalıştırma zaten ben çalıştırıyorum da.
+
+267
+00:52:07,411 --> 00:52:09,111
+Bir kod yüzünden zaten çağırmıştım.
+
+268
+00:52:09,431 --> 00:52:11,851
+Burada sonuçlarım falan burada.
+
+269
+00:52:12,791 --> 00:52:17,851
+Sen Temel mesela bize network'ü nasıl tanımlamış falan gibi.
+
+270
+00:52:18,356 --> 00:52:21,516
+Kritik noktalarını göstersen yeterli kodun.
+
+271
+00:52:21,536 --> 00:52:23,655
+Tamam, onu göstereceğim.
+
+272
+00:52:23,655 --> 00:52:25,516
+Ama işte şey oluyor.
+
+273
+00:52:37,940 --> 00:52:43,580
+Bilgisayar görmüyor. Çok bazıları tükettiği için bu uygulama pay çal.
+
+274
+00:52:44,780 --> 00:52:46,620
+Sonra şey yapamıyorum, kitemiyorum.
+
+275
+00:52:47,780 --> 00:52:49,380
+Şöyle gösterebilir miyim?
+
+276
+00:53:20,211 --> 00:53:22,211
+Şu anda gözükmüyor değil mi?
+
+277
+00:53:22,211 --> 00:53:24,211
+Kod gözüküyor.
+
+278
+00:53:30,211 --> 00:53:34,211
+Yani şey yapabilirsin bunu tamamen...
+
+279
+00:53:34,211 --> 00:53:36,211
+He geldi galiba.
+
+280
+00:53:36,211 --> 00:53:38,211
+Şimdi...
+
+281
+00:53:38,211 --> 00:53:40,211
+Burada modeli oluşturuyor.
+
+282
+00:53:40,211 --> 00:53:42,211
+Compagnide dediğimiz yerde.
+
+283
+00:53:42,211 --> 00:53:44,211
+Değerleri falan bunu da veriyor aslında.
+
+284
+00:53:45,715 --> 00:54:05,275
+Bizim o parametreler olsun, onun üzerine oluşturduğu met dosyaları olsun. Bunların tamamını burada tanımlıyor. Orada normalde ben bu makaleyi aldığım zaman o Indian Times verisiyeti üzerinden çalışmıştı. Orada farklı bir örnek şey yapmıştı.
+
+285
+00:54:06,068 --> 00:54:22,467
+Ve şey yoktu, bu pavye ile ilgili met dosyaları falan yoktu. Ben onları ekledim. Hani her sınıftan ayrı ayrı, atıyorum biz on dediğimizde her sınıftan gidip on tane ayrı örnek alması ile ilgili bir farklı kod yazmıştım.
+
+286
+00:54:30,900 --> 00:54:37,900
+İçin kullanılacak met dosyası, bir de test için kullanılacağımız met dosyası. Bunları oluşturup...
+
+287
+00:54:37,900 --> 00:54:43,699
+Ağ katmanlarını nasıl oluşturuyor? Onu gösterebilir misin? Yani eğitilecek ağı nasıl tanımlıyor?
+
+288
+00:54:45,239 --> 00:54:46,480
+Burada oluşturuyor hocam şeyi.
+
+289
+00:54:47,400 --> 00:54:54,239
+Orada bir tek model inputs görüyorum ben. Hani şimdi sendenin Relu var, ne bileyim...
+
+290
+00:54:54,239 --> 00:54:55,699
+Onları sattım. Onları da şey yap.
+
+291
+00:54:57,204 --> 00:55:10,003
+Şurada şey mesela, grafik konvolasyon metodu var. Burada normalizasyon yapılacak mı yapılmayacak mı? Ondan sonra aktivasyon fonksiyonu olarak ne kullanılacak?
+
+292
+00:55:10,003 --> 00:55:17,003
+Burada tanımları falan yapılıyor. Bunlar yapıldıktan sonra zaten bir de unit sphere...
+
+293
+00:55:17,003 --> 00:55:21,003
+Grafik konvolasyon hangi kütüphanenin içinde geliyor?
+
+294
+00:55:21,940 --> 00:55:27,139
+Bakayım hemen şeyin içindeydi. Cancer Move olması lazım.
+
+295
+00:55:34,228 --> 00:55:36,788
+Darius Graph diye bir yerden alıyor onu.
+
+296
+00:55:37,568 --> 00:55:40,148
+Matensor Cloud diye biliyorum ben. Orada olması lazım.
+
+297
+00:55:41,548 --> 00:55:43,068
+Keras'ın mı B6?
+
+298
+00:55:45,148 --> 00:55:46,908
+Keras da kullanıyor burada.
+
+299
+00:55:52,244 --> 00:56:09,644
+Mesela aktivasyon relo verilmiş. Burada dediğimizde, bir de yapılan yere de gidebiliriz. Şurada bir de konulasyon yapılmış mesela. Burada da aktivasyon olarak relo verilmiş.
+
+300
+00:56:20,916 --> 00:56:35,236
+Graf konvülasyonundan sonra bir de bir boyutlu konvülasyon işlemi yapıyordu. Onu da burada yapıyor ve şeye ekliyor. Fizi olarak oraya atıyor. Daha iyi sonuç çıkmasını sağlamak için.
+
+301
+00:56:35,316 --> 00:56:38,656
+Arka arkaya işlemler atıyor gibi gözüküyor.
+
+302
+00:56:38,656 --> 00:56:47,556
+Evet. İlk başta graf yapıyor. Sonra orada graftan kaçabilecek olan ya da orada tam olarak elde edilememiş.
+
+303
+00:56:47,987 --> 00:57:13,047
+Özellikleri daha iyi ortaya çıkartmak için bir de üstüne. Backpropagation'ı nereden yapıyor? Nasıl yapıyor? O belirli mi? Hangisi hocam? Backpropagation, geriye yayılım yani. O bilgisayar adımları belirli mi? Onunla ilgili bir bilgim yok açıkçası hocam. Yani kanıların ne demek istediğinizi yapamaz. Ben sorabilir miyim?
+
+304
+00:57:13,744 --> 00:57:23,984
+Şu lambda var ya, kur döngünün içinde. Bu donguyu kullanmamak için mi yapmış?
+
+305
+00:57:23,984 --> 00:57:31,984
+Yok, bu da bir kütüphaneden kullanılan bir özellik. Bakalım o neyin altında mesela.
+
+306
+00:57:31,984 --> 00:57:36,864
+Ben kur döngülerin kaldırılması için bir çözüm alıyorum.
+
+307
+00:57:40,340 --> 00:57:51,179
+Keras'ın altında kullanılan, mesela Dropout dediğimiz, ondan sonra bir dekonvilasyon dediğimiz şeylerin tamamı Keras altındaki metotlar bunlar aslında.
+
+308
+00:57:51,179 --> 00:58:05,179
+Dropout dediğim gibi aşırı öğrenmeyi engellemek için kullanılan, şeyde yanlış okumuyorsam, Slice'ı 0.2 değeri vermiş. O ne kadar artarsa oradaki bağlantıların koparılması da o kadar artıyor.
+
+309
+00:58:06,036 --> 00:58:21,855
+Burada 0.2, 1'e kadar verebiliyorsunuz. 1 olunca tabii bütün şeyleri kopartıyor. Ortadan dengeli bir şekilde hareket etmek gerekiyor ki çok fazla da oradaki bağları koparmamak lazım. Yoksa hataya sebebiyet verir.
+
+310
+00:58:22,655 --> 00:58:31,855
+Burada şeyleri falan, burada yapıyorum ben işlemleri. Az önce dedim ya, met dosyaları yoktu. İlk başta ilgili...
+
+311
+00:58:32,148 --> 00:58:39,148
+Klasörleri burada oluşturuyorum. Onları içine atıyorum. Düzenli bir şekilde tutsun sonuçlar.
+
+312
+00:58:39,148 --> 00:58:50,148
+Bunlar düzgün bir şekilde tutulsun diye burada yapıyorum enişlemi. Sonra Training ve Testing dosyalarını kullanacağım. Test aşamasına kullanacağım.
+
+313
+00:58:50,148 --> 00:58:57,996
+Training her sınıftan kaç tane örnek olacak mesela burada şey yapıyorum. Aslında burada vermiştim normalde de sonra hepsini.
+
+314
+00:58:58,195 --> 00:59:01,115
+Buraya taşıdım. Teknik yerden yönetilsin diye.
+
+315
+00:59:02,175 --> 00:59:10,235
+Buradaki şey bizim Pavia Üniversitesi 9 sınıftan oluştuğu için
+
+316
+00:59:10,595 --> 00:59:17,675
+burada döngüyle her sınıftan random örnekler alıyorum ben.
+
+317
+00:59:17,675 --> 00:59:24,155
+Sadece burada şey yaptığım gibi her birinden 25 tane örnek al gibisinden işlem yapıyor.
+
+318
+00:59:24,155 --> 00:59:25,755
+Sonra bunları da
+
+319
+00:59:26,387 --> 00:59:43,387
+Şu aşamada, mat olarak, mat dosyası olarak kaydediyor. Şimdi orada aldığımız örnekler bizim eğitim veri setimiz oluyor. Geri kalanda alamadığımız örneklerde, onlarda test için kullandığımız veri set oluyor.
+
+320
+00:59:43,387 --> 00:59:49,387
+İkisinin toplamı da yani bir tarafta etiketli pikseller var.
+
+321
+00:59:49,780 --> 01:00:06,020
+Bir tarafta da almadığımız bitsel var. İkisinin toplamı da bizim bütün Grand Fruit dediğimiz tamamı etiketli verilerden oluşan ve test için kontrol amaçlı kullandığımız BAT dosyasını oluşturuyor.
+
+322
+01:00:06,020 --> 01:00:13,780
+Burada grafik, fotoğraf, eğitim sonucunda oluşan...
+
+323
+01:00:14,132 --> 01:00:18,132
+Resimlerin kaydedilmesi.
+
+324
+01:00:18,132 --> 01:00:24,132
+Şimdi tüm kodu anlatmana gerek yok. Yeterli bence.
+
+325
+01:00:24,132 --> 01:00:39,788
+Yani sizin farklı bir şekilde merak ettiniz. Dediğim gibi burada aslında çalıştırmıştım ama şu anda 1.13 normalde bu 1.13.1 ile çalışıyor.
+
+326
+01:00:40,275 --> 01:00:41,715
+Onu kullanmak gerekiyor.
+
+327
+01:00:41,915 --> 01:00:48,395
+Tamam, tamam. Şimdi teşekkür ediyorum. Sırada kim anlatabilir?
+
+328
+01:00:49,695 --> 01:00:55,235
+Sırada ben varım galiba hocam. Benden önceki bir arkadaş var ama şu an katılımcı olarak yok galiba.
+
+329
+01:00:55,735 --> 01:00:56,815
+Tamam, sen devam et.
+
+330
+01:01:02,195 --> 01:01:03,675
+Teşekkürler [öğrenci].
+
+331
+01:01:04,675 --> 01:01:05,556
+Rica ederim hocam.
+
+332
+01:01:13,364 --> 01:01:17,003
+Sonum ekranım geldi mi? Aynen geldi.
+
+333
+01:01:21,563 --> 01:01:34,003
+Merhabalar, ismim [öğrenci], ismim [öğrenci]. Bugün sizlere görüntü iyileştirmeyle alakalı 2020 yılında yayınlanmış bir makale, bir araştırma anlatmaya çalışacağım. İsmi Pul.
+
+334
+01:01:34,547 --> 01:01:50,427
+Self-supervised photo ensepling via Latent Space Exploration of Generation Model diye geçiyor. Türkçe çevirmek gerekirse herhalde üretken modellerin, gizli uzay keşfinin, gizli ucağı keşfini kullanarak kendi kendini denetleyen photo ensepling modeli diye çevirebiliriz.
+
+335
+01:01:54,963 --> 01:02:18,923
+Şimdi motivasyonumuz ne? Yani biz bu işi ne yapıyoruz? Neden böyle bir şeye ihtiyaç var? Sektörde tıp olsun, askeri olsun, uzay bilimi, astroloji olsun her zaman yüksek çözünürlü fotoğraflar elde etmek mümkün olmayabiliyor. Gerek donanımsal, gerek fiziksel şartlardan dolayı. Bu noktada düşük çözünürlüklü bir fotoğraf elde edip bunu yüksek çözünürlüklü fotoğrafa dönüştürmek gerekebiliyor.
+
+336
+01:02:19,507 --> 01:02:28,407
+Hem maliyet hem zaman anlamında daha da kazanç sağlayabiliyor. Bizi film sektörü gibi alanlarda özellikle çok çok kullanılabiliyor görüntü geliştirme.
+
+337
+01:02:28,820 --> 01:02:47,740
+Bunun yanında artık günümüze kullanıcı olarak biz bile telefonlarımızı yüksek katil fotoğraflar çekmek isteyebiliyoruz. Ama bu da aynı zamanda donanımsal bir ihtiyaç ortaya çıkarıyor. Bunun bir kısmını da yazılımsız olarak karşılanması. Esasen bu donanımsal tarafta harcanan maliyeti azaltmaya yarayabilir. Yani yazılımsız olarak görüntünün iyileştirilmesi.
+
+338
+01:02:49,172 --> 01:03:13,492
+Peki bugüne kadar yani eskiden klasik yöntemler nasıl yapıyordu bu işi? Supervised Convolution Neural Network kullanarak düşük çözünürlüklü fotoğraflardan yüksek çözünürlüklü fotoğraflar elde etme işlemi sağlanıyordu. Bunlardan örnek olarak efsane gösterilebilir. Bunlar peki nasıl bir işlem yapıyordu? Pixel-pixel ortalama değerler alarak düşük çözünürlüklü, yüksek çözünürlüklü dolu adım adım işlemler gerçekleştiriyordu.
+
+339
+01:03:14,099 --> 01:03:24,099
+Peki bu nasıl bir etki ortaya çıkarıyordu? Bu nihayetinde blurring efekt dediğimiz, yani görüntüdeki netliklerin kaybolmasına neden olan bir sonuç meydanlığı geçiriyordu.
+
+340
+01:03:26,099 --> 01:03:31,280
+Şimdi yukarıdaki örneğe baktığımızda input verimiz, low resolution, yani düşük çözümlükteki bir örneğimizi.
+
+341
+01:03:32,563 --> 01:03:39,663
+Klasik yöntemlerle işleme tuttuğumuzda çıkan output örneklerini de görmekteyiz ki keskinlik, netlik fotoğraflarda kayboluyor.
+
+342
+01:03:39,923 --> 01:03:44,763
+Yani böyle bir çıktı alması neden oluyor. Çünkü baz aldığı nokta düşük çözünürlüklü fotoğraflar.
+
+343
+01:03:47,223 --> 01:03:50,803
+Peki full smidge neyi vaat ediyor, ne yapmayı vaat ediyor?
+
+344
+01:03:50,803 --> 01:03:58,243
+Yine düşük çözünürlüklü bir fotoğraf input'umuz var ve bununla yüksek kalitede, yüksek netlikte fotoğraflar elde etmemizi vaat ediyor.
+
+345
+01:03:58,996 --> 01:04:13,996
+Peki bunu nasıl yapıyor? Yani klasik yötenlerden neyi farklı yapıyor? Öncelikle makul çözümler tutması içerisinde gerçekçi ve çözünürlü yüksek görüntü elde etme işlemini vaat ediyor. Bunu da düşük çözünürlükdeki fotoğraflara güvenmeden yapmak istiyor. Şimdi ne demiştik? Klasik çözümlerde...
+
+346
+01:04:14,688 --> 01:04:21,148
+Düşük çözürekli fotoğraflardan yola çıkıyoruz. Hesaplamaları bitsel tıkseler on üzerine yaparak yüksek çözürekli bir fotoğraf elde etmek istiyoruz.
+
+347
+01:04:21,927 --> 01:04:30,748
+Kuz diyor ki böyle yapmayalım, tam tersini yapalım. Yüksek çözürekli fotoğraflardan yola çıkıp düşük çözürekli fotoğrafları tahmin etmeye çalışalım diye tam tersine bir işlem yapıyor aslında.
+
+348
+01:04:33,228 --> 01:04:40,228
+Peki bunu yaparken ne kullanıyor? Yapısında GAN model kullanılıyor. Generative Adversarial Network diye.
+
+349
+01:04:42,175 --> 01:04:44,876
+Üretken modeller diye Türkçe çevriliyor.
+
+350
+01:04:44,876 --> 01:04:49,956
+Peki, bu galva model tam olarak neyi fayda ediyor? Bunu açıklamakta fayda var.
+
+351
+01:04:49,956 --> 01:04:56,596
+Şimdi yan tarafta bir şablon görüyoruz. Burada real data sample, generator ve discriminator var.
+
+352
+01:04:56,596 --> 01:05:03,076
+Şimdi, real datamız bir input veriyor. Generator'mız da fake data üreterek bir input veriyor.
+
+353
+01:05:03,076 --> 01:05:07,576
+Ve discriminator hangisinin gerçek, hangisinin fake olduğunu anlamaya çalışıyor.
+
+354
+01:05:07,731 --> 01:05:33,231
+Peki, GAN model burada nasıl bir gelişim sağlıyor? Bu, çıktığa göre bir parametre düzenlemesi yaparak, eğitilerek daha doğrusu. Artık GAN model öyle bir hale geliyor ki, discriminator gelen iki yınkıda da ayırt edemiyor. Yani real data mı, fake data mı ayırt edemiyor. Bu noktada artık GAN modeli eğitmiş oluyoruz. Yani GAN model bu şekilde istatistik olarak gerçek veriye en yakın şekilde verileri üretmeye yarayan bir model.
+
+355
+01:05:34,516 --> 01:05:44,016
+2014 yılında öne sürülmüş bir model. Bunun üstüne olarak Stygand'e kullanılıyor projemizde. Bu da Nvidia tarafından geliştirilmiş.
+
+356
+01:05:44,656 --> 01:05:52,756
+Kuda tabanlı. 2018 yılında öne sürülmüş bir model. AŞD araştırmamızda, projemizde bu kullanılıyor. Gam model kullanılıyor.
+
+357
+01:05:54,387 --> 01:06:08,407
+Veri hükümesi olarak 30 bin adet büyük ölçekli 100 özü nitelikleri veri hükümesi olan SLEP A HQ diye bir tane veri seti kullanılıyor. Aşağıda da Paypal Bitcode'da paylaşılmış bir görüntüsünü görmek istedik. Oradan da verilere ulaşmak mümkün.
+
+358
+01:06:11,123 --> 01:06:34,663
+Peki, yöntemimiz nasıl? Yani bu Pulse yöntemi nasıl çalışıyor? Öncelikle fotoğraf üzerinde yüz tespiti yapılıyor. Yani bir input verisi veriyoruz. Öncelikle yüz çerçevesi tespit ediliyor. Daha sonra yüksek çözünürlükle fotoğraf verilsek fotoğrafta çözünürlük düşürme işlemi uygulanıyor. En sonunda Pulse yöntemi uygularak yüksek çözünürlükle çözünürlük yükselttirmiş fotoğraflar elde ediyoruz.
+
+359
+01:06:38,003 --> 01:07:04,204
+Şimdi ilk önce Align Face diye bir şeyimiz var. Geliştirmiş bu yine kod içerisinde göstereceğim ayrıca. Bir görüntü üzerinde üst tespitini yapıp bu tespit üzerinden Downs Amplik'te çözünürlü düşürmesi işlemini yapan yani modelimize input hazırlayan kısım diyebiliriz. Burada modeller genel olarak hazır kullanılıyor. Yani Google Drive üzerinden indirilerek işlemler gerçekleştiriliyor.
+
+360
+01:07:04,788 --> 01:07:29,347
+Şu for dynamics içerisinde görmekteyiz. Öncelikle yüz tespiti yapılıyor. Ve islah tespit ediliyor. Daha sonrasında defolt olarak tabii 32 verilmiş ama 64 olabiliyor. Çözünürlük düşürme işlemi uyguluyoruz. Daha sonra bunu transform ederek outputta yüzü tespit edilmiş ve çözünürlüğü düşürmüş fotoğrafı elde ediyoruz. En son örneklerde bunu kodu çalıştırdığında göstereceğim ayrıca.
+
+361
+01:07:32,179 --> 01:07:48,619
+Pulse yöntemi de dediğim gibi, önce de yetinmiş gam model kullanılıyor. Bu noktada modeli içine açık bakma şansımız kod içerisinde sadece Google Drive üzerinden indirerek direkt kod uygulamasına geçiyor. Kod direkt hazır bir model üzerinden kullanılıyor.
+
+362
+01:07:51,155 --> 01:08:08,355
+Son olarak kod kısmında loss function olarak iki tane yaklaşım kullanarak bu işlem gerçekleşiyor. Bir tanesi generative image ile referans image. Yani gerçek değerle tahmin edilen değer arasındaki farkın karesini alarak, en son ortalama sanarak bir hata hesabı yapıyor.
+
+363
+01:08:09,056 --> 01:08:15,215
+Loss 1 ile de bunun mutlak değerin ortalamasını alarak bir hata hesabı yapıyor.
+
+364
+01:08:17,684 --> 01:08:41,984
+Burada Pulse yöntemini, diğer yöntemlerle olan skorlarını görmekteyiz. Genel olarak diğer yöntemlere göre çok çok yüksek başarı gösteriyor. Aynı zamanda işte şurada sınıflandırma yapmış olduğum Indian, Black, işte Orta Asik insanları, Beyaz insanları ne kadarını doğru sınıflandırabiliyor ve cinsiyet farkı ne kadar doğru yapabiliyor. Bunun diğerlerini görmekteyiz.
+
+365
+01:08:42,484 --> 01:08:47,024
+Genel olarak diğer modellere göre hepsinde başarı gösteriyor. Daha başarı sonuçlar elde ediyor.
+
+366
+01:08:48,664 --> 01:08:54,504
+Şimdi değerlendirme kısmına geldiğimizde bu herhangi bir eğitim yapmıyor. Önceden eğitilmiş bir gam model kullanıyor.
+
+367
+01:08:54,504 --> 01:09:00,444
+Ve bu noktada, yani bunu yüz için kullanılmış ama bu birçok noktada kullanabilecek bir proje esasen.
+
+368
+01:09:00,984 --> 01:09:07,764
+Yani eğitim verisine göre yüz için de kullanılabilir, tıp alanında da kullanılabilir, savunma sanayi bulanılıklı kullanılabilir.
+
+369
+01:09:08,104 --> 01:09:09,504
+Tamamen eğitilmiş, gana bağlı.
+
+370
+01:09:10,612 --> 01:09:36,231
+Yüz tarafası için uygun değil. Neden uygun değil? Gan model dediğimiz esas zaten fake bir ürünlen bir model. Burada elde edilen sonuçlar herhangi bir gerçek yüz ifade etmiyor. Bunlar sadece Gan model tarafından üretilmiş random modeller diyebiliriz gerçekliğe en yakın. Fotoğraflarda yan pozlar kesinlikle olmuyor. Yani bunu biz artık kendim de denedim. Yüzü direkt karşıdan görmesi gerekiyor modelin. Ancak bu şekilde doğru bir sonuçlandırma yapabiliyor.
+
+371
+01:09:37,332 --> 01:10:02,912
+Yürültüye karşı dayanıklı, yan tarafta da örnekle görmesi değiliz. Yukarıda, rahatsızınla uzun, elli olduğu seviyelerde bile insan yüz olduğunu söylemekte zorken bir şekilde kouls yöntemi bunun üstesinden gelerek bir model üretebiliyor. Çünkü düşük çözünürlüklü fotoğraf üzerinden çalışmıyor. Yüksek çözünürlüklü fotoğraf üzerinden yola çıkarak ilerlediği için bir şekilde keskin çözünürlüklü bir fotoğraf elde edebiliyor.
+
+372
+01:10:05,203 --> 01:10:14,123
+Kodu çalıştırayım hocam isterseniz. Lakin lokal taraf da çok uzun sürebiliyor. Konop tarafında çalıştıracağım bu yüzden.
+
+373
+01:10:18,355 --> 01:10:19,695
+Kolak'ta ne kadar sürüyor?
+
+374
+01:10:20,695 --> 01:10:23,515
+Hocam orada bir tek fotoğraf yüklemesi. Hazır model oraya şu an yüklü.
+
+375
+01:10:29,716 --> 01:10:50,316
+Ben önce vereceğim input verisini göstereyim. Burada ben kendi resmimi seçtim. Şöyle yüksek çözünürlükte bir fotoğrafım var. Bunun neticesinde bir çıktı almayı hedefliyorum benzer noktalarda. Kaç tane input döndüreceğimi, yani kaç tane bana çıktı döndürsün bunun numarasını veriyorum ve ara işlemleri görmek istiyorum.
+
+376
+01:10:50,768 --> 01:10:57,307
+Biraz önce söylemiştin, dans emlik faktörüde 32 belirleri, istersem 64 da olabilir. Yani bu çözünürlük düşürmeyle alakalı bir işlem.
+
+377
+01:10:59,528 --> 01:11:04,827
+Ben bu uygulamayı yanlış mı anladım? Şimdi ne yapıyor?
+
+378
+01:11:06,667 --> 01:11:07,347
+Hocam.
+
+379
+01:11:09,488 --> 01:11:12,288
+Düşük çözünürlüklü bir imgeden.
+
+380
+01:11:12,659 --> 01:11:16,500
+Yüksek çözünürlüklü versiyonunu bulmuyor mu bu?
+
+381
+01:11:16,680 --> 01:11:17,680
+Evet, doğrudur hocam.
+
+382
+01:11:18,219 --> 01:11:23,039
+Sen şimdi ama yüksek çözünürlüklü bir imgeni yüklüyorsun.
+
+383
+01:11:23,039 --> 01:11:27,139
+Evet, işte işlem aşamalarında onu göreceğiz.
+
+384
+01:11:29,039 --> 01:11:31,059
+Şimdi fotoğrafımı seçiyorum.
+
+385
+01:11:31,260 --> 01:11:33,239
+Şimdi fotoğrafı orijinal halini gösterdim zaten.
+
+386
+01:11:33,716 --> 01:11:45,076
+Yüksek çözünürtli fotoğraf. Öncelikle align face dediğim, yüz tespitini yapacak ve bunu düşük çözünürtli bir fotoğraf haline getirecek. Onu da input verisi olarak şurada göreceğiz.
+
+387
+01:11:45,076 --> 01:11:48,355
+Yani şeyi veriyor.
+
+388
+01:11:49,619 --> 01:11:53,000
+Anladım. Yani input'u modelle göre…
+
+389
+01:11:53,000 --> 01:11:56,399
+Input zaten düşük çözünürlüklü fotoğraf olacak.
+
+390
+01:11:56,760 --> 01:12:10,640
+Evet, biz ne verirsek verelim input'a. Model onu önce düşük çözünürlüklü hale getiriyor. Şurada yüz tespiti yaptı ve ağzından downsamplitle çözünürlük düşürme işlemi yapacak. Sonrasında da model tahmini gerçekleştirmeye çalışacak.
+
+391
+01:12:14,771 --> 01:12:17,692
+Şimdi hocam, görmüş olduğunuz gibi üst tespitini yaptı.
+
+392
+01:12:19,371 --> 01:12:28,211
+Çözünürlük düşürme işlemini de yaptı ve sonrasında dediğim gibi puls yöntemiyle, bak ilk başta bayan dedi mesela, sonrasında adım adım modeli iyileştirerek,
+
+393
+01:12:28,912 --> 01:12:33,492
+GAN model sayesinde yüksek çözünürlüklü modelleri düşük çözünürlükle benzetmeye çalışıyor.
+
+394
+01:12:33,971 --> 01:12:36,512
+Esasen yöntem böyle çalışıyor. Bir daha fazla sonuç çıkabiliyor.
+
+395
+01:12:36,512 --> 01:12:41,112
+Yani şurada beş tane fotoğraf göreceğiz. Hepsi farklı farklı oluyor esersen ama birbirine yakın sonuçlar oluyor.
+
+396
+01:12:53,268 --> 01:13:05,128
+Bir nevi hafızasındaki yüzlerden hangisine daha çok benziyor? Böyle bir latent space'ındaki buna uyan yüzleri buluyor sanki.
+
+397
+01:13:05,128 --> 01:13:15,907
+Evet, şöyle de diyebiliriz hocam. Şurada fotoğraflar var. Bunların hepsi posta üretilmiş fotoğraflar. Esasen aynı düşük çözünürlüklü fotoğraflar indirgenebiliyor diyebilirim.
+
+398
+01:13:16,275 --> 01:13:21,615
+Yani yüksek çözümlü fotoğraflardan bu fotoğrafı tahmin etmeye çalışıyor. En bezleyen şekilde.
+
+399
+01:13:22,775 --> 01:13:31,115
+Evet, yani çünkü 36 bin tane aslında binlerce yüz ile eğitilmiş olduğu için, değil mi?
+
+400
+01:13:31,115 --> 01:13:31,615
+Evet.
+
+401
+01:13:33,755 --> 01:13:40,315
+Ne oluyor? Bir nevi hafızasında birçok fotoğraf var.
+
+402
+01:13:40,851 --> 01:13:48,412
+diye düşünebiliriz. O fotoğrafların interpolasyonunu da sağlıyor esasen. Yani kaç bindi?
+
+403
+01:13:48,771 --> 01:14:05,231
+30 bin hocam. 30 bin resmin bilgileri var diyelim. O bilgilere yararlı bakarak bu düşük çözünürlü fotoğrafa uygun bir yüz elde etmeye çalışıyor.
+
+404
+01:14:09,203 --> 01:14:13,484
+Piksellere bakmıyor da daha önceki kendi bilgilerine bakıyor.
+
+405
+01:14:13,484 --> 01:14:21,183
+Evet, yani fake data üretiyor diyebiliriz aslında GAN modelle. Buna benzeyen şıkkıları üretiyor yani.
+
+406
+01:14:21,404 --> 01:14:23,064
+Yüksek çözünürlü fotoğraflar örneklerinden.
+
+407
+01:14:24,148 --> 01:14:29,048
+Peki, içinde nasıl çalışıyor? Bunu nasıl yapıyor acaba? Ona bakabildim mi?
+
+408
+01:14:29,347 --> 01:14:37,068
+Hocam, ona bakamadım. Yani modeli direkt drive üzerinden indiriyoruz. Şurada esasen şeyde de bakabilirsiniz. Yani GitHub tarafında da açık kaynak bir şekilde mevcut.
+
+409
+01:14:37,188 --> 01:14:40,188
+Lokal tarafında da çalıştırılabiliyor. Biraz daha uzun sürse de.
+
+410
+01:14:42,907 --> 01:14:48,307
+Model zaten Stylegun'un eğitilmiş modeli. Stylegun bilinen bir model.
+
+411
+01:14:49,203 --> 01:15:14,583
+Ama bu ne yapıyor? Stylegun da bu yakınlaştırmayı yapmak için, benzer imgeleri çıkartmak için ne yapıyor? Stylegun modelini indiriyor. Pre-trained, önceden eğitilmiş, Stylegun modelini indiriyor benim anladığım.
+
+412
+01:15:14,583 --> 01:15:15,583
+Evet.
+
+413
+01:15:17,152 --> 01:15:21,512
+Bu model içerisinde aramayı nasıl yapıyor?
+
+414
+01:15:21,512 --> 01:15:36,652
+Şimdi şöyle, şurayı düzelteyim. Ben şöyle anladım hocam. Şimdi Steygan genel olarak bir fake data üretim kütüphanesi gibi, modele gibi bir şey diyebiliriz. Bunu görüntü netleştirme işlemine uyguluyor araştırmacılar.
+
+415
+01:15:37,432 --> 01:15:39,912
+Tamam nasıl uygulanmış onu merak ediyorum.
+
+416
+01:15:40,351 --> 01:15:43,131
+İşte o kısmı, yani model tamamen hazır.
+
+417
+01:15:43,891 --> 01:15:48,871
+Tamam, aşağı doğru gidelim. Başka ne var? Kaç sayfa?
+
+418
+01:15:49,451 --> 01:15:54,631
+Hocam, şöyle 200'e yakın bir satır var. Bu Pulse işlemini gerçekleştirilir.
+
+419
+01:15:55,451 --> 01:15:55,891
+Tabii ki.
+
+420
+01:15:55,951 --> 01:15:58,771
+Kontu. Çok büyüttün. Biraz daha azalt.
+
+421
+01:15:59,832 --> 01:16:01,951
+Şimdi yukarıdan başlayayım isterseniz.
+
+422
+01:16:02,251 --> 01:16:06,431
+Biraz hızlıca bakalım. İşte bu PyTorch modülü yapıyor.
+
+423
+01:16:06,431 --> 01:16:07,152
+Evet.
+
+424
+01:16:08,911 --> 01:16:10,391
+Gaussian fitriği buluyor.
+
+425
+01:16:12,916 --> 01:16:14,735
+Likreli var.
+
+426
+01:16:15,476 --> 01:16:15,716
+Evet.
+
+427
+01:16:17,996 --> 01:16:19,735
+Şimdi torşları buna çok hakim değildim.
+
+428
+01:16:20,155 --> 01:16:20,896
+Bir noktalardan.
+
+429
+01:16:21,556 --> 01:16:22,516
+Evet. Bir dakika.
+
+430
+01:16:27,828 --> 01:16:42,088
+Latent diye rastgele değerler üretti sanki. Bunları Li-Kürelü ile şey yaptı, non-linearlık verdi.
+
+431
+01:16:50,131 --> 01:16:57,131
+Gaussian 50-T
+
+432
+01:17:01,524 --> 01:17:03,024
+Şu forward'a bakalım.
+
+433
+01:17:06,123 --> 01:17:07,583
+Forward şeydir.
+
+434
+01:17:08,984 --> 01:17:12,064
+PyTorch'da forward propagation.
+
+435
+01:17:12,284 --> 01:17:15,743
+Yani network'ün sonucunu buradan alıyor.
+
+436
+01:17:17,264 --> 01:17:18,484
+Çıklısını buradan alıyor.
+
+437
+01:17:18,703 --> 01:17:20,064
+Aşağı doğru inelim bakalım.
+
+438
+01:17:21,123 --> 01:17:28,364
+If seed, manual seed, eğer seed varsa, seed yapılacaksa.
+
+439
+01:17:29,140 --> 01:17:30,479
+Seed yaptı.
+
+440
+01:17:34,100 --> 01:17:40,500
+Batch Size'ını buldu. Aşağı inelim. Yani kaç imge kaç? Generate Latent Tensor diyor.
+
+441
+01:17:48,372 --> 01:17:53,372
+Rastgele sayılarla Latent denilen şeyi oluşturdu.
+
+442
+01:17:54,971 --> 01:17:57,872
+Noise tensorları var. Aşağı inelim.
+
+443
+01:17:59,072 --> 01:18:00,872
+Bir dakika yukarıya çık.
+
+444
+01:18:01,572 --> 01:18:02,572
+Biraz daha.
+
+445
+01:18:13,684 --> 01:18:15,684
+Bol bol noise oluşturuyor bu.
+
+446
+01:18:20,148 --> 01:18:28,347
+New Noise. Farklı noizler, New Noise'i oluşturdu. Aşağı inelim.
+
+447
+01:18:30,347 --> 01:18:40,148
+Noizleri append etti. Latent'a Noise Wars'ı ekledi. Noise Wars neydi?
+
+448
+01:18:42,347 --> 01:18:44,332
+Bilmiyorum hocam.
+
+449
+01:18:46,963 --> 01:18:58,064
+Boştu. Onu nerede doldurdu? Az önce şuralarda mı doldurdu? Burada doldurulmuş. Tamam, aşağı indi.
+
+450
+01:19:02,564 --> 01:19:13,003
+Optimizasyon algoritmaları var. SGD Adam, SGD Adam Aks gibi. Optimizer'ı oluşturdu.
+
+451
+01:19:16,180 --> 01:19:27,340
+Learning Rate'i falan var. Aşağıda işte Learning Rate ile ilgili şeyleri oluşturmuş. Aşağıya inelim.
+
+452
+01:19:33,011 --> 01:19:35,952
+Lost Builder diye bir şeyle Lost Build etti.
+
+453
+01:19:39,923 --> 01:19:44,144
+Aşağı inelim. Şimdi adımlar diyor.
+
+454
+01:19:49,908 --> 01:20:14,408
+Latent'ı oluşturuyor. Devam et. Relu ile vermiş. Biraz yukarıda. İmgeyi normalize ediyor. Loss ediyor. Biraz daha aşağı inelim.
+
+455
+01:20:17,684 --> 01:20:27,583
+Evet, yani bunu tabii burada nasıl yaptığını bir paper esasen belki paper'ı inceleyerek anlamak lazımdı.
+
+456
+01:20:27,724 --> 01:20:34,163
+Hocam, paper'da da esasen okumaların üstüne yaptım ama o yani kod kısmını bu kadar yeterli tabii anlatmıyor.
+
+457
+01:20:34,463 --> 01:20:38,804
+Yani direkt gambodur üzerinden anlatıyor ve ne yaptığını anlatıyor. Şurada gösterebilirim.
+
+458
+01:20:40,884 --> 01:20:43,184
+Şurada daha çok işte o yapıdan bahsediyor.
+
+459
+01:20:43,184 --> 01:20:43,904
+Evet.
+
+460
+01:20:45,971 --> 01:20:47,431
+Daha sonra metodu açıklayarak.
+
+461
+01:20:48,931 --> 01:20:52,532
+Tamamdır. Yani daha çok eskiler ne yapmıştı, biz şu an ne yapıyoruz, amacımız ne?
+
+462
+01:20:55,131 --> 01:20:57,471
+Yenilik ne getirdik? Bunun üzerine açıklayalım.
+
+463
+01:20:57,471 --> 01:20:58,251
+Aşağıda da inelim.
+
+464
+01:20:59,971 --> 01:21:01,152
+Şu resme bakalım.
+
+465
+01:21:04,724 --> 01:21:17,984
+Bu Style Gun'ın bu Latent Space'i üzerinde araştırmalar yapıyor bu ama şimdi sen Style Gun'ı da aslında güzelce anlamak ve anlatman lazımdı.
+
+466
+01:21:17,984 --> 01:21:24,984
+Tabii o da baya büyük bir şey. Onun üzerine belki bu kodu...
+
+467
+01:21:25,619 --> 01:21:29,600
+Niye çalışıyor? Yani nasıl çalıştığını anlaman lazımdı.
+
+468
+01:21:29,960 --> 01:21:34,779
+Model kısmını hocam? Yani direkt style gun model, hazır model kısmını mı diyorsunuz?
+
+469
+01:21:34,779 --> 01:21:35,000
+Yok.
+
+470
+01:21:35,119 --> 01:21:35,980
+Anlaman lazımdı diye.
+
+471
+01:21:36,819 --> 01:21:41,039
+Yani şöyle, style gun'ı da bize bir anlatman faydalı olurdu.
+
+472
+01:21:42,680 --> 01:21:49,659
+Muhtemelen style gun'ı, gun'ın katmanlarını tekrar kullanıyor, bir şeyler yapıyor.
+
+473
+01:21:49,659 --> 01:21:50,940
+Style gun'ı bilmeden.
+
+474
+01:21:51,507 --> 01:22:17,907
+Bu paper anlaşılmaz diye düşünüyorum. Ama şey var, StyleGad'ın bu latent space'inde arama yapma yüz ile ilgili işlemlerde kullanılıyor. Yani birçok farklı işlem için kullanılıyor. Çünkü orada yüz bilgisi olduğu için, otuz bin yüz bilgisi.
+
+475
+01:22:18,931 --> 01:22:39,171
+O bilgilerden yola çıkarak yeni yüz oluşturulabiliyor. Yüzlerle ilgili birçok işlem yapılabiliyor. Buradaki örnekte de ne yapılmış? Düşük çözünürlüklü yüz imgelerine daha yüksek çözünürlüklü yüz imgeleri eklenmiş.
+
+476
+01:22:39,171 --> 01:22:46,311
+Evet. Peki tamam, teşekkür ediyorum. Ben teşekkür ederim hocam. [öğrenci].
+
+477
+01:22:53,043 --> 01:22:54,264
+Sırada kim var?
+
+478
+01:23:10,036 --> 01:23:12,836
+Hocam sesimi alabiliyor musunuz? Bilmiyorum ama.
+
+479
+01:23:13,496 --> 01:23:14,176
+Duyabiliyorum.
+
+480
+01:23:14,816 --> 01:23:32,876
+Şöyle sanırım herkes anlattı. Derse de bir katılım olmamış. Ben sıraya baktığım zaman dört kişi konuşmuştuk sanırım. Haftaya değil konuştum da. [kişisel bilgi] O yüzden çok hazırlanmadım. O yüzden ben bu hafta sunamayacağım. Kusura bakmayın. Sıkıntı olmaz umarım.
+
+481
+01:23:34,216 --> 01:23:34,616
+Peki.
+
+482
+01:23:36,224 --> 01:23:38,604
+Anlatabilecek var mı arkadaşlar?
+
+483
+01:23:41,984 --> 01:23:47,164
+Hocam ben anlatabilirim fakat bilgisayarımı değiştirmem gerekiyor. Bir aradan sonra yapsak olabilir mi acaba?
+
+484
+01:23:47,364 --> 01:23:49,424
+Olur. Ne kadar ara lazım?
+
+485
+01:23:50,184 --> 01:23:52,164
+Bir 5-10 dakika arasında.
+
+486
+01:23:52,484 --> 01:23:54,204
+10 dakika ara verelim o zaman.
+
+487
+01:23:54,364 --> 01:23:55,804
+10 dakika ara verelim arkadaşlar.
+
+488
+01:37:43,347 --> 01:37:44,307
+Merhabalar arkadaşlar.
+
+489
+01:37:48,404 --> 01:37:59,484
+Merhaba hocam. Hangi arkadaşımızdı? Ben anlatacağım ama sesim geliyor mu hocam? Geliyor, geliyor. Tamam.
+
+490
+01:38:01,444 --> 01:38:07,324
+[öğrenci], [öğrenci], [öğrenci]. Evet, ben o zaman pek anını paylaşayım.
+
+491
+01:38:28,340 --> 01:38:31,500
+Şu an görebiliyorsunuz sanırım hocam. Değil mi? Evet, görüyorum.
+
+492
+01:38:32,059 --> 01:38:40,799
+Benim makalemin konusu Amnist Digit Recognition. Aslında bu çok basic bir sınıflandırma problemi.
+
+493
+01:38:41,699 --> 01:38:46,279
+Fakat burada izlenen yöntem, aslında göstermek istenen bazı deneysel sonuçlar var.
+
+494
+01:38:46,279 --> 01:38:52,112
+Bunun üzerinden arkadaşlar göstermişler ki bu deneysel sonuçlarla...
+
+495
+01:38:52,112 --> 01:39:08,451
+Çok basit bir yöntemle state-of-art bir model çıkartılabiliyor. MNIST dataset'i hem dijitler hem de rakamlar hem de harfler olmak üzere hem de bunların kombinasyonu olmak üzere iki farklı dataset var, üç farklı dataset var.
+
+496
+01:39:09,451 --> 01:39:16,911
+Bu dataset 28-28'lik binary formatta birçok image-di fotoğraftan oluşuyor.
+
+497
+01:39:19,731 --> 01:39:25,551
+Aslında bunların sınıflandırmasında belli bir seviyeye gelmek çok kolay.
+
+498
+01:39:26,131 --> 01:39:32,051
+Örneğin Support Vector Machine ile veyahut da diğer basit makine öğrenmesi algoritmalarıyla,
+
+499
+01:39:32,112 --> 01:39:36,751
+Kienem'le, Random Forest Classifier ile vesaireyle belli seviyelere gelmek kolay.
+
+500
+01:39:36,971 --> 01:39:40,471
+%90'ları, %95'leri belki daha da yukarılarında görmek çok kolay.
+
+501
+01:39:41,051 --> 01:39:47,112
+Fakat bu %98-99 bir eşik değer diyebiliriz.
+
+502
+01:39:47,731 --> 01:40:03,891
+Bu eşik değeri aşan model sayısı gittikçe karmaşıklaştıkça artıyor fakat modelleri karmaşıklaştırmadan bu seviyeye dolaşmak birazcık zor. Arkadaşlar da belirli metotlarla bunların nasıl yıkılabileceğini, sebefak modelleri nasıl yıkılabileceğini göstermişler.
+
+503
+01:40:06,452 --> 01:40:16,992
+Nelerin nelere ulaşabildiğini görüyoruz. Support Vector Machine Learning %97'ye çok basit bir şekilde ulaşabiliyor. Diğer CNN'lerde de bazı kombinasyonlar, net noktalarında %99'ları görüyorlar.
+
+504
+01:40:18,131 --> 01:40:26,291
+Ama burada arkadaşlar hedeflikleri, totalde 10.000 fotoğraftan, yüzden az fotoğrafı yanlış tahmin etmek.
+
+505
+01:40:27,971 --> 01:40:30,591
+Bunun için de Ensemble modelleri kullanıyorlar.
+
+506
+01:40:31,220 --> 01:40:52,079
+Öncelikle Ensemble model nedir? Ondan da bir bahsedeyim. Ensemble model birden fazla modelin bir arada kullanılarak elde edilen modelleri deniyor. Bu makine öğrenmesi algoritmalarında da var. Diğer tüm derin öğrenme algoritmalarında da var.
+
+507
+01:40:52,756 --> 01:40:57,516
+Ensemble modellerde homojen ensemblu olabilir veyahut da heterojen ensemblu olabilir.
+
+508
+01:40:57,676 --> 01:41:06,256
+Yani aynı modelin farklı parametrelerle kullanıldığı veyahut da aynı parametreyle kullanıldığı ensemblu modeller olabilir.
+
+509
+01:41:06,976 --> 01:41:13,516
+Veyahut farklı modellerin bir arada kullanılıp farklı parametrelerle veyahut da aynı parametrelerle kullanıldığı heterojen ensemblu modeller olabilir.
+
+510
+01:41:14,355 --> 01:41:24,756
+Burada, arkadaşların kullandığı üç farklı model var. Her birini ayrı ayrı bireysel olarak, homojen ensemb olarak ve heterojen ensemb olarak kullanıyorlar.
+
+511
+01:41:25,956 --> 01:41:40,355
+Birinci model M3 modeli. Modellerin özelliklerinin en başında drop out yok, artı pooling yok ve batch normalization her basamaktan sonra kullanılıyor.
+
+512
+01:41:40,787 --> 01:41:54,207
+Bu, kendilerinin geliştirdikleri modellerde. Üç farklı model var. Birisi daha uzun, daha derin bir mimari. Diğerlerinin de densleri daha fazla. Gittikçe artıyor densler. Yani notların sayısı artıyor.
+
+513
+01:42:08,404 --> 01:42:25,564
+Doğrudan kullanmıyorlar. Random Rotation ve Shift, yani öteleme şeylerini kullanıyorlar. Bu fotoğrafların %20'sinde bunları yapıyorlar.
+
+514
+01:42:26,944 --> 01:42:35,364
+Denemeleri öncelikle kendi modellerinde teker teker deniyorlar ve bu test ettiğinin sonucunda
+
+515
+01:42:35,923 --> 01:42:43,324
+Birinci modelin ekür sesi 50 epok ile 150 epok arasında değişiyor bu model eğitim süresi.
+
+516
+01:42:43,324 --> 01:42:52,164
+50 epok ile 150 epok arasında birinci modelin sonucu, M3 modelinin sonucu en iyisi 99,82.
+
+517
+01:42:52,164 --> 01:42:54,324
+Yani burada 10.000 fotoğraf olduğunu düşünürsek...
+
+518
+01:42:58,036 --> 01:43:04,835
+Doğru yapıyorum sanırım. Evet, tahmin görüleceği üzere çok çok yüksek bir oranda doğruluk çıkıyor.
+
+519
+01:43:06,175 --> 01:43:12,235
+Bahsettiğim gibi 99'un üzerindeki şeyler genelde bu seveyedir ulaşmıyor.
+
+520
+01:43:12,235 --> 01:43:20,235
+Bu doğrudan modellerin kendi başına kullanıldıkları hali. Daha sonrasında ensemble modellerde homojenlerde...
+
+521
+01:43:20,340 --> 01:43:26,800
+Görülüyor ki homojen metodlar kendi metodlarını da yıkıyor aslında. Tek tek başına kullanılan modelleri de yıkıyorlar.
+
+522
+01:43:28,460 --> 01:43:38,800
+Burada en yüksek sonucu şu ensembl aslında M3, M5, M7 karışık ensembl.
+
+523
+01:43:39,740 --> 01:43:45,220
+M3'ün kendi başını elde ettiği sonucu geçiyor.
+
+524
+01:43:45,939 --> 01:44:10,439
+Diğerlerin tamamı geçiyor ama en yüksek seviye de bu alıyor. Yani görülüyor ki aslında homojen ensembullardan, homojen ensembullardan hocam şu şekilde, M3'ün kendi ensemblu %99,80, 82, M5'in 99,80, M7'nin ise 99,79 aldığı görülüyor.
+
+525
+01:44:10,899 --> 01:44:31,899
+Bu ensemble modeller hepsi kendi içlerindeki ensembllarda, heterojen ensembllarda tekli modelleri tamamen kırıyor. Daha sonrasında bunlar tabii ki şu arkada gördüğümüz modellerin hepsi üç tane modelin bir arada kullanılmasıyla yapılıyor. Daha sonrasında ensemble of ensemble yapılıyor.
+
+526
+01:44:31,899 --> 01:44:33,719
+Bir şey merak ediyorum.
+
+527
+01:44:37,203 --> 01:44:37,903
+Tabii ki hocam.
+
+528
+01:44:37,903 --> 01:44:49,183
+Yüzde doksan beş confidence range diyor. Onu nasıl şey yapmışlar, belirlemişler? Yani şunu demek istiyorum.
+
+529
+01:45:04,627 --> 01:45:12,867
+Öğrenilmeye başlanması dolayısıyla her bir çalıştırmanızda biraz farklı sonuçlar elde edebilirsiniz.
+
+530
+01:45:14,467 --> 01:45:23,435
+Burada mesela M3, M5, M7 modelinin iyi olduğunu görüyoruz ama...
+
+531
+01:45:24,884 --> 01:45:37,923
+Ne demek bu? Yüzde biri bir yüzde ile daha çarp. Yani on binde birlik bir iyiliğinden bahsediyoruz. M3-M3'den. Değil mi?
+
+532
+01:45:38,524 --> 01:45:38,783
+Evet.
+
+533
+01:45:39,703 --> 01:45:50,524
+On binde birlik, iyilik, yani böyle bir deney getirseler bana ben şüpheyle yaklaşırım. Çünkü bu o kadar küçük bir fark ki.
+
+534
+01:45:51,412 --> 01:45:59,472
+Sen bu algoritmaları tekrar çalıştırsan belki de diğer konfigürasyon daha iyi sonuç vereceklerim.
+
+535
+01:46:00,532 --> 01:46:07,252
+Sanırım bununla ilgili bir guard almışlar. Yani confidence range'lerini hesaplamışlar.
+
+536
+01:46:07,252 --> 01:46:07,932
+Evet.
+
+537
+01:46:09,152 --> 01:46:12,172
+Bunu nasıl yapmışlar? Gördün mü paperda?
+
+538
+01:46:14,072 --> 01:46:17,252
+Hocam burada bunu belirtmiyor ama bu aynı bir...
+
+539
+01:46:18,576 --> 01:46:25,576
+Normalde kendi paper'ın içerisinde belirtmiyor bu confidence şeyini nasıl belirlediğini.
+
+540
+01:46:25,576 --> 01:46:36,576
+Ama multi classification'larda her bir değer için bir...
+
+541
+01:46:37,108 --> 01:46:49,427
+İşte yüzdelik değer döndürüyor. Ve bu yüzdelik değer içerisinde bir sınıfın değeri %95'in üzerindeyse kabul ediliyor. Diğer %95'in altındaysa kabul edilmiyor. Normalde Multiklar Sınıflandırma Oral'da bu şekilde kullanıyoruz.
+
+542
+01:46:49,427 --> 01:46:55,547
+Yani Örneğin Binary Classification yaptığımızda da Softmax'de nasıl iki tane değer döndürüyorsa her bir sınıf için.
+
+543
+01:46:56,020 --> 01:47:18,119
+Burada da binary class için ikisi için pardon 9 tane 10 tane sınıf içinde her biri için bir değer döndürüyor. Bu değerleri yüzdelik değerler eğer 95'in üzerindeki herhangi bir sınıf için onu tercih edilmiş olarak kabul ediyor. Diğerlerinde ise false olarak direkt kabul ediyor. Normalde bu paper için böyle mi bilmiyorum.
+
+544
+01:47:19,140 --> 01:47:20,380
+Paper'a bir bakabilir miyiz?
+
+545
+01:47:20,380 --> 01:47:21,380
+Tabii ki.
+
+546
+01:47:21,747 --> 01:47:24,228
+Confidence Range'i bir araştırsana.
+
+547
+01:47:42,003 --> 01:47:44,463
+Slight'ı görüyoruz hala.
+
+548
+01:47:44,563 --> 01:47:46,823
+Evet hocam, ben şu anda paper'dan bakıyordum ama.
+
+549
+01:47:46,863 --> 01:47:48,604
+Paper'ı açmaya çalışıyorum diyorsun.
+
+550
+01:47:49,104 --> 01:47:50,023
+Yok, paper açık.
+
+551
+01:47:50,023 --> 01:47:51,163
+Şöyle yapayım tekrar.
+
+552
+01:47:57,844 --> 01:48:15,104
+Şu an görebiliyorsunuz. Evet, görüyorum. Confidence diye arattırdım galiba. Evet hocam, hiçbir şey çıkmadı. Tekrar arattır. Az önce gördüm. Yok, şunlar çıkıyor. Fakat hepsi aynı şekilde. Bir açıklaması yok.
+
+553
+01:48:22,387 --> 01:48:28,387
+The graph shows that using table show the confidence range and the basic...
+
+554
+01:48:30,387 --> 01:48:32,387
+Devam et.
+
+555
+01:48:32,387 --> 01:48:37,387
+Yüzde doksan beş confidence range of...
+
+556
+01:48:38,387 --> 01:48:44,387
+Normalde hocam dediğim gibi ben kendi şeylerimle, test şeylerimle bu şekilde kullanıyorum ama
+
+557
+01:48:44,387 --> 01:48:48,171
+arkadaşlarım direkt belki başka bir hesaplaması vardır bilemiyorum.
+
+558
+01:48:48,212 --> 01:48:56,532
+Yani hani bu confidence range'i nasıl kullanıyorlar? Çünkü bir confidence range hesaplaması var orada.
+
+559
+01:48:58,912 --> 01:49:01,992
+Confidence range'i range olarak nasıl confidence?
+
+560
+01:49:14,260 --> 01:49:27,599
+Hesabı vardır. Confidence Intervals vardır orada. Güven aralığı. Güven aralığı hesabı yapmış. Yani benim sonuçlarım diyor.
+
+561
+01:49:32,756 --> 01:49:46,276
+Bu aralıkta, bir dakika, 99.80.14'den 0.00.15 çıkarırsan ve eklersen bu arasında mı kalıyor?
+
+562
+01:49:50,228 --> 01:49:51,115
+Öğneğin...
+
+563
+01:49:54,228 --> 01:50:13,867
+Arasında kalmıyor değil mi? Yok. Arasında kalmıyor. Normalde hani arasında mı kalıyor? Merkezi bu aralığını mı verdi diye düşündüm. O da değil. Ha bir dakika. Best accuracy bu. Tamam.
+
+564
+01:50:22,771 --> 01:50:40,412
+95'inin ortalaması 99.8'ten 14 çıkar. Ya da 99.8'en 14'e 0.0015 yakındır diyor. Anladın mı?
+
+565
+01:50:40,412 --> 01:50:46,612
+99.87 denemelerdeki best ekrisi.
+
+566
+01:50:48,148 --> 01:50:58,128
+Yani 100 kere çalıştırmış, bir kere şu çıkmış. Ama normalde şu çıkıyor, yani 99-80 ortalamada aslında.
+
+567
+01:51:02,676 --> 01:51:11,116
+Bu confidence range'lerin hesaplanması falan istatistik kitaplarında anlatılıyor. Confidence interval diye de geçer. Tamam, devam edelim.
+
+568
+01:51:11,116 --> 01:51:16,836
+Bu bahsettiğimiz aslında benim bahsettiğim şekilde bir confidence şey değil. Anladım.
+
+569
+01:51:17,536 --> 01:51:17,836
+Evet.
+
+570
+01:51:20,516 --> 01:51:28,116
+Ensemble of Ensembles var. Hocam burada da totalde şu her birinin...
+
+571
+01:51:29,792 --> 01:51:48,492
+Bireysel Ensemble'ın Ensemble haline getirmiş. Üçe üçlük Ensemble'ların on tane topluyor ve bunlardan bir eğitim yapıyor, test sonuçlarını görüyor. Burada da Ensemble of Ensembles'da o üçlü M3, M5, M7 modellerinin
+
+572
+01:51:50,387 --> 01:52:01,568
+Yine 10 tane farklı Ensemble modeli birleştirilip elde edildi. Birleştirilmesiyle elde edilen sonuç. Yani totalde 10 bin tane de 9 tane hatalı buluyor. Best ekürisi olarak.
+
+573
+01:52:07,568 --> 01:52:12,007
+Modelin sonuçları etkisi, başta bahsetmiştim, pooling kullanılmadı diye.
+
+574
+01:52:12,851 --> 01:52:31,072
+Bu, pooling kullanılan algoritmalar yeni iki tane, üç tane daha model oluşturuyorlar. Bu üç tane model de içerisinde, yani bu birazcık aslında doğrudan aynı şey değil. Çünkü aynı modeli kullanmıyorlar. Aynı modelin içine max pooling ekleyip kullanmıyorlar. Farklı modellerin içine pooling ekliyorlar ve sonuçları görüyorlar.
+
+575
+01:52:31,771 --> 01:52:38,072
+Burada ispatlamaya çalıştıkları şey de biz pooling kullanmadan modeli etkili bir şekilde...
+
+576
+01:52:38,260 --> 01:52:47,480
+Eğitebiliyoruz. Pulling kullanılan algoritmalardan daha iyi sonuçlar elde edebiliyoruz diye. Bu M5 modelinin diğer 3 modele göre kıyaslanması.
+
+577
+01:52:50,720 --> 01:53:04,240
+5 Normalization neden kullanıldı? Burada da yine aynı şekilde kendi modellerini ispatlamak için 5 Normalization'ın diğerlerine göre ne kadar daha fazla etki ettiğini bu her basamakta, her layer'dan sonra.
+
+578
+01:53:04,752 --> 01:53:15,552
+Her komvülisyondan sonra Beş Normalization kullanılmış hali. Bu sadece son layerda kullanılmış hali. Bu da Beş Normalization olmamış hali. Yani Beş Normalization modeli biraz daha ileriye taşımış.
+
+579
+01:53:18,552 --> 01:53:31,052
+Bu da Data Argumentation'ı, başta bahsettiğim Shifting ve Rotation'ın neden kullanılması gerektiğini gösteriyor. Zaten bu çok basit bir Data Argumentation yöntemi. Eğer ki verenizi...
+
+580
+01:53:31,347 --> 01:53:37,107
+Bozmak istemiyorsanız, yani burada 28'e 28'i bir imajdan bahsediyoruz.
+
+581
+01:53:37,107 --> 01:53:44,107
+Yapacağınız ufak bir smoothing veyahut da ufak nojiler fotoğrafı imajı tamamen değiştirebilir.
+
+582
+01:53:44,107 --> 01:53:48,387
+O yüzden basit augmentation yöntemleri kullanılıyor.
+
+583
+01:53:48,387 --> 01:53:57,787
+Burada da ikisinin birden hem shifting hem rotation kullanıldığı yöntemin hiçbirinin kullanılmadığı yöntemden birkaç...
+
+584
+01:53:57,904 --> 01:54:00,104
+Fotoğrafı daha iyi tahmin edildiği gibi gözüküyor.
+
+585
+01:54:03,044 --> 01:54:13,384
+Sonuç olarak Ensemble modeller kendi içlerinde de homojen olarak da, heterojen olarak da daha verimli çalışabiliyor.
+
+586
+01:54:14,260 --> 01:54:31,560
+Ve Deep Learning'de bahsettiğimiz Data Argumentation olsun, Bash Normalization, Pooling kullanılıp kullanılmaması olsun. Bunların çoğu deneylerin sonucunda arkadaşlar 50 epoktan 150 epoktan kadar her modeli sırayla eğitmişler.
+
+587
+01:54:31,560 --> 01:54:39,560
+Yani çok fazla tekrar ve çok fazla eğitim süresi gerektiriyor. Ve deneysellikte...
+
+588
+01:54:39,807 --> 01:54:53,107
+Sürekli olarak bir şeyleri, yeni şeyleri denemekte. Daha iyi sonuçları elde etmede çok etkili bir yöntem. Bunları göstermiş oldular. Ve ufak modellerin birleştirilmesiyle de çok etkili şeyler elde edilebiliyor.
+
+589
+01:54:55,967 --> 01:54:57,947
+Şimdi ben kodu göstereyim biraz hocam.
+
+590
+01:55:15,956 --> 01:55:18,515
+Biraz büyütebilir misin fontu göremiyoruz.
+
+591
+01:55:22,163 --> 01:55:25,983
+Şu an gözüküyor mu hocam?
+
+592
+01:55:27,604 --> 01:55:27,963
+Evet.
+
+593
+01:55:28,844 --> 01:55:30,163
+İsterseniz biraz daha götürürüm.
+
+594
+01:55:33,064 --> 01:55:38,623
+Modelin mimarisini önce anlatayım. Fukodun mimarisi şu şekilde.
+
+595
+01:55:43,252 --> 01:56:03,612
+Loglarımız var. Loglarımızda hangi ipoks sırasında kaç tane yanlış çıktığını test ettiğinde gösteriyor. Tek bir model için kullanıldığı için burada zaten hepsi de aynı. Ben eğitim yaptım. Ondan sonraki sonuçlar hocam bunlar.
+
+596
+01:56:05,844 --> 01:56:27,764
+Bir processed veri, bir de raw veri var. Raw veri binary formatta tutulmuş Ubyte tarzında. Fotoğrafların zaten flat'ın halinde, düz halinde tutulduğu için hepsi eray halinde. Bu şekilde sıkıştırmışlar verileri. Bunların içerisinde fotoğraflar ve label'lar bulunuyor.
+
+597
+01:56:29,811 --> 01:56:35,231
+Koda geldiğimizde de kodda modelleri sırasıyla, kendi kullandığı modelleri sırasıyla tanımlamış.
+
+598
+01:56:36,452 --> 01:56:40,372
+Burada başta bahsettiğim gibi her layer'dan sonra bir batch normalization var.
+
+599
+01:56:40,532 --> 01:56:42,212
+Komünisyondan sonra bir batch normalization var.
+
+600
+01:56:44,792 --> 01:56:54,032
+O 16 çarpı, i'inci, 16 çarpı i şeklinde derslere gidiyor.
+
+601
+01:56:54,931 --> 01:56:58,251
+Outputları 16x2 şeklinde gidiyor.
+
+602
+01:57:00,311 --> 01:57:05,931
+Bu şekilde son katmanında 176 tane var. Bunları da lineer hale getirdikten sonra bu son çıkıyor.
+
+603
+01:57:06,451 --> 01:57:10,411
+Ben bu modeli kullandım eğitimde tek bir şey olarak.
+
+604
+01:57:11,051 --> 01:57:14,891
+Yine aynı şekilde bunlar da diğer modelleri M5 ve M7.
+
+605
+01:57:15,411 --> 01:57:19,251
+Burada hepsi de farklı şekilde.
+
+606
+01:57:19,344 --> 01:57:22,824
+Orada bahsettiğim 16x2 şeklinde gidiyordu.
+
+607
+01:57:23,544 --> 01:57:24,984
+Get Logix ne işe yarıyor?
+
+608
+01:57:25,504 --> 01:57:26,124
+Efendim hocam?
+
+609
+01:57:26,664 --> 01:57:28,964
+Get Logix metodu ne işe yarıyor?
+
+610
+01:57:34,364 --> 01:57:35,344
+Şimdi...
+
+611
+01:57:36,212 --> 01:57:50,512
+Şu şekilde biz burada şeyleri tanımlıyoruz. Modelin mesela komülisyon 1, komülisyon 2. Buradan bir oraya bir input veriyoruz ve bunun bir output olması lazım. Bunun output da 5 normalizasyon katmanına gitmesi lazım.
+
+612
+01:57:50,512 --> 01:57:55,292
+Bir şey merak ettim. Getlogist daha önce görmemiştim de.
+
+613
+01:57:56,623 --> 01:58:00,304
+Bu direkt PyTorch'un değil hocam. Bu kendi yazıları.
+
+614
+01:58:00,304 --> 01:58:03,144
+Evet, Forward'ın içinde kullanmış gördüğüm kadarıyla.
+
+615
+01:58:03,144 --> 01:58:06,264
+Yani Forward'ın parçası gibi.
+
+616
+01:58:06,264 --> 01:58:11,264
+Bu normalde bir sequential olarak tanımlayabiliyoruz. Örneğin TensorFlow'da ve PyTorch'ta.
+
+617
+01:58:11,264 --> 01:58:15,304
+Bu şekilde yapmak yerine her basama Constructor içinde tanımlayıp,
+
+618
+01:58:15,304 --> 01:58:20,264
+daha sonrasında her bir layer'ın altını diğer bir layer'a veriyor.
+
+619
+01:58:20,264 --> 01:58:24,423
+Ve sonunda da Flatten halini alıyor.
+
+620
+01:58:24,560 --> 01:58:47,420
+Evet. Softmax ile en son dönüş yapıyor değil mi? Evet. Log softmax fonksiyonu. Yani softmax'ın logaritması. Klasik dersimizde de işledik galiba bunu. Bu şeyi. Uzaklık fonksiyonunu.
+
+621
+01:58:48,372 --> 01:58:55,892
+Modeller bu şekilde. Hepsi birbirinin zaten, hepsi format olarak birbirinin aynısı. Modeller birbirinden farklı ama format olarak birbirinin aynısı. Farklı modeller denenmiş.
+
+622
+01:58:58,292 --> 01:59:13,892
+Datasette, şurada bahsettiğim gibi binary format da aldığı için ilk başta fotoğrafları okuyor. Belirli bir offsetten başlayarak. Sonra bufferdan okuyoruz bunu. Sonra bunu lamparyaya çeviriyoruz ve bunu bizim...
+
+623
+01:59:14,003 --> 01:59:35,703
+Fotoğraflarımız olarak X olarak depoluyoruz. Daha sonrasında da aynı şekilde farklı bir veri setinden, farklı bir yerden yine aynı şekilde label'ları okuyoruz. Daha sonra bunları tekrardan reshape ediyoruz. Yani tensor olarak title'e vereceğimiz için bunları reshape ediyoruz.
+
+624
+01:59:37,923 --> 01:59:41,523
+Label'ları da integer formatı çeviriyoruz. 0'dan 9'a kadar.
+
+625
+01:59:42,355 --> 02:00:05,295
+Daha sonra bunlar zaten şeyde gösteriyor, transform metodu var. Transform metoduyla dönüştürülecek. Burada zaten PyTorch datasetlerinde her zaman kullandığımız veri setinin boyutunu almak için LAN fonksiyonu var. Burada da get item her bir iteratif olarak her bir veriyi kullanabilmemizi sağlıyor. Belirli indeksteki veriyi çağırıyoruz.
+
+626
+02:00:09,524 --> 02:00:17,524
+Bu sonrası için hocam, bu ensemble modeller için her bir modeli teker teker eğitiyoruz ve sonrasını da ensemble yapmak için.
+
+627
+02:00:17,524 --> 02:00:24,524
+Train seti, daha öncesinde pardon, transforma gireyim. Transformda random rotation yapılıyor.
+
+628
+02:00:24,524 --> 02:00:32,524
+Başta bahsettiğim gibi, belli bir derecede, random CDV'i vermişiz, random olarak belli derecelerde...
+
+629
+02:00:37,235 --> 02:00:43,536
+Belirtiliyor zaten train seti. Sağa sola veyahut da belli açılarda döndürmeler yapıyor.
+
+630
+02:00:46,676 --> 02:00:56,695
+Bu bizim train yapma dosyamız. Burada train linki yapıyoruz.
+
+631
+02:00:58,115 --> 02:01:01,235
+Ben kuda kullandım. GPU olduğu için.
+
+632
+02:01:06,420 --> 02:01:13,880
+Şimdi ekran kartı kullanabiliyorum şu anda. Eğitim biraz uzun sürüyor hocam. Sebebini bilmiyorum.
+
+633
+02:01:13,880 --> 02:01:17,760
+Evet çalıştırma. Eğitim her şekilde uzun sürecektir.
+
+634
+02:01:18,340 --> 02:01:29,320
+Bu transform metodu, bu bahsettiğimiz random rotation'dan maksimum 20 derece olacak şekilde random olarak rotasyonlar yapıyor, döndürüyor.
+
+635
+02:01:33,235 --> 02:01:39,936
+Training şeyini çağırıyoruz, test setini çağırıyoruz. Eğer training true ise training setini çağırıyor, false ise test setini çağırıyor.
+
+636
+02:01:41,195 --> 02:01:51,195
+Batch size'ımız 120. Bu da data loader'da PyTorch'un bir veriyi teker teker değil de batch batch eğitime sokmak için kullandığı bir fonksiyon.
+
+637
+02:01:52,016 --> 02:01:54,916
+120 işte örneği training setimiz.
+
+638
+02:01:55,572 --> 02:02:07,492
+60.000 ise, 60.000'da 120 adet fotoğrafı tek seferde veriyor. Kernel size'ları da hangi modelin kullanacağını belirtmek için kullanılıyor.
+
+639
+02:02:12,072 --> 02:02:16,492
+Daha sonrasında parametreleri belirliyoruz. Modelin içeride vereceğimiz parametreleri.
+
+640
+02:02:17,771 --> 02:02:21,492
+İşte dikey olsun, optimizer ne olacak, ondan sonra...
+
+641
+02:02:22,131 --> 02:02:48,751
+Learning Rate'i arttırmak ve düşürmek için. Daha sonrasında da modeli eğitiyoruz. Her bir batch için training loader'dan veri çekiyor. Daha sonrasında bunları biz dediğim gibi GPU kullanıyoruz. Onun için Torch'u tensor haline çeviriyor. Sonra Gradient'i sıfırlıyor Optimizer'da.
+
+642
+02:02:49,492 --> 02:02:56,832
+Daha sonrasında modele veriyor ve output alıyor. Her bir batchte. Sonrasında da loss'ı hesaplıyoruz.
+
+643
+02:02:59,032 --> 02:03:00,931
+Loss fonksiyonunu hesaplıyoruz.
+
+644
+02:03:04,952 --> 02:03:12,391
+Sonrasında da bizim prediction'ımız ve aslındaki değerle arasındaki farkı alarak training loss'unu hesaplıyoruz.
+
+645
+02:03:13,952 --> 02:03:16,091
+Sonrasında işlem tekrar tekrar devam ediyor.
+
+646
+02:03:18,323 --> 02:03:38,003
+Bu şey mi? Batch index. Yani batch batch loss alıyor değil mi? Evet hocam. Yani bin tane batch ise, şuradaki loss bin tanenin loss değil mi? Evet. Sonra optimizer step yapıyor.
+
+647
+02:03:48,532 --> 02:04:06,532
+Evet, tamam. Sonrasında hepsi bittikten sonra tekrar training setinde loss ve accuracy hesaplanıyor. Şu şeyi ne yaptı? Train loss eşittir. Train loader dataset bölü diyor. Train loss'u neden böldü?
+
+648
+02:04:08,532 --> 02:04:11,992
+Şimdi hocam, burada train loss hiçbir zaman sıfırlanmıyor.
+
+649
+02:04:12,979 --> 02:04:35,699
+Sürekli olarak her bir loss geldiğinde üzerine eklendiği için bizde de her bir şeyin total loss hesaplanmış oluyor. En sonunda da dataset'in tamamına bölüyoruz ki loss direkt olarak ortaya çıksın. Yoksa kümülatif loss ortaya çıkar. Kümülatif loss elde etmemek için, genel loss elde etmek için.
+
+650
+02:04:36,180 --> 02:04:40,939
+Loss'u niye sıfırlanıyor ki? Her batch için loss'u sıfırlaması gerekmiyor mu?
+
+651
+02:04:43,279 --> 02:04:50,079
+Yani dediğiniz gibi ben de normalde her batch'te sıfırlıyorum ama burada sıfırlamamış. Bu şekilde yapmış.
+
+652
+02:04:50,079 --> 02:04:50,659
+Evet.
+
+653
+02:04:52,099 --> 02:04:59,220
+Daha sonrasında da şu Torch with no grad'de gradiyanti.
+
+654
+02:04:59,891 --> 02:05:05,471
+Gradiyent olmadan işlem yapmak için, bir öncekini hesapta tutmadan işlem yapmak için yapılıyor.
+
+655
+02:05:07,711 --> 02:05:15,291
+Teker teker test ediyoruz ve test şeyinde sonucun ne olduğunu yazdırıyoruz.
+
+656
+02:05:16,851 --> 02:05:20,131
+Çok benzer işler olduğu için şey yapmıyorum.
+
+657
+02:05:22,271 --> 02:05:25,547
+Eğer ki bu elimizdeki model...
+
+658
+02:05:25,716 --> 02:05:31,036
+Şu anki modelden küçükse, ekür sesi düşükse, sadece o modeli kaydediyor.
+
+659
+02:05:33,576 --> 02:05:42,536
+Sonuç olarak da test setinin ekür sesini yazdırıyor. En yüksek sonucu olanı da dosya olarak kaydediyor.
+
+660
+02:05:44,676 --> 02:05:52,536
+Burada da yine aynı şekilde aşağıdaki şeyin, aşağıda gördüğümüz şeyin, training de aşağıda gördüğümüz şeyin aynısını...
+
+661
+02:05:54,292 --> 02:06:14,391
+Var mı? Bize rastladın mı? O confidence intervali nasıl hesaplıyor? Confidence range'i var mı? Yok hocam. Yok böyle bir şey yok. Tamam. Ben tekil deneme yapmak istedim ama tekil denemede fotoğraf tipi Torch'da farklı olduğu için hata verdi.
+
+662
+02:06:18,420 --> 02:06:35,399
+Tekil deneme, az önce yaptım hata verdi. Yani şey olarak örneğin digit 7 gözüküyor ama 2 yazıyor, 3 gözüküyor ama 5 yazıyor. Belki ben veri setini TensorFlow'dan indirdim binariden direkt çevirmemek için. Belki onunla alakalı bir kerasdan indirdim. Bu şekilde.
+
+663
+02:06:35,399 --> 02:06:38,399
+Peki, bugün...
+
+664
+02:06:38,644 --> 02:06:51,083
+Dört kişi sundu değil mi? [öğrenci] [öğrenci], [öğrenci], [öğrenci], [öğrenci]. Not almayı unuttuğum birisi var mı? [öğrenci] da sundu değil mi?
+
+665
+02:06:52,963 --> 02:06:57,163
+Evet hocam, ben de sundum. Zaten yazmışım. Başka yok.
+
+666
+02:06:59,203 --> 02:07:02,024
+Hocam ben de sunabilirim aslında. İsmim [öğrenci].
+
+667
+02:07:02,564 --> 02:07:03,984
+Tamam, sen de sunabilirim.
+
+668
+02:07:04,851 --> 02:07:06,492
+Hocam ben ekranımı kapatayım mı?
+
+669
+02:07:06,612 --> 02:07:08,072
+Kapat. Teşekkür ediyorum.
+
+670
+02:07:08,471 --> 02:07:09,271
+Ben teşekkür ederim.
+
+671
+02:07:14,292 --> 02:07:15,891
+Ekranım görünüyor mu şu anda?
+
+672
+02:07:25,011 --> 02:07:26,091
+Duyabiliyor musunuz?
+
+673
+02:07:27,032 --> 02:07:27,711
+Duyabiliyorum.
+
+674
+02:07:27,711 --> 02:07:28,952
+Tamam.
+
+675
+02:07:32,511 --> 02:07:50,635
+Ben de hocam, OCR Free Document Understanding Transformer diye bir projeyi paper inceledim. Bunların önerdiği yöntem Optical Character Recognition yöntemini kullanmadan dokümandaki bilgileri okuyup anlamaya yönelik bir...
+
+676
+02:07:51,060 --> 02:08:02,580
+Altyapı kurmaya çalışmışlar. Göreci olarak yeni bir makale Ekim ayında sanırım, Ekim 2022'de sunulmuş.
+
+677
+02:08:13,108 --> 02:08:14,568
+Slide'larını kullandım.
+
+678
+02:08:14,988 --> 02:08:17,768
+Burada sadece akışı göstermek istedim.
+
+679
+02:08:18,208 --> 02:08:20,387
+Paper presentation'ı yapacağım.
+
+680
+02:08:20,547 --> 02:08:26,068
+Demoyu göstereceğim ve referanslardan ve soru cevaplardan ilerleyeceğiz.
+
+681
+02:08:26,728 --> 02:08:28,768
+Presentation'ımız şurada.
+
+682
+02:08:35,572 --> 02:08:49,572
+Givik Kim ve arkadaşları birlikte hazırlamışlar bunu. Naver diye bir şirket var. Onların research lablarında çalışmışlar bu proje için.
+
+683
+02:08:49,572 --> 02:09:01,572
+Ve Tel Aviv'de Ekim ayında sunulmuş paperımız. Avrupa Konferansı Computer Vision'da sunulmuş Tevati Tel Aviv'de.
+
+684
+02:09:01,811 --> 02:09:17,271
+İçeriğinde background ve motivasyon var. Neden bu işe girişmişler? Document Understanding Transformer ana projeleri öne sürdükleri eksperimentler ve analizleri var. Sonunda da Conclusion kısmı var.
+
+685
+02:09:28,000 --> 02:09:30,560
+anlamlı bilgiler elde etmeye çalışıyoruz.
+
+686
+02:09:30,560 --> 02:09:31,560
+Bu,
+
+687
+02:09:31,560 --> 02:09:34,000
+document classification olabilir.
+
+688
+02:09:34,000 --> 02:09:37,079
+Veya, dokümenti tamamen parse edip
+
+689
+02:09:37,079 --> 02:09:41,359
+o doküman içerisindeki tüm bilgileri almak olabilir.
+
+690
+02:09:41,359 --> 02:09:46,239
+Bunu yaparken, conventional, geleneksel yöntemlerde
+
+691
+02:09:46,239 --> 02:09:50,079
+input'tan output elde ederken birçok yöntem
+
+692
+02:09:50,195 --> 02:09:53,956
+processing işlemlerinden geçirmemiz gerekiyor.
+
+693
+02:09:53,956 --> 02:09:56,435
+İlk başta detection uyguluyoruz.
+
+694
+02:09:56,435 --> 02:09:59,435
+Sonrasında recognition yapıyoruz.
+
+695
+02:09:59,435 --> 02:10:06,076
+Bunların tamamına OCR işlemi olarak, adımları olarak değerlendirebiliriz.
+
+696
+02:10:06,076 --> 02:10:12,275
+Sonrasında da parsing yaparak anlamlı datayı sonucu elde ediyoruz.
+
+697
+02:10:12,595 --> 02:10:29,235
+Süreç normalde OCR işleminde bir OCR engine ile yapılıyor, Off the shelf hazır bulunan. Transformer Backbone ile de çevriliyor. Bizim anlayacağımız, istediğimiz sonucu çevriliyor.
+
+698
+02:10:29,235 --> 02:10:36,435
+Burada şu kısımlardan biraz bahsedilmiş.
+
+699
+02:10:39,347 --> 02:10:43,147
+İşlem başlangıçtan sona şu şekilde ilerliyor.
+
+700
+02:10:45,627 --> 02:11:02,027
+Burada bunun en önemli dezavantajı yüksek bir computational cost oluşması ve OCR'ın language ve doküman tipine göre esnek olmaması.
+
+701
+02:11:02,515 --> 02:11:14,715
+El yazısı dokümanları vesaireyi tespit ederken biraz hatalı sonuçlar üretiyor olması. Bir de OCR'ın error yayılımının da kötü olmasından bahsediyorlar.
+
+702
+02:11:14,715 --> 02:11:25,315
+Sundukları ve geliştirdikleri yöntem Donut End-to-End model. Bu tüm süreci kapsayan bir model olarak sunuyorlar.
+
+703
+02:11:26,228 --> 02:11:32,228
+İkisini karşılaştırmak gerekirse OCR engine çıkışında Backbone var.
+
+704
+02:11:32,228 --> 02:11:40,228
+Donut'ta ise Entend model aslında her şeyi yaparak Token Sequence ile Output'u oluşturuyor.
+
+705
+02:11:41,228 --> 02:11:53,228
+Burada biraz Overview'den bahsedilmiş. İçeride bulunan Transformer Encoder küçük kümeler halinde teksti parçalıyor.
+
+706
+02:11:53,247 --> 02:12:02,547
+Transformer Decoder ile birlikte çalışarak Classification'ı gerçekleştiriyor ve Classification sonuçlarını oluşturuyor.
+
+707
+02:12:02,547 --> 02:12:10,347
+Sonuçları da en son istenilen formattaki JSON datasına çeviriyorlar.
+
+708
+02:12:10,347 --> 02:12:20,747
+Pre-training yapmak gerekiyor burada. Pre-training yaparken sol üstten başlayıp sağ alta kadar dataları
+
+709
+02:12:20,884 --> 02:12:23,323
+alıp modele veriyorlar.
+
+710
+02:12:25,823 --> 02:12:27,543
+Burada teacher forcing
+
+711
+02:12:27,543 --> 02:12:29,663
+şema diye bir durumdan
+
+712
+02:12:29,663 --> 02:12:31,363
+bahsetmiş. Bu kısmı çok
+
+713
+02:12:31,363 --> 02:12:32,724
+şey yapamadım,
+
+714
+02:12:33,144 --> 02:12:34,724
+anlayamadım. Ve
+
+715
+02:12:34,724 --> 02:12:37,644
+burada synthetic document generator
+
+716
+02:12:37,644 --> 02:12:39,444
+diye bir yan
+
+717
+02:12:39,444 --> 02:12:41,904
+proje geliştirmek durumunda kalmışlar.
+
+718
+02:12:42,444 --> 02:12:43,684
+Dillerin çeşitliliği
+
+719
+02:12:43,684 --> 02:12:45,844
+ve veri setlerinin
+
+720
+02:12:46,515 --> 02:12:54,975
+Çeşitliliği için normalde bu dataların hepsini toplayıp bir model olarak sunmak gerekiyor train ederken.
+
+721
+02:12:54,975 --> 02:13:07,355
+Bunu otomatik bir şekilde yapmak için kendileri bir sentetik dokümanı generalite eden bir projede gerçekleştirmişler bu makaleyi yayınlamak, oluşturmak için.
+
+722
+02:13:07,355 --> 02:13:11,355
+Farklı dillerden farklı şeyler.
+
+723
+02:13:11,667 --> 02:13:33,667
+Yazılar generate edip bu yazıların ekürisini kendi danıtlarıyla da check ederek ne kadar % ile doğru bir şekilde sonucu oluşturabildiklerini kolay bir şekilde bulmuşlar.
+
+724
+02:13:37,536 --> 02:13:40,855
+Tasktaki nasıl okuduğundan bahsediliyor.
+
+725
+02:13:42,136 --> 02:13:45,975
+Finetuning nasıl yapıldığından biraz bahsetmişler.
+
+726
+02:13:46,235 --> 02:13:50,855
+Buraları çok detaylandırmayacağım. Çünkü çok uzun sürecek.
+
+727
+02:13:51,096 --> 02:13:55,716
+Kullandıkları Sample Downstream Datasetleri de
+
+728
+02:13:56,216 --> 02:13:58,536
+bu şekildeymiş. Handwritten Form
+
+729
+02:13:59,036 --> 02:14:01,855
+ve Receipt gibi farklı şeyler.
+
+730
+02:14:02,228 --> 02:14:16,828
+okuyup bunları anlamlandırmaya çalışmışlar. Burada classification kısmında form ve handwritten verinin ikisinin de classification'ın yapılabildiğinden bahsediliyor.
+
+731
+02:14:16,828 --> 02:14:21,228
+Donut'un propos edilen yöntemin diğerlerinden.
+
+732
+02:14:23,604 --> 02:14:30,003
+Veri setleri açık veri setleri mi? Kullandıkları veri setleri?
+
+733
+02:14:30,003 --> 02:14:42,284
+Aslında Colab'dan bir proje paylaşmışlar. Veri seti otomatik olarak geliyor. O veri setiyle train ediyorlar.
+
+734
+02:14:42,284 --> 02:14:46,524
+Dolayısıyla açık veri setleri kullanabiliyoruz.
+
+735
+02:14:48,627 --> 02:14:59,667
+Burada daha hızlı çalıştığından bahsedilmiş ve eküresisi diğer modellerden daha yüksek olmuş.
+
+736
+02:15:01,332 --> 02:15:25,012
+Şu şekilde bir Received'i şöyle pars ederek bunun içerisindeki dataları almışlar. Şu kısımları kontekst olarak dahil ediyorlar. Yani düşünüyorlar. Buraları almayıp şu kısma odaklanmışlar. Buraları blurlaştırmışlar okunmasın, anlamı bozulmasın diye.
+
+737
+02:15:26,707 --> 02:15:46,167
+Burada da doküment parsing nasıl yapıldığını ve diğerlerine göre, Corda, Ticket, Business Card ve Receipt'te diğer yöntemlere göre nasıl farklılaştığını gösteriyor. Burada da daha iyi sonuçlar elde ettiklerini söylemişler.
+
+738
+02:15:52,340 --> 02:16:13,340
+Business Expense O Dokümandan nasıl çıkarıldığını göstermişler. Burada da yine diğer yöntemlerle daha iyi çalıştığını söylüyorlar. Bir de Handwritten Dokümansı da denemişler bunu.
+
+739
+02:16:17,619 --> 02:16:29,939
+Daha doğru sonuçları elde etmişler. Şurada J Darby şeklinde yazıyor. Layout Elem J Jari olarak okumuş bu Handwritten dökümanı.
+
+740
+02:16:29,939 --> 02:16:40,939
+Danut ise doğru cevabı vermiş. Şu kısımdaki 6'yı da telefon numarasını da Layout yanlış okurken, 4 olarak okurken.
+
+741
+02:16:41,747 --> 02:16:46,108
+Bizim Danut'ımız doğru bir şekilde okumuş.
+
+742
+02:16:46,868 --> 02:16:49,167
+Birtakım analizler paylaşmışlar.
+
+743
+02:16:49,167 --> 02:16:52,247
+Kısmana değinmeyeceğim bunların.
+
+744
+02:16:55,827 --> 02:17:02,227
+Göstermek istediğim OCR Engine ile karşılaştırılmış, analiz edilmiş.
+
+745
+02:17:02,227 --> 02:17:03,247
+Burada...
+
+746
+02:17:03,891 --> 02:17:29,891
+Dunnett, Accuracy olarak OCR Enginelerinden, bunlar Publicly Available OCR Engineler, Clovera, MS Azure, Pedal, Easy OCR. Bunları kullanarak herhangi bir Optical Character Recognition işlemini kendimizde gerçekleştirebiliriz. Commercial of the Shell, hatta Open Source'lar. Dunnett %90 olarak daha iyi bir Accuracy'de.
+
+747
+02:17:30,515 --> 02:17:38,956
+Sonuç oluşturmuş. Time olarak da, Donut biraz daha kısa sürmüş diğerlerine göre tespit süresi olarak.
+
+748
+02:17:38,956 --> 02:17:44,335
+Yine iki özellikle de Time orcresi olarak daha iyi olduklarını söylüyorlar.
+
+749
+02:17:47,416 --> 02:17:55,095
+Conclusion olarak da şu şekilde yine OCR yöntemiyle yapıldığında Backbone...
+
+750
+02:17:55,247 --> 02:18:04,968
+Dirt kullanılarak output'un elde edildiğini. Danut'ta da uçtan uca bir model tasarlanıp o modelle output'un oluşturulduğundan bahsedilmiş.
+
+751
+02:18:07,527 --> 02:18:15,207
+Ve Structured Output'u otomatik olarak kendisinin oluşturduğundan bahsediliyor.
+
+752
+02:18:15,731 --> 02:18:29,371
+Easily train edilebildiğinden ve hoştan özel bir yöntem olduğundan bahsedilmiş ve proje gerçekleştirilirken Synthetik Tok diye de bir ara ürün oluşturduklarını söylüyorlar.
+
+753
+02:18:29,772 --> 02:18:35,072
+Cost efektif olduğunu ve high performance olduğunu söylüyorlar.
+
+754
+02:18:36,231 --> 02:18:40,652
+Sunumları bu kadar. Şimdi demo kısmına gelecek olursak.
+
+755
+02:18:42,963 --> 02:18:52,603
+Bir daha [öğrenci], kullandıkları sistemi nerede açıklıyorlar? Onu bir daha gösterebilir misin şamasını?
+
+756
+02:19:08,435 --> 02:19:31,135
+Evet. Burada Transformer Encoder. Sanırım bu hazır, retrained bir encoder. Transfer Learning var sanırım. Transformer Encoder ve Decoder'da. Öyle mi? Yani hangi kısmını hazır almışlar, kendileri neyi eğitiyor?
+
+757
+02:19:33,620 --> 02:19:46,159
+Swint Transformer ve BART kullanmışlar. Enkoder ve decoder olarak. Bunlar da detaylı manuscript'te bulunabilir diye söylemişler.
+
+758
+02:19:50,780 --> 02:19:57,880
+Zaten output sekansı XML gibi. Onu zaten JSON'a böldürmekte bir şey olmaması lazım.
+
+759
+02:19:58,680 --> 02:19:58,880
+Evet.
+
+760
+02:20:00,000 --> 02:20:13,819
+Şurada söylemişler ama hızlı olsun diye çok şey yapmadım. Burada examen olarak bir sonuç elde ediliyor. Şu şekilde name, price ve count bilgisini JSON'a çeviriyorlar.
+
+761
+02:20:22,611 --> 02:20:30,611
+Minimized Cross Entropy. Cross Entropy loss fonksiyonu kullanmışlar. Bu yine derste gördüğümüz loss fonksiyonu.
+
+762
+02:20:32,611 --> 02:20:44,611
+Dekoder outputlar, distributions diyor. Input tokens. Token classification at each step diyor. Inference'da.
+
+763
+02:20:44,611 --> 02:20:46,871
+Dekoder.
+
+764
+02:20:49,332 --> 02:21:06,211
+Parsing'i başlangıç diye düşünebilirsin. Ne yapıyor? ITEM'i oluşturuyor. ITEM'i veriyor, bu sefer NAME'i oluşturuyor. NAME'i veriyor, 80.002'yi oluşturuyor. Bu biraz şeylerin çalışma mantığı.
+
+765
+02:21:10,211 --> 02:21:14,252
+Recurrent Neural Networkler var, LSTM gibi.
+
+766
+02:21:16,703 --> 02:21:37,724
+Tekst oluşturmada çok kullanılan networkler bunlar. Natural Language Processing'de. Network'e bir harfi veriyorsun, bir sonraki harfi veriyor. O çıktığın harfi tekrar veriyorsun, bir sonraki harfi veriyor. Bu şekilde kocaman bir doküman oluşturabiliyorsun.
+
+767
+02:21:37,724 --> 02:21:40,724
+Onların şu tarzı bir şeyi kullanmışlar.
+
+768
+02:21:44,308 --> 02:21:47,888
+Bu dokümanı anlamayın diye bir yerde ben onu incelemiştim de.
+
+769
+02:21:55,443 --> 02:22:02,443
+Göremedim şu anda. Bir yerde söylediğiniz gibi, öncekini ve sonrakini oluşturduğunu gösteren bir şey var.
+
+770
+02:22:02,443 --> 02:22:06,443
+Tamam, koda bakalım ne yapmışlar?
+
+771
+02:22:06,443 --> 02:22:12,443
+Bir demo olarak onu gösterebilirim.
+
+772
+02:22:12,443 --> 02:22:16,395
+Şöyle...
+
+773
+02:22:18,484 --> 02:22:26,924
+Şurada farklı farklı konular için train edilmiş demoların collab versiyonları var.
+
+774
+02:22:26,924 --> 02:22:30,524
+Biz şu anda şunu kullanıyoruz.
+
+775
+02:22:33,084 --> 02:22:37,524
+Gradio diye bir platform varmış.
+
+776
+02:22:37,524 --> 02:22:42,283
+Interface platformu. Onu kullanarak ön yüzünü tasarlamışlar.
+
+777
+02:22:42,283 --> 02:22:45,684
+Donald Python diye bir şey çevirmişler.
+
+778
+02:22:46,260 --> 02:22:49,939
+PIP modülüne çevirmişler. Onu install ediyoruz.
+
+779
+02:22:49,939 --> 02:22:54,579
+Sonrasında da, şurada,
+
+780
+02:22:54,579 --> 02:22:58,739
+İnterfays oluşturan kısım şurası.
+
+781
+02:22:58,739 --> 02:23:01,060
+İnterfays oluşuyor.
+
+782
+02:23:01,060 --> 02:23:06,899
+Modeli, şuradan, pre-trained modelden alıp,
+
+783
+02:23:06,899 --> 02:23:11,540
+eğer şurada varsa, onunla Evaluation yapıyor.
+
+784
+02:23:11,540 --> 02:23:12,500
+Yoksa da,
+
+785
+02:23:13,139 --> 02:23:15,459
+Farklı bir şekilde evaluation'ı yapıyor.
+
+786
+02:23:17,860 --> 02:23:23,459
+Açıkçası kod biraz kalabalıktı ben. Repoyu da şey yaptım, indirdim.
+
+787
+02:23:23,899 --> 02:23:26,700
+Burada çok şeye odaklanmadım.
+
+788
+02:23:27,979 --> 02:23:30,379
+Tüm modelleri incelemeye odaklanmadım.
+
+789
+02:23:30,379 --> 02:23:34,059
+Synthetik top ile alakalı dokümanlar da var.
+
+790
+02:23:34,420 --> 02:23:37,899
+Genel çalışma yapısını biraz inceleme fırsatı buldum.
+
+791
+02:23:38,804 --> 02:23:50,804
+Şeyi de göstereyim. Nasıl çalıştığına bakabiliriz. A101'den alınmış bir fişi mesela koyduğumda.
+
+792
+02:23:58,420 --> 02:24:21,680
+Fişimiz şu şekilde. Burada cezarya, fıstık, kaju, cezarya, ceviz içi, badem içi ve benzeri şeyler var. İndirim tutarlar var. Şurada toplam tutarı ve kredi kartı bilgileri var. Aldığı dokümanı bu şekilde işliyor. Şuralar blurlaştırılmadığı için buralarda bir takım bilgiler olarak.
+
+793
+02:24:22,131 --> 02:24:25,811
+Sanki şeymiş gibi, resipin bir parçasıymış gibi.
+
+794
+02:24:25,851 --> 02:24:39,412
+Buralar biraz şeye giriyor herhalde, özel bilgi ya, adres var, belki numarası var adamın, satıcının. O yüzden onları blur etmişler eğitim sitinde sanırım.
+
+795
+02:24:40,311 --> 02:24:49,131
+Evet, o da evet. Hem onun için hem de bu şey değil. Şu structure'a pek uygun data değil. O yüzden biraz...
+
+796
+02:24:49,299 --> 02:24:54,639
+Yanlış çalışıyor burada. Train etmesi zor. Özel bir şey yani.
+
+797
+02:24:55,379 --> 02:24:59,579
+Mesela benim ilgisi Şerezya Ahfist onu bulmuş mu?
+
+798
+02:25:00,840 --> 02:25:01,619
+Kaju olalım.
+
+799
+02:25:02,000 --> 02:25:03,340
+Kaju'lardan başlıyor.
+
+800
+02:25:03,520 --> 02:25:04,579
+Kaju'lardan başlamış.
+
+801
+02:25:04,599 --> 02:25:10,099
+Gerçi onu bulmuş da hiç okuyamamış. Yukarıdaki sıfırıncısı o galiba değil mi?
+
+802
+02:25:11,059 --> 02:25:12,939
+Sıfırın içine dahil olabilir.
+
+803
+02:25:14,291 --> 02:25:22,492
+Şurası Fishnows'unu Price olarak bulmuş. Nam olarak tarihi bulmuş. Bu satırı şey olarak görmüş.
+
+804
+02:25:24,011 --> 02:25:33,351
+Evet, Kaju'dan başlamış. Çeyi tanımadığı için maalesef. Alışveriş poşeti. Evet, ondan olabilir.
+
+805
+02:25:33,351 --> 02:25:40,511
+Veri setinde yoksa Ç. Oradan orayı atlamış olabilir yani.
+
+806
+02:25:41,492 --> 02:25:44,912
+Evet. Ama burada da Ceresya yapmış.
+
+807
+02:25:45,452 --> 02:25:46,172
+Kajukça.
+
+808
+02:25:46,952 --> 02:25:48,871
+Evet, C olarak tanımış.
+
+809
+02:25:50,672 --> 02:25:57,152
+İç içe niye göstermiş? İkinin içinde bir iç daha vermiş. O C son yapısıyla ilgili herhalde de.
+
+810
+02:25:57,691 --> 02:25:58,112
+Evet.
+
+811
+02:25:58,899 --> 02:26:09,719
+Yani iç yapıyı oluşturmaya çalışmış değil mi? Yani bunun içinde bu var, bunun içinde bu var gibi. Dokümanın structure yapısını oluşturmaya çalışmış Jason'dan.
+
+812
+02:26:09,719 --> 02:26:19,399
+Evet, şöyle satır gibi alıp bir ona bakıyor. Ondan sonra onun içerisinde hangi bölümler var? Onları içine yerleştiriyor. O şekilde iç içe girerek.
+
+813
+02:26:19,879 --> 02:26:21,079
+Tabii çok zor bir kral.
+
+814
+02:26:21,819 --> 02:26:23,779
+Evet, price'a kadar ilerliyor.
+
+815
+02:26:24,724 --> 02:26:36,623
+Daha doğru çalıştığını söylüyorlar. Projede yeni. Şu ana kadar 1000 kişi de starlamış. Bayağı bir görünür bir proje haline gelecek gibi görünüyor.
+
+816
+02:26:38,763 --> 02:26:49,984
+2022'de sunmuşlar. Yeni bir şey yani. Genel olarak bu şekilde çok detaylarımda girmedim hocam. Onu da söylemiş bulunayım.
+
+817
+02:26:50,708 --> 02:26:52,448
+Peki, tamam. Teşekkür ediyorum.
+
+818
+02:26:52,968 --> 02:26:53,708
+Rica ederim.
+
+819
+02:26:55,028 --> 02:26:56,247
+[öğrenci].
+
+820
+02:26:56,907 --> 02:26:57,247
+Evet.
+
+821
+02:26:58,328 --> 02:27:01,268
+Sen de beşinci kişi oluyorsun, sunum yapmış olan.
+
+822
+02:27:02,868 --> 02:27:03,228
+Evet.
+
+823
+02:27:07,603 --> 02:27:33,023
+Peki, bu haftayı böyle bitirelim. Beş kişiye sunumlarını yaptı. Bir hafta daha yetiştiremeyenler için vakit vereceğim. Ama 20 puan onlardan keseceğim. Normalde bugün son yükleme zamanıydı. O son yükleme zamanını bir hafta uzatıyorum.
+
+824
+02:27:33,940 --> 02:27:54,560
+Ama gelecek dersten önce yüklenebilecek ama o kişiler, bugünden sonra yükleyenler yani 20 puan eksik toplam puandan o şekilde ceza almış olacaklar arkadaşlar.
+
+825
+02:27:56,380 --> 02:27:57,780
+Haftaya görüşürüz öyleyse.
+
+826
+02:27:58,208 --> 02:28:05,468
+Hocam bir şey sorabilir miyim? Ben sunumumu yüklememiştim ama sadece kodu ve pdf dosyasını yükledim makaleye.
+
+827
+02:28:06,168 --> 02:28:08,308
+Anladım. Sunumunu yükle şimdi.
+
+828
+02:28:10,028 --> 02:28:10,328
+Tamam.
+
+829
+02:28:11,008 --> 02:28:15,048
+Sen yani zaten zamanında yaptın şeyini, kodunu da yüklediysen.
+
+830
+02:28:15,448 --> 02:28:19,228
+Evet, sen bugün yükle hemen. Onu o şekilde kabul ederim.
+
+831
+02:28:19,228 --> 02:28:20,208
+Tamamdır hocam.
+
+832
+02:28:27,412 --> 02:28:30,752
+Peki, haftaya görüşürüz arkadaşlar. Var mı konuşacağımız bir şey?
+
+833
+02:28:32,312 --> 02:28:33,132
+Yok hocam.
+
+834
+02:28:36,492 --> 02:28:37,992
+Sağ olun hocam, teşekkürler.
+
+835
+02:28:38,112 --> 02:28:39,352
+Peki, iyi günler.
+
+836
+02:28:39,592 --> 02:28:40,832
+İyi günler hocam, kolay gelsin.
+
+837
+02:28:41,192 --> 02:28:41,551
+İyi günler.
+
+838
+02:28:41,551 --> 02:28:42,032
+Görüşürüz.

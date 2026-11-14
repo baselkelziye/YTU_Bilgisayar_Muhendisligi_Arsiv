@@ -1,0 +1,2235 @@
+1
+00:01:35,987 --> 00:01:55,408
+Arkadaşlar, şu an benim sesimi duyabiliyorlar mı? Evet hocam, duyabiliyoruz. Evet hocam. Tamam. Şu an sınıftayız. Ben biraz arka planı atıp dersi anlatacağım. Bir problem olursa mesaj atabilirsiniz.
+
+2
+00:02:12,276 --> 00:02:14,276
+Yer anayim yapıyorsak...
+
+3
+00:02:15,276 --> 00:02:18,276
+...böyle açalım.
+
+4
+00:02:27,348 --> 00:02:29,748
+Ekran paylaşımım geldi mi?
+
+5
+00:02:31,188 --> 00:02:32,608
+Geldi hocam.
+
+6
+00:02:33,388 --> 00:02:35,908
+Tamam. Tam ekran değil mi?
+
+7
+00:02:39,412 --> 00:02:42,211
+Slide'lar görünüyor sol tarafta.
+
+8
+00:02:42,231 --> 00:02:43,092
+Tam ekran değil mi?
+
+9
+00:02:47,572 --> 00:03:07,152
+Sayfa değiştiriyorum. Görünüyor mu? Hayır hocam görünmüyor. Şu an slide'ın en başında kaldı. Anladım. Tamam, şimdi geldi hocam. Şimdi geldi. Introduction bölümündesiniz herhalde.
+
+10
+00:03:32,051 --> 00:03:34,411
+Tam ekran oldu mu? Yok, daha on kısa.
+
+11
+00:03:43,316 --> 00:03:52,115
+Işıkları, ola. Tam ekran oldu mu? Oldu hocam. Oldu, tamam.
+
+12
+00:03:57,556 --> 00:03:59,340
+İyi mi böyle?
+
+13
+00:04:56,115 --> 00:05:01,495
+Şimdi sevgili arkadaşlar, yavaş yavaş.
+
+14
+00:05:08,531 --> 00:05:19,971
+Birinci konu başlığı 2D Transformation.
+
+15
+00:05:26,036 --> 00:05:39,036
+Scaling, Rotation, Translation, Warcraft gibi işlemlerin tamamını transformation deniyor. Yani geri çekip, dönüştürme işlemi yapıyoruz.
+
+16
+00:05:39,315 --> 00:05:55,691
+Bu işlemleri ben iki boyutta anlatacağım ama üç boyuta adapte etmek zor değil. Eğer buradaki mantığı anlarsanız, üç boyutlu XZ uzunluğu için de yapabiliriz. Bizim yapacağımız işlemler Bilgisayar Mühendisliği olacak.
+
+17
+00:05:56,692 --> 00:06:13,471
+Buradaki temel matematikten bahsedeceğim. Ama o matematiği ezbere vermek yerine nasıl çıkarılacağını anlatmaya çalışacağım ki güç boyuta rahat adapte edebilelim. Amaç bu.
+
+18
+00:06:15,612 --> 00:06:24,252
+Şimdi neden ihtiyacımız var bu işe? Biraz ondan da başlayalım.
+
+19
+00:06:25,524 --> 00:06:38,464
+İhtiyaç şuradan doğuyor. Elimizde bir nesnenin bir fotoğrafı, bir model çizimi dediğimiz bir çizim var.
+
+20
+00:06:38,984 --> 00:06:44,604
+Bir de üretim bandı gibi bir ortamda kamerayla alınmış görüntüsü var.
+
+21
+00:06:50,355 --> 00:06:58,415
+Üretilmiş bir parçanın görüntüsünü takip ederken aslında nesnenin neye benzediğini biliyorsunuz.
+
+22
+00:06:59,076 --> 00:07:01,816
+Çünkü orijinal model var elinizde.
+
+23
+00:07:02,956 --> 00:07:12,895
+Görüntülediğiniz kameradan, görüntülediğiniz görüntü ile oradan aldığınız nesne görüntüsü ile model arasında bir ilişki kurma ihtiyacı duyuyoruz.
+
+24
+00:07:13,015 --> 00:07:15,456
+Buna neden ihtiyaç var? Tekrar oraya göreceğim.
+
+25
+00:07:16,148 --> 00:07:25,888
+Şöyle düşünebilirsiniz, ürettiğiniz parçayı bir robot koyu gelecek ve belli bir bölgesinden kavrayıp onu alıp bir yere koyacak.
+
+26
+00:07:26,528 --> 00:07:34,987
+Ve bunun nereden tutması gerektiğini, kavrama için uygun bölümlerin neresi olduğunu siz öğretiyorsunuz.
+
+27
+00:07:35,008 --> 00:07:41,208
+Çünkü modelde biliyorsunuz, şu bölgeden bu cismi tutup bir yerden bir yere taşıyabilirim.
+
+28
+00:07:42,067 --> 00:07:57,268
+O yüzden bizim buradaki amacımız, imicileme parasında, o ilişki kurabilmek, imicileme parasında, bir gen other image olabilir.
+
+29
+00:07:57,268 --> 00:07:59,268
+İslatları görüntüdür.
+
+30
+00:07:59,268 --> 00:08:07,231
+Çekilmiştir. Nesnenin prototip bir işi üretilmiştir mesela. Onunla yine bir bant üzerindeki...
+
+31
+00:08:07,232 --> 00:08:13,651
+Nesne için 13.11.
+
+32
+00:08:28,019 --> 00:08:29,319
+Slaikşul yapmadan.
+
+33
+00:08:44,403 --> 00:08:55,963
+Bu dönüştürme işlemini yapabilmek için bu transformation işlemlerini, affine transformation diyoruz, bunları kullanma ihtiyacımız var.
+
+34
+00:09:01,491 --> 00:09:02,491
+Bu arada
+
+35
+00:09:10,611 --> 00:09:11,500
+Teşekkürler.
+
+36
+00:09:14,932 --> 00:09:18,152
+Sol taraftaki görüntüde işaret...
+
+37
+00:09:21,971 --> 00:09:32,412
+Hangi köşe olduğunu eşleştirebilmem gerek yok.
+
+38
+00:09:32,412 --> 00:09:38,451
+Burada gördüğümüz şekilde bu şeyi dönüşümü yapabilmem lazım.
+
+39
+00:09:38,451 --> 00:09:48,371
+Yani bunu şöyle demiş, sağ taraflı bir formüle bakacak olursanız, bir kişiye görüntüsü var.
+
+40
+00:09:48,500 --> 00:09:57,500
+Bunun üzerinde, yani image üzerinde transformation gerçekleştiriyor ve bu dönüşü.
+
+41
+00:09:57,500 --> 00:10:03,500
+Bu şekilde gözükmüyor.
+
+42
+00:10:03,500 --> 00:10:10,500
+Bu dönüşü. İşte sonunda modelde o noktanın koordinatlarının neresi olduğunu bulabilmek.
+
+43
+00:10:11,936 --> 00:10:26,216
+Invertible Mapping. Yani model üzerindeki bir noktanın, image üzerindeki bir noktaya karşı yerini, koordinatını bulmak için yapmış olduğu bir görüşme işlemine.
+
+44
+00:10:26,644 --> 00:10:43,004
+Tersine dönüştürme. Yani ikisinden de birbirine dönüşüm gerekiyor. Görüntüde bildiğim bir noktanın modelde koordinatı neresidir? Modelde bildiğim bir noktanın görüntüdeki koordinatı neresidir? Bu dönüşümü Invertible Mapping'de bir işlemi.
+
+45
+00:10:51,860 --> 00:10:58,860
+Mouse hareket ettirdiğim için oluyor olabilir. Daha az mouse hareket ettirdiğim için.
+
+46
+00:10:58,860 --> 00:11:10,635
+Bu işlemi yaparken yani bu correspondence'ı sağlayabilmek için homogenous coordination de diyeyim.
+
+47
+00:11:12,788 --> 00:11:35,107
+Koordinatlara ihtiyacımız var. Bu homojen koordinat sistemi dediğimiz sistemde şöyle bir fark var. Normalde bir T noktasında bir iki tane gündemdeki koordinatı giderek yolduk ama bu homojen koordinat sistemi dediğimiz sistemde bir türlü bir tane F.
+
+48
+00:11:40,884 --> 00:11:58,864
+Çek diye gösteriyorsak yaygın olarak bir soruyoruz, bir soruyoruz. Tamam mı? Yani bir noktayı artık sadece iki x'ye koordinatıyla değil bir de s dediğimiz bir parametreyle birlikte saklayacağız anlamına.
+
+49
+00:12:02,451 --> 00:12:28,172
+Affine Mapping Functions'da burada üç tane farklı işlemden bahsedeceğim. Scaling, Rotation ve Translation dediğimiz işlemler bunlar. Scaling işlemi oldukça kolay. Tahmin edeceğiniz gibi burada bize verilmiş olan bir üçgen var.
+
+50
+00:12:28,596 --> 00:12:32,875
+satış isimlerle ilgili bir tane olduğunu biliyordum.
+
+51
+00:12:32,875 --> 00:12:36,076
+Diyor ki ben bu koordinatlar üzerinden
+
+52
+00:12:36,076 --> 00:12:40,196
+skating maksimum iki olarak doldurmak istersem
+
+53
+00:12:40,196 --> 00:12:45,395
+tüm bunları asintesiyle çaldırarak evde ediliyoruz.
+
+54
+00:12:45,395 --> 00:12:51,196
+Burada az önce belirttiğimiz
+
+55
+00:12:51,196 --> 00:12:55,716
+homojen koordinat sistemini tutunmadan
+
+56
+00:12:57,331 --> 00:13:12,091
+Bir sadece koordinat var, x'ye. Ama geniş işleminin, neler bir transformation olduğunu başta belirtmemiz lazım.
+
+57
+00:13:12,091 --> 00:13:20,651
+Neler bir dönüşüm gerçekleştirdiğimiz için her bir bileşen üzerinde, yani...
+
+58
+00:13:21,043 --> 00:13:29,803
+X ve Y bileşenleri üzerinde işlemleri ayrı ayrı gerçekleştirip bunu bir bütün olarak düşünme gidelim.
+
+59
+00:13:29,803 --> 00:13:37,863
+Bu linear transformation işlemini toplam olarak ifade edilmişinden ayrıca.
+
+60
+00:13:38,403 --> 00:13:40,543
+Şimdi bu işlemini soruyor bana.
+
+61
+00:13:41,427 --> 00:13:57,427
+X, Y koordinatlarında X, Y doğrultusundaki birleşeninin katkısı, Y doğrultusundaki birleşeninin katkısı ise X, Y doğrultusundaki birleşeninin katkısı ise X, Y.
+
+62
+00:13:57,427 --> 00:14:08,427
+Böylece bir X koordinatından sahip bir noktayı bu şekilde X, Y birleşen olarak ifade edebiliyoruz.
+
+63
+00:14:09,524 --> 00:14:27,964
+Bu tefagüzi özelliği, yani her bir ayrı bir özelliklerin koktaya gelmeden yapılıyor ve skek işlemi için bir biner transformation görüntü için bu biner bölümün işleminin her bir boyutta ayrı ayrı bir manöbile olması gerekiyor.
+
+64
+00:14:37,395 --> 00:14:40,055
+Bu da bir şey.
+
+65
+00:15:12,724 --> 00:15:27,984
+İkinci işlem Rotation işlemi. Rotation'ın biraz üzerinde konuşmamışta fayda var. Rotation işleminde diyor ki, burada bir P noktası var.
+
+66
+00:16:03,059 --> 00:16:24,235
+Bu konuda bir tatil tersi yönüyle, feta açık bu kadar da örgü birine bu T noktasının yeni koronu, T3'ü olacak. Diğer de bu 3'ü, E2'deki S koordinat birleşim ile ben burada baktım. İlk bitkilerin birinden güçlü kestiği yer, diğer işinde bir...
+
+67
+00:16:50,899 --> 00:17:02,899
+Daha önce separability özelliğinden bahsetmiştim. X ve Y eksenleri üzerinde her bir işlemi ben aslında ayrı ayrı gerçekleştirdim.
+
+68
+00:17:02,899 --> 00:17:06,900
+Bu durumda şöyle bir şeylere çalışma yapıyorum.
+
+69
+00:17:16,084 --> 00:17:16,764
+İliz.
+
+70
+00:17:21,107 --> 00:17:58,891
+Evet.
+
+71
+00:18:40,468 --> 00:18:45,468
+İki videoda görüşmek üzere.
+
+72
+00:18:45,468 --> 00:18:50,468
+Birkaç kısa, birinci videoda görüşmek üzere.
+
+73
+00:20:56,948 --> 00:21:04,948
+İki kere ben işlemim. Bu işlemimiz sonucunu...
+
+74
+00:22:22,036 --> 00:22:22,536
+Bu da?
+
+75
+00:22:50,163 --> 00:22:51,163
+Teşekkürler.
+
+76
+00:23:13,748 --> 00:23:27,688
+Şurada da zaten son, bir ayet olduğumuzu görebiliyoruz. İki sefer, iki sefer, iki sefer, iki sefer, iki sefer ve işlem konusu elde ettiğiniz değeri burada görebiliyoruz.
+
+77
+00:23:28,051 --> 00:23:42,551
+Dediğim gibi bu aslında nasıl çıkarıldığını gösteriyor bize. Biz bu işlemi öğrendikten sonra bunu bir de Z boyutuna ekleyip 3 boyutta da genişletebiliriz ve aynı işlemleri orada da ifade edebiliriz.
+
+78
+00:23:47,731 --> 00:23:55,471
+Şimdi buradan sevgili arkadaşlar, ekran dışında dinleyenler size de bir kısa özet geçmek istiyorum.
+
+79
+00:24:05,556 --> 00:24:10,796
+X doğrultusunda ayrı ayrı ifade ediyoruz. X doğrultusunda bir vektörümüz var.
+
+80
+00:24:10,796 --> 00:24:21,796
+Yani şu gerçek koordinatının tek tek açısında bu noktanın yeni koordinatını hesaplarken,
+
+81
+00:24:30,291 --> 00:24:39,291
+Bu şekilde dikme indirerek burada oluşturduğumuz dik üçgenin içerisinde tete açısını yazabilirim.
+
+82
+00:24:39,291 --> 00:24:44,235
+Ve bu tete açısının...
+
+83
+00:24:48,468 --> 00:25:01,468
+Sinüs teta değeri y üstü bölü 1 oluyor. Sinikosinüsünü yazdığımda ise x üstü bölü 1 oluyor.
+
+84
+00:25:01,468 --> 00:25:14,468
+Bu ilişkiyi, benzer ilişkiyi y ekseni üzerinde oluşturmuş olduğum birim vektör, şurada 0'a 1 olsun. Bu vektörü ben teta açısı kadar döndürdüğümde
+
+85
+00:25:31,796 --> 00:25:42,395
+Şu anda Rotation için verdiğim bu ekranı görebilirsiniz. Anlatımlarım bu ekran üzerinde. Evet hocam şu an daha büyük görüyoruz.
+
+86
+00:25:42,395 --> 00:25:50,115
+Peki, az önce söylediğim gibi x80'i üzerinde bir birim vektörümüz var.
+
+87
+00:25:54,836 --> 00:26:15,135
+Teta açısı kadar döndürdüğümde vektörün yeni koordinatları tutmaya çalışıyorum. Vektörün yeni koordinatları oradaki dik üçgen üzerinden hesaplanabilir. Yeni bulduğum teta açısı kadar döndürdüğümde bulduğum noktadan x80'ine bir dikme indiriyorum.
+
+88
+00:26:15,571 --> 00:26:28,251
+Ve burada oluşan dik üçgen içerisinde sinüs teta ve kosünüs teta değerlerini hesaplayarak yeni bulduğum noktanın x üstü, y üstü değerlerini hesaplayabiliyorum.
+
+89
+00:26:28,251 --> 00:26:39,087
+Benzer bir işlemi y ekseni üzerinde birim vektörümüz var 0,1. Bu vektörü ben...
+
+90
+00:26:39,087 --> 00:27:02,087
+Saatin tersi yönünde teta açısı kadar döndürdüm. Yeni bulduğum koordinatlar üzerinden bir y eksenine bu defa bir dikme çizdirdiğimde buradaki dik üçgen üzerinden teta açısını sinüs ve kosinüsünü hesaplayarak x üstü y üstü değerlerini hesaplayabilirim.
+
+91
+00:27:14,612 --> 00:27:29,092
+Gerçekleştirdiğimiz işlemi bir matriz formunda yazabiliriz. Matrizde gördüğümüz, sol taraf en alttaki matrize odaklanın lütfen. Şuraya bakıyorsunuz.
+
+92
+00:27:29,875 --> 00:27:42,395
+Y üstü dediğim değer P üstü noktasını gösteriyor. Yan tarafta yer alan bir kare matris var. Matrisin içerisindeki değerler rotation matrisinin bileşenlerini gösteriyor.
+
+93
+00:27:42,395 --> 00:27:57,875
+Ve X'ye dediğimde noktanın mevcut koordinatını gösteriyor. Bu matris vektör çarpımını gerçekleştirerek P noktasının yeni değerini P üstü dediğim noktanın koordinatı gösteriyor.
+
+94
+00:27:57,875 --> 00:27:58,375
+Denne.
+
+95
+00:28:04,115 --> 00:28:14,615
+Anlatmış olduğum Jot-H işleminin yine matlab üzerinde pardon bu şey Python üzerindeki kodu
+
+96
+00:28:14,615 --> 00:28:23,735
+Python kodunda da yine benzer şekilde
+
+97
+00:28:25,044 --> 00:28:32,784
+Saikimich Transform altında, bu defa Rotate fonksiyonunu import ettim. Onu kullanacağım.
+
+98
+00:28:34,244 --> 00:28:43,624
+Doğrudan verdiğim bir görüntüyü 45 derece açıyla döndür dediğimde bu işlemi nasıl yaptığını buradan siz de deneyip görebilirsiniz.
+
+99
+00:29:01,619 --> 00:29:04,000
+Orada şeyden hesaplayabilirsin.
+
+100
+00:29:11,000 --> 00:29:22,679
+Yani onu da formülünü çıkartırken sadece y ekseni üzerindeki o negatif işaret yer değiştirip şey gibi düşün, saat yönünde döndürdüğünde.
+
+101
+00:29:42,740 --> 00:29:49,560
+Bu formülü nasıl çıkarıldığını anladıysanız, hadi saat yönünde hesaplayalım.
+
+102
+00:29:50,140 --> 00:29:57,460
+Güzel. Evet. Saat yönünde de bunu hesaplayabiliriz. Çok güzel bir egzersiz bence.
+
+103
+00:29:58,160 --> 00:30:04,360
+Arkadaşlarımızdan böyle bir soru geldi. Bunu saat yönünde döndürseydik, nasıl hesaplardık diye.
+
+104
+00:30:04,915 --> 00:30:16,016
+Burada ben size bunun nasıl çıkarıldığını gösterdim. Dolayısıyla aynı işlemi saatin tersi yönünde değil de saat yönünde yapsak rotasyon matrisi ne olur?
+
+105
+00:30:17,796 --> 00:30:20,415
+Diye bir soru soruyorum size.
+
+106
+00:30:29,523 --> 00:30:30,523
+Teşekkürler.
+
+107
+00:31:05,107 --> 00:31:10,968
+Şimdi Translation işlemine geçecek olursak, Translation'da yapacağımız kaydırmak, ötelemek.
+
+108
+00:31:13,048 --> 00:31:23,968
+Düzlemde bir noktanın koordinatını biliyorsunuz. X doğrultusunda ya da Y doğrultusunda veya her iki yönde aynı anda belli bir miktar kayma işlemi yapabiliriz.
+
+109
+00:31:24,647 --> 00:31:27,968
+Burada işte homojen koordinat sistemi aslında.
+
+110
+00:31:31,092 --> 00:31:37,592
+Transformasyonların tamamını Teknik Matriz üzerinde de gösterebilir hale geleceğiz.
+
+111
+00:31:41,652 --> 00:31:42,631
+Kaydıramıyorum.
+
+112
+00:31:44,631 --> 00:31:47,611
+İşleminde...
+
+113
+00:31:52,660 --> 00:32:05,740
+Y üstü dediği değer, dönüştürme işlemi ya da kaydırma işleminden sonraki koordinatları gösteriyor. Translation işlemi bir D ile genelde ad ediyor.
+
+114
+00:32:21,619 --> 00:32:28,619
+Veriyorum ve bunu matriz üzerinde artık homojen koordinat sistemine geçtiğim için çok rahat ifade edebiliriz.
+
+115
+00:32:28,619 --> 00:32:38,619
+Gördüğünüz gibi kaydırma işleminin burada 3. şeye, matrizin 3. gözüne yazdık.
+
+116
+00:32:45,811 --> 00:32:54,411
+Bakın sağ taraftaki işlem sonucunda görebiliyorsunuz. Basit bir matriz işlemiyle bunu ifade edebilir oldum.
+
+117
+00:32:54,411 --> 00:33:06,411
+Şimdi bu tarz matrizler üzerinden bu işlemleri yapmanın avantajı şu. Hem scaling hem rotation hem de translation işlemlerini tek bir matrizin içerisine gömebiliyorsunuz.
+
+118
+00:33:07,531 --> 00:33:09,411
+Ve bir matriz çarpımıyla yapabiliyorsunuz.
+
+119
+00:33:10,420 --> 00:33:19,120
+Ama tabii o matrisleri önden birleştirmeniz gerekiyor. Şimdi burada küçük bir egzersiz var. Bu egzersiz de şunu söylüyor.
+
+120
+00:33:22,740 --> 00:33:23,220
+Evet.
+
+121
+00:33:24,579 --> 00:33:25,380
+Nasıl?
+
+122
+00:33:30,140 --> 00:33:43,880
+Şöyle düşünebilirsin. Evet, öyle yapılır. Ama bir nesnenin ya da bir mask var elinde. Sadece onu döndürebilirsin. Arkada background vardır. O background üzerinde işlem yapman gerekmez.
+
+123
+00:33:44,288 --> 00:33:51,488
+Elinde bir maske varsa ve sadece nesneye ait pikselleri biliyorsan, onları hesaplaman yeterli olacaktır.
+
+124
+00:33:53,008 --> 00:33:58,288
+Ama bir image olarak bakıyorsan, evet tabii ki bütünü üzerinde döndürmen gerekir.
+
+125
+00:34:00,488 --> 00:34:01,488
+Evet.
+
+126
+00:34:02,579 --> 00:34:16,720
+Tabii, doğru. Ve orada hesaplamalarda şey de olur. Aliasink dediğimiz böyle boşluklar falan olabilir. Yeni hesapladığım koordinatlar arasında boşluklar çıkabilir döndürdüğün zaman. Böyle sıkıntılarla karşılaşıyoruz.
+
+127
+00:34:19,764 --> 00:34:37,384
+Şimdi temelde bu işlemi nasıl yaptığımızı anlatabilmek için bir örnek yapacağız. Ama burada örnekte şöyle bir zorluk var. Biz işlemlerin tamamını orijine göre gerçekleştirmiştik. Yani sıfır sıfıra göre, orijine göre teta açısı kadar döndürmekten bahsediyorduk.
+
+128
+00:34:45,940 --> 00:34:54,420
+Beşe sekiz demiş. Yani bir nokta vermiş ve onu orijin kabul edip o noktaya göre doksan derece döndüreceksiniz diyor.
+
+129
+00:34:54,420 --> 00:35:01,980
+Ve bu işlemi yaparken bunu tek bir matrize olarak ifade edeceğiz.
+
+130
+00:35:15,411 --> 00:35:22,891
+5-9 dediği noktaları bu döndürme işlemin sonundaki yeni koordinatların ne olacağını bulundu diyoruz.
+
+131
+00:35:25,471 --> 00:35:28,471
+Ve burada bir küçük de ipucu vermiş.
+
+132
+00:35:28,992 --> 00:35:39,032
+İpucunda diyor ki, biz döndürme işlemi tümüyle orijine göre yapmayı biliyorduk ama burada başka bir noktaya göre merkez kabul edip bunu döndürün diyor.
+
+133
+00:35:39,032 --> 00:35:41,471
+O zaman şunu düşünebilirsiniz.
+
+134
+00:35:42,000 --> 00:36:02,739
+O 5'e 8 noktasını önce orijine taşırsınız. Bütün döndürme işlemlerini ona göre yaparsınız. Döndürme işlemi bittikten sonra geri 5'e 8 noktasına translate edersiniz, shift edersiniz bütün noktaları diyor. Mantıklı mı? Çok mantıklı. O zaman gelin. Nasıl?
+
+135
+00:36:03,552 --> 00:36:15,271
+Hayır. Çok da güzel sonuç veriyor. Yani aslında problemi bizim bildiklerimizde çözülebilir hale getiriyor. Fakat burada işlemleri yaparken şuna dikkat edin.
+
+136
+00:36:15,271 --> 00:36:17,271
+Önce bir...
+
+137
+00:36:17,271 --> 00:36:20,271
+Hocam...
+
+138
+00:36:20,271 --> 00:36:25,512
+Önce bir işlem, sanatçı işlem yapacağım, kaydınca işlem yapacağım.
+
+139
+00:36:25,811 --> 00:36:27,271
+İstekselinde eksi beş...
+
+140
+00:36:28,052 --> 00:36:37,252
+Y-8 kadar kaydınca oryunu taşıyacak. Arkasından bir lokasyon maddesini de çarpacak.
+
+141
+00:36:37,252 --> 00:36:47,851
+Ondan sonra tekrar maklaları artı 5, artı 8 kadar kaydederek oryunu yerine götüreceğim.
+
+142
+00:36:47,851 --> 00:36:50,052
+Yani bir teyitik koyacaksınız.
+
+143
+00:36:50,052 --> 00:36:55,652
+Teyitik de bunu da çarpışın, sonra bunu da. Bu üç tane maddesi de çarpışın.
+
+144
+00:36:55,711 --> 00:37:05,711
+Veya, veya üç tane maddesi önünden çarpıp tek bir rotasyon maddesine dönüştüreceksiniz. Onunla çarpıcınız. İdeal olan o.
+
+145
+00:37:05,711 --> 00:37:16,711
+Şimdi bana o rotasyon maddesini oluşturun diyeceğim. Ama rotasyon maddesini oluşturmadan önce ben size şey yapayım. Yani değer verin.
+
+146
+00:39:27,315 --> 00:39:38,315
+İçeride olanın dünya ile, 2-22 kadar ötesi konularını da anlayabilmek için, ama bu konferiyle, o anlamı sözlükler için, ben.
+
+147
+00:40:50,452 --> 00:40:50,952
+Bu da ne?
+
+148
+00:42:17,204 --> 00:42:28,364
+Kosinus pi bölü 2, 90 derece için 0. Sinus pi bölü 2, 1. Pik yapıyor orada, değil mi?
+
+149
+00:42:44,275 --> 00:42:45,815
+o maddesi söyler miyim?
+
+150
+00:42:46,175 --> 00:42:48,655
+Yani o üç maddesin çarpımında
+
+151
+00:42:48,655 --> 00:42:50,536
+ben bir tane maddise
+
+152
+00:42:50,536 --> 00:42:51,755
+dönüştüreceğim bunu.
+
+153
+00:42:52,315 --> 00:42:54,495
+Burada gördüğümüz işlemler
+
+154
+00:42:54,495 --> 00:42:56,195
+sırasıyla önce
+
+155
+00:42:56,195 --> 00:42:59,835
+bütün noktaları
+
+156
+00:43:05,619 --> 00:43:18,680
+Sonra Pi bölü 2 kadar bir Rotation. Daha sonra noktaları geri, merkez diye köpü ettiğim yere 5-8 koordinatına translate ediyorum, kaydırıyorum.
+
+157
+00:43:18,680 --> 00:43:30,760
+Bu üç işlemi temsil eden 3 matrisi var. Bu 3 matrisin çarpımından tek bir matris oluşturacağım. Bu matrisi bana hesaplayıp verirseniz eğer.
+
+158
+00:43:31,155 --> 00:43:39,596
+Üç tane noktanın dönüştürme sonrasındaki yeni koordinatlarını buna göre hesaplayabiliriz. Ne çıkıyor?
+
+159
+00:43:55,476 --> 00:43:58,476
+Sonra da bu işlemin bir sağlamasını yapacağız.
+
+160
+00:43:59,476 --> 00:44:14,476
+Ve şu üç tane noktayı bu dönüşüm maddesine yazarak yeni koordinatları bizim hesapladığımızla aynı çıkıyor mu diye kontrol edeceğiz.
+
+161
+00:44:39,123 --> 00:44:42,243
+Online'daki arkadaşlar dersi takip edebiliyor musunuz?
+
+162
+00:44:44,063 --> 00:44:51,243
+Hocam arada sesiniz kesik geliyor ama elimizden geldiğince takip etmeye çalışıyoruz.
+
+163
+00:44:52,003 --> 00:44:59,243
+Biliyorum bu mouse hareketi olunca oluyor bilgisayarda sistem mikrofonunu kullandığımda.
+
+164
+00:45:00,463 --> 00:45:04,703
+Ama mouse hareket ettirmediğim zaman sorun yok sanıyorum.
+
+165
+00:45:08,467 --> 00:45:12,347
+O zaman da versenlerim hocam ama şey yapmaya çalışıyoruz, takip etmeye çalışıyoruz.
+
+166
+00:45:12,347 --> 00:45:17,747
+O zaman alt yapımı kadar arkadaşlar, üzgünüm. Kablolu bağlıyım bu arada ben internete şu anda.
+
+167
+00:45:26,900 --> 00:45:36,380
+Hocam, acaba kablosuz kulaklığınız var mı? Tahtaya kalktığınızda daha iyi duyarız. Çünkü tahtaya kalktığınızda gerçekten belli bir uzaklıktan sonra hiçbir şey duyulmuyor.
+
+168
+00:45:37,039 --> 00:45:42,079
+Anlıyorum ama zaten tahtayı da göremiyorsunuz ki. Öyle de bir sıkıntı var orada.
+
+169
+00:45:46,940 --> 00:45:48,940
+Kablosuz kulaklığı bir denerim.
+
+170
+00:45:54,260 --> 00:45:59,760
+Bunda sorun çıkarabiliyor o yüzden. Önceden denerim ben. Bende de var da.
+
+171
+00:46:06,867 --> 00:46:12,248
+Tek bir matriz istedim sizden. Üç tane matrizi çarpıp bana bir matriz söyleyin dedim.
+
+172
+00:46:15,568 --> 00:46:16,488
+Evet.
+
+173
+00:46:18,587 --> 00:46:20,167
+Niye çarpanıyorsun?
+
+174
+00:46:22,007 --> 00:46:23,188
+Yok canım.
+
+175
+00:46:32,052 --> 00:46:37,052
+Onu homojen koordinal sistemine dönüştürmem gerektirmeyi yapalım.
+
+176
+00:47:36,115 --> 00:47:51,476
+Ben o çarpma işlemi yaptıktan sonraki matrisin değerini istiyorum. Bir translation, bakın tekrar söylüyorum. Eksi beş, eksi iki kadar translation yapılacak. Sonra pi bölü iki kadar döndürme yapılacak.
+
+177
+00:47:52,659 --> 00:48:15,399
+Eski koordinata taşımak için X'de 5, Y'de 8 kadar kaydırma yapılacak. Bu üç tane matrisi çarparak tek bir dönüşüm matrisine indirgemeniz gerekiyor. Bu matrislerin her biri 3'e 3 matris. Bunları çarparak bana 3'e 3'lük tek bir dönüşüm matrisi üretmenizi bekliyorum.
+
+178
+00:48:48,019 --> 00:48:59,380
+Hocam bir şey sorabilir miyim? Arkadaşlar şey dediniz ya, bunları çarparak üçe üçlük bir maddesi elde edeceksiniz diye. Onu tahtada çözerseniz bizimle de paylaşma şansınız var mı sonra?
+
+179
+00:49:01,199 --> 00:49:01,980
+Nasıl bir şey olacak?
+
+180
+00:49:02,000 --> 00:49:03,140
+Fotoğrafını çekip atabilirim.
+
+181
+00:49:03,940 --> 00:49:04,960
+Evet, çok iyi olur.
+
+182
+00:49:05,579 --> 00:49:06,180
+Hadi bakalım.
+
+183
+00:49:07,400 --> 00:49:10,260
+Hadi, WhatsApp'ın da var oradan. WhatsApp'tan at o zaman.
+
+184
+00:49:24,628 --> 00:49:26,220
+İntekler, publicistiyors.
+
+185
+00:49:29,364 --> 00:49:41,784
+Şimdi bir arkadaşımız sınıftan fotoğraf çekti, Whatsapp'tan paylaşıyor. Size 3 tane matrisi yan yana yazdı. Çarpıp bana sonuç atmanızı bekliyorum.
+
+186
+00:50:18,643 --> 00:50:20,643
+Bu hesapladığımız matriz...
+
+187
+00:50:26,675 --> 00:50:44,055
+Tek bir dönüşüm madresi olacak. Nihai kullanacağımız tek bir dönüşüm madresi olacak. Bu madresle o verdiğim üç tane noktayı döndürdüğümüzde yeni koordinatları ne çıkıyor? Gerçekten bu noktaları 90 derece döndürsem aynı noktaları elde eder miyim?
+
+188
+00:50:48,032 --> 00:50:56,472
+Noktalara bakarak kendi yaptığınız, döndürme sonucu yaptırdığınız, elde ettiğiniz sonuçlarla kıyaslayın lütfen.
+
+189
+00:52:07,827 --> 00:52:35,028
+Ne çıktı madde? Kosinüs ne? Ama pi bölü ikiyi hesapla ya. Az önce dedim ya. Evet. Kosinüs pi bölü iki, kosinüs sıfır. Sinüs pi bölü iki bir.
+
+190
+00:52:35,664 --> 00:52:37,664
+Ama yerine koy, öyle söyle.
+
+191
+00:52:52,820 --> 00:52:54,820
+Bir, bir.
+
+192
+00:54:05,300 --> 00:54:06,019
+Evet, ikinci.
+
+193
+00:54:12,083 --> 00:54:12,844
+işlere de
+
+194
+00:54:12,844 --> 00:54:15,083
+6-7
+
+195
+00:54:15,083 --> 00:54:15,384
+video
+
+196
+00:55:11,891 --> 00:55:13,891
+Teşekkürler.
+
+197
+00:56:12,788 --> 00:56:18,168
+Ben bu işlemi buraya alışmış oldum.
+
+198
+00:56:19,507 --> 00:56:26,168
+Ben bana bunu döndürme, kaydırma işlemlerini bir arada...
+
+199
+00:56:38,068 --> 00:56:44,012
+Şimdi bu işlemleri…
+
+200
+00:56:52,659 --> 00:57:16,659
+Öğrenmiş olduğumuz işlemleri aynı zamanda dersin başında söylemiş olduğum model ile görüntü arasında bir correspondence, ilişki kurma amacıyla ihtiyaç duyduğumuz çözümlerden göre bu dönüşüm işlemleri ve bu dönüşüm işlemlerinin...
+
+201
+00:57:17,811 --> 00:57:22,811
+Slayta dikkat edin. Slayta
+
+202
+00:57:50,195 --> 00:57:55,695
+Diğerleri, İstifar, yani Görüntü Koordinatı'nda.
+
+203
+00:57:56,695 --> 00:58:01,695
+Bu bir tür bir görüntü koordinatı'nın ilk gün, Real Murderer,
+
+204
+00:58:02,195 --> 00:58:10,195
+belli bir tek artıcı olabilir, belli bir oranda kaynak olabilir ve belli bir ölçek vardır.
+
+205
+00:58:10,695 --> 00:58:15,695
+Ben bu düşünü, bilinç semeyen,
+
+206
+00:58:16,340 --> 00:58:27,960
+Ne kadar bir ilişki var, ne kadar bir ölçek farkı var ve ne kadar farkı var. Bilirse meğer, başta demiştim ya, ima üzerinde bildiğin bir noktanın,
+
+207
+00:58:27,960 --> 00:58:36,812
+Yıldız Ört'teki koordinatisine hesaplayabilirim. Yıldız Ört'te bildiğin bir noktanın ima üzerinde heresi olur.
+
+208
+00:58:42,675 --> 00:58:46,675
+İki koordinat gücümü için
+
+209
+00:58:50,387 --> 00:59:01,387
+Teta açısının kayma miktarını ve ölçeyi hesaplayabilmem için iki tane noktayı biliyor olmam yeterli.
+
+210
+00:59:01,387 --> 00:59:12,387
+Aslında iki tane noktanın her iki tarafta da nereye denk geldiğini bilirsem bunlara bir işaret koyabilirim mesela hesaplamak için.
+
+211
+00:59:12,755 --> 00:59:32,355
+Yani şunu söylemek istiyorum. Model üzerinde belli bir nokta vardır. Örneğin bir noktası vardır. Model üzerindeki bu nokta yine gerçek örneğin üzerinde hep üretimde çıkan bir mağazoraya bir yer vardır. O iki noktayı bildiğinle eşleştirelim. Ne yapabilirsiniz?
+
+212
+00:59:41,492 --> 00:59:54,612
+Bunları eşleştirerek aslında dönüşüm için ihtiyacımız olan TETA açısını, skeyli ve kaydırma miktarı dediğimiz X0, Y0 kadar kaydırmayı hesaplayabiliriz.
+
+213
+00:59:55,172 --> 01:00:00,251
+Sadece iki tane nokta biliyor olmanız gerek. Bu eşleştirmeyi yapabilmeniz için.
+
+214
+01:00:00,596 --> 01:00:18,376
+Bununla ilgili yani bu iki düzlem, bakın iki tane farklı düzlemden bahsettim. Biri model düzlemi ya da real world düzlemi, öbürü ise imaj, kameradan aldığınız bir görüntü. Bu ikisi arasında bir ilişki yakalayabilmeniz için.
+
+215
+01:00:18,835 --> 01:00:28,395
+Dediğim gibi iki noktayı bilerek bu dönüşüm formüllerini kurgulayabilirsiniz. Bu bir dönüşüm süreci.
+
+216
+01:00:39,023 --> 01:00:49,744
+Matching ve Registration diye geçiyor. Konuları merakı olan arkadaşlar bu slide'ları inceleyerek sorusu olursa bana danışabilir.
+
+217
+01:00:50,223 --> 01:01:04,163
+İki boyutlu düzlemde bu transformation dediğimiz işlemleri böylece tamamlamış olduk. Bir ara vereceğim 10 dakika kadar. Ondan sonra
+
+218
+01:01:08,340 --> 01:01:23,940
+İntrass Point dediğimiz ilgi noktaları, talk featureleri gibi bir dizi, pencrafted featurelerin nasıl çıkarıldığına dair bir saat daha ders yapacağım.
+
+219
+01:01:24,059 --> 01:01:28,180
+Arkasından da Commolation Neural Network konusuna geçeceğim.
+
+220
+01:01:28,559 --> 01:01:30,360
+Şimdi bir 10 dakika ara veriyorum.
+
+221
+01:01:30,460 --> 01:01:31,720
+Hocam, merhaba bir şey sorabilir miyim acaba?
+
+222
+01:01:32,371 --> 01:01:33,052
+Efendim?
+
+223
+01:01:33,612 --> 01:01:38,791
+Biz dersi dilekçeyle sonradan almıştık. Ödevi bize şu an hala görünmüyor da. Ödevi tekrar tanıma imkanınız var mı acaba?
+
+224
+01:01:39,431 --> 01:01:47,791
+Onu bir kere yaptım. Ödevi silip tekrar güncelledim. İki kişiyi dahil etmiş oldum ama yeni eklenenler varsa...
+
+225
+01:01:48,563 --> 01:01:56,583
+Onlar artık e-mail atsınlar. Çünkü bu saatten sonra ödevi silersem önceki upload edenleri kaybedebilirim.
+
+226
+01:01:56,923 --> 01:01:57,743
+Anladım, tamam. Çekilin.
+
+227
+01:01:58,003 --> 01:01:59,563
+Siz e-mail ile gönderin, oldu mu?
+
+228
+01:02:00,043 --> 01:02:00,364
+Anladım.
+
+229
+01:02:07,699 --> 01:02:08,199
+Bakşam.
+
+230
+01:20:32,756 --> 01:20:34,236
+Evet, merhaba arkadaşlar.
+
+231
+01:20:36,796 --> 01:20:41,695
+27 kişi var online'da. Kimler burada bakayım, elleri göreyim.
+
+232
+01:20:45,524 --> 01:20:47,184
+Buradayız hocam.
+
+233
+01:20:48,324 --> 01:20:58,684
+14, 15, 16, 17, 18 kişi, 20 kişi el kaldırdı. Öbür yedisi nerede?
+
+234
+01:21:05,043 --> 01:21:11,203
+23 kişi olduk. Peki, teşekkür ediyorum. Tam ekran yaptım, görebiliyor musunuz?
+
+235
+01:21:18,931 --> 01:21:45,931
+Slide görünüyor hocam eğer onu soruyorsanız. Ama tam ekran değil hocam. Evet, slide tam ekran değil ama. İkinci sayfaya geçmedi o zaman. Değil mi ikinci sayfaya? Şu anda geçti hocam. Sorun yok. Hocam o zaman şu an çok küçük gözüküyor. Bunu sevmiyorsunuz. Evet, sonraki slide kısmı çok büyük gözüküyor. Anladım. Şimdi...
+
+236
+01:21:47,475 --> 01:21:48,315
+Böyle daha iyi.
+
+237
+01:21:50,415 --> 01:21:52,056
+Diğerine göre daha iyi hocam, evet.
+
+238
+01:21:56,659 --> 01:21:58,079
+Şöyle gidelim o zaman yine.
+
+239
+01:22:05,844 --> 01:22:06,796
+Şimdi...
+
+240
+01:22:17,395 --> 01:22:24,075
+Histogram of Oriented Graduates konusunun üstünde çok fazla yazacağım.
+
+241
+01:22:25,755 --> 01:22:33,835
+Çünkü hep söylüyorum size matematiği çok güzel, buradaki fikir çok güzel. Bunu anlamanız bence çok önemli.
+
+242
+01:22:35,055 --> 01:22:39,935
+Sonra interest point detection ve corner detection konularından bahsedeceğim.
+
+243
+01:22:41,140 --> 01:23:04,300
+Bu yöntem oldukça eski 2005'te geliştirilmiş ve Human Detection için geliştirilmiş. Yani video frameleri üzerinde bu kent güvenlik kameraları da olabilir. Buradaki görüntülerde insan silüetini arıyor. Yani kaç kişi varı saymak için dahi bunu vaktiyle kullandılar.
+
+244
+01:23:04,768 --> 01:23:22,788
+CVPR bu alanda önemli bir konferans ve bu derste ben mesela sizden koje çalışmasında bu CVPR konferansından bir bilgileri seçip bunu araştırıp derste sunmanızı isteyeceğim.
+
+245
+01:23:22,788 --> 01:23:30,788
+Alanın en önemli konferanslarından biri Computer Vision and Pattern Recognition konferansı.
+
+246
+01:23:31,699 --> 01:23:41,899
+Her sene yapılıyor ve oldukça seçici, oldukça iyi bildirileri kabul ediyorlar.
+
+247
+01:23:41,899 --> 01:23:50,859
+Bu sene 2023'te Nisan ayında yaptığım derste tabii önceki senenin, ya da bakayım 2023'ün,
+
+248
+01:23:50,859 --> 01:23:57,180
+ne zaman gerçekleşiyor ona göre bir seçim yapabiliriz.
+
+249
+01:24:00,180 --> 01:24:03,579
+2023.
+
+250
+01:24:04,700 --> 01:24:06,220
+Haziranda hocam.
+
+251
+01:24:06,320 --> 01:24:07,780
+Olmamış daha değil mi?
+
+252
+01:24:08,140 --> 01:24:08,380
+Evet.
+
+253
+01:24:08,380 --> 01:24:16,420
+İnsanda şeyleri topluyorlar tabii. O zaman 2022 yılında yapılmış çalışmalardan seçim yapabilirsiniz.
+
+254
+01:24:16,420 --> 01:24:23,920
+Burada sunulan bildirilerden biri.
+
+255
+01:24:24,340 --> 01:24:50,479
+Histogram-oriented gradient dediğimiz bir çözüm. Daha sonra sadece insan figürlerini bulmak için değil, texture analizinde, daha farklı pek çok nesnenin tespitinde kullanılan başarılı bir dönem içerik çıkarma yöntemi olarak karşımıza çıkıyor.
+
+256
+01:24:51,315 --> 01:24:57,315
+Nedir, nasıl çalışıyor? Biraz onlara bakalım.
+
+257
+01:24:57,315 --> 01:25:05,315
+Top Feature Extractions diyor. Burada 7 tane adım listelenmiş.
+
+258
+01:25:05,315 --> 01:25:13,315
+Birinci adım da Compute Centered Horizontal and Vertical Gradients with No Smoothing demiş.
+
+259
+01:25:13,315 --> 01:25:15,819
+Birinci türevleri alacağız.
+
+260
+01:25:16,083 --> 01:25:23,003
+Hem yatay doğrultuda, X doğrultusunda hem de Y doğrultusunda. [öğrenci] kapıyı kapatabilir misin? [öğrenci] yatıyor.
+
+261
+01:25:28,623 --> 01:25:30,003
+Teşekkür ederim.
+
+262
+01:25:31,583 --> 01:25:33,068
+Burada...
+
+263
+01:25:34,931 --> 01:25:55,791
+Gradient Stead'i üçe üçlü bir matris yapısında. Yani merkez piksel için işlem yaparken sağdaki pikselden soldaki pikseli çıkartarak merkezin yerine yazıyorsunuz. O üç göz üzerinden işlem yapıyor. Buradaki vertical gradient dediği işlem.
+
+264
+01:26:02,228 --> 01:26:23,288
+Bunu hatırlıyorsunuz. Türev işleminin, türev vektörünün magnetüdünü hesaplayabiliriz. Yani x doğrultusunda ve y doğrultusunda türevleri biliyorsak karelerini toplayıp kare kökünü aldığımız zaman magnetüdü buluyoruz.
+
+265
+01:26:25,460 --> 01:26:39,460
+Şimdi y ise arkpanjant y bölü x, dy bölü dx'tir. Yani y'deki türevi x'deki türeve bölüyorsunuz. Arkpanjant ne alıyorsunuz? Orientation ne biliyorsunuz? Bu işlem...
+
+266
+01:26:43,539 --> 01:26:44,899
+Bütün piksel.
+
+267
+01:26:54,868 --> 01:27:01,347
+4x128 bir imicimiz olsun. Bir görüntümüz var.
+
+268
+01:27:13,300 --> 01:27:27,280
+50% Overlay. Resmi görüntüleri, görüntüyü 16'ya 16'lık bloklara ayırıyor. Bloklar %50 örtüşecek şekilde.
+
+269
+01:27:33,043 --> 01:27:35,304
+İç tane blok oluşturacağını hesaplamış.
+
+270
+01:27:37,304 --> 01:27:44,663
+64 ebatlardan bir taraf 64, 128 ya.
+
+271
+01:27:45,224 --> 01:27:51,103
+%50 over lap olduğuna göre aslında 8'e bölmek gibi düşünebilirsiniz.
+
+272
+01:27:51,103 --> 01:27:54,804
+Ama baştan sonundan bir tane kaybetme şeyi var.
+
+273
+01:27:54,984 --> 01:27:59,103
+O yüzden 64 olan...
+
+274
+01:27:59,988 --> 01:28:12,208
+Kenar boyunca 7 tane blok, 128 olan kenar boyunca 15, 7 çarpı 15, 105 tane böyle %50 örtüşen bloklar üretirsiniz diyor.
+
+275
+01:28:12,208 --> 01:28:21,208
+Sonra bu bloklar üzerinde, 16'ya 16'lık bloklar üzerinde,
+
+276
+01:28:21,300 --> 01:28:44,800
+2'ye 2'lik seller oluşturuyor. Pardon, 2'ye 2 sel oluşturuyor. Daha doğrusu sellerin her birinin boyutu 8'e 8. Yani 16'ya 16'lık bloğu dörde bölmek gibi düşünebilirsiniz. Bunlara sel diyor artık. Yeni şeyi. Yani kavramlar karışmasın. Blok nedir, sel nedir?
+
+277
+01:28:45,171 --> 01:29:07,531
+Ve 6. adımda da diyor ki, Quantize the Gradient Orientation into Nine Beans. Bizim yönelim açısı dediğimiz açımız 0 ile 180 derece arasında olabilir. Bu 180 derecelik açıyı 9 parçaya bölüp,
+
+278
+01:29:08,404 --> 01:29:17,024
+20'şer derecelik aralıklarla 1000 adını verdiğimiz 9 tane aralık oluşturacağız.
+
+279
+01:29:18,703 --> 01:29:31,564
+Bu yönelim için. Daha sonra elimizdeki her bir şey için, gradient magneti ile bu aralıklara oy atacağız.
+
+280
+01:29:36,115 --> 01:29:58,796
+Burda Feature Dimension'ı hesaplarken 105 tane bloğumuz vardı. 105 tane bloğun içerisinden 4 tane tel çıkardık. Her bir telden de 9 tane açı aralığı oluşturduk. Dolayısıyla 3780 uzunluklu bir feature üretmiş bu.
+
+281
+01:30:00,148 --> 01:30:09,148
+Şimdi bu yedi tane maddeyle özetlemiş olduğumuz hopki için, şu da biraz daha detaylı anlatıyor.
+
+282
+01:30:09,148 --> 01:30:16,148
+Birinci türev.
+
+283
+01:30:26,644 --> 01:30:38,164
+Y doğrultusundaki türenin karesi topladım. Kare kökünü aldım. Magnetü de hesapladım. Açısını hesapladım. Her bir piksel için.
+
+284
+01:30:38,164 --> 01:30:44,283
+Burada görmüş olduğunuz gibi.
+
+285
+01:30:44,724 --> 01:30:58,503
+Görüntüsünün yanında gördüğümüz şekli içerisinde bu birinci dereceden türev işleminin sonucunu göstermiş. Öbürü de herhalde orientation'a göstermiş.
+
+286
+01:30:59,783 --> 01:31:09,943
+Şimdi az önce vermiş olduğumuz örnek görüntüden gidecek olursak, 64x128 boyutunda bir görüntü maddesimiz var demiştik.
+
+287
+01:31:10,484 --> 01:31:12,484
+Şu gördüğünüz adet.
+
+288
+01:31:16,484 --> 01:31:22,484
+Kırmızılarla gördüğünüz bloklara bölüyorsunuz. Lütfen kırmızılara lütfen.
+
+289
+01:31:24,484 --> 01:31:32,484
+Kırmızı blokların boyutu 16'ya 16. Bu kırmızı blokların içerisinde 8'e 8'lik 4 tane sel var.
+
+290
+01:31:33,484 --> 01:31:37,484
+Yani yakın değişimi bir kısım olanlar 8'e 8'lik selleri gösteriyor.
+
+291
+01:31:39,188 --> 01:31:49,188
+Kırmızıyla çizilmiş olanlar ise blokları gösteriyor. Blokların birbiriyle yüzde elli olur lef ettiğini de sizde görüyorsunuz.
+
+292
+01:31:51,188 --> 01:32:05,188
+Şimdi o zaman biz ne dedik? Her bir sel için dokuz tane açı aralığı...
+
+293
+01:32:06,355 --> 01:32:18,355
+O selin içerisinde kalan 8x8 64 tane pikselin kürev magnetüdü ile o açı aralıklarına oy atacak.
+
+294
+01:32:18,355 --> 01:32:28,355
+Lütfen şöyle düşünün, bir pikselin açı aralığı 10 derece olsun.
+
+295
+01:32:28,960 --> 01:32:44,020
+Hesapladığı açı aralığı. O zaman gidiyor, 0-20 aralığının içerisine oy atıyor. Ne kadar oy atıyor? Magnetüdü kadar. O pikselin, türevinin magnetüdü kadarlık bir değer ile oraya oy atmış oluyorsun.
+
+296
+01:32:47,604 --> 01:32:58,104
+Evet ama Ejler'in yöneliminden bir histogram üretiyorsunuz. Bakın yöntemin adı neydi? Histogram of Oriented Gradients.
+
+297
+01:33:15,636 --> 01:33:29,636
+Özellikle, bu konuda varlıklar için, bugün, sürekli yeniden.
+
+298
+01:33:44,756 --> 01:33:52,136
+Bu videolarımızdan birbirimize ilgili oğurlu kesmeleri. Bunun yanında hemen bir tane daha blog çıkacak.
+
+299
+01:34:00,243 --> 01:34:06,243
+Bu her birinin içinde 8'e 8'e 4 tane...
+
+300
+01:34:34,547 --> 01:34:59,028
+20 derece aralığındaki açı değerlerini aralıklara böleceğim diyor. 9 tane aralık elde etmek istiyorum. 180 derecelik bir yelpazeyi. 9 aralığa bölmek istersen her bir aralık 20 derece olur. O zaman 20-20-40-60 aralıklar elde edebilirim.
+
+301
+01:35:00,115 --> 01:35:18,316
+Çünkü görüntü içerisindeki bu sekiz pikselin için bu aralıkları oy atacağım. Ama bu piksellerin zaten ben hem orientation'ını biliyorum hem de magnitude'ını biliyorum. Türev yönelimini ve bunun büyüklüğünü biliyorum.
+
+302
+01:35:27,956 --> 01:35:40,496
+Türev magnetotu kadar oy atacağım. Fakat burada oyu bir de bölüştürmekten bahsediyor ki benim en çok ilgimi çeken tarafı orasıydı. Lütfen burayı dikkatli dinleyin. Gerçekten çok güzel bir matematik.
+
+303
+01:35:40,496 --> 01:35:52,435
+Örnek olarak 85 derece seçelim diyor. Burada 85 derece açı. Şu 80 kınırına geçelim.
+
+304
+01:35:52,467 --> 01:36:15,467
+80 ile 100'ün arasında da ama aslında sağ tarafa da yakındayım. Koçların birer merkez olduğunu düşünecek olursak, buna 70 aralığı ya da 90 aralığı dediği aralıklar var. Burada kastettiği şey nedir? O aralığın merkezleri. Ve benim burada vermiş olduğum...
+
+305
+01:36:15,988 --> 01:36:27,007
+Açık 85 derece ya. Bu 85 derecenin bu iki merkeze olan uzaklığına bakarak oyu paylaştırıyor iki göze. Tek bir göze oy atmıyor.
+
+306
+01:36:28,007 --> 01:36:32,168
+Yani evet, 85 derecelik bir açı.
+
+307
+01:36:33,088 --> 01:36:33,996
+Burada...
+
+308
+01:36:34,676 --> 01:36:51,156
+O, 90 aralığının içerisine yakındır ve dolayısıyla o göze oy atarım diyebilirdi. Ama diyor ki, 90 aralığına sadece oy atmayacağım, oyu yakın iki göze bölüştüreceğim diyor.
+
+309
+01:36:51,156 --> 01:36:56,515
+Ve bunu distance ile orantılayarak oyu bölüyor.
+
+310
+01:36:57,619 --> 01:37:02,899
+Nereye daha yakınsa oraya daha fazla oy atacak şekilde söylüyor.
+
+311
+01:37:03,619 --> 01:37:17,779
+Burada oyun 85'in 90'a olan uzaklığı 5 birim, 70'i olan uzaklığı 15 birim.
+
+312
+01:37:22,100 --> 01:37:33,100
+Uzakta olanı, dörtte üçünü yakında olana pay ederim ve bu şekilde dağıtırım diyor. Şuradaki oranlara düşenlikler, şurada vermişler.
+
+313
+01:37:33,100 --> 01:37:40,972
+Buradan geliyor. Toplam uzaklıkta söylüyor. Bir tarafta beş yakınlığı var, ödük beş.
+
+314
+01:37:41,332 --> 01:37:56,108
+15 daha uzak olana daha az oy vermesi lazım. Daha yakında olana daha çok oy vermesi lazım. Bunun üzerinden orantıklıklar bunları bu şekilde dağıtıyor. Ben buradaki bu oy dağıtma şeyini, mantığını...
+
+315
+01:37:57,908 --> 01:38:09,548
+Son derece başarılı bir konu belirtmek isterim. Güzel düşünülmüş meklere ve aşağı yukarı on sene falan biz bu yöntemleri duyuyorduk. Çok da derimli konuşlar elde ediyoruz.
+
+316
+01:38:11,688 --> 01:38:19,868
+Doku tanımada, şekil tanımada bize çok büyük ipuçları döndürüyordu. O yüzden epeyce kusandık.
+
+317
+01:38:23,923 --> 01:38:40,363
+Her bir sel için. Her bir sel için çıkar diyoruz. Fakat sonra dört tane selin, bir şeyin içerisinde normalizasyon. Lütfen şu formüle dikkat edin.
+
+318
+01:38:47,764 --> 01:39:12,684
+2x9 yazıyor. Şuradaki toplama tem boyunun üstünde gördünüz mü? Bu ne demek? Blok içerisindeki bütün sellerin, oy miktarlarının paralarını alarak blok içerisindeki her bir şeyin histogramı bununla normalize ediyor kendi içinde. Yoksa, bakın bu işi yapmasaydı…
+
+319
+01:39:31,891 --> 01:39:39,811
+Normalizasyon işlemi yapacağız. O blog içerisindeki toplam o miktarlarına bölerek bir normalizasyon işlemi yapıyor.
+
+320
+01:39:40,251 --> 01:39:42,331
+Orada önemli noktalardan biri de bu.
+
+321
+01:39:46,291 --> 01:39:54,171
+Python'da bu hazır tükkani olarak var. Ben kodunu da paylaştım. Yine birazdan açacağım.
+
+322
+01:39:54,591 --> 01:40:18,412
+Bu elde ettiği histogramları konkate rate ediyor. Yani arka arkaya ekleyerek her bir bloğun kendi selleri içerisinden gelen histogramları toplama oranlayarak normalizasyon yaptı ama bu birbiri peşi sıra ekliyor ve böylece uzun bir future vector üretiyor.
+
+323
+01:40:18,412 --> 01:40:21,511
+Bir resimden, tek bir resimden.
+
+324
+01:40:22,003 --> 01:40:38,484
+Bu resim içerisinde elde ettiği topuklarını çizdirdiğinde yayınları tespit etmek, insanları tespit etmek için başta değiştirilmişti.
+
+325
+01:40:38,484 --> 01:40:46,315
+Ve diyor ki, insan bu çeytin de bir kebe duran kovuları, bacakları için bir kebe.
+
+326
+01:40:47,380 --> 01:41:02,380
+Bu üretmiş olduğumuz histogramlar, histogramı, oriental graf dediğimiz kenarların yönelimi bilgisi, ekran açıkçası için zaten bu kenarların yönelimi bilgisi, bir şey de unutma çıkıyor.
+
+327
+01:41:03,380 --> 01:41:12,380
+Ekran sonuç dışında yerle paylaşırken, tabi ki de bir şey de, insan bir okusunu yakalayabiliyor.
+
+328
+01:41:13,268 --> 01:41:37,567
+Buradan yola çıkmış ve yöntemi geliştirmiş ama dediğim gibi bu sadece insanları tespit etmek için değil. Sonrasında texture analizinde, doku tespitinde, başka nesnelerin tespitinde de çok yaygın kullanılan bir yöntem haline geldi. O zaman epey bir ses getirmişti.
+
+329
+01:41:38,355 --> 01:41:54,395
+Kaç şey almıştır acaba, atıp almıştır acaba? Bir girip bakalım mı? Şu başlığı yazıp, çoğlar Google'da aratırsanız, yani akademik Google'da aratırsanız, kaç defa atıp aldığını görebilirsiniz.
+
+330
+01:41:54,395 --> 01:42:04,275
+Bu makalesi, dalalım, dalalım. Bu makalesine ne kadar atıp gelmiş? Önemli bir ölçüdür bu.
+
+331
+01:42:10,804 --> 01:42:20,963
+Dalal, histogram mı? Orjant. 41.684. Evet, bayağı iyi bir atık sayısı aslında. Değil mi?
+
+332
+01:42:20,963 --> 01:42:21,804
+Çok değerli.
+
+333
+01:42:23,804 --> 01:42:26,804
+Profesyonel bir puanlar, bir de bir puan.
+
+334
+01:42:26,804 --> 01:42:33,804
+Ha tabii, bizde atık da önemli bir puan faktörü yani. Bir puan gelmiştir oradan.
+
+335
+01:42:35,804 --> 01:42:36,804
+İyi.
+
+336
+01:42:38,612 --> 01:43:03,391
+Feature'lerini daha sonra bir sınıflayıcıya vererek sınıflama işlemi yapılabilir. Bu bir SVM klasifier olabilir veya sınıflayıcı olabilir. Feature'leri için Siteimich'in altında bu hazır kullanabilirsiniz, deneyebilirsiniz.
+
+337
+01:43:09,332 --> 01:43:11,332
+Takip ederseniz eğer...
+
+338
+01:43:16,916 --> 01:43:19,255
+Features konusu böyle.
+
+339
+01:43:21,315 --> 01:43:21,675
+Buyurun.
+
+340
+01:43:27,764 --> 01:43:36,764
+Tabii, örtüşecek. Örtüşecek. Tabii. Her blok üsttekiyle de, sağdakiyle de örtüşerek ilerliyor.
+
+341
+01:43:41,171 --> 01:44:01,851
+Yoksa orada blok sayısını hesaplamıştım ya ben. Blok hesabını biliyor musun? Şurada sayıları vermiştim. Orada bu sayılarda şu. Çarpı on beş dedim ya. Bu altmış dört çarpı yüz yirmi sekiz demişler.
+
+342
+01:44:17,779 --> 01:44:19,779
+Kontrol.
+
+343
+01:44:19,779 --> 01:44:21,779
+Sağ olun.
+
+344
+01:44:21,779 --> 01:44:23,779
+Şimdi bu yukarıda ekran kapalı değil.
+
+345
+01:44:38,323 --> 01:44:39,884
+Interfection konusuna.
+
+346
+01:44:41,443 --> 01:44:44,323
+Bu da yine bunları...
+
+347
+01:44:58,323 --> 01:45:21,083
+Yani insan eliyle hazırlanmış öz nitelikler, folk featureleri böyle, shift dediğimiz, shift in variant, transform diye bir yöntem var.
+
+348
+01:45:21,083 --> 01:45:25,263
+Orada da aynı şekilde elle çıkartılan öz nitelikler demek.
+
+349
+01:45:28,500 --> 01:45:42,039
+Interest Point Detection'da bu şekilde görüntü üzerinde köşe, kenar, resmi ya da mesleği vurgulayan önemli noktalar demek.
+
+350
+01:45:42,039 --> 01:45:54,880
+Bunları detekt edebilen algoritmalar var. İşte kenar bulma algoritmaları, köşe bulma algoritmaları gibi. Bunlardan faydalanarak Interest Point Detection yapabiliyoruz.
+
+351
+01:45:59,507 --> 01:46:23,927
+Bu noktaları bulduktan sonra, arkasından, point'in yani işte corner ya da şey dediğimiz bir noktanın etrafındaki piksellerden, burada surrounding piksel demiş, o bölgeden bir öz nitelik ya da özellik çıkartıyoruz, özellik türetiyoruz.
+
+352
+01:46:25,171 --> 01:46:36,851
+Türetiyor Duk diyelim. Artık yapmıyoruz. Ama şöyle bir bakmak gerekirse. Ve sonra da iki tane resim var elinizde. Altta görüyorsunuz.
+
+353
+01:46:36,851 --> 01:46:44,851
+Topla göre sabitler için de belki bir bakış açısı farklı var. Aynı bölü çekmiş.
+
+354
+01:46:44,851 --> 01:46:52,491
+Bu, bir de bir tek soru. Onlar bile bir de bir tek soru. Çok umurdu.
+
+355
+01:46:53,716 --> 01:47:02,355
+Ne kadar örnek ettiğine bakarak iki resimin birbirine benzerliğini tutarlıyordu. Ya da o nesne orada var mı yok muyu söyleyebiliyorduk diyelim.
+
+356
+01:47:06,100 --> 01:47:16,260
+Bunlar nelerdi? Burada zorluklardan biri şu, Interest Operator Repeatability tekrarlanabilirlik problemi vardı.
+
+357
+01:47:16,260 --> 01:47:27,940
+Bunun üzerinde interest point olarak şu noktaları buldu. Sağ tarafta da aynı resim var ama aynı yerde bulamadı, başka noktalar buldu size.
+
+358
+01:47:28,307 --> 01:47:34,827
+Repeatability, yani tekrarlanabilirlik özelliği yok. O zaman ne yapıyorsunuz? Eşileştiremiyorsunuz.
+
+359
+01:47:36,847 --> 01:47:50,667
+Veya eşleştirilebilir noktaların sayısı çok az olabiliyor. Biri on tane buluyor, öbürü üç tane buluyor. O üçün içerisinde de belki iki tanesi sadece eşleşebiliyor gibi sorunlarla karşılaşılıyordu.
+
+360
+01:47:52,708 --> 01:47:55,667
+Bu problemler üzerinden tabii…
+
+361
+01:47:56,051 --> 01:48:04,851
+Aslında çok fazla yol alamadı. Şümürlü tanıma gerçekleştirebiliyordu.
+
+362
+01:48:04,851 --> 01:48:06,851
+Burada mesela Cornel.
+
+363
+01:48:07,220 --> 01:48:19,420
+ile ilgili bir örnek vermiş. Bir Corner Detection algoritması var. Biz görüntü üzerindeki köşe noktalarını bu Corner Detector yöntemiyle bulabiliyoruz.
+
+364
+01:48:19,420 --> 01:48:26,220
+Harris'in en iyi yöntemi, Harris Corner Detector. Burada bakın, şuralarda da köşe bulabiliyoruz.
+
+365
+01:48:26,220 --> 01:48:33,220
+Bilmiyorum, bir de sizin için ama şuralarda da köşe bulabiliyoruz. Şimdi burada da bir son fark var.
+
+366
+01:48:33,811 --> 01:48:47,311
+Bu yüzden şurada, burada böyle köşelerde, çoğu gençliğiniz yine bu bölgesi daha kriziyle açık krizi buralarda hep böyle köşeler yakalayabiliyor.
+
+367
+01:48:47,311 --> 01:49:01,228
+Bunlar bizim aradığımız interest pointler ve bunların etrafından çevreleyen piksellerden öz nitelik çıkartıp arama gerçekleştirebiliyoruz.
+
+368
+01:49:06,452 --> 01:49:10,632
+Rupertiz of interest point detector demiş. Detect all.
+
+369
+01:49:24,627 --> 01:49:28,307
+Bu da se bir nou valsın tersi konusunda meşt.
+
+370
+01:49:34,931 --> 01:49:37,311
+Doğru yerde olması önemli.
+
+371
+01:49:41,108 --> 01:49:50,587
+Ve robust bir respect to noise demiş, gürültüye karşı güçlü olması da istiyoruz aslında.
+
+372
+01:49:50,587 --> 01:49:56,587
+Bunu ne kadar sağlayabiliyor? Bunlar önemli bir problemler.
+
+373
+01:49:56,587 --> 01:50:00,788
+Paris Korne'da çok sıkıca bir bahsedeceğim.
+
+374
+01:50:00,788 --> 01:50:06,708
+Çoşu tuttuğumuz noktalar, bakın şu bulamış olduğumuz kırmızıyla işaretli noktalar.
+
+375
+01:50:10,068 --> 01:50:20,068
+Bir window tanımlayıp, görüntünün üzerinde bu window'u belli doğrultularda hareket ettiriyoruz.
+
+376
+01:50:20,068 --> 01:50:24,068
+Şöyle görmüş olduğunuz bir sariyle görünüyor.
+
+377
+01:50:24,068 --> 01:50:37,068
+Yukarı aşağıda sağa sola hareket ettirerek, bu doğun mevcut yeri ile bir sonraki yeri arasında karşılık serdevi...
+
+378
+01:50:37,811 --> 01:50:41,091
+Çıkartarak aralarında ne kadar fark ediyorsunuz?
+
+379
+01:50:44,884 --> 01:51:02,904
+Yani arka plana denk gelmişse bu blog ve ben bunu sonra sağa yukarı aşağı hareket etkildiğinde arka plan olduğu için herhangi bir değişiklik olmayacak. Bir önceki yerinde okuduğum parlaklık değerleri ve bir sonraki yerde okuduğum parlaklık değerleri.
+
+380
+01:51:03,283 --> 01:51:14,623
+Yakın çıkacak. Dolayısıyla bu iki tane kernel arasında fark alsam yerlerini kaybettikten sonra farkın sıfır ya da sıfıra yakın çıkması gerekir.
+
+381
+01:51:14,623 --> 01:51:30,243
+Let meşecek. Ama eğer bir el üzerindeyse, yani bir kenar doğumlu çıkıştaysa ve ben bu kernel'ı kenarın olduğu doğumlu hareket ettirdiysen yine fark sıkıştırır.
+
+382
+01:51:30,452 --> 01:51:50,452
+Doğru mu? Çünkü aynı doğrultuda gidiyoruz. Sağa sola hareket etkildiğinde fark elde ederim. Yukarı aşağı hareket etkildiğinde fark elde ederim. O zaman derim ki bir yönde hareket edince değişim oluyor, öbür yöne hareket etkildiğinde olmuyor. Buradan bu da bir edge olduğunu tahmin edebilirim.
+
+383
+01:51:55,891 --> 01:52:04,952
+Köşe üzerine denk gelmişse, yukarı aşağı kaybeden de, sağa sola kaybeden de hep fark verilir bana.
+
+384
+01:52:05,296 --> 01:52:32,195
+Dolayısıyla diyor ki ben buna bakarak corner detect edebilirim diyor. Paris corner detector, o zaman bu işi yapan araştırmacının adı Paris. Kendi adını vermiş ve böyle bir detector geliştirmiş. Bu köşeleri bulmak için en iyi köşe bulunun algoritmalarından biriydi. Biz bunu önceki yıllarda, baya eski dönemde ödev olarak yapıyorduk ama artık yapmıyoruz, gerek yok.
+
+385
+01:52:33,296 --> 01:52:50,336
+Bu tür intres pointleri bulmaya ihtiyacımız yok. CNN'leri konuşuyor olacağız. Bu tür handcrafted featureler hem çok zaman alan, yani işlem maliyeti getiren yöntemler.
+
+386
+01:53:01,268 --> 01:53:03,268
+Yönelmiyoruz.
+
+387
+01:53:03,268 --> 01:53:05,268
+Bu da,
+
+388
+01:53:05,268 --> 01:53:09,268
+İkinci altında Future Import Corner,
+
+389
+01:53:09,268 --> 01:53:11,268
+Harris Corner,
+
+390
+01:53:11,268 --> 01:53:13,268
+Uptics Corner,
+
+391
+01:53:13,268 --> 01:53:17,268
+Hazır feature'ları kullanarak,
+
+392
+01:53:17,268 --> 01:53:21,268
+Hazır fonksiyonları kullanarak,
+
+393
+01:53:21,268 --> 01:53:25,268
+Bu düzenini görebilirim. Tavsiye ediyorum.
+
+394
+01:53:29,524 --> 01:53:33,884
+İzlerleyebilirsiniz. Şimdi gelelim aslında önemli bir konuya.
+
+395
+01:53:46,996 --> 01:54:03,196
+Makine öğrenmesiyle kullandığımız yöntemlerde bize verilmiş olan bir giriş görüntüsünden Feature Extraction işlemini biz manuel yapıyoruz. Yani bu Handcrafted Features dediğimiz FOB özellikleri.
+
+396
+01:54:03,648 --> 01:54:15,248
+Paris-Pornier özellikleri gibi bu tür noktaları bulup, bunların etrafından çıkardığımız değişim, piksellerdeki parlaklık değişimlerini bir özüntelik olarak,
+
+397
+01:54:15,248 --> 01:54:29,748
+Konkatine'yi de bir future vektör hazırlıyoruz. Bunları hem practical features diyoruz. Daha sonra oluşturduğumuz bu feature'ları, yine bildiğimiz traditional machine learning algoritamız. Bu ne olabilir?
+
+398
+01:54:30,036 --> 01:54:53,595
+Support Vector Machines olabilir, bu bir Decision Tree olabilir. O Clustering yöntemi, eğiticili yöntemlerden gidelim. Decision Tree olabilir, K&N olabilir eğiticili gibi. Bu yöntemlerle bir classification yapıp sonucu bulmaya çalışıyoruz. Peki ne yapmaya başladık son zamanlarda?
+
+399
+01:54:59,091 --> 01:55:10,692
+Bu diploik algoritm dediği yapının başında girişinde, convolutional neural networkleri kullanarak kompleks öz mütelikleri çıkartır hale geldik.
+
+400
+01:55:10,692 --> 01:55:21,851
+Burada bu çıkartılan öz müteliklerin devamında da flick connected layer dediğimiz yapay siniro modellerini kullanarak
+
+401
+01:55:22,739 --> 01:55:30,979
+Bir classification ya da detection ya da segmentation gibi işlemleri yapabilir halde.
+
+402
+01:55:32,340 --> 01:55:48,979
+Burada CNN dediğimiz yapı, aslında çok önceden, 28'li yıllarda bu çoğun dediğimiz araç deneyimini denetli bir modelle yapmış aslında.
+
+403
+01:55:49,300 --> 01:56:04,720
+Fakat tabii o günün hesaplama platformları, onların gücü bu üretilen veriyi ya da öz nitelikleri işleyebilecek kapasitede değildi maalesef.
+
+404
+01:56:05,479 --> 01:56:11,359
+Şu anki en büyük avantaj bir bu yöntemlerle çok kompleks öz nitelikler üretebiliyoruz.
+
+405
+01:56:11,859 --> 01:56:15,779
+Bir de bu öz nitelikleri işleyebilecek güç makinelerimiz var.
+
+406
+01:56:16,148 --> 01:56:35,868
+Bunun için çok fazla veriye ihtiyacımız var. Örnek sayısının çok olması gerekiyor ve bu çok sayıda örneği de yine internet sayesinde kullanıcılara farkında olmadan oyunlaştırarak, veri etiketlemelerini sağlayarak çoğaltma yoluna gidilebiliyor.
+
+407
+01:56:43,188 --> 01:57:09,608
+Çalışmada, Solucional Learned Network'ı görüyorsunuz. İmput için 32'ye 32'lik bir image vermiş, input olarak. Komorasyon katmanında, bu arada 6 tane 28'e 28'lik alt küt üretmiş. Bu ne demek biliyor musunuz? 6 tane farklı çiltre kullanıyor.
+
+408
+01:57:12,051 --> 01:57:35,791
+3'e 3'lük gibi filtreler düşünebiliriz. Çünkü 3'e 3 dedim. Neden 3'e 3 dedim? 2 oradan gidecek. Hayır, 5'e 5 olması lazım buradaki filtreleri. Çünkü 2 sağdan, 2 soldan yemiş. Giriş görüntüsü 32'ye 32, çıkış görüntüsü 28'e 28. Kaça kaç filtre kullanmış? Size sorayım. Ben çözmeyeyim problemleri. Siz söyleyin bakalım.
+
+409
+01:57:41,460 --> 01:57:59,160
+Padding yapmadan, evet aynen öyle. Çünkü küçüldüğünü görüyoruz. Küçülme miktarı sağdan iki piksel, soldan iki piksel, üstten alttan iki piksel. Bu ne demek? Kaça kaçlıkmış konvasyon filtresi? Beşe beşmiş. Çünkü hani merkez noktasını örtüştürüyoruz.
+
+410
+01:58:04,787 --> 01:58:11,547
+Birbirinden farklı değerler olan konvolisyon kernelleri hazırlamış.
+
+411
+01:58:11,547 --> 01:58:14,107
+Ve onunla burada bir...
+
+412
+01:58:14,107 --> 01:58:17,107
+Yani 28-28.
+
+413
+01:58:17,107 --> 01:58:22,107
+Siz orayı okuyabiliyor musunuz? Ben de çok zor okuyorum ama...
+
+414
+01:58:22,107 --> 01:58:25,107
+Körnü değiştirdim ama...
+
+415
+01:58:25,107 --> 01:58:28,107
+Arkasından...
+
+416
+01:58:28,107 --> 01:58:31,371
+Kaça kaça düşüntü? 14-14.
+
+417
+01:58:36,051 --> 01:58:37,051
+Soflex.
+
+418
+01:58:38,051 --> 01:58:39,051
+Haa küçükmüş.
+
+419
+01:58:47,347 --> 01:58:56,547
+Aslında bu işlemler o zaman da düşünülmüş ama çok hayatta geçirilememiş. Bunu söylemekte maksadım.
+
+420
+01:58:57,547 --> 01:59:02,728
+Convolutional Neural Networkler. Peki, şimdi Convolutional Neural Networkler ne yapıyor?
+
+421
+01:59:02,728 --> 01:59:13,728
+Biraz ona şöyle hızlıca bakalım. Bir görüntünün içerisinde belli bir bölgeyi arıyorsunuz. Mesela diyelim ki...
+
+422
+01:59:14,431 --> 01:59:32,431
+İnanılmaz, bu kuşun kuşu var. O zaman ben bunun kuşunu tanıyabilecek, oradaki şekli algılayabilecek komolysiyon filtresine ihtiyaç duyuyorum.
+
+423
+01:59:32,431 --> 01:59:40,431
+Bu komolysiyon filtresinin yapısını, tabii bunu farklı rastgele değerler veriyoruz.
+
+424
+01:59:41,524 --> 01:59:56,164
+En iyi kat sayıların hangileri olduğunda ve nihayetinde her farklı resimde benzer şekil görmeli.
+
+425
+01:59:56,164 --> 02:00:02,164
+Alkut da diyor ki, buna benzer bir şekil üretti.
+
+426
+02:00:05,140 --> 02:00:13,739
+Konvolüsyon işlemini dersin ilk haftalarında anlattım size, hatırlıyorsunuz. Hatta korelasyonla arasındaki farkı konuşmuştuk, hatırlıyor musunuz?
+
+427
+02:00:16,220 --> 02:00:23,739
+Korelasyonla konvolüsyon aslında işlem olarak birebir aynı görünüyor. Çünkü simetrik olduğu için…
+
+428
+02:00:24,532 --> 02:00:37,032
+90 derece çevirdiğiniz zaman, pardon şöyle tam 180 derece döndürdüğünüzde, hem X'de hem Y'de döndürdüğünüzde matrisin katsayıları simetrik olduğu için aynı sonucu veriyor.
+
+429
+02:00:37,391 --> 02:00:45,912
+Korelasyon ve komolysiyon değişmiyor. Ama katsayılar farklı olsa değişiyor. Yani asimetrik olsa değişiyor.
+
+430
+02:00:46,332 --> 02:00:48,851
+Komolysiyon işleminin ne olduğunu biliyorsunuz.
+
+431
+02:00:50,192 --> 02:00:51,592
+Peki, şimdi.
+
+432
+02:00:53,043 --> 02:01:01,583
+Bu çok güzel bir örnek. Sol tarafta 6'ya altın bir inici var. Binary inici vermiş bize.
+
+433
+02:01:01,583 --> 02:01:14,483
+Sol tarafta da iki tane filtre vermiş. Farkı şu, birinci filtrede bakın mavi ile işaretlediği bir, bir, bir olan gözler diyor ki
+
+434
+02:01:18,100 --> 02:01:32,100
+algılamak için elverişli bir filtredir. İlkte filtre ise dikey doğrultudaki çizgileri algılamak için iyi bir filtre.
+
+435
+02:01:32,100 --> 02:01:36,100
+Burada görüyorsunuz, tipe bir çizgiye dikey doğrultuda bunları koymuş.
+
+436
+02:01:36,916 --> 02:01:46,016
+Ve sol tarafta gördüğümüz 6'ya 6'lık görüntünün içerisinde de bu patternleri yakalayabiliyorsunuz herhalde.
+
+437
+02:02:00,180 --> 02:02:12,180
+Şimdi bu filtrelerin giriş görüntüsünde uygulandığında o bölgeye nasıl bir sonuç ürettiğine odaklanalım.
+
+438
+02:02:14,180 --> 02:02:23,180
+Filtre 1'i aldım. Diagonal olan çizgileri aldılayacak bu. Animasyonluydu bu ya, olmadı.
+
+439
+02:02:39,764 --> 02:02:50,764
+Stryd'ı 1 aldım. Yani kaydırma 1 piksel kaydıracak konvolisyon filtresini görüntü üzerinde 1'er piksel kaydırarak uygulayacağım.
+
+440
+02:02:51,764 --> 02:03:00,764
+Filtre 1 ile görüntü arasında konvolisyon işlemi yaptığım zaman ne sonuç üretir? 3
+
+441
+02:03:04,500 --> 02:03:09,800
+Evet, para bir katıldım. Ne sonuç üretir? Bir.
+
+442
+02:03:14,195 --> 02:03:17,796
+Şurada iki tane de eksi iki vardı. Evet, eksi bir üretti.
+
+443
+02:03:24,787 --> 02:03:28,787
+Bir animasyon da bozulma olmuş. Onu görmedim.
+
+444
+02:03:30,787 --> 02:03:33,787
+Kaydırma işleminden sonra.
+
+445
+02:03:42,804 --> 02:03:44,804
+Senden anlatacağım [öğrenci].
+
+446
+02:03:44,804 --> 02:03:45,804
+Peki.
+
+447
+02:03:45,804 --> 02:03:47,804
+Tamam, teşekkürler.
+
+448
+02:03:53,108 --> 02:03:54,847
+Bunda ne sonuç vermiş?
+
+449
+02:04:07,988 --> 02:04:15,068
+Çünkü altıya altlık bir input image ile üçe üçlük maskı oturttuğum zaman dörde dörtlük çıkış üretirim.
+
+450
+02:04:15,068 --> 02:04:18,988
+Birer pixel sağdan soldan üstten alttan kaybettim.
+
+451
+02:04:20,028 --> 02:04:22,828
+Ve bunu bu şekilde yaptırdığımda
+
+452
+02:04:24,108 --> 02:04:25,908
+Peki burada iki tane
+
+453
+02:04:27,948 --> 02:04:32,828
+büyük değeri elde ettim diyor. Bu iki tane göz aslında o
+
+454
+02:04:34,676 --> 02:04:47,555
+Konvolüsyon filtrenin konvolüsyon sonucu bununla örtüşen, buna uyumlu olan bölgede en büyük sonucu üretiliyor.
+
+455
+02:04:47,555 --> 02:04:54,515
+Yani eğer ben gayonay çizgiyi arıyorsam, burada kullandığım bu filtreler iyi sonuç verecek.
+
+456
+02:04:56,055 --> 02:04:59,975
+Şimdi biz bunları eğer böyle elle organize ediyor olsak arkadaşlar.
+
+457
+02:05:00,884 --> 02:05:25,863
+Aklımıza gelen şeyler sınırlı. Bu hem craft of feature için de bu geçerli. Ama CNN dediğimiz yapıda milyon tane farklı şey deniyor. Kat sayı koyuyor bu filtrenin içerisine ve hangisinin en iyi olduğunu bilmeye çalışıyor. Dolayısıyla o maskeyi benim elle hazırlayıp vermem.
+
+458
+02:05:26,452 --> 02:05:32,412
+Sınırlı bir başarı getirirken, onun bunu arayarak bulması daha büyük başarı getirir.
+
+459
+02:05:32,412 --> 02:05:46,052
+O yüzden CNN Network'ü Future Extract etmek için bizden daha iyi, insanın görebileceğinden daha kompleks öz nitelikleri dayabiliyor.
+
+460
+02:05:47,060 --> 02:05:54,740
+Ve bu işlemi diğer filtre içinde oluşturduğumda iki tane dörde dörklük bir altı bitiriyoruz.
+
+461
+02:05:54,740 --> 02:06:08,260
+İki filtre yapmadığım için şekil küçüldü. Altıya altı olan dörde dört boyutunda bir altıta dönüşmüş oldu.
+
+462
+02:06:09,740 --> 02:06:12,140
+Renkli görüntü geldiğinde ne yapıyoruz?
+
+463
+02:06:13,268 --> 02:06:26,427
+3 tane renk kanalı var. RGB renk kanalları var. Bu RGB kanalları üzerinde bir renk kanalı için ayrı bir konusyon filtresine ihtiyacım var. Çok teşekkür ederim.
+
+464
+02:06:29,187 --> 02:06:40,427
+Renkli görüntüleri işlerken az önce binary bir inici için 3'e 3'lük mask kullanırken şimdi ne yaptı? Bu 3'e 3'lü masklarda...
+
+465
+02:06:41,043 --> 02:06:46,344
+Her bir renk kanalı için bir tane kullanıcı ayıcı 3'e çıktı bunların sayısı.
+
+466
+02:06:47,644 --> 02:06:54,043
+Input'un özelliğine bağlı olarak kullanacağınız filtreleri siz belirliyorsunuz.
+
+467
+02:06:54,963 --> 02:07:07,043
+Giriş görüntüsü, renkli görüntü ise ben 3'ü 3, 3 çarpı 3 bir filtre kullanacağım ve bunlardan 3 kanalı olduğu için çarpı 3 kullanacağım diyebilirsiniz.
+
+468
+02:07:07,539 --> 02:07:09,180
+Bir şey olabilir.
+
+469
+02:07:10,479 --> 02:07:13,039
+Renk bileşeninden dolayı çarpı 3.
+
+470
+02:07:14,039 --> 02:07:16,199
+3 tane olacağı anlamına gelir.
+
+471
+02:07:16,659 --> 02:07:20,920
+Bunların kaç adet olacağını, yani böyle kaç tane kültüre vereceğim?
+
+472
+02:07:21,019 --> 02:07:24,060
+Burada mesela örnek 2 tane kültüre demek.
+
+473
+02:07:25,899 --> 02:07:28,560
+Bunu sormadım. Güzel, sorayım.
+
+474
+02:07:33,363 --> 02:07:33,644
+Könü
+
+475
+02:07:37,939 --> 02:07:47,379
+Bu şekilde bir filtreyi görüyorsunuz. 3'e 3'lük bir filtre ve her bir renk kanalı için bir tane var. Bu ne altı üretir? 3 tane mi üretir?
+
+476
+02:07:47,379 --> 02:07:49,799
+3 tane mi üretir?
+
+477
+02:07:53,652 --> 02:08:02,652
+Topluyor. Herkes kanalını bağımsız çalışmaya çalışıyor. 3 boyutlu yapıyorsunuz konvolisyon işlemi. Lütfen rgb.
+
+478
+02:08:02,652 --> 02:08:13,652
+Tamam. Bunun output'u yani giriş görüntüsü 6'ya 6, giriş görüntüsü 6'ya 6 ve rgb.
+
+479
+02:08:14,387 --> 02:08:16,387
+Üç renk kanalımız var.
+
+480
+02:08:16,387 --> 02:08:25,887
+Ve varsayalım ki burada iki tane filtre uyguladık. Filtrelerin boyutu 3x3x3. Bir de renkten geliyor.
+
+481
+02:08:25,887 --> 02:08:27,887
+Output ne oluyor?
+
+482
+02:08:27,887 --> 02:08:28,887
+M artı.
+
+483
+02:08:28,887 --> 02:08:29,887
+Hayır.
+
+484
+02:08:29,887 --> 02:08:33,887
+RGB ilmece olarak kullanmıyor artık.
+
+485
+02:08:33,887 --> 02:08:34,887
+Tamam.
+
+486
+02:08:35,887 --> 02:08:36,887
+Hayır.
+
+487
+02:08:36,887 --> 02:08:38,887
+Hayır değil.
+
+488
+02:08:38,887 --> 02:08:41,775
+Burada çalışan mantık yani.
+
+489
+02:08:41,775 --> 02:08:51,095
+Bizim kullandığımız süreçlerde üç boyutlu konvolisyon işlemi yapıyoruz. Örneklerini göreceksiniz. Daha çok örnek yapacağız.
+
+490
+02:08:51,095 --> 02:09:04,775
+Orada size bunların arasında hep bu filtre boyutları ve output'un sıklıkla soruyor olacağım. Ne output üretti? Ürettiği output'un size ne olur? Ezbere gitmeyelim.
+
+491
+02:09:10,579 --> 02:09:16,179
+O eskiden artık öyle değil. Kesinlikle yapılmıyor.
+
+492
+02:09:16,779 --> 02:09:28,979
+Şimdi biraz CNN'e giriş yaptık. Ben burada kapatı bitireceğim. Önümüzdeki hafta bunların daha matematiğine girerek.
+
+493
+02:09:29,587 --> 02:09:45,427
+İşte RGB, grayscale örneklerle, değişik hebatlarda bu işlemlere, artık Deep Learning'e doğru ilerliyoruz. Ne anlatacağım önümüzdeki hafta programda?
+
+494
+02:10:02,996 --> 02:10:03,996
+Genel.
+
+495
+02:10:09,996 --> 02:10:10,996
+Hızlı gitmişiz biz.
+
+496
+02:10:11,996 --> 02:10:18,996
+Konuşmanın nördünetverk, dip nördünetverk, max pooling konularını anlatacağım.
+
+497
+02:10:18,996 --> 02:10:22,996
+Oradaki filtre boyutlarına göre...
+
+498
+02:10:24,020 --> 02:10:31,620
+Alt bitimicinin boyutu ne olur vesaire onları baya detaylı konuşuyor olacağız. Bir hafta önden gidiyoruz. Güzel gelişme.
+
+499
+02:10:33,620 --> 02:10:38,620
+Şimdi biraz sizimiz kesildi galiba. Bir de şu şeyi...
+
+500
+02:10:39,620 --> 02:10:41,580
+...aklıyım üzerine.
+
+501
+02:10:45,619 --> 02:10:48,359
+Anlaşılmayan bir şey var mı? Sormak istediğini.
+
+502
+02:10:49,499 --> 02:10:51,579
+Hocam ben bir şey sorabilir miyim?
+
+503
+02:10:53,659 --> 02:11:02,779
+Bugün böyle çok ufak olumlarından dolayı verim alamadım. Haftaya böyle matematik kısmına geçeceksiniz de yüz yüzden olacak ders. Ona göre okula gelmeyi düşünüyorum.
+
+504
+02:11:03,252 --> 02:11:06,912
+Çünkü çok zorlandım bugün bir şeyle takip edip anlarken.
+
+505
+02:11:07,652 --> 02:11:12,312
+Kesinlikle haklısın ama bizim burada dersi yüz yüze yapma zorunluluğumuz var artık.
+
+506
+02:11:12,312 --> 02:11:13,972
+Yani hibrite geçiriyoruz.
+
+507
+02:11:15,412 --> 02:11:22,372
+Sınıfta yapacağım. Gelirseniz bence de daha verimli olalım açıkçası.
+
+508
+02:11:23,952 --> 02:11:24,812
+Teşekkür ederim.
+
+509
+02:11:33,300 --> 02:11:36,960
+Bunu değiştirmiyoruz. Orada ben konuları yukarı çekelim.
+
+510
+02:11:44,948 --> 02:12:02,128
+Evet, bu arada projeyle ilgili de tekrar söylemiş olayım. Ben size doğrudan şu konuyu çalışın demiyorum. Projede CVPR konferansının 2022 bildirilerine bakıyorsunuz.
+
+511
+02:12:08,659 --> 02:12:22,659
+Burada herkesin çalışma alanı farklı olabilir. Elektronikten gelen var, makine bölümünden gelen arkadaşlar var.
+
+512
+02:12:22,659 --> 02:12:35,659
+Repositör üzerinden bir alanınıza göre bu bildirileri açıp, yani önce başlıklarını şöyle bir tarayabilirsiniz.
+
+513
+02:12:48,724 --> 02:12:57,904
+CWPR 2022 Access, böyle bir sitelerinden bütün bildirilere erişebiliyorsunuz.
+
+514
+02:12:58,964 --> 02:13:02,924
+Bu bildirilerin önce şöyle hızlıca başlıklarına bakabilirsiniz.
+
+515
+02:13:03,144 --> 02:13:08,884
+Kendi ilgi duyduğu alana yakın bir konuyu seçebilirsiniz.
+
+516
+02:13:08,884 --> 02:13:15,044
+Ama aynı konu başlığını birden fazla öğrenci çözüntü istemiyorum. O yüzden ne yapıyoruz?
+
+517
+02:13:15,636 --> 02:13:39,436
+Online Yıldız Edüterede ders duvarına yazıyor. Kim önce yazarsa konu onundur. Tamam mı? Böyle bir çözüm. Yani bir konu seçtiğinizde önce gidip ders duvarına bakacaksınız. Bunu başka bir arkadaş almış olabilir mi? Eğer başka biri almışsa siz seçemiyorsunuz. Ona dikkat.
+
+518
+02:13:42,836 --> 02:13:51,836
+Oldukça fazla bildiri var burada. Bunları taradığınızda eminim ilginizi çekecek bir şey yakalayabilirsiniz. Ne yapacağız çalışmada?
+
+519
+02:13:58,579 --> 02:14:21,619
+Önce makalenin bir özetini çıkartmanız. Bana özet çıkarım dediğimde 10 sayfalık makaleyi 20 sayfa olarak özetleyip getirmeyin. Özetle baya bir özet istiyorum. Ama konuda mesela bir dataset kullandıysa, dataset siz erişebiliyor musunuz?
+
+520
+02:14:22,100 --> 02:14:34,939
+Erişebiliyorsanız, basit olsa da bir takım işlemleri kendiniz yapabilirsiniz. Bu bildiride kullanılan veriyle birlikte kodu da bazen hitaba atabiliyorlar.
+
+521
+02:14:34,939 --> 02:14:44,439
+Hitaptan kodu indirip deneyebilirsiniz. Yani çok şey öğretebilir seçeceğiniz makale size. Hem makale yazmayı.
+
+522
+02:14:45,043 --> 02:15:09,043
+Hem okumayı hem de oradaki çalışmanın bir benzerini yapmayı öğretir. O yüzden proje için şimdiden başlamakta fayda var. Dersin son iki ya da üç haftası, eğer oradaki süreyi arttırabilirsek üç hafta da olabilir bu. Her öğrenci kendi çalıştığı...
+
+523
+02:15:10,644 --> 02:15:35,844
+Proje ile ilgili, makale ile ilgili bize bir sunum yapacak. Çok uzun değil. Buradaki çalışmalar genelde 10 sayfa içinde. Bu 11 sayfalık bir çalışma mesela. Bir de şeyi önereceğim size. Bir makale okurken bunun verdiği, referans verdiği makalelere de bakın. Özellikle yöntem noktasında. Related work noktasında.
+
+524
+02:15:36,275 --> 02:15:39,775
+Hangi çalışmalara referans ver?
+
+525
+02:15:44,051 --> 02:15:51,051
+Anlamadığımız noktalarda gidip onları da okuyarak ya da kısaca göz gezdirerek…
+
+526
+02:16:01,492 --> 02:16:10,452
+Bayağı vesairelerle sonuçlarını burada vermiş.
+
+527
+02:16:11,632 --> 02:16:25,452
+Evet, projeyle ilgili konuştuk. Bir de ikinci ödevimiz vardı. Bugün birinci ödevin son teslim tarihiydi. Bu akşam gece 12'ye kadar yükleyebiliyorsunuz.
+
+528
+02:16:25,876 --> 02:16:43,456
+Ondan sonra ikinci ödevi sisteme yükleyeceğim. İkinci ödevi hatırlarsanız Dogma'nın Integral Differential Operatory ile Iris Detection yapacağız.
+
+529
+02:16:44,376 --> 02:16:51,296
+Bu biris data seti var. Public bir data set ama şifreli.
+
+530
+02:16:51,827 --> 02:16:56,768
+Download ettikten sonra bir şifreye ihtiyacınız olacak. Ben onu da paylaşacağım sizinle.
+
+531
+02:16:57,948 --> 02:17:09,247
+Sadece derste ödev yapmak için kullanacaksınız. Bundan yayın yapmak isterseniz mutlaka o ilgili siteden kendi e-mail adresinizle talepte bulunmanız lazım.
+
+532
+02:17:10,907 --> 02:17:17,407
+Benim verdiğim şifre sadece benim kullanımım için geçerliydi. Onu söyleyeyim.
+
+533
+02:17:17,843 --> 02:17:22,843
+Yayın yaparken kendiniz tekrar istemek zorunda kalırsınız eğer ihtiyaç duyarsanız.
+
+534
+02:17:24,883 --> 02:17:36,423
+O ödevle ilgili de şunu söyleyelim. Ödevde İntegro Differential Operator'un matematiğini baya anlattım.
+
+535
+02:17:36,423 --> 02:17:42,363
+Eğer anlaşılmayan bir şey varsa haftaya tahtada bir daha konuşulur. Anlatabilirim.
+
+536
+02:17:45,940 --> 02:18:09,080
+Matlab'da hazır kodu vardı. Herkes çok rahat bulabilir. Ben de buldum. İndirdim, baktım adam nasıl yazmış diye. Çok beğendim, güzel yazmış dedim. Ama sonra dedim ki, yazılan her bir satırı tek tek anlayabiliyor muyum? Çünkü matematik ortada, kod karşında. Eğer o ilişkiyi kurabiliyorsanız bu kodu kullanabilirsiniz.
+
+537
+02:18:09,843 --> 02:18:33,483
+Ama anlamak için çaba harcayın. Çünkü o da size bir şey öğretiyor. Mesela o integral differential operatörü ilk MATLAB kodunu indirdiğimde hiç o kodu öyle yazmak aklıma gelmezdi. Çok beğendim. Mesela düşünce şeklimi, grubikimi. Çünkü orada bir çember denklemi var. Çemberin üzerinde ben...
+
+538
+02:18:35,347 --> 02:18:42,067
+Yarı çapı vererek noktaları bulacaktım falan. O öyle yapmamış. Daha farklı bir yoldan gitmiş.
+
+539
+02:18:42,927 --> 02:18:54,067
+Dediğim gibi hazır kod var. İndirin, inceleyin. Ama kendinize bir şeyler katmaya çalışın. O zaman faydası olur.
+
+540
+02:18:54,868 --> 02:19:21,288
+Getirir, oraya koyarsınız ödev yaptım diye. Bir de ben bu ödevden sonra, ikinci ödevden sonra bir demo sesini yapıyorum. Demo sesinde kodunuzu açıp bana anlatın diyorum. Hatta satır veriyorum. Şu satırda niye bu işi yapmış diyorum. Eğer onu anlamadıysanız, ödevi verseniz bile puan alamıyorsunuz demo sesinde. Böyle ilginç bir değerlendirme şeklim var.
+
+541
+02:19:22,644 --> 02:19:27,864
+Amacım ne? Sizi bir şeyler öğretmek. Eziyet etmek değilim.
+
+542
+02:19:30,424 --> 02:19:32,603
+Her haftaya görüşmek üzere.
+
+543
+02:19:36,340 --> 02:19:37,180
+Teşekkürler hocam.
+
+544
+02:19:37,399 --> 02:19:38,680
+Teşekkür ederim hocam. Sağ olun.
+
+545
+02:19:39,680 --> 02:19:46,319
+Evet, bakayım şimdi ekrandan. Kim en son ayrılıyorsa makinanın başında oturmuyor demektir. Ben bu çekmiği yapıyorum hep.
+
+546
+02:19:47,500 --> 02:19:50,079
+Hocam, Songe hocam çok kısa bir şey sorsam son olarak.
+
+547
+02:19:51,500 --> 02:19:57,020
+Şimdi bu online devam etme durumu üniversitenin kararı o yönde mi şu anda hocam kesin?
+
+548
+02:19:57,479 --> 02:19:57,880
+Evet.
+
+549
+02:19:58,720 --> 02:20:02,316
+Yani online devam edecek hani şey mi acaba hani...
+
+550
+02:20:02,484 --> 02:20:08,164
+Online devam edecek de isteyen yüz yüze katılabilir mi? Yoksa yüz yüze devam edecek, isteyen online katılabilir mi oluyor?
+
+551
+02:20:08,324 --> 02:20:09,404
+Yüz yüze devam edecek.
+
+552
+02:20:12,103 --> 02:20:13,103
+Anladım hocam.
+
+553
+02:20:13,664 --> 02:20:23,064
+Yani şöyle açıkladı. Bir de şöyle, dersten verim alamadığını söyleyen arkadaşlara şöyle bir tavsiyem olacak. Dersin önceki yıl videoları arşivde var.
+
+554
+02:20:23,763 --> 02:20:50,484
+Bu seneki kayıtlar dışında önceki sene kayıtlarına da erişebiliyorsunuz. Önceki sene tümüyle online yaptığım için belki şey olabilir, tablet üzerinde yazıp çizdiğim için belki daha kolay anlaşılabilir. Bir oraya bakın, anlamadığınız konuları orada varsa. Ama tabii videonun içinde konuyu bulmak falan biraz vakit alabilir.
+
+555
+02:20:51,252 --> 02:21:02,731
+Ama ben açıkçası buradayım. Siz de gelin. Hava güzel, kampüs güzel. Çok zor olmayacaksa eğer burada sizi görmeyi isterim açıkçası. Tamam mı?
+
+556
+02:21:03,832 --> 02:21:05,592
+Teşekkür ederim hocam. Tamam, sağ olun.
+
+557
+02:21:05,592 --> 02:21:07,092
+Hoşçakalın.
+
+558
+02:21:09,132 --> 02:21:12,812
+İki, dört. Artık işi.
+
+559
+02:21:14,432 --> 02:21:15,932
+İşi ekranda duruyor.
