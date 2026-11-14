@@ -1,0 +1,1243 @@
+1
+00:00:47,316 --> 00:00:48,236
+[öğrenci], [öğrenci].
+
+2
+00:00:52,404 --> 00:00:56,204
+Merhaba arkadaşlar. Bir beş dakikaya başlıyoruz.
+
+3
+00:00:57,984 --> 00:00:59,124
+Tamam hocam.
+
+4
+00:03:47,092 --> 00:04:03,552
+Evet, şu an saat 15.04 başlayabiliriz. Öncelikle arkadaşlar bugün dersi online'da yapıyorum ama ders normalde yüz yüze yapılıyor.
+
+5
+00:04:04,000 --> 00:04:25,279
+Bu hafta sadece iş yoğunluğundan ve burada yapılacak bir toplantıdan dolayı Yıldız Üniversitesi'ne geçemediğim için toplantı sebebiyle ders online yapma ihtiyacı doğdu. Normalde dersimiz yüz yüze yapılacak. Sadece böyle.
+
+6
+00:04:25,908 --> 00:04:34,807
+dönemlerde arada bir online olabilir. Ama ben size önceden bilgilendirme maili gönderiyorum zaten.
+
+7
+00:04:34,807 --> 00:04:37,388
+Şimdi
+
+8
+00:04:42,196 --> 00:04:46,236
+Bu dersle ilgili bir saniye önce şunu yapmam gerekiyor.
+
+9
+00:04:48,936 --> 00:04:54,496
+Participation, invite deyip şuradan, orientation.
+
+10
+00:05:57,139 --> 00:06:05,459
+Derse katılamayan bazı arkadaşlar olmuş onlara toplantı linki olarak ders linkini gönderdim.
+
+11
+00:06:07,732 --> 00:06:25,692
+Şu an kaç kişi olduk? 17 kişiyiz. Bu üniversite mail adresinizi takip etmenizde fayda var. Dersle ilgili duyuruları, değişiklikleri buradan alabilirsiniz. E-mailinizi mutlaka kontrol edin arkadaşlar.
+
+12
+00:06:25,692 --> 00:06:32,632
+Bu hafta, hemen ekran paylaşarak devam edelim.
+
+13
+00:06:40,052 --> 00:06:55,572
+Geçen hafta başladığımız data preprocessing konusu vardı. Veri ön işleme tarafında belli tekniklerden bahsettik. Verinin yapısından, nümerik ve kategorik veri türlerinden bahsettik.
+
+14
+00:07:04,052 --> 00:07:15,091
+problemler olabilir. Bu ham veride karşılaştığımız problemlerin üstesinden gelmek için yapmamız gereken işlem adımlarından bahsettik.
+
+15
+00:07:15,731 --> 00:07:26,711
+Geçen haftaki dersimizde özellikle sayısal veri için bir normalizasyon adımı çok önemli. Burada kullanabileceğimiz normalizasyon adımlarından bahsettim.
+
+16
+00:07:30,836 --> 00:07:36,436
+Data smoothing işleminden ve bunun çeşitlerinden bahsettik geçen haftaki dersimizde.
+
+17
+00:07:37,855 --> 00:07:47,216
+Bu ders slide'larını Avesis'te paylaştım. Hem geçen haftanın hem bu haftanın ders notlarını oradan görebilirsiniz.
+
+18
+00:07:49,355 --> 00:07:53,216
+Yine ham verinin dönüştürülmesinde.
+
+19
+00:07:54,324 --> 00:08:07,923
+Belki bir öz nitelik çıkarma tekniği gibi de düşünebiliriz. Farklar ve oranlar üzerinden yeni öz nitelikler türetebileceğimizden bahsettik. Buna örnek olarak da Body Mass Index örneğini verdik.
+
+20
+00:08:14,995 --> 00:08:22,615
+eksik verinin tamamlanmasında ve eksiklerin giderilmesinde kullanılan teknikleri konuştuk.
+
+21
+00:08:27,732 --> 00:08:35,172
+Zamana bağlı verinin nasıl işlenebileceğini konuştuk ve aykırı değer analizinden bahsettik geçen hafta.
+
+22
+00:08:35,172 --> 00:08:38,156
+Aykırı değer analizinde...
+
+23
+00:08:38,451 --> 00:08:53,192
+Verinin yapısına, doğasına uygun olmayan bazı değerler içerebilir. Bu tür durumlarda aykırı değerlerini tespit edilip veri setinden temizlenmesi gerekiyor.
+
+24
+00:08:54,351 --> 00:09:00,932
+Outlier analizinde kullanabileceğimiz tekniklerden biri Boxplot tekniği. Geçen hafta bununla ilgili bir örnek de yapmıştık.
+
+25
+00:09:03,827 --> 00:09:31,827
+İzlediğimiz yol, veri setini önce sıralamak, sıralanmış veri içerisinde medyanı bulmak, burada M diye gösterilmiş olan medyan değerini bulmak, veriyi medyana göre iki parçaya ayırmak, sıralı bir nümerik dizi üzerinde medyanı belirledikten sonra medyandan küçük olanlar, ayrı bir diziye medyandan büyük olanlar.
+
+26
+00:09:31,827 --> 00:09:50,147
+Ayrı bir diziye alınıyor ve bu iki dizi içerisinde yeniden ortanca eleman dediğimiz medyan hesaplanıyor. Bunlara Q1 ve Q3 diyoruz. Q1 aslında %75. eleman, Q3'de %25 ve %75. elemanlar diye isimlendiriliyor.
+
+27
+00:09:51,587 --> 00:09:59,748
+Elimizde bir de bu sıralı dizinin en küçük ve en büyük elemanları var. Dolayısıyla veriyi beş tane sayıyla özetleyebiliyoruz.
+
+28
+00:09:59,827 --> 00:10:03,827
+Ve bundan faydalanarak bir box plot oluşturup...
+
+29
+00:10:06,836 --> 00:10:24,676
+Çeyrekler arasındaki açıklığı önce ölçüyoruz. IQR dediğimiz değer, Q3 ile Q1 arasındaki farkı bularak, bunun bir buçuk katı ki bu kat sayı değişebilir. İsterseniz bir, isterseniz iki kullanabilirsiniz ama biz derste bir buçuk kullanacağız.
+
+30
+00:10:25,375 --> 00:10:32,895
+Buna göre aykırı değerleri belirleyebiliyoruz. Geçen hafta bununla ilgili bir örnek de yapmıştık.
+
+31
+00:10:34,964 --> 00:10:49,304
+Boxplot analizinde çizdiğimiz şekil buna benzer bir formda oluyor. Ortadaki çizgi medyanı gösteriyor. Üstteki Boxplot'un çizgisi Q3'ü, alttaki Q1'i gösteriyor.
+
+32
+00:10:50,144 --> 00:10:58,384
+Buna göre minimum ve maksimum değerlerin bu sınırlar içerisinde olup olmadığına bakarak bir aykırı değer analizi yapabiliyoruz.
+
+33
+00:10:59,316 --> 00:11:06,056
+Şimdi bununla ilgili, Boxplot analiziyle ilgili size iki tane daha yöntem göstereceğim dedim.
+
+34
+00:11:06,596 --> 00:11:09,476
+Bu iki tane yöntemi tahtada anlatmayı tercih ediyorum.
+
+35
+00:11:09,615 --> 00:11:14,516
+Çünkü nümerik çözülecek bir problem üzerinden bu anlatım gerçekleşecek.
+
+36
+00:11:14,635 --> 00:11:17,875
+O yüzden bu hafta Boxplot analizini tamamlayamayacağız.
+
+37
+00:11:18,615 --> 00:11:27,296
+Ama önümüzdeki hafta yüz yüze ders yaptığımızda tahtada bununla ilgili, lütfen bana hatırlatın, o iki tekniği bir örnek üzerinden.
+
+38
+00:11:27,316 --> 00:11:41,036
+Ben size anlatacağım. Bu haftaki konumuz data reduction ile devam edecek. Bu arada sesle ilgili herhangi bir sorun var mı? Beni rahat duyabiliyor musunuz?
+
+39
+00:11:43,496 --> 00:11:44,816
+Duyuyoruz hocam, sorun yok.
+
+40
+00:11:44,816 --> 00:11:52,576
+Sorun yok. Tamam, çok güzel. Bu haftaki konu başlığımız.
+
+41
+00:11:55,572 --> 00:11:57,052
+Data Reduction olacak.
+
+42
+00:11:59,351 --> 00:12:07,531
+Evet, Data Reduction için şöyle yapalım, Slide Show'a da geçirelim.
+
+43
+00:12:10,591 --> 00:12:11,652
+Tam ekran yaptık.
+
+44
+00:12:14,652 --> 00:12:19,652
+Evet, veri madenciliğinde...
+
+45
+00:12:20,768 --> 00:12:26,908
+Amaç odaklı bir veri topluyorsunuz. İşte bir doğal bir işleme problemi için çalışıyor olabilirsiniz.
+
+46
+00:12:27,687 --> 00:12:36,187
+Çörn analizi yapıyor olabilirsiniz. Mesela e-maillerin spam olup olmadığını tespit etmeye yönelik bir çalışma yapıyor olabilirsiniz.
+
+47
+00:12:36,968 --> 00:12:48,648
+Yaptığımız tüm çalışmalarda bu konu odaklı girdi olabilecek parametreleri belirliyoruz ve bunları bir öz nitelik olarak veri setimize ekliyoruz.
+
+48
+00:12:48,768 --> 00:12:56,168
+Ama bu öz niteliklerin sayısı bazı uygulamalarda çok fazla olabiliyor.
+
+49
+00:12:56,168 --> 00:13:05,927
+Mesela biz Çörn analiziyle ilgili yapmış olduğumuz çalışmada 150'ye yakın her sample için 150'ye yakın öz nitelik üretmiştik.
+
+50
+00:13:06,768 --> 00:13:12,139
+Bu öz nitelikleri üretiyoruz ama bunların hepsi gerçekten...
+
+51
+00:13:13,107 --> 00:13:25,048
+Sınıf belirlemede etkili midir, değil midir buna karar verip bazı önemsiz olan öz nitelikleri bu veri setinden elememiz gerekiyor.
+
+52
+00:13:25,207 --> 00:13:37,087
+Yani data reduction dediğimizde aslında ilk aklımıza gelen şey, konu öz nitelikleri azaltmak şeklinde olabilir.
+
+53
+00:13:38,163 --> 00:13:56,864
+Şimdi data reduction başlığı altında önce boyut indirgeme kavramından bahsedeceğiz. Bunun bize sağladığı avantajlar nelerdir? Bunları konuşacağız data reduction'ın.
+
+54
+00:13:57,683 --> 00:14:01,264
+İlk kullanacağımız teknik bir feature selection.
+
+55
+00:14:01,683 --> 00:14:06,983
+ve bir de feature composition diye ikiye ayrılıyor. Bunlardan bahsedeceğim.
+
+56
+00:14:11,043 --> 00:14:18,803
+Elimizdeki veri etiketli ise yani sınıf bilgisi varsa kullanabileceğimiz teknikler ayrı oluyor.
+
+57
+00:14:19,231 --> 00:14:25,051
+Sınıf etiketi olmayan veri üzerinde çalışırken daha farklı teknikler kullanıyoruz.
+
+58
+00:14:25,151 --> 00:14:29,871
+Orada mesela Entropy-Based Teknik dediğimiz teknikler devreye giriyor.
+
+59
+00:14:30,491 --> 00:14:32,191
+Hangi durumda bunu kullanıyoruz?
+
+60
+00:14:32,811 --> 00:14:36,851
+Sınıf etiketi olmadığı veri için düşünebiliyoruz.
+
+61
+00:14:37,395 --> 00:14:49,395
+Ayrıca bu başlık altında key merge teknik dediğimiz bir teknik kullanılarak veri üzerinde, nümerik bir veriyi nasıl bir...
+
+62
+00:14:50,515 --> 00:15:12,095
+Aralıklarla ifade edilen bir veri haline dönüştürebiliriz. Bunları konuşuyor olacağız. Bu konuda yaklaşık iki hafta işleyeceğiz. Oldukça kapsamı geniş bir konu başlıyor aslında. Data Reduction konusu.
+
+63
+00:15:14,004 --> 00:15:36,304
+Biz dimensions of large data sets dediğimiz zaman burada sözünü ettiğimiz dimension nedir? Aslında bir, öz niteliklerin sayısı bir boyuttur. Bunun yanında verinin içerisindeki sample sayısı bizim için bir boyutu olabilir.
+
+64
+00:15:42,004 --> 00:15:54,824
+Pre-processed Data Set dediği üç tane boyuttan bahsediliyor. Az önce belirttiğim gibi birincisi veri setindeki öz nitelikler bir boyutu ifade eder.
+
+65
+00:15:56,124 --> 00:16:07,044
+Sample'lar ayrı bir boyuttur ve bu tablo içerisinde yer alan her sample'ın aldığı, ilgili öz nitelik için aldığı değer de ayrı bir boyuttur.
+
+66
+00:16:10,004 --> 00:16:17,984
+Data Reduction dediğimizde bu üç başlık altında veriyi ayrı ayrı nasıl indirgeriz? Bunu tartışacağız.
+
+67
+00:16:22,100 --> 00:16:30,500
+Bir veri seti örneği üzerinden gidecek olursak, aslında biz bir veri setinde her bir satıra bir sample diyoruz.
+
+68
+00:16:30,500 --> 00:16:41,879
+İşte mesela bu bir hastanedeki hastaları gösteren bir veri seti ise her satıra bir hastayı yerleştiriyoruz. Bu her bir satır bir sample'ı gösteriyor.
+
+69
+00:16:42,388 --> 00:16:49,128
+Her hastayla ilgili aldığımız işte tetkiklerin sonuçlarını bir sütuna yerleştiriyoruz. Bunlar öz niteliklerimiz.
+
+70
+00:16:49,868 --> 00:16:54,908
+Ve bu tabloda yer alan belli değerler var, belli sayılar var.
+
+71
+00:16:56,048 --> 00:17:00,388
+Sonuçta ne yapıyoruz? Bu üç alanda veri indirgeme...
+
+72
+00:17:01,152 --> 00:17:09,912
+yapabiliyoruz. Ama yaygın olarak yaptığımız aslında feature reduction, yani öz nitelik sayısını azaltma şeklinde oluyor.
+
+73
+00:17:09,912 --> 00:17:23,172
+Çünkü sample sayısını azaltmak çok başvurduğumuz bir yol değil. Ama hani çok tutarsız veriler varsa veya çok sayıda sample varsa belki kullanılabilir.
+
+74
+00:17:29,152 --> 00:17:56,372
+Azaltma yoluna gitmiyoruz. Ama öz nitelikleri azaltma yoluna gidiyoruz. Çünkü değersiz olan, bizi sonuca götürmeyen parametrelerin o veri setinde yer alması aslında işi gereksiz yere uzatan bir değer olmuş oluyor. Yani bunların burada olmaması bu işi daha hızlı yapmamızı sağlayabiliyor.
+
+75
+00:17:58,099 --> 00:17:59,099
+Evet.
+
+76
+00:18:02,675 --> 00:18:21,355
+Veri indirgeme ile ilgili burada çok güzel bir örnek var. Aslına bakarsanız önceki hafta bahsettiğimiz Body Mass Index, vücut kitle indeksi biliyorsunuz kişinin boy ve kilosu üzerinden elde ettiğimiz bir değer.
+
+77
+00:18:21,779 --> 00:18:36,779
+O zaman bu kişinin boyu ve kilosunun tutulduğu bir veri seti düşünün. Sağlık içinde kullanılıyor olabilir. Ben bu öz niteliklerin ikisini ayrı ayrı kullanmak yerine bu ikisinden üretilmiş olan...
+
+78
+00:18:36,915 --> 00:18:43,056
+Body Mass Index'i tek başına kullansam aslında çok daha iyi bir gösterge olabilir.
+
+79
+00:18:43,655 --> 00:18:48,135
+Ve bu açıdan baktığımızda aslında bu da bir veri indirgemedir.
+
+80
+00:18:48,395 --> 00:18:50,996
+Çünkü ben iki tane öz niteliğine yapmış oluyorum.
+
+81
+00:18:51,375 --> 00:18:52,675
+Bire düşürmüş oluyorum.
+
+82
+00:18:52,996 --> 00:18:54,755
+Tek bir sayıya dönüştürmüş oluyorum.
+
+83
+00:18:54,755 --> 00:19:04,195
+O nedenle bu örneği de bir data reduction veya future reduction olarak düşünebilirsiniz.
+
+84
+00:19:10,259 --> 00:19:23,019
+Neden veri indirgeme işlemine ihtiyaç duyuyoruz? Yani öz nitelik azaltmak, değer azaltmak ya da sample azaltmak bize ne avantaj sağlar?
+
+85
+00:19:23,019 --> 00:19:36,119
+Tabii ki birinci sırada computing time. Daha basit bir veri, daha hızlı işlenebilir bir veri anlamına geliyor. Böylece bu hızlı işlediğimiz veriyle.
+
+86
+00:19:37,140 --> 00:19:55,980
+daha hızlı sonuç alabiliyoruz. İkinci önemli konu şu, aslında daha ayırt edici olan öz nitelikleri kullanarak daha güvenilir, başarımı daha yüksek olan modeller üretebiliyoruz.
+
+87
+00:19:56,620 --> 00:20:00,780
+Gereksiz kullanılan öz nitelikler bizi hedeften saptırabiliyor.
+
+88
+00:20:01,183 --> 00:20:12,203
+O nedenle veriyi indirgemek, gereksiz ve bizi sonuca götürmeyecek alanların veriden çıkartılması daha doğru bir model oluşturmamızı sağlıyor.
+
+89
+00:20:13,403 --> 00:20:27,384
+Üçüncüsü, Representation of Data Mining Model dediği, üçüncü başlık da aslında şöyle özetlenebilir, çok fazla öz nitelik olan bir veriyi ifade etmek,
+
+90
+00:20:27,923 --> 00:20:49,123
+Visualize etmek, görüntülemek daha zordur. Ama veriyi basitleştirip, önemli ön işlemleri sadece veri içerisinde bırakmak demek, aslında daha anlaşılır bir veri haline dönüştürmek, belki bunu daha kolay görselleştirmek anlamına da gelir.
+
+91
+00:20:51,635 --> 00:21:04,675
+Sonuç olarak, ilk olarak bu indirgeme işlemlerini öz nitelikler tarafında gerçekleştireceğiz.
+
+92
+00:21:06,056 --> 00:21:12,435
+Fakat bu feature reduction başlığını da ikiye ayırarak devam edeceğim.
+
+93
+00:21:18,420 --> 00:21:24,980
+iki şekilde yapabiliriz. Birincisi Future Selection. Şöyle düşünün, varsayalım ki bir veri setinde
+
+94
+00:21:26,132 --> 00:21:52,872
+10 tane öz nitelik var. Ben bu 10 tane öz niteliği inceleyerek, tabii bu sınıf etiketli bir veri olduğunu düşünüyorum. Bu 10 tane öz niteliği inceleyerek hangilerinin daha sınıflamada etkin olduğuna karar verip bu 10 tanenin içerisinden en başarılı 5 tanesini ya da 4 tanesini kullanacağım şeklinde bir karar alabiliyorum.
+
+95
+00:21:54,132 --> 00:22:04,052
+Yani ne yapmış oluyoruz? Mevcut öz niteliklerden, belli öz nitelikleri, ayırt edici öz niteliklerden dört tanesini seçerek devam edeceğim diyorum.
+
+96
+00:22:04,052 --> 00:22:07,012
+Veya feature composition işlemi yapabilirim.
+
+97
+00:22:08,564 --> 00:22:21,564
+Şu anlama geliyor. Öz nitelikleri birleştirerek, kompoz ederek yeni öz nitelikler türetiyorsunuz ve bu yeni ürettiğiniz öz niteliklerden...
+
+98
+00:22:22,319 --> 00:22:27,819
+Belki bizi yine sonuca götürecek en başarılı olanları seçiyorsunuz.
+
+99
+00:22:28,319 --> 00:22:35,559
+Feature composition işlemi aslında şöyle de düşünülebilir. Bizim öz nitelik uzayı dediğimiz bir uzayımız var.
+
+100
+00:22:35,559 --> 00:22:41,559
+Varsayalım ki üç tane öz niteliğimiz var. Üç boyutlu bir...
+
+101
+00:22:43,700 --> 00:23:02,700
+hacim içerisinde değerlendirme yapıyorsunuz. Fakat bu üç boyutlu uzaydan koordinat sistemini, farklı bir koordinat sistemine taşıyarak veri daha iyi...
+
+102
+00:23:04,019 --> 00:23:13,771
+hale getirebiliyorsunuz. Yani daha anlaşılır, daha ayrıştırılabilir bir forma getirebiliyorsunuz. Bununla ilgili...
+
+103
+00:23:14,355 --> 00:23:30,796
+Kullandığımız teknik, temel bileşen analizi dediğimiz bir teknik var. Principal Component Analysis diye geçiyor. Bu dersin kapsamında size bunu detaylı olarak anlatacağım. Bir hafta dersimizin, önümüzdeki hafta dersimizin konusu bu olacak.
+
+104
+00:23:34,451 --> 00:23:53,672
+Temel bileşen analizi yaparak bir dönüşüm gerçekleştiriyoruz ve bu dönüşüm ile veriyi daha ayrıştırılabilir öz nitelikleri belirleme konusunda bize yol gösterici oluyor ve veriyi daha ayırt edilebilir bir forma getiriyor.
+
+105
+00:23:53,672 --> 00:24:00,572
+O nedenle feature composition önemli işlem adımlarından biri.
+
+106
+00:24:01,332 --> 00:24:06,572
+Her başlığı ayrı ayrı konuşacağız. İlk olarak Feature Selection ile başlayacağım.
+
+107
+00:24:07,667 --> 00:24:27,927
+Feature Selection, az önce söyledim. Ne yapıyoruz? Veri setinde varsayalım ki 10 tane öz nitelik var. İçinden seçiyoruz. Şu 5 tanesi ya da 4 tanesi bizim için yeterlidir diyoruz. Ama bu 3, 4 ya da 5 tane öz niteliği nasıl seçebiliriz? Bunu konuşacağız.
+
+108
+00:24:35,667 --> 00:24:48,287
+ve varyansa dayalı bir çözüm olacak. Bu ortalama değer ve varyansa dayalı çözüm de yalnız sınıf bilgisinin elimizde var olduğunu kabul edeceğiz.
+
+109
+00:24:48,287 --> 00:25:02,287
+Yani tüm sampulların hangi sınıfa ait olduğunu başta biliyoruz. Bunun üzerinden bir karar vereceğiz. Hangi öz nitelikleri seçeceğimize buna göre karar vereceğiz.
+
+110
+00:25:03,827 --> 00:25:15,647
+Ama sınıf etiketli veri üzerinde ortalama değer ve varyansı hesaplarken de sınıf içi ortalamaları ve sınıf içi varyanslarına bakarak bir karar vereceğiz.
+
+111
+00:25:16,707 --> 00:25:18,867
+Peki nasıl çalışıyor bu sistem?
+
+112
+00:25:19,947 --> 00:25:24,067
+Feature Selection için Mean and Variance model dediğimiz.
+
+113
+00:25:25,428 --> 00:25:33,368
+model için konuşuyorum. Burada verilen örnek üzerinden gidecek olursak,
+
+114
+00:25:39,892 --> 00:25:49,652
+A ve B dediği, şey, sets of feature values measured for two different classes demiş.
+
+115
+00:25:51,859 --> 00:26:04,919
+Elimizde iki farklı sınıf var ve bu iki farklı sınıf için öz niteliklerimiz var. Bu iki farklı sınıfın sample sayıları da N1 ve N2 olarak verilmiş.
+
+116
+00:26:06,459 --> 00:26:19,119
+Şimdi A ve B sınıfı dediğimiz iki tane sınıfımız var. Sınıf içi varyansıları ve her bir öz nitelik için, tek bir öz nitelik için aldığımı varsayım.
+
+117
+00:26:19,859 --> 00:26:30,239
+X öz niteliğinin diyelim ki A sınıfı için sınıf içi varyansını, B sınıfı için sınıf içi varyansını ölçüyorum.
+
+118
+00:26:30,239 --> 00:26:35,819
+Benzer şekilde A sınıfı sample'ların ortalamasını
+
+119
+00:26:36,160 --> 00:26:40,620
+ve B sınıfı sample'ların ortalamasını hesaplıyorum.
+
+120
+00:26:41,500 --> 00:26:46,460
+Bu hesaplamalar sonucunda şöyle bir inceleme yapmam gerekiyor.
+
+121
+00:26:46,860 --> 00:26:50,519
+Bir test parametresi üretiyorum her bir öz nitelik için.
+
+122
+00:26:50,519 --> 00:26:51,940
+Diyorum ki,
+
+123
+00:26:52,788 --> 00:27:04,687
+Diyelim ki birinci öz niteliğimiz için A sınıfı ve B sınıfı örneklerin ortalama değerleri arasındaki açıklığı buluyorum.
+
+124
+00:27:04,687 --> 00:27:10,867
+Bu ilk test eşitliğinin sol tarafında yer alan ifade.
+
+125
+00:27:11,467 --> 00:27:19,087
+Min A-min B dediği A sınıfı ve B sınıfı sample'lar arasındaki uzaklık bölü, bölü.
+
+126
+00:27:19,380 --> 00:27:32,920
+S, E, A, Eksi, B dediği, yukarıda bize verilmiş olan ifade. Bu da aslında neyi özetliyor bize? Varyansları toplamının kare kökü.
+
+127
+00:27:33,556 --> 00:27:50,855
+Bir sınıfın varyansı ne kadar büyükse bu ifade o kadar büyük çıkar ve şurada verilen kesirli ifadenin paydasındaki sayı ne kadar büyükse aslında bu sayı o kadar küçük çıkar.
+
+128
+00:27:50,855 --> 00:27:58,076
+Bu da aslında bizim için bu öz niteliği değersiz hale getirir.
+
+129
+00:28:01,491 --> 00:28:09,071
+değerli olması demek, A sınıfını B sınıfından ayırt etmede etkin olması ile mümkün olur.
+
+130
+00:28:09,731 --> 00:28:20,651
+O zaman şuradaki test eşitliğinin kesrin üst tarafında, bakın bu bir kesirli ifade, kesrin üstünde ortalamaları arasındaki uzaklık diyor.
+
+131
+00:28:21,791 --> 00:28:24,671
+Bu uzaklık ne kadar fazla ise,
+
+132
+00:28:25,268 --> 00:28:41,428
+Aslında o özüntüleğin ayırt ediciliği o kadar yüksek demektir. Yani biz test ifadesinin büyük çıkması için kesrin üstündeki sayının büyük olmasını, kesrin altındaki sayının küçük olmasını isteriz.
+
+133
+00:28:42,420 --> 00:28:48,660
+Böylece bu öz nitelik bizim için ayırt ediciliği yüksek bir öz nitelik haline gelir.
+
+134
+00:28:49,140 --> 00:28:55,840
+Ve bunu seçerken de belli bir eşik değerinin üstünde olanları, bakın büyük threshold value diyor.
+
+135
+00:28:56,680 --> 00:28:58,800
+Benim mouse hareketlerimi görebiliyor musunuz?
+
+136
+00:29:01,060 --> 00:29:03,420
+Evet, görünüyor.
+
+137
+00:29:03,955 --> 00:29:16,435
+Peki, güzel. Çünkü slide'da nereye bakmanız gerektiğini belirtmek istiyorum o sırada. Bu şekilde bir analiz ile test işlemi yapıyoruz.
+
+138
+00:29:16,435 --> 00:29:29,259
+Şimdi bu eşitliği lütfen bir kenara not alın. Ne dedik? Ortalamaları arasındaki uzaklık, min A-min B dedik. Bölü aşağıda da...
+
+139
+00:29:29,715 --> 00:29:44,175
+SEA-B dediğimiz ifade, yani onu da açık şeklinde yazacak olursak, kare kök içerisinde, varyans A bölü N1, N1 nedir? Birinci sınıftaki, A sınıfındaki sample sayısı demek.
+
+140
+00:29:48,403 --> 00:29:59,104
+N2, bu da B sınıfındaki sample sayısı demek. Bu iki örnek sayısını oranlayarak aslında bu varyansların toplamını alıyor.
+
+141
+00:30:00,024 --> 00:30:12,104
+Ve tekrar söylüyorum, test işleminin sonucu her bir öz nitelik için ne kadar büyük çıkarsa bizim için o kadar değerli ve ayırt ediciliği yüksek bir öz niteliktir anlamına gelir.
+
+142
+00:30:13,011 --> 00:30:34,011
+Şimdi bir örnek yapacağım. Örnek de şöyle olsun. Bakın çok basit ve konuyu anlayabileceğimiz bir örnek. Bu veri seti, küçük bir veri seti, kaç tane sample var burada? Hadi bakalım biraz interaktif ders yapalım duyayım sesinize. Kaç tane sample var?
+
+143
+00:30:34,011 --> 00:30:36,011
+Sekiz hocam. Altı.
+
+144
+00:30:36,011 --> 00:30:37,271
+Altı, evet.
+
+145
+00:30:37,940 --> 00:30:49,339
+Six samples, tamam, global. Veri setinde kaç tane öz nitelik var? En son C yazan class label'ı gösteriyor yalnız.
+
+146
+00:30:50,279 --> 00:30:50,940
+İki tane hocam.
+
+147
+00:30:51,019 --> 00:30:56,359
+O zaman iki tane. Aslında data set with three features demiş buraya ama three değil, two features.
+
+148
+00:30:56,359 --> 00:31:04,440
+Çünkü C dediğimiz bizim class label'ımızı gösteriyor. İki tane öz niteliğimiz var. İki öz niteliğimiz de nümerik.
+
+149
+00:31:04,819 --> 00:31:29,900
+Şimdi biz feature selection yapacağız. Feature selection ne demekti? X ve Y diye iki tane öz niteliğim var. Acaba, azaltacağız ya sayı olarak, ikiden hangisini seçsem daha iyi olur? Hangisi A sınıfını B sınıfından ayırt etmede o kadar etkindir? Buna karar vermek için bu yöntemi kullanacağım. Tamam mı?
+
+150
+00:31:30,483 --> 00:31:54,124
+Şimdi o zaman şöyle bir yol izleyelim. Lütfen bu ekranda gördüğünüz dataset'in şöyle bir fotoğrafını alabilirsiniz. Önünüzde bir kağıda not alabilirsiniz. Ben de hemen ekranın bir fotoğrafını alarak yanımda bunu bulundurmayı istiyorum. Nasıl bir yol izliyoruz? Bakalım.
+
+151
+00:31:58,420 --> 00:32:08,220
+X öz niteliğinin A sınıfı ve B sınıfı için olanlarını birbirinden ayırdım.
+
+152
+00:32:08,960 --> 00:32:15,900
+Şöyle yapacağım. X öz niteliği, burada da A sınıfı B sınıfı yazıyor.
+
+153
+00:32:16,500 --> 00:32:20,340
+A sınıfına ait olan sample'ların X değerlerini
+
+154
+00:32:21,107 --> 00:32:33,447
+Bir yere not alıyorum. Sonra B sınıfına ait olan 3 tane sample'ın X öz niteliğinin değerlerini ayrı bir yere yazıyorum, bakıyorum. Bakın, lütfen dikkat.
+
+155
+00:32:33,844 --> 00:32:43,923
+Şimdi X öz niteliği ile Y öz niteliği arasında bir seçme yapacağım ya, neye göre seçeceğim? A'yı B'den ayırt etmede hangisi daha etkindir görmeye çalışıyorum?
+
+156
+00:32:43,923 --> 00:32:53,144
+Şimdi bakın, X öz niteliğinin A sınıfına ait olan sampulları 0.3, 0.6, 0.5.
+
+157
+00:32:53,523 --> 00:33:06,623
+En küçük değer 0.3, en büyük değer 0.6, işte bunun ortalamasını hesapladım 0.46 ve yine bu üç tane sayıdan bir varyans hesapladım. Şu çıktı 0.023 diyelim.
+
+158
+00:33:07,892 --> 00:33:17,791
+Yine X özün teliğinin B sınıfına ait sampullarına baktığım zaman, B sınıfına ait sampulların en küçük değeri 0.2, en büyüğü 0.7.
+
+159
+00:33:18,332 --> 00:33:29,971
+Bilmiyorum, şöyle bir X ekseni diye bir eksen çizseniz, eksenin üzerine bu sayıları sıralı olarak yazsanız, A sınıfı ve B sınıfı sampulların iç içe geçmiş olduğunu görebiliyorsunuz, değil mi?
+
+160
+00:33:31,124 --> 00:33:52,903
+Ne demek istediğim anlaşıldı mı? X ekseni diye bir eksen çizin. 0-2 var, 0-3 var, 0-4, 0-5, 0-6, 0-7 diye gidiyor. 0-2, B sınıfı, 0-3, A sınıfı. 0-4, B sınıfı ne olmuş? Birbiri içine geçmiş. Yani ben X sayılarına bakarak A'yı B'den çok kolay ayırt edemiyorum farkındaysanız.
+
+161
+00:33:52,903 --> 00:33:58,903
+Ama bunu tabii ki gözle yapmayacağız. Bunu matematiksel olarak yapacağımız için buraya...
+
+162
+00:33:59,124 --> 00:34:14,623
+Bunların ortalamalarını çıkardık. O zaman ne oldu? İkisinin ortalaması birbirine çok yakın çıktı. Gördünüz mü? X-80'in de A sınıfına ait sampulların ortalaması 0.46, B sınıfına ait sampulların ortalaması 0.43 çıktı.
+
+163
+00:34:15,104 --> 00:34:26,063
+Şimdi Y tarafından bakacak olursak, Y öz niteliği için bakın. Y öz niteliğinin A sınıfına ait değerleri
+
+164
+00:34:26,643 --> 00:34:35,243
+0, 5 en küçük, 0, 7 en büyük değer almış. 0, 5, 0, 6, 0, 7 değerlerini almış. Bunun ortalaması 0, 6.
+
+165
+00:34:36,863 --> 00:34:45,863
+Y öz niteliğinin B sınıfı için olan değerleri 0, 7'den başlıyor, 0, 9'a kadar değişiyor. Ne oldu? İç içe geçmemiş bunlar.
+
+166
+00:34:48,063 --> 00:34:52,683
+Anlaşılıyor mu ne demek istediğim? Bu durumda, hani biz de başta ne dedik?
+
+167
+00:34:53,427 --> 00:35:02,167
+Bu veri setinde X ve Y diye iki tane öz nitelik var. Ben hangi öz niteliği seçmem gerektiğine karar vereceğim.
+
+168
+00:35:02,867 --> 00:35:07,427
+O zaman aslında gözle yaptığım bu inceleme sonunda Y öz niteliğinin...
+
+169
+00:35:08,628 --> 00:35:15,988
+A'yı B'den ayırt etmede daha etkin olduğunu söylüyor bana. Daha gözle bakarak bunu söyleyebiliyorum.
+
+170
+00:35:16,328 --> 00:35:21,028
+Peki, matematiksel model de söylesin. Bir pekiştirelim yaptığımız işi.
+
+171
+00:35:23,708 --> 00:35:28,868
+Y öz niteliğinin A sınıfta ait sampullarının ortalaması 0.6.
+
+172
+00:35:31,059 --> 00:35:45,680
+Y öz niteliğinin B sınıfına ait sample'larının ortalama 0.8. Biz ne demiştik? Test işleminde ortalamaları arasındaki fark ne kadar büyükse o kadar iyidir demiştik.
+
+173
+00:35:45,680 --> 00:35:58,420
+Burada bir şey vardı, Annotation Tool. Şunu kullanayım birazcık ben size. Şunu söylemek istiyorum. Şu iki sayı arasındaki fark.
+
+174
+00:35:58,931 --> 00:36:06,931
+ne kadar büyükse ayırt ediciliği o kadar fazladır. X öz niteliği için baktığımızda...
+
+175
+00:36:07,284 --> 00:36:20,003
+Bu ortalamalar arasındaki fark çok küçük ama Y öz niteliği için baktığımızda ortalamalar arasındaki farkın daha büyük olduğunu görüyoruz. Doğru mu?
+
+176
+00:36:20,344 --> 00:36:31,804
+Böylece aslında işte bizi sonuca götüren Y'nin daha başarılı bir şekilde A sınıfını B sınıfından ayırt ettiğini söyleyen şey bu.
+
+177
+00:36:32,563 --> 00:36:58,103
+Tabii bunu varyansları kullanarak da yapacağız. Varyanslarını hesaplıyoruz aynı şekilde. Her bir öz niteliğin ilgili sınıfı içerisindeki varyanslarını hesaplıyoruz. Bu varyans ifadeleri üzerinden SE dediğimiz değeri hesaplıyoruz. Her öz nitelik için. Ve bu şekilde test işlemine yerleştiriyoruz bunu.
+
+178
+00:36:58,739 --> 00:37:01,519
+Şimdi bir sonraki slide'a geçelim.
+
+179
+00:37:02,779 --> 00:37:04,479
+Hocam geçmeden bir şey sorabilir miyim?
+
+180
+00:37:04,779 --> 00:37:05,179
+Buyurun.
+
+181
+00:37:05,844 --> 00:37:21,003
+Şeyi ben düşündüm de, ortalamaları belki İKSA ile XB'nin veya YA ile YB'nin hangisini fiyaslıyorsak, onları birbirine yakın olduğu halde, varyansı birbirinden çok farklı olduğu durumlarda ne yapabiliriz acaba?
+
+182
+00:37:21,564 --> 00:37:30,623
+Tabii öyle sıkıntılar da var ama onu bize test işleminin sonucu söyleyecek zaten. Hani test işlemi, aslında biz bunu gözle yapmayacağız.
+
+183
+00:37:31,699 --> 00:37:45,460
+Matematiksel olarak model bize bunu söyleyecek. Dolayısıyla o aslında varyansı da işin içine kattığı için bunlar arasında bir sıralama yapmamıza imkan sağlayacak. Şimdi onu göreceğiz.
+
+184
+00:37:46,460 --> 00:37:47,340
+Tamam hocam.
+
+185
+00:37:49,907 --> 00:37:56,887
+Bir sonraki slide'da işte varyansların toplamı üzerinden ifade hesaplandı.
+
+186
+00:37:56,887 --> 00:38:13,887
+Sonra test X ve test Y işlemleri için X öz niteliğinin A ve B sınıfı için ortalamaları arasındaki fark bölü varyanslar toplamı oranlandığında X öz niteliği için test işleminin sonucu
+
+187
+00:38:16,371 --> 00:38:39,051
+Yine şu şeyi açacağım. Annotation tool'u kullanayım. Şöyle bir şey vardı şurada. Bunu kullanabiliriz belki. Şunu hesapladık. Bakın. X öz niteliği için test işleminin sonucu 0,0735 çıkmış.
+
+188
+00:38:39,764 --> 00:38:45,404
+Y öz niteliği için aynı test işleminin sonucu 2.66 çıkmış.
+
+189
+00:38:46,604 --> 00:38:54,423
+Burada diyor ki biz bunu bir eşik değeriyle karşılaştıralım. Eşik değeri threshold dediğimiz değeri 0.5 kabul edelim.
+
+190
+00:38:54,604 --> 00:39:00,604
+0.5 eşiğini geçiyorsa eğer bir öz nitelik bizim için değerlidir diyebiliriz.
+
+191
+00:39:00,604 --> 00:39:06,184
+Ama tabii bu öz niteliğin yani eşik değerini koymak çok kolay değil.
+
+192
+00:39:06,708 --> 00:39:21,287
+O yüzden sadece test sonuçlarını sıralayıp, en yüksek olan dan en düşüğe doğru sıralayıp, bunlar arasında, burada sadece iki tane öz nitelik için yapıyoruz ya bu işlemi, çok kolay görebiliyorsunuz.
+
+193
+00:39:21,287 --> 00:39:34,108
+Biri 2.66 çıkmış, öbürü 0.07 çıkmış. Çok bariz bir şekilde Y öz niteliğinin A ve B sınıflarını ayırt etmede daha etkin olduğunu söylüyor bize.
+
+194
+00:39:34,675 --> 00:39:50,875
+Dolayısıyla, burada iki özüntelik değil de on tane özüntelik olsaydı, on tane özüntelik için de bu test işlemini yapıp, test skorlarını büyükten küçüğe doğru sıralayıp bu kararı vermek mümkün aslında.
+
+195
+00:40:01,235 --> 00:40:19,336
+iki çıktı ve bir de bir çıktı. Yani belli bir noktada bunları kesip bu eşik değerin şu olsun ve bunun altında ise test değerleri, test skorları ben bu öz nitelikleri veri setinden silip atacağım diyebiliyorsunuz.
+
+196
+00:40:21,155 --> 00:40:23,936
+Anlaşıldı mı ne demek istediğim sorunuz var mıdır?
+
+197
+00:40:25,940 --> 00:40:36,179
+Ben şey sorabilirim hocam, burada bulduğumuz 2.66 ya da 0.07 rakamlarının bir ismi var mı?
+
+198
+00:40:36,700 --> 00:40:39,260
+Test skoru.
+
+199
+00:40:39,360 --> 00:40:40,559
+Test skoru, tamam.
+
+200
+00:40:40,559 --> 00:40:43,980
+Şurada bir denklem vardı ya, hemen göstereceğim.
+
+201
+00:40:44,179 --> 00:40:46,900
+Clear all drawings diyelim, şurayı kapatalım.
+
+202
+00:40:47,572 --> 00:40:53,552
+Şu ekranda bir test skorundan bahsetmiştik burada.
+
+203
+00:40:58,911 --> 00:41:05,612
+Şuradaki işlem ile elde ettiğimiz bir değer bu test skoru diyoruz.
+
+204
+00:41:06,032 --> 00:41:09,512
+Bu test skorunun sonucunu bir threshold ile karşılaştırıyoruz.
+
+205
+00:41:09,512 --> 00:41:13,411
+Sağ tarafta o threshold değeri ile karşılaştırmayı göstermiş.
+
+206
+00:41:14,052 --> 00:41:14,432
+Şurada.
+
+207
+00:41:14,751 --> 00:41:15,972
+Tamamdır hocam, teşekkür ederim.
+
+208
+00:41:16,472 --> 00:41:35,371
+Ama test skoru dediğimiz şey, ortalamalar arasındaki fark, bölü, varyanslar toplamı. Burada S-B gibi düşünün bunu. Arada çıkarma işlemi gibi değil de, T-B gibi. A ile B'nin arasındaki şeyi burada, varyanslar toplamını gösteriyor bu.
+
+209
+00:41:38,708 --> 00:41:40,387
+Evet, başka soru var mıdır?
+
+210
+00:41:44,179 --> 00:42:07,959
+Basit bir örnek. Dediğim gibi X ve Y iki tane öz nitelik vardı. Bu X, Y dışında burada Z, Omega gibi işte ne bileyim 10'a yakın öz nitelik olabilirdi. Hiç önemli değil. Her bir öz nitelik için kendi içinde bu sütün doğrultusunda A ve B sınıfına ait sampulları birbirinden ayırıp
+
+211
+00:42:08,307 --> 00:42:12,108
+Aynı test işlemini her öz nitelik için yapmanız gerekiyor.
+
+212
+00:42:12,608 --> 00:42:19,427
+Ve her öz nitelik için hesapladığınız test skorunu sonucunu büyükten küçüğe doğru sıralayıp,
+
+213
+00:42:19,427 --> 00:42:25,648
+işte en değerli öz niteliğin hangisi olduğunu buradan görebiliyorsunuz.
+
+214
+00:42:26,648 --> 00:42:29,728
+Bu örnekle de bunu görmüş olduk.
+
+215
+00:42:32,052 --> 00:42:35,992
+Evet, sorunuz var mı? Başka soru var mı?
+
+216
+00:42:39,052 --> 00:42:43,952
+Evet, [öğrenci].
+
+217
+00:42:44,371 --> 00:43:08,771
+Geliyorum hocam. Ben de şeyi soracaktım. Bu threshold değeri içinde dike mesela işte ortalamaya göre ama atıyorum farzı misal birinde yaşlar olsun, birinde de birle işte dört aralığı bir şey. Bu threshold değerini belirlemek için böyle farklı yöntemler var mı? Yoksa gerçekten hani sadece böyle gözle büyükten küçüğe sıralayıp işte farzı misal ortalarda bir yerlerde beş var bunu beşe alalım mı diyoruz?
+
+218
+00:43:12,371 --> 00:43:29,891
+Yani şöyle düşün, büyükten küçüğe sıraladın, işte en büyük sayı burada verdik ya 2.66 çıktı test skorunda. Öbürü 2.5 çıktı, öbürü 2 çıktı. Ama bir sonraki değer, diyelim ki 0.4 çıktı. Atlama yapıyor.
+
+219
+00:43:30,420 --> 00:43:46,420
+Yani çok böyle birbirine benzer çıkan değerler belli bir noktada bir atlama yapıyorsa, mesela o atlama yaptığı, aralığın büyük olduğu yere threshold koyabiliyorsun. Bunlar hep tecrübe aslında, veri setleriyle uğraştıkça bu kararı alabiliyorsunuz.
+
+220
+00:43:49,480 --> 00:43:51,099
+Tamam, çok teşekkür ederim.
+
+221
+00:43:51,420 --> 00:43:51,980
+Rica ederim.
+
+222
+00:43:54,675 --> 00:43:58,655
+Evet, başka soru yoksa devam edelim.
+
+223
+00:43:58,996 --> 00:44:05,835
+Future Composition ile ilgili dedik ya iki şekilde yapabiliriz öz nitelik azaltma işlemini.
+
+224
+00:44:06,655 --> 00:44:12,036
+Future Composition işlemini temel bileşen analizi ile yapıyoruz.
+
+225
+00:44:12,235 --> 00:44:16,375
+Temel bileşen analizini önümüzdeki hafta çok detaylı anlatacağım size.
+
+226
+00:44:16,375 --> 00:44:22,175
+Haftaya bayağı iş bıraktık yani bir boxplot outlier analizi anlatacağım.
+
+227
+00:44:22,675 --> 00:44:28,675
+Örnek ve bir de principal komponent analizi önümüzdeki hafta anlatacağız.
+
+228
+00:44:31,295 --> 00:44:41,516
+Evet, şimdi yeni bir tekniğe geçeceğim. Yine öz nitelikleri sıralamak için kullanılan bir teknik. Bu teknik şey.
+
+229
+00:44:42,036 --> 00:44:57,335
+Sınıf etiketli olmayan veri varsa elimizde nasıl çalışırızı buluyor. Ama bir ara vereceğim. Aradan sonra 15 dakika ara saat başı ikinci derse devam ediyoruz. Tamam mı?
+
+230
+00:44:58,132 --> 00:45:03,072
+Hocam bir şey söyleyeyim, derse takdim edelim. Kaçak kadar devam ederiz acaba? Bir dersim daha var da.
+
+231
+00:45:03,072 --> 00:45:21,392
+Ben bir saat daha ders yapacağım arkadaşlar. Çünkü slide ile çok fazla ders anlatılmıyor. Tahtayı kullanamadığım için. Bugün tablet de almadım ben yanıma. Aslında tablet olsaydı çok güzel yazıp çizip anlatırdım. İki saat toplamda ders yapacağım herhalde.
+
+232
+00:45:22,392 --> 00:45:23,532
+Tamam hocam, teşekkür ederim.
+
+233
+00:45:23,871 --> 00:45:31,271
+Rica ederim. Evet. Stop Share diyelim. Saat başı görüşmek üzere.
+
+234
+00:45:31,271 --> 00:45:32,971
+Teşekkürler.
+
+235
+01:04:12,659 --> 01:04:14,079
+Hocam, sesiniz kapalı.
+
+236
+01:04:16,179 --> 01:04:33,619
+Evet, ara bitti, derse devam. Mikrofonu açmayı unutmuşum. Lütfen siz de bana selam vermekten çekinmeyin. Evet, bir 22 kişi birden konuşunca zor oluyor muhakkak ama ses gelsin lütfen. Yoksa duvara konuşuyor gibi hissediyorum.
+
+237
+01:04:34,771 --> 01:04:37,531
+Merhaba hocam.
+
+238
+01:04:37,731 --> 01:04:38,671
+Şekürler sağ olun.
+
+239
+01:04:40,411 --> 01:04:41,711
+Merhaba tekrar.
+
+240
+01:04:41,711 --> 01:04:43,711
+Şimdi...
+
+241
+01:04:44,592 --> 01:04:59,352
+Online derslerin zor tarafı bu. Biraz etkileşim olması gerekiyor. Soru sormaktan çekinmeyin, konuşmaktan çekinmeyin. El kaldırabilirsiniz. Hani karışıklık olmasını istemiyorsanız. O şekilde de ilerleyebiliriz.
+
+242
+01:05:00,412 --> 01:05:11,032
+Yani ümit ediyorum yüz yüze yapacağız dersleri ama dönem dönem böyle işte gerektiğinde şey yapabiliriz. Online ders de yapabiliriz.
+
+243
+01:05:11,443 --> 01:05:17,483
+Tek sıkıntı tahta kullanma mümkün olmazsa biraz daha zor tabii.
+
+244
+01:05:21,503 --> 01:05:26,143
+Hocam aslında ekranda müdahale edebilseniz o konuda da çok sıkıntı olmaz sanki.
+
+245
+01:05:27,324 --> 01:05:31,183
+Yani annotation tool kullanarak yapabiliyoruz tabii de.
+
+246
+01:05:32,023 --> 01:05:34,864
+Dediğim gibi tabletle o kadar güzel oluyor ki bu iş.
+
+247
+01:05:34,864 --> 01:05:38,203
+Yani ben en çok onu kullanmayı seviyorum.
+
+248
+01:05:39,411 --> 01:05:42,631
+problem çözerken çok rahat oluyor.
+
+249
+01:05:44,091 --> 01:05:44,591
+Şimdi
+
+250
+01:05:44,591 --> 01:05:53,891
+açmak istediğim slide'ı bulamadım. Biraz onunla uğraştık. Data Reduction bulduk.
+
+251
+01:05:55,891 --> 01:05:57,151
+Şimdi buradayız.
+
+252
+01:05:59,923 --> 01:06:14,844
+Tahta kullanıyor olsaydım, şimdi ben bunlarla ilgili mesela gruplamalar yapacaktım size. Neyse haftaya bunların üstünden kısaca tekrar geçeriz. Böylece o gruplamayı da gösterebilirim.
+
+253
+01:06:17,844 --> 01:06:18,683
+Tamamdır.
+
+254
+01:06:21,423 --> 01:06:22,263
+Şimdi
+
+255
+01:06:25,780 --> 01:06:32,380
+Feature Reduction konusunu aslında ikiye ayırabiliriz.
+
+256
+01:06:35,380 --> 01:06:41,540
+Feature Reduction'da bir supervised çözümler.
+
+257
+01:06:41,972 --> 01:06:52,812
+Bir de unsupervised çözümlerden bahsedebiliriz. Bu veri setinin etiketli ya da etiketsiz olması durumunda hangi yöntemi kullanacağımıza karar vermemizi sağlıyor.
+
+258
+01:06:54,392 --> 01:07:07,032
+Feature Reduction'da eğer elimizde etiketsiz bir veri varsa bu durumda az önce gösterdiğim mean and variance model dediğim modeli kullanamıyorsunuz.
+
+259
+01:07:08,755 --> 01:07:20,715
+Entropi tabanlı bir yönteme, entropi ölçüsü kullanmak ve bununla öz nitelikleri sıralamak gibi bir alternatif çözümümüz oluyor.
+
+260
+01:07:22,155 --> 01:07:25,755
+Ama bu çözümü konuşabilmek için...
+
+261
+01:07:26,099 --> 01:07:36,960
+Önce entropi nedir? Ondan bahsetmem lazım. Sonra entropiyi biz similarity üzerinden ölçeceğiz.
+
+262
+01:07:37,379 --> 01:07:46,079
+Similarity measure nedir? Biraz ondan bahsetmem gerekiyor. Sonra bu kavramları öğrendikten sonra bu tekniğin
+
+263
+01:07:46,547 --> 01:07:53,887
+Future ranking için, yani öz nitelikleri sıralamak için nasıl kullanılabileceğini ondan sonra anlatabilirim.
+
+264
+01:07:55,007 --> 01:07:59,807
+O yüzden kısaca bu konu başlıklarını burada değinmemiz gerekiyor.
+
+265
+01:08:01,228 --> 01:08:04,507
+Önce similarity'den başlayalım.
+
+266
+01:08:11,507 --> 01:08:15,927
+Ki benzerliği ölçmekten bahsediyoruz similarity dediğimizde.
+
+267
+01:08:16,587 --> 01:08:28,147
+Çünkü sınıf etiketi olmayan bir veride yapabileceğimiz tek şey sampların birbirine benzerliği üzerinden bir sonuç bulmak.
+
+268
+01:08:29,987 --> 01:08:34,507
+Peki similarity'yi benzerliğe hesaplarken...
+
+269
+01:08:35,184 --> 01:08:50,304
+Distance'dan da bahsetmemiz gerekiyor. Önce iki sample arasında özellikle nümerik bir veri setimiz varsa iki sample arasında öklit mesafesi dediğimiz mesafeyi ölçebiliyoruz mesela.
+
+270
+01:08:51,988 --> 01:09:04,968
+Sonra bulduğumuz bu distance measure'ı, D dediğimiz değeri, bu formülde gördüğümüz gibi bir dönüşümden geçirerek similarity olarak ifade edebiliyoruz.
+
+271
+01:09:05,028 --> 01:09:07,688
+Aslında distance ile similarity birbiriyle
+
+272
+01:09:08,212 --> 01:09:32,372
+Ters orantılı iki kavram. İki sample birbirine ne kadar, yani birbirleri arasındaki uzaklık ne kadar azsa benzerlik o kadar çoktur. Bakın kurduğum cümleye lütfen dikkat. İki sample arasındaki uzaklık ne kadar azsa benzerlik o kadar çoktur diyorum.
+
+273
+01:09:33,300 --> 01:09:37,940
+Distance'ın küçük olması, similarity'nin büyük olması anlamına geliyor.
+
+274
+01:09:39,120 --> 01:09:46,960
+Ve dolayısıyla buradaki formüldeki ifade de o yüzden böyle bir dönüşüme ihtiyaç duyuyor.
+
+275
+01:09:47,100 --> 01:09:54,860
+Distance'ı similarity'ye dönüştürmek için böyle bir denklem üzerinden bunu yapabiliriz.
+
+276
+01:09:55,980 --> 01:09:58,780
+Burada yer alan bir alfa parametresi var.
+
+277
+01:09:58,780 --> 01:10:00,000
+E üzeri eksi alfa.
+
+278
+01:10:00,000 --> 01:10:08,699
+Alfa Dij diyor. Bu alfa değerini işte şurada gördüğümüz şekilde hesaplayabiliriz.
+
+279
+01:10:14,452 --> 01:10:23,272
+Burada gördüğümüz D değeri ortalama mesafeyi gösterecek şekilde olursa eğer buradan bir alfa parametresi hesaplayabiliriz.
+
+280
+01:10:23,272 --> 01:10:36,092
+Bunu da yukarıdaki denklemde yerine yazarak bir i ile j sampulları arasındaki distansı bu iki sampulları arasındaki similarity olarak ifade edebilirim diyorum.
+
+281
+01:10:37,011 --> 01:10:50,231
+Yani değişik dönüşüm formülleri var. İlla bunu kullanmak zorunda da değiliz. Farklı dönüşüm formülleri kullanabiliyoruz. Peki, öklit mesafesi nedir? Önce nasıl hesaplanır? Ondan bahsedebiliriz.
+
+282
+01:10:52,372 --> 01:11:07,432
+İki tane sample arasında uzaklık hesaplamak istiyoruz. Burada diyor ki iki tane sample'ımız XE sample ile XJ sample'ı olsun diyor. Yani sample ID'si I ve J. X dediği bir dataset.
+
+283
+01:11:08,275 --> 01:11:17,876
+Bu X dataset'ini iki boyutlu düşünün lütfen. Çünkü bakın burada formülün içerisinde i virgül k, j virgül k diyor.
+
+284
+01:11:17,876 --> 01:11:33,876
+Yani benim dataset dediğim aslında bir X dataset'i bir matriz. Matrizin satırları sample'ları gösteriyor. Matriz sütunları ise feature'ları gösteriyor.
+
+285
+01:11:35,091 --> 01:11:37,551
+Evet [öğrenci], soru var galiba.
+
+286
+01:11:39,011 --> 01:11:44,311
+Evet hocam, bir slide önceki konuyla ilgili bir şey soracaktım da.
+
+287
+01:11:44,511 --> 01:11:44,832
+Buyurun.
+
+288
+01:11:44,832 --> 01:11:53,131
+Burada anladığım kadarıyla nümerik veriler olduğu zaman sıfıra yakınsa bu iki veri birbirine yakındır diyoruz ya.
+
+289
+01:11:53,671 --> 01:12:00,832
+Eğer bu verinin içinde yani bir sample'ın içindeki farklı parametrelerde nümerik olmayan veriler olursa,
+
+290
+01:12:01,536 --> 01:12:10,316
+O zaman bu yakınlık, uzaklık meselesini nasıl yapıyoruz? Mesela onları kodlayıp bir dönüşüm mü yapmaya çalışıyoruz? Ne yapıyoruz tam olarak?
+
+291
+01:12:10,671 --> 01:12:20,671
+Evet [öğrenci], güzel soru. Orada kategorik öz, yani veri seti tümüyle kategorik öz niteliklerden oluşuyorsa doğrudan similarity hesaplayabiliyoruz.
+
+292
+01:12:20,671 --> 01:12:30,451
+Bir takım similarity formülleri var kullandığımız. Similarity ölçmek için kullandığımız. Heming Distance, Jacquard Similarity.
+
+293
+01:12:30,863 --> 01:12:42,203
+gibi değişik metrikler var. Ama sadece tüm öz niteliklerin kategorik olduğu durumda onu kullanabiliyoruz. Orada hiç distance hesaplamıyoruz.
+
+294
+01:12:43,203 --> 01:12:50,683
+Ama bir veri setinin içinde hem nümerik hem kategorik öz nitelikler varsa, güzel soru, kategorik öz niteliğin
+
+295
+01:12:51,028 --> 01:13:18,847
+Diyelim ki gelir durumu diyor, low, medium, high gibi üç tane değer aldığını varsayalım. One hat encoding dediğimiz bir teknik ile bu üç tane distinct value dediğimiz, üç tane kategorik değeri birer öz nitelik gibi açıyorsunuz, yeni sütun ekliyorsunuz veri setine ve one hat encoding yaparak veriyi nümerik hale dönüştürüyorsunuz. Yani böyle teknikler var, evet.
+
+296
+01:13:19,028 --> 01:13:25,788
+Onlardan yer geldikçe zaten örneklerde bahsedeceğiz, göreceksiniz.
+
+297
+01:13:27,108 --> 01:13:28,268
+Tamam hocam, teşekkürler.
+
+298
+01:13:28,667 --> 01:13:29,387
+Rica ederim.
+
+299
+01:13:29,387 --> 01:13:31,244
+Şimdi...
+
+300
+01:13:31,444 --> 01:13:57,684
+Nümerik bir veri seti dedik. X data seti olsun, adı X olsun bu data setin. Bir matris olarak lütfen gözünüzün önüne getirin. Matrisin her bir satırı bir sample gösteriyor ve buradaki X değişkeninin ilk parametresi yani Y dediğim parametresi matrisin satır numarasını gösteriyor. Yani sample ID'yi gösteriyor.
+
+301
+01:13:59,444 --> 01:14:01,884
+Eksi ise yani K değeri
+
+302
+01:14:03,315 --> 01:14:24,956
+sütun numarasını gösteriyor. Aynı matrisi nasıl kodluyoruz? X'e 1,3 dediğimizde birinci satırın üçüncü sütunu. Burada birinci satır birinci sample'ı gösteriyor. Üçüncü sütun dediğimde üçüncü öz niteliği gösteriyor. Veri seti çünkü bir nedir? Az önce de gördük. Bir matris formunda.
+
+303
+01:14:31,315 --> 01:14:36,255
+Peki, i sample ile j sample arasındaki distance'ı hesaplamak istiyorum.
+
+304
+01:14:40,695 --> 01:14:42,855
+Sesim iyi geliyor mu?
+
+305
+01:14:44,435 --> 01:14:45,235
+Geliyor hocam.
+
+306
+01:14:45,835 --> 01:14:47,755
+Evet hocam.
+
+307
+01:14:50,275 --> 01:14:53,495
+Chatten yazar mısınız? Ben söylediklerinizi duyamıyorum.
+
+308
+01:15:09,492 --> 01:15:21,872
+geliyor diyorsunuz. Çünkü ekranımda iletişimde low quality diye bir şey yazdı. Emin olmak için sordum.
+
+309
+01:26:44,243 --> 01:26:46,984
+Hocayla iletişim kurabilen bir arkadaş var mı acaba?
+
+310
+01:26:56,275 --> 01:26:57,536
+The teacher not here.
+
+311
+01:27:12,692 --> 01:27:14,092
+ve internet kut.
