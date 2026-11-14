@@ -1,0 +1,1539 @@
+1
+00:01:10,900 --> 00:01:13,460
+Günaydın arkadaşlar. Ses geliyor mu?
+
+2
+00:01:14,500 --> 00:01:15,080
+Geliyor hocam.
+
+3
+00:01:15,080 --> 00:01:16,160
+Günaydın hocam.
+
+4
+00:01:16,240 --> 00:01:17,240
+Nasılsınız, iyi misiniz?
+
+5
+00:01:19,640 --> 00:01:20,820
+İyisiniz inşallah.
+
+6
+00:01:21,652 --> 00:01:49,531
+Evet, bugünkü konu başlığımız alan hesabı diyoruz. Biz zaten geçen haftalarda da Riemann toplamını vermiştik hatırlarsanız. Bir eğri altında kalan alanı bulmak için ne yapmıştık? Eğri altındaki bölgeyi dikdörtgenlere ayırıp, dikdörtgenlerin alanların toplamı şeklinde ifade edip buna Riemann toplamı dedik. Bunun limiti bize bölgenin alanını verirdi diyorduk. İşte şimdi biz bu sol tarafla uğraşıyorduk.
+
+7
+00:01:49,652 --> 00:01:59,251
+hatırlarsanız Riemann toplamını en sonunda giderken bize limiti işte diyecek ki eğri altındaki alandır. Onu biz şimdi belirli integralle şöyle ifade etmiş olacağız.
+
+8
+00:01:59,491 --> 00:02:17,611
+Yani bir sol tarafla ilgilendik. Şimdi sağ taraf kısım var. Yani A, B kapalı aralığında pozitif bir fonksiyon fx sıfırdan büyük eşit olmak üzere integral A'dan B'yi fx'de x integrali f'in grafiğinin x ekseni x eşittir A ve x eşittir B'ye doğruları arasında.
+
+9
+00:02:17,651 --> 00:02:45,651
+yöntemdeki alanı verir diyeceğiz şimdi. Yani Riemann toplamının limiti bize eşittir. Integral A'dan B'ye fxdx şeklinde ifade etmiş olacağız. Şimdi işimiz biraz daha kolay olacak. Biliyorsunuz Riemann toplamı hesaplamak biraz uzun uzun işlemler vardı. Burada integral'i bildiğimiz için bütün özelliklerini de vermiş olduk. Buna göre biz bir eğri altındaki alanı kolayca hesaplayabileceğiz. Yani sonuçta alan dediğimizde işte bu şekilde verilmiş.
+
+10
+00:02:45,651 --> 00:03:11,211
+çeşitmiş bir fonksiyon. İşte y eşitir fx fonksiyonu var. x ekseni, x eşitir a, x eşitir b'ye doğrular arasındaki bir bölge. Yani yer altında kalan bölgenin alanı hemen özet olarak ne diyoruz? İntegral a'dan b'ye fx, bx'i integral şeklinde verilir diyoruz. Örnekler üzerinde görmeye çalışalım. Fonksiyonumuz şu. 2 artı sinüs x bölü 2'nin karesi çarpı, kosinüs x bölü 2.
+
+11
+00:03:11,891 --> 00:03:13,707
+ve süreklik, bu.
+
+12
+00:03:14,099 --> 00:03:22,240
+Sonra x ekseni var. x eşittir 0 ve x eşittir pi arasında kalan alanı bulunuz diyoruz.
+
+13
+00:03:22,500 --> 00:03:27,019
+Tamam mı? Şimdi 0 pi arasında verilen fonksiyon pozitiftir.
+
+14
+00:03:27,180 --> 00:03:36,439
+Yani şu yukarıda fx büyük eşit 0 olmak üzere dediğimizde x 0 pi arasında verildiğine göre fonksiyonumuz pozitiftir.
+
+15
+00:03:36,439 --> 00:03:38,959
+Dolayısıyla alanı hemen kısaca ne diyeceğim?
+
+16
+00:03:42,099 --> 00:03:44,319
+fxdx
+
+17
+00:03:44,319 --> 00:03:45,560
+tamam mı?
+
+18
+00:03:45,876 --> 00:04:00,876
+Evet, işte alan dediğimiz ifade bu şekli karmaşık oldu. Hiçbir çizmeye bile gerek yok. Baktık, postik bir fonksiyondur. O zaman verilen aralıkta integralini alacağım. 0'dan pi'ye kadar fx'dx integral.
+
+19
+00:04:00,876 --> 00:04:13,515
+Şimdi gelelim böyle bir integrali nasıl çözeriz? Baktık, integrale diyoruz ki değişken dönüşümü uygulamamız gerekir burada. Yani 2 artı sinüs x bölü 2'ye u dersek burada.
+
+20
+00:04:13,876 --> 00:04:30,055
+türevini alırsam, içinin türevi, yani x bölü 2'nin türevinden 1 bölü 2, kosinüs x bölü 2 dx gelecek. Eşittir du. Yani burada dikkat ederseniz, kosinüs x bölü 2 dx ifadem var. Onun yerine ne diyeceğim? 2 du diyeceğim.
+
+21
+00:04:30,451 --> 00:04:37,511
+Sonra gelelim, bizim integralimiz belirli integral olduğu için ne yapıyorum? Bu dönüşümü yaptığıma göre sınırlarını da değiştiririm.
+
+22
+00:04:37,871 --> 00:04:46,131
+Ya da hiç belirsiz integral gibi çözüp en son sınırlarını değiştirmeden de yerine yazabilirim ama biz burada değiştirerek gidelim.
+
+23
+00:04:46,131 --> 00:04:54,672
+Bakın x sıfır nereye dönüşür? Burada x sıfır yazarsam sinüs sıfır sıfırdır. Yani u 2'ye dönüşecek. Pi nereye dönüşür?
+
+24
+00:04:55,187 --> 00:05:08,067
+Burada yerine yazarsam, sinüs pi bölü 2, 1'dir değil mi? O zaman 3'e dönüşür diyeceğiz. Yani sonuçta verilen integral'i ne yapıyoruz? İntegral 2'den 3'e kadar diyeceğiz.
+
+25
+00:05:08,915 --> 00:05:34,416
+Buraya u demiştik, u'nun karesi. İşte burada kosinüs x bölü 2x yerine de ne gelecek? 2 tane de u. İşte dikkat ederseniz basit bir integrale indirgemiş olduk. Bunun da integral ne olur? 2 bölü 3, u'nun kübü. Sınırımız da 2'den 3'e kadar. 3 sınır, 2 bölü 3 parantezini alırsam, 3'ün 3. kuvveti diyeceğim. 27.
+
+26
+00:05:35,040 --> 00:05:46,400
+eksi alt sınır, o da ne olur? 8 olur. Bu da düzenlenirse 38, bir dakika, çarpacağız, pardon, 38 bölü 3'dür diyeceğiz.
+
+27
+00:05:47,080 --> 00:05:50,360
+Değil mi? Buradan 19 kalır, doğru 2x.
+
+28
+00:05:51,636 --> 00:06:03,136
+Evet, işte verilen fonksiyonun bu aralıktaki, yani verilen bu aralıktaki alan budur diyeceğiz. 38,3, 20 kare de diyebiliriz alan dediğine göre.
+
+29
+00:06:03,136 --> 00:06:18,876
+Şimdi bir tane örneğimiz de şu olsun. Bakın x ekseni üzerinde y eşitli 3x eksi x kare eğrisi altında kalan bölgenin alanını hesaplayınız. Bu da bir parabağın eğrisidir. Tamam mı?
+
+30
+00:06:19,795 --> 00:06:42,955
+Parabol olduğu için kollarını olacaktır. Aşağıya bakacak. Yani bunu kabaca çizersek, zaten eğri çizimini de biliyoruz biz arkadaşlar. Burada çok milimetrik çizmeye gerek yok. Hani kabaca eğri çizim şudur. İşte diyelim ki şurada bana gerekli olan kısım nedir? İşte orijinden geçecek bir maksimum var. x'i de 3'i de kesecek şöyle bir paraboldür diyoruz. Tamam mı? Kollar aşağıya bakacak.
+
+31
+00:06:43,411 --> 00:06:52,031
+Buradan x eksenini kestiği noktaları da nasıl bulurum arkadaşlar? y'ye sıfır verdiğimde ne olur? x sıfır ve 3 olur.
+
+32
+00:06:53,131 --> 00:07:04,311
+İşte sıfırdan geçiyor, 3'ten geçiyor. Yani ben eğri çizmesem de ne yaparım? Verilen fonksiyonu x eksenini kestiği noktalardan aralıkları ayırarak da çözebilirim.
+
+33
+00:07:04,791 --> 00:07:07,491
+İşte burada ne yaptık? Eğriyi kabaca çizmiş olduk.
+
+34
+00:07:08,435 --> 00:07:24,775
+eksenleri kestiği noktada 0 ile 3'dür diyoruz. İşte bize sorulan şu taralı bölgenin alanı nedir? E ne yapacağım? Bakın x ekseni de dedi zaten. x ekseninin üzerinde, eğrinin altında. İşte x eşittir 0 ve x eşittir 3.
+
+35
+00:07:25,264 --> 00:07:41,504
+arasında kalan bölgenin alanını soruyor bana. E alanda ne diyecektim? a eşittir diyelim alan olduğu için integral a'dan b'ye fx, bx şeklinde formülümüzü yazıyoruz. O zaman benim sınırlarım nedir? Bakın sıfırdan 3'e kadar, integral sıfırdan 3'e kadar.
+
+36
+00:07:42,132 --> 00:08:01,552
+3x, fx dediğimizde nedir? y'dir. 3x eksi x kare, dx. İşte böyle bir belirli integrali hesaplamak diyoruz. Tamam mı? Şimdi bunda integrali nedir? 3x'in integrali 3 bölü 2x kare gelir. x karenin integrali eksi x küp bölü 3, sınırımız 0.
+
+37
+00:08:03,283 --> 00:08:13,723
+eksi alt sınır alt sınır 0 olduğu için 0 gelecek sadece 3 sınırdan 9 27 bölü 2 eksi 27 bölü 3 diyeceğiz
+
+38
+00:08:13,723 --> 00:08:23,504
+Bu da düzenlenirse payda eşitlenirse 9 bölü 2 birim kare olarak buluruz işte verilen eğrinin altında
+
+39
+00:08:23,504 --> 00:08:31,052
+kalan bölgenin alanı diye söyleriz var mı arkadaşlar takıldığımız bir yer alan bu şekilde söylüyoruz
+
+40
+00:08:31,252 --> 00:08:34,572
+Şimdi gelelim toplam alan dediğimizde nedir?
+
+41
+00:08:35,791 --> 00:08:37,572
+Evet, diyelim ki
+
+42
+00:08:38,259 --> 00:08:44,379
+fonksiyonumuzun bir tanesi fx eşittir x kare eksi 4. gx'te 4 eksi x kare olsun.
+
+43
+00:08:44,940 --> 00:08:53,700
+Bizden istenen a şıkkı diyelim f ve g'nin eksi 2 artı 2 aralığındaki belirli integrallerini hesaplayın diyor.
+
+44
+00:08:53,700 --> 00:09:00,700
+b şıkkında da yine eksi 2 artı 2 arasındaki grafikleri ve x eksen arasındaki alanlarını hesaplayınız.
+
+45
+00:09:01,779 --> 00:09:06,259
+Yani bizden istenen önce verilen fonksiyonların ayrı ayrı bu aralıktaki belirli integrallerini bir hesaplayın.
+
+46
+00:09:06,259 --> 00:09:19,080
+bir de grafik ve x-e x'lerin arasında kalan alanı hesaplayacağız. Burada sonra yorumumuzu yaparız. Şimdi şunu çizersek, bu kolay değil mi arkadaşlar? Bir paraboldür. Yani x'e 0 verirse.
+
+47
+00:09:19,860 --> 00:09:39,799
+tepe noktası nereden geçecek? x'i 4'ten. Parabol olduğunu da biliyorum. Yani şöyle bir paraboldu. Önce bunun ne diyor bana? Bu aralıktaki sadece yani fx fonksiyonunun x2 artı 2 aralığındaki belirli integralini hesapla diyor. A şıkkı dedim. I ile göstermiş olalım. x2'den artı 2'ye kadar.
+
+48
+00:09:40,351 --> 00:09:59,971
+fx'de x, x kare eksi 4. Bunun belirli integral hesaplarsak ne olur? x küp bölü 3, eksi 4x diyorum. Sınırım, eksi 2'den artı 2'ye kadar. Buradan da üst sınır, yani 8 bölü 3, eksi 8, eksi a sınır dersem, eksisi var, eksi 8.
+
+49
+00:10:00,000 --> 00:10:27,980
+8 bölü 3 de gelir. Buradan da artı 8 gelir. Yani düzenlenirse arkadaşlar, sonuçta x'i 32 bölü 3 buluruz. Yani verilen f fonksiyonunun x'i 2 artı 2 aralığındaki belirli integral neymiş? x'i 32 bölü 3 diyoruz. Sonra bana neyi sormuştu? x'i 2 arasındaki grafikleri ve x eksen arasında yani eğriyi çiziyorum. x'i 2 artı 2'deki serzat.
+
+50
+00:10:28,000 --> 00:10:40,620
+zaten bunu değil mi? x'e sıfır verirsem x2 artı 2 de keser. Bir de x eksenin altında grafik. Yani şu bölgenin alan olarak soruyor bana. Alan dediğine göre ne yapmalıyım arkadaşlar? Gene aynı diyeceğim. A'dan.
+
+51
+00:10:41,172 --> 00:11:09,172
+integral a'dan b'ye yani x2'den artı 2'ye kadar diyeceğim. fx'de x. Ama burada dikkat ederseniz yani şunu hesaplamış olacağım. Alan dediğine göre de değişik. Ama burada dikkat ederseniz eksi çıktı. Alan eksi olamayacağına göre sonuçta onun mutlak değerini alacağım. Yani buradaki sorudaki amaç onu anlamamız. Yani belirli integralini soruyorsa ben hemen derim ki eksi 32 bölü 3. Ama eğer bana alanı soruyorsa alanı ne yapmam gerekiyor?
+
+52
+00:11:09,172 --> 00:11:31,712
+Bunu mutlak değerine almam gerekir. Çünkü dikkat ederseniz eğri aşağıda olduğu için alan negatif çıkar. x eksenin alt kısmında olduğu için negatif çıkacağı için diyeceğim ki alan da negatif olamayacağına göre o zaman eksi çıktığında ben onu mutlak değerine alarak pozitif olarak söyleyeceğim. Yani alan derse bana 32 bölü 3 olarak yorumlayacağım. Anladık mı arkadaşlar?
+
+53
+00:11:32,307 --> 00:11:43,447
+Bu belirli integralin değeri budur. Tamam, doğru. Ama alan dediğine göre alan negatif olamaz. O zaman ne yapıyorum? Bakın mutlak değerini alıyorum. Yani şu integralin mutlak değerini almış olacağım.
+
+54
+00:11:44,427 --> 00:11:56,587
+Aynısını G için bakalım. G'ye de dikkat edersek. Gene bir paraboldur ama kolları eksi olduğu için aşağıya bakacak. Gene tepe noktası 4. Şöyle bir eğri.
+
+55
+00:11:56,960 --> 00:12:06,759
+Önce ne yapıyorum? Bunun belirli integralini hesaplıyorum. Yani integral, x2'den artı 2'ye kadar, gx neydi? 4x'i x kare dx diyorduk.
+
+56
+00:12:06,960 --> 00:12:14,500
+Bunun önce integralini alırsam 4x olur, x3 bölü 3 sınırımda x2'den artı 2'ye kadar.
+
+57
+00:12:15,000 --> 00:12:24,139
+3 sınır, x6 sınırdan ne çıktı? 32 bölü 3. O zaman ne ediyorum? Verilen g fonksiyonunun bu aralıktaki belirli integralı nedir?
+
+58
+00:12:24,960 --> 00:12:52,960
+x kare artı 2x, f' şıkkı ne diyordu? Alanını hesapla diyor. Yani eğrimiz var bakın. x ekseni var. Bu arada kalan bölgenin alanı soruyorsa bana ne diyordum alan? İntegral x 2'den artı 2'ye kadar fx'de 2 şeklinde ifade ederdim. Bu da hesaplanırsa yukarıdakinin aynısı olduğu için 32 bölü 3 diyeceğim. Bu zaten pozitif çıktığı için ve zaten dikkat ederseniz x ekseni de üzerinde olduğu için pozitif çıkacağı aşikâğıdı. Yani sonuçta buna mutlu olabiliyor.
+
+59
+00:12:52,960 --> 00:13:04,039
+mutlak değerini almama gerek yok. Yani alan tekrar söylüyorum. Negatif çıkarsa ne yapmalıyım? Mutlak değer olarak ifade etmeliyim. İşte yorumumuzu bu şekilde yapmış oluyoruz.
+
+60
+00:13:07,100 --> 00:13:11,200
+Evet, şurada da tekrar özetleyelim. Bakın, şöyle diyoruz.
+
+61
+00:13:11,731 --> 00:13:29,851
+konuştuklarımızı. y eşittir fx fonksiyonunun grafiği ve x80 ile sınırlı bölgenin alanı hesaplanırken fonksiyon hem pozitif hem de negatif değerler alıyorsa ad aralığını fonksiyonun işaret değiştirmediği alt aralıklara ayırmalıyız.
+
+62
+00:13:29,851 --> 00:13:39,231
+Toplam alan fx'in işaret değiştirmediği her alt aralık üzerindeki belirli integralin mutlak değerlerinin toplamıdır.
+
+63
+00:13:39,731 --> 00:13:53,152
+Burada bizim dikkat ederseniz bir tane bölgemiz var. Yani x 2 ile artı 2 de hep aynı bir fonksiyon var. Burada da aynı şekilde. Onun için parçalamamıza gerek yok. Ama farklı oluyorsa o zaman da parçalamamız gerekecektir.
+
+64
+00:14:06,355 --> 00:14:13,755
+a, b, alt aralıklara bölünür. Sonra her alt aralıkta ekin integral hesaplanır.
+
+65
+00:14:14,611 --> 00:14:26,791
+Üçüncü durumda da integrellerin mutlak değerlerini toplayacağız. Yani negatif çıkarsa da mutlak değerler olarak toplayarak ifade etmiş olacağız. Yani ne yaptık? 3 aşamamız var dedik burada.
+
+66
+00:14:27,291 --> 00:14:39,671
+f'in sıfır olduğu yerlerde bölgeyi ne yapıyoruz? Alt aralıklara böleceğiz. Her alt aralıkta f'in integralini hesaplayacağız. Sonra da mutlak değer olarak toplamını bulacağız.
+
+67
+00:14:40,371 --> 00:14:42,932
+Evet, şimdi şöyle bir örnek alalım bakın.
+
+68
+00:14:44,471 --> 00:14:45,451
+Sorumuz şu.
+
+69
+00:14:46,111 --> 00:14:50,651
+Eksi 1 ile artı 2 aralığı için fx böyle verilmiş.
+
+70
+00:14:50,991 --> 00:14:51,711
+Grafiği ile
+
+71
+00:14:52,211 --> 00:15:20,211
+x eksenin arasındaki bölgenin alanını hesaplayınız. Ben zaten aslında bunun şeklini çizsem, hiç bu kadar bunları düşünmeme gerek yok. Ama bazen şekil çok karmaşık olur. Çizemezsem ne yapıyorum? Diyorum ki, yukarıda konuştuğum gibi, önce fonksiyonun sıfırlarını bulayım. Yani sıfırları ne demektir? fx'i sıfır yapan noktaları bulmak demektir. fx'i de şöyle x parantezini alarak yazarsak, x kare eksi x eksi 2 eşittir 0 diyorum.
+
+72
+00:15:20,211 --> 00:15:47,991
+Gördün mü? Bunun kökleri ne olur? 0, şuradan da 2 ile eksi 1'dir. Hepsi de aralıkta değil mi? Eksi 1 ile 2 aralığında. O zaman nasıl ayıracağım bu bölgeyi alt aralıklara? Şurada yanlış yazılmış arkadaşlar. Aralığımız eksi 1'e 2, 0 yazılmış. Tamam mı? Bunu görmeyin. O zaman ne yapıyorum? Yani şuradan bakın alt aralıklara ayırmış olduk. Yani ekseni kestiği noktalar, fonksiyonun 0 yerleri, eksi 1, 0 ve 2.
+
+73
+00:15:48,211 --> 00:15:56,211
+O zaman nasıl ayırmam gerekecek? x 1, 0, 0, 2 şeklinde 2 alt aralığa ayırmış olacağım. Tamam mı?
+
+74
+00:15:56,211 --> 00:16:00,211
+O zaman integrelleri 2 integral şeklinde hesaplayacağız.
+
+75
+00:16:00,211 --> 00:16:09,511
+Önce ne diyorum? Bakın x 2, x 1, 2 aralığını x 1, 0, 0, 2 şeklinde 2 tane integrelle ayırmış olduk.
+
+76
+00:16:09,692 --> 00:16:14,151
+Ne yapıyoruz? Sonra bu aralıklarda belirli integrelleri hesaplayacağız.
+
+77
+00:16:16,211 --> 00:16:29,771
+eksi 1'den 0'a kadar, fx'de x, fx'imiz şuydu, yazdım. Bunun integral ne olur? x üzeri 4 bölü 4, eksi x küp bölü 3, eksi x kare, 0, eksi 1'den 0'a kadar.
+
+78
+00:16:29,932 --> 00:16:38,971
+Üst sınırdan ne gelecek? 0 gelir. Alt sınırdan eksi, x yerine eksi 1 yazarsam, 1 bölü 4, artı 1 bölü 3,
+
+79
+00:16:39,827 --> 00:17:04,008
+x kare artı 2x, 1x1 diye düzenlenirse bu da 5 bölü 12 olarak çıkar arkadaşlar. Sonra ne yapmalıyım? 0 ile 2 arasındaki integral hesaplamalıyım. Onu da şurada 0'dan 2'ye kadar fx dx diye yazdık. Bunu da integral zaten şuydu. Alt sınırla üst sınırı yerine yazdığımda x kare artı 8 bölü 3 olarak bulunuyor. Yani şekli kapaca bakın düşünürsek şöyle bir şekil. Tamam mı?
+
+80
+00:17:04,660 --> 00:17:31,519
+x kare artı x kare artı x şöyle bir şekil. Yani bakın dikkat edin, şurada pozitif çıktı. Burası zaten eğrinin altında olduğu için bakın negatif çıktı. O zaman bana neyi soruyordu? Bu aralıktaki bölgenin alanını sorduğuna göre alan diyeceğim. Hepsinin mutlak değeri. 5 bölü 12 zaten pozitif olduğu için artı olur. Mutlak değer eksi 8 bölü 3. Bunlar da toplanırsa diyoruz.
+
+81
+00:17:33,107 --> 00:17:44,107
+faydada eşitlersek, ne diyeceğim artık, tamam. 37 bölü 12 olarak alanı bulmuş olacağız. Yani negatif çıktığında da ne yapıyoruz?
+
+82
+00:17:44,827 --> 00:18:00,327
+Kostitif yani mutfaht değer olarak göz önüne alıyoruz. Anlaşılıyor mu arkadaşlar? Var mı problem? Evet. Ses geliyor mu arkadaşlar?
+
+83
+00:18:00,948 --> 00:18:30,596
+x kare artı 2x, f'
+
+84
+00:18:07,316 --> 00:18:16,456
+y eşittir kosinüs x eğrisi, x eşittir sıfır, y eşittir sıfır, x eşittir 3 pi bölü 2 arasındaki alanı hesaplayınız.
+
+85
+00:18:16,956 --> 00:18:22,676
+Bakın, kosinüs x eğrisini çizebiliriz, biliyoruz zaten. Yani x sıfırken y'si ne oluyordu? 1 oluyordu.
+
+86
+00:18:22,676 --> 00:18:30,056
+Pi bölü 2 olduğunda sıfır yani eğri şöyle gelen periyodik bir fonksiyon şöyle giderdi. Aynı şekilde sol tarafa da gider.
+
+87
+00:18:30,496 --> 00:18:32,855
+Yani bize neyi sormuş arkadaşlar?
+
+88
+00:18:35,316 --> 00:18:59,155
+bir de 3 pi bölü 2. Yani şurası. Bölgemiz bu. Dikkat ederseniz iki tane değil mi? Bakın hatta şekli çizmeseniz bile bu aralıkta fonksiyonun sıfırlarını bulursunuz değil mi? Sıfır ve 3 pi bölü 2 olarak bulurdunuz. O zaman ne yapacağım? Aralığımı nasıl ayıracağım? Şurada ne var? Pi bölü 2 var. Alt aralıkları ayırırsam.
+
+89
+00:18:59,604 --> 00:19:05,824
+0 ile pi bölü 2, pi bölü 2 ile 3 pi bölü 2 arasında hesaplamam gerekir. Yani iki tane alanım var.
+
+90
+00:19:07,412 --> 00:19:34,351
+Bakın bunu şöyle x'e göre yazıyorum ya, şunu şöyle dik dik de çizseniz, bakın şuraya geldiğinde eğri ne oluyor? Alt kısımda kalıyor. Yani şurada x eksenin altında, burada üstünde kalıyor. O zaman a bir alanı, şekil zaten vermiş bütün noktaları, benim yapacağım hiçbir şey yok arkadaşlar. Doğrudan yazacağım. İşte a bir alanı hesaplamak istiyorsak nedir? x'i sıfırdan integral pi bölü 2'ye kadar fx'de x, kosinüs x'de x.
+
+91
+00:19:35,412 --> 00:19:59,271
+nedir? Sinüstür değil mi? Sinüst, sınırım 0'dan pi bölü 2'ye kadar, üst sınır, sınır diyeceğim. Sinüs pi bölü 2 1'dir, alt sınır 0 yok. Ne oldu? A1 bölgesinin alanı bire eşit çıktı. A2'ye bakalım. Bu da pi bölü 2'den diyeceğim. 3 pi bölü 2'ye kadar, kosinüs x dx diyorum. Tamam mı?
+
+92
+00:20:00,000 --> 00:20:08,811
+o halde bunu da integral ile yine sinüs x'tir diyeceğim. Çizgi pi bölükten 3 pi bölükteye kadar üst sınır.
+
+93
+00:20:09,299 --> 00:20:36,519
+sinüs 3'ü bölü 2 nedir? Eksi 1'dir. Eksi alt sınır, sinüs 2'ü bölü 2 de eksi 1'dir. Yani sonuçta nedir? A2'nin alanı dediğimiz eksi 2'dir. Bu da ı göstermemizin nedeni. Bu eksi çıkacağı için A2 alanı nedir? Bunun mutlak değerine eşit olacak. Yani sonuçta A2 alanı nedir? 2'dir. O halde bu aralıktaki alan ne eşit olacak? 3'e eşit olacak arkadaşlar. Tamam mı? A1 artı A2 şeklinde ifade etmiş olacağız.
+
+94
+00:20:37,715 --> 00:20:43,455
+Peki, şimdi gelelim, iki eğri arasında kalan alan nasıl hesaplanacak?
+
+95
+00:20:44,556 --> 00:20:46,135
+Bunu da şöyle söyleyelim.
+
+96
+00:20:46,135 --> 00:20:53,476
+Eğer f ve g fonksiyonları ab aralığında fx ve g'den büyük olmak üzere,
+
+97
+00:20:54,099 --> 00:21:21,719
+Yani f ve g'lerin pozitif olup olmaması önemli değil. Yani pozitif olmak zorunda değiller. Olmak üzere sürekli ise bu durumda y eşittir fx, y eşittir gx, x eşittir a, x eşittir b arasında kalan alanı hesaplayınız. Bakın bir şuraya kabaca çizdiğimi varsayıyorum arkadaşlar. Çünkü f'nin de g'den büyük olduğunu söylüyor. Diyorum ki bu benim için fx eğrisi olsun. Şurada da rastgele çizdim.
+
+98
+00:21:22,099 --> 00:21:46,539
+benim gx eğrim olsun. x eşittir a doğrusu, x eşittir b doğrusu. A bir aralığında verilmiş. Yani şu, tamam mı? Eğri, eğri, doğru, doğru. Yani şu bölgenin alanını soruyor bana. İki eğri arasındaki kalan bölgenin alanını. Bunu yazarken şöyle dikkat edeceğiz arkadaşlar. Şimdi ben bunu x'e göre integral olarak yazacağım.
+
+99
+00:21:47,028 --> 00:22:15,028
+Bazen bölge çok karmaşık olur. Bu sefer y'ye göre yazarız. x'e göre yazınca ben kendimce şöyle hep düşünürüm. Sınırım nereden başlıyor? Bakın x a'dan b'ye kadar gidiyor. Ben şöyle dik şeritler çizerim. Sanki küçücük şerit çizdiğimi düşünüyorum. Bakın şöyle başlıyorum. a'dan b'ye gidene kadar bakın üstte bir fx eğrisi, altta gx. Hep böyle gidiyorum. İç değişmiyor bakın. Üstte hep fx eğrisi, altta hep gx eğrisi.
+
+100
+00:22:15,028 --> 00:22:40,447
+Bu düzgünlüğünü ne zaman bozar? İşte üstteki eğri değişir veya alttaki eğri değişirse o zaman bölge düzgün olmaz, oradan ayırmam gerekir. Ama bu verilen bilgilere göre benim bölgem düzgün bir bölge. Yani üstte bir hep f'lik seyrisi, altta hep aynı geyik seyrisi olduğu için tek bir bölge. O zaman bunun alanını hesaplarken A diyorum, integral A'dan B'ye kadar.
+
+101
+00:22:43,028 --> 00:22:48,227
+Big Share'de de bakın, hep aklımda kalsın. Üstteki kare yani fx'ten gx çıkarıyorum.
+
+102
+00:22:48,592 --> 00:22:50,992
+üstteki eğriden alttaki eğriyi çıkar.
+
+103
+00:22:51,152 --> 00:22:57,452
+İşte iki eğri arasında kalan alanı x'e göre integral şeklinde yazmak istiyorsan bu.
+
+104
+00:22:57,452 --> 00:23:03,392
+Biz bunu şöyle de biteriz. x'e göre düzgün bölge ya da x'e göre integral olarak yazarız.
+
+105
+00:23:03,812 --> 00:23:07,132
+Onun için ne yapıyorum? x'e göre düzgün bölge olarak düşünüyoruz.
+
+106
+00:23:07,332 --> 00:23:10,472
+Dik şeritlerle taradım bölgeyi, baktım tek bir bölge.
+
+107
+00:23:10,872 --> 00:23:14,632
+Peki bakın, şimdi örneğini çözmeden y'ye göre düşünürsek.
+
+108
+00:23:14,952 --> 00:23:16,012
+Şöyle gideceğim biraz.
+
+109
+00:23:16,592 --> 00:23:23,452
+Şimdi diyelim ki o bölge bana karmaşık oldu, yani karışık oldu. Onun için diyorum ki bunu x'e göre yazmak yerine y'ye göre yazacağım.
+
+110
+00:23:23,955 --> 00:23:41,875
+Yani y'ye göre integral, yukarıdaki x'e göre integral veya kitaplarda da görebilirsiniz. x'e göre düzgün bölge, y'ye göre düzgün bölge. Yani düzgün bölge dediğim işte yukarıdaki düzgün bir bölge bir taneydi. Hani ikiye ayırırsam ikiye ayrılmış olacak, üçe ayrılır. Birçok şekilde örnekler çözeceğiz.
+
+111
+00:23:51,955 --> 00:24:19,955
+y eğerim olsun. Bu da x eşittir, g, y eğrisi. Sınırlarım da y'si a'dan b'ye kadar. Bu sefer y'ye göre yazacaksam integrali yatay şeritlerle tarıyorum. Diyorum ki yatay şeritlerle taradığımda bakın, işte x, f, y'den g, y, f, y'den g, y. Hep aynı. Bakın hep taradığımızda buradaki eğriyle buradaki eğri hep aynı sabit kaldığı için ne diyorum? Bu tek bir bölge, düzgün bir bölgedir. O zaman diyorum ki bunun alanı
+
+112
+00:24:19,955 --> 00:24:47,955
+y'nin sınırı a'dan b'ye kadar, f y'den g y'yi çıkarırız. Yani sağdan solu çıkarırız. Ters olmayacak. f y'den g y'yi çıkarırız. d y. Bunu y'ye göre integral olarak ifade ettim. Yani y'ye göre düzgün bölge olduğu için integralin içinde olmalı. Hep y'li yazılmalı değil mi? d y şeklinde. İşte iki eğri arasındaki alan x'e göre ve y'ye göre bu şeklinde.
+
+113
+00:24:47,955 --> 00:25:11,096
+bu şekilde yazılmış olacak. Şimdi yukarıya dönüyoruz. Dedik x'e göre bölge ya da x'e göre integral diye yazılmış oldu. Şimdi bunu örneklerle konuşalım arkadaşlar. Evet, örneğimiz şu olsun. y eşittir 2-x kare ve y eşittir xx ile çevrili bölgenin alanını bulunuz.
+
+114
+00:25:11,488 --> 00:25:23,887
+ya da iki yer arasındaki alan nedir diye de sorabilirim bize. Şimdi ne yapıyorum? Kabaca hemen çiziyorum yerimi. Bakın, y eşittir. Bu da yine bir paraboldür. Tepe noktası 2'dir. Eksenleri de nereden keser aslında?
+
+115
+00:25:24,243 --> 00:25:52,243
+x kare artı 2x, onu da yazmamışız biz ilgilendirmek için şu an. Şimdi para volümü çizdim. Şu da nedir benim için? İkinci açı ortaydır, y eşittir, x. Şimdi bana neyi soruyor? Bu iki eğri arasında kalan alanı soruyor arkadaşlar. Şimdi ben bunu milimetrik çizmedim. Ne yapmalıyım? Bunu, bu iki eğriyi çakıştırmam gerekir. Yani ortak olarak çözmem gerekir. O zaman ne yapıyorum? Bakın iki eğriyi kenara yazıyorum. Yani şunları bulmak için.
+
+116
+00:25:52,243 --> 00:26:20,243
+y eşitir eksi 2, 2 eksi x kare, y eşitir eksi x. Bunları eşitlersen birbirine ne olur? x kare eksi x eksi 2. Buradan da köklerim nedir? 2'ye eksi 1'dir. Yani bu iki evi ortak çakıştırırsak şu kesim noktaları 2 ile eksi 1 olacak. O zaman şimdi işim tamam. Yani yukarıda a dediğim ifade bakın burada eksi 1 oldu. b dediğim nedir? 2 oldu. Yani bunun alanını hesaplarken diyorum ki x'in sınırları eksi 1.
+
+117
+00:26:20,243 --> 00:26:27,844
+x'i birden 2'ye kadar. Bakıyorum, bakın, çiziyorum dik dik şeritlerle. Üstte hep bir parabol, altta hep bir doğru. Gidiyorum, gidiyorum.
+
+118
+00:26:27,963 --> 00:26:38,163
+Ta ki 2'ye kadar. Hep aynı. Hiç değişmedi. Üstte bir eğri, altta bir doğru. Onun için ne oluyor? Bu düzgün bölge. Yani x'e göre bunu yazmak istiyorsam tek bir bölge.
+
+119
+00:26:38,163 --> 00:26:44,683
+Ne diyeceğim? İntegral, x'i birden 2'ye kadar, parabolden doğruyu çıkar diyeceğim. Bu kadar.
+
+120
+00:26:45,268 --> 00:26:56,268
+çok kolay arkadaşlar, kafamız karışmasın diye ne yapıyorum? 2 eğriyi çakıştırdım. Çünkü milimetrik çizmediğim için bunu ne yaparım? 2 eğriyi çakıştırırım. Onlar ortak nerede kesişmişler?
+
+121
+00:26:56,268 --> 00:27:13,268
+x'i 1 ile 2 de yani x'i x'i 1'den 2'ye kadar diyorum. Dik dik şeritlerle taradım. O tek bir bölge. Çünkü x'i 1'den 2'ye gittiğimde hep üstte bir parabol, altta bir doğru ile karşılaştığım için tek bir bölge. Bu düzgünlüğü ne zaman kaybeder? Atıyorum üstteki eğri değil.
+
+122
+00:27:13,268 --> 00:27:28,728
+değişti. Ahttaki sabit kaldı. O zaman hop, oradan kesmem gerekir. Bu kadar. O halde yazıyorum, alan diyorum, integral, eksi 1'den 2'ye kadar, parabolden doğruyu çıkar diyorum. Parabolden, eksi, bunda nedir? Eksi x'dir.
+
+123
+00:27:28,728 --> 00:27:40,488
+İşte bu integral hesaplarsak, ne gelecek? Bunun integrali 2, 2x, x kare ne olur? Eksi x küp bölü 3 olur. Buradan da x olur. O da x kare bölü 2'dir.
+
+124
+00:27:40,819 --> 00:27:49,299
+sınırlarımızda eksi 1'den 2'ye kadar, üst sınır, eksi alt sınırı yerine yazdığımızda 9 bölü 2 olarak bulursunuz. Tamam mı?
+
+125
+00:27:49,900 --> 00:28:00,620
+İşte x'e göre yapılan çözüm ya da x'e göre yazılan integral yukarıda söyledik. İki yer arasındaki alanı bu şekilde ifade etmiş olduk.
+
+126
+00:28:01,180 --> 00:28:02,640
+Van takıldığımız bir yer arkadaşlar.
+
+127
+00:28:07,508 --> 00:28:09,508
+devam edelim, yoksa
+
+128
+00:28:10,516 --> 00:28:38,256
+Evet, şimdi gelelim. x eşittir 0'dan x eşittir pi'ye y eşittir sinüs ve y eşittir kosinüs x. Eğriler aslında ki toplam alanı bulunuz diyor bana. Önce eğriler kolay olduğu için çiziyorum bakın. Sinüs x ve kosinüs x eğrisi. Kosinüs şurası 1'dir zaten. Şöyle gelecekti. Şimdi bu kosinüs x eğrisi. Sinüs 0, 0 olduğuna göre şu da 0'dan başlayıp şu şekilde gidecek. Aynı.
+
+129
+00:28:38,516 --> 00:28:45,136
+Meriödig olduğu için her iki eksene de 2 pi periyodlu bir kendisini tekrarlayan bir şekil olacaktır.
+
+130
+00:28:45,476 --> 00:28:54,756
+O zaman şimdi bana verilen aralık nedir? Bakın sıfırdan pi'ye kadar. Yani şekli çizerim ama şurada un kesmem gerekiyor. Aralığım sıfır pi aralığında.
+
+131
+00:28:55,135 --> 00:29:01,715
+İşte dikkat ederseniz bu iki eriyi çakıştırırsak, önce bir kesiştirelim hani nerelerde çakışıyorlar.
+
+132
+00:29:02,316 --> 00:29:07,816
+Kosinüs x ile sinüs x'i birbirine eşitlersek, her iki yerimiz şunlar ya, burada ne olur?
+
+133
+00:29:09,655 --> 00:29:10,175
+Tanjant.
+
+134
+00:29:12,660 --> 00:29:35,240
+her tarafı kosinüze bölersen, tanjant x ne olur? 1 olur. O da nedir? pi bölü 4'tür değil mi? Ancak öyle eşit olurlar. Yani pi bölü 4'te çakıştı şurada. Ortak kesmiştikleri yer pi bölü 4'tür. Bu da zaten pi'yi vermiş şu. İşte burada dikkat ederseniz sınırın sıfırdan pi'ye giderken ben bölgeyi tarıyorum arkadaşlar.
+
+135
+00:29:35,855 --> 00:29:59,855
+Yukarıda bakın, kosinüs aşağıda sinüs eğrisi. Tarıyorum, tarıyorum, geldim, pi bölü 4'e kadar değişmedi. Hep kosinüsten sinüse geldim. Ama pi bölü 4'ten pi'ye hareket edersem arkadaşlar, bakın üstteki eğri değişti. Onun için ne yapıyorum? İşte bunu ikiye ayırarak hesaplamam gerekir alanı. Bunu x'e göre yazıyorum, integrali. Zaten burada da kendisi...
+
+136
+00:30:00,000 --> 00:30:27,839
+kendimiz bulduk. Değil mi? Bunu ben verilen şu sıfırdan piye kadar doğrudan yazamam. Çünkü burada farklı, düzgün bir bölge değil. Sıfırdan pi bölü dörde bir bölge, pi bölü dörtten piye kadar bakın değişti. Pi bölü dörtten piye kadar üstte ne oldu? Sinüs elisi altta kosinüs oldu ama şu birinci bölgede tam tersi oldu. O halde ne yapıyorum ben bunu yazarken? Alan diyorum. İşte taradım. İkiye ayırmış olduk bölgeyi. Diyoruz ki
+
+137
+00:30:28,000 --> 00:30:49,659
+integral sıfırdan pi bölü 4'e kadar diyorum. Üstteki yeri nedir? Kosinüsten alttaki yeri sinüsü çıkarıyorum. x artı pi bölü 4'ten pi'ye kadar diyorum integral. Üstteki yerim nedir? Bakın şöyle bir düz çizgi çizerim kafam karışmasın diye sinüsten kosinüsü çıkarıyorum. Şu. İşte alan bu şekildedir. Anladık mı arkadaşlar?
+
+138
+00:30:52,659 --> 00:30:53,399
+Var mı problem?
+
+139
+00:30:54,132 --> 00:31:03,132
+Dik şeritlerle tararız bölgeyi, alttaki eğriyle üstteki eğri hep sabit kalıyorsa, tek bir bölge değilse hop oradan ayırmam gerekir diyorum.
+
+140
+00:31:04,192 --> 00:31:07,532
+O zaman bunun integralini artık alacağız basitçe.
+
+141
+00:31:07,932 --> 00:31:14,272
+Kosinüsün integrali neydi? Sinüsdü. Sinüsün integrali de eksi kosinüsdü. Bir dönemde eksi var, artı oldu.
+
+142
+00:31:14,892 --> 00:31:20,372
+Sıfırdan pi bölü 4'e kadar artı. Şunun integrali, sinüsün integrali ne olur?
+
+143
+00:31:21,428 --> 00:31:27,828
+x kosinüs, bir dakika, kimi yazmışız buraya, şu mu önce yazılmış açıdan?
+
+144
+00:31:28,372 --> 00:31:37,892
+1 dakika. Kosinüsün integralı nedir? Sinüstür. Evet, bunu yazmışız. Bu da eksi kosinüs olacak. Tamam. Yer değişmiş arkadaşlar. Kafanız karışmasın.
+
+145
+00:31:38,472 --> 00:31:47,712
+P bölü 4'ten pi'ye kadar. Şimdi ne yapıyoruz? Sınırları yerine yazıyorum. Sinüs pi bölü 4 nedir? Kök 2 bölü 2'dir. Kosinüs pi bölü 4 de kök 2 bölü 2.
+
+146
+00:31:47,972 --> 00:31:56,372
+Eksi alt sınır, sinüs 0, 0'dır. Kosinüs 0, 1'dir. Yani eksi 1 geldi. Artı, şuradan sinüs pi.
+
+147
+00:31:56,372 --> 00:32:23,052
+x kare artı 0, kosinüs pi eksi 1, bir de önünde eksi var, artı pi. Eksi alt sınır diyorum arkadaşlar. Şu eksi parantezini alırsam bir de alt sınırın eksisinden gelince artı olur. Yani sinüs pi bölü 4 kök 2 bölü 2, kosinüs pi bölü 4 kök 2 bölü 2. İşte hepsini toplarsanız biriler zaten gider. İki tane kök 2 olarak alanı bulmuş olduğunuz verilen bu aralıktaki bölgenin alanı budur diyeceğim. Tamam mı?
+
+148
+00:32:23,635 --> 00:32:26,195
+bant takıldığımız yer arkadaşlar. Anlıyor muyuz?
+
+149
+00:32:28,576 --> 00:32:31,296
+Evet, devam edelim. Y'ye göre söylemiştim.
+
+150
+00:32:32,056 --> 00:32:32,395
+Şimdi
+
+151
+00:32:33,076 --> 00:32:48,916
+Bununla ilgili, dedik ki, bölgeyi hani dik dik şeriflerle çizdim, çok karmaşık oldu. Onun için bazen hangisi kolaysa onunla çözmek daha avantajlıdır. Dedik ki, bölgeyi y'ye göre yazmak istersek, bu sefer ne diyorum, demin de konuşmuştum, falan dedik.
+
+152
+00:32:49,436 --> 00:33:01,076
+Y'si A'dan B'ye, ne yapıyorum, yatay şeriflerle bölgeyi tarıyorum. Diyorum ki, tek bir bölge, çünkü F, Y'den G, Y'ye gibi hep aynı değişmediği için tek bir bölge Y'ye göre yazıyorum.
+
+153
+00:33:01,076 --> 00:33:14,276
+integral olarak yazarsam f y'den g y'yi çıkarıyorum, d y diyorum buna. Evet, şimdi gelelim, örneğimiz şu olsun. Birinci bölgede diyor, üstten y eşittir kök x, bu ne de bir parabola eğrisidir değil mi?
+
+154
+00:33:14,396 --> 00:33:22,196
+Alttan x ekseni ve y eşittir x eksi doğrusu ile sınırlı bölgenin alanını bulunuz diyor bize.
+
+155
+00:33:23,059 --> 00:33:31,019
+Önce bir çizelim kabak hastak. Bakın, y eşittir kök x, aslında bunu şöyle de düşünebilirsin. x eşittir y kare nedir? Bir paraboldür.
+
+156
+00:33:31,379 --> 00:33:39,419
+Ama burada özellikle bunu kök x dediğine göre tek kolu parabolu. Yani artı kısmı tamam mı? y'nin y eşittir kök x şu.
+
+157
+00:33:40,159 --> 00:33:50,399
+Sonra doğruyu çizelim. Bakın, x'e sıfır verirsem y'si eksi giden. y'ye sıfır verirsem x'i. Yani şunun tamamını çizmiş olsam şöyle bir doğru olacaktı.
+
+158
+00:33:50,771 --> 00:34:06,151
+Sonra bir de x ekseni. Yani x ekseni de dediğine göre şu taradığımız bölgenin alanını soruyor. Yoksa şekli tamamını çizsen şu x doğrusu şöyle gider ama bize gerekli olan kısım sadece şurası olduğu için bunu çizmiş olduk.
+
+159
+00:34:06,151 --> 00:34:17,152
+Şimdi bunu biz hem x'e göre yazacağız arkadaşlar hem y'ye göre yazmışız burada. Bakın önce ne yapıyoruz? Bu iki evi çakıştırdığınızı düşünün.
+
+160
+00:34:18,068 --> 00:34:41,328
+Nerede çakışırlar? Yani şu kök x ile x eksi 2 tamam mı? Yani kök x eşittir x eksi 2 dersen, x karesini alırsan x eşittir x eksi 2'nin karesi. Onu düzenlediğinizde kesiştikleri noktayı işte şurada 4 olarak bulursunuz. Diğeri zaten tamamı olursa bizi ilgilendirir. Şu tamam mı?
+
+161
+00:34:41,715 --> 00:34:46,876
+Yani her iki yerin çakıştığı nokta şurası 4. Bu zaten belliydi, 2'den geçti.
+
+162
+00:34:47,516 --> 00:34:55,496
+Yani x'in sınırı nereden nereye kadar arkadaşlar? 0'dan 4'e kadar. Ama 0'dan 4'e giderken tek bölge mi diye bakacağım.
+
+163
+00:34:55,856 --> 00:35:01,675
+Ne yapıyorum? Tarıyorum bakın. 0'dan 4'e giderken, üstte bir parabola eğrisi, altta x ekseni.
+
+164
+00:35:01,856 --> 00:35:09,356
+Tarıyorum, tarıyorum, tarıyorum. Bakın 2'ye kadar geldim, değişmedi. Üstte bir parabola eğrisi, altta bir x ekseni var.
+
+165
+00:35:09,715 --> 00:35:21,175
+Ama diyelim ki 4'e kadar gittiğimi düşüneyim. Bakın üstte parabola eriyse ama altta ne oldu? Değişti. Doğruya geldi. Onun için bölge düzgünlüğünü kaybetti. Hop diyorum şu 2'den kesmem gerekiyor.
+
+166
+00:35:21,876 --> 00:35:30,036
+Yani 2'den sonrası farklı bir bölge oldu. O halde ne yapıyorum? Önce şu 0 ile 2 arasını yazdığım için alan diyorum.
+
+167
+00:35:30,655 --> 00:35:41,655
+Integral 0'dan 2'ye kadar, üstteki eğriden alttaki eğri çıkar. Üstteki eğri nedir? Kök x eğristir. Alttaki de nedir? Y0 doğrusu olduğu için yazmaya gerek yok. Yani kök x diye isteyeceğim.
+
+168
+00:35:42,324 --> 00:36:08,943
+Ne yaptık? 2'den ayırdım. Çünkü bölge düzgünlüğünü kaybetti. Ne yapıyoruz? Diyoruz ki 2'den 4'e giderken tarıyorum yine bölgemi. Üstte bir parabol, altta bir doğru hop hop taradım. Hep aynı değişimi. O zaman burada da tek bir bölge var. Yani integral 2'den 4'e kadar diyeceğim. Üstteki eğriden kök x eğrisinden doğruyu çıkarıyorum. Kök x'den eksi doğru. x x 2 d x. Tamam mı arkadaşlar?
+
+169
+00:36:09,907 --> 00:36:37,788
+Bunu da hesaplarsınız siz integralini. Zor değil. Yani şunun integralini ne olur? x üzeri 1 bölü 2 dersin. Üstünü bir artırırsan x üzeri 3 bölü 2, yanında da 2 bölü 3 şartını gelecek. Bunları siz kendiniz bulursunuz. Yani 10 bölü 3 olarak bulunur diyeceğiz. Tamam mı? Yani bu x'e göre integral. Şimdi diyorum ki bunu diktik taramayıp da yatay şeritlerle y'ye göre taramış olsak arkadaşlar. Y'ye göre integral olarak.
+
+170
+00:36:37,907 --> 00:36:49,567
+Bakın tekrar bu şekli şuraya çizdiğimizi düşünelim. Yani bu sefer ne yapıyorum? Yatay şeritlerle tanıyorum. Şurada x'i 4 ise y'si de ne olacaktır?
+
+171
+00:36:49,567 --> 00:36:53,447
+y'si 4
+
+172
+00:36:53,447 --> 00:36:54,867
+Evet
+
+173
+00:36:59,860 --> 00:37:13,739
+Şurada arkadaşlar, x'i 4 ise, pardon, bunun y'sini nasıl söyleyeceğim, y değerini, x'i 4 ise y'si 2 gelmez mi? Şurada bir hata yok.
+
+174
+00:37:21,972 --> 00:37:49,932
+Hocam affedersiniz, bu üste x'e göre integral yazdığımızda biz 0'dan 4'e alıp sonra eksi integral 2'den 4'e alıp... Hayır, geometrik şekil kullanmıyoruz burada. Belirli integral'i kullanarak gidiyorum. Onu sen tabii geometrik şekil olarak düşünüp yazabilirsin ama öyle bir şey yok. Bilmiyoruz. Biz sadece belirli integral ile nasıl yazarız? x'e göre integral yazıyoruz. Dedik ki 0'dan 4'e gitti. Şunu merak ettim.
+
+175
+00:37:49,972 --> 00:38:14,812
+çözen, yani kök x eşittir, x eksi 2 dedim ya, doğru mu diye kökerine baktım. x kare eksi 4x artı 4 dersen, x kare eksi 4x 5x olur, artı 4, 1 ile 4 olur. Doğru. Yok, bu doğru, şu sınırı doğru mu diye yazmamışım ya, bu doğru ama bu 4 tamam mı? Bu 4 arkadaşlar. Evet.
+
+176
+00:38:16,916 --> 00:38:32,896
+Onun için dedik ki, burada x'e göre taradığımızda bölge 2'ye ayrılıyor. Yani düzgün bölge olmadığı için 2 integral şeklinde 0'dan 2'yi, 2'den 4'e deyip hesaplamamız gerekir. Ama y'ye göre bu bölgeyi tararsak, bakın şurada, şekli şuraya aldık. Nedir bu?
+
+177
+00:38:33,364 --> 00:38:35,023
+tek bir bölge bakın.
+
+178
+00:38:35,503 --> 00:38:39,844
+Sıfırdan dörde kadar hep doğrudan eğriye.
+
+179
+00:38:39,963 --> 00:38:40,884
+Doğrudan eğriye.
+
+180
+00:38:40,943 --> 00:38:41,963
+Tek bir bölge onun için.
+
+181
+00:38:42,384 --> 00:38:44,523
+Bana bir şey demezse daha avantajlıymış.
+
+182
+00:38:44,523 --> 00:38:48,323
+İşte diyeceğim ki integral sıfırdan dörde kadar diyeceğim.
+
+183
+00:38:48,823 --> 00:38:50,703
+y artı 2 eksi.
+
+184
+00:38:51,284 --> 00:38:56,703
+y kare. Çünkü x'leri çekeceğiz. Y'ye göre yazmam gerekir integrali.
+
+185
+00:38:57,043 --> 00:39:07,364
+D'ye. Bunun da sonucunun 10 bölü 3 çıkması gerekir. Bunların her ikisinde sonucu aynı olmalı alan sadece integralin sırası değişmiştir deriz ya da integrasyon sırası değişmiştir.
+
+186
+00:39:07,443 --> 00:39:15,143
+Yani bunu x'e göre almışımdır, bunu da y'ye göre almışımdır. Yani sonuçların hepsinin aynı çıkması gerekir diyoruz.
+
+187
+00:39:16,663 --> 00:39:16,983
+Evet.
+
+188
+00:39:18,228 --> 00:39:19,307
+devam edelim.
+
+189
+00:39:22,447 --> 00:39:35,288
+Şimdi, şunu biraz sonra çözeceğim ben arkadaşlar. Her iki durumu da yazacağım. Tamam mı? Kendim yazdım. Şu örneği çözelim. O kalsın, sonra çözeceğim. Evet, yhtir eleniks.
+
+190
+00:39:35,795 --> 00:39:43,975
+ve x eşittir, sıfır, y eşittir, sıfır, y eşittir bir doğrularıyla sınırlı bölgenin alanını veren integralı işte sınavda.
+
+191
+00:39:44,075 --> 00:39:51,115
+Diyelim ki x'e göre integral ile yaz veya b şıkkında da y'ye göre integral ile yazınız. Her iki durumu da soruyor burada.
+
+192
+00:39:51,375 --> 00:39:55,475
+Şimdi önce biz kabaca çizelim. L'nin x'eğrisinin çizmesini biliyoruz. Bakın nedir?
+
+193
+00:39:55,475 --> 00:39:58,135
+İşte y'nin eksi sonsuzluğundan gelecek.
+
+194
+00:40:00,000 --> 00:40:25,920
+sonuçlarına doğru şöyle bir yaydır. L'nx eğrisi. Sonra neyi çizmeliyim? y eşittir 1 doğrusunu çizeceğim. Sonra x eşittir 0, y eşittir 0. Yani şu bölge arkadaşlar. x'i 0, y'si 0, şu bölge. Şimdi dediğimiz gibi bunu biz milimetrik çizmediğimiz için y eşittir 1 ile L'nx eğrisini ne yapmalıyım? Çakıştırmam gerekir değil mi? L'nx eşittir.
+
+195
+00:40:26,224 --> 00:40:37,004
+0 ise, pardon, 1 ile, y eşittir 1 ile L'nx'e risini çakıştırırsak arkadaşlar, L'nx eşittir 1 dersen ne olması gerekir x'in? E.
+
+196
+00:40:37,004 --> 00:40:39,244
+E, dur, demek ki E'de çakışıyorlar.
+
+197
+00:40:40,275 --> 00:41:08,275
+x'in çakırdı. Bölgemiz bu. Şimdi biz bunu x'e göre yazmamız gerekirse diyelim. Ne yapıyorum? Bakın sıfırdan sınırım nereye kadar x'i? E'ye kadar. Sıfırdan e'ye kadar dik şeriflerle tarıyoruz. Acaba tek bir bölgenin. Bakın tararsam yukarıda doğru aşağıda x ekseni. Tarıyorum, tarıyorum, tarıyorum şuraya kadar. Bakın bire kadar değişmedi. Üstte bir doğrusu altta x ekseni. Ama birden e'ye kadar gidersem bakın ne oldu? Üstte bir doğrusu sabit.
+
+198
+00:41:08,275 --> 00:41:14,996
+alttaki eğri değişti. Ne oldu? L'NX'e denk geldi. Onun için diyorum ki bunu x'e göre ikiye ayırmam gerekiyor.
+
+199
+00:41:15,284 --> 00:41:43,144
+Anlıyor muyuz arkadaşlar? Görüyorsunuz yazılmış ama şekil üzerinde konuşalım bakın. Diyorum ki x'in sınırı birden e'ye kadar gidiyor. Ben bölgeyi dik şeritlerle tarıyorum. Bölgenin alt ve üst sınır değiştiğinde bölge ne yapıyor? Düzgünlüğünü kaybediyor. Oradan parçalıyorum. Diyorum ki bakın gidiyorum sıfırdan e'ye kadar doğru x80'i doğru x80'i doğru x80 hop geldim biri ama birden sonra devam edince ne oluyor? Üstü değişmedi ama altı değişti.
+
+200
+00:41:43,284 --> 00:42:11,224
+oldu. Bir eğriye denk gel. O zaman diyorum ki ben bunu birden kesmem lazım. O halde sıfırdan bire kadar bir bölge kalsın onu yazarız. Sonra birden E'ye gidiyorum bakıyorum. Üstte Y'yeştir bir doğrusu, altta L'an X, bir L'an X. Tamam. Bu kadar. İkiye ayrılmış olacak. Hemen geliyorum. A diyorum alan. Yani X'e göre yazıyoruz. İntegral. X'i sıfırdan bire kadar. Üstteki eğriden alttaki eğri. Üstteki nedir? Y bir doğrusudur. Alttaki de sıfır.
+
+201
+00:42:11,284 --> 00:42:23,923
+doğrusudur. Yani 1dx dedim. Artı integral 1'den e'ye kadar x'i, üstteki eğriden alttaki eğriyi çıkaralım. Üstteki eğri nedir? y eşittir 1 eğrisi, değil mi?
+
+202
+00:42:24,403 --> 00:42:34,624
+Alttaki de lnx eğrisi. 1-lnx, bx. İşte bu. Önemli olan bunu yazmak. Gerisi integral'i bilmiyorsan o artık kendi problemimiz diyeceğiz.
+
+203
+00:42:34,624 --> 00:42:37,204
+Hani integral kurallarını öğrenmiş olduk.
+
+204
+00:42:37,376 --> 00:42:59,896
+Bu kısmı anlıyor muyuz arkadaşlar? Düzgün bölge olayını. Dik şeritlerle tara. Altla üst değiştiği anda bölgeyi oradan ayırıyorsun. Evet. Şimdi ne yapıyorum? Hesapta bunun integralini. Bunun integrali x'dir. Üst sınırı eksi alt sınırdan 1 gelir. Ya da diyeceksin ki burası bir karedir. Karenin alanı demama integrali. Gerçi test olduğu için.
+
+205
+00:43:00,335 --> 00:43:17,255
+Evet, neyse konuşmayayım bu kadarını. Bunun integralı ne olur? Birinin integralı x'tir. L'nx'in integralini de artık burada ezbere yazdık arkadaşlar. x l'nx değil mi? Eksi x'di. Şu eksi de düşünürsek, eksi x l'nx artı x diye yazarız.
+
+206
+00:43:17,619 --> 00:43:33,820
+birden e'ye kadar sınırımız. Üç sınırı yazdığımda e gelir. Şurada elen e 1 olduğu için buradan da e geldi. Şu e'ler gitti. Buradan sadece e kaldı. Alt sınırı da yazdığımda elen 1 0 olur. Tamam mı? Buradan da
+
+207
+00:43:35,731 --> 00:43:43,532
+2 gelecek ama eksi, bir de şuradaki biri de düşünürsek, eksi 1 kalır. e-1 olarak sonucu bulur.
+
+208
+00:43:43,811 --> 00:43:51,192
+İşte x'e göre, integral ile ifade ettiğimizde ya da x'e göre düzgün bölge dediğimizde bu şekilde bulmuş oluyoruz.
+
+209
+00:43:51,431 --> 00:43:57,532
+Şimdi aynı bölgeyi bakın, y'ye göre tararsam. Kaç bölge olur arkadaşlar y'ye göre tararsak?
+
+210
+00:43:58,351 --> 00:44:02,931
+2 bölge mi, tek bir bölge mi? Yani yatay şeritlerle tarayın bölgeyi. Kaç bölge olur?
+
+211
+00:44:03,987 --> 00:44:05,267
+Kaça ayırmam gerekiyor?
+
+212
+00:44:05,287 --> 00:44:06,427
+Bir değil mi hocam?
+
+213
+00:44:06,487 --> 00:44:11,287
+Evet, tek bir bölge değil mi? Bana hiçbir şey demiyorsa niye bu kadar integral ile uğraşayım ki?
+
+214
+00:44:11,707 --> 00:44:17,587
+İşte şekli yine şuraya aldık bakın. Sınırımız yine yatay şeritlerle tarıyorum. Sıfırdan bire kadar.
+
+215
+00:44:18,187 --> 00:44:21,587
+Tarıyoruz, tarıyoruz. Hep L'en x'ten işte sıfır doğrusuna kadar.
+
+216
+00:44:22,127 --> 00:44:26,167
+Diyorum ki o zaman tek bir bölge falan dedik. Sıfırdan bire kadar.
+
+217
+00:44:26,747 --> 00:44:31,187
+Buradan tabii ki x'i çekmem gerekir. E üzeri y'dir. E üzeri y, d y.
+
+218
+00:44:31,987 --> 00:44:57,107
+bunda integral'ı kendisidir zaten. Sıfırdan bire kadar bakın. e-1'i bulduk. Aynı sonucu bulacaksın zaten hata yapmıyorsan. Sadece tek fark burada. İntegrallerin sırası değişmiş. Yani burada x'e göre almışım, burada y'ye göre almışım. Onun için bana alanı bul diyorsa, hiçbir şey demiyorsa, yani bu ikisini de istemiyorsa, ben niye bununla uğraşayım ki? Bu tek bir bölge. Bunu yazarım. Daha işim kolay olur. Tamam mı arkadaşlar?
+
+219
+00:44:57,619 --> 00:45:04,279
+Şimdi bununla ilgili birkaç örneğim daha var onu çözmek istiyorum. Onu hemen şuradan yükleyeceğim.
+
+220
+00:45:16,403 --> 00:45:40,403
+Evet. Şimdi birkaç örnek yaptım. Daha iyi otursun diye alanlar arkadaşlar. Önemli çünkü. Şimdi örneğimizin bir tanesi şu. y eşittir, x kare eksi 2x ve y eşittir. 4x x kare eğrisi arasında kalan sınırlı düzlemser R bölgesinin alanını bulunuz diyelim. Şimdi bunları kabaca çizersek, bu da gene bir paraboldür. Bu da bir parabold arkadaşlar.
+
+221
+00:45:41,007 --> 00:45:58,987
+Böyle bir parabol tamam mı? Sıfırdan geçer. Bunun sıfırını, fx'i sıfır yapan noktalar nedir? x2 ile x eşittir 2 ile sıfır noktasıdır. Yani şöyle bir parabol kabaca çizdik. Bu da nedir? Tepe noktası 4, kolları aşağıya bakan, 4'ten geçen şöyle bir parabol.
+
+222
+00:45:59,227 --> 00:46:09,007
+Dediğim gibi biz bunu milimetrik çizmediğimiz için şöyle kabaca çizeriz. Ne yaparız? Bunu hesaplayabilmek için her iki eğriyi çakıştırırız. Yani ortak çözeriz.
+
+223
+00:46:09,007 --> 00:46:13,227
+aldım şeye bakın x kare eksi 2x eşittir 4 eksi x kare.
+
+224
+00:46:13,715 --> 00:46:40,896
+Bunun her ikisini ortak düzenleyip çözersek, buraya artık bakın, x kare eksi x, eksi 2 eşittir, sıfır şeklinde bir polinom buldum. Bunun da kökleri nedir? Eksi 1'e 2'dir. Yani şu iki eğrin çakıştıkları nokta nedir? 2'ye eksi 1'dir. Şimdi işim bitti, yani noktaları bulmuş oldum. Yani ben eğer bunu x'e göre yazmak istiyorsam, diyeceğim ki nedir? Eksi 1'den 2'ye kadar bakacağım kaç bölge olduğuna.
+
+225
+00:46:41,715 --> 00:47:09,715
+aralığında şöyle de yazabilirsiniz. İşte x eksi 1 ile 2 aralığındadır. Burada üstteki eğriyi göstermek istemişim. 4 eksi x kare de x kare eksi 2x'den büyük olduğundan R bölgesinin A alanı demişim. Alanı şimdi buradan bakın. Birlikte tarayalım bakın. Eksi 1'den 2'ye kadar üstte bir eğri, altta bir başka bir eğri değil mi? Şu. Gidiyorum, gidiyorum, gidiyorum. Hep aynı değişmedi. Yani tek bir bölge.
+
+226
+00:47:09,715 --> 00:47:35,355
+x'e göre bunu yazmak istersen, alan diyeceğim, integral eksi 1'den 2'ye kadar, üstteki eğriden, alttaki eğri. Bakın şöyle kalımı dikdörtgen çizmişim, yazabilmek için üstteki eğri nedir? 4 eksi x paraboli, alttaki eğri de işte x kare eksi 2x paraboli. Şu, üstteki eğriden alttaki eğri. Bitti, bu kadar. Bundan sonrası dediğim gibi dikkatlice integral'i hesaplamaktır. Anladık mı?
+
+227
+00:47:37,715 --> 00:47:50,635
+çakıştırdım, erileri buldum. Üstteki eriden alttaki eriyi çıkarıyoruz. O zaman, şimdi biraz daha düzgün yazarsam, ne olur? 4-x²-x²-x² de buradan gelsin.
+
+228
+00:47:50,695 --> 00:48:03,436
+x²-x² gelir. Artı 2x şu. Bunu da integralin 4x, 2 bölü 3x küp artı x²-x². Eksi birden 2'ye kadar. Üst sınırı yazarsam 8.
+
+229
+00:48:04,244 --> 00:48:20,443
+buradan 8, 16 bölü 3, artı 4, eksi 6 sınır, eksi 4 olur. Buradan artı gelir eksiden, 2 bölü 3, artı 1. Bunu da düzenlerseniz artık 9 olarak buluruz arkadaşlar.
+
+230
+00:48:20,784 --> 00:48:28,644
+Tamam mı? Yaklaşık işlemleri de. Yani verilen şu aralıktaki bölgenin alanı 9 birim karedir diyeceğiz.
+
+231
+00:48:29,972 --> 00:48:43,331
+Peki bunu y'ye göre yazmış olsaydık bakın çok karmaşık olacaktı. Yatay şeritlerle bu noktayı bulacağım, şunu bulacağım. Yani oldukça karışık hatta yazma gereği bile duymadım arkadaşlar. Tamam mı?
+
+232
+00:48:43,831 --> 00:48:55,872
+Zaten size her iki durumu da yazın derlerse düzgün. Demin ki yazdığımız gibi yazılabilir. İşte x'e göre 2'ye ayrıldı, y'ye göre 1'e ayrılmış oldu. Ama bu gerçekten karışık olacaktı. Tamam mı?
+
+233
+00:48:57,972 --> 00:49:25,972
+noktasını bulmam gerekiyor. Şuraya bulacağım. İşte bu noktadan sıfıra, sonra tekrar şurada bakın kesiyor tekrar. Yani çok karışık. 3-4 bölgeye ayrılacak. O bu şekilde kalsın. Buna girmeyeceğim. Evet, gelelim şimdi bir tane örneğimize şu olsun. y eşittir x kare parabolu ile y eşittir 2x, 2-x doğrusu arasındaki alanı bulunuz diyor bana. Şimdi yine bunu kabaca çizelim bakın. Bu bir parabol.
+
+234
+00:49:25,972 --> 00:49:46,132
+boldür çizdim. x'e 0 verdim, y'si 2'dir. y'ye 0 verdiğimde de x'i 2 olan şöyle bir doğru. Şimdi gene biz bunu ne yaptık? Dedik ki milimetrik çizmiyorum. Ne yapmam gerekir? Ortak çözmem gerekir. Çakıştırmak denir ya da ortak çözersek x kare eşittir, y'lerine eşit dediği yeri gelir.
+
+235
+00:49:46,675 --> 00:50:03,316
+x'leri eşitlersin fark etmez. Buradan y'leri eşitledim daha kolay olduğu için. x kare eşittir 2x, x diyorum. Bunu düzenlersem x kare artı 2x, eksi 2. Bunun da yine köklerin ne olur? Bire, eksi 2 olur arkadaşlar. Tamam mı? O zaman ne yapıyorum?
+
+236
+00:50:03,860 --> 00:50:08,159
+Bunun çakıştığı yerleri şurada işaretleyelim. 1'e ve x2 ortak.
+
+237
+00:50:08,320 --> 00:50:15,119
+Yani sınırımız nereden nereye kadar? x2'den 1'e kadar arkadaşlar.
+
+238
+00:50:15,780 --> 00:50:20,420
+Şimdi bunu x'e göre yazmaya çalışırsam ne yapıyorum? Dik şeritlerle tarıyorum.
+
+239
+00:50:20,539 --> 00:50:26,159
+x2'den 1'e giderken üstte doğru, altta parabola, üstte doğru, altta parabola.
+
+240
+00:50:26,159 --> 00:50:31,000
+Hep aynı bakın. Değişmedi. Tek bir bölge o zaman. Bu x'e göre tek bir bölge.
+
+241
+00:50:31,860 --> 00:50:43,400
+Ne diyorum? İntegral, eksi 2'den bire kadar, üstteki eğriden, yani doğrudan parabolu çıkar. 2-x'den eksi parabolu. Bu.
+
+242
+00:50:44,099 --> 00:50:54,099
+Bunda integral ne olur? 2x, eksi x kare bölü 2, eksi x küp bölü 3, eksi 2'den bire kadar.
+
+243
+00:50:54,527 --> 00:51:02,887
+3 sınır olarak yazarsam 2, eksi 1 bölü 2, eksi 1 bölü 3, eksi alt sınırı diyorum, eksi 4 olur.
+
+244
+00:51:04,947 --> 00:51:22,687
+x kare artı 8 bölü 3. Bu da sonuçta hesaplanırsa 9 bölü 2 birim kare olarak karşımıza çıkar diyoruz. Peki şimdi size soruyorum, yazmışım. Bunu y'ye göre de yazabiliriz. Y'ye göre kaç bölge olur arkadaşlar?
+
+245
+00:51:25,588 --> 00:51:38,907
+Yani y'nin sınırı bakın, sıfırdan dörde kadar gitmiş. Çünkü x'i eksi 2 ise yerine yazarsam, 4 olur y'si de. Yani y'nin sınırı sıfırdan dörde kadar tek bölge mi, iki bölge mi? Sizce.
+
+246
+00:51:50,675 --> 00:52:05,895
+Evet, fikri olan. Şekli görüyorsunuz, yatay şeritlerle tarayın, kaç bölge oluyor? Bakın sıfırdan dörde gidiyorum arkadaşlar. Bakın parabolüm bir kolundan bir koluna, bir kolundan bir koluna gittim. Ta ki şuraya kadar.
+
+247
+00:52:06,420 --> 00:52:20,920
+Ama bundan yukarısı bakın şurada 1 demişim herhalde. 0'dan 1'e kadar parabol kolundan parabol koluna dedik. Ama 1'den işte 4'e kadar çıktığında bakın doğru parabol değil mi? Değişti. Onun için 2'ye ayırmam gerekiyor.
+
+248
+00:52:21,700 --> 00:52:31,660
+Şimdi geldik yazmışız buraya bakın. İkinci yol. Birinci yol x'e göre düzgün bölge dedim. Hani yazımlara da alışkın olalım ya da x'e göre integral her türlü yazabilirler.
+
+249
+00:52:32,244 --> 00:52:35,784
+Bu sefer de y'ye göre integral ya da y'ye göre düzgün bölge.
+
+250
+00:52:36,063 --> 00:52:41,624
+Şimdi y'ye göre dedik ki sıfırdan dörde kadar yatay şeritlerle bölgeyi tarıyorum arkadaşlar.
+
+251
+00:52:41,903 --> 00:52:47,503
+Tararken dedim ki bakın sıfırdan bire kadar hep parabol kolundan parabol koluna.
+
+252
+00:52:47,503 --> 00:52:51,724
+Tabii bunları bulmam gerekir. Yani bu parabolun x'ini çekmem gerekir.
+
+253
+00:52:51,804 --> 00:52:56,083
+Çünkü yeri yazacağım ya integral'i. x nedir? Artı eksi kök ye değil midir?
+
+254
+00:52:56,503 --> 00:52:58,583
+x'in artı koludur.
+
+255
+00:52:59,380 --> 00:53:16,719
+eksik olur değil mi? Ona göre. O zaman ne diyeceğim? Integral, A diyorum alan, integral, yatay şeritlerle taradım, y'si sıfırdan bire kadar diyorum. x'in artı kolundan eksik olunu çıkarıyorum değil mi? Artı kök y'den eksi.
+
+256
+00:53:17,492 --> 00:53:41,791
+Şu kolu çıkarıyorum. Yani x'in eksi kolunu çıkarıyorum. Eksi kök y. Tamam mı? D y. Artı, buradan birden dörde kadar taradım, taradım. Birden dörde kadar integral. Ne yapıyorum? Doğrudan parabola çıkarıyorum. Doğrunun x'ini çekersem, doğrunun x'i neydi? Bakın şuradan çekin doğrunun x'ini. 2 eksi y'den.
+
+257
+00:53:42,516 --> 00:54:04,056
+diyorum. Eksi kolunu çıkarıyorum x'in. Yani eksi, eksi kök y, d'ye. Anladık mı arkadaşlar şu olayı? Burada x'i çekmek için ne yapıyorum? Şuradan x'e çiftir artı, eksi kök y. Yani şunu yazarsan x'e göre bu artı koludur. Yani artı kök y'dir. Bu da eksi kök y'dir. Tamam mı? Dur.
+
+258
+00:54:05,652 --> 00:54:15,132
+İşte bunu da bir daha hesaplamadık mı? Hesaplamış mıyım? Ha hesaplamışım. Hani size bırakayım diyecektim. Hesapladığımız için o zaman ne diyorum?
+
+259
+00:54:18,132 --> 00:54:19,292
+Bir dakika.
+
+260
+00:54:20,572 --> 00:54:23,512
+Ha şunu toplam. Pardon. Şurada hesaplıyorum.
+
+261
+00:54:24,019 --> 00:54:35,539
+0'dan bire kadar buradan ne gelecek? 2 tane kök y, d, y integral, 1'den 4'e kadar, 1'e eksiye artı kök y, d, y diye yazmış olduk.
+
+262
+00:54:35,539 --> 00:54:46,059
+Şimdi artık bunun integralini alabilirim. Şunun üzerine y üzeri 1 bölü 2 düşünürsem, 3 bölü 2, 2 bölü 3 çarpı, bir de şu 2'den 4 bölü 3, y üzeri 3 bölü 2 diyeceğim.
+
+263
+00:54:46,360 --> 00:54:51,680
+0'dan bire kadar artı, bunun integralini alıyorum. Bakın, 2y eksiye kare bölü 2.
+
+264
+00:54:52,019 --> 00:55:10,900
+artı y üzeri 3 bölü 2 çarpı 2 bölü 3. Birden 4'e kadar. Bunu da üst sınır eksi alt sınırını yerine yazarsanız arkadaşlar 9 bölü 2 olarak buluruz. Tamam mı? İşte her ikisinin sonucu da aynı çıktı. Sadece integral sırasını değiştirmiş olduk. Şimdi gelelim.
+
+265
+00:55:12,115 --> 00:55:18,835
+Demin dedim ya sonra çözeceğim soruyu konuyu anlatırken oradaki örneği buraya aldım arkadaşlar.
+
+266
+00:55:19,435 --> 00:55:28,215
+x eşittir y kare eksi 12 parabolunun sağında ve y eşittir x doğrusunun solunda kalan düzlemsel bölgenin alanını bulunuz.
+
+267
+00:55:28,515 --> 00:55:30,495
+Bu da gene nedir? Bir paraboldür değil mi?
+
+268
+00:55:31,315 --> 00:55:40,495
+Yani y'ye sıfır verirsem x'i nereden geçecek? x'i 12'den tepe noktası. Şöyle bir paraboldur. Çizersek şunu.
+
+269
+00:55:41,835 --> 00:55:48,435
+Bu sefer şöyle bir parabold dedik. Bunu çiziyoruz. Bu da birinci açı ortaydır. Hop çizdik şöyle.
+
+270
+00:55:49,556 --> 00:56:11,556
+Sonra ne yapacağız? Bu iki eriyi çakıştıralım arkadaşlar. Bu sefer bakın x'leri eşitleyelim. y kare eksi 12 eşittir y dersen y kare eksi 12 eşit 0 ise bunun kökleri ne olur? Eksi 3'e 4 olur. Yani şu çakıştığı nokta şurası 4'tür, şurası da eksi 3'tür.
+
+271
+00:56:16,884 --> 00:56:44,643
+x 3'tür. Bu da y'si 4 ise aç ortay olduğu için bu da 4'tür diyeceğiz. Tamam mı? Şimdi gene bunu da her iki türlü yazalım. Önce bana hiçbir şey demeseydi arkadaşlar, ben bunu y'ye göre tararsam daha avantajlı olacaktım. Neden? Bakın y'nin sınırları x 3'den 4'e gidiyor değil mi? Şu. x 3'den 4'e giderken başlıyorum taramaya. Bakın doğrudan parabole, doğrudan parabole. Böyle. Hep aynı. Onun için tek bir bölge.
+
+272
+00:56:44,884 --> 00:56:55,563
+O yüzden alanı y'ye göre yazarsam, diyorum ki, eksi 3'den 4'e kadar integral, doğrudan yani, x'i nedir? Bunun y'den paraboli çıkarıyorum.
+
+273
+00:56:55,563 --> 00:57:02,703
+Eksi y kare eksi 12 d'ye. Bunu da hesaplarsanız bakın, bunun integrali y kare bölü 2.
+
+274
+00:57:03,411 --> 00:57:17,152
+x kare artı 2x, y küp bölü 3, bu da arka 12'dir, 12'ye derim. 3x, 6 sınırdan 343 bölü 6'dır diye bulursunuz. Birim karedir alan dediğimiz için. Şimdi ben diyorum ki bunu
+
+275
+00:57:17,715 --> 00:57:33,375
+x'e göre tararsak, yani sınırın bakın nereden nereye kadar, x'in sınırı eksisi 12'den 4'e kadar dik şeritlerle tararsanız kaç bölge olur? Evet arkadaşlar, bekliyorum bir dakika, siz düşünün kaç bölge olur?
+
+276
+00:57:47,603 --> 00:57:48,483
+2 değil mi hocam?
+
+277
+00:57:48,884 --> 00:57:49,224
+Efendim?
+
+278
+00:57:50,063 --> 00:57:50,423
+Değil mi?
+
+279
+00:57:51,244 --> 00:57:52,943
+Duyamadım. Bir daha kaç bölgede?
+
+280
+00:57:53,163 --> 00:57:53,384
+2.
+
+281
+00:57:53,963 --> 00:57:59,043
+Evet, 2 bölge olacak. Doğru söylüyorsunuz. Bakın görelim daha cevaba bile bakmadan.
+
+282
+00:57:59,423 --> 00:58:03,963
+x 12'den 4'e yürüyerek gittiğimi düşünüyorum. Dik şeritlerle bölgeyi tarıyorum. Bakın.
+
+283
+00:58:04,324 --> 00:58:09,784
+Parabolün bir kolundan bir kol. Onları sonra bulurum. Paraboldan parabole. Gittim, gittim. Ta ki nereye kadar?
+
+284
+00:58:09,784 --> 00:58:10,903
+x 3'e kadar.
+
+285
+00:58:11,407 --> 00:58:39,248
+Sonra x'i 3'den 4'e kadar devam ediyorum. Bakın, parabol doğru değil mi? Buradan bakın, x'i 3'den sonrası neden ayırmış oldum? Çünkü parabolun bir kolundan bir koluna. Altı üstü hiç değişmedi. Ama nerede değişti? Üçü geçince değişiyor bakın. Altı ne oldu? Doğruya geldi. Üstü sabit kaldı. Onun için ne yapacağım? 2'ye ayıracağım. Bu kadar. Başka da bir şey yok. Gerisini yazarız biz artık. Alanı diyorum x'e göre yazarsak. Dedik ki x'i 12'den x'i 3'e kadar.
+
+286
+00:58:39,407 --> 00:58:53,088
+üstteki parabolden, alttaki parabolu çıkaracağız. Tabii ki şurada yine çektim. Bakın x iştiri y kare eksi 12 verilmiş ya arkadaşlar. Y'yi çekersek buradan ne olur? Artı eksi kök içinde x artı 12 olur.
+
+287
+00:58:53,619 --> 00:59:19,039
+O zaman ben burası y'nin eksi koludur değil mi? Üstü de artı koludur diye düşüneceğim. O zaman ne yapıyorum? Bakın dik şeritlerle dedim ki üstteki paraboldan alttaki parabolu çıkarıyorum. Üstteki parabol y'nin artı kolu bakın şu. Kök içinde x artı 12'den eksi kolunu çıkarıyorum. Şu. Zaten ters yazsam bu sıfır olur değil mi? Olmaz.
+
+288
+00:59:19,380 --> 00:59:27,960
+Evet, işte bu. Sonra ne yapıyorum? Diyorum ki, eksi 3'ten 4'e gittiğimde de, üstte artı parabol kolu, altta doğru.
+
+289
+00:59:27,960 --> 00:59:37,180
+Şey yazdım bakın, kök içinde x artı 12, eksi x diyeceğim. x. x'e göre yazdım. Tamam mı? Bu.
+
+290
+00:59:38,003 --> 01:00:03,643
+Bunu hesaplarsanız, o da size kalsın. Aynı sonucu bulacaksınız. 343 bölü 6 diye bulursunuz. Ama dediğim gibi, bana hiçbir şey demiyorsa, niye bununla uğraşayım ki? Bir sürü integral var, dikkat edersiniz. Zor değil integraller, kökün içine bir dönüşüm yaparak yaparsın ama gerek yok. En kolayı bu. Hemen toplam ve farklı integralini almış oldum. Bu yine bir sınavda sorulmuş bir soru arkadaşlar.
+
+291
+01:00:05,012 --> 01:00:07,532
+Evet, bir tane daha şöyle bir sorumuz var.
+
+292
+01:00:09,523 --> 01:00:29,563
+bunda var mı takıldığımız bir yer arkadaşlar? Sınırı anlıyor musunuz? Ben integralin çözümüne şu anda hiç önemsemiyorum. Ben klasik bir sınav yapmış olsam, biz en çok puanı nereye veriyoruz arkadaşlar? Şu kısma. Şunu yazan arkadaş, atıyorum 20 puanlık bir soruysa, 10-15 puanını alır şu yazmadan dolayı.
+
+293
+01:00:29,563 --> 01:00:37,523
+Bazen integral çok karmaşık olduğunda biz derdik ki integralin hesaplama, böyle yaz bırak. Çünkü amaç alanı yaz.
+
+294
+01:00:37,523 --> 01:01:03,224
+yazarken sınırlarını yani bölgeyi yazabiliyorum. Amaç o. Onun için de size soruyorum. Anladık mı x'e göre düzgün bölgeyi, y'ye göre düzgün bölgeyi? Önemli olan o. Şu an integral'i ben öğrettim diye düşünüyorum. Hesaplamasına karışmıyorum fazla. Anlıyor muyuz arkadaşlar? Önemli çünkü. Sonra hacim problemleri çözeceğiz. Gene orada da karşımıza çıkacak. Evet, devam ediyorum. Anladığınızı varsayıyorum. Evet.
+
+295
+01:01:03,775 --> 01:01:06,115
+Şimdi gelelim, şöyle bir örneğimiz olsun.
+
+296
+01:01:06,835 --> 01:01:14,735
+y eşittir 1-lnx eğrisi ve y eşittir x doğrusunun x ekseniyle oluşturduğu bölgenin alanını bulunuz.
+
+297
+01:01:15,056 --> 01:01:20,956
+E şimdi ben bunu ezbere çizemem bilmiyorum çünkü lnx olsa bilirim ama bunu ezbere bilmeyebilirim. Bunu bilirim.
+
+298
+01:01:20,956 --> 01:01:27,056
+O zaman ne yaptık? Ben burada y eşittir 1-lnx eğrisini çizelim dedim arkadaşlar.
+
+299
+01:01:27,255 --> 01:01:34,835
+Hem de sınava hazırlık olur. Nasılsa sınavada dahil eğri çizimi bir de hatırlamış oluruz diye uzun uzun çözdüm bu soruyu. Tamam mı?
+
+300
+01:01:34,835 --> 01:01:39,576
+O zaman eğri çizerken önce neye bakmamız gerekiyordu? Tanım bölgesine.
+
+301
+01:01:39,775 --> 01:01:46,516
+Belirlen fonksiyonun tanım bölgesi de tanım kümesi de nedir? Elen olduğuna göre sıfırla sonsuz aralığındır diyeceğiz.
+
+302
+01:01:47,255 --> 01:01:52,675
+O zaman eğri çizerken neye ihtiyacımız olacaktı önce? 1. ve 2. mertebe türevleri buluyorduk.
+
+303
+01:01:52,675 --> 01:01:55,876
+Bulalım. Bunun 1. mertebe türevi nedir?
+
+304
+01:01:56,271 --> 01:02:01,172
+1 nx'in türevi 1 bölü, önünde de eksi varsa, eksi 1 bölü x'dir diyorum.
+
+305
+01:02:01,492 --> 01:02:05,271
+İkinci türev ne gelir bunun arkadaşlar? 1 bölü x kare olur.
+
+306
+01:02:05,711 --> 01:02:10,972
+Hatta türevi sıfır yapan değerleri bulmak istersek nedir türevi sıfır yapan değer sizce burada?
+
+307
+01:02:13,431 --> 01:02:16,692
+Evet, türevi sıfır yapan değer arkadaşlar var mı?
+
+308
+01:02:18,452 --> 01:02:23,411
+Yok değil mi? Ama işaretini bana sorsa bu aralıkta hep eksidir değil mi?
+
+309
+01:02:24,403 --> 01:02:27,923
+ikinci mertebe türeve bakıyorum. Gene sıfır yapan değer yok.
+
+310
+01:02:28,340 --> 01:02:54,980
+işaretini sorsa bana bu aralıkta hep pozitiftir kareli olduğuna göre. Yani tabloda y'nin türevi işaret yerine hep eksi, ikinci mertebe türevi yerine de hep artı yazmam gerekecek. Burada kendim gördüğüm için öyle bir not aldım. Almasam da tabloda zaten inceleyeceğim. Tamam mı? Türevi tanımsız yapan değer sıfır ama o zaten bölgenin dışındadır. Şimdi gelelim şurada asimptotumuz var mı ona bakıyoruz. Yani x.
+
+311
+01:02:55,443 --> 01:03:16,284
+0'a sağdan yaklaşıyorum açık olduğu için. 1-L'nx'e bakıyorum. L'n0 neydi? Eksi sonsuzdur. Bir dönümde eksisi var. Artı sonsuzdur. O zaman hop diyorum ki x eşittir. 0 benim için düşeği asimptottur diyeceğiz. Tamam mı arkadaşlar? Bir de yatay asimptotu nasıl arayacaktım? x sonsuza giderken
+
+312
+01:03:17,043 --> 01:03:26,643
+belli bir değer çıkıyorsa veya x sonsuza giderken belli bir değer çıkarsa buna da yatay asimptot diyordum. Yani diyelim ki şurada x artı sonsuza gittiğinde
+
+313
+01:03:28,211 --> 01:03:54,991
+Eksi diyemeyeceğim zaten. Artı sonsuza gittiğinde nereye gider arkadaşlar? Elen sonsuz sonsuz değil midir? Sonsuza gittiğine göre yatay asimptotumuzda yok diyeceğiz. Sadece düşey asimptotumuz vardır diyoruz. O zaman bir de ne yapmışım bakın. Eksenleri kestiği noktaya bakıyoruz. y'ye sıfır verirsem x'im ne olur? e olur. Yani eksenleri kestiği noktada şudur. Bu kadar bilgiyle tamam çizeceğim.
+
+314
+01:03:55,668 --> 01:04:14,788
+simetrisi yok bunun zaten. Logaritma olduğu için. Şimdi aralığımız nedir arkadaşlar? Şöyle x, t çizgisi çektik. Aralığımız sıfırla sonsuz aralığı var. Burada noktalarımız ne var? 1, e var. Bir de hesaplamışım. Şurada bir tane de biri yazmışız.
+
+315
+01:04:15,411 --> 01:04:21,831
+Çünkü 1 olunca da x1'de y'nin değeri de 1 olur. Hesaplanabilir. Onu da koymuşuz araya. Önemli değil.
+
+316
+01:04:22,211 --> 01:04:26,091
+Şimdi ne yapıyoruz? Türevin işareti. İkinci mertebe türevin işareti. V, y değeri.
+
+317
+01:04:26,451 --> 01:04:33,411
+Şimdi türevi sıfır yapan noktamız yoktu. Onun için de aralıktaki işaretimiz ne demiştik? Hep eksi.
+
+318
+01:04:33,971 --> 01:04:39,671
+Tamam mı? İkinci mertebe türevi de sıfır yapan değer yok. İşaretimiz hep pozitifti. Artı dedik.
+
+319
+01:04:39,671 --> 01:04:43,211
+O zaman değerlerini de bulalım. x0 zaten asimptotumuzdu.
+
+320
+01:04:43,411 --> 01:04:50,171
+Bu da düşeği asimptotu. Tek bir kolu bizi ilgilendirdiği için. Yani sağ tarafı şöyle bir tane çizgi sonsuz olmuştu.
+
+321
+01:04:50,931 --> 01:04:55,791
+x sonsuza gittiğinde de bu nedir? Eksi sonsuzluğu. Bunu da buraya yazdık. Tamam mı?
+
+322
+01:04:56,331 --> 01:04:59,911
+Yani 1'deki değer de 1'di, E'deki değer de 0'dı.
+
+323
+01:05:00,275 --> 01:05:11,755
+Şimdi bakıyoruz. Türevin işaretine bakarak artan azalanan aralıklarını görüyoruz. Hep bakın artı sonsuzdan bire azalmış, birden sıfırı azalmış, sıfırdan eksisi olsa hep azalarak gidiyor.
+
+324
+01:05:12,135 --> 01:05:20,936
+Burada bakıyorum maksimum, minimum değerim yok arkadaşlar. Eğri hep azalarak gitmiş. Sonra ikinci mertebe türeve neye bakıyordum? Konkavlık ve büküm noktalarına bakıyordum.
+
+325
+01:05:28,275 --> 01:05:47,096
+noktası var diyecektim. Burada yok. Sadece yukarı konkav bir şekilde bunu çizmeye çalışacağız. İşte şimdi tablomuzu düzenledik. Bir aksilikte çıkmadı. Çünkü otlarla işaretler birbirini doğruladı. O halde ne yapıyorum? x'e ve y'ye bakarak evri çiziyoruz. İşte çizdik. Zaten x sıfırda.
+
+326
+01:05:47,668 --> 01:06:15,668
+asimptotumuzdur şurası. Ne yapacağız? x'i sıfır, y'nin de artı sonsuzunda eğri azalarak nereye gelecek? 1'e geliyor bakın. Şuradan 1'e geliyorum azalarak ama yukarı konkav şekilde. Sonra e ile sıfır yani x'i e'den geçecek. Yukarı konkav azalarak eğri e'den geçecek. Şurası e yazmamış. Sonra nereye gidecek arkadaşlar? x'in artı sonsuz, y'nin de eksi sonsuz.
+
+327
+01:06:15,668 --> 01:06:26,548
+tuzuna doğru, yukarı konkan şöyle bir eğri olarak gidecek. Yani kısaca şöyle bir yay şeklinde bir eğrimizdir. Verilen, yeştir bir elen, 1-elen x eğrisi budur.
+
+328
+01:06:26,548 --> 01:06:38,368
+İşte tabii ki biz alanı sorduğumuza göre bunu milimetrik böyle istemez eğriyi biliyorsan hop böyle ezbere de çizebiliriz ama ben bilmiyorum dedim. Bir kenarda çizmiş oldum. Tamam mı? Siz de örnek olsun diye.
+
+329
+01:06:38,807 --> 01:06:40,608
+Burada var mı takıldığımız bir yer arkadaşlar?
+
+330
+01:06:42,516 --> 01:06:44,836
+Yok, o zaman sorumuza dönüyoruz.
+
+331
+01:06:45,556 --> 01:06:47,916
+Evet, şekli tekrar buraya aldım.
+
+332
+01:06:47,996 --> 01:06:50,956
+Yeştir, 1-len-eşi çizmiş oldum şuraya.
+
+333
+01:06:51,376 --> 01:06:52,776
+Bir de ne vermiş bana soruda?
+
+334
+01:06:53,516 --> 01:06:54,936
+x doğrusu ve x ekseni.
+
+335
+01:06:55,344 --> 01:07:19,624
+birinci aç ortaya çizdim, bir de x ekseni. Yani bölgem şurası arkadaşlar. Burayı da iyice karalamışım görmek açısından. Tamam mı? Şu. Bölgemiz şu. Şimdi bunu biz her iki durumda da yazarız. Sınırları zaten belli. Başka çakıştırmaya da gerek yok. Bir tek şunları da yazdım zaten. Bu da bir birden geçer dedik. Burada problem yok. Şimdi bu bölgeyi x'e göre taradığımızı düşünelim.
+
+336
+01:07:20,047 --> 01:07:38,047
+Bakın, sıfırdan e'ye kadar gidiyoruz. Kaça ayrılır? Doğrudan doğruya, doğrudan doğruya geldik. Şu 1'e kadar doğru. Ama 1'den e'ye bakın, tamamen üstü değişti. 6 sabit kaldı. Onun için ne yapıyorum? x'e göre 2'ye ayırıyorum bunu. Yani alan diyeceğim.
+
+337
+01:07:38,612 --> 01:07:44,472
+0'dan integral bire kadar, üstteki eğriden yani x'den 0'ı çıkarıyoruz.
+
+338
+01:07:44,612 --> 01:07:48,612
+Değil mi? Şu. x'de x. Artı, ikinci bölgeye geliyorum.
+
+339
+01:07:49,612 --> 01:07:53,992
+Integral 1'den e'ye kadar, üstteki eğriden alttaki eğri çıkar.
+
+340
+01:07:54,092 --> 01:08:00,672
+Üstteki eğri nedir? 1-lnx, alttaki eğri dediğimiz y0 doğrusu yazmaya gerek yok.
+
+341
+01:08:00,672 --> 01:08:05,612
+Şu. İşte x'e göre integrali bu şekilde yazmış olduk arkadaşlar.
+
+342
+01:08:05,972 --> 01:08:15,351
+Bunu da hesaplarsak, integralini, bu nedir? x kare bölü 2'dir. 0'dan bire kadar sınırım. Artı, birin integralı nedir? x'dir.
+
+343
+01:08:15,791 --> 01:08:24,752
+L'nx'in integralı de gene diyorduk ki x, L'nx, eksi x'dir. Buraya ezbere yazdım. Tamam mı? Eksi olduğu için şu, birden e'ye kadar.
+
+344
+01:08:29,108 --> 01:08:34,847
+kısım integrasyonu nasıl bulunduğunu da gösterdim arkadaşlar. Hani göremeyenler için yazmışım son tarafa.
+
+345
+01:08:35,268 --> 01:08:44,007
+Şimdi bunun sınırlarını yazıyoruz bakın. 1 bölü 2 artı üst sınır E, eksi E çarpı L'e artı E.
+
+346
+01:08:44,467 --> 01:08:55,347
+sınır, şuradan 1, 1, buradan 2 gelir. Şuradan L'n 1, 0 olduğu için eksi 2 diyeceğim. Bunu da düzenlerseniz, e-3 bölü 2 olarak bulursunuz arkadaşlar.
+
+347
+01:08:55,688 --> 01:09:03,547
+L'n'e de 1'dir şuradan zaten. Eksi'ye elen gitti, buradan e-2 kaldı. Bir de şunu da düşünürseniz,
+
+348
+01:09:04,000 --> 01:09:15,719
+e-3 bölü 2 olarak karşımıza çıkacaktır. Şimdi gelelim bunu y'ye göre düşünürsek kaç bölge olur arkadaşlar? Hadi onu söyleyin bari. Y'ye göre kaç bölge olur?
+
+349
+01:09:28,819 --> 01:09:56,199
+Evet, bir tane arkadaşımız yazdı [öğrenci]. Bir tane bölge olur. Doğru söylüyorsun. Bakın, ne yapıyorum? Y'nin sınırlarını da zaten bulmuşuz noktaları hemen. Zaten önce eğriyi çizeriz, çakıştı noktaları buluruz. Yani ondan sonrasını düşünürüz. Ne yapıyorum? Y'ye bakın sıfırdan bireye gidiyor. Tarıyorum. Doğrudan eğriye, doğrudan eğriye. Tek bir bölge. Onun için şuraya geliyorum. İkinci yol diyorum. Y'ye göre integral yazıyoruz. Sınırımız sıfırdan bireye kadar.
+
+350
+01:09:56,819 --> 01:10:22,079
+Bakın yatay çizgilerle taradığım için şu elen ifadenin x'inden doğrunun x'ine kadar değil mi? Onu da şuradan çekmem gerekiyor. Bakın y'eşitir 1-elen x'i çekersem 1-y olur. Buradan x'de ne olur? e üzeri 1-y'dir. O zaman diyorum ki e üzeri 1-y'den x eşittir y'ye kadardı ya. Eksi y, d'ye.
+
+351
+01:10:22,384 --> 01:10:31,443
+Bunu da integraline yazarsam ne olur? İntegra sıfırdan bire kadar. Şunu açık şöyle yazmaz mıyız? E çarpı E üzeri eksiye, eksiye değil.
+
+352
+01:10:31,983 --> 01:10:42,743
+Bunu da integral E sabittir. Pardon E sabit. E üzeri eksiye'nin integralı nedir? Eksi E üzeri eksiye'dir. Bu da ne olur? Eksiye kare bölü 2.
+
+353
+01:10:43,328 --> 01:11:01,788
+sıfırdan bire kadar. Üst sınır eksi alt sınırdan şurası ne gelecek? Eksi e çarpı evzel eksi birden bu bir olur. Değil mi? Şurada yazdım zaten. Eksi bir böyle iki. Eksi alt sınır diyorum. Şu sıfır olur. Sadece şuradan e gelir. O da artı e olur. Yani sonuçta
+
+354
+01:11:02,387 --> 01:11:23,148
+e-3 bölü 2'yi buluruz. Şuradan eksi 1 şunu da toparlarsak, şu çıkar. İşte her ikisinde de dikkat edin. Aynı sonucu bulduk. Sadece integralin sırası değişti. Tekrar söylüyorum. Bana hiçbir şey demezlerse ben bunu çözerim. Bununla uğraşmam daha uzun diye. Evet, bir tane de örneğin şu olsun.
+
+355
+01:11:25,268 --> 01:11:26,788
+y eşittir.
+
+356
+01:11:27,891 --> 01:11:54,511
+1 artı 2x erisi, y eşittir 3-x doğrusu ve eksenler arasındaki birinci bölgede kalan alanı bulunuz bir ise. Artık bu da bir parabol koludur değil mi? x'e 0 versem y'si 1'den geçen şöyle bir parabol kolu arkadaşlar. Bu da zaten doğrudur. Çizebiliriz. x'e 0 verdim y'si 3'den geçer. y'ye 0 verirsem x'i 3'den geçen bir doğru şu.
+
+357
+01:11:56,916 --> 01:12:15,796
+Bir de ne diyor? Eksenler arasında. Yani eksenler arasında şurayı diyemem. Neresi olacak? Şu bölge. x ekseni var, y ekseni var. Şu. Yani soru biraz kafa karıştırıyor. Tamam mı? Şunu, şunu ama burası olursa sadece y ekseni giriyor. x girmediği için. Yani şu bölge.
+
+358
+01:12:16,435 --> 01:12:41,475
+İşte eğrilere de çakıştıralım bakın. 1 artı kök x eşittir 3 eksi x dersen, yani şu noktaları bulmak için, o zaman buradan kök x ne olur? 2 eksi x olur. Karesini alırsam x eşittir 4 eksi 4 x artır x kare diyeceğim. Bu da düzenlenirse, bunun kökleri 1'e 4 çıkar ama beni ilgilendiren kısım şu 1'dir, şu tamam mı?
+
+359
+01:12:44,307 --> 01:12:50,648
+Şurası da ne olur? 2 olur. Şu nokta. Zaten şu da birden geçiyordu. Baştan sonraki. Şu.
+
+360
+01:12:51,091 --> 01:13:19,091
+Yani bölgemiz bu arkadaşlar. Bunu gene hem x'e hem de y'ye göre yazmaya çalışalım. Şimdi sınırım x'e göre nedir? 0'dan 3'e gidiyorum. Tamam mı arkadaşlar? 0'dan 3'e giderken dik şeriflerle taradığımı düşünüyorum bölgeyi. Bakın parabol doğru, parabol doğru, parabol doğru dedim. Ama buraya geçtim bakın doğru doğru oldu. Onun için ne yapıyorum bunu? 0'dan 1'e kadar buradan kesmem gerekir. Çünkü bölge düzgünlüğünü...
+
+361
+01:13:19,091 --> 01:13:35,891
+kaybetti. Buraya geçince, işte birden 3'e kadar gittiğinde ne oldu? Üstteki eğri değişti. Alttaki sabit ama üstteki değiştiği için bölge düzgünlüğünü kaybetti. Buradan ayırmıyorum. Diyorum ki 0'dan 1'e kadar, 1'den 3'e kadar 2 integral olarak hesaplayacağız x'e göre. O zaman bakın.
+
+362
+01:13:36,595 --> 01:14:03,256
+x'e göre integral dedim. A diyorum. 0'dan bire kadar şöyle. Üstteki eğri nedir? 1 artı kök x eğrisinden alttaki eğri y0 doğrusu yazmayız artık değil mi 0'ı? Yani integral 0'dan bire kadar 1 artı kök x, x integral edeceğim. Artı 1'den 3'e kadar diyorum. Üstteki eğriden alttaki eğriyi çıkarıyorum. Üstteki eğri nedir? 3 eksi x eğrisi alttaki eğri 0 doğrusu şu.
+
+363
+01:14:03,764 --> 01:14:18,344
+İşte böyle bir integral ile bunu hesaplayacağız diyoruz. Bunu da hesaplarsam integraline x gelir. Bunun üzeri 1 bölü 2 olursa 2 bölü 3 çarpı x üzeri 3 bölü 2 gelecek. Sıfırdan bire kadar integralimiz.
+
+364
+01:14:18,868 --> 01:14:41,747
+Bunun integralı 3x, x kare bölü 2'den, üst sınırı, x sınırı, alt sınırıdan yerine yazarsanız 11 bölü 3'ü buluruz arkadaşlar. Tamam mı? Bulursunuz kolay zaten. Şimdi sizden bunu y'ye göre yazmaya çalışın. Hadi ben bir dakika bekliyorum. Siz y'ye göre kaç bölge, yani yatay şeriflerle taradığınızı düşünün.
+
+365
+01:14:59,188 --> 01:15:01,428
+Evet, y'ye göre kaç bölge olur?
+
+366
+01:15:03,748 --> 01:15:04,588
+2 hocam.
+
+367
+01:15:05,908 --> 01:15:11,328
+Evet, nasıl yazarsın? İçini söyleme, sınırını söyle bana. Nereden nereye kadar? Örneğin sıfırdan nereye kadar?
+
+368
+01:15:12,508 --> 01:15:14,088
+Örneğin sıfırdan bire kadar yaparım.
+
+369
+01:15:14,148 --> 01:15:14,388
+Evet.
+
+370
+01:15:15,315 --> 01:15:16,895
+Ondan sonra da 1'den 2'ye kadar.
+
+371
+01:15:17,115 --> 01:15:19,176
+Aynen bu kadar. Doğru söylüyorsunuz.
+
+372
+01:15:19,735 --> 01:15:23,836
+Şimdi y'ye göre diyelim. Ben de doğru yazmışım. Kontrol etmiş oluruz buradan.
+
+373
+01:15:24,315 --> 01:15:29,096
+Evet. Diyoruz ki yatay şeritlerle tarıyorum. Bakın y'nin sınırı nereden nereye kadar arkadaşlar?
+
+374
+01:15:29,275 --> 01:15:33,096
+En son sınırım 2'ye kadar. Sıfırdan 2'ye kadar. Bakıyorum kaç bölge olacak.
+
+375
+01:15:33,496 --> 01:15:37,256
+Yatay tarıyorum bakın. Doğrudan doğruya gittim gittim 1'e kadar.
+
+376
+01:15:37,256 --> 01:15:43,235
+Ama 1'den 2'ye kadar ne oluyor? Bakın buradaki doğru sabit kaldırma bu sefer parabole denk geldi.
+
+377
+01:15:43,315 --> 01:16:07,996
+O zaman ne yapıyorum? 2'ye ayırıyorum. Önce ne diyorum? y'ye göre yazıyorum. İntegral sıfırdan bireye kadar diyorum. Tamam mı? Doğrudan neye çıkarıyorum? Sıfır doğrusunu. Yani buradan çektik. 3x'ye. Çünkü y'ye eşittir. 3x'ye. x'i çekersem 3y olur. Ona da dikkat ediyorum. Bu da sıfır olduğu için yazmayacağım şurası.
+
+378
+01:16:08,724 --> 01:16:28,963
+x sıfır doğrusu yazmadık artık. Artı diyorum. Şimdi geliyoruz birden 2'ye kadar ne yapıyorum? Doğrudan parabolu çıkaracağım. Doğru neydi? 3 eksi y'den. Buradaki parabolümüz de neydi yukarıda? Şuradan x'i çekmen gerekir değil mi? Bu da ne olur? x'i çekersen y eksi birin karesi gelecek işte.
+
+379
+01:16:31,252 --> 01:16:51,212
+Anlaşıldı mı arkadaşlar? 2'ye ayırdık. Bu şekilde. Bunu da integraline alırsam bu ne olur? 3y gelir. Buradan y kare bölü 2. Sınırım sıfırdan bire kadar. Şuraya geliyorum. Bunu açarsam. 3-y, y'nin karesi, eksi y kare, artı 2y, artı 1, eksi 1 olur. Şu.
+
+380
+01:16:51,648 --> 01:17:00,248
+Buradan da integralini alırsak, şu üst sınırı yazmış olalım. 3-1 bölü 2, alt sınır 0 gelmez. Şuradan integralini almaya çalışalım.
+
+381
+01:17:00,368 --> 01:17:08,428
+Eksi 1 ile 3'ü düşünelim. 2 gelir, 2y olur integrali. Şuradan y kalır, y kare bölü 2'dir integrali.
+
+382
+01:17:08,988 --> 01:17:13,368
+Bunun da integrali. Eksi y küp bölü 3, sınırım birden 2'ye kadar.
+
+383
+01:17:13,668 --> 01:17:19,648
+İşte üst sınırı, eksi alt sınırı yazarsanız gene 11 bölü 3'ü bulursunuz arkadaşlar.
+
+384
+01:17:19,648 --> 01:17:40,108
+Tamam mı? İşte alan dediğimiz olay bu arkadaşlar. Amaç burada x'e veya y'ye göre düzgün bölgeyi bilmek, ona göre sınırlarını yazmak. Var mı sorumuz? Evet, burada kalalım. Hacime sonra geçeriz. Var mı soru arkadaşlar anlamadığımız bir yer?
+
+385
+01:17:43,123 --> 01:17:54,843
+O zaman haftaya görüşürüz. Haftaya ben sınava yönelik biraz soru çözeceğim. Ona göre konuşuruz. Tamam mı arkadaşlar? Var mı bir gün? Görüşürüz hocam. İyi günler. İyi günler hocam. Teşekkürler.

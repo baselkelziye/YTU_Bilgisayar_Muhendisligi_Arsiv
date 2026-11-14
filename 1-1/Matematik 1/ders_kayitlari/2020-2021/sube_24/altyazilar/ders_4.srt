@@ -1,0 +1,2339 @@
+1
+00:01:25,203 --> 00:01:28,703
+Günaydın arkadaşlar. Nasılsınız?
+
+2
+00:01:28,803 --> 00:01:31,703
+Günaydın hocam.
+
+3
+00:01:32,803 --> 00:01:44,103
+Evet, dün kaldığımız yerden devam edeceğiz. Limite başlamıştık. En son örnekler de çözdük. Geldiğim yere kadar ilerleyelim. Sürekli iler başlayacaktık bugün.
+
+4
+00:02:00,884 --> 00:02:01,903
+Evet arkadaşlar.
+
+5
+00:02:02,984 --> 00:02:04,183
+Beklemeye gerek var mı?
+
+6
+00:02:04,183 --> 00:02:05,384
+Bir dakika falan.
+
+7
+00:02:05,984 --> 00:02:06,463
+Katılım.
+
+8
+00:02:14,644 --> 00:02:16,764
+Ekranı iyi görebiliyor muyuz arkadaşlar?
+
+9
+00:02:17,243 --> 00:02:19,004
+Evet hocam, gayet imlet gözüküyor.
+
+10
+00:02:19,524 --> 00:02:22,264
+Diğerinde problem var, bunu kullandım.
+
+11
+00:02:22,264 --> 00:02:23,683
+Tamam, yazalım.
+
+12
+00:02:24,000 --> 00:02:40,379
+Evet, şimdi başlık olarak, limiti verdik, sıra sürekliliğe geldi. Önce iç noktada süreklilik, üç noktada süreklilik dediğimizde, yine tek değişkenli fonksiyonları göz önüne alacağız. Ve bu fonksiyonların tanım kümesi de bizim için önemli.
+
+13
+00:02:40,920 --> 00:02:51,900
+Karşılaşacağımız buraya yazdım. Fonksiyonların çoğunun tanım kümesi, aralık veya ayrık aralıkların birleşimi olacaktır. Aralık veya ayrık aralıkların birleşimi olacak.
+
+14
+00:02:52,000 --> 00:03:16,420
+P noktası böyle bir fonksiyonun tanım kümesine ait olmak üzere. Eğer P noktası tanım kümesi içinde kalan açık bir aralık içinde ise P noktasına kümenin iç noktası diyeceğiz. Yani aralığın açık aralıkta kalıyorsa iç nokta. Eğer P iç nokta değilse uç nokta diyeceğiz.
+
+15
+00:03:17,139 --> 00:03:40,620
+önemli olan karşılaşacağımız fonksiyonların tanım kümesi, tabii ki aralık veya ayrı karalıkların birleşimidir. Şöyle bir örnek üzerinde bakın, düşünelim. Bu nedir? Kök içinde 4-x kare fonksiyonunun tanım kümesini önceden de vermiştik zaten. x2 ile artı 2 kapalı aralık vermiş burada. Şimdi burada iç nokta nedir?
+
+16
+00:03:41,556 --> 00:03:51,676
+Onu konuşacağız. E şimdi ne dedik? Yukarıdaki tanıma göre bu aralık x2, artık açık aralığında iç noktalar değil mi? İç noktalardır.
+
+17
+00:03:52,156 --> 00:04:00,436
+x2'ye de ne diyeceğiz? Sol uç nokta, artı 2'ye de sağ uç noktadır diyeceğiz. Bu aralıkları yazdık zaten buraya.
+
+18
+00:04:00,576 --> 00:04:08,836
+Aralığın aralıktaki iç noktalar, sol uç nokta dediğimizde x2, sağ uç nokta dediğimizde de 2'den oluşur.
+
+19
+00:04:09,331 --> 00:04:21,831
+İşte yukarıdaki tanımı uygulamak açısından şöyle basık görmek üzerinde söylemiş olduk. Verilen fonksiyonumuz budur. Bunun tanım hükünesini zaten nasıl bulduğumuzu biliyoruz. Kök bir ifade olduğuna göre için pozitif.
+
+20
+00:04:22,228 --> 00:04:29,648
+olması gerekir. Sıfırdan büyük eşit. Onu da düzenlediğimizde bu bulunmuş oldu. E şimdi burada dedik ki iç nokta nedir?
+
+21
+00:04:29,728 --> 00:04:38,087
+x2 artı 2 açı karalığıdır. Uç noktalar sorduğunda da bana x2 sol uç nokta artı 2 de sağ uç nokta diyeceğiz.
+
+22
+00:04:39,860 --> 00:04:55,040
+Evet, şimdi eksi 1, artı 1 herhangi bir aralık vermiş, açık aralık. Bunda ne diyeceğim? Sadece iç noktalardan oluşmuştur. Sağ uç ve sol uç noktası yoktur diyeceğiz. Ya da sadece 3 noktaları yok diyoruz.
+
+23
+00:04:56,759 --> 00:05:04,580
+Evet, şimdi amacımız iç noktadaki süreklilik nedir, uç noktalardaki süreklilik nedir, onları konuşacağız arkadaşlar.
+
+24
+00:05:05,043 --> 00:05:14,923
+Şimdi yukarıdaki kanun da var mı takıldığımız diğer? Söyledik. İç noktalar nedir, üç noktalar nedir? Onları söyledik. Şimdi bir iç noktada sürekliliği nasıl anlayacağız?
+
+25
+00:05:15,156 --> 00:05:21,495
+Diyelim ki c noktası f fonksiyonunun tanım kümesinin bir iç noktası olmak üzere.
+
+26
+00:05:21,836 --> 00:05:24,295
+Tanım kümesindeki bir iç noktayı c olsun diyelim.
+
+27
+00:05:24,696 --> 00:05:35,675
+Eğer limit xc'ye yaklaşırken fx fonksiyonun limiti fc'yi eşit ise fx fonksiyonun c iç noktasında süreklidir denir.
+
+28
+00:05:36,156 --> 00:05:41,316
+Aslında bu tek bir tanım aslında 3 tane ifade bize söylüyor. Ne demektir?
+
+29
+00:05:41,908 --> 00:05:47,288
+Şuradan ne anlayacağım? Birelen fonksiyon C noktasında tanımlı olmalı. Tamam mı?
+
+30
+00:05:47,648 --> 00:05:57,128
+Sonra limitin olması demek ne demektir? C'ye sağdan ve soldan yaklaştığımızda sağ ve sol limitleri mevcut olacak, birbirine eşit olacak.
+
+31
+00:05:57,128 --> 00:06:04,388
+Ve bu limit değeri de fonksiyonun o noktadaki değerini eşitse fonksiyon bu noktada süreklidir diyoruz.
+
+32
+00:06:04,427 --> 00:06:08,208
+Ama biz matematiksel olarak şöyle kısaca yazıyoruz formülü.
+
+33
+00:06:08,480 --> 00:06:30,960
+Bakın şurada da açıkladım demek istediğimiz. Yani bu ne demekti? Şunun anlamı fonksiyon bu noktada tanımlı olacak. Limiti mevcut olacak. Yani yukarıda söylediğim gibi. Bu limit değeri de tanımlı olduğu değere eşitse fonksiyon bu noktada süreklidir. Demek ki iç noktadık sürekli bulamayacağız arkadaşlar. Tamam mı? Evet, devam edelim.
+
+34
+00:06:32,276 --> 00:06:45,556
+Tabii ki burada diyelim fonksiyonun limiti vardır ama tanımlı olduğu değer eşit olmaz. O zaman süreksiz diyeceğiz. Bu tip şeyleri. Burada birazcık tanımları söyleyeceğiz arkadaşlar. Sonra da örnekler üzerinde tekrar tekrar konuşuruz.
+
+35
+00:06:45,556 --> 00:06:47,636
+Eğer dedik ki yazdım şuraya.
+
+36
+00:06:48,148 --> 00:07:00,008
+fonksiyonun limiti mevcut olmaz veya mevcut olur ama fc'ye eşit olmazsa bu durumda f fonksiyonu x eşittir c'de süreksizdir. Demin de söylediğim gibi.
+
+37
+00:07:00,008 --> 00:07:05,008
+Bu süreksiz olması demek grafiğin orada bir kesiklik vardır değil mi? Grafik olarak da...
+
+38
+00:07:05,519 --> 00:07:22,099
+Eğer x x, gireceği noktasında sürekli ise onun grafiğin olması gerekir. c fc noktasında kırık olmadığı anlamına gelecek. Yani grafikte bir kırıklık yoksa sürekli diyeceğiz. Ama bir kırıklık varsa sürekli değildir. Hani grafik olarak da görebiliriz.
+
+39
+00:07:22,920 --> 00:07:28,939
+Bakın şurada 3 tane grafik üzerinde de dediğimizi söyleyelim. Şöyle bir grafik verilmiş.
+
+40
+00:07:29,471 --> 00:07:46,291
+bir eğri var, fx fonksiyonumuz. İşte bana soruyor ki bu C noktasında fonksiyon sürekli midir? Dikkat edersek grafikte hiçbir kırılma yok değil mi? Aynen devam ediyor artarak. O halde ne diyorum fonksiyon C'de süreklidir diyeceğiz. İkinci grafiğe gelirsek,
+
+41
+00:07:47,252 --> 00:08:05,092
+Burada bir kere bakın, şurada açıklık var, yani bir kırık var. Bir kere sürekli değildir. Ama şöyle de yorum yapalım. Neden hani ne var burada, neden sürekli değil? Fonksiyon limiti var arkadaşlar. Ama limit değeri tanımlı olduğu değere eşit olmadığı için. Değil mi?
+
+42
+00:08:05,524 --> 00:08:26,423
+fc'de şurası kapalı olsaydı bunun gibi sürekli olacak. Tam olmadığı için o zaman bundaki yorumunu diyorum ki fonksiyonu c'de sürekli değil. Ne dediği de limit değeri, tanımlı olduğu değere eşit değil. Bu zaten aşikar görebiliriz değil mi? Bakın bariz gözüküyor sürekli olmadığı. Bu da neden sürekli değildir?
+
+43
+00:08:26,735 --> 00:08:49,855
+Bunun da limiti mevcut değil arkadaşlar. Bakın C'ye soldan yaklaştığımızda şu değer açık olmuş. Sağdan yaklaştığımızda bir değer. Burada bir sıçrayış var. Onun için ne diyoruz? Bunun limiti mevcut olmadığından F fonksiyonu C'de süreksizdir diyeceğiz. İşte grafik olarak da bu şekilde görüp yorumlayabiliriz. Van buraya kadar problem arkadaşlar.
+
+44
+00:08:52,436 --> 00:08:53,416
+Yok hocam.
+
+45
+00:08:53,696 --> 00:09:00,716
+Tamam, devam edelim. Şimdi gelelim sağdan süreklilik, soldan süreklilik nedir onu konuşalım.
+
+46
+00:09:00,716 --> 00:09:09,855
+Yani ya da kısaca sağ-sol süreklilik diyoruz. Gene ne yapacağım? y-eşitir fx fonksiyonu ve bir c noktasını göz önüne alıyorum arkadaşlar.
+
+47
+00:09:10,336 --> 00:09:19,936
+Diyorum ki eğer limit x c'ye sağdan yaklaştığındaki limit değeri fc'ye eşit ise o zaman ne diyorum?
+
+48
+00:09:20,659 --> 00:09:24,279
+f fonksiyonu c noktasında sağdan süreklidir demiş.
+
+49
+00:09:25,679 --> 00:09:26,699
+Sağdan süreklidir.
+
+50
+00:09:27,179 --> 00:09:28,639
+Yukarıdaki tanımın aynısı.
+
+51
+00:09:28,819 --> 00:09:34,500
+Sadece sağdan yaklaştığım için c'ye üzerine artı yazmış olduk sendenlik olarak.
+
+52
+00:09:34,959 --> 00:09:37,639
+Benzer şekilde soldan dersek de o zaman ne diyorum?
+
+53
+00:09:37,839 --> 00:09:39,759
+x c'ye soldan yaklaşsın.
+
+54
+00:09:40,399 --> 00:09:41,819
+Limit'i var diyoruz.
+
+55
+00:09:42,019 --> 00:09:47,039
+Limit değerde tanımlı olduğu yere eşit ise fonksiyon c'de soldan süreklidir.
+
+56
+00:09:47,087 --> 00:09:50,747
+sağdan ve soldan sürekli de böyle yorumlayacağız arkadaşlar.
+
+57
+00:09:51,528 --> 00:10:05,827
+Devam edersek, evet, yine bir fonksiyonun C noktasında sürekli olması için gerek ve yeter koşul C'de hem sağdan hem de soldan sürekli olmasıdır.
+
+58
+00:10:07,316 --> 00:10:33,336
+fonksiyonun c noktasında sürekli olması için gerek ve yeter koşu. Bu noktada hem sağdan hem de soldan sürekli olmasıdır diyeceğiz. Yine klasik, bakın, böyle bir parçalı fonksiyon verilmiş bana. Ne soruyor bana? Diyor ki fonksiyonun x0'daki sağdan ve soldan sürekliliğini araştırınız. E ne demem gerekir? 0 noktasındaki sağdan yaklaşacaksam.
+
+59
+00:10:33,875 --> 00:10:41,955
+O zaman ne diyeceğim? x0'a sağdan yaklaştığındaki limit değeri eğer f0'daki değerine eşitse sağdan sürekli diyeceğim.
+
+60
+00:10:42,495 --> 00:10:51,235
+Tersini söylersem hani soldan yaklaştığı limit değeri tanımlı olduğu değere yani f0'daki değerine eşitse de soldan sürekli diyeceğim.
+
+61
+00:10:51,235 --> 00:11:00,235
+O zaman 0'a sağ türevi nasıl bulmam gerektiği sağdan sürekli pardon sağdan sürekli olduğunu.
+
+62
+00:11:00,755 --> 00:11:24,896
+Şöyle bir sembolik önce yazalım bakın. f şöyle dedik, x0'a sağdan yaklaştı. hx dedik, x h sürekliye bakıyoruz. O zaman sağdan yaklaştığında şu fonksiyonu almam gerekiyor değil mi? Şu. Onun da değeri zaten fonksiyonundan bağımsız 1'e eşittir. O zaman fonksiyonun x0 noktasındaki sağdan limiti nedir? 1'dir.
+
+63
+00:11:25,268 --> 00:11:42,187
+fonksiyonun sıfırdaki değeri dediğimde hangisini alacağım arkadaşlar? Tabii ki bunu alacağım. Eşitlik var çünkü. Sıfırdaki değeri de 1'miş. O zaman ne oldu? Birbirine eşit olduğu için fonksiyon ne diyorum? Sağdan süreklidir. Şimdi sola bakacağız. Sağdan süreklidir.
+
+64
+00:11:42,515 --> 00:12:07,655
+Solda da ne diyeceğim? Limit x0'a sol eksi diyeceğiz. hx eşittir. Hangisini almam gerekir arkadaşlar? Sol limit ne olur sizce? 0 olması gerekir değil mi? Bakın yazdım şuraya. Şu. 0'dır diyoruz. Ama fonksiyonu 0'daki değeri 1'dir. Yukarıda da söyledik zaten. O zaman ne diyorum? Fonksiyon 0'da soldan sürekli değildir diyeceğiz arkadaşlar.
+
+65
+00:12:08,403 --> 00:12:15,063
+Dolayısıyla verilen H fonksiyonu x0 noktasında sürekli değildir diyeceğiz.
+
+66
+00:12:15,823 --> 00:12:24,483
+Evet. Yani bunu sadece fonksiyon sürekli olacak şekilde yeniden nasıl tanımlanabilir onları ileride söyleyeceğiz.
+
+67
+00:12:24,483 --> 00:12:30,124
+Şimdi bu soruda anlaşılmayan bir şey var mı arkadaşlar? Normal tanım uygulamış olur.
+
+68
+00:12:31,187 --> 00:12:36,107
+Evet, devam edelim. Şimdi kapalı aralıkta sürekliliğe nasıl bakacağız?
+
+69
+00:12:37,768 --> 00:12:41,447
+Bir fonksiyon kapalılıkta sürekli olabilmesi için ne olması gerekir sizce?
+
+70
+00:12:41,768 --> 00:12:43,607
+Bir kere açık aralıkta sürekli olacak.
+
+71
+00:12:44,288 --> 00:12:48,488
+A noktasında dediğimde nereden sürekli olması gerekir A noktasında arkadaşlar?
+
+72
+00:12:50,707 --> 00:12:51,847
+Sağdan mı, soldan mı?
+
+73
+00:12:52,607 --> 00:12:53,288
+Soldan.
+
+74
+00:12:58,067 --> 00:13:09,388
+O zaman bu aralıkta fonksiyon süreklidir diyeceğiz. Bakın şurada söylüyorum. Kanunlar fx'in bu aralıkta sürekli olması için ne diyoruz? Fonksiyon açık aralıkta sürekli.
+
+75
+00:13:11,327 --> 00:13:19,128
+Sağ mı dedik, sol mu karıştırdık mı? A'ya ne yapmalıyım? Açık ya, sağdan yaklaşmalıyım. B'ye soldan ters konuştuk sanırım.
+
+76
+00:13:20,307 --> 00:13:35,168
+Evet, sağa-solu karıştırmayalım. Evet, fx fonksiyonu x eşittir ağa da sağdan sürekli, b de de soldan sürekli ise o zaman diyoruz ki verilen fonksiyon kafalar alıp da sürekli olmalı. Bana bir fonksiyon verildiğinde örneğin.
+
+77
+00:13:35,583 --> 00:14:02,635
+yukarıdaki eksi 2 kök içinde işte 4 eksi x kare miydi? O eksi 2 artı 2 aralığında sürekli midir diye soru sorabilir bana. Ben ne yapacağım? Önce açık aralıkta sürekli olduğunu göstereceğim. Sonra işte eksi 2 artı 2 demiştik. Eksi 2 de ne yapacağım? Sağdan sürekli miye bakacağım? Artı 2 de soldan sürekli miye baktığımda hepsi sağlıyorsa kurallarımız o zaman aralıkta süreklidir diyeceğiz. Bu aralıktaki sürekli.
+
+78
+00:14:03,508 --> 00:14:25,008
+Bakın, size de aldım aynı örneği. Sürekli midir diyoruz. Ne yapıyorum? Açık aralıkta önce sürekli olduğunu söylüyorum. Tabii ki bunu tek noktalık, tek tek göstermeme gerek yok. Aralıktaki 1c'yi aldığımda c ne olursa olsun, eğer bu eşitliği sağlıyorsa süreklidir diyeceğim. Bu olsun dedik. Limit xc'ye yaklaştığında
+
+79
+00:14:25,812 --> 00:14:44,211
+yazdık ifadeyi. Bunda değeriz şu değil midir? Bunun limiti budur arkadaşlar. Bu eğer f'in c'deki değerine eşitsiz, f'in c'deki değerine x'lerine c yazarsam şu olur. O zaman ne diyorum? Fonksiyon açık aralıkta süreklidir. Fonksiyon açık aralıkta süreklidir.
+
+80
+00:14:45,591 --> 00:14:51,152
+Evet arkadaşlar, gözükmüyor diyorlar. Ekranda sesim geliyor mu?
+
+81
+00:14:52,628 --> 00:14:54,768
+Geliyor hocam.
+
+82
+00:14:54,927 --> 00:15:00,388
+Siyazmış buraya, gözükmüyor ekranda, ses yok diyoruz. O zaman kendisinden kaynaklanıyordur.
+
+83
+00:15:00,888 --> 00:15:04,327
+Evet, devam edelim. Açık aralık anlaşıldı değil mi arkadaşlar?
+
+84
+00:15:04,927 --> 00:15:11,427
+Açık aralıktaki her C için bu eşitlik sağlandığına göre diyeceğim ki fonksiyon açık aralıkta süreklidir.
+
+85
+00:15:11,840 --> 00:15:16,040
+Benim amacım şu kapalı aralıkta sürekliyi göstermek istiyorum. O zaman ne diyeceğim?
+
+86
+00:15:16,040 --> 00:15:22,240
+x2 noktasında sağdan sürekli midir diye bakmalıyım. Ona da bakın şöyle bakıyoruz işte.
+
+87
+00:15:22,240 --> 00:15:29,639
+Önce 2'ye bakmışız o zaman soldan bakıyoruz. Ne diyorum? 2 noktasında soldan sürekli midir diye bakıyoruz.
+
+88
+00:15:29,639 --> 00:15:35,240
+Semboline dikkat ediyoruz. x2'ye soldan yaklaşsın. fx dedik. Yazdık.
+
+89
+00:15:40,275 --> 00:15:50,775
+üstündeki değeri de nedir? Yazdığımda sıfır. O zaman ne diyorum? Eşit olduğuna göre limit değeri, tanımlı olduğu değeri eşitse sağ uçta soldan süreklidir diyeceğiz.
+
+90
+00:15:51,775 --> 00:16:03,775
+Sağ uçta soldan süreklidir. Şimdi ne yapıyorum? Sol uçta sağdan sürekliliğe bakıyorum. Ona da şöyle yazdık. x x 2 üzerine artı işaretli sağdan yaklaşıyoruz.
+
+91
+00:16:03,936 --> 00:16:19,436
+yazdım bu şekilde. Bunda limiti ne olur? Sıfır olur. Bu da gene f'in 2'deki değeri de sıfırdı. Eşit olduğuna göre diyoruz ki sol 3 noktasında sağdan süreklidir. O halde verilen fonksiyon tanım kümlesinde süreklidir diyeceğiz.
+
+92
+00:16:23,091 --> 00:16:28,091
+Yani sürekli fonksiyon, tanım kimesindeki her noktada sürekli olan...
+
+93
+00:16:32,628 --> 00:16:49,028
+Evet, bu durumda tüm polinomlar, tüm rasyonel fonksiyonlar, sinüs, kosinüs, tanjant, kopanjant şehrindeki trigonometrik fonksiyonlar, mutlak değer fonksiyonu, tanımlı oldukları her yerde sürekli fonksiyonlar var.
+
+94
+00:16:49,028 --> 00:17:00,567
+Bunu da not olarak vermiş olalım. Polinomdeki rasyonel fonksiyonlar, trigonometrik fonksiyonlar, mutlak değer fonksiyonları, tanımlı oldukları her yerde süreklidir.
+
+95
+00:17:02,964 --> 00:17:24,784
+Evet, sürekli fonksiyonun özelliklerini de söyleyelim. Şöyle diyelim, fx ve dx c'de sürekli olsun. Bu durumda bir diyelim, fx artı dx'in c'de sürekli olduğunu söyleriz. Bunlara verilen sürekli tanımdan uygulayarak uygulayabilir.
+
+96
+00:17:25,268 --> 00:17:42,288
+Benzer şekilde bölümde, tabi ki faydanın da c noktasındaki değerinin sıkıdan farklı olması şartıyla, bu da gene c'de süreklidir. Benzer şekilde fx üzeri n fonksiyonu da gene c'de sürekli olur.
+
+97
+00:17:43,128 --> 00:17:46,168
+Tabi ki örnek olduğunda bu şekilde ona göre uygularız değil mi arkadaşlar?
+
+98
+00:17:52,211 --> 00:18:11,711
+üzeri n limitini bulurum. Eğer bunun limit değeri c'deki noktadaki değerine eşitse o zaman ne diyeceğim? Sürekli dir diyeceğim. Benzer şekilde n. kökten ifadelerde fonksiyon şeklinde fonksiyonlarda c'de sürekli dir diyeceğiz. Tabii ki şuna yine dikkat ediyoruz.
+
+99
+00:18:20,660 --> 00:18:35,400
+Şimdi b şıkkı da şöyle diyelim, fx fonksiyonu c noktasında sürekli ve g fonksiyonu da fc'de sürekli ise o zaman biz buna ne diyorduk? Bileşge fonksiyonu da c'de süreklidir.
+
+100
+00:18:47,827 --> 00:18:56,648
+limiti, gb eşit ise bunu bu şekilde de yazabiliriz diyoruz. Bunlar özellikleri bu şekilde söylüyoruz.
+
+101
+00:18:57,028 --> 00:19:04,587
+Şimdi arkadaşlar, bakın iç noktada sürekliliği bilmeliyiz. Uç noktalardaki sürekliliği de nasıl inceledik bilmeliyiz.
+
+102
+00:19:05,008 --> 00:19:08,827
+Kapalı aralıklı sürekli olması için ne demiştik? Açık aralıklı sürekli ne bakacağız?
+
+103
+00:19:08,827 --> 00:19:14,647
+Uç noktalarda sürekliliğine bakacağız. Hepsi sağlanıyor. Soksiyon. Ne diyoruz? Kapalı aralıklı sürekli.
+
+104
+00:19:14,900 --> 00:19:21,980
+Şimdi önemli bir kısımda süreklilik çeşitleri var, süreksizlik çeşitlerimiz var. Onları söylüyoruz.
+
+105
+00:19:21,980 --> 00:19:28,760
+Evet, birinci süreksizlik çeşitimiz sıçramalı süreksizlik. Bunu nasıl anlayacağız?
+
+106
+00:19:29,300 --> 00:19:34,980
+Bir fonksiyonun bir noktada hem sağdan hem de sağdan nefretleri mevcut ancak...
+
+107
+00:19:35,539 --> 00:19:46,299
+eşit değilse bu türden süreksizliğe sıçramalı süreksizlik diyoruz. Yani sağdan limiti farklı, soldan limiti farklı ise birbirinden ama o zaman ne diyoruz?
+
+108
+00:19:46,299 --> 00:19:54,000
+Mevcut ama farklı ise sıçramalı diyoruz. İsimleri unutmuyoruz arkadaşlar. Sınavda genellikle işte verilir bir fonksiyon.
+
+109
+00:19:54,079 --> 00:20:00,400
+Derki işte atıyorum C noktasındaki süreksizlik tipini belirleyiniz ya da inceleyiniz diye sorabilirler.
+
+110
+00:20:00,884 --> 00:20:08,263
+unutmayınız isimlerinde. Evet, ikinci bir süreksizlik çeşidimiz de sonsuz süreksizlik. Nedir? Onu konuşalım.
+
+111
+00:20:09,104 --> 00:20:20,503
+Evet, bir fonksiyonun bir noktadaki limiti, artı sonsuz veya eksi sonsuz ise bu türden süreksizliğe sonsuz süreksizlik diyeceğiz.
+
+112
+00:20:20,503 --> 00:20:26,884
+Yani limit değeri sonsuz veya eksi sonsuz çıkıyorsa bu tür süreksizliğe sonsuz süreksizlik diyeceğiz.
+
+113
+00:20:27,251 --> 00:20:38,011
+Bir de esas süreksizliğimiz var. Bir fx fonksiyonunun x eşittir a'da limiti mevcut değilse, böyle süreksizliğe esas süreksizlik diyoruz.
+
+114
+00:20:38,391 --> 00:20:46,691
+Öğrenciler şu ikisini biraz karıştırıyorlar. Bakın burada limitleri artı, eksi, sonsuzdan biri veya her ikisi de olabilir, sonsuz olacak.
+
+115
+00:20:46,691 --> 00:20:51,091
+Ama bunda limiti mevcut olmayacak esas süreksizlikte.
+
+116
+00:20:51,751 --> 00:20:53,691
+Evet, şimdi...
+
+117
+00:20:54,836 --> 00:20:58,436
+kaldırılabilir süreksizlik. Bunu da şöyle düşüneceğiz.
+
+118
+00:20:58,536 --> 00:21:04,476
+Birelik fonksiyonunun x eşit A noktasındaki değeri için limit mevcut.
+
+119
+00:21:04,855 --> 00:21:09,756
+Fakat, yani limiti olacak bu noktada, fakat tanımlı olduğu değere eşit değilse,
+
+120
+00:21:10,816 --> 00:21:18,276
+işte kısaca yazdığımız şey şu, limiti var ama tanımlı olduğu değerden farklı ise biz ne diyoruz?
+
+121
+00:21:18,963 --> 00:21:34,124
+Bu noktada fonksiyon süreksizdir. İsmini de ne dersek kaldırılabilir süreksizdir. Çünkü ben bu fonksiyonu yeniden tanımlı olacak şekilde ifade edersen fonksiyon ne olur? Sürekli olmuş olur. Ne dedik? Tekrar edersek şuraya bakın.
+
+122
+00:21:35,203 --> 00:21:44,443
+İse veya f'a tanımlanmamış ise f'x fonksiyonu x eşit daha da kaldırılabilir süretsizliğe sahip edeceğiz. Bu durumda
+
+123
+00:21:44,884 --> 00:21:52,884
+Yine denildiğim gibi x'in a'ya giderken işte limitini ben l olmak üzere yeniden tanımlayabilirim.
+
+124
+00:21:53,004 --> 00:21:59,524
+Şimdi soruyu şöyle sorabilirler arkadaşlar. Verilen fonksiyon işte a noktasında sürekli midir?
+
+125
+00:22:00,339 --> 00:22:05,619
+veya sürekli olacak şekilde yeniden tanımlayınızlar. Bakarsın limitini buldun.
+
+126
+00:22:05,980 --> 00:22:10,919
+Ne demek ki bunun tanımlı olduğu değerden farklı. O zaman burada bir süreksizlik var. Eski de kaldırılabilir.
+
+127
+00:22:11,179 --> 00:22:16,839
+Ne yaparım bunu yeniden sürekli olacak şekilde yazarsam işte bakın şurada. x kare artıdan farklıysa diyorum.
+
+128
+00:22:18,324 --> 00:22:34,743
+fonksiyonu bu noktadaki değerini de şurada limiti L'ye çıktığını varsayıyorum. L olarak yeniden tanımlayabilirsem bu fonksiyonu ben sürekli yapmışım. O yüzden adı da kaldırılabiliriz diyoruz arkadaşlar. Yani bunu biz sürekli olacak şekilde yeniden tanımlayabiliriz.
+
+129
+00:22:42,804 --> 00:22:54,604
+Bu şekilde tanımlanırsa fonksiyonun yeni de fx'i f'in x eşittiraya sürekli genişlemesi denir. Bu tanımlama ile fx'in x eşittiradaki sürekli kaldırılmış denir.
+
+130
+00:22:54,804 --> 00:23:01,244
+Yani ya da sürekli olacak şekilde fonksiyonu yeni de tanımlayabiliriz diyoruz.
+
+131
+00:23:01,324 --> 00:23:02,984
+Tanımlayın ya da öyle sorarlar.
+
+132
+00:23:03,744 --> 00:23:08,564
+Evet, şimdi gelelim bu nolgun şu soruyu çözmeye çalışalım.
+
+133
+00:23:09,332 --> 00:23:19,332
+Buraya kadar anlaşılmayan bir yer var mı? Dediğim gibi biraz tanımları yazmış olduk. Siz de 1-2 kere okursanız aklınıza kalır ama zor değil arkadaşlar.
+
+134
+00:23:19,332 --> 00:23:20,612
+Şimdi bana ne soruyor burada?
+
+135
+00:23:20,612 --> 00:23:22,132
+Bir şey sormak istiyordum ama.
+
+136
+00:23:22,132 --> 00:23:22,732
+Tamam, buyurun.
+
+137
+00:23:22,732 --> 00:23:25,572
+Süreksizlik çeşitlerine örnek verecek misiniz acaba?
+
+138
+00:23:25,572 --> 00:23:26,732
+Vereceğim, vereceğim.
+
+139
+00:23:26,732 --> 00:23:27,732
+Evet, tamam.
+
+140
+00:23:27,732 --> 00:23:29,332
+Tanımları vereyim, daha yapacağım örnek.
+
+141
+00:23:29,332 --> 00:23:29,732
+Teşekkür ederim.
+
+142
+00:23:29,732 --> 00:23:30,932
+Bu kadarla olmaz.
+
+143
+00:23:30,932 --> 00:23:32,132
+Vereceğim.
+
+144
+00:23:32,132 --> 00:23:36,332
+Evet, şimdi ne diyoruz? Değişik değişik örnekler var çözeceğim.
+
+145
+00:23:36,819 --> 00:24:03,500
+x eşittir, sıfırdaki sürekliliğini inceleyin diyor bana. Tamam yani. Ya da bu fonksiyon sıfırda sürekli midir sorusu bu. E şimdi ben sürekliliğin tanımını biliyorum. Yukarıda verdim. Diyorum ki, sıfırda sağdan ve soldan limitleri mevcut birbirine eşit olmalı. Limit olabilmesi için sıfır noktasında. Bir de sıfır noktasındaki değeri, limit değerini eşitse fonksiyon bu noktada süreklidir. Bu kadar tanım bu. Yani baştan beri konuştuğumuzun özeti bu.
+
+146
+00:24:03,988 --> 00:24:04,888
+tek bir satır.
+
+147
+00:24:05,107 --> 00:24:32,647
+limit x0'a giderken fx eşit f0 ise fonksiyon bu noktada süreklidir diyeceğim. O zaman burada parçalıverilmiş bir fonksiyon varsa ne yapıyorum? Önce işte 0'a sağdan yaklaşacağım, limit soldan yaklaşacağım. Bakacağım limit değeri ne çıktı? Peki fonksiyonun 0'daki değeri nedir sizce arkadaşlar? Yani f0 nedir? 2. 2 hocam. Tamam bitti. O zaman limitle 2 çıkarsa sürekli değilse de değil diyeceğim.
+
+148
+00:24:33,107 --> 00:24:41,487
+Ne yapıyorum? Sıfıra sağdan yaklaşıyorum. Yani büyük değerlerle limit diyorum. O zaman fonksiyonu alıyorum. x sıfıra giderken değerim 2 çıktı.
+
+149
+00:24:41,987 --> 00:24:51,347
+Soldan yaklaşırsam da küçük değerlerle şu fonksiyonu alıyorum. Bu da ne oldu? Sıfır çıktı. Bu durumdan sürekliliği bırakalım. Sıfır noktasında limit var mıdır?
+
+150
+00:24:51,707 --> 00:24:58,987
+Yok. Çünkü sağdan limit, soldan limit birbirinden farklı olduğu için limiti mevcut değil. O zaman buna ne diyeceğim ben?
+
+151
+00:25:02,420 --> 00:25:29,780
+sıçramalı. Sıçramalı. Sürekli ilik. Çünkü yukarıdaki kanımdan verdik. Bakın sağdan limit veya fark etmez sağa-solu limitleri birbirinden farklı olduğundan biz buna sıçramalı diyoruz. Unutmuyoruz. Bu kadar. Kaldırılabilir değilmiş. Sıçramalıymış. Evet, şimdi gelelim buraya. Bunu da gene bana neyi soruyor? Süreksizlik çeşidini soruyor bana. x eşittir, sıfırda fonksiyon sürekli midir ya da nedir?
+
+152
+00:25:31,412 --> 00:25:32,951
+Evet, ne dersiniz?
+
+153
+00:25:34,731 --> 00:25:37,651
+Bunun sağdan ve soldan yaklaşmak fark eder mi?
+
+154
+00:25:38,412 --> 00:25:40,511
+1 böl x kare olduğu için değişmez değil mi?
+
+155
+00:25:41,051 --> 00:25:46,571
+O zaman ne diyeceksiniz? Limit x0'a yaklaşırken bunun limiti ne olur sizce? Ne çıkar?
+
+156
+00:25:49,051 --> 00:25:50,611
+Sansız zim yani.
+
+157
+00:25:51,251 --> 00:25:51,751
+Efendim?
+
+158
+00:25:52,180 --> 00:25:53,180
+Sonsuz.
+
+159
+00:25:53,180 --> 00:26:17,180
+Evet, doğru. Sonsuz. Haklısınız. Bakın, kare olduğu için her ikisini eşit yazdım. Aynı çıkar. Yani sıfıra sağdan da yaklaşsam sonsuz çıkacak, soldan da yaklaşsam sonsuz çıktı. O zaman burada sonsuz olduğu için, bunu da ismini yukarıda söyledik, sonsuz süreksizliğe sahiptir. Bu kadar. Yani bu soruyu bir senesi sanki Smerdek'e sordular, şunu kimse yazamadı.
+
+160
+00:26:18,036 --> 00:26:34,596
+sonsuz diye bıraktımlar. Yani şunu unutmuyoruz. Tamam mı? Sonsuz çıkıyorsa sonsuz süreksizliğe sahiptir diyoruz. Tamam mı arkadaşlar? Bu. Devam edelim. Şimdi, peki buna ne dersiniz? Sinüs 1 bölü x karenin sıfırdaki süreksizliği nedir?
+
+161
+00:26:37,844 --> 00:26:59,223
+ne tip süreksizlik? Süreksizlik çeşidi nedir? Esas süreksizlik. Değil mi? Çünkü limit yok x0'a sağdan da soldan da yaklaştığında bunun değeri artı 1-1, 0 olur değil mi? Limiti mevcut değil diyoruz. Limit mevcut değildir. O zaman bunu da isim vermişler. Esas süreksizlik var diyoruz.
+
+162
+00:27:00,144 --> 00:27:04,703
+Tamam mı? Şimdi gelelim şuna. Yavaş gidin. Evet.
+
+163
+00:27:05,172 --> 00:27:28,811
+Geldik buraya. Gene böyle parçalı verilmiş bir fonksiyon var. Bize diyor ki fonksiyon sıfır noktasında sürekli midir? Evet. Ne yapıyoruz? Bir kere önce fonksiyon sıfırda tanımlı mıdır arkadaşlar bakarsak? Değil hocam. Efendim? Tanımlı değil hocam. E sıfırdaki değerini vermemiş mi bana? x sıfırdaki değerini. Yani f sıfır nedir burada?
+
+164
+00:27:33,268 --> 00:27:59,868
+2 değil mi? Vermiş, tanımlı. Ben daha onu sürekli yerine bakmıyorum. Önce diyorum ki fonksiyon sıfırda tanımlı mıdır? Sonra limitine bakacağım. Var mı? Yok. Buna göre, yorum yapacağım. O zaman burada x sıfıra sağdan ve soldan yaklaşmam gerekiyor değil mi? Ama tek bir fonksiyon verdiği için, sağ-sol birbirine eşit olacak aynı fonksiyonu kullanacağım için. O zaman ne diyeceğim? x sıfıra yaklaştığında, limit x sıfıra yaklaştığında şu fonksiyonu alıyorum. Bakın yazdım şöyle. Şu.
+
+165
+00:28:00,435 --> 00:28:26,635
+değil midir? Bakın fonksiyon 2'de tanımlı. Değeri 2 odursun aklımızda. Şimdi geldik, limitine bakıyoruz. Dediğim gibi tek bir fonksiyon verildiği için, x0'dan farklı için limite bakacağız. Limit x0'a giderken şunu aldım. Bitti aslında sürekli bir delgimi şu an yok. Sadece bunun limitini bulmaya çalışıyoruz. Bakıyorum bu nedir? 0 bölü 0 belirsizliği var. Bunun belirsizliğini bildiğim kurallarla gidermeye çalışacağım.
+
+166
+00:28:27,124 --> 00:28:54,423
+Bakın burada dün yazdığımı hatırlıyorum, dün 1-cosx yerine şunu yazmıştık, hatta gösterdim nasıl yazıldığını. Hatırlıyor muyuz? Bir örnekle çıkmıştı karşımıza. Kök içinde sanırım 1-cosx'li bir şey vardı. Onu açtık, düzenledik. Şöyle bir şey yazmıştık, 1-2 sinüs kare x bölü 2 diye yazdık. Arkadaşlar, notlarımıza bakarsınız o şekilde. Peki bunu başka nasıl belirsizliğini giderebilirdim sizce?
+
+167
+00:28:55,476 --> 00:28:56,796
+Bu biraz uzattı bence.
+
+168
+00:28:56,816 --> 00:28:58,196
+Eşilelik de çarpardınız hocam.
+
+169
+00:28:58,216 --> 00:29:04,276
+Şimdi payın eşleniyle çarpsaydım ben şurada, ne olacaktı? 1-kosnüs kare gelmeyecek miydi?
+
+170
+00:29:04,596 --> 00:29:10,356
+Bu da ne olacaktı? Sinüs kare olacaktı. Sinüs x bölü x'in karesi diye yazarım.
+
+171
+00:29:10,456 --> 00:29:14,036
+Biliyorum ki x'ı kare giderken sinüs x bölü x'in limiti 1'dir.
+
+172
+00:29:14,536 --> 00:29:18,556
+Çarpı 1 bölü 1 artı kosnüs kalır. O da ne olur? 1 bölü 2'dir.
+
+173
+00:29:19,116 --> 00:29:20,796
+Ama bu yolla çözmüşüz.
+
+174
+00:29:21,428 --> 00:29:25,108
+Dediğim gibi öyle de kendiniz çözün olur, tamam mı? Eşleniyle çarparak.
+
+175
+00:29:25,468 --> 00:29:32,588
+Biz dediğim gibi 1-cosmx yerine ne yazabiliriz diye onu yazmaya çalışmışız.
+
+176
+00:29:33,648 --> 00:29:38,468
+Daha cosmx yerine yarım açılardan yazmış, biraz uzatmış sayı.
+
+177
+00:29:38,828 --> 00:29:41,188
+Tamam, öyle gidelim. Buna göre gitmiş olalım.
+
+178
+00:29:41,668 --> 00:29:43,708
+Düzenlersek buradan ne kalır, şu kalır.
+
+179
+00:29:43,708 --> 00:29:47,708
+Bunu da bakın şöyle ayrı yazabiliriz.
+
+180
+00:29:48,596 --> 00:29:59,976
+sinüs x bölü 2'ydur, sinüs x bölü 2'ydur, x bölü 2. Bunlar da nedir? Ayrı ayrı bir müklemin çarpımı demektir. Gene bu da sinüs x bölü x şeklinde olduğuna göre bunun da bir mükle 1'dir.
+
+181
+00:30:00,000 --> 00:30:28,000
+Bunun da limiti 1'dir. Sonuçta 1 bölü 2 diye karşımıza çıkacak. Yani fonksiyonu sonuç olarak x0'a giderken limiti mevcut arkadaşlar. Değeri 1 bölü 2'dir. Bu eğer tanımlı olduğu yani f'in 0'daki değeri de 1 bölü 2 olsaydı fonksiyonu sürekli diyecektim. Ama değil. Onu da şöyle yazmış olalım. Bakın x0'a giderken limiti 1 bölü 2 farklıdır f'in 0'daki değerinden. O halde ne diyor?
+
+182
+00:30:28,000 --> 00:30:40,200
+ne diyoruz? Bunun da tipi neydi? Kaldırılabilir süreksiz. Ne yaparım? Ben bu fonksiyonu yeniden sıfırdaki değerini 1 bölü 2 yazarsam bu fonksiyon sürekli olur diyeceğiz. Bakın yazdım şu an.
+
+183
+00:30:42,700 --> 00:30:44,960
+Tanımlanırsa yeniden bu.
+
+184
+00:30:46,195 --> 00:31:11,776
+süreklidir diyeceğiz. Çünkü soru sınavda, bunlar belki sınav soruları da olabilir arkadaşlar. Sınavda sorduklarında işte bunu sürekli olacak şekilde tanımlayınız veya sürekli midir diye sorabilir. O zaman işte bunları yaptık diyeceğiz ki bu şu an kaldırılabilir süreksizliği var ama ben bunu yeniden x'in sıfırdaki değerini 1 bölü 2 olarak yeniden tanımlayabilirsem bu sürekli olur diyoruz.
+
+185
+00:31:12,019 --> 00:31:13,660
+Tamam mı arkadaşlar? Anlaşıldı mı şimdi?
+
+186
+00:31:13,819 --> 00:31:15,339
+Hocam ben bunu tam anlamadım ya.
+
+187
+00:31:15,900 --> 00:31:17,519
+Neyi sor bakayım, neyi anlayamadın?
+
+188
+00:31:18,420 --> 00:31:21,259
+Şimdi ilk başta...
+
+189
+00:31:24,500 --> 00:31:47,619
+Sesim geliyor mu şu an? Ben duyuyorum, dinliyorum. Tamamdır. x'e çiftir sıfırda sürekli midir sorusuna nasıl cevap verdik mesela? Şimdi bir kere hiçbir şeyi bırak. Sen bir fonksiyonun sıfır noktasının sürekli olması için ne olması gerekiyordu? O noktada tanımlı olacaktı değil mi? F sıfır değerine bir şey vermesi gerekirdi diye tanımlı. Baktım burada sıfır noktasına fonksiyon değer 2 değil mi?
+
+190
+00:31:49,819 --> 00:31:51,019
+Evet hocam.
+
+191
+00:31:51,327 --> 00:32:11,048
+Tamam, tanımlı. Sonra bir de ne olması gerekiyor? Limit olması gerekir. Yani 0'a, x0'a yaklaştığında verilen fonksiyonun limiti mevcut olmalı. E bunu da buldum, limiti. 1 bölü 2 buldum, limiti var. Problem yok. Fonksiyon tanımlı da. Ama limit değeri, tanımlı olduğu değere eşit olmadığı için sürekli değil diyorum ben.
+
+192
+00:32:11,412 --> 00:32:27,612
+Onun da adını dedik ki, böyle bir olay varsa biz buna kaldırılabilir süreksizlik diyoruz. Neden kaldırılabilir? Diyorum ki ben bu fonksiyonun sıfırdaki değerini yeniden 1 bölü 2 olarak tanımlarsam fonksiyonunu sürekli yapmış olurum. Bu kadar. Şimdi anladım.
+
+193
+00:32:28,271 --> 00:32:30,312
+Peki limiti nasıl kullanıldık hocam?
+
+194
+00:32:30,532 --> 00:32:33,251
+Payı ve payda çarpsak olur mu?
+
+195
+00:32:33,251 --> 00:32:35,372
+Payı paydayı.
+
+196
+00:32:35,988 --> 00:32:55,728
+söyle. x ile çarpsak, hani şeyle kosinüs x bölü x ile bir şey yapsaydım. Hayır. Bunu demin de söylediğimiz gibi ya böyle gidersin, bu bana göre biraz daha uzun. Gerek yok. Ben olsam hemen bu payın eşlemiyle, yani payı paydayı 1 artı kosinüs x ile çarparak giderdim. Yanlış düşünmüyoruz değil mi? Doğru çıkar öyle.
+
+197
+00:32:56,307 --> 00:33:20,327
+Yani buradan ne olur? 1- kosinüs kare olur. O da sinüs karedir. Yani sinüs x bölü x'in karesi diye yazarım. Yanımda da 1 bölü 1 artı kosinüs x'in kaldı değil mi? O bire gitti. Bu da ne olur? 1 bölü işte. 2'ye gidecek. Daha kolay yani. Ama dediğim gibi limitin birkaç çözüm yolu vardır doğru olduktan sonra. O dediğiniz şeyi sanmıyorum. Dene kendim çıkartılıyorum. Olmaz yani. İşine yaramaz.
+
+198
+00:33:20,327 --> 00:33:21,788
+Tamamdır hocam sağ olun.
+
+199
+00:33:24,307 --> 00:33:35,927
+yine limit değil mi? Limiti çok iyi bilmek gerekir. Limit çözüyorsun. Bir tane satır verdik. Sürekli bir şey olacak diyor. Limiti bilmek gerekir. Evet, devam edelim. Sorabilirsiniz. Hiç problem yok.
+
+200
+00:33:36,087 --> 00:33:47,427
+Hocam, ben de sorayım o zaman. Şu an benim de kafam karıştı. Kaldırılabilir süreksizlik dedik. O zaman esas süreksizlikler de aslında kaldırılabilir olmuş olmuyor mu?
+
+201
+00:33:47,892 --> 00:33:52,892
+Esastaki neydi? Limiti mevcut olmuyordu değil mi? Limit yoksa ne yapayım ben onu?
+
+202
+00:33:52,892 --> 00:33:54,892
+Ama şey hani burada...
+
+203
+00:33:54,892 --> 00:34:02,892
+Ama dört tane isim işte ben atıyorum benim adım Serp'in ne yapayım değiştiremiyorum. O da işte böyle varsa buna kaldırılabilir de diyor.
+
+204
+00:34:02,892 --> 00:34:07,892
+Kaldırılabilir değişti, kaldırılabilir süreksizliği değiştirebiliyorsun, diğerlerine dokunmuyorsun işte.
+
+205
+00:34:07,892 --> 00:34:10,796
+Ama hani onların da grafiklerinde mesela oynama yaparak...
+
+206
+00:34:11,315 --> 00:34:19,815
+Diyarısını yap ama yani öyle bir şeyim yok. O zaman yeniden fonksiyonu değiştirmiş olursun. Ama bu kolay değil mi? Bak limiti var, problem yok.
+
+207
+00:34:19,815 --> 00:34:20,775
+Evet, var tabii.
+
+208
+00:34:20,775 --> 00:34:26,095
+Bu şekilde yani. O yüzden yapacak bir şey yok bazı şeylere. Niye niye diyemeyiz yani değil mi? Öyle.
+
+209
+00:34:26,455 --> 00:34:28,655
+İlk defa görüyorum ondan tamamdır hocam sağ olun.
+
+210
+00:34:28,655 --> 00:34:37,076
+Ben şey, sen hele 100-100 eğitim olsa neler soruyor öğrenciler aklıma geldikçe de bazen sizinle paylaşıyorum. Hiç problem yok.
+
+211
+00:34:37,335 --> 00:34:38,415
+Geybisim gayet normal.
+
+212
+00:34:38,915 --> 00:34:39,295
+Yeni görüyorum.
+
+213
+00:34:39,315 --> 00:34:41,095
+Evet hocam, sağ olun, teşekkür ederim.
+
+214
+00:34:41,915 --> 00:34:47,935
+Öğrencilere normalde sıçramalı süreksizlik derdik, bir de kaldırılabilir 2 tane.
+
+215
+00:34:48,315 --> 00:34:53,015
+Ama işte bazen limit mevcut olmuyor, bazen sonsuz çıkıyor çocuk bunlara ne desin diye.
+
+216
+00:34:53,155 --> 00:34:55,015
+Onun için de 4'ünü de vermiş oluyoruz.
+
+217
+00:34:55,115 --> 00:34:58,295
+Yani ilk önemli olan kaldırılabilir ve sıçramalı.
+
+218
+00:34:58,355 --> 00:35:00,975
+Onları daha çok hani başlık olarak görüyor aslında.
+
+219
+00:35:02,095 --> 00:35:03,115
+Evet, devam edelim.
+
+220
+00:35:04,155 --> 00:35:05,135
+Evet, şimdi gelelim.
+
+221
+00:35:06,516 --> 00:35:14,916
+Burada verilen fonksiyonun 2'deki sürekli bir genişlemeye sahip olduğunu gösteririz.
+
+222
+00:35:15,215 --> 00:35:21,296
+Yani açıkçası bu fonksiyon x2 noktasında sürekli midir? Ona bakacağız.
+
+223
+00:35:23,796 --> 00:35:28,536
+Şimdi ne yapmalıyım? Gene fonksiyon 2 noktasında tanımlı olmalı.
+
+224
+00:35:30,435 --> 00:35:33,496
+Fonksiyon 2 noktasında tanımlı mı? Değil değil mi?
+
+225
+00:35:34,099 --> 00:35:35,399
+Yok hocam, tanımlı değil.
+
+226
+00:35:35,699 --> 00:35:38,099
+Tamam, devam ediyoruz. Şimdi limitine bakalım.
+
+227
+00:35:38,779 --> 00:35:44,960
+Dedik ki iki noktası da tanımlı olmamasına rağmen, işte x 2'ye giderken limitine bakacağız. Değil mi arkadaşlar?
+
+228
+00:35:47,179 --> 00:35:52,399
+Bunun 2'ye giderken, yazar saklım çarpanlarına ayırdık, bunu da ayırdık.
+
+229
+00:35:52,639 --> 00:35:56,380
+Sonuç 5 bölü 4. Burada hem de birimiz görüyoruz değil mi bunu?
+
+230
+00:35:58,132 --> 00:36:05,672
+Çünkü x2'ye giderken bu 0 bölü 0 belirsizliği oluştu. Bu belirsizliği bildiğim cebesel işlemlerle gidermeye çalışıyorum.
+
+231
+00:36:06,112 --> 00:36:12,731
+İşte bunu çarpandan ayırarak yazdım. Faydasını çarpandan ayırarak yazdım. Belirsizliği yaratan kalemeler zaten şunlardı.
+
+232
+00:36:12,731 --> 00:36:22,551
+x artı 3, x artı 2 kaldı. x2'ye giderken limitini kontrol ediyorum. 5 bölü 4'tür diyoruz arkadaşlar. Tamam mı?
+
+233
+00:36:22,996 --> 00:36:34,596
+Şimdi bunu soruyu nasıl sormuş bize? Sürekli bir genişlemeye sahip olduğunu gösterip bu genişlemeyi bulunuz. Yani bunu ben sürekli olacak şekilde yazmak istiyorum.
+
+234
+00:36:34,596 --> 00:36:42,375
+O zaman nasıl yazmalıyım? x2'den farklı olduğunda normal limitine baktığımızda şunu yazarız değil mi?
+
+235
+00:36:43,123 --> 00:37:08,223
+fonksiyonun 2'deki değeri de ne olmalı? 5 bölü 4 olmalı ki fonksiyon noktada sürekli olsun. Veya fx'i şöyle de alabilirim, belirsizlikleri götürürtüm. Şöyle de olarak tanımlanırsa fx'in 2'deki sürekli genişlemesidir diyeceğiz. Yani verilen fonksiyonu ben sürekli olacak şekilde tanımlamış oluyorum böylece. Anlaşıldı mı arkadaşlar?
+
+236
+00:37:09,811 --> 00:37:22,831
+Yani tanımlı değil de ama ben bunun sürekli genişlemesi diye dedim ki fonksiyonun ikindeki türev'i 5 bölü 4 yazarsam, limitini de şu şekilde veya bunun yerine şunu da yazabilirim.
+
+237
+00:37:22,831 --> 00:37:30,811
+Bu şekilde tanımlarsak fonksiyon bu noktada sürekli olmuş olur. İşte buna da sürekli genişlemesidir diyoruz. Tamam mı arkadaşlar?
+
+238
+00:37:34,099 --> 00:37:57,559
+Sanırım tamam. Şimdi gelelim. Ara değer teorene diyoruz. O da ne demek onu da söyleyelim. fx kapalı ve sınırlı bir kapalı aralığında sürekli olsun. Yani verilen fonksiyon kapalı olarak da sürekli olacak. Eğer k, f a ile f b arasında bulunan herhangi bir sayı ise,
+
+239
+00:37:58,483 --> 00:38:12,483
+a ile b arasında fc eşit k olacak şekilde en az bir c sayısı vardır diyoruz. İşte biz buna para değer teoremi diyoruz. Yani verilen fonksiyon sürekli, şöyle fx ile göstermiş olalım.
+
+240
+00:38:13,063 --> 00:38:16,923
+a'daki değeri, b'deki değeri f a ekle, dedik ve
+
+241
+00:38:18,208 --> 00:38:28,568
+sürekli olması gerekir dedik. Bu arada bir sayısı, öyle bir c sayısı vardı ki değeri kalacak şekilde en az bir c sayısı vardı diyoruz.
+
+242
+00:38:28,568 --> 00:38:32,568
+Bunu daha çok işte verilen...
+
+243
+00:38:32,608 --> 00:38:42,208
+bir denklemin bir iki arasında örneğin kökünün olduğundan, kökünü bulamıyoruz ama böyle bir değerin olduğunu görmek açısından önemli.
+
+244
+00:38:42,208 --> 00:38:53,484
+O yüzden bunun için şöyle bir örnek üzerinde uygulamaya çalışalım. Verilen fonksiyonumuz, pardon, denkleminin büyük bir ve iki arasında bir kökünün olduğunu gösteririz.
+
+245
+00:38:54,068 --> 00:39:17,128
+O zaman diyorum ki, ara değer teorene göre ne yapalım? Bir tane fonksiyona ihtiyacım var. Fonksiyonun ne olsun? x gibi x'si, x eksi 1 olsun bakın. Fonksiyon da olsun. Bu fonksiyon polinom değil midir arkadaşlar? Her yerde süreklidir. Fonksiyon polinom olduğundan her yerde süreklidir. O zaman nelere bakmam gerekir? Bakın yukarıda. F A, F B, benim A, B dediğim.
+
+246
+00:39:18,099 --> 00:39:37,360
+Bu aralığı bana vermiş, geniş aralık da vermemiş, bu aralık da diyor kökünün. Yani 1, kapalı 2, kapalı aralığındaki kökünün olduğunu gösterim diyor. O zaman bu kovinomda her yerde süreklidir. 1, 2'de de süreklidir diyeceğim. Neye ihtiyacım var? F'in 1'deki değerine ve F'in 2'deki değerine ihtiyacım var.
+
+247
+00:39:38,260 --> 00:39:59,960
+f'in 1'deki değerini yerine yazarsam, eksi 1, 2'deki değeri de 5'tir. O zaman diyorum ki, farklı işaret boyutundan ara değer teoremine göre böyle bir sayı vardır ki, bakın, f'in 1, bunda değeri 5, şurada böyle bir sayı vardır.
+
+248
+00:40:00,000 --> 00:40:08,000
+x kare artı 2x, değeri 0 eşittir. Ara değer törenine göre 1-2 arasında c sayısını bulmaya çalışıyorum.
+
+249
+00:40:08,500 --> 00:40:19,920
+fc eşit 0 olacak şekilde en az bir c sayısı vardır diyoruz. İşte bunu da yerine yazıp düzenleyip de deneme yanılma yolu da böyle olduğunu söyleyebiliriz.
+
+250
+00:40:20,059 --> 00:40:27,880
+Çünkü fc eşit 0. Şurada örneğin 2 olsaydı o zaman fc eşittir 2 olacak şekilde bir c sayısı bulacaktı.
+
+251
+00:40:27,880 --> 00:40:36,440
+İşte bunun kökünün olduğunu bize söyler. Fonsiyon kapalı olarak da sürekliyse ve değerleri de zıt işaretliyse
+
+252
+00:40:36,500 --> 00:41:00,420
+orada bir kökünün olduğunu bize aslında söyler. İşte aslında bu da bizim için bir ara değer teoremi. Bir bakın, bu negatif, bu da pozitif, farklı işarete salih olduğundan öyle bir değer vardır. Yani bunun kökü yani sıfırdır. Türk falan bunu kurmamıza gerek yok. Sadece ara değer teoremini burada ifade etmeye çalışıyoruz. Evet arkadaşlar, konu olarak bu bitti yani.
+
+253
+00:41:04,403 --> 00:41:07,583
+Bizim kendimizin, yani, uydurduğumuz bu sayı.
+
+254
+00:41:07,583 --> 00:41:11,523
+Yani, çeke 2x1 eşit sıfır deyip, orada işte bulmaya çalışıyoruz.
+
+255
+00:41:11,543 --> 00:41:14,244
+Uydurduğumuz bu sayı yani, 1.32 bizim uydurduğumuz bu sayı.
+
+256
+00:41:15,023 --> 00:41:26,204
+Arada deneme yanılma yoluyla bizim yazdığımız. Bir örnekte bulacağım, orada daha iyi görürsünüz. Yani şurada şimdi onunla uğraşıp bulmak isterim. Yani, olduğunu göster diyor. Aslında bunu söylemene de gerek yok.
+
+257
+00:41:26,523 --> 00:41:30,724
+Aynen, yani. 1.4.7'dir miyiz mesela? Biz bulacağız yani bu sayı normalde.
+
+258
+00:41:31,364 --> 00:41:31,603
+Tabii.
+
+259
+00:41:32,820 --> 00:41:38,340
+Tamamdır hocam. Hayır, burada kökünün olduğunu göster. Bunu söylemene gerek yok.
+
+260
+00:41:38,780 --> 00:41:52,519
+Bulmamıza gerek yok yani o zaman. Burada yok. Ama bunu yazmış. Tamam mı? Şimdi konuları bitirdim arkadaşlar. Birkaç örnek çözmek istiyorum. Tamam mı? Var mı buraya kadar takıldığınız bir yer?
+
+261
+00:41:52,519 --> 00:41:59,240
+Tabii tanımlara bakmak gerekir. Ben örnekleri şöyle tekrar edeyim.
+
+262
+00:42:06,099 --> 00:42:07,799
+Hocam, türeve geçecek miyiz bugün?
+
+263
+00:42:08,519 --> 00:42:16,339
+Yok, daha dur. Türeve değil, türeve geçmeyeceğim. Görüyor muyuz ekranı? Örneğimi, getirdim örnekleri.
+
+264
+00:42:16,799 --> 00:42:17,859
+Evet hocam, görünüyor.
+
+265
+00:42:18,319 --> 00:42:18,759
+Evet hocam.
+
+266
+00:42:18,779 --> 00:42:29,359
+Şimdi burada ben birkaç en baştan örnekler de yazdım. Dün hani sonsuzlara giderken. Öyle mi geçeyim yoksa bunları geçip önce süreklilikle ilgili örnekleri mi çözleyeyim?
+
+267
+00:42:30,164 --> 00:42:31,004
+Burayı biraz geç...
+
+268
+00:42:31,004 --> 00:42:32,504
+Hocam bence onları da çözelim ya.
+
+269
+00:42:32,604 --> 00:42:34,364
+En baştan başlayalım ister misiniz hocam?
+
+270
+00:42:35,044 --> 00:42:37,344
+Unutmayız değil mi? He, zaman. İyi o zaman.
+
+271
+00:42:39,504 --> 00:42:46,604
+O zaman baştan gideyim. Birkaç örnek aldım. Hani belki dedim bugün yetişmezse, bir dahaki derse de baştan örnek çözmüş olurum gibi.
+
+272
+00:42:46,804 --> 00:42:49,804
+Tamam, o zaman örneklerimi bozmadan sırayla gidiyoruz.
+
+273
+00:42:50,900 --> 00:43:04,760
+Şöyle bir örnek almışım. Gördük nasılsa fark etmiyor. Göstermeyecektim dünya. Evet. Şimdi x sonsuza giderken x eksi kök içinde 1 artı x kare bölü, x eksi kök içinde x. Bunun limitini bana soruyor.
+
+274
+00:43:05,460 --> 00:43:33,460
+Bunun limitini nasıl bulmalıyız arkadaşlar? Dikkat ederseniz. Burada köklü bir ifade vardı. Ne yapabilirim? x parantezini alarak yazabilirim. Bakın, 1, eksi. Hatta şurada kısaca yazmışım. Ne yapıyorduk? Bu x kökün içine x kare parantezini alıyorduk değil mi? O da dışarı mutlak değer x olarak çıkar. Ama artı sonsuza gittiği için o mutlak değer de pozitif olduğu için ben artık kısaca yazmışım.
+
+275
+00:43:33,460 --> 00:44:00,880
+almış oldum burayı. Şu kısmı anladık mı nasıl yazdığımı? Payıdaki kısmı. Yani bir satıra eksik gittim. Yani mantık olarak bunu ne yapıyorum? x kare parantezini alıyorum. Mutlak değer x kök içinde işte ne diyorum? 1 bölü x kare artı 1. Yani şu. Mutlak değeri de ne yapıyorum? x artı sonsuza gittiği için x olarak dışarı çıkacak. O zaman ne yapıyorum? Dedim ki bunu x parantezini almış olayım doğrudan. Tamam mı? Bu.
+
+276
+00:44:01,280 --> 00:44:13,280
+Faydasını da aynı mantıkla x parantezine alıyorum. Tamam mı? Bunu da alırsam şöyle olmaz mı? Al bunu yukarıya düzenlersem bu. E şimdi bunlar birbirini götürdü.
+
+277
+00:44:13,800 --> 00:44:26,139
+x olsa giderken kökün içindeki şu ifadem sıfıra gitti. Bu da faydadaki de sıfıra gitti. Sonuç ne oldu? 1-1, faydada da 1 kaldı, sıfır olur. Tamam mı?
+
+278
+00:44:27,380 --> 00:44:53,600
+Görebildik mi? One problem. Belirsizliği gidermiş olduk. Değeri sıfırdır. Şimdi geliyoruz ikinci bir örneğimize. x sonsuza giderken şöyle bir ifadenin limitini. Bu nedir? Sonsuz eksi sonsuzdu. Dün de söyledik. Sonsuz eksi sonsuz olduğunda ne yapıyorduk? Payın eşleniyle payı faydayı çarpıyordu. Payın eşleniyle bakın şurada göstermiş olduk. Biraz silik ama eşleniyle çarpı.
+
+279
+00:44:53,748 --> 00:45:20,108
+Bunu da açarsak ne olur? a kare eksi b kare şeklinde. Bu kare kök gitti. Eksi bu kare kökte gitti. Şu paydadır mı? Ne kaldı? Zaten şunu yazdık buraya. Şimdi bunları düzenlersek x kareler gitti. Doğru x kareler gitti. 2x kaldı değil mi? Şu. Şimdi ne yapıyorum? Paydayı düzenlemeye çalışıyorum. Kökün içine x kare parantezini aldım. Bakın burada açık yazmışız.
+
+280
+00:45:22,483 --> 00:45:37,943
+artı, yine x kare parantezini alıyorum köküm için. Amacım şu x'lerden kurtulmak. Bu ne olacak? Mutlak değer x olarak dışarı çıkacak. Bu da mutlak değer x olarak dışarı çıktı. Bakın, niye aldım? Hepsinin orta mutlak değer x parantezini almış oldum. Hayına dokunmuyor. Şu.
+
+281
+00:45:38,612 --> 00:45:44,072
+Bu da x artı sonsuza gittiği için mutlak değerin için ne oluyor? Pozib. Aynen dışarı çıkar x olarak.
+
+282
+00:45:44,251 --> 00:45:47,972
+Bu da bununla sadeleşirse ne olacak? 2 bölü şu ifade.
+
+283
+00:45:48,452 --> 00:45:58,532
+Buradan bir bütle şunlar ne olacaktı? 0'a gidecekti. O zaman ne olur? 2 bölü şu 1'e gitti. Bu da 1'e gitti. Sonuç nedir? 1'dir diyorum.
+
+284
+00:46:01,112 --> 00:46:04,032
+Var mı problem? Evet.
+
+285
+00:46:05,076 --> 00:46:31,696
+ses gelmiyor. x kare değil de 1 bölü x olması gerekli değil mi? Yanlış mı yazmışım? Nereye diyorsun? Bakayım. Şurayı x kare parantezine aldım değil mi? Evet, yerinde. E tamam. E bunun hakkında x'i versin bana. Şunu mu yanlış yazmışım? Evet hocam. Evet, özür dilerim. Tamam, bunu sonra güzel, [öğrenci]. Doğru söylüyorsun.
+
+286
+00:46:32,820 --> 00:46:33,440
+Sağ ol.
+
+287
+00:46:35,059 --> 00:46:36,099
+Öyle gitmişim tabii.
+
+288
+00:46:37,900 --> 00:46:40,699
+Tamam, güzel, anlaşıldı. Onu düzeltiriz.
+
+289
+00:46:42,699 --> 00:46:46,039
+Unutmayın, avaçı severimce onu düzeltirim arkadaşlar.
+
+290
+00:46:46,699 --> 00:46:48,460
+İşte, dikkatsizlik, tamam mı?
+
+291
+00:46:49,740 --> 00:46:51,619
+Evet, gelelim şimdi şuraya.
+
+292
+00:46:52,371 --> 00:47:05,211
+şöyle x1'e yaklaşırken 3. kökten kök x, 3. kökten x, eksi 1, bu da 4. kökten x, eksi 1'in limitini soruyor. Bu nedir aslında? 0 bölü 0 belirsizliği var arkadaşlar.
+
+293
+00:47:05,876 --> 00:47:32,816
+Bu tür işlemlerde dönüşüm yapmak gerekir. Onu da şöyle anlıyorum ben arkadaşlar ne yapacağımı. Bunun üstü nedir? 1 bölü 3 değil midir? Bununkide 1 bölü 4. 1 bölü 3, 1 bölü 4. Yani paydalarının en küçük ortak katı. 4 ile 3 çarptım 12. Yani o yüzden diyorum ki x eşittir t üzeri 12 dönüşümü yapalım. Yani şu köpü ifadelerden kurtulmak için.
+
+294
+00:47:33,460 --> 00:47:36,780
+bir değişik bir örnek diye aldım arkadaşlar, görmeniz açısından.
+
+295
+00:47:37,300 --> 00:48:03,500
+Anlaşıldı mı? Baktık. 0 bölü 0 belirsizliği var. Amacımız bu belirsizliği cedirsel işlemleri uygulayarak gidermektir. Belki başka türlü de çözülebilir. Onu şu an bilemiyorum. Ben bunlardan kurtulabilmek için dedim ki x eşittir t üzeri 12 dönüşümü yapalım. O zaman x 1'e giderken t de nereye gidecek? 1'e gidecektir. O zaman ben bu limiti t'ye göre yeniden yazacağım. Tamam mı?
+
+296
+00:48:03,764 --> 00:48:14,163
+O zaman ne diyorum? t1'e giderken x yerine t üzeri 12 yazarsam ne olur? t üzeri 4 kalır, eksi 1 olur.
+
+297
+00:48:14,563 --> 00:48:19,344
+Paydaya yazıyorum. O da ne olur? t4 eksilir. Şimdi doğru yazdım.
+
+298
+00:48:19,731 --> 00:48:46,871
+Yine kontrol ediyorum her adımda limitimi. Ne oldu? 0 bölü 0 oldu diyorum. O zaman ne diyelim? t1'e giderken ne yapabilirim? Şu 2 kare farkından t kare eksi 1, t kare artı 1 amaç şu t eksi 1'lerden kurtulmak değil mi? Bunu da nasıl yazarım? t eksi 1, aküp eksi beküp özdeşliğinden t eksi 1, t kare artı t artı 1. Bunu da böyle yazdık.
+
+299
+00:48:47,199 --> 00:48:55,199
+ve sonra bu da nedir? t-1, f artı 2 diye tekrar yazabilirim. Bakın şunu da şuraya yazdım hatırlatmak açısından.
+
+300
+00:48:55,199 --> 00:49:02,199
+O zaman burada ne olur? t-1'ler gider. Geriye kalan ifadem de şu zaten. Tamam mı?
+
+301
+00:49:02,199 --> 00:49:12,619
+Şimdi kontrol ediyorum belirsizlik giderildi mi? t1'e giderken bu ne olur? 2'ye gider, bu da 2'ye gider. 4 bölü 3 şeklinde buluyoruz.
+
+302
+00:49:12,692 --> 00:49:21,092
+Burada tek sorun şunlardan kurtulmak. O da değişiklikle bir limit tarzıydı. Aldığın örnek böyle de aklımızda olsun. Tamam mı arkadaşlar?
+
+303
+00:49:21,492 --> 00:49:22,532
+Hocam bir şey sorabilir miyim?
+
+304
+00:49:22,672 --> 00:49:23,072
+Tabii ki.
+
+305
+00:49:23,632 --> 00:49:30,952
+Biz x eşittir t üzeri 12 dedik ya. Burada x'ler bire giderken bir sonraki aşamada t'ler bire gideriz.
+
+306
+00:49:31,552 --> 00:49:33,332
+Tamam t 1'e gitti dedin.
+
+307
+00:49:34,092 --> 00:49:38,812
+Ama biz x ise t üzeri 12 dediğimiz için t üzeri 12'ler bire gitmesi gerekmez mi?
+
+308
+00:49:41,427 --> 00:49:43,827
+Tamam, limit t'ye göre yazıyorum.
+
+309
+00:49:45,288 --> 00:49:48,768
+Yani böyle bir eşitlik yaptığımız için t'ler değil, t'ler.
+
+310
+00:49:49,107 --> 00:49:53,907
+x'e giderken buradan t'de bire gitmez mi? Birin 12. kuvveti de gene bir değil midir?
+
+311
+00:49:54,607 --> 00:49:55,987
+x'e birinde değil mi hocam?
+
+312
+00:49:57,547 --> 00:50:03,067
+Burada ben bir benim, ben başka bir şeyle uğraşmıyorum ki. x bire giderken t'de nereye gider, bire gider.
+
+313
+00:50:04,596 --> 00:50:19,656
+Tamam, ben bununla uğraşıyorum. Ben onun bütün değerlerini araştırmıyorum ki. Burada x bire giderken t de bire gider. Buna göre yeniden yazıyorum. Peki başka düşünceniz var mı? Nasıl hesaplayabiliriz bu limiti? Şu an aklımıza gelen bu.
+
+314
+00:50:20,696 --> 00:50:30,796
+Eğer varsa başka çözüm yöntemi olabilir. Limit için hiçbir şey diyemem yani. Başka yöntemlerde de çözülebilir. Evet, şimdi gelelim şöyle bir örneğimize.
+
+315
+00:50:31,347 --> 00:50:37,927
+x kare yaklaşırken mutlak değer x eksi 1 bölü kök x eksi 1'in limitini bana soruyor.
+
+316
+00:50:38,307 --> 00:50:38,587
+Değil mi?
+
+317
+00:50:39,467 --> 00:50:41,248
+Burada gene ne yapmam gerekir?
+
+318
+00:50:42,107 --> 00:50:44,447
+Mutlak değerli ifade olduğu için birim...
+
+319
+00:50:44,447 --> 00:50:46,987
+Sağdan ve soldan hesaplamam lazım değil mi?
+
+320
+00:50:47,127 --> 00:50:47,927
+Doğru. Evet.
+
+321
+00:50:48,307 --> 00:50:52,187
+Şimdi diyelim ki mutlak değer işin içine girince biraz durup düşünüyoruz.
+
+322
+00:50:52,608 --> 00:51:04,608
+x 1'e sağdan yaklaştığında, mutlak değerin içinde olur, pozitif olur. O zaman bu x eksi 1 diye çıkar, faydayı aynen yaz. Bu durumda bu belirsizliğim ne olur? 0 bölü 0 olur.
+
+323
+00:51:05,948 --> 00:51:12,988
+Buradan, bunu yine 2 kare farkından köküksü eksi 1 çarpı köküksü artı 1 diye yazarım.
+
+324
+00:51:13,360 --> 00:51:23,560
+belirsizliği yaratan terimler zaten şunlar. Bunlar sadeleştiğinde geriye ne kaldı işte? Kötik saati 1 kaldı. Limiti kontrol edersem 2'ye gider diyorum.
+
+325
+00:51:24,100 --> 00:51:31,180
+Şimdi bir de soldan yaklaşalım bakın 1'e. 1'e soldan yaklaştığımızda mutlak değerinin içi negatif olduğu için işaret değiştirecek.
+
+326
+00:51:31,340 --> 00:51:40,200
+Yani x, x, x, 1 olacak. Bunu da düzenlersek aynı mantıkla yani eksisi duruyor. Buradan da ne olur? x, 2 olur.
+
+327
+00:51:40,543 --> 00:51:50,023
+O zaman ne diyeceğim? Limit mevcut değil. Tamam mı? Sağdan ve soldan limitleri var ama birbirineşin olmadığı için limiti yoktur diyeceğiz.
+
+328
+00:51:52,583 --> 00:52:03,467
+Evet, gelelim şöyle bir anlarımızı. Ama şöyle değil mi arkadaşlar? Problem yok. Evet, şimdi önce...
+
+329
+00:52:03,572 --> 00:52:08,692
+Bu nedir? Aslında sonsuz, eksi sonsuz belirsizliğimiz var.
+
+330
+00:52:09,711 --> 00:52:10,731
+Diyoruz.
+
+331
+00:52:11,771 --> 00:52:14,572
+Bunda ne yapıyorduk? Sonsuz, eksi sonsuz olduğunda?
+
+332
+00:52:14,572 --> 00:52:19,952
+Payın eşlemiyle payı faydayı çarpı arttı. Ama önce burada payda eşit diyelim arkadaşlar.
+
+333
+00:52:20,731 --> 00:52:25,852
+Ne olur? x kök içinde x kare artı x eksi x kare bölü şu ikinci.
+
+334
+00:52:26,352 --> 00:52:30,192
+İşte şimdi bunu ne yapıyoruz?
+
+335
+00:52:30,579 --> 00:52:52,880
+sonsuz eksi sonsuz olduğunda payı eşleniyle payı faydayı çarpıyoruz. Tamam mı? Çarptığımızı düşünelim. Ne olur? Bunun karesi eksi, bunun karesi. Şu, eksik üzeri 4 olur. Faydayı aynen yazdık. Şunu açtığımda ne olur? x üzeri 4 artı x küp eksik üzeri 4. x üzeri 4'ler gitti, x küp kaldı.
+
+336
+00:52:53,460 --> 00:53:20,039
+Şimdi gelelim paydayı. Gene düzenlememiz gerekti değil mi? Şunu ne yaparım? x kare parantezinde yazarım. Bunu da x kare parantezinde alarak yazarım. Açık açık yazdım. Şurada mutlak değer x olarak dışarı çıksın dedik. Bunu da doğru yazmışım değil mi bu sefer? Evet. Aç parantez. Şunu da gene mutlak değer x olarak dışarı attım. Kötüm içi 1 artı 1 bölü x.
+
+337
+00:53:20,436 --> 00:53:33,155
+artı x kare. Ve gene x artı sonsuza gittiği için bu nereye gidecek mıkraht değerinin içi? Pozitik olacağı için x'e gider. Bu da x olur. Yani sonuçta bakın şuraya x kare parantezini alabilirim dışına.
+
+338
+00:53:34,235 --> 00:53:42,215
+Payına dokunmadık bakın. Şimdi şuraya dikkat düzenlemeye çalışalım. Şuradan x kare parantezini aldım. Bir de şu x'i düşünürsem x gibi olmaz mı?
+
+339
+00:53:43,188 --> 00:53:51,588
+x küp geriye kalanı yazıyor. Bakın kök ifadeyi yazdım. Parantezin içinde de şunlar kaldı. Şunu da x kare parantezini aldığım için 1 oldu.
+
+340
+00:53:52,008 --> 00:53:59,748
+x küpleri mi gitti, geriye ne kaldı? 1 bölü şu ifade. Bu da 0'a gider. x olsa giderken bu da 0'a gidecek.
+
+341
+00:54:00,228 --> 00:54:05,168
+Sonuç ne olur? Şurası 1 kaldı. Bu da 1, 2 çarpı 1'den. 1 bölü 2'ye gider.
+
+342
+00:54:07,699 --> 00:54:09,380
+Hocam ara verecek miyiz?
+
+343
+00:54:09,819 --> 00:54:12,199
+Yok, 2 saatlik derste ara vermeyeceğim.
+
+344
+00:54:14,019 --> 00:54:16,299
+Sıkılırsak bitiririz. Problem değil, tamam.
+
+345
+00:54:17,440 --> 00:54:18,039
+Sıkıldık mı?
+
+346
+00:54:19,603 --> 00:54:21,243
+Hocam biraz yürümüyoruz.
+
+347
+00:54:21,324 --> 00:54:22,523
+8 saat aralık sizler.
+
+348
+00:54:22,903 --> 00:54:27,603
+Şöyle, 2 saatlik dersi aslında ben şimdi şöyle düşündüm.
+
+349
+00:54:28,203 --> 00:54:31,043
+Bu limitle ilgili bir ya da iki sorun kaldı.
+
+350
+00:54:31,344 --> 00:54:35,103
+Bitireceğim, süreklilikle ilgili sorunları bugün çözmeyeceğim.
+
+351
+00:54:35,364 --> 00:54:38,183
+Neden? Siz konuyu yeni anlattın. Biraz bakın.
+
+352
+00:54:38,608 --> 00:54:43,828
+haftaya ilk örneklerle başlar konuya devam ederiz. Tamam mı? Daha iyi otursun.
+
+353
+00:54:43,868 --> 00:54:47,428
+Hocam o örnekleri de yükleyeceksiniz ama değil mi? Aves'le sürekli yükle ilgili olanları.
+
+354
+00:54:47,908 --> 00:54:50,808
+Yok siz görmeyin ki. Sonra yüklerim.
+
+355
+00:54:51,268 --> 00:54:55,068
+Hocam birkaç tane yükleme şansınız var mı? Tekrar olması için. O yüzden.
+
+356
+00:54:55,628 --> 00:55:00,588
+Siz çalışın kitaplardan. Ben çözdüklerimi yani buraya çözmeden yüklemeyeceğim oraya.
+
+357
+00:55:01,068 --> 00:55:01,788
+Tamamdır hocam.
+
+358
+00:55:03,699 --> 00:55:21,299
+Evet, şimdi şöyle bir örneğe daha bakalım. Gene burada da x1'e giderken bu 0x0 belirsizliği var. Bu belirsizliği giderliğe çalışıyoruz. Bakın, bu da değişik bir örnekti aldım arkadaşlar.
+
+359
+00:55:21,972 --> 00:55:31,452
+payın eşleniyle ve paydanın eşleniyle payı paydayı çarpıyoruz. Başka ne diyebiliriz? Bilemedim yani. Var mı başka düşünceniz? Başka nasıl yapabilirim diye.
+
+360
+00:55:34,152 --> 00:55:39,352
+Ben payın eşleniyle payı paydayı, paydanın eşleniyle de çarptım yani şu şekilde.
+
+361
+00:55:43,731 --> 00:55:47,432
+Sonra ne yapıyorum? Bunu düzenliyorum bakın. x kare.
+
+362
+00:55:48,340 --> 00:56:10,639
+eksi şu, 2x kare, eksi 1 oldu. Kapat parantezi. Bunu anlatacağım bir şey yok, aynen yazdım. Paydayı da şunlar 2 kare farkından, 4 eksi şu ifaden. Bunu da aynen yazmış oldum. Paylar belirsizliğimiz devam ediyor değil mi? Şunları düzenleyelim. Buradan ne kalır? 1 eksi x kare kalır değil mi? Şunu düzenlersek.
+
+363
+00:56:10,943 --> 00:56:17,344
+Şunu aynen yazdık. Paydaya geliyorum. Şuradan ne gelir? x kare eksi 1 olur. Tamam mı?
+
+364
+00:56:18,063 --> 00:56:20,023
+Bunu da aynen yazdık, dokunmadık buna.
+
+365
+00:56:20,724 --> 00:56:25,043
+Ayrıca da şimdi kolay oldu. Zaten belirsizliği yaratan terimler bunlardır.
+
+366
+00:56:25,364 --> 00:56:27,864
+Bunun da eksi parantezini alırsam bunlar gider.
+
+367
+00:56:29,483 --> 00:56:32,144
+Geriye ne kalır? Şu.
+
+368
+00:56:32,864 --> 00:56:38,083
+Şimdi x kare giderken kontrol edersek, pay nereye gidecek arkadaşlar?
+
+369
+00:56:38,688 --> 00:56:44,288
+4'e fayda da 2'ye gider. Yani eksi 4 bölü 2 sonuç nedir?
+
+370
+00:56:46,688 --> 00:56:54,748
+Evet, bunu böyle çözmüş oldum ama dediğim gibi bir de bir bakın başka bir düşünem varsa, hani şöyle bir tanedir.
+
+371
+00:56:54,748 --> 00:56:58,447
+Limit varsa zaten bir tanedir ama çözülebilir.
+
+372
+00:57:04,179 --> 00:57:05,619
+sorularına geldim.
+
+373
+00:57:06,920 --> 00:57:08,859
+Hadi bunu çözeyelim, bırakalım. Oldu mu?
+
+374
+00:57:09,159 --> 00:57:10,900
+Çözeyelim, bırakmayalım isterseniz.
+
+375
+00:57:11,119 --> 00:57:12,859
+Tamam, benim için hiç problem değil.
+
+376
+00:57:13,940 --> 00:57:18,199
+Tamam. Ya da 5 dakika, 10 dakika ara vereyim, devam edeyim, bitireyim soruları.
+
+377
+00:57:18,559 --> 00:57:19,079
+Olur mu?
+
+378
+00:57:19,400 --> 00:57:25,039
+Bırakma. 10 dakika ara veriyorum. Tamam, bir dinlenin. 10 dakika ara verelim arkadaşlar.
+
+379
+00:58:11,764 --> 00:58:12,764
+Allah.
+
+380
+00:58:26,452 --> 00:58:30,232
+Allah'a emanet olun.
+
+381
+00:58:36,244 --> 00:58:37,244
+No.
+
+382
+00:58:43,092 --> 00:58:45,092
+Hayır, hayır.
+
+383
+00:58:45,092 --> 00:58:47,092
+Ben de bir şeyim.
+
+384
+00:58:47,092 --> 00:58:49,092
+Allah'a emanet olun.
+
+385
+00:58:49,092 --> 00:58:52,012
+Ne?
+
+386
+00:59:12,436 --> 00:59:15,756
+Zona, neden bu?
+
+387
+00:59:31,923 --> 00:59:44,923
+Allah'a emanet olun.
+
+388
+00:59:44,923 --> 00:59:48,923
+Bir sonraki yada bir şey.
+
+389
+00:59:48,923 --> 00:59:50,923
+Yada emanet olun.
+
+390
+01:00:52,755 --> 01:00:54,755
+kapattı lan işe yaradı galiba.
+
+391
+01:00:54,755 --> 01:00:56,755
+zeki adamım.
+
+392
+01:08:23,796 --> 01:08:29,056
+Evet arkadaşlar, süremiz doldu sanırım. Orada mıyız?
+
+393
+01:08:30,736 --> 01:08:32,036
+Evet hocam, buradayız.
+
+394
+01:08:32,236 --> 01:08:32,456
+Tamam.
+
+395
+01:08:33,476 --> 01:08:34,515
+Buradayız hocam.
+
+396
+01:08:35,136 --> 01:08:44,896
+Tamam arkadaşlar, devam edelim. Şimdi şöyle parçalı verilmiş bir fonksiyon var. Bizden istenen diyor ki, her x vl değer için bu fonksiyon süreklidir.
+
+397
+01:08:46,868 --> 01:08:51,668
+Şimdi bu fonksiyonu önce bir yorum yapalım sonra cevabını görmeye çalışalım.
+
+398
+01:08:52,328 --> 01:08:58,868
+Burada x0'dan farklı olduğu tüm noktalarda fonksiyon...
+
+399
+01:08:59,123 --> 01:09:07,503
+süreklidir bence değil mi? Diyelim ki bir tane real sayılarda bir C noktası seçtiğinde yani her C için bunun limitini bulacağım.
+
+400
+01:09:07,823 --> 01:09:13,523
+Limit değeri de bunun tanımlı olduğu değeri eşitse ne olacak? Fonsiyon sürekli olacak.
+
+401
+01:09:13,843 --> 01:09:20,343
+Bir de sıfır noktasında sürekli olduğunu gösterebilirsem tüm real değerler için süreklidir diyeceğiz.
+
+402
+01:09:20,343 --> 01:09:22,583
+Onun için de şöyle dikkat edelim.
+
+403
+01:09:30,612 --> 01:09:37,371
+Şimdi şöyle dedim, x sıfırdan farklı değerler için fonksiyon süreklidir.
+
+404
+01:09:37,371 --> 01:09:39,332
+Çünkü buradan bakarım benim için.
+
+405
+01:09:39,652 --> 01:09:45,332
+Gerçekten diyelim ki real sayılardan, tabii sıfırın dışında önce gösterelim arkadaşlar.
+
+406
+01:09:46,131 --> 01:09:51,092
+C için limit x c'ye giderken limiti ne olur bunun?
+
+407
+01:09:52,012 --> 01:09:53,832
+C çarpı sinüs bir bölgeci.
+
+408
+01:09:54,612 --> 01:10:02,172
+Bunun c'deki değeri de nedir? Yani benim fonksiyonu şuysa c yazacağım. Bu da gerçekten c'deki değerine eşit olacak.
+
+409
+01:10:02,471 --> 01:10:07,211
+Bu durumda ne diyeceğim? Fonksiyon c noktasında süreklidir. Sürekli tanım öyle değil miydi?
+
+410
+01:10:07,592 --> 01:10:13,752
+Limit c'ye giderken fx eşittir fc ise fonksiyon bu noktada süreklidir diyoruz.
+
+411
+01:10:13,752 --> 01:10:17,951
+O zaman her c değer için yani tüm sıfır hariç.
+
+412
+01:10:18,452 --> 01:10:22,311
+R sayılardaki tüm noktalar için fonksiyon süreklidir diyeceğiz.
+
+413
+01:10:23,332 --> 01:10:27,471
+Şimdi ne yapıyorum? Sıfırda da sürekli olduğunu gösterebilirsem işlem tamamdır.
+
+414
+01:10:27,792 --> 01:10:31,152
+Sıfırda nasıl gösterir? Peki fonksiyon sıfırda tanımlı mıdır arkadaşlar?
+
+415
+01:10:32,252 --> 01:10:33,652
+Tanımlıdır değil mi? Değeri sıfır.
+
+416
+01:10:34,132 --> 01:10:41,811
+Fonksiyon sıfırdaki değerini sıfır vermiş. Ben bunun limitinin de sıfır noktasında sıfır olduğunu gösterebilirsem fonksiyon süreklidir diyeceğim.
+
+417
+01:10:42,391 --> 01:10:43,891
+Evet, devam edelim.
+
+418
+01:10:44,435 --> 01:10:55,655
+x sıfıra giderken bunun limitinin sıfır olduğunu buraya hop diye yazdım ama bunu göstermem gerekir. Çünkü bu nedir aslında? Sıfır çarpı sonsuz değil mi?
+
+419
+01:10:56,083 --> 01:11:24,003
+bir sürü değerler alabilir. Onun için bunu sandviç teoremi ile göstermem gerekir sıfır olduğunu. Yani sonuçta bunu sıfır dedim, fonksiyonun sıfırdaki değeri de sıfır olduğu için bu noktada nedir? Süreklidir. Yani verilen soru gerçekten doğru her reasa için süreklidir. Ama şunu sıfır olduğunu şöyle parantez içinde yazdım. Görmeniz açısından sınavda da karşımıza çıkarsa böyle bir şey göstermek için. Yani amacım nedir arkadaşlar? Bunun limitinin sıfır olduğunu sandviç teoremini kullanarak gösterelim.
+
+420
+01:11:24,083 --> 01:11:38,083
+Biz şunu biliyoruz, sinüs x0'dan farklı değerler için sinüs 1 bölü x'in değişimi aralığı eksi 1 artır. Yani sinüs fonksiyonu eksi 1 artır aralığında değişir. O zaman her tarafı
+
+421
+01:11:38,260 --> 01:12:02,780
+sıfırdan farklı olarak düşünüp x ile çarparsak eşitsizliğimiz değişmez değil mi? Şu. Bakın her tarafını x ile çarptım. Çünkü sandviç teoreminde neydi? Hatırlarsanız fx küçük eşit, gx küçük eşit, hx şeklinde bir eşitsizlik bulmaya çalışıyordum uygulayabilmek için. O zaman ne yaptım? Her tarafını x ile çarptım. Sonra ne yapıyorum? Limite geçiyorum. Her tarafın x 0'a giderken limiti alacağım işte.
+
+422
+01:12:03,283 --> 01:12:27,123
+Bu nereye gider? 0'a. Bu da 0'a gider. O zaman diyorum ki sandviç teoremine göre ortadaki fonksiyonu zaten soruyordu bana. Bunun limiti de 0'dır diyorum. Yani bunun 0 olduğunu sandviç teoremiyle göstermek zorundayım bu şekilde. Tamam mı? Evet. Şimdi o zaman demin de dediğimiz gibi bütün real sayılarda fonksiyon süreklidir. Tamam mı arkadaşlar?
+
+423
+01:12:27,943 --> 01:12:29,523
+Hocam bir şey sorabilir miyim?
+
+424
+01:12:33,140 --> 01:12:33,700
+Hocam.
+
+425
+01:12:34,120 --> 01:12:35,079
+Evet, sor.
+
+426
+01:12:36,200 --> 01:12:41,380
+İlk başta tanımsız yapan bir değer olmadığı için sürekli mi dedik?
+
+427
+01:12:42,420 --> 01:13:04,720
+Şimdi şöyle hani bunun sürekli ispatlamam gerekirse dedim ki bana verilmiş her real değer için nasıl ispatlayacağım? Sıfırın parçalı verilmiş ya. Sıfırın dışındaki bütün noktalarda fonksiyon sürekli olduğunu göstereceğim. Bir de sıfırda sürekli olduğunu gösterirsem tüm real değerler için süreklidir diyeceğim. E sıfırdan farklı değer için şu fonksiyon verilmemiş mi bana?
+
+428
+01:13:05,395 --> 01:13:05,915
+Evet.
+
+429
+01:13:06,315 --> 01:13:21,935
+Tamam, onu da şöyle yazdım hani sıfırın dışındaki herhangi bir C aldım, K al, ne öyle hiç fark etmez. Amacım nedir? Bunun limitinin tanımlı olduğu değere eşit çıkıyorsa o zaman süreklidir diyeceğim. Çünkü C ne olursa olsun hep aynı olur değil mi?
+
+430
+01:13:22,368 --> 01:13:23,588
+Evet, tamam anladım.
+
+431
+01:13:23,588 --> 01:13:37,548
+Şimdi gereğine kaldı, sıfırdaki sürekliliğini göstermem gerekir. Sıfırda sürekli olabilmesi için ne olması gerekiyor? O noktada tanımlı olacak. Tanımlı. Bir de ne olması gerekir? Limit değeri de sıfır olmalı ki sürekli diyelim.
+
+432
+01:13:37,888 --> 01:13:50,308
+Şimdi onu da şurada söyledik. İşte bu sıfırdır ama dedim ki bunun sandırıcı teoremiyle sıfır olduğunu görmem gerekir. Ben doğrudan sıfır demeyeyim. Sonra sıfırdaki değeri zaten belliydi. Onu da şurada parantez içinde gösterdim.
+
+433
+01:13:50,368 --> 01:13:54,427
+O yüzden hani şunu sıfır, bu da bu olduğuna göre benim sorumluluk da bitti.
+
+434
+01:13:55,168 --> 01:13:57,668
+Dedik ki tüm real değerler için fonksiyon sürekli.
+
+435
+01:13:57,668 --> 01:14:05,427
+Sandeviş teoremiyle göstermek zorunda mıyız? Zaten f sıfırı sıfır olduğunu bulduk.
+
+436
+01:14:06,100 --> 01:14:07,760
+O tanımlı, tamam.
+
+437
+01:14:10,260 --> 01:14:34,100
+Limitini bulmak için diyorsun. Şurada limitini değil mi? x0'a çıkarken x çarpı sinüs 1 bölü 0 diyorsun. 0 çarpı bu sonsuz eksi 1 de olur, artı 1 de olur değerli. Bir sürü olur. Yani sonuçta 0 olur ama işte bunu bu şekilde ispatlamak gerekir. Bir sınavda gene böyle bir şey çıkmış. Aynı soru değil. Farklı bir şey. Sandevich teoremiyle bunun 0 olduğunu göstermeyen.
+
+438
+01:14:34,100 --> 01:14:42,920
+klasik sınav olduğu için biraz puanını kırmıştık. Ben size bakın yazıyorum, siz de hani şey gibi pazarlık yapmayalım.
+
+439
+01:14:43,200 --> 01:14:44,600
+Bilelim hani çok zor bir şey.
+
+440
+01:14:44,600 --> 01:14:52,940
+Zaten hani testse problem yok ama şimdi şöyle ben bunu bir...
+
+441
+01:14:53,011 --> 01:15:21,011
+2 sınav öncesinde yani aynı soru değil de böyle bir şey çıkmıştı. O zamanki komisyon puanını kırın dedi. Ama olur ya bazen der ki yok onun çocuk 0 yazdı. Hiç bakmayın sendeviç teoremiyle ispatlamasına. Yani öyle. Ama ben ne yapıyorum? İşimi garantiye alıyorum. Bir görün, bilin yani. Karşınıza bir yerlerde çıkarsa bu şekilde ispatla. O olmaz da atıyorum belki kosinüs bir böyle x gibi bir şey olur veya başka bir şey olmaz da ben kosinüs tanımlıyorum.
+
+442
+01:15:21,011 --> 01:15:40,131
+neyse. Yani bilmekte fayda var. Bir zararımız yok. Oldu mu? Anlaştık mı? Oldu hocam, anlaştık. Arkadaşın biri ne ya? Hastanede birbiri ne demek istemiş anlamadım. Arkadan biraz ses geliyor da. Fan sesi sanırım.
+
+443
+01:15:40,532 --> 01:16:02,532
+Tamam. Evet, şimdi bakın bu da bir sınav sorusu. Yani senesinin hatırı, 2016 gibi ya da bir sınav sorusu bu şekilde verilmiş. Görmeniz için dedim. Senesi önemli değil. Bakın fonksiyonu böyle verilmiş. Alfa, beta. Fonksiyonu öyle verilmiş ki real sayılardan real sayılara, alfa 0'dan büyük eşit, beta'dan real sayı. Fonksiyonu...
+
+444
+01:16:03,155 --> 01:16:10,995
+fonksiyon da şöyle olsun diyor. Buna göre bizden istenen f sıfır ve eksi bir fonksiyonu, R'de sürekli midir diyor.
+
+445
+01:16:11,695 --> 01:16:24,175
+Buna göre bize fonksiyona bakarsak alfayı ne vermiş? Sıfır vermiş, betayı da eksi bir vermiş. O zaman benim amacım alfa yerine sıfır, betaya yerine eksi bir yazarak bu fonksiyonu yeniden yazmak değil mi?
+
+446
+01:16:24,555 --> 01:16:27,796
+Sonra fonksiyonun sürekliliğini incelemem gerekir.
+
+447
+01:16:28,796 --> 01:16:29,555
+Evet.
+
+448
+01:16:30,515 --> 01:16:50,315
+Yani fonksiyon aslında x'de 0'da sürekli midir soruyor normalde. Çünkü diğer durumda sürekli diye bakarsın. Bakalım. Şimdi alfa yerine 0 yazdığımda şurada ne olur? Sinüs 1 bölü x olur. 0'dan farklı değer içinmiş. Bu da 0'mış.
+
+449
+01:16:50,640 --> 01:17:15,640
+Şimdi ne yapıyorum? Önce sıfırda limiti var mıdır fonksiyon? Sıfırda tanımlı bakın, der mi sıfır olarak? Limit x0'a giderken sinüs 1 bölü x'in limiti mevcut mudur? Limiti yok değil mi? Yukarıda da söylemiştik, limit olmadığı için ne diyoruz? Fonsiyon real sayılarda sürekli değil. Bu kolay mı sorun sizce? Zor mu?
+
+450
+01:17:17,492 --> 01:17:44,672
+Biraz zor hocam. Zor değil aslında. Kafayı karıştırmış alfalar, betalar. Ama her şey yerine yazdığı şu, sana diyor ki bu fonksiyon sürekli midir? E ne yapacaksın? Sorduğu sıfırda sürekli olup olmadığını inceliyorsun. Fonksiyon sıfırda tanımlı vermiş, tamam. Eğer ben bunun limitini de sıfır olarak bulursam süreklidir diyeceğim. E ne yapıyorum? x sıfıra giderken limite bakıyorum. E şunu almayacak mıyım?
+
+451
+01:17:45,043 --> 01:17:51,304
+0'dan farklı limit olarak yaklaştırmış. E bu da nedir? Limite geldik. Yani süreklikten de çıkmış olduk. E bunda limiti yok.
+
+452
+01:17:52,264 --> 01:17:58,623
+Eksi 1'de olur, artı 1'de olur. Yani limit mevcut değil. O zaman hiç düşünmeden sürekli değil diyeceğim. Basit bir soruymuş aslında.
+
+453
+01:17:59,623 --> 01:18:04,664
+Ama dediğiniz gibi kafasını karıştırıp öğrenciyi çözemeye bilirken. Tamam mı? Geçemiyor.
+
+454
+01:18:06,344 --> 01:18:10,083
+Evet, şimdi de böyle. Bu da yine bir sınav sonucudur arkadaşlar.
+
+455
+01:18:12,083 --> 01:18:16,263
+non-süreksiz olduğu noktaları ve süreksizlik tiplerini inceleyiniz.
+
+456
+01:18:17,235 --> 01:18:44,036
+Bakın biz, şurada tekrar geri de geliyorum arkadaşlar. Hani limit mevcut olmadığında ne diyorduk? Esas süreksizlik diyorduk. Eğer sonsuz çıkarsa değil mi? Artı eksik gibi veya sonsuz çıkarsa da sonsuz süreksizlik. Ama çok eskilerden her ikisini biz hem sonsuz, esas diye de birlikte kullanıyorduk. Ona da hani görürseniz de yanlışlık yok. Şimdi gelelim sorumuza. Süreksiz olduğu noktaları ve tiklerini belirleyelim.
+
+457
+01:18:45,235 --> 01:18:49,595
+süreksiz yapan değer ne olur? Faydasını sıfır yapan değerler değil mi? Önce onu bir belirleyelim.
+
+458
+01:18:50,335 --> 01:18:51,395
+Uzunca bir soru.
+
+459
+01:18:52,275 --> 01:18:55,095
+Faydayı sıfır yapan değerleri tek tek yazdım şuraya.
+
+460
+01:18:55,195 --> 01:18:58,796
+x kare 2x x kare x bir sıfır var değil mi?
+
+461
+01:18:58,855 --> 01:19:03,036
+Eksi 2, 2. İşte verilen fonksiyon bu noktalarda süreksizdir.
+
+462
+01:19:03,555 --> 01:19:05,395
+Bunları tek tek inceleyeceğim.
+
+463
+01:19:05,395 --> 01:19:07,715
+Sıfır için, eksi 2 ve 2 için.
+
+464
+01:19:08,155 --> 01:19:10,175
+Önce sıfır için inceleyelim arkadaşlar.
+
+465
+01:19:10,804 --> 01:19:32,683
+x sıfıra sağdan ve soldan yaklaştığında, bir limitlerine bakacağım. O zaman x sıfıra sağdan yaklaştığında mutlak değer de var, ona da dikkat ediyorum. Ne olur işareti. Değişir mi? Değişir değil mi? 3 negatif olur. O zaman şöyle yazalım burada. Takip edebiliyoruz değil mi? Şu.
+
+466
+01:19:33,300 --> 01:19:34,139
+Evet hocam.
+
+467
+01:19:34,399 --> 01:19:42,960
+Soldaki de aynı olacağı için eşit diye yazdım, üşendim hani tek tek yazmaya. Yani solda da düşünürsen aynı şekilde soldan da yaklaşsan işaret değiştirir.
+
+468
+01:19:42,960 --> 01:19:52,619
+Yani payını hallettik mutlak değerini. Paydayı da zaten şöyle ayırmıştım, yazdım. E şimdi belirsizliği yaratan, pardon, sadeleşen terimlerim var.
+
+469
+01:19:53,159 --> 01:19:59,979
+Şunlar gitti, burada da bir gitti. Geriye kalan 3 bölü x kare çarptı 2 artı x. Sıfıra giderken bu nereye?
+
+470
+01:20:00,000 --> 01:20:08,399
+yüzeye gidecektir. Sayı bölü sıfırdan, sayı bölü sıfırdan sonsuza gidecektir. Artı sonsuza. Bu da aynı şekilde.
+
+471
+01:20:08,399 --> 01:20:13,899
+Tamam, bu doğru arkadaşlar. İşte bu sonsuza gitti.
+
+472
+01:20:14,260 --> 01:20:37,880
+Ne diyeceğim? Aslında tanımımıza göre sonsuz süreksizlik. İşte dedim ya, sonsuz limit olmazsa da esas diyorduk. Her ikisini birlikte yazmışım. Kafanız karışmasın. Yani sonsuz da esas da diyebiliriz diyorum. Sıfırdaki delirsizliğini delinledik. Şimdi gelelim x 2'deki durumuna. Ne yapacağım? Yine sağdan ve soldan yaklaşacağım mutlak değeri olduğu için.
+
+473
+01:20:38,452 --> 01:21:02,311
+O zaman önce ne atalım? Sağdan yaklaştığımızı düşünelim, x2'ye. Gene ne olur? İçi negatif olduğuna göre işaret değiştirecek. Bu şekilde çıktı. Bunları da sadeleştirdik. Geriye ne kaldı? 3 bölü x kare çarpı 2 artı x kalır. x2'ye sağdan yaklaştığımızda bu ne olacaktır?
+
+474
+01:21:04,404 --> 01:21:18,964
+fayda zaten sıfır olacağı için artı sonsuza yani işaretimiz de kostik olacağına göre artı sonsuza gidecek. Soldan yaklaşırsak, bakın, yine aynen üçü işaret değiştirdi. Buradan da.
+
+475
+01:21:19,859 --> 01:21:28,859
+soldan yaklaştığımıza göre kesir negatif olur, eksi sonsuza gidecek. Yani burada sonsuz süreksizlik vardır diyeceğim.
+
+476
+01:21:28,859 --> 01:21:36,587
+x eksi 2'ye yaklaştığında sağdan ve soldan ya da esas süreksizlik diyeceğiz. Bir tane ne kaldı? 2 kaldı arkadaşlar.
+
+477
+01:21:38,420 --> 01:21:51,659
+2'ye gelelim. 2'ye sağdan yaklaştığımızda mutlak değerimiz için ne olur bakın, kostik olur. O zaman x-2 diye dışarıya çıkaracağız. Paydayı da zaten ayırmıştık bu şekilde.
+
+478
+01:21:53,739 --> 01:22:01,539
+Buradan düşünürsek, 2'ye sağdan yaklaştık. O zaman ne olur? Kesir negatif olur. Pardon.
+
+479
+01:22:03,252 --> 01:22:22,771
+sadeleştirmeden. x 3 bölü x kare 2 artı x kaldı. Buradan da yerine yazarsam, x 3 bölü 16. Soldan yaklaştığımızda da, bakın soldan yaklaşırsak, 2'ye ne olur? İşaret değiştirir. Bakın şöyle olur.
+
+480
+01:22:23,155 --> 01:22:36,115
+O zaman bunlar da giderse şöyle bir ifademiz kalır. Bu da 3 bölü 16. O zaman ne oldu? Bakın limitleri mevcut ve birbirinden farklı oldu. O halde ne diyoruz? Buna da sıçramalı süreksizlik diyoruz.
+
+481
+01:22:36,655 --> 01:22:42,855
+Bu da sıçramalı süreksizlik var diyeceğiz. Evet. Anlaşıldı mı arkadaşlar? Biraz uzun.
+
+482
+01:22:43,615 --> 01:22:49,155
+Niçin mi hocam? Tamam. O zaman gelelim. Son bir örneğinde şu var.
+
+483
+01:22:49,587 --> 01:22:57,127
+x kare eksi x artı 1 eşittir 3 denkleminin 1, 3 aralığında bir çözüme sahip olduğunu gösteririz.
+
+484
+01:22:57,216 --> 01:23:24,956
+Buraya kadar bu soruyu çözebilmem için bir tane teorem söylendi. O da ara değer teoremi. Ara değer teoremini kullanarak bunun bir çözümü olduğunu gösterin diyor bana. O zaman ne yapalım? Bir tane fonksiyona ihtiyacım var. Fonksiyonun burada ne olması gerekir? Değil mi? x kare eksi x artı 1. Yani bir kolinom. Bir kolinomsa kolinom her yerde süreklidir. Verilen şu aralıkta da süreklidir diyeceğim. Bakın kolinomum şu olsun diyorum fx.
+
+485
+01:23:25,171 --> 01:23:51,851
+Şimdi ne yapmam gerekir? f'in 1'deki değerini ve 3'deki değerini bulmalıyım. f'in 1'deki değeri 1, 3'deki değeri de 7'ymiş yerine yazdım şimdiden. Bu fonksiyon da sürekli olduğundan, burada şu 3'ü s de gösterdim. s3, f'in 1'deki değeri 1 ve f'in 3'deki değeri de.
+
+486
+01:23:52,207 --> 01:24:05,827
+7 olduğuna göre, ara değer teoremine göre öyle bir c vardır ki, değeri 3'tür diyelim. Yani fc eşittir, 3 olacak şekilde, 1, bu aralıkta bir c sayısı vardır.
+
+487
+01:24:05,827 --> 01:24:20,207
+İşte bakın, bunu bulabiliriz şurada. Fonsiyonu şu değil midir? c kare eksi c artı 1 eşittir 3 derim arkadaşlar. c kare eksi c, 3'ü bu tarafa attığımda, eksi 2 eşittir 0 demez mi?
+
+488
+01:24:20,207 --> 01:24:30,167
+Burada kökleri, bir tanesi eksi 1, bir tanesi de 2 çıkar. O zaman eksi 1'i alamam. Çünkü aralığının dışında 2'yi alırım işte. C, 2'dir diyeceğim.
+
+489
+01:24:32,107 --> 01:24:36,707
+Ara değer teorelim. Anlaşıldı mı arkadaşlar?
+
+490
+01:24:38,387 --> 01:24:39,467
+Anlaşıldı hocam.
+
+491
+01:24:39,587 --> 01:24:51,247
+Fizyonu seçtim. Dedim ki bir polinomdur, süreklidir, aralıkta da sürekli. Problem yok. Noktaları buldu. O zaman diyorum ki ara değerli öğrenmeye göre öyle bir c sayısı vardı ki değeri.
+
+492
+01:24:51,347 --> 01:24:58,007
+Burada öbüründe sıfırdı. Burada üç demiş. fc eşittir. Üçtür diyorum. Onu da bulduk. Tamam mı?
+
+493
+01:24:59,747 --> 01:25:00,867
+Bir tane daha var.
+
+494
+01:25:03,572 --> 01:25:07,812
+Şimdi bize diyor ki bu fonksiyonun sürekliliğini araştırırız.
+
+495
+01:25:10,352 --> 01:25:13,272
+Gene bunu süreks yapan değer nedir arkadaşlar?
+
+496
+01:25:13,732 --> 01:25:15,432
+Paydayı sıfır yapan değerdir.
+
+497
+01:25:16,172 --> 01:25:18,892
+Bunu düzenlersem şuradan eşit sıfır öderim.
+
+498
+01:25:18,892 --> 01:25:22,632
+Yine bunu karesine alırsam x eşittir.
+
+499
+01:25:22,812 --> 01:25:24,852
+Yani fonksiyon birde nedir?
+
+500
+01:25:25,532 --> 01:25:28,032
+Sürekli değildir. Bu değer için süreksizdir.
+
+501
+01:25:28,612 --> 01:25:29,832
+Biraz sürek çıkmışlar.
+
+502
+01:25:30,532 --> 01:25:30,792
+Evet.
+
+503
+01:25:31,283 --> 01:25:43,383
+Fakat diyorum, x'i birden farklı düşünürsek, 1 için süreksiz dedik. Şimdi limitine bakacağız.
+
+504
+01:25:44,943 --> 01:25:51,723
+fx, x1'e giderken limiti yazalım. Yazdık. Dikkat edersek bu 0 bölü.
+
+505
+01:25:52,243 --> 01:25:59,743
+sıfırdan, böyle sıfır belirsizliği var. Bunu düzenleyelim. Ne yapmalıyım bunu? Genel limite geldi. Bakın konumuz.
+
+506
+01:26:00,283 --> 01:26:11,823
+Payın eşlemiyle payı paydayı çarptım. Çarparsak, x-1 şöyle. Payda ne oldu? Bakın x-1'ler gitti. Sonuçta uzatmadan ne oldu? 4 oldu.
+
+507
+01:26:13,503 --> 01:26:19,323
+O zaman ne diyorum ben? Ne demiştik? Bir de,
+
+508
+01:26:19,828 --> 01:26:43,728
+sürekli değil arkadaşlar. Limit olarak ne yaparız? Birden farklı değerlerle limitine baktık. Değerini 4 tuttuk. Eğer ben bunu sürekli olacak şekilde yeniden tanımlarsam ne diyeceğim? Fonsiyonun birdeki değerini 4 olarak seçersek bakın şurada fonksiyon ne olur? Sürekli olur. Yani bunu sürekli olacak şekilde yeniden tanımlama kısmı. Hatta ilk örneği çözmüştüm.
+
+509
+01:26:44,787 --> 01:26:52,387
+Bu anlaşıldı mı arkadaşlar? Ne yaptık? Süreksiz olduğu değer neydi? Paydayı sıfır yapan değerdi. Onu bulduk. 1 dedik.
+
+510
+01:26:52,887 --> 01:26:59,147
+Şimdi 1'den farklı ise limitine baktım. Değerini 4 buldum. O zaman diyorum ki, çünkü bu 1'de sürekli değil.
+
+511
+01:26:59,707 --> 01:27:04,907
+Ben 1'deki değerini 4 olarak yeniden tanımlayabilirsem bu fonksiyon sürekli olur diyeceğim.
+
+512
+01:27:09,268 --> 01:27:20,507
+Anlamadım anlaşıldı. Şimdi gelelim şöyle bir örneğimize. Bu da gene bir eski bir sınav sorusu. Bu da bir sınav sorusu. Yani çoğunluğu sınav soruları görmeniz açısından yazdım.
+
+513
+01:27:20,847 --> 01:27:25,007
+Fonksiyonun sürekli olabilmesi için A ve B ne olmalıdır diyoruz.
+
+514
+01:27:26,587 --> 01:27:29,007
+Evet. Bana sordu. Bu fonksiyon aslında.
+
+515
+01:27:29,684 --> 01:27:36,724
+sıfır noktasında sürekli midir diye soruyor. Gayet aslında kolay bir soru. Belki uzun dur ama kolay. Ne yapmalıyım önce arkadaşlar?
+
+516
+01:27:37,304 --> 01:27:48,544
+Fonksiyon sıfırda tanımlı mıdır? İşte sıfıra soldan yaklaştığında limitine bakacağım. Sağdan yaklaştığında limitine bakacağım. Bunlar birbirine eşitse işte şöyle, şöyle olmalı.
+
+517
+01:27:48,804 --> 01:27:51,184
+Şimdi fonksiyonun sıfırdaki değeri...
+
+518
+01:27:51,184 --> 01:27:52,384
+A3 mi hocam?
+
+519
+01:27:53,184 --> 01:27:55,424
+Efendim mi? Onu hatırlamıyorum. Bakarız.
+
+520
+01:27:56,083 --> 01:28:10,083
+Şimdi ne yapıyorum? Fonksiyonun sıfırdaki değerini yazıyorum. Hani tam ne olduğu değer, ne biliyorsam hepsini yazıyorum. Bakın, a artı 1. Ne yapıyorum? Sıfıra soldan yaklaşıyorum, limitine bakıyorum. Şunu alacağım. En küçük değer değerinde şu.
+
+521
+01:28:10,083 --> 01:28:22,891
+Bunu da bildiğimiz limit kurallarından ne yaparım? Şurada bir 3 olması gerekir. Hemen doğrudan 1 olsun diyelim. Genişletelim. 3, 3 ile çarptım, 3 ile böldüm. Bu limiti 1'e gider. Sonuçta 3'tüm diyorum.
+
+522
+01:28:22,996 --> 01:28:43,136
+sağdan yaklaşacağım, şu fonksiyonu alacağım. Bakın, şu. x0'a giderken bu da b olmaz mı? Evet. O zaman bu limitinin mevcut olabilmesi için b ne olmalı? 3 olmalı. Doğru bulmuşsunuz. Değil mi? b3 ise, burada da getirip yerine yazarsak.
+
+523
+01:28:46,579 --> 01:28:47,340
+a'da 2.
+
+524
+01:28:47,819 --> 01:28:49,679
+a'da 2 olacak değil mi?
+
+525
+01:28:51,340 --> 01:28:55,059
+Hepimiz limitini zaten 3 olarak söyledik.
+
+526
+01:28:55,340 --> 01:28:58,920
+O da fonksiyonun tanımlı olduğu değere eşit olmalı.
+
+527
+01:28:59,220 --> 01:29:02,979
+a artı 1 yazmıştım diye onu arıyordum da o yüzden bıraksadım yazmışım.
+
+528
+01:29:03,439 --> 01:29:05,899
+O da ne olmalı? 2 olmalı diyoruz.
+
+529
+01:29:06,260 --> 01:29:22,960
+İşte dediğim gibi bu da bir sınav sorusu. Yani konuyu bilmiyorsan bir de işlem hatasını yapmadan yapabilirsin. Yani sıfırda sürekli olmasını göster diyor. Bunları da bilgilerin yazdığında zaten kendimden bulmuş olacağım. Değil mi arkadaşlar? Evet, var mı? Sorularım bu kadar arkadaşlar.
+
+530
+01:29:23,460 --> 01:29:31,700
+Bittim hocam. Benim bir sorum var da bu soruyla alakalı değil ya. En başta çözdüğümüz soruyla alakalı. Şimdi aklıma geldi de sorabilir miyim?
+
+531
+01:29:32,112 --> 01:29:33,672
+Hangi en başta? Örneke?
+
+532
+01:29:33,672 --> 01:29:38,072
+X çarpı 1 bölü sinüs 1 bölü x sonrasıyla bırakalım.
+
+533
+01:29:38,272 --> 01:29:38,532
+Öyle.
+
+534
+01:29:38,732 --> 01:29:45,372
+Orada neden x'i paydaya 1 bölü x şeklinde atıp sinüs 1 bölü x bölü 1 bölü x'i yapmalı?
+
+535
+01:29:47,712 --> 01:29:53,212
+Yapabilirsin ama hani onun ispatlanması gerekiyor. Sen de işte öğrenimi diyorsun değil mi?
+
+536
+01:29:55,012 --> 01:29:58,372
+Hocam işte öyle yapınca yanlış çıkıyor. 1 çıkıyor, siz yapınca 0 çıktı.
+
+537
+01:30:00,340 --> 01:30:03,739
+Şunu diyorsun değil mi?
+
+538
+01:30:04,400 --> 01:30:05,779
+Evet hocam x.
+
+539
+01:30:05,779 --> 01:30:08,000
+Şunu yapıyoruz, sen ne yaptın?
+
+540
+01:30:08,760 --> 01:30:11,239
+x'i aşağı atıp paydaya 1 bölü x şeklinde.
+
+541
+01:30:13,739 --> 01:30:15,239
+Evet, 1 bölü x.
+
+542
+01:30:15,900 --> 01:30:19,779
+Ama x sıfıra giderken o sonsuz bölü sonsuz gibi oluyor. Olmaz.
+
+543
+01:30:21,199 --> 01:30:24,940
+Olmuyor. Çünkü bu sinüs 1 bölü x. Böyle göstermek zorundayım.
+
+544
+01:30:26,292 --> 01:30:27,132
+Olmaz bu.
+
+545
+01:30:27,312 --> 01:30:29,112
+Tamam ben de onu yapmadım.
+
+546
+01:30:29,112 --> 01:30:29,692
+Anladım dediğini.
+
+547
+01:30:30,072 --> 01:30:32,652
+Sen sinüs 1 bölü x bölü 1 bölü x diyorsun.
+
+548
+01:30:33,352 --> 01:30:39,232
+Çünkü x0'a yaklaşırken 1 bölü x, hani u dönüşümü yapmış olsan, o zaman sonsuza gitmiş oluyor.
+
+549
+01:30:39,332 --> 01:30:39,672
+Olmuyor.
+
+550
+01:30:39,792 --> 01:30:43,452
+Zaten sonsuza giderken de onu 0 olduğunu ispatlamıştık yani.
+
+551
+01:30:43,772 --> 01:30:43,992
+Tamam mı?
+
+552
+01:30:43,992 --> 01:30:44,732
+Böyle gitmelisin.
+
+553
+01:30:44,752 --> 01:30:46,512
+Yani rasyonel olmaması mı gerekiyor?
+
+554
+01:30:46,592 --> 01:30:48,372
+Çalmı şeklinde olması gerekiyor demek.
+
+555
+01:30:48,492 --> 01:30:49,492
+x'ini yapabilmek için.
+
+556
+01:30:49,552 --> 01:30:50,652
+Evet, yani öyle gidemezsin.
+
+557
+01:30:51,172 --> 01:30:51,392
+Tamam.
+
+558
+01:30:51,972 --> 01:30:52,592
+Anlaştık.
+
+559
+01:30:52,732 --> 01:30:53,052
+Başka?
+
+560
+01:30:54,836 --> 01:30:56,416
+Var mı başka sorumuz arkadaşlar?
+
+561
+01:30:57,855 --> 01:30:59,676
+Yoksa o zaman burada bitiriyorum.
+
+562
+01:31:00,355 --> 01:31:02,055
+Yani sorular bitmiş oldu.
+
+563
+01:31:02,155 --> 01:31:03,555
+Biraz siz sorular çözün.
+
+564
+01:31:03,735 --> 01:31:04,635
+Evet, buyurun hocam.
+
+565
+01:31:05,555 --> 01:31:07,076
+Sorunlarla ilgili değil de şey.
+
+566
+01:31:07,416 --> 01:31:10,435
+Kitap almamız gerekiyor mu yoksa?
+
+567
+01:31:11,220 --> 01:31:33,160
+Kitap, dersin içerini haftalara göre ben Avesis'e yükledim. Orada da kitap ismi yazıyor. Thomas Kaltilus, Salih Çelik'in kitabı. Başta kitapla, istediğiniz kitaptan çalışabilirsiniz. Ben konuştum da biraz dersin ilk haftasında. Kitap alma zorunluluğunuz yok. İster kitap alırsan, ister internetten çalışırsan. Nasıl istiyorsan onu yap arkadaşım.
+
+568
+01:31:33,160 --> 01:31:39,120
+Yani ne eksiğin varsa kendin daha iyi bilirsin. Hani ben örnek bana gerekli, örnekle ilgili bir kitap bulayım.
+
+569
+01:31:39,220 --> 01:31:47,220
+veya internetten çalışın. Nasıl istiyorsan ben ille şu kitabı alın demek istemiyorum öğrenciyi. Çünkü öğrenci üniversite öğrencisi kendisini daha iyi tanır.
+
+570
+01:31:47,220 --> 01:31:55,220
+Hani ilkokul öğrencisi de şu kitabı aldığını takip edelim. Diğer öğrenci kendini daha iyi bilir. Yani istediğiniz kitaptan çalışabilirsiniz.
+
+571
+01:31:55,220 --> 01:31:58,220
+Tamam, kardeşim. Sağ olun.
+
+572
+01:31:58,220 --> 01:31:59,180
+Değişmiyor değil mi?
+
+573
+01:31:59,283 --> 01:32:12,203
+Amaç, biraz soru çözüp, aşinalık kazanmak. Biz bile bazen soruyu soruyorsunuz, ben bile takılıyorum. Hepimiz için geçerli. Ne kadar çok soru görürsek, daha kolay cevap verebiliriz.
+
+574
+01:32:13,064 --> 01:32:21,463
+Hocam, ben de bir şey soracağım. Bu Thomas Kalkülüs'ün içerisinde örnekler var değil mi? Yani soru çözümü.
+
+575
+01:32:22,707 --> 01:32:31,927
+Öyle çok soru çözümü olmuyor. Soruların arka kısımda çözülmemiş soruları çok. Hiçbir kitap 100 tane soru çözmez.
+
+576
+01:32:33,707 --> 01:32:38,927
+Problem çözümü de var mı diyecektim. Bir konu kitabı, bir de problem çözümü.
+
+577
+01:32:39,487 --> 01:32:48,087
+Çözülmemiş soruları var arka kısmında. Konunun arka kısmında çok sorular var. İçinde birkaç soru çözülmüş oluyor ders kitabı olduğu için.
+
+578
+01:32:49,300 --> 01:32:53,300
+Soru çözümlü kitap demek istiyor.
+
+579
+01:32:53,300 --> 01:33:03,300
+Dediğim gibi araştırıp bakacaksın. Bazı kitaplar sadece soru çözüyor. Ama bu ders kitabı olduğu için hep soru çözmüyor.
+
+580
+01:33:03,300 --> 01:33:10,300
+Konuyu anlatıyor, birkaç tane soru çözmüş oluyor. Sonuna da çözülmemiş sorular. Bunlar da size diyor, siz çözün diyor.
+
+581
+01:33:10,579 --> 01:33:31,579
+Benim, yani o internetten girip de haftalara göre bankınıza önerilen kaynak kitabı vermek zorundayım. Onu verdim size o şekilde. Ama dediğim gibi başka kitaplardan sorunlar çok kitap var. Öyle istediğim kitaptan alıp bakabilirsin çözümlü sorunlar. Başkanım?
+
+582
+01:33:36,724 --> 01:33:41,724
+Evet, o zaman yoksa haftaya görüşürüz arkadaşlar. Kendinize iyi bakın.
+
+583
+01:33:42,564 --> 01:33:43,304
+İyi günler hocam.
+
+584
+01:33:43,484 --> 01:33:43,703
+Bay bay.
+
+585
+01:33:44,304 --> 01:33:45,064
+Kendinize iyi bakın.
