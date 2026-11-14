@@ -5,5 +5,6 @@
 | Şube | Dönem | Hoca | Klasör |
 | :---: | :---: | :--- | :--- |
 | 1 | Güz | — | [sube_1/](sube_1/) |
+| 1 | Bahar | — | [sube_1_bahar/](sube_1_bahar/) |
 | 2 | Güz | — | [sube_2/](sube_2/) |
 | 3 | Güz | Dr. Ziya Cihan Tayşi | [sube_3/](sube_3/) |
