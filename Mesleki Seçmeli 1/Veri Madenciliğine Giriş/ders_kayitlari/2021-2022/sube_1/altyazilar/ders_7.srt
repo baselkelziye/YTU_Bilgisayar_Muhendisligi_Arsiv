@@ -1,0 +1,3087 @@
+1
+00:01:16,904 --> 00:01:17,483
+Yapalım.
+
+2
+00:01:19,165 --> 00:01:20,723
+Yapalım. Tamamdır.
+
+3
+00:01:21,584 --> 00:01:23,165
+Okey, hazır mıydı bir dersler?
+
+4
+00:01:23,745 --> 00:01:24,525
+Herhalde hazır.
+
+5
+00:01:25,525 --> 00:01:28,284
+Evet, şimdi ön işlemi yapayım.
+
+6
+00:01:29,257 --> 00:01:54,217
+İlk diyorum projeyle ilgili, yarın projeyle ilgili Google Classroom'a doküman koyuyorum. Haftaya kadar gruplarınızı oluşturmanız bekleniyor. Tamam, tek kişi yapmıyor, yapamıyorsunuz. İki kişi bir proje yapacak. Ondan sonra projenin de genel giriş altı nasıl, takvimi nasıl olacak? Her şeyi yarın Classroom'dan ayarlayacağım. Ona göre proje arkadaşınıza karar verebilirsiniz. Tamam mı?
+
+7
+00:01:55,401 --> 00:02:19,080
+Şimdi ne yaptık geçen haftalarda? Hatırlarsanız Data Cleaning ve Data Pre-Processing'den bahsettik. Ondan sonra da dedim ki haftaya Data Warehouse'larla ilgili bir chapter'ımız var. Ama sınıfın yarısı neredeyse üçüncü sınıf. Daha bir tabanı görmemişler. Görse de daha böyle şey kalıyor yani.
+
+8
+00:02:19,572 --> 00:02:35,491
+Şöyle bir veri tabanı var. Böyle oluyor, böyle oluyor. Demek sanki çok soyut kalıyor. Dolayısıyla o chapter'ı şimdilik atlıyorum. Üçüncü chapter'ı. Tamam. Sonra ilerleyen haftalarda kısaca değineceğim. Ve ne yapıyoruz?
+
+9
+00:02:37,093 --> 00:02:46,093
+Classification olan bir sonraki chapter'ımıza başlıyoruz. Bugün ne göreceğiz? Bugün tüm derste karar ağaçları
+
+10
+00:02:46,516 --> 00:02:54,936
+Nasıl oluşturulur? Yöntemleri nelerdir? Onlara bakacağız. Tamam mı? Bugün para ağaçlarını öğreneceğiz.
+
+11
+00:02:56,375 --> 00:03:06,856
+Şimdi ne yaptık? Hatırlarsanız dedik ki ta ilk dersimizde Data Mining'den bahsederken yöntemleri ikiye ayırırız dedik.
+
+12
+00:03:07,316 --> 00:03:12,236
+Bir tanesi prediktivdi, diğeri de diskriptivdi. Hatırlıyor muyuz? Umarım hatırlıyoruz.
+
+13
+00:03:12,584 --> 00:03:23,645
+Şimdi predictive'a bakarsak da predictive metotlarda dedik ki bunun çıktısı diskrit olabilir ya da kontinyüs bir değer olabilir dedik.
+
+14
+00:03:23,645 --> 00:03:26,205
+Değil mi? Ayrık ya da sürekli olabilir dedik.
+
+15
+00:03:26,884 --> 00:03:28,320
+Şimdi eğer ki...
+
+16
+00:03:28,681 --> 00:03:47,840
+Benim datamın çıktısı, verimin çıktısı bir sınıfsa ve ben bir input verildiğinde bunun sınıfını ya da etiketini tahmin etmeye çalışacaksam, elimde ayrık sınıflar varsa diyorum ki bu bir sınıflandırma örneğidir.
+
+17
+00:03:47,840 --> 00:03:55,799
+Tamam mı? Prediction'a baktığımız zaman da eğer ki bizim çıktığımız sürekli bir değerse. Tamam mı?
+
+18
+00:03:56,424 --> 00:04:21,025
+Yapmaya çalıştığım şey prediction'dır. Prediction ile prediction yapan teknikler genellikle regresyon üzerine çalışır. Biner regresyon, lojistik regresyon gibi metotlar vardır. Ondan sonra classification yapan metotlara da genellikle yani classifier'ım, benim sınıflandırıcım denir.
+
+19
+00:04:21,861 --> 00:04:27,781
+Burada görmüş olduğunuz, hatta şuradan da çizilebiliriz. Neyimiz var? Şeride görsün onlineler.
+
+20
+00:04:28,440 --> 00:04:36,521
+Klasifier'lar var. Tamam. Bundan sonra önümüzdeki yaklaşık dört hafta boyunca farklı farklı klasifier'lara bakacağız.
+
+21
+00:04:37,820 --> 00:04:45,000
+Bugün ne yapıyoruz? İlk olarak karar ağaçlarıyla başlayacağız. Sonra Bayesian klasifier'lara bakacağız.
+
+22
+00:04:45,459 --> 00:05:08,540
+Bildiğimiz olasılık dersinde görmüş olduğunuz Bayes kuralı kullanarak biz nasıl bir klasifier oluştururuz? Ona bakacağız haftaya. Ondan sonra Rule-based klasifier'lar var. Yani kural tabanlı klasifier'lar ama bu da decision tree'lere çok çok benziyor.
+
+23
+00:05:09,161 --> 00:05:12,839
+Gibi gibi sonra da support vektör meşinlere bakıp bitireceğiz.
+
+24
+00:05:13,221 --> 00:05:15,880
+Şimdi buraya baktığınız zaman predictionlarda ne var?
+
+25
+00:05:15,981 --> 00:05:18,000
+Dediğim gibi çoğunlukla regresyon metotları var.
+
+26
+00:05:18,101 --> 00:05:19,620
+Bir şey dikkatinizi çekmiş olmalı.
+
+27
+00:05:20,221 --> 00:05:23,700
+Bakın neural network hem burada var hem de burada var.
+
+28
+00:05:24,521 --> 00:05:25,080
+Gördünüz mü?
+
+29
+00:05:25,681 --> 00:05:27,839
+Hem classifier'da var hem de nerede var?
+
+30
+00:05:27,940 --> 00:05:28,700
+Prediction'da var.
+
+31
+00:05:30,440 --> 00:05:31,960
+Sizce yanlış mı yazmışlar?
+
+32
+00:05:36,361 --> 00:05:43,861
+Hayır, yanlış yazmamışlar. Çünkü yapay sinir ağlarına baktığımız zaman neural networkleri sınıflandırma için kullanılabilir.
+
+33
+00:05:45,223 --> 00:05:52,063
+Prediction için, yani regresyon gibi tıpkı continuous bir değer tahmin etmek için kullanılabilir.
+
+34
+00:05:52,723 --> 00:06:04,624
+Hatta şimdi ne yapmıştık? Bunların ikisi de ne? Hem classifier'lar hem de prediction metotları, predictive metotlar, tahmin yapan metotlar bir de tanımlayıcı descriptive metotlar vardır.
+
+35
+00:06:04,624 --> 00:06:11,744
+Bazı yapay sinir ağları da kümeleme yapmak gibi descriptive yöntemler içinde kullanılabilir.
+
+36
+00:06:13,223 --> 00:06:21,264
+yapay sinir A tipleri var, çeşitleri var. Dolayısıyla siz bir yapay sinir A ile sınıflandırma da yapabilirsiniz, prediction da yapabilirsiniz.
+
+37
+00:06:21,723 --> 00:06:30,584
+Hatta burada yazmayan bir diğer tekniğimiz olan descriptive metod olan kümeleme de ne yapabilirsiniz, yapabilirsiniz.
+
+38
+00:06:32,284 --> 00:06:36,764
+Okey, ne yapıyoruz? Bu hafta şununla başlıyoruz. Decision Triller ile başlayacağız.
+
+39
+00:06:45,897 --> 00:07:11,757
+Şimdi classification'da da yine ilk ders basitçe anlatmıştık. Dedik ki ne yapacağız? İki aşamada yapacağız. Benim demiştim bir kümem var, verim var değil mi? Şuraya çizelim. Bir verimiz var. Bu veriye biz ne diyorduk? Training set diyorduk değil mi? Şimdi training setten ne yapacağız?
+
+40
+00:07:13,352 --> 00:07:21,071
+Bir model oluşturacağız. Tamam mı? Burada da diyor ki, yani model oluşturmaya, şurada gördüğünüz üzere,
+
+41
+00:07:24,152 --> 00:07:29,972
+Model Construction demiş. Tamam mı? Ve bunu ben ne için yapıyorum?
+
+42
+00:07:31,175 --> 00:07:46,175
+Sınıflandırma için yapıyorum. Modelimize baktığımız zaman şurada yani burada benim bir tane attribute'un ne olması lazım? Class Labelları, sınıf etketleri olması lazım. Değil mi? Şunlar ne? Baktığımız zaman.
+
+43
+00:07:50,175 --> 00:07:51,616
+Class Labelları.
+
+44
+00:07:56,424 --> 00:08:07,244
+Ve labellar ne? Ayrık değerler. Ne yapacağız? Şimdi biz training setten bir model oluşturacağız. Modelin çıktısı ne olacak?
+
+45
+00:08:10,205 --> 00:08:21,645
+Modelin çıktısı bana bir input verdiğim zaman bana oradaki verinin, tupple'ın yani o satırın
+
+46
+00:08:21,768 --> 00:08:34,567
+Kılası nedir? Bunu bulan bir model olacak değil mi? Yani ne yapacağız aslında? Onun kılasını tahmin etmeye çalışacağız. Yapacağımız şey o. Tamam mı?
+
+47
+00:08:35,668 --> 00:08:43,828
+Burada da hemen şurada yine okuyarak gidelim. Diyor ki her bir tapıl ya da sampıl. Yani şu veride görmüş olduğunuz her satır. Satır ne olabilir?
+
+48
+00:08:48,455 --> 00:09:11,175
+İşte bir bitki veri tabanımız var, tamam mı? Çiçeğin, işte yaprağının eni var, boyu var, ondan sonra yüksekliği var, maksimum yüksekliği gibi özellikler var. Buradan bitkinin cinsi nedir? Klasım o. Veri tabanında da yüz çeşit farklı bitki var. Böyle bir veri tabanı olsun.
+
+49
+00:09:14,504 --> 00:09:19,384
+Bir bitkinin, yani benim örnek aldığım, şurada sample aslında güzel bir şey.
+
+50
+00:09:19,864 --> 00:09:26,183
+Diyelim ki ben tuttum 500 tane bitkinin bu şekilde işte yaprağını, boyunu, enini vesaire ölçtüm.
+
+51
+00:09:26,444 --> 00:09:29,763
+Tamam mı? Çiçek rengini, farklı farklı şeylerini ölçtüm.
+
+52
+00:09:30,544 --> 00:09:34,023
+Ve o bitkinin cinsine ise training sete yazdım.
+
+53
+00:09:34,704 --> 00:09:35,063
+Tamam mı?
+
+54
+00:09:36,023 --> 00:09:37,023
+Sonra da ne yapıyorum?
+
+55
+00:09:37,544 --> 00:09:40,364
+İşte bunlarla bir model oluşturacağım.
+
+56
+00:09:41,065 --> 00:09:50,325
+Ondan sonra modeli oluşturduk. Tamam mı? Yani bu benim benim training setim. Buradan ne oluşturduk?
+
+57
+00:09:54,215 --> 00:09:54,715
+Teşekkürler.
+
+58
+00:09:59,464 --> 00:10:06,103
+bir model oluşturuyoruz değil mi? Şimdi amacım ne modeli oluşturarak?
+
+59
+00:10:09,800 --> 00:10:16,200
+Bu modeli oluşturarak amacım yeni classification'lar yapmak, yeni sınıflandırmalar yapmak.
+
+60
+00:10:16,200 --> 00:10:17,200
+Yani...
+
+61
+00:10:25,096 --> 00:10:27,096
+Yani şu...
+
+62
+00:10:27,096 --> 00:10:27,436
+Evet.
+
+63
+00:10:30,016 --> 00:10:30,776
+Sert yapıyorum.
+
+64
+00:10:36,040 --> 00:10:38,141
+Şimdi şeydekiler diyor ki, hoca ne yapıyorsun?
+
+65
+00:10:40,459 --> 00:10:42,561
+Sattir. Online'dakiler.
+
+66
+00:10:43,339 --> 00:10:43,980
+Sildik.
+
+67
+00:10:44,839 --> 00:10:47,380
+Sildikten sonra hop, bunu aldık.
+
+68
+00:10:49,000 --> 00:10:50,959
+Şimdi bana yeni bir veri geldi.
+
+69
+00:10:51,661 --> 00:10:52,161
+Tamam mı?
+
+70
+00:10:52,980 --> 00:10:57,141
+Burada da veride de yaprağın boyu var, eni var, çiçek rengi var.
+
+71
+00:10:57,860 --> 00:11:00,261
+Ama sınıfın ne olduğu belli değil.
+
+72
+00:11:01,040 --> 00:11:01,401
+Tamam mı?
+
+73
+00:11:01,672 --> 00:11:15,612
+Şimdi ben ne yaptım? Buradan bir model oluşturdum. Bir model oluşturdum. Şimdi artık hep ne yapacağım? Bu modeli kullanacağım. Yani artık şu training setle işim bitti mi? Evet bitti.
+
+74
+00:11:25,800 --> 00:11:31,300
+Modele bakarak ne yapacağım? Bunun sınıfı nedir? Bunu bana bulmayacağım. Tamam mı?
+
+75
+00:11:38,312 --> 00:11:58,592
+Burada n-1 tane attribute var. Şurada n-de class label. Şimdi benim yeni verimde de yani soracağım olan veri, soracağım veride de aynı n-1 tane attribute olması lazım. Modelime sorabilmem için.
+
+76
+00:11:58,932 --> 00:12:26,611
+Modeli buna göre oluşturduk. Yani çiçek örneğinde, bu çiçeğin kök uzunluğu da varmış, hadi ben bunu da modele sorayım diyemezsiniz eğer eğitmediyseniz. Ondan sonra da ne yapıyoruz? Bunu modele sorarak bunun etiketi nedir? Bunu bulmaya çalışıyoruz. Tamam mı? Peki buna ne diyoruz? Şuradaki şeye de. Yani tamam, modeli yaptım, çalıştırdınız. Modeli oluştururken çeşitli parametreler vardı.
+
+77
+00:12:27,272 --> 00:12:39,812
+Tamam mı? Modeli oluşturdum. Tamam, işte yazdım, kodum çalışıyor. Peki model ne kadar iyi çalışıyor? Nereden bileceğim? Nasıl test edeceğiz?
+
+78
+00:12:43,272 --> 00:12:47,071
+Hı? Testeti nasıl oluşturacağız?
+
+79
+00:12:50,953 --> 00:13:01,411
+Aslan, ne yaparsınız? Çünkü bakın elimde şu geldi ama bunun etiketi yok. Diyelim ki ben buna ağaç çiçeği tahmin ettim. Gerçekten modelim iyi çalışıyor mu? Çalışmıyor mu? Nereden bileceğim?
+
+80
+00:13:07,977 --> 00:13:23,477
+Ne yapacağız biliyor musunuz? Şöyle bir şey yapacağız. Şimdi elinde training set var. Tamam mı? Şu en ince şey bu class var. Tamam mı? Buna ne dedik? Bu training setimiz.
+
+81
+00:13:25,616 --> 00:13:28,575
+Şimdi sonra ben buradan modeli oluşturacağım.
+
+82
+00:13:30,504 --> 00:13:40,804
+Modeli oluşturduktan sonra bana gelen yeni veri de, bakın en eksi bir tane şey olacak. Zaten amacım bunun eninci klasını tahmin etmek.
+
+83
+00:13:42,424 --> 00:13:50,205
+Tamam mı? Peki ben bunu ne kadar iyi çalışıyor bu model? İyi bir model mi oluşturdum? Model nasıl, ne kadar iyi çalışıyor? Nereden bileceğim?
+
+84
+00:13:56,713 --> 00:14:08,432
+Ne yapacağız? Bakın şöyle bir şey yapacağız. Training setin bir kısmını ayıracağız. Ne kadar bir kısım? Yarısı mı? Yarısından fazla mı? Tamamen verinizin boyutuna göre.
+
+85
+00:14:08,432 --> 00:14:21,152
+Tamam mı? Veriniz eğer çoksa yaklaşık %10 ila %20'sini ayırabilirsiniz. %20'ye kadar ayırır. Eğer ki hatta %30'a kadar bile bir kısmını ayırabilirsiniz.
+
+86
+00:14:24,936 --> 00:14:32,016
+Test seti diyorum. Ayırdığım kısmında label'larını biliyor muyum? Evet, biliyorum. Tamam mı?
+
+87
+00:14:32,795 --> 00:14:38,295
+Dolayısıyla ben bunu, şimdi siz programcısınız, diyelim ki data scientist olarak çalışıyorsunuz.
+
+88
+00:14:38,616 --> 00:14:42,236
+Model oluşturup müşteriye vermeden önce bakmanız lazım ne kadar iyi çalışıyor.
+
+89
+00:14:42,776 --> 00:14:50,835
+Dolayısıyla ne yaptık? Benim burada atıyorum işte on bin tane verim varsa bunun yüzde onunu
+
+90
+00:14:51,464 --> 00:15:07,343
+Yani bin tanesini test olarak ayırdım. Tamam mı? Ayırdık ya, şöyle yapıyoruz. Artık sadece şu yeşille çizdiğim kısma, çizemediğim kısma, training set diyorum.
+
+91
+00:15:11,719 --> 00:15:25,940
+Şöyle başka bir renkle çizelim. Maviyle çizmeyelim. Kırmızıyla yapmışız zaten. Kırmızı kısmada ne diyoruz? Test seti diyoruz. Tamam mı? Test kümesi.
+
+92
+00:15:27,480 --> 00:15:38,500
+Şimdi, dolayısıyla bu yeşilden ne yaptık? Modeli, bunun hepsinden oluşturmuyoruz. Modeli nereden oluşturduk? Trenden oluşturduk. Tamam mı?
+
+93
+00:15:39,624 --> 00:15:47,423
+Yani verinin mesela %10'unu test olarak kullandıysak %90'ından oluşturdu. Tamam mı?
+
+94
+00:15:47,945 --> 00:15:58,884
+Geri kalan ne kaldı benim test setimde? %10'luk bir veri kaldı. Yani 9000 veriyle model oluşturduysam, elimde benim zaten label'larını bildiğim bir tane şey kaldı değil mi?
+
+95
+00:15:58,884 --> 00:16:06,784
+Ne yapacağım? Şimdi şunu yapabiliriz artık. Bu modele şu test setini soracağım.
+
+96
+00:16:07,432 --> 00:16:15,753
+Ve de test setimin klaslarını alacağım. Diyelim ki kaç tane var burada, atıyorum birden bine kadar.
+
+97
+00:16:17,392 --> 00:16:26,392
+Klaslarımda atıyorum pozitif, negatif olsun. Birinciyi benim modelim ne tahmin etti? Pozitif. İkinciyi pozitif, negatif, negatif, pozitif. Böyle böyle aldım.
+
+98
+00:16:29,071 --> 00:16:34,652
+Bu neyin? Bu benim modelimin tahminleri. Bir de ne var elimde?
+
+99
+00:16:37,065 --> 00:16:39,884
+Şuradaki gerçek değerler var mı?
+
+100
+00:16:44,232 --> 00:16:45,892
+Bir de gerçek değerler var.
+
+101
+00:16:50,312 --> 00:16:59,633
+Yani dedim ki gerçek değerlerde pozitif, pozitif, negatif, pozitif, pozitif, böyle böyle gidiyor. Sonra bakacağız artık. Benim doğruluk, yüzlem ne? Tamam.
+
+102
+00:17:00,633 --> 00:17:09,373
+Bu ikisinden yani benim yaptığım tahminlerle testin içindeki class table'larını karşılaştırarak ne yapıyoruz? Modelimizin doğruluğu ne?
+
+103
+00:17:12,373 --> 00:17:17,813
+Bunun İngilizcesi de ne? Eqlisi. Nasıl bulacağız?
+
+104
+00:17:20,840 --> 00:17:33,521
+Parşılıklı sayacağız değil mi? Doğru tahmin edilenler, yani artı iken artı, eksiyken eksi tahmin edilenler, bölü tüm tahminler.
+
+105
+00:17:36,873 --> 00:17:53,512
+Yani atıyorum. Tamam mı? Yani şöyle diyelim ki %79'unu doğru tahmin ettiyseniz, burada 1000 tane demiştik deminki örnekle, 1000 tane tahmin var. 1000 tane tahminin 790'ını doğru tahmin ettiniz. Yani işte bunun 500'ü artıydı.
+
+106
+00:17:57,257 --> 00:18:06,596
+500'de eksi olsun neyse. Bu 790 tanelerin içinde artı iken artı tahmin ettikleriniz ve eksiyken eksi tahmin ettikleriniz var. Tamam mı?
+
+107
+00:18:09,996 --> 00:18:12,456
+Bu oran ya, oran verir mi size zaten?
+
+108
+00:18:18,248 --> 00:18:26,869
+Ek kürsi genelde yüzdeyle gösterilir. Oran orantı yaparsan yüzde çarpı yüz yaparsın.
+
+109
+00:18:27,869 --> 00:18:28,588
+Yapalım.
+
+110
+00:18:29,929 --> 00:18:32,647
+Şimdi, tüm tahminlerin içinde ne var peki?
+
+111
+00:18:34,527 --> 00:18:42,808
+Tüm tahminlerin içinde artı iken artı tahmin ettiğiniz, doğru tahmin ettiğiniz, yani eksiyken eksi tahmin ettiğiniz bunlar da doğrular.
+
+112
+00:18:43,316 --> 00:19:10,335
+Artı artı iken eksi tahmin ettiğiniz sınıfı. Bir de eksiyken artı tahmin ettiğiniz, yanlış tahmin ettiğiniz. Bunların hepsi nerede var? Şuradaki tüm tahminlerin içinde var. Doğru tahminlerde de artı iken artı bir de eksiyken eksi. Yani doğa yaptığımız tüm doğru tahminlerin sayısı var. Buradan da ne geliyor?
+
+113
+00:19:10,869 --> 00:19:12,648
+Size bir oran gelmiş oluyor.
+
+114
+00:19:12,648 --> 00:19:13,409
+Tamam mı?
+
+115
+00:19:13,468 --> 00:19:14,429
+Şu anda % yazalım.
+
+116
+00:19:14,749 --> 00:19:16,169
+Yani işte genellikle şöyle söylüyorum.
+
+117
+00:19:16,249 --> 00:19:18,688
+Sistemimin doğruluğu %75'tir gibi.
+
+118
+00:19:19,209 --> 00:19:19,489
+Tamam mı?
+
+119
+00:19:20,089 --> 00:19:24,808
+Doğruluk dışında başka başka şeyler de var modeli değerlendirdiğimiz ama onları sonra öğreneceğiz.
+
+120
+00:19:24,989 --> 00:19:25,289
+Tamam mı?
+
+121
+00:19:25,289 --> 00:19:27,728
+Biraz classification'ı öğrendikten sonra öğreneceğiz.
+
+122
+00:19:28,249 --> 00:19:31,888
+Şimdi burasını bütün artık bütün dönem boyunca hep bunlardan bahsettik.
+
+123
+00:19:32,008 --> 00:19:33,869
+Tamam, trenimizi etmeyeceğiz, test etmeyeceğiz.
+
+124
+00:19:34,329 --> 00:19:37,108
+Dolayısıyla burada anlamadığınız yer varsa mutlaka sormayacağım.
+
+125
+00:19:40,136 --> 00:19:54,096
+Çok kısa özetliyorum hazır yazanlar yazarken. Elimde benim veri var, model oluşturacağım. Ama tüm veriyi kullanarak model oluşturursam, modelim ne kadar iyi çalışıyor bilemem.
+
+126
+00:19:54,096 --> 00:20:03,989
+Tamam mı? Dolayısıyla ne yapıyoruz? Bunun bir kısmını, bu bir kısmı önemli çünkü bazen bazı verilerde veri çok azken...
+
+127
+00:20:03,989 --> 00:20:07,607
+Sadece bir tanesini test olarak kullanıp başka bir şeyler yapıyoruz ekstra.
+
+128
+00:20:07,607 --> 00:20:14,428
+Ama genelde %20, %10 ila değişir. Test için kullanıyoruz. Ayırıyoruz yani.
+
+129
+00:20:15,268 --> 00:20:20,268
+Ayırırken de benim yaptığım gibi %10'u göstermek için aşağıdan ayırmayın.
+
+130
+00:20:21,048 --> 00:20:30,367
+Datanız nasılsa, yani şuradaki data, diyelim ki burada 5 yıllık data varsa, sadece işte sondaki %10'unu ayırırsanız ne olur?
+
+131
+00:20:32,136 --> 00:20:41,835
+Gidip son yıllık datayı test etmiş olursunuz mesela. Dolayısıyla test datayı ayırırken şöyle en sonundakileri almayın. Aradan random alın.
+
+132
+00:20:42,616 --> 00:20:51,335
+Tamam mı? Yani o %10'u seçerken içinden random seçin. Ondan sonra da ne yapıyoruz? Bu test setinde modelim ne kadar iyi çalışıyor bakıyorum.
+
+133
+00:20:51,335 --> 00:20:59,717
+Baktım çok kötü çalıştı. Çok kötü ne demek? En kötü bu model ne kadar çalışır? En kötü ihtimal.
+
+134
+00:21:02,313 --> 00:21:27,732
+İki sınıf varsa yüzde elli çalışır zaten. Değil mi? Yani hiç model yapmasanız, atsanız kafadan, random yani bir artı ya da x üretseniz yüzde elli çalışır. Değil mi? Eğer ki dağılım düzgünse, dağılım farklıysa da tanım farklı olur da. Dolayısıyla yüzde altmış çalışıyor. Vah falan şey yapmanın çok bir anlamı yok. Çok daha yüksek doğruluklarda modelimizin çalışmasını ne yapacağız? İsteyeceğiz. Tamam mı?
+
+135
+00:21:28,937 --> 00:21:32,857
+Şimdi gelelim slide'a geri.
+
+136
+00:21:36,777 --> 00:21:46,656
+Ne dedik? Model oluşturma dedik. Model construction. Nasıl oluşturacağımızı hala bilmiyoruz ama bu dersin sonunda artık sayısal olarak bir modeli nasıl oluştururuz öğreneceğiz.
+
+137
+00:21:47,437 --> 00:21:51,697
+Model yüz iç dediğimiz şey de artık bilmediğimiz, label'ını bilmediğimiz
+
+138
+00:21:52,136 --> 00:21:58,596
+obje dediği her bir satır, değil mi? Bunlara ne diyorduk? Tapu diyorduk, obje diyorduk ya da sampul diyorduk.
+
+139
+00:21:58,596 --> 00:22:07,956
+Bunlar için soruyoruz ve buradan ne yapabiliriz? Modelimizin doğruluğunu, ek kürsüsüne ne yapacağız? Tahmin edeceğiz. Tamam mı?
+
+140
+00:22:08,648 --> 00:22:19,169
+Overfitting'den zaten başka bir slide'da bahsedeceğim. Sonra diyoruz ki eğer ki Equisimiz Acceptables'a, aa iyi %85 çalıştı, %95 çalıştı, süper, probleme göre değişir.
+
+141
+00:22:19,648 --> 00:22:25,388
+Diyorsunuz ki tamam artık ben bunu müşteriye veririm, müşteri bunu kullansın diyebilirsiniz.
+
+142
+00:22:28,449 --> 00:22:35,688
+Şimdi bu da o çizdiğim, benim daha güzel çizdiğim şeyin değil tabii ki de. Modeli, Training Set, Test Set.
+
+143
+00:22:36,392 --> 00:22:44,451
+algoritma ile modeli öğrendiniz. Bunun çıktısı model. Burada da modeli uygulayarak test eti sorup doğruluk bulacağız.
+
+144
+00:22:45,793 --> 00:22:51,352
+İki tane terim var, slide'larda ve kitapta çok geçiyor. Bir tanesi induction. Induction ne demek?
+
+145
+00:22:53,545 --> 00:23:15,965
+küme varım demek ama burada birazcık daha çıkarım gibi düşünebilirsiniz. Tamam mı? Yani buradan modeli çıkartıyoruz. Burada da modeli kullanarak testte şunların tahminini yapıyoruz. Tamam mı? Yani şu iki terim geçecek derste, slide'larda da. Model oluşturdu. Yani induction terimi. Sonra bunu test et için tahminlerde kullanırken de induction terimi kullanılacak.
+
+146
+00:23:17,512 --> 00:23:21,392
+Şimdi gelelim, decision tree nasıl oluşturulur?
+
+147
+00:23:22,252 --> 00:23:27,712
+Şimdi diyoruz ki, decision tree induction, yani decision tree modeli oluşturma.
+
+148
+00:23:27,951 --> 00:23:30,951
+Decision tree'nin kendisini oluşturma aslında değil mi?
+
+149
+00:23:31,848 --> 00:23:41,628
+Baktığımız zaman ne? Decision Tree'yi oluşturmak. Decision Tree'ye birazcık baktığımız zaman diyor ki Flowchart'a benzer diyor, akış diagramına benzer diyor.
+
+150
+00:23:41,628 --> 00:23:50,188
+Ve baktığımız zaman yine tıpkı bu bir ağaç değil mi? İkili ağaç falan olmak zorunda değil. İlla kikili olmak zorunda değil.
+
+151
+00:23:50,848 --> 00:23:59,328
+Ve de her bir nodda, ağacın her bir düğümünde ne var baktığımız zaman? Bir attribute var. Attribute dediğimiz ne?
+
+152
+00:23:59,748 --> 00:24:25,369
+Her bir sütunun, her bir sütun var aslında değil mi? Dolayısıyla da baktığımız zaman, bunu oluşturacağız ama oluştururken ne gelir aklınıza? Root'ta hangi etribüt olsun? Değil mi? Tamam, roota koyduktan sonra bunları neye göre koyacağız? Çünkü bende var belki yüzlerce etribüt.
+
+153
+00:24:26,313 --> 00:24:29,753
+Dolayısıyla siz ağacınız nasıl olsun istersiniz?
+
+154
+00:24:31,873 --> 00:24:35,532
+Bir kere çok uzunluğu, lengli çok büyük olmasın değil mi ağacın?
+
+155
+00:24:35,532 --> 00:24:36,012
+Hayti.
+
+156
+00:24:36,572 --> 00:24:37,532
+Diyelim ya da.
+
+157
+00:24:37,713 --> 00:24:39,512
+Neden? Çünkü o kadar uzun sürer.
+
+158
+00:24:39,793 --> 00:24:46,232
+Ama eğer ki doğruluğu arttırıyorsa haytınız, tamam ona da razı olursun.
+
+159
+00:24:46,973 --> 00:24:49,352
+Peki, sizce iyi bir şey?
+
+160
+00:24:50,088 --> 00:24:56,449
+Şuraya koyduğumuz, bir noda koyduğumuz iyi bir attribute nasıl ayırır datayı, nasıl ayırmalı?
+
+161
+00:25:00,681 --> 00:25:27,940
+Neyse, bunu birazdan tartışalım. Tamam, şöyle bir şey baktınız. En son şunu da söyleyelim. Ağacın liflerinde, yapraklarında neler var? Burası önemli sanırım, burayı bulgulayalım. Ağacın liflerinde bizim label'larımız var. Yani tahmin etmeye çalıştığım şey var. Tamam mı? Dolayısıyla bu kitaptaki bir örnek. Müşteri geldiği zaman bilgisayar alır mı, almaz mı?
+
+162
+00:25:28,295 --> 00:25:38,516
+Yeni bir müşteri geldi, bakıyorsunuz yaşı 30'dan küçük, öğrenci mi? Evet, bakıyorsunuz bilgisayar alır gibi. Sonra model oluştuktan sonra bunu koyacağız. Çok basit bir model.
+
+163
+00:25:47,816 --> 00:25:53,576
+Tamam. Şimdi şu cümleyi okuyayım. Siz ne anlayacaksınız merak ediyorum.
+
+164
+00:25:55,236 --> 00:26:08,236
+Decision tree diyor. Conjunction'ların disjunction, yani birleşimlerin ayrımının, ama neyin üzerinde? Kısıtlar üzerinde bunu gösterir diyor. Bu ne demek?
+
+165
+00:26:16,072 --> 00:26:43,232
+Aslında şöyle gösteriyor, şu age'in içinde ya da şu student'ın içinde, student'ın baktığınız zaman hem no alanların hem yes alan kişilerin birleşimi gibi. Değil mi? Ama tersten baktığınız zaman da diyelim ki age, yaşa göre ayırdığınız zaman aslında bu bir küme, direkt 3'e ayırıyorsunuz gibi. Yani tüm kümenizi. Burada onu söylemeye çalışmış ama çok karışık. Yani şey değil.
+
+166
+00:26:44,008 --> 00:27:06,268
+Okey. Ve baktığımız zaman işte bakıyoruz buradan artık bu ağacı okusun işte yaşı 31-40 arasındaysa direkt alıyor. İşte buradan ne yapıyoruz? Herb node'a soruyoruz. Node da bize ne diyorsa o tarafa yani sağa sol ya da işte o çocuğuna giderek node'un ne olduğuna karar vermeye çalışıyoruz. Tamam mı?
+
+167
+00:27:08,307 --> 00:27:09,268
+Peki.
+
+168
+00:27:09,843 --> 00:27:34,183
+Burada hala onları anlatıyor. Yani okuyalım yine istiyorsanız. Şimdi burada anlamamızı okumayalım. Hiçbir şey demiyor çünkü. Baktığımız zaman aslında bunlar attribute'ler ve attribute'un içinde attribute'umuz kategorik olabilir mi? Olabilir. Binary olabilir. Değil mi? Bakın şurada ne yapmış?
+
+169
+00:27:35,848 --> 00:27:39,567
+Sayısal değer olabilir değil mi? Kontinüs değer olabilir mi?
+
+170
+00:27:42,633 --> 00:28:04,313
+Aslında continuous değer olabilir ama şu an ilk örnek yani continuous değerde yaptığımız şey birazcık daha farklı. Şu an diskret değerler için konuşacağız. Tamam mı? Yani burada da şöyle düşünün. 30'a kadar olanlar, işte 30-40 arası olanlar, 40'dan büyük olanlar, ikinci ya da üçüncü ders. Continuous değerlerden yani nasıl oluşturacağız onu göstereceğiz. Tamam mı? Kafamızı karıştırmasın. Her şey olabilir. Tamam mı?
+
+171
+00:28:10,120 --> 00:28:23,700
+Tekrar aşağılarda age böyleyse böyle yap gibi bir şey deme şansım var mı? Hayır yok. Niye? Çünkü o zaman algoritma zaten grid çalışacak. İyice işin içinden çıkılmaz bir hal alır.
+
+172
+00:28:23,700 --> 00:28:34,221
+Yani her attribütü bir kere notta sorarak datayı ayırmaya gideceğiz. Tamam. Şimdi bakın dataset'imiz buymuş.
+
+173
+00:28:35,112 --> 00:29:01,271
+Gördüğünüz gibi age burada şey olarak veriliyor, discrete olarak veriliyor. Yani 3 tane şey var, 30'dan küçük, 30-40 arası, 40'dan büyük şeklinde. Geliri low, medium, high. Mesela burada income'ı kullanmış mı hiç? Hiç kullanmamış, hiç oraya gelmeden diyor ki şeylerini ayırabilir, tamam mı? Classları ayırabilir. Classlarımız da ne? Şuradaki yes ve no, yani leaflerimiz.
+
+174
+00:29:01,864 --> 00:29:13,523
+Bakalım gerçekten, şuraya bakalım, 31-40 arasında low, yes, exon sayısı, zaten şu 31-40 arasıysa hop ne diyor? Otomatikman yes diyor gibi.
+
+175
+00:29:15,523 --> 00:29:20,325
+Şimdi gelelim algoritmaya.
+
+176
+00:29:21,843 --> 00:29:23,843
+Algoritma nasıl çalışır sizce?
+
+177
+00:29:23,843 --> 00:29:25,325
+Algoritma.
+
+178
+00:29:26,325 --> 00:29:28,004
+Yine kalememizi alalım.
+
+179
+00:29:31,432 --> 00:29:36,392
+Şimdi nelerimiz var? Şimdi ilk başta nasıl çalışacak bu algoritmam?
+
+180
+00:29:38,272 --> 00:29:44,053
+Nelere bakacak her seferinde? Her seferinde attribütlere bakacak değil mi?
+
+181
+00:29:44,652 --> 00:29:51,232
+Yani bu attribütü ben buna da koyayım mı koymayayım mı ona bakacak. Değil mi?
+
+182
+00:29:51,880 --> 00:29:59,300
+Ağaç olduğu için de bir yerde recursive gitmesi lazım ama bu daha çok şey, daha genel bir algoritma.
+
+183
+00:29:59,861 --> 00:30:07,459
+Şimdi diyor ki, bu attribute'lere bakarken, decision tree'imizin içinde bir attribute listim var.
+
+184
+00:30:08,181 --> 00:30:11,101
+Tamam mı? D dediğim şey de şu datanın hepsi.
+
+185
+00:30:12,719 --> 00:30:16,759
+Tamam mı? Yani tüm tuppler, tüm satırlar, tüm data bazınız gibi düşünebilirsiniz.
+
+186
+00:30:19,177 --> 00:30:35,677
+D'nin içindeki satırların hepsi C klasına aitse, bu ne demek? Bir diğer tek klas var demek değil mi? Yani etiketlerin hepsi aynı demek. Doğru mu? O zaman,
+
+187
+00:30:36,423 --> 00:30:57,964
+Return n as a leaf node labeled with class C diyor. Yani buradaki diyelim ki şu attribute'ındaki bir attribute'daki hepsi yes oluyorsa ne yapıyorum? Direkt onun leaf'ine class C'yi atıyoruz. Sonra gelelim başka bir ifime. Eğer attribute list empty ise bu ne demek?
+
+188
+00:30:59,977 --> 00:31:15,757
+Bu tüm attribute'lara baktık. Liste ya bu. Liste ya bütün attribute'lar bittiyse artık, başka yani node olarak ekleyecek attribute kalmadıysa o zaman ne yapıyoruz? Şuraya geldik. Değil mi? Bu ife girer. Bu ife girerse de ne yapıyoruz?
+
+189
+00:31:17,257 --> 00:31:37,257
+Diyelim ki elimizde, artık bir atribüt kalmadıysa ne yapacağım? Buraya yeni bir şey koyamayacağım. Ama bunu bir leaf'e bağlamam lazım. Değil mi? Dolayısıyla bunu leaf olarak alıyoruz. Leaf'e de ne koymam lazım? Bakıyorum, kalanların, elimde kalan...
+
+190
+00:31:37,909 --> 00:31:47,148
+verinin, yani şurada diyelim ki kalan verilerin çoğunluğu neyse sınıfı, majority voting de diyor o, tutup onun leaf'ine o klası atıyor.
+
+191
+00:31:47,669 --> 00:31:50,449
+Yani çoğunluğu artıysa bu artıdır diyorum.
+
+192
+00:31:51,527 --> 00:31:52,629
+Şimdi gelelim şuraya.
+
+193
+00:31:53,748 --> 00:32:01,409
+Burada attribute selection metodunu uygula diyor ve best splitting kriteriyanı bul diyor.
+
+194
+00:32:01,508 --> 00:32:01,929
+Bu ne demek?
+
+195
+00:32:02,375 --> 00:32:16,436
+Bu, attributlara bak listeden, tamam mı? Tek tek tek tek attributlara bakacağız. Birinci attribut, ikinci attribut, üçüncü attribut ve hangisi benim datamı daha iyi bölüyor ona bakacağız.
+
+196
+00:32:16,936 --> 00:32:24,856
+Best splitting criteria. Ama bunun ne olduğunu şu an biliyor muyuz? Hayır bilmiyoruz. Zaten birazdan bunu öğreneceğiz. Tamam mı?
+
+197
+00:32:25,929 --> 00:32:37,648
+Hangisi daha iyi bölüyorsa onu bul. Sonra da buradaki nodu işte bu ne demek? Atıyorum deminki şeyde age mesela yaş daha iyi ayırdıysa age'i nod olarak koy diyor.
+
+198
+00:32:39,169 --> 00:32:40,888
+Yani aslında label'la diyor.
+
+199
+00:32:42,648 --> 00:32:47,888
+Bunun label'ını bulduktan sonra da bakıyoruz. Eğer ki discrete ise değeri, continuous değilse.
+
+200
+00:32:50,280 --> 00:33:02,480
+Malteway Split dediği de, binary değil de birden fazla şey varsa, ayırıyorsa mesela yaş 36 gibi, buna Malteway Split dediği de, tamam mı?
+
+201
+00:33:02,840 --> 00:33:12,440
+Eğer buna da izin veriyorsa, izin veriyorsa şeyiniz, tamam mı? Datanız, o zaman diyor attribute listten ne yapıyoruz?
+
+202
+00:33:12,440 --> 00:33:17,000
+Bu attribute'i çıkarıyoruz artık ve ağacımıza koymuş olduk.
+
+203
+00:33:17,288 --> 00:33:29,588
+Sonra ne yapıyoruz? Yine bunun her, A'tan C için, şimdi böldü ya bu bunu, H. Artık bunu böldükten sonra her bir bölüm için, partition-lı tapos.
+
+204
+00:33:29,709 --> 00:33:37,088
+Yani diyelim ki yaş vardı burada, hatırladınız mı bir önceki şeyde? Gittim baktım, best-in-criteriyana yaş uyuyor.
+
+205
+00:33:38,268 --> 00:33:41,728
+Ne yaptı yaş? Benim şeyimi üçe ayırdı da tapolarımı, değil mi?
+
+206
+00:33:42,759 --> 00:33:54,020
+Doğru mu? Doğru. Yani işte yaşı diyelim ki küçüktür 30 olanları bir partition yaptım, 30-40 arası olanları bir partition yaptım, büyüktür 40 olanlar 3. partition oldu.
+
+207
+00:33:54,540 --> 00:34:02,719
+Yani şurada her bir partition için ne yapacağız? Yeniden ayrı ayrı subtree oluşturacağız.
+
+208
+00:34:02,719 --> 00:34:04,719
+Peki.
+
+209
+00:34:07,911 --> 00:34:34,833
+Okey, eğer ki şey yoksa, hiç onun içinde de empty ise, yani dj dediğimiz şey, tuple içinde mesela, 30'dan büyük hiç elinizde sample yoksa ne yapacağız? Direkt onun leaf'ini yine Majority Label'la vereceğiz. Ama şimdi bu karışık gibi, tamam mı? Sonra recursive olduğu için tekrar kendini böyle Attribute List'le çağıracak. Ama bu sefer Attribute List'te ne yok?
+
+210
+00:34:36,137 --> 00:34:53,137
+Benimki age'i burada buldu ya, artık age'i attribute listten çıkardı. Age olmadan işte ne vardı? İnfam vardı. Student mi değil mi? O vardı. Hani onlarla tekrar ne yapacak? Onlarla tekrar buraya gelecek. Tamam mı?
+
+211
+00:34:53,137 --> 00:35:01,816
+Şimdi bir şeye bakalım. Şu splitting kriteriyi nasıl buluyor? Ona bakalım. Sonra bu algoritmayı tekrar üzerinden geçelim. Tamam mı?
+
+212
+00:35:03,976 --> 00:35:05,376
+Hepsini, hop, see.
+
+213
+00:35:08,356 --> 00:35:12,856
+Şimdi, diyor ki burada bakın, select best diyor.
+
+214
+00:35:12,995 --> 00:35:16,177
+Yani diyor ki find the best splitting criterion diyor.
+
+215
+00:35:16,235 --> 00:35:20,235
+Şu dataya baktığımız zaman, hiç görmüyorsunuz ben size söyleyeyim.
+
+216
+00:35:20,596 --> 00:35:24,476
+Burada age var. Şöyle yaparsak görür müsünüz? Daha iyi mi? Evet.
+
+217
+00:35:25,816 --> 00:35:29,856
+Şimdi amacımız bakın kaç tane attributum var? Dört tane. Değil mi?
+
+218
+00:35:30,409 --> 00:35:41,749
+Bunların hangisi best splitting'dir? Nasıl bilirsiniz? Yani şöyle olursa best splitting olur dediğiniz ne var? Söyleyin.
+
+219
+00:35:46,057 --> 00:36:00,456
+Yani şöyle mi? Diyelim ki atıyorum student, atamıyorum. Diyelim ki student 5 yes buraya, 5 no buraya gelirse mi iyidir? Neden?
+
+220
+00:36:05,224 --> 00:36:07,004
+Ağacı mı dengeli yapar?
+
+221
+00:36:19,400 --> 00:36:38,160
+Evet. Yani şöyle, diyelim ki buraya bir şey seçtiniz. %99'unu buraya atıp %1'ini buraya atıyorsa bu iyi bir şey midir? Değildir. Değil mi? Güzel. Tamam. Şimdi. Neydi?
+
+222
+00:36:43,111 --> 00:36:45,312
+Bir daha sonra bir dakika ki konusu geri alabiliyorum.
+
+223
+00:36:45,312 --> 00:36:52,652
+Eğer yapacağınız sonuçta oyuncu dönemiz için deyiz, beklediği sadece değil, birer bütün helaliyetin.
+
+224
+00:36:58,409 --> 00:37:23,708
+Daha iyisi varsa, şimdi sayısal olarak tartışacağız. Şu an cevabını vermiyorum. Tamam mı? 99'a bir mi iyidir, yoksa diğeri mi iyidir? Cevabını vermiyoruz. Şimdi bakalım. Age'e baktığımız zaman. Mesela, age olsa diyor. Baktık, age 30'dan küçükse 3 tane no var, 2 tane ye var. Burada hep c-s var.
+
+225
+00:37:24,263 --> 00:37:49,944
+Burada da yes, yes, no, yes. Yani kaç? 3 yes, 2 no var. Şimdi h iyi midir? Bilmiyorum ki ben ne bileyim şimdi. Bilmiyorum. Peki. Tamam. Bunların hepsi yes dedi mi yes. Direkt naive'e bağlayabiliriz algoritmayı. Peki. Şimdi bakın ne oldu algoritmada? Artık şurayı en iyi ayıranı bulmam lazım.
+
+226
+00:37:50,409 --> 00:37:57,949
+Ne yapacağız? Yine bu sefer in, come, out, student'a. Bunlara tek tek tek tek bakıp hangisi best onu bulmam lazım.
+
+227
+00:38:00,808 --> 00:38:06,048
+Student'dan ayırırsa, bakın student'un no olup, aç şuradan, pardon.
+
+228
+00:38:08,569 --> 00:38:15,369
+Student'lar noysa, Bayes'te neymiş? Noy'muş, değil mi? Dolayısıyla
+
+229
+00:38:16,008 --> 00:38:18,749
+Buradaki etiketlerin hepsine geliyor.
+
+230
+00:38:21,289 --> 00:38:27,888
+Ne oluyor? Dolayısıyla student'ı buraya koyduğu zaman otomatik ayırmış oluyor mu? Evet, oluyor.
+
+231
+00:38:31,816 --> 00:38:40,795
+Şimdi buraya bakalım. Bunu nereden ayıracak? Yine student'dan ayırsa no yes, yes yes, no no ama bir tane no yes var.
+
+232
+00:38:42,197 --> 00:38:49,896
+Income'dan ayırsa medium yes, medium yes, medium no yine bir tanesi bozuyor. Credit'den ayırsa fair'lar hep yes.
+
+233
+00:38:51,516 --> 00:38:56,956
+Exant'lar da no. O zaman credit'den de bunu ayırsın. Gerçek hayatta böyle oluyor mu?
+
+234
+00:38:57,385 --> 00:39:09,324
+Olmuyor. Siz bir tri yaptığınız zaman bunu böyle yüzde yüz yani yaptığınız model, oluşturduğunuz model sizin training setinizin üzerinde bile yüzde yüz çalışmıyor.
+
+235
+00:39:24,777 --> 00:39:38,416
+Ama şeyi anlatmadım daha, niye bunları seçtik? Sayısal olarak nasıl seçeceğiz? Biz gözümüzle baktık, saydık, iyi dedik. Değil mi? Biraz anlatayım, sonra bir daha soru. Okey mi? Hiç anlamadım soruyu.
+
+236
+00:39:53,641 --> 00:39:59,481
+Multi-Veys Split var senin böyle. Yok öyle bir şey yok. Çünkü bu direkt yes gelmeyebilir.
+
+237
+00:40:01,740 --> 00:40:10,920
+Anladın mı? Burada yes geldiği için bir anda sanki ağacımızın daha böyle daha yüksekliği az gibi gelir gibi geliyor ama değil.
+
+238
+00:40:11,061 --> 00:40:14,061
+Çünkü burada bir daha yes ne olsa burada bir daha dallanacak, bir daha dallanacak.
+
+239
+00:40:14,859 --> 00:40:21,240
+Her zaman yani böyle Multi-Veys Split'ler daha Ruhut'a yakın olsun diye bir şey yok. Bu çok şey.
+
+240
+00:40:21,641 --> 00:40:38,620
+For example dediklerinden bir şey. Peki, nelereyi ayırt burada? Eğer attribute, bir attribute yani mesela şu student, değil mi? Student'ın çıktısı direkt no'ları ve yes'leri.
+
+241
+00:40:40,199 --> 00:40:52,101
+Pat diye ayırıyorsa, mesela bu kredi şey ayırmamıştı değil mi burada mesela? H, böyle pat diye buraya yes, yes, no diye bir şey gelmedi. Hiç diğerlerine bakmasaydı. Değil mi? Böyle bir şey gelmedi.
+
+242
+00:40:52,840 --> 00:40:59,199
+Dolayısıyla da burada student'a ben neden A ne güzel ayırıyor dedik. Ya da burada kredi treti...
+
+243
+00:41:07,849 --> 00:41:11,308
+Bir tarafta topladı. Buna da ne diyeceğiz?
+
+244
+00:41:13,008 --> 00:41:15,808
+Diğeriye bir hal oldum. Şimdi şunlara geçeyim.
+
+245
+00:41:17,031 --> 00:41:40,031
+Neyse geçemeyeceğim. Sonra geçerimden daha zor olacak. Peki, traininginizi nasıl ayırdıreceğiz? Şimdi burada birkaç tane metot var. Tamam mı? Buna splitting, ayırma kriterlerimiz ne? Bu, attribute'un tipine göre değişir. Yani sizin attribute'unuz nominal mi, şey mi buna göre değişir. Tamam mı? Ve de neler var? Bizim sayısal olarak...
+
+246
+00:41:40,520 --> 00:42:03,221
+Neye yani bu ne kadar iyi ayırır? Her bir attribute ne kadar iyi ayırır? Çünkü select best attribute demiş. Ne kadar iyi ayırır? Bunu sayısal olarak göstermem lazım. Bunu göstermenin de birkaç tane yolu var. Ne gibi? Giniindex gibi ya da işte information, gain entropy gibi yöntemler var. Onlara bakacağız. Tamam mı? Peki.
+
+247
+00:42:05,065 --> 00:42:12,525
+Ne zaman, tamam ayırdım ayırdım, yüzlerce attribüt var, ayırmaya devam ediyorum ama ağacım da büyümeye devam ediyor.
+
+248
+00:42:14,204 --> 00:42:24,365
+Yani çok çok büyük ağaçlarla böyle çok başarılı modeller oluşturmak da bazen iyi olmayabilir.
+
+249
+00:42:25,045 --> 00:42:32,525
+Ağacım daha küçük olsun, daha hızlı çalışsın diyebiliriz. O yüzden bazen az şeyi, az hatayı tolere etmesini isteyebiliriz.
+
+250
+00:42:32,647 --> 00:42:44,548
+Bir. İkincisi de ne zaman algoritma duruyor? Eğer bir tapıl kalmadıysa duruyor değil mi? Bakacağınız tapıl kalmadıysa onun içindeki. Hepsi ayrıldıysa bir duruyordu hatırlarsanız.
+
+251
+00:42:45,208 --> 00:42:56,869
+Ya da bütün o sınıfa gelenlerin hepsi, oraya gelenlerin hepsi zaten aynı plus'taysa direkt onu link yapıyordu. Bir daha işte o ağaç recursive olarak giderken orada ne yapmıyordu bir şey bulmuyordu.
+
+252
+00:42:56,869 --> 00:42:57,808
+Tamam mı?
+
+253
+00:42:59,288 --> 00:42:59,588
+Okey.
+
+254
+00:43:02,120 --> 00:43:12,840
+Dediğimiz gibi split kriteri, yani hangisini node olarak belirleyeceğimiz, hangi attribütü node olarak belirleyeceğimizin kriteri, attribute'un tipine göre değişir.
+
+255
+00:43:14,001 --> 00:43:17,879
+Attribütlarımız binary, nominal, ordinal ya da continuous olabilir.
+
+256
+00:43:18,520 --> 00:43:19,001
+Tamam mı?
+
+257
+00:43:19,859 --> 00:43:25,199
+Ve de bir attribütü tipini var, bir de bakın burada ne var, number of ways to.
+
+258
+00:43:25,641 --> 00:43:43,800
+Eğer iki lağç yapıyorsanız, yani iki aslında iki klasınız varsa, yani age öyle demeyelim de, içinde iki tane değer varsa kategorik değeriniz, tamam mı öyle söyleyelim, yani işte student mi, evet mi, hayır mı gibi, bunlara binary split deniyor ya da two-way split deniyor.
+
+259
+00:43:44,520 --> 00:43:50,921
+Eğer ki sizin attributunuzun içindeki değer ikiden fazlaysa da multi-way split deniyor.
+
+260
+00:43:55,624 --> 00:44:12,224
+Burada da işte mesela işte bu multi-way split iken bu da binary split. Algoritmaya göre yani algoritmanız multi-way split de yapabilir, binary split de yapabilir. Tamam mı? Bu da algoritmanın algoritmaya değişiyor. Yani bir tane decision tree oluşturma metodu yok.
+
+261
+00:44:12,647 --> 00:44:24,647
+Çok fazla metot var. Mesela classification regression tree algoritması ya da ID3 algoritması gibi yöntemler var. Bu yöntemlerde ne yapıyor?
+
+262
+00:44:27,048 --> 00:44:38,748
+Sizin attribute'in tipine göre ya da kullandığı geniindeks mi kullanacak, ondan sonra entropi mi kullanacak ona göre ne yapıyor? Değişiyor.
+
+263
+00:44:40,137 --> 00:44:53,856
+Geçtim bunları. Tamam. Şimdi şurayı tartışalım. Sıkıldınız mı? Az daha sıkılmayın. Tamam. Şurayı tartışalım, sonra sıkalım. Burası önemli.
+
+264
+00:44:55,496 --> 00:45:06,395
+Split'i nasıl bulacağız? Şu aynı deminki datamız. Deminki datamız. Tamam mı? Öğrenci datamız.
+
+265
+00:45:06,856 --> 00:45:19,197
+Şimdi dört tane yani ilk node'a dört tane şey koyabilirim değil mi? Ruta. Age koyabilirim. Income, student ya da kredi durumunu koyabilirim. Bunlardan hangisi daha iyidir?
+
+266
+00:45:19,197 --> 00:45:30,517
+Şimdi bakalım age'i koysak tamam mı? Age'de yani toplam benim şurada şu classlarım yani labellarıma baktığım zaman
+
+267
+00:45:31,304 --> 00:45:44,464
+3, 6, 9 tane yes var, 5 tane de no var. Tamam mı? Topla. Bakarsanız 9 tane artı dedi, 9 tane yes, 5 tane de eksi var.
+
+268
+00:45:45,744 --> 00:45:53,204
+Şimdi bunların her biri, yani age, bu artları ve eksileri nasıl ayırmış? Mesela.
+
+269
+00:45:53,673 --> 00:46:06,813
+36, işte baktığımız zaman 30 yaş altı, 30-40 arası 40'tan büyük var ya, o böyle derse 2 artı buraya, 2 yes buraya, 3 no buraya, 4-0, 3-2 diye ayırmış.
+
+270
+00:46:07,392 --> 00:46:17,112
+Eğer ben income'ı kullanırsam, income low, medium, high diye gidiyor. 3-3 yes, 1 no, 4-2, 2-2 diye ayırmış.
+
+271
+00:46:19,304 --> 00:46:32,224
+student olup olmamasına göre Bayes'i böyle ayırmış. Şimdi bunlardan hangisi iyi? Amacım best tip için olanı bulmak ya, bunlardan hangisi daha iyi? Nasıl karar vereceğiz?
+
+272
+00:46:34,544 --> 00:46:37,884
+Buna bakıyoruz. Sizce hangisi daha iyi?
+
+273
+00:46:43,048 --> 00:47:04,127
+Şunlar birbirine yakın olsa sayılar. Eşit eşit olsa mı daha iyi? Yoksa şununki gibi olsa mı daha iyi? 4'e 0 daha iyi. Niye daha iyi? Direkt ne yapacağız? Bunu direkt naive bağlayabileceğiz. Tamam mı?
+
+274
+00:47:04,127 --> 00:47:05,968
+Şimdi.
+
+275
+00:47:07,968 --> 00:47:08,968
+Ne?
+
+276
+00:47:11,431 --> 00:47:26,453
+Sayısal olarak bakacağız, onlardan bir tanesini sekeceğiz. Sayısal yani böyle dörde sıfır demeyeceğiz, şunlardan şunlardan bir sayısal metrik elde edeceğiz. Ona göre algoritmamızla bakın greedy çalışıyor. Greedy algoritmalar nasıl çalışır?
+
+277
+00:47:29,545 --> 00:47:44,984
+Adım adım gider, değil mi? Adım da açgözlü bir şekilde bakar, bir metri vardır, işte o an minimumu alacaksa hesaplar hesaplar, o anki minimum neyse onu seçer. Hep lokal, yani lokal minimum neyse ya da o anki lokal best neyse onu seçer. Global.
+
+278
+00:47:45,736 --> 00:48:05,316
+Minimum bulacaksan sen global minimuma bakmazsın. Tamam mı? Bu da ne yapıyor? Grid approach ile çalışıyor. Dolayısıyla da yani bulduğunuz tri gerçekten en optimum tri olmayabilir. Ama ne istiyorsunuz? Hızlı çalışsın. Hani iyi kötü bir tri versin istediğimiz şey bu zaten.
+
+279
+00:48:13,415 --> 00:48:40,636
+tercih edilir. Ne demek bu? Homojen olanda ne olacak? Aynı sınıftan daha çok olacak. Yani yes no vardı ya, bakın şu homojen 9 tane artı varken bir tane, yani 9 yes varken bir tane no var. Değil mi? Daha çok içinde aynı plastan var, homojen. Ama buraya baktığımız zaman 5 yes, 5 no var. Bu homojen değil.
+
+280
+00:48:41,192 --> 00:49:05,192
+Ve hangisi yani pure, saflık gibi düşünebilirsiniz belki. Tamam mı? İmpüriteden tersi. Dolayısıyla bunun impüritisi daha azken, bununki daha çok. Değil mi? Dolayısıyla algoritma hangisini tercih edecek? Homojen olanın. Tamam mı? Çünkü bunu zaten beşe beş...
+
+281
+00:49:06,313 --> 00:49:24,293
+Yani zaten bir üsttekinde de 5'e 5 gibi bir şey var müstemelen. Tamam mı? Üstteki node da, parent node da. Onu tekrar 5'e 5 ayırmak, yani ikiye ayrıldığı için 5'e 5 değildir müstemelen ama yine böyle homojen olmayan, homojen olmayan ayırmak bize çok bir şey sağlamayacak.
+
+282
+00:49:32,067 --> 00:49:39,448
+Homojen değil, bunu nasıl ölçeceğiz? İşte bunları entropi, gene index gibi şeylerle ölçeceğiz. Ara istiyor musunuz? Devam edelim.
+
+283
+00:49:40,948 --> 00:49:47,668
+Devam edelim dediniz değil mi? E tamam hadi yüzünüzü yıkayın gelin, şimdi formüller işin içine girecek.
+
+284
+00:49:51,028 --> 00:49:59,127
+Onlinelar, ara veriyoruz. Kaç geçe? Beş geçe iyi mi? Beş geçe buluşalım. Tamam mı?
+
+285
+00:50:00,647 --> 00:50:02,429
+Yoklama mı aldı?
+
+286
+00:50:03,808 --> 00:50:05,468
+Tamam, hadi görüşürüz.
+
+287
+00:50:06,748 --> 00:50:09,227
+Bir sonraki linkten bağlanırız, beş geçe, bay bay.
+
+288
+00:50:12,455 --> 00:50:34,995
+Öyle değil, öyle değil, bak. Olay ne biliyor musun? Şurada 9-11-50 ya, bu böyle çıkmıyordu eskiden. Yani 9-10. Şimdi tekrar birleşmişler. Ama böyle dediğimiz için şey olabilir, eski kayıt silinebilir. Yok, çok şey yok.
+
+289
+00:50:35,995 --> 00:50:38,855
+Okey, hoş geldiniz online'lar.
+
+290
+00:50:42,117 --> 00:50:45,299
+Nasıl bir şey acaba? Ne yapıyorlar şu anda online'lar?
+
+291
+00:50:48,159 --> 00:50:52,358
+Kahvaltı yapıyorlardır, şey oluyor, Müge Han'ı izliyorlardır.
+
+292
+00:50:54,659 --> 00:50:57,077
+Ama çalışan da vardır iş yerinde.
+
+293
+00:50:58,278 --> 00:51:00,598
+Belki bir not alarak dinleyen de vardır.
+
+294
+00:51:01,498 --> 00:51:02,119
+Yok ya, mesela...
+
+295
+00:51:02,855 --> 00:51:24,014
+Bir kere ben dinleyeyim dedim dersimi. Öğrenci bir şey sormuş hocam şuradaki şeyi anlamadım diye. O kadar sıkıcı ki dedim dakika ne, dakikayı gönder izleyemeyeceğim. Kayıttan izlemek de kötü. Canlısını bilemiyorum o da kötü olabilir de. Kayıttan izlemek bir de cırtlak çıkıyor sesler çok fena. Dinleyin.
+
+296
+00:51:32,070 --> 00:51:39,850
+Bilemiyorum, zormuş kayıtta. Yani kayıttan dinlemekte. Evet ama online'lar dinliyoruz hocam yazmışlar. Tamam, hadi bakalım.
+
+297
+00:51:41,490 --> 00:51:47,770
+O zaman şey söyleyeyim, vizede kesin şey gelir. Bununla ilgili şey gelir, tamam.
+
+298
+00:51:49,130 --> 00:51:53,029
+Ne yaptık? Başlıyorum derse. Hazır mıyız?
+
+299
+00:51:56,487 --> 00:52:09,085
+Ay şu çocuğu kaldırın. Dur. Kalk kalk. Ders başlıyor. Tamam. Adın neydi? [öğrenci]. Tamam artık unutmam [öğrenci].
+
+300
+00:52:10,227 --> 00:52:22,186
+Yok ya o soru soruyor o iyi. O hep dinliyor. Uyuyabilirsin. Ne dedik? Nereden ayırsak iyi olur dedik. Best split'i nasıl buluruz dedik değil mi? Ve de şurada önemli bir şey söyledik.
+
+301
+00:52:22,983 --> 00:52:45,521
+Purity diye bir şeyden bahsettik ve aynı zamanda homojenlik de diyebiliriz buna. Biz nasıl ayırmasını isteriz? Homojenliğin fazla olmasını isteriz. Değil mi? Ve de şu şekilde homojen olmayan durumun olmaması. Yani şu non-homojen olan değil de hangisini tercih ederiz? Şunu tercih ederiz. Değil mi?
+
+302
+00:52:47,878 --> 00:52:59,638
+Şimdi burada nerede kafa karıştı? Mesela ilk sorduk ya, %99'unu bir tarafa atsa, biri bir tarafa atsa diye. Hatırladık mı? Şimdi onunla bu çelişti mi, çelişmedi mi?
+
+303
+00:53:03,141 --> 00:53:17,283
+Çelişmedi. Çünkü bakın bu şey değil. Bu içinde ne olduğu gibi. Yani içinde 5 artı 5 eksi var. Tamam mı? Ayırdığımız zaman bir tarafa ayrılmayacak yani aslında.
+
+304
+00:53:23,622 --> 00:53:38,301
+Evet, evet, aynen, klaslar yani en sonunda şurada tabloda yes, no vardı ya, by yes, no. Direkt o geliyor. Leafler gibi düşünebilirsiniz. Ama leaf olmayacak da çünkü ağaç bilmeye devam edecek. Tamam mı? Yani her ayı çığlıkta leaf olmuyor.
+
+305
+00:53:38,902 --> 00:53:47,421
+Tamam, diyoruz ki, mesela burada yine üç adımlık bir işimiz var. Bir, bizim impurity majorımız neyse,
+
+306
+00:53:48,677 --> 00:53:57,698
+Daha split yapmadan önce onu hesaplıyoruz. Yani şuraya baktığımız zaman, burada, bu ikisi aynı şeyi tekabül etmiyor ama şurası ediyor.
+
+307
+00:53:58,359 --> 00:54:07,758
+Şimdi hiç daha ayrılmadan, diyelim ki daha ilk root'u bulmaya çalışıyorum. Dedik ki burada 9 tane yes var, 5 tane de no var dedik. Değil mi?
+
+308
+00:54:08,677 --> 00:54:11,997
+Daha hiç ayırmadan önce ne yaptık? Bunu hesapladık.
+
+309
+00:54:11,997 --> 00:54:13,718
+Tamam mı?
+
+310
+00:54:13,890 --> 00:54:26,429
+Birinci adım o. Yani sadece daha hiç şuraya bakmadan, age mi, income mı, student mu, credit mi ona hiç bakmadan, sadece classlara bakarak, üstte yani root için konuşuyorum.
+
+311
+00:54:26,890 --> 00:54:37,590
+Dedim ki 9 tane yes var, 5 tane de no var. Class table'larında. O zaman ne yaptım? İlk olarak oradan impurity measure'ımı hesapladım ama şu anda nasıl hesapladığımı bilmiyorum.
+
+312
+00:54:40,359 --> 00:54:51,359
+İki. İki de ne yapıyorum? Ben buradan ayırırsam eğer, split edersem yani bu attribütü ağacın bir düğümü olarak, nod olarak kullanırsam ağacınki de düğüm mü deniyor?
+
+313
+00:54:52,018 --> 00:55:01,597
+Nodun şeyi ne? Düğüm değil mi? Ne? Düğüm. Doğru, tamam. Düğüm olarak ayırırsak ne oluyor?
+
+314
+00:55:02,118 --> 00:55:08,198
+Laf yaparsak her child'ın bu sefer infriti mevcudunu ölçüyoruz.
+
+315
+00:55:10,198 --> 00:55:21,078
+Ve de iki tane child olabilir, üç tane child olabilir. Her child'ınkini ölçtük ya, bunlarınkinin ağırlıklı olarak infritisini hesaplıyoruz.
+
+316
+00:55:22,678 --> 00:55:26,979
+Sonra da bu ikiyi aslında her bir atribüt için yaptık.
+
+317
+00:55:27,974 --> 00:55:38,933
+Sonra da diyorum ki gain dediğim şey split yapmadan önceki P ve her bir attribute için P-M diye bakıyorum.
+
+318
+00:55:39,193 --> 00:55:45,674
+Buradan eğer split yaparsam ne olur? Ne yapmaya çalışıyorum? En yüksek gain'i bulmaya çalışıyorum.
+
+319
+00:55:47,313 --> 00:55:52,373
+Tamam mı? Peki P hep sabit mi? Mesela ruta bakarken. Evet, aynı.
+
+320
+00:55:52,998 --> 00:56:06,157
+Dolayısıyla bunun en yüksek olması için şu M dediğimiz şey, impurity measure'ın ne olması lazım? Işık olması lazım. İlla çıkartma yapmamızda sürekli gerek yok. Mesela root bulurken.
+
+321
+00:56:07,758 --> 00:56:19,178
+Tamam ya da bu da demiş ki işte or equivalent the lowest impurity measure, lowest M'yi veren. Şimdi gelelim şuraya. Şimdi peki bunu nasıl yapacağız?
+
+322
+00:56:20,327 --> 00:56:34,426
+Yapmanın birkaç yolu var. İlk olarak information gain ile başlayacağız. Gain ratio buna çok benziyor. En sonunda da Gini index'e bakacağız. Yani 3 farklı yol göreceğiz. Skor hesaplamak için.
+
+323
+00:56:34,426 --> 00:56:47,847
+Şimdi ilkine measure of impurity de entropy. Entropy ne demek? Şimdi entropy aslında information teoriden geliyor. İşte bu sinyallerde vesaire yani çok.
+
+324
+00:56:48,263 --> 00:57:03,743
+teorisi eskiye dayanıyor. Tamam, bununla ilgili şurada bir şeyimiz var. Information theory, şurada iyi eksik. Diyor ki, siz, genellikle bunlar şeyden çıkmış, Shannon Trenum falan da buradan çıkmış.
+
+325
+00:57:07,239 --> 00:57:12,818
+Sinyal için kullanılmış ya da işte veri için kullanılmış ama veriyi daha az bitle nasıl gösterirsiniz?
+
+326
+00:57:13,359 --> 00:57:18,618
+Tamam mı? Yani nasıl, az bitle nasıl daha çok veri taşırım?
+
+327
+00:57:19,097 --> 00:57:21,998
+Onu da verinin dağılımına göre hesaplayıp yapmışlar. Neyse.
+
+328
+00:57:22,577 --> 00:57:27,058
+Tamam, şeyi oradan geliyor ama teorisi daha karışık. Oraya girmeyeceğim.
+
+329
+00:57:27,058 --> 00:57:31,138
+Ama şöyle bir şey, baktığımız zaman entropi şu demek.
+
+330
+00:57:34,118 --> 00:57:38,739
+Pozitif klas olsun. Tamam mı? Yes'ler. Eksiler de no'lar olsun.
+
+331
+00:57:40,739 --> 00:57:45,779
+P dediğim şey, yani P artı dediğim şey, pozitif klasın oranı.
+
+332
+00:57:49,510 --> 00:57:53,491
+Eksi dediğim şey de negatif olanın oranı gibi düşünebilirsiniz.
+
+333
+00:57:54,390 --> 00:57:56,931
+Niye burada eksi eksi var başında ve sonunda?
+
+334
+00:58:02,311 --> 00:58:03,030
+Soru.
+
+335
+00:58:03,911 --> 00:58:04,931
+Şurada bir eksi var.
+
+336
+00:58:05,851 --> 00:58:06,931
+Şurada da eksi var.
+
+337
+00:58:07,111 --> 00:58:08,710
+Niye böyle bir şeyin entropisi?
+
+338
+00:58:09,291 --> 00:58:12,611
+Baktığım zaman mesela pozitiflerin ne yapmış?
+
+339
+00:58:12,611 --> 00:58:15,611
+Yok iki tabanında pozitif çarpı.
+
+340
+00:58:16,198 --> 00:58:23,638
+T artı demiş, sonra bir de T eksi log 2 tabanında negatifler demiş, negatiflerin oranı demiş.
+
+341
+00:58:28,775 --> 00:58:29,775
+y- var.
+
+342
+00:58:35,111 --> 00:58:46,890
+Log-2 tabanı nasıl çalışır? Log-2 tabanında bir şey oran. Burası kesir gelecek değil mi? Yani kesir gelmese bile kesirden en fazla bir gelecek.
+
+343
+00:58:48,050 --> 00:58:54,150
+Burası kesir olursa bu size nasıl bir değer verir? Log-2 tabanında kesir negatif verir değil mi?
+
+344
+00:58:55,047 --> 00:59:02,506
+Şu değerler negatif olduğu için bu o yüzden onların önünde negatif var. Tam aslında negatif değerleri topladığı için.
+
+345
+00:59:03,506 --> 00:59:10,486
+Ne yapıyor? Burada bir şey yapmıyor. Sadece log 2 tabanında kaç tane pozitif oransal olarak var?
+
+346
+00:59:12,187 --> 00:59:17,746
+Eksi dediğini artı olarak düşünebilirsiniz. Yani toplayacak aslında bu artıya dönüşecek. Log 2 tabana eksik geldiği için.
+
+347
+00:59:18,187 --> 00:59:20,765
+Bir de kaç tane negatif oranı var? Bunlara bakmış olacağız.
+
+348
+00:59:21,991 --> 00:59:25,731
+Hemen örneğimize bakalım. Yazan var galiba yazın.
+
+349
+00:59:31,399 --> 00:59:36,799
+İnsanın da tahtaya yazası geliyor. Şey yapınca. Yazalım mı?
+
+350
+00:59:36,799 --> 00:59:37,799
+Tamam.
+
+351
+00:59:37,799 --> 00:59:41,597
+Onlaller, tahtaya sadece şunu yazıyor, tamam mı?
+
+352
+00:59:45,799 --> 00:59:46,495
+Evet.
+
+353
+00:59:49,543 --> 00:59:52,621
+Ne var önümde? Eksiler geldi.
+
+354
+01:00:07,909 --> 01:00:08,270
+Hı?
+
+355
+01:00:09,850 --> 01:00:10,789
+Ben söyleyelim.
+
+356
+01:00:11,730 --> 01:00:12,510
+Ölç istedim.
+
+357
+01:00:13,069 --> 01:00:14,049
+Ayıma da bu büyük yerin.
+
+358
+01:00:15,970 --> 01:00:20,809
+O büyük P. Tamam mı? O da büyük P. Bu sadece oranını çıkartacağız buradan.
+
+359
+01:00:20,970 --> 01:00:26,169
+Yani şurada proportional, positive examples var ya, positive, negative de class gibi düşünebilirsiniz.
+
+360
+01:00:26,350 --> 01:00:33,130
+A klasıyla B klası varsa A klasındakilerin oranı, B klasındakilerin oranı gibi düşünebilirsiniz. Tamam mı?
+
+361
+01:00:35,462 --> 01:00:36,241
+Bir daha söyle.
+
+362
+01:00:44,198 --> 01:00:47,558
+de altında Türkiye artıları olan bir
+
+363
+01:00:47,558 --> 01:01:10,519
+o
+
+364
+01:01:18,501 --> 01:01:32,141
+Şimdi burada entromülü koymuş bakın. Bu entropi diyelim ki 12 tane artı varmış, 5 tane de eksi varmış. Yani şöyle düşünün, 12 tane yes varmış en son satırda düşünün.
+
+365
+01:01:32,521 --> 01:01:44,481
+5 tane de ne varmış? No varmış gibi düşünebilirsiniz. Toplam kaç tane var? 17. Formülde koyduğunuz zaman eksi 12 bölü 17, logik tabanında 12 bölü 17.
+
+366
+01:01:45,095 --> 01:02:10,255
+Eksi 5 bölü 17, o iki tabanında 5 bölü 17 ne çıkıyor? 0 nokta, işte 8 küsur çıkıyor. Tamam mı? Şimdi şuraya bakalım, bu nasıl çıkmış? 8 yes var, 8 no var. Değil mi baktığımızda? Yine aynı şekilde toplam 16 olduğu için oranlar yani 1 çıkmış. Eşit dağılıyor.
+
+367
+01:02:10,693 --> 01:02:30,914
+Bu da 8'e 0. Hangisi? Hangisinin homojenliği daha yüksek? Şunun, değil mi? Bununkine çıkmış baktığımız zaman 0 çıktığını görebiliyoruz. Zaten ne olabilir entropi? Minimum 0 olabilir, maksimum da 1 olabilir.
+
+368
+01:02:33,414 --> 01:02:37,134
+Şurada nasıl? Entropinin log'dan dolayı 0, 1 arasında.
+
+369
+01:02:37,650 --> 01:02:55,230
+Sıfırla bir arasında gidebileceğini gösteriyor. Şu kafanızı karıştırmasın. Fa ile kafayı karıştırmıyor. Tamam mı? Bu da arkadaşımızın demin sorduğu. Sadece yes, no olmayabilir. Tamam mı? Class'ta birden fazla class'ımız olabilir. O zaman ne yapacağız? Kaç tane varsa?
+
+370
+01:02:56,294 --> 01:03:05,715
+Aynı şekilde devam edecek denklem. Yine ama oranlarda toplam oranı alacağız. Yani A, B, C, D varsa bölerken toplam kaç tane varsa onu alacağız.
+
+371
+01:03:06,595 --> 01:03:12,715
+Tamam. Peki log 2 mi olacak o zaman yoksa şey mi olacak? Kaç tane klas varsa o mu olacak?
+
+372
+01:03:14,095 --> 01:03:20,355
+Log 2'de devam edeceğiz tabii ki. Çünkü o tamamen encoding'i ölçtüğü için geçelim.
+
+373
+01:03:21,895 --> 01:03:22,495
+Peki.
+
+374
+01:03:23,654 --> 01:03:47,454
+Şimdi, şu ne demek? Entropi, ne görmüş olduk? Bu ne demek? Bu aslında, expected information, yani bu şey, buradaki verinin içinden bu veri ne kadar bilgi taşır? Bana onu gösterir. Tamam mı? Ve benim amacım ne?
+
+375
+01:03:47,923 --> 01:04:00,043
+Amacım şu. Şimdi bunu bölmek değil mi? Yani şöyle anlatayım. Şimdi elimde bir root var. Yani root olmak zorunda değil. Bu lift içinde aynı şeyi yapacağız.
+
+376
+01:04:00,702 --> 01:04:08,102
+Diyelim ki bunu iki şeye böldük. Değil mi? Şimdi ilk başta baktığımız zaman buradan bir entropi çıkartacağız.
+
+377
+01:04:08,102 --> 01:04:14,482
+Peki böldükten sonra bir de buradan bunu eğer bunu kullanarak bölersem.
+
+378
+01:04:14,567 --> 01:04:19,866
+Ne kadar buradan elimde entropi olur bir de o çıkmış olacak. Doğru mu?
+
+379
+01:04:20,587 --> 01:04:32,227
+Dolayısıyla info D dediğimiz şey bizim elimizde daha hiç şey yapmadan, bunu kullanmadan buradaki var olan bilgi, tüm bilgi bunun içinde. Tamam mı?
+
+380
+01:04:33,167 --> 01:04:36,006
+Ondan sonra da ne yapıyorum bakın.
+
+381
+01:04:37,831 --> 01:05:04,111
+Buradan eğer ki diyelim ki 2'ye, 3'e, kaç'a ayırırsanız, tamam mı? Bunu yine ama ne yapıyorum? Bu ağırlıklı ortalama alıyor, bir şey yapmıyor. Ona göre ayırdım ya, diyelim ki şurası işte birinci çocuk olsun, ikinci çocuk olsun. Birinci çocuktan gelenin ağırlıklı ortalaması ve ikinci çocuktan gelenin ağırlıklı ortalamasını hesaplıyorum. Tamam mı? Ve de bakıyorum.
+
+382
+01:05:04,711 --> 01:05:14,510
+Şimdi tüm entropiden şunların ortalamasının toplamını çıkarttığım zaman benim elimde ne oluyor? Information gain oluyor. Bilgi kazancı oluyor.
+
+383
+01:05:15,310 --> 01:05:28,711
+Ne istiyorum? Gainimin maksimum olmasını istiyorum. Değil mi? Dolayısıyla tek tek deneyeceğim attributları ve hangisi bana en fazla gain verirse diyeceğim ki
+
+384
+01:05:29,255 --> 01:05:42,314
+Tamam, bu en uygun olan, decision tree'nin karar ağacının en uygun olan, en çok, en iyi bir şekilde ayıran metribütümdür diyeceğim.
+
+385
+01:05:42,314 --> 01:05:50,215
+Tamam mı? Şimdi şuraya bakalım. Buraya baktığımız zaman. Şimdi ilk daha hiç ayırmadan.
+
+386
+01:05:55,429 --> 01:06:02,251
+Zaten değiştirmişim ki. Daha hiç ayırmadan, dedik ki burada 9'ye sorar, 5 tane de no var. Tamam mı?
+
+387
+01:06:03,049 --> 01:06:09,630
+Şu an buradaki toplam, benim buradaki bilgim ne? Tamam mı? Bunun entropisi ne?
+
+388
+01:06:10,429 --> 01:06:20,829
+Ne yapıyorum? 9 bölü 14 ve 5 bölü 14'ü kullanarak sadece daha hiç ayırmadığım zaman, buradaki toplam bilgi ne? Şu. Tamam mı?
+
+389
+01:06:21,549 --> 01:06:22,650
+Şimdi tek tek bakalım.
+
+390
+01:06:23,429 --> 01:06:27,549
+Neye bakıyoruz? Biz bunu age'den ayırırsak ne olur?
+
+391
+01:06:28,770 --> 01:06:30,909
+Şimdi, bak nerede benim kalemim?
+
+392
+01:06:32,429 --> 01:06:37,370
+Şimdi age'den ayırırsak, buraya yazmış zaten, boşuna saymak zorunda kalmayacağız, tamam.
+
+393
+01:06:38,189 --> 01:06:41,669
+30'dan küçük olup yaşı, bakalım.
+
+394
+01:06:49,159 --> 01:07:09,999
+Şimdi şöyle bakıyorum. 30'dan küçük no mu? Şuraya eksi diyelim no. 30'dan küçük no mu? Evet. 30'dan küçük yes. 30'dan küçük yes. İyi ki saymış. Tamam bu kadar.
+
+395
+01:07:10,519 --> 01:07:16,678
+Baktığımız zaman iki tane yes var. Değil mi 30'dan küçükleri de? Üç tane de ne var? No var.
+
+396
+01:07:17,607 --> 01:07:30,326
+O zaman şuradan yine ben bir info elde edebilir miyim? Neyden edeceğim? Entropi formülünden elde edeceğim. Bundaki şey nedir? Baktığımız zaman şuraya bakın.
+
+397
+01:07:30,887 --> 01:07:42,526
+İnfo 2'ye 3. Yani bunu açtığım zaman şu info 2'ye 3 neye denk gelecek? Eksi 2 bölü 5. Log 2 tabanında 2 bölü 5. Eksi.
+
+398
+01:07:43,463 --> 01:07:58,402
+3 bölü 5, yok. İki tabanında 3 bölü 5'e denk gelecek, değil mi? Ama bakın burada önemli bir şey var. Ne var? Ağırlık var. Bu ağırlık ne? Şurada toplam 14 satır vardı. 14 satırın 5 tanesi buraya gelmiş.
+
+399
+01:08:02,757 --> 01:08:06,419
+İkinci ihtimalle 31 kıp arasında olması.
+
+400
+01:08:06,638 --> 01:08:08,438
+Bu yazmış zaten, artık şuradan saymayacağım.
+
+401
+01:08:09,037 --> 01:08:15,118
+Dört tanesi artı oluyormuş, sıfır tanesi de no oluyormuş.
+
+402
+01:08:15,598 --> 01:08:17,737
+Dolayısıyla buradan da bir info hesaplayacağız.
+
+403
+01:08:18,379 --> 01:08:21,879
+Tamam mı? Bunu da yine ağırlığıyla çarpıyorum. Dört tanesi burada olduğu için.
+
+404
+01:08:23,015 --> 01:08:30,175
+Sonra geldim şuraya, 3'e 2 ilmiş. Bu da 40'dan daha büyük olanlar. 5 bölü 14 de buradan.
+
+405
+01:08:30,833 --> 01:08:40,534
+Şimdi formülde şunları yerine koyduğu zaman ne yapmış bakın? 0.694 çıkmış.
+
+406
+01:08:40,534 --> 01:08:45,534
+Ve benim formülüne göre information gainim ne kadar? Eğer age'i...
+
+407
+01:08:45,763 --> 01:08:54,243
+Burada node olarak kullanırsam toplamdan bulduğumu çıkarıyorum ve 0.246 buldum.
+
+408
+01:08:56,102 --> 01:08:59,381
+Aa bu ne kadar güzelmiş, reş oldun üstünde falan diyecek miyiz?
+
+409
+01:09:01,323 --> 01:09:04,243
+Maalesef diyemeyeceğiz. Diğerlerine de bakmamız lazım.
+
+410
+01:09:12,455 --> 01:09:22,755
+Böyle verilmiş. Nasıl ayırılacağını öğreneceğiz birazdan. Tamam mı? Yani kontinyüs değer değil. Tamam, diskret değer. 3 yaşlar, 3 klas ayrılmış bu şekilde kendi vermiş.
+
+411
+01:09:24,195 --> 01:09:26,813
+Evet, aynen ordinal değer şeklinde öğrenmiş.
+
+412
+01:09:36,102 --> 01:09:38,121
+Yazanları bekliyorum da siz de bekleyin.
+
+413
+01:09:44,721 --> 01:09:45,283
+Güzel.
+
+414
+01:09:46,721 --> 01:09:46,961
+Tabii.
+
+415
+01:09:47,783 --> 01:09:51,121
+Şimdi diyor ki arkadaşınız, güzel soru, diyelim ki buradan ayırdık.
+
+416
+01:09:51,523 --> 01:09:52,823
+Değil mi? Buradan ne geldi?
+
+417
+01:09:53,523 --> 01:09:54,783
+Beş kişi buraya geldi ya.
+
+418
+01:09:55,503 --> 01:09:57,881
+Artık bu beş kişinin kini hesaplayacağız.
+
+419
+01:09:58,641 --> 01:10:00,823
+Sonra yani bu on dört kişiyle işim kalmadı.
+
+420
+01:10:00,961 --> 01:10:03,401
+Hep bu sefer bu beş kişi üzerinden gideceğim.
+
+421
+01:10:04,325 --> 01:10:19,446
+Ya da burada işte bu, yine burada bu beş kişi üzerinden gideceğim. Bunlar tamamen farklı. Yani şey, bir daha bunları şu beş kişi, farklı kişi ya, bunlarla bunlar bir araya gelmeyecek hesaplarda. Güzel soru. Tamam.
+
+422
+01:10:22,446 --> 01:10:22,926
+Evet.
+
+423
+01:10:25,805 --> 01:10:27,545
+Şimdi, EG yaptık.
+
+424
+01:10:31,879 --> 01:10:41,639
+Ben bu slide'ları koyacaktım ya, özür diliyorum. Birisi mail atmıştı hocam, slide'ları koyun da önceden şey yapayım diye. Çıktı alayım diye. Tamam, iyice yaptık, bunu bulduk.
+
+425
+01:10:42,178 --> 01:10:53,399
+Şimdi gelelim neye? Income'a. Tamam mı? Income'da da yaptığımız şey ne? Hoppa. Yine 9'a 5 var değil mi? Toplam gayin aynı mı?
+
+426
+01:10:55,559 --> 01:11:08,517
+Aynen, değil mi? 9 bölü 14, 5 bölü 14'ten bu hep fiks gerici. Değil mi? En baştaki ne varsa. Sonra income nasıl ayırıyormuş bakalım. Income da 3 taneymiş. Low, medium ve high of.
+
+427
+01:11:09,278 --> 01:11:20,359
+Buraya ayırırsak 3 yes 1 no, işte 4 yes 2 no, 2 ye 2 diye ayırıyormuş. Şimdi buradan hop ne yaptım? Bunlar ağırlıkları. 14 tanenin.
+
+428
+01:11:20,871 --> 01:11:24,271
+Burada da entropi ile hesaplanmış infolar var.
+
+429
+01:11:25,551 --> 01:11:30,230
+Koyduğumuz zaman ne çıkıyormuş? 0.911 çıkıyormuş.
+
+430
+01:11:30,890 --> 01:11:34,690
+Peki, tutup ne yapacağım toplam geyeni bulmam için?
+
+431
+01:11:35,771 --> 01:11:43,291
+0.940'dan, şuradaki bulduğum değeri çıkaracağım, 0.029 çıktı. Çok daha düşük bir kazanç çıktı.
+
+432
+01:11:43,941 --> 01:11:50,701
+Değil mi? Dolayısıyla aging gaini daha büyük olduğu için income'dan şu an age daha yüksek.
+
+433
+01:11:57,415 --> 01:12:21,715
+Şimdi çok güzel bir şey var. Şimdi 2.2 var ya baktığımız zaman. Bunlar çok etkiliyor ve bir de burada ağırlık var. Hadi bunlar eşit ağırlık bir şekilde dağılmış. Burada çok büyük olduğu zaman sayı çok baskın çıkıyor. Tamam mı? Dolayısıyla işte bundan kurtulmak için değiş yolusu var bunun. Onu kullanacağız. Burada çünkü şey olan çok baskın çıkıyor dediğim gibi.
+
+434
+01:12:25,093 --> 01:12:39,454
+Hadi bakalım bunu da hesapladık. İnkama ne kaldı? Student mi kaldı? Student da yine 0.94 aynı. Student nasıl ayırıyormuş? 3'ye 4 no. Yani buradan toplu bir de 6'ya 1 ayırıyormuş.
+
+435
+01:12:51,399 --> 01:13:09,497
+3 yes, 4 no, artı 7 bölü 14 deyip 6 yes, 1 no. Hesapladım. 0 nokta şu çıkmış. Çıkarttığım zaman 0 nokta 151. Bu bir öncekinden daha iyi. Değil mi? Ama yine edge'den daha küçük. O 2, 26'lı, 0, 26'lı bir şey çıkmıştı.
+
+436
+01:13:10,342 --> 01:13:34,201
+Kredite baktığım zaman bu 3'e 3, 6'ya 2'ye ayırmış. Yani 8 tanesi burada, 6 tanesi burada şeklinde. 8 bölü 14 deyip 6'ya 2'nin entropisi, burada kaç var? 6 bölü 14 deyip 3'e 3'ün entropisine baktığımız zaman ne oluyor? Şöyle bir sonuç çıkmış. Çıkarttığımız zaman da 0, 0, 48. En düşükte bu çıktı, en kötü bu çıktı.
+
+437
+01:13:34,469 --> 01:13:41,331
+Ne mi baktığımız zaman? Dolayısıyla gain'e maksimum hangisi? 4 tane attribute'den age çıktı.
+
+438
+01:13:42,011 --> 01:13:49,611
+Diyorum ki artık, artık age'i şey olarak alabiliriz. Age'e geri geleyim. Bu olarak alabiliriz. Tamam mı?
+
+439
+01:13:50,031 --> 01:13:54,511
+Anladım ki birinci şeyim age'miş. Yani maksimum gain'i veren.
+
+440
+01:13:55,371 --> 01:14:01,230
+Şimdi artık algoritmada ne vardı? Attribute listten age'i çıkarttık.
+
+441
+01:14:01,703 --> 01:14:13,723
+Tamam mı? Ve artık ne yapacağım? Mesela şurada 9 pozitif 5 negatiften info D'yi hesaplamıştım ya. Şimdi burada 2'ye 3 için bir info D hesaplayacağım.
+
+442
+01:14:14,723 --> 01:14:27,963
+Tamam mı? Burada 4'e 0 için, burada 3'e 2 için. Tamam mı? Okey mi? Şimdi, buralar anlaşıldı mı?
+
+443
+01:14:28,775 --> 01:14:39,974
+Şimdi algoritmaya geri dönelim. Tamam mı? Biraz daha anlamamız için. Şurada şey var bakın dörde sıfır olduğunu unutmayın şurada. Tamam mı? Çünkü bir ifin bir tanesi buraya girecek.
+
+444
+01:14:42,113 --> 01:14:45,113
+Hop, geri başa geldik.
+
+445
+01:14:47,534 --> 01:14:49,514
+Tamam. Şimdi.
+
+446
+01:14:50,277 --> 01:15:17,619
+D'da tamdı benim. Aslında yaptığımı şu algoritmada nasıl yaptırız ona bakalım. Attribute listimde kaç tane attributum varsa onların liste şeklinde tutmuş. İlk nodumu oluşturdum. Tamam mı? Ama bir şey atamadık değil mi? Burada sadece bir tane nod var. Sonra da diyorum ki, if tuples in D are all same class C. Bu aynen H koyduğum zaman 31-40 arası hepsi aynı class'daydı değil mi? 4'de 0'dı. İşte o bu if'e girdi mi? Girdi.
+
+447
+01:15:18,130 --> 01:15:29,189
+O zaman diyorum ki return n as a leaf node labeled with class C. O zaman ne yapıyorum? Bu onun leaf node olsun diyorum. Tamam mı? Dörde sıfır da buraya girecek.
+
+448
+01:15:29,790 --> 01:15:35,489
+Ama daha iyi. Sonra başka if'e bakalım. Dörde sıfır değil de yes, iki no olana bakalım.
+
+449
+01:15:36,229 --> 01:15:39,630
+Şimdi eğer attribute list empty ise bu ne demek?
+
+450
+01:15:42,215 --> 01:16:07,573
+Mümkün, şöyle ağaca buraya age'i koydum, sonra buraya bunu koydum, bunu koydum, bunu koydum. Şimdi bu tekrar kendini çağırıyor ya metot. Bütün attribute'leri buralara koymuşumdur. Tamam mı? Ama hala burada böyle tam ayrılmayan bir şey vardır. Tamam mı? Eğer böyleyse bu if'e girecek. Ama bütün attribute'leri de nodlara koydum. Başka elimde attribute kalmadı. Çünkü her koyduktan sonra ne yapacağım bakın birazdan.
+
+451
+01:16:07,907 --> 01:16:26,246
+Attribute List'ten o seçtiğim attributu siliyorum, çıkartıyorum listeden. Eğer ne yapıyorum? Sadece majority voting yapıyorum. Yani 4 artı 2 eksi ise daha çoğunluk artı daha olduğu için bu leaf'e artıdır diyorum. Buna eksidir diyorum eğer şeyse. Tamam mı? Duruma göre. Yani tamamen majority voting yapıyoruz.
+
+452
+01:16:26,907 --> 01:16:33,246
+Sonra bu if de bitti. Bunlara nadir durumlarda girer. Şimdi gelelim şuraya.
+
+453
+01:16:34,438 --> 01:16:39,537
+Attribute Selection metodumuzu uygula dedik. Bizimki ne? Şimdiye kadar öğrendiğimiz.
+
+454
+01:16:41,378 --> 01:16:44,358
+Information Gain gördük, Entropy gördük değil mi şimdiye kadar?
+
+455
+01:16:45,237 --> 01:16:52,419
+Diyorum ki ben tek tek tek tek tek tek kaç tane listemde attribute varsa hepsinin Information Gain'ini hesapladım.
+
+456
+01:16:53,017 --> 01:16:56,537
+Maksimum hangisi ise bu benim attribute'ümdür dedim.
+
+457
+01:16:57,255 --> 01:17:09,333
+Ve de bu noda splitting criterion dediğim, diyelim ki burada en yükseği age vermişti ya, age ise age'i koydum. İşte atıyorum income ise income'ı koydum. Bu da bunu yaptı. Şimdi gelelim bu ife.
+
+458
+01:17:10,394 --> 01:17:23,573
+Eğer ki splitting attribute'un discrete value ise, bizimki bu örnektekilerin hepsi discrete değerler, ve de multivate de varsa ne yapıyorum? Attribute isten artık age'i çıkarttım.
+
+459
+01:17:25,893 --> 01:17:43,454
+Artık o da kalmadı. Şimdi, outcome J of splitting criterion. Şimdi 3'e 2'ye ayırdı, 4'e 0 falan ayırdı ya. Değil mi? Artık yani tamam. Buraya hangisini koyacağıma karar verdim. Nelerim var benim? Outcome'larım var. Şimdi ne yapacağız artık?
+
+460
+01:17:43,794 --> 01:17:56,514
+Tapulları yani datamı ayıracağım. Neye göre? Diyelim ki atıyorum burası işte başka, neyse üçlü olsun önemli değil. Küçüktür 30 oldu değil mi? 30-40 oldu.
+
+461
+01:17:57,294 --> 01:18:08,294
+Şimdi diyorum ki artık tapulları, datamı ayırıyorum. Küçüktür 30 olan datayı D1'e koydum. Tamam mı? 30-40 arasını D2'ye koydum.
+
+462
+01:18:09,543 --> 01:18:30,563
+Kırktan büyük olanları da D3'e koydum. Datayı partition'ladım. Eğer ki D, J, M, T ise hiç orada bir şey yoksa, bu ne demek? Bu şu demek, artık yani diyelim ki 30-40 arasında hiç yoksa bu da ne olabilir? Artık leaf olabilir. Direkt onu leaf olarak atıyoruz.
+
+463
+01:18:31,237 --> 01:18:54,159
+Eğer ki empty değilse, olmayacaktır hemen ilk hemen root koy değil. Bu else'de ne yaptık? Yeniden bu metodu çağırdık. Ama neye göre çağırdık? Bakın bu sefer de tam D1 oldu. Şurası için geri kalan attribute disk. Sonra bir daha çağıracak recursive. D2 için geri kalan attribute disk. D3 için geri kalan attribute disk.
+
+464
+01:18:55,237 --> 01:18:58,938
+Hop, başa gelecek yine. Bu sefer tek tek tek tek bakacak yine hepsine.
+
+465
+01:19:01,017 --> 01:19:01,599
+Okey?
+
+466
+01:19:28,198 --> 01:19:38,379
+Bu rekörsiv ya öyle gidecek ama bir dakika, stekne nasıl gider bu? Hop, tüm data geldi. B1 list geldi.
+
+467
+01:19:57,831 --> 01:20:09,030
+Şimdi recursive de şöyle olmaz mı? Fonksiyon çağırdığınız zaman, siz C mi görüyorsunuz bir de, iki de? Tamam. Fonksiyon çağırdığınız zaman, mesela şeylerin değişkenlerin skopu vardır değil mi?
+
+468
+01:20:09,790 --> 01:20:19,469
+Diyelim ki ben fonksiyon, yani işte pass by value, pass by reference vardır ya. Şimdi burada da şuraya baktığımız zaman, d1 ile attribute listi gönderdim.
+
+469
+01:20:20,359 --> 01:20:43,659
+Attribute listi gönderdiğin zaman, yeniden function call yapacak ve yeniden fonksiyon çağıracak, fonksiyon çağıracak. Dolayısıyla bu üçüne giden de Attribute list, D1'e giden de, D2'ye giden, D3'e giden Attribute list, aynı Attribute list. Tamam mı? Dolayısıyla elci koyduk ya, income buralarda gelirken bir daha burada gelebilir şu kodlamaya göre, C'ye göre.
+
+470
+01:20:46,053 --> 01:20:49,235
+Çünkü burada attribute risk, global değer falan demiyor ki.
+
+471
+01:20:54,853 --> 01:21:00,853
+Çıkartıyorsun ama şimdi bak, burada D1'le çağırdın ya fonksiyonu. Bir anda nasıl çağırırsın bunu?
+
+472
+01:21:01,754 --> 01:21:07,434
+Ama ifin içindeymiş, pardon, pardon, tamam, tamam. Ben direkt böyle pat pat yazdı sandım.
+
+473
+01:21:09,294 --> 01:21:12,034
+For burada, J için. Tamam.
+
+474
+01:21:13,127 --> 01:21:32,986
+For'un içinde ip olduğu için çıkartıyor bu. Şuradaki kod çıkartıyor ama çıkartmayanabilir. Yani şöyle ki sizin yaptığınız implementasyona göre tamam mı? Tekrar tekrar çağırabilir. Yani burada eğer bir için, iki için yapması yani şu for olmayıp direkt böyle patatat çağırsaydı çıkartmayabilirdi.
+
+475
+01:21:32,986 --> 01:21:35,127
+Yani şöyle ki.
+
+476
+01:21:35,591 --> 01:21:46,330
+Bazı metotlarda, mesela random forest'leri falan göreceğiz. Orada aynı attribute tekrar tekrar gelebiliyor. Tamam mı? Farklı dallarda. Ama şuradaki implementasyona göre gelmiyor.
+
+477
+01:21:47,611 --> 01:21:59,669
+Yani age'i burada kullandık ya, çünkü attribute listten çıkarttı. For olduğu için şey yok, yapacak bir şey yok. Çıkartıyor. Buradakini de bir daha kullanmıyor.
+
+478
+01:22:02,791 --> 01:22:14,169
+Şimdi sen de diyorsun ki, eğer ki, diyelim ki ben burada age'i kullandım, tamam mı? Şurada ben bir daha age'i kullansaydım çok daha iyi bir ağaç oluşturacak. Değil mi? Demek istediğin o.
+
+479
+01:22:19,811 --> 01:22:27,169
+Tamam, sen başladığın en leaf'e kadar gidiyorsun, bu öyle çalışıyor. Bu depth first search gibi çalışıyor aslında. Niye biliyor musun?
+
+480
+01:22:27,667 --> 01:22:48,005
+Hayır, hayır, hayır. Redverse searching için. Özür dilerim. Şu for benim kafamı çok karıştırdı. Çünkü 1, 2, 3 diye çağırıyor. Hepsini aynı anda çağırmıyor. Evet, öyle gidiyor. Önce 1 için attribute buldu. Sonra 2 için buluyor. Sonra diğer node için buluyor. Sonra bu sefer bunun bunu ayırıyor. Yani 1'i ayırıyor, 2'yi ayırıyor ve attribute'i sen çıkartıyor.
+
+481
+01:22:48,005 --> 01:22:51,387
+Ama bu attribute'i beninleştiriyor. Sonra 2 için çıkıyor.
+
+482
+01:22:51,387 --> 01:22:53,065
+Hayır, bak, bak. Öyle bitmiyor.
+
+483
+01:22:54,085 --> 01:23:17,746
+Şimdi bu for'a başladık, tamam mı? Ama diyor ki bir için, önce bir için, şeyimiz bir, tamam mı? Attribute listten, şimdi bir için çağırdık ya, bir için çağırdık, ondan sonra D1 ile attribute listi gönderdik fonksiyona. Geldik tepeye.
+
+484
+01:23:18,215 --> 01:23:44,695
+Sonra splitting kriterini yaptıktan sonra, bak daha D2 hiç çağrılmadı. Çağrılmış olsaydı, olurdu. Yani benim de kafam orada karıştı. Sanki bu else yokmuş gibi. Direkt şuraya girdiyse bu çağrılıyormuş gibi düşündüm. Ama öyle değil. Bak, D1 için attribute listi gönderdik. Tamam mı? Ondan sonra D1, function call the hope buradan başladı. Attribute listi.
+
+485
+01:23:45,093 --> 01:24:04,494
+güncelledi. Yani niye? Şurada çıkarttı bir yerde. Tamam. Ondan sonra bu sefer bunun kendi şeyi için bir daha çağırdı. Dolayısıyla buradaki function call bitecek. For'un şeyi yani for 1 iken şu bitecek. Sonra for 2 iken bu D2 bir daha burada tekrar çağırılacak.
+
+486
+01:24:16,775 --> 01:24:39,594
+Evet, depth-first search gibi yapıyor. Ama ben de diyorum ki, bütün şeyler böyle çalışmayabilir. Tamam mı? Yani yazdığınız algoritmaya göre. Eğer ki şurada for'u böyle değil de başka bir şekilde yazsaydınız, yani bunu if'e koymadan farklı bir şekilde burada function call yapsaydınız, yani bu ne yapıyor? Bu depth-first search yapıyor. D1 iken aşağıya indiriyor, indiriyor. Sonra öbür taraftan aşağıya indiriyor.
+
+487
+01:24:44,774 --> 01:25:10,654
+kod gibi. Ama dediğim gibi yani tek bir tane decision tree algoritması yok. Yani şöyle yazalım. Bu classification and regression trees diye bir şey var. Tamam mı? ID3 diye bir şey var. Ondan sonra ne dört buçuk? Bunun dört buçuğu var gibi gibi şeyler var. İmplementasyonları farklı. Ama dediğiniz gibi ben yazsam böyle mi yazardım? Böyle de first search'u yazmazdım.
+
+488
+01:25:11,078 --> 01:25:12,538
+Fred First Hersch yazardı.
+
+489
+01:25:19,911 --> 01:25:39,870
+Evet, bu grid algoritma var. Anladın mı? Şurada verdiği lokal bir çözüm buldu. Ayırıyor mu? Ayırıyor diyecek.
+
+490
+01:25:40,455 --> 01:26:01,574
+Okey? Yani ben de yazsam böyle yazmam. Çünkü dediğiniz gibi mantıklı değil. Çünkü kullandı kullandı etribütleri ayırmaya çalışıyor. Şöyle bir threshold da yok. Mesela 9'a 1 ise o bir taneyi ignore et. Tamam %90 çalışsın. Diğer taraftan devam et gibi bir threshold falan filan da yok. Bütün etribütleri kullana kullana kullana ne yapacak? En aşağıya kadar yapacak.
+
+491
+01:26:01,574 --> 01:26:05,574
+Tamam mı? Şöyle şeyler de var. Yani şimdi...
+
+492
+01:26:06,663 --> 01:26:16,962
+Bread first search yapıp tekrar attribute kullanmasına izin verip sonradan purining olur ya ağacı budarsınız. Üzerinde öyle algoritmalarda çalışıyor aslında.
+
+493
+01:26:18,303 --> 01:26:30,243
+Ama şey yani çok hani depte inmesi de çok sıkıntı olmayabilir. Hani ağacınızın çok yüksek olması sonradan purining yapabilirsiniz ama dediğim gibi bu iyi bir implementasyon değil. Bread first search çok daha mantıklı bir implementasyon.
+
+494
+01:26:37,895 --> 01:26:39,895
+Evet, evet, evet.
+
+495
+01:26:46,598 --> 01:26:48,919
+Tamam, şimdi geri gidiyoruz şeye.
+
+496
+01:26:52,647 --> 01:27:02,926
+Bu biraz anlaşılmıştır umarım. Anlaşıldı mı entropiyle nasip yapacağımız? En kolayı bu. Bunu bize de kesin sorarım. Hiçbir şey çalışmayan buna çalışsın.
+
+497
+01:27:02,926 --> 01:27:04,766
+Tamam mı? Nasıl?
+
+498
+01:27:08,806 --> 01:27:11,187
+Güzel soru. Geyin negatif olabilir mi? Olamaz mı?
+
+499
+01:27:16,326 --> 01:27:18,806
+Nasıl olur? Şimdi geyinimiz nerede?
+
+500
+01:27:24,806 --> 01:27:25,165
+Ah.
+
+501
+01:27:28,551 --> 01:27:37,750
+Şimdi iki taraf da nereden geliyor? Şuraya baktığımız zaman entropiden geliyor değil mi? Entropi maksimum kaç çıkabilir, minimum kaç çıkabilir burası?
+
+502
+01:27:43,174 --> 01:28:10,574
+0'a 1 mi çıkar? Tamam. Yani 0'la 1 aralığında bir şey gelir. Peki burası, diyorsunuz ki burası 0 gelip de eğer ki burası 1 gelirse negatif çıkar diyorsunuz. Değeri buna göre mi hesaplıyoruz? Şu değerin içinde bu değer de olduğu için nasıl anlatayım? Şurada da oranladığımız için daha şey gelmez. Daha küçük değer gelmez.
+
+503
+01:28:17,350 --> 01:28:17,850
+Mmh.
+
+504
+01:28:21,127 --> 01:28:23,406
+Şurası.
+
+505
+01:28:30,906 --> 01:28:44,306
+Hepsi eşit olsaydı şurası da eşit olur muydu? Anladın mı? Hepsi ikiye iki, ikiye iki, ikiye iki olsaydı şu tepesi de altıya altı mı olurdu? Değil mi? O zaman da orası altıya altıya olduğu için
+
+506
+01:28:45,062 --> 01:28:52,761
+Orada, şu oranın da şeyi oradan, yani şu oranları da müstemelen not dengelesin diye koymuşlar. Tamam, negatif olmaz yani.
+
+507
+01:28:56,761 --> 01:29:12,082
+Keyifli bir ders oluyor. Bilmiyorum, sıkılan var mı? Anlaşıldı mı? Anlaşılmayan varsa sorsun. Bir şey soracak mısın? Tamam, elimi kalır. Tamam. Şimdi anladık, umarım bu information geyeni. Peki.
+
+508
+01:29:12,743 --> 01:29:40,263
+Volume continuous'ta ne yapacağız? Attributlar continuous'ta ne yapacağız? Hemen hızlıca anlatıyorum. Buradan da anlatmıyorum. Buradan anlatıyorum. Sıralayacağız. Tamam mı? Unique değerleri bulacağız. Yani diyelim ki burada dataset'te bir tane kırk yoktur. Otuz tane kırk olabilir. Tamam mı? Ya da iki üç tane atmış olabilir. Bunları küçükten büyüğe sıraladık mı? Sıraladık. Diyelim ki temperature varmış. Burada da class'ım var.
+
+509
+01:29:40,690 --> 01:30:05,051
+40 noymuş, 48 de noymuş, 60 yesmiş, 72 yes, 80 yes, 90 no. Şimdi diyebilirsiniz ki, biz bunu diskret yapalım, işte 40 ile 48 artı 60 bölü 2 arası no olsun falan gibi bir şey diye düşünebilirsiniz ama olmaz çünkü bu kadar az değer olmaz zaten tamam mı? Bir de işin içinde altlar, ayarlar falan filan olur, o iş çalışmaz.
+
+510
+01:30:05,542 --> 01:30:19,643
+Ama ne yapacağız? Şimdi geçiş olan yerlerde. Geçiş olan yerler nereler? Bakalım. Yani no ile yes arasında bir geçiş var mı? Var. Bir de şurada şurada bir geçiş var değil mi?
+
+511
+01:30:22,583 --> 01:30:31,823
+48 artı 60 bölü 2'den, burası 54 geliyormuş, burası da 85 geliyor. Şimdi bunlar için ne yapacağız?
+
+512
+01:30:33,638 --> 01:30:45,777
+Şöyle bir şey yapacağız. İlk kendi içinde şurayı değerlendireceğiz. Burada da 54'den temperature büyükken diyeceğiz, küçükken diyeceğiz. Burada da 85'den büyükken küçükken diyeceğiz.
+
+513
+01:30:46,837 --> 01:30:50,578
+Ve bunları sanki diskrit değerlermiş gibi değerlendireceğiz.
+
+514
+01:30:50,578 --> 01:30:57,317
+Yani şöyle gelelim. Güzel bir örneği vardı. Artık bunu diskrite çevirdim.
+
+515
+01:30:57,411 --> 01:31:08,891
+Ama diskrite çevirirken her şeyi almadık, 40-48'i almadık. Sadece geçiş olan yerleri alıp sanki diskrite değerlermiş gibi kullanmış olduk.
+
+516
+01:31:14,886 --> 01:31:16,007
+Bu örnek burada değil.
+
+517
+01:31:19,527 --> 01:31:46,866
+Şurada var, ben birazdan gene index'i açıklayacağım. Açıklayacağım ne olduğunu. Onun örneğinde continuous değer var. Tamam mı? Onu orada nasıl yaptığımızı göstereyim. Tekrar şey. Doğru uydurmayayım. Tamam. Şimdi ne yaptık? Bir, information gain kullandık. Information gain'de ne yapıyorduk? Toplam root'tan o hesapladığımız infoyu çıkarıyorduk değil mi? Sipris infoyu çıkarıyorduk.
+
+518
+01:31:47,335 --> 01:31:56,074
+Ama orada bir sorunumuz var. Niye? Çünkü orada aslında ne yapıyoruz? Alırken weighted average gibi bir şey alıyoruz değil mi? Kaç tane varsa.
+
+519
+01:31:56,074 --> 01:32:03,515
+Ve eğer ki i ayırmasa bile eşeği yüksekse birbirine yakın değerlerle formül üzerinden konuşayım.
+
+520
+01:32:04,975 --> 01:32:07,955
+Şurada bakın alırken ne yapıyoruz?
+
+521
+01:32:08,743 --> 01:32:35,602
+Orada kaç satır varsa onu oranlıyoruz değil mi? Ama burada i1, i2 diye gidiyor. Şimdi eğer ki bir tanenin sayısı çoksa ama şu değeri küçük bile olsa ne yapabilir? Baskın olabilir. Ya da bazen şeylerde birazcık sıkıntı çıkıyor. Çok tek değer varsa. Birazcık onlarda da bu hesaplarken iyi hesaplamıyor. Dolayısıyla diyor ki burada, information gain diyor.
+
+522
+01:32:36,422 --> 01:32:43,621
+Büyük, yani sayıda değer olan, satır sayısı çok olanlar için daha iyi davranır diyor. Onları iyi hesaplayamayız diyor.
+
+523
+01:32:44,181 --> 01:32:50,462
+Bunun yerine de işte bu C4.5 dediğim ağaçlar genellikle Gain Ratio kullanır diyor.
+
+524
+01:32:50,621 --> 01:32:54,321
+Bu da ne aslında? Ne yapacağız? Bir normalizasyon yapacağız.
+
+525
+01:32:54,321 --> 01:33:02,482
+Şimdi Log2 tabanında aslında formül aynı gibi. Değil mi? Baktığımız zaman. Ama burada ne var?
+
+526
+01:33:03,527 --> 01:33:09,426
+B, J bölü, tüm D'ye bölüyor. Yani, şöyle anlatayım.
+
+527
+01:33:17,734 --> 01:33:21,234
+Burada direkt info dj'ye bölüyorduk. Hatırladınız mı?
+
+528
+01:33:21,893 --> 01:33:26,975
+Ama burada ne yapıyoruz? Bir de bunu d'ye bölüp aslında normalize ediyoruz.
+
+529
+01:33:27,194 --> 01:33:28,754
+Tüm sayıya tekrar bölüyoruz.
+
+530
+01:33:28,754 --> 01:33:30,754
+Yani yaptığımız şey...
+
+531
+01:33:31,393 --> 01:33:37,313
+Çok pardon, çok pardon. İyice karıştırdım.
+
+532
+01:33:41,455 --> 01:33:44,614
+Buna da ne diyoruz?
+
+533
+01:33:46,341 --> 01:34:03,221
+Gale ratio diyoruz. Tamam. Diğerini de çıkartıyorduk. Burada bir de ne yapıyoruz? D'ye hep bölüyoruz. Yaptığımız şey şu. Şurada ağırlık ve ortalama alma kısmı aynı. Ama burada ne yapıyoruz? Bir de normalize ediyoruz. Mesela bunu income için yapmış. Income'a bakalım mı nasıl bölüyordu diye.
+
+534
+01:34:08,326 --> 01:34:16,826
+Burada mı inkam? Burada inkam. 9'a 5'miş, değil mi? 3'e 1, 4'e 2, 2'ye 2 bölüyor.
+
+535
+01:34:16,826 --> 01:34:27,966
+Değil mi? 3'e 1, 4'e 2, 2'ye 2. Ve bir fikir geldi. Bakalım ne olacak?
+
+536
+01:34:34,214 --> 01:34:38,975
+Şunu alacağım. Sonra şunu alacağım.
+
+537
+01:34:41,833 --> 01:34:43,114
+Burada dursun.
+
+538
+01:34:44,893 --> 01:34:46,915
+Buraya gidip size farkı göstereceğim.
+
+539
+01:34:48,495 --> 01:34:51,833
+Şimdi bakın ne yapıyoruz? Gain ratio kullanmaya çalışıyoruz.
+
+540
+01:34:52,074 --> 01:34:53,475
+Şu da bir öncekini.
+
+541
+01:34:54,214 --> 01:34:54,694
+Tamam mı?
+
+542
+01:34:55,415 --> 01:35:01,415
+Şimdi baktığımız zaman, log 2 tabanında, diyelim ki 4 tanesi, işte neydi?
+
+543
+01:35:02,054 --> 01:35:27,353
+Income Loved değil mi? Unuttum kaça kaça olduğunu. Hayır burada var. 4 var, 6 var, 4 var. Değil mi? Alırken bunların yine ağırlıklı ortalamalarını alıyorum ve de log 2 tabanında 4'e 14, ondan sonra 6'ya 14, 4'e 14 bunları alırken, split income'a hesaplarken bunları bu şekilde hesaplıyorum.
+
+544
+01:35:28,583 --> 01:35:37,083
+Baktığınız zaman bunun içinde ikiye ikiye ayırması falan var mı? Yok. E nasıl olacak o zaman?
+
+545
+01:35:40,966 --> 01:36:08,165
+Anladınız mı? Şimdi, baktığım zaman, işte bu income'a düşük, orta, yüksek vardı. Değil mi? Şimdi, bunu hesaplarken nasıl hesapladık? Bir ilk olarak toplam yes, no'su, kaça kaçtı bunun? İşte 0.0029 çıkacak şekildeydi değil mi? Değil mi? Ondan şunu çıkartıyorum.
+
+546
+01:36:08,547 --> 01:36:28,446
+Şuradaki değeri çıkartacak. Dolayısıyla da, şimdi buraya baktığımız zaman ne yapıyoruz? Benim buradaki dağılımım duruyor ama log2 tabanında alırken SplitInfo'da bunun nasıl dağıldığını alıyoruz. Kaça kaç dağıttığına bakıyoruz.
+
+547
+01:36:45,766 --> 01:36:48,547
+Onlar aslında bir şeyin içinde değil. Şöyle ki,
+
+548
+01:36:52,806 --> 01:37:06,366
+0.09'a hesapladık. Ama bakın şeye baktığımız zaman entropiye, entropide zaten eğer ki sizin dağılımınız, yani entropiyi hesaplıyoruz ya log 2 tabanında.
+
+549
+01:37:06,886 --> 01:37:13,207
+Şimdi dağılımınızda eğer ki ne kadar homojenlik varsa ona göre bir değer çıkıyor.
+
+550
+01:37:13,638 --> 01:37:25,658
+Dolayısıyla aslında log 2 yani entropinin kendisinin değeri oradaki kesire göre geldiği için birazcık onun içinde var şeklinde ne yapabiliriz? Söyleyebiliriz.
+
+551
+01:37:26,578 --> 01:37:29,777
+Dolayısıyla spin info hesaplarken ne yapıyoruz?
+
+552
+01:37:31,837 --> 01:37:34,958
+Şurada yani tamamen dağılımları da içine.
+
+553
+01:37:35,431 --> 01:37:46,290
+katarak, yani burada işte ikiye üçe hesaplarken iki bölü beş, üç bölü beş alıyorduk. Bunu almıyoruz. Ne yapıyoruz? Bunların ikisini toplu bir şekilde işin içine katıyoruz.
+
+554
+01:37:46,830 --> 01:37:57,611
+Bu da information gain oluyor. Gain ratio, özür dilerim. Gain ratio. Tamam mı? Ratiosu da en yüksekse tipi tetributu olarak onu alalım.
+
+555
+01:37:57,611 --> 01:38:02,411
+Şimdi gelelim ikincisine, özür dilerim, üçüncüsüne.
+
+556
+01:38:02,886 --> 01:38:28,105
+Tamam mı? Şimdi uyanın çünkü bu son indeksin. Bu da yine çok kullanılan bir şey. Burada ne yapıyoruz biliyor musunuz? Burada da bir öncekinin tam tersi aslında. Şöyle bir şey yapıyorum. Tamamen ne yaptığım şey, içinde nasıl dağıldığına bakıyorum. Yani bir eksi, c-n indeks şöyle hesaplanıyor, bir eksi
+
+557
+01:38:28,583 --> 01:38:31,462
+Toplam kaç tane örnek oldu?
+
+558
+01:38:32,502 --> 01:38:40,223
+Tamam, diyelim ki 2 eksi, 2 tane artı, 3 tane eksi varsa 2 bölü 5, 3 bölü 5 bunların kareleri şeklinde alıyor.
+
+559
+01:38:43,283 --> 01:38:44,882
+Dolayısıyla şuna bakıyorum.
+
+560
+01:38:45,663 --> 01:38:51,002
+Buradaki değer mesela 0'a 6 ise nasıl çıkacak baktığımız zaman?
+
+561
+01:38:52,391 --> 01:39:17,770
+Şurada zaten bu sıfır. Sıfırdan sıfır geldi. Burada 6 bölü 6'dan 1 gelecek. Dolayısıyla bunun jini indeksine çıkacak. Sıfır çıkacak. Değil mi? Dağılımına bakıyor aslında. Peki 1'e 5 nasıl çıkacak? İşte 1 bölü 6'nın karesi artı 5 bölü 6'nın karesinden bu şekilde bir değer gelecek. Dolayısıyla bu ne zaman yüksek olur? Eğer ki 3'e 3 gibi eşit dağılımımız varsa jini indeksiniz.
+
+562
+01:39:18,147 --> 01:39:32,207
+0.5 civarı çıkar değil mi? Ama eğer ki bu şekilde 0'a 6 gibi bir şey çıkıyorsa, CIN indeksiniz ne çıkar? Çok daha düşük çıkar. Yani dağılımınızın nasıl olduğuna bakıyor. Yaptığı şey o.
+
+563
+01:39:33,507 --> 01:39:43,547
+Şimdi bu slide'da da işte bunlar için nasıl hesaplanmış? Bu var, sadece formülde yerine koymuş yaptığı bir şey yok. Yani tamam mı? Burada 0 bölü 6 ile 6 bölü 6'yı yerine koyduğunuz zaman kaç çıkar?
+
+564
+01:39:43,942 --> 01:39:56,201
+Ama ne dedik? Eğer ki dağılımınız 0'a 6 gibi hepsi tek bir klasla toplanıyorsa 0 çıkıyor. Eğer eşit dağılıyorsa mesela 3'e 3 gibi 0.5 çıkıyor. Bunu görmüş olduk.
+
+565
+01:39:57,681 --> 01:40:10,223
+Ve de tamam CIN indeksini hesapladık. Peki neye bakıyorum? Burada da şunu söylüyor. Eğer birden fazlasını varsa eğer yani işte 3 tane
+
+566
+01:40:10,227 --> 01:40:19,886
+sınıf varsa. Bir de bunu ne yaptık? Normalize ettik. Orada kaç tane child'ı var diye. Yani parent'ınkini de hesaplayacağız ya partition yapmadan önce.
+
+567
+01:40:20,426 --> 01:40:32,245
+Mesela demin ne demiştik? Dokuz tane yes var, beş tane no var demiştik. Sonra orada büyük entropiyi hesaplamıştık değil mi? Daha hiç bölmeden önce. Burada da ne yapacağız?
+
+568
+01:40:32,690 --> 01:40:39,370
+Toplam kaç tane yes, kaç tane no varsa yine dağılımından cini indeksini hesaplayacağız.
+
+569
+01:40:41,449 --> 01:40:44,449
+Sonra da parent'tan bunları tek tek tek tek çıkartacağız.
+
+570
+01:40:46,449 --> 01:40:48,330
+Bu da işte farklı algoritmalar.
+
+571
+01:40:49,574 --> 01:41:11,714
+TIIT gibi ya da işte Sprint gibi farklı decision tree oluşturma algoritmalarında da Giniindex hesaplanıyor. Bunun avantajı ne? Biraz daha hızlı çalışıyor tamam. Log vesaire gibi şeyler olmadığı için sadece oransal olarak gittiği için de çok daha ne çalışıyor hızlı çalışıyor. Yani baktığımız zaman içinde daha basit toplama işlemleri var.
+
+572
+01:41:14,054 --> 01:41:17,935
+Burada da nasıl hesaplanmıştığını görelim. Bakalım mı bakalım. Tamam mı?
+
+573
+01:41:19,855 --> 01:41:31,254
+Şimdi binary attribute'ler için yani 0 mı 1 mi? Şimdi classları var. Bir node olarak attribute olarak n1 attribute'um var. Bir de n2 attribute'um var.
+
+574
+01:41:32,935 --> 01:41:40,054
+n1 attribute'unun dört tanesi C0 classındanmış. Yes gibi düşünün. Üç tanesi de noy'muş.
+
+575
+01:41:40,935 --> 01:41:47,174
+N2 etribütunun iki tanesi C0 klasındansa, üç tanesi de C1 klasındanmış.
+
+576
+01:41:48,435 --> 01:41:56,674
+Şimdi bakıyorum, ben bunu ayırırken N1, N2 olarak ayırsam ne olur? Bakalım.
+
+577
+01:41:56,935 --> 01:42:03,033
+Tamam mı? N1 olarak ayırsam. N1'de toplam kaç tane var? 7 tane.
+
+578
+01:42:03,475 --> 01:42:23,815
+7'nin 4 tanesi C0Y. Dolayısıyla 1-4 bölü 7'nin karesi. Sonra bir daha eksi ne var? 3 bölü 7'nin karesi. 0.49 çıkmış. Ama ben buraya A'ya tutsam, N2'yi koysak, tamam mı?
+
+579
+01:42:24,018 --> 01:42:29,998
+Ne var? 3'e 2'ye dolayısıyla 1 eksi 2 bölü 5'in karesi, eksi 3 bölü 5'in karesi.
+
+580
+01:42:30,138 --> 01:42:31,578
+Bu da ne 0, 48 vermiş.
+
+581
+01:42:32,178 --> 01:42:36,797
+Şimdi, buradan split yaptığımız zaman nasıl dağılıyor?
+
+582
+01:42:37,078 --> 01:42:38,837
+N1, N2 bu şekilde dağılacak.
+
+583
+01:42:38,837 --> 01:42:39,618
+Tamam.
+
+584
+01:42:40,757 --> 01:42:41,337
+Bakıyorum.
+
+585
+01:42:43,498 --> 01:42:45,058
+Şeyi nerede vermiş?
+
+586
+01:42:46,538 --> 01:42:47,658
+7'ye 5 olduğunu.
+
+587
+01:42:51,975 --> 01:43:04,214
+Evet. 7 tane M1 olduğu için 7 bölü 12 çarpı onun indeksi, CIN'in indeksi, 5 tane de N2'de olduğu için onun CIN'in indeksi yine artısına veytisi ortalama aldığı 0 nokta şu çıkmış.
+
+588
+01:43:04,955 --> 01:43:12,395
+Şimdi bu da eğer ki ben bunu A'dan değil de B'den bölsem nasıl olurdu? Ona bakıyor. Yesler ne olar? Nasıl gelmiş?
+
+589
+01:43:13,054 --> 01:43:17,094
+Burada işte 1 bölü bölü 5, 4 bölü 5 alacak. Hesapladı aynı şekilde.
+
+590
+01:43:17,634 --> 01:43:28,955
+Bu ne çıktı? 0.48 çıkarken bu 0.37 çıktı. Şimdi hangisini alması daha mantıklı? A'yı mı alacak, B'yi mi? Neden B'yi alacak?
+
+591
+01:43:40,038 --> 01:44:07,658
+Şimdi, CIN indekse baktığımız zaman ne yapıyoruz? Aslında, hatta şuradan gidersek, böyle olmasını mı istiyorduk, böyle olmasını mı istiyorduk? Böyle olmasını istiyorduk değil mi? Dolayısıyla burada CIN indeksinin ne çıkıyor? Daha küçük çıkıyor. Değil mi? Büyük çıksın istemiyorum. Peki burada da hesaplarken ne yapıyorum? Hesaplıyorum, sonra parent'tan çıkarıyorum. Dolayısıyla büyük olmasını istemez miyim?
+
+592
+01:44:11,366 --> 01:44:16,966
+Çünkü bak burada diyor ki choose the attribute that minimizes weighted average genie index of children.
+
+593
+01:44:22,598 --> 01:44:29,899
+Minimum olanı seçeceğiz. Dolayısıyla da şurada baktığımız zaman şu daha iyi bir sonuç vermiş oluyor.
+
+594
+01:44:31,558 --> 01:44:41,937
+Okey. Şimdi bakın ne gördük? Özetleyelim. Üç tane şey gördüm. Bir tanesi neydi? Entropiydi. Entropinin formülünü oraya yazdım. Değil mi?
+
+595
+01:44:42,375 --> 01:44:57,194
+Bunu bir güzel hesaplıyorduk. Ama bundaki sorun neydi? Bunu hesapla hesapla, tek tek hesapla bulduk. Ama sorun neydi? Şurada bunu hesaplarken buraya yazmadık ama başlarında kaç tane tapılın oraya düştüğüne göre Veytik de Ebrich alıyordu.
+
+596
+01:44:58,183 --> 01:45:12,502
+Eğer ki diyelim ki 10 bin tane satır varsa, bunun da 9 bin tanesi bir klas varsa zaten o onu ne yapıyordu? Diğer klası baskılıyordu. İyi olmasa bile yani belki diğerinden ayrıca daha küçük olacak, baskıladığı için kötü çıkıyordu.
+
+597
+01:45:13,083 --> 01:45:18,342
+Dolayısıyla dedik ki bunun yerine biz ratio kullanalım. Ratio kullanırken de ne yaptık?
+
+598
+01:45:18,951 --> 01:45:32,011
+Aslında tamamen reşiolara göre, yani işte 3 pozitif, 4 tane negatif varsa toplamda bunun kaçı olduğuna, yani toplam 3 pozitif, 4 negatif dedik, 7 tane.
+
+599
+01:45:32,011 --> 01:45:39,951
+Bu 7 tane parentteki toplamın kaçta kaçına geliyor? Ona bakarak oranlamış olduk. Bir daha böldük. Buna da dedik ki,
+
+600
+01:45:44,455 --> 01:46:12,033
+Gain Ratio deriz dedik değil mi? Hatırladık mı şunu? Toplama böldük yani 14 tane, parent'ta kaç tane varsa ona böldük ama burada öyle yapmıyorduk. Burada böldüğüm zaman kendisinde kaç tane varsa ona göre evricimi alıyoruz. Tamam mı? Sonra buradan da Cine Index'e geldik. Bakın burada hiç entropi falan filan yok. Tamamen oransal gidiyoruz. Tamam mı? Aslında mantığı oraya gidiyor ama baktığımız zaman eğer ki dağılımın bir tarafa daha
+
+601
+01:46:12,355 --> 01:46:38,634
+Gidiyorsa, homojense bana sıfıra yakın değer veriyor. Değil mi? Ben bunu istiyorum. Eğer ki şeyse, homojen değilse, 3'e 3 ise ne yapıyor? Daha büyük değer veriyor. Değil mi? Bunu nasıl hesaplıyorum? Tamamen oranından hesaplıyorum. Yani işte sıfır bölü altı artı kareleri var. Altı bölü altının karesini birden çıkarıyorum gibi. Tamam mı?
+
+602
+01:46:40,007 --> 01:46:51,766
+Ayrı ayrı tamamen farklı şeyler verecek. Yani bir ağacı ciniyle oluşturursan ya da entropiyle oluşturursan farklı sonuç verir.
+
+603
+01:46:54,826 --> 01:47:03,147
+Değiştiriyor hatta attribute listini shuffle edersen on bine başka ağaç verir. Çünkü greedy çalışıyor bunlar.
+
+604
+01:47:04,167 --> 01:47:16,587
+Yani her zaman aynı ağacı verebilir de farklı ağacı da verebilir. Tamam mı? Garanti değil. Yani hangisi global optimist onu da bilmiyoruz. Tek sorun performans değil, evet. Bu birazcık daha kısa ama.
+
+605
+01:47:22,790 --> 01:47:31,129
+Ya al genellikle hazır kıtfane kullanıyorsan kendisi içinde bakıyor, shuffle edip bakıyor yani. Biz çok bir şey yapmamıza gerek yok. Var var, evet.
+
+606
+01:47:31,815 --> 01:47:55,415
+Sonra bunun bir üstü var. Yine Ensemble Learning'de göreceğiz onu. Tek ağaç yapmayacağız da Forest yapacağız. Bir sürü küçük küçük ağaç yapacağız. Tamam mı? Sonra buradan yine en çok hangisi, hangi klas diyorsa ağaçların mesela verdiği sonuçların ortalamasını alacağız gibi. Ya da maksimum hangisiyse onu alacağız gibi. Farklı farklı yöntemler var. Sıkıldınız mı?
+
+607
+01:47:55,415 --> 01:47:57,415
+Biraz.
+
+608
+01:47:59,687 --> 01:48:22,266
+Bakayım ne var? Bir dakika. Bağlayabileceksem. Şimdi burası bitti. Bu şey çok şey yok. Multiway'de üç tane hesaplıyorsunuz. Tamam mı? Demin iki taneydi ya binary'de Gini'yi hesaplarken. Yani ne yaptık? İkisini hesapladık. Burada üçüncüyü de hesaplayıp onu da şey yapıyoruz, çıkartıyoruz. Bir farkı yok. Buraya diyeceksiniz ki bir koyuyorduk. Nasıl olacak?
+
+609
+01:48:22,790 --> 01:48:31,390
+Yine önemli değil. Çünkü zaten şurada alırken hepsini alıyoruz ya böyle 20 olarak. Bir kesir olduğu için yani tamamen hepsinin toplumu bile geldiği için sıkıntı yok.
+
+610
+01:48:32,670 --> 01:48:45,909
+Bu da örnek vermiş. Kontinüstü o zaman kaldım. Ara verelim sonra devam edelim. Tamam mı? Kaç dakika ara istiyorsunuz? Çeyrek geçe gelin. 9 dakika. Okey? Çeyrek geçe görüşelim.
+
+611
+01:48:47,531 --> 01:48:49,129
+Onlineciler kapatmıyorum.
+
+612
+01:48:52,007 --> 01:49:00,227
+Mikrofonu da açık bırakıyorum. Sınıftaki dedikoduları dinleyin ama yok şey olacak. Ne yapabilirim? Kapatayım mı?
+
+613
+01:49:01,607 --> 01:49:04,487
+Pause share önemli değil de. Record'ı pause edemiyorum.
+
+614
+01:49:10,487 --> 01:49:15,047
+Öyle mi? Hayır, hayır, hayır. Ama sesli kamera gidiyor ki.
+
+615
+01:49:15,527 --> 01:49:16,406
+Kamera bulutucu.
+
+616
+01:49:18,966 --> 01:49:19,647
+Evet.
+
+617
+01:49:20,227 --> 01:49:21,366
+Ama kayda duruyor.
+
+618
+01:49:21,745 --> 01:49:23,507
+Hayır, sadece ekranımı görmüyor, o kadar.
+
+619
+01:49:24,207 --> 01:49:24,826
+Kayda da gidiyor.
+
+620
+01:49:25,027 --> 01:49:27,587
+Şey, diprikordu durdur deyince şey yapıyor.
+
+621
+01:49:28,946 --> 01:49:29,127
+Ne?
+
+622
+01:49:30,527 --> 01:49:31,567
+Ne yapsam?
+
+623
+01:49:32,366 --> 01:49:36,607
+Olur da kayıttan sonra dinleyen de orada bir 10 dakika sessizlik olacak.
+
+624
+01:49:37,027 --> 01:49:42,147
+Kayıttan dinleyen, şu an biz arayan 8 dakika ileri al videoyu.
+
+625
+01:58:47,751 --> 01:58:48,791
+Online'lar geldik.
+
+626
+01:58:57,991 --> 01:58:59,991
+Hazırsak devam edebiliriz.
+
+627
+01:59:00,631 --> 01:59:00,911
+Şimdi
+
+628
+01:59:05,510 --> 01:59:08,090
+Peki, continuous olursa ne yaparız?
+
+629
+01:59:08,809 --> 01:59:09,069
+Şimdi
+
+630
+01:59:13,573 --> 01:59:40,595
+Bakın burada neler var? Değerler var. Altın iş yetmiş, iki yüz bin an katkıda kadar gidiyor. Ve de şu yukarıda da klaslarını vermiş. No, R yazılı. Tamam. İlk olarak kolondaki değerleri küçükten büyüğe sıralarız. Tamam. Sıralıktan sonra bakıyoruz. No, no, no. Şurada ne var? Bir yazı geçiş var. Tamam. İlk hesaplayacağım yer şurası.
+
+631
+01:59:41,255 --> 01:59:46,455
+Sonra yine bakalım, yes yes yes gidiyor, bir daha bu dönme oraya gitmiş, sonra bir daha norma oraya gitmiş.
+
+632
+01:59:47,095 --> 01:59:59,715
+Bu da onu alacağız, şu iki yerde bakacağız. Nereden bölsek daha iyi? Şuradan mı bölsek daha iyi? Tamam mı? Yoksa şuradan mı bölsek daha iyi?
+
+633
+02:00:03,077 --> 02:00:29,023
+Evet, biz bunu görüleceğiz. Çünkü [öğrenci]'in genellikle ikiye bölünüyor kontinültüda. Daha fazla ya da bölüyorlar ama çoğu metod, yani işte çoğu SRI tıpanı hep bu şekilde çalışıyor ikiye bölerim. Ama üçe dörde bölen de var ama genellikle iki şeyden kalır. Daha fazla, opsiyon çıkınca yeniden etçi bir parça sıkıntı olabiliyor.
+
+634
+02:00:29,831 --> 02:00:37,310
+Tamam, nasıl yapacağız? Burada da şimdi Cini indeksini hesaplamam lazım. Nasıl hesaplayacağız bakalım.
+
+635
+02:00:37,310 --> 02:00:56,871
+Şimdi 75.85 ara değerini aldık. Ara değerini 72. Değil mi? 72 olur mu? 5.80. Ne düşündüysem. 80. Şimdi bakıyoruz. 80'den küçük kaç tane no var?
+
+636
+02:00:57,265 --> 02:01:16,126
+80'den büyük kaç tane yes var? Tamam mı? Şimdi bunu aldığımız zaman, şuraya aldığımız zaman, şimdi buradan 80'den küçük olup da yes olan var mı? Yok, sıfır tane. Değil mi?
+
+637
+02:01:23,635 --> 02:01:28,394
+1, 2, 3 tane, 80'den büyük olup ne olan? 4 tane. Şurada.
+
+638
+02:01:31,974 --> 02:01:58,394
+Yani ben buraya benim şey koyduğum hani atribüt bölüyorduk ya, burada böldüğümüz şey ne? 80'den büyük mü, küçük mü? Bölmeye çalıştığım şey bu. Bölersem de ne yapıyor? 0'a 3, 3'e 4 olarak ne yapıyor? Bunu bu şekilde ayırdı mı? Ayırıyor. Şimdi ne yaptım? Buradan Cini İndeks hesapladım. Cini İndeks nasıl hesaplanıyordu hatırlıyor musunuz?
+
+639
+02:01:59,238 --> 02:02:13,778
+Tamamen oranın karesinden hesaplanıyordu değil mi? Sonra da onu birden çıkartıyordu. Hatırladık mı? Burada da işte, düşenmeden şöyle, mesela hangisine baktık? Şuna baktık. Nasıl yapıyordu?
+
+640
+02:02:14,537 --> 02:02:23,898
+Tamamen 4 bölü 7, eksi 3 bölü 7, burada 3 bölü 5, eksi, buna kareleri var, 3 bölü 5'in karesi diyorduk. Hatırladık mı formülü?
+
+641
+02:02:24,295 --> 02:02:47,814
+Hatırladık. Burada da yaptığımız şey tamamen o. Buradaki Cine indeksini hesaplamış 0.343 çıkmış. Sonra ikinci split pozisyonumuz içinde ne yaptık? Cine indeksini hesapladık. Ne çıktı? 0.30 çıktı. Hangisini kullanacağız? Daha düşük olalım. Dolayısıyla ne yapıyorum? Bunu
+
+642
+02:02:48,385 --> 02:02:57,025
+97 büyüktür, 97 küçüktür, 97 olarak ayırmak mantıklıymış diyorum. Buradan ayırıyoruz. Kontinüüs değeri de bu şekilde ayırıyoruz.
+
+643
+02:02:59,946 --> 02:03:05,885
+Şimdi sadece split yerlerine bakıyoruz. Yani şurada şunları hesaplamış ama bunlara hiç bakmıyoruz.
+
+644
+02:03:06,407 --> 02:03:25,426
+Ve de arkadaşınızın bir sorusu vardı, illa ikiye mi ayırmamız lazım, üçe dörde ayırsak olur mu diye. Eğer ki bazı algoritmalar şöyle çalışıyor, işte bir threshold koyuyor, işte Gini indeksi küçüktür, şu şu şu olana kadar. Eğer ki böyle işte maksimum dört tane en iyi, dört taneyi al, dörde ayır.
+
+645
+02:03:25,841 --> 02:03:32,042
+gibi şeyler var. Tamam, parametre olarak da verilebiliyor bunlar algoritmalara. Tamam, bu şekilde de ayıranlar da var.
+
+646
+02:03:32,143 --> 02:03:36,462
+Yani kontinuysu illa şuradan ikiye ayırmak zorunda değilsiniz. Bazı algoritmalar bakıyor.
+
+647
+02:03:36,462 --> 02:03:44,643
+Mesela işte nereden ayırsam, işte en düşük Cineo indeksi olan, 0.3, 0.343, bir sonrakine.
+
+648
+02:03:46,215 --> 02:03:59,274
+0, 375 mi? Şu ikisi de aynı çıkmış. Neyse. Bunlardan bir tanesini alıyor. Tamam. Random olarak ona göre ayırıyor. 3'e de ayırabilir yani. Okey. Ama genellikle 2 ayrılıyor algoritmalar.
+
+649
+02:04:01,934 --> 02:04:11,434
+Bundan söyleyelim mi? Söylemeyelim bunu. Tamam. Myth classification'lerden çok bahsetmemize gerek yok.
+
+650
+02:04:11,911 --> 02:04:32,131
+Burada da ne dedik? Yine özetleyelim. Üç tane şeyimiz var, metodumuz var. Information gain. Gain ratio var dedik. Sonra bir de neyimiz var dedik? Cine indeksimiz var dedik. Tamam mı? Anlatırken üçünde de şeylerden bahsediyoruz. Özelliklerinden bahsediyoruz. Geçiyorum bunu da. Şimdi şundan bahsedelim bir dakika.
+
+651
+02:04:33,799 --> 02:04:39,858
+Attribute Selection yaparken şeylerden illa ki kullanılmayabilir.
+
+652
+02:04:41,957 --> 02:04:49,697
+G-statistics dediğimiz şey, iki kare uzaklık hesaplamıştık. Hatırlıyor musunuz? Kaç tanesi tutar, kaç tanesi tutmaz gibi.
+
+653
+02:04:50,139 --> 02:04:56,757
+Yani nasıl hesaplamıştık? Aynı olanları, yani işte A'yken A tahmin ettiklerimizi şey yapıp yapmıştık.
+
+654
+02:04:57,178 --> 02:05:08,018
+O tarz metotlar da kullanılabilir ama çok kullanılmıyor. Yani en çok kullanılan şey entropi ve G-index üzerine olan metotlar. Tam bunlar çok şeyler.
+
+655
+02:05:09,255 --> 02:05:23,715
+Çok nadir kullanılan yöntemler. Şimdi asıl şuraya şunu anlatmak istiyorum. Şimdi overfitting diye bir şey var. Overfitting ne demek? Aşırı uyum gibi düşünebilirsiniz. Tamam mı Türkçesine?
+
+656
+02:05:25,054 --> 02:05:33,835
+Şimdi biz modelimizi bu sadece karar ağaçları için geçerli değil, neredeyse her metot için geçerli. Tamam mı?
+
+657
+02:05:34,567 --> 02:05:47,006
+Ne yapıyoruz? Genellikle bir modeli oluşturduktan sonra, mesela benim oluşturduğum ağaç, training datası üzerinde de %100 mü çalışıyor? Hayır, çalışmıyor.
+
+658
+02:05:47,006 --> 02:06:01,465
+Ve bu modelin training datasındaki hatasına ben training error diyorum. Bir de datamın bir kısmını test için ayırmıştım, hatırlıyorsunuz. Bir de bu test setinde.
+
+659
+02:06:02,439 --> 02:06:20,339
+Kontrol ediyorum. Bir de oradan ne yaptım? Test error'ı hesapladım. Tamam mı? Şimdi olması gereken nedir biliyor musunuz? Modeliniz iyiyse, train error ve test error'ın birbirine yaklaşık olmasıdır, benzer olmasını isteriz.
+
+660
+02:06:21,158 --> 02:06:29,318
+Eğer şöyle bir şey varsa, modeliniz training datası üzerinde çok iyi çalışıyor, training error'ı çok düşük.
+
+661
+02:06:31,046 --> 02:06:54,805
+Ama test datası üzerinde modeliniz iyi çalışmıyor, errorınız daha fazla. Yani diyelim ki training datası üzerinde %95 çalıştı ama test datası üzerinde %70 çalışıyor. Bu ne demek? Bu şu demek. Sizin modeliniz oluşturulurken training sete çok bağlı kalmıştır.
+
+662
+02:06:55,367 --> 02:07:06,067
+Dolayısıyla mesela dallar oluştururken, oluştururken genelde olmayacak mesela testette olmayacak durumlar için, çok nadir durumlar içinde ne olmuştur?
+
+663
+02:07:06,506 --> 02:07:16,426
+Mesela dallanma yapmıştır boş yere. O dallanma sayesinde mesela ekstra gereksiz dallanmalar sayesinde sizin training errorınız aslında düşüyordur.
+
+664
+02:07:16,766 --> 02:07:20,586
+Ama o dallanma genel durum için bir şey ifade etmiyordur, çalışmıyordur.
+
+665
+02:07:21,157 --> 02:07:40,697
+Yapay sinir ağlarında da çok olur overfitting. Dolayısıyla eğer ki sizin datanız, training datada çok iyi, modeliniz özür dilerim, training datada çok iyi çalışıyor ama test datada o kadar iyi çalışmıyorsa ya da kötü çalışıyorsa, datanız training dataya overfit olmuştur.
+
+666
+02:07:40,697 --> 02:07:46,219
+Çok aşırı, şu modeli çok, yani training datayı öğrenmiştir aslında.
+
+667
+02:07:47,425 --> 02:08:14,105
+Dolayısıyla overfitting olup olmadığına nasıl bakacağız? Sadece demek ki test error'a bakmıyoruz. Bir de training error'a bakıyoruz. Amacımız ne? Aslında iki error'ın da birbirine yaklaşık olması. Ama genellikle 3-5 ya da 1-2 training error'ımız daha düşük olabilir. Yani %1, %2, %3 bu normal. Ama aradaki fark açıldıkça bu ne demek? Overfitting var demek.
+
+668
+02:08:14,951 --> 02:08:22,991
+Random seçiyorsun, evet. Diyelim ki çok datam var, yüzde otuzu, bunun test datası olsun.
+
+669
+02:08:26,727 --> 02:08:37,305
+Ya şöyle oluyor, genelde datalar işte veri tabanından çekilirken ya da işte data martdan çekilirken vesaire bir şeye göre sıralanmış oluyor, bir şey oluyor.
+
+670
+02:08:37,965 --> 02:08:43,407
+Eğer random seçmezsen daha kötü oluyor genellikle. Ya da kendin bir şekilde shuffle edeceksin.
+
+671
+02:08:44,206 --> 02:08:52,107
+Tamam, yani shuffle ettiysen son yüzü al, önemli değil. Atıyorum son yüzde yirmiyi al, shuffle ettiysen, ondan eminsen.
+
+672
+02:08:53,381 --> 02:08:55,362
+Bu da güzel bir şey. Şimdi bu ne?
+
+673
+02:08:56,581 --> 02:09:07,141
+Şimdi the number of nodes, tamam mı? X-80'i. Bu ne demek? Bizim ablatımız nasıl çalışıyor? Aslında iteratif çalışıyor değil mi? Önce bir taneye not seçiyor, sonra bir not daha seçiyor.
+
+674
+02:09:07,541 --> 02:09:17,902
+Şimdi number of nodes var 50, 100, 150 diye gidiyor. Notları arttıkça training error'ın azalmasını bekliyor muyum? Bekliyorum. Değil mi?
+
+675
+02:09:18,341 --> 02:09:41,723
+Tamam, gerçekten de azalmış bayağı iyi. Başka çalışıyor. Yüzde 90 küsürlerle çalışıyor baksana. Ama şu maviyle gördüğünüz ve tam göremediğimiz şey de training error. Bakın o da başta azalmış, güzel. Ama bir yerden sonra ne olmuyor? Azalmıyor. Genelde böyle çok hareket etmez de böyle fluctuate eder tamam mı? Dalgalanır genelde böyle.
+
+676
+02:09:42,183 --> 02:09:49,462
+Üstelik bir şeye gitmez. Ama asıl istediğim şu mavi kresik çizgilimde buraya yaklaşarak gitmesin.
+
+677
+02:09:50,462 --> 02:09:57,341
+Tamam. Böyle bir şey görürsek ne yapıyoruz? Anlıyoruz ki overfitting var. Overfitting neden olabilir?
+
+678
+02:09:59,581 --> 02:10:08,581
+Training datamda noise olabilir. Değil mi? Dolayısıyla test datada da noise vardır gerçi bir şey varsa. Datamda noise olabilir.
+
+679
+02:10:09,349 --> 02:10:34,689
+Ya da elimdeki training setin miktarı azdır. Yani işte oradaki data bana yeterli gelmiyordur. Tamam mı? Yani işte elimizde 100 satırlık data vardır. Belki 2000-3000 satırda daha iyi bir ağaç öğrenecektir. Tamam mı? Dolayısıyla işte entropiyi ya da CIN indeksi hesaplarken oralardan sayı az olduğu için hata çıkıyor. İki tane neden olabilir. Evet.
+
+680
+02:10:40,006 --> 02:10:41,385
+attribute değil ama satır.
+
+681
+02:10:46,126 --> 02:10:48,247
+Artmaz çünkü bir şeyi seçiyoruz.
+
+682
+02:10:49,666 --> 02:10:51,046
+En iyisini seçiyoruz.
+
+683
+02:10:58,086 --> 02:11:03,046
+Ağaç daha büyük olursa mı? Peki demek istediğin çok fazla etçilmiş olursa dediğin ağaçta?
+
+684
+02:11:13,510 --> 02:11:21,210
+Bu tarzda benim bir testi için, bürek kutu vermeye başladık da, son tanrılar elini için vermemiz oluyoruz.
+
+685
+02:11:21,210 --> 02:11:26,510
+Bu ayı ile bir tefer teferin, bu konuda, brav alıyor.
+
+686
+02:11:40,871 --> 02:11:41,791
+Yani
+
+687
+02:11:57,157 --> 02:11:58,157
+Evet.
+
+688
+02:12:04,871 --> 02:12:23,269
+kullanılabilir, kullanmaz. Şöyle deriz işte, high-tooth-use olunca kes gibi bir şey diyebiliriz. Bir de şöyle olur genelde, senin de yine bu birazcık paralel. Bu böyle arttıkça burası artık düz gitmeye başlar, anladın mı? Yani iddia sayısı artık bu azalacak diye bir şey olmaz. Yani ne koyarsan koy, azalamıyor durumda olur genellikle.
+
+689
+02:12:27,303 --> 02:12:31,122
+Yapay siniri ağaçı, yapay siniri ağaçı olabilir.
+
+690
+02:12:36,519 --> 02:12:43,117
+Hiç alakası yok ki. Class size ne yapmaz? Onunla alakası yok şeyin, Class size yine.
+
+691
+02:12:43,117 --> 02:12:46,998
+Ben size, sizin olduğu zararınızda hata sıfır düşüyor mu?
+
+692
+02:12:48,738 --> 02:12:50,398
+Ne, ne? Düşmüyor, düşmüyor.
+
+693
+02:12:51,018 --> 02:12:52,559
+Ama herisine, paraya kaldı.
+
+694
+02:12:53,059 --> 02:13:01,617
+Ona göre yaptık ama mesela işte 3 buraya, 5 buraya, sıfıra sıfır ayrılmıyor. Noise var, Datoda başka şey var.
+
+695
+02:13:06,631 --> 02:13:32,269
+Evet, ama bir daha da kullansan kocaman kocaman ağaç oluyor. Daha çok aslında overfitting'e yol açıyor. Yani ben aslında oluşturduğum modelin de yüzde yüz çalışmasını hiç istemem. Yüzde yüz çalışıyorsa büyük bir overfitting olmuştur zaten. Tamam, noise'i de öğrenmiştir. Yani hem normal datanın nasıl modellerde de öğrenmiştir, bir de noise'e göre hassaslaşmıştır. Aslında güzel bir tane şekil var şeyde. Şeyi düşünün.
+
+696
+02:13:33,799 --> 02:13:53,537
+Birazdan şey bulabilirsem size göstereyim. İşte kırmızı-mavi noktaları dağıtmış tamam mı uzayda iki boyutlu. Ondan sonra siz her dallanmada, dallanma da şey gibi oluyor, argolik olayım o anlamda değil. Her dallanmada ne yapıyorsunuz aslında uzayı işte x, y olsun, x büyük bundan büyük olanları.
+
+697
+02:13:57,189 --> 02:14:08,149
+Şimdi bunu uzay gibi düşünün.
+
+698
+02:14:16,197 --> 02:14:20,979
+Şimdi uzayda böyle böyle mavi noktalar var. Tamam mı?
+
+699
+02:14:23,019 --> 02:14:35,339
+Diğer sayıda mı vardı acaba? Şimdi kötü çizilecek biraz. Tamam bir de kırmızı nokta koymamız lazım. Bunların hepsi farklı klas olsun tamam mı? Yes, no gibi.
+
+700
+02:14:35,858 --> 02:14:43,037
+X, y'yi de attribütler gibi düşünün tamam mı? Biraz daha gözüksün diye böyle koyacağız. Şuraya noise yapalım. Bir de şuraya noise yapalım.
+
+701
+02:14:43,335 --> 02:15:06,894
+Şimdi bakın, her da, her şey, her not ne yapar? Aslında işte x şundan büyük olanlar, küçük olanlar diye ayırır değil mi? Birinci not karar ağacında nasıl bu düz gidecek ama gidemiyor, böyle ayırdı. Tamam mı? Birinci not böyle ayırdı. İkiye ayırdık mı? İşte x şundan büyük olanlar, küçük olanlar gibi. Sonra, şimdi ikincisi de geldi.
+
+702
+02:15:07,559 --> 02:15:27,018
+Nereden ayırdı? Diyelim ki şuradaki mavileri ayırmak için geldim. Şöyle ayırdım. Tamam. Sonra üçüncüsü nasıl ayıracak? Gelecek, bir daha böyle ayıracak. Tamam hızlı hızı çizeyim. Sonra geldi bir daha böyle ayırdı.
+
+703
+02:15:31,335 --> 02:15:36,955
+Sonra bakın, bir dahakiler ne oluyor? Şuradakiler var ya, bunları bulmaya çalışacak.
+
+704
+02:15:37,854 --> 02:15:42,653
+Tutacak, bir daha böyle ayıracak, şu iki tane mavi için. Tamam mı?
+
+705
+02:15:42,653 --> 02:15:48,273
+Sonra belki şurada noise'ler var. Şimdi şu noise'leri yapalım. Şurada noise'ler var.
+
+706
+02:15:48,934 --> 02:15:58,434
+Tutacak, şurada bir tane noise var kırmızı. Tutup sadece bu noise için,
+
+707
+02:15:59,077 --> 02:16:04,398
+Tekrar şöyle uzayı ne yapacak? Ayırmaya çalışacak.
+
+708
+02:16:05,979 --> 02:16:08,879
+Tamam mı? Böyle böyle gidiyor.
+
+709
+02:16:09,238 --> 02:16:10,398
+Yaptığı şey bu.
+
+710
+02:16:10,979 --> 02:16:15,099
+Dolayısıyla siz ağacı büyüttükçe büyüttükçe büyüttükçe ne oluyor?
+
+711
+02:16:15,238 --> 02:16:17,818
+Noizlere göre hassaslaşmış olacak.
+
+712
+02:16:19,099 --> 02:16:22,639
+İşte buradan yani aslında bu train datada noizler vardı.
+
+713
+02:16:23,537 --> 02:16:26,599
+Ne oluyor? Bu noizleri de aslında şey öğrenmiş oluyor.
+
+714
+02:16:27,687 --> 02:16:40,687
+Tamam mı? Yapmaya çalıştığı şey bu. Bunun şeklini şeye koyayım size. O şekil güzel anlatıyor. Google Classroom'a koyayım bakın. Dolayısıyla da şimdi...
+
+715
+02:16:45,223 --> 02:17:10,363
+Dolayısıyla da ne oluyor? Şöyle bir sorunumuz var. Overfitting varsa ne yapacağız? Bir tanesi şu, pre-pruning. Yani eğer ki işte Giniindex bundan daha bir yerden sonra daha iyileşmiyorsa ya da biz önceki işte node'a şöyle çıkıyorsa ya da bir threshold koyuyorsunuz. Tamam artık dallandırma diyeceğiz. Tamam mı? Yani budamayacağız ama.
+
+716
+02:17:10,769 --> 02:17:34,769
+Ağaç daha tam oluşmadan ağaç oluşumunu durduracağız. İp gibi bir şey koyacaksınız aslında. Bir de post-pruning var. Bu da şu şekilde. Tüm kocaman bir ağaç oluşturuyorsunuz ama o ağaç ne yapıyor? Noizeleri de öğreniyor. Dolayısıyla aslında son dallanmalar, yani son şeylerini aslında noizu öğrenen, böyle noize özel...
+
+717
+02:17:34,885 --> 02:17:52,965
+Bu özelleşmiş şeyler. Yani atıyorum 999 tane bir klastan varsa, bir tane de noise varsa, sırf o bir tane noise için siz ne yapıyorsunuz? Oraya bir not daha koymuş oluyorsunuz. İşte post-burning ile de ne yapıyoruz? Aslında onları bu diyoruz, yaptığımız şey bu.
+
+718
+02:17:53,447 --> 02:18:02,227
+Şimdi bir şey daha var. Underfitting diye bir şey var. Şurada gördünüz mü? Hoppa, göremedim. Underfitting diye bir şey var. Bu da önemli.
+
+719
+02:18:03,046 --> 02:18:23,706
+Bu ne? Bu şu demek. Sizin modeliniz daha tam eğitilememiş. Yani bu aşırı öğreniyor ya. Bu da modelin eğitilmemesi ne demek? Diyelim ki siz 200 yerine şuraya kadar 100 tane şey yaptınız, 100 tane not oluşturdunuz, treningi durdurdunuz. Tamam mı? Şimdi bu ne demek?
+
+720
+02:18:24,113 --> 02:18:40,894
+Sizin aslında grafiğiniz daha aşağı iniyor değil mi burada baktığımız zaman? Trend aşağı doğru iniyor. Daha da çalıştırsanız aşağı inmeye devam edecek. Çünkü baktığımız zaman burada hala test error da aşağı inmeye devam ediyor. İşte bu durumada ne diyoruz? Underfitting diyoruz.
+
+721
+02:18:42,974 --> 02:18:47,354
+Eğer modeliniz çok basit kalıyor. Niye? Çünkü daha özelleşememiş.
+
+722
+02:18:47,747 --> 02:18:56,067
+Çünkü hem burada training error'ım fazla hem de test error'ım fazla ve ikisi de bakın grafiğe baktığımız zaman düşmeye devam ediyor.
+
+723
+02:18:58,987 --> 02:19:01,687
+Dolayısıyla buna da ne diyoruz? Underfitting diyoruz.
+
+724
+02:19:02,046 --> 02:19:08,947
+Şimdi train ederken bu şeyi çizmek önemlidir. Özellikle yapay sineralarında falan birazcık daha overfitting olur.
+
+725
+02:19:09,626 --> 02:19:15,327
+Bu eğitimdeki error, adım adım adım adım nasıl gidiyor bunları çizdirip görsel olarak da anlamak.
+
+726
+02:19:15,911 --> 02:19:20,269
+Çoğu zaman önemlidir. Tamam. Modeliniz nasıl öğreniyor, ne yapıyor bunları anlamış olursunuz.
+
+727
+02:19:22,631 --> 02:19:22,871
+Okey.
+
+728
+02:19:25,229 --> 02:19:28,470
+Bu da çok basit bir şey söylüyor. Basitini söyleyeceğim.
+
+729
+02:19:29,050 --> 02:19:32,849
+İki tane tri var. İkisi de aynı şeyi çıkarıyorsa bakın burada hata var.
+
+730
+02:19:33,071 --> 02:19:34,671
+Burada da hata var. Burada da hata var.
+
+731
+02:19:34,671 --> 02:19:37,470
+Ve genellikle şöyle bir şey var.
+
+732
+02:19:38,491 --> 02:19:42,010
+Kompleks modeller yerine basit olan modelleri
+
+733
+02:19:42,019 --> 02:19:47,398
+Tercih etmek çoğu zaman daha iyidir. Underfitting olmadığından eminsiniz. Tamam mı?
+
+734
+02:19:48,738 --> 02:20:00,697
+Ve de şöyle bir şey var. Genellikle overfitting'de ne olur? Daha kompleks, daha büyük ağaçlar ortaya çıkar. Ve de training erer aslında size çok bir şey söylemez.
+
+735
+02:20:01,059 --> 02:20:13,497
+Bu durumlarda da işte generalization error gibi şeyler var. Bunlardan da bahsetmeyeceğim. Bunlar işte ne yapıyoruz? Her bir noz için bir error hesaplayıp acaba şeyi anlamaya çalışıyoruz.
+
+736
+02:20:13,497 --> 02:20:24,778
+Burada ne kadarlık bir error var ama bunları anlatmıyorum. Geçtim. Şurada bir şey anlatacağım, önemli. Repinning Post-Training.
+
+737
+02:20:28,229 --> 02:20:38,090
+Tamam, şunu söyleyelim. Şimdi bu decision tillere baktığımız zaman niye basit? İmplement etmesi kolay mı? Kolay. Anlaması da gayet kolay.
+
+738
+02:20:38,577 --> 02:21:05,138
+Özellikle lineer olarak ayrılabilen şeylerde, verilerde gayet güzel çalışıyor. Dolayısıyla böyle baktınız, veriniz lineer olarak ayrılabilecek. Tamam mı? Kategorik değeriniz çok fazla. Yani elinizde çok numerik değer yok. Yani continuous değer yok diyeyim. Tamam mı? Eğer böyleyse genellikle decision triler çok güzel çalışır. Ama bir sıkıntısı var. Ne? Paralelleştirmeye uygun mu?
+
+739
+02:21:05,586 --> 02:21:12,225
+Hayır değil. Büyük datanız varsa, hop ne yaparsınız? Kocaman bir memori hatası alırsınız.
+
+740
+02:21:13,425 --> 02:21:13,826
+Tamam mı?
+
+741
+02:21:14,885 --> 02:21:24,725
+En çok kullanılan şeyler, decision tree algoritmaları bunlar ve çok çok büyük olmayan veri kümelerinde bayağı iyi sonuçlar ne yaparsınız?
+
+742
+02:21:24,845 --> 02:21:30,326
+Bunlarla alırsınız baktığımız zaman ve genel dünyada da çoğu şey linariye ayrıldığı için
+
+743
+02:21:30,759 --> 02:21:57,179
+Karar ağaçları sıklıkla ne olur? Kullanılır. Onun dışında işte Rainforest gibi ya da Sprint gibi başka başka algoritmalar da yeni yeni çıkıyor. Bunlar da birazcık daha scalable. Yani işte ölçeklenilebilir, nasıl çalıştırılabiliriz? Onlara bakılıyor. Fena değil bunlar da. Yani şunu kullanmadım ama Sprint falan da gayet güzel çalışıyor. Tamam mı? Gayet birçok metoda göre
+
+744
+02:21:57,925 --> 02:22:04,406
+Daha hızlı, yani yapay sinir ağlarından, naive Bayes'den falan filan çok çok daha hızlı çalışıyor baktığımız zaman.
+
+745
+02:22:05,126 --> 02:22:10,626
+Ve de güzel tarafı göreceğiz. Rullar, buradan rule çıkartabiliyoruz. Yani rule ne demek?
+
+746
+02:22:11,065 --> 02:22:16,586
+Bir ağacın rutundan başlayıp, eğer işte if şöyleyse bu, and diğer nota geldim.
+
+747
+02:22:17,006 --> 02:22:24,025
+If işte şu not küçükse şundan şu şeklinde yazılı kurallar oluşturulabiliyor. Bu niye işimize yarar?
+
+748
+02:22:26,309 --> 02:22:31,911
+Hem programa dökebiliyorsunuz, ağaç zaten onu veriyor da şöyle bir şey oluyor.
+
+749
+02:22:32,769 --> 02:22:39,309
+Mesela gerçekten uzman bilgisi isteyen şeyler var.
+
+750
+02:22:39,309 --> 02:22:43,430
+Mesela telefonlu uzmanlar size böyle olur, böyle olur diye bilgi veriyor.
+
+751
+02:22:44,131 --> 02:22:50,791
+Bunlar decision tree'ye döküldüğü zaman, telefonu uzman değil de şey açtığı zaman ne denir?
+
+752
+02:22:53,415 --> 02:23:06,474
+Kullanıcıdan inputu alıp hangi ruhla uyuyorsa okunabiliyor ya, ha buna uyuyor deyip pat diye ne yapabiliyor? Açıklamayla da söyleyebiliyor ya da bir şeyleri anlamlandırabiliyoruz. Birazcık da insan kolay anlayabiliyor aslında.
+
+753
+02:23:08,614 --> 02:23:11,755
+Ama sıkıntısı ne? Inexpensive.
+
+754
+02:23:12,679 --> 02:23:22,318
+Bu sıkıntısı değil, i tarafı. Setvenciden bahsedelim. Aslında işte exponent yani algoritması, large sığmıyor, ölçeklenebilir genellikle değil.
+
+755
+02:23:22,957 --> 02:23:29,957
+Ve her bir decision boundary'de single attribute var. Bu ne demek? Şu demek, şunu anlatalım.
+
+756
+02:23:30,238 --> 02:23:33,818
+Şimdi bakın, burada x ve y var sadece, tamam mı?
+
+757
+02:23:34,341 --> 02:23:53,622
+Bunu eğer datamız böyleyse, bakın decision tree'ler hep lineer ayırıyor. Buradan küçükse buraya git. Ya da işte blackse bunu yap, işte redse bunu yap gibi gibi. Tamam mı? Dolayısıyla bu tarz datalarda, dünya datasında da çoğu şey bu şekilde. Tamam mı? İnsanın oluşturduğu datalarda güzel çalışıyor.
+
+758
+02:23:54,086 --> 02:24:13,465
+Ama datanız şeyse, bu da aslında iyi bir örnek değil, birazcık daha böyle doğruyla değil de daha şöyle bir eğriyle, daha çok dereceli bir polinomla gösterilen bir elinizde eğri varsa, o zaman o eğriyi böyle bir sürü bir sürü şeyle açıklamak zorunda kalıyorsunuz.
+
+759
+02:24:13,465 --> 02:24:17,866
+O kiberiler de hiç hiç iyi çalışmıyor. Tamam mı?
+
+760
+02:24:18,081 --> 02:24:29,763
+Yani şunu da mesela ne yaparsınız? Bir buradan ayırırsınız, bir buradan ayırırsınız. Nasıl ayırırsınız bu tasayı? Bir sürü ayırırsınız değil mi? Üçgen üçgen giderek. Çok iyi çalışmıyor. Tamam mı?
+
+761
+02:24:31,763 --> 02:24:45,683
+Şunu da aslında classifier, classifier diyoruz ya. Hani şu ne yapıyor? Aslında classlar var. Aslında bakın şunun küçüktür bilmem 4.43, 0.43 demesi aslında şu tek başına bir
+
+762
+02:24:45,733 --> 02:25:01,394
+Classifier o. Öyle düşünebilirsiniz. Yani şu bir Classifier, şu bir Classifier, şu bir Classifier gibi ne yapabilirsiniz aslında? Düşünebilirsiniz. Yani Classifier terimle de birazcık şey olalım diye. Peki size soru.
+
+763
+02:25:03,773 --> 02:25:11,894
+Dedik ki biz, Classification, decision trilerde alt map Classification için kullandık değil mi?
+
+764
+02:25:14,023 --> 02:25:22,643
+Peki, decision tree'leri continuous değer üretmek için nasıl kullanırım? Yani yapraklarda continuous değer olsun.
+
+765
+02:25:24,162 --> 02:25:34,501
+Çünkü bakın, şunun adı ne? Şu algoritmanın classification and regression trees diye geçiyor. Regresyon da var yani.
+
+766
+02:25:34,501 --> 02:25:37,723
+O zaman şuralarda continuous değerler nasıl olabilir?
+
+767
+02:25:48,519 --> 02:26:16,519
+Sonuç olarak aralık alıyor, aynen. Şimdi burada hesaplarken hep yes no diyoruz ya, yes no almıyoruz, sonuçlarda da hep aralık ala ala gidiyoruz. Tamam mı? Şimdi index'de bir örnek yaptık ya, işte aralarını aldık. Burada da yine aralıklarını alarak, tamam mı? Yes no diyemiyoruz ama ne yapıyoruz? Aralıklara böyle böyle burada yani bilip size geldiği zaman 0, 24'te işte 0 atıyorum, 28 arasında değer üretmiş oluyoruz.
+
+768
+02:26:16,519 --> 02:26:37,299
+Tamam. Bunun nasıl olduğuna bakın. Tamam. Haftaya kadar decision triler nasıl regresyon yapar? Yani continuous değerleri nasıl tahmin eder? Haftaya kadar buna bakın, haftaya hatırlatın, derse başlamadan önce kısaca bunu özetleyin. Tamam. Soru var mı?
+
+769
+02:26:42,183 --> 02:26:43,282
+Ne yazıyorsunuz?
+
+770
+02:26:50,822 --> 02:26:54,081
+Dikabilirsiniz, o gün bu kadar. Teşekkür ederim.
+
+771
+02:27:11,495 --> 02:27:13,153
+Biraz yaparsın herhalde falan.
+
+772
+02:27:21,381 --> 02:27:24,042
+Online'lar kapatıyorum. Bay bay.

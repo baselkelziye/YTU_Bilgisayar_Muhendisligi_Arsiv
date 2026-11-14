@@ -1,0 +1,3175 @@
+1
+00:00:10,099 --> 00:00:11,799
+Merhaba arkadaşlar, hoş geldiniz.
+
+2
+00:00:36,595 --> 00:00:37,735
+Sesim geliyor mu size?
+
+3
+00:00:40,015 --> 00:00:40,975
+Geliyor hocam.
+
+4
+00:00:41,775 --> 00:00:43,655
+Süper. Hoş geldiniz.
+
+5
+00:00:44,515 --> 00:00:50,075
+Şimdi bir iki dakika içinde başlıyoruz. Bir ekran paylaşımı yapayım.
+
+6
+00:01:01,811 --> 00:01:03,231
+Şu an ekranımı görüyor musunuz?
+
+7
+00:01:05,192 --> 00:01:05,992
+Evet hocam, gördük.
+
+8
+00:01:06,352 --> 00:01:07,031
+Tamam, süper.
+
+9
+00:01:08,591 --> 00:01:11,712
+O zaman isterseniz başlayalım. Hoş geldiniz hepinize tekrar.
+
+10
+00:01:12,512 --> 00:01:17,432
+Bugün karar ağaç nedeniyle çevrim içi olarak yapacağız dersimizi.
+
+11
+00:01:20,912 --> 00:01:22,492
+İsterseniz başlayalım biz.
+
+12
+00:01:23,572 --> 00:01:24,671
+Videonun kaydı alınıyor.
+
+13
+00:01:25,171 --> 00:01:26,871
+Sonradan katılan arkadaşlar da seyreder.
+
+14
+00:01:27,924 --> 00:01:34,796
+Öncelikle bugün sizinle veri madenciliği kapsamında veri keşfini...
+
+15
+00:01:34,932 --> 00:01:59,692
+Konuşmak istiyorum. Veri keşfi süreci neden önemli? Veri keşfinden neyi kastediyoruz? Verinin kendisi aslında ne? Biraz bunları inceleyeceğiz. Sonra da görselleştirmenin veri keşfinde önemini inceleyeceğiz. Burada farklı görselleştirme yöntemleri, bu görselleştirme tekniklerinin etkili olmasını sağlayacak şeyler nelerdir? Bunları konuşacağız.
+
+16
+00:02:00,144 --> 00:02:14,264
+Sorularınız varsa lütfen sormaktan çekinmeyin. İnteraktif olursa daha iyi olur. O yüzden herhangi bir yerde sormak istediğiniz veya eklemek istediğiniz bir şey olsa lütfen beklemeyin ders aralarını.
+
+17
+00:02:15,684 --> 00:02:23,264
+Şimdi isterseniz başlayalım. Şöyle, veri görselleştirme neden önemli? Ya da veri keşfi nedir?
+
+18
+00:02:24,692 --> 00:02:36,792
+Aslında veri madenciliğinde kritik bir aşama olan veri keşfi çoğu kez bizim şöyle zorluklara karşılaşmamızdan dolayı önem kazanıyor.
+
+19
+00:02:36,792 --> 00:02:44,771
+Yani günümüzde aslında temel problem, analiz ettiğimiz verilerdeki temel problem verilerin azlığı değil.
+
+20
+00:02:45,632 --> 00:02:46,792
+Daha büyük bir problem...
+
+21
+00:02:47,183 --> 00:03:08,584
+Çok fazla verimizin olması. Ve bu çok fazla veri içerisinden aslında biz neye ihtiyaç duyuyoruz, hangi veriyi bulmamız gerekiyor, hangi tür şablonlar var, bunları keşfetmek, bulmak ilk başta pek mümkün olmayabiliyor. Yani bulana kadar bunun gerçekten aradığımız şey olduğunu fark etmemiz de zor olabiliyor.
+
+22
+00:03:09,331 --> 00:03:14,151
+Çoğu kez bu böyle samanlıkta iğne aramak gibi bir program.
+
+23
+00:03:14,412 --> 00:03:15,972
+Yani örnek verelim.
+
+24
+00:03:16,371 --> 00:03:21,091
+Şimdi sizin bir müşterinin analizi yapacaksınız, veri madenciliği yapıyorsunuz.
+
+25
+00:03:21,091 --> 00:03:34,472
+Hangi müşteriler fraud yapar veya hangi müşteriler churn olacak, yani sizin şirketten ayrılmaya karar verecek gibi bazen bilgiler yapacağız.
+
+26
+00:03:34,996 --> 00:03:42,596
+Ama burada kullanmanız gereken değişkenler nelerdir? Yani bu problemi çözmek için hangi değişkenlere ihtiyacınız var?
+
+27
+00:03:42,596 --> 00:04:02,376
+Bunu genellikle ilk başta bilmeniz pek mümkün değil. Çünkü standart bir şirkette bununla ilgili müşterilerin bilgileri hakkında kaç tür değişken topladıklarını söyleyecek olsak, bu onlarla muhtemelen yüzlerle ifade edilen değişken sayısıyla.
+
+28
+00:04:03,316 --> 00:04:22,216
+ifade edilir. Yani diyelim ki müşteriler hakkında demografik bilgiler topluyorsunuz, bunlar hakkında işte operasyonel işlemler yapılıyor, ne bileyim müşterileriniz transferler yapıyor, işlemler yapıyor, satın almalar gerçekleştiriyor, bir sürü bir sürü bilgi topluyorsunuz.
+
+29
+00:04:22,656 --> 00:04:26,196
+Çoğu kez bu yüzlerle hatta belki binlerle ifade edilen data noktası.
+
+30
+00:04:26,963 --> 00:04:47,644
+Peki, sizin bunların içinden hangilerine ihtiyacınız var? Hangisi gerçekten sizin aradığınız problemi çözmek için önemli değişken? Bunları test etmek daha zor. Yani zor olan şey hangi değişkenlerin kullanabileceği, hangi tür verilerin sizin probleminizi çözebileceğini başlangıçta bilmiyor olmanız.
+
+31
+00:04:48,531 --> 00:05:13,471
+Çok daha fazla sayıda alternatif var. Bunun için aslında görselleştirme önemli bir anahtar. Çünkü görselleştirmeyle ne yapıyoruz? Bir data hakkında, bir veri şablonu, bir değişken hakkında genel bir kanıya varma imkanımız oluyor. Yani çok daha hızlı bir şekilde varsa şablonlar bunları tespit etmemiz mümkünleşiyor.
+
+32
+00:05:13,903 --> 00:05:24,983
+Görselleştirmenin temel katkısı bu. Çünkü biz insanlar olarak aslında görsel patenleri yakalamakta oldukça başarılıyız. Ama sayısal olarak bu o kadar doğru değil.
+
+33
+00:05:24,983 --> 00:05:35,704
+Yani ben size bir milyon satırdan alışan bir Excel versem ve burada bir paten var mı, şablon var mı, burada bir anomali var mı desem bunu söylemeniz çok zor olacak.
+
+34
+00:05:35,843 --> 00:05:41,903
+Çünkü hiçbirimiz bunu kolaylıkla sayılar üzerinden...
+
+35
+00:05:41,903 --> 00:05:54,084
+Tespit edemeyiz. Ama bu bir milyon noktayı görsel olarak bir grafiğe veya bir değişkene gösterip yansıtırsam o zaman birçoğunuz bunu tespit edeceksinizdir.
+
+36
+00:05:54,084 --> 00:05:57,084
+Çünkü insanlar olarak biz görsel...
+
+37
+00:05:57,812 --> 00:06:21,651
+veri gösterimlerine çok aşinayız. Yani bir fotoğrafa baktığınız zaman otomatik olarak bunun içinde hangi entitiler var bunu tespit edebiliyorsunuz. Yani diyelim ki bir araba fotoğrafı var, bir tane bisiklete binmiş insan fotoğrafı var veya bir ağaç, bir yol işareti, sinyalizasyon veya bir tane canlı köpek, kedi neyse sokakta görüyorsanız hemen bunları tespit edebiliyorsunuz.
+
+38
+00:06:22,387 --> 00:06:41,608
+Bu bilgisayarlar için daha zor. Bilgisayarlar için bunların keşfi çok zor ama biz insanlar için de soyut, sayısal değerleri, şablonları, trendleri yakalamak biraz zor. O yüzden görselleştirme bizim anlamamız açısından oldukça faydalı. Bunu biraz örneklerle de çeşitlenmeye çalışacağım.
+
+39
+00:06:43,060 --> 00:06:51,819
+Ama isterseniz gelin görselleştirme veri analitinin, veri madenciliği nereleri de önemli, önem kazanıyor? Bunu biraz konuşalım.
+
+40
+00:06:52,279 --> 00:06:58,099
+Şimdi başlangıçta bir veri bilimi problemi aslında enteresan bir soruyla başlar.
+
+41
+00:06:59,187 --> 00:07:18,828
+En enteresan soru da şu. Mesela bir analitik sorusu. Sizin amacınız ne? Kimler fraud yapmaya yatkın? Bunları tespit edeceksiniz. Veya kimler sizin şirketinizi terk edecek? Veya kimler örnek vermek gerekirse sizin ürünlerinizi almaya daha meyilli.
+
+42
+00:07:19,220 --> 00:07:36,480
+Bu sadece müşteri üzerinde olmak zorunda değil. Diğer bir problem örnek verelim. Bir fotoğraf çektiniz. Bu fotoğrafta kanser hücreleri var mı yok mu? Veya işte yolda araba otomatik olarak gidecek. Fotoğraf çekti. Acaba bir taş yola düştü mü? Bunun tespitini yapacak. Bütün bunlar bir problem.
+
+43
+00:07:38,163 --> 00:07:52,623
+Haliyle öncelikle her şey bir problemle başlar. Yani bir tahmin problemi olabilir, sınıflandırma, onun dışında işte birliktelik analizi, neyse bir problemle başlıyorsunuz. Tahmin etmeye çalıştığınız bir şey var.
+
+44
+00:07:53,108 --> 00:08:08,507
+Bunu elde etmek için aslında bir veriye ihtiyacınız var. İkinci aşamada da ne yapmamız lazım? Veriyi bulmamız lazım. Acaba hangi verileri kullanarak biz bu soruyu cevaplandırabiliriz veya analitik işlemi gerçekleştirebiliriz?
+
+45
+00:08:08,884 --> 00:08:28,024
+Burada veri setini oluşturmanız ve anlamanız gerekecek. Bu veri seti hali hazır topanmış bir veri olabilir veya değilse de bunu nereden toparlayabilirsiniz, nereden elde edebilirsiniz bunu incelemeniz gerekiyor. Belki ilk başta veriyi anlamak için bütün veri üzerinde değil de bazı örneklemler üzerinden.
+
+46
+00:08:28,447 --> 00:08:49,008
+Bu analizi yapmanız gerekiyor. Yani önce bir örneklem alıp var olan veriler üzerinden bir çıkarımlar yaparak, istatistik çıkarımlar, bu veri setini anlayarak bu acaba alan bilgisiyle birlikte sizin aradığınız probleme çözüm oluyor mu olmuyor mu bunu bir prototipini yapabilmeniz için veri anlamanız lazım.
+
+47
+00:08:50,995 --> 00:09:03,395
+Tabii burada veri noktaları çok çeşitli olabilir. Bir sürü aday veri noktamız var. Belki toplamadığınız veri setleri de olabilir. Bunları da bulabilmeniz için öncelikle veriyi anlamak gerekecek.
+
+48
+00:09:03,923 --> 00:09:07,183
+İşte bu anlama aşaması veri keşfi diyoruz aynı zamanda.
+
+49
+00:09:07,783 --> 00:09:20,563
+Veri keşfi bu görselleştirme araçları kullanarak veriler üzerinde belli paternler var mı, anomaller var mı bunları böyle görsellere dökerek tezbit etmemiz ne mümkün olacaktır.
+
+50
+00:09:21,364 --> 00:09:24,503
+Sadece sayısal değerler üzerinden bunları keşfetmek çok zor.
+
+51
+00:09:25,364 --> 00:09:38,784
+Burada hangi özelliklerin sizin işinize yarayabileceğini, varsa bu özellikler içinden hangilerinin daha önemli olduğu veya hangilerinin alakasız olduğunu keşfediyorsunuz.
+
+52
+00:09:38,984 --> 00:09:44,004
+Ve bunun sonucunda da bunlardan yola çıkarak bir model eğitiyorsunuz.
+
+53
+00:09:45,144 --> 00:09:51,384
+Model eğitim aşaması aslında veri biliminin belki de sadece yüzde onluk bir kısmı.
+
+54
+00:09:51,860 --> 00:10:10,419
+Her şeyi buraya odaklı düşünüyoruz. Yani model oluşturma çok önemli aslında ama en önemli şey değil bence. En önemli şey doğru veriyi bulmak. Yani veri ön işleme dediğimiz aşamada doğru veriyi tespit etmek ve bunları modellemeye hazır hale getirmek.
+
+55
+00:10:11,299 --> 00:10:18,659
+Yani aslında şu kısımlar çok sıkıcı gibi gözükebilir ama aslında veri biliminin %70'i burası.
+
+56
+00:10:19,379 --> 00:10:43,220
+Ve çoğu kez siz burada veri temizliği, veri seçimi, veri dönüşümü bu aşamalarda, veri keşfi aşamalarında çok zamanınızı harcayacaksınız. Bu çok doğal bir şey. Ama buradaki veri kaliteli değilse, düzgün bir şekilde toplanmamışsa ve dönüştürülmemişse modeller anlamsız sonuçlar üretecektir ve sizi yanlış yönlendirecektir.
+
+57
+00:10:44,275 --> 00:11:09,675
+Haliyle modelleri ürettiniz, bunu bir test etmeniz gerekiyor, valide ettiniz, fena değil, iyi çalıştı. Artık bunu paylaşmanız gerekiyor. Yani bir canlı sisteme atlatacaksınız veya üst yöneticilerinizle bunu paylaşacaksınız. Burada da görselleştirme önemli. Yani iletişim için, bunun aksiyonlara dönüştürülebilmesi için, implement edilebilmesi için de.
+
+58
+00:11:10,355 --> 00:11:25,475
+Ne öğrendik? Bunun hikayesi ne? Buradan ne anlıyoruz? Bunu da görseller aracılığıyla paylaşacağız. Yani görselleştirme hem veri keşfinde hem de bunun iletişiminde oldukça önemli. Bu iki aşamada da kullanılmaktadır.
+
+59
+00:11:31,572 --> 00:11:37,072
+Böyle tabüler dediğimiz yani tablo şeklinde tutulan verileri kastediyoruz.
+
+60
+00:11:37,072 --> 00:11:41,471
+Ve burada işte mesela bir örneğinden bahsedelim.
+
+61
+00:11:42,091 --> 00:11:42,372
+Pardon.
+
+62
+00:11:44,392 --> 00:11:46,591
+Objelerimiz var ve attribütlerimiz var.
+
+63
+00:11:47,252 --> 00:11:52,652
+Attribütler her birisi farklı farklı değişkinin tipini ifade ediyor.
+
+64
+00:11:52,752 --> 00:11:56,432
+Bunlar kategorik olabilir, numerik olabilir, sürekli değerler olabilir.
+
+65
+00:11:57,076 --> 00:12:14,515
+Bunlar bizim özelliklerimiz, bu objelerin özellikleri. Satırlar da objelerin kendileri. Yani bunlar işte [öğrenci], [öğrenci] müşteri gibi düşünebilirsiniz veya bir fotoğraf olarak düşünürseniz her birisi ayrı bir fotoğraf karesi. Bunlar temel olarak bizim objelerimiz.
+
+66
+00:12:16,436 --> 00:12:25,456
+Çoğu kez bunu kastediyoruz. Yani veri bunun tabii ki boyut olarak daha çok sayıda feature, daha büyük satır sayısı olabilir. Bu çok fark etmiyor.
+
+67
+00:12:26,868 --> 00:12:47,288
+Diğer bir noktada bu değişkenlerin özellikleri. Yani bir değişken hangi tür tiplerini incelemek gerekirse değişkenler descriptive olabilir. Yani kategorik değerler içerebilir. Bunlar kendi içinde ordinal ya da nominal şekilde ifade edilebiliyor. Nominalden kastımız şu.
+
+68
+00:12:48,288 --> 00:12:54,487
+Belli değerler kategorik olmakla birlikte bunlar arasında herhangi bir karşılaştırma yapamazsınız.
+
+69
+00:12:55,507 --> 00:13:02,627
+Örnek verelim mesela göz rengi. Gözünüz mavi olabilir, yeşil olabilir, siyah olabilir. Bunlar arasında herhangi bir sıralama yok.
+
+70
+00:13:03,187 --> 00:13:10,168
+Veya cinsiyet, kadın, erkek. Bunların birisi birisinden daha büyüktür, daha küçüktür demek mümkün değil. Veya etnisi de.
+
+71
+00:13:11,604 --> 00:13:34,404
+Ama bazı kategorik verilerde bu söz konusu olabiliyor. Yani oridinal verilerde bir kategorik veriler ama bunlar arasında bir hiyerarşi, bir sıralama yapmak mümkün. Mesela işte small, medium, large gibi belli bir işte boy olarak ölçümümüz varsa bu kategorik değerlerin sıralayabiliriz.
+
+72
+00:13:34,404 --> 00:13:38,864
+Veya hiyerarşik olarak eğitim düzeyi.
+
+73
+00:13:39,220 --> 00:13:49,960
+İlkokul, daha sonra ortaokul, daha sonra lise, daha sonra üniversite okuyabiliyorsunuz. Bu sıra hiyerarşik olarak mevcut. Bunlar da orijinal veri örnek.
+
+74
+00:13:52,340 --> 00:14:05,860
+Diğer bir veri tipi de ölçülebilir değerlerse. Bu ölçülebilir değerler ya discrete olabilir yani sayılabilir sayıda değişkenler içeriyorsa buna discrete diyoruz.
+
+75
+00:14:05,860 --> 00:14:19,240
+Ya da continuous ya da sürekli değerler olabilir. Şimdi sayılabilir sayıdaki şeyler tam sayıda ifade edebileceğimiz ve kesinlikle değerler. Örnek verelim. Kaç tane kardeşiniz var?
+
+76
+00:14:19,860 --> 00:14:38,879
+Bu bir tam sayıdır. Ya sıfırdır, birdir, ikidir, üçtür. Bunun gibi bir sayıdır. Yani bir buçuk kardeşim var demezsiniz. Böyle bir şey söz konusu değil. Veya hastaneye bu sene kaç defa gittiniz? Hiç gitmemiş olabilirsiniz. Bir kez, iki kez, üç kez, beş kez neyse. Ama hani beş buçuk kez hastaneye gittim olmaz.
+
+77
+00:14:39,956 --> 00:14:47,735
+Dolayısıyla bunlar sayılabilir şeyler. Ama bazı ve doğadaki birçok şey aslında sayılamayan sürekli değerleri ifade ediyor ölçümlerde.
+
+78
+00:14:48,615 --> 00:14:59,336
+Mesela boy da bir sürekli değer ölçümüdür. Veya işte kan şekeri, kilonuz, sıcaklık. Bütün bunlar aslında sürekli değerleri ifade eder.
+
+79
+00:14:59,415 --> 00:15:07,515
+Yani bunlar en yakın tam sayıya indirgenebilir ama aslında hiçbir zaman tam olarak sıcaklığı bir tam sayı olarak ölçmeniz mümkün değil.
+
+80
+00:15:07,919 --> 00:15:24,519
+Yani 25.9.1.1.1.5 gibi böyle upuzun bir aslında bir rakam muhtemelen ama biz bunu yakın sayarak daha yakın bir tam sayıya veya işte kesirli bir sayıya yakınlaştırıyoruz.
+
+81
+00:15:24,519 --> 00:15:29,419
+Halde bunlar sürekli değerler. Diskürt değerler değil.
+
+82
+00:15:31,731 --> 00:15:39,251
+Peki bu değişkenlerin nasıl özellikleri oluyor? Şöyle, tipine, niteliğine göre aslında farklı operatörler kullanılabilir.
+
+83
+00:15:39,251 --> 00:15:48,731
+Mesela bir nominal değer için sadece eşitlik söz konusu olabilir. Ya bir şey eşittir ya da değildir. Yani göz rengi siyahtır ya da değildir.
+
+84
+00:15:49,551 --> 00:15:51,771
+Veya kahverengidir, değildir gibi.
+
+85
+00:15:54,644 --> 00:15:59,484
+Çarpma, bölme veya bunun yanında sıralama işlemi yapmanız mümkün değil.
+
+86
+00:16:00,584 --> 00:16:04,704
+Bunun yanında ama oridinal veriler için aynı zamanda sıralama da mümkün.
+
+87
+00:16:04,864 --> 00:16:08,864
+Yani hem eşittir, değildir hem de sıralama mümkün.
+
+88
+00:16:08,944 --> 00:16:13,844
+Yani ilkokul ortaokuldan daha öncedir gibi bir sıralama yapabiliyorsunuz.
+
+89
+00:16:14,419 --> 00:16:19,659
+Bunun dışında, işte nümerik değerlerde ise her operatörde, dört operatörde yapılıyor.
+
+90
+00:16:19,759 --> 00:16:31,159
+Hem distinctness, hem eşitlik, büyüklük, küçüklük ya da toplama çıkarma, bölme işlemleri gibi cebirsel, matematiksel işlemler yapılabiliyor.
+
+91
+00:16:31,339 --> 00:16:33,599
+Bunların da genel özellikleri böyle.
+
+92
+00:16:35,251 --> 00:16:46,772
+Şimdi isterseniz bir örnek üzerinden şunu inceleyelim. Basit bir örneğimiz var. Elimizde 4 tane veri seti var. Ve bu 4 veri seti de 2 tane değişken içeriyor sadece. X ve Y.
+
+93
+00:16:48,532 --> 00:16:55,731
+Bir tanesi, işte her birisi 11 tane satır içeriyor ve 2 tane değişken var.
+
+94
+00:16:56,403 --> 00:17:08,664
+Size sorum şu olsun, acaba bu veri setlerine bu şekilde baktığınız zaman herhangi bir şablon, herhangi bir pattern ya da trend veya anomali görüyor musunuz?
+
+95
+00:17:09,224 --> 00:17:15,784
+Görüyorsanız hangisinde ne trendini, ne patternini, ne anomalisini görüyorsunuz diye sorayım.
+
+96
+00:17:18,996 --> 00:17:27,256
+D setinde çok fazla X tarafı X attribute'un da 8 var gibi görünüyor. Pattern olarak gösterebilirim.
+
+97
+00:17:27,936 --> 00:17:36,416
+Evet, X'de hepsi neredeyse 8 gibi bir tanesi sadece 19. Peki bunun Y ile bir ilişkisi, bir bağıntısını görüyor musunuz?
+
+98
+00:17:44,468 --> 00:17:50,388
+Hocam, sanki hepsi doğmamakla birlikte x arttıkça y de artıyor şeklinde bir söylemde bulunabiliriz.
+
+99
+00:17:51,528 --> 00:17:57,028
+Evet, yani bakınca sanki böyle bir şey varmış gibi ama bunun counter example'ları da var.
+
+100
+00:17:57,028 --> 00:18:08,348
+Mesela şuraya bakalım, A'ya bakalım. Bu ne yapıyor? 10'dan 8'e artmış. Başka bakalım ne yapıyor?
+
+101
+00:18:08,915 --> 00:18:30,596
+İşte 9'dan 11'e artmış ama bu düşmüş gibi mesela böyle ters örnekler de var. Onun dışında neye bakalım? 5'den 7'ye çıkmış, bu da düşmüş gibi. Böyle örnekler var. Başkalarında var mı? Aynısı aslında burada da var. 13, 9, 8, 74, 77.
+
+102
+00:18:32,307 --> 00:18:52,567
+Artanlar da var, azalanlar da var ama böyle bir örnekten var gibi ama bazı ters örnekler de var. Başka bir şey görüyor musunuz? Yani böyle bariz bir anomali, bariz bir trend, bariz bir patern şekil görme mümkün mü?
+
+103
+00:18:57,364 --> 00:18:59,243
+Varsa nasıl bir şekil vardır sizce?
+
+104
+00:19:01,064 --> 00:19:03,483
+Mesela A'ya bakalım. A'da bir şey görüyor musunuz?
+
+105
+00:19:17,011 --> 00:19:25,632
+Dediğiniz gibi bir genel bir artış söz konusu olabilir ama ters örnekler de var. Onun dışında bir şey gözüküyor mu?
+
+106
+00:19:33,652 --> 00:19:38,492
+Bariz bir şey göremedik en azından. Peki B için bir şey söyleyebilir miyiz?
+
+107
+00:19:52,596 --> 00:19:55,916
+Yine zor değil mi? Yani çok bariz bir şey göremedik.
+
+108
+00:20:00,000 --> 00:20:01,440
+Önce için var mı bir şey?
+
+109
+00:20:14,963 --> 00:20:17,183
+Sanırım onda da çok bariz bir şey göremiyoruz.
+
+110
+00:20:18,624 --> 00:20:19,824
+D'de zaten konuştuk.
+
+111
+00:20:20,183 --> 00:20:23,663
+Yani bir tek x'ler hepsinde 8 gibi.
+
+112
+00:20:24,344 --> 00:20:25,544
+Bir tane burada farklılık var.
+
+113
+00:20:26,203 --> 00:20:28,463
+Ama y ile ilişkisi hakkında da bir şey söylemek zor.
+
+114
+00:20:31,564 --> 00:20:35,564
+Gördüğünüz gibi sadece 11 satırda bile bunu test etmek biraz zor.
+
+115
+00:20:36,276 --> 00:20:43,796
+Çünkü sayılar arasındaki bu ilişkiyi, daha uzun vadedeki trendleri görmemiz bizim için zor.
+
+116
+00:20:43,915 --> 00:20:47,336
+Hele de bu böyle binlerce, yüz binlerce satılır olsaydı imkansızlar da gerçekten.
+
+117
+00:20:48,655 --> 00:20:52,956
+Peki aynı veriyi şu şekilde gösterseydim şimdi yorum yapabilir misiniz?
+
+118
+00:20:53,375 --> 00:20:58,076
+Bunlar tamamen aynı veriler. Sadece noktası olarak bir grafik üzerinde gösterdim.
+
+119
+00:20:59,976 --> 00:21:01,476
+A ver hükümeti B, C'de.
+
+120
+00:21:03,796 --> 00:21:16,936
+Şimdi bir şey görüyor musunuz? A kümesi için, B kümesi için, C ve D için sırasıyla konuşalım. Bir paten, bir tren, bir anomali var mı sizce? A kümesi için ne söylersiniz?
+
+121
+00:21:22,324 --> 00:21:33,464
+Trend olarak artıyor gibi gözüksene de, şu örnekler de var, bir art, bir azalan dalgalı bir örnek var. Ama C'de tamamen bizim şekilde arttırma görebiliyoruz ve bir tane A'yı da B'ye.
+
+122
+00:21:35,667 --> 00:21:50,327
+Evet, aslında çok daha kolaylıkla bunları söyleyebiliyoruz değil mi? Çünkü görsel olarak baktığımız zaman C neredeyse mükemmel bir ilişki var, korrelasyon var arasında. X artınca Y de doğrusal olarak artıyor.
+
+123
+00:21:50,327 --> 00:22:02,027
+Tek bir istisnamız var burada. Bu da bizim anomali değerimiz. Ya outlier ya da bir anomali olarak hızlıca görüp test edebileceğimiz bir şey ve geri kalanı...
+
+124
+00:22:02,291 --> 00:22:12,711
+Oldukça net bir ilişki göstermiş. Bunun normalde burada olmasını bekleriz ama şuralarda bir yerde olmuş. Ayrık bir değer. Bunu söylemek çok kolay.
+
+125
+00:22:13,831 --> 00:22:27,651
+A için ne söyleyebiliriz? Dediğiniz gibi yine birlikte artıyorlar. Genel bir korrelasyon baksaydık ne olacaktı? Bu ikisi arasında bir pozitif ilişki var değil mi? X arttıkça Y de artıyor.
+
+126
+00:22:28,531 --> 00:22:45,611
+Bu da lineare yakın. Tabii ki bazı aykırı örnekler var ama ortalamada bir böyle doğru çizseydik şuradan geçerdi değil mi? Tam üzerinden ortasından geçen bir doğru olurdu. Bunun ilişkisi hakkında ne diyebiliriz? Nasıl bir ilişki var, korrelasyon var?
+
+127
+00:22:50,099 --> 00:22:52,139
+Pozitif bir korelasyon diyebiliriz.
+
+128
+00:22:52,419 --> 00:22:59,980
+Aynen. Bunun için de söyleyebiliriz. Pozitif bir korelasyon var. Yani ortalamada x arttıkça belli bir birim kadar y de artıyor.
+
+129
+00:23:00,079 --> 00:23:06,259
+Yani aslında bu bir otomatik olarak düzgün bir linear regresyona fit edebilir.
+
+130
+00:23:07,220 --> 00:23:13,000
+Tabii ki bazı hatalar yapacak ama büyük oranda bir pozitif korelasyon var diyebiliyoruz.
+
+131
+00:23:14,483 --> 00:23:18,124
+Bunu da söylemek oldukça mümkün. Peki burası için ne söyleyebilirsiniz?
+
+132
+00:23:20,983 --> 00:23:32,483
+Hocam, burada sanki belki bir yere kadar artarken belgeselden sonra düşüş yaşıyor. Yani örnek vermek için insanların 30 yaşına kadar belge özellikleri gelişirken son 30 yaşından sonra düşüyor dediğimiz şekilde bir örnek olabilir.
+
+133
+00:23:33,144 --> 00:23:37,743
+Aynen, gayet güzel bir örnek [öğrenci]. Yani bu aslında burada da bariz bir patern var.
+
+134
+00:23:38,175 --> 00:23:45,956
+Patern öncelikle pozitif bir şekilde yükseliyor, bir tepe noktasına ulaşıyor, sonra azalmaya başlıyor.
+
+135
+00:23:46,036 --> 00:23:48,236
+Yani bir polinomik bir şekil var değil mi? Burada gördüğünüz gibi.
+
+136
+00:23:49,155 --> 00:23:54,016
+Yani linear değil ama bir patern var. Bundan söz edebiliriz.
+
+137
+00:23:54,836 --> 00:24:01,056
+Mesela diyelim ki bir örnek vermek gerekirse buna, işte aldığınız kampanya SMS'leri.
+
+138
+00:24:01,652 --> 00:24:06,652
+Şimdi size bir sürü kampanyalar hakkında bilgi veriyorlar. İlk başta hani belki...
+
+139
+00:24:06,708 --> 00:24:15,988
+İndirim oluyor, işinize yarıyor falan ama belli bir yerden sonra artık sizi sinirlendirmeye başlıyor ve o firma hakkında negatif düşünmeye başlıyorsunuz değil mi?
+
+140
+00:24:16,367 --> 00:24:22,668
+Mesela örnek vermek gerekirse belli bir noktaya kadar artıyor, sonra tepe noktasına ulaşıyor, sonrasında artık düşmeye başlıyor.
+
+141
+00:24:22,668 --> 00:24:29,928
+Veya az önceki örnekte olduğu gibi insan boyu belli bir yaşa kadar çocukluktan beri artıyor, artıyor, artıyor.
+
+142
+00:24:34,016 --> 00:24:43,915
+kemik incelenmesini de ile zamanla birlikte kemik erimesi ile boy oranı biraz kısalmaya başlıyor yaşlandığı için.
+
+143
+00:24:44,935 --> 00:24:49,336
+Bu da bir örnek mesela. Gördüğünüz gibi burada bir pattern var. Bunu tespit edebiliyoruz.
+
+144
+00:24:50,056 --> 00:24:50,796
+Burada var mı?
+
+145
+00:24:57,203 --> 00:25:03,943
+Verideki veriyle korrelasyon yok gibi gözüküyor ama diğer verilerden x, diğer verilerini göremediğiniz için onu da önerim atıyorum.
+
+146
+00:25:05,163 --> 00:25:19,503
+Evet, yani bu iki değişken arasında direkt bir korrelasyon yok. Yani y'deki değişiklikler herhangi bir şekilde x'e etki etmiyor. Yani x'deki bir şey ile y'deki değişken arasında direkt bir ilişki yok.
+
+147
+00:25:20,307 --> 00:25:42,307
+Bunu söyleyebiliyoruz. Burada da bariz bir tane ayrık değer var. Bu diğerlerinden çok farklı. Muhtemelen ya anomali ya bir ayrık değer. Bunu da hızlıca test edebiliyoruz. Bunlar arasında direkt bir ilişki olmamasını da aslında test etmek önemli olabiliyor. Bütün bunlar gördüğünüz gibi...
+
+148
+00:25:42,516 --> 00:25:56,240
+Hızlıca yorum yapabilmemize imkan veriyor. Yani aslında bu örnekte biz bunu tablolar şeklinde tuttuğumuz zaman, sayısal verilerde baktığımız zaman görmemiz çok zordu. Bu şablonları yakalamamız çok...
+
+149
+00:25:56,240 --> 00:26:04,019
+Mümkün değildi. Ama aynı veriyi görsel olarak gösterince hepimiz üzerine bazı yorumlar yapabildik.
+
+150
+00:26:04,539 --> 00:26:12,000
+Paternleri daha hızlıca yakalayabildik. Veri boyutu artmasına rağmen aslında görselle çok büyük bir değişiklik olmayacak.
+
+151
+00:26:12,920 --> 00:26:18,960
+Yani daha büyük bir veri setini aynı paternlerde göstermiş olsaydık, görselle yine yakalanma imkanımız olacak.
+
+152
+00:26:18,960 --> 00:26:23,480
+O yüzden görselleştirme gerçekten kritik. Özellikle veriyi anlamı açısından.
+
+153
+00:26:24,243 --> 00:26:31,003
+ve bunu tespit etme açısından, veri keşfi açısından oldukça kritik bir şey.
+
+154
+00:26:31,743 --> 00:26:35,203
+Görselleştirme, veri biliminin, veri madenciliğinin önemli bir aşaması.
+
+155
+00:26:37,236 --> 00:26:52,435
+İsterseniz gelin, biraz da ne tür görselleştirme araçları var, bunları inceleyelim. Hangi araçlar nerede kullanılabilir, bunları konuşalım. Sonrasında da bunların etkili bir şekilde kullanılabilmesi için nelere dikkat etmek gerekecek, onları da konuşacağız.
+
+156
+00:26:52,435 --> 00:26:58,195
+Şimdi eğer kullandığınız ya da daha doğrusu keşfetmeye çalıştığınız değişken,
+
+157
+00:26:58,544 --> 00:27:14,903
+Tek bir değişkense, burada hangi tür görselleri kullanabilirsiniz? Mesela dotplot kullanılabilir, boxplot, histogram, jitterplot, errorplot ya da cumulative distribution function plot gibi farklı değişkenler, farklı görselleştirme ağaçları kullanılabilir.
+
+158
+00:27:16,372 --> 00:27:28,012
+Eğer değişkeniniz iki değişkenden oluşuyorsa, yani görselleştirmeye çalıştığınız şey iki tane değişkenden oluşuyorsa, burada bar chart, scatter plot, line plot, log log plot gibi şeyler kullanılabilir.
+
+159
+00:27:28,872 --> 00:27:37,312
+İkiden fazlaysa, işte burası tek plot ya da işte parallel coordinate plot gibi şeyler kullanılabiliyor.
+
+160
+00:27:38,312 --> 00:27:40,932
+Bunları da biraz daha detaylıca konuşacağız.
+
+161
+00:27:41,492 --> 00:27:43,932
+İsterseniz şöyle yapalım, bir öncelikle...
+
+162
+00:27:44,256 --> 00:28:03,576
+Bir şeyden bahsedelim. Basit olarak bir veriden bahsederken neyi kastediyoruz? Veri nedir? Az önce gördüğümüz gibi bir tablo şeklinde düşünebilirsiniz. Aslında bir data frame değil mi? Yani şu an gördüğünüz şey bir data frame ile aynı şey değil. Data frame ya da bir tablo veya bir Excel dosyası aynı mantıkla.
+
+163
+00:28:11,124 --> 00:28:19,364
+Objelerimiz. Şimdi bu objeyi herhangi bir programlama dili alarak analiz edebilirsiniz, görselleştirebilirsiniz.
+
+164
+00:28:20,744 --> 00:28:31,624
+Görselleştirme açısından Python ya da R gibi araçlar kullanılabilir. Hazır bazı araçlar da var, işte Tableau falan gibi. Onlar da kullanılabilir.
+
+165
+00:28:31,624 --> 00:28:36,504
+Ama programlama arayüzleriyle kullanmak daha avantajlı.
+
+166
+00:28:36,948 --> 00:28:52,668
+Özellikle analitik bazı modellemeler yapacaksanız, mesela Python'da plot fonksiyonu ile Matplot, BIP gibi kütüphaneler ya da Seaborn gibi kütüphaneler kullanılarak bir değişkeni görselleştirebilirsiniz.
+
+167
+00:28:52,788 --> 00:28:57,288
+Veya R'da zaten entegre fonksiyonlarla plot fonksiyonu ile bunu yapmanız mümkün.
+
+168
+00:28:57,828 --> 00:29:02,088
+Ama plot yaptığınız zaman, yani görselleştirdiğiniz şey aslında bir vektör.
+
+169
+00:29:03,059 --> 00:29:09,279
+Data setiniz üzerinde bir tane kolonu plot ettiğiniz zaman bir vektörü görselleştirmiş oluyorsunuz.
+
+170
+00:29:09,339 --> 00:29:15,099
+Yani bir değişken aslında bir data frame'in her bir kolonu kendi başına bir vektör olarak düşünülebilir.
+
+171
+00:29:16,519 --> 00:29:21,339
+Mesela bir görselleştirmede hangi şeyler var? Kısaca onları deneyelim.
+
+172
+00:29:21,940 --> 00:29:37,780
+Basit bir görselde aslında değiştirebileceğiniz parametreler neler? Bir görselden işte kendi ismi title'ı, main title'ı, x label'ı, buna xlab diyelim, y label'ı, ylab.
+
+173
+00:29:40,627 --> 00:29:49,967
+Limitleri neler? Bunları da değiştirebilirsiniz. Yani nereden başlayıp, nerede bitecek y kolonu? X nereden başlayıp, nerede bitecek? Bunları belirtebilirsiniz.
+
+174
+00:29:49,967 --> 00:30:07,967
+Mesela bu R'daki sinteksi ama Python'da da benzer bir sinteksi var. Plot fonksiyonunu kullanıyorsunuz, limitlerini beliriyorsunuz, etiketlerini ve toplam grafiğin kendi etiketini belirleme sonrasında bu plotu görselleştirme yapmış oluyorsunuz.
+
+175
+00:30:09,395 --> 00:30:21,816
+Bunu tabii ki plot yapmadan önce de bazı fonksiyonlar uygulayabilirsiniz. Mesela sort edebilirsiniz veya başka bir değişken dönüşümleri de yapmak mümkün. Bu da genel olarak bahsedebileceğimiz bir şey.
+
+176
+00:30:21,816 --> 00:30:28,816
+Şimdi bir değişken üzerinde bir görselleştirme yapıyorsanız, o değişken...
+
+177
+00:30:30,943 --> 00:30:40,764
+üzerinde dağılımları görmek istiyorsanız. Mesela histogram aslında oldukça kullanışlı bir görsel, veri yanlama açısından, veri keşfi açısından.
+
+178
+00:30:41,463 --> 00:30:44,544
+Histogram ne yapıyor? Verinin dağılımını yansıtıyor.
+
+179
+00:30:45,824 --> 00:30:51,524
+Histogram, bütün bu arayüzlerde tanımlanmış bir grafiksel gösterim.
+
+180
+00:30:52,403 --> 00:30:55,943
+Histogram'ın yaptığı şey şu, her bir aralık için...
+
+181
+00:30:55,983 --> 00:31:00,563
+frekansının, y değişkeni bizim frekansımızı gösteriyor. Yani kaç defa görülmüş demek.
+
+182
+00:31:01,703 --> 00:31:13,323
+80 ile 90 arasında yaklaşık 50 defa, 90 ile 100 arasında 220 defa gibi böyle aralıkları görebiliyorsunuz.
+
+183
+00:31:15,508 --> 00:31:34,508
+Ama histogram şöyle bir yanılsama sebebiyet verebilir. Şimdi şuraya bakınca ne görüyorsunuz? Aslında diyorsunuz ki 110 ile 120 arasında bütün aralıklar böyle uniform şekilde, yani standart bir şekilde bunun civarında, 1000 civarında diye bir çıkarım yapıyorsunuz.
+
+184
+00:31:42,675 --> 00:31:59,375
+parametre olarak belirliyor. Örnek verelim. Aslında eğer bu aralıkları onar birim kutular barlar şeklinde değil de ikişer birim barlar şeklinde alsaydınız az önceki veri bu şekilde gözükecekti.
+
+185
+00:32:00,468 --> 00:32:27,808
+Yani ne oluyor? Aslında 110 ile, 118 ile 120 arasında çok yüksek bir frekans var. Diğer aralıklar daha düşük. Ama buraya bakınca neredeyse bütün hepsi böyle eşitmiş gibi gözüküyor. Bu da sizi yanıltabilir. Buna da dikkat etmek lazım. O yüzden o barların genişliği de önemli. Bunu da break dediğimiz bir parametreyle kendiniz belirleyebiliyorsunuz. O açıdan hani bu barlara da dikkat etmek lazım.
+
+186
+00:32:29,587 --> 00:32:34,087
+Diğer bir değişken bir grafik çart ise bar graf.
+
+187
+00:32:35,028 --> 00:32:38,668
+Şimdi bar grafın az önceki histogramdan farkı nedir?
+
+188
+00:32:43,604 --> 00:32:44,604
+Sizce?
+
+189
+00:32:47,303 --> 00:32:50,604
+Bu da frekansı gösteriyor. Farkı ne?
+
+190
+00:33:01,523 --> 00:33:05,343
+Veya bir farkı var mı? Chatten yazan arkadaşımız oldu.
+
+191
+00:33:05,723 --> 00:33:12,443
+Orada nümerik değerleri gösteriyoruz. Burada kategorik olarak belli label'larımız var. Onların ne kadar tekrarlandığını söylüyoruz.
+
+192
+00:33:13,803 --> 00:33:21,183
+Doğru. Yani aslında ikisi de değişik değerleri gösteriyor değil mi? [öğrenci] mıydı? [öğrenci] sen söylemişti değil mi?
+
+193
+00:33:23,983 --> 00:33:28,463
+[öğrenci]'ın söylediği de doğru. Yani bar graf aslında neyi gösteriyor?
+
+194
+00:33:28,980 --> 00:33:56,180
+Bunlar bir kategorik değişken. Aslında her bir şey, buradaki değer bir kategorik değişken. Kategorik değerin frekansını görüyoruz. Yani burada aslında mesela bu verisi de bakalım, cause of death'e bakalım. Birisi accident, birisi homozyed, suicide bilmem ne. Bunlar her birisi farklı bir kategori. Aynı nümerik değişkenin devamı değil.
+
+195
+00:33:58,132 --> 00:34:05,892
+Histogram'dan asıldı. Histogram tek bir değişkenin, nümerik değişkenin, yani sürekli değişkenin dağılımını gösteriyor.
+
+196
+00:34:06,832 --> 00:34:15,112
+Buradaki bir sürekli değişken. Bir sürekli değişken. Yaklaşık bir normal limsi bir dağılım göstermiş. Normal dağılma oldukça yakın bir şekli var.
+
+197
+00:34:15,112 --> 00:34:23,947
+Ama buradaki her bir aralık, her bir bar, bir kategorik değeri göstermiyor. Her birisi sayısal olarak...
+
+198
+00:34:24,115 --> 00:34:26,076
+değer aralıklarını gösteriyorum.
+
+199
+00:34:26,695 --> 00:34:29,376
+Burada ise kategoriler birbirinden farklı şeyler.
+
+200
+00:34:30,615 --> 00:34:36,796
+Birisi kategorik değerlerde, diğeri ise histogram ise sürekli değişkenlerde kullanılır.
+
+201
+00:34:37,016 --> 00:34:37,855
+Böyle bir farkı var.
+
+202
+00:34:38,175 --> 00:34:40,056
+Görsel olarak bir fark görüyor musunuz?
+
+203
+00:34:47,572 --> 00:34:48,992
+Barlar birbirinden ayrık burada.
+
+204
+00:34:50,552 --> 00:35:00,132
+Aynen. Fark ettiğiniz gibi barlar birbirinden ayrık. Aslında bu da şeyi gösteriyor. Bunlar kategorik olarak kodlandığı ve birbirinden başka şeyler olduğunu gösteriyor.
+
+205
+00:35:00,891 --> 00:35:15,084
+Şeyde ise, evet, [öğrenci] da söyledi, sütun arasında boşluklar var. Şeyde, histogramda bu yok. Çünkü histogramda boşluk olabilir ama bu orada değer olmadığı için olur. Ama normalde birbirine tamamen...
+
+206
+00:35:15,635 --> 00:35:19,796
+bitişik şekilde gösterilir. Çünkü bunlar birbirinin devamı. Başka bir şeyden bahsetmiyoruz.
+
+207
+00:35:20,836 --> 00:35:25,596
+O yüzden hani kullandığınız değişkenin niteliğine göre görselleştirmeyi seçmek gerekiyor.
+
+208
+00:35:27,219 --> 00:35:43,739
+Güzel bir soru. Ama şuna dikkat etmeniz lazım. Şimdi normalde siz bir data frame veya herhangi bir tablo yapısıyla analiz yapıyorsanız, bar grafı oluştururken aslında sizin frekansınız yok değil mi? Kaç defa geçtiğini bilmiyorsunuz. Daha doğrusu var içerisinde ama hesaplı değil.
+
+209
+00:35:44,128 --> 00:36:04,028
+bar grafı oluşturmak için sizin öncelikle frekansı hesap etmeniz lazım. Öncesinde her bir satırda kaç tane satırda geçiyor bu kategorik değer, diğeri kaç defa geçiyor, diğeri kaç defa geçiyor. Bunu hesaplamanız lazım. Mesela R'da bunu yapacak olsaydınız yine bar plot fonksiyonunu kullanıyorsunuz ama öncesinde
+
+210
+00:36:04,851 --> 00:36:11,471
+Her bir kategori kaç defa geçiyor? Bunu count etmeniz lazım. Burada table fonksiyonu onu yapıyor.
+
+211
+00:36:11,992 --> 00:36:18,371
+Python'da da benzer şekilde count'a hesap edip sonra count sayısını frekans olarak vererek bar plot oluşturursunuz.
+
+212
+00:36:18,371 --> 00:36:20,112
+Histogram'da buna gerek var mıydı?
+
+213
+00:36:24,788 --> 00:36:28,228
+Yani aralıklara kaç defa düştüğünü hesap etmeniz gerekiyor mu?
+
+214
+00:36:31,699 --> 00:36:38,920
+Instagram'da gerekmiyor. Kendisi zaten onu aralıklara göre kırılımını hesap ediyor. Böyle bir farklı söz konusu.
+
+215
+00:36:39,659 --> 00:36:51,159
+Şimdi özellikle görselleştirmelerde belli bir noktayı highlight edip, belli bir noktayı ön plana çıkarmak, özellikle böyle bunu başkalarına aktarırken iletişim anlamında çok faydalı olabiliyor.
+
+216
+00:36:52,039 --> 00:36:57,699
+Bunu da yapmak mümkün. Aslında çok basit bir şekilde yapmak mümkün. Mesela diyelim ki...
+
+217
+00:36:57,972 --> 00:37:09,711
+Bu bizim histogramımız. Gördüğünüz gibi normal dağılma benzer bir yapı var. Buralar bizim normal değerlerimiz. Ama buradan daha yüksek kilolu olanlar mesela yüksek riskte.
+
+218
+00:37:10,451 --> 00:37:17,132
+Veya işte bir ölçüm değeri var, sıcaklık, çok yüksek sıcaklık veya işte hümetli de çok yüksek gibi bir değişken olsun.
+
+219
+00:37:24,467 --> 00:37:29,728
+highlight, ön plan çıkarma yapabilirsiniz. Mesela bunu çok basit bir şekilde nasıl yaparız?
+
+220
+00:37:29,847 --> 00:37:41,788
+Biz arka planda bir histogramımız var. Üzerine bir rectangle, bir dikdörtgen ekleyip tepesine de bir text ekleyerek işte burası bizim riskli bölgemiz gibi bir şey yapmak mümkün.
+
+221
+00:37:44,659 --> 00:37:55,199
+Diğer bir görselleştirme aracı da pie chart. Peki pie chart sizce histograma mı daha çok benziyor yoksa bar grafa mı daha çok benziyor netelik olarak?
+
+222
+00:38:05,076 --> 00:38:08,716
+Hepimiz pay çarkları görmüşüzdür. Buradaki gibi bir yapı var.
+
+223
+00:38:12,036 --> 00:38:16,076
+[öğrenci] da [öğrenci] de bar graph demiş. Neden bar graph dediniz?
+
+224
+00:38:23,923 --> 00:38:24,963
+Kategorik, doğru.
+
+225
+00:38:25,364 --> 00:38:32,724
+Çünkü aslında bar graf kategorik bir değeri gösterir değil mi? Yani şekil olarak burada yanıltıcı olabilir.
+
+226
+00:38:32,924 --> 00:38:42,064
+1, 2, 3 gibi sıralamışız. Böyle dolayısıyla bunlar sayısal değer gibi bir algı oluşturabilir ama aslında bunlar kategorik değerler.
+
+227
+00:38:42,064 --> 00:38:50,924
+Yani bunlar birbirinden bağımsız şeyler. Birinci kategori diyelim ki elma, ikincisi, armut, üçüncüsü, portakal gibi farklı kategorilere de tekabül ediyor.
+
+228
+00:38:51,604 --> 00:38:53,064
+Dolayısıyla bunlar da aslında...
+
+229
+00:38:53,364 --> 00:39:03,404
+bizim bar graf ile aynı şey ifade etmiş olur. Sadece bir pasta dilimi %100'ü ifade ettiği için böyle bir farklılık var.
+
+230
+00:39:04,184 --> 00:39:11,564
+Bu arada hani pay çarkılara geleceğiz ama genel olarak çok tavsiye edeceğim bir grafik türü değil. Onu da şimdiden söyleyeyim.
+
+231
+00:39:12,115 --> 00:39:23,915
+Diğer bir nokta da Boxplot. Boxplot da oldukça güzel bir grafik. Peki Boxplot hangisine daha çok benziyor? Histograma mı yoksa bar grafa mı?
+
+232
+00:39:30,387 --> 00:39:35,227
+Bakalım, histogram demiş [öğrenci]. Neden histogram? Onu da söyleyebilir misin?
+
+233
+00:39:40,820 --> 00:39:51,699
+Sürekli veri oluşun değil mi? Aralık dağılımı aslında. Yani Boxplot'ta, histogramda temel olarak ne yapıyor? Verinin sürekli değerin dağılımını gösteriyor.
+
+234
+00:39:52,480 --> 00:39:59,880
+Buradaki sürekli değerimiz, buradaki değişkenimiz aslında tek bir değişken. Minimum, maksimum ve medyan değer.
+
+235
+00:40:00,000 --> 00:40:11,000
+1. 3. 4. kuartaylar da bizim yüzdelik dirime. Sıraladığımız zaman o arada kaç tanesi düşüyor, nereye düşüyor? Bunu gördüğümüz bir graf.
+
+236
+00:40:11,460 --> 00:40:22,079
+Boxplot aslında çok faydalı bir grafik. Bu Boxplota mesela şunu yapıyoruz. Şunu göstereyim hızlıca. Şimdi bir Boxplotumuz var.
+
+237
+00:40:26,771 --> 00:40:34,211
+Şu ortadaki değer, bu tam ortada olmak zorunda değil. Mesela şurada da olabilir. Bu bizim median değerimiz.
+
+238
+00:40:36,771 --> 00:40:44,211
+Median, yani şu oluyor, bütün değerleri büyükten küçüğe sıralamış olsaydık...
+
+239
+00:40:48,692 --> 00:40:51,192
+Bizim ortanca değerimiz.
+
+240
+00:40:54,231 --> 00:40:56,532
+Medyanın şöyle bir önemi var.
+
+241
+00:40:57,352 --> 00:41:03,672
+Medyan aslında ortalamalarda, mean'de nasıl bir farklı sıkıntı var?
+
+242
+00:41:03,792 --> 00:41:13,052
+Mean ortalamada eğer bazı değerler uç örnekler burada veya burada az sayıda olmasına rağmen ortalamayı kaydırabilir.
+
+243
+00:41:13,272 --> 00:41:14,752
+Tam orta noktadan kaydırabilir.
+
+244
+00:41:16,275 --> 00:41:28,235
+Biz büyükten güçe sıralayıp tam orta noktadaki değeri aldığımız için daha tutarlı, böyle ayrık değerlere daha tutarlı bir değer oluyor. Bu medyanı gösteriyor.
+
+245
+00:41:29,675 --> 00:41:35,935
+Bir de şurası. Şimdi burasına biz Q1 diyoruz. Burası da Q3 oluyor.
+
+246
+00:41:42,996 --> 00:41:51,456
+IQR şeklinde ifade ediliyor. IQR'ın açılımı şu interquartile range. Yani IQR,
+
+247
+00:41:57,096 --> 00:42:08,255
+Q3'teki sıradaki değerin Q1'den çıkarımı arasındaki fark. Yani diyelim ki burası Q3 oluyor, burası Q4.
+
+248
+00:42:09,076 --> 00:42:34,655
+Şurada Q2 oluyor medyan. Şurada Q1 var. Bu hani yaş olarak düşünseydik, burası işte diyelim sıfır olsun. Bu Q1 belki yirminci, on dokusuncu yaşa denk tekabül ediyor. Belki ortalama medyan yaş 33. Şurası belki 50. İşte max da işte diyelim ki 82 olsun.
+
+249
+00:42:35,284 --> 00:42:36,964
+Sizin dataset'inizde böyle dağılmış.
+
+250
+00:42:38,044 --> 00:42:42,844
+Şimdi IQR aslında şu 50 ile şu değerin farkının oluyor.
+
+251
+00:42:42,844 --> 00:42:46,584
+IQR'ın şöyle bir kullanım özelliği var.
+
+252
+00:42:47,204 --> 00:42:52,424
+Şimdi bir değerin outlier ya da ayrık değer olmasını tespit ederken
+
+253
+00:42:52,424 --> 00:43:00,864
+1.5 artı eksi IQR çıkarıyoruz medyandan.
+
+254
+00:43:03,603 --> 00:43:16,563
+onun üstünde veya altında kalan değerleri potansiyel olarak, eksi artı, bir buçuk çarpı, şunu şöyle yapayım.
+
+255
+00:43:23,411 --> 00:43:41,831
+1.5 çarpı IQR değeri. Bizim medyandan farkı şunu gösteriyor. Acaba bizim değerimiz outlier olarak sınıflandırılabilir mi, sınıflandırılamaz mı? Genel istatistik yaklaşım olarak.
+
+256
+00:43:42,452 --> 00:43:52,811
+kullanıldığı oluyor otomatik olarak. Alpire Detection için tespit edilen bir özellik olarak kullanılıyor. Genel bir kanı budur. Ama her zaman öyle olacak diye bir şey yok bu arada.
+
+257
+00:43:55,532 --> 00:44:08,992
+Boxplot'ta aslında histogramın böyle dikey versiyonu gibi düşünebilirsiniz. Bu da oldukça faydalı bir görselleştirme. Yine tek bir değişken için yapabileceğiniz için çok sayıda değişken için de birlikte yapıp karşılaştırma yapabilirsiniz.
+
+258
+00:44:09,780 --> 00:44:23,019
+Mesela burada sadece 6 tane değişkenimiz var. Bunlara bakarak, bu histobor, bar provatlara bakarak sizce en az varyasyon değişken içinde hangi değişkende gerçekleşiyor?
+
+259
+00:44:26,708 --> 00:44:29,788
+Bu 6 değişken içinde en azı varyasyon hangisinde görülür?
+
+260
+00:44:34,771 --> 00:44:35,452
+Açık mavide.
+
+261
+00:44:36,452 --> 00:44:43,412
+Açık mavide değil mi? Buradaki hip dediğimiz değerde gözüküyor. Bunu nasıl anladık?
+
+262
+00:44:45,932 --> 00:44:49,412
+Değerler birbirine hep yakın. Belli bir arka sıkışma.
+
+263
+00:44:49,412 --> 00:44:52,412
+Evet, yani bu köşe dikdörtgenin...
+
+264
+00:44:53,076 --> 00:45:04,476
+alanı dar değil mi? Yani birbirine çok yakın. Yani bu aslında Q3 değerini gösteriyor, bu Q1 değerini gösteriyor. Q1 ile Q3 arasındaki fark o kadar yüksek değil. Yani birbirine yakın. Demek ki varyasyon düşük.
+
+265
+00:45:05,675 --> 00:45:16,436
+Burası için aynısını söyleyemiyoruz. Çünkü burada aradaki fark gördüğünüz gibi açılıyor. Hali de varyasyon büyüyordur. Bu değişkenin varyasyonu diğerlerine karşılaştırınca daha yüksek.
+
+266
+00:45:16,820 --> 00:45:22,639
+Böyle de faydaları var. Yani bir genel kanı elde edebiliyorsunuz o değişkenin dağılımı hakkında.
+
+267
+00:45:23,780 --> 00:45:24,920
+Boxplot kullanarak.
+
+268
+00:45:28,320 --> 00:45:34,260
+Boxplot, bu tek değişkenler için şimdi saymıştık. Şimdi ikili değişkenleri de konuşacağız.
+
+269
+00:45:34,760 --> 00:45:39,119
+Ama öncesinde isterseniz bir ara verelim. Sorusu olan var mı buraya kadar?
+
+270
+00:45:46,003 --> 00:45:51,324
+Tamam, sorunuz yoksa bir 13 dakika ara vereceğiz. Saat 3'te kaldığımız yerden devam edeceğiz.
+
+271
+00:45:52,583 --> 00:45:53,324
+Görüşmek üzere.
+
+272
+00:59:48,980 --> 00:59:50,599
+Şimdi kaldığımız yerden devam edelim.
+
+273
+00:59:53,599 --> 01:00:02,639
+Hocam, sınıflandırı dersten önce paylaşma imkanınız var mı sonraki dersler için? Bir yalçıkta olarak alıp üzerinde not almaya şansımız olur.
+
+274
+01:00:03,059 --> 01:00:14,759
+Tabi tabi paylaşacağım. Bugün de paylaşacaktım. Unuttum. Araya toplantılar girdi. Bundan sonra daha erken paylaşacağım. Hatta isterseniz şimdi hemen göndereyim.
+
+275
+01:01:06,708 --> 01:01:07,748
+gelmiş olması lazım.
+
+276
+01:01:13,268 --> 01:01:13,788
+Güzel.
+
+277
+01:01:30,996 --> 01:01:34,296
+Tamam, şu an gelmiş şeyden, online'dan bakabilirsiniz sizden.
+
+278
+01:01:36,736 --> 01:01:38,416
+Hocam, bir soru sorabilir miyim acaba?
+
+279
+01:01:38,516 --> 01:01:39,036
+Tabii, buyurun.
+
+280
+01:01:39,736 --> 01:01:43,356
+Dersten çıkmadan önce bir soru sormuştunuz ya, bir önceki slide'a gelebilir miyiz?
+
+281
+01:01:44,476 --> 01:01:45,036
+Tabii.
+
+282
+01:01:46,316 --> 01:01:51,676
+Evet, burada outlier'lara bakmamız gerekmiyor, sorduğumuz soru acaba.
+
+283
+01:01:53,268 --> 01:02:06,327
+Aslında tabii ki A6'la ayrılara bakmak lazım. Ama genel bir kanı elde etmek için şey yeterli. Burada bu Q1-Q3 arası genel bir fikir veriyor.
+
+284
+01:02:06,719 --> 01:02:28,879
+Çok outlier varsa bunlar tabii ki varyansı artırabilir. O sapmayı artırabilir. Ama bunun bu kadar büyük olması beklenmiyor genelde. Bu Q1-Q3 arasındaki genişlik bizim varyans hakkında, sapma hakkında fikir elde etmemiz için yeterli.
+
+285
+01:02:29,980 --> 01:02:31,339
+Tamam, teşekkür ederim. Sağ olun.
+
+286
+01:02:31,400 --> 01:02:32,199
+Teşekkür ederim.
+
+287
+01:02:32,980 --> 01:02:54,380
+Şimdi isterseniz devam edelim. İkinci örnek olarak şunu verelim. Eğer iki değişken kullanıyorsak bu durumda bir scatterplot örneği mesela uygun bir örnek olur. Peki scatterplot'ta hangi tür verilerin grafiğini çizebiliriz? Hangi tip?
+
+288
+01:03:01,523 --> 01:03:03,724
+İki değişkenin de nasıl özellikle olması lazım?
+
+289
+01:03:06,023 --> 01:03:06,844
+Ayrık değil mi hocam?
+
+290
+01:03:07,764 --> 01:03:12,204
+İkisinin de evet, yani ayrık da olabilir, şey de olabilir tabii ki.
+
+291
+01:03:13,164 --> 01:03:20,244
+Sürekli değer de olabilir ama ayrık gibi ifade edeceğimiz, noktası olarak ifade edeceğimiz değerler.
+
+292
+01:03:20,755 --> 01:03:33,956
+Yani bu kategorik olmaz. Diğer bir ifadeyle. Kategorik değerleri biz skater polatta gösteremeyiz. Biz kritik ya da sürekli değerler ama sürekli değerleri de yakın sayarak yapabiliriz.
+
+293
+01:03:33,956 --> 01:03:45,956
+Yani tam sayı olmak zorunda değil. Mesela bu aslında bir tam sayı değil, bu sürekli bir değer ama noktası olarak tespit edebileceğimiz değerler haliyle bunları...
+
+294
+01:03:46,324 --> 01:03:53,324
+İki tane nümerik değişkeni biz scatterplot kullanarak yapabiliriz.
+
+295
+01:03:53,944 --> 01:04:02,844
+Scatterplot'un güzel avantajı şu, böyle ayrık değerleri, farklı anomalleri iki değişken arasındaki ilişkileri görmeye fayda sağlıyor.
+
+296
+01:04:02,844 --> 01:04:09,104
+Mesela bu iki değişken arasında nasıl bir ilişki var, nasıl bir korelasyon var mı, varsa hangi yönlü söyleyebilir misiniz?
+
+297
+01:04:11,987 --> 01:04:13,627
+Pozitif korelasyon var hocam.
+
+298
+01:04:13,967 --> 01:04:23,167
+Evet, pozitif bir korelasyon var. Bunu görmemiz mümkün. Yani belli bir noktadan başlıyor ama sonrasında gördüğünüz gibi bir pozitif korelasyon var.
+
+299
+01:04:24,027 --> 01:04:29,427
+Bu da mesela aslında illa sıfırdan başlamak zorunda değil. Onu da görebiliyoruz.
+
+300
+01:04:32,307 --> 01:04:37,827
+Line plot benzer bir grafik görsel. Yine bu da iki tane.
+
+301
+01:04:38,255 --> 01:04:47,735
+sürekli ya da diskret değişkeni gösterir. Numerik olması lazım. Ama bir farkı var. Lineplot'un, scatterplot'tan farkı nedir sizce?
+
+302
+01:04:50,035 --> 01:04:54,455
+Continuous değer işlemesi, sinyaller ya da zaman verileri gibi.
+
+303
+01:04:56,788 --> 01:05:13,307
+Yani burada kontinüüs bir değer olması lazım ve zamanı bağımlı olarak devam edebilir, sinyal olabilir. Ama aslında sıralı bir değer olması gerekiyor değil mi? Yani bir şeye göre, ikisindeki bir değişkene göre değişiyor.
+
+304
+01:05:14,307 --> 01:05:20,947
+Mesela burada tek bir noktaya, ikisindeki tek bir noktaya, y'de tek bir nokta tekabül ediyor.
+
+305
+01:05:21,684 --> 01:05:27,004
+olması gerekiyor, line plot için. Aynı şey, scatter plot için bir zorunluluk mu?
+
+306
+01:05:30,224 --> 01:05:38,884
+Değil. Yani scatter plotta örnek verelim. Mesela şöyle olsaydı, x'ye. Şu geçerli bir şey.
+
+307
+01:05:41,464 --> 01:05:42,844
+Bir sürü şey olabilir.
+
+308
+01:05:46,036 --> 01:05:52,536
+Yani aynı x1 üzerinden birden çok data noktası y'de olabilir.
+
+309
+01:05:54,236 --> 01:05:54,956
+Her birisi farklı.
+
+310
+01:05:54,956 --> 01:06:03,316
+Ama işte bu y1, y2, y3 bunların her birisi x değeri x1'e tekabül ediyor.
+
+311
+01:06:03,876 --> 01:06:06,376
+Ama line plot çizemezsiniz bunda.
+
+312
+01:06:07,156 --> 01:06:09,956
+Line plot için her bir...
+
+313
+01:06:10,195 --> 01:06:31,935
+değerin sadece bir tane G'ye tekabülmesi lazım. Herhangi bir nokta da olabilir fark etmez artan azalan ama söz konusu noktanın sadece bir tane değeri tekabülmesi lazım. Yani bu değerler sıralı ve işte sıralı değerler sıralı sürekli değer diyelim. Sürekli değerler için geçerli.
+
+314
+01:06:39,827 --> 01:06:54,168
+Skate değerleri için geçerli. Burada bir line çizme yaparsanız böyle garip garip şeyler olabilir. Haliyle böyle bir sürekli trend, sıvadı yapı söz konusu değildir Skate atıl hatta.
+
+315
+01:06:56,500 --> 01:07:17,400
+Şimdi line plot oldukça avantajlı etkiler gösterebiliyor. Özellikle sinyal, sıralı veri, time series bunlar için çok önemli. Çünkü bize belli bir değişken üzerinde, mesela zaman üzerinde değişim gösteriyor. Burada işte zamana göre hisseler, hisse fiyatları. Burada birden çok ekleyip lejant ekleyebilirsiniz.
+
+316
+01:07:20,239 --> 01:07:27,880
+değişkenin zamana göre farklılıklarını görebiliyorsunuz. Belli bir noktada örtüşüyorlar, farklı noktalarda ayrışabiliyorlar.
+
+317
+01:07:28,360 --> 01:07:36,400
+Genel bir trendi yakalamışlar ama burada tam zıt yönde hareket edilmiş. Bunları karşılaştırma yapmak için oldukça faydalı bir grafik duru.
+
+318
+01:07:39,000 --> 01:07:47,000
+Bunun yanında bir de mesela mozaik plat dediğimiz bir grafik var. Bunun farkı nedir?
+
+319
+01:07:52,244 --> 01:08:01,124
+istedim. Mosaic plot'ta iki ya da üç değişken kullanılabilir ama sıklıkla iki değişken üzerinden kullanılıyor.
+
+320
+01:08:01,244 --> 01:08:06,124
+Mosaic plot, kategorik değerlerin frekans dağılımını göstermek için.
+
+321
+01:08:06,675 --> 01:08:22,716
+kullanılır. Mesela burada iki tane değişkenin birbiri üzerinde etkisi. Mesela diyelim ki aşı olanların COVID geçirme oranıyla aşı olmayanların COVID geçirme oranının dağılımını görmek istiyorsunuz. Yine bir dağılım ama bu kategorik değerlerin karşılaştırılması üzerine.
+
+322
+01:08:24,716 --> 01:08:27,435
+Burada mesela işte diyelim ki kontrol grubun
+
+323
+01:08:27,764 --> 01:08:37,943
+değerleri, malarya olma ihtimali, olmama ihtimali, tedavi olmuş olanlardan malarya olmayanların gibi karşılaştırma yapabiliyorsunuz.
+
+324
+01:08:38,003 --> 01:08:40,724
+Burada da frekans dağılımı görmek söz konusu.
+
+325
+01:08:41,844 --> 01:08:43,863
+Üç boyutlu yapılabilir ama daha karışıyor bu.
+
+326
+01:08:44,943 --> 01:08:52,083
+Üçüncü bir kategoriye göre de karşılaştırmak mümkün ama o çok verimli bir görsel olmuyor işlemi açısın.
+
+327
+01:08:53,395 --> 01:09:02,055
+Bunun yanında bir de bazen bütün veri setini görselleştirmek isteyebilirsiniz. Burada da genel bir çıkarım yapmaya faydalı olabiliyor.
+
+328
+01:09:03,115 --> 01:09:06,395
+Mesela böyle Matrix olarak aslında datasetlerin...
+
+329
+01:09:06,804 --> 01:09:15,804
+Bu skater otağımı çizmek mümkün. Karşılıklı olarak mesela bu age ile weight arasında bir ilişki var mı? Bunu görüyorsunuz.
+
+330
+01:09:16,244 --> 01:09:22,064
+Veya age ile height arasında bir ilişki var mı? Weight ile height arasında bir ilişki var mı? gibi gösterebilirsiniz.
+
+331
+01:09:22,164 --> 01:09:29,923
+Burası da bunun transpozu aslında. Aynı ismi transpozu. Bunun gibi böyle genel bakış aşıları da fayda sağlayabiliyor.
+
+332
+01:09:34,804 --> 01:09:40,363
+Genel olarak özetlemek gerekirse bunlar belli başlı grafik toolları.
+
+333
+01:09:40,923 --> 01:09:48,963
+Ama bunun yanında da başka araçlar var. Biraz onları da konuşacağız ama bunlardan biri o kadar önemli konuysa şu.
+
+334
+01:09:51,203 --> 01:09:59,404
+Görselleştirme kendi başına bir şey ifade etmiyor. Bunun etkili olabilmesi için bazı konulara dikkat etmeniz gerekiyor. İsterseniz onları birlikte işleyelim.
+
+335
+01:10:00,000 --> 01:10:08,760
+Yani bunları bir beş başlık altında toplamak gerekirse etkili görselleştirme, veri keşfi bağlamında veya iletişim bağlamında olabilir.
+
+336
+01:10:09,579 --> 01:10:11,840
+Beş tane temel özelliği olması beklenir.
+
+337
+01:10:11,840 --> 01:10:15,039
+Öncelikle bir grafiksel integriti beklenir.
+
+338
+01:10:15,412 --> 01:10:40,192
+mümkün olduğunca basit olmasını isterseniz doğru görselleri, doğru grafikleri kullanmak gerekiyor. Renkler varsa bunlara dikkat etmek lazım. Son olarak aslında biz görselleri yaparak verinin hikayesini anlatmaya çalışıyoruz. Bu hikaye nedir? Bunu aslında tanımlayabilmek. Bu da önemli bir şey. Düzgün bir şekilde hikayeleştirmek görseli.
+
+339
+01:10:40,543 --> 01:10:43,663
+Bunun etkili bir şekilde aktarılmasına katkı sağlıyor.
+
+340
+01:10:44,724 --> 01:10:47,644
+İsterseniz bunları biraz daha detaylıca inceleyelim.
+
+341
+01:10:47,743 --> 01:10:57,043
+Şimdi ilk olarak grafiksel integriti ya da grafik tutarlığı ya da dürüstlüğü diye ifade edebiliriz bunu.
+
+342
+01:10:57,043 --> 01:10:59,043
+Bunu bir örnekle açıklayalım.
+
+343
+01:10:59,183 --> 01:11:02,103
+Şimdi bu örneğe bakarsanız hep birlikte bakalım.
+
+344
+01:11:02,263 --> 01:11:04,043
+Şuradan sanırım görebiliyorsunuz.
+
+345
+01:11:05,123 --> 01:11:06,403
+Hatta şunu yukarı çekeyim.
+
+346
+01:11:07,475 --> 01:11:19,975
+Burada, mesela bu grafikte ne görüyorsunuz? Bu grafik sizce düzgün mü? Veya bir hata var mı? Varsa bu hata nedir sizce?
+
+347
+01:11:22,036 --> 01:11:31,915
+En alttan %35'e çıkarken gösterdik değişim çok az gözükürken, 39 ile 35 arasında çok devasa bir fark varmış gibi gösteriyor ama aslında %4'lük bir fark var.
+
+348
+01:11:32,735 --> 01:11:34,876
+Aslında burada ne yapmaya çalışıyorlar sizce?
+
+349
+01:11:36,724 --> 01:11:40,583
+Çok fazla artmış gibi göstermeye çalışıyor ama aslında öyle değil.
+
+350
+01:11:41,423 --> 01:11:43,884
+Evet, aslında o [öğrenci] da söyledi.
+
+351
+01:11:43,963 --> 01:11:46,363
+Aslında burada bir algı operasyonu var.
+
+352
+01:11:46,543 --> 01:11:48,344
+Yani bu çok varlız bir şekilde görebiliyorsunuz.
+
+353
+01:11:48,744 --> 01:11:49,283
+Ne yapıyor?
+
+354
+01:11:51,724 --> 01:11:55,264
+35'ten 39'a aradaki fark ne?
+
+355
+01:11:55,304 --> 01:11:56,164
+Aslında %4 nokta.
+
+356
+01:11:56,692 --> 01:12:07,711
+Altılık bir fark. Ama boyutlara bakınca sanki 5 kat artmış gibi veya 10 kat artmış gibi, bu aralık diyelim ki 5 kat artmış gibi bir ifade yerleştirmeye çalışıyorlar.
+
+357
+01:12:07,851 --> 01:12:20,412
+Aslında bir algı operasyonu veya algı yanılma yasayı kullanıyorlar. Bu bir problem. Diğer bir problem ne? Bu bir nasıl bir grafik? Bu grafiğin aslında tipi ne?
+
+358
+01:12:29,876 --> 01:12:30,756
+Bargraf sanırım.
+
+359
+01:12:31,195 --> 01:12:37,655
+Bargraf, evet. Bu bir bargraf. Yani aslında iki tane şey var burada, kategorik değer var.
+
+360
+01:12:37,655 --> 01:12:52,015
+Now dediği şu an olan, işte January 2013'te, işte Ocak 2013'te vergiler ne kadar artacak eğer bu vergi indirileri kalkarsa diye bir şey.
+
+361
+01:12:53,043 --> 01:12:59,804
+Bu aslında şunu gösteriyor. Bu bar graf normalde başlangıcı nevizdir bar grafın?
+
+362
+01:13:05,235 --> 01:13:26,195
+Bargrafın aralığı nedir? Frekans gösteriyoruz. Sıfırdan başlar değil mi? Yani genellikle böyle bir dağılım burada, yüzdesel dağılım yapıyorsanız en fazla sıfırla yüz arasında bir değer olması bekleniyor. Nereden başlıyor burada? 34'den başlıyor değil mi? Neden sıfırdan başlamıyor? Aslında sıfırdan başlasa böyle bir fark olmadığını göreceğiz değil mi?
+
+363
+01:13:27,412 --> 01:13:50,252
+Bu işte bir grafiksel olarak tutarsızlığın ya da bir ajandayı gösteriyor. Böyle şeyler çok riskli. Bir kez bu güveni kaybettikten sonra, çünkü sizin burada bariz bir ajandanız olduğu belli oluyor, artık sizin yaptığınız veriyle ilgili analitik sonuçlara, veriyle ilgili yaptığınız çıkarımlara güven kaybolur.
+
+364
+01:13:56,020 --> 01:14:10,840
+Aslında olması gereken bu. Sıfırdan başlaması gerekiyor bar grafın. Gerçek değeri 35. Eğer vergi artışı gerçekleşirse bu da 39.6'ya çıkacak. Yani bu aradaki fark bu kadar dramatik gözükmüyor değil mi şu an?
+
+365
+01:14:12,980 --> 01:14:18,579
+Şu an öyle bir dramatik fark yok. Yani daha makul bir fark var. Yani gerçek olması gereken bu.
+
+366
+01:14:19,315 --> 01:14:25,315
+Bu da grafiksel integritinin ne kadar önemli olduğunu gösteriyor.
+
+367
+01:14:25,995 --> 01:14:30,735
+İsterseniz bunu başka bir örnekle çeşitlendirelim. Bu da yine bir Fox News haberi.
+
+368
+01:14:31,036 --> 01:14:37,175
+Amerika'daki Fox haber. Burada var mı bir problem? Nedir varsa ne görüyorsunuz?
+
+369
+01:14:43,923 --> 01:14:49,384
+Eylül'den Mart'a atlamış. Bu sefer X80'e büyük bir atlama var ama aslında daha uzun bir aralık.
+
+370
+01:14:52,123 --> 01:14:57,043
+Başlığı ne şeyin? Grafiğin başlığı.
+
+371
+01:14:59,804 --> 01:15:01,164
+İş kaybının.
+
+372
+01:15:02,003 --> 01:15:07,224
+Çeyreksel iş kaybı değil mi? Burada çeyrekler var mı peki? Bunlar çeyreklere mi tekabül ediyor?
+
+373
+01:15:12,916 --> 01:15:36,376
+Çeyrekler değil. Mesela burası Aralık ayı. Sonra bir sene sonra Eylül'e gitmiş. Bunlar aynı aylar bile değil veya çeyreksiz artışlar da değil. Sonrasındaki bir sonraki yılın Mart ayı, bir sonraki de neyi seçmişler? Haziran ayını seçmişler bir sonraki yılı. Neden böyle bir şeye ihtiyaç duymuşlar veya ne yapmaya çalışmışlar böyle yaparak?
+
+374
+01:15:42,836 --> 01:15:49,576
+Daha dramatik büyük kayıplar olduğunu göstermek istemişler. Anca olmuş yani o sürelerde.
+
+375
+01:15:50,656 --> 01:16:02,456
+Aynen yani aslında ne yapmışlar? Ayları grafiğe uyarlamışlar değil mi? Yani grafiğe göre, aylara göre grafiği yansıtmamak söz konusu burada ne yapıyorlar?
+
+376
+01:16:03,376 --> 01:16:09,296
+Kendilerinin o algı oluşturmak istedikleri algıya uyan ayları oturtmuşlar.
+
+377
+01:16:09,716 --> 01:16:25,736
+Ve böyle aslında baktığınız zaman nasıl bir ilişki var? Böyle lineer bir şekilde sürekli artıyor. Yani böyle dramatik bir şekilde paralel bir şekilde, lineer bir şekilde, doğrusal bir şekilde arttığını göstermeye çalışıyorlar. Ama işin aslında pek öyle değil.
+
+378
+01:16:27,091 --> 01:16:39,831
+Bunu da gördüğünüz gibi çeyrekleri de, aralıklar da uyumlu değil. Buradan buraya artış bir şekilde aynı yıl, aynı aylar seçilmemiş. Tamamen bir algı yönetimi söz konusu.
+
+379
+01:16:55,188 --> 01:17:06,987
+Nereye geliyor? Eylül gibi burası. Daha yavaş bir artışta sonrası. Sonrasında çok hızlı bir artış var. Ama sonra bu artış hızı oldukça yavaşlamış.
+
+380
+01:17:08,724 --> 01:17:25,384
+Burada aslında neyi göstermeye çalışıyorlar? Politik bir yaklaşımı da var aslında. Bunlar Cumhuriyetçi, Obama Demokrat, o zaman başkan olmuş. Onun yüzünden işsizlik artmış gibi bir ajanda yapmaya çalışıyorlar.
+
+381
+01:17:25,384 --> 01:17:32,304
+Ama aslına bakarsanız, buradaki veriden okuyacak olsaydık, burası Bush'un dönemi.
+
+382
+01:17:32,916 --> 01:17:53,335
+Haliyle aslında işte Obama'nın göreve geldiği dönemler burada bir yerde oluyor. Gördüğünüz gibi en büyük artış Bush zamanında. Obama göreve geldikten sonra aslında işsizlik artışı azalmış. Yani aslında yaptığı şey işe yaramış diye söyleyebiliriz hatta. Bunların iddia ettiğinin tam tersi.
+
+383
+01:17:53,716 --> 01:18:05,576
+Öncesinde çok yüksek bir artış olmuş. Ve bu artışta gördüğünüz gibi buradaki böyle çok direkt bir artış değil. Daha böyle farklı farklı dönemlerde farklı ivmelerle artıyor.
+
+384
+01:18:07,220 --> 01:18:14,840
+Tabii biz bütün resmi görmediğimiz için buradaki aylara göre, çeyreklere göre, kırılımları görmediğimiz için bunun hakkında da fikrimiz olmuyor.
+
+385
+01:18:15,300 --> 01:18:20,560
+Bu da aslına bakarsanız bir grafiksel yanıltmanın da bir gösterimi.
+
+386
+01:18:21,000 --> 01:18:23,480
+Grafiksel yanıltma çok ciddi bir problem.
+
+387
+01:18:25,684 --> 01:18:42,424
+Özellikle siz görselleştirmeyle de, istatistikle de bu biraz ilişkili şöyle. Siz nasıl göstermek istiyorsanız o şekilde gösterebilirsiniz. O şekilde bükebilirsiniz veriyi. O şekilde istatistik çıkarımlar yapabilirsiniz. Ama bu doğru demek değildir.
+
+388
+01:18:43,091 --> 01:18:57,351
+Bu tarz şeylere girmemek gerekiyor. Neyse asla veri neyi söylüyorsa onu göstermek gerekiyor. Bazen istemediğiniz şeyleri de gösterebilir ama gerçek neyse onu yansıtmak lazım. Tutarlık hayati önemde.
+
+389
+01:18:59,572 --> 01:19:15,912
+Bu şeylerde de çok yapılır. Ne bileyim, araştırma yapıyorsunuz, bir makale yayınlayacaksınız. Sizin sonuçlarınızın çok yüksek olmasını istiyorsunuz ama aslında sonuçlarınız çok yüksek değil, başarılı değil. Yani normal rakip çalışmalara çok yakın, belki hatta küçük de olabilir.
+
+390
+01:19:15,912 --> 01:19:24,912
+İşte farklı farklı noktalardan veri çekerek sizin çalışmanızın daha iyi olduğunu göstermek çok doğru bir yaklaşım değil. Yani bunu yapabilirsiniz ama...
+
+391
+01:19:25,395 --> 01:19:35,815
+gerçek veriyi değiştirmez bu. Sonrasında da ciddi problemler ve mahcubiyetler ortaya çıkıyor. O yüzden veri neyi gösteriyorsa onu göstermek, yansıtmak lazım.
+
+392
+01:19:36,335 --> 01:19:44,515
+Diğer bir noktada mümkün olduğunca sadeleştirme kullanmak gerekiyor. Yani ne kadar basit, o kadar iyi görselleştirme açısı.
+
+393
+01:19:56,756 --> 01:20:04,496
+Bu görselleştirme ve sadeleştirme açısından. Bunlara da denk gelirsiniz. Tavsiye ederim. İlgileniyorsanız okuyabilirsiniz.
+
+394
+01:20:05,496 --> 01:20:09,496
+Edward Tuft şunu diyor. Bir görselde...
+
+395
+01:20:15,764 --> 01:20:27,384
+... kazandırma, sal katkısı, ne kadar basit o kadar daha kolay bir şekilde anlaşılır olacaktır.
+
+396
+01:20:28,283 --> 01:20:33,984
+Bunu da belli mesleklerle ölçmek gibi bir önerileri var.
+
+397
+01:20:33,984 --> 01:20:36,283
+Ama mesela şuradaki örneğe bakalım.
+
+398
+01:20:37,244 --> 01:20:42,904
+Bu üç boyutlu bir refik değil mi? Aslında bu bir bar çart. Ama üç boyutlu yapmışlar.
+
+399
+01:20:43,247 --> 01:20:50,727
+Sizce burada 3 boyutlu olmasının bunu anlamamıza bir katkısı var mı? Bu veriyi anlamamıza neyi gösterdiğini anlamamıza bir katkısı var mı?
+
+400
+01:20:56,148 --> 01:20:58,108
+Hayır hocam, sadece okumayı zorlaştırıyor.
+
+401
+01:20:58,868 --> 01:21:15,407
+Zorlaştırıyor değil mi? Tam aksi zorlaştırıyor aslında. Yani bizim anlamamızı değil, anlamamamıza sebebiyet veriyor. Yani bu çizgilerin nereye yatayda tekabül ettiğini anlamamız çok zorlaşıyor. Bunun yerine şu şekilde yaptığımız zaman bir anlam kaybı var mı?
+
+402
+01:21:19,764 --> 01:21:28,144
+Yok. Hatta daha iyi görebiliyoruz değil mi? Çünkü her birisinin boyutu nereye denk geliyor? Bunları ölçmemiz mümkün. Yatayda karşılığını görebilmemiz mümkün.
+
+403
+01:21:28,884 --> 01:21:35,104
+Haliyle üç boyutlu şeylerden kaçınmak gerekiyor. Genel bir prensip olarak üç boyutlu görsellerden kesinlikle kaçınmak lazım.
+
+404
+01:21:35,783 --> 01:21:40,244
+Ve ne kadar sadeleştirebiliyorsanız o kadar daha iyi demektir bir görsel.
+
+405
+01:21:42,184 --> 01:21:45,543
+Mesela bu görselde nasıl bir problem var? Veya var mı sizce?
+
+406
+01:21:49,844 --> 01:21:55,004
+Yarısı maviymiş gibi görünüyor ama aslında öyle olmayabilir. Anlayamıyoruz.
+
+407
+01:21:56,164 --> 01:22:01,844
+Anlayamıyorsunuz. Yani bu bir kez böyle ölçüm olarak nereye tekabül ediyor bu sıkıntı.
+
+408
+01:22:02,664 --> 01:22:08,904
+Birincisi, sizce bunun yüzde kaçı mavi, yüzde kaçı kırmızı? Hiçbir fikrimiz yok.
+
+409
+01:22:09,904 --> 01:22:17,164
+Yarısına yakını gibi gözüküyor ama gerçekten yarısı mı? Yüzde 50 mi? Yüzde 49 mu? Yüzde 40 mı? Yüzde 39 mu? Hiçbir fikrimiz yok.
+
+410
+01:22:17,811 --> 01:22:25,291
+Paychart'ların böyle bir sıkıntısı var. Yani bunu hani Paychart'ı genel olarak kullanmamanızı öneririm ama kullanacak olsaydınız nasıl düzeltebilirsiniz?
+
+411
+01:22:28,948 --> 01:22:29,587
+İki boyutlu.
+
+412
+01:22:29,587 --> 01:22:30,548
+Pardon, üzülüyorum.
+
+413
+01:22:31,427 --> 01:22:32,308
+Çok üzülüyorum.
+
+414
+01:22:32,788 --> 01:22:40,007
+Tabii, öncelikle iki boyutlu yapardınız. Böyle üç boyutlu, karman çorman olmazdı. İki boyutlu. Başka ne yapardınız? Duyamadım.
+
+415
+01:22:42,988 --> 01:22:55,668
+Değerleri yapardınız değil mi? Yüzdelerini yazardınız. Mesela bu yüzde diyelim, yüzde 45 ise yüzde 45, diğeri yüzde 55. Bunların oranlarını yazmak gerekir.
+
+416
+01:22:57,268 --> 01:22:58,968
+Bunun dışında başka bir problem var mı?
+
+417
+01:23:00,768 --> 01:23:07,268
+Daha yanlış olması için mavi pikselleri mavi ile kırmızı pikselleri kırmızı ile göstermek daha iyi olur.
+
+418
+01:23:08,208 --> 01:23:18,488
+Aynen. Orada da bir yanlışlık var değil mi? Aslında kırmızı piksel demiş, mavi yazmış etiketi. Burada mavi pikselleri de kırmızı yanlışlar. O da yanlışlık.
+
+419
+01:23:18,739 --> 01:23:26,699
+Yani aslında birçok problem var bu grafikte. Onu da görebiliyoruz. Yani doğru yazmak lazım. Öncelikle etiketleri doğru yerleştirmek gerekiyor.
+
+420
+01:23:27,239 --> 01:23:32,059
+Üç boyuttan kaçınmak lazım. PyChart kullanıyorsanız da oranları belirtmek gerekiyor.
+
+421
+01:23:33,619 --> 01:23:44,500
+Mesela bu grafiğe bakın. Sizce bu güzel bir grafik mi? Değilse neden? Eğer güzel bir grafikse zaten onda yapacak bir şey yok.
+
+422
+01:23:49,395 --> 01:23:52,376
+Dikey çizgiler bir anlam katma gittiği gibi göz yoruyor.
+
+423
+01:23:53,055 --> 01:23:58,775
+Aynen öyle. Rahatsız edici değil mi? O dikey çizgilerin orada bulunmasının hiçbir katkısı yok.
+
+424
+01:23:59,716 --> 01:24:09,495
+Tam aksine zararı var. Çünkü böyle yorucu, karmaşıklaştırıyor ve sizin burada aslında bu barları düzgün bir şekilde görmenizi etkiliyor.
+
+425
+01:24:10,155 --> 01:24:13,456
+Bunları şey yapabiliriz, kaldırabiliriz. Başka bir şey yapabilir miyiz?
+
+426
+01:24:19,188 --> 01:24:46,188
+Renge de çok gerek yok değil mi? Mesela buradaki bu turkuaz renk çok anlamlı değil. Kaldırsak da bir şey olmaz. Mesela aynı grafiği bu şekilde gördüğümüz zaman çok daha sade, çok daha hızlıca anlayabiliyoruz. Hatta bunu biraz daha da değiştirebiliriz. Mesela şuradaki yatay düşek, yatay çizgileri de eklersek seviyeleri de görmek biraz daha kolaylaştıracaktır. Yani bu da okey. Ama burada çizikler de ekleyerek biraz daha bunu...
+
+427
+01:24:46,420 --> 01:24:51,720
+şey yapabiliriz, destekleyebiliriz ve gördüğünüz gibi çok daha bakması da kolay, okuması da kolay.
+
+428
+01:24:52,460 --> 01:24:57,840
+Ama şuradaki böyle karman çorman bir şey çizgiler işimizi zorlaştırıyor.
+
+429
+01:24:59,479 --> 01:25:03,800
+Çıkarabiliyorsanız ve bir anlam kaybı olmuyorsa çıkarın.
+
+430
+01:25:03,800 --> 01:25:08,640
+Bu arada bu örnekler gerçek, internetten bulunmuş örnekler.
+
+431
+01:25:09,500 --> 01:25:11,800
+Sizce buradaki grafikten...
+
+432
+01:25:12,307 --> 01:25:17,307
+Ne anlıyorsunuz? Buradan bir şey anlamak, bir çıkarım yapmak mümkün mü?
+
+433
+01:25:26,355 --> 01:25:39,496
+Daha böyle arkada kalmış, hiç gözükmeyen değerler bile var. Yani şuralarda var. Zaten gözükenleri bile çıkarmamız ne anlam ifade ettiğini ayırt etmemiz mümkün değil. Evet.
+
+434
+01:25:42,235 --> 01:25:49,396
+Evet, [öğrenci]'nın da dediği gibi aslında nasıl yapmamak gerekiyor, bunu bir şekilde görsel olarak ifade etmişler.
+
+435
+01:25:50,131 --> 01:26:05,211
+3 boyuttan kaçındın arkadaşlar. Temel çıkarım bu olsun. 3 boyut ve anlamsız, anlamak etki etmeyen şeyleri uzaklaştırmak gerekiyor. Peki siz bunu nasıl düzeltebilirdiniz onu sorayım. Ne yapmak lazım?
+
+436
+01:26:13,908 --> 01:26:21,868
+En azından tek bir tane kullanmamak lazım değil mi görseli? Bu aslında birden çok veri noktasını farklı farklı şeylerle ifade etmek gerekir.
+
+437
+01:26:21,988 --> 01:26:28,448
+Bu 3-4 değişkenin bir tane görsele yığıp böyle 3 boyutlu yapmak hiçbir şey ifade etmiyor.
+
+438
+01:26:28,548 --> 01:26:34,927
+Çünkü karşılığında bir şey anlamıyorsunuz. Çünkü ne seviyeleri ölçmeniz mümkün.
+
+439
+01:26:35,604 --> 01:26:43,203
+Ne değerleri mümkün, ne etiketleri var. Mesela bu değerler neyi ifade ediyor? Şu aralıklar hangi değişken? Hiçbir şey belli değil.
+
+440
+01:26:44,324 --> 01:27:02,284
+Bir de bunların böyle janjanlı versiyonları var. Böyle hediye kutuları gibi falan. Sizce böyle şeylere gerek var mı? Mesela bu kutu gibi, hediye kutusu paketi gibi değil de normal bar gibi olsaydı ne değişirdi? Hangi anlam kaybolur? Veya üç boyutlu olmasının nasıl bir katkısı var?
+
+441
+01:27:03,667 --> 01:27:05,667
+Hiçbir şekilde yok. Burada da...
+
+442
+01:27:10,484 --> 01:27:26,155
+Evet, yeğeniniz belki severdi, ilginç gelebilirdi. Ama hani siz analitik bir çalışma yapıp patronunuza verseniz muhtemelen pek memnun kalmazdı. Bir de buna böyle yatayda silindirler şeklinde yapılanları falan var. Bu da...
+
+443
+01:27:26,868 --> 01:27:52,288
+Hem 3 boyutlu olması zaten saçma bir şey olmuş. Silindir olmasının hiçbir önemi yok. Arkada garip garip şekiller var. Yatay olması da okumayı daha da zorlaştırıyor bar graflarda bu arada. Dikey olması en azından biraz daha iyi. Ama dediğim gibi bunların hiçbirisi gerçek hayata kullanılması tasvip edilmeyen şeyler. Benim favorim bu. Bu arada bu gerçek bir grafik.
+
+444
+01:27:52,884 --> 01:28:05,183
+Arkada da muz şeklinde de koymuşlar. Gerçekten çok destekleyici ve anlamlı bir grafik olmuş. Burada bir sayı, bir şey anlamanız mümkün mü? Yani buradaki değerlerden ne çıkarabilirsiniz?
+
+445
+01:28:15,380 --> 01:28:16,579
+Buradan hiçbir şey çıkmaz.
+
+446
+01:28:21,300 --> 01:28:46,579
+Evet. Yani gördüğünüz gibi bu grafik görselleştirme çok önemli. Yani veriyi eğer bir tarafa anlatmak istiyorsanız grafik kullanmanız lazım. Yani birisi buradan bir şey anlayabilmesi için onu sade yapmak lazım. Yoksa yaptığınız şeyin hiçbir anlamı yok. Tam olarak işinizi zorlaştırıyor. Bunlardan uzak durmak lazım.
+
+447
+01:28:51,283 --> 01:28:57,743
+Evet, projede kullanabilirsiniz, eğleniriz ama ne kadar iyi not alırsınız orasını bilemem.
+
+448
+01:29:01,324 --> 01:29:04,283
+Ama hani işin eğlencesi tabii bunları...
+
+449
+01:29:04,927 --> 01:29:30,007
+yapmamanız için aslında konuşuyoruz. Maalesef bunlar tahminimizden daha çok kullanılıyor. Daha çok üç boyutlu görseller kullanılıyor. Daha çok böyle anlamsız grafikler kullanılıyor. Bunlar ciddi bir problem. Görselleştirme veri analitinin bir anlamı olması için ve bunun birilerine ifade edilebilmesi için grafiklerin anlaşılır ve basit bir şekilde yapılmış olması lazım.
+
+450
+01:29:30,899 --> 01:29:40,019
+Diğer bir etkili kullanım örneği de aslında kullandığınız örnek grafiğin veri tipiyle uyumlu olması.
+
+451
+01:29:41,219 --> 01:29:48,679
+Mesela burada size bir örnek vereceğim. Bu mesela basit bir çart ama oldukça faydalı diye düşünüyorum.
+
+452
+01:29:49,087 --> 01:30:14,747
+Yani şunu gösteriyor, siz neyi göstereceksiniz? Gösterdiğiniz şey bir karşılaştırma mı? Bir ilişki mi? Bir dağılım mı? Ya da bir kompozisyon ya da bir bütüncül anlatım mı? Buna göre seçeceğiniz grafik türü de değişiklik gösterecektir. Mesela eğer bir karşılaştırma yapıyorsanız bu bir zamana göre bir değişiklik mi?
+
+453
+01:30:15,184 --> 01:30:23,304
+Yoksa bazı nesneler arasındakiyi karşılaştırmamız. Zamana göre ise burada çok sayıda bir periyot mu var yoksa az sayıda mı?
+
+454
+01:30:23,704 --> 01:30:26,924
+Mesela az sayıdaysa burada böyle line chartlar gibi kullanılabilir.
+
+455
+01:30:27,731 --> 01:30:50,431
+Veya işte column chart gibi şeyler kullanılabilir. Zamana göre az sayıda olduğu için. Ama daha çok line chart uygun olacaktır. Eğer böyle döngüsellik yoksa o zaman bu çok sayıda periyot içinde line chart kullanılabilir. Bir döngüsellik varsa burada böyle circular area chartlar falan var. Bunlar kullanılabilir.
+
+456
+01:30:51,091 --> 01:30:57,791
+Nesneler, değerler, kategoriler arasında bir karşılaştırma varsa burada bar chart'lar uygun olacaktır.
+
+457
+01:30:58,411 --> 01:31:07,071
+Seçeceğiniz ürün kategorisine göre farklı değerler gözükebilir ama genel olarak bar chart uygun bir gösterim tipi.
+
+458
+01:31:07,631 --> 01:31:16,171
+Onun dışında eğer bir ilişki, korrelasyon gibi şeyleri ölçmeniz gerekiyorsa burada da scatterplot kullanmak gerekiyor.
+
+459
+01:31:16,291 --> 01:31:18,631
+İki değişkense zaten scatterplot'ta bir problem yok.
+
+460
+01:31:18,996 --> 01:31:29,576
+Üç değişkense, mesela bunun yine scatterplot oluyor ama bubble chart gibi böyle üçüncü değişkeni de büyüklüğe göre tasarlayabilirsiniz.
+
+461
+01:31:29,776 --> 01:31:31,796
+Üçüncü boyutu da göstermek mümkün olur.
+
+462
+01:31:32,516 --> 01:31:39,816
+Diğer taraftan mesela eğer bir dağılım gösteriyorsanız, burada da histogram ve benzeri araçlar kullanacaklar değil mi?
+
+463
+01:31:39,816 --> 01:31:44,756
+Mesela eğer tek bir değişkense histogram kullanırsınız. Line histogram ya da column histogram fark etmez.
+
+464
+01:31:45,235 --> 01:31:59,775
+Eğer iki değişkense yine bisiklete kulat kullanılabilir. Üç değişkenler, bunlar tabii zorlaşıyor. Üç boyutlar falan hiç girmemek lazım ama illa ki kullanmanız gerekiyorsa böyle üç boyutlu alanları gösteren area chartlar falan kullanılabilir.
+
+465
+01:31:59,775 --> 01:32:07,815
+Hani iki boyutlu dan üste çok çıkmanızı önermemiş netices. Üç boyutlu şeylere girmemek için özen göstermek lazım.
+
+466
+01:32:08,256 --> 01:32:18,316
+Bir kompozisyonsa, burada da yine bir bar chart ya da bunların üzerine stack bar chartlar şeklinde ya da stack area chartlar gibi kullanılabilir.
+
+467
+01:32:18,396 --> 01:32:25,856
+Üst üste bunların kompozisyonunu görmek istiyorsanız, pie chartlar falan da bar chartlar da kullanılabilir ihtiyaca göre.
+
+468
+01:32:25,856 --> 01:32:33,936
+Öyle basit bir örnek, buradan da belki genel bir fikriniz olabilir. Bunu da eklemiş, değinmiş olalım.
+
+469
+01:32:35,444 --> 01:32:57,344
+Diğer bir nokta da karşılaştırma. Mesela bir karşılaştırma mı yapacaksınız? Veya bir kullanacağınız şey, bir sürekli değer mi, trend mi ölçeceksiniz? Ona göre de doğru seçim yapmak faydalı. Mesela iki şeyi karşılaştıracaksanız, buradaki örneklere bakalım. Üstteki bir örnek, alttaki bir örnek.
+
+470
+01:32:57,844 --> 01:33:12,264
+Mesela burada boy üzerine bir bar chart ya da line chart kullanılmış. Sizce bunlardan hangisi daha doğru? Bu veriyi bar chart olarak mı, line chart olarak mı göstermek daha doğru?
+
+471
+01:33:18,036 --> 01:33:28,716
+chatten yazanlarımız var bakalım. [öğrenci] bar demiş. Neden bar [öğrenci] veya herhangi bir arkadaşımız neden bunun bar çağırtığı için daha uygun olduğunu düşünüyor?
+
+472
+01:33:32,659 --> 01:33:35,039
+Ayrık ve birbirinden alakası iki değişken.
+
+473
+01:33:35,739 --> 01:33:41,380
+Doğru, değil mi? Bunlar aslında iki tane farklı kategori. İkinizin de söylediği doğru.
+
+474
+01:33:42,680 --> 01:33:49,079
+Aslında female ile male birbirinin devamı değil. Bunlar iki tane farklı kategori.
+
+475
+01:33:50,739 --> 01:33:55,900
+Dolayısıyla bar chart ne yapıyor? Kategorik değerleri de gösteriyor. Peki line chart ne yapıyor?
+
+476
+01:33:59,923 --> 01:34:11,183
+Sürekli değişkenleri gösteriyor, değil mi? Line chart aslında sürekli değişkenlerde ifade eder. Sürekli değişken, tek bir değişken olması beklenir. Sizce bu ikisi tek bir değişken mi? Female ile male.
+
+477
+01:34:14,743 --> 01:34:24,783
+Birbirinden bağımsız şeyler bunlar. Birbirinden farklı kategorik değerler. Yani bunu sanki female, male ile devam ediyormuş gibi bir algı yaratıyor. Bu doğru değil.
+
+478
+01:34:25,492 --> 01:34:31,051
+Dolayısıyla bu line chart gösterimi kesinlikle yanlış. Peki aşağıdaki için ne söyleyebiliriz?
+
+479
+01:34:35,923 --> 01:34:51,243
+Yaş ilerledikçe, boy da ilerlediği için aslında daha fazla verimin olması için geldi. Çünkü yani bu geçerli ama farklı bir feature, iki kategori için böyle yaşa bağlı olmayabilir.
+
+480
+01:34:54,503 --> 01:35:00,823
+Bu yaklaşım kabul edilebilir ama aslına bakarsanız bunlar da birbirinden farklı değişkenler değil mi?
+
+481
+01:35:01,460 --> 01:35:25,720
+Yani aslında bu ikisi de birbirinden farklı kategori. Yani 10 yıldakiler, 10 yaşındakiler, 12 yaşındakiler bunlar farklı kategorileri kastediyoruz. Aynı kişilerin ortalaması bile olmayabilir bunlar. Yani 10 yaşındaki insanların ortalama boyu, 12 yaşındaki insanların ortalama boyu birebir devamı gibi değil.
+
+482
+01:35:26,420 --> 01:35:32,780
+Sadece şunu ölçmek için diyebilirsiniz. Ortalamada ne kadar artmış belki bunu göstermek için olabilir.
+
+483
+01:35:33,940 --> 01:35:37,040
+Evet, yani aslında orada neye baktığınıza göre biraz değişir.
+
+484
+01:35:37,620 --> 01:35:40,100
+Ama bar çarpı biraz daha uygun.
+
+485
+01:35:40,220 --> 01:35:45,500
+Çünkü bunlar aslında iki tane farklı değişken, farklı kategori.
+
+486
+01:35:46,020 --> 01:35:49,460
+Bunlar sayısal bir değer ifade etmekle birlikte.
+
+487
+01:35:49,460 --> 01:35:54,040
+Yani 10 yaşındakiler, 12 yaşındakiler. Sanki bunlar 10 ile 12'nin devamıymış gibi gözüküyor.
+
+488
+01:35:54,420 --> 01:36:16,760
+Böyle bir yanıssama yapabilir. Aslında bunlar farklı kategoriler. Ama burada amacınız buna kadar hızlı artıyor. Mesela bir de 12'den 14'e baksaydınız sanki 10'dan 12'ye daha hızlı bir artış var, sonra daha yavaş artış var gibi bir amaç için kullanılabilir olabilseydiniz o zaman okeydi yani o zaman normal.
+
+489
+01:36:17,395 --> 01:36:22,815
+Ama normalde bu ikkisi birbirinden farklı kategori gibi düşünmek daha uygun olacaktır.
+
+490
+01:36:26,260 --> 01:36:53,820
+Güzel. Şimdi trend için aslında şey çok uygun değil mi? Burada bir trende bakıyorsak o zaman line chart daha uygun. Çünkü bu bir zaman serisi. Zaman serisine göre işte Apple'ın fiyatı artmış mı, azalmış mı bunu gösteriyor. Burada mesela bar chart falan kullanamazsınız. Çünkü bu bir kategorik değer değil. Zamana göre aynı değişkenin nasıl bir trend izlediğini, nasıl bir dönüşüm yaptığını görüyoruz. Ve bunu tek bir grafik üzerinde anlamak çok.
+
+491
+01:36:54,144 --> 01:37:12,504
+Kolay ve mümkün. O yüzden böyle line chart, trend analizi, sinyal değerleri veya buna benzer sıralı ve sürekli değerlerde trendleri, değişimleri görmemiz için oldukça faydalı. Ama kategorik değerleri gösteremeyiz. Bunun için anlamlı değil.
+
+492
+01:37:16,595 --> 01:37:42,395
+Bir de bir şeyleri karşılaştırıyor musunuz? Bunların arasında bir ilişki, büyüklük gibi bir karşılaştırma mı yapıyorsunuz? Yapmıyor musunuz? Bu da önemli. Buna göre aslında seçim yapmak da gerekiyor. Mesela bu bir pie chart. Şimdi bu pie chart'a bakarak siz ne söyleyebilirsiniz? Yani buradan bir çıkarım yapmanız mümkün mü?
+
+493
+01:37:43,123 --> 01:37:46,663
+Ben mesela ne kadarını yemişimdir, ne kadarını yenmemiştir.
+
+494
+01:37:49,543 --> 01:37:54,963
+Göz kararı bir şey söylenebilir hocam ama net bir rakam zor çıkarmıyor.
+
+495
+01:37:55,363 --> 01:37:58,884
+Evet, yani net bir şey söyleyemezsiniz. Net bir rakam söylemeniz mümkün değil.
+
+496
+01:37:59,023 --> 01:38:05,583
+Göz kararı söyleyebilirsiniz. Onun da çok net bir karşılığı olmayabilir.
+
+497
+01:38:06,043 --> 01:38:09,003
+Buradan net olarak söyleyebileceğimiz tek bir şey var.
+
+498
+01:38:09,395 --> 01:38:20,235
+O da daha %50'den fazlasını henüz yenmemiş olduğu, %50'den azın, yani yarısından fazlasını yenmediği, yarısından azının yendiği söylenebilir.
+
+499
+01:38:20,315 --> 01:38:31,395
+Ama bu oran kaç? Onu söylemek çok zor. Yani %40 mı, %35 mi, %39.3 mü veya %42.5 mi bilemiyorum. Bunu söylemek gerçekten çok zor.
+
+500
+01:38:32,467 --> 01:38:47,707
+Hani göz kararı şurada söylenebilir. Çeyreğinden fazlası yenmiş. Yani çeyrek olsaydı işte şurası gibi bir şey olurdu. Çeyrekten biraz daha fazla yenmiş. Yani %25'den fazla ama %25 ile %50 arasında herhangi bir değer olabilir.
+
+501
+01:38:49,148 --> 01:38:52,707
+Dolayısıyla böyle kesinlik, somut değerler...
+
+502
+01:38:53,108 --> 01:39:10,327
+Lazımsa pay çarptı çok uygun olmuyor. Bunu gerçi yüzdelere bölüp yapmak mümkün olabilirdi. Yani yüzde kaçını da söyleseniz bir şekilde faydası olurdu. Ama bunu bar çarptı da yapmak daha uygun olacaktı. Düzeylerini ölçmek daha kolay olur.
+
+503
+01:39:17,492 --> 01:39:39,472
+Yani pay içinde pay, onun içinde böyle slindir şekiller falan. Buradan bir çıkarım yapmak söz konusu bir de değil. Görsel olarak eğlenceli olabilir ama hiçbir karşılığı yok. Mesela bunların bir de genişliği de bir şey ifade ediyor. Burası daha dar, buralar daha geniş. İç içe boyları bir şey ifade ediyor. Tamamen kaos.
+
+504
+01:39:41,332 --> 01:39:48,971
+Böyle görsel yapmak da pay çağırttı 3 boyutlu olarak. Hiçbir şey katkı sağlamıyor, tam aksi zorlaştırıyor.
+
+505
+01:39:49,072 --> 01:39:55,931
+Mesela burada bu yükseklikte 3 boyutlukta daha da yanlış bilgi verebilir.
+
+506
+01:39:56,091 --> 01:40:03,771
+Belki oransız olarak daha düşük olmakla birlikte 3 boyutta yukarıda olması bunu daha büyük bir oran gibi gösterebilir.
+
+507
+01:40:04,467 --> 01:40:18,248
+Bunlardan da uzak durmakta fayda var. Genel olarak pie chart çok uygun değil ama gerekiyorsa bazı durumlarda kullanılabilir. O zaman da kesinlikle bu oranları sayısal olarak yazmak gerekecektir.
+
+508
+01:40:20,648 --> 01:40:28,467
+Bu da stacked bar chart. Burada ne yapıyoruz? Aslında birden çok kategori için, şurada göstereyim.
+
+509
+01:40:32,340 --> 01:40:38,760
+Central, West, East, South gibi kategorilerimiz var. Bunların varlığı.
+
+510
+01:40:44,051 --> 01:40:52,411
+Burada mesele ne yapıyoruz? Bunların toplamda da ne ifade ettiğini gösteriyor. Peki bu grafikle ilgili nasıl bir sıkıntı var?
+
+511
+01:40:53,151 --> 01:40:54,692
+Hocam biz ekranı görmüyoruz şu an.
+
+512
+01:40:54,871 --> 01:40:56,811
+Şu an görmüyor musunuz? Allah Allah.
+
+513
+01:40:59,151 --> 01:41:01,811
+Yanlış şey bastım galiba. Şimdi...
+
+514
+01:41:06,452 --> 01:41:07,532
+Şu an geldi mi?
+
+515
+01:41:08,612 --> 01:41:09,632
+Evet, geldi hocam.
+
+516
+01:41:09,632 --> 01:41:10,192
+Süper.
+
+517
+01:41:12,292 --> 01:41:21,231
+Şöyle, şimdi bu Stacked Bar Chart'ta bunlar farklı renkler, farklı kategorileri gösteriyor. Bunlar da aylara göre dağılımı.
+
+518
+01:41:21,452 --> 01:41:25,931
+Sizce burada bir problem var mı? Varsa nedir? Nasıl düzeltilebilir?
+
+519
+01:41:28,020 --> 01:41:40,199
+Eğer alt kırılımlar üzerinden bir inceleme yapmak istersek kesin bir işe ulaşmak zorlayıcı oluyor. Yani sadece central üzerinden bir inceleme yapmak istediğimizde daha zorlu bir grafik oluyor. Ayırmak belki daha mantıklı olabilir.
+
+520
+01:41:41,500 --> 01:41:49,720
+Çok doğru. Yani eğer ben bunların alt kırılımı üzerinden mesela deseydim ki sen işte West'e göre hangisi daha fazla, hangisi daha az?
+
+521
+01:41:50,100 --> 01:42:05,659
+Bunu ölçmek çok mümkün değil. Yani bu aralıktaki birim ne kadar bilemiyorum. Veya o buradan büyük mü, küçük mü? Veya küçükse ne kadar küçük? Şu bundan büyük mü? Veya bu daha mı büyük, daha mı az? Bunları ölçmek çok mümkün değil.
+
+522
+01:42:07,300 --> 01:42:11,420
+Burada tek çıkarım yapmamız mümkün olan şey ne?
+
+523
+01:42:13,908 --> 01:42:22,428
+Toplamlar. Toplamda en yüksek bu, toplamda en düşük bu. Bunları görebiliyoruz. Ama böyle alt kırılımlarla yapmak çok mümkün değil.
+
+524
+01:42:23,248 --> 01:42:27,108
+Ayırmaktan bahsettin. Nasıl ayırabiliriz? Örnek verebilir misin?
+
+525
+01:42:28,688 --> 01:42:38,488
+Ayrı grafiklerde yapabiliriz veya bunu yataylamasına değil, dikeylemesine şeklinde alt kırılımlara ayırabiliriz toplam. Ondan sonra East Central, West South diye her bir ay üzerinden.
+
+526
+01:42:38,847 --> 01:42:41,407
+Yatağıyla masan yaradığımızı bu şekilde inceleyebiliriz.
+
+527
+01:42:42,567 --> 01:42:47,108
+Doğru. Aslında hani söylediğiniz doğru. [öğrenci] da aynısını yazmış.
+
+528
+01:42:47,567 --> 01:42:51,587
+Tek bir grafik değil de dört tane yan yana değil mi?
+
+529
+01:42:51,728 --> 01:42:58,387
+Mesela December için South, December için East, December için West, Central gibi.
+
+530
+01:42:58,947 --> 01:43:01,307
+Aynısını bunun için, bunun için dört tane yapabiliriz.
+
+531
+01:43:02,268 --> 01:43:04,047
+Yani bir tane grafik de gösterebiliriz.
+
+532
+01:43:04,863 --> 01:43:12,163
+İlla tek bir grafik dergiyi birleştirmek zorunda değiliz bu arada. Bu genel bir prensip olarak da düşünebilir.
+
+533
+01:43:12,851 --> 01:43:38,291
+Anlam kaybedecekse, eğer biz detayları görmeyeceksek, tek bir grafikle birleştirmenin çok bir katkısı yok. Bunun yerine dört tane ayrı grafik yaparsınız. Yani central için, east için, west için. Orada istediğiniz gibi hangisini hangisinden daha fazla görebilirsiniz. Bir tane de gerekiyorsa toplam için grafik bar chart yaparsınız. Hem toplamı görmüş olursunuz, hem detaylı kırılımları görmüş olursunuz.
+
+534
+01:43:38,931 --> 01:44:02,111
+Buradaki gibi dörtlü yan yana da yapılabilir. Eğer kalabalıksa dediğim gibi dört tane ayrı grafikle yapmakta bir problem yok. Yani aslında bu alan olarak sanki çok yerimiz yokmuş gibi düşünülüyor ama öyle bir şey söz konusu değil. İstediğiniz kadar grafik üretebilirsiniz. Önemli olan iletişim. Yani anlaşılıyor mu? Bu görsel ne gösteriyor? Buradan bir karar alabilir misiniz? Temel nokta burası olmalı.
+
+535
+01:44:04,735 --> 01:44:19,315
+Önemli bir noktaydı, güzel. Bunlar da gerçek grafikler bu arada. Yani böyle grafik üzerinde grafik, pay üzerinde pay, payın içinde başka paylar. Yani bunlardan uzak durmak gerekiyor.
+
+536
+01:44:20,475 --> 01:44:30,295
+Yani bu bir de sanırım bunun içindeki, %40'ın içinde kendi kırılımları. Burada böyle genişlikleri de var, dilim dilim olanları da var çok.
+
+537
+01:44:30,644 --> 01:44:32,604
+Garip ve bunlardan uzak durmak lazım.
+
+538
+01:44:35,444 --> 01:44:39,744
+Buraya kadar soru soğan var mı arkadaşlar? İsterseniz bir ara daha verelim.
+
+539
+01:44:43,988 --> 01:44:53,568
+Sorumuz var mı? Tamam, o zaman bir arı daha vereceğiz. Saat 4 dakika aldığımız yerden devam edeceğiz. Aradan sonra görüşmek üzere.
+
+540
+01:59:25,171 --> 01:59:27,591
+Şimdi kaldığımız yerden devam edelim arkadaşlar.
+
+541
+01:59:38,292 --> 01:59:39,712
+Ekranımı paylaşıyorum.
+
+542
+01:59:42,012 --> 01:59:43,472
+Geldim şimdi size.
+
+543
+01:59:49,395 --> 01:59:50,195
+Geldi hocam.
+
+544
+01:59:50,516 --> 01:59:53,496
+Tamam süper, teşekkürler. Devam edelim o zaman.
+
+545
+01:59:55,275 --> 02:00:04,395
+Şimdi eğer bir correlation, bir ilişki tanımlamanız gerekiyorsa, bunu daha önce de bahsettiğimiz gibi bir scatter plot.
+
+546
+02:00:04,819 --> 02:00:16,299
+kullanarak yapmak mümkün. Mesela bu basit bir görsel. Meyvelerin yenilebilirliği ve lezzetli olup olmaması üzerine bir grafik.
+
+547
+02:00:16,459 --> 02:00:23,159
+Noktası olarak bunları göstererek, bunun arasında bir ilişki var mı, hangileri nereye tekabede ediyor gibi böyle hani.
+
+548
+02:00:23,439 --> 02:00:34,759
+Basit bir görselde gösterilmiş ama ilişki gösteriyorsak, bir korrelasyon gösteriyorsak bunun ölçmenin en uygun yolu scatterplot kullanmak.
+
+549
+02:00:35,799 --> 02:00:45,519
+Scatterplot ile eğer bir ilişki varsa bu pozitif mi, negatif mi veya hiçbir ilişki yoksa bile bunu görmek, görselleştirmek mümkün.
+
+550
+02:00:46,612 --> 02:01:02,511
+Ama bu scatterplotları da çok abartmamak lazım. Mesela bu örnekler 3 boyutlu versiyonları. Mesela burada bir 3 boyutlu scatterplot var ama buradan bir şey anlamamız, çıkarım yapmamız pek mümkün değil.
+
+551
+02:01:03,792 --> 02:01:10,952
+Kırmızı noktalar başka, yuvarlak başka bir şey ifade ediyor. İşte maviler farklı. İç içe geçmiş, yüz.
+
+552
+02:01:11,667 --> 02:01:36,287
+Nereye tekabül ediyor bunlar? Anlamak mümkün değil. Üç boyutlar genel olarak kötü. Bir de bunun dört boyutlu versiyonu da var. Bir de bir çizgiyle bilmiyorum neyi yapmaya çalışmışlar ama hem üç boyutlu bir scatterplot var bir de üstüne üstlük böyle bir tren midir, çizgi midir, ne olduğu belli olmayan bir şekil var. Bunlardan uzak durmak lazım.
+
+553
+02:01:37,427 --> 02:01:46,667
+Scatterplot her zaman iki boyutlu ve iki değişken üzerinden yapmak gerekir. Böyle üç boyutlu karmaşık şekillerden uzak durmak lazım.
+
+554
+02:01:48,467 --> 02:02:00,427
+Bir de, evet, gradiyanları gözlemlemek için olabilir. Orada haklılık payın var ama,
+
+555
+02:02:01,823 --> 02:02:06,144
+Bu üç boyutlu şekiller böyle scatterplot şeklinde olmaz.
+
+556
+02:02:06,283 --> 02:02:16,503
+Orada daha çok böyle yani böyle gradiyanların dağılımı çemberler üzerinden akışını göstermek için kullanılabilir.
+
+557
+02:02:17,184 --> 02:02:23,283
+Ama hani buradaki gibi sadece scatterplot kullanımı uygun bir yaklaşım değil.
+
+558
+02:02:23,384 --> 02:02:25,503
+Zaten buradan bir şey çıkarmak da pek mümkün değil.
+
+559
+02:02:26,420 --> 02:02:37,159
+Ama gradyanın akışına göre hangi yoldan gittiğini, lokal optimum mu, global optimum mu, bunları anlamak için 3 boyutlu şekli kullanılabilir.
+
+560
+02:02:38,739 --> 02:03:04,760
+Aslında ihtiyacınıza veya nerede kullandığınıza göre değişiyor ama genel olarak uygun değil, 3 boyutlu şekiller. Çok çıkarım yapmak gerektiği zamanlarda yapmanız mümkün değil. Çünkü karşılığında tekabül eden yeri göremiyorsunuz. Buradaki renklerden de bir şey anlamak mümkün değil. Ama gradiyan örneğinde mesela aslında biz neyi görmek istiyoruz? Akışın yönünü veya akışın değerlerini.
+
+561
+02:03:06,739 --> 02:03:21,520
+karşılaştırılması çok önemli bir öncelik değil. Yani gradiyan artışı veya azalışı hangi birimlerle arttı, azaldı? Bunu ölçmek çok önemli değil oradaki örnekle. Sadece yön tayin açısından anlamlı.
+
+562
+02:03:23,923 --> 02:03:35,384
+İsterseniz bir de algısal olarak nasıl bir ölçüm ve verimlilik var bu seçtiğiniz görselin tipine göre. Bunu da biraz konuşalım.
+
+563
+02:03:36,044 --> 02:03:41,804
+Şimdi basit bir soru soracağım size. Burada iki tane değer var. A değeri, B değeri.
+
+564
+02:03:42,544 --> 02:03:48,244
+Yani sanırım hepimiz hemfikirizdir. Burada B, A'ya göre daha uzun.
+
+565
+02:03:49,876 --> 02:04:03,775
+Peki kaç kat daha uzun? Yani bir sayı olarak, tam sayı olarak söyleyeceğimiz. A, B'nin kaçta kaçı? 1 mi, 2 mi, 3 mi, 4 mi, 5 mi? Bir tahmin yürütmenizi istiyorum.
+
+566
+02:04:13,844 --> 02:04:24,423
+Sen de bakalım. [öğrenci] 4 demiş. Evet, başka tahmin olan var mı? Herkes 4 mi diyor? Efendim?
+
+567
+02:04:25,323 --> 02:04:26,503
+Bence de 4 gibi hocam.
+
+568
+02:04:27,024 --> 02:04:40,243
+4 gibi. Güzel. 3.5, 3.1.6. Tabi bu kadar hassas göremiyoruz. Genel bir şey olarak ölseydik, tam sayı olarak 3, 4.
+
+569
+02:04:40,916 --> 02:05:03,676
+makul gibi gözüküyor. Yani iki diyen yok sanırım veya beş diyen de yok çıkmadı. İki değil. Demek ki bunu az çok tahmin edebiliyoruz. Gerçekte bunun değeri dört bu arada. Çoğunuzu doğru tahmin ettiniz. Ama yani üç küsür de deseniz çok da abest değil.
+
+570
+02:05:04,556 --> 02:05:06,316
+Peki şunu sorayım size.
+
+571
+02:05:06,739 --> 02:05:12,799
+Bu iki tane eğriden hangisi daha dik? A mı B mi?
+
+572
+02:05:18,515 --> 02:05:28,176
+Evet, A. Burada herhangi bir problem yok. Hepimiz bunu görebiliyoruz. A daha dik. Peki, kaç kat daha dik B'ye göre? A, B'nin kaç kat daha dik versiyonu?
+
+573
+02:05:33,652 --> 02:05:40,572
+Yine bir sayı olarak tahmin isteyeceğim. Tam sayı olarak söyleyebilirsiniz. Kesirli olarak beklemiyorum.
+
+574
+02:05:43,152 --> 02:05:58,271
+3, evet. 2 tane 3 diye tahminimiz var. 2,5, 3, evet. 3, 5. Başka tahmin var mı? 2,5. 3, 5 arası, evet.
+
+575
+02:05:59,155 --> 02:06:07,895
+Yani tahminler genellikle bu civarlarda fena değil. Ama az öncekine göre daha mı kolaydı, daha mı zordu.
+
+576
+02:06:14,195 --> 02:06:37,935
+Daha zor. Hepimiz buna hemfikiriz. Eğimi ölçmek, yüksekliği ölçmekten, uzunluğu ölçmekten daha zor. Burada da aslında AB'nin 4 kat daha dik versiyonu. Ama bunu tam olarak ölçmek çok zor. Bizim görsel olarak baktığımız zaman bunun 4 katıdır, 3.5 katıdır, 2.3 katıdır dememiz çok daha zor.
+
+577
+02:06:38,836 --> 02:06:48,775
+Yani neymiş yükseklik ve noktasal uzunluklar eğimlerden daha kolay tespit edilebiliyor.
+
+578
+02:06:49,076 --> 02:06:50,895
+İsterseniz başka bir örnekle konuşalım.
+
+579
+02:06:51,015 --> 02:06:52,916
+Şimdi A mı büyük, B mi büyük?
+
+580
+02:06:53,515 --> 02:06:56,355
+Sanırım burada hepimiz yine hemfikir olacağız.
+
+581
+02:06:59,015 --> 02:07:02,496
+Burada A büyük değil mi?
+
+582
+02:07:06,355 --> 02:07:24,475
+Yok, B büyük burada. Henüz bir körlük durumunda değiliz. Hepimiz B diyebiliriz. Peki, A, B'ye göre kaç kat daha küçük ya da B, A'nın kaç katı? Yine chat burada dursun. Bakalım tahminler hangi yönde olacak? B, A'nın kaç katı?
+
+583
+02:07:27,988 --> 02:07:34,448
+Sanırım herkes 4, diğerleri 4 çıktı diye 4 değil tahmin ediyor. Ama 4 değil onu söyleyebilirim en azından.
+
+584
+02:07:41,587 --> 02:07:42,967
+5 var, 6 var.
+
+585
+02:07:50,868 --> 02:07:51,868
+Hoşçakalın.
+
+586
+02:08:00,243 --> 02:08:02,323
+Daha artıran veya azaltan var mı?
+
+587
+02:08:06,228 --> 02:08:27,287
+Gördüğünüz gibi bu daha da zor oldu değil mi? Alan çünkü sadece bir değişkene bağımlı değil, aynı zamanda yarı çapın karesine bağımlı. Sanırım 9 var şimdi. Yani 3,5 ile 9 arasında değerlerden bahsettik. Oldukça büyük bir varyasa ne oldu? Diğerleriyle karşılaştıracağım.
+
+588
+02:08:27,828 --> 02:08:35,068
+Aslında bu 8 kat daha büyük ama 5 kat da diyebilirsiniz, 8 kat da 9 kat da bunu ölçmek çok zor.
+
+589
+02:08:35,968 --> 02:08:42,368
+Alan gibi değişkenleri hesap etmek, görselden büyüklüğünü tespit etmek çok daha zor.
+
+590
+02:08:43,328 --> 02:08:44,988
+Bu da diğer bir nokta.
+
+591
+02:08:45,108 --> 02:08:48,828
+Yani hatırlarsanız en başta uzaklık veya yüksekliği ölçtük.
+
+592
+02:08:48,948 --> 02:08:50,048
+Bu biraz daha kolaydı.
+
+593
+02:08:50,804 --> 02:09:09,344
+Hatta en kolayydı. Sonrasında bir eğimi ölçtük. Eğim de biraz daha zordu ama varyasyon bu kadar yüksek değildi. Alan ondan daha da zordu. Peki şimdi şunu ölçelim. Sizce bunlardan hangisi daha koyu? A mı B mi?
+
+594
+02:09:12,344 --> 02:09:17,423
+Evet B koyu. Burada bir problem yok. Peki B, A'ya göre kaç koyu?
+
+595
+02:09:23,956 --> 02:09:28,496
+Bir sayı vermiş olsaydınız kaç kat daha koyun? B, A'ya göre kaç kat daha koyun?
+
+596
+02:09:30,936 --> 02:09:33,176
+2, başka.
+
+597
+02:09:44,020 --> 02:09:51,619
+Bu çok zor bir soru değil mi? Aslında bu neye göre koyu? Koyuluğun derecesi ne? Nasıl ölçeceksiniz? Çok daha zor bir soru.
+
+598
+02:09:53,000 --> 02:09:59,180
+Evet, CSS kullanarak falan belki oradaki deneyimiz faydalıydı. Çok zor.
+
+599
+02:09:59,739 --> 02:10:07,260
+Yani özellikle renk, ton bu tarz şeyleri ölçmek daha da zor.
+
+600
+02:10:11,155 --> 02:10:23,175
+Giderek zorlaşıyor fark ettiniz. O yüzden renktir, tondur, alandır, hacimdir bunları ölçmek oldukça zor.
+
+601
+02:10:24,615 --> 02:10:32,855
+Mesela diğer bir versiyonu bunun da renk ölçümü. Buraya bakarsanız hangisi daha büyük? A mı daha büyük, B mi daha büyük?
+
+602
+02:10:34,003 --> 02:10:46,104
+Bunları bir renk kodu olarak yaptık. Yani görselden bakacak olsak hiçbir şeyi anlamayacağız. Ama hani bir skala koyduğumuzu varsayalım. Yine tahmin zor. Buna göre sizce kaç kat daha büyük?
+
+603
+02:10:51,220 --> 02:10:51,720
+Çıkkı.
+
+604
+02:10:57,395 --> 02:11:15,576
+Olabilir yani. 4 olabilir, 4.5 olabilir, 5 olabilir, 3 olabilir. Tam olarak nereden seçtiğimize bağlı. Mesela bu yeşil tam olarak ikiye mi tekabül ediyor yoksa biraz daha aralarda bir yerde bir ton mu, buralarda mı veya bu sarı tam ortadaki sarı mı burada olsa 8 diyebiliriz. Yani 4 katı olacak.
+
+605
+02:11:16,051 --> 02:11:19,451
+Ama biraz daha buralarda mı, buralarda mı çok daha zor.
+
+606
+02:11:20,391 --> 02:11:24,251
+Yani skala vermemiz durumunda bile oldukça zorlaşıyor.
+
+607
+02:11:24,251 --> 02:11:31,251
+Yani genel bir prensip olarak belirtmek gerekirse bir değeri...
+
+608
+02:11:31,956 --> 02:11:39,336
+karşılaştırdığınız zaman o değerin etkili olup olmadığını bizim basit deneyimizden de görebileceğiniz gibi
+
+609
+02:11:39,336 --> 02:11:45,716
+eğer bir pozisyonel veya bir yükseklik, bir uzunluk metriyle karşılaştırma yapıyorsak
+
+610
+02:11:45,716 --> 02:11:54,155
+mesela bar chart'taki örnekteki gibi veya bir scatter plot'taki değer gibi bunları çok daha kolay bir şekilde algılayabiliyoruz.
+
+611
+02:11:54,496 --> 02:12:17,076
+Bunlar etkili. Ama bu giderek işte eğime, açıya dönünce biraz zorlaşıyor. Alana dönüşünce daha da zorlaşıyor. İşte intensity, yani yoğunluk, koyuluk derecesi, renk derecesi, şekil bunlar daha da verimsiz hale geliyor ve mümkün olduğunca bunlardan kaçınmak lazım.
+
+612
+02:12:17,076 --> 02:12:22,076
+Çünkü bu eğer karşılaştırma yapıyorsanız, bir şeyleri bir şeye göre ölçmeniz gerekiyorsa...
+
+613
+02:12:22,496 --> 02:12:28,836
+Bu görseller çok verimli olmuyor. Bunları da görmüş olduk.
+
+614
+02:12:28,836 --> 02:12:42,836
+Yani en etkili şey neydi? Pozisyonel scatterplotlar, line chartlar, buna benzer şeyler ya da bar chartlar, uzunluklara göre ölçümler yapabileceğimiz görselleştirme araçları.
+
+615
+02:12:43,676 --> 02:12:49,296
+Ama hani bu renklere, koyuluklara, alanlara, eğimlere gelince çok daha zorlaşıyor işimiz.
+
+616
+02:12:51,188 --> 02:13:07,367
+Açılar, eğimler bunlar zor. Bir de böyle içi boş halkalar gibi yapmak daha da zorlaştırıyor. Bunların hiçbir faydası yok. Hem şeyi ölçeceksiniz hem bu boşluğu ölçeceksiniz. Bunlardan uzak durmak lazım.
+
+617
+02:13:08,827 --> 02:13:14,148
+Diğer bir örneğe bakalım. Burada da aynı veri.
+
+618
+02:13:14,771 --> 02:13:22,612
+Paychart olarak gösterilmiş, bir de barchart olarak gösterilmiş. Sizce hangisi daha kolay anlaşılıyor, daha verimli sizce?
+
+619
+02:13:24,852 --> 02:13:26,771
+Paychart olarak mı, barchart olarak mı?
+
+620
+02:13:33,619 --> 02:13:56,100
+Evet, herkes bar chart demiş. Gördüğünüz gibi bar chart değil mi? Çünkü burada hem değerler belli değil, hem bunların karşılaştırmasını böyle ölçüm olarak yapmak çok kolay değil. Mesela şunu diyebiliyorum ben bar chart ile. B şirketinin pazar payı C'ye göre %15 daha fazla.
+
+621
+02:13:57,587 --> 02:14:24,587
+Hemen görebiliyorum. Hemen bu aradaki farkları hesab edebiliyorum. Burada yüzdeleri koysak bile o kadar verimli olmayacak. Şu an zaten oluyor. Buradan çıkarım yapabileceğiniz tek şey şu. B, C'den büyük. C de D'den büyük. Ama bu ikisi arasında büyüklük karşılıkları bile yapmamız zor. Ne kadar büyük ama? D, A'ya göre ne kadar büyük? Veya E ile C arasındaki fark ne kadar? Bunları ölçmek çok zor. Yani pay çarptan genel olarak çok...
+
+622
+02:14:25,043 --> 02:14:33,304
+kullanmamak gerekiyor. Mümkün olduğunca bar chart ile onun yerine daha etkili görselleştirme yapmak mümkün.
+
+623
+02:14:36,659 --> 02:14:48,839
+Yani böyle renkler falan bunlardan da mümkün olduğunca uzak durmak lazım ama renkler hani böyle haritalar için genel bir kanı elde etmek için kullanılabilir. Yani buradaki örnekte aslında.
+
+624
+02:14:49,779 --> 02:14:52,459
+Sadece şunu çıkarım yapabiliyoruz.
+
+625
+02:14:52,459 --> 02:14:54,579
+Bu bizim bir haritamız.
+
+626
+02:14:54,859 --> 02:14:58,039
+Yağış, nereler daha çok yağış alıyor, nereler daha az alıyor.
+
+627
+02:14:58,519 --> 02:15:05,279
+Şimdi bu sayılar skalalara göre bizim her bir kutucuk içinde ne kadar yağış alıyor tespit etmemiz neredeyse imkansız.
+
+628
+02:15:06,139 --> 02:15:11,839
+Yani tam olarak ne kadar yağıyor, şu bölgede ne kadar, şu bölgede ne kadar, şurada ne kadar bunu ölçmemiz mümkün değil.
+
+629
+02:15:12,692 --> 02:15:27,652
+Ama şu mümkün, işte genel bir resmi olarak baktığımız zaman bu bölgelerde daha çok yağış yağıyor, buralarda daha çok yağış, buralarda biraz daha az, bu ortalarda az yağış yağıyor dememiz mümkün.
+
+630
+02:15:27,652 --> 02:15:28,652
+Ama onun dışında...
+
+631
+02:15:28,979 --> 02:15:43,799
+Noktasal karşılaştırma yapmamız, değerlendirmemiz pek mümkün değil. Buralar için renklendirme uygun olabilir ama bizim eğer karşılaştırmamız birebir karşılaştırma yapmak gerekiyor olsaydık bu durumda çok verimli olmayacaktı bu.
+
+632
+02:15:46,323 --> 02:15:58,383
+Renklerle ilgili de özellikle renk kullanıyorsanız görselleştirmelerinize çok dikkatli olmanız lazım. Seçilen renglerin tipi, niteliği çok önemli.
+
+633
+02:15:59,843 --> 02:16:05,223
+Mesela burada bir örnek verelim. Bu bir makalene alınmış görüntü.
+
+634
+02:16:06,292 --> 02:16:10,851
+Gerçekten de bu şekilde koyulmuş grafik.
+
+635
+02:16:11,152 --> 02:16:12,492
+Buradan bir şey anlaşılıyor mu?
+
+636
+02:16:12,492 --> 02:16:21,592
+Mesela bu birinci, bunlar gen dizilimine göre olmuş olsaydı, birinci kromozomda kırmızıdan ne kadar var?
+
+637
+02:16:21,692 --> 02:16:23,231
+Kırmızının yeşili oranı ne kadar?
+
+638
+02:16:24,052 --> 02:16:26,252
+Böyle çıkarımlar yapmak pek mümkün mü?
+
+639
+02:16:28,811 --> 02:16:31,391
+Diyelim ki buradaki mor oranı ne kadar?
+
+640
+02:16:34,067 --> 02:16:43,547
+Mümkün değil. Bunlar çok verimli değil. Sadece bir genel görsellik açısından belki yöze hoş gelebilir ama bu hiç uygun bir görsel değil.
+
+641
+02:16:43,891 --> 02:16:50,631
+Birincisi, çok sayıda renk var. Çok sayıda renk olması ayırt etmeyi imkansızlaştırıyor.
+
+642
+02:16:50,631 --> 02:17:01,471
+Yani tonlar arasında, koyu tonu, açık tonu, bir sürü kırmızı, pembesi, farklı farklı renk. Bunlardan hangisi neye tekabül ediyor? İmkansız. Bunları anlamamız.
+
+643
+02:17:01,912 --> 02:17:11,152
+İkincisi de, bu aralardaki oransallığı da çözmemiz pek mümkün değil. Birisi diğerinden ne kadar fazla, ne kadar az. Bunları da anlamamız çok mümkün değil.
+
+644
+02:17:11,700 --> 02:17:21,620
+Renk kullanıyorsanız, renk, şekil, bunların sayısı maksimum 5, maksimum 8 bu değerden fazla olmamalı.
+
+645
+02:17:21,740 --> 02:17:26,920
+Yani mümkün olduğunca az sayıda renk kullanmak lazım. Yani 3, 5 renk uygun.
+
+646
+02:17:27,440 --> 02:17:31,139
+Ama 5'in üstüne çıktıkça giderek algılamak zorlaşıyor.
+
+647
+02:17:31,620 --> 02:17:36,220
+Herhalde 8'in üstü zaten imkansıza yakın. Yani 8'den farklı renk kullanıyorsunuz grafikte.
+
+648
+02:17:36,680 --> 02:17:38,319
+Hangisi neye tekabül ediyor bunu?
+
+649
+02:17:38,783 --> 02:17:45,283
+karşılaştırmak, algılamak çok zorlaşıyor. O yüzden mümkün olduğunca az renk kullanmak lazım.
+
+650
+02:17:46,036 --> 02:17:57,976
+Diğer bir nokta da, illa renk kullanılıyorsa, burada da farklı farklı renkler yerine renk paletleri kullanmak biraz daha uygun.
+
+651
+02:17:57,976 --> 02:18:04,056
+Yani böyle ton geçişlerini, renk paletleri kullanmak biraz daha uygun.
+
+652
+02:18:04,256 --> 02:18:09,976
+Özellikle bu değerlerin şiddetini artırıp azaltmayı...
+
+653
+02:18:10,255 --> 02:18:23,995
+Görsel olarak yansıtmak için. Böyle gökkuşağı renkleri, böyle karman çorman renk değil de aynı rengin farklı tonlarıyla bir karşılaştırma yapmaya bir nebze daha uygun imkan sağlamış olursunuz.
+
+654
+02:18:26,324 --> 02:18:41,384
+Ama böyle hani gökkuşağı renkleri, garip garip renklerden uzak durmak lazım. Hem bunlar göz arak kötü gözüküyor, hem bunların böyle derecelerini karşılaştırmak, hani burası nereye tekabül ediyor, ölçmek falan çok da mümkün değil.
+
+655
+02:18:48,115 --> 02:18:53,576
+Çok dikkat edilmemekle birlikte önemli bir problem olan renk körlüğü ile alakalı.
+
+656
+02:18:53,576 --> 02:19:06,175
+Yani renk körlüğü aslında çok fark etmiyoruz ama dünyada toplam nüfusun önemli bir oranı kapsıyor.
+
+657
+02:19:06,739 --> 02:19:26,760
+İstatistiklere göre dünyadaki erkeklerin tamamının %10'u renkörüymüş. Yani bu da 3,5 milyar erkek olduğunu varsayalım. Bunun %10'u da 350 milyon civarında insanla karşı takılıyor. En az 350 milyon insan renkörü. Bunların da farklı versiyonları var.
+
+658
+02:19:27,167 --> 02:19:36,427
+Özellikle kırmızı, yeşil, mavi gibi, sarı gibi renklerde görülüyor. Yani gökkuşağı renklerinde kısacası diyebiliriz.
+
+659
+02:19:36,948 --> 02:20:01,608
+Mesela bunun bir türü kırmızıyla yeşili göremeyen türleri var. Protonoplar ve detrotonoplar var. Bunlar da mesela gördüğünüz gibi aynı resmi bambaşka görüyor. Yani buradaki renkler bambaşka. Tritonoplar da mavi-sarı eksiklikleri söz konusu. Burada da mesela yeşilmsi şeyleri göremiyor. Kırmızıyı görüyor ama.
+
+660
+02:20:02,388 --> 02:20:14,448
+Bambaşka renk görüyor. Yani renk kullanımı oldukça titiz bir şekilde yapılmalı. Aksi halde verimsiz bir şey olacaktır.
+
+661
+02:20:14,448 --> 02:20:27,768
+Ve siz bir şey, mesela basit bir örnek ama siz işte buradaki mavi şuna tekabül ediyor dediğimiz zaman oradaki kişi maviyi görmüyor. Aslında başka bir şey görüyor olabilir. Buna da dikkat etmekte fayda var.
+
+662
+02:20:28,128 --> 02:20:32,828
+Benim bununla ilgili renklerle de ilgili söyleyeceklerim bu kadar.
+
+663
+02:20:34,008 --> 02:20:37,407
+Şimdi basit bir tane şey yapmak istiyorum sizinle.
+
+664
+02:20:39,808 --> 02:20:42,968
+Çalışma, deney, test.
+
+665
+02:20:43,488 --> 02:20:45,268
+Ama öncesinde sorusu olan var mı?
+
+666
+02:20:49,780 --> 02:20:56,400
+Şimdi o zaman şöyle basit bir örneğimiz olsun. Çok basit bir dataset'iniz olduğunu varsayalım.
+
+667
+02:20:59,920 --> 02:21:07,120
+Ve sizden yanınızda kalem varsa onun üzerinde de yapabilirsiniz ya da bilgisayarda da yapabilirsiniz fark etmez.
+
+668
+02:21:08,360 --> 02:21:12,780
+Şimdi sorum şu. Şöyle farklı farklı kategoriler var.
+
+669
+02:21:13,840 --> 02:21:15,724
+Diyelim ki...
+
+670
+02:21:15,860 --> 02:21:18,580
+Data Mining hakkında ne düşünüyorsunuz?
+
+671
+02:21:18,580 --> 02:21:19,340
+Data Mining.
+
+672
+02:21:26,579 --> 02:21:27,579
+Data Mining
+
+673
+02:21:31,059 --> 02:21:47,899
+hakkında ne düşünüyorsunuz diye bir anket yaptım. Size sorunuz bu. İşte before ve after gibi dersi almadan önce size sormuş olsaydım ve aldıktan sonra sormuş olsaydım.
+
+674
+02:21:47,899 --> 02:21:54,899
+İşte no idea diyen bir cevap olsaydı.
+
+675
+02:21:57,139 --> 02:21:59,360
+Yaşra iyisi maddı.
+
+676
+02:22:04,468 --> 02:22:27,628
+No idea bu. Öncesinde 10 kişi, sonrasında 12 kişi oldu. Love it diyelim, yani çok sevdiğiniz. Öncesinde 3 kişi, sonrasında 7 kişi olsun. Like it diyen olsun. Hani çok sevmedim ama fena da değil.
+
+677
+02:22:30,227 --> 02:22:51,347
+20 kişi, sonrasında 15 kişi olsun. Bir de hate it. Aslında hiç semledim, nefret ettim. Toplamda kaç tane oldu burada? İşte 33, 17, burada kaç oldu?
+
+678
+02:22:58,260 --> 02:22:59,860
+Bu kaç oluyor? Bu da 17 oluyor değil mi?
+
+679
+02:23:03,540 --> 02:23:30,720
+19, 29, 34, 16. Verimiz bu. Şimdi sizden böyle 3-4 dakika içinde grafikler çizmenizi istiyorum. Her biriniz en fazla ne kadar yapabilirsiniz, kaç tane tür. Yani burada grafiklerin kalitesi çok önemli değil.
+
+680
+02:23:31,123 --> 02:23:51,603
+Yani en optimum görsel seçmiş olmanız gerekmiyor ama şunu seçiyorum, soruyorum size. Bu görseli kaç tane farklı grafik kullanarak yapabilirdiniz? 3 tane mi, 4 tane mi, 5 tane mi? En çok yapabilen arkadaş 2 puan bonus kazanacak dersler.
+
+681
+02:23:57,332 --> 02:24:00,671
+Şimdi deneyin bakalım. Birkaç dakika ölçelim bakalım neler çıkacak.
+
+682
+02:24:06,995 --> 02:24:10,575
+Bakayım soru soru var mı? Yok. Anlaşıldı mı soru?
+
+683
+02:24:21,396 --> 02:24:36,276
+İlk sesim gitmiş. Yani şunu görsel olarak gösterin. Nasıl şeyler kullanabilirdiniz? Farklı olması. Amacımız kaliteli olması değil, görsel sayısının en çok olması. En çok kim yaparsa 2 puan bonusu.
+
+684
+02:28:41,876 --> 02:28:50,855
+Tamam, süremiz doldu. Şimdi bakalım kaç tane yapabildiniz? En fazla kaç tane yapan oldu? 5 yapan oldu mu?
+
+685
+02:28:57,907 --> 02:29:10,827
+Evet, 6 var mı? Sayı olarak yazın bakalım en fazla kim yazdı? En farklı 3 var. Daha farklı olan var mı? Daha fazla.
+
+686
+02:29:20,819 --> 02:29:22,020
+Herkes 3 tane mi buldu?
+
+687
+02:29:22,799 --> 02:29:35,880
+Hocam, emin değilim ama eğer bu veri biraz daha, mesela 3 haftalık periyotlara bölünseydi, 4 olup 4. olarak line grafiği de çizebilirdik diye düşünüyorum ama 2 tane de ne kadar mantıklı emin değilim.
+
+688
+02:29:36,040 --> 02:29:37,000
+Eğer sayılırsa 4.
+
+689
+02:29:37,840 --> 02:29:41,560
+Tamam, 4 olsun. Başka var mı? Daha fazla bulan var mı?
+
+690
+02:29:51,379 --> 02:29:52,860
+Çok fazla bulamamışız galiba.
+
+691
+02:30:02,388 --> 02:30:08,988
+Sanırım yok başka. En fazla 4 oldu değil mi? 5, 6, 7 veya daha fazla bulan var mı?
+
+692
+02:30:12,531 --> 02:30:21,151
+Sanırım yok. O zaman senin cevabınla gidelim. İstersen hangilerini bulduysan söyle.
+
+693
+02:30:21,747 --> 02:30:33,108
+Bar grafiğini kullanabiliriz direkt yan yana şekilde. Pay çarpı kullanabiliriz. Dediğim gibi çizgi grafiğini kullanabiliriz. Onun dışında ismi tam olarak hatırlamadım. Toplamlarının yazdığı...
+
+694
+02:30:33,108 --> 02:30:36,608
+Çizdim mi? Ekranın varsa göstersen.
+
+695
+02:30:36,768 --> 02:30:38,128
+Şu şekilde paylaşım hocam.
+
+696
+02:30:38,587 --> 02:30:42,547
+Dur, ekran paylaşayım. [öğrenci] değil mi?
+
+697
+02:30:43,148 --> 02:30:45,308
+Evet, ne kadar doğru olduğuna emin değilim ama...
+
+698
+02:30:45,308 --> 02:30:48,148
+Tamam, problem değil. Konuşalım. İşte host yaptım.
+
+699
+02:30:50,004 --> 02:30:53,604
+Ekran paylaşabilirsen [öğrenci], bakalım neler yaptık.
+
+700
+02:30:53,824 --> 02:30:54,804
+Paylaşıyorum hocam.
+
+701
+02:30:56,504 --> 02:31:00,004
+Şu şekilde yan yana yani bunların her bir aslında önce sonra şeklinde.
+
+702
+02:31:00,415 --> 02:31:25,595
+yapabiliriz. Tamam, bu bir. Diğer grafik üst üste bindirdiğimiz ismini hatırlayamadım tam olarak. Stag. Barçak. Diğeri iki şekilde önce ve sonrasında yüzdelik dağılımlarını gösterebiliriz. Şu şekilde de çizgi grafiği çizebiliriz. İşte öncesinde şu kadardı, azaldı, sonra üç hafta sonra değişti şeklinde değişimleri gösterebiliriz diye düşündüm. Bence uygun. Herkes için uygun mu?
+
+703
+02:31:27,123 --> 02:31:28,164
+Kabul ediyor muyuz?
+
+704
+02:31:31,203 --> 02:31:42,083
+Evet, bence de uygun. Tamam, kazanımımız emri oldu. Peki, bunu arttırabilir miydiniz? Hani burada amacımız kalite değil. Burada farklılık. Başka neler yapılabilirdi mesela?
+
+705
+02:31:45,023 --> 02:31:53,043
+Hocam, ben bu üst üste binen bar çarptıda benzeyen şey yaptım. Mozaik pilot vardı ya, onu yaptım.
+
+706
+02:31:53,327 --> 02:31:54,188
+Farklı olarak.
+
+707
+02:31:54,427 --> 02:31:57,587
+Mosaic nasıl yaptın? Before, after gibi mi yaptın?
+
+708
+02:31:58,288 --> 02:32:03,887
+Şöyle hocam, x ekseninde işte no idea, love it, like it, hate it sıralı miyan yana.
+
+709
+02:32:04,308 --> 02:32:07,188
+Üst üste de farklı renkler olacak şekilde. Before, after.
+
+710
+02:32:08,188 --> 02:32:09,667
+Olur, o da olur. Aynen.
+
+711
+02:32:10,347 --> 02:32:16,907
+Yani burada aslında yaptığın şey, burası no idea, like it, hate it gibi.
+
+712
+02:32:17,556 --> 02:32:22,236
+Sonra before after mayı ya da tam tersi mi yaptım? Before, after, ayrı ayrı.
+
+713
+02:32:22,256 --> 02:32:23,355
+Şu an din ekranı göremiyoruz.
+
+714
+02:32:26,596 --> 02:32:33,655
+Paylaşmayı durdurdu [öğrenci] ben. [öğrenci] beni şey yaparsan, host yaparsan göstereyim.
+
+715
+02:32:34,716 --> 02:32:35,615
+Ben host yapmıştım.
+
+716
+02:32:36,335 --> 02:32:37,556
+Evet, aşamışan verdin sanırım.
+
+717
+02:32:37,576 --> 02:32:38,775
+Teşekkürler. Tamam, geldi.
+
+718
+02:32:40,695 --> 02:32:42,256
+İkisi de mümkün aslında.
+
+719
+02:32:43,219 --> 02:32:45,639
+Şimdi dediğim gibi şu olabilir.
+
+720
+02:32:47,719 --> 02:32:48,419
+Şu before.
+
+721
+02:32:51,299 --> 02:32:52,619
+Bu after.
+
+722
+02:32:54,719 --> 02:32:56,159
+Bu bir çart.
+
+723
+02:32:57,520 --> 02:32:58,259
+Bu da başka.
+
+724
+02:32:58,539 --> 02:33:00,219
+Diyelim ki işte burası...
+
+725
+02:33:00,819 --> 02:33:25,599
+hate it, şurası love it, şurası no idea gibi. Şeride ise diğer tarafta da after'da da ne bileyim şurası böyle böyle böyle. Bu olabilir. Bu bir ya da dediğin gibi aynısının transpoz edilmişi. Burası no idea, burası hate it, love it, like it. Aslında [öğrenci]'nin yaptığı buydu.
+
+726
+02:33:27,219 --> 02:33:31,979
+Her birisinde iki tane before, after var. Öncesinde, sonrasında.
+
+727
+02:33:34,099 --> 02:33:41,659
+Her bir kategori. Bu ikisi de doğru. İkisini ayrı graf olarak sayabiliriz. Çünkü bunlar farklı şeyleri gösteriyor sonuç olarak.
+
+728
+02:33:42,340 --> 02:33:51,579
+Olabilir. PyChart demiştiniz. Sonra LineChart eklemiştik before, after için. Burası before, burası after.
+
+729
+02:33:52,404 --> 02:33:55,824
+Öncesi, sonrası, her birisi için yapılabilir. Doğru, bu da olur.
+
+730
+02:33:57,684 --> 02:34:04,963
+Aynısının buna benzer gibi no idea before after, like it before after gibi versiyonu da olabilir.
+
+731
+02:34:05,463 --> 02:34:09,783
+Bunu da aslında ekleyebiliriz. Onun dışında direkt bar chart vardı.
+
+732
+02:34:11,684 --> 02:34:16,244
+Yani şimdi böyle beşe kadar çıktık. Başka bunların dışında aklına fikir gelen var mı?
+
+733
+02:34:18,324 --> 02:34:23,704
+Hocam, 3 boyutlu nokta plot olarak şey yapabiliriz, yorumlayabiliriz.
+
+734
+02:34:24,384 --> 02:34:34,083
+3 boyutlu nokta plot nasıl? İsterseniz konuşalım. Şöyle noktası olarak ama hani before after nasıl yapacağız?
+
+735
+02:34:35,004 --> 02:34:42,864
+Yani 3 tane hani değişken olduğunu düşündüm. Before after, kategoriler hani seviyor, sevmiyor vs. bir de sayılar.
+
+736
+02:34:43,824 --> 02:34:44,984
+Anladım, evet.
+
+737
+02:34:45,716 --> 02:35:00,636
+Burası işte diyelim ki bizim nelerimiz olsun. Before, after. Bunlar bizim kategoriler. Buralarda değerler. Olabilir, 3 boyut da olabilir. Bu da diğer bir örnek olabilir. Altı. Başka aklımıza gelen var mıydı?
+
+738
+02:35:07,924 --> 02:35:16,444
+Şunu böyle yan yana da yapabilirdik değil mi? Mesela şu, before, after, böyle kule gibi değildi.
+
+739
+02:35:17,144 --> 02:35:27,824
+No idea, hate it, love it, like it gibi aynısını böyle diğer bir stack gibi de yapabilirdik dörtlü.
+
+740
+02:35:28,744 --> 02:35:32,644
+Bunu da ayrı bir şey sayabiliriz ama bunun gibi.
+
+741
+02:35:33,556 --> 02:35:50,995
+varyasyonlarını eklemek mümkün. Başka var mıydı? Hitmap olabilir. Doğru. Hitmap'te de aslında böyle biraz mozak plat gibi oluyor hitmap'te. O da başka bir seçenek olabilir. Doğru. Başka var mı aklıma gelen?
+
+742
+02:35:56,531 --> 02:36:02,831
+Yeterince bulduk değil mi? Gördüğünüz gibi aslında basit bir veriyi bile çok farklı farklı değerlerle göstermek mümkün.
+
+743
+02:36:03,351 --> 02:36:13,592
+Tabi burada amacımız hangisi daha iyi değil çünkü o durumda başka bir bakış açısı gerekir ama bir görseli birden çok yaklaşımla görselleştirmek mümkün.
+
+744
+02:36:14,092 --> 02:36:17,651
+Bunların içinden hangisi uygun olur bunu seçmek de önemli bir şey.
+
+745
+02:36:18,371 --> 02:36:23,791
+Ama bir görsel için, bir veri seti için çok farklı varyasyonlar bulunabilir.
+
+746
+02:36:24,531 --> 02:36:35,011
+Kısaca konuşmuş olduk. Benim bugünlük söyleyeceklerim bu kadar. Bana e-mail hatırlattırsan [öğrenci] bonus hakkında sevinirim, unutmayayım ben.
+
+747
+02:36:36,191 --> 02:36:43,291
+Teşekkür ederim. Ben teşekkür ederim. Hepinize de teşekkürler katıldığınız için. Var mı sorununuzu, eklemek istediğiniz bir şey var mı?
+
+748
+02:36:44,331 --> 02:36:46,092
+Dersten sonra bir beş dakikanız var mı hocam?
+
+749
+02:36:47,347 --> 02:36:56,747
+Olur, konuşabiliriz hızlıca. Şarjım bitiyor. Takarım o arada. Var mı başka sorusu olan?
+
+750
+02:36:57,747 --> 02:37:13,747
+Hocam, kısaca bir şey sorabilir miyim dersin ilerleyen dönemler hakkında? Bu görüşeğimiz makine öğrenme sağlık orütmalarını yüzeysel veya mantıksal olarak mı işleyeceğiz? Yoksa matematiksel olarak da nasıl ilerlediğini, ne yaptığımızı, nasıl işlediğini de görecek mi? Nasıl ilerleyecek o konuda?
+
+751
+02:37:14,407 --> 02:37:24,167
+Evet, aslında matematiksel tarafını da işleyeceğiz. Yani çalışma prensiplerini inceleyeceğiz. Sadece bu fonksiyonu çağırın böyle değil. Daha detaylı yaşayacağız. Yani nasıl çalıştığını göreceğiz.
+
+752
+02:37:25,172 --> 02:37:25,952
+Teşekkür ederim.
+
+753
+02:37:26,412 --> 02:37:30,932
+Ben teşekkür ederim. Başka bir sorumuz var mıydı?
+
+754
+02:37:34,355 --> 02:37:44,995
+Tamam, o zaman bugünlük dersini sonlandıralım arkadaşlar. Haftaya görüşeceğiz. Yüzde. Umarım karar tabi geçer. Bir problem olmazsa yüzde. Devam edeceğiz. Kendinize iyi bakın, hoşçakalın.
+
+755
+02:37:46,036 --> 02:37:48,695
+İyi akşamlar hocam.
+
+756
+02:37:48,956 --> 02:37:50,315
+İyi akşamlar kendinize iyi bakın.
+
+757
+02:37:52,056 --> 02:37:53,896
+Ben hatta kalıyorum, devam edelim biz.
+
+758
+02:37:55,536 --> 02:37:57,296
+Ben bir ekran paylaşabilirim hocam.
+
+759
+02:37:57,296 --> 02:37:57,855
+Tabii.
+
+760
+02:38:00,659 --> 02:38:02,220
+Görebiliyorum şu an.
+
+761
+02:38:03,779 --> 02:38:06,840
+Sizinle konuşmuştuk, belki hatırlıyorsunuzdur odanızda.
+
+762
+02:38:08,380 --> 02:38:10,279
+Biz bir hata yapmışız.
+
+763
+02:38:11,720 --> 02:38:13,399
+Veriler aslında öğreniyormuş.
+
+764
+02:38:13,619 --> 02:38:14,840
+Yani biz öğretebildik.
+
+765
+02:38:15,159 --> 02:38:16,380
+2000 tane etiket attık.
+
+766
+02:38:17,439 --> 02:38:19,479
+Şu an, şöyle göstereyim.
+
+767
+02:38:21,139 --> 02:38:33,520
+Şu an %92, 200'e kadar üretebiliyoruz. 300 tane testi. Bizim kendi kendimize şey de yaptık. İkimizin attığı label'ları da karşılaştırdık.
+
+768
+02:38:33,919 --> 02:38:34,139
+Evet.
+
+769
+02:38:34,139 --> 02:38:42,699
+İlk 100 tane de hocam, 8 tane kendimiz bile farklı yaptık. Aslında human performansa yakın bir sonuç alıyoruz.
+
+770
+02:38:43,659 --> 02:38:44,039
+Güzel.
+
+771
+02:38:44,979 --> 02:38:48,439
+Hani etiketleme yaparken de SMSU, Bayes şey yapalım dedik hocam.
+
+772
+02:38:48,852 --> 02:39:08,132
+Mesela şu an elimizde 2000 var. Belki 5000'e çıkarırız. 5000, 5000'e eğitip 10.000, 10.000'e eğittiğimizle sonraki 10.000, sonra o 20.000'le arttıra arttıra belli bir regulasyon yapıp belli bir sayıda oluşturduktan sonra onu artık sunacağız büyük ihtimal.
+
+773
+02:39:08,632 --> 02:39:12,752
+Bir de şey yapalım diyorum hocam, bu prediction score'larının yanına.
+
+774
+02:39:13,172 --> 02:39:28,871
+Bunları pozitif negatifliğe de ayıracağız. Size sunarken fikrimiz var da ondan emin değilim yapılır mı. Bir web sitesi yapıp mesela bir ekranda şey olacak, pozitif negatif seçilecek parametre olarak, işte skor seçilecek.
+
+775
+02:39:30,391 --> 02:39:40,092
+Bir mi iki mi istiyor? Gerçekten ürünle alakalı mı olsun olmasın parametre seçilecek. Hepsinin sağladığını sizin önünüze getirecek. O tarz bir şey düşünüyoruz.
+
+776
+02:39:40,531 --> 02:39:47,291
+Evet, bir arayüzde yaparsanız daha güzel olur. Orada hatta kendimiz de bir şey yazıp onun tahminini test edebiliriz.
+
+777
+02:39:48,171 --> 02:40:03,371
+Hocam, bir de burada baktım. Mesela actual predictive'lar, normalde predictive'lar doğru çoğu. Biz yanlış etiketlemişiz. Öyle de bir şey var bazılarına bakınca.
+
+778
+02:40:03,371 --> 02:40:03,752
+Evet.
+
+779
+02:40:05,396 --> 02:40:11,615
+Onu normalize edin arkadaşlar. Şöyle, tek bir tanemizin doğru demesi aslında doğru olmayabilir.
+
+780
+02:40:12,236 --> 02:40:22,695
+Evet hocam işte burada şey yaptık. Bunu biz şey olarak kullanalım diyorduk hocam. Bunu baseline olarak kullanalım. Bizim kendi aramızdaki hatamız zaten olabilecek en üst şey olarak.
+
+781
+02:40:22,695 --> 02:40:30,456
+Ama biz hani biz kendi baseline'ımızı bile geçeceğiz ya da geçemeyeceğiz. Hani onun üzerinden karşılaştırma yapalım diye konuştuk.
+
+782
+02:40:31,072 --> 02:40:50,891
+Güzel. Hatta bir arkadaşınızla birlikte de yaparsanız, belki üç kişi skorlarsa, üçte ikiyi geçen sadece etiketi kabul eder. Üçünüz yapıyorsanız zaten o zaman problem yok. Çelişiyorsanız da en azından iki tanesinin hemfikir olduğunu işaretlerseniz belki bu şey yapabilir.
+
+783
+02:40:52,731 --> 02:40:56,172
+Onun metodolojisini de öyle yazarsınız, unutmazsınız nasıl yaptığınızı.
+
+784
+02:40:57,876 --> 02:41:07,056
+Ya da en azından ikinizin de eşit olmadığını düşündüğünüzü üçüncü bir arkadaşınıza sorup skoru göstermeden onu tamam etmesini istersiniz.
+
+785
+02:41:09,396 --> 02:41:14,436
+Hocam, başka böyle önerebileceğiniz bir şey var mı bu şeyi arttırma konusunda? Doğru mu?
+
+786
+02:41:15,236 --> 02:41:22,876
+Yani güzel, böyle biraz daha tabii manuel biraz iş var. Onu halletmeniz gerekecek. Biraz arkadaşlarımızdan belki destek alabilirsiniz.
+
+787
+02:41:23,056 --> 02:41:29,675
+Ama dediğim gibi o hani bir kısmını eğitip tahminler yapıp onun üzerinden tahminlere göre yapmak da olabilir.
+
+788
+02:41:30,416 --> 02:41:32,076
+Orada biraz Bayes oluşabiliyor.
+
+789
+02:41:32,575 --> 02:41:44,515
+Ondan kaçmak biraz o. Çünkü siz sonucu görerek aslında etiketi veriyorsunuz. O açıdan biraz negatif etiket olabilir ama algoritma genel olarak iyi çalışıyor gibi gözüküyor.
+
+790
+02:41:47,355 --> 02:41:48,536
+Teşekkür ederim.
+
+791
+02:41:48,536 --> 02:41:58,515
+Ben teşekkür ederim. Siz yine biraz şeyleri arttırın, sample'ları arttırın. Bir de o aralarda kaldığınız yeri üçüncü bir arkadaşınıza göstererek.
+
+792
+02:41:58,896 --> 02:42:05,316
+teyitleştirin. Ona göre de tekrar bir modeli eğitirsiniz. Sonra bir ara uğrarsınız bakarız.
+
+793
+02:42:05,876 --> 02:42:06,976
+Tamamdır hocam. Teşekkürler.
+
+794
+02:42:07,116 --> 02:42:09,175
+Ben teşekkür ederim. Kendinize iyi bakın. Hoşçakalın.

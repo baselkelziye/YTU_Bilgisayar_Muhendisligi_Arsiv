@@ -1,0 +1,1291 @@
+1
+00:00:07,283 --> 00:00:12,064
+Herkes otomatik geliyor mu? Herhalde geliyor.
+
+2
+00:00:20,435 --> 00:00:23,576
+Herkes siz değilsiniz. Online'a da bağlandık. Dersi birik ya.
+
+3
+00:00:26,396 --> 00:00:29,155
+Bilin bakalım kaç kişi online'a deniz olacaktı ama.
+
+4
+00:00:30,396 --> 00:00:31,235
+Az sormuyorum çünkü.
+
+5
+00:00:32,115 --> 00:00:34,095
+Şimdi şunaları kapatalım yine.
+
+6
+00:01:05,683 --> 00:01:20,243
+Ne haber? Kimler vardı geçen hafta? Her derse geliyor musunuz böyle? Katılan, katılımcı terfem. Tamam, süper.
+
+7
+00:01:21,204 --> 00:01:30,323
+Şimdi online'lar siz de hoş geldiniz. Bağırıyorum onlardan diye. Bugün online'ları unutmamamız lazım.
+
+8
+00:01:31,156 --> 00:01:43,695
+Ne yapmamamız lazım? Tahtaya şakır şukur yazıp, onlar da muhtemelen bilgisayarlar çok başka bir şey yaptıkları için fark etmeyecekler. Sonra diyecekler ki, hoca tahtaya ne yazdı? Olabildiğince ne yapacağız? Bu tarafa yazacağız.
+
+9
+00:01:44,756 --> 00:01:57,916
+Şimdi, dersle ilgili, gecen haftayla ilgili ya da başka bir şeyle ilgili sorunuz var mı? Gençler, var mı? Sorsana.
+
+10
+00:01:59,123 --> 00:02:02,024
+What? Sor, bayılırım sınıflara son.
+
+11
+00:02:10,836 --> 00:02:11,724
+Evet.
+
+12
+00:02:17,843 --> 00:02:23,704
+Tamam, güzel. Şimdi ben soruyu anladım. Diyorsun ki prediktive mi, descriptive mi?
+
+13
+00:02:23,923 --> 00:02:24,144
+Evet.
+
+14
+00:02:24,483 --> 00:02:32,524
+Tamam. Şimdi önce geçen haftayı hemen hızlıca, sesim geliyor mu online'da? Offline'da, offline'da, online'da. Herkes online'da.
+
+15
+00:02:34,903 --> 00:02:36,144
+Geliyor gibi hocam.
+
+16
+00:02:37,043 --> 00:02:44,463
+Geliyor dedi, geliyor dedi. Ver, tamam. Benim gibi yapmayın. Telefonunuzu kısın. Hocanın telefonu çabuk.
+
+17
+00:02:44,883 --> 00:03:11,683
+Geçen hafta ne yaptık? Veri madenciliği nedir dedik? Kısa bir tanımını yaptık değil mi? Dedik ki veri var, veri önemli ama veriden bize lazım olan yani ham veri aslında bize çok bir şey ifade etmiyor. Bize ne lazım? Bize bilgi lazım. Bu veriden ben bilgiyi çıkartayım ki bir işime yarasın dedik değil mi? Sonra veri madenciliği metotları da dedik ki temel olarak ikiye ayrılır dedik.
+
+18
+00:03:12,116 --> 00:03:16,516
+Bir tanesi descriptivdir, diğeri de nedir? Predictivdir.
+
+19
+00:03:18,196 --> 00:03:26,796
+Predictivlerde daha çok tahmin yapacağız dedik ve predictivlerde ilk olarak ne dedik? Sınıflandırma yani classification'dan bahsettik.
+
+20
+00:03:26,796 --> 00:03:33,056
+Değil mi? Classification'dan bahsettik, dedik ki eğer ki verimizde etiket varsa.
+
+21
+00:03:33,939 --> 00:03:53,060
+Ve biz bu etiket label ve biz bu label'ları tahmin etmeye çalışıyorsak bu classification dedik. Sonra regresyondan bahsettik. Regresyonda da dedik ki regresyonda bizim yine etiketimiz var ama etiketimiz diskret değil.
+
+22
+00:03:53,487 --> 00:04:09,419
+Continuous, sürekli değerlerse, yani tahmin etmeye çalıştığım şey, bulmaya çalıştığım şey, sürekli değerlerse buna da regression, regression diyoruz dedik. Tamam mı? Descriptive modellerin farkı şu, etket yok. Yani...
+
+23
+00:04:09,876 --> 00:04:23,256
+Nasıl etket yok? Şöyle etket yok. Benim elimde bir data var ama bu data daha önceden işte diyelim ki müşteri örneği vermiştik. Hatırlarsanız customer segmentation örneği, müşterileri bölükleme.
+
+24
+00:04:24,615 --> 00:04:30,615
+Diyelim ki sizin müşterileriniz var, müşterileri 3 kümeye ayırmak istiyorsunuz. Ama elinizde şu data yok.
+
+25
+00:04:30,944 --> 00:04:37,824
+Bir numaralı müşteri ikinci küme, ikinci numaralı müşteri üçüncü kümeye ait diye bir şey yok. Tamam mı?
+
+26
+00:04:38,344 --> 00:04:47,804
+Kümeler tamamen soyut. Kümeleri de şöyle tanımlamıyorsunuz. Birinci kümenin özellikleri şudur, ikinci kümenin özellikleri şudur diye de tanımlayamıyoruz.
+
+27
+00:04:47,964 --> 00:04:53,783
+Ama diyoruz ki biz elimizdeki veriyi üçe ne yapalım? Ayıralım. Tamam mı?
+
+28
+00:04:55,956 --> 00:05:01,336
+ve üç kümeye ayrılıyor ve bu üç örneğini veriyorum, o bile de üç deyip duruyorum. Üç olmak zorunda değil.
+
+29
+00:05:02,016 --> 00:05:11,436
+Genellikle clustering de iki farklı şeye ayrılacak. Bir tanesi hiyerarşik, diğeri de hiyerarşik olmayan da bu küme sayısını ne yapıyoruz?
+
+30
+00:05:11,975 --> 00:05:21,615
+Biz kendimiz belirliyoruz. Tamam mı? Dolayısıyla parametreye ne yapıyor? İhtiyaç duyacak. Bir de dedik ki outlier detection dedik.
+
+31
+00:05:21,875 --> 00:05:29,795
+Şimdi düşünün bakalım, predictive midir, descriptive midir? Outlier'ların elimde etiketi var mı, yok mu labelları?
+
+32
+00:05:42,036 --> 00:05:58,056
+Şunu diyebiliyor musun, şunu diyemezsin ama işte günde yüz kereden fazla şunu yapanları outlier olarak işaretle. Zaten senin o parametreyi bilseydin hiç data mining'e gerek olmazdı ki veri tabanından derdin ki şunları getir derdin, al bunlar da outlier derdin.
+
+33
+00:05:58,716 --> 00:06:02,776
+Dolayısıyla outlier bulurken ya da anomali detection yaparken
+
+34
+00:06:03,348 --> 00:06:22,987
+Biz yine ne yapıyoruz? Deskriptive metotları kullanıyoruz. Yani genel eğilim budur. Bak bunlar farklılaşmıştır, şüphelidir. İlla şey de değil. Bak işte bu outlier dediğin zaman ya da işte bak bu çok farklılaşmış dediğin zaman o bir anomali olmayabilir de. Belki gerçekten o gün öyle bir şey oldu.
+
+35
+00:06:24,052 --> 00:06:35,052
+Atıyorum, işte havayla ilgili bir şey yapıyordu. O gün diyelim ki işte yağış miktarı var var var. İşte az yağış, çok yağış, orta yağış kümeledin. Tamam mı? Sonra bir tane...
+
+36
+00:06:39,923 --> 00:06:49,024
+Dolayısıyla elimizde, anomaly detection'da label'lar yok ve diyoruz ki, ne diyoruz? Descriptive bir metot diyoruz.
+
+37
+00:06:49,723 --> 00:06:52,243
+Tamam mı? Ne gördük başka geçen hafta?
+
+38
+00:06:56,339 --> 00:07:06,759
+Genel olarak bunları gördük. Tamam mı? Bunların tanımını yaptık. Peki bugün ne yapacağız? Bugün gelebilirsiniz öyle şey yapmayın. Çekinmeden girin.
+
+39
+00:07:08,499 --> 00:07:18,279
+Bugün ne yapacağız? Bugün birazcık daha datayı tanıyacağız. Datayı tanımak ne demek? Yani benim datam hangi tiplerde olabilir?
+
+40
+00:07:18,995 --> 00:07:27,115
+Birazcık datamız nasıl olur onlara bakacağız. Sonra haftaya da bu data üzerinde ben ne tip ön işlemler yaparım onlara bakacağız.
+
+41
+00:07:27,555 --> 00:07:39,435
+İlk başta data objektler yani sampullar nedir onlara bakacağız. Sonra zaten bildiğiniz data üzerindeki en temel istatistiksel operasyonlar ya da işlemler nedir onlara bakacağız.
+
+42
+00:07:43,439 --> 00:08:02,039
+Benzemezliğini, benzemez kelimesi yerine ne kullanırız? Benzemez. Kullamadım. Farklılığını da değil, o da tamamlıyor da neyse. Biz simüleeritik diyelim. Benzemezlik alsın. Benzemezliğini hangi tip metriklerle ölçeriz? Onlara bakacağız. Tamam mı?
+
+43
+00:08:02,039 --> 00:08:07,439
+Şimdi ilk ne yapıyoruz? Data, object, attribute type'larına onlara bakıyoruz.
+
+44
+00:08:12,403 --> 00:08:15,003
+Online dersin gelmezse şey yapın.
+
+45
+00:08:16,103 --> 00:08:16,543
+Dürtün.
+
+46
+00:08:20,276 --> 00:08:23,156
+Dataya baktığımız zaman, datam hangi tiplerde olabilir?
+
+47
+00:08:32,596 --> 00:08:35,415
+Sayılar nümelik olabilir. Başka?
+
+48
+00:08:36,556 --> 00:08:37,915
+Tekst olabilir.
+
+49
+00:08:40,395 --> 00:08:40,796
+Ne olabilir?
+
+50
+00:08:42,096 --> 00:08:46,355
+Fotoğraf, resim, video gibi şeyler olabilir. Başka?
+
+51
+00:08:49,355 --> 00:08:52,655
+Ses olabilir. Farklı sinyaller olabilir.
+
+52
+00:08:56,083 --> 00:09:13,144
+Şifreli data ile çok uğraşmıyoruz burada ya. Yani genelde veri tabanına şifreleyip kaydediyorsanız bile onu reklam etmenin daha klasik yöntemleri var.
+
+53
+00:09:13,144 --> 00:09:21,483
+Yani data minde çok şifrelemeden konuşmayacağız. Yani veri güvenliği falan filan. Bunlardan çok bahsetmeyeceğiz. Tamam ders boyunca. Başka ne olabilir?
+
+54
+00:09:24,947 --> 00:09:31,447
+Birçok şey olabilir. Tamam mı? Şimdi ve data setlere baktığımız zaman çok farklı yerden gelebilir.
+
+55
+00:09:31,567 --> 00:09:37,528
+Sosyal medyadan gelebilir, dökümanlardan gelebilir, tamamen sayısal tablolardan, sayısal verilerden de gelebilir.
+
+56
+00:09:38,147 --> 00:09:43,748
+Ve datanızın tipi, şimdi biz ne yapacağız? Birkaç hafta sonra metotları görmeye başlayacağız.
+
+57
+00:09:44,327 --> 00:09:52,548
+Datanızın tipi kullanacağınız metot ne yapar? Etkiler. Tamam mı? Datanızın metodu tipine göre metot kullanmamız gerekecek.
+
+58
+00:09:53,076 --> 00:10:12,056
+Sonra datanın kalitesinden bahsedeceğiz. Şöyle bir şey, gelen data ne olmuyor? Her zaman iyi olmuyor. Mesela biz baba kirliliği datası çalışıyorduk. İstasyondan ölçüyorlar, manuel girmişler, manuel girmişler. Mesela girerken bir dür koymamış.
+
+59
+00:10:12,532 --> 00:10:37,532
+Mesela 21.2 yazacağına bir anda 212 yazıyor, 10 katı yazıyor falan filan. Ya da ne oluyor? Noise oluyor. Yani insan hatasından değil ama belki çihazın kalibrasyonunda sıkıntı oluyor, başka şeyler olabiliyor. Dolayısıyla datamızın kalitesinden de ne yapmamız lazım? Emin olmamız lazım. Eğer değilse datayı biz nasıl daha kalitesiyle hale geçebiliriz?
+
+60
+00:10:40,244 --> 00:10:48,244
+Aslında ilk katastikten birazcık genetlerle baktığımızda da doldu bildiğiniz şeyler. Tamam mı?
+
+61
+00:10:48,244 --> 00:10:56,244
+Sonra, dediğim gibi eğer ki datamızın kalitesi çok iyi değilse bunun kalitesini nasıl arttırırız? Tamam.
+
+62
+00:10:56,244 --> 00:11:00,244
+Netik işlemler yapıyoruz, onlara bakacağız. Tamam mı?
+
+63
+00:11:00,244 --> 00:11:06,244
+Şimdi, baktığımız zaman datamızla, datamız birbiriyle...
+
+64
+00:11:07,731 --> 00:11:16,931
+Hava falan gidebilir. İlk havada sıcaklık, nem, yağış, böyle böyle veri.
+
+65
+00:11:16,931 --> 00:11:25,931
+Verilerin bazıları bilgileriyle korreye olabilir. Dolayısıyla ya da hiç aralarında korrelasyon olmayabilir.
+
+66
+00:11:25,931 --> 00:11:31,931
+Bu durumlarda ne yapmamız lazım? Onlara bakacağız. Bugün görüntü başlığı da genel olarak bu.
+
+67
+00:11:36,307 --> 00:11:56,307
+Bir tanımını yapalım. Aslında geçen hafta basitçe bundan konuştuk. Şimdi data set kullanacağız. Yani veri kimmesi. Birimiz ne olur, şu olsun. Görüntü de olsa, sinyal de olsa, kümeleme, kaza da olsa, bir kümle ne diyeceğiz? Hep veri kimmesi diyeceğiz. Tamam? Data set.
+
+68
+00:12:03,572 --> 00:12:30,711
+Şimdi aslında şu kadar iyi anlatabiliriz. Şu şekilde. Bakın bu çok basit bir tablo. Yani şunun hepsi bir data obje. Tamam mı? Veri setim. Şu verilerden oluşuyor diyelim ki. Şöyle pardon. Data alalım. Tamam.
+
+69
+00:12:31,028 --> 00:12:44,908
+Şimdi şuradaki her bir satır diyeyim. Bu neyi gösteriyor? Mesela her bir kişinin transaction'ları göstermiş ama her bir transaction'ın özelliklerini gösteriyor. Değil mi?
+
+70
+00:12:45,908 --> 00:12:54,567
+İşte bunların hepsine, yani her bir satıra diyeyim. Ne diyorum? Data object diyorum. Ya da ne diyorum?
+
+71
+00:12:57,779 --> 00:13:04,100
+Ben daha çok herhalde bunu kullanıyorum. Instance diyoruz. Ya da ne diyoruz? Sample diyoruz.
+
+72
+00:13:06,500 --> 00:13:13,100
+Her bir satıra ne diyoruz? Object, instance, sample gibi şeyler söylüyoruz.
+
+73
+00:13:14,179 --> 00:13:17,439
+Şimdi gelelim, bir de sütunlar var. Sütunlara ne diyoruz?
+
+74
+00:13:18,100 --> 00:13:27,340
+sütunlarda attribute'larım oluyor. Yani bu datanın refund attribute'u ya da işte taxable income attribute'u. Her bir kolonda attribute oluyor.
+
+75
+00:13:28,420 --> 00:13:32,940
+Tamam. Roller data object, kolonlarda attribute olarak geçiyor.
+
+76
+00:13:34,940 --> 00:13:38,399
+Şimdi buraya gidince o silinecek mi? Kesin silinmeyecek.
+
+77
+00:13:42,580 --> 00:13:45,899
+Tamam. Şimdi sadece bu isimler yok, şunları da görebilirsiniz.
+
+78
+00:13:45,899 --> 00:13:47,460
+Mesela.
+
+79
+00:13:54,419 --> 00:14:15,259
+Data Object ne dedik? Her bir entity gösteren satır dedik. Data Object karşılaşabilirsiniz. İzlediğiniz, video izlerseniz, kitap okursanız. Sample kullanılır, instance kullanılır. Example çok kullanılmıyor ama yine example, her bir satıra example ya da işte tuple.
+
+80
+00:14:15,796 --> 00:14:22,416
+Tek başına data object'i de tek başına object'e denebilir. Bunları gördüğümüz zaman neyi anlayacağız? Verini, satırını anlayacağız.
+
+81
+00:14:23,476 --> 00:14:34,616
+Şimdi gelelim sütunlara. Sütunlara ne diyoruz? Attribute deriz dedik ve buraya da yine variable, field, feature ya da karakteristik gibi terimlerde ne yapıyor?
+
+82
+00:14:35,376 --> 00:14:39,396
+Datamızın sütunları gibi ne yapabilirsiniz? Özellikleri olarak.
+
+83
+00:14:39,903 --> 00:14:48,923
+Düşünebilirsiniz. Bir objeyi nasıl tanımlıyoruz? Bir objeyi çok farklı attribütlerin, yani bunun Türkçesi de öz nitelik.
+
+84
+00:14:49,663 --> 00:14:58,923
+Bir objeyi farklı öz niteliklerin birleşimiyle tanımlıyoruz. Peki, attribute value dediğim zaman ne oluyor?
+
+85
+00:15:04,019 --> 00:15:08,908
+Refund Attributes'unun, values'u, değeri, yani o zaman şu hücretleri,
+
+86
+00:15:14,676 --> 00:15:30,956
+Ya da şöyle desem, refund attribute'unun öz niteliğinin, değerleri, value'ları kaçla kaç arasında, yani nelerdir dediğim zaman siz yes ve no'dur, ne yapabilirsiniz diyebilirsiniz.
+
+87
+00:15:33,036 --> 00:15:41,036
+Şimdi, biraz daha konuşalım yine attribute'lerden. Attribute'ler neler? Bizim kolonlarımız. Neler attribute olabilir?
+
+88
+00:15:44,916 --> 00:15:50,596
+Veri ile ilgili aslında her şey attribute olabilir. Değil mi? Öz nitelik olabilir.
+
+89
+00:15:51,196 --> 00:16:02,276
+Ama şimdi ben ham veriden bahsediyorsam, yüzlerce işte veri toplarken yüzlerce bu şekilde attribute toplanmış olabilir mi?
+
+90
+00:16:04,216 --> 00:16:12,336
+Gerekli gereksiz. Olabilir değil mi? Ve bunların içinde ne olabilir? Sayılar olabilir, semboller olabilir.
+
+91
+00:16:12,864 --> 00:16:17,764
+Artık veri tabanına ne kaydedildiyse, düz veri tabanından gidelim, onlar vardır.
+
+92
+00:16:18,764 --> 00:16:28,624
+Attribute ve attribute value'su arasındaki fark ne? Attribute genellikle kolonun adı ama value'su da aslında onun değeri.
+
+93
+00:16:28,823 --> 00:16:37,104
+Yani onun gösterdiği şeyimiz. Yes, no, no dediğim şey. Deminki Rufant'ta neydi? Attribute'un value'su. Yani değeriydi.
+
+94
+00:16:39,892 --> 00:16:53,292
+Herhalde okeyiz, burası anlaşıldı. Şimdi, attributların dört temel tipi var. Tamam mı? Şimdi bunları buraya kaltmaya yazacağım ama şeylerde diye yazacağım çünkü karıştırmayın.
+
+95
+00:17:22,675 --> 00:17:45,195
+Bunlar çok eşitiz. Kategorik ne demek? Sayısal ne demek? Kategorik, nümerik. Söyle.
+
+96
+00:17:51,347 --> 00:17:54,048
+Anlatan saç rengi olabilirsiniz.
+
+97
+00:17:55,427 --> 00:17:56,028
+Gibi.
+
+98
+00:17:56,347 --> 00:17:57,187
+Nitelik ve nicelik.
+
+99
+00:17:57,268 --> 00:17:58,707
+Aslında anahtar kelimeyi söyledin.
+
+100
+00:17:59,127 --> 00:17:59,347
+Değil mi?
+
+101
+00:18:00,347 --> 00:18:03,707
+Aslında bizim yani nicelik sayısalken, nitelikte ne?
+
+102
+00:18:03,827 --> 00:18:07,387
+Sayısal olmayan ama bir şeyler ifade eden şeyler.
+
+103
+00:18:07,627 --> 00:18:08,807
+Kategorik dediğimiz şey.
+
+104
+00:18:08,907 --> 00:18:13,508
+Genellikle işte ya bir durum belirtir ya da işte bir şeyin adını belirtir.
+
+105
+00:18:14,048 --> 00:18:14,548
+Tamam mı?
+
+106
+00:18:14,847 --> 00:18:16,167
+Mesela saç rengi dedi.
+
+107
+00:18:16,567 --> 00:18:16,707
+Değil mi?
+
+108
+00:18:16,707 --> 00:18:18,207
+Veri tabanında mesela.
+
+109
+00:18:18,900 --> 00:18:26,579
+Tablo oluştururken ne yapıyorsunuz? Üçler varitaban aldım mı? Almadım mı? Almadım. Tamam, bu örneğe geçtik.
+
+110
+00:18:27,900 --> 00:18:38,780
+Şimdi, diyelim ki saç rengi. Saç rengini, önceden dediniz ki beş tane saç rengi vardır dediniz. Tamam mı? İşte sayı, neyse. Tamam.
+
+111
+00:18:39,135 --> 00:19:05,615
+Daha basit örnek versiyedim keşke. Ya da deminki refund'da yes ya da no var. Bu şekilde kategorik olarak ve nitelik olarak bahsettiğimiz şeyler tamamen ne? Kategorik değerler. Daha çok sayısal olarak ifade etmediğimiz bir kategoriyle ifade ettiğimiz şeyler ne? Kategorik değerler.
+
+112
+00:19:06,867 --> 00:19:18,087
+Şimdi nominalde en çok hani kullanılan şey nedir? Binary'dir. Binary ne? 0, 1. Yes mi ne? Ya da işte ne yapabilirsiniz?
+
+113
+00:19:20,467 --> 00:19:27,747
+Neyi vermek istemiyorum. İşte bir şey evet, hayır. İşte almak istiyorum, almak istemiyorum gibi bir şey işaretlediğiniz zaman.
+
+114
+00:19:28,288 --> 00:19:31,167
+Mesela binary nedir? 0, 1 sayı gibi dursa da.
+
+115
+00:19:31,571 --> 00:19:41,471
+Aslında var yok gibidir değil mi? Dolayısıyla bizim binary attribute'lerimizde ne? Yine nominal attribute'lerden.
+
+116
+00:19:50,451 --> 00:20:09,892
+Ordinal ne demek? Bu da yine kategorik. Yani sayıyla işte 14, 17 ile falan filan ifade etmiyorum. Tamam mı? Yine tıpkı nominaller gibi, kategoriler, nominaller gibi, ordinal değerleri de kategorik değerlerle ifade ediyorum.
+
+117
+00:20:09,892 --> 00:20:16,632
+Ama şöyle bir fark var. Aralarında sıralama yapabildiğim kategorik değerler. Yani,
+
+118
+00:20:17,087 --> 00:20:19,127
+İşte küçük, orta, büyük gibi.
+
+119
+00:20:21,027 --> 00:20:25,067
+Tamam mı? Yani sıraladığımız zaman, diyelim ki işte,
+
+120
+00:20:27,167 --> 00:20:28,527
+Yeminli örneği verdik bari bence.
+
+121
+00:20:33,332 --> 00:20:49,912
+Tamam, öyle yapalım. Diyelim ki çocuk, genç, yaşlı olarak ayırdınız üçe. Bunu sıralayabiliyor musunuz? Evet, sıralayabiliyorsunuz. O zaman nedir bu? Ordinal değerlerdir.
+
+122
+00:20:50,832 --> 00:20:59,272
+Şimdi kategorik iki tip değerimiz var. Bir tanesi ne? Nominal değerler. Diğeri de ne? Ordinal değerler.
+
+123
+00:21:02,132 --> 00:21:04,892
+Binary'de ne yapıyor? Nominal'in bir alt kümesi.
+
+124
+00:21:07,972 --> 00:21:15,112
+Şimdi gelelim sayısal değerlere. Sayısal değerlerimizi de yine iki tipi ayırdık. Bir tanesi interval yani aralık.
+
+125
+00:21:16,112 --> 00:21:22,572
+Aralık yani karşılık geliyor. Ve baktığımız zaman yani aralık şu demek.
+
+126
+00:21:23,932 --> 00:21:29,512
+Bahsedilen sayısal değer eğer ki eşit büyüklükte bir şey ifade ediyorsa
+
+127
+00:21:30,099 --> 00:21:42,339
+Ya da sayısal değerler arasındaki fark, belirli eş parçalanmış şeylere tekabül ediyorsa diyoruz ki bu bir intervaldır diyoruz.
+
+128
+00:21:42,419 --> 00:21:51,159
+Mesela buradaki örnek ne? Sıcaklık. 5 derece, 10 derece. Aradaki fark 5 ise 15 ile 20 arasındaki fark yine 5 derece.
+
+129
+00:21:56,115 --> 00:22:03,956
+Aynı şeyi ifade ediyor. Bunun numerin bir diğeri de ne? Ratio dediğimiz oransal.
+
+130
+00:22:05,956 --> 00:22:10,936
+Buradaki değerler size aslında şöyle bir şey.
+
+131
+00:22:11,316 --> 00:22:22,676
+Genellikle zero point dediği şey referans aldığı nokta sıfıra göre sıfırı referans alarak işte bir sıfırın katı, sıfırın katı olmayan sıfırın katı sıfırdır demeyin de,
+
+132
+00:22:22,676 --> 00:22:34,836
+işte kat sayı olarak ifade edebildiğimiz ya da oranların daha anlamlı olduğu neler? Değerler. Tamam mı? Değişiyor.
+
+133
+00:22:36,980 --> 00:22:44,020
+Mesela üç katı, beş katı olarak ifade edebileceğiniz şeyler. Mesela bunlara birazcık daha örnek vereceğiz şimdi.
+
+134
+00:22:44,800 --> 00:22:55,700
+İlk nominallerden başlıyoruz. Tamam mı? Kategorikli değil mi nominaller? Genellikle ya sembollerdir ya da isim olarak ifade edilir. Tamam mı?
+
+135
+00:22:55,700 --> 00:23:03,220
+Her bir şeyde attribute'un value'ları genellikle önceden bellidir. Herkes kafasına göre bir şey yazmaz.
+
+136
+00:23:03,763 --> 00:23:17,144
+Bir şey gösterir. Peki, size soru. Öğrenci, diyelim ki öğrenci sizin, öğrenci numaralarınız var değil mi? Öğrenci numaralarınızı ne olarak tutarsınız? Sayısal değer ama ne olarak tutarsınız?
+
+137
+00:23:24,339 --> 00:23:24,739
+Neden?
+
+138
+00:23:34,644 --> 00:23:58,504
+Olabilir, evet. Niye? Çünkü sayısal değerler üzerinde ne yapıyorsunuz? İşlem yapıyorsunuz. Toplama yapıyorsunuz, çıkarma yapıyorsunuz vs. değil mi? Sayısal değerler de aslında sembollerle gösteriliyor ama farkı ne? Aralarında bir ilişki var. Ama aslında numaralar üzerinde herhangi bir operatörle bir işlem yapıyor musunuz? Hayır. Numaraların aslında içinde bir anlam ifade ediyor.
+
+139
+00:23:59,188 --> 00:24:08,548
+Ama bunu illa, yani şöyle ifade edin, giriş yılınız falan filan öyle baksanız apabilir. Ama bunu yine string operasyonlarıyla da ne yapabilirsiniz? Direkt anlayabilirsiniz.
+
+140
+00:24:09,188 --> 00:24:18,388
+Dolayısıyla bu tarz şeyler, işte TC kimlik ne o gibi ya da bu tarz değerler ne oluyor? Genellikle nominal tutuluyor. Tamam mı?
+
+141
+00:24:23,092 --> 00:24:43,432
+Öz niteliğe. İşte evlilik durumu ne olabilir? Bekar, evli, boşanmış, dur. Bu da şey, neyse geçelim. Ondan sonra, bunlar da ne? Nominal attribütler arasında bir sıralama ya da işte yapmamız mümkün değil.
+
+142
+00:24:50,483 --> 00:24:58,603
+Çok anlamlı değil ama bir şey hariç. Ne hariç? Mod hariç. Mod nedir?
+
+143
+00:25:01,423 --> 00:25:13,103
+Olasılık istatistik alanlar, sayıs dizisinin modu. En çok tekrarlayandır değil mi? Birazdan göstereceğiz istatistiksel kısımlarda.
+
+144
+00:25:13,103 --> 00:25:16,603
+Burada sadece şunu diyebiliriz. En çok tekrarlayan şudur.
+
+145
+00:25:17,907 --> 00:25:31,007
+Değil mi? Onu söyleyebiliriz. Yoksa kategorik değerlerde, nominal attribütlerde şunu söyleyemeyiz, işte ortalaması budur, medyanın budur gibi bir analiz yapamayız ama ne yapabiliriz? Modla bir şeyleri ifade edebiliriz.
+
+146
+00:25:35,028 --> 00:25:51,887
+Şimdi bakın ne yaptık? Nominal attributlar dedik. Binary attributlarda genellikle nedir? Nominal attributların bir, aslında nedir? Daha söyleyelim. Binary attributlarda nominal attribüttür diyelim.
+
+147
+00:25:51,887 --> 00:26:01,147
+Altı mesle falan filan demeyelim. Tamam mı? Şimdi binary attributlarla ilgili bir şeyler söyleyeceğiz. Ne simetrik midir? Simetrik ne demek? 0, 1 diyoruz ya.
+
+148
+00:26:01,748 --> 00:26:11,408
+0 ve 1 arasında yine sıra vs. böyle bir şey anlam ifade etmiyorsa, yani 1 büyüktür 0 anlamında değil 0-1.
+
+149
+00:26:12,968 --> 00:26:13,188
+Tamam?
+
+150
+00:26:14,788 --> 00:26:22,288
+Yani mesela cinsiyet dediğimiz zaman, male, female dediğiniz zaman bunu ne yapabilirsiniz? 0-1 olarak tutabilirsiniz.
+
+151
+00:26:22,448 --> 00:26:25,328
+Ama bu şu demek değil, 0 daha küçük, 1 daha büyük.
+
+152
+00:26:25,888 --> 00:26:28,768
+Değil mi? Vainirler arasında böyle bir şey yok. Dolayısıyla bunlarda ne yapıyoruz?
+
+153
+00:26:29,332 --> 00:26:34,031
+nominal attribute'müş gibi kategorik olarak düşünüyoruz ve bunlara simetriktir diyoruz.
+
+154
+00:26:34,751 --> 00:26:41,292
+Binary attribute asimetrik de olabilir. Genellikle bir şey var anlamında kullanıyorsanız,
+
+155
+00:26:41,292 --> 00:26:48,511
+yani mesela işte pozitif, negatif, işte varsa bir yoksa sıfır anlamında kullanıyorsanız,
+
+156
+00:26:48,932 --> 00:26:55,451
+yani oradaki bir şey ifade ediyorsa o zaman da ne diyoruz? Asimetrik binary veriyordur diyoruz.
+
+157
+00:26:57,683 --> 00:27:08,884
+Simetrik de ne? 0, 1. Birbirinden daha üstün, birbirinden daha fazla bir şey ifade ediyor falan. Sayısal bir şey ifade etmiyor. 0 ile 1'in yerini değiştirirseniz de olabilir.
+
+158
+00:27:08,884 --> 00:27:17,084
+Ama bazen binary attribute'lar şöyle bir şey için asimetrik olarak da kullanılıyor.
+
+159
+00:27:19,476 --> 00:27:33,856
+Medical Test için sonuç pozitif, negatif. Hani pozitifler bir, negatifler sıfır olarak gösteriliyorsa ne yapıyoruz? Bunlara asimetrik binary attribute diyoruz.
+
+160
+00:27:39,251 --> 00:27:57,551
+Online'lar iyi misiniz? Kaç kişi var online bakalım? 13 kişi var, çok iyi. Bu ilk hibrit dersin. Online'ları unutmamamız lazım. Online'lar kendinizi hatırlatın. Tamam.
+
+161
+00:28:06,771 --> 00:28:11,331
+Şimdi ne yaptık? Nominal attributlara baktık. Kategoriklik dedik, bineriden bahsettik.
+
+162
+00:28:11,892 --> 00:28:17,652
+Şimdi geliyoruz ordinal attributlara. Şimdi ordinalde ne var? Sıra önemli.
+
+163
+00:28:17,652 --> 00:28:24,971
+Yani aslında bunlar da kategorik ama aralarında büyük, büyüklük, küçüklük gibi ne yapabiliyorsunuz?
+
+164
+00:28:25,296 --> 00:28:34,296
+Bir, sıralama yapabiliyorsunuz. Mesela içecek boyutu, küçük, orta, büyük ya da menü boyutu bu şekilde ne yapabilirsiniz? Söyleyebiliyorsunuz.
+
+165
+00:28:35,155 --> 00:28:50,536
+Peki bunu ortalamayla yani min dediğimiz ortalama istatistiksel olarak bunun üzerinden bir şey söyler mi? Söylemez. Değil mi? Peki medyan söyler mi?
+
+166
+00:28:53,076 --> 00:29:04,695
+Sıraladık. Yine bir şey söylemez. Ama yine ne söyleyebilir? Mod bir şey söyleyebilir. Yani en çok bu yapılmış. İşte en çok orta boy alınmış gibi bir şey söyleyebilir. Tamam.
+
+167
+00:29:06,355 --> 00:29:19,635
+Şimdi ne yaptık? Nomial ve Ordinal'a baktık. Şimdi gelelim Interval Attribute dediğimiz şeye. Bunlar sayısal. Artık şimdikilerle sayısal, numerik değerler.
+
+168
+00:29:19,923 --> 00:29:39,163
+Numerikte de ikiye ayırıyor. Bir tanesi interval ile tamamen sayılar sayı doğrusu olsun. Tamam mı? Bir, iki, iki, üç, eşit eşit çizeriz ya. Eğer ki ifade sayının ifade ettiği değer sayı doğrusu arasında eş aralıklarla ifade edilebiliyorsa interval attribute'leri diyeceğiz.
+
+169
+00:29:40,019 --> 00:29:53,419
+Mesela kitabın verdiği örnek, işte Celsius ve Fahrenheit'ı vermiş. Celsius derken ne yapıyoruz? İşte 5 derece, 10 derece, 20 derece derken aralarındaki farklar eşit.
+
+170
+00:29:53,419 --> 00:30:05,879
+Yani 15-16 arasında da bir derece fark var, yeri arasında da bir derece fark var. Peki, şöyle bir şey söyleyemiyoruz.
+
+171
+00:30:06,740 --> 00:30:15,440
+Bir sıcaklık derecesi diğerinin katıdır. Şundan iki kat daha sıcaktır gibi bir şey söyleyemiyoruz.
+
+172
+00:30:15,440 --> 00:30:26,319
+Yani mesela işte on derece beş dereceden iki kat daha sıcaktır gibi işte oransal şeyler tam olarak söyleyemiyoruz.
+
+173
+00:30:28,160 --> 00:30:30,660
+Bunlar sayısal olduğu için.
+
+174
+00:30:32,147 --> 00:30:43,127
+Sayısal değer olduğu için ortalama ya da medyandan bahsedebilir miyiz? Bahsedebiliriz. Ve yine moddan bahsedebilir miyiz? Yine bahsedebiliriz. Tamam.
+
+175
+00:30:43,788 --> 00:30:52,167
+Şimdi interval attribütler böyle. Reş yine de ratio attribütler de dördüncüsü. Bunlar neler? Yine sayısal değerler.
+
+176
+00:30:52,847 --> 00:30:57,827
+Ama bir şey söylerken oransal olarak söylediğimiz şeyler. Burada da kelbini vermiş.
+
+177
+00:30:58,996 --> 00:31:19,196
+Kelvin kaça geliyor? 273'e mi geliyor derece olarak? Celsius'a çevirirken? Öyle bir şey değil mi? Dolayısıyla ne yapıyor? Aslında 273'ü sıfıra eşitlerken onun kaç katı olduğu üzerinden söylüyor. Yani çevirirken de ne yapıyorsunuz?
+
+178
+00:31:19,635 --> 00:31:32,515
+Aslında yani bir kelvinle iki kelvin, işte demin Sersus'ta söyleyemiyoruz ya, bunun iki katı mıdır? Beş, onun iki katı sıcaktır gibi bir şey diyemiyoruz. Ama kelvin için ne yapabiliyoruz? Mesela söyleyebiliyoruz.
+
+179
+00:31:33,155 --> 00:31:40,975
+Dolayısıyla eğer ki sayısal değerler size kat cinsinden bir şey ifade ediyorsa, tamam mı? Nedir?
+
+180
+00:31:44,975 --> 00:31:45,895
+Burayı çizeceğiz.
+
+181
+00:31:46,771 --> 00:31:51,731
+O zaman rejio attribüttür. Şu birazcık daha anlamlı olabilir. Tabii ki çizebilirsin.
+
+182
+00:31:52,311 --> 00:32:02,591
+Şimdi diyelim ki şu bir çubuk olsun. Bu bir birim. Tamam mı? Bu iki birim. Bu üç birim. Bu da beş birim.
+
+183
+00:32:07,988 --> 00:32:26,288
+Şimdi bu birim olarak şey yaptık ya bunları. Aralarında kat olarak ne var? Bir değer var. Dolayısıyla ratio ile bunları bir, iki, buna kaç dedim, üç mü dedim? Üç ve beş olarak ifade edebiliriz. Tamam mı?
+
+184
+00:32:26,675 --> 00:32:35,735
+Ama eğer ki bunları ratio olarak değil de interval olarak alıyorsanız ne yapacaksınız? Diyelim ki bunları santimetre cinsinden ölçtünüz.
+
+185
+00:32:36,775 --> 00:32:44,575
+Tamam mı? Atıyorum bu 1.3 santimetre çıktı. Yazamadım. Şu 2.6 santimetre çıktı.
+
+186
+00:32:47,635 --> 00:32:53,735
+Yazdığımı düşünün bu 6. Neyse. Bunları santimetre cinsinden ölçtüyseniz
+
+187
+00:32:54,064 --> 00:33:10,223
+Bu nedir? Interval attribute'tür. Ama eğer 1, 2, 3 ve 5 olarak ifade ettiyseniz nedir? Ratio cinsinden bir attribute'tür. İkisi de nedir? Sayısaldır.
+
+188
+00:33:11,443 --> 00:33:18,764
+Bu niye önemli? Niye ayırmış ki o dönümelik, bu dönümelik? Niye bunları ratio ve interval olarak ikiye ayırmış?
+
+189
+00:33:25,140 --> 00:33:33,640
+Continuous Discrete değil ama şey de olabilir ya, Kelvin buçuklu muçuklu da olabilir mesela, Kelvin örneğin. Yani bir şey nokta bir şey olabilir. Söyleyin.
+
+190
+00:33:44,948 --> 00:33:49,688
+Ama onları, veriyi ben toplamıyorum ki ya, veriyi veri tabancı öyle kaydetmiş, ne yapacağım?
+
+191
+00:33:50,968 --> 00:34:02,648
+Yani şimdi veri tabancı diye gidip diyemem ki, sen bunu böyle toplamışsın ama öyle böyle olmamış dersen, o der ki sana, sen veri data scientistcisin der, benim işime karışma der.
+
+192
+00:34:04,088 --> 00:34:10,908
+Niye fark eder biliyor musunuz? Sonra bunlar üzerinde matematik işlem yaparsanız, şimdi haftaya ön işleme göreceğiz ya veri üzerinde.
+
+193
+00:34:11,539 --> 00:34:27,800
+Bunları işte diyelim ki bir şeye normalize ettiniz ya da işte bir şeyle çarptınız vesaire. O zaman bu değerlerin ne olduğunu, hangi tip olduğunu bilmeniz gerekiyor ki ona göre işlem yapabilirsiniz. Tamam mı? Yapabilirsiniz. Yoksa yaptığınız şey hataya yol açabilir.
+
+194
+00:34:32,083 --> 00:34:37,083
+Şimdi dört şeyimizi gördük. Attribute tipimizi gördük. Tamam mı?
+
+195
+00:34:38,083 --> 00:34:46,083
+Şimdi nominallerde ne var? Hepsi birbirinden farklı. Hiç medyan falan filan ortalama işe yaramıyor. Sadece mod var.
+
+196
+00:34:46,083 --> 00:34:50,083
+Ve birbirinin aynısı mı değil mi ona bakabilirim. Tamam mı?
+
+197
+00:34:51,380 --> 00:35:00,600
+Order dediğimiz, ordinallerde ne var? Zaten sıra var. Dolayısıyla büyüktür, küçüktür ya da işte sırada önce, sonra diye ne yapabiliriz? İfade edebiliriz.
+
+198
+00:35:01,240 --> 00:35:08,320
+Intervall'larda ne yapabiliriz? Toplama, çıkarma yapabiliriz.
+
+199
+00:35:10,820 --> 00:35:13,380
+Şey olanlarda, ratio'larda da.
+
+200
+00:35:14,195 --> 00:35:26,095
+Hem birbirinden farklı mı? Hem küçük büyük mü? Hangisi daha küçük, hangisi büyük? Hem toplama çıkarma hem de çarpma bölme ne yapabiliriz? Yapabiliriz.
+
+201
+00:35:29,619 --> 00:35:37,220
+Şimdi ben olsam şunu sorarım. Hocam şimdi biz Celsius'da tutsak, bunda toplama çıkarma yapıyoruz. Niye çarpma yapmıyoruz, niye bölme yapmıyoruz?
+
+202
+00:35:42,900 --> 00:35:43,900
+diye sorardım.
+
+203
+00:35:45,900 --> 00:35:46,119
+Böyle.
+
+204
+00:35:52,724 --> 00:36:17,664
+Demek olmuyor, evet. Artmış, olmuş, olmuyor. Dolayısıyla çarpmak aslında sizin datanızın özelliğini ne yapabilir? Değiştirebilir, bozabilir. Sadece normalizasyon işlemleri dışında, diyelim ki datayı 0-1 aralığında normalize ediyorsanız falan, zaten o zaman çarpma bölme yapabiliyoruz ama hepsini eşit miktarda çarpıp böldüğümüz için sıkıntı çıkmamış oluyor.
+
+205
+00:36:19,476 --> 00:36:22,716
+Diyeceksiniz ki hala mı aynı şey yapıyorsunuz. Son olarak toparlıyoruz.
+
+206
+00:36:23,347 --> 00:36:29,467
+Hep çünkü bunlardan konuşacağız. Yani bütün dönem boyunca hep bu attribütlerden konuşacağız.
+
+207
+00:36:29,948 --> 00:36:34,887
+Diyeceğiz ki işte bunu karar ağacına input olarak nasıl veririz?
+
+208
+00:36:36,347 --> 00:36:40,668
+Diyelim ki ordinal value'umuz varsa nasıl olur gibi şeylerimiz olacak.
+
+209
+00:36:41,668 --> 00:36:46,847
+Şimdi nominallerde ne var? Genellikle sadece farklı isimlerden oluşuyor.
+
+210
+00:36:52,275 --> 00:37:19,275
+Bizim zip kodu neydi ya? Zip kodun tükçesi ne? 34, ya posta kodu. Posta kodları, ondan sonra işte saç rengi vesaire bunları dedik. Ordinal'larda neler var? Yine biz sıralayabiliyorsak, yani enumerate edebiliyorsak, tamam mı? Ve küçüktür, büyüktür de yani bu bundan düşük. Bir sırayla bir şey söyleyebiliyorsanız, bir şeye göre sıralayabiliyorsanız illa küçük büyük olmak zorunda değil. O zaman nedir? Ordinal'dır, value'dur diyoruz.
+
+211
+00:37:20,275 --> 00:37:32,536
+Sayısal değerler için ilk ikisi kategorikti. Interval tamamen sayısal değerler için kullanıyoruz ve toplama çıkarmak işi ifade ediyor. Değişiyor dediğimizde oransal değerler.
+
+212
+00:37:37,684 --> 00:37:43,864
+Size soru, burada age'i niye buraya koymuş? Mesela yaş. Niye buraya koymuş, niye buraya koymamış?
+
+213
+00:37:46,704 --> 00:37:51,964
+Sizce yaş oransal mıdır? Yoksa aralık mıdır?
+
+214
+00:37:55,572 --> 00:38:01,192
+Sıfırı alabilirsiniz değil mi? Ama eksi yaş yok. Niye sıfır alıyoruz? Almıyorum sıfırı. Eksi yaş diye bir şey yok ki.
+
+215
+00:38:18,356 --> 00:38:30,616
+İki kat daha fazla yaşamıştır diyebiliyorsunuz değil mi? Dolayısıyla çarpma ve bölme bir şeyi oransal olarak söylediğiniz zaman ya da bu bunun yarısı kadar yaşamıştır diyebiliyorsanız o yüzden ne?
+
+216
+00:38:33,331 --> 00:38:54,611
+attributunun type'ını ne yapıyoruz? Değişiyor olarak gösterebiliyoruz. Yine kütle, uzunluk ve bakın bunda ne vardı? Dört işlemde uygulanabiliyordu değil mi? Çünkü yaşta toplama, çıkarma, çarpma, bölme hepsi size ne verir? Anlamlı bir şey verir. Yine aynı şekilde sayılar, uzunluk, kütle gibi şeyler ne yapabilirsiniz?
+
+217
+00:38:55,284 --> 00:39:02,423
+Yine bu şekilde söyleyebilirsiniz ama nasıl kullandığınıza bağlı. Yani uzunluğu böyle söyleyebilirsiniz, öyle söyleyebilirsiniz. Nasıl verdiğinize bağlı, size bağlı.
+
+218
+00:39:09,108 --> 00:39:13,508
+20 ile tıklarında, 20 ile tıklarında, 20 ile tıklarında, araba işlemekte çıkıyor.
+
+219
+00:39:13,907 --> 00:39:20,228
+Aynı şekilde sıcaklıkta da 20 ile tıklarında, 20 ile tıklarında, 20 ile tıklarında, aradaki farkı var.
+
+220
+00:39:20,528 --> 00:39:30,987
+Ama işte o derece, o 5 ile onun arasındaki farkla derece olarak, diğer aradaki 5 derece, mesela 20 ile 25 arasındaki 5 derece birbirine eşit değil.
+
+221
+00:39:31,508 --> 00:39:35,568
+Aradaki sayısı anladın mı? Sıcaklık cinsinden birbirine eşit değil.
+
+222
+00:39:36,403 --> 00:39:46,403
+Fark oradan çıkıyor. Güzel soru. Başka soru var mı? Uydunuz mu? Uydunuz mu? Uyuyan var mı?
+
+223
+00:39:48,403 --> 00:39:59,403
+Okey, hadi bakalım devam edelim. Bunu söyledik herhalde. Genellikle işte mesela ID gibi şeyler, sizin öğrenci numaranızı, TC, K-N, K-N gibi şeyler, tam sayı gibi dursa da.
+
+224
+00:40:00,019 --> 00:40:04,240
+nominal, ordinal tutmak daha mantıklıdır dedik.
+
+225
+00:40:06,059 --> 00:40:08,700
+Şimdi gelelim, şunları da şeyde söyleriz artık.
+
+226
+00:40:08,980 --> 00:40:15,079
+Yani işte şimdi mean, standard deviation falan filan onların tanımını verdiğimiz zaman onları burada söyleriz.
+
+227
+00:40:15,440 --> 00:40:19,160
+Peki attribütleri, bakın burada dörde ayrılmıştık.
+
+228
+00:40:19,620 --> 00:40:19,880
+Değil mi?
+
+229
+00:40:20,760 --> 00:40:22,240
+Şimdi attribütleri...
+
+230
+00:40:22,675 --> 00:40:45,775
+Sayısal değerinin ne olduğuna göre ikiye ayrıyorum. Discreet ya da kontinüs. Discreet ne? Tamamen ayrık değerler alan şeyler. Yani mesela öğrenci numaraları nedir? Discreet'tir. Genellikle tam sayılarla, inticirlerle ne olur? Gösterilen attribüklardır.
+
+231
+00:40:50,996 --> 00:41:10,135
+Genellikle gerçek dünya değerleridir. Mesela işte tempuz çizgi gibi uzunluk, uzaklık gibi şeyler de nedir? Kontinusluk değil mi? Tam sayı olmayan, işte ondak olarak gösterebildiğimiz değerler de nedir? Bunlardır. Peki gerçek dünyaya baktığımız zaman diskret ne vardır? Neler diskrettir?
+
+232
+00:41:15,443 --> 00:41:19,983
+Sayıl, yok yok öyle değil yani dünyaya bir baktığın zaman, çevreye, şeye baktığın zaman.
+
+233
+00:41:23,323 --> 00:41:24,543
+Sıcaklık biskrik mi?
+
+234
+00:41:26,463 --> 00:41:28,503
+Neler ayrı ki yani gerçek dünyada.
+
+235
+00:41:33,172 --> 00:41:43,732
+Aslında şöyle, sıcaklık mesela değil mi? Aslında kontinyüs ya da sinyal mesela, sinyal işleme dersi aldınız mı? Ya da görüntü.
+
+236
+00:41:44,492 --> 00:41:49,532
+Aslında dünyadaki çoğu şey, neredeyse her şeye yakın diyebiliriz herhalde, kontinyüs.
+
+237
+00:41:50,072 --> 00:41:55,952
+Ama insanlar bunu aldılamak için ne yapıyor? Ayrıklaştırarak anlayabiliyor.
+
+238
+00:41:55,952 --> 00:41:59,512
+Yani mesela çocuk bilimi izlerken diyor ki, bu karakter iyi mi kötü mü der?
+
+239
+00:42:00,115 --> 00:42:15,536
+Tamam mı? 0-1'dir. Ya da bir sinyali ne yapıyoruz? Yani bilgisayar 0-1'den anlar diyoruz. Aslında orada 0-1 yok. Sürekli gelen, değişen bir sinyal var ama ne yapıyor? Onu bir threshold'a göre, eşit değerine göre ne yapıyor? 0-1 olarak algılıyor. Değil mi?
+
+240
+00:42:15,952 --> 00:42:25,851
+Yani aslında çoğu şey kontinyüs ama kontinyüsler özellikle bilgisayar biliminde ya da matematikte de ne yapıyor? Başınıza iş açıyor değil mi?
+
+241
+00:42:25,851 --> 00:42:37,851
+Yani çocuk toplamaya başlarken ondalık sayı toplamaya başlamıyor. Çünkü insan işte parmaklar bakıyorsun diskret değil mi? Sayısı diskret gibi. Ama parmağa baksan şöyle baştan sona.
+
+242
+00:42:38,228 --> 00:42:54,147
+Bir sürü kemik var falan. Öyle daha kontinyüs veya uzunluk mesela. Kontinyüs değer gibi işte. Sayılara kadar gidiyor gibi. Ama ne oluyor? O kadar karmaşık bir insan beyni almadığı için daha çok diskrit şeylerle ifade etmek, dataları insanların işine geliyor.
+
+243
+00:43:00,371 --> 00:43:22,211
+şey toplanmıyor. Yani işte yaşı bile toplarken ne yapıyor? Size 30-40 arası, işte 40-50 arası falan diye soruyor. Değil mi? Niye? Çünkü bu tarz şeyleri kullanmak birazcık daha insanın, insana daha ne kadar az sayısal, değer, akıl o kadar daha çok olayı algılamış oluyor. Tamam mı?
+
+244
+00:43:23,092 --> 00:43:28,992
+Şimdi, attribute'lerle ilgili söyleyeceklerim bitti. Ne söylemek istersiniz? Sormak istediğiniz bir şey var mı?
+
+245
+00:43:37,076 --> 00:43:49,695
+Güzel, vektörel bir şey olursa, şimdi şuraya geldim. Aslında biz hep vektörlerle uğraşacağız. Tamam mı? Yani niye, nasıl vektörlerle uğraşacağız? Şuraya çizeceğiz, kalemi boşuna almayayım.
+
+246
+00:43:51,816 --> 00:44:03,936
+Şimdi datadan bahsederken aslında şu, yani data miningde şunu birleştirdiğiniz zaman bu bir ne? Bu bir vektör. Tamam mı? Vektör nerede karşımıza çıkacak?
+
+247
+00:44:04,500 --> 00:44:14,340
+Yani dolayısıyla vektörel bir şey varsa genellikle mesela görüntüden, sinyalden de elde ettiğimiz attribütler genelde vektör oluyor.
+
+248
+00:44:14,980 --> 00:44:19,320
+Dolayısıyla vektörleri sinyalden bahsedelim.
+
+249
+00:44:19,320 --> 00:44:30,559
+Tamam mı? Ses konuş sinyal değil. Sesle bir sinyal yap. Bahsedersek, şöyle bir şey yapıyoruz. Elimizde aslında bir sinyal var. Tek boyutlu bizi olarak da düşünebilirsiniz.
+
+250
+00:44:31,027 --> 00:44:37,507
+Bunları kaydederken genellikle fixed window size denir. Fixed aralıkları alıyoruz.
+
+251
+00:44:37,507 --> 00:44:55,007
+Tamam mı? Yani işte vektörümüz sabit boyutlu oluyor. Mesela onluk, yüzlük, binlik, kaçlık yapacaksak ve diyelim ki her kelimeyi genellikle işte tek bir vektör olarak vektörün her bir elemanı aslında burada bir attribute oluyor.
+
+252
+00:44:55,987 --> 00:45:05,367
+Tamam, yani elinde vektör var diyelim ki bir de buraya diyelim ki dörtlük bir vektör ekleyeceksen şuraya dört tane daha ne ekliyorsun? Sütun ekliyorsun.
+
+253
+00:45:07,867 --> 00:45:15,527
+Tamam, bu yeni bir atribüt. Atribüt 1, atribüt 2, atribüt 3, bu da atribüt 4 olmuş oluyor.
+
+254
+00:45:19,327 --> 00:45:22,107
+Başka soru, güzel soru. Başka soru.
+
+255
+00:45:27,572 --> 00:45:28,812
+Hadi bakalım devam edelim.
+
+256
+00:45:30,372 --> 00:45:31,792
+45, birazcık daha anlatayım.
+
+257
+00:45:33,532 --> 00:45:34,312
+Sonra göreverim.
+
+258
+00:45:38,931 --> 00:45:39,391
+Söyle.
+
+259
+00:45:58,003 --> 00:46:02,103
+Sayısal'a çeviriyoruz. Aynen öyle. Gerekiyor. Evet.
+
+260
+00:46:17,940 --> 00:46:26,559
+Güzel soru. Şimdi bunu haftaya sanırım göreceğiz. Mesela şöyle bir şey yapıyoruz. Diyelim ki farklı modele vereceğiz. Yapay sinirana vereceğiz. Tamam mı?
+
+261
+00:46:27,059 --> 00:46:39,639
+Beş tane giriş, beş taneye de gerek yok da. Şöyle bir şey yapıyoruz. Diyelim ki elinde beş varsa hepsi de birbiriyle eşit olsun diye işte bunları sıfır sıfır sıfır bir bir tanesi oluyor.
+
+262
+00:46:39,940 --> 00:46:45,519
+Sıfır sıfır sıfır bir iki gibi oluyor. Ama bu şu demek değil. Bir iki üç demek değil de.
+
+263
+00:46:45,940 --> 00:46:51,000
+O nöron'a uyar. O nöron uyarılıyorsa o kategoridir gibi gibi teknikler var.
+
+264
+00:46:51,519 --> 00:46:58,860
+Yani metotlara verirken tüm kategorik değerleri ne yapacağız? Sayısala çevireceğiz.
+
+265
+00:46:59,260 --> 00:47:04,599
+Hatta sayısalları da normalize edeceğiz. Yine onlar üzerinde de işlem yapacağız.
+
+266
+00:47:04,780 --> 00:47:07,380
+Çoğu metot o şekilde ne yapıyor? Inputları kabul ediyor.
+
+267
+00:47:11,092 --> 00:47:26,012
+Şimdi, dataset tipleri ne olur? Bildiğiniz kayıtlar olur. Yani veri tabanlarından gelir, data matrixlerden gelir. Hatta şöyle bakalım. Graf ya da networkler olur. Veri yapıları aldığınızda graf, tamam.
+
+268
+00:47:26,739 --> 00:47:35,839
+Orders yani işte video gibi ya da işte zaman serisi gibi şeyler olabilir. Şuradan resimlerle bakalım.
+
+269
+00:47:36,499 --> 00:47:45,999
+Şimdi record data dediğimiz klasik. Bu bir Excel tablosu da olabilir. Veri tabanından da olabilir. İki boyutlu nelerimiz var? Kayıtlarımız var. Tamam.
+
+270
+00:47:47,059 --> 00:47:52,459
+Zaten kayıt datası. Yani bu text bile olabilir. TXP bile olabilir. Tamam.
+
+271
+00:47:53,204 --> 00:48:03,224
+Yani doktorlar falan mesela çalışırken şey yapıyorlar, veri tabanı falan da kullanmıyorlar ya, hastayı mesela geriye dönüp tarıyor tarıyor, Excel'e gidiyor. Daha kolayına geldiği için Excel bile olabilir.
+
+272
+00:48:04,043 --> 00:48:09,603
+Data Matrix dediğimiz şey, illa iki boyutlu olmak zorunda değil, iki hafta sonra göreceğiz sanırım.
+
+273
+00:48:15,860 --> 00:48:29,740
+Nasıl söyleyeyim? Hem görsel olarak hem daha hızlı analiz edebileceğimiz şeyler de data matrix. Tamam? Çok boyutlu. Matrixlerle datayı ne yapabiliyoruz? Gösterebiliyoruz. Yine bu da bir verinin kaynağı olabilir.
+
+274
+00:48:31,100 --> 00:48:37,580
+Definite, doküman. Şunu görmeyin bakayım. Fikir, biliş fikir geliştiririm. Dokümanı nasıl tutarsınız?
+
+275
+00:48:38,708 --> 00:48:58,748
+Çok zor bir şey döküman tutmak değil mi? Elinizde bir sürü diyelim ki her bir Wikipedia sayfası sizin bir neyiniz? Objeniz, instansınız. Tamam mı? Yani işte birinci satırda bir numaralı döküman var. İkinci satırda iki numaralı döküman var. Nasıl tutacağız bunu?
+
+276
+00:49:10,387 --> 00:49:13,288
+O hangisi hangisiyle ilişkilidir onu gösterir.
+
+277
+00:49:13,288 --> 00:49:18,367
+Okey, yani hangisi hangisine hangisi tıklayarak nereye gidersin konu olarak ilişkilidir onu gösterir.
+
+278
+00:49:18,688 --> 00:49:20,748
+Ama onu istemiyorum, dökünün içinde yazanları istiyorum.
+
+279
+00:49:22,288 --> 00:49:24,168
+Şimdi ne oluyor? Genellikle şu oluyor.
+
+280
+00:49:25,268 --> 00:49:35,688
+Bağlaçlar, ondan sonra işte var gibi falan çok geçen ama işte edat falan, edatlar falan çok böyle bir şey ifade etmeyen şeyler temizleniyor, atılıyor.
+
+281
+00:49:36,547 --> 00:49:37,027
+Tamam mı?
+
+282
+00:49:37,364 --> 00:49:54,183
+Ve ondan sonra kelimeler tek tek tek tek tek tek heşleniyor gibi düşünün. Tamam mı? Alıyoruz ve her kelime kaç kere geçmiş. Genellikle bu şekilde gösteriliyor. Tamam mı? Yani text mining apayrı bir konu.
+
+283
+00:49:55,183 --> 00:50:00,000
+Çünkü başka yani sadece böyle gösterilmiyor. Şöyle şeyler de var. Mesela çırp...
+
+284
+00:50:00,000 --> 00:50:09,859
+için kelime uzayı çıkarılmış. Yani her kelimeye işte birbirine uzaklığına göre, ne kadar beraber kullanıldığına göre vs. sayısal değer verilmiş.
+
+285
+00:50:11,059 --> 00:50:18,139
+Böyle işte sözlükler falan filan var. Onlar da kullanılmıyor. Eğer işte dördün sınıfta falan NLP dersi alırsanız görürsünüz.
+
+286
+00:50:18,759 --> 00:50:27,279
+Bu da şu, birinci dokumanda sil kelimesi üç kere geçmiş, koç kelimesi sıfır kere geçmiş, play kelimesi mesela beş kere geçmiş gibi.
+
+287
+00:50:27,695 --> 00:50:28,115
+Tamam.
+
+288
+00:50:29,655 --> 00:50:30,795
+Değil.
+
+289
+00:50:36,467 --> 00:50:57,847
+Sıra yok. Sıra önemli. Ama işte bu, o işte sıra da önemli. Bir de hangi şeyde, yani metin analizi yapacaksam, mesela ben metin analizinden ne yaparım? İşte diyelim ki geçen hafta verdiğimiz örnek, kafa karıştırmayalım. Bu ne tip bir haber, spor haberi mi? Diyelim ki classification yapacağım. 10 tane grup var.
+
+290
+00:50:58,003 --> 00:51:08,763
+Ekonomi haberi mi, bilmem ne mi? Tamam mı? Bir içindeki kelimeler işte buradan çıkan sayılara göre bulabilirim. Ama şöyle şimdi böyle yaptığımız zaman bu sistemler çalışmıyor.
+
+291
+00:51:08,943 --> 00:51:21,523
+Yüz iyi çalışıyor da iyi çalışmıyor. Niye çalışmıyor? Çünkü bir kelimenin bir sürü anlamı oluyor. Ya da bir kelime ekonomide de geçiyor, sporda da geçiyor. İkisinde de işte ne? Eş anlamlı değil, eş sesli kelime. Değil mi?
+
+292
+00:51:22,003 --> 00:51:44,764
+Böyle böyle oldukları için bu sistemler hiç çalışmıyor. Dolayısıyla bu kelimelerin ikili, üçlü nasıl bir arada geçiyor ve bunların uzaklığı ne? Hiç geçmeyen kelimeler yani normalde başka başka işte metinlerden bir sözlük oluşturulmuş ama bu sözlerin içinde şu var. Kelimeler ve birbirine olan uzaklıkları, yakınları var uzayda. Her kelimeyi bir nokta olarak düşün.
+
+293
+00:51:45,876 --> 00:51:52,876
+Burada benim kelimelerim nereye düşüyor falan filan bunlara bakılarak artık yeni NLP sistemleri buna göre çalışıyor.
+
+294
+00:51:53,596 --> 00:52:01,996
+Tamam. Çünkü işte estesli kelimeler oluyor. Alaka yani metin içinde alakasız başka şeyler oluyor. Bu sistem çok iyi çalışmıyor.
+
+295
+00:52:01,996 --> 00:52:08,816
+Tamam yeni sistemler hele bir de derin öğrenmeyle falan filan bu eski text mining kısmı.
+
+296
+00:52:14,099 --> 00:52:26,299
+şey değişiyor. Yani hatta şimdi şöyle söyleyeyim. NLP'de 10 yıl önceye kadar, yani diyelim ki NLP demeyelim de speech recognition diyelim. Tamam mı? Ses tanımı.
+
+297
+00:52:26,739 --> 00:52:45,079
+Ses tanımada sistemler şöyle çalışıyordu. Diyelim ki bir kelimeye geldi, 20 kişi mikrofonu okudu. Farklı farklı. Ve orada ya da işte yazdı neyse, harflerin birbirinden sonraki gelmesi, gelme ihtimali, kelimelerin birbirinden sonra gelme ihtimali tek tek tek modelleniyordu.
+
+298
+00:52:45,079 --> 00:52:47,779
+Tamam mı? Hidden Markov modellerle vesaire.
+
+299
+00:52:48,436 --> 00:53:02,815
+Sonra artık model oluşturulmaya çalışılıyordu ama bu dillerde çok çok iyi çalışmıyor. Hele bir de şey yok, mesela Türkçeye baktığınız zaman işte özne başta, piir sonda gibi gözükse bile bir sürü devrik cümleler var vs.
+
+300
+00:53:03,076 --> 00:53:11,416
+Ya da işte edatla yerini değiştirdiğiniz zaman öznenin yine cümlenin anlamı aslında bozulmuyor. Cümle devrik bir şey bile olmuyor.
+
+301
+00:53:11,923 --> 00:53:29,184
+Gramer olarak şey bile çıkmıyor. Dolayısıyla artık yeni sistemler hiç model falan geliştirmeye çalışmadan direkt böyle kapalı devre bir sürü örnek göre göre göre göre bu ne diyor? Onu oradan bulmaya çalışıyor. Yani işte bu senelerce.
+
+302
+00:53:29,972 --> 00:53:35,932
+İşte üzerinde çalışılan bu Hidin Marko modeller falan çöküyor tamamen. Şimdi derin öğrenmek.
+
+303
+00:53:36,412 --> 00:53:43,432
+Mesela bu chatbotlar var. Ondan sonra da sesinizi tanıyan sistemler var değil mi? Bunlar çalışıyor muydu 2010'a kadar?
+
+304
+00:53:44,952 --> 00:53:49,972
+2010'u da dedim de 2010 değil. Daha daha ilerisi. Çalışmıyordu. Değil mi? Doğru düzgün.
+
+305
+00:53:49,972 --> 00:53:56,132
+Hatta Türkçe için hala çok iyi çalışmıyor. Ama İngilizce için mesela
+
+306
+00:53:56,851 --> 00:54:08,052
+Çok çok iyi çalışıyor. İşte bu da tamamen yeni teknoloji, işte bu derin öğrenmenin etkisi gibi gibi şeylerden dolayı. Tamam mı? Yani tamamen kullanılan metodoloji değiştiği için.
+
+307
+00:54:09,271 --> 00:54:11,351
+Bir İngilizce'de iyi çalışıyor, Türkçe'de iyi çalışmıyor.
+
+308
+00:54:15,923 --> 00:54:30,943
+Çünkü ne kadar çok veriyle eğitirseniz, tamam mı bu modeller o kadar iyi çalışıyor. Yani o kadar çok örnek olacak ki elinizde mesela şurada 3 doküman var ya, 3 değil belki milyon dokümanda eğitirseniz ancak öyle iyi çalışıyor.
+
+309
+00:54:31,643 --> 00:54:39,263
+Milyon dokümanda zaten biz eğitmeye kalksak eğitebilir miyiz? Bütün Yıldız Teknik. Hadi İTÜ ile de birleşelim. Yine eğitemeyiz.
+
+310
+00:54:39,860 --> 00:54:48,780
+Çünkü niye? Çok çok büyük serverlarda haftalar sürüyor bunların eğitilmesi. Yani büyük server değil, yani clusterlarda değil.
+
+311
+00:54:49,600 --> 00:54:53,860
+Ama şu an yani ve Türkçe'de şu an çok çok iyi çalışan...
+
+312
+00:54:57,420 --> 00:55:01,700
+Zembelek ama şey, kütüphanesi o eski, o eski yani zembelek ne yapıyor biliyor musun?
+
+313
+00:55:02,680 --> 00:55:07,220
+Alıyor, diyor ki bu öz nedir diyor, bu şudur diyor, işte frekanslarını sayıyor falan filan.
+
+314
+00:55:08,659 --> 00:55:25,479
+Şey değil, zemberek bayağı eski ama şey de var. Adı aklıma gelmiyor ama mesela hem chatbot yapan hem de bu konuşma tanımaya çalışan, bir tane şirket var adını hatırlamıyorum, bir tane şeyin şu anda bayağı iyi yani şeyleri.
+
+315
+00:55:26,039 --> 00:55:33,259
+Ama tabii bankaya falan bağlanmaya çalıştıysanız sesli, komutla bayağı zorlanıyoruz yani. Delediniz mi hiç?
+
+316
+00:55:33,715 --> 00:55:53,735
+Bunu mu yapmak istiyor? Ha geçen Vodafone'la ben bunu mu ne yapmak istediğinizi söyleyin diyor. Söylüyorsunuz. Bu mu diyor? Ama eskiye göre daha iyi çalışıyor. Ama yine tam çalışıyor mu? Maalesef çalışmıyor ama yani birkaç seneye bayağı sesli, komutla bir şeyler yapabilecek duruma gelecek insanlar. Konu çok dağıldı. Bunlar işte dersin konusu değil. Hadi ara verelim.
+
+317
+00:55:56,475 --> 00:55:58,435
+Online'lar uydunuz mu? Online'lar.
+
+318
+00:56:00,235 --> 00:56:01,275
+Çete artı yazın.
+
+319
+00:56:05,204 --> 00:56:13,084
+Online'lar kapatıyorum, bir sonraki ders görüşürüz. Kaç dakika, bir dakika. Kaç dakika ara istiyorsunuz? [öğrenci] kaç dakika ara istiyorsan o kadar vereceksin, söyle.
+
+320
+00:56:14,484 --> 00:56:15,544
+[öğrenci] gitmemiş online.
+
+321
+00:56:19,315 --> 00:56:21,275
+Kaç dakikalar istiyorsunuz? 10-15, haydin.
+
+322
+00:56:22,675 --> 00:56:27,675
+15-10 geçe görüşüyoruz o zaman. Kapattım, bir sonraki oturumda görüşürüz.
+
+323
+00:56:28,155 --> 00:56:31,936
+10-10 geçe görüşmek üzere, bye.
