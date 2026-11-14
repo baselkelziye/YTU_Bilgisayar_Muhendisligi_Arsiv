@@ -1,0 +1,4783 @@
+1
+00:00:40,884 --> 00:00:41,503
+Do you hear me?
+
+2
+00:00:44,664 --> 00:00:45,564
+Yes, professor.
+
+3
+00:00:46,224 --> 00:00:47,323
+Okay, thank you for it.
+
+4
+00:00:48,204 --> 00:00:55,283
+I'm in the classroom with some students, so I need to set up the projector here as well.
+
+5
+00:00:55,283 --> 00:00:56,543
+We have some delay.
+
+6
+00:00:57,204 --> 00:01:00,683
+Please wait a couple of minutes and we will start.
+
+7
+00:01:08,052 --> 00:01:08,892
+Ok, good.
+
+8
+00:01:24,787 --> 00:01:26,027
+Problem oluyor bakalım.
+
+9
+00:04:14,036 --> 00:04:20,956
+Okay, welcome to the lecture. Let's get started. Can you guys hear me over the Zoom?
+
+10
+00:04:21,636 --> 00:04:22,055
+Yes.
+
+11
+00:04:23,776 --> 00:04:24,435
+Can you?
+
+12
+00:04:27,216 --> 00:04:28,355
+Yes, we can hear you.
+
+13
+00:04:29,896 --> 00:04:32,016
+I didn't hear you, [öğrenci]. Can you hear me?
+
+14
+00:04:39,668 --> 00:04:49,088
+Okay, good. Thank you. So, we will have a hybrid class today. Sorry for the delay in getting started.
+
+15
+00:04:50,288 --> 00:04:57,588
+So, I will check the chat screen, but you can also use the microphone if you have questions. I will be checking constantly.
+
+16
+00:04:58,348 --> 00:05:07,088
+Also, we have the projector here, so I also have to make sure that it is...
+
+17
+00:05:07,216 --> 00:05:09,336
+ve aynı zamanda.
+
+18
+00:05:10,136 --> 00:05:11,295
+Ama şimdi, başlayalım.
+
+19
+00:05:25,555 --> 00:05:32,135
+But before that, I need to also remind you about the announcement on the projects.
+
+20
+00:05:32,735 --> 00:05:37,675
+So as you know, the deadline is approaching for choosing the project proposal.
+
+21
+00:05:38,375 --> 00:05:41,295
+Anybody have a question about the project proposal?
+
+22
+00:05:42,415 --> 00:05:43,275
+Is everything okay?
+
+23
+00:05:44,855 --> 00:05:49,375
+The deadline is, let me just double check.
+
+24
+00:05:50,375 --> 00:05:52,375
+The deadline for that is...
+
+25
+00:05:55,156 --> 00:05:56,096
+Bu, on Monday.
+
+26
+00:05:58,615 --> 00:06:01,196
+No, it is on 16th, sorry.
+
+27
+00:06:02,096 --> 00:06:05,956
+So, we have one more week to submit it.
+
+28
+00:06:06,956 --> 00:06:09,436
+And one of you need to submit it.
+
+29
+00:06:09,615 --> 00:06:10,936
+That's enough.
+
+30
+00:06:11,379 --> 00:06:14,600
+We don't need multiple people to submit the proposal.
+
+31
+00:06:14,600 --> 00:06:18,639
+And once you submit it, I will review and get back to you.
+
+32
+00:06:20,439 --> 00:06:27,720
+And if there's need for changes, you will be able to update that and submit it.
+
+33
+00:06:29,319 --> 00:06:36,180
+Another announcement is that, okay, question from [öğrenci].
+
+34
+00:06:36,259 --> 00:06:37,319
+No, you don't need to.
+
+35
+00:06:38,579 --> 00:06:49,319
+You don't need to verify that with me. You can just submit it there and I will review all the submissions and let you know.
+
+36
+00:07:53,172 --> 00:08:08,044
+Bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru için bir soru
+
+37
+00:08:09,363 --> 00:08:35,384
+Okay, let's continue with our discussion. Today we will have a new topic. We discussed preprocessing last week and how it was different for different datasets. We discussed different types of preprocessing tasks, data cleaning, data transformation, data reduction, and data integration. We discussed all these.
+
+38
+00:08:35,892 --> 00:08:54,772
+pre-processing tasks. So now we have data ready for modeling. If your problem is trying to find a class of labels, then this problem becomes a classification task.
+
+39
+00:08:55,772 --> 00:09:01,451
+At the beginning of the lecture we mentioned that there are different types of data mining tasks, regression,
+
+40
+00:09:01,984 --> 00:09:07,864
+Anomaly detection, clustering,
+
+41
+00:09:07,864 --> 00:09:11,864
+bu da miningde var.
+
+42
+00:09:11,864 --> 00:09:16,864
+Bu, ilk bir şey var.
+
+43
+00:09:57,152 --> 00:10:00,000
+Ama regressi,
+
+44
+00:10:00,000 --> 00:10:28,000
+Açıkçı varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varıları varı
+
+45
+00:10:28,000 --> 00:10:35,339
+Bu model, model can predict which label that is going to be.
+
+46
+00:10:35,339 --> 00:10:43,279
+In the prediction, or in the regression case, that can have a continuous value.
+
+47
+00:10:43,779 --> 00:10:47,180
+The prediction can have infinitely many options.
+
+48
+00:10:47,839 --> 00:10:48,740
+That is the main difference.
+
+49
+00:10:49,879 --> 00:10:53,296
+Cliffication is one of the most commonly...
+
+50
+00:10:53,296 --> 00:10:56,296
+Bu nedenle birçok problemi var.
+
+51
+00:10:56,296 --> 00:11:02,296
+Ve bu nedenle birçok problemi var.
+
+52
+00:11:02,296 --> 00:11:04,296
+Bu nedenle,
+
+53
+00:11:04,296 --> 00:11:18,700
+bu nedenle,
+
+54
+00:11:18,772 --> 00:11:36,332
+Transactions, which may be normal or fragile, or classification of some protein shapes or some images, whether that image is cat image or human image or dog image or any type of classification.
+
+55
+00:11:36,820 --> 00:11:46,140
+These are some examples of classification, tasks, or categorizing news, finance, weather, or sport.
+
+56
+00:11:46,220 --> 00:11:52,480
+All of these are countable number of items that we choose from.
+
+57
+00:11:52,480 --> 00:11:57,480
+So that is the main...
+
+58
+00:11:57,480 --> 00:11:59,244
+That's the main...
+
+59
+00:12:04,115 --> 00:12:31,179
+Bu, bu
+
+60
+00:12:31,635 --> 00:12:36,755
+Let's assume we have two types of data and two classes.
+
+61
+00:12:37,415 --> 00:12:43,195
+One of the classes is, sorry, let's put this.
+
+62
+00:12:45,855 --> 00:12:46,195
+Okay.
+
+63
+00:12:47,415 --> 00:12:49,255
+Let's use this laser pointer.
+
+64
+00:12:50,195 --> 00:12:53,395
+Okay, do you see my pen?
+
+65
+00:12:54,295 --> 00:12:54,836
+Okay.
+
+66
+00:12:55,892 --> 00:13:18,672
+Okay, we have two labels. Assume that these are cancer cells and these are normal cells. Normal. Okay. We have two cells, cancers, and these are normal. And we have different distribution of this data. We have a label. This is entire training data.
+
+67
+00:13:21,299 --> 00:13:30,599
+At some point, we collected labels and we noticed that there are some different distribution of boxes.
+
+68
+00:13:31,480 --> 00:13:35,799
+And in these boxes, we have collected some examples.
+
+69
+00:13:35,799 --> 00:13:47,899
+And for new data that we are examining, for instance, a new patient comes in and we collected the cell and we found that.
+
+70
+00:13:48,307 --> 00:13:49,947
+Bu sel example,
+
+71
+00:13:49,947 --> 00:13:51,947
+bu sel example
+
+72
+00:13:51,947 --> 00:13:52,947
+somewhere here.
+
+73
+00:13:52,947 --> 00:13:55,867
+Bu sel isimli
+
+74
+00:13:55,867 --> 00:13:56,248
+here.
+
+75
+00:13:56,248 --> 00:13:58,548
+I don't know its class.
+
+76
+00:13:58,548 --> 00:14:00,307
+I don't know what type of
+
+77
+00:14:00,307 --> 00:14:01,347
+sel is that.
+
+78
+00:14:01,347 --> 00:14:04,548
+But if I were to make a prediction,
+
+79
+00:14:04,548 --> 00:14:06,707
+what would you suggest
+
+80
+00:14:06,707 --> 00:14:08,387
+us to label it?
+
+81
+00:14:08,387 --> 00:14:10,947
+Do you think it is more likely to become
+
+82
+00:14:10,947 --> 00:14:14,467
+a cancer cell or normal cell?
+
+83
+00:14:14,467 --> 00:14:16,067
+Normal. Why is that?
+
+84
+00:14:17,203 --> 00:14:34,423
+Evet, çünkü we have more normal cells, let's count it as, for seven, we have seven normal cells and only two cancer cells.
+
+85
+00:14:43,155 --> 00:15:10,555
+cases to classify it as a normal. So our prediction probability would be 7 over 9 correct. If we say normal, it would be 2 over 9 probability for cancer. So the 7 over 9 is higher than that probability. So we have a better prediction possibility if we say that this is going to be a normal cell.
+
+86
+00:15:11,443 --> 00:15:19,383
+What about in this example, if x was located in this area, how would you classify it?
+
+87
+00:15:20,523 --> 00:15:28,223
+What is your opinion on deciding this particular example?
+
+88
+00:15:29,123 --> 00:15:30,823
+Is it normal or is it cancel?
+
+89
+00:15:35,539 --> 00:15:56,331
+Bu, bu
+
+90
+00:15:56,340 --> 00:16:14,740
+Algoritems perform, they use the training data to fit a model to utilize these labels and then make the predictions for unknown results, unknown elements such as X that comes in late in testing or real-time.
+
+91
+00:16:15,060 --> 00:16:16,960
+And that makes a decision.
+
+92
+00:16:17,640 --> 00:16:23,740
+What about in this case, if we had an X located in this area, what would be your...
+
+93
+00:16:24,275 --> 00:16:25,259
+Kıya, bir şey.
+
+94
+00:16:28,467 --> 00:16:29,227
+What would you say?
+
+95
+00:16:32,187 --> 00:16:33,267
+Any suggestions?
+
+96
+00:16:47,860 --> 00:17:13,740
+Bu ne diyebiliriz?
+
+97
+00:17:15,380 --> 00:17:17,380
+Models make predictions.
+
+98
+00:17:17,380 --> 00:17:19,380
+Whether it is correct or not,
+
+99
+00:17:19,380 --> 00:17:21,380
+they will still make a prediction.
+
+100
+00:17:21,380 --> 00:17:23,380
+They will randomly choose one.
+
+101
+00:17:23,380 --> 00:17:25,380
+But that's going to
+
+102
+00:17:25,380 --> 00:17:27,380
+probably have huge
+
+103
+00:17:27,380 --> 00:17:29,380
+error, right?
+
+104
+00:17:29,380 --> 00:17:31,380
+It can just roll a dice.
+
+105
+00:17:31,380 --> 00:17:33,380
+It can be true or false.
+
+106
+00:17:33,380 --> 00:17:35,380
+So you have 50% of chance
+
+107
+00:17:35,380 --> 00:17:37,380
+in getting it right.
+
+108
+00:17:37,380 --> 00:17:39,380
+If you had more than two classes,
+
+109
+00:17:39,700 --> 00:18:03,692
+bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu
+
+110
+00:18:03,827 --> 00:18:30,087
+true-false random predictions. And that's not going to be good. Okay, that's not going to be good. And that's why we want to cover as large as possible examples from different distribution of possibilities in the data. So if you don't have many data in this area, models will make random predictions and that's going to have huge error.
+
+111
+00:18:30,836 --> 00:18:41,536
+Bu nedenle, if your models make a lot of error, try to retrieve more training samples to increase the variety in your training data.
+
+112
+00:18:42,556 --> 00:18:48,855
+Okay, so these regions probably going to be more error prone areas.
+
+113
+00:18:50,836 --> 00:18:51,956
+Okay, good.
+
+114
+00:18:53,076 --> 00:18:55,775
+This is the goal of a classification test.
+
+115
+00:18:55,775 --> 00:18:58,275
+Simply, models use training data.
+
+116
+00:18:58,672 --> 00:19:09,592
+to develop a formula or function so that we use that function to predict unseen records,
+
+117
+00:19:10,311 --> 00:19:15,072
+which may be in testing or which may be in the real life examples.
+
+118
+00:19:15,932 --> 00:19:18,592
+That's why in classification task we have two...
+
+119
+00:19:19,316 --> 00:19:20,976
+Phase Modeling.
+
+120
+00:19:21,236 --> 00:19:23,956
+In the first phase, we use training set.
+
+121
+00:19:24,476 --> 00:19:36,216
+We have a given data, we take a proportion of that data, and then we train it using some mathematical functions to minimize the error.
+
+122
+00:19:37,036 --> 00:19:45,115
+And once we have this, we need to also measure the quality of this trained model, which may be good or bad.
+
+123
+00:19:45,471 --> 00:19:50,751
+Bu, bu modelde de çok iyi bilgi verici.
+
+124
+00:19:50,751 --> 00:19:52,912
+Bu, bir şeyde de verici.
+
+125
+00:19:52,912 --> 00:19:57,471
+Ve bu, test data.
+
+126
+00:19:57,471 --> 00:20:00,432
+Test data'a bir data set.
+
+127
+00:20:00,432 --> 00:20:04,351
+Bu, bu modelde de bilgi verici,
+
+128
+00:20:04,351 --> 00:20:05,132
+modelde de bilgi verici.
+
+129
+00:20:05,203 --> 00:20:14,644
+Model makes the predictions based on training set, and then we evaluate the accuracy of the predictions using test data.
+
+130
+00:20:15,344 --> 00:20:20,903
+That's why classification is a two-phase, the two-phase process.
+
+131
+00:20:21,384 --> 00:20:29,123
+In the first phase, this is training set, we use the class label or the dependent variable.
+
+132
+00:20:29,567 --> 00:20:34,668
+Vast labels are used for training the models on the other attributes.
+
+133
+00:20:35,847 --> 00:20:46,887
+The model learns the features, weight, or the parameters, in other sense, using the training set.
+
+134
+00:20:47,447 --> 00:20:55,407
+And this is called model induction, or learning, fitting the data, in other sense.
+
+135
+00:20:56,019 --> 00:20:59,000
+ve bir model olarak bu model olarak bir model olarak
+
+136
+00:20:59,000 --> 00:21:02,920
+bu bir model olarak yetiştirmek için bir decision tree
+
+137
+00:21:02,920 --> 00:21:05,319
+bir SPM, bir model olarak
+
+138
+00:21:05,319 --> 00:21:07,720
+bir model olarak bir model olarak
+
+139
+00:21:07,720 --> 00:21:11,000
+bu model olarak bu model olarak
+
+140
+00:21:11,000 --> 00:21:13,000
+bu model olarak iyi bir model olarak
+
+141
+00:21:13,000 --> 00:21:14,508
+bu model olarak
+
+142
+00:21:14,963 --> 00:21:22,903
+Bu, test set, we hide the class labels.
+
+143
+00:21:22,903 --> 00:21:26,403
+So, we already have these labels, but we don't show it to the model.
+
+144
+00:21:26,403 --> 00:21:34,163
+And we say that, for given this attribute set, let's say this is my test set for x.
+
+145
+00:21:34,163 --> 00:21:40,223
+X is, you know, first attribute is null, second attribute is small.
+
+146
+00:21:41,268 --> 00:21:44,268
+Üçüncü kb.
+
+147
+00:21:44,268 --> 00:21:49,268
+Ve bu nolabildi bir nolabildi.
+
+148
+00:21:49,268 --> 00:21:59,268
+Bu nolabildi, nolabildi.
+
+149
+00:21:59,268 --> 00:22:01,268
+Nolabildi, nolabildi.
+
+150
+00:22:01,940 --> 00:22:12,980
+ve bu, model, for instance, no for that one as well. Model says yes for the third one, no for the fifth one, and so on.
+
+151
+00:22:13,980 --> 00:22:19,759
+So far, models make the predictions, but we don't know whether it's good or not. How do we measure?
+
+152
+00:22:20,980 --> 00:22:26,980
+For these question marks, we already know the exact answer. For instance, if the first one was already...
+
+153
+00:22:27,584 --> 00:22:58,724
+Evet.
+
+154
+00:22:53,428 --> 00:22:58,748
+TOTAL Rekord
+
+155
+00:22:58,748 --> 00:23:01,708
+Bu n ile testi set
+
+156
+00:23:01,708 --> 00:23:04,268
+ve bu error rate
+
+157
+00:23:04,268 --> 00:23:05,988
+Bu bir anlamda
+
+158
+00:23:05,988 --> 00:23:11,668
+Bu modelde gerçekleştirme
+
+159
+00:23:11,668 --> 00:23:17,388
+Bu modelde
+
+160
+00:23:17,388 --> 00:23:20,348
+Bu modelde gerçekleştirme
+
+161
+00:23:21,248 --> 00:23:26,248
+Bu bir meşrere kullanmanızı kullanmanız.
+
+162
+00:23:26,248 --> 00:23:27,248
+Tamam.
+
+163
+00:23:27,248 --> 00:23:31,248
+Bu, bir meşrere,
+
+164
+00:23:31,248 --> 00:23:34,248
+iki faysa bir meşrere.
+
+165
+00:23:34,248 --> 00:23:36,248
+Bir faysa,
+
+166
+00:23:36,248 --> 00:23:38,248
+bir model.
+
+167
+00:23:38,248 --> 00:23:41,248
+Bir model.
+
+168
+00:23:41,248 --> 00:23:42,248
+Bir data.
+
+169
+00:23:42,248 --> 00:23:46,248
+Bir klas tabor.
+
+170
+00:23:46,548 --> 00:23:48,947
+İndi bir test model var,
+
+171
+00:23:48,947 --> 00:23:58,548
+bir test model var,
+
+172
+00:23:58,548 --> 00:24:01,907
+ve bir label var,
+
+173
+00:24:01,907 --> 00:24:04,468
+model var,
+
+174
+00:24:04,468 --> 00:24:06,468
+ve bir acarası var,
+
+175
+00:24:06,468 --> 00:24:09,867
+bir şey var,
+
+176
+00:24:09,867 --> 00:24:13,867
+bu test model var,
+
+177
+00:24:13,887 --> 00:24:21,767
+Bu da bir problem var. Bu da bir problem var. Bu da aynı data var. Bu da aynı data var. Bu da aynı ve testi.
+
+178
+00:24:27,220 --> 00:24:31,220
+Bu nedenle bu iki setiyle bu?
+
+179
+00:24:31,220 --> 00:24:33,220
+Bu ne?
+
+180
+00:24:33,220 --> 00:24:39,220
+Evet.
+
+181
+00:24:39,220 --> 00:24:41,324
+Bu ne?
+
+182
+00:24:45,203 --> 00:24:49,203
+Evet.
+
+183
+00:24:49,203 --> 00:25:11,203
+As also, [öğrenci] said, it will memorize the same thing, right? Because when you train the data, it already has seen the classes. So if you use that for the testing, it is like, you know, the model already memorized what the result is going to be, trained weights accordingly. So it is...
+
+184
+00:25:12,127 --> 00:25:23,127
+ve bu konu
+
+185
+00:25:23,127 --> 00:25:25,127
+bir konu
+
+186
+00:25:25,127 --> 00:25:29,611
+konu
+
+187
+00:25:34,708 --> 00:25:35,708
+Bu bir şey.
+
+188
+00:25:41,583 --> 00:25:42,583
+konu
+
+189
+00:25:40,243 --> 00:25:40,603
+Okay.
+
+190
+00:25:50,099 --> 00:25:52,099
+Bu bir whiteboard.
+
+191
+00:25:52,099 --> 00:25:54,099
+Bilmiyorum, bu bir whiteboard.
+
+192
+00:25:54,099 --> 00:25:56,099
+Bu bir bir bir.
+
+193
+00:26:02,291 --> 00:26:07,291
+Evet, bu da bu videoyu izlediğiniz için.
+
+194
+00:26:28,115 --> 00:26:36,576
+Buradan mavi şeyi görüyor musunuz arkadaşlar? Ekranda mavi bir şeyi görüyor musunuz yazı? Yazı yok mu?
+
+195
+00:26:37,435 --> 00:26:42,895
+Okay, seems like it's only scene one. Okay.
+
+196
+00:26:45,755 --> 00:26:54,215
+Okay, I'll just use slides, screen, just to make sure that we can see both.
+
+197
+00:26:55,827 --> 00:26:58,048
+O burada yazıyor da orada yazmayormuş.
+
+198
+00:26:59,488 --> 00:27:01,908
+Okey, so let's make this screen.
+
+199
+00:27:08,500 --> 00:27:10,500
+Evet, bu da.
+
+200
+00:27:12,500 --> 00:27:14,500
+Önce,
+
+201
+00:27:18,387 --> 00:27:20,307
+Ok, I'll just use this space.
+
+202
+00:27:21,207 --> 00:27:22,387
+Assume that we have...
+
+203
+00:27:27,796 --> 00:27:30,556
+Assume that we have this entire...
+
+204
+00:27:30,556 --> 00:27:31,915
+One second.
+
+205
+00:27:35,380 --> 00:27:37,140
+Ok, let me use this screen.
+
+206
+00:27:38,880 --> 00:27:40,500
+Ok, you can both see this one.
+
+207
+00:27:40,900 --> 00:27:42,620
+This is my original set.
+
+208
+00:27:44,000 --> 00:27:45,320
+This is original.
+
+209
+00:27:47,200 --> 00:27:48,360
+Original data set.
+
+210
+00:27:49,060 --> 00:27:50,560
+This is class label.
+
+211
+00:27:51,840 --> 00:27:57,240
+This is attribute 1, attribute 2, attribute 3, so on and so forth.
+
+212
+00:27:57,600 --> 00:27:59,640
+Ok, and these are like, yes.
+
+213
+00:28:01,076 --> 00:28:03,915
+No, no, yes, and so on.
+
+214
+00:28:04,855 --> 00:28:05,135
+Okay.
+
+215
+00:28:06,296 --> 00:28:07,836
+This is my original dataset.
+
+216
+00:28:08,435 --> 00:28:10,476
+I only have a single dataset.
+
+217
+00:28:10,756 --> 00:28:14,395
+What should I do to create testing and training datasets?
+
+218
+00:28:15,496 --> 00:28:16,996
+What should you suggest?
+
+219
+00:28:17,556 --> 00:28:19,895
+What can you suggest to us to do?
+
+220
+00:28:27,988 --> 00:28:28,988
+30%
+
+221
+00:28:28,988 --> 00:28:33,988
+Evet.
+
+222
+00:28:33,988 --> 00:28:39,988
+We can split the data to testing and training with some proportions.
+
+223
+00:28:39,988 --> 00:28:45,988
+So this is testing and this is training.
+
+224
+00:28:47,988 --> 00:28:49,988
+And we have the same attributes.
+
+225
+00:28:49,988 --> 00:28:51,988
+This is class label.
+
+226
+00:28:52,180 --> 00:29:18,572
+Bu, bu
+
+227
+00:29:18,740 --> 00:29:29,500
+So your friend just suggested that maybe we should use this proportion, 70% for training and 30% for testing, which is good.
+
+228
+00:29:29,960 --> 00:29:38,700
+It can be any other proportions, such as 60%, 40%, 66%, 33%, 80%, 20%.
+
+229
+00:29:38,700 --> 00:29:44,400
+There's no standard. It depends on the data. So you can use different examples.
+
+230
+00:29:45,556 --> 00:29:49,936
+Bir şeyin, bir şeyin, bir tane daha var.
+
+231
+00:29:50,496 --> 00:29:52,496
+Bir tane daha var.
+
+232
+00:29:52,496 --> 00:29:57,936
+9, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane, bir tane.
+
+233
+00:29:58,516 --> 00:29:59,235
+Bir tane daha var.
+
+234
+00:29:59,235 --> 00:30:03,516
+20, 20, 60, bir tane.
+
+235
+00:30:03,988 --> 00:30:09,988
+Bu da bazıları var.
+
+236
+00:30:09,988 --> 00:30:13,988
+5,9,7,1,2,1, ve bu.
+
+237
+00:30:13,988 --> 00:30:25,004
+Bu da bazıları var.
+
+238
+00:30:25,940 --> 00:30:43,916
+Bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örneğin, bu örne
+
+239
+00:30:47,028 --> 00:30:51,927
+Any suggestions? What would be wrong with this one? Go ahead.
+
+240
+00:31:15,284 --> 00:31:17,663
+Evet, bu bir şey.
+
+241
+00:31:18,443 --> 00:31:19,963
+Bu bir şey.
+
+242
+00:31:42,036 --> 00:31:47,135
+Model can only make predictions on yes class, because it hasn't seen any no.
+
+243
+00:31:47,536 --> 00:31:59,115
+So your testing will be all yeses, so your error will be 100% on the testing, and it will be 100% on training, which is a ridiculous model.
+
+244
+00:31:59,296 --> 00:32:03,155
+It's not going to be useful if you do this on real life. This is no good.
+
+245
+00:32:04,435 --> 00:32:08,036
+So what should we do? This strategy is not a good idea.
+
+246
+00:32:08,915 --> 00:32:12,655
+Any suggestions? Any suggestions from the chat?
+
+247
+00:32:15,675 --> 00:32:17,576
+Okay, we have some examples.
+
+248
+00:32:19,375 --> 00:32:27,016
+Let me see. [öğrenci] says that if there's 60% yes for the example, whole data should put 60% training.
+
+249
+00:32:27,596 --> 00:32:32,596
+Okay, that makes sense, [öğrenci], but how can you confirm that? How can you verify that?
+
+250
+00:32:39,667 --> 00:32:48,875
+Bu ne?
+
+251
+00:32:57,683 --> 00:33:02,644
+What if we choose randomly? What happens if we just choose each row randomly?
+
+252
+00:33:05,044 --> 00:33:06,463
+Would it go okay or not?
+
+253
+00:33:08,963 --> 00:33:10,903
+So, how do we choose randomly?
+
+254
+00:33:12,104 --> 00:33:12,903
+Very simple.
+
+255
+00:33:13,663 --> 00:33:16,344
+Okay, let's say we have N items.
+
+256
+00:33:17,544 --> 00:33:21,703
+It is, we give 1, 2, 3, 4, 5, 6, 7, all the way to N.
+
+257
+00:33:22,644 --> 00:33:23,683
+And when we choose...
+
+258
+00:33:24,564 --> 00:33:41,184
+training set, I would just say, okay, like guessing numbers. If I were to say, guess me a number between 1 and 400, and I ask each of you, for instance, [öğrenci], tell me a number between 1 and 400.
+
+259
+00:33:45,523 --> 00:34:12,703
+23. So, okay, I go and choose 23 and put it into training set. So, I ask another number to [öğrenci], and [öğrenci] says, for instance, 55. I put the 55 into training, and I randomly choose these numbers. So, [öğrenci], did you know what attributes contained which information when you said 23?
+
+260
+00:34:15,059 --> 00:34:21,279
+No, you didn't have any idea about which attribute was located in that row 23.
+
+261
+00:34:21,920 --> 00:34:23,699
+Or you didn't even know the class label.
+
+262
+00:34:24,479 --> 00:34:29,719
+So to you, it is same probability, they choose yes or not.
+
+263
+00:34:30,059 --> 00:34:32,579
+So because you have no idea, you only get a number.
+
+264
+00:34:32,579 --> 00:34:39,579
+That's why the bias on choosing a particular class is...
+
+265
+00:34:40,019 --> 00:34:49,599
+Bu konuda birçok birçok birçok birçok birçok birçok birçok birçok birçok.
+
+266
+00:34:50,139 --> 00:34:51,679
+Bu birçok birçok birçok.
+
+267
+00:34:53,820 --> 00:34:57,179
+Ama bu birçok birçok.
+
+268
+00:34:57,179 --> 00:34:59,179
+Bu, bu birçok birçok.
+
+269
+00:34:59,179 --> 00:35:01,179
+Bu, bu birçok.
+
+270
+00:35:01,179 --> 00:35:04,900
+Bu, daha çok yasını da birçok.
+
+271
+00:35:05,268 --> 00:35:08,347
+Bu da yine de bu da?
+
+272
+00:35:13,235 --> 00:35:19,255
+Can we have bias based on the sampling as well?
+
+273
+00:35:21,496 --> 00:35:27,036
+Yes, we still can have. It is still possible, but it is less likely to occur.
+
+274
+00:35:27,515 --> 00:35:33,795
+It may still occur, but it is less likely to occur than choosing a proportion of data set.
+
+275
+00:35:34,555 --> 00:35:39,975
+So that's why we typically use random sampling to set testing and training sets.
+
+276
+00:35:41,268 --> 00:36:00,427
+To guarantee that, you know, testing and training data is not containing bias, we simply use a strategy for predicting the actual accuracy using something called cross-validation.
+
+277
+00:36:00,427 --> 00:36:04,427
+Cross-validation.
+
+278
+00:36:04,907 --> 00:36:07,427
+And cross-validation is...
+
+279
+00:36:08,211 --> 00:36:22,771
+There are different strategies for cross-validation, but I just need to remind you here, we will discuss in more detail, but there are different kinds of cross-validation, such as k-fold cross-validation.
+
+280
+00:36:24,051 --> 00:36:34,791
+This k may be five-fold, three-fold, or ten-fold. There are different strategies.
+
+281
+00:36:35,539 --> 00:37:00,844
+Bu, bu
+
+282
+00:37:01,715 --> 00:37:11,735
+First, 80% is chosen as training, and this remaining one-fold is used as a test data set in the five-fold.
+
+283
+00:37:14,175 --> 00:37:17,916
+80%, 20%, okay?
+
+284
+00:37:18,215 --> 00:37:22,036
+So we use this 80% to predict this 20%.
+
+285
+00:37:22,036 --> 00:37:28,715
+And assume that in the first fold, our model made the prediction accuracy as 90%.
+
+286
+00:37:29,780 --> 00:37:31,780
+Ecurasy.
+
+287
+00:37:31,780 --> 00:37:33,780
+That is the distribution of data.
+
+288
+00:37:33,780 --> 00:37:35,780
+And we have chosen and we were lucky.
+
+289
+00:37:35,780 --> 00:37:41,780
+In that case, what we do is we reiterate different proportion.
+
+290
+00:37:41,780 --> 00:37:44,780
+Now, this area was used in training.
+
+291
+00:37:44,780 --> 00:37:49,780
+Now, this becomes testing and the remaining four becomes training.
+
+292
+00:37:49,780 --> 00:37:53,780
+So we move the training set one.
+
+293
+00:37:54,036 --> 00:38:19,903
+Bu birçok bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde,
+
+294
+00:38:19,903 --> 00:38:21,603
+İndi ikinci ikerasyon,
+
+295
+00:38:21,603 --> 00:38:23,903
+bu ikerasyon için
+
+296
+00:38:23,903 --> 00:38:25,903
+ve bu ikerasyon için
+
+297
+00:38:25,903 --> 00:38:27,903
+bu ikerasyon için
+
+298
+00:38:27,903 --> 00:38:29,903
+ve bu ikerasyon için
+
+299
+00:38:29,903 --> 00:38:31,903
+bu ikerasyon için
+
+300
+00:38:31,903 --> 00:38:33,903
+ve bu ikerasyon için
+
+301
+00:38:33,903 --> 00:38:35,903
+80% ikerasyon için
+
+302
+00:38:35,903 --> 00:38:39,903
+bu ikerasyon için
+
+303
+00:38:39,903 --> 00:38:41,903
+ve bu ikerasyon için
+
+304
+00:38:41,903 --> 00:38:43,903
+bu ikerasyon için
+
+305
+00:38:43,903 --> 00:38:45,903
+ve bu ikerasyon için
+
+306
+00:38:45,903 --> 00:38:47,340
+85%
+
+307
+00:38:47,539 --> 00:39:10,380
+Bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölümde bu bölüm
+
+308
+00:39:11,380 --> 00:39:19,180
+Bu da, even when you sample the data, the distribution of the data may not be evenly distributed.
+
+309
+00:39:19,300 --> 00:39:22,940
+Maybe in this region, there are more yes's than no's.
+
+310
+00:39:23,500 --> 00:39:26,020
+So model is more accurate in this region.
+
+311
+00:39:26,579 --> 00:39:30,199
+But in that region, it is not as even as in the first one.
+
+312
+00:39:30,199 --> 00:39:31,916
+So there might be...
+
+313
+00:39:32,211 --> 00:39:35,291
+Some differences between selection of the samples.
+
+314
+00:39:35,851 --> 00:39:37,612
+But what is your total accuracy?
+
+315
+00:39:37,811 --> 00:39:39,271
+What is your expected accuracy?
+
+316
+00:39:39,271 --> 00:39:47,931
+If you use this in real life, what would you suggest we should use as the accuracy rate?
+
+317
+00:39:48,032 --> 00:39:48,891
+Is it 90%?
+
+318
+00:39:49,032 --> 00:39:49,551
+Is it 80?
+
+319
+00:39:49,652 --> 00:39:51,572
+Is it 85, 70 or 75?
+
+320
+00:39:51,811 --> 00:39:52,731
+What is our expected?
+
+321
+00:40:00,000 --> 00:40:02,000
+Evet.
+
+322
+00:40:10,367 --> 00:40:22,347
+Bu bir şey, evet. Bir de bu bir şey, bu bir şey, bu bir şey, bu bir şey, 90%, bu bir şey, ama diğer bir şey, bu bir şey, çünkü 70%'i sadece.
+
+323
+00:40:35,443 --> 00:40:59,435
+Bu, bu
+
+324
+00:40:59,764 --> 00:41:05,144
+our predictions could be luckily located like 70% or 90%.
+
+325
+00:41:05,144 --> 00:41:09,604
+So there might be a gap between our expected accuracy.
+
+326
+00:41:10,344 --> 00:41:19,564
+Okay, that's why typically we use cross-validation to get a realistic prediction accuracy or expectation about the models.
+
+327
+00:41:19,564 --> 00:41:23,664
+Okay, so that is the main reason for cross-validation.
+
+328
+00:41:26,335 --> 00:41:29,435
+I wanted to briefly mention about that.
+
+329
+00:41:30,375 --> 00:41:41,855
+Okay, so far we discussed the classification tasks, but let's also talk about different types of classification techniques that are commonly used in data mining.
+
+330
+00:41:41,855 --> 00:41:50,515
+There are some rule-based methods. Rule-based methods are like you have a certain set of rules.
+
+331
+00:41:51,376 --> 00:42:03,376
+bir adöver, bir adöver, bir adöver, 80'i, 60'i, 60'i, model, bir adöver, yasak.
+
+332
+00:42:03,376 --> 00:42:07,376
+Bu, bir adöver, yasak.
+
+333
+00:42:10,835 --> 00:42:14,835
+bu dağılıkları, bu dağılıkları değil.
+
+334
+00:42:14,835 --> 00:42:16,835
+Bu dağılıkları, bu dağılıkları değil.
+
+335
+00:42:16,835 --> 00:42:20,835
+Bu dağılıkları, bu dağılıkları kullanılıyor.
+
+336
+00:42:20,835 --> 00:42:22,835
+Bu dağılıkları, bu dağılıkları,
+
+337
+00:42:24,500 --> 00:42:52,500
+Bu, bu
+
+338
+00:42:52,500 --> 00:42:57,539
+bu konuda bazen
+
+339
+00:42:57,539 --> 00:43:18,579
+bu konuda
+
+340
+00:43:18,963 --> 00:43:25,323
+We will use distances to find the similarities between entities and then make the classification.
+
+341
+00:43:26,103 --> 00:43:29,403
+Also, there are some algorithms using decision trees.
+
+342
+00:43:29,563 --> 00:43:33,203
+There are many algorithms that will cover the basic methodology.
+
+343
+00:43:33,863 --> 00:43:39,543
+There are also probabilistic methods such as naive Bayes and Bayesian belief networks.
+
+344
+00:43:39,543 --> 00:43:46,463
+These are using posterior probability to make the prediction on the classes.
+
+345
+00:43:46,963 --> 00:43:48,963
+ve bu course ve diğer birçok kullanımlar.
+
+346
+00:43:48,963 --> 00:43:52,764
+Ve diğer tekniklerle ve vektörlerle ilgili
+
+347
+00:43:52,764 --> 00:44:01,463
+ve ve
+
+348
+00:44:01,463 --> 00:44:03,463
+ve ve ve ve ve ve
+
+349
+00:44:03,463 --> 00:44:05,463
+ve ve ve ve
+
+350
+00:44:05,463 --> 00:44:08,463
+ve ve ve
+
+351
+00:44:08,463 --> 00:44:09,463
+ve ve
+
+352
+00:44:09,463 --> 00:44:11,463
+ve
+
+353
+00:44:12,115 --> 00:44:19,835
+Not a single algorithm, but multiple algorithms in collaboration to make the classification.
+
+354
+00:44:20,536 --> 00:44:22,855
+There are some good algorithms.
+
+355
+00:44:23,835 --> 00:44:27,036
+They are classified bagging and boosting.
+
+356
+00:44:27,695 --> 00:44:29,295
+And there's also something called stacking.
+
+357
+00:44:30,036 --> 00:44:52,811
+Bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algoritma, bu algorit
+
+358
+00:44:53,331 --> 00:44:58,811
+These are main classification algorithms used in real world.
+
+359
+00:45:01,371 --> 00:45:04,092
+Okay, any questions so far?
+
+360
+00:45:07,860 --> 00:45:25,480
+[öğrenci] question before we start, K-NN, let's take a break. We will use 10 minutes break, and then after 10 minutes we will continue with the lecture. Any questions before the break? Okay, see you in 10 minutes. We'll continue from here.
+
+361
+00:59:26,132 --> 00:59:27,172
+Okay, welcome back.
+
+362
+00:59:33,012 --> 00:59:34,211
+Let me share my screen.
+
+363
+00:59:37,588 --> 00:59:39,068
+Okay, can you see my screen?
+
+364
+00:59:46,996 --> 00:59:47,796
+Okay, thank you.
+
+365
+00:59:49,636 --> 00:59:51,736
+Let's continue with our discussion.
+
+366
+00:59:52,096 --> 01:00:00,356
+Before the break, we discuss different approaches for classification and how the classification method methodology works.
+
+367
+01:00:01,176 --> 01:00:06,056
+Let's start with the first example, distance-based similarity.
+
+368
+01:00:06,056 --> 01:00:12,916
+And our first example is classification using distance.
+
+369
+01:00:14,003 --> 01:00:19,003
+Bu örneğin, bu örneğin k-neur-neighörde algoritma.
+
+370
+01:00:20,003 --> 01:00:24,003
+Bu örneğin k-neur-neighörde algoritma.
+
+371
+01:00:24,003 --> 01:00:41,920
+Bu örneğin, k-neur-neighörde algoritma.
+
+372
+01:00:41,920 --> 01:01:08,420
+If you have a testing set and you have a training data where you already have labels and the test record looks like one of the examples or classes and if you check the neighbors of this particular instance class label, then it's probably going to be that particular example.
+
+373
+01:01:09,139 --> 01:01:22,500
+So simply what we do is we calculate the distance from the test record to all records in the training set and we choose k records, k neighbors.
+
+374
+01:01:26,132 --> 01:01:34,052
+k-neighbors that are most likely, most similar to this particular test example, because we
+
+375
+01:01:34,052 --> 01:01:40,052
+don't know the class of this particular test record. We want to know and classify that.
+
+376
+01:01:40,052 --> 01:01:47,971
+We choose k-neighbors to decide on the classes of this particular example. And with majority of
+
+377
+01:01:50,291 --> 01:01:56,192
+have a particular class, then this is also labeled with the same class.
+
+378
+01:01:57,092 --> 01:01:57,231
+Okay.
+
+379
+01:01:58,451 --> 01:01:59,672
+Very simple idea.
+
+380
+01:02:00,092 --> 01:02:04,831
+We choose k-neighbors of the similar one.
+
+381
+01:02:05,211 --> 01:02:08,251
+And for instance, these k are these examples.
+
+382
+01:02:09,132 --> 01:02:14,271
+And based on the classes of that, we decide on the test records class.
+
+383
+01:02:15,539 --> 01:02:40,380
+Okay, why do we choose only k-neighbors, not entire datasets? What if we chosen all examples? So instead of using k, why don't we use n items to decide the class? What would happen if you have used entire dataset, training dataset for determining the class?
+
+384
+01:02:43,315 --> 01:02:46,315
+Bu nedenle de bu şekilde seçenek?
+
+385
+01:03:11,092 --> 01:03:16,412
+Bu konfliktiği olabilir.
+
+386
+01:03:16,412 --> 01:03:19,292
+Bu konfliktiği için, k-itemlerimizin,
+
+387
+01:03:19,292 --> 01:03:21,492
+bu konfliktiği için,
+
+388
+01:03:21,556 --> 01:03:33,635
+So, from computational point of view, at the decision point, we would have to consider all, but we still have to pay the same amount at the beginning to calculate the fine to k-similar.
+
+389
+01:03:33,715 --> 01:03:34,695
+We still have to do that.
+
+390
+01:03:35,275 --> 01:03:38,235
+Okay, so performance-wise, it's negligible.
+
+391
+01:03:38,435 --> 01:03:43,775
+We cannot say that it is not zero, but it's not going to be the main problem.
+
+392
+01:03:44,495 --> 01:03:48,516
+So, what would be the main problem if we use all of them?
+
+393
+01:03:53,268 --> 01:03:59,027
+So from chat, we have two answers, overfitting and poor performance with the loss of calculation.
+
+394
+01:04:00,568 --> 01:04:07,047
+So how can it be overfitting, [öğrenci]? Can you explain?
+
+395
+01:04:07,688 --> 01:04:08,507
+Can you hear me?
+
+396
+01:04:18,739 --> 01:04:20,939
+So, the main problem is not calculation.
+
+397
+01:04:24,019 --> 01:04:33,899
+[öğrenci], I cannot hear you. I don't know why it is not coming. I can hear. So, can you hear [öğrenci]?
+
+398
+01:04:36,539 --> 01:04:42,599
+It's probably because we have connection to projectors. Let me double check.
+
+399
+01:04:46,643 --> 01:04:51,243
+Let me check the connection.
+
+400
+01:04:57,940 --> 01:05:01,340
+Okay. Can you speak again, [öğrenci]?
+
+401
+01:05:01,820 --> 01:05:02,980
+Can you hear me again?
+
+402
+01:05:03,300 --> 01:05:04,660
+I can hear you now. Okay, good.
+
+403
+01:05:04,980 --> 01:05:12,600
+Oh yeah. To me, I guess we can say a new example would be different with each other cluster.
+
+404
+01:05:12,600 --> 01:05:21,700
+So it would not be predicting that perfectly. So it would have had like a high bias, high variance.
+
+405
+01:05:23,600 --> 01:05:24,280
+Okay.
+
+406
+01:05:25,684 --> 01:05:30,603
+Can you give more details about why do you think it's gonna have high variance?
+
+407
+01:05:31,699 --> 01:05:41,039
+Çünkü, we don't have a cluster with multiple ones, we have every training example as its own kind.
+
+408
+01:05:41,679 --> 01:05:49,859
+So, for example, if you want to do a testing, we don't know any rules about is it near something else or not.
+
+409
+01:05:49,919 --> 01:05:58,259
+It's just a new thing that the algorithm would just predict randomly or something, and it would cause high variance for new.
+
+410
+01:05:58,739 --> 01:06:00,279
+Varian test cases.
+
+411
+01:06:01,139 --> 01:06:04,139
+Good, you're close. Yes, that makes sense.
+
+412
+01:06:06,719 --> 01:06:09,259
+Let's just think about this example.
+
+413
+01:06:09,439 --> 01:06:12,239
+Assume that we have this particular x.
+
+414
+01:06:12,659 --> 01:06:14,359
+Sorry, let me use this pen.
+
+415
+01:06:16,099 --> 01:06:19,279
+Okay, I have x here, and I don't know its class.
+
+416
+01:06:20,019 --> 01:06:28,980
+And instead of using a k-neighbor, I use all training sets to decide whether this is plus or minus.
+
+417
+01:06:29,099 --> 01:06:33,780
+We have two classes. Pluses are cancers. Zeros are normal cells.
+
+418
+01:06:34,000 --> 01:06:40,039
+Okay. I don't know whether this x is cancer or not. I wanted to predict that.
+
+419
+01:06:41,039 --> 01:06:44,659
+And I just count how many normal and how many cancers.
+
+420
+01:06:45,331 --> 01:06:49,112
+Tamamen, bu kadar da kısımda,
+
+421
+01:06:49,112 --> 01:06:52,152
+bu kadar daha normal.
+
+422
+01:06:52,152 --> 01:06:53,152
+Evet.
+
+423
+01:06:56,032 --> 01:06:58,411
+Bu, x'ı normal.
+
+424
+01:07:01,172 --> 01:07:02,711
+Bu, belki, bu ne?
+
+425
+01:07:02,711 --> 01:07:04,951
+Bu, plus or minus.
+
+426
+01:07:06,471 --> 01:07:09,672
+Bu, bu, yine x'ı.
+
+427
+01:07:10,471 --> 01:07:12,291
+Bu, aynı şey.
+
+428
+01:07:13,780 --> 01:07:17,780
+Yeni bir x'e bu.
+
+429
+01:07:18,780 --> 01:07:21,780
+Bu nedenle?
+
+430
+01:07:24,780 --> 01:07:25,780
+Çünkü
+
+431
+01:07:27,780 --> 01:07:30,780
+Bu nedenle de aynı result.
+
+432
+01:07:39,603 --> 01:08:06,635
+bu dağmenin bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere daha iyi bir kere
+
+433
+01:08:07,027 --> 01:08:08,027
+All the difference.
+
+434
+01:08:08,907 --> 01:08:18,288
+So if it is closer to the, all the pluses, then we can assume that this is also more likely to be a plus.
+
+435
+01:08:18,288 --> 01:08:31,467
+But if our x is located somewhere here, I can assume that because everything around that or the neighbors of this x is all minuses.
+
+436
+01:08:31,764 --> 01:08:35,104
+then it is probably going to be a minus, not plus.
+
+437
+01:08:35,923 --> 01:08:39,564
+That's why neighborhood or locality is very important.
+
+438
+01:08:40,123 --> 01:08:41,564
+And that makes all the decisions.
+
+439
+01:08:42,083 --> 01:08:44,003
+But we cannot use all neighbors,
+
+440
+01:08:44,224 --> 01:08:46,604
+because if we use all neighbors, it's going to be an entire data set.
+
+441
+01:08:46,904 --> 01:08:48,123
+We need to keep it short.
+
+442
+01:08:48,444 --> 01:08:52,064
+We need to keep the neighbors close to itself.
+
+443
+01:08:52,064 --> 01:08:58,724
+So k items near, the nearest k items should be considered.
+
+444
+01:08:59,220 --> 01:09:23,780
+Okay, that is the main reason. And depending on the number of k, we say it is one nearest neighbor, two nearest neighbor. If we choose two neighbors, if it is three, it is three nearest neighbor. So that number, k, is deciding how many neighbors that we are going to choose for making that decision. Okay.
+
+445
+01:09:25,492 --> 01:09:33,192
+Assumption is that if the neighbors are closest, and that is more influence on the neighbor.
+
+446
+01:09:34,072 --> 01:09:44,152
+Another example, let me give from Turkish, we have idioms we say that, you know, tell me your friends and I tell you your character.
+
+447
+01:09:44,608 --> 01:09:46,608
+Bu nefes çok farklılık.
+
+448
+01:09:47,128 --> 01:09:50,247
+Biz de nefes de nefes de.
+
+449
+01:09:50,247 --> 01:09:52,007
+Bu nefes de.
+
+450
+01:09:52,007 --> 01:09:52,568
+Yani,
+
+451
+01:10:07,859 --> 01:10:13,420
+are the ones that can give us more clues or signal about your class.
+
+452
+01:10:13,680 --> 01:10:15,340
+Okay, that is the same idea.
+
+453
+01:10:16,959 --> 01:10:27,019
+K-near-neighbor is a simple algorithm that simply what it does is it checks the similarity between every point to this particular item.
+
+454
+01:10:27,019 --> 01:10:29,019
+And it chooses...
+
+455
+01:10:29,184 --> 01:10:38,844
+k-nearest of all items, and then based on the majority class of those k-items, it determines or predicts the class.
+
+456
+01:10:39,783 --> 01:10:39,863
+Okay.
+
+457
+01:10:40,963 --> 01:10:46,443
+So for k-nearest neighbor, we need three important information.
+
+458
+01:10:46,783 --> 01:10:50,084
+What do we need for making a prediction in k-nearest neighbor?
+
+459
+01:10:54,931 --> 01:10:56,931
+İlk olarak, bir şey var.
+
+460
+01:10:56,931 --> 01:11:19,884
+Bir şey var.
+
+461
+01:11:19,891 --> 01:11:22,271
+How do I know which are your neighbors?
+
+462
+01:11:22,851 --> 01:11:24,931
+We need a metric to measure that.
+
+463
+01:11:25,891 --> 01:11:34,192
+So this may be a metric such as a distance metric of Euclidean or Manhattan or it may be Cousinous.
+
+464
+01:11:34,591 --> 01:11:37,091
+It can be any metric, but we need a distance metric.
+
+465
+01:11:37,091 --> 01:11:38,791
+Okay, what else do we need?
+
+466
+01:11:39,152 --> 01:11:41,591
+The last thing that we also need for this algorithm.
+
+467
+01:11:48,659 --> 01:11:50,859
+Bu k növer, bu bir şey.
+
+468
+01:11:50,859 --> 01:12:03,779
+Bu neybörüsü var.
+
+469
+01:12:03,779 --> 01:12:06,779
+Ve bu neybörüsü var.
+
+470
+01:12:06,779 --> 01:12:10,779
+Bu neybörüsü var.
+
+471
+01:12:12,467 --> 01:12:17,847
+Okay, once we know all these three, we are good to go. We can calculate any algorithm.
+
+472
+01:12:18,787 --> 01:12:29,688
+So for distance metric, we can use many vectorized metrics, but one of the most commonly used ones is the simplest one, is Euclidean distance.
+
+473
+01:12:30,167 --> 01:12:36,847
+And we can use this one to measure that. Let me try to see if we can see the...
+
+474
+01:12:38,676 --> 01:12:42,515
+Bord, maybe I can type it there, it might be easier.
+
+475
+01:12:42,976 --> 01:12:44,996
+One second, let me give a shot.
+
+476
+01:12:45,676 --> 01:12:47,435
+I'm going to use the board first.
+
+477
+01:12:52,435 --> 01:12:54,555
+Can you guys see what I write?
+
+478
+01:13:00,692 --> 01:13:05,692
+Evet, bu görüntü.
+
+479
+01:13:05,692 --> 01:13:07,692
+Ama bu görüntü.
+
+480
+01:13:07,692 --> 01:13:15,692
+Bir şey görüntü.
+
+481
+01:13:28,884 --> 01:13:34,684
+Okay, so how do we use Euclidean distance in our metric?
+
+482
+01:13:34,684 --> 01:13:49,684
+So we, in our original data, are you able to see, okay, let me put this data, this is our original data, and we have different attributes.
+
+483
+01:13:50,603 --> 01:13:56,264
+The first one is, let's say this is A1 is age.
+
+484
+01:13:57,363 --> 01:14:24,743
+Okay, this is age of people. Okay, the second one is, let's say, marriage, marriage status. This is marriage status. The third one may be education, education. Fourth one is salary. And the fifth one is the class. Okay, are you able to see? Is it a little small?
+
+485
+01:14:25,716 --> 01:14:27,396
+It's good. We see everything.
+
+486
+01:14:27,996 --> 01:14:28,896
+You see it? Okay, good.
+
+487
+01:14:29,896 --> 01:14:34,935
+So the first one is, let's say, 19 years old, this guy.
+
+488
+01:14:35,976 --> 01:14:38,036
+He's not married, it is zero.
+
+489
+01:14:38,476 --> 01:14:43,476
+Education is, let's say, middle school is two, primary school is one.
+
+490
+01:14:44,515 --> 01:14:48,236
+Let's say, high school is three, university is four.
+
+491
+01:14:48,576 --> 01:14:50,576
+So we give number, it is four.
+
+492
+01:14:51,220 --> 01:14:54,220
+ve bu adamın 5,000 lira.
+
+493
+01:14:54,220 --> 01:14:57,900
+Ve bu adamın, evet.
+
+494
+01:14:57,900 --> 01:15:00,539
+Evet, evet, bu adamın,
+
+495
+01:15:00,539 --> 01:15:02,220
+bu adamın,
+
+496
+01:15:02,220 --> 01:15:09,980
+bu adamın, bu adamın,
+
+497
+01:15:09,980 --> 01:15:11,980
+bu adamın,
+
+498
+01:15:11,980 --> 01:15:12,108
+25 yaşında,
+
+499
+01:15:13,520 --> 01:15:19,520
+bu adamın,
+
+500
+01:15:12,148 --> 01:15:19,708
+Birkaç bir üniversite geliştiği ve 10,000'de bir tanıya
+
+501
+01:15:19,708 --> 01:15:22,108
+ve bir tanıya değil.
+
+502
+01:15:22,108 --> 01:15:29,228
+Bir tanıya, bir tanıya, bir tanıya, bir tanıya, bir tanıya, bir tanıya,
+
+503
+01:15:29,228 --> 01:15:39,268
+ve bir tanıya, bir tanıya, bir tanıya, bir tanıya, bir tanıya, bir tanıya, bir tanıya,
+
+504
+01:15:39,764 --> 01:15:44,764
+ve bu bir örneğin için çok iyi bir örneğin.
+
+505
+01:15:44,764 --> 01:15:49,764
+Bu örneğin, bu örneğin bir örneğin,
+
+506
+01:15:49,764 --> 01:16:02,764
+bu örneğin, bu örneğin, bu örneğin,
+
+507
+01:16:02,764 --> 01:16:07,596
+bu örneğin, bu örneğin,
+
+508
+01:16:13,939 --> 01:16:33,099
+So, we need to calculate Euclidean distance. Euclidean distance is used x1-x2-square plus y1-y2-square plus z1-z2-square.
+
+509
+01:16:34,539 --> 01:16:40,579
+Goes on and on. Okay, this is our example. But we have people
+
+510
+01:16:41,619 --> 01:17:03,372
+ve bu ve
+
+511
+01:17:03,636 --> 01:17:09,656
+So, if we had three dimensions, this would be x3, but I don't need to show more dimensions because we cannot.
+
+512
+01:17:10,356 --> 01:17:13,256
+But assume that we only have two-dimensional space.
+
+513
+01:17:15,115 --> 01:17:16,836
+This is two-dimensional space.
+
+514
+01:17:18,615 --> 01:17:25,775
+And the first one is P1, and this is P2, and this guy is P3.
+
+515
+01:17:28,716 --> 01:17:30,216
+So, I can convert.
+
+516
+01:17:32,148 --> 01:17:34,148
+bu vekansız.
+
+517
+01:17:34,148 --> 01:17:38,148
+Bu bir vekansız.
+
+518
+01:17:38,148 --> 01:17:44,148
+Bu vekansız.
+
+519
+01:17:44,148 --> 01:17:55,916
+Bu bir vekansız.
+
+520
+01:17:57,460 --> 01:18:03,280
+P2'i 25, 1, 5, 10,000.
+
+521
+01:18:05,319 --> 01:18:06,539
+And P1'i 25, 1, 5, 10,000.
+
+522
+01:18:15,091 --> 01:18:19,771
+P1 is 19,0,5000.
+
+523
+01:18:20,771 --> 01:18:24,511
+So, now we have the data represented as vectors.
+
+524
+01:18:25,451 --> 01:18:30,572
+Can we now use Euclidean distance to calculate the distance between them?
+
+525
+01:18:32,791 --> 01:18:37,291
+This is D, P1, P2.
+
+526
+01:18:37,891 --> 01:18:41,811
+This is D, P2, P3.
+
+527
+01:18:42,868 --> 01:18:46,087
+ve bu, p1, p3.
+
+528
+01:18:46,648 --> 01:18:48,427
+Okay, now we can calculate that.
+
+529
+01:18:48,507 --> 01:18:49,988
+It is not a problem.
+
+530
+01:18:50,548 --> 01:18:51,608
+How do we calculate?
+
+531
+01:18:51,768 --> 01:19:00,007
+Let's calculate the distance between, I don't know if you can see, distance between p1, p2,
+
+532
+01:19:00,007 --> 01:19:09,148
+equal to square root of the p1 and p2, 19 minus,
+
+533
+01:19:10,260 --> 01:19:26,300
+25² plus 0-1² plus 4-5² plus 5000-10,000².
+
+534
+01:19:27,979 --> 01:19:30,720
+That's what we calculate for first distance.
+
+535
+01:19:30,720 --> 01:19:32,399
+This is what we calculate.
+
+536
+01:19:33,140 --> 01:19:37,440
+We do this for others as well, key 1 to key 3.
+
+537
+01:19:38,228 --> 01:19:56,507
+19-4D², plus 0-1², 4-5,000-100,000².
+
+538
+01:19:56,507 --> 01:19:59,927
+So we calculate all the distances.
+
+539
+01:20:00,000 --> 01:20:03,479
+ve neerest bir bir tane ineriz.
+
+540
+01:20:03,479 --> 01:20:27,000
+Önceli bir tane ineriz.
+
+541
+01:20:27,039 --> 01:20:53,003
+bu bir
+
+542
+01:20:53,171 --> 01:20:54,711
+t1, t2.
+
+543
+01:20:55,031 --> 01:20:55,931
+Why is that?
+
+544
+01:20:57,451 --> 01:21:01,451
+So if we have a longer distance between two items,
+
+545
+01:21:02,291 --> 01:21:04,291
+does it mean that they are similar or not?
+
+546
+01:21:06,611 --> 01:21:07,851
+Not similar, right?
+
+547
+01:21:08,271 --> 01:21:12,711
+If you have longer distance, it means that similarity is smaller.
+
+548
+01:21:13,351 --> 01:21:16,431
+If you have small distance, the similarity is high.
+
+549
+01:21:17,031 --> 01:21:18,955
+Okay, so if you have...
+
+550
+01:21:19,060 --> 01:21:28,280
+If you grow the distance, if you grow the distance, you reduce the similarity, right?
+
+551
+01:21:28,600 --> 01:21:36,760
+If you reduce the similarity, if you reduce the distance, you grow the similarity.
+
+552
+01:21:37,700 --> 01:21:39,960
+That's why they have inverse relationship.
+
+553
+01:21:40,880 --> 01:21:45,760
+So we can use this example, this quantity, to determine...
+
+554
+01:21:46,319 --> 01:21:55,359
+Similarity. Smallest distance items are more similar, and we choose those who have smallest distance.
+
+555
+01:21:56,079 --> 01:22:06,879
+Okay, good. Good point. One more thing is that, okay, this is another example. Let me put this up here.
+
+556
+01:22:07,840 --> 01:22:13,760
+Assume that we have this particular example. We have a bunch of minuses.
+
+557
+01:22:17,747 --> 01:22:20,067
+But we have some pluses here.
+
+558
+01:22:23,247 --> 01:22:23,807
+Okay.
+
+559
+01:22:24,547 --> 01:22:27,607
+And assume that there's a point x in here.
+
+560
+01:22:28,707 --> 01:22:32,427
+I don't know whether this guy is plus or not.
+
+561
+01:22:33,567 --> 01:22:34,167
+Okay.
+
+562
+01:22:35,127 --> 01:22:37,687
+What do you think about the class of this x?
+
+563
+01:22:38,027 --> 01:22:39,747
+Do you think it should be plus or minus?
+
+564
+01:22:42,287 --> 01:22:45,167
+Plus? Why should it become plus?
+
+565
+01:22:46,612 --> 01:23:14,828
+Evet.
+
+566
+01:23:15,667 --> 01:23:29,528
+Bire, it's going to be large, so it can errorly determine that it's going to be minus, but we assume that it should be plus, because nearest neighbors are all pluses.
+
+567
+01:23:30,188 --> 01:23:41,587
+So the decision on choosing k is very important. If you choose too high, then you will have high error, high error rate.
+
+568
+01:23:43,891 --> 01:23:47,251
+If you choose high, k is going to have high error rate.
+
+569
+01:23:47,631 --> 01:23:49,431
+What about the opposite case?
+
+570
+01:23:50,171 --> 01:23:52,652
+Choosing k as a small value.
+
+571
+01:23:56,439 --> 01:24:04,439
+Evet.
+
+572
+01:23:56,051 --> 01:23:58,051
+Bu bir soru var.
+
+573
+01:23:58,051 --> 01:24:05,387
+Bu soru var.
+
+574
+01:24:14,068 --> 01:24:35,756
+Bu, bu
+
+575
+01:24:36,692 --> 01:24:40,092
+then this guy becomes negative, right?
+
+576
+01:24:40,551 --> 01:24:42,172
+This is a potential problem.
+
+577
+01:24:42,912 --> 01:24:46,032
+So choosing k as a small value is not a good idea.
+
+578
+01:24:46,532 --> 01:24:50,452
+Choosing k as a very big value is also not a good idea.
+
+579
+01:24:50,992 --> 01:24:52,332
+So how should we choose k?
+
+580
+01:24:54,672 --> 01:24:58,152
+What is the gold standard for choosing k?
+
+581
+01:24:58,271 --> 01:24:59,791
+What do you think we should do?
+
+582
+01:25:06,100 --> 01:25:08,300
+Is it standard for all data sets?
+
+583
+01:25:10,460 --> 01:25:10,800
+Maybe.
+
+584
+01:25:13,220 --> 01:25:18,680
+5%
+
+585
+01:25:22,452 --> 01:25:31,452
+Evet, ama nasıl bir kutlu?
+
+586
+01:25:31,452 --> 01:25:38,452
+5, 3, 7, 6, ve bu?
+
+587
+01:25:38,452 --> 01:25:42,452
+Evet, ama nasıl bir kutlu?
+
+588
+01:25:48,435 --> 01:25:50,835
+Ard, why is that?
+
+589
+01:25:51,515 --> 01:25:54,115
+Ard, say, ard.
+
+590
+01:25:57,075 --> 01:25:57,435
+Ard.
+
+591
+01:26:00,075 --> 01:26:08,975
+Ard, so for making decision, it is better to make it ard, because if we have two pluses and two minuses, it would be more difficult to choose.
+
+592
+01:26:09,684 --> 01:26:16,923
+Bu, if we had like five cases and three of them was plus, then it would be more easier.
+
+593
+01:26:17,363 --> 01:26:21,043
+We usually choose k as an odd number, but how do we choose k?
+
+594
+01:26:21,484 --> 01:26:22,603
+It may be difficult.
+
+595
+01:26:23,283 --> 01:26:30,423
+There's no rule, exact rule, what k should be, but k is a hyperparameter, right?
+
+596
+01:26:36,532 --> 01:26:37,412
+Algoritim.
+
+597
+01:26:39,891 --> 01:26:41,752
+Maybe we can try that out.
+
+598
+01:26:41,992 --> 01:26:48,231
+We can try different case and decide which one is more suitable for our example.
+
+599
+01:26:48,891 --> 01:26:58,291
+We can choose, we can separate a small portion of data as a validation and we try different case and predict the results.
+
+600
+01:26:58,291 --> 01:27:02,592
+Whichever makes best outcome, that becomes our case.
+
+601
+01:27:02,880 --> 01:27:27,260
+We typically do that. We try different k's and choose the best performing one. One more thing is, what do you think about the influence of each point? So we said that if you choose k as a large number, the total number of minuses can overweight the total number of pluses.
+
+602
+01:27:27,923 --> 01:27:38,203
+But we have some intuition that, you know, when they are closer, they should have more influence on the weight of voting, right?
+
+603
+01:27:38,583 --> 01:27:45,984
+So it should not be just simply, you know, the number of minuses and number of pluses.
+
+604
+01:27:47,663 --> 01:27:54,844
+We can try that, but we have some intuition that, you know, if you have chosen this particular example,
+
+605
+01:27:55,391 --> 01:28:03,592
+Do you think this minus have the same influence on the class of this x versus this point?
+
+606
+01:28:04,592 --> 01:28:07,051
+Do they have the same influence?
+
+607
+01:28:08,492 --> 01:28:08,851
+No.
+
+608
+01:28:10,072 --> 01:28:10,891
+Why?
+
+609
+01:28:17,363 --> 01:28:20,283
+Çünkü, daha fazla ilişkiler, daha fazla ilişkiler.
+
+610
+01:28:20,283 --> 01:28:27,804
+Bu, daha fazla ilişkiler, daha fazla ilişkiler, daha fazla ilişkiler, daha fazla ilişkiler.
+
+611
+01:28:27,804 --> 01:28:30,203
+Bu, daha fazla ilişkiler, daha fazla ilişkiler.
+
+612
+01:28:41,140 --> 01:28:41,500
+M-hmm.
+
+613
+01:28:45,971 --> 01:29:07,247
+Bir.
+
+614
+01:29:07,247 --> 01:29:13,747
+We can even make more impact by making square of the distances.
+
+615
+01:29:13,747 --> 01:29:18,847
+So if you get closer, you get extra weight on the class.
+
+616
+01:29:19,227 --> 01:29:21,167
+So this is another idea.
+
+617
+01:29:21,587 --> 01:29:33,047
+So for the decision point, what we do is we take to end all the items, their weight plus their similarity.
+
+618
+01:29:34,868 --> 01:29:39,908
+P i to r p x.
+
+619
+01:29:41,628 --> 01:29:48,488
+So, their total contribution becomes their weight times their similarity, in other sense.
+
+620
+01:29:49,168 --> 01:29:59,847
+So, for instance, this guy says I am plus, and his weight is 0.8, and other one says it is
+
+621
+01:30:00,307 --> 01:30:08,307
+Bir.
+
+622
+01:30:00,083 --> 01:30:05,083
+ve 0.4'ı
+
+623
+01:30:05,083 --> 01:30:07,083
+ve
+
+624
+01:30:07,083 --> 01:30:09,083
+minus'ı
+
+625
+01:30:09,083 --> 01:30:11,083
+ve
+
+626
+01:30:11,083 --> 01:30:29,880
+y'e
+
+627
+01:30:22,804 --> 01:30:50,539
+Bu, bu
+
+628
+01:30:51,091 --> 01:30:56,251
+Or, let me say, what can go wrong with our calculation?
+
+629
+01:31:00,115 --> 01:31:04,795
+Do you see any problem in our methodology?
+
+630
+01:31:09,363 --> 01:31:12,663
+Anybody? So let me check the chat.
+
+631
+01:31:17,492 --> 01:31:19,692
+Bu bir point. Bu bir soru.
+
+632
+01:31:21,891 --> 01:31:23,692
+Bir soru.
+
+633
+01:31:24,091 --> 01:31:26,091
+[öğrenci], bu bir soru.
+
+634
+01:31:26,692 --> 01:31:27,692
+Bu bir soru.
+
+635
+01:31:27,692 --> 01:31:30,091
+[öğrenci], bu bir soru.
+
+636
+01:31:31,492 --> 01:31:36,091
+Altyazı.
+
+637
+01:31:36,891 --> 01:31:44,091
+Bu bir soru.
+
+638
+01:31:44,287 --> 01:31:46,287
+Bu bir büyük bir numar.
+
+639
+01:31:46,287 --> 01:32:09,931
+Bu bir numar.
+
+640
+01:32:10,100 --> 01:32:12,100
+Bu da bir soru var.
+
+641
+01:32:12,100 --> 01:32:16,100
+Ama çünkü kail differences,
+
+642
+01:32:16,100 --> 01:32:19,100
+kail differences,
+
+643
+01:32:19,100 --> 01:32:21,100
+saları
+
+644
+01:32:21,100 --> 01:32:24,100
+tamamen her şey.
+
+645
+01:32:24,100 --> 01:32:27,100
+Tamamen her şey.
+
+646
+01:32:27,100 --> 01:32:29,100
+Bu bir şey.
+
+647
+01:32:29,100 --> 01:32:30,988
+Bu nasıl bir şey?
+
+648
+01:32:35,188 --> 01:32:35,807
+Teşekkürler.
+
+649
+01:32:40,916 --> 01:32:41,916
+Evet.
+
+650
+01:32:52,916 --> 01:32:54,916
+[öğrenci], tamamen normalize.
+
+651
+01:32:54,916 --> 01:32:57,916
+We need to normalize everything to the same scale.
+
+652
+01:32:57,916 --> 01:33:01,916
+So we need to normalize everything to the same scale.
+
+653
+01:33:01,916 --> 01:33:04,916
+So this is age.
+
+654
+01:33:04,916 --> 01:33:09,916
+This is salary.
+
+655
+01:33:09,916 --> 01:33:14,476
+From 0 to 140, this is 0 to 1 million.
+
+656
+01:33:15,923 --> 01:33:19,923
+Bu da bu da bu da aynı mesajı.
+
+657
+01:33:19,923 --> 01:33:22,224
+Bu da 0,1.
+
+658
+01:33:22,224 --> 01:33:26,423
+Bu da 1 milyon, bu da 0,1.
+
+659
+01:33:26,423 --> 01:33:30,423
+Bu da bu da bu da aynı mesajı.
+
+660
+01:33:30,423 --> 01:33:32,423
+Bu da bu da aynı mesajı.
+
+661
+01:33:32,423 --> 01:33:38,423
+Bu da bu da bu da bu da bu da bu da bu.
+
+662
+01:33:38,423 --> 01:33:40,423
+Bu da bu.
+
+663
+01:33:42,260 --> 01:33:49,739
+Apply normalization, data normalization, to all data sets before modeling.
+
+664
+01:33:49,979 --> 01:33:51,859
+This is not specific to k-nearest labor.
+
+665
+01:33:52,180 --> 01:33:54,979
+This is true for all algorithms.
+
+666
+01:33:55,539 --> 01:33:57,260
+Data normalization is critical.
+
+667
+01:33:57,699 --> 01:34:04,699
+If you don't do that, some features will dominate the data, and that's going to be a huge problem.
+
+668
+01:34:05,899 --> 01:34:06,479
+Okay?
+
+669
+01:34:07,539 --> 01:34:08,539
+Bu bir şey.
+
+670
+01:34:08,539 --> 01:34:11,539
+Ama sonra, bu bir şey, bu bir şey.
+
+671
+01:34:11,539 --> 01:34:16,363
+Bu bir şey.
+
+672
+01:34:23,475 --> 01:34:24,715
+Okay, do you guys see the screen?
+
+673
+01:34:27,295 --> 01:34:45,735
+Let's say we have these two points, these two vectors, P1 and P2, and this first vector is 11110, and the other one is 0111111.
+
+674
+01:34:45,735 --> 01:34:50,455
+This is one vector, and the other set of vectors are
+
+675
+01:34:50,899 --> 01:34:52,899
+P3, P4
+
+676
+01:34:52,899 --> 01:34:54,899
+ve bu
+
+677
+01:34:54,899 --> 01:34:56,899
+bu
+
+678
+01:34:56,899 --> 01:34:58,899
+1,0,0,0,0
+
+679
+01:34:58,899 --> 01:35:02,899
+0
+
+680
+01:35:02,899 --> 01:35:04,899
+0,0,0,0,0,1
+
+681
+01:35:04,899 --> 01:35:06,899
+Ok
+
+682
+01:35:06,899 --> 01:35:08,899
+Bu
+
+683
+01:35:08,899 --> 01:35:10,899
+Euclidean
+
+684
+01:35:10,899 --> 01:35:12,899
+Distance
+
+685
+01:35:12,899 --> 01:35:14,899
+between
+
+686
+01:35:14,899 --> 01:35:16,299
+P1, P2
+
+687
+01:35:21,268 --> 01:35:22,488
+P1, P2.
+
+688
+01:35:24,807 --> 01:35:29,568
+And what is the distance between P3, P4?
+
+689
+01:35:34,676 --> 01:35:36,096
+Is it 2 or?
+
+690
+01:35:38,456 --> 01:35:39,736
+Square root 2, yes.
+
+691
+01:35:40,136 --> 01:35:40,976
+What about this one?
+
+692
+01:35:45,043 --> 01:35:47,043
+Bu da yine de sqağrı.
+
+693
+01:35:47,043 --> 01:35:55,756
+Bu da sqağrı.
+
+694
+01:35:59,315 --> 01:36:01,315
+Bu example,
+
+695
+01:36:01,315 --> 01:36:05,315
+bu birçok bir parçası var.
+
+696
+01:36:05,315 --> 01:36:09,315
+İçin bir parçası var.
+
+697
+01:36:09,315 --> 01:36:25,315
+Bu parçası var.
+
+698
+01:36:25,876 --> 01:36:28,876
+Özellikle, bir yöntem bir representatörde,
+
+699
+01:36:39,220 --> 01:36:42,260
+Let's use another metric, distance metric.
+
+700
+01:36:43,680 --> 01:36:54,880
+In this time, I'm just going to use the same example, this P1, P2, and there's a P3.
+
+701
+01:36:56,200 --> 01:37:00,220
+This is same, but geometrical representation.
+
+702
+01:37:00,220 --> 01:37:06,220
+Assume that this is theta1 and distance from...
+
+703
+01:37:06,484 --> 01:37:10,503
+P1 to P3 is Theta2.
+
+704
+01:37:12,024 --> 01:37:17,583
+So Theta1 is smaller than Theta2.
+
+705
+01:37:18,583 --> 01:37:18,884
+Okay.
+
+706
+01:37:20,884 --> 01:37:23,184
+What can we say about the distance?
+
+707
+01:37:23,684 --> 01:37:26,244
+This P1, P2,
+
+708
+01:37:27,844 --> 01:37:30,784
+distance P1, P3.
+
+709
+01:37:31,891 --> 01:37:38,371
+When you have larger angle between vectors, does it mean that they are more similar or less similar?
+
+710
+01:37:40,871 --> 01:37:43,811
+So if you grow the angle,
+
+711
+01:37:47,347 --> 01:38:01,347
+Bu şekilde, çeta 2'ye kadar daha da.
+
+712
+01:38:01,347 --> 01:38:03,347
+Ve daha daha da.
+
+713
+01:38:03,347 --> 01:38:07,347
+Ve bu şekilde, çeta 2'ye kadar daha da.
+
+714
+01:38:07,347 --> 01:38:11,019
+Bu şekilde, çeta 2'ye kadar daha da.
+
+715
+01:38:13,043 --> 01:38:17,043
+If you have less smaller angle, more similar.
+
+716
+01:38:20,323 --> 01:38:21,443
+P1 P3.
+
+717
+01:38:22,724 --> 01:38:24,804
+So when is this zero?
+
+718
+01:38:26,243 --> 01:38:30,483
+When is this similarity between two vectors are zero?
+
+719
+01:38:32,563 --> 01:38:33,603
+When it becomes zero?
+
+720
+01:38:38,563 --> 01:38:40,323
+When distance becomes zero, it is
+
+721
+01:38:42,228 --> 01:38:46,268
+Bu, let me give this special example.
+
+722
+01:38:47,307 --> 01:38:48,827
+Can you see my, yes.
+
+723
+01:38:49,608 --> 01:38:53,847
+If theta is zero, what is the similarity?
+
+724
+01:38:59,444 --> 01:39:24,620
+Bu ne?
+
+725
+01:39:26,260 --> 01:39:28,520
+P1'i ortogonol to P2.
+
+726
+01:39:29,619 --> 01:39:32,460
+So, they are perpendicular, one to another.
+
+727
+01:39:38,260 --> 01:39:41,359
+ve örtegonel, do they have any overlap?
+
+728
+01:39:44,948 --> 01:39:49,228
+When two things are orthogonal, so they are orthogonal, do they share anything?
+
+729
+01:39:57,751 --> 01:40:01,751
+Bu ne?
+
+730
+01:39:57,427 --> 01:40:02,547
+Tata'a 180, parça'a ne oluyor?
+
+731
+01:40:05,108 --> 01:40:08,787
+180'a bir şekilde, ama aynı şekilde,
+
+732
+01:40:09,907 --> 01:40:10,868
+bir şekilde.
+
+733
+01:40:26,163 --> 01:40:27,163
+M.K.
+
+734
+01:40:31,764 --> 01:40:41,864
+0, çünkü, they share nothing, there is no overlap, they are totally different, there is nothing that is overlapping.
+
+735
+01:40:43,064 --> 01:40:55,963
+Okay, maybe you see some interesting examples about these degrees.
+
+736
+01:40:57,524 --> 01:41:03,684
+If you remember, cosin, what is the cosin 0?
+
+737
+01:41:06,684 --> 01:41:08,244
+It is 1, right?
+
+738
+01:41:12,564 --> 01:41:15,484
+Bu, 90 derece?
+
+739
+01:41:16,804 --> 01:41:17,944
+It is 0.
+
+740
+01:41:20,704 --> 01:41:27,923
+So we can simply use cosine of the angle as a similarity matrix, because that's identical to the similarity.
+
+741
+01:41:28,704 --> 01:41:30,043
+So that makes sense.
+
+742
+01:41:30,824 --> 01:41:34,164
+We can use an alternative metric, cosine of the angle.
+
+743
+01:41:34,923 --> 01:41:37,304
+But are we making it more difficult?
+
+744
+01:41:37,712 --> 01:41:40,992
+Or is it more easy to calculate for the cosine?
+
+745
+01:41:41,992 --> 01:41:46,832
+So if you have two vectors, how do we calculate the cosine of the angle?
+
+746
+01:41:49,231 --> 01:41:51,932
+Okay, let me do that.
+
+747
+01:41:53,372 --> 01:41:54,712
+We are kind of lucky.
+
+748
+01:41:55,172 --> 01:41:57,271
+Let me use this area.
+
+749
+01:41:58,692 --> 01:42:02,932
+Okay, cosine of the angle.
+
+750
+01:42:06,036 --> 01:42:16,076
+In other sense, cosin P1, P2, is equal to what? How do we calculate cosines? It's quite simple.
+
+751
+01:42:17,195 --> 01:42:21,655
+The dot products divided by their length.
+
+752
+01:42:24,456 --> 01:42:29,655
+Okay, so it is very simple. How do we calculate dot products?
+
+753
+01:42:30,496 --> 01:42:32,296
+We simply multiply
+
+754
+01:42:34,355 --> 01:42:56,460
+İçeride birçok y1'ı y2'ı
+
+755
+01:42:57,395 --> 01:43:15,435
+It is simply, sqrt, x1² plus y1² plus z1², times, same thing for the right-hand side, x2² plus y2² plus z2².
+
+756
+01:43:17,055 --> 01:43:22,996
+So it is quite simple to calculate the cosine of the angle between two vectors.
+
+757
+01:43:23,572 --> 01:43:28,092
+We calculate the dot products divided by their lengths.
+
+758
+01:43:28,771 --> 01:43:30,311
+Okay, so far so good.
+
+759
+01:43:30,592 --> 01:43:33,931
+Let's use the same example on the top side.
+
+760
+01:43:34,192 --> 01:43:35,332
+We had these two vectors.
+
+761
+01:43:36,811 --> 01:43:43,572
+Cosine of these two vectors, 0, 1, 1, 1, 1, 0, sorry, 1.
+
+762
+01:43:46,612 --> 01:43:47,971
+This is one example.
+
+763
+01:43:49,619 --> 01:43:50,619
+Bu bir şey.
+
+764
+01:43:56,627 --> 01:44:23,595
+Bu, bu
+
+765
+01:44:24,243 --> 01:44:29,123
+0² plus 1² plus 1² plus 1²
+
+766
+01:44:29,123 --> 01:44:34,003
+times 1² plus 1² plus plus 0².
+
+767
+01:44:34,003 --> 01:44:35,203
+Right?
+
+768
+01:44:35,203 --> 01:44:38,323
+So that becomes, we have how many?
+
+769
+01:44:40,003 --> 01:44:42,483
+5 divided by,
+
+770
+01:44:43,603 --> 01:44:47,443
+we have square root 6 times square root 6,
+
+771
+01:44:47,443 --> 01:44:49,923
+that becomes 5 over 6.
+
+772
+01:44:51,315 --> 01:45:09,655
+5 over 6 is nearly, let's say 0.85, right? 0.something. What is the exact value? 87, maybe?
+
+773
+01:45:14,484 --> 01:45:18,484
+83.
+
+774
+01:45:18,484 --> 01:45:40,460
+Oysağlar.
+
+775
+01:45:40,851 --> 01:45:47,111
+Let's calculate the cosine for this particular example, P3, P4.
+
+776
+01:45:47,111 --> 01:46:04,111
+The dot product matching 1 times 0 plus 0 times 0 plus 0 times 1 divided by, and we just take squares, 1 square plus 0 square.
+
+777
+01:46:04,819 --> 01:46:10,859
+0², 0², 0², 1².
+
+778
+01:46:11,659 --> 01:46:13,939
+So, this is 1, this is also 1.
+
+779
+01:46:14,819 --> 01:46:19,779
+This becomes, all of these are simply 0 divided by 1.
+
+780
+01:46:20,899 --> 01:46:21,699
+So, that's 0.
+
+781
+01:46:22,919 --> 01:46:25,579
+Okay, which makes sense because they share nothing.
+
+782
+01:46:26,547 --> 01:46:53,228
+Bu, bu
+
+783
+01:46:53,492 --> 01:47:18,060
+Bu bir bu örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir örneğin bir
+
+784
+01:47:18,899 --> 01:47:21,359
+Okay, do you see my screen?
+
+785
+01:47:23,579 --> 01:47:31,279
+There are some things that we need to mention about the nearest neighbor algorithm.
+
+786
+01:47:31,579 --> 01:47:32,719
+It's quite useful.
+
+787
+01:47:33,479 --> 01:47:37,799
+However, we see some problems with the nearest neighbor algorithm.
+
+788
+01:47:37,939 --> 01:47:40,139
+What are the potential problems that we can see?
+
+789
+01:47:40,959 --> 01:47:42,639
+We need to first normalize.
+
+790
+01:47:43,339 --> 01:47:44,539
+We just talked about that.
+
+791
+01:47:44,539 --> 01:47:46,219
+But there's also...
+
+792
+01:47:46,228 --> 01:47:49,347
+Bir problem about nearest neighbor.
+
+793
+01:47:50,568 --> 01:47:53,007
+When does the algorithm make prediction?
+
+794
+01:47:56,368 --> 01:47:59,028
+Okay, and [öğrenci] has a question.
+
+795
+01:47:59,448 --> 01:48:00,967
+How do we calculate k number?
+
+796
+01:48:01,768 --> 01:48:10,587
+[öğrenci], I mentioned at the beginning of the discussion is that k is something that you determine based on your data set.
+
+797
+01:48:11,636 --> 01:48:20,316
+So, what you can do is, you can separate data into validation. Let me give this example.
+
+798
+01:48:21,936 --> 01:48:25,936
+Okay, so assume that this is our training data.
+
+799
+01:48:26,936 --> 01:48:27,936
+I'm just going to use...
+
+800
+01:48:32,083 --> 01:48:52,644
+Okay, so our training data is, we have entire data. We have, this is, we divide it to training, we divide it to testing, and we also divide a validation set. We have three data sets.
+
+801
+01:48:53,235 --> 01:49:09,775
+Bu, in validation, it is similar to testing, but what we will do is, so in your training data, you will train a model, so you will train a model here, and then you can try different k's on validation.
+
+802
+01:49:10,335 --> 01:49:15,255
+You can use k as a tree and test how it's going to be performing in validation set.
+
+803
+01:49:16,020 --> 01:49:28,200
+Let's say you get accuracy of 90%, you try different k, k as 5, now you get 80%, you try different k as 7, you get 60%.
+
+804
+01:49:28,200 --> 01:49:38,100
+So you try different k's and you finally find out that k when it is 90, this performs best in your dataset.
+
+805
+01:49:38,100 --> 01:49:41,100
+Now you can use this k and...
+
+806
+01:49:41,555 --> 01:49:48,575
+Test exact value, or actual performance, on testing dataset, to see if it's going to match.
+
+807
+01:49:49,695 --> 01:49:50,595
+Do you know what I mean?
+
+808
+01:49:51,315 --> 01:50:00,395
+So, you train the model, use validation set for optimizing k hyperparameters,
+
+809
+01:50:01,115 --> 01:50:07,815
+and once you decide on the hyperparameter k, then use testing to get a realistic prediction.
+
+810
+01:50:08,724 --> 01:50:11,284
+Sesim geliyor mu hocam?
+
+811
+01:50:11,743 --> 01:50:12,184
+Aha, geliyor.
+
+812
+01:50:13,064 --> 01:50:17,083
+Şunu sordunuz ya, K-N'in algoritmasında ne sıkıntı var diye.
+
+813
+01:50:17,184 --> 01:50:21,203
+Bende hani K-N'in bulunması bir soru işareti oluyor.
+
+814
+01:50:21,644 --> 01:50:23,963
+Yani yine bir sürü deneme en alımı yapmamız lazım.
+
+815
+01:50:24,623 --> 01:50:26,944
+İşte hangi en optimum sonuca ulaşmamız için.
+
+816
+01:50:26,944 --> 01:50:28,524
+Onun için yazmıştım yani.
+
+817
+01:50:29,104 --> 01:50:34,024
+Bunun bulunması da, en iyi çözümün bulunması da.
+
+818
+01:50:34,144 --> 01:50:37,404
+Bir problem gibi yazmak istiyorum.
+
+819
+01:50:37,404 --> 01:50:39,043
+Tamam, anladım. Çok doğru.
+
+820
+01:50:39,463 --> 01:50:40,944
+Okay, good. Thanks, [öğrenci].
+
+821
+01:50:41,264 --> 01:50:44,644
+[öğrenci] says, choosing k is a problem.
+
+822
+01:50:44,884 --> 01:50:46,663
+Yes, that's a true case.
+
+823
+01:50:46,963 --> 01:50:51,423
+K is a difficult issue for choosing.
+
+824
+01:50:51,583 --> 01:50:53,944
+The optimal k is a problem for K-NN.
+
+825
+01:50:54,024 --> 01:50:55,703
+That's correct. That's for sure.
+
+826
+01:50:56,663 --> 01:50:58,404
+But there's also another problem.
+
+827
+01:50:58,963 --> 01:50:59,963
+Bu problem.
+
+828
+01:50:59,963 --> 01:51:04,963
+When does k-nearest neighbor make prediction?
+
+829
+01:51:09,876 --> 01:51:13,896
+When you have new entry, right?
+
+830
+01:51:14,655 --> 01:51:17,596
+So, okay, let me give an example.
+
+831
+01:51:17,876 --> 01:51:20,356
+This is your original data set.
+
+832
+01:51:20,476 --> 01:51:23,936
+You have some pluses, some minuses, and so on.
+
+833
+01:51:25,655 --> 01:51:27,655
+So I have this x.
+
+834
+01:51:28,076 --> 01:51:29,695
+I need to make the prediction.
+
+835
+01:51:29,695 --> 01:51:34,816
+But in order to make a decision for this k,
+
+836
+01:51:35,572 --> 01:51:36,612
+What should I do?
+
+837
+01:51:36,891 --> 01:51:38,471
+I have to calculate distances.
+
+838
+01:51:39,792 --> 01:51:42,192
+But to choose k distances,
+
+839
+01:51:42,672 --> 01:51:46,612
+I still have to compare to all items.
+
+840
+01:51:46,792 --> 01:51:49,692
+I have to calculate distance between this one and that one.
+
+841
+01:51:49,692 --> 01:51:50,932
+I calculate this one.
+
+842
+01:51:51,311 --> 01:51:52,212
+I calculate that one.
+
+843
+01:51:52,592 --> 01:51:54,332
+I calculate all the measures,
+
+844
+01:51:54,672 --> 01:51:57,811
+all the distances from this point to all the points.
+
+845
+01:51:58,631 --> 01:52:02,131
+And after doing that, I choose k out of them.
+
+846
+01:52:03,507 --> 01:52:06,907
+Bu bir problem.
+
+847
+01:52:06,907 --> 01:52:19,307
+Bu bir training set is small.
+
+848
+01:52:19,307 --> 01:52:21,108
+Bu bir problem.
+
+849
+01:52:21,108 --> 01:52:25,707
+Çünkü bir size is not large.
+
+850
+01:52:25,707 --> 01:52:29,307
+Ama çok large training set,
+
+851
+01:52:31,539 --> 01:52:39,760
+Bu her yeni bir
+
+852
+01:52:39,760 --> 01:52:42,239
+çizgi var,
+
+853
+01:52:42,239 --> 01:52:44,359
+bir çizgi var,
+
+854
+01:52:44,359 --> 01:52:46,479
+çizgi var,
+
+855
+01:52:46,479 --> 01:52:48,479
+bu her item
+
+856
+01:52:48,479 --> 01:52:54,440
+bu çizgi var,
+
+857
+01:52:54,440 --> 01:52:54,635
+bu çizgi var.
+
+858
+01:52:55,572 --> 01:53:20,623
+Bu, bu
+
+859
+01:53:20,623 --> 01:53:24,083
+Bu model only performs when I need that.
+
+860
+01:53:24,923 --> 01:53:28,283
+And it needs to calculate the similarities between all points.
+
+861
+01:53:29,443 --> 01:53:31,923
+However, we will see other algorithms.
+
+862
+01:53:32,503 --> 01:53:37,184
+In those algorithms, we don't have to do this.
+
+863
+01:53:37,623 --> 01:53:44,703
+What we will do is we will create a model, and for every item on the test set, we'll only compare to the model.
+
+864
+01:53:45,724 --> 01:53:47,764
+We don't need to go to the training set again.
+
+865
+01:53:48,307 --> 01:54:08,027
+Okay, in the k-near sabör, we have to check all the training set items, but in the other models, we only need to compare to the model. We don't need to go to a training set. That's why there's a difference between them, lazy learner and the other algorithms.
+
+866
+01:54:09,627 --> 01:54:15,287
+Okay, [öğrenci], you said we can use k-means for this problem. Which problem? Can you tell me again?
+
+867
+01:54:15,712 --> 01:54:16,712
+Neyi kaybetti mi?
+
+868
+01:54:16,712 --> 01:54:23,712
+Tüm hepsiyle kontrolleri yapmamak için, tüm kontrolüne kaçınmak için.
+
+869
+01:54:23,712 --> 01:54:25,712
+Bu nasıl yapabiliriz?
+
+870
+01:54:25,712 --> 01:54:28,712
+Bir gruplama yapıyorduk hocam.
+
+871
+01:54:28,712 --> 01:54:38,712
+10 tanesi veya en yakın olanların ortasına bir merkez nokta belirleyip, 10'a yakınlığını kontrol ediyorduk diye hatırlıyorum.
+
+872
+01:54:38,712 --> 01:54:40,712
+Bu iyi bir soru [öğrenci], evet.
+
+873
+01:54:41,619 --> 01:54:46,619
+[öğrenci] says, why don't we just use k-means first to create...
+
+874
+01:54:46,836 --> 01:54:53,836
+ve
+
+875
+01:55:14,836 --> 01:55:41,484
+ve bu şekilde birçok birçok
+
+876
+01:55:43,891 --> 01:56:00,832
+Okay, so let's not give a break and let's have a combined session for this one. I will talk about the decision tree. We'll probably not going to finish it today, but we'll continue next week on this entry.
+
+877
+01:56:00,832 --> 01:56:10,391
+But we'll probably going to have another 30 minutes to cover decision tree without giving a break, if that's okay.
+
+878
+01:56:11,475 --> 01:56:17,395
+Ok, so let's continue with the second classification algorithm, which is decision tree.
+
+879
+01:56:18,115 --> 01:56:27,295
+Decision tree is a very useful algorithm, and many classification algorithm uses decision tree in the background.
+
+880
+01:56:27,295 --> 01:56:37,615
+For instance, all the boosting algorithms, xvboost, catboost, gradient boosting, edaboost, they all use decision tree logic.
+
+881
+01:56:38,195 --> 01:57:04,076
+bu da
+
+882
+01:57:04,787 --> 01:57:29,967
+Bu, bu
+
+883
+01:57:29,967 --> 01:57:33,967
+ama 3-gurup, gerilmiş kuralları, gerilmiş kuralları, gerilmiş kuralları.
+
+884
+01:57:33,967 --> 01:57:40,807
+Root is the top one, ve root is an attribute.
+
+885
+01:57:40,807 --> 01:57:43,807
+It represents an attribute in our dataset.
+
+886
+01:57:43,807 --> 01:57:52,167
+And these nodes, the internal nodes we say, are representing the attributes.
+
+887
+01:57:52,167 --> 01:57:55,768
+This is representing this attribute, this is representing that attribute.
+
+888
+01:57:56,659 --> 01:58:05,039
+The leaf nodes, the very bottom ones, are the classes. They represent the class labels, decision points.
+
+889
+01:58:05,899 --> 01:58:13,340
+The root and internal nodes of a decision tree are representation of attributes.
+
+890
+01:58:13,760 --> 01:58:17,220
+The leaf nodes are the representation of the class labels.
+
+891
+01:58:17,819 --> 01:58:17,899
+Okay.
+
+892
+01:58:18,500 --> 01:58:22,899
+And we start from the root, we go through the leaf node.
+
+893
+01:58:23,119 --> 01:58:29,340
+Until we reach a leaf node, we keep decisions and follow the decision points.
+
+894
+01:58:30,579 --> 01:58:33,380
+Decision tree is a very simple example.
+
+895
+01:58:34,300 --> 01:58:40,319
+For the same data, we can have multiple decision trees that may not be identical.
+
+896
+01:58:41,011 --> 01:58:46,771
+So from the same data, we can also have different tree using the same data.
+
+897
+01:58:47,331 --> 01:58:52,971
+Because when we choose training set, we randomly select.
+
+898
+01:58:53,671 --> 01:58:54,511
+We randomly select.
+
+899
+01:58:54,971 --> 01:59:01,112
+And because of the random selection, training set may choose some different examples to create a tree.
+
+900
+01:59:01,112 --> 01:59:04,831
+So every example may have a different representation of the tree.
+
+901
+01:59:05,203 --> 01:59:07,203
+Bu bir şey değil, bu bir şey değil.
+
+902
+01:59:07,203 --> 01:59:10,203
+Bir şey değil, daha fazla bir şey değil.
+
+903
+01:59:10,203 --> 01:59:17,203
+Bu bir şey değil.
+
+904
+01:59:17,203 --> 01:59:21,203
+Bu bir training ve testing setiplerin.
+
+905
+01:59:21,203 --> 01:59:23,203
+Bu bir şey değil.
+
+906
+01:59:23,203 --> 01:59:26,203
+Bir bir şey değil.
+
+907
+01:59:26,203 --> 01:59:29,203
+Bu bir training setiplerin.
+
+908
+01:59:29,203 --> 01:59:31,203
+Bu bir model.
+
+909
+01:59:31,456 --> 01:59:36,456
+ve bu training set ve test bu test set.
+
+910
+01:59:36,456 --> 01:59:41,456
+However, it is very easy to test using decision tree.
+
+911
+01:59:41,456 --> 01:59:43,456
+Let me give you an example.
+
+912
+01:59:43,456 --> 01:59:47,456
+Assumem, we created this particular decision tree,
+
+913
+01:59:47,456 --> 01:59:50,456
+using training set, and this is a test set.
+
+914
+01:59:50,456 --> 01:59:55,456
+So, this is like Mehmet, Mehmet, I don't know whether this guy is going to cheat or not.
+
+915
+01:59:55,456 --> 01:59:59,340
+I want to know whether he is going to cheat or not.
+
+916
+01:59:59,475 --> 02:00:00,475
+Evet, evet, o no.
+
+917
+02:00:01,075 --> 02:00:09,915
+I need to make a decision, but as opposed to k-NN, we don't need to compare anything to the dataset.
+
+918
+02:00:10,175 --> 02:00:14,075
+We only need to compare this test set to this model.
+
+919
+02:00:15,395 --> 02:00:20,595
+So what I'm going to do is I'm going to start from the attribute at the top, which is the root node.
+
+920
+02:00:21,235 --> 02:00:23,515
+So I'm checking the refund of this Ahmet.
+
+921
+02:00:24,435 --> 02:00:26,875
+And it seems like he doesn't take a refund.
+
+922
+02:00:27,444 --> 02:00:32,824
+Çünkü, çünkü, he is not taking refund, I need to go from the no case.
+
+923
+02:00:32,824 --> 02:00:34,224
+So, we follow the no.
+
+924
+02:00:35,404 --> 02:00:37,704
+We haven't reached a leaf node yet.
+
+925
+02:00:38,003 --> 02:00:39,204
+This is an internal node.
+
+926
+02:00:39,623 --> 02:00:41,364
+So, we don't have a decision yet.
+
+927
+02:00:41,484 --> 02:00:46,564
+So, we check this attribute, whether this guy is married or not.
+
+928
+02:00:47,423 --> 02:00:48,904
+So, this guy is married.
+
+929
+02:00:49,384 --> 02:00:52,083
+So, we are going to have to follow this path.
+
+930
+02:00:52,532 --> 02:00:56,011
+Okay, now we are ended in a leaf note.
+
+931
+02:00:57,091 --> 02:01:03,351
+Because we reached a leaf note, there is no reason for checking the third attribute, because we already have a decision.
+
+932
+02:01:03,992 --> 02:01:08,731
+This means that Ahmed, this guy, is not going to cheat.
+
+933
+02:01:09,251 --> 02:01:14,331
+He's not going to cheat the government in his loan or something like that.
+
+934
+02:01:14,671 --> 02:01:16,851
+So now we label this as a note.
+
+935
+02:01:18,291 --> 02:01:20,051
+So we only had to choose.
+
+936
+02:01:20,435 --> 02:01:24,435
+Bu bir şeyde bir şeyde.
+
+937
+02:01:24,435 --> 02:01:46,435
+Bir şeyde.
+
+938
+02:01:46,868 --> 02:01:50,868
+Bu, bu model olarak bu model olarak nasıl bir model olarak yapabileceğimiz?
+
+939
+02:01:50,868 --> 02:01:58,868
+Bu, bu model olarak nasıl birçok yapacağımız var?
+
+940
+02:02:00,692 --> 02:02:02,952
+There are many algorithms for decision-treats.
+
+941
+02:02:04,391 --> 02:02:13,771
+They are mostly similar, minor differences exist, but there are Hans algorithm, it's one of the earliest examples.
+
+942
+02:02:14,891 --> 02:02:20,971
+Recently, CARF algorithm, ID3, C45, Flick, Slick, or Sprint.
+
+943
+02:02:21,072 --> 02:02:24,032
+There are many examples, but they are usually very similar.
+
+944
+02:02:24,891 --> 02:02:27,891
+They use entropy or they use...
+
+945
+02:02:28,368 --> 02:02:34,408
+Gini, some of them use classification error, so there are some minor differences.
+
+946
+02:02:35,408 --> 02:02:42,488
+Let's see an example on the Hunt algorithm. Hunt algorithm is very straightforward.
+
+947
+02:02:42,488 --> 02:02:54,768
+It says, okay, once we have, this is our training set, this is our training set, at the beginning of the training set, we have some no classes.
+
+948
+02:02:57,395 --> 02:02:59,076
+ve some yes class.
+
+949
+02:03:00,435 --> 02:03:12,475
+So if I randomly choose a guy, x, there are some attributes, no, single, 60, I don't know what the class is going to be.
+
+950
+02:03:13,055 --> 02:03:17,055
+If I just say yes or no, I may still have error.
+
+951
+02:03:17,055 --> 02:03:19,775
+And if I choose no,
+
+952
+02:03:21,876 --> 02:03:24,796
+Bu sorunlar, daha fazla sorunlar var.
+
+953
+02:03:24,796 --> 02:03:26,916
+Ama bu sorunlar var.
+
+954
+02:03:26,916 --> 02:03:32,476
+Bu sorunlar, bu sorunlar var.
+
+955
+02:03:32,476 --> 02:03:39,476
+Bu sorunlar, 10 yes ve 10 no.
+
+956
+02:03:39,476 --> 02:03:47,876
+Bu sorunlar, bu sorunlar var.
+
+957
+02:03:49,043 --> 02:03:57,944
+10 out of 20, 50% error. I can choose yes or no, and you might have 50% error rate.
+
+958
+02:03:59,184 --> 02:04:07,003
+But if I divide this by an attribute, let's say attribute 1, refund, and I have this distribution.
+
+959
+02:04:09,624 --> 02:04:15,944
+I have 9 yeses, and I have...
+
+960
+02:04:16,180 --> 02:04:23,140
+5, let's say, 10, 10, no.
+
+961
+02:04:24,920 --> 02:04:30,619
+Okay, let me just, okay, let me.
+
+962
+02:04:34,131 --> 02:04:47,351
+Do it again. Okay. So I have 10 yes, 10 no at the beginning. After division, we have 9 yes and 2 no's.
+
+963
+02:04:48,711 --> 02:04:56,112
+We have here 1 yes and we have 8 no's. Okay.
+
+964
+02:04:57,332 --> 02:05:03,051
+If we have to make a decision on this one, we have some yeses and some noes.
+
+965
+02:05:03,171 --> 02:05:04,752
+So we cannot really make a decision.
+
+966
+02:05:04,752 --> 02:05:07,231
+We can make, but we still have an error.
+
+967
+02:05:08,152 --> 02:05:09,572
+We divide it again.
+
+968
+02:05:10,231 --> 02:05:12,992
+This is A1, another attribute, A2.
+
+969
+02:05:13,551 --> 02:05:19,471
+And in this example, I noticed that we have eight yeses.
+
+970
+02:05:19,792 --> 02:05:20,511
+There's no no.
+
+971
+02:05:21,268 --> 02:05:25,108
+ve 1 yes ve 2 no.
+
+972
+02:05:26,307 --> 02:05:29,908
+Do we still need to divide this again by another attribute?
+
+973
+02:05:33,028 --> 02:05:38,708
+Not really, right? Because if anything that comes in here, we exactly make sure that this is yes.
+
+974
+02:05:40,228 --> 02:05:44,708
+So I don't need to divide this again because it's homogeneous.
+
+975
+02:05:47,956 --> 02:05:50,956
+bu bir yasın alın.
+
+976
+02:05:50,956 --> 02:05:57,956
+Bu, bu yasın alın.
+
+977
+02:05:57,956 --> 02:05:59,956
+Ama bu yasın alın.
+
+978
+02:05:59,956 --> 02:06:03,956
+Bu, bu yasın alın.
+
+979
+02:06:03,956 --> 02:06:05,956
+Bu, yasın alın.
+
+980
+02:06:05,956 --> 02:06:10,604
+Bu, bu yasın alın.
+
+981
+02:06:10,644 --> 02:06:13,963
+Bu bir yes ve 8 no's.
+
+982
+02:06:13,963 --> 02:06:17,224
+Bu bir şey için bir yes ve 8 no's.
+
+983
+02:06:17,224 --> 02:06:20,344
+Bu bir şey için bir yes.
+
+984
+02:06:20,344 --> 02:06:34,220
+Bu bir şey yok.
+
+985
+02:06:34,323 --> 02:06:38,403
+We don't need to do anything else because we have decision points here.
+
+986
+02:06:38,543 --> 02:06:40,263
+Anything that comes in here, there's no.
+
+987
+02:06:40,683 --> 02:06:41,943
+Anything comes here is yes.
+
+988
+02:06:42,163 --> 02:06:44,283
+Anything comes here, no, and yes, and so on.
+
+989
+02:06:44,823 --> 02:06:46,803
+We have a fully grown tree.
+
+990
+02:06:47,583 --> 02:06:50,803
+Okay, that's basically how Hunt's algorithm is working.
+
+991
+02:06:51,443 --> 02:06:54,963
+So Hunt's algorithm says, if you have...
+
+992
+02:06:57,963 --> 02:07:00,103
+Okay, there's a question.
+
+993
+02:07:01,684 --> 02:07:02,684
+[öğrenci]'in.
+
+994
+02:07:10,163 --> 02:07:34,503
+You mean like yes or no? It doesn't have to be yes or no, [öğrenci], if that's your question. It can have different values. Yes, for instance, like colors or different animals as a classification, cat, dog, maybe elephant or cow. It can have multiple. This is a simple example. That's why it's yes or no. Okay.
+
+995
+02:07:35,123 --> 02:07:37,764
+But decision tree can have many labels.
+
+996
+02:07:39,684 --> 02:07:40,984
+Let's see this example.
+
+997
+02:07:41,703 --> 02:07:42,743
+This is Hunt algorithm.
+
+998
+02:07:42,944 --> 02:07:45,564
+At the beginning, I'm using refund to make decision.
+
+999
+02:07:46,064 --> 02:07:48,903
+So if you go to refunds, there are some yeses.
+
+1000
+02:07:48,903 --> 02:07:49,844
+Okay.
+
+1001
+02:07:54,547 --> 02:07:56,087
+Evet, bu bir example.
+
+1002
+02:07:56,087 --> 02:08:02,368
+Bir sonraki bir örnek olarak.
+
+1003
+02:08:03,207 --> 02:08:19,667
+Bir örnek olarak.
+
+1004
+02:08:20,020 --> 02:08:21,340
+All of them are no, sorry.
+
+1005
+02:08:21,739 --> 02:08:23,239
+No, it means that no cheating.
+
+1006
+02:08:24,300 --> 02:08:26,739
+Okay, so we don't need to divide this again.
+
+1007
+02:08:27,159 --> 02:08:28,940
+If there is a refund, that's yes.
+
+1008
+02:08:29,480 --> 02:08:32,079
+We can make sure that this is always no.
+
+1009
+02:08:32,399 --> 02:08:34,760
+We don't need to do that division again.
+
+1010
+02:08:35,560 --> 02:08:37,239
+Look at the refund no's.
+
+1011
+02:08:37,380 --> 02:08:38,340
+There's a refund no.
+
+1012
+02:08:38,960 --> 02:08:39,800
+Result is no.
+
+1013
+02:08:39,940 --> 02:08:40,840
+There's a refund no.
+
+1014
+02:08:41,040 --> 02:08:41,280
+No.
+
+1015
+02:08:41,760 --> 02:08:44,440
+There's a refund no, but there's a plus yes.
+
+1016
+02:08:44,979 --> 02:09:07,435
+Bu, bu
+
+1017
+02:09:08,083 --> 02:09:23,503
+Let's look at all the refund no's and marital status as married. Refund is no, married. Result is no. Refund is no, married. Result is no. Refund is married, no and married.
+
+1018
+02:09:24,163 --> 02:09:34,623
+All the entries that have refund as no and married, the result is no as well. There's no need to divide this again also.
+
+1019
+02:09:35,412 --> 02:09:39,652
+But let's look at refund is no and marital status, single or divorce.
+
+1020
+02:09:40,112 --> 02:09:42,192
+Refund is no and it is single.
+
+1021
+02:09:42,731 --> 02:09:43,632
+Result is no.
+
+1022
+02:09:44,292 --> 02:09:46,192
+Refund is no, divorce and yes.
+
+1023
+02:09:47,032 --> 02:09:48,212
+So it is not pure.
+
+1024
+02:09:48,311 --> 02:09:49,092
+It is not homogeneous.
+
+1025
+02:09:49,332 --> 02:09:51,532
+We have to divide this again with something else.
+
+1026
+02:09:51,992 --> 02:09:52,271
+Okay.
+
+1027
+02:09:52,692 --> 02:09:54,792
+I'm just going to use the third attribute.
+
+1028
+02:09:57,952 --> 02:09:59,971
+Now for the remaining item.
+
+1029
+02:10:00,000 --> 02:10:22,604
+Bu, bu
+
+1030
+02:10:22,899 --> 02:10:38,279
+Let's see another example. Refund is no, divorced, and it is greater than 80%. In this case, it is yes. Refund is no, it's single, 85%. It's greater than 80%. It is yes. And the last one is also yes.
+
+1031
+02:10:38,519 --> 02:10:49,079
+So now we are done. Everything that comes in here is yes. Everything that goes here is no. This is no. This is no. So our tree is fully grown. There is nothing else to do.
+
+1032
+02:10:49,908 --> 02:10:54,908
+Bu, bu, HUNT algoritma.
+
+1033
+02:10:55,796 --> 02:11:12,235
+Hande algoritmı simply uses the purity or homogeneity or heterogeneity to decide whether this classification box is containing single label or not.
+
+1034
+02:11:12,456 --> 02:11:16,716
+If it is not using a single label, then it divides using another attribute.
+
+1035
+02:11:17,076 --> 02:11:19,076
+If it's a single label, there's nothing else to do.
+
+1036
+02:11:19,195 --> 02:11:19,935
+It moves on.
+
+1037
+02:11:19,935 --> 02:11:20,615
+Okay.
+
+1038
+02:11:21,492 --> 02:11:25,492
+The nice thing about decision 3 is that we can use...
+
+1039
+02:11:25,775 --> 02:11:31,615
+Categorical variables, we can use numerical variables, we can use ordinal, nominal, continuous,
+
+1040
+02:11:32,496 --> 02:11:39,775
+we can use two-way splits or three-way splits, no problem, okay? Decision trees can use
+
+1041
+02:11:40,895 --> 02:11:48,815
+ordinal values such as categorical variables that can be ordered, it can use nominal variables,
+
+1042
+02:11:48,815 --> 02:11:51,136
+it can use discrete or continuous variables.
+
+1043
+02:11:52,243 --> 02:12:20,107
+Bu, bu
+
+1044
+02:12:20,467 --> 02:12:28,307
+or the another class and so on or it can be a binary decision point this example so this is
+
+1045
+02:12:29,747 --> 02:12:39,167
+We can have different classes. This is class one, for instance. Anything smaller than 40 is this label.
+
+1046
+02:12:39,727 --> 02:12:45,507
+Anything between 10,025, anything 25 to 50 is another option.
+
+1047
+02:12:45,507 --> 02:12:50,507
+So we can use discrete results or in our example, we can...
+
+1048
+02:12:51,252 --> 02:12:55,632
+Bu konferinçli birçok birçok birçok birçok.
+
+1049
+02:12:55,632 --> 02:12:58,372
+Evet, bu konferinçli birçok.
+
+1050
+02:12:59,372 --> 02:13:17,731
+Bu konferinçli birçok.
+
+1051
+02:13:18,163 --> 02:13:19,663
+Let me give this example.
+
+1052
+02:13:21,063 --> 02:13:28,143
+Assume that we have, this is A, this is B, and this is C.
+
+1053
+02:13:29,363 --> 02:13:37,663
+So, we don't know the name of the attribute, so I'm just going to name it ABC.
+
+1054
+02:13:38,804 --> 02:13:45,283
+At the beginning, what I know is they all have 10 yes and 10 no.
+
+1055
+02:13:46,452 --> 02:14:12,684
+Bu, bu
+
+1056
+02:14:13,524 --> 02:14:14,364
+What do you think?
+
+1057
+02:14:17,971 --> 02:14:24,108
+Bu bir şey daha
+
+1058
+02:14:29,587 --> 02:14:32,907
+[öğrenci], B.
+
+1059
+02:14:34,907 --> 02:14:37,847
+Any other comments or ideas?
+
+1060
+02:14:38,007 --> 02:14:39,148
+What about A or C?
+
+1061
+02:14:44,979 --> 02:14:47,979
+[öğrenci] says A might be better.
+
+1062
+02:14:48,859 --> 02:14:49,699
+Anybody else?
+
+1063
+02:15:02,195 --> 02:15:07,195
+Bu ne?
+
+1064
+02:15:19,123 --> 02:15:23,444
+So, at the lower levels it may be better, but for top it's not good, why not?
+
+1065
+02:16:03,699 --> 02:16:06,940
+At the beginning, we don't have a clear decision point, right?
+
+1066
+02:16:06,980 --> 02:16:11,079
+We want to divide it so that we can make better decisions or easier decision.
+
+1067
+02:16:11,699 --> 02:16:16,619
+So how does this splitting help with that in general?
+
+1068
+02:16:16,619 --> 02:16:22,239
+So maybe you can use that idea to choose whether A or B or C might be better.
+
+1069
+02:16:24,320 --> 02:16:27,920
+Okay, let me draw this on the board. Maybe it may help.
+
+1070
+02:16:28,659 --> 02:16:29,079
+Okay.
+
+1071
+02:16:29,779 --> 02:16:32,459
+There's more space on there too.
+
+1072
+02:16:34,020 --> 02:16:34,419
+Okay.
+
+1073
+02:16:36,500 --> 02:16:37,399
+Let me
+
+1074
+02:16:37,399 --> 02:16:39,840
+put it on here.
+
+1075
+02:16:43,507 --> 02:16:47,688
+Let me illustrate this on the board.
+
+1076
+02:17:13,139 --> 02:17:19,459
+Originally, we have 10 yes and 10 no.
+
+1077
+02:17:20,459 --> 02:17:22,759
+Okay, this is the same for all cases.
+
+1078
+02:17:23,439 --> 02:17:25,520
+I'm just going to use attribute A.
+
+1079
+02:17:27,420 --> 02:17:34,139
+But instead of using yes or no, I will just use plus and minus for representation.
+
+1080
+02:17:34,719 --> 02:17:36,020
+There's 10 pluses.
+
+1081
+02:17:40,211 --> 02:17:41,671
+ve 10-minuses.
+
+1082
+02:18:05,620 --> 02:18:11,320
+On this right hand side it has 6 minuses and 4 pluses.
+
+1083
+02:18:12,320 --> 02:18:14,320
+Okay, this is what A does.
+
+1084
+02:18:17,320 --> 02:18:19,120
+Let's put the B again.
+
+1085
+02:18:19,320 --> 02:18:21,320
+I'm just going to use B again.
+
+1086
+02:18:22,620 --> 02:18:26,420
+But what I'm going to do is I will use these boxes.
+
+1087
+02:18:28,120 --> 02:18:32,420
+The first box is using 1 plus.
+
+1088
+02:18:33,332 --> 02:18:40,332
+3-, 2-, 2-, 8-,
+
+1089
+02:18:44,531 --> 02:19:11,979
+ve 3.0.
+
+1090
+02:19:13,012 --> 02:19:14,012
+1
+
+1091
+02:19:14,012 --> 02:19:18,092
+This is negative
+
+1092
+02:19:18,092 --> 02:19:20,731
+This is positive
+
+1093
+02:19:27,188 --> 02:19:32,188
+20
+
+1094
+02:19:32,188 --> 02:19:33,188
+decision
+
+1095
+02:19:33,188 --> 02:19:35,188
+points
+
+1096
+02:19:35,188 --> 02:19:36,188
+20
+
+1097
+02:19:36,188 --> 02:19:37,188
+leap
+
+1098
+02:19:37,188 --> 02:19:38,188
+nodes
+
+1099
+02:19:38,188 --> 02:19:39,188
+ok
+
+1100
+02:19:39,188 --> 02:19:40,188
+now based on that
+
+1101
+02:19:40,188 --> 02:19:44,188
+why is
+
+1102
+02:19:44,188 --> 02:19:46,188
+c is better
+
+1103
+02:19:46,188 --> 02:19:48,188
+or why c is not good
+
+1104
+02:19:55,700 --> 02:19:58,140
+Bu bir şeyin iyi bir şeyin?
+
+1105
+02:19:58,440 --> 02:20:03,100
+C'etim?
+
+1106
+02:20:11,924 --> 02:20:34,644
+T is not good, right? T is not good. For some reason, T is not good. Normally, what it makes is, it makes it single item. Now we have clear decision, right? We can say it is plus, this is minus, this is plus, this is minus. We can clearly make that decision. But there's something that we don't know, we don't like it. What is that reason?
+
+1107
+02:20:40,724 --> 02:21:07,852
+...
+
+1108
+02:21:08,755 --> 02:21:10,755
+Takti, bu da devizyon.
+
+1109
+02:21:10,755 --> 02:21:16,755
+So, everything is a unique value.
+
+1110
+02:21:16,755 --> 02:21:21,755
+So, there's nothing more than one of them in each box.
+
+1111
+02:21:21,755 --> 02:21:27,755
+Meaning that, do we have any generalizability?
+
+1112
+02:21:27,755 --> 02:21:31,755
+It's not good. It's not good.
+
+1113
+02:21:31,755 --> 02:21:35,243
+Because it doesn't group. What is the two reasons?
+
+1114
+02:21:49,268 --> 02:21:51,268
+We want to make generalize...
+
+1115
+02:21:55,956 --> 02:21:57,056
+decisions, right?
+
+1116
+02:21:59,295 --> 02:22:01,615
+We want to make generalized decisions.
+
+1117
+02:22:02,736 --> 02:22:16,595
+So, such as, we can say, okay, all the people age 20 to 40 who are married do not make cheating or do not make, you know, they pay their taxes.
+
+1118
+02:22:17,376 --> 02:22:20,876
+We want to make this grouping or generalized liberty.
+
+1119
+02:22:22,579 --> 02:22:26,920
+Otherwise, there's no point of making prediction, right?
+
+1120
+02:22:27,040 --> 02:22:37,860
+If everybody is different, there's no point of making prediction at all, because we cannot make a generalized assumption about the word, okay?
+
+1121
+02:22:38,279 --> 02:22:40,860
+It's like using Turkish...
+
+1122
+02:22:41,523 --> 02:22:43,523
+İdentik numar.
+
+1123
+02:22:43,523 --> 02:22:45,523
+Everybody is unique.
+
+1124
+02:22:45,523 --> 02:22:51,523
+Can you use any unique identity data for prediction?
+
+1125
+02:22:51,523 --> 02:22:52,523
+You cannot.
+
+1126
+02:22:52,523 --> 02:22:53,523
+It doesn't make any sense.
+
+1127
+02:22:53,523 --> 02:23:01,523
+That's why we don't use any unique attributes in predictions.
+
+1128
+02:23:01,523 --> 02:23:03,523
+We never use that.
+
+1129
+02:23:03,523 --> 02:23:08,523
+That's why in data pre-processing we delete all the account numbers.
+
+1130
+02:23:08,816 --> 02:23:19,576
+Türkçe'lindikal numbers, or any primary keys from analysis, because it doesn't make any help. It doesn't really help to the prediction.
+
+1131
+02:23:19,576 --> 02:23:27,956
+This is that case, because we have 20 items and 20 different unique cases. So we should eliminate this at the beginning.
+
+1132
+02:23:28,736 --> 02:23:33,676
+The second purpose of prediction is accuracy. We want to make...
+
+1133
+02:23:35,028 --> 02:23:46,028
+Bu yüzden bu
+
+1134
+02:23:46,028 --> 02:24:00,028
+Bu
+
+1135
+02:24:11,059 --> 02:24:16,680
+Let me give you more clue. Assume that I have an x in here.
+
+1136
+02:24:18,459 --> 02:24:28,700
+If you were to make decision on the class of x, what is the chance of choosing, what is the probability of getting it right?
+
+1137
+02:24:33,520 --> 02:24:38,520
+Bu
+
+1138
+02:24:32,788 --> 02:25:00,236
+Bu ne kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da
+
+1139
+02:25:04,531 --> 02:25:05,531
+60%.
+
+1140
+02:25:05,531 --> 02:25:10,411
+What is the probability of this x being minus?
+
+1141
+02:25:10,411 --> 02:25:13,751
+60% again.
+
+1142
+02:25:13,751 --> 02:25:17,531
+So the total is 60%.
+
+1143
+02:25:17,531 --> 02:25:20,971
+At the beginning I had 10%.
+
+1144
+02:25:20,971 --> 02:25:23,471
+It somewhat improves.
+
+1145
+02:25:23,471 --> 02:25:29,851
+From 60%, we only originally had 50%, 10% improvement.
+
+1146
+02:25:31,283 --> 02:25:52,492
+Bu, bu
+
+1147
+02:25:56,691 --> 02:26:01,971
+75% değil mi? 3 over 4. 75%
+
+1148
+02:26:01,971 --> 02:26:03,811
+Bu ne kadar iyi.
+
+1149
+02:26:03,811 --> 02:26:05,771
+Bu durumda bu durumda?
+
+1150
+02:26:09,459 --> 02:26:13,259
+8 over 8, 100%.
+
+1151
+02:26:13,259 --> 02:26:16,000
+In this case,
+
+1152
+02:26:20,628 --> 02:26:26,128
+7,8% ile 0, %90.
+
+1153
+02:26:29,128 --> 02:26:34,128
+Overall, %91.
+
+1154
+02:26:37,128 --> 02:26:42,128
+There is a huge improvement from 50% to 91% confidence.
+
+1155
+02:26:43,283 --> 02:26:45,283
+Bu, büyük bir işe yarım.
+
+1156
+02:26:45,283 --> 02:26:49,283
+Çünkü, bu işe yarım yapmak için bir işe yarım.
+
+1157
+02:26:49,283 --> 02:26:52,283
+Bu, bu işe yarım.
+
+1158
+02:26:52,283 --> 02:26:55,283
+Bu, sadece 1-1.
+
+1159
+02:26:55,283 --> 02:27:08,283
+Bu, bu işe yarım.
+
+1160
+02:27:09,332 --> 02:27:57,708
+Bu, bu
+
+1161
+02:28:01,268 --> 02:28:02,268
+Error.
+
+1162
+02:28:02,268 --> 02:28:04,808
+These are commonly used metrics.
+
+1163
+02:28:04,808 --> 02:28:11,867
+Let's first talk about Gini, one second, and we will finish the lecture today.
+
+1164
+02:28:11,867 --> 02:28:15,207
+Gini is a simple metric.
+
+1165
+02:28:15,207 --> 02:28:18,028
+What it does is it calculates.
+
+1166
+02:28:18,028 --> 02:28:25,948
+How do we choose which algorithm to go first is we calculate the Gini at the beginning and
+
+1167
+02:28:28,084 --> 02:28:30,084
+Çalışın nöresi.
+
+1168
+02:28:53,012 --> 02:29:18,368
+Bu, bu
+
+1169
+02:29:18,368 --> 02:29:20,368
+Gini'in
+
+1170
+02:29:20,368 --> 02:29:24,368
+metriği, a mathematical representation,
+
+1171
+02:29:24,368 --> 02:29:29,368
+it measures internal homogeneity, or purity.
+
+1172
+02:29:29,368 --> 02:29:32,368
+And that's simply 1 minus
+
+1173
+02:29:34,368 --> 02:29:35,368
+probability
+
+1174
+02:29:36,368 --> 02:29:37,368
+Ti
+
+1175
+02:29:39,368 --> 02:29:40,368
+1 to n.
+
+1176
+02:29:41,368 --> 02:29:42,368
+And
+
+1177
+02:29:42,672 --> 02:30:09,632
+Let's give an example. We have this example. It is 0 and 6. 0 yes, 6 no. So the genie becomes this. 1 minus probability estimation is, for yeses, it is 0 over 6 squared plus,
+
+1178
+02:30:11,219 --> 02:30:12,879
+6 over 6.
+
+1179
+02:30:18,388 --> 02:30:28,888
+ve bu, 1-0², ve bu, 1-0², ve bu, 0.
+
+1180
+02:30:46,995 --> 02:30:48,755
+3, 3 yes, 3 no.
+
+1181
+02:30:49,716 --> 02:30:51,435
+Let's calculate Gini for that.
+
+1182
+02:30:52,155 --> 02:30:53,655
+So 3 yes, 3 no.
+
+1183
+02:30:54,716 --> 02:30:58,095
+Gini becomes 1 minus probability distribution.
+
+1184
+02:31:00,575 --> 02:31:08,575
+It is 3 divided by 6 square plus 3 divided by 6 square.
+
+1185
+02:31:09,355 --> 02:31:12,955
+This is 1 minus, this is 1 over 2 square.
+
+1186
+02:31:14,260 --> 02:31:22,200
+1 over 4, minus 1 over 4, that is 1 minus 1 over 2, that is 1 over 2, that is 0.5.
+
+1187
+02:31:23,020 --> 02:31:29,360
+Okay, so Gini is a value between 0 and 0.5.
+
+1188
+02:31:30,180 --> 02:31:39,100
+When it is 0 or minimum, this is the case when it is entirely homogeneous, meaning that everything is yes or everything is no.
+
+1189
+02:31:40,371 --> 02:32:04,491
+Bu, bu
+
+1190
+02:32:04,659 --> 02:32:08,059
+Biz de bu konuda devam edecek.
+
+1191
+02:32:08,380 --> 02:32:09,979
+Ve sonraki videoda görüşmek üzere.
+
+1192
+02:32:10,299 --> 02:32:12,159
+Ama bu konuda, ne sorunlarınızı?
+
+1193
+02:32:12,159 --> 02:32:13,260
+Bir sorunlarınızı?
+
+1194
+02:32:14,780 --> 02:32:21,036
+Sorunlarınızı?
+
+1195
+02:32:24,884 --> 02:32:38,443
+Okay, seems like there's no questions. Let's finish for today. Okay, thank you [öğrenci]. We will continue from here next week. Until then, take care. Have a good weekend. Bye-bye.
+
+1196
+02:32:39,824 --> 02:32:40,443
+Görüşürüz arkadaşlar.

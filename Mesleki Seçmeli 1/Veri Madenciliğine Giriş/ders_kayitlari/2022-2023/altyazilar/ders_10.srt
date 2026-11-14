@@ -1,0 +1,2711 @@
+1
+00:00:07,379 --> 00:00:09,279
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:15,476 --> 00:00:17,356
+Tamamdır. Teşekkürler. Hoş geldiniz.
+
+3
+00:00:19,135 --> 00:00:23,356
+Şimdi iki saniye sonra başlarız.
+
+4
+00:01:09,075 --> 00:01:11,435
+Tamam, espero que everyone is doing well.
+
+5
+00:01:16,787 --> 00:01:20,367
+Let's get started. Let me share my screen.
+
+6
+00:01:30,004 --> 00:01:32,804
+Ok. I will see my screen.
+
+7
+00:01:39,700 --> 00:01:40,840
+Evet, professor.
+
+8
+00:01:41,340 --> 00:01:42,379
+Evet, teşekkür ederim.
+
+9
+00:01:48,200 --> 00:01:50,200
+So, welcome to the lecture.
+
+10
+00:01:50,520 --> 00:01:53,280
+Today we will continue on our discussion.
+
+11
+00:01:54,200 --> 00:02:00,219
+And we, for the last couple of weeks, we discussed different algorithms.
+
+12
+00:02:00,219 --> 00:02:05,300
+And especially we focused on classification.
+
+13
+00:02:06,355 --> 00:02:13,355
+ve
+
+14
+00:02:33,599 --> 00:02:57,067
+Bu, şimdi, birçok bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir soru ile ilgili bir
+
+15
+00:02:57,364 --> 00:03:06,364
+In the classification algorithms, we noticed that all these methods have a similar...
+
+16
+00:03:07,219 --> 00:03:14,180
+ve aynı zamanda, pre-processi ve aynı zamanda, pre-procesi approach.
+
+17
+00:03:14,180 --> 00:03:20,019
+So, in order to predict, we had to divide data into training and testing.
+
+18
+00:03:20,019 --> 00:03:29,460
+And in training, we had labels that we display or demonstrate to the model, and model learns from the data labels.
+
+19
+00:03:30,804 --> 00:03:36,604
+Ve de kvalitli olarak,
+
+20
+00:03:36,604 --> 00:03:39,723
+ve de model olarak,
+
+21
+00:03:39,723 --> 00:03:44,524
+ile dekdelerde dekdelerde dekdelerde.
+
+22
+00:03:44,524 --> 00:03:50,723
+Bu, bu iki-fase bir süperçüde.
+
+23
+00:03:51,572 --> 00:03:57,692
+On the other hand, clustering analysis, we don't require data labeling.
+
+24
+00:03:57,692 --> 00:04:03,891
+In other sense, this process is only descriptive.
+
+25
+00:04:03,891 --> 00:04:07,252
+So there's no prediction in cluster analysis.
+
+26
+00:04:07,252 --> 00:04:15,972
+We use the clustering analysis to describe the inner patterns within the data.
+
+27
+00:04:16,084 --> 00:04:43,531
+Bu da bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir
+
+28
+00:05:06,036 --> 00:05:08,036
+Evet, sorry for the interruption.
+
+29
+00:05:09,316 --> 00:05:14,995
+So, let's discuss what is a cluster or what is the point of clustering.
+
+30
+00:05:16,036 --> 00:05:23,475
+We will see different types of algorithms used in clustering, but let's first observe what is a cluster.
+
+31
+00:05:25,235 --> 00:05:31,556
+In a dataset, it is possible that some observations or some
+
+32
+00:05:32,896 --> 00:05:57,644
+Bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri, bir şeyleri
+
+33
+00:05:57,812 --> 00:06:03,411
+So, if I show you this graphics, you are probably going to have the same answer.
+
+34
+00:06:03,831 --> 00:06:05,192
+We have three groups here, right?
+
+35
+00:06:05,252 --> 00:06:09,411
+So, it is very clear that we see three groups of objects.
+
+36
+00:06:10,531 --> 00:06:16,731
+And we can color them, we can, you know, have different shapes to represent them.
+
+37
+00:06:16,731 --> 00:06:23,731
+But in other sense, we want to find which are the objects that are...
+
+38
+00:06:24,115 --> 00:06:27,435
+Kulüsele, ve diğerlerle ilgili.
+
+39
+00:06:27,435 --> 00:06:37,115
+So, the goal in the clustering is that intracluster distances within the class distances should be minimized.
+
+40
+00:06:37,492 --> 00:06:40,971
+ve intercluster distances,
+
+41
+00:06:40,971 --> 00:06:43,372
+ve ilişkilerin deklarına kadar
+
+42
+00:06:43,372 --> 00:06:44,732
+makamadık.
+
+43
+00:06:44,732 --> 00:06:47,672
+Yani, bu kadar çok seprenin
+
+44
+00:06:47,672 --> 00:06:48,672
+bir grup.
+
+45
+00:06:48,672 --> 00:06:50,672
+Bu, bu kadar seprenin
+
+46
+00:06:50,672 --> 00:06:52,732
+bir grup var.
+
+47
+00:06:52,732 --> 00:06:54,591
+Bu, sadece
+
+48
+00:06:54,591 --> 00:06:58,091
+makamal bir grup.
+
+49
+00:06:58,091 --> 00:07:00,372
+Bu, bu kadar
+
+50
+00:07:00,372 --> 00:07:02,451
+bir sensin
+
+51
+00:07:03,007 --> 00:07:06,007
+Bu birçok birçok olayda.
+
+52
+00:07:06,007 --> 00:07:08,007
+Bu birçok olayda değil,
+
+53
+00:07:08,007 --> 00:07:10,007
+ve bu birçok olayda değil,
+
+54
+00:07:10,007 --> 00:07:15,007
+bu birçok olayda.
+
+55
+00:07:15,007 --> 00:07:18,007
+Çünkü bu birçok olayda
+
+56
+00:07:18,007 --> 00:07:22,007
+birçok olayda.
+
+57
+00:07:22,303 --> 00:07:30,384
+Bu, eğer, bu data, 20 obyekti ve bu şekilde, bu şekilde, bu kadar
+
+58
+00:07:45,108 --> 00:07:49,048
+Evet, [öğrenci] says 6. Bu, iyi.
+
+59
+00:07:49,048 --> 00:07:51,867
+Any other clustering types?
+
+60
+00:07:57,699 --> 00:08:07,403
+Bir tane daha var.
+
+61
+00:08:15,507 --> 00:08:42,283
+Bu, bu
+
+62
+00:08:42,451 --> 00:09:01,711
+All of them are correct. There are different representations of clustering. And how do you decide which one to go for? That can be the most difficult part. So if you say two cluster, which is okay, perfectly okay, you can see that there's one of them here, one of them here.
+
+63
+00:09:03,572 --> 00:09:09,572
+Also, if you say six, this is also valid. We can see there are different groups.
+
+64
+00:09:14,836 --> 00:09:40,875
+Bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir şeyden bir
+
+65
+00:09:41,172 --> 00:10:03,628
+ve ilişkilerin, farklı birçok
+
+66
+00:10:04,659 --> 00:10:12,219
+Partitional clusterin is a way to cluster objects into non-overlapping subsets.
+
+67
+00:10:13,179 --> 00:10:21,339
+It means that every object can only belong to one class and exactly one class.
+
+68
+00:10:22,259 --> 00:10:27,299
+So there is no way to overlap into multiple clusters.
+
+69
+00:10:28,500 --> 00:10:36,659
+Hierarchal clustering, on the opposite side, is you can have nested clusters organized in hierarchal tree.
+
+70
+00:10:36,659 --> 00:10:45,300
+It means that one object can belong to multiple clusters in different hierarchies.
+
+71
+00:10:46,920 --> 00:10:53,519
+We will see different algorithms that can work on this type of clustering methods.
+
+72
+00:10:54,144 --> 00:10:57,244
+Partition class string, we have this data set.
+
+73
+00:10:58,783 --> 00:11:09,163
+Once we perform the class string, let's say this is one class or the second class, or you could have this type of class, this is one, this is two, and so on.
+
+74
+00:11:09,803 --> 00:11:16,024
+But we know for sure that each object can only belong one class.
+
+75
+00:11:21,076 --> 00:12:06,048
+Bu, bu
+
+76
+00:12:06,048 --> 00:12:24,328
+P1 only belongs to cluster 1. So you can spray them as a dendrogram. Like in the dendrogram we have outside cluster and there are two items that belong to inner clusters and this is also outside of the inner one.
+
+77
+00:12:25,927 --> 00:12:32,208
+So as you can see this can be represented on different levels in different hierarchies.
+
+78
+00:12:33,748 --> 00:12:42,187
+Ve bu
+
+79
+00:12:43,700 --> 00:12:48,700
+Bu, k-means, k-means, ve albortum var.
+
+80
+00:13:11,539 --> 00:13:31,596
+Bu, bu
+
+81
+00:13:34,292 --> 00:13:38,292
+K-Means'in ilk başlığı ile başlayalım.
+
+82
+00:13:38,292 --> 00:13:42,292
+K-Means'in ilk başlığı,
+
+83
+00:13:42,292 --> 00:13:46,292
+k-means'in ilk başlığı ve iyi bir algoritma.
+
+84
+00:13:46,292 --> 00:13:50,292
+Bu, k-means'in ilk başlığı,
+
+85
+00:13:52,532 --> 00:13:58,532
+ve iki
+
+86
+00:13:58,532 --> 00:14:02,532
+bir külüme
+
+87
+00:14:02,532 --> 00:14:04,532
+başlayacak
+
+88
+00:14:04,532 --> 00:14:10,532
+bir külüme
+
+89
+00:14:10,532 --> 00:14:11,532
+ve
+
+90
+00:14:11,532 --> 00:14:17,532
+bir külüme
+
+91
+00:14:17,792 --> 00:14:41,259
+ve altyazı alty
+
+92
+00:14:42,035 --> 00:14:46,035
+ve sonra da bir centroidi değiştirebiliyoruz,
+
+93
+00:14:46,035 --> 00:14:49,035
+ve tekrarlayan, ve tekrarlayan,
+
+94
+00:14:49,035 --> 00:14:51,035
+ve tekrarlayan,
+
+95
+00:14:51,035 --> 00:14:54,035
+ve bütün centroidi ile deklerine
+
+96
+00:14:54,035 --> 00:14:59,035
+ve bu centroidi'nin deklerine
+
+97
+00:14:59,731 --> 00:15:05,851
+ve re-compute centroidi tekrar, until centroidi do not move anymore.
+
+98
+00:15:05,851 --> 00:15:09,851
+Yani, bu clustering'in converged.
+
+99
+00:15:09,851 --> 00:15:17,971
+At that point, we stop the clustering, and that's all for the algorit.
+
+100
+00:15:17,971 --> 00:15:21,851
+And that final representation is our clusters.
+
+101
+00:15:22,995 --> 00:15:31,915
+However, there's one caveat in this process is that we need to know ahead of time what is the number of clusters.
+
+102
+00:15:32,675 --> 00:15:37,596
+In other sense, the number k. The k is the number of clusters.
+
+103
+00:15:38,755 --> 00:15:43,096
+However, that may not be easy to determine if you already know.
+
+104
+00:15:43,504 --> 00:16:10,283
+...k'a bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgiler
+
+105
+00:16:10,451 --> 00:16:14,812
+3, 4, 10,
+
+106
+00:16:14,812 --> 00:16:17,791
+neyden bir nelerde
+
+107
+00:16:17,791 --> 00:16:20,031
+bu bir stafaset
+
+108
+00:16:20,031 --> 00:16:22,152
+bu da
+
+109
+00:16:22,152 --> 00:16:23,471
+algeriplerim.
+
+110
+00:16:23,471 --> 00:16:24,591
+Ve
+
+111
+00:16:24,591 --> 00:16:25,531
+bir sürüdü
+
+112
+00:16:25,531 --> 00:16:32,152
+algeriplerin
+
+113
+00:16:32,152 --> 00:16:37,888
+bir sürüdü
+
+114
+00:16:37,888 --> 00:16:41,888
+Asim, these are x1 values.
+
+115
+00:16:42,928 --> 00:16:46,528
+This is one point, which has a point at 2.
+
+116
+00:16:46,528 --> 00:16:48,728
+There is also another object at 3.
+
+117
+00:16:48,728 --> 00:16:54,488
+There is another object at 4, 10, 11, 12, 20, 25, and 30.
+
+118
+00:16:55,928 --> 00:16:58,928
+And assume that we have k2.
+
+119
+00:17:01,248 --> 00:17:03,928
+And we randomly choose the centraids.
+
+120
+00:17:04,372 --> 00:17:15,872
+Centroid 1, assume it starts, we randomly select 2 as Centroid 1, and Centroid 2 is selected as 4, number 4.
+
+121
+00:17:16,552 --> 00:17:20,132
+Okay, this is our random selection at the initial setup.
+
+122
+00:17:21,971 --> 00:17:44,299
+ve bu bölümde
+
+123
+00:17:44,307 --> 00:17:47,127
+bir şekil, to demonstrate different clustering.
+
+124
+00:17:48,248 --> 00:17:58,567
+10 is closer to centraide 2 versus centraide 1, because the distance here is 6, the distance here is 8.
+
+125
+00:18:01,228 --> 00:18:10,548
+Same thing will go to this one and that one, and all of these will be closer to second centraide.
+
+126
+00:18:11,380 --> 00:18:16,940
+İlk başta, bu bölümde de
+
+127
+00:18:16,940 --> 00:18:19,360
+çantroidsin bir noktası ile
+
+128
+00:18:19,360 --> 00:18:23,160
+ve çantroidsin bir noktası ile
+
+129
+00:18:23,160 --> 00:18:28,160
+ve çantroidsin bir noktası.
+
+130
+00:18:28,160 --> 00:18:30,160
+Şimdi, çantroidsin bir noktası
+
+131
+00:18:30,160 --> 00:18:31,460
+ve çantroidsin bir noktası
+
+132
+00:18:31,460 --> 00:18:33,500
+bir noktası var.
+
+133
+00:18:34,900 --> 00:19:02,092
+Bu, bu
+
+134
+00:19:04,435 --> 00:19:07,596
+Şimdi, bu çantıları, şimdi yapıyoruz.
+
+135
+00:19:07,596 --> 00:19:09,596
+Şimdi, ikinci birçok.
+
+136
+00:19:09,596 --> 00:19:14,596
+İçin birçok.
+
+137
+00:19:14,596 --> 00:19:21,596
+Bu çantıları, çantıları, çantıları, çantıları, çantıları, çantıları, çantıları.
+
+138
+00:19:21,920 --> 00:19:25,920
+Bu aynı zamanda 3'e, bu kadar bu kadar bu kadar bu kadar.
+
+139
+00:19:25,920 --> 00:19:28,400
+Bu kadar bu kadar bu kadar bu kadar.
+
+140
+00:19:28,400 --> 00:19:31,600
+Bu, bu kadar bu kadar bu kadar bu kadar.
+
+141
+00:19:46,644 --> 00:19:48,644
+3.5.
+
+142
+00:19:48,644 --> 00:19:52,644
+2.5.
+
+143
+00:19:52,644 --> 00:19:56,644
+3.5.
+
+144
+00:19:56,644 --> 00:19:58,644
+1.5.
+
+145
+00:19:58,644 --> 00:20:00,644
+16.5.
+
+146
+00:20:00,644 --> 00:20:02,644
+18.
+
+147
+00:20:02,644 --> 00:20:06,380
+2.5.
+
+148
+00:20:06,644 --> 00:20:15,240
+3.5.
+
+149
+00:20:07,476 --> 00:20:24,396
+Bu 4.0.
+
+150
+00:20:24,435 --> 00:20:27,935
+ve 25.
+
+151
+00:20:27,935 --> 00:20:30,195
+Ve bu bir şey değiştirecek.
+
+152
+00:20:30,195 --> 00:20:34,515
+Bu 7-10 ilerasyonlar,
+
+153
+00:20:34,515 --> 00:20:36,435
+bu bir şey değiştirecek.
+
+154
+00:20:36,435 --> 00:20:39,307
+Bu bir şey değiştirecek.
+
+155
+00:20:39,443 --> 00:20:42,483
+20, 25, and 30 points
+
+156
+00:20:42,483 --> 00:20:44,644
+will belong to this cluster
+
+157
+00:20:44,644 --> 00:20:47,923
+and 2, 3, 4, 10, 11
+
+158
+00:20:47,923 --> 00:20:49,364
+will belong to this cluster.
+
+159
+00:20:49,364 --> 00:20:50,563
+So you have two clusters,
+
+160
+00:20:50,563 --> 00:20:54,243
+cluster 1 and cluster 2 as a result.
+
+161
+00:20:54,243 --> 00:20:56,083
+Okay.
+
+162
+00:20:56,083 --> 00:20:59,123
+This is a simple representation
+
+163
+00:20:59,123 --> 00:21:01,123
+of this algorithm.
+
+164
+00:21:01,123 --> 00:21:03,364
+It doesn't have to be one dimensional.
+
+165
+00:21:03,364 --> 00:21:05,603
+K-means can be any dimensional.
+
+166
+00:21:05,748 --> 00:21:15,748
+So we may have a feature set that may be two-dimensional, four-dimensional, or even n-dimensional data can be represented.
+
+167
+00:21:15,748 --> 00:21:23,748
+However, when you have more than one-dimensional data, you need to come up with a distance metric, right?
+
+168
+00:21:23,748 --> 00:21:26,748
+For instance, this is our dataset.
+
+169
+00:21:26,748 --> 00:21:28,748
+Let me show you this.
+
+170
+00:21:32,564 --> 00:21:36,264
+Okay, if we had this n-dimensional data,
+
+171
+00:21:46,259 --> 00:21:52,539
+X1, X2, X3, ve XN.
+
+172
+00:21:54,039 --> 00:21:56,039
+These are P1.
+
+173
+00:22:01,523 --> 00:22:05,884
+P2, P2, Pn.
+
+174
+00:22:07,283 --> 00:22:20,243
+Okay, so if you have multidimensional data, how can you calculate distance between P1 and Pn?
+
+175
+00:22:21,364 --> 00:22:26,644
+Or you could calculate the distance between P2, P3.
+
+176
+00:22:31,220 --> 00:22:34,539
+n-dimensional vektörs.
+
+177
+00:22:35,819 --> 00:22:38,980
+What type of metrics should you use?
+
+178
+00:22:40,059 --> 00:22:40,779
+Any suggestions?
+
+179
+00:22:53,523 --> 00:22:59,543
+Any distance measure? We discuss some of them. Would you suggest one?
+
+180
+00:23:06,996 --> 00:23:28,908
+Euclidean, right? The simplest one would be Euclidean. We could also use cosine or many other similarity metrics, as [öğrenci] mentioned. Cosine could be a good example. Euclidean is also fine, right? We could use Euclidean distance or cosine. It's okay to use either one. But typically...
+
+181
+00:23:28,980 --> 00:23:55,059
+We use Euclidean message. This is x1, 1 minus x, n1, square plus, so x1, 2 minus x, n2, square. So you keep adding n.
+
+182
+00:23:56,019 --> 00:24:00,180
+However, you have to be careful when you use Euclidean distance, right?
+
+183
+00:24:00,359 --> 00:24:05,960
+What is the reason that you need to be careful for Euclidean distance?
+
+184
+00:24:09,180 --> 00:24:16,319
+If you don't become, if you don't be careful about Euclidean distance, what could go wrong?
+
+185
+00:24:21,299 --> 00:24:22,839
+What is the potential problem?
+
+186
+00:24:31,443 --> 00:24:52,163
+Let's say this is 1, this is 3, this is 10, this is 19, this is 100, this is 300, this is 4, this is negative 5, this is 5000, this is 10000.
+
+187
+00:24:56,403 --> 00:25:21,764
+Evet, normalizasyon, absolutely. Çünkü, if you don't have the same scales, this distance can have a single feature that can dominate the rest of the features. As we have seen in k-neans'niber, this is the same idea. It can distort the results. It can have
+
+188
+00:25:22,195 --> 00:25:36,435
+ve, dominan ve a feature over others. Çünkü, distance, is an absolute metrics. However, we want it to be on the same scale. Okay. So that's a good point. We need to normalize data first. Okay.
+
+189
+00:25:37,555 --> 00:25:45,955
+So for k-means, just make sure that all these features are in the same scale. And then you apply the algorithm.
+
+190
+00:25:47,188 --> 00:25:53,827
+However, we can clearly see that some potential problems exist for games.
+
+191
+00:25:53,827 --> 00:25:58,307
+One of them is that how do we choose the initial centers?
+
+192
+00:25:59,348 --> 00:26:05,748
+We randomly choose them, but what if that random selection is not optimal?
+
+193
+00:26:06,612 --> 00:26:15,051
+Çünkü seçeneğe, bu
+
+194
+00:26:15,051 --> 00:26:19,692
+altyazı, bu
+
+195
+00:26:32,339 --> 00:26:36,339
+Bir problem is, k-means'in birçok problemi var.
+
+196
+00:26:36,339 --> 00:26:56,339
+Bu k-means'in birçok problemi var.
+
+197
+00:26:59,104 --> 00:27:02,104
+Bu konuda yasındalara, bu konuda yasındalara.
+
+198
+00:27:02,104 --> 00:27:09,104
+İçinliklerden birçok sorunu var.
+
+199
+00:27:09,104 --> 00:27:16,104
+Bu konuda sonuçlarına dair.
+
+200
+00:27:16,104 --> 00:27:18,104
+Önceleriye bir örneğin.
+
+201
+00:27:18,104 --> 00:27:21,104
+Bu konuda sonuçlarına dair.
+
+202
+00:27:24,372 --> 00:27:26,072
+Bu da bu data,
+
+203
+00:27:52,147 --> 00:28:05,548
+Selektions. Let's give an example. Assume that we randomly choose the initial cluster centroids, and the first one was located at this point, second one is here, and third one is here.
+
+204
+00:28:07,627 --> 00:28:16,747
+And we keep repeating this iteration, and in the second iteration, as you can see, these green ones are here. This is going to move somewhere here.
+
+205
+00:28:17,364 --> 00:28:41,228
+Bu, bu
+
+206
+00:28:41,268 --> 00:28:43,748
+Blue is going to move even further down.
+
+207
+00:28:44,307 --> 00:28:46,188
+And also brown is going to move here.
+
+208
+00:28:47,188 --> 00:28:48,548
+I'm going to keep repeating.
+
+209
+00:28:48,827 --> 00:28:53,048
+Iteration 3, iteration 4, and this is iteration 5.
+
+210
+00:28:53,668 --> 00:28:57,528
+And in iteration 6, now we have this cluster.
+
+211
+00:28:58,048 --> 00:29:02,528
+Now we have this cluster as blue, and this is the cluster as brown.
+
+212
+00:29:03,248 --> 00:29:05,708
+There is no way that this is going to change anymore.
+
+213
+00:29:05,708 --> 00:29:07,548
+And this is an optimal case.
+
+214
+00:29:08,243 --> 00:29:12,243
+Çünkü bu neyizde, bu neyizde, birçok birçok.
+
+215
+00:29:12,243 --> 00:29:16,243
+Bu, bu birçok birçok.
+
+216
+00:29:16,243 --> 00:29:20,243
+Birçok birçok, bu birçok, birçok, birçok, birçok.
+
+217
+00:29:20,243 --> 00:29:24,243
+Bu, bu birçok.
+
+218
+00:29:24,243 --> 00:29:35,147
+Bu, bu, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok, bu birçok.
+
+219
+00:29:35,539 --> 00:30:00,000
+Bu, bu
+
+220
+00:30:00,000 --> 00:30:02,000
+İteration 5'i
+
+221
+00:30:27,892 --> 00:30:50,443
+Bu da bu
+
+222
+00:30:50,612 --> 00:30:53,612
+Bu birçok birçok birçok birçok.
+
+223
+00:30:53,612 --> 00:30:56,612
+Bu birçok birçok birçok.
+
+224
+00:30:56,612 --> 00:31:00,612
+Bu birçok birçok.
+
+225
+00:31:00,612 --> 00:31:04,612
+Bu birçok birçok birçok.
+
+226
+00:31:04,612 --> 00:31:12,612
+Bu birçok birçok.
+
+227
+00:31:12,612 --> 00:31:16,612
+Bu birçok.
+
+228
+00:31:17,395 --> 00:31:21,395
+İntroloz.
+
+229
+00:31:21,395 --> 00:31:24,395
+Bu nedenle,
+
+230
+00:31:24,395 --> 00:31:26,395
+bu nedenle,
+
+231
+00:31:26,395 --> 00:31:28,395
+bu problem?
+
+232
+00:31:28,395 --> 00:31:29,395
+Bu nedenle,
+
+233
+00:31:29,395 --> 00:31:31,395
+bu nedenle,
+
+234
+00:31:31,903 --> 00:31:37,403
+Bir şey, bir şey, bir şey, çöpçülen.
+
+235
+00:31:47,028 --> 00:31:49,948
+Bu konvergede,
+
+236
+00:31:49,948 --> 00:31:50,668
+However,
+
+237
+00:31:50,668 --> 00:31:53,387
+we cannot just keep doing this
+
+238
+00:31:53,387 --> 00:31:54,827
+in a brute force,
+
+239
+00:31:54,827 --> 00:31:56,347
+you know,
+
+240
+00:31:56,347 --> 00:31:58,188
+running onto
+
+241
+00:31:58,188 --> 00:32:00,068
+randomly incorrect positions
+
+242
+00:32:00,068 --> 00:32:01,588
+is more likely.
+
+243
+00:32:01,588 --> 00:32:03,307
+So that's not
+
+244
+00:32:03,307 --> 00:32:05,148
+going to solve our problem.
+
+245
+00:32:05,148 --> 00:32:06,668
+Another approach is to
+
+246
+00:32:06,668 --> 00:32:08,188
+take samples
+
+247
+00:32:08,188 --> 00:32:10,148
+and use those samples.
+
+248
+00:32:10,355 --> 00:32:15,395
+ve hiyarikli clustering ile
+
+249
+00:32:15,395 --> 00:32:17,796
+denetimle içi centroidi
+
+250
+00:32:17,796 --> 00:32:19,796
+ve denetimle içi centroidi
+
+251
+00:32:19,796 --> 00:32:21,516
+k-means
+
+252
+00:32:21,516 --> 00:32:41,008
+bu k-means
+
+253
+00:32:29,268 --> 00:32:51,887
+Bu, bu
+
+254
+00:32:51,887 --> 00:33:17,195
+Çünkü, bu çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları çantıları
+
+255
+00:33:17,875 --> 00:33:20,875
+Bu bir sorun.
+
+256
+00:33:22,875 --> 00:33:45,259
+Bir sorun.
+
+257
+00:33:45,779 --> 00:33:49,539
+ve last solution, it could be bisecting k-means.
+
+258
+00:33:50,980 --> 00:33:55,599
+So bisecting k-means is also another interesting variant of k-means.
+
+259
+00:33:56,579 --> 00:34:02,599
+However, in the bisecting k-means, we do not set up the k.
+
+260
+00:34:02,980 --> 00:34:07,099
+So in bisecting k-means, we don't need the k-number.
+
+261
+00:34:07,892 --> 00:34:13,532
+However, we need a measure of dividing the clusters.
+
+262
+00:34:14,972 --> 00:34:19,891
+The measure can be in terms of, let me show you this.
+
+263
+00:34:25,331 --> 00:34:27,891
+That measure can be defined this way.
+
+264
+00:34:31,956 --> 00:34:33,336
+Let me draw some.
+
+265
+00:34:38,036 --> 00:34:39,556
+Virajıcım, points.
+
+266
+00:34:49,235 --> 00:34:51,235
+Evet.
+
+267
+00:34:51,235 --> 00:34:53,235
+So in bisecting ames,
+
+268
+00:34:53,235 --> 00:34:55,235
+we say that
+
+269
+00:34:55,235 --> 00:34:57,235
+the intra...
+
+270
+00:35:01,427 --> 00:35:02,627
+clusterDistance
+
+271
+00:35:07,795 --> 00:35:12,795
+bu bir kere daha küçük bir kere daha küçük.
+
+272
+00:35:12,795 --> 00:35:14,795
+Eğer bu kere daha küçük bir kere daha küçük,
+
+273
+00:35:14,795 --> 00:35:17,795
+bu kere daha küçük bir kere daha küçük.
+
+274
+00:35:19,795 --> 00:35:22,795
+İlk olarak iki kere daha küçük.
+
+275
+00:35:22,795 --> 00:35:27,795
+İlk olarak iki kere daha küçük kere daha küçük.
+
+276
+00:35:27,795 --> 00:35:30,795
+İlk olarak bu kere daha küçük.
+
+277
+00:35:31,411 --> 00:35:40,731
+Ve bu centroidi kullanmanız, bu bir.
+
+278
+00:35:47,731 --> 00:35:50,731
+Tamam, şimdi 2'de.
+
+279
+00:35:50,731 --> 00:35:55,811
+Bu neye
+
+280
+00:35:55,811 --> 00:36:17,072
+bu neye
+
+281
+00:36:12,896 --> 00:36:17,896
+Eğer bu birçok çöpçüye, bu birçok çöpçüye,
+
+282
+00:36:17,896 --> 00:36:21,896
+bu birçok çöpçüye, bu birçok çöpçüye,
+
+283
+00:36:21,896 --> 00:36:27,896
+birçok çöpçüye, birçok çöpçüye,
+
+284
+00:36:27,896 --> 00:36:31,896
+birçok çöpçüye, birçok çöpçüye.
+
+285
+00:36:31,896 --> 00:36:35,896
+Bu çöpçüye, bu çöpçüye çöpçüye,
+
+286
+00:36:35,896 --> 00:36:37,896
+bu çöpçüye çöpçüye çöpçüye.
+
+287
+00:36:38,483 --> 00:37:06,123
+ve bu bir
+
+288
+00:37:06,164 --> 00:37:09,164
+ve bu bölümde bu bölümde bu bölümde.
+
+289
+00:37:35,059 --> 00:37:39,059
+Yeni bir şey.
+
+290
+00:38:01,972 --> 00:38:27,564
+...
+
+291
+00:38:29,139 --> 00:38:34,639
+Bu problemin içi centroidi seçeneği.
+
+292
+00:38:52,884 --> 00:39:16,460
+Çünkü bu noktaların oranlarla bu noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir noktaların bir nokt
+
+293
+00:39:16,628 --> 00:39:18,887
+bir kuştring result
+
+294
+00:39:18,887 --> 00:39:20,967
+for the same data set
+
+295
+00:39:20,967 --> 00:39:22,847
+depending on your
+
+296
+00:39:22,847 --> 00:39:24,467
+initial cluster set up
+
+297
+00:39:24,467 --> 00:39:26,568
+depending on the parameters
+
+298
+00:39:26,568 --> 00:39:27,807
+or k's and stuff
+
+299
+00:39:27,807 --> 00:39:29,908
+we may end up with different kuştrings
+
+300
+00:39:29,908 --> 00:39:31,228
+which is perfectly fine
+
+301
+00:39:31,228 --> 00:39:32,328
+okay
+
+302
+00:39:33,876 --> 00:39:44,876
+Another clustering method is hierarchical clustering, but before we go to hierarchical clustering, I think this is a good point to give a break, but before the break, do we have any questions?
+
+303
+00:39:48,916 --> 00:39:51,235
+Any questions or comments before the break?
+
+304
+00:39:55,092 --> 00:40:01,931
+Okay, seems like there's no questions. We'll see you in 15 minutes. We will continue at 3 o'clock. Okay, see you soon.
+
+305
+00:58:22,579 --> 00:58:24,940
+Okay. Hello everyone. Welcome back.
+
+306
+00:58:28,059 --> 00:58:29,639
+Let me share my screen.
+
+307
+00:58:32,320 --> 00:58:32,940
+Okay.
+
+308
+00:58:33,840 --> 00:58:35,340
+Are you seeing my screen?
+
+309
+00:58:42,483 --> 00:58:43,323
+Evet, no.
+
+310
+00:58:51,123 --> 00:58:53,123
+Evet, [öğrenci].
+
+311
+00:58:53,123 --> 00:58:57,123
+Öncelikle de hierarchical clustering.
+
+312
+00:58:57,123 --> 00:58:59,123
+Öncelikle de hierarchical clustering
+
+313
+00:58:59,123 --> 00:59:00,123
+bu da
+
+314
+00:59:00,123 --> 00:59:02,123
+ne kadar bir anlaşımda
+
+315
+00:59:02,123 --> 00:59:03,123
+onları bir anlaşımda
+
+316
+00:59:03,123 --> 00:59:04,123
+onları bir anlaşımda.
+
+317
+00:59:04,123 --> 00:59:06,123
+Bu anlaşımda
+
+318
+00:59:06,123 --> 00:59:10,123
+bir anlaşımda
+
+319
+00:59:10,123 --> 00:59:11,123
+ve
+
+320
+00:59:11,123 --> 00:59:16,123
+bir anlaşımda
+
+321
+00:59:19,635 --> 00:59:26,635
+ve
+
+322
+00:59:31,315 --> 00:59:35,235
+Herakçal clustering, we have two types of algorithms.
+
+323
+00:59:35,955 --> 00:59:39,115
+The first one is agglomerative, the other one is divisive.
+
+324
+00:59:39,775 --> 00:59:43,115
+It's the same thing, but the directions are different.
+
+325
+00:59:44,096 --> 00:59:52,335
+We typically use agglomeratives, starting from initial clusters, individual points as clusters,
+
+326
+00:59:52,335 --> 00:59:59,315
+and then at each step, we merge two closest pairs of clusters with only one.
+
+327
+00:59:59,315 --> 01:00:03,675
+birçok birçok birçok birçok.
+
+328
+01:00:03,675 --> 01:00:07,395
+Bu birçok birçok birçok.
+
+329
+01:00:07,395 --> 01:00:18,875
+İçok birçok.
+
+330
+01:00:20,820 --> 01:00:23,140
+ve bu matrixin,
+
+331
+01:00:23,140 --> 01:00:27,860
+iki tane orta'lı birçok parçası var.
+
+332
+01:00:27,860 --> 01:00:31,060
+İçin birçok parçası var.
+
+333
+01:00:31,060 --> 01:00:41,820
+İçin, bu parçası var.
+
+334
+01:00:42,099 --> 01:01:07,467
+ve bu iki bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu bölümde de bu
+
+335
+01:01:07,795 --> 01:01:13,795
+Ok, this is our cluster, representations.
+
+336
+01:01:13,795 --> 01:01:33,795
+Assume that we have these six points, P1, P2, P3, P4, P5, and P6.
+
+337
+01:01:36,755 --> 01:01:40,315
+Evet, ve kullanıştık bir distan matrix,
+
+338
+01:01:40,315 --> 01:01:42,635
+bir proximit matrix.
+
+339
+01:01:42,635 --> 01:01:45,355
+Önceye bu proximit matrix.
+
+340
+01:01:47,956 --> 01:01:48,956
+Ok.
+
+341
+01:01:51,155 --> 01:01:52,155
+P1,
+
+342
+01:01:54,036 --> 01:01:55,036
+P2,
+
+343
+01:01:57,555 --> 01:01:58,956
+P3,
+
+344
+01:02:02,155 --> 01:02:03,355
+P4,
+
+345
+01:02:06,579 --> 01:02:16,059
+P5, P6, aynı şey, here P1, P2, P3.
+
+346
+01:02:31,603 --> 01:02:35,383
+P4, P5, P6.
+
+347
+01:02:37,463 --> 01:02:40,503
+Distance to each point is 0, as you know.
+
+348
+01:02:41,743 --> 01:02:42,323
+And,
+
+349
+01:02:43,823 --> 01:02:49,343
+Distance between each point, this may be 0.2, 0.5,
+
+350
+01:02:49,963 --> 01:02:55,803
+and maybe 3, maybe 5, 4, it is 3.3, and so on.
+
+351
+01:02:56,211 --> 01:03:04,572
+So, each point, each cell in this proximity matrix, demonstrates the distance between each point and every other point.
+
+352
+01:03:04,572 --> 01:03:16,652
+Okay. To make it very simple, I'm just going to use these six examples, six example points, and at the initial step, we have six clusters.
+
+353
+01:03:17,652 --> 01:03:19,952
+And we calculate the proximity matrix.
+
+354
+01:03:28,351 --> 01:03:32,351
+Ve bu noktada P3 ve P4
+
+355
+01:03:32,351 --> 01:03:34,351
+bu noktada.
+
+356
+01:03:34,351 --> 01:03:36,351
+Bu noktada,
+
+357
+01:03:36,351 --> 01:03:38,351
+bu noktada,
+
+358
+01:03:38,351 --> 01:03:40,351
+ve bu noktada bir kutada.
+
+359
+01:03:40,351 --> 01:03:42,351
+Bu noktada,
+
+360
+01:03:42,351 --> 01:03:46,351
+bu noktada C3, 4.
+
+361
+01:03:47,059 --> 01:03:48,059
+C3, C4.
+
+362
+01:03:48,059 --> 01:03:58,059
+And this is cluster 1, this is cluster 2, this is cluster 5, this is cluster 6.
+
+363
+01:03:58,059 --> 01:04:09,059
+So by merging them, we end up with only our clusters left.
+
+364
+01:04:16,019 --> 01:04:25,319
+ve Average, or mean, median, mean value, is becoming new cluster, C4,5.
+
+365
+01:04:25,319 --> 01:04:32,719
+So, this proxymetrics now has five dimensions, five points, five clusters.
+
+366
+01:04:33,331 --> 01:04:40,931
+Şimdi, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada,
+
+367
+01:05:00,115 --> 01:05:05,276
+New cluster center becomes c-556.
+
+368
+01:05:05,936 --> 01:05:09,376
+There is only one cluster.
+
+369
+01:05:10,076 --> 01:05:10,215
+Okay.
+
+370
+01:05:11,396 --> 01:05:13,695
+So, we keep doing this.
+
+371
+01:05:15,695 --> 01:05:18,336
+In the third iteration,
+
+372
+01:05:19,059 --> 01:05:27,860
+İçinlikle, bu bölümde, bu bölümde, bu bölümde, c4, c3 ve c2.
+
+373
+01:06:01,043 --> 01:06:05,043
+Ve sonra bir diğer point var.
+
+374
+01:06:09,043 --> 01:06:16,043
+Bu, bu sonucu final klaseri.
+
+375
+01:06:16,244 --> 01:06:20,244
+Ve bu kandogramı kandogramı.
+
+376
+01:06:20,244 --> 01:06:43,244
+Bu kandogramı kandogramı.
+
+377
+01:06:42,291 --> 01:06:58,891
+Bu bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer bir diğer diğer bir diğer
+
+378
+01:07:02,099 --> 01:07:03,699
+P3 ve P4.
+
+379
+01:07:04,359 --> 01:07:05,259
+This is P2.
+
+380
+01:07:07,659 --> 01:07:11,059
+P2, P5, P6.
+
+381
+01:07:15,315 --> 01:07:17,315
+ve 3 ve 4.
+
+382
+01:07:40,628 --> 01:08:08,268
+Bu da bu
+
+383
+01:08:08,307 --> 01:08:09,307
+3.
+
+384
+01:08:09,307 --> 01:08:11,307
+1.
+
+385
+01:08:11,307 --> 01:08:12,307
+2.
+
+386
+01:08:12,307 --> 01:08:16,307
+3.
+
+387
+01:08:16,307 --> 01:08:20,307
+4.
+
+388
+01:08:20,307 --> 01:08:22,307
+5.
+
+389
+01:08:22,307 --> 01:08:22,444
+6.
+
+390
+01:08:26,420 --> 01:08:41,619
+If you cut it from this point, we see that this is a cluster, this is a cluster, this is a cluster, and that is a cluster.
+
+391
+01:08:42,340 --> 01:08:49,380
+Okay. If you cut it from this location, here is a 5.
+
+392
+01:08:51,296 --> 01:08:53,296
+6.
+
+393
+01:08:53,296 --> 01:08:56,296
+7.
+
+394
+01:08:56,296 --> 01:08:58,296
+8.
+
+395
+01:08:58,296 --> 01:09:01,296
+9.
+
+396
+01:09:01,296 --> 01:09:06,296
+10.
+
+397
+01:08:50,931 --> 01:09:18,219
+Bu bir
+
+398
+01:09:18,355 --> 01:09:27,835
+Bu, top to bottom, çünkü, every point is a cluster, then eventually all clusters are merged into one cluster.
+
+399
+01:09:27,835 --> 01:09:32,515
+We could also go from other way direction, this would be top down, this is bottom up.
+
+400
+01:09:32,515 --> 01:09:39,716
+Okay, every iteration we update proximate metrics and we keep repeating this process.
+
+401
+01:09:43,828 --> 01:09:45,587
+Okay, any questions so far?
+
+402
+01:09:51,268 --> 01:10:06,891
+Bir kere kalmateşin.
+
+403
+01:10:08,627 --> 01:10:36,460
+Bu, bu
+
+404
+01:10:37,427 --> 01:10:44,087
+Definition of how do we calculate entire cluster similarity?
+
+405
+01:10:44,948 --> 01:10:50,427
+So how do we measure this clustering is the optimal one?
+
+406
+01:10:51,007 --> 01:10:55,427
+If we have multiple clusters, how do we define...
+
+407
+01:11:01,747 --> 01:11:05,067
+Okay, we have one cluster here, one cluster here.
+
+408
+01:11:14,836 --> 01:11:37,708
+Bu, bu
+
+409
+01:11:39,828 --> 01:11:43,148
+ne tür metriksiyonu kullanılıyor?
+
+410
+01:11:52,851 --> 01:11:54,851
+Bu da farklı metriksiyonu kullanılıyor.
+
+411
+01:12:18,612 --> 01:12:21,291
+So, let's say this is d1, d2.
+
+412
+01:12:22,032 --> 01:12:29,211
+If d1 is bigger than d2, then c2 and c3 are the closest.
+
+413
+01:12:29,692 --> 01:12:30,931
+So, we could say that, right?
+
+414
+01:12:32,012 --> 01:12:35,771
+Or the other metric would be using the maximum distance.
+
+415
+01:12:35,771 --> 01:12:39,032
+So, the maximum distance between any two points.
+
+416
+01:12:40,819 --> 01:13:05,163
+Bu, bu
+
+417
+01:13:13,555 --> 01:13:15,555
+ve grup average.
+
+418
+01:13:24,884 --> 01:13:52,336
+Bu, bu
+
+419
+01:13:52,336 --> 01:13:56,936
+Bu şekilde, bu şekilde bir şekilde de alışkanı var.
+
+420
+01:13:56,936 --> 01:14:00,936
+Bu şekilde, bu şekilde bir şekilde bir şekilde de alışkanı var.
+
+421
+01:14:00,936 --> 01:14:07,336
+Bu şekilde, bu şekilde bir şekilde alışkanı var.
+
+422
+01:14:07,336 --> 01:14:12,736
+Bu, bu şekilde farklı metriks ve alışkanı var.
+
+423
+01:14:12,736 --> 01:14:15,336
+Bir diğer birçok soru var.
+
+424
+01:14:15,336 --> 01:14:18,336
+Bu, bu şekilde, bu şekilde alışkanı var.
+
+425
+01:14:19,155 --> 01:14:44,332
+Açık Average'e de altyazı altyaz
+
+426
+01:14:46,003 --> 01:14:54,963
+One of the most commonly used one is this word method. This has a nice feature. Let me talk about that.
+
+427
+01:14:57,523 --> 01:15:02,644
+And it is more often used as a similarity
+
+428
+01:15:05,123 --> 01:15:13,283
+matrix between clusters, defining cluster centrals, defining cluster similarities.
+
+429
+01:15:17,492 --> 01:15:43,948
+Bu bir
+
+430
+01:15:45,332 --> 01:16:00,252
+So, what the Ward method does is, instead of calculating the group average or minimum or maximum, what it does is it makes them, it merges these two clusters.
+
+431
+01:16:02,092 --> 01:16:02,492
+Okay.
+
+432
+01:16:03,692 --> 01:16:05,612
+It simply merges these two clusters.
+
+433
+01:16:12,532 --> 01:16:17,492
+ve bu kursa'ın
+
+434
+01:16:17,492 --> 01:16:35,412
+kursa'ın
+
+435
+01:16:40,148 --> 01:16:47,148
+İkincisiyle, bu kadar ilişkilerin
+
+436
+01:16:47,148 --> 01:16:49,148
+ve bu kadar ilişkilerin.
+
+437
+01:16:49,148 --> 01:16:52,148
+Bu, bu kadar ilişkilerin
+
+438
+01:16:52,148 --> 01:16:56,148
+C1 ve C3'ye kadar
+
+439
+01:16:56,148 --> 01:16:58,148
+birleştirilmiştir.
+
+440
+01:16:58,148 --> 01:17:01,148
+Bu, bu kadar ilişkilerin
+
+441
+01:17:07,923 --> 01:17:35,692
+Bu, bu
+
+442
+01:17:37,587 --> 01:17:47,087
+Bu birçok.
+
+443
+01:17:48,087 --> 01:17:49,087
+Ve buçok.
+
+444
+01:17:49,087 --> 01:17:52,087
+Bu birçok.
+
+445
+01:17:55,988 --> 01:17:58,731
+ve bu
+
+446
+01:18:04,180 --> 01:18:06,980
+...in some of the squares'e...
+
+447
+01:18:07,980 --> 01:18:08,980
+...errors...
+
+448
+01:18:08,980 --> 01:18:11,980
+...between C3...
+
+449
+01:18:12,579 --> 01:18:14,579
+...C2 and C3.
+
+450
+01:18:18,260 --> 01:18:18,520
+ve
+
+451
+01:18:18,520 --> 01:18:53,007
+bir
+
+452
+01:18:38,068 --> 01:19:00,396
+C2 ve C3'ye daha
+
+453
+01:19:02,739 --> 01:19:27,787
+Bu, bu
+
+454
+01:19:27,956 --> 01:19:30,956
+Bu bir şekilde, bu bir şekilde,
+
+455
+01:19:30,956 --> 01:19:34,956
+daha fazla olaylar ve
+
+456
+01:19:34,956 --> 01:19:38,956
+bu olaylar ve
+
+457
+01:19:38,956 --> 01:19:54,956
+olaylar ve
+
+458
+01:19:56,020 --> 01:19:59,000
+Bu da bu da global birçok
+
+459
+01:19:59,000 --> 01:20:00,420
+Bu da normalde
+
+460
+01:20:00,420 --> 01:20:02,580
+Çünkü
+
+461
+01:20:04,851 --> 01:20:32,395
+K-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k-Means'in k
+
+462
+01:20:32,564 --> 01:20:41,564
+Bu konceptsiniz için önemli.
+
+463
+01:20:41,564 --> 01:20:46,564
+Hireçliklusterler için önemli bir problemler.
+
+464
+01:20:46,564 --> 01:20:52,564
+Bir problemlerle ilgili bir problemlerle ilgili bir problemlerle ilgili.
+
+465
+01:20:52,564 --> 01:20:58,316
+Ve daha fazla ilişkilerle ilişkilerle ilişkilerle ilişkiler.
+
+466
+01:20:58,579 --> 01:21:01,579
+Bir problem is,
+
+467
+01:21:01,579 --> 01:21:03,579
+bu birçok başlamak için,
+
+468
+01:21:03,579 --> 01:21:05,579
+eğer, bu birçok başlamak için,
+
+469
+01:21:05,579 --> 01:21:07,579
+birçok başlamak için,
+
+470
+01:21:07,579 --> 01:21:14,579
+bu birçok başlamak için,
+
+471
+01:21:14,579 --> 01:21:16,579
+bu birçok başlamak için.
+
+472
+01:21:16,579 --> 01:21:18,579
+Bu birçok başlamak için.
+
+473
+01:21:19,539 --> 01:21:26,539
+ve
+
+474
+01:21:39,828 --> 01:21:58,252
+Bu da bu
+
+475
+01:21:58,292 --> 01:22:05,292
+ve bu problemi. Bir problemi, bu problemi, bu da büyük büyük bir problemi. Bir problemi, bu da büyük büyük bir
+
+476
+01:22:22,323 --> 01:22:35,463
+However, when we observe that clustering so far, we noticed that both hierarchical clustering and also k-means tend to focus on global shape.
+
+477
+01:22:40,583 --> 01:22:48,083
+Okay, for instance, this is our cluster, this is our cluster, k-means.
+
+478
+01:22:49,300 --> 01:23:13,771
+ve higaylar clustering'ı da bu türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü bir türlü
+
+479
+01:23:13,939 --> 01:23:17,939
+This is one cluster, this is another cluster.
+
+480
+01:23:24,724 --> 01:23:43,020
+Bu bir
+
+481
+01:23:43,891 --> 01:23:56,512
+So, k-means are not good at this type of shape, because when you have centroids, it finds distances to closest point, so it would probably consider this one as a separate shape.
+
+482
+01:23:57,731 --> 01:24:03,072
+Okay, it would probably, if you had centroids here, it would take this clustering.
+
+483
+01:24:04,572 --> 01:24:05,512
+However, these...
+
+484
+01:24:06,131 --> 01:24:32,427
+K-regi bölgesi
+
+485
+01:24:32,819 --> 01:24:35,819
+bir metrik var,
+
+486
+01:24:35,819 --> 01:24:38,819
+bu koncaktörde çözüm yaparlarla
+
+487
+01:24:38,819 --> 01:24:40,819
+çözüm yaparlarla.
+
+488
+01:24:40,819 --> 01:24:42,819
+Bu bir problem var,
+
+489
+01:24:42,819 --> 01:24:44,819
+bu problemiyle bu problemiyle
+
+490
+01:24:44,819 --> 01:24:46,819
+ve bu problemiyle bir şey yok.
+
+491
+01:24:46,819 --> 01:24:49,819
+Ve bu bir şey yoksa bir şey yoksa
+
+492
+01:24:49,819 --> 01:24:51,819
+Bu bir şey yoksa,
+
+493
+01:24:51,819 --> 01:24:57,819
+bu bir şey yoksa,
+
+494
+01:24:59,539 --> 01:25:06,600
+But before we go forward, let me also talk about a property of k-means.
+
+495
+01:25:07,840 --> 01:25:09,380
+So how do we choose k?
+
+496
+01:25:10,619 --> 01:25:12,460
+What is the k that we choose?
+
+497
+01:25:13,000 --> 01:25:20,940
+Okay, what is the potential k that we should decide?
+
+498
+01:25:21,039 --> 01:25:22,000
+How do we choose k?
+
+499
+01:25:25,652 --> 01:25:35,891
+Ok, assume that we have this type of clusters, ok? And let me give this example.
+
+500
+01:25:39,332 --> 01:25:50,551
+Ok, if we had only k as 1, if k was 1, ok? And let's assume that this is our centroid.
+
+501
+01:25:51,507 --> 01:26:03,907
+What would be the distances, sum of the square distances, sum of square distance errors, in other sense, what would be the error?
+
+502
+01:26:20,595 --> 01:26:36,835
+This is xi². I'm just calculating some of the squares. Actually, this is j12k.
+
+503
+01:26:38,915 --> 01:26:47,635
+Okay, this is our metric. Some of the square errors of the cluster. Okay.
+
+504
+01:26:48,787 --> 01:26:53,387
+So if you were to use this metric, what would be the total error?
+
+505
+01:26:55,447 --> 01:26:57,847
+All the distances to all the points.
+
+506
+01:26:58,867 --> 01:27:00,688
+So this is going to be a large number, right?
+
+507
+01:27:00,747 --> 01:27:04,467
+As you can see, because there's a huge gap between spaces.
+
+508
+01:27:06,367 --> 01:27:08,167
+So that's going to be a very large number.
+
+509
+01:27:08,268 --> 01:27:13,007
+Let's say that this is 10,000 or 1,000, whatever the metric is.
+
+510
+01:27:14,007 --> 01:27:14,268
+Okay.
+
+511
+01:27:14,963 --> 01:27:19,724
+Bu, k is 1.
+
+512
+01:27:24,884 --> 01:27:41,884
+K is 1, k is 1. If we have two k's, when we have two k's, when k is 2, we will have some, let me
+
+513
+01:27:46,131 --> 01:27:48,051
+Assumiyonu, we have two case.
+
+514
+01:28:04,756 --> 01:28:10,756
+Bu, bu bir ks2, bu bir ks2, bu bir ks2, bu bir ks2.
+
+515
+01:28:10,756 --> 01:28:14,756
+Bu, bu ks2, bu ks2, bu ks2.
+
+516
+01:28:14,756 --> 01:28:20,756
+Bu, bu ks2, bu ks2, bu ks2, bu ks2, bu ks2, bu ks2.
+
+517
+01:28:20,756 --> 01:28:24,756
+Bu ks2, bu ks2, bu ks2, bu ks2.
+
+518
+01:28:24,756 --> 01:28:24,908
+Bu ks2, bu ks2, bu ks2.
+
+519
+01:28:26,551 --> 01:28:29,551
+Bu ks2, bu ks2, bu ks2, bu ks2.
+
+520
+01:28:25,203 --> 01:28:43,851
+Bu, bu
+
+521
+01:28:47,188 --> 01:28:50,048
+Ok, I keep repeating as a K3.
+
+522
+01:28:55,604 --> 01:28:57,664
+I keep repeating this process.
+
+523
+01:29:07,091 --> 01:29:20,395
+Bu bir
+
+524
+01:29:22,068 --> 01:29:49,739
+Bu, bu, daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin daha fazla
+
+525
+01:29:49,779 --> 01:30:15,979
+Bu, bu
+
+526
+01:30:17,395 --> 01:30:19,395
+İkincisi için çok fazla.
+
+527
+01:30:23,395 --> 01:30:27,395
+İkincisi için 4,
+
+528
+01:30:27,395 --> 01:30:29,395
+5,
+
+529
+01:30:31,395 --> 01:30:35,395
+İkincisi için çok fazla.
+
+530
+01:30:35,395 --> 01:30:37,395
+İkincisi için 5,
+
+531
+01:30:40,787 --> 01:30:50,387
+ve bu şekilde 20-40 k-menin, bu şekilde 0-20 k-menin, çünkü her point'in bir künün bir künün.
+
+532
+01:31:10,068 --> 01:31:28,868
+If you look at the shape, it makes like an elbow, you know, it sharply reduces, then at some anchor point, it stops, the reduction rate is going to get smaller, and it's not going to make it sharp reduce anymore.
+
+533
+01:31:28,868 --> 01:31:30,868
+And that might be a good...
+
+534
+01:31:31,572 --> 01:31:58,188
+K'ın k
+
+535
+01:31:58,931 --> 01:32:04,471
+So you can use Elbow method to determine number of k for k-means cluster.
+
+536
+01:32:05,391 --> 01:32:08,031
+It may not be always clear like that.
+
+537
+01:32:08,531 --> 01:32:11,011
+Sometimes it may have, you know,
+
+538
+01:32:11,475 --> 01:32:14,675
+2 bris, and then smaller, something like that.
+
+539
+01:32:15,015 --> 01:32:17,915
+You may have 2 potential alternatives,
+
+540
+01:32:17,915 --> 01:32:23,215
+and you can just decide whichever performs best based on the data.
+
+541
+01:32:23,355 --> 01:32:24,435
+It depends on the data.
+
+542
+01:32:24,755 --> 01:32:26,456
+The number of k depends on the data.
+
+543
+01:32:26,815 --> 01:32:30,735
+You would have to evaluate what is the best k for you,
+
+544
+01:32:31,036 --> 01:32:32,956
+and then you can go from there.
+
+545
+01:32:37,395 --> 01:32:38,475
+Okay, any questions?
+
+546
+01:32:42,355 --> 01:32:45,195
+Evet, bu soru, soru, soru, soru, soru.
+
+547
+01:33:02,692 --> 01:33:04,692
+Bu şekilde, iletişimde çalışmaların.
+
+548
+01:33:24,724 --> 01:33:30,323
+But before we go into the algorithm, we need to define a few important definitions.
+
+549
+01:33:31,524 --> 01:33:45,203
+One of the parameters that the algorithm uses is EPS. EPS is you decide on the density of a point.
+
+550
+01:33:49,747 --> 01:33:54,747
+EPS'in bir adı.
+
+551
+01:33:54,747 --> 01:33:59,747
+Bu adı.
+
+552
+01:33:59,747 --> 01:34:01,747
+Bir adı.
+
+553
+01:34:01,747 --> 01:34:04,747
+EPS'in bir adı.
+
+554
+01:34:04,747 --> 01:34:13,747
+Bu adı.
+
+555
+01:34:13,747 --> 01:34:15,747
+EPS'in bir adı.
+
+556
+01:34:18,547 --> 01:34:29,547
+Eğer bu noktaların EPS'in EPS'in daha da bir sıra,
+
+557
+01:34:29,547 --> 01:34:30,547
+bu noktaların eps'in eps'in,
+
+558
+01:34:41,984 --> 01:35:07,695
+Yani bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nokta, bu nok
+
+559
+01:35:07,695 --> 01:35:37,260
+bu
+
+560
+01:35:25,939 --> 01:35:32,059
+Bir de bu konusunda, bu konusunda,
+
+561
+01:35:32,059 --> 01:35:34,859
+ve bu konusunda,
+
+562
+01:35:34,859 --> 01:35:37,340
+bu konusunda,
+
+563
+01:35:37,340 --> 01:35:39,819
+bir konusunda,
+
+564
+01:35:39,819 --> 01:35:42,219
+ve bu konusunda,
+
+565
+01:35:42,219 --> 01:35:46,059
+bir konusunda,
+
+566
+01:35:46,059 --> 01:35:53,500
+bu konusunda,
+
+567
+01:35:53,844 --> 01:35:56,764
+ve bu cluster.
+
+568
+01:35:56,764 --> 01:35:59,963
+İlk olarak, bu bölümde,
+
+569
+01:36:20,180 --> 01:36:22,380
+bir diğer bir core point.
+
+570
+01:36:22,380 --> 01:36:28,380
+Bu bir diğer bir core point.
+
+571
+01:36:28,380 --> 01:36:30,380
+Bu bir core point.
+
+572
+01:36:30,380 --> 01:36:32,235
+Bu bir border point.
+
+573
+01:36:33,747 --> 01:36:59,747
+Third set of points are noise points. Noise points are any point that is not a core point or a border point. It's usually outside the clustering. It is sparsely located areas which can be outlier or noise or it is some higher distance or a sparse location that cannot be considered as a clustering.
+
+574
+01:37:00,020 --> 01:37:07,739
+So, we eliminate noise points from clustering, but border points and core points define the clusters.
+
+575
+01:37:08,739 --> 01:37:11,899
+Let's see an example which will make much more sense.
+
+576
+01:37:13,380 --> 01:37:16,319
+Okay, assume that our mean point threshold is fourth.
+
+577
+01:37:17,939 --> 01:37:25,100
+Okay, and our EPS is one unit, whatever that unit may be from the purpose of distance.
+
+578
+01:37:26,199 --> 01:37:26,520
+Okay.
+
+579
+01:37:26,975 --> 01:37:32,255
+Bu bir kore point, çünkü bu kore point,
+
+580
+01:37:32,255 --> 01:37:46,335
+bu kore point,
+
+581
+01:37:46,335 --> 01:37:48,015
+çünkü bu kore point,
+
+582
+01:37:48,015 --> 01:37:53,003
+bu kore point,
+
+583
+01:37:53,076 --> 01:37:58,076
+Bu bir noktası değil, çünkü bu bir noktası var.
+
+584
+01:37:58,076 --> 01:38:03,076
+Bu bir noktası var.
+
+585
+01:38:03,076 --> 01:38:19,076
+Bu noktası var.
+
+586
+01:38:19,572 --> 01:38:26,172
+Bu bir bortrağın ortak.
+
+587
+01:38:26,172 --> 01:38:28,172
+Çünkü bu bortrağın ortak,
+
+588
+01:38:28,172 --> 01:38:30,172
+bu bortrağın ortak,
+
+589
+01:38:30,172 --> 01:38:33,772
+bu bortrağın ortak.
+
+590
+01:38:33,772 --> 01:38:41,572
+Bu bortrağın ortak.
+
+591
+01:38:41,572 --> 01:38:45,572
+Çünkü bu bortrağın ortak.
+
+592
+01:38:46,163 --> 01:39:00,843
+Evet, bu konu, bordele
+
+593
+01:39:01,524 --> 01:39:03,524
+Bu nefes de farklı bir şekilde.
+
+594
+01:39:03,524 --> 01:39:05,924
+Bu nefes de de core points,
+
+595
+01:39:05,924 --> 01:39:09,124
+bu nefes de de border points
+
+596
+01:39:09,124 --> 01:39:12,004
+ve bu nefes de de noise points.
+
+597
+01:39:28,948 --> 01:39:35,948
+Bu bir kısımda, bu kısımda ve kısımda.
+
+598
+01:39:35,948 --> 01:39:45,948
+Bu bir kısımda, bu bir kısımda, bu bir kısımda, bu bir kısımda.
+
+599
+01:39:53,939 --> 01:40:15,275
+Bu şekilde, bu şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde bir şekilde
+
+600
+01:40:16,212 --> 01:40:38,212
+Bu, once we define core point and border point, we cross edges, place an edge between two core points, q and p if they are within the distance, q and p are within the distance of the core points, or that's the connection, meaning that a point is, that's connected to a q.
+
+601
+01:40:39,091 --> 01:41:01,099
+bu da bu
+
+602
+01:41:01,492 --> 01:41:21,100
+Bu, bu
+
+603
+01:41:21,171 --> 01:41:23,811
+Bu her core point,
+
+604
+01:41:23,811 --> 01:41:26,731
+her clüsteriyle yetkiliğine
+
+605
+01:41:26,731 --> 01:41:29,731
+başlayacak bir clüster.
+
+606
+01:41:29,731 --> 01:41:31,291
+Bu clüsteriyle,
+
+607
+01:41:31,291 --> 01:41:50,655
+bu clüsteriyle
+
+608
+01:41:45,555 --> 01:42:06,603
+ve bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+609
+01:42:06,963 --> 01:42:10,283
+Sonra, bu şekilde ortaklarına altyazı altyazı.
+
+610
+01:42:10,283 --> 01:42:13,324
+Şimdi, bu şekilde, bu şekilde,
+
+611
+01:42:13,324 --> 01:42:15,123
+bu şekilde, bu şekilde,
+
+612
+01:42:15,123 --> 01:42:30,884
+bu şekilde,
+
+613
+01:42:29,716 --> 01:42:43,536
+EPS ve minimum point threshold as well. Bu, bu, bir diğer bir k-means, k-means, nasıl bir k-means? Bu, bir diğer idea.
+
+614
+01:42:57,395 --> 01:42:58,535
+All the points
+
+615
+01:43:02,068 --> 01:43:10,568
+ve 4 k-neariz-neighbör, ok, we can start with any k-neariz-neighbör,
+
+616
+01:43:10,568 --> 01:43:25,108
+we notice that, you know, if you have some of these points, ok, you sort it, you can see that there are some points that actually break,
+
+617
+01:43:25,108 --> 01:43:28,228
+and then eventually the distance
+
+618
+01:43:28,623 --> 01:43:31,944
+ve bu kadar da, k-neighbördistanızı yüksekliğe.
+
+619
+01:43:56,020 --> 01:44:06,840
+EPS, 10. 10 might be a good idea if you want to use 4 nears neighbor.
+
+620
+01:44:08,180 --> 01:44:16,600
+That knee or that shape, sudden shape, defines where it could be a good idea to define the distance.
+
+621
+01:44:18,579 --> 01:44:23,579
+7-10, bu kadar iyi bir işlemini.
+
+622
+01:44:42,592 --> 01:44:46,592
+bu şekilde,
+
+623
+01:44:40,916 --> 01:44:46,476
+Dbc-can'de bu, bu da çok iyi bir şekilde çalışıyor.
+
+624
+01:45:00,463 --> 01:45:22,064
+A cluster using k-means. If you were to apply k-means to this one, for instance, this would be another centroid, it would cluster this region as one cluster, or this region as one cluster, maybe another one as one cluster. So these are not optimal shapes because these are not global structures.
+
+625
+01:45:23,744 --> 01:45:26,463
+However, once db-scan
+
+626
+01:45:30,260 --> 01:45:50,923
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+627
+01:45:51,572 --> 01:45:53,572
+ve bu olaylarla altyazı.
+
+628
+01:45:53,572 --> 01:45:56,572
+Çünkü bu algoritma altyazı altyazı altyazı.
+
+629
+01:45:56,572 --> 01:45:57,572
+Bu olaylarla altyazı altyazı altyazı.
+
+630
+01:46:19,636 --> 01:46:26,695
+As in this case, this is one cluster, but it is sparsely located.
+
+631
+01:46:27,456 --> 01:46:36,296
+However, this one is more densely located, and this particular shape has multiple densities.
+
+632
+01:46:36,655 --> 01:46:40,896
+These are highly dense clusters, and these are sparsely.
+
+633
+01:46:40,896 --> 01:46:46,315
+So in this case, it is difficult to distinguish them.
+
+634
+01:46:46,996 --> 01:46:52,996
+ve EPS ve minimum point thresholds may have different results.
+
+635
+01:46:52,996 --> 01:46:58,996
+Choosing different EPS, you will end up different cluster shapes.
+
+636
+01:46:58,996 --> 01:47:06,996
+It's usually working well when you have a uniform density of clusters.
+
+637
+01:47:06,996 --> 01:47:13,996
+So this is very highly dense cluster, this is medium density, this is low density.
+
+638
+01:47:14,355 --> 01:47:21,115
+Klasikler. So in these situations, you may not have optimal results with the clusters.
+
+639
+01:47:22,756 --> 01:47:37,595
+So DB scan has some limitations such as sensitivity parameters. This EPS have high impact and mean points threshold has a high impact on the outcome of the results.
+
+640
+01:47:38,716 --> 01:47:40,235
+It may be
+
+641
+01:47:41,300 --> 01:47:59,788
+Bu da bu
+
+642
+01:48:00,404 --> 01:48:04,404
+Bu da allı algoritmasını bahsettiğim gibi.
+
+643
+01:48:04,404 --> 01:48:09,404
+Db-scan olarak bir algoritma,
+
+644
+01:48:09,404 --> 01:48:11,404
+ve hiyerikli klustering'ın,
+
+645
+01:48:11,404 --> 01:48:14,404
+ve farklı klasitlerine ilişkilerin.
+
+646
+01:48:14,404 --> 01:48:18,404
+Ve partitiyelik klasitlerine ilişkilerin.
+
+647
+01:48:18,404 --> 01:48:20,404
+Partitiyelik bir örneğin,
+
+648
+01:48:20,404 --> 01:48:24,404
+k-meetliği klasitlerine ilişkilerin.
+
+649
+01:48:24,404 --> 01:48:26,404
+Ve bu örneğin,
+
+650
+01:48:26,644 --> 01:48:30,224
+problem, disadvantages, and advantages to this algorithm.
+
+651
+01:48:30,423 --> 01:48:31,844
+Any questions or comments?
+
+652
+01:48:41,652 --> 01:48:45,572
+Başka, you can find my email from our website.
+
+653
+01:48:48,931 --> 01:48:51,971
+Any other questions, comments?
+
+654
+01:48:54,931 --> 01:48:59,251
+Yes, from Ovisiz or the department website.
+
+655
+01:49:02,692 --> 01:49:03,971
+Email address, yes.
+
+656
+01:49:09,652 --> 01:49:13,372
+You're welcome. Any other questions, comments?
+
+657
+01:49:19,859 --> 01:49:20,199
+Ok.
+
+658
+01:49:21,108 --> 01:49:48,948
+Seemizle like no questions. So before we finish, I want to also remind you that you have to continue working on your project. I also put up the links to provide the submission report, report submission and also video presentation. Like I said at the beginning of the class is that you need to complete the
+
+659
+01:49:49,108 --> 01:50:09,868
+ve yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları yazıları
+
+660
+01:50:10,036 --> 01:50:16,716
+streaming website, then put the link on the submission, which is also okay.
+
+661
+01:50:17,595 --> 01:50:20,635
+For group projects, you all need to present it.
+
+662
+01:50:21,515 --> 01:50:27,395
+For individuals, you yourself need to present it.
+
+663
+01:50:27,935 --> 01:50:35,336
+For the submissions, if it's a group project, only one person needs to submit it, so for entire group.
+
+664
+01:50:53,427 --> 01:51:03,427
+Okay, if you have questions, let me know. If no questions, we can finish for today and we'll see you next time. As you know, next week we have...
+
+665
+01:51:03,807 --> 01:51:09,307
+Öncelikle bir gün günün bir günlük bir günlük bir günlük.
+
+666
+01:51:09,307 --> 01:51:11,307
+Öncelikle bir günlük bir günlük.
+
+667
+01:51:11,307 --> 01:51:16,307
+Öncelikle, [öğrenci]'da bir günlük bir günlük olmalı.
+
+668
+01:51:16,307 --> 01:51:19,307
+Ama bu kadar da engellerin bir günlük olmalı.
+
+669
+01:51:19,307 --> 01:51:24,307
+Bu, bu günlük bir günlük olmalı.
+
+670
+01:51:24,307 --> 01:51:28,203
+Çünkü, [öğrenci]'da bir günlük olmalı.
+
+671
+01:51:29,108 --> 01:51:33,208
+Evet, ama bu, 5-minutes per person.
+
+672
+01:51:33,788 --> 01:51:39,268
+Yani, if you are 2 people, then the project presentation should not be more than 10 minutes.
+
+673
+01:51:39,627 --> 01:51:46,608
+5-10 minutes, describe what is your data, what you have done, what type of algorithms that you have used, and what are your results.
+
+674
+01:51:47,127 --> 01:51:49,268
+It should be like 5-10 minutes, okay?
+
+675
+01:51:51,604 --> 01:52:00,364
+So, if you are individual, which is okay, then it should be in total of five minutes of yourself.
+
+676
+01:52:00,923 --> 01:52:01,104
+Yes.
+
+677
+01:52:03,564 --> 01:52:05,003
+One person can make it.
+
+678
+01:52:05,503 --> 01:52:08,604
+Thank you. Have a good day. Bye bye. See you later. Take care.

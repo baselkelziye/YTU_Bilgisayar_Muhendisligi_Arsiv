@@ -1,0 +1,3955 @@
+1
+00:00:18,196 --> 00:00:20,936
+Merhaba arkadaşlar, sesim geliyor mu online grupta?
+
+2
+00:00:22,316 --> 00:00:23,076
+Geliyor hocam, merhabalar.
+
+3
+00:00:23,916 --> 00:00:28,396
+Merhabalar, teşekkürler. Görüşmeleri nasılsınız umarım, iyidir herkes.
+
+4
+00:00:29,856 --> 00:00:30,776
+İyi hocam, siz nasılsınız iyi misiniz?
+
+5
+00:00:31,496 --> 00:00:35,695
+Ben de iyiyim, teşekkürler. Sağ olun, şimdi birazdan başlayacağız.
+
+6
+00:00:35,695 --> 00:00:40,496
+Bir iki dakikaya sınıfı da şey yapalım, yansıtayım ekranı.
+
+7
+00:01:04,308 --> 00:01:05,508
+Şimdi ekranım yansıdı mı?
+
+8
+00:01:06,508 --> 00:01:07,268
+Buradan da yansıdı.
+
+9
+00:01:07,268 --> 00:01:08,108
+Yansıyor hocam buraya.
+
+10
+00:01:08,588 --> 00:01:09,328
+Yansıyor mu? Tamam.
+
+11
+00:01:11,008 --> 00:01:13,588
+Sınıf içinde tam ekran yapayım bir saniye.
+
+12
+00:01:18,932 --> 00:01:22,212
+Tamam, burada da yansın. Tamam, başlayabiliriz.
+
+13
+00:01:22,772 --> 00:01:23,972
+Welcome to the lecture.
+
+14
+00:01:25,052 --> 00:01:28,451
+Today we will continue our discussion on classification algorithms.
+
+15
+00:01:29,412 --> 00:01:38,792
+The last class we discussed naive Bayes and Bayesian algorithms, probabilistic approaches to classification problem.
+
+16
+00:01:39,231 --> 00:01:44,551
+Today, we will continue with a new application and new algorithm.
+
+17
+00:01:45,231 --> 00:01:51,692
+Still in the classification aspect, but we will cover support vector machines.
+
+18
+00:01:51,692 --> 00:01:59,991
+It's another type of algorithms that are commonly used for both classification and regression also.
+
+19
+00:02:01,012 --> 00:02:04,211
+Support vector machines can be used for regression tasks.
+
+20
+00:02:06,067 --> 00:02:07,707
+in addition to classification.
+
+21
+00:02:09,388 --> 00:02:15,187
+Let's continue with the basic concept of linear separability.
+
+22
+00:02:16,468 --> 00:02:29,648
+The main idea of SVM, support vector machines, is that imagine we have some data points and we have labels, which can be any type of data.
+
+23
+00:02:29,648 --> 00:02:33,608
+And what we want to define is that
+
+24
+00:02:33,936 --> 00:02:45,516
+We want to find such separators that allow us to make decision on the class label of the data point.
+
+25
+00:02:46,636 --> 00:02:56,055
+So in other sense, if we have a data such that, let me go to whiteboard.
+
+26
+00:02:57,256 --> 00:02:59,372
+One second, let me make...
+
+27
+00:03:43,572 --> 00:04:09,371
+Okay, let's draw on the whiteboard. I think you can see the data points. Let me imagine we have some data points. And some of these may be in different classes. And we also have another set of classes. Assume that these are some data points that are labeled
+
+28
+00:04:09,728 --> 00:04:11,848
+As, you know, fraud.
+
+29
+00:04:12,368 --> 00:04:13,968
+These are fraud cases.
+
+30
+00:04:14,688 --> 00:04:19,927
+And these are the samples that are no fraud.
+
+31
+00:04:22,048 --> 00:04:22,648
+Okay.
+
+32
+00:04:22,648 --> 00:04:32,488
+And you want to come up with a separator that allows you to clearly define
+
+33
+00:04:34,112 --> 00:04:56,912
+Classes, when you have an upcoming data point, for instance, you have a test point at this location, and you don't know its class, and you want to decide easily whether this is going to be fraud case or no fraud case with a classification algorithm.
+
+34
+00:05:00,564 --> 00:05:22,543
+Is it possible that we find a linear separator? Assume that we have this line, and this line is the separator that decides on the label of the class.
+
+35
+00:05:23,507 --> 00:05:33,347
+So, if you had a line that exactly separates these two classes, and you can see that these are fraud cases and these are no fraud cases,
+
+36
+00:05:34,147 --> 00:05:41,487
+just by looking at, without even considering the data, you can even ignore all these data points.
+
+37
+00:05:41,867 --> 00:05:48,067
+Just by looking at this line, can you determine whether this data point is going to be fraud or not?
+
+38
+00:05:49,459 --> 00:06:06,219
+Evet, we can. We can just look at the direction of the data point by comparing to this line. If it is the right side of this line, any data point,
+
+39
+00:06:06,740 --> 00:06:25,740
+bu dağılıkları, bu dağılıkları, bu dağılıkları, bu dağılıkları,
+
+40
+00:06:28,755 --> 00:06:36,596
+We can compare to the line and line can tell you that this is to the left of the line so it must be Prout.
+
+41
+00:06:37,475 --> 00:06:38,235
+Prout case.
+
+42
+00:06:39,195 --> 00:06:45,315
+So clearly we can use this line itself as a separator or classifier.
+
+43
+00:06:46,096 --> 00:06:50,555
+The only thing that we need to check is this line.
+
+44
+00:06:51,096 --> 00:06:52,915
+So the model itself is this line.
+
+45
+00:06:53,908 --> 00:07:01,288
+So, if we can find such model, this is a linear separator, then this is our model.
+
+46
+00:07:01,487 --> 00:07:09,788
+We can compare any data point in the test case and find particular class label.
+
+47
+00:07:09,788 --> 00:07:17,448
+So, that seems very simple and also you may ask,
+
+48
+00:07:17,791 --> 00:07:25,291
+But how do we find this line? Or this line is even possible to draw.
+
+49
+00:07:25,731 --> 00:07:33,331
+So if you have two-dimensional space, you only need one linear separator, right?
+
+50
+00:07:33,411 --> 00:07:41,751
+You only need a separator. If you had one-dimensional data points, you would only require a point.
+
+51
+00:07:44,307 --> 00:07:52,068
+You would only require a point to decide. The right side of this point to the left side of this point to determine different classes.
+
+52
+00:07:52,788 --> 00:08:01,348
+If you have three-dimensional space, what kind of linear separator would you need?
+
+53
+00:08:09,732 --> 00:08:12,212
+Plane, you would need a two-dimensional plane.
+
+54
+00:08:12,212 --> 00:08:22,132
+For instance, you would need a plane like that to separate the data points and classes.
+
+55
+00:08:22,932 --> 00:08:30,612
+So simply you need some linear separator that can determine this class.
+
+56
+00:08:31,540 --> 00:08:33,080
+A plane, yes, [öğrenci].
+
+57
+00:08:33,600 --> 00:08:35,640
+So it depends on the dimension.
+
+58
+00:08:36,360 --> 00:08:41,860
+So you can have data that is highly dimensional, more than three-dimensional.
+
+59
+00:08:42,500 --> 00:08:50,240
+You can use another separator, but it's difficult to visualize more than three-dimensional space,
+
+60
+00:08:50,240 --> 00:08:58,299
+so we're not going to draw it, but for any dimension, it is possible that you can come up with some linear separator.
+
+61
+00:08:59,347 --> 00:09:00,347
+Bu kadar iyi.
+
+62
+00:09:00,347 --> 00:09:04,668
+Ama bu kadar bu seprederde bu seprederde?
+
+63
+00:09:04,668 --> 00:09:08,927
+Bu seprederde bu seprederde bir seprederde
+
+64
+00:09:08,927 --> 00:09:11,107
+bu seprederde bu seprederde?
+
+65
+00:09:14,387 --> 00:09:18,267
+Bu seprederde bu seprederde bu seprederde
+
+66
+00:09:18,267 --> 00:09:22,267
+ama bu seprederde bir seprederde.
+
+67
+00:09:22,267 --> 00:09:26,267
+Bu seprederde bu seprederde.
+
+68
+00:09:26,644 --> 00:09:30,544
+Now, assume that I have classes.
+
+69
+00:09:30,544 --> 00:09:33,451
+Let me...
+
+70
+00:09:39,443 --> 00:10:05,003
+Bu bir şey.
+
+71
+00:10:07,251 --> 00:10:09,251
+Orada da olabilir?
+
+72
+00:10:13,011 --> 00:10:15,291
+Can you find such line that separates?
+
+73
+00:10:18,491 --> 00:10:27,871
+You can find some lines and cross them on different locations, but that doesn't mean it's going to be successful, right?
+
+74
+00:10:27,871 --> 00:10:30,191
+You can always find something like that.
+
+75
+00:10:30,291 --> 00:10:31,711
+So this is one example.
+
+76
+00:10:32,851 --> 00:10:36,871
+You could also draw something like from here, you could have something here.
+
+77
+00:10:36,951 --> 00:10:38,451
+You can even go through it inside.
+
+78
+00:10:39,331 --> 00:10:39,451
+But...
+
+79
+00:10:39,956 --> 00:10:55,015
+Is this a good classifier? That is the question, right? You can certainly find a separator, but is it enough or is it good enough to be used as a classifier? That is the main question.
+
+80
+00:10:56,295 --> 00:11:07,155
+And one problem with that is how many different types of lines can you have to separate this data or any data?
+
+81
+00:11:07,572 --> 00:11:12,572
+İntro, birçok.
+
+82
+00:11:12,572 --> 00:11:13,572
+İnfinitli, right?
+
+83
+00:11:13,572 --> 00:11:14,572
+İnfinitli, many.
+
+84
+00:11:14,572 --> 00:11:17,572
+You can have infinitely many different lines.
+
+85
+00:11:17,572 --> 00:11:19,572
+You can draw it from anywhere.
+
+86
+00:11:19,572 --> 00:11:22,572
+But how do you know which one is the best?
+
+87
+00:11:22,572 --> 00:11:31,572
+So how do we come up with a line that determines the classes or classifiers?
+
+88
+00:11:31,572 --> 00:11:34,572
+And we can assume that is the best out of that.
+
+89
+00:11:36,179 --> 00:11:41,339
+So, we kind of have a problem that needs to be optimized.
+
+90
+00:11:41,459 --> 00:11:42,919
+There's an optimization problem, right?
+
+91
+00:11:42,919 --> 00:11:55,559
+We need to find such a line that minimizes the error, right?
+
+92
+00:11:56,379 --> 00:11:57,599
+Minimizes the error.
+
+93
+00:11:58,259 --> 00:12:01,919
+And that minimization function is...
+
+94
+00:12:02,676 --> 00:12:12,716
+Bu, eğer, i' to do n, our predictions, and the gap with the actual values.
+
+95
+00:12:14,036 --> 00:12:19,936
+Y' are the predictions, and y's are the actual values.
+
+96
+00:12:19,995 --> 00:12:22,456
+We can take the square, and we want to minimize this.
+
+97
+00:12:22,456 --> 00:12:29,036
+So we want to find such line, that line.
+
+98
+00:12:29,392 --> 00:12:31,392
+Bu, birçok birçok örnek veriyor.
+
+99
+00:12:31,392 --> 00:12:56,588
+Birçok örnek veriyor.
+
+100
+00:12:56,980 --> 00:13:02,620
+Bu birçok birçok birçok.
+
+101
+00:13:03,620 --> 00:13:08,779
+Bu birçok birçok.
+
+102
+00:13:10,820 --> 00:13:21,980
+Bu birçok.
+
+103
+00:13:23,283 --> 00:13:30,124
+...drave, ve bu dağıtta dağıtta dağıtta dağıtta dağıtta.
+
+104
+00:13:43,443 --> 00:14:08,971
+Bir sonraki ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin
+
+105
+00:14:09,971 --> 00:14:18,971
+So, what is your intuition? What do you think we should try to find? How do we know which one is the one that we should choose or which one is the one?
+
+106
+00:14:26,515 --> 00:14:31,915
+Okay, good. What kind of threshold and where do we generate that threshold?
+
+107
+00:14:32,055 --> 00:14:37,875
+So how do we come up with a threshold that allow us to select that particular line?
+
+108
+00:14:39,455 --> 00:14:47,635
+Or it can be a very small number, but what are we going to compare that to?
+
+109
+00:14:48,455 --> 00:14:51,355
+So how do we, where is that going to be used?
+
+110
+00:14:51,915 --> 00:14:53,548
+Or what do we...
+
+111
+00:14:53,716 --> 00:15:19,563
+Bu da bu da bu da kullanmanın bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullanmak için bir şeyleri kullan
+
+112
+00:15:19,731 --> 00:15:28,031
+We should think about what is the most important thing in this classification or determining the classifier.
+
+113
+00:15:28,031 --> 00:15:40,991
+Do you think that these points have impact on the position of the line or should they have one impact?
+
+114
+00:15:43,431 --> 00:15:46,591
+Imagine we had this particular situation.
+
+115
+00:15:49,011 --> 00:15:52,451
+Evet, let me, bir zikam.
+
+116
+00:15:54,351 --> 00:15:56,431
+OK, let's reformulate the problem.
+
+117
+00:16:02,548 --> 00:16:14,807
+We want to separate these data points linearly, but we can have many different lines that cross through.
+
+118
+00:16:14,807 --> 00:16:22,248
+So we want to find such line that classifies these data points.
+
+119
+00:16:24,048 --> 00:16:26,975
+Okay, one thing is maybe we can use...
+
+120
+00:16:26,975 --> 00:16:33,975
+ve
+
+121
+00:16:52,159 --> 00:17:03,627
+ve bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir kısımdan bir k
+
+122
+00:17:07,604 --> 00:17:13,703
+If yes, if no, what's your comments on that?
+
+123
+00:17:17,619 --> 00:17:25,919
+It can be, maybe. So, it seems like this is possible in this particular example, but would it be generally applicable?
+
+124
+00:17:27,199 --> 00:17:31,059
+Okay. [öğrenci] says no. Why no? [öğrenci], can you explain a bit more?
+
+125
+00:17:33,759 --> 00:17:45,059
+So, the idea is that let's just find a central point for each class and then find the distance between those two centroid and...
+
+126
+00:17:45,375 --> 00:17:47,615
+Generate the line in between them.
+
+127
+00:17:48,355 --> 00:17:49,536
+Okay, this is one idea.
+
+128
+00:17:53,295 --> 00:17:56,735
+Okay, [öğrenci] says the marginal points are much important.
+
+129
+00:17:57,315 --> 00:17:58,655
+It makes sense, right?
+
+130
+00:17:58,735 --> 00:17:59,596
+It's a good point.
+
+131
+00:18:00,415 --> 00:18:08,556
+But let's just first explain why not the centroids or central points would not work.
+
+132
+00:18:09,695 --> 00:18:10,115
+Go ahead, Fook.
+
+133
+00:18:10,115 --> 00:18:11,496
+Let's say.
+
+134
+00:18:12,852 --> 00:18:19,852
+ve
+
+135
+00:18:38,451 --> 00:18:40,451
+Evet.
+
+136
+00:18:40,451 --> 00:18:44,451
+Bu bir şey.
+
+137
+00:18:59,412 --> 00:19:22,304
+ve bu seprenin line
+
+138
+00:19:22,304 --> 00:19:25,304
+Bu da bu da bu problem.
+
+139
+00:19:50,067 --> 00:19:52,067
+Bu da bir example.
+
+140
+00:19:54,067 --> 00:19:56,067
+Bu da bir,
+
+141
+00:19:56,067 --> 00:19:58,067
+bu da bir,
+
+142
+00:19:58,067 --> 00:20:17,483
+bir,
+
+143
+00:20:22,132 --> 00:20:27,732
+Koncared shape, not in the middle, but the centroid could be right here, it could be right here.
+
+144
+00:20:29,292 --> 00:20:36,492
+So, in this case, the average distance would be somewhere, maybe right here, I don't know, depending on the position.
+
+145
+00:20:37,532 --> 00:20:39,692
+So, this is not a good solution, at least.
+
+146
+00:20:41,072 --> 00:20:41,952
+We can say that.
+
+147
+00:20:42,412 --> 00:20:44,192
+Okay, what else can we use?
+
+148
+00:20:44,852 --> 00:20:53,132
+[öğrenci] mentioned about marginal points may have more importance, which makes sense, right?
+
+149
+00:20:53,192 --> 00:21:08,372
+We actually had a good point. In other sense, what does it mean is that not all the points contribute the same weight to the position of the line, right?
+
+150
+00:21:11,923 --> 00:21:23,844
+We have a line, do you think that, you know, we have a class here, we have another class here, do you think these points have much significant impact on the position of the line?
+
+151
+00:21:24,764 --> 00:21:28,423
+Or do you think this guy should have more or not?
+
+152
+00:21:30,484 --> 00:21:35,284
+The one closer to the other class, right, that should have more impact.
+
+153
+00:21:35,763 --> 00:22:02,443
+Bu, bu
+
+154
+00:22:02,740 --> 00:22:04,740
+Bu birçok birçok birçok birçok birçok birçok.
+
+155
+00:22:04,740 --> 00:22:08,740
+Çünkü bu birçok birçok birçok.
+
+156
+00:22:08,740 --> 00:22:12,740
+Bu birçok birçok.
+
+157
+00:22:12,740 --> 00:22:14,740
+Ve bu birçok birçok,
+
+158
+00:22:23,155 --> 00:22:30,435
+support or marginal or marginal point or support points. And these actually have a specific name called
+
+159
+00:22:30,435 --> 00:22:46,576
+support vectors. These are called support vectors because every point is a vector. So we can say that these are support points in other sense.
+
+160
+00:22:47,155 --> 00:23:09,976
+These are support vectors. These are support vectors. Those that are closer to the other class have more significant impact. These that are away from these support vectors pretty much have no impact. So these points or these points have no impact on the position of the line because these
+
+161
+00:23:10,548 --> 00:23:38,548
+bu
+
+162
+00:23:37,364 --> 00:23:42,124
+But we may not be sure about these that are closer to other classes.
+
+163
+00:23:42,743 --> 00:23:44,943
+And those are likely to generate errors.
+
+164
+00:23:45,624 --> 00:23:56,983
+So the line that is going to separate these two classes must be something that depends on the supports, support points, support vectors.
+
+165
+00:23:57,703 --> 00:24:04,384
+And the algorithm is actually named after this line that's linear separator.
+
+166
+00:24:06,612 --> 00:24:21,731
+This line that we use as a linear separator is called support vector machine.
+
+167
+00:24:21,731 --> 00:24:26,632
+The name machine is simply just the line that separates these.
+
+168
+00:24:28,231 --> 00:24:29,231
+bu
+
+169
+00:24:27,316 --> 00:24:52,940
+Bu, bu
+
+170
+00:24:53,236 --> 00:25:16,748
+ve bu ve
+
+171
+00:25:17,268 --> 00:25:20,327
+ve bu algoritma algoritma
+
+172
+00:25:20,327 --> 00:25:30,316
+bu algoritma
+
+173
+00:25:33,844 --> 00:25:35,224
+That maximizes.
+
+174
+00:25:43,000 --> 00:25:57,000
+bu algoritma
+
+175
+00:25:41,587 --> 00:26:09,228
+ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve bu şekilde ve
+
+176
+00:26:09,748 --> 00:26:13,228
+Önce bir şey.
+
+177
+00:26:13,228 --> 00:26:17,148
+Bu bir diğer bir diğer bir diğer bir,
+
+178
+00:26:17,148 --> 00:26:21,628
+bu bir süreçte oradan bir süreçte
+
+179
+00:26:21,628 --> 00:26:24,628
+bu süreçte de bu süreçte de bu süreçte
+
+180
+00:26:24,628 --> 00:26:26,188
+bu süreçte de bu süreçte.
+
+181
+00:26:26,188 --> 00:26:29,988
+Bu da bu süreçte de bu süreçte
+
+182
+00:26:29,988 --> 00:26:34,468
+bu süreçte de bu süreçte de bu süreçte
+
+183
+00:26:34,468 --> 00:26:36,628
+ama bu süreçte de bu süreçte
+
+184
+00:26:37,076 --> 00:26:40,296
+ve bu nokta, çok daha fazla erör.
+
+185
+00:27:04,051 --> 00:27:30,123
+Çünkü, bu şekilde, daha çok daha
+
+186
+00:27:32,884 --> 00:27:57,740
+bu yi
+
+187
+00:27:58,451 --> 00:28:05,612
+Bu, anything that would fall into that would be red in fact, but the line would be classifying them as blue.
+
+188
+00:28:06,292 --> 00:28:13,412
+But in other sense, if we try the other direction, if we move this line closer to the blue,
+
+189
+00:28:14,451 --> 00:28:24,572
+and let's assume this is our classifier line, and in this case, this line would correctly classify all these blues correctly,
+
+190
+00:28:27,059 --> 00:28:30,039
+Buzi bu bölümde bu bölümde bu bölümde
+
+191
+00:28:30,039 --> 00:28:32,039
+bölümde bu bölümde
+
+192
+00:28:32,039 --> 00:28:32,819
+ileride
+
+193
+00:28:32,819 --> 00:28:39,679
+bu bölümde
+
+194
+00:28:39,679 --> 00:28:56,920
+bölümde
+
+195
+00:28:54,867 --> 00:29:00,875
+bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin
+
+196
+00:29:04,980 --> 00:29:12,980
+Bu bir şey, bu bir şey.
+
+197
+00:29:12,980 --> 00:29:14,980
+Bu bir şey, bir şey.
+
+198
+00:29:14,980 --> 00:29:16,980
+Bir şey, bir şey, bir şey.
+
+199
+00:29:16,980 --> 00:29:20,432
+Bir şey, bir şey.
+
+200
+00:29:20,432 --> 00:29:27,011
+But it is much younger compared to neural networks, decision trees and many algorithms.
+
+201
+00:29:27,672 --> 00:29:37,551
+So it used to be one of the most successful algorithms until deep learning and the success of neural networks in recent years.
+
+202
+00:29:38,324 --> 00:29:43,324
+Bu da çok çok çalışmalı çalışmalı çalışmalı çalışmalı.
+
+203
+00:29:43,324 --> 00:29:44,324
+Bu da çok çok çok çalışmalı.
+
+204
+00:29:44,324 --> 00:29:47,324
+Özellikle de imişkili tasla çalışmalı.
+
+205
+00:30:04,852 --> 00:30:28,052
+A russian scientist, Vapnik, is the founder of this algorithm, and it was founded around 1990s, so it is relatively new because other AI algorithms are generated around 1950s, 60s, 70s, so it's one of the youngest algorithms. It is quite a useful algorithm.
+
+206
+00:30:28,768 --> 00:30:46,220
+Bu konuda kullanılmasını kullanarak kullanmak için kullanılmasını kullanarak kullanmak için kullanılmasını kullanarak kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını
+
+207
+00:30:46,420 --> 00:30:54,200
+ve bu birçok margini
+
+208
+00:30:54,200 --> 00:30:56,900
+bu birçok margini
+
+209
+00:30:56,900 --> 00:30:58,940
+ve birçok margini
+
+210
+00:30:58,940 --> 00:31:03,780
+birçok margini
+
+211
+00:31:03,780 --> 00:31:10,519
+ve buçok margini
+
+212
+00:31:10,519 --> 00:31:12,500
+non-linear data points
+
+213
+00:31:14,420 --> 00:31:39,948
+Bu konuda kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmasını kullanmak için kullanılmas
+
+214
+00:31:40,692 --> 00:31:45,731
+So, we don't always have very nice and clear examples.
+
+215
+00:31:45,731 --> 00:31:52,211
+So, we may still have some good data representations,
+
+216
+00:31:54,932 --> 00:31:58,692
+almost linearly separable with some...
+
+217
+00:32:03,316 --> 00:32:06,895
+Unwanted examples.
+
+218
+00:32:07,915 --> 00:32:18,915
+So, if we have these red and black ones on each other side, we could clearly choose a separator and say that, okay, we are happy with this.
+
+219
+00:32:18,915 --> 00:32:23,836
+It can classify blacks and reds quickly.
+
+220
+00:32:24,615 --> 00:32:27,076
+But how about these guys?
+
+221
+00:32:28,019 --> 00:32:39,000
+On each side, these are reds that's supposed to be on the other side, there are some blacks that's supposed to be on the right hand side, but it is on the left side.
+
+222
+00:32:39,759 --> 00:32:47,240
+So what should we do? Normally we cannot use this line to generate classes.
+
+223
+00:32:50,039 --> 00:32:50,959
+Any suggestion?
+
+224
+00:32:55,892 --> 00:33:08,531
+And one actually tip is that in case we don't have many of these, or if we don't have many of these examples,
+
+225
+00:33:12,339 --> 00:33:16,819
+If it is many, then certainly the algorithm is not going to work well.
+
+226
+00:33:16,919 --> 00:33:25,119
+But if you have some minor or a number of examples that are erroneous, but we can still live with that.
+
+227
+00:33:25,699 --> 00:33:30,479
+If there's some situation like that, can we still draw the style?
+
+228
+00:33:31,459 --> 00:33:34,279
+Normally we can't. It needs to linearly separate.
+
+229
+00:33:34,279 --> 00:33:37,839
+But there's a version of this SVM.
+
+230
+00:33:41,172 --> 00:33:43,052
+called soft margin.
+
+231
+00:33:47,155 --> 00:34:02,256
+Sof margin, meaning that we are okay with a certain threshold that we allow to pass from one side to the other side.
+
+232
+00:34:03,175 --> 00:34:11,815
+So these are called slack variable, meaning that we allow a few examples.
+
+233
+00:34:14,900 --> 00:34:19,099
+Bu bir problem, ama sadece bir konum veri,
+
+234
+00:34:19,099 --> 00:34:21,900
+bu konum veri bir nokta
+
+235
+00:34:21,900 --> 00:34:23,900
+bir nokta
+
+236
+00:34:23,900 --> 00:34:25,900
+nokta
+
+237
+00:34:25,900 --> 00:34:26,900
+bu konum veri
+
+238
+00:34:26,900 --> 00:34:32,900
+bir nokta
+
+239
+00:34:32,900 --> 00:34:36,655
+bu konum veri
+
+240
+00:34:36,655 --> 00:34:43,775
+Tamamen, bu bir diğer tarafı, bu bir diğer tarafı, bu bir diğer tarafı, bu bir diğer tarafı.
+
+241
+00:34:43,775 --> 00:34:45,155
+Bu, bu bir soru.
+
+242
+00:34:46,596 --> 00:34:48,155
+Ve bu soru.
+
+243
+00:35:02,208 --> 00:35:28,652
+bu bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin bir şeyin
+
+244
+00:35:29,331 --> 00:35:34,032
+On the top, we can clearly see that these are linearly separated.
+
+245
+00:35:34,771 --> 00:35:41,471
+This is class 1 minus, so if we use this line, we can clearly separate.
+
+246
+00:35:42,251 --> 00:35:48,751
+Okay, and this is also the case, the margin may be small, but we can certainly classify.
+
+247
+00:35:49,511 --> 00:35:51,152
+What about this example?
+
+248
+00:35:53,051 --> 00:35:54,751
+Is it linearly separable?
+
+249
+00:35:57,268 --> 00:36:44,619
+Bu, bu
+
+250
+00:36:49,780 --> 00:36:52,780
+Bu ne?
+
+251
+00:36:52,780 --> 00:36:53,780
+Svm'i bu ne?
+
+252
+00:36:53,780 --> 00:37:08,844
+Bu ne?
+
+253
+00:37:13,460 --> 00:37:20,740
+Okay, so there's a suggestion from [öğrenci], and he says, we should make it 3D and separate with hyperplane.
+
+254
+00:37:21,680 --> 00:37:27,700
+But is there any guarantee that if we make it 3D, it's going to be linear separable, [öğrenci]?
+
+255
+00:37:28,280 --> 00:37:33,780
+How can you make sure that it's going to be linear separable?
+
+256
+00:37:42,291 --> 00:37:44,012
+We don't need to use a straight line.
+
+257
+00:37:45,072 --> 00:37:45,391
+Okay.
+
+258
+00:37:46,831 --> 00:37:48,652
+What should we use, [öğrenci]?
+
+259
+00:37:55,699 --> 00:38:08,479
+Evet, we can have many dimensions, it can be high dimensional, so that's true, but making 3D is not going to be itself enough, we should also do something else, right?
+
+260
+00:38:10,379 --> 00:38:13,759
+How do we guarantee that it's going to be useful?
+
+261
+00:38:22,195 --> 00:38:25,615
+The shape may help us, right?
+
+262
+00:38:25,735 --> 00:38:38,735
+For instance, if our separation line, for this case, if instead of using a line, what if we had a chance to use something else?
+
+263
+00:38:39,815 --> 00:38:49,355
+Like what if we had some polynomial, if we were able to use a polynomial, or if we were to use a sphere instead of...
+
+264
+00:38:49,460 --> 00:38:52,920
+A line to define the separator.
+
+265
+00:38:53,920 --> 00:38:55,860
+This would work in this case, right?
+
+266
+00:38:55,960 --> 00:39:07,380
+We could define something like that, some mathematical representation to separate, which would certainly work well, but not as linear separator.
+
+267
+00:39:09,880 --> 00:39:15,500
+The unfortunate thing is that with SVM, you need to find a linear separator.
+
+268
+00:39:16,179 --> 00:39:19,539
+So, there's a clear separation of line.
+
+269
+00:39:20,699 --> 00:39:22,879
+So, that's going to be a challenge.
+
+270
+00:39:23,759 --> 00:39:27,299
+Any other tools maybe we should consider, right?
+
+271
+00:39:27,379 --> 00:39:29,379
+We should consider something else.
+
+272
+00:39:29,379 --> 00:39:34,379
+And that is the actual point where we discuss kernels.
+
+273
+00:39:34,659 --> 00:39:38,920
+And kernels clearly is the solution to this problem.
+
+274
+00:39:39,299 --> 00:39:40,379
+And using some...
+
+275
+00:39:40,655 --> 00:39:46,815
+Açıkçı, non-linear, representasyon, we could certainly draw this.
+
+276
+00:39:47,175 --> 00:39:49,435
+But let's see how it can be done.
+
+277
+00:39:49,935 --> 00:39:54,556
+But before we do that, let's take a break and we will continue after that.
+
+278
+00:39:54,635 --> 00:39:55,596
+Any questions so far?
+
+279
+00:40:00,000 --> 00:40:21,480
+Any questions? Okay, if no questions, let's think about what can we do on this problem, and we will see the potential solutions in the second hour. Okay, let's give a break. We will continue at 3 o'clock. Okay, see you soon.
+
+280
+00:57:20,244 --> 00:57:46,864
+Okay. Hello. Welcome back. Can you hear me fine? Yes. Okay. Thank you. I see on the chat [öğrenci] had a question. Can we get answers for the midterm exam? I haven't had a chance to review the exam papers yet. So it will take me some time. There's a lot of students in the course.
+
+281
+00:57:47,347 --> 00:57:49,988
+116, or something.
+
+282
+00:57:50,288 --> 00:57:53,528
+So, unfortunately, it will take some time.
+
+283
+00:57:53,528 --> 00:57:57,008
+But I will probably announce it in a week or two.
+
+284
+00:57:58,448 --> 00:58:01,788
+But I haven't had a chance to look at it yet.
+
+285
+00:58:02,867 --> 00:58:07,367
+I will announce it on the online news.edu.tr.
+
+286
+00:58:07,428 --> 00:58:11,628
+So you can check there if it's announced.
+
+287
+00:58:13,008 --> 00:58:14,048
+Okay, thank you, [öğrenci].
+
+288
+00:58:14,516 --> 00:58:41,516
+Any questions before we continue? Let me share my screen. Okay. Before the break, we were discussing kernels. So the problem is, what if we have non-linearly separable data? Can we still use support vector machines? If so, how can we do that? The problem is that. Okay. Let me use...
+
+289
+00:58:43,112 --> 00:58:53,112
+Bu ne?
+
+290
+00:58:42,675 --> 00:58:49,996
+Bu da bu da bu da bu.
+
+291
+00:58:51,556 --> 00:58:52,556
+Ok.
+
+292
+00:58:54,956 --> 00:59:00,556
+Bu da bu da bu da bu da bu da bu.
+
+293
+00:59:00,556 --> 00:59:03,435
+Bu da bu da bu da bu.
+
+294
+00:59:04,635 --> 00:59:05,556
+Ok.
+
+295
+00:59:17,940 --> 00:59:21,179
+Let me draw some data points.
+
+296
+00:59:26,195 --> 00:59:26,655
+Okay.
+
+297
+00:59:40,563 --> 00:59:44,023
+I don't know if you can see the point. Is it clear? Is it visible?
+
+298
+00:59:47,635 --> 00:59:48,635
+Evet, iyi.
+
+299
+00:59:54,195 --> 00:59:57,535
+Okay, assume we have this type of shape.
+
+300
+00:59:58,355 --> 01:00:12,415
+Okay, what we have is a data point where these blue ones is outside, there's a lot more, and there are some green points.
+
+301
+01:00:14,275 --> 01:00:19,315
+And certainly not use a linear...
+
+302
+01:00:19,344 --> 01:00:46,744
+Siyan-separator. If we had in this case, for instance, a linear separator like that, it would make a lot of error. That would not be a good idea. If you use another line, there's no point that we can, there's no line that we can generate successfully separate these data points.
+
+303
+01:00:48,052 --> 01:00:50,892
+Çünkü bu data non-linear.
+
+304
+01:00:53,692 --> 01:01:03,812
+Bu ne?
+
+305
+01:01:04,812 --> 01:01:10,052
+Bir şeyin bir şeyin kullanılması, bir şeyin kullanılması, bir şeyin kullanılması.
+
+306
+01:01:10,812 --> 01:01:13,652
+Bu ne?
+
+307
+01:01:15,284 --> 01:01:33,044
+We choose a kernel type. Kernels are some mathematical equations, or mathematical transformations,
+
+308
+01:01:33,044 --> 01:01:40,664
+that we should apply to the data so that it can be represented in other form.
+
+309
+01:01:41,204 --> 01:01:43,644
+Bu da bir sepkede alıner bir sepkede.
+
+310
+01:01:44,463 --> 01:01:48,304
+Ok, şimdi bu sepkede alın.
+
+311
+01:01:49,403 --> 01:01:50,104
+Ok, bilmiyorum.
+
+312
+01:01:50,664 --> 01:02:01,224
+Bu sepkede alın.
+
+313
+01:02:01,884 --> 01:02:04,264
+Ok, bu sepkede alın.
+
+314
+01:02:04,264 --> 01:02:04,824
+Bu sepkede alın.
+
+315
+01:02:05,463 --> 01:02:06,903
+Ve bu sepkede alın.
+
+316
+01:02:08,692 --> 01:02:09,692
+Evet, bu.
+
+317
+01:02:13,364 --> 01:02:25,324
+These green points is a class and we have some red-blue points outside of that.
+
+318
+01:02:25,824 --> 01:02:30,903
+These are blue points and these are green points.
+
+319
+01:02:32,324 --> 01:02:37,603
+So we don't have a linear solution. This is non-linear data. What can we do?
+
+320
+01:02:39,284 --> 01:02:43,104
+We will try to come up with some transformation.
+
+321
+01:02:45,404 --> 01:02:53,604
+We will apply this kernel function.
+
+322
+01:02:56,204 --> 01:02:58,884
+So this is our original data points.
+
+323
+01:02:59,964 --> 01:03:03,484
+We want to transform a kernel.
+
+324
+01:03:06,228 --> 01:03:12,012
+Bu bir
+
+325
+01:03:15,827 --> 01:03:18,768
+ve diğer data points
+
+326
+01:03:18,768 --> 01:03:21,587
+ve bir şey yapabileceğimiz
+
+327
+01:03:21,587 --> 01:03:25,347
+bir şey
+
+328
+01:03:25,347 --> 01:03:45,192
+bu
+
+329
+01:03:41,876 --> 01:03:50,876
+Bu da bu da bu da bu da bu da label.
+
+330
+01:04:09,427 --> 01:04:18,768
+If we use some spherical shape, this would be able to classify this particular class devos.
+
+331
+01:04:19,447 --> 01:04:30,768
+So what we need to do is we need to come up with some kernel function that will be able to transform this particular...
+
+332
+01:04:31,507 --> 01:04:55,211
+ve bu şekilde yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz bir şey yapabileceğimiz
+
+333
+01:04:55,380 --> 01:04:59,420
+bu kersiyon kernel
+
+334
+01:04:59,420 --> 01:05:01,860
+simply
+
+335
+01:05:01,860 --> 01:05:09,940
+e to the power of
+
+336
+01:05:09,940 --> 01:05:15,340
+the function itself, kersiyon kernel function is
+
+337
+01:05:15,340 --> 01:05:18,700
+e to the power of
+
+338
+01:05:19,507 --> 01:05:44,619
+Bu, bu
+
+339
+01:05:51,668 --> 01:06:05,688
+Bu, each point u, or each vector u, it will apply this kernel function. The u is our vector, and landmark is the vector that we want to anchor for this data point.
+
+340
+01:06:07,068 --> 01:06:18,327
+So, what will happen is that, let's assume this particular, are you able to see the dashboard, the blackboard? Can you see it? Okay.
+
+341
+01:06:19,635 --> 01:06:21,895
+So, what kind of function is this?
+
+342
+01:06:23,096 --> 01:06:35,055
+So, if a data point is closer, okay, if a data point is very close to this particular, let me say that this is v, okay, vector v, or point v.
+
+343
+01:06:36,335 --> 01:06:46,635
+If that is very close to this particular e to the power of, so v is very close to landmark.
+
+344
+01:06:48,403 --> 01:06:52,163
+ve 2, sınıflandırma.
+
+345
+01:06:53,844 --> 01:06:59,284
+Okay, so if these two numbers are very close, assume that they are identical.
+
+346
+01:06:59,844 --> 01:07:01,683
+So the distance between them is what?
+
+347
+01:07:04,724 --> 01:07:06,244
+This is going to be zero, right?
+
+348
+01:07:07,364 --> 01:07:11,523
+So that's going to converge to the e to the power of zero.
+
+349
+01:07:13,123 --> 01:07:14,963
+So the result is going to be one.
+
+350
+01:07:16,275 --> 01:07:18,376
+0 is 1, right?
+
+351
+01:07:19,255 --> 01:07:20,775
+So in other sense,
+
+352
+01:07:21,215 --> 01:07:23,175
+this is the kernel transformation.
+
+353
+01:07:23,836 --> 01:07:25,036
+This is going to be 1.
+
+354
+01:07:25,175 --> 01:07:26,096
+This is going to be 0.
+
+355
+01:07:27,715 --> 01:07:30,275
+So if any data point
+
+356
+01:07:30,275 --> 01:07:33,056
+that is exactly on the line
+
+357
+01:07:33,056 --> 01:07:36,015
+of the landmark point,
+
+358
+01:07:37,235 --> 01:07:38,515
+it's going to be
+
+359
+01:07:38,515 --> 01:07:40,435
+at 1.
+
+360
+01:07:41,204 --> 01:07:45,204
+1. Tertinal bir değer var.
+
+361
+01:07:45,204 --> 01:07:47,204
+1.
+
+362
+01:08:06,260 --> 01:08:14,300
+İngiltere
+
+363
+01:08:14,300 --> 01:08:16,680
+bu bir
+
+364
+01:08:16,680 --> 01:08:37,359
+bir
+
+365
+01:08:35,699 --> 01:08:38,699
+Evet, bu bir de var.
+
+366
+01:08:38,699 --> 01:08:55,699
+Bu bir de var.
+
+367
+01:08:55,699 --> 01:08:58,699
+Bir de var.
+
+368
+01:09:03,188 --> 01:09:04,568
+As a large distance,
+
+369
+01:09:14,579 --> 01:09:19,579
+ve bu kadar büyük bir numara, ama bu kadar 5.
+
+370
+01:09:19,579 --> 01:09:25,579
+Bu kadar 5'ye kadar, bu kadar 5'ye kadar.
+
+371
+01:09:25,579 --> 01:09:33,579
+Ama çünkü 2'ye kadar 2'ye kadar, e'ye kadar 25'ye kadar.
+
+372
+01:09:33,579 --> 01:09:37,579
+Bu kadar bir numara?
+
+373
+01:09:42,931 --> 01:09:47,371
+Bu bir kere, 25, bir kere, büyük bir kere.
+
+374
+01:10:05,427 --> 01:10:07,427
+çok yaklaşık 0.
+
+375
+01:10:07,427 --> 01:10:27,427
+Bu, çok yaklaşık 0.
+
+376
+01:10:27,427 --> 01:10:29,427
+Bu, bu, çok yaklaşık 0.
+
+377
+01:10:29,427 --> 01:10:32,895
+Bu, bu, bu, bu.
+
+378
+01:10:32,895 --> 01:11:01,500
+bu
+
+379
+01:10:58,292 --> 01:11:02,072
+çoğutluğun bir nama ve bir nama bir nama var.
+
+380
+01:11:02,072 --> 01:11:04,032
+Bu nama çok çok fazla.
+
+381
+01:11:05,231 --> 01:11:06,792
+Bu nama çok çok çok iyi.
+
+382
+01:11:07,652 --> 01:11:11,952
+Bu nama bu nama bir nama,
+
+383
+01:11:12,612 --> 01:11:14,332
+bu nama bir nama,
+
+384
+01:11:16,332 --> 01:11:24,752
+nama bir nama,
+
+385
+01:11:27,539 --> 01:11:33,299
+Now, the one that we projected can be quickly separated.
+
+386
+01:11:33,299 --> 01:11:38,819
+All the ones that are up to the line is labeled as green.
+
+387
+01:11:38,819 --> 01:11:41,699
+Anything below that is going to be blue.
+
+388
+01:11:41,699 --> 01:11:51,059
+Okay, so in other sense, we can think of like projecting this data to a higher dimension, two-dimensional space.
+
+389
+01:11:51,503 --> 01:12:05,363
+Although we are not projecting it, but the shape would look like we are projecting it and we can divide it using another linear separable shape.
+
+390
+01:12:05,843 --> 01:12:13,304
+So let me show you the image, how it looks.
+
+391
+01:12:27,155 --> 01:12:30,155
+ve bu projelerin de altyazıları.
+
+392
+01:12:30,155 --> 01:12:32,155
+Bu, diğer sensin,
+
+393
+01:12:32,155 --> 01:12:34,155
+ve bu kernel function
+
+394
+01:12:38,292 --> 01:12:45,292
+Kernel Function'in gibi, bu kernel konu olarak da bu kernel konu olarak
+
+395
+01:12:45,292 --> 01:12:51,292
+bu kernel konu olarak da bu kernel konu olarak da bu kernel konu olarak
+
+396
+01:12:51,292 --> 01:13:03,292
+ve bu kernel konu olarak da bu kernel konu olarak da bu kernel konu olarak
+
+397
+01:13:06,131 --> 01:13:13,211
+The blue points are on the edges, and all the core red points are on this left-hand side.
+
+398
+01:13:13,211 --> 01:13:22,291
+Now we can use this linear separator plane or linear classifier to separate these two things.
+
+399
+01:13:22,707 --> 01:13:34,327
+Okay, although in the lower dimension this was not linearly separable, in higher dimension this will be possible to separate.
+
+400
+01:13:34,868 --> 01:13:38,407
+Okay, and this function is the kernel function.
+
+401
+01:13:39,028 --> 01:13:41,327
+Kernel is a mathematical function.
+
+402
+01:13:41,708 --> 01:13:46,268
+We simply transform by multiplying the results with the kernel,
+
+403
+01:13:46,268 --> 01:13:53,887
+and that generates this nice shape that allow us to separate.
+
+404
+01:13:54,448 --> 01:13:56,268
+One problem is that...
+
+405
+01:13:57,076 --> 01:14:22,112
+Bu şekilde değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değişiklikler değiş
+
+406
+01:14:22,112 --> 01:14:27,791
+Some of them might be much more appropriate for polynomial shapes.
+
+407
+01:14:28,752 --> 01:14:35,551
+Then we would use these polynomial functions up to some degree of dimension.
+
+408
+01:14:35,551 --> 01:14:38,032
+Or in our example, we just use...
+
+409
+01:14:38,612 --> 01:14:48,692
+A gaussian kernel, when you have these round shapes, gaussian shapes, it makes much more sense to use gaussian kernel.
+
+410
+01:14:48,692 --> 01:14:51,932
+It also has a name, radial basis kernel, same thing.
+
+411
+01:14:53,212 --> 01:15:04,971
+Or if your data is much more like, you know, represented like this shape, you can use sigmoids.
+
+412
+01:15:06,515 --> 01:15:13,796
+sigmoid, as a separation. So you have these different types of data shapes. You can use different,
+
+413
+01:15:14,595 --> 01:15:20,115
+there are many, many variants of kernels that you can actually generate your own kernel,
+
+414
+01:15:20,115 --> 01:15:26,115
+depending on the shape. And you can try different types of kernels to fit in your data
+
+415
+01:15:26,995 --> 01:15:29,635
+and choose the one that works the best. Okay?
+
+416
+01:15:30,100 --> 01:15:34,100
+Bu bir şekilde bir şekilde bir şekilde çalışmaların.
+
+417
+01:15:34,100 --> 01:15:38,100
+Bu bir şekilde çalışmaların ve bir şekilde çalışmaların.
+
+418
+01:15:38,100 --> 01:15:42,100
+Bu şekilde farklı bir şekilde çalışmaların.
+
+419
+01:15:42,100 --> 01:15:46,100
+Bu şekilde bir şekilde çalışmaların.
+
+420
+01:15:46,100 --> 01:15:52,100
+Bu birçok formu olarak, SPM'e de kullanmak için bir şekilde kullanmak için.
+
+421
+01:15:52,100 --> 01:15:57,868
+Bu, bu şekilde bir şekilde kullanmak için bir şekilde kullanmak için bir şekilde kullanmak için.
+
+422
+01:15:58,036 --> 01:16:24,652
+Bu bir poyannol şekle kullanmanı kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak kullanarak
+
+423
+01:16:26,836 --> 01:16:32,836
+Evet, bir örneğe bir örneğe.
+
+424
+01:17:11,828 --> 01:17:14,388
+Ok, let me draw it here.
+
+425
+01:17:14,908 --> 01:17:20,488
+In case we have multiple shapes, let me draw this.
+
+426
+01:17:22,888 --> 01:17:25,508
+What if we had this type of shape?
+
+427
+01:17:29,300 --> 01:17:34,720
+Okay, not one, but two of these shapes.
+
+428
+01:17:36,059 --> 01:17:37,600
+Or it can be more than two.
+
+429
+01:17:40,079 --> 01:17:42,399
+What should we do in this situation?
+
+430
+01:17:46,547 --> 01:17:59,327
+Okay, in this case, we can still use the kernel idea, but the idea would be that we use multiple kernels and multiple landmarks.
+
+431
+01:17:59,327 --> 01:18:09,347
+Okay, this is k1, this is k2, and there are two landmark points.
+
+432
+01:18:10,608 --> 01:18:12,688
+Okay, so when we project it,
+
+433
+01:18:14,676 --> 01:18:15,956
+ve project this.
+
+434
+01:18:21,203 --> 01:18:45,612
+Bu, bu
+
+435
+01:18:45,779 --> 01:18:48,659
+2 sigma squared.
+
+436
+01:18:50,539 --> 01:18:54,879
+So what we'll do is that in case we have this data point
+
+437
+01:18:54,879 --> 01:18:57,899
+and this is going to be closer,
+
+438
+01:18:58,599 --> 01:19:02,019
+this is our landmark L2, this is L1.
+
+439
+01:19:02,679 --> 01:19:07,500
+This guy is going to be closer to this particular landmark.
+
+440
+01:19:08,859 --> 01:19:12,159
+So our joint function is going to be
+
+441
+01:19:14,899 --> 01:19:17,119
+k1 plus k2.
+
+442
+01:19:18,000 --> 01:19:20,699
+That is going to determine the result.
+
+443
+01:19:21,659 --> 01:19:39,119
+Okay, what we will do is k1 will have 1 divided by e to the power of v minus L2 squared divided by 2 sigma squared plus, and that's going to generate what?
+
+444
+01:19:39,699 --> 01:20:04,395
+Bu, bu
+
+445
+01:20:05,716 --> 01:20:17,376
+Let's check the k2 part, is equal 1 e to the power of v minus L2 square divided by 2 sigma square.
+
+446
+01:20:18,636 --> 01:20:26,716
+From k2, this data point is closer to that one, so this is going to be very close to 0.
+
+447
+01:20:27,256 --> 01:20:30,716
+Okay, and that's going to converge to...
+
+448
+01:20:31,252 --> 01:20:34,052
+1 divided by e to the power of 0.
+
+449
+01:20:34,552 --> 01:20:36,992
+So this is going to be 1, right?
+
+450
+01:20:37,352 --> 01:20:40,672
+This is going to be 1, 1 divided by 1 is going to be 1.
+
+451
+01:20:41,352 --> 01:20:44,731
+So simply, this is going to be around 1.
+
+452
+01:20:45,552 --> 01:20:49,672
+The total kernel output is going to be 1.
+
+453
+01:20:53,076 --> 01:20:53,576
+Okay.
+
+454
+01:20:55,335 --> 01:21:04,655
+So, as you can see, the only data points that are going to be located at 1 is going to be these red points.
+
+455
+01:21:05,216 --> 01:21:10,536
+Whether it is closer to this landmark or that landmark, they will be located at 1.
+
+456
+01:21:10,536 --> 01:21:18,755
+But all the other points, black points, still going to be on the zero line.
+
+457
+01:21:20,083 --> 01:21:26,283
+Çünkü, they are far away from both kernels, it doesn't matter where they are located.
+
+458
+01:21:30,003 --> 01:21:57,483
+Bu konjunkturla sadece bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla bir konjunkturla
+
+459
+01:21:57,716 --> 01:21:59,716
+Evet, bu konuda çalışmalı.
+
+460
+01:22:01,716 --> 01:22:03,716
+Evet, devam edelim.
+
+461
+01:22:48,851 --> 01:22:54,131
+So, cost is how much the algorithm penalizes incorrect points.
+
+462
+01:22:54,832 --> 01:23:01,412
+If you have a large cost value parameter, the algorithm is going to try something like this.
+
+463
+01:23:01,412 --> 01:23:09,992
+It's going to try to get away those incorrect positions out of this classification line.
+
+464
+01:23:10,692 --> 01:23:13,412
+So, what it is going to do is...
+
+465
+01:23:14,644 --> 01:23:19,644
+Bu nedenle bir şey bu kadar da birçok olmalı.
+
+466
+01:23:19,644 --> 01:23:23,244
+Çünkü bu kadar büyük birçok olmalı,
+
+467
+01:23:23,244 --> 01:23:26,644
+bu kadar da bu sorunlarına ulaşabilirsiniz.
+
+468
+01:23:26,644 --> 01:23:32,644
+Bu nedenle de bu sorunlarla ulaşabilirsiniz.
+
+469
+01:23:32,644 --> 01:23:40,644
+Bu sorunlarla ulaşabilirsiniz.
+
+470
+01:23:41,716 --> 01:23:46,216
+So you don't want to have very large C because it will result in overfitting.
+
+471
+01:23:48,896 --> 01:23:59,216
+Some cost is okay because, you know, we also want to have regularization because these are, okay, these are although
+
+472
+01:23:59,663 --> 01:24:14,583
+Errors, but the line is smooth, so we still have some flexibility to allow errors. At the same time, we prevent overfitting.
+
+473
+01:24:15,203 --> 01:24:24,264
+Because in the test data, we may have some points that may result in this area. But having too small, c is also not.
+
+474
+01:24:24,851 --> 01:24:38,172
+A good case, because when you have two small c, in that case, the model will have a lot of these error points covered in the line.
+
+475
+01:24:38,172 --> 01:24:46,631
+So you want to have some way in the middle where you can have models that are generalizable and accurate, but not overfitting.
+
+476
+01:24:46,891 --> 01:24:49,631
+Okay, this is one parameter to apply regularization.
+
+477
+01:24:50,068 --> 01:25:03,788
+There is one more parameter, it's called gamma, but gamma is specific to RBF kernel, or is specific to Gaussian kernel.
+
+478
+01:25:04,628 --> 01:25:09,167
+Gamma is used in this case, let me show you.
+
+479
+01:25:10,128 --> 01:25:11,188
+Gamma is a parameter.
+
+480
+01:25:14,292 --> 01:25:18,152
+Gamma is a parameter that multiplies, here this is gamma.
+
+481
+01:25:21,619 --> 01:25:28,819
+Okay, Gamma, when you have a kernel function that is RBF, so let me just redraw this again.
+
+482
+01:25:31,779 --> 01:25:46,659
+Okay, this is RBF or Gaussian kernel is 1 divided by e to the power of v minus L square 2 sigma
+
+483
+01:25:47,412 --> 01:25:50,412
+ve yukarıdaki parçası var.
+
+484
+01:25:50,412 --> 01:25:54,412
+Gamma'ı bir şeyin
+
+485
+01:25:54,412 --> 01:25:57,412
+ve bu şekilde
+
+486
+01:25:57,412 --> 01:26:00,412
+değiştirebilirsiniz.
+
+487
+01:26:00,412 --> 01:26:04,412
+Bu şekilde
+
+488
+01:26:04,412 --> 01:26:06,412
+Gamma'ı
+
+489
+01:26:07,028 --> 01:26:33,260
+Bu da bir kere ile ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin ilişkilerin iliş
+
+490
+01:26:33,939 --> 01:26:55,467
+Eğer büyük gamma'ın, bu bölgesi de
+
+491
+01:26:55,636 --> 01:27:02,636
+bu şekilde bu şekilde
+
+492
+01:27:02,636 --> 01:27:08,636
+bu şekilde
+
+493
+01:27:08,636 --> 01:27:10,636
+gamma
+
+494
+01:27:10,636 --> 01:27:15,596
+bu şekilde
+
+495
+01:27:15,731 --> 01:27:19,731
+ve bu birçok birçok birçok birçok birçok.
+
+496
+01:27:19,731 --> 01:27:20,731
+Bu birçok birçok birçok,
+
+497
+01:27:20,731 --> 01:27:22,731
+buçok birçok birçok,
+
+498
+01:27:22,731 --> 01:27:24,731
+buçok birçok,
+
+499
+01:27:24,731 --> 01:27:27,731
+buçok birçok.
+
+500
+01:27:27,731 --> 01:27:30,731
+Bu, buçok birçok,
+
+501
+01:27:30,731 --> 01:27:34,731
+buçok birçok,
+
+502
+01:27:36,819 --> 01:27:40,000
+So far we only discussed two classes, right?
+
+503
+01:27:40,279 --> 01:27:43,779
+What if we have more than two classes, multiple classes?
+
+504
+01:27:43,779 --> 01:27:49,420
+Is it possible to use multi-class division using SVM?
+
+505
+01:27:49,479 --> 01:27:50,439
+Yes, it is possible.
+
+506
+01:27:51,219 --> 01:27:52,399
+Different ideas.
+
+507
+01:27:53,819 --> 01:27:57,119
+But simply you can use one versus all classifier.
+
+508
+01:27:57,939 --> 01:28:01,519
+This is an idea where you have, so you have these three classes.
+
+509
+01:28:02,299 --> 01:28:03,039
+One, sorry.
+
+510
+01:28:05,555 --> 01:28:14,475
+So we have this red ones, we have these pluses and these, you know, circles.
+
+511
+01:28:16,655 --> 01:28:27,875
+Is it possible to use a single line to determine all these three? It is not, right? We need at least three class fives. What you can do is you can draw one line that determines
+
+512
+01:28:30,228 --> 01:28:33,868
+minus şeker versus all others.
+
+513
+01:28:34,487 --> 01:28:43,868
+Okay, so this classifier, this classifier determines the separation between minuses versus everything else.
+
+514
+01:28:44,507 --> 01:28:52,387
+Okay, you can also have another line that determines the separation from the circles versus everything else.
+
+515
+01:28:52,387 --> 01:28:55,387
+And you do the same thing for...
+
+516
+01:28:56,819 --> 01:28:59,239
+Pluses vs. everything else.
+
+517
+01:28:59,799 --> 01:29:08,819
+Eventually, what you need to do is you can use these three classifiers in combination to determine which side of...
+
+518
+01:29:08,880 --> 01:29:11,200
+Bu da point falls in.
+
+519
+01:29:11,200 --> 01:29:12,960
+Bu da point falls into this area,
+
+520
+01:29:12,960 --> 01:29:15,280
+bu da we can certainly say that,
+
+521
+01:29:15,280 --> 01:29:17,559
+okay, this is going to be a circle.
+
+522
+01:29:17,559 --> 01:29:21,800
+Bu da, bu da, bu da, bu da, bu da, bu da, bu da, bu da.
+
+523
+01:29:29,872 --> 01:29:42,192
+Svm, you just need to train more classifiers, that's all you need. So, an algorithm can expand and generalize to multiple dimensions and multiple class.
+
+524
+01:29:43,551 --> 01:29:52,992
+So, in summary, a support vector machine is a good algorithm. It often has good accuracy and
+
+525
+01:29:54,228 --> 01:29:59,228
+Bu da daha fazla bilgi veren daha iyi.
+
+526
+01:29:59,228 --> 01:30:03,228
+Ve daha fazla bilgi veren daha iyi.
+
+527
+01:30:03,228 --> 01:30:06,228
+Çünkü, bu dağda alakalı bilgi verenlerle alakalı.
+
+528
+01:30:06,228 --> 01:30:09,228
+Bu dağda alakalı bilgi verenlerle alakalı.
+
+529
+01:30:09,228 --> 01:30:14,228
+Bir de alakalı bilgi verenlerle alakalı bilgi verenlerle alakalı.
+
+530
+01:30:14,228 --> 01:30:20,228
+Bu dağda alakalı bilgi verenlerle alakalı bilgi verenlerle alakalı.
+
+531
+01:30:20,948 --> 01:30:25,948
+ve bu kadar iyi bir süreçte çalışmaların.
+
+532
+01:30:25,948 --> 01:30:32,948
+Ama, bu kadar büyük bir süreçte çalışmaların, bu kadar büyük bir süreçte çalışmaların.
+
+533
+01:30:32,948 --> 01:30:37,948
+Çünkü eğitimle çok önemli bir süreçte çalışmaların.
+
+534
+01:30:37,948 --> 01:30:41,948
+Bu kadar çok zamanla, bu kadar çok fazla çalışmaların.
+
+535
+01:30:41,948 --> 01:30:45,948
+Ama bu kadar çok daha çok daha fazla çalışmaların.
+
+536
+01:30:46,323 --> 01:30:50,683
+ve ilgili bir durumda,
+
+537
+01:30:50,683 --> 01:30:52,763
+ve bu konulukta,
+
+538
+01:30:52,763 --> 01:30:55,423
+bu konulukta bir noktaların
+
+539
+01:30:55,423 --> 01:30:57,183
+çünkü bu konulun çok çok önemli
+
+540
+01:30:57,183 --> 01:31:00,943
+ve konulun çok önemli
+
+541
+01:31:00,943 --> 01:31:02,343
+konulun çok önemli
+
+542
+01:31:02,343 --> 01:31:08,683
+ve bu konulun çok iyi
+
+543
+01:31:08,683 --> 01:31:10,723
+konulun engelebilirsiniz
+
+544
+01:31:12,083 --> 01:31:15,783
+Bu da bu sessiz bir soru.
+
+545
+01:31:15,783 --> 01:31:16,783
+Svm'in questionsi?
+
+546
+01:31:21,395 --> 01:31:22,615
+Questions, comments?
+
+547
+01:31:23,536 --> 01:31:23,815
+Okay.
+
+548
+01:31:26,076 --> 01:31:27,176
+Seems like no questions.
+
+549
+01:31:27,296 --> 01:31:31,275
+Let's continue with a new algorithm.
+
+550
+01:31:32,115 --> 01:31:35,096
+Today, we will also cover neural networks.
+
+551
+01:31:37,096 --> 01:31:39,596
+This is another important...
+
+552
+01:31:40,224 --> 01:31:48,224
+Neural Networks'in altyazıları kullanılıyor.
+
+553
+01:31:48,224 --> 01:31:54,224
+Bu, Regression ve Classification Altyazıları kullanılıyor.
+
+554
+01:31:54,224 --> 01:31:57,420
+Neural Networks'in altyazıları kullanılıyor.
+
+555
+01:31:59,115 --> 01:32:09,115
+Neural Networks'in
+
+556
+01:31:57,811 --> 01:32:02,532
+Neural Networks, we discussed different algorithms so far.
+
+557
+01:32:02,712 --> 01:32:07,591
+We discussed nearest neighbor algorithms, as you can remember.
+
+558
+01:32:07,591 --> 01:32:12,792
+We discussed, one second, let me use the pen.
+
+559
+01:32:14,051 --> 01:32:17,431
+We used decision tree-based algorithms.
+
+560
+01:32:18,171 --> 01:32:21,652
+We talked about naive Bayes, support vector machines.
+
+561
+01:32:22,032 --> 01:32:29,032
+ve
+
+562
+01:32:29,032 --> 01:32:55,967
+bu
+
+563
+01:32:55,967 --> 01:33:04,087
+nefesler
+
+564
+01:33:05,460 --> 01:33:09,039
+There are three different shapes or types of neural networks.
+
+565
+01:33:09,039 --> 01:33:20,800
+We have a classical plain simple algorithm of the neural network is called MLP or multilayer perceptron.
+
+566
+01:33:21,939 --> 01:33:40,843
+Bu, bu
+
+567
+01:33:41,460 --> 01:33:43,939
+These are convolutional neural networks.
+
+568
+01:33:44,599 --> 01:33:49,699
+Recurrent neural networks are typically used for sequential data.
+
+569
+01:33:49,699 --> 01:33:51,699
+Sequential data...
+
+570
+01:33:55,859 --> 01:34:04,960
+Data, sequence data, is something that you have dependency in the data points.
+
+571
+01:34:06,180 --> 01:34:15,680
+And that is very important because you cannot use individual data and treat them separately in training.
+
+572
+01:34:16,532 --> 01:34:24,672
+Many examples of sequence data is, for instance, language data, natural language data is also sequence data.
+
+573
+01:34:24,672 --> 01:34:29,311
+For instance, I love data mining.
+
+574
+01:34:31,391 --> 01:34:34,612
+This is a sentence in English.
+
+575
+01:34:36,591 --> 01:34:44,072
+Okay, if I change their positions, okay, if I change the positions of each word and keep the same data,
+
+576
+01:34:45,876 --> 01:34:52,355
+Dada, love, mining, i.
+
+577
+01:34:53,376 --> 01:34:57,756
+Okay, so all the words are the same, right?
+
+578
+01:34:57,855 --> 01:34:59,155
+We just change their positions.
+
+579
+01:35:00,296 --> 01:35:01,796
+So what about the meaning?
+
+580
+01:35:01,956 --> 01:35:02,916
+Are they the same things?
+
+581
+01:35:03,676 --> 01:35:09,735
+These two sentences, they have the same semantics or meaning.
+
+582
+01:35:11,216 --> 01:35:11,975
+Yes, no?
+
+583
+01:35:13,492 --> 01:35:22,972
+Can you use, regardless of their positions, this data point?
+
+584
+01:35:25,372 --> 01:35:31,012
+You can't, right? Because it changes the shape or the meaning of data.
+
+585
+01:35:31,252 --> 01:35:35,052
+When you change the positions, it becomes something else.
+
+586
+01:35:35,052 --> 01:35:39,772
+So you cannot just randomly pick words.
+
+587
+01:35:49,747 --> 01:35:55,787
+İngilizce, birçok, birçok, birçok, birçok, birçok, birçok, birçok.
+
+588
+01:35:56,247 --> 01:36:06,407
+İngilizce, birçok.
+
+589
+01:36:06,407 --> 01:36:16,487
+Birçok, birçok.
+
+590
+01:36:17,235 --> 01:36:25,336
+Same thing goes with time series data, right?
+
+591
+01:36:25,735 --> 01:36:28,836
+So this is, assume that this is a stock price.
+
+592
+01:36:31,115 --> 01:36:38,456
+And you want to predict when is tomorrow stock price for IBM, I don't know, any company, okay?
+
+593
+01:36:38,735 --> 01:36:42,416
+This is the shape of the price, it goes down, it goes up and so on.
+
+594
+01:36:42,716 --> 01:36:44,395
+And you are right here, okay?
+
+595
+01:36:45,108 --> 01:37:10,667
+Ve bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da bu kadar da
+
+596
+01:37:10,739 --> 01:37:39,440
+İntro
+
+597
+01:37:29,684 --> 01:37:47,756
+Bu da ise
+
+598
+01:37:48,307 --> 01:37:59,528
+You cannot directly apply multilayer perceptron because it doesn't retain any assumption on dependency of the data points.
+
+599
+01:37:59,528 --> 01:38:03,887
+But recurrent neural networks or RNNs are specific.
+
+600
+01:38:05,555 --> 01:38:12,996
+specific form of neural networks that work on sequence data. Okay? These sequence data can be natural
+
+601
+01:38:12,996 --> 01:38:20,836
+languages, time series data, many different examples can be applied for this. For instance, DNA data is also
+
+602
+01:38:20,836 --> 01:38:27,956
+sequence, right? You cannot change their positions in another example. So this is a specific type of neural network.
+
+603
+01:38:28,372 --> 01:38:36,412
+There is also another type of neural network that is very specific and sophisticated, is convolutional neural network.
+
+604
+01:38:36,972 --> 01:38:39,632
+And that is typically used for image processing.
+
+605
+01:38:40,732 --> 01:38:40,852
+Okay.
+
+606
+01:38:41,872 --> 01:38:50,712
+So, for instance, this is an image, let's say it's a 64 by 64 image, pixel image.
+
+607
+01:38:51,312 --> 01:38:55,492
+And each of these pixels, for instance, I have a letter 3.
+
+608
+01:38:56,020 --> 01:39:04,100
+How do I understand or how the algorithm can determine whether this is 3 or it is 8?
+
+609
+01:39:04,220 --> 01:39:06,159
+How does it know?
+
+610
+01:39:06,500 --> 01:39:12,560
+How can it learn that this handwriting is 3 or letters or number 8?
+
+611
+01:39:13,700 --> 01:39:22,900
+And what convolutional neural networks do is that it treats each of these pixels, okay, each of these pixels.
+
+612
+01:39:23,604 --> 01:39:28,604
+Bu da bir nesil bir nesil bir nesil.
+
+613
+01:39:28,604 --> 01:39:30,604
+Bu da bir nesil bir nesil.
+
+614
+01:39:30,604 --> 01:39:46,604
+Bu da bir nesil.
+
+615
+01:39:49,524 --> 01:39:56,524
+İmizdikleriniz için çok farklı.
+
+616
+01:39:56,524 --> 01:39:58,524
+Çünkü
+
+617
+01:39:58,524 --> 01:40:01,524
+pozisyenler için
+
+618
+01:40:01,524 --> 01:40:03,524
+birçok.
+
+619
+01:40:03,524 --> 01:40:06,524
+İmizdikleriniz için birçok.
+
+620
+01:40:06,524 --> 01:40:09,524
+Ama bu pozisyenler için
+
+621
+01:40:09,524 --> 01:40:11,524
+bu şekle
+
+622
+01:40:11,524 --> 01:40:13,524
+aranında birçok.
+
+623
+01:40:14,079 --> 01:40:20,980
+Ama, if you had also H, you would have to expect some shape around here to verify this is H.
+
+624
+01:40:21,579 --> 01:40:26,539
+And images can have very different forms, although they resemble the same number.
+
+625
+01:40:26,619 --> 01:40:36,579
+For instance, I can write 3 this way, I can write 3 this way, I can write 3 this way, or I can write 3.
+
+626
+01:40:37,900 --> 01:40:39,740
+By looking at this, I'm...
+
+627
+01:40:40,500 --> 01:41:04,524
+Evet, bu da
+
+628
+01:41:05,011 --> 01:41:10,811
+Bu
+
+629
+01:41:10,811 --> 01:41:34,111
+bu
+
+630
+01:41:17,055 --> 01:41:42,763
+Bu da bu
+
+631
+01:41:43,956 --> 01:41:52,036
+Bu spatiale informasyonu, bu da
+
+632
+01:42:11,956 --> 01:42:17,576
+This is general purpose, general purpose algorithm.
+
+633
+01:42:17,576 --> 01:42:23,515
+This is sequential data, and this is for image processing.
+
+634
+01:42:25,716 --> 01:42:33,616
+Okay, there are many different algorithms, applications, from image processing, to time series, to natural language processing.
+
+635
+01:42:33,796 --> 01:42:41,456
+There are many different, thousands of different applications can be utilized from neural network aspects.
+
+636
+01:42:42,696 --> 01:42:50,016
+Okay, we can give a break or we can have a combined session and leave it a little bit early.
+
+637
+01:42:50,016 --> 01:42:52,376
+Should we just do it combined session?
+
+638
+01:42:54,036 --> 01:42:58,015
+Evet, everybody? Any objections?
+
+639
+01:43:00,015 --> 01:43:05,335
+Okay, so let's continue and finish a little bit early without having a break.
+
+640
+01:43:06,292 --> 01:43:29,171
+So, what is the intuition that comes from the neural network? Neural networks, artificial neural networks, the idea actually generated from actual human brains, like any brains, the human brain also has something called neurons and exons and so on.
+
+641
+01:43:29,171 --> 01:43:33,731
+But what is so interesting is, we are not going to go into biology, it's not our subject.
+
+642
+01:43:34,292 --> 01:43:40,931
+Bu önemli bir şey, insanın brainu bir nefek.
+
+643
+01:43:45,615 --> 01:44:12,095
+Bu, bu
+
+644
+01:44:12,095 --> 01:44:34,763
+Ve bu nefretlerinde de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine de nefretlerine
+
+645
+01:44:34,963 --> 01:44:59,403
+Bu, bu
+
+646
+01:44:59,475 --> 01:45:10,756
+Neurons, these are the points, in other sense, these are neurons, neurons,
+
+647
+01:45:12,115 --> 01:45:23,515
+that memorizes or keeps a single number. It keeps a single number and it applies a function.
+
+648
+01:45:24,148 --> 01:45:30,148
+ve bu konuda bir şekilde
+
+649
+01:45:30,148 --> 01:45:32,148
+bir şekilde
+
+650
+01:45:32,148 --> 01:45:36,148
+ve bu konuda
+
+651
+01:45:36,148 --> 01:45:40,148
+bir şekilde
+
+652
+01:45:40,148 --> 01:45:42,148
+ve bu konuda
+
+653
+01:45:42,148 --> 01:45:44,148
+bir şekilde
+
+654
+01:45:44,148 --> 01:45:46,148
+ve bu konuda
+
+655
+01:45:46,148 --> 01:45:49,771
+i
+
+656
+01:45:49,811 --> 01:45:58,971
+And that transforms to a single value, single number, a number let's say k.
+
+657
+01:45:59,411 --> 01:45:59,551
+Okay.
+
+658
+01:46:00,231 --> 01:46:03,971
+And that is going to be passed to the next neuron.
+
+659
+01:46:04,431 --> 01:46:11,471
+Eventually we reach out to an output where we have the final classification or regression.
+
+660
+01:46:12,212 --> 01:46:26,311
+In other sense, we have multiple inputs, and each of these inputs have different weights, and then eventually we apply a function to determine the output.
+
+661
+01:46:27,032 --> 01:46:34,172
+When you have a single neuron, this is exactly the same as logistic regression.
+
+662
+01:46:38,996 --> 01:46:48,076
+Logistik regression is simply a single neuron that determines the output.
+
+663
+01:46:48,536 --> 01:46:50,815
+Okay, let me draw that.
+
+664
+01:46:53,916 --> 01:47:06,456
+Okay, let's say this is A1, A2, A3, An, and we have a neuron, and we are determining the output.
+
+665
+01:47:06,836 --> 01:47:14,696
+Let's say we are determining whether this person is going to make fraud or no fraud.
+
+666
+01:47:14,696 --> 01:47:15,076
+Okay.
+
+667
+01:47:16,816 --> 01:47:18,316
+This is the single answer.
+
+668
+01:47:21,216 --> 01:47:30,636
+And the input data may be W1, W2, W3, WN.
+
+669
+01:47:31,236 --> 01:47:33,316
+Assume that this is the person's age.
+
+670
+01:47:33,747 --> 01:47:41,507
+age 40, let's say this is marital status, it is 1.
+
+671
+01:47:42,507 --> 01:47:54,547
+Education, it is 9 years, I don't know, different, different, and let's say this is the salary, 10,000.
+
+672
+01:47:54,547 --> 01:47:55,587
+Okay.
+
+673
+01:47:56,887 --> 01:47:59,787
+So, for this example, for this problem,
+
+674
+01:48:01,652 --> 01:48:09,652
+Bu, belki de bu konuda daha fazla ilginç vereniyetle daha fazla ilginç vereniyetle.
+
+675
+01:48:09,652 --> 01:48:19,652
+Belki, bir kişi daha fazla saları vereniyetle daha fazla ilginç vereniyetle.
+
+676
+01:48:19,652 --> 01:48:23,652
+Bu, bu kişi daha fazla ilginç vereniyetle, o zaman bu konuda daha fazla ilginç vereniyetle.
+
+677
+01:48:24,083 --> 01:48:30,524
+Or, birçok birçok, birçok, çok yaşlı, birçok, çok yaşlı, birçok, birçok.
+
+678
+01:48:42,975 --> 01:48:45,715
+1.9, even larger weight.
+
+679
+01:48:46,375 --> 01:48:52,935
+So the weight determined by this impact of this particular feature.
+
+680
+01:48:53,895 --> 01:48:58,835
+And we have something, this neuron has a function, f.
+
+681
+01:48:59,335 --> 01:49:06,715
+This function can be any mathematical function, and we call this activation function.
+
+682
+01:49:12,500 --> 01:49:25,020
+Activation function simply determines whether this data is going to fire up or produce a large number or small number, whatever the number is.
+
+683
+01:49:25,739 --> 01:49:25,880
+Okay?
+
+684
+01:49:27,460 --> 01:49:29,940
+So this is a logistic regression example.
+
+685
+01:49:29,940 --> 01:49:30,940
+Logistic regression...
+
+686
+01:49:34,707 --> 01:49:41,163
+Açıkçı bir adım kullanımın adı
+
+687
+01:49:45,140 --> 01:49:47,380
+sigma 8 function.
+
+688
+01:49:47,819 --> 01:49:54,039
+And sigma 8 function is simply 1 divided by e to the power of z.
+
+689
+01:49:55,100 --> 01:49:57,480
+Let me just actually draw it.
+
+690
+01:50:00,560 --> 01:50:05,199
+1 plus z.
+
+691
+01:50:05,699 --> 01:50:08,440
+And that z is actually
+
+692
+01:50:08,440 --> 01:50:12,659
+this value, a1.
+
+693
+01:50:13,300 --> 01:50:32,460
+W1, is the linear combination of weights plus all these numbers, A2, W2, plus, plus, A, N, W, N.
+
+694
+01:50:32,460 --> 01:50:38,519
+Okay, and the result of this, whether this is going to be zero or one,
+
+695
+01:50:40,115 --> 01:50:42,115
+or any number between them.
+
+696
+01:50:42,115 --> 01:50:49,115
+Sigmoid function eventually will produce some number within 0 and 1.
+
+697
+01:50:49,115 --> 01:50:52,115
+And the shape of sigmoid is like that.
+
+698
+01:50:52,115 --> 01:51:01,115
+Depending on your x value, it can top at 1, it can be minimum at 0.
+
+699
+01:51:01,115 --> 01:51:05,115
+These are x1.
+
+700
+01:51:06,452 --> 01:51:12,452
+ve bu şekilde 0 ve 1
+
+701
+01:51:12,452 --> 01:51:14,452
+bu şekilde bu şekilde
+
+702
+01:51:14,452 --> 01:51:30,452
+bu şekilde
+
+703
+01:51:32,659 --> 01:51:43,819
+z is equal to, from 1 to n, A i times w i.
+
+704
+01:51:45,739 --> 01:51:53,099
+Okay, so this is our linear function and it will guarantee to generate a number between them.
+
+705
+01:51:53,716 --> 01:51:59,376
+So, how is this useful in classification is quite simple.
+
+706
+01:51:59,796 --> 01:52:06,516
+Based on these numbers, whether this function will produce something closer to the 1, let's say this is fraud.
+
+707
+01:52:06,636 --> 01:52:13,275
+If it is a fraud person, the algorithm will say that this is going to be generating a number closer to 1, let's say 0.9.
+
+708
+01:52:13,735 --> 01:52:18,315
+If it is no fraud, it's going to generate something like 25.
+
+709
+01:52:18,836 --> 01:52:26,456
+So, anything greater than 0.5 is going to be classified as fraud. Anything less than that is going to be classified as no fraud.
+
+710
+01:52:27,416 --> 01:52:38,636
+Okay, but how does the algorithm learn? Where do we learn? Which people will make fraud, which people don't make a fraud?
+
+711
+01:52:39,572 --> 01:53:03,371
+Bu, bu
+
+712
+01:53:07,123 --> 01:53:34,667
+ve
+
+713
+01:53:35,060 --> 01:53:47,039
+İngiltere, we have assumed that we have training data, we already collected these A1, A2, A3, A4, A, N, and this is our Y.
+
+714
+01:53:48,420 --> 01:53:56,659
+And we already have this data, and some of them are 1, some of them are 0, some of them are, and so on.
+
+715
+01:53:57,020 --> 01:54:02,060
+So what we can do is, we can tweak these Ws so that
+
+716
+01:54:02,484 --> 01:54:13,944
+The cost function, the total error, the error of the algorithm, total error of the algorithm is minimized.
+
+717
+01:54:14,564 --> 01:54:16,823
+There is a minimization problem as well.
+
+718
+01:54:16,823 --> 01:54:19,823
+And that occurs when you have...
+
+719
+01:54:23,475 --> 01:54:49,707
+Yeni bu kadar değerlerden
+
+720
+01:54:50,739 --> 01:54:58,180
+ve genelized, or extended version of neural net, sigmo logistic regression.
+
+721
+01:54:58,180 --> 01:55:04,020
+In neural networks, what we have is A1, A2, A3, An.
+
+722
+01:55:08,532 --> 01:55:25,731
+We have specific neurons. It doesn't have to be single neuron. We do have a network connection. All inputs, all neurons have connection to other neurons.
+
+723
+01:55:30,676 --> 01:55:36,044
+ve bu kadar büyük bir növer de bu
+
+724
+01:55:40,916 --> 01:55:42,376
+ve all of them are connected.
+
+725
+01:55:45,971 --> 01:55:52,971
+Evet, or no.
+
+726
+01:55:52,971 --> 01:55:56,971
+Ve bu, 1, 1, 2, ve bu.
+
+727
+01:55:56,971 --> 01:55:58,971
+Ve bu modelde all these.
+
+728
+01:55:58,971 --> 01:56:03,971
+Bu modelde, bu, output layer.
+
+729
+01:56:03,971 --> 01:56:08,971
+Bu, input layer.
+
+730
+01:56:12,692 --> 01:56:18,032
+İntro, ve all these other layers are called hidden layers.
+
+731
+01:56:21,524 --> 01:56:28,492
+ve bu
+
+732
+01:56:33,971 --> 01:56:45,991
+Deep learning is when you have very large number of hidden layers in the algorithm, because your algorithm is very complex that it can learn by itself.
+
+733
+01:56:46,211 --> 01:57:00,991
+The reason for using large number of layers is that if your problem is very complex, that you need a lot of parameters, a large number of neurons or large number of layers to...
+
+734
+01:57:02,260 --> 01:57:23,275
+Bu nedenle sadece bir nevri nev
+
+735
+01:57:23,380 --> 01:57:29,559
+Bu da farklı ülkelerle ve farklı farklı farklı bir ülkelerle ve farklı bir ülkelerle.
+
+736
+01:57:29,559 --> 01:57:33,559
+Bu da farklı bir yerlerle sahip olduğunuzda,
+
+737
+01:57:33,559 --> 01:57:47,500
+bu da bir mesele bir yerlerle sahip olduğunuzda.
+
+738
+01:57:47,500 --> 01:57:49,380
+Bu da çok çok bilgi.
+
+739
+01:57:49,779 --> 01:58:08,159
+Ama, if you want to develop a single model to determine all the prices, you may notice that, you know, if age of the year of the apartment, if it is new, it may be more expensive in some, and you may have also information like location and many others.
+
+740
+01:58:09,179 --> 01:58:14,460
+The year may be a good parameter, you know, if it's younger, it may be more expensive.
+
+741
+01:58:15,060 --> 01:58:17,060
+Bu, bu bir şey değil.
+
+742
+01:58:17,060 --> 01:58:23,060
+Bu, bu bir oldukça, bir bir oldukça, bir bir oldukça, bir bir oldukça, bir bir oldukça, bir bir oldukça.
+
+743
+01:58:23,060 --> 01:58:27,060
+Bu, bu bir bir kere daha çok büyük.
+
+744
+01:58:27,060 --> 01:58:33,060
+Bir şey, bir bir ancak bir bir kere, bir bir bir kere, bir bir bir kere, bir bir kere.
+
+745
+01:58:43,123 --> 01:58:50,203
+Bir input, let's say Gecekondu, may have some features.
+
+746
+01:58:50,804 --> 01:58:55,484
+It may light up this particular neurons, have a lot more weights.
+
+747
+01:58:56,184 --> 01:59:01,984
+For instance, you may have residential, high-rise residence.
+
+748
+01:59:05,203 --> 01:59:10,203
+Bu neuronun daha fazla ilişkilerin bir şekilde ilişkilerin.
+
+749
+01:59:10,203 --> 01:59:18,203
+Bu neuronun daha fazla ilişkilerin daha fazla ilişkilerin.
+
+750
+01:59:18,203 --> 01:59:27,203
+Bu neuronun daha fazla ilişkilerin daha fazla ilişkilerin daha fazla ilişkilerin.
+
+751
+01:59:27,539 --> 01:59:37,199
+So, what I'm saying is, if your data is complex and there's a lot of variety, your shallow models or small models may not be able to capture.
+
+752
+01:59:37,876 --> 01:59:40,136
+All these variations, all these parameters.
+
+753
+01:59:40,615 --> 01:59:47,916
+That's why you may need deep learning, especially when you have squashed still data or you have problems like image processing.
+
+754
+01:59:48,056 --> 01:59:49,336
+Those are very complex problems.
+
+755
+01:59:49,836 --> 01:59:55,056
+In those situations, you may need deep learning or a large number of hidden layers.
+
+756
+01:59:55,396 --> 02:00:04,316
+But on other cases, maybe a couple layers would be, okay, you may not need many neural at all.
+
+757
+02:00:06,899 --> 02:00:19,699
+Okay, so like I said, a single neuron resembles logistic regression and you provide the results, but it is like a black box. You have some input values.
+
+758
+02:00:21,380 --> 02:00:22,579
+Let me go back.
+
+759
+02:00:25,171 --> 02:00:28,171
+İput values, ve bu işin verenlerle ilgili,
+
+760
+02:00:28,171 --> 02:00:30,171
+ve bu işin verenlerle ilgili.
+
+761
+02:00:30,171 --> 02:00:34,171
+Bu modelde yapabilirsiniz,
+
+762
+02:00:34,171 --> 02:00:37,171
+bu işin verenlerle ilgili.
+
+763
+02:00:37,171 --> 02:00:39,171
+Bu işin verenlerle ilgili.
+
+764
+02:00:39,171 --> 02:00:49,171
+İçin verenlerle ilgili.
+
+765
+02:00:53,171 --> 02:00:58,911
+or reduce it or increase it to find optimal weights.
+
+766
+02:00:59,511 --> 02:01:01,991
+So the output is what you are going to use.
+
+767
+02:01:02,071 --> 02:01:03,511
+This function activation function.
+
+768
+02:01:03,891 --> 02:01:05,171
+These are the input values.
+
+769
+02:01:05,311 --> 02:01:07,652
+These are the weights for individual features.
+
+770
+02:01:08,111 --> 02:01:11,831
+And then you determine whether the output is 1 or 0
+
+771
+02:01:11,831 --> 02:01:12,991
+or whatever the output is.
+
+772
+02:01:12,991 --> 02:01:13,731
+Okay.
+
+773
+02:01:14,868 --> 02:01:36,012
+Bu, bu
+
+774
+02:01:36,020 --> 02:01:44,480
+69% of likelihood of failing, or 31% is going to be succeed.
+
+775
+02:01:45,080 --> 02:01:48,160
+But eventually you determine that result.
+
+776
+02:01:49,520 --> 02:02:00,860
+But how does this algorithm frame, and what does it do, how the information is passed from one neuron to another neuron in another layer?
+
+777
+02:02:02,739 --> 02:02:11,239
+Forward pass. Forward pass is simply, we have inputs, and those inputs are multiplied by their weights.
+
+778
+02:02:11,679 --> 02:02:15,519
+So these are the weights, and these are the inputs.
+
+779
+02:02:16,239 --> 02:02:23,339
+And then we have activation function that determines the result, and it finds 0.96.
+
+780
+02:02:23,999 --> 02:02:27,919
+Then the next neuron takes the input.
+
+781
+02:02:29,363 --> 02:02:31,963
+Bu neşte neuronun takipi asıl input,
+
+782
+02:02:53,108 --> 02:02:57,288
+Each output is a prediction.
+
+783
+02:02:57,648 --> 02:02:58,648
+Then we compare.
+
+784
+02:02:59,308 --> 02:03:07,308
+Okay, let's say the original case was 1, and our model predicted 0.73.
+
+785
+02:03:07,968 --> 02:03:14,788
+So the error is, for this particular error for i, is actually 1 minus 0.
+
+786
+02:03:16,020 --> 02:03:38,100
+0.27. So this is how much error we made in this prediction, 0.27. We do this for all the data points, and then we try to minimize the total error, not a single error, but total error on this training data, so that we need to go back, the backpropagation is the opposite way, we go back, backpropagation.
+
+787
+02:03:41,395 --> 02:04:06,731
+bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu
+
+788
+02:04:07,380 --> 02:04:15,399
+There are different activation functions, like I said, sigmoid functions is the one example that we showed.
+
+789
+02:04:15,519 --> 02:04:19,920
+There's also a ton h function, which gives the result from negative one to plus one.
+
+790
+02:04:19,920 --> 02:04:30,359
+There's also a commonly used function called ReLU. ReLU has a value between zero and the value of x.
+
+791
+02:04:30,804 --> 02:04:39,503
+Bu da farklı bir şey için de altyazıcı bir şey.
+
+792
+02:04:39,503 --> 02:04:41,644
+Bu modelde bir standard bir şey,
+
+793
+02:04:41,644 --> 02:04:43,603
+ama bu da altyazıcı bir şey.
+
+794
+02:04:43,603 --> 02:04:45,703
+Ama diğer algoritma,
+
+795
+02:04:45,703 --> 02:04:48,003
+bu da altyazıcı bir şey.
+
+796
+02:04:48,003 --> 02:04:50,304
+Bu da altyazıcı bir şey.
+
+797
+02:04:50,304 --> 02:04:53,304
+Bu da...
+
+798
+02:04:53,844 --> 02:05:00,264
+Eventually, the multilayer perceptron takes the inputs, there are some hidden layers, and you have some output layers.
+
+799
+02:05:01,043 --> 02:05:08,663
+When you have many large number of layers, this is called hidden layer, deep learning, we talked about that.
+
+800
+02:05:09,423 --> 02:05:12,923
+But how does the training work? Let me show you this.
+
+801
+02:05:13,844 --> 02:05:14,884
+What is the training?
+
+802
+02:05:16,243 --> 02:05:17,764
+Where the training happens?
+
+803
+02:05:24,148 --> 02:05:27,627
+Okay, this is our input. Let me show you. Okay.
+
+804
+02:05:30,547 --> 02:05:36,268
+We have some network model here, and it makes the prediction. Our original data.
+
+805
+02:05:39,247 --> 02:05:47,587
+This is A1, A2, A3, A, and this is Y. This is actual theta. We know that the result.
+
+806
+02:05:49,171 --> 02:05:52,051
+İzlediğiniz için, 1 ve 0.
+
+807
+02:05:54,572 --> 02:05:54,971
+Tamam.
+
+808
+02:06:17,203 --> 02:06:27,804
+Kost function is sum of all the numbers from yi minus yi prime square.
+
+809
+02:06:28,804 --> 02:06:35,804
+So simply, in the first example, our algorithm predicts 0.73.
+
+810
+02:06:36,463 --> 02:06:39,963
+But we know that this first one was actually 1.
+
+811
+02:06:40,372 --> 02:07:07,180
+Tamam, tamam
+
+812
+02:07:07,444 --> 02:07:26,700
+Bu da n.
+
+813
+02:07:28,979 --> 02:07:41,579
+Evet, e1, e2, e3, e4.
+
+814
+02:07:51,412 --> 02:08:01,072
+So, in the first set of weights, assume that we use this weight 1, weight 2, and so on. We generated this much error.
+
+815
+02:08:01,832 --> 02:08:13,851
+Okay, in the learning basis from the backpropagation, what we do is we increment or decrement these numbers, v1 minus learning rate.
+
+816
+02:08:14,752 --> 02:08:17,512
+Let's say this is v2 plus learning rate.
+
+817
+02:08:17,971 --> 02:08:22,911
+We changed each of these features, weights, lightly.
+
+818
+02:08:23,431 --> 02:08:26,671
+And this is based on a parameter called learning rate.
+
+819
+02:08:27,211 --> 02:08:29,571
+Learning rate parameter.
+
+820
+02:08:30,491 --> 02:08:31,471
+These are tweaked.
+
+821
+02:08:32,091 --> 02:08:33,991
+And we keep trying this again.
+
+822
+02:08:33,991 --> 02:08:40,371
+In the second pass, we check this again.
+
+823
+02:08:42,036 --> 02:09:05,963
+Bu, bu
+
+824
+02:09:06,003 --> 02:09:13,944
+learning rates, until learning rate, until we find a cost that it is not going to be reducing anymore.
+
+825
+02:09:16,144 --> 02:09:25,204
+So we reach the point where the cost is not improving anymore, and this is where we end up with the weights, and that's our final model.
+
+826
+02:09:25,664 --> 02:09:25,784
+Okay?
+
+827
+02:09:26,784 --> 02:09:32,503
+But how do we know this is going to be the minimal situation?
+
+828
+02:09:33,460 --> 02:09:43,660
+The problem is, how many different types of combination of changing these features are visible?
+
+829
+02:09:44,300 --> 02:09:49,340
+So how many different types, different times that you can change the combination of features?
+
+830
+02:09:50,820 --> 02:09:55,060
+Can you keep trying this as a brute force infinitely?
+
+831
+02:09:56,520 --> 02:10:00,060
+You cannot do that, right? Because there's infinitely many.
+
+832
+02:10:00,431 --> 02:10:06,091
+İkinci many combinations that we can try to change the basals like the up and down, up and down.
+
+833
+02:10:06,371 --> 02:10:07,931
+There's many different situations.
+
+834
+02:10:09,332 --> 02:10:10,691
+So can we get better?
+
+835
+02:10:10,891 --> 02:10:15,371
+Can we try something more intelligent or more smarter?
+
+836
+02:10:20,787 --> 02:10:43,755
+Bu, bu
+
+837
+02:10:43,891 --> 02:10:45,891
+ve bu kadar çok.
+
+838
+02:10:45,891 --> 02:10:47,891
+Ve bu kadar.
+
+839
+02:10:47,891 --> 02:10:49,891
+Ve bu 2.0.
+
+840
+02:10:49,891 --> 02:10:51,891
+Bu 2.0.
+
+841
+02:10:51,891 --> 02:10:53,891
+Ve bu 2.0.
+
+842
+02:10:53,891 --> 02:11:01,891
+Ve bu kadar.
+
+843
+02:11:01,891 --> 02:11:03,891
+4.0.
+
+844
+02:11:03,891 --> 02:11:11,855
+Ve bu kadar.
+
+845
+02:11:11,855 --> 02:11:18,355
+If we keep trying, we will have 41, we will have larger error.
+
+846
+02:11:19,675 --> 02:11:21,055
+We will have larger error.
+
+847
+02:11:21,715 --> 02:11:28,435
+So maybe we can optimize where this can be finished.
+
+848
+02:11:28,435 --> 02:11:29,195
+Okay.
+
+849
+02:11:29,935 --> 02:11:35,815
+And that is how we do using this algorithm.
+
+850
+02:11:35,995 --> 02:11:39,135
+And this is called gradient gradient.
+
+851
+02:11:40,115 --> 02:11:42,115
+Altyazı algoritma.
+
+852
+02:11:42,115 --> 02:11:45,115
+Altyazı algoritma,
+
+853
+02:11:45,115 --> 02:11:47,115
+bu şekilde,
+
+854
+02:11:47,115 --> 02:12:06,828
+ve
+
+855
+02:12:07,859 --> 02:12:34,975
+Bu, eğer bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada
+
+856
+02:12:34,975 --> 02:13:00,843
+ve bu noktada bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu noktada, bu nokt
+
+857
+02:13:01,811 --> 02:13:08,811
+ve
+
+858
+02:13:27,891 --> 02:13:32,811
+However, you may have actually global minimum here, which is not feasible.
+
+859
+02:13:33,311 --> 02:13:36,631
+Although your algorithm still performs well, but it's not the best.
+
+860
+02:13:37,551 --> 02:13:42,952
+Or in case if you start from here, maybe you can go up here, it is still close, but it's not always.
+
+861
+02:13:42,952 --> 02:13:53,591
+So some problems may not have global minimum, but it still has a good result to.
+
+862
+02:13:55,283 --> 02:14:03,844
+To improve the gradient descent, we typically use stochastic gradient descent.
+
+863
+02:14:04,884 --> 02:14:17,123
+That gradient descent gives randomness to initialize so that it allows potential to find global solution more likely.
+
+864
+02:14:19,123 --> 02:14:22,083
+Let's talk a little bit more on the gradient descent algorithm.
+
+865
+02:14:22,836 --> 02:14:31,676
+So, the gradient descent is simply applying the derivative as an optimization problem.
+
+866
+02:14:31,676 --> 02:14:36,036
+It uses the chain rule, okay? This is the backpropagation.
+
+867
+02:14:36,435 --> 02:14:39,676
+So, let's say this is total cost, we find that, you know...
+
+868
+02:14:42,996 --> 02:15:06,195
+We applied input values, we found the predictions and the gap between actual value, and let's say this is our cost, it needs to be shrinked, and in order to minimize this cost, we need to propagate back to the original weights to change them slightly so that it can reduce this cost.
+
+869
+02:15:06,195 --> 02:15:08,576
+Okay, so we keep changing this.
+
+870
+02:15:08,880 --> 02:15:11,860
+ve sikapı ve sikapı
+
+871
+02:15:11,860 --> 02:15:13,579
+until we reduce these
+
+872
+02:15:13,579 --> 02:15:15,159
+total costs.
+
+873
+02:15:15,579 --> 02:15:17,239
+Backpurgation works
+
+874
+02:15:17,239 --> 02:15:18,659
+as a chain rule.
+
+875
+02:15:18,840 --> 02:15:19,700
+Let me show you this.
+
+876
+02:15:21,159 --> 02:15:22,659
+It works as a chain rule.
+
+877
+02:15:22,860 --> 02:15:25,360
+You have a large error, so you have to go back
+
+878
+02:15:25,360 --> 02:15:27,020
+to previous layers' weights
+
+879
+02:15:27,020 --> 02:15:28,840
+and then tweak them accordingly.
+
+880
+02:15:29,120 --> 02:15:30,540
+And then you have to go to
+
+881
+02:15:30,540 --> 02:15:33,200
+the previous of the previous layers
+
+882
+02:15:33,200 --> 02:15:34,500
+and update those.
+
+883
+02:15:34,996 --> 02:15:54,436
+ve, from output layers to all the way to the original input layers, you keep updating the values until you find optimal one. Gradient descent algorithm, as in this case, let's say your original weights have this particular loss function or cost.
+
+884
+02:16:02,707 --> 02:16:16,487
+or in another sense, the largest increase of movement can be given by this vector, this direction.
+
+885
+02:16:16,487 --> 02:16:23,067
+So we are not going to go too deep on the linear algebra of this particular finding the gradient descent,
+
+886
+02:16:23,188 --> 02:16:30,443
+but it's simply just finding the derivative of this vector that...
+
+887
+02:16:30,452 --> 02:16:34,011
+ve bu yolu yöntemizde, yöntemizde, yöntemizde.
+
+888
+02:16:34,611 --> 02:16:38,611
+ve bu şekilde
+
+889
+02:16:38,611 --> 02:16:40,611
+her yeri
+
+890
+02:16:40,611 --> 02:16:43,051
+ve bu
+
+891
+02:16:43,051 --> 02:16:44,611
+ilk ayı
+
+892
+02:16:44,611 --> 02:16:46,111
+ve
+
+893
+02:16:46,111 --> 02:17:03,611
+bu
+
+894
+02:17:02,611 --> 02:17:06,611
+birçok minima veya global minima
+
+895
+02:17:06,611 --> 02:17:08,611
+bu kadar da parametri değiştirecek
+
+896
+02:17:08,611 --> 02:17:14,611
+ve bu konverge
+
+897
+02:17:14,611 --> 02:17:16,611
+bu konverge
+
+898
+02:17:16,611 --> 02:17:17,611
+ve bu konverge
+
+899
+02:17:17,611 --> 02:17:18,611
+çoğustak gradiyent
+
+900
+02:17:18,611 --> 02:17:20,611
+bu konverge
+
+901
+02:17:20,611 --> 02:17:21,611
+çoğustak
+
+902
+02:17:21,611 --> 02:17:25,611
+ve bu konverge
+
+903
+02:17:25,611 --> 02:17:29,611
+bu konverge
+
+904
+02:17:30,208 --> 02:17:37,208
+Bu neşe şeyin de stochastic gradient descent, bu dağın
+
+905
+02:17:37,208 --> 02:17:43,208
+randomness. Bu idea of randomness is that when you initialize those Bayes randomly,
+
+906
+02:17:43,208 --> 02:17:50,208
+it is more likely that you converge in global minima than local minima, because it can start from any place.
+
+907
+02:17:50,463 --> 02:17:59,435
+ve daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğrudan daha doğ
+
+908
+02:17:59,540 --> 02:18:07,620
+Bu da bu da
+
+909
+02:18:07,620 --> 02:18:08,540
+derivitelerde de
+
+910
+02:18:08,540 --> 02:18:09,840
+weights
+
+911
+02:18:27,731 --> 02:18:38,631
+However, the problem is that even when you have a relatively small network, you have a lot of parameters.
+
+912
+02:18:38,631 --> 02:18:45,391
+Because let's say you have six layers, and each layer you have 16 neurons.
+
+913
+02:18:46,191 --> 02:18:49,631
+That means that 16 times 6 plus...
+
+914
+02:18:49,664 --> 02:18:54,044
+Bu da çok büyük bir növerde.
+
+915
+02:18:54,044 --> 02:18:58,963
+Ve növerde, növerde, növerde, növerde.
+
+916
+02:18:58,963 --> 02:19:04,963
+Bu növerde, növerde, növerde, növerde, növerde, növerde, növerde.
+
+917
+02:19:16,531 --> 02:19:22,031
+Bu nasıl birçok muzulmanın bu kadar da?
+
+918
+02:19:42,291 --> 02:19:46,711
+Ve nevle çok fazla zamanı çalışmak için çok fazla zamanı çalışmak için.
+
+919
+02:19:47,231 --> 02:19:53,191
+Bu, bu kadar zamanı çalışmak için bir süreçte bir süreçte bir süreçte.
+
+920
+02:19:54,111 --> 02:19:59,271
+Çünkü bu, bu, genelde GPU'yi kullanmak için çok fazla zamanı çalışmak için.
+
+921
+02:20:00,000 --> 02:20:06,360
+Bu da
+
+922
+02:20:06,360 --> 02:20:08,780
+GPUs can train
+
+923
+02:20:08,780 --> 02:20:10,239
+the models
+
+924
+02:20:10,239 --> 02:20:11,959
+much faster
+
+925
+02:20:11,959 --> 02:20:13,899
+than normal CPUs.
+
+926
+02:20:13,899 --> 02:20:14,500
+However,
+
+927
+02:20:14,659 --> 02:20:15,959
+it produces
+
+928
+02:20:15,959 --> 02:20:17,139
+a lot of energy.
+
+929
+02:20:17,700 --> 02:20:18,360
+It consumes
+
+930
+02:20:18,360 --> 02:20:19,040
+a lot of energy
+
+931
+02:20:19,040 --> 02:20:19,680
+and it can be
+
+932
+02:20:19,680 --> 02:20:20,380
+quite expensive
+
+933
+02:20:20,380 --> 02:20:20,940
+to train.
+
+934
+02:20:21,239 --> 02:20:22,020
+But once you
+
+935
+02:20:22,020 --> 02:20:23,059
+train a model,
+
+936
+02:20:24,020 --> 02:20:24,520
+you simply
+
+937
+02:20:24,520 --> 02:20:25,159
+have the weights.
+
+938
+02:20:25,299 --> 02:20:25,659
+You can
+
+939
+02:20:25,659 --> 02:20:26,459
+multiply
+
+940
+02:20:26,459 --> 02:20:27,040
+any
+
+941
+02:20:27,376 --> 02:20:35,515
+Test output, test input generate output, the calculation of the test output is quite fast.
+
+942
+02:20:36,296 --> 02:20:42,615
+So, you know, once you have the model itself, the output can be generated, predictions can be generated very quickly.
+
+943
+02:20:43,115 --> 02:20:48,115
+However, training is quite expensive. It can take very long time.
+
+944
+02:20:51,412 --> 02:21:08,112
+As a summary, what are the weaknesses and also what are the strengths of neural networks, classifiers? Neural networks have these weaknesses of long training time, for sure.
+
+945
+02:21:09,327 --> 02:21:20,507
+In order to determine the parameters, you must actually try different layers, different number of hyperparameters, number of neurons.
+
+946
+02:21:20,507 --> 02:21:29,827
+It is more empirical, meaning that there's no standard way, so you just try differently on different data sets.
+
+947
+02:21:31,567 --> 02:21:33,507
+And probably the most...
+
+948
+02:21:34,484 --> 02:21:37,804
+Bu önemli birçok birçok adıcıdır.
+
+949
+02:21:37,804 --> 02:21:40,484
+Çünkü bu birçok adıcı olarak,
+
+950
+02:21:40,484 --> 02:21:43,404
+birçok adıcı olarak,
+
+951
+02:21:43,404 --> 02:21:44,684
+model olarak,
+
+952
+02:21:44,684 --> 02:21:46,524
+birçok adıcı olarak,
+
+953
+02:21:46,524 --> 02:21:50,524
+ama neden neden bu model olarak?
+
+954
+02:21:50,524 --> 02:21:52,404
+Bu nedenle,
+
+955
+02:21:52,404 --> 02:21:53,724
+bu nedenle,
+
+956
+02:21:53,724 --> 02:22:00,283
+neden neden neden neden neden neden neden neden neden?
+
+957
+02:22:00,399 --> 02:22:02,399
+Bu da bu da çok zorluklar.
+
+958
+02:22:20,915 --> 02:22:24,235
+Ama bu kadar iyi bir result.
+
+959
+02:22:24,455 --> 02:22:26,675
+Özellikle de akuratilerin çok iyi.
+
+960
+02:22:26,795 --> 02:22:28,536
+Bu large modeli,
+
+961
+02:22:28,855 --> 02:22:31,536
+ve havalıcı bir nöyde.
+
+962
+02:22:32,115 --> 02:22:32,955
+Bu,
+
+963
+02:22:33,876 --> 02:22:35,455
+bu kadar da bir nöyde.
+
+964
+02:22:36,155 --> 02:22:36,895
+Bu,
+
+965
+02:22:37,675 --> 02:22:39,175
+gerçekten çok iyi.
+
+966
+02:22:39,175 --> 02:22:40,536
+Bu,
+
+967
+02:22:41,495 --> 02:22:44,215
+ve çok büyük bir nöyde.
+
+968
+02:22:45,215 --> 02:22:46,415
+Bu,
+
+969
+02:22:46,415 --> 02:22:46,955
+real-world data.
+
+970
+02:22:47,603 --> 02:22:59,403
+Nice thing is that the algorithm is naturally parallel, meaning that you can use GPUs to parallelize and quickly train it, if compared to CPUs.
+
+971
+02:22:59,924 --> 02:23:10,224
+And also recently there are some ways to extract some rules from neural networks, especially from those without before the output layer.
+
+972
+02:23:11,124 --> 02:23:15,164
+Those hidden layers also resemble some meaning.
+
+973
+02:23:15,724 --> 02:23:20,884
+Although it's not easy to extract all these features, but they also tell you something.
+
+974
+02:23:21,744 --> 02:23:21,963
+Okay.
+
+975
+02:23:23,443 --> 02:23:34,463
+One last note is that, so should you use deep learning or your networks, should they be very deep or complex or not?
+
+976
+02:23:35,043 --> 02:23:50,383
+There's no exact rule, but I can give you some insights that if your problem is very complex and you have little noise and you can have large data,
+
+977
+02:23:51,059 --> 02:23:58,459
+Deep learning is a good idea to use, because other algorithms may not achieve that level of acres.
+
+978
+02:23:59,079 --> 02:24:05,020
+However, if your data is not large, or even if it is large, it's not complex.
+
+979
+02:24:05,459 --> 02:24:15,000
+You don't need to use deep learning. And oftentimes, simple algorithms can work as good as deep learning, and sometimes even better.
+
+980
+02:24:15,000 --> 02:24:25,500
+And the good thing is, you can have some explainable models, such as decision trees and, you know, logistic regression and things like that.
+
+981
+02:24:25,959 --> 02:24:31,979
+They may have good results, less training time, and also explainability, right?
+
+982
+02:24:39,939 --> 02:24:44,459
+Ve bu kadar iyi bir resulta, bu kadar iyi bir soru var.
+
+983
+02:24:57,780 --> 02:25:03,659
+If it doesn't, then try more complex, more complex algorithms. Maybe you can have better results.
+
+984
+02:25:04,680 --> 02:25:04,819
+Okay.
+
+985
+02:25:06,360 --> 02:25:13,120
+So that's all I wanted to talk about today. Next week, we will continue with our discussion with clustering algorithms.
+
+986
+02:25:13,120 --> 02:25:20,060
+We'll see different algorithms as well. But before we finish, any questions or comments from online class?
+
+987
+02:25:27,667 --> 02:25:29,067
+Any questions, comments?
+
+988
+02:25:33,843 --> 02:25:45,743
+Okay, you are welcome. Thank you. Thank you [öğrenci]. Okay, seems like no questions. We'll see you next week. Have a good rest of your day and have a good weekend. Bye-bye.
+
+989
+02:25:46,824 --> 02:25:49,304
+Hayy akşamlar, cemek enziyor.
