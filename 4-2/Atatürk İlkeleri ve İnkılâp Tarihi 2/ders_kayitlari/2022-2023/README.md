@@ -7,3 +7,4 @@
 | 18 | Bahar | — | [sube_18/](sube_18/) |
 | 23 | Bahar | — | [sube_23/](sube_23/) |
 | 25 | Bahar | Zafer Doğan | [sube_25/](sube_25/) |
+| 28 | Bahar | — | [sube_28/](sube_28/) |
