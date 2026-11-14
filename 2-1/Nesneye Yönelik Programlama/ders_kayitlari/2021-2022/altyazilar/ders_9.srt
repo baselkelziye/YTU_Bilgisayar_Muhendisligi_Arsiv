@@ -1,0 +1,4515 @@
+1
+00:00:02,867 --> 00:00:03,668
+Hadi bakalım.
+
+2
+00:00:06,548 --> 00:00:07,387
+Hadi, şimdi bakalım.
+
+3
+00:00:12,211 --> 00:00:17,451
+Arkadaşlar, class, object,
+
+4
+00:00:23,443 --> 00:00:24,243
+Ne yaptık şimdi?
+
+5
+00:00:27,204 --> 00:00:29,723
+2.21, 2.21'den başlayacak.
+
+6
+00:00:29,723 --> 00:00:30,024
+Peki.
+
+7
+00:00:48,884 --> 00:00:51,103
+Evet, şunlar falan bahsedeceğiz.
+
+8
+00:00:51,103 --> 00:00:51,844
+Stream, stream.
+
+9
+00:00:52,084 --> 00:00:53,704
+Daha ufak bir hatırlatma da yaparız.
+
+10
+00:00:54,764 --> 00:00:56,403
+Şu an kimse yok.
+
+11
+00:00:57,344 --> 00:00:59,484
+Tatil eksiklidir belki bir enişte.
+
+12
+00:00:59,704 --> 00:01:01,284
+O yüzden beş dakika bekleyelim.
+
+13
+00:01:03,403 --> 00:01:04,263
+Evet, peki.
+
+14
+00:01:05,504 --> 00:01:05,924
+Çok kolay.
+
+15
+00:01:49,908 --> 00:01:50,867
+Arkadaşlar, şey, nek.
+
+16
+00:02:22,228 --> 00:02:24,128
+Evet, daha büyük şakıda girelim.
+
+17
+00:05:46,771 --> 00:05:49,151
+Evet, peki, artık süreç geçeştik.
+
+18
+00:05:50,531 --> 00:05:52,111
+Bir şey an önce, iş peki tamam.
+
+19
+00:05:52,651 --> 00:05:53,432
+Ama şey şans.
+
+20
+00:05:59,411 --> 00:06:19,051
+Şimdi, kit 12. yansı, yani input output işlemleri ile kaldığımız yerden devam edeceğiz. En son perşembe günü 100 yüze derste geçen hafta streamler üzerinden input output işlemleri yaptık. Bu konuyu çok hızlı bir tekrar edersem şöyle bir şey yapacağız.
+
+21
+00:06:22,708 --> 00:06:41,568
+Öncelikle kontrol etmemiz gereken bütün dosya işlemlerini de kontrol etmemiz gereken dört tane exception var. Bunları yani dosya işlemleriyle ilgili bütün işlemlerimizi try-bolo içerisinde yapıp sonra catch içerisinde de şu exception'ları handle etmemiz, el almamız gerekecek.
+
+22
+00:06:41,971 --> 00:07:05,671
+İlk üçünde temel olan IO exception. Diğerleri zaten IO exception'dan kalıtımla türetildiği için catch içerisinde sadece IO exception'i handle etmemiz yeterli aslında. Ama spesifik olarak genel bir IO exception olduğu demektense biraz daha belirli bir problemin ne olduğunu anlatmak istiyorsak o zaman ayrıca bu EFV veya Paranat Fund exception'i de ayrıca catch edebiliriz.
+
+23
+00:07:05,671 --> 00:07:07,751
+Orası ayrı. Nasıl isterseniz.
+
+24
+00:07:08,244 --> 00:07:14,444
+En sonundaki ise bir unchecked exception. O yüzden keçip olmemize gerek yok kesinlikle.
+
+25
+00:07:15,244 --> 00:07:20,484
+Erişmeye çalıştığımız dosya, stream, her neyse. Erişim hakkında yoksa ortaya çıkan bir şey de bu.
+
+26
+00:07:22,184 --> 00:07:27,384
+Dosya işlemlerini, dosya yönetim ve gerçek input output işlemleri olarak ikiye bölürüz.
+
+27
+00:07:27,384 --> 00:07:28,644
+Birinci kısmı.
+
+28
+00:07:29,235 --> 00:07:38,495
+Üstünde çok fazla durmayacağız. Sınavlarda çok fazla soracağımı zannetmiyorum. Klasik usul sınavlarda zaten soruyoruz. Testte belki sorarız.
+
+29
+00:07:38,995 --> 00:07:52,275
+Şu bilmeniz yeterli. File management konusunda file dediğiniz sınıf maalesef hem dosyaları hem klasörleri simgeliyor. Şu yansıtık ilk cümle.
+
+30
+00:07:53,075 --> 00:08:01,995
+Ve ayrıca bir file meselesi oluşturmak gerçekten ilgili dosyalar ya dizinin olup olmadığı veya onu da oluşturması anlamına gelmemektedir.
+
+31
+00:08:02,415 --> 00:08:04,315
+Sadece bir işaretçidir. NAL da olabilir.
+
+32
+00:08:05,588 --> 00:08:23,848
+Nasıl bir file nesnesi oluştururuz? Ya string ile normal veya relatif veririz. Veyahut da iki tane string alan, birincisi bu açacağımız dosya veya dizinin yolu, ikincisi ise kendi adı şeklinde.
+
+33
+00:08:26,291 --> 00:08:37,331
+En son versiyon, constructor ise bu dosya veya dizinin yer alacağı klasörü yine bir file nesnesi içerisinde alırız.
+
+34
+00:08:37,331 --> 00:08:44,271
+Dizin veya klasörün dosyanın adını da ikinci parametre olarak string ile veririz.
+
+35
+00:08:48,275 --> 00:09:13,175
+Ve işte burada file sınıfın en temel metotları var. Bir kere gerçekten ilgili yolda bir dosya veya dizim var mı yok mu onu anlamak için exist metodu var. Varsa true döndürüyor yoksa false döndürüyor. Bu file nesnesi bir klasör mi simgeliyor yoksa dosyayı mı simgeliyor? Bunu anlayabilmek için is file metodu eğer bu bir dosyayı simgeliyorsa true yok klasörü simgeliyorsa false olarak dönecektir.
+
+36
+00:09:14,259 --> 00:09:22,159
+Herhangi bir dosya veya dizinin bulunduğu dizini almak için get parent file metodu olarak geriye file nesnesi döndürüyor.
+
+37
+00:09:22,480 --> 00:09:30,279
+Ve bunu da mesela işte bu en son file konstruktörünün ilk parametresi olarak mesela kullanılabilir.
+
+38
+00:09:31,399 --> 00:09:32,180
+Ondan sonra Cuman.
+
+39
+00:09:34,639 --> 00:09:37,680
+Bu dosyayı veya dizine okuyabilir miyiz, yazabilir miyiz?
+
+40
+00:09:37,819 --> 00:09:39,340
+Can with, can write metodları var.
+
+41
+00:09:39,764 --> 00:09:45,624
+Gerçekten dosyayı bir boş dosyaya oluşturmak için sıfır baytlık create new files metodu var.
+
+42
+00:09:45,624 --> 00:09:52,803
+Ama bu bir classer ise, bu file nefesinde bir classer isim gelirse o zaman bu metodun çağırılması bir exception oluşturacaktır diye düşünüyorum.
+
+43
+00:09:53,104 --> 00:09:55,803
+Exception'ın oluşturması bile iş yapmayı fordüzeyecektir.
+
+44
+00:09:57,183 --> 00:10:00,000
+Bir dizini oluşturmak için mekaldir metodu...
+
+45
+00:10:00,000 --> 00:10:05,639
+Yalnız bu dizimi oluşturmak için gerekli üst dizimler yoksa bu metot başarısız oluyor.
+
+46
+00:10:06,099 --> 00:10:09,919
+Kardeşim üst dizimleri de oluştur diyorsanız o zaman mekar dizisi metodu var.
+
+47
+00:10:10,620 --> 00:10:12,460
+Önemli metodu var ve direk metodları var.
+
+48
+00:10:12,819 --> 00:10:15,399
+Bunu da pek sınavda sormayacağız.
+
+49
+00:10:16,339 --> 00:10:17,659
+Bilmemiz için mi gerekiyor dedik.
+
+50
+00:10:18,227 --> 00:10:46,227
+Input artı dışı hemliği ise tayımlar üzerinden yapılıyor Java'da. Binary format, text format var hatırlarsınız, random sequential var hatırlarsınız. Bunların hepsini öyle veya böyle Java'da da destekleniyor. Biz özellikle bunların üstünden binary modda komple nesnelerin diske yazılması veya diskten okunması üstünden anlatacağız bunu. Diğer modları ve özellikleri bu temelin üstüne size çok rahat.
+
+51
+00:10:46,227 --> 00:10:49,727
+Herhangi bir Java kitabında veya başka bir referanstan öğrenebilirsiniz.
+
+52
+00:10:50,607 --> 00:11:00,647
+Komple nesneleri, bir streame, tabii onun üzerinden de bir dosya yazmak için, byte'lara çevirme içine, serialization deniliyor.
+
+53
+00:11:00,647 --> 00:11:08,627
+Bunun tam tersi, bir kaynaktan byte'ları okuyup ondan nesneleri oluşturmak içine ise, deserialization deniliyor.
+
+54
+00:11:11,792 --> 00:11:35,652
+Serialization işlemi. Bir kere en temel streamlerle en temel uğraşmamız için bize bir file output stream nesnesi gerekiyor. Ama bunun yetenekleri pek az. Komple nesneleri kaydetmek için biz bu file output stream nesnesini object output stream constructörüne vereceğiz ki o sınıfın constructörü bizim doğrudan nesneleri yazabilmemizi sağlayacak.
+
+55
+00:11:37,652 --> 00:11:50,652
+Yalnız önemli olan burada bir kural var. Diske yazmak için serialize işlemlerini yapacağımız sınıfların başına şu Java IO serializable arayüzünü implement ettiğini belirtmek zorundayız.
+
+56
+00:11:51,211 --> 00:12:02,172
+Bu metodun hiçbir, özür dilerim, bu interfersin hiçbir metodu yok. Sadece markör işaretleme yönelik bir arayüzdüz.
+
+57
+00:12:03,316 --> 00:12:13,716
+Herhangi bir yazdığımız sınıfa sonuna implement, Java, IOS, serializable dediğinizde artık bu sınıftan nesneler serialize edilebiliniz anlamına gelmektedir.
+
+58
+00:12:16,996 --> 00:12:20,635
+Bir de şunu da söyleyeyim hızlıca.
+
+59
+00:12:21,940 --> 00:12:34,120
+Şimdi bir nesnenin elbette üye alanları olacak ve bu üye alanlar da serialize edilebilmelerdir. Bu nesnenin sonunsuz bir biçimde diske aktarılabilmesi için. Bunu da unutmayalım.
+
+60
+00:12:36,220 --> 00:12:40,760
+Ayrıca bu serileştirdiğimiz nesnelere versiyon vermemiz anlamda olabilir.
+
+61
+00:12:42,388 --> 00:12:48,607
+Yazılımın yaşam döngüsü boyunca farklı farklı versiyonlarda veri nesneleri oluşturabiliriz.
+
+62
+00:12:49,168 --> 00:12:53,888
+Adı aynıdır, örneğin Tursun, ama bunun farklı versiyonları vardır olduğu zaman içerisinde.
+
+63
+00:12:54,428 --> 00:13:01,688
+Bütün bunların arasındaki, ama bunları okuyan ve yazan programdan acaba hangi tip versiyon nesnelerimizle çalışabilir?
+
+64
+00:13:01,988 --> 00:13:06,567
+İşte bu gibi kararları verebilmek, edebilmek için bir versiyonlama söz konusu olabilir.
+
+65
+00:13:06,567 --> 00:13:07,628
+Bunun için.
+
+66
+00:13:08,628 --> 00:13:24,067
+Serial version UID diye bir üyalan var. Onu görürsünüz zaten örnek konularda. Biz buna bir değeri verip geçiyoruz. Bu açımda o kadar kompleks versiyonlama işlemlerini yapmayacağımız için çok fazla diriklemeyeceğiz bu konusunun kısmı.
+
+67
+00:13:31,412 --> 00:13:54,251
+Onları da transient anahtar kelimesiyle işaretlersiniz sınıf kodunun içerisinde. Çünkü neden? Belki o tür sınıfların kaynak koduna erişiminiz yoktu belki. O yüzden onun kaynak koduna işte implementalizable değmeyeceğiniz için o üye alanları, o türden üye alanları transient olarak işaretlemeniz gerekebilir dedik.
+
+68
+00:13:55,988 --> 00:14:00,648
+Ders notlarından, örnek dosya üstünden incelerseniz eğer.
+
+69
+00:14:01,556 --> 00:14:06,196
+Örneğin bu kontak türünden nesneleri biz kaydedeceksek, işte ne diyeceğiz?
+
+70
+00:14:06,316 --> 00:14:08,776
+Sadece başına bir ek olarak implementatıcı varıyor.
+
+71
+00:14:08,875 --> 00:14:13,875
+Serializable diyeceğiz ve şurada gördüğünüz serial version UI diye bir değeri atacağız.
+
+72
+00:14:14,056 --> 00:14:17,336
+Bu long olduğu için sonunda L, büyük harfle L yazıyoruz.
+
+73
+00:14:17,495 --> 00:14:20,016
+Long değerli de inşallah o şekilde isim geliyor.
+
+74
+00:14:20,975 --> 00:14:24,776
+Ondan sonra cıma, bundan nesneleri kaydetmek için ise
+
+75
+00:14:28,083 --> 00:14:35,763
+Şöyle yapacağız. Öncelikle işte ilgili bilgileri kullanıcından aldıktan sonra yapacağımız şey try-catch içerisinde.
+
+76
+00:14:36,143 --> 00:14:40,763
+Try içerisinde önce dosyamıza isim veriyoruz. Relative path, göreceli yol kullanıyoruz.
+
+77
+00:14:41,143 --> 00:14:44,083
+Demek ki bu projenin olduğu dizinin içerisinde olacak bu dosya.
+
+78
+00:14:44,523 --> 00:14:48,243
+Ondan sonra da file name string de bir string veriyoruz.
+
+79
+00:14:48,243 --> 00:14:52,343
+İşte gördüğünüz üzere bunu önce file output stream'e veriyoruz.
+
+80
+00:14:52,443 --> 00:14:56,083
+Onun konstruksına veriyoruz. Oluşan nesneyi de doğrudan...
+
+81
+00:14:56,083 --> 00:15:01,563
+Objective Stream Constructors'ı veriyoruz. Buna chaining deniliyor, zincirleme yani.
+
+82
+00:15:02,063 --> 00:15:09,263
+İşte böylelikle elde ettiğimiz nesneyi, stream nesnesinin, light object metodunu kullanarak da iske yazıyoruz.
+
+83
+00:15:09,983 --> 00:15:11,863
+En sonunda close etmeyi de unutmuyoruz.
+
+84
+00:15:12,603 --> 00:15:14,003
+Burada yalnız şey de unutmayalım.
+
+85
+00:15:14,003 --> 00:15:23,003
+Şimdi bizdeki kontakt nesnelerini tek tek kayıt edeceğimiz için, acaba bu dosyada kaç tane nesne olacak, onun bilgisini saklayabilmek için bir de...
+
+86
+00:15:25,299 --> 00:15:44,179
+Yazıyoruz ilk olarak. Ondan sonra da o kadar adet etmesini yazıyoruz. Burada yazdığımız contact count bir önceki yansıya dönersem onun integer olduğunu görmelisiniz. Çünkü Save-List işlemi ancak nesneler için geçerlidir. Primitifler için geçerli değildir.
+
+87
+00:15:47,604 --> 00:15:51,104
+Başka, başka bir şey yok işte. Ayak seksiyonuna keşe ediyoruz. Onda bitiyor.
+
+88
+00:15:57,139 --> 00:16:21,459
+Sonra bu dosyadan Nesne'ye geri okumak için. O zaman ne yapacağız? Bir kere ekstradan gelen bir tane catch işlemimiz oluyor. Onu yapacağız, birazdan göreceğiz. Ayrıca şimdi bu neye ihtiyacımız var? FileInputStream'i oluşturup onu ObjectInputStream'e vermeye ihtiyacımız var.
+
+89
+00:16:21,940 --> 00:16:33,100
+Onun dışında bu object input stream'in read object metodu var. Bu read object'in türü object tümünden nesneleri okuyor. Ama bunu kendi kaydettiğimiz türe cast etmemiz gerekecek.
+
+90
+00:16:37,716 --> 00:16:56,695
+Biz oraya kontak nesnelerini yazdığımızı biliyoruz. O yüzden aslında oradan çevirebiliriz. Normalde ne yapmamız gerekiyordu? Geçen ders zaten hatırlayın. Instance of operatörünü kullanarak da bir type check yapmamız gerekiyor. Ondan sonra çevirmemiz gerekiyor normal. Ama kardeşim biz orada o tür nesne olduğunu biliyoruz zaten. Oradan çeviriyorsunuz.
+
+91
+00:16:56,991 --> 00:17:07,572
+çevirebilirsiniz yani. O zaman bir warning geliyor şurada gördünüz. Onun için de annotation kullanıraktan add suppress warnings unchecked dediğinizde bunu da artık gösterdi.
+
+92
+00:17:14,483 --> 00:17:16,123
+Peki, nasıl okuyacağız?
+
+93
+00:17:16,403 --> 00:17:21,364
+TryBlox içerisinde bir file input sistemi oluşturup bunu object input sisteme vereceğiz.
+
+94
+00:17:21,663 --> 00:17:23,844
+İlgili okuyucu neslimizi oluşturmuş olacağız.
+
+95
+00:17:23,844 --> 00:17:24,844
+İlk olarak...
+
+96
+00:17:26,132 --> 00:17:45,451
+Orada kaç nesne olduğunu yazmıştık. O integer'a çevireceğiz. İşte cast ediyoruz doğrudan. Çünkü az önce yazdım, kaynak kodu elimde öncelikle nesne sayısını yazıyorum, ondan sonra nesneleri yazıyorum. O yüzden ilk okuyacağım nesne sayısıdır. Integer türünden bir nesnedir. Bu reader'ın döndürdüğü objekti integer'a cast ediyorum.
+
+97
+00:17:45,872 --> 00:17:56,872
+Ondan sonra o kadar adet kere for döngüsünde tekrar video yapıp bunu da kontakta çeviriyorum. Ondan sonra ekrana yazılıyorum. Sonunda videoyu kapatmayı unutmuyorum. Ondan sonra cümle de...
+
+98
+00:17:57,875 --> 00:18:04,976
+Cache içerisinde hem IEO Exception'ı keşfetmem gerekiyor, ek olarak class not found Exception'ı da keşfetmem gerekiyor.
+
+99
+00:18:05,115 --> 00:18:10,956
+Sebebi de şu, ben keyfi bir sınıftan nesneler kaydetmiş olabilirim bu screen'i.
+
+100
+00:18:10,956 --> 00:18:19,956
+Şu anki yazdığım projede kaynak kodda import etmediğim sınıflardan nesneler belki kaydetmiş olabilirim.
+
+101
+00:18:21,056 --> 00:18:25,875
+Onları ilgili sınıflarına kest etmeden belki object olarak alıyorum.
+
+102
+00:18:25,875 --> 00:18:32,175
+Ama spesifik olarak sınıflarının ne olduğunu yine de Java sanal makinesinin bulamama ihtimali var.
+
+103
+00:18:32,536 --> 00:18:37,875
+Bu nedenle class, not, font, exception'ında ayrıca check edilmesi gerekiyor.
+
+104
+00:18:38,675 --> 00:18:39,875
+Catch edilmesi gerekiyor.
+
+105
+00:18:41,816 --> 00:18:42,456
+Bu yani.
+
+106
+00:18:43,036 --> 00:18:44,195
+Bunu gördük.
+
+107
+00:18:44,275 --> 00:18:45,875
+Şimdi hızlıca bir özetlemiş olayım.
+
+108
+00:18:46,304 --> 00:18:52,024
+Çünkü hani yüz yüze derse de devam çok değildi. O yüzden hızlı bir özet yapmış olayım.
+
+109
+00:18:52,564 --> 00:18:57,664
+Şimdi gelelim esas bugünden itibaren başladığımız konumuza devam etmeye.
+
+110
+00:18:58,364 --> 00:19:04,443
+Burada da az önce nesneleri kaydederken önce kaç adet olduğunu kaydettim, ondan sonra nesneleri kaydettim.
+
+111
+00:19:04,684 --> 00:19:14,244
+Şöyle bir soru gelebilir aklınıza. Peki hocam, yani biz C'de yaptığımız örneklerde işte dosyanın sonuna gelene kadar oku şeklinde döngüler yazıyoruz.
+
+112
+00:19:14,304 --> 00:19:15,824
+Java'da bunu yapamaz mıyız?
+
+113
+00:19:16,624 --> 00:19:18,064
+Maalesef yapamıyoruz arkadaşlar.
+
+114
+00:19:18,584 --> 00:19:20,064
+Çok sıkıntılı bir konu.
+
+115
+00:19:20,064 --> 00:19:21,903
+Ben bunu ne zaman?
+
+116
+00:19:22,544 --> 00:19:26,004
+Üç sene kadar önce epey didiklemiştim bu konuyu.
+
+117
+00:19:26,403 --> 00:19:27,903
+Bir yere varamamıştım.
+
+118
+00:19:28,304 --> 00:19:36,484
+Ama bunun da benden kaynaklanmadığını, gerçekten hatalar veya buglar veya eksikler olduğunu görmüştüm.
+
+119
+00:19:38,548 --> 00:19:48,508
+Ki ayrıca birazdan da göreceğiz. Buna gerek bile kalmayacak. Başka şekilde bir çalışma yöntemesi olacak. Ama önce şunu edinim dersleri sizinle paylaşmak istiyorum.
+
+120
+00:19:49,508 --> 00:19:59,548
+Mesela şimdi, burada işte problem şu. Bir streaming sonuna ulaşıp ulaşılmadığını test etmek için emin, etkin ve güvenli bir yol maalesef...
+
+121
+00:20:00,000 --> 00:20:15,000
+Yok. O yüzden mesela şöyle bir while döngüsü içerisinde benim leader nesnemin daha fazla kayıdı olduğu sürece okuduğum nesneyi yazsa tekrar oku filan şeklinde bir işler yapamıyoruz maalesef.
+
+122
+00:20:17,140 --> 00:20:23,160
+Şu while'ı bir üst satıra da çıkartabilirim gerçi. Gerçi fark etmez. O zaman şu alttakini belki.
+
+123
+00:20:23,827 --> 00:20:46,048
+İstilmeli bir şey tarihiyle. Ama yani işte bu ana wild mantığı içerisinde maalesef yapamıyorum. Hasnext diye bir metot vardı eskiden JDK'da fakat yanlış çalışıyordu. Bu nedenle düzeltmeyip JDK 8'te tamamen o hasnext metodunu kaldırdılar. Böyle çalışan metodlar maalesef.
+
+124
+00:20:46,804 --> 00:20:50,744
+Peki, başka bir şey yapamaz mıyız? Epey didiklemiştim.
+
+125
+00:20:53,324 --> 00:20:56,984
+Object input stream'in available diye bir metodu var aslında.
+
+126
+00:20:57,544 --> 00:21:04,384
+Ve daha fazla kaç byte gelebilir bu stream'den onu da geri döndüren bir metod.
+
+127
+00:21:04,384 --> 00:21:07,244
+Fakat hatalı olduğu anlaşıldı.
+
+128
+00:21:08,644 --> 00:21:11,423
+Bulduğum kaynar da buraya yazdım.
+
+129
+00:21:12,244 --> 00:21:13,384
+Ek olarak...
+
+130
+00:21:13,491 --> 00:21:35,231
+Keşke şey olsa, hani read object null döndürse o zaman yine sona eriştiğimizi anlayabilirdik ama o da olmuyor. Yani end of file'da maalesef düzgün bir şekilde null da dönmüyor. Onu da referansına şuraya yazdım. Exception oluşuyor maalesef. Null dönmüyor, exception oluşuyor.
+
+131
+00:21:35,508 --> 00:21:44,508
+Peki hocam, o zaman biz o exception'ı keş etsek, keş edip de oradan devreye girsek ama...
+
+132
+00:21:44,660 --> 00:22:03,980
+Yani catch bloğunun amacı o değildir ve olmamalıdır. Yani program akışını düzenlemenin bir yeri değildir catch kısmı. Bir problem olduğunu belirtmek ve eğer bu çok kritik bir problemse sistemden ya da programdan güvenli bir biçimde çıkmak için kullanılır.
+
+133
+00:22:03,980 --> 00:22:12,660
+Yani oraya ek, forlar, vaylar, iflar koymak için falan değil. O yüzden ya işte az önce...
+
+134
+00:22:12,660 --> 00:22:20,559
+Önce yaptığımız gibi kayıt edeceğimiz nesne sayısını veya sayılarını her neyse önce yazacağız, sonra ilgili nesneler yazacağız.
+
+135
+00:22:21,140 --> 00:22:24,000
+Veya çok daha iyi bir yolumuz var, o da şu.
+
+136
+00:22:25,680 --> 00:22:32,820
+Kaydedeceğimiz nesneleri içinde bulundukları veri yapılarıyla birlikte kaydetmek olacaktır.
+
+137
+00:22:33,460 --> 00:22:34,119
+En iyisi de budur.
+
+138
+00:22:35,119 --> 00:22:36,800
+Örneğin bu kontak nesnelerini.
+
+139
+00:22:37,268 --> 00:22:43,668
+Dizide tutmuştuk. Komple diziyi kaydedebiliriz. Çünkü dizi bir nesne aslında. Nesne olarak el alınıyor biliyorsunuz.
+
+140
+00:22:44,488 --> 00:22:55,268
+Gördük. Veyahut da işte önceki derslerimizde gördüğümüz liste yapıları veyahut da map yapılarında bu nesnelerimiz, kayıt etmek istediğimiz nesnelerimiz barınmıyordu.
+
+141
+00:22:55,388 --> 00:23:03,847
+Zaten orada barınmıyordu diye düşünüyorum. Barınmıyorsa bile biz onları önce bir listeye ekler, ondan sonra kayıt ederiz dosyaya.
+
+142
+00:23:05,268 --> 00:23:08,028
+Bu tek bir write object komutuyla kaydederiz.
+
+143
+00:23:08,248 --> 00:23:10,168
+Yazacağımız objekte o veri yapısı olur.
+
+144
+00:23:10,528 --> 00:23:24,567
+Veya alternatif olarak da, simetri olarak da yükleyeceğimiz zaman da tek bir read object metoduyla yükleriz ilgili veri yapısını ve komple onun içerisindeki bütün nesnelerle birlikte geri yüklemiş oluruz yani.
+
+145
+00:23:25,236 --> 00:23:49,976
+Şeyimiz bu olacak. Çalışma biçimimiz bu olacak. Birazdan örneğin yapacağız. Ve şunu da unutmayın. Eğer A'dan B'ye bir ilişki varsa, sahiplik olur, parça bütün olur, her neyse. O zaman işte sözde söylemiştim gerçi, bunu da tekrar veriyoruz. Sadece A'nın serilere sahibi gerçeklemesi yetmiyor. B'nin de gerçeklemesi gerekmektedir. Onu da unutmayalım. Tekrar hatırlatalım.
+
+146
+00:23:54,067 --> 00:23:58,307
+O zaman şimdi nasıl olacak konumuz bir bakalım.
+
+147
+00:23:59,667 --> 00:24:06,347
+Önce şu yansı üstünden gidelim ki çünkü anlattığım şeyleri vurgulama kısmı burada ondan sonra eküpten de yazıp çalıştığınız.
+
+148
+00:24:07,539 --> 00:24:14,799
+Şimdi, kardeşciğim, kontak nesnenin önü, artık dizide de tutmayalım biliyorsunuz yani dizilerle ulaşmak çok angarya aslında.
+
+149
+00:24:15,480 --> 00:24:19,940
+Boşuna icat edilmedi ve öğrenmedik bu veri yapılarını.
+
+150
+00:24:20,460 --> 00:24:23,960
+Kontakt üründen bir link atısı tanımlıyorum ve yetkilendiriyorum.
+
+151
+00:24:24,960 --> 00:24:33,400
+Ondan sonra cıma bilgilerine girdiğim her kontak nesnesini bu kontak diskesine ekliyorum.
+
+152
+00:24:33,400 --> 00:24:35,160
+Add metodunu kullanarak da.
+
+153
+00:24:35,476 --> 00:24:53,816
+Ondan sonra liste yazacağım şey, tribal içerisinde doğrudan bu object tarif türenler olan bir yazıcının write object metoduna doğrudan bu veri yapısını, listeyi vermek olacak. Ondan sonracıma da geri kalan standart işlemleri yapıyorum.
+
+154
+00:25:02,644 --> 00:25:22,803
+V'leri okumak için read object metodunu ben geri dönen obje aslında benim kontakt türünden nesne alçanen linked listim. Ona cast ediyorum ve ilgili o türden bir referansa atıyorum. Ondan sonra onun içerisindeki tüm nesneleri ekrana yansıtırıyorum. Bu kadar basit.
+
+155
+00:25:23,624 --> 00:25:28,463
+Burada sadece şey unutmuşum. Sonraki yansıtı unutmamışım. Keçi var daha bunun.
+
+156
+00:25:30,708 --> 00:25:48,188
+Keçi içerisinde de işte standart işlemlerimi yapıyorum. Bu kadar. Şimdi örneğini görelim. Peki hocam, ben çok merak ediyorum. Bu stringler üstünden mesela ne olabilir? Veyahut da random access falan da olabilir.
+
+157
+00:25:57,940 --> 00:26:18,880
+verirseniz oradan satır satır okuma gibi işlemleriniz var. Yazmak için ise FireWrite'ını doğrudan kullanabiliyorsunuz ama daha fazla yetenek isterseniz stringlerle şununla bununla ilgili o zaman ilgili diğer bir streamle onu da zincir verebilirsiniz.
+
+158
+00:26:18,880 --> 00:26:20,060
+Ayrıntılar için.
+
+159
+00:26:21,715 --> 00:26:25,115
+Herhangi bir Java kaynağına sizi yönlendiriyorum.
+
+160
+00:26:26,015 --> 00:26:29,335
+Sınav ders kapsamında bu şekilde çalışacağız.
+
+161
+00:26:29,755 --> 00:26:32,875
+Proje ödeminde illaki bir dosya işlemleri yapmanız gerekecek.
+
+162
+00:26:33,935 --> 00:26:39,435
+Belki orada bir konfigürasyon dosyası oluşturmak, okumak, yazmak isteyebilirsiniz.
+
+163
+00:26:39,595 --> 00:26:41,315
+Belki Steam modunda çalışacak.
+
+164
+00:26:41,675 --> 00:26:42,715
+O zaman bunlara bakabilirsiniz.
+
+165
+00:26:42,715 --> 00:26:47,855
+Yani CoreJava Vol. 2 veya duruma göre Vol. 1'de değer alıyor muydu?
+
+166
+00:26:48,468 --> 00:27:16,448
+Şimdi bu iki volümda birinci konu bu dosya işlemleri, ikinci konu multi-trading. Bu ikisini bazen birini birinci birini ikinci cilde veriyorlar bazen de tersi oluyor. Ama zaten hem filiste olarak kitabı eline almak isteyen arkadaşlar için Davutbaşı Merkis Kütüphanemizde bunun birinci ve ikinci cildinin üçer kopyası var. Hem de VETIS üzerinden elektronik olarak da Korceva'ya ulaşabiliyor.
+
+167
+00:27:16,468 --> 00:27:29,228
+Onun dışında bir dolu free, ücretsiz, abonelik gerektirmeyen Java kaynakları da biraz ufak bir çabayla sorunsuz biçimde bunu öğrenebilirsiniz.
+
+168
+00:27:30,148 --> 00:27:31,568
+Evet, şimdi şu örneğimizi yapalım.
+
+169
+00:27:33,328 --> 00:27:34,488
+Örneğimizi çalıştıralım.
+
+170
+00:27:35,508 --> 00:27:37,788
+Hangi paket yedi bunda? 12B paket.
+
+171
+00:27:37,788 --> 00:27:38,428
+Pekala.
+
+172
+00:27:44,980 --> 00:27:45,980
+Bir tekundlar.
+
+173
+00:27:50,483 --> 00:28:06,503
+12B. Evet. Evet. Kontak Java ve bilmeniz gereken şey işte seyrede zeybil arayüzünün gerçeklenmesi gereği ve şu seyrede bölcünü yağıydı bir olay edip geçmeniz başka onun dışında da gayet basit bir sınıf.
+
+174
+00:28:07,988 --> 00:28:18,028
+Create Contacts içerisinde aynı yansıda gördüğünüz gibi FireOutputStream oluşturuyoruz. Onu da ObjectOutputStream'e veriyoruz.
+
+175
+00:28:25,556 --> 00:28:27,855
+Şuradaki link listi yazıyorum.
+
+176
+00:28:27,976 --> 00:28:28,696
+Komple yazıyorum.
+
+177
+00:28:29,276 --> 00:28:30,076
+Ondan son açıma
+
+178
+00:28:30,076 --> 00:28:33,276
+kaydediliyorum. Ondan son açıma
+
+179
+00:28:33,276 --> 00:28:35,456
+okuma
+
+180
+00:28:35,456 --> 00:28:36,076
+içinde
+
+181
+00:28:36,076 --> 00:28:39,655
+okuma içinde
+
+182
+00:28:41,556 --> 00:28:45,736
+bir file input stream oluşturup onu doğrudan object input stream'e veriyorum.
+
+183
+00:28:46,236 --> 00:28:57,336
+Ve tek bir read object metodu çağrısıyla, ki onu işte bu ilgili linked liste çevirerekten kestirip, çevirip, ilgili türden nesneye atıldıktan sonra,
+
+184
+00:28:57,336 --> 00:29:04,395
+fordörmüşsün de hepsini yazdıkları ekranı ve sonuçsuz bir biçimde çalışacağını göreceğiz.
+
+185
+00:29:05,435 --> 00:29:07,115
+Önce create edelim bakalım.
+
+186
+00:29:08,468 --> 00:29:25,127
+Ha, bu arada. Önce bir exception oluşturdum, kasti. Geçen hafta tek tek nesneleri yazmıştık. Önce sayısını yazmıştık, son nesneleri yazmıştık. Şimdi bu show contacts düzgün çalışmayacak. Bakalım ne gibi exceptionlarla karşılaşacağız, onu deneyelim.
+
+187
+00:29:32,339 --> 00:29:48,019
+Evet, bakın. Class, class, exception. Ne diyor? Integra sınıfından bir nesneyi link kısmı ile çeviremiyorum diyor. Evet, olması gereken şey de buydu zaten. Önce yeni formatta create edelim, ondan sonra yeni formatta okuyalım.
+
+188
+00:29:51,923 --> 00:29:54,804
+3 tane yeter.
+
+189
+00:30:11,403 --> 00:30:17,644
+Üçüncüsü [öğrenci], 3333.
+
+190
+00:30:18,291 --> 00:30:24,371
+Evet kaydettim diyor.
+
+191
+00:30:24,631 --> 00:30:24,951
+Güzel.
+
+192
+00:30:25,131 --> 00:30:27,031
+Bakalım gerçekten kaydedebilmiş mi?
+
+193
+00:30:27,771 --> 00:30:29,531
+Şurada bir göstereyim size.
+
+194
+00:30:31,651 --> 00:30:36,451
+Şöyle şimdi projenin dizinini açayım hemen size.
+
+195
+00:30:40,884 --> 00:30:56,064
+Dizinin içerisine giriyorum. Bakın, contacts.dat burada. Bugün ayın beşi, saat dokuz buçuk, ayın beşi, dokuz buçuk tarihli oluşturulmuş dosya. Az önce geçen hafta oluşturduğum versiyonu vardı. Şimdi yeni oluşturduğum versiyonu var.
+
+196
+00:30:57,504 --> 00:31:02,224
+Gelelim şimdi şu create contact, özellikle show contacts'ı çalıştırmaya.
+
+197
+00:31:04,756 --> 00:31:12,695
+Evet, bakın gördüğünüz gibi gildi bilgiler bir problem olmadan şark diye okundu. Gayet basit aslında.
+
+198
+00:31:16,819 --> 00:31:19,179
+Hatırlamamız gereken birkaç ayrıntı var sadece.
+
+199
+00:31:20,179 --> 00:31:24,779
+Onu yaptıktan sonra hiç sorunsuz bu işlemleri üretebiliyorsunuz.
+
+200
+00:31:25,659 --> 00:31:31,359
+Peki, şimdi yanılmıyorsam bu stream işlemleri bitti.
+
+201
+00:31:31,999 --> 00:31:34,799
+Sorularınız varsa üzerinden geçelim konuşalım.
+
+202
+00:31:42,483 --> 00:31:43,244
+Kabi da Gika.
+
+203
+00:31:58,804 --> 00:32:04,144
+Peki. Şimdi o zaman iç sınıflar konusuna girelim bakalım.
+
+204
+00:32:05,604 --> 00:32:07,084
+Inner class yani iç sınıflar.
+
+205
+00:32:08,203 --> 00:32:09,183
+Inner class ne dersin?
+
+206
+00:32:09,652 --> 00:32:15,932
+Bir sınıfın içinde bir sınıf tanımladığınızda adı üstünde bu bir iç sınıf olmaktadır.
+
+207
+00:32:16,452 --> 00:32:20,652
+Şimdi aynı Java dosyasında bizden fazla sınıf tanımlamaktan bahsetmiyorum.
+
+208
+00:32:20,812 --> 00:32:22,972
+Biri bittikten sonra ötükini tanımlamak.
+
+209
+00:32:23,472 --> 00:32:28,372
+Bir sınıfın bloğunun içinde yeni bir sınıf kodlamaktan bahsediyor.
+
+210
+00:32:29,372 --> 00:32:31,272
+Peki yapacağız da ne olacak?
+
+211
+00:32:31,772 --> 00:32:32,472
+Ne işe yarayacak?
+
+212
+00:32:33,212 --> 00:32:34,752
+Önce bir özelliklerine bakalım.
+
+213
+00:32:35,212 --> 00:32:37,652
+Oradan ne işe yarayacağını yavaş yavaş çıkaralım.
+
+214
+00:32:37,652 --> 00:32:47,872
+Bir iç sınıfın kaynak kodunun içerisinden dış sınıfın bütün üyelerine erişebiliriz. Private olanları da dahil.
+
+215
+00:32:48,756 --> 00:33:00,336
+Şimdi bu önemli bir özellik. Normalde veri gizleme ilkesine uymak için her sınıfın üye alanlarını private tanımıyorduk ve public erişim metodları üzerinden erişim sağladık.
+
+216
+00:33:00,336 --> 00:33:14,476
+Bazen öyle bir şey, gerçekten öyle bir enteresan durumlarda bulabiliyoruz ki kendimizi, bu private üyelere doğrudan erişebilsek olmaz mıydı dediğimiz noktalar olabilir. O zaman ne yaparız?
+
+217
+00:33:14,836 --> 00:33:19,016
+Bir iç sınıf oluşturursak bunu yapabiliriz.
+
+218
+00:33:20,276 --> 00:33:22,276
+Çok da gerekmeyecek gerçi.
+
+219
+00:33:22,456 --> 00:33:27,156
+Yani çok enteresan, çok istisna durumlar dışında kullanmanız gerekmeyecek.
+
+220
+00:33:27,236 --> 00:33:30,496
+O yüzden iç sınıfların esas kullanım arası yeri o değildir.
+
+221
+00:33:31,276 --> 00:33:33,635
+Ama şuna yarar belki de.
+
+222
+00:33:35,256 --> 00:33:40,416
+Bir sınıfın kaynak kodunu sadece tek bir sınıfa açıp
+
+223
+00:33:40,756 --> 00:33:47,396
+diğer bütün sınıflardan kapatmak istiyorsanız eğer, o zaman nasıl yapabilirsiniz böyle bir şeyi?
+
+224
+00:33:48,176 --> 00:33:51,036
+Sınıfı private tanımlasanız bir işe yaramaz.
+
+225
+00:33:52,136 --> 00:34:03,576
+Hangi sınıf kullanacaksa bu özel sınıfı, o zaman o özel sınıfı kullanacağı sınıfın içerisinde bir iç sınıf olarak tanımlarsak, o zaman bu iş çözüm.
+
+226
+00:34:07,155 --> 00:34:33,576
+Ek olarak üçüncü kullanım alanı, GUI programları yazarken ve multi-traded yani paralel çalışabilecek, gireymişler içeren şeyler yazarken, kodlar yazarken, anonim yani ismi olmayan iç sınıflar kullanıyoruz arkadaşlar. Gayet pratik oluyor oralarda kullanımı. Zaman gelince göreceğiz. Ama önce.
+
+227
+00:34:34,516 --> 00:34:46,956
+Nasıl sıradan bir inner sınıfın tanımlanıp, kodlanıp çalışma mekanizmasını diyelim ki sonra bu esas kullanım alanına rahatça uyum sağlayalım.
+
+228
+00:34:48,556 --> 00:34:55,836
+İç sınıfın yapamayacağınız tek bir şey var. Stratik metot tanımlayamıyorsunuz arkadaşlar.
+
+229
+00:34:55,836 --> 00:34:56,916
+Çünkü neden?
+
+230
+00:34:58,452 --> 00:35:06,072
+Şimdi aslında iç sınıf dış sınıfa bağlıdır ve dış sınıfın bir üyesi gibi davranır.
+
+231
+00:35:07,192 --> 00:35:14,572
+Bu nedenle mutlaka bir normal üye olarak davranması gereken bir sınıfa
+
+232
+00:35:14,943 --> 00:35:31,064
+Statik ekleyemezsiniz. Çünkü statik neydi? Ortak yani sınıf üzerinden erişilen üyeydi. İllaki bir üye alan gibi davranacak bir sınıfa da bu nedenle ortak kullanıma yönelik statik metot ekleyemiyorsunuz.
+
+233
+00:35:31,064 --> 00:35:41,623
+Üye alan ekleyebiliyorsunuz ama metot ekleyemiyorsunuz. Öyle hatırlıyordum. Hafızamızı tazeleriz birazdan deneyerekten görürüz.
+
+234
+00:35:42,068 --> 00:35:49,448
+Şimdi, örneğimizi yine çalışan, yani insan ve çalışan sınıfları üzerinden vermek istiyorum.
+
+235
+00:35:50,168 --> 00:35:59,847
+Bu arada ilk sınıfların yama sınıf diagramında gösteriminin çok pratik üstünde uzlaşılan bir yönü pek yok.
+
+236
+00:35:59,847 --> 00:36:02,768
+O nedenle sınıf işlem alanında göstermeyeceğiz.
+
+237
+00:36:03,168 --> 00:36:05,068
+Kod üzerinden göstermek istiyorum.
+
+238
+00:36:05,556 --> 00:36:20,435
+Şimdi, person sınıfını kodlamaya başlamışım. Bir isim vermişim. İsimı constructor da set ediliyor. Kullanılmayan üye alanları bir warning olarak verme ben biliyorum diye bir tane annotation koydum.
+
+239
+00:36:20,435 --> 00:36:27,496
+Şimdi bakın, bunun içerisinde bir private if sınıfı tanımlamaya başladım. Private class employee.
+
+240
+00:36:27,840 --> 00:36:50,500
+Dikkat ederseniz daha person'un gövdesini kapatmadım. O yüzden person'un gövdesinin içerisinde bir iç sınıf, private iç sınıf tanımladım. Onun ücreti var. Public constructor var, ücreti alıyor, set ediyor. Ücret için getter metodu var, ücret için setter metodu var. Hatta to string metodu var.
+
+241
+00:36:55,347 --> 00:37:12,507
+Çalışan aynı zamanda bir insan. Burada kalıltımı kullanmadım ama iç sınıf kullandım. Yani bu employee sınıfından eğer bir nesne oluşturursam, birazdan göreceğiz, o tip bir üye alan tanımlamamın oluşturma işlemlerini göreceğiz.
+
+242
+00:37:12,507 --> 00:37:17,268
+Ama önce oluşturmadan nasıl oluyor onu görüyoruz bu noktada.
+
+243
+00:37:18,739 --> 00:37:34,459
+Employee, bir insanla ilişkili olacağından, bir insan nesnesinin iç, içinde yer aldığından, o insanın private üyesine doğrudan erişebiliyor. Bakın, direkt name diyordu. Bu name, personal üyalarını aslında.
+
+244
+00:37:34,655 --> 00:37:58,376
+Bunda bir terslik var mı? Yok. Çünkü bir sınıfın normal metotları kendisinin private üye alanlarına erişir. Madem bunda bir sıkınca yok. Bu employee de aslında person'ın bir tür üyesi. Bu nedenle employee sınıfı içerisinde person'ın private üyelerine doğrudan erişebilmenin hiçbir sıkıncası yok.
+
+245
+00:38:00,115 --> 00:38:08,775
+İç sınıfın kodu burada bitiyor. Deneme yapmak için bir main metodu ekledim. Employee türünden bir dizi oluşturuyorum.
+
+246
+00:38:09,588 --> 00:38:37,588
+Bir de person nesnesi oluşturacağım. Bunları oluşturur oluşturmaz bu şeye ekleyeceğim. Ama normalde şey yapıyorduk önceki örneklerde. Employee nesnenin oluşturuluş oluşturulmaz diziye ekliyorduk. Ama şimdi iç sınıf örneği olduğu için iç sınıf kullanılacak durumlarda dış sınıftan bir referansa da mutlaka ihtiyacım olacak. Çünkü bu employee iç sınıfı her şekilde person.
+
+247
+00:38:37,588 --> 00:38:54,428
+Aslında bağlı. O yüzden tek başına employee oluşturulamaz. Çünkü biz bu employee sınıfını person x sınıfı olarak kodladık. Bu nedenle tek başına oluşturulamaz. Nasıl oluşturulur ve kullanılır? Şurada görüyorsunuz. Önce bir person nesnesi oluşturuyorum.
+
+248
+00:38:59,764 --> 00:39:09,884
+Employee tünden bir nesneyi ilk atacağım göz olan star sıfır elemanına dikkat ederseniz person nesnesi üzerinden erişiyorum.
+
+249
+00:39:09,884 --> 00:39:19,404
+Kişi.new employee diyorum ve ilgili maaşı veriyorum. Bu şekilde bu sınıftan nesne oluşturabiliyorsunuz.
+
+250
+00:39:20,164 --> 00:39:25,844
+Ama tabii bu işi sadece ve sadece bu person sınıfının maini içerisinde yapabiliriz.
+
+251
+00:39:26,159 --> 00:39:31,539
+Bu main metodunu kesip başka bir sınıfa taşımaya kalksak bunu yapamayacağız.
+
+252
+00:39:31,859 --> 00:39:37,659
+Çünkü bu employee sınıfı aslında person'ın private bir üyesi.
+
+253
+00:39:38,799 --> 00:39:40,920
+Sınıf türünden bir diye, sınıf direkt diye.
+
+254
+00:39:41,839 --> 00:39:45,379
+Bu nedenle ancak ve ancak burada yapabiliyorum ve bu şekilde.
+
+255
+00:39:47,315 --> 00:40:00,515
+Diğer iki şey de oluşturduktan sonra bir for döngüsü içerisinde bu private sınıf, iç sınıf türünden bir nesne tanımlayıp o dizinin elemanları içerisinde dolaştırabiliyor.
+
+256
+00:40:01,135 --> 00:40:04,515
+Şey bu, olay bu. Çalıştıralım, görelim.
+
+257
+00:40:07,347 --> 00:40:32,047
+Şimdi bunu yapmak için hani neyi yapamadığımızı da göstereceğimizden şöyle bir denemelerle taşımak istiyorum ben bunu. Şu 12B paketini, ay pardon 12B değil, 13A. Burada 12C'de ne var? Neyse, ders konumda yoksa merak edenler bakabiliriz. Şuradaki topra paketi alayım.
+
+258
+00:40:32,480 --> 00:40:35,060
+Daha sonra da olacak. Tamamlayız.
+
+259
+00:40:35,060 --> 00:40:38,440
+Şey değil, problem değil. Şöyle yapıyorum.
+
+260
+00:40:38,440 --> 00:40:39,480
+Zorban paketi.
+
+261
+00:40:41,480 --> 00:40:42,560
+Kıramat kapıcısını.
+
+262
+00:40:44,840 --> 00:40:46,820
+Evet. Biraz.
+
+263
+00:40:48,820 --> 00:40:51,220
+Evet. Aynı şeyde gördüğünüz gibi.
+
+264
+00:40:51,740 --> 00:40:53,380
+Yansıda gördüğünüz gibi.
+
+265
+00:40:55,940 --> 00:40:56,960
+Çalıştıralım bakalım.
+
+266
+00:40:59,923 --> 00:41:11,143
+Evet. Yine gördüğünüz gibi bir program olmadan üç tane nesneyi de oluşturdu, diziyi ekledi ve bilgilerini de yazdı.
+
+267
+00:41:13,023 --> 00:41:14,923
+Şimdi şunu göstereyim.
+
+268
+00:41:16,003 --> 00:41:17,983
+İlk sınıf oluşturayım mesela şurada.
+
+269
+00:41:17,983 --> 00:41:19,983
+Ana program diye mesela.
+
+270
+00:41:23,683 --> 00:41:26,384
+Benim metodum.
+
+271
+00:41:28,628 --> 00:41:34,468
+Şimdi şu person'ın main metodun gövdesini oraya da kopyalayalım.
+
+272
+00:41:35,347 --> 00:41:36,307
+Kopyalayıp yapıştıralım.
+
+273
+00:41:37,728 --> 00:41:42,068
+Burada bana bu employee sınıfı problem çıkartacak.
+
+274
+00:41:42,068 --> 00:41:44,908
+Çünkü, yuki...
+
+275
+00:41:45,588 --> 00:42:06,907
+Bir kere şu an bunu ben göremiyorum diyor. Yani ne olduğunu anlayamadım diyor. Her ne kadar ilgili importu koysa bile, bakın şimdi importun açıklamasına, hatasının açıklamasına bakın. Person sınıfındaki employee sınıfı gülünüz değil diyor. Çünkü ben bu iç sınıfı private olarak tanımladım. Amacım da oydu.
+
+276
+00:42:08,884 --> 00:42:31,923
+Bu employee kullanalım ama bunu açık olmasın şeklinde bir tasarım buydu. Eğer bu main metodunu diğer başka bir sınıf içerisinde de çalışabilmesi istiyorsam o zaman bu employee iç sınıfını private değil de public olarak tanımlamam gerekirdi. Ben bunu burada tanımla tanımlamaz.
+
+277
+00:42:32,724 --> 00:42:52,964
+Buradaki hatam gitti ve artık bu main metodunu başka bir sınıftan kullanabiliyorum. Çünkü artık bu employee sınıfını public olarak beyan ettiğim için başka sınıflardan o sınıfın kaynak koduna erişebiliyorum artık.
+
+278
+00:42:53,940 --> 00:43:02,280
+Ama her halükarda şu kişiye ihtiyacım var. Yani bunu sadece new employee şeklinde yazamam.
+
+279
+00:43:04,851 --> 00:43:31,111
+Veyahut da bu person sınıfının bir new employees şeklinde de yazamam. Yani sınıf referansı üstünden değil, illaki nesne referansı üzerinden erişmem gerekiyor. İç sınıflara ve iç sınıflardan olan nesnelere illaki dış sınıf türünden bir nesne referansı üzerinden erişmem bir zınırlılıktır.
+
+280
+00:43:31,923 --> 00:43:36,204
+Evet, burada şu an yapıp yapamayacağımız şeyler bunlar.
+
+281
+00:43:36,963 --> 00:43:39,844
+Hocam, şu an anlamadık dediğiniz yer varsa konuşalım.
+
+282
+00:43:49,108 --> 00:44:12,708
+Yoksa devam edelim. Bir de başka ne demiştim? Bir şey daha. Ha, şey merak ediyorduk. İç sınıflara statik metot koyamam diyordum. Göstereyim. Public, statik, void, metot filan filan filan.
+
+283
+00:44:14,483 --> 00:44:31,603
+Bakın diyor ki değerleme atan var. Diyor ki işte şurada olursa bu metot statik olarak tanınamaz. Çünkü statik metot da sadece ya bir statik sınıfta veya top level type, yani outer class demek istiyor aslında.
+
+284
+00:44:31,603 --> 00:44:36,963
+Outer class da şey edilebilir, tanımlanabiliriz diyor. Bu o yüzden olmadı.
+
+285
+00:44:40,148 --> 00:44:55,008
+Final için bir şey yok, bir problem yok. Gerçi anlamı da yok ama yani ilk sınıftan kalıtımda yeni bir ilk sınıf oluşturacaksak başka da. Genelde artık o kadar da ileri gitmiyoruz genelde. Öyle bir ihtiyaç doğmuyor genelde.
+
+286
+00:44:56,008 --> 00:44:58,368
+Peki, üye alan için?
+
+287
+00:45:02,368 --> 00:45:06,188
+Public, Final.
+
+288
+00:45:07,155 --> 00:45:23,795
+Statik, int, fields, 5.5. Bunda bir problem yok. Buna erişebileceğim. Nasıl erişebileceğim? Bir görelim. Önce kayıt edeyim.
+
+289
+00:45:23,795 --> 00:45:28,715
+Daha sonra diyelim ki mesela ekranın diziyeyi yansıtayım.
+
+290
+00:45:30,675 --> 00:45:54,335
+Diyeyim ki, işte bu şeyin employee'in staff'ın var ya, bunun nokta, pardon, statikti madem, o zaman değilsem ki, employee'nin, bakın, field'ına buradan erişebiliyorum, 5 olarak.
+
+291
+00:45:56,704 --> 00:45:58,944
+Belki biraz garipseyebilirsiniz.
+
+292
+00:45:59,084 --> 00:46:04,264
+Hocam, yani statik üye alan tanımlayabiliyorum da, metot niye tanımlayamıyorum?
+
+293
+00:46:05,704 --> 00:46:06,544
+Vardı bir nedeni.
+
+294
+00:46:06,724 --> 00:46:07,704
+Ben de çok bilmiyorum.
+
+295
+00:46:09,244 --> 00:46:09,444
+Evet.
+
+296
+00:46:11,524 --> 00:46:11,784
+Peki.
+
+297
+00:46:14,524 --> 00:46:18,504
+Peki, bu örnekten sonra şimdi farklı kullanım notlarına geçelim.
+
+298
+00:46:22,931 --> 00:46:35,612
+Ne gördük, ne öğrendik, nasıl bir iç sınıf tanınırız ve iç sınıftan bir nesne içerisinden dış sınıftan nesnenin bağlı olduğu üyelerine nasıl erişiriz bunları gördük.
+
+299
+00:46:35,711 --> 00:46:42,011
+Ve örneğimiz de ilk başta private'tı. Private olduğu için aynı pakette dosya değer bütün sınıflardan gizliydi.
+
+300
+00:46:43,764 --> 00:46:47,364
+Sınıfın main metodu içerisinde bunu kullanmadık, edemedik.
+
+301
+00:46:48,044 --> 00:46:51,424
+Ama nasıl olacağını gösterelim dedik.
+
+302
+00:46:51,624 --> 00:46:55,844
+Public olursa zaten yansıtı da geliyormuş bundan sonra.
+
+303
+00:46:56,944 --> 00:46:57,744
+Sıra oymuş.
+
+304
+00:46:58,900 --> 00:47:03,980
+Sadece private'ı public'e çekmiştim. Burada da aynı şeyi görüyorsunuz.
+
+305
+00:47:04,380 --> 00:47:15,759
+Artık ne fark var peki şu 13B'deki person ile 13A'daki person arasında özellikle göstermek istediğim ama atladığım bir şey olmasın. Bir bakalım.
+
+306
+00:47:17,759 --> 00:47:24,559
+13A ve 13B. Bunları compare with each other.
+
+307
+00:47:29,748 --> 00:47:43,248
+Her şey bir tek, ha meymet yok bir tek, evet başka yere taşıyabilmiş oluyorum. Biraz daha az comment vermişim, bir iki ekstra şey yapmışım, bir iki annotation, yani ciddi bir şey yok, fark etmeyecek bir şey yok.
+
+308
+00:47:45,768 --> 00:47:48,547
+Evet, yani orada da az önceki örnekte yaptığım gibi.
+
+309
+00:47:49,619 --> 00:48:00,899
+Main metodunu buradan kesmişim, tamamen kesmişim ve işte bir başkasının main metodu içerisine koymuşum. Az önce yaptığımız şey. Peki, başka ne yapabiliriz?
+
+310
+00:48:05,076 --> 00:48:07,656
+Onu gördüm, ondan sonra bitiyor zaten.
+
+311
+00:48:10,276 --> 00:48:11,236
+Bir dakika.
+
+312
+00:48:12,036 --> 00:48:15,536
+Çok fazla pageant yaptım da herhalde ondan çok kaydı.
+
+313
+00:48:15,976 --> 00:48:17,176
+Dur bakalım başka neyimiz var?
+
+314
+00:48:17,176 --> 00:48:18,436
+Dur bakalım.
+
+315
+00:48:20,516 --> 00:48:22,456
+13B'yi yapmış olduk.
+
+316
+00:48:26,036 --> 00:48:33,135
+Onun dışında 224. 225. yansımda. Tamam, onları da yapalım, ondan sonra ara veririz.
+
+317
+00:48:33,135 --> 00:48:35,615
+Araba yaklaşıyor ama bölmeyelim.
+
+318
+00:48:45,940 --> 00:48:47,379
+En son bunu yaptık.
+
+319
+00:48:48,039 --> 00:48:49,419
+Ha, evet. Ha, şunu da söyleyeyim.
+
+320
+00:48:49,719 --> 00:48:52,179
+Yani, this import is absolutely necessary.
+
+321
+00:48:52,179 --> 00:48:56,179
+Yani, her ne kadar şu örneğimizde...
+
+322
+00:48:57,759 --> 00:49:10,124
+Şimdi, person sınıfı 13B paketinde, employee sınıfı onun içerisinde, yine aynı pakette yer almasına rağmen...
+
+323
+00:49:10,579 --> 00:49:25,199
+Bu yaptığım örnekte az önceki kendimi çevirirken yaptığımda Eclipse otomatik import eklediği için o çok dikkatimi çekmedi. Siz de o ayrıntı yapmış olabilirsiniz ama önemli bir ayrıntıdır. Hatırınızda kalmalıdır.
+
+324
+00:49:27,199 --> 00:49:28,079
+Mutlaka.
+
+325
+00:49:29,139 --> 00:49:41,360
+Bu iç sınıfı kullandığım sınıfın içerisinde de her ne kadar iç sınıfı içeren sınıf ile bu sınıf aynı pakette yer alsa da şu import komutunu vermem gerekiyor.
+
+326
+00:49:41,699 --> 00:49:49,239
+NEP13B paketindeki person sınıfındaki iç sınıf olan employee mutlaka import etmeniz gerekiyor.
+
+327
+00:49:49,239 --> 00:49:53,003
+Absolutely necessary yani. Bunu kaldırdığınızda...
+
+328
+00:49:53,588 --> 00:50:05,188
+Artık bu tipi göremiyorum diyor. Employee'ı göremiyorum diyor yani. O yüzden yani absolut neyse onu vurgulamış olalım ve devam edelim.
+
+329
+00:50:09,619 --> 00:50:11,320
+Hocam bir soru sorabilir miyim?
+
+330
+00:50:11,599 --> 00:50:12,559
+Tabii, buyurun lütfen.
+
+331
+00:50:13,920 --> 00:50:15,280
+Kodu açabilir misiniz hocam?
+
+332
+00:50:17,360 --> 00:50:24,099
+Hocam, buradaki person kişi, 8. satırdaki person kişiyi, outer class'taki tanımlasak ulaşabilecek miyiz?
+
+333
+00:50:24,280 --> 00:50:30,159
+Yani üst class'ta bunu oluştursak ve alt class'ta buna ulaşabilir miyiz?
+
+334
+00:50:31,099 --> 00:50:34,360
+Tabii, erişebiliriz. O da ne olabilir? Şöyle bir şey olabilir mesela.
+
+335
+00:50:35,960 --> 00:50:36,519
+Private.
+
+336
+00:50:37,204 --> 00:50:41,344
+person, mom, dad mesela.
+
+337
+00:50:42,164 --> 00:50:43,884
+Tamam mı? Ondan sonra çama.
+
+338
+00:50:44,524 --> 00:50:46,844
+Ve bunun içerisinde diyelim ki
+
+339
+00:50:46,844 --> 00:50:49,224
+return
+
+340
+00:50:49,224 --> 00:50:51,324
+my
+
+341
+00:50:51,324 --> 00:50:54,064
+mom is
+
+342
+00:50:54,064 --> 00:50:55,504
+artı
+
+343
+00:50:55,504 --> 00:50:56,664
+işte
+
+344
+00:50:56,664 --> 00:50:58,164
+man nokta
+
+345
+00:50:58,771 --> 00:51:02,952
+To string altı filan diye gidebiliyoruz bakın yani.
+
+346
+00:51:03,271 --> 00:51:04,972
+El içeriyoruz. Hiçbir haber yok.
+
+347
+00:51:05,512 --> 00:51:07,092
+Anlınızı ben de tamam. Teşekkür ederim.
+
+348
+00:51:07,092 --> 00:51:07,372
+Teşekkür ederim.
+
+349
+00:51:07,432 --> 00:51:08,652
+Ben de teşekkür ederim soru için.
+
+350
+00:51:09,172 --> 00:51:11,532
+Yani öğrencimin sorusu olunca ben çok mutlu oluyorum.
+
+351
+00:51:12,032 --> 00:51:13,972
+Çünkü yeni bir şey yapmış oluyoruz.
+
+352
+00:51:14,372 --> 00:51:16,211
+Eğlenceli oluyor, heyecanlı oluyor bence.
+
+353
+00:51:16,492 --> 00:51:18,652
+Siz de kazanıyorsunuz. Ben de kazanıyorum.
+
+354
+00:51:19,132 --> 00:51:20,352
+Lütfen soru sorun.
+
+355
+00:51:20,832 --> 00:51:22,291
+Çok teşekkür ederim sorular için.
+
+356
+00:51:22,291 --> 00:51:23,012
+Evet.
+
+357
+00:51:27,219 --> 00:51:28,179
+Daha geri.
+
+358
+00:51:31,139 --> 00:51:32,339
+Nedir?
+
+359
+00:51:32,519 --> 00:51:33,959
+Ha, neymi atısa ödüldük.
+
+360
+00:51:34,999 --> 00:51:35,219
+Evet.
+
+361
+00:51:37,219 --> 00:51:37,959
+Peki.
+
+362
+00:51:39,079 --> 00:51:42,339
+Şimdi, sıradaki kullanım çekmeyi.
+
+363
+00:51:47,860 --> 00:52:09,400
+Bu sefer de yapacağımız şey, iç sınıfı private olarak tanımlamaya devam edeceğiz. Fakat dış sınıfa, iç sınıf türünden üye alan ekleyeceğiz. Böyle bir senaryo üstünden ne yapabiliriz, ne yapamayız, nasıl yaparız, onları görelim şimdi.
+
+364
+00:52:15,987 --> 00:52:22,987
+Bir önceki versiyonunda, yani şu versiyonunda, şu ağırsın içerisinde,
+
+365
+00:52:25,972 --> 00:52:36,092
+Bir employee sınıfı illaki her person içerisinden erişilebilir ve ilişkilendirilebilir.
+
+366
+00:52:36,512 --> 00:52:38,852
+Fakat şöyle yapmak istiyorum.
+
+367
+00:52:39,892 --> 00:52:44,092
+Bu noktada bir önceki örnekte çalışanları tanımlamak için...
+
+368
+00:52:44,092 --> 00:52:49,291
+Toparlayamadım şimdi çok fark etmeyeceğim. Neyse.
+
+369
+00:52:50,228 --> 00:53:12,368
+Çevresinden, not üstünden devam edelim. Tamam olarak toparlanamam kafamda nasıl ifade etmek istediğimi. Şimdi şöyle bir şey yapacağım. İç sınıf türünden, iç sınıf private bile olsa, iç sınıf türünden bir üye alan tanımlayacağım dış sınıfın içerisinde. Ve ondan sonra diyeceğim ki,
+
+370
+00:53:12,947 --> 00:53:19,927
+Bu sefer kişileri işe almak için ek bir metot tanımlayabilirim bu haliyle.
+
+371
+00:53:20,967 --> 00:53:22,887
+Öbürsünde pek böyle bir şey yapamam.
+
+372
+00:53:24,168 --> 00:53:26,128
+Ama bu haliyle yapabilirim.
+
+373
+00:53:26,827 --> 00:53:31,508
+Bir kişi işe almadıysam onun employee üyesi null olacak.
+
+374
+00:53:32,628 --> 00:53:38,168
+İşe aldıysam ise bir employee nesnesi ile ilklendirilmiş olacağım.
+
+375
+00:53:39,155 --> 00:53:45,235
+O yüzden enlis metoduna bakın. Bir kişiyi belirli bir ücretle işe almak için kullanacağım metod.
+
+376
+00:53:45,235 --> 00:53:57,056
+Ne yapıyorum? Employee üye alanına ücreti vererekten employee nesnesi oluşturup atıyorum ilgili üye alanı.
+
+377
+00:53:57,780 --> 00:54:06,960
+Ve artık bu sefer kişi eğer hiçbir işte çalışıyorsa çalışıyor mu çalışmıyor mu diye bir kontrol yapabilirim artık.
+
+378
+00:54:07,380 --> 00:54:12,720
+O yüzden persons of the two-sting metton içerisinde öncelikle göndereceğim mesajı ismi atıyorum.
+
+379
+00:54:13,640 --> 00:54:18,760
+Ve ondan sonra kontrol ediyorum. Employee üyesi var değilse bu kişi işe anlaşımdır demektir.
+
+380
+00:54:19,140 --> 00:54:23,280
+O zaman ücreti de yazıyorum. Ve bu mesajı geri döndürüyorum.
+
+381
+00:54:23,860 --> 00:54:27,860
+Employee's son kaynak kodu ise hiç değişmemiş durumda.
+
+382
+00:54:29,600 --> 00:54:33,360
+Ve hala tarzda tutuyorum ben bunu.
+
+383
+00:54:34,220 --> 00:54:38,059
+O zaman main metodu örneğin nasıl olacak? Yoruna bakalım.
+
+384
+00:54:38,675 --> 00:54:51,295
+Hatırlarsanız, iki önceki örnekte bu employee sınıfı private olduğu için başka bir sınıfın main metodu içerisinde o örnek kodu çalıştıramamıştım.
+
+385
+00:54:51,755 --> 00:54:57,195
+Sadece ve sadece employee sınıfını, iç sınıfını publike çekerekten çalıştırabilmiştim.
+
+386
+00:54:57,195 --> 00:55:06,675
+Şimdi yine private kalmasını sağlıyorum. Buna rağmen, benzer örneği, farklı bir sınıfın kodu içerisinden nasıl çalıştık?
+
+387
+00:55:06,675 --> 00:55:22,016
+Dolayısıyla bu employee iç sınıfına erişmem gerekmeyecek. Dış sınıfın bir metodu üzerinden bu işi yapabiliyor olacağım. Onu yapabilmek için de o iç sınıf türünden bir üye alanı dış sınıfa koymak zorundayım.
+
+388
+00:55:25,492 --> 00:55:38,271
+şey bu, mantık bu. Main metoduna bakarsak ise, main metodu çıkaran şeye, bu sefer de dizi üzerinden geçmişim. TV dizi üzerinden geçmişim.
+
+389
+00:55:38,932 --> 00:55:44,731
+Şimdi yalnız bu sefer, dikkat ederseniz dizim employee türünden değil, person tür.
+
+390
+00:55:45,139 --> 00:55:50,699
+Bu personlardan bazıları işe alınmış olacak, bazıları işe alınmamış olabilecek mesela.
+
+391
+00:55:51,199 --> 00:55:56,779
+Şu an düşünüyorum ki örnekte üç müde işe alıyorum ama sonra bunu modifiyedip birisini işe almayacağım mesela.
+
+392
+00:56:00,119 --> 00:56:03,179
+Nedir? Person tümler bizim var.
+
+393
+00:56:03,891 --> 00:56:31,891
+Ve bu sefer artık işte ekstradan dış sınıf türünden bir referansa falan ihtiyacım yok. Doğrudan person nesnesinin üzerinden çalışacağım. Direkt bir person nesnesini oluşturup diziye atıyorum. Ondan sonra o insanı da 10 bin lira ile işe alıyorum. Sonra diğer iki kişiyi de oluşturup işe aldıktan sonra fordörlüs içerisinde bunların kendilerini tanıtmalarını sağlıyorum. Ve her şey yolunda gideceğini...
+
+394
+00:56:31,891 --> 00:56:33,132
+Dez? Dez? Dez?
+
+395
+00:56:36,851 --> 00:56:47,991
+Şuradaki 13 ye'yi kopyalayalım. Şuradaki denemeler projemi yapıştırayım. 13 ye'nin içerisinde.
+
+396
+00:56:54,643 --> 00:57:07,303
+Gördüğünüz üzere, employee timden üye alan var. Enlist metodu, ilgili maaşla kişiyi işe almak için ilgili üye alanı ilklendiriyor uygun bir biçimde.
+
+397
+00:57:07,303 --> 00:57:15,563
+Ve to string metodu da yine yansıta gördüğünüz gibi. Ve employee metodu sınıfı da, iç sınıfı da gördüğünüz gibi.
+
+398
+00:57:16,363 --> 00:57:17,063
+Gelelim şeye.
+
+399
+00:57:18,708 --> 00:57:23,927
+Main Method işareti sınıfa yine o da yansıda gördüğünüz gibi çalışalım bakalım.
+
+400
+00:57:28,179 --> 00:57:31,499
+Şey, ne oldu?
+
+401
+00:57:31,979 --> 00:57:32,539
+Tuzuzuzuzuz.
+
+402
+00:57:32,619 --> 00:57:33,939
+Main, public, stick, void, main.
+
+403
+00:57:34,039 --> 00:57:34,639
+Evet, [öğrenci].
+
+404
+00:57:34,779 --> 00:57:35,599
+No, şimdi var.
+
+405
+00:57:36,459 --> 00:57:38,479
+1s, 2, application.
+
+406
+00:57:39,239 --> 00:57:39,819
+Allah Allah.
+
+407
+00:57:39,959 --> 00:57:40,899
+Niye böyle bir şey yaptı?
+
+408
+00:57:41,439 --> 00:57:43,759
+Public, stick, void, main, string, ArrayGES.
+
+409
+00:57:44,319 --> 00:57:45,359
+Neyse dur bakalım.
+
+410
+00:57:48,159 --> 00:57:49,519
+Doğru yapıştırmamışım.
+
+411
+00:57:49,539 --> 00:57:50,519
+Yanlış yere yapıştırmışım.
+
+412
+00:57:50,519 --> 00:57:52,459
+O yüzden bakın, classer olarak şey diyor.
+
+413
+00:57:52,539 --> 00:57:53,019
+Yüzük yok.
+
+414
+00:57:53,319 --> 00:57:54,239
+Yanlış yapıştırmışım.
+
+415
+00:57:55,059 --> 00:57:55,339
+Okey.
+
+416
+00:57:56,244 --> 00:58:06,184
+Şeye tıklamam gerekiyordu, takıtlamam gerekiyordu. Nerede? Şu 13 yayı buraya kopyalar. Ondan sonra şuraya tıkla da öyle yapıştınız.
+
+417
+00:58:06,184 --> 00:58:22,244
+Şimdi olacaktım. Evet, person ve main metodlusunuz. Evet, gördüğünüz gibi 3 kişi de işe alındı ve 3 kişi de yazıldı. Şimdi diyelim ki
+
+418
+00:58:22,387 --> 00:58:24,867
+Memat Örmüştü.
+
+419
+00:58:25,188 --> 00:58:25,987
+Onu inşallah almayalım.
+
+420
+00:58:31,891 --> 00:58:40,611
+Bakın, memati maaşsız bir biçimde, çünkü o şu an çalışmıyor, listeledi. Diğerlerini maaşlı bir biçimde listeledi.
+
+421
+00:58:40,891 --> 00:58:46,151
+İşte bunu pek rahatlıkla yapabildik. İstediğimiz işe aldık, istediğimizi almadık.
+
+422
+00:58:46,531 --> 00:58:50,511
+Peki, işten kovma gibi bir şeyi nasıl kodlarız?
+
+423
+00:58:50,511 --> 00:58:53,511
+Diyelim ki şöyle bir şey yapabiliriz. O zaman da...
+
+424
+00:58:55,380 --> 00:58:59,880
+Faktik, void, file, işler atmak.
+
+425
+00:59:01,640 --> 00:59:03,080
+Eç anlamlı kelime.
+
+426
+00:59:03,600 --> 00:59:05,300
+Sadece o zaman diyeceğim ki,
+
+427
+00:59:06,820 --> 00:59:08,300
+bir alanın değerini nal yapacağım.
+
+428
+00:59:10,360 --> 00:59:12,220
+Eşitli nal.
+
+429
+00:59:12,860 --> 00:59:13,640
+İşte bu kadar lazım.
+
+430
+00:59:15,780 --> 00:59:20,900
+Sonra şurada, comment demektense, işler çıkartalım.
+
+431
+00:59:23,668 --> 00:59:24,528
+Seçhament ama.
+
+432
+00:59:29,460 --> 00:59:30,299
+Like a fire loss.
+
+433
+00:59:33,492 --> 00:59:41,192
+Gördüğünüz gibi yine ilgili kişinin maaşını yazmadı.
+
+434
+00:59:42,072 --> 00:59:51,632
+Bence bu tip kullanım en rahat ve çeşitli iş mantığı olaylarını daha doğru modelleyebileceğimiz bir kullanım.
+
+435
+00:59:51,632 --> 00:59:56,251
+Ama dezavantajlarını işte şeyden göstermek biraz zor oluyor.
+
+436
+00:59:56,392 --> 00:59:59,992
+Yöver maaş sınıf şamalarında göstermek biraz zor oluyor. Standart bir şey yok.
+
+437
+01:00:00,000 --> 01:00:02,500
+Ama burada yaratıcılığınızı kullanabilirsiniz.
+
+438
+01:00:02,940 --> 01:00:04,640
+Yani madem size daha çalışıyor.
+
+439
+01:00:04,980 --> 01:00:06,300
+Yaratıcılığınızı kullanın.
+
+440
+01:00:06,640 --> 01:00:08,100
+Yani mesela filan.
+
+441
+01:00:10,420 --> 01:00:12,940
+File, new, class diagram.
+
+442
+01:00:13,100 --> 01:00:14,620
+Diyelim ki şöyle bir şey olabilir belki.
+
+443
+01:00:16,460 --> 01:00:19,860
+Person ve employee için.
+
+444
+01:00:22,643 --> 01:00:30,263
+Şimdi belki şöyle bir şey yaparsınız. Ne bileyim. Sizin bir tane oku. Ama şey, stereotip'lı bir cümle.
+
+445
+01:00:30,263 --> 01:00:31,643
+Demki.
+
+446
+01:00:31,643 --> 01:00:35,643
+Şöyle bir şey yapabilirsiniz mesela.
+
+447
+01:00:35,643 --> 01:00:41,643
+Bunlar class, class gibi mesela.
+
+448
+01:00:41,643 --> 01:00:45,643
+Şu fazla oldu, şu fazla oldu.
+
+449
+01:00:45,643 --> 01:00:48,363
+Ne bileyim, işte böyle bir şey yapabilirsiniz yani.
+
+450
+01:00:49,588 --> 01:01:00,928
+Ya da şuraya yazmaktansa, sanki o çok hoşuma gitmedi böyle bir kullanım. Onun yerine bunu sanki employee'e koysak daha iyi olur belki de.
+
+451
+01:01:03,048 --> 01:01:11,048
+Employee bir iç sınıftır. Kimin içerisinde tanınmamıştır? Person buna sahip de kullanmaktadır filan gibisinden belki. Olabiliriz yani.
+
+452
+01:01:11,583 --> 01:01:15,523
+Ki en son örneğimde bu direkt sahiplikti resmen.
+
+453
+01:01:15,683 --> 01:01:17,203
+Üye alan sahiplik ilişkisi.
+
+454
+01:01:17,443 --> 01:01:23,023
+O zaman buraya sıfır bir kişi çalışıyor olabilir, çalışmıyor olabilir.
+
+455
+01:01:23,163 --> 01:01:24,884
+Şekilde böyle bir gösterim.
+
+456
+01:01:25,344 --> 01:01:26,923
+Herhalde yeterlidir diye düşünüyorum.
+
+457
+01:01:27,664 --> 01:01:43,624
+Peki, bu dezavantajı biraz yazıcılığımızı kullanarak çözmekle birlikte başkan olabiliriz. Bence hiçbir sıkıntısı yok. Kalıtım ile yaptığımız çözüme bence gayet güzel bir alternatif.
+
+458
+01:01:47,188 --> 01:01:59,248
+Yani ve ayrıca kaldı ki bu person sınıfını, employee sınıfını başlı başına kullanmak istiyorsanız eğer, o zaman şunu public'e çektiğiniz zaman dışarıdan da kullanabilirsiniz.
+
+459
+01:01:59,407 --> 01:02:08,768
+Ane kadar bir person ile ilişkili olmak durumdaysa da, yine de dışarıdan bir yerlerden de kullanıma ihtiyaç varsa o zaman public'e çekersiniz, olur biter.
+
+460
+01:02:10,827 --> 01:02:14,387
+Peki, acaba söylemeyi unuttuğum başka bir şey var mıdır?
+
+461
+01:02:15,027 --> 01:02:27,207
+Evet var. Birkaç tane önemli bir şey var. Pekala. Şimdi neymiş o? İç sınıftan eğer şöyle demek istiyorum.
+
+462
+01:02:44,884 --> 01:03:07,003
+Şimdi dedim ki, ben sadece buraya this desem, burada dediğim this, employee cünden bir ikrar etçi olan this'tir. Çünkü ben şu an employee cünçinin içerisinde kodu yazıyorum. Buradaki this işaretçisi, işte bu ilgili to string metodunun çağrıldığı iç sınıften nesneyi gösteriyor olacaktır.
+
+463
+01:03:08,436 --> 01:03:19,996
+var, görüyorsunuz, otokonflikten. Başka, setseller metodu, yani bu employee'den gelen metotlar var. Person değil, bu dikkat edersiniz.
+
+464
+01:03:20,175 --> 01:03:28,456
+Çünkü metot imzalarına baktığımızda, objekte ek olarak employee sınıfının metotlarını ve yalanlarını görüyoruz.
+
+465
+01:03:28,456 --> 01:03:36,436
+Burada disemployee türünden. Peki, acaba bu employee nesnesi hangi person nesnesi?
+
+466
+01:03:36,436 --> 01:03:52,655
+İlşkiliydi. Onun dispointer'ını yani şuradaki mesela diyelim ki dispointer'ına ulaşmak istiyorsam ne olabilecek? O zaman yapacağımız şey, yapabileceğimiz şey dış sınıfın adı nokta dislenmeniz olacaktır. İşte neydi o da?
+
+467
+01:03:53,396 --> 01:03:54,976
+Person.this.
+
+468
+01:03:55,655 --> 01:03:59,775
+Şimdi artık mesela burada neyimi görebiliyoruz.
+
+469
+01:04:00,235 --> 01:04:03,476
+Veya şey, bu gerçek kendi kendisini gösterecek.
+
+470
+01:04:03,615 --> 01:04:04,876
+Veya circle referans olacak.
+
+471
+01:04:04,976 --> 01:04:06,996
+Mesela şu enlist mesela.
+
+472
+01:04:07,456 --> 01:04:15,715
+Yani görüyorsunuz ki arkadaşlar artık person.this dediğimde person sınıfının metotlarını görebiliyoruz.
+
+473
+01:04:15,715 --> 01:04:18,275
+Ama bunlar statik metotlar değil.
+
+474
+01:04:21,396 --> 01:04:30,735
+person nesnesi ile ilişkilenmişse, onun normal metotları veya üye alanlarını görebiliyorum.
+
+475
+01:04:30,856 --> 01:04:32,296
+Buna private karda dahil.
+
+476
+01:04:32,396 --> 01:04:39,896
+Çünkü hatırlarsınız işte iç sınıftan olan nesne, dış sınıftan olan ilgili ilişkili olduğu nesnenin her türlü üyesine erişebilir.
+
+477
+01:04:40,016 --> 01:04:42,615
+Ve bunda da hiçbir sakınca yoktur demiştik.
+
+478
+01:04:43,336 --> 01:04:43,695
+Şey bu.
+
+479
+01:04:44,635 --> 01:04:45,275
+Olay bu.
+
+480
+01:04:45,275 --> 01:04:45,735
+Evet.
+
+481
+01:04:48,148 --> 01:04:52,528
+Daha da başka ekstra bir şey yok.
+
+482
+01:04:52,868 --> 01:04:54,148
+Ama çok da ihtiyacınız yok.
+
+483
+01:04:54,228 --> 01:04:58,648
+Çünkü zaten iç sınıftan dış sınıfın bütün private dahil üyelerine eriştiğiniz için
+
+484
+01:04:58,648 --> 01:05:05,148
+yani şöyle bir şeyi çok çok da ihtiyacınız olmayacaktır diye düşünüyorum.
+
+485
+01:05:06,008 --> 01:05:07,948
+Ama bilmekten de zarar gelmez tabii ki.
+
+486
+01:05:10,748 --> 01:05:10,968
+Peki.
+
+487
+01:05:12,288 --> 01:05:32,627
+Artık ara verebiliriz diye düşünüyorum. Saat 10.05 geçiyor. 10 dakika ara verelim. Bunun için 10 dakikada 10.05 geçi ile 10.05 geçi arasında aramızı... Evet, aramızı... 15.05 geçi, 10.05 geçi. 10 dakika.
+
+488
+01:16:33,587 --> 01:16:46,027
+Ara vaktimiz doldu ondan sonucuma. Bu süre içerisinde bu iç sınıflarla ilgili aklınıza soru gelmişse lütfen söyleyin. Lütfen geçelim.
+
+489
+01:16:55,444 --> 01:16:59,344
+Evet, tamam, multi-trading'e başladık. Kaft içerisinde onu bitiririz.
+
+490
+01:17:00,584 --> 01:17:02,344
+Ben de bu arada şeye bakıyorum.
+
+491
+01:17:03,604 --> 01:17:09,144
+Sanki bundan sonra bir ek dersi ihtiyacımız olmayacak gibi gözüküyor.
+
+492
+01:17:10,884 --> 01:17:13,924
+Çünkü multi-trading'e geldik, dayandık.
+
+493
+01:17:14,584 --> 01:17:16,444
+Multi-trading'den sonra...
+
+494
+01:17:17,363 --> 01:17:42,683
+Ekstradan başka bir şeyimiz yok ve bu Martı Trading ile ilgili konuları iki hafta içerisinde rahatlıkla bitirebiliyoruz. Bu hafta var. Bundan sonucuma. Sonra 19 Mayıs tatili var ama önümüzdeki hafta ders yapıyoruz. Yani 11. hafta. Evet. Müflü de rahatlıkla bu şekilde yetiştirmiş olacağız gözüküyor.
+
+495
+01:17:43,604 --> 01:17:49,304
+Hocam, projeler ne zaman verilebilir? Konuları ne zaman belli olur?
+
+496
+01:17:50,043 --> 01:17:56,283
+Evet, projeyi bu öncesine hakikaten okuyacağım, ondan sonra projeler konusunda konuşacağız projelerle.
+
+497
+01:17:56,283 --> 01:18:05,064
+Yani bu da demek oluyor ki pazartesi falan duyurabileceğiz gibi gözüküyor bakalım artık.
+
+498
+01:18:05,844 --> 01:18:07,224
+Tamam, çok teşekkür ederim hocam.
+
+499
+01:18:07,224 --> 01:18:19,224
+O konuda, şöyle düşünün, birinci vizenin bütün konuları içeren biraz daha kalmışlıkla zor hali gibi düşünün. O nedenle yani...
+
+500
+01:18:20,020 --> 01:18:38,220
+Birazcık geciktik, evet, özür dilerim ama bu sizin için çok da problem olacağını düşünmüyorum. Ki teslim zamanında ona göre ayarlarız. Diğer projelerinizde elbette baz yapacağınız şeyler var. Şimdilik onlara adınızı verin, bunu da yakında duyuracağız.
+
+501
+01:18:38,220 --> 01:18:41,700
+Peki hala.
+
+502
+01:18:55,539 --> 01:18:57,159
+Yenim multi-trading yani.
+
+503
+01:19:01,043 --> 01:19:21,323
+Aslında birkaç ikardan var. Birbiriyle ilişkin ama farklı. Biraz ondan bahsedelim. Birincisi multitasking, ikincisi multitreading. Şimdi multitasking demek bir bilgisayarda aynı anda birden fazla problem çalışılabilmesi demektir.
+
+504
+01:19:23,283 --> 01:19:32,323
+Uzunca senedir aslında bilgisayarlarımızdaki mikro işlemciler birden fazla çekirdek içermektir.
+
+505
+01:19:32,564 --> 01:19:35,623
+Ve her çekirdekte kendi içinde bir mikro işlemci.
+
+506
+01:19:36,123 --> 01:19:45,403
+Bütün ilgili bir mikro işlemci de yer alan bütün kaynaklar, bütün devreler, bütün donumlar her bir çekirdekte mevcuttur.
+
+507
+01:19:46,403 --> 01:19:48,319
+Bu nedenle...
+
+508
+01:19:48,319 --> 01:19:56,100
+Bilgisayarın multitasking yeteniği, aynı anda birden fazla iş yapabilme yeteniği ilerlemiştik.
+
+509
+01:19:56,100 --> 01:19:57,299
+Epey ilerlemiştik.
+
+510
+01:19:58,100 --> 01:20:08,180
+Bundan önce sadece tek bir çekirdek, tek bir mikro işlemci içerisinde tek bir çekirdek olan senaryolarda daha evvelden şöyle bir çalışma biçimini söz konusu oluyordu.
+
+511
+01:20:10,336 --> 01:20:31,336
+Çok kısa bir süre bir programın gereğini yapıyorduk. Yine kısa bir süre sonra, kısa bir süre için başka bir programın gereğini yapıyorduk. Daha kısa bir süre başka bir programın gereğini yapıyorduk. Yani o anda sistemde çalışan bütün uygulamaların her birini sırayla birazcık birini, birazcık birini, birazcık birini yürütüyordu. Bu işi...
+
+512
+01:20:31,636 --> 01:20:50,636
+Birbiri arasında çok hızlı geçişlerle yaptığında biz sanki aynı anda birden fazla iş yürüyor gibi görüyorduk. Ama aslında bilgisayar bütün kaynaklarını tek bir prosese, tek bir uygulamaya yönlendirmekteydi. Ama hepsinin sürekli çelildiği için...
+
+513
+01:20:52,115 --> 01:20:55,956
+Aynı anda bizden fazla iş yapıyor olmuş gibi gözüküyordu.
+
+514
+01:20:56,515 --> 01:20:59,995
+Şimdi artık gerçekten de aynı anda bizden fazla iş yapabiliyorlar.
+
+515
+01:21:00,216 --> 01:21:03,076
+Çünkü bizden fazla çekirdeği var bilgisayarlar.
+
+516
+01:21:03,136 --> 01:21:04,975
+Yani ben şu an ne çalıştırıyorum?
+
+517
+01:21:05,335 --> 01:21:10,235
+Şu an şimdi PowerPoint'i çalıştırıyorum, Eklit'i çalıştırıyorum, Valitü Yaman çalıştırıyorum.
+
+518
+01:21:10,456 --> 01:21:12,036
+Uzun çalışması, konuşması gidiyor.
+
+519
+01:21:12,395 --> 01:21:13,835
+Arka tarafta rap browser var.
+
+520
+01:21:14,235 --> 01:21:17,235
+Onun dışında işletim sisteminin kendi prosesleri var.
+
+521
+01:21:20,115 --> 01:21:33,716
+Bakmış, rok bakmış gibi senkronizasyon, antivirüs yazılımı bir dolu bir şeyler çalışıyor ve bilgisayar aslında bunun her yerine çekirdek sayı ve kaynaklar yettiği sürece gerçekten paralel yürütüyor.
+
+522
+01:21:33,995 --> 01:21:40,495
+Yetmediği noktalar ise biraz birini, biraz birini, biraz birini çalıştırmak şeklinde bu işleri yürütüyor.
+
+523
+01:21:40,495 --> 01:21:41,775
+Öyle söyleyeyim.
+
+524
+01:21:47,123 --> 01:21:51,844
+Bu yandan bir mikro işlemci kendi içerisinde alt işlem birimlerine de sahiptir.
+
+525
+01:21:51,963 --> 01:21:59,984
+Örneğin aritmetik işlemler, lojik işlemler, program akışının yürütülmesine yönelik işlemler gibi.
+
+526
+01:22:00,324 --> 01:22:05,503
+Ve kendi içerisinde aynı zamanda bir pipeline, boru hattı şeklinde de çalışmaktadır bu birimler.
+
+527
+01:22:06,623 --> 01:22:08,076
+Örneğin bir...
+
+528
+01:22:08,724 --> 01:22:13,363
+Tam sayı çarpma işlemi için, ennede toplama işlemi yapılmaktadır aslında.
+
+529
+01:22:13,804 --> 01:22:31,363
+Ve bunu bir, bu kendi içerisinde birkaç makine dili komutuna bölündüğünden, bir toplama işleminin önce boru hattına soka, her bir aşamadan geçtikçe, boru hattının, ritm hattının gerisi boşaldığı için oraya yeni çarpma işlemleri alabilirdim mesela.
+
+530
+01:22:36,724 --> 01:22:44,623
+Seni de mümkün olduğu kadar dolu tutmaya çalışarak da bu multi-tasking başarımını iyileştirmeye çalışıyorlar.
+
+531
+01:22:45,744 --> 01:22:47,564
+Arka planda böyle şeyler yürüyor.
+
+532
+01:22:48,724 --> 01:22:56,324
+Bunun ayrıntılarını mikrolişemciğin iç yapısını gördüğünüz doğruluğun derslerinde öğrendiniz veya öğreniyor olacaksınız.
+
+533
+01:22:57,171 --> 01:23:02,811
+Şimdi tamam, burada aslında purely software açıdan bakacağız.
+
+534
+01:23:03,231 --> 01:23:07,211
+Ama arka planda da biraz ne oluyor bahsetmek istedik.
+
+535
+01:23:07,511 --> 01:23:10,451
+Kafamızda daha iyi bir resim oluşabilmesi için.
+
+536
+01:23:11,671 --> 01:23:22,811
+Şimdi, bu paralel çalışma biçimini kendi uygulamalarımız için de oluşturamadınız.
+
+537
+01:23:23,220 --> 01:23:45,700
+Eğer elimizde karmaşık bir hesaplama varsa, bu karmaşık hesaplamanın ve uzun sürecek olan hesaplamanın çeşitli alt işlem adımlarını oluşturabiliyorsak ve bu alt işlem adımları arasında çok fazla bağımlılık söz konusu değilse o zaman biz de birkaç işi birlikte yapmasını sağlayamaz mıyız bilgisayar sistemini?
+
+538
+01:23:45,700 --> 01:23:50,059
+Tabii sağlarız. Buna da multi-trading deniliyor olacak.
+
+539
+01:23:50,612 --> 01:24:02,031
+Bizim programımız aynı anda birden fazla iş yapacak şekilde düşünüp kodlarsak burada belirli bir başarım iyileşmemiz olacaktır.
+
+540
+01:24:03,123 --> 01:24:25,263
+Bu şu demek değil. Problemi on parçaya böldük, on kat hızlı çalışacak problemimiz değil. Çünkü illa ki bu paralel yürüyecek parçalar arasında bazı noktalarda eş güdüm kurulması gerekecektir. Birinin hesaplamasının çıktısı, diğerinin hesaplamasının girdisini oluşturmak zorunda kalacaktır.
+
+541
+01:24:25,263 --> 01:24:31,123
+Ve o zaman o çıktığı oluşturacak proses tamamlanmadan diğer proses bir noktadan itibaren devam edecektir.
+
+542
+01:24:31,123 --> 01:24:44,783
+O yüzden birbirlerini illaki beklemek durumlarında kalabileceklerdir. Bu nedenle böldüğümüz parçalık sayısı kadar kat başarı bel de edemiyoruz. Bu eşkütüm gereksinimleri nedeniyle.
+
+543
+01:24:45,104 --> 01:24:54,884
+Ve ek olarak ayrı bir görevcik bir thread oluştu, hayata geçirmenin de kendi içerisinde bir ek yükü vardı.
+
+544
+01:24:54,884 --> 01:24:59,851
+Bilgisayar sistemine getirdi. Bütün bu nedenlerle...
+
+545
+01:25:00,083 --> 01:25:05,283
+İki trende böldük, iki kat hızlandı şeklinde durumlar gerçekleşmemektedir.
+
+546
+01:25:05,583 --> 01:25:08,443
+Ama mesela iki kat yerine belki bir buçuk kat hızlanacaktır.
+
+547
+01:25:08,823 --> 01:25:12,243
+Projemizin çalışması diyebilirim mesela.
+
+548
+01:25:12,903 --> 01:25:16,724
+Tabii bütün bunları söylemeye çalışırken de epey bir basitleştirmeler kullandım.
+
+549
+01:25:16,884 --> 01:25:22,724
+Ama dediğim gibi ayrıntıları ilgili Duran'ın derslerinde görüyor olacaksınız.
+
+550
+01:25:24,423 --> 01:25:25,724
+Yıkılın. Unuttum şimamı.
+
+551
+01:25:27,956 --> 01:25:29,496
+Bu yansıda unuttum, başka bir şey yok.
+
+552
+01:25:31,496 --> 01:25:36,456
+Peki, şimdi şu şamayı güzelce bir incelememiz gerekiyor arkadaşlar.
+
+553
+01:25:38,115 --> 01:25:44,935
+Bizim oluşturduğumuz her bir paralel yürüyecek işi thread diyoruz arkadaşlar.
+
+554
+01:25:46,136 --> 01:25:49,456
+Bunu Türkçe, çok da başını çeviremiyorum doğru.
+
+555
+01:25:49,576 --> 01:25:53,456
+Thread için iplik de, yani ne alaka iplik yani.
+
+556
+01:25:55,315 --> 01:25:59,995
+Görevcik diyebiliyoruz belki. Olabilir aslında.
+
+557
+01:25:59,995 --> 01:26:02,595
+Trade yerine görevcik yerine ne bileyim. Neyse. Trade deyip geliş yapmıyorlar.
+
+558
+01:26:02,935 --> 01:26:03,876
+Nasıl dil biliriz?
+
+559
+01:26:05,555 --> 01:26:10,536
+Şimdi. Siz istediğiniz kadar trade oluşturun.
+
+560
+01:26:10,880 --> 01:26:14,200
+Bu threadler hemen çalışmaya başlamaz arkadaşlar.
+
+561
+01:26:14,780 --> 01:26:23,880
+Bir thread oluşturduğumuzda, new constructivir oluşturduğumuzda, bu ilgili thread nesnesi şu an sadece bellekte oluşmuştur.
+
+562
+01:26:24,260 --> 01:26:25,539
+Çalışmaya başlamamıştır.
+
+563
+01:26:25,539 --> 01:26:32,479
+Bu çalıştırmak için siz başlattığınızda bu thread'i çalıştırdığınızda hemen koşmaya başlamıyor.
+
+564
+01:26:33,120 --> 01:26:35,899
+Koşabilir, çalışabilir halde bekliyor.
+
+565
+01:26:38,100 --> 01:26:47,260
+Çünkü tabii arka planda bilgisayarda çalışan işletim sisteminin bir scheduler prosesi çalışmaktadır.
+
+566
+01:26:47,700 --> 01:26:55,680
+Ve bu scheduler hangi prosesin ne zaman ve ne kadar çalışacağını o karar vermektedir tamamen.
+
+567
+01:26:57,716 --> 01:27:12,856
+Java sanar makinesi de tabii ki işletim sisteminin schedulerına bu. Diyecektir ki benim koşabilir threadlerim var, arz ederim, dikkatinizi sunarım diyebilir. Daha fazlasını yapamaz.
+
+568
+01:27:14,536 --> 01:27:21,556
+Çünkü arka planda çalışan başka bir dolu görev var. Bir dolu uygulama var, bir dolu işletim sistemi prosesi var, bir dolu bir şeyler var.
+
+569
+01:27:22,816 --> 01:27:23,296
+Scheduler.
+
+570
+01:27:23,859 --> 01:27:33,319
+Haberdar oluyor. Tamam, bu yeni trader gelmiş, runable durumda. Bunlardan da çalıştırmaya başlayın bari diyor.
+
+571
+01:27:33,819 --> 01:27:40,380
+Ve uygun bir zamanda bu traderinizden bir tanesini alıp koşturmaya başlıyor.
+
+572
+01:27:40,840 --> 01:27:43,359
+Tradeiniz running durumuna geçmiş oluyor.
+
+573
+01:27:43,859 --> 01:28:11,819
+Şimdi bu running durumunda scheduler artık belki de senin o kadar çalışman yeter, sırayı başkasına vereceğim diyebilir. Bunun için de genelde belirli bir zaman dilimi ayırarak da scheduler bu işi yapar. Sizin thread'inizin artık zamanı doldu ise, yine scheduler'ın kendisinin sizin thread'inize atadığı zaman dolmuş ise, time size gerçekleştiğinde sizin thread'iniz koşmayı bırakır.
+
+574
+01:28:11,859 --> 01:28:26,560
+Yani koşmayı bıraktırır skejler ve onu tekrar koşabilir durumdaki threadlerin bulunduğu alana, havuza geri koyar ve bu havuzdan başka bir thread çeker.
+
+575
+01:28:26,739 --> 01:28:28,680
+Bu sizin bir başka threadiniz de olabilir.
+
+576
+01:28:29,880 --> 01:28:32,420
+Senin de arakası olmayan bambaşka bir thread de olabilir.
+
+577
+01:28:39,380 --> 01:29:03,340
+Kendi tradiniz içerisinde bu kadar hesaplama yeter, ben artık sırayı görevi başkalarına vereyim diyebiliyorsunuz. O da yield olmuş oluyor. Yani de yapmıyoruz öyle ama isterseniz yapabilirsiniz. Her iki durumda da yani artık schedule'ın tamam bu tradin bu kadar çalışması yeter dediği durumda veyahut da siz kendiniz gönüllü olarak o trad içerisinde yield metodu vermişse o çalıştığında da tekrar runable duruma geçiyor.
+
+578
+01:29:04,404 --> 01:29:10,664
+Schedule tarzından, running durumundan, runnable durumuna git geller söz konusu olabiliyor.
+
+579
+01:29:11,324 --> 01:29:20,804
+Peki, acaba sizin threadiniz uzun sürebilecek ve dış bazı etkenlere bağlı bir iş yapmak zorunda kaldığı zaman ne oluyor?
+
+580
+01:29:21,884 --> 01:29:25,064
+Şöyle oluyor, örneğin ki bir inputart tut işlemi yapacaksınız.
+
+581
+01:29:26,836 --> 01:29:31,216
+Bir başka bir trade'in görevinin bitirmesini beklemeniz gerekiyor.
+
+582
+01:29:31,355 --> 01:29:31,636
+Wait.
+
+583
+01:29:32,155 --> 01:29:38,876
+Veyahut da bir başka bir trade'e iş akışına katılmanız gerekmekte.
+
+584
+01:29:39,235 --> 01:29:39,536
+Join.
+
+585
+01:29:40,036 --> 01:29:44,376
+Veyahut da belirli bir süre bu trade'in beklemesi gerekmekte.
+
+586
+01:29:44,376 --> 01:29:48,235
+Mesela oyun programlarında falan böyle şeylerden çok ihtiyacımız olabiliyor.
+
+587
+01:29:48,716 --> 01:29:50,596
+Bu durumda sleep metodu var mesela.
+
+588
+01:29:50,735 --> 01:29:52,716
+Belli bir minisaniye beklemek için.
+
+589
+01:29:53,636 --> 01:29:54,376
+Bunlar yapılacaksa...
+
+590
+01:29:54,836 --> 01:30:11,716
+Sizin tradeiniz bir şey bekliyor veyahut da boş durmak durumundaysa niye sistem kaynaklarını işgal etsin? Bu durumda doğru dağınlanıbıla geçmiyor. Çünkü bu işlemin bitmesi gerekiyor, tamamlanması gerekiyor. Bu durumda blocked durumuna gelmiş oluyor sizin tradeiniz.
+
+591
+01:30:16,627 --> 01:30:33,887
+Veyahut da uyuma süresi sona ermişse, veyahut da join işlemi başarılıysa, veyahut da notify metotlarımız var göreceğiz daha sonra. Bunların işi tamamlanmışsa, o zaman tekrar doğrudan yine koşar duruma geçmiyor arkadaşlar.
+
+592
+01:30:34,543 --> 01:30:36,643
+Geç sıranın sonuna diyor skeçler.
+
+593
+01:30:36,963 --> 01:30:41,143
+Tekrar bu thread'ı runnable konumuna geri alıyor.
+
+594
+01:30:41,143 --> 01:30:45,563
+Ve sonradan sırası geldiği zaman tekrar zannik durumuna alıyor.
+
+595
+01:30:45,923 --> 01:30:48,063
+Bu şekilde bir yaşam döngüsü var thread'in.
+
+596
+01:30:49,103 --> 01:30:52,963
+O thread'le ilgili bütün kodlar yüzü tuttuktan sonra da
+
+597
+01:30:52,963 --> 01:30:57,123
+veyahut da dışarıdan bir sonlandırma sinyali geldiğinde
+
+598
+01:30:57,123 --> 01:30:59,223
+onun nasıl yapılacağını da göreceğiz.
+
+599
+01:30:59,523 --> 01:31:02,523
+Artık thread tamamlanmış, bitmiş.
+
+600
+01:31:02,543 --> 01:31:17,283
+Duruma gelmiş oluyor. Durum bu arkadaşlar. Burada önemli olan iki tane temel olgu var. Birincisi, siz tradinizi başlattığınız anda bu hemen çalışmaya başlayacak diye bir kural yok.
+
+601
+01:31:17,663 --> 01:31:44,863
+Bunun başlama sırasını kesinlikle scheduler belirliyor. Sizin herhangi bir müdahaleniz olamaz ve herhangi bir ön kabulünüz de olamaz. Beş tane sıra başlattınız. Bunların şu sırayla başlayacağı, şu sırayla biteceği bu konularda hiçbir öngörünüz olamaz. Tamamen rastlansal bir şekilde bunların başlama, bitme sırası değişecektir.
+
+602
+01:31:45,268 --> 01:31:54,488
+Tabii ki arkada deterministik bir süreç var ama o deterministik sürecin parametre çok çok farklı olduğu için rastgelemiş gibi gözüküyor aslında.
+
+603
+01:31:55,808 --> 01:32:00,288
+O anda belki benim bilgisayarımda bir güncelleme isteği geldi.
+
+604
+01:32:07,060 --> 01:32:10,500
+Diğer bir bilgisayarından bir dosya düzenlemesi oldu.
+
+605
+01:32:11,520 --> 01:32:15,300
+Onunla bendeki box uygulaması onu anladı.
+
+606
+01:32:15,659 --> 01:32:18,239
+Bir şeyleri indirmeye başladı mesela diyelim.
+
+607
+01:32:18,439 --> 01:32:22,859
+Ne bileyim, çok çok farklı şeyler olabilir herhangi bir anda.
+
+608
+01:32:23,420 --> 01:32:30,180
+Bu nedenle bu trendlerinizin başlama ve bitme sırası hakkında hiçbir öngörümüz olamıyor.
+
+609
+01:32:34,292 --> 01:32:35,412
+Şimdi birinci soru.
+
+610
+01:32:36,012 --> 01:32:36,492
+Birinci soru.
+
+611
+01:32:42,292 --> 01:32:46,971
+Neyse, en önemlisi bu. Öyle söyleyeyim. Sonra hatırlarsak çıkartmıyorum.
+
+612
+01:32:53,587 --> 01:32:58,667
+Peki, bekleme konusuna gelelim. Bir thread nasıl bekleyebilir ya da neden beklemelidir?
+
+613
+01:32:59,227 --> 01:33:06,127
+Şimdi eğer bir thread işini herhangi bir engel nedeniyle devam edemiyorsa, o zaman o engel kalkana kadar thread beklemelidir.
+
+614
+01:33:06,644 --> 01:33:18,684
+Ne olabilir? İşte belki networkten bir byte bekliyorduruz veyahut da başka bir tradingin sonlanmasını bekliyorduruz veya kullanıcından bir input bekliyorduruz. İlha bir şey bekliyoruz. Bu sırada meşgul bekleme yapmamalıyız.
+
+615
+01:33:23,155 --> 01:33:41,936
+10 bin kere veya milyon kere boş for döngüsü çalıştırmak. Böyle şeyleri biz uygun deniliyor. Böyle şey yapmamalıyız. Çünkü o sırada sistem kaynaklarını boşa harcıyoruz. Ve ayrıca eğer bu meçbul beklememizin diyelim ki bir saniye beklesin.
+
+616
+01:33:42,484 --> 01:33:44,564
+diye bir düşüncemiz var diyelim ki.
+
+617
+01:33:45,384 --> 01:33:51,284
+Sizin bilgisayarınızda bir saniye beklemek için bir milyon kere for döngüsünün koşması gerekiyorken,
+
+618
+01:33:51,284 --> 01:33:58,384
+başka bir bilgisayarda beş yüz bin for döngüsünün koşması yeterli olabilecekken,
+
+619
+01:33:59,123 --> 01:34:04,904
+başka bir bilgisayarda, eski bir bilgisayarda belki sadece yüz kere bu for döngüsünün çevrilmeliydiniz.
+
+620
+01:34:05,304 --> 01:34:10,083
+Yüz ile milyon arasında kaç kat fark var, programımız doğru düz çalışmayacaktır.
+
+621
+01:34:10,484 --> 01:34:23,764
+Daha düşük doğumlu bilgisayarlarda mesela. Bu nedenle asla biz waiting yapmamanız. Bunun yerine işte slip gibi bir komut vererekten işte o kadar milisaniye bekle demeliyiz.
+
+622
+01:34:23,764 --> 01:34:31,664
+Tabii ki siz diyelim ki bin milisaniye, bir saniye işte bin milisaniye bekle demeliyiz ama o tam olarak bin milisaniye olmayabilir.
+
+623
+01:34:31,984 --> 01:34:38,284
+Bin iki olur, bin üç olur, bin on olur. Arada ufak bir fark var illaki. Hissedilir bir şey.
+
+624
+01:34:38,484 --> 01:34:57,204
+Ama bu kadar hassas hesaplamalar yapamazsınız bir multi-trading ortamında. İşin doğasındaki belirsizlikten dolayı. Bu da ikinci ön kabulüm olabilir. Neyse, önemli noktalar geçtikçe zaten bulguluyoruz ders noktaların içerisinde.
+
+625
+01:35:05,395 --> 01:35:19,295
+Şöyle bir riskimiz de var. Uyuyan bir thread uyanamayabilir. Ben genç şimdiye kadar ders kapsamını raya yaptım. Örneklerde ya da projelerde uyanamayan thread görmedim ama yine de bu bir olasılık.
+
+626
+01:35:19,699 --> 01:35:22,619
+Ve bu bir check exception ile modellenmiştir.
+
+627
+01:35:23,940 --> 01:35:27,260
+Java lang paketindeki interrupt exception.
+
+628
+01:35:27,539 --> 01:35:33,520
+O yüzden strip komutu vereceğimiz her durumda bu interrupt exception'i de catch etmemiz gerekecek.
+
+629
+01:35:34,159 --> 01:35:36,440
+Göreceğiz birazdan örnek kodumuzu da.
+
+630
+01:35:38,020 --> 01:35:41,680
+Peki, şimdi güzel, teorik olarak anlattınız hocam.
+
+631
+01:35:41,779 --> 01:35:46,739
+Peki, pratik olarak Java kodu yazmaya başlarsak neler yapmamız gerekiyor? Ona bakalım.
+
+632
+01:35:47,604 --> 01:35:59,304
+Birinci yapmanız gereken şey, bu multi-traded oluşu olarak çalışan kodu nereye yazmanız gerektiğini, nereye kodlamanız gerektiğini bilmeniz gerekiyor.
+
+633
+01:36:00,243 --> 01:36:04,923
+Sizin yazacağınız, bu amaçla yazacağınız herhangi bir sınıf olacak tabii elbette.
+
+634
+01:36:04,923 --> 01:36:15,604
+Bu sınıf, yani paralel olarak çalışacak kod içeriyecek olan sınıfınızın sağlaması gereken birinci koşul, runnable interface'ini implement ediyoruz.
+
+635
+01:36:15,604 --> 01:36:37,403
+etmesiniz. O RUNAVOR interfezinde tanımlı olan RUN diye bir metot var. İşte paralel çalışacak olan kodu o RUN metodunun gövcesine kodlamanız gerekiyor. Ondan sonra oluşturduğunuz bu sınıftan, kodladığınız bu sınıftan bir ya da daha fazla nesne oluşturursunuz. Daha sonra
+
+636
+01:36:39,283 --> 01:37:07,203
+Bu runable'ı gerçekleyen kendi sınıfınızda olan bir nesneyi, thread sınıfı var bu amaçla kullanılan. O thread sınıfından bir nesneye verirsiniz. Thread constructor'ını kullanmaktan. Ve ondan sonra o thread nesnesinde start metodunu çalıştırırsınız. Run metodunu çalıştırmazsınız. Run metodunu çalıştırırsanız, multi thread'ı çalışmıyor. İllaki start.
+
+637
+01:37:07,283 --> 01:37:10,644
+Metodunu çalıştırmanız gerekmektedir.
+
+638
+01:37:12,703 --> 01:37:14,724
+Göreceğiz şimdi bu örneğini.
+
+639
+01:37:15,003 --> 01:37:18,344
+Her adımın da nerede olduğunu da işaretleyeceğiz de aynı zamanda.
+
+640
+01:37:18,984 --> 01:37:21,304
+Şimdi burada aklınıza şöyle bir fikir gelebilir.
+
+641
+01:37:22,243 --> 01:37:24,944
+Ya zaten bir tret sınıfı varmış.
+
+642
+01:37:25,747 --> 01:37:40,427
+Ben o zaman neden bu birinci adımı boş yere oluşturayım? Ben kendi multi-traded olarak çalışacak olan sınıfımı bu mevcut trad sınıfından kalıtımla tretirim diyebilirsiniz.
+
+643
+01:37:40,427 --> 01:37:51,387
+Bunu yapabilirsiniz de. Fakat bunu yaparsanız çoklu kalıtım söz konusu olmadığından tek kalıtım hakkınızı harcamış oluyorsunuz.
+
+644
+01:37:51,604 --> 01:38:14,144
+O yüzden belki de bu sizin multi-trader çalışacak kodunuzu içeren sınıfın iş mantığı nedeniyle belki de veya işte sisteminin hangi katmanında yer alıyorsa sizin kodunuz kullanacağı da yüzü olabilir veya veri tabanı o işlemde olabilir her neyse vesaire iş mantığı olabilir.
+
+645
+01:38:14,144 --> 01:38:19,583
+O ilgili normal yürütmesi gereken görevler nedeni.
+
+646
+01:38:19,604 --> 01:38:24,404
+Sizin bu sınıfınızın başka bir sınıftan kalıtımla türetilmesi gerekiyor olabilir.
+
+647
+01:38:24,904 --> 01:38:26,804
+O zaman kalıtım hakkı harcandı.
+
+648
+01:38:27,144 --> 01:38:31,384
+Nasıl bir de bu numarası treti olması için treti sınıfından kalıtım alacaksınız?
+
+649
+01:38:31,664 --> 01:38:32,244
+Yok öyle bir şey.
+
+650
+01:38:32,583 --> 01:38:36,944
+O yüzden interfej gerçekleştirerekten bu işi yapmış oluyorsunuz.
+
+651
+01:38:38,304 --> 01:38:40,304
+Şurada onu demek istiyorum.
+
+652
+01:38:40,884 --> 01:38:53,844
+Şimdi örneğimiz biraz komik bir örnek olacak ama belki de saçma diyebilirsiniz ama en azından burada gördüğümüz her şeyi uygulamaya koyacağımız bir örnek olacak.
+
+653
+01:38:55,384 --> 01:38:58,283
+Maç sereden kişiler üzerinden bir örnek yapacağız.
+
+654
+01:38:59,123 --> 01:39:07,984
+Maç sereden bu kişiler rastgele bir sürede heyecanlanıyor ve takım için tezahürat yapıyor olacak.
+
+655
+01:39:08,659 --> 01:39:17,279
+Her kişi 0 ile 1000 milisaniye arasında rastgele değerlenecek olan bir değer de heyecanlanacak.
+
+656
+01:39:17,743 --> 01:39:40,823
+Her alık da farklı olacak. Mesela ilk başta 100 milisaniye sonra harcanlanacak. Sonra 500 milisaniye sonra heyecanlanacak. Sonra 200 milisaniye sonra heyecanlanacak. Tamamen rastgele katlanattım. Çünkü yine biz de öyle rastgele katlanacağız. Ve 10 kere tezahat yaptıktan sonra da artık iyi olacak. Bir daha da tezahat yapmayacak şeklinde bir örnek yapmak istiyorum.
+
+657
+01:39:44,819 --> 01:39:48,619
+Bunun için, Fakrfen diye bir sınıf oluşturacağım.
+
+658
+01:39:48,739 --> 01:39:50,059
+Futbol maçı seyrediyorlarmış.
+
+659
+01:39:50,559 --> 01:39:56,659
+Vastgele sayı üretmek için de Java Util paketindeki random sınıfına ihtiyacımız var arkadaşlar.
+
+660
+01:39:56,659 --> 01:40:00,000
+Şimdi bu multi-traded olarak...
+
+661
+01:40:00,000 --> 01:40:02,340
+çalışacak sınıfımız sakıflar.
+
+662
+01:40:02,460 --> 01:40:10,779
+İşte futbol seriden hayranlar var ya, ondan oluşturacağım nesneler olacak ve onların işte tezorat yapısını sağlayacağım az önce bahsettiğim gibi.
+
+663
+01:40:11,279 --> 01:40:15,340
+Birinci yapman gereken şey, implement runable satırını eklemek olacak.
+
+664
+01:40:15,500 --> 01:40:16,500
+Neydi birinci adımız?
+
+665
+01:40:17,059 --> 01:40:25,639
+İşte runable arayüzünü gerçekleyen sınıfımızı oluşturacağız ve o runable arayüzündeki public boy design metodunun içerisine
+
+666
+01:40:27,252 --> 01:40:30,292
+Paralel yürümesi gereken iş mantığımızı kodlayacağız.
+
+667
+01:40:30,852 --> 01:40:32,632
+Ne yapıyorum bu RAM metodu içerisinde?
+
+668
+01:40:32,912 --> 01:40:35,292
+Öncelikle şeye bakalım, sınıfın diğer yapısına bakalım.
+
+669
+01:40:35,992 --> 01:40:43,012
+İşte 10 kere tezahat yapacak dedik ve maksimum 0 ile 1000 milisaniye arasında heyecanlanacak dedik.
+
+670
+01:40:43,012 --> 01:40:47,572
+O yüzden bu iki bilgiyi public, final, static olarak tanımlıyorum.
+
+671
+01:40:47,692 --> 01:40:49,552
+Çünkü her tarafta bu şekilde olacak.
+
+672
+01:40:50,372 --> 01:40:55,252
+Bu tarafta farklı taraftarların farklı sayıda tezahat etmesi veyahut da daha sık yada...
+
+673
+01:40:55,252 --> 01:41:02,552
+Daha seyrek heyecanlanmasını istiyorsanız, o zaman bunları normal üye alam olarak tanımlayıp, course, structure, onları da verirdiniz yani.
+
+674
+01:41:03,252 --> 01:41:09,592
+Ama ortak tanımlamak istiyorum bu kısımları. O yüzden public, final, static olarak tanımlıyorum.
+
+675
+01:41:10,676 --> 01:41:25,256
+Constructors her bir sakın sene bir desteklediği takım adını veriyor. Bir de nasıl tesadet edeceğini söylüyor ki onlar üye alan olarak zaten tanımlı. Onlar set ediliyor Constructors üzerinde.
+
+676
+01:41:25,615 --> 01:41:36,735
+Ve Public Void Run metodu içerisinde paralel ünlüsü gereken kodlarımızı yazmaya başlıyoruz. Öncelikle bir rastgele sayı üreteci erte ediyoruz.
+
+677
+01:41:37,332 --> 01:42:05,332
+Ondan sonra Java, bir kere bunu oluşturduktan sonra onun next bilmem ne metotları ile çeşitli türden sayısal değerler elde edebiliyoruz. Örneğin tam sayı için ihtiyacımız varsa nextint metodu var. Buna verdiğimiz parametre ise sıfır ile o parametre arasında bir sayı üretmiş oluyor. Ben en fazla bin milisaniyede bir heyecanlanacağını söyleyeyim.
+
+678
+01:42:05,332 --> 01:42:12,212
+0 ile o 1000 arasında bir rastgele sayıp üretecek örneğin şurada regenerator nesna.
+
+679
+01:42:12,212 --> 01:42:20,172
+Peki, o döngüsü içerisinde steps kaç kere tekrarlanacaksa işte tezahat şekil 10 demişiz.
+
+680
+01:42:20,431 --> 01:42:21,192
+İşte 10 kere.
+
+681
+01:42:22,112 --> 01:42:23,192
+Önce tezahat ediyor.
+
+682
+01:42:24,020 --> 01:42:51,820
+Ondan sonra delay kadar bekliyor. Beklemek için ise slip, trace sınıfını, static olan slip metodu kullanarak bekliyor. Bu da bir interrupted exception oluşturabileceği için, bu da checked exception olduğu için, catch içerisinde, önceki konutları trace içerisine alıyorum. Catch içerisinde de işte pre-stake trace diyerekten yapmam gereken exception handling işlemini gerçekleştiriyorum.
+
+683
+01:42:52,020 --> 01:43:17,800
+Bu kadar. Bu sınıfında önemli olan şeyler bu. Burada önemli bir nokta var. O da şu. Bu run metodunun imzasını değiştiremezsiniz arkadaşlar. Çünkü o run metodu runable arayüzünde tanımlıdır. Runable arayüzü de Java sınıf kütüphanesiyle gelmektedir. Sizin kaynak kodunu değiştirebileceğiniz bir şey değildir. Bu nedenle run metodu herhangi bir parametre alalım.
+
+684
+01:43:18,868 --> 01:43:20,968
+Beğeniyorsunuz bana, tanımlayamıyorsunuz.
+
+685
+01:43:21,076 --> 01:43:29,036
+O zaman bu varlık kendi çalışmasıyla, matematik çalışmasıyla ilgili bilgileri nereden nasıl alacak?
+
+686
+01:43:29,036 --> 01:43:36,956
+İşte constructor üzerinden ve bunu run etmeden önce gerekli setter metotları üstünden bu bilgilerin aktarılması gerekmektedir.
+
+687
+01:43:37,276 --> 01:43:38,796
+Bunu hiçbir zaman için unutmayın.
+
+688
+01:43:39,716 --> 01:43:43,235
+Ek bir madde olarak, beşinci ya da sıfırıncı madde olarak yazmadım.
+
+689
+01:43:43,776 --> 01:43:49,076
+Ama anlamlı bir iş yapabilmesi için gerekli parametreleri nasıl aktarılacak?
+
+690
+01:43:49,076 --> 01:44:12,956
+Bu işlerinizi da bilmeniz lazım. Onun yerine de constructor artı setter metotlar üzerinden bu iş yapılmalı. Peki bu sınıf bu kadar. Ondan sonra bakalım şimdi bu sakın senlere nasıl çalıştıracağız? Şöyle çalıştıracağız. Diğer işlemler ise main metodu içeren match adını verdiğim bir sınıf içerisinden onun main metodu içerisinden yapılacak.
+
+691
+01:44:13,844 --> 01:44:23,963
+Ne demiştik? Kendi oluşturduğumuz sınıf türünden, sakın sen dedik ona, bir nefne oluşturuyorum. Bakın şurada o şimdi neymiş sakın sen.
+
+692
+01:44:24,404 --> 01:44:28,224
+Takım adı vermişim ve tezorhat metri vermişim. Bunu oluşturdum.
+
+693
+01:44:28,224 --> 01:44:35,484
+Ve üçüncü adım neydi? Bu sizin nesnenizden bir thread nesnesi oluşturun.
+
+694
+01:44:35,724 --> 01:44:39,724
+Tamam, onu da şurada oluşturdum. Thread türünden thread dediğim bir nesneyi tanımladım.
+
+695
+01:44:40,083 --> 01:44:45,963
+Ve constructor'na az önce oluşturmuş olduğum kendi sınıfımdan nesneyi verdim.
+
+696
+01:44:46,963 --> 01:45:04,463
+Ondan sonra da onun start metodunu çalıştırıyorum. Burada yapmam gereken şey mutlaka sadece o thread nesnesinin start metodunu çağırmak. Kendi nesnenizin run metodunu çağırmayacaksınız, o thread nesnesinin de run metodunu çağırmayacaksınız.
+
+697
+01:45:04,819 --> 01:45:10,939
+Bu, multi-tradit olarak çalışmamaya sebep oluyor. Mutlaka start metodunu çalmanız gerekmektedir.
+
+698
+01:45:10,939 --> 01:45:19,559
+Aynı işi üç tane daha tarafta oluşturmuşum. Onlar için de tekrarladıktan sonra artık main metodunu çalıştırabilirim.
+
+699
+01:45:20,279 --> 01:45:21,379
+Çalıştıralım, görelim.
+
+700
+01:45:39,252 --> 01:45:44,532
+Evet. Sakıfsan aynı şeyde yazdım gördüğünüz gibi.
+
+701
+01:45:48,467 --> 01:45:52,207
+Maç da yine aynı dolayısını gördüğünüz gibi.
+
+702
+01:45:56,659 --> 01:46:14,719
+Şimdi bu örnekte işin rast gereğini zaten marketingden kaynaklanan bir rast gerelik var. Rast gerelik düzeyini daha da arttırmak için kişilerin tezorlar arasında, iki tezorlar arasında geçecek süreyi de random olarak belirledim.
+
+703
+01:46:19,347 --> 01:46:39,927
+Önce iki GS'li, sonra iki FB'li taraftarı tanımlıyorum ve bunları startlıyorum. Belki şöyle düşünceniz olabilir. Önce şu altıncı satırda tanımladığım nesne tesadüf edecek, sonra sekizinci satırda tanımladığım nesne tesadüf edecek, sonra onuncu, sonra on ikinci satırda tanımlanan nesneler tezahat edecek diye bir şey görebilirsiniz.
+
+704
+01:46:47,347 --> 01:46:51,868
+Sizden bağımsız olarak bunları hangi sırada çalıştıracağına karar verecektir.
+
+705
+01:46:52,148 --> 01:46:57,588
+O yüzden ilk gördüğünüz çıktı, buradaki sıradaki çıktığı şeklinde olmayacaktır.
+
+706
+01:46:58,748 --> 01:47:03,548
+Fakat ilk tesis aralıklarını çalışır çalışmaz yapıyorlar. Ondan sonra askere bekliyorlar.
+
+707
+01:47:03,548 --> 01:47:10,828
+Fakat buna rağmen bu dört tane taraftarın çalışma sırası burada kodladığım sırada olmayacaktır.
+
+708
+01:47:11,347 --> 01:47:13,188
+Sadece yüzde yirmi beş ihtimalle olabilir.
+
+709
+01:47:13,631 --> 01:47:21,371
+Tamam mı? İlk bu tanımladığımın ilk tezahatı yapmasının olası da yüzde 25. Çünkü dört taneden bir tanesi.
+
+710
+01:47:22,991 --> 01:47:24,631
+Evet, çalışalım bakalım.
+
+711
+01:47:30,739 --> 01:47:35,679
+Çalışıyorlar, tezahatlarını yapıyorlar ve ondan sonra şu an hala program devam ediyor.
+
+712
+01:47:35,840 --> 01:47:40,979
+Çünkü kırmızıydı, şu anda bitti. Şu kırmızı şey söndü. Bir daha söyleyeyim şimdi.
+
+713
+01:47:41,559 --> 01:47:47,439
+Bu arada burada kırk satır olmasını bekliyorum. Dört oyuncu on kere tezahat ediyor.
+
+714
+01:47:47,439 --> 01:47:56,099
+Burada kırk satır olmalı. Kırk satır var mı bilmiyorum. Kontrol A, kontrol C. Kırktan az varsa klip edilmiş demektir.
+
+715
+01:47:56,639 --> 01:47:58,019
+Şöyle bir yapıştırın bakalım.
+
+716
+01:48:00,020 --> 01:48:03,680
+Şeye bakarsam, Eyal, bakın 40 satır var.
+
+717
+01:48:03,960 --> 01:48:04,960
+Evet, her biri bir satırda.
+
+718
+01:48:05,320 --> 01:48:07,420
+40 deyince daha uzun olması gerekiyormuş.
+
+719
+01:48:07,780 --> 01:48:11,240
+Oradaki sayı 40 gibi gelmedi ama 40 tane varmış gerçekten.
+
+720
+01:48:11,667 --> 01:48:15,867
+4 tane ters, 10 kere tezva, 42'de çıktı, veriliyor.
+
+721
+01:48:16,487 --> 01:48:23,607
+Ve ikinci dikkatinizi çekmek istediğimiz yer, bu program çalışıyorken şuradaki kırmızı düğme aktifti.
+
+722
+01:48:23,727 --> 01:48:29,047
+Yani sonlandırma programı çalışıyorken bitirme düğmesi.
+
+723
+01:48:29,627 --> 01:48:30,747
+Tekrar çalıştırayım.
+
+724
+01:48:33,332 --> 01:48:48,532
+Şu an kırmızı düğme aktif. Yani istersen erkenden sonlandırabilirim. Ama sonlandırmayacağım. Bütün herkes tezahlatın. Yaptıktan sonra artık daha başka benim main metodumda daha başka thread kalmadığı zaman artık main metodumda bitmektedir. Böyle olmasını beklerim zaten.
+
+725
+01:48:56,243 --> 01:48:58,223
+Biraz daha küçülteyim.
+
+726
+01:48:58,703 --> 01:49:01,483
+Ve şimdi sonraki sıraya bakalım.
+
+727
+01:49:02,163 --> 01:49:06,884
+Ctrl A, Ctrl C, Ctrl N, Ctrl V.
+
+728
+01:49:07,423 --> 01:49:10,443
+Ondan sonra şunu da şöyle al ve küçült.
+
+729
+01:49:10,931 --> 01:49:24,251
+Hangi sırada başlamışlar? Bakın şimdi, ilk çalıştığımda GSRUS, GSRCHM, FB, Namrı olan, FB, Desk. İkincisinde GSRCHM, FB, Namrı olan, bakın, GSRUS, FB, Eski, Besk diyor yani işte bakın.
+
+730
+01:49:25,071 --> 01:49:33,991
+Kesinlikle burada tanımladığım sırada farklı. İlk çalıştırdığımda ilk taraftar tesadet etti, bu %25 orasılık demiştim.
+
+731
+01:49:38,931 --> 01:49:42,891
+Taraftar söyleyemedi. İlk olarak tezahüratını yaptı.
+
+732
+01:49:43,031 --> 01:49:54,051
+Ve örneğin şu ilk fenayeli ilk çalıştığımda, ha, bak ilk çalıştığımda gerçekten şu dört tane trede o sırada çalıştı.
+
+733
+01:49:54,051 --> 01:50:02,751
+Ama ikinci çalıştırdığımda farklı oldu. GSFB, GSFB oldu. Ondan sonra bir daha çalıştıracağım, bir daha da farklı bir şey çıkacak.
+
+734
+01:50:07,956 --> 01:50:20,076
+Çalışıyor, çalışıyor, çalışıyor. Bitsin hepsi. Tamam, tamamlandı, bitti. Bu da şöyle yapayım mesela. Bakalım size ya. Ne olmuş?
+
+735
+01:50:20,787 --> 01:50:38,307
+Gs Rus, Gs Champ, FB Number One, FB Is The West. Aradan bir süre geçtikten sonra, epey bir bekledikten sonra, sonunda konuştum o sırada bu sırada, bu çalışma sırası yine ilk başta verdiğim sıra gibi oldu.
+
+736
+01:50:38,307 --> 01:50:47,827
+Şimdi tamam biraz daha konuşalım. Ctrl A, Ctrl C diyelim. Yeni bir tane örgüt konuştayım. Oraya onu da yapıştırayım.
+
+737
+01:50:51,539 --> 01:50:53,000
+Şöyle alalım bu sefer.
+
+738
+01:50:54,300 --> 01:50:55,239
+Şöyle yap.
+
+739
+01:50:57,140 --> 01:50:58,319
+Sonra şunu aşağı.
+
+740
+01:51:00,000 --> 01:51:01,960
+Sonra şunu al.
+
+741
+01:51:02,819 --> 01:51:03,960
+Şöyle çıkar.
+
+742
+01:51:06,899 --> 01:51:08,340
+Evet, pekala.
+
+743
+01:51:08,979 --> 01:51:09,720
+Epey bir bekledik.
+
+744
+01:51:09,800 --> 01:51:12,140
+Bu kadar gelirdik yeter herhalde.
+
+745
+01:51:12,380 --> 01:51:13,619
+Tekrar çalıştayım şuradan.
+
+746
+01:51:14,560 --> 01:51:15,479
+Çalış bakalım kardeşim.
+
+747
+01:51:18,220 --> 01:51:18,619
+[öğrenci].
+
+748
+01:51:19,475 --> 01:51:24,615
+Is the champ. Yine ilk sıradaki gibi oldu. Bitti bu arada. Evet.
+
+749
+01:51:24,996 --> 01:51:35,496
+O champ number one the best. Peki. İlk çalışma için epey bir denememdi. İlk sırada çalıştı. Ama benim gibi bunun %100 garantisi yok.
+
+750
+01:51:35,735 --> 01:51:41,795
+Çok kısa süre sonra ben bunu tekrar çalıştırdığımda yine aynı şekilde çalıştı.
+
+751
+01:51:42,612 --> 01:51:49,731
+Ama şurada olmadığını gösterdim en azından. Her seferinde illaki böyle olacak diye bir şey yok.
+
+752
+01:51:50,068 --> 01:52:14,807
+En kötü hatalar da bakın, bir sistem her zaman aynı hatayı yapmıyorsa olan hataları bulmak en zor kısmıdır. Siz ilk başta illa çıktığının bu şekilde olmasını bekliyorken, arada bir şekilde aldığınızda, Allah Allah bu da nereden kaynaklanıyor kısmını bulmak için çok çok uğraşırsınız. Ama bilmelisiniz ki, trendlerin hangi sırada başlayacağının bir garantisi yok.
+
+753
+01:52:15,796 --> 01:52:20,615
+Belki bir eğilim olabilir ama garanti kesinlikle yok. Onu söylemek istiyorum.
+
+754
+01:52:24,595 --> 01:52:26,855
+Başka ne diyebilirim?
+
+755
+01:52:35,475 --> 01:52:43,235
+Bu konusunda aradan sonra gireriz. Benim bununla ilgili. Dedim ki işte start çalıştırın mutlaka. Run çalıştırmayın.
+
+756
+01:52:43,235 --> 01:52:51,235
+Şimdi, her ne kadar aradaki tezahürat süreleri rastgele olsa da…
+
+757
+01:52:53,363 --> 01:52:58,703
+Hızlı hızlı, farklı farklı tezoratların aktığını görebiliyorsunuz.
+
+758
+01:52:58,783 --> 01:52:59,943
+Öyle çalıştırdığım zaman.
+
+759
+01:53:00,363 --> 01:53:04,403
+Bu kadar hızlı olmasının sebebi multi-traded çalışması.
+
+760
+01:53:05,003 --> 01:53:13,543
+Eğer ben startleer'de run'ları run metodu üstünden ben bunu yazsaydım, o zaman bunlar multi-traded çalışmayacaktı.
+
+761
+01:53:13,543 --> 01:53:19,543
+Ve ben bunların sırasını bu şekilde run ettiğim için önce ilk tarafta bütün tezoratlarını yapacaktı.
+
+762
+01:53:20,307 --> 01:53:48,307
+Sonra ikinci tarafta sırayla bütün tezahatını yapacaktı. Sonra üçüncü, sonra dördüncü. Yani bir paralellik söz konusu olmayacaktı. Bu haliyle çalıştırayım. Çok daha uzun süreceğini göreceksiniz bu halinin çalışmasını. Çünkü daha evvel paralel yürüyorken dört iş, şimdi hepsi sırayla yürüyor. Bak önce GSR Rus diyordu, şimdi GSR Champ demeye başlıyor. Sonra FB Number One demeye başlıyor. Ondan sonra FB'ye yazdık.
+
+763
+01:53:48,307 --> 01:53:49,988
+best demeye başlayacak.
+
+764
+01:53:50,207 --> 01:53:54,368
+Ve bakın, hala devam ediyor, devam ediyor, devam ediyor, devam ediyor.
+
+765
+01:53:54,627 --> 01:53:55,268
+Ancak bitti.
+
+766
+01:53:57,347 --> 01:54:03,467
+Sıra tutup, bu işlerin ne kadar süreli tamamlandığına da bakabilirsiniz isterseniz.
+
+767
+01:54:04,028 --> 01:54:04,608
+Hemen yapalım.
+
+768
+01:54:05,547 --> 01:54:06,507
+Bunu da göstereyim bu arada.
+
+769
+01:54:08,207 --> 01:54:09,828
+Şimdi, main'in başına
+
+770
+01:54:09,828 --> 01:54:13,847
+long
+
+771
+01:54:13,847 --> 01:54:15,768
+start
+
+772
+01:54:16,047 --> 01:54:17,047
+Eşittir.
+
+773
+01:54:21,047 --> 01:54:25,387
+System.getCurrent.
+
+774
+01:54:26,387 --> 01:54:27,887
+Ne diyor?
+
+775
+01:54:28,927 --> 01:54:30,328
+GetCurrentTimes.
+
+776
+01:54:30,328 --> 01:54:30,927
+Neydi o?
+
+777
+01:54:34,676 --> 01:54:36,336
+Get dediğim şey.
+
+778
+01:54:36,396 --> 01:54:37,636
+Current time milliseconds.
+
+779
+01:54:38,076 --> 01:54:40,516
+Şimdi system sınıfının bir metodu var.
+
+780
+01:54:40,776 --> 01:54:43,496
+Current time milliseconds diye bu statik bir metot.
+
+781
+01:54:44,276 --> 01:54:48,624
+Bu metodun geri döndürdüğü long değer size...
+
+782
+01:54:48,623 --> 01:55:06,583
+Tarihteki geçmişte sabit bir noktada ki o da yanlış hatırlamıyorsam 1 Ocak 1970 saat 00.00'dan bu metodun yürüdüğü çalıştığı ana kadar geçen toplam milisaneye kadar milisaneye geçmiş onu geri döndürüyor size.
+
+783
+01:55:06,583 --> 01:55:12,583
+Bu işlemi bir programınızın başında yaparsınız bir de sonunda yaparsınız.
+
+784
+01:55:19,412 --> 01:55:25,252
+Ondan sonra bu ikisinin arasındaki fark sizin programınızın çalışmasını kaç minisaniye sürdürürüz.
+
+785
+01:55:25,252 --> 01:55:26,752
+This out.
+
+786
+01:55:30,752 --> 01:55:44,432
+Execution in milliseconds is 6 parantez içerisinde and-start.
+
+787
+01:55:47,220 --> 01:55:51,740
+Evet, kaç bin saniyeye tamamlanmış kodumuz onu göreceğiz.
+
+788
+01:55:55,604 --> 01:56:02,724
+Böyle bu şekilde sıralı çalıştırıyorum. Ne kadar sürede çalıştığını göreceğiz. Uzun, uzun olduğunu göreceğiz.
+
+789
+01:56:10,195 --> 01:56:11,775
+Evet, son fenaryaya geldi sıra.
+
+790
+01:56:14,096 --> 01:56:16,195
+Ne kadar? Şu kadar milisaniye olmuş.
+
+791
+01:56:16,336 --> 01:56:17,556
+Şuradan boşluk korsaymış.
+
+792
+01:56:17,716 --> 01:56:18,115
+İyiymiş.
+
+793
+01:56:18,695 --> 01:56:22,756
+Ctrl-C, Ctrl-N, Ctrl-V.
+
+794
+01:56:24,155 --> 01:56:24,975
+İsteme tabii ki.
+
+795
+01:56:25,935 --> 01:56:28,456
+18 bin milisaniye sunmuş.
+
+796
+01:56:28,536 --> 01:56:30,056
+18 saniye sunmuş.
+
+797
+01:56:30,975 --> 01:56:31,636
+Bir daha çalıştık.
+
+798
+01:56:31,636 --> 01:56:34,096
+Yine aynı mertebede ilişkiler göreceğiz.
+
+799
+01:56:36,076 --> 01:56:36,916
+Ondan sonra açıma.
+
+800
+01:56:37,395 --> 01:57:03,615
+Aradaki fark tabii ki her iki tezvan arasında rastgele sayı, süre bekleniyor. O yüzden biraz daha fark bulacak. Ondan sonra bunun bir de olması gerektiği gibi startları üstünden çalıştıralım. O çalışırken bu hayatımızdan boş yere bir 18 yine bir saniye çalmamak için şu sırada bu değişiklikle yapayım. Bakın bu sefer ne olmuş? 18307 saniye olmuş, geçmiş.
+
+801
+01:57:04,307 --> 01:57:15,408
+5 yukarı, 18 binli süreler elde ediyoruz. Çünkü paralel çalışmıyor. Sırayla çalışıyor. Şimdi tekrar paralel çalışır hale getirdim. Çalıştalım bakalım.
+
+802
+01:57:21,844 --> 01:57:25,123
+Ama yalnız şöyle bir şey oldu.
+
+803
+01:57:26,444 --> 01:57:29,144
+Bakın, 7 milisaneye de çalış dedi.
+
+804
+01:57:29,264 --> 01:57:30,804
+Şimdi burada şöyle bir problem var.
+
+805
+01:57:31,604 --> 01:57:38,083
+Bu görevler start etti ama bütün her şey bittikten sonra aslında bunun yazmasını bekliyordu.
+
+806
+01:57:38,083 --> 01:57:41,003
+Fakat 14. satırda başlattı.
+
+807
+01:57:41,083 --> 01:57:43,444
+Ondan sonra hemen 15. satıra geçti.
+
+808
+01:57:43,543 --> 01:57:49,564
+Yani bir yandan bu trade'a paralel olarak çalışırken meyve meyve çalışmaya devam etti aslında.
+
+809
+01:57:49,844 --> 01:58:14,644
+O yüzden komple bütün threadler bittikten sonra bu end satınını hesaplayabilmemiz gerekirdi. Ama bunun nasıl yapılacağını henüz bilmiyoruz. 10 dakikada vereceğiz. Ondan sonra thread pool konusunu göreceğiz. Ondan sonra artık ne kadar şey ettiğini görebileceğiz. Ama ortaya çıkan sürenin 18 saniye olmadığı da bariz yani. Hadi bir yandan kronometre de tutayım bakayım. Öyle söyleyeyim size.
+
+810
+01:58:15,796 --> 01:58:18,176
+İlla demonstra etmek istiyorum yani.
+
+811
+01:58:19,236 --> 01:58:21,096
+Peki, alı koyalım diye başlatıyorum.
+
+812
+01:58:21,216 --> 01:58:23,736
+Şimdi şuradan yine başla başlamaz.
+
+813
+01:58:23,836 --> 01:58:25,216
+Buna da başlattım şimdi.
+
+814
+01:58:25,596 --> 01:58:26,516
+Şimdi odaklığına bakayım.
+
+815
+01:58:26,796 --> 01:58:27,756
+Şey daha şey etmez.
+
+816
+01:58:28,056 --> 01:58:28,816
+Biter bitmez.
+
+817
+01:58:28,936 --> 01:58:29,456
+Çıkkımızın.
+
+818
+01:58:29,456 --> 01:58:29,596
+Ha.
+
+819
+01:58:30,796 --> 01:58:34,016
+6 saniye 55 saniye.
+
+820
+01:58:34,496 --> 01:58:34,776
+Yani.
+
+821
+01:58:35,220 --> 01:58:41,480
+Tabii arada benim bir iki salise tepki süren vardır illaki.
+
+822
+01:58:42,000 --> 01:58:43,460
+6.50 diyelim mesela.
+
+823
+01:58:43,960 --> 01:58:48,520
+6.50 nerede? Yani 6 saniye, 6.000 saniye demektir.
+
+824
+01:58:48,520 --> 01:58:54,420
+6.000 saniye ve 55 salise böyle bir süre.
+
+825
+01:58:54,700 --> 01:58:57,380
+Yani 18.000 nerede? 6.000 nerede?
+
+826
+01:58:57,760 --> 01:59:00,200
+Üç kat bir performans var.
+
+827
+01:59:00,539 --> 01:59:02,100
+Birkaç kere daha çalıştıralım bakalım.
+
+828
+01:59:02,804 --> 01:59:04,084
+İki, iki kere falan daha.
+
+829
+01:59:05,224 --> 01:59:08,384
+Bu da çalış.
+
+830
+01:59:15,572 --> 01:59:19,351
+7 saniye. 6 saniye.
+
+831
+01:59:19,351 --> 01:59:20,791
+Küsur aklını yazmıyorum.
+
+832
+01:59:20,791 --> 01:59:21,391
+7000.
+
+833
+01:59:22,711 --> 01:59:25,112
+6000, 7000. Bir kez daha çalıştırıyorum.
+
+834
+01:59:31,283 --> 01:59:38,543
+Klamasını tutmamıştım. Bakın stop'a bastım. Evet, bütün çift arz sahalatlar olmadan durdu.
+
+835
+01:59:39,063 --> 01:59:44,603
+Şöyle bir akşam sıfırla diyeyim. Evet, şimdi hazırım tekrar çalışmaya. Başla.
+
+836
+01:59:51,155 --> 01:59:55,235
+6.25, tamam. 6.250 diyelim yani.
+
+837
+01:59:55,775 --> 01:59:57,655
+6.250, yani.
+
+838
+01:59:59,235 --> 02:00:07,715
+Görüyorsunuz, 6-7 arası, saniye arası bir sürede, multi-tradet'ı çalıştı ama bir sürede 18.000 oldu.
+
+839
+02:00:07,855 --> 02:00:12,076
+Şimdi düşünelim, 4 tane prosesi paralel çalıştırdık.
+
+840
+02:00:12,376 --> 02:00:17,155
+Bütün süreç 4 kat hızlandı mı? Hayır, 4 kat hızlanmadı ama bakın, 3 kat kadar hızlandı.
+
+841
+02:00:18,228 --> 02:00:25,428
+Buradan işte tam çarpanın tam thread sayısı kadar olmadığının da bir örneğini vermiş olduk.
+
+842
+02:00:26,328 --> 02:00:30,868
+Peki, güzel. Artık 10 dakika arayı hak ettik diyorum.
+
+843
+02:00:30,868 --> 02:00:38,368
+But 11.00, 11.15'e kadar 10 dakika arayın.
+
+844
+02:10:19,475 --> 02:10:30,576
+Evet peki arkadaşlar, ara sürenizi doldurduk. Bu sürede acaba aklınızda bir şey var mıdır? Bu sakıfen örneğimizle ilgili. Varsla buyurun.
+
+845
+02:10:35,091 --> 02:10:55,711
+Hocam, belki biraz donanım kısmına ait bir şey olmuş olacak ama bu multitrading de anladığım kadarıyla şu şekilde, birden fazla kod da belli bir yerde kesiyor, diğer tarafa devam ettiriyor. Bu kestiği noktaya tekrar geri nasıl dönüyor? Belki programın ortasında kesiyor, diğer kişinin birlikte akmasını sağlıyor programın.
+
+846
+02:10:56,271 --> 02:10:56,752
+Evet.
+
+847
+02:10:57,112 --> 02:10:57,912
+Senkron şekilde.
+
+848
+02:10:58,632 --> 02:10:59,212
+Böyle oluyor.
+
+849
+02:10:59,452 --> 02:11:05,952
+Şimdi her bir trend aslında kendi içerisinde tabii ki makine dili parçacıklara ayrılmış oluyor haliyle.
+
+850
+02:11:05,952 --> 02:11:10,952
+Bu nedeniyle her bir kod parçacığın bir kod...
+
+851
+02:11:11,155 --> 02:11:24,355
+dizisi var. İkincisi, o kod içerisinde hangi instruction'da kaldığını gösteren kod point'ı da var. Bir makinezeli komut sesini bu şekilde yürütüyor aslında mikro işlemci.
+
+852
+02:11:24,355 --> 02:11:35,355
+Bu nedenle scheduler şu an her bir thread'inde çalışabilir kodu bellek içinde farklı bir yerde yer alıyor. Scheduler diyor ki şu an şu...
+
+853
+02:11:35,520 --> 02:11:45,239
+Tread'i aktif hale getiriyorum. Buna karar verdiğinde o kodun bellekteki yer aldığı noktada kod pointı nerede kalmışsa oradan devam ediyor.
+
+854
+02:11:45,560 --> 02:11:51,199
+İşte Tread'ler arasında geçiş bedeli de bundan kaynaklanıyor aslında.
+
+855
+02:11:51,199 --> 02:11:57,360
+O anda mikro işlemcinin yürüttüğü kontekst, bağlam nerede?
+
+856
+02:12:03,520 --> 02:12:05,460
+Kontekst başka yere gösteriyor.
+
+857
+02:12:05,800 --> 02:12:12,920
+Yani burada da arka planda nasıl bir işte yığımı vardır, yığın olamaz da bir kuyruk yapısı söz konusudur.
+
+858
+02:12:13,159 --> 02:12:18,440
+Kontekst şu an şu noktadan şu noktaya taşındı gibi işler yapılmak zorundadır.
+
+859
+02:12:19,060 --> 02:12:24,420
+İşte bu market tradingin getirdiği ek yük bu gibi şeylerden kaynaklanmaktadır.
+
+860
+02:12:24,420 --> 02:12:26,699
+Bu kadar yakıt verebildim, kusura bakmayın.
+
+861
+02:12:27,760 --> 02:12:28,579
+Estağfurullah hocam.
+
+862
+02:12:28,699 --> 02:12:31,420
+Yani şöyle o zaman bu trading kullandığımızda belleği...
+
+863
+02:12:31,520 --> 02:12:36,720
+Çünkü farklı, farklı şekilde yürüyecek bellek çok fazla yığılıyor, doğuluyor yani.
+
+864
+02:12:36,720 --> 02:12:43,560
+Tabii, haklısınız aslında. Yani o arka planda belki optimizasyonlar yapıyordu diye düşünüyorum.
+
+865
+02:12:43,699 --> 02:12:54,539
+Çünkü her ne kadar dört tane, bu örneğimde dört tane farklı set oluştursam da aslında bunların şeyde, kodu da farklı değil, aynı.
+
+866
+02:12:59,520 --> 02:13:24,960
+Akraşan noktalar var. O yüzden büyük ihtimalle arka planda kaç tane thread oluşturuyorsam o kadar farklı kod belli kullanıyor değildir diye düşünüyorum. Orada illaki bir optimizasyon yapıyor. Birden fazla kod pointer taşıyor. Her thread için aynı kod pointer ortak olan noktalarda ilgili olanı ilerletiyordur gibi mutlaka bir optimizasyonlar yapıyordur.
+
+867
+02:13:25,440 --> 02:13:27,119
+Anladım hocam. Çok teşekkür ediyorum.
+
+868
+02:13:27,520 --> 02:13:55,520
+Bu art yapı konusunda çok fazla bilgim yok. Yani burada hem donanımın multi-trading ile ilgili onu nasıl ele aldığını ve nasıl gerçeklediğinin ayrıntıları var. Hem işletim sisteminin bunu nasıl yaptığının ayrıntıları var. Hem Java Sanal makinesiyle işletim sistemi arasında bu gidip gelen multi-trading işlemlerinin nasıl olduğunun ayrıntıları var. Ben bunların hiçbiri konusunda derinlemesine bilgi sahibiyim.
+
+869
+02:13:55,520 --> 02:14:03,579
+değilim. Sadece Java üstünden mat trading nasıl yapılıyor? O konuyla ilgili belirli bir bilgi birikimi var. O yüzden bu kadar yanıt verebileceğim.
+
+870
+02:14:03,980 --> 02:14:09,539
+Çok teşekkür ederim hocam. Anladım daha iyi anladım. Bir de trade safe denilen bir şey belki ilerleyen konuları da görecektir.
+
+871
+02:14:09,539 --> 02:14:17,440
+Evet. Tamam o zaman. Tamam o zaman. Tamam o zaman. Tamam o zaman. Evet. Başka soru varsa buyrun. Yanıtlayabildiğim kadar yanıtlamaya çalışın.
+
+872
+02:14:22,131 --> 02:14:27,991
+Peki, şimdi bu konudaki bilgi birikimimizi biraz daha ilerletelim.
+
+873
+02:14:28,611 --> 02:14:36,231
+Şimdi, ayrı threadlerde nispeten küçük sayıda görev yürütmek son derece rahatlıkla yapılabilen bir şey.
+
+874
+02:14:36,231 --> 02:14:38,611
+Az önce de yaptığımız oydu zaten.
+
+875
+02:14:39,191 --> 02:14:49,371
+Ama aslında tipik bir mikrolaşiyemci de bu şekilde gerçekten paralel iş yürütebilecek birim sayısı sınırlı olabilir.
+
+876
+02:14:50,036 --> 02:14:55,836
+En fazla 8 çekirdekli olsun bilgisayarımızdaki işlemci diyelim ki.
+
+877
+02:14:56,615 --> 02:15:00,836
+Hadi bu sunucu bilgisayar bir ankağıt üstünde 4 farklı işlemci.
+
+878
+02:15:01,195 --> 02:15:04,516
+Her işlemcide 16 çekirdek diyelim ki.
+
+879
+02:15:04,516 --> 02:15:08,695
+Ne oldu? 16 çarpı 4.
+
+880
+02:15:13,108 --> 02:15:24,967
+16 çarpı 4, arka 124, arka 124, arka 124, arka 124, arka 124, arka 124, arka 124, arka 124, arka 124 görev olabilir. 65. falan geldiği zaman gerçek martı trading olmayacak.
+
+881
+02:15:25,288 --> 02:15:34,128
+İşte sırayla her günden biraz bir şeyler çalıştıracak gibi çalışma sözcüğünüzü olacak. Kaldı ki arka planla çalışan işletim sisteminin şunun bunun başka bir durum, prosesleri de bulacak.
+
+882
+02:15:35,891 --> 02:15:59,171
+Aslında az önce yaptığımız gibi her bir trade için ayrı bir iş yaptırmak çok yararlı olmayacaktır. Bu nedenle biz aslında sistemden bir havuz tanı edelim. O havuzun içerisine kendi görevlerimizi yükleyelim. Böylece sistemdeki tüm kaynakları kendimiz için ayırmış olmayalım.
+
+883
+02:16:03,891 --> 02:16:06,411
+Sadece bizim kodumuzu çalıştırmayacak elbette.
+
+884
+02:16:06,871 --> 02:16:14,891
+Fakat schedulerın diğer prosesleri de göz önünde bulunduğunuzda elini biraz daha rahatlatmak için böyle bir...
+
+885
+02:16:15,796 --> 02:16:31,296
+Bütün kaynakları istemeyelim de, sadece eğer bizim problemimizde 4-5 demeyelim de, tamam 64 tane de 100 tane de paralel işlem yapabileceğiz, yapmak istiyoruz diyelim ki, ama sistemde bu kadar olmadığını da zaten biliyoruz.
+
+886
+02:16:31,296 --> 02:16:43,796
+Bu nedenle sistem kaynaklarının ortalama diyelim ki 4'te birini falan harcamak istiyorsak, az önceki 64 çekirdekli sunucumuzda bunun çalışacağını biliyorsak, 16 tane bize yeter falan diyoruz.
+
+887
+02:16:43,796 --> 02:16:48,896
+Ve ayrıca zaten 16 threadle değişik, 16 kat hızlanmayacağını da biliyoruz.
+
+888
+02:16:49,256 --> 02:16:55,576
+Bizim çalıştıracağımız konu yürüteceğimiz algoritmanın bir cut-off sınırı olacaktır.
+
+889
+02:16:55,876 --> 02:17:06,115
+Ne kadar çok paralel iş yürütürseniz yürütür, sınırsız sistem kaynaklarınız olsa bile o kadar kat hızlanmayacağı bir nokta olacaktır zaten.
+
+890
+02:17:06,115 --> 02:17:11,796
+O noktayı rahatlıkla belirleyebiliyorsak işte o kadarlık bir havuza talibiz.
+
+891
+02:17:11,796 --> 02:17:18,155
+devrimiz yararlı olacaktır. Sistemin genel başarımını yüksek tutmak için.
+
+892
+02:17:18,995 --> 02:17:44,935
+Öte yandan bu trendlerimizi bir havuzda toplamanın bir yararı da var. Bu yarar şu, acaba o havuzdaki trendler bitti mi, bitmedi mi, bitmesini bekle gibi konutlar verebiliyoruz. Az önceki süre ölçmemizi, yapamadığımız süre ölçmeyi bu sayede yapabiliriz. Yani nedir? Havuzumuzdaki bütün trendler bitene kadar bekle. Ondan sonra kaldığın yerden devam etmeyi metodunda gibi işler yapabiliyor olacağız.
+
+893
+02:17:46,995 --> 02:17:55,036
+Havuzdaki bütün threadleri bitirmesini bekleyerek bitir, zorla bitir gibisinden konutlar verebiliyoruz.
+
+894
+02:17:55,295 --> 02:17:59,595
+Bütün bu işleri yapabilmek için bu havuz mantığına ihtiyacımız var arkadaşlar.
+
+895
+02:17:59,595 --> 02:18:03,036
+Havuz mantığını Java bize şu şekilde veriyor.
+
+896
+02:18:03,515 --> 02:18:08,216
+Altta gördüğünüz YOLN'a sınıf şeması da anlattığım şekilde veriyor.
+
+897
+02:18:08,895 --> 02:18:11,115
+Java Util Concurrent paketi var.
+
+898
+02:18:13,492 --> 02:18:20,432
+Şimdi, executor interface var. O interface, turn-no-lan method, execute not to do.
+
+899
+02:18:21,716 --> 02:18:32,855
+Çok konuşamadım. Execute metodudur. Parametro olarak işte bir runable nesmesi alır. Örneğin, Sakıfen oydu biliyorsunuz. Sakıfen bir runable nesmesi idi. Çünkü Sakıfen runable adresini gerçekleştiriyordu.
+
+900
+02:18:33,995 --> 02:18:47,536
+Çalıştırmaya başlamak için execute metodu var. Ek olarak bu interfazden kalıtımla üretilmiş olan yine Java kütüphanesindeki execute service interfazı var. Orada shutdown metodu var.
+
+901
+02:18:49,716 --> 02:18:59,036
+Havuzdaki threadlerin kapanması için sinyal gönderir. Daha doğrusu aslında özür dilerim, havuzun kapanması için sinyal gönderir.
+
+902
+02:18:59,396 --> 02:19:07,515
+Bir havuz oluşturduğumuzda, o havuza threadler eklediğimizde ve o threadler işini bitirdiğinde havuz kendisi otomatik olarak sonlanmaz.
+
+903
+02:19:07,924 --> 02:19:35,904
+Çünkü biz belki daha sonra başka treddar vereceğiz o havuza. Onun da iş yapmasını bekleyeceğiz diyeceğiz. O yüzden Java dilinde öyle düşünülmüş, tasarım öyle yapılmış. Bir havuz talep ederse birisi bizde, o havuz kapatılana kadar, sonlandırılana kadar bellekte kalmaya devam etsin. Çünkü daha sonra o havuza yeni yeni treddar eklenmek istenebilecektir. Buna destekleyelim diye bu şekilde bir karar vermiş.
+
+904
+02:19:35,924 --> 02:19:49,924
+Onlar da bu kararı verdiği için bizim artık kendi proseslerimizin daha başka yapacak iş kalmadıysa ve daha başka da proses çalıştırmak istemiyorsak o zaman o havuzda kapatmamız gerekmektedir.
+
+905
+02:19:50,244 --> 02:19:52,824
+O yüzden shutdown metodunu çağırırız.
+
+906
+02:20:00,000 --> 02:20:15,139
+Yani thread yoksa hemen havuzun kapatılmasını sağlar. Ama varsa, yani daha işini bitirmemiş thread varsa, o zaman onların işinin bitirmesini bekler. Bu işler bittikten sonra da havuzu kapatır.
+
+907
+02:20:15,959 --> 02:20:19,040
+Bu şekilde çalışıyor. Ama acilen kapat kardeşim.
+
+908
+02:20:19,507 --> 02:20:33,647
+Demek istiyorsanız da o zaman now metodular acilen kapatıyor ve henüz işi bitmemiş olan threadlerinizi ise bir linked list içerisinde geri döndürüyor sizi. Sonra isterseniz bunları tek tek çalıştırırsınız.
+
+909
+02:20:33,907 --> 02:20:44,367
+Veyahut da başka bir havuza verirsiniz, oradan çalıştırırsınız. Ne isterseniz yapabilirsiniz yani. Sonra bu havuza acaba kapağın sinyali gelmiş mi, gelmemiş mi?
+
+910
+02:20:44,752 --> 02:21:12,752
+Onu öğrenmek istiyorsanız, is shut down metodu var. O hafıza kapatma sinyali gelmişse, yani shut down metodu çağırmışsa, o zaman true dönüyor. Aksi hafıza de false dönüyor. Hatırlayın, shut down metodu çağırınca hemen kapanmış olmuyor aslında. Bekliyor dedik işimdeki işlerin. O süre içerisinde is shut down hemen sürekli true döndürecektir. Shut down metodu çağırırdı. Sonlanma kadar geçen gerçekten...
+
+911
+02:21:12,752 --> 02:21:18,231
+Kapatılana kadar geçen süre içerisinde bu isşatlar metodu her çağrı dışında turu döndürecektir.
+
+912
+02:21:21,112 --> 02:21:28,211
+Bir de esas gerçekten o havuzun tamamen kapanıp kapanmadığını öğrenmek için ise isternated metodu var.
+
+913
+02:21:28,592 --> 02:21:38,012
+İşte biz de az önceki yapamadığımız süre ölçümü işini bu isternated gerçekleşince, o turu döndürünce artık yapacağız.
+
+914
+02:21:38,772 --> 02:21:51,492
+Orada mecbur biraz busy waiting yapacağız. Sürekli bitti mi, bitti mi, bitti mi diye kontrol edeceğiz. Tamam bitti dediği zaman son ölçümümüzü yapacağız. Şeklinde bir çalışma biçiminde.
+
+915
+02:21:52,051 --> 02:22:19,811
+Peki, bu havuzu nasıl elde edeceğiz? Bu interfizi, gerçekten bir havuzu nasıl elde edeceğiz? Ve hangi sınıfta kullanacağız? Executors sınıfı var, bu amaçlı, JDK'da yer alan. Biz onu kullanacağız. İşte bu Executors sınıfı, bu Executors service interfazını implement ettiği için, o da Executors interfazından kalıtımla türetildiği için, bütün bu bahsettiğimiz metotlarını çağırabileceğiz. Peki, oluşturmamız nasıl olabilecek? İki tane.
+
+916
+02:22:20,051 --> 02:22:45,412
+Metot var. Onlardan birini çağıracağız. Direkt constructor'ı elde etmiyoruz. Scanner nesmesini oluşturmak benzeren şekilde direkt elde etmiyoruz. Dolaylı olarak elde ediyoruz. İki tane metot var. Birincisi, ikisi de şu anla ilgili, bu havuzun boyutu ne kadar olacak? İsterseniz bu havuza sabit bir değer verebiliyoruz.
+
+917
+02:22:45,760 --> 02:23:01,799
+5-threaded, 6-threaded, 10-threaded, her neyse şu kadar bir kapasitesi olsun derse, istiyorsak o zaman new fixed thread pool metodunu kullanıyoruz. Kaç adet thread bundan paralel olarak çalışabilecek ise maksimum onu da parametre olarak veriyoruz.
+
+918
+02:23:01,799 --> 02:23:13,020
+İşte o metodun bize döndürdüğü executor service interface üzerinden biz işte execute, shutdown, shutdown, run, is shutdown ve is terminal metodlarını çağırarak işimizi görüyoruz.
+
+919
+02:23:13,343 --> 02:23:35,543
+Bir de eğer havuzun boyutu önemli değil, bu boyutu Java sanal makinesi dinamik olarak ayarlasın. Bu bize yeterli diyorsak o zaman da New Cache Threadpool metodu var. Onun döndürdüğü executive service arayüzü gerçeklemesi üzerinden işlerimizle yapıyoruz. Bu iki metot da static metottur arkadaşlar.
+
+920
+02:23:37,940 --> 02:23:43,659
+Sonlarına statik yazınca elini arttıracağımızdan boyu da oranlı olarak azalacaktır.
+
+921
+02:23:43,740 --> 02:23:54,920
+Onun yerine şuraya statik diye UML not notasyonuyla her ikisinde statik olduğunu belirtmek biraz daha değerli toplu ve daha güzel gözüklen bir çama oluşmasını sağlayabiliyoruz.
+
+922
+02:23:54,960 --> 02:23:56,960
+O yüzden bu şekilde bırakmaya devam etmek istiyorum.
+
+923
+02:23:57,520 --> 02:24:01,700
+Kıvırıklantezler içerisinde her iki satın da yanına statik demek istemiyorum.
+
+924
+02:24:02,355 --> 02:24:08,376
+Yine de yapılır aslında. Biraz sonra çekilin. Bu daha değerli toplu. Bu gösterilmek istiyorum.
+
+925
+02:24:08,655 --> 02:24:16,015
+Peki, şimdi o zaman bir önceki sakırfen örneğimizi nasıl modifiye edeceğiz?
+
+926
+02:24:16,315 --> 02:24:28,256
+Yapmamız gereken şu olacak. Daha önce sakırfenlerimizi thread'e verip onun üzerinden start demiştik.
+
+927
+02:24:30,355 --> 02:24:49,416
+Vermeyeceğiz de bir havuza vereceğiz. Onun execute etmesini sağlayacağız. Yani artık tekrarlıyorum, thread üzerinden değil, executor üzerinden yapacağız işimizi. Nasıl yapacağımızı? Yansıdan görelim. Bunlar az önce sözde bahsetmiştim bütün metodlarla.
+
+928
+02:24:52,852 --> 02:25:20,852
+Evet, tamam. Bütün bunlardan sözler bahsetmiştim. Şimdi örneğimizi değiştirelim. Dediğim gibi artık Trel üstünden değil de Pool üzerinden yapacağız. Bunun için bir kere Sakıfe'ni değiştirmeyeceğiz. Onda hiçbir değişikliğe gerek yok. O sınıfın sadece paralel yürümesi gereken iş mantığımı içeriyor. Ha bunun nasıl paralel yürütüleceğini ise, alttaki mekanizma ise sadece şimdi onu değiştiriyoruz. Sadece onu değiştirdiğimiz için sadece onunla ilgili...
+
+929
+02:25:20,852 --> 02:25:35,252
+Kodumuzun parçası olan main sınıfımızı değiştiriyoruz. Böyle yapabilmek tasarımımızı hem bizim iyi yapabildiğimizi göstermektedir. Hem de Java'nın multi-trading altyapısının iyi tasarlandığını göstermektedir.
+
+930
+02:25:35,252 --> 02:25:48,712
+Eğer bu tek tekmiş veya havuzmuş çalışma düzenini değiştirmek için iç mantığını içeren sınıfta da değişiklik yapmam gerekseydi, ortada bir terslik olduğunu.
+
+931
+02:25:48,852 --> 02:25:57,092
+Bunun iyi bir tasarım olmadığını rahatlıkla söyleyebiliriz. Ama durum öyle değil, böyle. Peki, ne yapacağız?
+
+932
+02:25:57,652 --> 02:26:04,792
+İşte executor sınıfının, bahsettiğim iki static metodundan birinden, ister new cache thread pool, ister fixed thread pool.
+
+933
+02:26:05,112 --> 02:26:09,272
+Şimdi hexiyle de örneğimizi modifiye ederek sonuçlarını göreceğiz.
+
+934
+02:26:09,592 --> 02:26:15,531
+Bir pool nesnesi elde ediyoruz. O da tabii aslında bir executor service gerçeklemesi olmuş oluyor.
+
+935
+02:26:15,531 --> 02:26:22,311
+Onun execute metotlarına işte multi-threaded çalışacak nesnelerimizi ilklendirip veriyoruz hemen.
+
+936
+02:26:22,972 --> 02:26:24,992
+Ve çalışmaya başlıyor bunlar.
+
+937
+02:26:25,652 --> 02:26:52,691
+Ondan sonra şu shutdown metodunu vermek zorundayım. Ben bu shutdown metodunu vermezsem, sucker fener işlerini bitirdikten sonra havuz kendiliğinden kapanmayacak. Buna yeni threadler vermeye devam edebileceğim aslında teoride. Ama pratikte benim main metodumda artık başka metodum kalmamış. Yani o ilgili havuza acaba nasıl başka bir program üstünden erişebilirim de yani onu bilmiyorum. Belki bir yolu vardır ama.
+
+938
+02:26:53,652 --> 02:27:03,031
+Varsa bile bilmiyorum. Bu nedenle aslında bu executor'a gettikten sonra daha uzun kapanmasını istiyorum. Bu nedenle shutdown metodunu da çağırıyorum.
+
+939
+02:27:03,412 --> 02:27:09,772
+Tabii ki bu aradaki bütün sakın sender işlerini bitirdikten sonra kapanacak bu havuz. Öncesinde kapanmayacak.
+
+940
+02:27:09,772 --> 02:27:17,652
+Hadi bakalım şimdi bu halde çalıştalım bakalım. Yine aynı pakette AmsFenMatch with Pool sınıfı. Görelim.
+
+941
+02:27:21,108 --> 02:27:24,128
+Back with pool sınıfı. Evet.
+
+942
+02:27:25,067 --> 02:27:26,727
+Bak, yavaş yavaş geliyor şimdi bu bikinen.
+
+943
+02:27:29,727 --> 02:27:31,708
+Şu an öyle yapmayalım şimdi.
+
+944
+02:27:33,507 --> 02:27:34,528
+Bu yok.
+
+945
+02:27:39,667 --> 02:27:40,332
+Arkadaşlar, class, object,
+
+946
+02:27:43,603 --> 02:27:44,563
+Şuralarda yok.
+
+947
+02:27:47,283 --> 02:27:51,243
+Evet, şu haliyle, cache thread bulu oluşturuyorum.
+
+948
+02:27:51,423 --> 02:27:54,263
+Dört tane şey, bir daha kemik demişim.
+
+949
+02:27:54,623 --> 02:27:55,783
+İyice bir şeyler yaptım.
+
+950
+02:27:55,843 --> 02:27:57,363
+İyice bir modifiye etmişiz.
+
+951
+02:27:57,663 --> 02:27:58,644
+Tamam, pekala.
+
+952
+02:27:59,223 --> 02:28:01,103
+İşte dört tane sakın falan oluşturuyorum.
+
+953
+02:28:01,843 --> 02:28:05,023
+Ve oluşturur oluşturmaz, hadi havuz bulu çalıştırsın diyorum.
+
+954
+02:28:05,343 --> 02:28:07,343
+Ondan sonra da şart dansın yerini gönderiyorum.
+
+955
+02:28:07,783 --> 02:28:10,943
+Bakalım ne kadar süre içerisinde bu iş tekrarlanacak.
+
+956
+02:28:12,084 --> 02:28:12,584
+Save.
+
+957
+02:28:14,804 --> 02:28:16,364
+İnşallah hep bir geçecek.
+
+958
+02:28:16,544 --> 02:28:18,024
+Bir kısa sıra içerisinde olacak.
+
+959
+02:28:20,024 --> 02:28:24,024
+Bu arada ben de yine kronometremi hazırlayayım tutmak için.
+
+960
+02:28:29,043 --> 02:28:55,203
+Evet, bitti. Gerçekten 40 satılma çıktı oldu. Ctrl C, daha sonra Ctrl N, şöyle bir yasalım. Ctrl N, yutmam lazım ki şuraya erişeyim. Evet, 40 satı. Yine 4x10 tezadan yapılabilirdi.
+
+961
+02:28:56,115 --> 02:29:00,736
+Şimdi elini size de tutayım.
+
+962
+02:29:13,459 --> 02:29:28,799
+690. Birazcık daha arttı sanki bakalım. Ama acaba rastlansanlıktan mı gelen bir şey? Bir not etkisi şimdi. Burada şimdi pool kullanmaya başladık. Ne oldu? 6900.
+
+963
+02:29:29,523 --> 02:29:42,423
+Bir daha şey. Ya da şu an çok çalıştırmayayım. Yani elle tutmakta çok da benim de olmuyor, çok da net olmuyor. Bundan sonraki çalıştırmalarımı saat tutaraktan, otomatik saat tutaraktan şey deriz, ölçmeye devam ederiz.
+
+964
+02:29:45,876 --> 02:29:59,876
+Evet. Peki. Başka ne diyeceğim? Şu aşamada başka bir şey diyemeyeceğim. İşte bu hozda circle fendeleri oluşturduk. Çalışıyorlar. Alt yapıyı bu şekilde kullandık.
+
+965
+02:30:00,876 --> 02:30:10,876
+Fixed track pool'da ne olacak? Süreler değişebilecek. Onları yine şu süre ölçme işinden sonra yapalım. Daha net değerlendiririz. Ama acaba...
+
+966
+02:30:11,280 --> 02:30:22,220
+Eksadan söylemem gereken bir şeyler var mı? Bir onu göstereyim. Ona bakalım. Tamam, peki yok. Bu aşamada yok. Tamam, peki o oynamamada da yapabiliriz.
+
+967
+02:30:22,960 --> 02:30:35,052
+Peki, şey gördük ya, is Terminator. Is Terminator true döndürdüğünde artık bu işleriniz bitmiş demektir. Onu da yapabilmek için şimdi...
+
+968
+02:30:36,147 --> 02:30:44,147
+Önce bir ekran açtı, bir chatten initiated yazsın. Ondan sonra şu 14. satırda bir busy waiting'e girmiş oluyoruz.
+
+969
+02:30:44,147 --> 02:30:48,147
+Pool terminated değil ise...
+
+970
+02:30:49,108 --> 02:30:50,468
+Ne yapıyorsun? Bekliyorsun.
+
+971
+02:30:50,747 --> 02:30:56,067
+Yani pool sonlanmadığı sürece boş döngü içerisinde bekle.
+
+972
+02:30:56,468 --> 02:30:58,368
+Burada biz waiting yapıyorum ama ne yapalım?
+
+973
+02:30:58,907 --> 02:30:59,988
+En rahat bu olacak.
+
+974
+02:31:00,407 --> 02:31:05,988
+Main metodumu da ayrı bir threadle koşturmaya çalışıp zaten ayrı threadle çalışıyor yani.
+
+975
+02:31:06,328 --> 02:31:08,528
+O yüzden burada biz waiting yapacağız.
+
+976
+02:31:08,608 --> 02:31:09,328
+Buradan kaçamıyoruz.
+
+977
+02:31:09,648 --> 02:31:11,927
+Çünkü programın bitmesini bekleyeceğiz yani.
+
+978
+02:31:11,927 --> 02:31:12,368
+Peki.
+
+979
+02:31:13,048 --> 02:31:14,448
+Program bitince var.
+
+980
+02:31:14,648 --> 02:31:17,087
+Yani daha doğrusu bu pool gerçekten sonlanın.
+
+981
+02:31:17,108 --> 02:31:28,888
+Java'dan çıkmış olacak. Chat'tan komple etmeyecek ekmeler ve bitişle şu kadar süre oldu diyecek ve ona göre ne kadar minisaniye sürdüğünü bize söyleyecek.
+
+982
+02:31:28,888 --> 02:31:33,348
+Evet. Kaydetik ve çalışalım.
+
+983
+02:31:37,332 --> 02:31:41,472
+Bakın, şartlar initiated dedi oralarda bir yerlerde ama tabii ki hemen kapanmıyor.
+
+984
+02:31:41,652 --> 02:31:49,632
+Hepsi işlerini bitirdikten sonra, tesadun yaptıktan sonra diyor ve ha bakın bu sefer de 5943 Nisan işeysinde bunu tamamlayabildi.
+
+985
+02:31:49,632 --> 02:31:59,371
+Az önceki şu 6900 herhalde rastgele sayılar biraz büyük oluşturulmuş oldu da o yüzden böyle bir şey gerçekleşti.
+
+986
+02:31:59,752 --> 02:32:02,592
+Doğru, 5943 olmuş.
+
+987
+02:32:03,051 --> 02:32:03,871
+Bize çalıştırayım.
+
+988
+02:32:06,388 --> 02:32:34,368
+Hızlıca shutdown initiated dedi. Kaçıldıysanız birazdan büyüttüm göstereyim. Bakın 4741. Evet, iyice azıdı. 4741. Peki. Şunu da şöyle büyüteyim. Bakın, şu kadar da bir yerde shutdown initiated diyor. Ondan sonra artık bekliyor. Yani bir main metodu bizim waiting'de şu an. Ama diğer threadler bizim waiting yapmıyor. Yapması gereken şeyleri yapıyorlar. Ondan sonra tamam, shutdown tamamlandı ve şu kadar sürede.
+
+989
+02:32:34,388 --> 02:32:37,808
+tamamlandı uygulama diye. Tekrar çalışıyorum.
+
+990
+02:32:42,772 --> 02:32:46,612
+Biraz daha uzun sürdü sanki. Evet, 6005. Peki, güzel.
+
+991
+02:32:49,992 --> 02:33:00,612
+Yani şey olarak, yine ortalama olarak, 3 yaşa 5 yukarı, havuz olmadan, threadler üstünden yürütücü süre ile benzer değerler ortaya çıkıyor.
+
+992
+02:33:00,952 --> 02:33:02,492
+Bakalım, ortalamalarını yazalım.
+
+993
+02:33:03,231 --> 02:33:06,012
+Şuraya otomatik ortalama, yok, artetik ortalama.
+
+994
+02:33:09,299 --> 02:33:10,299
+Olta lan lan.
+
+995
+02:33:12,159 --> 02:33:13,419
+Ya no diyor, toplu olda.
+
+996
+02:33:20,564 --> 02:33:21,884
+Sütü doğru tıklayamadı mı?
+
+997
+02:33:23,103 --> 02:33:23,304
+Heh.
+
+998
+02:33:24,203 --> 02:33:24,684
+Şimdi oldu.
+
+999
+02:33:25,064 --> 02:33:30,004
+Evet, o ortamda 5800 benzeri şuraya koyarsam.
+
+1000
+02:33:30,583 --> 02:33:32,203
+Doğru kopya yapıştırı yapamadı.
+
+1001
+02:33:32,283 --> 02:33:33,623
+Yani aramada doğru şeyden et.
+
+1002
+02:33:33,623 --> 02:33:34,384
+O ortamda.
+
+1003
+02:33:34,384 --> 02:33:34,443
+Tamam.
+
+1004
+02:33:35,824 --> 02:33:36,103
+Eee.
+
+1005
+02:33:37,012 --> 02:33:55,992
+Halkı biraz başarımı iyileştirmiş gibi. Ne dersiniz? Yani bu çok da bir tesadüf değil. Tabii daha ayrıntılı için biraz daha elle süre tutmam gerekiyor. Merak eden arkadaşım varsa deneyebilir ama şuradaki üç, birini üç, birini dört kere çalıştırmakta belirli bir performans farkı olduğunu görüyorum.
+
+1006
+02:33:56,468 --> 02:34:08,328
+Ama tabii işin içerisinde rastgelelik de var. O yüzden tam emin olamam. Bu nedenle ya işte bu tezahürat süresini her bir taraf için sabit bir sayıya çekeceğim, rastgele olmasın diyeceğim.
+
+1007
+02:34:08,728 --> 02:34:15,427
+Veyahut da daha fazla kere çalıştıracağım, on kere çalıştıracağım her ikisinden, her ikisinden versiyonunda mesela gibi.
+
+1008
+02:34:16,948 --> 02:34:27,788
+Evet, pekala. Esas şimdi burada size göstermek istediğim şey, fixed pool üzerinden bu süreler nasıl gerçekleşecek onu göstermek istiyorum size.
+
+1009
+02:34:31,208 --> 02:34:39,927
+New fixed pool kaç adet olacak? Şimdi 4 adet prosesim var.
+
+1010
+02:34:40,308 --> 02:34:47,148
+Hepsini alabilecek kadar gençlikte 4 olsun diyeyim mesela. Ne kadar süreler gerçekleşecek bakalım bakalım.
+
+1011
+02:34:57,587 --> 02:34:59,927
+6795. Peki.
+
+1012
+02:35:00,367 --> 02:35:01,028
+Hazalım bakalım.
+
+1013
+02:35:02,567 --> 02:35:03,367
+6795.
+
+1014
+02:35:04,268 --> 02:35:05,827
+Bu arada şunu da şöyle yapayım.
+
+1015
+02:35:06,207 --> 02:35:07,327
+Şöyle dursun.
+
+1016
+02:35:07,968 --> 02:35:09,387
+Şunu biraz şöyle yapalım.
+
+1017
+02:35:11,507 --> 02:35:11,808
+Şöyle.
+
+1018
+02:35:13,488 --> 02:35:13,788
+Tamam.
+
+1019
+02:35:14,867 --> 02:35:15,667
+Bir daha çalış bakalım.
+
+1020
+02:35:22,932 --> 02:35:25,832
+5.849
+
+1021
+02:35:25,832 --> 02:35:29,712
+Bir daha çalışıp bakalım.
+
+1022
+02:35:38,451 --> 02:35:40,351
+6982.
+
+1023
+02:35:41,771 --> 02:35:52,011
+Tamam, yani yine yaklaşık işin ortalaması 6500 olmuş.
+
+1024
+02:35:52,011 --> 02:35:52,791
+Tamam, peki.
+
+1025
+02:35:54,072 --> 02:35:54,831
+İyi, fena değil.
+
+1026
+02:35:54,931 --> 02:35:55,891
+Bakayım, doğru mu yapıyor bu arada?
+
+1027
+02:35:55,991 --> 02:35:56,451
+Doğru yapıyor.
+
+1028
+02:35:56,572 --> 02:35:57,111
+Tamam, peki.
+
+1029
+02:35:57,551 --> 02:36:02,011
+Şimdi, acaba şu 4'ü daha büyük bir sayı yapsak acaba?
+
+1030
+02:36:03,811 --> 02:36:04,752
+Fark eder mi?
+
+1031
+02:36:05,151 --> 02:36:05,591
+Bakalım.
+
+1032
+02:36:05,971 --> 02:36:32,511
+Fark etmeyecektir. Çünkü zaten olması gereken havuz bu. Ama biraz daha ekstra geniş olmasın acaba bir fark olur mu? Acaba olabilecek gibi. Dur bakalım şimdi. 4427 gibi çok süper bir sayı geldi. 4427. Bir kere daha çalıştalım bakalım. Belki tesadüf oldu. O anda işletim sistemi boş ve sayılar da belki küçük küçük rastgele geldi belki. 550.
+
+1033
+02:36:34,164 --> 02:36:35,664
+Biraz daha çalıştığımı kala.
+
+1034
+02:36:43,219 --> 02:36:44,459
+5.648
+
+1035
+02:36:48,435 --> 02:36:48,716
+Okay.
+
+1036
+02:36:58,611 --> 02:37:00,211
+5.73
+
+1037
+02:37:00,211 --> 02:37:03,371
+Bunun ortasına bakalım bakalım.
+
+1038
+02:37:07,379 --> 02:37:31,959
+5200. Sanki belirli bir kazanım oldu gibi. Yani her ne kadar 4 tezim varsa da pulumun genişliğini mevcuttan biraz daha fazla yapmak işe yaradı gibi gözüküyor. Neyse, çok da önemli değil ama böyle bir olasılık var, kuvvetli bir olasılık. Peki. Şimdi esas, sonrasında bunu ikiye düşürüyün.
+
+1039
+02:37:33,268 --> 02:37:36,547
+4 trendim var ama ikilik bir havuz düğünden.
+
+1040
+02:37:36,927 --> 02:37:42,268
+Şimdi böyle yapınca ben başarımının yaklaşık iki kat yarı yarıya düşmesini bekliyorum.
+
+1041
+02:37:42,368 --> 02:37:45,608
+4 trendim var ama aynı anda ikisi çalışacak sadece.
+
+1042
+02:37:45,608 --> 02:37:49,608
+O yüzden yaklaşık ben 6000'lerde değil de...
+
+1043
+02:37:51,603 --> 02:38:02,203
+12.000'lerde bir süre çıkmasını bekliyorum. Belki daha zor olup daha kötü olmaz ama illaki daha uzun sürecek olay. Bakalım.
+
+1044
+02:38:11,507 --> 02:38:12,708
+Ve gaz, dolał ty.
+
+1045
+02:38:16,115 --> 02:38:17,815
+Şurada şey yapayım.
+
+1046
+02:38:19,995 --> 02:38:21,155
+Sıfır bir göz.
+
+1047
+02:38:25,043 --> 02:38:25,263
+Tamam.
+
+1048
+02:38:31,347 --> 02:38:32,128
+Körmah Zalat.
+
+1049
+02:38:34,628 --> 02:38:36,507
+Undo skoji, kioski, kioski, kioski, kioski.
+
+1050
+02:38:40,884 --> 02:38:43,664
+Tamam, peki. Bak, evet, 11.000.
+
+1051
+02:38:47,507 --> 02:38:48,868
+11, 313.
+
+1052
+02:38:50,308 --> 02:38:51,727
+İki kere daha çalıştığım.
+
+1053
+02:38:53,347 --> 02:39:00,028
+Evet, gerçekten de bu işlemde tahmini yarı yarıya, yani iki kat daha doğrusu uzun sürecek diye düşünmüştüm.
+
+1054
+02:39:00,028 --> 02:39:05,688
+Çünkü dört tane thread ama aynı anda en fazla ikisi çalışıyor.
+
+1055
+02:39:06,067 --> 02:39:10,768
+Hepsi çalışabilseydi, altı saniyeyken yarısı ancak çalışabiliyor.
+
+1056
+02:39:10,847 --> 02:39:13,227
+12 saniyeye gitmiş ya da 10 gibi bir şey bekliyorum.
+
+1057
+02:39:13,547 --> 02:39:14,587
+10.928.
+
+1058
+02:39:17,108 --> 02:39:20,808
+Evet, yani o düzeylerde bir şeyler geliyor. Son bir kere çalışayım.
+
+1059
+02:39:32,819 --> 02:40:00,000
+11.334. Evet. Gördüğünüz gibi 10.000 küsurlerde olay gerçekleşiyor. Bu nedenle zor bir şey olmadı diyeyim. 11.192'miş ortalama. Peki. Ama bunu hani analiz etmek için yaptık. Gerçekten öyle. 3 yapalım. Biraz daha iyi olacak şimdi. Yani 11.000 ile 6.000 arasında bir şey. 8.000'li filanlar herhalde.
+
+1060
+02:40:00,000 --> 02:40:05,040
+Ades, araçka, on bir ya de en fazla içken çalıştısak yetat diye düşünüyorum.
+
+1061
+02:40:12,340 --> 02:40:17,680
+Evet, bakın, 8000. Tamam, yani. Bir daha. Şimdi uzunluğunu not etmeyeyim. Bir daha çalıştı. Ya da hadi yesin.
+
+1062
+02:40:18,760 --> 02:40:21,340
+Ben 18 metri, öyle bir şeylerdi işte.
+
+1063
+02:40:25,587 --> 02:40:27,108
+Evet, 7828.
+
+1064
+02:40:28,328 --> 02:40:30,808
+Evet, tahmin ettiğim bir şekilde ölçeklendi.
+
+1065
+02:40:30,808 --> 02:40:32,747
+Demek ki olay budur.
+
+1066
+02:40:33,567 --> 02:40:46,247
+Peki, bu konular üstünde, pool üzerinden bu işlem yapmak üzerinde merak ettiğiniz, kafanıza takılan herhangi bir şey varsa söyleyin, konuşalım.
+
+1067
+02:40:54,260 --> 02:41:22,260
+Yoksa, yoksa, şimdi illaki aynı havuzda aynı türden trendler olacak bir şey yok kesinlikle. Bu nedenle bu taraftarla ek olarak bir de hakem olsun mesela. Hakem de arasına işte sakin olun filan bir şeyler söylesin arada. O da yine sıfır ile bin milisaniye arasında o da bir uyarısını yapsın. Öyle olsun diye. Bunu nasıl yapacağız? Tamamen benzer şekilde yapacağız.
+
+1068
+02:41:22,260 --> 02:41:24,940
+Onun için de Refle Jala olsun dedim.
+
+1069
+02:41:25,260 --> 02:41:41,520
+Şimdi burada her şeyi sıfırdan yazmaktansa aslında çalışma mantığını Sakırfen'e çok benzer şekilde yaptığında o takım tutmayacak ama sadece tesadat yapacak şekilde düşünüp Sakırfen'den kalıtımla Refle sınıfını oluşturdum.
+
+1070
+02:41:42,959 --> 02:41:49,200
+Üst sınıfın konstruktörüne sadece şart frez gönderiyorum. Takım adı yok, null. Bu şekilde yapabilirim.
+
+1071
+02:41:49,620 --> 02:41:52,880
+Bu şekilde bir moddan sonra kalıtım kullanmadan da yaparız.
+
+1072
+02:41:54,900 --> 02:41:57,620
+Şimdi o zaman şu match with pull'a geri dönelim.
+
+1073
+02:41:59,620 --> 02:42:01,000
+Hakemi de koyalım.
+
+1074
+02:42:01,920 --> 02:42:04,100
+Ve sıçradım. Ama şimdi bunu üçlemeyelim de.
+
+1075
+02:42:04,100 --> 02:42:07,240
+Mesela yine 5 diyelim çünkü en azından 5 thread'imiz var.
+
+1076
+02:42:07,580 --> 02:42:08,800
+Veya cache yapalım.
+
+1077
+02:42:12,960 --> 02:42:15,740
+Cache, bilmem ne thread pull işte böyle olsun.
+
+1078
+02:42:16,435 --> 02:42:18,435
+Böyle gidelim.
+
+1079
+02:42:18,435 --> 02:42:20,435
+Çalışacağım.
+
+1080
+02:42:20,435 --> 02:42:23,435
+Belki bu onca yıl bulup meşgul bulup çalışacağım.
+
+1081
+02:42:28,628 --> 02:42:38,568
+Şimdi artık 5 thread'ım var. Yani o yüzden 6 binler falan beklemeyeceğim de 7 binler falan bekleyeceğim yani. 6 bin 800 geldi. Evet.
+
+1082
+02:42:39,288 --> 02:42:45,907
+Tabii şimdi Haken biraz daha girintili yazıyor. Çünkü ilki null string. Altı bir de boşluk koyuyordu ya.
+
+1083
+02:42:46,108 --> 02:42:50,708
+Şartı o yüzden o boşluk durumundan kaynaklanıyor. Hadi bir daha çalış.
+
+1084
+02:42:52,435 --> 02:43:18,716
+Gördüğünüz gibi problem olmadan ekleyebilik yeni bir farklı thread. Çok farklı değil çünkü kalıntımla türettik ama farklı bir şey de yapabildik. Yapalım. Biraz sakın fenden copy paste yapacağım. Refree version 2 olsun bu da. Refree version 2 hemen hemen aynı şey. Sadece şart frez olsun mesela.
+
+1085
+02:43:21,108 --> 02:43:25,268
+Şi ma şi un kart.
+
+1086
+02:43:28,531 --> 02:43:56,111
+Ondan sonraki alan içerisinde artık team name, şu, bu falan olacak. Sadece şartı da izleyecek. Ondan sonraki alan şeyler aynı. Şimdi bakın bu noktada artık Sakın Fen'i ile Refle'yi ve 2 arasında bir bağıntı yok. Tek ortak nokta var. Lanıbınar yüzünü gerçeklemedi. Onun için de hani kod açısından biraz benziyor olası da bunlar tamamen farklı sınıflar. Ve bir havuza tamamen farklı sınıflardan nesnelerin de olabileceğini göstermek istiyorum size.
+
+1087
+02:43:56,531 --> 02:44:01,531
+O yüzden şu match with pool'a Refri diye de Refri V2 koyalım.
+
+1088
+02:44:04,531 --> 02:44:09,531
+Bunu da play nicely dediğimizde play fairly desin mesela ne demiştim.
+
+1089
+02:44:12,531 --> 02:44:14,531
+Ama fairly denmezse direkt fairly deniz.
+
+1090
+02:44:16,531 --> 02:44:19,531
+Hadi çalışalım şimdi burada yine match with pool.
+
+1091
+02:44:24,691 --> 02:44:44,331
+Evet, arada play, fail diyor. Ondan sonra yine bütün threadler işlerini yapıyor. Ondan sonra 3-800 saniyede olay tamamlandı. Gördüğünüz gibi yani farklı sınıflardan olan threadler aynı halimizden yer alabiliyor kesinlikle. Yani kafanızda öyle tek halimizde tek türden threadler gibi bir şey kalmasın.
+
+1092
+02:44:46,331 --> 02:44:48,191
+Peki, evet.
+
+1093
+02:44:48,819 --> 02:44:57,959
+Bugün bu kadar diyorum ama sorular varsa konuşalım. Ondan sonra haftaya ki yüz yüze yapacağımız ders de kaldık.
+
+1094
+02:44:57,959 --> 02:45:05,920
+Ben devam ediyoruz. Onu da yine hatırlatalım saat 10'da başlatacağız. 12 Mayıs Perşembe günü.
+
+1095
+02:45:06,479 --> 02:45:15,700
+Şimdi biz nerede kaldık? 233, 233 ve şu örnekte yaptık. Her şey 235'e kadar.
+
+1096
+02:45:26,451 --> 02:45:26,931
+Evet, buydu.
+
+1097
+02:45:27,111 --> 02:45:27,912
+Baya, seksuval, konchala.
+
+1098
+02:45:35,252 --> 02:45:37,412
+Yoksa da ben şu diğer örnekleri bir kuruşalım bakalım.
+
+1099
+02:45:37,512 --> 02:45:40,051
+Açma neler yapmışım zamanında, vaktiyle falan.
+
+1100
+02:45:41,891 --> 02:45:43,391
+Şunları da burada bir kapatayım.
+
+1101
+02:45:43,512 --> 02:45:44,152
+Sonra nasılsın?
+
+1102
+02:45:56,691 --> 02:45:59,691
+Çöğada, nevam, nevam, nevam, bas.
+
+1103
+02:46:03,252 --> 02:46:11,292
+Yani işte evet, komutların tam üretimleşmesi, o sırada olmak zorunda değil falan filan filan. Biraz ekstra bir şeyler yazmışım. Burada çok bir şey yok.
+
+1104
+02:46:12,351 --> 02:46:18,632
+Bundan sonra fixpool, fixpool, işte 4-5 neyse filan filan. Bu neymiş?
+
+1105
+02:46:19,351 --> 02:46:27,211
+Without tab. Haa! Evet, etresel bir şey yapmışım. Tamam, pek etresi yok. Göstereceğiz. Pool zaten bu.
+
+1106
+02:46:30,036 --> 02:46:40,175
+Tamam, evet. Şimdi bak, entesanlı şey yapmışım. İlk örneğimize bakalım. Burada her ne kadar süre tutamıyorduk yani. O yüzden şu süre tutma şeylerini geri alayım.
+
+1107
+02:46:44,180 --> 02:46:44,600
+Şimdi.
+
+1108
+02:46:45,072 --> 02:46:56,391
+Burada bir tane thread nesnesi kullanıp da her bir şey mi, işte runnable nesne mi, o thread nesnesini sonra start ettim ya, işte öyle bir kullanım vardı.
+
+1109
+02:46:56,871 --> 02:47:03,811
+Her seferinde o thread'i start ettikten sonra, daha sonra aynı işaretçiye farklı bir runnable verip onu da start edebiliyorum.
+
+1110
+02:47:03,811 --> 02:47:12,572
+Yani bu da her ne kadar her bir thread'im için, her bir sakınçı benim için ortak thread nesnesi kullandım, bunun hiçbir sakıncası olmadı.
+
+1111
+02:47:13,072 --> 02:47:18,172
+Bir ötikenin üstünü ezmedi falan bir sıkıntı olmadan örneklemi yapabildim.
+
+1112
+02:47:18,691 --> 02:47:23,592
+İlla ki bunu burada bu şekilde etret geçişi nesnesini kullanmak zorunda değilim.
+
+1113
+02:47:24,231 --> 02:47:28,432
+O yüzden şurada bir daha template diye bir şey yapmışım.
+
+1114
+02:47:28,792 --> 02:47:33,551
+Burada dikkat ederseniz kullanmadım ama bir dolu casting yaptım.
+
+1115
+02:47:34,112 --> 02:47:36,272
+Nasıl yaptığımı göstereyim şimdi.
+
+1116
+02:47:38,388 --> 02:47:43,208
+Thread nesnesi oluşturuyorum ama o nesneyi bir işaretçi atamadan kullanıyorum.
+
+1117
+02:47:43,587 --> 02:47:46,448
+Bakın, new thread, yeni bir thread nesnesi oluşturuyorum.
+
+1118
+02:47:46,548 --> 02:47:49,308
+Constructor'ına ne veriyorum? New Sucker fan veriyorum.
+
+1119
+02:47:49,727 --> 02:47:52,788
+O yüzden şu parantez, bakın eşyeneği şurada.
+
+1120
+02:47:53,128 --> 02:47:54,508
+Bu nesneyi oluşturdum.
+
+1121
+02:47:54,927 --> 02:47:59,028
+Oluşturma oluşturmaz bir işaretçi atamadan nokta start dedim, kullandım.
+
+1122
+02:47:59,700 --> 02:48:13,680
+Tamam mı? Yani şu noktada, beşinci satırda bir thread nesnesi oluştu ve start edilmiş oldu. Altıncı satırda bambaşka bir thread nesnesi oluşturuldu, start edilmiş oldu.
+
+1123
+02:48:13,680 --> 02:48:19,680
+Yani aslında bir öncekiyle, yani şunun ile...
+
+1124
+02:48:20,691 --> 02:48:48,631
+Ötekinin arasındaki tek fark, bunda aslında aynı thread işaretçisi ama bunlar yine farklı thread mesleği. Çünkü her bir satırda, işte yani 6. satırda, 8. satırda, 10. satırda, 12. satırda aslında new constructlılık tekrar tekrar çalıştığı için bellekle de aslında farklı farklı yerlerde oluşuyor aslında bu thread mesleği. O yüzden bunlar ayrı ayrı stat edildiğinde bir problem olmuyor. Ayrı ayrı çalışıyorlar hepsi.
+
+1125
+02:48:48,691 --> 02:49:00,031
+Şurada da aynı şey var aslında. Yine ortaya çıkartılmış tamamen aynı ama işte artistlik yaptık diyelim işte.
+
+1126
+02:49:03,531 --> 02:49:12,431
+Başka da bir şey yok. Daha sonra bu haftaya ne göreceğiz? Bir ona bakalım.
+
+1127
+02:49:14,835 --> 02:49:40,636
+exception konularını ve risk condition, nasıl engellerini, trace safe olayları falan onları görüyor ve örneğini yapıyor olacağız. Peki, bugünlük bu kadar arkadaşlar. Katılan arkadaşlara teşekkür ederim. Soluz olanlara daha çok teşekkür ederim. Haftaya görüşmek üzere inşallah. Önce paylaşmak durduralım. Geçmiş bayramınız kutlu olsun. Arasmatik.
+
+1128
+02:49:41,716 --> 02:49:43,736
+Sizlerin de hocam. İyi günler. Görüşmek üzere.
+
+1129
+02:49:43,956 --> 02:49:44,736
+Çok teşekkür ederim.
