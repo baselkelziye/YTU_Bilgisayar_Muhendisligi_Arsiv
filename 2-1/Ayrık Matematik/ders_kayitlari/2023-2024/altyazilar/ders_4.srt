@@ -1,0 +1,4127 @@
+1
+00:00:22,292 --> 00:00:24,292
+[öğrenci] ses geliyor mu buraya?
+
+2
+00:00:27,292 --> 00:00:28,292
+Geliyor hocam ses.
+
+3
+00:00:29,292 --> 00:00:30,124
+Teşekkür ederim.
+
+4
+00:00:41,524 --> 00:00:43,984
+Biz recursionlara kadar gelmiştik.
+
+5
+00:00:46,564 --> 00:00:49,283
+Gitaratif algoritmalar analizini tamamladık.
+
+6
+00:00:50,484 --> 00:00:54,084
+Burada söyledim, size de söyleyeyim online'daki arkadaşlara.
+
+7
+00:00:54,084 --> 00:00:56,164
+Genel yapılan hatalarla alakalı
+
+8
+00:00:57,524 --> 00:01:03,844
+aradan sonra dersin ikinci kısmında veya üçüncü kısmında bir hatırlatma, bir açıklama yaparız.
+
+9
+00:01:08,371 --> 00:01:09,371
+Vein komple!
+
+10
+00:06:32,915 --> 00:06:34,096
+Öyle bir yansıtalım da.
+
+11
+00:07:24,884 --> 00:07:50,484
+Rahat görünüyor değil mi? Bir engel yoksa. Tamam. Kameramı kapatacağım arkadaşlar. Burada wireless'ten bağlanıyoruz. Artık testte sorun yoksa, görüntüde de sorun yoksa, günlük böyle olsun. Evet, konuşmuyoruz. Şimdi iteratif algoritmaların analizine baktık. Sırada meteorogenler var.
+
+12
+00:08:04,627 --> 00:08:06,048
+Teşekkür ederim. İçim yoktu.
+
+13
+00:08:14,067 --> 00:08:15,067
+ve çöpun değil.
+
+14
+00:08:15,067 --> 00:08:16,067
+Küt, küt, küt.
+
+15
+00:08:32,083 --> 00:08:38,203
+Özgün eleveri algoritmalar, yani recursion olan algoritmalar birazcık farklı analiz ediliyor.
+
+16
+00:08:39,083 --> 00:08:40,823
+Derste bunlara bakacağız.
+
+17
+00:08:41,563 --> 00:08:44,303
+Bir kere bizim bir girdi boyutumuz yine olacak.
+
+18
+00:08:45,023 --> 00:08:47,223
+Yani bir f fonksiyonumuz var.
+
+19
+00:08:47,323 --> 00:08:49,763
+Buraya bir n değişkenlik gelecek.
+
+20
+00:08:49,763 --> 00:08:56,863
+Ama bu fonksiyonun çalışması n'e göre ekstra fonksiyon çağrılarını içerecek.
+
+21
+00:08:57,963 --> 00:08:58,503
+Burada yine
+
+22
+00:08:59,059 --> 00:09:04,739
+Analiz yaparken dikkat edelim şey, temel operasyon analizini kesin yapmamız gerekiyor.
+
+23
+00:09:04,739 --> 00:09:10,179
+Detaylı analizi sınavda sormuştuk. Yani iteratif bir algoritmada detaylı analiz rahatlıkla yapılır.
+
+24
+00:09:10,179 --> 00:09:16,579
+Burada detaylı analizden ziyade temel operasyona yoğunlaşmak daha rahat bir analiz yapmayı mümkün kılar.
+
+25
+00:09:16,579 --> 00:09:24,491
+Burada da şuna bakacağız. İşte fonksiyonu tanımladınız. Void bir fonksiyon olsun. Böyle açıldı.
+
+26
+00:09:25,299 --> 00:09:49,131
+Program bir şekilde bir yere kadar akacak. Bunun bir base case'i vardır, temel durumu vardır hatırlarsanız. Yoksa sonsuza kadar gider Recurrent algoritmaları. Bu base durumun karmaşıklığını önce hesaplıyorsunuz. Buna temel operasyon analizi diyoruz. Bu bir kere bile lazım. Sonra bir de recurrent durumların eşitliğini yazacağız. Mesela şurada bir fn...
+
+27
+00:09:49,652 --> 00:09:55,892
+bölü 2 gibi bir şey çağıracaksınız belki. Bunu hesaplayıp daha sonra çözüme doğru ilerleyeceğiz.
+
+28
+00:09:56,892 --> 00:10:02,711
+Temel işlemin gerçekleştirme sayısının aynı boyuttaki farklı girişlere göre değişiklik gösterip göstermediğini kontrol ediyorsunuz.
+
+29
+00:10:02,732 --> 00:10:09,392
+Yani ben burada n getirdiğimde aynı bir iteratif algoritma analizi yapar gibi şu kısımda analiz yapacağım.
+
+30
+00:10:10,092 --> 00:10:15,132
+Burada ne olabilir? O1'lik bir işlem olabilir, n'lik bir işlem olabilir, log n olabilir, n kare olabilir.
+
+31
+00:10:15,827 --> 00:10:20,827
+Ne kadar karmaşık olsa algoritma o kadar kötüleşiyor bu rekürik orjunda da.
+
+32
+00:10:20,827 --> 00:10:25,827
+Önce burayı tespit ediyoruz, daha sonra şunun üzerinden bu tespiti devam etsiz.
+
+33
+00:10:27,827 --> 00:10:34,827
+Temel işlemin kaç kez yürütüldüğünü ifade eden uygun bir başlangıç koşulları ve öz dinlenme bağıntısı oluşturuyoruz.
+
+34
+00:10:34,827 --> 00:10:38,827
+Bakın burada tn'i şu şekilde ifade edebiliriz.
+
+35
+00:10:38,827 --> 00:10:41,675
+Örneğin tn diyelim buna.
+
+36
+00:10:42,035 --> 00:10:45,955
+Şu basic kısmın karmaşıklığı kabul edelim ki örnek n olsun.
+
+37
+00:10:46,995 --> 00:10:52,255
+Artı diyeceğiz. Bu n'e ait karmaşıklık bu. Artı t.
+
+38
+00:10:56,659 --> 00:11:07,159
+Daha ne olabilir? Birazdan farklı örnekler göstereceğim. Ama n olmayacak illa ki. n'den daha küçük bir değer olacak. Problem çünkü ne oluyor? Burada küçüle küçüle çözüme ulaşılmaya sağlıyor.
+
+39
+00:11:07,159 --> 00:11:23,159
+Peki burada durum ne? Şu bir bilinmeyen, biz zaten tn arıyoruz. Bir de şu başka bilinmeyen. İki bilinmeyeni bir şekilde çözebilmemiz için ne yapmam gerekiyor? Burada bir base, base diyorum, base değil. Base case diyelim buna.
+
+40
+00:11:25,011 --> 00:11:34,151
+tanımlamamızı bir ifade etmemiz gerekiyor. Örneğin n eşittir 1 olduğunda, 0 olduğunda, 2 olduğunda artık problem bize ne söylüyorsa, diyeceğiz ki t0 için örneğin 5 olsun.
+
+41
+00:11:35,171 --> 00:11:40,731
+Bu n küçüle küçüle gidecek ya, bir şekilde t0'a doğru gelecek veya t1'e doğru gelecek.
+
+42
+00:11:41,331 --> 00:11:49,511
+Şöyle geldiği noktada, bu durum sizin elinizde olduğu için aradaki ilişkiyi doğrudan çıkarıp iki bilinmeyenli denklemi çözmüş olacaksınız.
+
+43
+00:11:51,700 --> 00:12:02,100
+Başka da bir şey yok. Çözdüğünüz bu sonucu, son maddede bize ne söylüyor? Bir tn elde ettiğiniz artık, n'e bağlı bir fonksiyonunuz varsa, bu tn'i en uygun asimptotik notasyon var.
+
+44
+00:12:02,980 --> 00:12:13,840
+Şeyde de söylediğim gibi, tn elemandır, işte big theta, bilmem ne bilmem ne, veya big omega, bilmem ne bilmem ne, veya big o, bilmem ne bilmem ne deyip işi bitiriyoruz.
+
+45
+00:12:14,840 --> 00:12:18,560
+Eşittir demiyoruz, big o diye bir şey böyle yazmıyoruz.
+
+46
+00:12:19,220 --> 00:12:22,539
+Bunlar yanlış şeyler. Devam edelim.
+
+47
+00:12:22,539 --> 00:12:35,100
+Şimdi bu bağıntıların çözümünde birkaç farklı yöntem var. Bu yöntemler elde edilen bağıntının türüne göre hangisi kolaysa onu kullanmaya yönelik yöntemler.
+
+48
+00:12:35,100 --> 00:12:45,620
+Bazı durumlarda birini kullanıyoruz, bazı durumlarda birini kullanıyoruz. Çünkü bu ifadelerin özetine baktığımızda genellikle eksponansiyel davranışlar görürüz.
+
+49
+00:12:45,844 --> 00:12:57,284
+Cuma günü inşallah ben diferansiyel dersinize geleceğim. Orada da benzer bir durum var. Bu nasıl bir farklı şeyse, hani fark işlemi ise buna Difference Equation diyoruz. Orada da diferansiyel.
+
+50
+00:12:57,284 --> 00:13:02,884
+Bu ayrık zamanlı bir durum, o sürekli zamanlı durum. Orada da bir eksponansiyel davranış göreceğiz.
+
+51
+00:13:02,884 --> 00:13:11,444
+Eksponansiyel davranış demek ağaç düşünün, ağaçlı yapıları düşünün. Öyle bir davranış demek. Dolayısıyla çözümü zaman zaman zor.
+
+52
+00:13:11,892 --> 00:13:18,451
+Ki bunun hesaplayıcıları bile bir yerde belli varsayımlara göre yaklaşık çözümletiyor.
+
+53
+00:13:18,451 --> 00:13:20,292
+Sayısal hamiz yöntemleri yani.
+
+54
+00:13:20,292 --> 00:13:30,451
+Böyle olmasın diye bazı durumlar için backward substitution, bazı durumlar için forward substitution, recursion tree, master teorem, karakteristik denklem yöntemi gibi şeyler.
+
+55
+00:13:30,451 --> 00:13:37,332
+En genel hali şu ama bu genel hali bile kendi içinde 5-6 başlığa ayrılıyor.
+
+56
+00:13:37,344 --> 00:13:41,704
+O 5-6 başlıkta kesin çözümü bulamıyor, bir yerde yaklaşık çözüme süzgürtüyor.
+
+57
+00:13:41,704 --> 00:13:50,304
+Yani çünkü şey var burada, problemin karmaşıklığı çok fazlaysa, o problemin algoritmasının karmaşıklığı da çok fazla olacak.
+
+58
+00:13:50,304 --> 00:13:54,264
+Haliyle onun recursive bağıntısı da fazla olacak, karmaşık olacak.
+
+59
+00:13:54,264 --> 00:13:58,264
+Onu çözmek de dolayısıyla zor olacak. Böyle bir silsile durum var.
+
+60
+00:13:59,064 --> 00:14:02,864
+Şimdi önce şunu yapalım, bir başka şeye yazayım.
+
+61
+00:14:04,436 --> 00:14:09,316
+Burada nelerle biz alanımızda karşılaşabiliriz ondan ilerleyelim.
+
+62
+00:15:05,460 --> 00:15:08,019
+Fakri serun ve abansı, yorulun.
+
+63
+00:15:21,716 --> 00:15:22,435
+Şöyle diyelim.
+
+64
+00:15:31,604 --> 00:15:56,044
+Herkes görüyor herhalde. Birinci durum şöyle bir şey olabilir. Void diyelim. F1 diyorum ve buraya en ne bağlı herhangi bir veri geliyor. Bu işlemler içerisinde temel herhangi bir döngü içermeyen, şurada bazı işlemler yapıyorsunuz. Burada if yazabilirsiniz, başka şeyler yazabilirsiniz. Programlama gördüğünüz için bunlar size yabancı değil.
+
+65
+00:15:56,884 --> 00:16:14,004
+Şurada bir yerde f n-1 diye bir şey çağırıyorsunuz. Hatta eksi 1 demeyelim, n-a diyelim. Aşağısında da bir şeylerin olması önemli değil. Ne var burada arkadaşlar? T n, t1n diyelim hatta buna.
+
+66
+00:16:19,827 --> 00:16:27,307
+Şuraya gelene kadar ki işlemler herhangi bir döngü içermiyor. Yani toplama, çıkarma, çarpma, belki input output temel işler vardır.
+
+67
+00:16:28,187 --> 00:16:32,407
+Bir birimlik bir şey kabul edebiliriz şurayı. Yani burası O1 karmaşıklıktır.
+
+68
+00:16:33,307 --> 00:16:44,307
+Sonra bu kendi içerisinden T, N-A diye çağırıyorsa, yani N'in maliyetine T1N dersek, N-A'nın maliyetine T1N-A olacak.
+
+69
+00:16:44,307 --> 00:16:47,067
+Bunu bilmiyoruz. Bu şekilde söyleyeceğiz.
+
+70
+00:16:47,731 --> 00:17:06,231
+Örneğin t0 içinde veya t1 de diyebiliriz. Burada spesifik bir problem üzerinden söylesek t0, t1 denebilir. Hatta buna tconstant diyelim. Tconstant'ın maliyeti de işte l olsun. Siz tn'i çözmek için tn-a'yı önce çözeceksiniz.
+
+71
+00:17:14,932 --> 00:17:16,372
+artı bir dedik.
+
+72
+00:17:17,251 --> 00:17:20,451
+n-a koyduğumuzda ne gelir buradan?
+
+73
+00:17:20,451 --> 00:17:23,012
+n-2a değil mi?
+
+74
+00:17:23,892 --> 00:17:25,092
+n-2a
+
+75
+00:17:25,092 --> 00:17:31,412
+n-a'nın kendisinden gelen bir bir var, bir de orijinalden gelen bir bir var.
+
+76
+00:17:31,412 --> 00:17:35,092
+Çünkü n tane eleman için bir tane işlem gerçekleşiyor.
+
+77
+00:17:35,092 --> 00:17:38,532
+n-a eleman için de bir tane işlem gerçekleşiyor.
+
+78
+00:17:38,532 --> 00:17:40,932
+Bu böyle devam ettiğinde peki nasıl olacak?
+
+79
+00:17:40,932 --> 00:17:42,372
+Mesela bir daha ilerleyebiliriz.
+
+80
+00:17:43,028 --> 00:18:03,108
+n yerine n-a koyduk. n-a yerine bu sefer n-a koyarsak n-2a gibi bu böyle t eşittir. n- k çarpı 1 gibi böyle devam edip gidiyor.
+
+81
+00:18:03,108 --> 00:18:08,488
+Ta ki nereye kadar? Şu c'ye ulaşana kadar. Şimdilik şu çözümlerle ilgilenmeyelim. Hatta sileyim burayı.
+
+82
+00:18:08,915 --> 00:18:12,115
+Bakın, bu kodun denklemini bu şekilde çıkartabiliyoruz.
+
+83
+00:18:15,604 --> 00:18:39,604
+Tamam mı? Şurası 1. Peki başka ne olabilir? Yine void f2 diyeyim. n'e bağlı bir şey gelecek. Burada bir for döngüsü yazdığınızı düşünün. 1'den n'e kadar. Sonra burada yine bir fn-a olduğunu düşünün. Bunu nasıl söyleyeceğiz? t2 eşittir. Bir kere şu operasyona gelene kadar
+
+84
+00:18:40,596 --> 00:18:49,675
+n'lik bir maliyet var burada. n'e bağlı bir şey. Artı tn-a, t2n-a gibi bir şey göreceğiz.
+
+85
+00:18:50,115 --> 00:18:54,255
+Yine bunun temel durumunda size problemi kendisi söyleyecek.
+
+86
+00:18:55,036 --> 00:18:57,816
+İşte t1c diyelim, şuna da t2c diyelim.
+
+87
+00:18:59,195 --> 00:19:00,175
+L gibi bir sayı olacak.
+
+88
+00:19:01,536 --> 00:19:04,275
+Birazdan göstereceğimiz çözüm yöntemleri bunu çözebilirsiniz.
+
+89
+00:19:05,215 --> 00:19:07,695
+Şurada iki tane for olsaydı iç içe,
+
+90
+00:19:08,819 --> 00:19:23,819
+Temel maliyetimiz n² olacak. Yine t2 diye çağıracağız. Şimdi her zaman böyle birer birer ikişer üçer azalmaz. Bir de bazen bölüne bölüne gider. Onu da şöyle yapalım void.
+
+91
+00:19:31,476 --> 00:19:58,695
+şeyin sonuna gelmişiz neyse. Örneğin, for 1'den n'e kadar diyorum. F, şuna da F2 diyelim de. F3, n bölü A diyeyim burada da. n-a değil de n bölü A. A dediğimiz tam sayı. Yani yarılanarak, 3'e bölünerek, 4'e bölünerek artık nasıl gidiyorsa şey. Peki burada ne yapacağız?
+
+92
+00:19:59,284 --> 00:20:01,284
+tüç şuraya yukarı yazalım.
+
+93
+00:20:02,484 --> 00:20:03,284
+n eşittir.
+
+94
+00:20:03,784 --> 00:20:10,284
+Yine bir n maliyeti var. Artı tüç n bölü a kadar bir maliyet.
+
+95
+00:20:10,284 --> 00:20:18,284
+Bunun yine base durumunu yazmak zorundayız. İşte tüç c eşittir, l gibi bir durum olacak.
+
+96
+00:20:19,284 --> 00:20:21,284
+Bu da diğer opsiyon.
+
+97
+00:20:22,284 --> 00:20:24,284
+Mesela şu neye benziyor?
+
+98
+00:20:24,852 --> 00:20:29,211
+İşte bir binary search algoritmasına benziyor. Gerçi tam binary search olmaz da.
+
+99
+00:20:30,731 --> 00:20:36,892
+Yani şurayı mesela for kaldırırsak, burada temel işlemler bir birimlik işlemi yapacağız desek, o binary search'e benzer.
+
+100
+00:20:37,392 --> 00:20:40,472
+Recursive binary search tabii ki, ondan bahsediyoruz.
+
+101
+00:20:40,972 --> 00:20:43,792
+Veya merge sort'un buna benzer işlemleri var.
+
+102
+00:20:44,052 --> 00:20:47,132
+Orada da analog-end karmaşıklık çıkıyor.
+
+103
+00:20:47,372 --> 00:20:48,144
+Bunları...
+
+104
+00:20:48,144 --> 00:20:53,204
+Yani değiştirebilirsiniz. Yani şuraya iki tane for yazarsanız n kare olur, üç tane for yazın n küp olur.
+
+105
+00:20:53,943 --> 00:21:02,784
+Böyle bir albörütme yazarsanız yazarsanız ki iki üzere enlik bir karmaşıklık olur temel durumda. Daha sonra aşağıda tekrar parçalama yapabilirsiniz. Böyle değişirken olabilir.
+
+106
+00:21:03,784 --> 00:21:09,563
+Şimdi bir de şunu görebiliriz. Bu rekürsif çağrılar bir tane olmak zorunda değil.
+
+107
+00:21:12,624 --> 00:21:13,744
+Void diyelim.
+
+108
+00:21:14,900 --> 00:21:16,740
+e4, e4 diyelim, şey f4 diyelim.
+
+109
+00:21:21,748 --> 00:21:27,148
+bir şeyler yaptınız. Kabul edelim ki buranın maliyeti n olsun veya n kare olsun. Hatta n kare diye problem değil.
+
+110
+00:21:27,988 --> 00:21:35,748
+F4'ü n-a bir defa çağırıyorsunuz. Sonra bir defa daha çağırıyorsunuz.
+
+111
+00:21:36,728 --> 00:21:41,748
+n-a arkadaşlar. Bu ne demek? Burada da bağıntı şöyle olacak.
+
+112
+00:21:41,748 --> 00:21:47,907
+T4, şimdi n kare bir maliyet var. Artı 2 çarpı
+
+113
+00:21:49,460 --> 00:21:58,880
+4, n-a şeklinde bir şey söyleyeceksiniz. Çünkü iki defa çağırıyoruz. Bunun maliyeti artı bunun maliyeti diye söylemek gerekiyor.
+
+114
+00:21:59,700 --> 00:22:09,820
+Veya şöyle söyleyelim, void f5 diyelim n. Burada bir birimlik bir algoritma koşturduğunuzu düşünün.
+
+115
+00:22:17,940 --> 00:22:28,539
+n bölü a olarak bir daha çağırın. f5'i n bölü a olarak bir daha çağırın. İsterseniz k defa istediğiniz kadar çağırın. Burada ne olacak? t5 diyelim şuraya.
+
+116
+00:22:30,659 --> 00:22:44,099
+Bir birim maliyet şurada temelde var. Artı, 3 defa çağırmış kabul edelim. 3 çarpı t5 n bölü a kadar. Örneğin n bölü 2, n bölü 3 şeklinde.
+
+117
+00:22:46,067 --> 00:23:02,307
+İki tane daha farklı bir şey kaldı. Onlar biraz daha zor. Bakın şunlar, bunların bir kısmı Backboard Substitution ile çözülebilir, bir kısmı Recurring Tree ile çözülebilir, bir kısmı Master Teorem var. Onunla çok kolay çözülebilen şeyler. Örneğin şu bir zor görünüyor.
+
+118
+00:23:02,771 --> 00:23:07,871
+Ama şu özellikle, şu çok zor görünüyor belki. Bu Master Teorem diye bir teoremimiz var, göreceğiz.
+
+119
+00:23:08,351 --> 00:23:13,971
+Bu olmak çok rahat çözülebilir. Şu biraz daha belki zorlayıcı olabilir ama onda da kolay yöntemler var.
+
+120
+00:23:15,031 --> 00:23:15,771
+En zoru şu.
+
+121
+00:23:17,371 --> 00:23:20,172
+Void T6 diyeyim.
+
+122
+00:23:22,552 --> 00:23:24,751
+Burada bir n küplük mesela bir algoritma olsun.
+
+123
+00:23:26,692 --> 00:23:28,511
+Bir T n-A'yı çağırın.
+
+124
+00:23:29,907 --> 00:23:34,748
+Bir t n-b'yi çağırın, t n-c'yi çağırın.
+
+125
+00:23:36,147 --> 00:23:38,728
+a, b ve c bunlar birbirinden farklı sayılar.
+
+126
+00:23:39,307 --> 00:23:46,607
+Şimdi n-a ve n-b, a yerine mesela 1 versem, b yerine 2 versem, bu hangi problemin çözünürlüğüne benzer?
+
+127
+00:23:46,807 --> 00:23:48,567
+c'yi de 0 verelim, yani c olmasın.
+
+128
+00:23:50,007 --> 00:23:52,748
+Şurayı, hatta c'yi c'ye verelim yani, pardon.
+
+129
+00:23:53,907 --> 00:23:58,067
+Hangi problemin çözümüne benzer olur? Şunun olmadığını kabul edelim.
+
+130
+00:23:59,027 --> 00:24:00,027
+Ne?
+
+131
+00:24:00,027 --> 00:24:02,147
+Bu, evet, Fibonacci değil mi?
+
+132
+00:24:02,147 --> 00:24:07,627
+F n-1 artı f n-2 şeklinde çağırlıyor ya, şimdi bu ona benziyor.
+
+133
+00:24:07,627 --> 00:24:18,107
+Onun birisi n-1 öbürü n-2 olduğu için burada karmaşılık analizi şuradakiler gibi böyle iki tane özdeş bilinmeyen yok. Bu sefer bilinmeyen sayısı üç tane oldu.
+
+134
+00:24:18,740 --> 00:24:22,059
+tn'i bilmiyoruz, n-1'i bilmiyoruz, n-2'yi bilmiyoruz.
+
+135
+00:24:22,779 --> 00:24:28,139
+Bu biraz daha şey, onun için karakteristik denklem dediğimiz bir şey var, onu uygulayacağız, o yöntemi uygulayacağız.
+
+136
+00:24:28,680 --> 00:24:31,019
+O da dediğim gibi yaklaşık bir çözüm üretecek bize.
+
+137
+00:24:32,139 --> 00:24:32,660
+Söyleyelim.
+
+138
+00:24:33,660 --> 00:24:40,500
+3 olur, 4 olur, işte başka bu tarz zor problemler var, onlarla değiştirilebilir, içeriği farklılaştırılabilir.
+
+139
+00:24:42,067 --> 00:24:51,867
+Önemli olan size kodu verince aslında, hani bilgisayar mühendisinin burada yapacağı şey, kod verince bu kodu nasıl analiz edeceğinizi buradaki örneklere bakarak anlayabilmek.
+
+140
+00:24:52,527 --> 00:25:02,827
+Bir recursion part var, recursion part'a gelene kadar base part var. O base part'ın maliyeti artı, kendi içinden tekrar eden kısmın maliyeti diye düşünebiliriz.
+
+141
+00:25:02,987 --> 00:25:04,127
+Burada anlaşılmayan bir şey var mı?
+
+142
+00:25:07,188 --> 00:25:07,967
+Devam edelim.
+
+143
+00:25:09,779 --> 00:25:27,779
+Bu dersin daha çok konusu size verilen rekürsif bir bağıntının çözümüne yönelik. Bir de basit algoritmaların rekürsif bağıntısını oluşturmaya yönelik. Bunun daha kompleks olanı da algoritma analizi ve veri yapıları dersinde gelecek dönemler göreceksiniz.
+
+144
+00:25:33,011 --> 00:25:44,731
+Aslında şu ikisi birazcık pattern görmeye, örüntüyü görmeye dayalı. Belli bir şekilde geriye doğru gidiyorsunuz, geriye doğru giderken karşında bir düzen çıkıyor. O düzene göre en genel şeklinde yazıyorsunuz ve çözümü yapıyorsunuz.
+
+145
+00:25:45,652 --> 00:25:55,271
+Ağaç modeli, master teorem genellikle bölünen algoritmalarda, yani n bölü 2, n bölü 3 gibi bölünen algoritmalarda kullanılıyor. Aslında ağacı şeyde de, n-1, n-2'de de kullanabiliyoruz.
+
+146
+00:25:55,604 --> 00:26:06,903
+Master teorem genellikle yine hep n bölü a'larda kullanılacak ama özdeş çağrılar olacak. Yani bir n bölü a, bir n bölü b olmayacak. Hep n bölü a'lar olacak, birazdan karşımıza gelir.
+
+147
+00:26:07,204 --> 00:26:11,504
+Karakteristik denklem yöntemi de bunların hepsinin en genel hali. Orada bakacağız.
+
+148
+00:26:12,244 --> 00:26:21,964
+Şimdi Forward Substitution diyor ki sizin böyle bir algoritmadan elde ettiğiniz Recurrence Relation'ınız var ve başlangıç koşulunda t1 eşittir 2 diye vermiş.
+
+149
+00:26:22,612 --> 00:26:27,132
+Şu an için bir kod üzerinden bağıntı çıkarmıyoruz. Çıkmış bağıntıyı çözmeye çalışıyoruz.
+
+150
+00:26:28,052 --> 00:26:30,971
+Şimdi diyorum ki t1, 2 ise t1'den t2'ye gideyim.
+
+151
+00:26:31,872 --> 00:26:34,991
+Çünkü t2 en eşittir 2 verdiğimde t1 artı 1 olacak.
+
+152
+00:26:35,271 --> 00:26:36,552
+t1 artı 1 yazdığında 3.
+
+153
+00:26:37,332 --> 00:26:42,872
+O zaman t2'den t3'e, t3'den t4'e giderek şöyle birazcık açıyoruz.
+
+154
+00:26:43,672 --> 00:26:45,432
+Şimdi burada baktığımızda şöyle bir şey görüyoruz.
+
+155
+00:26:51,028 --> 00:27:02,748
+n'in değeri artı bir şeklinde hep ilerliyor. Dolayısıyla bu düzen n artı bire göre değişebilen, n artı bire yaklaşan bir fonksiyondur diyebiliriz.
+
+156
+00:27:02,868 --> 00:27:08,588
+Ayrık zamanlı bir şey diyebiliriz. Böyle bir tahminle şey yapıyoruz. Daha sonra bu tahmini isterseniz bir çek yapabilirsiniz.
+
+157
+00:27:09,408 --> 00:27:14,448
+İşte n değerini yerine koyduğunuzda acaba t n eşittir, t n eksi bir artı bir midir?
+
+158
+00:27:15,059 --> 00:27:21,059
+Şunun yerine n-1 koyduğunuzda, n-1 koyduğunuzda, oraya da n-1'i eklediğinizde n-1 buluyor musunuz? Hakikaten buluyorsunuz.
+
+159
+00:27:21,059 --> 00:27:31,059
+Veya t1 hakikaten 2'yi verecek mi? t1'i seçtiğinde sonuç 2 gelecek. Buna bakıyorsunuz ve bu şekilde çözüme ulaşıyorsunuz.
+
+160
+00:27:31,059 --> 00:27:37,059
+Bakın bu yaptığımız iş, biraz önce Banu hocayla da konuşuyorduk, arkadaşlar da karmaşa oluyor diyor.
+
+161
+00:27:38,816 --> 00:27:48,196
+kullanarak algoritmanın üreteceği sonuç, Fibonacci değerin sonucunu üretmek değil. Nedir? Karmaşıklığının fonksiyon olarak bulunması.
+
+162
+00:27:49,236 --> 00:28:02,936
+Bazı durumlarda, örneğin Fibonacci'nin bikerajının bağıntısını yazarsınız, tn eşittir, tn-1 artı tn-2, burada t0 eşittir, 0'dır, t1 eşittir, 1'dir.
+
+163
+00:28:03,892 --> 00:28:23,152
+Buradan yola çıkarak 2, 3, 4, 5'i bulabilirsin. Değer tahmininde bulabilirsin. Bu olur. Ama bizim amacımız burada, bu algoritmayı ifade eden kodun karmaşıklığını bulmak. Bu karmaşıklığın sonucunda da bir sayı bulmak gibi bir derdimiz yok. N'e bağlı bir şey bulacağız. N², N³, Nlogan artık neyse.
+
+164
+00:28:23,731 --> 00:28:29,152
+Yani biz her zaman bunu özellikle bu derslerimizde karmaşıklık analizi için yapıyoruz.
+
+165
+00:28:29,488 --> 00:28:36,488
+Bazı durumlarda öyle şey gelir ki, o karmaşılık hız analizi yaptığınız denklemde n'in değerini yerine koyarsınız.
+
+166
+00:28:36,488 --> 00:28:44,488
+Sizin bulunacak şey o n. Fibonacci sayısı veya o algoritmanın n. iterasyonda üreteceği sonucu da elde etmek mümkün olabilir.
+
+167
+00:28:44,488 --> 00:28:48,488
+Ama derdiniz aslında bu değil, onu da söyleyelim.
+
+168
+00:28:55,796 --> 00:29:23,236
+Recursive olanını kodlasak nasıl bir şey bulunabilir? 1'den n'e kadar olan sayıların toplamı. Şimdi ne yapacaksınız? Bir fonksiyon yazdınız, işte n dediniz. Şurada şey yazarsınız, if n eşittir eşittir 0 ise return 0 döndür dersiniz. Değil mi? Veya 1 ise de denebilir, işte n'i 1'den de başlatılabilirsiniz. Problem değil. Değilse zaten buraya gelecek.
+
+169
+00:29:23,763 --> 00:29:49,903
+f'i tekrar çağır, n-1 olarak çağır ama n'i de buna ekle. En son şurada da return diyelim. Şöyle bir kod. n'e n-1 ekleyecek, ona diğerine ekleyecek. Peki bu kodu analiz ettiğinizde nasıl bir bağıntı çıkar? Şuraya kadar bakıyorum. Burada bir tane karşılaştırma var, bir tane return var. Yani iki birimlik işlem. Bu o1 olarak düşündüğümüzde big o1'dir değil mi?
+
+170
+00:29:50,291 --> 00:30:01,291
+O zaman bunun t'ni şöyle yazılabilir. 1 artı, algoritma kendisini nasıl çağırıyor? t n-1, birer birer azalarak çağırıyor. Böyle bir bağıntı ortaya çıkıyor.
+
+171
+00:30:01,291 --> 00:30:14,291
+Bu karmaşıklık bağıntısı. Şurada da birden n'e kadar olan sayıları toplayıp bu toplamın sonucunu üreten bir Reconciliation Transformation çıkartmış.
+
+172
+00:30:14,291 --> 00:30:17,131
+Onda da ne yapacağız arkadaşlar? Aslında şurası.
+
+173
+00:30:17,364 --> 00:30:43,144
+n artı f n eksi bir. Şu şekilde söylenemdir. Buraya değer verdiğinizde, 1'den 5'e kadar olan sayıların toplamını bulabilirsiniz. Şuna baktığınızda buradan karmaşıklığı çıkartabilirsiniz. Şimdi bunu şöyle forward substitution ile çözeyim, çözmeye çalışayım. Biraz önceki çok da aynısı. Elimizde bir kere ne var? f başlangıç koşulu olması lazım.
+
+174
+00:30:44,372 --> 00:30:52,372
+t'ye sıfır verdiğimizde sonuç sıfır gelecek. Değil mi? Ama karmaşıklık olarak baktığımızda, gerçi buraya bir birimle diyebiliriz.
+
+175
+00:30:52,372 --> 00:31:00,372
+Hani en azından bir defa karşılaştırma işlemi yapılıyor. t sıfıra bir diyebiliriz. t sıfır bir birimse t bir nedir?
+
+176
+00:31:00,372 --> 00:31:10,372
+İki birimdir. t iki kaç birimdir? Üç birimdir. nokta noktaya gidiyor. t n kaç birimdir? İleriye doğru yürüyüz. n birimdir.
+
+177
+00:31:10,867 --> 00:31:36,708
+t en eksi bir, en eksi bir birimdir. İşin sonunda bu algoritmanın en defa çalışması gerektiğini, rekürcün de olsa gördük. Şurada yerine koyarsak ne yapacağız? İşte t sıfırın veya f sıfırın sonucu ne? Sıfır. f bir nedir? 1 artı sıfırdan 1 gelecek. f iki nedir?
+
+178
+00:31:37,460 --> 00:32:03,059
+f11'di, 2 artı 1'den 3 gelecek. Böyle devam ettirip, işte f, işte 5'i mi bulacaksanız, neyi bulacaksanız, bu da 15 modül sonucunu elde edebilirsiniz. Şu ifadenin genel sonucu, bu da bizim karmaşıklık sonucumuz. Bu tn eşittir n ise, bu da elemandır bigo n veya bigdata n diyebiliriz. Bigdata n demekle, aslında ben bigo n'i de söylemiş oluyorum.
+
+179
+00:32:03,827 --> 00:32:15,827
+iyisi de olsa, kötüsü de olsa, ne yaparsam yapayım bu algoritmada illaki en defa işlem yapmak zorundayız. Şurada işlem sonucunu buluyor. Ben burada zaten aynısını yaptım.
+
+180
+00:32:15,827 --> 00:32:30,127
+Peki burada şunu hatırlayalım bir de. C'de gördünüz mü şeyleri, recursionları, geldiniz mi bu konuya? Şimdi bir fonksiyonumuz olsun. Yine void f diyelim.
+
+181
+00:32:30,644 --> 00:32:42,644
+Sen olsun. Burada herhangi bir şey yapın. F n-2 diyelim. Şimdi burada bellek kullanımı açısından dikkat etmeniz gereken bir şey var.
+
+182
+00:32:42,644 --> 00:32:55,644
+Bilgisayarınızın belleğinde sizin için bir kere bu program için yer ayrılacak. Ve bu belleği fonksiyon çağrısı amacıyla kullandığınızda aslında strek memori kullanıyorsunuz.
+
+183
+00:32:56,723 --> 00:33:03,323
+Stack memory'de Stack nasıl çalışıyordu? Üst üste geliyor. Gösterilen yerin hep üzerine koyuyor, üzerinden alıyorsunuz.
+
+184
+00:33:03,323 --> 00:33:11,483
+Şimdi fn çağrıldığında, önce main fonksiyonunu tabii çağırdınız. Mail'in içinden bir yerden fn'i çağırdığınızı düşünün.
+
+185
+00:33:11,483 --> 00:33:16,683
+Nereye gelecek? fn siteye eklenecek. Bunun içindeki değişkenler de bu bölgede.
+
+186
+00:33:16,683 --> 00:33:20,683
+Sonra bunun içinden siz fn-2'yi çağırdınız.
+
+187
+00:33:21,460 --> 00:33:25,279
+Bu da f n-2'yi çağıracak. Sonra o f n-4'ü çağıracak.
+
+188
+00:33:26,779 --> 00:33:29,019
+Sonra f n-6'yı çağıracak.
+
+189
+00:33:30,679 --> 00:33:34,639
+Bu bir yerde duracak. Durmazsa zaten stack overflow dediğimiz hatayı alırız.
+
+190
+00:33:35,960 --> 00:33:40,079
+Durduğu yerde örneğin n-k kadar gittik.
+
+191
+00:33:41,079 --> 00:33:42,759
+f0'da durduğumuzu kabul edelim.
+
+192
+00:33:43,980 --> 00:33:45,679
+Şurada bir yerde f0'a gelmiş olalım.
+
+193
+00:33:47,476 --> 00:33:49,276
+Yani bu böyle küçüldü küçüldü sıfıra kadar geldi.
+
+194
+00:33:49,956 --> 00:33:51,816
+İlk hesaplanacak olan şey nedir burada?
+
+195
+00:33:52,996 --> 00:33:53,756
+F sıfırdır.
+
+196
+00:33:54,096 --> 00:33:54,796
+Ona dikkat edeceğiz.
+
+197
+00:33:55,276 --> 00:34:00,476
+Mesela ben şurada n çarpı f n-2 diye bir şeyi return ettirsem,
+
+198
+00:34:02,076 --> 00:34:03,675
+return ettirsem ne olur?
+
+199
+00:34:04,516 --> 00:34:05,816
+Önce f sıfır hesaplanır.
+
+200
+00:34:07,115 --> 00:34:10,576
+Bu f sıfıra, yani içinden bunun ne gelecek?
+
+201
+00:34:10,716 --> 00:34:11,496
+f n-2.
+
+202
+00:34:12,724 --> 00:34:23,724
+Onun içinden f n-4 böyle devam ediyor. Önce f0, sonra f2 hesaplanacak, sonra f4, f6, f8, en son şeye hesaplanacak, en sonunda da şuradaki n değeri hesaplanıp gidecek.
+
+203
+00:34:23,724 --> 00:34:33,724
+Genel sonuca ulaşacaktır. Yani burada sondan geriye doğru bir yazma ihtimali var. Mesela bir diziyi verdiniz, diziyi tersten yazdırmak istiyorsunuz.
+
+204
+00:34:33,724 --> 00:34:39,724
+Mikörcünle yapın dedik bunu. Nasıl yapacağız? Diziyi gönderirsiniz, dizinin eleman sayısı gönderirsiniz.
+
+205
+00:34:40,724 --> 00:35:06,204
+Sen diyelim, başlangıçta 0. elemanı olacak için 0'dan 1'e git, 1'den 2'ye git, 2'den 3'e git, git git git ama giderken hiç yazdırma. Geriye doğru toparlayıp gelirken yazdır derseniz, diziyi tersten yazdırırsınız. Veya diziyi ters çevirmek istiyorsanız başka şeyler yaptırabilirsiniz. Bunlar bu tarz örnekler. Şu bellek yaklaşımı çok çok önemli. Yani bunu başka derslerde de özellikle işletim sistem dersinde falan göreceğiz.
+
+206
+00:35:06,708 --> 00:35:20,307
+Bunu her zaman bilelim. Mesela, neden recursion algoritmaları yer yer kötü oluyor? Çünkü Stack Overflow hatası var. Yani şu an ben burada sadece n'i gönderdim, n-2'yi çağırdım.
+
+207
+00:35:20,307 --> 00:35:34,307
+Ama mesela piksel komşuluk işlemlerini geçen dönem biz şeyde anlatmıştık, arama algoritmalarında bahsetmiştik. İşte bir yukarıdakine gidiyor, bir robot gezdiriyorduk, bir şuraya git, bir buraya git. Orada ne yapıyorduk? Dört tane...
+
+208
+00:35:34,387 --> 00:35:45,188
+recursive çağrı yapıyorduk. Eğer bu çok büyük bir alansa, üzerinde çalıştığımız birinin boyutu çok fazlaysa, bir sürü recursive çağrısından dolayı bunu çok geçeriz.
+
+209
+00:35:45,188 --> 00:35:53,387
+RAM'iniz yetmiyorsa program kapatılır. GoFlow hatası yüzünden. Onun için başka alternatifler üretmek gerekiyor.
+
+210
+00:35:55,387 --> 00:36:00,387
+Şunu geçelim. Bunu da zaten söyledik. Şimdi bu forward...
+
+211
+00:36:01,460 --> 00:36:10,100
+substitution, yani yerine koyma, yen yönteminde şöyle bir sıkıntı var arkadaşlar. Aslında tümevarım yapıyoruz.
+
+212
+00:36:10,100 --> 00:36:17,060
+Sıfırdan bire, birden ikiye, birden n'e doğruydu. Bu birazcık zor. Yani aradaki paterni görmek şey.
+
+213
+00:36:17,060 --> 00:36:23,060
+Tümden gelim yaparsak, n'den sıfıra doğru gelirsek bu biraz daha kolay. Nisbi göreceli olarak kolay diyebiliriz.
+
+214
+00:36:23,572 --> 00:36:29,032
+Burada da şu oluyor, elinizde bir denklem var, yine şuradaki gibi ve bunun bir temel durumu illaki olmak zorunda.
+
+215
+00:36:29,292 --> 00:36:34,692
+İşte t, neymiş mesela, t0 diyelim, eşittir 1 olsun.
+
+216
+00:36:36,711 --> 00:36:41,271
+Şöyle yerine koydurlar, tn eşittir, tn-1 artı 1 diye yazalım.
+
+217
+00:36:42,632 --> 00:36:43,971
+n yerine n-1 koyacağım.
+
+218
+00:36:45,391 --> 00:36:48,552
+Şimdi şu ifade için n yerine n-1 koyduğumda ne olacak?
+
+219
+00:36:48,692 --> 00:36:49,632
+tn-2
+
+220
+00:36:50,387 --> 00:37:16,627
+Burası n-1 geldiğinde artı bir maliyet gelecek bu n-1 için şunu açtığımda. Artı bir de kendisinden gelecek. Yani bu ne oldu? t n-2 artı 2. Hocam bu artı 2 nereden geldi diye ben anlamadım diyen var mı? Yani şu artı bir nereden geldi burayı anlamadım diyen? Şu ifadeyi açarsak bunu nasıl açacağız? Yine kendisini yerine koyacağız. En yerine n-1 koyduğumda
+
+221
+00:37:17,811 --> 00:37:35,271
+n-1 buraya gelecek, n-2 olacak. n-2, n-1'e karşılık yine bir artı bir birim maliyet var. Çünkü ben algoritmaya 100 değerini de göndersem o bir birimlik maliyet çalışacak. Bir değerini de göndersem bir birimlik maliyet çalışacak. O maliyet değeri burada kendisini gösteriyor.
+
+222
+00:37:36,951 --> 00:37:40,551
+Devam edelim. Bir daha ilerleyelim.
+
+223
+00:37:41,556 --> 00:37:45,516
+n-2'yi burada yerine veya şu n-2'yi açarsak ne olur?
+
+224
+00:37:46,155 --> 00:37:48,756
+n yerine n-2 koyduğumuzda n-3'ü görürüz.
+
+225
+00:37:49,556 --> 00:37:51,976
+Artı 1 gelecek, artı 2 de yukarıdan vardı.
+
+226
+00:37:52,615 --> 00:37:54,976
+Bakın ne oluyor? n-3 artı 3.
+
+227
+00:37:55,695 --> 00:37:59,856
+Gayet gidişatı herhalde sezebiliyoruz, anlayabiliyoruz.
+
+228
+00:38:00,476 --> 00:38:05,076
+Eğer öyle bir şekilde ilerleseydik, t n-k deseydik burası ne olurdu?
+
+229
+00:38:05,735 --> 00:38:07,456
+k çarpı birden k olacaktır.
+
+230
+00:38:07,456 --> 00:38:08,636
+En genel haliyle.
+
+231
+00:38:09,748 --> 00:38:20,688
+Peki bizim elimizde ne var? Başlangıç durum olarak t0 eşittir 1 var. Bunu koddan veya kuraldan bir şekilde bizim elimizde elde ettirir.
+
+232
+00:38:21,048 --> 00:38:35,188
+O zaman ben k yerine n değerini versem, şu t0'a benzetebilir miyim? Benzetiriz. Yani k eşittir n olsun dersem,
+
+233
+00:38:35,347 --> 00:39:00,768
+n-n, artı k yerine n veriyorsam burada da n yazacağım. Ne olacak burası? t0 artı n olacak. e t0'ın değerini de biz zaten 1 olarak veriyorduk. Sonuç n artı 1'e geldi. Demek ki bizim bu Recurrence Vational'ın sonucu tn eşittir n artı demiş. Bu da bigo veya big theta büyük derecelik terimi almamız yeterli. theta n deyip bitiriyoruz.
+
+234
+00:39:02,195 --> 00:39:03,435
+Anlaşılmayan bir şey var mı?
+
+235
+00:39:05,255 --> 00:39:06,507
+Şöyle bir örnek daha yapalım.
+
+236
+00:39:22,452 --> 00:39:26,312
+Recurrent Slation'ı bu sefer azaltmalı değil de bölmeli olsa.
+
+237
+00:39:34,228 --> 00:39:52,708
+Bir şey azala azala gidiyorsa sıfıra doğru gidilir. Yani azala azala derken farklı n-1, n-2 şeklinde sıfıra doğru gidip götürmek mantıklı. Ama bölündüğünü düşünün. Şimdi sıfıra hiçbir şekilde yaklaşmayacak. Yani yarılandığını veya üçe doğru dörde bölün. O zaman burada da bire doğru genellikle düşünürüz.
+
+238
+00:40:00,000 --> 00:40:26,980
+Yok arkadaşlar burada. Yani bir tane çağrı yaptığımızı bilelim. Yeterli şimdilik. Hatta şöyle yazayım. tn artı bir diyelim. Şimdi n yerine n bölü iki koyarsam ne olur? t n bölü dört n bölü iki koyduğum için yerine bir tane yine artı bir birimlik maliyet gelecek bir de artı bir gelecek. Yani bu ne olacak? Şöyle düzenleyelim. Şuraya yapalım. t n bölü ikinin karesi artı iki çarpı bir.
+
+239
+00:40:28,788 --> 00:40:45,748
+n yerine n bölü 4, şu n bölü 4'ü açarsak ne yapmamız lazım? n yerine n bölü 4 koyacağız. t n bölü 8 artı 1 gelecek. Artı 2 çarpı 1 de oradan gelecek. Şöyle. Yani bu nedir? t n bölü 2 üzeri 3 artı 3 çarpı 1.
+
+240
+00:40:46,748 --> 00:40:51,807
+Burada da herhalde gidişat seziliyor, anlaşılabiliyor. Böyle devam edersek.
+
+241
+00:40:52,211 --> 00:40:58,572
+işte n bölü k eksi bir, n bölü iki üzeri k eksi bir gibi bir şey dersek şöyle bir şeye geleceğiz.
+
+242
+00:41:00,292 --> 00:41:07,792
+n bölü iki üzeri k diyelim hatta buraya, artı k çarpı bir gibi sonuca ulaşacağız.
+
+243
+00:41:08,851 --> 00:41:17,452
+Şimdi başlangıç durumumuz burada sıfır olursa pek çözüm yok ama şöyle bir başlangıç şartı verse t bir eşittir.
+
+244
+00:41:18,036 --> 00:41:23,356
+1 olabilir, 5 olabilir veya n olabilir. Hiç önemli değil. Şunun karşılığı önemli olan t'ye 1'i veririz.
+
+245
+00:41:24,356 --> 00:41:32,036
+Yani neden n'dir? Çünkü bir birimlik işlem için bu algoritma eğer n tane işlem gerektiriyor olabilir.
+
+246
+00:41:32,036 --> 00:41:37,036
+Ama genellikle şurada da 1 dedik ya, burada da 1'i göreceğiz genellikle. Mühim değil.
+
+247
+00:41:37,036 --> 00:41:45,756
+O zaman ben şurayı 1'e benzeteceğim. n bölü 2 üzeri k eşittir. 1 olması için ne olması lazım? n eşittir.
+
+248
+00:41:46,036 --> 00:41:53,855
+2 üzeri k olacak. Şimdi logaritmasını alırsak, hani k'yı yalnız bırakmak için, her iki tarafında iki tabanında logaritmasını almamız yeterli.
+
+249
+00:41:54,576 --> 00:42:10,456
+Logaritma iki tabanında n. O zaman ben k yerine getirip şurada şunu yazarsam ne oluyor? n bölü 2 üzeri logaritma iki tabanında n artı, şurada da k var, logaritma iki tabanında n yazıyorum.
+
+250
+00:42:11,027 --> 00:42:22,547
+Şu nedir? Şurası n'dir. n bölü n'de 1'dir. Dolayısıyla t1 artı logaritma iki tabanında n'dir. t1'inde biz şurada karşılığını 1 olarak yazdık.
+
+251
+00:42:23,187 --> 00:42:32,967
+Yani onun verilen şeyi o. Bakın n de yazsam, 1 de yazsam, 1000 de yazsam problem değil. Onu getirip daha sonra buraya yazacağım. Artı logaritma iki tabanında n.
+
+252
+00:42:35,891 --> 00:42:39,211
+Big Theta logaritma iki tabanında n diyebiliriz.
+
+253
+00:42:40,492 --> 00:42:46,652
+İşte size Binary Search algoritmasının karmaşıklığının analizi, recursive olarak yapılırsa tabii ki.
+
+254
+00:42:47,931 --> 00:42:51,251
+Bunu üçlü, dörtlü veya başka şehirlerde deneyebilirsiniz.
+
+255
+00:42:53,051 --> 00:42:57,131
+Şimdi bölmeli algoritmalarda kullandığımız, bakın bu da bir Backward Substation'dır.
+
+256
+00:42:57,131 --> 00:42:58,931
+n'den 1'e doğru geliyoruz.
+
+257
+00:42:59,443 --> 00:43:05,923
+bölmeli algoritmalarda bazen hani enden dörder dörder gelmek, beşer beşer gelmek zor olur dersek,
+
+258
+00:43:06,703 --> 00:43:12,344
+Recursive Ağaç metodunu böl yönet algoritmalarda kullandığımız yaklaşım olarak kullanabiliyoruz.
+
+259
+00:43:13,344 --> 00:43:24,743
+Burada mesele şu, ağacın derinliği kadar bir bütünü olabildiğince parçalara ayırıyorsunuz ve temel duruma kadar ilerliyorsunuz.
+
+260
+00:43:25,139 --> 00:43:46,579
+Örneğin siz tn'den t1'e doğru geleceksiniz. Yine burada da bölme olduğu için illaki 1'e doğru gelmek zorunda. Şu recursive çağrınız kaç tane ise, bakın burada 4 tane recursive çağrı var demiş. Ağacı o kadar dallara ayırıyor. Burada ikili göstermiş de bu bunun bağıntısı değil. Şu başka bir şey, şu başka bir ağaç.
+
+261
+00:43:47,923 --> 00:44:11,923
+Ağacın n eşittir, t n eşittir, t n için maliyeti n kadarmış. Ama bir de ayrıca ne varmış? Dört tane kendi içinden n bölü iki çağırıyormuş burada. Şunu geçelim, şuradan bakalım. Bu ağacın maliyeti, yani şey bu algoritmanın maliyeti n kare ile başlıyormuş. Ve kendi içinden iki tane çocuk çağırıyor. Onlar kendi içinden iki tane çocuk çağıracaklar. Şimdi...
+
+262
+00:44:12,244 --> 00:44:36,724
+n'e n kare ise n bölü 2'ye ne kadar maliyet vardır? Beyiz durumda n bölü 2'nin karesi kadar. Bir de n bölü 2'nin karesi kadar buradan gelecek. 2 çarpı n bölü 2'nin karesi kadar şu seviyenin maliyeti olacak. Şuradan bir n kare geldi. Buradan da bu kadar geldi. Ondan sonra 4 tane n bölü 4'ün karesi kadar maliyet çıkacak. Çünkü şurada n bölü 4.
+
+263
+00:44:37,139 --> 00:44:44,420
+Burada n bölü 4, burada n bölü 4, burada n bölü 4, 4 çarpı n bölü 4'ün karesi kadar toplam mali.
+
+264
+00:44:45,000 --> 00:44:49,839
+Bunu indirebildiğiniz kadar indiriyorsunuz ve şu maliyetleri topluyorsunuz. Bu sizin tn'inizi veriyor.
+
+265
+00:44:50,859 --> 00:44:54,119
+Şuradaki örneğe bakalım. Aşağıdaki örnek biraz daha anlaşılır belki.
+
+266
+00:44:54,960 --> 00:44:58,159
+Bu mesela nasıl bir algoritma? Hemen yazayım. tn eşittir.
+
+267
+00:45:00,619 --> 00:45:03,239
+Aslında bu şey, şu algoritmanın ağacı.
+
+268
+00:45:03,699 --> 00:45:05,699
+n artı dört tane
+
+269
+00:45:06,899 --> 00:45:11,299
+Niye iki dala döndüğünü şöyle söyleyelim. n bölü iki.
+
+270
+00:45:12,099 --> 00:45:13,299
+Şöyle bir algoritma.
+
+271
+00:45:14,419 --> 00:45:26,099
+Burada ikişer tane dal olduğunu söyleyerek yani ikiye bölünmüş ama ikişer tane gidiyor. Böyle dört tane dal çizmek biraz da şekil açısından sıkıntılı olduğu için buraya ondan eklemiş.
+
+272
+00:45:26,099 --> 00:45:27,099
+Şimdi
+
+273
+00:45:27,572 --> 00:45:32,932
+Temel durumda n eleman için n tane maliyetimiz var. N'e n'lik bir maliyetimiz var. O zaman n diyeceğiz.
+
+274
+00:45:34,231 --> 00:45:41,271
+Bunu dörde, dört farklı dala bölersek buradaki olduğu gibi her biri kendi içinden n bölü 2, n bölü 2, n bölü 2, n bölü 2, n bölü 2 çağıracak.
+
+275
+00:45:42,271 --> 00:45:48,872
+N'e n maliyet varsa n bölü 2, n bölü 2 tane maliyet var. Kaç tane n bölü 2 var? Dört tane. Dört tane n bölü 2 yani 2 n.
+
+276
+00:45:49,780 --> 00:46:17,120
+Onlar kendi içinden 4 dal varsa kendi içinden 2'ye ayrılacaklar. Ne oluyor? 8 mi oluyor? Pardon 16 olacak. 16 tane n bölü 4'lük bir şey. Burada da 4 n olarak. Bakın şurada şöyle bir şey görüyoruz. n çarpı 2 üzeri 0, n çarpı 2 üzeri 1, n çarpı 2 üzeri 2. Ağacı derinleştirdikçe bu maliyet n çarpı 2 üzeri k diye gidecek. O zaman siz k'yı bulursanız
+
+277
+00:46:17,972 --> 00:46:19,972
+Şöyle bir toplantı formülü yazabilirsin.
+
+278
+00:46:20,252 --> 00:46:22,472
+N artı iki yüzleri, pardon şöyle.
+
+279
+00:46:23,332 --> 00:46:24,712
+N parantezine alalım burayı.
+
+280
+00:46:25,792 --> 00:46:29,352
+İki yüzleri sıfır artı iki yüzleri bir artı nokta nokta iki yüzleri k.
+
+281
+00:46:30,452 --> 00:46:32,732
+İki yüzleri sıfırı hani geçelim.
+
+282
+00:46:33,372 --> 00:46:37,832
+İki yüzleri sıfırdan iki yüzleri k'ya kadar olan seri toplam formülünü biliyorsunuz zaten.
+
+283
+00:46:38,612 --> 00:46:40,132
+Oradan bir sayısal sonuç gelecek.
+
+284
+00:46:41,204 --> 00:46:48,004
+Bu sayısal sonucu getirip yerine yazacaksınız falan filan. İşte o da o sayısal sonuçta logaritmalı bir şey olduğu için n'e bağlı bu sonuç getiriyor.
+
+285
+00:46:48,004 --> 00:46:58,804
+O da size yaklaşık olarak n²'lik bir algoritma sonucu. n²-n. Bütün ağaçın her bir seviyesindeki maliyetleri toplayarak bulunabilecek bir analitik yöntem.
+
+286
+00:46:58,804 --> 00:47:04,780
+Açıkçası zor birazcık. Niye zor? Yani iki dal varsa problem değil de.
+
+287
+00:47:05,012 --> 00:47:10,012
+3, 4, 5, 6 olursa takip etmesi, çizmesi en azından şey, 3 olabiliyor.
+
+288
+00:47:11,012 --> 00:47:15,372
+İşte bu olmasın diye Master Teorem diye bir şey icat etmişler.
+
+289
+00:47:16,952 --> 00:47:19,792
+Bunun tabi belli kısıtları var, her durumda uygulanan bir şey değil.
+
+290
+00:47:19,792 --> 00:47:31,612
+Ama böyle bölgenet tarzı bir algoritma varsa, yani A tane çağrılıyor, B'ye bölünüyor ve her bölümde ve her seviyede şöyle söyleyelim.
+
+291
+00:47:32,019 --> 00:47:42,019
+Polinom tarzı şöyle bir maliyet ortaya çıkıyor. Bakın en üzeri de burada bir polinom. Yani ne olabilir? 1 olabilir, n olabilir, n kare olabilir, n küp olabilir.
+
+292
+00:47:42,780 --> 00:47:51,860
+n'in bir kuvveti olacak şekilde bir davranış ister gidiyorsa, bunu biraz önceki gibi ağaç yap, ondan sonra backward substitution, forward substitution yap, gerek yok.
+
+293
+00:47:52,563 --> 00:47:58,203
+Diyor ki, buradaki A, B ve C kat sayıları arasında şu ilişkilere bak. Buna göre zaten sonucu bulursun.
+
+294
+00:47:58,643 --> 00:48:05,463
+Üç farklı durum oluyor. Şimdi A'yı elde edeceğiz, B'yi elde edeceğiz, bir de en üzeri D'den D'yi bulacağız.
+
+295
+00:48:07,363 --> 00:48:12,623
+Aradaki ilişki de şu olacak, A ile B üzeri D'yi karşılaştıracaksınız.
+
+296
+00:48:12,883 --> 00:48:16,363
+İşte büyük olabilir birisi, eşit olabilir veya diğeri büyük olabilir.
+
+297
+00:48:17,139 --> 00:48:23,539
+Eğer a b üzeri d'den küçükse bu algoritma n üzeri d'dir. Kesinlikle odur diyor.
+
+298
+00:48:25,179 --> 00:48:33,000
+Eşitse n üzeri d logaritma n, eğer büyükse de n üzeri logaritma b tabanında a şeklinde bir davranış gösteriyor.
+
+299
+00:48:33,079 --> 00:48:34,179
+Şimdi birazdan örnekleri var.
+
+300
+00:48:35,139 --> 00:48:43,139
+Bunu doğrudan tn elde edip, tn'i de hangi türde algoritmayla notasyonla ifade edeceksen genellikle bit detayı kullanıyoruz.
+
+301
+00:48:43,731 --> 00:48:51,231
+Çünkü Big Data hem şunu sağlıyor hem de bunu sağlıyor. Kesin olarak diyoruz ki bu algoritma bu karmaşıklıktadır diyebiliyoruz. Tamam mı?
+
+302
+00:48:52,332 --> 00:48:56,532
+Kısıt ne burada? Böyle çıkarmalı bir algoritma olmayacak. Böyle böyle gideceksiniz.
+
+303
+00:48:57,032 --> 00:49:01,892
+İkinci kısıtımız da şuradaki ifadenin polinom olması. Yani iki yüzleri en olsa burada olur mu? Olmaz.
+
+304
+00:49:02,832 --> 00:49:04,172
+O tarz durumlarda kullanamıyoruz.
+
+305
+00:49:05,332 --> 00:49:08,672
+Şurada bazı örneklerimiz var. Bazı uç örnekler diyelim.
+
+306
+00:49:10,260 --> 00:49:18,760
+Bu öyle bir şeymiş ki 16 tane rekürtif çağrı yapıyormuş ve 4'e böyle böyle gidiyormuş. Her seviyede de en küplik bir maliyet görüyormuş.
+
+307
+00:49:18,900 --> 00:49:28,720
+Şimdi burada A 16, B 4, neden B 4? Şurada 4'e böldük. D de 3. Neden 3? E'nin kuvvetini alıyorsunuz.
+
+308
+00:49:29,620 --> 00:49:35,220
+Burada mesela 5 olsaydı sadece ne alacaktık? Sadece 5 olsaydı ne alacaktık? D yerine.
+
+309
+00:49:36,371 --> 00:49:41,871
+sıfır alacaktık. En üzeri sıfır. Kuvvet bizim için önemli. Diğer şunlar falan önemli değil.
+
+310
+00:49:41,871 --> 00:49:51,371
+A ile 16 ile B üzeri de dördün üçüncü kuvvetine bakıyoruz. Dördün üçüncü kuvveti. Burası daha büyük. Dolayısıyla bu Case 1'e karşılıklıydı.
+
+311
+00:49:51,371 --> 00:50:00,371
+Yani şu durum. O zaman bunun sonucu ne diyoruz? En üzeri de yani enin D dediğimiz şey üçüncü kuvveti şu.
+
+312
+00:50:00,371 --> 00:50:03,147
+Case başka bir şey olabilir. Mesela Case 3'e bakalım.
+
+313
+00:50:03,699 --> 00:50:10,119
+8T n bölü 2 artı n. Bakın şuna göre sanki daha basit gibi ama bu daha karmaşık bir algoritma.
+
+314
+00:50:12,940 --> 00:50:21,079
+A8, B2, n dediğimiz değer de burada şey, birinci dereceden, dolayısıyla D1 olacak.
+
+315
+00:50:22,460 --> 00:50:27,519
+Burada bunları yerine koyduğunda işte case 3'e karşılık geldiğini yani
+
+316
+00:50:28,052 --> 00:50:52,992
+A 8, B üzeri de 2 üzeri 1'den 8 büyüktür. Şuraya tekrar bakalım. Şu durum. En üzeri logaritma B tabanında A. En üzeri logaritma B dediğimiz sayı 2 idi. 2 tabanında A dediğimiz sayı da buydu. 8 başa gelir. 8'in 3'ü başa gelir 2 üzeri 3 olarak. O da ne olur? n küp olur. Biter.
+
+317
+00:50:53,907 --> 00:51:04,588
+Diğerlerine de bakabilirsiniz. Yani örnekler şey muhtelif. Şimdi size bir soru sorarsak, hoca master teoremi anlatalım ama belki sormayız demiştim ama
+
+318
+00:51:04,588 --> 00:51:18,987
+diyebilirim ki master teorem kullanabilirsiniz. Bu soru da kullanın. Helal hoş olsun. Ama yok kullanamazsınız. İlla ki backward substitution veya recursion tree yapmalısınız dersek o yöntemi uygulamak gerekiyor.
+
+319
+00:51:20,211 --> 00:51:39,211
+Şimdi bu kuralın dışında bu şeyi ihlal eden, yani kurallara uymayan durumlarda da Vikramatılayışınları çözmek için rekürans bağıntılarının karakteristik renklem yöntemiyle çözünürlenmesi gerekecek. Bunu yapmak için de rekürans bağıntısının türünü...
+
+320
+00:51:39,423 --> 00:51:57,343
+tespit edip sürekli görevli çözüm yöntemi seçmemiz gerekiyor. Çünkü burada da dersin başında söylediğim gibi bir yöntem var ama bu yöntem kendi içinde 5-6 farklı gruba ayrılıyor. Onlar da kendi içinde farklı gruplara ayrılıyor. Ve ona rağmen net sonucu her zaman bulamıyorsunuz. Aradan sonra geldiğimizde bunlarla devam ederiz.
+
+321
+01:05:35,539 --> 01:05:49,539
+Önce hani öz yine elemeni bağıntı, bağım olunca bir yerden almış bu notları. Bazılarında değişiklik var. Burada ben ekstra yazacağım. Lütfen onları da dikkate alın. Hani değişiklik derken hata anlamında değil, eklenti anlamında.
+
+322
+01:05:50,539 --> 01:05:58,539
+Öz yine elemeni bağıntı açısından düşünün de, hiç algoritmayı önce düşünmeyelim. Bir bağıntı kendi türünden elemanlara...
+
+323
+01:05:58,963 --> 01:06:21,083
+Kendisinden bir parça bulunduruyorsa, buna rekürans bağıntısı, özgün erimeli bağıntı atıyoruz. Dizilerde falan karşımıza geliyor. Şuradakiler mesela şey, yani a n eşittir, 5 n artı 1, bu bir dizi. Ama şu rekürans bağıntısı içeren bir dizi. Kendisinden bir önceki eleman 2 katı artı 3 olacakmış.
+
+324
+01:06:22,547 --> 01:06:31,168
+Tabi burada sadece kendisinden önceki elemanlar olması gerekmiyor. Burada değişken ne arkadaşlar? Hepsinde n.
+
+325
+01:06:31,168 --> 01:06:38,847
+N ayrık zamanı ifade ediyor. Ne demek yani ayrık zaman? İşte 0, 1, 2, 3 gibi doğal sayılardan oluşacak demektir.
+
+326
+01:06:38,847 --> 01:06:47,347
+Bizim C'deki diz değer 0'dan başlıyor deriz ya, bu da onun gibi bir şey. Bu dizinin elemanları oluşturulurken
+
+327
+01:06:47,423 --> 01:07:01,423
+bir önceki elemanlar, iki önceki elemanlar olacağı gibi, n'e bağlı olan veya bağlı olmayan sabit sayılar, ekstra değerler de mevcut olabilir. Bunlar rekürans puansı. Bunların türlerine göre, bunların çözümüne bakacağız.
+
+328
+01:07:01,423 --> 01:07:13,355
+Çoğunuzun seviyesinin altında bir soru olduğu için çözmemem de gerek yok. Yani a n'i bu şekilde vermiş, başlangıç şartlarında bu şekilde vermiş, bana a5'i sor diyor.
+
+329
+01:07:14,356 --> 01:07:16,356
+Bu çözümde ne yapmamız lazım?
+
+330
+01:07:17,356 --> 01:07:24,356
+A5'i bulmak için A4'ü, onun için A3'ü, onun için A2'yi, zaten A1 ve A0 elimizde.
+
+331
+01:07:25,356 --> 01:07:26,356
+Ne yapacağız?
+
+332
+01:07:27,356 --> 01:07:29,356
+Teker teker hesaplayacağız. Başka yolu şu an için yok.
+
+333
+01:07:30,356 --> 01:07:32,356
+Ama ben bu bağıntıyı çözersem,
+
+334
+01:07:33,356 --> 01:07:36,356
+biraz önce faktörüelde söylediğim gibi,
+
+335
+01:07:37,235 --> 01:07:44,735
+yerine koyarak, denklemde yerine koyarak da bulabiliyoruz. Bizim derdimiz bu çözümü bulmak değil. Bunu bir algoritma gibi düşünüp,
+
+336
+01:07:44,735 --> 01:07:50,235
+algoritma karmaşıklığı gibi düşünüp bu algoritmanın karmaşıklığının analizini yapabiliriz.
+
+337
+01:07:50,235 --> 01:08:00,587
+Tibonacci'nin karmaşıklık analizi nedir mesela? Var mı bilen? Bigo veya Big Data açısından Tibonacci çözümünün sonucu?
+
+338
+01:08:06,708 --> 01:08:11,907
+Bir kere fibonatçı bir ağaç değil mi arkadaşlar? Bir n-1 ile gidiyor, bir n-2 ile gidiyor. En kare olma ihtimali var mı?
+
+339
+01:08:13,507 --> 01:08:16,907
+Böyle bir ağaç iki tane döngü ile dönebilir miyiz? Dönebiliriz.
+
+340
+01:08:17,307 --> 01:08:24,907
+Yani ağaç ise bir kere eksponansiyel bir şeyden bahsediyoruz. Yani ağacın dalları ikili ikili böyle artı artı gidecek.
+
+341
+01:08:25,507 --> 01:08:31,108
+Birazdan gerekse çizelim. Bir kere eksponansiyel olacak. O zaman 1 üzeri...
+
+342
+01:08:31,667 --> 01:08:43,667
+1'den daha büyük üzeri bir şey. 1,1'leri n olabilir, 1,5'leri n olabilir, 2 üzeri n, 10 üzeri n olabilir. Bunlardan bir tanesi olacak.
+
+343
+01:08:43,667 --> 01:08:49,667
+Eğer bunu çözerseniz fibonacci sayılarının sonucunu da bulabiliyorsunuz. Tek denklemde yerine koyarak.
+
+344
+01:08:49,667 --> 01:08:58,507
+Altın oran sayısı kaçtı? 1.612.000'de. Pi sayısı diyorlar ya. Kaç? Var mı?
+
+345
+01:08:58,931 --> 01:09:11,231
+O üzeri en Fibonacci'nin karmaşıklık analizini veriyor. 1.681 mi? 618 mi? Neyse artık işte. Ona karşı tıkeriye. O nereden bulunuyor? Birazdan onun çözümü burada var, göreceğiz.
+
+346
+01:09:11,231 --> 01:09:22,475
+Şimdi buradaki amacımız ya rekürans fahandısını çözmek ya da bir algoritma verilinde size bunun rekürans fahandısını bulunuz der.
+
+347
+01:09:22,612 --> 01:09:27,612
+Bu bulmayla alakalı temel örnekleri dersin ilk kısmında zaten ayrıca yazarak anlatıyorum.
+
+348
+01:09:28,492 --> 01:09:32,372
+Peki bunu nasıl çözeceğiz? Çünkü bu algoritmalar yani bu bağıntılar
+
+349
+01:09:33,372 --> 01:09:42,012
+a n ile beraber bir önceki iki önceki terimleri içeriyor. Bir de bu terimlerin yanında eş olarak eksponansiyel terimler olabiliyor.
+
+350
+01:09:42,932 --> 01:09:44,612
+Şu nispeten kolay bir şey.
+
+351
+01:09:45,043 --> 01:09:51,603
+Ama bunun yanına siz n gibi bir polinom verseniz, n kare gibi bir polinom verseniz biraz zorlaşıyor.
+
+352
+01:09:51,603 --> 01:09:55,523
+Veya iki üzere n, üç üzere n gibi bir şey verseniz daha daha zorlaşıyor.
+
+353
+01:09:55,523 --> 01:09:59,283
+Loganeler falan devreye girerse zaten çok çok zor.
+
+354
+01:09:59,283 --> 01:10:09,363
+Allah'tan bizim şeylerde, algoritmalarda, bizim bilgisayar mühendisinde genellikle ya şuralarda iki üzere n olur, ya da n kareli şeyler, n küklü şeyler olur.
+
+355
+01:10:09,427 --> 01:10:16,127
+Bu da nispeten olayı kolaylaştırıyor. Yani bizim mühendislik alanımız çok öyle karmaşık fonksiyonlarla her zaman ilgilenmiyor.
+
+356
+01:10:17,867 --> 01:10:26,367
+Bu içerideki birleşenleri kurtaracağız. Sonuçta bir TN elde edeceğiz. Bunu yapabilmemiz için bunları sınıflandırabilmek gerekiyor arkadaşlar. Bunlardan birincisi derece.
+
+357
+01:10:27,167 --> 01:10:32,567
+Ben Cuma günü bunların aynısını diferansiyel denklem olarak size anlatacağım. Orada da mertebe diyeceğiz falan.
+
+358
+01:10:34,068 --> 01:10:46,827
+Şimdi AN kendisinden önce N-1. ifadeyi gerektiriyormuş. Buna 1. dereceden. Yani N-K gibi düşündüğümüzde onun en küçük değeri sizin derecenizi veriyor. Oradır.
+
+359
+01:10:47,907 --> 01:11:00,728
+AN var, N-1 var, N-2 var. Bu 2. derece bir şey. Bakın şu bizi ilgilendirmiyor. Bu bir N'e bağlı bir ifade ama AN'e bağlı bir ifade değil. Bunu bilmemiz yeterli.
+
+360
+01:11:01,555 --> 01:11:03,575
+Şu da dördüncü dereceymiş. Geçelim.
+
+361
+01:11:04,655 --> 01:11:05,395
+Homojenlik.
+
+362
+01:11:07,735 --> 01:11:17,315
+Bir ifade, bir ifadede sadece AN'e bağlı terimler varsa, AN'e bağlı terimler varsa homojenlik.
+
+363
+01:11:17,915 --> 01:11:21,275
+AN'in dışında terimler varsa non-homojenlik diyoruz.
+
+364
+01:11:21,275 --> 01:11:23,275
+Örneğin şuna baktığımızda,
+
+365
+01:11:24,819 --> 01:11:30,100
+Bu sadece AN'lerden oluşan bir şey. Önündeki sabit katsayı bizim için önemli değil.
+
+366
+01:11:30,899 --> 01:11:36,299
+Burada da AN'e bağlı bir şey var. Şurada 3 üzeri AN işi bozuyor, homojenliği bozuyor.
+
+367
+01:11:36,619 --> 01:11:42,619
+Çünkü homojen denklemleri çözmek için farklı yöntemler, homojen olmayan denklemleri çözmek için farklı yöntemler kullanılıyor.
+
+368
+01:11:42,619 --> 01:11:45,340
+Yani bu niye ayırt ediyoruz, onun için ayırt ediyoruz.
+
+369
+01:11:45,340 --> 01:11:47,979
+AN'i başımada ne var?
+
+370
+01:11:47,979 --> 01:11:48,979
+O da bir şey var.
+
+371
+01:11:48,979 --> 01:11:49,659
+Nerede?
+
+372
+01:11:50,387 --> 01:11:54,387
+O homojenliği etkilen bir şey değil, lineerliği etkileyecek.
+
+373
+01:11:55,387 --> 01:11:56,387
+Ona da geleceğiz.
+
+374
+01:11:57,387 --> 01:12:00,387
+Şu mesela, şu sebepten bozuyor.
+
+375
+01:12:02,387 --> 01:12:11,387
+Şimdi lineerlik, a-n'li terimlerin herhangi bir üstünün veya çarpımlarının olması ile alakalı bir şey.
+
+376
+01:12:12,467 --> 01:12:39,387
+Yine AN'li terimi siz N ile çarpıyorsanız en sabit bir şey olacağı için burada bunu engellemiyor. Ama AN'li terimi AN'li terimle çarpıyorsa veya AN'li terimin kendisiyle çarpımları oluyorsa, üstü ikinci dereceden, üçüncü dereceden, üstü oluyorsa bunlar linerliği bozan şeyler. Örneğin şurada üstü alınmış. Bakın burada bu tarafın üstü alınmış. Şurada şu ikisi çarpılmış. Bunlar liner olmuyor.
+
+377
+01:12:40,851 --> 01:12:59,951
+Sabit katsayılı olup olmaması var. Şunlar eğer a enli terimler herhangi bir constant değerden oluşuyorsa sabit sayılı ama buradaki olduğu gibi sabit katsayılı değil de ene bağlı bir şeyle çarpılıyorsa veya başka bir a ene bağlı çarpılmaksa bunlar da değişken katsayılı diyebiliyoruz.
+
+378
+01:13:00,951 --> 01:13:05,891
+Buradaki biz a ene arkadaşlar bir dizi olarak düşünüyoruz. Yani si'deki gibi dizi düşünüyoruz.
+
+379
+01:13:06,739 --> 01:13:13,559
+Buna AT diyeceğiz sürekli zamanında. O da bir dizi ama sonsuz vücudu. Bu sonlu bir dizi. Şu sonsuz vücudu dizi.
+
+380
+01:13:14,180 --> 01:13:22,979
+Şimdi dört tane şey söyledik. Her birinin içinde ikişer tane ihtimal var. O zaman kaç farklı D denklem ihtimali olabilir?
+
+381
+01:13:24,760 --> 01:13:26,760
+Her birinden ikişer tane varsa.
+
+382
+01:13:27,940 --> 01:13:34,159
+Yani ilk başta ne dedik? Dereceye geçelim. Hani üçüncüncü şundan başlayalım.
+
+383
+01:13:34,260 --> 01:13:40,260
+homojendir, homojen değildir. Lineerdir, lineer değildir. Sabit katsayıdır, sabit katsayı değildir.
+
+384
+01:13:40,260 --> 01:13:51,260
+Her günden ikişer durum varsa sekiz farklı durum olabiliyor. Bizim uğraşacağımız şey şu, hani derecelerini geçtik, istediğimiz derecede çalışabiliriz.
+
+385
+01:13:51,260 --> 01:13:55,756
+Genellikle homojen olan, ondan sonra lineer olan,
+
+386
+01:13:56,595 --> 01:14:03,915
+ve yine genellikle sabit kat sayılı olan şeylerle, işin en kolayı tarafındaki aileyle çalışacağız.
+
+387
+01:14:04,575 --> 01:14:12,215
+Burada homojen olmayanlara ilişkin çözümler de ders notunda vardı. O kısımdan sorumlu değilsiniz ama sadece gösterip geçeceğiz.
+
+388
+01:14:14,355 --> 01:14:21,475
+Şimdi bu şeyi yaptıktan sonra sabit kat sayılı homojen rekürans bağıntısının çözümü. Aslında burada linearlık de var.
+
+389
+01:14:22,676 --> 01:14:48,556
+Bunun için karakteristik kök denkliği diye bir şeyimiz var. Herhangi bir rekürans bağıntısını ikinci dereceden, üçüncü dereceden denkleme çeviriyoruz. O denklemin köklerini buluyoruz. Sonra denklemin köklerinin kat sayılarını buluyoruz ve çözüme gidiyoruz. Bu kadar basit. Ama burada ne olması lazım? Homojen olması lazım. Yani herhangi bir AN'li terim dışında bir başka terim olmayacak işte. N üzeri 5, 2 üzeri N gibi.
+
+390
+01:14:50,612 --> 01:15:04,551
+Bu yöntemi uygulamanın en mantıklı yolu ikinci derece ve daha büyük derecelilerde uygulama. Yani ben a n eşittir, a n eksi 1 veya biraz önce yazdığımız t n eşittir, t x de aynı şey.
+
+391
+01:15:05,351 --> 01:15:13,492
+t n eksi 1 gibi bir algoritmayı şeye çevirmeme gerek yok. Karakteristik köklü çözmeme gerek yok. Zaten Backboard Substation'da bunlar çok rahat çıkıyor.
+
+392
+01:15:13,492 --> 01:15:14,752
+Bunu söyleyeceğiz.
+
+393
+01:15:15,923 --> 01:15:25,484
+Birazdan bir de şöyle örnek yapalım arkadaşlar. Enli örnek yaptık mı bilmiyorum da. Hani birik dedik ama belki enli örnek yapmam. Şimdi öyle de örnek backwards app dışında yaparız, aklımızda bulunsun.
+
+394
+01:15:26,623 --> 01:15:28,103
+Hatırlatın ben bunu tutsam da.
+
+395
+01:15:29,023 --> 01:15:32,144
+Sabit ve homojen rekürans bağıntılarını da kullanacağız.
+
+396
+01:15:33,363 --> 01:15:38,003
+Homojen değilse de homojen hale getirerek yaklaşık bir çözüm bulacağız.
+
+397
+01:15:39,564 --> 01:15:41,163
+Peki, denklemimiz şu.
+
+398
+01:15:41,684 --> 01:15:54,543
+Bu homojenli homojen. Neden? Sadece AN'li terimler var. Sabit kas sayılı mı? Sabit kas sayılı. Neden? Sadece 3 ve 4 var. Kaçıncı dereceden? AN var. AN-1 var. AN-2 var. İkinci dereceden.
+
+399
+01:15:55,963 --> 01:16:03,963
+Dolayısıyla bunu karakteristik kök denklem halinde yazacağız. İşte diyeceğiz ki bu homojen olduğu için homojen kısmını çözeceğiz ve sonuç bitecek.
+
+400
+01:16:06,815 --> 01:16:20,576
+ekstra bir, en üzeri 5 gibi bir şey olsaydı, o zaman şu kısmın çözümünü ayrı, homojen olmayan kısmın çözümünü de özel çözüm olarak ayrı yapmamız gerekiyor. Şimdilik bununla uğraşmayalım.
+
+401
+01:16:20,576 --> 01:16:31,136
+Peki, kat sayıları bu rekürans mantısını denkleme nasıl çevireceğiz? Şimdi en büyük dereceli terim,
+
+402
+01:16:32,148 --> 01:16:35,288
+Bu ifadenin derecesini söylüyor, ne kadar derinleştiğini söylüyor.
+
+403
+01:16:35,927 --> 01:16:37,087
+En büyük derece terim bu.
+
+404
+01:16:37,327 --> 01:16:43,868
+Buna mesela R edersem, pardon R kare edersem, şu R olacak, şu da 1 olacaktır.
+
+405
+01:16:44,507 --> 01:16:46,208
+Bu kat sayıları dönüştürüyoruz.
+
+406
+01:16:47,468 --> 01:16:52,268
+En gerideki 1, daha sonra işte R, R kare, R kare diye devam edip gidiyoruz.
+
+407
+01:16:53,208 --> 01:16:56,507
+Bunları yerine koyduğumuzda şu denklemi yazarsak, R kare eşittir.
+
+408
+01:16:56,507 --> 01:16:58,507
+3 çarpı R.
+
+409
+01:16:59,283 --> 01:17:01,724
+artı 4 ifadesini buluruz.
+
+410
+01:17:02,623 --> 01:17:07,203
+Ve bunu şöyle köklerini bulabiliriz.
+
+411
+01:17:08,183 --> 01:17:11,523
+r-4 çarpı r artı 1 midir bu?
+
+412
+01:17:12,804 --> 01:17:15,703
+Buradan da köklerden bir tanesi 4 gelecek.
+
+413
+01:17:16,163 --> 01:17:17,583
+İkincisi eksi 1 gelecek.
+
+414
+01:17:19,243 --> 01:17:20,023
+Şöyle ilerleyelim.
+
+415
+01:17:21,804 --> 01:17:23,983
+Bu bizim karakteristik denkleminiz oluyor arkadaşlar.
+
+416
+01:17:25,011 --> 01:17:27,111
+Karakteristik denklemin kökleri de bunlar oluyor.
+
+417
+01:17:27,711 --> 01:17:28,091
+Tamam mı?
+
+418
+01:17:29,951 --> 01:17:37,751
+Sonra da diyoruz ki, şurada yazayım, bu karakteristik denkleme göre bizim ifademizin sonucu AN eşittir.
+
+419
+01:17:38,031 --> 01:17:47,031
+C1 çarpı 4 üzeri N artı C2 çarpı eksi 1 üzeri N.
+
+420
+01:17:47,171 --> 01:17:50,931
+Yani her bir kökün üzerine N değişkeni getirecek şekilde yazıyorum.
+
+421
+01:17:53,171 --> 01:17:55,171
+başındaki kat sayıları.
+
+422
+01:17:55,171 --> 01:18:01,171
+Hocam bir algoritma, mesela şunu bir algoritma kabul edecek olsak, eksi bir üzeri n bir algoritma da olmaz.
+
+423
+01:18:01,171 --> 01:18:03,171
+Yani pozitif sayılar olursun.
+
+424
+01:18:03,171 --> 01:18:10,171
+Hani şunu eksi bir değil de, işte bir üzeri n gibi veya iki üzeri n gibi dersek, bu algoritmanın karmaşıklığına nedir diyeceğiz.
+
+425
+01:18:10,171 --> 01:18:15,171
+En büyük olan dört üzeri n olduğu için bu algoritma Big Theta dört üzeren diyebiliriz.
+
+426
+01:18:15,171 --> 01:18:16,555
+Çünkü en fazla oraya kadar gidiyor.
+
+427
+01:18:17,747 --> 01:18:25,127
+Ama eksi bir üzerinde bu tarz durumlar da çıkabiliyor. Çünkü bunlar karakteristik denklemler. İlla ki bir algoritmanın karşılığı olması gerekmiyor.
+
+428
+01:18:26,807 --> 01:18:31,688
+Evet, burada ayrıntılı adım adım çözmüş. Yalnız burada evet şöyle bir durum var.
+
+429
+01:18:33,387 --> 01:18:37,987
+Elde ettiğimiz karakteristik denklemin kökleri şöyleyse böyle yazıp işin içinden çıkabiliyoruz.
+
+430
+01:18:38,707 --> 01:18:42,147
+Ama kökler aynıysa. Şimdi bakın iki tane kök var.
+
+431
+01:18:43,220 --> 01:18:49,300
+Normalde denklem çözerken de iki kökü de aynı olabiliyor. O zaman şöyle yapacağız.
+
+432
+01:18:50,120 --> 01:18:56,000
+C1 çarpı birinci kök üzeri n artı C2 çarpı ikinci kök üzeri n ki bu aynısı çarpı n diyoruz.
+
+433
+01:18:56,980 --> 01:19:05,360
+Bir tane de buraya ayrıca bir n parametresi ekliyoruz. Bunlar birbirinden farklı olduğu için biraz önce yazdığım şekilde şu bizim çözümümüz oluyor.
+
+434
+01:19:11,604 --> 01:19:22,543
+Köklerin üçü farklı olabilirdi. Üçü aynı olabilirdi. Herhangi ikisi aynı, bir tanesi farklı olabilirdi. Başka durum yok zaten. O zaman böyle olursak denklemi nasıl yazacağız?
+
+435
+01:19:22,804 --> 01:19:33,584
+C1 çarpı birinci kök üzeri n artı C2 çarpı yine birinci kök üzeri n diyeceğiz. Hepsi birbirinden farklı. Artı C3 çarpı R3 üzeri n, üçüncü kök üzeri n.
+
+436
+01:19:39,412 --> 01:20:06,551
+C3, R3 üzeri n, çarpı n kare katlı kök durumlarında kullanıyoruz. Şurada da aynı olanları aynı şurada olduğu gibi değerlendirip ifadeyi bu şekilde yazabiliriz. Mesela C3 bunlardan farklı, C3 kendi başına. C1 ve C2'nin olduğu yerleri şurada birinde bir tane çarpıdanımız var. Geriye ne kalıyor peki? Bu işitlem bittikten sonra her şey bitti mi? Yapmamız gereken bir şey var mı?
+
+437
+01:20:12,243 --> 01:20:15,763
+Aynen, C1 ve C2'yi bulacağız. Peki bunu nasıl bulabiliriz?
+
+438
+01:20:18,644 --> 01:20:25,043
+Ya değer vereceğiz, ya da aligoritmada nasıl başlangıç koşullarımız belli ise, o başlangıç koşullarını denklemde yerine koyacağız.
+
+439
+01:20:26,323 --> 01:20:34,523
+Fibonacci'de F0 eşittir 0, F1 eşittir 1. Bunları yerine koyduğunuzda zaten iki tane iki binlerine denkleme dönüşüyorlar.
+
+440
+01:20:35,023 --> 01:20:37,583
+Onları da bulup yerine ek getiriyorsunuz.
+
+441
+01:20:38,484 --> 01:20:39,784
+Şöyle bir örneğimiz var.
+
+442
+01:20:40,744 --> 01:20:44,524
+a n eşittir 3 çarpı a n eksi 1 artı 10 çarpı a n eksi 2.
+
+443
+01:20:44,624 --> 01:20:46,484
+a sıfır ve bunları belirtmiş. Her şey açık.
+
+444
+01:20:47,364 --> 01:20:49,724
+Kaçıncı mertebe? Kaçıncı derece? İkinci derece.
+
+445
+01:20:49,864 --> 01:20:56,304
+O zaman r kare eşittir 3 r artı 10 diyoruz. Bu başka bir şey değil.
+
+446
+01:20:57,304 --> 01:21:00,664
+r kare eksi 3 r eksi 10 eşittir 0.
+
+447
+01:21:01,664 --> 01:21:06,164
+Nedir bu? 5 çarpı r artı r eksi 5 çarpı.
+
+448
+01:21:08,756 --> 01:21:09,836
+R artı 2 mi?
+
+449
+01:21:11,716 --> 01:21:23,456
+O zaman A n'imin en genel çözümü C1 çarpı, bunlar da birbirinden farklı değerler, 5 üzeri n artı C2 çarpı, eksi 2 üzeri n diyoruz.
+
+450
+01:21:24,576 --> 01:21:30,136
+Şimdi n yerine 0 verdiğinde 5 geliyormuş, 5 eşittir.
+
+451
+01:21:31,136 --> 01:21:33,636
+C1 çarpı 5 üzeri 0, 1 artı.
+
+452
+01:21:34,100 --> 01:21:38,680
+c2 çarpı eksi üzeri sıfırda bir, yani c1 artı c2'yi bulduk.
+
+453
+01:21:39,440 --> 01:21:41,620
+n yerine bir verdiğimde de sekiz geliyormuş.
+
+454
+01:21:42,540 --> 01:21:48,400
+5 üzeri bir, 5c1 artı eksi iki üzeri şey, eksi iki c2.
+
+455
+01:21:49,320 --> 01:21:51,120
+Buradan c1 ve c2 herhalde bulamayacağız.
+
+456
+01:21:51,220 --> 01:21:52,620
+Yoktur. Gerisinde ne yapıyorsunuz?
+
+457
+01:21:52,800 --> 01:21:57,260
+c1 ve c2'yi getirip a'nin yerine yazıyorsunuz.
+
+458
+01:21:57,440 --> 01:21:58,180
+Bakalım ne gelmiş?
+
+459
+01:22:06,228 --> 01:22:09,147
+Birisi 17 bölü 2.
+
+460
+01:22:09,688 --> 01:22:12,847
+Bu Aygur Yatman'ın karmaşıklığı kaçtır? Nedir?
+
+461
+01:22:17,619 --> 01:22:18,619
+Ne diyeceğiz?
+
+462
+01:22:19,619 --> 01:22:21,219
+En yüksek hangisi arkadaşlar?
+
+463
+01:22:22,020 --> 01:22:25,619
+5 üzeri, yani kat sayılar atılıyor, eksi 2 zaten
+
+464
+01:22:26,319 --> 01:22:29,020
+en şey, 5 üzeri en ötesi, tamam mı?
+
+465
+01:22:31,420 --> 01:22:35,020
+Bu bir algoritma olsaydık tabii ki ama böyle bir algoritma şey yok hani böyle
+
+466
+01:22:35,279 --> 01:22:38,619
+algoritma yapıyorsunuz ama eksi maliyet çıkarıyor size, böyle bir şey yok.
+
+467
+01:22:42,960 --> 01:22:44,492
+Şuradaki örnekte
+
+468
+01:22:44,659 --> 01:22:46,779
+Güven ediyorum katlı kök olan bir şey.
+
+469
+01:22:48,880 --> 01:22:53,399
+Karakteristik denklemi nedir? R² eşittir 4R-4.
+
+470
+01:22:54,800 --> 01:22:56,500
+Bunu bulduğunuzda ne yapacaksınız?
+
+471
+01:22:56,960 --> 01:22:58,739
+Katlı kök çıktığı için ikisi de.
+
+472
+01:22:59,639 --> 01:23:00,699
+Şu şekilde yazıyorsunuz.
+
+473
+01:23:00,739 --> 01:23:04,360
+C1 çarpı eksi iki yüzler N, C2 çarpı eksi iki yüzler N çarpı N.
+
+474
+01:23:05,760 --> 01:23:08,460
+Yine başlangıç koşullarını yerine koyduğumuzda
+
+475
+01:23:08,460 --> 01:23:10,779
+aynı şeyi bulacağız.
+
+476
+01:23:12,307 --> 01:23:14,307
+Bunu tamamen yok etmenin bir yolu yok mu?
+
+477
+01:23:29,235 --> 01:23:39,876
+Şöyle bir şey çıkıyormuş. Bu algoritma yine, tabi böyle bir algoritma yine olamaz ama eksi iki üzere en diye bir şey olmayacağı için bunu eksi iki üzere en de diyemiyoruz. Böyle çözüp bırakıyoruz.
+
+478
+01:23:43,539 --> 01:23:56,440
+Peki, denklemimiz homojen olmazsa? Öyle bir şey var ki, aslında bizim fibonacci gibi şeylerde bunu kullanıyoruz. Mesela fibonacci'de ne yapıyoruz?
+
+479
+01:23:57,440 --> 01:24:04,479
+If n diyelim, if n eşittir eşittir sıfırsa return sıfır diyorsunuz.
+
+480
+01:24:11,412 --> 01:24:36,632
+fibonacci n-1 artı fibonacci n-2 diyoruz değil mi? Şimdi bunun rekürans bağıntısını yazmaya çalışsak, tn diyelim, b100 durumda kaç tane işlem var? Bir karşılaştırma, bir return, bir daha karşılaştırma, bir daha return, 4. Yani o birlik bir maliyet. Artı 1 gelecek, artı bu 1 neye gelecek? tn-1'e.
+
+481
+01:24:37,652 --> 01:24:48,551
+ve t n-2'ye gelecek. Bakın bu şeyi bozan bir şey. Homojenliği bozan bir ifade. Bu bir polinom. 0. dereceden polinom. Şeyi bozuyor.
+
+482
+01:24:50,272 --> 01:24:59,372
+Şimdi homojen olmayan ifadeleri çözerken de bunun homojen kısmını ayrı düşünüp homojenliği bozan kısmı ayrı düşünüyoruz.
+
+483
+01:24:59,372 --> 01:25:03,372
+Burayı düşünürken de eğer polinomsa başka şeyler...
+
+484
+01:25:04,115 --> 01:25:18,456
+polinom değilse, isterse başka şeyler yapılıyor. Onun için dikaransiyel denklemler derse biraz zorduruz. Çoğu kimseyi ezber görür. Hakikaten de ezberdir. Çünkü her şey için ayrı ayrı çözüm yöntemi üretmesi gerekiyor. Normal bir denklem çözer gibi veya sayısal yöntemler gibi değildir.
+
+485
+01:25:19,515 --> 01:25:31,576
+Genel çözümümüz de şöyle olacak arkadaşlar. Homojen kısmın çözümü artı özel kısmın çözümü. Özel kısmı çözerken de şu ifadeleri, örnek var birazdan.
+
+486
+01:25:32,404 --> 01:25:42,604
+şeye uydurmaya çalışıyoruz. Buraya benzeten bir karakteristik denklem bulmaya çalışıyoruz. Onların kat sayılarını buluyoruz. O kat sayıları ekliyoruz. Öyle çözüme ilerleyeceğiz.
+
+487
+01:25:43,884 --> 01:25:50,644
+Örneğin şu. Bakın bu bizim pivonatçıya benzeyen bir şey. Sadece kat sayılar farklı, başlangıç değerleri farklı.
+
+488
+01:25:52,784 --> 01:25:59,024
+Genel artı özel çözüm dedik. Şimdi genel çözümün olduğu yer, homojen kısmın olduğu yer nedir?
+
+489
+01:25:59,572 --> 01:26:07,112
+Bu ikinci mertebeden şuraya v kare desek, 2 re desek, artı 3 desek şöyle bir şey bulacağız.
+
+490
+01:26:08,631 --> 01:26:10,351
+Ve köklerimiz 3'e eksi 1 gelecek.
+
+491
+01:26:11,551 --> 01:26:21,752
+Bu genel kısmın kat sayılarını da bulduğumuzda, bunları tek tek yazmıyorum, lise matematiği seviyesinde gerek yok.
+
+492
+01:26:22,323 --> 01:26:33,463
+Böyle bir homojen çözüm buluyoruz ama kat sayılarını bulmak için acele etmeyeceğiz. Daha çünkü buraya bir şey gelecek, artı özel çözüm gelecek. Ondan sonra şunlar yerine konacak çözüme gideceğiz.
+
+493
+01:26:38,243 --> 01:26:48,863
+Şimdi özel çözüm için de burada bir tahmin yapıyoruz arkadaşlar. Şimdi orası birinci dereceden olduğu için birinci dereceden bir fonksiyonu tahmin yapacak şekilde yazacağız.
+
+494
+01:26:49,747 --> 01:27:10,587
+Şimdi, özel çözüme A dersek, n-1'li ifademiz vardı, n-2'li ifademiz vardı ve bunların her birisinde, ifadeye şöyle tekrar bakalım, artı 5 var. Yani bu sabit bir fonksiyon. Bu sabit fonksiyonun her bir bileşkesi sabit olarak sahibiz.
+
+495
+01:27:11,347 --> 01:27:14,347
+Keşke biraz önce şunu kopyalasaydım şuraya, neyse.
+
+496
+01:27:15,227 --> 01:27:15,467
+Yani,
+
+497
+01:27:16,020 --> 01:27:22,680
+Şu bir sabit fonksiyon olsa şunu da bir sabit fonksiyon gibi, şunu da bir sabit bir şey gibi, bunu da bir sabit bir şey gibi düşünüyoruz.
+
+498
+01:27:23,520 --> 01:27:25,840
+A var, iki A var, artı üç A var.
+
+499
+01:27:29,203 --> 01:27:37,884
+ve karşı tarafta da 5 var. Daha sonra bu işte A'nın değerini eksi 5 bölü 4 olarak bulmuşuz. Bu da bizim özel çözümümüz oluyor. Bu nispeten basit.
+
+500
+01:27:37,884 --> 01:27:46,644
+Eğer orası 5 değil de N gibi bir şey olsaydı N'e bağlı yani sabit olmayan N'e bağlı bir şey üzerinden şurayı kurulayacaktık.
+
+501
+01:27:46,644 --> 01:27:54,043
+Bunun örneği var mıydı bilmiyorum. Bir ara vardı da bu dersden çıkarttım ben. Neyse eğer varsa yoksa da ben size bir ara paylaşırım.
+
+502
+01:27:55,444 --> 01:28:08,924
+AN'ı artık bu özel çözümle getirip buraya yapıştırdıktan sonra başlangıç koşullarını yerine koyuyoruz ve bulduğumuz algoritma bize bunu getiriyor. Bu neymiş? Üçüncü dereceden bir şey. Üçüncü dereceden bir şeklinde bir algoritma.
+
+503
+01:28:10,824 --> 01:28:18,904
+Herhalde şunda böyle bir şey var. Evet, 3N artı 4. Bu birinci mertebeden bir polinom.
+
+504
+01:28:20,404 --> 01:28:24,644
+Yine homojen kısmı ikinci dereceden olduğu için ayrı çözüyoruz.
+
+505
+01:28:26,584 --> 01:28:30,324
+Şimdi homojen olmayan kısım bizim için şöyle bir şey.
+
+506
+01:28:31,283 --> 01:28:33,484
+Birinci mertebeden olduğu için bu nedir?
+
+507
+01:28:33,824 --> 01:28:35,123
+N'e bağlı olarak çöneceğiz.
+
+508
+01:28:35,324 --> 01:28:38,703
+AN artı B'lık bir fonksiyondur.
+
+509
+01:28:38,804 --> 01:28:39,984
+En genel hali diyeceğiz.
+
+510
+01:28:41,084 --> 01:28:42,564
+O zaman bunları getirip yerine yazıyoruz.
+
+511
+01:28:42,724 --> 01:28:44,524
+AN için AN artı B.
+
+512
+01:28:45,492 --> 01:28:57,572
+Şunun yerine bu değerleri verdiğimizde a n-a, n-1'den yerine yazdığımızda artı b gelecek. n-2 dediğimizde de a n-2'ye artıyor. Bak bunu iyice karmaşıklaşıyor.
+
+513
+01:28:58,072 --> 01:29:03,932
+Buradan hem a'yı bulacağız hem b'yi bulacağız ve bulduğumuz ifade de şunları yerine koyacağız.
+
+514
+01:29:05,231 --> 01:29:09,811
+a'lar ve b'ler bilinmeyenleri bulduktan sonra yerine gelecek.
+
+515
+01:29:11,444 --> 01:29:15,564
+Bir tanesi eksi 3 bölü 2 imiş, öbür de 23 bölü 4'müş.
+
+516
+01:29:16,884 --> 01:29:18,864
+Şunu tespit ettik, tahmin ettik.
+
+517
+01:29:19,543 --> 01:29:22,304
+Bu tahmin ettiğimizi homojen çözümde yerine koyuyoruz.
+
+518
+01:29:26,228 --> 01:29:32,108
+Yerine koyduktan sonra da ne yapıyoruz? Başlangıç koşullarını yazıp en genel halini bulabiliyoruz.
+
+519
+01:29:34,548 --> 01:29:36,208
+Burada anlaşılmayan bir şey var mı?
+
+520
+01:29:42,963 --> 01:29:49,264
+Bunlar n yerine n-1, n- şey koyacak şekilde yani anladın demek istediğimi.
+
+521
+01:29:50,644 --> 01:29:53,543
+n yerine a n artı b koyuyorsun.
+
+522
+01:29:54,443 --> 01:29:54,804
+Tamam mı?
+
+523
+01:29:54,804 --> 01:29:55,443
+Eksi a.
+
+524
+01:29:57,604 --> 01:29:59,084
+n-2'den dolu.
+
+525
+01:29:59,344 --> 01:30:00,923
+Yani orayı çarpıyorsun aslında a.
+
+526
+01:30:02,923 --> 01:30:05,224
+Şu ifadeyi a ile çarptığını düşün.
+
+527
+01:30:06,064 --> 01:30:07,744
+a n-2 artı tamam mı?
+
+528
+01:30:07,744 --> 01:30:08,144
+Şurayı.
+
+529
+01:30:11,764 --> 01:30:19,764
+Bir de yerine, yani bu sabit şey, şu n'e bağlı olan şey, n ile her türlü şeyi çarpıyorsun, ondan sonra o çıkıyor.
+
+530
+01:30:22,164 --> 01:30:29,764
+Şimdi bundan önce şu vardı, bir onu da göstereyim, Fibonacci'nin çözümü vardı da. Acaba eski slide'da mı kaldı?
+
+531
+01:31:19,828 --> 01:31:28,228
+Evet, üstel fonksiyon olma durumunda, bu sefer üstel bir homojen çözümün yanında özelliklerimi düşüneceğiz. Onu sildim bu slide'lardan kaldırdım.
+
+532
+01:31:29,828 --> 01:31:35,828
+Ama bir de Fibonacci ile alakalı bir şey vardı ya. Biraz geriye gideyim acaba, olsa mıydı?
+
+533
+01:31:46,003 --> 01:32:05,804
+O herhalde kitaptaydı. Şimdi kitaptan arada budur, onu da paylaşırız. Yani 1 artı kök 5 bölü 2, 1 eksi kök 5 bölü 2, bu altın orana karşılık geliyor. Onun eninci kuvveti şeklinde bir karakteristik denklem çıkıyor onda. Herhalde bizim ders kitabımızda vardı o. Burada olmaması, yanlış hatırlıyorum demek ki.
+
+534
+01:32:12,627 --> 01:32:36,523
+Şimdi bir diğer rekürans bağıntısının kullanılma amaçlarından bir tanesi, şimdi elinizde bir sayı dizisi var, şöyle elemanlarınız var. Özellikle bu borsa gibi sistemlerde hani çok yapılan bir şey. Geçmişe yönelik verilerinizden gelinceye yönelik tahmin yapmak istiyorsunuz. Bu tahminini işte sayı dizilerin içerisinden bir örüntü buluyorsunuz.
+
+535
+01:32:37,108 --> 01:32:44,108
+Bu örüntünün kuralına göre yeni gelecek değerleri tahmin yapıp yerine yazıyorsunuz. Artık o tahmin ne kadar isabetli olursa.
+
+536
+01:32:44,108 --> 01:32:50,108
+Size verilen bir sayı dizisi var. Bu sayı dizisinin içerisindeki örüntüyü bulmak gerekiyor.
+
+537
+01:32:50,108 --> 01:32:56,108
+Şimdi örneğin, yani size kuralını verirse sonucu bulmak zaten kolay.
+
+538
+01:32:56,108 --> 01:33:04,108
+Şunu verdiğimizde acaba bunu nasıl örüntüye dönüştürülebilir veya herhangi bir sayı dizisi acaba herhangi bir...
+
+539
+01:33:05,043 --> 01:33:07,043
+rekürans bağıntısına dönüştürülebilir mi?
+
+540
+01:33:07,043 --> 01:33:13,043
+Şimdi ya sayıdısını ya doğrudan bir denkleme hit edeceksiniz ya da bir rekürans bağıntısına ifade edeceksiniz.
+
+541
+01:33:13,043 --> 01:33:15,043
+Çünkü şöyle bir şey yok.
+
+542
+01:33:15,043 --> 01:33:19,043
+İşte 1, 1, 2, 3, 5, 8...
+
+543
+01:33:19,043 --> 01:33:22,043
+Bunu doğrudan bir denkleme dönüştürmek biraz zor bir şey.
+
+544
+01:33:22,043 --> 01:33:27,043
+Yani kimse şunu akledemez. 1 artı kök 5 bölü 2'nin en inci kuvvetidir diye...
+
+545
+01:33:27,043 --> 01:33:31,043
+Yani böyle bir örüntü var da bir doğrudan görebilecek baba yiğit varsa çıksın.
+
+546
+01:33:31,252 --> 01:33:38,872
+Ne yapıyoruz? Yani bunu acaba bir rekürans bağıntısına çevirip, rekürans bağıntısını çözüp üretmek daha mantıklı.
+
+547
+01:33:38,872 --> 01:33:48,492
+Yani şuradaki şey nispeten kolay. İşte iki en eksi birincinin iki katının, bir öncekinin iki katının bir eksi'ymiş.
+
+548
+01:33:48,492 --> 01:33:54,932
+Bakıyoruz yani bundan önce bunun iki katını alsak, bir eksini alsak bu oluyor. Şunun iki katını alsak, bunu alsak bu oluyor.
+
+549
+01:33:54,932 --> 01:33:56,752
+Mesela bunu türev ile bulabiliriz.
+
+550
+01:33:56,752 --> 01:34:22,992
+Bundan bunu çıkarın 3, bundan bunu çıkarın 6, bundan bunu çıkarın 12. Bakın ne oluyor? 6'dan 3 çıktı, 3. Sonra şöyle bir iki kat olduğunu, hep iki katlanarak gittiğini görüyoruz. Ama bir eksiği olacak. Bu türevle falan belki bulunabilir veya sayısal alan yöntemleri de bulunabilir. Ama fibonacci gibi şeyler biraz zor. Hedef, sizlere bu verilirse acaba şunu üretebilir misiniz?
+
+551
+01:34:23,220 --> 01:34:28,500
+ne ile? Daha kolay bir şekilde rekürans bağıntısı gibi.
+
+552
+01:34:32,500 --> 01:34:35,899
+Şu mesela 1, 3, 7, 17, 41, 99, 239.
+
+553
+01:34:37,140 --> 01:34:40,539
+Yani 1'den başlayacakmış, 3'den başlayacakmış.
+
+554
+01:34:42,079 --> 01:34:45,800
+A eneksi 1'in 2 katı artı A eneksi 2 şeklinde olacakmış.
+
+555
+01:34:46,760 --> 01:34:49,420
+Kolay bir şey değil açık. Ama bazı durumlarda görülebiliyor.
+
+556
+01:34:51,399 --> 01:34:55,840
+Bunlar homojen olduğu için nispeten kolay. Bir de bunların homojen olmuyorları var.
+
+557
+01:34:56,920 --> 01:34:58,479
+Şimdi homojen olmayınca ne olacak?
+
+558
+01:34:59,572 --> 01:35:03,931
+AN'liler işin içinde olacak, bir de bu AN'lilerin yanına bir şey daha getireceğiz.
+
+559
+01:35:03,931 --> 01:35:13,971
+Yani şuna baktığımız zaman 1 ve 3 var, başlangıç koşulları 1 ve 3, 6, 13, 27, 56 diye devam ediyor. Şunu mesela sorsa kim bilebilir,
+
+560
+01:35:13,971 --> 01:35:19,771
+hani binden sonraki nedir, 15'den sonra ne gelir diye şeyde, her yerde internette dolaşıyor ya böyle sorunlar.
+
+561
+01:35:19,771 --> 01:35:26,572
+Biraz şey yani zorlayıcı bir soru. Bunları dönüştürülebilirse, yapılabilirse yapılıyor.
+
+562
+01:35:26,931 --> 01:35:46,371
+Bu işlerde de kullanılıyor. Şimdi şöyle bir problemimiz var. Sadece 0 ve 1'lerden oluşan n birim uzunluğunda sayı dizeleri oluşturulacak. Yani n tane bits var. Bunlardan sayı dizisi oluşturacağız. O zaman 2 üzeri n tane farklı durumumuz var. Bunu bileceğiz.
+
+563
+01:35:46,371 --> 01:35:53,572
+Buna göre bu sayı dizilerinden n uzunluğunda olup 0,0 içerenlerin sayısını veren rekürans bantısını
+
+564
+01:35:53,939 --> 01:35:56,159
+başlangıç koşullarını da bularak yazınız.
+
+565
+01:35:57,359 --> 01:35:59,139
+Şimdi ne yapıyor burada?
+
+566
+01:35:59,919 --> 01:36:08,159
+Diyor ki n tane bit demiş ya, sıfır bitlik bir şey olsa hiç böyle bir iki tane içeren bir şey yok.
+
+567
+01:36:08,159 --> 01:36:11,779
+Yani n eşittir sıfır için sonucumuz sayımız sıfır olur.
+
+568
+01:36:12,919 --> 01:36:14,319
+Başka türlü olacak bir şey yok.
+
+569
+01:36:15,399 --> 01:36:19,999
+n eşittir bir için bu da sıfır çünkü içinde iki tane sıfır olma ihtimali yok.
+
+570
+01:36:21,395 --> 01:36:28,395
+n eşittir 2 için sıfır sıfır olma durumu sadece bir durumda var. Geri kalan şey de buraya bir yağdır.
+
+571
+01:36:30,075 --> 01:36:40,895
+n eşittir 3 için olası bütün durumlar şunlar, doğruluk tablosunu düşünün. İçinde bitişik olarak sıfır içerenler şu durum, şu durum ve şu durumlar.
+
+572
+01:36:43,572 --> 01:37:07,671
+Bu noktaki için baktığımda, yani bunu yapan kişi baya baya sayım yapıyor. Yani hepsinin bütün durumları yazıyor. Şuraya kadar diyor açayım da ondan sonra acaba bir rekürans bağıntısı çıkartabilir miyim? Ondan sonra 5, 6, 7 için bulabilirse bulacak. Bunlara baktığımda bunda da 8 tane bulmuş. Demek ki bizim dizimiz 0, 0, 1, 3, 8 diye devam edip giden bir dizi.
+
+573
+01:37:08,467 --> 01:37:26,747
+Başlangıç koşulları şunlar, A0 ve A1. Acaba bu ifade nasıl modellenebilir denmiş. Şöyle oluyor, bu hocanın kendi çözümü bilmiyorum doğru mudur, ders notunu aldı. Herhalde bu dersten aldı hoca burayı.
+
+574
+01:37:27,967 --> 01:37:35,547
+A eninci terim, A en eksi 1'in iki katı, A en eksi 2'nin kendisi artı 1 şeklinde.
+
+575
+01:37:36,467 --> 01:37:41,267
+Mesela biz beşinci terimi bulabilir miyiz acaba?
+
+576
+01:37:43,087 --> 01:37:46,567
+En eşittir beşinci, bütün durumları, otuz iki tane durumu yazmak lazım.
+
+577
+01:37:46,687 --> 01:37:48,927
+Orası biraz, onun yazın kendiniz.
+
+578
+01:37:49,607 --> 01:37:53,787
+Beşinci terim için A5 ne olacak?
+
+579
+01:37:53,947 --> 01:37:58,787
+2 çarpı A4 artı A3 artı 1.
+
+580
+01:37:59,127 --> 01:37:59,507
+Öyle değil mi?
+
+581
+01:38:03,283 --> 01:38:12,283
+A4 zaten belli, 16. A3 belli, 3. Demek ki 20 tane görünüyor. Bakalım yani tek tek saymak lazım.
+
+582
+01:38:12,283 --> 01:38:30,283
+Eğer 20 tane, şimdi ne var? Mesela 00, 00, 00. Ha bu arada bir tane olması yeterli. Yani şu, bu durumu biz bir taneden sayacağız. 00, 00, 01. Şimdi bu nereye kadar gider?
+
+583
+01:38:31,123 --> 01:38:39,363
+Bir kere şu dört tane içerecek, en azından şu dört tanesi var. Yani dördünü buradan bulduk.
+
+584
+01:38:39,363 --> 01:38:51,764
+Sonra bunun devamına, diğer durumlara bakacaksınız. Artık onu da siz sayarsınız. Toplam 20 tane diyorsa şu eşitlik doğrudur diyebiliriz. Bir de bunu ispat etmek için de çözmek gerekiyor.
+
+585
+01:38:54,931 --> 01:39:03,931
+o denkleme göre doğrudan yerine koyup bulabilirsiniz. Mesela bunun homojen ve homojen olmadığı için homojen olmayan özel çözümünü bulacaksınız.
+
+586
+01:39:03,931 --> 01:39:11,931
+Bazen yanlışa götürebiliriz, çok güvenilmez ama test etmeye değer. Bunu başka şekilde yapıp, bu problemi başka şekilde çözebilir miyiz?
+
+587
+01:39:11,931 --> 01:39:20,931
+Saatimiz kaç? Ha vakti varmış. Saymanın kurallarından permütasyonla falan çözebilir miyiz acaba?
+
+588
+01:39:22,579 --> 01:39:25,079
+Nasıl çözeceğiz? Tavsiyemiz nedir?
+
+589
+01:39:37,268 --> 01:39:37,887
+yazalım.
+
+590
+01:39:42,068 --> 01:39:44,367
+3 basamaklıyı nasıl yaptık?
+
+591
+01:39:46,927 --> 01:39:52,827
+Tam 8 tane. 8 tane durum var zaten. Onlardan kaç tanesi ardışık olarak sıfır içeriyor?
+
+592
+01:39:56,532 --> 01:39:58,532
+3 bit için konuştuğumuzda
+
+593
+01:40:08,979 --> 01:40:14,979
+Tamam, üçüncü için böyle, dördüncü için böyle yapacaksak?
+
+594
+01:40:14,979 --> 01:40:28,979
+Tamam, en başta bir iki, bir iki, üçüncü. Daha geniş, yani büyüdükçe ihtimaller şey, peki onu bir kural haline getirebiliyor musun? Nasıl var?
+
+595
+01:40:41,492 --> 01:40:42,252
+Teşekkürler.
+
+596
+01:40:49,268 --> 01:40:52,527
+Tamam, şöyle yapalım mesela. 4 bit, 4 bit için yapalım.
+
+597
+01:41:03,604 --> 01:41:14,003
+0, 0 şurada olduğunu kabul ediyoruz. Bu ikisini bir tutuyoruz. Geri kalan üç tane şey var. Evet. Kaç farklı durum çıkacak buradan?
+
+598
+01:41:14,003 --> 01:41:22,155
+En-1. En-1 ne? Evet. Yani 4 bit için üç tane durum mu çıkacak burada?
+
+599
+01:41:27,956 --> 01:41:31,475
+tekrarlı durum var. Bunları fazladan saymamak gerekir.
+
+600
+01:41:35,636 --> 01:41:46,956
+Bir de olasılıkta, bu tarz problemlerde şöyle bir yaklaşım vardır. Tüm durum eksi, aksi durum. Onu düşünsek. Düşünün bakalım.
+
+601
+01:41:47,876 --> 01:42:00,275
+Ben başka bir çözüm yolu önereceğim ama bir de bunun sayma kurallarıyla çözümü var. Belki ben bir yerde bir ara çözmüştüm, onu bulabilirsem getireyim, defterimde vardı. Düşünün bakalım, var mı bir önerisi olan?
+
+602
+01:42:00,819 --> 01:42:08,579
+Şu şekilde yaparsak. Genelde bu konular konu olarak basit ama çözüm açısından çok detaylı düşünmek gerekiyor.
+
+603
+01:42:10,739 --> 01:42:13,619
+Var mı başka düşünceler olan? Şöyle bir şey yapabiliriz.
+
+604
+01:42:20,884 --> 01:42:26,828
+Başka bir çözüm yöntemi yine rekürans bantısı çezecek şekilde. Şimdi bizim en tane bitimiz olsun.
+
+605
+01:42:30,420 --> 01:42:33,819
+nbit'in olduğu durumda kabul edelim ki, şu sondaki bit.
+
+606
+01:42:35,319 --> 01:42:39,619
+Bir saniye, nasıl bu? Sondaki bitten gidiyorduk herhalde. Bir yere not etmiştim de. Unuttum bunu da.
+
+607
+01:42:47,796 --> 01:42:51,195
+n tane bit olacak, evet doğru. Problem aynı mıydı?
+
+608
+01:42:53,836 --> 01:42:56,115
+Sondaki bit mesela 1 olduğu durumda.
+
+609
+01:42:57,916 --> 01:43:03,155
+Benim neye bakmam gerekiyor? Geri kalan, yani bu problemi, yani tn şeklinde düşünecek olursak,
+
+610
+01:43:04,256 --> 01:43:12,896
+sondaki bit 1 ise geri kalan n-1 bit içinde kaç tane shift 0 vardır, bu problemi çözmeye göre değişiyor.
+
+611
+01:43:14,868 --> 01:43:27,268
+1 olduğu durum bütün bu şeyleri çözümsüz bırakır. Hani arda arda burada iki tane, bunu dikkate almayacağız öyle söyleyelim. O zaman bu problem neye dönüşüyor? t n-1'e dönüşüyor değil mi otomatik olarak?
+
+612
+01:43:28,668 --> 01:43:37,268
+Şu kısmı çözersen, bu eminim ki 1 olduğu için bundan sıkıntı yok. Peki, bir başka durum ne olabilir? Şurada,
+
+613
+01:43:43,412 --> 01:43:45,032
+1'in yanındaki bit.
+
+614
+01:43:45,792 --> 01:43:48,351
+Ne olursa farklı düşünmemiz lazım.
+
+615
+01:43:49,891 --> 01:43:52,452
+Bunun da bir alternatif var.
+
+616
+01:43:53,731 --> 01:43:59,731
+Şimdi 1, 1 olursa zaten tn-1 içinden tn-2'ye bakacağız. Çünkü tn-1
+
+617
+01:43:59,891 --> 01:44:03,572
+kendi içinde 1 ile bitiyorsa tn-2'yi çağıracak.
+
+618
+01:44:04,612 --> 01:44:07,811
+1 olmasına bakmayacağız. O zaman 0 olmasına bakacağız.
+
+619
+01:44:08,652 --> 01:44:09,652
+Öyle değil mi?
+
+620
+01:44:11,028 --> 01:44:25,068
+mı acaba? Yani sıfır olursa zaten sıfır olduğu durumlar ayrı düşünmeyecek arkadaşlar. Sondaki kısım bir sıfır olursa, bakın bir bir olursa zaten şu birden dolayı tnx2'ye gidiyor. tnx2, tnx3'e gidiyor otomatik olarak.
+
+621
+01:44:26,328 --> 01:44:35,888
+Bir bir olması durumuna bakmayacağız. Sıfır olursa bu da zaten tnx1'den tnx2'yi çağırıyor, oraya dahil. Ama sondaki kısım bir sıfır olursa,
+
+622
+01:44:36,020 --> 01:44:46,460
+0, 0 olursa zaten bu bizim istediğimiz şey, bir tanedir. En son bit, iki bit, bir 0 olursa, neye bakmamız lazım? Geri kalan n-2 tane bite bakmıyoruz.
+
+623
+01:44:46,460 --> 01:44:59,140
+Yani t n-2. Peki, başka ne ihtimal var? Birinci ihtimal şu, artı, ikinci ihtimal bu. Son tarafın bir de ne olma durumu var?
+
+624
+01:45:02,200 --> 01:45:03,360
+1, 0, 1 değil yani.
+
+625
+01:45:03,859 --> 01:45:05,859
+1, 0, 1 dersen şöyle olur.
+
+626
+01:45:07,859 --> 01:45:11,859
+0, 1'den dolayı, zaten şu 1'den dolayı şuraya takılıyorsun.
+
+627
+01:45:11,859 --> 01:45:13,859
+O zaman fazladan saymış olursun.
+
+628
+01:45:13,859 --> 01:45:15,859
+Onu tekrar saymamız.
+
+629
+01:45:15,859 --> 01:45:18,859
+1'den dolayı f n-1 duruma zaten bakacaksın.
+
+630
+01:45:18,859 --> 01:45:22,859
+0 zaten istediğim bir şey sayıyorsa, oluyorsa, oluyor.
+
+631
+01:45:22,859 --> 01:45:25,859
+Onun için burada 1, 0, 1'e bakmayacağız.
+
+632
+01:45:25,859 --> 01:45:27,859
+Durum 0, 0 olursa...
+
+633
+01:45:29,140 --> 01:45:33,440
+Geri kalan durumların ne olduğunu hiç önemli değil. Zaten bu bütün şeyleri sağlıyor. Öyle değil mi?
+
+634
+01:45:34,360 --> 01:45:41,079
+Geri kalan kaç tane durum var? n-2 tane bit yok mu? Peki bunlar kaç farklı şekilde değişebilir, sayılabilir?
+
+635
+01:45:41,860 --> 01:45:52,100
+2 üzeri n-2 tane. Yani iki bitimiz kesinlikle yan yana sıfır sıfır olduysa geri kalan 2 üzeri n-2 tane durumun hepsi bu şartı sağlıyor.
+
+636
+01:45:53,460 --> 01:46:07,460
+sıfırın, iki tane sıfırın bir sefer yan yana gelmesi yeterli. O zaman bunların hepsini topladığınızda, t n-1 artı t n-2 artı 2 üzeri n-2.
+
+637
+01:46:08,659 --> 01:46:13,780
+Benim çözümde böyle, ben böyle çözümüşüm. Peki buna başlangıç başlığı olarak ne vermemiz lazım?
+
+638
+01:46:14,700 --> 01:46:20,340
+n sıfır olduğunda yine sıfır olacak. Yani t sıfır veya t bir.
+
+639
+01:46:22,323 --> 01:46:23,603
+Şimdi 2 için yerine koyalım.
+
+640
+01:46:26,163 --> 01:46:30,563
+2'yi yerine koyduğumuzda T2 nedir?
+
+641
+01:46:30,663 --> 01:46:36,344
+T1 artı T0 artı 2 üzeri 0, 1.
+
+642
+01:46:37,603 --> 01:46:40,243
+T1'in değeri 0'dı, T0'in değeri 0'dı.
+
+643
+01:46:40,323 --> 01:46:40,983
+Bu da 1 geldi.
+
+644
+01:46:41,503 --> 01:46:42,323
+T2 1 oldu.
+
+645
+01:46:43,243 --> 01:46:44,844
+2 için olduğunda hakikaten bir tane var.
+
+646
+01:46:44,923 --> 01:46:45,643
+3 için bulalım.
+
+647
+01:46:47,003 --> 01:46:47,523
+T3
+
+648
+01:46:47,523 --> 01:46:50,043
+T2 artı
+
+649
+01:46:50,355 --> 01:47:03,755
+t1 artı 2 üzeri bir çekmekten 2. t2'nin sonucu ne? 1, t1'in sonucu 0, 1 artı 0 artı 2'den 3'ü buluyoruz.
+
+650
+01:47:03,755 --> 01:47:10,595
+Bunu da bulduk. 4'ü de ispat edebiliriz. Yani burada ben bunu bayağı bir demedim. İnanmayan baksın.
+
+651
+01:47:10,595 --> 01:47:17,715
+Başka bir çözüm yöntemi daha var da onu bulayım. Bir ara bir ara not etmiştim. Yani kombinasyon yoluyla
+
+652
+01:47:18,195 --> 01:47:22,756
+çözme. Onu bulabilirsem içeride vardır. Aradan sonra bakalım.
+
+653
+01:47:28,051 --> 01:47:49,511
+Şimdi n tane bit var. Bu n tane bitten, n sağdaki birle bitiyorsa, o birle biten durumlara bakarsam, bu bir, benim şartımı bozuyor mu? Bozuyor. İki tane yan yana sıfır şart. O zaman bu biri dikkate almadan geri kalan n-1 tane bitin içinde kaç tane çift sayılar var onu hesaba katacağım.
+
+654
+01:47:50,195 --> 01:48:12,395
+tn'de n bitte tn tane varsa n-1 bitte tn-1 kadar var. Yani problemi küçültüyorum. Bakın bu da bir bilinme. Ama bu küçüle küçüle nereye kadar gidecek? Sıfıra kadar gidecek şimdi bulunabilir. Yani ben şu an tn'i bilmiyorum ama t0'ı biliyorum, t1'i biliyorum. 1'den 2, 2'den 3, 3'den 4'ü bula bula. n-1'i de bulurum elinde bulurum.
+
+655
+01:48:15,188 --> 01:48:37,963
+sıfırsa ama onun yanındaki birse bu da durumu bozuyor. Yani bu iki bit boşa gitti demektir. O zaman problemi t n-2 olarak düşeceğiz. Şimdi burada son iki bit için 1-1 olabilir, 0-1 olabilir, 1-0 olabilir, 0-0 olabilir. Şimdi 1-1 olması durumu zaten şu 1 olması durumu şu ikisini de sağlıyor. Çünkü geri kalanına bakıyorsun. Mesela...
+
+656
+01:48:37,971 --> 01:48:49,251
+1-1 olursa o zaman t n-1'in içinden t n-2 zaten çağrılacak ya iki defa saymamış oluyoruz. Bunu ayrıca hesaba katmayacağım. Çünkü o 1 başta olması benim için yeterli.
+
+657
+01:48:49,251 --> 01:49:03,411
+Şimdi 1-0 olma durumuna bakıyorum. Şu ikisi aynı haftada şuna gitti. 1-0 ise bu iki bit de boşa gitti. Problemi t n-2 için çözeceğim ve buna ekleyeceğim. Burada örtüşen durumlar olması diye eklemek zorundayız.
+
+658
+01:49:03,891 --> 01:49:12,531
+Bu da tamam. 0, 0 ise, 0, 0 olan bütün durumlar zaten her şeyi sağlıyor. Bu da 2 üzeri n-2 kadar. Bunların bütün hepsini topladığımızda şu ifade çıkacak.
+
+659
+01:49:13,391 --> 01:49:20,151
+Başlangıç koşullarımızda neler? n'in 0 ve 1 olduğu durumlar. Bunu yerine koyduğumuzda her bir durumu bulabiliyorsunuz.
+
+660
+01:49:20,751 --> 01:49:24,571
+Bana şu ifade biraz arızalı geldi ama bunu da bir test etmeye değerli.
+
+661
+01:49:28,451 --> 01:49:29,511
+Burada kimde oluyor?
+
+662
+01:49:32,340 --> 01:49:43,660
+Tamam. Yani şu belki şey, hoca çünkü bunu çözerken bu dersteki hoca muhtemelen sezgiyle çözdü. Yani dedi ki sıfır, sıfır, işte bir, üç bunların arasında bu paten bularak çözmeye çalıştı.
+
+663
+01:49:44,200 --> 01:49:52,360
+Onu da yaparken şuradaki homojen terimi unuttu. Çünkü çok büyük sayılarda eklenecek olan homojen terim iki üzeri enler kadar.
+
+664
+01:49:52,360 --> 01:50:00,000
+Hani onuncu bit için baktığımızda burada sabit bir şey eklemek geride bırakır. Yani düşünün bir olursa...
+
+665
+01:50:00,000 --> 01:50:15,000
+10 olursa da 1 ekliyoruz, 10 olursa da 1 ekliyoruz. Diğerden sonra çok az bir terim gelecektir. Onun için burada da ben yanlışlık sezmiştim ama şey değil, şeyde iddia edemiyoruz sonuçta. Evet, bir ara verelim. Geldiğimizde devam ediyoruz arkadaşlar. Saat 4'te görüşmek üzere.
+
+666
+01:50:15,000 --> 01:50:26,000
+Efendim, şu şey, şu an son soru. Küçeleri bir koyarak aralarında yerleştireceğiz.
+
+667
+01:50:26,996 --> 01:50:36,996
+Bakalım. Orada tekrardan bir tablo da, baskın üçgenine göre daha boyutlu. Yani nasıl diyoruz? Mesela kaç tane olsun? Beş tane olsun.
+
+668
+01:50:36,996 --> 01:50:54,604
+Birileri aralığında bir olacak şekilde ayırırız. Yani kaç tane biri ayıracağız? Mesela üç tane. Solda bir olsun, aradığı boşluk. Ha, diyorsun ki burada iki tane sıfır olacak, üç tane de bir olacak. Veya üç sıfır olacak, iki bir olacak.
+
+669
+01:50:54,612 --> 01:50:59,731
+Hocam, dildi de, ben de aynı şekilde koyuyorum. Mesela sol en güçlendirip koydum hani beş. Tamam.
+
+670
+01:50:59,731 --> 01:51:02,811
+Bir de sağa, bir de ne koydum direkt. Tamam.
+
+671
+01:51:02,811 --> 01:51:09,011
+Zaten bunun içindiklerinde dönüşümleri yok. Sadece ikisinde iki aralıkta sıfır ya da bir olabilir. Ya bunun dış konumları var.
+
+672
+01:51:09,011 --> 01:51:13,811
+Tamam, tüm durumlar ne burada? Tüm durumdan aksi durumu çıkartayım diyoruz. Aynen.
+
+673
+01:51:13,811 --> 01:51:18,412
+Yani tüm durum ne olacak mesela? Burada sıfır sıfır. Burada bir tane durum olur.
+
+674
+01:51:18,412 --> 01:51:20,612
+Dildi de olur.
+
+675
+01:51:20,787 --> 01:51:27,787
+O zaman burada 2 buradan, 2 buradan, 4 durum olacak.
+
+676
+01:51:27,787 --> 01:51:35,787
+Aynen ama şey işte, baskı üçgenin dağıldığı için tekrar permütasyonda hani sıfır ayı sıfır ile aynı şekilde dağıldığı için bu 3 oluyor.
+
+677
+01:51:35,787 --> 01:51:39,787
+Ha yani şurası sıfır veya 1 olacak.
+
+678
+01:51:39,787 --> 01:51:44,787
+Şurası sıfır veya 1 olacak.
+
+679
+01:51:47,507 --> 01:52:00,907
+Veya burada şunu değersin, sıfır olma durumun, bir olma. Veya şöyle düşün, burada iki tane durum olabilir, burada bir tane durum olabilir. Evet. O da iki tane olabilir.
+
+680
+01:52:00,907 --> 01:52:07,807
+Olam sıfır sıfır sıfır bir bir bir olmuyor mu? Yani burada sıfır olursa şurada bir olacak, burada bir olursa?
+
+681
+01:52:07,807 --> 01:52:10,807
+Bir ya da sıfır olacak, üç tane olması lazım.
+
+682
+01:52:11,539 --> 01:52:25,484
+Evet 0 yani 1 0 1 0 1 1 0 1
+
+683
+01:52:27,604 --> 01:52:30,384
+Bunların hepsi de bir cilin. Yani şurada iki tane durum.
+
+684
+01:52:30,384 --> 01:52:37,824
+Ayrıca ama şey, dörtten bir durum oluyor. Birbiriyle yer değiştirmesi olmadığı için ben hani o daha büyük sayılarda tekrarlı permütasyon başvuruyorca o birbiri bir saniye.
+
+685
+01:52:37,824 --> 01:52:43,224
+Onu bir kurala göre söylemen lazım. Yani ben onu diyorum. Bir genel şey...
+
+686
+01:52:43,224 --> 01:52:49,184
+Açtım hocam, bir paskolü işgene çeke. Sanki şey işte kombinasyon, bir videodan bana istersen paylaş.
+
+687
+01:52:49,184 --> 01:52:54,464
+Hani şimdi yapmak zorunda değilsin de sonra da olur. Bir bölümüne gideyim de geleceğim.
+
+688
+01:52:59,412 --> 01:53:01,412
+Hocam, biz de şu an BBC'nin almalı var.
+
+689
+01:53:01,412 --> 01:53:02,932
+İmzayı atıp gelirmemiz.
+
+690
+01:53:02,932 --> 01:53:05,412
+İmza atmaya da gerek yok, devamsızlıktan bırakmıyoruz.
+
+691
+01:53:05,412 --> 01:53:07,412
+Biz de alışkanlıkta.
+
+692
+01:53:07,412 --> 01:53:09,036
+Alışkanlıkta.
+
+693
+01:53:14,771 --> 01:53:16,451
+Çeşitlikle, bir de en oğlu gülüm.
+
+694
+01:53:34,804 --> 01:53:36,804
+Nasıl alabiliyorsunuz?
+
+695
+01:53:36,804 --> 01:53:38,804
+Koşunuz koşulur mu sevdi?
+
+696
+01:53:38,804 --> 01:53:41,804
+Yok koşul yine yaptı önce de mi?
+
+697
+01:53:41,804 --> 01:53:43,804
+Çakışma durur mu?
+
+698
+01:53:43,804 --> 01:53:46,804
+Aksız, çakışmadan bile evet söyleyelim.
+
+699
+01:53:55,380 --> 01:53:56,268
+Bu daş kolay da bu dağ.
+
+700
+01:54:01,747 --> 01:54:03,547
+Aklımda gelen de sizden arkadaşlar var mı?
+
+701
+01:54:03,547 --> 01:54:05,148
+Aklımda bir şey var mı?
+
+702
+01:54:05,148 --> 01:54:06,947
+Hocam, şey yapmıyorum.
+
+703
+02:05:32,148 --> 02:05:34,148
+Sesimiz geliyor mu arkadaşlar?
+
+704
+02:05:35,747 --> 02:05:36,747
+Diyor musunuz?
+
+705
+02:05:39,068 --> 02:05:40,087
+Unutacağım.
+
+706
+02:05:46,963 --> 02:05:57,963
+Şöyle bir, var mı çözüm üreten, hocam şöyle bir yol izleyebilirim diye. Gel. Gel şurada. Veya oradan, istersen yazabilirsin de.
+
+707
+02:05:57,963 --> 02:06:13,547
+Tamam, şey yani, sonu tam alayım. Tamam abi. Ben de. Tamam gel, deneyelim. Tamam. Ben de. Kalemim olsa şey, tamam. Ben şey bir şeyimim mesela. Sıkırsın. Dinliyoruz.
+
+708
+02:06:14,323 --> 02:06:17,143
+Arkadaşlar, mesela 5 haneli olsun.
+
+709
+02:06:17,143 --> 02:06:17,903
+Tamam.
+
+710
+02:06:17,903 --> 02:06:22,263
+Sıfır sıfırı sağlayan durumlarla birbiri sağlayan durumlarla aynı süre.
+
+711
+02:06:22,263 --> 02:06:23,543
+Hıhı.
+
+712
+02:06:23,543 --> 02:06:28,143
+Mesela sıfır sıfır sağlayan 6 hanı durum varsa, birbiri sağlayan da 6 hanı durum varsa.
+
+713
+02:06:28,143 --> 02:06:28,923
+Evet.
+
+714
+02:06:28,923 --> 02:06:31,983
+Bir de ikisini de sağlamayan durum var.
+
+715
+02:06:31,983 --> 02:06:32,763
+Tamam.
+
+716
+02:06:32,763 --> 02:06:38,123
+O sadece şeyde olur. 1 sıfır, 1 sıfır, 1 sıfır, 1 sıfır, 1 sıfır, 1 de olur.
+
+717
+02:06:38,123 --> 02:06:40,943
+Bir sıfır veya tam yer değişecek. Değil mi?
+
+718
+02:06:41,395 --> 02:07:05,067
+Sıfır bir sıfır bir sıfır dolu. Tamam. Tamam. Bütün iklimat 32 idi. Otoşuk kalır. Tamam. Tamam. Bu 30'un içinde bir sadece sıfır sıfırların sağlanlığı var. Evet. Birbirlerinin sağlanlığı var. Bir de ikisinin sağlanlığı var. O ikisinin sağlanlığını çıkarmamız lazım aslında. Bu şekilde de yapalım. Nasıl değilim ama.
+
+719
+02:07:08,148 --> 02:07:15,908
+Burada inklusion, exclusion teoremini unutmamak gerekiyor. İllaki bir şey bir şeyle kesişince fazladan sayma yapabiliyoruz.
+
+720
+02:07:15,908 --> 02:07:20,148
+Aynı da sıfır sıfırda birbiri sağlamlığa çıkartacağız.
+
+721
+02:07:20,148 --> 02:07:21,148
+Evet.
+
+722
+02:07:21,148 --> 02:07:22,148
+Bir de öyle olur.
+
+723
+02:07:22,148 --> 02:07:24,148
+Ama nasıl sayıcılık?
+
+724
+02:07:24,148 --> 02:07:27,148
+Genel bir şekilde. Olmaz.
+
+725
+02:07:27,148 --> 02:07:28,148
+Ama sayamadım.
+
+726
+02:07:28,148 --> 02:07:30,148
+Tamam, bir düşün bakalım. Belki bir çözüm üretirsiniz.
+
+727
+02:07:34,228 --> 02:08:01,228
+kendilebilir ve jenerik bir çözüm üretene ortalamasına artı 5 puan vereceğim. Hadi bakalım. Gelecek haftaya kadar süre var. Şimdi düşündüğüm şey şu arkadaşlar benimle. Yani tabi test etmek gerekiyor. Şimdi tüm durumlardan sıfır sıfır yan yana olmayan durumları çıkarsam bulabilirim. Tabi tüm durumdan kastımız
+
+728
+02:08:02,292 --> 02:08:29,731
+Eğer 5 bitlik veriler içerisinde yapacaksam, 5 bite göre, 6 bitlik ise 6 bite göre düşüneceğim. Çünkü 10 bitlik deyince 10 bit olarak. Bunu daha sonra belki genelleştirebilirim. Her kombinasyonla genel bir formülü de yazmışım ama herhalde onu bir yerde bırakmışım. Şimdi 5 bit için düşündüğümüzde veya 5 bitin 6 bit için düşünelim. 5'i zaten kaç bulmuştuk? 10. 5, 19'muş. 4 zaten elimizde var. Hani onlar misaf eden var. 6 için düşünelim.
+
+729
+02:08:30,195 --> 02:08:33,136
+Şimdi tüm durum 6'da ne? 2 üzeri 6.
+
+730
+02:08:33,136 --> 02:08:36,336
+0-0 yan yana olmayan durumlar.
+
+731
+02:08:36,336 --> 02:08:40,956
+Burada şöyle bakacağız. Şu kısmı biraz açmamız lazım.
+
+732
+02:08:40,956 --> 02:08:42,956
+6 tane
+
+733
+02:08:46,036 --> 02:08:56,956
+sayının 6'sının da 1 olduğu durum vardır. Burada zaten hiçbir 0 olmayacak. Çünkü şey yok, yani 6'nın 0'lı kombinasyonu kadar bir durum var.
+
+734
+02:08:57,256 --> 02:09:03,516
+Burada yan yana olmayan durumları da şöyle düşünüyorum. Birilerin aralarına 0'ları koyarsam yan yana olmadı.
+
+735
+02:09:03,596 --> 02:09:12,155
+Yani birinin yanına bir 0 koyacağım ki yan yana olmasın. Şimdi 6 tane 1 var, 0 tane 0 olacak. O zaman buradan bir tane durum.
+
+736
+02:09:12,560 --> 02:09:33,420
+yan yana olmayan bir tane durum geliyor. Şuraya bir ekleyeceğiz. Artı. Şimdi bir, iki, üç veya şöyle göstereyim. Beş tane birim var. Bir, iki, üç, dört, beş. İki sıfır yan yana olmayacak şekilde bir şey zaten olmayacak da sıfırı bir yere yerleştirmem lazım.
+
+737
+02:09:34,260 --> 02:10:01,500
+Sıfırını nerelere alabiliriz? Buraya alabilirim, buraya alabilirim, buraya alabilirim, buraya alabilirim, buraya alabilirim, buraya alabilirim, buraya alabilirim. Yani 6 farklı durum var. 6'sından bir tanesini seçeceğim, yer seçeceğim ve sıfırı oraya bırakacağız. Kaç tane oluyor? Dolayısıyla 6 tane. Artı 6 buradan geliyor. Peki dörtlü duruma bakalım. 4 tane 1 var. Şimdi 1, 2, 3, 4, 5.
+
+738
+02:10:02,228 --> 02:10:03,768
+5 taneden ne seçeceğiz?
+
+739
+02:10:06,448 --> 02:10:13,288
+6 boşluktan, bir dakika, 5 taneden 2 tane yer seçeceğiz değil mi?
+
+740
+02:10:13,347 --> 02:10:15,708
+Bir tanesini seçtiniz, daha sonra diğerini seçeriz.
+
+741
+02:10:15,807 --> 02:10:22,007
+5'in ikilisini seçip, 5 çarpı 4, 2 çarpı 1'den 10 mu oluyor?
+
+742
+02:10:22,427 --> 02:10:23,768
+Artı 10 gelir.
+
+743
+02:10:25,507 --> 02:10:27,828
+Bu da yan yana olmayan bir ihtimaldir.
+
+744
+02:10:29,127 --> 02:10:29,448
+Sonra,
+
+745
+02:10:30,260 --> 02:10:35,900
+Bir dakika, beş tane seçebiliriz. Ondan sonra dört tane seçebiliriz. Şu doğru olması lazım, tamam.
+
+746
+02:10:36,900 --> 02:10:46,060
+Üç tane bir olduğu duruma bakacak olursak, dört tane yerden iki tane şey seçebilirim.
+
+747
+02:10:47,060 --> 02:10:55,360
+Bir dakika, pardon, şurada yanlış yaptık. Toplam altı bitimiz olacağı için sıfır tane, altı bitimiz olacağı için bir tane.
+
+748
+02:10:55,891 --> 02:11:07,011
+4'ü buradaysa 5'ten bir tane seçeceğiz arkadaşlar. Toplam 6 bit olacak. Bir dakika, yok, 5'ten 1, 2, 3, 2 tane seçeceğiz. Evet, doğru, şurada bir hatamız yok.
+
+749
+02:11:07,011 --> 02:11:15,771
+6 yerden bir tane seçeceğiz, oraya 0 koyacağız, toplam 6 bit olacak. 4 tane birimiz var, 2 tane yer seçeceğiz, toplam yine 6 bit olacak.
+
+750
+02:11:15,771 --> 02:11:22,452
+O 4 yeri, 2 yeri de 5 tane aralıktan birinde seçebiliriz. Burası da 10 olmuş olması lazım.
+
+751
+02:11:23,636 --> 02:11:51,076
+4'ün üçlüsü kadar, 4 tanesinden 3 tanesini seçiyoruz. Bu da ne oluyor? 4 mi oluyor? 2 olduğunda, peki 2 olduğunda durum ne? Kesin değil mi? Yani burada 2 tane şey içerenlerin hepsinde var. Bundan sonra zaten hepsi yan yana olan durumda. Bunlara bakmıyoruz. Dolayısıyla 1 artı 6 artı 16, 10 artı 4.
+
+752
+02:11:52,180 --> 02:12:08,180
+Ne oluyor? 10, 16, 20, 21. 2 üzeri 6, 64, eksi 21'den 3, 43. Şu önceki formülle bir test etmek lazım. Yani t5'i kaç bulmuştuk? 19 bulmuştuk.
+
+753
+02:12:18,644 --> 02:12:20,924
+16 artı 27 mi oluyor?
+
+754
+02:12:22,124 --> 02:12:23,004
+43.
+
+755
+02:12:23,244 --> 02:12:25,564
+Bunu bulduk. İkisi birbirini pesleşeceğiz.
+
+756
+02:12:25,804 --> 02:12:27,604
+Ha, bu çözüm şu.
+
+757
+02:12:28,124 --> 02:12:31,444
+Yani en genel şekilde n bit için yapacaksak
+
+758
+02:12:32,724 --> 02:12:39,884
+bunu nereye kadar indireceğiz? Belli bir noktaya kadar indireceğiz. 2'ye kadar düşecek. Yani 2 üzeri n'den çıkartacağımız şeyler şöyle olacak. Bir kere
+
+759
+02:12:40,404 --> 02:12:42,923
+n artı bir tane boşluğumuz var.
+
+760
+02:12:43,923 --> 02:12:46,743
+Bu boşluklardan kaç tane seçiyoruz? Sıfır tane seçiyoruz.
+
+761
+02:12:47,983 --> 02:12:48,903
+Bunu bundan çıkartıyorum.
+
+762
+02:12:49,363 --> 02:12:50,983
+Eksi veya şurayı şöyle yapalım.
+
+763
+02:12:51,563 --> 02:12:52,223
+Parantez alalım.
+
+764
+02:12:53,003 --> 02:12:53,463
+Artı.
+
+765
+02:12:54,183 --> 02:12:55,115
+Bu sefer...
+
+766
+02:12:59,380 --> 02:13:12,380
+Enin sıfırları derken, şimdi birler arasına sıfır yerleştireceğim, öyle düşün. Birler arasına sıfır koyarsam iki tane sıfır yan yana olmayacak demektir. O mantık üzerine kurgulama yaptım ben.
+
+767
+02:13:18,771 --> 02:13:20,891
+Aslında şurada 6 değil de 7 var arkadaşlar.
+
+768
+02:13:21,692 --> 02:13:28,672
+Şimdi sıfırı şuraya koyabiliriz, buraya koyabiliriz, buraya, buraya, buraya, buraya, buraya ama sıfır tane seçeceğimiz için başka şey yok.
+
+769
+02:13:28,731 --> 02:13:30,792
+Yine 1 olacak. Şurası 7 tane olacak.
+
+770
+02:13:31,832 --> 02:13:33,552
+N artı 1'e sıfır olması.
+
+771
+02:13:33,552 --> 02:13:34,032
+Tamam mı?
+
+772
+02:13:35,192 --> 02:13:36,851
+Bir tane boşluk seçmek gerekiyor.
+
+773
+02:13:40,819 --> 02:13:45,819
+Tamam, dolu. İşte burada zaten bu ihtimal hariç tutulacak ihtimallerden bir tanesi.
+
+774
+02:13:45,819 --> 02:13:50,819
+0-0 olan ihtimal değildi. Öyle değil mi? Tüm durumlardan çıkarmıyor muyum bunu?
+
+775
+02:13:50,819 --> 02:13:55,819
+Onu, bu ihtimali dışarıya çıkartmam için bu bir tane ihtimal. Yani 7'nin sıfırlısı.
+
+776
+02:13:55,819 --> 02:13:57,819
+Oldu mu?
+
+777
+02:13:57,819 --> 02:14:06,572
+Hayır, boşluk seçmem gerekiyor. Yani aralara iki tane bir arasına sıfır yerleştireceksem...
+
+778
+02:14:06,963 --> 02:14:15,203
+Kaç tane aralık var burada? Buraya olabiliyoruz, buraya, buraya, buraya, buraya, buraya, buraya. Toplam 3, 6, 7 tane boşluk değil mi? Bunlardan bir.
+
+779
+02:14:17,684 --> 02:14:34,423
+İşte sıfır tane. Anladın mı? Sıfır tane yerleştireceğim. Onun için burası bir çift. Yani hiçbir tanesinin şey, sıfır tane sıfır koyacağız. Öyle düşünün. Çünkü bunu genel bir kural olarak yazmak yok. Yani başta bir tane illaki şu bir olacak. Bir şeyin sıfırlısı.
+
+780
+02:14:34,931 --> 02:14:46,731
+Sonra bir küçülttüğümüzde, n'in birlisi olarak alacağız. Sonra n-1'in ikilisi olacak. Bu böyle devam edecek. Neye kadar?
+
+781
+02:14:46,731 --> 02:15:01,731
+K dediğimiz, eğer 2 bite düşeceksek bu bir yerde kesin noktaya kadar geliyor. Burada 3 bite kadar indirdik.
+
+782
+02:15:01,811 --> 02:15:07,811
+Yani şey olduğunda, şuradan niye devam ediliyorum?
+
+783
+02:15:07,811 --> 02:15:16,811
+n-k demişim, n-k'nın k artı birisi. Yani k'da 2 dersek oraya kadar düşürüyoruz. Ondan sonra zaten tüm durumlar sağlıyor.
+
+784
+02:15:16,811 --> 02:15:24,811
+Bu durumların hiçbirisi birileri yan yana garanti etmediği için bunların hepsini iki üzerinden çıkartırsa o sayı bulunabiliyor.
+
+785
+02:15:24,811 --> 02:15:25,771
+Tamam mı?
+
+786
+02:15:26,996 --> 02:15:34,436
+Yani benim şuradan yola çıkarak genelleştirdiğim formül de bu. Biraz daha kombinasyon haliyle düşünceler olursak.
+
+787
+02:15:35,876 --> 02:15:41,796
+Şurada tabii biraz daha belki ekstra kontroller ama bunların hiçbirisi de birbiriyle çakışmayan şeyler.
+
+788
+02:15:41,796 --> 02:15:49,796
+Çünkü biz ne yapıyoruz? Daima biriler arasına sıfır yerleştirme mantığıyla olmayan durumları sayma mantığıyla şey yapıyoruz.
+
+789
+02:15:49,796 --> 02:15:54,836
+Burada da durumların birbiriyle örtüşmesi söz konusu olamaz çünkü şurada
+
+790
+02:15:54,996 --> 02:16:03,315
+5 tane 1 varken, burada 4 tane 1 var, buradaki bit dizilimiyle, oradaki bit dizilimi hiçbir zaman birbirisiyle uyuşmayacak demektir.
+
+791
+02:16:03,315 --> 02:16:08,275
+Uyuşmadığı için de bir kesişim kümesi, yani bir fazladan sayma oluşmuyor.
+
+792
+02:16:08,275 --> 02:16:11,235
+Tamam, bu da böyle.
+
+793
+02:16:11,235 --> 02:16:17,235
+Tabii çürütülebilir yani, mutlak doğrudur dedim ama bak bunda bile 43'ü yakaladık.
+
+794
+02:16:17,235 --> 02:16:19,235
+Devam edelim.
+
+795
+02:16:20,275 --> 02:16:27,635
+Son 10 dakikada arkadaşlar sınav sorusu ile alakalı bir şey olacak. Bana 30 geçe falan hatırlatın. Buraya atlamıyorum.
+
+796
+02:16:33,012 --> 02:16:41,412
+Şimdi, algoritmaların son kısmı bu chapter'ın. Biz algoritmayı ne için kullanıyoruz? Bir problemi çözebilmek için.
+
+797
+02:16:42,292 --> 02:16:50,711
+Şimdi, algoritmaların karmaşıklığı olduğu gibi problemlerin de karmaşıklık ailesi veya zorluk ailesi diye bir sınıflandırma yapılmış.
+
+798
+02:16:51,932 --> 02:16:55,711
+Bu sınıflandırma birkaç farklı şekilde yapılıyor. Bir tanesi...
+
+799
+02:16:56,275 --> 02:17:06,775
+çözülebilir veya izlenebilir, tractable problemler, bir de çözülmesi henüz kanıt mümkün olmamış. Yani çözüle, henüz çözülememiş problemler diye ikiye bölüyoruz.
+
+800
+02:17:07,975 --> 02:17:14,435
+Burada bakın, problemlerin karmaşıklığı derken, problem sınıfları aslında bu.
+
+801
+02:17:15,195 --> 02:17:18,115
+Algoritma karmaşıklığı ile çok karıştırmamak gerekiyor.
+
+802
+02:17:24,371 --> 02:17:30,951
+çözülebileceğini gösteren algoritmanın karmaşıklığı polinom zamanında olacak.
+
+803
+02:17:31,951 --> 02:17:34,791
+n, n kare, log n, 1 gibi.
+
+804
+02:17:35,631 --> 02:17:42,252
+Yani eksponansiyel zamana ulaşmamış, n küp, n üzeri n falan da olmamış, n üzeri 4, n üzeri 5 olabilir.
+
+805
+02:17:42,252 --> 02:17:46,691
+Bu tarz bir problem ise bu traktibut çözülebilir olarak adlandırılır.
+
+806
+02:17:47,531 --> 02:17:49,072
+Yani kısa zamanda çözülebilir.
+
+807
+02:17:50,291 --> 02:17:56,451
+Ama en üzeri 100 gibi şeyler çok böyle olası olmadığı için onları buradan dahil etmiyoruz. Yani çözülebilir diyemiyoruz.
+
+808
+02:17:59,331 --> 02:18:06,531
+Amaç burada polinom zamanla bir şey, bir problem çözülebiliyorsa, yani şöyle söyleyelim, daha doğru olsun.
+
+809
+02:18:07,231 --> 02:18:15,191
+Bir problemi çözen polinom zamanla algoritma varsa bu tractable bir problemdir deniyor. Tamam mı? En kısa ifadesi bu.
+
+810
+02:18:16,819 --> 02:18:43,360
+Eğer Interactable ise bunun tam tersi değil. Şimdiye kadarki tecrübemizi, bilgimizi vs. bu problemin çözümü için polinom zamanlı bir algoritma bulamamış. Bu bulunamayacak anlamda değil. Bunları da şu an için Interactable problem diyoruz. Bazı durumlarda işte böyle problemler var. Mesela biraz önce yaptığımız problem aslında kodlamayla çözülebilecek bir şey değil. Yani bütün durumları çözmeye çalışsanız.
+
+811
+02:18:43,647 --> 02:18:48,647
+veya doğruluk tablosu oluşturma şeylerine bakın. İki yüzlere n'lik algoritmalar çalışıyor.
+
+812
+02:18:48,647 --> 02:18:55,647
+Bu da polinom zamanlı değil. Dolayısıyla interaktable kısmında. Yani bunu iki farklı kuşağa ayıracağız.
+
+813
+02:18:55,647 --> 02:19:01,647
+Problemin çözümü için bizim algoritmik sınıflarımız var. 1 var, log n var, n var, n kare var.
+
+814
+02:19:01,647 --> 02:19:08,647
+İşte burada n küplü şey, iki yüzlere n var, üç yüzlere n var falan. Bu taraftaysa interaktable, bu taraftaysa traktable diyoruz.
+
+815
+02:19:08,647 --> 02:19:11,307
+Buradaki kelimeler, yümdeler onlar.
+
+816
+02:19:12,819 --> 02:19:20,059
+Çözümünün bulunması, hiçbir algoritma tarafından mevcut olmayan an sonlu problemler de var.
+
+817
+02:19:20,279 --> 02:19:26,539
+Tabii bunlar şimdilik şey, teori olarak tam bir gerçek ifade değil.
+
+818
+02:19:27,079 --> 02:19:28,399
+Yani ileride bu da değişebilir.
+
+819
+02:19:29,159 --> 02:19:36,759
+Çözümü bulunamaz diye herkesin şu an üzerinde ortak bir kanıt sunduğu, karara vardığı problemler deniyor.
+
+820
+02:19:36,759 --> 02:19:39,079
+Örneğin, halkı problemi.
+
+821
+02:19:40,371 --> 02:19:47,092
+Turing tarafından göstermiş. Halkın problemi şu, bir program yazıyorsunuz veya bir algoritma geliştiriyorsunuz.
+
+822
+02:19:47,092 --> 02:19:52,051
+O algoritmanın girdisi bir başka program oluyor veya bir başka algoritma.
+
+823
+02:19:52,051 --> 02:19:56,611
+Sizin yazdığınız algoritma, bu algoritma sonlanır mı, sonlanmaz mı, ona bakıyor.
+
+824
+02:19:56,611 --> 02:20:01,572
+Yani program, acaba bu program çalışınca duracak mı, durmayacak mı, ona karar veren bir program.
+
+825
+02:20:01,572 --> 02:20:05,811
+Bunun içinde doğal bir işleme var, algoritma karmaşıklığı var.
+
+826
+02:20:06,036 --> 02:20:12,036
+Onun için çözümü bulunamayan şu an Solvukul aileden biri olarak söylenmiş. Bu bir yaklaşım.
+
+827
+02:20:13,036 --> 02:20:19,775
+Problemleri ayrıca sınıfsal olarak işte polinom zamanlı mıdır değil midir diye şu şekilde bölüyoruz.
+
+828
+02:20:20,675 --> 02:20:25,615
+Çözülebilir problemler P sınıfı yani klas P dediğimiz buradaki P'nin kaçtığı polinom.
+
+829
+02:20:25,615 --> 02:20:31,916
+Tamam mı? Eğer polinom zamanla çözünürlüğü yoksa ama
+
+830
+02:20:34,324 --> 02:20:47,884
+Sözümüz hali polinom zamanla kontrol edilebiliyorsa buna da NP sınıfı diyoruz. Buradaki N'in karşılığı non-deterministik, yani polinom olup olmadığı henüz belli değil.
+
+831
+02:20:48,924 --> 02:20:59,884
+Not polynomial değil, non-deterministik polynomial. Bu problemin çözümü için henüz aslında bir polinom zamanla algoritma geliştirilmemiş.
+
+832
+02:21:00,308 --> 02:21:10,108
+deniyorsa buna da MP sınıfı diyoruz. Örneğin sıralama bizim bildiğimiz yaygın problemlerden bir tanesi. N kare ile çözülebiliyor. O zaman bu polinom zamanı.
+
+833
+02:21:10,828 --> 02:21:17,588
+Kabul edelim ki sıralama algoritması şey olsun. Polinom zamanında çözülememiş bir problem olsun. Böyle bir şey yok da.
+
+834
+02:21:18,708 --> 02:21:27,768
+Peki biz sıralama problemini, elimizde bir dizi var. Bu dizinin sıralam olup olmadığını kontrol etmek istesek polinom zamanı bir şekilde edebilir miyiz?
+
+835
+02:21:28,915 --> 02:21:33,015
+verilen bir dizi var. O dizi sıralı mıdır, değil midir? Bunun kararını vereceğiz. Nasıl yapacağız?
+
+836
+02:21:34,935 --> 02:21:42,335
+1 ile 2'ye bakarsınız. 2 ile 3'e, 3 ile 4'e, n-1 ile n inceye bakarsınız. Dolayısıyla bir tane döngü çevirmeniz yeterli.
+
+837
+02:21:42,575 --> 02:21:47,455
+Yani o döngünün içerisinde kural bozulmuyorsa sıralıdır veya değildir. Bunu kesin bilebiliyoruz.
+
+838
+02:21:47,455 --> 02:21:53,455
+Şimdi problemi çözmek, kabul edelim ki non-deterministlik ama problemin...
+
+839
+02:21:54,484 --> 02:22:21,564
+çözüm sunduğunu iddia ettiği bir çözüm üzerinde kontrol yapmak polinomi oluyorsa bu işte NP sınıfı oluyor. Tamam mı? Kontrol edilebilme eğer polinomsa NP sınıfı diyebiliyoruz. Bu problemler kendi içlerinde mesela gruplandı diyor. Bunun yarışmaları falan var. Matematikçiler bu konuda çok yoğunlaşıyorlar. İşte yeni yeni algoritmalar öneriliyor. NP sınıfı arkadaşlar böyle bir problem ailesi.
+
+840
+02:22:21,855 --> 02:22:24,855
+O sınıftaki problemler de birbirine çok benziyorlar.
+
+841
+02:22:26,256 --> 02:22:33,236
+İddia edilen şey şu, eğer problemlerin herhangi birisi polinom en kötü zaman algoritmaları çözülebiliyorsa,
+
+842
+02:22:33,956 --> 02:22:36,416
+yani en küplü, en üzeri dörtte bir şeyle çözülebiliyorsa,
+
+843
+02:22:37,376 --> 02:22:42,136
+NP sınıfındaki tüm problemler de polinom en kötü zaman algoritmaları çözülebilir denmiş.
+
+844
+02:22:42,136 --> 02:22:43,495
+Yani bu ifade sunulmuş.
+
+845
+02:22:44,376 --> 02:22:47,695
+Bu ezelliği taşıyan algoritmalar NP-complete deniyor.
+
+846
+02:22:48,147 --> 02:22:57,147
+Yani öyle bir problem ailesi var ki, o aileden bir tanesini çözen bir polinom zamanlı algoritma önerdiniz, diğerleri de çözülebilir. Bu NP-complete.
+
+847
+02:22:57,147 --> 02:23:07,147
+Ama o aileden hiçbir tanesi ya hiçbirisi polinom zamanlı çözülemiyorsa da bunlara NP-hard problemi diyoruz.
+
+848
+02:23:07,147 --> 02:23:14,987
+P, NP, NP-complete, NP-hard. En zor olanı NP-hard. Yani o problemin
+
+849
+02:23:15,347 --> 02:23:21,148
+çözüldüğünün kanıtını, ispatını polinom zamanlı bir şeyle bile yapamıyorsun.
+
+850
+02:23:21,148 --> 02:23:24,948
+Sıralama özelliğinde düşünmeyelim de daha karmaşık problemler düşünün.
+
+851
+02:23:24,948 --> 02:23:29,324
+Herhangi bir polinom zamanlı algoritma ile kontrolünü yapamıyorsun. O da müdür.
+
+852
+02:23:30,835 --> 02:23:43,236
+Bunların üzerinde problem sınıflandırması var. Bunlar algoritma sınıfları değil, problem sınıfları. Bu konunun detayları da zannediyorum hesaplama kuramında ve algoritma analizlerinde daha fazla söylenecek.
+
+853
+02:23:43,236 --> 02:23:55,835
+Bu konu yani ilgilenmenizi tavsiye ederim. Güzel bir teorik tarafı var. Bazı kısımları matematiği ilgilendiriyor, bazı kısımları başka şeyleri ilgilendiriyor ama hoş, güzel okunacak şeyler var burada.
+
+854
+02:23:58,004 --> 02:23:59,244
+falan işinizi görür.
+
+855
+02:24:02,164 --> 02:24:04,664
+Şimdi gelelim yeni konumuza.
+
+856
+02:24:05,943 --> 02:24:07,224
+Vaktimiz var daha değil mi?
+
+857
+02:24:14,835 --> 02:24:24,835
+yeni konumuz graflar ve kromatik fonksiyonlar. Burada biraz ilerleyelim, gelecek hafta daha ayrıntısıyla konuşuyoruz.
+
+858
+02:24:26,835 --> 02:24:33,835
+Şimdi biz bağıntılardan bahsettik. Bağıntı, karteziyen çarpımın bir alt kümesidir demiştik.
+
+859
+02:24:33,835 --> 02:24:39,835
+Graflar da bu bağıntıların görselleştirilmiş hali. Bilgisayarcı açısından baktığımızda
+
+860
+02:24:40,399 --> 02:24:43,799
+Graflar birçok problemi çözmede bize kolaylık sağlıyor.
+
+861
+02:24:48,371 --> 02:25:07,432
+girişini yapalım. Gelecek hafta ayrıntısına gireriz. Şimdi bir graf, bir küme aslında, düğümler ve kenarlar, şu vertex dediğimiz şey, edge de kenar dediğimiz ifade, şuna node da diyebiliyoruz bazen.
+
+862
+02:25:08,435 --> 02:25:16,755
+Boş olmayan bir V dizisi, yani illaki düğümlerimiz olacak ve bu düğümler arasındaki ilişkileri gösteren E kenarlarına oluşan bir küme.
+
+863
+02:25:18,036 --> 02:25:22,195
+Uç noktalar, işte şunlar dediğimiz, not dediğimiz şeyler olacak.
+
+864
+02:25:22,835 --> 02:25:31,556
+Bu gerçek hayatta herhangi bir problemin soyutlanıp buna dönüştürülmesiyle bir sürü özellikle bilgisayar açısından problem çözebiliyoruz.
+
+865
+02:25:32,355 --> 02:25:34,755
+En kısa yol problemi bunlardan bir tanesi.
+
+866
+02:25:34,995 --> 02:25:40,115
+Proteinler arası etkileşim bunlardan bir tanesi. Yani sayılamayacak kadar bir sürü problem var.
+
+867
+02:25:41,236 --> 02:25:48,056
+Şimdi bağıntıları hatırlarsak bir R bağıntısında A ve B ikilileri oluyordu.
+
+868
+02:25:48,795 --> 02:25:55,076
+Öyle ki işte A işte bir kümenin elemanı, işte X kümesinin, B de X kümesinin elemanıydı.
+
+869
+02:25:55,572 --> 02:26:19,451
+Burada bir de ne var? İşte bu A ile B'yi bağlayan şey var. İşte Relation'ın grafiksel gösterimi bu oluyor. İşte elemanı da X diyelim devamına şey gerek yok. İkisini de bağlayan böyle bir şey. Bunların farklı versiyonları var. Eğer ben bu bağlantı arasına ok işareti koyarsam, şöyle diyelim veya bu bir yönlü graph, Directed Graph oluyor.
+
+870
+02:26:20,308 --> 02:26:41,848
+Bir de bunun üzerine sayısal değer koyarsam maliyetli graf, ağırlıklı graf dediğimiz şey oluyor. Yönlü olabilir, ağırlıklı olabilir, yönsüz olabilir, ağırlıklı olabilir, yönsüz olup ağırlıksız olabilir. Dört farklı durumda mevcut. Problem hangisini gerektiriyorsa. Buna göre bu problemler üzerinde başka başka algoritmalar geliştirilmiş. Bu derste onların bazılarını göreceğiz.
+
+871
+02:26:42,579 --> 02:26:57,759
+Bunlardan bir tanesi, işte grafı oluşturan bileşenlerden bir tanesi, dedik ki düğümler kümesi, öbür de kenarlar kümesi. Şöyle bir grafa bakarsak, işte şunlar düğümler, buradan düğümler kümesini yazın dersek, şunlar çıkıyor, işte s, u, v, w, x, y, z.
+
+872
+02:26:58,759 --> 02:27:09,759
+Kenarlar kümesi de bağıntının nesi? İlişkilendi, ikili hali. Tabi bu şey bir graf olduğu için, yönsüz bir graf olduğu için bir defa yazmak yeterli.
+
+873
+02:27:10,111 --> 02:27:17,931
+Yani V'den W'ye bir kenar var. Eğer yönlü bir graf olsaydı, W'den B'ye de bir kenar olsaydı, o ikisini de yazmak gerekecekti.
+
+874
+02:27:18,611 --> 02:27:26,011
+Tabii graflarda şöyle şeyler söz konusu, biz bunu bağıntıda yazmıyorduk ama X, S veya pardon X ile V arasına bakalım.
+
+875
+02:27:26,131 --> 02:27:35,631
+İki farklı şekilde bağlanmış. Bunlar planar graf diye geçiyor. Elbette burada bir defa yazılmış ama gerektiğinde X, S bir daha var mı?
+
+876
+02:27:36,852 --> 02:27:49,012
+Aslında şurada, pardon x, b, x, b'ye bakın 2. Şöyle göstererek 2 defa yazıldığında x, x'te niye takıldıysan, 2 tane bağlantıyla bağlandığını göstermek için şöyle bir notasyon kullanılıyor.
+
+877
+02:27:50,992 --> 02:28:01,012
+Kenarlarda ikisi arasındaki etkileşim. Örneğin sosyal medyada falanca kişiyle falanca kişi birbiriyle arkadaş. Ne yapıyorsunuz? O ikisi arasında bir bağ vardır şeklinde tutuluyor.
+
+878
+02:28:02,100 --> 02:28:12,420
+Kevin Bacon'ı ilk haftalarda göstermiştim. İki kişi arasındaki atlama, akrabalık veya tanışma şeyi. O da bunlardan yola çıkarak elde edilen bir skor aslında.
+
+879
+02:28:13,459 --> 02:28:23,220
+Eğer düğümlerden bir tanesi, hiçbir düğümle bağlı değilse, ilişkisi yoksa buna da izole edilmiş kenar, köşe veya düğüm diyoruz.
+
+880
+02:28:25,319 --> 02:28:29,299
+Özel kenarlar var. Bunlara bakalım. Paralel kenar dediğimiz.
+
+881
+02:28:30,260 --> 02:28:40,479
+İki veya daha fazla kenar bir düğüm şifti ile bağlanmıştır. Yani bir düğüm şifti dediğimiz şuradaki A ve B'de olduğu gibi işte bir buradan bağlanıyor. Peki nerede kullanılabilir?
+
+882
+02:28:46,804 --> 02:28:54,564
+Nerede işe yarar? Böyle bir gerçek hayat senaryosu olabilir mi? İki insan arasında böyle bir şey olabilir mi?
+
+883
+02:28:54,564 --> 02:28:56,244
+Yollarda.
+
+884
+02:28:56,244 --> 02:29:03,564
+Efendim? Yollarda. Evet, mesela güzel. İki şehirden illaki iki şehir arasında bir yol olmak zorunda değil.
+
+885
+02:29:03,564 --> 02:29:05,564
+Yollarda.
+
+886
+02:29:05,564 --> 02:29:09,451
+Ha, mesela.
+
+887
+02:29:09,843 --> 02:29:15,443
+Ankara'ya gidiyorsun, işte bir otoyol var, bir de normal yol var. Hani paralı ve parasız yol olarak.
+
+888
+02:29:15,443 --> 02:29:20,363
+Bir tane daha var galiba. Bu. İnsanlar arasında olabilir mi?
+
+889
+02:29:25,556 --> 02:29:29,556
+Arkadaşlık ilişkileri içerisinde ve akrabalık ilişkileri içerisinde olabiliyor böyle şey.
+
+890
+02:29:30,556 --> 02:29:39,556
+Şimdi söyleyelim, mesela bizim ailede var. Şimdi burada bir kişi var, bu bir kişi var. Mesela bu ben, bu da amcam.
+
+891
+02:29:40,556 --> 02:29:45,556
+Benim amcam teyzemle evliyse, amcam aynı zamanda eniştem olmuyor mu?
+
+892
+02:29:46,556 --> 02:29:51,404
+Veya işte teyzem aynı zamanda yengem oluyor, öyle düşün. Bu tarz şeyler de olabilir.
+
+893
+02:29:51,796 --> 02:30:00,876
+Bazısı soruyor, bu akraba evliliği falan değil mi diye, ne alakası var diyorum. Bir aileden iki kız almak, akraba evliliği değil ama bu tarz durumlarda modellenebiliyor.
+
+894
+02:30:00,876 --> 02:30:14,956
+Ödeyelim. Şu özel bir şey bakın, kendisiyle ilişkisi olduğunu gösteren şey, buna da loop, döngü diyoruz. Diğerlerine de zaten klasik şeyler sorum var.
+
+895
+02:30:18,131 --> 02:30:25,131
+Özel graflarımız var. Bunlar özel kenarlar. Bu özel kenarlar üzerinden özel graflar yapılmış.
+
+896
+02:30:25,131 --> 02:30:33,131
+Basit graf dediğimiz yönsüz olacak, paralel kenar olmayacak. Yani bir nokta bir başka nokta ile bir defa bağlanacak.
+
+897
+02:30:33,131 --> 02:30:43,131
+Ve döngü içermeyecek. O zaman basit oluyor. Çoklu graf ise basit graf yeterli değil. Yönsüz ama paralel kenarı olan graflar.
+
+898
+02:30:43,131 --> 02:30:45,131
+Şurada olduğu gibi.
+
+899
+02:30:45,263 --> 02:30:49,504
+Bunlar planar falan o aile var, onlara daha sonra bakacağız.
+
+900
+02:30:50,383 --> 02:30:56,063
+Basit graf elbette bir çoklu graftı fakat çoklu graftlar basit graft değillermiş.
+
+901
+02:30:56,063 --> 02:30:59,504
+Bilinen mantık şeyleri. Yapay graft psodograftlar.
+
+902
+02:31:00,223 --> 02:31:06,223
+Yönsüz, paralel kenarı olan ve döngü içeren graftlar psodograft oluyor.
+
+903
+02:31:07,343 --> 02:31:11,504
+Ağırlıklı graftlar da iki graft arasındaki kenara bir...
+
+904
+02:31:11,891 --> 02:31:29,391
+Sayısal değer veren. Bu ne olabilir? Bir şeyin maliyeti olabilir. İşte bir yerden bir yere gitmenin zamanı olabilir. Ne bileyim bir şeyin verinin indirilme süresi olabilir. Veya bir işin yapılması ile alakalı bir başka maliyet olabilir. Genellikle biz buna cost diyoruz. Hani en genel kapsayıcı ifade açısından.
+
+905
+02:31:29,391 --> 02:31:33,391
+Efendim?
+
+906
+02:31:37,391 --> 02:31:39,691
+Aynen öyle.
+
+907
+02:31:42,420 --> 02:31:57,260
+yönsüz grafları en temel halde. Şimdi bir graf var, directed graf dediğimiz. Bu yönlü olacak. Yani A'dan F'ye bir yol var veya bir ilişki var ama F'den A'ya bir ilişki tanımlanmamış.
+
+908
+02:31:58,639 --> 02:32:08,500
+Var mesela sosyal medyada işte birisi birisini takip ediyor, onun da onu takip etmesi lazım ki tam şey olsun. Karşılıklı olarak olmuyorsa bu tek yön diyeceksiniz.
+
+909
+02:32:10,388 --> 02:32:12,747
+Şurada bunun özeti var.
+
+910
+02:32:13,427 --> 02:32:14,048
+Neymiş?
+
+911
+02:32:14,208 --> 02:32:14,968
+Böyle bir şey yazıyor mu?
+
+912
+02:32:18,963 --> 02:32:45,443
+Bu laflar birçok problemin arkadaşlar, yön şeyde, bu özet bunları geçelim, aynı şeyler. Birçok problemin çözümünde bize yardımcı oluyor. Bir kere grafı bilgisayar açısından düşününce en basitinde matris ile temsil edebiliyorsunuz veya linkli listelerle temsil edebiliyorsunuz. Koskoca dünya haritasındaki illeri, ilçeleri, ülkeleri, yolları düşünün. Dizi ile temsil edebilmek veya matris ile temsil edebilmek gayet güzel bir şey. Çünkü matris isim.
+
+913
+02:32:45,487 --> 02:32:52,487
+O bir zamanda erişip üzerinde işlem yapacağın şey. Örneğin A noktasından B noktasına bir bağlantı, doğrudan bağlantı var mı?
+
+914
+02:32:52,487 --> 02:32:58,487
+Dersiniz ki bunlar A, B, C, D'yi 0, 1, 2, 3, 4, G'ye ben intislerim.
+
+915
+02:32:58,487 --> 02:33:04,487
+Matrisin dördüncüsü ile matrisin sekizinci şeyi, dört ve sekiz arasından M'nin dördü dördü sekizine bakarım.
+
+916
+02:33:04,487 --> 02:33:09,487
+Eğer orada bağlantı varsa birdir, yoksa sıfır vardır gibi bir şey yorum yaparak.
+
+917
+02:33:10,131 --> 02:33:17,331
+iki şey arasında bağlantı var mı onu bulabilirim. Veya tek atlamalı değil de iki atlamalı bağlantı mümkün mü?
+
+918
+02:33:17,331 --> 02:33:24,932
+İşte bir yerden bir yere gideceğim, oradan oraya gidebiliyor muyum? Bunu tespit edebilmek de yine matisteler üzerinde gayet basit yapılabiliyor.
+
+919
+02:33:24,932 --> 02:33:33,331
+Veya buradaki örnekte olduğu gibi grafların benzerliğine bakabiliyoruz. Problem şu, bunu problem üzerinden konuşacağız.
+
+920
+02:33:33,331 --> 02:33:37,731
+Nesnelerin değişik özellikleri referans alınarak bir graf oluşturuyoruz.
+
+921
+02:33:38,388 --> 02:34:02,208
+Örneğin sizin verdiğiniz ödevlerde, acaba kopya var mı, yok mu? Basit bir şey, graf çıkarma. Diyoruz ki, programın satır sayısına bakalım ödevde. Kaç tane return kullanmış, yani bu kaç tane fonksiyon kullanmış anlamında. Kaç defa fonksiyon çağırmış? Şimdi fonksiyonu tanımlamasıyla çağırması birbirinden farklı şeyler. Bunlar...
+
+922
+02:34:02,208 --> 02:34:07,208
+Benim ayırt edici özelliklerim olabilir. Bunlar daha fazla da olabilir, daha az da olabilir.
+
+923
+02:34:08,208 --> 02:34:13,208
+Verilen örnek programlardan, işte beş tane program üzerinden bunlar sayılmış.
+
+924
+02:34:14,208 --> 02:34:15,208
+66, 21.
+
+925
+02:34:16,208 --> 02:34:24,208
+Ve bunların her birisini uzayda, böyle birincisi bir nolu bırak, iki nolu bırak, üç nolu nokta, böyle bir şeyle gösteriyoruz.
+
+926
+02:34:25,208 --> 02:34:28,208
+Şimdi bunların birbirine benzerliğine nasıl bakarız?
+
+927
+02:34:28,948 --> 02:34:35,788
+Üç boyutlu uzayda uzaklık bilgisine bakarsak, öklüt uzaklığı, iki nokta arasındaki uzaklık formülünü hatırlayın.
+
+928
+02:34:36,427 --> 02:34:44,087
+İşte 66'dan 41'i çıkart, karesini al, bundan bunu çıkart, karesini al, bundan bunu çıkart, karesini al, bunları topla, kare kökünü al.
+
+929
+02:34:44,648 --> 02:34:49,308
+Hatta kare kökünü almaya da gerek yok. Bir tane uzaklık değeri, kimle kimle arasında? 1 ile 2 arasında.
+
+930
+02:34:49,648 --> 02:34:53,747
+1 ile 3'e, 1 ile 4'e, 1 ile 5'e, 2 ile 3'e, 2 ile 4'e, 2 ile 5'e.
+
+931
+02:34:54,164 --> 02:34:58,644
+Bir kere burada yönlü graf mü lazım, yönsüz graf mü lazım?
+
+932
+02:34:59,524 --> 02:35:03,604
+Yönsüz graf yeterli çünkü 1 ile 2 zaten 2 ile 1'i içeriyor.
+
+933
+02:35:04,004 --> 02:35:13,524
+Bütün ikililer arasındaki maliyetleri, uzaklıkları elde ederek ne yapacağım? 1 ile 2 arasında bir kenar kuracağım.
+
+934
+02:35:13,524 --> 02:35:19,844
+Bu elde ettiğim uzaklık bilgisine bir şey yazacağım, mesela 40 çıksın diyelim. Şu aradaki uzaklık toplam şeyi.
+
+935
+02:35:19,956 --> 02:35:45,956
+1 ile 3'e bakacağım, 2 ile 5'e bakacağım. Bunlar 3 boyutlu uzayda, şöyle gösterdikten sonra, şuraya bakalım. Şöyle hesaplanmış. 1 ile 2 arasında, 1 ile 3 arasında, 1 ile 4 arasında, 1 ile 5. Olası bütün durumlar var. Sonra bunları çiziyorsunuz. Bakın, yönsüz ama ağırlıklı bir graf haline geldi. Şurada 1 var, burada 2 var. Bu 36 imiş. Ondan sonra bununla...
+
+936
+02:35:46,708 --> 02:36:09,727
+3 arasında 24 var. 2 ile 3 arasında 38 varmış. 4 ekledim, 5 ekledim, neyse onu çizmiyorum. Sonra diyorsunuz ki bir kurban belirleyelim burada. Hani bu yeri geliyor bir uzman bilgisi oluyor, yeri geliyor başka şey. İki kod birbirine buradaki özellikli açısından en az ne kadar sporla benzeyebilir.
+
+937
+02:36:10,675 --> 02:36:14,675
+%100 benzerse benzerlik kaç çıkacak? 0 çıkacak. Yani fark.
+
+938
+02:36:15,675 --> 02:36:24,675
+İşte hepsi mesela şu yeni bir örnek gelsin, o da 66, o da 20, o da 1. Benzerliği 0. İkisi birbiriyle neredeyse maliyetsiz.
+
+939
+02:36:24,675 --> 02:36:35,675
+Uzman bilgisiyle veya başka bir şekilde şu uzaklık formülünün nasıl hesaplandığını ben bilmiyorum diyen var mı? Bu öklüt uzaklığı şey, Manhattan uzaklığı. L1 norm diyoruz.
+
+940
+02:36:37,716 --> 02:36:41,275
+anlatayım mı? Anlatayım. Şimdi mutlak değer ne demek?
+
+941
+02:36:44,476 --> 02:36:45,396
+Mutlak değer.
+
+942
+02:36:49,012 --> 02:36:53,452
+iki nokta arasındaki fark demektir. Sıfır noktasına olan uzaklık biraz daha dar bir tarımdır.
+
+943
+02:36:54,092 --> 02:36:57,512
+Örneğin mutlak değer 3 dediğinizde 3'ün sıfıra olan uzaklığına bakarsınız.
+
+944
+02:36:58,272 --> 02:37:01,532
+Mutlak değer 3-5, 3 ile 5 arasındaki uzaklık demektir.
+
+945
+02:37:02,452 --> 02:37:09,231
+Burada da şuna bakılıyor. Şimdi üç boyutlu sistemde ister öklüt uzaklığıyla yapın, ister bununla yapın hiçbir şey değişmez.
+
+946
+02:37:09,231 --> 02:37:11,672
+Sonuçta pozitif sonuçlar çıkacaktır.
+
+947
+02:37:12,891 --> 02:37:14,891
+Şöyle yapalım. Örnek üzerinden göstereyim.
+
+948
+02:37:17,523 --> 02:37:24,684
+1 ile 4 arasına bakalım. 66'dan 96 çıkarttığınız mutlak değeri aldınız, bu birinci boyuttaki uzaklık değeri.
+
+949
+02:37:25,463 --> 02:37:29,684
+Ne oluyor? 36 oluyor. Şundan şunu çıkarttınız, ikinci boyuttaki uzaklık değeri.
+
+950
+02:37:30,243 --> 02:37:35,763
+Ne oluyor? O da 14 oluyor. Bundan bunu çıkarttınız, 4. Bunları topluyorsunuz, bu size uzaklık bilgisi veriyor.
+
+951
+02:37:36,083 --> 02:37:37,763
+Tabii en kısa uzaklık değil.
+
+952
+02:37:38,123 --> 02:37:45,283
+Yani şöyle bir iki nokta seçecek olursam, en kısa uzaklık şeyde iki boyutta Öklit sistemiyle yani, Psagoruban tisli yapıdır.
+
+953
+02:37:45,459 --> 02:37:57,959
+Menat'ın da size şunu söylüyor buradaki. Önce diyor şurayı al, şu uzaklığı al, sonra burayı al, şu ikisini topla. Bu da bir uzaklık sonuçta. İstersen şöyle bir uzaklık formülü kullan. O da bir şey. Yeter ki aynı formül olsun herkese.
+
+954
+02:37:59,439 --> 02:38:09,159
+Velhasıl bunlar bulunduktan sonra bu sayılar o şekilde bulunuyor. Diyoruz ki uzman açısından veya deneme yanılmayla diyorum ki ben 25 eşik değerim olsun.
+
+955
+02:38:13,620 --> 02:38:21,620
+köşe arasında olağan dışı bir hayatın normal akışına aykırı olan bir ilişki vardır diyebileyim.
+
+956
+02:38:21,620 --> 02:38:38,620
+Kim var mesela burada? 3 ve 5 var. Şu arkadaş var. Mesela 1, 3 ve 5 kendi arasında bir ekip. Şöyle baktığımız zaman diyoruz ki bunların kodlarında anormal bir şekilde benzerlik var. Şimdi burada bırakacağız.
+
+957
+02:38:39,476 --> 02:38:42,636
+Benim bir tane program vardı kullandığım, onu biz de yazmıştık.
+
+958
+02:38:43,156 --> 02:38:47,796
+Gayet de güzel çalışıyordu. Yine anekdot olarak ekleyelim, şey olmuştu.
+
+959
+02:38:48,195 --> 02:38:53,515
+Yani 100 tane kodu inceliyorsunuz, onlar arasında bir similarity, benzerlik, uzaklık buluyoruz.
+
+960
+02:38:53,756 --> 02:38:59,836
+Ve onu 0-100 arasında normalize ediyoruz. Kimisi %80 çıkıyor, %30 çıkıyor.
+
+961
+02:38:59,836 --> 02:39:04,116
+Ve biz dedik ki, şuradan itibaren %90'dan itibaren şey...
+
+962
+02:39:04,595 --> 02:39:08,955
+Bu sefer şeyler gelmeye başladı öğrencilerde. Tabii kopya diye ilan ediyorsun.
+
+963
+02:39:08,955 --> 02:39:18,155
+Hocam o benim yurt arkadaşımdı, o benim ev arkadaşımdı, o benim en yakın olduğum arkadaşımdı, benden bakmış olabilir gibi böyle savunmalar geldi.
+
+964
+02:39:18,155 --> 02:39:22,235
+Bakın dedim ev arkadaşı falan arayan varsa bizim program size bulabilir.
+
+965
+02:39:22,235 --> 02:39:30,235
+Ne yapıyor çünkü benzerlik koyduğum kriterler iki şeyin arasındaki farka bakacak ve gayet mantıklı, güzel sonuçlar almıştık.
+
+966
+02:39:30,235 --> 02:39:32,235
+Bu da onun bir uygulaması.
+
+967
+02:39:32,852 --> 02:39:38,852
+Tabii burada çok grafa da gerek yok. Hani bunu daha kısa veri yapılarıyla oluşturabiliriz.
+
+968
+02:39:38,852 --> 02:39:52,852
+Ve beş tane düğüm varsa bu beş düğümün arasında olası ihtimaller, beşin ikili kombinasyonu kadar, onların bütün durumlarına bakıp, sıralama yapıp, bir yerden kesip ona göre karar vereceksiniz.
+
+969
+02:39:52,852 --> 02:39:56,852
+Burada bitirelim bu kısmı.
+
+970
+02:40:01,556 --> 02:40:06,416
+Hocam bizim bu Manhattan dediğimiz Taxi Cap Distance gibi mi oluyor?
+
+971
+02:40:07,195 --> 02:40:08,216
+Ne Distance?
+
+972
+02:40:09,496 --> 02:40:11,536
+Taxi Cap Distance diyorlar ya.
+
+973
+02:40:12,316 --> 02:40:16,916
+Bir yazar mısın ya hani o söylediğin kelimeyi çok anlayamadım.
+
+974
+02:40:19,216 --> 02:40:26,396
+Manhattan şu arkadaşlar yani bildiğiniz Manhattan var ya orada City Block Distance da deniyor.
+
+975
+02:40:27,675 --> 02:40:29,456
+Sen yazılır ben bakacağım.
+
+976
+02:40:29,971 --> 02:40:30,971
+Yazdım hocam.
+
+977
+02:40:30,971 --> 02:40:31,971
+Hemen bakıyorum.
+
+978
+02:40:31,971 --> 02:40:40,971
+Şimdi, Manhattan denen yere bakarsanız, orada adresler tarif edilirken iki sokak sonra dön demiyor.
+
+979
+02:40:40,971 --> 02:40:44,971
+İşte üç bina sonra sağa dön, iki bina sonra sola dönüyor.
+
+980
+02:40:44,971 --> 02:40:45,971
+Oradaki şeyler böyle blok.
+
+981
+02:40:45,971 --> 02:40:50,971
+Ve o bloktan kaynaklı, işte mesela şurada bir şey var, burada bir şey var.
+
+982
+02:40:51,636 --> 02:41:11,076
+Bir yerden bir yere yol tarif ederken önce böyle git, sonra böyle git der gibi bunların arasındaki mutlak değerleri alıp topluyorsun. Şuradan şuraya x80'inde bir mutlak değer, buranın mariyetine alfa diyelim. Şuradan şuraya beta diyelim. Alfa artı beta bizim Manhattan City Block Distance değerimiz oluyor.
+
+983
+02:41:11,076 --> 02:41:17,236
+Taxi Cap Distance. Bunu hiç duymadım ama araştırayım.
+
+984
+02:41:17,780 --> 02:41:28,280
+Ben CityBlock, Manhattan, diğer adı da L1 normdur. Bu L1 norm da neden geliyor? Şimdi iki şey arasında uzaklığa bakacaksak bir kere ikisini birbirinden çıkartmak gerekiyor.
+
+985
+02:41:29,100 --> 02:41:33,780
+Bunun mutlak değerini alırsak birinci dereceden kuvveti gibi düşünün. Buna L1 norm diyoruz.
+
+986
+02:41:34,840 --> 02:41:41,000
+Veya ne olabilir? X1-X2'nin karesinin kare kökü aldığında buna da L2 norm deniyor.
+
+987
+02:41:41,811 --> 02:41:51,131
+Eğer daha üst boyutlardan yapacaksanız, Ln normunda, L3, L4 normunda distance alınabiliyor. Ama Taxi Cap ismiyle daha önce duymadık.
+
+988
+02:41:52,011 --> 02:41:54,092
+Bakarım sana haber vereyim, olur mu?
+
+989
+02:41:55,691 --> 02:41:56,491
+Olur.
+
+990
+02:41:56,491 --> 02:41:57,612
+Olur hocam.
+
+991
+02:41:58,731 --> 02:42:05,211
+Şimdi arkadaşlar, birinci soruda gerekçe kuralı verip şey yapmak değildi.
+
+992
+02:42:05,343 --> 02:42:25,063
+Kurallar ile beraber örnek durum. Örneğin şu sebepten dolayı simetriktir. 1-3 varken 3-1 yok. Bunu demek gerekiyordu. İkinci sordaki durum o. Şimdi 2 de D maddesinde en yaygın yapılan şey şu. En çok hata yapılan durumları kıtaca söyleyeceğim.
+
+993
+02:42:26,291 --> 02:42:34,291
+Bu bir prefiks ifade. Hatta bir arkadaşım sormuştu, hocam bunun prefiks veya postfiks olduğunu vermemişsin diye. Vermeme gerek yok, bu zaten bir prefiks.
+
+994
+02:42:34,291 --> 02:42:50,291
+Yani bir ifade yazılıp da bu prefikstir demek veya postfiksdir demek zaten saçma. Ona öyle bir şey diyemeyiz. 4, 2, 2, eksi, ölü, 9, 3, 1. Bunun dedi ki doğrudan sonucunu yazınız.
+
+995
+02:42:50,899 --> 02:43:01,619
+Adım adım gösterin falan demedim. Burada stack çizip böyle uzun uzun çözüme gidenler var. Bu prefiks ifade nasıl çözülüyor? Sağdan başlayarak çözülür arkadaşlar.
+
+996
+02:43:03,299 --> 02:43:08,899
+Soldan başlayarak çözenler var. Bir yerden sonra onların kuralı kendini inkar ediyor. Şimdi onu göstereceğim.
+
+997
+02:43:08,899 --> 02:43:15,139
+Sağdan başlayarak önce bunu yaparsın. Sonra çıkarmayı yaparsın. Sonra işte 4 artı 2'yi yaparsın.
+
+998
+02:43:15,379 --> 02:43:20,180
+Sonra 4 artı 2 altının karesini yaparsın. En son toplama yapıyoruz. Bu böyle.
+
+999
+02:43:20,180 --> 02:43:22,379
+Şimdi yapılan hata şu.
+
+1000
+02:43:29,907 --> 02:43:50,347
+Soldan başlamış arkadaş. Şöyle gelmiş. Tamam, ilk önce toplamayı yapacağım demiş. Olur, yapılabilir. 4 artı 2 demiş. O zaman ne oluyor? Artı üst, 6, 2, eksi, bölü, 9, 3, 1. Sonra altının karesi demiş. Artı 36, eksi, bölü, 9, 3, 1. Şimdi artıyı neyle?
+
+1001
+02:43:51,252 --> 02:44:17,012
+Artıyı 36 eksiyle bir şey yapamıyoruz. Yani hep ilk operatörü görünce o gördüğümüz yerde sol ve sağ operantları yerleştirmek ve işlemi yapmak gerekiyor. Burada artıyı gördük, 4 artı 2 yaptık. Burada üstü gördük, bunu yaptık. Burada ne var? Şuraya doğru gidiyorum, 36 var. Yani bir operant görene kadar operanttan önceki operatörün gereğini yapmam lazım. Yani burada artının gereği olarak neyi yapacağım? Hiçbir şey yapamıyorum.
+
+1002
+02:44:17,556 --> 02:44:40,316
+Bu işe yanlış başlamaktan kaynaklı. Tabi burada arkadaş kendi kafasında elbette sezgiyle ne olur ondan sonra 9 bölü 3'e atlıyor. Ondan sonra oradan bulduğu sonucu çıkartıyor, ondan sonra toplama yapıyor. Çözümü doğru buluyor ama yanlış yoldan buluyor. Onun için buradan tam puan alamadı bu durumdakiler. Sağdan sola doğru çözmek gerekiyor. Bu problemde bu böyleydi.
+
+1003
+02:44:41,363 --> 02:45:00,743
+Üçüncü soruda genel anlamda bir problem görmedim. Sadece şunu çoğu kişi belki uygulamamış. Hatta şunu yapanlar vardı. P ise, Q ise, T. Şu nedir? P değili veya Q'nun değili veya P'dir. Bunun açılımı budur.
+
+1004
+02:45:00,743 --> 02:45:06,023
+Şimdi bu veya'yı içeriye dağıtıp yapanlar var. P'nin değili veya Q'nun değili.
+
+1005
+02:45:06,835 --> 02:45:30,896
+demiş, bir veya da ortaya koymuş, P'nin değili veya P'nin değili. Şimdi aynı operatörü içeriye dağıtmaya gerek yok. Değişme özelliği dediğimiz bir şey var. Bunları yer değiştirebiliyorsunuz. Yani A artı B artı C yerine A artı B artı C yapmak. Nasılsa bu da bunun gibi. Şöyle şuna gerek yoktu. Belki oradan bir puan eksik almış olanlar olabilir.
+
+1006
+02:45:33,747 --> 02:45:42,067
+Dördüncü soru da, genel anlamda yine benim grubumda problem yok da diğer grubu da ben okuduğum için orada sorunlar vardı.
+
+1007
+02:45:42,067 --> 02:45:50,628
+Bir kısım arkadaşlar hani doğruluk tablosunu çizmemiş yani onu neye göre çizmeden çözmeye çalıştım ama çoğu çizemeyenler de yanlış yapmış zaten.
+
+1008
+02:45:50,628 --> 02:45:56,867
+Şimdi iki bitlik iki tane sayıysa dört tane bite ihtiyacımız var. Bu dörde birlik bir devre olacak.
+
+1009
+02:45:58,131 --> 02:46:25,511
+4'e 1 ise işte ABCD diyelim ama ben siz ABCD demeyin diye A1, A0, B1, B0 diye zaten bunu vermişim. Değişken isimlerini. Bu doğruluk tablosunu oluşturacaksın. Doğruluk tablosu nasıl oluşturulur? 0, 0, 0'dan başlarsınız. 1, 1, 1'e doğru gidersiniz. İşte bunlar 1'er bit, bunlar 2'şer bit, bunlar 4'er bit, bunlar 8'er bit değişir. Veya 1, 1, 1'den başlayın, 0'a doğru gidin. O da kabul. Ama bu doğruluk tablosu karışık olmaz.
+
+1010
+02:46:26,324 --> 02:46:43,324
+Yani 0, 0, 0'dan sonra ben 0, 0, 0, 1'i şurada görüyorum. Arada başka şeyler var. Çünkü şu ikilileri kendi içinde değiştirmiş arkadaşım. Bu ikilileri kendi içinde değiştirmiş. Kendine gereksiz yere zahmet etmiş. Çünkü ne olursa olsun ben şuradaki sayının...
+
+1011
+02:46:45,876 --> 02:46:49,716
+Şuradaki ifade edilen sayının, şuradaki ifade edilen sayıdan küçük olmasına bakacağım.
+
+1012
+02:46:49,855 --> 02:46:53,036
+O zaman şuradaki bütün olasılıkları, buradaki olasılıklarla değiştireceğim.
+
+1013
+02:46:53,115 --> 02:46:56,716
+Bunlar yukarıdaki satırda olmuş, aşağıdaki satırda olmuş hiçbir şey fark etmez.
+
+1014
+02:46:57,515 --> 02:47:00,815
+Normal sırayla yazılsa en kolay hızlı bir şekilde problem çözülebilirdi.
+
+1015
+02:47:01,475 --> 02:47:05,376
+Bir grupta da işte x küçüktür y dedik, x büyüktür y bulanlar var.
+
+1016
+02:47:05,456 --> 02:47:06,695
+Onlar da tam puan alamadılar.
+
+1017
+02:47:07,896 --> 02:47:09,136
+Soru da ne istiyorsak o oydu.
+
+1018
+02:47:09,907 --> 02:47:18,207
+Soru 5'te genelde zaten detaylı analiz yapanlar tam puan aldılar. Sadece P, N'i bulduktan sonra bu elemanıdır.
+
+1019
+02:47:18,207 --> 02:47:34,207
+Big theta, N, N², artık N², N², N², neyse bunu söylemek gerekiyor. Ayrıntılı analiz yapmayıp temel operasyon analizi yapanlar da 12, 13, 14, 9, 8, artık o aralıkta çözümüne göre şeyler.
+
+1020
+02:47:34,208 --> 02:47:39,208
+Bir de rica edeyim, lütfen güzel yazın arkadaşlar. Çok karışık yazanlar var.
+
+1021
+02:47:41,208 --> 02:47:48,208
+Kağıt küçük de, öyle bir ok çıkartırsın ki, öyle kağıtlar var ki ben sana göstersem, bu kağıdı ben olsam ben de okumam dersin.
+
+1022
+02:47:48,208 --> 02:47:54,208
+Bir çözüm orada, hiçbir işaret yapmadan öbür tarafa geçilmiş, öbür tarafa geçilmiş. Bu da biraz kötüydü.
+
+1023
+02:47:56,208 --> 02:47:58,208
+Oynayamam, yerim dar diyorsun yani.
+
+1024
+02:47:59,667 --> 02:48:06,667
+Ama şey, o şekilde çözenler de var. Yani ok işareti çıkarmış, hakikaten yer kalmamış, detaylı yapan arkadaşlar vardı.
+
+1025
+02:48:06,667 --> 02:48:12,667
+Onlara zaten herhangi bir puan kırmadım. Yeter ki ben anlayayım. Yani hangi, nereden, nereye geçmiş?
+
+1026
+02:48:12,667 --> 02:48:19,667
+Ben ders anlatırken size bir oradan, bir oradan konuşsam neler anlaşılacak mı? Malum ben de onu aynı şekilde sizin kağıdınızda görmek isterim.
+
+1027
+02:48:19,667 --> 02:48:23,667
+Sorsu olan var mı? Özellikle önce online'a soralım. Var mı sorunuz?
+
+1028
+02:48:27,827 --> 02:48:31,147
+Tam zamanında bitirdik. Taxi cap distance. Şunu unutacağım.
+
+1029
+02:48:31,927 --> 02:48:34,227
+Var mı arkadaşlar sorunuz? Kapatıyoruz.
+
+1030
+02:48:36,788 --> 02:48:38,827
+İyi akşamlar, kendinize iyi bakın.
+
+1031
+02:48:39,087 --> 02:48:40,108
+Haftaya görüşürüz.
+
+1032
+02:48:40,108 --> 02:48:40,887
+İyi akşamlar.
