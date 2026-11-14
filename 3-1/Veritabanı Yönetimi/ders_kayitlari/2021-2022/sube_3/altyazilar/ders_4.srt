@@ -1,0 +1,3191 @@
+1
+00:00:31,475 --> 00:00:32,695
+Arkadaşlar, sesim geliyor mu?
+
+2
+00:00:35,496 --> 00:00:36,775
+Geliyorum hocam, evet.
+
+3
+00:00:37,735 --> 00:00:38,975
+Anasınız ne var ne yok.
+
+4
+00:00:42,804 --> 00:00:43,743
+İyisiniz umarım.
+
+5
+00:00:44,664 --> 00:00:45,804
+İyiyiz hocam, sağ olun.
+
+6
+00:00:46,584 --> 00:00:48,004
+Ben iyiyim en azından diğerlerini.
+
+7
+00:00:48,603 --> 00:00:49,884
+İyi olmanızı dökündüm.
+
+8
+00:00:52,484 --> 00:00:56,084
+Şimdi bir saniye arkadaşlar, ekranımı paylaşayım.
+
+9
+00:01:06,292 --> 00:01:07,852
+Ekranım yansıdım da size.
+
+10
+00:01:11,859 --> 00:01:13,879
+Evet hocam, görünüyor ekranımız.
+
+11
+00:01:14,599 --> 00:01:15,700
+Teşekkürler [öğrenci].
+
+12
+00:01:17,500 --> 00:01:22,519
+Bir iki dakika daha bekleyelim, bir arkadaşlar katılsın, sonra ders kısmına geçeceğiz.
+
+13
+00:01:23,420 --> 00:01:28,799
+Bu arada, sınav hatırlatması yapmış olayım tekrar.
+
+14
+00:01:29,299 --> 00:01:31,500
+Videosunuz haftaya sınav var, perşembe günü.
+
+15
+00:01:33,379 --> 00:01:34,479
+Sınavınız 100 olacak.
+
+16
+00:01:36,915 --> 00:01:51,295
+Sınıf ve diğer bilgiler zaten sizinle paylaşıldı duyurularda. Sınav konusu da bugün işleyeceğimiz dersi sonuna kadar geçerli. Bütün konular dahil olacak şekilde bir sınav olacak.
+
+17
+00:01:53,815 --> 00:01:56,155
+Bununla ilgili sorusu olan var mı? Başlamadan önce.
+
+18
+00:02:03,731 --> 00:02:06,972
+Sanırım sorusu olan yok. En azından ben duymuyorum.
+
+19
+00:02:12,948 --> 00:02:16,288
+O zaman biz ders kısmına başlayabiliriz.
+
+20
+00:02:17,247 --> 00:02:18,608
+Chat'te varmış sanırım.
+
+21
+00:02:19,807 --> 00:02:23,807
+Sınavın formatı, klasik sınav olacak arkadaşlar.
+
+22
+00:02:24,867 --> 00:02:28,528
+Yani, kağıt üzerinde.
+
+23
+00:02:29,487 --> 00:02:35,707
+Genel kavramlar, onun dışında SQL sorguları gibi şeyler olacaktır.
+
+24
+00:02:36,168 --> 00:02:38,948
+O yüzden, hani, dersi çalıştığımız...
+
+25
+00:02:39,283 --> 00:02:47,084
+işlediğimiz kısımları tekrar bir gözden geçirin. Herhangi bir yerden gelebilir ama klasik bir sınav olacak.
+
+26
+00:02:54,484 --> 00:03:03,564
+Onun dışında rica ederim. Sizin grup tabii ki online devam ettiği için ben sınavdan sonra artık devam etmeyeceğim.
+
+27
+00:03:03,564 --> 00:03:11,364
+Sizin de Utku Hoca ile devam edeceksiniz. İkinci yarısında. Muhtemelen bu bizim birlikte son dersimiz olacak.
+
+28
+00:03:12,484 --> 00:03:16,243
+Ama Lablar aynı şekilde devam edecek yine dönem sonuna kadar.
+
+29
+00:03:19,156 --> 00:03:24,896
+Sanırım başka soru yok, chatte de göremedim. O zaman dersimize başlayalım.
+
+30
+00:03:26,356 --> 00:03:39,096
+Gelelim bir kısa giriş yapalım. Bugün derste SQL'e programlama dilleri kullanarak nasıl erişim yapabiliyoruz? Burada hangi tür?
+
+31
+00:03:39,635 --> 00:03:51,455
+sistemler veya yöntemler kullanıyoruz. Bunları detaylıca işleyeceğiz. Sonra kullanıcı tarafından oluşturulan fonksiyon ve prosedürleri işleyeceğiz.
+
+32
+00:03:51,455 --> 00:04:05,455
+Ve muhtemelen en son olarak da trigger'ları görme imkanımız olacak. Recursive Queller, Advanced Agile için özellikleri dersin içerisinde işlenmeyecek. Onlar...
+
+33
+00:04:06,068 --> 00:04:12,987
+Onlar bu sınav konusunda, ders konusunda dahil değil. Triggerlarda muhtemelen bu konuyu sonlandırırız.
+
+34
+00:04:14,647 --> 00:04:27,888
+Şimdi bir hatırlatma yapalım. SQL bir deklaratif dil değil mi? SQL klasik bir programlama dili olarak kullanılmaz veya tanımlanmaz.
+
+35
+00:04:28,435 --> 00:04:47,055
+Deklaratif dil ne yapardı ya da prosedürel diller var. Genel kullanım amaçlı prosedürel diller. SQL'in bunlardan eksikleri nelerdi? Neden SQL bir fonksiyonel programlama dili olarak kabul edilmez?
+
+36
+00:04:55,636 --> 00:05:02,355
+Java veya işte Python gibi özelliklere sahip mi? Veya hangi özelliklere sahip değil?
+
+37
+00:05:10,004 --> 00:05:13,884
+İsterseniz bir hatırlıyorum. Deklaratif diller neydi? Prosedürel diller neydi?
+
+38
+00:05:17,492 --> 00:05:18,972
+bunu ilk de erstes de şimdik.
+
+39
+00:05:28,435 --> 00:05:36,535
+Java, CC++, bunlar örnekleriniz. Soruya cevap vermeye çalışalım. Tam olarak biraz da planlıdır mısın?
+
+40
+00:05:46,740 --> 00:05:49,680
+SQL bir dekratif değil, normal prosedürel değil.
+
+41
+00:05:50,419 --> 00:05:55,939
+Prosedürel diller, Java, C, C++, C Sharp gibi diller, örneğin böyle bir.
+
+42
+00:05:56,939 --> 00:06:06,740
+Şimdi hatırlarsanız, prosedürel dillerde, yani Java gibi mesela, karmaşık işlemleri...
+
+43
+00:06:07,475 --> 00:06:10,935
+İteratif işlemleri yapabiliyorsunuz, döngüleri yapabiliyorsunuz.
+
+44
+00:06:11,435 --> 00:06:15,875
+Mesela kullanıcıdan bir input alabilirsiniz veya bir şeyi print edebilirsiniz.
+
+45
+00:06:16,456 --> 00:06:20,555
+Bir hesaplama yaptıktan sonra bunun sonucunu ekrana yazdırabilirsiniz.
+
+46
+00:06:20,555 --> 00:06:24,396
+Bu tarz şeyleri yapmak prosedürel dillerde mümkün.
+
+47
+00:06:24,615 --> 00:06:26,716
+Ama deklaratif dillerde bu mümkün değil.
+
+48
+00:06:27,507 --> 00:06:45,827
+Yani declaratif dil olarak SQL bu yapıda çalışmıyor. Öncelikle var olan veri üzerinden işlemleri yapmayı sağlıyor. Yani SQL'de mesela prozedürel dillerde bir değişken üzerinden işlemler yapılar değil mi?
+
+49
+00:06:48,435 --> 00:07:00,115
+Bir sorguyu veya bir değişkeni öncelikle hafızada tutarsınız ve bunun üzerinde değişiklikler yapa yapa en sonunda kod tamamlanır.
+
+50
+00:07:00,215 --> 00:07:08,435
+Ama bir deklaratif dillerde, mesela İspel'de olduğu gibi bu şekli işlemez.
+
+51
+00:07:08,555 --> 00:07:14,495
+Yani bir döngü mantığı ya da bir değişken üzerinden veri manipülasyonu konusu değil.
+
+52
+00:07:15,252 --> 00:07:29,791
+Haliyle deklaratif dillerde bu eksiklerden yola çıkarak, mesela kullanıcıdan input almak, kullanıcının verdiği bir arayüzde veri giriş yapmak, bir şeyleri SQL ile yapamıyorsunuz.
+
+53
+00:07:29,872 --> 00:07:33,471
+Bunun için bir host programma dili kullanıyoruz.
+
+54
+00:07:36,180 --> 00:07:43,180
+Başka bir programlama dili aracılığıyla SQL sorgularını yazarak veri manipülasyonu yapıyoruz.
+
+55
+00:07:43,740 --> 00:07:50,180
+Yani SQL aynı zamanda başka bir procedural dilin bir parçası olarak çalışır.
+
+56
+00:07:50,240 --> 00:07:52,839
+Yani bir host programlama diline ihtiyacınız var.
+
+57
+00:07:53,427 --> 00:08:09,747
+Bu tarz işlemleri yapabilmek için bir grafiksel arayüz, bir print işlemi veya kullanıcı ile etkileşim, sonuçlarını yansıtma gibi şeyleri bir prosedral genellikle kullanılma amaçlı kullanılan bir programlama teknik kullanarak yapıyoruz.
+
+58
+00:08:10,708 --> 00:08:31,628
+Peki, bu host programlama dili nasıl SQL'e erişiyor? Yani siz bir web sitesi ya da mobil uygulama veya işte onun dışında bir spreadsheet veya herhangi bir 3. parti uygulamasından SQL'e nasıl erişeceksiniz? Yani database'e nasıl erişebilirsiniz?
+
+59
+00:08:32,628 --> 00:08:35,488
+Bunun için iki tane ana yöntem var.
+
+60
+00:08:39,988 --> 00:09:04,327
+Evet, [öğrenci], mbd ya da bir adaptörle. Aslında iki tane ana yöntem var. Birincisi, bir ara program genel kullanımla geliştirilmiş, bu amaç için, veritabanına erişim için geliştirilmiş bir program aracılığıyla. Bu adaptör ya da driver dediğimiz bir genel kullanım, o veritabanına erişim için kullanılan bir program aracılığıyla.
+
+61
+00:09:04,820 --> 00:09:24,259
+gerçekleşir. Ya da ikinci yöntemde de, [öğrenci]'in bahsettiği gibi, embedded SQL, ya da embedded SQL kullanıyoruz. Yani, bu embedded SQL ile birlikte, host programlama dili, direkt bir şekilde, veritabanıyla etkileşime girebiliyor.
+
+62
+00:09:24,259 --> 00:09:31,216
+Öncelikle, compile edilme aşamasında, bu SQL sorguları,
+
+63
+00:09:31,216 --> 00:09:55,816
+bir fonksiyon metod çağrılarına, fonksiyon kollarına dönüşüyor. Bunlar gerçek zamanlı çalıştırdığınız zaman da veritabanla, dinamik SQL gibi çalışarak sonucunu size getiriyor. Bu şekilde bir yapısı söz konusu. Yani ya embed SQL kullanacaksınız ya da bir genel kullanım için üretilmiş bir driver kullanacaksınız.
+
+64
+00:09:58,035 --> 00:10:11,375
+Birkaç tane farklı driver türü var. Bunların başında da JDBC mesela Java için gelir. JDBC bir Java API'si gibi düşünebilirsiniz veritabanıyla.
+
+65
+00:10:16,935 --> 00:10:24,195
+Şimdi amacımız şu. Bizim elimizde bir uygulama var. Sizin bir client.
+
+66
+00:10:24,607 --> 00:10:35,607
+Olsun, burada bir client'ınız var. Yani bu client, siz, ben veya herhangi bir kullanıcı olabilir. Hatta bu client'lar çok olabilir.
+
+67
+00:10:36,607 --> 00:10:50,379
+Onlar mesela HTTP üzerinden, sizin uygulamanıza, app server'ınıza, ona app server diyelim, application server.
+
+68
+00:10:51,764 --> 00:11:00,783
+Aplikasyonu yüklediğiniz, uygulamaya yüklediğiniz server sunucuya erişiyor.
+
+69
+00:11:01,683 --> 00:11:04,343
+Bunun üzerine sizin çok sayıda uygulamalarınız olabilir.
+
+70
+00:11:05,183 --> 00:11:09,144
+Burada farklı uygulamalar, burada başka bir app server olabilir.
+
+71
+00:11:15,796 --> 00:11:18,716
+İyi ki olsun. Burada da başka uygulamalar olsun.
+
+72
+00:11:19,516 --> 00:11:22,396
+Burada da başka kullanıcılar bunlara erişmeye çalışsın.
+
+73
+00:11:23,475 --> 00:11:25,836
+Burası sunucu tarafı.
+
+74
+00:11:28,556 --> 00:11:30,156
+Burası client tarafı.
+
+75
+00:11:35,059 --> 00:11:41,779
+Şimdi sunucu tarafında sizin bazı arayüzleriniz var. Diyelim ki buna UI diyelim.
+
+76
+00:11:43,779 --> 00:11:50,179
+Sunucu arayüzü. Burada bir buton, daha doğrusu bir form olsun. Şurası bir form.
+
+77
+00:11:51,139 --> 00:11:57,459
+Farklı farklı veri girişi yapılıyor. Burada da bir buton olabilir, burada da bir buton olabilir.
+
+78
+00:11:57,631 --> 00:12:14,451
+Ama sonuç olarak burada bir işlem yapıyorsunuz, formu submit diyorsunuz ya da cancel ediyorsunuz gibi düşünün. Bu bir arayüz. Mesela bir MVC ya da herhangi bir web uygulaması olsun bu. Web uygulaması.
+
+79
+00:12:16,291 --> 00:12:22,571
+Web uygulamasında bir arayüzünüz var. Sonra arka planda bunu çalıştırdınız.
+
+80
+00:12:24,403 --> 00:12:38,764
+Bir controller ya da direkt arka plan kodunuz söz konusu verir. Bir de controller'ınız var. Bir de modeliniz var, data modeliniz.
+
+81
+00:12:47,412 --> 00:13:01,412
+Bir ilişkimiz var. Yani kullanıcı bir giriş giriyor burada, veri girişi yapıyor veya veri çekiyor, gösteriyor. Arkada kontroller bunu yönetiyor. Bu modelde sizin veri modelinizin plus yapısı.
+
+82
+00:13:02,412 --> 00:13:13,312
+Şimdi burada yaptığınız işlemler bir veri tabanına kaydedilmesi gerekecek. Yani bir veri tabanında bunun tutuluyor olması lazım. Bir yerde tutulacak bu.
+
+83
+00:13:14,100 --> 00:13:27,100
+Genellikle bu veritabanı ayrı bir server içinde tutuluyor. Yani app server ile aynı server olmaz. Buna da DB server diyelim.
+
+84
+00:13:30,100 --> 00:13:37,100
+Veritabanı bulundu olsun. Burası mesela bir Oracle, bir MySQL.
+
+85
+00:13:42,067 --> 00:13:53,807
+Veya SQL Server, IBM, herhangi bir şey olabilir. Teradata, Server, herhangi bir ilişkisel veri tabanı olabilir.
+
+86
+00:13:54,587 --> 00:13:59,867
+Burasının ayrı bir katmanı var.
+
+87
+00:14:01,727 --> 00:14:06,567
+Ama siz bu model üzerinden veri kayıtıp yaptığınız zaman, mesela ne olacak?
+
+88
+00:14:15,091 --> 00:14:35,611
+Bu ekip burada save diye bir modeli çalışmış. Save Person. Yeni bir müşteri kaydediliriz. Böyle bir fonksiyonu çağırırız. Ve kayıt işlemi yapırız buradaki formdaki bilgileri. Sonuçta bunlar bu veri tabağında bir Person tablosu olacak.
+
+89
+00:14:39,059 --> 00:14:48,719
+İşte bunun IDC var, name, bir sürü kolon bilgisi var. Buraya kaydetmeniz lazım. Bu yeni bir müşteri vardır ya da var olan müşterinin güncellemesi vardır.
+
+90
+00:14:49,539 --> 00:14:52,639
+Haliyle böyle bir kayıt işlemini veritabanın içinde yapabilirsiniz.
+
+91
+00:14:53,819 --> 00:15:00,999
+İşte burada kullanacağınız, bu ikisi birbirinden farklı platform ve farklı veritabanlar olabilir. Burada bir veritaban.
+
+92
+00:15:01,683 --> 00:15:13,503
+teknolojisi kullanıyorsunuz. Burada bir, işte Java tabanlı veya C-Sharp tabanlı bir uygulama ve uygulaması teknolojisi kullanıyorsunuz.
+
+93
+00:15:13,903 --> 00:15:26,024
+Bu ikisi birbirinden farklı, farklı serverlar, farklı sunucular, farklı fiziksel sunucu yapısına sahip olabilirler. Bunları bir şekilde konuşturmak lazım.
+
+94
+00:15:27,059 --> 00:15:41,739
+Bunu konuşturan arayüzlere, biz driver diyoruz. Driver, iki farklı teknoloji arasında, halantıyı kuran, API sağlayan bir adaptör gibi düşünüyor.
+
+95
+00:15:41,739 --> 00:15:51,659
+Ya da bir özel bir işlemiş, kod parçası. İşte JDBC, Java, verdabanı.
+
+96
+00:15:52,371 --> 00:16:07,991
+Connector'ı, Java Connector'ı, Java temelli bir, bu, B harfi, JDBC Connector, Java temelli bir kod. Yani Java ile, arka bir anda, bu veri tabanlarına erişim imkanı sağlıyor.
+
+97
+00:16:09,271 --> 00:16:11,911
+Ne yapıyor? Bir Connection oluşturuyor.
+
+98
+00:16:13,779 --> 00:16:40,619
+objesi oluşturuyor. Bu connection objesi öncelikle bu iki veri tabanına, bir veri tabanına bir de uygulamaya bağlanıyor. Uygulama içinden bu tabii ki, buraya çağırma yapıyorsunuz. Driver'ı uygulama içinden çağırıyorsunuz ve bir sorgu yaptığınız zaman driver veri tabanına giderek bir connection oluşturuyor, bir bağlantı oluşturuyor önce. Sonra bunun sorgusunu yazmadığın için bir statement ya da bir ifade.
+
+99
+00:16:41,076 --> 00:16:56,555
+bir SQL statement oluşturuyorsunuz. Yazmanız lazım burada. Sonra bunu execute ediyorsunuz. Yani çalıştırıyorsunuz. Bu da size bir sayıda result ya da sonuçları dönüştürüyor.
+
+100
+00:16:56,555 --> 00:17:07,556
+Yani öncelikle bir connection oluşturmanız lazım. İkinci adımda statement yazmanız gerekiyor. Statement'ın içine de SQL sorgularını çalıştırmak istediğiniz SQL sorgularını yazıyorsunuz.
+
+101
+00:17:08,435 --> 00:17:31,835
+Secute statement dediğiniz zaman bu sorgu çalışıyor. Bir tabanda bu sorgu çalışıyor ve bir çıktı üretiyor. Bu sonuçta result set diyoruz. Bu result set sonuç çıktısını da siz host programlama dilinde sorgulayarak bunun sonuçlarını herhangi bir şekilde analiz edebiliyorsunuz, kitleyebiliyorsunuz, kullanabiliyorsunuz.
+
+102
+00:17:32,564 --> 00:17:46,764
+Genellikle bu. Yani bu JDBC driver dışında başka bir driver da olabilir. Yani Java'dan değil de ne bileyim C'den, Python'dan veya herhangi bir dilden de bir tabanlarla geçebilirsiniz.
+
+103
+00:17:47,224 --> 00:18:00,104
+Onu da farklı bir connector kullanabilirsiniz. Yani JDBC değil, ODBC. Mesela ODBC'de başka bir connector. ODBC daha bir standart SQL connector'dır.
+
+104
+00:18:00,496 --> 00:18:04,776
+ODBC'yi implement eden herhangi bir veritabanına işleyebilirsiniz.
+
+105
+00:18:05,655 --> 00:18:14,135
+C, C++, C Sharp, herhangi bir programlama dilinden ODBC Connect'ı olan herhangi bir veritabanına işleyebilirsiniz.
+
+106
+00:18:14,276 --> 00:18:18,115
+Mesela SQL Server, MySQL, ODBC sağlar. Oracle'da da vardır.
+
+107
+00:18:19,876 --> 00:18:24,896
+Daha çok Microsoft araçları ODBC kullanıyor.
+
+108
+00:18:25,332 --> 00:18:50,452
+Java temellerde JDBC'yi kullanıyor. Ama dediğim gibi buradaki veritabanlarından bağımsız olarak her bir veritabanın konnektöründe farklılıkları olur. Mesela MySQL'in konnektörü, ODBC konnektörü, SQL Server'dan farklıdır. Öncelikle birinci aşamada bir driver'ı yüklemeniz lazım. Yani birinci aşama driver'ı yüklemeniz lazım.
+
+109
+00:18:52,819 --> 00:19:08,799
+Sonrasında bu driver'ı kodunuz içinde kullanarak istediğiniz gibi bu sorguları yapabilirsiniz. Driver tarafı bu. Genel bahsetmek gerekirse. Şimdi JDBs'i biraz konuşalım.
+
+110
+00:19:09,839 --> 00:19:16,819
+JDBs'i yani bir şey gibi düşünür. Veritabanına erişmek için kullanılan bir API. Size belli...
+
+111
+00:19:17,875 --> 00:19:30,736
+Erişim fonksiyonları sağlar. Yani bu özellikler sorgulama, silme, herhangi bir güncelleme, bunun gibi bütün bu özellikleri kullanacak fonksiyonlar.
+
+112
+00:19:33,736 --> 00:19:44,455
+[öğrenci] yok. Java bilmeniz gerekmiyor. Herhangi bir programlama dili bilmeniz gerekiyor tabii ki. Ama Java özellikle kullanmanız illa Java olacak diye bir şey yok.
+
+113
+00:19:46,451 --> 00:19:48,292
+Java örneğinden bahsediyoruz.
+
+114
+00:19:49,352 --> 00:19:56,092
+Şimdi, ama projenizde tabii ki böyle bir veritabanı kullanacaksınız, programla erişeceksiniz.
+
+115
+00:19:56,231 --> 00:20:02,711
+O yüzden hani bunu labdaki arkadaşlarla daha detaylı konuşursunuz projeyle ilgili detayları.
+
+116
+00:20:03,231 --> 00:20:08,271
+Ama orada Java zorunluğu yok diye biliyorum. Başka bir dilde kullanabilirsiniz.
+
+117
+00:20:09,412 --> 00:20:11,552
+Veritabanı yapısı oluşturmak için.
+
+118
+00:20:13,044 --> 00:20:36,044
+Şimdi, iletişim kurabilmek için veritabanından ne yapmanız gerekiyor? Bir connection kurmanız lazım. Yani bir bağlantı kurmanız lazım. Sonrasında bir statement objesi oluşturuyorsunuz. Bu statement objesi SQL'de çalıştıracağınız kodları içeriyor. Yani normal SQL sorguları gibi düşünün. Bu ifadeler öncelikle SQL...
+
+119
+00:20:36,435 --> 00:20:43,915
+veritabanında çalışılacak SQL sorguları, kod tarafında bir statement objesi şeklinde yazılır.
+
+120
+00:20:44,655 --> 00:20:55,615
+Sonrasında bu sorguları, execute komutu çalıştırarak gönderiyorsunuz ve bunlar veritabanı tarafında çalışıyor.
+
+121
+00:20:56,180 --> 00:21:04,460
+Ve sorgu sonuçları geliyor. Bu sorgu sonuçlarını uygulamalarınızda gösterebilirsiniz, kullanabilirsiniz, filtreleyebilirsiniz.
+
+122
+00:21:04,948 --> 00:21:32,948
+Bunun dışında bir de herhangi bir hata olması durumunda. Çünkü bu iletişim olduğu için veri tabanına erişim olmayabilir. O anda işte internet bağlantı kopukları olabilir. Bunun gibi birçok problem karşılaştırabilirsiniz. Bir de bu hataları yönetecek bir exception. Handling mekanizması olması gerekiyor. Bu da şey gibi bir site var. Yani bu tarz driverlar zorunlu değil ama...
+
+123
+00:21:32,948 --> 00:21:56,448
+Bunlar bu süreci çok kolaylaştırıyor. Yani siz daha standart hale getiriyor bir veritabanla erişmeyi programdan ve sizin yerinize birçok network iletişimi, veritabanındaki sorguların doğru çalışması, etkili çalışması için bütün bu kodlar hazır bir driver içinde gelip size sunulduğu için çok kolaylaştırıyor işinizi.
+
+124
+00:21:56,448 --> 00:21:58,948
+Sadece bu konnektörü kullanarak.
+
+125
+00:21:59,316 --> 00:22:04,635
+Siz sorgularınızı yazabiliyorsunuz. Mesela bu bir JDBC örneği, Java'daki örnek.
+
+126
+00:22:05,655 --> 00:22:12,495
+Sorguyu try key flow için alıyoruz. Çünkü buradaki işlem gerçekleşirken hata olabilir.
+
+127
+00:22:12,495 --> 00:22:21,155
+Ve bu çok yaygındır. İlla try'in içinde yapmak, burada yazmanız gerekmiyor. Bunun içinde de yapabilirsiniz. Fark etmez.
+
+128
+00:22:21,296 --> 00:22:26,215
+Yani bu Java kodu. Connection objesi oluşturmanız lazım.
+
+129
+00:22:26,771 --> 00:22:35,531
+ve driver manager dediğimiz klası çalıştırarak bunun için bir connection fonksiyonu var.
+
+130
+00:22:36,291 --> 00:22:39,111
+Burada bilmeniz gereken birkaç bilgi var.
+
+131
+00:22:39,111 --> 00:22:40,111
+Öncelikle...
+
+132
+00:22:40,531 --> 00:22:51,811
+Bu veritabanı, yani SQL server'ın veya hangi veritabanı, ilişkisel veritabanı kullanıyorsanız, yani Connection String'den ölere ihtiyacınız var.
+
+133
+00:22:52,331 --> 00:23:02,751
+Buraya erişebilmek için bunun IP adresine ya da neye ihtiyacınız var? DNS neyimine ya da adresine, web adresine.
+
+134
+00:23:05,971 --> 00:23:07,451
+Öncelikle bu server nerede?
+
+135
+00:23:08,531 --> 00:23:15,231
+Hangi instance? Veritabanın instance ne? Instance'ı ya da ismi.
+
+136
+00:23:15,231 --> 00:23:23,931
+Diyelim. Sonra bu veritabanı hangi kullanıcı, user bilgisi?
+
+137
+00:23:25,076 --> 00:23:30,676
+ve password bilgisine ihtiyacınız var. Hangi kullanıcı ve şifreyle buna erişim sağlayacaksınız?
+
+138
+00:23:30,676 --> 00:23:34,676
+Müştonum bunları connection string içinde belirtmeniz lazım.
+
+139
+00:23:34,676 --> 00:23:37,676
+Burada gördüğümüz gibi ne diyor?
+
+140
+00:23:37,676 --> 00:23:49,476
+İşte bu bizim veritabanına erişim ismi 2000 portunda bu adreste şimdi bu veritabanına erişeceğiz.
+
+141
+00:23:49,476 --> 00:23:51,876
+Bunun bir şey var, standart formu var.
+
+142
+00:23:52,276 --> 00:24:01,135
+Sonrasında diğer bilgilerin de username ve password bilgilerini biliyorsunuz. Sonrasında bağlanabilir olmanız lazım.
+
+143
+00:24:02,855 --> 00:24:11,036
+Veritabanına bağlandıktan sonra bir statement objeksi yaratıyorsunuz. Bu da bu connection içinde create statement fonksiyonunu çağırıyor.
+
+144
+00:24:12,288 --> 00:24:26,288
+Bu statement objesi oluştuktan sonra bu statement'ın içinde kullanacağınız şeyleri yazıyorsunuz. Yani aslında yapacağınız sorgular, işte insert yapacaksanız, update yapacaksınız, delete yapacaksınız, ne yapacaksanız SQL tarafından, o kısmı burada yazıyorsunuz.
+
+145
+00:24:27,288 --> 00:24:37,259
+Ve tabii ki hata olması durumunda bir exception mekanizması olması açısından. Çünkü burada olacak hatası da SQL...
+
+146
+00:24:37,299 --> 00:24:41,519
+bu alantısından kaynaklanabilir ya da bunu da kullanıcıya yazdırabilirsiniz.
+
+147
+00:24:42,740 --> 00:24:47,879
+Bu Java 7 ve JTBC 4'ten beri bu şekilde çalışıyor, sindeks.
+
+148
+00:24:49,460 --> 00:24:55,720
+Ama daha önceki versiyonları da varsa çok küçük farklılık var.
+
+149
+00:24:56,519 --> 00:24:58,759
+Çok büyük farklılarday zaten bunlar.
+
+150
+00:24:59,220 --> 00:25:02,000
+Burada bir şey çalışmanız lazım, driver class'ına.
+
+151
+00:25:02,451 --> 00:25:18,832
+Class4Name dediğimiz bir, burada hangi driver kullanacaksınız? Mesela JDBC ama Oracle driver mı, SQL driver mı? Bütün bunları belirtmemiz lazım. Ondan sonra bu işlemi yapabilirsiniz.
+
+152
+00:25:18,832 --> 00:25:19,711
+Aynen arkadaşlar.
+
+153
+00:25:54,932 --> 00:26:12,880
+Şimdi, burada eski operasyondaki JDB'si ve eski Java'da belirtmeniz gereken farklılıklar. Onun dışında ciddi bir fark yok. Sadece burada class name'ini belirtmeniz lazım, driver'ını. Bunun dışında bir de...
+
+154
+00:26:12,880 --> 00:26:24,000
+statement clause, connection clause'u yapmanız lazım. Yani bunu ayrıyeten spesifik connection'ı kapatmanız lazım, iş bitince. Bir de statement'ı öncelikle kapatmanız lazım.
+
+155
+00:26:25,000 --> 00:26:28,860
+Orasında da bu herhangi bir hata yoksa kod bloğu bitiyor.
+
+156
+00:26:30,460 --> 00:26:37,680
+Bu da sinteks olarak JDBC'yi kullanarak Java'dan kod erişimini gösteren bir kod bloğu.
+
+157
+00:26:38,675 --> 00:26:44,316
+Aslında statement ve connection kapatma bloğu vardı ya, onu finaliye yazsak daha iyi olmaz mı?
+
+158
+00:26:45,875 --> 00:26:55,316
+Yani finaliye yazma tabii olur. Ama burada bu ikisinin bir farkı yok esasen çok fazla. Çünkü zaten burada hata varsa...
+
+159
+00:26:56,084 --> 00:27:11,504
+Hata yoksa bunu kapatıyorsunuz. Hata varsa aslında bunun içinde belki, final'de yaparsanız kesinlikle şey yapar. Ama burada train içinde olması şey anlamında.
+
+160
+00:27:12,435 --> 00:27:34,835
+kullanmış. Eğer hata yoksa bu şekilde kapatmanız lazım. Hata varsa zaten o connection bağlanamamıştır. O yüzden kapatmanızın da çok bir şeyi yok. Yani connection sağlayamamışsanız, hatanız varsa onu çok kapatmak da bir şey yok. Ama daha uygun olanı dediğim gibi final'de yazmaktır. Çünkü connection başlayıp da bir problem olabilir.
+
+161
+00:27:35,539 --> 00:27:48,200
+Genelde syntax'te bir de cache'ten sonra finally yazıp, Java'da özellikle, finally'in her türlü cache de olsa, try de olsa, execute edildiği için finally yazmak doğru.
+
+162
+00:27:50,420 --> 00:28:00,299
+Ama burada çok bir sıkıntı olmaz. Çünkü zaten SQL ile ilgili bir connection oluyor ve muhtemelen bağlanamadığı için zaten connection kurulamadık.
+
+163
+00:28:02,163 --> 00:28:13,443
+Şimdi bir örnek görelim. Bu örnekte de mesela bir veri tabanına güncelleme yapacağız. Update işlemi yapacağız. Burada execute update fonksiyonunu çağırıyoruz.
+
+164
+00:28:15,583 --> 00:28:25,443
+Burada yapmanız gereken işlemleri yapıyorsunuz. Mesela insert yapmak. Bu tablonun içine.
+
+165
+00:28:25,940 --> 00:28:44,779
+Şey yazıyoruz, istirahatı alabiliyorsunuz, yeni bir istirahatı alabiliyorsunuz. Burada hata olursa zaten bununla ilgili şeyi yaparsınız. Ama şimdi bahsedeceğim biraz daha detaylı da, sorguyu, bu şekilde SQL sorgusunu burada doğru kabul eder.
+
+166
+00:28:53,652 --> 00:29:06,652
+Burada hata yapmışsanız bunu fark etmezsiniz. Yani şöyle diyeyim, şurada bir tane daha şey olsun. İki tane oldu. Burada bir hata var aslında bu sorgunun içinde. Yani bu çalışmayacak çünkü iki tane tınak işareti var.
+
+167
+00:29:09,652 --> 00:29:11,672
+Runtime error oluşmuyor.
+
+168
+00:29:12,884 --> 00:29:39,384
+Runtime'de oluşuyor, compile time'da yok. Aynen, onu karşılayız. Runtime'de bu hata oluşuyor. Öncesinde oluşmuyor, compile zamanında oluşmuyor. Bu bir problem. Çünkü aslında bizim amacımız bunu compile zamanında, compile ederken bu hatayı bulmak. Çünkü çalışırken kullanıcıların bunu karşılaşması, bu problemle karşılaşması doğru bir şey değil, iyi bir şey değil en azından. Olabilir tabii ki.
+
+169
+00:29:39,955 --> 00:29:46,195
+Ama amacımız, compile ederken hatayı yakalarsanız, en az maliyetli olan şey budur.
+
+170
+00:29:48,235 --> 00:29:59,715
+Dolayısıyla JVC'de böyle bir sıkıntı var. Özellikle soruyu bu şekilde statement içinde SQL sorgularını yazıyorsanız, böyle bir problem var. Başka ne problem olabilir burada?
+
+171
+00:30:00,415 --> 00:30:01,895
+Hocam, SQL injection olabilir mi?
+
+172
+00:30:02,288 --> 00:30:27,028
+Olabilir. Aynen öyle. Mesela bu ciddi bir problem SQL injection. Onu biraz daha detaylı konuşacağız ama SQL injection çok ciddi bir problemdir. Yani özellikle bu şekilde bir sorgu yazıp veritabanınızda açıklar bırakıyorsanız, yani hackerların ilk denediği şeylerden birisidir SQL injection.
+
+173
+00:30:27,471 --> 00:30:37,792
+Çünkü çok basit bir şey ve 2 dakikada veritabanızı göçürtürler, bütün bilgileri çalabilirler. O açıdan SQL, ECEX'in çok ciddi bir risk. Başka ne problemi var bunun?
+
+174
+00:30:43,700 --> 00:30:52,840
+Güvenlik problemi var, onu kastettik. İki, hata yapma problemimiz var. Burada bu yakalanmayacak zamanında, compile ederken olmayacak. Başka ne problem olabilir?
+
+175
+00:31:01,395 --> 00:31:19,375
+Yani burada tabii ki biz bir insert yaptık ama bir SELECT olsaydı, olabilir değil mi? Çok sayıda tekrar ediyorsunuz bu SELECT işlemini. Belki aynı şeyleri farklı farklı kullanıcılar defalarca çağırıyor. Bu işlemin performansı nasıl olur?
+
+176
+00:31:26,483 --> 00:31:33,324
+Çok hızlı olmaz değil mi? Çünkü her depasında sorguyu tekrar tekrar her kullanıcı için tekrar oluşturacaksınız.
+
+177
+00:31:33,824 --> 00:31:39,364
+Bu connection gidecek, veritabanı da çalışacak, dönecek. Burada bir cacheleme mekanizması olabilir mi?
+
+178
+00:31:41,584 --> 00:31:47,864
+Olamaz. Çünkü her sorguyu ayrı bir şey olarak değerlendiriyor. Ayrı bir kod parçası olarak.
+
+179
+00:31:47,963 --> 00:31:50,563
+Çünkü buranın hiç şeyle ilgili herhangi bir değerlendirilmesi yok.
+
+180
+00:31:51,796 --> 00:31:58,875
+Siz kodunu compile ettiğiniz zaman, bura içinde ne var ne yok bilmiyor ve burada herhangi bir sorgu olabilir, doğru da olabilir, yanlış da olabilir.
+
+181
+00:32:00,056 --> 00:32:04,256
+Aynı kelimeleri tekrar tekrar da girmiş olsanız, burada herhangi bir optimizasyon yok.
+
+182
+00:32:04,936 --> 00:32:13,516
+Haliyle veritabanı tarafında bunun hızlı çalışması, keşfedilmesi, tekrar tekrar gönderilmesi çok mümkün olmayacaktır.
+
+183
+00:32:14,476 --> 00:32:16,476
+Performans olarak da bir dezavantajı var.
+
+184
+00:32:17,395 --> 00:32:34,716
+Şimdi bu sorguyu çalıştırdınız ama sonuç olarak ne gelecek size? Bir sonuç gelecek değil mi? Result set geliyor. Sadece işlem yapıyorsanız direkt sağlayabilirsiniz ama bunun sonucunda bir değer üretiyorsanız o zaman execute query diyorsunuz statement'ın içinde.
+
+185
+00:32:34,716 --> 00:32:44,096
+Bu bir sonuç döndürecek demektir. İşte instructor'dan department name'i ve ortalama maaşı aldık. Bir grup pay işlemi var.
+
+186
+00:32:44,531 --> 00:32:50,131
+Dolayısıyla burada hocaları ve ortalama, dep bölümleri ve ortalama maaşları yazacak hocalar tablosuna.
+
+187
+00:32:51,091 --> 00:32:53,731
+Şimdi bu bir tablo sonucu gelecek size.
+
+188
+00:32:54,911 --> 00:32:59,131
+Bu işlemin sonucunda bir tablo sonucu size gelecek.
+
+189
+00:32:59,411 --> 00:33:04,931
+Yani değer de olabilir, birilerce birilerce değer de olabilir ne kadar bölümünüz varsa.
+
+190
+00:33:06,231 --> 00:33:07,871
+İşte bu sizin sonucunuz.
+
+191
+00:33:09,151 --> 00:33:10,671
+Burada dep name.
+
+192
+00:33:13,875 --> 00:33:18,596
+Ve burada ortalama salari
+
+193
+00:33:19,475 --> 00:33:24,195
+salari geldiniz. Burada işte Computer Science 45000
+
+194
+00:33:25,316 --> 00:33:27,955
+Belki burada işte Biyoloji
+
+195
+00:33:29,316 --> 00:33:30,516
+40000
+
+196
+00:33:31,155 --> 00:33:37,076
+gibi her bir bölüm için gelecek. Burada artık n tane gelebilir.
+
+197
+00:33:37,076 --> 00:33:39,796
+Şimdi sizin bu Result Set dediğim şey yapamadım.
+
+198
+00:33:41,236 --> 00:33:42,316
+Sorgunun sonucu.
+
+199
+00:33:46,163 --> 00:33:55,983
+Bu bir tablo sağladığı için, siz teker teker bunları tutmamız lazım. Size satır satır işlem yapmaya imkanı gerekiyor.
+
+200
+00:33:56,903 --> 00:34:05,043
+Bir satırda hangi değer var? Bölüm ortalama değer, bölüm ortalama değer satır satır işlem yapmanız lazım ama size bir tablo döndürüldü.
+
+201
+00:34:05,043 --> 00:34:06,383
+Bunu nasıl?
+
+202
+00:34:07,855 --> 00:34:26,655
+As da while bölgesine atıyorsunuz. Burada next fonksiyonuyla her bir satır size gelecek. Birinci satır değeri. Bu şekilde çekebilirsiniz. Satır satır tekrar gelecek. Her bir satır için burada department name kolonunu yazabilirsiniz.
+
+203
+00:34:26,655 --> 00:34:34,815
+Eğer bu string bir değeri ise getstring, plot değer ise getint gibi değerleri oluşturabilirsiniz.
+
+204
+00:34:35,123 --> 00:34:42,403
+Ya kolonun ismini yazın. Mesela burada Department Name kolonu gelecek. Bunu biliyorsunuz bu şekilde yapabilirsiniz.
+
+205
+00:34:42,563 --> 00:34:49,923
+Veya 1, 2, 3 gibi de yazabilirsiniz. Yani eğer birinci kolonun Department Name ve String olabilirsiniz.
+
+206
+00:34:49,923 --> 00:34:57,523
+Bir de yazabilirsiniz. İlla ismini yazmak zorunda değilsiniz. Buradaki örnek ikinci kolon. Döndürülen satın bir ikinci kolon demek.
+
+207
+00:34:58,803 --> 00:35:01,343
+Ya da direkt ismini yazarsınız. İsmini yazmak biraz daha iyi.
+
+208
+00:35:01,711 --> 00:35:09,091
+Çünkü sıra dolar karışıklık yaratabilir. Baştan en umurda sonuçları gönderir.
+
+209
+00:35:10,032 --> 00:35:15,431
+Bunun dışında JDBC ile ilgili birkaç daha konuyu değinmekte fayda var.
+
+210
+00:35:16,148 --> 00:35:33,688
+Burada hani bu iki tarafın bir fark yok dediğim gibi. Onun dışında size geri döndürülen şey bir nal veya bir şey dolayabilir. Yani bu sorgunuzun cevabı hiçbir şey olmayabilir. Şurada mesela bu sorgu hiçbir şey dönüştürmeyebilir. Çünkü bir sarktık tablonuz boşsa boş bir cevap gelecek.
+
+211
+00:35:35,628 --> 00:35:43,688
+Burada sorgularınız, departman eviniz nal olacaktır veya SGT nal olacaktır. Buradaki örnekteki gibi eğer değeriniz nal ise,
+
+212
+00:35:44,340 --> 00:35:55,500
+O zaman şunu yap gibi uyarı da verebilirsiniz. Tek bir dönüşüm yapmak hata verebilir. Burada bir null varsa o zaman bunu öncelikle halletmemiz lazım.
+
+213
+00:35:55,500 --> 00:36:07,420
+Şimdi buraya kadar statement işlemi hakkında konuştuk. Bir de prepared statement dediğimiz bir şey var SQL'de.
+
+214
+00:36:07,487 --> 00:36:32,887
+JDBC'de. Yani sorgularınızı siz parametrik bir şekilde ekleyebilirsiniz. Şimdi parametrik bir şekilde eklemenin çok çok avantajı var. Bütün sorguyu yazmak yerine, yani şuradaki gibi pars ederek sorguyu yazmak çok sıkıntılı. Yani burada mesela nasıl bir sıkıntı oluşabilir?
+
+215
+00:36:35,539 --> 00:36:37,579
+Hocam, hata etme ihtimali çok yüksek olabilir.
+
+216
+00:36:38,000 --> 00:36:43,079
+Kesinlikle, yazması çok zor. Birincisi bu. İkinci problem aslında, daha da büyük bir problem var.
+
+217
+00:36:43,960 --> 00:36:44,859
+SQL injection mı hocam?
+
+218
+00:36:45,500 --> 00:36:54,480
+Kesinlikle. Yani burada ID yerine ben başka bir SQL injection yaparım. O tabloyu drop edebilirim, çekebilirim. Ciddi bir problem.
+
+219
+00:36:55,140 --> 00:37:00,416
+Dolayısıyla öyle string embedded şekilde yazmanız...
+
+220
+00:37:00,416 --> 00:37:12,235
+Çok büyük risk stringleri oluşturarak parametreleri, eğer kullanıcıdan parametre alarak bunu SQL'de çalıştırıyorsanız, asla ve asla bunu buradaki gibi dinamik SQL şeklinde yazmayın.
+
+221
+00:37:12,896 --> 00:37:22,115
+Bu çok ciddi bir güvenlik riski ortaya çıkarır. Bunun yerine statement değil, prepared statement objesi var, bunu kullanın.
+
+222
+00:37:22,735 --> 00:37:26,456
+Prepared statement'ın avantajı şu, siz sorguyu yazıyorsunuz.
+
+223
+00:37:27,411 --> 00:37:47,192
+Burada belli parametreleri insert edeceksiniz. Bunları kullanıcıdan alacaksınız. Mesela kullanıcı, işte bu üçüncü finans dediğimiz bilgiyi şuradan fonksiyon içinden şey alabilirsiniz. Mesela bu, death dediğimiz şey, kullanıcıdan geliyor olabilir. 3, death.
+
+224
+00:37:50,036 --> 00:37:56,596
+Nasıl bir avantajı var bunun? Gördüğünüz gibi parametrenin tipini siz burada şey yapabiliyorsunuz,
+
+225
+00:37:57,536 --> 00:38:04,655
+isteyebiliyorsunuz, diyorsanız ki bu parametrede 3. kısıma gelecek şey, bu kullanıcıdan aldığım değişken.
+
+226
+00:38:05,275 --> 00:38:11,815
+Şuraya gelecek. Ama şurada bir kısıtım ne? String olmak zorunda bu. String dışında başka bir şey girersem,
+
+227
+00:38:12,211 --> 00:38:18,292
+Yani bir SQL sorgusu girersem, burada hata alır. Veya burada bir integer değeri bekliyorum.
+
+228
+00:38:18,852 --> 00:38:27,452
+Set integer. Buraya bir SQL sorgusu gönderirsem, işte elektrikten bir şeyler yazarsam, bu hata verecektir.
+
+229
+00:38:27,572 --> 00:38:32,312
+Diyecek ki, senin girdiğim kullanıcı tarafından, senin girdiğim parametre bir integer değil.
+
+230
+00:38:32,872 --> 00:38:39,652
+Dolayısıyla bu sorguda SQL injection'dan korunmuş olursunuz parametrik olarak girdiğiniz için.
+
+231
+00:38:40,083 --> 00:38:41,563
+Bu önemli bir kazanımdır.
+
+232
+00:38:41,983 --> 00:38:45,583
+Tabii ki burada bazı zorlaştırıcı şey var ama
+
+233
+00:38:45,583 --> 00:38:47,723
+Hyperstatement yani
+
+234
+00:38:48,467 --> 00:39:13,507
+Kullanıcından bir şey alıyorsanız bunu kesinlikle ve kesinlikle parametre şeklinde yapmanız lazım. Ya bunu prepared statement tarafında yaparsınız ya da SQL'i çalıştırırken veritabanı tarafında bir prosedür ya da fonksiyon kullanmanız gerekir. Onu da biraz sonra konuşacağız. Store procedure diyoruz bunlara. Veritabanı da kayıtlı prosedürleri parametre kullanarak göndermek gerekir.
+
+235
+00:39:13,856 --> 00:39:23,476
+Az önceki örnekteki gibi bir concatenation işlemi yaparak bunu çalıştırırsanız çok ciddi problemlerle karşılaşırsınız.
+
+236
+00:39:23,996 --> 00:39:32,295
+Bu da mesela örnek vermek gerekirse en sıklıkla kullanılan hacker tekniklerinden bir tanesi SQL injection'dır.
+
+237
+00:39:33,056 --> 00:39:35,775
+Mesela yukarıdaki kreye böyle oldu.
+
+238
+00:39:36,500 --> 00:40:01,920
+Query çalıştıracağız ya, insert into gibi. Bunun prepared statement, yani statement kullanıp bir sorguyu seçeydim kullanıcıdan alsaydım. Mesela şöyle, burasını programcı yazmış. Diyor ki SELECT FROM, EXTRACT, VER, NEMİ, EŞİTTİR, NEMİ. Normalde kullanıcıdan bir input box var web uygulamanızda. Kullanıcı buraya ismini yazması lazım. Ahmet yazmasını bekletiyor. Değil mi? Ahmet yazmasını bekletiyor.
+
+239
+00:40:02,900 --> 00:40:06,020
+Ama kullanıcı Ahmet yazmak yerine şunu yazabilir.
+
+240
+00:40:08,520 --> 00:40:16,700
+X, işte burada bir kınak işareti, or, Y, kınak işareti eşittir, Y.
+
+241
+00:40:17,580 --> 00:40:19,360
+Buraya bunu yazarsanız ne olur?
+
+242
+00:40:20,880 --> 00:40:21,880
+Bütün sorgular gelir hocam.
+
+243
+00:40:22,800 --> 00:40:29,240
+Aynen öyle. Bu instructor'da ne kadar değer varsa hepsini görürsünüz.
+
+244
+00:40:30,291 --> 00:40:45,352
+Çünkü bu her zaman geçerli değil mi? Ver şartını her zaman sal, yoya eşit, yoya doğru. Dolayısıyla burada ne olduğunun hiçbir önemi yok. Haliyle burası doğru olduğu için bu tabloda ne varsa görüleceğiz. Diğer bir riskte nedir burada? Bu sorguda yanlış olan başka ne var?
+
+245
+00:40:49,076 --> 00:40:58,496
+Hiçbir zaman star kullanmayın. Bu çok yanlış bir şeydir sorguların içinde. Çünkü hem bütün kolonları ekspoz ediyorsunuz, sağlıyorsunuz.
+
+246
+00:40:58,800 --> 00:41:05,860
+Dolayısıyla parametreleri okuma tarafında da sıkıntı oluşturur. Güvenlik anlamında da sıkıntı olur. Performans anlamında da sıkıntı olur.
+
+247
+00:41:06,380 --> 00:41:19,940
+Asla uygulamalardan web uygulamaları, mobil uygulamaları fark etmez. Uygulamalardan veri tabanına bağlanıyorsanız asla ve asla star ile sorgu çekmeyin. Her zaman parametre, yani kolon ismini yazmanız gerekir.
+
+248
+00:41:20,500 --> 00:41:46,719
+Burada gördüğünüz gibi SQL injection çok ciddi bir problem. Sadece bu tabloyla da sınırlı kalmayacaktır. Yani şunu da yapabilirsiniz. Birden çok sorgu yapabilirsiniz. Mesela şunu yaparım. Şu şekilde girsem ne yapacak? X diye bir şey yazacaksınız. Ama bu sorgu çalışmayacak. SELECT hiçbir şey getirmeyecek. Ama buradaki noktalı virgülden sonraki iklim de çalışacak.
+
+249
+00:41:47,572 --> 00:41:57,812
+Burada ne yapıyorum? Update-instructor diyorum. Bütün instructor'lara 100.000 lira maaş zam mı yaptım? 10.000 lira zam yaptım.
+
+250
+00:41:58,452 --> 00:42:06,432
+Burada başka ne diyorum? Mesela tabloları drop edeceğim. Veya bütün database'i drop edebilirim. Veya erişim haklarını değiştirebilirim.
+
+251
+00:42:06,712 --> 00:42:10,392
+Yani her şeyi yapmanız mümkün. Bu çok ciddi bir problem.
+
+252
+00:42:11,284 --> 00:42:19,483
+Yani burada da mesela işte gördüğünüz gibi artık herhangi bir sorgunun bu doğru, bundan sonrası önemli değil.
+
+253
+00:42:21,443 --> 00:42:28,684
+O yüzden hani genel olarak veritabanı bağlantısı yapacaksanız her zaman ama her zaman prepared statement kullanın.
+
+254
+00:42:28,943 --> 00:42:31,784
+Eğer kullanıcıdan bir parametre alacaksınız.
+
+255
+00:42:33,784 --> 00:42:35,824
+Prepared statement'ın diğer avantajı da şu.
+
+256
+00:42:36,724 --> 00:42:54,903
+Şimdi buralar sorgu tarafı daha parametreler sonradan etmiyor ama sorgu kısmı daha sabit kaldığı için performans olarak da bu sorgu kısmı daha hızlı çalışır.
+
+257
+00:42:55,564 --> 00:42:59,784
+Performans açısından da faydası var. Sadece parametreler değişiyor, aslında sorgu değişmiyor.
+
+258
+00:43:00,851 --> 00:43:05,871
+Ama siz mesela kullanıcından name alıyorsunuz, ahmet alıyorsunuz, memit alıyorsunuz, sorgu da değişmiş oluyor.
+
+259
+00:43:06,751 --> 00:43:07,331
+Çağırırken.
+
+260
+00:43:10,012 --> 00:43:11,672
+Buraya kadar sorusu falan var mı?
+
+261
+00:43:16,532 --> 00:43:39,092
+Sorgular tabii ki bu JDBC örneğinde olduğu gibi, yani siz bir ön koşulumuz var. Ön koşulumuz nedir? Bütün bu şeyler, veritabanı yapısını siz kaydedilmiş olarak abiliyorsunuz. Yani böyle bir yapının olduğunu zaten varsayıyorsunuz.
+
+262
+00:43:41,012 --> 00:43:50,212
+Ama bu acaba gerçekten mümkün mü, değil mi? Bunu da öğrenmek için aslında bir metadata dediğimiz şey var.
+
+263
+00:43:50,292 --> 00:43:56,332
+Metadata, bu sorguları öncelikle teyit etmek için kullanılan bir özellik.
+
+264
+00:43:56,712 --> 00:44:01,312
+Bunu da biraz sonra daha detaylı konuşuruz. Buraya kadar sorusu olan var mı?
+
+265
+00:44:05,043 --> 00:44:14,043
+Hocam aslında modern idelerde bunları kontrol ediliyor. Mesela IntelliJN falan bağlantı kuruyor veritabanıyla. Onları kontrol edebiliyor. O problemler biraz ortadan kalkıyor.
+
+266
+00:44:15,043 --> 00:44:28,884
+Doğru. Aslında hem öyle bağlantılar kurabiliyorlar ya da aslında zaten sizin bunları veritabanı tarafında önceden garantili iyi olmanız lazım.
+
+267
+00:44:29,364 --> 00:44:41,423
+Yani sadece şey yapmanız riskli. Zaten bir programcı veritabanı yapısını tam bilmeden, bu sorguları test etmeden şey yapması da çok anlamlı değil.
+
+268
+00:44:42,604 --> 00:44:52,724
+Yani programcının veritabanında bunlar var mı yok mu, bunları kod yazarken bilmemesi çok büyük bir zaten sıkıntı. Baştan onun çözülmüş olması lazım.
+
+269
+00:44:53,460 --> 00:44:57,280
+Metadata'ya çok şeyde erişmeye ihtiyacınızın olmaması lazım aslında.
+
+270
+00:44:59,180 --> 00:45:04,920
+JDB tarafından acaba konular mı yok mu diye bunu test etmek çok anlamlı değil.
+
+271
+00:45:05,460 --> 00:45:08,940
+Ama şu açıdan anlamlı, hangi açıdan anlamlı olabilir bu?
+
+272
+00:45:10,980 --> 00:45:18,040
+[öğrenci], Hesmit konuşuyordu. Hangi açıdan olabilir bu Metadata kullanımı?
+
+273
+00:45:25,108 --> 00:45:30,308
+debug etmekte gerekimdir. Doğru, başka amaç daha olabilir.
+
+274
+00:45:35,603 --> 00:46:00,803
+Veritabanları sabit yapılar değildir, dinamik yapılardadır. Yani şu an için doğru, bu veritabanın yapısı böyle, bu kolonları siz varsayıyorsunuz olması gerekiyor. Ama veritabanın sizin bilginiz dışında değiştirilmişse o kolonlar hala orada olmayabilir. Veritabanın tarafında silinmişse bu durumda hatalarla karşılaşabilirsiniz. Az önce bahsettiğim örnekteki gibi.
+
+275
+00:46:01,264 --> 00:46:11,344
+Intelijay veya başka araçlar, tabii ki bunu siz tasarlarken bakıyorlar ama değiştiği zaman bunu yakalamak mümkün değil. Çünkü kodu siz sabit olarak yazdığınız için.
+
+276
+00:46:13,044 --> 00:46:25,764
+Ama şunu, o da şöyle, her bir değişiklikte aslında uygulamalar bunu teyit etmek gerekiyor. Yani siz bir veritabanla değişiklik yapıyorsanız, bu veritabanla değen bütün uygulamaları da güncellemeniz lazım.
+
+277
+00:46:26,164 --> 00:46:44,003
+Yoksa yanlış bir kırılmalara yol açabilir. Bu da aslında test aşamasının zaten yapılması gerekiyor ama yapılmayabilir, gözden kaçabilir. Bu tarz hatalar ortaya çıkabilir. Bunları önlemede mesela metodatının sorgulanması faydalı olabilir.
+
+278
+00:46:45,331 --> 00:46:57,532
+Tabii ki bunun da bir maliyeti var. Siz her bir işlemde değiştirilmiş mi diye kontrol ederken de bir veritavanla bağlantı kuruyorsunuz ve bunun da bir ekstra zaman kaybı söz konusu olacaktır.
+
+279
+00:47:00,192 --> 00:47:01,952
+Buraya kadar sorusu olan var mı?
+
+280
+00:47:08,467 --> 00:47:10,467
+O zaman bir ara verelim arkadaşlar.
+
+281
+00:47:12,467 --> 00:47:15,288
+Saat 2 gibi kaldığımız yerine devam edeceğiz.
+
+282
+01:00:41,907 --> 01:00:43,987
+Hoş geldiniz arkadaşlar. Şimdi ses mi geliyor mu?
+
+283
+01:00:47,027 --> 01:00:48,207
+Duyuyor biliyor musunuz beni?
+
+284
+01:00:53,652 --> 01:01:02,271
+Tekrar edelim. O zaman, ekranı tekrar başlıyorum. Şu an görebiliyor musunuz?
+
+285
+01:01:11,315 --> 01:01:19,175
+Teşekkürler. Ekranım da yansmış. Aradan önce EDBC Connector'ını detaylı konuşmaya başlamıştık.
+
+286
+01:01:19,175 --> 01:01:33,175
+EDBC için de sorguların veritabanında çalıştırıldığını bildiğimiz için oradaki varsayımımız herhangi bir tablonun ya da kolonun
+
+287
+01:01:33,364 --> 01:01:44,384
+Veritabanında var olduğu ön koşulu. Yani bu sorgu yaptığımız, insert ettiğimiz, update ettiğimiz şeyler veritabanında geçerli diye bir ön koşulumuz var.
+
+288
+01:01:45,183 --> 01:01:50,844
+Bunu teyit etmek için aslında bir metadatayı da sorgulayabilirsiniz.
+
+289
+01:01:51,143 --> 01:01:54,823
+JDBC üzerinden. Bunun için de şuradaki örneği kullanalım.
+
+290
+01:01:55,483 --> 01:01:57,223
+Yine bir result set olarak.
+
+291
+01:01:57,715 --> 01:02:20,215
+GETMETA DATA fonksiyonu çalıştırarak bunu yapabilirsiniz. Bu size bu result set içinde kolonlar, bunun dışında bunların isimleri, tipiyle ilgili bilgileri paylaşabilir. Bunu daha detaylıca yapmak da mümkün. Şöyle mesela bir Metadata objesi oluşturacağız.
+
+292
+01:02:20,947 --> 01:02:28,507
+Aynı connection üzerinde, tam önce tanımladığınız connection üzerinde, get metadata, poxiyonu çağırarak bu connectionla ilgili metadata'yı çekebilirsiniz.
+
+293
+01:02:29,407 --> 01:02:35,447
+Metadata sorgulanırken, bunu da daha spesifik şekilde yapabiliyorsunuz.
+
+294
+01:02:35,447 --> 01:02:36,708
+Yani örneğimize bakalım.
+
+295
+01:02:38,027 --> 01:02:39,147
+Ne yapmışız burada?
+
+296
+01:02:41,715 --> 01:02:52,755
+Mesela kolon bilgisine ihtiyacımız var. Bu kolonların tipleri, isimleri gibi bir şeylere ihtiyacımız var mı? Böyle bir insert yapacağız ama bu kolon geçerli mi? Bunu sorguladığımızı var.
+
+297
+01:02:53,755 --> 01:03:05,735
+Burada kolon dediğimiz fonksiyonu çağırırken şöyle bir sıra var. Katalog yani instance bilgisini sorgulayabilirsiniz.
+
+298
+01:03:06,192 --> 01:03:15,852
+Onun dışında şema bilgisini yani bu tablo hangi şemayı kullanacaksınız, hangi veritabanını kullanacaksınız bunu belirleyebilirsiniz.
+
+299
+01:03:15,852 --> 01:03:25,572
+Tablo ve en sonunda kolon yani öncelikle instance, veritabanı, tablo ve kolon şeklinde sıralanıyor.
+
+300
+01:03:27,380 --> 01:03:37,079
+% işaretini like operatörü olarak kullanabiliyorsunuz. Yani herhangi bir tanesi veya hepsi anlamında kullanabilirsiniz.
+
+301
+01:03:38,339 --> 01:03:53,500
+Mesela burada biz Univ veritabanında departman tablosundaki kolonları ve türlerini sorgulamak istiyorsak, Univ department burası % işareti koyduğumuz zaman bütün kolon bilgileri gelir.
+
+302
+01:03:54,003 --> 01:04:00,364
+Sonra bunu bir while döngüsü içinde, bir colon için, burada bunu görmek mümkün.
+
+303
+01:04:01,563 --> 01:04:07,164
+Onun dışında daha detaylıca işlemler de yapabilirsiniz. Mesela buradaki örneğe bakalım.
+
+304
+01:04:07,983 --> 01:04:19,083
+Burada bütün tablo isimlerini istiyorsam, veritabanında, yani burada ne yapıyorum? Veritabanını sabit ediyorum. Herhangi bir veritaban olabilir.
+
+305
+01:04:19,668 --> 01:04:30,568
+Burada bütün tablo bilgilerini liste ediyorum. Hangi tablolar var bu belirtabanlarında? Bunları detaylıca yazmanız bu şekilde mümkün olacaktır.
+
+306
+01:04:32,028 --> 01:04:38,268
+O insort edacağınız, sorgu yapacağınız tablolar mevcut mu değil mi? Bunu görmek için kullanılabilir.
+
+307
+01:04:40,115 --> 01:04:42,835
+Veya primary key içinde yapabilirsiniz.
+
+308
+01:04:43,556 --> 01:04:53,375
+Burada get primary key fonksiyonunu kullanarak o tablodaki mevcut primary key bilgisini sağlayabilirsiniz.
+
+309
+01:04:53,515 --> 01:04:55,715
+Bunun hangi anlamda faydalı olabilir primary key?
+
+310
+01:04:59,635 --> 01:05:02,975
+Hangi amaçta kullanmak ihtiyacı duyabilirsiniz bu primary key'e?
+
+311
+01:05:15,668 --> 01:05:18,188
+Hocam, yeni bir primary key üreteceksek?
+
+312
+01:05:20,807 --> 01:05:37,668
+Primary key kolonu var mı? Öncelikle onu bir öğrenmek isteyebiliriz. Primary key bilgisini sizin auto increment gibi bir şeyse bunu girmeniz gerekmeyebilir. Insert'de bunu spesifik bir şekilde yapabilirsiniz. Primary key yapan...
+
+313
+01:05:38,291 --> 01:06:05,331
+Bir kompozit anahtar olabilir yani primary key. Birden çok kolon mevcut olabilir. Acaba hangi kolonlar bu şeyin içinde? Burada bir değişiklik var mı? Bunu yapabilirsiniz. Bir de primary key aslında indeks oluşturuyor değil mi? Bir indeks oluşturduğu için sorgularda da çok avantajlı sorgu yaparken çok hızlı yapıyor. Yapacağınız sorgularda belki bu primary key bilgisini şey yapabilirsiniz.
+
+314
+01:06:06,003 --> 01:06:10,844
+Teyit ederek o primary key, konglar üzerinden sorgular gerçekleştirebilirsiniz hızlı olması için de.
+
+315
+01:06:11,284 --> 01:06:13,344
+Bunun gibi şeyler için kullanılabilir.
+
+316
+01:06:13,463 --> 01:06:18,903
+Tabii dediğim, bu aslında uç bir örnek için bahsedeceğimiz bir konu.
+
+317
+01:06:19,564 --> 01:06:24,544
+Normalde siz veri tabanı tarafını, veri tabanı tarafında biliyor olmanız lazım.
+
+318
+01:06:24,544 --> 01:06:26,244
+Yani bir uygulama yazarken,
+
+319
+01:06:26,867 --> 01:06:49,788
+Web uygulaması yazıyorsunuz. X-veri tabanına yaşayacaksınız. O X-veri tabanında hangi kolonları kullanacaksınız? Hangi kolonlar var o tablolarda? Hangi primary keyler, foreign keyler mevcut? Bunları zaten ön koşu olarak bilmeniz lazım uygulamayı geliştirmeden. Veya uygulamayı tasarlarken bunu da yapabilirsiniz.
+
+320
+01:06:50,547 --> 01:06:55,847
+Yani uygulamayı tasarlarken siz yeni bir veritabanı da yaratmak durumunda olabilirsiniz.
+
+321
+01:06:55,967 --> 01:07:00,347
+Yani var olmayan bir veritabanını bu uygulamaya göre de geliştirebilirsiniz.
+
+322
+01:07:00,967 --> 01:07:07,787
+Bunun için de yine aslında bu veritabanıyla ilgili objeleri orada kontrol edip öyle kodu yazmak lazım.
+
+323
+01:07:08,787 --> 01:07:12,667
+Bu tarafta bununla uğraşmak çok doğru değil.
+
+324
+01:07:12,667 --> 01:07:14,667
+Ama bunun tabii ki kullanım amacı özellikle...
+
+325
+01:07:15,956 --> 01:07:36,356
+Zamanla bir tabanı değişiyorsa ve burada mesela primary key, kolonları veya işte oradaki değişiklikler zamanla gerçekleşiyorsa, tablo değiştirilmiştir, tabloya yeni kolon eklenmiştir gibi problemleri siz uygulama güncellenmeden yaşayabilirsiniz.
+
+326
+01:07:37,036 --> 01:07:39,856
+Bu bir önlem olarak özellikle bu metodata.
+
+327
+01:07:40,628 --> 01:07:50,148
+Bir şey var mı, yok mu, bu kolon var mı, sorgu için bir gerçekleşmadan yapılabilir bir durum ama genelde çok uygulanan bir şey değildir.
+
+328
+01:07:50,348 --> 01:07:53,708
+Bu çok geçerli bir yöntem değil, onu da söyleyeyim bu arada.
+
+329
+01:07:56,820 --> 01:08:04,120
+Şimdi bunun yanında bir de bahsetmiştik, bazı işlemler transaction kontrolü şeklinde yapılması gerekiyor.
+
+330
+01:08:04,260 --> 01:08:09,260
+Yani transaction neden yapılması gerekir? Hatırlayanlarınız var mı? Neden transaction?
+
+331
+01:08:09,540 --> 01:08:16,739
+Ya da transaction işlemi hangi şartları için geçerli? Transaction işlemi ne yapıyor? İsterseniz onu hatırlayalım.
+
+332
+01:08:17,239 --> 01:08:19,680
+Transaction ne yapar? Neden transaction ihtiyacımız vardır?
+
+333
+01:08:20,275 --> 01:08:26,216
+Hocam, birden fazla işlem yaptığımızda, yani arada bir yerde işlem sıkıntı olmuş olabiliyor. En başa dönmek gerekiyor zamanım.
+
+334
+01:08:26,707 --> 01:08:54,707
+Aynen. Mesela bu özellikle para işlemleri değil mi? Bu tarz işlemler de çok önemli. Bir yerden para çekiyorsanız, bir yere para yatırıyorsanız. Bunlar genellikle birini takip eden birden çok işlem içerir. Veya onun dışında ne yapıyorsunuzdur? Bir veri tabanından ne bileyim önemli bir veri silme, veri kaydetme işlemi olabilir. Bunların aynı anda gerçekleşmesi gerekebilir. Bilemiyorum. Bunun gibi bir örnek çoğaltılabilir. Genellikle atomik olmayan işlemler.
+
+335
+01:08:54,707 --> 01:09:03,287
+Yani normalde birden çok işlemin ama atomik gibi olması gerektiği durumunda transaction kullanırız.
+
+336
+01:09:03,688 --> 01:09:06,188
+Yani bir şey, mesela yeni bir müşteri ekliyorsunuz.
+
+337
+01:09:06,676 --> 01:09:23,056
+Tamam, yeni bir müşteri eklemek bir tabloya insert gibi gerçekleşebilir. Ama bu yeni müşteri eklerken aynı zamanda bu müşteriye bir ürün de eklemek gerçekleşmesi gerekiyorsa, hani diyelim ki bir kasko şirketisiniz, sigorta şirketisiniz.
+
+338
+01:09:23,667 --> 01:09:31,127
+müşteriniz var ama müşterinin ürünü yok veya ürün var bunun sahip olduğu müşteri yok gibi bir insert işlemeyebiliyorsunuz.
+
+339
+01:09:31,667 --> 01:09:37,507
+Ama öncelikle birinin müşteri olabilmesi sizden bir ürün almış olması lazım değil mi? Bu işin birlikte gerçekleşiyor olması lazım.
+
+340
+01:09:38,036 --> 01:09:47,456
+Bunları ayrı ayrı yaparsanız, arada bir problem olursa belki ürününüz olacak, müşterisi yok, karşılığında bir insan olmayabilir gibi ihtimaller çıkabilir.
+
+341
+01:09:47,595 --> 01:09:57,796
+Bunu engellemek için de transaction yapılır. Yani bu iki insert işleminin birlikte bir atomik işlem olarak yapılabilmesini sağlamak için de transaction kullanılabilir.
+
+342
+01:09:58,416 --> 01:10:05,156
+Buradaki örnekte bahsettiğimiz gibi, eğer işlemlerimiz, mesela ben Ahmet'e para gönderiyorum.
+
+343
+01:10:05,488 --> 01:10:21,328
+Para, havada kaybolmaması gerekir. Ya Ahmet'in hesabına yatacak, ondan sonra benim hesabımdan çıkacak. Ya da Ahmet'e ulaşmıyorsa o para, benim hesabımdan geri yatılması lazım, çıkmaması lazım. Bu işlemi de transaction sayesinde yapabiliyoruz.
+
+344
+01:10:21,828 --> 01:10:25,968
+Şimdi JDBC'de default olarak şöyle bir problem var.
+
+345
+01:10:28,028 --> 01:10:29,268
+Set auto commit
+
+346
+01:10:30,336 --> 01:10:57,216
+işlemi yapmazsanız, yani bu, şu ne oluyor? Birden çok SQL işlemini, JDBC ile aynı şey içinde yapıyorsanız, bunları ayrı ayrı transaction olarak yapıyor. Yani bir transaction'ı birden çok update içinde gerçekleştiriyor. Bu çok iyi bir şey değil. Zaten mantığa da tersi. Siz transaction içinde yapmışsınız ama her bir işlemi ayrı ayrı transaction gibi yapıyor.
+
+347
+01:10:58,068 --> 01:11:06,268
+Burada transaction çok bir anlamı kalmıyor. Bu yüzden commit olayının otomatik olarak yapılmasını engellemeniz gerekiyor.
+
+348
+01:11:06,847 --> 01:11:16,967
+Orada da şunu yapmanız lazım. Connection Asset Auto Commit Post dediğiniz zaman connection içindeki bu transaction'ın bütün işlemleri ya gerçekleşir ya gerçekleşmez.
+
+349
+01:11:16,967 --> 01:11:20,827
+Ama burada da biraz manuel işlem yapmanız gerekiyor.
+
+350
+01:11:21,167 --> 01:11:31,667
+Şöyle, bunu yaptıktan sonra transaction içine aldığınız kod bloğunu, ayrıyeten connection commit ya da connection rollback demeniz gerekiyor.
+
+351
+01:11:32,447 --> 01:11:40,947
+Böylelikle, müteşten gerçekleşirse commit yapıyorsunuz, transaction içine aldığınız kod tamamı gerçekleşiyorsa aslında commit.
+
+352
+01:11:41,332 --> 01:11:49,072
+ELSE durumundaysa, olmaması durumundaysa, ROLLBACK diyorsunuz. ROLLBACK konudan çalışıyorsunuz ve bu şekilde sağlayabilirsiniz.
+
+353
+01:11:49,932 --> 01:11:56,231
+Ama otomatik olarak commit etsin diyorsanız, o zaman bu TRUE ederseniz veya DEFAULT değeri zaten öyle.
+
+354
+01:11:57,052 --> 01:12:04,092
+Bunda connectionlar içindeki her bir işlem ayrı ayrı commit edilir. Bu da transaction'a aykırı.
+
+355
+01:12:04,872 --> 01:12:07,311
+Yani transaction'dan beklediğimiz şey gerçekleşmez.
+
+356
+01:12:09,684 --> 01:12:31,804
+Bunun yanında bir de az önce prepared statement dediğimiz obje hatırlarsanız ne yapıyordu? SQL injection'ı çözüyordu. Çözmek için çok faydalıydı. Bunun yanında yine bu parametreleri siz SQL tarafında sorgun içine yazabilirsiniz ama daha akıllıca bir yöntem şudur.
+
+357
+01:12:37,747 --> 01:12:54,127
+Fonksiyonu ya da store prosedürü, yani yapacak işlemi, siz veritabanında bir obje olarak tutuyorsunuz ve burada aslında siz kodu veritabanı, yani veritabanıyla ilgili kodu veritabanında tutuyorsunuz.
+
+358
+01:12:54,427 --> 01:12:57,987
+Siz sadece uygulamadan parametre gönderiyorsunuz fonksiyonu.
+
+359
+01:12:59,007 --> 01:13:02,807
+Bu çok daha avantajlı bir yöntem. Birinci sebebi şu.
+
+360
+01:13:03,507 --> 01:13:19,807
+Yani siz Connection, Prepare, Call diyorsunuz. Burada hangi fonksiyonu çağıracaksınız? Fonksiyonun ismi mesela insert person.prc diye bir fonksiyonunuz var. Yani store procedure'nuz var. Bu prosedür şunu yapıyor.
+
+361
+01:13:20,372 --> 01:13:37,772
+Çünkü, girdiğimiz zaman, person adı bir denebilir, bir departman olabilir. Bu arka planda gidip, database de o şeyi değiştirebiliyor, parametreleri gönderiyor. Veri tabanında o sorgu, o prosedür ne yapıyorsa, işlemi o yapıyor. Insert işlemini de, o prosedür gerçekleştirebilir.
+
+362
+01:13:38,352 --> 01:13:42,508
+Burada, kod tarafında, Java veya C tarzında, siz...
+
+363
+01:13:42,612 --> 01:13:52,692
+Sadece var olan prosedürü çağırıyorsunuz ve buna gerekli bir metafeleri sağlıyorsunuz. Burada da SQL injection olmaz. Neden olmaz?
+
+364
+01:13:55,492 --> 01:13:58,932
+Yine bu set vesaire bir şey diyerek atacağız zaten.
+
+365
+01:13:59,131 --> 01:14:03,152
+Aynen. Birincisi de o. Ayrıyeten bir şey daha bunu garant ediyor.
+
+366
+01:14:05,844 --> 01:14:15,884
+SQL tarafında da bunu yapıyorsunuz. Mesela bir prosedüre SQL'den veri geliyor, parametre geliyor. Ama onun tipini de SQL tarafında bir SQL tipi olarak belirtmeniz lazım.
+
+367
+01:14:16,164 --> 01:14:27,244
+İşte varcar mı, integer mı, işte şey mi? Çift taraflı kontrol almış oluyor hem de. Hem diğer tarafta, SQL tarafında bunun aynı string ya da integer float neyse.
+
+368
+01:14:27,663 --> 01:14:49,183
+Oradan kontrol ediyorsunuz. Hem de eski Java tarafında veya işte Code tarafında da bunu teyit ediyorsunuz. Eğer bu şeye uymuyorsa, string ya da integer değerine uymuyorsa bu kilometre, zaten burada hata alacaksınız. Yani o işlem gerçekleşmiş. Kullanıcı bunu hiç ortademeyecek. Bu açıdan da bu işlem ayrılır.
+
+369
+01:14:50,003 --> 01:14:56,603
+Bunları biraz sonra yine store procedure'ları tanımlarken daha detaylı konuşacağız. Başka bir avantaj daha var.
+
+370
+01:15:05,427 --> 01:15:14,608
+Aslında birden çok avantajı var. İsterseniz onları biraz sonra şeyle konuşalım. Store procedure kullanmak, kullanmamak arasındaki şeyleri orada detaylıca konuşalım.
+
+371
+01:15:14,608 --> 01:15:26,128
+Ama bu probable statement olayı kullanış parametrelerini ya kesinlikle, kesinlikle, prepared statement şeklinde yapın ya da bu şekilde
+
+372
+01:15:26,676 --> 01:15:51,435
+Store procedure, tanımlayın veritabanı da oraya parametre gönderin. Bu daha verimli bir yöntemdir. Bu daha mantıklı bir yöntemdir. Ama PPRS takımında kabul edilebilir bir şey. Ama asla ve asla kullanıcıdan bir veri çekiyorsanız, veri input alıyorsanız, asla ve asla SQL'e embed ederek göndermeyin. Yani SQL için de bunu bir string concatenation ile dinamik SQL ile yapmayın.
+
+373
+01:15:55,155 --> 01:16:08,816
+Bunun yanında bu özelliklerde mesela burada bir geniş objeniz varsa, geniş bir veritibiniz varsa string'e benzer bir şekilde getClob ya da getBlob objesi şeklinde de insert edebilirsiniz.
+
+374
+01:16:09,396 --> 01:16:19,476
+Veya byte şeklinde bunlar da aslında mümkün ve veritibini tanımlamanız açısından da faydası olabilir.
+
+375
+01:16:20,056 --> 01:16:22,036
+Blob ile clob arasındaki fark neydi?
+
+376
+01:16:23,636 --> 01:16:27,816
+Hocam, blog binary dizisi gibiydi. Cloud'da karakterleri tutuyor.
+
+377
+01:16:28,576 --> 01:16:34,515
+Doğru. Binary, özellikle hangi verileri mesela binary olarak tutuyoruz?
+
+378
+01:16:35,275 --> 01:16:41,536
+Yani tutmamız gerekir veritabanda. Bazı şeyleri veritabanda tutabiliriz ama bunu veri tipi olarak tutmamız mümkün değil.
+
+379
+01:16:41,636 --> 01:16:46,515
+O yüzden binary gösterimini, onu biz serialize ediyoruz.
+
+380
+01:16:47,220 --> 01:16:58,159
+Sonrasında binary olarak biz veri tabanına kaydediyoruz. Aslında orada bir binary veri bloğu tutmaktan farkı kalmıyor. Hangi türlü veriler bunlar için daha uygun?
+
+381
+01:16:59,639 --> 01:17:11,000
+Evet, mesela [öğrenci] cevap vermiş, resim gibi de o. Resim, ses dosyası, video, MP4, MP3 gibi şeyleri.
+
+382
+01:17:11,572 --> 01:17:15,252
+hani, barcard falan gibi bir şey tutmanız mümkün değil.
+
+383
+01:17:16,211 --> 01:17:21,412
+Dolayısıyla resimleri, Base 60'larda dönüştürsek, stream de tutulabilir aslında ama, duruma göre.
+
+384
+01:17:22,032 --> 01:17:27,631
+Çok verimli olmaz o. Resimleri binary olarak tutmak daha uygun.
+
+385
+01:17:27,631 --> 01:17:37,971
+Hem alan, compression yapabilmeniz lazım, bir de çözünürlüğü daha iyi yapmak için bunları blob şeklinde tutmak uygun oluyor.
+
+386
+01:17:39,283 --> 01:17:51,723
+Resim, video, ses, ne bileyim bunun gibi çok değişik veri tiplerini, daha doğrusu veri türlerini, GLOB olarak tutmak çok mantıklı.
+
+387
+01:17:51,723 --> 01:18:02,483
+Yani böyle tutarız daha doğrusu. Ama hani bunun dışında GLOB da tutabilir. Bu hangi için, metin için çok ne bileyim kullanıcı yorumlarını tutuyorsanız.
+
+388
+01:18:02,944 --> 01:18:11,184
+Veya işte onun dışında Twitter postlarını tutuyorsanız, Twitter gerçi daha kısa oluyor, Facebook postlarını tutuyorsanız, uzun olabiliyor Facebook biliyorsunuz.
+
+389
+01:18:11,844 --> 01:18:17,584
+Veya bir web sayfasının içeriğini tutuyorsanız, burada bir blog yazıları falan olabilir.
+
+390
+01:18:18,203 --> 01:18:23,084
+Bu tarz şeylerde de binary değil de, bir isim olarak tutmanız için kopuyor.
+
+391
+01:18:26,420 --> 01:18:40,620
+Fonksiyon ve prosedür biraz sonra konuşacağız [öğrenci]. Bu bir SQL objesi. Bir SQL objesi oluşuyor, store procedure ya da fonksiyon. Onu da biraz sonra konuşacağız.
+
+392
+01:18:45,363 --> 01:18:54,903
+Bunun dışında, BDB'si ile ilgili daha detaylı bilgileri, temel bilgileri siz bunun editorialından okuyarak alabilirsiniz.
+
+393
+01:18:55,183 --> 01:19:07,743
+Yani en uygunu, hangi veri tabanı kullanacaksanız, onun kullandığı connector'ı kendiniz hangi dilde çalıştıracaksanız, okuyarak ona göre sinteksini ayarlamak.
+
+394
+01:19:07,743 --> 01:19:08,943
+Çünkü sinteks fark ediyor.
+
+395
+01:19:09,460 --> 01:19:30,719
+Oracle'la mı bağlanıyorsunuz, SQL'e mi bağlanıyorsunuz, SQL Server'a mı, MySQL'e mi bağlanıyorsunuz? Burada küçük sinteks farkları var bu konnektörlerin. Dolayısıyla o veri tabanında çalışan konnektörü, driver'ı implement etmek, onu kullanmak için onun sinteksine bakarsanız çok daha uygun olur. Çünkü ilk konuda bir şeyler olabiliyor.
+
+396
+01:19:31,891 --> 01:19:56,231
+JDBC ile ilgili söyleyeceklerim bu kadar. Ama JDBC'nin tabii ki birden çok problemi var. Bahsetmiştik aslında bunların başında da şey geliyor. Hatalar, compile etme zamanında ortaya çıkmıyor. Çünkü JDBC'nin dinamik haliyle sorgularınızın içeriğini compile ederken tespit edemiyorsunuz. Sadece runtime'da bu problemler ortaya çıkar.
+
+397
+01:19:59,891 --> 01:20:15,891
+embedded SQL yöntemleri kullanılarak bunu önlemek mümkün. Mesela SQLJ, aslında bir embedded SQL örneği Java'da. Bu hataları...
+
+398
+01:20:16,659 --> 01:20:24,180
+Siz compile ederken yakalayabilirsiniz. Çünkü embedded SQL olduğu için bu delay entegre SQL statementları var.
+
+399
+01:20:24,180 --> 01:20:30,979
+Ve Java tarafında mesela bunları şey yapabilirsiniz, tespit etmeniz. Compile ederken Java bunları anlıyor çünkü.
+
+400
+01:20:31,579 --> 01:20:39,619
+Entegre. Mesela C için başka, C++ için başka. Bu native olduğu için anlayabiliyorlar buradaki problemleri.
+
+401
+01:20:41,076 --> 01:20:58,395
+Mesela, aynı örneği bir SQLJ ile yapacak olsaydık, burada SQL iteratör yazıyorsunuz, burada kullanacağınız ismini yazıyorsunuz, info iteratör diye bir şey yaptınız.
+
+402
+01:20:59,115 --> 01:21:06,036
+Bunun için de department'eyim ve salari gelecek, öğrenci salari. Öncelikle bunu nala eşitledik.
+
+403
+01:21:06,452 --> 01:21:15,231
+Sonrasında burada tabloda yapacağınız sorguyu yazıyorsunuz. İteratörün olduğu sorguyu. Normaliz SQL sorgusu yani gördüğünüz gibi.
+
+404
+01:21:15,712 --> 01:21:18,811
+Tırnak işaretini de yazmıyorum. Çünkü sorgunun kendisine yazıyorsunuz.
+
+405
+01:21:19,952 --> 01:21:28,452
+Onun dışında da artık iteratörle burada sırasıyla gelen yerleri sorgulayıp onun sonuçlarını...
+
+406
+01:21:28,787 --> 01:21:34,787
+yapabiliyorsunuz, oluşturabiliyorsunuz. Print edebilirsiniz, başka iflemler yapabilirsiniz.
+
+407
+01:21:34,787 --> 01:21:39,787
+En sonunda bir iteratörü kapatıyorsunuz, bu fikrinde yapabilirsiniz.
+
+408
+01:21:39,787 --> 01:21:44,787
+Tabi buna önce bir Connection Siting yapmanız lazım. Data-based Connection'ı oluşturmanız lazım.
+
+409
+01:21:44,787 --> 01:21:52,787
+Orası zaten ön koşuş olarak yapmanız gereken bir şey. Öncelikle o etabanda da seyreceksiniz. Bunu ön tarafta.
+
+410
+01:21:53,203 --> 01:22:16,203
+Ama sonrasındaki gördüğünüz gibi, Java içine entegre olduğu için, burada mesela diyelim siz sinteks olarak yanlış bir sinteks yazdınız, BRUPA yanlış yazdınız, COLONISİMleri yanlış yazdınız, hata verecektik compile ederken. Dolayısıyla runtime'da bu problemleri yaşamazsınız.
+
+411
+01:22:17,939 --> 01:22:43,159
+Diğer bir connector tipi de ODBC connector. Bu da aslında JDBC'ye çok benzer. ODBC Open Ademable Connectivity connector'ı olarak geçer. Bu bir standart, SQL standardı ve birçok programlama dilinden veri erişimini sağlamak için tanımlanmış bir standart API aslında.
+
+412
+01:22:44,083 --> 01:23:10,904
+Tabii ki JDBC'ye çok benziyor. Bunun farklı programlama dillerine, farklı veritabanlarına erişim hakkı sağlıyor ODBC. Özellikle Microsoft araçlarında ODBC kullanılır. C Sharp, C++'ın visual versiyonu. Onun dışında bunlar SQL Server'a veya MySQL'e de erişim sağlıyor. Birçok veritabanında ODBC connector vardır bu arada.
+
+413
+01:23:11,507 --> 01:23:20,347
+İlla hani Microsoft SQL sorgul olmak zorunda değil. Benzer şekilde önce bir connection oluşturmanız lazım.
+
+414
+01:23:20,487 --> 01:23:27,688
+Database'e sonrasında sorgularınızı, güncellemelerinizi, insertlerinizi yapıyorsunuz. Gelen sonucunda açıkçısını yazıyorsunuz.
+
+415
+01:23:29,011 --> 01:23:40,731
+Mesela Excel gibi grafik arzileri falan da aslında ODBC kullanır arka planda. Mesela Excel'den veya bir raporlama aracından da şeyde erişebiliyorsunuz, Akses'ten falan.
+
+416
+01:23:42,111 --> 01:23:53,431
+ODBC Connector'la erişmeniz mümkün. Excel'den mesela SQL Server'a erişip oradan veri çekip düzeltmeniz, QMIT table'lar falan vardır. Bu tarz sistemleri yapmanız mümkün.
+
+417
+01:23:53,971 --> 01:24:00,471
+Yani, grafik arayüzüyle de etşi, sorguları, o yüzden, bu da bir saniye.
+
+418
+01:24:26,771 --> 01:24:41,391
+Bir de, ikinci olarak, Embedded SQL'dan bahsetmiştik. Embedded SQL, dediğimiz gibi, aslında, host programlama didine entegre edilmiş SQL.
+
+419
+01:24:42,036 --> 01:24:55,976
+kod blokları, SQL parçalışıkları. Bunun avantajı şu, Embedded SQL'ın yazdığınız sorgular, önceden tespit edilebiliyor hataları. Bu tarz bir avantaj söz konusu olabiliyor.
+
+420
+01:24:56,456 --> 01:25:08,316
+Bunun bir standart olarak çeşitli program anlatma dillerinde entegre versiyonları var. CC++, Java, Ford'un her birisinde aslında Embedded SQL varyantları söz konusu.
+
+421
+01:25:08,979 --> 01:25:20,180
+MeditSQL'da bir fonksiyon olarak ExactSQL denilen bir statement var. Sorguyu bunun içine yazıyorsunuz. Yani SELECT bilmem ne gibi bir sorgu yazıyorsunuz.
+
+422
+01:25:20,180 --> 01:25:30,979
+Mesela Java'da köşeli pound işareti esmer gibi bir sinteks var. COBOL'da mesela şey yapıyorsunuz.
+
+423
+01:25:31,764 --> 01:25:38,664
+noktalı virgüller içinde yazmak yerine end exact, begin exact gibi şeyler yapıyorsunuz.
+
+424
+01:25:38,744 --> 01:25:51,244
+Kimisinde de, mesela bu diğer programlı modellerde de exec, SQL sonunda noktalı virgül yaptığınız zaman o sorguyu tek bir sorgu olarak değerlendirip çalıştırır.
+
+425
+01:25:52,756 --> 01:26:02,536
+Yani şöyle devam etmek gerekirse, mesela bir öncelikle EXEC SQL CONNECT TO diye bir veritabanına belirtmeniz gerekiyor.
+
+426
+01:26:02,676 --> 01:26:09,856
+Bu orada Server bilgisi, User bilgisi, Password gibi detayları geliyorsunuz, using kelimesiyle.
+
+427
+01:26:10,636 --> 01:26:16,196
+Bu noktalı bir şekilde bu bilgileri başlayınca o veritabanla Connection sallıyor.
+
+428
+01:26:17,235 --> 01:26:42,375
+Onun dışında parametreler de ekleyebiliyorsunuz embedded SQL'e. Burada parametreleri ayırmak için iki nokta süslü, yani şeyden farklı olsun diye SQL'de böyle bir şey olmadığı için, mesela Credit M6 diye bir değişkeni kullanacaksam, SQL'in içinde, bu değişkeni noktalı bir gün Credit M6 şeklinde giriyorum bunu.
+
+429
+01:26:42,783 --> 01:26:45,663
+Java'dan gelen bir değişken olduğunu varsayalım.
+
+430
+01:26:47,663 --> 01:26:52,223
+Bunun dışında burada başka şeyler de şey yapabilirsiniz.
+
+431
+01:26:52,223 --> 01:27:00,063
+Değişkenler, öncelikle declare section isiminde tanımlaması lazım. Bunun tanımlaması yapıyoruz.
+
+432
+01:27:00,063 --> 01:27:09,903
+Bu integer bir değer, bu değiştiriyoruz. Sonrasında bunu execSQL içinde, sorgu içinde, embedd SQL ile yazabiliriz.
+
+433
+01:27:10,100 --> 01:27:35,600
+Şimdi, embedded SQL'de bir de declare cursor dediğimiz bir cursor oluşturmamız gerekiyor. Cursor değişkeni. Bu cursor değişkeni için bir sorgu yazıyorsunuz. Sintex'i böyle. ExecSQL şeyin içinde, bloğun içinde. Bunu dedikten sonra, and execSQL ya da noktada bir bilgi olabilir. Değere göre.
+
+434
+01:27:38,739 --> 01:27:50,619
+Cursor neyi tutacak? ID, name, from, işte bir deyişkenler var. Burada bir kısmınız da olabilir. Mesela, emad dediğimiz şey aslında şeyden geliyor.
+
+435
+01:27:51,159 --> 01:27:57,299
+Java'dan gelen bir değer veya işte C'den hangi programın, bu dini kullanıyorsanız, oradan gelen bir değişken.
+
+436
+01:27:58,199 --> 01:28:01,499
+Bu kullanıcı tarafında oluşturan ya da kod tarafında oluşturan bir değişken.
+
+437
+01:28:02,355 --> 01:28:11,576
+Sokumuz bundan büyük olan, kredi bundan büyük olan insanlar istiyorum. Bu cursor sonucunda belki 10 tane, 100 tane veya 1000 tane değer gelecek.
+
+438
+01:28:13,055 --> 01:28:23,155
+Ondan sonraki aşamada, şimdi o open cursor şeyini kullandıktan sonra, open statementı kullandıktan sonra, bu cursor veritabanda çalışıyor.
+
+439
+01:28:23,155 --> 01:28:26,595
+Bunun sonucunda bir sorgu üretiliyor.
+
+440
+01:28:27,475 --> 01:28:38,996
+Her bir adım için, bunu şey yapmak için, değerlerini, yani her bir satır değerini işlemek için de şunu yapıyoruz.
+
+441
+01:28:39,115 --> 01:28:44,456
+Patch umudunu kullanarak, cursor için de patch'i bir tane objeye atalım.
+
+442
+01:28:45,295 --> 01:28:51,935
+Burada iki parametre, CI, SN gibi şeyler tekrar tekrar bu kurular.
+
+443
+01:28:53,119 --> 01:29:18,099
+çalıştırarak bunu satır satır okuyup işlem yapabilirsiniz. İlkenler tamamlanınca da bir close cursor diyorsunuz. Bunun dışında sonuç biter. Ama dediğim gibi bu dile spesifik bir özellik. Bu Java'daki örnekleri. Ama başka dillerde başka versiyonları olabiliyor.
+
+444
+01:29:18,739 --> 01:29:31,600
+Bunun yanında bir de mesela SQL'de, SQL Server için C Sharp tarafından Link diye bir versiyon da var. Link'i duymuşsunuz, kullandınız mı?
+
+445
+01:29:34,323 --> 01:29:59,763
+Link de aslında embedded SQL mantığında çalışıyor. Bir sorgulama aracı gibi ama kod tarafında, yani host dil tarafında bir kütüphane ya da framework gibi düşünün. Burada sorgularınızı link dilinde yazıyorsunuz ama arka planda bir connectionla veritabanına gidip çalıştırılabiliyor. Ama sorgularınızı compile edebiliyorsunuz link sorgularınızı. Burada hata varsa bu hatalar fesnit edilebiliyor.
+
+446
+01:30:00,000 --> 01:30:19,460
+sorgu tarafında. Grup BY'ler yapabiliyorsunuz, herhangi bir işlemler yapabiliyorsunuz. Bu tarz işlemler mümkün. Onun dışında tabii bir de bazı başka çerçeve programlar da var. Mesela Entity Framework gibi şeyler var. Bunlar da yine arka planda bu konektörleri falan kullanıyor ya da.
+
+447
+01:30:19,859 --> 01:30:28,039
+embedded SQL kutu kullanabilir ama şeyleri çok sadeleştiriyor. Süreçleri, fonksiyonları çok sadeleştiriyor veritabanına erişirken.
+
+448
+01:30:29,268 --> 01:30:56,447
+O açısından onlar da bayağı verimli. Ama dediğim gibi bu seçenekler, hani embedded SQL mu kullanacaksınız, dynamic SQL mu kullanacaksınız ya da JDBC, ODBIS mi kullanacaksınız? Bütün bunlar dil spesifik. Yani Java için geçerli olan C ya da C Sharp için aynı sinteksle geçerli değil. Farklılıklar taşıyabilir. Python'da başka bir erişim kütüphanesi, konektörü vardır.
+
+449
+01:30:56,944 --> 01:31:04,104
+Her bir veritaban için, işte, SELECT farklıdır. Bunlara dil spesifik olarak bakmak lazım.
+
+450
+01:31:05,344 --> 01:31:10,424
+Ama genel yöntem, ya bir driver kullanırsınız, ya da embedded SQL kullanırsınız.
+
+451
+01:31:12,444 --> 01:31:16,424
+embedded SQL'da mesela bir update işlemi ya da delete işlemi de yapabilirsiniz.
+
+452
+01:31:17,764 --> 01:31:23,244
+Burada, mesela, bu öncelikle bir sorgu yapıyorsunuz, bir mesela değil.
+
+453
+01:31:23,764 --> 01:31:50,324
+Bir kürsür tanımladım, burada tabloyu getirdim. Burada işlemleri yaptıktan sonra bunlar üzerinde diyelim ki update işlemi yapacağım. Bu update işlemini ne yapıyor? Instructor tablosunda her bir dönüş size geri döner salari değerine 1000 değer arttırıyorsunuz. 1000 dolara arttırdığımızı varsayalım.
+
+454
+01:31:50,868 --> 01:31:59,028
+Bunu yapabilirsiniz. Bunun yanında DILT de yapabilirsiniz. INSERT de yapabilirsiniz. Bu şekilde yapmak mümkün.
+
+455
+01:32:01,168 --> 01:32:02,928
+Buraya kadar sorusu olan var mı?
+
+456
+01:32:10,420 --> 01:32:20,340
+Yani, sorunuz yoksa, fonksiyon ve prosedürlerin farklarını daha detaylıca konuşabiliriz.
+
+457
+01:32:22,200 --> 01:32:27,280
+Şimdi bir prosedür ya da fonksiyon nedir? Öncelikle bir fonksiyonu tanımlayalım.
+
+458
+01:32:28,500 --> 01:32:29,680
+Bir fonksiyon nedir?
+
+459
+01:32:35,039 --> 01:32:56,179
+Özellikle biz kullanıcı user defined fonksiyon ya da function diyoruz buna. Kullanıcının tanımladığı fonksiyon demek lazım buna. Tabi database tarafında da fonksiyonlar var. Bunlar database'in ürettiği, kullanıcıların tanımlamadığı fonksiyonlardır. Ve tabanı yönetim sisteminin kullandığı fonksiyonlar. O bizim konumuz dışında.
+
+460
+01:32:56,724 --> 01:33:18,564
+Aslında bizim bir kullanıcı olarak sıklıkla kullandığımız bir formül varsa, sıklıkla kullandığımız bir işlem gerçekleşiyorsa bunlar için fonksiyon ya da prosedür diye tanımladığımız işle ilgili mantıksal sorguların bulunduğu şeyler. Yapılar bunlar.
+
+461
+01:33:19,283 --> 01:33:25,064
+Örnek vermek gerekirse, fonksiyonla prosedür biraz farklılık taşıyor.
+
+462
+01:33:25,184 --> 01:33:34,743
+Fonksiyon bir işlemin sonucu, bir input veriyorsanız ve bir output alıyorsanız, bu fonksiyon oluyor.
+
+463
+01:33:35,667 --> 01:33:46,847
+Prosedür bir sonuç döndürmek zorunda değil. Daha karmaşık da olabilir veya bir işlem yapıyorsunuz ve bunun sonucu döndürebilir ama döndürmek zorunda değil.
+
+464
+01:33:48,747 --> 01:34:01,647
+Şimdi dillerde bunlar farklı şekilde implement edilebilir ama genel sinteks, bu standart değildir bu arada. Program dili ve veri tabanına göre değişiklik gösterir.
+
+465
+01:34:02,100 --> 01:34:13,700
+Ama şu olay söz konusu, bu fonksiyon ve posibüler veri tabanında tutulur. Yani burada aslında bir obje olarak tutulur.
+
+466
+01:34:13,700 --> 01:34:14,700
+Burada...
+
+467
+01:34:18,836 --> 01:34:21,256
+Fonksiyonlar ve prosedürler.
+
+468
+01:34:25,300 --> 01:34:51,699
+Burada objeler olarak, yani veritabanının bir parçasıdır. Uygulamanın bir parçası değil. Yani uygulama tarafında tutulan bir şey değil. Bunlar veritabanının parçaları. Siz kod parçalarını bazı parametre olarak buraya gönderebilirsiniz. Mesela şöyle diyelim, işte exact prosedürümüzün ismi insert.
+
+469
+01:34:54,644 --> 01:35:02,724
+person.prc bir prosedürünüz var.
+
+470
+01:35:04,724 --> 01:35:20,724
+Ve bunu, şöyle göstereyim, prc diye bir fonksiyonunuz, prosedürünüz var ve diyelim ki burada işlemi için 3 tane parametre ihtiyacınız var.
+
+471
+01:35:22,323 --> 01:35:28,023
+Bu A parametresi, B parametresi ve C parametresi.
+
+472
+01:35:28,023 --> 01:35:36,943
+Bu A, B, C parametresini çağırarak bunlar mesela name olsun, sizin kod tarafında olan değişkenlerinizi buraya gönderebilirsiniz.
+
+473
+01:35:37,703 --> 01:35:47,443
+Name, işte burası department, burası da budget gibi bir parametre.
+
+474
+01:35:48,948 --> 01:35:51,948
+Veritabanına şunu gönderiyorsunuz.
+
+475
+01:35:52,948 --> 01:35:53,948
+Ahmet,
+
+476
+01:35:56,948 --> 01:35:59,948
+Computer Science,
+
+477
+01:36:00,948 --> 01:36:09,948
+Şu 3 parametreyi siz veritabanına gönderiyorsunuz. Başka bir şey gönderdiğiniz yok.
+
+478
+01:36:09,948 --> 01:36:14,948
+Sadece hangi prosedürü çalıştıracağını belirtiyorsunuz.
+
+479
+01:36:15,572 --> 01:36:22,612
+Dolayısıyla SQL tarafında bütün işlem gerçekleşiyor. Yani sorgu tarafında, veritabanı tarafında bütün işlem gerçekleşiyor.
+
+480
+01:36:22,612 --> 01:36:37,212
+Code tarafında bu business logic hakkında bilgimiz yok. Yani bir sort, person, BRC prosedürün içindeki sorguların detaylarını bilmiyoruz.
+
+481
+01:36:37,372 --> 01:36:41,032
+Bununla ilgili değişkenleri bilmiyoruz. Bunlar veritabanı.
+
+482
+01:36:42,195 --> 01:36:52,796
+Bu insert işlemi için gerekli bilgileri, parametre kullanıcıdan aldığımız parametreler olabilir veya kendimizin türettiği parametreler de olabilir. Bunları veritabanına gönderiyoruz. Diyor ki bu işlemi yap.
+
+483
+01:36:54,376 --> 01:37:05,096
+Haliyle bu neyi engelliyor? Bir SQL injection engelliyor. Çünkü bunları string ya da integer gibi tanımlayarak gönderiyorsunuz. Posedürü içinde de bunu yapıyorsunuz.
+
+484
+01:37:05,619 --> 01:37:30,100
+Bunu engelliyor. Bunun dışında formansı artırıyor ve bunların yanında bir de şeyi sağlıyor. Siz obje, mantıksal objeleri birbirinden ayırmış oluyorsunuz. Veritabanı ile ilgili kodlar veritabanı içinde, uygulama ile spesifik kodlar uygulama tarafında olmuş oluyor. Bu oldukça önemli bir ayrımdır.
+
+485
+01:37:31,796 --> 01:37:37,836
+Örnek vermek gerekirse, prosedürü tanıtmadan önce bir kısaca fonksiyonu tanıtalım.
+
+486
+01:37:40,116 --> 01:37:47,496
+Aslında kullanıcılar tarafından üretilmiş, sıklıkla kullanılan herhangi bir fonksiyon olabilir.
+
+487
+01:37:48,556 --> 01:37:53,036
+Diyelim ki sizin fonksiyonunuz işte departman kauntını oluşturan bir şey.
+
+488
+01:37:53,036 --> 01:37:57,356
+Veya çok sıklıkla kullanılan bir fonksiyon başka ne olabilir?
+
+489
+01:37:57,844 --> 01:38:07,363
+işte P sayısını hesapla ya da ne bileyim öğrencilerin GPA'yı ile genel kümletif ortalamasını hesapla gibi bir lojiğiniz var.
+
+490
+01:38:08,403 --> 01:38:18,063
+Şimdi bu kod bloğunu siz defalarca ve defalarca SQL tarafında ya da uygulama tarafında yazıyorsanız bunları tekrar etmek çok anlamsız.
+
+491
+01:38:19,380 --> 01:38:29,539
+Birçok açıdan anlamsız. Çünkü bu lojikle ilgili bir, mesela şunu anlatayım, GPA'yin hesaplanması yönteminde hafif değişiklikler ortaya çıktı.
+
+492
+01:38:30,479 --> 01:38:40,460
+Zamanla değişti, GPA'yı nasıl hesapladınız? Şimdi ne yapmanız lazım? Uygulamada bu kodu nerelerde yazdıysanız her bir tanesini güncellemeniz lazım. Değil mi?
+
+493
+01:38:40,460 --> 01:38:44,460
+Bu bir ciddi iş yükü. Hem iş yükü hem de...
+
+494
+01:38:45,268 --> 01:39:07,847
+9 tane uygulamanız var, 8 tanesini güncellediniz, bir tanesini unuttunuz. O 9. uygulama yanlış hesaplıyor GP'yi. Bu tarz bir riskiniz var. Onun dışında bu işlemi tekrar tekrar yapıyorsunuz, böyle bir riskiniz var. Bir de copy paste yaptığınız için daha çok alan kaplıyor ve birbiri arasında farklılıklar ortaya çıkabilir. Bütün bunlar sıkıntı.
+
+495
+01:39:08,532 --> 01:39:24,771
+Ayrıca kod tek bir noktada tutulmuyor. Yani işte ben diyelim ki size sordum bu kod dojiyi nasıl gerçekleşiyor? Her birisine gidip bakmanız lazım falan. Farklı yerlerde kodun içinde oluyor. Merkezi bir yerde tutulmuyor.
+
+496
+01:39:24,771 --> 01:39:29,492
+Diğer bir problem de şu, ben bir değişiklik yapacağım.
+
+497
+01:39:30,163 --> 01:39:36,583
+Bu değişikliğin hepsine aynı şekilde geçerli olmasını sağlamak için her birisini değiştirmem lazım sonrasında.
+
+498
+01:39:37,603 --> 01:39:43,043
+Bunları engellemek için fonksiyon yapmak, veritabanı tarafında bir fonksiyon yazmak çok avantajlı.
+
+499
+01:39:44,403 --> 01:39:47,423
+Genel sinteksi şudur, create function deriz.
+
+500
+01:39:47,423 --> 01:39:48,943
+Çünkü bir fonksiyon.
+
+501
+01:39:49,703 --> 01:39:55,803
+Fonksiyonun ismi, alacak parametre, parametrenin ismi ve parametrenin ismi.
+
+502
+01:39:57,203 --> 01:40:07,703
+Mal bir fonksiyon yazıyoruz. Ama bu, eskene tarafında bir fonksiyon. Bu bir sonuç döndürecek, döndürmeyebilir. Ama döndürecek, döndürecek değer de integer.
+
+503
+01:40:07,703 --> 01:40:14,203
+Fonksiyonlar, bir sonuç döndürür. Procedurlar döndürmek zorunda değil ama fonksiyonlar döndürür.
+
+504
+01:40:14,203 --> 01:40:25,099
+Şimdi, döndürecek veritiminin sonucunu da yazdım. Bu integer, marka, row, herhangi bir değer olabilir. Şimdi başlıyor fonksiyonunu da kullanacağımız logic başlıyor.
+
+505
+01:40:25,268 --> 01:40:36,768
+Burada diyorum ki, decount diye bir reticeri oluşturuyor. Geçici bir ekran bu. Burada ne yapıyor? SELECT, COUN, STAR, FROM, DECOUNT.
+
+506
+01:40:36,768 --> 01:40:45,268
+Instructor tablosunda kaç tane hoca var, bölüm başı, bu defaplonda kaç tane hoca var, onun sayısını getiriyor aslında bu.
+
+507
+01:40:45,268 --> 01:40:52,140
+Ve bunun en sonunda, return dediğimiz değişken de, şurada dediğimiz değişkenin sonucu.
+
+508
+01:40:53,011 --> 01:41:16,612
+Bunun nasıl bir kolaylaştırıcı etkisi var? Artık bu fonksiyonu hem SELECT'de kullanabiliriz hem VEL CLOUD'da kullanabiliriz. Diyorum ki her bir departman için, departman değil mi bütçe, bu bilgileri getirir ama koştum şu en az 12 tane hocası olan onlar için yap bunu.
+
+509
+01:41:17,043 --> 01:41:29,423
+Department name burada bir input parametrisi oluyor. Fonksiyon zaten neyi döndürüyor? Kaç tane hoca var o departman için? İşte CS departman için 15 tane ise buradan büyük olacaklar sayılacaklar.
+
+510
+01:41:29,963 --> 01:41:40,104
+Buraya virgül koyup bu depth count'u buraya da yazıp kaç tane hoca var her bölgede onu da gösterebilirdik. Bu açıdan çok faydalı. Genellikle hani
+
+511
+01:41:44,756 --> 01:41:51,695
+Siz bu fonksiyonun sonucunda da kaç tane şey olduğunu göstermeniz lazım. Burada yapmasanız ne yapacaktınız? Bir fonksiyon olarak tanımlamasaydınız.
+
+512
+01:41:53,595 --> 01:42:03,216
+Ayrı bir subquery yazabilirdiniz. Ayrı bir subquery için de bu sonucu getirebilirdiniz. Burada herhangi bir problem. Burada ayrıyeten bir subquery yapacaktınız.
+
+513
+01:42:04,536 --> 01:42:08,836
+Bu hem sorgunuzu karmaşıklaştıracaktı hem mantıklı.
+
+514
+01:42:08,912 --> 01:42:22,152
+Business Logic dediğimiz işle ilgili yapılacak mantık, tabii ki tek bir yerde sunulmayacaktır. Bunun gibi şeyleri engellemek için bir SQL fonksiyon yazılır.
+
+515
+01:42:22,152 --> 01:42:29,652
+Bir avantajı da şu, bu fonksiyon aslında veritabanında bir şey olduğu için.
+
+516
+01:42:30,931 --> 01:42:45,351
+Obje olduğu için o obje defalarca sorgulanıyorsa, mesela bu sorguyu çok sayıda defa tekrar alıyorsanız, bu kod aslında ne yapacak? Cache de tutarak daha optimize çalışmak ihtimalle ortaya çıkacak.
+
+517
+01:42:49,652 --> 01:42:54,092
+Tabii ki fonksiyonlar sadece tek bir değer döndürmek durumunda değil.
+
+518
+01:42:54,592 --> 01:42:58,332
+Fonksiyonlar aynı zamanda bir tablo sonucu da döndürebilir.
+
+519
+01:42:58,952 --> 01:43:00,672
+Burada küçük bir fark var.
+
+520
+01:43:01,512 --> 01:43:06,212
+Onda da table fonksiyonu kullanarak şunu yapıyoruz.
+
+521
+01:43:06,212 --> 01:43:09,932
+Görürüz ki fonksiyonumuzu oluşturduk.
+
+522
+01:43:10,032 --> 01:43:13,332
+Structure of the Parth, bu parametreyi kullanacağım.
+
+523
+01:43:14,996 --> 01:43:23,636
+Parametre karakter 20. Ama bunun sonucu bir tablo. Yani bugün hocayla ilgili bilgileri de yansıtmak istiyorum sonucu olarak.
+
+524
+01:43:23,636 --> 01:43:30,756
+Return SQL'da bir tablo yapısı da önceden olacak. Bunun sorgusunun sonucunda. Burada bunun detaylarını veriyorum.
+
+525
+01:43:30,756 --> 01:43:38,195
+Burada diyoruz ki, id, varkar 5.
+
+526
+01:43:38,239 --> 01:43:43,640
+NEIM, VAR CARE, 27 PARKM, NEIM, SALERİ, bu tarz değerler döndürülecek.
+
+527
+01:43:44,380 --> 01:43:50,380
+Burada, şimdi SELECT kısmında bu parametreye göre sorgumu burada yapıyorum.
+
+528
+01:43:50,380 --> 01:43:57,699
+Örneğiniz gibi, bu tablodan getirilen sonuçları otomatik olarak döndürecek.
+
+529
+01:43:59,079 --> 01:44:00,520
+Bunu nasıl kullanıyoruz?
+
+530
+01:44:01,300 --> 01:44:09,300
+SQL tablolarımızı kullanıyoruz. Şu şekilde kullanıyoruz. SELECT, STAR mesela diyelim kısaca. FROM, TABLE, bu bir tablo sonucu.
+
+531
+01:44:09,300 --> 01:44:20,140
+INSTRUCTOR OF MUSIC, şimdi INSTRUCTOR OF bizim TABLE fonksiyonumuzun ismi. İçinde de parametre ilgileniyor. O parametre ne? Müzikle farkındakilerin hocaların.
+
+532
+01:44:20,180 --> 01:44:35,760
+Detaylarımı görmek istiyorum veya işte başka departmanı. Buradaki örnek çok basit olduğu için, neden böyle bir şeye gerek var? Normal, bu gibi de yapabiliriz diyebilirsiniz ama burada daha karmaşık bir soru olabileceğinde göz önünde bulundurmanızda fayda var.
+
+533
+01:44:38,280 --> 01:44:47,440
+Yani default değeri olarak, varsayılan değeri olarak SQL fonksiyonları, kullanıcı tanımlı fonksiyonları.
+
+534
+01:44:47,636 --> 01:45:03,976
+Genellikle skalar bir değer dönüştür. Yani bir integer, string neyse bir tane skalar değer dönüştür. Ama bu tablo dönüştürme, tablo döndürme imkanı da vardır.
+
+535
+01:45:04,956 --> 01:45:07,876
+Hocam, tablo döndüren bir fonksiyon yerine view yazmak daha mantıklı değil mi?
+
+536
+01:45:08,271 --> 01:45:16,491
+Mantıklı bir yurt tabii ki genelde bunun için kullanılır ama siz burada şöyle bir avantajınız olabilir.
+
+537
+01:45:17,631 --> 01:45:23,307
+Bu sorguları hani özellikle...
+
+538
+01:45:23,667 --> 01:45:34,587
+view, maintenance falan yapmak yerine burada daha detaylı bir sorgu şeklinde de yapabiliyorsunuz fonksiyonda veya burada tek bir değer de döndürebilirsiniz.
+
+539
+01:45:34,988 --> 01:45:40,127
+Tek bir işlem döndürecek, yani tek bir tuple döndürüyorsunuz, satır döndürüyorsunuz.
+
+540
+01:45:40,748 --> 01:45:44,488
+Bu tarz şeyler için bir view yaratmanın çok gerektiği olmayabiliyor.
+
+541
+01:45:45,203 --> 01:45:58,543
+Burada aslında özellikle şöyle ifade edelim, bir işlem yapacaksınız. Bu işlemin sonucu tek bir değer değil de bir parametre. Birden çok değerse buradaki birkaç konul olsa. Bunun gibi bir durumda bu işe yarıyor.
+
+542
+01:45:59,983 --> 01:46:09,843
+Şimdi bunun için bir view oluşturmak çok uygun olmayabilir. Ama genellikle bu çok yaygın değil işeşi.
+
+543
+01:46:10,479 --> 01:46:21,979
+Çok spesifik durumlarda faydalı olabiliyor. Bunun yerine view'lardan yapmak daha yaygın kullanılır. O yüzden ben de daha çok view kullanıyorum.
+
+544
+01:46:21,979 --> 01:46:29,479
+Bir table oluşturmuyorum. Ama fonksiyonun kendisi, scalar bir değer yönetmesi çok çok yaygın kullanılır.
+
+545
+01:46:31,695 --> 01:46:51,796
+bir calculation yapıyorsanız, karmaşık bir işlem yapıyorsunuz. Bir değer declare etmeniz lazım. Mesela bunları şeyde yapamazsınız, view'da yapamazsınız. Öncelikle bir ara değişken yapıp buradan bir hesaplama yapıyorsunuz. Bunun sonucunu döndürüyorsunuz gibi düşünün. Fonksiyonlar daha karmaşık yapılar sağlayabilir.
+
+546
+01:46:55,507 --> 01:46:57,507
+Ve başka...
+
+547
+01:46:57,507 --> 01:47:00,028
+Ve parametre girmiyorsunuz, aynı.
+
+548
+01:47:02,507 --> 01:47:10,367
+View'da tabii ki şey olur, siz o girilecek parametreleri de kapsayacak şekilde view oluşturuyorsunuz, view'da sorgu yapılır.
+
+549
+01:47:10,467 --> 01:47:12,347
+Sorgu ancak parametre o şekilde yapılır.
+
+550
+01:47:12,347 --> 01:47:21,347
+Yani yine onun etrafında dönebilirsiniz ama parametre girişi sizin için...
+
+551
+01:47:22,036 --> 01:47:27,635
+O filtreleme daha önemli ise özellikle table fonksiyon daha mantıklı oluyor.
+
+552
+01:47:27,635 --> 01:47:31,435
+Belli parametre girdiler. Buradan birden çok parametre girdiniz.
+
+553
+01:47:31,435 --> 01:47:37,435
+Aynı şeyi nasıl yapabildiniz view'da? View her şeyi döndürdü.
+
+554
+01:47:37,435 --> 01:47:42,235
+Sonrasında bir vercluse parametreleri oluşturdu. Bu da olurdu.
+
+555
+01:47:42,484 --> 01:47:58,384
+Ama bu arada şunu diyebilirsiniz, view'da biz bütün değerleri gönderip filtrelemek belki istemiyoruz. Bunun yerine spesifik örnekler sadece gelsin. Bu açıdan yine bir kullanım örneği olur. Ama o çok yaygın kullanılıyor işte.
+
+556
+01:47:58,384 --> 01:48:04,064
+Fable fonksiyonu değil, Scalar fonksiyonu çok yaygın kullanılır.
+
+557
+01:48:07,859 --> 01:48:10,880
+Soru soran var mı arkadaşlar?
+
+558
+01:48:12,380 --> 01:48:13,340
+Hocam ben size şöyle bir şey mi?
+
+559
+01:48:13,899 --> 01:48:14,340
+Tabii ki.
+
+560
+01:48:15,299 --> 01:48:19,880
+Şöyle, into decount demişiz ya, fonksiyonunda, create function'da.
+
+561
+01:48:20,880 --> 01:48:21,319
+Bir önceki.
+
+562
+01:48:21,840 --> 01:48:22,500
+Burada, evet.
+
+563
+01:48:23,420 --> 01:48:26,619
+Evet, burada into decount, işte return decount diye bir şey.
+
+564
+01:48:26,699 --> 01:48:28,699
+Direkt return count yasak olmaz mıydı?
+
+565
+01:48:29,876 --> 01:48:35,775
+Return, count ama bu sorgu değeri döndürüyor. Bunu bir şey atamanız lazım.
+
+566
+01:48:37,155 --> 01:48:39,336
+Into yazınca direkt atamış oluyoruz. Ez gibi yani.
+
+567
+01:48:39,516 --> 01:48:42,895
+Aynen. Bunu o geçici olarak tutuyor orada.
+
+568
+01:48:43,695 --> 01:48:45,416
+Anlarım. Rica ederim.
+
+569
+01:48:45,836 --> 01:48:56,176
+Çünkü yoksa bu return yapmıyor. Bir sonucu yazdırıyor veritabanla. Bunu sadece return'ı bir değişik yapmak için. Ama şunu yapabilirdiniz. Return içine yazabilirdiniz bu sorguyu. O da olabilirdi.
+
+570
+01:48:58,963 --> 01:49:02,743
+Teşekkürler. O zaman bir ara verelim arkadaşlar. Başka soru sorular var mı?
+
+571
+01:49:05,863 --> 01:49:11,343
+Tamam. O zaman yaklaşık 10 dakika sonra, hadi 3 gibi kaldığımız yerden devam edeceğiz. Görüşmek üzere.
+
+572
+01:59:59,636 --> 02:00:01,216
+Tekrar hoş geldiniz arkadaşlar.
+
+573
+02:00:03,895 --> 02:00:05,876
+Şimdi ekranımı görüyor musunuz?
+
+574
+02:00:19,988 --> 02:00:22,188
+Teşekkürler [öğrenci], gözüküyormuş.
+
+575
+02:00:23,288 --> 02:00:27,108
+Aradan önce prosedürleri, fonksiyonları konuştuk.
+
+576
+02:00:27,608 --> 02:00:31,448
+Burada Scalar fonksiyonları da, Table fonksiyonları da konuştuk.
+
+577
+02:00:32,448 --> 02:00:42,568
+Bununla ilgili de prosedürleri ya da diğer bir ifadeyle Store prosedürleri, Store procedure dediğimiz prosedür, SQL prosedürlerini şimdi konuşalım.
+
+578
+02:00:48,051 --> 02:00:51,551
+[öğrenci]'in sorusu var, ben de üstten alıyorum, hiçbir nesil.
+
+579
+02:00:53,831 --> 02:00:59,011
+Öğrenmen gerekecektir [öğrenci], yani zaten bu ders dışında da öğrenmen gerekir.
+
+580
+02:00:59,851 --> 02:01:04,651
+En azından bir nesne dili, dil öğrenmeniz gerekiyor.
+
+581
+02:01:05,651 --> 02:01:08,951
+Java olur, C++ olur, C Sharp olur.
+
+582
+02:01:09,460 --> 02:01:23,560
+Ona bakmanız lazım. Dersteki bir programlama projeniz olacak. Onun için de kullanmanız gerekecek. Yani o dili yüzde yüz, her şeyini bilmeseniz bile belli bir derecede bilmeniz gerekiyor.
+
+583
+02:01:26,340 --> 02:01:29,240
+Hocam o projede bir dille yazmamız gerekiyor mu? Yani belli mi?
+
+584
+02:01:29,631 --> 02:01:38,091
+Şu an hatırlamıyorum ama bir programımı diliyle yapmanız gerekiyor. Bir uygulamayla, programla erişmeniz gerekecek veritabanla.
+
+585
+02:01:38,891 --> 02:01:41,771
+Yani o programı değil, sabit mi? Onu sormak istedi. Biz seçebiliyor muyuz?
+
+586
+02:01:41,991 --> 02:01:47,071
+Seçebiliyor olmanız lazım ama şu an hatırlamıyorum. Sizinle detaylıca paylaşacağız.
+
+587
+02:01:47,811 --> 02:01:53,291
+Aslında arkadaşlar şey yapacak, vize için gerekli değil. Vize için gerekli değil ama proje için gerekli.
+
+588
+02:01:55,028 --> 02:02:08,748
+Ama bu hani dersten de bağımlısız bilmeniz lazım zaten. Dil konusunda hani burada esneklik olur. Java ya da işte Python veya C++ olacak diye bir şey yok. Ama bir tanesini iyi bilmeniz lazım.
+
+589
+02:02:12,851 --> 02:02:18,431
+Ama Java'ya öneririm. En azından bir Java ve Python'ı bilmeniz lazım mezun olmadan diye düşünüyorum.
+
+590
+02:02:20,051 --> 02:02:27,372
+Bir Java olmaz, C şarp olur fark etmez. Ama bir tane genel kullanım programlama dili bilmenizde çok fayda var.
+
+591
+02:02:28,948 --> 02:02:44,427
+Şimdi hadi şeye bakalım SQL prosedürlerine. SQL prosedürleri bir değer döndürmek zorunda değil. Yani fonksiyonlardan farklı olarak fonksiyon bir değer döndürüyor ama SQL prosedürleri döndürebilir, bir output döndürebilir, döndürme edebilir.
+
+592
+02:02:45,667 --> 02:02:52,287
+Genel yapıs olarak şunu bir prosedür tanımlıyoruz. Burada create procedure diyoruz.
+
+593
+02:02:52,724 --> 02:02:59,484
+Department count prosedürü yapacağız. Department ile ilgili bir prosedür olacak.
+
+594
+02:02:59,484 --> 02:03:06,203
+Input parametremiz Department name output da dcount olabilir. Burada bir insert de yapabiliyor olurdu.
+
+595
+02:03:06,203 --> 02:03:13,443
+Herhangi bir output döndürmeden sadece insert için gerçekleşebilir de ama output olabilir. Bu sinteks değişir bu arada.
+
+596
+02:03:13,443 --> 02:03:17,604
+Programlama diline göre in, out kelimeleri de kullanılabilir ya da sadece
+
+597
+02:03:18,420 --> 02:03:26,300
+Parametre ismi deyim, parametre şeklinde göstereyim. Daha sonra örnekte SQL Server'da da göstereceğim. Oradaki sinteks biraz farklı taşıyor.
+
+598
+02:03:28,720 --> 02:03:36,300
+Procedürün begin ve end komutları arasında yazmamız lazım. Tek bir sorgu, tek bir sorgu.
+
+599
+02:03:36,979 --> 02:03:58,420
+Update olmak durumunda değil. Burada çok uzun da store procedure olabilir. Yani aynı anda 5-6 tane işlem yapmanız gerekebilir. Bir insert yapıyorsanız olur. Aynı zamanda bir şey yapabilirsiniz. Başka bir log tablosunda güncelleyebilirsiniz. Sonrasında bir sürekli değer toplumda yansıtabilirsiniz. Tüm bunları yapmanız mümkün.
+
+600
+02:03:59,507 --> 02:04:10,708
+in-out parametreleri, siz bunları döndürülmesi gerekenleri, out parametresine, in parametre ismi yanında yazıyorsunuz.
+
+601
+02:04:12,087 --> 02:04:20,608
+Prosedürü çağırırken, prosedürün ismi burada parametreleri girecek şekilde yapabiliyorsunuz.
+
+602
+02:04:20,628 --> 02:04:24,328
+Ama bu sinteks tabii ki küçük farklılıklar taşıyor dillerle ilgili.
+
+603
+02:04:24,328 --> 02:04:25,908
+Sonra örneğini göndereceğiz.
+
+604
+02:04:26,484 --> 02:04:35,204
+Hani prosedür ve fonksiyonlar, dinamik SQL ile de, SQL tarafı, şey, kod tarafında çalıştırılabilir.
+
+605
+02:04:37,264 --> 02:04:44,124
+Aslında prosedürleri mesela şeyde göstermiştik, JDBC örneğinde olduğu gibi.
+
+606
+02:04:45,804 --> 02:04:47,644
+Tekrar geri gidelim oraya.
+
+607
+02:04:48,564 --> 02:04:57,924
+Hollable Statement şeklinde burada fonksiyonun ya da prosedürün ismini girip metreleri girerek yapmak en uygun yöntem oluyor.
+
+608
+02:04:58,884 --> 02:05:04,024
+Onun dışında tabii ki başka kütüphaneler de olabilir, ODB'si de de olabilir.
+
+609
+02:05:04,024 --> 02:05:09,708
+Mesela Entity Framework'ta da bunun gibi her programlama dilinin...
+
+610
+02:05:09,779 --> 02:05:18,199
+Veritabanı, erişim kütüphanesinde sinteks olarak farklılık vardır ama hepsinde şey vardır, prosedür çağırma vardır.
+
+611
+02:05:18,880 --> 02:05:23,500
+Yani call diyorsunuz, hangi prosedürse, prosedürse parametre var.
+
+612
+02:05:24,319 --> 02:05:28,399
+Bu konuya bazen exact diyorsunuz, bazen call diyorsunuz.
+
+613
+02:05:28,539 --> 02:05:31,899
+Böyle farklılıkları gösterir ama genel yapı aynı.
+
+614
+02:05:31,899 --> 02:05:35,420
+Şimdi bir örnek verelim.
+
+615
+02:05:38,612 --> 02:05:44,112
+Burada isterseniz bunun gerçek bir SQL Server örneğini görelim.
+
+616
+02:05:46,612 --> 02:05:52,112
+Şimdi, tabii store procedure'ları, bu benim oluşturduğum örnek bir database.
+
+617
+02:05:53,112 --> 02:06:04,300
+Nerede tutuluyor onu göstermem gerekirse, veri tabanında prosedürler, fonksiyonlar ayrı bir obje şeklinde tutulur.
+
+618
+02:06:04,627 --> 02:06:11,347
+SQL Server'da Programmability denilen bir klasör içinde tutulur bunlar.
+
+619
+02:06:11,347 --> 02:06:20,027
+Stored procedure'lar, burada fonksiyonlar, burada, onun dışında user-defined data tipleri burada edilir.
+
+620
+02:06:20,027 --> 02:06:26,507
+Kütüphaneler, SMD'ler veya trigger'lar da burada tutulur. Bu arada trigger'da biraz sonra konuşacağız.
+
+621
+02:06:26,671 --> 02:06:34,711
+Bu veritabanın üzerindeki triggerlar, database triggerları ama bir de tablo üzerine trigger olur.
+
+622
+02:06:35,311 --> 02:06:44,851
+Triggerlar da tablonun altında varsa buraya yazarsınız, NIF trigger oluşturarak bu tabloya bir insert, update yapma işleminde trigger yapabilirsiniz.
+
+623
+02:06:44,971 --> 02:06:46,011
+Biraz sonra konuşacağız.
+
+624
+02:06:46,531 --> 02:06:53,791
+Yani diğer bir ifadeyle bu objeler o veritabanı içinde obje olarak oluşturur.
+
+625
+02:06:54,260 --> 02:07:03,159
+Örneğimize bakalım. Bir prosedür nasıl yazılır? Dediğim gibi, create procedure komutunu kullanıyorsunuz. Burası, prosedürün ismi.
+
+626
+02:07:04,420 --> 02:07:12,899
+SQL server'da in, out yazmanız gerekmiyor. Burası zaten input olduğunu gösteriyor. Alanda yazıyorsunuz. Çünkü bu komutuyla birlikte aradığınız inputlar bunlar.
+
+627
+02:07:14,220 --> 02:07:20,880
+Bu kullanıcıdan alacağım input, bunun filin integer olduğunu, beklediğim değerin integer olduğunu söylüyorum.
+
+628
+02:07:21,684 --> 02:07:29,204
+Haliyle integer dışında başka bir şey gelirse, bu hata verecek. Yani SQL injection'ı engelliyoruz modeli.
+
+629
+02:07:31,024 --> 02:07:36,784
+Burada işte farklı farklı sorgularımız olabilir. Mesela bir SELECT işlemi yapıyorum. Bunun sonucunu yansıtacağım.
+
+630
+02:07:37,104 --> 02:07:44,264
+Ama öncesinde belki INSERT veya UPDATE olabildi. Mesela şurada aslında bir UPDATE işlemi yazabilirdik.
+
+631
+02:07:45,524 --> 02:07:47,144
+Öncesinde şuraya diyelim.
+
+632
+02:07:48,627 --> 02:07:49,467
+Update.
+
+633
+02:07:59,412 --> 02:08:03,712
+Böyle bir tablonuz olsaydı, işte set,
+
+634
+02:08:09,395 --> 02:08:24,475
+product, name, assisted, ne bileyim, şuraya geçtirdim, new category, bir şey.
+
+635
+02:08:25,315 --> 02:08:31,336
+Product ID'si de bu yeni kullanıcın girdiği bilgileri new product olarak kaydediyor.
+
+636
+02:08:31,435 --> 02:08:35,735
+Böyle bir sorgu. Altında da bunun sonucundaki şeyleri gösteriyorum.
+
+637
+02:08:36,275 --> 02:08:42,275
+değiştiğini göstermek için, şu sorgul bir seleCT sonucunu göstereceğim diye düşünüyorum.
+
+638
+02:08:42,275 --> 02:08:50,275
+Bunun gibi çok daha uzun olabilir. Loglarla ilgili şeyler tutabilirsiniz, veritabanında başka güncellemeler yapabilirsiniz, bilemiyorum.
+
+639
+02:08:50,275 --> 02:08:55,275
+Yani bu tamamen o işle ilgili detayları içerir.
+
+640
+02:08:55,275 --> 02:09:03,275
+Şimdi bunu çağırırsanız, bunu kaydederseniz, bir obje olarak burada store procedure'ı oluşturacaktır.
+
+641
+02:09:04,148 --> 02:09:20,148
+Ben daha önce çalıştığım için hata alırım. O yüzden bunu kapatıyorum. Şimdi bunun detaylarını görmek için, gördüğünüz gibi buraya gelip, diyorum ki bunu dönüştürmem gerekiyorsa, modify'a tıklıyorsunuz.
+
+642
+02:09:20,148 --> 02:09:29,148
+Burada bütün tanımı görüyorsunuz. Artık kayıt yok, alter var. Var olan bir şeyi değiştirmek için alter demesi, altın kayıt olmaz.
+
+643
+02:09:29,716 --> 02:09:35,716
+Burada artık sorgu değişiklikleri yapacak olsaydı. Gördüğünüz gibi.
+
+644
+02:09:35,716 --> 02:09:47,716
+SQL tarafında veritabanın tarafından bunu nasıl çağıracağız? SQL tarafında EXACT denilmesini kullanarak, komutunu kullanarak, prosedürün ismini giriyorum.
+
+645
+02:09:47,716 --> 02:09:55,716
+Burada parametresini çalıştırıyorum. Mesela çalıştırdım. Bu benim store prosedürümü çalıştırarak sonucunu getirecek.
+
+646
+02:09:57,363 --> 02:10:22,155
+Bu örnek bir store procedure örneği. Şimdi avantajı ne? Store procedure'ların birçok avantajı var. Bunları aslında biraz önce tekrar konuştuk. Birinci ve belki en önemli özelliği, avantajı SQL injection'ı engeller. Yani siz bu kodu veritaban da tanımladığınız için...
+
+647
+02:10:22,420 --> 02:10:31,800
+Ve parametrik olarak aldığınız için SQL injection yapamazlar kullanıcılarımız. Herhangi bir parametre sizin beklediğiniz veritipinden farklıysa hata oluşmaz.
+
+648
+02:10:32,980 --> 02:10:43,420
+Onun dışında bir de hem parametre kontrolü yapıyorsunuz hem de sorunun için sizden bir...
+
+649
+02:10:43,667 --> 02:10:46,727
+diyelim ki VARCAR 20 diye bir şey bekliyorsunuz.
+
+650
+02:10:47,067 --> 02:10:48,447
+Onun için uzun bir sorgu yazamaz.
+
+651
+02:10:48,547 --> 02:10:50,687
+Çünkü en fazla karakteri 20 karakter olabilir.
+
+652
+02:10:50,867 --> 02:10:52,027
+Daha uzun bir şey kabul etmiyor.
+
+653
+02:10:52,587 --> 02:10:55,047
+Hem veri tipi hem de boyut olarak buna ilerliyorsunuz.
+
+654
+02:10:55,667 --> 02:10:57,447
+Dolayısıyla parametrik olarak alıyorsunuz.
+
+655
+02:10:57,667 --> 02:10:58,767
+Birinci avantajı bu.
+
+656
+02:10:58,887 --> 02:11:00,307
+Başka ne avantajı var sizce?
+
+657
+02:11:06,260 --> 02:11:12,640
+Hocam, kodun o kısmını açmadan, diğer taraf, yani bizim ne yazdığımızı bilmeden çalıştırabilir aslında o aklımıza.
+
+658
+02:11:15,420 --> 02:11:18,760
+Uygulama tarafında mı bilmeden yoksa veritabanı tarafında mı?
+
+659
+02:11:19,039 --> 02:11:24,220
+Yani iki tarafta da aslında iş yer alıyor. Veritabanı her tarafını bilmek zorunda değil mesela bizim iş yaptıracağımız birisi.
+
+660
+02:11:24,579 --> 02:11:26,960
+Biz bir kutu görüyoruzdur, ona o kısmını açmışızdır.
+
+661
+02:11:27,699 --> 02:11:44,619
+Kesinlikle. Yani en güzel taraflardan bir tanesi de Store Procedure'ın ve fonksiyonların iş bölümü yapabiliyorsunuz. Yani normalde Store Procedure'ı, oradaki veritabanındaki loji, mantığı bilmesi gereken kişi kim? Veya bunun bakımını yapması gereken kişi kim?
+
+662
+02:11:45,395 --> 02:11:46,335
+DBA mi hocam?
+
+663
+02:11:46,595 --> 02:12:02,935
+DBA, değil mi? Veritabanıyla ilgili bütün objelerden, bütün veritablolarından, bütün kolonlardan sorulmak için DBA'dir. Aslında developer değil. Developer neyi bilmesi gerekir? Ben şu parametreleri göndereceğim, bu tabloya bu kolonları yazacağım veya buradan veri çekeceğim, bunlar bana gelmesi lazım.
+
+664
+02:12:03,455 --> 02:12:13,375
+Arka planda loglar mı tutulacak, hangi tablodan hangisi değiştiriyorsa bunlar değişecek, bunu bilmek zorunda değil. İş paylaşımı yapılır. Siz DBA'ya şeyi verirsiniz.
+
+665
+02:12:13,395 --> 02:12:27,955
+kodun mantığını verirsiniz, o size store procedure oluşturur der gibi o parametreleri gönder, çıktılarım bu. Dolayısıyla bu iş paylaşımı, iş ayrışımını yapabilirsiniz. Bu baştan da önemli. Başka hangi avantajları vardır?
+
+666
+02:12:32,851 --> 02:12:35,351
+Güncelleme yapacak olsanız, nasıl olacak?
+
+667
+02:12:37,511 --> 02:12:41,391
+Diyelim ki o logikte bir değişiklik yaptınız. Küçük bir değişiklik.
+
+668
+02:12:42,971 --> 02:12:46,551
+Yani diğer taraflardan ayrı ayrı değiştirmek yerine aslında tek taraftan değiştirmiş oluyoruz.
+
+669
+02:12:46,731 --> 02:12:53,891
+Kesinlikle. Tek bir noktadan değişim yaptığınız zaman belki 100 tane uygulamanız var aynı mantığı kullanın.
+
+670
+02:12:54,212 --> 02:12:58,372
+İşte kullanıcılarınız yeni bir ürün alıyor.
+
+671
+02:12:58,768 --> 02:13:24,748
+Bu ürün almayı mobil uygulamadan da yapabiliriz, ne bileyim, web uygulamasından da yapabiliriz. Hatta ajantalar da yapabiliriz, ürün almayı diye bir sürü kişi yapacak. Ama aynı store procedure çalıştırıyor bu insanlar, değil mi? Ben teker teker bütün uygulamaları değiştirmek zorunda değilim. İyi tarafı şu, veri tabanındaki değişiklikler çok sık gerçekleşir. Ve bu çok aynı zamanda uygulama tarafındakiler de çok sık gerçekleşir.
+
+672
+02:13:25,300 --> 02:13:33,119
+Şimdi ben veritabanındaki bir kolonunu ekliyorsam, değiştiriyorsam, niye ben uygulamaya gidip bir daha compile edip, bir daha deploy edeyim?
+
+673
+02:13:34,340 --> 02:13:47,000
+Eğer kodu siz embedded olarak şeyin içine gömmüşseniz, işte uygulamanın içine gömmüşseniz, her türlü veritabanı değişikliği için tekrar güncellemeniz gerekiyor.
+
+674
+02:13:47,000 --> 02:13:49,199
+Bu çok ciddi bir şey riski bir kez.
+
+675
+02:13:50,735 --> 02:14:02,615
+Uygulamanın hata veya kırılma riski. İkincisi, çok sayıda uygulamada bunların senkronize bir şekilde güncellenmesi, ciddi bir maliyet.
+
+676
+02:14:02,996 --> 02:14:24,996
+Aynı zamanda bir risk, yani şu açısından risk, uygulamalarınızın doğru çalışmasını engelleyecek hataların oluşmasına bir risk oluşturuyorsunuz. Bu da bir problem. Bazı yerler değişti, bazı yerler de unutabilirsiniz. Bu da başka bir problemler doğurur. Diğer bir problem de şu, siz uygulamayı...
+
+677
+02:14:25,235 --> 02:14:52,715
+Neden tekrar tekrar deploy etmeniz lazım? Şimdi tekrar tekrar deploy etmenin şöyle bir dezavantajı var. Sizin çok devasa bir uygulamanız vardır. 1 milyon tane işlem yapıyor, bir sürü işlem yapıyor ama küçük bir kolon değişikliği yüzünden bütün bunları tekrar deploy edeceksiniz. Hemen gönderemezsiniz bunu, test edilmesi lazım. Bu test işlemini ne yapacaksınız? Belki schedule edeceksiniz, testerlar önceleyecek, ondan sonra bunu takvimlendireceksiniz.
+
+678
+02:14:53,235 --> 02:14:57,055
+Sistem analistleri bunu canlı serverlara taşıyacak.
+
+679
+02:14:57,496 --> 02:15:00,235
+Belki çok küçük bir değişiklik için bir hafta beklemeniz lazım.
+
+680
+02:15:00,515 --> 02:15:01,655
+Veya daha çok beklemeniz lazım.
+
+681
+02:15:02,515 --> 02:15:04,015
+Bu da ayrı bir problem oluşturur.
+
+682
+02:15:04,615 --> 02:15:07,916
+Yani veritabanıyla şeyi ayrıştırmak her zaman önemlidir.
+
+683
+02:15:08,036 --> 02:15:11,576
+Veritabanı koduyla uygulamanın kodunu birbirinden ayrı tutmak lazım.
+
+684
+02:15:12,155 --> 02:15:13,315
+İkisi de etkileşim yapacak.
+
+685
+02:15:13,855 --> 02:15:15,735
+Bunları da parametrelerle sağlamak lazım.
+
+686
+02:15:16,515 --> 02:15:19,015
+Logic ikisinde de ayrı ayrı tutulması gerekir.
+
+687
+02:15:19,175 --> 02:15:20,036
+Doğru olan budur.
+
+688
+02:15:20,115 --> 02:15:20,876
+Yöntem olarak budur.
+
+689
+02:15:21,908 --> 02:15:23,847
+Bunun dışında başka bir avantajı var mı?
+
+690
+02:15:28,595 --> 02:15:51,755
+Aslında bunu yine daha önce söyledim. Diğer bir avantajı da veritabanında tutulan bu store procedure'lar defalarca defalarca çağırırsanız ne oluyor? Veritabanında bu obje olarak tutulduğu için veritabanı akıllı olarak bu her defasında bunu çağırdığı için execution planı hesap edebiliyor. Bu execution planı cache'te tutuyor.
+
+691
+02:15:52,243 --> 02:15:57,703
+Yani şöyle, ben şimdi Ahmet parametresi için gönderdim, insert ettim.
+
+692
+02:15:58,323 --> 02:16:04,564
+İşte [öğrenci], Mehmet parametresi için gönderdi ama aynı sorguyu çalıştırıyoruz.
+
+693
+02:16:05,003 --> 02:16:06,083
+Tekrar tekrar çalışıyoruz.
+
+694
+02:16:06,604 --> 02:16:14,923
+İlk defa gönderen kişi bunu tabii ki şey, öncelikle execution planı oluşturması lazım veritabanı, sorgu engine ile, query engine.
+
+695
+02:16:15,524 --> 02:16:18,764
+Hangi yolla gidip bunu çözeceğini bir kez araştırması gerekiyor.
+
+696
+02:16:18,863 --> 02:16:19,884
+Bunun bir maliyeti var.
+
+697
+02:16:20,243 --> 02:16:22,243
+İlk biraz performans yavaş olabilir.
+
+698
+02:16:22,703 --> 02:16:29,684
+Ama ikinci, üçüncü, dördüncü veya beş yüz bininci sorguda aynı store procedure artık bu maliyetleri yapmaz.
+
+699
+02:16:30,323 --> 02:16:34,963
+Bu şeyi execution planı bir kez oluşturur, aynı execution planı kullanır.
+
+700
+02:16:35,024 --> 02:16:37,564
+Dolayısıyla performans anlamında da ciddi bir fark oluşur.
+
+701
+02:16:37,564 --> 02:16:39,664
+Uzun vadede sıklık kullanımında.
+
+702
+02:16:40,564 --> 02:16:45,564
+O yüzden çok avantajlı genellikle de store procedure kullanılarak.
+
+703
+02:16:46,448 --> 02:16:57,308
+uygulamalar yazmak en avantajlı. Tabii ki hani böyle çok basit uygulamalar için bunun bir maliyeti var. Hani diyelim ki siz böyle bir Hello World uygulaması yapacaksınız.
+
+704
+02:16:57,308 --> 02:17:06,368
+B tabanda erişmeniz lazım. Onun için bir Store Procedure yazmanın çok bir anlamı yok. Veya çok kısıklıkla kullanılmayacak bir şeyse o özellik, onun için de anlamı olmayabilir.
+
+705
+02:17:07,087 --> 02:17:10,407
+Çünkü onun yazmanında bir devs avantajı var Store Procedure'da.
+
+706
+02:17:10,835 --> 02:17:22,575
+yazmak için bir zaman harcıyorsunuz. Çok basit, özellikle kullanıcı öğrenmek için kullanılan, basit uygulamalar, kullanıcısı çok olmayan uygulamalar için anlamlı olmayabilir.
+
+707
+02:17:23,175 --> 02:17:24,876
+Peki ne zaman daşı var mı bunun dışında?
+
+708
+02:17:30,644 --> 02:17:34,804
+Çalışma performansı mı, zamanı mı? Zaten bahsetmiştiniz ama.
+
+709
+02:17:35,164 --> 02:17:40,704
+Bahsetmiştik evet. Aslında o değil de, hız performansı çok avantajlı, dezavantajlı değil.
+
+710
+02:17:41,724 --> 02:17:47,664
+Dezavantajı şu olabilir, gözden kaçabilir. Yani bu triggerlar için de yeşerli bu arada.
+
+711
+02:17:48,783 --> 02:17:52,263
+Normalde siz böyle bir store procedure olduğunu unutabilirsiniz bu tamamen.
+
+712
+02:17:52,263 --> 02:17:57,904
+Çünkü tablo onun içinde baktığınız zaman gözükmüyor. Ayrı bir bölmede kayıt altında bir obje olarak tutuluyor.
+
+713
+02:17:58,291 --> 02:18:11,851
+Buradaki şeyleri gibi görmeyebiliyor insanlar. Dalgınlar yapabilir. Burada bir prosedür var, bunu güncellememiz gerekir. Bu çok düşük bir ihtimal ama oluyor. Triggerlarda da bu oluyor.
+
+714
+02:18:11,851 --> 02:18:19,691
+Mesela siz bir tablonun altında trigger var mı, bunu çok fark etmeyebilirsiniz. Direkt belli olmuyor şimdi. Trigger var mı o tabloda yok mu.
+
+715
+02:18:19,731 --> 02:18:27,191
+İlla geleceksiniz, burada var mı? Tire gelir, göreceksiniz. Tablonun içine gelip, obje olarak var mı? Bunu görmeniz.
+
+716
+02:18:27,252 --> 02:18:32,172
+Biraz bir bakım maliyeti olur ama aksiyle karşılaştırınca bu bakım maliyeti çok mağdur.
+
+717
+02:18:33,711 --> 02:18:36,531
+Öbür türlü kodda bunun bakım maliyeti çok çok daha yüksek.
+
+718
+02:18:38,272 --> 02:18:42,652
+Store procedure'lar gerçekten çok iyidir. Çok tavsiye ederim özellikle uygulama yazıyorsanız.
+
+719
+02:18:43,219 --> 02:18:50,819
+Bunları kesinlikle store procedure'lar kullanarak yazın. Yani bu uzun vadede sizi çok rahatlatacak.
+
+720
+02:18:52,819 --> 02:18:57,619
+Benim store procedure'lara ilgili söylediklerim bu kadar. Buna ilgili çok kullan var mı arkadaşlar?
+
+721
+02:19:01,907 --> 02:19:22,147
+O zaman son olarak bir de trigger'ları konuşalım. Trigger'lar hangi amaçla kullanılır? Bunları değerlendirelim. Trigger ne işe yarar? Neden trigger yapısına ihtiyacımız var? Bunu konuşuruz. Aslında geçen hafta Assortion konuşurken biraz değinmiştik bunu. Assortion ne için kullanılırdı?
+
+722
+02:19:26,932 --> 02:19:34,812
+Hocam, belli bir şey yapıyorduk, validation, belli bir şey sağlaması gerekiyordu ki, gelin insert yapabilsin, bir şey yapabilsin vs.
+
+723
+02:19:36,371 --> 02:19:48,932
+Evet, doğru [öğrenci]. Yani söylediğim gibi, eğer belli bir şartımız varsa, bu gerçekten sağlanıyor mu, sağlanmıyor mu? Bunları kontrol mekanizması için daha çok kullanılır.
+
+724
+02:19:48,932 --> 02:19:51,172
+Yani bir işlem yapıyorsunuz.
+
+725
+02:19:52,531 --> 02:20:06,131
+insert, delete veya başka bir işlem yapıyorsanız, bu şartları sağlıyor mu? Hani diyelim ki bir insert yaptığınız, bu insert yaptığınız değerler geçerli bir mevsim mi, geçerli bir ay mı, ne bileyim başka bir şeyler gibi düşünebilirsiniz.
+
+726
+02:20:07,671 --> 02:20:14,451
+Bunları sağlamak için, sağlama yapmak için aslında düşünebiliriz. Kullanılan bir şey daha soru için. Trigger da bu amaçla kullanılır.
+
+727
+02:20:15,028 --> 02:20:37,547
+Tabi trigger ile çok daha kompleks işlerler de yapabiliyorsunuz. Trigger'ın temel mantığı şu. Her bir şeyi, execution gerçekleşirken, veritabanı tarafında, o tablo üzerinde bir işlem gerçekleşirken, bu işlemin otomatik olarak tetiklediği bir code blow az da trigger. Ne yapıyor trigger?
+
+728
+02:20:38,036 --> 02:20:46,635
+O insert, o delete ya da update işlemi gerçekleşirken belli sağlamaları yapmanızı sağlıyor.
+
+729
+02:20:47,716 --> 02:20:51,195
+Çünkü siz trigger'ı bir aksiyona bağlıyorsunuz.
+
+730
+02:20:51,504 --> 02:21:02,564
+ve bu aksiyon, bu şart gerçekleşince bu aksiyon almanızı izin veriyor. 1999'daki versiyonunda bu SQL'in standartlarına geldi.
+
+731
+02:21:03,963 --> 02:21:17,283
+O açıdan hani önceki versiyonlarda standart olarak şey yapılmıyordu ama birçok veritabanı entegre etmişti ve şu anda yani bütün ilişkisel veritabanlarında trigger yapısı vardır diyebiliriz.
+
+732
+02:21:19,059 --> 02:21:27,659
+Genel yapısı şöyle, bir trigger, insert, update, delete işlemleri üzerine tanımlanabilir.
+
+733
+02:21:28,340 --> 02:21:35,539
+Şöyle, mesela veri tabanlarında, uygulamalarda logları tutmak için özellikle trigger yapılır.
+
+734
+02:21:35,539 --> 02:21:42,219
+Yani diyelim ki, sizin kullanıcılarınızdan bir tanesi bir şeyi silmiş olabilir.
+
+735
+02:21:43,059 --> 02:22:08,200
+Müşterileri silmiş, kim müşteri silmiş? Bunu bulmanız lazım. Nasıl bulacaksınız? Veritabanı loglarınızdan bulabilirsiniz. Bir o, bir de bir işlem gerçekleşirken bunu sağlamasını yapmanız gerekir. Loglardan bunu trace etmek çok zor bir şey. O yüzden trigger kullanmak çok avantajlı. Olması gerekenin dışında bir aksiyon yapılmış mı? Bunu kim yapmış?
+
+736
+02:22:08,724 --> 02:22:17,664
+Hangi zamanda gerçekleşmiş? Bu tarz işlemleri yapmak için çok faydalı ve yapılan işlemler tutarlı mı, doğru mu gibi düşünebilirsiniz. Bunları da sağlamak için gerekli.
+
+737
+02:22:18,524 --> 02:22:23,064
+Trigger işlemi. Trigger, mesela update işlemi üzerinde tanımlayabilirsiniz.
+
+738
+02:22:25,203 --> 02:22:32,684
+Trigger, o işlemin gerçekleştiği andaki kayıtın tamamını tutar.
+
+739
+02:22:33,087 --> 02:22:41,468
+Öncekinde de tutabilir ama bir update yaptınız ya, update yapılmadan önceki hali ve update yapıldıktan sonraki halini tutabilirsiniz.
+
+740
+02:22:43,808 --> 02:22:52,468
+Delete ve update de önceki halini, eğer insert ve update ise...
+
+741
+02:22:52,724 --> 02:23:04,123
+State'ı hem önceki hem sonraki biliyorsunuz. Insert'te yeni halini biliyorsunuz. Delete'te eski halini biliyorsunuz. Bu şekilde old row, new row gibi kelimelerle onlara referans edebiliyorsunuz.
+
+742
+02:23:04,123 --> 02:23:18,523
+Great trigger statement'ı bu. Bit trigger oluşturuyorsunuz. Great trigger, null trigger diye bir şey ismi tanımladık. Bu update üzerinde gerçekleşiyor. Text tablosu üzerinde.
+
+743
+02:23:18,703 --> 02:23:28,384
+Tabii ki bunu otomatik olarak o tabla üzerinde yaratıyor. Referans ettiğimiz şey ne? Yeni girilen şey, değer, yeni girilen ROV.
+
+744
+02:23:29,263 --> 02:23:38,583
+Bunu şunu yapıyor, for each ROV dediğimizde, yani girilen bu ROV'a erişim sağlıyoruz. O ROV'daki bütün kolonları aynı anda erişim sağlayabiliyoruz, referans verebiliyoruz.
+
+745
+02:23:38,583 --> 02:23:46,304
+Buna şu diyor, eğer ROV'da grade değeri boşluk girilmişse, bunu mesela null eşitliyorum gibi.
+
+746
+02:23:46,708 --> 02:23:56,927
+düşünülebilirsiniz. Veya bunun dışında şunu yaptık. Herhangi bir değer, şey insert edildi ya, bir tablosunu, A tablosunu, bir text tablosunu insert ettim.
+
+747
+02:23:57,587 --> 02:24:06,247
+Aynı zamanda ikinci bir insert yazabilirim bunun altına. İkinci insertte de bunu log tablosu diye bir şey oluştururum.
+
+748
+02:24:06,247 --> 02:24:12,140
+Bu log tablosu bizim monitör işlemi yapmak için kullandığımız bir tablo. Mesela bu...
+
+749
+02:24:12,180 --> 02:24:19,780
+Diyelim ki Ahmet diye bir kullanıcıyı bu tabloya insert etmiş. Acaba Ahmet kullanıcısı hangi kaynaktan gelmiş? Ahmet'i kim insert etmiş?
+
+750
+02:24:20,380 --> 02:24:27,120
+Gibi şeyleri bulmak için ayrı bir monitoring tablosu tutabilirsiniz. Bunun için de insert işlemi yapılabilir.
+
+751
+02:24:28,080 --> 02:24:37,920
+Ayrıca mesela trigger'da şunları da kontrol edebilirsiniz. Veri girişi yapılan, mesela veri girişi kullanıcılar tarafından yapılıyorsa çoğu kez hatalı giriliyor. Anladın mı?
+
+752
+02:24:40,340 --> 02:24:53,860
+trigger'lar kullanılabilir. Yani validasyon anlamında da kullanılabilir. Şöyle bir örnek verelim. Diyelim ki krediler, toplam kredi, kazanılan kredi sayısında şey yapmamız lazım. Bunu update işlemi üzerinde yapacağız.
+
+753
+02:24:54,680 --> 02:25:06,440
+Aslında update bunu sürekli güncelleyecek. Ne yapıyoruz? Hem eski ROVA hem de yeni ROVA. Önceki ne? OROV diyelim. Sonra yine de NROV diyelim. Buna referans vermek için kolaylaşsın.
+
+754
+02:25:07,123 --> 02:25:25,603
+Sonra ne yapıyoruz? Her bir update yapılan kayıt için yeni kayıt eğer F değilse ve NULL değilse, aynı zamanda eski not F ise veya NULL ise şu işlemi yapıyoruz.
+
+755
+02:25:26,603 --> 02:25:32,583
+Update yapıyoruz. Tabelında toplam krediyi güncelliyoruz aslında. Nasıl güncelliyoruz?
+
+756
+02:25:33,056 --> 02:25:50,496
+Toplam kredi, eşitli toplam kredi artı, işte kors aldığı, bu öğrencinin aldığı, yani bu dersin olduğu krediyi buluyoruz, o dersin kredisini. Sonra o krediyi de buraya ekliyoruz ve bu toplam kredi sayısını artırmış oluyoruz. Bu öğrenci için gibi düşünelim.
+
+757
+02:25:51,059 --> 02:25:58,779
+Yani yeni bir ders aldıkça, bu öğrenci dersleri sayısı arttıkça toplam kredi sayısını artırıyoruz gibi düşünebiliriz.
+
+758
+02:25:59,139 --> 02:26:10,860
+Böyle bir şeyimiz olsun, total credit diye bir kullanımız olsun, öğrenci her dönem ders alıp notları girdikçe olmadığı sürece bu kredi sayıları eklenecek, toplanacak bir mülendirme olarak düşündü.
+
+759
+02:26:17,012 --> 02:26:21,512
+DELETE işlemi veya INSERT işlemi de olabilirdi.
+
+760
+02:26:26,031 --> 02:26:30,092
+Triggerı RAW seviyesinde değil, STATEMENT seviyesinde de yapabilirsiniz.
+
+761
+02:26:30,772 --> 02:26:33,772
+Bunun için FOR EACH STATEMENT diyeceğiz, EACH RAW diyene kadar.
+
+762
+02:26:34,772 --> 02:26:39,072
+Onun dışında da başka bir şey yok, farkı yok.
+
+763
+02:26:40,752 --> 02:26:43,031
+Ama şunu söylemekte fayda var.
+
+764
+02:26:44,768 --> 02:27:10,628
+Ciddi bir maliyeti var. Yani triggerlar bazı anlamlarda çok kullanışlı. Çünkü bu logları başka türlü tutmanız çok mümkün olmayabilir. Detaylıca validasyon yapma şansınız olmayabilir. Mesela bu triggerlar özellikle denetleme yapılan bir yerde çok önemlidir. Diyelim ki bankada transactionlar, para gönderdi, para alındı gibi bir sürü işlem gerçekleşiyor.
+
+765
+02:27:11,123 --> 02:27:21,043
+Ama kim kime parayı gönderdi? Mesela bir işlem yanlışlıkla yapıldı. Bu işlemi kim yaptı, nasıl yaptı? Bunun loglarının denetleme zamanında tutuluyor olması önemli.
+
+766
+02:27:21,343 --> 02:27:26,723
+Ayrıca bunların hesaplaması için trigger falan kullanılabilir. Ama her zaman kullanmak doğru değil.
+
+767
+02:27:27,723 --> 02:27:34,463
+Trigger'lar her bir işlem yaptığınızda arka planda gerçekleşir. Siz bu tabloda trigger var mı yok mu bilmezsiniz.
+
+768
+02:27:34,883 --> 02:27:38,763
+Özellikle insert işlemi, delete işlemi yapıyorsanız uygulama tarafında bilmezsiniz.
+
+769
+02:27:39,123 --> 02:27:54,543
+Ama işlemleriniz yavaş gerçekleşiyor olabilir. Bunun sebeplerinden bir tanesi trigger olabilir. Çünkü trigger ciddi bir performans farkı yaratır. Negatif anlamda performans düşürür anlamında söylüyorum bunu. Gerekli değilse kullanmayın.
+
+770
+02:27:55,028 --> 02:28:04,148
+Bazen bunun yerine çok daha avantajlı şeyler olabilir, yöntemler olabilir, veri validasyonunu belki uygulamaya atabilirsiniz.
+
+771
+02:28:04,148 --> 02:28:06,348
+Şey tarafında olmayacak şekilde.
+
+772
+02:28:07,808 --> 02:28:12,567
+Onun dışında hani böyle summary dataları can alıştıracaksanız bunu ayrıca yapmak lazım.
+
+773
+02:28:12,728 --> 02:28:15,268
+Tabloda sürekli güncellemek çok doğru bir şey olmayabilir.
+
+774
+02:28:15,987 --> 02:28:22,707
+Bunun için bir materyaliz bir oluşturup toplam kredileri hesaplamanız falan çok daha mantıklı gelebilir.
+
+775
+02:28:23,427 --> 02:28:29,587
+O açıdan trigger'ın kullanıldığı yerler var ama çok çok dikkatli olmak lazım trigger kullanırken.
+
+776
+02:28:32,268 --> 02:28:34,648
+Onun dışında başka bir tür şeyler olabilir.
+
+777
+02:28:37,172 --> 02:28:45,372
+Yani siz mesela deriyi bulk load falan yapıyorsanız, çok sayıda insert kopyası falan yapıyorsanız orada triggerları falan kapatmak lazım.
+
+778
+02:28:45,512 --> 02:28:48,932
+Çünkü istemediğiniz şekilde bu çalıştırılmış olabilir.
+
+779
+02:28:49,452 --> 02:28:54,852
+Veya bir silme işlemi falan gerçekleştirecekseniz önce trigger'ı durdurun.
+
+780
+02:28:55,092 --> 02:28:59,572
+Ondan sonra hani tabii ki bulk insertten bahsediyorum.
+
+781
+02:29:00,051 --> 02:29:10,031
+Önce bu triggerları durdurup ondan sonra bu işlemleri yapmak lazım. Çünkü her bir işlem için tekrar çalıştığı için çok istemediğiniz şeyler ortaya çıkarabilir.
+
+782
+02:29:13,072 --> 02:29:25,831
+Onun dışında bir de tabii ki bu cascading trigger olayı da sıkıntı olabilir. Yani bazen ne yapıyor derseniz triggerlar deadlock yapabilir. Şu açıdan da önemli.
+
+783
+02:29:26,675 --> 02:29:52,675
+Şimdi siz bir tabloya trigger vardır. O tablodan da diğer bir tabloya trigger vardır. Dolayısıyla bu insertler birbirini tetikleyerek çok sayıda tekrar tekrar eden uygulamalar, executioner gerçekleşebilir. Bu da hem tabloları lock etmek gibi bir riski taşıyor hem de istemeden birden çok değişiklik yapmanızı.
+
+784
+02:29:53,556 --> 02:29:58,956
+Bu da trigger'lar için başka bir risk olarak sayılabilir.
+
+785
+02:30:00,835 --> 02:30:02,536
+Buraya kadar soru soran var mı?
+
+786
+02:30:04,256 --> 02:30:06,916
+Bir nedenle dediğim gibi trigger'ları unutabiliyorsunuz.
+
+787
+02:30:07,015 --> 02:30:09,315
+Çünkü trigger o tabloda var mı yok mu?
+
+788
+02:30:09,515 --> 02:30:15,436
+Bunun bilinmesinin tek yolu o tablonun altına gidip, burada trigger var mı yok, orayı görmek.
+
+789
+02:30:16,180 --> 02:30:27,100
+Çoğu kez unutuyorsunuz trigger olup olmadığını. Çünkü çok sayıda trigger'ınız veya tablonuz olabilir. Aklınızdan da çıkabilir. O yüzden bakım anlamında bir maliyeti vardır.
+
+790
+02:30:30,540 --> 02:30:39,900
+Benim bugün için söyleyeceklerim bu kadar. Diğer konular, recursive query'ler, renkler, bunlar daha ileri konular SQL'de.
+
+791
+02:30:40,819 --> 02:31:01,399
+O yüzden bunlara şimdi girmeyeceğiz. Triggerlar ile bu check'ları tamamlayacağız. Öncesindeki konulardan sorumlusunuz. Vize de buraya kadar sorumlusunuz. Triggerlara kadar sorumlusunuz. Triggerlar dahi sorumlusunuz diye söyleyebilirim. Sorularınız var mı bununla ilgili?
+
+792
+02:31:07,412 --> 02:31:11,211
+Sanırım sorumuz yok. Sorumuz yoksa biraz erken sonlandırabiliriz.
+
+793
+02:31:12,711 --> 02:31:15,972
+Daha fazla zamanınızı almanıza gerek yok.
+
+794
+02:31:16,692 --> 02:31:26,432
+Hani recursion olayını kısaca bahsetmem gerekirse, SQL'de böyle iteratif döngü şekilde yapmanız mümkün değil.
+
+795
+02:31:27,231 --> 02:31:31,211
+Bunu recursion firelerle yapabilirsiniz. Burada cursor...
+
+796
+02:31:32,688 --> 02:31:52,468
+Yapısı söz konusu. Onu kullanabilirsiniz. Ama bunlar daha ileri konular. Çok girmeyeceğim buralara. Bir de ranking yapısı söz konusu. Hani sorguları sıralamak için kullanılır. Rank over diyorsunuz. Bunun içinde de belli bir sıraya göre oluşturabiliyorsunuz.
+
+797
+02:31:59,507 --> 02:32:25,547
+İlgilenip kendiniz bakarsanız iyi olur. Özellikle ranking ve cursor yapısı faydalıdır diye son olarak bunları da söyleyeyim. Benim anlatacaklarım bunlar. Sorunuz yoksa o zaman dersi bugünlük sonlandıralım. Haftaya vize sınavımız var biliyorsunuz. Perşembe günü. O zaman görüşmek üzere diye söyleyeyim.
+
+798
+02:32:26,835 --> 02:32:47,056
+Teşekkürler arkadaşlar. Bu ders için de teşekkürler. Dinlediğiniz için de yüz yüze görüşme imkanımız olmadı bu dönem ama başka derslerde ve diğer konularda da görüşmeyi umuyorum. Kendinize iyi bakın, hoşçakalın, iyi günler.

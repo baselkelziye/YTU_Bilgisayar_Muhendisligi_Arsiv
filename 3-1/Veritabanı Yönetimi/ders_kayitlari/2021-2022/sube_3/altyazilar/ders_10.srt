@@ -1,0 +1,2691 @@
+1
+00:02:19,060 --> 00:02:20,000
+Evet arkadaşlar.
+
+2
+00:02:33,683 --> 00:02:36,864
+Evet, 7 kişimiz.
+
+3
+00:02:39,103 --> 00:02:43,864
+Evet, sınavlarınızı okuyoruz. Az kaldı.
+
+4
+00:03:06,771 --> 00:03:14,951
+Evet, sorusu olan var mı? Sınavları birkaç güne herhalde açık veriyorsa hafta sonuna kadar diye düşünüyorum. Sesim geliyor değil mi?
+
+5
+00:03:19,891 --> 00:03:21,192
+Alo, sesim geliyor.
+
+6
+00:03:28,340 --> 00:03:49,759
+Madem öyle ses çıkmıyor. En azından dediğim mesaj yazıldı. Şimdi bir ekran paylaşımı yapayım. Şimdi bu hafta gene bir dersimiz olacak. Haftaya da mazene sınavımız var. Ama gene bir saat bir ders yaparız diye düşünüyoruz. Yani bir toparlama dersi.
+
+7
+00:03:56,211 --> 00:04:03,211
+B3'ler, B3'ler, HASHING, HASH algoritmaları, onlardan bahsedeceğiz.
+
+8
+00:04:03,331 --> 00:04:04,692
+Tabii çok kapsamlı bir konu bu.
+
+9
+00:04:05,811 --> 00:04:10,431
+Ama en azından bir giriş olması noktasında oldukça önemli.
+
+10
+00:04:10,431 --> 00:04:22,072
+Bu konuların devamı, daha böyle detaylı, tafsiratlı diyelim konular, veritabanı sistem gerçekleme, nisansta seçmeli ders olarak açıyoruz.
+
+11
+00:04:22,495 --> 00:04:36,135
+Bu fiziksel tasarımı kullanarak, bu fiziksel tasarımın daha ileri konuları, SQL'in gerçekten mesela, nasıl çalışıyor arkada, onların anlaşılması gibi konular var.
+
+12
+00:04:36,135 --> 00:04:44,515
+Onların ilk şeyleri, dosyanın organizasyonu, dosyanın fiziksel tasarımı, yani dosya ilişimi yapıları.
+
+13
+00:04:44,911 --> 00:04:52,072
+Bunların da başında B plus 3 geliyor ve işte hash algoritmuları, hash yapısı geliyor.
+
+14
+00:04:53,631 --> 00:04:56,072
+İşte o konulara en azından bir giriş yapalım.
+
+15
+00:04:56,251 --> 00:05:07,812
+Yani sistem gerçekleme dersi almayanla, almayacak olanlar için de en azından bir bu konu, bu terminolojiye bir yakınlık olmuş olur.
+
+16
+00:05:07,812 --> 00:05:08,831
+Evet.
+
+17
+00:05:09,363 --> 00:05:28,644
+Şimdi bir ekran paylaşımı yapayım. Ders kitabında chapter 13 ve 14. konular olacak. İnternetten erişebilirsiniz bu sunulara. Ekstradan başka sunulardan da böyle yardım alabiliriz.
+
+18
+00:05:32,084 --> 00:05:42,723
+Dersin sunularından az yerde kendi ders notlarımı kullanıyorum ama herhalde burada da çok sıkıntı çıkmaz. Eğer sıkıntı çıkarsa kendi ders notlarımdan bakmayı düşünüyorum.
+
+19
+00:05:43,723 --> 00:05:49,204
+Evet, şu anda ekran paylaşılıyor diye düşünüyorum.
+
+20
+00:05:58,004 --> 00:05:59,283
+Örneğin hocam ekranı.
+
+21
+00:06:00,224 --> 00:06:00,524
+Tamam.
+
+22
+00:06:02,903 --> 00:06:09,604
+Evet, şimdi, şöyle ilk başa gelelim.
+
+23
+00:06:10,584 --> 00:06:17,144
+Evet, data verinin saklanması, data storage verinin saklanması.
+
+24
+00:06:17,264 --> 00:06:19,964
+Bunun için de tabii bir takım böyle düzenlemeler gerekiyor.
+
+25
+00:06:20,524 --> 00:06:22,144
+Çünkü çok fazla veri var.
+
+26
+00:06:22,844 --> 00:06:24,524
+Bir tabloda bir de mesela.
+
+27
+00:06:25,524 --> 00:06:50,744
+Binlerce, milyonlarca kayıt olabiliyor. Yani böyle işte megabaytlar, gigabaytlere kadar ulaşabiliyor bir tablo. O yüzden bu tabloyu belli bir yapıda saklamak gerekiyor. Belli bir düzende saklamak gerekiyor. Aksi takdirde burada aradığımızı bulmak çok zaman alır. O yüzden belli bir düzende saklamamız gerekiyor.
+
+28
+00:06:51,151 --> 00:07:12,692
+Veya dosya veya tablomuz çok büyük ise bu tabloyu parçalamamız gerekiyor mesela. Bu da bir fiziksel tasarım yaklaşımı. Yani farklı böyle küçük dosyalara dağıtmamız gerekiyor oradaki veriyi. Buradaki dağıtmada da böyle row bazlı, satır bazlı veya column bazlı olabilir.
+
+29
+00:07:19,151 --> 00:07:25,871
+Yani işte 5 parçaya ayırdık mesela. Satır bazlı dağıttık veya column oriented dağıttık.
+
+30
+00:07:25,871 --> 00:07:32,271
+Yani kolonların işte 10 kolon, 20 kolon varsa 5 kolonu bir tabloya yazdık. Bütün tablonun 5 kolonunu.
+
+31
+00:07:32,932 --> 00:07:37,111
+Bunlar hep stratejiler. Yani farklı farklı şekillerde bu partition olabilir.
+
+32
+00:07:38,899 --> 00:07:56,259
+Tabii, bundan önce ilk olarak şöyle genel olarak dosyamızın, dosya organizasyonu ne demek? Dosyamız, bir kere ilk olarak tablolarımız vardı bizim ilişkisel modelimizde. Bu ilişkisel modeldeki tablolar arka planda, şaşırmayacaksınız, tabii ki dosyalarda saklanıyor.
+
+33
+00:07:56,259 --> 00:08:06,899
+Ama bunlar, bu dosyalar böyle açıp da kullanıcının direkt okuyamayacağı dosyalar. Çünkü sistem dosyası, yani veritabanı sistemi.
+
+34
+00:08:06,899 --> 00:08:33,000
+Kendi kontrolündeki dosyalar. Neden? Çünkü daha optimize bir şekilde saklıyor. İşte binary dosya olarak saklıyor. Text dosyası değil. Bunun işte en önemli nedeni de belli bir structure'da, belli bir düzenleme, belli bir esas üzerine saklıyor ki erişimde ona göre hızlı olsun.
+
+35
+00:08:34,899 --> 00:08:40,440
+derken arka planda da kastettiğimiz şey indeks demek. Yani bunun indekslenmesi.
+
+36
+00:08:41,491 --> 00:09:00,591
+İndeks deyince aklımıza bir kitabın indeksi gelebilir. Aynı şey. Yani aynı esas. Çünkü biz bir şeyi ararken, çok büyük bir kitapta bir şeyi ararken, bir kelimeyi arıyoruz, bir konuyu ararken neye bakıyoruz?
+
+37
+00:09:00,591 --> 00:09:09,491
+Yani indekse bakıyoruz. Acaba bununla ilgili bir ifade var mı? Bununla ilgili bir bu arada...
+
+38
+00:09:09,491 --> 00:09:15,211
+yazdığım kelime nerede diye bakarken indekse bakıyorum ve indekste nasıl indekse bakarken de nasıl bakıyorum?
+
+39
+00:09:15,351 --> 00:09:19,932
+İndeks sıralı olduğu için o indeks kısmında da aramam çok kolay oluyor.
+
+40
+00:09:20,811 --> 00:09:26,912
+Hep bunların esasında işte bu dosyalardaki indekslerdeki de gene ana fikir.
+
+41
+00:09:27,011 --> 00:09:30,651
+Yani gerçekten bizim tablomuz bir dosya.
+
+42
+00:09:31,071 --> 00:09:36,491
+O dosyamız biraz önceki analojide verdiğim örnekte kitap.
+
+43
+00:09:37,491 --> 00:09:45,151
+Bir şey ararken nasıl indekse bakıyorum. O tabloda, o dosyada bir şey ararken de o tabloya, o dosyaya ait olan indekse bakacağım.
+
+44
+00:09:45,331 --> 00:09:53,932
+Oradaki kitabın indeksi nasıl, o kitaba göre çok ufak, kitabın sonunda, 5-10 sayfalık bir yerde.
+
+45
+00:09:54,071 --> 00:09:59,031
+Aynen onun gibi tabloya ait olan bir indekste gerçekten tabloya göre çok çok ufak.
+
+46
+00:10:00,000 --> 00:10:14,019
+Biri mesela, bir çekirdeği gibi mesela, ufak bir şeyi. O indeks, kitabımızın sonundaki indeks nasıl sıralı, hani indekse baktığımız zaman A var, A ile başlayan oradaki kilit kelimeler var.
+
+47
+00:10:14,019 --> 00:10:26,019
+Daha ki ben işte aradığım bir kelimeyi orada arıyorum, buldum mesela, onun gibi. İşte tabloya ait olan bir indeks de gerçekten sıralı.
+
+48
+00:10:28,000 --> 00:10:40,539
+arama daha kolay oluyor. Daha sonra kitabımızın sonundaki o indekste hemen ufak olan ve sıralı olan o alanda, o sayfalarda aradığım kelimeyi buldum hemen.
+
+49
+00:10:41,480 --> 00:10:46,900
+Oradan bulduğum kelimenin yanında ne yazıyor? Ne yazıyor arkadaşlar?
+
+50
+00:10:51,347 --> 00:10:57,447
+İndekse baktığınız zaman, kitabın sonundaki indekse baktığınız zaman o indekste bulduğunuz kelimenin yanında ne yazar?
+
+51
+00:11:01,812 --> 00:11:02,312
+Evet.
+
+52
+00:11:05,779 --> 00:11:06,899
+Doğru bir şey sormadım.
+
+53
+00:11:14,707 --> 00:11:17,067
+Sayfa numarası, yazar sayfa numarası.
+
+54
+00:11:17,779 --> 00:11:37,899
+Yani ta ki o sayfaya, yani kitaptaki o sayfayı direkt olarak uçabilelim. Ve aradığımız kelime orada gerçekten. Evet, çok büyük bir iyileşme. Aksi takdirde ben o kelimeyi o sayfaya kadar kitabın başından itibaren teker teker aramam gerekiyordu.
+
+55
+00:11:45,779 --> 00:12:03,340
+Ve çok farklı bir durum yok. Biz bir arama yaparken, bir dosyada, bir tabloda bir arama yaparken, bu aramada, bu aramaya ait olan kelimeyi, bu kelime üzerindeki bir indeks yapısında arıyoruz.
+
+56
+00:12:03,340 --> 00:12:13,779
+Ve bulduğumuz o kelimeye ait olan adres bilgisini de o tabloda direkt olarak, adres bilgisiyle o tabloya, tabloda direkt olarak...
+
+57
+00:12:13,779 --> 00:12:41,659
+O kayda erişiyoruz. Ana fikir böyle ama tabii detaylar noktasında bunun içini doldurmaya çalışacağız yani. Şimdi indeks meselesi böyle. İndeks deyince demek ki hızlı erişim aklımıza gelecek. Kitap indeksi de o noktada güzel bir benzetme oluyor. Şimdi bunlar bizim işte bu hafta ve haftayaki konularımızın nihai noktası.
+
+58
+00:12:41,779 --> 00:13:03,220
+meyvesi yani, çıktısı bu olacak ama bunun içini doldurmak için de tabii bazı böyle buradaki terminolojiye, buradaki geçen tanımları anlamamız lazım. Burada da ilk olarak dosyalar. Evet, bu dosyalarımız bizim kayıtlardan oluşuyor ve her bir kaydımız da SQL fields, niteliklerden oluşuyor.
+
+59
+00:13:03,700 --> 00:13:13,220
+Burada bizim bu dosyalarımızın içerisindeki kayıtlar sabit uzunluklu da olabilir, değişken uzunluklu da olabilir.
+
+60
+00:13:14,580 --> 00:13:30,040
+En kolay gerçekleme, sabit uzunluklu kayıtlar. Değişken uzunluklu kayıtlar, içerisinde değişken bir nitelik, yani var, çar, var ise elbette bu kaydımız değişken uzunluklu kayıt olacaktır.
+
+61
+00:13:30,620 --> 00:13:42,560
+Veya bir dosya içerisinde farklı tabloya ait olan kayıtlar varsa, bunun bir takım sebepleri olabilir. Hızlandırmak için mesela o farklı kayıtlar.
+
+62
+00:13:42,580 --> 00:13:55,960
+Farklı tablolardan gelen kayıtlar, farklı tablolar üzerine çok fazla JOIN yapılıyorsa, onlar aynı dosyaya alınabilir. Bunlar sistemin kendi içindeki bazı böyle hızlandırmak için organizasyonlar.
+
+63
+00:13:56,379 --> 00:14:09,460
+Her harikarda, demek ki olaya şöyle uzaktan baktığımız zaman, bu dosyalarımızın içerisinde ya sabit uzunluklu kayıtlardan oluşan bir dosya veya değişken uzunluklu, fixed length veya variable length.
+
+64
+00:14:10,580 --> 00:14:18,820
+gerçeklemesi kolay olan sabit uzunluklu. Burada ilk olarak bundan bahsedeceğiz. Sunumlarda ilk olarak bunlar var.
+
+65
+00:14:20,120 --> 00:14:26,960
+Buradaki, yani böyle olunca tabii her dosyamızın içerisindeki her kayıt aynı şemaya sahip.
+
+66
+00:14:26,960 --> 00:14:35,000
+Yani o tablonun, o dosyanın bir şeması var. O şema bütün kayıtları için aynı. Yani aynı tablodan geliyor bunlar.
+
+67
+00:14:38,259 --> 00:14:39,259
+Evet.
+
+68
+00:14:39,668 --> 00:14:57,668
+Hatta yani bu gerçekleme, sabit uzunluklu kayıt gerçeklemesi, o gerçekleme kolaylığından dolayı içerisinde değişken nitelikler de olsa dahi bu tarz gerçekleme yaygın.
+
+69
+00:14:57,668 --> 00:15:04,107
+Çünkü değişken uzunluklu gerçeklemeye baktığımız zaman birazdan göreceğiz.
+
+70
+00:15:07,668 --> 00:15:19,327
+Orada bir takım böyle dezavantajları da göz önüne alarak sabit uzunluklu yapmak, gerçeklemek de çok çok büyük bir zayiat olmayacak yani.
+
+71
+00:15:19,327 --> 00:15:25,207
+Evet, tabii bunlar böyle gerçek sistemlerde çok farklı şekillerde olabilir.
+
+72
+00:15:25,827 --> 00:15:33,507
+Ama bu konu mesela anlaşılması, yani en azından bu file organization kısmı anlaşılması oldukça kolay, çok zor değil.
+
+73
+00:15:35,668 --> 00:15:38,548
+detaylar böyle farklı şekillerde olabilir.
+
+74
+00:15:39,091 --> 00:15:49,111
+Burada, tabii şunu da söylemek gerekiyor. Fiziksel tasarıma bir parça başladığımız için, tabii bu noktada diski tanımak gerekiyor.
+
+75
+00:15:50,072 --> 00:16:04,132
+Bu chapter 12, şimdi onu dahil etmedik derse, ama chapter 12'de, bu chapter 13, kitabın chapter 12, 12. kısmında şey var, diski anlatıyor, diski kapısını anlatıyor.
+
+76
+00:16:07,091 --> 00:16:21,951
+olduğundan bahsediyor. Çok özet olarak şunu söylemekte fayda var. En azından o nokta, o tanım kafamızda yerlesin. Biz veriyi diskten disk sayfası olarak çekiyoruz.
+
+77
+00:16:22,399 --> 00:16:43,580
+Yani istediğimiz bir veri parçası ne kadar böyle olursa olsun o diskten alacağımız parçalar o istediğim parça kadar değil de disk ve ana hafıza arasındaki haberleşme parçası, ünitesi neyse o kadar olacak.
+
+78
+00:16:43,580 --> 00:16:49,919
+Yani ben mesela 100 byte'lık bir veri istiyorum diskten, dosyadan 100 byte'lık mesela.
+
+79
+00:16:50,399 --> 00:16:54,320
+O buna 4 kilobaytlık bir sayfa içerisinde onu bana gönderiyor.
+
+80
+00:16:56,884 --> 00:17:22,624
+Çünkü 4 kilobyte bir Linux sisteminde mesela veya işte Windows'da 4 kilobyte disk sayfasının büyüklüğü. Yani disk page, disk blog dediğimiz. Böylece 100 byte'lık ben bir veri istediğiniz zaman aradığım yer orası esasında bana 4 kilobyte'daki bütün o veriyi birden gönderiyor. Çünkü 100 byte gönderemez.
+
+81
+00:17:24,884 --> 00:17:44,983
+İstasyonlarında bu disk sayfası çoğu zaman default olarak 8 kilobyte. Yani PC SQL'de de, MS SQL'de de bildiğim kadarıyla, belki Oracle'da da default, yani biz bir ayarlama yapmazsak 8 kilobyte olarak disk sayfasını set ediyor. Bu ne demek oluyor? Biraz önceki açıklamamızdan yola çıkarak.
+
+82
+00:17:52,884 --> 00:18:20,183
+Ahmet isimli 100 numaralı öğrencinin ismini erişmek istiyoruz. Burada erişmek istedim, Ahmet diye bir kelime sadece. Yani 10 byte, 3-5 byte neyse. Şimdi burada benim o veriye, Ahmet'i direkt olarak diskten, o byte'ları diskten erişmem, sadece onların gelmesi mümkün değil. Hiçbir zaman mümkün değil yani.
+
+83
+00:18:20,884 --> 00:18:32,563
+Gerçekten. O Ahmet isimli kayıt, Ahmet isimli nitelik, ona ait olan aradığım 100 numaralı o kayıt, 100 numaralı AİD'li öğrenciyi aramıştık.
+
+84
+00:18:32,923 --> 00:18:40,943
+O hangi disk sayfasındaysa, o disk sayfasının hepsi birden geliyor. Yani 8 kilobaytlık bir veri geliyor.
+
+85
+00:18:41,392 --> 00:18:54,192
+Bunun sistem performans noktasında, fiziksel tasarım, disk organizasyonu noktasında birçok nedenleri var. O detaylara çok girmeyeceğiz ama en azından disk sayfası nedir?
+
+86
+00:18:54,572 --> 00:19:02,892
+Geri tamamı sistemlerinde default olarak disk sayfası, disk page büyüklüğü nedir? Veya disk blog, disk page aynı şey.
+
+87
+00:19:09,392 --> 00:19:15,271
+Bunu biz ana hafıza getirdiğimiz zaman da disk page veya buffer page, buffer falan gibi bir şey.
+
+88
+00:19:15,332 --> 00:19:24,692
+Yani content içerik değişmemekle beraber o içeriğin bulunduğu konum neresiyse ona göre disk block veya disk page diye bir isim alıyor.
+
+89
+00:19:24,692 --> 00:19:30,731
+Öyle düşünebilirsiniz. Yani bu kelimelere çok rastlıyoruz fiziksel tasarımda veya bununla ilgili şeylerde.
+
+90
+00:19:37,392 --> 00:19:48,452
+Frame'de geçiyor mesela. Bunların hepsi, content aynı fakat nerede bulunuyorsa, o bulunduğu yere göre, buffer pool içerisinde bulunuyorsa buna buffer diyoruz mesela.
+
+91
+00:19:48,452 --> 00:19:59,792
+O memory ana hafızada bulunduğu için aynı zamanda page, disk, page de diyoruz. Biz bunu diske yazdığımız zaman da disk block oluyor.
+
+92
+00:20:00,339 --> 00:20:06,359
+Evet, işte burada son maddede, we assume that records are smaller than a disk block.
+
+93
+00:20:06,619 --> 00:20:18,699
+Yani tipik olarak bakıldığı zaman disk block 8 kilobyte olduğu için bizim de tupplelarımız, yani bir dosya içerisindeki bir dosya veya bir tablo içerisindeki kayıtlarımız da,
+
+94
+00:20:28,339 --> 00:20:35,579
+30 byte'lık varçarlar varsa, 3 tane varçar olsun mesela, 3-4 tane de integer olsun falan.
+
+95
+00:20:36,000 --> 00:20:48,799
+Ne oluyor? 100 byte, 200 byte oluyor. Tipik değerler 100 byte, 200 byte falan böyle 8-10 nitelikten oluşan bir tablo için böyle bir şey var.
+
+96
+00:20:48,799 --> 00:20:56,339
+O zaman burada 8 kilobyte'lık bir veri tabanının formatındaki bir disk...
+
+97
+00:20:56,339 --> 00:21:03,400
+sayfası içerisine, yani yüzlerce, binlerce olmasa da, bir yüz tane falan kayıt konabiliyor yani.
+
+98
+00:21:04,859 --> 00:21:10,900
+Hani yüz byte, iki yüz byte olsa, sekiz yüz byte içerisine, ne kadar konacak işte?
+
+99
+00:21:12,900 --> 00:21:15,180
+Kırk tane falan konuyor yani, değil mi?
+
+100
+00:21:17,460 --> 00:21:32,420
+Şimdi böyle olunca, biraz önceki dediğimiz gibi, yani böyle çok çok büyük kayıtları, onların handle edilmesi, onların halledilmesi, ayrı bazı şeyler gerektiriyor, organizasyon gerektiriyor.
+
+101
+00:21:32,420 --> 00:21:45,420
+Yani işte kastettiğim şeyi belki tahmin etmişsinizdir. Binary large objeler var mesela. CLOB'lar, B-Lob'lar var veya işte TEXT dosyası var. Bunlar tabii daha büyük oldukları için...
+
+102
+00:21:45,460 --> 00:21:47,180
+İstik sayfasını geçecek büyüklüğü.
+
+103
+00:21:47,988 --> 00:22:10,148
+Öyle olunca onların başka organizasyonlar gerekir. Şimdi biz en basit halden bahsediyoruz. Yani sabit uzunluklu kayıtlarımız var. Şimdi burada sabit uzunluklu kayıtlar işte böyle gerçekten şey, burada işte 11 tane kaydımız var.
+
+104
+00:22:11,588 --> 00:22:15,988
+Burada mesela işte biraz önce verdiğim örneğin gerçek...
+
+105
+00:22:15,988 --> 00:22:43,968
+bir örnekte ama hani onu biraz daha böyle burada şematize edelim. Yani şey yapalım, temsili bir örnek olarak şey yapalım. Burada diyelim ki mesela bir disk sayfasında işte 3 tane kayıt var desek o zaman burada bu dosyamız şu anda bu kadar veri içeriyorsa kaç tane disk sayfasını kaplıyor desek işte şu birinci disk sayfası sonra
+
+106
+00:22:43,988 --> 00:22:58,228
+Sonra şu ikinci disk sayfası, bu üçüncü disk sayfası, bu da dördüncü disk sayfası olmak üzere on iki tane kaydı dört tane disk sayfasına bu şekilde organize etmiş olduk, yazmış olduk.
+
+107
+00:22:59,568 --> 00:23:05,428
+Burada farklı tipte dosyalara bunları yazabiliriz.
+
+108
+00:23:11,988 --> 00:23:18,408
+Zannedersem şey yapıyor, update işlemlerini, modifikasyon işlemlerini nasıl olduğunu düşünürsek.
+
+109
+00:23:18,408 --> 00:23:20,236
+Burada...
+
+110
+00:23:20,980 --> 00:23:40,960
+Herhangi bir kayda nasıl erişiriz ve modifikasyonu nasıl yaparız? Store record, I starting from byte, burada her bir uzunluğu bunun n byte olduğu için i. kayda erişmek istesek mesela, nasıl erişeceğiz?
+
+111
+00:23:40,960 --> 00:23:48,240
+Yani i-1 çarpı n olarak erişeceğiz. Buradaki her bir kaydın uzunluğu da n byte.
+
+112
+00:23:48,980 --> 00:24:16,120
+Yani n byte ne kadar? İşte biraz önceki örneğimizde şey yaptığım gibi, hani şurası integer olsa veya gene byte gibi burası değil mi? İnteger olsun. Burası da integer, 8 byte. Mesela şurada da varçar 20'ler veya karakter olsun, varçar olmasın, sabit uzunluklu dedik ya, işte 10 byte'lık olmuş olsun. Ne oldu? 28 byte.
+
+113
+00:24:16,980 --> 00:24:30,860
+8 byte'lık bir, burada bir kayıt var. Yani biz burada bu tabloda mesela 5. kayda erişmek istiyorsak, 28x5 deyip oradaki offset adresine erişeceğiz. Oldukça basit.
+
+114
+00:24:31,880 --> 00:24:42,980
+Şimdi ben burada yani 5. kayda erişmek isteği nereden geldi diye düşünsek, bu istek esasında neye bakıyor?
+
+115
+00:24:44,980 --> 00:24:56,680
+Uzaktaki en son kullanıcı olan SQL'i yazan, o SQL'deki yazdığım tabloda ben hangi kayda erişmek istiyorsam o kaydın adresini elde ettim.
+
+116
+00:24:57,200 --> 00:25:06,059
+İşte elde ettiğim adres bilgisi içerisinde bana diyor ki, sen şu adrese gideceksin, yani bu dosyada 5. kayıt senin erişmek istediğin.
+
+117
+00:25:06,059 --> 00:25:11,319
+Yani biraz önce 100 numaralı öğrencinin ismini erişmek istemiştik mesela.
+
+118
+00:25:11,819 --> 00:25:12,980
+İşte 100 numaralı öğrencinin ismini erişmek istemiştik mesela.
+
+119
+00:25:12,980 --> 00:25:31,340
+Öğrenci, bu dosyada nerede olduğu, burada 100 numara yok ama, 33456 numaralı öğrenci, mesela erişmek istiyoruz, onun bölümüne erişmek istiyoruz.
+
+120
+00:25:31,440 --> 00:25:36,240
+Burada ismi de yok, artık hangi tabloysa bu. Onun bölümüne erişmek istiyoruz.
+
+121
+00:25:36,240 --> 00:25:40,799
+Neredeyse instructor tablosu bu, öğrenci değil de instructor tablosu.
+
+122
+00:25:40,980 --> 00:26:06,559
+Onun bölümüne erişmek istiyoruz mesela. O zaman işte arkada böyle kapalı bir kutu var, onlar indeksler. O indeks bana diyor ki, senin erişmek istediğin 33456 numaralı kişinin bulunduğu yer böyle bu dosyada, işte ikinci blokta, offset adresi de işte 3 diyor mesela.
+
+123
+00:26:08,980 --> 00:26:27,580
+Bu dosyaya gelip, bu dosyada işte o disk sayfasına erişip, o disk sayfasında bu offset'e gidip, bu 33-456 numaralı kişinin bulunduğu departmanı buluyoruz.
+
+124
+00:26:27,980 --> 00:26:30,059
+Evet, erişim ana hadatleriyle böyle.
+
+125
+00:26:31,284 --> 00:26:46,924
+Tabii burada önemli olan o kapalı kutu kısmına atladım. Yani indeks burada nasıl buldu? Bu adresi, bu adresi böyle sihirli DNA'lı nasıl buldu? O önemli kısma atladık tabii. Onun biraz içine doldurmaya çalışacağız.
+
+126
+00:26:47,444 --> 00:26:57,764
+Şimdi bu dosyamız, ana dosyamız böyle. Verinin saklandığı dosya böyle. Burada tabii sadece erişim olmuyor. Aynı zamanda böyle bir takım modifikasyonlar da oluyor.
+
+127
+00:26:59,284 --> 00:27:01,184
+İntekler de oluyor. Mesela burada
+
+128
+00:27:06,163 --> 00:27:26,504
+Burada tabii şunu da söylemeyi unuttum veya farklı şekillerde de olabilir bu. O da şu, yani biz dedik ki bir dosyamız, bir disk sayfası içerisine atıyorum işte 10 tane kayıt sığıyor dedik.
+
+129
+00:27:26,504 --> 00:27:32,304
+Tabii bu tam oturmayabilir yani 10 kayıt tam o disk sayfasının içerisine sığmayabilir.
+
+130
+00:27:34,163 --> 00:27:40,504
+KALANLAR DA BOŞ KALACAK VEYA ORADA DA BİR SONRAKİ KAYDIN BİR KISMINI YERLEŞTİRECEZ.
+
+131
+00:27:40,844 --> 00:27:43,223
+İşte burada farklı stratejiler var.
+
+132
+00:27:43,963 --> 00:27:52,604
+Yani işte buna orada boş kalmasın, ondan sonraki kaydın bir kısmını yazalım diyorsak ona böyle bir isim takılıyor.
+
+133
+00:27:52,604 --> 00:27:56,804
+O da Page Spanning. Yani iki sayfayı birbirine böyle zincirliyoruz.
+
+134
+00:27:57,403 --> 00:28:02,163
+Burada ondan bahsetmemiş ama o da hani nasıl oluyor diye düşündüğümüz zaman.
+
+135
+00:28:02,163 --> 00:28:15,064
+Arka'da böyle bir şey de var, mekanizma da var. Böylece yer kaybı olmamış oluyor. Yani burada mesela disk page, disk page'imiz mesela hani buradaki örneğe uygun olsun.
+
+136
+00:28:15,564 --> 00:28:29,644
+Vereceğim değerler çok gerçekçi değil ama burada mesela 100 byte olsun bu şey veya 80 byte olsun. Her bir kaydın uzunluğu 80 byte. Şey de 300 byte olsun.
+
+137
+00:28:30,195 --> 00:28:32,195
+Böyle olunca...
+
+138
+00:28:33,872 --> 00:28:59,231
+240 byte, 3 tane kayıt, 240 byte oluyor ve 60 byte açıkta kaldı. Tamam, açıkta kalsın, oysa boş kalsın. Bundan sonraki diğer 3 tane 80 byte'lık, her bir de 80 byte olan 3 tane kaydı da diğer sayfaya yerleştireceğiz, diz sayfasına yerleştireceğiz. Böylece her sayfada 60 byte'lık alan boş kaldı.
+
+139
+00:29:01,872 --> 00:29:16,352
+Bununla kurtulmak istiyorsak, yani oradaki sayfalar da tam dolsun diyorsak eğer, o byte'ları da doldurmak istiyorsak, o zaman işte Pace Spanning dediğimiz, bu dördüncü kaydın da bir 60 byte'lı kısmını o diz sayfasına yerleştireceğiz.
+
+140
+00:29:16,352 --> 00:29:26,471
+İşte 20 byte kısmını da bir sonraki diz sayfasına yerleştireceğiz. Böylece hani bir kayıt her zaman bir sayfada olmayabilir. Birden çok sayfaya dağılmış olabilir.
+
+141
+00:29:29,872 --> 00:29:57,751
+şeylerde zaten kaçınılmaz olacak. Yani şurada şöyle bir assumption yapmıştık. Bu assume that records are smaller than disk block. Yani disk block'tan daha ufak olduğunu düşünelim dedik. Eğer disk block'tan daha büyükse benim kayıtlarım zaten dediğim o page spanning, yani o bir kaydı parçalara ayırıp farklı sayfalara yazmak gibi bir durum zaten kaçınılmaz olarak zorlama olarak zaten böyle.
+
+142
+00:29:57,872 --> 00:30:07,912
+olması gerekecek burada olsa, böyle olsa. Evet, burada demek ki arka planda, yani gerçekten fiziksel olarak bunun yerleşiminde bu tür stratejiler var.
+
+143
+00:30:07,912 --> 00:30:11,912
+Şimdi burada modifikasyonla...
+
+144
+00:30:13,076 --> 00:30:39,196
+Kastettiği mesela, hani ekleme, çıkarma ve delete'ler olabilir. Bir delete örneği, şimdi sabit uzunluklu olduğu için update noktasında bir problem yok zaten. Yani bir kaydın işte bir bulunduğu departmanı değiştirsek, burası zaten char 10 desek mesela, hani var char değil, değişken uzunluklu değil, sabit uzunluklu.
+
+145
+00:30:41,076 --> 00:30:42,216
+şey değişecek.
+
+146
+00:30:45,676 --> 00:30:47,836
+Evet, problem yok herhalde değil mi?
+
+147
+00:31:03,955 --> 00:31:31,895
+Evet. Ama eğer bir ekleme çıkarma yapıyorsak, bu kayıtlar nereye eklenecek, çıkartıldığı zaman geriye kalan dosya ne olacak gibi. Bunlarla ilgili işte farklı böyle anlaşılması kolay veya intuitif olarak yani sezgisel olarak çok karmaşık bir algoritma gerektirmeyen farklı stratejiler olabilir. Bunlar farklı sistemlerde farklı seçimler olabilir.
+
+148
+00:31:31,955 --> 00:31:40,836
+Yani mesela burada bir iyinci kaydı silmeye kalksak, mesela üçüncü kaydı silmeye kalktığımız zaman, üç farklı stratejiden bahsediyor.
+
+149
+00:31:41,235 --> 00:31:52,775
+Yani shift etmek. Yani hiç boşluk kalmasın. Bütün kayıtları böyle sıkıştırdık. Yani üçüncü kayıt çıkınca, diğer kayıtlar böyle yukarı doğru shift ettik.
+
+150
+00:31:59,955 --> 00:32:16,535
+Elinden etmek, o kayıtları kaydırmak yerine sadece o boşluğu doldurmak adına dosyanın da kompakt olmasını, yani yekpare olması için, fiziksel olarak da yekpare tek parça olması için şöyle bir basit bir fikir var.
+
+151
+00:32:16,535 --> 00:32:22,715
+O da sondaki kaydı alıp işte o araya yerleştirelim. İşte burada da rekord 3 yerine rekord 11 gelmiş.
+
+152
+00:32:23,183 --> 00:32:30,563
+Selam. Diğer bir yaklaşım ise, burada boş alanların takip edilmesi.
+
+153
+00:32:30,563 --> 00:32:40,183
+Yani işte madem burada işte bu örnekte ne gözüküyor? İşte bir rekord 1, 4, 6 silinmiş.
+
+154
+00:32:40,803 --> 00:32:45,783
+Ama sililsin, onlar öyle kalsınlar ama bu boş alanlar da böyle kontrol edilsin.
+
+155
+00:32:46,124 --> 00:32:51,183
+O da dosyamızın başında bir header diye bir o dosyayı.
+
+156
+00:32:51,183 --> 00:33:04,303
+ile ilgili dosyanın ismi, kaç kayıt içerdi, append ediyorsak, son dosya sonuna ekliyorsak, son ekleme noktası, offset'i nedir onun?
+
+157
+00:33:04,303 --> 00:33:13,743
+Ve işte gene burada boş alanların takip edilmesi için linkin başlangıcını içerecek şekilde bir header bölgesi var dosyaların başında.
+
+158
+00:33:14,003 --> 00:33:18,323
+Bu tipik olarak bütün dosyalarda var. Sistem dosyalarında özellikle burada.
+
+159
+00:33:19,183 --> 00:33:25,683
+Yani böyle diğer bilgiler var. İşte buraya böyle bir link list tarzında bu boş alanları
+
+160
+00:33:26,516 --> 00:33:54,516
+takip edebiliriz. Bu elimler değişime yarayacak. Demek bu sadece böyle bir append dosyası değil de aynı zamanda boş alanlara da gelen kayıtları yerleştireceğim. Buraya sığacaklar. Çünkü sabit uzunluklu gerçekleme. İşte sabit uzunluklu gerçeklemenin önemli bir avantajı da burada bu şekilde gözüküyor. Çünkü gelen kayıtlar herhangi bir...
+
+161
+00:33:54,516 --> 00:34:06,056
+aramaya, şeye kalmadan ilk boş bulduğu yere yerleştirilecek. Çünkü bu dosyamız bizim herhangi bir sıralama, sıralama esası bir dosya değil. Evet.
+
+162
+00:34:11,987 --> 00:34:14,307
+Herhangi bir sorun yok gözüküyor.
+
+163
+00:34:15,927 --> 00:34:18,087
+Şimdi gelelim, değişken uzunluktur.
+
+164
+00:34:18,648 --> 00:34:19,967
+Hocam, ben bir şey sorabilir miyim?
+
+165
+00:34:20,207 --> 00:34:23,627
+Evet, ne güzel bir tanes soru. Evet, heyecanlandım.
+
+166
+00:34:25,787 --> 00:34:33,947
+Pek bununla alakalı değil ama bu rekordlar 8 kilobaytlı datalar şeklinde bellekten çekiliyor dediniz.
+
+167
+00:34:34,407 --> 00:34:36,467
+8 kilobaytlı disk sayfası, evet.
+
+168
+00:34:36,467 --> 00:34:38,007
+Evet, disk sayfası olarak.
+
+169
+00:34:38,420 --> 00:34:53,180
+Dolayısıyla ben bir tabloyu 8 kilobaytla sınırlayarak o 8 kilobayta ulaşırken bölsem daha verimli bir veritabanı sistemi elde etmiş olur muyum?
+
+170
+00:34:54,039 --> 00:35:00,599
+Ya da bunu benim yapmam gerekiyor mu? Veritabanı otomatik olarak bu tarz bölme işlemleri yapıyor mu bizim adımıza?
+
+171
+00:35:00,980 --> 00:35:08,760
+Evet. Şimdi bir kere onu sen niye bölüyorsun? 8 kilobaytlık parçalara niye böldük?
+
+172
+00:35:09,559 --> 00:35:12,739
+Daha verimli bir şekilde ulaşabilmek için. Örnek veriyorum.
+
+173
+00:35:12,739 --> 00:35:27,399
+Çok sayıda dosyanı oldu o zaman mesela. Yani her bir dosyamız işte 100 sayfadan oluşan bir tabloysa bu. O tablon benim 100 tane dosyayla temsil ettim o tabloyu.
+
+174
+00:35:28,403 --> 00:35:29,003
+Evet.
+
+175
+00:35:29,784 --> 00:35:32,104
+Bu sence makul bir şey mi? 100 tane dosya.
+
+176
+00:35:32,304 --> 00:35:36,284
+Dosyanın işte takibi var, güvenlik ayarı var.
+
+177
+00:35:36,484 --> 00:35:44,663
+Yani bu dosya dediğimiz zaman, disk dosyası, o dosyaların erişimiyle ilgili ekstra bilgilerin saklandığı şeyler var mesela.
+
+178
+00:35:45,364 --> 00:35:52,264
+Evet, o zaman optimizasyon için biz böyle bir işe girmiyoruz. Girmemize gerek yok. Veritabanla bırakıyoruz bu kararını.
+
+179
+00:35:52,284 --> 00:36:00,864
+Evet, şöyle, bu dediğinin bir şeyi var. Elbette, parti için dedim ya, biraz önce derse başlarken, büyük dosyadan parçalanması.
+
+180
+00:36:00,864 --> 00:36:13,364
+Ama burada ben bunu kendim yapmıyorum veya kendim yine yapıyorum da, böyle dosya çok fazla büyüdüğü zaman, burada mesela en çok...
+
+181
+00:36:13,364 --> 00:36:15,364
+yapılan kısımlar
+
+182
+00:36:15,364 --> 00:36:17,164
+neyse o
+
+183
+00:36:17,164 --> 00:36:19,324
+kısımları mesela
+
+184
+00:36:19,324 --> 00:36:21,403
+o kısımlara göre parçalama yapabilirim.
+
+185
+00:36:21,483 --> 00:36:22,603
+O kolonları mesela
+
+186
+00:36:22,603 --> 00:36:24,403
+parçalayabilirim.
+
+187
+00:36:25,184 --> 00:36:26,903
+O kolonları ayırabilirim.
+
+188
+00:36:27,204 --> 00:36:29,384
+Diğer kolonları içeren
+
+189
+00:36:29,384 --> 00:36:31,284
+diğer kolonlar
+
+190
+00:36:31,284 --> 00:36:33,224
+çok erişilmediği için sadece
+
+191
+00:36:33,224 --> 00:36:35,244
+erişilen belli kolonlarsa
+
+192
+00:36:35,244 --> 00:36:36,644
+mesela o kolonları
+
+193
+00:36:36,644 --> 00:36:39,563
+ayrı bir tabloya strip edebilirim.
+
+194
+00:36:39,563 --> 00:36:41,324
+Onları böyle çek.
+
+195
+00:36:41,364 --> 00:36:50,344
+ekstrakt edebilirim. O benim daha ufak bir dosyam oldu. Orada çok fazla yoğun iş yükü çok fazla olduğu için mesela bu akıllıca bir şey olacak.
+
+196
+00:36:51,123 --> 00:37:12,304
+Burada da işte o partition'ı o şekilde kalım olarak belirledim. Veya hani mesela böyle bir dosyamız şey olsun, hava raporlarına içeren işte bir dosya. Burada en çok sorgulanan nedir desek en çok sorgulanan son günlerdeki hava raporları.
+
+197
+00:37:12,304 --> 00:37:18,304
+Hatta işte günlük veya işte birkaç gün önceyi falan. Hani 100 gün öncekini ben çok sorgulamıyorum. O zaman bütün...
+
+198
+00:37:18,708 --> 00:37:39,368
+Bu hava raporunu içeren bu tabloyu, hani o istatistiksel bilgileri tabloyu, tek parça halinde tutmak çok makul değil. Çünkü en çok aranan yer neresi? İşte son birkaç gün. O yüzden ben bunu parçalayabilirim. Ama bu parçalama da böyle işte son 3 günlük, 3 günlük partitionlar olacak.
+
+199
+00:37:39,840 --> 00:37:51,799
+Yani partition'ımızın şeyi, çapı, 3 günlük şey olacak. İşte burada row-oriented bir parçalama söyledim bak. Mesela row, yani satır esaslı parçalama söyledik.
+
+200
+00:37:54,860 --> 00:38:07,799
+Ama şimdi kocaman bir dosyada arama yapmak yerine böylece son 3 günü içeren o dosyada arama yaptık mesela. Çok daha hızlı oldu aramamız. İşte burada çok farklı stratejiler var ama senin...
+
+201
+00:38:07,840 --> 00:38:17,880
+Dediğin tabii tek bir sayfalık dosya zaten çok makul değil. Yani dosya dediğimiz zaman tamam çok büyük olmasın ama bir sayfalık dosya da olmasın.
+
+202
+00:38:17,980 --> 00:38:26,579
+İşte dediğim gibi o zaman milyonlarca dosya olur yani. Çünkü buradaki bizim dosyalarımız böyle gigabaytlar mertebesinde olan büyük veri diyoruz.
+
+203
+00:38:26,579 --> 00:38:33,059
+Mesela kocaman dosyalar. O zaman onlar tabii ki parçalanacaklar ama bir sayfalık değil tabii ki.
+
+204
+00:38:35,840 --> 00:38:47,259
+Yani veritabanı gibi olmuyor. Yani bir sayfalık dosya dediğimiz 8 kilobaytlık bir veri yani sonuçta onu ana hafızada zaten proses ediyoruz.
+
+205
+00:38:48,679 --> 00:38:57,920
+Evet. Ama en azından işte bu şey düşünmeniz güzel. Yani işte böyle kafa yormak. Yani ezbere değil de zaten o önemli bir problem.
+
+206
+00:38:57,920 --> 00:39:03,840
+Yani buradaki tanımlarımız çok zor değil ama ne yapıyoruz? Düşününerek şey yapıyoruz.
+
+207
+00:39:03,840 --> 00:39:28,179
+Bakınca o zaman ezberden de çıkmış oluyoruz. Böylece daha iyi anlamak. Anladım hocam. Sağ olun, teşekkürler. Hava durumu gerçekten güzel bir örnekti. Yani o tarz bir durum oluşursa öyle bir aksiyon almak çok daha mantıklı. Evet, aynen öyle. Güzel. Teşekkürler. Hocam ben de bir şey sorayım. Evet.
+
+208
+00:39:28,916 --> 00:39:31,596
+Son anlattığınız yeri bir de anlatabilir misiniz? Slide'da.
+
+209
+00:39:32,636 --> 00:39:41,916
+Evet, şimdi, şurada, bu sabit uzunluklu gerçeklemelerde, sabit uzunluklu kayıtları içeren bir dosyamız var burada.
+
+210
+00:39:42,547 --> 00:39:58,107
+Bu dosyamızda farklı stratejilerle bu update'leri, yani bu dosyadaki böyle ekleme çıkarma ve delete'leri yapabiliriz. Bu da farklı stratejileri işte gösteriyor.
+
+211
+00:39:58,107 --> 00:40:00,000
+Bu üçüncü strateji.
+
+212
+00:40:00,000 --> 00:40:28,000
+Bu stratejide bu. Ve direct işlemi yapıyoruz. Tabi update de olabilir, insert de olabilir. Yani buradaki stratejiler böyle dediğim gibi intuitive. Bunu nasıl yapacağız? Yani bu bir serbest bir dosya, sıralı değil. Sabit uzunluklu dosya. Hani yani bunun için çok böyle ayrı bir algoritma falan yok. Nasıl yapacağım? Gerçekten böyle yaparım yani. Intuitive'in manası o. Intuitive, sezgiser yani. Yani ne yaparım işte şu üçüncü yolda da.
+
+213
+00:40:28,000 --> 00:40:36,099
+Burada boşluklar, tamam öyle kalsın o boşluklar. Ama ben bunları takip etmem lazım. Bunları da linkler olarak takip edebilirim.
+
+214
+00:40:36,099 --> 00:40:47,860
+Hani bir pointer, header'da bir tane pointer koyuyorum. Derim ki, bu işte birinci rekord. Şuraya da ne yazacağım mesela? Dördüncü rekord. Buraya ne yazacağım? Altıncı rekord.
+
+215
+00:40:48,220 --> 00:40:51,480
+Ta ki bu boşlukları böyle takip edeyim. Niye takip ediyorum?
+
+216
+00:40:51,956 --> 00:41:07,576
+İşte ekleme yaparken yeni gelen kaydı dosyanın sonuna eklemeyeyim de çünkü böyle hani boşluklu bir dosya olmasın, kompakt olsun, yekpare tek parçada olsun, ta ki arama daha hızlı olsun.
+
+217
+00:41:07,576 --> 00:41:19,956
+Çünkü burada böyle boşluklar oldukça bu hani görüntü itibariyle bu fiziksel olarak böyle, arka planda da diskte gerçekten bu kayıtlar dağılıyorlar. Ne demek dağılması? Yani bir tanesi...
+
+218
+00:41:19,956 --> 00:41:33,136
+Bir disk sayfasına gidiyor, öteki diskin başka bir disk sayfasına gidiyor. İşte diskin yapısında böyle belki biliyorsunuzdur silindirler var, trackler var mesela. Hepsi dağılıyor diske.
+
+219
+00:41:34,256 --> 00:41:43,896
+Onun yerine işte böyle boşluk diye takip ederek yeni giren kayıtları, bu hemen bunun komşuluğuna yazayım ta ki aramam daha şey olsun, hızlı olsun. Bütün mesele bu.
+
+220
+00:41:44,896 --> 00:41:45,896
+Evet.
+
+221
+00:41:47,572 --> 00:42:15,532
+Şimdi gelelim değişken uzunluklu kayıtlara. Değişken uzunluklu kayıtlarda da bizim kaydımız, rekordumuz böyle mesela, böyle bir rekordumuz var. Bu rekordun içerisinde değişken uzunluklu kayıt nitelikler var. Yani değişken uzunluklu nitelik dediğimiz zaman da aklımıza, ilk aklımıza gelecek olan Varchar mesela veya binary, launch objeler falan da olabilir.
+
+222
+00:42:15,572 --> 00:42:43,192
+Bu bir şey olabilir de hani ufak dedik ya sayfaya sığacak kadar, VARCHAR olsun mesela. İşte bu VARCHAR ben nitelik değişkin uzunluk olması ne demek? VARCHAR 20 yazdığım zaman veya VARCHAR 100 yazdığım zaman kullanıcı buraya bir byte da girebilir. Yani X bir karakter girdi bir byte veya 100 byte da girebilir. Ama 200 byte biri girdiği zaman ya buna izin vermeyecek, hata verecek.
+
+223
+00:42:43,572 --> 00:43:04,872
+Veya zannedersem çoğu zaman hata vermiyor. Ama 200 byte'lık girdiğin veriyi deneyin mesela. Bunlar işte şimdi. Acaba hangisi? Bilmiyorum. PCSK'de bakıyorsun yazar. Ama MSSK'de belki yazmaz. Yani bunlar hep merak meselesi. Neyse, 200 byte girdiğin zaman mesela onun 100 byte'ini yazacak.
+
+224
+00:43:05,248 --> 00:43:15,468
+Yani update, işte bir varçal içeren bir dosyamız olsun, orada varçal 100 olsun, sen oraya nitelik olarak 105 girdi mesela.
+
+225
+00:43:15,568 --> 00:43:22,168
+5 byte'ı uçuracak, oraya yazmayacak, 100 byte kısmını yazacak. Niye? Çünkü en fazla 100 byte'lık yer ayırdı oraya.
+
+226
+00:43:23,807 --> 00:43:32,048
+Ama 100 byte'dan daha az veri girdiğin zaman da fiziksel olarak 100 byte yazmadı.
+
+227
+00:43:32,692 --> 00:44:00,692
+Ne kadar gelirsen o kadar yazdım. Şimdi burada da biraz önce konuya başlarken dediğim gibi en kolayı, VARCHAR da olsa bunun sabit uzunluklu gerçekte. O zaman yer kaybolacak. Çünkü VARCHAR 100 yazdın. Kimisi işte yani adamın ismi kısa isim oluyor, diğeri uzun isim oluyor. Adres bilgisi yazacağız mesela VARCHAR 100, adres bilgisi yazacağız. Bazı adres bilgileri işte 20 byte, diğeri 80 byte falan. Yani hep ben bunu 100 byte yazdım.
+
+228
+00:44:00,692 --> 00:44:21,771
+Yerirsem, fiziksel olarak da 100 byte yerine yerirsem, o zaman burada israf olacak. Evet, öyle. Ama bu dosyanın handle edilmesi, işte buradaki gibi mesela update'ler, delete'ler falan yapıyoruz. Buradaki yaptığımız işler çok kolay oluyor o zaman. Yani çok hesap kitap yapmıyoruz mesela. Direkt olarak bu hayda uçuyoruz. Şuradaki şu hesaplarla mesela.
+
+229
+00:44:22,804 --> 00:44:43,564
+Neredeydi o? Şununla. Veya işte boş alanları takip ediyoruz falan. Ama değişken hızlı olunca işte böyle biraz organizasyon yapmamız lazım. Yani bu ne demek? Bu organizasyon demek arkada kod demek. Yani bunun için kod yazman gerekiyor. Sistemin karmaşıklığı artıyor. Belli bir düzenleme getiriyor. Bütün ince noktada düşünmek gerekiyor yani.
+
+230
+00:44:45,224 --> 00:44:49,744
+İşte o karmaşıklığa değmiyor. Değmeyebilir.
+
+231
+00:44:50,804 --> 00:45:11,044
+O yüzden burada arka planda internal olarak sistem, hani varçal çok büyük değil ise, oradaki o varçal içerisindeki o şey, hani 500 byte falan gibi falan değil ise, ufaksa onları sabit uzunluklu olarak gerçekliyordur sistem diye tahmin ediyorum.
+
+232
+00:45:11,044 --> 00:45:18,164
+Veya bu makul bir çıkarım yani sonuçta. Bu benim son kullanıcıyı çok etkiliyor mu?
+
+233
+00:45:18,804 --> 00:45:32,584
+Haberinde değil, son konuları bunu etkilemiyor. Ama performans etkiler mi? Etkileyebilir. Yani eğer çok fazla kaydım varsa, işte o niteliği çok fazla erişim yapıyorsam falan, birçok sebepleri olabilir yani bunun. Evet.
+
+234
+00:45:33,903 --> 00:46:01,884
+İşte buradaki niteliklerimiz böyle. Bir saklanması ile bir organizasyon. Bu farklı şekillerde olabilir. Çok detaylandırmayacağım. Çünkü ana fikir olarak burada mesela nasıl yapmış? Burada değişken uzunlukta olduğu için o değişken uzunlukta niteliğin ne kadar uzunlukta olduğunu ve nerede olduğunu.
+
+235
+00:46:01,903 --> 00:46:22,103
+Bu saklamam lazım. Burada mesela, şurada, 21. byte'da, 5 byte'lık bir değişken uzunluklu nitelik varmış. Yani şuraya gittim, burada 5 byte var. Şurada diyor ki bana, diğer değişken uzunluk niteliğin 26. byte'da ve 10 byte, şu.
+
+236
+00:46:22,512 --> 00:46:39,032
+Demek ki yani benim şuradaki aynı instructor tablosu bu sefer böyle sabit uzunluklu değil de yani bu işte char 5 veya integer demiştik değil mi? Neyse bakmak lazım şey. Ben de unuttum şimdi. Sen dersen bu integer idi.
+
+237
+00:46:39,032 --> 00:46:50,512
+Bu işte char 10 dedik, böyle kaç tane var? 2, 4, 6, 8, 10. En fazla 10 olmuş olsun. İşte bu gibi varsayımları yapmak.
+
+238
+00:46:50,512 --> 00:47:07,512
+ÇAR 10, ÇAR 8, tabii müzik gelince bundan daha ufak olduğu için şu byte'lar boş kalacak yani. Sabit uzunluklu kayıtta da öyle. Hani VARCHAR'ı da ben sabit gerçekliyorsam bunlar gerçekten boş kalacaklar.
+
+239
+00:47:18,512 --> 00:47:46,492
+Bunları detaylandırmamız lazım. Yani diyor ki burada işte 21. byte'da işte 5 byte var. Bu integer değilmiş bu arada. Yani buradan anlaşılan o ki. 5 byte'lık bu çar 5'miş. Yani bu 26. byte'da diyor işte 10 byte'lık bir veri var. Bu kayıt için böyle. Bundan sonraki kayıt için bu değerler değişebilir. Yani şu 0, 4, 8, 12, bu 4 byte içer.
+
+240
+00:47:46,512 --> 00:47:54,052
+Dersine demek ki böyle iki tane short integer yazıyor. İşte bir formatı var yani nihayetinde.
+
+241
+00:47:54,552 --> 00:48:02,352
+İlk short integer 2 byte'da şey yazıyor, offset adresi. Ötekisinde de uzunluğunu yazmış mesela.
+
+242
+00:48:03,507 --> 00:48:15,387
+Bu kayıt için böyle. Diğer kayıt için buradaki şeyler, karakterlerin sayısı farklı olduğu için yani o zaman farklı rakamlar göreceksiniz.
+
+243
+00:48:17,556 --> 00:48:39,175
+Evet, bu şekilde. Yani değişkin uzunluklu kayıtların da gerçeklenmesinde offset ve length uzunluğunu yapabilir. Bu bir organizasyon. Böyle mi olabilir? Böyle olmayı da bilir. Mesela çok çok böyle performansı değiştirmeyecek farklı bir stratejide mesela delimiter kullanmak olabilir.
+
+244
+00:48:39,175 --> 00:48:45,356
+Yani özel bir karakter. Yani nitelikler içerisinde geçmesine izin vermediğim.
+
+245
+00:48:45,556 --> 00:49:13,276
+Ta ki şeyi bozmasın. Mesela işte bir yıldız diyelim mesela. Yıldız şeyi, hani var ya çarpı veya natural join'da kullanıyorduk yıldızı. İşte o yıldız ifadesi olsun mesela. Veya diyez oluyor ya mesela diyez de olabilir. İşte o diyezlerle ben şu parçayı atın. O diyezlerle ben bu nitelikleri birbirinden ayırt edebilirim. Ben bunu böyle okurken, bunu byte byte böyle okurken.
+
+246
+00:49:13,556 --> 00:49:17,576
+Ne zamanki bir diyez geldi, anladım o zaman burada benim niteliğim sonlandı.
+
+247
+00:49:18,376 --> 00:49:21,255
+Diyez'den sonraki niteliği artık okumaya başlayacağım.
+
+248
+00:49:21,876 --> 00:49:26,416
+Aynı kayıt içerisindeki nitelikleri birbirinden ayırmak için.
+
+249
+00:49:26,695 --> 00:49:33,276
+İşte böyle intuitif, sezgisel olarak böyle birçok düzenlemeler burada yapabiliriz.
+
+250
+00:49:33,276 --> 00:49:35,675
+İşte burada bunlardan bahsediyor.
+
+251
+00:49:35,856 --> 00:49:37,336
+Yani ben de şöyle bir okuyayım.
+
+252
+00:49:38,516 --> 00:49:41,556
+Buradan, slotted pages, header contents, number of...
+
+253
+00:49:41,556 --> 00:50:00,000
+Record Entries. Mesela şurada Block Header var. Burada değişkin uzunluklu kayıtlara, değişkin uzunluklu kayıtlar olduğu için kayıtlarımızın da offset adreslerini tutuyoruz.
+
+254
+00:50:00,000 --> 00:50:21,680
+Mesela burada. Yani o kaydın o sayfa içerisinde nerede bulunuyorsa, o sayfa içerisinde nerede bulunuyorsa, o offset adreslerini tutuyoruz. O blok içerisinde işte kaç tane kayıt var ve boş alan kısmı ve her bir kaydın da büyüklüğü ve lokasyonu.
+
+255
+00:50:28,000 --> 00:50:37,639
+in the header must be updated. Pointers should not be point directly to record. Instead, they should point to the entry of the record header.
+
+256
+00:50:38,132 --> 00:50:46,832
+Bunu daha fazla detaylandırmayacağım. Daha iyi şekiller benim sistem gerçeklemede bunu, şimdi o sunuyu da açmayayım zaman harcamayalım.
+
+257
+00:50:48,152 --> 00:50:58,912
+Ama burada amacımız yeni gelen kayıtları şu boş olanlara yerleştirmek, yeni gelen kayıtlar olacak mesela.
+
+258
+00:50:58,912 --> 00:51:06,072
+Bu kayıtları buraya yerleştirmek ve bu kayıtlara erişirken de bu blok içerisinde burası.
+
+259
+00:51:06,132 --> 00:51:33,912
+bloğumuz. Bu blok içerisinde de bunları erişirken de şu an offset adresleri üzerinden bu kayıtlara erişmek. İşte bize şey işte indeksten gelen bilgi şu anda bize kapalı kutu olan indeksten gelen bilgi diyor ki senin aradığın kayıt şu blokta ve şu ID'li bir kayıt. O zaman biz bu bloğa geldikten sonra yani sayfanın 10. bloğu mesela sayfanın 10.
+
+260
+00:51:34,132 --> 00:52:02,132
+bloğuna gelmek kolay. 10 çarpı 8 kilobayt. Çünkü sabit uzunluklu olduğu için disk sayfası, o noktada bu bloğuna gelmek kolay. Ama bu bloğun içerisindeki kayıtlara gelmek için artık sabit uzunluklu olmadığı için şöyle bloğun içerisindeki böyle bir indeksle, yani ufak bir indeksle, bu biraz önceki bizim ana konumuz olan indeksten daha farklı. Ama aynı mana. Yani şuradaki, burada diyor ki bana, şurada şu kayıt.
+
+261
+00:52:02,132 --> 00:52:25,752
+kaydım indeksi bu. Yani buradan şu offset'e gideceksin diye, işte ulaştım kaydıma. Kayıt burada. O kaydın içerisindeki niteliklere de, işte şuradaki gibi böyle eşyan bu, bu da kaydın içerisindeki organizasyon. Yani böyle organizasyon içerisinde organizasyonlar. Ama hani ana fikri basit bir şekilde organizasyonlarımız var.
+
+262
+00:52:25,752 --> 00:52:26,752
+Evet.
+
+263
+00:52:28,788 --> 00:52:39,667
+Şimdi bunlar böyle tipik olarak dosyanın ve dosya içerisindeki kayıtların ve kayıt içerisindeki niteliklerin böyle düzenlenmesi.
+
+264
+00:52:41,347 --> 00:52:48,708
+Fakat tabii burada işte dediğimiz gibi biraz önce binary large objeleri olabilir, karakter large objeleri olabilir.
+
+265
+00:52:50,099 --> 00:52:57,920
+Bunlara alternatif olarak, biraz önceki organizasyonumuza alternatif olarak böyle farklı organizasyonlar gerekiyor.
+
+266
+00:52:57,920 --> 00:53:10,260
+Bunun en güzel örneği, bizim bölümde kullandığımız, yani bu derste kullandığımız PJSQL olduğu için, burada PJSQL'in TOAST denilen bir organizasyonu var.
+
+267
+00:53:11,579 --> 00:53:14,920
+Yani burada, eğer binary large bir obje...
+
+268
+00:53:15,123 --> 00:53:29,403
+Obje varsa, mesela bir text objesi var ise veya işte bir image var ise mesela, binary large obje var ise onu ayrı bir alanda tutarak o alana bir pointer veriyor.
+
+269
+00:53:29,903 --> 00:53:37,683
+Ve sabit uzunluklu kayıtla gerçekleştiriyor bunu. Değişkin uzunluklu bir dosya olmuyor. Sabit uzunluklu bir dosyayla gerçekleştiriyor.
+
+270
+00:53:43,123 --> 00:53:46,063
+eğer bir sorgu ile övrülüyor, oradan çekebiliyoruz.
+
+271
+00:53:46,675 --> 00:54:12,816
+Evet, şimdi dosya tiplerine bakalım. Yani arka planda demek ki dosyamızın, tablomuz dosya. Dosyanın içerisinde böyle sayfalar var, disk sayfaları var. O disk sayfaları içerisinde kayıtlarımız var. O kayıtlar da niteliklerden oluşuyor. Bunlar da sabit uzunluklu veya değişikli uzunluklu oluyorlar. Ana fikir olarak böyle bir şeyden bahsettik.
+
+272
+00:54:14,675 --> 00:54:16,356
+Dosyalarımız ne tip dosyalar var?
+
+273
+00:54:16,796 --> 00:54:17,796
+HIP dosyası.
+
+274
+00:54:18,804 --> 00:54:45,644
+sequential dosya, multi-table clustering file organization, B plus 3 dosya organizasyonu ve hashing. Evet, günümüzde hangi sistem olursa olsun, SQL sistemi, NoSQL sistemi, PJSQL, MongoDB, Oracle, aklınıza ne geliyorsa, bütün arka planda bu dosyalarımızın kullanılan nihayetinde bir makine kullanıyoruz, bir bilgisayar, bir dosya var.
+
+275
+00:54:46,804 --> 00:55:14,784
+Bu tip dosyalar var. İşte bu dosyaları anlamak lazım. Burada bunların özellikleri neler? Çünkü bunların avantajları ve dezavantajları var. Yani ilişim tarzına göre, işte kaydın biraz önceki gibi mesela tanımladığım katalog şemasına göre avantajlı oluyor mesela işte bir plastik kullanmak veya ilişim tarzına göre heşin kullanmak avantajlı oluyor. İşte bunları iyi bilmek gerekiyor.
+
+276
+00:55:14,804 --> 00:55:21,423
+Yani bir admin için mesela, işte administration noktasında bunlar sistemin detayları.
+
+277
+00:55:22,384 --> 00:55:26,983
+Çok yani şeyin, konunun çok başı, çok kapsamlı bir konu başlıyor burada.
+
+278
+00:55:27,324 --> 00:55:38,583
+Şimdi HIP dosyası, bu dosyalar, bu tip dosyalarda kayıtlar sıralı değil, herhangi bir yere yazılabilir.
+
+279
+00:55:39,423 --> 00:55:42,784
+Boş alanlar, işte farklı şekiller.
+
+280
+00:55:42,804 --> 00:56:09,264
+takip edilebilir veya boş alan olmayacak şekilde sıkıştırılabilir. Biraz önce gördük mesela. Boş alanlar işte böyle link listlerle olabilir veya map tarzında yani bütün o dosyadaki boş alanları işaret edecek header'ı da bir dizin şeklinde. Bunların şekilleri var ama zannedersem göstermiyor ileride.
+
+281
+00:56:10,804 --> 00:56:18,764
+Veya karşında çıkarsa şey yaparız. Evet, hep öyle. Sequential zaten ileride bunları açıklıyoruz. Şöyle hızlıca okuyalım, oraya gidelim.
+
+282
+00:56:18,764 --> 00:56:24,624
+Store records in sequential order, based on the value of the search key of each record.
+
+283
+00:56:24,980 --> 00:56:31,199
+Her bir kaydın bir niteliğine göre bunları sıralı olarak tutuyor. Sequential.
+
+284
+00:56:32,099 --> 00:56:38,500
+Bu kelime biraz böyle aldatışıyor. Çünkü çok bütün kaynaklarda aynı değil.
+
+285
+00:56:38,699 --> 00:56:46,539
+Burada böyle geçmiş ama sorted file, sıralı dosya, ordered, yani sıralanmış.
+
+286
+00:56:47,000 --> 00:56:50,319
+Sorted, ordered veya burada da sequential geçiyor.
+
+287
+00:56:51,923 --> 00:56:58,983
+Yani şu çok genel kabul gören bir şey ama şu çok genel kabul gördüğünü ben düşünmüyorum.
+
+288
+00:56:59,144 --> 00:57:04,144
+Yani siz de belki şey yapar. O yüzden aldatıcı olmasın ama SecureNiş'e de bu ders kapsamında böyle tanımladık.
+
+289
+00:57:04,144 --> 00:57:12,024
+Yine multi-table clustering file organization records of several different relations can be stored in the same file.
+
+290
+00:57:12,923 --> 00:57:17,044
+Motivation, store related records on the same block to minimize I.O.
+
+291
+00:57:17,523 --> 00:57:41,063
+Mesela, evet. Yani şu ana kadar bahsettik ama normalde en basit, düz diyelim tasarımımız ne? Benim ilişkisel model tablolarım neyse, hani öğrenci, department, project, işte ne dedik, kampani veritabanında neler vardı? İşte o her bir gördüğünüz tablo için arkada bir dosya var.
+
+292
+00:57:41,715 --> 00:57:48,715
+Böyle olabilir. Tamam, düz mantık böyle. Çoğu zaman da böyle olduğunu söyleyebiliriz. Tamam. Ama arka planda...
+
+293
+00:57:49,844 --> 00:58:16,504
+Ben eğer sistemimizin iş yükü, workload denilen iş yükü, eğer öğrenciyle department tabloları çok fazla join ediliyor ise, yani çok fazla birleşim yapılıyorsa, yani iş yükümüzde, yani tipik sorgulama profiline bakıldığı zaman sistemin çoğu zaman hep join'lar bunun üzerine geliyorsa, ya o zaman ben bu dosyaları böyle birleştirmek ne demek? Birleştirmek masraflı bir şey.
+
+294
+00:58:17,844 --> 00:58:25,544
+Özünde bunun kartezyen çarpım var. Kartezyen çarpım da bütün tapıların eşleşmesi demek.
+
+295
+00:58:26,024 --> 00:58:31,184
+İşte bunun yerine ben bu kayıtları farklı dosyalarda yazmak yerine aynı dosyaya yazayım.
+
+296
+00:58:31,624 --> 00:58:41,164
+Hatta hani bir öğrencinin işte bir departmana ait olan öğrencileri hemen departmanın sonrasına yazayım.
+
+297
+00:58:41,164 --> 00:58:45,344
+Yani departmandan sonra öğrencileri yazayım. Daha sonra diğer departmandan sonra öğrencileri yazayım.
+
+298
+00:58:45,844 --> 00:59:07,844
+dosyayı yazıyorum ama. İşte bunlara bu tip böyle kümelenmiş, multi-table clustering file organization deniyor. Buradaki maksadımız, bu tip homojen olmayan, farklı tip kayıtlar, artık uzunluktan bahsetmiyorum bakın, şeması farklı kayıtlar içeren dosyalara da böyle deniyor.
+
+299
+00:59:07,844 --> 00:59:13,364
+Heterojen, yani homojen olmayan veya işte burada bu isim takmış, multi-table clustering file organization demiş, tamam.
+
+300
+00:59:13,844 --> 00:59:23,284
+Evet, diğer bir organizasyonumuz, belki daha önemlisi, Bplus3 File Organization ve diğeri de HASHING.
+
+301
+00:59:23,284 --> 00:59:39,184
+Evet, şimdi burada ilk olarak B3'yi gördüğünüz, duyduğunuz zaman ilk aklımıza gelmesi gereken kilit mana yapısal olarak Bplus3 sıralama esastı.
+
+302
+00:59:39,484 --> 00:59:41,704
+Sıralıyoruz kayıtları, sıralama.
+
+303
+00:59:41,844 --> 00:59:44,403
+Ne demek? Küçükten büyüye, büyükten küçüğe, sıralama.
+
+304
+00:59:44,804 --> 00:59:49,724
+Hatch'te ise, Hatch organizasyonda ise, burada da sıralamama esaslı.
+
+305
+00:59:50,403 --> 00:59:53,024
+İlk olarak aklımıza gelmesi gereken şeyler bunlar.
+
+306
+00:59:53,324 --> 00:59:56,604
+Şimdi bunları nasıl sıralıyor, organizasyon nedir?
+
+307
+00:59:57,004 --> 01:00:01,024
+Zaten ön bakımı, order storage even with inserts değil.
+
+308
+01:00:01,024 --> 01:00:07,024
+Yani eklemeler ve çıkarmalarla beraber de gene sıralama korunuyor.
+
+309
+01:00:07,284 --> 01:00:21,184
+Yine sıralama konuluyor. İşte bu çok kolay bir şey değil. Yani ekleme çıkarma, ben bir dosyaya ekleme çıkarma yaptığım zaman sıraladığın korunması için ne yapmam lazım? Shift yapmam lazım.
+
+310
+01:00:21,748 --> 01:00:47,748
+Ama SHIFT çok masraflı bir şey. Yani SHIFT dediğim kaydırma. Yani araya bir kayıt geldi. Biraz önceki örneğimizde vardı ya mesela. Bütün o kayıtları kaydırıyorum. Yukarıya aşağıya. İçeride milyonlarca kayıt var. Olsun kaydır SHIFT'e. Bu sistemi böyle çok yani fiziksel olarak erişim noktasında çok hantal bir hale getiren bir şey yani. İşte o ara boşlukları.
+
+311
+01:00:48,659 --> 01:01:04,599
+Yani o bir ekleme çıkarmayla beraber veya update'lerde sıralılığı korumak için çok akıllıca bir organizasyon, bir algoritma içeriyor, bir plastiri, bir ağaç organizasyonu.
+
+312
+01:01:04,599 --> 01:01:12,599
+Bunu ikinci derste, şimdi bir ara veririz, ikinci derste göreceğiz diye düşünüyorum, haftaya olur.
+
+313
+01:01:16,659 --> 01:01:24,539
+Bu sefer kayıtlarımızı belli bir niteliğe göre dağıtıyoruz, hash ediyoruz sepetlere.
+
+314
+01:01:24,539 --> 01:01:42,279
+Ve bu sıralama esaslı olduğu için de aralık sorgularında oldukça başarılı, hash'ing ise aralık sorgularında kullanılmayacak kadar, kullanılması mümkün olmayacak derecede verimsiz.
+
+315
+01:01:44,659 --> 01:02:06,819
+İkisi de esasında çok advanced organizasyonlar. Bu ikisi de çok advanced organizasyonlar. Bir de ubiquitous denilen her yerde olan organizasyonlar. Yani bütün veri yığını olan, bir arama gerektiren, bu cep telefonumuzdan tutun, her türlü bilgi işleme ortamına kadar bir işletim sistemi olabilir.
+
+316
+01:02:08,179 --> 01:02:12,219
+Veri tabanı, veri tabanı sistemine has sadece olan veri yapıları değil.
+
+317
+01:02:12,659 --> 01:02:37,519
+Yani şu anda mesela bizim hızlı bir şekilde her yere erişmemize imkan sağlayan en dipteki diyelim, yani nihayetinde biz bir veriye eriştiğimiz zaman nereye erişiyoruz? Bir bilgisayardaki, bir diskteki bir veriye erişiyoruz. İşte en son erişme noktamızda bunun en çok hızlı bir şekilde olmasına imkan sağlayan organizasyonlar bunlar. Yani her yerde var. Yaptığımız her adımda var yani. En dibinde bunlar var yani.
+
+318
+01:02:40,659 --> 01:02:45,259
+Tabii işte burada arama tipine göre bunların avantajı ortaya çıkıyor.
+
+319
+01:02:45,259 --> 01:02:54,279
+İşte bu sıralama esaslı olduğu için belli bir aralıkta bir sorgu olduğu zaman, hani bizim dersimiz kapsamında düşünelim, çok da dağıtmaya gerek yok.
+
+320
+01:02:54,619 --> 01:03:02,299
+Mesela işte bir öğrencinin ortalaması 2 ile 2.3 olan öğrencileri arıyorum dediğim zaman mesela, burada bir aralık sorgusu.
+
+321
+01:03:08,659 --> 01:03:26,439
+GPA ortalaması üzerine, search key'im burada benim GPA, arama anahtarım GPA, arama tarzım aralık sorgusu, işte bu aramanın itiliğine göre GPA'nin itiliği üzerine bir B-plus indeksi varsa işte tam isabet. O B-3'yi kullanıyor sistem.
+
+322
+01:03:26,979 --> 01:03:34,119
+Tabii kullanıcı bunu yani SQL'in içerisinde yazmıyor tabii ki bu tamamıyla ve sistemin arka planındaki olan bir şey.
+
+323
+01:03:37,427 --> 01:04:02,447
+Sistemin arkasında olan bir şey. Ama mesela biz bir eşitlik sorgusu yaptığımız zaman da, örneğin işte 100 numaralı öğrencinin, ID'si 100 olan öğrencinin ismini eriştiğimiz zaman, işte o ID'yi 100 gördüğü zaman o hash esaslı bir erişim olması daha avantajlı oluyor veya o kullanılması ihtimali daha yüksek oluyor.
+
+324
+01:04:02,447 --> 01:04:05,427
+Evet, ana hatlarıyla dosya organizasyonlarımız böyle.
+
+325
+01:04:05,427 --> 01:04:22,087
+Şöyle, burada bunları biraz daha detaylandırıyor. Bakalım şimdi heap file organizasyonu da, records can be placed anywhere in a file where there is a free space. Records usually do not move once allocated.
+
+326
+01:04:22,576 --> 01:04:40,036
+Yani, important to be able to efficiently find free space within file. Yani, ekleme çıkarmalar oldukça hızlı. Çünkü dosyanın sonuna ekliyoruz ve arada bir compaction yapıyoruz dosyayı. Yani, ekleme çıkarma oldukça hızlı.
+
+327
+01:04:49,492 --> 01:05:09,012
+Bir tane array ile bunu, bir directory ile tutabiliriz. Yani o directory'nin her bir entriesi, o dosyanın sayfalarının dolu boş olduğunu veya içerisinde ne kadar boş alan olduğunu belirtecek şekilde bir dizin organizasyonu olabilir.
+
+328
+01:05:09,012 --> 01:05:15,032
+Each entry is a few bits to a byte and records fraction of collect that is free.
+
+329
+01:05:17,492 --> 01:05:26,992
+ne kadar boş olduğunu, o bloğun ne kadarını boş olduğunu. Ta ki işte yeni gelen kaydı hangi bloğa yerleştireceğiz ya o dizine bakıyoruz yani.
+
+330
+01:05:26,992 --> 01:05:40,332
+Veya böyle link listelerle şey yapabiliriz. Link listelerle de şey yapabiliriz. Evet. İşte bu free spaceler arada bir, hani günlük olabilir.
+
+331
+01:05:45,492 --> 01:05:57,952
+Evet, vakum operatörü var. Bunu belli bir periyotla zaten sistem yapıyor. Ama biz belli bir, yüklü bir işlem yaptığımız zaman veritabanında bunu kendimiz de vakum operatörüyle yapabiliriz.
+
+332
+01:05:58,012 --> 01:06:07,472
+Ta ki işte boş alanlar böyle sıkıştırılsın, o hip dosyaları arkada mesela sıkışık tek parça halinde olsun diye, ta ki daha yüksek performanslı çalışsın diye sistemimiz.
+
+333
+01:06:07,832 --> 01:06:13,472
+Evet, vakum yani işte böyle süpürge nasıl vakum eder, boş tozları çeker, aynı o manada.
+
+334
+01:06:13,492 --> 01:06:20,652
+tablomuzdaki o boş alanları da belli periyotlarla çekilmesi gerekiyor.
+
+335
+01:06:21,652 --> 01:06:31,812
+Evet, sequential file, yani biraz önce gördüğümüz bizim şeyler, HIP örnekleriyle esasında, sunulun başında gördüklerimiz HIP dosyasıydı.
+
+336
+01:06:32,252 --> 01:06:41,932
+Sequential file organizasyonunda, suitable for application that requires sequential processing of the entire file, the requests in the file are ordered by search key.
+
+337
+01:06:42,352 --> 01:06:48,412
+Mesela burada neye göre sıralanmış? Şu bakın, ID'ye göre bunlar sıralanmış.
+
+338
+01:06:48,884 --> 01:07:08,884
+Yani fiziksel olarak da bunlar contiguous, fiziksel olarak da böyle sıralılar. Çünkü o da ayrı bir mesele. Yani bu dosya böyle gözüküyor, tamam bunlar böyle sıralı, böyle bitişi gözüküyor ama arka plana da bunlar...
+
+339
+01:07:09,268 --> 01:07:18,508
+diskimizde farklı sayfalara dağılmış olabilirler. İşte sequential file organizasyonunda bunlar böyle tek parça.
+
+340
+01:07:19,572 --> 01:07:34,132
+olduğunu ifade ediyor. Burada tabii şimdi böyle bir organizasyonda, yani biz organizasyonu ne kadar böyle kısıtlar altına alırsak, operasyonlarımız da o nispette karmaşıklaşmaya başlıyor.
+
+341
+01:07:34,132 --> 01:07:46,492
+Mesela burada bir dilişim yaptığımız zaman pointer chainler kullanabiliriz. Yani orayı sildiysek mesela.
+
+342
+01:07:47,572 --> 01:07:57,652
+o boş alanda öyle kalıyorsa pointer zincirleriyle onları takip edebiliriz.
+
+343
+01:07:57,652 --> 01:08:01,792
+Insertion'da locate the position where the record is to be inserted.
+
+344
+01:08:03,923 --> 01:08:22,484
+If there is a free space, insert there. Yani biraz önceki gibi delete'de mesela boş alanlar varsa öyle, eğer yeni gelen kayıt o boş alanlara denk geliyorsa güzel, çok problem olmayacak. Ama eğer boş alan yoksa o zaman overflow'a bunu yazıyor bakın, shift etmiyor, shift etmedi.
+
+345
+01:08:24,084 --> 01:08:30,564
+overflow'a yazması demek ama biraz önceki o fiziksel contiguous yani şuradaki bahsettiğim, burada
+
+346
+01:08:31,188 --> 01:08:40,608
+göründüğü gibi fiziksel kontücüs olması ilk etapta tamam böyle güzel gözüküyor ama işte bunu böyle operasyonlarda muhafaza etmek kolay olmayacak yani.
+
+347
+01:08:40,608 --> 01:08:51,648
+Yeni bir tane kayıt geldi, şu araya bir tane kayıt geldi. Şöyle bir şey geldi mesela, 3222, şöyle bir şey geldi. O zaman bunu benim şu araya yerleştirmem, bunu hepsini shift etmem demek.
+
+348
+01:08:51,768 --> 01:08:58,128
+Onun yerine şunu overflow araya açıyoruz ve buraya bir tane pointer zinciriyle bunu takip ediyoruz.
+
+349
+01:08:59,188 --> 01:09:03,128
+We need to reorganize the file from time to time to restore sequential order.
+
+350
+01:09:03,228 --> 01:09:16,468
+Yani gerçekten sequential orderı, hani böyle fiziksel olarak göründüğü gibi, mantıksal olarak ben buna sequential file dedim, mantıksal bir organizasyon sağladık burada ama fiziksel değil.
+
+351
+01:09:16,907 --> 01:09:20,807
+Yani bakıldığı zaman burada fiziksel bir sıraladık yok. Çünkü burada sıra bozuldu.
+
+352
+01:09:20,807 --> 01:09:24,648
+Bakın mesela şuradan şuraya gitti, şurada da daha küçük bir kayıt var.
+
+353
+01:09:25,108 --> 01:09:27,087
+Fiziksel olarak ama mantıksal olarak...
+
+354
+01:09:27,188 --> 01:09:34,188
+dedik yani logical, mantıksal olarak sıralı. İşte belli periyotlarla bu şeyi...
+
+355
+01:09:35,188 --> 01:09:46,507
+dosyayı gerçekten sıralı yapmamız gerekebilir. İşte bunu gene vakum operatörüyle, PCSKL'de yapabiliriz.
+
+356
+01:09:46,507 --> 01:09:58,408
+Evet, diğer bir organizasyonumuz, Multi-Table Clustering File Organization. Yani birden çok tablonun aynı dosyaya yerleştirilmesi. Mesela burada bakın,
+
+357
+01:10:00,000 --> 01:10:08,500
+Instructor Department tablolarına ait şemalar aynı dosya içerisinde bir araya gelmişler.
+
+358
+01:10:08,979 --> 01:10:14,860
+Mesela bunları da bir araya getirirken tabii performans esaslı.
+
+359
+01:10:15,319 --> 01:10:23,340
+Yani Computer Science Departmanı ile alakalı olan, Computer Science Departmanı var burada.
+
+360
+01:10:28,000 --> 01:10:36,880
+Hemen Computer Science'dan sonra yazmak. Çünkü erişim bunun üzerine ne oluyor? Yani biz nasıl bir sorgu göndereceğiz?
+
+361
+01:10:37,239 --> 01:10:47,479
+Computer Science Department'ında kaç tane hoca var mesela? Computer Science Department'ındaki maaşı 7000'den büyük olanlar.
+
+362
+01:10:48,275 --> 01:11:16,275
+Bu tip sorgular veya bunlar JOIN gerektiren sorgular. Onları öğrendik değil mi JOIN ne zaman oluyor? Mesela ben bunu tek bir tavloda toplamazsam, Computer Science Department ile şuradaki, gerçi JOIN gerektirmiyor biraz önceki örneğimde çünkü Computer Science Department'ın ismi burada geçiyor da, bir ID olmuş olsa burada ekstradan. Neyse anladınız yani sonuçta JOIN gerektir...
+
+363
+01:11:16,275 --> 01:11:25,136
+Dİ zaman nihayetinde burada bunlar aynı tabloda olması durumunda performans çok önemli derecede artacak.
+
+364
+01:11:25,716 --> 01:11:28,056
+Ve bunları da tabii nasıl organize edeceğiz?
+
+365
+01:11:28,176 --> 01:11:34,836
+Computer Science kaydından sonra Computer Science'in içerisindeki hocaları hemen akabine yazmak.
+
+366
+01:11:35,176 --> 01:11:40,475
+Daha sonra da fizik departmanı fizik hocalarını yazmak olacak mesela.
+
+367
+01:11:41,876 --> 01:11:51,336
+Evet, işte bu da ayrı bir dosya, yani homojen olmayan bir dosya olmuş oldu.
+
+368
+01:11:52,916 --> 01:12:01,036
+Evet, mesela bu good for queries involving department instructor and for queries involving one single department and instructors.
+
+369
+01:12:02,215 --> 01:12:12,935
+Bad for queries involving only department. Şimdi burada tek department tablosu üzerine bir sorgularda hepsinin böyle tek tabloda olması elbette de avantajlıydı.
+
+370
+01:12:12,935 --> 01:12:15,635
+Orada bir parça biraz kaybımız oldu.
+
+371
+01:12:16,047 --> 01:12:39,127
+Instructor için de tabii böyle daha az belki oldu. Çünkü Instructor daha büyük tablo olduğu için burada şöyle bir dosyada bunu aramak daha avantajlı ama şurada aramak daha avantajlı ama burada biraz o avantajı kaybettik gibi. İşte bununla ilgili burada yorumlar var.
+
+372
+01:12:40,659 --> 01:12:50,719
+Evet. Böylece tabii buradaki şey de, kayıtlarımızda değişkin uzunluklu kayıtları netice verdi. Evet.
+
+373
+01:12:55,188 --> 01:13:01,988
+Evet, şimdi gelelim diğer bir organizasyona, partitioning.
+
+374
+01:13:02,488 --> 01:13:14,248
+Şimdi, evet, bufferdan çok kısa bas edeceğiz. Sonra ikinci chapter 14'e başlarız.
+
+375
+01:13:14,248 --> 01:13:20,748
+Şimdi bir ara verelim arkadaşlar. Evet, bir chat'e bir şey almış galiba.
+
+376
+01:13:21,363 --> 01:13:23,963
+Ara verecek miyiz? Evet, ara veriyoruz.
+
+377
+01:13:27,184 --> 01:13:28,764
+Bağlantıyı koparmıyorum.
+
+378
+01:13:29,623 --> 01:13:32,203
+Çünkü bağlanmak zorundayım malum.
+
+379
+01:13:33,144 --> 01:13:36,783
+Bir 20 dakika sonra gibi inşallah görüşürüz.
+
+380
+01:36:45,076 --> 01:36:46,176
+Evet, sesim geliyor.
+
+381
+01:36:50,547 --> 01:36:51,307
+Geliyor hocam.
+
+382
+01:36:52,188 --> 01:36:52,387
+Evet.
+
+383
+01:36:53,747 --> 01:36:54,087
+Şimdi,
+
+384
+01:36:54,527 --> 01:36:58,207
+şimdi burada o listemizdeki
+
+385
+01:36:58,207 --> 01:37:07,228
+5 tane organizasyon var. İlk 3'ünü bitirdik. Şunlar tabii ayrı sunulda. Chapter 14'te geçiyor. O yüzden bu sunuda geçmiyor.
+
+386
+01:37:09,307 --> 01:37:14,127
+Bunlar nispeten tabii daha basit organizasyonlar. Tek tablo üzerindeki.
+
+387
+01:37:14,543 --> 01:37:19,304
+düzenlemeler olmuş oluyor. Şimdi diğer bir kavramımız var, o da partitioning.
+
+388
+01:37:21,884 --> 01:37:23,183
+Şuradan okuyalım.
+
+389
+01:37:23,583 --> 01:37:29,923
+A table partitioning records in a relation can be partitioned into smaller relations that are stored separately.
+
+390
+01:37:30,676 --> 01:37:45,856
+Transaction relation, maybe partitions in Twitch'de, bizim de biraz önce, benim de verdiğim örnekte, mesela sene bazlı olarak mesela dağıtılabilir. Yani row-oriented şekilde.
+
+391
+01:37:47,316 --> 01:37:51,656
+Curious between a reason on transaction must access focus in all partitions.
+
+392
+01:37:55,188 --> 01:38:23,188
+Unless Curie has a relation such as year, 2019, in which case, only one partition is needed. Yani gene ana fikir oldukça açık herhalde. Yani biz eğer sorgumuzu mesela year esaslı, yani sene bazlı sorgular geliyor ise, bu tip sorgular geliyor ise, o zaman bunu bu sene bazlı olarak, bu tabloyu fiziksel olarak parçalarım ta ki karışık.
+
+393
+01:38:23,188 --> 01:38:47,987
+olan bu sene olarak, sene niteliğine göre karışık olan bu veriyi, bütün veriyi aramak yerine, sene bazlı olarak parçaladığım ve sorgular da sene bazlı geldiği için, hangi, işte, orada verdiği hangi sene geldiyse, onunla ilgili olan o tabloda arama yapılacak.
+
+394
+01:38:51,188 --> 01:39:12,127
+Sıralı olmayabilir. Ana parçalama yani ana hatlarıyla dosyanın parçalanması sene vazlı oldu. Her tablo gene farklı şekillerde sıralanmış olabilir veya hip dosyası olarak kalmış olabilir. Yani farklı bir durum yani sonuçta kavram olarak farklı bir şey. Sıralamadan farklı.
+
+395
+01:39:13,300 --> 01:39:37,079
+Evet, buradaki maksadımız reduces cost of some operations such as free space management. Yani boş alan takibinin daha böyle ufak şey olması. Hani gene işte ekleme çıkarmalar işte tek tabloda en çok işte son sene olan tabloda oluyorsa diğer tablolarda ekleme çıkarma olmuyor mesela.
+
+396
+01:39:41,300 --> 01:39:46,440
+onlar yer kaplamayacaklar yani. Sadece ufak bir dosyada yapacağım boş olan takibini mesela.
+
+397
+01:39:46,440 --> 01:39:57,600
+Allows different partitions to be stored on different storage devices. Translation partition for current year on SSD for older years on magnetic disk.
+
+398
+01:40:00,000 --> 01:40:27,680
+parçalamanın da zaten maksedi, sorgu hızlandırmak içindi. Partitioning'in en önemli maksadı. Böyle olunca en sık erişilen, ki geçmiş zaman noktasında, yakın geçmiş en çok erişileceği için, en çok sorgulanacağı için, o tabloları daha hızlı bir ünitede, solid state'de saklayabiliriz mesela. Bu sorgu performansını önemli oranda arttıracaktır.
+
+399
+01:40:28,000 --> 01:40:36,900
+İşte bunlar partitioning'in yani tablonun parçalanmasının böyle ana motivasyonları olmuş oluyor.
+
+400
+01:40:38,659 --> 01:40:44,320
+Zannedersam sununun son taraflarında yani parçalamanın row oryantı, kalım oryantı olabileceği noktasında.
+
+401
+01:40:45,860 --> 01:40:54,239
+Diğer bir dosya tipimiz şeyin sistemimiz içerisinde veri dosyalarımız olduğu gibi katalog dosyalarımızda önemli bir yer kaplıyor.
+
+402
+01:40:54,340 --> 01:40:56,000
+İlişkisel model için tabii bu geçen.
+
+403
+01:40:56,000 --> 01:41:24,000
+İlşkisel modelde data dictionary dediğimiz katalog dosyaları önemli bir yer kaplıyorlar. Bu katalog dosyası ne demekti onu hatırlayalım ilk olarak. Burada veri ile ilgili veri, data about data, yani işte niteliklerin şeyin, tabloların isimleri, tablolardaki niteliklerin isimleri değişken.
+
+404
+01:41:24,000 --> 01:41:37,640
+Yine, gene, view'ların, görüntülerin isimleri, tanımları ve işte yabancı anahtar, birinci anahtar gibi böyle kısıtların, bütünlük kısıtlamalarının tanımlanması.
+
+405
+01:41:37,640 --> 01:41:46,860
+Ve buna beraber fiziksel organizasyon için gerekli olan en önemli şeyler, istatistikler.
+
+406
+01:41:48,307 --> 01:42:16,307
+Bu tablo nasıl bir tablo? Hangi dosyada saklanıyor? Yani işte biraz önce gördüğünüz dosya tiplerinden sequential bir dosya mı? Hash dosyası mı? Yani sıralı mı? Sırasız mı? Keep dosyası mı? Sırasız mı? B-TRE organizasyonu mu? Hash mi? gibi bunlar performansı çok çok etkileyen, yani öyle az olsa da olur, olmasa da olur, fark etmez tarzı değil de çok çok etkileyen.
+
+407
+01:42:16,307 --> 01:42:27,728
+etkileyen kararlar, kriter şeyler yani. Ve hani hepsi arasında da işte 4-5 tane ana hatlarıyla gördüğünüz bu yapıların içerisinde bir tanesi en iyisi.
+
+408
+01:42:28,180 --> 01:42:48,579
+Her zaman en iyisi dememiz mümkün değil. Mesela neden? Çünkü biz bir tabloda bir kısıt koymuyor isek, yani bir kısıt, bir örneğin yüklem koymuyor isek mesela SELECT, FROM dedik, herhangi bir VERE bir yüklem koymuyor isek, burada bir table scan yapacağız.
+
+409
+01:42:48,579 --> 01:42:53,579
+Yani tablo taraması yapacağız. Bir kısıt olmadığı için bütün kayıtlara erişeceğiz. O zaman...
+
+410
+01:42:54,036 --> 01:43:00,036
+Bu ilişim için, index veya hash index, B3 falan bunların, bunlara,
+
+411
+01:43:00,595 --> 01:43:20,215
+gerek olmayacak veya onların üzerinden erişim yapmak zaten çok makul olmayacak. Ama bu HIP dosyası üzerinde bu erişimi veya ORDERED BY kelimesi varsa mesela, o SELECT, FROM, ORDERED BY varsa, SEQUENTIAL FILE daha iyi olacak. ORDERED BY yoksa mesela HIP FILE daha iyi olacak.
+
+412
+01:43:20,215 --> 01:43:27,435
+Yani bunları hiçbirinden bahsettiğimiz organizasyonlar hiçbirinden böyle vazgeçemem. Yani bu olmasın.
+
+413
+01:43:28,595 --> 01:43:37,315
+kullanışlı değil diyebileceğim bir şey yok. Duruma göre, sorgulama ve erişim tarzına göre bu yapılar avantajlı oluyorlar.
+
+414
+01:43:37,315 --> 01:43:42,855
+İşte optimizer dediğimiz arka planında planlayıcı var. Sistemin ana modürlerinden bir tanesi.
+
+415
+01:43:44,180 --> 01:44:02,480
+sorgu işleyici, query execution, query optimizer, planner gibi modüller var. Bu modüller bu dosya tiplerini tespit ediyor, belirliyor, ona göre veriyi organize ediyor, arka planda ve sorgunun işlenmesi sırasında en optimize gelişim yolunu buluyor.
+
+416
+01:44:03,480 --> 01:44:12,180
+Evet, yani indeksleri otomatik olarak oluşturuyor veya indeksleri kullanıyor veya kullanmıyor gibi. İşte bunlar optimizer execution.
+
+417
+01:44:12,180 --> 01:44:22,119
+konuları. Yani bu kitabın diğer chapter 15, 16 gibi konularında onlar var. İşte biz de onu veritabanı sistem gerçeklemede anlatmaya çalışıyoruz.
+
+418
+01:44:24,724 --> 01:44:34,124
+Relation Representation of System Metadata. Relation Representation on this Special Data Structures Designed for Efficient Accessing Memory.
+
+419
+01:44:34,124 --> 01:44:47,204
+Evet, burada gördüğümüz arkadaşlar katalog bilgileri. Yani buna benzer şekiller daha önce de görmüştük diye hatırlıyorum. Dönemin ilk sunumlarında, dersin ilk sunumlarında.
+
+420
+01:44:52,724 --> 01:45:06,824
+Yani tabloların ismi, tablolardaki niteliklerin sayısı ve ne tip bir organizasyonda saklanıyor ve fail sistemdeki yeri mesela bunlar olabilir. Bu dosya üzerindeki mesela indeksler.
+
+421
+01:45:07,252 --> 01:45:17,372
+İndeks metadetası, view metadetası, user metadeta, user'ın kullanıcıyla ilgili işte passwordler hangi grupta kullanıcı ismi gibi.
+
+422
+01:45:17,372 --> 01:45:30,372
+Ve gene şunu atladık da hemen şunu söylememiz lazımdı. Relation metadetaya gene bağlı olarak da attribute metadeta yani bizim o veri tabanı içerisindeki bütün nitelikler.
+
+423
+01:45:31,247 --> 01:45:50,427
+Bu nitelik hangi tabloda? Yani nasıl biz küçük bir dünya tasarımı yapıyoruz? Mesela şimdiye kadar gördüğümüz örnekler, kampanı, veritabanı, üniversite veritabanı. Orada bazı tablolar birbirine alakadardı. İşte burada da katalog tabloları içerisinde de gene ilişkisel bir model var.
+
+424
+01:45:51,764 --> 01:46:03,524
+Bunlar ilişkisel model tabloları. Yani burada Relation Metadata içerisinde o veri tabanı içerisindeki bütün tablolar, yani sistemimizdeki bütün tablolar var esasında.
+
+425
+01:46:03,956 --> 01:46:31,956
+Burada sistemdeki bütün nitelikler, yani veritabanı sistemimizdeki, o klasterdaki, yani PC, SQL şeyinde konuşursak, o dilde konuşursak, o klaster içerisinde hangi veritabanlarındaki, hangi tabloların hepsi burada var. O klaster içerisindeki bütün nitelikler, hangi tabloda, hangi nitelikler var, hepsi var. Bunlara kimler erişebilirler, erişim yolları, erişim passwordleri falan.
+
+426
+01:46:31,956 --> 01:46:41,296
+Bunların hepsinin saklandığı, böyle bir veri hakkında verinin saklandığı katalog verimi var. Bunların da tabii bunlar böyle sisteminde sıcak noktaları olduğu için
+
+427
+01:46:41,663 --> 01:47:09,663
+Yani en sık erişilen yerler olduğu için, sorgu gönderildiği zaman ilk olarak erişilen yerler bunlar mesela bir sorgu gönderdik, tablo ismi geçiyor. Hemen sorgu geri dönüyor, yanlıştı, böyle bir tablo yok diye. Kataloğa bakıyor mesela, katalogda student, işte T yazmadınız mesela, bir harfi eksik yazdınız. Daha arkada mesela optimizer falan devreye girmeden hemen işte bu kataloğa bakıyoruz, student tablosu yok diyor mesela veya...
+
+428
+01:47:09,663 --> 01:47:37,663
+Yanlış yazdığımız için böyle bir tablo bulamıyor mesela. İşte katalogdan baktı gene. Gene burada gözükmüyor ama metadata dosyaları içerisinde şey falan da var, istatistiksel bilgiler de var. Şurada yazabilirdi mesela. Yani bu attribute, o niteliğin işte değer dağılımı, o nitelikle ilgili histogramlar mesela hangi değer aralığında kaç tane var mesela. Bunları planlanıyor.
+
+429
+01:47:37,663 --> 01:47:40,043
+anlayıcının kullandığı kritik bilgiler.
+
+430
+01:47:40,884 --> 01:47:41,083
+Evet.
+
+431
+01:47:43,155 --> 01:48:00,216
+Blok, şimdi Storage Access, diskten biz şeye, burada da buffer organizasyonunu anlatıyor. Fakat buna çok çok detayına inmeyeceğiz. Hatta şöyle ana hatlarıyla sadece buffer'ı bir tanımlayalım.
+
+432
+01:48:00,216 --> 01:48:11,136
+Çünkü bunlar esas buradaki algoritmalar, buffer management içerisinde böyle kurban seçim algoritmaları falan var. Oldukça şey önemli. Sistemin en merkezi.
+
+433
+01:48:11,155 --> 01:48:18,316
+İzindeki şeyler çok önemli. Ama en azından şu sunuyu okuyalım. Buffer'ın manası nedir? Onu anlamış oluruz.
+
+434
+01:48:18,640 --> 01:48:32,539
+Blocks are units of both storage allocation and data transfer. Evet, data transfer için bizim unit of transfer. Yani transfer ünitemiz. Biraz önce der Sabah Şarkın bahsettiğim gibi, o ifade de burada geçiyor.
+
+435
+01:48:46,640 --> 01:48:47,140
+Öğreti kreuvay.
+
+436
+01:48:47,507 --> 01:48:58,248
+disk on size, size on disk yazıyor mesela değil mi? Veya işte veritabanı tablosu oluşturdum, bir tane kayıt yazdım, işte bir kayıt, bir şema mesela, bir kayıt yazdım.
+
+437
+01:48:58,648 --> 01:49:07,868
+Bakıyorum o veritabanı tablosunun işte büyüklüğüne, bununla ilgili işte administration komutları falan var gene, işte biraz önceki tablolardan bakabiliriz ona.
+
+438
+01:49:09,248 --> 01:49:15,467
+Her neyse, baktığımız zaman işte o dosyanın, o tablonun büyüklüğünü işte 8 kb.
+
+439
+01:49:15,507 --> 01:49:31,608
+anlaşılan demek ki burada hem transfer noktasında hem de adokasyon noktasında biz ne kadar bir veri yazarsak veya okursak okuyalım diskten bize belli böyle parçalar halinde onu şey yapıyor.
+
+440
+01:49:31,608 --> 01:49:43,507
+İşte 8 kilobyte. Yani 8193 byte'lık bir veri yazdığım zaman bu iki disk sayfasına karşılık geliyor. Yani bir byte fazla yazdım.
+
+441
+01:49:43,507 --> 01:49:49,268
+O zaman ikinci bilgisayfası açılıyor. Yani iki sayfalık bir tablo haline geldi şimdi benim tablom.
+
+442
+01:49:50,587 --> 01:49:56,688
+Evet, database system seeks to minimize the number of block transfers between disk and memory.
+
+443
+01:49:57,347 --> 01:49:59,507
+Evet, optimizasyon noktası. Çok önemli bir...
+
+444
+01:50:00,000 --> 01:50:03,720
+mesele. Yani çok önemli bir problem.
+
+445
+01:50:04,199 --> 01:50:09,199
+You can reduce the number of disk accesses by keeping as many blocks as possible in main memory.
+
+446
+01:50:09,739 --> 01:50:23,159
+Şimdi main memory de günümüzde oldukça arttı. Yani serverlarda mesela, gigabaytlar, terabaytlara kadar serverlarda da ana hafıza oldukça önemli bir yer kaplıyor.
+
+447
+01:50:28,000 --> 01:50:44,760
+verili bir şekilde kullanılması için diskten gelen verinin elverişli olanlarının veya kullanılması en yüksek olanlarının ana hafızada tutulması sistemin performansı için çok önemli bir kriter, çok önemli bir ölçü.
+
+448
+01:50:44,760 --> 01:50:52,560
+Mesela şimdiye kadar bahsettiğimiz veri dosyaların, dosya tiplerinde neden bahsettik mesela?
+
+449
+01:50:53,100 --> 01:50:56,000
+Veri dosyaları dedik, indeks dosyaları dedik.
+
+450
+01:50:56,000 --> 01:51:05,239
+Veya işte ne dedik? İşte katalog dosyaları dedik. Burada mesela katalog dosyaları çok sık erişilen dosyalar.
+
+451
+01:51:05,587 --> 01:51:19,068
+İşte bu çok sık erişilen, yani hangi sorgu, hangi tabloya gidiyorsak, gidelim mesela, hangi kullanıcı sorguyu gönderiyorsa göndersin, arkada mutlaka bir kataloğa uğrayıp da yola devam ediyoruz yani.
+
+452
+01:51:19,068 --> 01:51:33,587
+O zaman katalog dosyası mesela tamponda tutulması lazım, katalog dosyaları. Yani onların priori üretisi sanki daha yüksek olması gerekiyor gibi. Hatta esasında daha gerçek konuşmak...
+
+453
+01:51:33,587 --> 01:52:01,587
+gerekirse, bu tampon havuzunda, böyle parçalanıyor. İşte belli bir bölüm, tampon havuzunun, katalog dosyalarına tahsis ediliyor. Onların kendine göre bir seçim algoritması var. Yani kurban seçim algoritması var. Tabii bunlar detayları da çok şey yapmayalım. Ama nihayetinde burada, mümkün olduğunca, bu tampon havuzu içerisinde, en sık erişilen sayfaların, yani keş bu, en sık erişilen sayfaların,
+
+454
+01:52:01,587 --> 01:52:28,448
+sayfaların tamponda kopyaların tutulması lazım. Portion of main memory available to stop copies of disk blocks. Evet, bu kopya meselesi tabii sistemin karmaşıklığını çok arttırıyor bir cihetten bakılırsa. Ama performans erişim noktasında diski erişim, ana hafıza erişiminin 100 bin kat daha yavaş olması noktasında, yani çok daha yavaş, yani bir kaç saniyede yapacağın bir işi bir günde yapmak gibi.
+
+455
+01:52:28,880 --> 01:52:34,519
+Evet, bu kadar önemli bir arada uçurum var, 100.000 kat dediğim zaman. Arada böyle bir uçurum var.
+
+456
+01:52:35,180 --> 01:52:41,039
+İşte burada performans erişim noktasında buffer bize böyle bir imkan sağlıyor.
+
+457
+01:52:41,519 --> 01:52:49,720
+Ta ki en sık erişilmesi ihtimali yüksek olanları ana hafızada, yani bufferda tutarak bunu sağlıyorum.
+
+458
+01:52:49,720 --> 01:52:56,039
+Ama ortada bir de kopya hadisesi olduğu için yani aynı veri diskde de var, ana hafızada da var.
+
+459
+01:52:56,880 --> 01:53:24,619
+Ayrı başka problemler ortaya çıkartıyor. Yani veri tekrarı, consistency gibi mesela. Çünkü update ediyorum, ilk olarak ana hafızayı update ettim. Distteki veri o anda farklı. E o anda elektrik kesilirse, işte sistemin veri bütünlüğü zayi olmuş oluyor. Yani arkada bunu kurtarma dediğimiz recovery modülün bunu kurtarması lazım. Sistem tekrar ayağa kalktığı zaman, burada ana hafızada bu değişiklik yapılmış.
+
+460
+01:53:24,880 --> 01:53:45,300
+kaydı var. E bir disk de böyle değil. O zaman bunu benim geri saymam gibi. Geri sarmam gerekiyor gibi. Yani sistemin karmaşıklığı burada başlıyor esasında. Yani fiziksel olarak. Bu esasında buffer hem olmazsa olmaz bir şey hem de sistemin böyle karmaşıklığını arttıran bir modül olmuş oluyor.
+
+461
+01:53:46,484 --> 01:54:12,844
+Buffer Manager, Subsystem Responsible for Allocating Buffer Space in Main Memory. Şuradaki alanın aloket edilmesi ve bu alanın en verimli şekilde kullanılmasına imkan sağlayan bir şeyi var. Burada tahmin edersiniz, burada disk sayfaları var. Bu sayfalar işte belli bir kurala göre, yani mesela belli bir zaman sonra bu tampon havuzu doldu.
+
+462
+01:54:14,484 --> 01:54:41,664
+İstekler için burada bazı tamponlar, bazı sayfalar kurban edilmesi lazım. Sizce hangi sayfa kurban edilmesi lazım? Yeni gelen bir kayıt, yeni gelen bir sayfa, sayfa bizim transfer ünitemiz ya, yeni gelen sayfa için hangisinin kurban edilmesi lazım desek mesela, burada çok yaygın olarak kullanılan bir kurban seçim algoritması var veya protokolü var.
+
+463
+01:54:42,676 --> 01:54:44,376
+Aklınıza geliyor mu? Bu nedir?
+
+464
+01:54:47,315 --> 01:54:51,675
+Evet, bu list resimli 100 denilen LRU algoritması.
+
+465
+01:54:51,895 --> 01:55:07,235
+İşte veritabanı sistemlerinde de LRU, LRUK veya CLOCK veya daha ideal olan, daha başka veritabanı has bazı kurban seçim algoritmaları kullanılıyor.
+
+466
+01:55:07,235 --> 01:55:10,275
+Evet, şimdi bu kadar söyleyelim burada.
+
+467
+01:55:10,935 --> 01:55:15,295
+Çünkü bundan sonraki konularımız bizim sistem gerçeklemede zaten oldu.
+
+468
+01:55:15,315 --> 01:55:25,515
+çokça detaylı bir şekilde inceliyoruz. Şimdi bu sunuyu kapatıyorum. Chapter 14'ü böylece bitirmiş olduk. Şimdi
+
+469
+01:55:25,515 --> 01:55:32,895
+Chapter 14'ü açalım.
+
+470
+01:55:36,756 --> 01:55:38,195
+Hocam, şaşırı dinleyip.
+
+471
+01:55:38,556 --> 01:55:38,936
+Evet.
+
+472
+01:55:39,815 --> 01:55:42,695
+Hocam, buranın devamı sınava dahil olmaz değil mi?
+
+473
+01:55:43,556 --> 01:55:49,176
+Yok, bu işlediklerimiz sınava dahil, yani kavramlar olarak dahil ama bunlar çok kapsamlı konular.
+
+474
+01:55:49,956 --> 01:55:52,615
+Yani çok detaylı da çok zorlamayı düşünmüyoruz.
+
+475
+01:55:52,735 --> 01:56:01,896
+Yani dersimizin içeriği, ilişkisel model, SQL gibi konular malum ama burada da işte indeks ne demek, maksadı nedir?
+
+476
+01:56:01,896 --> 01:56:03,115
+Bununla ilgili böyle.
+
+477
+01:56:04,180 --> 01:56:09,180
+şeyleri de bilmemiz gerekiyor. Burada da mesela uzun bir sunu var zannedersem. Kaç sayfa?
+
+478
+01:56:11,619 --> 01:56:13,180
+Neyse gözüküyoruz şimdi.
+
+479
+01:56:15,599 --> 01:56:16,640
+Şunu bakayım.
+
+480
+01:56:17,619 --> 01:56:25,019
+86 sayfa falan. Burada da bir 15-20 sayfasını zannedersem yaparız. Biraz bir plus 3'den bahsedeceğim. Biraz da Hashing'den bahsedeceğiz.
+
+481
+01:56:26,996 --> 01:56:54,816
+Bunları, hani, şeyde, hani, PCI, admin'de mesela, bunları oluşturun. Yani bunun pratik olarak ne manası ifade etmesi noktasında anlamak için de, hani bir tablo oluşturun. Bunlar ilgili çok tutorial'lar göreceksiniz internette. Yani, indeks kullanmanın manası, maksadı. Bunlarla ilgili ufak böyle snapshot örnekler var. Onlardan da konuyu pekiştirebilirsiniz. Yani, laboratuvarda çok dahil etmedik bu konuları.
+
+482
+01:56:54,996 --> 01:56:58,256
+Çünkü dediğim gibi, hayli bir ders konusu.
+
+483
+01:56:59,516 --> 01:57:01,356
+Evet, yani burada...
+
+484
+01:57:01,356 --> 01:57:02,416
+Ekranı göremiyoruz hocam.
+
+485
+01:57:02,696 --> 01:57:04,236
+Ekranı açıyorum bir saniye.
+
+486
+01:57:16,115 --> 01:57:25,956
+Evet, şimdi temel kavramlarımız olacak, indekslerle ilgili. Sonra sıralı indeksler ve B3, Bplus3 indeksleri.
+
+487
+01:57:26,612 --> 01:57:41,811
+Dediğim gibi, bir plastik gördüğümüz zaman ilk aklımıza gelmesi gereken sıralı esaslı olması. Kayıtları her yerde sıralı göreceksiniz. Yani bir plastik organizasyon içerisinde nereye bakarsak bakalım hep sıralama göreceğiz.
+
+488
+01:57:54,612 --> 01:58:12,551
+belli bir aralık sorgusu gönderdiğim zaman sıralı bir parça soruyorum, onu arıyorum. Biraz önceki verdiğim örnekte ortalaması 2 ile 2.3 arası olanlar. O zaman böyle sıralama esaslı olan bir yapı daha elverişli olacak.
+
+489
+01:58:13,108 --> 01:58:19,748
+Aralık sorgularında bu daha elverişli. Ama eşitlik sorgularında ise hash daha elverişli.
+
+490
+01:58:20,268 --> 01:58:34,807
+Yine bu indeks yapılarının böyle büyüklüğü, küçüklüğüne baksak, hashing daha böyle kompakt bir yapı ama B-plastiri daha yer verimli noktasında biraz daha zayıf diyebiliriz.
+
+491
+01:58:34,807 --> 01:58:40,807
+Bunları yaygın kullanım noktasına baksak, B-plastiri çok daha, yani çok...
+
+492
+01:58:41,108 --> 01:58:48,228
+daha demek olabilir ama mutlaka daha yaygın olan, daha ubiquitous, daha yaygın olan bir yapı, hashing'e göre.
+
+493
+01:58:48,948 --> 01:58:55,667
+Mesela, PG SQL'de, PG 10'dan sonra, 10. versiyonundan sonra hashing teşvik ediliyor.
+
+494
+01:58:55,667 --> 01:59:03,068
+Yani yapılan iyileştirmelerle hashing sorgularda, Optimizer hashing'i seçiyor.
+
+495
+01:59:03,488 --> 01:59:07,667
+Daha iyi olan planları bulabiliyor, hashing'in olduğu.
+
+496
+01:59:09,108 --> 01:59:14,092
+P.J. Edmund 10'dan önce mesela, Hatching daha böyle teorikti. P.J. Edmund 10'da...
+
+497
+01:59:14,484 --> 01:59:21,664
+Zannedersem, 2-3 senelik bir mazisi var. Tam olarak hatırlamıyorum ama şu anda 14. versiyonu var.
+
+498
+01:59:22,504 --> 01:59:35,644
+10. versiyonu, 2-3 sene önce olsun mesela. Demek istediğim, bu yapılar zaten mazisi, ilk tanımlanması falan, tabii 80-90'lara bakıyor ama,
+
+499
+01:59:42,484 --> 01:59:59,904
+Daha 3-4 sene önce hashing çok aktif olarak hayata geçmiş. Ama B-plastiri olmazsa olmaz bir yapı. Yani core, sistemin merkezinde olan bir veri yapısı. Aksi taktirde bu veri tabanını kullanmamız mümkün değil.
+
+500
+02:00:00,000 --> 02:00:27,260
+yani B3 olmazsa, B3 olmazsa. O zaman işte bu merak uyandırması. Ya bu nedir bu? B3 ne var içinde diye biraz bakmak lazım. O yüzden bu konuları biraz da böyle dahil ettik. Yani bu veritabanı şeyine. Yoksa içerik olarak tabii biraz yani bizim veritabanı dersinin tam içeriği yani tabii genel çoğu veritabanı dersine geçiyor ama hani baksak diğer üniversitelerin.
+
+501
+02:00:28,000 --> 02:00:41,439
+Böyle sistemin sistem dersi konuları. Evet, şimdi indeksim mekanizması veriye erişimi hızlandırmak için kullanılan en önemli mekanizmalardan bir tanesi.
+
+502
+02:00:42,539 --> 02:00:50,819
+Yani biraz önceki işte partition da gene öyle. Ama bu en önemlisi, yani indeksim dediğimiz en önemli bir yapı.
+
+503
+02:00:51,819 --> 02:00:56,000
+Buradaki kavramlar, terminoloji diyelim, buradaki geçen...
+
+504
+02:00:56,000 --> 02:01:08,319
+En önemli kavramlar, SEARCH KEY, INDEX FILE ve ORDERED INDEX, HASH INDEX gibi kavramlar. Şimdi SEARCH KEY ne demek? SEARCH KEY, arama anahtarı.
+
+505
+02:01:08,787 --> 02:01:31,367
+Yani üzerinde arama yaptığım attribute to set of attributes, attribute to set of attributes, use to look up records in a file. Bir dosya içerisindeki kayıtlara look up, yani bir kayıtları arıyoruz. O kayıtları bulmak için kullandığım anahtar kelime.
+
+506
+02:01:31,828 --> 02:01:46,087
+Anahtar kelime. Şimdi bir tane sorgu söyleyeceğim. Bu sorguda biz aramayı nerede yapıyoruz, neyi arıyoruz ve indeksimiz de, bakın indeksimiz de o SEARCH KEY'in üzerine inşa ediliyor.
+
+507
+02:01:48,467 --> 02:01:55,307
+An index file consists of records called index entries of the form SEARCH KEY pointer.
+
+508
+02:01:56,180 --> 02:02:16,220
+Şimdi şu iki paragraf çok önemli. Esasında ana fikir de burada yatıyor. Şimdi ben mesela bir sorgu söyleyeceğim. SELECT, FROM, T, SELECT, TA diyelim. T, A, T tablosu. SELECT, TA, FROM, T, T tablosu. VER, T.
+
+509
+02:02:16,735 --> 02:02:33,176
+B eşittir 10 desem mesela. O T tablosunun B niteliğinde bir arama yaptım. Yani TB10 olanları arıyorum. TB10 olan kayıtların A niteliğine erişiyorum.
+
+510
+02:02:33,844 --> 02:02:52,644
+Burada eriştiğim nokta, A noktası, A niteliğine erişiyorum ama aramayı yaptığım arama anahtarı B anahtarı. Öyle değil mi? Bu noktada bir kere bu noktanın içimize sinmesi lazım. Bir sorgu da arama nerede yapıyorum? Şimdi gerçek hayatta bir sorgama düşünelim.
+
+511
+02:03:01,844 --> 02:03:12,844
+falan dedik değil mi? Veya SELECT FROM, INSTRUCTUR, WHERE, SALARY, işte büyüktür, 10.000 mesela. Burada...
+
+512
+02:03:13,376 --> 02:03:20,536
+O SELECT'in orada işte 10.000'den büyük olan instructor'ların da ismini arayalım. Instructor.name mesela.
+
+513
+02:03:20,996 --> 02:03:32,996
+Şimdi bu benim aradığım name değil. Aradığım salarisi 10.000'den büyük olan instructor'lar. O instructor'ları arıyorum. O instructor'ların name'ine erişmek istiyorum.
+
+514
+02:03:33,496 --> 02:03:38,435
+Artık aradıktan, bulduktan sonra o instructor'ları, o name'i zaten bulmuş oluyorum yani.
+
+515
+02:03:38,435 --> 02:03:41,376
+Yani demek istediğim burada aramamı...
+
+516
+02:03:41,376 --> 02:03:55,655
+WHERE'in oradaki search key, arama anahtarımız, WHERE klausu içerisinde geçen search key. İşte o search key'ler üzerindeki indeksler de bir mana ifade ediyor bu sorgu için.
+
+517
+02:03:56,047 --> 02:04:05,047
+O sorgu için, herhangi bir sorgu için, mana ifade eden, yani kıymetli olan, oradaki sorguyu hızlandıracak olan indekslerimiz,
+
+518
+02:04:05,528 --> 02:04:11,788
+VAR kılavzu içerisindeki geçen nitelikler. Çünkü onlar SEARCH keydini aramayı onun üzerine yapıyorum.
+
+519
+02:04:12,528 --> 02:04:17,007
+Bu indeks dosyaları, evet, burası oldukça önemli. Burayı anladık herhalde.
+
+520
+02:04:17,007 --> 02:04:23,268
+Yani, önceki verdiğim örneklerde, SALARY üzerine bir indeks söz konusu.
+
+521
+02:04:24,047 --> 02:04:27,127
+neyime eriştim ama neyim üzerinde bir indeks, neyimi aramıyorum ki?
+
+522
+02:04:27,539 --> 02:04:34,899
+Salary ise 10.000'den büyük olanların isimlerine erişiyorum. Artık o kayıtlara eriştikten sonra esas mesele olmuş yani.
+
+523
+02:04:35,420 --> 02:04:40,840
+Salary'e göre eriştim. Ondan sonra onların o niteliklerinden name'ine eriştim yani.
+
+524
+02:04:41,180 --> 02:04:43,779
+Name'de bir arama yapmıyorum. Salary'de bir arama yapıyorum.
+
+525
+02:04:45,520 --> 02:04:55,539
+İşte bu esas üzerine biz bir sorgu gönderdiğimiz zaman arka planda search key üzerine bir indeks var ise optimizer o indeksi.
+
+526
+02:04:55,539 --> 02:05:10,319
+kullanacak veya kullanmayı da bilir. Yani çünkü o sorguya tam hitap etmiyordur yani. Her ne kadar o search key orada geçse de. Veya bir takım başka nedenleri de var bunun. Yani işte çok detaylandırılıyor. Evet.
+
+527
+02:05:10,779 --> 02:05:21,939
+İndeks dosyalarımız elbette aramayı hızlandırdığına göre indeks dosyası ufak bir dosya olduğunu sezebiliriz. Ve gerçekten de öyle. Yani hiçbir indeks dosyası yok ki.
+
+528
+02:05:23,539 --> 02:05:30,079
+daha büyük olsun. Bu ifade tamam, genel olarak doğru ama hani tabii
+
+529
+02:05:34,804 --> 02:05:50,944
+Evet, soru yok herhalde değil mi? E tabii ufak bir dosyaysa, hani birkaç tane kayıt içeren bir dosya diyelim mesela, veritabanı dosyası, birkaç tane kayıt yazdınız. Hadi bunu indeksleyelim dediğiniz zaman o indeks dosyası o veritabanı dosyasından daha büyük olacak.
+
+530
+02:05:51,604 --> 02:05:55,923
+E çünkü içerisinde veri yok, ayrıca biz ona bir dosya daha oluşturduk yani.
+
+531
+02:05:56,340 --> 02:06:21,439
+İstisnai uç bir örnek verdim. Çoğu zaman biz zaten bir indeksi binlerce kayıt olmaya başladığı zaman, 30-40 MB'lik bir dosya olmaya başladığı zaman orada basit bir SQL sorgusunda, basit derken filtre içeren, var clause'ı içeren bir sorgu gönderdim. Gittikçe bu yavaşlamaya başlayacak.
+
+532
+02:06:22,707 --> 02:06:29,067
+Yavaşlamaya başladığı için buna bir indeks oluşturduğumuz zaman hızlandığını görebilirsiniz.
+
+533
+02:06:29,067 --> 02:06:36,167
+İşte bu ihtiyaç 30-40 MB, yani binlerce kayıttan sonra ortaya çıkmaya başlıyor.
+
+534
+02:06:36,227 --> 02:06:42,667
+Yoksa ufak, böyle bir 100 tane kayıt ekleyin, indeks koyun, işte bir şey değişmedi, bir şey değişmez yani.
+
+535
+02:06:42,727 --> 02:06:46,627
+100 Byte'lik ufak bir dosya için indeks zaten kullanmaz sistem yani.
+
+536
+02:06:47,060 --> 02:06:58,120
+Büyük bir dosya olması lazım ki o dosyada ufak bir indeks dosyası oluşsun ve o indeks dosyası ile de aramamız hızlı bir şekilde gerçekleşsin.
+
+537
+02:06:58,240 --> 02:07:03,160
+Çoğu zaman o indeks dosyası demek ki orijinal dosya, veri dosyasına göre çok daha ufak oluyor.
+
+538
+02:07:03,160 --> 02:07:11,460
+Evet, ordered indekslerde arama anahtarına göre sıralama, search keys are stored in sorted order.
+
+539
+02:07:11,891 --> 02:07:24,532
+Hashes indexlerde ise bir hash fonksiyonuna göre bu kayıtlar, search keyler bir hash fonksiyonuna göre dağıtılıyor sepetlere.
+
+540
+02:07:24,532 --> 02:07:27,172
+Sepetlere bunları dağıtıyoruz.
+
+541
+02:07:32,756 --> 02:07:51,416
+İndekslerin, tabii işte biraz önce dediğim gibi, indekslerin kullanılıp kullanılmaması ile ilgili, optimizer, planlayıcının birçok kriterleri var. Bu kriterler aynı bir dosya için de geçerli. Hani dosyanın maliyetinin kestirimi noktasında da geçerli.
+
+542
+02:08:00,756 --> 02:08:08,376
+ne mariyeti nedir, yer kaybı nedir gibi bu kriterlere göre indeksler ölçeklendirilebilir, değerlendirilebilir.
+
+543
+02:08:10,036 --> 02:08:14,176
+Şimdi ordered indexlere şöyle bir parça tanımlarına bakalım.
+
+544
+02:08:15,176 --> 02:08:19,896
+Ordered index, index entries are stored, sorted on the search key value.
+
+545
+02:08:20,476 --> 02:08:23,516
+Clustered index, yine sequential ordered file.
+
+546
+02:08:23,887 --> 02:08:35,228
+The index whose search key specifies the sequential order of the file, also called primary index.
+
+547
+02:08:35,328 --> 02:08:39,228
+The search key of the primary index is usually, but not necessarily, primary key.
+
+548
+02:08:39,228 --> 02:08:49,148
+Şimdi, clustered index dediğimiz zaman, bizim ana dosyamızda hangi nitelik üzerine index oluşturuyor isek,
+
+549
+02:08:49,423 --> 02:08:52,963
+10 nitelik ana dosyamızda sıralı.
+
+550
+02:08:54,623 --> 02:09:00,644
+İşte sequential ordered file üzerine bir indeks oluşturduğum zaman, sequential file'ı gördük değil mi?
+
+551
+02:09:01,204 --> 02:09:03,844
+Sequential file'da bir nitelik üzerine sıralıydı.
+
+552
+02:09:04,307 --> 02:09:24,268
+Yani sorted, ordered idi. İşte o nitelik üzerine search key'im, o nitelik ise buna clustered index veya primary index diyoruz. Bu noktada da gene maalesef bütün kitaplar, bütün literatür tam ittifak etmiş değil. Ama biz buradaki tanımlara gene tabi olalım.
+
+553
+02:09:32,307 --> 02:10:00,000
+üzerine bir, niteliğin üzerine bir indeks oluşturuyoruz. O nitelik, oluşturduğum indekste, ordered index, yani B plus 3'den bahsedeceğiz birazdan, ordered index, o indeksin oluşturduğum nitelik, arama niteliği, search key, eğer ana dosyada da sıralıysa, yani bu bir sequential ordered file ise, işte o zaman bu,
+
+554
+02:10:00,000 --> 02:10:28,000
+Buna clustered index diyoruz. Bunun avantajını belki şimdi tam göremiyoruz ama bu dosyada bir tane olabilir. Çünkü bir dosya bir niteliğe göre ancak sıralı olabilir. Yani aksi taktirde dosyanın birçok kopyası olması lazım. Bu da ayrı bir kaosa sebebiyet veriyor. O yüzden öyle bir şey yapmıyoruz. Bir dosyamız bir niteliğe göre sıralı olabilir. O zaman bu tanıma göre de bu dosyamızın üzerinde ancak bir tane varsa.
+
+555
+02:10:28,000 --> 02:10:47,079
+bir tane clustered index olabilir veya primary index. Secondary index ise an index whose search key specifies an order different from sequential order of the file. Non-clustered index. Yani bizim üzerinde index oluşturduğumuz nitelik, search key.
+
+556
+02:10:48,020 --> 02:11:01,860
+Bu tanımları yaptık işte. Bakın bunları kullanıyoruz. Tanımları iyi anlamak gerekiyor. O search key üzerine oluşturduğum o indeks, o search key benim ana dosyada sıralı değilse, sıralı değilse o zaman secondary indeks diyoruz buna.
+
+557
+02:11:05,555 --> 02:11:31,535
+Bunlar işte indeksin farklı indeks tipleri. Çünkü farklı performans sergiliyorlar. Bunlara isim takmakla iş hallolmuyor tabii. Yani bunları secondary ile indeksledik. Çünkü işte secondary olunca avantajı biraz azalmış oluyor. İsminden de anlaşılıyor. Yani ikinci sırada indeksler. Ama primel indeks kullanılmıyorsa veya yoksa secondary indeks kullanabilirim. Yani bu gibi şeyler.
+
+558
+02:11:33,555 --> 02:11:37,135
+Bu malzemeleri kullanmak için yaptığım isimlendirmeler oluyor nihayetinde bu.
+
+559
+02:11:37,915 --> 02:11:44,935
+Index sequential file, sequential file ordered on a search key, with a clustered index on search key.
+
+560
+02:11:45,395 --> 02:11:51,535
+Sequential file ordered on search key, with a clustered index on the search key.
+
+561
+02:11:51,535 --> 02:11:55,715
+Evet, yani şunun tamamlayıcısı esasında şu.
+
+562
+02:11:56,175 --> 02:11:59,555
+Index sequential file, şununla şu birbirini tamamlıyorlar.
+
+563
+02:12:01,555 --> 02:12:08,415
+böyle bir tarzda olan bir indeksin dosya kısmına da index sequential file diyoruz.
+
+564
+02:12:08,415 --> 02:12:15,115
+Yani o dosyamız üzerinde böyle clustered index olan bir sequential file olmuş oluyor.
+
+565
+02:12:15,395 --> 02:12:20,055
+Secundial file ordered on a search key, bir de clustered index on the search key.
+
+566
+02:12:20,395 --> 02:12:21,555
+Evet, şimdi bakalım.
+
+567
+02:12:22,515 --> 02:12:38,055
+Bunları daha sonra ileride kullanacak, karşımıza çıkacak. Şimdi dense index dediğimiz zaman, index kayıtları her bir search key için index de geçiyor.
+
+568
+02:12:38,055 --> 02:12:49,695
+Yani bir kere şunu söylemek lazım burada, bu bizim ana dosyamız. Bu ana dosyada ben şu ID üzerinde bir index oluşturuyorsam, işte sol taraftaki burası index.
+
+569
+02:12:50,095 --> 02:13:13,215
+Bu indekste ne var? Search key var, yani nitelik var, arama niteliği var ve arama niteliğini içeren kayda erişmeye imkan sağlayacak bir pointer var. Buna record ID diyoruz, record ID. Burada yazmamış ama bu record ID'lerle biz bu dosyaya erişiyoruz.
+
+570
+02:13:18,095 --> 02:13:29,576
+dosyamızdaki her bir nitelik için, her bir kayıttaki bu nitelik değeri için bir indeks kaydı oluşturuluyor ise, o zaman buna dense, yoğun indeks diyoruz.
+
+571
+02:13:30,076 --> 02:13:35,015
+Bunun da şekerlerine göre avantajı, dezavantajları olabiliyor. Yorumlara çok girmeyeceğim.
+
+572
+02:13:36,836 --> 02:13:43,775
+Ama diğer taraftan, burada mesela, bu da bir dense indeks.
+
+573
+02:13:45,171 --> 02:13:58,091
+Niye? Niye dense indeks? Şurada mesela böyle bir, bu aynı zamanda bakın nasıl bir indeks? Bir clustered indeks. Çünkü buradaki bu nitelik bakın sıralı.
+
+574
+02:13:58,899 --> 02:14:13,779
+sıralı olduğu için, bu niteliğin dosyadaki, search key'in dosyadaki vaziyeti sıralı olduğu için, buna da clustered index diyoruz. Bu dosyamızda index sequential file. Çünkü üzerinde bir tane clustered index var.
+
+575
+02:14:15,779 --> 02:14:15,959
+Evet.
+
+576
+02:14:16,659 --> 02:14:26,039
+Hocam, burada şey diyebilir miyiz? Yani primary key'i aslında bir index olarak seçmiş.
+
+577
+02:14:26,479 --> 02:14:26,939
+Tebbi.
+
+578
+02:14:27,380 --> 02:14:29,119
+Paralarında unique olan.
+
+579
+02:14:29,140 --> 02:14:39,560
+Çoğu zaman böyle olduğu için diyor, yani, also called primary index diyor, bak, the search key of primary index is usually but not necessarily the primary key.
+
+580
+02:14:40,159 --> 02:14:53,780
+Ama usually öyle, yani, çünkü primary, çünkü clustered index çok kıymetli, bunun bir takım sebepleri var, çok dağıtmayayım, clustered index kıymetli.
+
+581
+02:14:55,380 --> 02:15:08,480
+Ki üzerine de en çok primary key kullanıldığı için de bunun üzerine indeks oluşturduğunuz için de madem öyle ona o zaman primary index diyelim denmiş olabilir.
+
+582
+02:15:08,480 --> 02:15:18,880
+Bir de burada şöyle bir soru aklıma geliyor. Mesela birden çok özellik primary key içerisine dahil edildiği zaman özellik demeyin de.
+
+583
+02:15:20,435 --> 02:15:40,835
+Sütunun değeri. Yani 3 farklı sütun birleşip bir primary key'i oluşturduğu zaman. Bu tarz bu durumda yani tablonun küçük bir kopyası gibi bir şey oluşmuş oluyor. Yani bunu yapmak yerine tablodan okuyup bakmak mı daha mantıklı olur yoksa öyle kopyalar çıkartmasın?
+
+584
+02:15:41,779 --> 02:15:52,779
+Şimdi özellikle böyle düşünerek soruyu sorduğun için tebrik ederim. Çünkü soru gelmesi çok nadir oluyor ve böyle de düşünerek bir şeyi...
+
+585
+02:15:53,108 --> 02:15:59,148
+yeni bir açılım yaparak soru sormakta nadir olur. İlk olarak o yüzden tebrik ediyorum.
+
+586
+02:15:59,148 --> 02:16:04,108
+Şimdi evet, primin 2 her zaman tek nitelik olmuyor. İki nitelik, üç nitelik de olabilir.
+
+587
+02:16:04,707 --> 02:16:12,327
+Ve bu zaruri bir durum olmuş. Yani primin 2'yi ben normalde tek nitelik seçmek istiyorum.
+
+588
+02:16:12,467 --> 02:16:20,387
+Çünkü en avantajlısı böyle. Ama madem bunun tasarımını, normalizasyon falan gördük, bir takım nedenlerle primin 2,
+
+589
+02:16:21,108 --> 02:16:40,167
+3 nitelik de olabilir, 10 nitelik de olabilir. Bunun sınırı yok yani. Bunun üzerine bir clustered index oluşturacaksak, bu indeks, bu niteliklerin kombinasyonu şeklinde olacak. Bu kombinasyonu ne demek? Yani şunun bir araya gelmesiyle bir nitelik oluşmuş olsun. Bunların sıralanmasını düşünün.
+
+590
+02:16:40,543 --> 02:16:47,943
+A, B, C diyelim bu niteliklere. Gerçekten sıralanması mümkün. İlk olarak buna göre sıralayacağım.
+
+591
+02:16:49,083 --> 02:16:55,603
+Ondan sonra buna göre sıralayacağım. Bu niteliğin içerisinde buna göre sıralayacağım. Bu niteliğin içerisinde de buna göre sıralayacağım.
+
+592
+02:16:55,935 --> 02:17:23,935
+Çünkü bu tekrar ediyor. 10, 101 madem tekrar ediyor, primary key olamamış. O yüzden tekrar ediyor. Her tekrar edişinde sıralama buna göre olacak. Bu da tekrar ediyor. Bundan sonraki tekrarlarında şuna göre sıralanacak. Buraya kadar anladık herhalde. O zaman bunların kombinasyonunu esas alarak burada sıralı bir şey göreceğiz. Burada tek nitelik olunca konunun anlaşılması noktası çok kolay oluyor. Ama birinden çok nitelik içeren bir primary key...
+
+593
+02:17:23,935 --> 02:17:33,236
+olunca elbette bunların kombinasyonuna göre sıralama olacak. Bu primary indeksinde bu sefer artık şu meseleler çıkıyor.
+
+594
+02:17:33,595 --> 02:17:43,675
+Yani ABC niteliğine göre bir sıralama olacak. Yani ABC indeksi mi, BAC indeksi mi? Yoksa CBA indeksi mi? Yani 6 tane kombinasyon var.
+
+595
+02:17:44,155 --> 02:17:51,155
+Hepsi bunların farklı. Hepsi bunların performansı etkileyen şeyler. Yani konu çok detaylı gidiyor.
+
+596
+02:17:51,935 --> 02:18:18,216
+Ama bunların hepsi farklı. Ama hepsi de mutlaka bir katkı sağlayacak. Ama eğer senin dediğin primi ki bu sadece 3 tane nitelikten oluşan bir primi, bu tabloda zaten 3 tane nitelikten oluşuyor ise, o zaman bu indeks fayda sağlamaya, yani o zaman da fayda sağlar.
+
+597
+02:18:19,935 --> 02:18:44,376
+Sordum ki, eğer şöyle bir şey olsa, nitelikler 3 tane nitelik, 3'ü de primary key oluşturuyor, başka nitelik de yok. Böyle bir indeks faydalı olur mu? Faydalı olur. Neden? Neden? Çünkü böyle bir clustered indeks faydalı olur mu? Desek, clustered indeks ise faydalı olmaz.
+
+598
+02:18:44,799 --> 02:19:11,639
+Çünkü yani Clustered Index'te benim zaten dosyam o primary key'e göre zaten sıralı. Ben onu alıp tekrar burada sıralamış oluyorum. Yani manasını kaybetmiş oluyor yani. Dediğin gibi bir nokta olmuş oluyor. Ama bu çok uç bir örnek oldu. Yani çoğu zaman böyle bir durum olmuyor zaten. Evet, herhalde bir parça bir şey ifade ettim mi anlattıklarım?
+
+599
+02:19:12,275 --> 02:19:36,995
+Anladım hocam. Yani database'in içerisindeki veriler birbiriyle sıralı olmasa da, indisleri, indisi oluştururken, bir takım özelliklere göre sıralayıp, o şekilde indisi oluşturuyor arka planda. O da erişirken, ON, yani şey olarak. Tamam hocam, anladım.
+
+600
+02:19:37,327 --> 02:19:47,467
+Peki, yani burada sıralamanın erişimde hızlandırmasının maksadı ne diye sorsam, madem düşünüyorsun, düşünen bir kafa var karşımda.
+
+601
+02:19:49,167 --> 02:19:51,327
+Nasıl hocam?
+
+602
+02:19:53,007 --> 02:19:55,307
+Nasıl hocam? Bir daha tekrarlar mısın?
+
+603
+02:19:55,647 --> 02:20:00,000
+Yani bu dosyanın üzerine ben bir indeks oluşturduğum zaman sıralamanın...
+
+604
+02:20:00,000 --> 02:20:07,940
+Sıralama esası diyorum, sıralıyorum diyorum. Sıralamanın ne faydası var? Yani bir erişimde sıralamanın ne faydası var?
+
+605
+02:20:09,420 --> 02:20:15,119
+Hocam o algoritmaların biraz daha karmaşıklığıyla alakalı diye hatırlıyorum.
+
+606
+02:20:16,760 --> 02:20:18,940
+Sıralamayı kullanan hangi algoritma var?
+
+607
+02:20:20,371 --> 02:20:48,291
+Search'in algoritmaları var, işte o yüzden. Hangisi en basiti? Binary tree. Evet, binary search. Binary search'i nasıl yapıyor? Sıralı olduğu zaman ben işte ortadakine erişiyorum, daha sonra onun ortasına erişiyorum. Yani her seferinde logaritma 2N, asimptotik analize logaritma 2N olacak şekilde her seferinde setin, bu veri setinin yarısını buduyorum mesela bak. Değil mi?
+
+608
+02:20:48,371 --> 02:21:16,371
+Yani sıralı olmasının böyle çok önemli bir avantajı var. O yüzden sıralılık hızlandırıyor yani. E şimdi burada sıralı, cluster index, burada da sıralı. Eğer şemamızda primary key'den oluşuyorsa, senin verdiğin garip örneğe ben şey yapmaya çalışıyorum. O zaman dediğin gibi gerçekten bu cluster index bir manası yok. O zaman yok yani. Ama burada bir sürü nitelikler oluyor. Burada 1, 2, 3 nitelik olabilir. Yani çoğu zaman öyle primary key. O zaman bu primary key üzerine...
+
+609
+02:21:16,371 --> 02:21:24,851
+bu primary index, clustered index elbette avantajlı olacaktır. Çünkü burada sıralıyor, binary search yapabiliriz.
+
+610
+02:21:26,971 --> 02:21:36,991
+Evet. Teşekkürler hocam, bilgiler için. Diğer bir şey, şuradaki, burada,
+
+611
+02:21:43,600 --> 02:21:53,515
+Department name üzerine, şimdi burada tabii Department name şey olmadığı için şurada primary...
+
+612
+02:21:53,556 --> 02:22:15,896
+Key olduğu için şu, dense index de gerçekten kayıt sayısı kadar burada index entry'ler çıktı. Ama eğer şey ise, secondary bir key ise, yani primary key değil de primary key haricinde bir şey ise tekrarlar olacaktır.
+
+613
+02:22:21,556 --> 02:22:27,296
+Sıralı bir dosya ise o zaman bunun dense indeksi de bu şekilde olabilir.
+
+614
+02:22:28,244 --> 02:22:56,244
+Çünkü buradaki bütün farklı değerler, farklı niteliklerin her biri için bir indeks kaydı yazdık. Ama bu sıralı olmasaydı, sequential file olmamış olsaydı, yani computer science burada dağınık vaziyette olsaydı, history dağınık olsaydı, finance dağınık olsaydı, buradaki her biri kayıt için gerçekten şurada da bu indeks entryleri yazdık.
+
+615
+02:22:56,244 --> 02:23:24,044
+yazmam gerekecekti. Yani computer science bir pointer buraya gidiyor. Başka bir computer science entrisi onun pointerı da gene artık o computer science kaydı neredeyse oraya gidiyor olacaktı. İşte buna bu tip organizasyonlara dense indeksler deniyor. Bununla beraber bu esasında bu biraz böyle sparse benzediği için biraz aldatıcı olmuş. Neyse çok detaylandırmayalım. Gene dediğiniz gibi çok şey yapmayı düşünmüyorduk.
+
+616
+02:23:24,244 --> 02:23:36,783
+Şimdi burada sparse index'te ise sparse index bir kere applicable when records are sequentially ordered on search key.
+
+617
+02:23:36,783 --> 02:23:45,824
+Yani arama niteliği üzerine sıralı ise yani clustered index gibi mesela clustered indexler için geçerli demek ki.
+
+618
+02:23:49,876 --> 02:23:58,876
+Olması şartta değil ama onlar için olabilir. Yani onlar için mutlaka olması gerekiyor. Şimdi burada da...
+
+619
+02:23:59,667 --> 02:24:21,707
+Bu, buradaki bütün kayıtlar için, yani buradaki bu nitelik bizim primary key'imiz, bunun üzerine bir indeks oluşturduğumuz zaman, her bir blok için bir tane index entry yazmam yeterli olacaktır. Çünkü bunlar sıralı.
+
+620
+02:24:22,131 --> 02:24:33,831
+Yani bu indeks üzerinde bir arama yaparken, ben burada bir arama yaparken bu indeks nasıl kullanıyorum desek, yani şurada da mesela aynı şekilde sorularımız olabilirdi.
+
+621
+02:24:35,956 --> 02:24:47,276
+Burada, dediğimiz gibi binary search yaparak, hangi benim aradığım kayıt, 15-1'i arıyorsak, burada binary search yaparak buraya ulaşabiliriz.
+
+622
+02:24:47,675 --> 02:24:51,296
+Yani 2-3 adımda, 1-2 adımda buraya ulaşabilirim.
+
+623
+02:24:51,355 --> 02:25:03,436
+Tabii bunlar temsili örnekler, yani bunda milyonlarca kayıt burada olduğu zaman, burada milyon adımda arama yapmak yerine, logaritma 2 milyon adımda, yani bu şeyi çok azaltacak.
+
+624
+02:25:03,956 --> 02:25:27,216
+disk erişim sayısını çok azaltacak. Logaritma 2 adımda erişmiş oluyorum. Şimdi burada da, burada bunu bulduktan sonra sayfaya eriştim. Yani disk sayfasına, veri dosyasına erişiyorum. Ancak buradaki bu dense olanlarda tabii buradaki dosya daha büyük.
+
+625
+02:25:27,603 --> 02:25:33,423
+Bunu sipariş yapmamın ne avantajı oldu? Buradaki dosyan bir kere daha ufaldı.
+
+626
+02:25:33,907 --> 02:25:43,067
+Ancak bunu spars yapmam, ancak buradaki nitelik, search key'in ana dosyada sırada olmasıyla mümkün olabilir ki kaybolmayayım.
+
+627
+02:25:43,067 --> 02:26:01,468
+Yani şunu demek istiyorum, burada biz gene bir kayda arıyoruz. Mesela 1551'i arayayım gene. 1551 nerede olabilir dediğimiz zaman 1551 artık bu dense olmadığı için, spars olduğu için 1551 yok ama şununla şunun arasında.
+
+628
+02:26:01,907 --> 02:26:18,507
+O zaman bu bloğa gittiğim zaman 1551'i burada bulacağım. Yani bulabilirim. Çünkü şu da bana diyor ki şu mana 10111 ile 32343 arasındaki kayıtlar işte bak şurada, bu blok içerisinde diyor.
+
+629
+02:26:18,507 --> 02:26:29,507
+O zaman netice itibariyle Sparse Index olduğu zaman bunun maksadı, avantajı ne desek? Daha ufak olması. Fakat aramaların mutlaka...
+
+630
+02:26:29,907 --> 02:26:41,387
+dosyaya giderek tamamlanması gerekiyor. Yani burada 1551'in olup olmadığına hükmetmem, sonlandırmam mümkün değil. 1551'e burada gideceğim.
+
+631
+02:26:41,711 --> 02:27:04,471
+Bunu yapmama imkan sağlayan, bunun bu niteliklerin burada sıralı olması oldu. Çünkü bu blokların, şu blokların her başındaki değeri alıp buraya sakladığım zaman bunu indekslemiş oluyorum işte. Yani şu niteliği aldım, şu niteliği aldım, bu niteliği aldım. Bu da diyorum ki buna bu işaretle şu ikisi arasındaki değerler bu bölgedeler demiş oluyorum.
+
+632
+02:27:04,471 --> 02:27:09,652
+İşte bu manada zaten B-Tree'nin birazdan göreceğimiz B-Tree'nin de ana fikri.
+
+633
+02:27:09,711 --> 02:27:19,511
+olacak. Yani ana fikri derken işte indeksin ana manası da bu olacak. Evet. Soru yoksa devam ediyorum.
+
+634
+02:27:22,324 --> 02:27:49,324
+Compared to dance index, less space and less maintenance overhead for instructions and directions. Generally, slower than dance index for locating records. Neden? Önce söylediğim gibi, niye yavaş? Çünkü dance'de bir kaydın olmadığını dance index'te kalarak bitirebiliyorum ama daha az yer kaplayan Spurs…
+
+635
+02:27:49,855 --> 02:28:02,275
+İndekste mutlaka ana dosyaya gitmem lazım. Ki o bloğa erişip, o blok içerisinde, o aralıkta olup olmadığını anlamam gerekiyor. Yani şu şeklinde anlaşıldığı gibi.
+
+636
+02:28:02,275 --> 02:28:05,155
+Evet, for clustered index.
+
+637
+02:28:05,600 --> 02:28:12,479
+Spice index with an index entry for every blog in file, corresponding to the list search key value in the blog.
+
+638
+02:28:12,479 --> 02:28:20,159
+Yani her bir blogun başındaki değer bizim buradaki index entry'imiz oluyor. Evet.
+
+639
+02:28:22,995 --> 02:28:36,595
+Evet, yani tanımları iyi anladıktan sonra şeylerde bir mana ifade ediyor herhalde. Ancak o zaman bir mana ifade ediyor. İşte buradaki örneğimizde de artık secondary indexler görüyoruz.
+
+640
+02:28:37,275 --> 02:28:50,935
+Secondary indexlerde ise ana dosyada search key sıralı değil, sıralı olmadığı için de bu niteliklerin her biri farklı.
+
+641
+02:28:50,995 --> 02:29:12,695
+şekillerde dosyada farklı yerlere gidiyorlar. Yani böyle bir karmaşık bir durum ortaya çıkıyor. Yani şu şekli gördüğünüz zaman, bakın hep birbirine paralel bunlar. Bunlar paralel, bunlar paralel. Bu paralellikten anlıyoruz ki, yani bu nitelik buradaki zaten sıralı, indeks sıralı. Dosyada da sıralı olduğu için bu paralel oldu bunlar böyle.
+
+642
+02:29:13,072 --> 02:29:40,412
+Burada da bir clustered index var. Burada da bir clustered index var. Ama burada, bu clustered index değil. Ezbere söyleyebilirim yani. Bu secondary index. Çünkü bu nitelik burada sırada değil. Sırada olmadığı için bu pointerlar böyle oldu. Yani şu index entry diyor ki bana, 62.000 mesela, diyor ki 62.000 bu pointer, işte buraya gittiniz zaman 62.000'i bulacaksın. Bakalım gidelim.
+
+643
+02:29:41,072 --> 02:29:49,332
+Gerçekten öyle mi? Evet 62,000'i bulduk. 62,000 şöyle şuraya geldik. Evet 62,000 şunu işaret ediyor.
+
+644
+02:29:49,332 --> 02:29:59,891
+İşte bu şurada RID dediğimiz bir pointer var. Index record points to a bucket that contains pointers.
+
+645
+02:30:00,115 --> 02:30:03,896
+To all the actual records with that particular search key value.
+
+646
+02:30:03,896 --> 02:30:14,236
+Yani esasında burada 62.000 kaydını, 62.000 nitelik değerini içeren record ID'ler var.
+
+647
+02:30:14,596 --> 02:30:21,316
+İşte o record ID'lere gidince biz 62.000'ini içeren kayıtlara gelişmiş oluyoruz.
+
+648
+02:30:21,576 --> 02:30:22,615
+Burası ufak bir dosya.
+
+649
+02:30:23,040 --> 02:30:51,000
+Burası ana dosyamız. Bu ufak dosyada bu aramayı binary search ile yapabiliriz. Eğer işte şimdi bunu binary search ile yapamayacak kadar büyük ise bu dosyamız, burası artık ana hafazaya da sığmıyorsa, şu zaman ona B plus 3 indekste organize edeceğiz. Ona geçmeden evvel de multi-level indekslerden zannedersem bahsedecek. Ben de bu sunuları ilk defa kullanıyorum açıkçası. İtiraf etmek gerek.
+
+650
+02:30:51,040 --> 02:31:03,760
+Kendi diğer kitaptan kullanıyordum bu konuyu. Başka bir veritabanı kitabından anlatıyorduk. Tabi buradaki sıra biraz daha farklı.
+
+651
+02:31:03,760 --> 02:31:18,040
+Ama evet, multilevel index artı B plus 3 zaten hedefimiz bunlardı. Bunların ana içlerini doldurmuş olduk şimdiye kadar.
+
+652
+02:31:19,040 --> 02:31:32,760
+Şu sunuda ne anlatıyor ona da bakalım. Sonra burada bırakırız. Haftaya yine online dersi yine 1 saat, 1 saat, 1 saat 15 dakika falan yapmayı düşünüyoruz.
+
+653
+02:31:33,960 --> 02:31:44,200
+Cuma günü de işte bir mazeret sınavı olacak. Mazeret raporu vermiş olan arkadaşlar Cuma günü şey yaparlar. Gelip yüz yüze sınav olabilirler.
+
+654
+02:31:45,012 --> 02:31:56,852
+Evet. Multi-leveled index ve sonrasını haftaya şey yaparız. Şu clustering non-clustering index, burada ne demiş? Konu bütünlüğü noktasında bunu da bitirelim.
+
+655
+02:31:56,852 --> 02:32:05,972
+Indices are often substantial benefits when searching for records, but indices imposes overhead on database modification.
+
+656
+02:32:07,476 --> 02:32:19,456
+When unrecorded inserted or deleted, every index on relation must be updated. Evet, indeks konusunda önemli bir dezavantaj, burası da çok önemli, belki konuya başlarken söylemem gerekiyordu.
+
+657
+02:32:19,456 --> 02:32:35,456
+İndeks bizim sorgularımızı hızlandırıyor. Tamam, çok önemli bir yapı, veri yapısı nihayetinde, disk esaslı bir veri yapısı, disk esaslı, yani B3 dediğimiz zaman veri tabanlarında disk sayfaları üzerinde bir...
+
+658
+02:32:35,476 --> 02:32:57,296
+Bir organizasyon, göreceğiz nasıl olduğunu. Bu disk esaslı, bu veri yapısı, bir veri tekrarı nihayetinde. Yani search key'in ana dosyada da var ve indeksle de geçiyor. O zaman ben burada üzerinde indeks olan bir nitelikte bir update geldiği zaman, o zaman indeksleri de update etmem gerekiyor.
+
+659
+02:32:57,695 --> 02:33:25,056
+İşte bu cihetten indeksin önemli bir dezavantajı var. Yani diğer bir dezavantajı yer kaplaması tabii ama hadi onu biraz şey yaptık, göz yumduk. Çünkü dedik ya işte %1 falan yer kaplıyor, ana dosyanın %1'i kadar falan. Ufak yani ona göre. Ama bu nokta sistemin yine karmaşıklığı veya update performansı da.
+
+660
+02:33:28,020 --> 02:33:29,739
+oldukça önemli.
+
+661
+02:33:32,060 --> 02:33:40,700
+Sequential scan using clustered index is efficient, but sequential scan using secondary index is expensive on my thick disk.
+
+662
+02:33:41,619 --> 02:33:44,899
+Evet, sequential scan dediği,
+
+663
+02:33:48,691 --> 02:33:56,131
+Sequential Scan dediğimiz, yani bütün kayıtlara, tablodaki bütün kayıtlara erişmek.
+
+664
+02:33:56,131 --> 02:34:07,891
+Şimdi, tablodaki bütün kayıtlara indeks üzerinden erişmeyi şurada düşünelim, bir de şurada düşünelim veya şurada düşünelim.
+
+665
+02:34:08,500 --> 02:34:29,799
+Veya burada düşünelim. Yani clustered indeksin üzerinden bir table scan, table scan bütün kayıtlara erişmek. Yani hiçbir filtre yok. Hangisi daha avantajlı diye şey yapsak. Hatta en avantajlısı hiçbir indeks kullanmadan tablodaki bütün kayıtları taramak olacak.
+
+666
+02:34:30,515 --> 02:34:46,175
+Ama bir aralık sorgusu dediğimiz zaman, sequential scan ile onu esasına kastediyor. Yani belli bir aralıktaki kayıtlara erişmek istediğimiz zaman, bu cluster indeks bana çok fayda sağlayacak. Çünkü bu aralığın başındaki değeri bulmama imkan sağlıyor hızlı bir şekilde.
+
+667
+02:34:46,868 --> 02:35:08,087
+Yani daha ufak olması noktasında imkan sağlıyor. Ondan sonra burada yani kapağı buraya attıktan sonra burada sekenş olarak erişimi yapabilirim. Ama aralık sorgusunda bu şu secondary indeksler maalesef bu noktada aralığın artması nispetinde avantajını kaybedecek.
+
+668
+02:35:14,868 --> 02:35:29,308
+Random Access olarak erişmem lazım. Tabii Random Access, Second Access'den daha masraflı. Yani Second Access, birbirine bitişik olan kayıtlara, fiziksel olarak birbirine bitişik olan kayıtlara erişmek demek.
+
+669
+02:35:29,780 --> 02:35:53,659
+Ama yani şurada mesela şu bölgeye erişiyor olsam o SECURIC ACCESS. Ama farklı bölgelere erişiyor olsam böyle bu şekilde görüldüğü gibi belli bir aralıktaki RANDEM ACCESS'ler bu SECONDARY INDEX'in de maliyetini aralığın büyüklüğü nispetinde azaltıyor. Avantajını azaltmış oluyor.
+
+670
+02:35:53,659 --> 02:35:54,299
+Evet.
+
+671
+02:35:55,827 --> 02:36:17,387
+Şimdi bu B3'den önce Maltı Lava İndeksi burada tanımlıyor. Bu konuyu haftaya bırakalım. Zaten B3 ile ilgili birkaç örnekle konuyu bir parça pekiştirip zaten dersimizi bitireceğiz. Evet, sorusu olan yoksa dersi bitireceğim.
+
+672
+02:36:22,611 --> 02:36:23,391
+Teşekkür ederiz hocam.
+
+673
+02:36:24,252 --> 02:36:26,511
+Evet, kolay gelsin. İyi çalışmalar diliyorum.
