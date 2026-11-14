@@ -1,0 +1,3507 @@
+1
+00:00:12,980 --> 00:00:14,780
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:15,800 --> 00:00:16,820
+Beni duyabiliyor musunuz?
+
+3
+00:00:20,756 --> 00:00:21,716
+Geliyor hocam.
+
+4
+00:00:22,356 --> 00:00:23,236
+Teşekkürler.
+
+5
+00:00:25,335 --> 00:00:27,455
+Tamamdır. Şimdi bir iki dakikaya başlayacağız.
+
+6
+00:01:06,483 --> 00:01:12,780
+Evet, bu.
+
+7
+00:01:21,555 --> 00:01:22,995
+Can you guys see my screen?
+
+8
+00:01:25,176 --> 00:01:26,115
+Okay, good, thank you.
+
+9
+00:01:27,295 --> 00:01:28,275
+Welcome to the lecture.
+
+10
+00:01:28,816 --> 00:01:34,495
+We will continue our lecture with the data processing in data mining.
+
+11
+00:01:35,175 --> 00:01:45,536
+In data mining, one of the most fundamental processes is to prepare the data for modeling.
+
+12
+00:01:48,308 --> 00:02:05,768
+So, in a typical process, data pre-processing is, in a data mining process, data pre-processing is one of the most time-consuming part of the data mining applications.
+
+13
+00:02:06,848 --> 00:02:13,608
+The data in real world are not clean, and when you get raw data,
+
+14
+00:02:14,015 --> 00:02:34,316
+Bu da çok fazla bir şey, çok fazla bir şey, birçok.
+
+15
+00:02:34,804 --> 00:02:59,804
+...
+
+16
+00:02:59,967 --> 00:03:27,471
+Bu da bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bilgilerin bil
+
+17
+00:03:27,472 --> 00:03:29,472
+ve bu da.
+
+18
+00:03:51,316 --> 00:03:58,316
+ve
+
+19
+00:04:11,795 --> 00:04:18,375
+Bu bölümde bu bölümde, neden bu bölümde nefreti yapıyoruz?
+
+20
+00:04:18,375 --> 00:04:22,415
+Öncelikle, ilk bölümde, ilk bölümde,
+
+21
+00:04:22,415 --> 00:04:26,235
+nefreti ve bu bölümde,
+
+22
+00:04:26,235 --> 00:04:29,055
+nefreti ve bilgiyebilirsiniz?
+
+23
+00:04:29,055 --> 00:04:33,216
+Öncelikle, bu bölümde nefreti yapıyoruz.
+
+24
+00:04:33,216 --> 00:04:35,836
+Çünkü, bu bölümde,
+
+25
+00:04:35,836 --> 00:04:37,836
+aynı bölümde.
+
+26
+00:04:38,291 --> 00:04:41,072
+pre-processing tasks.
+
+27
+00:04:41,931 --> 00:04:45,451
+Some of them may be more clean and ready for modeling.
+
+28
+00:04:45,572 --> 00:04:49,831
+Some of them may be less clean or ready.
+
+29
+00:04:50,251 --> 00:04:52,831
+So you would have to plan that process.
+
+30
+00:04:53,363 --> 00:04:58,683
+But before that you need to understand the distribution of the data
+
+31
+00:04:58,683 --> 00:05:04,283
+or the tendencies of the data points.
+
+32
+00:05:04,283 --> 00:05:11,524
+So those will help you understand if you need a specific type of data pre-process.
+
+33
+00:05:13,716 --> 00:05:15,755
+Also, we will discuss data cleaning.
+
+34
+00:05:15,956 --> 00:05:21,375
+There are some techniques that we use for cleaning data, data integration and transformation.
+
+35
+00:05:22,456 --> 00:05:27,936
+And we will discuss data reduction as a separate lecture next week.
+
+36
+00:05:28,495 --> 00:05:33,975
+But that is also an important part of data pre-processing task.
+
+37
+00:05:34,836 --> 00:05:40,515
+This is prioritization and we will finish the lecture for today with these topics.
+
+38
+00:05:43,572 --> 00:05:45,931
+In real world data is.
+
+39
+00:05:46,420 --> 00:06:08,040
+Dirty. I'm sure you have also analyzed some data from real-world applications. Maybe you may analyze some data on Kaggle or you collect yourself, but you will notice something that the data that you originally obtained or the raw data is not ready for modeling.
+
+40
+00:06:08,040 --> 00:06:13,759
+If you try to model it with some algorithm, artificial neural networks or...
+
+41
+00:06:13,759 --> 00:06:29,620
+ve, you know, random words, or any model, you will see some errors. And that is typical. Because the typical data formats may have different types, missing values.
+
+42
+00:06:30,163 --> 00:06:33,943
+İngoştireli, orçantı values,
+
+43
+00:06:34,584 --> 00:06:35,663
+birçok noise.
+
+44
+00:06:36,103 --> 00:06:37,163
+Bu, bu, bu, bu, bu,
+
+45
+00:06:51,091 --> 00:06:53,091
+Bu konuda bir şeyin bir şeyin var.
+
+46
+00:06:53,091 --> 00:06:59,091
+Bu konuda bir şeyin var.
+
+47
+00:06:59,091 --> 00:07:01,091
+Bir şeyin var.
+
+48
+00:07:01,091 --> 00:07:13,091
+Bu konuda bir şeyin var.
+
+49
+00:07:13,363 --> 00:07:19,823
+So, some of these reasons may lead to incomplete or inconsistent data.
+
+50
+00:07:21,103 --> 00:07:29,743
+And also some fields or features you will notice that when you observe may contain errors or outliers.
+
+51
+00:07:29,743 --> 00:07:33,743
+For instance, you don't expect any person to...
+
+52
+00:08:00,947 --> 00:08:09,307
+Although they disperse from the average of the data distribution, they are not errors.
+
+53
+00:08:10,048 --> 00:08:16,807
+So outliers are typically valued points, but errors are not.
+
+54
+00:08:18,067 --> 00:08:18,947
+Let me give an example.
+
+55
+00:08:19,548 --> 00:08:25,807
+For instance, a person can live age up to, let's say, 120.
+
+56
+00:08:26,483 --> 00:08:46,539
+Bu bir normal bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir insanın bir
+
+57
+00:08:48,019 --> 00:08:52,299
+Someone having age of negative 10 is impossible.
+
+58
+00:08:53,000 --> 00:08:54,399
+Okay, that's not feasible.
+
+59
+00:08:54,599 --> 00:08:56,720
+That's something that must be an error.
+
+60
+00:08:57,299 --> 00:09:01,419
+Or an age that contains 5,990.
+
+61
+00:09:02,039 --> 00:09:03,819
+So nobody can live that long.
+
+62
+00:09:03,940 --> 00:09:05,399
+So that's not possible.
+
+63
+00:09:06,079 --> 00:09:08,559
+So those are errors, but outliers.
+
+64
+00:09:09,139 --> 00:09:34,379
+Bu, bu
+
+65
+00:09:34,451 --> 00:09:36,831
+However, this is not always a good idea.
+
+66
+00:09:37,991 --> 00:09:42,951
+So outliers also provide information for the modeling.
+
+67
+00:09:43,511 --> 00:09:47,011
+So sometimes we remove, sometimes we don't.
+
+68
+00:09:47,211 --> 00:09:52,552
+It depends on the size or the number of outliers and how much they affect the modeling.
+
+69
+00:09:53,291 --> 00:09:59,932
+If there are few outliers, removal of those outliers may not impact.
+
+70
+00:10:00,000 --> 00:10:00,539
+A lot.
+
+71
+00:10:01,059 --> 00:10:09,399
+But actually, if there are many outliers and then you remove them, it's not going to be a good model.
+
+72
+00:10:11,179 --> 00:10:14,199
+But it also depends on the type of problem.
+
+73
+00:10:14,399 --> 00:10:24,740
+For instance, if you are trying to find anomalies, those outliers are good things because those are the ones that you want to fit the model so that you can eliminate in the future.
+
+74
+00:10:25,331 --> 00:10:27,652
+So you don't want to remove the alt-diad in that case.
+
+75
+00:10:28,312 --> 00:10:30,751
+But for some other models, it may be okay.
+
+76
+00:10:34,163 --> 00:10:39,783
+Another problem is that containing inconsistent data.
+
+77
+00:10:40,783 --> 00:11:00,123
+This is typical because any organization with a large set of applications are prone to have some inconsistencies because there are some applications developed in earlier decades and those legacy systems must be maintained.
+
+78
+00:11:00,596 --> 00:11:10,096
+Ama in old days, maybe you collected some data, it was missing in the newer version of the applications, or it can be vice versa.
+
+79
+00:11:10,636 --> 00:11:18,596
+For instance, you may have some information, such as score, which may not be present in the earlier version of the...
+
+80
+00:11:20,244 --> 00:11:44,107
+Bu da bu
+
+81
+00:11:45,427 --> 00:12:08,268
+Bu, bu
+
+82
+00:12:08,596 --> 00:12:24,216
+In some applications, we also noticed that data is being incorrectly introduced to data sets from the instrument themselves.
+
+83
+00:12:24,795 --> 00:12:29,275
+You may run into some hardware problem, software problem, or maybe human errors.
+
+84
+00:12:29,635 --> 00:12:33,895
+Those lead to inconsistencies or problems in the data.
+
+85
+00:12:34,388 --> 00:12:39,608
+ve, also, some errors can happen in data transmission.
+
+86
+00:12:39,608 --> 00:12:48,427
+When you send data in packages, some of them may be lost, so you will notice some discrepancies between them.
+
+87
+00:12:48,788 --> 00:12:57,768
+Also, maybe some instruments, such as IoT sensors or some devices automatically, data generation devices,
+
+88
+00:13:00,467 --> 00:13:05,447
+ve bu konusunda
+
+89
+00:13:05,447 --> 00:13:11,467
+bu konusunda
+
+90
+00:13:11,467 --> 00:13:12,467
+ama
+
+91
+00:13:12,467 --> 00:13:22,227
+bu konusunda
+
+92
+00:13:23,860 --> 00:13:29,860
+Bu da çok fazla bilgilerin, bu da çok bilgilerin.
+
+93
+00:13:29,860 --> 00:13:35,860
+Ve bu da çok bilgilerin, bu da çok bilgilerin.
+
+94
+00:13:35,860 --> 00:13:37,860
+Bu da bu bilgilerin bir bilgilerin.
+
+95
+00:13:43,443 --> 00:13:51,443
+Bu konuda dağmenin bir problemi var.
+
+96
+00:13:51,443 --> 00:13:59,243
+Bu konuda dağmenin bir şey var.
+
+97
+00:13:59,412 --> 00:14:05,072
+If you don't have good quality data, your mining results will be poor.
+
+98
+00:14:05,272 --> 00:14:07,951
+They don't provide any good information.
+
+99
+00:14:08,152 --> 00:14:09,752
+So it is garbage in, garbage out.
+
+100
+00:14:09,812 --> 00:14:14,172
+Whatever you put into the model, model will learn something, but that's not going to be meaningful.
+
+101
+00:14:15,752 --> 00:14:26,752
+Okay, so that's why it is important to take your time to clean the data, remove the issues that are present, and then model it.
+
+102
+00:14:28,052 --> 00:14:36,432
+Bu part is not fancy, it's usually tedious, detaylı ve sometimes boring,
+
+103
+00:14:36,432 --> 00:14:46,812
+but this is also the part where the improvements can be made drastically in the predictions.
+
+104
+00:14:46,812 --> 00:14:52,412
+And also this is where the models actually learn the data.
+
+105
+00:14:53,172 --> 00:15:05,372
+ve en normalde data mining sürekli, 70% de her zaman, her zaman, her zaman, bu kadar da pre-processi.
+
+106
+00:15:05,372 --> 00:15:10,812
+Bu bir de büyük bir süreçte de zaman, bir süreçte de zaman, bir süreçte de.
+
+107
+00:15:11,604 --> 00:15:19,004
+Bu da modeli çok iyi, bu da çok önemli değil.
+
+108
+00:15:19,004 --> 00:15:25,604
+Çünkü, bu da 10% kadar kadar da bir süreçte kadar daha fazla olmalı.
+
+109
+00:15:25,604 --> 00:15:30,004
+Çünkü modeli veya algoritmasın çok daha iyi olduğunu düşünüyorum.
+
+110
+00:15:30,004 --> 00:15:36,203
+Bu, bu problemlerle baktığınızda, ne kadar da modeli var.
+
+111
+00:15:36,203 --> 00:15:38,203
+Bu, ilimine de var.
+
+112
+00:15:38,548 --> 00:15:45,548
+Bu yüzden bu kadar çok fazla zamanı
+
+113
+00:15:55,988 --> 00:16:08,588
+We usually, in the data preprocessing phase, collect data, transform it, clean it, and then transform and load it to a central repository.
+
+114
+00:16:08,588 --> 00:16:15,208
+It's usually a data warehouse where all the analysis and data mining processes take place.
+
+115
+00:16:15,948 --> 00:16:20,300
+But before you actually load the data, there are a few...
+
+116
+00:16:20,371 --> 00:16:47,371
+Senses or aspects that are important for data quality. You want it to be accurately and completely cleaned. And also, it is important to have consistency, timeliness, viewability, and data should be original. So it is not a good idea to synthetically generate data. It may be necessary sometimes, but...
+
+117
+00:16:47,668 --> 00:16:53,668
+Bu da gerçek data var.
+
+118
+00:16:53,668 --> 00:16:58,668
+Bu da bu da kalitelerde.
+
+119
+00:17:11,807 --> 00:17:17,508
+İlk bir şey yapmak için, bu bir şey yapmak için,
+
+120
+00:17:17,508 --> 00:17:24,807
+bu bir şey yapmak için,
+
+121
+00:17:24,807 --> 00:17:27,607
+bu bir şey yapmak için.
+
+122
+00:17:27,607 --> 00:17:31,107
+Bir şey yapmak için,
+
+123
+00:17:31,107 --> 00:17:33,907
+bir şey yapmak için,
+
+124
+00:17:33,907 --> 00:17:36,708
+bu bir şey yapmak için,
+
+125
+00:17:37,652 --> 00:17:53,992
+You may have multiple databases to select data from, or files, it can be integrated with any type of data set, so that you have a single version of the truth, which you use it for the modeling.
+
+126
+00:17:56,072 --> 00:17:58,432
+And that's also a key part.
+
+127
+00:17:59,923 --> 00:18:02,884
+The third phase is to transform the data.
+
+128
+00:18:03,043 --> 00:18:11,224
+When you collect the data during the data preprocessing, transformation also may be necessary.
+
+129
+00:18:12,443 --> 00:18:23,364
+Because some algorithms, actually a lot of algorithms, machine learning algorithms, need data to be normalized.
+
+130
+00:18:23,935 --> 00:18:24,935
+Çünkü,
+
+131
+00:18:24,935 --> 00:18:31,935
+birleştirme
+
+132
+00:18:31,935 --> 00:18:39,935
+daha
+
+133
+00:18:39,935 --> 00:18:42,935
+birleştirme
+
+134
+00:18:42,935 --> 00:18:43,935
+model.
+
+135
+00:18:43,935 --> 00:18:44,935
+Bu,
+
+136
+00:18:44,935 --> 00:18:45,935
+bir
+
+137
+00:18:45,935 --> 00:18:46,935
+pre-processing
+
+138
+00:18:47,124 --> 00:18:51,523
+Then once we have all this stuff done, we do data reduction.
+
+139
+00:18:52,743 --> 00:19:09,263
+This step basically involves reducing data from a large represented feature set to a smaller but equally or similarly represented insight.
+
+140
+00:19:10,003 --> 00:19:15,003
+Bu nedenle, birçok bir nedenle, birçok bir şey,
+
+141
+00:19:15,003 --> 00:19:19,003
+daha fazla data, ama aynı zamanda,
+
+142
+00:19:19,003 --> 00:19:22,003
+bu da varışan birçok,
+
+143
+00:19:22,003 --> 00:19:25,003
+bu dağılık birçok,
+
+144
+00:19:25,003 --> 00:19:30,003
+birçok, birçok,
+
+145
+00:19:30,003 --> 00:19:31,435
+birçok,
+
+146
+00:19:31,476 --> 00:19:35,516
+ve bu algoritmas ve modeli kullanmanın
+
+147
+00:19:35,516 --> 00:19:38,316
+ve gerçekçi kullanmanın birçok kullanmasını kullanmak için.
+
+148
+00:19:40,796 --> 00:19:43,516
+Şimdi, bu cleaning olarak,
+
+149
+00:19:43,516 --> 00:19:47,356
+bu konuda ve bu konuda,
+
+150
+00:19:47,356 --> 00:19:51,476
+bu konuda, bu konuda,
+
+151
+00:19:51,476 --> 00:19:52,476
+ve bu konuda,
+
+152
+00:19:52,476 --> 00:19:58,476
+bu konuda,
+
+153
+00:20:01,971 --> 00:20:29,291
+Bu da bu
+
+154
+00:20:29,779 --> 00:20:37,740
+In order to do that, we need to investigate in an unsupervised way, because that's what we want to describe the data.
+
+155
+00:20:38,660 --> 00:20:42,080
+And there are some statistical measures that help us understand.
+
+156
+00:20:43,160 --> 00:20:55,019
+We want to understand the central tendency, variations, spread, and also for each feature, we understand how the data is distributed.
+
+157
+00:20:56,627 --> 00:21:01,228
+Bu da adıdispursan,
+
+158
+00:21:01,228 --> 00:21:24,400
+adıdispursan,
+
+159
+00:21:10,195 --> 00:21:13,435
+Ve visual tools,
+
+160
+00:21:13,435 --> 00:21:14,975
+ve gerçekten de
+
+161
+00:21:14,975 --> 00:21:16,135
+usunluştiren
+
+162
+00:21:16,135 --> 00:21:18,635
+bu
+
+163
+00:21:18,635 --> 00:21:19,855
+ve
+
+164
+00:21:19,855 --> 00:21:21,195
+çok
+
+165
+00:21:21,195 --> 00:21:21,596
+data
+
+166
+00:21:21,596 --> 00:21:22,036
+points
+
+167
+00:21:22,036 --> 00:21:24,815
+çok
+
+168
+00:21:24,815 --> 00:21:25,255
+bir
+
+169
+00:21:25,255 --> 00:21:25,855
+konusunda
+
+170
+00:21:25,855 --> 00:21:26,215
+bir
+
+171
+00:21:26,215 --> 00:21:26,255
+konusunda
+
+172
+00:21:26,255 --> 00:21:26,347
+bir
+
+173
+00:21:30,836 --> 00:21:36,976
+The most simplistic measure for tendency is to calculate the mean, right?
+
+174
+00:21:37,135 --> 00:21:45,256
+You have algebraic mean measure, you get the average of all the data points for each creature, and then find the result.
+
+175
+00:21:46,196 --> 00:21:52,536
+But the mean is not always a good estimation for the central tendency.
+
+176
+00:21:53,536 --> 00:21:59,416
+mean is also subject to or sensitive to outliers.
+
+177
+00:22:00,956 --> 00:22:02,476
+Why is that?
+
+178
+00:22:02,776 --> 00:22:10,135
+Why do you think mean is not the best way to estimate the central tendency?
+
+179
+00:22:10,895 --> 00:22:14,016
+And we also have median and mode.
+
+180
+00:22:14,956 --> 00:22:19,615
+Medium is sometimes much useful measure.
+
+181
+00:22:20,724 --> 00:22:21,264
+konusunda
+
+182
+00:22:21,264 --> 00:22:21,724
+bir
+
+183
+00:22:21,724 --> 00:22:22,700
+konusunda
+
+184
+00:22:22,724 --> 00:22:23,724
+bir
+
+185
+00:22:20,276 --> 00:22:22,276
+Bu nedenle bu?
+
+186
+00:22:30,291 --> 00:22:31,392
+So, let me just recap.
+
+187
+00:22:32,031 --> 00:22:40,372
+Median is the, when you sort all the values in a feature, from beginning to end, median is the one in the middle in the sorted list.
+
+188
+00:22:41,372 --> 00:22:43,211
+Mean is the average.
+
+189
+00:22:43,831 --> 00:22:50,951
+You take all the values for each data element and then divide it by this mean.
+
+190
+00:22:51,311 --> 00:22:54,751
+You divide it by the number of items in a set.
+
+191
+00:22:55,971 --> 00:22:57,311
+Okay, that's the difference.
+
+192
+00:22:57,695 --> 00:23:07,875
+There are different versions, such as trimmed mean, or there are some weighted arithmetic mean, sample mean, or population mean, and things like that.
+
+193
+00:23:09,435 --> 00:23:14,435
+But median is the same. If you have odd value, it's the one in the middle.
+
+194
+00:23:14,895 --> 00:23:23,296
+If it is even number of values, then you take the two middle values and take the average. That becomes the median.
+
+195
+00:23:24,307 --> 00:23:30,128
+Okay, so when you have outlier, what do you think will happen to the meme?
+
+196
+00:23:46,324 --> 00:23:57,424
+Bu bir point from [öğrenci], he says that outliers might cause the mean to be not representative enough of the dataset, but mean is not affected, median is not affected by the outlier.
+
+197
+00:23:58,004 --> 00:24:02,044
+That's a good point, but if you're outliers, let me draw this.
+
+198
+00:24:25,107 --> 00:24:28,167
+Ok, let's say this is our data.
+
+199
+00:24:32,403 --> 00:24:34,104
+We have some values here.
+
+200
+00:24:43,892 --> 00:24:50,892
+Um, okay, so let me get up here.
+
+201
+00:24:56,596 --> 00:25:04,476
+So, normally, where would you expect the value to be, the average one to be located?
+
+202
+00:25:09,364 --> 00:25:17,384
+So, it would be somewhere around this region, right? Somewhere around here. You would expect that to be around here.
+
+203
+00:25:18,624 --> 00:25:29,624
+But these outliers, for instance, we may also have here. These outliers are pulling the mean from here to here as well.
+
+204
+00:25:29,923 --> 00:25:35,764
+Okay, it is pulling because when you take the average, there's huge space here between
+
+205
+00:25:36,800 --> 00:25:37,800
+konusunda
+
+206
+00:25:37,800 --> 00:25:38,800
+bir
+
+207
+00:25:38,800 --> 00:25:39,800
+konusunda
+
+208
+00:25:39,800 --> 00:25:40,800
+bir
+
+209
+00:25:40,800 --> 00:25:41,800
+konusunda
+
+210
+00:25:41,800 --> 00:25:42,800
+bir
+
+211
+00:25:42,800 --> 00:25:43,800
+konusunda
+
+212
+00:25:43,800 --> 00:25:44,800
+bir
+
+213
+00:25:44,800 --> 00:25:45,800
+konusunda
+
+214
+00:25:45,800 --> 00:25:46,300
+bir
+
+215
+00:25:36,276 --> 00:25:38,276
+ve orijinal values
+
+216
+00:25:38,276 --> 00:25:40,276
+Bu
+
+217
+00:25:40,276 --> 00:25:42,276
+Average
+
+218
+00:25:42,276 --> 00:25:44,276
+X-bar
+
+219
+00:25:44,276 --> 00:25:46,276
+Bu
+
+220
+00:25:46,276 --> 00:26:04,879
+Average
+
+221
+00:25:59,763 --> 00:26:04,043
+Alt-i'ye göre deyde deyde deyde deyde deyde deyde deyde deyde.
+
+222
+00:26:07,403 --> 00:26:07,923
+Evet.
+
+223
+00:26:08,803 --> 00:26:12,683
+Ama bu şekilde de düşüncelerinde,
+
+224
+00:26:13,203 --> 00:26:16,243
+ve deyde deyde deyde deyde deyde deyde deyde.
+
+225
+00:26:16,443 --> 00:26:21,884
+Evet, bir şekilde y'e deyde deyde deyde deyde.
+
+226
+00:26:24,563 --> 00:26:27,683
+Bu bir deyde.
+
+227
+00:26:35,731 --> 00:26:43,243
+Bu, bu
+
+228
+00:26:47,763 --> 00:26:54,683
+Bu da daha fazla adlısı veriyor.
+
+229
+00:26:58,579 --> 00:27:01,420
+Orada ilerideki, başka yerine daha fazla.
+
+230
+00:27:10,804 --> 00:27:34,316
+Bu, altıya doğru doğ
+
+231
+00:27:34,771 --> 00:27:41,771
+ve bu da aynı zamanda, bir şeyle bir şeyle bir şeyle. Bu da aynı zamanda, bir şeyle bir şeyle.
+
+232
+00:28:02,067 --> 00:28:04,748
+ve bu kadar büyük bir şekilde.
+
+233
+00:28:04,748 --> 00:28:06,107
+Bu kadar büyük bir şekilde,
+
+234
+00:28:06,107 --> 00:28:09,067
+bu kadar büyük bir şekilde,
+
+235
+00:28:09,067 --> 00:28:10,988
+bu yüzden,
+
+236
+00:28:10,988 --> 00:28:11,788
+bu kadar,
+
+237
+00:28:11,788 --> 00:28:13,067
+birçok uygulayın,
+
+238
+00:28:13,067 --> 00:28:14,827
+bu kadar daha önemli,
+
+239
+00:28:14,827 --> 00:28:17,387
+daha fazla,
+
+240
+00:28:17,387 --> 00:28:19,387
+kullanarak,
+
+241
+00:28:19,387 --> 00:28:27,307
+altyazıcı,
+
+242
+00:28:29,395 --> 00:28:36,275
+Another measure is the mode, which is the most frequent in the item.
+
+243
+00:28:36,275 --> 00:28:47,655
+And that gives some sense, but it's not always the best place for deciding the mean or median or mode.
+
+244
+00:28:49,115 --> 00:28:53,795
+Data sets, when you have some normalized or normally distributed data,
+
+245
+00:28:54,160 --> 00:28:58,160
+mean, median, ve modi olacaktır.
+
+246
+00:28:58,160 --> 00:29:13,160
+Ama, as we just talked about, when you have more outliers, this is outliers to the right, this is right skewed data, this is symmetric, this is left skewed.
+
+247
+00:29:13,160 --> 00:29:16,940
+When you have skewness in your dataset.
+
+248
+00:29:17,395 --> 00:29:44,523
+Bu, bu
+
+249
+00:29:45,556 --> 00:29:52,495
+So if they are located on the same place, it means it is symmetric or normalized, normally distributed.
+
+250
+00:29:52,915 --> 00:30:03,995
+But if it is not normally distributed or it has skewness, then in that case, mean and median are not going to be positioned at the same place.
+
+251
+00:30:05,635 --> 00:30:07,995
+There are a few other statistical...
+
+252
+00:30:27,955 --> 00:30:33,535
+So, if you remember from our last class, we discussed about boxplots.
+
+253
+00:30:38,324 --> 00:30:43,644
+Okay, we discussed about bug spots. This is SA, X, and Y.
+
+254
+00:30:45,284 --> 00:30:46,443
+From datapoint.
+
+255
+00:30:53,236 --> 00:31:05,655
+Okay, in a box plot, this region, this is min, minimum, this is q1, or 25 percentile.
+
+256
+00:31:09,715 --> 00:31:14,715
+ve bir diğer bir ışık, bu yöntem,
+
+257
+00:31:18,387 --> 00:31:21,307
+or q2, in other sense, quartile 2.
+
+258
+00:31:21,847 --> 00:31:29,967
+This is q3, or 75 percentile, and this is the max.
+
+259
+00:31:32,107 --> 00:31:36,107
+Sometimes we use this measure called IQR,
+
+260
+00:31:40,107 --> 00:31:41,827
+entire quartile range.
+
+261
+00:31:42,887 --> 00:31:45,327
+It is actually
+
+262
+00:31:45,776 --> 00:31:53,296
+Q3, the difference between Q3 minus Q1.
+
+263
+00:31:58,548 --> 00:32:02,548
+Bu iki iki üçünün birçok ilişki.
+
+264
+00:32:02,548 --> 00:32:05,548
+Bu, bu birçok ilişki ilişki,
+
+265
+00:32:05,548 --> 00:32:09,548
+bu birçok ilişki ilişki ilişki.
+
+266
+00:32:09,548 --> 00:32:17,548
+Bu, birçok ilişki ilişki ilişki ilişki ilişki.
+
+267
+00:32:17,548 --> 00:32:21,548
+Bu, birçok ilişki ilişki ilişki.
+
+268
+00:32:21,548 --> 00:32:25,548
+Bu, bu birçok ilişki ilişki.
+
+269
+00:32:26,163 --> 00:32:33,324
+So you can have a threshold for determining whether this is an outside or not, for a given data distribution.
+
+270
+00:32:39,059 --> 00:32:45,219
+Another statistical measure is to find the variance and standard deviation.
+
+271
+00:32:45,219 --> 00:33:00,219
+You already know these expressions. Variation is the average total sum of the difference between the average of the dataset, data point, and each point.
+
+272
+00:33:00,219 --> 00:33:05,419
+So this is the variance. We sum all the instances.
+
+273
+00:33:05,844 --> 00:33:13,884
+ve bu bölümde de
+
+274
+00:33:13,884 --> 00:33:14,884
+n'invitesi.
+
+275
+00:33:14,884 --> 00:33:20,284
+Bu birçok noktası var,
+
+276
+00:33:20,284 --> 00:33:31,436
+bu bölümde
+
+277
+00:33:31,763 --> 00:33:36,903
+ve n, n meaning the size of the population.
+
+278
+00:33:38,303 --> 00:33:42,783
+However, it is not always possible to know the population.
+
+279
+00:33:43,543 --> 00:33:48,903
+We typically work with a sample, and sample variance is...
+
+280
+00:33:49,491 --> 00:33:50,372
+Slightly different.
+
+281
+00:33:51,412 --> 00:33:57,291
+The calculation is the same, summing all the numbers from 1 to n,
+
+282
+00:33:57,291 --> 00:34:08,492
+and taking the squares of the differences between average and the value itself, but dividing by n-1.
+
+283
+00:34:10,051 --> 00:34:15,011
+Anybody remember or know why we divided by n-1?
+
+284
+00:34:22,003 --> 00:34:25,283
+Why don't we just divide by n? What happens if we do?
+
+285
+00:34:35,507 --> 00:34:39,247
+Let me give you an example of what is a population and what is a sample.
+
+286
+00:34:39,967 --> 00:34:49,188
+Okay, assume that you want to know the average height or average, yes, average height of males in Istanbul.
+
+287
+00:34:50,108 --> 00:34:51,667
+This is your population.
+
+288
+00:34:53,007 --> 00:34:58,788
+So, is it possible to find everybody's height, measure it, in Istanbul?
+
+289
+00:35:04,275 --> 00:35:06,076
+Orada, if so, how would you do that?
+
+290
+00:35:15,347 --> 00:35:32,887
+İmkosu, right? Çünkü, even though you may start calculating everybody, there's so many people, by the time that you get to like 1% or 2%, you will notice that some people died, some people moved out, some people born.
+
+291
+00:35:32,887 --> 00:35:42,467
+So there's no way that you can calculate or measure entire population. But do you actually need to estimate the average height?
+
+292
+00:36:07,603 --> 00:36:13,724
+Bu da aynı şey için, bu da meneğmenin uygulama, uçak bir daha da setiyle altyazı.
+
+293
+00:36:13,724 --> 00:36:18,523
+Bu da typically çalışmalarız, bir daha da samplerle çalışmalarız, çalışmalarız.
+
+294
+00:36:22,835 --> 00:36:28,955
+ve bu samplerin, n-1'e de var
+
+295
+00:36:28,955 --> 00:36:35,035
+çünkü bu varianın n'ı da varianın
+
+296
+00:36:35,035 --> 00:36:38,875
+n'ı da varianın n'ı da varianın
+
+297
+00:36:38,875 --> 00:36:42,955
+varianın n'ı da varianın n'ı da varianın
+
+298
+00:36:43,155 --> 00:36:47,155
+Bu bir konu faktörde, çünkü
+
+299
+00:36:47,155 --> 00:36:50,155
+o noktaların
+
+300
+00:36:50,155 --> 00:36:51,155
+varianlar,
+
+301
+00:36:51,155 --> 00:36:53,155
+bu konu var
+
+302
+00:36:53,155 --> 00:36:55,155
+daha küçük
+
+303
+00:36:55,155 --> 00:36:56,155
+veya daha küçük
+
+304
+00:36:56,155 --> 00:36:58,155
+bir konu var.
+
+305
+00:36:58,155 --> 00:37:05,195
+Bu konu var.
+
+306
+00:37:05,427 --> 00:37:16,491
+ve samplerin veri ver
+
+307
+00:37:17,300 --> 00:37:23,039
+In another sense, there is a reason, this concept is explained by degree of freedom.
+
+308
+00:37:23,620 --> 00:37:27,000
+So degree of freedom for sample is n minus 1.
+
+309
+00:37:27,160 --> 00:37:29,860
+It is not n, not every value can change.
+
+310
+00:37:30,280 --> 00:37:33,320
+That's why degree of freedom for sample is n minus 1.
+
+311
+00:37:33,800 --> 00:37:38,100
+Degree of freedom for a population is n.
+
+312
+00:37:38,180 --> 00:37:39,740
+That's why those are also different.
+
+313
+00:37:39,740 --> 00:37:44,520
+But in any case, you just need to know that for sample mean,
+
+314
+00:37:45,300 --> 00:37:52,260
+Sıflandırma, sınıflandırma, sınıflandırma, n-1 vs. n.
+
+315
+00:38:12,307 --> 00:38:16,307
+Bu, mesela, bir data bu şekilde,
+
+316
+00:38:34,324 --> 00:38:38,824
+Bu da %68'e kadar %68'e kadar.
+
+317
+00:39:00,403 --> 00:39:13,003
+Bu, bu, also called confidence interval, meaning that if you were to assume something that's going to happen, this is going to be 95% guaranteed in this range limit.
+
+318
+00:39:14,547 --> 00:39:29,227
+Ve bu 3 standard deviation, bu 3 standard deviation, bu 99.7%. Ve bu 6 sigma, 6 sigma, 6 sigma, 6 sigma is standard deviation.
+
+319
+00:39:29,227 --> 00:39:36,947
+Ve bu 3 right, 3 left, bu 3 is going to cover almost entire region of your dataset.
+
+320
+00:39:38,167 --> 00:39:40,747
+So these are some properties of normal distribution.
+
+321
+00:39:41,300 --> 00:39:49,100
+If your data is normally distributed, you can utilize similar information,
+
+322
+00:39:49,100 --> 00:39:50,940
+gathers similar information from the data.
+
+323
+00:39:50,940 --> 00:39:57,860
+One and other important metric that you check when you want to understand your data
+
+324
+00:39:57,860 --> 00:40:01,740
+and features relationship is the correlation.
+
+325
+00:40:01,740 --> 00:40:06,340
+And correlation between two variables.
+
+326
+00:40:06,804 --> 00:40:17,164
+İlgide bir kuralar var, yöntem bir kuralar var, ve bir kuralar var, ve bir kuralar var.
+
+327
+00:40:34,643 --> 00:40:39,083
+It also leads to increase on y1 to y2.
+
+328
+00:40:40,263 --> 00:40:43,403
+So if one changes, the other one changes as well.
+
+329
+00:40:44,483 --> 00:40:47,163
+If one changes positively, the other one also increases.
+
+330
+00:40:48,903 --> 00:40:51,063
+This is negative correlation.
+
+331
+00:40:52,163 --> 00:40:58,163
+So in this case, two variables have opposite interaction.
+
+332
+00:40:59,347 --> 00:41:10,487
+Meaning that if you increase x1 to x2 by one unit, it actually reduces y1 to y2 by some y unit.
+
+333
+00:41:11,487 --> 00:41:13,927
+So this is also possible.
+
+334
+00:41:15,187 --> 00:41:18,527
+For correlations, it can be negative, positive.
+
+335
+00:41:19,247 --> 00:41:21,107
+But what if there was no correlation?
+
+336
+00:41:21,947 --> 00:41:23,627
+In that case, what would happen?
+
+337
+00:41:24,187 --> 00:41:26,087
+What type of shape you would expect?
+
+338
+00:41:31,891 --> 00:41:33,751
+If there was no correlation.
+
+339
+00:41:43,059 --> 00:41:45,059
+Bu ne?
+
+340
+00:41:49,523 --> 00:41:57,503
+By the way, the degree of correlation, or the degree of relation, can be maximum in one.
+
+341
+00:41:58,503 --> 00:42:03,063
+What would be the range then, range for correlation?
+
+342
+00:42:03,583 --> 00:42:05,263
+What is the maximum minimum values?
+
+343
+00:42:13,588 --> 00:42:17,988
+If there is no correlation, what do you expect that correlation coefficient to be?
+
+344
+00:42:21,348 --> 00:42:22,228
+Is it going to be?
+
+345
+00:42:24,468 --> 00:42:26,388
+It's going to be zero, right? Correcting.
+
+346
+00:42:26,788 --> 00:42:35,028
+So if there is no correlation between two variables, then changing one does not change anything else on the other side.
+
+347
+00:42:35,748 --> 00:42:37,988
+That's why that is going to be zero.
+
+348
+00:42:38,900 --> 00:42:48,579
+But this is negative 1, it has a relationship, but it's just the negative 1.
+
+349
+00:42:49,199 --> 00:42:52,860
+In this case, it may be negative 1.
+
+350
+00:42:53,099 --> 00:42:58,739
+So the maximum value for correlation is positive 1, minimum is going to be negative 1,
+
+351
+00:42:59,039 --> 00:43:02,900
+and if there's no correlation, it's going to be 0, or somewhere around 0.
+
+352
+00:43:05,400 --> 00:43:06,000
+Okay.
+
+353
+00:43:07,347 --> 00:43:22,268
+These are some examples. If you have correlations, this is negative 1 correlation. It means that if you increase x by 1 unit, you would decrease y by that unit.
+
+354
+00:43:22,507 --> 00:43:29,628
+So if you see different types of correlations, as you see that when it becomes 0 or near 0,
+
+355
+00:43:30,164 --> 00:43:34,104
+You don't see any straight relationship or association.
+
+356
+00:43:34,864 --> 00:43:37,584
+It looks like a random distribution.
+
+357
+00:43:38,924 --> 00:43:42,484
+But when you increase the correlation, eventually it becomes like a straight line.
+
+358
+00:43:43,944 --> 00:43:46,864
+Okay, this is maximum, this is minimum, this is no correlation.
+
+359
+00:43:47,864 --> 00:43:48,124
+Okay.
+
+360
+00:43:49,584 --> 00:43:50,884
+Any questions so far?
+
+361
+00:43:55,603 --> 00:44:09,384
+Evet, şimdi, 15 min. bir sonraki, 15 min. bir sonraki, 15 min. bir sonraki, 15 min. bir sonraki, 3 o'o'clock.
+
+362
+00:44:09,384 --> 00:44:10,923
+Bir sonraki, bir sonraki.
+
+363
+01:00:04,340 --> 01:00:05,260
+Welcome back.
+
+364
+01:00:07,260 --> 01:00:09,000
+Let's start with the lecture.
+
+365
+01:00:12,240 --> 01:00:13,619
+Can you see my screen?
+
+366
+01:00:19,795 --> 01:00:20,795
+Evet, teşekkür ederim.
+
+367
+01:00:22,295 --> 01:00:24,555
+Let's continue where we left off.
+
+368
+01:00:26,255 --> 01:00:27,695
+Okay, we discussed the correlation.
+
+369
+01:00:28,335 --> 01:00:29,895
+How do we calculate the correlation?
+
+370
+01:00:30,735 --> 01:00:34,455
+It is a simple metric.
+
+371
+01:00:35,135 --> 01:00:46,595
+A correlation, if you have two type of vectors, the correlation can be computed within their
+
+372
+01:00:47,315 --> 01:00:53,115
+Vektor, dot product, divided by their differences.
+
+373
+01:00:53,115 --> 01:01:12,016
+So, if you want to have correlation between two objects, such as P and Q, the difference, the correlation between those P and Q is their difference from the mean divided by the standard deviation, and then their dot products.
+
+374
+01:01:13,715 --> 01:01:26,036
+But don't forget that correlation itself is not a non-linear measure. It is a linear measure.
+
+375
+01:01:27,096 --> 01:01:33,455
+So if you were to calculate the correlation, it only applies to linear relationship.
+
+376
+01:01:33,955 --> 01:01:40,955
+And some data points are not linearly correlated. For instance, they may look like these, like random.
+
+377
+01:01:41,376 --> 01:02:03,500
+ve bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde,
+
+378
+01:02:03,764 --> 01:02:16,884
+ve finding the similarities is quite useful and fundamental to many algorithms as well, such as K-NN, and also some other algorithms as well.
+
+379
+01:02:18,364 --> 01:02:26,963
+Similarities and dissimilarities are opposite metrics, and usually we measure similarity within a range between 0 and 1.
+
+380
+01:02:27,295 --> 01:02:36,416
+0 meaning no correlationship, 1 meaning 100% correlations, or identical.
+
+381
+01:02:36,416 --> 01:02:44,615
+There are different types of correlations, but let me just show you an example.
+
+382
+01:02:44,615 --> 01:02:53,655
+So you have two vectors to draw simply.
+
+383
+01:02:54,228 --> 01:02:58,228
+Bu bir vektör ve bir vektör.
+
+384
+01:02:58,228 --> 01:03:02,228
+Ve bir vektör.
+
+385
+01:03:02,228 --> 01:03:08,228
+E1, E2, E3.
+
+386
+01:03:08,228 --> 01:03:14,228
+Bu bir vektör.
+
+387
+01:03:14,228 --> 01:03:18,228
+Ve bir vektör.
+
+388
+01:03:55,675 --> 01:03:57,675
+Bu, direkt ilerlerinden,
+
+389
+01:03:57,675 --> 01:04:03,675
+orağın ilerlerinden,
+
+390
+01:04:03,675 --> 01:04:07,675
+birbirine,
+
+391
+01:04:07,675 --> 01:04:08,043
+ve birbirine,
+
+392
+01:04:18,003 --> 01:04:20,083
+What type of relationship do they have?
+
+393
+01:04:23,023 --> 01:04:24,443
+It's a good point, [öğrenci].
+
+394
+01:04:24,443 --> 01:04:28,503
+It is inverse relationship, right?
+
+395
+01:04:29,263 --> 01:04:35,963
+So when you increase distance, similarity is reduced.
+
+396
+01:04:37,163 --> 01:04:38,003
+Similarity is reduced.
+
+397
+01:04:39,223 --> 01:04:40,043
+So...
+
+398
+01:04:44,628 --> 01:04:55,128
+similarity ve distance'ın inverse'ın
+
+399
+01:05:00,083 --> 01:05:20,619
+Bu, bu
+
+400
+01:05:21,331 --> 01:05:23,331
+Euclidean, Euclidean distance.
+
+401
+01:05:23,331 --> 01:05:25,331
+How do you calculate Euclidean distance?
+
+402
+01:05:25,331 --> 01:05:28,331
+Anybody remember the distance in Euclidean terms?
+
+403
+01:05:30,331 --> 01:05:31,947
+It's the square root.
+
+404
+01:05:46,324 --> 01:05:47,324
+M.K.
+
+405
+01:05:54,099 --> 01:06:19,339
+Bu, bu
+
+406
+01:06:20,052 --> 01:06:31,052
+Bu P1, we have x1, y1 ve y1 ve P2, x1, x2 ve y2.
+
+407
+01:06:46,324 --> 01:06:52,324
+Bu da aynı zamanda, bu da aynı zamanda ve bu da aynı zamanda.
+
+408
+01:06:52,324 --> 01:06:58,324
+Bu da aynı zamanda, bu da aynı zamanda, bu da aynı zamanda.
+
+409
+01:07:14,420 --> 01:07:17,420
+Bu birçok birçok birçok.
+
+410
+01:07:17,420 --> 01:07:19,420
+Bu birçok birçok.
+
+411
+01:07:19,420 --> 01:07:20,420
+Bu birçok.
+
+412
+01:07:20,420 --> 01:07:40,780
+Birçok.
+
+413
+01:07:41,523 --> 01:07:43,744
+1, ve Theta 2.
+
+414
+01:07:49,471 --> 01:07:51,471
+Birçok.
+
+415
+01:07:49,331 --> 01:07:52,587
+Bu
+
+416
+01:08:00,755 --> 01:08:05,835
+We have P1, P3.
+
+417
+01:08:07,835 --> 01:08:10,155
+And we also have angles.
+
+418
+01:08:14,900 --> 01:08:17,500
+A2, A2, A1, A2.
+
+419
+01:08:40,948 --> 01:08:49,708
+Ok, so based on that, let's calculate this. This is P3, P2, P1.
+
+420
+01:08:52,228 --> 01:08:59,628
+Ok, which one are more similar, P1 to P3 or P2 to P3?
+
+421
+01:09:02,188 --> 01:09:05,288
+Which one you think is more similar, based on this shape?
+
+422
+01:09:18,163 --> 01:09:28,564
+P2'ye kadar p2'ye kadar p2'ye kadar p1'ye kadar p2'ye kadar p2'ye kadar p2'ye kadar p3'ye kadar
+
+423
+01:09:46,195 --> 01:09:48,195
+Bu ne kadar ağlamalıyız?
+
+424
+01:10:02,452 --> 01:10:06,391
+Alfa 2, right? Çünkü, we can see that it is way larger.
+
+425
+01:10:10,068 --> 01:10:12,068
+Ve bu kadar yukarı?
+
+426
+01:10:12,068 --> 01:10:14,068
+Bu yukarı?
+
+427
+01:10:14,068 --> 01:10:16,068
+P2 to P3
+
+428
+01:10:16,068 --> 01:10:20,068
+Bu yukarı?
+
+429
+01:10:20,068 --> 01:10:37,100
+Bu yukarı.
+
+430
+01:10:37,555 --> 01:10:50,027
+Evet, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+431
+01:10:55,572 --> 01:11:01,332
+Bu bir değer var.
+
+432
+01:11:02,931 --> 01:11:04,427
+Alpha.
+
+433
+01:11:08,627 --> 01:11:13,667
+Evet, bu kadar 0, bu kadar 0, bu kadar 0'un
+
+434
+01:11:13,667 --> 01:11:17,067
+çünkü bu kadar 0'un identikleri ve bu kadar 0'un identikleri
+
+435
+01:11:17,067 --> 01:11:21,108
+ve bu kadar 0'un bu kadar 0'un.
+
+436
+01:11:21,108 --> 01:11:24,387
+Bu kadar minimum, bu kadar 0'un?
+
+437
+01:11:24,387 --> 01:11:27,507
+Bu kadar 0'un?
+
+438
+01:11:27,507 --> 01:11:33,108
+Bu kadar 0'un, bu kadar 0'un?
+
+439
+01:11:35,060 --> 01:11:39,360
+So if it is 0, what would be the angle between those two?
+
+440
+01:11:57,076 --> 01:11:58,556
+Neal-Z, 180.
+
+441
+01:12:01,916 --> 01:12:06,956
+180, be careful, because it becomes negative, right?
+
+442
+01:12:07,716 --> 01:12:09,935
+It's a large number, but it is a negative one.
+
+443
+01:12:10,876 --> 01:12:12,316
+So it's not zero.
+
+444
+01:12:14,916 --> 01:12:17,976
+Similarity does not become zero minus 100%.
+
+445
+01:12:17,976 --> 01:12:20,155
+It becomes negative one.
+
+446
+01:12:20,155 --> 01:12:22,155
+But when it becomes zero, it is...
+
+447
+01:12:23,764 --> 01:12:25,764
+90'e, [öğrenci]'ın da.
+
+448
+01:12:25,764 --> 01:12:29,764
+Bu, 90'e,
+
+449
+01:12:29,764 --> 01:12:31,804
+bu iki tane tane
+
+450
+01:12:31,804 --> 01:12:33,703
+ve bu iki tane
+
+451
+01:12:33,703 --> 01:12:35,764
+çünkü ortogonol,
+
+452
+01:12:35,764 --> 01:12:36,764
+ortogonol,
+
+453
+01:12:36,764 --> 01:12:38,764
+ve bu bir tane
+
+454
+01:12:38,764 --> 01:12:39,764
+değil,
+
+455
+01:12:39,764 --> 01:12:41,764
+bu nedenle
+
+456
+01:12:41,764 --> 01:12:42,764
+bu bir tane
+
+457
+01:12:42,764 --> 01:12:48,764
+bu,
+
+458
+01:12:49,460 --> 01:13:16,108
+Ancak an
+
+459
+01:13:23,923 --> 01:13:24,523
+ve Metric.
+
+460
+01:13:29,811 --> 01:13:32,492
+Bu, aslında cosignin.
+
+461
+01:13:32,492 --> 01:13:35,112
+İçinlikle, cosignin similarity
+
+462
+01:13:35,112 --> 01:13:36,692
+can be represented as a cosinus
+
+463
+01:13:36,692 --> 01:13:38,971
+between these two vectors.
+
+464
+01:13:40,652 --> 01:13:42,771
+Cosinus 0
+
+465
+01:13:45,891 --> 01:13:47,332
+is what?
+
+466
+01:13:48,971 --> 01:13:49,811
+It is 1.
+
+467
+01:13:52,211 --> 01:13:55,612
+Cosinus 90 degree is 0.
+
+468
+01:13:56,492 --> 01:13:57,371
+Cosinus
+
+469
+01:13:57,716 --> 01:14:00,756
+180 is negative 1.
+
+470
+01:14:01,876 --> 01:14:04,595
+So that's exactly what we were expecting, right?
+
+471
+01:14:04,595 --> 01:14:08,676
+The similarity to become identical to the degree,
+
+472
+01:14:09,876 --> 01:14:12,275
+or customers of the degree between two vectors.
+
+473
+01:14:13,076 --> 01:14:15,956
+So we can use customers as a similarity matrix.
+
+474
+01:14:16,435 --> 01:14:23,076
+So we discussed about Euclidean distance.
+
+475
+01:14:34,739 --> 01:14:36,739
+As a method for sanatı.
+
+476
+01:14:45,395 --> 01:14:46,835
+Good question, [öğrenci].
+
+477
+01:14:46,835 --> 01:14:50,796
+Is the angle only for the complete linear data vectors?
+
+478
+01:14:54,876 --> 01:14:55,996
+Yes, [öğrenci].
+
+479
+01:14:56,155 --> 01:15:03,835
+It is applicable to vectors, but you can also draw vector for points on...
+
+480
+01:15:04,500 --> 01:15:29,739
+Açın bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir yerden bir
+
+481
+01:15:30,836 --> 01:15:35,216
+If you can do that, then you can apply it. You are welcome.
+
+482
+01:15:36,296 --> 01:15:43,136
+So that's another example. But how do we calculate cosinus or cosine between two vectors?
+
+483
+01:15:44,736 --> 01:15:50,336
+So are we making it more difficult? In fact, we are not.
+
+484
+01:15:50,771 --> 01:15:57,811
+So, the cosine of these two vectors, or the angle between two vectors, is very straightforward.
+
+485
+01:15:57,811 --> 01:16:10,691
+It is the dot products of the vectors divided by their length, or normalizing by their length.
+
+486
+01:16:11,971 --> 01:16:14,051
+And that's quite easy to calculate.
+
+487
+01:16:15,188 --> 01:16:17,188
+Bu, çok kolay.
+
+488
+01:16:17,188 --> 01:16:23,188
+Bu, x1, x2, y1, y2.
+
+489
+01:16:43,604 --> 01:17:09,900
+Bu, 2 ve 2
+
+490
+01:17:10,452 --> 01:17:17,512
+Euclidean distance, in turn, when you are dealing with vectors.
+
+491
+01:17:18,512 --> 01:17:23,412
+Oftentimes, we use cosine or correlation between two vectors as similarity.
+
+492
+01:17:24,311 --> 01:17:34,612
+You can also use Euclidean, but sometimes we run into some issues with Euclidean distance, that it is being too simplistic.
+
+493
+01:17:36,564 --> 01:17:43,404
+Ok, there are many similarity matrix, we don't have time to go over them, but let me just rename some of them.
+
+494
+01:17:43,404 --> 01:17:48,944
+Jacquard similarity is one, Tanomoto is a generalized version of Jacquard similarity.
+
+495
+01:17:49,703 --> 01:17:52,104
+There's also Hemming distance or Hemming similarity.
+
+496
+01:17:53,084 --> 01:17:59,984
+Depending on the shape of the data or vector representation, you can use different similarity metrics.
+
+497
+01:18:00,604 --> 01:18:04,203
+And also, the types of the data may also...
+
+498
+01:18:06,564 --> 01:18:09,564
+Bir de bir numaral var,
+
+499
+01:18:09,564 --> 01:18:12,564
+bir numaral var,
+
+500
+01:18:12,564 --> 01:18:14,564
+bir numaral var.
+
+501
+01:18:14,564 --> 01:18:16,564
+Bir de bir numaral var.
+
+502
+01:18:16,564 --> 01:18:18,564
+Bu numaral var,
+
+503
+01:18:18,564 --> 01:18:20,564
+bir numaral var.
+
+504
+01:18:20,564 --> 01:18:22,564
+Bu numaral var.
+
+505
+01:18:24,692 --> 01:18:32,692
+ve also have the distance as an order, so we can use that as a measure of similarity.
+
+506
+01:18:32,692 --> 01:18:40,692
+For interval, the difference between the ranges can be applied, the difference and similarity as well.
+
+507
+01:18:40,692 --> 01:18:50,692
+These are some ideas we discussed in 3D distance. It has applicability to any vectors.
+
+508
+01:18:51,252 --> 01:19:12,748
+Bu da bu
+
+509
+01:19:13,043 --> 01:19:18,043
+Minkowski'in, Minkowski'in, a genelized version of Euclidean-distance.
+
+510
+01:19:18,043 --> 01:19:22,043
+So it applies to a parameter.
+
+511
+01:19:22,043 --> 01:19:29,043
+If r is 1, then this becomes absolute value.
+
+512
+01:19:29,043 --> 01:19:32,043
+Distance becomes their absolute value.
+
+513
+01:19:32,043 --> 01:19:40,043
+If it is r2, then this becomes Euclidean-distance, and it can be a larger as well.
+
+514
+01:19:41,619 --> 01:20:07,627
+R1'in birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştirilmesi için birleştir
+
+515
+01:20:09,619 --> 01:20:11,619
+Minkowski.
+
+516
+01:20:11,619 --> 01:20:15,619
+Let me give you an example.
+
+517
+01:20:15,619 --> 01:20:17,619
+Okay, this is L1.
+
+518
+01:20:17,619 --> 01:20:27,619
+This is L1 norm is Hamming distance, simply the distance between differences in the vector.
+
+519
+01:20:27,619 --> 01:20:30,619
+L2 is deflating distance.
+
+520
+01:20:30,619 --> 01:20:32,619
+L1 is the maximum distance.
+
+521
+01:20:32,619 --> 01:20:35,619
+For instance, we have P1 and P2.
+
+522
+01:20:37,171 --> 01:21:00,971
+Evet, x'ı 2 ve y'e 2'ye
+
+523
+01:21:01,140 --> 01:21:09,220
+1, so the distance actually is 3. So it takes the maximum in the second co-perism.
+
+524
+01:21:10,740 --> 01:21:17,620
+This is the answer problem version as well. So if you hear that, it's not that complicated,
+
+525
+01:21:17,620 --> 01:21:21,700
+just to know that there are different measures of simeritism.
+
+526
+01:21:23,572 --> 01:21:33,092
+But one thing to know is that every similarity or distance metric has to have these three properties.
+
+527
+01:21:33,971 --> 01:21:41,891
+These are that distance cannot be negative. So distance can be...
+
+528
+01:21:42,515 --> 01:21:48,115
+0, if they are identical numbers, but it needs to be positive, right?
+
+529
+01:21:48,275 --> 01:21:50,835
+The physical distance is a positive measure.
+
+530
+01:21:51,075 --> 01:21:53,036
+Zero or bigger, but not negative.
+
+531
+01:21:54,376 --> 01:21:58,415
+Also, because we have two vectors or points in a space,
+
+532
+01:21:59,216 --> 01:22:01,615
+the distance do not change where you look at from.
+
+533
+01:22:02,495 --> 01:22:05,615
+Going from A to B or B to A is...
+
+534
+01:22:06,131 --> 01:22:07,931
+İmmetri, it doesn't change.
+
+535
+01:22:08,451 --> 01:22:10,492
+But the same thing applies to distances as well.
+
+536
+01:22:10,572 --> 01:22:11,371
+It must be symmetrical.
+
+537
+01:22:12,332 --> 01:22:19,771
+But one and usually more difficult one to prove is the triangle inequality.
+
+538
+01:22:19,771 --> 01:22:21,771
+If you have a measure...
+
+539
+01:22:26,195 --> 01:22:37,355
+Okay, this is distance A and this is B. Okay, if I go to another place, B,
+
+540
+01:22:41,427 --> 01:22:44,427
+A to B
+
+541
+01:22:44,427 --> 01:22:47,427
+cannot be
+
+542
+01:22:47,427 --> 01:22:50,427
+bigger than
+
+543
+01:22:50,427 --> 01:22:53,427
+A to B.
+
+544
+01:22:53,427 --> 01:22:55,427
+This is not possible.
+
+545
+01:22:57,427 --> 01:22:59,427
+If C
+
+546
+01:22:59,427 --> 01:23:03,427
+was on the straight line between A to B
+
+547
+01:23:03,427 --> 01:23:07,427
+in that case this would be equal to A to B.
+
+548
+01:23:08,115 --> 01:23:35,403
+Bu, bu
+
+549
+01:23:35,444 --> 01:23:42,084
+Bu da bu noktada, bu noktada, bu noktada.
+
+550
+01:23:46,131 --> 01:23:49,231
+Okay, if anything that satisfies this, this is a metric.
+
+551
+01:23:50,211 --> 01:23:53,252
+Or if you have any metric, then it needs to distance metric.
+
+552
+01:23:53,492 --> 01:23:58,291
+It needs to prove that these three are also satisfied.
+
+553
+01:24:00,051 --> 01:24:05,271
+And for binary vectors, if you have binary vectors, meaning that the values are 0 or 1.
+
+554
+01:24:05,931 --> 01:24:11,492
+In that case, we can calculate simple matching, jacquard matching, jacquard...
+
+555
+01:24:12,979 --> 01:24:18,979
+ve bu da farklı bir şekilde
+
+556
+01:24:18,979 --> 01:24:20,979
+ve bu da çok dikkatli bir şekilde
+
+557
+01:24:20,979 --> 01:24:26,979
+bu da
+
+558
+01:24:46,260 --> 01:24:55,380
+M0, 0 is where they all have corresponding, the matching 0's.
+
+559
+01:24:55,380 --> 01:24:56,880
+Like this is 2, right?
+
+560
+01:24:56,880 --> 01:24:59,960
+We begin with 2 vectors.
+
+561
+01:25:01,960 --> 01:25:12,899
+For M0, 1, where the first one is 0, the second one is 1, this is 1 case, this is 2 case, so that's also 2.
+
+562
+01:25:13,524 --> 01:25:36,048
+İlk bir
+
+563
+01:25:36,047 --> 01:25:47,847
+Sıplam matching, if you care, 0-0 match, in addition to 1-1 match, divided by all match.
+
+564
+01:25:48,351 --> 01:26:11,371
+All items. But Jacquard only uses those that are matching. 2 divided by 5. So the Jacquard, for this case, 2 divided by 5. But in simple matching, the similarities between two vectors would become 2 plus 2 divided by 5.
+
+565
+01:26:11,764 --> 01:26:17,931
+Bu da bu
+
+566
+01:26:21,395 --> 01:26:22,395
+Okay.
+
+567
+01:26:24,155 --> 01:26:29,155
+We discussed about cosine celerity. Cosine celerity is quite useful,
+
+568
+01:26:29,155 --> 01:26:38,395
+especially when you have recommender systems, where you have a lot of zeros or empty spaces.
+
+569
+01:26:38,771 --> 01:26:52,492
+using Euclidean instance may result in unwanted comparison of results, but in those cases, cosign quite works well for a large set of brackets.
+
+570
+01:26:54,631 --> 01:26:55,592
+Okay.
+
+571
+01:26:56,340 --> 01:26:58,899
+So far, we discussed different metrics and stuff.
+
+572
+01:26:58,899 --> 01:27:07,940
+We also mentioned sense of similarity, correlation, the difference between association between different features.
+
+573
+01:27:09,059 --> 01:27:18,420
+This is important to understand how the features that interact with the target variable or among the independent variables.
+
+574
+01:27:19,123 --> 01:27:28,603
+So that we understand if two features are identical or very similar, should you use that in modeling at the same time?
+
+575
+01:27:29,203 --> 01:27:32,904
+If you do use that, is it a good thing or a bad thing?
+
+576
+01:27:35,744 --> 01:27:37,663
+Okay, let me rephrase the question.
+
+577
+01:27:38,404 --> 01:27:46,404
+You have two variables that are identical or very similar, or you have, in other sense, high,
+
+578
+01:27:46,868 --> 01:27:47,668
+Korrelation.
+
+579
+01:27:48,847 --> 01:27:54,888
+Should you use both of them in the model fitting?
+
+580
+01:27:56,608 --> 01:27:59,188
+If not, why not? If yes, why yes?
+
+581
+01:28:17,203 --> 01:28:25,884
+Bu bir şeyin bir şeyin aynı veya aynı gibi bir model kullanmak için bir şeyin aynı.
+
+582
+01:28:25,884 --> 01:28:30,683
+Sadece bir şeyin bir şeyin bir şeyin bir şeyin.
+
+583
+01:28:30,683 --> 01:28:35,563
+Bir şeyin bir şeyin bir şeyin çok iyi.
+
+584
+01:28:35,563 --> 01:28:42,163
+Ve bu modelde bir şeyin bir şeyin bir şeyin bir şeyin.
+
+585
+01:28:42,452 --> 01:28:46,112
+Yani, aynı data aynı data is encoded multiple times.
+
+586
+01:28:46,112 --> 01:28:49,752
+And that becomes a huge problem for models.
+
+587
+01:28:49,752 --> 01:28:57,051
+So, this mathematical issue results in your models to not do work correctly.
+
+588
+01:28:57,051 --> 01:29:06,051
+And then they also have lower accuracy when using single feature.
+
+589
+01:29:06,612 --> 01:29:15,612
+Bu yüzden, bu yüzden, büyük, büyük, korrelation between features, önemli olanı, bu da
+
+590
+01:29:38,676 --> 01:30:04,944
+Bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu dağıtta, bu
+
+591
+01:30:04,944 --> 01:30:12,104
+Features may be incorrectly added to the dataset in a duplicate way.
+
+592
+01:30:12,984 --> 01:30:22,384
+So if you have duplicate data, how can you detect duplicacy, even though names are not the same?
+
+593
+01:30:23,684 --> 01:30:25,384
+You can check correlation, right?
+
+594
+01:30:25,484 --> 01:30:29,204
+If you have duplicate data, what would be the correlation value?
+
+595
+01:30:31,764 --> 01:30:52,463
+Bu da bir %100 %
+
+596
+01:30:52,463 --> 01:30:54,463
+Bu ne?
+
+597
+01:30:54,463 --> 01:30:56,463
+M-Hi-H-T
+
+598
+01:30:56,463 --> 01:30:58,463
+Bu ne?
+
+599
+01:30:58,463 --> 01:31:00,463
+Bir de farklı bir şekilde.
+
+600
+01:31:00,463 --> 01:31:02,463
+Bir de feğsit
+
+601
+01:31:02,463 --> 01:31:04,463
+ve ences
+
+602
+01:31:04,463 --> 01:31:06,463
+Amerikas
+
+603
+01:31:12,083 --> 01:31:15,083
+Bu, Amerika'ya üniversite.
+
+604
+01:31:15,083 --> 01:31:22,083
+Ama bu, nüversi değil, çünkü farklı farklı birçok.
+
+605
+01:31:22,083 --> 01:31:26,083
+Bu, bu, bu, bu, bu, bu, bu?
+
+606
+01:31:30,355 --> 01:31:36,203
+ve bu
+
+607
+01:31:47,923 --> 01:31:54,503
+Evet, de var, as [öğrenci] said, çünkü bunlar a scalar multiplications,
+
+608
+01:31:54,503 --> 01:32:02,003
+or they are linearly represented, but with a degree of scale.
+
+609
+01:32:02,420 --> 01:32:04,420
+Bu da aynı zamanda,
+
+610
+01:32:04,420 --> 01:32:07,180
+ve bu da bir üniversite bir üniversite
+
+611
+01:32:07,180 --> 01:32:09,979
+ve bu da bir üniversite.
+
+612
+01:32:09,979 --> 01:32:11,739
+Bu yüzden de önemli bir şey
+
+613
+01:32:11,739 --> 01:32:13,340
+ve bu dağılıkları
+
+614
+01:32:13,340 --> 01:32:17,420
+daha önce de daha fazla
+
+615
+01:32:17,420 --> 01:32:18,420
+bu dağılıkçası için
+
+616
+01:32:18,420 --> 01:32:20,420
+bu dağılıkçası için.
+
+617
+01:32:22,420 --> 01:32:24,420
+Bu dağılıkçası için
+
+618
+01:32:24,420 --> 01:32:26,420
+farklı bir şeyleri
+
+619
+01:32:26,420 --> 01:32:28,420
+verirken ve
+
+620
+01:32:28,420 --> 01:32:29,420
+bu dağılıkçası için
+
+621
+01:32:29,716 --> 01:32:47,895
+Some of the ways that we do is missing data may be due to some equipment malfunction, some sensors not being correctly working, or some people not wanting to give the data, and so on.
+
+622
+01:32:48,307 --> 01:32:59,488
+Or maybe historically you don't have this data, you didn't collect it in the first place, but later versions of the applications start collecting. In that case, that will be empty spaces.
+
+623
+01:33:01,968 --> 01:33:13,028
+But how do we handle missing data points? There are different strategies. You may ignore those tuples, but that's not always a good idea.
+
+624
+01:33:14,195 --> 01:33:18,195
+Bu bir şey değil, bir şey var.
+
+625
+01:33:19,195 --> 01:33:22,195
+Bir şey var.
+
+626
+01:33:23,195 --> 01:33:26,195
+Ve bir şey var.
+
+627
+01:33:27,195 --> 01:33:29,195
+Bu bir şey var.
+
+628
+01:33:30,195 --> 01:33:32,195
+Bir şey var.
+
+629
+01:33:33,195 --> 01:33:38,195
+Bu bir şey var.
+
+630
+01:33:39,667 --> 01:33:43,227
+Bu sadece birçok yöntemde,
+
+631
+01:33:43,227 --> 01:33:47,227
+ve bu da kullanılabilirsiniz.
+
+632
+01:33:47,227 --> 01:33:51,067
+Ama bu da birçok yöntemde,
+
+633
+01:33:51,067 --> 01:33:53,627
+bu da birçok yöntemde.
+
+634
+01:33:53,627 --> 01:33:55,507
+Birçok yöntemde birçok yöntemde.
+
+635
+01:33:55,507 --> 01:33:58,667
+Birçok yöntemde,
+
+636
+01:33:58,667 --> 01:34:01,467
+birçok yöntemde,
+
+637
+01:34:01,467 --> 01:34:03,867
+ama bu da çok yöntemde.
+
+638
+01:34:03,867 --> 01:34:05,867
+Bu da,
+
+639
+01:34:08,372 --> 01:34:16,891
+Missing values, now you use a standard number or value that doesn't resolve completely.
+
+640
+01:34:18,652 --> 01:34:30,572
+Another way would be to use for that particular feature the attribute mean, but like I said, mean may not be always the best idea.
+
+641
+01:34:30,572 --> 01:34:33,572
+It may be okay to use...
+
+642
+01:34:36,659 --> 01:34:39,760
+ve median
+
+643
+01:34:39,760 --> 01:34:40,779
+bu
+
+644
+01:34:40,779 --> 01:35:09,260
+daha
+
+645
+01:35:01,492 --> 01:35:09,260
+Bu, bu
+
+646
+01:35:13,219 --> 01:35:14,219
+daha
+
+647
+01:35:15,043 --> 01:35:17,043
+Ve bu bir yasın.
+
+648
+01:35:17,043 --> 01:35:40,367
+Bir yasın.
+
+649
+01:35:40,368 --> 01:35:55,847
+Average, for instance, this is a null. Average of the null values might be a smarter solution, because classes may, or if you have some different distribution of classes, may have different tendencies.
+
+650
+01:35:57,427 --> 01:36:06,528
+Maybe nulls have higher x1 values, but ys or yeses have smaller value on this attribute.
+
+651
+01:36:07,412 --> 01:36:18,412
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle.
+
+652
+01:36:33,268 --> 01:36:38,268
+Bayesian, or decision tree, to predict this particular feature.
+
+653
+01:36:39,268 --> 01:36:46,268
+And that's actually the most probable or most intelligent solution to this problem.
+
+654
+01:36:48,268 --> 01:36:51,268
+But be careful about missing values,
+
+655
+01:36:51,268 --> 01:36:59,268
+because if you have a huge number of percentage of data missing for an attribute,
+
+656
+01:37:00,467 --> 01:37:02,907
+Filiyazı, bu konuda bir şey.
+
+657
+01:37:28,148 --> 01:37:31,148
+Bu da bir soru var.
+
+658
+01:37:32,148 --> 01:37:35,148
+Ama bu da 90% de bu dağda,
+
+659
+01:37:35,148 --> 01:37:37,148
+10% de bu dağda bir şey yok.
+
+660
+01:37:37,148 --> 01:37:53,148
+Bu dağda bir şey yok.
+
+661
+01:37:55,636 --> 01:38:18,464
+Bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle, bu nedenle
+
+662
+01:38:18,463 --> 01:38:25,863
+Açıkçı, uzerine regressiyonline, clustering, or some human inspection can also help.
+
+663
+01:38:25,863 --> 01:38:37,063
+We'll discuss some examples. Binning is dividing the numbers into equal widths or equal depth,
+
+664
+01:38:37,463 --> 01:38:42,503
+where you have large numbers that takes the boundary values.
+
+665
+01:38:44,020 --> 01:38:46,460
+Açık bir örnek veriyor.
+
+666
+01:38:46,460 --> 01:38:50,020
+Öncelikle bu örnek veriyor.
+
+667
+01:38:50,020 --> 01:38:55,260
+Öncelikle bu örneğin orijinal bir örneğin orijinal bir örneğin.
+
+668
+01:39:09,587 --> 01:39:16,307
+Eğer eko-win'de, birçok kullanılıyor, 4 adet in a bin.
+
+669
+01:39:17,107 --> 01:39:18,307
+4 adet in a bin.
+
+670
+01:39:37,247 --> 01:40:04,747
+...
+
+671
+01:40:00,000 --> 01:40:05,319
+bu kadar büyük birçok birçok birçok birçok birçok birçok.
+
+672
+01:40:06,880 --> 01:40:10,440
+Bu, bu birçok birçok birçok,
+
+673
+01:40:10,440 --> 01:40:12,039
+bu birçok,
+
+674
+01:40:12,039 --> 01:40:14,680
+ama sadece binin
+
+675
+01:40:14,680 --> 01:40:27,399
+birçok,
+
+676
+01:40:28,500 --> 01:40:36,659
+Bir diğer bir
+
+677
+01:40:36,659 --> 01:40:38,659
+4, 15.
+
+678
+01:40:38,659 --> 01:40:46,100
+Bu 4, bu 4.
+
+679
+01:40:46,100 --> 01:40:48,100
+15, bu 4.
+
+680
+01:40:48,100 --> 01:40:52,100
+21, bu 21.
+
+681
+01:40:52,100 --> 01:40:55,140
+21, bu 24.
+
+682
+01:40:55,188 --> 01:40:57,188
+Bu birçok birçok birçok.
+
+683
+01:40:57,188 --> 01:41:01,188
+Bu birçok birçok.
+
+684
+01:41:01,188 --> 01:41:15,188
+Bu birçok.
+
+685
+01:41:15,188 --> 01:41:17,188
+Birçok.
+
+686
+01:41:17,188 --> 01:41:20,395
+Bu birçok.
+
+687
+01:41:20,500 --> 01:41:47,403
+Bu da bu
+
+688
+01:41:48,020 --> 01:42:13,408
+Bu, bu
+
+689
+01:42:13,408 --> 01:42:15,847
+İtimizin, içi de.
+
+690
+01:42:16,448 --> 01:42:25,008
+İtimizin, normal, or more similar to others, will cluster together, and all buyers will stay out of these distributions.
+
+691
+01:42:26,488 --> 01:42:29,768
+This can be another strategy to apply.
+
+692
+01:42:32,448 --> 01:42:33,928
+Any questions so far?
+
+693
+01:42:40,212 --> 01:43:01,172
+Okay. So if no question, we can take a break. We can take a short break and then from here at four o'clock. Any question before the break? Okay, so let's continue at four o'clock. See you after the break.
+
+694
+01:57:59,667 --> 01:58:00,607
+You're welcome, [öğrenci].
+
+695
+01:58:09,108 --> 01:58:10,007
+Can you see the screen now?
+
+696
+01:58:12,828 --> 01:58:13,228
+Yes.
+
+697
+01:58:14,007 --> 01:58:14,967
+Okay, thank you.
+
+698
+01:58:17,427 --> 01:58:18,368
+One second.
+
+699
+01:58:33,555 --> 01:58:40,275
+Okay, so we discussed so far different tasks of data preprocessing.
+
+700
+01:58:40,275 --> 01:58:44,375
+One of the other data tasks is the data integration.
+
+701
+01:58:45,135 --> 01:58:52,715
+For data integration, there are many cases where you have multiple datasets to be merged together.
+
+702
+01:58:53,255 --> 01:58:56,935
+When you do merge together, you will notice some issues such as
+
+703
+01:58:58,420 --> 01:59:07,359
+Diyan, farklı data source using different naming for entities and also for feature names.
+
+704
+01:59:08,140 --> 01:59:17,720
+Such as, in one database it may be cust-id, in another one cust-pound sign.
+
+705
+01:59:17,720 --> 01:59:26,039
+Or it may be age, in another one it may be some other name that is calling the same data.
+
+706
+01:59:26,804 --> 01:59:48,804
+And also another instance of duplicacy can be in the real world entities, such as some databases may be quoting Bill Clinton, some may be quoting William Clinton, some databases may be using...
+
+707
+01:59:51,060 --> 01:59:58,060
+ve
+
+708
+01:59:58,060 --> 02:00:19,060
+bu
+
+709
+02:00:17,811 --> 02:00:38,971
+veri, they are in fact the same. If they are the same, you can remove duplicate values. Sometimes we also have some derived attributes. Although derived attributes may not be exactly the same, but they will have high correlation as well.
+
+710
+02:00:39,444 --> 02:00:45,564
+You can detect some example, for instance, annual revenue or monthly revenue.
+
+711
+02:00:45,564 --> 02:00:51,024
+Those two are values that can be convertible or derivable.
+
+712
+02:00:51,784 --> 02:01:00,564
+And you can detect them by correlation analysis and remove the ones that are not necessary.
+
+713
+02:01:04,756 --> 02:01:17,396
+We also do data transformation, and data transformation helps you fit the models correctly, and the accuracy of the models will be positively impacted by this.
+
+714
+02:01:18,771 --> 02:01:28,032
+Scale differences between data points will result huge variations, and that's affecting many algorithms as well.
+
+715
+02:01:28,931 --> 02:01:34,891
+And some of the fields may dominate other fields, other attributes, and that's not a good idea.
+
+716
+02:01:34,891 --> 02:01:39,391
+There are different strategies for normalization, data transformation.
+
+717
+02:01:39,920 --> 02:01:51,340
+We can normalize the data to the same scale by using mean max normalization or z-square normalization or some decimal scaling can be applied.
+
+718
+02:01:52,340 --> 02:01:58,519
+Let me give first a reasoning why we need normalization in the first place.
+
+719
+02:02:02,707 --> 02:02:13,227
+Assum that we have these x1, x2, x3, and y.
+
+720
+02:02:14,427 --> 02:02:16,907
+These are different data points.
+
+721
+02:02:18,547 --> 02:02:21,287
+This is p1, p2, p3.
+
+722
+02:02:24,407 --> 02:02:25,887
+Assum this is age.
+
+723
+02:02:27,252 --> 02:02:28,252
+bu
+
+724
+02:02:26,304 --> 02:02:31,684
+Bu adamın 19, 25, 40.
+
+725
+02:02:32,884 --> 02:02:38,404
+Bu adamın married status.
+
+726
+02:02:38,824 --> 02:02:45,264
+Bu adamın 1, otherwise bu adamın 0.
+
+727
+02:02:46,564 --> 02:02:48,684
+Bu adamın bir şey.
+
+728
+02:02:48,684 --> 02:02:50,604
+Bu adamın saları.
+
+729
+02:02:52,500 --> 02:03:01,100
+Bu bir günler 5,000, bu bir günler 25,000, bu bir günler 100,000.
+
+730
+02:03:02,260 --> 02:03:04,100
+Ve bu yi-valu.
+
+731
+02:03:07,699 --> 02:03:22,699
+Assume that you are calculating k-NN and you want to find the distance between these points and you can use this distance as a Euclidean distance.
+
+732
+02:03:26,163 --> 02:03:27,283
+Euclidean'dan.
+
+733
+02:03:30,163 --> 02:03:36,243
+What would happen when you calculate the distance between these points?
+
+734
+02:03:47,028 --> 02:03:48,487
+Okay, let's calculate this one.
+
+735
+02:03:49,487 --> 02:04:06,648
+It is the difference between 19 minus 40 plus 0 plus 1 square plus 25,000 minus 100,000 square.
+
+736
+02:04:08,648 --> 02:04:10,367
+So what is wrong with this one?
+
+737
+02:04:15,539 --> 02:04:18,940
+Bu bir soru, [öğrenci], bu bir soru.
+
+738
+02:04:20,739 --> 02:04:22,619
+Bu bir soru.
+
+739
+02:04:23,940 --> 02:04:29,139
+Bu soru, bu soru.
+
+740
+02:04:29,139 --> 02:04:33,139
+Bu soru, 75,000'de.
+
+741
+02:04:33,139 --> 02:04:38,300
+Bu soru, bu soru.
+
+742
+02:04:38,300 --> 02:04:41,539
+Bu soru, 212'de.
+
+743
+02:04:41,652 --> 02:04:43,652
+Çok küçük bir şey.
+
+744
+02:04:43,652 --> 02:04:46,652
+Bir field, bir attribute
+
+745
+02:04:46,652 --> 02:04:48,652
+can dominate an entire result.
+
+746
+02:04:48,652 --> 02:04:50,652
+Bu bir şey değil.
+
+747
+02:04:50,652 --> 02:04:52,652
+Çünkü saları
+
+748
+02:04:52,652 --> 02:04:54,652
+may not be the only factor
+
+749
+02:04:54,652 --> 02:04:55,652
+determining this.
+
+750
+02:04:55,652 --> 02:04:57,652
+Other features
+
+751
+02:04:57,652 --> 02:04:59,652
+may also have equal contribution
+
+752
+02:04:59,652 --> 02:05:01,456
+but not this way.
+
+753
+02:05:01,456 --> 02:05:07,036
+Bu bir problem.
+
+754
+02:05:07,036 --> 02:05:08,036
+Ve bu bir algoritma.
+
+755
+02:05:08,755 --> 02:05:09,396
+Bu nedenle,
+
+756
+02:05:09,396 --> 02:05:10,876
+bu nedenle de normalize.
+
+757
+02:05:11,876 --> 02:05:13,136
+Bu nedenle normalize?
+
+758
+02:05:13,136 --> 02:05:14,255
+Bir sayesinde
+
+759
+02:05:14,255 --> 02:05:18,036
+bu $75,000
+
+760
+02:05:18,036 --> 02:05:20,136
+birçok
+
+761
+02:05:20,136 --> 02:05:20,976
+altyazı.
+
+762
+02:05:20,976 --> 02:05:23,735
+Bu nedenle $25,000.
+
+763
+02:05:25,335 --> 02:05:25,956
+Bu nedenle
+
+764
+02:05:25,956 --> 02:05:27,916
+birçok
+
+765
+02:05:28,307 --> 02:05:31,627
+150,000.
+
+766
+02:05:36,028 --> 02:05:48,307
+So if we were to do like mean max normalization, assume that we are mapping it to 0 and 1, there's another value here, age.
+
+767
+02:05:49,140 --> 02:05:57,700
+Bu da 0'a, bu da 150'e, bu da 140'e, bu da birçok.
+
+768
+02:05:59,460 --> 02:06:02,340
+Bu da bu da aynı şekilde.
+
+769
+02:06:02,340 --> 02:06:08,659
+Bu da minimum, bu da birçok, bu da birçok, bu da birçok.
+
+770
+02:06:09,380 --> 02:06:14,340
+Bu da aynı şekilde, 25'e, bu da birçok, bu da birçok, bu da birçok.
+
+771
+02:06:14,940 --> 02:06:16,659
+Bu da birçok, bu da birçok.
+
+772
+02:06:17,619 --> 02:06:19,619
+Bu ne?
+
+773
+02:06:19,619 --> 02:06:25,619
+75,000'den 75,000'den 75,000'den 75,000'den 1'i var?
+
+774
+02:06:25,619 --> 02:06:27,115
+Bu ne?
+
+775
+02:06:30,452 --> 02:06:35,272
+Or, can we generalize this mean max normalization?
+
+776
+02:06:35,272 --> 02:06:39,412
+What is the formula?
+
+777
+02:06:48,532 --> 02:07:03,212
+Let's say this is min, sorry, this is max old, this is min old, this is min new, this is max new.
+
+778
+02:07:08,979 --> 02:07:34,475
+Ve bu,
+
+779
+02:07:44,243 --> 02:07:45,743
+Let's try the equation together.
+
+780
+02:07:54,707 --> 02:07:55,887
+Minimum of what?
+
+781
+02:08:00,787 --> 02:08:04,488
+Old one, right? We all agree. Minimum of gold.
+
+782
+02:08:05,207 --> 02:08:09,988
+What about the denominator? What about here? What should we write?
+
+783
+02:08:13,652 --> 02:08:17,572
+Max old divided by min old. Good work, [öğrenci].
+
+784
+02:08:20,851 --> 02:08:25,092
+Max old minus min old.
+
+785
+02:08:25,912 --> 02:08:27,832
+Okay, are we done?
+
+786
+02:08:50,931 --> 02:08:54,171
+Okay, [öğrenci], what do you mean the other value?
+
+787
+02:09:04,115 --> 02:09:05,796
+Evet, bu konuda aynı bir şey.
+
+788
+02:09:05,796 --> 02:09:06,876
+Bu sadece bir formüle.
+
+789
+02:09:06,876 --> 02:09:08,876
+Bu formüle, mean max normalizasyon.
+
+790
+02:09:11,355 --> 02:09:12,876
+Şuraya da bir şey var.
+
+791
+02:09:19,123 --> 02:09:27,123
+Bu işin bir hizmeti değil, çünkü min-max değil,
+
+792
+02:09:27,123 --> 02:09:29,123
+bir hizmeti başarısız.
+
+793
+02:09:29,123 --> 02:09:33,123
+Bu işin bir hizmeti var mı?
+
+794
+02:09:33,123 --> 02:09:41,123
+Bir hizmeti bir hizmeti var mı?
+
+795
+02:09:41,123 --> 02:09:43,123
+Bu işin bir hizmeti var mı?
+
+796
+02:09:47,028 --> 02:09:48,368
+If it didn't start from zero.
+
+797
+02:10:12,307 --> 02:10:14,908
+Seems like we need to do... Go ahead.
+
+798
+02:10:14,908 --> 02:10:16,568
+Maximum değerli tarpacak olabilir miyiz acaba?
+
+799
+02:10:17,148 --> 02:10:18,728
+Can you repeat [öğrenci] again?
+
+800
+02:10:19,887 --> 02:10:23,087
+Maximum değerli tarpacak olabilir miyiz acaba? Hani burası için 5.
+
+801
+02:10:23,748 --> 02:10:24,168
+Mh.
+
+802
+02:10:24,368 --> 02:10:25,748
+20 mesela olabilirim.
+
+803
+02:10:26,568 --> 02:10:27,708
+Okay, good.
+
+804
+02:10:28,488 --> 02:10:31,427
+But is it only maximum?
+
+805
+02:10:35,699 --> 02:10:38,619
+Çünkü bu konu değil, bu konu değil, bu konu değil.
+
+806
+02:10:38,619 --> 02:10:45,699
+Bu konu değil, maksimum, bu konu değil, bu konu değil.
+
+807
+02:10:49,811 --> 02:11:00,171
+[öğrenci], you're close, but are those correct values, variables?
+
+808
+02:11:00,771 --> 02:11:04,271
+We need to multiply this with something, right, to fit in this game.
+
+809
+02:11:04,271 --> 02:11:06,220
+And that would be...
+
+810
+02:11:09,555 --> 02:11:17,536
+Max, nu, minus, min, nu.
+
+811
+02:11:17,895 --> 02:11:20,355
+Because this is what the scale is.
+
+812
+02:11:20,435 --> 02:11:22,095
+This scale is only up to 4.
+
+813
+02:11:23,115 --> 02:11:26,935
+So anything can be between 1 and 4, or 1 and 5.
+
+814
+02:11:27,115 --> 02:11:29,615
+So the total value can be 4, not 5.
+
+815
+02:11:31,136 --> 02:11:32,336
+Okay, this is generalized.
+
+816
+02:11:32,975 --> 02:11:35,515
+So this would scale it to a correct place.
+
+817
+02:11:36,076 --> 02:11:36,996
+But are we done?
+
+818
+02:11:42,387 --> 02:11:47,427
+Currently, this will map everything between 0 and 4, correct?
+
+819
+02:11:52,500 --> 02:11:56,639
+Evet, [öğrenci] said, we need to also shift it to the right.
+
+820
+02:11:57,479 --> 02:12:01,939
+And shifting is done by min, nu.
+
+821
+02:12:02,279 --> 02:12:08,619
+Okay, so we shift it by 1 to 1,5 by adding the minimum.
+
+822
+02:12:09,139 --> 02:12:09,559
+Okay, good.
+
+823
+02:12:09,899 --> 02:12:14,659
+So this is min max normalization form for any min max.
+
+824
+02:12:16,595 --> 02:12:41,095
+Normalization is important. There are different normalization techniques. This is an example for mean max normalization. We have 73,000. Minimum was 12,000. Maximum was 98,000. If you were to map it between 0 and 1, it would be 0.709. This would be an example. I'll show you that.
+
+825
+02:12:41,619 --> 02:12:45,579
+But there are other scaling techniques as well.
+
+826
+02:12:45,659 --> 02:12:49,220
+One of them is zero, z-score scaling.
+
+827
+02:12:49,220 --> 02:12:53,880
+Z-score is assuming that you have a normal distribution.
+
+828
+02:12:55,699 --> 02:12:58,640
+Let me go paint another one.
+
+829
+02:13:04,275 --> 02:13:09,175
+Z-score is distributing data as a normal distribution.
+
+830
+02:13:10,175 --> 02:13:13,375
+And so this is your x-par, the average.
+
+831
+02:13:14,275 --> 02:13:30,735
+And assume that this is our sigma plus, this is sigma minus, and two sigma, three sigma, plus this two sigma negative, three sigma.
+
+832
+02:13:31,412 --> 02:13:38,412
+Şimdi, ne kadar da, bu, v'ye veren bir adı var,
+
+833
+02:13:57,271 --> 02:14:00,271
+V, ne?
+
+834
+02:13:56,340 --> 02:13:59,939
+X bar, divided by standard deviation.
+
+835
+02:13:59,939 --> 02:14:03,739
+It normalizes data to normal distribution.
+
+836
+02:14:03,739 --> 02:14:14,840
+And this is something between 4 and 5, sorry, plus 4.
+
+837
+02:14:16,039 --> 02:14:18,380
+So some range within this range.
+
+838
+02:14:18,380 --> 02:14:23,380
+So it shows how far are you away from...
+
+839
+02:14:23,904 --> 02:14:30,904
+ve
+
+840
+02:14:30,904 --> 02:14:32,904
+standard deviation.
+
+841
+02:14:32,904 --> 02:14:34,904
+Bu değer
+
+842
+02:14:34,904 --> 02:14:36,904
+bu değer
+
+843
+02:14:36,904 --> 02:14:39,904
+1.25
+
+844
+02:14:39,904 --> 02:14:40,904
+ve
+
+845
+02:14:40,904 --> 02:14:41,904
+bu
+
+846
+02:14:41,904 --> 02:14:42,904
+2
+
+847
+02:14:42,904 --> 02:14:43,904
+1
+
+848
+02:14:43,904 --> 02:14:44,904
+2
+
+849
+02:14:44,904 --> 02:14:45,904
+1
+
+850
+02:14:45,904 --> 02:14:46,904
+2
+
+851
+02:14:46,904 --> 02:14:47,904
+1
+
+852
+02:14:47,904 --> 02:14:48,904
+5
+
+853
+02:14:48,904 --> 02:14:49,292
+6
+
+854
+02:14:49,684 --> 02:14:54,144
+Here, a value will be negative 2.72, and so on.
+
+855
+02:14:55,484 --> 02:15:03,264
+And because this applies to entire spectrum, this can be also used as a normalization technique.
+
+856
+02:15:03,684 --> 02:15:04,784
+And it is often used.
+
+857
+02:15:05,824 --> 02:15:11,004
+Sometimes this is called z-score normalization, sometimes it's called standardization.
+
+858
+02:15:11,264 --> 02:15:12,164
+It means the same thing.
+
+859
+02:15:13,104 --> 02:15:13,344
+Okay.
+
+860
+02:15:14,444 --> 02:15:15,884
+It actually is the same thing.
+
+861
+02:15:16,739 --> 02:15:17,739
+7
+
+862
+02:15:16,627 --> 02:15:18,347
+Ama bu önemli bir şey.
+
+863
+02:15:41,055 --> 02:15:45,555
+There are feature selection and feature extraction techniques.
+
+864
+02:15:45,555 --> 02:15:50,715
+We will discuss these algorithms in more detail, but there are some simplest approach as well.
+
+865
+02:15:51,095 --> 02:15:57,015
+You can get some dimensional reduction, remove unimportant features, you can compress the data too.
+
+866
+02:15:57,811 --> 02:16:19,755
+Bu da, bu
+
+867
+02:16:19,891 --> 02:16:26,891
+Dikkatilisiyon, bu da bir
+
+868
+02:16:26,891 --> 02:16:27,891
+bu da bir
+
+869
+02:16:27,891 --> 02:16:30,891
+bu da
+
+870
+02:16:30,891 --> 02:16:48,008
+bu
+
+871
+02:16:43,476 --> 02:17:07,316
+You can create some buckets, 218 as kids, another bucket for let's say 40 as young adult, maybe to 65 as mature adult, I don't know, and anything before 65 is elder.
+
+872
+02:17:08,084 --> 02:17:26,463
+Bu da bu
+
+873
+02:17:26,463 --> 02:17:52,299
+Bu da, bu
+
+874
+02:17:58,291 --> 02:18:05,412
+As I said at the beginning, data preprocessing can be tedious, but time-consuming.
+
+875
+02:18:06,851 --> 02:18:19,811
+Anyhow, it is one of the most important part of the data mining, and it is probably the most effective way to improve the quality of modeling.
+
+876
+02:18:20,595 --> 02:18:32,456
+Data modeling, selecting the algorithms, selecting the parameters, size the parameters, is not as time consuming or as important as pre-processing.
+
+877
+02:18:32,456 --> 02:18:44,015
+So, that's all I wanted to talk about today. If no questions, we can finish it today and see you next week. Have a good rest of your weekend and thank you. Bye bye.

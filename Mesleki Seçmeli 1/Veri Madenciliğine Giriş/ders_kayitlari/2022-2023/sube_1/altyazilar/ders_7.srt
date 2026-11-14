@@ -1,0 +1,4187 @@
+1
+00:00:08,371 --> 00:00:10,112
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:20,692 --> 00:00:22,152
+Merhabalar, sesini giriyorum.
+
+3
+00:00:30,611 --> 00:00:31,831
+Tamam, teşekkür ederim.
+
+4
+00:00:36,500 --> 00:00:37,259
+Teşekkürler.
+
+5
+00:01:14,644 --> 00:01:21,424
+Let me share my screen. So are you able to see my screen? Yes.
+
+6
+00:01:29,780 --> 00:01:33,780
+Okay, so if you can see my screen, we can get started.
+
+7
+00:01:38,195 --> 00:01:46,775
+Before we start the lecture, let me also remind you that we have an upcoming midterm exam.
+
+8
+00:01:48,555 --> 00:01:57,615
+And as you know, next week, the class day, Friday, is holiday for Bayram, and we won't have a class.
+
+9
+00:01:58,000 --> 00:02:50,027
+Bu, bu
+
+10
+00:02:50,099 --> 00:03:09,740
+Do some mathematical calculations and answer some comments and maybe do some, you know, comparison or also you may have to explain the methodologies, that type of questions that you might expect.
+
+11
+00:03:11,340 --> 00:03:13,439
+Okay, any questions about the exam?
+
+12
+00:03:15,439 --> 00:03:17,163
+So this is...
+
+13
+00:03:17,716 --> 00:03:35,052
+Bu, bu
+
+14
+00:03:35,092 --> 00:03:40,172
+ve NAEVBASE ve SPM'de
+
+15
+00:03:40,172 --> 00:03:42,092
+bu konuda
+
+16
+00:03:42,092 --> 00:03:44,451
+ve bu konuda
+
+17
+00:03:44,451 --> 00:03:49,271
+bu konuda
+
+18
+00:03:49,271 --> 00:03:50,652
+neyinizde
+
+19
+00:03:50,652 --> 00:03:52,412
+konuda
+
+20
+00:03:52,412 --> 00:03:53,252
+bu
+
+21
+00:03:56,948 --> 00:04:06,307
+Seemiz like no questions. Let me continue with our discussion. Last week, I think this was where we left off, right?
+
+22
+00:04:06,888 --> 00:04:16,228
+We discussed different types of measures of, okay, let me, I think this was the last discussion that we mentioned.
+
+23
+00:04:18,087 --> 00:04:23,288
+In a given decision tree, how do we determine?
+
+24
+00:04:24,019 --> 00:04:50,827
+bu engeç
+
+25
+00:04:50,899 --> 00:04:53,879
+Bu ne bu adı önemli bir adı,
+
+26
+00:04:53,879 --> 00:04:55,740
+daha sonra diğer adı.
+
+27
+00:05:02,163 --> 00:05:10,403
+What was the criteria that we use for choosing the attributes in the decision trees? Anybody remember?
+
+28
+00:05:19,124 --> 00:05:20,124
+Evet, no.
+
+29
+00:05:45,139 --> 00:05:53,480
+Evet, as [öğrenci] said, we are looking for the one attribute that homogenizes the splits.
+
+30
+00:05:53,480 --> 00:06:03,480
+Before the splits, if the data is not homogeneous or heterogeneous, we want to apply the attribute that...
+
+31
+00:06:03,732 --> 00:06:21,324
+Bu yüzden bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+32
+00:06:27,028 --> 00:06:33,708
+Selatim'in soru, A. A değil, bu ne? Bu ne? Bu ne?
+
+33
+00:06:37,204 --> 00:06:39,384
+C is not also the best idea.
+
+34
+00:06:40,384 --> 00:06:45,543
+Okay, why was C not the best attribute?
+
+35
+00:06:45,963 --> 00:06:49,843
+Anybody can explain why was C not selected?
+
+36
+00:06:54,259 --> 00:07:00,339
+Anybody remember that we discussed that t was not the best condition or best attribute?
+
+37
+00:07:01,539 --> 00:07:03,419
+What was the main reason for that?
+
+38
+00:07:09,684 --> 00:07:10,723
+What does C do?
+
+39
+00:07:15,723 --> 00:07:18,524
+Yes, if you recall our discussion,
+
+40
+00:07:18,524 --> 00:07:21,843
+you can see that
+
+41
+00:07:21,843 --> 00:07:24,283
+C
+
+42
+00:07:24,283 --> 00:07:26,283
+is
+
+43
+00:07:26,283 --> 00:07:27,963
+distributing
+
+44
+00:07:27,963 --> 00:07:29,584
+all entries
+
+45
+00:07:29,584 --> 00:07:31,103
+into
+
+46
+00:07:31,103 --> 00:07:33,364
+a leaf node.
+
+47
+00:07:34,228 --> 00:07:42,887
+Yani, in total, we have 20 rows, 20 records, 10 of them is yes, 10 of them is no.
+
+48
+00:07:44,207 --> 00:07:47,908
+So, how many different splits does C makes?
+
+49
+00:07:48,567 --> 00:07:51,267
+1, 2, 3, 4, all the way to 20, right?
+
+50
+00:07:51,548 --> 00:07:57,048
+And each of the splits contain a single value, 1 or 0, right?
+
+51
+00:07:57,247 --> 00:07:58,207
+0 or 1.
+
+52
+00:07:58,771 --> 00:08:03,771
+Yani bu c'e bu kadar da bir generalizasyon.
+
+53
+00:08:03,771 --> 00:08:08,771
+Bu, hiçbiri birçok var.
+
+54
+00:08:08,771 --> 00:08:21,771
+Bu, herçok var.
+
+55
+00:08:21,771 --> 00:08:26,764
+Çünkü herçok var.
+
+56
+00:08:27,348 --> 00:08:34,668
+You need to come up with some distribution so that you can generalize that information for unknown values.
+
+57
+00:08:35,367 --> 00:08:39,087
+If everybody is unique, there is no purpose of predicting, right?
+
+58
+00:08:39,087 --> 00:08:43,107
+There is no reason for predicting anything because everybody is different, okay?
+
+59
+00:08:43,107 --> 00:08:54,448
+So C is not a good idea because C, although accuracy or, you know, the prediction is 1-0, distribution is highly.
+
+60
+00:08:54,943 --> 00:08:56,943
+bu, oranlıca,
+
+61
+00:08:56,943 --> 00:08:58,943
+ama genelde yok.
+
+62
+00:08:58,943 --> 00:09:00,943
+Bu genelde yok genelde yok.
+
+63
+00:09:00,943 --> 00:09:04,943
+Bu nedenle bu nedenle yok.
+
+64
+00:09:04,943 --> 00:09:06,943
+Bu nedenle bu nedenle
+
+65
+00:09:06,943 --> 00:09:08,943
+A'ı biraz ok,
+
+66
+00:09:08,943 --> 00:09:10,943
+ama bu nedenle yok.
+
+67
+00:09:10,943 --> 00:09:12,943
+Bu nedenle yok?
+
+68
+00:09:12,943 --> 00:09:13,675
+Bu nedenle bu nedenle?
+
+69
+00:09:17,875 --> 00:09:22,456
+Y, A is not the best case.
+
+70
+00:09:46,196 --> 00:09:49,556
+Why should we choose A or why should we choose B?
+
+71
+00:09:57,107 --> 00:10:06,167
+[öğrenci] says, it doesn't split up the homogeneous groups as much as B. Yes, we can visually see that, right?
+
+72
+00:10:06,267 --> 00:10:18,187
+Because some of these attributes on the A, if you can see, it increases the purity or homogeneity,
+
+73
+00:10:18,187 --> 00:10:23,187
+but it is not as clear as in the case of...
+
+74
+00:10:25,940 --> 00:11:20,460
+Bu, bu
+
+75
+00:11:20,916 --> 00:11:23,036
+Gini is one of them.
+
+76
+00:11:44,980 --> 00:12:11,692
+Ve bu adıları farklı adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adıları, bu adı
+
+77
+00:12:12,467 --> 00:12:39,307
+genisinde de genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde genisinde
+
+78
+00:12:39,347 --> 00:12:41,267
+This is called information gain.
+
+79
+00:12:42,207 --> 00:12:52,127
+It's simply the difference between Gini at the beginning, M0, minus Gini after the split.
+
+80
+00:12:52,787 --> 00:12:58,727
+Let's say just Gini M12 is combined Gini.
+
+81
+00:12:59,467 --> 00:13:01,427
+And this is for attribute A.
+
+82
+00:13:01,427 --> 00:13:04,587
+We also do the same thing for attribute B.
+
+83
+00:13:07,827 --> 00:13:15,507
+Let's call this gain B, equal to Gini M0, because beginning or before split is the same condition for all attributes.
+
+84
+00:13:16,267 --> 00:13:23,347
+And let's call this Gini M3, and this is Gini M4.
+
+85
+00:13:24,247 --> 00:13:29,407
+So the splitting makes this combined Gini M3, M4.
+
+86
+00:13:34,580 --> 00:13:46,920
+A, we compare Gini's information gain, or gain A versus gain B.
+
+87
+00:13:47,220 --> 00:13:51,020
+Whichever has more gain, then that attribute is chosen.
+
+88
+00:13:52,020 --> 00:14:02,140
+Because the beginning condition is same for every attribute, but the difference is gained through the children's.
+
+89
+00:14:02,676 --> 00:14:09,755
+Gini. If the Gini is reduced, then the gap between this before splitting and after splitting is going to be large.
+
+90
+00:14:10,096 --> 00:14:18,515
+In other sense, information gain, we call this information gain, information gain is going to be larger.
+
+91
+00:14:19,135 --> 00:14:26,755
+The information gain, for instance, is larger for attribute A, then this attribute becomes the most important one.
+
+92
+00:14:31,412 --> 00:14:33,692
+So, let me just recap that.
+
+93
+00:14:34,572 --> 00:14:39,232
+This is before splitting M0, and these are after splitting.
+
+94
+00:14:39,812 --> 00:14:47,152
+We calculate genie's for before splitting, and we calculate genie after splitting, and we compare.
+
+95
+00:14:47,332 --> 00:14:50,832
+Whichever is greater, then that attribute is more important.
+
+96
+00:14:51,512 --> 00:14:53,152
+Okay, that's simple as that.
+
+97
+00:14:54,372 --> 00:14:57,212
+And genie calculation is quite simple.
+
+98
+00:14:58,607 --> 00:15:06,247
+A class distribution, assume that at the beginning we had 10 yes 10 no.
+
+99
+00:15:08,727 --> 00:15:12,307
+How do we calculate the geneal for this case?
+
+100
+00:15:15,548 --> 00:15:18,967
+Okay, let's see the calculation example.
+
+101
+00:15:19,827 --> 00:15:23,867
+Okay, this is 10 yes.
+
+102
+00:15:26,515 --> 00:15:28,276
+ve 10, no. Okay?
+
+103
+00:15:28,716 --> 00:15:31,296
+How do we calculate Gini for this example?
+
+104
+00:15:31,296 --> 00:15:39,576
+Gini is 1 minus 1, 2, n, probability
+
+105
+00:15:39,576 --> 00:15:42,755
+of
+
+106
+00:15:59,251 --> 00:16:00,191
+Okay, excellently.
+
+107
+00:16:07,892 --> 00:16:12,012
+Evet, bu
+
+108
+00:16:12,012 --> 00:16:15,012
+T i².
+
+109
+00:16:15,012 --> 00:16:17,692
+Bu,
+
+110
+00:16:17,692 --> 00:16:20,792
+yes is,
+
+111
+00:16:20,792 --> 00:16:21,932
+in this case,
+
+112
+00:16:25,652 --> 00:16:53,388
+Bir sonraki bir sorun.
+
+113
+00:17:27,188 --> 00:17:55,115
+Evet, bu kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kereliklerden bir kerelikler
+
+114
+00:17:55,539 --> 00:17:57,539
+Evet.
+
+115
+00:18:03,763 --> 00:18:12,643
+Let's assume that, okay one second, let me close these. Let's assume that after the split it becomes
+
+116
+00:18:19,731 --> 00:18:37,811
+12, 8, 8, 12. So, the split becomes this way. After splitting with attribute 8, we end up with 12 and 8, 12 and 8.
+
+117
+00:18:38,531 --> 00:18:46,051
+What is the probability distribution? This becomes 8 over 20, or no.
+
+118
+00:18:47,220 --> 00:18:56,099
+ve bu, yes, bu, 12 ve 20.
+
+119
+00:18:56,099 --> 00:19:02,579
+Bu, bu, 2 ve 5.
+
+120
+00:19:02,579 --> 00:19:07,699
+Bu, bu, 3 ve 5.
+
+121
+00:19:15,796 --> 00:19:33,556
+2 over 5 square, plus 3 over 5 square, and that becomes 1 minus 4 over 25 minus 9 over 25.
+
+122
+00:19:33,556 --> 00:19:42,715
+So this is 25 over 25, it's 16, 12 over 25.
+
+123
+00:19:43,508 --> 00:20:11,340
+Evet, bu kadar daha büyük, daha
+
+124
+00:20:11,604 --> 00:20:13,204
+0.48.
+
+125
+00:20:15,443 --> 00:20:21,844
+So you can calculate for each attribute as a Gini metric and how each attribute makes difference.
+
+126
+00:20:22,564 --> 00:20:27,204
+If this distribution was even better, you could see the results even more clear.
+
+127
+00:20:28,164 --> 00:20:38,564
+For instance, we have a Gini case where in the original situation, if it is purely homogeneous,
+
+128
+00:20:40,019 --> 00:20:46,019
+As in this case, if it is purely homogenous, you will notice that Gini becomes 0.
+
+129
+00:20:46,660 --> 00:20:51,299
+Because the probability distribution is becoming 0 and 1 plus distribution.
+
+130
+00:20:51,940 --> 00:21:00,500
+And 1 minus 0 minus 1 is equal to 0. So Gini, when it is pure, it is 0.
+
+131
+00:21:01,460 --> 00:21:04,980
+What about the case that it is?
+
+132
+00:21:05,491 --> 00:21:11,052
+Fully heterogeneous, meaning 3 over 3, 3 yes and 3 no.
+
+133
+00:21:11,692 --> 00:21:13,751
+In that case, what do you expect?
+
+134
+00:21:14,531 --> 00:21:22,152
+It's going to be 1 minus 1 over 4 minus 1 over 4, so it's going to be 0.5.
+
+135
+00:21:22,552 --> 00:21:25,172
+In that case, Gini is going to be 0.5.
+
+136
+00:21:29,971 --> 00:21:32,871
+Ok.
+
+137
+00:21:38,259 --> 00:21:44,020
+Okay, [öğrenci], let's see, we divide it to 40 or 20.
+
+138
+00:21:56,500 --> 00:22:01,959
+Okay, so I assume that this is 20 and 20, not 10 minutes time. Okay.
+
+139
+00:22:03,619 --> 00:22:15,299
+Same thing, but you get the idea that, you know, if you have a class distribution that is more pure or homogeneous, the genie is going to reduce to zero.
+
+140
+00:22:15,299 --> 00:22:23,119
+But when you have heterogeneity, okay, when you have heterogeneity, it becomes
+
+141
+00:22:24,019 --> 00:22:26,019
+Bir şeyin bir şeyin bir şeyin.
+
+142
+00:22:26,019 --> 00:22:46,019
+Bir şeyin bir şeyin.
+
+143
+00:22:48,948 --> 00:22:51,948
+bu kadar 0.5
+
+144
+00:22:51,948 --> 00:22:55,948
+bu nasıl geni
+
+145
+00:22:55,948 --> 00:22:56,948
+geni
+
+146
+00:22:56,948 --> 00:22:58,948
+ama
+
+147
+00:22:58,948 --> 00:23:01,948
+bu
+
+148
+00:23:01,948 --> 00:23:02,948
+çocuklar
+
+149
+00:23:02,948 --> 00:23:15,948
+geni
+
+150
+00:23:14,607 --> 00:23:40,247
+Açıkçı geni. Let me give you an example. The parent geni was 0 divided by 0. Sorry. Assume that the parent geni was 6 and 6. And so the geni here is 0.5, right? Because it's evenly distributed. Okay. How about if this was distributed like 5, 2,
+
+151
+00:23:42,780 --> 00:23:45,780
+geni
+
+152
+00:23:41,940 --> 00:24:08,011
+ve bu bir
+
+153
+00:24:08,180 --> 00:24:11,920
+ve bu kadar 0.4 over 8.
+
+154
+00:24:13,279 --> 00:24:15,759
+We do the same thing for this side, Gini.
+
+155
+00:24:15,960 --> 00:24:24,700
+It is 1 minus 1 over 5 squared minus 4 over 5 squared, because this is 4 over 5, and the probability for the first one is 1 over 5.
+
+156
+00:24:25,980 --> 00:24:30,259
+So we calculate that it becomes 0.32.
+
+157
+00:24:31,059 --> 00:24:45,439
+Normal, you know, you would say arithmetic mean would be the total genie for that node is 0.848 plus, sorry, let me just erase this.
+
+158
+00:24:47,219 --> 00:24:49,979
+So the total genie would be children's genie.
+
+159
+00:24:53,971 --> 00:25:00,552
+Bu, 0.408, 0.320, devide 2.
+
+160
+00:25:01,172 --> 00:25:15,352
+And that would be something like 20, 728, 0.728, devide 2, it's going to be 0.36.4.
+
+161
+00:25:15,352 --> 00:25:20,152
+Okay, so arithmetic mean would be 0.36.
+
+162
+00:25:20,723 --> 00:25:30,203
+Bu bir soru değil, çünkü on the left side you have 7 items, 2 plus 5.
+
+163
+00:25:30,203 --> 00:25:35,183
+Total weight of the left side, Gini, 5 over 7.
+
+164
+00:25:36,243 --> 00:25:42,423
+However, on the right-hand side you have 5 elements, so 5 over 7.
+
+165
+00:25:42,983 --> 00:25:43,563
+Sorry.
+
+166
+00:25:44,180 --> 00:25:46,180
+Bir second, bir second.
+
+167
+00:25:46,180 --> 00:25:50,180
+Seven, bir sede, bir sede.
+
+168
+00:25:50,180 --> 00:25:56,180
+Bir sede, bir sede, bir sede, bir sede, bir sede, bir sede.
+
+169
+00:25:56,180 --> 00:26:02,180
+Ve sede, bir sede, bir sede, bir sede.
+
+170
+00:26:02,180 --> 00:26:08,044
+Bir sede, bir sede, bir sede.
+
+171
+00:26:08,084 --> 00:26:11,084
+Bu, 5.12.
+
+172
+00:26:11,084 --> 00:26:14,084
+Bu, 7.12.
+
+173
+00:26:36,403 --> 00:26:39,644
+Evet, 7-5 on children.
+
+174
+00:26:40,304 --> 00:26:44,503
+And once, let me, I can, not 6 and 6.
+
+175
+00:26:45,943 --> 00:26:49,483
+[öğrenci], yes, left-hand side has 7 children.
+
+176
+00:26:50,144 --> 00:26:52,624
+Okay, when we divide right-hand side has 5 children.
+
+177
+00:26:53,144 --> 00:26:55,884
+But at the top, we had 6 plus 6.
+
+178
+00:26:56,683 --> 00:26:57,624
+So 12, okay?
+
+179
+00:26:59,804 --> 00:27:01,163
+Does that answer your question?
+
+180
+00:27:04,435 --> 00:27:14,355
+So in other sense, when we calculate genies and entropies, we need to take into account the averages from the weighted average, not the automatic average.
+
+181
+00:27:16,915 --> 00:27:25,875
+What about, this is the case for categorical variable, what about if we have some continuous variables?
+
+182
+00:27:30,067 --> 00:27:34,988
+In the previous example, we had taxable income being greater than some value.
+
+183
+00:27:35,528 --> 00:27:44,928
+In that case, how do we calculate that cutoff threshold for numerical values that's continuous variable?
+
+184
+00:27:45,827 --> 00:27:47,868
+There are two ways that you can do.
+
+185
+00:27:47,988 --> 00:27:53,048
+You can say, okay, something greater than some threshold, yes or no.
+
+186
+00:27:53,768 --> 00:27:56,327
+In this case, we had, for instance,
+
+187
+00:27:56,884 --> 00:28:04,884
+Bu, 80,000, yas ve no, ve alıgıdık, yas ve alıgıdık, yas ve alıgıdık, yas ve alıgıdık,
+
+188
+00:28:15,443 --> 00:28:20,764
+Ve bu şekilde bu şekilde bir şekilde,
+
+189
+00:28:20,764 --> 00:28:24,083
+bu şekilde, bu tablisiniz,
+
+190
+00:28:24,083 --> 00:28:25,923
+bu tablisiniz,
+
+191
+00:28:25,923 --> 00:28:27,963
+ve bu tablisinizde,
+
+192
+00:28:27,963 --> 00:28:30,364
+bu tablisinizde,
+
+193
+00:28:30,364 --> 00:28:34,324
+ve bu tablisinizde,
+
+194
+00:28:34,324 --> 00:28:42,324
+bu tablisinizde,
+
+195
+00:28:42,836 --> 00:28:46,155
+6K'da 60,
+
+196
+00:28:46,155 --> 00:28:50,016
+sonra 70,
+
+197
+00:28:50,016 --> 00:28:53,016
+sonra 75,
+
+198
+00:28:53,016 --> 00:28:57,336
+ve sonra 85,
+
+199
+00:28:57,336 --> 00:29:00,336
+90,
+
+200
+00:29:00,336 --> 00:29:03,336
+100,
+
+201
+00:29:03,336 --> 00:29:06,336
+125,
+
+202
+00:29:06,336 --> 00:29:08,336
+2200.
+
+203
+00:29:10,451 --> 00:29:15,451
+Bu şekilde ortakları bir şekilde ortakları var.
+
+204
+00:29:16,451 --> 00:29:18,451
+Bir sonraki bu ortakları var,
+
+205
+00:29:18,451 --> 00:29:20,451
+bu ortakları var.
+
+206
+00:29:35,859 --> 00:29:37,940
+Let me go to here.
+
+207
+00:29:38,500 --> 00:29:47,000
+So this would become, you have a cutoff point at 65, anything less than that, anything greater than that.
+
+208
+00:29:47,460 --> 00:29:51,680
+Now we calculate the Gini for this side and that side and we take the average.
+
+209
+00:29:52,799 --> 00:29:53,819
+Okay, we calculate the average.
+
+210
+00:29:53,819 --> 00:30:01,639
+We keep repeating for the middle of the second two numbers and also we do this for
+
+211
+00:30:02,483 --> 00:30:04,483
+Bir de bu sebeple numarını yapıyoruz.
+
+212
+00:30:04,483 --> 00:30:06,483
+Bu sebeple bir bu sebeple.
+
+213
+00:30:06,483 --> 00:30:09,483
+17.5 ve bu sebeple.
+
+214
+00:30:09,483 --> 00:30:10,483
+Ve bu sebeple.
+
+215
+00:30:10,483 --> 00:30:12,483
+Ve bu sebeple bir yerine.
+
+216
+00:30:12,483 --> 00:30:14,483
+Bir yerine gini.
+
+217
+00:30:28,756 --> 00:30:33,115
+bu numarın, evet ve no.
+
+218
+00:30:56,243 --> 00:30:59,563
+Surtal bir şey, ve bu bölümde de büyük bir şey,
+
+219
+00:30:59,563 --> 00:31:03,563
+ve bu bölümde de büyük bir şey,
+
+220
+00:31:03,563 --> 00:31:06,683
+eğer, bu bölümde de 65,
+
+221
+00:31:06,683 --> 00:31:11,723
+bu bölümde de 65,
+
+222
+00:31:11,723 --> 00:31:13,003
+bu bölümde de yes,
+
+223
+00:31:13,003 --> 00:31:15,803
+ve bu bölümde de no.
+
+224
+00:31:15,803 --> 00:31:19,123
+Bu bölümde de 65,
+
+225
+00:31:19,123 --> 00:31:19,923
+yes,
+
+226
+00:31:19,923 --> 00:31:21,083
+65,
+
+227
+00:31:21,083 --> 00:31:21,675
+no.
+
+228
+00:31:21,715 --> 00:31:48,043
+Bu genie olarak, bu genie olarak 0.4'ye kadar 0.4'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'ye kadar 0.5'
+
+229
+00:31:48,339 --> 00:32:02,891
+ve bu konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir konusunda bir kon
+
+230
+00:32:12,372 --> 00:32:14,472
+Okay, so that's a good question, [öğrenci].
+
+231
+00:32:15,552 --> 00:32:26,992
+If we have, okay, would it be computationally heavy if this would be the case for unique attributes?
+
+232
+00:32:26,992 --> 00:32:33,912
+This would become problem only when we have, okay, let me go to here.
+
+233
+00:32:34,324 --> 00:32:37,324
+Bu durumda bir problematik,
+
+234
+00:32:37,324 --> 00:32:40,764
+bu durumda, her item, her number
+
+235
+00:32:40,764 --> 00:32:42,963
+in this attribute
+
+236
+00:32:42,963 --> 00:32:45,963
+var to be unique.
+
+237
+00:32:45,963 --> 00:32:47,963
+Bu durumda birçok,
+
+238
+00:32:47,963 --> 00:32:49,963
+her item var,
+
+239
+00:32:49,963 --> 00:32:52,683
+çünkü her item,
+
+240
+00:32:52,683 --> 00:32:53,604
+let's say,
+
+241
+00:32:53,604 --> 00:32:55,284
+1, 2, 3,
+
+242
+00:32:55,284 --> 00:32:56,644
+alıza n,
+
+243
+00:32:56,644 --> 00:32:58,324
+bu durumda birçok,
+
+244
+00:32:58,324 --> 00:33:01,324
+n times.
+
+245
+00:33:02,451 --> 00:33:30,251
+Çünkü bu kadar farklı
+
+246
+00:33:32,915 --> 00:33:42,955
+The second metric is entropy. Entropy is similar to Gini. The only difference is that formulation is slightly different.
+
+247
+00:33:42,955 --> 00:34:00,076
+So in Gini formulation, we had 1 minus probability i t squared. But in here, the difference is that we multiply the probability
+
+248
+00:34:00,852 --> 00:34:03,291
+ve log, log-probabiliteli.
+
+249
+00:34:04,172 --> 00:34:06,731
+And that is basically how the Gini is calculated.
+
+250
+00:34:07,692 --> 00:34:12,551
+And Gini is also logarithmic metric.
+
+251
+00:34:13,572 --> 00:34:16,372
+Let's see this on an example.
+
+252
+00:34:16,952 --> 00:34:20,311
+Our initial distribution is 0 and 6.
+
+253
+00:34:20,612 --> 00:34:24,952
+So our probabilities are 0.0 over 6 and 6 over 6.
+
+254
+00:34:25,511 --> 00:34:28,311
+So this is 1, this is 0, as you can see.
+
+255
+00:34:28,755 --> 00:34:32,755
+So, probability of 0 and probability of 1.
+
+256
+00:34:33,416 --> 00:34:41,175
+For the entropy, this becomes the probability itself times log 0 minus 1 times log 1.
+
+257
+00:34:41,815 --> 00:34:46,855
+So, anything multiplied by 0 is 0 minus, what is the value of log 1?
+
+258
+00:34:49,255 --> 00:34:53,395
+What makes, what's the value of log 1?
+
+259
+00:34:55,603 --> 00:35:03,203
+Bu, 0, right? Bu, only log 1 when the value is 0. Bu, this is 0, 1 times 0 is 0.
+
+260
+00:35:03,844 --> 00:35:10,243
+So, same as Gini, the pure case, the homogeneous case is 0.
+
+261
+00:35:11,283 --> 00:35:17,844
+Let's see how it behaves when we increase heterogeneity. So, when it is 1 over 5,
+
+262
+00:35:18,271 --> 00:35:21,492
+Prohibit distribution 1 over 6, 5 over 6.
+
+263
+00:35:21,731 --> 00:35:25,211
+If you calculate the logs, it becomes 0.65.
+
+264
+00:35:26,271 --> 00:35:28,532
+As you can see, it quickly increases.
+
+265
+00:35:29,152 --> 00:35:32,032
+What would be the case for 3 and 3 case?
+
+266
+00:35:33,072 --> 00:35:34,711
+Pure image heterogeneous case.
+
+267
+00:35:38,452 --> 00:36:04,463
+Bu, bu
+
+268
+00:36:04,463 --> 00:36:29,132
+Yani 1,0,
+
+269
+00:36:29,940 --> 00:36:39,940
+Ayrıca ve bu
+
+270
+00:36:39,940 --> 00:36:43,940
+Ayrıca
+
+271
+00:36:43,940 --> 00:36:49,940
+Bir sonra
+
+272
+00:36:49,940 --> 00:36:51,940
+Gini
+
+273
+00:36:52,500 --> 00:36:54,659
+Anthropy for information gain.
+
+274
+00:36:55,779 --> 00:37:02,860
+For instance, algorithm C4.5 uses Anthropy, some other algorithms use Gini,
+
+275
+00:37:03,319 --> 00:37:08,380
+and current libraries allow you to choose any attribute as an attribute.
+
+276
+00:37:08,600 --> 00:37:14,380
+Choose Gini or Anthropy or misclassification error, depending on your algorithm parameters.
+
+277
+00:37:15,923 --> 00:37:21,943
+The last criteria we will explore is classification error, misclassification error.
+
+278
+00:37:22,363 --> 00:37:27,903
+This is simply calculated as 1 minus probability of maximum probability.
+
+279
+00:37:28,563 --> 00:37:29,503
+Let me show you this.
+
+280
+00:37:30,163 --> 00:37:33,523
+In this case, this is a linear function.
+
+281
+00:37:33,523 --> 00:37:34,743
+This is a linear function.
+
+282
+00:37:39,956 --> 00:37:47,655
+Bu, homogenous case, the probability distribution is 0 over 6, it is 0.
+
+283
+00:37:48,155 --> 00:37:52,756
+The second case probability is 6 over 6, the probability is 1.
+
+284
+00:37:53,516 --> 00:38:01,195
+So, 1 minus maximum of 0.6, 6.6.
+
+285
+00:38:01,716 --> 00:38:03,155
+So, which one of them is maximum?
+
+286
+00:38:03,296 --> 00:38:04,556
+This is 0, this is 1.
+
+287
+00:38:05,436 --> 00:38:06,735
+The maximum is also 1.
+
+288
+00:38:07,476 --> 00:38:18,036
+1-1-1-0. So in this classification error, the pure case or homogeneous case is also 0 as genome.
+
+289
+00:38:19,315 --> 00:38:29,235
+When we increase the probabilities, let's say this is evenly distributed, then this becomes 1-maximum
+
+290
+00:38:33,492 --> 00:38:58,211
+3, 3, 6. So, this is 1 minus max, 1 over 2, 1 over 2. So, the maximum of this is 1 over 2. 1 minus 1 over 2, it is 1 over 2. As you can see, it is heterogeneous case. This also becomes maximum, and that is peaked at 0.5.
+
+291
+00:38:59,603 --> 00:39:07,324
+So, if you were to compare these three criterias, entropi is a logarithmic function.
+
+292
+00:39:07,324 --> 00:39:18,023
+It starts at zero, it goes to top at one, and this is exactly occurring when you have heterogeneous case.
+
+293
+00:39:26,771 --> 00:39:33,172
+bu sadece bu sadece
+
+294
+00:39:33,172 --> 00:39:38,771
+ve bu sadece 0'e
+
+295
+00:39:38,771 --> 00:39:50,771
+bu sadece 0'e
+
+296
+00:39:49,780 --> 00:39:58,780
+ve misclassification errori, gene is a linear function, gene is a polynomial function, and entropy is a logarithmic function.
+
+297
+00:39:58,780 --> 00:40:08,780
+That's all the difference. You can use any of the three, but entropy and gene is more sensitive to the changes, class distribution.
+
+298
+00:40:09,364 --> 00:40:17,443
+Misclassification error is a linear one, so it is not as sensitive as other ones, but eventually you would get the same results or very close results.
+
+299
+00:40:19,903 --> 00:40:22,344
+Okay, so far so good. Any questions?
+
+300
+00:40:26,547 --> 00:40:29,627
+Okay, let me also continue.
+
+301
+00:40:30,127 --> 00:40:31,147
+Where do we stop?
+
+302
+00:40:31,607 --> 00:40:34,067
+Okay, this is another important point.
+
+303
+00:40:34,207 --> 00:40:37,727
+Where do we stop building a tree?
+
+304
+00:40:37,727 --> 00:40:43,807
+Okay, what is the best point to stop growing?
+
+305
+00:40:44,547 --> 00:40:50,687
+Because one problem with tree induction is that when you keep increasing,
+
+306
+00:40:52,127 --> 00:40:53,087
+okay,
+
+307
+00:40:54,260 --> 00:40:55,719
+Let me go to here.
+
+308
+00:40:58,219 --> 00:41:00,480
+So you may keep splitting.
+
+309
+00:41:00,800 --> 00:41:03,219
+Let's say there's 10 yes and 10 no.
+
+310
+00:41:04,900 --> 00:41:11,719
+You split with this one attribute and then this becomes, you know, 5, 3.
+
+311
+00:41:13,420 --> 00:41:18,179
+And the side becomes 7, 5.
+
+312
+00:41:18,179 --> 00:41:19,880
+And you keep splitting.
+
+313
+00:41:24,179 --> 00:41:45,799
+Let's say this is 2, 1, this is 3, 2. You keep splitting, splitting, and eventually this goes to, you know, 2, 0, 1, 2, and you can also split this to 1, 2, and so on.
+
+314
+00:41:47,476 --> 00:41:57,476
+Bu, ne oluyoruz, çok farklı bir arayla? Bu, ne oluyor? Bu, ne oluyor? Bu, ne oluyor? Bu, ne oluyor?
+
+315
+00:42:02,288 --> 00:42:06,288
+bu sadece 0'e
+
+316
+00:42:00,788 --> 00:42:18,572
+Bu da bu
+
+317
+00:42:22,835 --> 00:42:27,835
+Evet.
+
+318
+00:42:49,907 --> 00:42:52,047
+A generalization, let me give an example.
+
+319
+00:42:52,268 --> 00:43:08,027
+You may say, okay, if a customer is married and he or she makes, you know, more than this much salary, this person is going to pay the loan or something like that.
+
+320
+00:43:08,027 --> 00:43:09,027
+You want to be...
+
+321
+00:43:09,460 --> 00:43:11,500
+As generalize as this, okay?
+
+322
+00:43:11,960 --> 00:43:25,360
+But it is not a good idea to say, okay, if a person is married, a person lives in, you know, Yildiz, and he makes this much money, he's located on the third floor.
+
+323
+00:43:26,080 --> 00:43:28,320
+That is not very generalized, right?
+
+324
+00:43:28,420 --> 00:43:29,540
+This is very specific.
+
+325
+00:43:30,600 --> 00:43:35,640
+The main problem with that is when you keep building the trees.
+
+326
+00:43:36,047 --> 00:43:39,367
+Bu konuda, bir problemi, bir problemi.
+
+327
+00:43:59,219 --> 00:44:03,779
+You will see that these values are not correctly predicted.
+
+328
+00:44:04,119 --> 00:44:07,699
+There will be a gap, error gap between training and testing.
+
+329
+00:44:08,559 --> 00:44:08,679
+Okay.
+
+330
+00:44:09,519 --> 00:44:16,419
+Although training error, training error will keep reducing for the complexity,
+
+331
+00:44:18,419 --> 00:44:23,839
+the testing error is not gonna, is not gonna reduce.
+
+332
+00:44:24,259 --> 00:44:26,459
+It's gonna actually increase after a point.
+
+333
+00:44:26,831 --> 00:44:28,271
+Bu model complexity.
+
+334
+00:44:29,811 --> 00:44:31,131
+Bu error.
+
+335
+00:44:32,091 --> 00:44:33,411
+Bu testing.
+
+336
+00:44:34,911 --> 00:44:37,751
+Bu meaning that your models are overfitted.
+
+337
+00:44:37,971 --> 00:44:40,271
+In other sense, your model...
+
+338
+00:44:41,936 --> 00:45:08,844
+bu modelde bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle bir örneklerle
+
+339
+00:45:09,492 --> 00:45:35,332
+There are some ways to eliminate that. There are some ways to early terminate. Early termination, there are some parameters in the algorithm such as maximum depth or minimum split or minimum leaf samples and things like that. These can be used for reducing. Let me go here. So when you are building, this is
+
+340
+00:45:36,563 --> 00:45:46,163
+Pre-pruning. Pre-pruning applies this way. So you can say that the maximum length can be like tree, tree depth.
+
+341
+00:45:47,284 --> 00:45:54,643
+Meaning that, you know, don't go too much to details. When you achieve one, two, three leaves, top it here.
+
+342
+00:45:54,643 --> 00:45:55,603
+So we have enough.
+
+343
+00:45:56,179 --> 00:46:03,179
+ve bu
+
+344
+00:46:03,179 --> 00:46:23,179
+bu
+
+345
+00:46:22,483 --> 00:46:27,684
+So, if you were to make this 100% purity, you would also have to split it, right?
+
+346
+00:46:27,784 --> 00:46:30,423
+You would have to split it to 120.
+
+347
+00:46:31,423 --> 00:46:37,324
+This is additional cost or more unique cases.
+
+348
+00:46:38,023 --> 00:46:43,264
+Maybe it's okay to have some error here, 0.5 error here.
+
+349
+00:46:43,664 --> 00:46:48,884
+to guarantee that you have a more generalizable solutions.
+
+350
+00:46:49,224 --> 00:46:52,884
+And there are some parameters to specify.
+
+351
+00:46:53,523 --> 00:46:55,884
+It doesn't have to be fully homogenous.
+
+352
+00:46:55,884 --> 00:47:04,923
+You can allow some sense of heterogeneity to accommodate for model complexity.
+
+353
+00:47:06,584 --> 00:47:07,784
+This is pre-pruning.
+
+354
+00:47:07,963 --> 00:47:10,884
+That's one scenario where you can...
+
+355
+00:47:11,840 --> 00:47:13,840
+bu
+
+356
+00:47:10,900 --> 00:47:38,731
+bu şekilde büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büyüye kadar büy
+
+357
+00:47:39,155 --> 00:47:45,555
+bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde
+
+358
+00:47:45,555 --> 00:47:52,115
+daha genelde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde
+
+359
+00:47:52,115 --> 00:48:00,036
+bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde bu şekilde
+
+360
+00:48:00,755 --> 00:48:08,155
+Bu yüzden bu şekilde görüntü, bu şekilde görüntü bu şekilde görüntü.
+
+361
+00:48:08,155 --> 00:48:11,655
+Bu yüzden bu şekilde görüntüleri çok iyi.
+
+362
+00:48:11,655 --> 00:48:19,655
+Bu önemli bir şey, bu çok iyi.
+
+363
+00:48:19,655 --> 00:48:21,655
+Çünkü...
+
+364
+00:48:23,731 --> 00:48:26,731
+Özellikle, bu bir şey var.
+
+365
+00:48:26,731 --> 00:48:28,731
+Bu, bir şey var.
+
+366
+00:48:28,731 --> 00:48:48,731
+Bir şey var.
+
+367
+00:48:51,059 --> 00:48:58,699
+Bu konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok konuda da birçok
+
+368
+00:48:58,867 --> 00:49:08,127
+Neural Networks, you don't have this ability. Model have some weights, but there's no reason why the model has chosen that one or that one.
+
+369
+00:49:08,607 --> 00:49:20,547
+There's no reason, there's no way to explain the model behavior. But with the decision tree, it is very interpretable. So this is a very important property.
+
+370
+00:49:23,920 --> 00:49:27,920
+Bu birçok birçok birçok birçok birçok.
+
+371
+00:49:27,920 --> 00:49:29,920
+Birçok birçok birçok.
+
+372
+00:49:29,920 --> 00:49:35,920
+Birçok birçok.
+
+373
+00:49:35,920 --> 00:49:39,920
+Çünkü birçok.
+
+374
+00:49:39,920 --> 00:49:41,900
+Birçok.
+
+375
+00:49:43,027 --> 00:49:50,027
+ve
+
+376
+00:49:50,027 --> 00:50:01,027
+bir
+
+377
+00:50:00,000 --> 00:50:19,880
+And also, decision trees, although single tree may not be as accurate, you can still build an ensemble of the trees to achieve very high accuracy, such as boosting and bagging algorithms uses tree mechanisms to build very sophisticated algorithms.
+
+378
+00:50:19,880 --> 00:50:20,720
+Okay.
+
+379
+00:50:21,980 --> 00:50:23,880
+But one thing that we need to also...
+
+380
+00:50:24,335 --> 00:50:33,895
+consider for classification is that how do we measure overfitting and underfitting?
+
+381
+00:50:35,607 --> 00:50:46,607
+bir
+
+382
+00:50:34,739 --> 00:50:36,739
+ve bu yapmalı ne yapmalı.
+
+383
+00:50:36,739 --> 00:50:38,739
+Bu yapmalı, bu yapmalı ne yapmalı.
+
+384
+00:50:38,739 --> 00:50:42,739
+Bu yapmalı, bu yapmalı.
+
+385
+00:50:42,739 --> 00:51:02,739
+Bu yapmalı.
+
+386
+00:51:02,739 --> 00:51:26,219
+ve sonra bu süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir süreçte bir
+
+387
+00:51:28,307 --> 00:51:40,247
+Okay, let's take 10 minutes break. We will meet at 3.10. Okay, we will continue after 10 minutes. See you soon. Okay. Bye-bye.
+
+388
+01:06:44,820 --> 01:06:46,020
+Okay, welcome back.
+
+389
+01:06:47,940 --> 01:06:49,300
+Let me share my screen.
+
+390
+01:07:02,387 --> 01:07:30,387
+Evet.
+
+391
+01:07:29,268 --> 01:07:37,428
+So, when model is a more complex case, what happens is that model performs well in training.
+
+392
+01:07:38,168 --> 01:07:43,688
+However, in real life or in testing case, model performance is not as good.
+
+393
+01:07:43,688 --> 01:07:49,048
+And there's a large gap between, just an example.
+
+394
+01:07:51,539 --> 01:08:00,139
+Ok, there's a large gap between the model performance and in testing and training.
+
+395
+01:08:00,139 --> 01:08:13,940
+Ok, there's no exact number where you would call overfitting and underfitting, but usually when this gap is greater than 5%,
+
+396
+01:08:15,367 --> 01:08:17,368
+Evet.
+
+397
+01:08:14,547 --> 01:08:18,547
+bu da bir kılıklarına göre görebilirsiniz.
+
+398
+01:08:18,547 --> 01:08:22,547
+Bu da bir kılıklarına görebilirsiniz.
+
+399
+01:08:22,547 --> 01:08:26,547
+Normalde, bu da bir kılıklarına görebilirsiniz.
+
+400
+01:08:26,547 --> 01:08:29,547
+Bu da, bu da modelde de uygulamaların
+
+401
+01:08:29,547 --> 01:08:32,547
+kılıkları için de uygulamalarını görebilirsiniz.
+
+402
+01:08:32,547 --> 01:08:36,547
+Bu da, bu da, bu da,
+
+403
+01:08:40,916 --> 01:08:48,916
+ve observer verifitting, up to a point, increasing the number of nodes, or the case of decision tree,
+
+404
+01:08:48,916 --> 01:08:58,916
+or increasing the model complexity, should reduce the training error, as also it follows the testing error.
+
+405
+01:08:58,916 --> 01:09:04,916
+For this case, you know, when you increase the number of nodes or model complexity,
+
+406
+01:09:09,203 --> 01:09:13,203
+Bu şekilde testiyle başlayacak.
+
+407
+01:09:13,203 --> 01:09:15,203
+Bu şekilde overfitting.
+
+408
+01:09:15,203 --> 01:09:17,203
+Bu nedenle underfitting?
+
+409
+01:09:17,203 --> 01:09:19,203
+Ve bu şekilde underfitting olarak görmek?
+
+410
+01:09:19,203 --> 01:09:20,555
+Ve bu şekilde?
+
+411
+01:09:28,180 --> 01:09:32,020
+Underfitting is the opposite of overfitting.
+
+412
+01:09:32,280 --> 01:09:40,860
+When your model is too simple to make the decision, so you're both training and testing errors are large, then this is underfitting.
+
+413
+01:09:40,860 --> 01:09:41,920
+Let me give an example.
+
+414
+01:09:42,540 --> 01:09:49,612
+Assume that we want to develop a model that makes decision on the...
+
+415
+01:10:14,975 --> 01:10:20,755
+Türk futbolu ile
+
+416
+01:10:20,755 --> 01:10:23,015
+ve bu sadece bir soru
+
+417
+01:10:23,015 --> 01:10:24,555
+için, Fenerbahçe'nin
+
+418
+01:10:24,555 --> 01:10:25,355
+bir soru
+
+419
+01:10:25,355 --> 01:10:26,355
+ve bu soru
+
+420
+01:10:26,355 --> 01:10:28,355
+bir soru
+
+421
+01:10:28,355 --> 01:10:35,995
+bu model
+
+422
+01:10:35,995 --> 01:10:36,395
+çünkü
+
+423
+01:10:36,395 --> 01:10:37,855
+bu model
+
+424
+01:10:37,855 --> 01:10:38,515
+bu
+
+425
+01:10:39,764 --> 01:10:46,764
+ve bu konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+426
+01:10:46,764 --> 01:10:51,764
+konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+427
+01:10:51,764 --> 01:10:58,764
+bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda bir konuda
+
+428
+01:11:08,212 --> 01:11:12,212
+bu şekilde
+
+429
+01:11:12,212 --> 01:11:34,128
+bu modelde
+
+430
+01:11:34,127 --> 01:11:43,087
+several hyperplanes to just to improve the training error. And this would lead to overfitting.
+
+431
+01:11:43,608 --> 01:11:52,647
+So noise quickly increased potential for overfitting because the decision boundary is distorted.
+
+432
+01:11:53,647 --> 01:12:00,807
+So it tries to learn those unique cases and that eventually would lead to overfitting.
+
+433
+01:12:02,452 --> 01:12:07,572
+Okay. Overfitting can also occur when you have insufficient examples.
+
+434
+01:12:08,572 --> 01:12:24,231
+When you don't have enough representation of data points to generalize, the model tries to learn those lack of the points and tries to have very large margins.
+
+435
+01:12:24,231 --> 01:12:28,231
+And that would lead to some...
+
+436
+01:12:29,615 --> 01:12:31,316
+overfitting as well.
+
+437
+01:12:32,036 --> 01:12:37,816
+There are many reasons for overfitting, but how do we overcome overfitting?
+
+438
+01:12:37,935 --> 01:12:44,376
+What are the strategies for overcoming overfitting?
+
+439
+01:12:44,976 --> 01:12:49,615
+This is general, not specific to this particular algorithm.
+
+440
+01:12:49,935 --> 01:12:51,576
+How do you overcome overfitting?
+
+441
+01:12:51,695 --> 01:12:54,976
+What are different ways to overcome overfitting?
+
+442
+01:12:55,376 --> 01:12:56,716
+Any suggestions?
+
+443
+01:12:58,931 --> 01:13:01,931
+ne yapabiliriz?
+
+444
+01:13:05,779 --> 01:13:12,260
+Evet, daha fazla data ve daha fazla data ve daha fazla data ve daha fazla dağılabilir. Bu bir şey.
+
+445
+01:13:12,979 --> 01:13:20,219
+Ama bazen, bu dağılabilir miyaz? Bu dağılabilir miyaz? Bu dağılabilir miyaz?
+
+446
+01:13:20,219 --> 01:13:21,219
+Bu dağılabilir miyaz?
+
+447
+01:13:25,939 --> 01:13:31,259
+Evet, bu da bu modelde iki adı var,
+
+448
+01:13:31,939 --> 01:13:37,819
+bu da bu modelde bu adı var?
+
+449
+01:13:50,163 --> 01:14:14,859
+Bu da bu
+
+450
+01:14:15,412 --> 01:14:19,412
+Eğer possible, bu kadar da bir nelerde de varlıklar var.
+
+451
+01:14:19,412 --> 01:14:23,412
+Bu da bir nelerde de varlıklar var.
+
+452
+01:14:23,412 --> 01:14:25,412
+Bu da daha çok daha iyi yapabilir?
+
+453
+01:14:25,412 --> 01:14:28,412
+Bu da daha çok daha iyi yapabilir.
+
+454
+01:14:29,747 --> 01:14:31,947
+Önceme, avoiding noises can help.
+
+455
+01:14:31,947 --> 01:14:34,987
+Önceme, you can remove the noise if possible.
+
+456
+01:14:34,987 --> 01:14:36,787
+Those might potentially help.
+
+457
+01:14:36,787 --> 01:14:40,787
+And also, try to minimize the model itself.
+
+458
+01:14:40,787 --> 01:14:44,787
+So regularization of the models would be helpful.
+
+459
+01:14:45,707 --> 01:14:47,547
+Okay, there are many ways.
+
+460
+01:14:47,547 --> 01:14:49,907
+It depends on algorithms as well.
+
+461
+01:14:49,907 --> 01:14:54,187
+For instance, if you are using a decision tree, you should try to cut off.
+
+462
+01:14:54,384 --> 01:15:18,220
+bu
+
+463
+01:15:18,676 --> 01:15:26,836
+There are some strategies. One of the examples would be we should measure the generalization of the errors.
+
+464
+01:15:28,676 --> 01:15:35,836
+Assume that we have some, we have training error. Let's say this is ET.
+
+465
+01:15:37,235 --> 01:15:43,155
+So, for all training measures, we calculate the training error.
+
+466
+01:15:43,155 --> 01:15:50,315
+So, this is some of the old errors for training, and this is the sum of the errors for testing.
+
+467
+01:15:50,876 --> 01:15:54,576
+Okay, this is some of the testing error.
+
+468
+01:15:55,275 --> 01:15:57,115
+The first one is a training error.
+
+469
+01:15:58,899 --> 01:16:04,079
+We will make a decision based on optimistic approach and pessimistic approach.
+
+470
+01:16:04,279 --> 01:16:10,439
+Optimistic approach is that, you know, it assumes that these are equal.
+
+471
+01:16:12,039 --> 01:16:16,659
+Training error should be similar to testing error.
+
+472
+01:16:16,659 --> 01:16:18,159
+The optimistic approach is that.
+
+473
+01:16:18,760 --> 01:16:25,239
+In the pessimistic approach, we will say that, you know, having more branches
+
+474
+01:16:26,068 --> 01:16:34,708
+Okay, having more branches should be penalized, because we don't want to have too many, you know, branches in a tree.
+
+475
+01:16:34,708 --> 01:16:40,587
+If we have more branches, that should also increase the cost of the model.
+
+476
+01:16:40,988 --> 01:16:44,887
+In other sense, it has potential to cause overfitting.
+
+477
+01:16:45,667 --> 01:16:50,488
+So that's why we will apply a penalty for each additional leaf node.
+
+478
+01:16:50,836 --> 01:16:59,336
+Şimdi, now we have two additional leaf node, we will apply 0.5 penalty for the accuracy or error metric.
+
+479
+01:17:00,136 --> 01:17:08,476
+For each leaf node, we will add to the cost of training plus 0.5 error metric.
+
+480
+01:17:09,016 --> 01:17:17,056
+So for total error, if you have four leaf nodes, additional leaf nodes, you will multiply by 0.5 plus the actual error.
+
+481
+01:17:19,296 --> 01:17:24,296
+bu
+
+482
+01:17:18,931 --> 01:17:21,931
+ve bu konuda bir şey verirken,
+
+483
+01:17:21,931 --> 01:17:23,931
+bu konuda bir şey verirken,
+
+484
+01:17:23,931 --> 01:17:25,931
+bu konuda bir konuda
+
+485
+01:17:25,931 --> 01:17:30,931
+ve 10'li bir konuda
+
+486
+01:17:30,931 --> 01:17:42,931
+bir konuda bir konuda
+
+487
+01:17:42,931 --> 01:17:44,876
+bir konuda
+
+488
+01:17:44,948 --> 01:17:47,628
+Bu 1% error, it is not bad for training.
+
+489
+01:17:48,408 --> 01:17:53,708
+But what about the testing case where it should be?
+
+490
+01:17:55,167 --> 01:18:04,448
+For that generalization, we had 10 instances of error plus, because we have 30 leaf nodes, that also adds up to the model complexity.
+
+491
+01:18:05,148 --> 01:18:08,667
+For pessimistic approach, we multiply by 30 by 0.5.
+
+492
+01:18:08,667 --> 01:18:10,528
+That adds up, you know,
+
+493
+01:18:11,344 --> 01:18:16,283
+Also, 0.5, 5 additional ones.
+
+494
+01:18:18,064 --> 01:18:24,824
+And if you calculate that, sorry, 15 additional ones,
+
+495
+01:18:25,244 --> 01:18:31,623
+so the total error becomes 25 over 1000, so 2.5% error.
+
+496
+01:18:32,043 --> 01:18:34,283
+Okay, there's a gap between 2.5 and 1.
+
+497
+01:18:35,423 --> 01:18:37,104
+Okay, so this is a simple example.
+
+498
+01:18:37,779 --> 01:19:05,471
+Bu, bu
+
+499
+01:19:05,471 --> 01:19:28,391
+Okay, for giving two models, if you have similar results, you should always choose the simpler model over more complex model, because simple models can more generalize versus complex models, and complex models are more likely to overfit, okay, by error or accidentally.
+
+500
+01:19:31,252 --> 01:19:56,720
+Bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde de bu modelde
+
+501
+01:19:56,720 --> 01:20:10,680
+ve bu, simply, kalkıdın, model, model, model, complexity, model, complexity, model, pittin, on this data, or error, metric.
+
+502
+01:20:10,680 --> 01:20:23,520
+Sadece, we calculate misclassification error plus regularization parameter, which is the cost of the model, meaning that how many, the number of leaf node, in other sense.
+
+503
+01:20:24,916 --> 01:20:31,916
+bu şekilde
+
+504
+01:20:31,916 --> 01:20:33,916
+ve bu şekilde
+
+505
+01:20:33,916 --> 01:20:50,916
+bu şekilde
+
+506
+01:20:49,492 --> 01:20:54,391
+In early pruning, or early stopping pre-pruning case, there are many strategies.
+
+507
+01:20:54,572 --> 01:21:02,252
+You can stop if you have all the same classes, you have some attributes that are having the same values,
+
+508
+01:21:02,252 --> 01:21:08,144
+or if you have some specific strategies, such as you check whether...
+
+509
+01:21:08,144 --> 01:21:11,144
+Açık adına neyirin bir adı var mı?
+
+510
+01:21:11,144 --> 01:21:20,144
+Bu da geni veren neyirin bir adı var mı?
+
+511
+01:21:20,144 --> 01:21:24,144
+Bir adı var mı?
+
+512
+01:21:24,467 --> 01:21:32,507
+çi-square that can be used for this, but it's not important for us to see how the çi-square is applied.
+
+513
+01:21:32,627 --> 01:21:40,927
+It simply checks whether there's an association between a specific attribute distribution and also a dependent variable.
+
+514
+01:21:41,587 --> 01:21:52,007
+There are some different strategies that you can decide, but for post-pruning, we can use some logic such as MDL or post-complexity pruning.
+
+515
+01:21:52,787 --> 01:22:06,227
+Or, algoritmas also have this parameter, ccp-alpha. ccp-alpha is a hyperparameter where you decide whether your model is generalizable or not.
+
+516
+01:22:07,688 --> 01:22:20,047
+How is it useful is that, let me give this example, these are, these are, the blue one is the training performance accuracy.
+
+517
+01:22:20,692 --> 01:22:23,471
+The orange one is the testing accuracy.
+
+518
+01:22:24,112 --> 01:22:26,211
+And these are the CCP alpha values.
+
+519
+01:22:26,872 --> 01:22:33,092
+CCP alpha is a regularization parameter.
+
+520
+01:22:33,592 --> 01:22:34,711
+Regularization parameter.
+
+521
+01:22:35,452 --> 01:22:40,211
+This can be 0.01 or 0.2 and so on.
+
+522
+01:22:40,211 --> 01:22:45,211
+It means that what is the percentage of acceptable...
+
+523
+01:22:45,684 --> 01:22:51,324
+Heterogeneity in a node. So if you exceed that threshold, it cuts off that particular leaf node.
+
+524
+01:22:52,524 --> 01:23:01,844
+This is used for post-pruning. It's a regularization parameter. But how do we utilize this in modeling?
+
+525
+01:23:01,844 --> 01:23:10,644
+Is where do we choose the best CCP alpha? Is that if you can see this graphic, you know,
+
+526
+01:23:11,380 --> 01:23:21,059
+When you have smallest CCP-alpha, there's a gap between testing and training accuracies, meaning that there's overfitting in this case.
+
+527
+01:23:21,059 --> 01:23:28,340
+We can observe that testing is only having 80% while training is 100% accurate.
+
+528
+01:23:28,739 --> 01:23:30,600
+But this is overfitting due to overfitting.
+
+529
+01:23:31,279 --> 01:23:38,219
+When you increase regularization, in other sense, simplify the model through CCP-alpha, you see that
+
+530
+01:23:38,612 --> 01:23:42,612
+Töneşte, eğlenceli, eğlenceli, eğlenceli.
+
+531
+01:23:42,612 --> 01:23:48,211
+Ve bu kadar dağılma, bu kadar dağılma.
+
+532
+01:23:48,211 --> 01:23:54,612
+Bu kadar dağılma, çünkü bu kadar dağılma,
+
+533
+01:23:54,612 --> 01:23:59,596
+eğlenceli ve eğlenceli ve eğlenceli.
+
+534
+01:23:59,699 --> 01:24:07,859
+CCP-alpha 0.015, bu birçok bir şey, bu birçok bir şey.
+
+535
+01:24:09,699 --> 01:24:18,899
+Bir diğer strategy would be, MdL, minimum description length, MdL.
+
+536
+01:24:18,899 --> 01:24:21,539
+So, how MdL works?
+
+537
+01:24:22,068 --> 01:24:26,228
+İzlediğiniz için, bir şey yapıyoruz.
+
+538
+01:24:26,748 --> 01:24:46,068
+Bir şey yapıyoruz.
+
+539
+01:24:48,884 --> 01:24:59,443
+By adding 3 children, leaf node, does this make a significant improvement on the error metric or not?
+
+540
+01:25:00,163 --> 01:25:04,264
+If it doesn't improve much, then we shouldn't increase the complexity.
+
+541
+01:25:04,963 --> 01:25:06,603
+Okay, how do we calculate?
+
+542
+01:25:06,603 --> 01:25:09,384
+We simply add penalty.
+
+543
+01:25:09,724 --> 01:25:12,603
+We simply add penalty score for each...
+
+544
+01:25:12,603 --> 01:25:14,603
+For each...
+
+545
+01:25:16,435 --> 01:25:23,435
+bu
+
+546
+01:25:23,435 --> 01:25:25,435
+20
+
+547
+01:25:25,435 --> 01:25:27,435
+ve
+
+548
+01:25:27,435 --> 01:25:29,435
+10
+
+549
+01:25:29,435 --> 01:25:30,435
+cases
+
+550
+01:25:30,435 --> 01:25:31,435
+our
+
+551
+01:25:31,435 --> 01:25:32,435
+error
+
+552
+01:25:32,435 --> 01:25:33,435
+at
+
+553
+01:25:33,435 --> 01:25:34,435
+the
+
+554
+01:25:34,435 --> 01:25:35,435
+beginning
+
+555
+01:25:35,435 --> 01:25:36,435
+10
+
+556
+01:25:36,435 --> 01:25:37,435
+over
+
+557
+01:25:37,435 --> 01:25:38,435
+30
+
+558
+01:25:38,435 --> 01:25:39,435
+okay
+
+559
+01:25:39,435 --> 01:25:39,915
+that's
+
+560
+01:25:40,979 --> 01:25:52,099
+ve if I divide this, split this by an attribute, by four different leaf nodes, now what I did, I introduced additional four leaf nodes.
+
+561
+01:25:52,099 --> 01:26:04,299
+So the model complexity increased by four times 0.5 fast. This is error increase because the model became more complex.
+
+562
+01:26:05,352 --> 01:26:06,352
+our
+
+563
+01:26:06,352 --> 01:26:07,352
+error
+
+564
+01:26:07,352 --> 01:26:08,352
+metric
+
+565
+01:26:05,332 --> 01:26:30,463
+Şimdi, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde
+
+566
+01:26:30,463 --> 01:26:36,984
+10.5 over 30 error, at this location, without splitting, okay?
+
+567
+01:26:37,744 --> 01:26:43,904
+Without splitting, this would be our, without splitting, this would be our pessimistic error.
+
+568
+01:26:45,283 --> 01:26:48,684
+Okay, after splitting, I'm checking the error.
+
+569
+01:26:48,943 --> 01:26:52,724
+Now I have 4, 3, 1, and 1 total.
+
+570
+01:26:53,463 --> 01:26:56,543
+Error is 9 over 30.
+
+571
+01:26:57,076 --> 01:27:01,855
+Bu, 10 over 30 to 9 over 30.
+
+572
+01:27:21,587 --> 01:27:26,127
+Bu, total error cost became 11 over 30.
+
+573
+01:27:26,927 --> 01:27:32,007
+So, without splitting, we had pessimistic error 10.5 over 30.
+
+574
+01:27:32,567 --> 01:27:39,768
+With splitting, we even increased the total accuracy because of the complexity generated by the model.
+
+575
+01:27:40,347 --> 01:27:42,147
+So, this means that we should prune it.
+
+576
+01:27:42,207 --> 01:27:44,487
+We should prune it, meaning that we should cut this out.
+
+577
+01:27:44,487 --> 01:27:47,807
+We should not have leaf nodes.
+
+578
+01:27:48,564 --> 01:27:52,564
+bu buçuklarla çünkü buçuklarla çok fazla.
+
+579
+01:27:52,564 --> 01:27:55,564
+Bu buçuklarla buçuklarla.
+
+580
+01:27:55,564 --> 01:27:58,564
+Bu çeşitli birçuklarla,
+
+581
+01:27:58,564 --> 01:28:02,564
+buçuklarla nefretirme deklarar.
+
+582
+01:28:02,564 --> 01:28:09,740
+Bu çeşitli birçuklarla.
+
+583
+01:28:10,100 --> 01:28:25,620
+So, optimistic error is the one at the beginning divided minus the one at the, this is the error at the beginning and error after split.
+
+584
+01:28:26,700 --> 01:28:36,820
+Okay, so in this case, the error metric after splitting, 2 plus 7, 5 over, it is 14.
+
+585
+01:28:37,492 --> 01:28:54,271
+6 here, 20. 5 over 20 is the pessimistic error plus 2 times 0.5. So this becomes 6 over 20.
+
+586
+01:28:54,271 --> 01:29:01,572
+Okay, the error metric. At the beginning, the total error metric was 7 over 20. So we have improved.
+
+587
+01:29:01,984 --> 01:29:26,096
+Bu, bu
+
+588
+01:29:26,095 --> 01:29:30,415
+So optimistikli, and pessimistikli, this is a good case, we don't prune it.
+
+589
+01:29:31,835 --> 01:29:35,475
+Let's do the same for case 2.
+
+590
+01:29:36,335 --> 01:29:42,855
+For the case 2, before the split, we had 5 over 20.
+
+591
+01:29:44,235 --> 01:29:48,355
+And after the split, we also have 5 over 20.
+
+592
+01:29:48,355 --> 01:29:53,295
+So pessimistic approach, it's equal, so there's no need to prune it.
+
+593
+01:29:53,716 --> 01:30:06,816
+But for pessimistikli, here we have 5 over 20, but we also need to include, because there are two leaf nodes, 2 times 0.5, 1 for each.
+
+594
+01:30:07,476 --> 01:30:09,576
+So this becomes 6 over 20.
+
+595
+01:30:10,216 --> 01:30:15,756
+So the error rate increased, meaning that we should prune the second case.
+
+596
+01:30:17,356 --> 01:30:19,136
+Okay, because...
+
+597
+01:30:19,136 --> 01:31:14,923
+Bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu şekilde, bu
+
+598
+01:31:15,252 --> 01:31:38,400
+ve bu konuda da
+
+599
+01:31:38,399 --> 01:31:53,520
+İmkürtü values, impurity values measures that we have, we can also see that it affects distribution of the instances to do child nodes, and it can also affect the test cases for classification.
+
+600
+01:31:53,520 --> 01:31:59,640
+Let's see some examples, where do we, how do we proceed or handle.
+
+601
+01:32:01,747 --> 01:32:09,047
+Let's see this example where we have 10 instances and we have a missing value on the refund.
+
+602
+01:32:09,487 --> 01:32:14,188
+Okay, this can be yes or no, but we don't know the result.
+
+603
+01:32:15,367 --> 01:32:21,367
+These are the class distribution before accommodating refund or not.
+
+604
+01:32:21,367 --> 01:32:25,007
+Okay, so before the split,
+
+605
+01:32:26,323 --> 01:32:32,123
+Before the split, if we were using entropy, how do we calculate the Gini?
+
+606
+01:32:32,923 --> 01:32:34,423
+Okay, how do we calculate the Gini?
+
+607
+01:32:34,883 --> 01:32:43,303
+We have, without considering any of these attributes, there are four no's, five no's, six, seven no's.
+
+608
+01:32:43,723 --> 01:32:47,023
+Seven no and three yes's.
+
+609
+01:32:47,743 --> 01:32:50,243
+This is before doing any calculation.
+
+610
+01:32:50,243 --> 01:32:53,663
+Okay, and the entropy for this case is
+
+611
+01:32:53,971 --> 01:33:11,252
+0.3 times log 3 minus 0.7 times log 0.7 and Perrin's entropy is 0.80. When it becomes 1, it means totally heterogeneous.
+
+612
+01:33:11,811 --> 01:33:18,372
+Okay, but assume that we want to, sorry, okay.
+
+613
+01:33:24,275 --> 01:33:24,795
+Ok.
+
+614
+01:33:26,575 --> 01:33:27,255
+Let me
+
+615
+01:33:30,739 --> 01:33:37,680
+Evet, bu, 3, 7, 7, 8.
+
+616
+01:33:57,747 --> 01:34:03,967
+Entropi value was 0.88, and we want to calculate the entropy after the split.
+
+617
+01:34:07,604 --> 01:34:09,604
+Ve bu bir bu kadar, bu kadar.
+
+618
+01:34:09,604 --> 01:34:13,604
+Bu kadar, bu kadar.
+
+619
+01:34:13,604 --> 01:34:15,604
+Bu kadar.
+
+620
+01:34:18,604 --> 01:34:21,604
+Bir problem var,
+
+621
+01:34:21,604 --> 01:34:25,604
+bu kadar.
+
+622
+01:34:25,604 --> 01:34:29,604
+Bu kadar.
+
+623
+01:34:29,952 --> 01:34:35,272
+Evet, çünkü bu, bu, bu, bu, bu.
+
+624
+01:34:58,163 --> 01:35:01,623
+ve refund is yes, 0 ve 3.
+
+625
+01:35:01,623 --> 01:35:02,163
+Evet.
+
+626
+01:35:05,543 --> 01:35:06,003
+Here.
+
+627
+01:35:09,123 --> 01:35:10,743
+And it is 3 ve 4.
+
+628
+01:35:15,444 --> 01:35:24,923
+ve refund is yes, it's always no, plus is no, because those people don't cheat.
+
+629
+01:35:31,859 --> 01:35:59,060
+Okay, you can see, sorry, we need to talk about refund, yes. Refund, yes, result is no. Refund, yes, result is no. Refund, yes, result is no. Okay. So when it is refund, yes, they don't cheat. Okay, class is always no. Okay. So calculating the Gini, or entropy for that case,
+
+630
+01:35:59,539 --> 01:36:14,659
+is very straightforward. Let's go. So the entropy for this case is simply negative 0.3 log
+
+631
+01:36:20,884 --> 01:36:46,363
+0 over 3, minus 3 over 3, times log 3 over 3. And this is going to be 0, this is going to be 0, right? So the entropy is 0. Left-hand side, the entropy is 0. Okay, what about the right-hand side? Right-hand side entropy is equal to
+
+632
+01:36:47,988 --> 01:37:03,368
+3 over 7 times, and this is negative, log 3 of 7 minus 4 over 7 times log 4 over 7.
+
+633
+01:37:03,968 --> 01:37:07,068
+So, this is 0.5 something.
+
+634
+01:37:08,668 --> 01:37:09,588
+Let me calculate.
+
+635
+01:37:10,128 --> 01:37:11,068
+This is the case.
+
+636
+01:37:16,435 --> 01:37:22,535
+Okay, sorry, this is 2 over, sorry, this is 2 over, not 3, 2 over 4.
+
+637
+01:37:23,075 --> 01:37:29,795
+So this is 2 over 6, 2 over 6, sorry, this is 4 over 6, 4 over 6.
+
+638
+01:37:30,595 --> 01:37:33,595
+And that is simply 0.91.
+
+639
+01:37:37,811 --> 01:37:39,172
+Evet, 91, 83.
+
+640
+01:37:42,112 --> 01:37:47,971
+So, the left-hand side is entropy zero, right-hand side is 0.913.
+
+641
+01:37:49,032 --> 01:37:51,652
+So, how do we calculate the children's entropy?
+
+642
+01:37:56,884 --> 01:38:22,507
+Bu, 3'e 0'e 9'e 6'e 9'e 9'e 0'e 0'
+
+643
+01:38:24,115 --> 01:38:26,515
+0.55.
+
+644
+01:38:28,515 --> 01:38:28,835
+1.
+
+645
+01:38:29,395 --> 01:38:35,315
+So in the top case, at the beginning it was 0.88, entropi, it reduced.
+
+646
+01:38:35,956 --> 01:38:36,675
+Which is a good thing.
+
+647
+01:38:37,795 --> 01:38:39,795
+Seems like it has improved.
+
+648
+01:38:39,795 --> 01:38:42,675
+But what about the case for the missing value?
+
+649
+01:38:42,675 --> 01:38:44,675
+How do we incorporate that?
+
+650
+01:38:45,395 --> 01:39:12,555
+Bu, bu
+
+651
+01:39:13,332 --> 01:39:31,652
+If this was, the tenth case was, evenly distributed, so we have in total, three yeses, three yeses, and there's the third yes as well.
+
+652
+01:39:31,652 --> 01:39:39,652
+In total, we have three over nine yeses, three over nine yeses. The probability of yes itself is...
+
+653
+01:39:40,243 --> 01:39:54,804
+3 over 9. Ve know that this particular example is yes. So, this additional probability, this is not 0, actually, it is probability of yes as well.
+
+654
+01:39:55,923 --> 01:40:07,283
+On this right-hand side, we know that if this was no, what is the probability of refund being no and the result being yes?
+
+655
+01:40:08,020 --> 01:40:34,956
+Bu, bu
+
+656
+01:40:35,188 --> 01:40:38,368
+ProbabiliteliRefundNo is 6 over 9.
+
+657
+01:40:38,828 --> 01:40:45,328
+So we also need to add that to this probability because we know that the result is yes.
+
+658
+01:40:46,328 --> 01:40:49,988
+So we know that the result is yes, but we don't know the refund probability.
+
+659
+01:40:50,488 --> 01:40:55,768
+Okay, we use the probability distribution of the class yes as well to incorporate that.
+
+660
+01:40:56,756 --> 01:41:16,436
+So, eventually, what happens is, when we utilize this refund parameter, where should we go yes or no, we should also speculate this missing value is not zero, but it also needs to incorporate the probability of that class yes or no, class distribution.
+
+661
+01:41:17,747 --> 01:41:20,747
+Evet, bu konuda kullanılmalı.
+
+662
+01:41:20,747 --> 01:41:25,747
+Bu konuda bir kısım var.
+
+663
+01:41:25,747 --> 01:41:27,747
+Bu konuda kullanılmalı.
+
+664
+01:41:27,747 --> 01:41:37,739
+Bu konuda bir kısım var.
+
+665
+01:41:38,100 --> 01:41:51,360
+But the marital status is not a leaf node, so I have to decide, because this is missing, missing value, I don't know the value itself, should we go to the right-hand side or the left-hand side? We don't know that.
+
+666
+01:41:51,619 --> 01:41:57,659
+But what we can do is, using this probability that we calculated in the previous step,
+
+667
+01:41:58,100 --> 01:42:09,159
+We can check if it was probability of, what is the probability of this person being married, what is the probability that this person being single or divorced.
+
+668
+01:42:09,760 --> 01:42:23,980
+The probability of this person being married is, if you calculate 3 plus 6 over 9, the total probability for that is 3.76, 67, sorry.
+
+669
+01:42:25,171 --> 01:42:48,235
+Evet, bu iki tane
+
+670
+01:42:48,467 --> 01:43:08,095
+Bu, bu
+
+671
+01:43:08,095 --> 01:43:14,535
+When you have a missing value, you should consider the probability distribution of the classes.
+
+672
+01:43:15,155 --> 01:43:20,455
+Whichever higher should be weighted or taken into consideration more importantly.
+
+673
+01:43:24,148 --> 01:43:38,627
+Any questions? This is all I wanted to talk about for the decision trees. We will start on the other topic of probabilistic classification. But before we start, any questions or comments?
+
+674
+01:43:43,220 --> 01:43:48,439
+Evet, if no questions, let's continue with our second approach.
+
+675
+01:43:50,619 --> 01:43:56,420
+I'm going to use the second set of slides.
+
+676
+01:43:58,399 --> 01:44:05,960
+So instead of giving a break, I think it's better to have a combined section and we can finish it about 4.30.
+
+677
+01:44:06,840 --> 01:44:07,180
+Okay.
+
+678
+01:44:07,615 --> 01:44:14,235
+So, without taking a break, we will continue with our discussion and we will finish it around 4.30.
+
+679
+01:44:16,956 --> 01:44:22,836
+Okay, so let's start with a new topic, probabilistic classification.
+
+680
+01:44:23,395 --> 01:44:28,635
+And the first one that we will discuss today is Bayesian approach.
+
+681
+01:44:29,635 --> 01:44:32,635
+So, so far we discussed...
+
+682
+01:44:34,195 --> 01:44:40,735
+Okay, so far we discussed distance-based simeric classification.
+
+683
+01:44:41,875 --> 01:44:46,735
+And particularly we used a k-neur-snape algorithm today.
+
+684
+01:44:47,695 --> 01:44:54,735
+And last week we also discussed decision trees and how they can be used in classification algorithms.
+
+685
+01:44:56,083 --> 01:44:59,284
+Today, we will continue with probabilistic methods.
+
+686
+01:45:00,163 --> 01:45:02,644
+Particularly, we will explain naive bias.
+
+687
+01:45:03,524 --> 01:45:07,543
+And there is also another algorithm called Bayesian belief networks.
+
+688
+01:45:07,984 --> 01:45:14,884
+This is also a similar algorithm, but it's out of the scope of this course.
+
+689
+01:45:16,024 --> 01:45:17,744
+We will just briefly mention about that.
+
+690
+01:45:18,195 --> 01:45:23,795
+ve, time permitting, we might also start discussing support vector machines.
+
+691
+01:45:24,395 --> 01:45:29,515
+If it doesn't finish today, it's okay, we can finish it in the next class.
+
+692
+01:45:30,115 --> 01:45:38,235
+And we will also discuss artificial neural networks and ensemble methods in our future lectures.
+
+693
+01:45:40,819 --> 01:45:49,059
+But before we continue, let's discuss classification using probabilistic approaches or naive Bayes.
+
+694
+01:45:49,859 --> 01:45:59,939
+Okay, before we actually discuss that, let's recall our discussions on probability.
+
+695
+01:46:00,619 --> 01:46:04,459
+I'm going to use the board.
+
+696
+01:46:06,039 --> 01:46:08,279
+Let me see if we can see that as well.
+
+697
+01:46:10,387 --> 01:46:15,448
+I write on the blackboard, you are able to see.
+
+698
+01:46:33,011 --> 01:46:40,391
+Can you see my typing? Are you able to see the board?
+
+699
+01:46:43,859 --> 01:47:06,279
+Okay, thank you, [öğrenci]. Seems like you can see that. Okay, let's recall our discussion on probability. You may remember this from mathematics. The probability of something occurring is, assume that we have, is it also visible?
+
+700
+01:47:10,931 --> 01:47:11,931
+Bu ne?
+
+701
+01:47:13,931 --> 01:47:15,931
+Red, green, or blue?
+
+702
+01:47:25,779 --> 01:47:28,819
+Blue, okay, seems like blue is better. Let me use that one.
+
+703
+01:47:31,460 --> 01:47:38,259
+The lesson remember probability. So what is probability? What is the probability of something occurring?
+
+704
+01:47:41,219 --> 01:47:51,779
+Okay, assume I have a coin and I want to toss it. And I want to toss the coin and it can
+
+705
+01:47:53,108 --> 01:48:09,739
+ve aile ve
+
+706
+01:48:10,804 --> 01:48:13,804
+Ve bu konuda yapmak için,
+
+707
+01:48:13,804 --> 01:48:20,804
+bu konuda bir konuda,
+
+708
+01:48:20,804 --> 01:48:22,804
+bir konuda bir konuda,
+
+709
+01:48:22,804 --> 01:48:30,804
+bir konuda,
+
+710
+01:48:30,804 --> 01:48:34,804
+bu konuda,
+
+711
+01:48:39,155 --> 01:48:43,515
+So had is one of the two options.
+
+712
+01:48:43,515 --> 01:48:48,876
+There's only 1 over 2 probability that it can be had or tail.
+
+713
+01:48:48,876 --> 01:49:00,195
+This is the simplest way to think about the probability, but it's not always just enough
+
+714
+01:49:00,195 --> 01:49:05,155
+to describe the probability in terms of events that can happen.
+
+715
+01:49:05,492 --> 01:49:12,032
+Assume that we have some condition that may influence the probability outcome.
+
+716
+01:49:13,411 --> 01:49:13,631
+Okay.
+
+717
+01:49:14,911 --> 01:49:28,952
+And assume we have this street next to our campus and five accidents occurs.
+
+718
+01:49:30,152 --> 01:49:31,751
+Five accidents.
+
+719
+01:49:32,692 --> 01:50:00,000
+5 ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayaklarında bir ayak
+
+720
+01:50:00,000 --> 01:50:26,539
+Bu, bu
+
+721
+01:50:26,771 --> 01:50:28,731
+Probabilisiydi bir acıdın
+
+722
+01:50:28,731 --> 01:50:30,652
+olayısıyla daha fazla
+
+723
+01:50:30,652 --> 01:50:32,092
+çünkü
+
+724
+01:50:32,092 --> 01:50:33,731
+bazı bir konusunda
+
+725
+01:50:33,731 --> 01:50:34,652
+var.
+
+726
+01:50:34,652 --> 01:50:36,652
+Probabilisiydi bir acıdın
+
+727
+01:50:41,076 --> 01:50:43,076
+Bu konudan, orta kıyafetli,
+
+728
+01:50:43,076 --> 01:50:45,076
+yukarıda kullanılan telefon.
+
+729
+01:50:45,076 --> 01:50:47,076
+Bu konudan,
+
+730
+01:50:47,076 --> 01:50:49,076
+yukarıda kullanılan telefon.
+
+731
+01:50:49,076 --> 01:50:51,076
+Bu konudan,
+
+732
+01:50:51,076 --> 01:50:53,076
+bu konudan,
+
+733
+01:50:53,076 --> 01:50:57,076
+bir konudan,
+
+734
+01:50:57,076 --> 01:50:59,076
+bir konudan.
+
+735
+01:50:59,076 --> 01:51:01,076
+Konudan,
+
+736
+01:51:01,076 --> 01:51:07,076
+konudan,
+
+737
+01:51:07,076 --> 01:51:08,652
+bir konudan,
+
+738
+01:51:09,043 --> 01:51:36,703
+Çünkü, bu konuda, many, many situations in real life, a lot of outcomes depend on a given condition. Based on that condition, that may be different. And nice thing is that we have a concept of calculating the conditional probability. Conditional probability of
+
+739
+01:51:37,332 --> 01:51:42,332
+Bu konudan c'est dek birçok, bu konudan c'est dek birçok.
+
+740
+01:51:42,332 --> 01:51:46,332
+A'ı da kondition, c'est dek birçok,
+
+741
+01:51:46,332 --> 01:51:48,332
+ve bu konudan c'est dek birçok.
+
+742
+01:51:48,332 --> 01:51:53,332
+Ve bu konudan c'est dek birçok,
+
+743
+01:51:53,332 --> 01:51:57,332
+ve bu konudan c'est dek birçok.
+
+744
+01:51:57,332 --> 01:51:59,852
+Bu konudan c'est dek birçok.
+
+745
+01:52:04,564 --> 01:52:31,231
+Ve bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu konuları da bu kon
+
+746
+01:52:31,231 --> 01:52:44,711
+We simply have to swap their position, A and C co-occurring, divided by probability of C co-occurring.
+
+747
+01:52:45,631 --> 01:52:54,591
+Okay, these two things are same, identical, I'm just using different positioning, changing the positions, but the formula should be the same.
+
+748
+01:52:56,948 --> 01:53:08,847
+What if we do this? What if we just keep this as a separate one? Okay, so I'm just using, calculating, let me put it this way.
+
+749
+01:53:10,988 --> 01:53:20,988
+So, probability of A and C co-occurring is equal probability of A, conditional probability of...
+
+750
+01:53:21,427 --> 01:53:27,168
+A on C, times probability of C itself.
+
+751
+01:53:27,768 --> 01:53:32,828
+Okay, so I'm just going to use this logic here.
+
+752
+01:53:33,568 --> 01:53:39,467
+But instead of using this conditional probability formulation,
+
+753
+01:53:39,708 --> 01:53:42,588
+I'm just going to put this inside in here instead of this one.
+
+754
+01:53:42,588 --> 01:53:44,427
+So what will happen is,
+
+755
+01:53:45,619 --> 01:53:58,739
+Probabiliteli C over A, condition A, is simply just enough or equal to probability of A on condition C,
+
+756
+01:54:00,499 --> 01:54:05,059
+times probability of C, divided by probability of A.
+
+757
+01:54:05,539 --> 01:54:10,499
+Okay, so all I did was that I swapped
+
+758
+01:54:18,228 --> 01:54:21,068
+I just placed in, in the formula.
+
+759
+01:54:22,268 --> 01:54:27,648
+So this is equal to probability of P on condition A.
+
+760
+01:54:28,247 --> 01:54:29,948
+Okay, so far so good.
+
+761
+01:54:32,967 --> 01:54:39,467
+And it's a simple mathematical trick, but this is called Bayes' theorem.
+
+762
+01:54:40,068 --> 01:54:41,188
+Bayes' theorem.
+
+763
+01:54:44,948 --> 01:54:58,307
+Bayes' theorem is simply that the conditional probability of A over C is simply enough the conditional probability of C on A times probability of C divided by probability of A.
+
+764
+01:54:59,528 --> 01:55:03,608
+Okay, you may say that seems like this is even more complicated.
+
+765
+01:55:03,608 --> 01:55:12,268
+At the beginning, we only had to use the conditional probability, just simply taking the adjoint probability divided by probability of the condition.
+
+766
+01:55:12,916 --> 01:55:23,376
+How is this to be useful? Turns out that this is very useful theorem and we will see an example why this is the case.
+
+767
+01:55:32,916 --> 01:55:35,296
+Let me put it on the projector.
+
+768
+01:55:39,507 --> 01:55:40,887
+Okay, one second.
+
+769
+01:55:45,108 --> 01:55:49,268
+So, let's give an example where we have, this is the Bayes theorem.
+
+770
+01:55:53,076 --> 01:56:02,596
+So, conditional probability of C on A is equal to conditional probability of C on A times probability of C divided by probability of A.
+
+771
+01:56:03,475 --> 01:56:10,796
+How is this even useful? This is even more complicated, but it turns out it is quite useful. Let's give an example.
+
+772
+01:56:12,475 --> 01:56:17,895
+Assume that we have a hospital and they just simply collected some statistics.
+
+773
+01:56:18,931 --> 01:56:36,992
+They notice that, you know, in 50% of the patients, if a person has a meningitis, and half of those patients also have some neck stiffness, they notice stiffness in their neck.
+
+774
+01:56:36,992 --> 01:56:39,411
+Okay, this is simple statistics.
+
+775
+01:56:40,751 --> 01:56:43,951
+They also know that, they also know that
+
+776
+01:56:44,467 --> 01:56:53,667
+Any person coming to the hospital for meningitis complaint is 1 over 50,000.
+
+777
+01:56:53,767 --> 01:56:59,327
+For every 50,000 patients, only one of them actually complained for this situation.
+
+778
+01:57:00,467 --> 01:57:00,647
+Okay.
+
+779
+01:57:01,727 --> 01:57:05,127
+This is probability of meningitis, right?
+
+780
+01:57:05,207 --> 01:57:07,347
+It is 1 over 50,000.
+
+781
+01:57:08,927 --> 01:57:11,347
+This is probability of...
+
+782
+01:57:11,891 --> 01:57:16,391
+Stifnes of neck on condition of meningitis.
+
+783
+01:57:16,391 --> 01:57:19,891
+This is equal 0.5.
+
+784
+01:57:21,411 --> 01:57:29,771
+And historically, they noticed that for every 20 patients, they noticed one person complaining about their neck stiffness.
+
+785
+01:57:30,751 --> 01:57:36,311
+And this is the probability of neck stiffness, 1 over 20.
+
+786
+01:57:36,756 --> 01:57:40,896
+Okay, so this is simply that we already have seen historically.
+
+787
+01:57:41,896 --> 01:57:56,256
+Now the question is that for any patient that are coming to the hospital with the complaint about their stiff neck, should we also consider
+
+788
+01:57:57,171 --> 01:58:07,591
+Meningitis, whether this person might have meningitis or not, or what is the probability that this person might also have meningitis?
+
+789
+01:58:08,831 --> 01:58:17,112
+By the way, meningitis is a very serious disease. It is rare. It happens very rarely, but it is very severe.
+
+790
+01:58:17,591 --> 01:58:23,731
+It can kill the person or it can put in the coma. So it's very serious when it happens.
+
+791
+01:58:24,148 --> 01:58:28,828
+It is important to check that, if there is a probability that it is occurring.
+
+792
+01:58:29,608 --> 01:58:37,688
+Given that, can we calculate for any person, the condition is that they have neck that is stiff.
+
+793
+01:58:38,268 --> 01:58:43,688
+We are trying to see for those patients, what is the probability of meningitis.
+
+794
+01:58:44,428 --> 01:58:45,528
+Can we calculate this?
+
+795
+01:58:45,648 --> 01:58:48,368
+Yes, we can calculate this thanks to Bayes' theorem.
+
+796
+01:58:48,748 --> 01:58:50,708
+Simply, we put their positions.
+
+797
+01:58:50,887 --> 01:58:51,688
+This is one of them.
+
+798
+01:58:52,372 --> 01:58:56,792
+50,000, this is 0.5, divide by 1 over 20.
+
+799
+01:58:57,532 --> 01:58:59,471
+And seems like this is the probability.
+
+800
+01:59:00,192 --> 01:59:08,431
+A person comes to the hospital with neck stiffness, the probability that this person is also meningitis is 0.0002.
+
+801
+01:59:08,992 --> 01:59:12,512
+So, should we test for this disease or not?
+
+802
+01:59:13,311 --> 01:59:14,032
+What do you think?
+
+803
+01:59:16,931 --> 01:59:19,271
+Does it make sense to test this as well?
+
+804
+01:59:23,475 --> 01:59:27,475
+Bu bir nesil bir nesil.
+
+805
+01:59:27,475 --> 01:59:31,475
+Bu nedenle, bu nesil bir nesil?
+
+806
+01:59:31,475 --> 01:59:43,475
+Bu nesil bir nesil.
+
+807
+01:59:43,475 --> 01:59:47,475
+Bir nesil bir nesil.
+
+808
+01:59:49,268 --> 01:59:52,968
+Bu, 1,5,000.
+
+809
+01:59:53,968 --> 01:59:56,728
+Originally, bu proibiliye de meningitis var?
+
+810
+01:59:58,968 --> 02:00:01,108
+1,5,000.
+
+811
+02:00:02,268 --> 02:00:05,968
+So, aslında bu, 10,000.
+
+812
+02:00:05,968 --> 02:00:06,268
+10,000.
+
+813
+02:00:06,268 --> 02:00:08,968
+Bu, 10,000.
+
+814
+02:00:09,568 --> 02:00:12,387
+Although, proibiliye de itself is very small.
+
+815
+02:00:13,300 --> 02:00:37,899
+Bu da bu
+
+816
+02:00:38,003 --> 02:00:42,963
+Probabiliteli, to decide on the classification.
+
+817
+02:00:44,323 --> 02:00:47,003
+And how does...
+
+818
+02:00:47,764 --> 02:01:15,764
+Bu, bu
+
+819
+02:01:15,764 --> 02:01:21,264
+Bu, aynı şeyle aynı zamanda, ama bu, aynı zamanda, bu, aynı zamanda.
+
+820
+02:01:37,171 --> 02:01:44,692
+So, how do we use Bayes' theorem to apply classifiers?
+
+821
+02:01:57,427 --> 02:02:09,827
+What do we do is, for any given person, let's say this is a person, let me just draw, actually, draw the data set.
+
+822
+02:02:21,619 --> 02:02:36,159
+Okay, this is our original dataset. I'm just using some numbers. Do not worry if you are not able to see. This is A1, attribute 2, attribute 3, blah, blah, attribute N, and this is our class.
+
+823
+02:02:39,796 --> 02:02:48,036
+Some of them are yes, some of them are no, some of them are yes, and so on. These are different values.
+
+824
+02:02:48,996 --> 02:02:57,476
+This can be 9, 95, 3, 4000, and so on. This is 15, 42, and blah, blah.
+
+825
+02:02:59,636 --> 02:03:04,276
+Yes, yes, no, yes, no. Okay.
+
+826
+02:03:05,043 --> 02:03:24,331
+Bu, bu
+
+827
+02:03:27,764 --> 02:03:28,824
+Bu test set.
+
+828
+02:03:29,604 --> 02:03:30,804
+I want to know,
+
+829
+02:03:31,583 --> 02:03:35,704
+what is the class of this person?
+
+830
+02:03:36,624 --> 02:03:38,624
+He has 41,
+
+831
+02:03:39,264 --> 02:03:40,944
+second attribute is 3,
+
+832
+02:03:41,324 --> 02:03:42,744
+fourth attribute is 1,
+
+833
+02:03:43,304 --> 02:03:45,984
+fifth attribute is 6,000.
+
+834
+02:03:47,583 --> 02:03:50,664
+Whether this person is going to pay his loan or not.
+
+835
+02:03:51,344 --> 02:03:53,284
+Okay, this is what we want to test.
+
+836
+02:03:56,340 --> 02:03:56,840
+Okay.
+
+837
+02:03:59,840 --> 02:04:17,600
+The Bayesian theorem says that, why don't we calculate what is the probability of this person being yes versus this person being no, and calculate based on these attribute sets.
+
+838
+02:04:18,600 --> 02:04:23,340
+And how do we do that is we want to know what is the...
+
+839
+02:04:24,467 --> 02:04:29,287
+Bu konudional probability of this guy for being in the class yes.
+
+840
+02:04:30,827 --> 02:04:33,427
+We also want to apply that.
+
+841
+02:04:34,047 --> 02:04:39,627
+What is the probability, the conditional probability of, for this person being in the no class?
+
+842
+02:04:41,087 --> 02:04:46,107
+What is the probability this guy, this guy occurring for yes?
+
+843
+02:04:46,667 --> 02:04:49,648
+What is the same probability if this guy was no?
+
+844
+02:04:50,323 --> 02:05:01,303
+ve comparar bu probabiliteler, whichever bir hiyo is going to decide what type of class is this particular attribute.
+
+845
+02:05:02,683 --> 02:05:05,403
+And how do we generalize this?
+
+846
+02:05:10,068 --> 02:05:37,168
+Okay, the thing is that this attribute that is simply, if these attributes are independent, independent, then we can simply just sum their attributes, meaning that probability of A1 being in class yes, times probability of A2.
+
+847
+02:05:37,652 --> 02:06:03,652
+A1'in class no.
+
+848
+02:06:05,203 --> 02:06:06,203
+İ1-N
+
+849
+02:06:06,203 --> 02:06:07,203
+Probiology
+
+850
+02:06:07,203 --> 02:06:08,203
+A-I
+
+851
+02:06:08,203 --> 02:06:35,863
+İ
+
+852
+02:06:34,003 --> 02:06:36,783
+Ve bu kadar da görebilecek bir şey var.
+
+853
+02:06:37,184 --> 02:06:42,083
+Bu da bu kadar da
+
+854
+02:06:42,083 --> 02:06:43,384
+büyük bir anumiydi.
+
+855
+02:06:44,184 --> 02:06:45,503
+Bu da bu sadece
+
+856
+02:06:45,503 --> 02:06:48,503
+ifade etkilerin
+
+857
+02:06:48,503 --> 02:06:50,023
+etkilerin etkilerin.
+
+858
+02:06:50,943 --> 02:06:55,463
+Bu da etkilerin etkilerin etkilerin etkilerin etkilerin.
+
+859
+02:06:55,463 --> 02:06:56,664
+Öncelikle bir örnek.
+
+860
+02:06:56,664 --> 02:07:00,824
+Bir tane var.
+
+861
+02:07:01,524 --> 02:07:07,963
+ve bu
+
+862
+02:07:07,963 --> 02:07:29,623
+bu
+
+863
+02:07:27,823 --> 02:07:32,724
+At the same time, or differently, it doesn't matter, it doesn't have to be at the same time.
+
+864
+02:07:34,663 --> 02:07:36,684
+1 over 8, how do you calculate that?
+
+865
+02:07:43,859 --> 02:07:53,599
+Çünkü, the probability of that is simply just probability of tail times probability of tail times probability of tail, right?
+
+866
+02:07:54,119 --> 02:08:01,639
+And that's simply, you know, 1 to 3 probability of tail.
+
+867
+02:08:02,919 --> 02:08:08,059
+And this over 3 is 1 over 8, right?
+
+868
+02:08:08,459 --> 02:08:09,359
+That's how we calculate.
+
+869
+02:08:12,724 --> 02:08:14,724
+bu
+
+870
+02:08:11,923 --> 02:08:36,268
+Bir tane
+
+871
+02:08:41,235 --> 02:09:03,235
+Bu nedenle, bu nedenle bir sorumluluk var.
+
+872
+02:09:03,235 --> 02:09:06,235
+Bu nedenle, bu nedenle, bu nedenle,
+
+873
+02:09:09,300 --> 02:09:13,300
+ve, if they are independent, I can calculate...
+
+874
+02:09:16,851 --> 02:09:18,091
+Conditional Probabilites
+
+875
+02:09:23,380 --> 02:09:29,140
+Conditional Probabilitesi, by simply multiplying their single probabilities.
+
+876
+02:09:29,140 --> 02:09:37,380
+And that's going to decide whether this conditional probability is going to have a given class or not.
+
+877
+02:09:38,020 --> 02:09:46,980
+Okay. So how is this even going to be useful for determining the class? And let me show you that.
+
+878
+02:09:48,579 --> 02:09:50,260
+It turns out it is quite useful.
+
+879
+02:09:50,771 --> 02:09:57,091
+Çünkü, we can quickly estimate probabilisiyse de bir anadributin bir data set,
+
+880
+02:09:57,091 --> 02:10:00,891
+simply just counting how many times it occurs in each class.
+
+881
+02:10:00,891 --> 02:10:04,331
+Do you see my screen?
+
+882
+02:10:04,331 --> 02:10:12,971
+Ok, so Naive Bayes simply calculates their multiplication, class multiplications.
+
+883
+02:10:12,971 --> 02:10:14,372
+Ok.
+
+884
+02:10:14,868 --> 02:10:20,207
+Fas-multipikasyon, çünkü it assumes that all of them are independent.
+
+885
+02:10:21,148 --> 02:10:23,467
+However, this may not be always true.
+
+886
+02:10:24,347 --> 02:10:31,467
+To be fair, not all attributes, not all features are independent.
+
+887
+02:10:31,688 --> 02:10:40,108
+Some features are actually dependent on each other, such as salary and age.
+
+888
+02:10:41,268 --> 02:10:43,547
+Do you think these are two independent stuff?
+
+889
+02:10:45,247 --> 02:10:47,127
+They are not totally independent, right?
+
+890
+02:10:47,167 --> 02:10:54,367
+You cannot have a salary until age 18 because you are children, you are not allowed to work.
+
+891
+02:10:55,027 --> 02:10:59,667
+Also, when you have more experience, you are more likely to have more salaries.
+
+892
+02:10:59,807 --> 02:11:00,747
+So there's a dependency.
+
+893
+02:11:02,007 --> 02:11:05,807
+Given that, although this is true, but still naive Bayes,
+
+894
+02:11:06,484 --> 02:11:12,324
+considering them as independent may still have accurate results.
+
+895
+02:11:12,384 --> 02:11:16,243
+We will discuss that because it has a nice property as well.
+
+896
+02:11:17,503 --> 02:11:18,184
+Let's move on.
+
+897
+02:11:18,984 --> 02:11:22,583
+How does this probabilities are calculated?
+
+898
+02:11:22,884 --> 02:11:23,764
+It is very simple.
+
+899
+02:11:24,163 --> 02:11:31,283
+Probability of class, for instance, no, is we have 7 no and 3 yeses, right?
+
+900
+02:11:31,503 --> 02:11:33,944
+So probability of yes is simply 3 over 10.
+
+901
+02:11:34,644 --> 02:12:02,155
+ve no'a 7'e 10'e
+
+902
+02:12:03,572 --> 02:12:05,791
+ve bu kadar da married?
+
+903
+02:12:30,644 --> 02:12:32,644
+ve classı bir no.
+
+904
+02:12:32,644 --> 02:12:34,644
+Bu, Konditional Probabilité
+
+905
+02:12:34,644 --> 02:12:36,644
+4 over 7
+
+906
+02:12:54,036 --> 02:12:57,615
+İkincisi, bir yes, bir yes, bir yes, bir yes.
+
+907
+02:12:57,976 --> 02:12:59,536
+İkincisi, bir yes.
+
+908
+02:12:59,896 --> 02:13:18,507
+Bir no.
+
+909
+02:13:19,828 --> 02:13:21,608
+Okay, that's quite useful.
+
+910
+02:13:22,248 --> 02:13:32,068
+And conditional probabilities can be calculated for categorical variables very simply, but it can also be calculated for continuous variables.
+
+911
+02:13:33,047 --> 02:13:36,168
+And for continuous variables, there are multiple situations.
+
+912
+02:13:36,168 --> 02:13:39,347
+One of them is that you can discretize it.
+
+913
+02:13:39,967 --> 02:13:43,847
+Discretization meaning that you can put, for instance, ages.
+
+914
+02:13:45,043 --> 02:14:01,583
+You have age category, you can put it into buckets, different categories. 0, 18 is one category, 18 to 40, another category, 40 to 60, another category, and 60 over anything is another category.
+
+915
+02:14:01,583 --> 02:14:11,224
+So, simply this becomes categorization, right, categorization. Intervals become different categorization. This is one way.
+
+916
+02:14:12,623 --> 02:14:16,623
+Bir no.
+
+917
+02:14:12,595 --> 02:14:22,595
+İlk olarak, birçok birçok, birçok.
+
+918
+02:14:23,275 --> 02:14:26,075
+Ve buçok, birçok, birçok.
+
+919
+02:14:27,155 --> 02:14:33,915
+Ve buçok, birçok, birçok, birçok, birçok, birçok.
+
+920
+02:14:35,195 --> 02:14:39,195
+Bu, normalde birçok, birçok, birçok, birçok.
+
+921
+02:14:39,731 --> 02:14:41,672
+Let me explain that as well.
+
+922
+02:14:46,644 --> 02:14:47,104
+Ok.
+
+923
+02:14:52,180 --> 02:14:52,740
+Alright.
+
+924
+02:14:54,560 --> 02:14:57,860
+Okay, if we have normal curve or the bell curve,
+
+925
+02:15:02,899 --> 02:15:16,000
+Bu, x bar, if we know the standard deviation of this curve, we can calculate the probability of any given point, right?
+
+926
+02:15:16,000 --> 02:15:27,079
+This is very simple to calculate, if you know this is a normal distribution, probability of xi in class
+
+927
+02:15:27,699 --> 02:15:38,659
+Yes, for instance. This is for the distribution for Yes class. It's simply, the formula is 1 over square root 2 pi.
+
+928
+02:15:42,292 --> 02:15:59,332
+I believe this is standard deviation times e to the power of xi minus x-bar divided by 2 squared.
+
+929
+02:16:00,712 --> 02:16:04,192
+I believe this is the case, but let me just verify the formula.
+
+930
+02:16:05,632 --> 02:16:06,912
+Yes, this is the formula.
+
+931
+02:16:10,100 --> 02:16:12,100
+Bu formula, bu formula, bu formula, bu formula.
+
+932
+02:16:12,100 --> 02:16:22,100
+Bu formula, bu formula, bu formula, bu formula, bu formula, bu formula, bu formula, bu formula,
+
+933
+02:16:22,100 --> 02:16:34,100
+bu formula, bu formula, bu formula, bu formula, bu formula, bu formula, bu formula, bu formula,
+
+934
+02:16:35,827 --> 02:16:56,271
+Bu, bu
+
+935
+02:16:56,272 --> 02:16:59,252
+120 is the income that we want to look for.
+
+936
+02:16:59,252 --> 02:17:10,912
+The average was 110, 120 minus 110 square divided by the sample variances 29.75 times 2.
+
+937
+02:17:11,752 --> 02:17:17,731
+So eventually you can calculate that this probability becomes 0.0072.
+
+938
+02:17:18,451 --> 02:17:25,251
+So, for any given point, continuous variable, we can calculate the probabilities, conditional probabilities.
+
+939
+02:17:27,412 --> 02:17:35,931
+Okay, so far so good. Let's calculate any given test set. How do we apply the classification?
+
+940
+02:17:36,791 --> 02:17:44,331
+Naiv Bayes, for a given test record, what it does is, I have this person, let's say this is Ahmed or Mehmed.
+
+941
+02:17:44,819 --> 02:17:52,799
+Mehmet, I know that Mehmet has a refund, no, he's married and his income is under $120,000.
+
+942
+02:17:53,220 --> 02:17:59,939
+But I don't know if this person is going to pay his credit loan or not.
+
+943
+02:18:01,939 --> 02:18:07,760
+What I can do is I can check this person's for probability.
+
+944
+02:18:08,352 --> 02:18:14,272
+Ocuri in class no, and this person's probability in occurring in class yes.
+
+945
+02:18:15,051 --> 02:18:21,612
+So we need to just calculate the conditional probabilities for given class no.
+
+946
+02:18:22,067 --> 02:18:45,067
+Bu konusunda kalmasına baktığınızı var.
+
+947
+02:18:46,515 --> 02:19:35,244
+Bu, bu
+
+948
+02:19:35,987 --> 02:19:44,907
+Evet, 0.3.10.
+
+949
+02:19:44,907 --> 02:19:53,247
+So, eventually, we can see that this person is more likely to be in class no versus class yes.
+
+950
+02:19:54,468 --> 02:19:59,128
+So, this guy is labeled as no, he is not going to pay his credit.
+
+951
+02:20:00,067 --> 02:20:00,308
+Okay?
+
+952
+02:20:00,948 --> 02:20:07,388
+Yani, Naive Bayes'in
+
+953
+02:20:07,388 --> 02:20:12,768
+ve bu sorunla ilgili birçok sorunla
+
+954
+02:20:12,768 --> 02:20:15,828
+bu sorunla ilgili birçok sorunla
+
+955
+02:20:15,828 --> 02:20:17,328
+veya diğer birçok sorunla.
+
+956
+02:20:17,328 --> 02:20:20,247
+Bu sorunla, bu sorunla çok küçük.
+
+957
+02:20:20,247 --> 02:20:23,708
+Bu sorunla ilgili birçok sorunla.
+
+958
+02:20:24,308 --> 02:20:29,308
+Bu, ilk klası 0.024,
+
+959
+02:20:29,308 --> 02:20:34,308
+ilk klası 0.020.
+
+960
+02:20:34,308 --> 02:20:39,308
+Bu, bu klası,
+
+961
+02:20:39,308 --> 02:20:41,308
+çünkü de klası,
+
+962
+02:20:41,308 --> 02:20:44,308
+sadece magnitudes,
+
+963
+02:20:44,308 --> 02:20:46,308
+absolute value is not important.
+
+964
+02:20:46,308 --> 02:20:49,308
+Bu, bu klası,
+
+965
+02:20:49,308 --> 02:20:50,308
+bu klası,
+
+966
+02:20:51,731 --> 02:20:52,731
+Tamam, tamam.
+
+967
+02:20:52,731 --> 02:20:56,731
+Tamam.
+
+968
+02:21:00,347 --> 02:21:05,347
+Bir kere kalbim var.
+
+969
+02:21:05,347 --> 02:21:07,347
+Ve bu kere kalbim var.
+
+970
+02:21:07,347 --> 02:21:09,347
+Bu kere kalbim var.
+
+971
+02:21:09,347 --> 02:21:21,131
+Bir kere kalbim var.
+
+972
+02:21:28,115 --> 02:21:30,115
+Tamam.
+
+973
+02:21:27,507 --> 02:21:33,067
+So, if we have one of those conditional probabilities as 0, what happens?
+
+974
+02:21:37,108 --> 02:21:57,739
+O, çünkü o,
+
+975
+02:22:01,075 --> 02:22:03,455
+Yani 0'e görebileceği bir şey.
+
+976
+02:22:03,455 --> 02:22:05,455
+Bu yüzden bu bir şey değil.
+
+977
+02:22:05,455 --> 02:22:07,455
+Yani bu çeşitli bir şey,
+
+978
+02:22:07,455 --> 02:22:09,015
+bu çeşitli bir şey,
+
+979
+02:22:09,015 --> 02:22:10,855
+bu çeşitli bir şey.
+
+980
+02:22:10,855 --> 02:22:12,015
+Bu çeşitli bir şey.
+
+981
+02:22:12,015 --> 02:22:14,955
+Ama bu çeşitli bir şey,
+
+982
+02:22:14,955 --> 02:22:18,955
+bu çeşitli bir şey,
+
+983
+02:22:18,955 --> 02:22:20,275
+ama bu çeşitli bir şey değil.
+
+984
+02:22:20,275 --> 02:22:21,755
+Çünkü 0'e bu problem.
+
+985
+02:22:26,611 --> 02:22:34,791
+Evet, exactly. We can add a small number to still have a probability, but very small, not zero.
+
+986
+02:22:35,491 --> 02:22:41,351
+And that's not going to affect the final outcome. And there's actually a name for this.
+
+987
+02:22:41,351 --> 02:22:47,651
+It's called Laplacian transformation, Laplace transformation. That's exactly what it does.
+
+988
+02:22:48,011 --> 02:22:53,351
+Laplace transformation is simply, we just...
+
+989
+02:22:53,683 --> 02:22:59,323
+We have an estimate of, we have an epsilon value at the denominator.
+
+990
+02:22:59,323 --> 02:23:09,323
+It simply incorporates the effect of small probability, but it never becomes zero.
+
+991
+02:23:09,883 --> 02:23:12,503
+So that we have this example.
+
+992
+02:23:13,983 --> 02:23:18,443
+Okay, one more example about this naive Bayes before we finish.
+
+993
+02:23:18,863 --> 02:23:30,603
+Assumiyem, we have collected some biological tests and we want to, you know, we have collected some information about humans, mammals and non-mammals.
+
+994
+02:23:31,064 --> 02:23:37,743
+And we think that we found a new kind of animal, but we don't know whether this is a mammal or not mammals.
+
+995
+02:23:37,743 --> 02:23:45,724
+Okay, we know that this particular animal can give a birth, but the animal cannot fly.
+
+996
+02:23:46,388 --> 02:23:52,288
+Erdoğan, he has a leg, he lives in water but has no leg.
+
+997
+02:23:53,348 --> 02:23:56,927
+So is this animal mammals or not mammals?
+
+998
+02:23:57,148 --> 02:23:58,528
+We need to calculate that.
+
+999
+02:23:59,427 --> 02:24:01,927
+We don't know if it is mammal or non-mammal.
+
+1000
+02:24:02,528 --> 02:24:02,828
+Okay.
+
+1001
+02:24:03,628 --> 02:24:06,308
+We can decide this by using naive Bayes.
+
+1002
+02:24:06,739 --> 02:24:33,355
+Bu, bu
+
+1003
+02:24:33,907 --> 02:24:37,827
+Okay, we do the same thing for non-mammals.
+
+1004
+02:24:37,968 --> 02:24:39,587
+It's 1 over 13, same thing.
+
+1005
+02:24:40,268 --> 02:24:43,147
+10 over 13 cannot fly.
+
+1006
+02:24:43,687 --> 02:24:47,067
+3 over 13 can live in the water and so on.
+
+1007
+02:24:47,268 --> 02:24:51,687
+This is the probability for non-mammals.
+
+1008
+02:24:51,687 --> 02:24:59,827
+And final decision points is also incorporating their probability of mammal and probability of non-mammal.
+
+1009
+02:25:00,175 --> 02:25:07,896
+Probabiliteli of mammals, we check how many of them exist, it is 7 over 20. Probabiliteli of non-mammal, 13 over 20.
+
+1010
+02:25:08,376 --> 02:25:24,595
+So we use these as well, and that becomes probability of this guy, mammal, is 0.021, is greater than 0.0027, right?
+
+1011
+02:25:28,272 --> 02:25:30,272
+Bu bir şey, bir şey.
+
+1012
+02:25:30,272 --> 02:25:44,272
+Bir şey, bir şey.
+
+1013
+02:25:44,340 --> 02:25:51,780
+ve, although, it may not be always possible to say that features are independent, it is still good.
+
+1014
+02:25:51,780 --> 02:26:00,060
+And also, one nice thing about naive Bayes is that it is resistant to noises.
+
+1015
+02:26:00,060 --> 02:26:10,299
+The reason is that because the naive Bayes does not use the absolute value of the attributes, it uses their probabilities.
+
+1016
+02:26:10,656 --> 02:26:18,136
+Çünkü noise, or outliers, also were rare to occur, they do not affect the final outcome of the algorithms.
+
+1017
+02:26:19,076 --> 02:26:27,296
+And the computational cost is very low because you only need to calculate the probabilities once when you scan through the entire dataset.
+
+1018
+02:26:28,416 --> 02:26:38,056
+You can pretty much calculate all the multiplications very quickly so it works efficiently in large datasets.
+
+1019
+02:26:54,484 --> 02:27:02,344
+Some email said that you have inheritance from Nigeria, your grandfather gave you $1 million if you call this and stuff.
+
+1020
+02:27:02,344 --> 02:27:09,144
+It is very easy to calculate the probability of these terms occurring in spam and not spam.
+
+1021
+02:27:09,924 --> 02:27:19,984
+And you can simply calculate multiplications and quickly classify that those frequent terms that occur in spam example,
+
+1022
+02:27:20,691 --> 02:27:25,731
+ve bu konuluklarla nonspam olarak bu konuluklarla nonspam olarak bu konuluklarla nonspam olarak
+
+1023
+02:27:25,731 --> 02:27:37,691
+bu konuluklarla nonspam olarak bu konuluklarla nonspam olarak
+
+1024
+02:27:37,691 --> 02:27:39,691
+bu konuluklarla nonspam olarak nonspam olarak
+
+1025
+02:27:39,691 --> 02:27:43,691
+konuluklarla nonspam olarak nonspam olarak
+
+1026
+02:27:45,760 --> 02:27:49,760
+Bu nefes bir nefes bir nefes, bir nefes bir nefes.
+
+1027
+02:27:49,760 --> 02:27:51,760
+Bu nefes bir nefes, bir nefes.
+
+1028
+02:27:51,760 --> 02:27:55,760
+Ama bu nefes.
+
+1029
+02:27:55,760 --> 02:28:09,868
+Bu nefes.
+
+1030
+02:28:09,940 --> 02:28:13,399
+You are responsible until end of native Bayes.
+
+1031
+02:28:13,399 --> 02:28:16,579
+So we are not going to start support vector automation.
+
+1032
+02:28:17,680 --> 02:28:19,880
+Today's class is included in the exam.
+
+1033
+02:28:21,000 --> 02:28:21,739
+So good luck.
+
+1034
+02:28:22,459 --> 02:28:24,380
+Any questions or comments before we finish?
+
+1035
+02:28:25,020 --> 02:28:25,680
+Excuse me.
+
+1036
+02:28:28,755 --> 02:28:30,595
+Merhaba hocam. Merhaba.
+
+1037
+02:28:30,735 --> 02:28:32,335
+Bir soru sorabilir miyim?
+
+1038
+02:28:32,695 --> 02:28:32,935
+Tabii.
+
+1039
+02:28:33,435 --> 02:28:34,815
+Şimdi biz iki kişiyiz.
+
+1040
+02:28:35,716 --> 02:28:44,475
+Datasete karar verdik ama Datasetin cleaning kısmında, temizleme kısmında, yani çok temiz bir Dataset diyebilirim yani.
+
+1041
+02:28:44,595 --> 02:28:48,955
+Çok az temizlik sonucu çıkıyor. Yani bu bir iş çıkıyor açısında bir sorun olur mu?
+
+1042
+02:28:49,615 --> 02:28:52,056
+Hemen hemen hiç outlar görmüyor.
+
+1043
+02:28:53,492 --> 02:29:03,391
+Problem değil, her dataset'te outlier olacak veya her dataset'te preprocessing çok yoğun olacak diye bir şey yok. O durumlarda daha çok algoritmak kullanırsınız sonuç olarak.
+
+1044
+02:29:04,492 --> 02:29:05,972
+Tamam, anladım. Teşekkür ederim.
+
+1045
+02:29:06,132 --> 02:29:09,832
+Rica ederim. Başka sorusu olan var mı? Any questions or comments?
+
+1046
+02:29:14,355 --> 02:29:23,736
+Tamam, bu sorun yok. Bir sonraki bayramın sonra görüşürüz.
+
+1047
+02:29:23,736 --> 02:29:27,015
+İyi bayramlar arkadaşlar. Sınavda görüşürüz. Hoşçakalın.

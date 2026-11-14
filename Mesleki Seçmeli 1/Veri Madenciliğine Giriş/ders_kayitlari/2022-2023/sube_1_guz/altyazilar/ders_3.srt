@@ -1,0 +1,1479 @@
+1
+00:00:22,228 --> 00:00:23,108
+Merhaba arkadaşlar.
+
+2
+00:00:30,643 --> 00:00:32,543
+Onlar falan pez geliyor ağaçlar.
+
+3
+00:00:35,543 --> 00:00:38,524
+Sıra bakmayın ya, umarım yola çıkan falan olmamıştır.
+
+4
+00:00:39,263 --> 00:00:40,283
+Benim yüzümden.
+
+5
+00:00:41,564 --> 00:00:43,543
+Evet, bugün böyle online yapalım.
+
+6
+00:00:43,963 --> 00:00:48,283
+Sanırım şeye de kaydediyor, online sisteme, şeye bakabilirsiniz.
+
+7
+00:00:50,224 --> 00:00:54,423
+Sonrasında izlemeyenler izleyebilir, öyle söyleyelim.
+
+8
+00:00:54,823 --> 00:00:56,444
+Sesin geliyor değil mi? Herhangi bir sıkıntı yok.
+
+9
+00:01:00,051 --> 00:01:25,491
+Geliyor hocam, tamam. Önce birkaç tane duyurum var, önce duyuruları yapayım dersle ilgili. Bildiğiniz gibi şeyi erteledik, ödev 3'ü. Birçok kişi de yapmış zaten, yapmayanlar da herhalde bitirir, çok zor değil. Ama yapanlardan bazıları analiz kısmına eksik bırakmış, yani kodlu çalışıyor ama işte bu metot böyle iyidir ya da işte metotlarla ilgili grafik çizmeyi falan yapmayanlar var.
+
+10
+00:01:26,355 --> 00:01:33,015
+Eğer öyle yapıp da değiştirmek isteyen varsa ve bana mail atarsa ödevini geri teslim edebilirim.
+
+11
+00:01:33,175 --> 00:01:34,355
+Tekrar düzeltebilir.
+
+12
+00:01:34,975 --> 00:01:38,375
+Competition ile ilgili de Competition'a yüklemeler başladı.
+
+13
+00:01:38,756 --> 00:01:41,355
+Bazı arkadaşlar yaptıktan sonra yüklediler.
+
+14
+00:01:42,775 --> 00:01:46,635
+Bir önce iki tanemiz var. Bir tanesi Dataset'e paylaştığımız değil.
+
+15
+00:01:49,715 --> 00:02:07,016
+Competition, yarışma olan link. Şeye bakarsanız, normalde basite yüklediğimiz olan linkte kodlar açık. Yani çok farklı kişiler gelip, nasıl söyleyeyim, problemi çözmüşler. Hatta baya işte 9-10 tane belki şeyi deneyenler var.
+
+16
+00:02:07,391 --> 00:02:31,391
+Metot deneyenler var. Onlara da bakabilirsiniz proje için. O kısma da bakın. Hangi metot nasıl çalışmış? Bir tanesi güzel, bir tanesi sınıfları birleştirmiş. Mesela hareketin ap ya da down'ı varsa birleştirerek yapmış. O değil ama bir tanesi de...
+
+17
+00:02:31,647 --> 00:02:52,007
+Fena sonuçlar çıkarmamış. Yine XGBoostplay'ı falan kullanarak iyi bir şeyler yapan var. Onlara da bakabilirsiniz. Birebir aynısını kopyalamazsınız zaten de. Belki size fikir verebilir. En basic, temel metotlar oradaki kadar çalışıyor. Sizin onların üzerine bir şey koymanızı bekliyoruz.
+
+18
+00:02:52,367 --> 00:03:07,247
+Yani ne koyabilirsiniz? Şey söyleyeyim, onların Confusion matrislerinde, test kısmında olduğu için neler çok karışıyor, onlar var. Belki işte 33 tane landmark point'den açı hesaplayabilirsiniz.
+
+19
+00:03:07,247 --> 00:03:14,127
+Ya da işte uzaklık hesaplayabilirsiniz. Ya da belki direkt CNN ile bunları otomatik istiyorsanız hesaplatabilirsiniz.
+
+20
+00:03:14,963 --> 00:03:27,343
+Gibi şeyler var. Tamam. Yani size kalmış o kısım. Ama dediğim gibi hani iki tane link var. Bir tanesi Dataset linki, diğeri yarışma linki Dataset linkindeki kodlara da bakabilirsiniz.
+
+21
+00:03:29,043 --> 00:03:35,924
+Soru var mı ödevlerle ilgili ya da dersle ilgili? Herhalde yok. Var mı?
+
+22
+00:03:38,924 --> 00:03:39,563
+Pardon.
+
+23
+00:03:45,235 --> 00:03:58,055
+O zaman bir iki şeyle başlayalım. Dersimize başlayalım. Bir duyurum daha var. Haftaya bir ARGE merkezinden şey gelecek.
+
+24
+00:03:59,895 --> 00:04:06,715
+Ne gelecek? ARGE merkezinde çalışan, ARGE merkezinin bir veri bilimci, veri bilim uzmanı gelecek.
+
+25
+00:04:07,435 --> 00:04:11,135
+Genel olarak veri biliminde neler? Banka seçtim çünkü dataları büyük.
+
+26
+00:04:11,520 --> 00:04:33,240
+Birçok uygulama da yapıyorlar, davet etmek için. Uygulamalarından bahsedecek. Bir de sürekli konuştukları zaman, sürekli bir de projeye atıldığı zaman sıkıcı oluyor. İkinci kısımda da bayağı kod üzerinde, canlı bir şeyler gösterecek bize. Data üzerinde, neyi yaptıklarını, neyi nasıl yaptıklarını vesaire anlatacaklar.
+
+27
+00:04:33,240 --> 00:04:37,240
+Tamam, haftaya inşallah bir aksilik olmazsa.
+
+28
+00:04:39,091 --> 00:04:53,292
+misafirimiz var. Geçen hafta ne yaptık? Geçen hafta hatırlarsanız clustering'e başladık. Clustering'de ne yaptık? Hemen hızlıca tekrar edecek olursak. İlk olarak
+
+29
+00:04:53,292 --> 00:05:00,971
+Gameins algoritması ile başladık. Gameins'te ne yapıyorduk?
+
+30
+00:05:01,279 --> 00:05:11,439
+Rastgele K dediğimiz, K ne aslında bir parametre, aslında K-NN'deki K de bir parametre gibi düşünebilirsiniz.
+
+31
+00:05:12,239 --> 00:05:15,419
+K kaç tane klasterımızın olacağının?
+
+32
+00:05:15,839 --> 00:05:31,479
+parametresiydi. Bunu verdikten sonra rastgele merkezler seçiyorduk. Merkezler bizim elimizdeki noktalardan, sample'lardan bir tanesi olmak zorunda değil. Bunu seçtikten sonra
+
+33
+00:05:32,660 --> 00:05:58,819
+Ne yapıyoruz? Sürekli noktalarla merkez arasındaki uzaklıkları hesaplıyoruz. Kim daha yakınsa noktaları o klastere her bir iterasyonda atıyoruz. Sonra yeniden klastere merkezini hesaplayıp, yeni merkeze, yani hesapladığımız yeni merkezlere uzaklıkları tekrar değerlendirip ne yapıyoruz? Klastere'nin elemanlarını güncelliyoruz.
+
+34
+00:05:59,088 --> 00:06:22,887
+Klaster'ın merkezine k-means'te ne diyorduk? Genellikle centroid diyorduk. Değil mi? Centroid, k-means'teki klasterların merkezleri. Daha sonra neyden bahsettik? K-medioids'den bahsettik. K-medioids de yine partition-based bir metot. Hatırlarsınız. Önce şeyi söylesek daha iyi. Klaster'ın metotlarını dördü ayırdık.
+
+35
+00:06:23,168 --> 00:06:37,788
+Birincisi partition-based metotlardı. Partition-based metotlardan iki tanesini gördük. Bir tanesi k-means, diğeri k-meadowits. İkincisi neydi? Hierarchical clustering'di. Hierarchical clustering'de ne gördük?
+
+36
+00:06:38,608 --> 00:06:47,507
+Bottom-up ya da top-down approach'larla dört çeşit uzaklığa göre bunların birleşimini gördük. Şimdi bugün ne göreceğiz?
+
+37
+00:06:48,531 --> 00:07:01,451
+Bugün density-based clustering'i göreceğiz. Üçüncüsü yani birincisi partition-based, ikincisi yer aşıkı, üçüncüsü de density-based clustering.
+
+38
+00:07:02,232 --> 00:07:11,711
+Şimdi birinciye baktığımız zaman uzaklıklar çok önemli. Uzaklıklar çok önemli olduğu için mesela kameradan gözüküyor mu bakayım.
+
+39
+00:07:16,596 --> 00:07:36,375
+Şöyle gözüküyor, tamam. Şimdi bir klasterınız şöyle, bir klasterınız da şöyleyse, tamam mı? Yani eğer ki içinde yani konkal klasterlarınız varsa, şöyle iki farklı klaster olsun ve bunlar çok yoğun olsa bile şuradaki pointler ne oluyor? Bu klastera daha yakın olduğu için gidiyor, onlara atanmış oluyor.
+
+40
+00:07:36,851 --> 00:07:42,451
+Hiç cluster'da tamamen uzaklığa bakarak aslında kümeleme yapılıyor.
+
+41
+00:07:42,451 --> 00:07:48,451
+Ama density base clustering'e baktığımız zaman diyor ki, ben hani uzaklığa...
+
+42
+00:07:49,139 --> 00:08:11,500
+Bakmayayım, aslında bir şekilde uzaklığa da bakacak. Tamam mı? Uzaklığa bakayım. Ama ben kümelerimin içindeyim yoğun olmasını istiyorum. Yani yoğun olan, sample'ların bir küme, yani çok dens, yoğun olan, birbirine yakın olan şeyin, sample'ların küme oluşturmasını istiyorum diyor. Tamam mı?
+
+43
+00:08:11,956 --> 00:08:21,536
+Ve bunun avantajı ne olacak? İşte konkal şeyleri, şekillerdeki neleri bulabilecek? Clusterları bulabilecek.
+
+44
+00:08:22,196 --> 00:08:33,475
+Noizleri elimine edebilecek ve çok daha hızlı çalışan bir algoritmayla ne yapacak? Kümeleme işlemini yapabilecek.
+
+45
+00:08:33,823 --> 00:08:50,144
+Yine parametrelere ihtiyaç olan bir yöntem. Hatırlarsanız ki k-means ve k-means'te ne vardı? Bizim elimizde kaç tane klaster olacağını parametre olarak kullanıcı veriyordu.
+
+46
+00:08:50,644 --> 00:09:10,524
+density-based class'larında da yine parametreler var. Burada da iki tane parametre kullanacağız. Bir tanesi belirlediğim çap içinde kaç tane nokta olsun minimum. Diğeri de yoğunlukla ilgili yine bir parametre. Şimdi size algoritmanın nasıl çalıştığını göstereceğim.
+
+47
+00:09:16,692 --> 00:09:29,672
+DB scan algoritması. Bu eski bir algoritma ama işte faster DB scan, ondan sonra gibi gibi günümüzde hala kullanılan birçok varyantı var.
+
+48
+00:09:30,351 --> 00:09:39,612
+Hani DB scan diye bakarsanız hala demeyeyim, algoritma eski ama daha hızlı çalıştım, daha optimize edilmiş varyantları.
+
+49
+00:09:40,179 --> 00:09:49,659
+Ya da bu da çok kullanılıyor. Eğer hızlı problemi varsa, fester, d-bit, gel gibi algoritmalar da çok çok kullanılan algoritmalar.
+
+50
+00:09:49,659 --> 00:09:58,039
+Tamam. Şimdi çok basitçe anlatmaya çalışacağım. Bu bence biraz kötü anlatıyor. Diyorum ki, şimdi 3 tip noktam var.
+
+51
+00:09:58,159 --> 00:10:04,939
+Bir tanesi core point. Yani core point şu demek, bir tane parametrem olacak.
+
+52
+00:10:05,312 --> 00:10:32,432
+Bu da parametrem şu, bir sample'dan başlayıp başladığım zaman onun R çapındaki kapsadığı yerde en az min point kadar, yani parametrem min point şurada görmüş olduğunuz, en az min point kadar neyim olsun? Sample'ım olsun. Tamam mı? Eğer ki varsa bu bir nedir? Core point'dir. Hemen, hemen olmadı.
+
+53
+00:10:32,980 --> 00:10:41,080
+Şimdi şöyle, şimdi hemen olacak. Aynı olmadı. Yine bir şey paylaşmaya çalışıyorum.
+
+54
+00:10:45,524 --> 00:11:08,803
+Olayı almadıysa şöyle yapacağız. Diyelim ki bu bir nokta. Tamam mı? Bu da bir nokta, bu da bir nokta, şu da bir nokta, bu da bir nokta. Böyle böyle noktalarım var. Tamam mı? Diyelim ki siz tuttunuz bir R parametresi belirlediniz.
+
+55
+00:11:12,019 --> 00:11:15,500
+Yani R şöyle ise böyle bir çember çizer değil mi?
+
+56
+00:11:17,319 --> 00:11:19,259
+Algoritmaya geçmeyeyim önce şunları yapalım.
+
+57
+00:11:19,399 --> 00:11:20,259
+Core point şu demek.
+
+58
+00:11:20,719 --> 00:11:23,439
+Diyelim ki min point'i de 5 olarak belirlediniz.
+
+59
+00:11:23,599 --> 00:11:23,939
+Tamam mı?
+
+60
+00:11:24,419 --> 00:11:25,659
+Bir noktadan başlıyorum.
+
+61
+00:11:25,879 --> 00:11:26,879
+Şu nokta için mesela.
+
+62
+00:11:27,839 --> 00:11:28,360
+Gittim.
+
+63
+00:11:28,699 --> 00:11:31,439
+5 çapında şöyle bir ne çizdim?
+
+64
+00:11:31,819 --> 00:11:32,139
+Daire.
+
+65
+00:11:32,884 --> 00:11:46,604
+Şimdi eğer ki, beş yarı çapında çok var mı? Eğer ki bunu çizdiğin zaman, bir, iki, üç, dört, beş nokta, bunun en az beş nokta bunun içindeyse, diyorum ki şu nokta benim core pointimdir.
+
+66
+00:11:46,604 --> 00:11:55,124
+Tamam. Şimdi bir şeyin daha, mesela şu noktaya bakın, yeşil alayım.
+
+67
+00:11:55,860 --> 00:12:09,940
+Şu noktadan gelsem, şu nokta için. Şöyle bir R çapında şey çizsem. Bu, şu nokta, core point mi? Bakalım içinde sadece bir ve iki tane nokta var. O zaman core point değil kendisi.
+
+68
+00:12:10,600 --> 00:12:19,720
+Ama kendisi başka bir core point'in içinde mi? Şu kırmızıyla çizdiğim alanın içinde mi? Evet, o zaman buna diyorum ki border point.
+
+69
+00:12:20,788 --> 00:12:29,087
+Bakın, eğer ki çapta, yani verilen yarı çap alanındaki dairede minimum verilen parametre sayısı kadar sample varsa PowerPoint.
+
+70
+00:12:30,467 --> 00:12:48,268
+Eğer minimum verilen parametre kadar yeşil ile çizdiğim gibi bakarsak, içinde bu kadar nokta yoksa, ama nokta şu noktanın kendisi, başka bir PowerPoint'in kapsama alanındaysa Borderpoint diyorum.
+
+71
+00:12:48,596 --> 00:12:56,596
+Tamam. Aa, pardon, ne oldu? Şey, rettim, şey gitti. Hoppa.
+
+72
+00:13:02,596 --> 00:13:03,596
+Hoppardon.
+
+73
+00:13:07,596 --> 00:13:10,596
+Şey, rettim, çok yanlış bir yere tıkladım, tamam mı?
+
+74
+00:13:10,899 --> 00:13:16,839
+Sen görüyor musunuz ekranımı? Herhalde görüyorsunuz. Sanki, participants kendisi yazdı, tekrar paylaştım.
+
+75
+00:13:17,779 --> 00:13:19,599
+Görünüyor hocam, görünüyor, sıkıntı yok.
+
+76
+00:13:20,679 --> 00:13:32,659
+Şimdi, noise point dediğimiz şey de şu. Bir point var, border point de değil, four point de değil. Çizimlerim boşa gitti. O zaman buna da ne diyorum? Noise point diyorum. Şurada da bakalım.
+
+77
+00:13:33,107 --> 00:13:41,647
+Şimdi diyelim ki bir parametrem var. Parametrem ne olarak belirlenmiş? Minimum parametrem 4 olarak belirlenmiş. Tamam mı? Şuradaki gibi.
+
+78
+00:13:42,547 --> 00:13:48,507
+Şimdi bakalım şuna. Şimdi şu core point şu. Yani core point başta core mu değil mi bilmiyorum.
+
+79
+00:13:49,683 --> 00:13:57,864
+R, verilen R parametresine göre, R parametreyi de EPS'e diyoruz, 1 olmuş. Yani bu parametreyi siz verirsiniz verinize göre.
+
+80
+00:13:58,543 --> 00:14:08,524
+Bir çapında bir daire oluşturdum ve sayıyorum. Kaç tane nokta var burada? 1, 2, 3, 4, 5. Benim parametrem neydi? 4, 5 nokta olduğuna göre bu sağlıyor. Demek ki PowerPoint.
+
+81
+00:14:09,344 --> 00:14:15,464
+Şu noktaya bakarsak, şuna bakıyoruz. Bunu başka renkli çizelim. Kırmızıyla mesela.
+
+82
+00:14:16,403 --> 00:14:29,403
+Şuna bakalım. Daireyi çizdik mi? Şu kırmızının dairesi. Çizdik. Kaç tane nokta? Çok güzel çizdim. Tamam. Şuradaki görmüş olduğunuz...
+
+83
+00:14:29,403 --> 00:14:42,223
+Burada görmüş olduğunuz daire. Tamam. Bu dairenin içinde kaç tane nokta var? Bir, iki, kendisiyle üç.
+
+84
+00:14:42,740 --> 00:14:51,320
+Dolayısıyla dördü sağlıyor mu? Sağlamıyor. Bu sebeple bu core point değil. Çünkü şu alanın içinde en az dört nokta olması gerekiyordu.
+
+85
+00:14:52,519 --> 00:14:57,919
+Ama şu, şurada görmüş olduğumuz dairenin içinde o zaman buna diyorum ki border point.
+
+86
+00:14:58,779 --> 00:15:02,240
+Şimdi gelelim şuna. Şunu yine boyadım.
+
+87
+00:15:02,836 --> 00:15:22,035
+Bakın, bunun dairesini çizdim. Kaç tane noktam var? 1, 2. Sadece 2 nokta var. Şurada görmüş olduğunuz, yine kırmızıyla çizdiğim dairede. Sadece 2 tane nokta var. Buna komşu olan bu alanın içindeki, kendisinden başka. Dolayısıyla 4'ten küçük nokta sayısı. Bu sebeple core point değil.
+
+88
+00:15:22,548 --> 00:15:36,208
+Gelelim border point'e. Bu bir border point mi? Şimdi şundan çizsem, şuradaki görmüş olduğunuz nokta, şöyle çizsem bu da core point değil, şunu çizsem bu da core point değil.
+
+89
+00:15:36,528 --> 00:15:46,048
+Çünkü hiç o alanda o kadar nokta yok. Bunlar zaten uzağında. Dolayısıyla şurada görmüş olduğumuz nokta hiçbir core point'in alanı içinde kalmayacak.
+
+90
+00:15:46,048 --> 00:15:48,028
+Bu sebeple border point olabilir mi?
+
+91
+00:15:49,076 --> 00:15:58,796
+Hayır olamaz. Tamam mı? Buna da ne diyoruz? Noise point diyoruz. Tamam mı? Şimdi buraya clear yapalım.
+
+92
+00:16:03,635 --> 00:16:05,135
+Yine aynı sorunum var.
+
+93
+00:16:08,596 --> 00:16:22,155
+Tamam, ama değil. Niye bir şey yaşıyor? Arkadaşlar, pardon ya. Nasıl başarıyorum bilmiyorum ama gaya iyi başarıyorum.
+
+94
+00:16:25,216 --> 00:16:31,055
+Tamam. Şimdi umarım CorePoint, BorderPoint, No NoisePoint kısmı anlaşılmıştır.
+
+95
+00:16:32,692 --> 00:16:46,731
+Evet, gelelim buraya. Şimdi baktığımız zaman burada ne yapmış? Bir data vermiş. Datanın içinde, bakın orijinal noktalarım mavi.
+
+96
+00:16:47,155 --> 00:17:13,456
+Burada her bir noktayı core mu, border mu yoksa noise mu diye etiketlemiş. Yeşil olarak gördükleriniz core point yani EPS'i de 10 vermiş şeyde. Normalde şu X, Y koordinatları kaç aralığında bilmiyor ama 10 verdiği zaman. Yeşiller core point, maviler border point, kırmızılarda noise'lar. Yani hiçbir core point'in alanın içinde girmeyen noktalarda kırmızı noise point dedi. Tamam mı? Şimdi ne yapacağız?
+
+97
+00:17:14,579 --> 00:17:33,480
+Buradan kümeleme yapacağız. Kümeleme de baktığımız zaman ne var? Yoğunluğa göre aslında core point, border point ve noise pointleri ayırıyor mu? Evet, ayırıyor. Şimdi gelelim algoritmam nasıl çalışacak? İlk başta bütün pointleri core mu, border mu, noise mu diye label diyorum.
+
+98
+00:17:33,844 --> 00:17:47,564
+Yani ne demek? Bana şu noktalar verildiği zaman mavi ile her bir nokta çember merkezinde, verilen parametrenin çember merkezinde kalacak şekilde o alanda kaç tane nokta var sayıyorum.
+
+99
+00:17:47,564 --> 00:18:00,684
+Threshold'tan yüksekse core, eğer ki kendisi core değilse ama başka bir core'un alanı içindeyse border, hem core point değilse hem de border point değilse de noise point olarak ilk olarak tüm hepsini ne yaptım?
+
+100
+00:18:01,779 --> 00:18:24,139
+Label'ladım. 3 tane Label'ladım. Şimdi ne yapacağım? Algoritmam çalışmaya başlayacağım. Birlik olarak Noiseler elimine edilecek. Yani şurada görmüş olduğunuz kırmızılar hiçbir şekilde clustering'in içine katılmayacak. Kırmızı olan noktaları ne yapacağım? Elimin edeceğim. Yani bunlar hiçbir clustering'in içine katılmayacak olan noktalar.
+
+101
+00:18:31,347 --> 00:18:43,347
+Şimdi nasıl anlatayım, şöyle daha iyi anlatayım. Ne yapıyorum? Şimdi başlıyorum. İlk olarak herhangi bir noktadan başladım. Tamam mı?
+
+102
+00:18:43,347 --> 00:18:51,276
+Clustering'i. Noktadan başladım. Sonra clustering'ı bürüterek bireceğim.
+
+103
+00:18:51,508 --> 00:19:18,888
+Bunun içinde kalan tüm core noktaları bu klastra dahil ediyorum. Sonra dahil ettim. Diyelim ki 5 tane nokta vardı. Artık 6 noktam bir klastır. Şimdi yine bu 6'ya komşu olan komşuları ekliyorum. R'lerine bakarak. Tamam mı? Böyle böyle büyütüyorum, büyütüyorum, büyütüyorum. Eğer ki daha fazla bir şey ekleyemiyorsam orada bırakıyorum. Bu sefer neye bakıyorum? Border pointlerine bakıyorum.
+
+104
+00:19:19,571 --> 00:19:29,591
+Tamam mı? Bir border point. Eğer ki bir klastra R'den daha yakınsa onu da o klastra ekliyorum.
+
+105
+00:19:30,612 --> 00:19:36,852
+Böyle böyle ekleyerek bir kümeyi oluşturdum. Küme daha fazla büyümüyorsa duruyorum.
+
+106
+00:19:36,852 --> 00:19:46,672
+Bu sefer rastgele başka yerden bir point seçiyorum. Yine R yani kendi alanındaki core point'in alanındakileri hop ekledim.
+
+107
+00:19:46,972 --> 00:19:58,052
+Sonra bunların hepsinin, her birinin yani diğer eklediklerimin R yarı çapındakilere baktım, onları ekledim. Böyle böyle büyüttüm core point'leri ekleye ekleye.
+
+108
+00:19:59,220 --> 00:20:08,079
+Algoritmamı büyütüyor. Şu çok anlaşılmıyor gibi put an edge between all core points that are within EPS of each other.
+
+109
+00:20:08,160 --> 00:20:13,519
+Yani burada edge koy diyor, kenar koy, onları bağla diyor ama bu çok anlaşılmıyor.
+
+110
+00:20:13,519 --> 00:20:24,720
+Ne var? Hatta göstereyim. Bir dakika. Daha mantıklı. Bakayım açılacak mı? Şu bu algoritmayı çok iyi anlatıyor.
+
+111
+00:20:29,299 --> 00:20:33,379
+size bir şey açmaya çalışıyorum, başarabilirsem.
+
+112
+00:20:41,011 --> 00:20:41,731
+Önce.
+
+113
+00:20:45,236 --> 00:20:45,876
+TV
+
+114
+00:20:56,147 --> 00:21:13,067
+M.K.S.
+
+115
+00:21:13,395 --> 00:21:25,475
+Neyse, şu StartQuest var, görmüşsünüzdür. Burada bazı data mining yöntemleri bana da bayağı çok basit anlatılıyor. Böyle hızlıca bakmak isterseniz bence bu üç iliği anlatan şeylerden biri.
+
+116
+00:21:27,296 --> 00:21:36,495
+Şimdi atlayabilecek miyiz? Bakalım. Allah'ım bir ekran daha çıktı ya, bu neymiş? Ama bu değil.
+
+117
+00:21:37,107 --> 00:21:57,028
+Ya buna bakın tamam mı? Vazgeçtim. Şöyle yapıyorum. Kendini Statco istediği bir isken yazıp, bu al yani şeyi çizerek, bunun şeyi ne denir, ilastrasyonu bayağı iyi. Oradan bakın. Tamam. Çünkü şu an bir ekran daha izleyecek bir sabrım yok.
+
+118
+00:22:02,028 --> 00:22:02,968
+Geldik buraya.
+
+119
+00:22:03,380 --> 00:22:22,380
+Burada Edge koy dediği şunu yani şöyle anlatıyor aslında öyle değil, core pointleri diyor. Edge ile o birleştir kendi EPS'in içinde olanları. Ben bunu kendim çizerim. Neyse tamam. Şimdi core pointleri birleştire birleştire gittik mi? Gittik. Ondan sonra...
+
+120
+00:22:23,251 --> 00:22:36,251
+Birleştirecek kalmadıktan sonra core pointleri böyle büyüdü, büyüdü, büyüdü. Birleştirecek nokta kalmadıktan sonra border pointler eğer core point'e yakınsa bunları da ne yapıyorum? Yani reğenin içindeyse ekliyorum.
+
+121
+00:22:36,251 --> 00:22:43,891
+Eğer gidebileceğim şey kalmadıysa, artık büyüteceğim nokta kalmadıysa gidiyorum bu sefer rastgele başka bir cluster center seçiyorum.
+
+122
+00:22:43,991 --> 00:22:50,011
+Başka bir cluster center seçiyorum. Cluster dışında başka bir nokta seçiyorum. Sonra onları büyütmeye devam ediyorum.
+
+123
+00:22:51,731 --> 00:22:52,611
+Şurada anlatayım.
+
+124
+00:22:53,711 --> 00:22:57,912
+İlk başta kırmızı da şu noktayı seçtiyse tamam mı?
+
+125
+00:22:57,912 --> 00:22:59,371
+Masum'un olduğu noktayı.
+
+126
+00:22:59,871 --> 00:23:02,231
+İlk başta bunun çevresinden başlayacak.
+
+127
+00:23:02,531 --> 00:23:04,412
+Bunun çapındakileri ekledi klastra.
+
+128
+00:23:04,611 --> 00:23:09,351
+Sonra onların yakınındakiler, sonra onların yakındakiler, onların yakındakiler, onların yakındaki core pointler.
+
+129
+00:23:09,791 --> 00:23:11,591
+Böyle böyle bakın şöyle büyüyecek.
+
+130
+00:23:12,271 --> 00:23:13,675
+Büyüdükten sonra...
+
+131
+00:23:13,907 --> 00:23:22,727
+Core Point'leri de ne yapacağım? Yani Core Point değil, özür dilerim. Border Point'leri de eğer R buna yakınsa bunların içine ekleyecek.
+
+132
+00:23:22,727 --> 00:23:31,247
+Şimdi artık daha bir yere gidemiyor. Şu kırmızıyı buldu ya, başka bir yere gidemiyor. Yani daha şu mavi, sarı, yeşil cluster'lar bulunmadı.
+
+133
+00:23:31,987 --> 00:23:39,827
+Ne yapıyor? Yani şu kısımdan şunu tamam bu bir cluster olarak, kırmızı cluster olarak buldu. Diğerlerini ayırmak için bu sefer gidecek. Rastgele başka bir nokta seçecek.
+
+134
+00:23:40,307 --> 00:23:50,528
+Burası gele başka noktayı büyütecek, büyütecek, core pointleri ekleyecek. Border pointler R çapında buna da yakın olduğu için ne yapacak? Bunları ekleyecek.
+
+135
+00:23:50,528 --> 00:24:01,107
+Eğer ki şuradaki bir point border point ise, buradaki bir elemana R'den daha yakınsa onu da cluster'a ekleyecek. Baktığımız zaman ne var?
+
+136
+00:24:02,036 --> 00:24:27,855
+Şurada lacivert kalan noktalar tamamen noise. Noise'a karşı robust. Yani tutup da biz burada k-mean yapsaydık, şuradaki birçok noktayı ne yapacaktı? Noise olduğunu anlamayacaktı. Ama şimdi, DVS-ken, yoğunluğa eğer datanız, yoğunluklara göre kümelendiyse, yoğunluklara göre kümelendiyse, noise'a karşı ne yapıyor? Gayet dayanıklı.
+
+137
+00:24:28,692 --> 00:24:29,731
+No, abo bülüyor.
+
+138
+00:24:30,516 --> 00:24:37,475
+Bir şekilde böyle girintili çıkıntılı yani birbirinin içine girmiş şekilleri bulabiliyor.
+
+139
+00:24:37,475 --> 00:24:49,816
+Ve bakarsanız aslında algoritma mesela şey iterakü interasyonu giderken bu daha hızlandırılmış yöntemlerinde tek seferde bütün noktalar üzerinden geçiyor.
+
+140
+00:24:50,375 --> 00:24:56,475
+Ve hesaplamasını öyle yaptığı için hani one-paste bir algoritma yani bir kere de üzerinden geçerek bulabiliyor.
+
+141
+00:24:57,107 --> 00:24:58,867
+Bir şey daha söyleyecektim önemli.
+
+142
+00:25:02,428 --> 00:25:05,607
+Rastgele nokta seçerken core pointlerden birini seçiyor.
+
+143
+00:25:05,847 --> 00:25:09,347
+Zaten core point seç bu bir soru arkadaşımız olmuş.
+
+144
+00:25:09,907 --> 00:25:11,748
+Core pointlerden birini mi seçiyor diye.
+
+145
+00:25:11,867 --> 00:25:18,627
+Core point seçmese zaten bir tane noise seçse, yani noise point seçse zaten hiç büyütemeyecek, orada bırakacak şeyi.
+
+146
+00:25:19,127 --> 00:25:21,887
+Onun yakında, yani şey yapmayacak.
+
+147
+00:25:22,291 --> 00:25:28,932
+Oradan devam etme şansı yok. Kümen içindeki elemanı Minpoint'ten zaten çok daha küçük olacak.
+
+148
+00:25:33,107 --> 00:25:34,288
+Böyle bir algoritma.
+
+149
+00:25:35,147 --> 00:25:38,067
+Şimdi, nerelerde çalışmaz? Bir buna bakalım.
+
+150
+00:25:38,627 --> 00:25:42,488
+Eğer ki kümelerin densitleri çok farklıysa, bu ne demek?
+
+151
+00:25:42,488 --> 00:25:47,488
+Şimdi, biz burada ne parametresi veriyoruz? Bir minpoint parametresi veriyoruz.
+
+152
+00:25:47,627 --> 00:25:51,188
+Bir de yarı çap parametresi veriyoruz bu EPS dediği.
+
+153
+00:25:51,708 --> 00:25:59,048
+Eğer ki bizim klasterlarımızın parametreleri birbirinden farklıysa, yani bu şeyi vermiş, normalde olanı vermiş.
+
+154
+00:25:59,188 --> 00:26:00,567
+Mesela bu çok yoğunken.
+
+155
+00:26:00,960 --> 00:26:18,140
+Şurası çok az yoğun, bu orta yoğunlukta. Ve tek bir R parametresi ve işte Mindpoint parametresiyle bunu DB Scan algoritmasına tabi tutarsanız, bakın nasıl bulmuş? Şu yeşiller bir küme, kırmızılar bir küme, şu arası üçüncü renk başka bir küme olarak bulmuş.
+
+156
+00:26:18,220 --> 00:26:25,940
+Ya da bir farklı parametreyle verirseniz, işte kırmızılar bir küme, maviler ve şunlar bir küme şeklinde bulmuş olabiliyor.
+
+157
+00:26:26,451 --> 00:26:50,892
+O yüzden eğer ki datamızdaki densitler çok farklıysa tek parametre bunu kapsayamayabiliyor. O yüzden bu tarz durumlarda iyi çalışmaz. Bir de burada ne bir şey yok? Bakın şimdiye kadar görmüş olduğumuz algoritmalarda kaç küme olması gerektiğini kim söylüyordu? Biz söylüyorduk. Diyorduk ki bunu 3 kümeye ayır, bunu 5 kümeye ayır diyorduk.
+
+158
+00:26:52,372 --> 00:27:07,692
+Burada ne var? Burada küme sayısı kendi kendine oluşuyor. Yani DB scan algoritmasını çalıştırmadan oradan kaç küme oluşacağını ne yapıyoruz? Biz söylemiyoruz algoritma. Bunu bize kendisi vermiş oluyor.
+
+159
+00:27:10,192 --> 00:27:15,492
+Şimdi peki iki parametremiz var. Bir tanesi yarı çap, diğeri de işte o alanda.
+
+160
+00:27:16,211 --> 00:27:21,551
+Çemberin içinde, dairenin içinde kaç tane minimum nokta olması gerektiği.
+
+161
+00:27:22,132 --> 00:27:23,312
+Bunu nasıl anlarız diyor.
+
+162
+00:27:23,932 --> 00:27:32,771
+Şimdi şöyle yapmış, pointlerin uzaklıklarını tamam mı? Bulmuş.
+
+163
+00:27:34,483 --> 00:27:47,543
+Bulurken de şöyle yapmış, dördüncü en yakının, sadece en yakını almamış da, birinci en yakın, ikinci en yakın, üçüncü en yakın vardır ya, dördüncü en yakınına göre ne yapmış?
+
+164
+00:27:48,163 --> 00:27:51,343
+Şurada noktaları sıralamış, tamam mı?
+
+165
+00:27:51,343 --> 00:28:02,283
+Yani, beş yüz tane noktanın uzaklığı şunmuş. Kaçmış? İşte dörtmüş. Bin beş yüz tane noktanın dördüncüye uzaklığı...
+
+166
+00:28:02,291 --> 00:28:08,291
+5 dolayı 5'miş. Şimdi bakarsak eğer 2700 tane yaklaşık noktanın...
+
+167
+00:28:09,460 --> 00:28:21,460
+4. en yakın pointe uzaklığı 10 civarındayken birden ne oluyor? Çok hızlı artmaya başlıyor. Bu ne demek? Aslında bunlar birbirine yoğun gidiyor gidiyor.
+
+168
+00:28:21,460 --> 00:28:30,460
+Bir noktadan sonra, bir uzaklıktan sonra ne oluyor şurada? Yani yaklaşık işte 10'dan sonra, 10 uzaklığından sonra birdenbire...
+
+169
+00:28:31,155 --> 00:28:41,155
+Çok az sayıda nokta birbirine en az o uzaklıkta olmaya başlıyor. Bu şu demek, uzaklığı ona kadar olan...
+
+170
+00:28:41,268 --> 00:28:45,988
+Yaklaşık 10'a kadar olan noktalar belirli bir kümen, yoğun kümenin içinde.
+
+171
+00:28:46,988 --> 00:28:54,188
+Ama eğer ki uzaklık büyüdüğü zaman ne olmuş oluyor?
+
+172
+00:28:54,788 --> 00:28:57,528
+Sizin elinizde öyle bir nokta yok. Çünkü density'ye uymuyor.
+
+173
+00:28:57,668 --> 00:29:03,988
+O noktaları zaten dördüncüye, dördüncü en yakına bakıyoruz ya, o noktalar zaten başka birilerine daha yakın olmuşlar.
+
+174
+00:29:03,988 --> 00:29:06,567
+Şurada var. Dolayısıyla ne yapacağız?
+
+175
+00:29:07,316 --> 00:29:10,696
+Parametresi seçerken mesela bunun için neyi seçebiliriz?
+
+176
+00:29:11,116 --> 00:29:16,696
+Hani uzaklığa bakıyoruz. Yaklaşık işte 10, biraz daha aşağıdan alayım derseniz.
+
+177
+00:29:17,436 --> 00:29:20,556
+10 da şurada. İşte bir 19 falan ne yapabilirsiniz?
+
+178
+00:29:21,916 --> 00:29:27,236
+Ala bilirsiniz değil mi? Uzak parametresi mi?
+
+179
+00:29:28,256 --> 00:29:29,876
+Minpoint'sı nasıl bulacağız peki?
+
+180
+00:29:31,284 --> 00:29:35,683
+Main Point's de bulmak için de hani burada dördüncüye, Günevri Sayöre yapmış ya.
+
+181
+00:29:36,372 --> 00:30:00,011
+İşte parametre kaç kaç arasında değişecekse mesela ilk başta işte 5, 10, 15, 20'ye bakarsınız. Sonra hangi, yani 5.ye, şöyle söyleyeyim, en yakın 5.ye uzaktığın grafiği, en yakın 10.ye, en yakın 15.ye, en yakın 20.ye uzaktığa bakarsınız. Ondan sonra baktığımız zaman şunu göreceğiz. Bir yerde kırılma görmemiz lazım. Yani kaçtan sonra kırılma artıyorsa.
+
+182
+00:30:00,352 --> 00:30:04,852
+O zaman da min points parametresi olarak bunu seç dememiz lazım.
+
+183
+00:30:07,672 --> 00:30:15,232
+Yani şurada k as the min points var ya, 4 nears'ta, 3. nears, 5. nears, 6, 7 bak.
+
+184
+00:30:15,772 --> 00:30:18,532
+Ona göre hangisinde kırılma varsa yine onu seç diyor.
+
+185
+00:30:22,792 --> 00:30:26,132
+Bir tane de şeyimiz var, exampleimiz var.
+
+186
+00:30:26,579 --> 00:30:40,980
+Şimdi elimde data pointleri var. 1, 1, 1, 2, 2, 1, 2, 2, 3, 2, şunlar. Min pointisi 3 belirlemiş, EPS'i de 1.5 olarak belirlemiş. Hemen bir sonraki sayta geçtik. Niye? Çünkü çözümü var. Şimdi ne yapmamız lazım?
+
+187
+00:30:41,460 --> 00:31:00,660
+Şöyle yapacağız. 1.1 noktasının diğer 7 noktayla uzaklıkları. Tamam mı? Alırken de öküt uzaklığı almış. Şimdi benim EPSM'le, yani 1.1'e bakarsak bakalım hangi noktalar bu 1.5 R'nin içinde.
+
+188
+00:31:01,087 --> 00:31:16,707
+kendisinin var. 1,2 var. Uzaklığı 1 olduğu için 1,5'tan küçük o yüzden içinde. Uzaklığı 1 olduğu için içinde. Square root 2 var. Yine 1,5'tan küçük olduğu için içinde. Square root 5 var. Büyük olduğu için içinde değil, içinde değil, içinde değil.
+
+189
+00:31:16,967 --> 00:31:22,787
+Dolayısıyla baktığımız zaman şurada 3 tane nokta yani 1,2,2,1,2,2.
+
+190
+00:31:23,316 --> 00:31:32,395
+Bu şeyin içinde kalıyor. Alanın, dairenin içinde kalıyor. Dolayısıyla 1,1,1 core point midir? Evet. 1,1,1,2'ye baktığımız zaman.
+
+191
+00:31:32,980 --> 00:31:59,259
+1'e 1 içinde, uzaklığını hesaplamış 1'e 1 noktası ile 1.2'nin, öpid uzaklık 1 çıkıyor, 1.5'tan küçük. Kendisiyle uzaklığı zaten 0. Square root 2, karaklık 2, yine 1.5'tan küçük. 1, yine 1.5'tan küçük. Baktığınız zaman ne? 3 nokta yine şeyin içinde, min-PTS'nin içinde kendisi hariç. Dolayısıyla core point olarak alıyor. Tamam mı?
+
+192
+00:31:59,731 --> 00:32:05,531
+Şöyle bir güzellik var. Eğer ki sıralarsanız bir yerden sonra bakmanıza gerek yok. Az boyutunuz varsa.
+
+193
+00:32:06,259 --> 00:32:33,920
+Ve boyutları aslında normalize etmek, DVS-ken de o yüzden de önemli. Yani geçen hafta konuşmuşuz diye clustering yapıyorsak, mutlaka feature'ları normalize etmemiz lazım. Tamam? Yani bir feature atıyorum, sıfırla yüz arasında, diğeri yüz binle bir milyon arasındaysa, uzaklık hesaplamasını farklı etkileyecekleri için normalize ettikten sonra yani şöyle bir şey var, demek istediğim şey, şöyle diyelim ki iki, şu noktalar bir şeye göre sorted olsa.
+
+194
+00:32:34,259 --> 00:32:42,000
+İkiden sonrasında ne yapmanız lazım? Bakmanıza gerek yok. Çünkü bunlar bir şu point uzaksa ondan daha uzaktakiler zaten daha uzak olacak.
+
+195
+00:32:42,500 --> 00:32:48,220
+Fester DBS'ken algoritmaları da birazcık bu tarz optimizasyonlar yaparak çalışıyor.
+
+196
+00:32:48,220 --> 00:32:55,900
+Tamam. Şu noktaların hepsinin komşu sayısı yani R'nin araya alan içindeki diğer eleman sayısı 3'ten.
+
+197
+00:32:56,564 --> 00:33:08,244
+daha fazla olduğu için, eşit ya da daha fazla olduğu için bunlar core point. 4.1'e baktığımız zaman bu 3 değil. Yani 1.5'dan büyük, 1.5'dan büyük, 1.5'dan büyük.
+
+198
+00:33:09,084 --> 00:33:20,004
+Bu da 1.5'dan büyük. Sadece square root 2 var, bir de 1 var. Değil mi? Sadece kendisi hariç 2 tane nokta var. Dolayısıyla şu 4.1 noktası.
+
+199
+00:33:20,435 --> 00:33:25,715
+Bir core point mi? Hayır değil. Çünkü kendisi hariç iki tane nokta var. Herhalde üç tane olması gerekiyordu.
+
+200
+00:33:26,316 --> 00:33:43,115
+O yüzden core point değil. Peki border point mi? 4.1'e bakarsak, evet kendisi 3.2'nin, 3.2 core pointinin alanı içinde olduğu için, kendisi core point değil ama başka bir core pointin içinde olduğu için ne?
+
+201
+00:33:43,655 --> 00:33:44,735
+Kendisi border point.
+
+202
+00:33:45,203 --> 00:34:10,684
+5.1'e bakarsak bütün noktalarla uzaklığına bakıyorum. Uzaklığı 1.5'dan küçük olan bir 4.1 noktası var. Bir tane. Dolayısıyla core point değil. Peki 5.1 noktası herhangi bir core point'in alanı içinde mi?
+
+203
+00:34:11,155 --> 00:34:15,876
+Hayır, değil. Çünkü alan içinde olsa şuradaki değer bir buçuktan daha küçük olurdu.
+
+204
+00:34:15,975 --> 00:34:21,715
+Core point'lerin alan içinde olmadığı için, herhangi bir core point içinde de olmadığı için, demin dediğim gibi ne?
+
+205
+00:34:21,876 --> 00:34:25,235
+Bu bir noise diye değerlendiriyoruz.
+
+206
+00:34:25,895 --> 00:34:26,376
+Tamam mı?
+
+207
+00:34:26,376 --> 00:34:27,635
+Bu ile ilgili soru var mı?
+
+208
+00:34:34,068 --> 00:34:37,068
+Hocam çok rahatsızsanız, soruya da bırakabilirsiniz.
+
+209
+00:34:37,388 --> 00:34:38,068
+Yani biz de...
+
+210
+00:34:38,908 --> 00:34:40,988
+Yok yok.
+
+211
+00:34:41,888 --> 00:34:42,568
+Sağ ol [öğrenci].
+
+212
+00:34:43,307 --> 00:34:44,288
+Var mı başka soru?
+
+213
+00:34:48,628 --> 00:34:49,988
+Varsa chat'e yazın, tamam?
+
+214
+00:34:51,268 --> 00:34:51,488
+Okey.
+
+215
+00:34:52,588 --> 00:35:00,628
+Şimdi, buradan diyor ki, şeylerin, direkt şeyini söyleyeyim, bunu niye koyduğunu.
+
+216
+00:35:01,108 --> 00:35:06,828
+Bir graph base cluster'in diye bir şey var. Tamam mı? Bu dinamik modelim diye bir şey kullanıyor.
+
+217
+00:35:07,448 --> 00:35:13,188
+Kullanırken de şuna bakıyor. Kümenin içindeki elemanlar birbirine çok benzesin.
+
+218
+00:35:13,748 --> 00:35:19,467
+Diğer kümeler arasındaki fark da, yani self-similarity dediği küme içindeki şeyler birbirine benzesin.
+
+219
+00:35:19,467 --> 00:35:23,408
+Ve cluster'lar arasındaki uzaklıkta olabildiğince.
+
+220
+00:35:24,019 --> 00:35:32,079
+farklı olsun ve bunu ben clusterları oluşturdukça, oluşturdukça dinamik olarak bulayım diyor. Tamam mı?
+
+221
+00:35:32,940 --> 00:35:37,400
+Yaparken de şöyle yapıyor. Önce KNN spars graph diye bir şey var. Bu şu demek.
+
+222
+00:35:38,240 --> 00:35:44,199
+Diyelim ki, şimdi şurada yazacağım yine. Şunların hepsi, şu bir nokta.
+
+223
+00:35:44,199 --> 00:35:46,099
+Şu bir nokta.
+
+224
+00:35:46,612 --> 00:35:54,352
+Bu bir nokta. K-NN, yani K-NN graf ne demek? K-NN spars graf ne demek? Ona bir bakalım. Bunlar noktaları. Tamam mı?
+
+225
+00:35:54,972 --> 00:36:04,712
+Şimdi bu incremental olarak artacak. Nasıl artacak? Önce one nn yani en yakın komşuya baktığımız zaman her noktayı en yakın komşusu ile birleştireceğim.
+
+226
+00:36:04,712 --> 00:36:11,092
+Diyelim ki bu bunun en yakın komşusu. Bu bunun çok kötü birleştirdim. Şunun en kötü yakın komşusu.
+
+227
+00:36:11,635 --> 00:36:21,635
+Bu, bunun en yakın komşusu, bu da bunun en yakın komşusu olsun. Tamam, tamam, daha çıkalım. Bu, one-NN graf. Tamam. Arada sadece birer edge var.
+
+228
+00:36:21,635 --> 00:36:35,936
+Şimdi, two-NN'e bakarsak, yine bakacağız, buna en yakında ne yapacağız? Değil mi, buna en yakın nokta şuysa birleştirdim. Buna en yakın nokta buysa birleştirdim. Tamam mı?
+
+229
+00:36:37,043 --> 00:36:53,003
+Böyle işte 3-NN'de yine birleştirerek gidiyoruz. İlk başta bu ne yapıyor? Graftan diyelim ki 3-NN'lik ya da 4-NN'lik böyle küçük graflar oluşturuyor. Tamam mı?
+
+230
+00:36:58,036 --> 00:37:15,195
+Şöyle ki, şurada da KNN grafını söylemiş aslında. Diyor ki, PNQ iki tane nodum connected'tır. Eğer ki QP'nin en yakın komşusuysa, yani K1 ise en yakın birinci komşusuysa, K2 ise en yakın ilk iki komşusunun arasındaysa.
+
+231
+00:37:15,195 --> 00:37:22,695
+Tamam mı? Şurada görmüş olduğunuz şey siyah bir KNN spars grafı.
+
+232
+00:37:23,188 --> 00:37:35,128
+Sonra bunları partition yapıyor. Yani şuradaki edge'lere göre küçük graflar ayırıyor. Sonra her bir grafın kendi ortalamasını alıp birbirine yakın olanları tekrar birleştiriyor.
+
+233
+00:37:35,828 --> 00:37:47,008
+Şurada mesela ne yapmış? Şu koca graftan 3 farklı cluster oluşturmuş. Böyle bir yöntem. Aslında bu hiyerarşik bir yöntem. Çünkü 1NN, 2NN.
+
+234
+00:37:47,344 --> 00:37:57,784
+Bunları birleştirdiğimiz için, şu bir öncesine giderseniz hiyerarşikte, işte şuradaki sarı, kırmızı, siyah, işte bunlar tek bir şey.
+
+235
+00:37:58,544 --> 00:38:06,844
+Yani şöyle söyleyeyim, şunu oluşturanlar aslında k-NN ile yapıldığı için hiyerarşik bir şekilde işte birbirine nasıl bağlıymış öncesini görebiliyoruz.
+
+236
+00:38:08,184 --> 00:38:13,024
+Bu da bir graph-based clustering yöntemi. Tam ne olduğunu bilin.
+
+237
+00:38:13,811 --> 00:38:17,132
+şey çok önemli değil, formülasyonun çok önemli değil.
+
+238
+00:38:31,380 --> 00:38:31,980
+Şimdi
+
+239
+00:38:38,867 --> 00:38:48,488
+İşte bu da inter-connectivity, bir klasterın içindeki uzaklığı nasıl ölçüyor, bir de inter-connectivity var, onu nasıl ölçüyor, onları göstermiş.
+
+240
+00:38:48,488 --> 00:38:54,867
+Ama yani şey değil, formular yerine çok daha farklı şeyler kullanılabilir. O yüzden bunu geçiyorum. Mantığı bu ama.
+
+241
+00:38:55,327 --> 00:39:02,388
+Şimdi klastering tekniklerimiz bitti. Yani 3 farklı klastering tekniği gördük.
+
+242
+00:39:02,708 --> 00:39:18,748
+Peki, her seferinde, her derste metodu görüyoruz. Sonra bu metod ne kadar iyi çalışıyor diye ne yapıyoruz? Yani bu metodun ne kadar iyi çalıştığını biz nasıl değerlendirebiliriz acaba diye. Bunu hangi metriklerle değerlendirebiliriz diye buna.
+
+243
+00:39:19,268 --> 00:39:30,068
+Şimdi de cluster'da biz bir cluster bulduk yaptık. Bu cluster ne kadar iyi çalışıyor ona bakalım.
+
+244
+00:39:30,579 --> 00:39:39,259
+Nasıl bakabiliriz? Şimdi farklı şeyler tanımlayacağız. Cohesion, Spirative, Departation diye şeyler tanımlıyoruz ama farklı yöntemleri var.
+
+245
+00:39:39,480 --> 00:39:47,259
+Yani cluster evaluation, cluster ne kadar iyi, cluster'ın kalitesi ne kadar iyi. Bunu farklı şekillerde ne yapabiliyorum, değerlendirebiliyorum.
+
+246
+00:39:47,259 --> 00:39:55,239
+Şimdi üç farklı yöntem var. Bir tanesi external, bir tanesi internal. Diğeri de böyle. Şimdi external dediğim şey şu.
+
+247
+00:39:55,987 --> 00:40:19,947
+Bir şekilde süperval olarak eğer ki bir uzman bunu değerlendirebiliyorsa, yani cluster var, cluster'ın içinden tutuyor bazı şeyleri, cluster'ı oluştuktan sonra, bakın önce değil, cluster oluşturduktan sonra gidiyor, cluster'ın içinden sample'lar seçerek etkiliyor. Tamam mı?
+
+248
+00:40:20,340 --> 00:40:37,660
+Sonra da etiketlediği şeyler, gerçekten aynı cluster'da mı diye bakıyor. Ama bu çok yapılan bir şey değil. Çünkü benim elimde zaten etiketler olsa ben clustering yapmam. Ben ne yaparım? Clustering yapmam, baştan classification yaparım. Tamam mı? Yani bu süper var.
+
+249
+00:40:37,660 --> 00:40:41,700
+Bu yöntem çok kullanılma durumu olan bir şey değil.
+
+250
+00:40:42,195 --> 00:40:57,496
+Internal dediği de yine datanın itliyen unsupervised. Elimizde label'lar zaten yok, olmayacak da. Diyorum ki, cluster'lar birbirinden ne kadar iyi ayrılmış, yani birbirine ne kadar uzak. Tamam mı? Buna bakayım.
+
+251
+00:40:58,579 --> 00:41:02,400
+Buna göre bir şekilde, sayısal bir şekilde bunu değerlendireyim diyorum.
+
+252
+00:41:03,019 --> 00:41:08,260
+Böyle relative üçüncüye baktığımız zaman da şöyle bir şey yapıyoruz.
+
+253
+00:41:08,820 --> 00:41:18,059
+Diyelim ki k-means'de işte para cluster sayısı var ya da işte DB scan'de iki tane min points gibi ya da R gibi parametreler var.
+
+254
+00:41:18,440 --> 00:41:20,640
+Bu parametreleri değiştiriyorum, değiştiriyorum.
+
+255
+00:41:21,099 --> 00:41:26,579
+Parametreleri değiştirirken işte birbirine kumenin birbirine uzaklığını ve kümenin içindeki elemanların birbirine...
+
+256
+00:41:26,579 --> 00:41:52,220
+uzaklığını sürekli ölçüyorum. Hangi parametrede daha iyi çalışmış, tamam mı? Hani aynı algoritma ama parametreyle farklı. Hangisi daha iyi çalışmış? Bir de bunu değerlendiriyorum. Yani doğru parametre settingini bulmaya çalışıyorum ama aslında relative'e baktığımız zaman yine içinde biraz internal var. Çünkü bunun içinde herhangi bir süpervallet bir şey yok, etki etme falan filan yok. Yine kümenin
+
+257
+00:41:53,204 --> 00:41:58,824
+Yani şeye bakacağım, bir küme her birbirine kadar uzak, ne kadar uzaksa benim için o kadar iyi.
+
+258
+00:41:59,403 --> 00:42:04,224
+Ve bir kümenin, her bir kümenin içindeki elemanlar birbirine ne kadar yakın.
+
+259
+00:42:04,583 --> 00:42:08,103
+Birbirine ne kadar yakınsa benim için o kadar iyi. İstediğim şey o.
+
+260
+00:42:13,556 --> 00:42:25,196
+Şimdi, cohesion dediğimiz şey, bir klasterın içindeki elemanlar birbirine ne kadar yakın, onu ölçüyorum. Separation'da kümeler birbirinden ne kadar ayrı.
+
+261
+00:42:25,196 --> 00:42:31,516
+Yani bu da şöyle görüyor zaten. Major how well separated a cluster from other clusters dediğimiz şey.
+
+262
+00:42:32,156 --> 00:42:37,236
+Şimdi, bir kümenin içindeki şeyi nasıl ölçersiniz, cohesion dediğimiz benzerliği?
+
+263
+00:42:38,739 --> 00:43:05,440
+C-i dediği küme, küme her küme için, iyi tane kümem var, tamam mı? Ve her bir küme için kümenin elemanlarının merkeze olan uzaklığını bulursunuz. Zaten kümenin elemanları merkeze yakınsa, yani kümeler kompaktsa, sadece bu küme içini buluyor, bu olabildiğince küçük çıkar. Yani bu size S dediğim şey, equation gösteriyor, some of square error.
+
+264
+00:43:06,036 --> 00:43:18,036
+Bunun olabildiğince küçük olmasını istiyor. Separation dediğim şey de bulduğum klasterlar birbirinden ne kadar ayrı. Çünkü ben ayrı bulmasını istiyor. Bunu da şöyle ölçüyoruz.
+
+265
+00:43:32,019 --> 00:43:36,219
+genel merkezini uzaklığının karesi öklit kurulandığı için.
+
+266
+00:43:37,359 --> 00:43:39,759
+Zor gibi gözükebilir ama hiç zor falan değil.
+
+267
+00:43:39,980 --> 00:43:43,440
+Şimdi şöyle bir klastırım olsa, şu örnekle göstereyim.
+
+268
+00:43:43,899 --> 00:43:48,679
+Tek bir klastırım var diyelim ki, klastırımında yani elimde 4 nokta var.
+
+269
+00:43:48,819 --> 00:43:50,980
+1, 2, 4 ve 5 noktaları.
+
+270
+00:43:51,539 --> 00:43:54,259
+Bir klastırım olsa, k atama 1.
+
+271
+00:43:54,804 --> 00:44:10,804
+Kalkalat'ın merkezinde şurası orta. İlk neyi ölçüyorum? Kohejan'ı, yani kümenin içindeki benzerlik. Yani şu elemanlar 1, 2, 4 ve 5 kümenin merkezine ne kadar yakın. Nasıl ölçeceğiz?
+
+272
+00:44:11,135 --> 00:44:23,816
+1-3'ün karesi, birinci elemanın merkeze uzaklığı artı, ikinci eleman 2-3'ün karesi, üçüncü eleman 4-3'ün karesi, 5-3'ün karesi toplamı.
+
+273
+00:44:24,096 --> 00:44:28,115
+Tamam mı? Ne çıkmış? 10. Daha küçük, yani küçük çıkmasını istiyorum.
+
+274
+00:44:33,204 --> 00:44:51,923
+BST'de bütün şeye baktığımız zaman klasterlar zaten tek bir klaster var. Yani tek klaster olacağı için ne çıkacak? Sıfır çıkacak. Dört elemanı olduğu için dört, merkez üç. O yüzden üçten üç çıkarttı sıfır. Yani tek klaster olduğu için zaten klasterlar arası uzaklığından bahsetmiyoruz. On artı sıfırdan on çıktı.
+
+275
+00:44:58,931 --> 00:45:10,011
+Bir tanesi M1, şu iki tanesi M1 klasterında, diğeri de M2, merkezi M2 yani, şu 4 ve 5 de başka bir klasterda, k eşittir 2.
+
+276
+00:45:10,672 --> 00:45:22,011
+Tamam mı? Koalition'u bulalım, önce M1 için bulalım. Nasıl bulacağız? Koalition'u ile tam o square error ile ölçüyorduk. M1'de 1,5. Tamam mı?
+
+277
+00:45:25,235 --> 00:45:49,235
+2-1.5'un karesi. Şu birinci kümenin elemanların birbirine yakınlığı. Artı, şurası da 4.5 destek, M2 noktasına. 4-4.5'un karesi artı 5-4.5'un karesi. Bunlar hepsini topladığımız zaman ne buluyormuş? 1. Bakın ne oldu? Şöyle tekme yerine 2 küme.
+
+278
+00:45:49,811 --> 00:46:10,811
+kullandığım zaman, k-cılım yani Samosker Error'ım düşmüş oldu. Ben bunu zaten daha düşük almak istiyorum. Peki gelelim, şeyler arasındaki, neler arasındaki, kümeler arasındaki uzaklığa yani separation ismini verdiğim ve between some...
+
+279
+00:46:11,380 --> 00:46:35,860
+of squares dediğim uzaklığı. Bakıyorum, birinci kümem şu. Birinci kümemde kaç eleman var? 2. Tamam. Bunların bir önceki şeyden orta noktası ne? 3. 3-1.5'un karesi. Artı yine iki tane eleman var. 2 çarpı, şurası 4.5, 4.5-3'ün karesi.
+
+280
+00:46:36,307 --> 00:46:51,387
+Ne çıkıyor? Nerede? Şurada. 9 çıkmış. İkisinin toplamı ne çıkmış? Yine 10 çıkmış. Peki bu küme mi daha iyi? Bu duruma göre bu küme mi daha iyi? Ne dersiniz? Yani bir klastırım olsa mı daha iyi, iki klastırım olsa mı daha iyi? İkisi de 10 çıkmış.
+
+281
+00:46:55,476 --> 00:47:12,735
+Sayısal olarak bir fark yok gibi gözüküyor. Hani tamamen ortadan verdiği için örneği yani uzaklıkları aynı olduğu için. Ama şurada eğer bir elemanımız daha olsaydı mesela şurada yani şurada 4.2'de de bir elemanımız olsaydı ne olacaktı? İkinci küme?
+
+282
+00:47:13,300 --> 00:47:23,600
+çok daha iyi çıkmış olacaktı. Yani ikinci k eşittir iki kullandığınız küme bu iki kümeyi bir kümeden daha iyidir diyebilecektik. Tamam mı?
+
+283
+00:47:24,800 --> 00:47:27,240
+Böyle bir... Buradan soru var mı?
+
+284
+00:47:44,403 --> 00:47:50,564
+Collation dediği şey, şu kümenin içindeki şey, uzaklık, küme elemanların birbirine.
+
+285
+00:47:51,004 --> 00:47:54,484
+Separation dediğinde kümeler arasındaki uzaklık.
+
+286
+00:47:55,644 --> 00:48:00,104
+Proximity graph dediğimiz bir şey var. Proximity graph ne? Yakınlık grafiği.
+
+287
+00:48:00,563 --> 00:48:13,283
+Bunda şöyle bir şey yapıyoruz. Cohesion dediğim, şöyle bir şey yapıyorum. Her bir arasındaki, her bir elemanın birbiriyle arasındaki uzaklığı buluyorum. Tamam mı?
+
+288
+00:48:13,844 --> 00:48:21,303
+Tek bir klasterın cohesionı da işte buradaki uzaklıkların toplamı olmuş olur. Tamam mı?
+
+289
+00:48:21,303 --> 00:48:28,003
+Separation'a baktığım zaman her bir elemanın başka kümeler, diğer kümedeki elemanlarıyla uzaklığına bakıyorum.
+
+290
+00:48:29,268 --> 00:48:55,487
+Ve yine bunların ne yapıyorum? Toplamını alıyorum. Yine Squation ve Separation bu şekilde de ne yapılabiliyor? Hesaplanabiliyor. Tamam mı? Ama çok daha ne sürüyor? Daha yani Sum of Square'a baktığım zaman biraz daha uzun süren bir metod daha yavaş çalışan bir metod. Şimdi şundan da bahsedeceğim. Bu Stiluid Coefficient çok kullanılıyor. Stiluid Coefficient.
+
+291
+00:48:56,019 --> 00:49:16,539
+Şimdi bu ne? Yine aynı şekilde koyajınla sepeleşini tek bir şeyde birleştiriyor. Tek bir formülde birleştiriyor. Tamam mı? Bu arada da şöyle bir şey var. A dediğim şey, şu yani A, koyajın yerine A'yı kullanacak, sepeleşinin yerine de şu B'yi kullanacak. A dediğim şey ne?
+
+292
+00:49:23,635 --> 00:49:33,675
+Buradaki noktaların, bir klaster içindeki, yani klasterın, nasıl söyleyeceğim?
+
+293
+00:49:38,708 --> 00:49:45,347
+Yine şu şey kullanabilirsiniz. Yani baktığımız zaman, şeyi nasıl söyleyeceğimi bulamadım da.
+
+294
+00:49:45,688 --> 00:49:53,507
+Şimdi A dediğim şey bunların içindeki uzaklık, B dediğim de klasterların birbirisinin arasındaki uzaklık.
+
+295
+00:49:53,628 --> 00:50:00,347
+Bunu alırken de A hesaplarken her bir elemanın uzaklığını alıp, toplayıp, ortalamasını alıyorum.
+
+296
+00:50:05,811 --> 00:50:19,692
+ortalamasını alıyorum. Tıpkı deminki, cohesion ve separation'daki gibi yani şurada her bir uzaklığı alıyorum, topluyorum. Burada da cluster'lar arasındaki uzaklıkları alıyorum, separation'da topluyorum. Tamam mı?
+
+297
+00:50:19,692 --> 00:50:23,371
+Dolayısıyla şu koşuna A, şuna da B diyebilirsiniz.
+
+298
+00:50:23,699 --> 00:50:46,980
+Ve diyorum ki, Silhouette Coefficient'da 1-a bölü b'dir diyorum. Çünkü şu an küme içindeki uzaklığın b'den daha küçük çıkacağını umuyorum. O yüzden a bölü b. Dolayısıyla bu da bana 0 ile 1 arasında bir değer verecek. Tamam mı? Eğer ki 1'e yakınsa, 1'e yakın olması ne demek? Şu demek.
+
+299
+00:50:47,344 --> 00:51:10,023
+A olabildiğince küçükken, B de olabildiğince büyük. İstediğim şey bu. Eğer sınıflet korefisyonun 1'e çok yakınsa, yani şunlar arasındaki uzaklık küçük, kümeler arasındaki uzaklık B büyükse, sınıflet korefisyonun 1'e yakın çıkacak ve de diyeceğim ki bu iyi bir kümeleme yöntem.
+
+300
+00:51:11,539 --> 00:51:22,859
+Bu tarafa yakın çıkarsa çok da aslında kümeler birbirine, benim kümeleme yöntemim de aslında datadan da kaynaklanabilir.
+
+301
+00:51:22,859 --> 00:51:31,119
+Ama küme içindeki benzerlik çok değil, küme arasındaki benzerlik de yeterince farklı değil. Yorumunu yapabiliriz.
+
+302
+00:51:39,123 --> 00:52:02,423
+Basitçe, şu da güzel. Şimdi korelasyonla nasıl ölçeriz? Şimdi şundan bahsedelim. İki mantrisimiz var. En siz nasıl mantrisi? Şöyle düşünün. Her bir elemanı, klastırdaki her bir elemanı böyle neydi ki gibi işte A varsa A'dan Z'ye elemanlar işte satırlara yazdım. A'dan Z'ye elemanları yine aynı elemanları.
+
+303
+00:52:02,800 --> 00:52:08,059
+Bir iki boyutlu matrisde hem satırda hem sütunda ifade ettiğimi düşünün. Tamam mı?
+
+304
+00:52:08,480 --> 00:52:23,400
+Ve eğer ki bu iki nokta aynı klastra düşüyorsa içindeki değeri bir yapıyorum, farklı klastra düşüyorsa da iki yapıyorum. Tamam mı?
+
+305
+00:52:24,532 --> 00:52:44,652
+Ondan sonra şu propsintimatris zaten birbiriyle uzaklığı veriyor noktaların. Her bir noktanın birbiriyle uzaklığı. Incidence'ın da 0-1. Yani eğer ki bunlar aynı klasterdaysa 1 yazacak. Sonra bunların birbiriyle, kümeçinin birbiriyle korelasyonunu hesaplıyorum. Şimdi burada asıl göstereceğim şey şu.
+
+306
+00:52:45,652 --> 00:52:55,311
+Yani bu korelasyonda işte daha eksi 1'e yakın korelasyonu çıkmış. Burada clusterlar arasında clusterlar pek iyi durumda değil.
+
+307
+00:52:56,211 --> 00:53:02,172
+Eksi 0, 5 gibi bir şey çıkmış ama asıl göstermek istediğim bu değil. Şu. Bu size daha iyi anlatacağım.
+
+308
+00:53:02,172 --> 00:53:05,251
+Şimdi, özür diliyorum ya.
+
+309
+00:53:08,952 --> 00:53:11,831
+3 tane cluster oluşmuş. Tamam mı?
+
+310
+00:53:12,211 --> 00:53:20,532
+Point'lere de baktığımız zaman bakın 100'e 100 point var. Yani her bir point hem satırda hem de nerede gösteriliyor?
+
+311
+00:53:20,532 --> 00:53:29,731
+Sununda gösteriliyor. Ve eğer ki yani diyelim ki bu nokta aynı cluster'daysa ne yapıyorum? 1 yapıyorum yoksa 0 yapıyorum.
+
+312
+00:53:30,292 --> 00:53:36,372
+Hani onunla tuttum. Bizim yakınlık madresinin koalasyonunu buldum.
+
+313
+00:53:36,527 --> 00:53:42,147
+Şimdi sıfır demek, bunlar arasında, noktalar arasında uzaklık yok demek.
+
+314
+00:53:42,287 --> 00:53:45,227
+Şimdi burada x, y olarak iki boyutlu gördüğümüz için.
+
+315
+00:53:45,787 --> 00:53:54,367
+Burada da ne istiyorum? Birbirine yakın olan, yani şurası bakın bir klaster, şurası bir klaster, burası da başka bir klaster olarak oluşmuş.
+
+316
+00:53:54,507 --> 00:53:58,267
+Yani bir nokta tutup da mesela kırmızı şuradan devam etmemiş.
+
+317
+00:53:59,167 --> 00:54:03,267
+Şu daha iyi. Mesela şu bir diğerine bakarsanız eğer ki,
+
+318
+00:54:03,956 --> 00:54:21,716
+Şimdi, şurada bir klaster var. Bakın boyutu çok farklı. Şurada daha küçük bir klaster var. Burada daha büyük bir klaster var. Ama arada neler var bakın. Böyle boşluklar var. Yani bu şu demek. Buradaki noktalar şuralara kalmış. Diğer pointlere daha yakın.
+
+319
+00:54:22,324 --> 00:54:37,984
+Olduğu için tutmuş, gitmiş. Belki şu klastıra ait olacaktı. İyi bir şekilde ne yapmış? Gruplanmamış. Belki şu klastır böyle gidiyordu. Biliyor muyuz? Hayır, bilmiyoruz. Ama görsel olarak baktığınız zaman şunu diyebiliyorsunuz.
+
+320
+00:54:37,984 --> 00:54:48,844
+Tamam, bu mükemmel bir klastır. Gerçek dünyada hiç bu kadar kırmızılıklar bile çıkmayabiliyor. Genelde şu ilk gördüğünüz klastır gibi çok dağınık şeyler.
+
+321
+00:54:50,099 --> 00:55:04,199
+Çok dağınık noktalar ortaya çıkıyor. Özellikle bizim datamız iki boyutlu değil, çok daha boyutlu, çok fazla feature'imiz var. Bunları cluster yaptığımız zaman, bu neden iyi oluyor bir yandan da?
+
+322
+00:55:04,199 --> 00:55:09,199
+Biz datayı iki boyutlu görmüş oluyoruz. Yani tam cluster çok boyutlu olduğu için, mesela...
+
+323
+00:55:09,619 --> 00:55:17,699
+Şunu gördüğünüz zaman, aa ne güzel kümelemiş diyorsunuz ama gerçek data iki boyutta olmadığı için, şöyle bile dataya bakma imkanımız yok.
+
+324
+00:55:17,699 --> 00:55:22,739
+Ama şu matrisler ne yapıyor? Bize birazcık daha ne veriyor?
+
+325
+00:55:22,739 --> 00:55:30,179
+Cluster'ın ne kadar, aslında ne kadar datayı böldü, ne kadar iyi böldü?
+
+326
+00:55:30,179 --> 00:55:34,179
+Bunun hakkında biraz en azından yorum yapma şansı veriyor.
+
+327
+00:55:34,739 --> 00:55:59,420
+Bu da bak, devilsken ve şu demin yaptığımız örneğe benzer örnekte, clusterlar nasıl oluştu onu göstermiş. Mesela bakın şuradaki noktaların bir kısmı şu tam ortasında olurken, bir kısmı burada olurken diğerleri tutmuş. Şu diğer clusterlara doğru kaymış. Tamam. Yani tutup şununla aynı clusterları çıkmış gibi. Tamam.
+
+328
+00:56:04,980 --> 00:56:06,219
+clustering bu kadar.
+
+329
+00:56:07,519 --> 00:56:09,299
+Bir dakika bu kadar diye bunu da söyleyeceğim.
+
+330
+00:56:09,380 --> 00:56:11,400
+Bunu aslında söyledik de tekrar söyleyelim.
+
+331
+00:56:11,891 --> 00:56:28,051
+Şimdi, kaç tane, peki ben hani K-NN, K-Means, en popüler algoritmalar bunlar. İkisinde de kaç tane klaster olacağını ne yapmak zorundayım? Ben parametre olarak vermek zorundayım. Ama 5 mi, 6 mı, 1 mi, 2 mi ben bunu biliyor muyum? Hayır bilmiyorum.
+
+332
+00:56:28,351 --> 00:56:39,151
+Genelde şöyle şey geliyor, yani şey diyor ki, market demeyelim de bunun kullanıcısı, yani işin analizlerini yapacak olan kişi.
+
+333
+00:56:39,891 --> 00:56:48,371
+müşteri segmentasyonu yapıyorsanız, pazarlamacı vs. benim 3 klaslara ihtiyacım var, 4 klaslara ihtiyacım var diye size baştan söylüyor olabilir.
+
+334
+00:56:48,371 --> 00:56:53,371
+Ama söylese bile hangi k-parametersinde...
+
+335
+00:56:53,748 --> 00:57:14,728
+Benim klaster'ım daha iyi ayrılıyor. Yani kaç klaster'a ayırmalıyım? Bunu bilmek istiyorsak ne yapabiliriz? Klaster'lar içindeki hatayı neyle bakıyordum? Sum of square error ile bakıyordum hatırlarsanız. K'yı değiştiriyorum. K1 iken, 2 iken, 5 iken, 10 iken. Ne yapıyorum? Sum of square error'a bakıyorum.
+
+336
+00:57:15,072 --> 00:57:19,271
+Şimdi, sum of square örneği kümenin içindeki elemanların uzaklığına bakıyor.
+
+337
+00:57:19,271 --> 00:57:26,672
+Yani kümenin içindeki elemanlar ne kadar birbirine yakınsa, benzerse o kadar küçük çıkıyor.
+
+338
+00:57:26,672 --> 00:57:32,271
+Tek bir cluster yapsak çok büyük. Zaten hepsine normal olarak en büyük sayı orada.
+
+339
+00:57:32,271 --> 00:57:38,072
+Sonra işte iki cluster yapsanız bir tık düşüyor, beş cluster daha da düşüyor.
+
+340
+00:57:38,072 --> 00:57:41,871
+Ama bakın sonra on cluster'dan sonra bir şey fark etmiyor.
+
+341
+00:57:42,996 --> 00:57:49,336
+Hatta yani o 5 ile 10 arasında bile hani baya bir fark var.
+
+342
+00:57:49,811 --> 00:57:59,152
+Eğer ki yorumlayabilecekse, yani on cluster diyeceksiniz, sonra işte şu cluster'ın içindeki örneklere bakacaksınız, diyeceksiniz ki yorumlayacaksınız.
+
+343
+00:57:59,612 --> 00:58:07,652
+Demek ki böyle böyle olan veriler buraya geldi. Böyle işte atıyorum, eylül müşterilerle uğraşıyorsanız, demek ki buralar tarım alanları buraya geldi diyeceksiniz.
+
+344
+00:58:07,791 --> 00:58:17,811
+Buraya sulak alanlar diyeceksiniz. Buraya diyeceksiniz ki, burası orman alanı ama burada işte şöyle şöyle alanlar da olduğu için böyle alanları tutup ikisini bilin.
+
+345
+00:58:17,811 --> 00:58:42,172
+Birleştirerek yeni bir küme yapmış diye. Bu kümelerin içindeki örneklere bakıp kendinizin yorumlaması lazım ama k parametresini değiştirerek bakın diğerden sonra ne oluyor? Şurada iyi bir kırılma var. Sonra da buradan sonra sabit gidiyor. Yani ne kadar daha bölerseniz bir kümenin içindeki benzerlik hiçbir şekilde artmıyor. Dolayısıyla mesela 10 parametresi burada kümeler arasındaki benzerliğin.
+
+346
+00:58:42,963 --> 00:58:48,764
+en fazla olduğu, tam oskerelerin en düşük olduğu yer. Buradan anlayabiliriz.
+
+347
+00:58:50,284 --> 00:58:58,163
+Burada da şey yapıyor, baktığımız zaman sirüet koeficiinden bahsetmiştik ya, 1 bölü a-b idi.
+
+348
+00:58:58,592 --> 00:59:04,592
+A'da, yani Stam of Square'da sadece Stam of Square'ı da deminkinde sadece küme içi verilir var.
+
+349
+00:59:05,012 --> 00:59:09,791
+Burada B'den gelen kümeler arası sepeleşim, yani kümeler arası uzaklık da işin içinde var.
+
+350
+00:59:10,251 --> 00:59:17,711
+Şimdi buraya baktığımız zaman da yine K'yı değiştiriyoruz. K'yı değiştirdiğin zaman Süleyman Koyefişent nasıl değişiyor?
+
+351
+00:59:18,451 --> 00:59:22,851
+Süleyman Koyefişent'in olabildiğince bire yakın olmasını istiyorum. Değil mi?
+
+352
+00:59:23,923 --> 00:59:46,163
+Dolayısıyla bakın, on'da en yüksek çıkmış sonra düşmeye başlamış. Kümeler arası uzaklık giderek ne yapıyor? Böldükçe azalıyor muhtemelen B parametresi. O yüzden buradan da mesela şu data için, burada da çok bariz bir data ama on cluster'da silet coefişent ile en iyi setting'e sahip olabildiği gözüküyor.
+
+353
+00:59:47,364 --> 00:59:51,344
+Kendin sizden, hoppskin statikçisinden bahsetmiyorum. Clustering bu kadar.
+
+354
+00:59:52,275 --> 01:00:11,955
+Ok, Class Deng'i bitirmiş, olduk. Şimdi, normalde Outlier Detection'ı anlatacağım. Sanırım anlatacağım, tamam. Bir 10 dakika ara verelim, sonra Outlier Detection'la devam edelim, ok?
+
+355
+01:00:13,635 --> 01:00:19,195
+Hocam, sakın bir, biz buradayız diyor, yani ili ili bir verimlenir, hep bilginiz olsun hocam.
+
+356
+01:00:20,851 --> 01:00:28,372
+Yani sizi iyi hissediyorsanız biz dinleriz, sorun yok ama ya yeter bu kadar, sonra da yani o da hiç soru sıkıntı değil, yüzünüz olsun.
+
+357
+01:00:29,952 --> 01:00:34,952
+Ha o zaman ya ne kadar dinlediğiniz de bilmiyorum, ben bunu yüz yüze anlatacağım.
+
+358
+01:00:34,952 --> 01:00:43,632
+Yani bir saatlik falan bir kısım var, outlier detection'da. Var olan yöntemleri nasıl kullanırız? Onlar var daha çok.
+
+359
+01:00:44,052 --> 01:00:47,572
+Şöyle yapalım o zaman bugünlük. Burada bitirelim.
+
+360
+01:00:48,351 --> 01:00:49,291
+Size bağlı yani.
+
+361
+01:00:49,871 --> 01:00:56,711
+Tamam, en fazla bir saatlik bir kısmım kaldı. Onu haftaya ya da sonraki hafta bir şekilde anlatacağım.
+
+362
+01:00:56,711 --> 01:01:01,771
+Yani bir saatlik bir outlier detection konumuz daha var. Tamam mı? Okey miyiz?
+
+363
+01:01:05,076 --> 01:01:06,875
+Eyvallah hocam. Nasıl isterseniz?
+
+364
+01:01:06,875 --> 01:01:11,735
+O slide var. Hem de slide'ı koyarım ama o slide'da da istatiysel kısımlara çok izin uzunlanmaz mıyım.
+
+365
+01:01:12,635 --> 01:01:20,875
+Share'i koyarım. Outline detection slide'larını koyarım. Başka sorunuz var mı? Ya da söylemek istediğiniz bir şey projeyle ilgili, ödevle ilgili?
+
+366
+01:01:29,268 --> 01:01:42,208
+Herhalde yok, bekliyorum ama tamam. O zaman haftaya görüşmek üzere, tamam? Hadi kendinize iyi bakın.
+
+367
+01:01:42,228 --> 01:01:44,648
+Teşekkür ederiz adam, sağ olun, ağzınıza sağ olun.
+
+368
+01:01:45,327 --> 01:01:50,827
+Hadi sağ olun katıldığınız, dinlediğiniz için ben de teşekkür ederim. Umarım faydalı olur.
+
+369
+01:01:52,748 --> 01:01:53,887
+İlerleyen hayatınızda.
+
+370
+01:01:54,260 --> 01:01:57,079
+Ölçek gibi konuştuk. Hadi görüşürüz.
