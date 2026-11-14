@@ -1,0 +1,2655 @@
+1
+00:00:12,435 --> 00:00:13,996
+Merhaba arkadaşlar, sesim geliyor mu?
+
+2
+00:00:18,771 --> 00:00:19,611
+İyi hocam.
+
+3
+00:00:20,991 --> 00:00:22,351
+Tamamdır, hoş geldiniz.
+
+4
+00:00:33,908 --> 00:00:35,067
+Hocam bir şey sorayım mı?
+
+5
+00:00:35,567 --> 00:00:35,847
+Tabii.
+
+6
+00:00:36,588 --> 00:00:38,787
+Vize notlarını ne zaman açıklayacaksınız?
+
+7
+00:00:40,008 --> 00:00:42,828
+Vize notlarını haftaya açıklayacağım arkadaşlar.
+
+8
+00:00:43,167 --> 00:00:44,768
+Tutsana bakmayın, yetiştiremedim.
+
+9
+00:00:44,928 --> 00:00:48,608
+Bu ara çok yoğun deadline'lar vardı.
+
+10
+00:00:49,807 --> 00:00:53,548
+Henüz bakamadım ama haftayı açıklayacağım.
+
+11
+00:00:54,788 --> 00:00:58,528
+Ondan sonrasında da projelerimizi değerlendirmeye başlayacağım.
+
+12
+00:01:00,276 --> 00:01:01,416
+Tamam, teşekkür ederim.
+
+13
+00:01:01,776 --> 00:01:11,135
+Teşekkür ederim. Onun dışında var mı sorularınız varsa başlamadan önce. Final sınavını biliyorsunuz online olarak yapacağız.
+
+14
+00:01:13,216 --> 00:01:20,276
+Çünkü üniversitenin kararı bu yönde oldu. Onunla ilgili detayları yine haftaya konuşuyoruz nasıl bir sınav olacağına dair.
+
+15
+00:01:20,276 --> 00:01:27,016
+Ama vizeye benzer olacaktır. Biraz daha netleşince haftaya konuşuruz.
+
+16
+00:01:28,084 --> 00:01:30,444
+Projeyle ilgili sorusu olan var mı?
+
+17
+00:01:36,563 --> 00:01:46,563
+Tamam, sanırım yok. Şimdi bir ekran paylaşımı yapayım. Ekranım geldi mi size?
+
+18
+00:01:57,075 --> 00:02:00,615
+Ekranım görne ama, you're able to see my screen.
+
+19
+00:02:05,268 --> 00:02:06,268
+ve kanlı.
+
+20
+00:02:06,268 --> 00:02:07,268
+OK, please.
+
+21
+00:02:07,268 --> 00:02:11,268
+Just one second, please.
+
+22
+00:03:00,500 --> 00:03:04,199
+Ok, so let's get started with our discussion.
+
+23
+00:03:05,360 --> 00:03:09,319
+For the last couple of weeks, we were discussing different types of algorithms,
+
+24
+00:03:10,639 --> 00:03:17,080
+from classification and clustering, and how each of these algorithms are applied.
+
+25
+00:03:18,000 --> 00:03:25,780
+Today, we will continue that discussion with a new kind of problem, new kind of algorithm set.
+
+26
+00:03:26,355 --> 00:03:30,355
+Bu konuda bu konuda kullanılmalı bir şey.
+
+27
+00:03:30,355 --> 00:03:36,355
+Bu konuda kullanılmalı bir de kullanılmalı bir de kullanılmalı kullanılmalı.
+
+28
+00:03:36,355 --> 00:03:46,355
+Bu konuda kullanılmalı kullanılmalı.
+
+29
+00:03:46,355 --> 00:03:53,355
+Bu konuda kullanılmalı.
+
+30
+00:03:54,068 --> 00:04:22,067
+Bu problemiyle ilgili ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili birçok problemiyle ilgili
+
+31
+00:04:22,067 --> 00:04:26,987
+Bank products, or even biological processes.
+
+32
+00:04:29,707 --> 00:04:36,127
+This association, rule mining, has a specific name in marketing.
+
+33
+00:04:36,307 --> 00:04:37,908
+It's called market basket analysis.
+
+34
+00:04:38,327 --> 00:04:39,587
+It means the same thing.
+
+35
+00:04:40,648 --> 00:04:44,887
+The difference is that this is application to a specific domain.
+
+36
+00:04:45,363 --> 00:04:48,283
+Bu, market basket analysis,
+
+37
+00:04:48,283 --> 00:04:51,764
+bu teknik olarak
+
+38
+00:04:51,764 --> 00:04:56,043
+çalışma yapacağı bir soru.
+
+39
+00:05:03,444 --> 00:05:08,783
+So, which items should be combined or marketed together?
+
+40
+00:05:08,783 --> 00:05:14,104
+Or in what order the customers purchase the items?
+
+41
+00:05:14,524 --> 00:05:17,783
+All of these questions are...
+
+42
+00:05:18,656 --> 00:05:23,016
+Bu tarzı bir tarzı olarak, bu tarzı olarak,
+
+43
+00:05:23,016 --> 00:05:26,056
+birçok bir örnek olarak,
+
+44
+00:05:26,056 --> 00:05:28,855
+birçok bir adı var,
+
+45
+00:05:28,855 --> 00:05:30,096
+Migos,
+
+46
+00:05:30,096 --> 00:05:32,256
+ve
+
+47
+00:05:32,256 --> 00:05:41,415
+bir adı var,
+
+48
+00:05:41,415 --> 00:05:42,696
+ama
+
+49
+00:05:44,831 --> 00:06:09,899
+Bu da bazı baz
+
+50
+00:06:09,908 --> 00:06:19,908
+İtemsizde, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli.
+
+51
+00:06:19,908 --> 00:06:25,908
+Bir de, çeşitli, çeşitli, çeşitli, çeşitli, çeşitli.
+
+52
+00:06:37,711 --> 00:06:41,711
+ve o karlarına baktığınızda
+
+53
+00:06:41,711 --> 00:06:43,711
+veya bir şeyde
+
+54
+00:06:43,711 --> 00:06:45,711
+bir süreçte
+
+55
+00:06:45,711 --> 00:06:47,711
+için
+
+56
+00:06:47,711 --> 00:06:48,711
+bir şeyde
+
+57
+00:06:48,711 --> 00:06:59,711
+daha fazla
+
+58
+00:07:01,108 --> 00:07:05,007
+Market Basket Analysis, or Association of Role Mining,
+
+59
+00:07:05,588 --> 00:07:13,007
+tries to find these patterns using an input list of purchases by purchasers.
+
+60
+00:07:13,627 --> 00:07:20,447
+In these transactions or list of purchases, we don't require the names of the customers or purchaser.
+
+61
+00:07:20,648 --> 00:07:21,627
+It is not necessary.
+
+62
+00:07:22,108 --> 00:07:26,927
+The only information needed is the input list of items that sell together.
+
+63
+00:07:28,019 --> 00:07:37,939
+Also, we need some thresholds, such as finding the frequent item set, what should be the threshold to determine that ratio.
+
+64
+00:07:38,939 --> 00:07:40,939
+So, it has many...
+
+65
+00:08:10,708 --> 00:08:23,308
+Bu ülkelerden de bu ülkelerden de bu ülkelerden de yüksek profilere
+
+66
+00:08:23,507 --> 00:08:51,508
+Bu konuda kullanmanın bir şeyleri kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullanmak için kullan
+
+67
+00:08:51,508 --> 00:08:56,548
+Bu kullanıcı bir kullanımda,
+
+68
+00:08:56,548 --> 00:09:13,468
+bu kullanımda,
+
+69
+00:09:13,468 --> 00:09:14,468
+Migos,
+
+70
+00:09:14,468 --> 00:09:15,268
+Gim,
+
+71
+00:09:16,083 --> 00:09:32,524
+Bu konuda da
+
+72
+00:09:33,268 --> 00:10:00,000
+Bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem, bir eklem
+
+73
+00:10:00,000 --> 00:10:18,124
+Bu da, bu
+
+74
+00:10:18,388 --> 00:10:25,388
+ve bu
+
+75
+00:10:25,388 --> 00:10:45,388
+bu
+
+76
+00:10:44,179 --> 00:11:06,139
+As a human, let me ask you this question, what would you prefer if you go to, for instance, Negroes and you try to buy coffee? What is your behavior?
+
+77
+00:11:06,964 --> 00:11:15,944
+Do you tend to buy if there are more products of coffee in that roof or is it the opposite?
+
+78
+00:11:15,944 --> 00:11:21,504
+For instance, if you don't see many products, do you feel like you need to buy that?
+
+79
+00:11:22,163 --> 00:11:27,683
+Which one is the better, having more items or less items of the same type?
+
+80
+00:11:30,444 --> 00:11:31,724
+What is your...
+
+81
+00:11:33,652 --> 00:11:39,412
+ve bu şekilde, ne düşünüyorsunuz?
+
+82
+00:11:49,951 --> 00:11:51,951
+bu
+
+83
+00:11:51,203 --> 00:11:54,203
+Birkaç tane kaffeyi var.
+
+84
+00:11:54,203 --> 00:12:16,779
+Birkaç tane kaffey var.
+
+85
+00:12:45,011 --> 00:12:46,011
+Anybody else?
+
+86
+00:12:46,551 --> 00:12:47,551
+The more the better.
+
+87
+00:12:49,411 --> 00:12:49,811
+Okay.
+
+88
+00:12:53,151 --> 00:12:54,111
+Thanks, Peri.
+
+89
+00:12:54,491 --> 00:12:56,391
+Anybody else has an opinion?
+
+90
+00:12:56,751 --> 00:12:59,932
+Anybody prefer seeing less items?
+
+91
+00:13:06,292 --> 00:13:23,072
+Evet, for some reason, it appears that we prefer to see more items of the same kind. Even though we only need one, it is better to see, or the customers tend to buy a brand or a product if they see plenty of that in the room.
+
+92
+00:13:23,572 --> 00:13:51,572
+Bu bir şeyin biraz daha fazla ihtiyaç duyuyor.
+
+93
+00:13:51,572 --> 00:14:02,956
+Tüm bir, çok çok,
+
+94
+00:14:02,964 --> 00:14:19,756
+Bu yüzden de bu konuda çok iyi bir şekilde
+
+95
+00:14:20,563 --> 00:14:34,223
+Okay, so there are many benefits of using association rule mining because it is frequently used in selection of promotions or merchandising strategies.
+
+96
+00:14:34,223 --> 00:14:41,223
+If there are people who are sensitive to the price, maybe you can give them different promotions or different...
+
+97
+00:14:42,035 --> 00:15:08,459
+Bu da
+
+98
+00:15:08,500 --> 00:15:14,899
+Many applications of association rule mining exist in different domains.
+
+99
+00:15:15,699 --> 00:15:27,000
+The most frequent and commonly widely known area of application is retail shops, retail outlets, such as grocery stores.
+
+100
+00:15:28,000 --> 00:15:36,399
+Also, many other retail companies use these automatically. Telecommunication, banking, insurance.
+
+101
+00:15:36,500 --> 00:15:40,699
+ve medyacılıkları için kullanılmalı.
+
+102
+00:15:40,699 --> 00:15:42,000
+Bu eksempel,
+
+103
+00:15:42,000 --> 00:15:46,340
+birçok farklı bir ürünler için
+
+104
+00:15:46,340 --> 00:15:49,639
+bir ürünler için
+
+105
+00:15:49,639 --> 00:15:52,840
+bir ürünler için kullanılmalı.
+
+106
+00:15:52,840 --> 00:15:53,600
+Bu eksempel,
+
+107
+00:15:53,600 --> 00:16:03,419
+bir ürünler için
+
+108
+00:16:14,995 --> 00:16:31,415
+From the medical applications, there are many studies that cover symptom analysis, meaning that which diseases or which genetical disorders have specific or similar symptoms.
+
+109
+00:16:32,076 --> 00:16:39,275
+So that if they have similar symptoms, they may be associated with similar genes or similar genetic factors.
+
+110
+00:16:40,076 --> 00:16:41,855
+So that can be an example.
+
+111
+00:16:42,995 --> 00:17:04,683
+Bu bir örneğin, bu örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir örneğin, bir ör
+
+112
+00:17:04,756 --> 00:17:09,135
+ve bu ürününün müziği için $15.24.
+
+113
+00:17:09,135 --> 00:17:11,516
+Bu ürünün müziği için,
+
+114
+00:17:11,516 --> 00:17:15,256
+bu ürünün müziği için,
+
+115
+00:17:15,256 --> 00:17:17,576
+ve bir ürünün müziği için,
+
+116
+00:17:17,576 --> 00:17:19,516
+ürünün müziği için,
+
+117
+00:17:19,516 --> 00:17:22,635
+daha fazla ürünün müziği için,
+
+118
+00:17:22,635 --> 00:17:25,135
+$13.41.
+
+119
+00:17:25,135 --> 00:17:27,936
+Bu ürünün müziği için,
+
+120
+00:17:27,936 --> 00:17:30,376
+ve bu ürünün müziği için,
+
+121
+00:17:48,192 --> 00:17:59,192
+So if you can generate profiles based on this associated rule mining, then you can target specific profiles.
+
+122
+00:17:59,192 --> 00:18:05,192
+For instance, if you want to give promotions or have connection with those customers,
+
+123
+00:18:05,192 --> 00:18:11,192
+you may focus on these people at the top because they are more profitable
+
+124
+00:18:11,192 --> 00:18:16,192
+and try not to give any promotions or discounts to the lower.
+
+125
+00:18:16,192 --> 00:18:22,192
+Bu birçok birçok birçok birçok birçok.
+
+126
+00:18:23,604 --> 00:18:29,403
+Bu
+
+127
+00:18:29,403 --> 00:18:32,044
+bu
+
+128
+00:18:32,044 --> 00:18:32,604
+iki
+
+129
+00:18:32,604 --> 00:18:34,104
+bölümde
+
+130
+00:18:34,104 --> 00:18:34,604
+marketing
+
+131
+00:18:34,604 --> 00:18:36,604
+bölümde
+
+132
+00:18:36,604 --> 00:18:40,604
+bu
+
+133
+00:18:40,604 --> 00:18:41,604
+adı
+
+134
+00:18:41,604 --> 00:18:42,604
+affinit
+
+135
+00:18:42,604 --> 00:18:43,604
+positioning
+
+136
+00:18:43,604 --> 00:18:48,011
+bu
+
+137
+00:18:48,211 --> 00:19:13,867
+ve
+
+138
+00:19:14,387 --> 00:19:19,387
+Bu konuda, bu konuda, üretimlerle ilgili birçok şey var.
+
+139
+00:19:37,556 --> 00:19:43,776
+Paper towels, orange juice, or some other drinks or vegetables.
+
+140
+00:19:44,676 --> 00:19:49,816
+So what happens is that you position, even though these are different kinds of products,
+
+141
+00:19:49,816 --> 00:19:55,856
+they can be positioned in a way that they can be accessible more easily.
+
+142
+00:19:56,936 --> 00:20:04,816
+Although they are not relevant, let me...
+
+143
+00:20:05,587 --> 00:20:07,587
+Check web, bu ne?
+
+144
+00:20:18,003 --> 00:20:25,003
+Evet, şimdi devam edelim.
+
+145
+00:20:28,468 --> 00:20:33,868
+The famous example for association of raw mining was Walmart's case.
+
+146
+00:20:35,788 --> 00:20:43,788
+This was driven from that example that Walmart had done a similar example analysis
+
+147
+00:20:44,708 --> 00:20:50,708
+and they found association between baby diapers and beer.
+
+148
+00:20:51,407 --> 00:20:55,407
+bu
+
+149
+00:20:51,316 --> 00:20:56,316
+ve neden neden bu, çünkü bu da bir adım var.
+
+150
+00:20:56,316 --> 00:20:59,316
+Çünkü bu da bir adım var.
+
+151
+00:20:59,316 --> 00:21:05,316
+Ve de psikolojisi ve sosyal bir adım var.
+
+152
+00:21:05,316 --> 00:21:07,316
+Ve neden daha iyi bilgi verildi.
+
+153
+00:21:07,316 --> 00:21:11,316
+Ve de bu adım var.
+
+154
+00:21:11,923 --> 00:21:34,796
+Bu da
+
+155
+00:21:35,604 --> 00:21:38,524
+Walmart'in aynı zamanda,
+
+156
+00:21:38,524 --> 00:21:41,604
+ve bu kadar barbie keşfetlerden bahsettiğinizde
+
+157
+00:21:41,604 --> 00:21:44,724
+60% likelihood
+
+158
+00:21:58,612 --> 00:22:12,908
+ve diğerlerinin de
+
+159
+00:22:13,011 --> 00:22:18,871
+Bu da aynı zamanda,
+
+160
+00:22:18,871 --> 00:22:21,931
+birçok birçok var.
+
+161
+00:22:21,931 --> 00:22:24,491
+Birçok birçok var.
+
+162
+00:22:24,491 --> 00:22:36,331
+Bu da birçok var.
+
+163
+00:22:39,667 --> 00:22:40,748
+A few concepts.
+
+164
+00:22:41,887 --> 00:22:45,667
+The association rules have two...
+
+165
+00:22:58,836 --> 00:23:23,980
+Bu, bu
+
+166
+00:23:24,564 --> 00:23:52,492
+Bu bir adı
+
+167
+00:23:52,948 --> 00:24:19,180
+Bu, bu
+
+168
+00:24:20,692 --> 00:24:27,692
+Ve bu
+
+169
+00:24:27,692 --> 00:24:30,692
+ve bu
+
+170
+00:24:30,692 --> 00:24:50,543
+bu
+
+171
+00:24:48,403 --> 00:24:50,403
+Bu konferençler için birçok birçok.
+
+172
+00:24:50,403 --> 00:24:54,403
+Bu konferençler için birçok.
+
+173
+00:24:54,403 --> 00:24:56,403
+Birçok.
+
+174
+00:24:56,403 --> 00:25:00,403
+Bu konferençler için birçok.
+
+175
+00:25:00,403 --> 00:25:02,403
+39'e 30'e 30'e 30'e
+
+176
+00:25:02,403 --> 00:25:04,403
+ve birçok.
+
+177
+00:25:04,403 --> 00:25:06,403
+Bu konferençler için birçok.
+
+178
+00:25:06,403 --> 00:25:08,403
+42'000'e 48'000'e yarı.
+
+179
+00:25:08,403 --> 00:25:13,675
+Bu konferençler için birçok.
+
+180
+00:25:15,155 --> 00:25:41,071
+Evet, bu şekilde bu şekilde altyazı al
+
+181
+00:25:41,071 --> 00:25:44,071
+Bu, bu, frequent olarak,
+
+182
+00:25:44,071 --> 00:25:46,071
+ve bu,
+
+183
+00:25:46,071 --> 00:25:55,071
+bu,
+
+184
+00:25:55,071 --> 00:25:57,071
+birçok bir konceptı.
+
+185
+00:25:57,071 --> 00:25:59,071
+İtemset
+
+186
+00:25:59,071 --> 00:26:01,071
+bir tane bir tane
+
+187
+00:26:01,071 --> 00:26:07,243
+bir tane
+
+188
+00:26:07,380 --> 00:26:11,380
+İtemset, eğer, bir, bir, bir, bir, bir, bir.
+
+189
+00:26:11,380 --> 00:26:16,380
+K-itemset, bir sürü de bu itemset,
+
+190
+00:26:16,380 --> 00:26:18,380
+bu itemset, k-items.
+
+191
+00:26:18,380 --> 00:26:21,292
+Bu, bu 3 itemset.
+
+192
+00:26:27,251 --> 00:26:31,251
+İlk bir bir item set var.
+
+193
+00:26:34,996 --> 00:26:43,236
+To determine the frequency or frequent item sets, we defined a few concepts.
+
+194
+00:26:43,236 --> 00:26:48,355
+One of them is support count, the other one is support concept as well.
+
+195
+00:26:50,276 --> 00:26:54,355
+Support is shown using this symbol, support count.
+
+196
+00:26:54,996 --> 00:26:57,955
+It shows the frequency of audience of an item set.
+
+197
+00:26:59,316 --> 00:27:00,516
+And it is shown...
+
+198
+00:27:01,523 --> 00:27:15,463
+In terms of numbers, for instance, this milk, bread, and diaper, how many times, this is our item set, this is our transactions, or purchases.
+
+199
+00:27:17,363 --> 00:27:26,463
+We can check how many times they occur together, for instance, they occur together here, this is one item, this is another occurrence, so...
+
+200
+00:27:27,092 --> 00:27:30,092
+ve diğer örnekler için bir örnekler.
+
+201
+00:27:53,395 --> 00:28:05,975
+İtemset, as a support of 2 over 5, or simply 0.4, as the support value.
+
+202
+00:28:08,275 --> 00:28:20,655
+We call an İtemset as a frequent if and only if it has greater than or equal to than the support of minimum support.
+
+203
+00:28:21,107 --> 00:28:23,967
+MinimumSupport is a threshold.
+
+204
+00:28:26,247 --> 00:28:36,027
+If support of a particular item is greater and equal to MinSupport, then this is called FrequentItemSet.
+
+205
+00:28:40,019 --> 00:28:47,019
+ve bu adıları seçenek için
+
+206
+00:28:47,019 --> 00:28:49,019
+bu adıları seçenek için
+
+207
+00:28:49,019 --> 00:28:52,019
+adıları seçenek için
+
+208
+00:28:52,019 --> 00:28:55,019
+Bir adıları,
+
+209
+00:28:55,019 --> 00:28:56,019
+bir adıları düşünceme
+
+210
+00:28:56,019 --> 00:28:59,019
+bu adıları düşünceme
+
+211
+00:28:59,019 --> 00:29:01,019
+Bu adıları,
+
+212
+00:29:01,019 --> 00:29:03,019
+bir adıları,
+
+213
+00:29:06,804 --> 00:29:22,316
+Bu, bu
+
+214
+00:29:26,067 --> 00:29:53,099
+Bu nedenle, bu nedenle, bu adıları ad
+
+215
+00:29:53,875 --> 00:30:01,076
+ve kaltı, support, support, support count, divided by transaction, number of transactions.
+
+216
+00:30:01,076 --> 00:30:08,756
+We count how many times this occur, it is 2 times, divided by 5 is 4.4.
+
+217
+00:30:08,756 --> 00:30:19,556
+Confidence is the ratio of right, all items together, divided by the left hand side.
+
+218
+00:30:22,867 --> 00:30:24,867
+İlk bir şey.
+
+219
+00:30:26,867 --> 00:30:28,867
+İlk whiteboard.
+
+220
+00:30:28,867 --> 00:30:30,867
+Bu, daha iyi.
+
+221
+00:30:30,867 --> 00:30:31,867
+Siyah.
+
+222
+00:30:35,700 --> 00:30:36,380
+Teşekkürler.
+
+223
+00:30:43,443 --> 00:30:45,844
+Dividi by number of transactions.
+
+224
+00:30:47,923 --> 00:30:52,523
+And we could just simply say this.
+
+225
+00:30:58,516 --> 00:31:01,336
+X union Y, X.
+
+226
+00:31:03,716 --> 00:31:05,436
+This is our rule form.
+
+227
+00:31:07,176 --> 00:31:10,196
+Support, when they are combined together.
+
+228
+00:31:10,976 --> 00:31:11,676
+Confidence.
+
+229
+00:31:18,963 --> 00:31:31,443
+equal to support of x, y, divided by support count of only x.
+
+230
+00:31:34,203 --> 00:31:39,603
+And this is a ratio, confidence is a ratio.
+
+231
+00:31:43,635 --> 00:31:44,615
+Bütün what?
+
+232
+00:31:48,660 --> 00:32:09,339
+0, 1, çünkü, if there is no combination of y, then actually we should just use this intersection, that's better for interpretability.
+
+233
+00:32:14,612 --> 00:32:14,971
+Okay.
+
+234
+00:32:18,251 --> 00:32:24,672
+Meaning that their co-occurrence, and this is the occurrence of left-hand side.
+
+235
+00:32:25,872 --> 00:32:41,412
+So if they all, y always occurs when x occurs, then the confidence is high, meaning that it's almost always the co-occurrence, and it is going to be very close to one or exactly one.
+
+236
+00:32:42,355 --> 00:32:47,355
+Eğer bu konfidurma olmadığı için, bu konfidurma olacağı bir şey değil.
+
+237
+00:32:47,355 --> 00:32:50,355
+Bu konfidurma olacağı bir konfidurma.
+
+238
+00:32:50,355 --> 00:32:54,355
+Ve bu konfidurma olacağı bir konfidurma.
+
+239
+00:32:54,355 --> 00:32:59,355
+Bu konfidurma olacağı bir konfidurma olacağı bir konfidurma.
+
+240
+00:32:59,355 --> 00:33:02,355
+Bu konfidurma olacağı bir konfidurma olacağı bir konfidurma olacağı.
+
+241
+00:33:03,988 --> 00:33:06,548
+Yani, if the support count is zero,
+
+242
+00:33:06,548 --> 00:33:08,228
+the total transaction may be
+
+243
+00:33:08,228 --> 00:33:10,068
+whatever million or hundred,
+
+244
+00:33:10,068 --> 00:33:11,508
+it's gonna be zero.
+
+245
+00:33:11,508 --> 00:33:14,148
+If this occurs in all transactions,
+
+246
+00:33:14,148 --> 00:33:16,148
+then it's gonna be exactly one.
+
+247
+00:33:16,148 --> 00:33:17,148
+Okay?
+
+248
+00:33:20,108 --> 00:33:22,148
+These are the concepts
+
+249
+00:33:23,988 --> 00:33:25,948
+of support and confidence.
+
+250
+00:33:27,148 --> 00:33:29,148
+However, there is one more...
+
+251
+00:33:29,236 --> 00:33:34,516
+önemli konceptı, bu konceptı, called LIFT.
+
+252
+00:33:43,251 --> 00:33:53,491
+left is also considering the probability of the right hand side. So let me just type it on.
+
+253
+00:34:06,516 --> 00:34:07,836
+Confidence of...
+
+254
+00:34:13,364 --> 00:34:14,463
+Dividi by
+
+255
+00:34:21,556 --> 00:34:23,556
+Or we can just write it this way.
+
+256
+00:34:26,155 --> 00:34:27,556
+X and Y
+
+257
+00:34:27,876 --> 00:34:28,956
+divided by
+
+258
+00:34:33,076 --> 00:34:33,476
+Thanks.
+
+259
+00:35:01,523 --> 00:35:06,188
+Bu, bu
+
+260
+00:35:09,396 --> 00:35:11,396
+Bu ne?
+
+261
+00:35:26,612 --> 00:35:27,172
+Any guesses?
+
+262
+00:35:33,108 --> 00:35:34,108
+Bu ne?
+
+263
+00:35:46,164 --> 00:35:49,324
+Let me ask this question while you're thinking about that.
+
+264
+00:35:50,043 --> 00:35:55,264
+Do you think is it better to have higher lift or lower lift?
+
+265
+00:36:00,916 --> 00:36:01,916
+Bu ne?
+
+266
+00:36:15,987 --> 00:36:17,827
+I think higher, maybe.
+
+267
+00:36:18,728 --> 00:36:23,807
+Okay, good. You think that when there's a higher lift, it should be better.
+
+268
+00:36:25,387 --> 00:36:42,927
+Okay, yeah, it makes sense, right? Having a higher lift is a good thing because it means that they co-occur a lot in comparison to their own probability, even when divided by their own probability.
+
+269
+00:36:46,356 --> 00:36:49,356
+Bu ne? Bu ne? Bu ne? Bu ne?
+
+270
+00:37:10,547 --> 00:37:13,227
+Can you have lift bigger than one?
+
+271
+00:37:17,907 --> 00:37:26,007
+I think no, because it says the probability. So that must be 0 and 1, between 0 and 1.
+
+272
+00:37:26,688 --> 00:37:35,688
+Probability itself is between 0 and 1, but is lift going to produce a value between 0 and 1?
+
+273
+00:37:45,907 --> 00:37:47,127
+[öğrenci]'ın answer.
+
+274
+00:37:48,627 --> 00:37:49,007
+Yes.
+
+275
+00:37:49,488 --> 00:37:52,988
+So the probability of B can be anything, right?
+
+276
+00:37:53,208 --> 00:37:57,288
+It can be maximum as one, which is fine.
+
+277
+00:37:57,367 --> 00:37:58,988
+If that's the case, we will have one.
+
+278
+00:37:59,347 --> 00:38:01,547
+But it may not have a one.
+
+279
+00:38:01,688 --> 00:38:04,268
+It may be a very small probability.
+
+280
+00:38:04,268 --> 00:38:07,047
+When it is smaller, what happens?
+
+281
+00:38:09,523 --> 00:38:11,764
+The lift gets bigger, right?
+
+282
+00:38:11,884 --> 00:38:12,724
+The lift gets bigger.
+
+283
+00:38:13,163 --> 00:38:14,844
+And it can have a very large number.
+
+284
+00:38:15,203 --> 00:38:19,083
+So lift can go to a very large number
+
+285
+00:38:19,083 --> 00:38:20,863
+depending on the transaction size.
+
+286
+00:38:22,103 --> 00:38:25,463
+So lift doesn't fit between 0 and 1.
+
+287
+00:38:25,543 --> 00:38:26,743
+It can be 0 as minimum,
+
+288
+00:38:26,943 --> 00:38:29,663
+but it can be very large as a maximum.
+
+289
+00:38:30,423 --> 00:38:30,643
+Okay.
+
+290
+00:38:31,703 --> 00:38:33,203
+If this goes to 0,
+
+291
+00:38:33,443 --> 00:38:35,903
+then it goes to infinity as you know.
+
+292
+00:38:36,500 --> 00:38:42,000
+Bu, bu, birçok bir şey.
+
+293
+00:38:42,000 --> 00:38:44,500
+Bir şey daha önce.
+
+294
+00:39:00,340 --> 00:39:26,096
+Bu, bu
+
+295
+00:39:26,096 --> 00:39:34,175
+Ama bu da
+
+296
+00:39:34,175 --> 00:39:37,336
+B may not be very large.
+
+297
+00:39:37,336 --> 00:39:38,895
+Let's give you an example.
+
+298
+00:39:39,476 --> 00:39:41,056
+Assume that we are trying to find
+
+299
+00:39:41,056 --> 00:39:44,675
+lift between
+
+300
+00:39:44,675 --> 00:39:46,976
+Okay.
+
+301
+00:39:51,699 --> 00:39:53,699
+Öğrenç bir example,
+
+302
+00:39:53,699 --> 00:39:54,699
+let's say
+
+303
+00:39:57,699 --> 00:39:58,699
+kolor 0.
+
+304
+00:39:58,699 --> 00:39:59,699
+Kolor 0.
+
+305
+00:40:03,347 --> 00:40:08,727
+Kox, 0 ve Maserati.
+
+306
+00:40:14,420 --> 00:40:20,420
+Ve sayıda 200 kısım.
+
+307
+00:40:20,420 --> 00:40:24,420
+Evet, bu kadar.
+
+308
+00:40:24,420 --> 00:40:30,420
+Ve bu kadar.
+
+309
+00:40:30,420 --> 00:40:34,420
+Bu kadar 0.002.
+
+310
+00:40:41,364 --> 00:41:06,923
+Bu, bu
+
+311
+00:41:07,123 --> 00:41:11,324
+Maserati is not something that sells very frequently.
+
+312
+00:41:12,724 --> 00:41:13,244
+However,
+
+313
+00:41:24,788 --> 00:41:39,288
+However, there might be a very strong association, from the examples where people buy Maserati, they indeed drink Coca-Cola Zero.
+
+314
+00:41:40,208 --> 00:41:43,327
+They don't prefer Sprite or something like that.
+
+315
+00:41:43,628 --> 00:41:51,048
+So this association will be omitted by confidence if there was no lift.
+
+316
+00:41:51,539 --> 00:42:09,451
+Çünkü bu,
+
+317
+00:42:10,099 --> 00:42:23,300
+Confidence is okay if you have large or frequent items that sell often, but it ignores the cases where you have right-hand side may not have high probability.
+
+318
+00:42:23,300 --> 00:42:31,820
+Okay, so lift also is a good metric to find interesting, interesting.
+
+319
+00:42:36,371 --> 00:42:37,452
+Assoziations
+
+320
+00:42:44,403 --> 00:43:08,844
+İntro, İntro
+
+321
+00:43:11,188 --> 00:43:19,988
+Evet, if our mean support level is 50%, then we can see which item sets are frequents.
+
+322
+00:43:19,988 --> 00:43:28,788
+Let's check A itself, one item set. A occurs one time, two, three, four, five, six, seven, eight.
+
+323
+00:43:28,788 --> 00:43:35,268
+Eight is greater than five. So this is frequent item set. We put A.
+
+324
+00:43:35,987 --> 00:43:47,587
+B, B okursa 1, 2, 3, 4, 5, it's more than 5, so we go B, let's check C, it occurs frequently, yes.
+
+325
+00:43:47,987 --> 00:43:56,707
+Let's check D, D occurs one time only, it's not, E occurs 1, 2, 3, 4, so it is not frequent.
+
+326
+00:44:02,068 --> 00:44:18,367
+Ap okus, 1x, 2x, 3x, 4x, 5x, so it is equal to mean support. It is included. Let's check ac. It is 1x, 2x, 3x, 4x, 5x, so it is frequent.
+
+327
+00:44:18,367 --> 00:44:27,268
+We go this and we try all these combinations. Then we go to three item sets, abc.
+
+328
+00:44:28,244 --> 00:44:31,083
+A, B, D ve bu.
+
+329
+00:44:31,083 --> 00:44:38,364
+Bu 4. İtemset A, B, C, D ve B, C, D ve bu.
+
+330
+00:44:38,364 --> 00:44:40,524
+Ve 5. İtemset.
+
+331
+00:44:40,524 --> 00:44:47,284
+Bu 1. İtemset. 2. İtemsets. 3. İtemsets. 4. İtemsets.
+
+332
+00:44:47,284 --> 00:44:49,724
+Ve 5. İtemsets.
+
+333
+00:44:49,724 --> 00:44:52,724
+Çünkü 5. İtemset.
+
+334
+00:44:52,916 --> 00:44:59,916
+ve
+
+335
+00:44:59,916 --> 00:45:02,916
+bu
+
+336
+00:45:02,916 --> 00:45:04,916
+minimum
+
+337
+00:45:04,916 --> 00:45:05,916
+level
+
+338
+00:45:05,916 --> 00:45:07,916
+ve
+
+339
+00:45:07,916 --> 00:45:08,916
+bu
+
+340
+00:45:08,916 --> 00:45:09,916
+item
+
+341
+00:45:09,916 --> 00:45:10,916
+set
+
+342
+00:45:10,916 --> 00:45:11,916
+etm
+
+343
+00:45:11,916 --> 00:45:12,916
+level
+
+344
+00:45:12,916 --> 00:45:13,916
+so
+
+345
+00:45:13,916 --> 00:45:14,916
+these
+
+346
+00:45:14,916 --> 00:45:15,916
+are
+
+347
+00:45:15,916 --> 00:45:16,916
+frequent
+
+348
+00:45:16,916 --> 00:45:17,916
+item
+
+349
+00:45:17,916 --> 00:45:18,916
+sets
+
+350
+00:45:18,916 --> 00:45:19,916
+in
+
+351
+00:45:19,916 --> 00:45:20,172
+general
+
+352
+00:45:20,563 --> 00:45:21,063
+Okay.
+
+353
+00:45:23,344 --> 00:45:25,824
+Any questions so far before we give a break?
+
+354
+00:45:31,539 --> 00:45:39,539
+If no questions, let's give 15 minutes break and we will continue at 3.10. So I'll see you in 15 minutes.
+
+355
+01:04:42,260 --> 01:04:48,160
+Tamam, hoşçakalın. Herkesin geliştirmek.
+
+356
+01:04:48,380 --> 01:04:49,260
+Benim ekranı gördünüz mü?
+
+357
+01:04:52,020 --> 01:04:54,220
+Hocam, dili günler, ben bir şey sorabilir miyim?
+
+358
+01:04:54,600 --> 01:04:54,820
+Tabii.
+
+359
+01:04:56,080 --> 01:05:01,560
+Hocam, vize sınavında ben ilk soruyu göndermeyi, yani pdf eklemeyi unutmuştum.
+
+360
+01:05:02,160 --> 01:05:05,080
+Sistemi eklemiştim, ondan sonra iki dakika sonra size mail atmıştım.
+
+361
+01:05:05,180 --> 01:05:06,600
+İşte, hocam, böyle bir durum var diye.
+
+362
+01:05:07,059 --> 01:05:18,559
+İlk soruyu da orada göndermiştim. Hatta detaylarımla göndermiştim bilisayarın eklediğim zamanı. Mailime dönmemiştiniz. Acaba gördünüz mü? Sormak istiyordum. Tam iki dakika sonra önermiştim maili size.
+
+363
+01:05:19,279 --> 01:05:22,420
+Tamam, ben gözümden kaçmıştır e-mailim. Bakar dönerim sana, olur mu?
+
+364
+01:05:23,119 --> 01:05:24,340
+Çok teşekkür ederim hocam.
+
+365
+01:05:24,599 --> 01:05:24,880
+Hadi.
+
+366
+01:05:26,612 --> 01:05:28,612
+Evet, devam edelim.
+
+367
+01:05:28,612 --> 01:05:32,612
+Şimdi, bu şekilde görme.
+
+368
+01:05:32,612 --> 01:05:35,612
+Önceme, bu process.
+
+369
+01:05:35,612 --> 01:05:41,612
+Bu, minimum support level to determine frequent item sets.
+
+370
+01:05:41,612 --> 01:05:45,612
+Ve, bu, all possible item sets.
+
+371
+01:05:45,612 --> 01:05:48,612
+Bu, bu, ancak bir example.
+
+372
+01:05:50,304 --> 01:05:54,724
+Bu process can be very tedious, especially if you try a brute force approach.
+
+373
+01:05:56,643 --> 01:06:03,083
+Is it even going to be possible to create all possible candidate item sets?
+
+374
+01:06:04,403 --> 01:06:09,203
+We only had five products, right?
+
+375
+01:06:09,203 --> 01:06:10,804
+Let me just go.
+
+376
+01:06:12,364 --> 01:06:14,023
+We only had five products.
+
+377
+01:06:15,543 --> 01:06:15,903
+And
+
+378
+01:06:16,447 --> 01:06:22,668
+İtemset, iki İtemset, üç İtemset, ve İtemset, ve İtemset, ve İtemset.
+
+379
+01:06:24,228 --> 01:06:27,648
+Ve, as you can see, there are many combinations.
+
+380
+01:06:28,867 --> 01:06:38,467
+If we try all possible candidates, we need to have 2 to the power of d possible İtemsets.
+
+381
+01:06:39,443 --> 01:06:41,443
+Bu birçok birçok birçok.
+
+382
+01:06:41,443 --> 01:06:43,443
+Bu birçok birçok.
+
+383
+01:06:43,443 --> 01:06:45,443
+Ve birçok birçok.
+
+384
+01:06:45,443 --> 01:06:47,443
+Bu birçok birçok.
+
+385
+01:06:47,443 --> 01:06:53,443
+Bu birçok.
+
+386
+01:06:53,443 --> 01:06:57,443
+Birçok.
+
+387
+01:06:57,443 --> 01:06:59,443
+300.
+
+388
+01:06:59,443 --> 01:07:06,123
+Bu birçok.
+
+389
+01:07:06,420 --> 01:07:10,060
+Migros'in hundurlarında bazı milyonlar var.
+
+390
+01:07:10,060 --> 01:07:15,340
+Bu da Walmart ve Amazon'in hundurlarında bazı milyonlar var.
+
+391
+01:07:15,340 --> 01:07:20,619
+Bu da birçok birçok birçok birçok birçok.
+
+392
+01:07:20,619 --> 01:07:26,140
+300-500, bu da bütün atomlar var.
+
+393
+01:07:26,140 --> 01:07:28,980
+Bu da birçok birçok birçok.
+
+394
+01:07:28,980 --> 01:07:32,579
+Bu da bu birçok birçok birçok birçok.
+
+395
+01:07:32,579 --> 01:07:33,820
+Bu ne yapacağız?
+
+396
+01:07:35,027 --> 01:07:40,787
+Any suggestions that we should try to improve the process?
+
+397
+01:07:42,747 --> 01:07:46,507
+Or is it possible that we can make it more efficient?
+
+398
+01:07:55,347 --> 01:08:22,167
+Brut-Force approach, as you can see, each item in the transactional list is run through, and we go through a lattice of each item set, and create a candidate-figure item set, and then we count each candidate-figure item set to find the support for the candidates, and then we determine how large is that.
+
+399
+01:08:22,771 --> 01:08:50,319
+Bu konflikta n'ın n'ı n'
+
+400
+01:08:50,319 --> 01:09:18,315
+Ve bu çok
+
+401
+01:09:18,387 --> 01:09:29,227
+Oppositely, if one of the item sets is not frequent, then all of its supersets are not frequent.
+
+402
+01:09:29,227 --> 01:09:34,847
+So we don't need to include them in our candidate item sets.
+
+403
+01:09:36,532 --> 01:09:41,271
+Apriori principle is also known as antimonitone.
+
+404
+01:09:41,412 --> 01:09:56,992
+It has an antimonitone property that, you know, if you have the support of an item set can never exceed support of its subset because it can be only maximum to its own support set.
+
+405
+01:09:57,832 --> 01:09:59,992
+So for instance, we have...
+
+406
+01:10:00,083 --> 01:10:25,387
+Yani y'e
+
+407
+01:10:25,876 --> 01:10:32,836
+So, using this idea, this simple idea, we can produce an efficient algorithm.
+
+408
+01:10:33,336 --> 01:10:34,336
+Let me give an example.
+
+409
+01:10:34,935 --> 01:10:43,275
+Assume that this is our item set, we have five products, A, B, C, D, E, and we check whether they are frequent or not.
+
+410
+01:10:43,716 --> 01:10:50,916
+If we know that A, B is infrequent, they are not frequent, then we know for sure
+
+411
+01:10:54,899 --> 01:11:05,659
+We know for sure that none of the supersets of AB, so anything containing AB, can never be frequent.
+
+412
+01:11:06,439 --> 01:11:15,439
+Anything ABC, ABC, ABE, ABD, and fourth item set, fifth item set, because AB itself is not frequent.
+
+413
+01:11:15,439 --> 01:11:17,939
+So none of these can be frequent.
+
+414
+01:11:18,804 --> 01:11:22,804
+Bu yüzden bu süper setiyle bu süper setiyle.
+
+415
+01:11:22,804 --> 01:11:26,804
+Bu süper setiyle değil.
+
+416
+01:11:26,804 --> 01:11:29,804
+Bu süper setiyle.
+
+417
+01:11:29,804 --> 01:11:31,804
+Bir item setiyle, bir item setiyle,
+
+418
+01:11:31,804 --> 01:11:33,804
+bir item setiyle,
+
+419
+01:11:33,804 --> 01:11:35,804
+eylem bir şey değil,
+
+420
+01:11:35,804 --> 01:11:37,804
+bir şey değil,
+
+421
+01:11:37,804 --> 01:11:39,467
+eylem bir şey değil.
+
+422
+01:11:44,032 --> 01:11:49,032
+Bu süperseli.
+
+423
+01:11:42,195 --> 01:11:47,155
+So none of these, except this one, none of these can be frequent.
+
+424
+01:11:47,155 --> 01:11:52,036
+We automatically eliminate a large number of candidates.
+
+425
+01:11:52,036 --> 01:11:54,355
+Okay, so this is very important.
+
+426
+01:11:55,076 --> 01:11:59,476
+And Apriori algorithm proves potential candidates.
+
+427
+01:11:59,476 --> 01:12:07,155
+And this makes so much sense to use when driving a set of candidates.
+
+428
+01:12:08,083 --> 01:12:09,583
+İlustrate this example.
+
+429
+01:12:10,863 --> 01:12:12,503
+This is our original.
+
+430
+01:12:12,763 --> 01:12:13,963
+Itemset, transactions.
+
+431
+01:12:14,403 --> 01:12:15,763
+We notice that bread
+
+432
+01:12:15,763 --> 01:12:17,224
+occurs
+
+433
+01:12:17,224 --> 01:12:23,923
+4 times, coke, 2 times, milk, 4 times, beer, diapers, and so on.
+
+434
+01:12:24,404 --> 01:12:29,404
+Ve bu işin bir şey, bu işin bir şey.
+
+435
+01:12:29,404 --> 01:12:32,404
+Bu işin bir şey değil.
+
+436
+01:12:32,404 --> 01:12:34,404
+Ve bu işin bir şey değil.
+
+437
+01:12:34,404 --> 01:12:45,404
+Bu işin bir şey değil.
+
+438
+01:12:46,644 --> 01:13:09,260
+Bu, bu
+
+439
+01:13:10,963 --> 01:13:15,123
+We only have four other two-item set candidates.
+
+440
+01:13:15,923 --> 01:13:25,043
+Now, using those four, we go to the third item set, and there's only one option that is greater or equal to min sub.
+
+441
+01:13:25,503 --> 01:13:29,183
+Now we are done. There's no reason to generate fourth item sets.
+
+442
+01:13:30,263 --> 01:13:32,183
+So we only had to consider...
+
+443
+01:13:33,011 --> 01:13:47,811
+6 items, 6 items here, 1 item here. So in total, only 13 options. But on the other hand, if you were to use brute force approach,
+
+444
+01:13:50,811 --> 01:13:59,051
+if you had to use brute force approach, you would have to consider a combination of
+
+445
+01:13:59,667 --> 01:14:13,608
+6 O1s plus combination of 2 item sets plus combination of 6 3 item sets.
+
+446
+01:14:14,268 --> 01:14:25,427
+And this is equal to 6 factorial divided by 1 factorial times 5 factorial.
+
+447
+01:14:25,807 --> 01:14:28,807
+6!
+
+448
+01:14:28,807 --> 01:14:31,807
+2!
+
+449
+01:14:31,807 --> 01:14:37,228
+4!
+
+450
+01:14:40,435 --> 01:14:45,435
+6! divided by 3! plus 3!
+
+451
+01:14:45,435 --> 01:15:05,635
+Okay, so as you can see, this is 6 plus, this is, we go 6 and 5, this is 15, and plus this is 6, 5, 4, and 20.
+
+452
+01:15:22,931 --> 01:15:24,931
+Bu a priori algoritma.
+
+453
+01:15:24,931 --> 01:15:26,931
+A priori algoritma,
+
+454
+01:15:26,931 --> 01:15:28,931
+birçok anadolu birçok anadolu.
+
+455
+01:15:28,931 --> 01:15:30,931
+Birçok anadolu,
+
+456
+01:15:30,931 --> 01:15:32,931
+birçok anadolu,
+
+457
+01:15:32,931 --> 01:15:34,931
+birçok anadolu.
+
+458
+01:15:34,931 --> 01:15:36,931
+Birçok anadolu,
+
+459
+01:15:36,931 --> 01:15:51,632
+birçok anadolu,
+
+460
+01:15:39,028 --> 01:15:53,579
+İkincisi için, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, adıcısını, ad
+
+461
+01:15:54,547 --> 01:16:22,015
+Bir soru
+
+462
+01:16:22,015 --> 01:16:29,015
+ve
+
+463
+01:16:50,676 --> 01:17:15,564
+Ayrıca, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, birçok adıcı, bir
+
+464
+01:17:16,115 --> 01:17:20,855
+Okay, there's another algorithm, there's alternative to Apriori.
+
+465
+01:17:22,376 --> 01:17:29,935
+We will see how it works, but before we do, let's think about transactions in a different layout.
+
+466
+01:17:30,996 --> 01:17:36,835
+So, Apriori uses this horizontal layout.
+
+467
+01:17:38,136 --> 01:17:39,115
+Each transaction...
+
+468
+01:17:39,731 --> 01:18:10,935
+İntro
+
+469
+01:18:01,524 --> 01:18:05,524
+Bu bir alternatif bir şekilde, bu dağıtta dağıtık,
+
+470
+01:18:05,524 --> 01:18:08,524
+daha dağıtık dağıtık,
+
+471
+01:18:08,524 --> 01:18:09,524
+bu dağıtta dağıtık.
+
+472
+01:18:09,524 --> 01:18:13,524
+Bu dağıtta dağıtık,
+
+473
+01:18:13,524 --> 01:18:19,524
+ve bu dağıtta dağıtık,
+
+474
+01:18:19,524 --> 01:18:21,524
+bu dağıtta dağıtık,
+
+475
+01:18:27,764 --> 01:18:55,724
+Bu, bu
+
+476
+01:19:09,492 --> 01:19:30,412
+Ok, let me put this on here. Ok, assuming we have this, I want you to know that you need to find how many times A and C occurs together. How would you calculate this?
+
+477
+01:19:34,579 --> 01:19:35,920
+Evet, in full site.
+
+478
+01:19:36,600 --> 01:19:37,180
+See you.
+
+479
+01:19:43,315 --> 01:19:46,195
+I'm just going to put these numbers in a horizontal way.
+
+480
+01:19:48,355 --> 01:19:50,915
+Five, six.
+
+481
+01:19:51,956 --> 01:19:57,315
+Can you give me an algorithm to calculate this and what is the complexity of that algorithm?
+
+482
+01:19:58,835 --> 01:20:06,515
+And c is two, three, four, eight and nine.
+
+483
+01:20:14,292 --> 01:20:15,292
+En eser yaşı?
+
+484
+01:20:26,131 --> 01:20:31,131
+İntro, birçok, birçok, birçok.
+
+485
+01:20:46,163 --> 01:20:57,783
+Given that these transactions ids are sorted, what we can do is we can pick the first items at each location, in each array.
+
+486
+01:20:58,783 --> 01:21:02,163
+Let's say this is a counter i, this is j.
+
+487
+01:21:03,503 --> 01:21:03,863
+Okay.
+
+488
+01:21:05,304 --> 01:21:06,623
+So we start at the same.
+
+489
+01:21:08,203 --> 01:21:09,443
+Zero, zero.
+
+490
+01:21:11,475 --> 01:21:12,475
+Evet.
+
+491
+01:21:12,475 --> 01:21:14,475
+Ve check if...
+
+492
+01:21:17,475 --> 01:21:19,475
+Let's say this is...
+
+493
+01:21:20,475 --> 01:21:21,475
+A...
+
+494
+01:21:26,592 --> 01:21:45,592
+Evet.
+
+495
+01:21:26,228 --> 01:21:33,247
+i is equal, equal, c, j.
+
+496
+01:21:35,007 --> 01:21:37,847
+If they match, what should we do?
+
+497
+01:21:40,847 --> 01:21:42,807
+Let me just call intersect.
+
+498
+01:21:43,068 --> 01:21:43,988
+There's another array.
+
+499
+01:21:45,268 --> 01:21:48,648
+Assume that we use this as another array.
+
+500
+01:21:55,380 --> 01:22:09,299
+k0, ve keep this, right? Ve keep this. Integer k is equal to one of these. Ve keep this.
+
+501
+01:22:13,203 --> 01:22:14,343
+If they are not equal,
+
+502
+01:22:21,332 --> 01:22:22,012
+Alcif.
+
+503
+01:22:29,171 --> 01:22:43,791
+If a i is greater than c j, what should we do?
+
+504
+01:22:50,836 --> 01:23:15,819
+Evet, yi'ye göre
+
+505
+01:23:17,876 --> 01:23:45,771
+İlgili bir ilişkiler.
+
+506
+01:23:46,100 --> 01:24:10,124
+Şimdi, bu
+
+507
+01:24:10,612 --> 01:24:17,804
+Şimdi bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu bölümde, bu böl
+
+508
+01:24:17,844 --> 01:24:28,283
+İcremet, we check, they are not equal, this is smaller, we increment this to the next one, this is still smaller, not equal, we increment this one, and we check their match.
+
+509
+01:24:28,804 --> 01:24:37,183
+So we basically take this 8, add it to here, we move both of them at the same time, we check again, there's a match, so we increment that.
+
+510
+01:24:37,183 --> 01:24:44,023
+So we found our array contains 3 items, so the support count is 3.
+
+511
+01:24:44,467 --> 01:24:51,247
+We can simply calculate all of them. What is the complexity of this algorithm, intersectional algorithm?
+
+512
+01:24:58,420 --> 01:25:02,500
+Bu, bu, O' notation.
+
+513
+01:25:12,083 --> 01:25:12,923
+O, n.
+
+514
+01:25:15,564 --> 01:25:17,263
+Evet, it is linear, right?
+
+515
+01:25:17,363 --> 01:25:19,564
+It is actually m plus n.
+
+516
+01:25:19,904 --> 01:25:21,703
+So it is simply just O, n.
+
+517
+01:25:26,355 --> 01:25:28,235
+It's simply ON algorithm.
+
+518
+01:25:34,100 --> 01:25:36,539
+Çünkü, we never visit the same item twice.
+
+519
+01:25:36,539 --> 01:25:38,220
+If it is smaller, we move.
+
+520
+01:25:38,220 --> 01:25:39,800
+If it is the same, we take.
+
+521
+01:25:39,800 --> 01:25:42,800
+If it is bigger, we move the next one.
+
+522
+01:25:42,800 --> 01:25:45,600
+So, we never check the same item again.
+
+523
+01:25:45,600 --> 01:25:47,600
+So, this is a linear algorithm.
+
+524
+01:25:47,600 --> 01:25:50,100
+Can we improve this algorithm again?
+
+525
+01:25:50,100 --> 01:25:52,600
+Linear algorithm.
+
+526
+01:25:52,600 --> 01:25:55,600
+Can we improve it a bit more?
+
+527
+01:26:06,963 --> 01:26:21,163
+Let me give examples, maybe that will help. So check the E and B. Let me check E and B.
+
+528
+01:26:23,304 --> 01:26:33,423
+Do we have to go through all, let's say this is six, three here, nine items, or can we early terminate?
+
+529
+01:26:52,595 --> 01:27:01,475
+When should we terminate this process? Do we have to go through all the way to the end, given that these areas are sorted?
+
+530
+01:27:06,036 --> 01:27:11,816
+Evet, bu liste de bir liste de bir tane de var,
+
+531
+01:27:11,816 --> 01:27:14,976
+bir tane de var, çünkü hiçbir element var.
+
+532
+01:27:14,976 --> 01:27:17,476
+Evet.
+
+533
+01:27:17,476 --> 01:27:20,076
+[öğrenci]'da söyledi.
+
+534
+01:27:45,140 --> 01:27:47,659
+Not really, because they are all greater than 6.
+
+535
+01:27:47,740 --> 01:27:52,380
+There is no way that we can find a match going through the bottom of this.
+
+536
+01:27:52,900 --> 01:27:56,680
+Because 7 already is greater than 6.
+
+537
+01:27:56,740 --> 01:27:59,380
+So there is no way that the larger numbers will be equal.
+
+538
+01:27:59,840 --> 01:28:01,320
+So we can prune these.
+
+539
+01:28:01,320 --> 01:28:08,320
+So if you implement this algorithm, the largest of the smaller set.
+
+540
+01:28:08,756 --> 01:28:12,076
+ve bu kadar da, hiçbir şey yoktu.
+
+541
+01:28:12,076 --> 01:28:16,956
+Bu, bu kadar da, hiçbir şey yoktu.
+
+542
+01:28:28,564 --> 01:28:40,244
+ve bu tür item set calculation, bu eklat. Bu eklat algoritm. Eklat simply yaptı aynı yapı.
+
+543
+01:28:48,319 --> 01:28:52,319
+Ve bu şekilde minimum support level
+
+544
+01:28:52,319 --> 01:28:58,319
+adıdıklarımızın adıdıklarımızın
+
+545
+01:28:58,319 --> 01:29:00,319
+ve bu şekilde
+
+546
+01:29:00,319 --> 01:29:02,319
+altyazıları da altyazıları
+
+547
+01:29:02,319 --> 01:29:04,319
+kullanarak da altyazıları
+
+548
+01:29:04,319 --> 01:29:06,319
+altyazıları da altyazıları
+
+549
+01:29:06,319 --> 01:29:08,319
+k adıdıklarımızın
+
+550
+01:29:10,319 --> 01:29:12,319
+Bu neşe şeyin
+
+551
+01:29:12,319 --> 01:29:14,319
+bir şekilde
+
+552
+01:29:16,435 --> 01:29:20,435
+ve bu önemli birçok adı.
+
+553
+01:29:20,435 --> 01:29:25,435
+However, bu adı, büyük bir adı.
+
+554
+01:29:25,435 --> 01:29:36,435
+Eğer çok büyük adı, çok büyük adı, ve çok büyük adı.
+
+555
+01:29:37,171 --> 01:29:41,171
+Bu konuda bir problemi için bir problem.
+
+556
+01:29:41,171 --> 01:29:43,671
+Çünkü, bu konuda da
+
+557
+01:29:43,671 --> 01:29:48,171
+bütün İD'lerle alakalı bir konuda
+
+558
+01:29:48,171 --> 01:29:50,171
+çünkü, bu konuda alakalı
+
+559
+01:29:50,171 --> 01:29:54,171
+bu konuda alakalı bir konuda
+
+560
+01:29:54,171 --> 01:29:56,171
+bir konuda alakalı.
+
+561
+01:29:56,171 --> 01:29:58,171
+Bu konuda
+
+562
+01:30:11,283 --> 01:30:16,323
+Bu konuda, sadece bir problem var,
+
+563
+01:30:16,323 --> 01:30:19,443
+bir şeyde de bir şeyde de çok zor.
+
+564
+01:30:19,443 --> 01:30:22,443
+Sadece bir şeyde de bir şeyde de bir şeyde.
+
+565
+01:30:22,443 --> 01:30:26,724
+Bu, bu bir şeyde de çok iyi bir şeyde.
+
+566
+01:30:26,724 --> 01:30:32,724
+Bu, bu bir şeyde de bir şeyde de çok zor.
+
+567
+01:30:33,076 --> 01:30:38,576
+Bu da büyük bir soru.
+
+568
+01:30:38,576 --> 01:30:41,576
+Bu da küçük bir soru.
+
+569
+01:30:55,123 --> 01:31:16,304
+Okay, so the process is simple, instead of using the vertical example in the Eklat, instead of, you know, using the Apriori approach, what we do is we keep transaction IDs for each of the frequent item sets, and we apply the same logic on top of that.
+
+570
+01:31:23,123 --> 01:31:24,943
+Baksınlar mı?
+
+571
+01:31:25,283 --> 01:31:31,783
+İnternette mi? Ben şu an derse yapabiliyorum ama şey, bayresi kontrol etmedim. Bir bakabilirler, ben derseyim.
+
+572
+01:31:32,323 --> 01:31:34,043
+Tamam, o zaman sonra bir hocayla bağlı.
+
+573
+01:31:34,043 --> 01:31:34,423
+Tamam.
+
+574
+01:31:36,115 --> 01:31:38,115
+Bu, aynı logicle.
+
+575
+01:31:38,115 --> 01:31:47,115
+We found that AC only contains two item sets, AD three item sets, BCD two item sets.
+
+576
+01:31:47,115 --> 01:31:54,115
+Now we know that there is no reason to extend AC, BCD, CD, because they are not frequent.
+
+577
+01:31:54,115 --> 01:32:01,115
+We only have to grow those item sets which are greater and equal to minimum support level.
+
+578
+01:32:01,115 --> 01:32:03,115
+Okay, same logic implies.
+
+579
+01:32:04,083 --> 01:32:10,083
+İki önemli konceptı var.
+
+580
+01:32:10,083 --> 01:32:17,083
+Öncelikle eklat ve a priori,
+
+581
+01:32:17,083 --> 01:32:21,083
+birçok adı etmesinde ve birçok adı etmesinde
+
+582
+01:32:21,083 --> 01:32:23,083
+ve birçok adı etmesinde.
+
+583
+01:32:23,923 --> 01:32:28,963
+Bu, mesela, millions of transactions ve hundurusluğundasını,
+
+584
+01:32:28,963 --> 01:32:33,804
+nesbirlik kuraların, nesbirlik kuraların,
+
+585
+01:32:33,804 --> 01:32:37,203
+nesbirlik kuraların, büyük kuraların, ve en büyük kuraların,
+
+586
+01:32:52,724 --> 01:33:01,324
+Bu konceptsinizde daha iyi bir anlamda daha iyi bir anlamda.
+
+587
+01:33:01,324 --> 01:33:07,164
+Bir de bu konceptsinizin maksimumal frequent item setiyle.
+
+588
+01:33:07,164 --> 01:33:13,724
+Açimal frequent item setiyle bir de bu konceptsinizin kurumluğunu kullanmak için
+
+589
+01:33:17,695 --> 01:33:25,055
+Let's give an example. These AD, ACE, and BCDE are maximal item sets.
+
+590
+01:33:25,855 --> 01:33:33,415
+The item set itself is frequent, but none of its supersets are frequent.
+
+591
+01:33:34,155 --> 01:33:42,655
+The superset of AD is ABD, superset of AD is ACD, and superset of AD is ADE.
+
+592
+01:33:45,844 --> 01:33:53,103
+Ad is the last border line for frequent item set.
+
+593
+01:33:54,103 --> 01:33:57,724
+So this is called a maximal item set.
+
+594
+01:33:58,484 --> 01:34:00,884
+We can check, for instance, Ac.
+
+595
+01:34:01,804 --> 01:34:08,804
+Ac has ABC, then ACD, and ACE.
+
+596
+01:34:09,524 --> 01:34:15,923
+Ac has ABC infrequent, ACD is infrequent, but ACE is frequent.
+
+597
+01:34:16,344 --> 01:34:20,043
+So, there is a superset of AC that is frequent.
+
+598
+01:34:20,203 --> 01:34:21,344
+So, this is not maximal.
+
+599
+01:34:22,644 --> 01:34:35,423
+But AC is maximal because none of its supersets, one of its supersets is ACDE, the other one is ABCDE, and none of these are frequent.
+
+600
+01:34:36,064 --> 01:34:37,543
+Bu bir şey.
+
+601
+01:34:37,724 --> 01:34:39,084
+Bir süperçede sadece bir süperçede.
+
+602
+01:34:39,164 --> 01:34:46,444
+Bu bir süperçede.
+
+603
+01:34:47,644 --> 01:34:49,604
+Bir süperçede.
+
+604
+01:34:49,984 --> 01:34:51,524
+Bu bir süperçede.
+
+605
+01:34:51,524 --> 01:34:52,524
+Bu süperçede.
+
+606
+01:34:54,579 --> 01:35:04,700
+Kost-frequent item set is, an item set is called closed, if none of its immediate superset has the same support as itself.
+
+607
+01:35:06,640 --> 01:35:08,020
+Let's give an example.
+
+608
+01:35:10,920 --> 01:35:13,079
+Let me just give an example on this case.
+
+609
+01:35:15,180 --> 01:35:15,440
+Okay.
+
+610
+01:35:16,600 --> 01:35:21,579
+This is a closed item set.
+
+611
+01:35:23,220 --> 01:35:26,680
+İçim, in this case, our minimum support is 2.
+
+612
+01:35:27,960 --> 01:35:34,680
+So, E contains 3 item sets, 3 items.
+
+613
+01:35:35,000 --> 01:35:38,980
+So, E itself is a frequent item set.
+
+614
+01:35:40,600 --> 01:35:41,680
+Let's check its...
+
+615
+01:36:09,203 --> 01:36:19,683
+C has support of E is greater than support of
+
+616
+01:36:24,435 --> 01:36:25,435
+C.
+
+617
+01:36:28,075 --> 01:36:28,515
+Okay.
+
+618
+01:36:29,675 --> 01:36:31,915
+Let me just throw it on here.
+
+619
+01:36:38,771 --> 01:36:47,411
+Support of E is greater than Support of CE.
+
+620
+01:36:50,931 --> 01:36:57,411
+Okay, if this was equal, then this could not be closed frequent item set.
+
+621
+01:36:58,051 --> 01:37:05,811
+It would be just frequent item set. But when it is strictly greater, then this is called closed item set.
+
+622
+01:37:07,155 --> 01:37:20,456
+D is the same way. So D is a frequent item set, D-E, but it has only two items, E has three items, meaning that this is smaller than E itself.
+
+623
+01:37:20,456 --> 01:37:31,195
+So we can ensure that all of the supersets of E are containing less support than itself.
+
+624
+01:37:32,404 --> 01:37:37,963
+Bu da bu süperset için de bu süperset için de bu süperset için de bu süperset.
+
+625
+01:37:52,819 --> 01:38:00,099
+Some of the item sets can be both closed and maximal, but opposite is not true.
+
+626
+01:38:00,979 --> 01:38:09,559
+So, there's no way that we can have maximal item set that is not also closed.
+
+627
+01:38:10,019 --> 01:38:14,920
+Every closed is a maximal, but not all maximals are closed.
+
+628
+01:38:16,020 --> 01:38:42,347
+Bu, bu
+
+629
+01:38:42,355 --> 01:38:44,355
+Bu da bir diagram,
+
+630
+01:38:45,476 --> 01:38:46,476
+Frequent Item Set
+
+631
+01:38:46,476 --> 01:38:47,076
+İntem Setsi
+
+632
+01:38:47,076 --> 01:38:49,076
+All Possible Frequent Item Setsi
+
+633
+01:38:49,076 --> 01:38:50,916
+Closed Frequent Item Setsi
+
+634
+01:38:50,916 --> 01:38:51,876
+A Subseti
+
+635
+01:38:51,876 --> 01:38:53,716
+All Frequent Item Setsi
+
+636
+01:38:53,716 --> 01:38:54,675
+Which May Be
+
+637
+01:39:01,332 --> 01:39:05,592
+K-Klosed frequent item set, which may be significantly less.
+
+638
+01:39:06,972 --> 01:39:11,972
+And some of these items that may not contain maximal or close, but
+
+639
+01:39:11,972 --> 01:39:22,352
+we typically look for interesting item sets by checking maximal and close as well.
+
+640
+01:39:23,132 --> 01:39:25,292
+They tend to have interesting cases.
+
+641
+01:39:26,172 --> 01:39:26,332
+Okay.
+
+642
+01:39:28,724 --> 01:39:30,644
+Any questions, comments?
+
+643
+01:39:37,203 --> 01:39:38,184
+Let me check the chat.
+
+644
+01:39:39,344 --> 01:39:41,003
+Any questions or comments?
+
+645
+01:39:45,492 --> 01:39:46,292
+Is it clear?
+
+646
+01:39:50,068 --> 01:40:00,387
+Ok, so in this course we discussed, ok, thank you [öğrenci], in this lecture we covered association rule mining.
+
+647
+01:40:00,387 --> 01:40:05,207
+There are multiple methods of calculating association rules.
+
+648
+01:40:05,787 --> 01:40:11,328
+We discussed Apriori principle, we discussed Eklat algorithm and how to calculate them.
+
+649
+01:40:11,507 --> 01:40:15,787
+Also there were a few important concepts such as lift.
+
+650
+01:40:16,372 --> 01:40:41,868
+ve
+
+651
+01:40:41,876 --> 01:40:44,876
+Bu konceptsiniz için çok önemli.
+
+652
+01:40:44,876 --> 01:40:46,876
+Bu konceptı.
+
+653
+01:40:46,876 --> 01:40:47,876
+Bu konceptı yok.
+
+654
+01:40:47,876 --> 01:40:50,876
+Bu konceptı yoksa bir şey.
+
+655
+01:40:50,876 --> 01:40:53,876
+Bu konuda bir şey için bir şey.
+
+656
+01:40:53,876 --> 01:40:55,876
+Bu konuda bir şey için.
+
+657
+01:41:02,011 --> 01:41:05,871
+Ve sonraki videoda görüşmek üzere.
+
+658
+01:41:06,311 --> 01:41:09,231
+Ve diğer temizlerle ilgili soru var.
+
+659
+01:41:09,652 --> 01:41:12,492
+Ve sonraki videoda görüşmek üzere.
+
+660
+01:41:12,492 --> 01:41:15,072
+Ve bu konuda soru var.
+
+661
+01:41:15,072 --> 01:41:17,811
+Ve soru var.
+
+662
+01:41:18,811 --> 01:41:21,912
+Teşekkürler.
+
+663
+01:41:24,172 --> 01:41:24,531
+Bye bye.
+
+664
+01:41:28,148 --> 01:41:29,268
+Görüşürüz, rüzaklısın.
