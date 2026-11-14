@@ -1,0 +1,4059 @@
+1
+00:00:40,692 --> 00:00:43,871
+Evet, tünaydın arkadaşlar. Herkese tünaydın.
+
+2
+00:00:45,871 --> 00:00:47,871
+Öğleden sonra, olmaz, serbeyle.
+
+3
+00:00:52,179 --> 00:00:55,000
+nasılsınız? Herkes yuvarlı.
+
+4
+00:01:00,500 --> 00:01:16,299
+Önce, İzmir Döplemini biz de bir kez daha geçmiş olsun diyoruz. Oradaki akrabası olan, ya da tanıdı olan, bizzat kendisi olan arkadaşlarımız varsa onlara şimdi de geçmiş olsun diyorum.
+
+5
+00:01:19,299 --> 00:01:28,460
+Umarım, küçük, min sayıda bunu atmış olurlar. Zor bir şey çünkü. Gerçekten.
+
+6
+00:01:48,180 --> 00:02:09,660
+Geçtiğimiz hafta itibariyle türev başlamıştık. Hatırlarsanız, yani türevin özellikle bir aralık üzerinde türev, türev kuraları ile beraber tabii, işlekmede biten türevler, trigonometrik fonksiyonların türevleri, özellikle zincir kuralı türevleri ve kapalı fonksiyonların türevlerinin çok önemli olduklarını değiştmiştik.
+
+7
+00:02:10,660 --> 00:02:15,379
+Ve burada yine line resmi ve fenansiyel kavramını göz önünde almıştık.
+
+8
+00:02:16,532 --> 00:02:22,552
+Bugün zaten göreceğimiz konu içerisinde de var. Ağatı hamle, azalan fonksiyonu da. Bunlar önemli.
+
+9
+00:02:23,692 --> 00:02:26,451
+Onun tarımını belki burada bir verip geçebiliriz aslında.
+
+10
+00:02:28,032 --> 00:02:35,771
+Onunla başlayıp eğer bir sorunuz yoksa buradan vakit kaybetmeden çünkü çok daha hızlı konular geçemiyoruz.
+
+11
+00:02:35,972 --> 00:02:44,091
+Konu başlıklarımıza bakarsak bayağı bir yoğun bir müteadatımız var. İçindeki müteadat çekmek konularımız bayağı bir yoğun.
+
+12
+00:02:44,692 --> 00:02:51,091
+O yüzden ne kadar elimizi çapur tutarsa o kadar seri bir şekilde hızlı gideceğimizi düşünüyorum.
+
+13
+00:03:07,795 --> 00:03:09,435
+standardi böyle demek ki.
+
+14
+00:03:09,435 --> 00:03:09,635
+Peki.
+
+15
+00:03:13,300 --> 00:03:14,020
+Şimdi bugün
+
+16
+00:03:19,635 --> 00:03:26,995
+Şunlardan bahsetmek lazım. En son neredesini ve diferansiyeler konusunu görmüştük.
+
+17
+00:03:27,675 --> 00:03:30,235
+Bugün de artan ve azalan fonksiyonlardan bahsedelim biraz.
+
+18
+00:03:32,495 --> 00:03:33,656
+Türeye bağlı tabii ifadeler.
+
+19
+00:03:56,436 --> 00:03:58,196
+bilgi geliştirilir fonksiyonu.
+
+20
+00:04:07,060 --> 00:04:13,819
+bir, tabi kümet, kelimesi de çok kullanılır ama daha iyi konunun anlaşılması için belki aralıkla devam edebiliriz.
+
+21
+00:04:14,460 --> 00:04:16,819
+bir ı aralığı üzerinde açık ya da kapalı fark etmez.
+
+22
+00:04:34,451 --> 00:04:35,951
+normal standart tanımı şöyle diyor.
+
+23
+00:04:37,072 --> 00:04:37,471
+Eğer
+
+24
+00:04:44,372 --> 00:04:46,971
+x1, x2 elemanı için
+
+25
+00:04:46,971 --> 00:04:54,312
+x1, büyük, büyük eşitliği diyebilirsin, x2 iken
+
+26
+00:04:59,283 --> 00:05:07,504
+Testsinin tam tersini yapalım. Daha yorul. Çünkü x1'den sonra geldiği için değil mi? Daha kolay anlayalım diye. Şöyle yapalım.
+
+27
+00:05:12,084 --> 00:05:17,144
+x1, küçük eşitir x2 iken, şöyle.
+
+28
+00:05:20,980 --> 00:05:22,800
+f1, küçük etir, f2 ise
+
+29
+00:05:28,531 --> 00:05:29,419
+x kare artı 2x, f'
+
+30
+00:05:35,956 --> 00:05:37,475
+bu uygulamaları üzerinde
+
+31
+00:05:37,475 --> 00:05:41,076
+artan fonksiyonları.
+
+32
+00:05:55,951 --> 00:06:14,072
+x kare artı 2x, f'
+
+33
+00:05:51,507 --> 00:06:00,987
+Tabii eğrinin, fonksiyon eğrisinin, grafinin artan olmanız durumunda, dikkat ederseniz aslında, t ettirip hepmediği yukarı doğrudur.
+
+34
+00:06:02,127 --> 00:06:06,327
+İşte burada türev ile ilişkisi içine gidiyor. Onu da bireradan söyleyeceğim.
+
+35
+00:06:09,327 --> 00:06:17,467
+Eğer her x1, x2 çifti için, araların herhangi bir noktası.
+
+36
+00:06:17,875 --> 00:06:31,135
+yine x1, x2 iken, bu kez tam tersine fx1, fx2 oluyor ise f fonksiyonuna
+
+37
+00:06:40,915 --> 00:06:42,196
+yü aralığı üzerinde
+
+38
+00:06:42,196 --> 00:06:45,875
+hazır an fonksiyonu verir.
+
+39
+00:07:00,531 --> 00:07:01,151
+misselap.
+
+40
+00:07:05,076 --> 00:07:14,056
+y eşittir, değil mi? x doğrusu nedir? Artan bir fonksiyondur. Hemen tanımasalabilirsin, değil mi?
+
+41
+00:07:37,620 --> 00:07:42,259
+Yani aynı şekilde alacağız. Her zaman x1 küçük önce x2ken dikkat edin değil mi?
+
+42
+00:07:43,620 --> 00:07:47,920
+Yani bütün yaparsak da yukarıdakiyle aynı sorun değişemiş olmaz ki aynı tanım vermiş oluruz.
+
+43
+00:07:55,091 --> 00:07:57,812
+artan bir fonksiyon. Neden? Atıyorum mesela,
+
+44
+00:07:59,891 --> 00:08:01,211
+katemelen değerleri aldığı için,
+
+45
+00:08:02,971 --> 00:08:10,091
+x1'i ne seçelim? 1 seçelim, x2, 2 seçelim. Zaten x1, x2'ten nedir? Küçük değil mi?
+
+46
+00:08:11,251 --> 00:08:13,912
+Dolayısıyla ama x1, x2 değer de aynı olduğu için,
+
+47
+00:08:16,072 --> 00:08:18,711
+aynı şekilde fx1 küçük için fx2 olacaktır.
+
+48
+00:08:19,951 --> 00:08:21,451
+Test ediniz, hemen bu sağlanır.
+
+49
+00:08:22,963 --> 00:08:25,764
+Herhangi x1x2ci değil mi?
+
+50
+00:08:28,264 --> 00:08:30,264
+Artanlık sağlamdır değil mi?
+
+51
+00:08:31,963 --> 00:08:36,940
+Tabi bir tane ile göstermek etmez tabi, genel olarak göstermek etmez. Sadece bir örnek olsun diye mesela değil mi?
+
+52
+00:08:47,827 --> 00:08:49,367
+Değil mi? Bakın hemen sağlandı.
+
+53
+00:08:59,220 --> 00:09:00,860
+Tabii öte yandan, mesela,
+
+54
+00:09:03,500 --> 00:09:04,580
+g eşittir,
+
+55
+00:09:06,160 --> 00:09:07,500
+1 bölük funksiyonu,
+
+56
+00:09:09,540 --> 00:09:12,560
+tabii bu x'i sıfırda tanım değil, sadece pozitif kısmını alalım,
+
+57
+00:09:13,680 --> 00:09:14,440
+funksiyonu,
+
+58
+00:09:17,440 --> 00:09:18,080
+nerede?
+
+59
+00:09:18,460 --> 00:09:21,279
+İşte sıfır sonsuz artı sonsuz aralığı üzerinde,
+
+60
+00:09:25,043 --> 00:09:36,723
+ne diyeyim mesela? Azalan fonksiyondur. Aslında bu fonksiyon diğer tarafta da yani tüm x-0, 0-0 aralığı üzerinde alabilirsiniz aslında sıfır hariç.
+
+61
+00:09:36,723 --> 00:09:44,803
+Yine azalan olduğunu görürsünüz. Ama önce sadece 0-0 aralığı üzerinde grafine bakarak görelim. Azalan fonksiyondur. Üzerinde azalandır.
+
+62
+00:09:48,179 --> 00:09:58,679
+Gerçekten, yani ben önce seçtiğimiz gibi mesela, x1'i 1, x2'i de 2, yani x1, x2'den küçük değil mi? Olduğu açık.
+
+63
+00:10:00,119 --> 00:10:13,219
+Buradan fx1 değeri, 1 bölü 1, yani 1 değil. Öte yandan fx2 değeri, yani 1 bölü 2 değil mi? Olur.
+
+64
+00:10:14,548 --> 00:10:38,048
+1 nedir? 1 bölgeden büyüktür bakın. Yani x1, şöyle yeterseniz, herhangi, değil mi? x1 küçük, x2 seçimimiz ne bakın. Yani eşlik de koyabilirsiniz de, yani o eşlik sadece bir gösterimdir yani. Küçük, kesin küçük olduğu belli. Bu da öyle yani. Bu da bundan kesin küçüktür. Değil mi?
+
+65
+00:10:42,964 --> 00:10:45,584
+1, 1 bölükten büyük. Nedir o zaman bu fonksiyon?
+
+66
+00:10:46,564 --> 00:10:54,804
+Herhangi bu şekildeki x1, x2 çıktığı için, fx1 büyük, fx2 sağlanacağı için değil mi?
+
+67
+00:10:54,844 --> 00:11:00,744
+Ya da büyüklük fx2 sağlanacağı için bizim azanlık tanımımız burada sağlanacaktır.
+
+68
+00:11:02,163 --> 00:11:05,464
+Peki, bazı türev ilişki nedir şudur?
+
+69
+00:11:09,364 --> 00:11:33,524
+Eğer her x elemanı için f üstü x türevi büyük ölçü 0 ise, tabii aslında 0 ise türevi, 0 ise yatay olacağı için değil mi? Artık ona azalan, yatay sabitleyebilirsiniz. Sabitlik tabii, t yatay olacağı için değil mi? Böyle düşünebilirsiniz, öyle olduğu noktalarda.
+
+70
+00:11:34,355 --> 00:11:37,355
+büyük şeyi de alabilirsin sadece.
+
+71
+00:11:37,355 --> 00:11:45,355
+0 olduğu noktada yataydır zaten de. Dolayısıyla grafikte sabit doğru gibi yatay devam edecektir değil mi?
+
+72
+00:11:46,355 --> 00:11:48,355
+f üzerinde artandır.
+
+73
+00:11:59,091 --> 00:12:01,271
+her x eleman i için
+
+74
+00:12:01,271 --> 00:12:05,451
+yukarıdaki hemen
+
+75
+00:12:05,451 --> 00:12:09,011
+neleri, fonksiyonları alabileceğiz türevlerini
+
+76
+00:12:09,011 --> 00:12:11,731
+f, i üzerinde azalatır.
+
+77
+00:12:18,163 --> 00:12:26,644
+Bunların gösterimleri var. Çabucak hemen birbirine denklikleri, bu tanımlarını gösterilebilir ifadelerin ispatlarını yapacağım. Bu aslında teorem olarak verilir.
+
+78
+00:12:27,663 --> 00:12:39,144
+Gerçekten f x eşittir x için f x eşittir 1 değil mi? Türe 1'dir. Dolayısıyla pozitif olduğu için bu fonksiyonumuz her şekilde artıyor.
+
+79
+00:12:59,668 --> 00:13:25,967
+Dolayısıyla f, i üzerinde, yani i dediğim sıfır sonsuz üzerinde, değil mi? Arta. Azalam. Pardon. Ben birbiri x'i aldık sanıyorum. Türev pozitif, dolayısıyla f fonksiyonu, aslında bu her x için tanımlı olduğu için değil mi? Y, x doğrusu y olarak düşünmemizde. Nedir? Arta. Olup, f artı. Nerede? Aslında bu tanım kümüşlerinde değil mi? Tahmen artı.
+
+80
+00:13:26,548 --> 00:13:33,227
+tm'den biraz önce aldığımız 1 bölü x fonksiyonun türevi nedir?
+
+81
+00:13:34,908 --> 00:13:35,967
+1 bölü x'in türevi nedir?
+
+82
+00:13:40,307 --> 00:13:41,568
+bir bireys türevdikim şöyle.
+
+83
+00:13:42,927 --> 00:13:43,648
+Söyleyin bana.
+
+84
+00:14:01,395 --> 00:14:28,615
+eksi birbirli x kare. Eksi birbirli x'ar, aynı. Değil mi? Eksi birbirli x kare. x ne olursa olsun burada, değil mi artık? Bu nedir? Negatiftir. Daima negatiftir. x ne olursa olsun. Böylece f ne olur? Azalan olur. Hatta tüm tanım hükümesi üzerinde bu fonksiyon azalanır. Çünkü f'nin tanım hükümesi aslında eksi sonsuz.
+
+85
+00:14:29,087 --> 00:14:50,587
+0, birleşim, 0 sonsu. Biz yukarıda sadece 0 sonsu aldık ama fark etmiyor. Yine azalan, her durumda azalan. Bu fonksiyon her x için nedir? Bu tanım aralığının üzerindeki tüm x değerleri için nedir? Fonksiyon türevi negatif olup fonksiyon azalandır. Yani f şuraya diyecektik. f azalan.
+
+86
+00:14:55,572 --> 00:14:59,112
+Bu artan fonksiyon, burada f azalan fonksiyonudur.
+
+87
+00:15:00,432 --> 00:15:00,632
+Tamam.
+
+88
+00:15:02,552 --> 00:15:05,172
+Kısa bunları gördük. Çünkü bunları biraz sonra işleyeceğiz.
+
+89
+00:15:05,732 --> 00:15:06,831
+Bunları önemli için işleyeceğiz.
+
+90
+00:15:06,972 --> 00:15:09,451
+Bunları grafikte falan mesele geldiği zaman orada da göreceğiz.
+
+91
+00:15:10,912 --> 00:15:11,552
+Peki.
+
+92
+00:15:12,552 --> 00:15:16,831
+Şimdi yeni bir fonksiyonlar türünü inceleyeceğiz.
+
+93
+00:15:17,472 --> 00:15:19,012
+Transcendant fonksiyonlar dediğimiz.
+
+94
+00:15:29,268 --> 00:15:32,408
+Geri sayfa mı çözüyorsunuz? Not tutuyorsanız tabii.
+
+95
+00:16:27,443 --> 00:16:41,063
+fonksiyonlar, fonksiyonlar da limit ve süreklilik gördük. Sonra türev başladık. İşte şimdi de transundan fonksiyonları. Yani hani çok da bölüm olarak şey yapmak istemiyorum ama belki 4 diyebilirsiniz. 4. bir ana başlık olarak değil mi?
+
+96
+00:16:54,740 --> 00:16:59,500
+transcendant, şöyle bakayım da, doğru yazalım, fonksiyonlar.
+
+97
+00:17:05,428 --> 00:17:09,728
+cbs olmayan fonksiyonlardı bunlar, transatant fonksiyonlar.
+
+98
+00:17:10,428 --> 00:17:24,868
+Bir de bunlar içerisinde ters fonksiyonlar, değil mi dediğimiz fonksiyonları, ters trigonometrik fonksiyonlar, hipebolik fonksiyonlar, üstel ve logartif fonksiyonlar, bu tarz fonksiyonlar,
+
+99
+00:17:25,327 --> 00:17:29,428
+transatant fonksiyonları grubuna girip cbs olarak ifade edemeyen fonksiyonlardır.
+
+100
+00:17:29,428 --> 00:17:32,728
+İlk olarak burada ters fonksiyonlar ve türevleriyle başlayacağız.
+
+101
+00:18:03,476 --> 00:18:04,296
+Şimdi arkadaşlar,
+
+102
+00:18:09,044 --> 00:18:14,324
+Aslında biraz önce artan ve artan haf fonksiyonları tanımını verdik.
+
+103
+00:18:14,324 --> 00:18:16,004
+Artan ve artan haf fonksiyonları tanımını verdik.
+
+104
+00:18:16,084 --> 00:18:21,204
+Onların şimdiki konumuzda direkt ilişkisi var.
+
+105
+00:18:23,443 --> 00:18:26,884
+Birebirlik dediğimiz, fonksiyonlar bilebilir dediğimiz tanım var değil mi?
+
+106
+00:18:27,403 --> 00:18:31,324
+Yani öyle fonksiyonlar vardır ki, tanım tümelerindeki her...
+
+107
+00:18:31,951 --> 00:18:36,552
+değerlere karşılık görüntü kümesinde sadece 1 değer karşılık alır. Bu çok önemli işte.
+
+108
+00:18:36,552 --> 00:18:45,152
+Yani herhangi bir farklı 2 değeri verildiğinde o farklı 2 değere karşılık yalnızca değer kümesinde her birine karşılık 1 değer alır.
+
+109
+00:18:45,152 --> 00:18:55,152
+Mesela y ise x kuf fonksiyonu diyelim. y ise x kuf fonksiyonunun değer kümesindeki her y değerini tanrım kümesindeki değil mi?
+
+110
+00:18:55,152 --> 00:18:59,351
+Yalnızca nedir? Oradaki verilen bir noktaya karşılık gelir.
+
+111
+00:19:00,147 --> 00:19:08,647
+Bakıma bu tabii şeyle de alakalı biraz, fonksiyonlar içindeki doğru testi diye bir şey konuşmuştuk.
+
+112
+00:19:09,307 --> 00:19:17,107
+Yani eğer bir dik doğru bu fonksiyonun eğrisini çizdiğimizde, o fonksiyonun eğrisini o dik doğru yalnızca nedir?
+
+113
+00:19:17,228 --> 00:19:19,188
+Yalnız ve yalnız tek bir noktada kesmektedir.
+
+114
+00:19:19,987 --> 00:19:23,807
+Dolayısıyla böyle fonksiyonlar ise nedir? Birebir fonksiyonlar diyoruz arkadaşlar.
+
+115
+00:19:25,887 --> 00:19:26,907
+Tanım diyelim.
+
+116
+00:19:32,276 --> 00:19:33,875
+de tanım kümesinde
+
+117
+00:19:41,940 --> 00:19:44,680
+x1 farklı x2 olduğunda
+
+118
+00:19:49,971 --> 00:19:51,092
+Yani olduğu her durumda.
+
+119
+00:19:54,231 --> 00:19:56,632
+x1 ile farklı fx2 ise
+
+120
+00:19:56,632 --> 00:19:58,951
+Evet, bu şekilde.
+
+121
+00:20:00,831 --> 00:20:02,152
+f fonksiyonuna
+
+122
+00:20:13,140 --> 00:20:15,340
+d tarım hükümesinde birebir fonksiyon deriz.
+
+123
+00:20:32,692 --> 00:20:37,592
+Birebirik işte bazen böyle direk yazar, bazen de yan yana bir türev, bir şeklinde yazar.
+
+124
+00:20:42,771 --> 00:20:50,491
+Özellikle, çoğu fonksiyon arkadaşlar, direkt doğal olarak verilen kendi tanım kümelerin üzerinde nedir? Birebir fonksiyonlardır.
+
+125
+00:20:51,071 --> 00:20:59,451
+Mesela fx eşitir, biraz önce yazdığımız x fonksiyonu. Sonra fx eşitir, bir bölü x fonksiyonu değil mi tanım kümelerine ilgili?
+
+126
+00:20:59,451 --> 00:21:05,311
+fx eşitir kök fonksiyonu, fx eşitir ama sinis x fonksiyonu aldığımızda mesela aynı şeyi söyleyemeyeceğiz.
+
+127
+00:21:06,911 --> 00:21:07,451
+O zaman...
+
+128
+00:21:08,339 --> 00:21:25,940
+Tüm tanım hükümesi üzerinde birebir fonksiyon olmadığı halde, fonksiyon da ne yapabiliriz? O fonksiyonu, o tanım hükümesinin belli bir kısmına kısıtlayarak, o fonksiyonu sadece o aralık ya da o tanım bölgesi üzerinde nedir? Birebir fonksiyon yapabiliriz, getirebiliriz, birebir fonksiyonlarına getirebiliriz.
+
+129
+00:21:31,571 --> 00:21:47,491
+Kötük fonksiyonu, birebir fonksiyondur değil mi? Çünkü negatif olmayan sayılarda oluşan herhangi bir tanrı kümesi burada yoktur. Dolayısıyla bu küme üzerindeki her bir farklı değerler için fonksiyonunu aldığı değerler de farklıdır değil mi?
+
+130
+00:21:48,491 --> 00:21:49,451
+Fonksiyonu.
+
+131
+00:21:53,875 --> 00:21:55,115
+birebir fonksiyonudur.
+
+132
+00:21:59,571 --> 00:22:14,391
+Tüm x'ler tabii pozitif olmak üzere değil mi? Sıfır sonuç aralığında olmak üzere. Her x1 farklı x2 iken, kare kök x1 farklı, kare kök x2 olacağı açık.
+
+133
+00:22:20,596 --> 00:22:29,895
+öte yanda, mesela başka bir gx yiyelim hadi ona.
+
+134
+00:22:32,895 --> 00:22:35,775
+sin x fonksiyonu için aynı şeyi söyleyemeyebiliriz.
+
+135
+00:22:36,816 --> 00:22:44,016
+mesela bu sin x bölü alttaki değeriyle sin x bölü 5 bölü 6, yani 30 ve 150 dereceye dek değil mi?
+
+136
+00:22:44,476 --> 00:22:47,336
+fonksiyonun her iki durumda değeri 1.
+
+137
+00:22:48,627 --> 00:23:06,788
+Demek ki aslında bunu biz fonksiyonu mesela 0, pi bölü 2 aralığına kısıtlarsak, buradaki her x1 elemanı için ya da x1 eşitir, sinüs, x2 şeklinde bir ifade göz önüne alacağım için de, bunu pi bölü 2 ile pi alt aralığına karşı keren başka bir x2 elemanı bulabiliriz.
+
+138
+00:23:07,887 --> 00:23:08,208
+Buyurun.
+
+139
+00:23:13,011 --> 00:23:17,612
+Tabi sadece periyotik ama sadece periyotikliğinden kaynaklanmıyor. Mesela biraz önce söyleyeceğiz.
+
+140
+00:23:17,612 --> 00:23:22,811
+Mesela y, x, x kare fonksiyonu var. y, x, x kare fonksiyonu bir periyotik fonksiyon değil.
+
+141
+00:23:22,811 --> 00:23:26,211
+Ama o fonksiyon da nedir? Birebir fonksiyon değildir. Tamam mı?
+
+142
+00:23:30,548 --> 00:23:36,847
+Yok, onlar işleyeceğiz daha da, konkaplar bütün noktalar, onlara gelmedik daha. Türev'in uygulamaları kısmına geleceğiz, acele etmeyin onlara geleceğiz.
+
+143
+00:23:40,948 --> 00:23:44,148
+Mesela sinüs fonksiyonu şöyle basit bir grafini çizelim arkadaşlar.
+
+144
+00:24:01,907 --> 00:24:02,907
+nasıl birka da kıvara?
+
+145
+00:24:04,407 --> 00:24:04,947
+Teşekkürler.
+
+146
+00:24:19,380 --> 00:24:24,539
+Bizim için sadece şurası bize yeterli. 0p aralığının mesela göz önüne alsak sadece.
+
+147
+00:24:28,564 --> 00:24:29,324
+0, pi.
+
+148
+00:24:31,483 --> 00:24:32,784
+Şurada ne de? Pi bölük.
+
+149
+00:24:34,524 --> 00:24:35,524
+Pi bölük de bil ya.
+
+150
+00:24:54,932 --> 00:25:04,672
+Şimdi o halde biz aralarımızı sıfır bölüküye sınırlasak, sıfır bölükü ile sıfır pi arasında nedir? İfademiz eşittir.
+
+151
+00:25:04,672 --> 00:25:21,811
+Yani bakıma burada şöyle değerler alırsak, daha keskin bir değer vereyim. Şurada mesela pi bölü 3 değil mi? 30 derecelik değerle, işte 150 derecelik değer, şurası aynı.
+
+152
+00:25:22,932 --> 00:25:25,311
+Yani buradaki değeri de bu, buradaki değeri de şu.
+
+153
+00:25:26,912 --> 00:25:28,211
+Şöyle çizeyim isterseniz.
+
+154
+00:25:29,992 --> 00:25:30,972
+Tarak verelim diye.
+
+155
+00:25:39,571 --> 00:25:41,091
+hem pi bölüşteki değeri,
+
+156
+00:25:42,931 --> 00:25:46,371
+hem de nedir? Şu piyi kaldıralım isterseniz.
+
+157
+00:25:56,884 --> 00:26:18,423
+x kare artı 3x bölü 6. Buradaki değeri bakın, ikisi dahil. Yani x bir farklı bu, x bir değeri mesela, x bir eşittir, pi bölü 3, x eşittir, 5 bölü 6. Bunlar farklı değerler değil mi? Farklı açı değerleri. Bunlar birbirlerinden farklı değerler değil mi? Şöyle yazalım.
+
+158
+00:26:24,819 --> 00:26:26,839
+sinüs 5 pi bölü 6.
+
+159
+00:26:29,139 --> 00:26:30,619
+İkisi de nedir? 1 değil mi?
+
+160
+00:26:31,599 --> 00:26:33,599
+1 bölü 2 pardon. 05 değil mi?
+
+161
+00:26:38,483 --> 00:26:47,523
+Eğer biz fonksiyonu işte nedir? 0, pi bölü 2 aralığına kısıtlarsak, 0, pi bölü 2 aralığına fonksiyon nedir? Birebir.
+
+162
+00:26:47,963 --> 00:26:53,663
+Ya da işte buradan ararsak mesela x, pi bölü 2, artı pi bölü 2 aralığına değil mi? Daha devamlı alırsanız gibisinde.
+
+163
+00:26:54,604 --> 00:26:57,483
+O zaman x fonksiyonu...
+
+164
+00:27:02,324 --> 00:27:04,804
+Mesela ne diyelim? 0 pi bölü 2.
+
+165
+00:27:08,884 --> 00:27:12,724
+Veya işte, pi bölü 2 pi mesela değil mi?
+
+166
+00:27:14,864 --> 00:27:17,264
+Atıyorum yani, pi bölü 2 pi.
+
+167
+00:27:18,923 --> 00:27:21,244
+Aralıklarında üzerinde tabunları şey alabilirsiniz,
+
+168
+00:27:22,724 --> 00:27:24,764
+kapalıya da çıkılabilse o çok önemli değil.
+
+169
+00:27:25,764 --> 00:27:26,324
+Üzerinde.
+
+170
+00:27:29,144 --> 00:27:29,724
+Bire birdir.
+
+171
+00:27:33,460 --> 00:27:36,299
+Birebir fonksiyondur. Normalde fonksiyon ne değildir?
+
+172
+00:27:37,019 --> 00:27:41,359
+Tabii her ikisi için tanımlı olduğu için. Tanım hükümeti üzerinde ne değildir?
+
+173
+00:27:41,740 --> 00:27:44,819
+Bu fonksiyon birebir fonksiyon değildir. Onu söyleyelim.
+
+174
+00:27:45,319 --> 00:27:46,740
+Şöyle kırmızıyla yazayım onu.
+
+175
+00:27:46,740 --> 00:27:48,539
+x
+
+176
+00:27:52,564 --> 00:28:00,423
+tam kümesi üzerinde birebir değildir.
+
+177
+00:28:13,748 --> 00:28:36,248
+5 bölü 6, evet. 5 bölü 6, şurası 5 bölü 6. Yok yok, bunu mu diyorsunuz? Buradaki yazdığım doğru, ben 0 bölü 2 ile pi bölü 2, pi aralığı için düşündüm. Ondan yazdığım şey bağımsız. Bak şurası pi.
+
+178
+00:28:42,195 --> 00:28:45,796
+Bu 0, pi'lik eli, pi'lik dediğim burası.
+
+179
+00:28:45,796 --> 00:28:49,596
+Bu pi bölü 3, pi bölü 5, bölü 6'yı biz ne olarak aldık?
+
+180
+00:28:49,596 --> 00:29:00,796
+O aralıkların içindeki herhangi noktalarla aldık değil mi? Herhangi iki nokta mesela aldığımızda, mesela 0, pi aralığının üzerinde fonksiyonlar değil, birebir değil. Onu göstermek için aslında bunu yaptık.
+
+181
+00:29:00,796 --> 00:29:06,395
+İki farklı nokta aldığımızda, o iki farklı nokta değerlerin aynı olduğunu görüyoruz bu açıdan.
+
+182
+00:29:06,395 --> 00:29:08,363
+Tamam mıyız arkadaşlar?
+
+183
+00:29:31,059 --> 00:29:36,779
+birbirini yazdım. He, he, anladım. Şimdi şöyle diyorsun sen. Orayı görmemişim. Doğru diyorsun.
+
+184
+00:29:38,399 --> 00:29:38,839
+Bazen.
+
+185
+00:29:40,159 --> 00:29:43,739
+Oluyor arkadaşlar, biz de böyle hırsızlıktan biraz acele edelim derken.
+
+186
+00:29:45,139 --> 00:29:45,859
+Şey yapıyoruz.
+
+187
+00:29:47,579 --> 00:29:49,099
+Şurası 5x6, doğru.
+
+188
+00:29:52,884 --> 00:29:53,243
+Evet.
+
+189
+00:29:59,188 --> 00:30:03,128
+Şimdi birebirlik için tabii ne var? Yatay doğru testi var aslında.
+
+190
+00:30:03,827 --> 00:30:17,148
+Hani yatay bir doğru ile eğer eğriği çizdiğimizde, eğriği bir, yatay bir doğru çizdiğimizde, eğer bu yatay doğru eğriği sadece değil mi bir noktada keserse ya da en fazla bir noktada keserse o zaman fonksiyon birebirci diyoruz.
+
+191
+00:30:17,908 --> 00:30:24,288
+Şöyle ben hemen bir şey yazayım. Birebir fonksiyonlar için yatay doğru testi.
+
+192
+00:30:29,619 --> 00:30:30,507
+x kare artı 2x, f'
+
+193
+00:30:49,556 --> 00:30:53,316
+y eşittir, fx fonksiyonunu,
+
+194
+00:30:54,935 --> 00:30:57,556
+şöyle kısaca yazıyorum, grafiği,
+
+195
+00:31:03,567 --> 00:31:06,807
+x kare artı 2x, f'
+
+196
+00:31:02,003 --> 00:31:05,283
+her detay doğru, her detay doğruyu,
+
+197
+00:31:12,915 --> 00:31:13,292
+x kare artı 2x, f'
+
+198
+00:31:11,316 --> 00:31:12,795
+Ancak ve ancak en fazla.
+
+199
+00:31:23,016 --> 00:31:27,820
+x kare artı 2x, f'
+
+200
+00:31:22,132 --> 00:31:24,132
+bir noktada değil mi?
+
+201
+00:31:25,132 --> 00:31:27,132
+keserse, yani bir kere keserse.
+
+202
+00:31:36,243 --> 00:31:36,923
+Birleştir.
+
+203
+00:31:42,140 --> 00:31:46,119
+x kare artı 2x, f'
+
+204
+00:31:40,788 --> 00:31:46,327
+Evet, bunun tanımını herhalde artık anlamış oldum. Çok da bunun üzerinde. Çok fazla da durmak istemiyorum.
+
+205
+00:31:49,208 --> 00:31:53,367
+Tabi diyelim ki, şimdi artık esas tanımımıza geçeceğiz.
+
+206
+00:31:57,460 --> 00:31:59,559
+ters fonksiyon tanımı vereceğim.
+
+207
+00:32:04,372 --> 00:32:13,852
+Diemann f, bir de kümesinden, R kümesine tanımlı. R bu deneyim sayı. Tamam mı? Hemen bir küme, pardon. Birebir bir fonksiyon olsun.
+
+208
+00:32:20,500 --> 00:32:27,700
+Aslında bu birebirlik fonksiyonun, ters fonksiyonun varlığının koşuudur aslında. Birebir fonksiyon olsun.
+
+209
+00:32:29,059 --> 00:32:36,279
+Birebir fonksiyon olsun. Yani birebir bir fonksiyon olsun. Arka tarafa bir bir gelmesin. Çok da istemedim aslında.
+
+210
+00:32:37,299 --> 00:32:44,200
+f'in ters fonksiyonu, f üzeri eksi bir ile gösterdi.
+
+211
+00:32:49,203 --> 00:32:50,443
+testfunktionlar.
+
+212
+00:32:54,996 --> 00:32:55,736
+şöyle diyelim.
+
+213
+00:32:58,476 --> 00:33:00,036
+x eşittir
+
+214
+00:33:00,036 --> 00:33:03,656
+f y iken
+
+215
+00:33:03,656 --> 00:33:05,996
+tabi bunu ancak bancak diyebilirsiniz aslında.
+
+216
+00:33:07,456 --> 00:33:08,736
+f üzeri x'i bir
+
+217
+00:33:08,736 --> 00:33:12,556
+isterseniz tam tersine aldım.
+
+218
+00:33:14,956 --> 00:33:16,156
+y eşittir
+
+219
+00:33:16,156 --> 00:33:20,196
+f üzeri x'i bir x
+
+220
+00:33:20,196 --> 00:33:22,276
+şeklinde tanımlanır diyelim.
+
+221
+00:33:34,163 --> 00:33:41,644
+Burada biz normalde y, f fonksiyon diyorduk. Buradaki ilk başta aldığımız x, y, f i ibadeti y'leri nereden? D'den alıyoruz.
+
+222
+00:33:42,291 --> 00:33:59,211
+Sonra x'e çir f ifadesinden, tgeye çir f üzeri x'i bir x koşulunu sağlayan, artık biz ters fonksiyonu tanımayacağımız için böyle bir fonksiyon değil mi? Değişkenimiz normalde standart değişkenimiz x olduğu için ters fonksiyonun değişkenini de yine x almak istiyor aslında. Bu anlamda gelmiştir.
+
+223
+00:33:59,211 --> 00:34:05,551
+Tabii f üzeri x'i bir fonksiyon aslında, R'den nereye tanımlı? D'ye tanımlı.
+
+224
+00:34:05,971 --> 00:34:12,532
+R'den, t'ye tamam. Dolayısıyla buradaki x'leri, R'deki x'leri, bak değişkenimiz bu, buradan alıp buraya götürüyor.
+
+225
+00:34:14,012 --> 00:34:18,711
+F'ye, y'ye götürüyor artık. Ya da f üzeri x'i bir x neyse.
+
+226
+00:34:37,460 --> 00:34:59,060
+Tabi, ters fonksiyonu aslında ifadesine göre baktığımız zaman bulmak zor değil, kolay. Ne yapacağız? Önce fonksiyonun, yani bize verilen y eşitir f eksikli bir fonksiyon varsa, o fonksiyonun önce x'i ne yaparız çözeriz, y'ye bağlı. Sonra x'e gelin yerlerini değiştirdiğimizde, y eşitir f eksikli bir fonksiyon karşımıza çıkacaktır.
+
+227
+00:35:05,300 --> 00:35:05,920
+Bakalım.
+
+228
+00:35:07,920 --> 00:35:09,039
+Örnek.
+
+229
+00:35:10,180 --> 00:35:11,539
+y eşittir.
+
+230
+00:35:12,600 --> 00:35:13,600
+fx aslında.
+
+231
+00:35:19,188 --> 00:35:32,768
+Şöyle alalım şimdilik. y eşittir. 1 bölü 2x artı 1. Fonksiyonun ters fonksiyonu bunu. Tabii şu 1 bölü 2 sanki şey değil gibi gözüktü. Anlaşılmasın.
+
+232
+00:35:38,291 --> 00:35:40,532
+1,1,2,x artı 1,2, değil mi? Basit bir doğru.
+
+233
+00:35:41,791 --> 00:35:43,931
+Fonksiyonun bu nedir? Basit bir linear doğru.
+
+234
+00:35:44,871 --> 00:35:46,811
+Doğrusunun ters fonksiyonu bulunur, değil mi?
+
+235
+00:35:48,051 --> 00:35:48,952
+Hadi fonksiyon diyelim.
+
+236
+00:35:54,643 --> 00:35:55,724
+test funksiyonlar.
+
+237
+00:36:01,204 --> 00:36:06,204
+Fonksiyon, direkt ters fonksiyonu bunu sonra tutturabiliriz. Çünkü fonksiyon zaten birebir olduğu açık. Yani şöyle diyebiliriz.
+
+238
+00:36:07,003 --> 00:36:11,904
+Herhangi fonksiyon verildiğinde o fonksiyonun birebir olduğunu gösterip tersini bulunuyor değil mi? Onu da söyleyebiliriz.
+
+239
+00:36:12,404 --> 00:36:18,204
+Ama açıkça zaten birebir olduğunu hemen bulabilirsiniz. Yani iki farklı değerli birisinin de türev kullanabilirsiniz değil mi?
+
+240
+00:36:18,804 --> 00:36:26,003
+y üstü mesela etirne edin hemen 1 bölü 2'dir, pozitiftir. Dolayısıyla türev pozitif olduğu için f birebirdir.
+
+241
+00:36:28,467 --> 00:36:30,707
+y eşittir fx, birebirdir.
+
+242
+00:36:34,127 --> 00:36:39,187
+Dolayısıyla tersi vardır.
+
+243
+00:36:46,516 --> 00:36:49,596
+Sistem nedir? Belirlen fonksiyonunda x çözmek.
+
+244
+00:36:50,996 --> 00:36:53,876
+x'i y'ye göre çöz.
+
+245
+00:36:57,427 --> 00:36:59,108
+Şu üstüleri şey olmasın sakın.
+
+246
+00:37:01,587 --> 00:37:03,507
+Türev şeyi falan gibi anlaşılmasın.
+
+247
+00:37:04,467 --> 00:37:06,407
+Böyle bir sıkıntı olacak gibi gelecek arkadaşlar.
+
+248
+00:37:12,148 --> 00:37:13,628
+x diyelim, bölgül koyalım.
+
+249
+00:37:15,328 --> 00:37:16,648
+y'ye göre çözülür.
+
+250
+00:37:18,007 --> 00:37:20,228
+Tabii her zaman mümkün değil bu da, basit anlamda bu da öyle.
+
+251
+00:37:23,188 --> 00:37:23,748
+Önce.
+
+252
+00:37:25,868 --> 00:37:26,708
+İki dede ne olur?
+
+253
+00:37:27,668 --> 00:37:31,908
+x ile bulduğunuz ifadede y, yer değiştirilir.
+
+254
+00:37:52,628 --> 00:37:53,948
+360 değil ki.
+
+255
+00:37:56,868 --> 00:37:57,908
+Biz yanlış mı aldık?
+
+256
+00:37:57,908 --> 00:38:02,507
+Pi bölü...
+
+257
+00:38:03,507 --> 00:38:06,427
+Pi bölü altı diyecektim ya. Pi bölü 3 mi yazık öyle bize arkadaşlar?
+
+258
+00:38:12,436 --> 00:38:14,436
+Şuraya yanı çarpı, pivir 3x, pivir 6x.
+
+259
+00:38:15,436 --> 00:38:20,936
+30 derece dedik ya, 30 derece dedik ya, arkada duymadınız mı?
+
+260
+00:38:22,735 --> 00:38:25,336
+Tabii tabii, şunu pivir 6x yapın.
+
+261
+00:38:26,716 --> 00:38:27,056
+Bravo.
+
+262
+00:38:33,396 --> 00:38:34,235
+on a pivotal tep.
+
+263
+00:38:39,635 --> 00:38:40,895
+birbirlik diyoruz arkadaşlar.
+
+264
+00:38:41,775 --> 00:38:41,976
+Tamam.
+
+265
+00:38:47,059 --> 00:38:52,819
+bazen de işte acele edelim derken böyle şey yapabiliyoruz. Tamam. Düzeltelim herkes arkadaşlar.
+
+266
+00:38:55,340 --> 00:39:03,119
+Notalarım varsa düzeltsinler. P bölü 3 bahsetmek istiyorum değil mi? Evet. Dönelim buraya. Buradan hemen x'i çözeceğiz.
+
+267
+00:39:03,239 --> 00:39:13,800
+Tabii her tarafını yapalım. İşte normalde 2y eşittir. x artı 2. Buradan da x eşittir. 2y eksi 2 mi?
+
+268
+00:39:15,827 --> 00:39:17,827
+İşte x ile yerin yerini değiştirdim.
+
+269
+00:39:18,528 --> 00:39:20,047
+E eşittir 2x-2.
+
+270
+00:39:26,547 --> 00:39:28,187
+Bu bizim test fonksiyonumuz arkadaşlar.
+
+271
+00:39:37,844 --> 00:39:39,943
+Yani şöyle düşünelim.
+
+272
+00:39:41,083 --> 00:39:44,284
+Aslında şunu yapsanız oradan daha kolay olurdu.
+
+273
+00:39:44,864 --> 00:39:47,824
+Hani ne demiştik tanımda? x eşittir fy yazıyoruz.
+
+274
+00:39:48,524 --> 00:39:49,543
+Gerçekten yazalım o zaman.
+
+275
+00:39:50,923 --> 00:39:54,784
+x eşittir fy ifademiz 1 bölü 2y artı 1.
+
+276
+00:39:55,304 --> 00:39:57,583
+Direkt burada değiştirmiş olduk zaten onu.
+
+277
+00:39:57,644 --> 00:40:00,804
+Dolayısıyla y eşittir işte 2x eksi 2.
+
+278
+00:40:01,492 --> 00:40:02,212
+f'
+
+279
+00:40:02,212 --> 00:40:04,532
+x-1, x ya da 2x, x-2.
+
+280
+00:40:04,912 --> 00:40:05,851
+Dilek çıkmış oldum.
+
+281
+00:40:09,235 --> 00:40:14,056
+x'leştireki iken, y'leştireki üzeri 1x ifadesi. Bu şekilde bulunmuş.
+
+282
+00:40:17,684 --> 00:40:20,684
+f'in birebir olduğunu gördük. Hemen de herhalde ne yapmış olduk?
+
+283
+00:40:23,684 --> 00:40:27,784
+Aynı zamanda tersini de bulmuş olduk.
+
+284
+00:40:29,744 --> 00:40:31,304
+Var mı başka problem arkadaşlar?
+
+285
+00:40:31,304 --> 00:40:32,384
+Hiçbir durum var.
+
+286
+00:40:39,027 --> 00:40:40,467
+bir önceki mi soruyorsunuz?
+
+287
+00:40:41,467 --> 00:40:42,927
+Şu an 5. slide'dayım.
+
+288
+00:40:43,447 --> 00:40:44,268
+Önceki şu.
+
+289
+00:41:11,155 --> 00:41:14,155
+Peki arkadaşlar, belirge tersini bulmuş olduk.
+
+290
+00:41:41,876 --> 00:42:04,716
+Tabii mesela y-x'in x kare fonksiyonu verilmiş olsaydık, y-x'in x kare fonksiyonu tanrı kümesinde birebir fonksiyon değildir. Ancak sıfır ya da büyük eşitli olan x'ler için, birebir fonksiyon olacak için o fonksiyonun tersi nedir? Mümkündür, bulunabilir yani. Bir de onu örnekleyelim. O da önemli çünkü.
+
+291
+00:42:16,244 --> 00:42:16,904
+Şöyle diyelim.
+
+292
+00:42:17,804 --> 00:42:21,364
+Fonksiyonun tersini bu beraber verilmiş, tanımlı mühsü beraber verilmiş.
+
+293
+00:42:22,444 --> 00:42:25,484
+Fonksiyonun tersini bunu diyelim.
+
+294
+00:42:37,940 --> 00:42:41,699
+Yani x büyük bir geç sıfır için para borç dediğimiz sağ tarafta gözüken ifademiz gereği.
+
+295
+00:42:58,996 --> 00:43:00,996
+fonksiyon, fonksiyon. Paraboyabilirsiniz.
+
+296
+00:43:07,891 --> 00:43:08,391
+gibi.
+
+297
+00:43:17,492 --> 00:43:19,731
+Şimdi fonksiyonumuza baktığınız zaman arkadaşlar,
+
+298
+00:43:22,832 --> 00:43:23,811
+y eşitliks kare,
+
+299
+00:43:25,811 --> 00:43:27,932
+hani bu y eşitliks kare ifademisi,
+
+300
+00:43:28,712 --> 00:43:32,392
+tabii bir anlamda x çözmek için, iki tarafın kare kökünü alacağız.
+
+301
+00:43:36,211 --> 00:43:41,771
+Bu nedir? Bu bizim mutlak değer fonksiyonumuzda değil mi? Kare kre x kare fonksiyonu atılarsanız şöyle mutlak değer x.
+
+302
+00:43:42,311 --> 00:43:51,512
+Ama x büyük eşitli sıfır için x'e eşittir. Sonra x'e yerin yerini değiştirsek ne olur? x eşittir ya da y eşittir kare kre x.
+
+303
+00:43:55,668 --> 00:44:00,827
+Bu bizim fonksiyonumuz y etiket kare fx'imiz. Bu ise f'üzeleksif x'imiz arkadaşlar.
+
+304
+00:44:03,068 --> 00:44:07,168
+Y etiket köküz fonksiyonu, y etiket kare fonksiyonu. Neresi ters fonksiyonu.
+
+305
+00:44:08,188 --> 00:44:16,668
+Şimdi burada ilginç olan bir şey var arkadaşlar. Bu fonksiyon, fonksiyon, grafiyle ters fonksiyonun grafi arasında ilişki var.
+
+306
+00:44:17,887 --> 00:44:20,887
+Yani bir fonksiyonla tersi arasında bir ilişki var arkadaşlar.
+
+307
+00:44:24,788 --> 00:44:25,448
+Nedir o?
+
+308
+00:44:28,168 --> 00:44:34,608
+Ters fonksiyonun grafiği, fonksiyonun grafiğinin, y eşit x doğrusuna göre simetristir arkadaşlar.
+
+309
+00:44:38,996 --> 00:44:39,635
+Bakın şöyle bir şey.
+
+310
+00:44:44,851 --> 00:44:46,451
+uye eşittir x doğrusu.
+
+311
+00:44:49,211 --> 00:44:52,891
+uye eşittir ters fonksiyonumuz daha doğrusu f'ye de eksibrik isteyelim.
+
+312
+00:44:58,260 --> 00:45:01,920
+Bu kırmızıyla olan da zaten bizim fonksiyon, fx fonksiyonumuz.
+
+313
+00:45:03,199 --> 00:45:03,500
+Tamam.
+
+314
+00:45:04,880 --> 00:45:06,640
+Böyle de bir durum var.
+
+315
+00:45:08,220 --> 00:45:08,980
+Şu fx, fx.
+
+316
+00:45:33,300 --> 00:45:37,460
+Şimdi gelelim, bu ters fonksiyonun türevini nasıl bulacağız?
+
+317
+00:45:38,660 --> 00:45:41,160
+Demek ki o zaman şöyle notumuzu yazalım isterseniz arkadaşlar.
+
+318
+00:45:58,579 --> 00:45:59,532
+arati,
+
+319
+00:46:03,539 --> 00:46:04,420
+fonksiyonun
+
+320
+00:46:08,980 --> 00:46:09,780
+grafiğinin
+
+321
+00:46:09,780 --> 00:46:13,480
+yani oncina funksiyonuna bakıyorum.
+
+322
+00:46:15,980 --> 00:46:17,680
+y eşit x doğrusuna göre
+
+323
+00:46:24,851 --> 00:46:25,692
+simetistir.
+
+324
+00:46:34,739 --> 00:46:36,219
+Yes, yuküstöyörs, belirsiz mis.
+
+325
+00:47:09,076 --> 00:47:16,296
+Şimdi test fonksiyonların türevine geçtim ama önce özelliklerini verelim. Şöyle özellikleri var. Önemli çünkü bunlar.
+
+326
+00:47:18,676 --> 00:47:24,176
+Şöyle bir sona sayfaya geçeyim. Şurayı hatırlamak için de yayın vereyim şöyle.
+
+327
+00:47:35,347 --> 00:47:36,688
+bir de başlık. Sağ olun.
+
+328
+00:47:52,980 --> 00:47:53,519
+Biz.
+
+329
+00:48:18,324 --> 00:48:30,684
+1. Zaten tanım itibariyle gördük onu. x eşitir, f y iken, ancak ve ancak, y eşitir, f üzeri eksi 1x'tir.
+
+330
+00:48:33,063 --> 00:48:33,703
+2.
+
+331
+00:48:36,543 --> 00:48:41,304
+f'in tanım hükümesi, diğer nesli, değer hükümesi olacaktır değil mi?
+
+332
+00:48:41,884 --> 00:48:45,463
+Yani o zaman, en kolay nasıl onu yazarız.
+
+333
+00:48:46,996 --> 00:48:49,036
+şey çözerek diyelim.
+
+334
+00:48:50,655 --> 00:48:51,396
+Tamam, yazalım.
+
+335
+00:48:58,675 --> 00:49:04,235
+f'z'ler x'i 1x'in x demeye de gerekiyordu aslında.
+
+336
+00:49:17,396 --> 00:49:18,396
+İntrolam ki ve se.
+
+337
+00:49:22,356 --> 00:49:26,036
+f'in, değil mi? Görüntü kümesi ya da herkümesidir.
+
+338
+00:49:32,371 --> 00:49:37,692
+f'üzeleksi 1'in değer kümesi ya da görüntü kümesi.
+
+339
+00:49:43,155 --> 00:49:46,155
+F'in, de tam hükümestir.
+
+340
+00:49:51,603 --> 00:49:58,403
+Bileş kere gelince arkadaşlar, f üzeri eksi 1 değil mi?
+
+341
+00:50:00,603 --> 00:50:08,243
+Tabii, i diyelim. Ama bu hangi x'ler için geçerli, onu da belirtmemiz gerekebilir bazen.
+
+342
+00:50:08,903 --> 00:50:15,844
+Bu durumda tüm f üzeri eksi 1'in tanrı kümetik x'ler için dememiz lazım falan buna biz.
+
+343
+00:50:16,467 --> 00:50:21,407
+Hatta şöyle diyebilirim. Bunu çok da belirtmemize gerek yok aslında. Orada belli olabilir zaten biz.
+
+344
+00:50:22,028 --> 00:50:24,507
+Ondan çok kororak üzerine almamıza gerek yok aslında.
+
+345
+00:50:27,507 --> 00:50:28,568
+Şöyle diyelim.
+
+346
+00:50:30,927 --> 00:50:36,707
+Ve f üzeri, eksi bir, f. Yukarıdaki tanım ve görüntü kümesi anlamında anlarsınız zaten.
+
+347
+00:50:37,807 --> 00:50:40,627
+Bu, i dediğim özreş fonksiyonu, belim fonksiyonu.
+
+348
+00:50:44,052 --> 00:50:44,972
+özdeş konusu.
+
+349
+00:50:54,260 --> 00:51:09,140
+Bir fonksiyonun, 5 diyelim, tersinin tersi nedir? Yani bir bakıma, birleşik anlamda değil mi? Düşendiğiniz zaman, yine kendisini verir, yani f'i verecektir.
+
+350
+00:51:10,420 --> 00:51:18,619
+f üzeri eksi 1, eksi 1, eşitliği f'tir. Tersinin tersi kendisidir.
+
+351
+00:51:22,195 --> 00:51:25,435
+f'nin grafiği, zaten yazdık onu.
+
+352
+00:51:26,255 --> 00:51:27,475
+Kolor olarak grafiği.
+
+353
+00:51:29,475 --> 00:51:31,036
+f'nin grafiğinin
+
+354
+00:51:35,411 --> 00:51:37,551
+y eşlik x doğrusuna göre
+
+355
+00:51:44,563 --> 00:51:46,523
+smithidir ya da smithistir.
+
+356
+00:51:49,743 --> 00:51:56,083
+Gibi özellikler var. Yani bu dörtte ki şeyi tabii tanım ve değer hükümelerine göre nedir? İki özeti kurabayla birisiniz.
+
+357
+00:51:57,104 --> 00:52:03,275
+Toplamda 6, aslında genelde 7 tane ama toplamda 6 tane nedir? Temel özellik var test fonksiyonlarına ait. Bunu da bilmiş olalım.
+
+358
+00:52:11,987 --> 00:52:14,688
+Evet, şimdi geldik daha önemli bir yere.
+
+359
+00:52:15,827 --> 00:52:19,507
+Nedir? Ters fonksiyonun türevinin elde edilmesi.
+
+360
+00:52:21,507 --> 00:52:23,688
+Ters fonksiyonun türevinin elde edilmesi.
+
+361
+00:52:52,692 --> 00:52:57,652
+doğru diyorsunuz. Tamam. Peki o zaman aradayız arkadaşı aradan sonra devam ediyoruz. Tamam mı?
+
+362
+01:07:02,612 --> 01:07:03,992
+türev fonksiyonu türevi arkadaşlar.
+
+363
+01:07:06,931 --> 01:07:08,192
+Şimdi diyelim ki
+
+364
+01:07:08,192 --> 01:07:12,092
+eğer f'in tanı kümesi
+
+365
+01:07:12,092 --> 01:07:14,832
+ve üzerinde türevi var tabii
+
+366
+01:07:14,832 --> 01:07:16,012
+ve hiç sıfır olmuyorsa
+
+367
+01:07:16,012 --> 01:07:19,872
+eğer
+
+368
+01:07:19,872 --> 01:07:22,572
+şöyle yazalım
+
+369
+01:07:22,572 --> 01:07:24,372
+çok da böyle uzun yazmayı seviyorum ben ama
+
+370
+01:07:28,467 --> 01:07:29,467
+tanım kümesi,
+
+371
+01:07:31,827 --> 01:07:33,367
+F'nin tanım kümesini de verelim.
+
+372
+01:07:35,788 --> 01:07:37,987
+fx, türevi varsa değil mi?
+
+373
+01:07:40,947 --> 01:07:42,148
+ve hiç sıfır olmuyorsa,
+
+374
+01:07:49,811 --> 01:07:50,492
+öyle söyleyelim.
+
+375
+01:07:51,831 --> 01:07:55,412
+f' üzeri x'li 1'in, tanım hükümesinin noktasında türev uygulamaları belirtir.
+
+376
+01:07:56,412 --> 01:08:06,791
+f' üzeri x'li 1, tanım hükümesinin, öğretilen fonksiyonu, tanım hükümesinin, kendi tanım hükümesini veren.
+
+377
+01:08:10,931 --> 01:08:12,931
+her noktasında türev dönebilirdir.
+
+378
+01:08:23,988 --> 01:08:25,888
+Bunu yazmamızda fayda var.
+
+379
+01:08:28,468 --> 01:08:29,608
+Öyle ki aslında
+
+380
+01:08:29,608 --> 01:08:34,648
+f'üzyor x1'in tanokümesindeki bir
+
+381
+01:08:34,648 --> 01:08:38,308
+B noktasında f'üzyor x1 B değeri
+
+382
+01:08:38,308 --> 01:08:40,568
+göz önüne aldığımızda
+
+383
+01:08:40,568 --> 01:08:43,568
+fonksiyonun türevinin
+
+384
+01:08:43,568 --> 01:08:48,028
+A'şi f'üzyor x1 noktadaki değerinin çarpmaya göre ters şeklinde olacaktır.
+
+385
+01:08:49,716 --> 01:08:54,256
+Öyle ki, f üzeri eksi 1b eşittir.
+
+386
+01:08:55,536 --> 01:08:57,376
+Şunu biraz daha düzgün yazmamız lazım.
+
+387
+01:08:59,456 --> 01:09:01,275
+Ters ile ilgili çünkü ifademiz var.
+
+388
+01:09:15,380 --> 01:09:16,680
+[kişisel bilgi]
+
+389
+01:09:24,884 --> 01:09:27,764
+f'in türev'in f'ücüler x'i 1'deki değeri diyor arkadaşlar.
+
+390
+01:09:30,404 --> 01:09:31,844
+f'ücüler x'i 1'deki değer.
+
+391
+01:09:32,324 --> 01:09:33,724
+b eleman burada tabii,
+
+392
+01:09:35,244 --> 01:09:39,163
+d, of yani, tanrı hükümesi kimin f'ücüler x'i 1 değeri.
+
+393
+01:09:40,404 --> 01:09:44,844
+f'ücüler x'i 1'deki b, değil mi? tanrı hükümeteki değeri için bunu söyleyebiliriz.
+
+394
+01:09:46,003 --> 01:09:49,083
+Ve bunu da kısa olarak mesela şöyle yazabiliriz.
+
+395
+01:09:50,996 --> 01:09:52,615
+df üzeri eksi 1b.
+
+396
+01:09:54,756 --> 01:09:59,396
+Bunun dx'e göre türevli, tabii x eşittir b noktasındaki türevli.
+
+397
+01:10:00,655 --> 01:10:01,376
+Işittir.
+
+398
+01:10:03,056 --> 01:10:04,855
+1 bölü df bölü de x.
+
+399
+01:10:07,855 --> 01:10:10,615
+Bunun x eşittir, f üzeri eksi 1deki değer.
+
+400
+01:10:12,836 --> 01:10:13,855
+Kapıyı çeker mi?
+
+401
+01:10:18,676 --> 01:10:21,836
+x'estir, f'ler, eksi 1b'deki değer.
+
+402
+01:10:30,323 --> 01:10:31,863
+ve ne kadar x'i akvairimd.
+
+403
+01:10:40,020 --> 01:10:41,220
+Yani bu veya bu.
+
+404
+01:10:43,140 --> 01:10:43,600
+Bu şekilde.
+
+405
+01:10:45,600 --> 01:10:47,520
+F cerekli fonksiyonun
+
+406
+01:10:47,520 --> 01:10:51,700
+türenebilirliğini, değil mi? Söyledik de
+
+407
+01:10:51,700 --> 01:10:55,100
+türevinin de bu şekilde bulunan beceni de
+
+408
+01:10:55,100 --> 01:10:57,060
+söylemiş oluyoruz.
+
+409
+01:11:09,492 --> 01:11:26,872
+Tabii aslında bu ifadeyi görmek zor değil. Şöyle basit bir işlem yapacak olursak, yani f ve füzele x'i birin birleşik kesinin değil ne olduğunu, hani bir x altında x olduğunu biliyor.
+
+410
+01:11:26,872 --> 01:11:35,391
+Tabii ilk çeşitli ama burada f'in füzele x'i birinin tanı hükümeti, öyle düşünelim. Tabii iki tarafın türevini aldığımızda hani biraz zincir kuralı tabii göz önüne alacağız.
+
+411
+01:11:36,372 --> 01:11:44,612
+d bölü de x, f, f'cil x'ı 1x, bu tarafın türev 1 değil mi? Otomatik olarak onu hemen yazalım derseniz.
+
+412
+01:11:49,011 --> 01:11:49,451
+10.
+
+413
+01:11:58,355 --> 01:11:59,076
+konusur yazın.
+
+414
+01:12:04,275 --> 01:12:15,995
+Şimdi, sizli Kur'an'ı öğrenmiştik. Sizli Kur'an'ı bir sonraki sayfadaki şey yazacağım. Siz buraya bakın, yazan batan izleri ilave edin.
+
+415
+01:12:19,796 --> 01:12:20,836
+Şöyle geçiyorum.
+
+416
+01:12:22,396 --> 01:12:23,256
+Sizce kuralı ne dedi?
+
+417
+01:12:24,256 --> 01:12:27,935
+Kendisinin türevi çarpı, içinin türevi şeklinde hatırlarsanız.
+
+418
+01:12:27,935 --> 01:12:38,136
+Yani dış türev, f üstü, f üstü x1x, şöyle, çarpı d bölü de x, f üzeri x1x, bu.
+
+419
+01:12:38,775 --> 01:12:40,036
+Bu taraf yine 1.
+
+420
+01:12:40,775 --> 01:12:43,456
+Zaten bu ifade bizim aramak, bulmak istediğimizdir.
+
+421
+01:12:44,956 --> 01:12:45,956
+Buradan çözersek,
+
+422
+01:12:46,452 --> 01:13:02,952
+d bölü de x, f üzeri x'i 1x, eşittir. 1 bölü, f üstü, f üzeri x'i 1x, kosinüs.
+
+423
+01:13:05,952 --> 01:13:12,712
+Şu f üstüleri de biraz korkuyorum onları. Çok iyi.
+
+424
+01:13:16,372 --> 01:13:18,372
+Evet, türev, türev, türev.
+
+425
+01:13:25,811 --> 01:13:31,512
+Peki, mesela hemen şöyle de bir örneğini yapalım.
+
+426
+01:13:39,859 --> 01:13:45,399
+y eşitir x kare fonksiyonunun x büyügeçte 0 için türevini bulalım, değil mi?
+
+427
+01:13:46,959 --> 01:13:49,279
+Aslında bunun ters fonksiyonu
+
+428
+01:13:49,279 --> 01:13:53,779
+tersi
+
+429
+01:13:53,779 --> 01:13:58,139
+y eşitir kök x'dir.
+
+430
+01:13:58,619 --> 01:14:00,559
+Yani f üzeri eksi 1 x diyelim sizsiniz.
+
+431
+01:14:01,299 --> 01:14:02,059
+Şöyle yazalım.
+
+432
+01:14:02,939 --> 01:14:03,500
+Kök x diye.
+
+433
+01:14:07,188 --> 01:14:11,788
+Şimdi aslında biz fc-1 yani kök x'in türevini direkt biliyoruz.
+
+434
+01:14:12,307 --> 01:14:19,788
+Ve burada fc-1 x'in türevini tabii, direkt f üst ediyoruz aslında.
+
+435
+01:14:24,851 --> 01:14:26,931
+eşittir 1 bölü 2x.
+
+436
+01:14:29,332 --> 01:14:33,431
+Şimdi buradaki, biraz önce yaptığımız işlemi uğrarsak aslında,
+
+437
+01:14:35,051 --> 01:14:39,631
+f'üceri eksi 1 fonksiyonunun türevi,
+
+438
+01:14:40,532 --> 01:14:45,092
+1 bölü f üstü, f'üceri eksi 1x.
+
+439
+01:14:45,871 --> 01:14:46,711
+Değil mi? Böyle derse.
+
+440
+01:14:48,612 --> 01:14:50,192
+Dolayısıyla bu eşittir.
+
+441
+01:14:50,676 --> 01:14:52,216
+Utre ifadesi aslında
+
+442
+01:14:52,216 --> 01:14:53,916
+y-h-tü x-kara-y-tüleri kimdir?
+
+443
+01:14:53,996 --> 01:14:55,615
+f-üstü dediğimiz 2x'tir değil mi?
+
+444
+01:14:56,936 --> 01:14:58,076
+Yani 1 bölü 2
+
+445
+01:14:58,076 --> 01:15:01,416
+f-ücül x-1x
+
+446
+01:15:01,416 --> 01:15:04,076
+Şöyle plantez edelim daha iyi olsun.
+
+447
+01:15:09,555 --> 01:15:19,627
+f'
+
+448
+01:15:35,956 --> 01:15:47,395
+Çünkü fonksiyonun türevi, fx türevi 2x olduğu için, onu buraya yazdık, onu dikkat edelim. Buradan buraya geçerken, bu ifadenin türevi, şöyle şey yapalım.
+
+449
+01:16:02,996 --> 01:16:04,268
+x kare artı 2x, f'
+
+450
+01:16:08,115 --> 01:16:10,115
+f' 6x' çöldeç.
+
+451
+01:16:18,260 --> 01:16:19,260
+bu konuları kullanır.
+
+452
+01:16:27,988 --> 01:16:38,668
+Tabii. Şimdi x kare fonksiyonu verildiğinde, aslında biz tanımı uygularak geldik, buraya bulduk, direkt bunu belki de bulmayacağız onu.
+
+453
+01:16:38,668 --> 01:16:44,028
+Yani uygulakan direkt bir önceki sayfada bir örtemimiz, direkt eşitliği vereceğiz. O da bununla aynı sıra.
+
+454
+01:16:44,884 --> 01:16:49,484
+ters fonksiyon türev isi 1 bölü f üstü, kimin f üstü 1x?
+
+455
+01:16:49,484 --> 01:16:55,884
+Biz f üstünün türevinin ne olduğunu geliştirdik. f x² verilmiş, 10 türev 2x.
+
+456
+01:16:55,884 --> 01:17:01,484
+2x yazsak ama x'in neredeki değeri? x'in f üstü 1x'teki değeri, değil mi?
+
+457
+01:17:01,484 --> 01:17:09,083
+Koyduğumuz zaman x'e ancak bu türev bunu karşılayacak. O yüzden 1 bölü 2 köpük ifadesi de oradan geliyor.
+
+458
+01:17:09,268 --> 01:17:18,228
+Yani şu sayılı bir ötevini zaten, bakın. f üstü türevi, f üstü 2x, kimin türevi? fx'imiz burada kim? x kare. fx x kare.
+
+459
+01:17:21,048 --> 01:17:33,188
+Değil mi? Onun türevi, f üstü 2x, 2, f üstü 2x, 2x de bu. Onu buraya yazdık. Tamam mı? Onun neredeki değeri? f üstü 1x'teki değeri. Biz f üstü 1x'i biliyoruz zaten, bakın.
+
+460
+01:17:34,468 --> 01:17:35,028
+Kök x.
+
+461
+01:17:35,475 --> 01:17:41,931
+direkt türev değerine getirip x'lerini f'
+
+462
+01:17:44,948 --> 01:17:46,028
+Başka bir örnek verelim.
+
+463
+01:17:46,628 --> 01:17:47,948
+Biraz daha...
+
+464
+01:17:48,908 --> 01:17:50,948
+İsteyen muhtalı bir...
+
+465
+01:17:50,948 --> 01:17:52,588
+Örnek olsun.
+
+466
+01:18:09,619 --> 01:18:14,119
+örnek, fx' x' x' x' 2.
+
+467
+01:18:21,300 --> 01:18:21,640
+olsun.
+
+468
+01:18:24,640 --> 01:18:25,720
+Türevin
+
+469
+01:18:36,115 --> 01:18:38,396
+bastaki değeri bulalım. Direkt şöyle diyelim.
+
+470
+01:18:41,095 --> 01:18:42,235
+Tersinin türevini
+
+471
+01:18:42,235 --> 01:18:46,155
+şöyle yazmak lazım bana.
+
+472
+01:18:51,252 --> 01:18:54,752
+tersinin, türevinin altındaki değerini buluruz.
+
+473
+01:19:00,659 --> 01:19:02,460
+tersini, türev'in alttaki değerini bulursun.
+
+474
+01:19:03,180 --> 01:19:07,979
+Şimdi fonksiyonu tabii, önce 6'ya veren değil mi? x değerini bulmamız lazım.
+
+475
+01:19:08,979 --> 01:19:09,340
+Doğru mu?
+
+476
+01:19:10,940 --> 01:19:11,979
+Ona bakabilirsiniz aslında.
+
+477
+01:19:19,028 --> 01:19:23,808
+Bir defa f üstü x ifademiz zaten 3x kare değil mi?
+
+478
+01:19:26,488 --> 01:19:30,908
+Burada 6'yı veren x değeri nedir?
+
+479
+01:19:31,968 --> 01:19:36,568
+Yani 3x kök eksi 2 eşit 6 ifadesinde değil mi?
+
+480
+01:19:40,068 --> 01:19:41,248
+Nereden çıktı ya?
+
+481
+01:19:45,971 --> 01:19:51,471
+x kub. x kub eşittir 8 ve burada da x eşittir net 2 değil mi?
+
+482
+01:19:54,412 --> 01:19:59,351
+Halde bu ifadenin, türevin, neredeki 2'deki değeri nedir? 12'dir.
+
+483
+01:20:06,739 --> 01:20:08,739
+Şimdi aslında...
+
+484
+01:20:15,699 --> 01:20:19,579
+Direkt kalsın sonucun 1 bölü 12 olduğunu buradan hemen görebilirsiniz.
+
+485
+01:20:19,579 --> 01:20:20,939
+Yazıyorum.
+
+486
+01:20:21,699 --> 01:20:32,899
+df bölü dx, pardon dv üzeri f eksi 1 bölü dx, x eşittir f'in 2'deki değeri, yani alttaki değeri aslında bir anlamda.
+
+487
+01:20:33,959 --> 01:20:36,000
+Bu ifade zaten 3x kare değil miydi?
+
+488
+01:20:37,059 --> 01:20:43,340
+1 bölü 3x kare, x'in neredeki değeri? x'in 2'deki değeri.
+
+489
+01:20:45,235 --> 01:20:48,796
+1 bölü 3x4 eşit 1 bölü 12.
+
+490
+01:20:50,615 --> 01:20:50,876
+Tamam.
+
+491
+01:20:51,876 --> 01:20:53,456
+Türevin buradaki değer.
+
+492
+01:21:42,676 --> 01:21:54,576
+Bir kez de mesela x kare artı x fonksiyonu. x kare artı x fonksiyonunun ne diyelim, birebir olduğunu gösterip tersinin türevinin ondaki değerini bulunuz.
+
+493
+01:21:57,275 --> 01:21:58,556
+x kare artı x
+
+494
+01:22:02,963 --> 01:22:03,683
+örnek.
+
+495
+01:22:07,220 --> 01:22:09,220
+f'leşti x küp artı x olsun.
+
+496
+01:22:11,060 --> 01:22:14,460
+Buradan mesela bunun tersinin olup olmadığını nereden bulabiliriz?
+
+497
+01:22:15,640 --> 01:22:23,079
+f'leşti x'e 3x kare artı 1 değil mi? x ne olursa olsun, her x için bu nedir? Pozitiftir.
+
+498
+01:22:24,640 --> 01:22:26,780
+Dolayısıyla f bire bir
+
+499
+01:22:30,547 --> 01:22:33,247
+ve f'i z'i eksi 1 var, mevcut.
+
+500
+01:22:34,507 --> 01:22:35,847
+f'i z'i eksi 1 bulunabilir.
+
+501
+01:22:36,708 --> 01:22:40,927
+Tamam mı? Birinci, bir kısasımız da o.
+
+502
+01:22:50,068 --> 01:22:57,568
+Bir önceki örneği mi? Tamam, bir öncekini anlatayım isterseniz. Tamam. Bakın, hatta sarıyla şöyle yazayım kısmını.
+
+503
+01:22:59,568 --> 01:23:05,768
+f'üstü x nerede lazım olacak? f'üstü x'e aslında 12. Aslında biz bunu bulmadan, burada zaten bunu bulup, burada yazmaya gerek yok.
+
+504
+01:23:06,247 --> 01:23:15,568
+Direkt getirip bir yerini yazacaktık. Ama formülü bize ne diyordu? Şöyle yazayım. f'üzeri eksi 1'in türevinin.
+
+505
+01:23:16,307 --> 01:23:18,988
+türevin neredeki? b'deki değeri değil mi?
+
+506
+01:23:18,988 --> 01:23:28,587
+eşittir. 1 bölü f'in f üzeri eksi 1, b'deki değerin türevi.
+
+507
+01:23:28,587 --> 01:23:31,747
+Biz burada bakın f üstü x'i kullandık tamam mı burada?
+
+508
+01:23:31,747 --> 01:23:36,868
+f kim? x küp eksi 2. Onun türevi kim? 3x kare değil.
+
+509
+01:23:36,868 --> 01:23:43,188
+Zaten burada bulduk yani. Burada kullanmamız gerekiyordu. Burada dilek kullanabilir.
+
+510
+01:23:43,444 --> 01:23:49,043
+Çünkü x eşit 2 noktasını bulduğumuz için değil mi? x eşit 2 noktasının değeri 12.
+
+511
+01:23:49,604 --> 01:23:56,724
+Bu aslında ifadenin tabii f2 eşitleri nedir aslında değil mi? Baktığımız zaman altıdaki değeri aslında değil mi?
+
+512
+01:23:57,363 --> 01:24:06,324
+f2 dediğimiz, x'in altıdaki değeri aslında. Ona dikkat edin. Ama direkt biz f eşit'i kullandığımız için x'in ikideki değerini kullanıyoruz. Ona dikkat edin.
+
+513
+01:24:31,796 --> 01:24:44,652
+x kare artı 2x, f'
+
+514
+01:24:48,787 --> 01:25:15,768
+Şimdi burada tabii arkadaşlar, bakın, şu sarıyla yazan formüle dikkat edin, değil mi? Ters fonksiyonun, türevinin, değil mi? Bulunması, işte. Bu f'ücül eksi 1b, bu f'ücül eksi x'i buluyoruz ama aslında o f'ücül eksi 1b. Yani x'eşit 2'deki değer aslında x'eşit 2 için neye denk gelmiş hali? 6'ya denk gelmiş hali aslında. Ona örtüşüyor.
+
+515
+01:25:16,692 --> 01:25:26,631
+Şimdi bakın bir sonraki örnekte de şey yapacağımı daha iyi anlarsanız. Burada sayfamız asfiyonlar, sayfayı asfiyonlar, olsun devam edelim. Bir daha yazarız.
+
+516
+01:25:26,631 --> 01:25:32,271
+f x eşittir, x küp artı x. Bir daha yazayım.
+
+517
+01:25:34,672 --> 01:25:41,672
+f x eşittir, x küp artı x ise
+
+518
+01:25:42,127 --> 01:25:54,047
+f'in tersinin, türevinin, yani tersini bulmadan türevinin bulmak amaç burada. Yani tersini zaten, ters fonksiyonu bulursanız, türevi bulmak kolay arkadaşlar. Onu söyleyeyim.
+
+519
+01:25:55,688 --> 01:26:04,307
+Bunun buradaki değerini bulmak istiyor değil mi şimdi? Şu an de biz 10 değerini veren, x değerini burada bulabilir miyiz? Değil mi? Ona bakabiliriz yani. Onu bir araştıralım.
+
+520
+01:26:04,948 --> 01:26:25,208
+Bir düşünün bakalım. Ama burada ben x'leştir f'yi v' adresini de kullanıp y'şü'yü bulabilirim ama ona veren x'liğeri nedir burada? Yani onu belki soruyu sorarken, soru da verilmiş gerçi de. Soru da verilmiş. Onu biraz kendiniz de anı isterseniz bulabilirsiniz aslında. Onu mutlaka oradan bulabilirsiniz.
+
+521
+01:26:45,908 --> 01:26:57,228
+Sonuç mu? Ha, 2 doğru, evet, 2. X, T, R, 2. İşte türevini yazıp, bunun türevini bulup, bir türevi yazıyoruz ya, orada x, T, R, 2'yi kullandığınız zaman onu bulursunuz.
+
+522
+01:26:57,948 --> 01:27:04,548
+Burada x, T, R'lerin terimleri karışık. Bir terim, bir şey daha gösterebilirim.
+
+523
+01:27:05,011 --> 01:27:29,412
+Yani x eşit f'ye yazıp oradan hareket edebilirsiniz belki. Türev'in oradaki değerini hani buradaki notasyon bakımında düşündüğünüz zaman hani b dedin ki deniz, b deniz, ha b'yi niye kullanmadık falan. Ya kullanıyoruz aslında. O b'yi veren o ifadeye bakıyor. Değişkenleri değiştiriyorsunuz çünkü aslında. Buradan, f, iki değeri, küp o.
+
+524
+01:27:29,971 --> 01:27:50,511
+x'imiz burada o. O zaman f üzeri, f üzeri x'i 1, bakın tersini bulmadan, türevinin, ondaki değeri eşittir, bir bölüm, kim bu? Bu türev, bunun türevi kim? 3x kare artı 1 değil mi? 3x kare artı 1, ben burada 2'yi bulmuştum ya, bunun x'e eşittir 2'deki değeri arkadaşlar.
+
+525
+01:27:51,431 --> 01:27:56,152
+Bunun x'e eşittir 2'deki değeri, bakın, tamam mı? Direkt böyle yazabilirsiniz. Eşittir.
+
+526
+01:27:56,528 --> 01:28:02,747
+1 bölü ne olur? 4 artı 13 olur. 12 artı 13 olur. Bu kadar kolay yani.
+
+527
+01:28:04,568 --> 01:28:11,628
+Fonksiyonun türevini, 1 bölüsünün, onun x'i için bu noktayı veren, tabii değeri bulup o noktadaki değerini hesaplıyorsun. Başka bir şey değil yani.
+
+528
+01:28:22,260 --> 01:28:25,180
+Orada x değerini bulmak için, x eşçinin 2 değerini bulmak için.
+
+529
+01:28:26,420 --> 01:28:27,020
+Tamam mı?
+
+530
+01:28:27,980 --> 01:28:30,700
+Hani x'i bulacağız ya, x 2 ya. Bazen bu dilek verilir.
+
+531
+01:28:31,500 --> 01:28:33,980
+Burada, yani bazen verilir, bazen verilmez.
+
+532
+01:28:34,220 --> 01:28:36,860
+Hani x'in hangi değerleri için değil mi? 10 olur.
+
+533
+01:28:37,300 --> 01:28:39,819
+Birden fazla değer için de tabii 10 verebilir çünkü.
+
+534
+01:28:40,060 --> 01:28:43,060
+Ama bu aslında birebir fonksiyonu zaten söyledik, başka değeri olmaz.
+
+535
+01:28:43,420 --> 01:28:45,020
+x eşçinin 2 için ancak 10 olur.
+
+536
+01:28:47,188 --> 01:28:49,908
+oradan şu iki değerini bulmak için. Değil mi?
+
+537
+01:28:49,908 --> 01:28:53,188
+Babada bazen hazır verilir, bazen verilmez diye biz onu buluruz.
+
+538
+01:28:58,836 --> 01:29:08,355
+Peki. Herhalde anlaşılacağım. Bundan sonra tabii kısımlar da mutlaka daha fazla. Örnek de çözeriz. Hiç sorun değil, hiç önemli değil.
+
+539
+01:29:10,115 --> 01:29:15,176
+Şimdi logaritma başka fonksiyon türlerine geçelim arkadaşlar.
+
+540
+01:29:37,235 --> 01:29:41,216
+Bu soru da aslında 2 verilmiş ama siz buradan x kibar artı x eşittir değil mi?
+
+541
+01:29:41,855 --> 01:29:43,335
+Yani şöyle ordu çözeceksiniz işte.
+
+542
+01:29:44,275 --> 01:29:46,155
+Tabii o denklem 3. derece bir denklem.
+
+543
+01:29:56,948 --> 01:30:06,507
+Bu denkle misalelerin x'lerin kümesi yani x'ler biraz değer verirsiniz. Bunun başka teknikleri var tabi bu rupundayım. Zor da olsa az da olur. Çok da olsa teknikleri var.
+
+544
+01:30:15,347 --> 01:30:20,587
+tersini bulamazsınız. Bu fonksiyon tersini maklumada kolay değil. Bazı fonksiyon tersini bulmak çok kolay değil arkadaşlar.
+
+545
+01:30:21,307 --> 01:30:21,907
+Tamam mı?
+
+546
+01:30:23,587 --> 01:30:30,188
+O yüzden de zaten hani terslerini bulmasak bile, fonksiyonlar terslerini bulmasak bile ne yapabiliriz?
+
+547
+01:30:30,467 --> 01:30:34,028
+İşte şeylerin türevlerini elde edebiliyoruz. Tamam mı? Amaç o zaten.
+
+548
+01:30:38,068 --> 01:30:38,568
+Evet.
+
+549
+01:30:44,083 --> 01:30:47,903
+log-optic tepsi'ye fonksiyonlar diyelim.
+
+550
+01:30:50,043 --> 01:30:52,783
+İçeri yazalım, kırmızıyı da başlayalım yine.
+
+551
+01:30:58,515 --> 01:31:02,515
+yaparız daha, örnek yaparız arkadaşlar. Siz bunları şimdilik bu kadar anlamaya çalışın.
+
+552
+01:31:04,475 --> 01:31:05,175
+Yaparız örnek.
+
+553
+01:31:24,243 --> 01:31:31,243
+Şimdi fonksiyonlarda arkadaşlar zaten bilgimiz var değil mi? Yani liseden gelen zaten belli bir bilgimiz var aslında.
+
+554
+01:31:34,996 --> 01:31:35,796
+diğer yandan,
+
+555
+01:31:54,323 --> 01:32:07,323
+Bu fonksiyonlar aslında göreceğimiz gibi birbirlerinin tersleri olan fonksiyonlar. Biraz önce ters fonksiyonu falan gördük ki, biri fx dediği yeri, bir de onun f üstü eksi 1x olan fonksiyonu.
+
+556
+01:32:07,323 --> 01:32:12,323
+Bunları tabii tanımlarken ya da kullanırken işlemler arasında, cbc işlemleri de.
+
+557
+01:32:12,916 --> 01:32:16,796
+gerek logaritma kuralları, gerek üst kuralları nedir, onları bilmemiz lazım.
+
+558
+01:32:16,796 --> 01:32:19,916
+Zaman zaman burada bazılarını da tanıtlatacağım ben size.
+
+559
+01:32:19,916 --> 01:32:28,916
+Sizden de onları tekrar tekrar ne yapmalıyız, eğer hatırlamıyorsanız, bir geriye dönüp notlarınızı karıştırıp, bir diğer notlarınızı hazırlandığınız,
+
+560
+01:32:28,916 --> 01:32:32,916
+üniversiteye ilgili sınav nasıl kaldığınız notlarınızı mutlaka bir karıştırmanızda fayda var.
+
+561
+01:32:32,916 --> 01:32:39,916
+Şimdi önce doğal logaritmadan bahsedeceğim. Yani, eterna tıklı logaritmadan da elenik istediğimiz ifade aslında.
+
+562
+01:32:48,659 --> 01:32:55,859
+Genelde aslında logotip fonksiyon tanımlanır. Sonra doğal logotip tanımlanır. Bazı kaynaklar da öyle. Burada öyle almış. Ben de öyle alacağım.
+
+563
+01:32:56,659 --> 01:33:05,939
+Yani ifade, direk tanım şöyle bir aslında belirli bir integral verilmiş ama çok da ne değil. Aslında çok da hoş değil yani böyle direk bir belirli. Çünkü integral herhalde ediyoruz.
+
+564
+01:33:06,579 --> 01:33:15,299
+Yani onu şöyle alacağım. ix diyelim. Öbürüne de x'i x diyelim. Evet x büyük eşittir.
+
+565
+01:33:16,595 --> 01:33:22,495
+1 ise, x sıfırla 1 arasında ise, şöyleyiz.
+
+566
+01:33:28,979 --> 01:33:30,000
+x cermci eriş.
+
+567
+01:33:45,140 --> 01:33:48,600
+x' büyükleştirilir ise x sıfırda bir asıl hatı x'i x diyelim, evet.
+
+568
+01:33:53,076 --> 01:33:56,756
+Şurada o zaman içtiği kalırım. Sıfırda aslında tanım değil, onu yanlış yazdım zaten.
+
+569
+01:33:57,435 --> 01:33:59,316
+Biri de yukarıya verdiğimize göre burayı almayalım.
+
+570
+01:34:00,056 --> 01:34:00,296
+Şöyle.
+
+571
+01:34:02,656 --> 01:34:07,036
+Şimdi buradaki ax ve asla birer alanı gösteriyor bize arkadaşlar.
+
+572
+01:34:07,916 --> 01:34:10,476
+Şöyle ben iki tane grafik çizeceğim şuraya yan tarafa.
+
+573
+01:34:12,476 --> 01:34:15,536
+Hatta aynı grafik üzerinde de gösterebilir belki ama o zor olabilir.
+
+574
+01:34:16,015 --> 01:34:17,275
+Ben adam bir tanesini göstereyim.
+
+575
+01:34:21,876 --> 01:34:24,476
+değişken olarak, hani, y eşittir.
+
+576
+01:34:26,816 --> 01:34:29,935
+1 bölü t fonksiyonunu aldığımızda,
+
+577
+01:34:31,056 --> 01:34:31,216
+o,
+
+578
+01:34:32,515 --> 01:34:33,595
+p-7 moduna geçelim.
+
+579
+01:34:37,203 --> 01:34:53,064
+Şöyle diyelim, tamam mı? Bunun mesela 1 neresi olsun? Şurası 1 olsun. 1 ile x arasında herhangi bir x değil mi? 1'den büyük olan x'ler için şöyle diyelim. Bu eğri altında kalan alan arkadaşlar.
+
+580
+01:34:57,140 --> 01:34:59,140
+x kare artı 2x, f'nin de sınırlı.
+
+581
+01:34:59,140 --> 01:35:01,140
+Onu düzgün çizeyim de tabii.
+
+582
+01:35:04,140 --> 01:35:05,140
+Biri böyle.
+
+583
+01:35:05,140 --> 01:35:07,140
+Biri de şöyle çizeyim.
+
+584
+01:35:13,619 --> 01:35:14,960
+A2 dediğim arkadaşlar burası.
+
+585
+01:35:17,279 --> 01:35:17,720
+Evet, tamam.
+
+586
+01:35:23,731 --> 01:35:31,172
+x eğer birden küçük ise o zaman şuradaki alanın negatifliği ise olacak, tamamlayacak. O zaman tabi bölge grafik olarak 6 ayınlıyor zaten.
+
+587
+01:35:32,172 --> 01:35:36,531
+Şurayı nasıl tanımlayalım? Yine bir doğru iletizelim şöyle.
+
+588
+01:35:44,851 --> 01:35:46,111
+birazcık kare artı gibi.
+
+589
+01:35:46,891 --> 01:35:48,311
+Sadece şuna kisi çektireceğim.
+
+590
+01:35:57,363 --> 01:35:57,863
+gibi.
+
+591
+01:36:01,908 --> 01:36:04,148
+Burayı da şöyle ne yapayım? Başka denk yapalım.
+
+592
+01:36:04,768 --> 01:36:05,368
+Bu da şöyle bir şey.
+
+593
+01:36:10,420 --> 01:36:14,840
+x1'den küçük olduğu zaman bu x kare olacak, onun ters şartesi, tamam mı?
+
+594
+01:36:18,771 --> 01:36:19,791
+Buradan alanını gösteriyor.
+
+595
+01:36:21,072 --> 01:36:22,851
+Böyle tanımlanan bir fonksiyon.
+
+596
+01:36:22,912 --> 01:36:28,471
+Aslında hani belirli integralda baktığınız zaman, bu bizim daha henüz integral görmediği için söyleyemiyorum.
+
+597
+01:36:29,332 --> 01:36:30,652
+Bu fonksiyonumuz
+
+598
+01:36:30,652 --> 01:36:37,711
+y eşittir, bir bölü t eğrisi.
+
+599
+01:36:38,231 --> 01:36:40,931
+Aslında baktığınız zaman ax'ı fademi şöyle tanımlanabilir.
+
+600
+01:36:42,051 --> 01:36:45,152
+İşte nereden? 1'den x'e kadar
+
+601
+01:36:45,648 --> 01:36:49,927
+1 bölü t dt. Böyle bir belirli integral tanımlanıyor.
+
+602
+01:36:51,488 --> 01:36:58,288
+Bunu şöyle yazarsanız, tabii x birden küçük olduğu zaman, bunun ters şartısına baktığınız zaman eşittir.
+
+603
+01:36:59,888 --> 01:37:04,468
+Eksi, x'den 1'e 1 bölü t dt.
+
+604
+01:37:07,347 --> 01:37:19,528
+Tamam mı? Demek ki bu integral tabii bu bize alan vereceği için bu alanın negatifisi tabii. Değer olarak bize neyi verecektir? Bu L'nx fonksiyonu tanımlayacaktır. Böyle de bir tanımlama işlemi var.
+
+605
+01:37:46,387 --> 01:37:50,147
+Şimdi bu fonksiyonun grafiği arkadaşlar şöyle bir fonksiyondur.
+
+606
+01:37:56,340 --> 01:37:59,020
+Buradan çizelim diyeceğim ama
+
+607
+01:37:59,020 --> 01:38:01,840
+çizelim, evet.
+
+608
+01:38:03,720 --> 01:38:05,319
+Direkt siyahat çizelim.
+
+609
+01:38:06,119 --> 01:38:07,380
+Fonksiyonlarımızın grafini çizelim.
+
+610
+01:38:14,131 --> 01:38:18,311
+1'deki de 0, şöyle bir fonksiyondur. Bu y eşittir.
+
+611
+01:38:19,751 --> 01:38:20,871
+L'in x fonksiyonunu bırak.
+
+612
+01:38:22,511 --> 01:38:24,871
+Şimdi net bir özellikleri var.
+
+613
+01:38:25,572 --> 01:38:27,572
+Yapı artan. Değil mi?
+
+614
+01:38:29,072 --> 01:38:29,831
+Buradan gözüküyor.
+
+615
+01:38:30,851 --> 01:38:32,611
+0 ile 1 arasında negatif değerli.
+
+616
+01:38:33,271 --> 01:38:34,152
+0 da tamam değil.
+
+617
+01:38:35,031 --> 01:38:36,451
+1'den büyük, 1'de 0 zaten.
+
+618
+01:38:36,631 --> 01:38:38,131
+1'den büyük değerler de nedir?
+
+619
+01:38:38,771 --> 01:38:40,731
+İşte gördüğünüz gibi pozitif değerimiz değil mi?
+
+620
+01:38:41,939 --> 01:38:44,759
+ve tabii sıfır sonsuz aralığında tarım olur.
+
+621
+01:38:56,148 --> 01:38:56,908
+x kare artı 2x, f'
+
+622
+01:39:04,627 --> 01:39:08,747
+0-1 üzerinde negatif değerli.
+
+623
+01:39:14,836 --> 01:39:19,195
+bir sonsuz üyerinde, postittir.
+
+624
+01:39:29,923 --> 01:39:40,923
+x kare artı 2x, f'
+
+625
+01:39:29,268 --> 01:39:33,827
+Zaten pozitif sayıları değil mi? Negatif sayıları, logaritma, yok işte tanımlandı itibariyle falan baktığınız zaman.
+
+626
+01:39:34,567 --> 01:39:39,268
+Dolayısıyla türevini aldığımızda aslında türevinin birbirlik su olduğunu kolayca görebiliriz.
+
+627
+01:39:45,847 --> 01:39:48,847
+x kare artı 2x, f'
+
+628
+01:39:44,115 --> 01:39:47,095
+Sonra ben dilekleyelim. İspatını aynı şekilde tabii yapacağız.
+
+629
+01:39:52,844 --> 01:39:54,963
+x kare artı 2x, f'
+
+630
+01:39:51,123 --> 01:39:57,043
+y eşittir, lnx ise, y üstü eşittir, 1 bölü x.
+
+631
+01:40:05,555 --> 01:40:12,215
+Tamamlayış sorayı. Sıkıntı yok, hiç adalet etmemize gerek yok.
+
+632
+01:40:13,175 --> 01:40:23,255
+Tabi türev tanıma uyguladığımızda işte bir limit ifadesi karşımıza gelecek. O limit ifadesinin işte 1 bölü 1 x artı x ile 1 x artı h ile 1 bölü x arasında kaldığını göreceğiz.
+
+633
+01:40:24,315 --> 01:40:29,675
+Sağdan soldan tabi limit ifadesi bize aslında o limitin bize birbiri x'e yanaştırdığını göreceğiz.
+
+634
+01:40:44,916 --> 01:41:07,015
+Yer yüzü türevi bu arkadaşlar. Türevin bulunmasında aslında hani integral tanımını yazdık. Orada daha sonra göreceğimiz kalkıp üstün temel teoremi var. O teoremin kısmına göre belirli integral türevi bize direkt bir bölüksinir. Bak, türevi tanımından bulacağımız için o iyi işe geliyorum. O türevi tanımına tekrar girmemize gerek yok.
+
+635
+01:41:09,811 --> 01:41:19,252
+L'n içinde bir u gibi bir fonksiyon varsa, değil mi? Yani ux'likinde bir birleşik fonksiyonu tarzı varsa, o zaman türev biraz daha farklı tabii, göz önüne alacağız.
+
+636
+01:41:20,692 --> 01:41:31,051
+Fonu görüyorum. y eşittir, L'n u ise y üstü türev eşittir. Yani u üstü bölü aslında, değil mi? Basit demek lazım yani.
+
+637
+01:41:32,332 --> 01:41:36,531
+Hatta şöyle yazalım, 1 bölü u çarpı u üstü ya da dv bölü x.
+
+638
+01:41:38,131 --> 01:41:42,131
+Ya da u üstü bölü u.
+
+639
+01:41:43,131 --> 01:41:45,131
+Bu da u pozitif.
+
+640
+01:41:47,131 --> 01:41:48,131
+Birbiri o bu.
+
+641
+01:41:48,131 --> 01:41:49,291
+Dolu bir x.
+
+642
+01:41:54,735 --> 01:42:10,735
+u3 bölü u.
+
+643
+01:41:53,395 --> 01:41:58,895
+Bunun pozisyonu olması lazım yoksa elini değil mi? Logo etmesi, doğal logo etmesi tamın olmaz. Mutlaka ona leğmen lazım.
+
+644
+01:42:00,775 --> 01:42:01,956
+Bir an atıyorum örneğin.
+
+645
+01:42:05,155 --> 01:42:07,575
+Elin 2x ise
+
+646
+01:42:07,575 --> 01:42:10,515
+y eşittir diyelim seçeriz.
+
+647
+01:42:11,796 --> 01:42:12,935
+y üstü eşittir.
+
+648
+01:42:14,555 --> 01:42:17,335
+1 bölü 2x çarpı
+
+649
+01:42:18,003 --> 01:42:26,003
+2x'in türevi değil mi? d bölü d x, 2x. 2 elde edeyim, 1 bölü x. İkiler f'a eleşir çünkü bakın.
+
+650
+01:42:26,003 --> 01:42:43,003
+Burada şöyle bir şey karşımda çıkıyor. Tüm ln mx'lerin türevleri, hatta mx artı 1 olma, ln mx'lerin türevleri, lnx'in türeviyle aynı değil mi? Onun türeviyyle aynı.
+
+651
+01:42:46,100 --> 01:42:47,260
+Onu söyleyebiliriz.
+
+652
+01:42:48,620 --> 01:42:49,220
+Öte yandan,
+
+653
+01:42:50,860 --> 01:42:53,540
+eğer y eşittir, ne olsun mesela? x küp
+
+654
+01:42:53,540 --> 01:42:56,300
+artı x elin içerisinde, elen
+
+655
+01:42:56,300 --> 01:42:58,780
+x küp artı x olsun.
+
+656
+01:42:59,620 --> 01:43:00,980
+3 mü? 3'müş.
+
+657
+01:43:00,980 --> 01:43:03,260
+Sonuçlara karşılaşmak açısından.
+
+658
+01:43:06,240 --> 01:43:06,540
+ise,
+
+659
+01:43:08,100 --> 01:43:09,260
+y üstü ifadesi,
+
+660
+01:43:10,140 --> 01:43:11,500
+1 bölü x küp artı
+
+661
+01:43:11,500 --> 01:43:13,260
+3
+
+662
+01:43:13,876 --> 01:43:24,355
+çarpı bunun türevi. t bölü de x, x küp artı 3. Yani 3x kare, değil mi? 3x kare bölü x küp artı 3.
+
+663
+01:43:29,235 --> 01:43:33,575
+fiziksel bölü, x kare artı 3. Yanlış mı yazdık?
+
+664
+01:43:38,292 --> 01:43:42,212
+Bu da x kare ürüncü, önemli değil. x kare, bu da x'ı baratı 3.
+
+665
+01:43:47,604 --> 01:44:04,604
+Şimdi o açlıkta verdiğimiz tabi örnek önemliydi aslında, biraz önce söyledim. Buradan herhangi elen bx'in türevinde biri böyle b olduğunu görüyoruz. Tabi bx pozisyonu koşuyor değil mi? bx tabi ne zaman pozisyon olur? x'in...
+
+666
+01:44:11,412 --> 01:44:12,971
+şöyle şöyle bir yıldız kayalım.
+
+667
+01:44:13,432 --> 01:44:16,292
+bx büyük eşi sıfır koşuluyla
+
+668
+01:44:16,292 --> 01:44:19,932
+y eştir, Lm bx'i yazılan doğrudur değil mi?
+
+669
+01:44:23,311 --> 01:44:23,952
+Tarımlanır.
+
+670
+01:44:24,372 --> 01:44:25,471
+Ve bunun türevinin de
+
+671
+01:44:29,108 --> 01:44:33,347
+1 bölü x olduğunu yukarıda aslında söyledikten bulduk.
+
+672
+01:44:34,808 --> 01:44:43,988
+Öte yandan, eğer x ile y, başka türlü de buranın pozitif olması mümkün olabilir.
+
+673
+01:44:44,528 --> 01:44:47,028
+Burada b pozitifken bunu hemen söyleyebiliyoruz.
+
+674
+01:44:49,988 --> 01:44:54,087
+x ile b birlikte negatif olduğu zaman da bx pozitif olur.
+
+675
+01:44:55,572 --> 01:45:03,012
+b negatif ve x negatif iken, yine bx pozitif olur.
+
+676
+01:45:05,731 --> 01:45:09,971
+Dolayısıyla aynı denklem, aynı türev uygulamaları geçeridir. Yani yüçü eşittir.
+
+677
+01:45:11,072 --> 01:45:13,931
+yüçü eşittir, bir bölük soktu yine bir şekilde.
+
+678
+01:45:18,003 --> 01:45:28,703
+Diğer yandan, özellikle eğer x'i negatif, b'yi de eksi 1 olarak seçersek, x negatif ve b'yi de eksi 1 olsun.
+
+679
+01:45:32,467 --> 01:45:40,448
+Bu durumda tabii türev ifademiz yine 1 bölü x ama x tabii negatif olacak. O zaman ne oldu? Eğimler ne oldu dedim. Negatif oldu buna dikkat edin.
+
+680
+01:45:42,048 --> 01:45:50,407
+D bölü de x ln, eksi x eşittir. Yani ifademiz bu. Böyle seçtik. Bunun türev de 1 bölü x.
+
+681
+01:45:58,323 --> 01:46:01,523
+Çünkü türev'e x'e bölümü götürecek bu. Bir de bir bir kalacak.
+
+682
+01:46:02,683 --> 01:46:10,003
+Dolayısıyla x pozitifken, x'in mutlak değeri x. x negatifken, x'in mutlak değeri de x'i x.
+
+683
+01:46:10,903 --> 01:46:12,923
+Fakat bu yüzden ne verir arkadaşlar biliyor musunuz?
+
+684
+01:46:13,763 --> 01:46:21,003
+Bize mutlak değeri x'in aslında ele mutlak değeri x'in türevinin bize bir bir x olduğunu bize söyler.
+
+685
+01:46:26,355 --> 01:46:29,855
+bir sonraki sayfaya geleyim. Şuradan yazayım, daha geniş yazalım.
+
+686
+01:46:35,347 --> 01:46:52,608
+x büyük sıfır iken, mutlak değer x seçti x ve x küçük sıfır iken, mutlak değer x telefon, x'i x.
+
+687
+01:46:56,884 --> 01:47:02,344
+Değil mi? Bunu biliyoruz. Orup, L'x farklı sıfır için birbirlik sinüs ters türevidir aslında.
+
+688
+01:47:11,252 --> 01:47:19,032
+bir bölüksin ters türev. Yani bakma integral lirasında. O da bize türev verecektir.
+
+689
+01:47:25,460 --> 01:47:33,559
+Yani bunlarda hani integral teriminin içerisinde aslında terimleriyle söylemem lazım ama integralinizi öğrenmediğimiz için söyleyemiyorum.
+
+690
+01:47:34,899 --> 01:47:45,180
+D bölü de x, mutlak değer x, ele mutlak değer x, türev eşitliğinde bir bölü x sonuç çıkartmışlar. x farklı sıfır.
+
+691
+01:47:53,043 --> 01:48:00,363
+Şimdi burada bahçiş arkadaşlar, doğal logaritmanın özellikleri var. Onları hatırlatalım. Zaman zaman kullanacağız çünkü.
+
+692
+01:48:03,699 --> 01:48:10,619
+ne diyelim, LNX, hatta LNBX diye biz, sevilatı negresuna göre bakabiliriz.
+
+693
+01:48:36,307 --> 01:48:41,048
+Bir defa, b pozitif ve x pozitif sayılar için. Hep öyle söyleyelim.
+
+694
+01:48:50,228 --> 01:49:00,327
+1, lnbx eşittir, lnb artı lnx değil mi? Yani belki lnab falan da diyebilirsiniz.
+
+695
+01:49:01,628 --> 01:49:05,407
+Ona şimdi diğer yazacağım şeylerle ilgili bir ilişkisi var, daha iyi anlamadım.
+
+696
+01:49:06,208 --> 01:49:14,407
+Burada lnb-lnx, bu kolay değil mi? x'e-1 yazarsak falan böyle, oradan işlem zaten oraya gidecektim.
+
+697
+01:49:15,988 --> 01:49:21,427
+Sonra, Ln 1 bölü x, 3 diyelim.
+
+698
+01:49:24,427 --> 01:49:32,427
+Eksi Ln x, yani kuvvet kuralının zaten bu üzer bir hali. 4 diyelim şuraya.
+
+699
+01:49:34,088 --> 01:49:35,728
+Ln x'e R.
+
+700
+01:49:36,851 --> 01:49:43,832
+R herhangi bir rasyonel sayı için. R çarpı L'in x, kuralının her zaman başa geldiğini biliyoruz.
+
+701
+01:49:47,252 --> 01:50:04,131
+Bunlara örnek verilebilir tabii niye verilmesi. Ama çok zor ifadeler olmayacağı için. Bunlar üzerinde çok tutturmamıza gerek yok. Kolayca altından kalkabileceğimiz şeyler de lazım. Ama şuraya birkaç örnek verelim.
+
+702
+01:50:07,636 --> 01:50:08,276
+mesela
+
+703
+01:50:08,276 --> 01:50:12,936
+ln4
+
+704
+01:50:12,936 --> 01:50:15,456
+sinir çıksı şöyle yazabiliriz.
+
+705
+01:50:15,676 --> 01:50:17,076
+ln4 artı
+
+706
+01:50:23,507 --> 01:50:25,323
+x kare artı
+
+707
+01:50:29,492 --> 01:50:47,572
+L'Hospital, sinüs x. Sonra mesela, atıyorum L'Hospital, x artı 1 bölü, x eksi 1, değil mi? L'Hospital, bundan da biraz iyi tanımlamak lazım. x büyük değil mi?
+
+708
+01:50:54,868 --> 01:50:57,188
+x eksi 1 mesela.
+
+709
+01:50:57,888 --> 01:51:01,028
+Ya da eyleyen mesela 1 bölü 8 ifade etsin değil mi?
+
+710
+01:51:01,648 --> 01:51:04,247
+Eksi eyleyen 8 olduğunu biliyor değil mi?
+
+711
+01:51:04,888 --> 01:51:07,388
+Yukarıya alıp sonra yan tarafa çözebiliyoruz.
+
+712
+01:51:12,020 --> 01:51:17,996
+Bunlar ispatlar zor değil. Kolay. Onlar üzerinde durmuyorum. Kolayca kendiniz yapabilirsiniz.
+
+713
+01:51:23,507 --> 01:51:27,507
+Peki, arada da arkadaşlar bir ara verelim, aradan sonra devam ediyoruz. Tamam mı?
+
+714
+02:05:37,076 --> 02:05:41,435
+Peki şimdi burada özellikle logaritma kullanılarak arkadaşlar.
+
+715
+02:05:45,652 --> 02:05:48,352
+bazı logartik türev dediğimiz
+
+716
+02:05:52,692 --> 02:05:53,644
+sınır.
+
+717
+02:06:03,604 --> 02:06:13,543
+Yani bazı zor ifadeli logartman kuralları kullanılarak, logartman salınları iki tarafını daha sade bir şekilde getirilerek türevi kolayca bulunabilir.
+
+718
+02:06:13,944 --> 02:06:24,484
+Yani çarpım, bölüm ve kuvvet içeren formülleri vermiş, genellikle pozitif fonksiyonların türevleri, tm'den önce iki tarafından doğal olarak alınırlarında daha kolay bulunur.
+
+719
+02:06:26,463 --> 02:06:29,424
+Şöyle, diyelim ki y eşittir.
+
+720
+02:06:35,764 --> 02:06:50,943
+Mesela x kare artı 1x, x artı 3'ün birbirleri ikinci kuvveti, yani kare kökü bir anlamda, bölü x eksi 1.
+
+721
+02:06:52,163 --> 02:06:54,443
+Diyelim x büyük bir için tanımlı bir fonksiyon.
+
+722
+02:06:56,304 --> 02:07:01,844
+Şimdi fonksiyon tabii normal türev kullanılarıyla nedir? Bunlar birikçe, bölümün çarpımın türevlerine uğrar.
+
+723
+02:07:02,899 --> 02:07:11,719
+Bunun yerine iki tarafın logaritma salınarak, çok daha sade bir hale getirilerek bu türev bulunabilir.
+
+724
+02:07:12,719 --> 02:07:19,500
+Yani iki tarafın doğal logaritma salınında elengesi, bu tarafın da eleni bir kez yazalım.
+
+725
+02:07:19,500 --> 02:07:27,619
+x kare artı 1, x artı 3'ün kare kökü bölü x x'i 1.
+
+726
+02:07:29,876 --> 02:07:39,876
+Dogatnik kurallardan değil mi? Bu tarafın aslında, yukarı tarafından toplam şekilde, aşağıdan fark şekilde geleceği açık.
+
+727
+02:07:40,736 --> 02:07:49,935
+Dolayısıyla ben hızlı bir şekilde şöyle yazacağım. x kare artı 1, artı 1 bölü 2 çarpı elen x artı 3, hepsini bir arada yazıyorum.
+
+728
+02:07:51,015 --> 02:07:56,836
+Artı elen, pardon, artı dedim bak oradan yanıldık. Eksi diyecektim, şu eksi olacak.
+
+729
+02:08:00,020 --> 02:08:03,420
+faydadak ifade değil mi? Elen bölümünden dolayı x-1.
+
+730
+02:08:04,980 --> 02:08:07,659
+Şimdi iki tarafın nedir? x'e göre türev alacağız.
+
+731
+02:08:08,480 --> 02:08:15,899
+Elengen'in türevi, zincir kuralının bildiğimiz anlamda uygulanış aslında u üstü bölü u.
+
+732
+02:08:16,120 --> 02:08:18,200
+Yani elen u gibi yani, elen u'nun türevi gibi.
+
+733
+02:08:18,780 --> 02:08:21,739
+Dolayısıyla bunun türevi g üstü bölü g, bir defa diyeceğiz.
+
+734
+02:08:22,484 --> 02:08:27,884
+elengeni türevi, gey üstü, bire. Bu tarafta normal türev kuralları uygulayacağız.
+
+735
+02:08:32,275 --> 02:08:55,296
+Elin u nedir? x kare artı 1, türevi 2x, hatta şöyle yazalım, 1 bölü x kare artı 1, çarpı 2x, artı, burası 1 bölü 2 sabit zaten, 1 bölü x artı 3, çarpı 2'nin türevi 1, eksi,
+
+736
+02:08:55,988 --> 02:09:00,368
+1 bölü x x 1, içinin türev de yine 1. Değil mi? Ifademiz bu.
+
+737
+02:09:00,908 --> 02:09:02,608
+Burayı düzenleyebiliriz biraz belki.
+
+738
+02:09:04,108 --> 02:09:11,728
+2x bölü x kare artı 1, artı 1 bölü 2 çarpı x artı 3.
+
+739
+02:09:13,968 --> 02:09:19,828
+Çok tane benzediği ifadeler olmadığı için paylaştığım meydanı çok gerekli görmedim burada.
+
+740
+02:09:19,828 --> 02:09:22,688
+Şunu ver atalım şu kesini.
+
+741
+02:09:23,380 --> 02:09:30,659
+Tamam mı? Dolayısıyla ne oldu? y üstü burada bize arasınızda. y'yi biliyoruz zaten. y üstü bu ifademiz y ile çarpılmış hali.
+
+742
+02:09:30,659 --> 02:09:49,380
+y üstü ifademiz eşittir. y ile çarpalım. x kare artı 1x artı 3'ün kare kökü bölü x eksi 1 çarpı
+
+743
+02:09:51,859 --> 02:09:53,859
+Şunu biraz güzellik arkadaşlar.
+
+744
+02:09:57,395 --> 02:10:14,796
+2x bölü x kare artı 1 artı, işte burada bulduğumuz ifade en sonunda değil mi? 2x artı 3, eksi 1 bölü x eksi 1. Burayı da bir kontrol edelim, aynı. Bu şekilde bulmuş oluruz. Tamam mı?
+
+745
+02:10:25,011 --> 02:10:38,411
+x kare artı 3x, f'
+
+746
+02:10:44,564 --> 02:10:52,064
+Şimdi de üstelik fonksiyon hatta doğal logaritmanın tersi olan bir fonksiyon. x kare artı 2x, göstereceğiz.
+
+747
+02:11:01,300 --> 02:11:17,620
+Tabii çünkü sol tarafına bakın, y üstü bölüye geldi ya, onlar çarptı, dikkat edin onlar. Bak şurası, bunun türevi, y üstü bölüye, bize y üstü çözdüğümüz zaman y çarpı o ya, ondan dolayı bir ifademiz bu.
+
+748
+02:11:30,996 --> 02:11:34,556
+ve sürenç, sekağası.
+
+749
+02:11:38,323 --> 02:11:44,903
+Şimdi, üstel fonksiyonlar diyelim. Hatta doğal üstel fonksiyon da diyebiliriz.
+
+750
+02:11:44,903 --> 02:11:46,723
+Sesli sorun.
+
+751
+02:12:01,971 --> 02:12:03,992
+Hatta direk üstel fonksiyonu da diyebiliriz burada.
+
+752
+02:12:05,371 --> 02:12:06,291
+Bakma...
+
+753
+02:12:12,307 --> 02:12:14,155
+x kare artı 3x için
+
+754
+02:12:23,604 --> 02:12:25,260
+x kare artı 3x, f'
+
+755
+02:12:33,460 --> 02:12:35,800
+Şöyle, E-ZLX olarak tanımlayacağız.
+
+756
+02:12:36,659 --> 02:12:37,760
+Hatta şöyle de gösterir.
+
+757
+02:12:37,880 --> 02:12:39,619
+x-ZLX olarak da gösterdir.
+
+758
+02:12:41,820 --> 02:12:42,740
+Oraya tanımlanır.
+
+759
+02:12:55,283 --> 02:13:06,524
+Tabi burada eksponans edildiğimiz x ifademiz, bakın baktığımızda bizim lnx ifademizin aslında tam ters fonksiyon olarak göz önüne alınacaktır.
+
+760
+02:13:07,524 --> 02:13:18,804
+Dolayısıyla e üzeri x ve lnx'in ters denklemleri göz önüne alındığında e üzeri lnx eşittir x'tir.
+
+761
+02:13:24,692 --> 02:13:25,532
+Şöyle yazalım.
+
+762
+02:13:26,412 --> 02:13:26,931
+Öte yandan,
+
+763
+02:13:28,152 --> 02:13:32,032
+ln e üzeri x, ifademiz de x'ti. Burada her x için ama.
+
+764
+02:13:34,712 --> 02:13:35,931
+x pozitif olmak zorunda değil.
+
+765
+02:13:39,091 --> 02:13:42,351
+Çünkü üstelik ifade fonksiyonun kendi statın kendisi nedir?
+
+766
+02:13:42,811 --> 02:13:45,292
+Pozitif ifade hiçbir zaman nedir? Nekatif bir ifade olmaz.
+
+767
+02:14:00,692 --> 02:14:02,332
+bu funciyon, ııı...
+
+768
+02:14:24,083 --> 02:14:31,083
+Tanım hükümeti x-sonsu artı sonsu olan bir fonksiyondur ama görüntü hükümeti 0 sonsuz olan bir fonksiyondur.
+
+769
+02:14:32,064 --> 02:14:35,583
+Aslında hani el eline karşılaştığımız zaman onların tersi olduğu değil mi?
+
+770
+02:14:36,104 --> 02:14:38,823
+Yani buradaki bağıntı ile aslında karşımıza gelir.
+
+771
+02:14:39,623 --> 02:14:44,764
+Dolayısıyla y eşit, e yüzde x ya da x-mix diye bildiğimiz fonksiyonu yukarı almakımız.
+
+772
+02:14:45,764 --> 02:14:46,423
+E yüzde x.
+
+773
+02:14:47,943 --> 02:14:49,423
+Tanım hükümeti...
+
+774
+02:14:53,492 --> 02:14:56,752
+Yanına grafik istedik daha yoruldu ama çizeceğim şimdi.
+
+775
+02:14:59,752 --> 02:15:03,232
+Ya da aralığı x sonsuz, artı sonsuzdur.
+
+776
+02:15:04,332 --> 02:15:05,332
+Görüntü hükümesi.
+
+777
+02:15:11,220 --> 02:15:17,220
+0 sonsuzdur. Buradaki işte bunların karşılık, birbirinin tersi olması, tanımlanması da aslında budur.
+
+778
+02:15:18,220 --> 02:15:27,220
+Eucer L'x, L'x. Burada pozitif olarak tanımlandığına göre değil mi? L'x'te tabii x sonu tanımlanırsa her değeri alır.
+
+779
+02:15:28,220 --> 02:15:35,220
+L'x olarak. Ama x'in sadece pozitif değerleri için tanımlanır, ondan dolayı. Şöyle basitçe bir grafik çizelim şöyle.
+
+780
+02:15:49,140 --> 02:15:49,939
+x'in burada
+
+781
+02:15:54,163 --> 02:15:56,163
+birden büyük olma değil mi durumu var?
+
+782
+02:15:57,763 --> 02:15:59,363
+Pozitif olma durumu hatta var.
+
+783
+02:16:04,115 --> 02:16:05,636
+Onunla ilgili hani grafikleri.
+
+784
+02:16:09,460 --> 02:16:11,500
+Birecek olursak, şöyle diyeceğim.
+
+785
+02:16:14,960 --> 02:16:16,260
+Sıfırtaki değeri 1'dir.
+
+786
+02:16:56,531 --> 02:16:58,731
+x kare artı 2x, f'
+
+787
+02:16:58,731 --> 02:16:59,731
+kare artı 2x, f'
+
+788
+02:17:08,147 --> 02:17:18,747
+x bu da pozitif. x negatif olsan, grafikken olacak grafik, tam dersi azar olacak. Yani pozitifken tabii artan, ma negatifken tabii azar olacak. O da dikkat edelim.
+
+789
+02:17:20,547 --> 02:17:30,347
+Her durumda yine nereden? Birden tabii geçecek bu anda. Yani bakın onun da şöyle. Tarız da var yani. x küçük, bir olduğu zaman.
+
+790
+02:17:34,515 --> 02:17:39,935
+Bundan ziyade aslında şeyle tersini vurgulamak açısından belirteyim ben.
+
+791
+02:17:40,975 --> 02:17:42,896
+Eliniks fonksiyonuyla özellikle değil mi?
+
+792
+02:17:44,635 --> 02:17:45,536
+Belirtelim şurada.
+
+793
+02:17:55,700 --> 02:17:57,700
+Bakın, bunun yi eşitlikse göre simetrisi.
+
+794
+02:18:00,340 --> 02:18:01,940
+yi eşitlikse göre simetrisi.
+
+795
+02:18:09,940 --> 02:18:11,540
+ilişkilik sonrası vardı ya şöyle.
+
+796
+02:18:12,920 --> 02:18:14,156
+x kare artı 2x, f'
+
+797
+02:18:19,827 --> 02:18:32,247
+bizim y eşittir, eleniks fonksiyonumuz. Buna göre simezil, yani onun tersi olduğunu burada nedir? Grafikten de orada görmüş, yakalamış oluruz. Böyle düşünemişsiniz.
+
+798
+02:18:41,556 --> 02:18:43,896
+Şimdi yukarıdaki özellikler şu ikinci ilişkiden.
+
+799
+02:18:44,855 --> 02:18:46,175
+Evcil ilişkin nedir?
+
+800
+02:18:48,115 --> 02:18:49,835
+Türevini bulmamız kolay.
+
+801
+02:19:02,548 --> 02:19:11,368
+x kare artı 3x türev fonksiyonunun, ys türev x doğal fonksiyonunun.
+
+802
+02:19:22,739 --> 02:19:30,819
+Şimdi neyi biliyoruz? Elen, e üzeri x'in x olduğunu biliyor değil mi? Pozitifistler için.
+
+803
+02:19:31,700 --> 02:19:47,079
+Şimdi elenin türevini verdik biliyorsunuz. Bu bir bölü, hani u olduğu zaman ifade edeyim, baktığımız zaman u üstü bölü u şeklinde karşımıza geliyor mutlaka.
+
+804
+02:19:48,079 --> 02:19:50,180
+Dolayısıyla bu tarantöv 1.
+
+805
+02:19:51,316 --> 02:20:03,695
+Sadece şöyle bir d bölü dx alalım. İki tarafın elen ifadesini. e üzeri x bu taraf yazalım. Bir kez de olsun. Daha iyi görmek için de.
+
+806
+02:20:07,155 --> 02:20:13,316
+1 bölü u, yani e üzeri x çarpı d bölü dx, e üzeri x değil mi u?
+
+807
+02:20:14,324 --> 02:20:30,603
+eşittir. Bu taraf 1. Bu zaten bulmak istediğimizdi bizim. Bunu çözeceğiz sadece. D bölü de x, e üzeri x eşittir, e üzeri x. Bu da aslında nedir? Bizim fonksiyonumuz, y fonksiyonumuzun türevidir. Yani y üstü türevidir.
+
+808
+02:20:32,283 --> 02:20:33,783
+y üstü türevidir.
+
+809
+02:20:35,164 --> 02:20:38,764
+O halde y eşittir, e üzeri x ise
+
+810
+02:20:39,667 --> 02:20:42,528
+y üstü eşittir, yine kendisi y üzeri x.
+
+811
+02:20:44,047 --> 02:20:49,247
+Ve y eşittir, bunları şöyle hızlılayalım.
+
+812
+02:20:49,808 --> 02:20:52,768
+y eşittir, y üzeri u ise, o burada x'in bir fonksiyonu olduğu zaman.
+
+813
+02:20:53,387 --> 02:20:55,387
+Bunu yine kolayca buradan hemen elde edebiliriz.
+
+814
+02:20:56,788 --> 02:21:00,688
+y üstü türevinde bu kez, u üstü çarpı e üzeri u olduğunu görürüz.
+
+815
+02:21:02,347 --> 02:21:04,327
+u üstü çarpı e üzeri u olduğunu görürüz.
+
+816
+02:21:06,579 --> 02:21:10,099
+Yani e üzeri u çarpı 2x, şöyle de alıklayabiliriz.
+
+817
+02:21:16,852 --> 02:21:18,432
+buradan birkaç örnek verelim.
+
+818
+02:21:23,156 --> 02:21:24,416
+Şuna biraz başaralım.
+
+819
+02:21:32,788 --> 02:21:38,308
+Mesela, d bölü de x, e üzeri x, x.
+
+820
+02:21:40,188 --> 02:21:43,847
+Değil mi? Nedir? Hemen bahsettir. Eksi e üzeri eksi x'tir.
+
+821
+02:21:44,288 --> 02:21:45,587
+Bunu hemen kolayca buna yazarsanız.
+
+822
+02:21:46,768 --> 02:21:50,808
+Ya da d bölü de x, e üzeri sinüs x değilim.
+
+823
+02:21:52,407 --> 02:21:57,688
+Bu değiştir. Sinüs x'in türev nedir? Kosinüs x, çarp e üzeri sinüs x.
+
+824
+02:21:59,188 --> 02:21:59,907
+İfademiz mi?
+
+825
+02:22:00,948 --> 02:22:05,427
+Daha da bunları zorlaştırabilirsiniz. Daha farklı türevlerde kolayca elde edebilirsiniz.
+
+826
+02:22:05,427 --> 02:22:06,587
+Zor değil onlar.
+
+827
+02:22:10,451 --> 02:22:14,252
+Şimdi tabi üstel ifadeleri kullanırken, nogatma kurallarını verdik.
+
+828
+02:22:14,951 --> 02:22:18,051
+Duraşıyla 3 kurallar da var.
+
+829
+02:22:19,551 --> 02:22:21,551
+Hatırlarsanız, 3 kurallar da var.
+
+830
+02:22:32,435 --> 02:22:46,255
+x bir x iki herhangi sayılar ve y üzeri x için, tabi şu kurallar vardır üst ifadesi için, y üzeri x bir çarpı y üzeri x iki bir şey mi söyleriz?
+
+831
+02:23:10,772 --> 02:23:13,412
+sorunlu sıkıntı yok arkadaşlar. Geçtik buraya.
+
+832
+02:23:14,551 --> 02:23:17,172
+e üzeri x1 hatta şu taraftan biz böyle yazalım biz bunu.
+
+833
+02:23:17,312 --> 02:23:20,711
+e üzeri x1 artı x2 neydi basitçe?
+
+834
+02:23:20,772 --> 02:23:23,051
+e üzeri x1 çarptı e üzeri x2 değil mi?
+
+835
+02:23:24,952 --> 02:23:26,972
+tabandan aynı olunca hani üstler toplanıyordu.
+
+836
+02:23:27,051 --> 02:23:28,472
+o ifade misal yani.
+
+837
+02:23:29,371 --> 02:23:32,672
+ikincisi bir bölü e üzeri x eşittir e üzeri xx'tir.
+
+838
+02:23:32,731 --> 02:23:34,551
+yatalım e üzeri xx eşittir.
+
+839
+02:23:35,371 --> 02:23:36,612
+bir bölü e üzeri x'tir.
+
+840
+02:23:38,036 --> 02:23:42,355
+Öte yandan, e üzeri x1-x2 eşittir.
+
+841
+02:23:42,815 --> 02:23:49,716
+e üzeri x1-x2, daha doğrusu, e üzeri x1 bölü, e üzeri x2 diyecektim.
+
+842
+02:23:51,995 --> 02:23:56,236
+e üzeri x1 bölü, e üzeri x2 diyecektik.
+
+843
+02:23:56,896 --> 02:24:04,675
+Ve son olarak da mesela, e üzeri x1'in mesela, herhangi bir R'nin kuvveti dediğimiz zaman değil mi?
+
+844
+02:24:04,979 --> 02:24:10,979
+Bu ifade eşitir. Çarpma olarak elin üstelinin çarpımı elin yetişir. R çarpı x1 şeklinde karşımıza çıkar.
+
+845
+02:24:11,599 --> 02:24:13,439
+R burada herhangi bir rasyon sayı mesela.
+
+846
+02:24:15,479 --> 02:24:18,139
+Bunların ispatlarını tabii de vermemize gerek yok.
+
+847
+02:24:19,219 --> 02:24:24,559
+Şimdi buradan önce arkadaşlar genel üstel fonksiyonu tanımlayacağım. Daha sonra genel logartif fonksiyona geçeceğim.
+
+848
+02:24:55,252 --> 02:25:01,912
+Şöyle ki, a pozitif ve birden farklı olmak koşuluyla, her ikisi de yasayız için.
+
+849
+02:25:24,755 --> 02:25:26,975
+Şimdi R sayısı için.
+
+850
+02:25:29,255 --> 02:25:30,695
+Tabi A da R sayı tabi.
+
+851
+02:25:43,123 --> 02:25:48,123
+a üzeri x f'imiz eşittir.
+
+852
+02:25:49,083 --> 02:25:53,363
+e üzeri x çarpı ln a şeklinde tanınır.
+
+853
+02:25:54,043 --> 02:25:55,543
+a üzeri x eşittir.
+
+854
+02:25:56,243 --> 02:25:57,463
+e üzeri x çarpı ln a.
+
+855
+02:25:57,543 --> 02:25:58,563
+Genel x f'imiz bu.
+
+856
+02:25:58,664 --> 02:26:01,543
+Genel, üstel fonksiyonumuz.
+
+857
+02:26:02,463 --> 02:26:03,783
+e üzeri x dengelerine geldik.
+
+858
+02:26:04,783 --> 02:26:07,484
+Yani a mesela e içerisi değil mi?
+
+859
+02:26:08,164 --> 02:26:08,523
+Ne olur?
+
+860
+02:26:10,772 --> 02:26:14,852
+a iken e üzeri x bildiğimiz fonksiyonumuza denk gelir.
+
+861
+02:26:18,432 --> 02:26:24,112
+O da bu tarafın zaten e üzeri x ln e olacaktır.
+
+862
+02:26:25,252 --> 02:26:30,572
+Dolayısıyla e üzeri x ifadesi ln e birbirinin tersi olacağı için direkt e üzeri x'i bize getirecektir.
+
+863
+02:26:33,372 --> 02:26:37,272
+Yukarıdaki bütün kuralları, üst kuralları burada da geçerli. Onu hemen belirtelim.
+
+864
+02:26:56,755 --> 02:27:09,015
+Daha önceden kuvvetin kuralını, herhangi bir x'lerin türevinin aslında n çarpı x'lerin n-1 sadece pozitif sayılar için ispatının hemen kolay yapıldığını görmüştük.
+
+865
+02:27:09,795 --> 02:27:21,255
+Burada ise herhangi bir n-r sayısı için, yani kuvvet doğrusu olsun, o x'lerin türevinin çok kolayca yapılabileceğini söyleyebiliriz.
+
+866
+02:27:22,115 --> 02:27:24,295
+Onu geçiyorum, ona tekrar dönmemize gerek yok.
+
+867
+02:27:26,004 --> 02:27:31,304
+Mesela genel logaritmik türevden yararlanarak bu ifadeden ne yapabiliriz?
+
+868
+02:27:34,184 --> 02:27:38,184
+x'in türev formülünü verebiliriz.
+
+869
+02:27:38,963 --> 02:27:39,844
+Bir örnek diyelim.
+
+870
+02:27:50,227 --> 02:27:52,347
+x x x x x hos
+
+871
+02:27:55,891 --> 02:28:02,191
+Yani taban ve üstelde nedir? Değişkende işte bu da yine de o katnik türev aslında. İşin içine girecektir.
+
+872
+02:28:02,871 --> 02:28:09,932
+Bir defa bu x'e x ifadesinin e ve elenli yazarsak e üzeri x ile elenli şeklinde denk geldiğini görürüz.
+
+873
+02:28:11,432 --> 02:28:15,292
+Eşittir e üzeri x elenli türev aslında.
+
+874
+02:28:16,051 --> 02:28:21,412
+Dolayısıyla f üstü x eşitir bu ifadenin türevi d bölü d x.
+
+875
+02:28:22,484 --> 02:28:24,484
+x, L'in x türevi.
+
+876
+02:28:26,884 --> 02:28:28,344
+Şuradan yanlış yazdık.
+
+877
+02:28:28,544 --> 02:28:30,924
+E ile ısırtık tabanı.
+
+878
+02:28:36,628 --> 02:29:02,308
+e üzeri uğunun türevi gibi oldu şimdi. Zaten üstünün türevi çarpı kendisinin türevi şeklinde gelecektir. x çarpı elen x'in türevi, d bölü dx diyelim, x çarpı elen x, çarpı e üzeri x elen x. Yani bu zaten e üzeri, yani x üzeri x zaten yapacaktır. Bu türevi ifadesine bakalım, eşittir. Çarpının türevi, 1 çarpı elen x,
+
+879
+02:29:02,995 --> 02:29:16,675
+artı x çarpı L'x'in türevi 1'di. 1 bölü x'ti. x'lere götürürüz 1. Değil mi? Çarpı E üzeri x, L'n x. Bu da zaten x üzeri x'tir. Ben şurada yeri fazla uzatmamak için direkt böyle yazdım.
+
+880
+02:29:17,415 --> 02:29:24,515
+Bu fonksiyonun türevi x üzeri x. L'n x artı 1 çarpı x üzeri x şeklinde olur. x burada pozisyonma koşulu öyle.
+
+881
+02:29:29,268 --> 02:29:46,167
+Peki, burada önemli bir limit var arkadaşlar. Daha önceden belki konuşmuş olabiliriz. Bir limit olarak e sayısını. Yani aslında 2,718 değil mi? O bir, tabii irasyonel sayı değil.
+
+882
+02:29:46,907 --> 02:29:56,148
+Dolayısıyla bu fonksiyon aslında bir limit olarak değil mi? Tanımlı fonksiyondur. Şöyle yine üstel olarak e sayısı diyelim.
+
+883
+02:29:58,868 --> 02:30:00,567
+tabi limit olarak göz önüne alıyorum.
+
+884
+02:30:07,028 --> 02:30:09,148
+limit x sonsak derken
+
+885
+02:30:09,148 --> 02:30:12,567
+şu güzel hesa atı.
+
+886
+02:30:15,827 --> 02:30:23,067
+Tabii sıfıra giderken, sonsuza giderken, iki türlü de yazılabilir. Sıfıra giderken dersek, 1 artı x üzeri 1 bölü x şeklindedir.
+
+887
+02:30:25,087 --> 02:30:32,487
+Bunun x sıfıra giderken, yani x sonsuza giderken nasıl olurdu? 1 artı 1 bölü x üzeri x değil mi şeklinde olurdu? Ona direkt gel.
+
+888
+02:30:33,487 --> 02:30:37,907
+Limit olarak böyle tanımlanıyor. Yani ispatına girmeyeceğim.
+
+889
+02:30:40,788 --> 02:30:42,907
+Şimdi yukarıda genel...
+
+890
+02:30:43,860 --> 02:30:50,620
+logat fonksiyonu verdik. O genel logat fonksiyonu da tabi türevlere bakacak olursak.
+
+891
+02:31:20,115 --> 02:31:21,596
+bu bir yerde kalsın köşemize.
+
+892
+02:31:22,716 --> 02:31:29,515
+zinci kuralıyla üstel ifadenin nesini, ilişkisini göz önüne alalım.
+
+893
+02:31:36,595 --> 02:31:38,595
+Üstelik çenir kuralı verebiliriz belki.
+
+894
+02:31:39,815 --> 02:31:41,635
+Ayrıca, ultra, belanlar, ehuveli deyiz.
+
+895
+02:32:01,332 --> 02:32:15,891
+Dolayısıyla, eğer y eşittir, a üzeri u şekillendirme, üstel fonksiyonuz var ise, bu y üst ifademiz eşittir, artık şöyle yapacağız.
+
+896
+02:32:15,891 --> 02:32:23,711
+a üzeri u, çarpı ln a, çarpı u'nun türevi, d o bölü de x.
+
+897
+02:32:24,912 --> 02:32:28,332
+a üzeri u, ln a, çarpı d o bölü de x.
+
+898
+02:32:30,772 --> 02:32:41,832
+Yani aslında taban E olsaydı, tabii elen E değil mi bir ifadesine denk geleceğiz, sen oradan ekokural koşulluğunu daha genel halde vereceğiz aslında.
+
+899
+02:32:43,352 --> 02:32:44,312
+Bu buna denk gelirdi.
+
+900
+02:32:45,112 --> 02:32:52,912
+Burada örnek olarak mesela y eşittir, e üzeri u iken, g üstü eşittir.
+
+901
+02:32:53,747 --> 02:33:02,688
+e üzeri u çarpı elen e çarpı, e üzeri u'nun, daha doğrusu u'nun türevi pardon, do bölü d x, öyle diyelim.
+
+902
+02:33:03,167 --> 02:33:09,927
+El'in eninde ne olduğunu, değil mi? 1 olduğunu biliyoruz. Böylece e üzeri u çarpı do bölü d x.
+
+903
+02:33:11,247 --> 02:33:17,648
+Yani oradaki e üzeri u'nun türevi, u üçü çarpı e üzeri u şeklinde elde edildiğini burada görebiliriz.
+
+904
+02:33:21,587 --> 02:33:28,967
+Peki. Hemen şu yanına örnekleri tabii kısa olduğu için örneklerini verebiliriz.
+
+905
+02:33:33,747 --> 02:33:35,747
+bu selle tücmet, ya da südü.
+
+906
+02:33:53,203 --> 02:33:57,363
+örneğin, t bölüde x, 3 üzeri x.
+
+907
+02:34:02,388 --> 02:34:13,087
+bir daha 3x var, L'N3 var, değil mi? Başka ne var? x'in türevi var, x'in türevi de 1. 3x, L'N3 vardı.
+
+908
+02:34:14,828 --> 02:34:24,388
+Çarpı 1. Bitti. Peki, 3x, x olsaydı, farkını görmek açısından.
+
+909
+02:34:28,595 --> 02:34:37,015
+Sadece, tabii elen 3 gelecek, 3 üzeri x çarpı elen 3 gelecek ama xx'in türevinden de eksi 1 gelecek değil mi? Eksi, 3 üzeri x elen 3.
+
+910
+02:34:38,396 --> 02:34:38,915
+Efendim.
+
+911
+02:34:44,500 --> 02:35:09,139
+Şimdi dönerim oraya. Bir tane daha örnek vereceğim. Mesela 3 üzeri sinüs x olsun. D bölü de x, 3 üzeri sinüs x eşittir. Hemen fonu uygulamamız ifadesi. Bir defa 3 üzeri sinüs x gelecek. Tabakdan dolayı 53 gelecek. Çarpı sinüs x'in değerinde de kosinüs x gelecek değil mi? Bunlar çarpı. İfade bu, başka bir şey değil.
+
+912
+02:35:10,675 --> 02:35:12,655
+Geçtiğim bir önceki safhaya bakın arkadaşlar.
+
+913
+02:35:32,948 --> 02:35:34,587
+Tabii genel şimdi
+
+914
+02:35:34,587 --> 02:35:37,907
+genel
+
+915
+02:35:37,907 --> 02:35:40,228
+artık
+
+916
+02:35:40,228 --> 02:35:44,508
+logata fonksiyonu tam verebiliriz.
+
+917
+02:35:46,348 --> 02:35:48,528
+Evet, 20. sayfamızda arkadaşlar.
+
+918
+02:35:50,528 --> 02:35:51,688
+Şöyle yazalım.
+
+919
+02:35:58,067 --> 02:36:01,627
+direkt lokaklı fonksiyonu da genel lokaklı fonksiyonu da diyebilirsiniz aslında.
+
+920
+02:36:14,004 --> 02:36:15,603
+genelde eserde yanlış olmaz yani.
+
+921
+02:36:16,564 --> 02:36:19,644
+Herhangi bir pozitif A, birden farklı sayısı için
+
+922
+02:36:40,724 --> 02:36:49,004
+y eşittir, logaritma, a tabanıyla x fonksiyonu, hangi fonksiyonun tersi sırasında?
+
+923
+02:36:50,224 --> 02:36:52,724
+a üzeri x fonksiyonun ters fonksiyonu değil mi?
+
+924
+02:36:57,043 --> 02:36:58,523
+Şöyle diyelim isterseniz.
+
+925
+02:37:00,523 --> 02:37:03,023
+x eşittir, a üzeri y mi?
+
+926
+02:37:04,824 --> 02:37:06,923
+Değil mi? Bu ilişkiden bu çıkar.
+
+927
+02:37:07,796 --> 02:37:09,156
+x eşitir a üzeri y.
+
+928
+02:37:12,136 --> 02:37:13,456
+Genel logot fonksiyon.
+
+929
+02:37:14,096 --> 02:37:15,056
+Yani bu fonksiyon,
+
+930
+02:37:16,276 --> 02:37:17,396
+a üzeri
+
+931
+02:37:17,396 --> 02:37:19,976
+y fonksiyonu olsa ters fonksiyonu değil mi?
+
+932
+02:37:20,216 --> 02:37:23,496
+Ters ifadeyle yazarız zaman, bu şekilde bu anlama gelir yani.
+
+933
+02:37:24,175 --> 02:37:25,236
+x eşitir a üzeri y.
+
+934
+02:37:28,296 --> 02:37:29,876
+Ters fonksiyonundan hatırlayın.
+
+935
+02:37:29,876 --> 02:37:32,936
+Ters fonksiyonundaki dönüşüm ifadesi.
+
+936
+02:37:38,932 --> 02:38:05,612
+Dolayısıyla, aynı tabanda tabii göz önüne aldığımız zaman, o x değerine karşılık gelecektir. Yani, a üzeri logaritma ax dediğimiz zaman ki ifade değil mi? Bunun ters ifadesi, logaritma a tabanına göre x ifadesi. Şimdi şöyle yazalım bakalım. Bu y'yi, y eşittir. Buna diyelim mesela. x mi? x eşittir bu.
+
+937
+02:38:08,020 --> 02:38:08,819
+Burası kim?
+
+938
+02:38:10,560 --> 02:38:11,880
+y ifadesi.
+
+939
+02:38:12,900 --> 02:38:13,780
+Yani logaritma,
+
+940
+02:38:15,260 --> 02:38:17,360
+a tabağına göre x ifadesi eştir kim?
+
+941
+02:38:18,460 --> 02:38:20,620
+a üzeri x değil mi?
+
+942
+02:38:21,400 --> 02:38:22,020
+Dikkat edin.
+
+943
+02:38:24,139 --> 02:38:25,380
+a üzeri x ifadesi.
+
+944
+02:38:32,275 --> 02:38:37,115
+x pozitif yükseliş. x eşitir. x ifadesini böyle yazabilirsiniz.
+
+945
+02:38:43,412 --> 02:38:54,691
+Aynı şekilde, logaritma a tabana göre a üzeri x'i düşündüğümüzde, tabii x başa geçecektir değil mi?
+
+946
+02:38:55,072 --> 02:38:57,172
+Logaritma a tabana göre a 1 olacağı için bu da x.
+
+947
+02:39:00,628 --> 02:39:06,028
+Tabii farkı ne? Burada tüm x'ler için ama yukarıda neler için? Pozitif x'ler için değil mi?
+
+948
+02:39:06,927 --> 02:39:08,028
+x pozitif mu?
+
+949
+02:39:08,628 --> 02:39:11,328
+Zorunda. Bu da ise her x için.
+
+950
+02:39:15,636 --> 02:39:21,236
+Kosya olmasının koşunu bize tabii Nogat'tan tanınmasında karşımıza çıkarıyor.
+
+951
+02:39:24,564 --> 02:39:28,384
+Yine logaritma kurallarını burada istediğimiz kadar uğrayabiliriz.
+
+952
+02:39:29,623 --> 02:39:37,623
+Özellikle logaritma a tabanına göre x dediğimiz zaman bunu biz aynı doğal logaritma kurallar içerisinde bunu yazabilirsiniz.
+
+953
+02:39:38,543 --> 02:39:42,443
+ln x bölü ln a şeklinde yani aynı bir tabana göre yazacağız. Şöyle diyebilirsiniz.
+
+954
+02:39:42,443 --> 02:39:49,324
+Logaritma e tabanına göre x bölü logaritma e tabanına göre a.
+
+955
+02:39:49,683 --> 02:39:59,583
+Bu değişikliktir. Yukarısı lnx gösterim olarak, bu da lnx bölü lnx şeklinde gösterim olarak karşımda çıkar.
+
+956
+02:40:03,731 --> 02:40:09,912
+Daha önce gördüğümüz logaritma kuralları aynı şekilde burada da geçerlidir. Onu hemen belirtelim.
+
+957
+02:40:10,811 --> 02:40:21,152
+Ve geriye ne kalıyor? Logaritma 1'un ya da logaritma 1'in türevini, yani ters türev anlamında kolayca isterseniz elde edebilirsiniz ama
+
+958
+02:40:21,531 --> 02:40:27,231
+buradaki yazılış anlamında da bunu yazarsanız çok daha kolay türev formülünü elde edebilirsiniz. Yani o kadar da çok.
+
+959
+02:40:27,379 --> 02:40:35,459
+detayına gitmenize gerek yok. Özellikle şu son yazdığımız öz eşitlik, eşitlik. Çok faydalı olacak. Şu eşitlik.
+
+960
+02:40:40,852 --> 02:40:43,852
+gerçekten yazırsak bunu devam edeceğim.
+
+961
+02:40:45,852 --> 02:40:48,852
+Bu desk, yani olarak tarımla yeteği değil, yani bu artık bu da biçiyor değil mi?
+
+962
+02:40:58,675 --> 02:40:59,815
+İyi, tamam, yaymadık.
+
+963
+02:41:01,135 --> 02:41:03,635
+Baraka sayfa verir miyim? 20 sayfa mı veriyor maksimum?
+
+964
+02:41:04,396 --> 02:41:04,635
+Ooo.
+
+965
+02:41:05,795 --> 02:41:07,295
+Maksimum 20 sayfa mı yazabiliyormuş?
+
+966
+02:41:10,015 --> 02:41:10,695
+İlginç.
+
+967
+02:41:20,051 --> 02:41:21,072
+Bunu da öğrenmiş olduk.
+
+968
+02:41:28,275 --> 02:41:35,475
+bitireceğim zaten az kaldı. Sadece bu, tokatmada ilgili türev formülü verecektim. Oradan bitirecektim yani.
+
+969
+02:41:35,475 --> 02:41:47,675
+Verelim onu isterseniz, şuraya yazayım. Yani ispatını yapmadan. Öyle mi? Peki. Şuraya hemen bir, şunu şu tarafa kaydereyim.
+
+970
+02:41:47,675 --> 02:41:55,876
+Şu tarafa kaydereyim. Tamam şimdi size müsaade edeceğim. Gidin. Karnınız doyunuyor kaza hiç merak etmeyin.
+
+971
+02:41:56,819 --> 02:41:57,840
+Sıkıntı yok.
+
+972
+02:42:00,840 --> 02:42:02,819
+Şuradan hatta kessem yeterli.
+
+973
+02:42:10,451 --> 02:42:30,751
+Logalitma, a tabana göre x'in türevi, y eşittir. Logalitma, a tabana göre x'in türevi, y üst türevi eşittir. Nedir bu artık? Yani bir defa log ifadesi var değil mi?
+
+974
+02:42:32,871 --> 02:42:35,431
+Onu da gözlerinde almanız lazım. Bir bölü.
+
+975
+02:42:39,603 --> 02:42:59,003
+doka ya da elena şeklinde yazar biz. Aslında şöyle yazalım isterseniz. Bakın şunu, şimdi gidiyoruz arkadaşlar hiç merak etmeyin. Burası ln x bölü ln a değil mi? Bakın bir ln a ifadesi gelecek. ln x türev de artık neydi? 1 bölü x'ti. 1 bölü ln a çarpı ln x değil mi?
+
+976
+02:43:02,644 --> 02:43:07,023
+1 bölü L'N'A çarpı L'N'X.
+
+977
+02:43:08,023 --> 02:43:09,283
+Tamam mı? Böyle düşün.
+
+978
+02:43:11,783 --> 02:43:15,863
+Eğer y eşittir, onu da yazalım.
+
+979
+02:43:17,083 --> 02:43:21,623
+Yok artık A tabanına göre U ise, yine bu eşitliği göz önüne altımızda.
+
+980
+02:43:22,783 --> 02:43:24,783
+Y üstü ifade eşitliği ile daha geniş yazalım.
+
+981
+02:43:25,724 --> 02:43:27,384
+Yine 1 bölü L'N'A arkadaşlar.
+
+982
+02:43:36,564 --> 02:43:45,164
+onu doğru, 1 bölü elen a, x yazacaktık buraya. Elen x yazık ya. Ben de yoruldum herhalde.
+
+983
+02:43:48,340 --> 02:44:10,540
+1 bölü ln a çarpı 1 bölü ln x, 1 bölü x daha doğrusu ya, ln x'e taşıdık. 1 bölü x, çarpı x'in türevi 1, o gelecek. 1 bölü ln a çarpı 1 bölü u, değil mi? bu ln o'nun türevinden gelecek, 1 bölü u çarpı, onun türevi, d o bölü de x.
+
+984
+02:44:16,180 --> 02:44:28,079
+Bu iki türev şeyinde arkadaşlar, fabülünün aklınıza tutun. Şöyle ne ile kutu içine alalım, sarı ile kutu içerisine alalım. Gerek bunu.
+
+985
+02:44:33,299 --> 02:44:36,239
+Tamam, birisi bu. Diğeride bu.
+
+986
+02:44:39,636 --> 02:44:42,596
+Bunlar da aklımızda tutuş olacağız, farmülelerimiz tamam mı arkadaşlar?
+
+987
+02:44:57,907 --> 02:44:59,647
+Evet, çarpı artı 1x, f' zaten necik tuttuk.
+
+988
+02:45:02,288 --> 02:45:04,427
+Evet, böylelikle arkadaşlar,
+
+989
+02:45:07,768 --> 02:45:08,087
+bugün,
+
+990
+02:45:09,747 --> 02:45:11,788
+tabi A'tan hazıran fonksiyonlarla beraber,
+
+991
+02:45:13,507 --> 02:45:14,987
+ters fonksiyonu tanımladık,
+
+992
+02:45:16,427 --> 02:45:19,108
+ters fonksiyonu öğrendik ve onlardan sonra da,
+
+993
+02:45:19,540 --> 02:45:25,940
+doğal logatma, doğal üstel, logatma ve üstel fonksiyonu, genel üstel fonksiyonlarını bahsettik.
+
+994
+02:45:25,940 --> 02:45:32,940
+Ondan sonra fikrinden, özelliklerinden, özellikle türevlerinden bahsettik, belirli integral ışıklarından bahsettik.
+
+995
+02:45:32,940 --> 02:45:35,940
+Üst kurallarını ve logatma kurallarını gördük.
+
+996
+02:45:35,940 --> 02:45:41,300
+Baş renklerimiz zaman zaman farklı olsa da, bu biraz hem avantaj bazen de dezavantaj,
+
+997
+02:45:41,300 --> 02:45:46,668
+ama bu da avantaj olduğunu söyleyelim kesinlikle. Dezavantaj değil tabii.
+
+998
+02:45:47,827 --> 02:46:00,788
+20 sayfalık bir sıra itinir var. İstedik. Ne diyelim? Size hayırlı olsun. Bunlara çalışan arkadaşlar. Ben sevkledim. Yap böyle sevk yaptık.
+
+999
+02:46:03,087 --> 02:46:13,887
+Evet. Sorumuz yoksa o zaman. Burada bitirelim. Yarın devam edeceğiz. Bunları tabii biraz daha genişlete gideceğiz.
+
+1000
+02:46:15,636 --> 02:46:22,796
+ters trigonometrik fonksiyonlar var burada yine bizim, türev, l'ap içerisinde.
+
+1001
+02:46:25,115 --> 02:46:27,636
+Baya büyük ölçüde bir kısmını şey yaptık tabii,
+
+1002
+02:46:28,155 --> 02:46:30,636
+seborik ve ters borik fonksiyonlar var burada.
+
+1003
+02:46:31,396 --> 02:46:32,636
+Ve türevleri var.
+
+1004
+02:46:33,115 --> 02:46:37,476
+Bunları vereceğiz. Kalan kısmında da genel örnekler çözeceğim.
+
+1005
+02:46:38,396 --> 02:46:39,636
+Umarım yetişeceğiz.
+
+1006
+02:46:40,724 --> 02:46:43,403
+Aç olanlar için, gerçi ben daha çıktım.
+
+1007
+02:46:44,504 --> 02:46:45,543
+Hepimize afiyet olsun.
+
+1008
+02:46:47,064 --> 02:46:48,703
+Yarın sabah
+
+1009
+02:46:48,703 --> 02:46:50,083
+derste görüşmek üzere.
+
+1010
+02:46:50,224 --> 02:46:51,644
+Kendinize iyi bakın.
+
+1011
+02:46:54,384 --> 02:46:56,203
+Ben sayfalar yine çeviriyorum.
+
+1012
+02:47:01,043 --> 02:47:03,423
+bizim döndüğünce bu kadar uzaktan
+
+1013
+02:47:03,423 --> 02:47:09,123
+size yardımcı olmaya çalıştım, dersimi anlatmaya çalıştım.
+
+1014
+02:47:11,923 --> 02:47:16,263
+Peki arkadaşlar, kendinize iyi bakın. Herkese iyi günler, sağlıklı günler.
+
+1015
+02:47:17,523 --> 02:47:18,603
+Görüşürüz, görüşmek üzere.

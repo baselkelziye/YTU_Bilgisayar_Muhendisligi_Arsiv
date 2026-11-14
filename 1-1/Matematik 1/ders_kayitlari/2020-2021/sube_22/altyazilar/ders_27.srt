@@ -1,0 +1,3611 @@
+1
+00:00:33,747 --> 00:00:34,628
+Merhaba arkadaşlar.
+
+2
+00:00:46,259 --> 00:00:59,859
+Evet, geçtiğimiz hafta belirli integral dendim uygulamaları olarak özellikle döner cisimlerin hacimleri onu birkaç yöntemle bulduk hatırlarsanız.
+
+3
+00:00:59,859 --> 00:01:13,459
+Yani eksenlere dik kesitler kullanılarak işte risk yöntemi dediğimiz bir de pul yöntemlerimiz içerisinde.
+
+4
+00:01:13,876 --> 00:01:15,876
+yöntemle onu bulduk. Bir de
+
+5
+00:01:16,876 --> 00:01:19,876
+kabuk yöntemi dediğimiz kabukla da
+
+6
+00:01:20,876 --> 00:01:23,876
+o tabi dönme eksenine paralel olan
+
+7
+00:01:23,876 --> 00:01:25,876
+dik tesitler alarak
+
+8
+00:01:26,876 --> 00:01:29,876
+hacimleri ısıtlamış olduk. Dönercinden hacimleri.
+
+9
+00:01:30,876 --> 00:01:32,876
+Sonra yay uzunluğu
+
+10
+00:01:33,876 --> 00:01:36,876
+formülü ne çıkartmıştık?
+
+11
+00:01:37,876 --> 00:01:38,796
+İşte
+
+12
+00:01:39,219 --> 00:01:56,199
+bir noktasından bel noktasına, sürekli bir değdenin, yay uzunluğu, o iki noktalar arasında, kök içinde, 1 artı fonksiyonun türevinin karesi, dx şeklindeki formülle bulunuyordu.
+
+13
+00:01:57,400 --> 00:02:02,699
+Bu bağıntıyı kullanarak tabi, verilen döner dismin hacmini yine, nerede?
+
+14
+00:02:03,603 --> 00:02:08,603
+gerek x eksinin etrafına gerek y eksinin etrafına dönmesine elde edilen döner cismin hacmini,
+
+15
+00:02:08,603 --> 00:02:18,603
+yine veren formülü, el-cad-p-çık yani 2x çarpı ds, ds ve y özünün etransiyel olmak üzere. Her iki şekilde bulmuştuk.
+
+16
+00:02:18,603 --> 00:02:23,603
+Bugün artık son konudayız.
+
+17
+00:02:23,603 --> 00:02:27,115
+Genelleştirilmiş integraller dediğimiz,
+
+18
+00:02:27,635 --> 00:02:41,036
+integral var. Yani bunlara çok integral de derler. Adı üzerinde uygun olmayan integral. Ama bunların bir özelliği uygun hale getirilerek çözülebilirler.
+
+19
+00:02:41,036 --> 00:02:54,027
+Hepsi olmazsa bile. En azından daha sonra mati içinde göreceğimiz seriler de olduğu gibi burada da yakın saktık ve biraz araç saktık kavramı yavaş yavaş.
+
+20
+00:02:54,611 --> 00:02:58,611
+integralin bıraksaklığı, yaklaşsaklığı karşımda çıkacak.
+
+21
+00:02:58,611 --> 00:03:05,611
+Yani limitlerdeki fonksiyon nasıl bir limiti, noktadaki limiti varsa, sonlu bir limiti varsa, o noktada limiti vardır diyorum.
+
+22
+00:03:05,611 --> 00:03:15,611
+Sonlu bir limiti yoksa, ya da hiç bir şekilde yani bir somut, bir eşitlik elde edemiyorsak da limiti yoktur diyoruz.
+
+23
+00:03:15,611 --> 00:03:16,611
+Burada da benzer bir şey.
+
+24
+00:03:16,611 --> 00:03:21,323
+Bunun da en çok integral'e bıraksak ya da yaklaşsak deriz.
+
+25
+00:03:21,460 --> 00:03:29,460
+tabi uygulamada genelde burada ya integral aralığının, biz hani belirli integral hesap bırakken neye dikkat ediyoruz?
+
+26
+00:03:29,460 --> 00:03:37,460
+İşte bir ABK-Kapalı aralığı değil mi seçiyorduk? Onun işte fonksiyonun o aralıkta sürekli olmasını istiyorduk.
+
+27
+00:03:37,460 --> 00:03:47,460
+Yani bir bakıma ABK-Kapalı aralığının sonlu olmasını istiyorduk. Diğer tarafında bu aralıktaki fonksiyonun, integral, daha doğrusu görüntü aralığın sonlu kalması.
+
+28
+00:03:49,812 --> 00:03:52,812
+Şehirin yok değil mi? Neyse, dış kapatıldı herhalde.
+
+29
+00:03:54,492 --> 00:03:55,612
+Yani mesela,
+
+30
+00:03:58,092 --> 00:03:59,731
+birden sonsuza
+
+31
+00:04:02,012 --> 00:04:04,012
+ne diyebiliriz?
+
+32
+00:04:04,492 --> 00:04:06,412
+Bir bölük kök x eğrisi.
+
+33
+00:04:08,132 --> 00:04:11,372
+Altında kalan acaba sonlu mu, sonsuz mu değil mi?
+
+34
+00:04:11,891 --> 00:04:13,451
+Biraz bir bölük isteyelim.
+
+35
+00:04:13,451 --> 00:04:15,891
+Daha kolay olsun, bir bölük x eğrisi altında.
+
+36
+00:04:16,500 --> 00:04:22,500
+Baktığın zaman birden sonsuza bir defa integral aralığı sonsuz değil mi? Kapalı bir aralık değil.
+
+37
+00:04:24,000 --> 00:04:31,500
+Ve integralın tabii görüntü ifadesi de sonsuz. Doğrultu sonsuz bir açıklık var orada. Hani x80 ile eyle arasında.
+
+38
+00:04:32,000 --> 00:04:39,500
+O alanın neyini? İşte alanını acaba sonu bir alana tekabül edeyim mi? Etmiyorum. Baktığımız zaman onun sonsuz bir alana karşılık geldiğini görüyoruz.
+
+39
+00:04:39,500 --> 00:04:42,000
+Ama öte yandan eğer 1 bölü x kare...
+
+40
+00:04:42,016 --> 00:04:56,216
+erişsi altında kalan x80 ile tabii arasında birden sonsuza kalan aynı genel şifre integral formu uyguladığımızda, o alanın sonlu bir toplama denk geldiğini, sonlu bir sayıya denk geldiğini görüyoruz.
+
+41
+00:04:58,636 --> 00:05:02,556
+Bu tabii nereden kare yapıyor? 1 bölü x karenin 1 bölü x'ten daha hızlı nereye?
+
+42
+00:05:03,136 --> 00:05:08,876
+İşte x80'e yaklaşması, yani sıfıra yakması anlamında açıklayabiliriz.
+
+43
+00:05:09,396 --> 00:05:20,896
+Bu durumlarda integralın sonucunun sonsuz olması, bulunaması durumunda integralı araksak diyoruz. Eğer böyle bir integralı eğer bulursak da...
+
+44
+00:05:25,235 --> 00:05:28,035
+Şu an benim sesim ve görüntüm geliyor mu?
+
+45
+00:05:29,835 --> 00:05:32,635
+Henüz daha bir şey paylaşmadım, daha yazmaya başladım, tamam mı?
+
+46
+00:05:33,355 --> 00:05:36,315
+Evet, tamam, daha henüz bir şey yazmaya başlamadım.
+
+47
+00:05:36,315 --> 00:05:42,435
+Sadece konuşuyoruz, şimdi yazınca zaten paylaşacağım.
+
+48
+00:05:44,084 --> 00:05:55,684
+Dolayısıyla, integral'ın sonucu sonlu oluyorsa, integral'a yakınsak integral, eğer sonsuz oluyorsa, eğer da hiç bulunamıyorsa, çünkü onları şimdi tanımlayacağız, nasıl, ne şekilde tanımlayacağımı da göreceğiz.
+
+49
+00:05:56,284 --> 00:06:02,424
+O zaman da integral'e sonsuz ya da ıraksak diyeceğiz. Daha doğrusu ıraksaktır diyeceğiz o integral.
+
+50
+00:06:03,344 --> 00:06:06,204
+Şimdi ekran paylaşımı yapıyorum.
+
+51
+00:06:08,124 --> 00:06:10,724
+Most sayfa herhalde size de geldi.
+
+52
+00:06:34,132 --> 00:06:38,991
+Direkten genelleştirmiş interral diyeceğim. Bu konuşmamızın arka ardından tabii.
+
+53
+00:06:41,572 --> 00:06:42,651
+Daha iyi yazıyordu.
+
+54
+00:06:55,444 --> 00:06:55,944
+yönele ilgili.
+
+55
+00:07:02,548 --> 00:07:06,507
+kare artı 2x, integral, buna bağlı, in-proping integral'ler de denir.
+
+56
+00:07:18,451 --> 00:07:27,171
+tabi İngilizce kullanırsanız direkt böyle yazılır. Ama Türkçe kullanırsanız, Türkçe bir kelime olarak sanki düşündüğümüzde bunu iyi koyuyoruz yazılım bakımda.
+
+57
+00:07:27,171 --> 00:07:35,572
+In proper interialler. İngilizce arattığın zaman iyisiz tabi aratmanızın. O zaman direkt karşınıza çıkar.
+
+58
+00:07:35,572 --> 00:07:43,572
+Şimdi biraz önce söylediğim gibi iki tip topu interialleri vardır. Bir, interi aralığın son olmaması.
+
+59
+00:07:43,795 --> 00:07:49,436
+sol ya da sağ uçlu noktalardan biri ya da her ikisinin birden sonsuz olması durumunda
+
+60
+00:07:50,516 --> 00:07:52,076
+birinci tip integral olacak.
+
+61
+00:07:52,396 --> 00:07:53,596
+İkinci tip de
+
+62
+00:07:53,915 --> 00:07:56,156
+verilen bir aralıkta fonksiyonun
+
+63
+00:07:56,475 --> 00:07:58,836
+süreksiz olduğu bir noktayla varsa değil mi?
+
+64
+00:07:59,956 --> 00:08:03,196
+Dolayısıyla tanım, görüntükümesinin ne olması?
+
+65
+00:08:03,355 --> 00:08:04,836
+Sonsuz olması bakıma değil mi?
+
+66
+00:08:06,836 --> 00:08:10,355
+O zaman direkt birinci tip genelistik integral edelim.
+
+67
+00:08:11,795 --> 00:08:21,876
+benci tip diye benci tip genelleştirilmiş integraller diyelim. Şöyle 2.3 koyalım ve altını çizelim.
+
+68
+00:08:27,572 --> 00:08:29,852
+Nasıl tanımayacağız bunu? Şöyle bir tanım vereceğiz.
+
+69
+00:08:31,132 --> 00:08:35,692
+Buna sonsuz sınırlı integralere, aslında 5 çift geneliş integraler veririz.
+
+70
+00:08:41,652 --> 00:08:43,372
+sonsuz sınırlı intereleri.
+
+71
+00:09:18,100 --> 00:09:26,100
+Yani fonksiyon, tanım kümesi sonsuz ama o sonsuz aralıkta ne dedi? Sınırlı. Değil mi? Fonksiyonlarına düşüneceğiz.
+
+72
+00:09:27,120 --> 00:09:30,923
+Şöyle tanımlayacağız. 1. Eğer fx...
+
+73
+00:09:38,676 --> 00:09:44,652
+A kapalı, bu taraf sonsuz kısmı açık. Aralığında sürekli ise...
+
+74
+00:09:56,692 --> 00:10:11,112
+O zaman, a'dan sonsuza, fx, dx integralini, artık sembolik olarak da bu integral limiti şöyle düşüneceğiz. Limit b sonsuza giderken,
+
+75
+00:10:15,059 --> 00:10:26,419
+a'dan b'ye. Başka bu sembolü getirerek, limiti getirerek, integral nedir? Biz sonunu değil mi integral haline getiriyoruz aslında? fx dx.
+
+76
+00:10:29,399 --> 00:10:39,899
+Dolayısıyla bu tarafın integralini alıp amaç nedir? Sonra bu integralı bulduktan sonra b sonuç için ne de limit alacağız. Bu ifade tabii a verilen belli bir sayıdır. b burada kalacak.
+
+77
+00:10:40,224 --> 00:10:53,423
+sonra b sonuç için, bu hesaplamın integral, b'ye bağlı çıkacak. b sonuç için limit aldığımızda, eğer sonlu bir limit varsa, o zaman integral'a yakınsa integral, aksa de erakta integral, içerisinde tamamını yazacağım birazdan.
+
+78
+00:10:53,423 --> 00:10:57,423
+1.2
+
+79
+00:10:57,423 --> 00:11:00,423
+eğer fx
+
+80
+00:11:06,580 --> 00:11:09,759
+Sen şunu büyüteyim, hepsini buraya sıktırmaya çalışalım.
+
+81
+00:11:10,160 --> 00:11:11,019
+Sağ olayım bilmiyorum ama.
+
+82
+00:11:13,059 --> 00:11:16,340
+Rx, bu kez eksi sonsuz b.
+
+83
+00:11:18,340 --> 00:11:21,700
+Şöyle alalım, soru 3.0'da sonsuza aldık.
+
+84
+00:11:25,524 --> 00:11:26,644
+aralığında sürekli ise
+
+85
+00:11:40,019 --> 00:11:50,779
+Bu kez, x sonsuzdan b'ye, fx diye x integralimizi,
+
+86
+00:11:55,155 --> 00:12:02,595
+Ne limit kullanacağız? Bu kez integralimiz A'ya bağlı çıkacak. Diyelim ki işte limit A-18'e giderken olacak.
+
+87
+00:12:02,595 --> 00:12:13,935
+Bu halde buraya bir A değil mi? Sabiti ya da değişkeni atadım. A'dan B'ye fx dx.
+
+88
+00:12:22,131 --> 00:12:29,731
+3, hani devamı olsun diye, diğer tarafa yazacağım mütegdeler değil mi?
+
+89
+00:12:29,731 --> 00:12:38,891
+eğer fx bu kez, eksi sonsuz artı sonsuz. Bak sonsuz sınırlı integral denemizin nedeni bu.
+
+90
+00:12:38,891 --> 00:12:44,011
+integral aralığı, değil mi? Ya uç noktadan bir tanesi sonsuz ya da her iki aralıkta sonsuz.
+
+91
+00:12:44,011 --> 00:12:48,931
+Ama o aralıkta fonksiyonları sınırlı yani sürekli değil mi? Aralığında sürekli ise.
+
+92
+00:13:01,683 --> 00:13:02,683
+Piri'c?
+
+93
+00:13:03,683 --> 00:13:04,683
+Reyes, haysiyo.
+
+94
+00:13:17,524 --> 00:13:18,524
+yine şöyle
+
+95
+00:13:20,803 --> 00:13:22,283
+diğer tarafa geçelim
+
+96
+00:13:24,604 --> 00:13:26,043
+integralimiz
+
+97
+00:13:27,124 --> 00:13:29,124
+şunu az yukarı alsak acaba
+
+98
+00:13:48,851 --> 00:14:01,851
+x sonsuzdan artı sonsu olan fx, dx integralimiz. Ben normalde burada bir R koyuyordum öyle bir sebelle ama burada C almış bir de C'yi alabiliriz.
+
+99
+00:14:02,851 --> 00:14:16,812
+Tabi C bir de ayrım ifadeimizi yukarıdaki hasta 1 ve 2'deki şeye belirleyeceğiz. Yani integralı x sonsuzdan C, D sayısına.
+
+100
+00:14:16,916 --> 00:14:28,276
+fxtx, tx, artı c'den de artı sonsa. fxtx, tx. Bu form.
+
+101
+00:14:30,416 --> 00:14:33,056
+Yok da. Olur.
+
+102
+00:14:35,556 --> 00:14:37,036
+Yada birçok.
+
+103
+00:14:40,371 --> 00:14:48,371
+Tabi burada dikkatinizi çeken şey her bir durumda. Limit tonu ise, genelişim integral, yakın saktır ve limit değeri, genelişim integral değeridir.
+
+104
+00:14:50,371 --> 00:14:51,915
+Her bir durumda.
+
+105
+00:14:55,059 --> 00:14:56,179
+Limit sonu ise
+
+106
+00:15:11,091 --> 00:15:16,751
+cümleyi bitireyim, geçeceğim. Her bir durumda limit sonunu ise, genelleştirilmiş integral yakın saktır.
+
+107
+00:15:35,635 --> 00:15:36,395
+x kare artı 2x, f'
+
+108
+00:15:52,299 --> 00:15:53,039
+ı ı ı ı
+
+109
+00:15:53,039 --> 00:15:55,360
+ı
+
+110
+00:15:45,620 --> 00:15:47,799
+ne diyelim? Genelleştirilmiş integral değeridir.
+
+111
+00:15:49,360 --> 00:15:53,620
+Genelleştirilmiş integral değeridir.
+
+112
+00:15:58,164 --> 00:16:04,172
+ı
+
+113
+00:15:57,364 --> 00:16:00,964
+Bu cümle, kelime uzun olduğu için sürekli yazmak istemedim.
+
+114
+00:16:02,324 --> 00:16:04,004
+Eğer limit yoksa...
+
+115
+00:16:15,296 --> 00:16:23,296
+ı
+
+116
+00:16:14,803 --> 00:16:18,204
+genelleştirmiş integral ile ıraksak. Ya da genelleştirmiş integral yok.
+
+117
+00:16:18,204 --> 00:16:21,004
+Aslında tanımadın değil mi? Genelleştirmiş integral.
+
+118
+00:16:23,004 --> 00:16:24,403
+Genelleştirmiş...
+
+119
+00:16:25,604 --> 00:16:28,803
+...irraksak.
+
+120
+00:16:41,172 --> 00:16:42,471
+Önce 6x sayfaya geçeyim.
+
+121
+00:16:44,971 --> 00:16:46,412
+Oda izlemadığınız ziyer varsa bakalım.
+
+122
+00:17:12,051 --> 00:17:12,891
+Tamam. Peki.
+
+123
+00:17:16,627 --> 00:17:18,307
+Hemen bir tane örnekte başlayalım.
+
+124
+00:17:19,387 --> 00:17:20,587
+Yani burada tabii...
+
+125
+00:17:26,195 --> 00:17:36,596
+Zaten fonksiyon eğer pozitifse, yukarıdaki tanımdaki integrallerin herhangi biri bir alan olarak yorumlanabilir mi bakıma?
+
+126
+00:17:40,723 --> 00:17:57,903
+ucu açık bir düzenpsel bölge gibi düşüneceğiz. O düzenpsel bölgenin alanı acaba, bakalım, sınırsız bir bölge var karşımıza. Sınırsız bölgenin alanı sonlu mu, sonlu değil mi? Değil mi? Onun için bir örneği şimdi göz önüne almış olacağız. Örnek.
+
+127
+00:18:14,387 --> 00:18:17,007
+yereşil elin x bölü x kare.
+
+128
+00:18:21,556 --> 00:18:23,056
+elisi altında
+
+129
+00:18:30,612 --> 00:18:32,612
+x tesbiden x tesbiden x sonsa
+
+130
+00:18:39,923 --> 00:18:40,884
+Alın sonundas.
+
+131
+00:18:46,675 --> 00:18:48,675
+yani alanının sonlu bir değeri var.
+
+132
+00:18:55,347 --> 00:18:57,087
+Sonra, sonu ise değerletir.
+
+133
+00:19:09,107 --> 00:19:22,367
+Arkadaşlar, alanımız aslında, şöyle grafikte eğer, elimizi kabaca tutmak istersek.
+
+134
+00:19:26,291 --> 00:19:49,291
+Tabii elin x, böyle x kare, tartışacak bir eğri değil belki ama, yani şöyle bir kabaca işte, birden değil mi? Ne olur? Birde sıfır olur, x80'i kesiyor ve artarak gidiyor. İşte belli bir eğriye kadar artıyor. Sonra azalıyorum, artma noktasını tam işte şimdi tartışmıyoruz tabii.
+
+135
+00:19:51,291 --> 00:19:52,291
+Şöyle.
+
+136
+00:19:57,140 --> 00:19:59,320
+Şurası belki biraz daha düşkün olacaktır.
+
+137
+00:20:12,435 --> 00:20:19,015
+Böyle bir grafiği var kabaca. Elimiz bu. x bölü x kare.
+
+138
+00:20:22,483 --> 00:20:31,144
+Baktığınız zaman, E7 altında kalan bölge, yani xx senörge aslında sınırsız değil mi? Bu nereye kadar gidiyor?
+
+139
+00:20:32,003 --> 00:20:39,063
+Tabii limite baktığınız zaman x artısı olsak derken, o limitin acaba sıfır olduğunu söyleyebiliyormuş.
+
+140
+00:20:40,723 --> 00:20:48,243
+Biz bunu, işte belli bir tanımı uygulamak için,
+
+141
+00:20:51,380 --> 00:20:53,440
+b değerli seçelim. Şöyle.
+
+142
+00:20:55,360 --> 00:20:55,880
+Tamam mı?
+
+143
+00:20:56,440 --> 00:20:57,160
+Buradan alacağız.
+
+144
+00:20:59,840 --> 00:21:01,079
+Yani şurası 1.
+
+145
+00:21:04,079 --> 00:21:05,320
+i'den b'ye kadar.
+
+146
+00:21:07,099 --> 00:21:08,740
+Bizim y eşittir.
+
+147
+00:21:10,240 --> 00:21:11,880
+y eşittir.
+
+148
+00:21:13,260 --> 00:21:14,800
+L'in x, L'in x kare yerimiz.
+
+149
+00:21:16,059 --> 00:21:16,740
+Evet.
+
+150
+00:21:18,836 --> 00:21:21,115
+x'nin x'ni şöyle bir de değil.
+
+151
+00:21:25,395 --> 00:21:26,395
+videoyu beğenmeyi ve yorum yapmayı unutmayın.
+
+152
+00:21:30,804 --> 00:21:35,983
+Baktığımız zaman, normalde, imtoplu integralımız şöyle.
+
+153
+00:21:37,664 --> 00:21:38,744
+Birden sonsuza,
+
+154
+00:21:42,224 --> 00:21:44,044
+ln x bölü x kare de x.
+
+155
+00:21:46,204 --> 00:21:47,403
+Bunun limit,
+
+156
+00:21:48,483 --> 00:21:50,884
+gösterelim bizim birin çıktaki olduğu gibi değil mi?
+
+157
+00:21:51,604 --> 00:21:53,864
+Nedir? b artı sonsuza giderken,
+
+158
+00:21:55,324 --> 00:21:56,584
+birden b'ye işte.
+
+159
+00:21:57,491 --> 00:21:58,851
+L'in x bölü x kare.
+
+160
+00:22:03,391 --> 00:22:07,011
+Önce bu integral ile de, bu önce bu integral ne yapmamız lazım?
+
+161
+00:22:07,811 --> 00:22:08,652
+Çözmemiz gerekir.
+
+162
+00:22:09,251 --> 00:22:12,351
+Birden b'ye L'in x bölü x kare integral.
+
+163
+00:22:13,172 --> 00:22:16,031
+Nereye çözerseniz, tabii ki kısım integrasyonu değil mi?
+
+164
+00:22:16,551 --> 00:22:17,011
+U'luğa yarak.
+
+165
+00:22:17,751 --> 00:22:20,132
+Yani L'in x ise u, birbiri x kare de,
+
+166
+00:22:21,491 --> 00:22:24,071
+b'ye de belki bunu daha önce çözmüştür.
+
+167
+00:22:24,788 --> 00:22:29,407
+Yine biz buraya şu intiyle çözeceğiz.
+
+168
+00:22:31,168 --> 00:22:32,947
+u eşittir,
+
+169
+00:22:34,548 --> 00:22:35,327
+ln x,
+
+170
+00:22:37,248 --> 00:22:40,407
+dv eşittir,
+
+171
+00:22:42,748 --> 00:22:43,887
+1 bölü x kare de x.
+
+172
+00:22:46,887 --> 00:22:48,847
+Dolayısıyla d u eşittir,
+
+173
+00:22:49,627 --> 00:22:50,627
+1 bölü x tx,
+
+174
+00:22:54,003 --> 00:22:58,723
+v eşitir, eksir bölü, eksi, şöyle eksir bölü x.
+
+175
+00:23:01,503 --> 00:23:04,364
+Bunları götürüp ne yapalım? Kıskitevasyon formülü yerine yazalım.
+
+176
+00:23:05,943 --> 00:23:06,543
+Eşittir.
+
+177
+00:23:10,451 --> 00:23:20,331
+u çarpı v, yani ln x çarpı, eksi 1 bölü x, integral sıfırdan bire.
+
+178
+00:23:21,132 --> 00:23:24,532
+Mesela hatta şöyle de daha iyi ayırabilirsiniz.
+
+179
+00:23:27,331 --> 00:23:32,012
+Birden b eksi v de u ifadesini yapacağız.
+
+180
+00:23:32,892 --> 00:23:37,612
+Birden b eksi 1 bölü x bulmuştuk.
+
+181
+00:23:38,228 --> 00:23:40,708
+d u da, o da bir bölü x değil mi?
+
+182
+00:23:43,508 --> 00:23:44,148
+x
+
+183
+00:23:44,148 --> 00:23:48,488
+Bu ifadeyi tabii, başta limitri yazmayı unuttuk.
+
+184
+00:23:50,648 --> 00:23:51,948
+Limitsiz, çöğür mü?
+
+185
+00:23:52,788 --> 00:23:55,588
+Eşittir, limit b sonsuza gidelim.
+
+186
+00:23:55,728 --> 00:23:59,387
+Siz bunu, limitsiz ayrı bir yerde çözüp getip bir yerine koyabilirsiniz.
+
+187
+00:23:59,387 --> 00:24:01,768
+Yani orada herhangi bir sakınca.
+
+188
+00:24:02,228 --> 00:24:06,907
+Çünkü bu ifade tabii şöyle, daha büyük bir parentesi olarak kullanacağız şöyle, değil mi?
+
+189
+00:24:08,427 --> 00:24:09,268
+Limit hepsini çeliyor.
+
+190
+00:24:11,327 --> 00:24:11,968
+Eşittir.
+
+191
+00:24:14,307 --> 00:24:21,988
+Limit b sonuçta giderken, burada henüz daha limit alıyorum, sadece sınır değerlerini yazalım.
+
+192
+00:24:23,067 --> 00:24:28,807
+L'nb hatta eksi L'nb çarpı 1 bölü b. Yani L'nb bölü b aslında, değil mi?
+
+193
+00:24:28,807 --> 00:24:29,248
+Yemek lazım.
+
+194
+00:24:31,059 --> 00:24:34,459
+atsın için, L'Hospital 1, 0 olduğu için 0, onu artı yazmaya gerek yok.
+
+195
+00:24:35,659 --> 00:24:41,199
+Bu. Sonra, x'i burada artı olsun ama tekrar integralden, 1x kareden yine bir x gelecek.
+
+196
+00:24:41,799 --> 00:24:47,359
+Integralde eksi 1 bölü x. Bu da integral sınırları birden b'ye.
+
+197
+00:24:47,959 --> 00:24:51,699
+Yani burada 1 bölü x kare gelir. Eksi dışarı attık. Bölü x kare integral.
+
+198
+00:24:51,699 --> 00:24:56,639
+x'i bölü x olduğu için direkt bunu böyle yazabilir değil. Birden b'ye.
+
+199
+00:24:58,324 --> 00:25:00,264
+Yani hatta bunu işte sen şöyle yapalım.
+
+200
+00:25:05,076 --> 00:25:06,076
+kreşma posici.
+
+201
+00:25:15,443 --> 00:25:37,563
+parantez de kapattım şöyle. Tamam mı? Eşittir. Limit b sonsuza giderken, burası eksi lnb bölü b. Burada yerine yazdığım zaman eksi 1 bölü b artı 1 olur değil mi? Eksi 1 bölü b artı 1 olur.
+
+202
+00:25:43,251 --> 00:25:48,851
+İfadesine bakarsın, b sonuç için, bu sonuç bölük sonuç olduğu için, bu ifadeye ne uygulanır? O siteler uygular.
+
+203
+00:25:49,331 --> 00:25:53,331
+Bu ifadesi zaten sıfır, b sonuçta giderken bu sıfır olur.
+
+204
+00:25:53,791 --> 00:25:55,631
+Sabit, bunun limitten bağımsız.
+
+205
+00:25:56,491 --> 00:26:06,971
+Buraya da integral için, limit için baktığımız zaman, limit b sonuçta giderken, böyle yazalım, eksi 1 bölü b bölü 1 değil mi?
+
+206
+00:26:07,604 --> 00:26:11,004
+1 bölü b bölü 1, f'hopital uygulamaları yani.
+
+207
+00:26:12,384 --> 00:26:14,484
+x'i 0 artı 1.
+
+208
+00:26:16,204 --> 00:26:17,344
+Eşitti, böyle yazalım.
+
+209
+00:26:17,984 --> 00:26:22,764
+Ve son sayıdık, burası 0 olacağı için, sonuçluya eşit, bakın direkt bir değişik olur.
+
+210
+00:26:24,384 --> 00:26:28,384
+0, isterseniz bir şey yapalım şuraya, onu daha iyi görmeniz açısından.
+
+211
+00:26:29,764 --> 00:26:32,064
+Şurası biraz tüskün yazamadık.
+
+212
+00:26:38,675 --> 00:26:41,155
+düzgün yazmadığım zaman, uygunuzun.
+
+213
+00:26:43,815 --> 00:26:53,515
+Limit, ve son sekre, eksi bölüme, bölü, yani eksi zaten burada vardı, isterse eksiği de bakalım.
+
+214
+00:26:54,735 --> 00:26:55,915
+Yani şunun başına alalım.
+
+215
+00:26:56,915 --> 00:26:59,895
+Ama çok da sırıtmıyor yani, burada olmazsa şuraya kozak.
+
+216
+00:27:01,215 --> 00:27:03,635
+Benim çok, bir bölüm mükün kadar çok kaldı.
+
+217
+00:27:03,995 --> 00:27:05,995
+Buradan buraya gelecekken de Hospital'ı yukuradık.
+
+218
+00:27:10,036 --> 00:27:33,716
+bu zaten sıfırdı, artı 1. Demek ki, burası da sıfır olacak için, sıfır artı sıfır artı 1, eşitir 1. Bu bize nedir? Genel eğlenceli integralın, ya kısak olduğunu ve yani alanın sonlu değerinde 1 olduğunu bize söyler değil mi?
+
+219
+00:27:36,852 --> 00:27:37,352
+sona
+
+220
+00:27:43,092 --> 00:27:45,672
+genelleştirmiş, R diyebilirsiniz.
+
+221
+00:27:47,032 --> 00:27:47,592
+integral,
+
+222
+00:27:50,192 --> 00:27:51,012
+yakınsak olup,
+
+223
+00:27:55,604 --> 00:28:00,564
+integral'in sonlu değeri, daha doğrusu alanın değil mi? Alan sonludur ya da değeri birdir.
+
+224
+00:28:07,539 --> 00:28:08,079
+alan
+
+225
+00:28:08,079 --> 00:28:12,099
+sonudur.
+
+226
+00:28:14,099 --> 00:28:15,000
+E-dehri bitir.
+
+227
+00:28:22,804 --> 00:28:26,804
+kare artı 3x, türev, yakın sakoluk, bağın sonunda değirilmiştir.
+
+228
+00:28:26,804 --> 00:28:31,804
+Evet, böylece şöyle şöyle bir işaret koyalım.
+
+229
+00:28:31,804 --> 00:28:36,804
+Örneğimizi bu şekilde sonuçlandırdığımızı görmüş oluyoruz. Tamam mı?
+
+230
+00:28:40,564 --> 00:28:42,004
+Şimdi başka bir örneğe geçelim.
+
+231
+00:28:42,484 --> 00:28:44,564
+Her iki ucunda da
+
+232
+00:28:44,564 --> 00:28:49,284
+x sonuçlar bir sonuç olma durumunda bakalım nasıl çözeceğiz.
+
+233
+00:28:51,044 --> 00:28:52,344
+Çözüm de var mı sorumuz arkadaşlar?
+
+234
+00:28:55,844 --> 00:28:56,403
+O halde
+
+235
+00:28:56,403 --> 00:29:00,424
+bir örnek daha çözüp
+
+236
+00:29:00,424 --> 00:29:04,224
+sonra kaldığımız etten devam edeceğiz.
+
+237
+00:29:15,700 --> 00:29:17,700
+Bir önceki sefer mi şuyosunuz yine?
+
+238
+00:29:20,700 --> 00:29:21,700
+Tabii ki.
+
+239
+00:29:22,900 --> 00:29:24,652
+Yani buraya biz...
+
+240
+00:29:28,564 --> 00:29:30,564
+resmini devlet uyguladık.
+
+241
+00:29:30,564 --> 00:29:32,564
+Tamam mı? Şuraya.
+
+242
+00:29:35,564 --> 00:29:37,564
+Bunu götürürse de arkada yerlerine yazdım.
+
+243
+00:29:39,564 --> 00:29:40,564
+Şöyle.
+
+244
+00:29:49,875 --> 00:30:00,875
+Buraya koymaya gerek, üzerinde geldi de, hoşçak siz beğendim. Sahi ile gösterdim, siyah ile de gösterebilirsiniz. Bazen tek siyah siyah olduğun zaman, buraya mesela kısmı teklasyonu biraz.
+
+245
+00:30:00,875 --> 00:30:11,875
+Kısmı, integrasyon değil mi? İntegrasyon formüle oluyorsun. Elini kırış. Peki.
+
+246
+00:30:16,915 --> 00:30:17,936
+Diğer bir örnek
+
+247
+00:30:34,708 --> 00:30:38,708
+Bakalım burada ne sormuş? Direkt bir integral imiş. İntegre hesaplar ediyor.
+
+248
+00:30:40,148 --> 00:30:44,948
+x sonsuzdan artı sonsuzdan 1 bölü 1 artı x kare.
+
+249
+00:30:46,948 --> 00:30:47,668
+Dx.
+
+250
+00:30:48,548 --> 00:30:50,708
+Aslında bunlar çan erisi falan derler.
+
+251
+00:30:50,948 --> 00:30:53,908
+Şeklini ben biliyorum da, bakın burada var mı şeklinde.
+
+252
+00:30:53,908 --> 00:30:54,908
+Var, evet.
+
+253
+00:30:56,668 --> 00:30:59,668
+Bu integral değeri de aslında pi çıkacak.
+
+254
+00:31:00,308 --> 00:31:02,308
+Her iki taraftan sınırsız olmasına rağmen.
+
+255
+00:31:03,923 --> 00:31:15,203
+Yani integralini biz direkt zaten sorunca bildiğimiz için integral hesaplarını izliyoruz. Ama bunun bir genelişim, integral'e de sıkıntı arkadaşlar, integral tiplerini belirlemek.
+
+256
+00:31:15,203 --> 00:31:22,683
+Gördüğümüz zaman böyle uçlardan berisi x-sonist artı falan bunun hemen bir genelişim, integral olduğunu fark edip ona göre çöremiz gerekir.
+
+257
+00:31:22,683 --> 00:31:27,683
+Normal, direkt çözüm yaparsak, limit kullanmazsak ne olur?
+
+258
+00:31:29,299 --> 00:31:34,299
+Çoğunlukla belki aynı sonucu bulursunuz ama öyle durumlarla karşılaşırsınız ki sonuç hatalı veririz arkadaşlar.
+
+259
+00:31:34,299 --> 00:31:38,700
+Çünkü limitle bir fonksiyonun bir noktaki değerini hesaplamak ayrı bir şey değil mi?
+
+260
+00:31:38,700 --> 00:31:43,700
+Limit hesaplamak ayrı bir şey, o ayrı bir şey. Buna dikkat etmeniz gerekir.
+
+261
+00:31:45,700 --> 00:31:49,299
+Şimdi bu aslında çözümü şuraya yaparız.
+
+262
+00:31:53,203 --> 00:31:54,683
+Şöyle bir grafiç isim ben.
+
+263
+00:32:02,804 --> 00:32:03,304
+grafik.
+
+264
+00:32:07,188 --> 00:32:11,208
+Nasıl bir şey, çan eğrisine benziyor dedik işte, tamam kabaca söyleyeceğim ben.
+
+265
+00:32:11,888 --> 00:32:15,847
+Bu arada çok yakında da, tabii böyle bir bölü, 1-6x kare değil mi, şeye çok yakın geliyor.
+
+266
+00:32:16,708 --> 00:32:17,668
+X'e, x'e, x'e.
+
+267
+00:32:26,644 --> 00:32:27,444
+planlı bir şey.
+
+268
+00:32:31,955 --> 00:32:33,756
+Burası tabi erisel.
+
+269
+00:32:49,460 --> 00:32:50,740
+ilk uçtan da
+
+270
+00:32:58,644 --> 00:32:59,483
+Şöyle bir kalsın.
+
+271
+00:33:07,059 --> 00:33:22,419
+bu rejizce. Buradaki elilikten dolayı herhalde. Tam benim istediğim gibi olmadı. Şuradaki elilikten. Çok önemli. Bu uçların açık olduğu belli. Yani şu uçlardan bir açıklık var. Şuradaki kısım var ya.
+
+272
+00:33:25,460 --> 00:33:26,460
+tabelibis gittim.
+
+273
+00:33:42,740 --> 00:33:46,540
+Evet, böyle kalsın. Tamam. Yani simetrik oldu zaten belli.
+
+274
+00:33:49,971 --> 00:33:59,331
+Şurası y ekseni, burası x ekseni. Bu orijen, bu da y eşittir. 1 bölü 1 altı x kare eğris.
+
+275
+00:34:00,951 --> 00:34:08,211
+Dolayısıyla bu sınırsız bir bölgeler değil mi? Helikuşluğunda x ekseni. Bu acaba bize bir sonu enteğe, sonu bir alan.
+
+276
+00:34:09,331 --> 00:34:15,532
+Yani bunu biz iki türlü çözebiliriz. Azta fonksiyonumuz çift ve simetrik aralık özelliği kullandığımızda bu aslında.
+
+277
+00:34:16,628 --> 00:34:19,448
+buna ırgayalım isterseniz.
+
+278
+00:34:29,619 --> 00:34:30,380
+yiyemedik.
+
+279
+00:34:32,760 --> 00:34:33,659
+Bu integral diyelim.
+
+280
+00:34:34,559 --> 00:34:36,180
+I eşittir aslında şu arkadaşlar.
+
+281
+00:34:36,940 --> 00:34:39,840
+İki katı sıfırdan sonuçta değil mi?
+
+282
+00:34:39,940 --> 00:34:42,539
+Fonksiyon çift fonksiyonluğunda 1 bölü 1 artı x kare eşittir.
+
+283
+00:34:45,220 --> 00:34:48,340
+Dolayısıyla yukarıdaki tek integral ifadesine dönüştürdük.
+
+284
+00:34:48,340 --> 00:34:51,880
+Ya da siz bunu tabii şöyle bahçe yapabilirsiniz aslında.
+
+285
+00:34:52,119 --> 00:34:54,159
+Hani niye böyle iki katı falan yaptık derseniz.
+
+286
+00:34:55,139 --> 00:34:56,319
+Şöyle de olur aslında.
+
+287
+00:34:57,396 --> 00:35:11,676
+x sonsuzdan 0'a 1 bölü 1 artı x kare x artı 0'dan artı sonsuza 1 bölü 1 artı x kare x.
+
+288
+00:35:14,416 --> 00:35:18,836
+Ya da ben direkt bunu simetrik aralık olduğu için değil mi? Mesela x'a'dan a falan diyorduk ya.
+
+289
+00:35:19,136 --> 00:35:23,336
+Bence bu arada sonlu sayıdı ama burada da aynı şey çalışır aslında.
+
+290
+00:35:23,891 --> 00:35:30,971
+eşittir, iki katta bunun yerine, iki tane integral sıfırdan altı sonuç alıp, bir bölü, bir artı x kare yaparsın.
+
+291
+00:35:34,356 --> 00:35:45,596
+Dolayısıyla hemen 2 çarpı limit, b sonsuza giderken, bakın tek bir tane uğruyorum, 0'dan b'ye, 1 bölü 1 artı x kare.
+
+292
+00:35:47,596 --> 00:35:50,556
+x'di, eşittir.
+
+293
+00:35:52,316 --> 00:35:54,775
+2 katı limit b sonsuza giderken,
+
+294
+00:36:00,083 --> 00:36:03,083
+f'e son sekrelerken, bu integral ne olur?
+
+295
+00:36:03,283 --> 00:36:05,283
+arktanjant x değil mi?
+
+296
+00:36:08,563 --> 00:36:14,884
+x kare artı 2x, 0'dan bire.
+
+297
+00:36:18,260 --> 00:36:20,579
+x kare artı 2x, limit b sonsuza giderken,
+
+298
+00:36:23,400 --> 00:36:25,260
+arktanjant bx, arktanjant sıfır.
+
+299
+00:36:25,860 --> 00:36:27,480
+Arktanjant sıfır nedir arkadaşlar?
+
+300
+00:36:29,480 --> 00:36:31,740
+Arktanjant sıfır, kim söyler?
+
+301
+00:36:36,851 --> 00:36:41,851
+Evet.
+
+302
+00:36:45,876 --> 00:36:47,176
+0 dedi mi? Evet.
+
+303
+00:36:48,596 --> 00:36:53,036
+Dolayısıyla aktarınca b eksi, belki aktarınca 0'a 0, yözebilirsiniz, 0.
+
+304
+00:36:53,775 --> 00:36:57,235
+Şöyle diyelim, onu böyle kapat, şuradan burada yer yok, o yüzden öyle yazdım.
+
+305
+00:36:58,056 --> 00:37:04,596
+Dolayısıyla şimdi limite geldiğimizde, 2 çarpı limit b sonsuza giderken,
+
+306
+00:37:08,115 --> 00:37:09,775
+artı tanjant b.
+
+307
+00:37:12,096 --> 00:37:13,836
+Bu ne demektir aslında arkadaşlar?
+
+308
+00:37:14,435 --> 00:37:14,596
+Değil mi?
+
+309
+00:37:16,615 --> 00:37:18,695
+Tanjantı sonsuz olan açı.
+
+310
+00:37:19,395 --> 00:37:19,675
+Neydi?
+
+311
+00:37:20,716 --> 00:37:21,256
+Söyleyin bana.
+
+312
+00:37:22,155 --> 00:37:24,175
+pi bölü 2.
+
+313
+00:37:24,775 --> 00:37:25,115
+Doğru mu?
+
+314
+00:37:25,775 --> 00:37:26,296
+pi bölü 2.
+
+315
+00:37:26,775 --> 00:37:27,435
+Nasıl çözmüş?
+
+316
+00:37:27,435 --> 00:37:28,756
+Buraya bakalım da.
+
+317
+00:37:30,275 --> 00:37:31,735
+A'dan sıfır almış.
+
+318
+00:37:35,923 --> 00:37:37,524
+İki tane interior yapışırmış bu.
+
+319
+00:37:45,715 --> 00:38:10,715
+2 tane de öyle düşürür. Biz daha kısa süre çözdük. 2x1, f' bölü 2. Değiştirdik. Sonucu neydi? Erdiye düşürdük. Biz bu şekilde yazmak yerine yukadakini devam ettirip, bunu işte şöyle hatta bir şey koyarım buraya. Bu integralın sonucunu übilecek buna.
+
+320
+00:38:11,231 --> 00:38:14,032
+Bu öbürünün sonucunu pi bölü 2 buluyoruz.
+
+321
+00:38:17,192 --> 00:38:19,152
+Bunun sonucu da pi bölü 2 buluyoruz.
+
+322
+00:38:21,851 --> 00:38:25,851
+Evet, mesela pi bölü 2 artı bölü 2 eşitir pi. Siz de böyle de deneyebilirsiniz yani.
+
+323
+00:38:27,251 --> 00:38:29,451
+Pi bölü 2 artı, pi bölü 2.
+
+324
+00:38:31,152 --> 00:38:33,112
+Evet, sonucu pi buluyorsunuz.
+
+325
+00:38:34,492 --> 00:38:38,431
+Bu, değil mi? İki yandan da
+
+326
+00:38:40,115 --> 00:38:42,315
+siz bakın gözükendi mi integralin?
+
+327
+00:38:43,315 --> 00:38:46,715
+hatta sonunu belli değil mi? Allah'ın oraya integralin geldiğini görmüş oluyoruz.
+
+328
+00:38:55,891 --> 00:38:56,531
+şanır.
+
+329
+00:40:01,940 --> 00:40:03,220
+birazcık anılmıştır.
+
+330
+00:40:04,099 --> 00:40:06,279
+Aslında bu şu şeyi aynı.
+
+331
+00:40:12,788 --> 00:40:15,108
+Bundan aslında şeyleri var.
+
+332
+00:40:17,427 --> 00:40:19,827
+Ekran alıcısı falan var değil mi onunla?
+
+333
+00:40:20,108 --> 00:40:23,307
+Yapılabilir, o orijinallerini alıp mesela yapıştırabiliyorsun ama
+
+334
+00:40:23,748 --> 00:40:26,068
+bu uyguların bunu ben bilmiyorum da.
+
+335
+00:40:27,827 --> 00:40:29,547
+Aslında yeri böyle bir yer.
+
+336
+00:40:30,827 --> 00:40:32,427
+Şöyle biraz.
+
+337
+00:40:33,827 --> 00:40:36,988
+Çok şahıs. Burası nasılsa burası da aynı olan.
+
+338
+00:40:37,188 --> 00:40:39,068
+Olan bir şey olması lazım aslında.
+
+339
+00:40:40,947 --> 00:40:41,867
+x kare artı 2x, f'
+
+340
+00:40:57,684 --> 00:41:01,844
+Baya bir mücadelemiz sonunda değil mi?
+
+341
+00:41:02,623 --> 00:41:03,344
+Böyle bir şey vardır.
+
+342
+00:41:03,583 --> 00:41:04,164
+Zahirin böyle.
+
+343
+00:41:04,324 --> 00:41:05,024
+Neyse kalsın.
+
+344
+00:41:13,715 --> 00:41:14,855
+Peki o zaman arkadaşlar,
+
+345
+00:41:22,420 --> 00:41:31,420
+Bir örnek daha yazalım, çözümünü sonra yapalım. Bu meşhur bir integraldir, buna bir paint integraldir, bunların serileri de var aslında.
+
+346
+00:41:38,483 --> 00:41:56,884
+birden sonsuza, dxp, x3p. Yani bu integral'lar öyle bir şey ki, p aslında birden küçük eşit olduğu zaman, yıraksak birden büyük olduğu zaman da yakınsak bir mtok integral'e karşımızda aslında.
+
+347
+00:41:57,884 --> 00:42:05,083
+p'nin her değeri için, integral'i, pardon p'nin yakınsak.
+
+348
+00:42:05,172 --> 00:42:08,092
+integralın yakın sadığında değeri nedir diye sormuş.
+
+349
+00:42:09,231 --> 00:42:10,472
+Yani şöyle bir integral var.
+
+350
+00:42:14,228 --> 00:42:14,947
+şey yapalım.
+
+351
+00:42:18,739 --> 00:42:22,340
+p'nin hangi direvi?
+
+352
+00:42:27,572 --> 00:42:28,072
+için.
+
+353
+00:42:33,235 --> 00:42:34,355
+birden sonuçta
+
+354
+00:42:34,355 --> 00:42:38,255
+dx bölü x teri bire.
+
+355
+00:42:53,780 --> 00:42:58,460
+ve integralın yakısı adı diğer nedir? Eğer yakısa kısı diğer nedir?
+
+356
+00:42:59,780 --> 00:43:00,780
+Öyle değil.
+
+357
+00:43:02,780 --> 00:43:03,724
+Eee?
+
+358
+00:43:08,052 --> 00:43:10,851
+Değer nedir? Yani türev, ne kısadı değer bilmeyelim.
+
+359
+00:43:22,900 --> 00:43:27,260
+Şimdi arkadaşlar, bu direkt bireçip bir input integral.
+
+360
+00:43:27,260 --> 00:43:41,900
+Hemen şöyle integral yazarsak, birden sonsuza x kare p eşittir limit.
+
+361
+00:43:48,500 --> 00:44:05,500
+x kare artı 2x, f' tabi sizin test olduğunuz için böyle bir dönüşümü göstererek ama bunlar yerine bir şey sorabilir. Mesela bu integralın gösterilimi nasıldır değil mi? Improber karşılığı çözüm için aşamasında. Dolayısıyla bunun yazıldığını bilmemiz gerekiyor mutlaka.
+
+362
+00:44:06,500 --> 00:44:13,500
+Limit B sonsuza giderken, bu x kare artı 2x, f'dir. İntegriyatı x kare artı 2x, f.
+
+363
+00:44:15,476 --> 00:44:17,655
+artı 1 bölü, eksi p artı 1 değil mi?
+
+364
+00:44:18,655 --> 00:44:30,516
+Yani bir bakıma, x'leri, öyle diyelim tamam, x'leri, eksi p artı 1 bölü, eksi p artı 1.
+
+365
+00:44:33,376 --> 00:44:36,256
+Yani türev sınırında yazayım, birden b'ye.
+
+366
+00:44:39,764 --> 00:44:55,024
+Bu elbette limit, b son sayıdakini yerine yazarsak bunu, tabi bu x'i p artı 1 ya da 1-p'yi ifade edince zaten sabit olduğu için dışarıya atabiliriz limit dışına. Daha doğrusu pandil dışına.
+
+367
+00:44:56,164 --> 00:45:04,144
+1 bölü 1-p, sonra sınırla yerine yazalım. b'yi yerine yazdığımız zaman, tabi x'i ne olur?
+
+368
+00:45:07,635 --> 00:45:12,515
+b-1 mi olur? b üzeri p-1 olur.
+
+369
+00:45:12,515 --> 00:45:18,635
+Vahşeyse sen şöyle bir yazalım daha sonra ona bakalım. b üzeri eksi p artı 1.
+
+370
+00:45:18,635 --> 00:45:22,836
+1 için yazdığımız zaman zaten kendisi olacaktı, direkt eksi 1 yani.
+
+371
+00:45:22,836 --> 00:45:35,235
+Dolayısıyla limit şöyle 1 bölü 1, 1 eksi p'yi dışarı atalım. Limit ile şöyle göz önüne aldığımızda bunu da şöyle yazalım.
+
+372
+00:45:35,443 --> 00:45:40,023
+1 bölü b üzeri 1-p, değil mi? Şöyle olur.
+
+373
+00:45:41,264 --> 00:45:45,724
+Yok, p-1 olur. Aşağıya attığımız zaman işaret değişecek, değil mi?
+
+374
+00:45:47,903 --> 00:45:48,684
+Üstün işaret.
+
+375
+00:45:49,483 --> 00:45:50,123
+Eksi 1.
+
+376
+00:45:52,243 --> 00:45:59,983
+Şimdi bu intihar tabi, eğer p birden büyükse, paydada kalacağı için bu sayı, sonuç ne olur? 0 olur.
+
+377
+00:46:00,596 --> 00:46:09,935
+Ama P1'e eşit ve birden küçükse, 1'e eşitse zaten, aslında P farklı bir için önce düşünmek lazım. P1 için zaten direkt integral ne olacaktır aslında?
+
+378
+00:46:10,655 --> 00:46:13,815
+Öyle diyelim. P farklı bir için değil.
+
+379
+00:46:16,216 --> 00:46:19,435
+İçin. Böyle çözüm soralım, tamam mı?
+
+380
+00:46:19,996 --> 00:46:24,115
+Çünkü P eşit bir için zaten tanımlı değil, değil mi? Gördüğünüz gibi.
+
+381
+00:46:24,655 --> 00:46:27,935
+Çünkü burası zaten ifade ederek bize tanımsızlık veriyor.
+
+382
+00:46:30,068 --> 00:46:32,068
+b sonsuza gidecek.
+
+383
+00:46:33,468 --> 00:46:36,068
+Şimdi dolayısıyla bu integralın sonucu bana
+
+384
+00:46:38,268 --> 00:46:41,268
+şöyle p'nin durumuna göre iki sonuç verecek.
+
+385
+00:46:42,068 --> 00:46:47,268
+Bir tanesi ya 1 bölü 1 eksi p'yi verir ama şu x'ten dolayı da p eksi 1'e döner.
+
+386
+00:46:47,868 --> 00:46:49,868
+1 bölü çünkü burası sıfır olacaktır.
+
+387
+00:46:50,168 --> 00:46:55,268
+1 bölü p eksi 1 olur. Şu işaret bunun işaretini etkiler.
+
+388
+00:46:55,768 --> 00:46:56,768
+Büyük
+
+389
+00:46:56,916 --> 00:46:57,776
+1 ise
+
+390
+00:46:57,776 --> 00:47:01,836
+p küçük, 1 ise de sonsuz.
+
+391
+00:47:03,996 --> 00:47:05,195
+Artı sonsuz.
+
+392
+00:47:11,731 --> 00:47:27,771
+Dolayısıyla eğer P büyük bir ise integralimiz yakınsak ve diğer de bir bölü P-1'dir. Diğer taraftan P küçük bir ise integral ıraksak. Zaten P-1 halinde özel olarak inceleyebiliriz.
+
+393
+00:47:28,851 --> 00:47:35,112
+Orada şeyden sonra, aradan sonra tamam mı arkadaşlar? Ya da bitirip öyle gidelim buraya yani olacak.
+
+394
+00:47:38,051 --> 00:47:39,511
+Bu bize şunu söylüyor.
+
+395
+00:47:39,615 --> 00:47:41,096
+p büyük 1 ise
+
+396
+00:47:41,096 --> 00:47:44,795
+genelleştirmiş integral
+
+397
+00:47:44,795 --> 00:47:48,155
+integral
+
+398
+00:47:48,155 --> 00:47:49,755
+yakınsak olup
+
+399
+00:47:49,755 --> 00:47:53,795
+değeri
+
+400
+00:47:53,795 --> 00:47:56,755
+1 bölü
+
+401
+00:47:56,755 --> 00:47:58,215
+p eksi 1'dir.
+
+402
+00:48:00,916 --> 00:48:02,615
+p küçük 1 ise
+
+403
+00:48:04,724 --> 00:48:09,724
+integral raksaktır. Genelleştirmiş integral raksaktır.
+
+404
+00:48:16,275 --> 00:48:18,219
+x kare artı 2x, f'
+
+405
+00:48:24,500 --> 00:48:28,579
+genelleştirmiş türev, hatta bunu en alta yazalım.
+
+406
+00:48:30,699 --> 00:48:33,719
+Bu nokta kayalım. Ayrı cümleler olarak alalım.
+
+407
+00:48:34,719 --> 00:48:37,159
+Dirt etikoyen, değeri b'dir.
+
+408
+00:48:39,199 --> 00:48:42,679
+P büyük bir ise, genelleştirmiş türev,
+
+409
+00:48:44,679 --> 00:48:45,419
+bıraksaktır.
+
+410
+00:48:48,403 --> 00:48:53,403
+değeri yok. Yani değeri sonsuza demeziz. Demek ki, integralını bıraksak.
+
+411
+00:48:56,104 --> 00:49:01,084
+Peki, pHT1 halini, zaten pHT1 halini inceleyeceğiz. Yani p1 ise 1 bölü x.
+
+412
+00:49:01,204 --> 00:49:05,524
+1 bölü x integralinin zaten genel işin integral olarak sonsuza olduğunu göreceğiz.
+
+413
+00:49:05,644 --> 00:49:08,204
+Onu da aradan sonra yapalım, tamam mı arkadaşlar?
+
+414
+00:49:10,004 --> 00:49:12,204
+Çok boğazım kurdu çünkü devam edemedim.
+
+415
+01:05:35,476 --> 01:05:37,236
+Evet arkadaşlar, ne yaptınız?
+
+416
+01:05:38,836 --> 01:05:41,276
+Buldunuz mu sonsuz ifadesini peyiştiri bir için?
+
+417
+01:05:44,628 --> 01:05:45,648
+şöyle yapacaksınız.
+
+418
+01:05:55,155 --> 01:06:07,016
+x kare artı 2x, f'
+
+419
+01:06:10,996 --> 01:06:12,156
+p küçük birisi.
+
+420
+01:06:34,579 --> 01:06:36,379
+Şimdi p eşitli bir haline bakalım.
+
+421
+01:06:40,219 --> 01:06:45,639
+Integralimiz yine birden sonsuza 1 bölü x dx değil mi?
+
+422
+01:06:49,811 --> 01:07:02,811
+Yine, emtoproya anlamda limit, b sonsuza giderken, 1'den b'ye, 1,0x'te x, standart çözüm işlemizi sürdürüyoruz.
+
+423
+01:07:04,031 --> 01:07:12,051
+Limit, b sonsuza giderken, bu nedir? L'nx'te değil mi? Pozitif aralığımız olduğu için, ne şey yazmamıza gerek yok.
+
+424
+01:07:12,051 --> 01:07:16,631
+Yani, 1'den büyük olduğu için daha doğrusu, l'nx pozitif olduğu için, 1'den büyük değerler için.
+
+425
+01:07:17,811 --> 01:07:20,131
+bu, 1 için zaten 0 olduğunu biliyor değil mi?
+
+426
+01:07:21,251 --> 01:07:26,291
+Tabii, B sonsuza giderken, Eren sonsuz, biliyorsunuz sonsuz değil mi?
+
+427
+01:07:27,891 --> 01:07:32,371
+Gördüğünüz gibi, intropi integralimiz ne oldu? Intropi integralimiz bıraksak oldu.
+
+428
+01:07:33,331 --> 01:07:38,451
+Şurayı, bir şey, atada yazdık, pardon.
+
+429
+01:07:39,411 --> 01:07:44,531
+Şu sınır değerlerini, integral alıp, böyle yazacaktık, integral.
+
+430
+01:07:45,076 --> 01:08:02,855
+l'nx, 1'den b'ye. Şöyle diyelim, 1'den b'ye diyelim. Bu da eşittir. Limit b son sayıdırken, l'nb, eksi 1. Değil mi?
+
+431
+01:08:03,855 --> 01:08:12,536
+l'n sonsu, sonsu olduğu için, sonsu, eksi 1'den eşit sonsu. Yani sonsu, sonlu bir sayı eklesen de eşit. Geçti, l'nb, 0. Çok pardon.
+
+432
+01:08:13,492 --> 01:08:14,932
+L'Hospital, F1-0 olduğu için,
+
+433
+01:08:16,652 --> 01:08:18,492
+yazmamızı gerek yok zaten.
+
+434
+01:08:19,492 --> 01:08:20,811
+Şöyle diyelim.
+
+435
+01:08:23,052 --> 01:08:24,052
+Tamam mı?
+
+436
+01:08:30,452 --> 01:08:43,092
+Demek ki sonuç olarak aslında P' küçügeştir 1 için integral bıraksak, P' büyük 1 için integralimiz yakınsak.
+
+437
+01:08:52,659 --> 01:08:53,659
+Şimdi,
+
+438
+01:08:57,059 --> 01:09:00,260
+Tad 2'yi asimptotlu integral demiş. Gerçekten,
+
+439
+01:09:01,779 --> 01:09:03,380
+eğer elimiz
+
+440
+01:09:06,219 --> 01:09:09,979
+belirlen bölge içerisindeki bir, yani aralıkta daha doğrusu,
+
+441
+01:09:11,539 --> 01:09:14,779
+aralık uçlarında ya da aralık içerisindeki bir diğer de
+
+442
+01:09:15,340 --> 01:09:17,979
+sınırsız oluyorsa, o zaman integral değil mi?
+
+443
+01:09:18,323 --> 01:09:20,623
+farklı bir anlamda hareket edilir.
+
+444
+01:09:21,143 --> 01:09:23,183
+Dolayısıyla şimdi ikinci tanımımız.
+
+445
+01:09:23,443 --> 01:09:25,243
+Biz en baştaki tanıma ne dedik?
+
+446
+01:09:26,003 --> 01:09:31,884
+Başlığına bakalım. Ona göre birinci tip genelmişin geriler. Şimdi ikinci tip genelmişin geriler diyelim.
+
+447
+01:09:35,123 --> 01:09:36,123
+başlamış.
+
+448
+01:09:41,011 --> 01:09:41,511
+çift.
+
+449
+01:09:46,163 --> 01:09:47,923
+genelleştirilmiş
+
+450
+01:10:02,707 --> 01:10:04,707
+Bunu da şöyle hemen tanımlıyorum.
+
+451
+01:10:04,707 --> 01:10:11,707
+Bu aslında integrasyon aralarında bir noktada sonsuz olan fonksiyon integrasyon aralarında aslında sınırsız olan demek lazım.
+
+452
+01:10:12,707 --> 01:10:15,707
+İntegrasyon aralarında, biz öyle yazalım.
+
+453
+01:10:20,692 --> 01:10:21,731
+Hesanlar verin der.
+
+454
+01:10:27,220 --> 01:10:30,739
+aralığında, bir noktada, aralığındaki, bir noktada.
+
+455
+01:10:36,692 --> 01:10:39,971
+sonsu olan bir fonksiyon. Sonsuya da sinüs olabilirsin.
+
+456
+01:10:41,051 --> 01:10:41,971
+Sinüsleri yapıyoruz.
+
+457
+01:10:49,043 --> 01:10:51,923
+bir fonksiyon ediyoruz. Ya da fonksiyonun teyze haline.
+
+458
+01:10:52,923 --> 01:10:53,564
+Son sıra
+
+459
+01:10:53,564 --> 01:10:56,763
+fonksiyon
+
+460
+01:11:00,787 --> 01:11:04,027
+Tekdal neyri ne?
+
+461
+01:11:13,939 --> 01:11:17,180
+integrallerine. İkinci tip genelleştirilmiş integral denir.
+
+462
+01:11:19,039 --> 01:11:19,719
+İkinci tip
+
+463
+01:11:19,719 --> 01:11:24,000
+genelleştirilmiş
+
+464
+01:11:24,000 --> 01:11:26,739
+integral denir.
+
+465
+01:11:28,739 --> 01:11:29,920
+Kısaca belirle.
+
+466
+01:11:46,707 --> 01:11:55,907
+Şimdi burada da, tabi aralığın uç noktalarına birinde sınırsız olabilir ya da aralık içerisindeki bir noktalar değil mi sınırsız olabilir.
+
+467
+01:11:55,907 --> 01:12:00,907
+O yüzden yine 3 tip, bunu da yani 3 kısmı ayırabiliriz.
+
+468
+01:12:00,907 --> 01:12:02,731
+eRfx
+
+469
+01:12:10,579 --> 01:12:17,420
+şöyle A, B, A açık ve kapalı. Böyle yazık bakın. Aralığında sürekli.
+
+470
+01:12:24,659 --> 01:12:26,100
+ve a'da süreksizse.
+
+471
+01:12:35,891 --> 01:12:37,952
+O halde, ya şunu yukarı kaldı.
+
+472
+01:12:44,180 --> 01:12:45,420
+süreklisi o halde.
+
+473
+01:12:48,340 --> 01:12:50,600
+Şöyle iki nokta, stifo ya da noktalı bir kemal.
+
+474
+01:12:52,180 --> 01:12:54,880
+Şöyle edeceğiz, A'dan bir efektif intilali.
+
+475
+01:12:59,539 --> 01:13:01,159
+yine limit kullanacağız.
+
+476
+01:13:03,380 --> 01:13:04,039
+Limit mesela
+
+477
+01:13:04,039 --> 01:13:06,880
+değil mi?
+
+478
+01:13:08,119 --> 01:13:11,079
+CA'ya sağdan yaklaşırken. Dolayısıyla
+
+479
+01:13:11,079 --> 01:13:14,779
+CA'ya sağdan yaklaşırken şöyle diyelim değil mi?
+
+480
+01:13:15,199 --> 01:13:16,520
+Çünkü A'da süreklif fonksiyon.
+
+481
+01:13:18,380 --> 01:13:18,940
+Entegra
+
+482
+01:13:18,940 --> 01:13:21,020
+C'den B'ye
+
+483
+01:13:21,020 --> 01:13:23,479
+fx dx
+
+484
+01:13:26,676 --> 01:13:36,996
+bu şekilde ifade edilir. Yani önce burası, bu integral artık bir propel integral, yani has integraldir. Bunu şey yapıp, çözüp, ondan sonra işte
+
+485
+01:13:36,996 --> 01:13:43,716
+bayağı sağdan yaklaşık, yani limiti aldığımızda, integralın sonucuna göre integral yakışsak ya da ırakışsak ya da ırakışsak diyebileceğiz, tamam mı?
+
+486
+01:13:46,476 --> 01:13:49,452
+2. Yazdık umarım. Yazma dışlarınızı geri dönelim.
+
+487
+01:13:52,979 --> 01:13:54,219
+rfx.
+
+488
+01:13:58,612 --> 01:13:59,612
+bu kez şöyle
+
+489
+01:14:02,492 --> 01:14:05,612
+A kapalı, B açık. Aralarını da sürekli
+
+490
+01:14:14,931 --> 01:14:18,611
+B noktasında tabi süreksiz. B'de süreksiz. Kısaca öyle yazmış.
+
+491
+01:14:20,191 --> 01:14:20,951
+B'de süreksiz.
+
+492
+01:14:25,235 --> 01:14:27,275
+ise yine aynı şekilde o halde.
+
+493
+01:14:37,043 --> 01:14:39,043
+a'dan b'ye f'lik türev uygulayabiliriz.
+
+494
+01:14:41,043 --> 01:14:43,043
+Yine c'yi kullanabiliriz.
+
+495
+01:14:45,043 --> 01:14:47,043
+Bu kez c, b'ye son yakışık yapacağız.
+
+496
+01:14:47,043 --> 01:14:49,043
+Nereden? a'dan c.
+
+497
+01:14:49,043 --> 01:14:51,043
+f'lik türev.
+
+498
+01:14:54,484 --> 01:14:59,364
+Üst limit orunca soldan alt limit orunca da sağda yaklaşılır.
+
+499
+01:15:00,244 --> 01:15:02,804
+3, son olarak bunu da söyleyelim.
+
+500
+01:15:03,444 --> 01:15:06,804
+2 uçta da tabii fonksiyonlu olabilir, süreklist olabilir.
+
+501
+01:15:08,084 --> 01:15:15,203
+Ya da yok, her 2 uçta zaten onu halledersiniz de arada bir nokta da süreklist fonksiyonlu olabilir.
+
+502
+01:15:19,155 --> 01:15:21,612
+f' f'
+
+503
+01:15:25,332 --> 01:15:26,472
+çöğle alamını.
+
+504
+01:15:30,068 --> 01:15:32,012
+a küçük c, küçük p.
+
+505
+01:15:37,076 --> 01:15:41,396
+Yani, a, c, a, b aralığında bir sayıyken, öyle diyoruz.
+
+506
+01:15:42,496 --> 01:15:48,336
+c'de süreksiz, ama diğer noktada sürekli.
+
+507
+01:15:50,316 --> 01:15:56,736
+Süreksiz, ve diyelim, diğer noktaları aralık olarak şöyle yazabiliriz.
+
+508
+01:15:56,836 --> 01:16:02,576
+a, c açıkladık birleşim, c, b kapılarak değil mi?
+
+509
+01:16:03,699 --> 01:16:04,819
+x süreklilik ise
+
+510
+01:16:12,243 --> 01:16:13,423
+bu halde her.
+
+511
+01:16:17,460 --> 01:16:23,780
+a'dan b'ye, fx, dx integralımız eşittir.
+
+512
+01:16:25,800 --> 01:16:38,300
+Yukarıdaki 1 ve 2 duruma dönüşüyoruz aslında, c noktasında. a'dan c'ye, fx, dx, artı c'den b'ye, fx, dx.
+
+513
+01:16:42,292 --> 01:16:44,912
+onların şey ile şu a'i ile sormak ha.
+
+514
+01:16:50,547 --> 01:17:08,524
+x kare artı 2x, f'
+
+515
+01:16:59,764 --> 01:17:04,884
+Aynı şekilde her bir durumda, eğer limiz ton liste genel simtiretlerle yakın satır.
+
+516
+01:17:06,963 --> 01:17:08,404
+Nokta koyalım buraya.
+
+517
+01:17:18,047 --> 01:17:18,667
+x kare artı 2x, f'
+
+518
+01:17:14,355 --> 01:17:18,136
+bu şekilde, limit sonu ise.
+
+519
+01:17:26,355 --> 01:17:28,355
+genelde şüphes integral yapsakdır.
+
+520
+01:17:35,207 --> 01:17:38,475
+x kare artı 2x, f'
+
+521
+01:17:35,091 --> 01:17:35,951
+Çok uzun bir kelime.
+
+522
+01:17:37,271 --> 01:17:37,832
+integral.
+
+523
+01:17:44,636 --> 01:17:45,260
+x kare artı 2x, f'
+
+524
+01:17:44,404 --> 01:17:46,404
+çeşitli bir şey.
+
+525
+01:17:50,399 --> 01:17:51,180
+x kare artı 2x, f'
+
+526
+01:17:50,167 --> 01:17:51,180
+çeşitli bir şey.
+
+527
+01:17:49,524 --> 01:17:50,664
+ve limit değeri
+
+528
+01:17:55,708 --> 01:17:58,708
+çeşitli bir şey.
+
+529
+01:17:55,220 --> 01:17:57,000
+ne diyelim? Genesmin tedahan değil.
+
+530
+01:18:16,840 --> 01:18:20,971
+çeşitli bir şey.
+
+531
+01:18:16,083 --> 01:18:20,963
+Eğer limit yoksa, integral.
+
+532
+01:18:32,404 --> 01:18:34,004
+Şimdi artık bu
+
+533
+01:18:34,004 --> 01:18:36,784
+tanıma göre
+
+534
+01:18:36,784 --> 01:18:38,404
+ne yapabiliriz?
+
+535
+01:18:39,364 --> 01:18:40,604
+Örneğimizi verebiliriz.
+
+536
+01:18:43,164 --> 01:18:44,844
+İkiden arkada örnek vereceğim.
+
+537
+01:18:51,604 --> 01:18:55,324
+yazamadığımız yerden arkadaşlar.
+
+538
+01:19:02,036 --> 01:19:08,595
+Burayı mı söylüyorsun? Bir de bir önceki mi? Sesini bir önceye daha geçeyim. Bakın bana yazamadığınız yer varsa.
+
+539
+01:19:10,395 --> 01:19:29,335
+Eğer fx, tabii şu kaparlılık aralıklara iyi dikkat edelim. Yani şu aralıkların hangisi kapalı, hangisi açık? A tarafı açık. Şöyle. Burası kapalı. Tamam mı? Burası böyle.
+
+540
+01:19:29,792 --> 01:19:30,992
+Aynı şekilde
+
+541
+01:19:32,792 --> 01:19:36,551
+Burada da A kapalı, B açık. O belli zaten.
+
+542
+01:19:36,952 --> 01:19:40,391
+Bu tadı öyle kapalı ve açık durumlarını gördüğünüz gibi
+
+543
+01:19:40,752 --> 01:19:42,391
+türkün bir şekilde yapacağız.
+
+544
+01:19:47,188 --> 01:19:47,807
+yazın.
+
+545
+01:19:48,568 --> 01:19:49,448
+yazıyorsanız eğer.
+
+546
+01:19:50,688 --> 01:19:51,807
+hemen örneğini verelim.
+
+547
+01:19:55,315 --> 01:19:55,979
+çeşimdi, f'
+
+548
+01:20:25,332 --> 01:20:29,612
+1 bölü 1xx, ortadan 1 bölü x'in grafini değil mi? Yerlanarak.
+
+549
+01:20:31,891 --> 01:20:37,592
+1 bölü 1xx, a x x, x x'in olsa, x bölü x'in olabilir.
+
+550
+01:20:38,631 --> 01:20:42,992
+fx x, fx'in grafini değil mi? Düşündüğünüz zaman, biri artan, biri azalan.
+
+551
+01:20:42,992 --> 01:20:49,992
+Tamam, böyle. O ifadeyle gözükler. 1 bölü x'in salan ama x bölü x artan olur değil mi? Düşündüğünüz zaman.
+
+552
+01:20:54,899 --> 01:20:57,879
+Öyle bir ifade edelim. Peki yazınız herhalde geçelim.
+
+553
+01:21:02,579 --> 01:21:03,579
+Tabii tabii.
+
+554
+01:21:04,979 --> 01:21:07,979
+Yani son konumuz bu. Hepsi.
+
+555
+01:21:08,940 --> 01:21:12,979
+Hepsi sınava dahil arkadaşlar. Toplum integral, yani güneş integral'e dahil.
+
+556
+01:21:20,340 --> 01:21:22,340
+ama koday su ordinali.
+
+557
+01:21:24,340 --> 01:21:27,340
+en blok mental, kasımast hastiyo.
+
+558
+01:21:36,627 --> 01:21:48,227
+Şöyle sorumuz, sıfırdan bire, 1 bölü 1xx dx. Mesela integral'i yakın saklıdı bırak sakmadı değil mi sorusunu?
+
+559
+01:22:07,796 --> 01:22:09,796
+integralini kısa aktarız.
+
+560
+01:22:30,996 --> 01:22:33,216
+Grafiğini basitçe şöyle hemen çizelim.
+
+561
+01:22:33,376 --> 01:22:34,828
+Bu partikleri kolayca çizelim.
+
+562
+01:22:37,971 --> 01:22:39,551
+x-axis bireli bir sıkıntı var.
+
+563
+01:22:54,195 --> 01:22:55,336
+Şurayı bir bekleyelim.
+
+564
+01:23:13,363 --> 01:23:15,543
+Şurası da 1 olsun, değil mi?
+
+565
+01:23:17,503 --> 01:23:18,423
+Bu arada 1 olsun.
+
+566
+01:23:26,836 --> 01:23:31,556
+grafimiz buradan, şurada başlayacak itibaren değil mi?
+
+567
+01:23:32,556 --> 01:23:34,756
+Bir şey var, burada bir sıçraması var.
+
+568
+01:23:35,836 --> 01:23:38,756
+Şurası bir, buradan şöyle gidiyor aslında.
+
+569
+01:23:48,404 --> 01:23:49,524
+tam göremedim için.
+
+570
+01:23:50,424 --> 01:23:51,424
+Ondan biraz sıkıdır.
+
+571
+01:24:02,068 --> 01:24:03,307
+Evet, şöyle bir grafik.
+
+572
+01:24:51,252 --> 01:25:16,592
+bağladık iş. Bunu yemiş. Burası 1, şurası 1, burası 0, 0'da 1 olduğu belli fonksiyonumuz. Bu fonksiyonun grafiği, yani 1 bölü 1xx'in grafiği aslında. Şuraya belirleyelim. Şu y eksenimiz, bu x eksenimiz, bu da y eştir, 1 bölü 1xx.
+
+573
+01:25:18,452 --> 01:25:22,811
+1, 1, 1. Bu arada 0, 1 aralığında çizdik tabii değil mi grafik? Orası gerekli çünkü.
+
+574
+01:25:24,731 --> 01:25:26,012
+Şuraya gideceğim.
+
+575
+01:25:28,412 --> 01:25:29,412
+Şöyle.
+
+576
+01:25:32,092 --> 01:25:34,012
+Değil mi? Interviyon belgimiz burası.
+
+577
+01:25:35,172 --> 01:25:37,412
+Bu acaba bu alan değil mi?
+
+578
+01:25:38,132 --> 01:25:44,332
+0'dan 1'e de tabii biz bunu hani intropra dönüşürken, propra dönüşürken bu şekilde deniyoruz.
+
+579
+01:25:47,188 --> 01:25:57,728
+Şimdi integralimiz nerede? Bir de fonksiyonumuz tabii sınırsız olduğu için daha doğrusu şöyle yazalım.
+
+580
+01:25:57,728 --> 01:26:06,528
+x kare artı 1x, aralığı üzerinde sürekli.
+
+581
+01:26:29,747 --> 01:26:34,647
+Kralatikler X1'e giderken, sol da tabi, limit şeklinde dönüşeceğiz.
+
+582
+01:26:36,427 --> 01:26:43,527
+O halde 0'dan 1'e 1 bölü 1-X dx'e eşittir.
+
+583
+01:26:44,768 --> 01:26:51,227
+Limit C1'e sol da yaklaşırken 0'dan, hatta B demişiz.
+
+584
+01:26:52,507 --> 01:26:54,507
+Tamam da biz B'ye kullanabiliriz.
+
+585
+01:26:59,604 --> 01:27:02,644
+c a'ya giderken, c b'ye giderken, neyse.
+
+586
+01:27:05,043 --> 01:27:06,804
+c, burada b demiş.
+
+587
+01:27:08,384 --> 01:27:10,904
+b, biri giderken, o zaman şimdi b yapalım.
+
+588
+01:27:18,387 --> 01:27:22,387
+bire soldan giderken, 1 bölü 1-x, x.
+
+589
+01:27:25,188 --> 01:27:33,387
+Limit bire soldan giderken, bunun integrarı, x ile x ekliğine gelir değil mi?
+
+590
+01:27:34,587 --> 01:27:39,387
+x ile belki sıfırdan b olduğu için mutlak değer koymamız lazım.
+
+591
+01:27:40,387 --> 01:27:46,028
+x ile mutlak değer 1-x, x.
+
+592
+01:27:46,452 --> 01:27:47,512
+şöyle koymamız lazım.
+
+593
+01:27:48,372 --> 01:27:50,172
+integral sınırımız da 0'dan bire.
+
+594
+01:27:53,032 --> 01:27:53,952
+Bir yerine yazarsak,
+
+595
+01:27:56,051 --> 01:27:58,832
+limit bire soldan giderken,
+
+596
+01:27:59,772 --> 01:28:03,712
+bu üst tarafta bir elen 1-b artı 0 olur.
+
+597
+01:28:09,684 --> 01:28:13,584
+x ifadesinde gözlemler. x elen
+
+598
+01:28:19,699 --> 01:28:55,139
+x kare artı 2x, f'
+
+599
+01:28:34,068 --> 01:28:34,327
+x kare artı 1x'i, f'
+
+600
+01:28:34,327 --> 01:28:35,327
+neden 1, 0'da?
+
+601
+01:28:37,108 --> 01:28:39,747
+Şu işareti iyi konumlamak lazım.
+
+602
+01:28:39,747 --> 01:28:43,188
+x kare artı 1x'i, f'
+
+603
+01:28:46,108 --> 01:28:49,188
+negatif bir değer aslında ama onu nasıl düşünebiliriz?
+
+604
+01:28:49,708 --> 01:28:51,868
+Niye direkt burada 1x'i almış?
+
+605
+01:28:51,868 --> 01:28:53,148
+Değil mi? Onu değerle dinlememiz lazım.
+
+606
+01:28:55,188 --> 01:28:58,667
+Bu değeri, negatif ya da pozitif değer oradan gelecek.
+
+607
+01:28:58,667 --> 01:28:59,068
+Aynen.
+
+608
+01:28:59,068 --> 01:29:00,387
+x kare artı 0.
+
+609
+01:29:01,908 --> 01:29:08,847
+Halbuki belirle soldan giderken tabii, ne olur? Burası 0, x sonsuz. Bir de önündeki x var, artı sonsuz olur sonuç.
+
+610
+01:29:11,228 --> 01:29:19,347
+Yani şöyle gibisiniz, x'i, x sonsuz. Burası işte artı sonsuz. Tamam mı? Hadi dikkat edin.
+
+611
+01:29:32,916 --> 01:29:37,324
+Demek ki limit sonsuz çıktığı için integral nedir? Bıraksamdır.
+
+612
+01:29:47,923 --> 01:29:52,747
+İmissiyon, ziyaretç
+
+613
+01:30:03,412 --> 01:30:11,012
+Yani verilen genelik integral, tabii ki hiç genelik integral olup integralın yüksek olduğunu söylemiş oluyoruz.
+
+614
+01:30:13,412 --> 01:30:19,012
+Peki, bir sonraki örneğimize geçeceğiz. Eğer burada yazmadığınız bir yer varsa bekleyeyim ben size.
+
+615
+01:30:20,311 --> 01:30:29,012
+Buraya burada mesela aralığın içinde bir noktada, ota bir noktada fonksiyonun sürekli olduğu bir örnek verelim.
+
+616
+01:30:45,908 --> 01:30:59,507
+Yarın sabah karışık örnekler söyleriz. Biraz geçmiş konulardan da olabilir. Böylece konumuzu zaten bugün tamamlamış oluyoruz. O da bize bir nefes alma şansı verecek.
+
+617
+01:30:59,507 --> 01:31:13,100
+Final tarihlerinizi belli biliyorsunuz değil mi? 12'si miydi? 12 hocam. Çabuk yani. Haftaya salı gibi mi böyle? Öyle sanki söylediler bana.
+
+618
+01:31:14,676 --> 01:31:15,176
+Tamam.
+
+619
+01:31:16,896 --> 01:31:18,935
+Aman, tarihlere falan dikkat edin, kaçırmayın.
+
+620
+01:31:20,935 --> 01:31:22,036
+Sonra sıkıntı.
+
+621
+01:31:27,572 --> 01:31:31,811
+Saat kaçta? Akşam üzeri mi? Sabah 11.00 falan mı?
+
+622
+01:31:33,912 --> 01:31:35,512
+Şimdi henüz programımla okudum ben.
+
+623
+01:31:43,604 --> 01:31:46,924
+o sabah tanı iyi, daha iyi, dinç olursunuz.
+
+624
+01:31:48,604 --> 01:31:52,043
+hemen yaparardan çıkarsınız.
+
+625
+01:32:03,764 --> 01:32:05,764
+şu an, ben, elteyim sadece.
+
+626
+01:32:47,444 --> 01:33:15,024
+Dilek mesela şöyle verilebilir. 0'dan 3'e, dx bölü, yani ille de yakışsaklığına falan tartışma falan denmez. x eksi 1 üzeri 2 bölü 3. Bakın fonksiyonu yani 1 bölü x eksi 1 üzeri 2 bölü 3'ün nerede? x eksi 1'de fonksiyonun süreks olduğunu görüyor değil mi? Yani x eksi 1'de burada bir fonksiyon ve dikey asimptotu var.
+
+627
+01:33:17,011 --> 01:33:26,731
+f x eşittir, 1 bölü, x eksi 1 üzeri 2 bölü 3, x eşittir 1 de süreksiz.
+
+628
+01:33:30,579 --> 01:33:39,920
+ancak şu aralık üzerinde 0, 1, iyileşim, 1, 3.
+
+629
+01:33:44,595 --> 01:34:04,139
+x kare artı 2x, f'
+
+630
+01:33:50,547 --> 01:33:54,788
+Dolayısıyla grafik yapalım mı? Yapalım isterseniz.
+
+631
+01:33:55,028 --> 01:33:55,788
+Şuraya.
+
+632
+01:33:56,788 --> 01:33:57,587
+Bir anda çözeceğiz.
+
+633
+01:33:59,028 --> 01:34:00,627
+0'dan 3'ü aldığımız için.
+
+634
+01:34:02,127 --> 01:34:03,747
+Yine bunu şöyle taşıyorum şuraya.
+
+635
+01:34:10,719 --> 01:34:22,840
+x kare artı 2x, f'
+
+636
+01:34:08,275 --> 01:34:10,275
+Tamam.
+
+637
+01:34:14,275 --> 01:34:16,275
+Şöyle yine, şeklinde yararlanalım.
+
+638
+01:34:18,275 --> 01:34:20,275
+Tamam, düz gözüküyor.
+
+639
+01:34:20,275 --> 01:34:22,275
+Tabii x-31, neyimiz?
+
+640
+01:34:23,275 --> 01:34:27,275
+Kırmızı çizgi aslında ama kırmızı çizgi ile göstermiyor onu. Yine siyala gösterelim.
+
+641
+01:34:27,275 --> 01:34:29,195
+Bu diki asimptot var değil mi burada?
+
+642
+01:34:49,395 --> 01:34:50,456
+y-excelimiz.
+
+643
+01:34:54,292 --> 01:35:01,752
+Şu x kare artı 1'den başlayacak, grafik 1 bölgeye geçecek, diğer de buradan geçecek 3'e kadar değil mi?
+
+644
+01:35:02,452 --> 01:35:04,532
+Şöyle 1 ve 3 noktalarını işaretleyelim.
+
+645
+01:35:06,752 --> 01:35:07,471
+Şurası 1,
+
+646
+01:35:09,072 --> 01:35:09,811
+şurası 1.
+
+647
+01:35:21,235 --> 01:35:23,235
+bu ne müşerici sızı kursak.
+
+648
+01:35:47,380 --> 01:35:48,908
+çizmek 5, sıkıntı.
+
+649
+01:36:01,395 --> 01:36:02,415
+Şöyle kalalım, tamam.
+
+650
+01:36:03,655 --> 01:36:04,796
+Çok şey yapıyordum çünkü.
+
+651
+01:36:05,975 --> 01:36:08,075
+Aslında birinin 3 noktasında değil mi?
+
+652
+01:36:08,515 --> 01:36:09,115
+Kaç değer olur?
+
+653
+01:36:09,675 --> 01:36:12,536
+Ha, bir bölü, 1-x, x-1 üzeri 2 bölü 3.
+
+654
+01:36:12,675 --> 01:36:13,515
+Tabii fonksiyonumuz o.
+
+655
+01:36:14,575 --> 01:36:15,995
+Buradan da şöyle gidecek.
+
+656
+01:36:16,296 --> 01:36:17,735
+Bakalım tutturabilir miyiz yine?
+
+657
+01:36:18,655 --> 01:36:19,335
+Biraz zor oluyor.
+
+658
+01:36:28,819 --> 01:36:29,680
+Şöyle ama kısa.
+
+659
+01:36:33,300 --> 01:36:34,159
+gibi, evet.
+
+660
+01:36:35,539 --> 01:36:36,380
+Böyle şöyle birleştireyim.
+
+661
+01:36:58,676 --> 01:37:06,476
+Neyse arkadaşlar, şimdi burası eğer yine durumda, durumda birine yapacağız. İzoletimi alacağız.
+
+662
+01:37:06,476 --> 01:37:12,275
+Biri solunda, birisi sağında yaklaşmak için. İki limit şeklinde düşünmeyiz.
+
+663
+01:37:12,275 --> 01:37:20,876
+Birbiri de soldan, birisi sağdan yaklaşmak vasıtasıyla B ve C noktaları belirleyip oradan şeyine gideceğiz.
+
+664
+01:37:20,876 --> 01:37:26,275
+Ne denir? Entelöre gideceğiz. Şurası B, burası C.
+
+665
+01:37:37,235 --> 01:37:44,175
+Tamam. Şimdi integral'e gelince, tamam vaktimiz var 10 dakikamız en azından.
+
+666
+01:37:44,956 --> 01:37:45,655
+integral için.
+
+667
+01:37:48,155 --> 01:37:49,396
+0'dan 3'e
+
+668
+01:37:49,396 --> 01:37:53,376
+dx bölü
+
+669
+01:37:53,376 --> 01:37:56,716
+x eksi 1 üzeri 2 bölü 3
+
+670
+01:38:00,532 --> 01:38:01,532
+eşittir.
+
+671
+01:38:03,532 --> 01:38:04,532
+0'dan bire.
+
+672
+01:38:10,452 --> 01:38:14,452
+x bölü, x eksi 1 üzeri.
+
+673
+01:38:15,891 --> 01:38:20,332
+2 bölü 3, artı, 1'den 3'e.
+
+674
+01:38:24,404 --> 01:38:28,224
+dx bölü x eksi 1 üzeri 2 bölü 3.
+
+675
+01:38:29,384 --> 01:38:39,644
+Tamam, önce bu şekilde dönüşüm, sonra limit ifadesi olarak, tabi limit, c, pardon bire sondan yaklaşırken, değil mi?
+
+676
+01:38:41,244 --> 01:38:48,304
+bire sondan yaklaşırken, 0'dan b'ye, dx bölü,
+
+677
+01:38:49,844 --> 01:38:52,043
+x x1 üzeri 2 bölü 3
+
+678
+01:38:52,043 --> 01:38:56,004
+artı
+
+679
+01:38:56,004 --> 01:38:58,123
+limit
+
+680
+01:38:58,123 --> 01:39:02,804
+c bile sağda akışken bir kez
+
+681
+01:39:02,804 --> 01:39:06,923
+c'den 3'e
+
+682
+01:39:06,923 --> 01:39:09,923
+dx bölü
+
+683
+01:39:09,923 --> 01:39:14,923
+x x1 üzeri 2 bölü 3
+
+684
+01:39:17,363 --> 01:39:33,623
+Evet, bunları ne yapmak lazım? Tabii hem ben 1'e hem de daha doğrusu 0'dan b'ye ve c'den 3'e o integral'ları hesaplarsak zaten aynı tip integral'lar olduğu için burası hemen ayrı ayrı da yazabilirsiniz, beraber yazabilirsiniz.
+
+685
+01:39:34,823 --> 01:39:38,203
+Evet, b1'e soldan giderken bu integral'ın olup 3 çarpı.
+
+686
+01:39:40,203 --> 01:39:41,043
+Bir dakika.
+
+687
+01:39:42,420 --> 01:39:48,279
+2 bölü 3, 1 bölü 3 olur. Çünkü artı 1, artı 1 yaparsak değil mi 3?
+
+688
+01:39:55,091 --> 01:40:03,631
+x kare 1-2 bölü 3, 1 bölü 3 olur. Doğru. Dolayısıyla 3x, x-1 üzeri 1 bölü 3.
+
+689
+01:40:05,451 --> 01:40:12,152
+1 bölü 3 değil mi? Şu integral ifadesi. Ama tabii sınır değerimiz burada nereden nereye? 0'dan b.
+
+690
+01:40:14,011 --> 01:40:20,871
+Artı, limit c1'e sağdan giderken aynı şekilde 3.
+
+691
+01:40:22,579 --> 01:40:49,020
+ve x x'in 1 üzeri 1 bölü 3. Bu kez c'den 3. Tamam. Şuraları okuyabiliyor musunuz? Şu 3'ü biraz iyi yazamadım. Bir daha yazayım. 1 bölü 3 c'den 3 değil mi? E tabi sınır değerlerini yerine yazıp
+
+692
+01:40:49,167 --> 01:40:50,247
+Limit altımızda.
+
+693
+01:40:52,387 --> 01:40:55,167
+İlk limit 3 çıkacak.
+
+694
+01:40:55,887 --> 01:41:01,447
+İkinci limit de 3 kök 3 bölü 3 kök bölü 2 şeklinde çıkacak.
+
+695
+01:41:02,587 --> 01:41:04,907
+Onlar yerine yazar hemen hesap varsanız siz.
+
+696
+01:41:06,587 --> 01:41:14,627
+3 artı 3 kök 2.
+
+697
+01:41:16,948 --> 01:41:23,608
+artı 3x42 yani 3 bandetine belki biraz 42 demek daha doğru olur.
+
+698
+01:41:34,547 --> 01:41:35,307
+altı.
+
+699
+01:41:41,011 --> 01:41:43,331
+Bu da bize bu integralde ne yapmış olur arkadaşlar?
+
+700
+01:41:45,111 --> 01:41:48,271
+Bu şekilde hesaplayacağımızı bize söylemiş olur.
+
+701
+01:41:52,724 --> 01:42:12,724
+Şimdi biraz şey yapacağız, araya giderim, oradan sonra konuşalım onu. Testler var, karşılaştırma testleri var. Karştırma testlerinden... Yani içerik de çok belli değil. Yine de bir sorarım ama.
+
+702
+01:42:16,627 --> 01:42:18,627
+onlar dahil değil gibi.
+
+703
+01:42:18,627 --> 01:42:26,627
+Ama bir teorem olarak düşünebiliriz mesela, integralı yakınsak da işte neden yakınsak dediğimizde,
+
+704
+01:42:26,627 --> 01:42:30,627
+bir limit karşılaşması var integraller için, doğrudan karşılaşma var.
+
+705
+01:42:31,627 --> 01:42:33,627
+bir anlamda.
+
+706
+01:42:35,627 --> 01:42:37,627
+Bir de limit karşılaşması var.
+
+707
+01:42:37,627 --> 01:42:43,627
+Onları verip, birer tane de onları örnek çözüp, böylece dersimizi bitiririz.
+
+708
+01:42:43,967 --> 01:42:44,967
+Tamam mı arkadaşlar?
+
+709
+01:42:44,967 --> 01:42:47,967
+Peki, bir araya gidelim yine.
+
+710
+01:42:47,967 --> 01:42:48,967
+Gidelim.
+
+711
+01:42:48,967 --> 01:42:50,967
+Sonra şey yaparız.
+
+712
+02:07:09,492 --> 02:07:12,152
+Evet arkadaşlar, devam ediyoruz.
+
+713
+02:07:18,676 --> 02:07:27,216
+Konumuz zaten bitti. Bu da sadece yaksaklık ve yaksaklık için test edilen bir yaksaklık var.
+
+714
+02:07:42,931 --> 02:08:02,859
+x kare artı 2x, f'
+
+715
+02:07:49,427 --> 02:07:51,427
+Yani çok uzatmayacağım aslında.
+
+716
+02:07:53,028 --> 02:07:56,628
+Direkt şöyle test ifadesini vereyim.
+
+717
+02:07:57,528 --> 02:07:58,728
+Teorema olarak.
+
+718
+02:07:59,128 --> 02:08:01,128
+Hatta doğrudan karşılaştırma testi.
+
+719
+02:08:02,028 --> 02:08:02,859
+1
+
+720
+02:08:21,695 --> 02:08:25,003
+x kare artı 2x, f'
+
+721
+02:08:20,979 --> 02:08:24,579
+fg fonksiyonları
+
+722
+02:08:34,068 --> 02:08:37,068
+x kare artı 2x, f'
+
+723
+02:08:33,876 --> 02:08:35,756
+x kare artı 3x, f'
+
+724
+02:08:50,344 --> 02:08:54,463
+x kare artı 2x, f'
+
+725
+02:08:58,012 --> 02:08:59,012
+x kare artı 3x, f'
+
+726
+02:08:48,532 --> 02:08:57,211
+x büyügeştir 0 için, pardon hep x büyügeştir A için, uç noktayı A almıştık çünkü.
+
+727
+02:09:07,840 --> 02:09:09,707
+x kare artı 3x, f'
+
+728
+02:09:02,036 --> 02:09:09,335
+Bu fonksiyonlar artı 2x'ten pozitif ve f' x'ten büyük olsun.
+
+729
+02:09:14,484 --> 02:09:21,547
+x kare artı 3x, f'
+
+730
+02:09:12,851 --> 02:09:19,851
+Bu durumda aslında büyük oran fonksiyonun durumu bana küçük oran fonksiyonun durumu aklımda bilgi verecek.
+
+731
+02:09:20,471 --> 02:09:21,471
+x kare artı bu.
+
+732
+02:09:26,387 --> 02:09:30,587
+1. 1'den sonrasında
+
+733
+02:09:34,323 --> 02:09:36,963
+gx, dx yakınsak ise
+
+734
+02:09:36,963 --> 02:09:42,083
+şöyle eğer ile şeyi beraber birleştireyim.
+
+735
+02:09:42,843 --> 02:09:44,724
+O zaman birden sonsuza
+
+736
+02:09:44,724 --> 02:09:48,043
+fx, dx'e yakınsaktır.
+
+737
+02:09:54,836 --> 02:10:02,636
+ikinci de tam tersi. Yani birden sonrası fx de yıkayırırsak ise, değil mi? Büyük olan fonksiyonlar rastak olacak çünkü.
+
+738
+02:10:10,195 --> 02:10:11,195
+yapsak.
+
+739
+02:10:11,195 --> 02:10:17,195
+En sonunda x de bıraksak.
+
+740
+02:10:27,091 --> 02:10:28,572
+Kolayca iki tane örneğe kalacağım.
+
+741
+02:10:30,411 --> 02:10:31,731
+Mesela sin kare x bölü,
+
+742
+02:10:33,551 --> 02:10:35,211
+x kareyi göz önüne alalım.
+
+743
+02:10:37,211 --> 02:10:41,271
+Yani 1 bölü x kare fonksiyonun aslında yakınsak olduğunu,
+
+744
+02:10:41,691 --> 02:10:44,531
+değil mi? Biliyoruz, integral için çözdüğümüzde, biliyoruz bunu.
+
+745
+02:10:45,771 --> 02:10:48,951
+Dolayısıyla sin x kare, 1 x kare, 1 x kareden küçük kalacağı için,
+
+746
+02:10:49,291 --> 02:10:50,851
+ondan yakınsak olduğunu söyleyebiliriz.
+
+747
+02:10:51,931 --> 02:10:53,011
+Bir yazın da isterseniz.
+
+748
+02:10:57,460 --> 02:10:58,188
+çöğledi.
+
+749
+02:11:06,547 --> 02:11:14,987
+Zaten çok tanet gözükmüyor. Ben açtığım şeyi biraz büyüttüm. Yazık mı bu arkadaşlar? Doğrudan kaçıştırma testini yazdık.
+
+750
+02:11:19,988 --> 02:11:21,488
+Öğrenimizde hemen şuraya yazalım.
+
+751
+02:11:23,247 --> 02:11:24,548
+Yazama lisanımız, geri dönelim.
+
+752
+02:11:34,547 --> 02:11:50,007
+h şıkkı, mesela, birden sonsuza, sin kare x bölü, x kare dx, integralı yakın saktır.
+
+753
+02:11:52,747 --> 02:11:54,028
+Birin top integral değil mi zaten?
+
+754
+02:11:58,036 --> 02:11:59,355
+Niye yakın saklı arkadaşlar?
+
+755
+02:12:01,515 --> 02:12:12,355
+Çünkü, bir defa sin kare, x bölü, x kare her zaman postistir. Hani biraz limitlik şeye benzer. Standış teorinine benzer gibi değil.
+
+756
+02:12:14,195 --> 02:12:20,956
+En büyük değeri, alacağı değeri 1 olduğuna göre, bu da 1 bölü x kareden küçük eşitli yazılabilir.
+
+757
+02:12:22,216 --> 02:12:25,115
+Ve birden sonsuza elbette,
+
+758
+02:12:26,292 --> 02:12:29,832
+1 bölü x kare, x bu yakın sakit.
+
+759
+02:12:34,771 --> 02:12:37,771
+Dolayısıyla büyük olan fonksiyon integral...
+
+760
+02:12:42,579 --> 02:12:46,579
+...çık olan...
+
+761
+02:12:46,579 --> 02:12:50,239
+...üniterle de yakınsaktır. Teoremde değil mi?
+
+762
+02:12:51,460 --> 02:12:52,579
+O zaman şunu...
+
+763
+02:12:52,579 --> 02:12:54,579
+...aralığında...
+
+764
+02:12:54,579 --> 02:12:55,380
+...bu var yakınsaktır.
+
+765
+02:12:56,220 --> 02:12:58,359
+Bu bize olduğunu söyler. Çünkü diyebiliriz.
+
+766
+02:12:59,819 --> 02:13:00,579
+Çünkü...
+
+767
+02:13:06,051 --> 02:13:10,912
+x kare artı 2x, f'
+
+768
+02:13:05,011 --> 02:13:06,011
+Nedeni bu?
+
+769
+02:13:07,011 --> 02:13:09,899
+Yani teorem gereği, direkt bunu söyleyebiliriz.
+
+770
+02:13:14,747 --> 02:13:18,807
+x kare artı 2x, f'
+
+771
+02:13:13,235 --> 02:13:14,915
+b şıkkı birden sonrası da
+
+772
+02:13:14,915 --> 02:13:18,835
+1 bölü kare kök x kare eksi 1.
+
+773
+02:13:20,415 --> 02:13:23,876
+1 bölü kare kök x kare eksi 0.1.
+
+774
+02:13:23,975 --> 02:13:24,876
+Pardon, çok yakın bir
+
+775
+02:13:24,876 --> 02:13:27,235
+değer almış.
+
+776
+02:13:28,235 --> 02:13:29,216
+Fark bir ifadesi var.
+
+777
+02:13:30,216 --> 02:13:31,716
+Bunun da ıraksak olduğunu söylüyoruz.
+
+778
+02:13:37,140 --> 02:13:39,840
+Neden derseniz, bir kez bir sonsuz aralığında
+
+779
+02:13:39,840 --> 02:13:41,960
+Şu kapalı.
+
+780
+02:14:01,043 --> 02:14:14,043
+Bu fonksiyon, kare kök x kare eksi 0.1 kök fonksiyonu kimden büyüktür arkadaşlar? 1 bölü 2x'den daima büyüktür. Çünkü payda küçük olacağı için değil mi?
+
+781
+02:14:16,644 --> 02:14:18,644
+Kesin değil de büyük olur.
+
+782
+02:14:20,644 --> 02:14:25,644
+Şu 0.1 içeride onu iyice şöyle yap.
+
+783
+02:14:37,652 --> 02:14:37,912
+x kare artı 2x, f'
+
+784
+02:14:37,912 --> 02:14:39,951
+f'
+
+785
+02:14:39,951 --> 02:14:40,731
+Tamam.
+
+786
+02:14:41,752 --> 02:14:43,031
+Dolayısıyla,
+
+787
+02:14:43,531 --> 02:14:48,912
+1'den sonuçta aslında 1 bölü x integralı da bıraksaktır. Bunu siz görürsünüz, introp integralı da.
+
+788
+02:14:49,931 --> 02:14:53,271
+1 bölü x, dx integralı da bıraksaktır.
+
+789
+02:14:57,876 --> 02:15:06,615
+Yani yukarıdaki, m, h'daki, işte teoremden değil mi? Teoremden buraya diyebilirsiniz. Teoremden, teorem A'dan, A şıkkından değil mi?
+
+790
+02:15:07,416 --> 02:15:13,756
+Ya da teorem demedik de, şey dedik aslında değil mi? Direkt testin A şıkkından.
+
+791
+02:15:15,515 --> 02:15:23,195
+A mı dedik, bir mi dedik? Ya oraya. Bir demişiz. Evet. Karşışma testinden daha doğrusu. Testten.
+
+792
+02:15:25,171 --> 02:15:26,431
+test a'dan
+
+793
+02:15:26,431 --> 02:15:31,271
+b'lerin integral yakınsak
+
+794
+02:15:31,271 --> 02:15:34,391
+integral yakınsaktır.
+
+795
+02:15:37,072 --> 02:15:40,171
+Burada da yine test b'den
+
+796
+02:15:44,627 --> 02:15:46,627
+belirli integral laxattır.
+
+797
+02:15:48,627 --> 02:15:49,420
+Değil mi?
+
+798
+02:15:53,203 --> 02:15:55,123
+Sadece karşısına yapıyoruz. Başka bir şey yok.
+
+799
+02:16:00,307 --> 02:16:14,188
+belirli aralıkta büyük olan fonksiyon, fonksiyon integral yakınsak ise, küçük olan fonksiyon integral yakınsak, belirli aralıkta küçük olan fonksiyonun integral bıraksak ise, büyük olan fonksiyonun integral de bıraksak.
+
+800
+02:16:14,188 --> 02:16:15,188
+Bu kadar kolay.
+
+801
+02:16:16,868 --> 02:16:18,827
+Bir tane daha testi var arkadaşlar.
+
+802
+02:16:20,487 --> 02:16:23,108
+Onu da yazayım. Şöyle bir uygulama solarak.
+
+803
+02:16:23,727 --> 02:16:24,727
+Buraya yazdık mı acaba?
+
+804
+02:16:26,287 --> 02:16:27,207
+Birazdan bekleyelim.
+
+805
+02:16:28,595 --> 02:16:30,595
+vaktimizi yaparca etmemize gerek yok.
+
+806
+02:16:32,055 --> 02:16:34,275
+Ders saatimiz müsait.
+
+807
+02:16:37,255 --> 02:16:39,815
+Burada da bir limit gözlerini alacağız.
+
+808
+02:16:40,095 --> 02:16:48,295
+fx bölüge x verilen bende şekerde yukarıdaki bir fonksiyon için sıralama önemli değil, metil ise.
+
+809
+02:16:48,995 --> 02:16:54,575
+O zaman her iki fonksiyonun limiti de, pardon, integralde aynı davranış.
+
+810
+02:16:55,188 --> 02:16:59,188
+Yani x aynı anda ıraksar ya da aynı anda yakın sarlar.
+
+811
+02:16:59,788 --> 02:17:02,587
+Tabi FG'yi yine pozitif fonksiyonlar olarak alacağız.
+
+812
+02:17:05,188 --> 02:17:08,288
+Sonra konu yazayım. İkiliğim karşılaştırma testi.
+
+813
+02:17:13,087 --> 02:17:15,067
+Şöyle yazacaktık. 2.
+
+814
+02:17:25,492 --> 02:17:26,772
+Limit, hvað sérsmatið ist?
+
+815
+02:17:46,420 --> 02:17:48,139
+et f'
+
+816
+02:17:58,324 --> 02:17:59,324
+yorumlar sürekli
+
+817
+02:18:17,236 --> 02:18:18,396
+limit fx bölü 2x.
+
+818
+02:18:23,636 --> 02:18:24,596
+x 18 dk.
+
+819
+02:18:28,843 --> 02:18:29,739
+et f'
+
+820
+02:18:28,531 --> 02:18:29,371
+iştirile.
+
+821
+02:18:34,888 --> 02:18:45,708
+et f'
+
+822
+02:18:34,324 --> 02:18:38,704
+D burada sonlu bir sayı, D pozitif tabii ki. F peki pozitif olacağı için bundan pozitif olacağı açık.
+
+823
+02:18:39,484 --> 02:18:39,963
+İse
+
+824
+02:18:39,963 --> 02:18:45,224
+A'dan sonsuza, o halde diyelim hadi.
+
+825
+02:18:51,708 --> 02:18:59,688
+et f'
+
+826
+02:18:51,028 --> 02:18:54,628
+fx, tx, bakın, eşitirlemiyoruz.
+
+827
+02:18:56,308 --> 02:19:00,168
+Dikkat edin, siktirleman istediği öyle bir şey çıkmaz.
+
+828
+02:19:00,168 --> 02:19:05,028
+Aynı anında fonksiyonların, farklı fonksiyonların integralleri,
+
+829
+02:19:06,468 --> 02:19:09,528
+değerli efendim, sadece kısak ya kısa kastansız konuşuyoruz.
+
+830
+02:19:10,468 --> 02:19:11,347
+Integrerleri,
+
+831
+02:19:16,180 --> 02:19:18,979
+birlikte yakınsak ve birlikte ıraksaktır.
+
+832
+02:19:20,479 --> 02:19:22,620
+birlikte yakınsak
+
+833
+02:19:22,620 --> 02:19:25,220
+böyle olabilir, yakınsaktır.
+
+834
+02:19:26,340 --> 02:19:28,960
+hadi kırmızı yapmakta şöyle çevirmiş
+
+835
+02:19:28,960 --> 02:19:31,239
+ve birlikte
+
+836
+02:19:31,239 --> 02:19:33,420
+ıraksaktır.
+
+837
+02:19:40,659 --> 02:19:42,412
+Evet, ya sabır değil, birazcık.
+
+838
+02:19:49,268 --> 02:19:51,268
+Mesela ne alabilir arkadaşlar?
+
+839
+02:19:53,268 --> 02:19:56,067
+1 bölü 1 artı x kare olması yakınsak olduğunu biliyoruz.
+
+840
+02:19:56,587 --> 02:19:58,407
+Onu örnek olarak kılabiliriz. Bunu yazın.
+
+841
+02:19:59,988 --> 02:20:11,048
+Örneğin, 1 bölü x kare ile karşılaştırarak 1'den sonsuza tabii 1 bölü 1 artı x karenin yakınsak olduğunu gösterebiliriz.
+
+842
+02:20:17,172 --> 02:20:17,852
+yazdınız mı?
+
+843
+02:20:20,492 --> 02:20:24,412
+Birden sonsuza 1 bölü x kare x ile
+
+844
+02:20:29,012 --> 02:20:34,872
+1 bölü, 1 at x kare x, değil mi?
+
+845
+02:20:36,592 --> 02:20:37,572
+Birlikte yakın sandılar.
+
+846
+02:20:38,292 --> 02:20:38,912
+Niye diyeceğiz?
+
+847
+02:20:48,915 --> 02:20:56,716
+Çünkü birden sonuza 1x karenin integralını aldığınızda sonucun 1 olduğunu görürsünüz. Ya da, pardon, integral'a gitmeye gerek yok.
+
+848
+02:21:16,211 --> 02:21:26,931
+Çünkü 1 bölü x kare bölü, limite bakarsak, fx bölü x, x sonsuza giderken limit alıyor, dikkat edeyim.
+
+849
+02:21:27,851 --> 02:21:32,311
+Mit, 1 bölü x kare bölü, 1 bölü 1 artı x kare.
+
+850
+02:21:34,491 --> 02:21:40,771
+Tabii, saçı çarparsak, benim için direkt x kare bölü, 1 artı x kare bölü x kareden bir iç kareciler belli ilmesin değil mi?
+
+851
+02:21:41,459 --> 02:21:46,959
+limit 1 artı x kare bölü. x kare bölü değiştiğimiz. x son serdiği.
+
+852
+02:21:49,359 --> 02:21:59,059
+Öte yandan, sıfırdan, sıfırdan ne geliyor? 1'den. 1'den sonsuza.
+
+853
+02:22:02,708 --> 02:22:04,188
+1 bölü x kare integrali.
+
+854
+02:22:07,488 --> 02:22:09,868
+Hemen bunu hesaplarsanız, bunun 1 olduğunu görürsünüz.
+
+855
+02:22:10,008 --> 02:22:22,268
+Yani limit'e geçmişte, 1'den b'ye diyelim mesela 1 bölü x kare dx, ne diyelim, b sonsuza giderken falan böyle.
+
+856
+02:22:22,468 --> 02:22:25,948
+Bunun altında, işte x'i bölü x kareden ifademiz 1 çıkar.
+
+857
+02:22:28,708 --> 02:22:29,788
+x'i 1 bölü b.
+
+858
+02:22:31,123 --> 02:22:33,583
+Eksi 1 bölü x. Limit.
+
+859
+02:22:34,543 --> 02:22:36,623
+Eksi 1 bölü x olur. İntegralimiz.
+
+860
+02:22:37,463 --> 02:22:38,244
+1'den b'ye.
+
+861
+02:22:38,943 --> 02:22:40,183
+Eştir. Limit.
+
+862
+02:22:41,984 --> 02:22:43,843
+Eksi 1 bölü b.
+
+863
+02:22:44,003 --> 02:22:45,404
+Eksi artı 1.
+
+864
+02:22:47,304 --> 02:22:49,183
+Bu değişti. Bu sıfıra getireceği için.
+
+865
+02:22:49,183 --> 02:22:51,123
+İlk b sonsuza giderken.
+
+866
+02:22:52,543 --> 02:22:54,183
+B sonsuza giderken.
+
+867
+02:22:54,884 --> 02:22:55,904
+Sıfır artı 1'den.
+
+868
+02:22:57,244 --> 02:22:57,443
+1.
+
+869
+02:22:58,004 --> 02:23:02,004
+x kare artı 2x, f'yi sıplamaya gerek yok. Bu integral yakınsak.
+
+870
+02:23:06,484 --> 02:23:13,804
+hem limit de, yani şuna bir yıldız koyalım, buna da iki yıldız koyalım. Yıldız ve iki yıldızdan
+
+871
+02:23:18,772 --> 02:23:20,772
+Limit karşılaşma testi
+
+872
+02:23:20,772 --> 02:23:23,772
+Karşılaşma testi
+
+873
+02:23:29,940 --> 02:23:40,440
+ne olduğunu söyler? 1'den sonsuza, 1 bölü 1 artı x kare x integralde yakınsak olduğunu söyler.
+
+874
+02:23:43,340 --> 02:23:47,540
+Olduğunu söyler. Geçti biz bunu hesaplamıştık yani. Sonucun pi çıktığını biliyoruz değil mi?
+
+875
+02:23:47,740 --> 02:23:50,740
+Pi mi çıkmıştı? Pi bölü 4 çıkmıştı kaç çıktı olmuyor?
+
+876
+02:23:51,740 --> 02:23:53,548
+1 bölü 1 artı x kare.
+
+877
+02:23:55,700 --> 02:23:57,880
+Biz birden sonuçta mı onu hesaplamıştık arkadaşlar?
+
+878
+02:23:58,700 --> 02:24:02,060
+Neyse şimdi bakarız. Buradaki integral değeri 1x4.
+
+879
+02:24:04,020 --> 02:24:05,700
+Yakın saklı olduğu çıkar.
+
+880
+02:24:08,180 --> 02:24:09,700
+Karşırma testinden.
+
+881
+02:24:13,060 --> 02:24:15,600
+Yıldız ve Yıldız, iki Yıldız'dan.
+
+882
+02:24:16,060 --> 02:24:17,740
+Karşırma testi değil mi aslında?
+
+883
+02:24:18,420 --> 02:24:19,740
+Olduğunu söyler, öyle diyecektik.
+
+884
+02:24:21,060 --> 02:24:21,740
+Testi.
+
+885
+02:24:22,675 --> 02:24:24,587
+x kısak olduğunu söylüyor.
+
+886
+02:24:31,092 --> 02:24:32,332
+yok ki ön sayfaları.
+
+887
+02:24:41,940 --> 02:24:46,020
+bir kossayfa mı geçmişiz? Ana! Bir tane kossayfa geçmişiz. Olsun, önemli değil.
+
+888
+02:24:51,636 --> 02:24:58,855
+x sonuçtan artı 0'dan sonuçta da bunun, 1'den sonuçta pi bölü 4, 0'dan sonuçta bunun yarısı olur değil mi?
+
+889
+02:24:59,076 --> 02:25:00,456
+Böyle düşündüğünüz zaman o anlama gelir.
+
+890
+02:25:01,776 --> 02:25:05,776
+x sonuçtan artı sonuçta 1 sayfa boşluğumuz da önemli değil.
+
+891
+02:25:08,536 --> 02:25:10,216
+Ve son sayfamız burası arkadaşlar.
+
+892
+02:25:12,355 --> 02:25:15,116
+Evet, böylece konularımızı
+
+893
+02:25:18,548 --> 02:25:20,828
+tavlamış durumdayız.
+
+894
+02:25:29,971 --> 02:25:35,971
+Bizim son konusu genelleştirmiş integral arkadaşlar. Zaten genelleştirmiş integraller, yakışsak mıdır, yasak mıdır?
+
+895
+02:25:35,971 --> 02:25:44,971
+Bu testler, şey olarak, şeklinde soru olmaz. Ya da geleceğini sanmıyorum. Geri set işte bakıyorsun zaten böyle.
+
+896
+02:25:44,971 --> 02:25:50,971
+Hani nostaljik olup ne belki sorulabilir ama, genelde tutamıyorum ben.
+
+897
+02:25:50,971 --> 02:25:56,971
+Ama tabii improper testin limitin tabii nedir, integralin çözümünü.
+
+898
+02:25:57,396 --> 02:26:06,515
+Bilmemiz nasıl? Arkadaşlar artık nasıl komisyon size soru gönderecek onu bilmiyorum. O zaman Gölge'ye sektörer.
+
+899
+02:26:14,484 --> 02:26:38,043
+Evet, yarın soru çözeriz. Tabii tabii ders yapma diye şeyimiz yok. Sadece konu yok. Geçmiş konulardan, önce konulardan, son konulardan tabii ağırlıklı olmak üzere karşı yönetler çözeriz. Böylece sınava bir nefce biraz daha hazırlıklı olursunuz. Tamam mı? Sorunuz yoksa arkadaşlar, dersi burada bitirelim.
+
+900
+02:26:39,956 --> 02:26:49,675
+sonlandırsa yine şeyi açık tutacağım. Biraz daha. Size de iyi günler. Açık kalırsa sizi kapatacağım. Sonlandırsa görürüm ben zaten.
+
+901
+02:26:51,675 --> 02:26:55,756
+Yarın görüşmek üzere. Ayrıca çıkanlar için. Tamam mı arkadaşlar?
+
+902
+02:50:36,020 --> 02:50:38,319
+Arkadaşlar, sorunuz yok.
+
+903
+02:50:43,507 --> 02:50:44,299
+x kare artı 2x, f'
