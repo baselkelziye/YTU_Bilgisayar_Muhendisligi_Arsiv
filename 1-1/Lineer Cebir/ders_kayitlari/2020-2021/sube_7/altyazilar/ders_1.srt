@@ -1,0 +1,2227 @@
+1
+00:06:20,755 --> 00:06:23,775
+Evet, günaydın arkadaşlar. Sesimi duyabiliyor musunuz?
+
+2
+00:06:25,555 --> 00:06:26,315
+Duyuyoruz.
+
+3
+00:06:27,195 --> 00:06:28,775
+Evet hocam, duyuyoruz.
+
+4
+00:06:29,055 --> 00:06:29,795
+Çok mutluyuz hocam.
+
+5
+00:06:30,355 --> 00:06:30,675
+Evet.
+
+6
+00:06:31,603 --> 00:06:52,524
+Mikrofonları kapatırsak, eğer konuşmayacaksak, sanırım izin verildi şu anda size. Onu kapatmak istemiyorum. Ama soru soracağınız zaman kullanabilirsiniz. Mikrofonu kullandıktan sonra lütfen kapatın. Ses de kirlilik olabiliyor. Bana müsaade edin, ofisin kapısını kapatayım. Ders esnasında kimse bizi rahatsız etmesin.
+
+7
+00:07:10,355 --> 00:07:18,295
+Evet, ismim Mehmet Emin Köroğlu, dönem mat 13.20, lineer C1, grup 7 dersini birlikte işleyeceğiz.
+
+8
+00:07:19,836 --> 00:07:25,175
+Öncelikle ders hakkında biraz bilgi vermek istiyorum, yani kullanılacak kaynaklar.
+
+9
+00:07:25,175 --> 00:07:30,515
+Esasında benim kendi ders notlarım olacak ve onları Avesis sayfamdan paylaşacağım.
+
+10
+00:07:32,148 --> 00:07:44,008
+Ekstradan bir kaynağa ihtiyacınız olmayacak ama daha fazla kaynak görmek istiyorum diyen arkadaşlarınız için ben burada dersin kaynaklarını listeledim.
+
+11
+00:07:45,492 --> 00:07:58,232
+İlki, bu bizim Bologna sisteminde verilen kaynakla Howard Antin'ın kitabı, Elementary Linear Algebra with Applications, bunun Türkçesi de mevcut, kitapçılarda bulunabilir.
+
+12
+00:07:58,372 --> 00:08:07,852
+Eğer Yıldız kampüsüne, pardon, Davutbaşa kampüsüne erişebilme şansınız varsa, kütüphanede de bu kitaplardan temin edebilirsiniz.
+
+13
+00:08:07,852 --> 00:08:13,492
+Eğer ihtiyacınız olursa ki ihtiyacınız olmayacağını baştan söylüyorum ama daha fazlasını isteyenler.
+
+14
+00:08:13,492 --> 00:08:19,732
+Bu kaynaklara başvurabilirsiniz ve bulacağınız yer de üniversitenin kütüphanesi.
+
+15
+00:08:20,592 --> 00:08:32,211
+İkinci kaynağımız Bernard Coleman'ın kitabı. Çok güzel, pedagojik bir kitap. Belki çok basit örnekler kitapta var, alıştırmalar var ama konu anlatımı çok pedagojik, güzel bir kitap.
+
+16
+00:08:32,612 --> 00:08:40,192
+Introductory Linear Algebra and Applied First Course. Bir de orada gerçek hayat uygulamalarını da bulabilirsiniz Coleman'ın.
+
+17
+00:08:40,559 --> 00:09:04,979
+David Hill ile yazdığı kitabı. Üçüncü kaynağı ben buraya ekledim. Seymour Lipschitz'in Xiaomi serisinden çıkan kitabı Mineral Gebra. Bunun da yine Türkçesi. TGM Akademi tarafından sanırım son yıllarda güncelleştirilerek basıldı. Daha önce de Türkçesi vardı ama biraz hatalar vardı. Hatalardan arındırılmış hali şu anda.
+
+18
+00:09:05,504 --> 00:09:13,504
+Yine kitapçılarda bulunabilir ve ben üniversite kütüphanesinde de olabileceğini düşünüyorum emin olmamakla beraber çünkü bakmadım ben ona.
+
+19
+00:09:13,504 --> 00:09:20,504
+Seymour Lipschitz'in kitabın özelliği ne? Olabildiğince fazla çözümlü problem var kitapta.
+
+20
+00:09:23,956 --> 00:09:25,803
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+21
+00:09:26,131 --> 00:09:45,951
+Hülya Hoca ile Göksel Hoca'nın kitabı, ki aslında linlerce bir servis dersini ikinci kez alan vardır aramızda belki. Bu kitaptan ders işlenir genellikle. Bu kitapta da oldukça fazla yine çözümlü problem var. Türkçe bir kaynak tabii. İlk verdiklerim İngilizce ama Türkçelilerim mevcut. Bu Türkçe bir kaynak.
+
+22
+00:09:45,951 --> 00:09:52,271
+Linlerce bir ve çözümlü problemleri. Göksel Bey ile Hülya Hanım'ın kitabı. Bu da güzel bir kitap.
+
+23
+00:09:52,659 --> 00:10:01,459
+ve yine bölümümüz hocalarından Gürsel Bey'in kitabı, inerce bir çözümlü problemleri. Burası da uygulamalarda kullanılacak bir kitap.
+
+24
+00:10:02,995 --> 00:10:14,956
+Dersin içeriği ne olacak? O şeyi İngilizce grup için hazırladığım için onu tekrar Türkçe grup için yeni bir tane hazırlamak istemedim. Yani ders Türkçe, o yüzden endişe etmenize gerek yok.
+
+25
+00:10:15,775 --> 00:10:21,536
+İlk hafta matrisleri göreceğiz. Yani bu hafta matrisleri tanıyacağız. Aramızda hiç matris tanımayan var mı?
+
+26
+00:10:25,556 --> 00:10:28,376
+[öğrenci] tanımıyormuş matrisleri. [öğrenci] bugün tanıyacaksın.
+
+27
+00:10:29,436 --> 00:10:32,416
+Evet, peki aramızda 2020 girişli var mı?
+
+28
+00:10:35,956 --> 00:10:37,015
+Ben varım hocam.
+
+29
+00:10:37,456 --> 00:10:38,015
+Ben hocam.
+
+30
+00:10:38,796 --> 00:10:54,155
+Mesaj kutusuna yazarsanız isimlerinizi görebilme şansım var. Ben screen'i paylaştığım için, ekranı paylaştığım için göremiyorum. O yüzden mesaj kutusunda daha rahat takip edebilirim arkadaşlar. Soruları mikrofonla sorarsanız.
+
+31
+00:10:55,539 --> 00:11:08,539
+2020'ler hoş geldiniz arkadaşlar. Umarım verimli, güzel bir süreç geçirirsiniz. Tabii şanssızlığınız maalesef pandemi dönemine denk geldi. Belki 100 yılda olabilecek.
+
+32
+00:11:10,196 --> 00:11:29,736
+Doğal durumlardan bir durum yaşıyoruz. Maalesef ve kampüsten belki çoğunuz mağrum kalacaksınız. Umarım ikinci dönem derslerimize başlarız. Öyle ümmiyle diyorum. O yüzden moralleri yüksek tutalım. Yıldız'a hoş geldiniz deyin sizlere. Umarım çok güzel bir süreç geçirirsiniz.
+
+33
+00:11:32,196 --> 00:11:33,236
+Evet.
+
+34
+00:11:37,844 --> 00:12:01,704
+Tamam, ilk hafta matrisleri tanıyacağız. Matris, cebirsel bir, yani nasıl diyeceğim, bir argüman, bir araç ve mühendislikte, hatta bilimin birçok alanında bir araç olarak kullanılan cebirsel bir tanımlama diyebilirim. Üzerinde işlemler tanımlayacağız. Cebirsel bir yapının üyesi matrisi, öyle diyeyim ben.
+
+35
+00:12:02,100 --> 00:12:22,360
+Ama tanımlayacağız. Aslında karşılaşmışsınızdır. Matrislerin özel tipleri, kalesel matrislerin özel bazı tipleri var. Onlardan bahsedeceğiz. İşte bilim matris, idempotent matris, ortogonal matris, nilpotent matris, involunt matris gibi kavramlar. Onları tanıtacağız ikinci haftada.
+
+36
+00:12:30,100 --> 00:12:43,100
+konusu lineer denklem sistemleri için sistematik bir çözüm yöntemi vermek ve biz burada matris cebirinden yararlanacağız. Normalde siz muhtemelen ortaokulda, lisede denklem sistemlerini gördünüz.
+
+37
+00:12:43,100 --> 00:12:54,900
+Yani bakkala gittiğiniz üç tane muz, iki tane erik, işte ondan sonra aldınız, yedi lira verdiniz, beş tane erik, iki tane muz aldınız, üç lira verdiniz. Muz ve eriğin fiyatı nedir?
+
+38
+00:12:58,100 --> 00:13:04,840
+Bununla iki tane de denklem var. Birbirinden bağımsız iki denklem var. Dolayısıyla burada bu uzun ve elgin fiyatını bulabilirsiniz.
+
+39
+00:13:05,440 --> 00:13:14,560
+Fakat burada değişken sayısı, bilinmeyen sayısı arttığı zaman bu denklemleri çözmek yani elle mümkün olmayabiliyor ya da çok zaman alıyor.
+
+40
+00:13:14,560 --> 00:13:26,100
+O yüzden biz bunları matris diliyle ifade ettikten sonra matrisler bilgisayarlar tarafından sevilen cebirsel argümanlar. Dolayısıyla matrislerle işlem yapmak bilgisayarlar.
+
+41
+00:13:26,100 --> 00:13:39,500
+Boşuna gider, öyle değil. Dolayısıyla daha rahat işlem yapar bilgisayarlar. Çünkü sınırları belli, üzerindeki işlemler belli. Dolayısıyla matrisi özel bir forma getirip bununla denklemeleri çözeceğiz.
+
+42
+00:13:39,640 --> 00:13:46,440
+Buna matrisin eşelon formu diyoruz. Matris üzerinde bazı elementer, temel işlemler tanımladıktan sonra bu hale getireceğiz.
+
+43
+00:13:46,440 --> 00:13:54,100
+Determinant kavramı ve özellikleri, determinatta matrisin, matris üzerinde tanımlanan bir fonksiyon.
+
+44
+00:13:54,100 --> 00:14:21,000
+Aslında real bir sayı ve matrisin karakterine dair bize bilgi veriyor. Determinant kavramında yine geometrilerde, dönüşümlerde önem arz eden, yani bir geometrik bir vektör uzayından başka bir vektör uzayına bir dönüşümle, lineer dönüşümle geçiş sağladığınızda o lineer dönüşümün neyi koruduğunu, neyi korumadığını determinant yardımıyla biz bulabiliyoruz daha geniş anlamda ya da determinant buna dair bize bilgi veriyor.
+
+45
+00:14:22,100 --> 00:14:30,100
+İşte sol tarafta bir kare, sağ tarafta bir paralel kenar olabilir, bir dikdörtgen olabilir. Sol taraftaki alanı yine sağ tarafın...
+
+46
+00:14:30,399 --> 00:14:52,339
+alanı arasındaki ilişki mesela determinant bize verebiliyor. Bu determinantın geniş yorumlarından biri biz burada çok sınırlı miktarda determinant kullanacağız. Yani tanımını vereceğiz, özelliklerini vereceğiz fakat kullanım alanımız ters bulmada, denklem sisteminin çözümünü yorumlamada kullanacağız. Yani determinantla matrislere dair önemli bir parametre.
+
+47
+00:14:53,460 --> 00:15:07,799
+Determinantları özel bazı, 3x3 tipindeki matrislerin determinantını hesaplamak için bizim bir kuralımız var, servis kuralı. Liseden gelen öğrenciler bunu severler fakat biz zaten genel çözüm yöntemini göreceğiz determinant hesaplamada.
+
+48
+00:15:07,799 --> 00:15:17,399
+Ve bir matrisin adjointi yardımıyla, yani biz bunu Türkçe'de eki diyoruz, tabii matris hakkında bilgisi olmayanlara bunlar çok yabancı gelecektir.
+
+49
+00:15:17,920 --> 00:15:21,460
+Fakat dersin sonunda diyeceksiniz ki, gerçekten...
+
+50
+00:15:21,460 --> 00:15:48,399
+Öğrendik bunları şu anda. Başlıklar size çok yabancı geliyor olabilir. Hiç endişe etmeyin. İlerleyen aşamalarında sizler de aşina olacaksınız. Matris'in eki ya da adjointi yardımıyla tersini hesaplayacağız. Kaçıncı hafta olmuş oldu? 6. haftanın, 5. haftanın. 6. haftada lineer denklem sistemlerini tanıtacağız ve onlar için genel bir çözüm yöntemi olan Gauss-Jordan Elimination.
+
+51
+00:15:49,460 --> 00:15:58,060
+Yani Gauss-George'un eliminasyon metodu, eleme metodunu kullanarak ki bu da aslında matrisin eşelon formunu kullanarak.
+
+52
+00:15:58,292 --> 00:16:03,832
+Çözüm üretiyor. Yine tek çözümün olması halinde kramer kuralı ve ters matris.
+
+53
+00:16:04,392 --> 00:16:10,572
+Eğer matrisin tersi varsa çözüm tekse kat sayılar matrisi diye bir kavram tanımlayacağız.
+
+54
+00:16:10,672 --> 00:16:22,352
+Bu matrisin tersi olacak. Dolayısıyla ters matris kullanarak bir lineer denklem sistemin çözümünü sadece sol taraftan bir matrisin tersiyle çarparak bulmuş olacağız.
+
+55
+00:16:23,731 --> 00:16:42,991
+Devam edelim. Sonrasında ne göreceğiz? Vektörleri fizikçilerin diliyle tanıtacağız. Bir hafta böyle vektörlerden, vektörel büyüklüklerden bahsedeceğiz. Daha doğrusu vektörleri tanıtacağız. Onlar üzerinde bazı işlemler. Daha sonra genel anlamda, çünkü vektörleri bilgisayarcılar ve bilgisayar mühendisleri ve fizikçiler.
+
+56
+00:16:51,731 --> 00:17:04,152
+vektörel nicelikler, yani mesela atmosferde her noktada ısı var, bu skaler bir nicelik, siz termometreyi bir yerden bir yere aldığınızda ya da parmağınızın ucunu gezdirin, ucunda her yerde bir ısı var.
+
+57
+00:17:04,152 --> 00:17:18,331
+Bu skaler bir nicelik, yani bir doğrultu, bir yön, burada söz konusu değil fakat mesela bir araç A noktasından B noktasına hareket eden bir hareketlinin doğrultusu var, yönü var ve hızının bir şiddeti var.
+
+58
+00:17:20,884 --> 00:17:48,764
+Vektörel bir nicelik, bunlara da fizikçiler ihtiyaç duyuyor, bunu ifade etmek için işte vektörleri kullanıyorlar. Bilgisayar manisteri de vektörleri diziler, erreyler olarak görürler. Matematikçiler ne yaparlar? Bilgisayar manisterinin vektöre bakış açısını fizikçilerin bakış açısıyla birleştirerek cebirsel bir yapı ortaya koyarlar. Biz buna da vektör uzayıları diyoruz. Vektör uzayıları artık kür böyle bizim zihnimizde var ettiğimiz.
+
+59
+00:17:48,884 --> 00:18:16,884
+Uzay deyince aklınıza içinde yaşadığımız boşluk gelmesin. Biz matematikçilerin böyle çokça uzayları var. Biz bunları kendimizde var ederiz. Fakat insanoğlunun hayatını olabildiğince kolaylaştırır, hayatımıza değer katar bunlar. Daha doğrusu biz evrendeki bilinmezleri anlamak adına bütün bu argümanları, matematikçilerin zihinlerinde ürettikleri bu uzayları kullanarak çevremizdeki...
+
+60
+00:18:16,884 --> 00:18:31,164
+çevremizdeki evreni anlamaya çalışırız ve o çevremizdeki evrenden, fiziksel dünyadan hayatımızı kolaylaştıracak icatlar yaparız. Dolayısıyla lineerce bir dersi de bu temel derslerden bir tanesi.
+
+61
+00:18:32,384 --> 00:18:38,731
+Vektör uzayların alt uzayları olacak yine. Vektör uzaylarıyla ilgili kavramlar, lineer, bağımsızlık,
+
+62
+00:18:38,932 --> 00:18:59,351
+Bağımlılık, lineer dependency, yani vektörlerin diner bağımlılığı ve bağımsızlığı ve spanning set dediğimiz, yani bir vektör uzayını geren, daha doğrusu bir kümenin elemanlarını kullanarak oluşturduğumuz bir vektör uzayı ya da alt vektör uzayı, biz buna da spanning set diyoruz.
+
+63
+00:18:59,351 --> 00:19:06,932
+Yani geren kümesi, geren kümesi şeklinde çevirebiliriz Türkçe'ye. Yine vektör uzaylarıyla ilişkili kavram.
+
+64
+00:19:06,932 --> 00:19:22,592
+Bazen taban, bir vektör uzayının tabanı. Yani elimizde böyle sonlu ya da sonsuz sayıda vektör var. R kareyi düşünün. Herhalde R kareyi biliyorsunuz. Yani kartezyen koordinat sistemini düşünün. Kartezyen koordinat sisteminde sonsuz tane ikili var.
+
+65
+00:19:23,451 --> 00:19:32,271
+İşte A, B şeklinde, parantez içinde A, B şeklinde sonsuz tane ikili var. Fakat biz bu ikilileri sadece iki vektör kullanarak hepsini üretebiliriz. Mesela 1, 0, 0, 1.
+
+66
+00:19:32,271 --> 00:19:34,831
+Yani taban kavramı işte o 1, 0, 0.
+
+67
+00:19:34,932 --> 00:19:59,532
+1-0, 0-1 vektörleri Rekar'ın bir tabanı oluyor. Rekar'ın bütün elemanlarını üretiyor. Yani siz bir kasabaya gidiyorsunuz, orada birçok insan yaşıyor, kötü bir örnek olacak, farkındayım. Ama onların bir temsilcisi var. Yani onunla konuştuğunuzda herkesle konuşmuş gibi oluyorsunuz, kötü bir örnek, farkındayım. Ama derse yeni başlayan 2020 girişler, daha matrisleri hiç tanımıyorlar, böyle örnekler vereceğim, kusuruma bakmayın.
+
+68
+00:20:00,000 --> 00:20:28,000
+Daha sonra ama daha böyle tutar mı örnekler verebileceğiz. Vektörlerin boyutu ve koordinatlarından söz edeceğiz. Vektör uzayının tabanları arasında geçiş sağlayacağız. Az önce işte determinantla ilgili bir anekdot vermiştim. Sol taraftan sağ tarafa taşıdık, kare işte paralel kenar oldu, dik dökken oldu ya da başka bir şey ya da kare olmaktan vazgeçti, noktaya dönüştü. Dolayısıyla bazı şeylerini yitirdi. Dolayısıyla biz vektör uzaylarının işte bir taraftan bir tarafa taşıdık.
+
+69
+00:20:28,000 --> 00:20:45,179
+Sol taraftaki kareyi sağ tarafta paralel kenar taşıyan şey işte tabanı değiştirmek olacak. Vektör uzayının tabanını üreten, uzayı üreten kümenin elemanlarını farklı bir şekilde ifade ettiğimizde buna taban dönüşümü ya da değişimi ya da taban geçişi diyeceğiz.
+
+70
+00:20:45,179 --> 00:20:56,000
+Son konumuz bu dönemin eigenvalues, eigenvectors, Almanca kavramlar. Türkçe'ye biz bunu öz derler. Özvektörler, yine mühendislikte, muazzam hatta sosyal bilimler.
+
+71
+00:20:56,000 --> 00:21:12,159
+İleride bir sosyal olguyu istatistiksel olarak yorumlarken özdeğer, özvektörler çokça kullanılır. Yani bir örnekleme dair bize ciddi bilgiler sağlar. Özdeğer, özvektörler. Tabii oraya gelmeden bazı fark varmışlar kullanmamız gerekiyor.
+
+72
+00:21:14,259 --> 00:21:26,480
+Matris'in, karesel matris'in karakteristik polinomu, karakteristik polinom denmesinin sebebi de matris'in karakterine dahil bilgiler ihtiva ediyor. Dolayısıyla karakteristik polinomdan söz edeceğiz.
+
+73
+00:21:26,840 --> 00:21:37,259
+Diagonalization dediğimiz köşegenleştirme, yani karesel bir matris'in köşegenleştirme, diagonalleştirme ya da diagonalization, köşegenleştirme kavramı aslında bizim...
+
+74
+00:21:38,144 --> 00:21:52,144
+Konu başlıklarının içinde değil, müfredat dışı bir konu fakat, eigenvalue, eigenvektörler, özdeğerler, özvektörler esasında bu dönemin belki biraz daha zor konularından bir tanesi. Zorluk diye bir şey demeyeyim de hani...
+
+75
+00:21:52,435 --> 00:22:19,815
+Tabii bu kişiye göre değişir. Yani biraz daha ileri konularından bir tanesi. Fakat hiç uygulamasını vermiyoruz. Biz bunları neden öğreniyoruz? İşte bir dağcı düşünün. Zirveye tırmanın. Tabii dağcının amacı var. Ya da işte biri, ben bu zirveye tırmanacağım, tepede bayrak dikeceğim diyor. Sonra zirveye çıkıyor, bayrak dikmeyi unutuyor. O kadar işte emek saf ve terleri yoruldu fakat zirveye çıktı, amacı unuttu falan. Öyle bir şey olmasın. O yüzden dedim ki AYGEN VARİ, AYGEN VEKTOR'ların bir uygulamasını, diyagonalleştirmeyi verelim.
+
+76
+00:22:20,435 --> 00:22:35,295
+geldik. Konu dışı sınavda karşınıza çıkmayacak o, diagonalleştirme ve en son, Kelly Hamilton Teoremi, yine karesel matrislerin karakteristik polinomları yardımıyla bir matrisin kuvvetini ve tersini hesaplamamıza yardım ediyor.
+
+77
+00:22:35,915 --> 00:22:47,935
+Başlıklarımız bu şekilde biraz, evet, şeye bakayım, siz bayağı bir şey yazmışsınız, onlara bakalım. Hocam, başka e-mail adresiniz var mı? Sayfa atlamışım.
+
+78
+00:22:48,339 --> 00:23:13,679
+Kaydetmeye gerek yok [öğrenci]. Şöyle, o bilgiyi de verelim. Benim AVSİ sayfam var. Dersi nasıl işleyeceğiz? Biraz da onunla ilgili konuşalım. AVSİ sayfasına düzenli olarak materyal koyacağım. Yani ders sunumları. Sunumlar üzerinden dersi anlatacağım. Sizler için sunum hazırladım. Sunumlar üzerinden dersi anlatacağım. Dolayısıyla her dersten önce, şu anda birinci haftanın sunumu benim AVSİ sayfamda mevcut. Yani matrisler konusu.
+
+79
+00:23:16,660 --> 00:23:20,019
+[şifre]
+
+80
+00:23:21,907 --> 00:23:30,147
+[şifre] şifresini kullanarak, orada İngilizce grubun da materyalleri olacak, onların şifresi farklı.
+
+81
+00:23:30,667 --> 00:23:38,047
+Ayrıca bu syllabus'ı da ben oraya koydum, yani bu kaynak kitaplar, o yüzden yazmanıza gerek yok arkadaşlar, pür dikkat beni dinleyin.
+
+82
+00:23:38,367 --> 00:23:47,547
+Ha, ben hocam yazarak öğreniyorum, evet gerçekten yazmak bilginin pekiştirilmesine yardım eder, fakat online derste bunun çok evlenişli olduğunu düşünmüyorum.
+
+83
+00:23:47,688 --> 00:23:49,907
+Kulağınızda kulaklık, ekrana bakacaksınız.
+
+84
+00:23:49,907 --> 00:24:17,207
+Sağ tarafta bir şey varsa, içtiğiniz bir şey muhtemelen vardır. Çarpılacak, dökülecek falan neyse. Ondan sonra yazarken ekranı kaçıracaksınız. Ben çünkü sunum üzerinde anlattığım için öyle her şeyi yazmayacağım. Bazı durumlarda yine beyaz tahtayı kullanarak ya da PDF annotator kullanarak yazacağım. Materyalin üzerinde yazacağım. Fakat bu yazma çok sınırlı olacak. Yani bir örnek çözerken belki kendim çözeceğim sizi takip edebileyim diye ama çoğunluğu aslında orada çözdüğüm şeyler.
+
+85
+00:24:17,907 --> 00:24:26,087
+O yüzden uzun uzadıya yazmanızı bekleyecek bir vaktimiz de yok. Ders haftada 2 saat konular çok fazla. Ancak konuları yetiştirebiliyoruz.
+
+86
+00:24:26,567 --> 00:24:30,747
+Maalesef uygulama da örnekler veriyoruz ama geniş uygulamalar yapma şansımız yok.
+
+87
+00:24:30,747 --> 00:24:40,087
+Burada yine avicis sayfama 2 tane uygulama, sizin için ödev olarak 2 tane uygulama koyacağım. Uygulamalar Türkçe, İngilizce grup içinde aynı şeyi koydum.
+
+88
+00:24:41,707 --> 00:24:45,747
+Ayrı ayrı paylaştım onları, ikisi de aynı. Dolayısıyla uygulamaları...
+
+89
+00:24:45,907 --> 00:24:59,987
+Bunları kendiniz çözmeye çalışın her konudan sonra. Yani çok fazla değil. Orada 25 tane soru var birinci uygulama belki, ikinci uygulama 10-15 tane soru var. Toplamda bir evliğe yakın soru var çocuklarıyla birlikte düşündüğümüzde.
+
+90
+00:25:06,612 --> 00:25:18,932
+Web sayfasına koyduğum materyalleri, ders materyalleri, sunumları iyi çalışırsanız, derse de katılıp iyi dinlerseniz, anlamadığınız yerleri sorarsanız, bu derse çok iyi bir notla geçersiniz ve bir şeyler öğrenirsiniz.
+
+91
+00:25:19,392 --> 00:25:32,451
+Amaç burada iyi notla geçmek değil. Amaç öğrenmek. Düşünmeyi öğrenmek başta. Matematiğin bize kazandırdığı en önemli nitelik düşünmek. Düşünmeyi öğrenirsiniz. Düşünmek çok değerli bir şey.
+
+92
+00:25:33,451 --> 00:25:34,612
+Herkes sizin düşünmeyi öğrenir.
+
+93
+00:25:34,612 --> 00:25:59,612
+yetişi yok maalesef. O yüzden, derse böyle yaklaşmanız lazım. Yani tamam, tabii güzel bir not almak, hakkınız, yani alın. O çabayı serp eden zaten o güzel notu, iyi notu alacaktır. Lütfen, şöyle şeyler olmasın. Bizler online eğitime geçti. Sınavlarınız, tabii şunu devam ettireyim ben. Orada belki açıklama yaparız yine. Şu soruları da biraz bakayım. Arkadaşlarınız hızlıca ulaşmışlar.
+
+94
+00:26:02,067 --> 00:26:05,428
+[öğrenci] demiş, [öğrenci]'in sorusuna cevap verdim.
+
+95
+00:26:06,288 --> 00:26:13,748
+[öğrenci] şey yazmış, başka e-mail adresim var ama Yıldız'ı kullanıyorum.
+
+96
+00:26:13,907 --> 00:26:21,028
+Tabii Yıldız çok hamta, oraya gelen e-mail ama çok da paylaşmak istemiyorum açıkçası diğer e-mail adresini.
+
+97
+00:26:21,827 --> 00:26:24,488
+Zaten Yıldız'a gelen oraya da geliyor bağladığım için.
+
+98
+00:26:24,788 --> 00:26:27,428
+Yani mailleriniz daha hızlı oraya ulaşıyor, görebiliyorum.
+
+99
+00:26:29,652 --> 00:26:37,211
+Ama yıldızı ben şuradan da yazayım, AWS SiteCom'da var ki burada da vardı en başta. Neyse onu yazalım.
+
+100
+00:26:41,236 --> 00:27:00,196
+Dün İngilizce gruba ders yaparken burada şifreyi, kendi koydum şifreyi hatırlamadım. Tabi biraz Zoom falan yeni kullandığınız için, yani daha önce kullandım da böyle daha gelişkin versiyonunu kullanmadık. Şifreyi yanlış verdim çocuklara. Hocam ulaşamıyoruz diyorlar. Sizinki umarım doğrudur. Bir deneyin şifreyi. Tamam.
+
+101
+00:27:01,076 --> 00:27:22,056
+Bir şifre doğrudur, şaka yaptım zaten. Evet arkadaşlar, peki dersin notlandırması nasıl olacak? Öğrenciler genelde burayla ilgilenirler. Bizim öğrenciler, şahit olduğum yabancı öğrenciler böyle değil. Onlar daha çok ben bu dersten ne öğrenirim? Ben bu hocadan ne kapağı? Böyle düşünürler.
+
+102
+00:27:22,420 --> 00:27:33,400
+Kütüphanelerde vakit geçirirler, kitaplarla vakit geçirirler. Ama bizim öğrencilerimizin yüzde doksanı maalesef. Hocam sınavda ne soracaksınız?
+
+103
+00:27:34,387 --> 00:27:50,387
+Ben bu dersten iyi not almalıyım. Ama amaç bu değil ki üniversitedesiniz. Sizinizdeki o liseden gelen şambunları atın. Ama maalesef biz de teste başladık. Sınavlar test şeklinde olacak. Her gün 20 tane soru içeriyor. 60 dakikalık muhtemelen olur. 20 tane soru, sorular...
+
+104
+00:27:50,864 --> 00:28:15,864
+Uygun tabi biraz da bilerek şey yaparız. Çünkü maalesef öğrenciler bizi bazı durumlarda hayal kırıklığına uğrattılar. Aramızda 2020 girişler var. Onlar, eğer aramızda tekrar alanlar varsa kötü örnek olmamalarını tavsiye ediyorum onlara. Biz ancak tavsiye ederiz. Sizleri kontrol etme şansımız yok. Erdemli insanlar kendilerine...
+
+105
+00:28:16,048 --> 00:28:43,228
+Erdemli bir yol tuttururlar. Onlar bir şeyi elde etmek için verilmesi gereken çabayı, emeği verirler. Ve o kendi çabalarıyla elde ettikleri şeyle mutlu olurlar. O yüzden yıldız'a giren bir öğrenci, erdemli bir öğrencidir, nitelikli bir öğrencidir. Çünkü gerçekten ülkemizin sayılı üniversitelerinden birine girdiniz. Burası da öyle. Türkiye'de teknik üniversiteler içinde.
+
+106
+00:28:44,048 --> 00:28:57,688
+İlk 2'nin içinde bir üniversite, ilk 3'ün içinde bir üniversite diyelim hani. Öyle diyelim. Gerçekten öyle. Ki diğerlerini zaten kendinizi diğer üniversitelerle mukayese etmeyin. Burası teknik bir üniversite. Mühendis yetiştirir.
+
+107
+00:28:58,420 --> 00:29:13,700
+O yüzden emek verin, güzel bir şekilde mezun olmaya bakın. Yani okulun imkanlarından, maalesef kampüs imkanlarından faydalanamayacaksınız ama hocalarınızın, farklı farklı bölümlerden öğrenciler vardır aranızda.
+
+108
+00:29:25,172 --> 00:29:40,172
+Koordine olarak yapmaya çalışmayın arkadaşlar. Bu sizin çabalarınızda işte buraya bir efor sarf ederek girdiniz. Başta kaybetmeniz demek. Yani insan ahlaklı olarak çökerse, yani...
+
+109
+00:29:40,500 --> 00:29:59,619
+Siz en iyi dereceyle mezun olsanız da bana göre onun hiçbir kıymeti yok. Yani dünya hayatının bir kıymeti olmaz o zaman. Kendi emeğinize, çabanıza yaslanmadan bazı şeylere göz dikiyorsanız burada bir problem var. Bazı şeyleri düzeltmemiz gerekiyor. O yüzden çok fazla girmeyeceğim böyle şeylere. Biz ara sınavı olacak.
+
+110
+00:30:00,000 --> 00:30:06,420
+30 ağırlığı ve bir final sınavı, %70 ağırlığı olacak. Bunlar sizin harf notlarınızı belirleyecek.
+
+111
+00:30:06,720 --> 00:30:18,000
+Bu da bizim geçen yaz döneminde açtığımız Lineer Cebir dersinin Gray Distribution'ı, yani harf aralıkları, AA'nın 90 üstü olduğunu görüyorsunuz.
+
+112
+00:30:18,000 --> 00:30:27,000
+Bu normal dönemlerde 85 ya da 83 ya da 75 üstüne biz AA veriyorduk biz öğün yaparken, fakat maalesef öğrencilerimizin...
+
+113
+00:30:27,539 --> 00:30:40,059
+Hayal kırıklığına uğratması bizi böyle bir yöne sevk etti. Ama ben yeni giren arkadaşlarımdan böyle bir şey beklemiyorum. Beni hayal kırıklığına lütfen uğratmayın arkadaşlar.
+
+114
+00:30:40,980 --> 00:30:50,220
+Yoklama zaten Zoom kaydediyor [öğrenci]. Uzaktan eğitim, öğrenme, yönetim sistem üzerinden yoklama alımına ilişkin gelişme çalışmaya devam etmektedir.
+
+115
+00:30:53,140 --> 00:31:01,720
+Daha yapmamışlar. Bizim Big Blue Button alıyordu. İşte Zoom'a geçince, Zoom için çalışmalar devam ediyor. Anlayacak yoklamalar.
+
+116
+00:31:04,080 --> 00:31:16,840
+Tamam. Burada soru yok gibi arkadaşlar. O yüzden ben bu paylaşımı durduracağım. Derse, ders paylaşacağım.
+
+117
+00:31:28,788 --> 00:31:30,928
+Yaşayta mı? Payaşin.
+
+118
+00:31:39,796 --> 00:31:45,336
+Sorularınız varsa mesaj kutusundan yazabilirsiniz.
+
+119
+00:31:54,163 --> 00:32:04,403
+Buradan işleyeceğiz. Dijital kalem kullanacağım. Şu an 93 kişiyiz. Bakalım soru var mı? Mesaj kutum nereye kayboldu ona bakayım.
+
+120
+00:32:09,875 --> 00:32:10,715
+Kaybolmuş.
+
+121
+00:32:13,535 --> 00:32:16,315
+[öğrenci] teşekkür ederim bilgilendirme için.
+
+122
+00:32:19,175 --> 00:32:33,675
+Yani yoklamayı boş verin arkadaşlar. Böyle şeylere takılmayın. Hocam sınavda ne sorarsınız? Hocam işte yoklama alınacak mı? Yani böyle klasik ortaokul öğrencisi sorularını bırakın arkadaşlar. Üniversitede oldunuz.
+
+123
+00:32:36,788 --> 00:32:52,807
+Evet, mola. Haklısınız. Ders 2 saat. Normalde 1.5 saat ders yapıp bitiriyordum geçen dönemlerde. Tabi bu pedagojik değil. Kaç dakika oldu? 28 dakika. 45 dakika, ondan sonra 10 dakika bir ara, sonra bir 45 dakika daha dersi bitireceğiz.
+
+124
+00:32:52,888 --> 00:32:59,488
+Ya da 50 dakika, evet 50 dakika ders, sonra 10 dakika ara, sonra bir tane daha 50 dakika. Böyle yapacağız arkadaşlar.
+
+125
+00:32:59,839 --> 00:33:07,999
+Yani pedagojik olmamız gerekiyor. İnsan algısı, yani ilk 25 dakika yüksektir. Daha sonrasında düşer.
+
+126
+00:33:09,719 --> 00:33:13,579
+Evet, [öğrenci]'cığım, onu da hatırlatmış oldum. Benim unuttum şeyler vardır.
+
+127
+00:33:17,419 --> 00:33:23,679
+Türkçe kaynaklar için paylaştım [öğrenci] zaten, şifre. Türkçe kaynaklar için. İngilizceler sizi ilgilendiriyor. Aynısı zaten.
+
+128
+00:33:24,627 --> 00:33:48,527
+Onların İngilizcesi. Başka var mı soru sormak isteyen? Ha bu dersi, şimdi ders haftada iki saat. Yani hocanın tahtaya yazacağı ya da anlatacağı ya da işte ekranı anlatacağı ders süresi haftada iki saat. Fakat Bolonya'da öğrencinin kendi başına çalışması gereken süre diye bir süre varsa dedim beş saat. Bu dersi.
+
+129
+00:33:48,915 --> 00:34:02,115
+Bu derste nasıl başarılı olur? Bir, onlara verelim. Ben sunumları dersten önce paylaşacağım. Şu anda bu sunum, ekranda yansıtılan sunum, matrisler konusu, AESIS sayfasından indirilebilir.
+
+130
+00:34:03,115 --> 00:34:12,496
+Tabii ilk hafta olduğu için bunu yapamayacağız. Fakat derse gelmeden önce sunumların üzerinden bir böyle dikkatli gözle bakın, okuyun ve anlamaya çalışın.
+
+131
+00:34:13,139 --> 00:34:38,259
+Anlamaya çalıştığınız zaman sorular zihninizde camlanınca. Derste bu soruları sorun. Yani ders böyle olur. Dersten önce öğrenci tekrar eder, kaynaklara bakar, derste hocayı zorluyor. Olması gereken bu. Ben size olması gerekeni söyleyeyim. İsteyen takip eder. İsteyen istediği gibi yapar. Yani sonra 5 saat bunun üzerine çalışmanız lazım sizinle.
+
+132
+00:34:38,452 --> 00:34:56,452
+Her hafta. Her hafta. İki saatlik ders için her hafta beş saat kendi başınıza çalışmanız lazım. Yani kütüphane olsa da kütüphanede vakit geçirmeniz gerekiyor. Bu sadece mat 13-20 lineerce bir ders için sizin kendi bölümlerinizde verilen dersler için de böyle. Mesela bir mat 1 dersinin...
+
+133
+00:34:56,960 --> 00:35:21,220
+Sizden haftalık istediği süre 12 saat. Yani 5 saat ders, 12 saat diyor ki çalışacaksın beni anlamam için. Yani siz zaten yıldıza girdiniz, zeka düzeyiniz belli bir oranın üzerinde zaten. Ama zeka ile yapılacak şeyler, ben çok zekiyim, tamam ben bunları bileceğim artık, matematiği bileceğim, mineral, cebrahi, kalkulusu bileceğim. Yok böyle bir şey arkadaşlar. Çalışmanız gerekiyor.
+
+134
+00:35:23,315 --> 00:35:29,416
+Bize işte hareket kanunlarını, kalkulusu ilk keşfettiyse, elimizle birlikte, ne diyor Nifton? Bir sözü var.
+
+135
+00:35:29,855 --> 00:35:42,795
+Diyor ki, benim arkadaşlarımdan daha güzel, daha renkli deniz kabukları bulmamın sebebi, paçalarını sıvayıp, dizlere kadar suyun içine girmemden dolayıdır diyor.
+
+136
+00:35:42,876 --> 00:35:47,695
+Yani insan olarak diğerlerine herhangi bir üstünlüğün farkı yok.
+
+137
+00:35:47,695 --> 00:35:51,315
+Benim onlar karşısında öne geçiren şey...
+
+138
+00:35:51,315 --> 00:36:01,155
+kişisel çabam. Ben paçalarıma, dizlerime kadar sıvadım, üşenmedim, suyun biraz daha sığ yerden biraz daha derin yere geçtim.
+
+139
+00:36:01,815 --> 00:36:11,095
+Orada ıslanmayı göze aldım. Yani sizler de ıslanmayı göze almazsanız, ilk ders 2020'li girişler için özellikle söylüyorum arkadaşlar.
+
+140
+00:36:11,668 --> 00:36:30,007
+Vaktiniz kitapla geçecek, kütüphanede geçecek. Hoca sadece size kapının anahtarını verir arkadaşlar. Bu böyledir. MIT'ye gidin, Harvard'a gidin, nereye gidersiniz gidin. Hatta YouTube'da videoları var. Gilbert Strang, general Cebirak derslerine bakmayın. Gilbert amca ne yapar? En iyi anladığı şeyi öğrenciyi anlıyor.
+
+141
+00:36:30,007 --> 00:36:39,668
+Ya da her şeyi biliyor zaten de iyi biliyor. Gilbert amcanın kitabı da var. Hatta bizim kaynak kitaplardan bir tanesiydi belki İngilizce grupları. En iyi bildiği şeyi anladığı şey.
+
+142
+00:36:39,668 --> 00:36:57,347
+anlatır, motivasyon verir öğrenciye, ondan sonra ilk, ne derler, hareketi verir, sonra iş öğrencidedir. O çalışacak, o detayları bulacak, o ilerletecek. Dolayısıyla bütün detayları, sınırları yok yani, her şeyi verebilme imkanı yok zaten. O yüzden size iş düşüyor.
+
+143
+00:36:57,715 --> 00:37:25,695
+Sırf verdiğim ders notuyla yetinmeyin. Ekstra kaynağa da bakın, farklı şeylere de bakın. Ha bir şey gördünüz, ya bu matrislerin gerçek hayat uygulamaları var mı? Normalde yüz yüze yaptığım derslerde bunları vermeye çalışıyordum. Ama maalesef süre kısıtlı olduğu için çok konuları yetiştirmekten gerçek hayat uygulamaları, mesela matrisler, dinler denklem sistemleri, GTS sistemlerinde kullanılıyor. Yani çok basit iki denklem, iki bilin.
+
+144
+00:37:25,715 --> 00:37:39,655
+lineer'i çözerek siz X, Y koordinatlarını doğrudan verebiliyorsunuz. Yani 3 olunca, 3 tane denklem, 3 lineer olunca, 3 boyut yükseltiği de veriyorsunuz. Tabii işin içinde çok derin başka şeyler de var, fiziksel şeyler ama bu da var.
+
+145
+00:37:39,655 --> 00:37:53,715
+Yani işte mesela telefonla konuşuyoruz ya da şu anda Zoom üzerinde ders yapıyoruz. Veri nasıl aktarabiliyor mesela? Yani orada vektör uzayıları kullanalım. Yani tabii doğrudan söyleyince o kadar birebir burada gördüğümüz vektör uzayı.
+
+146
+00:37:53,715 --> 00:38:02,715
+gibi düşünmeyiz. Üzerinde başka matematiksel argümanlarla donatılmış şekilde kullanılıyor arkadaşlar. O yüzden.
+
+147
+00:38:03,668 --> 00:38:22,268
+Kaynak kitapları belki ben paylaştım. Orada tentative syllabus dokümanı var. İngilizce, Türkçe aynı. Onu ben şifresiz paylaştım. Bir de arkadaşlar meraklı olmanız gerekiyor. Yani didik didik etmeniz gerekiyor. Şimdi hocanın web sayfasına düzenli bakacaksınız bir kere.
+
+148
+00:38:23,668 --> 00:38:30,648
+Hocanın mail adresini bileceksiniz ondan sonra. Kaynak kitaplara nasıl erişeceğinizi, işte ben onlardan bahsettim.
+
+149
+00:38:32,079 --> 00:38:58,159
+Yani online'da bulunabiliyor bunlar. Tabii ben size dersi geçmek için kaynak almanızı tavsiye etmiyorum. Yani benim ders notlarım yeterli, onu söyleyeyim size peşiyle. Fakat daha ileri gitmek isteyenler ki online kitap da bulabilirsiniz. Yani öyle forumlarda başka üniversitelerde, tabii İngilizce bilenler için sınırsız sayıda, sınırsız değildir, sınırlı sayılabilir çoklukta kaynak bulabilirsiniz. Yani bu ders haftada 2 saat, 5 saat çalışmanız lazım.
+
+150
+00:38:58,512 --> 00:39:11,332
+Dizinizi kıracaksınız, masaya oturacaksınız arkadaşlar, vakit geçireceksiniz, üzerinde düşüneceksiniz ve düşünmeyi öğreneceksiniz. Belki zihniniz yorulacak, terleyecek böyle ama bu sizi ileriye götürecek, bakış açınızı değiştirecek.
+
+151
+00:39:11,332 --> 00:39:26,452
+Dersi aldınız, bugün ilk gün, işte Aralık ayında bitecek ya da ocağın sonunda neyse, arada bir fark yoksa, zaman boşa geçtiyse o zaman yani anlamsız oluyor. Size kattığı bir şey olması lazım. Küçük gözle görmeyin ya.
+
+152
+00:39:26,512 --> 00:39:36,311
+İki saatlik ders falan öyle demeyin. Ya da sizin diğer derslerinizin söylediğim şeyler genel. Vaktinizi kitapla, çalışmakla geçireceksiniz. Yeni başlayanlar için söylüyorum.
+
+153
+00:39:36,792 --> 00:39:43,512
+Dersi üç beş kez alanlar tabii onlar da dersi geçmeye bakacaklar. Onlara bir şey demiyorum. Evet o zaman...
+
+154
+00:39:53,043 --> 00:40:08,184
+Arkadaşlar, çok güzel hesap yapıyorsanız, 10.50'de bitecek. Hayır, uzatmam dersi, o 10.50'de bitecek dersi. Arkadaşlar, ben uzatmam dersi. [öğrenci], niye öyle diyorsun? Uzatma hakkımız yok. Niye uzatayım? Benim ne dersim var?
+
+155
+00:40:14,068 --> 00:40:22,988
+İki tane dosya açabiliyor olmalısın [öğrenci]. Bir tane de şey var, problem seti var. Yani uygulama soruları binlerce bir.
+
+156
+00:40:27,476 --> 00:40:29,576
+Tamam. Şu anda soru yok gibi.
+
+157
+00:40:35,411 --> 00:40:41,652
+Arkadaşlar, başta dinleyenler, sonradan gelenlere aynı sorulara tekrar tekrar cevap vermeyelim.
+
+158
+00:40:44,851 --> 00:40:47,891
+Teşekkürler [öğrenci]'cığım yazarsan, güzel olur belki için.
+
+159
+00:40:52,916 --> 00:41:07,756
+matrisler konusuna başlayalım. Matris nedir? Arkadaşlar, şimdi bu sunumu oynatmadığı için farklı bir araçtan paylaştım. Konu başlıkları, matrisler konusu altında göreceğimiz şeyler, önce matrisin tanımını vereceğiz.
+
+160
+00:41:09,236 --> 00:41:13,976
+Kalemin niye bu tarafa geçmiyor? Şuradan açalım belki. İçer.
+
+161
+00:41:22,483 --> 00:41:25,503
+Bu sorun yaşamıştı. Ekranımı değiştirsem.
+
+162
+00:41:32,371 --> 00:41:43,231
+Kalem kaçıyor arkadaşlar, dijital kalem. İki ekran kullandığım için. Şöyle biraz müsaadenizi isteyeceğim. Çünkü yazabiliyor olmamı gerekiyor. Yazamazsan bir anlamı yok.
+
+163
+00:42:02,804 --> 00:42:09,804
+Zoom'u diğer tarafa atmaya çalışıp, atabilirsem, evet bir ekrana Zoom atalım.
+
+164
+00:42:14,835 --> 00:42:17,915
+Zoom'da benden kaçıyor. Gitmek istemiyorum.
+
+165
+00:42:20,076 --> 00:42:23,275
+Evet. Tamam. Zoom'u attım. Güzel.
+
+166
+00:42:24,315 --> 00:42:25,295
+Şimdi sen orada dur.
+
+167
+00:42:26,455 --> 00:42:28,275
+Burada full screen yapalım.
+
+168
+00:42:29,395 --> 00:42:31,375
+Böyle şeyler olur. Teknik sorunlar.
+
+169
+00:42:32,315 --> 00:42:34,155
+Şu an ekranı görebiliyor musunuz arkadaşlar?
+
+170
+00:42:40,307 --> 00:42:42,307
+Full ekranı görebiliyor musunuz?
+
+171
+00:42:44,708 --> 00:42:50,307
+Şu chati de kaybıyorum şuraya. Hayır göremiyorsunuz.
+
+172
+00:42:53,508 --> 00:42:55,508
+Resume share diyelim.
+
+173
+00:42:57,108 --> 00:43:02,307
+Şu an, yani o Tableau kontensi görüyorsunuz.
+
+174
+00:43:03,208 --> 00:43:04,076
+Tamam.
+
+175
+00:43:12,947 --> 00:43:16,668
+Tamam, şu an sıkıntı yok. Bakalım, umarım kalemim çalışır.
+
+176
+00:43:23,603 --> 00:43:28,403
+Tabi zoom'u paylaştım. Şurada başka bir şey daha yapmam gerekiyor. Kalemi seçmem gerekiyor.
+
+177
+00:43:35,411 --> 00:44:01,195
+Yine, screen yapalım. Burada şöyle bir sıkıntı var. İndirci seçmem gerekiyor, tamam. Screen yapalım.
+
+178
+00:44:02,675 --> 00:44:05,316
+Şimdi herhalde kalemine yazabilirim.
+
+179
+00:44:12,148 --> 00:44:14,148
+Bir de bunu gereksiz büyütmüşüz.
+
+180
+00:44:16,307 --> 00:44:18,307
+İlk ders arkadaşlar, bunu...
+
+181
+00:44:23,315 --> 00:44:26,987
+Şöyle biraz küçültelim.
+
+182
+00:44:38,068 --> 00:44:46,068
+Tuhaplık var ama kenardan görmüyorum. Şurayı seçelim, bir de kalem seçim.
+
+183
+00:44:49,588 --> 00:44:50,588
+Umarım şimdi olur.
+
+184
+00:44:54,771 --> 00:44:55,755
+Tamam.
+
+185
+00:45:03,188 --> 00:45:06,748
+Çok fazla ekonomi büyüktür sen ki, benim arzaladığım bir şey değil.
+
+186
+00:45:17,619 --> 00:45:19,619
+İlgilenen bu kadar da büyüttü.
+
+187
+00:45:36,467 --> 00:45:38,467
+Şu an ekran var mı sizde arkadaşlar?
+
+188
+00:45:41,467 --> 00:45:42,467
+Şurayla ilgili.
+
+189
+00:45:46,387 --> 00:45:48,387
+Tam nasıl görünüyor?
+
+190
+00:45:51,087 --> 00:46:02,387
+Yani ben şöyle görünsün istemiyorum, daha temiz görünsün istiyorum ama öyle yapınca da hoş olmayan bir durum ortaya çıkıyor. Bunu arzu etmiyorum.
+
+191
+00:46:14,452 --> 00:46:17,772
+Şöyle paylaşıyorum o zaman, yani niye böyle bir şey yapayım.
+
+192
+00:46:24,884 --> 00:46:27,124
+programla ilgili sorunlar yaşamıştım.
+
+193
+00:46:36,052 --> 00:46:40,231
+Ekranlarımla ilgili bir sorunum var. Şöyle yapalım.
+
+194
+00:46:45,012 --> 00:46:47,012
+Bunları çok genişlemiş.
+
+195
+00:46:48,012 --> 00:46:50,012
+Şimdi şu an yapalım biraz.
+
+196
+00:46:51,012 --> 00:46:53,012
+Şimdi şunu gireyim de oturtalım.
+
+197
+00:46:58,356 --> 00:47:00,356
+Herhalde şöyle daha iyi. Şu an nasıl?
+
+198
+00:47:02,936 --> 00:47:03,615
+Aa, öyle mi?
+
+199
+00:47:10,387 --> 00:47:18,788
+full ekran yapınca, büyüteç kullanamıyorum. Full size yapınca büyüteç kullanamıyorum. Şöyle devam edebiliriz arkadaşlar.
+
+200
+00:47:18,788 --> 00:47:31,387
+Yan tarafı kapatayım ben. Böyle dursun o zaman. Şu an daha iyi yani. İçteki şeyler de olmazsa. Yine deneyelim full size'ı.
+
+201
+00:47:36,500 --> 00:47:40,500
+Evet evet, tamam. Tamam arkadaşlar. Burayı kaçırmışım.
+
+202
+00:47:41,500 --> 00:47:47,500
+Kullanmak aklıma gelmedi. Bazen böyle şeyler oluyor. Tamam. Umarım kalemim çalışır.
+
+203
+00:47:51,603 --> 00:48:02,703
+Oldu. Artık döneme başlayabiliriz. İlk olarak matrislerin tanımını vereceğiz. Matrisler üzerinde toplanma işlemi ve bir matrisin bir skalerle çarpılması.
+
+204
+00:48:02,703 --> 00:48:07,804
+Skaler dediğimiz scale etmekten geliyor İngilizce kökenli bir kelime. Yani boyutlandırma.
+
+205
+00:48:08,724 --> 00:48:23,204
+Toplam sembolü, toplam notasyonu, sigma notasyonunu niçin vereceğiz? İki tane matrisi birbiriyle çarpmak için toplam sembolünle biraz bahsedeceğiz. Bir notasyon, bir matrisin transpozu kavramı var, umarım yetiştirebiliriz.
+
+206
+00:48:23,204 --> 00:48:35,384
+Karesel matrisler, köşegen, bir matrisin köşegeni ve izi, ya da diagonali ve tracei, trace izlemek. Birim matris ve skaler matris, iki özel tip karesel matris.
+
+207
+00:48:36,052 --> 00:48:46,352
+Bir matrisin kuvveti, polinomlarda matrisleri Kaylee Hamilton'a bir hazırlık olarak vereceğiz ve terslenebilir matrisleri ya da non-singular matrisleri.
+
+208
+00:48:48,352 --> 00:48:56,952
+Matrislere bakalım. Bir matris nedir arkadaşlar? 2020'liler. Hoş geldiniz. Matrisi şu anda öğrenmeye başlıyorsunuz.
+
+209
+00:49:02,387 --> 00:49:07,827
+Şu şekilde A ile gösterdiğimiz geometrik olarak dikdörtgensel bir dizi.
+
+210
+00:49:09,467 --> 00:49:19,527
+Matris'in şu A611, A612, A611n, şuna matris'in satırı diyoruz. Bu birinci satır.
+
+211
+00:49:20,607 --> 00:49:21,487
+Birinci satır.
+
+212
+00:49:22,748 --> 00:49:26,147
+Şurası da, şurayı işareteyim, hadi kalem rengi farklı olsun.
+
+213
+00:49:28,248 --> 00:49:29,087
+Şurası da,
+
+214
+00:49:30,099 --> 00:49:33,579
+Burası da matrisin sütunu, burası da ikinci sütun.
+
+215
+00:49:35,099 --> 00:49:40,219
+Yani şuralar sütunlar, yatay olarak da satırlar var.
+
+216
+00:49:43,827 --> 00:50:03,507
+Ve her bir AİJ girdisine, biz bu AİJ'leri şurada kaç tane var? M çarpı M tane var. Bunlara matrisin elemanı diyoruz. Bu elemanlar real sayı olabilir, tam sayı olabilir, kompleks sayı olabilir, rasyonel sayı olabilir, fonksiyon olabilir, sembol olabilir, her şey olabilir.
+
+217
+00:50:06,804 --> 00:50:12,044
+Sembollerin, sayıların, fonksiyonların iki boyutlu bir dizisine biz matris diyoruz.
+
+218
+00:50:13,584 --> 00:50:16,624
+Dikdörtgensel bir dizi, iki boyutlu bir dizi.
+
+219
+00:50:17,764 --> 00:50:26,604
+Bu şekildeki bir matrisi, şöyle biraz kaydıralım, matrisin satırları yatay olarak dizilen,
+
+220
+00:50:27,668 --> 00:50:34,107
+İşte sayılar dizisine yatay olarak biz bunlara satır diyoruz. Dikkat edin, A11'den başlıyor.
+
+221
+00:50:34,688 --> 00:50:54,807
+Esasında şu indisin, yani Aij olarak göstereyim, A subij diyelim buna, A af indis, Ij, I satır numarası, şudaki I satır numarası, elemanın satır numarası, J de sütun numarası.
+
+222
+00:50:56,628 --> 00:51:10,047
+AİJ'nin kendisine AİJ'inci eleman, İJ'inci eleman, ya da girdi denir.
+
+223
+00:51:10,516 --> 00:51:16,275
+Yani A matris, biz matrisleri genelde büyük harflerle gösteririz. Öyle gösteriliyor.
+
+224
+00:51:17,056 --> 00:51:24,215
+Elemanlarında küçük harflerle A dedik, indisler A, İ, J dedik. Mesela B deseydik içeriye.
+
+225
+00:51:24,476 --> 00:51:27,895
+Biz bunu daha genel anlamda, işte B, A, İ, J.
+
+226
+00:51:28,563 --> 00:51:53,743
+Şu M, N'ye biz matrisin boyutu veririz. M çarpı N. Bu ne demek? Matrisin M tane satırı var. Çünkü İ satır sayısıydı. Birden başlıyor. İki, M'ye kadar geldi. J de sütun sayısıydı. Sütunlar nereden başlıyor? İkinci İngilizler sütundu. Şurada birden başlıyor. Birinci sütun, ikinci sütun, neyinci sütun? N tane sütunu var. Yani M tane satır, şuraya yazayım.
+
+227
+00:51:57,811 --> 00:52:02,611
+Ve ne tane, ne tane sütun.
+
+228
+00:52:04,651 --> 00:52:14,491
+A matrisinin m tane satırı, o satırların birincisi şurada, a11, a12, a1n, yani şurayı birinci satır olarak düşünüyoruz.
+
+229
+00:52:14,891 --> 00:52:21,791
+Sonra, sonra şurası neyinci satır, son satırı yazdık, şurası da neyinci satırımız arkadaşlar.
+
+230
+00:52:21,791 --> 00:52:24,851
+Yani, kuraları biraz silim, ortalığı biraz.
+
+231
+00:52:25,523 --> 00:52:28,763
+Baktık, kalem olunca böyle rahat rahat yazıyoruz.
+
+232
+00:52:30,143 --> 00:52:34,403
+Bu da bizim neyinci satırımız. Bir de sütunlarımız var.
+
+233
+00:52:34,963 --> 00:52:40,583
+İşte şurası, burayı farklı olsun, şurası birinci sütun.
+
+234
+00:52:41,183 --> 00:52:45,083
+Birinci sütunumuz. Dikkat edin, ikinci indislere bir.
+
+235
+00:52:45,863 --> 00:52:47,943
+Sonra şurası ikinci sütun.
+
+236
+00:52:49,427 --> 00:52:58,427
+Satır sayısı 1-2, m'ye kadar değişiyor, sütun sayısı hep 2 olarak kaldı. Şurası da neyinci sütunumuz arkadaşlar.
+
+237
+00:52:58,967 --> 00:53:04,788
+Yine satır sayılar 1'den m'ye kadar değişti. Biz bir matrisi genel anlamda şöyle verebiliriz arkadaşlar.
+
+238
+00:53:05,007 --> 00:53:13,248
+a eşittir, a, i, j, i satır sayısı, j sütun sayısı, m çarpı n, ve şöyle de bazen yanına yazılır.
+
+239
+00:53:13,248 --> 00:53:16,547
+1 küçük eşittir m, ops, ops.
+
+240
+00:53:20,179 --> 00:53:27,940
+1 küçük eşittir, i küçük eşittir m ve 1 küçük eşittir j küçük eşittir m.
+
+241
+00:53:28,900 --> 00:53:30,960
+Tamam. Nasıl takip edebiliyor musunuz?
+
+242
+00:53:35,315 --> 00:53:36,335
+Burada mıyız arkadaşlar?
+
+243
+00:53:38,315 --> 00:53:39,315
+Takip edebiliyor musunuz?
+
+244
+00:53:40,055 --> 00:53:42,655
+Sorularınız varsa mikrofonda açıp soru sorabilirsiniz.
+
+245
+00:53:43,695 --> 00:53:43,975
+Tamam.
+
+246
+00:53:46,535 --> 00:53:47,255
+Güzel.
+
+247
+00:53:49,475 --> 00:53:52,415
+Matrisin satırları, matrisin sütunlarını verdik.
+
+248
+00:53:53,115 --> 00:54:02,155
+İj'ye İjinci eleman ya da İjinci girdi dedik ve matrisi A İj ile genel anlamda A büyük A, işte köşeli parantez içinde bazen
+
+249
+00:54:02,547 --> 00:54:09,187
+Köşeli parantez değil de, şey de gelebilir, yani şurada tırnak parantez de gelebilir.
+
+250
+00:54:09,568 --> 00:54:30,668
+Hatta ben genelde bunu tercih ediyorum. Şuraya M çarpı E yazar ya da yazmaz ama İ, J'nin ranjını verir. Yani bir işte küçük eşittir, İ küçük eşittir, M, ya da P diyelim ona. İşte bir küçük eşittir, J küçük eşittir, R diyelim. O zaman bu şuraya P çarpı R tipinde bir matris olmuş oldu mesela.
+
+251
+00:54:32,884 --> 00:54:39,943
+A matrisinin satır sayısı çarpı sütün sayısına matrisin tipi diyoruz ve M cross neyle gösteriyor?
+
+252
+00:54:40,083 --> 00:54:47,599
+Yani M çarpı neyle? Biz bu çarpıyı genelde kullanmayız. Nokta şeklinde çarpma işlemini kullanırız ya da hiç kullanmayız fakat buradaki bu cross...
+
+253
+00:54:47,599 --> 00:55:04,819
+Tipi belirtmek için bir sembol aslında. M çarpı ne? Tabi bir karşılığı da var. Matrisin toplamda M çarpı N tane girdisi var. O yüzden M tane satırı ve N tane sütun olan matrisi, A matrisine biz M çarpı N tipinde bir matris diyoruz sevgili arkadaşlar.
+
+254
+00:55:06,319 --> 00:55:14,699
+M çarpı N tipinde bir matris diyoruz. Buna bazen matrisin boyutu da deniyor. Aslında bu çok...
+
+255
+00:55:14,835 --> 00:55:20,175
+gençsel olarak hani, evet doğru, doğru, vektör uzayı, tam boyutu da öyle, boyutu, tamam.
+
+256
+00:55:21,596 --> 00:55:27,115
+Yani size'ı ya da dimension'ı işte ne derler, tipi ya da type işte deniyor.
+
+257
+00:55:27,775 --> 00:55:30,895
+Matris'in tipi ya da boyutu denir, m çarpı ne?
+
+258
+00:55:34,739 --> 00:55:39,340
+Sorularınız olursa herhangi bir anda sorabilirsiniz. Ben çünkü mesaj kursunu görebiliyorum.
+
+259
+00:55:42,079 --> 00:55:45,119
+Evet, elimizde iki tane matris olsun.
+
+260
+00:55:46,420 --> 00:55:55,420
+İşte A eşittir AİJ ve B eşittir BİJ şeklinde iki tane matris olsun.
+
+261
+00:55:55,420 --> 00:56:00,380
+Bu iki matrisin eğer karşılıklı girdileri eşitse, yani
+
+262
+00:56:00,864 --> 00:56:15,943
+Bu her sembolü, her satır ve sütun için A, İ, J eşit ve İ, J ise, bu da ise bağlacı, bu durumda A eşittir B yazarız arkadaşlar.
+
+263
+00:56:16,947 --> 00:56:33,900
+Yani o zaman ne olması gerekiyor? Matrislerin bir kere tipleri aynı olması lazım. M çarpı N tipinde, M çarpı N tipinde. Dün öyle ilginç bir soru gelmişti. Tabii onlara 2020'ler hoş geldiniz demeyi unutmuşum. Yani İngilizce grupta. O yüzden hani...
+
+264
+00:56:34,291 --> 00:56:43,192
+Öyle bir soru geldi. Hocam diyor ki işte, M çarpı N'nin eşit olması yetiyor mu? Hayır arkadaşlar, M tane satır, N tane sütunu kastediyoruz.
+
+265
+00:56:43,192 --> 00:56:58,231
+Yani diyelim A'nın iki tane satırı, üç tane sütunu var, M'si ile N'si. Fakat B'nin üç tane satırı, iki tane sütunu var. M çarpı N, altı olacak ama bu matrislerin eşit olması söz konusu olamaz. Neden?
+
+266
+00:56:58,672 --> 00:57:02,192
+Çünkü birincinin iki tane satırı, üç tane sütunu var, ikincinin üç tane...
+
+267
+00:57:02,291 --> 00:57:10,791
+satırı iki tane sütun var. Bunlar eşit olamaz. Yani tipleri eşit olacak derken, satır sayıları ve sütun sayıları birbirine eşit olacak.
+
+268
+00:57:11,431 --> 00:57:20,211
+Yani biz bu ne ile neyi kombine edip, tek bir sayı gibi düşünüp, aa dimensionları eşit, işte matrisler girdiler de eşit olamaz zaten.
+
+269
+00:57:20,211 --> 00:57:23,179
+Çünkü işte burada mesela, aa...
+
+270
+00:57:23,572 --> 00:57:36,572
+Birinci matrisde eğer iki tane satır, üç tane sütun varsa A2-3'ü olacak. Fakat bu matrisde A2-3'ü hiçbir zaman olmayacak. Ya da B2-3 gibi bir şey olmayacak. Neden? Çünkü üçüncü sütun yok zaten arkadaşlar. Tamam.
+
+271
+00:57:43,860 --> 00:58:00,480
+Sadece bir tane satırı olan bir matris ise, biz satır matrisi diyoruz. A matrisi eğer şöyle ise, sadece bir tane satır olduğu için sütun sayısını yazmıyoruz. Dolayısıyla araya birbir falan da yazmıyoruz. A2, şu şekilde, AM.
+
+272
+00:58:09,039 --> 00:58:21,139
+A1, 2, şurası da A1N, böyle yazalım daha doğru olur. Yani sütun sayısı 1, 2N, satır sayısı 1 olarak kaldı. Biz buna bir satır matrisi, satır matrisi.
+
+273
+00:58:21,759 --> 00:58:30,219
+Süre dolarsa arkadaşlar, 9.50 olursa uyarın lütfen, ara vereyim. Çünkü saatler görünmüyor şeyleri. Para çubukları, görev çubuklarını gizliyorum.
+
+274
+00:58:30,219 --> 00:58:34,939
+Ya da bir vektör diyoruz, satır, satır vektörü.
+
+275
+00:58:35,443 --> 00:58:47,364
+Demek ki matrislerin özel hali, 9.54 mü olmuş? Tamam, çıtın matrisini de verelim, ondan sonra bir ara verelim size. Şöyle.
+
+276
+00:58:48,115 --> 00:59:03,576
+Şuraya da B1, B2, B, Aşağı doğru, B, hadi M1 diyelim, bu da aslında M çarpı 1 tipinde bir matris, bu da 1 çarpı N tipinde bir matris.
+
+277
+00:59:03,576 --> 00:59:14,635
+Ne demek? Bir tane satırı, N tane sütunu var, diğerinin de M tane satırı, bir tane sütunu var. Buna da biz ne diyoruz? Sütun.
+
+278
+00:59:15,188 --> 00:59:34,887
+Tüm matris. Şimdi yeni görenler, yeni gören arkadaşlar, bir sürü kavram gördünüz. Çok basit şeyler aslında, çok temel şeyler ama bunlarla vakit geçirmezseniz bunlar oturmaz. Bilgi size ait olmaz. Önemli olan bilginin size ait olmaz. Onu özümsemeniz. Ya da biz buna bir ne diyoruz? Tüm vektörü diyoruz arkadaşlar.
+
+279
+00:59:35,507 --> 00:59:43,307
+Sütun vektör. Tamam. Şimdi satır ve sütun matrislerini tanımlardıktan sonra 10 dakika ara, aradan sonra devam edelim.
+
+280
+00:59:43,807 --> 00:59:52,047
+Kaydı durdurmayacağım çünkü kaydı durdurunca ilk kısmını Yıldız'ın sistemine kaydediyor, ikinci kısmını benim bilgisayara kaydediyor.
+
+281
+00:59:52,148 --> 00:59:59,507
+Öğrenciler dersin ikinci kısmına ulaşamıyorlar maalesef. O yüzden ben şuradan sesimi de kapatayım. Görüşmek üzere arkadaşlar.
+
+282
+00:59:59,507 --> 01:00:01,327
+10 dakika ara. Şu an kaç geçiyor?
+
+283
+01:00:01,972 --> 01:00:05,192
+56 geçiyor, 4-6 geçse buradayız.
+
+284
+01:10:35,123 --> 01:10:55,443
+Evet arkadaşlar, tekrar merhabalar. Biraz dikkatinizi toplamışsınızdır. Kaldığımız yerden devam edelim. [öğrenci] bir soru sormuş. I ve J gösterim mi oluyor? Evet, bir notasyon gösterim. Yani I satır sayısını gösteriyor. Aslında onlara indis diyoruz.
+
+285
+01:10:55,828 --> 01:11:14,188
+Ve dinamik. Dolayısıyla indisin aralığı önceden tanımlanıyor. Yani 1 ile m arasında satır için, burada ekranda gördüğün işte b maddesini düşün. Satırı 1 ile m arasında değişiyor. İ ise 1 ile m aralığında, j ise de sadece 1. Onu da gösterelim, burada ekrana yazayım.
+
+286
+01:11:20,115 --> 01:11:28,216
+1 küçük eşittir, i küçük eşittir, m bu maddes için, ve j de eşittir, 1.
+
+287
+01:11:36,884 --> 01:12:00,304
+Şimdi dizi tanımını vermeniz lazım. Matiki dersinin başlangıcında oraya çok girmeyelim. Girersek iş uzak konuları yetiştiremeyiz. Dizi dediğimiz şey aslında doğal sayılarla eşleşen bir fonksiyon. Dizi bu. Fakat biz bunu işte doğal sayıların karesinden bir yere tanımlarsak o zaman ki o doğal sayıların karesi ne olacak? Satire stün sayısı olacak. Yani sayılabilir olası gerekiyor.
+
+288
+01:12:00,671 --> 01:12:10,311
+Dolayısıyla o zaman diktörkensel dizi olur. Kübik bir dizi tanımlayabiliriz. Evet, tanımlayabiliriz. M çarpı, M çarpı, Q şeklinde yaparsanız, yani 3 boyutlu ki onlara da tensor deniyor.
+
+289
+01:12:10,691 --> 01:12:23,611
+Tensörler de var. Matrislerin çok daha genel formları. Hatta boyutu, 3 çarpı 3 olunca, nasıl diyeceğim, satır sütun. Bir de, öne arkaya doğru ne derler, kübik gibi bir şey düşünün.
+
+290
+01:12:23,971 --> 01:12:28,671
+Bir küp, onların, küpler var üst üste dizilmiş, onların içinde girdileriniz var.
+
+291
+01:12:28,671 --> 01:12:50,211
+Bu da 3 boyutta bir dizi olur, derinlik hissi. Ondan sonra 4 boyutta verilebilir. Hatta hücresel dönüşümler var, sel yedir otomatlar, merak edenler bakabilir. Onların en boyutları var ve onları temsil etmek için de tensörler kullanılır işte.
+
+292
+01:12:50,836 --> 01:13:09,996
+Onlara tensör deniyoruz, annemin sorduğu. [öğrenci] dizileri, dikdörtgensel dizileri sordu. Yani iki boyutlu dizi aslında. Dikdörtgensel dediğim hiçbir şey, matematiğe dair hiçbir şey bilmeyen birini ifade etmek için siz geometriyi kullanacaksınız. Yani şekilsel olarak, görsel olarak neyi görüyor mu ifade ediyorsunuz. Aslında matematiksel olarak o fonksiyonla ifade edilebilir.
+
+293
+01:13:15,380 --> 01:13:21,399
+Üç boyut yok bizde, biz tensör görmeyeceğiz. Orası diferansiyel geometrin konuları, onlar çok ileri konuları, biz oralara girmeyeceğiz.
+
+294
+01:13:21,460 --> 01:13:29,200
+Biz sadece matrislerle ilgileniyoruz arkadaşlar. Öyle değil. Yani tensör konusuna girmeyelim, orası bambaşka yani.
+
+295
+01:13:29,200 --> 01:13:36,100
+Bu dersin kapsamını aşağı bir şey. Ama tabii tanımlanabilir. Yani o zaman onlara tensör deniyor.
+
+296
+01:13:36,319 --> 01:13:42,100
+Matris, biz matrisi sadece iki boyutta tanımlıyoruz. Öyle değil mi? Boyut artırırsanız o tensör olur.
+
+297
+01:13:42,931 --> 01:13:44,131
+Tamam, devam edelim.
+
+298
+01:13:51,604 --> 01:13:59,764
+Bunları verdik zaten. Matrisin bütün girdileri eğer real sayıysa biz buna real matris diyeceğiz ki bu dersin kapsamında genelde real matrislerle ilgileneceğiz.
+
+299
+01:13:59,764 --> 01:14:09,604
+Tabi hermit matrislerini tanıdığında vereceğiz. Onların girdileri kompleks sayılar. Sınavlarda kompleks matrislerle ilgili tek tük soru da karşınıza çıkabilir. Onu da söylemiş olayım.
+
+300
+01:14:10,184 --> 01:14:16,404
+Girdileri real sayı olan matrisse biz real matris diyoruz. Girdileri kompleks sayı olan matrisse de kompleks matris.
+
+301
+01:14:16,511 --> 01:14:26,951
+Yani o girdilerinin hangi kümeden alındığına bağlı olarak elemanları real sayı ise real matris, elemanları kompleks sayı ise kompleks matris diyoruz.
+
+302
+01:14:27,475 --> 01:14:53,115
+Evet. Şimdi bir örnek var burada. Örnekte ne var arkadaşlar? Bir matris var, real bir matris var. Matrisin tipini yazalım. 2 çarpı 3 tipinde bir matris. Yani 2 tane satırı, 3 tane sütunu olan bir matris. Birinci satır nedir bakalım? Birinci satırı 1, 2, 3 matrislerde araya virgül koymuyoruz arkadaşlar. İkinci satırı.
+
+303
+01:14:56,180 --> 01:14:57,020
+3-1-2
+
+304
+01:14:57,020 --> 01:15:02,260
+Sütunları yazalım. Birinci sütun, hatta şöyle bir yazayım.
+
+305
+01:15:04,020 --> 01:15:05,380
+Neyse yazalım, müşerleyelim.
+
+306
+01:15:07,280 --> 01:15:07,820
+1-3
+
+307
+01:15:07,820 --> 01:15:10,020
+İkinci sütun
+
+308
+01:15:10,020 --> 01:15:13,020
+2-1
+
+309
+01:15:13,020 --> 01:15:14,860
+Ve üçüncü sütunumuz var.
+
+310
+01:15:20,851 --> 01:15:22,851
+Arkadaşlar, yani bu ders...
+
+311
+01:15:23,572 --> 01:15:27,372
+Sizin kapsamı çok geniş değil, kitap alabilir miyiz?
+
+312
+01:15:27,471 --> 01:15:34,631
+Tabii temel bir ders, ne kadar alanınızla ilgili, alanınızda çok işinize yarayacak bir derse kullanacaksanız,
+
+313
+01:15:35,292 --> 01:15:41,891
+ama ben size şimdiden kitap alın diyemem, çünkü çoğu erişebiliyorsunuz ki kampüste gelebilme şansınız varsa,
+
+314
+01:15:42,572 --> 01:15:45,872
+kütüphaneden o kitapların çoğunu bulabilirsiniz. Var yani kitaplar bolca.
+
+315
+01:15:45,872 --> 01:15:51,471
+O yüzden biz amacımız burada temel, lineerce bir bilgisi vermek öğrenciye.
+
+316
+01:15:51,572 --> 01:16:12,252
+Dersin amacı o. Yani mat 13-20 kodlu dersin amacı bu. Bu aslında introduction to linear algebra. Temel kavramları veriyoruz burada. İleri düzeyde bir ders anlatılmıyor çok ileri düzeyde. Matematik bölümlerinde anlatılan linercir bir dersinin bir iki beden altı. Yani burada öyle çok teoriye girmeyeceğiz, ispatlara girmeyeceğiz. Normalde çok abstrak olabiliyor yani işte.
+
+317
+01:16:13,427 --> 01:16:22,327
+O yüzden hani çok, yani tabii siz bilirsiniz yine ama ben kitap almayabilirsiniz, onu söyleyeyim.
+
+318
+01:16:22,787 --> 01:16:24,867
+Yani buna erişebilirsiniz bir şekilde bu kitaplara.
+
+319
+01:16:26,608 --> 01:16:30,608
+Ve birçok açı kaynak var ulaşabileceğiniz.
+
+320
+01:16:32,467 --> 01:16:45,608
+Hani dersi geçmek için kitap gerekli değil, uygulamalar gerekli değil ama hocam ben işte science geek yaklaşıyorum olaya, akademik yaklaşıyorum, ilerlemek istiyorum diyorsanız ona hiç kimse bir şey diyemez.
+
+321
+01:16:48,307 --> 01:16:57,948
+Evet. A matris 2x3 tipinde bir matris, 2 tane satır, 3 tane sütun var, real girdil bir matris. Dolayısıyla biz satırlar ve sütunlarına listelemiş olduk.
+
+322
+01:16:59,923 --> 01:17:09,244
+Ve sıfır matrisi kavramı var. Bütün kilitleri sıfır olan matrisse biz sıfır matrisi diyoruz. Yukarıda herhalde tanımını ben gözden kaçırdım. Bir yerde vardım tabela sıfır matris yoksa.
+
+323
+01:17:10,131 --> 01:17:36,251
+Evet, sıfır matris şurada geçiyor arkadaşlar. Bütün girdileri sıfır olan matrise biz sıfır matris diyoruz. Biz bunu sayı olan sıfır sembolüyle ya da o harfiyle gösteriyoruz arkadaşlar. İkisinden biri. Eğer matris kavramları içinde sıfır karşınıza çıktıysa, sıfır biraz da şöyle yazıyoruz. Bunun bir real sayı değil de ya da bir sayı değil de bunun bir matris olduğunu
+
+324
+01:17:36,787 --> 01:18:03,268
+Yani başta anlaşıyoruz, onu bilmeniz gerekiyor. O yüzden şurada bir de sıfır matris örneğimiz var. Tipi nasıl? 2x4 tipinde bir sıfır matrisimiz var. Bütün girişleri sıfır olan matrise bir sıfır matris diyoruz. Aslında bu toplama işlemini tanımladıktan sonra matrislerin toplama işlemine göre etkisiz elemanı olduğunu göreceksiniz. Yani herhangi bir boyuttaki bir matrisi uygun boyuttaki bir matrisle toplarsanız sonuç yine aynı.
+
+325
+01:18:04,404 --> 01:18:04,924
+Evet.
+
+326
+01:18:05,427 --> 01:18:15,227
+Matrislerin eşitliğine dair bir örneğimiz var. Sol tarafta x, y, z, t bilinmeyenlerine bağlı, girdileri x, y, z, t bilinmeyenlerine bağlı olan bir matris var.
+
+327
+01:18:15,227 --> 01:18:26,647
+Sağ tarafta real bir matris var. Hatta girdileri tam sayı olan bir matris var. A matrisi B matrisine eşitse, eğer soldakine A diyelim, sağdaki B olsun, eğer A, B'ye eşitse bu durumda ne olacak?
+
+328
+01:18:26,768 --> 01:18:33,227
+Karşılıklı girdilerin birbirine eşit olması gerekiyor. Boyutlar aynı, boyutların aynı olması gerekiyor. Her ikisinde de...
+
+329
+01:18:33,427 --> 01:18:35,547
+İki tane satır, iki tane sütun var.
+
+330
+01:18:41,716 --> 01:18:55,695
+[öğrenci] x3 z2 deneyi kastettiğini kaçırdım, bir şey yazdın ama başkası için yazdığım, buna mı yazıyorsun bilmiyorum. Biraz açarsan, hem kime yazdıysan o da daha iyi anlayabilir. Koordinat mı verdin?
+
+331
+01:18:57,171 --> 01:19:18,511
+x artı y ne olacak arkadaşlar? Birinci girdi. A matrisinin şuraya a11 diyelim, a11 girdisi b11'e eşit olacak. Yani şurası b11 girdisi, şurası b12, b21, şurası da b22, karşılıklı olarak şurası da a21, a22.
+
+332
+01:19:19,220 --> 01:19:27,899
+A1, 2 girdileri. Karşılıklı girdiler, eşit olursa bu matrisler eşit olur. Eşit dediğine göre demek ki karşılıklı girdiler. Eşit o zaman x artıya eşittir.
+
+333
+01:19:28,000 --> 01:19:39,380
+2, şuradan A2, 1'den x eksiye eşittir. 4, ben buradan x ve y'yi çözerim. Taraf tarafa topladım. Ne oldu? 2 tane x eşittir. 6 oldu. x eşittir. 3.
+
+334
+01:19:39,380 --> 01:19:45,819
+x 3'ü yerine yazdım. Karşıya attığımızda y eşittir. Ne olacaktır? x 1.
+
+335
+01:19:46,963 --> 01:20:04,163
+Tamam. Şimdi, z ve t'ye bakalım. 3 tane z artı t eşittir a12 girdisi, b12 eşit olacak, eşittir 1, ve z eksi t, yani z'yi şöyle yazıyorum, z eksi t eşittir 2 ile karışmasın diye, eşittir 3.
+
+336
+01:20:04,523 --> 01:20:08,963
+Kırmızıyla yazmakta hiç sempatik değilmiş ama bir kere başladık, önemli değil. Biraz böyle...
+
+337
+01:20:10,612 --> 01:20:15,511
+Yani çok pedagojik değil kırmızı, mavi herhalde, daha iyi bir renk değil mi? Hangi renkte yazalım arkadaşlar?
+
+338
+01:20:17,031 --> 01:20:23,192
+Ha çözmüş arkadaşlar. Tabii elinizde materyal var, hemen yazıyorsunuz. Ama burada çözüyorum.
+
+339
+01:20:25,152 --> 01:20:26,271
+O zaman paylaşmasaydım.
+
+340
+01:20:34,195 --> 01:20:49,595
+Mavi olsun demiş ama bunu bitirelim, böyle şey olmasın arkadaşlar. Yine ne yaptık? Taraf tarafa topladığımızda 4 tane z eşittir, 4 z eşittir, 1 oldu. Dolayısıyla z 1 ise karşıya attık, p'si ne oldu? p eşittir, eksi 2 oldu.
+
+341
+01:20:49,595 --> 01:21:01,536
+Aps, a, evet, 3, tamam, tamam, çekme. Oldu, yeşil mi? Yeşil. O zaman biraz böyle hakliğe yakın olsun, tamam.
+
+342
+01:21:02,195 --> 01:21:10,195
+Aslında vayda iyi ama siyah kalem devam. O zaman olmadı. Ben hangisini istersem arkadaşlar. Hepinizi memnun edemem. Ara ara tamam hepsini kullanırız.
+
+343
+01:21:17,716 --> 01:21:18,576
+Kati ablacığım.
+
+344
+01:21:21,195 --> 01:21:30,336
+Yazarken mavi diyor, şey kırmızı. Kurkan'ın daha derli toplu ifade etmiş. Ama diğerleri beğenilerini, diğer arkadaşlarınız beğenilerini ifade etmişler.
+
+345
+01:21:30,756 --> 01:21:39,716
+Matrislerin eşitliği de böyle. Demek ki tipleri aynı olacak. Yani satır sayısı ve sütun sayıları eşit olmak zorunda tipleri aynı olacak derken biri işte...
+
+346
+01:21:40,640 --> 01:21:53,520
+m çarpı n tipinde, dolayısıyla m ile n'yi çarptık, örnek vermiştim, şurası 2'ye 3 ya da, 2'ye 3 olsun, kare selse bir anlamı yok. 3'e 2 olursa,
+
+347
+01:21:53,971 --> 01:22:14,832
+Çarpımları 6'ya 6 oldu mesela. Biz bunların eşitliğinden söz edemeyiz. Yani satır sayısı ve sütun sayısı tipleri aynı olacak derken, satır sayısı sütun sayısına eşit olması gerekiyor. İki matrisin eşitliğinden söz edebilmek için başta o, ikinci olarak karşılıklı girdilerinin eşit olması gerekiyor. Tamam.
+
+348
+01:22:15,264 --> 01:22:20,404
+Sorularınız olursa yazabilirsiniz. Bakıyorum arkadaşlar, lütfen sorularınızı en basit şeyi bile sorun.
+
+349
+01:22:21,744 --> 01:22:29,384
+Tabii manipüle etmek için değil, onlar zaten anlaşılıyor. Elimizde matrisler üzerinde işlemler tanımlayacağız.
+
+350
+01:22:29,523 --> 01:22:35,884
+Nasıl ki tam sayılarda toplama işlemi var. Ne var tam sayılarda? Hangi işlemleri yapabiliyoruz arkadaşlar? Şöyle yazın bakalım.
+
+351
+01:22:42,003 --> 01:22:55,783
+Evet [öğrenci], girdi sayıları eşit diyebilirsin. Bu sohbeti herkes görebiliyor mu bilmiyorum. [öğrenci] diyor ki 2x3 ve 3x2 tipindeki matrisler için girdi sayıları eşit diyebilir miyiz? Evet, girdi sayıları eşit. Ama matrisler eşit olamazlar hiçbir zaman.
+
+352
+01:22:55,783 --> 01:23:01,783
+Çünkü birinci yazın matrisinde iki tane satır var, ikinci matrisinde üç tane satır var. Dolayısıyla bunların...
+
+353
+01:23:02,323 --> 01:23:14,903
+Tamam o zamanı, açıklama yapmama gerek yok bunun için. Matrislerin eşit olması söz konusu olamaz fakat eşit sayıda girdi ihtiva ederler içeride. Onu söyleyebiliriz.
+
+354
+01:23:15,163 --> 01:23:21,783
+Evet, tam sayılar üzerindeki işlemleri sayın desem ne dersiniz arkadaşlar? Tam sayılar üzerinde hangi işlemler var?
+
+355
+01:23:27,155 --> 01:23:28,575
+Neden cevap yazmıyorsunuz?
+
+356
+01:23:30,935 --> 01:23:33,055
+Çarpma, çıkarma, bölme.
+
+357
+01:23:34,255 --> 01:23:39,095
+Aslında dört işlem dedik. Aslında iki tane işlem var. Çarpma ve toplama.
+
+358
+01:23:39,895 --> 01:23:42,055
+Çıkarma ve bölme diğer işlemlerin tersleri.
+
+359
+01:23:43,355 --> 01:23:45,175
+Yani onun işlemlerden elde ediliyor.
+
+360
+01:23:46,175 --> 01:23:50,395
+Esasında, hatta size biraz daha ileri gideyim, tek tür işlem var. Toplama.
+
+361
+01:23:50,835 --> 01:23:53,136
+Çünkü çarpma toplamanın genelleştirilmiş hali.
+
+362
+01:23:54,163 --> 01:23:55,983
+Tek bir işlem var. Toplamak.
+
+363
+01:24:01,876 --> 01:24:15,056
+Yani en genel anlamda. Çünkü çarpma toplamadan yola çıkarak geliyor. Neden? Çünkü ne dediğimiz şey eşittir. Tam sayılar için konuşuyorum. 1 artı, 1 artı, 1 artı.
+
+364
+01:24:16,976 --> 01:24:29,036
+Konu dışı. Cebirci olduğum için böyle cebirsel şeylere girmek hoşuma gidiyor. Bu da eşittir. Ne çarpı 1. Demek ki toplama, genelleştirilmiş toplama çarpmaymış. Öyle diyebiliriz. Neyse bu bizim konumuz değil.
+
+365
+01:24:30,963 --> 01:24:33,123
+Ama tabi siz yine 4 işlem olarak bilin.
+
+366
+01:24:39,956 --> 01:24:54,775
+Arkadan sesler geliyor. Mikrofonları açık bırakmayalım. Evet. Matris toplamını nasıl tanımlayacağız? Öncelikle elimizde A ve B matrisleri olsun. Artık bu genel notasyona alıştınız, alışmaya başladınız.
+
+367
+01:24:57,056 --> 01:25:02,175
+Tark o konulara girmeyelim, biz binlerce bir işleyelim. Tamam mı? Yani onlar şeyin iş, tersleri.
+
+368
+01:25:03,220 --> 01:25:14,600
+Çıkarma, burada belki onu göreceğiz toplama için. Çıkarma, toplamanın ters eleman eklenerek, aslında toplama işlemi ama bir elemanın tersini ekleyerek toplama yapıyoruz.
+
+369
+01:25:15,220 --> 01:25:22,440
+Çarpmada da yine arkadaşlar, bir arkadaşımızın sesi açılıyor ara ara, onu lütfen kapatsın.
+
+370
+01:25:23,579 --> 01:25:27,380
+Yoksa ben burada bütün herkesin şeylerini kapatırım.
+
+371
+01:25:27,380 --> 01:25:28,980
+Ne derler, mikrofonlarını.
+
+372
+01:25:30,452 --> 01:25:51,152
+O hoş olmaz, onu yapmak istemiyorum. Sizler bir yıldızlı oldunuz. Evet. Elimizde A ve B gibi iki tane matris olsun genel notasyonda ve ikisinin de tipi aynı olsun. M çarpı N tipinde. Yani hem A'nın hem B'nin M tane satırı, N tane tutunu var. Toplama için bu gerekli arkadaşlar. İki tane matrisi toplayabilmeniz için tiplerin aynı olması gerekiyor.
+
+373
+01:25:52,756 --> 01:26:07,695
+Nasıl matris toplamını tanımlıyoruz? Onu bir kere normal, işte tam sayılardaki toplamı gibi o toplam sembolüyle, yani bazen şöyle egzorla gösterenler var ama onu çok şey yapmayacağız. Biz normal toplam sembolünü kullanacağız.
+
+374
+01:26:08,536 --> 01:26:17,756
+A artı B, buna biz C diyelim. İki tane matrisin toplamı, aynı titte matrisin toplamı yine aynı titte bir matristir. Biz buna da...
+
+375
+01:26:18,484 --> 01:26:39,924
+Genel anlamda C, İ, J ile gösterelim. Yine bu M çarpı N tipinde bir matris. Peki C, İ, J'ler nasıl elde edilecek? Burada C, İ, J'ler de şöyle diyelim, öyle ki C, İ, J eşittir A, İ, J artı B, İ, J. Yani karşılıklı girdilleri birbiriyle toplayarak elde ediyoruz.
+
+376
+01:26:51,028 --> 01:27:01,388
+Matris toplamını, aynı tipli iki matrisi toplarken karşılıklı girdileri toplayarak toplam matrisini elde edebiliyoruz, ediyoruz daha doğrusu. Matris toplamı bu şekilde.
+
+377
+01:27:02,387 --> 01:27:08,568
+Yani şöyle açacak olursak, eğer A ve B'nin girdilerini açık açık yazarsam toplamı ne olacak?
+
+378
+01:27:09,048 --> 01:27:19,807
+Şurada birinci girdiler, dikkat edin, şurası C maddesi olsun bu, C11 girdisi, şurası C12 girdisi, şurası da C1n girdisi.
+
+379
+01:27:19,807 --> 01:27:30,368
+Sadece şu ilk satır için konuşuyorum. Ne yapmış? A maddesinin A11 girdisiyle B maddesinin B11 girdisini toplayarak C11'i elde etmiş.
+
+380
+01:27:30,387 --> 01:27:35,728
+Yani karşılıklı entry'leri, girdileri toplayarak biz ne yapıyoruz? Matris toplamını.
+
+381
+01:27:35,807 --> 01:27:42,847
+Bunu m çarpı m tane girdiği için, yani bütün o girdiler için yaptıktan sonra toplam matrisini elde ediyoruz.
+
+382
+01:27:43,167 --> 01:27:53,747
+Bir matrisin skalerle çarpımı, bir real sayı ya da kompleks sayı, artık bizim matrisimizin girdileri hangi cisimden, biz onlara işte real sayılara cisim diyoruz.
+
+383
+01:27:53,747 --> 01:27:58,387
+Cebiser anlamda bütün işlemlerin yapılabildiği bir yer tabii özellikle.
+
+384
+01:27:58,387 --> 01:28:10,208
+Bunların her biri doktora seviyesinde derse anlatılan konular. O yüzden öyle sorulan sorulara basit bir şekilde cevap vermek bazen mümkün olmayabilir arkadaşlar.
+
+385
+01:28:14,100 --> 01:28:42,100
+Elimizde herhangi bir K skaleri var. Yani bir real sayı, kompleks sayı, neyse artık. Sadece girdilerdeki şey gibi, bir matrisin girdisi gibi bir eleman. Bir matrisin onu çarpmak demek. Biz onu nasıl gösteriyoruz tabii? K nokta A, yani bu çarpma anlamında. Ya da noktayı da atabiliyoruz. Buradan zaten konteksten anlaşılıyor. K A şeklinde gösteriliyor ve matrisin her bir girdisinin K skaleriyle çarpılması ile erdi.
+
+386
+01:28:42,100 --> 01:28:59,260
+Şurada açalım. Matris'in her bir girdisini biz K skaleriyle çarpıyoruz. Dolayısıyla bir skaler katını almış olduk. Her bir girdinin skaler katını almış olduk. Matris'in skaleriyle çarpımı da bu şekilde tanımlanıyor sevgili arkadaşlar.
+
+387
+01:29:05,920 --> 01:29:20,559
+Matris toplamı, iki tane toplanabilir matris, herhangi iki matrisi biz toplayamayız. Ön koşul tipleri aynı olacak. Burayı kenara yazın arkadaşlar. Ama herhangi bir matrisi bir kars kaleriyle çarpabiliriz. Sonuç?
+
+388
+01:29:21,011 --> 01:29:28,271
+Aynı tipte olur. Matris toplamı ve bir matrisin bir skalerle çarpımının sonucunun yine aynı tipte olur.
+
+389
+01:29:28,391 --> 01:29:35,211
+Yani toplamdaki bileşen matrislerin tipi neyse, sonuç matrisinin, toplam matrisinin tipi de yine aynı olur.
+
+390
+01:29:35,291 --> 01:29:38,471
+M çarpı n tipinde matrisleri topladıysam sonuç M çarpı n tipinde olacak.
+
+391
+01:29:38,572 --> 01:29:48,171
+Yine M çarpı n tipinde bir matrisi bir K skaleriyle skaler ettiysem tipi yine M çarpı n tipinde olacak.
+
+392
+01:29:54,484 --> 01:29:55,484
+3-4-11
+
+393
+01:29:55,484 --> 01:30:04,524
+Hocam, bir yandan soru çözüyordum, cevap ayarlıyordum da, pardon. Enter'in gönderme tuşu olduğunu unuttum.
+
+394
+01:30:04,944 --> 01:30:05,784
+Evet, tamam.
+
+395
+01:30:11,380 --> 01:30:37,379
+Evet arkadaşlar, bir de matrislerin farkını tanımlayabiliriz. Farkı nasıl tanımlayacağız? Aslında toplam yardımıyla. Önce ne yapıyoruz? A matrisini eksi bir ile scale ettiğimde, yani her bir girdisini eksi bir ile çarptığımda A'nın eksilisini elde ediyorum. Hani neden iki işlem vardır? Bu belki size bir ipucu olur. A matrisini önce eksi bir ile scale ettim, eksi A'yı elde etmiş oldum. Dolayısıyla eğer
+
+396
+01:30:37,663 --> 01:30:47,683
+Bir B maddesini, siz eksi bir ile scale ettikten sonra A ile toplarsanız, yani A artı eksi bir çarpı B derseniz, bu A ile B'nin farkı olarak.
+
+397
+01:30:47,843 --> 01:30:52,203
+Yani kısaca onu A eksi B şeklinde yazıyoruz ama esasında bu bir toplama işlemi.
+
+398
+01:30:52,503 --> 01:30:56,803
+Önce B maddesini eksi bir ile scale ediyorum, sonra A ile topluyorum.
+
+399
+01:30:57,183 --> 01:31:00,003
+O yüzden ne dedim ben? İki tane işlem var.
+
+400
+01:31:00,263 --> 01:31:03,643
+Sadece toplama ve çarpma, diğerleri, tersleri oluyor.
+
+401
+01:31:03,643 --> 01:31:05,663
+Hatta dedim tek işlem var, çarpma toplaması.
+
+402
+01:31:05,663 --> 01:31:13,883
+Toplamanın genelleştirilmesidir gibi bir şey söyledim. Cebisal olarak bunlar doğru. Ama siz yine dört işlem vardır deseniz yanlış olmaz.
+
+403
+01:31:15,443 --> 01:31:25,883
+İki matrisin farkını da bu şekilde tanımlıyoruz. Yani skaler çarpma ile toplama işlemini kombine ettiğimizde, bir araya getirdiğimizde matrislerin farkını...
+
+404
+01:31:26,676 --> 01:31:43,736
+elde edebiliyoruz. Farklı ebatlardaki ya da farklı tiplerdeki matrislerin toplamı farklı tanımlı değil. Yani elinizde işte bir tane 2x2 tipinde matris var, bir de 3x3 tipinde bir matris var. Siz bu matrisleri toplayamazsınız.
+
+405
+01:31:44,275 --> 01:31:57,855
+Yani ilk A madrisinin, şunu A diyelim işte, birinci madris, şurada B madrisi olsun. İlk madrisin A11'i B11 ile topladınız, A12'yi B12 ile topladınız, A21'i aynı şekilde ve A22'yi topladınız.
+
+406
+01:31:58,256 --> 01:32:08,376
+Açıkta kalan o A13, A23, A33, A31, A32 ne olacak? Değil mi? Ondan ne yapacaksınız? Yani zaten mantıken bunu yapamayacaksınız.
+
+407
+01:32:08,376 --> 01:32:11,475
+Yapmaya çalışsanız mümkün olmayacak. O yüzden tamam bu değildir diyoruz.
+
+408
+01:32:11,859 --> 01:32:18,539
+Şurada iki tane matris var. Bunları toplamak istediğimizde ne yapacağız? Karşılıklı girdileri toplamamız lazım.
+
+409
+01:32:18,539 --> 01:32:19,260
+Tipi değiş...
+
+410
+01:32:19,260 --> 01:32:22,439
+B diyelim, eşittir C diyelim.
+
+411
+01:32:24,260 --> 01:32:31,079
+C yine 2x3 tipinde bir matris. Karşılıklı girdileri topluyorum. 1 ile 4'ü topladık, 5 oldu.
+
+412
+01:32:31,420 --> 01:32:35,539
+Eksi 2 ile 6'yı topladık, 4 oldu. 3 ile 8'i topladık, 11 oldu.
+
+413
+01:32:37,460 --> 01:32:47,479
+Sonra 0 ile 1'i topladık, 1 oldu. 4 ile eksi 3'ü topladık, 1 oldu. 5 ile eksi 7'yi topladık, eksi 2 oldu falan. Matris toplamını elde etmiş olduk.
+
+414
+01:32:51,380 --> 01:32:57,920
+[öğrenci] eşit olmak zorunda. [öğrenci] sen de çalışarak mı şey yaptın yoksa çalışırken öyle kaza aramlı geldi o?
+
+415
+01:32:59,520 --> 01:33:04,340
+Eşit olmak zorunda mı matrisler? Hayır eşit olmak zorunda değil, aynı tipte olmak zorunda.
+
+416
+01:33:06,220 --> 01:33:14,520
+İki maddesin toplanabilir olması için [öğrenci]'in sorusuna cevabım. Matrisler eşit olmak zorunda değil. Herhangi aynı tipte iki maddesi biz toplayabiliriz.
+
+417
+01:33:14,912 --> 01:33:23,012
+[öğrenci], deli bir satır üstündeki toplamlarını ele alabiliyor muyuz? Peki böyle olunca mesela, hayır [öğrenci], anlamsız bir işlem olur.
+
+418
+01:33:23,012 --> 01:33:30,112
+Yani o, öyle bir şey yok, bir set olarak anlamsız, unsense yani.
+
+419
+01:33:36,404 --> 01:33:49,064
+Tıklayamayınca sunumu böyle muhtemelen kayıtlara farenin sesi de girecek. O yüzden şimdiden sizden özür diliyorum bunun için. Yapacak bir şey yok arkadaşlar. Keşke daha sessiz fareler olsa.
+
+420
+01:33:51,144 --> 01:33:57,064
+Bir de şurada başka işlemler var. A matrisini işte scale ettiğimizde ne yapacağız? Her bir girdisini...
+
+421
+01:33:58,739 --> 01:34:12,639
+3'te çarpmamız lazım. Yani şurada 1'i 3'te çarptınız, ilk girdisi 3 olacak. Şurası 3'te çarptınız, eksi 6, 3'te çarptınız 9, 3'te çarptınız 0, 12 ve 15 şeklinde 3'a matrisini elde etmiş olacağız.
+
+422
+01:34:12,939 --> 01:34:19,859
+Ya da şurada işte A'yı 2 ile skele et, sonra B'yi eksi 3 ile skele et, onları topla şeklinde.
+
+423
+01:34:20,368 --> 01:34:44,847
+Ne yapacağız? Ya da şöyle de yapabilirsiniz. A'yı 2 ile scale, B'yi 3 ile scale, sonra farkına alabilirsiniz. Onu da yapabilirsiniz. Yani işlemleri kombine edebilirsiniz. Dolayısıyla A'yı 2 ile çarpacağız. İşte bir tane satırını yapayım şunların. 2 ile çarptığımızda şuralar kalsın. Şurası 2, eksi 4.
+
+424
+01:34:45,427 --> 01:35:05,967
+2 ile çarptık, 6, artı diyelim, B'yi de, eksi 3 ile scale ettik, eksi 12, ondan sonra, eksi 18, ve eksi 24. Bunları topladığımızda, ne olacaktır? Yine ikinci satırı size bırakıyorum.
+
+425
+01:35:12,884 --> 01:35:25,963
+topladığımızda, eksi 22, işlem hatası yapmadıysam, eksi 3 de skele ettik, tamam, 18, hata yok orada.
+
+426
+01:35:26,503 --> 01:35:31,164
+Şurada ne var? 6'yı da topladığımızda, eksi 18 arttır. Bu şeklinde elde edilmiş olduk.
+
+427
+01:35:38,963 --> 01:36:06,003
+Hayır, hayır [öğrenci], [öğrenci], öyle bir şey olamaz. İlk yazdığım matris 2x3 tipinde, 2. yazdığım matris 3x3 tipinde karesel bir matris. Yani sıfır satır olması onun anlamsız bir şey olduğunu söylemiyor. Bazen o sıfırlar öyle işe yarıyor ki, işte communication teoride bol sıfırlı matrisler çok tercih edilir. Onlara spars deniyor.
+
+428
+01:36:06,484 --> 01:36:31,284
+O yüzden onlar tipleri bir kere aynı değil, eşit olamazlar [öğrenci]. Ne dedik? İki matrisin eşit olması için aynı tipli, yani satır sayılarının karşılıklı eşit, sütun sayılarının karşılıklı eşit olması gerekiyor. Oldu mu? Hayır, aynı matrisde olmaz. Onlar farklı matrisler.
+
+429
+01:36:33,108 --> 01:36:35,108
+Farklı matrisler, aynı değiller.
+
+430
+01:36:36,508 --> 01:36:38,508
+Tipleri farklı çünkü.
+
+431
+01:36:40,628 --> 01:36:43,108
+Çarpacağız, [öğrenci] oraya geliyoruz.
+
+432
+01:36:43,388 --> 01:36:46,508
+Çarpacağız ama her matris, her matrisde çarpamıyoruz.
+
+433
+01:36:49,108 --> 01:36:50,508
+Evet, [öğrenci].
+
+434
+01:36:51,068 --> 01:36:54,108
+Yazılım zaten hani...
+
+435
+01:36:55,028 --> 01:36:58,308
+Matematik bilen daha iyi yazılımcı olur. Öyle diye.
+
+436
+01:36:58,612 --> 01:37:02,812
+Daha iyi anlar. Çünkü matematiksel yazılım dediğin şey matematiksel.
+
+437
+01:37:02,812 --> 01:37:06,012
+Algoritmalardan oluşuyor, önermelerden oluşuyor.
+
+438
+01:37:12,020 --> 01:37:30,340
+Evet, onu dedim ama derse geç mi geldin acaba? Her şey konabilir. Sembolde ne dedim? Real sayısı real matris, komplekse kompleks ama başta ilk tanımı verirken dedim ki sembolde olabilir bunlar. Her şey olabilir. Yani oraya story edebilirsiniz. Onları yazılımcılar matrisleri dizi olarak görürler. İki boyutlu dizi.
+
+439
+01:37:32,884 --> 01:37:45,043
+Hatta C++'da komutları var değil mi? İki boyutlu dizilerin komutları, başta C++'ını ifade ediyorsun. Sonra içine bir şey atabiliyorsunuz. C++'da. Ondan matris işte.
+
+440
+01:37:46,963 --> 01:37:57,203
+Ne yaptım ben şimdi? Aldım, gidiyorum. Şurayı kim çizdi? Ben çizmedim. Evet, arkadaşlar, size de mi yetkisi verdim?
+
+441
+01:37:59,060 --> 01:38:03,340
+Matris toplamının ve skaler çarpımının, saat kaç oldu bu arada hatırlatın arkadaşlar.
+
+442
+01:38:04,360 --> 01:38:06,119
+10.34, 10.15 vaktiniz var tamam.
+
+443
+01:38:07,380 --> 01:38:13,060
+Matris toplamının ve çarpımının özellikleri var. Başta matris toplamı birleşmelidir.
+
+444
+01:38:13,180 --> 01:38:18,539
+Yani ABC toplanabilir matrisler, aynı tipti demişiz burada, toplanabilir matrisler.
+
+445
+01:38:23,923 --> 01:38:33,123
+Dolayısıyla A ve B, C toplanabilir matrisler olsun, bir arada da gözüm mesajda olduğu için böyle kayıyor sanki, bir şey düşünüyormuşum gibi oluyor.
+
+446
+01:38:33,903 --> 01:38:43,384
+[öğrenci] diyor ki, geç kaldım, geç kalmayın arkadaşlar, zamanla dinleyin, kayıtları zoom alıyor, uzaktan eğitim kaydediyor bunları, tekrar izleme şansımız var.
+
+447
+01:38:51,923 --> 01:39:03,003
+[öğrenci] yazılımla ilgili dersimiz dinlerce bir. İsteselerdi onu birden de başlatırlardı. Çok önemli değil. O kurgularken öyle başlatılmış. Ama diziler de genelde sıfırdan başlatılmış.
+
+448
+01:39:03,224 --> 01:39:12,484
+Doğal sayılarla eşitledikleri için muhtemelen oradan hareketle konu yazanlar öyle bir tercih yapmışlar. Yani birden de başlatabiliyorsunuz ama.
+
+449
+01:39:18,420 --> 01:39:45,820
+A, B, C toplanabilir matrisler olsun. Dolayısıyla önce A ile B'yi toplayıp, sonucu yine aynı tipli bir matris olacak. Sonra onu C ile toplamak ile önce B ile C'yi toplayıp, burası yeni bir matris olacak, buna D üstü diyelim, şurası da D olsun. Dolayısıyla D ile C'nin toplamıyla A ile D üstünün toplamı birbirine eşittir. Biz bunlara matris toplamının birleşme özelliği diyoruz. Birleşme özelliği.
+
+450
+01:39:47,923 --> 01:39:49,423
+Birleşme Özel'i.
+
+451
+01:39:50,423 --> 01:39:52,923
+Mahallalı'nın şu yeşil çok hoşuma gitti.
+
+452
+01:40:01,844 --> 01:40:29,103
+Sonra ikinci işlemiz matris toplamının etkisiz elemanı. Burada uygun tipli bir sıfır matrisi var. Normalde elinizde işte bir, iki, bir, üç şeklinde bir matris var. Artı sıfır. Böyle bir şey sakın yapmayın arkadaşlar. Sakın böyle bir şey yapmayın. Böyle bir şey yapmayın. Bir matrisle bir skaleri biz toplayamayız. Bu sıfır dediğimiz şey, şu sıfır aslında bir çarpı bir tipinde bir matris.
+
+453
+01:40:29,747 --> 01:40:50,747
+Her zaman. Raya sayıları biz 1 çarpı 1 tipinde matrisleri olarak düşünebiliriz ki öyle. Cebirsel olarak öyle. 1 çarpı 1 tipinde bir matris, 2 çarpı 2 tipinde bir matrisi toplayamayız. O yüzden buradaki sıfır, şurayı sileyim ben. Gerçekten burada da biliyor. Önemli zaten atlıyoruz. Buradaki sıfır arkadaşlar nedir? Uygun tipli bir...
+
+454
+01:40:51,412 --> 01:40:59,811
+Uygun tipli bir matris. Dolayısıyla, uygun tipli bir matris ile topladığınızda, sıfır matris ile topladığınızda sonuç değişmez.
+
+455
+01:40:59,952 --> 01:41:05,671
+Abellen olay. Yani soldan sağdan toplamanız değiştirmiyor. Evet. Bu da ikinci özelliğimiz.
+
+456
+01:41:05,671 --> 01:41:15,431
+Buna da matris toplamının etkisiz elemanı diyoruz. Matris toplamının etkisiz.
+
+457
+01:41:19,091 --> 01:41:34,251
+elemanı. Ondan sonra bir matrisin kendisini eksi bir ile skele edip toplarsanız sonucu uygun tipli yine sıfır matrisi olur. Yani aynı tipleri sıfır matrisi olur. Buna da ters eleman özelliği diyoruz.
+
+458
+01:41:34,251 --> 01:41:45,371
+Yani her matrisin toplamsal tersi vardır. Hatta toplamsal ters. Öyle yazarsam daha güzel olur. Çünkü çarpımsal tersten de söz ediyoruz. O her zaman yok.
+
+459
+01:41:45,728 --> 01:41:47,728
+Toplamsal ters
+
+460
+01:41:52,372 --> 01:42:02,452
+Hangi özellikleri verdik? İlki birleşme özelliğiydi, ikincisi etkisiz eleman, üçüncüsü toplamsal ters, sonra değişme özelliği.
+
+461
+01:42:03,431 --> 01:42:11,431
+A matrisini önce A'yı yazıp sonra B ile toplarsam, sonra sırayı değiştirip toplarsam sonuç değişmez, buna değişme özelliği diyoruz.
+
+462
+01:42:15,667 --> 01:42:32,427
+Esasında arkadaşlar, bu dört koşulu sağlayan bir yapıya, bir cebirsel yapıya biz grup diyoruz. Tam sayılar kümesi bir grup, real sayılar kümesi bir grup, kompleks sayılar kümesi bir grup, kuaternyonlar bir grup, oktonyonlar bir grup, biz buna cebirsel anlamda grup diyoruz arkadaşlar.
+
+463
+01:42:40,307 --> 01:42:57,608
+Anlatsan, takip edemedin herhalde ben toplayamayız dedim zaten. Biri 1x1 tipinde, biri 2x2 tipinde, aklı silmediysen üzerine çarpı koydun. Dikkat edersen yapamayız dedim. Yani şu kırmızı çarpı yapamayız demek. Herhalde dikkat etmiyorsun ekranın.
+
+464
+01:43:02,707 --> 01:43:17,247
+Anlaştık mı [öğrenci]? Yani aynı tiki matrisleri toplayabiliyoruz. Ben de dedim ki toplayamayız. Şu sıfırı matris olarak düşünün. Real sayı olarak ya da tam sayı olarak düşünmeyin dedi. O yüzden.
+
+465
+01:43:20,607 --> 01:43:27,287
+Şimdi ben geriye dönüp lisans defterlerine baktığımda bazı şeyleri yanlış yapmışım. Onları nefsin saklıyorum.
+
+466
+01:43:28,115 --> 01:43:42,395
+Muhtemelen yanlış anladım. Orada öyle gidebiliyor yani. O yüzden dikkatli takip etmemiz gerekiyor. O yüzden ara veriyoruz 10 dakika. A ve çay içindiye kendisi gelince. Dikkatli takip etmemiz gerekiyor.
+
+467
+01:43:44,135 --> 01:43:51,215
+Bir de skaler çarpmanın özellikleri var. Önce A ile B matrislerini toplayıp sonra K ile scale etmek ile
+
+468
+01:43:51,568 --> 01:44:04,708
+Ayrı ayrı bu matrisleri K ile skeylettikten sonra toplamak aynı sonucu verir. Bu da skaler çarpının matris toplamı üzerine soldan dağıtmak. Sağdan da dağıtabilirsiniz özellikle.
+
+469
+01:44:05,652 --> 01:44:18,332
+Ve ikinci olarak iki tane skaleri, K ve K üstü gibi iki tane skaleri önce topladık. Bu T gibi bir sayı olur değil mi? İki tane sayının toplamı yine bir sayı. Real kompleks fark etmiyor. Neyse topladığımızda yine aynı kümeden bir sayı olur.
+
+470
+01:44:18,332 --> 01:44:32,091
+Çünkü ne dedik? Kapalıdır. Hatta şuradan şu sonucu da çıkarız matris toplamının. İki tane aynı tipli matrisin toplamı yine aynı tipli bir matristir. Buna da toplamsal kapalılık deniyor arkadaşlar.
+
+471
+01:44:33,652 --> 01:44:37,131
+kompleks sayılarda ya da işte sayı sistemlerinde de kapalılık özelliği var.
+
+472
+01:44:37,231 --> 01:44:42,671
+Bir cevirsel olarak bir grup olduğu için. O yüzden iki tane sayıyı topladığınızda yine aynı hükümeti bir sayı.
+
+473
+01:44:42,752 --> 01:44:47,912
+Yani diyelim tam sayılarda iki sayıyı topladığınızda bir irrasyonel sayı olmaz.
+
+474
+01:44:48,051 --> 01:44:51,652
+Yine tam sayı olur. İki tam sayının toplamı yine bir tam sayıdır.
+
+475
+01:44:52,115 --> 01:44:59,896
+Ya da iki tane kompleks sayının toplamı bir quaternion olmaz. Yine bir kompleks sayıdır.
+
+476
+01:44:59,996 --> 01:45:09,615
+Tabii kompleks sayılar aşağıya doğru olan her şeyi de içlerinde barındırıyorlar. Real sayıları, rasyonel, tam sayıları falan içlerinde barındırıyorlar.
+
+477
+01:45:17,811 --> 01:45:22,431
+Aynı maddesi farklı sayılarla scale edip toplamak aynı sonucu bize verir.
+
+478
+01:45:22,771 --> 01:45:30,152
+Cebirsel olarak bunlar bize bir konfor alanı sağlıyor ve vektörler konusuna geldiğimizde vektör uzaylarına bu aksiyonların hepsini sayacağız.
+
+479
+01:45:30,152 --> 01:45:32,811
+Bunların vektör uzayı o maksimumlar aslında.
+
+480
+01:45:33,391 --> 01:45:40,072
+Bir abelyen grup ve skalerle çarpma işleminin koşullarını sağlıyorsa ona vektör uzayı diyeceğiz ki bu koşulları sayacağız.
+
+481
+01:45:40,172 --> 01:45:43,372
+10 tane koşul. Burada skip ettiğimiz koşullar var.
+
+482
+01:45:43,631 --> 01:45:51,051
+Gauss'ünü önce çarptım, yani iki tane sayını çarptım, yine bir sayı, sonra onu, a'yı o sayıyla scale ettim.
+
+483
+01:45:51,991 --> 01:45:57,291
+Sağ taraftan ne yaptık? Önce a'yı Gauss'ü ile scale ettim, sonra Gauss'u ile scale ettim, aynı sonucu verecek.
+
+484
+01:45:57,431 --> 01:46:07,411
+Yani önce sayıları çarpıp sonra matris ile çarpmak ile, matrisi önce bir işte ikinci sayı ile çarpmak, sonra matrisi elde edilen, şurası parantez içi bir matris olacak arkadaşlar.
+
+485
+01:46:07,411 --> 01:46:11,551
+Şurası matris, o matrisi yine bir sayıyla scale ettim.
+
+486
+01:46:11,631 --> 01:46:14,211
+Sonuç yine bir matris. Yani bunun sonucu yine bir matris.
+
+487
+01:46:16,451 --> 01:46:21,391
+Hatta K ile K3'ümüz sırasında değiştirebilirsiniz. Yine sonuç değişmez.
+
+488
+01:46:21,391 --> 01:46:38,431
+Son özellik, bir matrisi bir ile, yani tam sayıların birim elemanı, çarpımsal birim ile çarptığımızda, ya da real sayıların çarpımsal birim ya da rasyonel sayıların aynı matrisiyle içerik.
+
+489
+01:46:39,283 --> 01:46:45,503
+Bu da skaler çarpımın etkisiz elemanı olmuş. Skaler çarpımın etkisiz elemanı.
+
+490
+01:46:49,460 --> 01:46:57,199
+[öğrenci] diyor ki matrisler için her zaman bir sınır. Sınırla neyi kastediyor [öğrenci]? [öğrenci] sınırla neyi kastediyor?
+
+491
+01:47:00,724 --> 01:47:02,563
+MN, hayır.
+
+492
+01:47:04,423 --> 01:47:10,823
+[öğrenci], şey olsun o zaman, sana araştırma konusu, tuhapliz matrislerine bak istersen, tuhapliz tipi matrisler.
+
+493
+01:47:11,507 --> 01:47:19,427
+Ve konvülüsyon kodlar diye Google'dan bir bak, matrislerin tipi her zaman sonunda olmak zorunda değil.
+
+494
+01:47:19,847 --> 01:47:25,647
+Ki normalde işte komünikasyonda yine kullanılan konvülüsyon kodları var.
+
+495
+01:47:26,527 --> 01:47:31,207
+Akış şeklinde işte bir şey başlıyor, bir dijital iletişim akış şeklinde devam ediyor.
+
+496
+01:47:31,287 --> 01:47:35,907
+Orada kullanılan matrisler, teorik olarak en azından öyle düşünüyoruz.
+
+497
+01:47:37,907 --> 01:47:38,587
+Nedir?
+
+498
+01:47:39,091 --> 01:47:48,891
+Sınırlı olmayan bir başlangıç noktası var, köşede sol üst köşesi var ama sağ alt köşesi yok. Sonsuza gidiyor, kabul ediliyor.
+
+499
+01:47:50,571 --> 01:47:54,251
+Var, evet [öğrenci] öyle matrisler var, bu da sana ödev olsun, araştırma konusu.
+
+500
+01:47:55,611 --> 01:47:57,671
+Toeplix matrisleri diye bakabilirsin.
+
+501
+01:48:01,811 --> 01:48:03,371
+Tamam, dersin kapsamı dışında.
+
+502
+01:48:03,851 --> 01:48:09,291
+Toplam sembolünü vereceğiz. Toplam sembolünü niye vereceğiz? Matris çarpımını tanımlamak için arkadaşlar.
+
+503
+01:48:12,111 --> 01:48:20,451
+Latin alfabesindeki büyük sigma harfini biz toplam sembolü olarak kullanıyoruz ve elimizde cebirsel bir ifade olsun.
+
+504
+01:48:21,043 --> 01:48:31,344
+F şeklinde, çevirsel bir ifade olsun elimizde. Dolayısıyla, K birden N'ye kadar FK, toplam sembolü altında FK demek.
+
+505
+01:48:31,923 --> 01:48:59,683
+K yerine bir yaz, sonra K yerine iki yaz, sonra en son K yerine ne yaz ve bütün bu ifadeleri topla. Yani bu toplam sembolü bize kolaylık sağlıyor. Notasyonal olarak kolaylık sağlıyor. O yüzden kullanıyoruz bunları. Matematikte sıkça kullandı. İşte K kurus da, lineerçe bir de ve bazı tanımlamaları yapmadan bize oldukça kolaylık sağlar. Bu toplam sembolünü verdikten sonra tabii K'ya biz sembolün indisi diyoruz.
+
+506
+01:48:59,923 --> 01:49:02,023
+Ga dinamik, değişiyor sürekli.
+
+507
+01:49:02,483 --> 01:49:03,923
+1'e alt indis diyoruz.
+
+508
+01:49:04,023 --> 01:49:06,903
+Ya da indisin alt sınırı, neye de indisin üst sınırı diyoruz.
+
+509
+01:49:07,243 --> 01:49:09,723
+Ga indisi tepkisiz bir indis.
+
+510
+01:49:09,844 --> 01:49:13,703
+Dolayısıyla biz bunu amacımıza uygun bir şekilde manipüle edebiliriz.
+
+511
+01:49:13,703 --> 01:49:27,923
+Yani işte burada kaç tane terim var, ne tane terim var, ne tane terimi muhafaza etme koşuluyla biz amacımıza uygun bir şekilde Ga'yı başka bir sayıdan başlatıp başka bir yerde, tabi cevisel ifadeleri de değiştiriyoruz.
+
+512
+01:49:27,923 --> 01:49:38,923
+Birinci ifade, aynı şeyi verecek şekilde manipüle edebiliriz. Dolayısıyla eğer K'yı N1'den başlatıp N2'den bitirirsek, bu durumda bizim ilk...
+
+513
+01:49:40,212 --> 01:49:51,731
+İfademiz F içinde N1 olacak, son ifademiz de F içinde N2 olmuş olacak, yani N1'de N2'ye kadar gelmiş olduk. Dikkat ederseniz, 1-1 artı içerisinde.
+
+514
+01:49:51,731 --> 01:49:59,992
+N1 artı 1, N1 artı 2 falan. Amaca uygun bir şekilde toplam sembolü manipüle edilebilir. Matrimatiki dersini göreceksiniz.
+
+515
+01:50:00,000 --> 01:50:08,480
+Yeni başlayanlar için söylüyorum, Kalkus derslerine. Dolayısıyla orada, özellikle matiki dersinde, diziler, seriler konularını göreceksiniz.
+
+516
+01:50:08,619 --> 01:50:15,060
+Orada, seriler konusunda çokça bu toplam sembolüyle haşır neşir olacaksınız, kullanacaksınız.
+
+517
+01:50:15,060 --> 01:50:25,199
+Burada örneklerimiz var, basit örnekler. İşte K1'den 5'e X, sat K, X alt, indiz K. Ne olacak? Burada notasyonel bir şey var, sembolik.
+
+518
+01:50:25,279 --> 01:50:27,560
+Dolayısıyla X'in indisini değiştireceğiz.
+
+519
+01:50:28,000 --> 01:50:43,460
+5'e kadar x1, artı x2, artı x3, artı x4, artı x5, artı x'e neyse, 5 tane şeyi toplamış olduk burada ama, 5 tane şeyi toplayacağımızda ve toplam notasyonunda daha az, ne derler, sembol harcamış olduk.
+
+520
+01:50:44,404 --> 01:50:59,203
+İkinci olarak, işte birden i, birden n'ye kadar a, i çarpı d'yi. Aslında bu i çarpımın ifadesi gelecek. İ çarpımı veriyor. İki tane vektörün i çarpımının tanımı esasında bu. Yani iki vektörün karşılıklı girdilerine çarpıp topluyoruz.
+
+521
+01:51:00,003 --> 01:51:07,804
+Tabii şuraya u eşittir, a bir, şöyle vektörleri yazalım, a n, v eşittir, b bir.
+
+522
+01:51:08,467 --> 01:51:20,768
+Bn şeklinde iki tane vektör aldık, onları karşılıklı girdilerini çarpıp topladığımızda buna i çarpım deniyor. Yine kullanım alanları var. Tabii bu örnek sadece, i çarpımdan bağımsız bir şey tanım vermiyor bize.
+
+523
+01:51:26,131 --> 01:51:27,591
+Matris'te binik olumlu.
+
+524
+01:51:34,836 --> 01:52:00,516
+Yani kontekse bağlı. Şimdi fonksiyon, fonksiyonun girdileri matrisler öyle olabilir. Fonksiyonun bir matristeki limitine bakılabilir mesela. Öyle bir şey olabilir. Ama sonsuzda sıfır olan bir matris, en azından ben şu ana kadar ki matematik ilgimle öyle bir şey bilmiyorum. Yani kaçırdığım bir şey olabilir tabii. Ama ben öyle bir şey bilmiyorum.
+
+525
+01:52:09,716 --> 01:52:29,556
+[öğrenci] o senin ödenin, araştıracaksın. Töreplis matrislerine bak. Nokta nokta gösterirsin, zor değil. Hocam nasıl olacak? İşte şu A11'i yaz, şuraya doğru bir şeyler yaz. Şuraya üç nokta yazdığın zaman matematikte bu gidiyor demek ki yani. Oraya sonunda bir şey yazmadığın zaman şöyle yaz, al sana töreplis matris.
+
+526
+01:52:30,068 --> 01:52:46,408
+Şuraya da işte A1, M yazalım ya da hatta şuraya A1 diyelim aşağı doğru da gitsin. Şuraya yanlar da gidiyor, sonsuza gidiyor yani. Bir yerde başlıyor, aşağı tarafı, yani şöyle üçgensel olarak düşündüğümüzde şu taraf sonsuza akıyor. O yüzden olabilir.
+
+527
+01:52:46,408 --> 01:52:58,028
+Evet, üçüncü örneğimiz J2'den 5'e kadar J kare şeklinde. Yani 2'den başlayacak ilk indisimiz 2, son indisimiz 5. Her bir indisi yazdığımızda karesini alacağız.
+
+528
+01:52:58,068 --> 01:53:04,628
+Dikkat ederseniz, C dinamik. Yani iki yazdım karesini aldım, üç yazdım karesini aldım, dört yazdım karesini, beş yazdım karesini falan.
+
+529
+01:53:05,388 --> 01:53:09,388
+Ve onları toplayabiliriz. Burada sonlu olduğu için bunları toplayabiliriz.
+
+530
+01:53:10,131 --> 01:53:14,911
+Sonlu olmadığı durumlarda limit ya da serinin yakın saklığı kavramları ortaya çıkıyor.
+
+531
+01:53:15,591 --> 01:53:21,131
+Dördüncü örneğimiz bir polinom. Genel anlamda polinomu biz toplam sembolüyle verebiliriz.
+
+532
+01:53:21,231 --> 01:53:25,031
+A6'imiz i, kat sayılar çarpı, bilinmeyenlerin kuvvetleri.
+
+533
+01:53:25,471 --> 01:53:28,011
+0 yazdığımızda A0 gelecek sabit.
+
+534
+01:53:28,471 --> 01:53:36,071
+A1 birinci dereceli monomyal, A1x, A2x² ve A'in x'in derecesinde olan bir polinomu bu şekilde gösterebiliriz.
+
+535
+01:53:36,071 --> 01:53:38,131
+Son olarak bu amacımıza uygun.
+
+536
+01:53:38,131 --> 01:53:47,951
+Bu bir şey matris çarpımında kullanacağız. İngizleri iki tane indiz koyduk. İlk indizler satır sayısı, ikinci indizler sütun sayısını gösterecek.
+
+537
+01:53:47,951 --> 01:54:00,631
+Ama burada şöyle bir şey yapmışız. Birinci, aslında matrisin satır ve sütunları olarak düşünürsek, A ve B matrisleri gibi düşünürsek, A eşittir A, İ, J, B eşittir B, İ, J.
+
+538
+01:54:01,747 --> 01:54:15,087
+B, I, J. Tabi burada dikkat ederseniz, birincinin sütun sayısı, ikincinin satır sayısına eşit. O zaman şurası M çarpı P olsun, şurası da P çarpı M olsun. Bu şekilde gösterelim.
+
+539
+01:54:16,087 --> 01:54:26,027
+A'nın inci satırıyla B'nin J inci satırını çarpmış birbiriyle. Çarpmış derken karşılıklı girdileri çarpıp toplamış. Aslında tam olarak matris çarpımı da bu arkadaşlar.
+
+540
+01:54:26,667 --> 01:54:29,667
+Tabi bu sadece toplam sembolünü örneklendirmek için verdiniz.
+
+541
+01:54:29,747 --> 01:54:32,067
+Örnek K 1'den başladı, P'ye kadar gidiyor.
+
+542
+01:54:32,607 --> 01:54:37,687
+A, İ, K, İ ile J burada sabit kalacak, dinamik olan K. K dinamik sürekli değişecek.
+
+543
+01:54:37,987 --> 01:54:42,867
+Yani A1, Aİ1 çarpı B1J, değil mi şurada?
+
+544
+01:54:43,167 --> 01:54:49,707
+Aİ1 çarpı B1J, Aİ2 çarpı B2J, artı Aİ3 çarpı B3J.
+
+545
+01:54:49,767 --> 01:54:52,307
+Bu şekilde artık örüntüyü yakaladınız, devam ediyor.
+
+546
+01:54:52,427 --> 01:54:54,927
+AİP çarpı BPJ.
+
+547
+01:54:55,267 --> 01:54:56,167
+Yani son girdi.
+
+548
+01:54:56,707 --> 01:54:57,747
+Hatta şöyle açık yazı.
+
+549
+01:54:57,747 --> 01:55:01,247
+Zıcak olursak, daha anlaşılır olsun, hem tanımı verince ben rahat ederim.
+
+550
+01:55:02,727 --> 01:55:10,227
+A madrisinin inci satırı, Aİ1, Aİ2, bu şekilde devamla.
+
+551
+01:55:11,127 --> 01:55:17,187
+AİP, P tane, neyi var? Sütunu var, inci satır.
+
+552
+01:55:17,187 --> 01:55:20,807
+Bir de B'nin, C'inci sütunu yazalım.
+
+553
+01:55:24,720 --> 01:55:43,079
+B2J, sonra nereye kadar gelecek? BPJ. Niye? Çünkü B'nin P tane satırı var. BPJ'de durmak zorundayım. Bunları ne yapıyoruz? Karşılıklı, benim favori rengim turuncu arkadaşlar.
+
+554
+01:55:47,060 --> 01:56:03,640
+Aİ1 çarpı B1J. İlk girgiye bakın. Aİ1 çarpı B1J. Onları çarptık. Artık sonra ikinciyi ikinciyle çarptın. Sonuncuyu sonuncuyla çarptın. Bu şekilde.
+
+555
+01:56:05,900 --> 01:56:10,980
+[öğrenci] bu kadar dakika olmayın. Aramızda üç beş dakikanın lafı olmasın. Değil mi?
+
+556
+01:56:13,076 --> 01:56:37,555
+Dersiniz varsa 11'de ayrı. O zaman matris çarpımını vermeyeyim. Haftaya kalsın. Tamam o zaman arkadaşlar. Sabırla dinlediğiniz için hepinize çok teşekkür ediyorum. Lütfen dersin başında verdiğim, size ifade ettiğim ilkelere bağlı kalın. Dersinize vakit ayırın. Derslerinize daha doğrusu vakit ayırın.
+
+557
+01:56:39,380 --> 01:56:53,159
+Öğrenim süreci geçsin. Başta güzel bir dönem geçsin. Sonra verimli ve güzel bir öğrenim süreci geçsin. Sabırla dinlediğiniz için hepinize teşekkür ediyorum. Haftaya görüşmek üzere. Sağlıkla kalın. Hoşçakalın arkadaşlar.

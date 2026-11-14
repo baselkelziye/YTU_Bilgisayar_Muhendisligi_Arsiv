@@ -1,0 +1,2059 @@
+1
+00:04:15,795 --> 00:04:17,695
+Günaydın arkadaşlar, nasılsınız?
+
+2
+00:04:28,884 --> 00:04:30,984
+Günaydın hocam, teşekkürler siz nasılsınız?
+
+3
+00:04:32,024 --> 00:04:33,223
+Ben de teşekkür ederim.
+
+4
+00:04:35,264 --> 00:04:41,364
+Hatırlayacak olursanız, geçen haftaki dersimizde derse başlamadan önce sınavla ilgili biraz açıklama yapayım.
+
+5
+00:04:42,663 --> 00:04:44,864
+Mikrofonu açık olan arkadaşımız var herhalde.
+
+6
+00:04:44,984 --> 00:04:47,364
+Aplına teşekkür ediyoruz, kapattım mikrofonunu.
+
+7
+00:04:49,144 --> 00:04:51,764
+Sınavla ilgili bir duyuru yaptım web sayfasında.
+
+8
+00:04:52,692 --> 00:05:11,792
+AVS sayfamdan ona bakabilirsiniz. Sınav tarihi ve sınav kürüyle ilgili bir duyuru. Bir de geçmiş dönemlerde bir Globaden üzerinde Yıldız'ın kurguladığı bir sınav sistemi vardı ya da Yıldız'ın kendi oluşturduğu bir sınav sistemi vardı.
+
+9
+00:05:13,812 --> 00:05:39,012
+Bu dönem farklı bir sınav sistemi, nasıl diyeyim, modüle geçildi. O yüzden modül için size mail gelmiş olması lazım kullanım kılavuzu. Onu dikkatlice okuyun. Sınavda sorun yaşamamak adına o kılavuzu dikkatlice okuyun. Sınavınız 20 soru olup test şeklinde olacak. Her sorunun 5 tane şıkkı olacak ve 4 tane yanlış, 1 tane doğrunuzu götürecek.
+
+10
+00:05:39,507 --> 00:05:53,827
+Sınavla ilgili bilmeniz gereken bu. Bir de konular 5. haftanın sonuna kadar yani ek matris yardımıyla karisel bir matrisin tersinin bulunması konusu sınava dahil olacak.
+
+11
+00:05:54,307 --> 00:06:03,747
+Geçen hafta ve bu hafta gördüğümüz lineer denklem sistemleri ve lineer denklem sistemlerinin çözüm yöntemleri ara sınavımıza dahil olmayacak sevgili arkadaşlar.
+
+12
+00:06:03,747 --> 00:06:05,967
+Bunu ifade ettikten sonra.
+
+13
+00:06:06,548 --> 00:06:19,288
+Geçen hafta ne yapmıştık? Biz lineer denklem sistemlerini tanıttık. Daha sonra lineer denklem sistemleri için genel bir çözüm yöntemi olan Gauss Jordan eliminasyon yöntemini verdik.
+
+14
+00:06:19,408 --> 00:06:34,108
+Aslında Gauss Jordan eliminasyon yöntemi, denklem sistemini matris diliyle ifade ettikten sonra genişletilmiş kat sayılar matrisi dediğimiz, kat sayılar matrisiyle sabitler matrisini yan yana yazarak elde ettiğimiz yeni matrisin
+
+15
+00:06:34,415 --> 00:06:52,836
+Satırca indirgenmiş eşelon forma getirilmesiydi. Onları isterseniz tekrar hatırlayalım. Sonra tek çözümün olması durumunda iki yöntemimiz olacak. Kramer yöntemi ve ters matris yöntemi. Bu iki yöntemi göreceğiz.
+
+16
+00:06:57,043 --> 00:07:08,744
+A x eşittir b şeklinde, ben onu matris diliyle ifade edeceğim. Bir lineer denklem sistemi olsun. Şu A matrisine kat sayılar matrisi diyorduk.
+
+17
+00:07:10,584 --> 00:07:12,043
+Kat sayılar matrisi.
+
+18
+00:07:14,864 --> 00:07:17,923
+X'e bilinmeyenler vektörü diyorduk.
+
+19
+00:07:23,603 --> 00:07:26,723
+ve B'ye de sabitler vektörü.
+
+20
+00:07:30,420 --> 00:07:42,320
+Aslında bu bir lineer denklem sistemi. İşte m tane denklem, m tane bilinmeyenden oluşan bir sistem. Onu matris diliyle bu şekilde ifade etmiş olduk.
+
+21
+00:07:42,840 --> 00:07:56,340
+Geçen haftaki dersi dinlemeyenler varsa o dersi dinlerseniz yu olacak. Burada detayları anlattık. Aslında bu ax eşitir b dediğim şey alt alta yazdığımız m tane denklemden oluşuyor, n tane bilinmeyenden oluşuyor.
+
+22
+00:07:57,875 --> 00:08:08,795
+Genişletilmiş kas sayılar matrisi bu denklem sistemi ile ilişkili olarak genişletilmiş kas sayılar matrisi dediğimiz yeni bir matris ifade ediyorduk.
+
+23
+00:08:08,795 --> 00:08:15,836
+Eğer a, m çarpı n tipinde ise, x tabi burada onların cinsinde yazalım, a eşittir.
+
+24
+00:08:16,244 --> 00:08:38,024
+A, İ, C, onları B yıkmamız lazım. M çarpen tipinde bir matris satırları. Aslında her bir satır bir tane denklemi ifade ediyor. X'imiz, neye tane bilinmeyenimiz var? X1, X2, bu şekilde N'e kadar. Ve B dediğimiz şeyde, onu da şuraya yazalım.
+
+25
+00:08:40,692 --> 00:08:56,011
+B1, nereye kadar? Bm olacak tabii ki. Çünkü m tane denklem var, sağ tarafta m tane sabitim olacak. Bu şekildeki bir lineer denklem sisteminin genişletilmiş katsayılar matrisi, şuna genişletilmiş katsayılar matrisi diyelim.
+
+26
+00:09:04,275 --> 00:09:07,655
+Ya da buna arttırılmış katsayılar matrisi de deniyordu.
+
+27
+00:09:08,096 --> 00:09:13,755
+Bu matrise sadece satır işlemleri uygulayarak, sadece satır işlemleri.
+
+28
+00:09:17,779 --> 00:09:20,019
+Yani göremediğim için ne yazdığını da göremiyorum.
+
+29
+00:09:21,019 --> 00:09:21,460
+Şöyle.
+
+30
+00:09:30,259 --> 00:09:47,159
+Satır işlemleri uyguladıktan sonra şöyle bir denk matris elde edeceğiz. Denk matrisimiz satırca indirgenmiş eşelon formda. Satırca indirgenmiş eşelon formunun ne olduğunu biliyoruz.
+
+31
+00:09:48,275 --> 00:10:08,935
+CD'nin temsil ettiği denklem sistemi ile AB'nin temsil ettiği denklem sistemi aynı çözümlere sahip. Dolayısıyla sol tarafta karmaşık olan bir denklem sistemini daha basit bir denklem sistemine indirgemiş oldum. Orada çözümü yazmam. Hatta burada çözümü çok daha rahat bir şekilde söyleyebileceğiz.
+
+32
+00:10:08,935 --> 00:10:14,855
+Gauss-Jordan eliminasyon yöntemi bu CD matrisi üzerinden gidiyordu. Birinci olarak.
+
+33
+00:10:15,443 --> 00:10:17,403
+Er, rank.
+
+34
+00:10:21,395 --> 00:10:26,975
+A farklı rank AB ise
+
+35
+00:10:26,975 --> 00:10:30,316
+rank AB ise
+
+36
+00:10:31,635 --> 00:10:49,415
+Rank A dediğimiz şey C'deki sıfırdan farklı satır sayısı. Rank AB dediğimiz şey ise bütün olarak C'deki sıfırdan farklı satır sayısı. Dolayısıyla her zaman şu eşitsizlik var. A'nın rankı küçük eşit rank AB olabilir. Daha büyük olması söz konusu olamaz zaten.
+
+37
+00:10:59,635 --> 00:11:08,715
+Söpürden farklı satır sayısı her zaman AB'nin rankından küçük eşittir. Yani aslında bu ne demek istiyor? Farklı olması demek küçük olması halinde.
+
+38
+00:11:08,775 --> 00:11:16,535
+A'nın rankının AB'nin rankından küçük olması halinde sistem tutarsızdır. Sistem tutarsızdır.
+
+39
+00:11:18,816 --> 00:11:22,615
+Yani çözüm yoktur burada. Yani şöyle yazalım. Yani çözüm yoktur.
+
+40
+00:11:26,388 --> 00:11:37,128
+Bir de ikinci olarak, eğer rank A eşittir, rank AB ise,
+
+41
+00:11:39,700 --> 00:11:50,600
+Yani A'daki C'deki sıfırdan farklı satır sayısıyla C'deki sıfırdan farklı satır sayısı birbirinin aynısıysa, biz rankı doğrudan A, B'nin üzerinden söyleyemeyiz.
+
+42
+00:11:50,680 --> 00:11:54,200
+Çünkü orada birbiriyle birbirinin katı olan satırlar olabilir.
+
+43
+00:11:54,580 --> 00:12:00,279
+Satır işlemleri uyguladıktan sonra C, D'de bütün girdileri sıfır olan satırlar olabilir.
+
+44
+00:12:00,279 --> 00:12:04,879
+O yüzden biz doğrudan A'nın üzerinden, A, B'nin üzerinden rank...
+
+45
+00:12:04,879 --> 00:12:17,200
+veremeyiz. Dolayısıyla onun satır eşelon formu ya da satırca indirgenmiş eşelon forma getirmek gerekiyor arkadaşlar. Eğer rank A, rank AB'ye eşitse sistemin çözümü vardır.
+
+46
+00:12:19,340 --> 00:12:21,319
+Sistemin çözümü vardır.
+
+47
+00:12:25,587 --> 00:12:42,227
+Bunu da biz iki madde halinde inceleyeceğiz. Birincisi, eğer rank a eşittir ne ise, rank a eşittir ne ise, sistemin tek çözümü olabilir.
+
+48
+00:12:49,427 --> 00:12:50,748
+Çeviri ve Altyazı M.
+
+49
+00:12:51,220 --> 00:13:03,340
+Neden? Şimdi satır sayısı M idi değil mi? Demek ki A'nın rank, denklem sayısı N olacak. N ile M birbirine eşit olmuş olacak. Örtük olarak bunu oradan çıkarabileceğiz. Denklem sistemimize gittiğimiz zaman.
+
+50
+00:13:03,900 --> 00:13:19,220
+N tane satır var, N tane sütunumuz var. Dolayısıyla M tane denklem, N tane bilinmeyen var. Biz onlara bazı işlemler uyguladık. Fakat tabii bu M, N'den küçük olabilir, büyük olabilir, eşit olabilir.
+
+51
+00:13:19,220 --> 00:13:32,960
+C'deki halinde o denklem sayısı tam olarak neye denk geliyor? Rank'a denk geliyor. Eğer C'deki sıfırdan farklı satır sayısı, buradan onu çıkarıyorum, nihayet olarak onu söyleyebilirim.
+
+52
+00:13:32,960 --> 00:13:38,680
+C'deki ya da C'deki sıfırdan farklı satır sayısı bilinmeyen sayısına eşitse,
+
+53
+00:13:39,059 --> 00:13:59,719
+Yani A'nın sütun sayısına eşitse bilinmeyen sayısı oluyor. Bu durumda sistemin tek çözümü var. Yani o zaman ne olacak? Bu durumda A matrisi karesel bir matris olacak ve onun satırca indirgenmiş eşelon formu bilin matrisi denk olacak. Yani parantez içinde şöyle yazabiliriz. A denktir, ı, n. Bu aynı zamanda o anlama geliyor.
+
+54
+00:14:06,644 --> 00:14:20,804
+Farklı sıfıra da denklem. Bunların hepsi aynı anlaması. Ya da şu anlama da gelir. A üzeri eksi bir, A üzeri eksi bir vardır. Bütün bunları biz çıkarabiliriz. Parantez içinde yazmış olalım.
+
+55
+00:14:21,135 --> 00:14:33,555
+Yani sistemin tek çözümünün olması, A'nın rankının ne olması demek, A matrisinin birim matrise satırca denk olduğunu söyler. Satırca indirgenmiş eşelon formunun birim matrisi olduğunu söyler.
+
+56
+00:14:34,215 --> 00:14:43,935
+Determinantının sıfırdan farklı olduğunu söyler. Bunlar neyse birbirine denk. Birini diğerinin yerine kullanabiliriz. Ya da A'nın tersinin olduğunu söyler. Zaten bütün bunlar birbirini gerektiriyor değil mi?
+
+57
+00:14:49,135 --> 00:14:56,635
+Satürca indirgelmiş eşelon formu birim matrisi edeyse ne yapıyorduk?
+
+58
+00:14:56,875 --> 00:15:05,335
+A'nın yanına birim matrisi yazarak satış işlemleri uyguladığımız zaman sol tarafta işte birim matrisi sağdan sola taşıdığımızda sağ tarafta tersi oluşuyordu.
+
+59
+00:15:05,335 --> 00:15:15,575
+Aynı şekilde ek matris yardımıyla, joint matris yardımıyla ters bulmaya çalıştığımızda A'nın tersinin determinanta bağlı olduğunu görmüştük.
+
+60
+00:15:15,655 --> 00:15:17,135
+Bir bölü determinatta çarptık.
+
+61
+00:15:17,135 --> 00:15:36,715
+Doğru, ek matrisi. Dolayısıyla A'nın determinantının sıfırdan farklı olması gerekiyor ki tersi olsun. Dolayısıyla, aynı zamanda bütün bu üç tane ifade, A matrisi, eğer bir denklem sisteminin kat sayılar matrisi ise, o matrisin, o denklem sisteminin tek çözümünün olmasını gerektirir.
+
+62
+00:15:36,715 --> 00:15:43,355
+Birinci durumumuz, A matrisinin rankı eğer ne ise, yani denklem sayısına eşitse, sistemin tek çözümü.
+
+63
+00:15:43,892 --> 00:15:58,112
+İkinci durum, yani ikinin birinci durumu, ikinin ikinci durumu, eğer rank A eşittir, ona K diyelim, o da tabii ki küçük rank AB.
+
+64
+00:16:02,548 --> 00:16:11,868
+Bu ne demek? Benim K tane denklemim var ve N tane bilinmeyenim var. Dolayısıyla bilinmeyen sayısı, denklem sayısından fazla. Bu durumda
+
+65
+00:16:13,299 --> 00:16:35,159
+Parametreye bağlı çözüm yazacağız. Çünkü tek çözümümüz yok. Bazı değişkenleri bazı değişkenler cinsinden ifade edeceğiz. Peki bunlar kaç tane değişkenle bağlı olarak ifade edeceğiz? Denklem sayısı, eksi, pardon bilmeyen sayısı, eksi denklem sayısı tane değişkene bağlı olarak ben sistemin çözümünü vereceğim.
+
+66
+00:16:39,539 --> 00:16:41,979
+n-k parametreye bağlı,
+
+67
+00:16:43,859 --> 00:16:46,559
+parametreye bağlı,
+
+68
+00:16:48,219 --> 00:16:49,739
+sonsuz tane çözüm vardır.
+
+69
+00:16:51,559 --> 00:16:54,859
+Sonsuz tane çözüm vardır.
+
+70
+00:16:58,899 --> 00:17:13,759
+Genel anlamda aslında bu Gauss-Jordan eliminasyon yöntemi tam olarak bu yorumlardan oluşuyor. Bu iki yorumdan oluşuyor. Yani sistemin çözümünün olmaması ve çözümünün olması. Çözümünün olması halinde iki kısımda inceliyoruz.
+
+71
+00:17:13,759 --> 00:17:24,319
+Gauss-Jordan tam olarak bir lineer denklem sisteminin ve genişletilmiş kat sayılar matrisinin satırca indirgenmiş eşelon formunun
+
+72
+00:17:24,948 --> 00:17:31,068
+İncelenmesi sonucu ortaya çıkardığımız çözümlere dair bir sonuç esasında.
+
+73
+00:17:31,307 --> 00:17:32,908
+Gauss-Gordon eliminasyon yaptığını.
+
+74
+00:17:32,908 --> 00:17:41,908
+Özel olarak eğer A'nın rankı, yani şu A maddesinde verdiğiniz durum varsa, A'nın rankı,
+
+75
+00:17:44,723 --> 00:17:54,443
+Bilinmeyen sayısına eşitse, yani AB'nin rankına eşitse, çok pardon, bilinmeyen sayısına eşitse bu durumda sistemin tek çözümü var dedik.
+
+76
+00:17:54,743 --> 00:18:02,844
+İşte bu duruma has iki tane daha çözüm yöntemi vereceğiz. Onlardan bir tanesi Kramer yöntemi, bir tanesi de ters matris yöntemi.
+
+77
+00:18:03,324 --> 00:18:09,443
+Şu Kramer yönteminden bahsedelim. Nereden geliyor? Sorusu olan var mı arkadaşlar? Sormak istediğiniz soru var mı?
+
+78
+00:18:10,324 --> 00:18:13,324
+Geriye doğru gelip, yandan kalsın bunlar.
+
+79
+00:18:13,324 --> 00:18:16,324
+Var sormak istediğiniz buraya dair.
+
+80
+00:18:23,316 --> 00:18:34,216
+O zaman sistemde çözüm yok oluyordu. B'de de anan bir şey oluyor.
+
+81
+00:18:34,556 --> 00:18:38,356
+[öğrenci], sesini çok iyi alamıyorum. Birazdan mikrofonu yaklaştırabilir misin?
+
+82
+00:18:39,096 --> 00:18:40,876
+Tabii hocam. Şu an daha iyi mi?
+
+83
+00:18:41,456 --> 00:18:42,536
+Biraz daha iyi oldu, evet.
+
+84
+00:18:43,476 --> 00:18:45,316
+Söylemek istiyorum. Birincisinde hocam...
+
+85
+00:18:46,483 --> 00:18:52,983
+Eşit olmadığında, yani rank A, B büyük olduğunda rank A'dan, sistem tutarsız çözüm yok diyorduk.
+
+86
+00:18:53,304 --> 00:18:53,963
+Evet, evet.
+
+87
+00:18:54,403 --> 00:18:56,603
+B şıkkında da büyüklük var.
+
+88
+00:18:57,284 --> 00:18:59,804
+Hayır, B şıkkında bir kere her zaman şu var.
+
+89
+00:19:01,963 --> 00:19:09,344
+B şıkkında büyüklük yok. Bir kere rank A, rank A, B'ye eşit bir kere. Başta O var, şurası elimizde var.
+
+90
+00:19:10,836 --> 00:19:36,836
+Ama A'nın rankı aynı zamanda hiç düşmüyor. Küçük, eşit şey yok yani. Şurada eşitliği düşünmeyelim. Yani ben şu eşitliği, büyük eşitliği niye koydum biliyor musun? A'nın rankı her zaman küçük eşittir rank AB. Bu her zaman var elinde ama tutarsız olması için şu eşit değildir demek aslında küçüktür demek. Yani şu yukarıdaki şeyi sileyim bu kafa karıştırdıysa.
+
+91
+00:19:39,347 --> 00:19:43,687
+Tanımından dolayı A'nın rankı hiçbir zaman AB'nin rankından büyük olamaz.
+
+92
+00:19:43,788 --> 00:19:45,508
+Onu kastetmek için söyledim.
+
+93
+00:19:45,567 --> 00:19:47,847
+O yüzden yani küçük eşittir her zaman.
+
+94
+00:19:48,248 --> 00:19:50,607
+Ama şu birinci madde bize neyi söylüyor?
+
+95
+00:19:50,728 --> 00:19:54,988
+A'nın rankının AB'nin rankından küçük olduğu durumu ifade ediyor esasında.
+
+96
+00:19:55,288 --> 00:19:55,447
+Değil mi?
+
+97
+00:19:55,528 --> 00:19:57,907
+Eşit olmaması demek küçük olması demek.
+
+98
+00:19:58,067 --> 00:20:00,000
+Dolayısıyla A'nın rankı AB'nin rankından...
+
+99
+00:20:00,000 --> 00:20:19,000
+küçükse sistem tutarsız. Fakat burada peşinen diyoruz ki A'nın rankı AB'nin rankına eşit. Yani şunu gerektirmiyor. Denklem sayısının bilinmeyen sayısına eşit olması halini gerektirmiyor. Neden? Neden? İşte geçen hafta verdiğimiz örneklerde düşünün. Şöyle bir...
+
+100
+00:20:19,508 --> 00:20:46,847
+C, D'de 3 tane satır vardı. C, D'de 3 tane satır vardı. Pardon, A, B'de 3 tane satırım vardı. Farklı kalem renkleriyle yazayım. A, B'de şöyle yapalım. 3 tane satır vardı. Onun satırca indirgenmiş eşelon formunda, satırca indirgenmiş eşelon formunda, 2 tane satır olmuş olurdu. Şurada bir tane O, 0 şeyim var, satırım var. Değil mi? Bütün girişleri 0 olan bir satırım var. Dolayısıyla burada ne oldu? A'nın rankı,
+
+101
+00:20:47,284 --> 00:20:50,903
+Rank A, eşittir, rank AB oldu.
+
+102
+00:20:52,964 --> 00:20:54,384
+Rank AB oldu.
+
+103
+00:20:56,084 --> 00:21:02,724
+Fakat denklem sayısından küçük, çünkü başta ben de, pardon, bilinmeyen sayısını burada göremiyorum.
+
+104
+00:21:03,884 --> 00:21:06,564
+Bilinmeyen sayısını, burada N tane de bilinmeyeniniz olsun.
+
+105
+00:21:06,704 --> 00:21:10,104
+N tane bilinmeyen, bilinmeyen.
+
+106
+00:21:10,804 --> 00:21:27,384
+Burada ne tane de denklem olsun. Tamam karesel düşünelim özel olarak. Çünkü biraz gerçekten de o parametreler arasındaki ilişkiyi kurmak için kendiniz biraz sınamanız lazım. Çünkü me ile ne'nin birbirine göre durumu değişiyor. O yüzden ısrar ettim sorunuz var mı diye.
+
+107
+00:21:30,163 --> 00:21:38,723
+Dolayısıyla başta eğer benim kas sayılar matrisim karesel bir matrisse bu ne demek? Başta, en başta neye tane bilinmeyen neye tane denklem var.
+
+108
+00:21:38,723 --> 00:21:51,144
+Ben onun satırca indirgenmiş eşelon formunda, hadi şurada 3 diyelim, neyi 3 olarak alalım, 3 tane bilinmeyen 3 tane denklem olsun. Satırca indirgenmiş eşelon formunda bir tane denklemi yitirdi.
+
+109
+00:21:51,647 --> 00:22:01,268
+Ama burada rank A'da 2, rank AB'de 2 olmuş oldu. Bu neyden küçük olmuş oldu? Denklem sayısını bilinmeyen sayısından küçük olmuş oldu.
+
+110
+00:22:01,428 --> 00:22:19,948
+Bilimli sayısından küçük olmuş oldu. Dolayısıyla ikinci durumda her zaman A'nın rankı A'nın rankına eşitlikerek çözüm arıyorsam bu eşitlik her zaman olacak. Yani C'deki sıfırdan farklı satır sayısıyla toplamda C'deki sıfırdan farklı satır sayısı birbirine eşit olmak zorunda. Tamam mı? Orada anlaşalım.
+
+111
+00:22:20,435 --> 00:22:32,155
+A şıkkında ne diyor? Demek ki satırca indirgenmiş eşelon forma getirdikten sonra da buradaki satırı ben yitirmiyorum. O aynen duruyor. 3'e 3 yine. 3 tane benim diyen 3 tane denklem maddeni.
+
+112
+00:22:32,395 --> 00:22:43,556
+A maddesi onu söylüyor. B maddesi de tam olarak sıfırın olduğu hali. Ya da 2 tane sıfır da olabiliyor. 2 tane satırı da sıfır olabiliyor. Onu ifade ediyor. Herhalde biraz daha anlaşılmıştır. Oldu mu [öğrenci]?
+
+113
+00:22:43,556 --> 00:22:45,416
+Evet.
+
+114
+00:22:45,416 --> 00:22:46,556
+Teşekkür ederim.
+
+115
+00:22:46,835 --> 00:22:47,135
+Tamam.
+
+116
+00:22:48,435 --> 00:22:51,435
+Şimdi kramer yöntemine bakalım arkadaşlar beraber.
+
+117
+00:22:52,475 --> 00:22:54,055
+Kramer yöntemi nereden geliyor?
+
+118
+00:22:54,415 --> 00:22:58,855
+Demek ki şu anda vereceğimiz yöntemler aslında Gauss-Jordan'ın özel halleri.
+
+119
+00:22:58,915 --> 00:23:01,035
+En genel çözüm yöntemimiz Gauss-Jordan.
+
+120
+00:23:01,491 --> 00:23:13,531
+Bütün durumlar orada mevcut. Fakat özel durumda tek çözümün olması halinde, yani o ikinin A'sı halinde, biz kramer ve ters matris yöntemini kullanabiliriz.
+
+121
+00:23:13,591 --> 00:23:20,871
+Şimdi kramerin çıkış yerini vereceğim, ispatını vereceğim. Esasında küçük bir denklem sistemi için ispatı vereceğim.
+
+122
+00:23:20,871 --> 00:23:24,871
+Biz bunu neye tane bilinmeyen, neye tane denklemden oluşan işte...
+
+123
+00:23:25,715 --> 00:23:30,635
+Genel bir denklem sistemine ilerletebiliriz. Elimde şöyle bir denklem sistemi olsun.
+
+124
+00:23:35,251 --> 00:23:55,251
+x2 eşittir b1, bu birinci denklemim olsun. Sonra a21 x1 artı a22 x2 eşittir b2 şeklinde bir denklem sistemim olsun. İki tane bilinmeyeni var, iki tane denklemi var. Şimdi amacım burada x1 ve x2'yi çözmek. Önce x1'i çözelim.
+
+125
+00:23:55,571 --> 00:23:59,051
+x1'i çözelim ve oradan zaten örüntüyü göreceğiz.
+
+126
+00:23:59,172 --> 00:23:59,731
+İşin özünü.
+
+127
+00:23:59,971 --> 00:24:04,491
+Tabi buradaki sistemin, bu sistemin kas sayılar matrisi, A matrisim şu.
+
+128
+00:24:05,531 --> 00:24:09,731
+A11, A12, A21.
+
+129
+00:24:10,675 --> 00:24:26,875
+A2-2 değil mi? X1'in kat sayıları birinci sütunu olacak. A1-1, A2-1. X2'nin kat sayıları da ikinci sütunu olacak. Ve B sabitler matrisin ya da vektörün de B1-B2 şeklinde olacak. Bunlar kenarda dursun.
+
+130
+00:24:27,571 --> 00:24:51,711
+Ortaokulda öğrendiğimiz ya da lisede öğrendiğimiz yok etme metodunu kullanarak ben buradan x1'i çözmeye çalışacağım. Onun için ne yapmam lazım? Bir kere birinci denklemi neyle çarpmam lazım? a22 ile çarpmam lazım. İkinci denklemi de eksi a12 ile çarpmam lazım. Neden? Amacım x ikili ifadeleri yok etmek.
+
+131
+00:24:51,892 --> 00:24:56,572
+Tamam. Çarptıktan sonra sol tarafta birinci denklemim ne olacak? Pardon sağ tarafta.
+
+132
+00:24:56,572 --> 00:25:16,332
+A11 çarpı A22 x1 artı A12 çarpı A22 x2 eşittir. A22 b1 olmuş olur. Birinci denklemim. İkinci denklemim de eksi
+
+133
+00:25:17,011 --> 00:25:35,151
+A12 çarpı A21x1, eksi A12 çarpı A22x2 eşittir, eksi A12b2 olmuş. Bunları taraf tarafa toplayalım.
+
+134
+00:25:35,151 --> 00:25:40,411
+Bu durumda, x1 parantezinde, değil mi?
+
+135
+00:25:40,816 --> 00:25:42,436
+Sağ tarafa yazayım x1'i.
+
+136
+00:25:42,956 --> 00:25:52,536
+a11 çarpı a22 eksi a12 çarpı a21 x1 eşittir.
+
+137
+00:25:53,296 --> 00:25:55,496
+Sağ taraftaki ifadeleri birbirinden çıkardım.
+
+138
+00:25:55,496 --> 00:26:02,676
+a22 b1 eksi a12 b2 şeklinde.
+
+139
+00:26:03,380 --> 00:26:09,260
+Bir ifade elde ettim. Şimdi kat sayıların hepsi, kat sayılar matrisinin elemanları real sayılar.
+
+140
+00:26:09,760 --> 00:26:13,620
+B matrisinin elemanları da real sayılar, sabitler de real sayılar.
+
+141
+00:26:13,720 --> 00:26:18,560
+Dolayısıyla ben buradan x1'i çekersem, x1'i çekersem, x1 eşittir.
+
+142
+00:26:18,560 --> 00:26:25,880
+Ne olacaktır? A2-2, B1-A1-2, B2 bölü.
+
+143
+00:26:26,675 --> 00:26:44,555
+A11 çarpı A22 eksi A12 çarpı A21 olmuş oldu. Artı bu bir real sayı. Şu ifade eleman, hatta buraya yazmıyorum, buraya başka şeyler yazıyorum, hadi yazalım. Eleman real sayı. Şimdi buraya bir bakın arkadaşlar.
+
+144
+00:26:46,235 --> 00:26:54,275
+Burada rasyonel bir sayı var, pay ve paydası olan. Burada matrislerle ilişkilendirebilir misiniz bu ifadeyi?
+
+145
+00:26:54,867 --> 00:26:58,148
+A ve B matrisleriyle ilişkilendirebilir misiniz?
+
+146
+00:27:00,988 --> 00:27:05,567
+Gözlem yapmaya çalışın. Biraz düşünün şöyle 30 saniye. Biraz bakın.
+
+147
+00:27:31,859 --> 00:27:37,419
+[öğrenci], matematikte tesadüf yoktur. Amacım zaten onu görmeni sağlamaktır.
+
+148
+00:27:40,399 --> 00:27:44,339
+Matematikte tesadüf yoktur. İnanmak olmaz matematikte.
+
+149
+00:27:46,179 --> 00:27:51,839
+Tesadüf de olmaz, şans da olmaz. İnancımızın da bir önemi yok matematik için diyorum.
+
+150
+00:27:53,479 --> 00:27:57,899
+Tamamen birbirine bağlı tutarlı önermelerden oluşur.
+
+151
+00:27:58,259 --> 00:28:00,180
+A ise B, B ise C
+
+152
+00:28:03,859 --> 00:28:06,539
+Evet, haklısın, determinant ol.
+
+153
+00:28:07,799 --> 00:28:12,439
+Payda, A'nın determinantı, A matrisinin determinantı. Peki, pay kısmı ne?
+
+154
+00:28:13,939 --> 00:28:14,740
+Pay kısmı.
+
+155
+00:28:39,347 --> 00:28:42,487
+Pay kısmını görebilen var mı? 81 kişi göremedi mi?
+
+156
+00:28:56,596 --> 00:29:16,695
+A'nın birinci stonu yerine beğenim yazılması. Notlara bakmadınız değil mi? Sonuçta sunumlar var web sayfasında. A'nın birinci stonu yerine beğenim. Evet cevap bu. Eğer bunu gerçekten gözlem yaparak bulduysam, tebrik ediyorum. Dersiyi takip ediyorsun demek.
+
+157
+00:29:20,788 --> 00:29:33,427
+Gerçekten de [öğrenci] ve [öğrenci]'in söylediği gibi, A matrisinin determinantı ne arkadaşlar? Köşegen elemanlarını çarp, ters köşegenleri çıkar. Dolayısıyla A11, A22, A22, A21.
+
+158
+00:29:34,347 --> 00:29:47,487
+Pay kısmına bakıyorum, A22 çarpı, yani şöyle bir matris oluşturulmuş, A1 diyelim biz ona. Birinci sütunu B1, B2, ikinci sütunu da A12.
+
+159
+00:29:48,339 --> 00:29:56,279
+A22. Bu matrisin determinantı. O zaman demek ki, şu V'yi sileyim ben.
+
+160
+00:29:59,571 --> 00:30:00,571
+reis ilerim.
+
+161
+00:30:02,211 --> 00:30:10,791
+x1 ifadesi, a1'in determinantı bölü, a'nın determinantı şeklinde ifade edilebiliyor.
+
+162
+00:30:10,911 --> 00:30:16,111
+Ne zaman mümkün? Ancak a'nın determinantının sıfırdan farklı olması haline.
+
+163
+00:30:16,111 --> 00:30:21,371
+Biz nasıl matrislerin determinantından söz ederiz? Karesel matrislerin determinantından.
+
+164
+00:30:22,195 --> 00:30:36,115
+O zaman bir lineer denklem sistemini Cramer yöntemiyle çözebilmem için ya da sistemin tek çözümünün olabilmesi için kat sayılar matrisinin karesel olması ve determinantının sıfırdan farklı olması gerekiyor.
+
+165
+00:30:37,315 --> 00:30:44,235
+Tamam. Eğer kat sayılar matrisi karesel ve determinantı sıfırdan farklıysa bu durumda
+
+166
+00:30:44,307 --> 00:31:04,848
+A'nın birinci tutununu sabitler vektörüyle yer değiştirerek A1 matrisini elde edeceğim. Bu şekilde elde ettiğim matrisin determinantını A'nın determinantına bölersem X1'i elde edeceğim. X2'yi bulmak için ne yapmam lazım? A2'yi önce tanımlayalım. A2'yi yazalım. A2'de şu olsun.
+
+167
+00:31:07,059 --> 00:31:11,819
+Aslında örüntüyü görmek için bunu da yapmam gerekirdi. X2'yi de çözmeye çalışmam gerekirdi.
+
+168
+00:31:12,980 --> 00:31:34,099
+A2'de arkadaşlar şöyle bir matris. A1, 1, A2, 1, B1, B2. Olmak üzere X2 eşittir. Determinant A2 bölü determinant A. Yine A'nın determinantı sırtından farklı. En genel anlamda.
+
+169
+00:31:34,451 --> 00:31:39,632
+En genel anlamda. Elimizde şöyle bir lineer denklem sistemi olsun.
+
+170
+00:31:39,852 --> 00:31:46,372
+Tabii dikkat ederseniz, n tane denklemin var, n tane bilinmeyenin var.
+
+171
+00:31:46,832 --> 00:31:49,692
+Sütun sayısıyla satır sayısı aynı.
+
+172
+00:31:50,632 --> 00:31:56,791
+N tane satır, n tane, tabii burada sütunlardan söz edemeyiz, kat sayılar matrisini yazdıktan sonra.
+
+173
+00:31:57,311 --> 00:32:00,352
+N tane denklem, n tane bilinmeyen demem daha doğru.
+
+174
+00:32:01,428 --> 00:32:07,268
+Bu şekilde bir denklem sistemi olsun elimizde ve A'da kat sayılar matrisi olsun.
+
+175
+00:32:07,428 --> 00:32:11,168
+Tabii ki bu n çarpı n tipinde bir karesel matris.
+
+176
+00:32:11,168 --> 00:32:21,128
+Eğer A'nın determinantı sıfırdan farklı ise bu durumda kramer yöntemini uygulayabilirim.
+
+177
+00:32:21,608 --> 00:32:23,448
+Artık yukarıda biz örüntüyü de gördük.
+
+178
+00:32:23,548 --> 00:32:26,548
+İşin çıkış yerini de biliyoruz, motivasyonu da biliyoruz.
+
+179
+00:32:26,608 --> 00:32:29,428
+O yüzden teorisini böyle çok rahat bir şekilde gelebilirim.
+
+180
+00:32:29,428 --> 00:32:51,768
+Yerleştirebiliriz. Artık o bize basit gelir. Çünkü işin çıkış yerini biliyoruz. Değil mi? Aİ matrisimiz, Aİ matrisi, A'nın inci sütununu B ile değiştirilmiş hali olsun. Şuraya B sabitlerini, eğer A'nın inci sütununa yazarsam, inci sütununu ben siliyorum, B'yi yazıyorum. Bu şekilde Aİ matrisini elde ediyorum.
+
+181
+00:32:57,619 --> 00:33:11,199
+A'nın inci sütununun, B ile değiştirilerek, inci sütunu diyelim, olmadı, düşük oldu.
+
+182
+00:33:11,899 --> 00:33:22,159
+A'nın inci sütunu, B sabitler vektörü ile değiştirilerek elde edilen, şöyle birimde, sabitler,
+
+183
+00:33:23,796 --> 00:33:26,875
+vektörü ya da matrisi ile
+
+184
+00:33:26,875 --> 00:33:29,196
+değiştirilerek
+
+185
+00:33:33,268 --> 00:33:34,288
+elde edilen
+
+186
+00:33:34,288 --> 00:33:38,467
+en çarfen tipinde
+
+187
+00:33:38,467 --> 00:33:42,087
+matris.
+
+188
+00:33:45,428 --> 00:34:06,328
+Yani A1 dediğim birinci sütunu B ile değiştir, A2 dediğim ikinci sütunu B ile değiştir. Geriye kalan en eksi bir tane sütun A ile aynı. Sadece bir tane sütunla sabitleri yazıyor. Bu durumda X, İ eşittir. Determinant A, İ bölü A'nın determinantı.
+
+189
+00:34:06,640 --> 00:34:20,300
+Tabi burada i eşittir. 1, 2, nereye kadar? N'ye kadar. Bu şekilde bütün bilinmeyenlerimi çözebilirim. Tek çözüm olması halinde sevgili arkadaşlarım. Var mı sorun? Sormak istediğiniz bir şey var mı?
+
+190
+00:34:28,148 --> 00:34:29,688
+Gramer yöntemi tam olarak bu.
+
+191
+00:34:29,688 --> 00:34:30,088
+Evet.
+
+192
+00:34:30,528 --> 00:34:31,208
+Neyse olabilir mi?
+
+193
+00:34:31,668 --> 00:34:37,868
+Şimdi biz bunu tek çözüm halinde yapıyormuşuz ya, eğer sonsuz çözüm olursa nasıl bir çözüm ediyoruz?
+
+194
+00:34:38,807 --> 00:34:44,408
+Sonsuz çözüm olursa şöyle bir şey, bu durumda A'nın determinatı sıfır olacak.
+
+195
+00:34:44,768 --> 00:34:47,387
+A'nın determinatı, hatta determinantdan söz edemeyeceğim.
+
+196
+00:34:47,528 --> 00:34:51,688
+Yani her halükarda şöyle, A'nın determinatının sıfır olduğunu söyleyebilirim.
+
+197
+00:34:53,487 --> 00:35:19,247
+Yani şöyle, bir kere M, büyük M olabilir, M eşit N olabilir, M küçük N olabilir. Yani denklem sayısıyla bilinmeyen sayısı. Ama özel halde her halükarda rank A, rank ya da AB diyelim, rank AB, küçük,
+
+198
+00:35:21,907 --> 00:35:43,327
+eşit n olacak, yani bilinmeyen sayısına, küçük eşit olacak. Dolayısıyla ben a'yı her halükarda bir karesel matrisi tamamlayabilirim. Yani m, n'den büyük olsa bile, satırca indirgenmiş eşelon formunda a, b'yi, ben satırca indirgenmiş eşelon forma getirdim, c, d şeklinde.
+
+199
+00:35:43,775 --> 00:35:57,416
+Dolayısıyla, eğer M, N'den büyükse, zaten denklem sayısı bilinmeyen sayısından fazlaysa, kesinlikle bazı denklemler birbirinin katı. Bunu, N'ye eşit olacak şekilde ya da N'den daha küçük olacak şekilde denklemler elde etmiş olacağım.
+
+200
+00:35:57,416 --> 00:36:05,215
+Bu durumda eğer N'den küçükse, R dediğim şey, şuraya R diyelim, rank diyelim buraya, R eşittir işte, şu ifade olsun.
+
+201
+00:36:05,492 --> 00:36:09,532
+Rank AB. Bu da rank A olsun aynı zamanda.
+
+202
+00:36:10,172 --> 00:36:12,892
+R eşittir, rank A diyelim.
+
+203
+00:36:14,772 --> 00:36:17,452
+Rank A diyelim, şu başı silin biraz karışık oldu.
+
+204
+00:36:22,472 --> 00:36:24,952
+R eşittir, rank A dedi.
+
+205
+00:36:24,952 --> 00:36:32,452
+Eğer bu ifade rank N'den küçükse, bu durumda ben A matrisinin
+
+206
+00:36:33,811 --> 00:36:56,851
+N'den şurada diyelim, R tane satır var. Şurada N eksiği, R tane satıra ben sıfırlar yazarak, sıfırlar yazarak, karesel bir matrise tamamlayabilirim. Yani bunu N çarpı N tipinde bir matris yapabilirim. Buradan da ne olmuş olur? A'nın determinantının sıfır olduğunu söylemiş olurum. Aslında A karesel bir matris değil ama bu durumda kareselmiş gibi düşünebilirim.
+
+207
+00:36:59,347 --> 00:37:10,447
+Eğer sistem tutarsızsa ya da parametreye bağlı çözüm varsa bir kere o durumda A'yı ben determinantı sıfır olan bir karesel matris olarak düşünebilirim.
+
+208
+00:37:10,528 --> 00:37:13,108
+Yani bunda bir mahsur yok. Burada bir sıkıntı yok.
+
+209
+00:37:13,440 --> 00:37:28,260
+Sistem tutarsızsa yine aynı şekilde düşünülebilir. Sistem tutarsızsa zaten orada bambaşka bir şey çıkıyordu. Denklem sisteminde sıfır eşittir, A gibi, A sıkıdan farklı bir çelişki çıkıyor. Sistemin tutarsız olması halinde.
+
+210
+00:37:28,639 --> 00:37:36,279
+Yani bir denklemde aradaki ilişki, bilmeyenler arasındaki ilişki, diğer denklemde bunlar birbirini tutmuyor. Böyle bir tutarsızlık var.
+
+211
+00:37:36,851 --> 00:37:54,219
+Dolayısıyla sadece tek çözüm olması halinde biz kramer yöntemini uygulayabiliriz. Sonsuz çözümü zaten bizim burada gözlemleme, pardon, sonsuz çözümü değil, çözümsüzlük halinde bizim kramer ile yorumlama şansımız da yok. Aslında biz bunu determinanta bağlı olarak ifade ediyoruz.
+
+212
+00:37:54,708 --> 00:38:07,988
+determinanta bağlı olarak ifade ediyoruz. O yüzden tutarsızlık halini bizim Kramer'de açıkçası yorumlayabilme şansımız yok. Hani böyle yaptığım gibi şey düşünebiliriz, öyle kendimizce kurgular yapabiliriz ama...
+
+213
+00:38:08,724 --> 00:38:17,324
+Kramer yönteminden yola çıkarak ben tutarsızlık durumunu yorumlayamam, onu söyleyeyim. Şunu bileceğiz, sadece tek çözüm olması halinde.
+
+214
+00:38:17,724 --> 00:38:24,684
+A'nın denklem sisteminin, kat sayılar matrisinin, determinantının sıfırdan farklı olması halinde bu yöntemi uygulayabilirim.
+
+215
+00:38:24,764 --> 00:38:33,624
+Demek ki Kramer'i uygulayıp uygulayamayacağınıza karar verebilmek için bir kere kat sayılar matrisinin, determinantını hesaplamanız lazım.
+
+216
+00:38:33,624 --> 00:38:36,724
+A seçtirme gibi düşünüp A'nın determinantı.
+
+217
+00:38:36,724 --> 00:38:49,003
+önce hesaplayacaksınız. Bu sıfırdan farklıysa devam edebileceksiniz. L0 ise, evet [öğrenci] bakmamış. Tebrikler [öğrenci].
+
+218
+00:38:51,064 --> 00:39:01,704
+Şimdi bir örnek verelim. Arkadaşlar, bunu hayır. Bunu ifade ettik zaten. Şöyle bir denklem sistemi var elimizde.
+
+219
+00:39:03,987 --> 00:39:15,347
+Vaktimiz var mı? Vakit şey olursa bırakırız zaten. Bir 15 dakika herhalde biter örnek. Bitmezse de ikinci ders devam ederiz. Kaldığımız yerden.
+
+220
+00:39:16,847 --> 00:39:26,047
+Şimdi A matrisi ne burada? A matrisini yazalım. A matrisi. Hatta onu doğrudan önce matrisi yazayım. Sonra determinant yaparım onu.
+
+221
+00:39:28,980 --> 00:39:40,920
+x-3, x-1'in katı sayıları, x-x-x-x-2'nin katı sayıları, 3, a-1, 4, ve x-3'ün katı sayıları, 3 tane bilinmeyenin var, 3 tane denklemin var burada.
+
+222
+00:39:41,619 --> 00:39:52,039
+1, 2, x-1. Bir kere mesela 2 tane denklem, 3 tane bilinmeyen olsaydı orada kremerden söz edemezdim.
+
+223
+00:39:52,596 --> 00:40:05,975
+Ben otomatikman orada üçüncü denklemi sıfır sıfır sıfır gibi düşünebilip, düşünüp kat sayılar maddesi sanki karesel bir maddes ama son satırı sıfırlardan olduğu gibi determinant doğrudan sıfır deyip oradan hiç uygulayamazdım.
+
+224
+00:40:07,355 --> 00:40:15,496
+Şimdi burada kramer uygulayabilme ihtimalim var. Neden? Kat sayılar maddesinin determinantın sıfırdan farklı çıkma ihtimali var.
+
+225
+00:40:17,916 --> 00:40:19,416
+Determinantı hesaplayalım.
+
+226
+00:40:19,764 --> 00:40:42,664
+Burada cofaktör ekspansiyonu yapabilirsiniz, Laptas açılımı. Ben ne yapacağım? İkinci satırı kullanarak ne yapmaya çalışacağım? Şu 2 ve eksi 3'ten kurtulmaya çalışacağım. Neden? Birinci sütunda iki tane sıfır mı olacak. Oraya göre Laptas açılımı yaptığımda daha rahat hesaplayacağım. Hem bu geriye dönüp sizin için pratikte olmuş olur.
+
+227
+00:40:44,244 --> 00:40:45,664
+İşlemleri yazmıyorum.
+
+228
+00:40:46,356 --> 00:41:10,716
+Eşit olacak. Ne yaptım? Eksi iki katını birinci satıra ekledim bir kere. İkinci satırın eksi iki katını birinci satıra ekledim. O zaman yeni birinci satırın sıfır, eksi iki katını ekledim. Beş, eksi dört artı bir, eksi üç. Bu şekilde. İkinci satırı aynen yazdım. Bir, eksi bir, iki. Lütfen dikkatli takip edin. Hatam olursa uyarın.
+
+229
+00:41:11,891 --> 00:41:28,552
+Çünkü hata üzerinde gidersek işin içinden çıkamayız. Şurası 0. 3 ile çarpıp topladım. İkinci satır 3 ile çarpıp, üçüncü satıra ekledim. 3 ile çarpıp topladım 1. 3 ile çarpıp topladım 5. Oldu. Şimdi ne yapıyoruz?
+
+230
+00:41:29,940 --> 00:41:43,079
+Birinci tutuna göre lafla saçıyorum. Şu iki girdinin, A11 ve A31'in, kofaktörlerine bakmama gerek yok çünkü girdiler sıfır. O yüzden sadece A12'ye bakmam yeterli.
+
+231
+00:41:43,079 --> 00:41:57,940
+A12'nin işareti, o da eşittir diyelim, eksi bir üzeri A21'den anlıyor. A21 çarpı, A21'in bir çarpı, geriye kalanının determinantı, yani şurayı ve şurayı kapatıyoruz.
+
+232
+00:41:57,940 --> 00:42:17,860
+Kapattıktan sonra 5, eksi 3, 1 ve 5. Buradan da 5 kere 5, 25, artı 3, eksi 3, eksi ile çarpım, artı 3, 28, eksi 28 olmuş. Eksi 28, bu da sıfırdan farklı. Bu durumda ne yapabilirim ben?
+
+233
+00:42:18,483 --> 00:42:39,084
+Kramer yöntemini uygulayabilirim ki zaten soruda ne diyor? Kramer yöntemi ile çözün diyor. Demek ki determinant sıfırdan farklı. Onu dediyse, tabii bazen aklınızı çeyemek için de öyle diyebilir. Kramer ile çözün ama determinant sıfırı siz yine de çözmeye çalışırsınız falan. Bir bocalama durumu oldu orada.
+
+234
+00:42:41,331 --> 00:42:55,411
+Şimdi ne yapmam gerekiyor? A1'e bakalım. A1 dediğimiz şey, hemen bu matris üzerinden yine gideceğim arkadaşlar. Tekrar tekrar ya da yeniden yazalım. A1 dediğimiz şey. A1. Birinci sütunu sabitlerle değiştirdim.
+
+235
+00:42:55,411 --> 00:43:05,251
+Hatta determinant alalım onu da. 1, 3, eksi 3, 4. Sonra gerisi aynı olacak.
+
+236
+00:43:05,907 --> 00:43:15,987
+3-1, 4, 1, 2, 1. Yaptığım şey, sabitleri birinci sütun olarak yazdım.
+
+237
+00:43:16,187 --> 00:43:18,907
+Birinci sütunun yerine sabitleri yazdım.
+
+238
+00:43:19,147 --> 00:43:23,527
+Buradan baktığımızda ne yapacağım? Birinci satırın 3 katını ikinci satıra ekledim.
+
+239
+00:43:23,607 --> 00:43:24,967
+Birinci satıra aynen yazalım.
+
+240
+00:43:24,967 --> 00:43:29,027
+1, 3, 1, 0, 9,
+
+241
+00:43:29,568 --> 00:43:43,528
+Eksi 1, 8, şurası da 5 oldu. Sonra, eksi 4 katını son satıra ekledim. 0, eksi 12, şurası eksi 8 oldu. Eksi 4, eksi 1, eksi 5 oldu.
+
+242
+00:43:43,988 --> 00:43:46,788
+Burası da ne geldi? Hemen görüyorum şurada.
+
+243
+00:43:48,239 --> 00:43:54,899
+Tabii şuraya birinci tutuna göre Laplace açılımı uyguladığımızda, girdileri, kofaktörlerine gerek yok.
+
+244
+00:43:55,019 --> 00:44:01,059
+Sadece 1 çarpı 1, eksi 1 üzeri 1 artı 1 çarpı 1 çarpı içerisi, bunlar birbirinin katıdır.
+
+245
+00:44:01,139 --> 00:44:06,319
+Dolayısıyla A1'in determinantı ne olmuş oldu? Eşittir, sıfır olmuş olur.
+
+246
+00:44:06,460 --> 00:44:09,179
+Şuraya yazalım. A1'in determinantı eşittir, sıfır.
+
+247
+00:44:10,399 --> 00:44:14,440
+A2'nin determinantını hesaplayalım. A2 eşittir.
+
+248
+00:44:16,019 --> 00:44:36,400
+Sütun aynen duracak. 2, 1, eksi 3. Şöyle renkli yazalım. Ne yaptığınız belli olsun. İkinci sütunu 1, eksi 3, 4 ile değiştirdim. Sonra, üçüncü sütun yine aynı. 1, 2, eksi 1.
+
+249
+00:44:36,884 --> 00:45:04,184
+Yine ikinci satırı kullanarak yapıyorum. Tabi isteyen birinci satırı kullanarak yapabilir. Ya da istediğiniz gibi strumlarda da işlemler yapabilirsiniz. Hiç önemli değil. Ben burada bir gördüğüm için hoşuma gidiyorum. Yani rahat işlem yaparım diye öyle işlem yapıyorum. Ne yaptım? Eksi iki katını birinci satıra ekledim. Sıfır, eksi iki, yedi oldu şurası değil mi? Altı artı bir, eksi iki katı, eksi üç oldu. Kendisini aynen yazdım. Bir, eksi üç, iki.
+
+250
+00:45:04,884 --> 00:45:31,804
+3 katını son satıra ekledim. 2. satırın 3 katını 3. satıra ekledim. 0, 3 katı, eksi 9, eksi 5 oldu şurası. 3 katı, eksi 6, eksi 7 olmuş oldu. Yine ne yaptık? Birinci şuna göre kufaktör ekspansiyonu yaptım. Dolayısıyla işaretim eksi olacak. İşaretim eksi olacak. Buradan eşittir. Eksi 1.
+
+251
+00:45:32,340 --> 00:45:53,440
+çarpı, eksi bir üzeri iki artı birden, eksi bir çarpı, bir çarpı, geriye kalan, determinant, yedi, eksi üç, eksi beş, eksi yedi. Şuradan eksi kırk dokuz, artı on beş.
+
+252
+00:46:00,851 --> 00:46:02,667
+Bir hata olabilir burada.
+
+253
+00:46:07,731 --> 00:46:08,992
+Burada bir hata var gibi.
+
+254
+00:46:10,311 --> 00:46:12,372
+Tekrar işlemlerini kontrol edeyim.
+
+255
+00:46:16,563 --> 00:46:40,403
+1-3, 4, 2-1-3, 1-2-1, eksi 2 katını ekledik, 0, eksi 2, 6-7, eksi 2, eksi 4 artı 1, eksi 3, şurası 3 katını ekledik, 0, 3 katı, eksi 9 artı 4, eksi 5, 3 katı, evet burada hatan var, 6,
+
+256
+00:46:42,900 --> 00:46:46,140
+Eksi bir beş olacak şurası. Şurada hata mı var?
+
+257
+00:46:55,731 --> 00:47:21,771
+Arkadaşlar da yazmışlar. Teşekkür ediyorum. Şurası 5 olacak. 35, 7 kere 5, 35, eksi 15 ne olacaktır? 20, eksi 20 olmuş oldu. Eksi 20. Tamam. Bunlar bu şekilde yazmış oldu. Şimdi biraz da yer açalım. Yazılara çok ihtiyacımız yok. Evet.
+
+258
+00:47:22,612 --> 00:47:27,892
+A3'ü hesaplayalım. Son matrisini determinant olarak yazıyorum.
+
+259
+00:47:30,452 --> 00:47:44,572
+2, 1, eksi 3, 3, eksi 1, 4, son satırı 1, eksi 3, 4.
+
+260
+00:47:49,268 --> 00:47:54,268
+Aynı şekilde yukarıda yaptığım işlemlerin aynısını uyguluyorum bu matlisede 1'den dolayı.
+
+261
+00:47:55,327 --> 00:48:04,248
+Şurası ne oldu? 0, eksi 2 katını ekledik, 5, eksi 2 katını ekledik, 7.
+
+262
+00:48:06,288 --> 00:48:15,387
+Şurası 1, eksi 1 ve eksi 3, 3 katını ekledik, 0.
+
+263
+00:48:15,952 --> 00:48:22,772
+3 katını ekledik, 1, 3 katını ekledik, eksi baş.
+
+264
+00:48:27,572 --> 00:48:42,931
+Dolayısıyla, eksi işaretim var başta. Kalan şey ne? 5, 7, 1, eksi 5. Eksi 25, eksi 32, 32 olmuş oldu.
+
+265
+00:48:45,431 --> 00:48:51,972
+Eksi 25, eksi 7, eksi 32, başta eksim vardı, 32 olmuş oldu.
+
+266
+00:48:54,739 --> 00:48:55,579
+Eşittir.
+
+267
+00:48:56,419 --> 00:49:01,399
+A1'in determinantı bölü, A'nın determinantı, o da eşittir.
+
+268
+00:49:01,559 --> 00:49:03,679
+A1'in determinantını şurada bulmuştuk.
+
+269
+00:49:04,439 --> 00:49:06,139
+A1'in determinantı sıfırmış.
+
+270
+00:49:07,179 --> 00:49:11,119
+Sıfır bölü, eksi yirmi sekiz eşittir sıfır.
+
+271
+00:49:11,959 --> 00:49:13,159
+X2 eşittir.
+
+272
+00:49:13,819 --> 00:49:18,259
+A2'nin determinantı bölü, A'nın determinantı, o da eşittir.
+
+273
+00:49:18,259 --> 00:49:20,379
+Eksi yirmi bölü,
+
+274
+00:49:20,592 --> 00:49:33,972
+eksi 28, 4 de sadeleştirdiğimizde eksiler de gitti, 5 bölüm, 7, ve son olarak x3, şu aralara birbir koymak, şık olabilir.
+
+275
+00:49:35,032 --> 00:49:44,771
+a3, determinant bölüm, a'nın determinantı o da, 32'nin determinantı, pardon, a3'nin determinantı 32 bölüm.
+
+276
+00:49:45,199 --> 00:49:59,979
+Eksi 28, burayı da yine 4 ile ne yaptığımızda, sadeleştirdiğimizde, eksi 8 bölüyü, eksi 8 bölüyü de olarak bulmuş olur. Bu bizim tek çözümüz.
+
+277
+00:50:00,000 --> 00:50:18,420
+Unique Solu İşim dediğimiz durum, tek çözüm var, başka da çözüm yok, parametre falan işin içinde yok. Demek ki tek çözüm varsa, tabii bunu kararlaştırabilmek için kat sayılamatrisinin determinantının sıfırdan farklı olduğunu söylemem gerekiyor. Krama yöntemini gönül rahatlığıyla uğrunda ediyoruz.
+
+278
+00:50:18,420 --> 00:50:23,680
+Bir ara verelim, 10 dakika ara. Sorularınız varsa ben buradayım, sorularınızı sorabilirsiniz.
+
+279
+00:50:24,244 --> 00:50:31,244
+Daha sonra ters matris metoduyla devam edeceğiz. Görüşmek üzere.
+
+280
+01:01:41,876 --> 01:01:45,516
+Tekrar merhabalar arkadaşlar. Kaldığımız yerden devam edelim.
+
+281
+01:01:46,496 --> 01:01:58,196
+Kramer yönteminden sonra, lineer denklem sisteminin her tek çözümü varsa, biz bir matrisin tersiyle çarpmak suretiyle yine çözümü bulabiliriz.
+
+282
+01:02:00,276 --> 01:02:03,316
+Şöyle boş bir yer bulayım ifade etmek için.
+
+283
+01:02:07,347 --> 01:02:08,947
+Örneğimizi çözmüştük zaten.
+
+284
+01:02:11,387 --> 01:02:20,327
+Hers matris yöntemi yine elimizde ax, ax, eşittir b şeklinde bir denklem sistemi olsun.
+
+285
+01:02:20,327 --> 01:02:33,447
+Burada a eşittir, a, i, j, n çarpı n tipinde karesel, x eşittir, x bir,
+
+286
+01:02:34,291 --> 01:02:48,651
+xn ve b de aynı şekilde, biraz bold yapalım, b1, bn şeklinde, n çarpı bir tipinde, bu da n çarpı bir tipinde.
+
+287
+01:02:50,871 --> 01:02:51,491
+Dolayısıyla,
+
+288
+01:02:53,012 --> 01:03:00,172
+a ile x'i çarpabilirim. Çünkü sütun sayısı satır sayısına eşit ve sonucu gerçekten de yani çarpı bir tipinde oluyor değil mi?
+
+289
+01:03:00,211 --> 01:03:06,672
+a'nın satır sayısı çarpı x'in sütun sayısı şeklinde ve b'ye şeklinde bir vektöre eşit olmuş olur.
+
+290
+01:03:06,672 --> 01:03:20,231
+Eğer a'nın determinantı sıfırdan farklı ise, determinant a sıfırdan farklı ise, a üzeri eksi bir nedir? Vardır bu durumda.
+
+291
+01:03:21,907 --> 01:03:30,647
+İki hafta önce gördüğümüz, işte kofaktör ekspansiyonundan bunu biliyoruz. Neydi? Çünkü a üzeri eksi bir, a üzeri eksi bir eşittir kofaktör ekspansiyonu diyorum.
+
+292
+01:03:30,747 --> 01:03:38,807
+Adjoint matris yardımıyla ters bulmada eşittir bir bölü a'nın determinantı çarpı ek a şeklindeydi.
+
+293
+01:03:39,647 --> 01:03:44,607
+Dolayısıyla eğer a'nın determinantı sıfırdan farklıysa, biz bu tersten söz edebiliriz.
+
+294
+01:03:45,067 --> 01:03:47,447
+Bir bölü a'nın determinantı anlamlı hale gelir.
+
+295
+01:03:49,108 --> 01:04:01,608
+Bu durumda, AX eşittir B neklem sistemini, biz sol taraftan A'nın tersiyle çarpalım. Her iki tarafı A'nın tersiyle çarpalım.
+
+296
+01:04:04,348 --> 01:04:06,028
+A'nın tersiyle çarpalım.
+
+297
+01:04:06,028 --> 01:04:07,328
+A üzeri eksi bir.
+
+298
+01:04:09,968 --> 01:04:12,608
+Yazmak istediğim şeyi, hatta yanlış yere yazıyorum.
+
+299
+01:04:13,008 --> 01:04:14,128
+A üzeri eksi bir B.
+
+300
+01:04:14,675 --> 01:04:20,375
+Bu durumda ne olacak? Matris çarpımının birleşme özelliğini kullanarak parantezleri yer değiştirebilirim.
+
+301
+01:04:20,455 --> 01:04:29,095
+Bu durumda A üzeri eksi 1 çarpı A çarpı X eşittir. A üzeri eksi 1 B olacak.
+
+302
+01:04:30,195 --> 01:04:36,675
+Bir adım daha gidelim. Şurası birim matris değil mi? Bir matrisi tersiyle çarparsam birim matris elde edelim.
+
+303
+01:04:42,068 --> 01:05:02,768
+B olmuş oldu. I, M, N çarpan tipinde bir matris. X vektörüyle çarptığında kendisini verecek. Sonuç itibariyle I, M ile çarpmam kendisini vereceği için X eşittir. A üzeri eksi bir B şeklinde sistemin çözümünü bulmuş olduğum amacım. X vektörünü bulmakta değil mi?
+
+304
+01:05:03,923 --> 01:05:19,983
+İki tane vektör eşitse karşılıklı elemanları eşittir. X1 birinci elemana eşit olacak. X2 ikinciye, X3 üçüncüye, Xm eninciye eşit olacak. Bu şekilde karşılıklı elemanlar birbirine eşit olmuş olacak arkadaşlar.
+
+305
+01:05:25,844 --> 01:05:41,844
+Kat sayılar matrisi, karesel bir matrisse, ve determinatı sıfırdan farklı ise, bu durumda ben sabitler vektörün sol taraftan A'nın tersiyle çarpmak suretiyle x'i çıkarabilirim, x'i bulabilirim.
+
+306
+01:05:42,983 --> 01:05:48,684
+Burada bulmamız gereken şeyler ne? Bir, A'nın determinatını hesaplamalıyız.
+
+307
+01:05:51,284 --> 01:06:08,003
+İkinci adıma geçebilirim. Ne yapacağım? a üzeri eksi bir çarpı b'yi hesaplayacağım. Üçüncü adımda a üzeri x eşittir bu ifade olacak. Yani bununla yazabilirim. a üzeri eksi bir, algoritmik olarak yazabiliriz. a üzeri eksi bir çarpı b, x eşittir olmuş olacak.
+
+308
+01:06:09,584 --> 01:06:11,884
+Aynı örneği bu yöntemle de çözelim.
+
+309
+01:06:17,427 --> 01:06:23,327
+Evet, şurada. Ters matris yöntemini kullanarak aynı örneği çözelim.
+
+310
+01:06:23,508 --> 01:06:29,528
+Tabii öncelikle ne yapmamız lazım? Bir kere A'nın determinantını hesaplamıştık. A matrisi eşittir.
+
+311
+01:06:44,275 --> 01:06:48,875
+2-1 şeklinde, 3x3 tipinde bir matris.
+
+312
+01:06:49,415 --> 01:06:57,395
+A'nın determinantının, onu şuraya yazayım, aşağıya başka şeyler yazacağım için, A'nın determinantını biz eksi 28 olarak bulmuştuk.
+
+313
+01:06:57,835 --> 01:07:00,855
+O yüzden ters matris yöntemini uygulayabiliriz.
+
+314
+01:07:02,155 --> 01:07:04,355
+Öncelikle A'nın tersini bulalım.
+
+315
+01:07:04,355 --> 01:07:09,855
+A'nın tersini bulabilmek için yukarıda yazdığımız A'nın tersi eşittir.
+
+316
+01:07:10,228 --> 01:07:19,268
+Eksi 1 bölü 28 çarpı A'nın ek matrisi, adjoint matrisi. O zaman adjoint matrisi hesaplayalım.
+
+317
+01:07:20,728 --> 01:07:25,428
+Adjoint matrisi hesaplayabilmek için de bütün kofaktörleri bulmam lazım.
+
+318
+01:07:26,248 --> 01:07:29,188
+9 tane kofaktör A1'dir, işaretle pozitif.
+
+319
+01:07:29,628 --> 01:07:35,847
+Dolayısıyla birinci satır ve birinci satır ve birinci satırı kapatarak elde ettiği matrisin determinantı.
+
+320
+01:07:35,847 --> 01:07:36,307
+Eksi 1.
+
+321
+01:07:36,755 --> 01:07:56,315
+2, 4, 1, buradan 2, 8, 6 gelmiş oldu. Bilerek sütun olarak yazacağım. Çünkü kofaktör dediğimiz şey, ek A, onu da şuraya yazalım, ek A eşittir.
+
+322
+01:07:57,655 --> 01:08:02,635
+A, i, j kofaktörlerinin oluşturduğu matrisin transpozunu eşittir.
+
+323
+01:08:02,804 --> 01:08:15,364
+Önce kofaktörlerin hepsini bulacağım, sonra ona bir matris yazacağım, onun transpozunu elde edeceğim. Ben o yüzden transpoz olarak doğrudan yazıyorum şöyle yazarken. Daha rahat ifade edebilelim.
+
+324
+01:08:15,483 --> 01:08:25,404
+A1-2, yani şu elemanın ben kofaktörünü hesaplıyorum, işareti negatif bir kere. Birinci satır ve ikinci sütunu kapattım bu defa.
+
+325
+01:08:30,068 --> 01:08:32,368
+Şurada bir yanlışlık yaptı mı diye bakıyorum.
+
+326
+01:08:34,128 --> 01:08:35,308
+Evet, bir eksi iki.
+
+327
+01:08:36,308 --> 01:08:45,148
+Birinci satır, ikinci tutunu kapattığımızda, şurası bir, iki, eksi üç, eksi bir.
+
+328
+01:08:46,248 --> 01:08:54,708
+Buradan da, eksi bir, artı altı, ne gelecek? Beş, sonuç tutaylı, eksi beş olmuş oldu.
+
+329
+01:08:57,555 --> 01:09:21,735
+Bir hata var mı? Şurada şey yanlış yazmış olabilir miyim? 2, 1, eksi 3, 3, eksi 1, 4, 1, 2, eksi 1. Kontrol edelim işlemlerimizi. Şurada tekrar kapattığımızda, eksi 1, 2, 4, eksi 1, 1, şurada hata var.
+
+330
+01:09:25,395 --> 01:09:29,835
+Tuhaflık vardı. 1-8, şurası ne olacaktır?
+
+331
+01:09:30,815 --> 01:09:34,235
+Eksi 7 olacak arkadaşlar. Eksi 6 değil, eksi 7.
+
+332
+01:09:36,195 --> 01:09:38,315
+[öğrenci] teşekkürler. [öğrenci] de yazmış.
+
+333
+01:09:39,855 --> 01:09:47,635
+İki tane ekran olduğu için sağa dönüp şeye bakmam lazım, mesajlara. Diğer ekranda size yazdığım sunu ekranı var.
+
+334
+01:09:48,435 --> 01:10:02,215
+O yüzden yazdıklarınızı hemen görebilme şansım yok. Şimdi biraz çeviririm o zaman. Üçüncü bir gözüm olsaydı iyi olabilirdi sağ tarafta. Bu ders için iyi olabilirdi. Sonrası için tabii kötü olur.
+
+335
+01:10:04,055 --> 01:10:14,715
+A1-3 işaret pozitif. Birinci satır ile üçüncü tutunu kapattık. Geriye kalan 1-1.
+
+336
+01:10:15,188 --> 01:10:30,208
+Eksi 3, 4, işaretim pozitifte, eksi 1 üzeri 1 artı 3'ten. Dolayısıyla ne geldi buradan? 4, şuradan 3 gelecek, eksi 3 çarpı, eksi 1 artı 3, eksi diyeceğim, 1 gelmiş oldu.
+
+337
+01:10:31,208 --> 01:10:41,807
+Sonra ikinci satırın kofaktörlerine bakalım. A2, 1, işareti negatif, eksi dedik. İkinci satır, birinci sütunu kapattım.
+
+338
+01:10:43,060 --> 01:10:53,380
+3, 1, 4, eksi 1, buradan da, eksi 3, eksi 4, eksi 7, 7 olmuş oldu.
+
+339
+01:10:54,540 --> 01:10:58,660
+A2, 2'ye bakalım, işaret pozitif, tam merkezi kapattım.
+
+340
+01:10:59,840 --> 01:11:05,640
+2, 1, eksi 3, eksi 1, buradan da eksi 2,
+
+341
+01:11:06,323 --> 01:11:32,724
+Artı 3, 1 gelmiş oldu. Sonra, A2, 3, ikinci satır, üçüncü sütunu kapattık. İşaret negatif, bir eksi koyalım. İşaret negatif, 2, 3, ve eksi 3, 4. Buradan da 12, 9 daha kaç yaptı? 21.
+
+342
+01:11:33,492 --> 01:11:39,092
+Eksi 21 olmuş oldu. Eksi 21. Burada bir tuhaflık olabilir mi? Bir daha bakalım.
+
+343
+01:11:39,971 --> 01:11:54,372
+A2, 3. Yani şurayı kapattım. 2, 3. Eksi 3, 4. Evet orada sorun yok. 12 artı 9. Evet 21 işaret. Evet.
+
+344
+01:11:54,372 --> 01:12:00,172
+Son stonumuzu oluşturalım. A31 işaret pozitif.
+
+345
+01:12:00,851 --> 01:12:11,592
+Üçüncü satır, birinci sitonu kapattık. 3-1-1-2. Kontrol edin arkadaşlar. Varsı atan, mutlan uyarı.
+
+346
+01:12:19,699 --> 01:12:38,420
+Bu arada [öğrenci] ilk derse dair bir şey yazmış. [öğrenci] tevafuk oldu bak. Ekranda onu gördüm. Aslında [öğrenci] bununla ilgili yazmamış. Belki [öğrenci] bizi dinlemiyor. [öğrenci] burada mı? Saati fark ettim sonra orada. 9.46'da yazmış [öğrenci]. Üst üste gelmiş oldu.
+
+347
+01:12:43,956 --> 01:12:50,136
+6 artı 1, ne olacak burası? 7 olmuş oldu.
+
+348
+01:12:51,716 --> 01:12:55,396
+A, 3, 2, işaret negatif.
+
+349
+01:12:57,896 --> 01:13:01,316
+Üçüncü satır, ikinci sütunu kapattık. 2, 1, 1, 2.
+
+350
+01:13:01,316 --> 01:13:09,676
+2, 1, 1, 2. Buradan da 4, eksi 1, 3. Eksi 3 geldi.
+
+351
+01:13:10,612 --> 01:13:31,771
+A33, son kofaktörümüz, sağ alt köşedeki elemanı kapattık, 3. satır, 3. tutun, 2, 3, 1, eksi 1, buradan da, eksi 2, eksi 3, eksi 5, umarım doğru hesapladık.
+
+352
+01:13:31,771 --> 01:13:36,771
+Hatam varsa, şunu bir daha kontrol edeyim.
+
+353
+01:13:39,891 --> 01:13:49,572
+A 3 3, 2 3, 1 eksi 1, tamam, eksi 2 eksi 3. Hata yok gibi, varsa da geri döneriz, sorun değil. Şöyle biraz daha kapatalım.
+
+354
+01:13:50,492 --> 01:14:01,131
+A'nın eki, ek A eşittir. Doğrudan bu ifadeleri yazıyoruz. Eksi 7.
+
+355
+01:14:02,100 --> 01:14:10,640
+Transpozu almış oldum zaten arkadaşlar. Dikkat ederseniz birinci satırın ko faktörlerini ben birinci tutuna yazdım. O yüzden transpozu almış oldum.
+
+356
+01:14:12,040 --> 01:14:24,820
+Eksi 5, 1, 7, şurası 1, eksi 21, 7, eksi 3, eksi 5.
+
+357
+01:14:29,524 --> 01:14:31,224
+A'nın tersi eşittir.
+
+358
+01:14:34,324 --> 01:14:39,943
+Her bir elemanı, 1-1 bölü 28'de çarpmam lazım. O zaman 1 bölü 4,
+
+359
+01:14:41,004 --> 01:14:44,764
+1-1 bölü 4,
+
+360
+01:14:46,084 --> 01:14:46,504
+sonra,
+
+361
+01:14:49,747 --> 01:14:53,667
+A2-3 ile ilgili sorun olduğunu söylüyorum ama.
+
+362
+01:14:54,147 --> 01:14:55,027
+A2-3.
+
+363
+01:14:55,307 --> 01:14:57,827
+Evet, galiba eksi 17 olacak.
+
+364
+01:14:58,567 --> 01:15:05,667
+Olabilir. Bir tuhaflık vardı zaten. Ben bu soruyu dünkü derslerde çözdüm için orada sanki bir şeyleri anımser gibi oldum.
+
+365
+01:15:05,768 --> 01:15:09,367
+A2-3. Yani ikinci satır, üçüncü satırını kapattık.
+
+366
+01:15:09,947 --> 01:15:11,507
+2-3, eksi 3, 4.
+
+367
+01:15:11,923 --> 01:15:25,943
+Şurası 8, aa evet. Ben onu 12 olarak hesapladım. Bir tuhaflık var diyorum. 2 çarpı 4, nasıl 12 oluyor? Ben de şu an, evet fark ettim. 8, 9, 17 olacak burası. Teşekkür ediyorum.
+
+368
+01:15:29,103 --> 01:15:32,543
+Şurası 17 olacak.
+
+369
+01:15:34,515 --> 01:15:46,495
+Hatta da buymuş zaten. Sürekli böyle bir bakasım vardı geriye doğru. Diğerde bir hatam vardı. 21'denmiş. Aslında 21 olsaymış daha iyi olmamış. Çünkü ortak katı var. O da 3 bölü 4 gelecekti. Neyse.
+
+370
+01:15:48,115 --> 01:16:01,235
+İkinci satırı, pardon, şuradan doğrudan ikinci satırı yazıyorum. Eksi 1 bölü 28. Sonra şurası 3 bölü 28.
+
+371
+01:16:02,100 --> 01:16:14,780
+Eksi 1 bölü 28, 17 bölü 28, son olarak 5 bölü 28. Umarım işaret hatası da yaptıysam zaten çözüm yanlış olacak.
+
+372
+01:16:15,420 --> 01:16:19,479
+Tekrar kontrol ediyorum. 1 bölü 4, eksi 1 bölü 4, eksi 1 bölü 4.
+
+373
+01:16:19,859 --> 01:16:38,359
+5 bölü 28, 1 bölü 28, 3 bölü 28, 1 bölü 28, 17 bölü 28, 5 bölü 28. Tamam. Ne yapmam gerekiyor? A'nın tersini B sabitleriyle çarpmam lazım. Yani 1-3-4 ile çarpmam lazım.
+
+374
+01:16:40,859 --> 01:16:47,019
+B'yi de şu yana yazalım. Doğrudan ben çarpımını yazayım. Bir daha matrisi yazmak zorunda kalmayalım.
+
+375
+01:16:47,728 --> 01:17:12,708
+Eksi 3, 4. A'nın tersi çarpı B. Demek ki birinci satırı B ile çarparsam ona x1'i verecek, ikinci satırı B ile çarparsam x2'yi verecek, üçüncü satırı B ile çarparsam da x3'ü verecek. Çarpalım bakalım. Bu durumda A üzeri eksi 1, nerede daha fazla yer var? Şuraya yazabilirim herhalde.
+
+376
+01:17:13,908 --> 01:17:17,308
+Mavi celeri, eksi 1, B eşittir.
+
+377
+01:17:19,968 --> 01:17:23,087
+Birinci satırı, doğrudan B ile çarptım.
+
+378
+01:17:23,388 --> 01:17:32,528
+1 bölü 4, şurası 1 bölü 4, eksi 1 bölü 4, eksi 3 ile çarptığında artı 3 bölü 4 değil mi?
+
+379
+01:17:32,648 --> 01:17:36,408
+3 bölü 4, sonra eksi 4 bölü 4.
+
+380
+01:17:36,408 --> 01:17:38,948
+Eksi 4 bölü 4 yazalım.
+
+381
+01:17:40,212 --> 01:17:52,972
+Hatta şuraya eşittir de yazabilirim. Burada bir mahsul yok. 1 bölü 4, 3 bölü 4, 4 bölü 4, eksi 4 bölü 4'ten sıfır. En azından birinci girdiğimizde x1'i doğru bulmuşuz.
+
+382
+01:17:52,972 --> 01:17:56,112
+Biraz daha ortalara yazayım, daha estetik olur.
+
+383
+01:18:00,724 --> 01:18:16,684
+Şimdi ikinci satırı çarpmam gerekiyor. 5 bölü 28, sonra 3 bölü 28, artı 12 bölü 28.
+
+384
+01:18:26,323 --> 01:18:37,743
+5 bölü 7, 4 de sadece. Son bilimleyenimiz x3, eksi 1 bölü 28, biraz daha aşağıya inmem gerekiyor.
+
+385
+01:18:45,460 --> 01:19:06,260
+Eksi 1 bölü 28, eksi 51 bölü 28, eksi 51 bölü 28, yanlış çarpmadıysam, aritmetim iyi değildir. Artı 20 bölü 28, artı 20 bölü 28. Şuradan eksi 52 oldu değil mi? Eksi 32 bölü 28.
+
+386
+01:19:07,347 --> 01:19:33,627
+Koyrak davrandım. Buradan da eksi 8 bölü 7 gelmiş oldu arkadaşlar. Demek ki x vektörüm eşittir. Şu anda bulduğum şey x vektörü. Burası x vektörü. x1, x2, x3, o da eşittir. 0, karşılıklı girdilerin eşitliğinden 0, 5 bölü 7, ve
+
+387
+01:19:34,195 --> 01:19:37,115
+Eksi, sekiz, bölü, yedi olarak bulunmuş olur.
+
+388
+01:19:37,876 --> 01:19:40,255
+Zaten aynı soruyu çözmüştür Kramer ile.
+
+389
+01:19:40,636 --> 01:19:42,015
+Sonuç aynı, çıkmış oldu.
+
+390
+01:19:42,115 --> 01:19:44,056
+Demek ki işlemlerimizde de bir hata yok.
+
+391
+01:19:44,515 --> 01:19:45,155
+Öyle görünüyor.
+
+392
+01:19:46,975 --> 01:19:48,695
+Var mı sormak istediğiniz bir şey?
+
+393
+01:19:49,475 --> 01:20:01,275
+Kramer ve ters matris yöntemini, biz sadece ve sadece denklem sisteminin, kat sayılar matrisinin, determinantı sıfırdan farklı olduğu zaman uygulayabiliriz.
+
+394
+01:20:12,948 --> 01:20:31,468
+Genel bir tane daha örnek yapalım, ders bitireceğim. Hem determinant hesabı hem de kramer yöntemine dair güzel bir örnek. Yine kendi uydurduğum bir örnek. Determinant kısmı değil de ikinci kısmını ben uydurdum. Şimdi evinde bir F matrisi var.
+
+395
+01:20:32,372 --> 01:20:40,112
+F matrisi 4 çarpı 4 ikinde bir matris. A, B, C, D'ye bağlı. Bunlar real sayıda olabilir, kompleks sayıda olabilir. Ne olduğu önemli değil.
+
+396
+01:20:40,352 --> 01:20:51,692
+Sembolik olarak vermişiz ama şunu garanti ediyoruz. F'nin determinantı sıfırdan farklı. Bunu verdiyse ben ters matris yöntemini de uygulayabilirim, kremler yöntemini de uygulayabilirim. Onu garanti ediyor bana.
+
+397
+01:20:53,876 --> 01:21:18,536
+Birinci maddesi determinantın özelliklerini kullanarak determinantı hesaplayan istiyor. Determinantını hesaplayacağız. Yani çarpandan ayıracağız. ABCD cinsinden determinant ifade edeceğiz. 4x4'lük bir maddesin determinantı. İlk gördüğünüzde gözünüzü korkutabilir fakat çözünce böyle miydi diyeceksiniz. O kadar da tabi basit değil. Zor da değil.
+
+398
+01:21:18,996 --> 01:21:36,916
+İkinci madde, ikinci şıkkıda, x'i bir kere bilinmeyenler vektörünü x1, x2, x3, x4 olarak aldıyor. Sabitleri a, b, c, d olarak aldıyor. Bu durumda, kas sayılar matrisi f olan, f'yişleştir, b denklem sistemini, kramer yöntemini kullanarak çözün.
+
+399
+01:21:37,456 --> 01:21:43,315
+Aslında şuraya kramer yazmışım, o k yapmamam gerekirdi çünkü özel isim o. Onu niye öyle yaptım onu da bilmiyorum.
+
+400
+01:21:46,547 --> 01:21:56,727
+Kramer yöntemini kullanarak çözeceğiz. Asıl güzel olan kısmı ikinci kısmı sorunun. Bakalım. Önce determinante hesaplamaya çalışayım.
+
+401
+01:21:58,147 --> 01:22:07,487
+Şurada yerimiz var mı? Ne yapacağız arkadaşlar? Yazdığım işlemleri yazmayacağım. Sözlü olarak ifade edeceğim. Sizler de takip edin.
+
+402
+01:22:07,487 --> 01:22:12,967
+Şimdi bir kere gözlem yapacağız. Nereden başlayacağız?
+
+403
+01:22:13,652 --> 01:22:21,531
+Ben daha önce soruyu çözdüğüm için adımları çok rahat bulabilirim ama ilk kez görenler için öyle rahat olmayabilirim. Nasıl başlayacaklar?
+
+404
+01:22:26,195 --> 01:22:27,815
+Mesela şu aklıma geliyor.
+
+405
+01:22:35,028 --> 01:22:43,068
+İşte birinci sütunu ikinci sütundan çıkarmak. Değil mi? Onu yaptığımızda ortak paranteze alabileceğiz.
+
+406
+01:22:43,168 --> 01:22:48,788
+A eksi A kare, B eksi B kare, C eksi C kare, D eksi D kare falan.
+
+407
+01:22:49,888 --> 01:22:55,148
+Orada ne parantezini alabilirim? Paranteze alamıyorum. Dışarı, yani faktör alt yapamıyorum.
+
+408
+01:22:56,528 --> 01:23:00,587
+Herhangi bir ortak çarpan yok. Ama ilk haliyle baktığımda birinci satırda mesela A'lar.
+
+409
+01:23:01,140 --> 01:23:08,180
+orta, ikinci satırda B'ler, üçüncü satırda C'ler ve D'ler. İlk neyle başlayalım?
+
+410
+01:23:10,452 --> 01:23:36,471
+Şimdi amacım ne? Temel amacım herhangi bir satırda ya da sütunda maksimum sıfır elde etmek. Yani en az 3 tane sıfır elde etmek. En az demeyeyim de, en çok daha doğrusu, en az demeyeyim de en çok, 3 hatta amaç 4 tane sıfır olursa determinant sıfır olduğunu söyleyeceğiz de burada zaten determinant sıfırdan farklı vermek. O mümkün değil. Sıfırdan farklı olduğunu kabul ediyor daha doğrusu. Demek ki bu ABCD üzerinde de bazı kısıtlamalar var.
+
+411
+01:23:36,884 --> 01:23:38,699
+Onu bilmem gerekiyor.
+
+412
+01:23:39,347 --> 01:24:05,667
+Amacım bir tane satırda ya da sütunda birler elde etmek. O birleri kullanarak diğerlerini sıfırlayacağım. Dolayısıyla bu haliyle de işlem yapabiliriz. Mesela birinci satırı ben eksi b ile çarpıp, ikinci satırı a ile çarpıp toplarsam şurada sıfır elde ederim. Ama iş komplike hale gelecek. Daha karışık hale gelecek. Amacım o karışık hale getirmeden daha yalın hallerini çözebilirim.
+
+413
+01:24:07,184 --> 01:24:33,904
+Birinci satırdan A'yı dışarı alacağım. İkinci satırdan B'yi, üçüncü satırdan C'yi, dördüncü satırdan D'yi. Bunu yapabilirim. Determinantın öyle bir özelliği var değil mi? Ortak bir kat varsa herhangi bir satır ya da tuturumda onu ben dışarı alabilirim. O zaman şöyle determinant alalım. F'nin determinantı. Eşitti. Şu matris varmış elimde onun determinantını alıyormuşum. Birinci satırdan A'yı aldım. A çağırdı.
+
+414
+01:24:34,079 --> 01:24:40,100
+B çarpı, C çarpı, D. Bir kere bunlar çarpan olarak dışarıda kalacak. Sonra içeride ne kaldı?
+
+415
+01:24:40,100 --> 01:25:01,699
+1, A kare, M değil, A. A kare, A küp. 1, B, B kare, B küp. 1, C, C kare, C küp.
+
+416
+01:25:02,047 --> 01:25:13,207
+1, d, d kare, d kül. Ne yaptım? Birinci satırdan a'yı ikinci. Fakat şunu yazmayı unutmamam lazım başıma.
+
+417
+01:25:13,587 --> 01:25:24,547
+Bunları aynı zamanda ben a'yı içeri dağıttığımda, tabii bu a'yı içeri dağıtırken herhangi bir satıra ya da sütuna dağıtabilirsiniz. Sonucu değiştirmez yani.
+
+418
+01:25:24,979 --> 01:25:36,399
+Çünkü içeriden aldım onu, ikinci satırla da çarpabilir. Mesela AAB, AB kare, AB küp şeklinde de yazılabilir. Fakat benim işime gelmez. Yani öyle manipülasyonlar da yapılabilir.
+
+419
+01:25:36,399 --> 01:25:51,420
+Şimdi yapacağım şey, birinci satırı kullanarak şu arkadaşlardan kurtulacağım. Amacım matrisin birinci sütununda bol sayıda, yani üç tane sıfır elde etmiyor.
+
+420
+01:25:51,859 --> 01:26:16,099
+Neden bu üç tane sıfır elde etmek istiyorum? Mantık basit. Kofaktör ekspansiyonu yapacağım. Mümkün en az sayıda kofaktör hesaplamak istiyorum. Burada kofaktörlerin 3x3 tipindeki determinantlar olacak. Dolayısıyla ne kadar az hesaplarsam o kadar rahat edeceğim. İşlemlerim daha rahat olacak. Eşittir diyorum. Bir kere ABCD'yi başta unutmuyorum. ABCD unutursam hatırladım.
+
+421
+01:26:17,587 --> 01:26:41,108
+Birinci satır aynen kaldı. Bir, A, A kare, akık. Takip edebiliyor musunuz arkadaşlar? Bir de bu kadar birbirine yakın yazmamalıydım. Biraz, bence sütun olarak yazarsam daha iyi olur. Sütun olarak yazıyorum. Burası sıfır olacak. Aynı zamanda eksi katını üçüncü ve dördüncü satıra da ekledim. Şöyle sıfır sıfır. Onu yazalım.
+
+422
+01:26:41,492 --> 01:27:08,752
+Eksi katını eklediğim için şurası A olacak. Şurası B eksi A. C eksi A. Şurası da D eksi A olmuş. İtirazlı olan var mı? Kütun olarak yazıyorum. Daha güzel bir yönetim diye. Sonra şurası A kare, B kare eksi A kare, C kare eksi A kare, D kare eksi A kare. Son olarak da A'nın kübü.
+
+423
+01:27:09,716 --> 01:27:18,155
+d3-a3, c3-a3 ve d3-a3.
+
+424
+01:27:19,595 --> 01:27:21,076
+Yine gözlem edeceğiz.
+
+425
+01:27:21,615 --> 01:27:25,275
+Kimler beni takip ediyor? Artık koysunlar mesaj kutsunlar.
+
+426
+01:27:38,644 --> 01:27:51,843
+Aslında çok fazla kişi beni dinlemiyor. Yani ekran açık, birkaç kişi dinliyor. Artılar ekrandan kaymaya başlayınca onu fark eden o da artı yazacaktır.
+
+427
+01:27:51,843 --> 01:28:01,644
+Yani 89 kişi görünüyor benimle birlikte, 90 kişi ama dinleyen 20'yi geçmedi şu an artık vay onlar. Bunları tek tek saymayacağım ama 20'yi geçmedi.
+
+428
+01:28:03,644 --> 01:28:06,380
+Geçmiş de olabilir. Hadi 40 diyelim.
+
+429
+01:28:06,771 --> 01:28:07,271
+Evet.
+
+430
+01:28:11,539 --> 01:28:14,400
+Tamam, sağlık olsun. Yapacak bir şey yok.
+
+431
+01:28:17,380 --> 01:28:25,900
+Şurada yine ne yapacağız? Artık birinci sütuna göre kofaktör ekspansiyonu yapabilirim.
+
+432
+01:28:27,000 --> 01:28:29,440
+Şuraya göre kofaktör ekspansiyonu yaptım arkadaşlar.
+
+433
+01:28:31,039 --> 01:28:36,860
+Birinci sütuna, birinci satırı kapattım. Geriye ne kaldı? Onu aşağıya yazalım. Eşittir.
+
+434
+01:28:37,268 --> 01:28:39,707
+Eşikleri şuradan yazayım, yer kazanalım.
+
+435
+01:28:40,608 --> 01:28:44,528
+A, B, C, D çarpı, 3 çarpış tipinde bir matris.
+
+436
+01:29:04,884 --> 01:29:12,663
+Şeklinde, 3x3 tipinde bir matrisin determinantına indirgenmiş olduğu, 4x4'ten kurtulduk.
+
+437
+01:29:15,184 --> 01:29:27,563
+Mantığı kavralımız, aynı mantığı sürdüreceğim. Amaç, bir satır ya da sütunda bol sıfırlar elde etmek. Onun için önce birlere ulaşacağım, o birler yardımıyla sıfırlara geçeceğim.
+
+438
+01:29:28,103 --> 01:29:30,283
+Öncelikle şöyle iki tane özdeşliği yazalım.
+
+439
+01:29:32,404 --> 01:29:33,864
+a kare eksi b kare
+
+440
+01:29:37,460 --> 01:29:39,819
+A kare eksi de kare eşittir.
+
+441
+01:29:40,659 --> 01:29:43,100
+A eksi de A artı B.
+
+442
+01:29:43,480 --> 01:29:43,920
+Bu neydi?
+
+443
+01:29:45,920 --> 01:29:46,840
+Tam kare.
+
+444
+01:29:48,619 --> 01:29:50,380
+Ya da A küp eksi B küp.
+
+445
+01:29:52,480 --> 01:30:00,739
+Bu da A eksi de A'nın karesi artı AB artı B'nin karesi.
+
+446
+01:30:00,819 --> 01:30:02,340
+İnanmayalım sağ tarafı çarptır.
+
+447
+01:30:10,292 --> 01:30:12,652
+Artılar geç de olsa gelmeye devam ediyor.
+
+448
+01:30:20,692 --> 01:30:32,911
+Şimdi, yukarıdaki şu özdeşlikler ışığında, görünsün onlar, yukarıdaki özdeşlikler ışığında, bakıyorum, bir kere birinci satırda B-A ortak.
+
+449
+01:30:33,731 --> 01:30:46,551
+Tamam mı? B kare eksi A kare, B küp eksi A türü faktorize ettim. Dolayısıyla B-A orada ortak. İkinci satırda C-A, üçüncü satırda D-A. O zaman şöyle yazabilirim. Birinci satırda B-A'yı dışarı atabilirim.
+
+450
+01:30:46,912 --> 01:31:09,972
+A, B, C, D, B-A, C-A, D-A çarpı, bakalım geriye ne kaldı? Şurada bir, bir, bir, B artı A, C artı A ve D artı A oldu.
+
+451
+01:31:10,272 --> 01:31:13,572
+B-A'yı, C-A'yı, D-A'yı dışarı almış oldum.
+
+452
+01:31:14,612 --> 01:31:36,971
+Sonra aynı şeyi 3. tutumda da yapabilirim. Burada da B eksiya C eksiya D eksiya D'yi dışarı alırsam, B kare artı AB artı A kare C kare artı AC artı A kare D kare artı AD artı D kare.
+
+453
+01:31:38,492 --> 01:31:40,372
+Aynı işlemlere devam ediyoruz.
+
+454
+01:31:41,300 --> 01:32:08,380
+Ne yapacağım? Birinci satırı kullanarak şu iki arkadaşı sıfır yapmaya çalışacağım. Şurası ve şurası. Şu ifadeye, bütününe, R diyelim. Her defasında yazmamak adına. Hem yerimizde de zaten. Birinci satırı aynen yazdım. Hatta aşağı doğru tutumları yazalım. Bir, sıfır, sıfır. Sonra,
+
+455
+01:32:09,524 --> 01:32:10,844
+B artı A.
+
+456
+01:32:12,583 --> 01:32:14,923
+Çıkardığımızda ne olacaktır? Şurası C eksi B.
+
+457
+01:32:17,403 --> 01:32:20,403
+Çünkü A'lar gidecek, şurası da D eksi B olacak.
+
+458
+01:32:21,984 --> 01:32:29,283
+Sonra, şurası B kare artı AB artı A kare.
+
+459
+01:32:31,444 --> 01:32:37,043
+Çıkardığımızda, C kare eksi B kare, hatta onun C eksi B parantezine alayım.
+
+460
+01:32:37,460 --> 01:32:40,880
+c kare eksi b kare
+
+461
+01:32:40,880 --> 01:32:45,180
+a kareler gidecek
+
+462
+01:32:45,180 --> 01:32:47,760
+a parantezinde c eksi b
+
+463
+01:32:47,760 --> 01:32:50,520
+artı
+
+464
+01:32:50,520 --> 01:32:53,560
+a parantezinde c eksi b
+
+465
+01:32:53,560 --> 01:32:55,400
+şuraya da
+
+466
+01:32:55,400 --> 01:32:58,940
+d kare eksi b kare artı
+
+467
+01:32:58,940 --> 01:33:00,140
+a parantezinde
+
+468
+01:33:00,659 --> 01:33:12,020
+D-B şeklinde yazmış olduk. Neden? D-B kare, A-D eksi AB, A parantezini aldım, D-B. Tamam.
+
+469
+01:33:12,720 --> 01:33:22,340
+Yine birinci sütuna göre kofaktör ekspansiyonu yapıyorum. Şöyle artık elimde nasıl bir matris var?
+
+470
+01:33:27,859 --> 01:33:36,539
+Şurayı da C-B parantezine alayım. Hadi biraz daha hızlıleştirelim. İçeride ne kalacak?
+
+471
+01:33:38,220 --> 01:33:44,279
+A, A artı B artı C olmuş oldu. Şurası da D-B.
+
+472
+01:33:54,292 --> 01:33:59,192
+Ne kaldı? Şurada D artı B. Evet. B artı D olmuş oldu.
+
+473
+01:34:00,351 --> 01:34:03,391
+Yine C eksi B ile D eksi B'yi dışarı alayım.
+
+474
+01:34:04,931 --> 01:34:06,731
+Biraz uzuyor ama idare edin.
+
+475
+01:34:08,672 --> 01:34:09,332
+Dışıktır.
+
+476
+01:34:10,011 --> 01:34:10,992
+R çarptı.
+
+477
+01:34:11,832 --> 01:34:15,252
+C eksi D.
+
+478
+01:34:19,731 --> 01:34:40,752
+C eksi D, birinci satırdan aldım, sonra D eksi D, D eksi B çarpı, ne kalacak? Şurada 1, 1, şurada da A artı B artı C, A artı B artı D şeklinde.
+
+479
+01:34:42,644 --> 01:35:08,884
+2 çarpı 2 tipinde bir matris. Bunu hesaplayabiliriz ya da yine birinci satırın eksilisini ikinci satıra ekleyebiliriz. Onu yapalım. O da eşittir. Şuraya da S diyelim. Tekrar tekrar yazmamak adına şu ufadeye. V çarpı S çarpı 1A artı B artı C sıfır. Çıkardığımızda ne gelecek? D eksilce. D eksilce gelmiş oldu.
+
+480
+01:35:09,171 --> 01:35:32,231
+Ters diagonalden 0 gelecek, buradan sadece D-C gelecek. Sonuç itibariyle R neydi? R'ye bakalım. A çarpı B çarpı C çarpı DA, B, C, D çarpı B-A, C-A, D-A çarpı ve S vardı.
+
+481
+01:35:36,500 --> 01:35:41,800
+D-B çarpı, son olarak şuradan D-C'ye geldi.
+
+482
+01:35:41,940 --> 01:35:43,619
+D-C'ye gelmiş oldu.
+
+483
+01:35:43,960 --> 01:35:47,480
+Bu şekilde biz F matrisini faktörize ettik.
+
+484
+01:35:48,659 --> 01:35:50,880
+F matrisinin çarpanlarına ayırdık.
+
+485
+01:35:51,820 --> 01:35:53,200
+Var mı soru sormak isteyen?
+
+486
+01:35:53,760 --> 01:35:54,980
+Dinleyenler için söylüyorum.
+
+487
+01:35:56,060 --> 01:35:58,539
+Dinlemeyenlerin soru sorabilme şansı yok.
+
+488
+01:35:59,020 --> 01:36:00,740
+Umarım ipin ucu kaçmadı arkadaşlar.
+
+489
+01:36:00,940 --> 01:36:01,880
+Takip edebildiniz mi?
+
+490
+01:36:03,731 --> 01:36:04,971
+Her şeyi görebilirim.
+
+491
+01:36:10,068 --> 01:36:12,787
+Anlayabiliyor musunuz? Yani takip edebiliyor musunuz arkadaşlar?
+
+492
+01:36:14,068 --> 01:36:14,927
+Evet hocam.
+
+493
+01:36:15,568 --> 01:36:21,387
+Tamam, o zaman en azından cevap veren arkadaşımız takip edebiliyor.
+
+494
+01:36:22,028 --> 01:36:26,408
+Geriye kalan 87 arkadaşımız.
+
+495
+01:36:29,528 --> 01:36:33,448
+[öğrenci] de yazdı, [öğrenci] de yazdı, [öğrenci] de yazdı.
+
+496
+01:36:34,648 --> 01:36:35,988
+4 kişi takip edebiliyor.
+
+497
+01:36:38,387 --> 01:36:48,307
+Bu kötü ama. Yani sadece 4 kişiydi. Şimdi ikinci kısmına geçelim. Determinantı faktörize ettik. Güzel bir uygulama oldu. Buyurun.
+
+498
+01:36:56,467 --> 01:37:01,907
+Sesiniz çok kesik geliyor. Mikrofonu biraz yaklaştırıp rica etsem öyle sorsanız sorunuz olur mu?
+
+499
+01:37:01,967 --> 01:37:06,127
+Şey diyecektim hocam, bir önceki adımda da yapabilirdik değil mi?
+
+500
+01:37:06,767 --> 01:37:14,923
+Tabii tabii, tabii tabii. Buradan determinant hesaplayacaktınız şurada. Ama o zaman ne olacaktı? A, B, A artı, B artı...
+
+501
+01:37:15,220 --> 01:37:26,780
+D çarpı, pardon, eksi, A artı B artı C, ha, gerçi çarpma yokmuş. Oradan da yapabilirdiniz. Onun farkını alacaktınız. Oradan zaten D eksi C geliyor. Aynen oradan da yapabilirdiniz.
+
+502
+01:37:26,780 --> 01:37:30,420
+Biraz uzattım, hani başladığım şekilde devam etmemiz.
+
+503
+01:37:30,484 --> 01:37:58,284
+Tabii tabii. Bir de bu izlediğim yol tek türlü değil. İsteyen sütun işlemi de yapabilir. Yani kofaktör ekspansiyonu da yapabilirsiniz. O bütün çarpmaları ilk başta dört tane üç çarpı üç tipinde, sonra her birinden üç tane iki çarpı iki tipinde. Dolayısıyla işte kaç tane olacak? On iki tane determinant hesaplamanız gerekecek falan. Kofaktör ekspansiyonu yaparsanız herhangi bir satıra ya da sütuna göre. E tabii orada ABCD'ler falan.
+
+504
+01:37:58,484 --> 01:38:16,564
+Kuvvetler gelecek, çarpımlar gelecek. Orada karıştırmamak elden değil. Elde yaptığınız zaman, elle yaptığınız zaman işlemleri, büyük ihtimalle doğru sonucu bulamayacaksınız. Hadi hata olacak. Fakat böyle yaptığınızda, burada da yine hata yapma olasılığı var ama daha az. İşler daha kontrollü.
+
+505
+01:38:23,060 --> 01:38:46,360
+fx eşittir b denklem sistemini çözün diyordu bize. fx eşittir b. fx eşittir b. Tabii x ile b'yi vermişti bize. x ile b neydi? x dört tane bilim yerinden oluşuyor. b de a, b, c, dden oluşuyor. Dikkat ederseniz b ile f matrisinin birinci satırı aynı. Pardon, birinci tutunu aynı arkadaşlar.
+
+506
+01:38:46,655 --> 01:38:57,256
+Kramer bize neyi söylüyordu? Eğer determinant, hadi burada F için diyelim, farklı sıfır ise, X, İ eşittir, determinant F, İ bölü, determinant F, İ'dir.
+
+507
+01:38:57,615 --> 01:39:08,775
+F, İ dediğimiz şey, F'nin İ'inci sütununu sabitlerle değiştirilmesiydi. Bu durumda baktığımızda, bir kere F eşittir, F1 olacak.
+
+508
+01:39:10,036 --> 01:39:14,175
+Birinci sütunu ben B ile değiştirirsem değişmeyecek, F ile F1 eşit.
+
+509
+01:39:14,707 --> 01:39:32,688
+Ve F2'de, F2, F3, F4'e bakalım. İkinci sütunu ben yine ABCD ile değiştirirsem, şurası ne olacak? ABCD olacak. İki tane sütun aynı olmuş olur. İki tane sütun aynı ise determinantı nedir arkadaşlar?
+
+510
+01:39:38,228 --> 01:40:00,000
+Değil mi? 0. Evet. İki tane sütun aynı ise determinant 0. O zaman aynı şekilde F3 içinde ne olacak? Üçüncü ve birinci sütunlar aynı olacak. F4 için birinci ve dördüncü sütunlar aynı olacak. O zaman determinant F eşittir determinant F1 ve determinant F1.
+
+511
+01:40:00,000 --> 01:40:25,180
+determinant F2 eşittir, determinant F3 eşittir, determinant F4, bu da sıfır olacak. Bu durumda X1 eşittir, determinant F1 bölü, determinant F, onlar da eşit olduğuna göre 1 oldu burası. X2 eşittir, X3 eşittir, X4, bu da sıfır olacak.
+
+512
+01:40:26,228 --> 01:40:52,588
+Çok güzel bir uygulama aslında yani konuyu kavramadığınıza dair sembolik bir örnek. Güzel bir örnek. Yani ilk gören bunu sınavda ilk görüp çözen hani anlamıştır konuyu derim tabii gördükten sonra böyle sorular veri tabanınıza bunu kaydedeceksiniz. Artık bu gördüğünüz bir soru olmuş olacak. Fakat ilk elden onu söyleyebilmek bizim kavradığımızı söyler. Var mı sormak istediğiniz bir şey sevgili arkadaşlar?
+
+513
+01:40:53,684 --> 01:41:19,544
+Eğer sorularınız yoksa bu haftalık dersimizi bitirelim. Haftaya ders olmayacak, sınav haftası olduğu için sizin ders saatinde sınavlarınız olabilecek. Çünkü kendi bölüm sınavlarınız var, servis dersleri var falan. O yüzden sınav haftasına çakışmaları önlemek için ders yapılmıyor. Zorunlu olarak bu bir zorunlu. Haftaya dersimiz olmayacak. Dokuzuncu haftada görüşmek üzere. Hoşçakalın, sağlıkla kalın arkadaşlar.
+
+514
+01:41:21,171 --> 01:41:22,751
+Teşekkürler hocam, kolay gelsin.
+
+515
+01:41:24,111 --> 01:41:24,931
+İyi günler hocam.
