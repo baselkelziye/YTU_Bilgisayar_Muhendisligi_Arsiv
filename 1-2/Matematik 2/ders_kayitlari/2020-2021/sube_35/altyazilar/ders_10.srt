@@ -1,0 +1,2403 @@
+1
+00:09:39,539 --> 00:09:40,559
+Merhaba arkadaşlar.
+
+2
+00:09:44,371 --> 00:09:49,091
+Şu anda katılım 18 görünüyor. Birkaç dakika daha bekleyelim. Ondan sonra derse başlar.
+
+3
+00:13:36,244 --> 00:13:58,043
+Tekrar merhaba arkadaşlar. Şu anda katılım 42. Ben derse başlamak istiyorum. Dün skaler ile çarpmaya kadar gelmiştik. Noktadan bahsetmiştik. Hala noktadan devam ediyoruz. Noktayı bitirdikten sonra, bekliyorlar da aşağı yukarı nokta gibi ama biraz farkı var, ilaveleri var. Onlara değineceğiz. Şimdi bir noktanın bir skaler ile çarpımından bahsediyorum şuradan.
+
+4
+00:13:58,707 --> 00:14:12,307
+Eğer P, R, N'de, R, N'yi tanımıştınız, bir nokta ve Lambda bir R sayı ise, buna bazen skalerle deniyor, buraya yazdım. Lambda P noktası yine R, N'de bir noktadır ve şöyle tanımlanır.
+
+5
+00:14:12,627 --> 00:14:21,768
+Yani P'nin bileşenleri X, X, X, X, N ise her bir bileşeni Lambda ile çarparak elde ettiğiniz noktaya Lambda P noktası deniyor.
+
+6
+00:14:21,768 --> 00:14:25,268
+Buna skalerle çarpma deniyor. İki noktanın toplamı,
+
+7
+00:14:26,131 --> 00:14:31,811
+Eğer P ve Q, DNA'da 2 nokta ise, 2 noktanın toplamı, karşılıklı birleşenlerin toplamı olarak tanımlanıyor.
+
+8
+00:14:32,111 --> 00:14:37,751
+Bir daha tekrar ediyorum, 2 noktanın toplamı, karşılıklı birleşenlerin toplamı olarak tanımlanıyor.
+
+9
+00:14:54,131 --> 00:15:20,351
+olduğunu örnekle gösterdim. Uzaklık formülü, R3'te uzaklık formülü ama daha geniş anlamda uzak, R'ne ile uzaklık formülü de verebiliriz şüphesiz ama işimize yaramayacak, kullanmayacağız. Onun için R2'de ve R3'tekinden bahsedeyim. Siz R2'deki uzaklık formülünü biliyorsunuz. Bir dikışkenden faydalanabilirsiniz. Dün R2'ye anlatırken, R2'ye anlatırken şurada çizim de yapmıştım. Şurada, şurada bir uzaklık meydana geliyor.
+
+10
+00:15:20,820 --> 00:15:30,120
+Psagor teoremine göre, şuradan bir uzak mesafe alırsanız, dik üçgen kuralından, karelerin toplamının kare şekil olduğunu görebilirsiniz demiştim.
+
+11
+00:15:30,640 --> 00:15:41,360
+Bu, buraya yazdım onu. Eğer P ve Q, R karede iki nokta şey, onlar arasındaki mesafe, o uzaklık distils ya, İngilizce'de distils, onun D'siyle gösteriliyor.
+
+12
+00:15:41,360 --> 00:15:47,300
+Bu, standart gösterim olduğu için, ben değiştirmeden aynısını kullandım. D, P, Q dediğiniz zaman arkadaşlar,
+
+13
+00:15:47,731 --> 00:15:52,851
+Q'nun bileşenlerinden, P'nin bileşenlerini çıkararak, karelerin toplamını alıyorsunuz.
+
+14
+00:15:53,052 --> 00:15:58,351
+Bir daha tekrar ediyorum, dpq demek, Q'nun bileşenlerinden, P'nin bileşenlerini çıkarın demek.
+
+15
+00:16:04,340 --> 00:16:17,480
+Yani eğer Px'ye, Px1, Y1 ve Qx2, Y2 ise, bunlar arasındaki uzaklık ya da mesafe, karı kek içinde, x2, x1'in karesi, artı Y2, x1'in karesinin karı kek.
+
+16
+00:16:18,640 --> 00:16:27,660
+Aynı şeyleri tekrar edersek, V3 ile, V3 ile, o zaman noktalarımız Px1, Y1, Z1 ve Qx2, Y2, Z2 olur.
+
+17
+00:16:28,916 --> 00:16:36,916
+ve işte ki P ve Q gibi bu iki noktalar arasındaki uzaklıkta gene Q'nun bileşenlerinden P'nin bileşenlerini çıkararak devam edersiniz.
+
+18
+00:16:36,916 --> 00:16:43,316
+x2-x birim karesi, artı y2-y birim karesi, artı z2-z birim karesi diye yazılabilir.
+
+19
+00:16:43,316 --> 00:16:49,840
+Rn'de olunca arkadaşlar bu P'nin bileşenleri neyse yani, Q'nun bileşenleri de neyse aynı aynısını tekrar ediyorsunuz.
+
+20
+00:16:49,840 --> 00:16:58,360
+Yeni bir şey yok ama geometrisi var. V karedeki ve V3'teki uzaklığın geometrisi olduğu için sadece bunun ikisini söyleyip geçiyoruz.
+
+21
+00:16:58,960 --> 00:17:09,640
+Eğer orijini alırsanız, orijinden olan mesafeyi alırsanız, yani D, P, O, O, orijinden olan mesafeyi düşünürseniz o zaman kare tek içinde x kare artı, y kare artı, z kare oluyor.
+
+22
+00:17:09,920 --> 00:17:14,299
+Bunun da bir anlamı var, biraz sonra gelecek. Şunun ikisinin de anlamı var, biraz sonra gelecek.
+
+23
+00:17:14,680 --> 00:17:16,340
+Örnek yapmışım iki tane.
+
+24
+00:17:16,884 --> 00:17:36,364
+İşte P noktası, P 1, 2, 3, Q noktası da eksi 1, 4, 0 ile verilmiş. P'den Q'ye olan uzaklığı bulunuz diyor. Ve P ve Q'dan orjinal olan uzaklıkları bulunuz diyor. İki tanesini yapalım. P'den Q'ye olan uzaklık, bakın, Q'nun bileşenlerinden P'nin bileşenlerini çıkararak kareleri alıp toplayacaksınız. Sonra kare kükranı çektiniz. Yaldım tek tek.
+
+25
+00:17:36,756 --> 00:17:45,516
+dpq eşittir, kare kek içinde eksi bir, eksi birin karesi, artı dört eksi ikinin karesi, artı sıfır eksi üçün karesi.
+
+26
+00:17:45,736 --> 00:17:47,156
+Topladığınız zaman kök on yedi.
+
+27
+00:17:48,115 --> 00:17:55,115
+p'den orijinal olan uzaklığı hesaplamak isterseniz, o zaman sadece p'nin bileşenlerinin karelerini toplayıp kare kekini alıyorsunuz.
+
+28
+00:17:55,539 --> 00:18:03,539
+Demek ki bir noktadan orijinal olan uzaklığını hesaplamak isterseniz, noktanın bileşenlerinin karelerini alıp topluyorsunuz, kare çekini alıyorsunuz.
+
+29
+00:18:03,720 --> 00:18:04,759
+Bakın burada o yazıyor.
+
+30
+00:18:06,240 --> 00:18:07,299
+Çök 14 çıkıyormuş.
+
+31
+00:18:08,339 --> 00:18:09,880
+Daha sonra buna tekrar değineceğiz.
+
+32
+00:18:10,180 --> 00:18:13,440
+Şimdi kürenin denklemi, şuraya geleyim, geri geçeyim.
+
+33
+00:18:14,360 --> 00:18:16,259
+Şimdi bakın şu ikisinin bir anlamı var demiştim.
+
+34
+00:18:16,339 --> 00:18:19,220
+Hem şu R3'teki şu uzaklığın hem de bunun bir anlamı var demiştim.
+
+35
+00:18:19,220 --> 00:18:23,220
+Eğer burada DTQ gördüğünüz yere R alırsanız.
+
+36
+00:18:23,488 --> 00:18:34,168
+DPQ gördüğünüz yere de R alırsanız, iç iç iç iç olanları da X, Y, Z diye sınıflandırırsanız, türev ve güzel görünsün diye. O zaman şu oluyor.
+
+37
+00:18:35,700 --> 00:18:45,720
+Bakın, ç yerine, x2, y2, z2 yerine sırasıyla x, z, z koymuşum. x1, z1 yerine de sırasıyla abc koymuşum.
+
+38
+00:18:46,019 --> 00:18:52,980
+dpq yerine de r alırsam, 3x a'nın karesi, 6yx b'nin karesi, 6, zx c'nin karesi, eşittir, r kare oluyor.
+
+39
+00:18:53,340 --> 00:19:01,140
+Buna merkezi abc, abc işte bakın, merkezi abc ve yarı çapı r olan küre diyoruz.
+
+40
+00:19:01,587 --> 00:19:11,647
+Merkez ABK ve yar çapı R olan türe diyoruz. Eğer merkezi orjinal alırsanız arkadaşlar, türenin denkleni x kare artı y kare artı z kare eşittir, bir oluyor.
+
+41
+00:19:12,115 --> 00:19:40,115
+Her ikisi için de birer grafik çizdim. Bakın bu merkezi orjin olan kürenin denklemi. Yani geometrik olarak 3 boyutlu uzayda görmeye çalıştığınız zaman bir kember çiziyorsunuz bakın. Bir kember çiziyorsunuz. İçini hangisi görünüyorsa işte alttakini koyu yaptım ben görünüyor diye. Üstüne nokta nokta yaptınız. Tam ortasını böyle elif şeklinde, yumurta şeklinde yaptığınız zaman bu merkezi orjin olan küre oluyor. Eğer merkezi herhangi bir ABC noktası ise merkezi...
+
+42
+00:19:40,115 --> 00:20:04,096
+Herhangi bir ABC noktası ise, dün son saatlerimizde, son zamanlarımızda noktanın nasıl işaretlenir, bakın noktanın nasıl tespit edildiğini göstermiştim. Genel ifade de vardı bak bu şekilde. Bunu göstermiştim, anlamıştı herkese. O şekilde düşünürsünüz. ABC noktasının şurada olduğunu varsayarsanız, burada tabii şu geometrik şekil çizdirirken, A, B ve C'nin pozitif olacağı kabul edilmiş değil mi?
+
+43
+00:20:04,531 --> 00:20:20,331
+Her şey, ABC sayılanında pozitif olduğu kabul edilmiş. Birinci bölgede bulunsun, birinci kuvvetlendirme atmıyoruz daha doğrusu. Birinci kuvvetlendirme tak görülsün diye ABC'nin pozitif olduğu kabul edilmiş, şurada çıkmış. Herhangi birisi negatif olursa bu taraflara gelebilir bir sakıncası yok.
+
+44
+00:20:20,692 --> 00:20:31,552
+Şimdi, tabii türenin denkleminin x-a'nın karesi, artı y-b'nın karesi, artı z-c'nin karesi, eşitir, z-kare ya da x-kare artı y-kare artı z-kare eşitir, z-kare şeklinde verilmesi gerekmiyor.
+
+45
+00:20:31,971 --> 00:20:42,392
+Şöyle bir genel denklem olabilir. x-kare artı y-kare artı z-kare artı ax artı b'ye artı c'de artı d eşitir sıfır şeklinde bu şekilde bir denklem olabilir.
+
+46
+00:20:42,791 --> 00:20:47,832
+Yeter ki x-kare, y-kare ve z-karenin kat sayıları pozitif olsun.
+
+47
+00:20:48,147 --> 00:20:51,147
+ve bir olsun. Pozitif olsun ve aynı olsun.
+
+48
+00:20:52,087 --> 00:20:58,907
+X kare artı, y kare, y kare ve z karenin kat sayıları hem pozitif hem aynıysa bu bir küre denklemi.
+
+49
+00:20:59,247 --> 00:21:06,427
+Herhangi birisinin kat sayısı, yani karelerden herhangi birisinin kat sayısı negatif olursa ya da diğerlerinden farklı olursa.
+
+50
+00:21:06,547 --> 00:21:07,247
+Mesela şurada.
+
+51
+00:21:07,859 --> 00:21:21,239
+x kare, y kare ve z karenin kat sayları aynı ve pozitifse bu bir küre denklemi herhangi bir karelerden herhangi birinin kat sayısı farklı ise, negatifi de bunun içine katır, farklı ise o zaman adı değişiyor.
+
+52
+00:21:21,859 --> 00:21:26,439
+Elipsoit olabilir, hiperboloit olabilir, adı değişiyor, ona daha sonra gelecek.
+
+53
+00:21:27,259 --> 00:21:31,159
+Şimdilik bu kadarını bilelim. Bir tane de örnek yapmışım şu genel ifadeye.
+
+54
+00:21:32,243 --> 00:21:43,663
+x kare artı y kare artı z kare artı 6x eksi 4y eksi 2z artı 5. Denkleminin bir küreyi temsil ettiğini gösteriniz diyor. Bütün mesele arkadaşlar, bütün mesele karelerin yanında
+
+55
+00:21:45,587 --> 00:22:00,188
+x, y ve z'nin karelerinin toplamının yanında her birinin birinci mertebe kuvveti bulunursa, yani x, y, z de toplam şeklinde şu şekilde bulunursa, o zaman tam kareye tamamlama işlemi yaparak bir sürü oluşup oluşmadığına bakıyorsunuz.
+
+56
+00:22:00,447 --> 00:22:08,208
+Şimdi x kare artı 6x var, bunu düzenlediğimiz zaman ya da tam kareye tamamladığımız zaman x artı 3'ün karesi yazarız.
+
+57
+00:22:08,627 --> 00:22:13,127
+Şuradan gelecek 9'u dikkate almıyorum şimdilik, daha sonra birleştireceğim.
+
+58
+00:22:13,587 --> 00:22:23,607
+Sonra y kare eksi 4 y var. Bunu bir tam kare yaparsak y eksi 2'nin karesi diye yazarız. Diğeri z kare eksi 2 z var. Onun da z eksi 1'nin karesi diye yazarız.
+
+59
+00:22:24,027 --> 00:22:29,967
+Sonra artı 5'i de dikkate alarak arkadaşlar şurada kare oluştururken elde ettiğim ifadeleri düzenleyeceğim.
+
+60
+00:22:30,347 --> 00:22:41,087
+Birinciden 9 geliyor. İkinciden 4 geliyor. 13. Değil mi? 9 artı 4, 13. Üçüncüden de 1 geliyor. 14. Burada da 5 var. Değil mi?
+
+61
+00:22:41,503 --> 00:22:46,824
+14'ten 5'i çıkardığınız zaman arkadaşlar kaç kalıyor? 9 kalıyor. Bakın o da buradaydı. Tamam mı?
+
+62
+00:22:51,763 --> 00:22:56,583
+Tren mekanonu ilgili anlamadığınız, sormakleriniz bir şey var mı? Şu yadımla ilgili.
+
+63
+00:23:00,051 --> 00:23:12,231
+Yok, devam ediyoruz. Tanıyın dersek, türeyi tanıtım derse, merkezi eksi 3, 2, 1 ve yarı çapı 3 olan bir türeden bahsetmiş oluyor. Daha sonra kuadratik güzeliyle ilgili vakti ilgi verecekmiş.
+
+64
+00:23:13,011 --> 00:23:29,971
+Simetri yine aynı arkadaşlar. Bakın simetri. İki uzaklık, iki tane P'den P1'e olan bir uzaklık var. Bir de P'den P2 olan bir uzaklık var. Eğer uzaklıklar birbirine eşitse o zaman onlar simetriktir. O aralarında simetri vardır diyoruz. Daha sonra lazım olsa döneriz.
+
+65
+00:23:29,971 --> 00:23:35,031
+Şimdi birazcık topoloji, yalnız topoloji biraz karışık arkadaşlar. Tamamını söylemeyeceğim.
+
+66
+00:23:38,804 --> 00:23:51,744
+Tamam. Bir arkadaşımız yarış yapabilir, tekrar söyler misiniz dedi. Ona geliyorum. Şuraya geliyorum. Şurada arkadaşlar. Şimdi tamamını tekrar edeyim. Tam kareye tamamlama işlemi yapıyoruz. Bu tür ifadelerde kürenin, ekleminin olduğu.
+
+67
+00:23:52,339 --> 00:24:00,360
+Krenin orijinal reklamlerinden, yani ya şu ya da bu olup olmadığını tespit etmek için tam kareye tamamlama işlemi yapıyoruz.
+
+68
+00:24:01,199 --> 00:24:09,719
+O zaman işaret değil mi tanesim, bakın. X kare ile 6x'i birlikte düşünüyoruz, z çapada geleceğim. Bunu x artı 3'ün karesi diye yazalım.
+
+69
+00:24:10,519 --> 00:24:17,319
+y kare eksi 4y'yi düşündüğümüz zaman y eksi 2'nin karesi yazalım. z kare eksi 2z'yi düşündüğümüz zaman z eksi 1'in karesi diye yazalım.
+
+70
+00:24:17,556 --> 00:24:34,456
+Geriye şu kalıyor arkadaşlar. Geriye. Tabit ne oldu? O kalıyor. Bakın burada 9 var. Burada 4 var. Karayı açtığımız zaman. Burada da 1 var. Bir de artı 5 olması lazım değil mi? Artı 5 olması lazım. Şurada da artı 5 olması lazım.
+
+71
+00:24:38,067 --> 00:24:55,507
+Şöyle olması lazım değil mi? Şu artı 5'i yediğini varsayın. Artı 5'i yediğini varsayın. Şurası ne oluyor? 9 artı 4 artı 1. Kaç parası arkadaşlar? Şurası 14. 5'i de birlikte düşünürseniz yani 5'i çıkaracağınız 9 kalıyor. O 9'u buraya koyuyorsunuz. Tamam mı?
+
+72
+00:24:59,539 --> 00:25:00,420
+Panasıyla bir şey?
+
+73
+00:25:09,364 --> 00:25:18,124
+Burada bir yazım hatası mı yok galiba? Yazım hatası varsa bir daha bakarsın. Yok, bilmiyorum ama bir daha bakarım ben sonra. Şunu bir sileyim, bir daha bakarsın tekrar.
+
+74
+00:25:22,771 --> 00:25:24,768
+Yazıma tasabası da tekrar bakarım.
+
+75
+00:25:24,768 --> 00:25:51,288
+Birazcık topolojiden bahsedeceğim arkadaşlar. Bu topoloji matematiğin en ileri kavramlarından birisi. Matematikte bile çok zor kavramlardan birisi. Ama ben isim olarak bazı şeyleri kullanacağım. Açık komşuluk kullanacağım. Açık küme, kapalı küme gibi kelimeleri kullanacağım için burada çok somut olarak sizin anlayacağınız anlamda bir iki laf edeceğim. Komşuluk şu demek arkadaşlar. P, R, N'de bir nokta.
+
+76
+00:25:51,731 --> 00:26:01,052
+R'de pozitif bir sayı ise, B, P, Q, küçük R olacak şekildeki bütün noktaların tüm etsine P'nin komşuluğu veriyor.
+
+77
+00:26:01,951 --> 00:26:04,152
+Somutlaştıralım şimdi, bunu somutlaştıralım.
+
+78
+00:26:04,331 --> 00:26:05,731
+Sizi anlayacağınız tarzı da getiriyorum.
+
+79
+00:26:06,031 --> 00:26:09,511
+Bakın M'ye 1 verdiğiniz zaman arkadaşlar, şurası ben onu yazayım.
+
+80
+00:26:10,851 --> 00:26:19,152
+Bakın şu uzaklık M'ye 1 verdiğiniz zaman, şöyle bakın, mutlak X, küçük R gibi görünüyor.
+
+81
+00:26:19,412 --> 00:26:26,412
+Tamam mı? N'ye 1 verdiğiniz zaman. Orijinden bakalım. Bu R, R güzel olmadı ama mutlak x küçük R gibi görünür.
+
+82
+00:26:26,912 --> 00:26:36,612
+N'ye 1 verdiğiniz zaman. Bildiğiniz mutlak değer işlemi. Bu eksi R değil mi? Eksi R, eksi R, artı R diye alırsınız. Şöyle bir aralık.
+
+83
+00:26:37,779 --> 00:26:47,519
+Şöyle bir aralık. Tamam mı? R'ye 1 verdiğiniz zaman, özür dilerim, N'ye 1 verdiğiniz zaman, N'ye 2 verdiğiniz zaman arkadaşlar, şu uzaklık, x kare artı y kare değil mi?
+
+84
+00:26:47,699 --> 00:26:53,240
+x kare artı y karenin kare kütü, bakın şurası, N'ye 2 verince, x kare artı y karenin kare kütü.
+
+85
+00:26:57,172 --> 00:27:04,572
+Şurası x kare artı y karenin kare kiki. Her iki tarafın karesini alırsanız, x kare artı orijinal göre söylüyorum. Şuraya göre söylemedim.
+
+86
+00:27:04,952 --> 00:27:16,172
+x kare artı y kare küçük v kare gibi görünüyor. Eğer noktaları açık yazarsanız, mesela p'nin bileçenlerini şuraya ben yazayım görünsün diye, p'yi şöyle düşünürseniz,
+
+87
+00:27:18,172 --> 00:27:22,652
+p'yi x, y, q yazdığı için onu tekrar yazmayacağım.
+
+88
+00:27:23,092 --> 00:27:32,772
+Bakın P'yi şöyle düşünürseniz, nokta olarak, Q'yu da AB diye alırsanız, o zaman bu uzaklık, x-a'nın karesi, artı y-b'nin karesi oluyor değil mi?
+
+89
+00:27:33,092 --> 00:27:41,172
+T2 uzaklığı, x-a'nın karesi, artı y-b'nin karesi oluyor. Onun da kare kök geldiği için, v kareden küçük kalmasını bekliyorsunuz.
+
+90
+00:27:41,472 --> 00:27:50,612
+Şurası, bildiğiniz uzaklığın, kare kökini aldığınız zaman uzaklık, v'den küçük kalıyor. Şuradaki, şunun maviyle işaretleyin, biraz sonra söyleyeceğim.
+
+91
+00:27:51,539 --> 00:28:11,639
+Şunu mavi ile işareteyim, biraz sonra söyleyeceğim. Eğer n eşittir 3 alırsanız arkadaşlar, n eşittir 3 alırsanız, bu kez P'nin bileşenlerini Px, Cz almış oluyorsunuz. Burada P'nin bileşenlerini Px, Cz, Q'nun bileşenlerini Qabc. Yani P'nin bileşenleri Cz, Q'nun bileşenlerini ABC almış oluyorsunuz.
+
+92
+00:28:11,892 --> 00:28:18,912
+O zaman da, burası x-a'nın karesi, şuradan gelen, artı y-b'nin karesi, artı z-c'nin karesi.
+
+93
+00:28:19,172 --> 00:28:23,231
+Kare kökünü kaldırmak için, sağ taraftaki d'nin de karesini aldık. Bakın bu.
+
+94
+00:28:23,552 --> 00:28:27,951
+Bunu da görüyorsunuz, sol tarafı küre değil mi? Bakın küre. Şimdi adını koyalım bunların.
+
+95
+00:28:30,291 --> 00:28:45,891
+Şu maviyi silmeyin, adını koyalım bunların. Maviye geri geleceğim. Bunda da var mavi de bir tanesini işaret edelim. Şimdi arkadaşlar bakın, şuna, buna, bu eşitlik gelmezse, yani x eksi a'nın karesi artı y eksi b'nin karesi küçük r kare.
+
+96
+00:28:46,324 --> 00:29:00,104
+şeklindeyse, bunun biraz sonra eşitlik burada gelmez de, eşitlik hali nasıl ortaya çıkabilir, onu da söyleyeceğim. Buna bir açık disk deniyor. Diskten kasıt, o İngilizce'de disk dediğin için biz de disk diyoruz, daire.
+
+97
+00:29:00,819 --> 00:29:11,699
+Onu geçen konuşmuştuk galiba. İngilizce'de tek olarak daire kullanılıyor. Biz bazen çember, bazen daire diyoruz ya. Orada Sörtür'de kullanılan durumlar olabilir ama.
+
+98
+00:29:12,000 --> 00:29:20,219
+Bana bir açık disk deniyor. Şu eğer eşitlik gelmezse buraya açık disk. Ne zaman geleceğini birazdan göreceksiniz. Burada gelmez ama başka şeyler de gelebilir.
+
+99
+00:29:21,599 --> 00:29:28,819
+Eğer x'e a'nın karesi, at y'e eksi b'nin karesi, at y'e eksi c'e'nin karesi küçük refer olursa, bakın burada gene sadece küçük var.
+
+100
+00:29:28,819 --> 00:29:43,159
+eşitlik yok. Buna da bir arkadaşlar, açık türe deniyor. Açık türe. Şimdi açık nasıl oluyor? Onu görelim. Şöyle hemen minnacık çiziliyor. Bak. Güzel çizemem de onun için şöyle yapıyorum.
+
+101
+00:29:46,740 --> 00:29:49,860
+Buradan ne anladığımıza cevap verir misiniz? Şu nokta noktalar.
+
+102
+00:29:53,875 --> 00:29:57,715
+Cevap verir misiniz? Şuradan ne anladın? Orijinde olsun bu.
+
+103
+00:30:01,587 --> 00:30:06,867
+Hadi her bir kişi cevap etsin. 72 kişi var. Ne anladınız buradan?
+
+104
+00:30:10,900 --> 00:30:23,320
+Açık, açık, açık kelimesini soruyordum. Bakın bu bir açık diş. Verir misiniz? Nokta nokta geldiği için açık diş. İçini dikkat alıyorsunuz, sınırı dikkate almıyorsunuz.
+
+105
+00:30:23,900 --> 00:30:31,660
+Açık küre dediği zaman da, yani burada eşitlik yoksa, açık küre dediği zaman da yukarıda küreye çirmiştim ya, kürenin nokta nokta alıyorsunuz.
+
+106
+00:30:32,559 --> 00:30:34,559
+Şunu çileyim, yukarı çıkayım.
+
+107
+00:30:37,875 --> 00:30:54,735
+Şurada arkadaşlar, bakın şu koyu yapmışım efendim. Koyu kısmı nokta nokta aldığınız zaman bu açık türe oluyor. Tamam mı? Burada eşit olduğu için, görüyor musunuz? Eşitlik geldiği için koyu almışım, sınır dahi. Ama bunu küçük diye yazarsanız bunu nokta nokta yapıyorsunuz ki açık kal.
+
+108
+00:30:55,284 --> 00:31:01,164
+Açıkla ilgili anladınız mı arkadaşlar? Açığın ne anlama geldiğini. İyi kötü, kafanızda bir şey oluştu mu?
+
+109
+00:31:01,584 --> 00:31:02,884
+Hocam küçük, küçük eşit olursa?
+
+110
+00:31:03,403 --> 00:31:08,744
+O zaman kapalı olacak işte. Onu söyleyeceğim biraz sonra. Yani eşitlik gelmesi halini söyleyeceğim biraz sonra. Tamam mı?
+
+111
+00:31:08,960 --> 00:31:32,620
+Şimdi kümeyi tanımlayayım, ondan sonra seveyim. Bakın açık küme neymiş arkadaşlar? S, bir S kümesi alıyorsunuz. Z, N'nin, Aksu mesela bir S kümesi alıyorsunuz. S'nin her komşuluğu. Komşuluk bu. Tamam mı? S'nin her komşuluğu. Eğer S'de, S'de içerilmiş, ihtiva edilmiş, içerilmiş demek, içerilmiş bir komşular sahip ise S'ye bir açık küme deniyor. Şimdi somut.
+
+112
+00:31:32,960 --> 00:31:43,640
+Bu kavram, dedim ya, ağır bir kavram, matematik bölümü içinde çok ağır bir kavram. Somutlaştıralım şimdi. Ne demek açık? Kim sormuştu bana? İsminizi alabilir miyim hitap etmek için?
+
+113
+00:31:46,620 --> 00:31:54,080
+İsminize hitap etmek için sadece. Bir arkadaşımızda eşitlik olsa ne olacak dedim ya, o arkadaşımıza söyleyeyim.
+
+114
+00:31:54,451 --> 00:32:16,352
+Tamam. Bakın, eşitlik yok. Görüyor musunuz? V kare demesiyle. X büyük sıfır, Y büyük X kare. Bu arkadaşlar bir açık küme. Bu bir açık küme. Şimdi aynı arkadaşımız aynı soruyu sorabilir mi? Bu nasıl kapanır diyebilir mi mesela? Der mi? Niye demiyor ya? Küstü mü?
+
+115
+00:32:23,827 --> 00:32:51,687
+Tamam demiyor. Şimdi, demek ki bakın, görüyorsunuz, eşitlik gelmediği zaman tüme açık oluyor. Bu bir topolojik bir şeyler daha var ama orasına girmeyin. Tamam mı? Matematik bölümünde bazen anlatılıyor ama siz girmiyorum. Ben sadece bakın eşitlik gelmediği zaman açık olduğunu söylüyorum. Bir tanımla birlikte nasıl kapanıyor onu da söylüyor. Şimdi aferin serisi, eğer bir tüme açıksa onun tümleyeni kapanırdır. Bir daha tekrar ediyorum, eğer bir tüme açık ise onun tümleyeni kapalıdır.
+
+116
+00:32:51,827 --> 00:33:18,127
+Şimdi, başka bir küme bakın. Başka bir küme. Bu açık küme değil mi? Eşitlik gelmediği için açık küme. Bunun tümleyenini alırsanız arkadaşlar, şu büyüğü küçük eşit diye yazarsınız değil mi? Bakın, bu şuradaki büyüğü, şöyle işaretleyin. Bakın burada büyük, bu bir açık küme. Tümleyenini aldığınız zaman bakın, küçük eşit yazarsınız. İşte bu bir kapalı küme arkadaşlar. Şimdi çağrışım yaptı mı, iyi kötü kafanızda bir şey canlandı mı açık kapalı da?
+
+117
+00:33:19,539 --> 00:33:20,500
+Cevap verin lütfen.
+
+118
+00:33:22,180 --> 00:33:23,099
+Canlandırıyorum, evet.
+
+119
+00:33:23,160 --> 00:33:23,740
+Oldu bir şeyler.
+
+120
+00:33:24,420 --> 00:33:27,599
+Tamam. Demek ki böyle olduğu zaman açık, bakın tümleyeni kapalı.
+
+121
+00:33:27,779 --> 00:33:34,860
+Şimdi buradan hareket ederseniz, bunun tümleyenini alırsanız, küçük eşitin yerine büyük yazacağınız için, bakın bu kapalı olduğu için, bu açık olacak.
+
+122
+00:33:36,079 --> 00:33:37,559
+Evet. Bu kadar yeterli zaten.
+
+123
+00:33:38,324 --> 00:34:04,624
+Mühendisliği öğrenciler için bu kadar bir, efendim. Sınır noktaları var arkadaşlar, sınır üzerinde. Bakın, görüyorsunuz, eşitlik olursa, şuradan gene somutlatsın diye, şuradan söyleyeyim, bakın, şu eşitlik olursa, buna dahil olacağı için, bunun üzerindeki noktalar kümeye dahil olmuş oluyor. Bakın, eşitlik olursa, şu kısım kümeye dahil olacağı için, bunun üzerindeki noktalar da kümeye dahil oluyor. Sınır noktaları deniyor. Tamam mı? Ona sınır noktaları, o kadar bilgi yeterli.
+
+124
+00:34:06,451 --> 00:34:14,851
+Görüyorsunuz, sınır noktaları. Yani küçük eşit olduğu zaman onu eşit yapıyorsunuz ki sınır noktalarında BD ile, BD ile gösterilmemişiz falan.
+
+125
+00:34:14,851 --> 00:34:29,851
+İç noktada içinde kalan nokta tamam mı? İçinde kalan nokta bak. Eğer bu böyleyse, bu böyleyse, özür dilerim, böyleyse içinde kalanlar, bak eşitliği kaldırıyorsunuz, iç nokta oluyor, dışında kalanlar da dış nokta oluyor. Şöyleyiz.
+
+126
+00:34:30,632 --> 00:34:34,231
+Adı üstünde zaten iç, dış. İçinde kalma, dışında kalma.
+
+127
+00:34:34,579 --> 00:34:53,139
+Bu kadar bilgi yeterli arkadaşlar. Daha fazla kullanmayacağız zaten. Çok nadirin, dış noktayla karşılaşmayabiliriz. Büyük ihtimalle karşılaşmayacağız. Bu kitapta genel anlattığım için, yani size anlatılmayan bazı konular da olduğu için, yüzey integralleri falan var, orada lazım oluyor da onun için yazmışım ben. Burada da çıkarmadım, kısadık bahsederim diye.
+
+128
+00:34:54,039 --> 00:35:01,799
+Şimdi geldik vektörlere. Vektörleri daha önce hiç görmemiş olan var mı arkadaşlar? Vektörleri daha önce lisede falan hiç görmemiş olan var mı?
+
+129
+00:35:04,467 --> 00:35:06,347
+Yani ilk kez duyuyorum diyenler var mı?
+
+130
+00:35:08,607 --> 00:35:09,728
+Matematik içinde mi hocam?
+
+131
+00:35:10,147 --> 00:35:13,768
+Evet, evet. Yok fark etmez. Fizikte de olabilir. Fizikte de görmüş olalım. Fizikte de görülüyor.
+
+132
+00:35:15,627 --> 00:35:21,787
+Yani hiç karşılaşmadım. Ben ilk kez vektör kelimesini duyuyorum diyen varsa, biraz daha şey yapacağım da. Tane tane yapacağım.
+
+133
+00:35:24,807 --> 00:35:26,567
+Evet, evet. Kullanılıyor matkabda.
+
+134
+00:35:27,827 --> 00:35:41,167
+vektörler, mehtapta falan kullanılıyor. Birçok yerde kullanılıyor. Mühendislikte falan acayip kullanılıyor. Ben bir tane yazdım bakın şuraya yukarı gideyim mi? Şöyle bir yerden esinlenerek yazmıştım. Oraya geri geliriz. 7. sayfamızı konuştuk. Bakın.
+
+135
+00:35:42,324 --> 00:35:52,463
+Şurada bir tane somut olsun diye, bir rüzgarın tam olarak tarif edilebilmesi için, değil mi rüzgar sonuçta, hızıyla birlikte yönünün de belirtilmesi gerekiyor.
+
+136
+00:35:52,844 --> 00:35:56,704
+Değil mi? Hızı ve yönü. Bu durum işte bir vektörle şöyle açıklıyormuşuz.
+
+137
+00:35:57,152 --> 00:36:17,632
+Eğer rüzgar güneyden attım şimdi, attım kafadan tamamen, güneyden 40 km bölü saatlik bir hızla esiyorsa, onu temsil etmenin yollanmanın biri, bakın temsil etmenin yollanmanın biri, rüzgarın estiği yönde ve uzunluğu verilen ölçüye göre 40'lık bir şiddeti gösteren bir ok çizmektir. Ok çiziyoruz.
+
+138
+00:36:18,291 --> 00:36:23,391
+Mesela, kanarla ilgili bir şey yazmışım buraya, bir yerlerden esinlenmişim de, çok iyi dinlendik de.
+
+139
+00:36:23,731 --> 00:36:30,192
+Bakın, bir su kanalından akan suyun hem bir yönü hem de bir hızı vardır değil mi? Bir su kanalından, bir tarafa doğru akıyor.
+
+140
+00:36:31,091 --> 00:36:35,551
+Yönü var, bir tarafa doğru aktığına göre yönü var, bir de akış hızı var bir de.
+
+141
+00:36:35,760 --> 00:36:38,720
+Bu durumu bakın vektörlerle temsil edebiliyormuşsunuz.
+
+142
+00:36:39,039 --> 00:36:44,060
+Suyun hangi yöne doğru aktığını birkaç ok ile ok koyarak temsil edebilirsiniz.
+
+143
+00:36:44,680 --> 00:36:52,500
+İşte kanaldaki her bir noktaya da, kanal nokta yok, o noktadaki suyun hızını temsil eden bir ok ile eşlik edermiş.
+
+144
+00:36:52,500 --> 00:36:53,500
+Öyle bir şeyler.
+
+145
+00:36:54,460 --> 00:36:57,980
+Evet, somut olarak birçok yerde kullanılıyor, onu söyleyeyim yani.
+
+146
+00:36:59,280 --> 00:37:00,840
+7, 8 değilmişiz.
+
+147
+00:37:01,811 --> 00:37:16,351
+İşte böyle arkadaşlar. Bakın, şu ekranda gördüğünüz vektörlerin hepsi aynı. Uzunluğu aynı olduğu için hepsi aynı. Yani vektörü şuraya koymak, buraya koymak, buraya koymak, şuraya, şuraya, nereye koyarsanız koyun fark etmiyor. Aynı. O zaman nasıl oluyormuş görelim bakın.
+
+148
+00:37:16,724 --> 00:37:33,024
+Şuradan söyleyeyim bakın. Vektörler bir büyüklük ve bir yöne sahip nicelikleri temsil etmek için kullanılıyor. Bir büyüklük ve bir yöne sahip nicelik neyse artık neyi katlediyorsanız onu temsil etmek için kullanılıyor. Grafik olarak da yönlü doğru parçaları.
+
+149
+00:37:33,264 --> 00:37:59,784
+Yönlü doğru parçaları bir uzunluğa ve bir yöne sahip oluyor vektörler. Bak doğru parçasının uzunluğu vektörün büyüklüğü olarak ifade ediliyor. Doğru parçasının yönü de vektörün yönü olarak ifade ediliyor. Yönü temsil etmek için şöyle bir ok konuyor. Bu doğru parçası diye düşünün şurayı. Sadece şurayı yuvarlak için bakın. Şu kısım koyarak, şu oku koyarak ne tarafa doğru hareket ettiğini şöyle koyarsanız mesela aşağı doğru ok.
+
+150
+00:38:00,115 --> 00:38:13,536
+Şöyle koyarsanız, aşağı doğru, böyle koyduğunuz zaman, şöyle koyarsanız, A'a doğru, bu tarafa getirirseniz, sola doğru filan, böyle yukarı kalırsanız, yukarı doğru hareket ederse, yani yönü hareket edilirseniz yönü olduğu gibi.
+
+151
+00:38:15,219 --> 00:38:25,599
+Evet, şimdi vektörleri arkadaşlar, tabii ben kitapta yazdığım için benim için kolay oluyor. Tahtaya yazarken kolay olmadığı için yani koyar, açık art diye bir şey yok.
+
+152
+00:38:25,779 --> 00:38:33,619
+Yüzde eğitimde. O zaman üzerine ok koyuyordum ben. A üzeri ok, B üzeri ok diye koyuyordum. Siz de yazarken, yazarken koymak lazım yani.
+
+153
+00:38:33,699 --> 00:38:41,219
+Ama kitapta koyar, ben vektörleri göstereceğim dediğim zaman bu iş bitmiş oluyor. Bakın noktadan elde edeceksek böyle ok koyacağım.
+
+154
+00:38:41,219 --> 00:38:43,059
+Demek ki arkadaşlar bu şu.
+
+155
+00:38:43,219 --> 00:38:55,939
+vektörleri A ve A, B gibi koyu harflerine göstereceğiz dedikten itibaren, koyu harfler bizim için, aksini söylemediğimiz sürece, Matematik 2 boyunca vektörleri temsil edeceğiz.
+
+156
+00:38:56,371 --> 00:39:11,471
+Çitaplardan falan okuduğunuz zaman koyaklar öyledir. Ama elinizde yazdığınız zaman koyu açık diye bir şey olmayacağı anlamında o zaman ok koyacağız. Üzerine ok koyarsınız. Ben de yazarken mesela size bir şey anlatıp ok koyacağım üzerinden. Çünkü açık koyu diye yapamam.
+
+157
+00:39:11,827 --> 00:39:19,288
+Tek bir vektörü bir şekilde gösteriyorsak, A, B, C ya da X, Y, Z neyse gibi koyarlarla göstereceğiz.
+
+158
+00:39:19,708 --> 00:39:29,248
+Eğer bir vektörü noktalardan elde edecek isek, yukarıda gördünüz, P, Q gibi noktalardan elde edecek isek, onun üzerine bir ok koyuyoruz.
+
+159
+00:39:29,307 --> 00:39:34,248
+Bak şöyle yuvarlak için alıyorum. Onun üzerine bir ok koyacağız. Bunu kullanacağız arkadaşlar.
+
+160
+00:39:34,847 --> 00:39:39,708
+Çok değişkenli fonksiyonlar da yönlü türevde bunlara ihtiyacımız olacak. Şunlara ihtiyacımız olacak.
+
+161
+00:39:39,827 --> 00:39:59,488
+Bunların kullanımıyla soru da çıkıyor. Böyle üzerine ok koyacağım. Okun sağ yönü. Yani saatin dönme yönü, canlıların yönü dedi ki, bakın hep saatin dönme yönünün tersinden gidiyor her şey. Her şey ona göre planlanmış. Bir kere plan kuruldu mu öyle gidiyor artık. Demek ki noktalardan elde edilecekse, peki üzeri ok koyacağım.
+
+162
+00:40:00,000 --> 00:40:06,239
+Şimdi, bir tane görelim, bakın, P ve Q gibi, R karede, R kütlede yazdım. İki tane nokta var, P ve Q gibi nokta.
+
+163
+00:40:06,579 --> 00:40:19,500
+Aynı noktalarda, demin söyledim ya, D, P, Q. D, P, Q. Yani P ve Q noktalar arasındaki uzaklığı bulurken, Q'nun bileşenlerinden P'nin bileşenlerini çıkarıyorsunuz demiştim bakın.
+
+164
+00:40:19,760 --> 00:40:25,039
+Her şey ne kadar tutarlı değil mi? Matematiği bunun için seviyoruz. Bakın, sayfa 5'te miydi o?
+
+165
+00:40:27,443 --> 00:40:29,123
+Matematiği bunun için seviyoruz.
+
+166
+00:40:30,003 --> 00:40:37,623
+Görüyor musunuz? Bakın, şu iki nokta arasındaki uzaklığı bulurken, yani PQ yazdığım zaman, Q'nun bileşenlerinden P'nin bileşenlerini çıkarıyoruz.
+
+167
+00:40:37,623 --> 00:40:42,724
+Sonra kare işlemi falan demiştim. Bu standart arkadaşlar. Tutarlık bu zaten. Bu standart.
+
+168
+00:40:43,104 --> 00:40:46,484
+Şimdi, vektörlerde de durum değişmiyor. Vektörü elde ederken de bakın.
+
+169
+00:40:46,911 --> 00:41:06,211
+Vektörü eğer P ve Q gibi iki noktadan bir P ve bir vektör elde edeceksek, onu P, Q üzeri ok ile gösteririz. Q'nun bileşenlerinden P'nin bileşenlerini çıkararak elde ediyoruz. O zaman şu soru aklınıza gelebilir. Peki ben tam tersini yapsam ne olurdu? Cevabını bilen var mı?
+
+170
+00:41:07,251 --> 00:41:19,452
+Yani PQ vektörünü elde ederken, Q'nun bileşenlerinden P'nin bileşenlerini değil, P'nin bileşenlerinden Q'nun bileşenlerini çıkararak yazsam bir şey olur muydu diye bir soru aklınıza geliyor mu?
+
+171
+00:41:21,452 --> 00:41:22,072
+Evet hocam.
+
+172
+00:41:22,652 --> 00:41:27,912
+O zaman yön değişmiş oluyor arkadaşlar. Mesela bu standart tamam mı? Bu standart.
+
+173
+00:41:28,467 --> 00:41:45,867
+Yani İngilizce'de konsensus diyorlar ya, bir anlaşma yapıyoruz ya, anlaşmaya herkes uyacak. Diyelim bir dönem böyle gidiyor. Böyle gidiyor. Bu standart ya, PQ'yu tanımlaması bu şekilde olduğuna göre, Q'nun bileşenlerinden P'nin bileşenlerini çıkararak yazdığımıza göre bu şekilde oluyor.
+
+174
+00:41:45,867 --> 00:41:54,467
+Eğer siz yok, ben inat ettim, P'nin bileşenlerinden Q'nun bileşenlerini çıkaracağım derseniz arkadaşlar, o zaman şunu yapmışım.
+
+175
+00:41:55,668 --> 00:42:02,508
+Mavi, şuradaki o kalkıyor, buraya geliyor. Dolayısıyla vektör ne yapıyor? Ters yöne gidiyor. Anlamayan var mı?
+
+176
+00:42:05,448 --> 00:42:20,408
+Tamam. Anlaşmaya uygun davranacaksın. Tamam mı? Her zaman anlaşmaya uygun davranacaksın. Bu standardı bu çünkü. Yani hiç kimse kendi kafasına göre ya ben öyle demeyeceğim, ben böyle diyeceğim deme hakkına sahip değil. O zaman her şey tersine döner. Dedik ya, yön, saatin dönme yönünden tersidir.
+
+177
+00:42:21,012 --> 00:42:27,872
+Böyle kabul edilmiştir. Hiç kimse bunun akçını söyleyemez. Akçını söylediğiniz zaman müspet bilimlerdeki her şeyi tersine çevirmiş olur.
+
+178
+00:42:28,731 --> 00:42:36,952
+Orada hatta hatırlıyor musunuz parametrik denklemlerde saatin dönme yönünün tersini canlının yönü olarak kabul ediyoruz.
+
+179
+00:42:37,492 --> 00:42:45,572
+Eğer öyle düşünmezseniz, yani saatin dönme yönünden hareket etmeye kalkarsanız önüne bir eksi çaresi gelir, her şey ters döner demiştim.
+
+180
+00:42:45,772 --> 00:42:47,592
+Hatırlayın, her zaman böyledir bu.
+
+181
+00:42:48,052 --> 00:43:09,252
+Bunu da anladık. Üç boyutlu olunca, yani reküpte bir vektörde de o zaman iki noktadan elde edeceksiniz. Böyle iki nokta aldınız. Gene PQ eğer vektörünü elde ediyorsanız, Q'nun bileşenlerinden P'nin bileşenlerini çıkarıyorsunuz. Böyle oluyor. Şu ikisini de söyleyeyim mi arkadaşlar? Bakın şu. Şununla şu ikisi.
+
+182
+00:43:10,708 --> 00:43:36,368
+Yani soldan, bakın soldan bu işaret kapatıyor, tamam mı? Sağdan da bu işaret kapatıyor. Şuna küçük işaretinin biraz açılmış şekli değil, buna da büyük işaretinin biraz açılmış şekli değil. Böyle virgüller arasında yazdığınız zaman bu vektörü temsil ediyor. Hangi kitapta görürseniz görün, bu vektörü temsil ediyor. Bunda da aynı, tamam mı? Şunlar vektörü temsil ediyor. Şimdi başka tepsili de var, başka bir şekli de var, biraz sonra gelecek, onu söylerim.
+
+183
+00:43:37,108 --> 00:44:00,988
+Demek ki küçük büyük işaretleri arasına, küçük büyük işaretleri arasına sayılar yazdığımız zaman bu vektör, virgüller koyarak sayılar yazdığımız zaman vektör. Peki parantez yazarsak ne oluyor bu arkadaşlar? Parantez yaparsak? Bak küçük büyük yaparsak vektörü temsil ediyor. Parantez yaparsak bunları. Hemen yukarıda görünüyor ya. Efendim? Yukarıda görünüyor bak şurada.
+
+184
+00:44:01,684 --> 00:44:11,764
+Parantez yapınca nokta oluyor değil mi? Parantez olunca nokta oluyor, küçük büyük yaparsak o zaman vektör diyormuşuz. Ayrım bu, tamam mı? İkincinde de parantezi kullanmıyoruz, ayrım olsun diye.
+
+185
+00:44:12,644 --> 00:44:24,404
+Evet, burada örnek var, bir şey yok. Yani mesela PQ vektörünü elde edecekken, o zaman Q'nun bileşenlerinden, P'nin bileşenlerinden çıkarıyorsunuz, dikkat edin. Eksi 2 değil mi? Eksi 2, 1 oluyor. Eksi 2, 1.
+
+186
+00:44:25,300 --> 00:44:36,640
+Mesela QP vektörünü bulacak ostanız. QP vektörünü nasıl bulursunuz? PQ vektörü bu. Bakın QP vektörünün altına ben yazayım. Söyleyin.
+
+187
+00:44:41,012 --> 00:44:42,252
+Yüpe beklemi söyleyeyim.
+
+188
+00:44:45,619 --> 00:44:47,179
+2-1 mancaktı.
+
+189
+00:44:47,199 --> 00:44:59,679
+Evet, görüyorsunuz değil mi? Tam tersi. Bakın, bakın bunun tam tersi geliyor. Onun için, yani ikincinin bileşenlerinden birincinin bileşenlerinden çıkarmak standart olan.
+
+190
+00:45:00,139 --> 00:45:04,420
+Diğerini yapıp, bunun eşitliği görüyor musunuz? Bakın eşitliği. Yönü değişiyor çünkü.
+
+191
+00:45:05,043 --> 00:45:33,043
+Evet, bunu da biraz daha pekiştirmiş olduk. İki boyuttaki örnek, üç boyuttaki örnek, bakış zaten bunlar. Eğer bir vektörün bütün bileşenleri, eğer bir vektör arkadaşlar, iki noktadan elde edilmişse böyle, iki noktadan elde edilmişse, solda kalanla yani P'ye başlangıç noktası deniyor, Q'ya da sağda kalanla bitim noktası deniyor. Tamam mı? Eğer bir vektör iki noktadan elde edilmişse, P, Q şu şekilde yazılmışsa, P'ye vektörün başlangıç noktası, Q'ya da vektörün...
+
+192
+00:45:33,043 --> 00:45:43,963
+bitim ya da bitiş noktası deniyor. Eğer bir vektörün, bir vektör orjinden elde edilirse, orjinden elde edilirse, o zaman bu şekilde gelir değil mi?
+
+193
+00:45:44,144 --> 00:46:00,344
+Orjinden elde edilir. Yani diğerler 0 geldiyse bu şekilde gelir. Adı var da onun için. Buna arkadaşlar, orjinden elde edilirse, yani iki noktanın farklı gibi görünmezse, şu şekildeyse, buna yer vektörü ya da konum vektörü deniyor. Tamam mı? Yer vektörü ya da konum vektörü deniyor.
+
+194
+00:46:01,972 --> 00:46:25,351
+Evet. İhtiyacımız olmadığı sürece arkadaşlar, ihtiyacımız olmadığı sürece biz yer vektörlerini kullanacağız, tamam mı? Çoğunlukla yani teorik işlemleri yaparken özellikle yer vektörlerini kullanacağız. İki tane şöyle olmasın diye, şu şekilde gelmesin, uğraştırmasın bizi diye yer vektörlerini kullanacağız. Bakın 3 boyutlu uzaydaki yer vektörü, bakın Rn ve N boyutlu uzaydaki yer vektörü.
+
+195
+00:46:27,507 --> 00:46:45,047
+Evet, sıfır vektörü de söyledim. Şimdi vektörleri toplayalım. Demin noktada hatırlarsanız şöyle demiştim. İki noktayı toplamak demek, karşılıklı bileşenlerini toplamak demektir. Bir daha tekrar ediyorum. İki noktayı toplamak demek, karşılıklı bileşenleri toplamak demektir. Vektörde durum aynıdır arkadaşlar.
+
+196
+00:46:45,327 --> 00:47:11,907
+İki vektörü toplamak demek, karşılıklı birleşenleri toplamak demektir. Dolayısıyla iki vektörü toplayabilmeniz için her ikisinin de aynı boyutta olması lazım. Yani aynı uzaydan alınmış olması lazım. Açık şekline bakalım. Bakın, eğer A ve B, R, N'de iki vektörse, eğer A ve B, R, N'de iki vektörse, bunları toplarken karşılıklı birleşenleri topluyorsunuz. Yani A1 artı B1, A2 artı B2, aynı noktada olduğu gibi.
+
+197
+00:47:13,076 --> 00:47:33,596
+Toplamı bu. Çıkarması da var, bir sayıyla çarpması da var. Çıkarmada bir özel bir şey var, geometrik olarak da onu söyleyeceğim. Eğer bir vektörü bir sayıyla çarpmak istiyorsanız arkadaşlar, aynı noktada olduğu gibi bakın. Bir A vektörünü bir lambda sayısıyla çarpmak istiyorsanız, A vektörünün bütün bileşenlerinin lambda ile çarpıyorsunuz. Tamam mı? A vektörünün bütün bileşenlerinin lambda ile çarpıyorsunuz.
+
+198
+00:47:33,695 --> 00:47:53,695
+Bazen bunu sağdan sola kullanmak elverişli olabilir, bazen soldan sağa kullanmak elverişli olabilir. Bu yazım soldan sağa değil mi? Soldan sağa. Bazen sağdan sola kullanmak elverişli olabilir. Yani şuradaki ortak sayıyı çıkarmak bizim işimize yarayacak bazen. Soldan sağa ya da sağdan sola kullanacağız. Hangisi işimizi görürse.
+
+199
+00:47:55,347 --> 00:48:01,407
+Evet, yani bir vektörü bir sayıyla çarpmak demek, bütün bileşenlerin o sayıyla çarpmak demektir.
+
+200
+00:48:02,827 --> 00:48:21,568
+Çıkarma nasıl oluyormuş bakalım. Bakın bir vektörü çıkarmak demek arkadaşlar. Bir vektörün negatifini söyleyeyim mi? Önce çıkarma oradan geçir. Bir vektörün negatifi, aynı şurada gelen tanımın aynısı bakın. Bir vektörün negatifi, şuradaki lambda'yı, lambda yerine eksi bir koyarsanız, birisi çıkıp diyebilir ki niye eksi bir koyuyoruz? Yani eksi iki koyalım derse koyar.
+
+201
+00:48:21,871 --> 00:48:36,691
+Sakıncası yok. En sade rakamla konuşuyorum ben. Bakın, bir vektörün negatifi demek, vektörü eksi 1 ile çarpın demek. Çarptım, vektörü eksi 1 ile çarptım, bütün bileşenlerine eksi 1 ile çarptım, onu da gösterim olarak eksi a ile gösteriyoruz.
+
+202
+00:48:36,691 --> 00:48:43,031
+A bir vektör, eksi ile çarptığımız zaman eksi a ile gösteriyoruz. Demin birkaç kere söyledim, yön değişiyor.
+
+203
+00:48:43,603 --> 00:48:57,783
+Uzunluk aynı. Tamam mı? Büyüklüğü değişmiyor. Vektörün yönü değişiyor. Eksi bir sayede çarparsan. Uzunluğun aynı kalıp yönü değişiyor. Evet. Şimdi çıkarmayı yapabiliriz. O zaman A-B demek arkadaşlar, iki vektörün farkı demek.
+
+204
+00:48:58,239 --> 00:49:04,219
+A vektörü ile B vektörün negatifini toplamak demek. Bir daha tekrar ediyorum.
+
+205
+00:49:04,799 --> 00:49:12,099
+A2 vektörü çıkarmak demek, A-B demek yani, A vektörü ile B vektörün negatifini toplamak demek.
+
+206
+00:49:12,499 --> 00:49:19,519
+Çıkarmış oluyorsunuz. A1-B, A2-B2 nokta nokta gidiyor. Mesela A vektörünü böyle yazabilirsiniz.
+
+207
+00:49:20,115 --> 00:49:33,916
+B vektörünü de yazabilirsiniz değil mi? O zaman da B artı B eksi A diye yazarsınız. B vektörünü de bu şekilde yazabilirsiniz. Yani iki vektör varsa elimizde birini şu şekilde, mesela A'yı bu şekilde belirtebilirsiniz. Aynı şeyleri B için yapabilirsiniz.
+
+208
+00:49:35,236 --> 00:49:42,396
+Evet, vektörlerde toplama değişmelidir arkadaşlar. Dağılım özelliğine sahiptir toplama.
+
+209
+00:49:43,123 --> 00:49:48,103
+Skalerler girip çıkabilir içeri, bakın, skalerler içeri girip çıkabilir.
+
+210
+00:49:49,003 --> 00:49:51,603
+Toplamı dağılabilir, skalerlerin toplamı dağılabilir.
+
+211
+00:49:52,763 --> 00:49:54,683
+Skaler vektör toplamına dağılabilir.
+
+212
+00:49:55,503 --> 00:49:58,443
+Sıfır vektörle toplama vektörün kendisini verir.
+
+213
+00:50:00,000 --> 00:50:14,959
+Herhangi bir sıfırdan farklı, özellikle sadece söyleyeyim, bir vektörü 1 ile çarptığınız zaman kendisini verir. Bir vektörü 0 ile çarptığınız zaman 0 vektörü verir. Dikkat edin arkadaşlar, bakın. Şu ikisinde bir R sayı ile çarpma var.
+
+214
+00:50:16,467 --> 00:50:31,687
+Bir R sayısı ile çarpma var. Bir A vektörünü 1 R sayısıyla çarptığınız zaman A vektörünü kendisi verir. Eğer 0 R sayısıyla çarparsanız, bütün bileşenleri 0 olacağı için 0 vektörü verir diyor. Bunlara bazen ihtiyacımız olacak.
+
+215
+00:50:33,087 --> 00:50:36,927
+Evet, şimdi geometrik olarak toplama ve çıkarma nasıl temsil ediliyor onu görelim.
+
+216
+00:50:38,068 --> 00:50:53,088
+Şöyle, iki vektör düşünün, birbirine paralel değil. A vektörü yatay yapmışım, B vektörü de böyle dikey yapmışım. Birbirine paralel değilse, paralel olursa zaten aynı olur, o zaman bir şey ifade etmez. Şu geometrik şekil bir anlam ifade etmez, yeni bir şey vermez.
+
+217
+00:50:54,068 --> 00:51:03,688
+Birbirine paralel olmayan şöyle iki vektör düşünün. A vektörü bu şekilde, B vektörü bu şekilde. Eğer siz arkadaşlar, A ve B vektörlerini toplamak istiyorsanız,
+
+218
+00:51:04,052 --> 00:51:07,472
+A ve B vektörlerini toplamak istiyorsanız, şunu yapıyorsunuz.
+
+219
+00:51:08,132 --> 00:51:11,592
+B'nin ucundan A'ya bir paralel çiziyorsunuz.
+
+220
+00:51:12,092 --> 00:51:13,552
+Ben şöyle işaretliyim, bakın.
+
+221
+00:51:14,012 --> 00:51:16,912
+B'nin ucundan A'ya bir paralel çiziyorsunuz.
+
+222
+00:51:17,572 --> 00:51:17,972
+Çizdim.
+
+223
+00:51:19,332 --> 00:51:21,452
+Nereye kadar bu paraleli devam ettiriyorsunuz?
+
+224
+00:51:21,452 --> 00:51:24,672
+B'ye bir paralel çizecek yere kadar.
+
+225
+00:51:25,076 --> 00:51:48,195
+A'nın, B'nin ucundan tutuyorsunuz, toplama yaparken A'ya doğru bir paralel, A'ya bir paralel rektör çiziyorsunuz. Nereye kadar devam ediyorsunuz? B'ye bir paralel çizecek kadar kısma kadar devam ediyorsunuz. Ben şunu şöyle maviyle devam ettireyim bakın. Aslında bu böyle gidiyor değil mi? Böyle gidiyor. Nerede bırakıyorum? B'ye, A'nın ucundan B'ye bir paralel çizecek kadar gidiyorum.
+
+226
+00:51:48,788 --> 00:52:07,127
+Şurada bitiyor bakın. Buradan da, ağın ucundan da o çizdiğim paraleli birleştiriyorum. Şu şekilde birleştiriyorum. Dolayısıyla şu mavi ile çizdiğim kısmın önemi kalmıyor. Burada bitiyor. Şimdi arkadaşlar, orijinden, şurasını orijin diye düşünürseniz bakın. Şurasını orijin diye düşünürseniz.
+
+227
+00:52:16,947 --> 00:52:39,707
+Şuraya birleştirdiğinizde, o zaman şu vektör, şuraya oktakoyun büyükçe, bakın bu vektör A artı B vektör oluyor. Tamam mı? Şu vektör A artı B vektör oluyor. Çıkarırken de arkadaşlar, pratik olarak, çıkarırken de B vektörünün ucundan, B vektörünün ucundan başlayıp, A vektörüne bir, bakın, vektör indiriyorsunuz. Şöyle.
+
+228
+00:52:40,115 --> 00:52:57,996
+Bir vektör indiriyorsunuz. Ama rakamlara dört, böyle oluyor da, rakamlara dörtdüğünüz zaman, A ve B'yi, yani A'nın bileşenlerini sayısal olarak ortaya koyup, B'nin bileşenlerini sayısal olarak ortaya koyarsanız, şu vektörlerin çizimi değişeceği için, şunun oluşumunda biraz değişiklik gösterebilir. Aşağıda örnek varsa.
+
+229
+00:53:00,675 --> 00:53:03,815
+Bu toplamları çıkarmaya ilgili aklınıza takılan bir şey var mı?
+
+230
+00:53:04,403 --> 00:53:23,523
+Toplam ve çıkarmayla ilgili. Bu teorik. Şimdi pratiğine geçelim. Gelelim pratiğine. Bakın, şimdi düzende anlattım ki, anlaşılsın. Bakın bir A vektörü var düzende. 1-2, bir de B vektörü var. O da 3-1 diye verilmiş. Sorumuz A artı B'yi bulmuş diyor.
+
+231
+00:53:23,731 --> 00:53:48,251
+A artı B'yi bulunur. A artı B vektörü, bakın, 4, 3, 4, 3, geometrisini göreceğiz şimdi. A içi B ile, eksi 2, 1, onu da geometrisini göreceğiz. Şimdi, A vektörünü temsil edelim arkadaşlar. Dikkatlice beni dinleyin, dikkatlice dinleyin. Şunu sileyim, şunu sileyim, şuradan ok götüreceğim çünkü. Bakın, A'nın birinci bileşeni 1 değil mi? O, x.
+
+232
+00:53:49,619 --> 00:53:54,559
+Şu, gördünüz. İkinci bilekeni 2, o da Y, gördünüz.
+
+233
+00:53:59,239 --> 00:54:02,339
+Şurası güzel olmadı. Şurayı sidiyorum.
+
+234
+00:54:04,839 --> 00:54:07,059
+Azdik bir şey yapınca sidi götürüyor.
+
+235
+00:54:07,979 --> 00:54:09,419
+Tamam, şimdi oldu.
+
+236
+00:54:09,887 --> 00:54:36,088
+Bunu anladık mı arkadaşlar? Okları gördünüz. Bakın, A'nın birinci bileşeni, iç eklenin üzerinde, düzlem olduğu için. Bir bakın. A'nın ikinci bileşeni, y eklenin üzerinde. Bakın. İki. Şimdi, bu A artı B vektörünü belirlemek için arkadaşlar, önce A vektörünü bulalım. Bakın, bir sayısından y ekleninle bir paralel çizdim. İşte görüyorsunuz. Hatta bunu kırmızıyla çizeyim. İyice anlaşılsın diye.
+
+237
+00:54:36,947 --> 00:54:38,867
+Bakın, bir paralel çizdim.
+
+238
+00:54:40,627 --> 00:54:44,987
+Sonra bunu, tabii bu yukarı doğru gidiyor ama, bitmesi gerektiği için 2'de bırakıyorum.
+
+239
+00:54:46,447 --> 00:54:47,207
+2'de bıraktım.
+
+240
+00:54:47,467 --> 00:55:00,507
+Şimdi arkadaşlar, bunu orjine birleştirdiğimiz zaman, daha doğrusu orjinden bu şu bir iki noktasına bir ok götürdüğümüz zaman, orjinden bir iki noktasına bir ok götürdüğümüz zaman, bu A vektör oluyor.
+
+241
+00:55:01,087 --> 00:55:02,227
+A vektörünü anladık mı arkadaşlar?
+
+242
+00:55:02,804 --> 00:55:05,124
+Onaylayın lütfen. A vektörünü anladık mı?
+
+243
+00:55:06,824 --> 00:55:07,324
+Anladım.
+
+244
+00:55:08,224 --> 00:55:10,944
+Tamam. B vektörü de aynı.
+
+245
+00:55:11,264 --> 00:55:14,064
+Şunu sileyim, her şey görünsün diye. B vektörü de aynı.
+
+246
+00:55:15,424 --> 00:55:21,784
+B vektöründe de, bakın, x bileşeni 3, y bileşeni 1, aynısını yaptım, oku getirdim.
+
+247
+00:55:22,024 --> 00:55:25,204
+Şimdi, B vektörü böyle oluştu, görüyorsunuz. A vektörü böyle oluştu.
+
+248
+00:55:25,204 --> 00:55:26,204
+Şimdi ne yapıyorduk?
+
+249
+00:55:26,739 --> 00:55:44,819
+Bunun ucundan B'ye bir panelet çiziyoruz. Böyle gidiyor. Böyle gidiyor. Sonra nereye kadar götürüyoruz bu uzunluğu? B vektörünün ucundan A'ya panelet çizecek kısma kadar götürüyoruz. Götürdük bakın. Şu kırmızıyla kalan kısımlar, şu kırmızı olan kısımlar bir şey ifade etmedi.
+
+250
+00:55:47,251 --> 00:56:10,391
+Sonra, orjinden, yani şuradan, aynı orada da yapmışız. Bu ucu birleştirdik, bir vektör çiftik diyelim ona. Bakın birleştirdik. Bu A artı B vektör oluyor. Şimdi A-B vektörü orada dedim ya, sembolik yapıyorum, rakamlar geldiğinde değişebilir diye. Şimdi A vektörünü biliyorum arkadaşlar. Bakın A vektörü duruyor burada, görüyorsunuz. 1-2'de duruyor bu A vektörü. Ama
+
+251
+00:56:11,731 --> 00:56:15,771
+B vektörünü, A-B'yi bulabilmek için, A-B vektörüne ihtiyacım var.
+
+252
+00:56:16,192 --> 00:56:18,092
+A-B vektörü. Şuraya yazayım bakın.
+
+253
+00:56:18,431 --> 00:56:21,172
+A-B vektörü, tabi yazarken üzerine okuyorum.
+
+254
+00:56:23,011 --> 00:56:24,751
+Söyleyin, A-B vektörü neydi?
+
+255
+00:56:25,711 --> 00:56:26,132
+Söyleyin.
+
+256
+00:56:27,692 --> 00:56:28,652
+A-3-1.
+
+257
+00:56:29,211 --> 00:56:31,271
+Teşekkür ederim. A-3-1.
+
+258
+00:56:31,551 --> 00:56:33,231
+Şimdi bunu da işaretleyeceğiz arkadaşlar.
+
+259
+00:56:33,231 --> 00:56:35,071
+Bakın, işte görüyorsunuz.
+
+260
+00:56:35,132 --> 00:56:37,711
+A-3, Y-1.
+
+261
+00:56:38,483 --> 00:56:58,563
+Şu B ve, eksi B vektörün oluşumunu herkes anladın mı arkadaşlar? Şu ekranda. İsterseniz de bir kızartayım. Bunu da anladık mı? Anladınız mı? Bunu anlayınca bunu da anlıyorsunuz otomastik olarak. Tamam mı? Anladınız. Şimdi birleştirdiğiniz zaman bakın bu oluyor. Gene paralel çizmiş oluyorsunuz. Görüyor musunuz? Gene paralel çizmiş oluyorsunuz. A eksi B vektörü burası.
+
+262
+00:57:01,523 --> 00:57:08,083
+Evet, çıkarma da bu böyle geometrik. Biraz aslında daha hızlı geçecektim ama neyse birazcık bilgi vermiş oldum.
+
+263
+00:57:08,503 --> 00:57:18,643
+Şimdi bir vektörün uzunluğu arkadaşlar. Şurada bir şey kalmış. Bir vektörün uzunluğu. İki nokta arasındaki mesafe bu. İki nokta arasındaki uzunluk bu. Değil mi?
+
+264
+00:57:18,863 --> 00:57:22,903
+Vektörün uzunluğu nasıl oluyormuş onu görelim bakın. Bu tanımı unutmayacaksınız tamam mı?
+
+265
+00:57:23,315 --> 00:57:39,115
+Matematik ihtiyacınız olduğu sürece bu tanımı unutmayacaksınız. Ben şimdi şuraya bir cildiz koyuyorum, az sonra silerim ben. Bu tanımı unutmuyorsunuz. Matematik 2'ye ihtiyacınız olduğu sürece bu tanıma da ihtiyacınız olur. Bunu unutmuyorsunuz. Üç boyutlu zayda yazdım ben, genel yazabiliriz bunu.
+
+266
+00:57:39,539 --> 00:57:51,200
+Bir A, reküpte bu, tamam mı? Burası reküpte. R, N'ye atabiliriz. Aynen. Hiçbir sakınca çöz. Dedim ya, birçok şeyi R² ve reküpte anlatacağım. Orada bizim işimizi gördüğü için orada anlatacağım dedim. Burada reküpte yazdım.
+
+267
+00:57:51,680 --> 00:57:57,579
+Reküpteki bir A vektörünün uzunluğu bakışını da gösteriliyor. Mutlak değeriyle arkadaşlar çift çizgi, tamam mı?
+
+268
+00:57:58,291 --> 00:58:25,291
+Çift çizgi koyuyorsunuz, unutmayın. Bazı kitaplarda tek çizgi koyuyor, ben doğru olmadığı kanatım değil. Tek çizgi mutlak değer demek. Mutlak değer, R ve R karede geçerli. Bir daha söylüyorum, mutlak değer, R ve R karede geçerli. Yani, X bir R'ye sayıysa mutlak değerden bahsedebilirsiniz. R bir kompleks sayıysa mutlak değerden bahsedebilirsiniz. R üzeri 3'ten itibaren, tamam mı? R üzeri 3'ten itibaren,
+
+269
+00:58:27,860 --> 00:58:30,260
+mutlak değer çizgi koyamazsınız.
+
+270
+00:58:31,820 --> 00:58:34,280
+Yani bu anlaşmaya aykırı bir şey olur.
+
+271
+00:58:34,540 --> 00:58:36,120
+Anlaşmaya aykırı bir şey yapmış oluyorsunuz.
+
+272
+00:58:36,160 --> 00:58:38,120
+Onun için tek çizgi koyamazsınız.
+
+273
+00:58:38,480 --> 00:58:39,860
+İki çizgi koyacaksınız.
+
+274
+00:58:40,220 --> 00:58:45,620
+Kitaplarda demek ki iki çizgi arasında böyle bir rektör gördüğünüz zaman onun normu ya da uzunluğu, tamam mı?
+
+275
+00:58:45,840 --> 00:58:49,440
+Uzunluk ya da normunu hesaplıyorsunuz demektir.
+
+276
+00:58:49,440 --> 00:58:49,960
+Evet.
+
+277
+00:58:50,480 --> 00:58:52,800
+Demek ki çizgi arasında A eşittir.
+
+278
+00:58:53,000 --> 00:58:53,840
+Bakın tanım çok açık.
+
+279
+00:58:54,963 --> 00:59:04,023
+bileşenlerin karelerini alıp, toplayıp karakitin alın. Uzaklık neydi zaten? Matematiği seviyorum ya. İki nokta arasındaki uzaklık neydi?
+
+280
+00:59:06,884 --> 00:59:13,163
+Seslendirmediniz, ben şuraya yazmış mıyım? Bak, bu. E bu da uzaklık. E bu da uzaklık. E o zaman aynı.
+
+281
+00:59:13,876 --> 00:59:29,376
+Bu normal iki noktalarındaki uzaklık diye söylenen kavram. Bu da bir vektör böyle verilmişse vektörün uzunluğu ya da normu, norm kadro falan diye bazı böyle norm falan diye söyleniyor, o mu? Normu diye de ifade ediliyor. Aynısı.
+
+282
+00:59:30,771 --> 00:59:38,392
+Yani, bir vektör verildiği zaman onun uzunluğunu hesaplamak demek, bileşenlerin karelerini alıp, toplayıp, kare kükürtünü alın demek.
+
+283
+00:59:38,791 --> 00:59:47,532
+İşte örnek, bakın, bileşenlerin karelerini aldınız, topladınız, 1 artı 4 artı 9, kare kükürtünü aldığınız zaman, vektörün uzunluğunu buluyorsunuz.
+
+284
+00:59:47,851 --> 00:59:52,132
+Bir kez daha tekrar ediyorum, vektörün uzunluğunu bulmaya kesinlikle ihtiyacınız olacak.
+
+285
+00:59:52,851 --> 00:59:56,132
+Kesinlikle vektör uzunluğunu bulmaya ihtiyacınız olacak.
+
+286
+00:59:56,628 --> 01:00:03,048
+Şimdi ilerliyoruz arkadaşlar. Tabii matematik ilerlediği için sonra neler bulunmuş bakalım şimdi.
+
+287
+01:00:04,188 --> 01:00:09,908
+Bilim koordinat vektörler. Bunu da arkadaşlar matematiğe ihtiyacınız olduğu sürece unutmayacaksınız.
+
+288
+01:00:10,428 --> 01:00:16,228
+Şu tanımı ve altından gelen şu şekli matematiğe ihtiyacınız olduğu sürece unutmayacaksınız.
+
+289
+01:00:16,608 --> 01:00:20,968
+Saat 11.50 olmuş. Bir ara veriyorum. Saat başına kadar. Saat başında buradan devam edelim.
+
+290
+01:09:34,579 --> 01:09:52,819
+Geldim ben arkadaşlar, devam ediyoruz. Bakın buraya da yazmışım. Görüyor musunuz? Son derece önemlidir diyor. Bakın. Son derece önemlidir ve kitap boyunca devamlı karşımıza çıkacaktır diyor. Ben de Matematik 2, değil mi? Matematik 2'de devamlı karşımıza çıkacağını söyledim. Unutmamamız gerektiğini söyledim.
+
+291
+01:09:52,819 --> 01:09:59,879
+Şimdi, bir vektörün uzunluğu demek ki bileşenlerin karelerinin toplamının kare kökü idi.
+
+292
+01:10:00,000 --> 01:10:18,899
+Bakalım birim vektörleri nasıl geçiliyor. Bunu da unutmayacaksınız tanım 2'yi. Bakın uzunluğu 1 olan, V sayı olarak 1 olan bir vektöre birim vektör deniyor. Demek ki bir vektör var elinizde. Uzunluğunu hesapladığınızda eğer uzunluğu 1 çıkarsa, rakam olarak 1 çıkarsa o vektör bir birim vektördür.
+
+293
+01:10:28,000 --> 01:10:44,520
+Birinci bileşen 1, diğerleri 0. G'de ikinci bileşen 1, diğerleri 0. K'da ikinci bileşen 1, diğerleri 0. Bu bir şey çağrıştırıyor mu? Şu bir şey çağrıştırıyor mu? Birinci bileşenin 1, diğer ikisinin 0 olması iyi de mesela. Size bir şey çağrıştırıyor mu?
+
+294
+01:10:45,203 --> 01:10:53,943
+Evet, iç eksenin üzerinde bulunur diyoruz. Teşekkür ederim. İç eksenin. Bakın, J, Y eksenin üzerinde, K'da Z eksenin üzerinde bulunacakmış.
+
+295
+01:10:54,263 --> 01:11:03,783
+Buna birim koordinat vektörleri veya sandal taban vektörleri deniyor. Hangisini kullandı? Birim koordinat vektörleri deniyor, sandal taban vektörleri deniyor.
+
+296
+01:11:04,064 --> 01:11:12,263
+Bu R3'te. Biz daha çok işlemleri R3'te yapacağız. Neden R3'te yapacağız işlemleri? Daha çok? Vektörlerden. Bilen var mı?
+
+297
+01:11:12,627 --> 01:11:14,647
+Ben söylemedim galiba de, siz biliyor musunuz?
+
+298
+01:11:17,971 --> 01:11:24,511
+Vektörel çarpımı diye bir kavram duydunuz mu? Vektörlerin vektörel çarpımı diye bir şey. Duydunuz mu?
+
+299
+01:11:25,271 --> 01:11:28,291
+Hocam R2'de biz bunu yapmadık mı? Vektörlerin vektörel çarpımı.
+
+300
+01:11:28,752 --> 01:11:33,371
+R2'de olmaz ki. Reküp de var. Daha yapmadık ya aşağıdan. Daha gelmedik.
+
+301
+01:11:33,747 --> 01:11:38,747
+Arkadaşlar, vektörlerin vektöre çarpımı sadece reçüpte tanımlıdır.
+
+302
+01:11:39,028 --> 01:11:39,887
+R3'te tanımlıdır.
+
+303
+01:11:40,127 --> 01:11:43,247
+Onun için çoğunlukla bakın R3'ü kullanmaya çalışıyorum ben.
+
+304
+01:11:43,608 --> 01:11:48,028
+R2'de de yapabiliriz, o zaman 3. bileşen 0 alırız, o çok özel bir hal, oraya girmeyeceğiz.
+
+305
+01:11:48,239 --> 01:12:16,079
+Şimdi, iyicik, k'yı öğrendik. Bakın, re karede birim vektör. Görüyorsunuz, gene aynı. Mesela, re üzeri 5'te, bakın, gene aynı. O zaman artık iyicik ortadan kalkıyor. E1, E2, E3 diye yazılıyor artık. E1 dediği zaman birinci bileşen bir. Mesela E3 dediği zaman üçüncü bileşen bir. Mesela E7 dediği zaman yedinci bileşen neyse o, tamam mı? O zaman re üzeri 8, 9 falan olur. Bunu da anladığımızı düşünüyorum. Şimdi,
+
+306
+01:12:16,239 --> 01:12:25,019
+Koordinat eksenleri ile bilim koordinat vektörlerinin birleştirilmesi ya da birlikte yorumlanmasına bakalım.
+
+307
+01:12:25,399 --> 01:12:32,260
+Görüyorsunuz, eğer bu standarttı değil mi? X, Y, Z şu şekilde 3 boyutlu uzay bizim için standarttı.
+
+308
+01:12:32,260 --> 01:12:41,840
+Eğer ihtiyacımız olursa bu X, Y, Z'nin yerlerini değiştirebilirdik. Ne zaman ihtiyacımız olduğunu dün söylemiştim. İleride gene gelecek, geldiğinde değiştirir.
+
+309
+01:12:42,323 --> 01:13:01,163
+X, Y, Z bu şekildeyse gene, bakın, İ birim vektörü X yönünde, J birim vektörü Y yönünde, K birim vektörü de Z yönünde. Bu şekle biraz sonra bir daha geleceğim. Aşağıda şekil var mı bilmiyorum, bakmadım bugün. Aşağıda şekil yoksa, bu şekle biraz sonra bir daha geleceğim, bir şey söylemek için.
+
+310
+01:13:02,644 --> 01:13:06,423
+Evet, şimdi bir tane örnek yapalım. Bu önemli arkadaşlar.
+
+311
+01:13:07,188 --> 01:13:25,628
+Beşinci örnek gibi bir çözüme kesin ihtiyacınız olacak. Bakın, bugüne kadar matematik 2'de yapılan sınavların tamamında bir vektörün uzunluğun, yani bir bilim vektörün bulunması sorulmuştur. Bir şekilde mutlaka ihtiyacınız olacak şu örnek gibi. Soru şu.
+
+312
+01:13:26,032 --> 01:13:40,852
+Bir A vektörü verilmiş, tamam mı? A vektörü verilmiş, A'dan bir birim vektörü elde ediniz, denilmiş olsun. Soru, bir A vektörü elde edilmiş, aşağıda şey var, bu kadar bırakmış. A'dan bir birim vektörü elde ediniz, demiş olsun.
+
+313
+01:13:41,211 --> 01:13:51,291
+Şimdi, siz biliyorsunuz ve kesinlikle unutmayacaksınız ki, bir vektörün uzunluğu, bir ise o birim vektördür. Değilse ne yapılacağına bakıyoruz.
+
+314
+01:13:51,291 --> 01:13:53,092
+Şimdi bir A vektörü verilmiş.
+
+315
+01:13:53,427 --> 01:14:03,028
+Bilim vektör müdür diye bir soru sorulduğunu varsayalım. Önce o soruya bir cevap verelim. A'nın uzunluğunu hesapladık. Kök 38 çıktı. Bu bilim vektör değildir.
+
+316
+01:14:03,252 --> 01:14:28,932
+A'nımız şu A vektörü, birim vektör değildir. Ama her vektör, daha doğrusu sıfırdan farklı her vektör uzunluğuna bölünerek birim yapılır. Bir daha tekrar diyorum, sıfırdan farklı her vektör uzunluğuna bölünerek birim yapılır. Anlamayan, duymayan var mı? Onaylayın lütfen. En az bir kişi onaylasın ya.
+
+317
+01:14:31,060 --> 01:14:57,940
+73 kişi var. Anladık hocam. Tamam. Demek ki bir vektör birim değilse ki uzunluğunu hesaplayıp birim olup olmadığını kontrol etmek zorunda kalacaksınız. Birim değilse uzunluğuna bölerek birim yapıyorsunuz. Bakın, A vektörü verilmiş, uzunluğunu hesapladık kök 38, birim değil. Ama uzunluğuna bölersek, bakın, 3 bölü kök 38, 2 bölü kök 38, 5 bölü kök 38, bu kesin birim vektördür. Bunu unutmuyoruz.
+
+318
+01:14:58,192 --> 01:15:06,352
+Her vektör, sıfırdan farklı her vektör uzunluğuna bölünerek birim yapılır. Daha sonra karşımıza çıkacak. Kesin. Yani sınavda çıkmamın ihtimalin çok.
+
+319
+01:15:07,832 --> 01:15:09,352
+Evet, paralel vektörler.
+
+320
+01:15:10,515 --> 01:15:19,835
+Tahmin edersiniz zaten. A ve B sıfır olmayan, sıfır olsa farklı bir şey olabilir. A ve B sıfır olmayan iki vektör ama aynı boyutta, tamam mı? Aynı boyutta. Onu katlediniz zaten.
+
+321
+01:15:20,275 --> 01:15:32,235
+Ve lambda bir resi olmak üzere, eğer A eşitli lambda B şeklinde yazılmışsa arkadaşlar, iki vektör, bir vektör diğerinin katı olarak yazılmışsa, buna bir, bu vektörlerin paralel olduğu söyleniyor.
+
+322
+01:15:38,515 --> 01:15:57,175
+sayı katı olarak yazılmışsa, onların paralel olduğu söyleniyor. Bu sayı real, pozitif olabilir, negatif olabilir. Eğer sayı pozitif olursa, aynı yönde paralel oluyorlar, sayı negatif olursa, zıt yönde paralel oluyorlar. Aynı eksiyle çarpman gibi düşünün, zıt yönde paralel oluyorlar.
+
+323
+01:15:57,359 --> 01:16:21,119
+Evet, bakalım şimdi. Soru şöyle olsun. A vektörü 2, 6, 4 diye bileşenleriyle verilmiş. B vektörünün bileşenleri 1, 3, 2. Sorumuz, bu vektörler paralel midir? Soruya vereceğimiz cevap şu arkadaşlar. Hatırlarsanız, ara vermeden önce ben oraya bir gideyim, geleyim geri. Orada söylemiştim de ben bir gidip geleceğim geri oraya. Bakın.
+
+324
+01:16:21,536 --> 01:16:29,195
+Şu işlemi, değil mi? Biz vektörü skalerle çarpma işlemini bazen soldan sağa, bazen de sağdan sola kullanırız demiştim. Hatırladınız mı?
+
+325
+01:16:29,956 --> 01:16:38,396
+Bazen sağdan sola doğru kullanma ihtiyacımız var. Yani buradaki ortak sayıları dışarı çıkarma ihtiyacımız olabilir. Önemliyiz de demiştim.
+
+326
+01:16:38,655 --> 01:16:46,216
+Gelelim şimdi buraya. Bu örneğin çözümüne gelelim. Bak burada Q3, görüyor musunuz? Bu lateksiği bir program kullanıyorum.
+
+327
+01:16:46,916 --> 01:16:48,655
+Neyse şu örneği bir anlatayım, ondan sonra bunu söylerim.
+
+328
+01:16:49,587 --> 01:16:59,268
+Şimdi A vektöründe veya B vektöründe, A vektöründe veya B vektöründe bileşenlerine baktığınız ortak bir sayı varsa onu dışarı çıkaracaksın.
+
+329
+01:17:00,207 --> 01:17:03,487
+Bileşenlerine baktığınız ortak bir sayı varsa onu dışarı çıkaracaksın.
+
+330
+01:17:03,868 --> 01:17:07,727
+Şimdi B vektörüne baktığınız zaman arkadaşlar bakın B vektöründe ortak bir sayı yok.
+
+331
+01:17:08,287 --> 01:17:11,567
+Ama A vektöründe görüyorsunuz ortak bir sayı var. Kaç o ortak sayı?
+
+332
+01:17:13,140 --> 01:17:27,319
+A vektörünün bileşenlerindeki ortak sayı? 2. Çıkardım dışarı. Bakın çıkardım dışarı. Görüyor musunuz? Şurası B vektör oldu. A vektöründeki 2'yi dışarı çıkarırsan, bakın burası B vektörü. Dolayısıyla A vektörü B vektörünün iki katı eşi.
+
+333
+01:17:27,583 --> 01:17:38,804
+İki pozitif bir sayı olduğu için bunlar aynı yönde paralel. Demin yukarıda yaptık ya, şurada bir şey. Demin yukarıda yaptık ya, vektörleri çizmeyi gördünüz ya, tek tek işaretledik, aynı onun gibi.
+
+334
+01:17:38,943 --> 01:17:53,724
+Aynı yönde paralel olacak. Yani birisi şöyleyse, diğer de burada. Şu A vektörü, bu da B vektörü ya da tam testi. Aynı yönde paralel demek bu. Evet, bunu da anladık. Şunu sileyim.
+
+335
+01:17:54,420 --> 01:18:00,639
+Şurada, latex, şurada işte, şuraya bir daha bakın, her ihtimale karşı bilgi olarak gene vermişim.
+
+336
+01:18:01,079 --> 01:18:06,559
+Sıfırdan farklı bir vektörü, uzunluğuna bölerek bir vektörü yapabilirsiniz diye buraya her ihtimale karşı bir daha yazmışım var.
+
+337
+01:18:06,940 --> 01:18:08,600
+Şurada söyledim ya, şurada.
+
+338
+01:18:09,011 --> 01:18:32,011
+Onu bir daha her ihtimale karşı size noktaları yüklerken burayı silmem zaten. Şunu görürsünüz. Şimdi şurada arkadaşlar karakik var. İngilizce'de bu kısaltması, seküretörün kısaltması karakik, sukeer. Karakik demek ki ben latekçe bir program kullanıyorum. Önüne sılaş koymazsanız, şöyle sılaş konuyor bunun önüne. Şu sılaşı koymazsanız...
+
+339
+01:18:32,399 --> 01:18:38,100
+Bu harfleri olduğu gibi alıyor. Şu sıraşı koyarsanız matematik olarak karaköke çeviriyor. Yani şöyle yapıyor.
+
+340
+01:18:39,539 --> 01:18:46,319
+Ben karaköke koymayı unutmuşum. Karaköke koymayı unutmuşum buraya. Dolayısıyla seküreti olduğu gibi kalmış.
+
+341
+01:18:46,680 --> 01:18:51,119
+Sıraş koyarsanız program onu karakök yapıyor. Evet, bunu da fark ettik.
+
+342
+01:18:52,083 --> 01:19:17,163
+Bunun kareklik olduğunu söyledim. Şimdi, soruyu okuyorum. A vektörü 0, 3, 4 diye verilmiş. Vektörü yönündeki birim vektörü bulunuyor. Bulalım. Yönündeki birim vektörü bulunuyor diyor. Neden yönün önemli onu da söylerim. Şunu şöyle bir yuvarlak için alayım. Mutmamak için söylerim. Bulalım. Önce vektörün uzunluğunu hesapladık. Hesapladık. 0'ın karesi artı 3'ün karesi artı 4'ün karesi 5 çıktı.
+
+343
+01:19:18,292 --> 01:19:35,452
+Uzunluğuna böldüğümüz zaman arkadaşlar, uzunluğuna böldüğümüz zaman A ile aynı yöndeki vektörü bulmuş oluyoruz. Peki, ters yöndeki vektörü bulunur deseydi, nasıl bulurdunuz? Ters yöndeki birim vektör? Hadi ya. Demin demedim defalarca söyledim ya.
+
+344
+01:19:36,212 --> 01:19:43,572
+Hocam eksiyle çarpardık. Evet, teşekkür ederim. Bunun önüne bir eksi koyardınız, ters yöndeki birim vektör çıkardınız. Bu kadar. Evet.
+
+345
+01:19:45,268 --> 01:19:59,667
+Şuradan bir örnek daha var. Bunu da yapalım. Okuyayım bir soruyu. Öyle bir A vektörü bulunuz ki diyor, koy olanlar biliyorsunuz vektör, açık olanlar, Taylor. Öyle bir A vektörü bulunuz ki diyor, B vektörü verilmiş şöyle.
+
+346
+01:20:00,000 --> 01:20:08,840
+2, 1, 2 olan, B vektörüne paralel olsun ve birim olsun aynı zamanda. Hem paralel hem birim olur. Tamam. İki şey yapacağız.
+
+347
+01:20:08,840 --> 01:20:15,840
+Ha, bazen söylüyorum ama burada söyledim mi bilmiyorum. Şimdi arkadaşlar, eğer bir soruda...
+
+348
+01:20:16,212 --> 01:20:31,311
+Ben bir ifade edeyim cümleyi, siz söylediysem tekrarlarsınız. Evet dersiniz. Eğer bir soruda bağlaşlar hariç, verilen her şeyi kullanmadan soruyu çözdüyseniz kesin yanlıştır. Daha önce söyledim mi böyle bir şey? Hatırlıyor musunuz?
+
+349
+01:20:32,731 --> 01:20:33,252
+Yok hocam.
+
+350
+01:20:33,252 --> 01:20:38,220
+Tamam söyledim. Bir daha tekrar ediyorum. Eğer bir soruda bağlaşlar hariç...
+
+351
+01:20:38,323 --> 01:21:05,483
+Ya da bilgiler hariç. Bağlaşır ağaç diyelim. Verilen her şeyi kullanmadan soruyu çözmüşseniz kesin yanlıştır. Ama şunu istisna düşünüyoruz. Sorunun doğru olduğunu düşünüyoruz. Tamam mı? Sorunun doğru olduğunu düşünüyoruz. Verilen her şeyi kullanacaksınız. Şimdi buradaki şeyi kullanacaksınız B ile beraber. Bir kere paralellik şartı var değil mi? Paralellik istiyor. Onu kullanacaksınız. Bir de birim olmayı kullanacaksınız. Neyle beraber? B vektörüyle beraber bunu kullanacaksınız. O zaman soru çözülmesi lazım. Tamam.
+
+352
+01:21:06,323 --> 01:21:27,384
+A ve B vektörleri paralel olacaksa, birinciyi alıyor, bakın ne olacaktır? A eşittir, lambda B olacaktır. Birisi diyebilir ki, ya ben A eşittir, eksi lambda B yazamaz mı? Elbette yazarsınız ya. Yönle ilgili bir şey ya o. Altta gelecek zaten. Elbette yazabilirsiniz. A eşittir, eksi lambda B yazabilirsiniz. O zaman lambda'ya işaret vermeniz gerekiyor.
+
+353
+01:21:27,764 --> 01:21:51,363
+Eksi koyarsanız öyle. Onun için tanımları yaparken çok dikkatli yapıldığı için tanımlar bu şekilde almış. Peki, iki vektörün eğer paralel olacaksa A eşittir lambda B olacak. İki vektörün eşitliği kuralına göre, iki vektörün eşitliği kuralına göre, bileşenler birbirine eşit olacaktı. O zaman A eşittir 2 lambda, B eşittir lambda, C eşittir eksi 2 lambda olması lazım. Değil mi?
+
+354
+01:21:51,796 --> 01:21:59,036
+Bakın, iki vektörün eşitliği kuralı, e, diğer taraftan, bunu kullanacağım, diğer taraftan, a ne olması lazım?
+
+355
+01:21:59,716 --> 01:21:59,916
+a,
+
+356
+01:22:00,435 --> 01:22:27,995
+Bilim vektörü olması lazım. Yani karelerinin toplamı 1 olması lazım. Karı kök içine de alıyoruz. Bakın, alıyorum. 2 lambdanın karesi, 4 lambda kare, lambdanın karesi, lambda kare, eksi 2 lambdanın karesi, 4 lambda kare. O da eşittir, 1 olması gerekiyor. Bilim olması için. Buradan lambdayı çözdüğünüz zaman, ne demiştim ben? Ne demiştim size? Benim öğrendiğim karı köküm içindeki bir ifadeyi kesinlikle nasıl çıkaracaktı? Mutlak değerli.
+
+357
+01:22:28,435 --> 01:22:42,636
+Mutlak değer. Mutlak değeri koyduğunuz zaman, bu mutlak değer demek işte. Bakın, değil mi? Bu mutlak değer demek. Koydum. Yani, mutlaklanda yazmadım da, artı eksi diye yazdım. Negatif, pozitif, bilmiyorum ya. Artı eksi üçlemde eşittir bir elde ederim.
+
+358
+01:22:43,315 --> 01:23:02,876
+Buradan lambayı çözdüğümü düşünün, değil mi? Lambayı çözerseniz, lambda eşittir, artı eksi bir bölüç olur. Lambda eşittir, artı eksi bir bölüç olur. A, B, C, Y, M, G, T, P yazdınız, bakım mı çıktı? Yani şunu demeye çalışıyorum. Şuraya lambların önüne artı eksi koymanın anlamı yok. Bu zaten onu halleder. Bakın şurası halleder, biliyor musun?
+
+359
+01:23:03,199 --> 01:23:12,639
+Şimdi arkadaşlar, Lambda'yı çözdüğümüze göre, ABC yerine yazdığımıza göre, yani A vektörünün bileşenleri yerine yazdığımıza göre bunu buluşuyoruz.
+
+360
+01:23:13,479 --> 01:23:13,939
+Hocam?
+
+361
+01:23:15,260 --> 01:23:21,719
+Şu A vektörü hem B vektörüne paraleldir, hem B vektörüne paraleldir, hem de birimdir.
+
+362
+01:23:21,939 --> 01:23:26,260
+Peki paralellik sayısı kaç arkadaşlar? B vektörüne paralel olan sayı kaç?
+
+363
+01:23:28,219 --> 01:23:29,219
+1 bölü 3.
+
+364
+01:23:29,600 --> 01:23:31,620
+Evet, teşekkür ederim. 1 bölü 3.
+
+365
+01:23:32,460 --> 01:23:32,980
+Hocam ben...
+
+366
+01:23:32,980 --> 01:23:35,260
+Asiyeti, eksi, fark etmiş. Evet, buyur.
+
+367
+01:23:35,300 --> 01:23:42,280
+Hocam ben şey soracaktım ya, bu birim vektör demeseydi, karelerini alıp neye eşit diyecektik? Hani burada bir eşit dedik ya vakti.
+
+368
+01:23:42,420 --> 01:23:45,540
+Yok, öyle bir şey yok. Şurası yok. Burası yok, soru da yok.
+
+369
+01:23:46,659 --> 01:23:47,079
+Tamam hocam.
+
+370
+01:23:47,100 --> 01:23:48,500
+Şurada biter. Şurada biter.
+
+371
+01:23:49,420 --> 01:23:56,880
+Yani şu birim kelimesini kullanmazsa, eğer soruya, yani vektörüne kareler olsun derse, burada biter.
+
+372
+01:23:58,387 --> 01:24:03,327
+O zaman şey yazarsınız, A vektör eşittir, lambda'yı dışarı alıştırıp, şöyle yazarsınız.
+
+373
+01:24:04,108 --> 01:24:05,507
+Yazayım mı? Yazmamışlar mısın?
+
+374
+01:24:06,188 --> 01:24:07,608
+Yok hocam, gerek yok anladım.
+
+375
+01:24:07,608 --> 01:24:11,768
+Dikliği istemezse, lambda çarpı 2,1,2 yazar.
+
+376
+01:24:12,747 --> 01:24:14,188
+Lambda'yı çözmüş olmazsınız o zaman.
+
+377
+01:24:15,788 --> 01:24:17,627
+Evet, devam ettik.
+
+378
+01:24:18,927 --> 01:24:25,567
+Şimdi önemli bir ayrıntı, bakın, her vektör, bilim koordinat vektörleri cinsinden ifade edilebilir.
+
+379
+01:24:26,163 --> 01:24:50,463
+Her vektör, bilim koordinat vektörlerinin yüzünden ifade edilebilir. Hatırlarsanız, ben vektörü ilk üşenmeyeceğim. İlk halini gösterdiğimde size bakın, şöyle dedim, neredeydi o? Biraz aşağıda mı kaldı? Ha şurada. Küçük büyük arasına yazacağız dedim, tamam mı? Küçük büyük arasına yazacağız. Sonra bir anlam vereceğiz buna. Bir yazılım şekli daha var demiştim. Geldik oraya.
+
+380
+01:24:55,859 --> 01:24:56,439
+Geçmiş.
+
+381
+01:24:57,108 --> 01:25:25,108
+Her vektör, bilim koordinat vektörler dilesinden ifade edilebilir. Eğer 3 boyutlu zayda ise i, c, k'yı kullanıyoruz. A'yı böyle yazabilir. Birçok kitapta böyle görebilirsiniz. Ben de böyle yazıyorum çoğunlukla. Birçok kitapta böyle görebilirsiniz. Koya harfle ya da üzerine ok konmuş, a eşittir, abit i artı a2, c artı a3, k şeklinde yazılmışsa, i, c, k'nın bilim vektörler olduğunu, i'nin birinci bileşeninin bir diğerlerinin sıfır, j'nin ikinci bileşeninin bir diğerlerinin sıfır, j'nin ikinci bileşeninin bir diğerlerinin sıfır.
+
+382
+01:25:25,108 --> 01:25:30,128
+1, diğerlerinin 0, karında 3. bilekenin 1, diğerlerinin 0 olduğunu unutmayacaktınız.
+
+383
+01:25:30,408 --> 01:25:35,068
+Bu reküpte, ihtiyacımız reküpte çok yoğun olduğu için rekübi buraya açıkça yazdım.
+
+384
+01:25:35,427 --> 01:25:38,868
+R, n, ve yazmak istiyorsanız o zaman i, c, k'yi kullanamıyorsunuz artık.
+
+385
+01:25:39,347 --> 01:25:43,648
+E'leri kullanacaktınız. A1, e, e1 artı diye böyle noktamada yazabiliriz.
+
+386
+01:25:44,048 --> 01:25:45,288
+Burada da ayrıntı bir daha vermiş.
+
+387
+01:25:45,887 --> 01:25:47,507
+Buna diğer kombinasyonu da deniyormuş.
+
+388
+01:25:48,275 --> 01:25:58,796
+Demek ki iki türlü de kullanacağız arkadaşlar. Asık vektörleri. Vektörleri bu şekilde de küçük büyük arasında da temsil edeceğiz. İ, C, K ile de bu şekilde temsil edeceğiz.
+
+389
+01:25:59,235 --> 01:26:06,395
+Bazen bunu, bazen bunu kullanacağız. Amacımıza uygun şekilde. Amacımıza derken hangisi şimdi o an aklımıza gelmese diye düşünebilirsiniz.
+
+390
+01:26:06,395 --> 01:26:07,335
+Soru.
+
+391
+01:26:08,275 --> 01:26:21,255
+a vektörü 1-2-4 diye verilmiş, b vektörü 2-1-3 diye verilmiş, 3a-2b vektörünü bakın, birim koordinat vektörleri cinsinden ifade edelim.
+
+392
+01:26:21,255 --> 01:26:27,615
+Yani 3a'yı bulunuz, x2b'yi bulunuz, taraf tarafa toplayınız, iyiciyi kalı olarak yazınız.
+
+393
+01:26:28,036 --> 01:26:35,015
+Yazalım. 3a bu, x2b bu, 3'ü ser attık.
+
+394
+01:26:35,604 --> 01:26:37,324
+3-6, 12 oldu.
+
+395
+01:26:38,184 --> 01:26:39,484
+Eksi 2'yi 3'ye attık.
+
+396
+01:26:39,804 --> 01:26:41,584
+Eksi 4, eksi 2, 6 oldu.
+
+397
+01:26:41,904 --> 01:26:44,424
+Şimdi, karşılıklı birleşenleri taraf tarafa topladık.
+
+398
+01:26:44,744 --> 01:26:46,224
+Karşılıklı birleşenleri topladık, bakın.
+
+399
+01:26:46,664 --> 01:26:50,104
+Eksi 1, eksi 8, kontrol ediyorum ben de, 18.
+
+400
+01:26:50,664 --> 01:26:52,684
+Tamam mı? Eksi 1, eksi 8, 18.
+
+401
+01:26:53,123 --> 01:26:59,884
+Şimdi, bunu birim korunak vektörleri cinsinde yazabilmeniz için arkadaşlar, bir kere, bu i değil mi?
+
+402
+01:27:00,543 --> 01:27:02,064
+Bu j, bu da k.
+
+403
+01:27:02,804 --> 01:27:25,724
+Yani, birinci bileşeni, birinci bileşeni, i gibi görmemiz lazım. Tamam mı? Birinci bileşeni i gibi görmemiz lazım. İkinci bileşeni j gibi görmemiz lazım. Üçüncü bileşeni k gibi görmemiz lazım. Burayı anladıysak, devam ediyorum. Şimdi birinci bileşeni i gibi göreceksek arkadaşlar, bir kere şuradaki eksiyi kaldırdım, öne aldım. 1, 0, 0 diye aldım.
+
+404
+01:27:27,028 --> 01:27:53,148
+İkinciyi alıyorum. Bakın, eksi 8 var. Eksi 8'i baş aldım. 0, 1, 0 diye yazıyorum. Üçüncü bileşen 18. Bakın, 18'i baş aldım. Onda 0, 0, 1 diye yazıyorum. Ve birincisi i, ikincisi c, üçüncüsü k olduğu için bu çıkmış oluyor. Sormak istediğiniz bir şey var mı arkadaşlar? Zaman zaman bunu yapmak durumunda kalabiliriz. Bu yazımda sormak istediğiniz bir şey var mı? Şu çıkışta.
+
+405
+01:27:56,020 --> 01:28:01,420
+Küçük büyük arasında verilmiş bir vektörü, bilim koordinat vektörleri cinsinden yazmak bu.
+
+406
+01:28:02,400 --> 01:28:05,020
+Sessiz kaldığınıza göre sorunuz yok demek ki.
+
+407
+01:28:05,620 --> 01:28:08,840
+Şu örnekte neymiş, bakayım, çözmemize gerek var mı diye.
+
+408
+01:28:09,000 --> 01:28:14,740
+Eğer ise, G vektörü için olacak şekilde lambda ve mülisaylar test edin diyor.
+
+409
+01:28:15,040 --> 01:28:16,780
+Karşılık teşhislemeden çıkıyor, bir şey yok.
+
+410
+01:28:17,460 --> 01:28:18,800
+Geldik, nokta çarpma.
+
+411
+01:28:19,120 --> 01:28:20,300
+Biraz sonra da vektörler çarpma var.
+
+412
+01:28:20,360 --> 01:28:22,400
+Demin bir arkadaşımız söylemişti ya.
+
+413
+01:28:24,051 --> 01:28:42,492
+Biraz aşağıda mı kaldı? Nerede? İlerideymiş biraz. Tamam, şimdi geldik nokta çarpımına. Nokta çarpımı arkadaşlar, fiziksel yorumu bu. Bakın fiziksel yorumu bu. Ben fizik kitaplarını okuyup yazdım buraya. Fizikçiler şöyle diyormuş. Tabi bir H kuvveti var.
+
+414
+01:28:43,923 --> 01:28:53,344
+Sabit bir F kuvveti var. Onun yaptığı işi hareketi yönündeki bileşeni ile hareketin uzaklığının çarpımı olarak tanımlı.
+
+415
+01:28:54,244 --> 01:28:56,663
+Bir işte bakın, bir F kuvveti.
+
+416
+01:28:59,564 --> 01:29:04,644
+Şimdi burada da bir Y noktalarından elde ettiğimiz, düşünün bir R vektörü var.
+
+417
+01:29:05,108 --> 01:29:12,708
+x ve y noktalarından elde ettiğimiz işin bir r vektörü var. Güzel görürsün diye. Yani bunun yatay olması, x ekseni gibi görünmesi gerekmiyor. Güzel görürsün diye.
+
+418
+01:29:13,048 --> 01:29:19,608
+f vektörü bu. O zaman paralel değil yani. Aralarda bir açı meydana geliyor görüyorsunuz. Aralarda bir açı meydana geliyor.
+
+419
+01:29:19,948 --> 01:29:30,108
+Fizikçiler bu f kuvvetinin yaptığı işi, f'nin uzunluğu, r'nin uzunluğu, çarpı aralandaki açının kosünüsü ile göstermişler.
+
+420
+01:29:30,452 --> 01:29:40,872
+F'nin uzunluğu, R'nin uzunluğu, çarpı aralarındaki açının posinus ile gösterilmişler. Ben kitapta şey diye yazmıştım, o teorik olan kısımda şöyle yapmıştım.
+
+421
+01:29:47,988 --> 01:29:49,988
+Şunu tanıyor musunuz?
+
+422
+01:29:49,988 --> 01:29:51,988
+Şu çek tanıyor musunuz?
+
+423
+01:29:56,212 --> 01:30:07,912
+Hiç duymadınız mı? Ben kitaba bile yazdım bunu ya. Biz çocukken bizde vardı Cin Ali. Sizde yok mu? Siz çocukken sizde Cin Ali yok muydu?
+
+424
+01:30:08,912 --> 01:30:10,292
+Hocam bizde Atik Ali vardı.
+
+425
+01:30:11,292 --> 01:30:11,772
+Kim?
+
+426
+01:30:12,532 --> 01:30:13,032
+Atik [öğrenci].
+
+427
+01:30:13,408 --> 01:30:41,007
+Tamam, o zaman ben de kitaba bir daha baskı yaparsam, Atik [öğrenci] yazayım bari. Bizde Cinal var, Cinal. Bak, Cinal'i ittiriyor, biliyor musunuz? F kuvveti Cinal olsun, böyle ittiriyor, bir iş yapıyor. O zaman işte bir açı oluşuyor, aranındaki açının kosünüsü ve F ve R'nin uzunluklarının çarpımı olarak tanımlanmış yapılan iş. Sonra buradan arkadaşlar, hakikaten matematik ve dolayısıyla müsbet bilimlerine bir çığır açılmış bu tanımlamadan sonra. Buradan eğrisel integral diye bir şey çıkıyor.
+
+428
+01:30:41,408 --> 01:30:49,195
+Sonra onu yüzeyi integral edileceği geliştirmişler. Ama sizde anlatılmıyor. O kısımlar burada matematik 2'de anlatılmıyor.
+
+429
+01:30:50,323 --> 01:31:00,923
+Evet, şimdi bunu tekrar göreceğiz. Biz matematiğine geçelim. Biz şimdi matematiğine geçelim. Bu tanımı artık unutmuyorsunuz. Şu tanımı.
+
+430
+01:31:01,323 --> 01:31:11,903
+İki vektörün, aynı boyuttaki iki vektörün nokta ya da skalet ya da iç çarpımı demek, karşılıklı bileşenlerin çarpılıp toplanması demektir.
+
+431
+01:31:12,212 --> 01:31:24,891
+Tekrar söylüyorum, 2 vektörün nokta çarpımı, Taylor çarpımı veya iç çarpımı. Daha çok kalkülüste nokta çarpımı kullanılıyor. Ben de koyar zeyle nokta çarpımı yazdım.
+
+432
+01:31:25,231 --> 01:31:37,652
+2 vektörün nokta çarpımı, karşılıklı bileşenlerin çarpılıp toplanması demek. Gördüğünüz ekranda, bakın, A'nın bileşenleri A1, A2, A, N, B'nin bileşenleri B1, B2, B, N.
+
+433
+01:31:37,652 --> 01:31:40,212
+Karşılıklı bileşenleri çarptınız, topladınız.
+
+434
+01:31:40,212 --> 01:32:01,152
+Buna 2 vektörün nokta çarpımı deniyor. İşle ne alakası var? Biraz sonra gelecek. Tamam mı? İşle bir alakası var, gelecek. Düzlemde düşünürseniz bunu arkadaşlar, 2 tane bakın şöyle, reküpte düşünürseniz böyle 3 tane oluyor. Tamam mı? Düzlemde düşününce böyle 2 tane, reküpte düşünürseniz 3 tane oluyor. Bu genel. Genel olanları demiştim ya, genel olanları rene ile tanımlayacağım.
+
+435
+01:32:01,555 --> 01:32:08,855
+Sonra özelleştireceğim. Kullanım yerlerine göre de onun neye 2 de 3 de nerede geliyorsa orada devam edeceğiz.
+
+436
+01:32:10,015 --> 01:32:17,435
+Buraya alışım bakın. Bazen skala çarpımlar geliyor diye. Şu örneği yapmamıza gerek var mı bilmiyorum. Karşılıklı birleşimleri çarpıp toplamışım işte.
+
+437
+01:32:17,904 --> 01:32:22,384
+Yalnız arkadaşlar, eğer iki vektörün nokta çarpımı sıfır çıkarsa, onun bir anlamı var.
+
+438
+01:32:22,463 --> 01:32:24,484
+Burada yazmışım bakın. Onun bir anlamı var.
+
+439
+01:32:24,744 --> 01:32:27,864
+Ve bunu da artık matematiğe ihtiyacımız olduğu sürece unutmayacaksınız.
+
+440
+01:32:28,184 --> 01:32:29,604
+Tanım 3'e bakalım bakayım ne diyormuş.
+
+441
+01:32:31,084 --> 01:32:34,104
+Evet, nokta çarpım özelliklerini veriyorum. Ondan sonra tanım 3 geliyor galiba.
+
+442
+01:32:34,264 --> 01:32:36,404
+Neyse aşağıda enişte. 3'ü tanım 3'e gelince bakarız.
+
+443
+01:32:36,724 --> 01:32:37,904
+Nokta çarpım özellikleri.
+
+444
+01:32:38,484 --> 01:32:42,884
+Arkadaşlar, bir vektörü kendisiyle nokta çarpımını almak demek, uzunluğunun karetini almak demektir.
+
+445
+01:32:43,304 --> 01:32:44,084
+Ispatı gerek var mı?
+
+446
+01:32:45,268 --> 01:33:09,268
+Bakın, bir vektörün kendisiyle nokta çarpımı, kareleri gelir değil mi? Kareleri gelir. Kare kök içindeki hali uzunluk olduğuna göre, o zaman kareyi buraya koyarsın. Oradaki, bu taraftan gelen kare kökü buraya koyarsınız. Bir vektörün kendisiyle nokta çarpımı uzunluğunun karesidir diyor. Birincisi bu. Diğeri, bir vektörün...
+
+447
+01:33:09,524 --> 01:33:13,804
+Vektörlerin nokta çarpımları yer değiştirme özelliğine sahiptir diyor.
+
+448
+01:33:14,284 --> 01:33:17,804
+Vektörlerin nokta çarpımı yer değiştirme özelliğine sahiptir diyor.
+
+449
+01:33:18,184 --> 01:33:23,044
+Bir başka özellik de vektörlerin nokta çarpımı toplama üzerine dağılır diyor.
+
+450
+01:33:23,724 --> 01:33:28,264
+Vektörlerin nokta çarpımı toplama üzerine dağılır diyor.
+
+451
+01:33:28,503 --> 01:33:29,404
+Tersi doğru değil ha.
+
+452
+01:33:29,844 --> 01:33:31,684
+Toplama nokta çarpım üzerine dağılmaz.
+
+453
+01:33:32,204 --> 01:33:34,124
+Nokta çarpım toplama üzerine dağılır.
+
+454
+01:33:34,124 --> 01:33:36,164
+Bildiğiniz çarpma gibi diye düşünün.
+
+455
+01:33:37,460 --> 01:33:46,979
+Soru neymiş bakayım örnekteki. Yani ihtiyaç var mı yapmaya diye bakıyorum. Bir vektör verilmiş A vektörü uzunluğu 2, bir de B vektörü verilmiş uzunluğu 3.
+
+456
+01:33:46,979 --> 01:34:04,019
+B diyor, nokta çarpımları 1 ise şu çarpma işlemini buluruz diyor. Şu nokta çarpma işlemini buluruz diyor. Demin ne dedim? Bir soruda soru doğruysa doğru kabul edilmiş, bağlaçlar arşiv verilenler şeyi kullanacaktır. Verilen bilgi soruyu çözmek için yeterli olmalı.
+
+457
+01:34:04,467 --> 01:34:23,788
+Bağlaşan hariç verilen her şeyi kullanacak durumdan katlı mı? Şimdi, birazcık bakalım neymiş? Çarpıyorum şimdi. Normal çarpıyorum. Tamam mı? Normal bakım toplamın üzerine dağılıyor. Dolayısıyla, fark üzerinden dağılıyor. Çarpıyorum. 2A çarpı 3A, yani 6A. Değil mi? 6A nokta A.
+
+458
+01:34:24,243 --> 01:34:33,163
+Sonra, eksi 4a nokta b, sonra eksi 9b nokta a, sonra artı 6b nokta b.
+
+459
+01:34:33,443 --> 01:34:35,183
+Yazdım bakın buraya, yazmışım.
+
+460
+01:34:36,763 --> 01:34:40,383
+Şuradan sonra sonucu bulmak için şu 3 bilgi yeterliymiş.
+
+461
+01:34:40,943 --> 01:34:41,443
+Yeterli mi?
+
+462
+01:34:42,943 --> 01:34:44,383
+Onayla yenilirsen, yeterli mi?
+
+463
+01:34:46,644 --> 01:34:47,523
+Yeterli hocam.
+
+464
+01:34:48,304 --> 01:34:57,724
+Bakın, A nokta A'nın uzunluğu, B nokta B'nin uzunluğu, A nokta B ile B nokta A da aynı olduğu için bunlar aynı ve sonuç 65 çıkan.
+
+465
+01:34:57,963 --> 01:35:02,764
+Şimdi geometrisi, geometriye geldik, şu işe ben bir daha geleyim, matematik seviyorum.
+
+466
+01:35:04,043 --> 01:35:10,823
+Bakın, iki vektörün uzunlukları ve aralarındaki açının kosinisi, unutmayın.
+
+467
+01:35:12,148 --> 01:35:37,468
+Şimdi matematik anlatıyor. Orada fizik, burada matematik anlatıyor. Elimizde 2 tane vektör var. Bir A vektörü, biri B vektörü. Bakın. Birisi A vektörü, biri B vektörü. Bu tamamen temsili. Ama sıfırdan farklı olmasını bekliyoruz. Sebebini söyleyeceğim. Neden? Ha buradaydı sebebi. Sebebi burada. Sıfırdan farklı olmasını bekliyoruz. Şimdi arkadaşlar bakın. Şu üçgeni düşünün. Burası A x B değil mi? Temsili şekil böyleydi.
+
+468
+01:35:37,939 --> 01:35:40,059
+Hatırlıyorsunuz, yukarıda üşenmeyi gidiyorum.
+
+469
+01:35:41,519 --> 01:35:43,800
+Bakın, temsil-i şekil böyleydi.
+
+470
+01:35:44,579 --> 01:35:47,300
+Rakamlar gelince nereye geleceğine bakardık, öyle demiştik.
+
+471
+01:35:48,220 --> 01:35:50,479
+A-B burası, tamam mı? A-B burası.
+
+472
+01:35:50,479 --> 01:36:00,319
+Şimdi, bu nokta çarpımını geometrik olarak yorumlarsanız arkadaşlar, bakın, A'nın uzunluğu, B'nin uzunluğu, aralarındaki açınız, kursunuz.
+
+473
+01:36:02,644 --> 01:36:21,144
+A'nın uzunluğu, B'nin uzunluğu, şuradan bir dikişi yönü uçturalak bunu rahatlıkla görebilirsiniz. Ve aralarındaki açının kosinus. Gördünüz mü? Bu kadar geometri bilirsinizdir herhalde ya. Üniversite kazandığımız sonuçta. Gördünüz mü şunu? Şu tanımı. Gördük hocam.
+
+474
+01:36:21,144 --> 01:36:29,264
+Şuradan bir, değil mi? Şuradan bir dikileyim. Kosinus tetap. Ne? Kosinus tetap. Ben inneyim hadi sizin yerinizi.
+
+475
+01:36:31,475 --> 01:36:36,335
+Kısır üst ete mi? Kısır üst ete mi? Kısır üst ete mi?
+
+476
+01:36:40,243 --> 01:36:41,364
+Karşı dik kenarı,
+
+477
+01:36:43,024 --> 01:36:43,264
+Evet.
+
+478
+01:36:47,699 --> 01:36:50,259
+Hocam komşunun hipotenisi olan değil mi?
+
+479
+01:36:50,299 --> 01:36:53,879
+Tamam, sadece uyuyanlara ne yapıyorlar diye söyledim.
+
+480
+01:36:54,339 --> 01:36:56,519
+Kosünistete komşu dikenanın hipotenise bölümü.
+
+481
+01:36:56,819 --> 01:36:57,039
+Değil mi?
+
+482
+01:36:57,479 --> 01:36:58,899
+Komşu dikenanın hipotenise bölümü.
+
+483
+01:36:58,979 --> 01:36:59,659
+Yazmamı ister misin?
+
+484
+01:37:00,059 --> 01:37:02,959
+Yani kos tete eşittir, a'nın uzunluğu, bölü b'nin uzunluğu.
+
+485
+01:37:04,959 --> 01:37:05,259
+Değil mi?
+
+486
+01:37:05,819 --> 01:37:07,619
+Çarptığın zaman nokta çarpımı vermiştim.
+
+487
+01:37:07,719 --> 01:37:09,359
+Çıktı, çildim.
+
+488
+01:37:09,779 --> 01:37:24,099
+Devam ediyoruz. Şimdi, A ve B'nin neden sıfırdan farklı olması gerektiğini de şuradan görelim. Bakın A farklı sıfır, B farklı sıfır. Bu genel bir tanım olduğu için R'ne'ye verdim. İşte aralarındaki açının kosünüsü,
+
+489
+01:37:24,467 --> 01:37:30,947
+Kosinus teta eşittir. Bakın, a nokta b bölü a'nın uzunluğu çarpı b'nin uzunluğu. Tamam mı? Kosinus teta eşittir.
+
+490
+01:37:31,447 --> 01:37:43,347
+A nokta b bölü a'nın uzunluğu çarpı b'nin uzunluğu. Eğer teta açısına ihtiyacınız varsa, teta'yı çekersiniz. Çektim ben buradan. Buradan buraya geçerken teta'yı çektim.
+
+491
+01:37:43,347 --> 01:37:47,728
+Teta eşittir. Art kosinus. Art kosinus biliyor musun? Art kosinus değil.
+
+492
+01:37:50,804 --> 01:37:53,944
+Onayen ya! Afkosürüs nedir? Cevap edin.
+
+493
+01:37:58,100 --> 01:38:00,100
+Kosinus tersi fonksiyonu.
+
+494
+01:38:00,420 --> 01:38:02,240
+Kosinus tersi, her zaman öyle midir?
+
+495
+01:38:03,320 --> 01:38:05,920
+Her zaman tersi midir kosinus, arkosinus?
+
+496
+01:38:08,300 --> 01:38:11,400
+Kosinus fonksiyonu birebir mi arkadaşlar? Kosinus fonksiyonu birebir mi?
+
+497
+01:38:13,100 --> 01:38:17,700
+Cevap hayır biliyor musunuz? Kosinus fonksiyonu birebir değildir. Birebir olmanın hiçbir fonksiyonun tersi yoktur.
+
+498
+01:38:18,120 --> 01:38:20,340
+Peki arkosinus nasıl oluyor da kosinus tersi oluyor?
+
+499
+01:38:23,828 --> 01:38:29,868
+Neyse, kafanızı fazla karıştırmıyorum. Şimdi şey yaparsınız, bir şey demiyorum. Tamam. Arkosinus, kosinusun tersi diye düşünün bu anlamda.
+
+500
+01:38:30,128 --> 01:38:40,868
+Kebepleri var da açıkmayayım. Şimdi ondan uğraşmayın. Eğer teta açısını bulmanız gerekiyorsa, teta eşittir, arkosinus, a nokta b bölü, a'nın uzunluğu, çarpı b'nın uzunluğu formülünden, şu formülden bulabilirsiniz.
+
+501
+01:38:41,268 --> 01:38:50,488
+Bu formülede %99 nokta milyar tane 9 ihtiyacınız olacak. Bu formülede ihtiyacınız olacak. Aralarındaki açıyı bulma formülüne ihtiyacınız olacak.
+
+502
+01:38:50,832 --> 01:39:10,632
+Bir tane örnek ben yazmışım. Rakamları tutturamamışım herhalde. Tuttursam iyi değil ama aşağıdaki örnekle tutturmuşum. Örnek 3, rastgele, önce bir rastgele örnek yapmışım. Sonra tutturulmuş bir örnek. A vektörü bileşenleri 2, 1, 3, B vektörü bileşenleri 0, 2, 4. Vektörün arasındaki açıyı bulunur diyor. Mesele gayet basit. Mesele gayet basit.
+
+503
+01:39:10,996 --> 01:39:37,676
+Nokta çarpımlarını hesaplayacaksınız. Uzunluklarını hesaplayacaksınız. Nokta çarpıma uzunluklarını böldüğünüz zaman, nokta çarpımı uzunluklarına böldüğünüz zaman, aralarındaki açıyı bulmuş oluyoruz. Evet. Yapalım. Nokta çarpım, karşı birleşenleri çarpıp topladık. 10 çıktı. A'nın uzunluğu kök 14, B'nin uzunluğu kök 20. 4 artı 16 20. Kök 20. O zaman aralarındaki açının kosünüsü,
+
+504
+01:39:38,163 --> 01:39:58,703
+Nokta çarpım bölü uzunluklar, 10 bölü bu, o da kök 5 bölü 14 çıkmış. Kök içinde 5 bölü 14 çıkmış. Eğer kozini açıyı bulacaksanız, bunun, yani kök içinde 5 bölü 14'ün, ark kozini sereleri hesaplayacakmışsınız. Radyan cinsinden hesaplarsanız arkadaşlar, ben herhalde hesap makinesinde hesaplatmışım, 0.93 çıkıyormuş.
+
+505
+01:40:02,323 --> 01:40:08,063
+Bilindik. Mesela pi bölü altı mı, pi bölü dört mu, pi bölü üç mu gibi dereceyi tam bulamıyorsunuz.
+
+506
+01:40:08,243 --> 01:40:10,103
+Örneğin en büyük olarak yaklaşık bu çıkmış.
+
+507
+01:40:10,368 --> 01:40:32,368
+Tabi derecelerin bulunduğu, bilindik anlamda pi ile ifade edilen sayısal değerlerin bulunduğu durumlar var mı? Var elbette. Aha bir sonraki örnekte. Ama bu örneğin bir önemi var. Bu örneğin. A vektörünün bileşenleri 1, 2, 5. B vektörünün bileşenleri 3, 1, eksi 1. Vektör arasındaki açıyı bulunuz diyor. Bunun bir önemi var. Gelecek şimdi. Şimdi A nokta B'yi buldunuz.
+
+508
+01:40:32,948 --> 01:40:37,908
+hala b'nin nokta çarpımını bulduğu 0 çıktığı için artık a ve b'nin uzunluğunu bulmaya gerek yok.
+
+509
+01:40:38,608 --> 01:40:45,127
+Nokta çarpımları 0 çıktığı için a ve b'nin uzunluğunu bulmaya gerek yok. Direkt 0 durattı. O zaman teta bakım pi bölü 2.
+
+510
+01:40:46,127 --> 01:40:50,368
+Tamam, teta pi bölü 2. Aralarındaki açı, bu iki vektör arasındaki açı kaçmış arkadaşlar? pi bölü 2.
+
+511
+01:40:50,667 --> 01:40:55,467
+Yani bu iki vektör neymiş? Söyleyin. Bu iki vektör. Söyleyin, kayda geçsin.
+
+512
+01:40:57,140 --> 01:41:21,300
+Efendim? Paralel mi hocam? Paralel değil mi? Hayır, hayır. Bu kaç etki? Kaç? Pi bölüki. Dik. Diktir değil mi? 90 derece ya, diktir. Şimdi bakalım. Dedim ya, bu özel bir önemi var. Şimdi tanım gelecek, bunu unutmayacaksınız. Geldi tanım. Bunu unutmuyoruz tamam mı? Bu tanımı da unutmuyoruz. Eğer iki vektörün nokta çarpımı sıfırsa onlar diktir.
+
+513
+01:41:21,844 --> 01:41:39,644
+Tanım bu. Eğer 2 vektörün nokta çarpımı sıfırsa onlar diktir. Şimdi tanımlar biliyorsunuz arkadaşlar, aksiyon gibidir. Her zaman ve her yerde doğrudur. Her zaman ve her yerde doğrudur. İstisna falan diye bir şey yoktur tanımlar. Şimdi bakın, şu 2 vektörü çizin, şu 2 vektörü çizin, şurada var ya, şöyle.
+
+514
+01:41:43,123 --> 01:41:51,743
+Nerede? Ha, şunun gibi bakın. Şu iki vektörü çizin bunun gibi. Bileşenlerden alarak üç boyutlu uzayla çizin. Kesinlikle birbirine dik iki vektör olduğunu göreceksiniz.
+
+515
+01:41:55,539 --> 01:42:08,580
+Kesinlikle bu iki vektörü, üşenmeyin bakın, bu örneğe sınırlarım zaten, üşenmeyin bu iki vektörü ayrıca 3 boyutu uzayıp çizin, yani 1-2-5 noktasını, 3-1-1 noktasını tespit ederek vektörlerle çizin, kesinlikle bunların birbirine dik olduğunu göreceksiniz.
+
+516
+01:42:09,220 --> 01:42:17,100
+O zaman dik olması demek aralarındaki açının 90 derece olması ya da nokta çarpımlarının 0 olması anlamına girilmiş matematikçileri onu bulmuş zaten.
+
+517
+01:42:17,376 --> 01:42:38,596
+İki vektörün nokta çarpımı sıfır ise onlar diktir. Bazen ortogonal kelimesi de çok kullanılıyor. Dik başka anlamda da kullandığı için ortogonal kelimesi çok daha fazla kullanılıyor. Mesela grup teori, matematik grup teori diye bir şey var. Orada dik gruplar diye bir şey yazamıyor. Ortogonal gruplar diye geçiyorsunuz. Yani İngilizceyi Türkçe'ye çevirirken de kullanım yerine göre onu ayırmak lazım.
+
+518
+01:42:38,868 --> 01:43:04,927
+Nereden atık kullanılıyorsa ona göre isim vermek lazım. Aynı şeyde olduğu gibi, çember daire ayrımında olduğu gibi, Türkçe'ye çevirdiğimiz zaman amacımız hangisi uyuyorsa onu söylemek lazım. Evet, bakın bir önemli kısım daha. Görüyor musunuz? Bilim koordinat vektörlerini görüyor musunuz? Ne diyor? Bilim koordinat vektörleri kim ne diyor arkadaş? Şu ne diyor? Diktir. Hepsi birbirine diktir diyor. Neden dikmiş? Düşenmeyelim.
+
+519
+01:43:08,148 --> 01:43:20,888
+Şimdi bu i bilim koordinat teklifleri x yönünde değil mi? c bu, k bu. Peki bu koordinat eklemleri birbirine dik miydi? Öyle kabul etmiştik değil mi? Hatırlıyorsunuz değil mi? Bu üç koordinat ekleminin birbirine dik olduğunu kabul etmiştik.
+
+520
+01:43:21,348 --> 01:43:21,768
+Evet hocam.
+
+521
+01:43:21,768 --> 01:43:31,208
+O zaman nokta çarpanları 0 olacak. i, y, k'nın nokta çarpanları 0 olacak. Matematiği seviyorum diyor. Görüyorsunuz değil mi? Her şey ne kadar tutar. 2 artı 2 eşittir 4. Bu kadar bak.
+
+522
+01:43:32,851 --> 01:43:38,452
+Evet, geldik, bunu da söyledik, bunu da söyledik. Şimdi şunun şekli var mı? Bakayım.
+
+523
+01:43:40,292 --> 01:43:47,152
+Aa, burada şekil varlama çıkmamış. Şuna bir şekil çizmiştim ben ama, şuna bir şekil çizmiştim ama, dikişken çıkıyordu.
+
+524
+01:43:47,828 --> 01:44:05,348
+Yani bakın, okuyayım bir soruyu. Köşeleri, P262, Q, ha, büyük geldi de, çildim galiba. Q, 826 ve R585 olan, doktaları olan üçgenin diyor, nasıl bir üçgen olduğunu tespit ediniz diyelim.
+
+525
+01:44:05,728 --> 01:44:12,488
+Soruyu, böyle üç nokta verilmiş, 3.1 üçgen verirler ya, bir daha tekrar edelim, 3.1 üçgen verirler.
+
+526
+01:44:12,948 --> 01:44:32,028
+Nasıl bir üçgen olduğunu tespit ediniz demiş olsun soru. Basit cevap, basit. Uzunluklarını bir bulalım. Uzunluklarını bulduk. Tabii vektör uzunlukları bulmak için önce vektörlere ihtiyacımız var değil mi? PQ'yu bir vektör yaparız. Tamam. PQ'yu bir vektör yaparız. PR'yi bir vektör yaparız. Bir de neyi?
+
+527
+01:44:33,363 --> 01:44:48,583
+Neyi vektör yaparız? Q, R'yi vektör yaparız. Ona geleceğim. Q, R'ye geleceğim. Tamam mı? Şimdi P, Q ve P, R'den 2 tane vektör oluşturalım. P, Q vektörü. P, Q vektörünü bulurken arkadaşlar, Q'nun bileşeninden, P'nin bileşeninden çıkarıyoruz. Değil mi?
+
+528
+01:44:50,163 --> 01:44:59,803
+6, eksi 4. Yani benim yazımın da doğru olduğunu kontrol ediyorum ben. 6, eksi 4, 4. Tamam. P, R vektörü 3.
+
+529
+01:45:00,340 --> 01:45:10,239
+2, 3. Tamam. Uzunlukları, PQ vektörünün uzunluğu, çünkü 68, PRE vektörünün uzunluğu, şu tane karayelini alıp topladık, karak için aldık, kök 22.
+
+530
+01:45:10,800 --> 01:45:18,939
+Şimdi, bunlar birbirine paralel mi arkadaşlar? Bu iki vektör? Paralel mi? Biri diğerinin katı mı?
+
+531
+01:45:20,819 --> 01:45:21,460
+Hayır hocam.
+
+532
+01:45:21,639 --> 01:45:27,859
+Değil, o zaman aralarında bir açı var, değil mi? Eğer bunlar birbirine paralel değilse, aralarında bir açı var. Bakalım açıya. Aha açı.
+
+533
+01:45:28,564 --> 01:45:39,944
+Arandaki açıya bakıyoruz. P'ye göre yazdım, dikkat edin. P'ye göre yazdım. Arandaki açıyı hesapladık. Şu çıkmış, işlemlerini yaptık. Nokta telkimlerini falan bulmuşuz. 0 nokta...
+
+534
+01:45:41,619 --> 01:45:58,559
+0.568796 falan diye gidiyor aşağı yukarı. Şimdi bunu dereceye çevirirseniz arkadaşlar, ben ama üşenmeden yaptım. Neden mi söyleyeceğim şimdi bakın. Bunu hesap bakacağız da tek tek yazdım ben. Neden mi söyleyeceğim? Dereceye çevirirseniz 55, yaklaşık 55.33 derece.
+
+535
+01:45:58,996 --> 01:46:25,755
+55.33 derece. Şimdi, P ile ilgili işini bitirdik. Yani, PQPR'yi aldım ya, onu bitirdim. Şimdi, Q ile ilgili işlemleri yapayım arkadaşlar. Yani, QPQR'yi alayım. Aynı şeyleri tekrar ettiğimiz zaman, bakın, şu açısı da yaklaşık derece cinsinden 34.67 oluyormuş. Şu ikisini toplar mısınız? Şu ikisini.
+
+536
+01:46:27,796 --> 01:46:28,796
+90 derece.
+
+537
+01:46:29,195 --> 01:46:30,496
+Matematiği seviyorum ya.
+
+538
+01:46:31,476 --> 01:46:35,596
+Ara anındaki 90 derece ne demekti? Az önce öğrendiniz. Ne demekti?
+
+539
+01:46:36,115 --> 01:46:37,436
+Dikdik.
+
+540
+01:46:38,695 --> 01:46:42,076
+Birgülden sonra hakikaten bakın, ben bunu eme geme ki insan bakarası da yaptım.
+
+541
+01:46:42,436 --> 01:46:46,195
+Yuvarladığım zaman bu 33'te kalıyor, bu 67'te kalıyor ve 90 çıkıyor.
+
+542
+01:46:47,016 --> 01:46:53,556
+Tam değer bulunmamakla yani bildiğimiz fibra, 6, fibra 3 gibi tam değerler çıkmamakla birlikte, birgülden sonra yuvarlarsanız gene bu çıkıyor.
+
+543
+01:46:54,644 --> 01:47:20,443
+Ha, direkt olarak nasıl hesaplayabiliriz? Bu bir yol, tamam mı? Bu bir yol. Direkt olarak nasıl hesaplayabiliriz? Ona da bakalım. Bakın, direkt olarak hesaplayabilirsin demiş. Şimdi, P'yi aç olarak kullandık değil mi? PQPR yazdık, Q'yi aç olarak kullandık, QPQR yazdık, gördük sonuç. Peki, direkt olarak nasıl yapabiliriz? RP yazdınız, RQ yazdınız. Bakın, çıktı.
+
+544
+01:47:20,815 --> 01:47:41,895
+Yani o zaman şöyle oluyor, direkt oranaktan kalktım şu. Bu üçlüden, yani P'den başlamak, Q'dan başlamak ya da R'den başlamak. Görürseniz sonucu kolay oluyor. Göremezseniz böyle yapacaksınız. Yani burada bakın şeyden, R'den başlarsanız direkt 90 derece çıkıyor. R'den başlarsanız direkt 90 derece çıkıyor.
+
+545
+01:47:43,412 --> 01:47:46,511
+Evet, şimdi buyurun.
+
+546
+01:47:46,992 --> 01:47:48,931
+Hocam hangisinden başlayacağımızı nasıl gördünüz?
+
+547
+01:47:49,532 --> 01:47:50,131
+Görmedim ki.
+
+548
+01:47:50,751 --> 01:47:51,551
+Görmedim, görmedim.
+
+549
+01:47:51,711 --> 01:47:52,551
+Hepsini denememiz.
+
+550
+01:47:52,771 --> 01:48:02,171
+Tabii tabii. Ben size örnek olsun diye tek tek yazdım bak. Bunun için P, Q ve R'ye açılan haberi verildi. Ben özellikle yazdım zaten. Yani bakınca direkt göremeyebilirsiniz.
+
+551
+01:48:02,707 --> 01:48:06,927
+Anladım. Daha demin R'den başlayınca direkt 90'ı bulduk ya.
+
+552
+01:48:07,407 --> 01:48:12,327
+Her şey R'den, işte dedim ya işte, bakın P'den çıkmıyor, Q'den çıkmıyor ama R'den başlarsanız direkt çıkıyor sonuçta.
+
+553
+01:48:13,127 --> 01:48:17,787
+Ha şöyle düşünebilirsiniz, bakın şöyle. Görünüyor anlamda demiyorum.
+
+554
+01:48:18,292 --> 01:48:38,652
+P ve Q'yu buldunuz ya, P'den başlayarak buldunuz, uzunluklarından dolayı aralarındaki açı gelmiyor. Q'dan başlayarak aralarındaki açı gelmiyor bakın, 90 gelmiyor. Birkaç tane içine yapabilirsiniz. Bakın R'den başladığınız zaman 0 çıkıyor ya. Yani şunu demek istiyorum. P'den başlarsanız şu ikisinin nokta çarpımı 0 değil.
+
+555
+01:48:39,155 --> 01:48:42,495
+Nokta çarpımı sıfır olanı bulursak direkt akış açısına dair.
+
+556
+01:48:42,595 --> 01:48:47,835
+Evet, aynen öyle. Bu üçlüden nokta çarpımı sıfır olanı bulursanız direkt sonucu söylüyorsunuz.
+
+557
+01:48:48,015 --> 01:48:51,255
+Dedi o. Demek istedi o. Ben üçünü de tek tek gösterdim.
+
+558
+01:48:51,515 --> 01:48:55,655
+Yani ha hakikaten böyleymiş diye onu görün diye tamam mı? Onu görün diye direkt gösterdim.
+
+559
+01:48:56,115 --> 01:49:01,175
+Ya yoksa ben tabii bunları görüp zaten hesaplamışım. Bunu silip direkt şunu yazabilirdim.
+
+560
+01:49:01,175 --> 01:49:05,015
+Onu yazmadım. Siz de görün diye bunu daha yaptım. Üçünü birden yaptım.
+
+561
+01:49:05,747 --> 01:49:17,767
+Evet, şimdi arkadaşlar, neymiş bu? Yorumları söylüyorum. Aranındaki açının pi bölüki olması, onların dik oldu anlamına geliyordu. Bir kez daha yorumluyoruz.
+
+562
+01:49:19,315 --> 01:49:20,715
+3 tane var galiba.
+
+563
+01:49:21,075 --> 01:49:23,315
+Teta eşittir pi bölükülürse vektörler dik.
+
+564
+01:49:23,675 --> 01:49:28,235
+Teta eşittir 0 olursa, bak teta eşittir 0 olursa, vektörler aynı yönde.
+
+565
+01:49:28,695 --> 01:49:30,695
+Teta eşittir 0 oluyor ve vektörler aynı yönde.
+
+566
+01:49:31,035 --> 01:49:33,515
+Niye? Uzunluklar burası pozitif ya.
+
+567
+01:49:34,035 --> 01:49:34,975
+O da aynı yönde oluyor.
+
+568
+01:49:35,395 --> 01:49:38,835
+Eğer teta eşittir pi olursa, bakın, teta eşittir pi olursa,
+
+569
+01:49:39,155 --> 01:49:42,575
+şunun önüne eksi geldiği için bunların yönü zıt oluyor.
+
+570
+01:49:42,875 --> 01:49:44,095
+Bunların yönü zıt oluyor.
+
+571
+01:49:44,555 --> 01:49:45,735
+Bunu da silmem görürsünüz.
+
+572
+01:49:45,735 --> 01:49:47,315
+Şimdi genel olarak...
+
+573
+01:49:47,315 --> 01:50:01,955
+Arkadaşlar, a nokta b, eşittir a'nın uzunluğu çarpı b'nin uzunluğu çarpı aralığındaki açının kosülüsü ya. Buradan kosülüs detay çektiğiniz zaman, matematiğe ihtiyacımız olduğu sürece, kosülüsün eksi 1 ile artı 1 arasında değer aldığını unutmayacaktınız ya.
+
+574
+01:50:02,855 --> 01:50:10,235
+Kosülüsün artı 1 ile eksi 1 arasında değer aldığını unutmayacaktınız. Dolayısıyla şunu yazabilirsiniz. Genel formül de bu. Genel formül bu.
+
+575
+01:50:10,591 --> 01:50:18,791
+Bu formülden Koşşivaz eşitsizliği çıkıyor. Bu mühendisliği öğrencilerinin hiç ihtiyacı olmadı bugüne kadar ama yani şeye, sınav anlamında söylüyorum.
+
+576
+01:50:19,091 --> 01:50:26,971
+Gene de olabilir. Bakın Koşşivaz eşitsizliği bu. Burada dikkat edin mutlak değer var bakın. Çünkü bu bir sayı değil mi? Bu bir R sayı.
+
+577
+01:50:26,971 --> 01:50:32,971
+Ama biz R'de kullandığımız için R sayı diyelim kompleks sayı da çıkabilir fark etmiyor. O zaman...
+
+578
+01:50:33,328 --> 01:50:58,548
+Kompleks uzayı düşünebilirsiniz. O biraz ileri düzeyiz. Biz düşünmüyoruz da. O zaman da mutlak değer aldığı için buraya mutlak değer koyuyorsunuz ama şuralara çift çizgiler koymayı unutmuyorsunuz. Bunun adına Koşi Çivas eşitsiz deniyor. Buna çok ihtiyacımız olmayacak ama aşağıdaki eşitsizliğe ihtiyacımız olacak. Şunu tanıyorsunuz. Bakın. İki vektörün uzunlukları, iki vektörün toplamının uzunluğu uzunlukları toplamından büyük olamaz diyor.
+
+579
+01:50:58,963 --> 01:51:05,704
+İki vektörün toplamının uzunluğu, uzunlukların toplamından büyük olamaz diyor. Büyük olamazsa küçük eşit oluyor işte.
+
+580
+01:51:06,503 --> 01:51:11,764
+Diğeri de Pisa Gorti öremi. Pisa Gorti öremi, iki vektörün dik olması için gerekli yeter şart.
+
+581
+01:51:11,764 --> 01:51:21,024
+İki vektörün dik olması için gerekli yeter şart. Toplamlarının uzunluklarının karecinin uzunlukları karecinin toplamına eşit olması diyor.
+
+582
+01:51:21,884 --> 01:51:24,444
+Diklik şartı neydi arkadaşlar? Diklik şartı.
+
+583
+01:51:25,460 --> 01:51:26,840
+Şurada neydi diklik şartı?
+
+584
+01:51:29,060 --> 01:51:30,360
+Teteşitli pi bölü 2 ya.
+
+585
+01:51:30,659 --> 01:51:30,800
+Evet.
+
+586
+01:51:30,960 --> 01:51:33,840
+Teteşitli pi bölü 2. Dolayısıyla A nokta B sıfır oluyor değil mi?
+
+587
+01:51:34,220 --> 01:51:35,279
+A nokta B sıfır oluyor.
+
+588
+01:51:35,640 --> 01:51:38,100
+A nokta B ortadan kalktığı için, şurada hesap yaparız.
+
+589
+01:51:38,319 --> 01:51:41,300
+Kalktığı için A artı B'nin uzunluğunun karesi eşittir.
+
+590
+01:51:41,360 --> 01:51:44,560
+A'nın uzunluğunun karesi artı B'nin uzunluğunun karesi oluyor.
+
+591
+01:51:45,659 --> 01:51:48,720
+Of arkadaşlar, bektöre çarpma geldik. Ben iyice yoruldum.
+
+592
+01:51:49,300 --> 01:51:57,960
+Burada bırakmak istiyorum. Sorularınız varsa ya da konuşmak istediğiniz bir şey varsa onları konuşalım. Sonra dersi bitirelim. Buyurun bekliyorum.
+
+593
+01:52:02,996 --> 01:52:05,696
+Hocam, bu melovar sesle ne zaman paylaşacaksınız?
+
+594
+01:52:07,016 --> 01:52:12,656
+Bugün yetişmeyebilir ama, paylaşırım ya, sözlerimde, sözümde duramamışım gibi bir durum ortaya çıkıyor.
+
+595
+01:52:12,756 --> 01:52:21,356
+Şimdi geçen hafta, dün dedim ya, anlatamayacağım bazı şeyler, kendimle alamıyorum gibi, onun için şey yapamadım, sözlerimde şey çıkıyorum, yüklerim ben.
+
+596
+01:52:22,136 --> 01:52:22,876
+Tamamdır hocam.
+
+597
+01:52:23,115 --> 01:52:26,176
+Size en elverişli zamanda, bugün, yarın neyse, yüklerim.
+
+598
+01:52:27,436 --> 01:52:28,296
+Tamamdır hocam.
+
+599
+01:52:28,996 --> 01:52:29,356
+Başka?
+
+600
+01:52:34,771 --> 01:52:44,771
+Soru soran yok mu arkadaşlar? O zaman beni dinlediğiniz için hepinize çok teşekkür edelim arkadaşlar. Haftaya görüşmek dileğiyle, sağlıcakla kalın.
+
+601
+01:52:47,012 --> 01:52:49,332
+Görüşürüz hocam. Görüşmek üzere. İyi günler hocam.
