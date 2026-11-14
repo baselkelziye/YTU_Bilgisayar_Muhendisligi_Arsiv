@@ -1,0 +1,3763 @@
+1
+00:03:05,044 --> 00:03:08,364
+Arkadaşlar, günaydın, merhabalar. Sesim geliyor mu acaba?
+
+2
+00:03:11,183 --> 00:03:12,204
+Geliyor hocam.
+
+3
+00:03:12,984 --> 00:03:14,004
+Tamamdır.
+
+4
+00:03:14,764 --> 00:03:17,324
+Bir iki dakika daha bekleyelim, hemen başlayacağız.
+
+5
+00:04:41,779 --> 00:04:45,619
+Şu an devsiye ekranı geliyor mu arkadaşlar karşınızda?
+
+6
+00:04:48,439 --> 00:04:49,459
+Geliyor hocam.
+
+7
+00:04:49,719 --> 00:04:50,479
+Tamamdır.
+
+8
+00:04:51,759 --> 00:04:53,819
+Evet, başlayabiliriz.
+
+9
+00:04:55,599 --> 00:04:57,659
+Şimdi son derste
+
+10
+00:04:59,439 --> 00:05:02,000
+şu konuları konuşmuştuk.
+
+11
+00:05:04,059 --> 00:05:05,839
+Bunları konuştuk.
+
+12
+00:05:07,119 --> 00:05:07,899
+Sonra
+
+13
+00:05:09,524 --> 00:05:21,024
+Burayı da konuştuk, şu örneği yaptık, şuradan devam edeceğiz. Şimdi yine bir seri açılımı formülü var. Bir önceki örneğin bir tık daha farklı hali.
+
+14
+00:05:21,024 --> 00:05:26,124
+Şimdi nasıl yapsam, bu an not açayım ve...
+
+15
+00:05:26,124 --> 00:05:32,223
+Bu grafik tabletim olmadığı için biraz çizmeden kod yazacağım daha çok arkadaşlar.
+
+16
+00:05:42,803 --> 00:05:44,803
+Şunun bir görüntüsünü alalım.
+
+17
+00:05:51,860 --> 00:06:04,160
+Şimdi bu tarz bir soruyu çözerken bir kere n tane terim olduğunu farz edersek, ilk başta algoritmik olarak ne lazım bize? Aslında dışarıda bir döngü olacak.
+
+18
+00:06:05,160 --> 00:06:11,160
+Bu dışarıdaki döngünün bir for döngüsü olacağını, n tane terim olacağı için başlangıç ve bitiş belli.
+
+19
+00:06:11,560 --> 00:06:15,160
+Buradan söyleyebiliriz. İşte bir n sayısını kullanıcıdan aldık.
+
+20
+00:06:15,891 --> 00:06:20,572
+İlk eleman belki dahil edilmeyebilir ama yanlış yaptım.
+
+21
+00:06:22,252 --> 00:06:24,651
+Güzel çizemiyorum mouse ile.
+
+22
+00:06:25,252 --> 00:06:27,252
+Birden ana kadar bir şey lazım.
+
+23
+00:06:27,531 --> 00:06:30,132
+Şimdi burada iki tane çözüm yöntemi önermişiz.
+
+24
+00:06:30,932 --> 00:06:42,932
+Bunlar şu arkadaşlar, şimdi ben önce payı hesaplayacağım, ondan sonra paydayı hesaplayacağım, payı paydayı oranlayacağım ve mevcut toplamın üzerine, işte şu değer üzerine
+
+25
+00:06:43,187 --> 00:07:05,867
+ekleme yapacağım. Şimdi payı hesaplamak bir kere eksponansiyel bir şey görüyorum. Eksponansiyel bir şey hesaplarken de fonksiyon kullanmayalım dersek, yani C'deki pow fonksiyonunu, yani bu işi kendimiz yapalım dersek algoritmik olarak. O zaman ne var burada? En kötü ihtimalini düşünüyoruz. Şu an daha iyi bir algoritma da görmedik.
+
+26
+00:07:06,259 --> 00:07:13,759
+x üzeri n hesaplayacağız veya x üzeri k hesaplayacağız. O zaman burada içeride girer girmez bir tane daha döngüm var.
+
+27
+00:07:17,019 --> 00:07:27,060
+Aynı şekilde faktörel hesabı için bu döngü tamamlanacak. Sonra bir döngü daha gelecek. Yani bu işlem bittikten sonra detaylarını yazmıyorum, çizmiyorum, pardon.
+
+28
+00:07:28,519 --> 00:07:33,200
+Burası işte pau diyelim. Bu iş için yazılan bir döngü.
+
+29
+00:07:33,620 --> 00:07:54,680
+Burası da işte faktöryel, hakikaten yazmış sor. Bu işin olan döngü, bu döngünün çıktısıyla, yukarıdaki döngünün çıktısını birbirine oranlayacağız. Daha sonra oranladığımız bu sonucu toplam olarak sonuca ekleyeceğiz ve en defa bu işlem yapılacak.
+
+30
+00:07:55,379 --> 00:08:02,699
+Şimdi power döngüsü kaçtan başlıyor? Bir kere birden başlayacak. Faktöryel döngüsü de birden başlıyor, for döngüsü.
+
+31
+00:08:02,699 --> 00:08:13,500
+Burada şöyle bir sorun var. K'ıncı power alacağız veya k faktöryel alacağız. O zaman burada k defa işlem yapılacak demektir.
+
+32
+00:08:13,500 --> 00:08:22,779
+Bu k ile bu k'yı toplarsak da 2 k'lık bir işlem gerekiyor her bir döngüde. Peki bu döngü toplamda kaç defa dönecek?
+
+33
+00:08:23,124 --> 00:08:48,764
+n çarpı 2k kadar, k ile n'i yaklaşık olarak birbirine eşit tutarsak, yani buradan n kare kadar, en kötü durumda, k ile n'i yaklaşık olarak birbirine yakın tutuyoruz, n kareye bağlı bir şey gelir. Bunun daha detaylısına bir kod yazarsak aslında oradan çıkartırız. Yani başka bir yolu da var.
+
+34
+00:08:49,120 --> 00:08:58,240
+Ama n kare eksi işte 3n gibi bir şeyler, polinom gelecektir. Nihai hali bizim için önemli olan n kareye yakın bir şey.
+
+35
+00:08:58,240 --> 00:09:05,120
+İyi bir algoritma mı, kötü bir algoritma mı? Aslında iyi bir algoritma değil. Çünkü şurada şu eşitliği biz biliyoruz.
+
+36
+00:09:05,120 --> 00:09:13,240
+Ben hali hazırda x üzeri n'i biliyorsam, bir sonraki iterasyonda x üzeri n'e x ile çarparım, x üzeri n artı 1'i de bulurum.
+
+37
+00:09:16,628 --> 00:09:26,248
+bypass edilebiliyor. Yani şunun yerine, şunun yerine temel operasyon yapacağım. O zaman ne oluyor? Yani bunlara bir birimlik operasyon dersek sadece çarpma operasyonu.
+
+38
+00:09:26,248 --> 00:09:42,687
+Ne var? n çarpı ikilik bu durumda n'lik bir algoritma oluyor. Bakın n kareden n'e indirgeyebiliyoruz. Bu yaklaşımda hani çizdiğim şeyde bir anlaşılmayan bir şey var mı? Algoritma çizmedik tamamen.
+
+39
+00:09:42,995 --> 00:09:55,296
+Yani kodunu yazacağız çünkü. Ama şöyle kağıt üzerinde, işte şunu yapsak böyle olur, bunu yapsak böyle olur diyebileceğimiz bir approach, yaklaşım haline getirdik. Var mı burada bir sorunumuz?
+
+40
+00:10:03,283 --> 00:10:19,104
+Yoksa devam edeceğim arkadaşlar. Tamam. Şimdi o zaman bunun kodunu yazalım. Hani ne yapabiliriz? Birinci kod nasıl yazılır, ikinci kod nasıl yazılır? Ona bir hızlıca bakalım. Dev-se'yi açıyorum.
+
+41
+00:10:27,668 --> 00:10:39,347
+Geçten derste bir arkadaşınız sorunu soracağım, bu tarz durumlarda power fonksiyonunu kullansak olur mu? Normalde olur. Ama desek ki, yani sınavda power fonksiyonunu en optimum bir şekilde kendiniz yazın.
+
+42
+00:10:39,347 --> 00:10:48,627
+Yani arka planda hazır olan fonksiyonu kullanmayın. Çünkü bu ders bir algoritma dersi. O zaman iş başa düşecek. Mecburen bunu yazacağız arkadaşlar.
+
+43
+00:10:48,627 --> 00:10:52,228
+Peki, geliyorum.
+
+44
+00:10:52,692 --> 00:10:57,892
+Normal, kötü olan çözüm yazalım, ondan sonra biraz daha iyi çözüme gidelim.
+
+45
+00:10:57,892 --> 00:11:05,892
+Şimdi benim terim e üzeri x gibi bir şey hesaplayacağım. Yani x değerini kullanıcıdan almam lazım. Bir tane x değerini yazayım.
+
+46
+00:11:05,892 --> 00:11:12,091
+Burada kaç defa terim olacaksa, kaç terimi açacaksak bir n değerimiz olsun, onu yazalım.
+
+47
+00:11:12,091 --> 00:11:20,291
+İşte bir döngümüz var. Bu döngü ilk başta ney? 1'den n'e kadar dönecek olan döngü, yani şu.
+
+48
+00:11:21,908 --> 00:11:33,908
+Or, i eşittir. Burada birinci terimden doğrudan başlatabiliriz. Şimdi ona geleceğiz arkadaşlar. Birinci terimden n. terime kadar diyebiliriz.
+
+49
+00:11:33,908 --> 00:11:46,908
+i eşittir, küçük eşittir, n diyelim. Pardon, i artı artı. Başka bir klavye, ona da alışmak zor bir şey.
+
+50
+00:11:49,971 --> 00:11:59,971
+Ben, any istersen kullanıcıdan alırım, istersen scanf falan yapmayalım, işte ne bileyim burada 11 falan diyelim. Buna göre döngü ilerlesin.
+
+51
+00:11:59,971 --> 00:12:09,971
+Şimdi yapacağımız şey bir sonuç değişkenimiz olacak. Bu sonuç değişkenimiz float veya double olacak arkadaşlar. Sonuç diyelim.
+
+52
+00:12:18,836 --> 00:12:24,836
+Şu 1'i doğrudan sonucu atıyorum. Niye? Bir iterasyon, az işlem yapalım diye.
+
+53
+00:12:24,836 --> 00:12:30,836
+O zaman ben sonucu doğrudan burada 1'den başlatmakta 1.0 bile diyebiliriz.
+
+54
+00:12:30,836 --> 00:12:37,836
+Normalde 1'de desek, 1.0 da desek, sonuç yine float olarak saklanacağı için 1.0 olarak kaydedilir.
+
+55
+00:12:37,836 --> 00:12:41,836
+Peki geliyoruz, döngünün içerisinde ne yapacağız?
+
+56
+00:12:42,419 --> 00:12:50,419
+Şimdi kötü çözümde ne var? Önce bir pi hesabı, yani eksponansiyel işlem hesabı var. O zaman bir döngüye daha ihtiyacım var.
+
+57
+00:12:50,419 --> 00:12:55,419
+O zaman bu döngü mesela j değişkeni ile kontrol edilsin.
+
+58
+00:12:55,419 --> 00:13:01,419
+For. Şimdi j her defasında birden başlayacak.
+
+59
+00:13:03,539 --> 00:13:14,399
+Birden başlayacak, kaça kadar gidecek? Birinci, şu şeyi görelim. Birinci iterasyonda x üzeri 1, ikinci iterasyonda x üzeri 2, üçüncü iterasyonda x üzeri 3.
+
+60
+00:13:14,399 --> 00:13:28,179
+Yani ben burayı i ile kontrol ediyorsam, şu power işlemini i'ye endeksli olarak yapacağım. Yani, diyeceğiz ki burada, j eşittir birden, j
+
+61
+00:13:28,500 --> 00:13:43,860
+Küçüktür, eşittir, i olanak kadar bu kontroller yapılsın. j art art. Öyle değilmiş. İkincisinde birden ikiye kadar, üçte birden üçe kadar her bir iterasyonda bunu söylememiz gerekiyor.
+
+62
+00:13:43,860 --> 00:13:53,459
+Peki geldik. Burada ne yapmamız lazım arkadaşlar? Bir x bilgimiz var. Kullanıcıdan aldık. Onu birazdan yazarız yukarıya.
+
+63
+00:13:53,875 --> 00:14:20,436
+Pi oluşturacağız. O zaman pi diye bir şey şimdi tanımlayacağım. Pi eşittir. Pi çarpı x diyebiliriz değil mi? Pi'de elde edeceğimiz durum bu. Şimdi aynısını faktöreli için de yapıyorum. Eklememiz gereken kısımlar olacak. Daha değişkenleri zaten tanımlamadı. Yine burada birden her adımda i. faktöreli kadar işlem yapmam gerektiğini anlıyorum.
+
+64
+00:14:20,755 --> 00:14:28,155
+İkinci adımsa 2 faktör yer, üçüncü adımsa 3 faktör yer gibi. Dikkat edin hepsi bir de toplama. Yani arada artı eksili bir durum yok.
+
+65
+00:14:28,155 --> 00:14:39,956
+O zaman burada da yapacağımız şey nedir arkadaşlar? Mesela burada J'yi kullanabilir miyim? Yine J'yi kullanabilirim. Çünkü J şurada kullanılıyor, işi bitiyor.
+
+66
+00:14:39,956 --> 00:14:47,755
+J'yi burada tekrardan kullanırız. Ekstra bir değişken kullanılmaya gerek yok. Buna da payda diyelim. Payda eşittir.
+
+67
+00:14:48,148 --> 00:15:05,548
+Payda çarpı, artık x demeyeceğiz. Payda çarpı, j diyeceğiz değil mi? Burada ilk tanımlamaları yapmamız iyi olur. Şimdi mesela payın tanımlamasını ve paydanın tanımlamasını yapalım. Integer pay ve payda.
+
+68
+00:15:05,548 --> 00:15:14,948
+Şimdi her bir terimde biz bu işi baştan yapacağımız için bir kere pay değişkenimiz şurada bir 1'e eşit olması lazım.
+
+69
+00:15:15,220 --> 00:15:21,439
+Daha sonra ben onun kaçıncı dereceden kuvvetini hesaplayacaksam onu şurada zaten yapıyorum.
+
+70
+00:15:21,439 --> 00:15:27,779
+Aynı şekilde, onu da buraya yazalım. Paydanın da 1'e eşit olması lazım. Niye 1'e eşitliyoruz?
+
+71
+00:15:29,919 --> 00:15:35,220
+Başka bir şey yapsak olmaz mıydım? Sıfır olmaz mı mesela?
+
+72
+00:15:43,475 --> 00:15:54,975
+Sürekli 0 döner. Çünkü yani burada 0 atadığımızda güzel, istediğimiz kadar çarpalım. Sonuç ne olacaktır? Sürekli 0'a dönecektir. Dolayısıyla bir istediğimiz sonucu elde edemeyiz.
+
+73
+00:15:54,975 --> 00:16:08,975
+Peki payımız var. Paydamız var. Bundan sonra ne yapacağız? Şu döngü bitti, bu döngü bitti. Artık sonucu güncellememiz, kümülatif olarak ilerletmemiz gerekir.
+
+74
+00:16:10,676 --> 00:16:24,676
+Değişkenimiz yukarıda. Eşittir. Sonuç artı. Şimdi pi ve pi'de integer türde bir şeyler. Geçen derste ne yapmıştık? 1.0 gibi bir şeyle çarpmıştık. Burada da ona benzer bir şey yapabiliriz.
+
+75
+00:16:24,676 --> 00:16:33,936
+Şimdi ben önce pi'i mesela bir dönüştürmek istiyorum. Buna açık dönüşüm diyoruz. Birazdan bir slide üzerinde bunları hızlıca tekrar edeceğiz.
+
+76
+00:16:34,836 --> 00:17:00,216
+Geçen dönemin hızlı bir revizyonu olacak C konusunda. Payı float'a çevirdim, bölü payda. Şimdi niye dışarıya parantez yazdım? Arkadaşlar, şimdi bu bir operasyon, operatör aslında bir fonksiyon değil. Şu bir operatör, şu bir operatör. Biliyoruz ki biz operatörlerde bölme işleminin her zaman önceliği var. Fakat,
+
+77
+00:17:01,971 --> 00:17:07,251
+Operatörlerin önceliğini her zaman ezberlemek durumunda değiliz. Yani ben de bazen unutuyorum.
+
+78
+00:17:07,251 --> 00:17:13,811
+Önce bölme mi yapılacak, ondan sonra önce typecasting mi yapılacak, tip dönüşü yapılacak bilmiyorsanız
+
+79
+00:17:13,811 --> 00:17:24,371
+şu ifadeleri, hatta şurada bir tane daha var, parantez içine alabilirsiniz. Çünkü parantez içi biliyoruz ki her zaman önce yapılır.
+
+80
+00:17:24,723 --> 00:17:32,723
+Ne yap? Önce payı float'a çevir. O çevirdiğin şeyi paydaya böl. Ondan sonra bu bölümden elde edilen sonucu sonuç değişkenini aktar.
+
+81
+00:17:32,723 --> 00:17:41,723
+Şöyle de yapabilirdik. Hızlıca yazalım. Sonuç artı eşittir deyip, yani şuranın aynısını yazabilirdik.
+
+82
+00:17:41,723 --> 00:17:48,723
+Şu an için hani operatör önceliği ile işimiz yok. Daha böyle hani amatörce yapacaksak bunu, böyle bir sonuç yeterli.
+
+83
+00:17:49,395 --> 00:17:55,395
+Peki, gelelim başka yapmadığımız, unuttuğumuz bir şey var mı burada arkadaşlar?
+
+84
+00:17:55,395 --> 00:17:58,395
+Buraya sonucu yazacağım.
+
+85
+00:18:00,395 --> 00:18:05,395
+Sonuç eşittir, %2.5f diyelim.
+
+86
+00:18:09,523 --> 00:18:24,523
+Bizim kullanıcıdan x değerini almamız lazım. O zaman şurada bir yerde hani istersek n değerini de alabiliriz veya x değerini burada doğrudan atayabiliriz ama hani kullanıcıdan bir şeyler almış olmak için enter x diyelim.
+
+87
+00:18:33,076 --> 00:18:44,971
+yazıyoruz. Bir hesap makinesi, Google'un hesap makinesine bakayım, online. Karşılaştıralım, calculator.
+
+88
+00:18:53,748 --> 00:19:04,628
+Mesela e üzeri 3x'i calculate yap dediğimizde 20.08 gibi bir şey oluyormuş.
+
+89
+00:19:11,667 --> 00:19:17,047
+Şimdi şöyle bir klasör açayım. Bu klasördeki şeyleri kısmen geçen derstekileri Teams'e yükledim.
+
+90
+00:19:17,047 --> 00:19:20,887
+Afta 2 diyelim de oraya ekleriz.
+
+91
+00:19:34,163 --> 00:19:44,163
+20.08 Normal değeri de şöyle size çekip gösterelim arkadaşlar. Bu şekilde devam edip gidiyormuş.
+
+92
+00:19:44,163 --> 00:19:59,163
+Tabii biz 11 tane terim açtığımız için ne oluyor? Burada nasıl bir hata var? Hani sayısal dersinde bir referans yapmak istersek, oluşan hata çok güzel. Kesme hatası.
+
+93
+00:20:00,000 --> 00:20:17,000
+x değeri atamadık derken [öğrenci], onu önce mi söylemiştin? Şunu yazmadan önce söyledin herhalde. Tamam. Mesela şunu 11 değil de 111 yapalım.
+
+94
+00:20:29,875 --> 00:20:55,675
+Ne oluyor burada? Heh şimdi güzel oldu aslında bunu böyle yapmamız. 111 yaptığımızda, örneğin 57. iterasyona geldik. Şu sayının 3'ün 57. Bakarısız [öğrenci]'de. 3'ün 57. kuvvetini hesaplamaya çalışalım.
+
+95
+00:20:56,500 --> 00:21:04,099
+3 üzeri 57 baya büyük bir sayı biliyorsunuz. Integer'ın sınırının dışına çıkıyorsak, şimdi integer'ın sınırı neydi?
+
+96
+00:21:05,539 --> 00:21:16,019
+2 üzeri 31 idi değil mi? En yüksek upper boundımız. 3 üzeri 57 bundan çok çok büyük bir sayı.
+
+97
+00:21:16,940 --> 00:21:22,500
+Dolayısıyla ne oluyor? Burada taş mı oluyor? Biraz önce o hatayı aldık.
+
+98
+00:21:22,740 --> 00:21:30,240
+Onun için şunu biraz daha azaltabiliriz veya burada long integer falan kullanabiliriz de önemli değil mesela 17 falan diyelim.
+
+99
+00:21:30,240 --> 00:21:43,740
+Herhalde 17'yi hesaplarız çünkü 31'e gelene kadar mesela 25 falan diyelim hatta. Arkadaşımızın dediği hocam farklı bir şey geliyor işte o gelen farklı şey taşmadan meydana gelen hata.
+
+100
+00:21:43,740 --> 00:21:46,740
+Şöyle bir return 0 yapayım.
+
+101
+00:21:54,579 --> 00:22:10,539
+Bu ne oldu? 3.27.64 Bir şey mi değiştirdim fark etmeden? Şu an baya sapma verdi. Bakayım kaçtı bu değer?
+
+102
+00:22:14,099 --> 00:22:16,919
+20.085 olacakken
+
+103
+00:22:18,460 --> 00:22:19,219
+bir de
+
+104
+00:22:29,268 --> 00:22:40,268
+Burada tamam, sorun yok. Mesela bunu 15 yapalım. Acaba bir yerlerde tekrar taşma mı oluyor? Onu kontrol etmek lazım.
+
+105
+00:22:40,268 --> 00:22:56,268
+20.096 Tabi bu şeyin hassasiyeti de tam ne kadar doğrudur bilmiyoruz. Ama belli bir yere kadar olması gereken sonucu veriyor.
+
+106
+00:22:57,940 --> 00:23:05,700
+Mesela şunu kaldırdığımızda başka bir şey görebilir miyiz? Evet görebiliriz. Tekrar bir çalıştırayım.
+
+107
+00:23:10,324 --> 00:23:24,324
+16 diye bir şey geliyor. Şimdi burada dönen değerin 16 olması [öğrenci] şundan olabilir. Şurada printf bir sonuç döndürüyor. Bu döndürülen sonucu bir yazalım.
+
+108
+00:23:24,324 --> 00:23:33,324
+printf'in içinde printf kullanacağım. %d diyorum. Printf'in ne döndürdüğünü göstereceğim burada size.
+
+109
+00:23:35,220 --> 00:23:41,220
+Önce bu printf yapılacak. Bu printf ekrana kaç tane karakter bastığını döndürür.
+
+110
+00:23:42,519 --> 00:23:53,220
+Dolayısıyla hani herhalde 16 tane karakter basılıyorsa burada, sonuç 20 falan dediği, bak.
+
+111
+00:23:55,220 --> 00:24:00,172
+Şuradan dönen şöyle bir tıra tıra yapayım, herhalde görürüz.
+
+112
+00:24:07,443 --> 00:24:25,943
+Önce bunu yazdırdı, sonra şuradan dönen sayı 16. 16, 2 basamaklı, 2 de şu var, 4 basamaklı. Buraya içteki printf'in 4 tane karakter döndürdüğünü söylüyor. Printf'in yaptığı dönüş değeri...
+
+113
+00:24:26,259 --> 00:24:41,259
+Kaç tane karakter dönüyorsa, yazdırılıyorsa onun sayısını döndürür. Onun için ona çok takılmayalım. Return 0'ı yazarak biz işin sonunda şey görüyorsak diyeceğiz. Bunu görüyorsak problem yok.
+
+114
+00:24:41,259 --> 00:24:52,235
+Tekrar işleyelim. Bak burada olduğu gibi 0'ı görebiliyoruz. Tamam mı? Peki gelelim şu çözümü biraz daha iyileştirmeye.
+
+115
+00:24:54,003 --> 00:25:09,604
+Dedik ki, biz kümülatif olarak zaten toplam işlemi pay ve payda hesabı yapıyoruz. O zaman şuradaki şeye gerek yok, şuradaki operasyonlara, döngülere gerek yok. Bunların yerine var olan değerleri yazacağız.
+
+116
+00:25:09,604 --> 00:25:14,803
+Şimdi o zaman şurada ufak bir değişiklik yapacağım. Şunu alıyorum.
+
+117
+00:25:21,844 --> 00:25:35,844
+Üzerinden gidelim. Bir kere döngüler gideceğiz dedik. Bu da gidecek. Bizim payda ve payda da kuvvet bir şey hesaplamamız lazım.
+
+118
+00:25:35,844 --> 00:25:48,844
+O zaman bunu bir kere dışarıya almamız gerekiyor. Çünkü her defasında pay ve payda artık 1 olmayacak. İlk başta program başladığında 1, sonra onun üzerinden devam edip gideceğiz.
+
+119
+00:25:54,291 --> 00:25:58,692
+Arkadaşlar, grubunuza bir yazar mısınız dersin online yıldızdan yapıldığına dair?
+
+120
+00:25:58,692 --> 00:26:06,291
+Bu saatte Teams'den istek geliyor. Arkadaşlar, Teams'den girmeye çalışmasınlar. Bu konuda mail de attım.
+
+121
+00:26:08,932 --> 00:26:15,652
+Yani maillerini kontrol etmiyorlarsa, benim yapacağım bir şey yok. Bir yerden sonra sorumluluk öğrenciye düşüyor.
+
+122
+00:26:16,451 --> 00:26:18,932
+Payı ve paydayı birden başlattık.
+
+123
+00:26:18,932 --> 00:26:19,731
+Şimdi biz...
+
+124
+00:26:20,084 --> 00:26:32,484
+Pi hesabı için ne yapacağız? Pi eşittir, pi çarpı x dediğimizde önce pi'da işte x'in değeri neyse o değer oluşuyor.
+
+125
+00:26:32,484 --> 00:26:45,044
+Pi'da da ne var? Pi'da eşittir, pi'da çarpı i dediğimizde bu da ne oluyor? Faktörel hesabını yapmış oluyoruz.
+
+126
+00:26:50,996 --> 00:26:52,276
+Yani iyi söyledik.
+
+127
+00:26:55,731 --> 00:27:01,611
+Şu zaten kendisi güncelliyor dedik. Aynı şekilde sonuç eşittir, pay bölü payda diyeceğiz.
+
+128
+00:27:02,891 --> 00:27:05,711
+Ve şu sonucu şurada yazdıralım.
+
+129
+00:27:07,511 --> 00:27:15,951
+Yukarıda elde ettiğimiz bir sonuç değişkeni vardı. Sonucu burada güncellememiz gerekiyor. İşte sonucu da doğrudan birden başlatıyorum.
+
+130
+00:27:17,231 --> 00:27:20,311
+Başka da bir şeye gerek olmaması lazım.
+
+131
+00:27:21,071 --> 00:27:22,871
+Burada anlaşılmayan bir şey var mı?
+
+132
+00:27:29,619 --> 00:27:36,119
+Şunun önüne backslash n yazalım. Şunu da eski haline geri getireyim, karıştırmayam hiç.
+
+133
+00:27:49,172 --> 00:27:51,172
+Sonuç 2 diyelim hatta.
+
+134
+00:27:51,172 --> 00:27:53,036
+Sonuç 1.
+
+135
+00:28:01,044 --> 00:28:14,644
+Evet, aynı şeyi görebildik. Analiz açısından baktığımızda ikinci çözümün çok daha mantıklı olduğunu görüyoruz. Geçen sene şöyle bir çözüm daha bulmuşuz, yapmışım.
+
+136
+00:28:20,884 --> 00:28:24,884
+Onu da size göstereyim hızlıca kod üzerinden.
+
+137
+00:28:27,283 --> 00:28:28,884
+x bölü 1 faktürel
+
+138
+00:28:28,884 --> 00:28:35,884
+Ha, burada şey var işte, biraz daha, gerçi bunu çalışma sorusu olarak verecektim de, neyse hızlıca göstermiş olalım.
+
+139
+00:28:36,596 --> 00:29:00,796
+Arada artılı eksili olursa, yani burada hepsi A6, o zaman ne olacak? Kuvvet ve faktörel hesabında hemen hemen aynı şeyleri yapıyoruz. Ha bir de şu var, tabi biliyorsunuz burada 2, 3, 4 diye gitmiyor, 1, 3, 5 diye gidiyor. Yani ikişer ikişer arttıracağız. İkişer ikişer arttırırken kuvveti bir kere iki defa çarpmamız gerekiyor.
+
+140
+00:29:01,332 --> 00:29:08,752
+Faktürel hesabında da i'nin bir öncekisini ve bir sonraki değerini yani iki değeriyle çarpıp faktürel'i güncellememiz gerekiyor.
+
+141
+00:29:08,752 --> 00:29:15,672
+Yoksa aynı mantıkla iç içe üç tane yani before, onun içinde before, ondan sonra before daha yapıp bulabilirdik.
+
+142
+00:29:15,672 --> 00:29:22,072
+Ama o da dediğim gibi en karelik bir çözüm. Burada kuvveti ve faktürel'i hesaplıyoruz.
+
+143
+00:29:22,072 --> 00:29:26,172
+Şimdi bir çarpan demediğimiz bir şey vardı. İşte bir artı bir eksik diyecek.
+
+144
+00:29:28,723 --> 00:29:40,443
+Çarpanla çarpıp, ondan sonra bunu sonuca eklediğimizde, bu çarpan değerini de daha sonra tekrar negatifle güncellediğimizde bir artı bir eksi olacak şekilde sonuca ulaşıyoruz.
+
+145
+00:29:40,443 --> 00:29:52,443
+Burada da eğer if kontrolü uygulayalım dersek, bir artı bir eksi için tek terimlerde, pozitif, çift terimlerde negatif artık nasıl olacaksa
+
+146
+00:29:52,723 --> 00:30:01,723
+Şunu yapabiliyoruz ama şu, daha önce geçen derste yaptığımız bir yöntem. Bunu siz kendiniz ayrıca bir algoritmayla kodlarsınız. Onun için şu an buna girmiyorum ayrıca.
+
+147
+00:30:02,723 --> 00:30:04,723
+Çalışma sorusu olarak çözün.
+
+148
+00:30:05,723 --> 00:30:08,556
+Sorunuz yoksa devam edeceğim.
+
+149
+00:30:12,084 --> 00:30:16,483
+Şu kısmı da bitirmiş olduk. Saatimizde var.
+
+150
+00:30:19,284 --> 00:30:31,084
+Gelelim, şimdi Fibonacci sayısını geçenlerde bulmuştuk. Hem şu yöntemle bulduk, hem de şu yöntemle bulduk. Hatta bu yöntemi dizi üzerinde hesapladık.
+
+151
+00:30:31,263 --> 00:30:40,543
+Çünkü dedik ki şu an henüz şeyleri bilmiyoruz, rekürsif şeyleri. Şunlar MATLAB kodudur arkadaşlar. Dizi gibi düşünebilirsiniz. Yani köşeli parantez yok.
+
+152
+00:30:40,543 --> 00:30:55,863
+Fatih Hoca'nın yazdığı kodlar bunlar. Şu ikisini de çözdük. Bu ikisinde de karmaşıklık ne oluyor? Şuradaki karmaşıklığı nasıl hesaplarız? Kaç defa işlem yapılıyor burada?
+
+153
+00:30:57,332 --> 00:31:05,012
+Bakın bu dizi, yani recursive bir işlem değil, fonksiyon değil, sadece dizi. Parantezlerin şekline aldanmayın.
+
+154
+00:31:06,552 --> 00:31:18,956
+Evet, n defa değil mi [öğrenci]? Niye? 3'ten başlamış, n'e kadar gitmiş. Yani burada kaç defa terim var? n-3 artı 1, yani n-2 tane. İşte şu eksi 2'yi de zaten şuradaki şeylerle...
+
+155
+00:31:19,059 --> 00:31:34,059
+ihmal edebiliriz. Yani en tane işlem yapılıyor. Şuna baktığımızda, burada da yine aradaki işlemleri göz ardı edersek, döngü kaç defa dönecek? En defa dönecek. Bakın bu da en defa. Bunun daha hızlı yolu var mı? Var.
+
+156
+00:31:45,167 --> 00:31:57,167
+1, 1 miydi, neydi tam hatırlamıyorum. Kaçıncı dereceden şey bulacaksak, Fibonacci sayısını bulacaksak, onun eninci dereceden kuvvetini alıyoruz.
+
+157
+00:31:57,167 --> 00:32:02,155
+Şimdi diyebilirsiniz ki, hocam kuvvet almak zaten şey değil miydi?
+
+158
+00:32:03,508 --> 00:32:16,788
+n defa karmaşıklık değil miydi? Ama hatırlarsanız geçen bir şey söylemiştim. Yani x üzeri n'e hesaplamak yerine ben x üzeri n bölü 2'ye hesaplasam ve kendisiyle çarpsam ne oluyor? Yarı yarıya azaltıyor.
+
+159
+00:32:17,468 --> 00:32:30,188
+Onu da kendisiyle yani x üzeri n bölü 4'e çarpsam çok daha hızlı oluyor. Yani log n'e indirgeyebilmiştik. İşte burada da n'inci dereceden kuvveti log n'le hesaplamamız mümkün olacak. Diğeri gelince anlatacağız onu.
+
+160
+00:32:31,092 --> 00:32:50,092
+Bu arada, geçen sayısal analiz dersinde anlattım. Bizim bisection metodumuz ne yapıyor? Dizide tam orta noktaya bakıp, şu pointer'ların, buraya left diyelim, buraya da right diyelim.
+
+161
+00:32:50,092 --> 00:32:57,676
+Orta nokta, left artı right bölü 2. Sayısal analizde bununla alakalı ayrıca bir örnek çözeceğim.
+
+162
+00:32:58,067 --> 00:33:04,307
+Bir tane soru gelmişti dersten sonra, keşke derste sorusaydı ama tamam dedim, gelecek derste anlatırız.
+
+163
+00:33:05,307 --> 00:33:13,427
+Regula filesi de ne yapıyor? Şu 1 bölü 2 yerine daha iyi bir sayı veriyor. Daha iyi bir sayı örnek olarak ne verebilirsiniz?
+
+164
+00:33:13,427 --> 00:33:15,307
+Buraya 1 bölü 2 yerine ne olabilir?
+
+165
+00:33:21,491 --> 00:33:28,611
+1 bölükten daha güzel, daha çok işimize yarayacak bir sayı. Yazın bakalım.
+
+166
+00:33:36,307 --> 00:33:39,347
+Altın değer şey olabilir mi?
+
+167
+00:33:40,548 --> 00:33:53,347
+Altın oran. Niye altın oranı? 1.6 küsür değil miydi o? Yani o bir kere basit kesir olacak. 1.6 yazarsak dizinin dışına çıkarız. Yani 0-1 arasında bir şey vermemiz gerekiyor.
+
+168
+00:33:55,188 --> 00:34:00,044
+0.5, [öğrenci] zaten şu anki değer 0.5'in kendisi, 1 bölü 2.
+
+169
+00:34:05,748 --> 00:34:21,988
+Daha başka. L bölü L, bir sayı istiyoruz zaten. L bölü R olmaz. L bölü R dersen şu an zaten 0 olur o. L'yi 0 dedik, R'de n-1 0 olur o doğru da.
+
+170
+00:34:23,251 --> 00:34:33,731
+3 bölü 5 gibi bir sayı söyleyin arkadaşlar. Altta ve üstte tam sayılar kümesinden iki tane eleman olsun, bir kesir yazalım buraya.
+
+171
+00:34:41,204 --> 00:35:05,784
+4 bölü 9. Şimdi mesela 4 bölü 9 yaklaşık olarak nedir? 0.5'ten biraz az mı oluyor? Evet. 40 bölü 9, 4 kere 8, 4 kere 9, 36, 0.4 gibi. 4 bölü 9 yazdığımızda, şu diziyi 9 parçaya bölün.
+
+172
+00:35:07,027 --> 00:35:11,627
+9 parçaya böldükten sonra 4. parça işte şurada bitiyor olsun.
+
+173
+00:35:11,627 --> 00:35:19,067
+Eğer şanslıysanız ve aradığınız eleman şu tarafta değil de bu taraftaysa ne olacak?
+
+174
+00:35:19,067 --> 00:35:34,667
+Normal bisection metodda 9 parçanın 4.5 parçası burada, 4.5 parçası buradayken yaklaşık buçukluk parçayı da elimine etmiş, işin dışında tutmuş oluyorsunuz.
+
+175
+00:35:35,219 --> 00:35:41,219
+Daha az yere bakıyorsunuz. Şanslı değilseniz, daha çok yere bakıyorsunuz.
+
+176
+00:35:41,219 --> 00:35:43,219
+5 birimlik parçaya.
+
+177
+00:35:43,219 --> 00:35:47,219
+4 bölü 9, mesela 3 bölü 4 diyelim.
+
+178
+00:35:47,219 --> 00:35:54,219
+Ne oldu? Ya 3 bölü 4'ünde aradığımız eleman ya da kalan 1 bölü 4'ünde.
+
+179
+00:35:54,219 --> 00:36:01,099
+Şimdi kalan 1 bölü 4'ünde olmanız, bisection metoda göre daha şanslı olduğumuzu gösteriyor.
+
+180
+00:36:02,931 --> 00:36:23,331
+3 bölü 4, 1 bölü 4 olan. Dolayısıyla bu sizi daha hızlı sonuca götürebilecek, her zaman götürür demiyoruz bir şey. Eğer diziniz uniform dağılımlıysa bu kazancı doluyor. Daha hızlı logaritma logaritma n kadar karmaşıklıkla sonuca, o kadar adımda sonuca ulaşabiliyorsunuz. Burada sorumuz var mı?
+
+181
+00:36:25,619 --> 00:36:32,220
+Dolayısıyla bakın, şuradaki işlem de, yukarıdaki işlem de algoritmik iyileştirmelerin sonucunu gösterecek.
+
+182
+00:36:33,720 --> 00:36:35,720
+Şimdi geldik yeni bir soruya.
+
+183
+00:36:37,319 --> 00:36:42,220
+Şu ana kadarki sorularda arkadaşlar, bir şey dikkatinizi çekiyor olması lazım.
+
+184
+00:36:42,220 --> 00:36:50,619
+Hiç dizi kullanmadık. Yani geçen derste belki bir diziyle çözüm yaptık da, hep değişkenler üzerinden gidiyoruz.
+
+185
+00:36:51,219 --> 00:36:54,219
+Bu dersin başında dedim ya, biz sürekli soru çözeceğiz.
+
+186
+00:36:55,219 --> 00:37:00,219
+Yani bir kar topu misali, şu anda da kar yağıyor, analoji yapın.
+
+187
+00:37:00,219 --> 00:37:04,219
+Dersin konuları böyle birbirini kapsaya kapsaya, genişliğe genişliğe gidecek.
+
+188
+00:37:04,219 --> 00:37:10,219
+Bazılarınız belki, hocam çok basit diyorsunuz, bazılarınız daha görmediğiniz için belki biraz yabancı geliyordur.
+
+189
+00:37:10,219 --> 00:37:16,219
+Ama yani bu adımla, normal değişkenlerle ve kontrol işlemleriyle, tekrar işlemleriyle başladık.
+
+190
+00:37:17,300 --> 00:37:21,800
+Bunların içerisinde dizileri dahil edeceğiz, matrisleri dahil edeceğiz, fonksiyonları dahil edeceğiz.
+
+191
+00:37:21,800 --> 00:37:36,800
+Dönem sonuna kadar hem algoritmik olarak kullanılan yapıların ve bazı veri yapılarının hangi problemlerde nasıl kullanılır ve daha iyi bir algoritma nasıl gerçekleştirilir, bunun üzerine çalışarak devam edeceğiz.
+
+192
+00:37:36,800 --> 00:37:44,800
+Şimdi sorumuz diyor ki, 1 ile 1000 arası basamaklarının küplerinin toplamı kendisinde eşit olan sayıları bulmak. Orada da bulmuşuz işte.
+
+193
+00:37:45,204 --> 00:37:56,704
+Şunlar varmış. Burada nasıl bir algoritma gerçekleştirilir? Bunu siz bir söyleyin bakalım. Biraz düşünün. İsterseniz ben random sorayım. Sözle ifade edin. Ondan sonra kodunu yazalım.
+
+194
+00:38:04,628 --> 00:38:06,628
+1-2 dakika süremiz olsun.
+
+195
+00:38:11,219 --> 00:38:13,219
+Mesela rastgele soru soralım.
+
+196
+00:38:29,556 --> 00:38:38,176
+Bu arada sayısal analizle alakalı bir anket gönderdim. Oraya bazı arkadaşlar yapısal programlamayı da içerecek şeyler yazmış.
+
+197
+00:38:39,336 --> 00:38:47,436
+Neyse, önemli değil. Düşünceleriniz önemli de, dersle alakalı yazsak iyi olurdu. Birkaç kişi de var.
+
+198
+00:38:48,636 --> 00:38:54,636
+Şöyle bir yolum gördüm. Kısmen haklı arkadaşımız.
+
+199
+00:38:55,315 --> 00:39:00,315
+Hocam, ilk derste bu dersi ilk kez alanların dersi bırakmalarını söylediniz.
+
+200
+00:39:00,315 --> 00:39:03,315
+Kesin böyle bırakın falan demedim.
+
+201
+00:39:03,315 --> 00:39:07,315
+Yani orada muhtemelen bu arkadaşımız yanlış anladı. Bırakmanız iyi olur dedim.
+
+202
+00:39:07,315 --> 00:39:16,315
+Neden? Çünkü AA ile geçilebilecek, BA ile geçilebilecek bir ders, geçen dönemki eksiklikler sebebiyle çok iyi geçirilemiyor.
+
+203
+00:39:16,315 --> 00:39:22,315
+Hocam, ben C'yi daha yeni öğrendim veya başka bir şekilde öğrendim şeklinde.
+
+204
+00:39:23,027 --> 00:39:40,427
+eleştiriler, şikayetler alıyorum kendilerine dair şikayetler. Onun için yetersiz olduğunu anlaşılıyor ve gelecek sene aynı dersi tekrar alıyor. Onun yerine tavsiye olarak dedim ki, sosyal seçimlik derslerinizden üstten alırsınız.
+
+205
+00:39:41,268 --> 00:39:52,268
+Aynı dersi tekrar alma gereği duymazsınız. Gelecek dönem zaten BBG'yi alacaksın, ondan sonra da normal yapısal alırsın, yapısal girişi. Bu şekilde devam edersin dedim.
+
+206
+00:39:52,268 --> 00:39:57,268
+Ama %100 bunu yapın, yapmazsanız kesin kalırsınız gibi bir şey de söylemedim.
+
+207
+00:39:57,268 --> 00:40:06,891
+Hatta daha sonra da dedim ki, eğer hala derste kayıt olanlar, kaydını devam ettirenler varsa gelsin benimle görüşsün dedim. Mail ile gönderdim.
+
+208
+00:40:07,411 --> 00:40:11,411
+O arkadaşlardan bir kısımları geldi, onlara bazı tavsiyelerde bulunduk.
+
+209
+00:40:11,411 --> 00:40:20,411
+Bu arkadaş mailde, orada yazmış, şevkimiz kırılıyor diye. Şevkimizi kıracak bir şey değil, ben realiteyi söylüyorum.
+
+210
+00:40:20,411 --> 00:40:30,411
+Şevkimiz ne zaman kırılır? Dönem sonunda AA almanız gerekirken, düşük bir notla bu dersi geçerseniz, bilgi eksikliğinden dolayı geçerseniz o zaman kırılabilir.
+
+211
+00:40:31,059 --> 00:40:40,880
+Yoksa illa silin, yani yoksa tamamen kalırsınız tarzında bir şey söylemek benim haddim değil. Onu açıklamış olalım.
+
+212
+00:40:40,880 --> 00:40:54,920
+Ali, yazacağın maili direkt bana yazarsan iyi olur. Dersin syllabus'ında, planlamasında laboratuvar katılımla alakalı açıklama var. Herkes laboratuvar'a katılacak.
+
+213
+00:40:54,920 --> 00:40:58,920
+Muafiyet diye bir şey.
+
+214
+00:40:59,603 --> 00:41:03,603
+There is no exemption regarding laboratory section.
+
+215
+00:41:03,603 --> 00:41:04,603
+Okey?
+
+216
+00:41:06,603 --> 00:41:08,603
+Herkes sorumlu.
+
+217
+00:41:08,603 --> 00:41:10,603
+Evet.
+
+218
+00:41:10,603 --> 00:41:13,603
+Şimdi [öğrenci].
+
+219
+00:41:15,603 --> 00:41:17,603
+Buyurun hocam.
+
+220
+00:41:17,603 --> 00:41:20,603
+Nasıl bir çözüm önerirsin [öğrenci]?
+
+221
+00:41:24,596 --> 00:41:33,596
+Hocam, ilk önce işte, for ile tek tek altta, sonra mod 10 ile basamaklarına yazdım.
+
+222
+00:41:33,596 --> 00:41:37,596
+Mod 10 ile 3. basamağı mı alacağız?
+
+223
+00:41:37,596 --> 00:41:38,596
+Evet.
+
+224
+00:41:38,596 --> 00:41:44,596
+Mod 10, tamam. Bir tane mod 10 yapacağız. Bu bize 3. basamağı verecek, tamam.
+
+225
+00:41:44,596 --> 00:41:49,596
+Sonra 2. basamağı, sonra 1. basamağı. Bunu bir üçlük bir dizide tutalım.
+
+226
+00:41:49,596 --> 00:41:52,588
+Dizi yok ama, dizi yok.
+
+227
+00:41:52,788 --> 00:41:54,788
+O zaman dizisiz.
+
+228
+00:41:54,788 --> 00:41:57,788
+Tamam, üç tane değişken atarım hocam.
+
+229
+00:41:57,788 --> 00:42:04,788
+Ama şöyle bir şey var, şimdi oraya atlamayalım. Sonra ikinci basama, sonra birinci basama değil mi? Onları nasıl bulacağız?
+
+230
+00:42:04,788 --> 00:42:08,788
+Eee... Şey, ona vereceğim.
+
+231
+00:42:08,788 --> 00:42:12,788
+Ha, sayımız var. Sayının önce modunu aldık.
+
+232
+00:42:13,076 --> 00:42:26,376
+Sonra dedik ki sayıyı 10'a böldük. Sayıyı 10'a bölünce bu bir integer bölmesi olduğu için sayı 2 basamaklı oldu. Tamam mı? Bunu demek istiyorsun herhalde. Bu 10'a böldüğümüzü ne yapacağız?
+
+233
+00:42:28,376 --> 00:42:31,676
+Tekrar modunu alıp ikincisini bulacağız.
+
+234
+00:42:31,676 --> 00:42:34,676
+Bunun tekrar modunu alıp...
+
+235
+00:42:37,204 --> 00:42:43,364
+İkinci basamağı buluyoruz. Ama sayının kendisini falan bir değişkeni atmamız lazım ki kaybolmasın.
+
+236
+00:42:43,364 --> 00:42:50,923
+Tamam, öncesinde diyor ki bu sayımızı bir de ekleyelim. O sayı zaten aslında şuradaki değişkenimiz olmaz mı?
+
+237
+00:42:50,923 --> 00:42:57,044
+Çünkü birden bine kadar bütün sayılar. Tamam bunu da yaptık. Sonra sayıyı bir daha 10'a böleceğiz herhalde.
+
+238
+00:42:57,044 --> 00:42:59,923
+Evet. Sayı bölü 10.
+
+239
+00:43:02,612 --> 00:43:08,871
+Yani tabi şurada sayıyı güncellediğimiz iş yapıyorum. Aynı şekilde modunu alacağız. O da bize birinci basamağı verecek. Tamam.
+
+240
+00:43:08,871 --> 00:43:13,112
+Sonra tek de küplerini alıp toplamına eşitliğine bakalım.
+
+241
+00:43:13,112 --> 00:43:21,112
+Tamam. Neyin toplamına? Şu i'nin toplamına, şunların küplerinin toplamı eşitliğine.
+
+242
+00:43:21,112 --> 00:43:22,112
+Peki.
+
+243
+00:43:22,900 --> 00:43:31,900
+Burada şöyle bir şey olsaydı, soruyu biraz daha güncelleyelim. Çözüm doğru, teşekkür ederim. Diğer arkadaşlara soracağım bu soruyu, rastgele birine.
+
+244
+00:43:31,900 --> 00:43:42,900
+Üç basamaklı değil de sekiz basamaklı olsaydı ne yapardık? Onu da bize kim söylesin?
+
+245
+00:43:42,900 --> 00:43:47,900
+[öğrenci]
+
+246
+00:43:50,900 --> 00:44:03,199
+Hocam, eğer 8 basamaklı olduğunu soru bize veriyorsa, yine bir for döngüsü açabilirdik. İlk başta 10'a bölüp sonra modunu 10'la almak olarak.
+
+247
+00:44:03,199 --> 00:44:16,699
+Yani şöyle mi diyorsun, bir kere 8 basamaklıysa, 3 basamakta nasıl, 1000'e kadarsa, 8 basamaktaysa birden o son limite kadar for döngüsü dönecek. Burayı doğru mu anladım?
+
+248
+00:44:18,675 --> 00:44:20,675
+Bir dakika, limite kadar for döngüsü dönüşe.
+
+249
+00:44:20,675 --> 00:44:25,675
+Yani limit derken, sekiz basamaklı olabilecek en büyük sayının değeri neyse, oraya kadar döndürürüz.
+
+250
+00:44:25,675 --> 00:44:27,675
+Birden oraya kadar. Doğru mu?
+
+251
+00:44:27,675 --> 00:44:28,675
+Evet, evet.
+
+252
+00:44:28,675 --> 00:44:33,675
+Yani o bir milyar mı oluyor işte? Neyse, bir milyar veya işte bir yüz milyon falan neyse artık.
+
+253
+00:44:33,675 --> 00:44:38,675
+Tamam, yani pardon, neyse, bir yüz milyon diyelim.
+
+254
+00:44:38,675 --> 00:44:42,675
+Peki, ondan sonra ne yapacağız? Yani basamakları tek tek elde etmemiz lazım.
+
+255
+00:44:43,699 --> 00:44:58,900
+Ondan sonra, yani hocam ilk başta şeyi yapabilir, sonuçta bir birler basama olacak, onu dışarı alırız direkt onunla olan modunu. Sonra alttaki şeyleri de hep ona bölüp onunla mod alma şeklinde for döngüsü açıyoruz.
+
+256
+00:44:58,900 --> 00:45:01,300
+Hah, sekiz defa böyle.
+
+257
+00:45:01,364 --> 00:45:08,243
+10'a böl, moduna al, 10'a böl, moduna al, 10'a böl, moduna al, 8 defa bunu yazmak mantıklı değil. Öyle değil mi?
+
+258
+00:45:08,243 --> 00:45:09,243
+Evet.
+
+259
+00:45:09,243 --> 00:45:19,243
+Sen orada diyorsun ki içeride bir döngü daha yapalım. O döngüyle bütün basamakları tek tek alıp bir yerlerde saklayalım ve sonucu karşılaştıralım.
+
+260
+00:45:19,243 --> 00:45:24,243
+Olması gereken çözüm, genel çözüm budur. Yaklaşım olarak doğru teşekkür ediyorum.
+
+261
+00:45:24,596 --> 00:45:29,355
+Yani 8 değil de 3 basamak olunca şöyle bir çözüm mantıklı.
+
+262
+00:45:30,355 --> 00:45:36,476
+Ama hani 80 desek, 80 defa bu böl modunu al, böl modunu al yapmayacağız.
+
+263
+00:45:36,476 --> 00:45:42,315
+Yani orada ne gerekiyor? Yeniden bir döngü gerekiyor. O zaman o döngüyü kodlamamız lazım diyeceğiz.
+
+264
+00:45:42,315 --> 00:45:49,916
+Ve işte küplerini toplayıp gerçek sayıya, ilgilendiğimiz sayıya eşit mi? Bunu bulacağız.
+
+265
+00:45:50,128 --> 00:45:59,728
+Bakın dizi kullanmıyoruz arkadaşlar. Bu soruyu çözmek için diziye gerek yok. Yani bu sayıları mesela ekrana yazdırın desek, işte ekrana yazdırırız.
+
+266
+00:45:59,728 --> 00:46:08,927
+Ne bileyim bu sayıların toplamını yazdırın desek, bunu da yazdırırız. Hani hiçbir şekilde burada diziye gerek yok veri yapsın. Normal değişken yeterli.
+
+267
+00:46:08,927 --> 00:46:15,128
+Yeni bir kod açıyorum. Bu sayılara Armstrong mı diyorsunuz? Öyle bir ismi vardı.
+
+268
+00:46:17,139 --> 00:46:19,139
+Standard input output.
+
+269
+00:46:22,963 --> 00:46:36,563
+Yazalım arkadaşlarımızın söylediği yaklaşımla. Önce normal halini yazacağım. Yani ilk doğrudan basamakları elde edecek şekilde. Sonra bunu biraz daha genelleştirelim diyeceğim.
+
+270
+00:46:36,563 --> 00:46:47,443
+Bir kere bizim sorumuz birden bine kadar diyor. O zaman bir tane döngü değişkeni yeterli şimdilik.
+
+271
+00:46:50,099 --> 00:47:02,459
+i eşittir 1, i küçüktür, eşittir hatta 1000. 3 basamaklı sayılar deseydi dahil etmezdik. Tamam, 3 basamaklı sayılar diyelim, onun için 1000 diyorum.
+
+272
+00:47:02,459 --> 00:47:10,339
+i++. Şu anki halinde 999'a kadar.
+
+273
+00:47:13,556 --> 00:47:37,955
+Arkadaşlar, bir kere sayı yedeklememiz gerekiyor mu burada? Bakalım aslında gerekecek, evet. Çünkü şurada döngünün bir sonraki işlemden devam etmesi için sayıyı yedek alacağız. O zaman diyorum ki, bu arada kod indentation ile alakalı bir şey söylemedim ama benim kod yazmamdan birazcık hani çıkarım yapabilirsiniz.
+
+274
+00:47:38,452 --> 00:47:47,632
+Gelişi güzel, kod yazılmaz. İşte before yapıldığında içeriye bir tab kadar belli bir miktar zaten ideler bunu sağlıyor kod yazarken.
+
+275
+00:47:47,632 --> 00:47:50,792
+O kodun okunabilirliği açısından önemlidir.
+
+276
+00:47:50,792 --> 00:47:58,412
+Numara diye bir değişken kullanalım veya sayı diye bir değişken kullanalım ve bunu i ile yedekleyelim.
+
+277
+00:47:58,412 --> 00:48:01,711
+O zaman şurada bir num diye bir şeyimiz var.
+
+278
+00:48:01,972 --> 00:48:19,972
+Bazen ben böyle alt alta yazarım, bazen yan yana yazarım. Açıklamak için alt alta yazdığım oluyor ama programı yekten yazmak istersek yan yana bir gül koyup satır sayısını azaltırız. Artık o biraz eğitimle alakalı. Normal kod yazarken her zaman böyle yapmaya da gerek yok.
+
+279
+00:48:19,972 --> 00:48:26,972
+Şimdi numarayı aldık, sayımızı aldık. İlk yapacağımız şey ne olacak?
+
+280
+00:48:27,539 --> 00:48:46,539
+numaranın mod 10'unu alsak, bu bize son basamağı verecek. Şimdi bunu bir yerde tutalım. Bir yerde tutalım diyoruz ama, ne yapabiliriz? Buradan bir dijit elde edeceğiz. Yine bir değişken kullanıyorum. Dijit diyelim. Bunu bir dijitte saklıyorum.
+
+281
+00:48:53,172 --> 00:48:58,172
+Bir toplam diye bir geçici değişkene saklamam gerekiyor. İşte sum diyelim.
+
+282
+00:48:59,172 --> 00:49:01,172
+Sum eşittir.
+
+283
+00:49:03,172 --> 00:49:07,172
+Şimdi sum'a ne yapmam gerektiğini söyleyeceğim. Sum eşittir.
+
+284
+00:49:09,172 --> 00:49:14,172
+Hatta onu şurada diyelim. Sum ilk başta 0 olacak. Çünkü şey yok.
+
+285
+00:49:14,172 --> 00:49:19,172
+Dijital aldıktan sonra sum eşittir. Hatta artı eşittir.
+
+286
+00:49:19,315 --> 00:49:32,996
+digit, çarpı, digit, çarpı, digit. Bu üç şeyi buraya topladık, getirdik. Şimdi ne yapıyoruz? Numaramızı güncelliyoruz.
+
+287
+00:49:32,996 --> 00:49:44,115
+Numara eşittir, numara bölü 10. Bunu yaptığımızda sayı aslında bir şekilde truncate ediliyor. Sonra aynı şeyi tekrar yapıyoruz.
+
+288
+00:49:44,532 --> 00:49:52,532
+Dijiti numara bölü 10 al, sonra buraya getir. Sonra aynı şeyi tekrar yapacağız şurada, üçüncü basamak için.
+
+289
+00:49:52,532 --> 00:50:00,000
+Buraya geldiğimizde, önce birinci basamağı aldık, küpünü aldık, sum değişkenini ekledik.
+
+290
+00:50:00,000 --> 00:50:18,000
+Sonra sayı iki basamaklı hale getirdik. O iki basamaklı sayı, yeni sayının birinci basamağını aldık. Ondan sonra bunun küpünü elde ettik. Sonra tek basamaklı hale geldi. O tek basamaklı değişkenin sayının durumunu aldık. Sonra küpünü aldık, topladık.
+
+291
+00:50:18,000 --> 00:50:26,603
+Artık diyor ki, bu da if, şuradaki elde ettiğimiz sam değişkeni eşittir, eşittir. Neye eşitsin? i'ye eşitse
+
+292
+00:50:27,380 --> 00:50:32,880
+Bu sayıyı ekrana yazsın. Başka da bir şeyimiz yok burada. Printf.
+
+293
+00:50:36,211 --> 00:50:38,211
+%T
+
+294
+00:50:40,211 --> 00:50:41,211
+Şöyle bir
+
+295
+00:50:45,076 --> 00:50:52,076
+Bunu alacağız. Aldıktan sonra da bir alt satıra geçsin, bunları listelesin.
+
+296
+00:50:52,076 --> 00:51:00,076
+Aklıma gelen çözüm, sizin söylediklerinizden benim anladığım ve bunun algoritmik hali bu şekilde.
+
+297
+00:51:00,076 --> 00:51:07,076
+Compile diyelim. Buna armstrong diyorum.
+
+298
+00:51:11,443 --> 00:51:15,804
+Bakalım aynı şeyleri bulacak mıyız?
+
+299
+00:51:15,804 --> 00:51:21,244
+Bunun diğer halini çözmeden bir ara vereceğiz.
+
+300
+00:51:21,244 --> 00:51:24,764
+1, 153, 370, 371, 407.
+
+301
+00:51:24,764 --> 00:51:29,884
+371'de oluyor muymuş? Şuradaki şeyde hangisi yok?
+
+302
+00:51:29,884 --> 00:51:34,844
+407, 4'ün küpü deneyelim hemen.
+
+303
+00:51:44,563 --> 00:51:47,063
+Onu da buradan hesaplamak zor. Şuradan yapayım.
+
+304
+00:51:56,820 --> 00:52:18,300
+Direkt 4x4x4x4x7x7 Hakikaten varmış, evet. Demek ki orada bir sayı ekleme unutmuşuz. 407 de varmış. Evet, bulmadığımız bir şeyi de bulmuş olduk. Böyle devam ediyor.
+
+305
+00:52:19,699 --> 00:52:28,199
+Peki bu şeyi analiz edecek olursak, kaç defa burada bir işlem yapılıyor? Yani şuraya n dersek, 1000 yerine,
+
+306
+00:52:28,199 --> 00:52:34,699
+en defa aradaki işlemler, çünkü hiç döngü içermeyen işlemler, en defa bu algoritma dönecek.
+
+307
+00:52:34,699 --> 00:52:47,000
+Şimdi bunun genelleştirilmiş hali aslında daha bizim işimize yarıyor. Bir ara verelim, saat 10'da genelleştirilmiş halini, arkadaşımızın söylediği genelleştirilmiş halini yazalım.
+
+308
+00:52:47,168 --> 00:52:50,368
+Ve devam edelim. Sağ donunda görüşmek üzere.
+
+309
+01:02:11,188 --> 01:02:12,468
+Evet arkadaşlar.
+
+310
+01:02:19,027 --> 01:02:21,027
+Şimdi devam edelim.
+
+311
+01:02:25,172 --> 01:02:38,172
+Dedi ki, çözümümüzü, şuradaki gereksiz işlemleri elimine edecek ve bu problemi daha genelleştirecek hale getirelim.
+
+312
+01:02:39,371 --> 01:02:47,672
+Normalde bu Armstrong sayıları, hani üç basamaklılar içinde yapılan bir şey ama hani beş basamaklılar içinde de yapılabilir.
+
+313
+01:02:47,672 --> 01:02:51,172
+Veya şu şekilde güncelleniyor, geliştiriliyor.
+
+314
+01:02:52,179 --> 01:03:16,179
+3 basamaklılar içinde basamakların küpleri toplamı, 4 basamaklar içinde basamakların dördüncü kuvvetleri, işte 20 basamaksa 20 basamaklı şeklinde de yazılabilir ama biz 3 basamaklı şey küpler toplamı şeklinde düşünüp şu aralığı daha farklı bir şekilde ifade edelim. Yani istersek 20 basamak olur.
+
+315
+01:03:17,043 --> 01:03:23,483
+Mesela burayı, Bini dahil etseydim bu algoritma çalışır mıydı? Doğru şekilde doğru olur muydu?
+
+316
+01:03:23,483 --> 01:03:25,483
+Son basama almazdı hocam.
+
+317
+01:03:25,483 --> 01:03:28,683
+Son basama almazdı. Neden? En son alacağımız.
+
+318
+01:03:28,683 --> 01:03:30,043
+Daha doğrusu ilk basamak yani.
+
+319
+01:03:30,043 --> 01:03:33,043
+İlk basama alırız. Şurada...
+
+320
+01:03:33,043 --> 01:03:38,483
+Sondan alıyor ya basamakları. Modunu aldıkça son basama alıyor aslında.
+
+321
+01:03:38,483 --> 01:03:43,043
+Yani şu o da ilk basamak oluyor. Yani biriler basamağından bahsediyoruz. Öyle değil mi?
+
+322
+01:03:44,864 --> 01:04:07,864
+Konuşan arkadaşımız kimli bilmiyorum da, şu işi yaptığımızda biriler basamağını elde ediyoruz. Şunu yaptığımızda sayıyı üç basamağa indirdik. O zaman yeni biriler basamağı, eski onlar basamağı. Şurada yüzler basamağını alırız. Daha fazla bölmediğimiz için ne oluyor? Sayı onda kalıyor. Biri almamış olurduk bu durumda. Ama...
+
+323
+01:04:08,659 --> 01:04:20,619
+Yeni halinde, hatta böyle kopyalayalım, 1000'i de dahil edelim veya daha başka sayıları da dahil edelim. Daha genelleştirelim. 1000 ve üstündeki, şuradan 1000'i sileceğim.
+
+324
+01:04:23,499 --> 01:04:25,324
+Şu araya da printf diyeyim.
+
+325
+01:04:32,851 --> 01:04:42,851
+Bu durumda ne olacak? Bir kere şu çözüm, yani şunlar tamamen işe yaramadı. Bunlar gidecek.
+
+326
+01:04:42,851 --> 01:04:52,851
+Yine bir sum değişkeni kuracağız. Sum değişkenimiz olması gerekiyor. Çünkü bir şeylerin, küplerinin toplamı bir yerde saklanacak. O toplamda sum değişkeni olsun.
+
+327
+01:04:52,851 --> 01:04:56,491
+Numaramızı da yedekleyelim. Tamam, o da sıkıntı değil.
+
+328
+01:04:56,596 --> 01:05:03,196
+Ama bundan sonra yapacağımız şey, işte bir küpler toplamak, bir saniye arkadaşlar. Mouse'un pilinde bir sorun var.
+
+329
+01:05:08,148 --> 01:05:16,768
+Evet, arkadaşımız dedi ki, burada bir döngü, [öğrenci]'ti galiba değil mi, görüştüğümüz arkadaş? Döngü kuralım dedi. Nasıl bir döngü yazacağız?
+
+330
+01:05:16,768 --> 01:05:19,028
+C, while kurmamız lazım.
+
+331
+01:05:19,028 --> 01:05:21,028
+Do while yazabiliriz.
+
+332
+01:05:21,028 --> 01:05:30,148
+Do while olabilir, while dedik. Do while düşünmemiştim açıkçası, onu birazdan alalım, deneriz.
+
+333
+01:05:30,255 --> 01:05:33,255
+Why'li nasıl yapacağız? Durma şartımız ne olacak?
+
+334
+01:05:33,255 --> 01:05:38,255
+Hocam, sayı sıfırdan büyük olduğu müddetçe işleyecek, num, o sakladığımız.
+
+335
+01:05:38,255 --> 01:05:44,255
+Yani sayı sıfırdan büyük olduğu müddetçe deyince nasıl oluyor?
+
+336
+01:05:44,255 --> 01:05:50,255
+Biz böle böle sayıyı sıfıra yaklaştırıyoruz. Neye böleceğiz? Ona böleceğiz. Başka bir şeye bölmeyeceğiz.
+
+337
+01:05:50,255 --> 01:05:57,255
+Güzel. Sayı sıfırdan büyükken bu işlem devam edelim.
+
+338
+01:05:58,036 --> 01:06:18,335
+Peki, nasıl devam edeceğiz? Önce mevcut olan sayımızın bir dijitini alalım. Dijit eşittir, num, mod, on. Bu dijiti aldık. Bunu şeye ekleyelim, kümülatif toplama ekleyelim.
+
+339
+01:06:22,643 --> 01:06:27,043
+num çarpı num çarpı olmadı, mum oldu.
+
+340
+01:06:29,844 --> 01:06:31,244
+Dijitin küpü olmayacak hocam.
+
+341
+01:06:32,043 --> 01:06:34,244
+Pardon, dijitin küpü doğru diyorsun.
+
+342
+01:06:36,043 --> 01:06:40,844
+Bunun küpünü ekledik. Sonra sayıyı güncellememiz gerekiyor.
+
+343
+01:06:43,244 --> 01:06:48,031
+Sayıyı nasıl güncelleceğiz? Sayı, şey, neydi bizim sayımız numara?
+
+344
+01:06:48,032 --> 01:06:52,032
+Numara eşittir veya bölü eşittir.
+
+345
+01:06:52,032 --> 01:06:54,032
+Onu deriz.
+
+346
+01:06:54,032 --> 01:06:58,032
+Num olacaktı sanırım hocam sayı yazdığınız yer. Sayıyı nereye yazdık?
+
+347
+01:06:58,032 --> 01:07:00,032
+Evet, doğru diyorsun.
+
+348
+01:07:00,032 --> 01:07:03,032
+Burada da num olacak. Karakter şeyler biraz değişti.
+
+349
+01:07:03,032 --> 01:07:04,032
+Değişkenler.
+
+350
+01:07:04,032 --> 01:07:10,032
+Evet, burada ne oluyor arkadaşlar? Toplama işlemini kümülatif olarak yapıyoruz.
+
+351
+01:07:10,032 --> 01:07:14,032
+Sayımızı güncelliyoruz ve ne oldu? Burada bu işlem tamamlandı.
+
+352
+01:07:14,643 --> 01:07:26,643
+Peki, sonra yine şuradaki kontrol yapacak mıyız? Yapılacak. sum dediğimiz şey, sıfıra eşit, i'ye eşitse bunu ekrana yazdır diyeceğiz ve devam edeceğiz.
+
+353
+01:07:26,643 --> 01:07:40,643
+Çalıştıralım bakalım, aynı sonucu görecek miyiz? Evet, 1, 150, 370, 371, 407. Pekala. Bu da do while olan hali. Mesela bunu artık biz...
+
+354
+01:07:40,916 --> 01:07:52,780
+istediğimiz kadar büyütebiliriz. Yine bir şeyler çıkmadı. Mesela...
+
+355
+01:07:59,155 --> 01:08:07,356
+Çıkmadı değil, arıyor. Kontrol yapıyor arkadaşlar. Şurada işlem devam ediyor.
+
+356
+01:08:10,296 --> 01:08:18,916
+407'den sonra, yani döngü bakın hala araştırmaya devam ediyor, şu dıştaki döngü. Yanıt alamadık daha.
+
+357
+01:08:20,756 --> 01:08:25,355
+Arada yaptığımız yanlış bir şey yok değil mi? Numarayı saklıyoruz.
+
+358
+01:08:26,292 --> 01:08:38,292
+Numara sıfırdan büyükken 10'a modunu al, 10'a böl. Şunu biraz sabırsızım ama şöyle yapacağım. Küçültelim birazcık.
+
+359
+01:08:42,899 --> 01:08:44,899
+Şuraya da bir return 0 koyalım.
+
+360
+01:08:47,399 --> 01:08:49,799
+Sıfırsız bitip bitmediğini göstermek adına.
+
+361
+01:08:53,235 --> 01:09:20,556
+Evet, bunları buldu. Şeyi arttırınca 1634'ün de olması lazım. Şöyle yapayım. Iyi bir yerlerde yazdırayım. Nerede yazdıralım? Yani şurada yazdıralım diyeceğim de bu sefer de şey olacak. Sürekli bir I göreceğiz.
+
+362
+01:09:22,163 --> 01:09:23,163
+Biri biri.
+
+363
+01:09:37,268 --> 01:09:55,507
+1634'ün olması lazım. [öğrenci], onu bulabildik mi? Bulamadı. Açalım diyelim. Arada şu çıktıları yazıyor da nasıl bir şey önerebiliriz 1634'ün olması için?
+
+364
+01:09:58,804 --> 01:10:13,708
+Üzeri 4'ten bahsetmiyorum, [öğrenci]. Biz üzeri 3 üzerinden. Hani 1604'te 4. kuvvetlerin toplamı eşitse tamam, sıkıntı yok ama 3 üzerinden bakacağız. Onun için yani biraz...
+
+365
+01:10:20,212 --> 01:10:26,811
+Yani, onu söyledim, 20. basamaklı sayı olursa 20. kuvveti, 4. basamaklı ise 4. kuvveti.
+
+366
+01:10:26,811 --> 01:10:33,811
+Demek ki yok, bakın burada sonuç geldi, 0 elde ettik. Yani daha da arttırabiliriz.
+
+367
+01:10:35,652 --> 01:10:42,612
+Zaten olmaması makul arkadaşlar. Şimdi 3 basamaklı sayıların en fazla toplamı işte 999.
+
+368
+01:10:42,612 --> 01:10:47,811
+Hani 4 basamaklı, 5 basamaklı sayıların küplerini aldığımızda
+
+369
+01:10:48,115 --> 01:10:53,315
+O zaten sayının değerini aşıyordur muhtemelen, onun için bulamıyor.
+
+370
+01:10:53,315 --> 01:10:55,716
+Ama bakın algoritma aramaya devam ediyor.
+
+371
+01:10:56,515 --> 01:11:01,716
+Bunu genelleştirirsek, kaçıncı basamak olduğunu söylersek o zaman ne yapacağız?
+
+372
+01:11:02,515 --> 01:11:07,716
+Bir kere basamak sayısını şurada bir bulmamız gerekecek, yani sayı kaç basamaklı?
+
+373
+01:11:07,716 --> 01:11:12,115
+Bunu bulmamız için önce bir ön işlem yapmamız gerekiyor.
+
+374
+01:11:12,404 --> 01:11:22,404
+Yani diyeceğiz ki, ben bir kullanıcıdan sayı girdim. Bu num değişkeni olsun. Bahsettiğimiz sayının kaç basamaklı olduğunu bulalım.
+
+375
+01:11:22,404 --> 01:11:32,404
+Aslında onu şurada yazmamız gerekecek. Bir ön döngüyle şöyle diyebiliriz.
+
+376
+01:11:38,899 --> 01:12:04,159
+Sürekli 10'a böl, bir de değişken basamak sayısı C artı artı diyelim buna, yukarıda C'yi tanımladınız. Kaç basamak olduğunu bulabiliriz. Bunu bulduktan sonra artık şurada küpünü değil de, [öğrenci]'in dediği gibi işte dördüncü ise dördüncü kuvvetini, beşinci ise beşinci kuvvetini, onu da hani ister döngüyle, ister hazır fonksiyonla
+
+377
+01:12:04,467 --> 01:12:31,467
+alıp o zaman bulabiliriz. O zaman baktığınızda 1634'de bulursunuz. Bu çözümü de ekstra bir soru olarak, çalışma sorusu olarak size bırakayım. Yani bunu genelleştirin. Kaç basamakta olduğunu önce sayını bulmamız lazım. Onu bulmak için şöyle bir şeye ihtiyaç var. Niye böyle bir şey? Sayıyı sıfıra yaklaştıra yaklaştıra basamaklarını sayıyorum. Ondan sonra çözüme doğru gidiyorum. Anlaşılmayan bir şey var mı burada?
+
+378
+01:12:34,260 --> 01:12:39,460
+Şimdi do while ile bir çözüm söylemişti bir arkadaşımız. Do while ile nasıl yapabiliriz? Bir de ona bakalım.
+
+379
+01:12:39,460 --> 01:12:42,659
+Şimdi bir kere şu yine olacak.
+
+380
+01:12:42,659 --> 01:12:46,060
+Şu kısım. Bunu kopyalıyorum.
+
+381
+01:12:46,060 --> 01:12:52,860
+Tabi şu aradaki sonradan eklediğim şeyi sileyim de kafamız karışmasın.
+
+382
+01:12:57,235 --> 01:13:09,536
+Şimdi da silelim. Şimdi do while bir kere en az bir işi yapacağımızı söylüyor. Şartımızı şöyle do'yu yazayım. Ondan sonra şuraya da while'i yazalım.
+
+383
+01:13:13,460 --> 01:13:20,960
+Şartımız nasıl olacak? Numara sıfırdan büyükken olacak değil mi? Öyle mi?
+
+384
+01:13:29,108 --> 01:13:34,108
+Evet, bir arkadaşımız [öğrenci] demişti. Yazdım hatta, dur şuradan ismine bakayım.
+
+385
+01:13:37,108 --> 01:13:44,108
+Yok, ses de söylemiş. Kendisinden hani şeyi bekliyoruz.
+
+386
+01:13:44,108 --> 01:13:54,108
+Pardon hocam. İşte o hesapladığımız şey, while'ın içindeki şeyi direkt oraya kopyalarsak bence normal çalışma.
+
+387
+01:13:54,108 --> 01:13:56,847
+Şöyle diyorsun ki, olduğu gibi buraya alalım.
+
+388
+01:13:56,847 --> 01:13:58,847
+Evet, şunu da silelim.
+
+389
+01:14:00,847 --> 01:14:09,847
+Peki, şimdi bakalım. Bir kere sayıyı, yani dijitine aldık. Bu bir basamaklı ise ne olacak?
+
+390
+01:14:10,847 --> 01:14:16,847
+Mesela bir için biri alacağız. Sonra birin küpünü alacağız. Sonra sayıyı ona böleceğiz.
+
+391
+01:14:16,847 --> 01:14:23,787
+Sayıyı ona bölünce işte bu şart bozuluyorsa çıkacak, bozulmuyorsa devam edeceğiz.
+
+392
+01:14:23,859 --> 01:14:32,559
+Sonra diyeceğiz ki, bir için test ettiğimizde, şurada neyi buluruz? Biri buluruz. Adım adım çalıştıralım isterseniz bunu.
+
+393
+01:14:34,859 --> 01:14:46,359
+Bunu compile ve debug yap diyorum. Yes diyorum. Adım adım çalışırken bana şu dijit değişkeninin değeri lazım. AddWatch diyorum.
+
+394
+01:14:47,188 --> 01:14:52,788
+Ondan sonra, hani analiz ya kağıt üzerinde yapacaksın ya da böyle olacak, başka türlü olmaz.
+
+395
+01:14:52,788 --> 01:14:59,188
+Sum değişkenimize add watch diyelim, numara değişkenimize add watch diyelim. Next diyoruz.
+
+396
+01:14:59,188 --> 01:15:04,188
+Burada bir enter bir şey mi vardı acaba?
+
+397
+01:15:04,188 --> 01:15:12,788
+Debug dediğimizde niye yapmadık? Ha şu büyük sayılardan kaynaklı olarak şunları küçültelim de arkadaşlar.
+
+398
+01:15:14,579 --> 01:15:16,171
+Aşağıda da var.
+
+399
+01:15:24,595 --> 01:15:30,395
+Evet, bakın geldi. Yukarıdaki işlemler tamamlandı. Yazacağını yazdı. Artık buradan devam ediyoruz.
+
+400
+01:15:30,395 --> 01:15:34,835
+Şimdi digitimiz, ilk sayı hatta i'yi de edward yapalım.
+
+401
+01:15:34,835 --> 01:15:40,275
+i'miz 1 iken, şu an digitimiz 1 olarak aldık.
+
+402
+01:15:40,275 --> 01:15:44,275
+sum değişkenine 1'in küpünü aktardık.
+
+403
+01:15:44,275 --> 01:15:48,915
+Numaramız da şu an 1. Numarayı 10'a böldük, 0 dedik, çıktık.
+
+404
+01:15:49,939 --> 01:16:04,939
+Çıktıktan sonra, işte bu şartın kontrolünü yapıyoruz. Devam ediyoruz. Mesela ben şöyle ilerleteceğim, on sayısına geleceğim. Aradaki işlemlerde çünkü bu şart sağlanmıyor.
+
+405
+01:16:19,699 --> 01:16:29,739
+Evet, sayımız onken ilk dijitimiz sıfır, toplama sıfır aldık. Daha sonra sayımız bir oldu, birin küpünü aldık.
+
+406
+01:16:30,739 --> 01:16:36,860
+Dikkat ederseniz burada numara, birin küpünü şimdi aldık, ekledik.
+
+407
+01:16:39,920 --> 01:16:44,659
+Şimdi bunu yaptığında ne oldu? Sayı sıfır oldu. Aslında aynı şeyi yapıyor gibi.
+
+408
+01:16:46,292 --> 01:16:57,092
+Yani ilk defa bir kontrol yapması sıkıntı değil. 11 için bir daha analiz edeyim. Birebir aynı çıktığı verecek gibi görünüyor.
+
+409
+01:16:57,092 --> 01:17:02,292
+Hocam sayı 1'e büyük eşit olduğu için do while the while'ın bir farkı yok aslında.
+
+410
+01:17:02,292 --> 01:17:11,292
+Evet, yani burada farkı yok. Bu problemde ikisi de kullanılabilir. Öyle gösteriyor. Bir şey olarak sonucuna bakalım.
+
+411
+01:17:14,131 --> 01:17:16,131
+Continue mu diyorduk burada işte?
+
+412
+01:17:18,131 --> 01:17:21,131
+Veya şöyle direkt doğrudan çalıştıralım artık.
+
+413
+01:17:23,131 --> 01:17:25,131
+153, 407'ye kadar ilerliyor.
+
+414
+01:17:27,131 --> 01:17:32,131
+Num 0 iken de çalışabilir. Do while için bunun en geri olmadığını görüyoruz.
+
+415
+01:17:36,404 --> 01:17:57,404
+Peki arkadaşlar, bu soru da bu şekilde. Ama bunu genelleştirilmiş haliyle en basamaklı sayıların, birden en basamaklı sayılara kadar olan Armstrong sayılarını eninci dereceden kuvvet yöntemiyle, ben soruyu öyle ifade edeyim, kullanıyorum.
+
+416
+01:17:57,404 --> 01:18:00,404
+Evet, şurada basit bir sorumuz var.
+
+417
+01:18:00,404 --> 01:18:01,404
+Şimdi...
+
+418
+01:18:02,644 --> 01:18:22,644
+While döngüsünün mantığını burada şey yapacağız. Elimizde bir sayı dizimiz var. Bu sayı dizisinde bir eleman arıyoruz. İlk geçtiği yeri bulmak için bir kere kuracağımız döngü karışık bir sayı dizisi, yani sıralı değil. While döngüsü kullanırız değil mi? Yani nerede olduğunu bilemiyoruz çünkü.
+
+419
+01:18:24,180 --> 01:18:47,800
+İkinci geçtiği yeri bulmak için yine bu aile kullanırız. İsteririz ki ilk geçtiği yeri bir hafızada tut, ondan sonra tekrar kaldığın yerden devam et, o şekilde. Beşinci geçtiği yer, burada biraz problem zorlaşıyor açıkçası. Yani bir kere saymak gerekiyor. Mesela şöyle sayabiliriz. İşte bir dizim var.
+
+420
+01:18:50,292 --> 01:19:02,292
+O dizinin içerisinde bir eleman arıyorum. Bir kere ne yapabilirim? En defa dolaşarak bu diziyi, bütün elemanlarına bakarak, bu dizide bu eleman kaç tane var? Örneğin 5 tane olsun.
+
+421
+01:19:04,292 --> 01:19:16,268
+Ama en defa gezdik değil mi? Yani bu baştan sona karşılaştırma yaptık. En defa işlem gerçekleştirdik. Sonra mesela ben üçüncüyü bakacağım.
+
+422
+01:19:16,435 --> 01:19:42,115
+Yeniden baştan gezerim, yani yeniden bir döngü. İşte buradan başlarız. İlk karşılaştırdığımda, mesela kaçıncıyı arıyorum? Beşinciyi arıyorum. Pardon, üçüncüyü arıyorum diye. Şu beşi biraz azaltırım. İlk karşılaştırdığımda işte bu birincisiydi. Sonra bir daha karşılaştırdım, bir daha biraz azaltırım. Ne zamanki üçüncüye geldim, üçüncü karşılaştığım noktaya geldim.
+
+423
+01:19:42,515 --> 01:19:53,515
+Ona göre orada durabiliriz. Orada da zaten indis bilgisi ister. Şu sıradaki eleman üçüncü defa yazılmıştır gibi söyleyebiliriz.
+
+424
+01:19:53,515 --> 01:19:56,427
+Gruptaki çözümü, yaklaşımı anlamayan var mı?
+
+425
+01:20:01,076 --> 01:20:03,076
+Ben soruyu tam olarak anlamadım.
+
+426
+01:20:03,076 --> 01:20:08,076
+Şimdi bir sayı dizimiz var. Ben bu sayı dizinin içinde bir eleman arıyorum.
+
+427
+01:20:08,076 --> 01:20:16,076
+İşte üç beş gibi bir sayı arıyorum. Bu aradığım eleman dizinin içinde ilk nerede geçiyor? Nerede?
+
+428
+01:20:16,076 --> 01:20:25,076
+Hani bunu düşündüğümüzde çözüm olarak bir while döngüsüyle ne yaparız? O sayı dizinin içinde ilk olan yere bakarız.
+
+429
+01:20:26,579 --> 01:20:53,500
+Problemi genişletirsek, ikinciye bakalım dersek, bu sefer önce bir ilkini bulalım, ondan sonra ikincisini aramaya devam ederiz diyeceğiz. İlkini bulduğumuzda bir flag değişkeni olabilir veya bir sayısal bir kontrol değişkeni olabilir. İlkini bulduğumuzu tespit edeceğiz. Sonra kaldığımız yerden devam edip ikinciyi arayacağız. Sonra problemi üçüncü, dördüncü, beşinci diye genelleştirirsek, bakın problem değişiyor.
+
+430
+01:20:54,195 --> 01:21:06,195
+Nasıl değişiyor? Yani birinci için bir tane değişken, ikinci için bir tane değişken kullanmak biraz anlamsız. Şöyle bir çözüm olabilir. Önce kaç tane geçtiğini bulabiliriz.
+
+431
+01:21:06,195 --> 01:21:22,059
+İşte mesela beş tane. Biz bu beş taneden üçüncünün nerede geçiyor onu buluyorsak işte ne yaparız? Tekrar dizinin içinde arama yaparız. Dolayısıyla ilk kaç tane geçtiğini bulmak için en defa bir döngü.
+
+432
+01:21:22,260 --> 01:21:43,680
+İkinci bir n defa döngü ve bu şekilde yer bulabiliriz. Yani iki n defa aslında bir şey var. Biz dedik ki bu iki n'in ikisini kabul edip kullanmayacağız. Dolayısıyla n karmaşıklıklı bir algoritma ile bunu bulabiliriz. Şöyle bir durum da olabilir. Mesela en son geçtiği yeri bulalım dersek ne yaparız?
+
+433
+01:21:50,515 --> 01:22:15,995
+problem bir dizinin içinde bir eleman arıyor. Dizinin sonundan başlayıp ilk değerini bulalım. Güzel. Yani burada tabi istatistisel dağılım da önemli ama arkadaşımızın söylediği doğru. Baştan başlayıp n defa kontrolü yapmak yerine bildiğimiz n, şu n'e daha az sayıda kontrol yapmamız mümkün.
+
+434
+01:22:16,500 --> 01:22:40,492
+Mesela n-5, n-10, o bile algoritmayı hızlı sonlandıracak. Bunun için ne yaparız? Dizinin sonundan başlarız. Sonundan başladığımızda ilk gördüğümüz yer, o bizim en son elemanımız demektir, aradığımız eleman demektir. Bu da ne oluyor? İlk gördüğümüz yer, en iyi ihtimalle mesela sonda olsun, bir defa kontrol yaparız. En kötü ihtimalle...
+
+435
+01:22:40,979 --> 01:22:57,979
+Dizinin aradığımız eleman içeride bir tanesi ve o da şuradaysa, yani hem baştan hem de sondan aynı yerdeyse, bu sefer en kötü ihtimalle en defa kontrol yaparız. Bunun karmaşıklığı da 1 ile n arasında değişen bir şeydir diyebiliriz. En iyisi, en kötü durum var.
+
+436
+01:22:57,979 --> 01:23:08,939
+Dolayısıyla bakın burada ne oldu? Bir algoritmayı böyle çalışma sayısını analiz ederken en kötü, en iyi durum, hatta biz bunu sıralama algoritmalarında ifade ettik, burada da ortaya çıkıyor.
+
+437
+01:23:09,460 --> 01:23:11,340
+Anlaşılmayan bir şey var mı burada?
+
+438
+01:23:18,195 --> 01:23:39,675
+Pekala. Şimdi şuna bakalım. Şimdi bir kere önerme nedir? Önce onu bir söyleyelim. Burada önerme diye bir kelime geçiyor. Ondan sonra detaylarına geleceğiz. Önerme, sonucu doğru ya da yanlış olan ifadelere önerme diyoruz. Mantıksal ifadeler.
+
+439
+01:23:40,916 --> 01:23:51,316
+Sonucun doğru veya yanlış olması nasıl ifade ediyor? Bir hüküm cümlesi kuracaksınız. Bu hüküm cümlesinin ya doğru ya da yanlış sonucu olacak.
+
+440
+01:23:54,216 --> 01:24:02,316
+Görüşlerin doğruları yanlışları olabilir. Bakın mesela ne bileyim bu kitap güzeldir yani bana göre doğru, bana göre yanlış, başkasına göre yanlış diyebilirsiniz.
+
+441
+01:24:08,467 --> 01:24:15,887
+Doğru veya yanlış diyebileceği, herkesin konsensüsü ile sonuca ulaşacağı bir şey olması lazım.
+
+442
+01:24:15,887 --> 01:24:20,747
+Bu da genellikle matematiksel ve mantıksal ifadelerde karşımıza çıkıyor.
+
+443
+01:24:20,747 --> 01:24:24,347
+Örneğin, şunun biz pozitif doğal sayılar olduğunu...
+
+444
+01:24:24,528 --> 01:24:32,528
+Ve işte 0, 1, 2, 3 kümesinden 0'ın hariç tuttuk, 1, 2, 3, 4, 5 sonsuza kadar gidilen bir şey olduğunu biliyoruz.
+
+445
+01:24:32,528 --> 01:24:43,528
+Ve buradaki her bir sayı için, bu kümedeki her bir sayı için n kare artı n artı 41 asal sayıdır şeklinde bir önerme var.
+
+446
+01:24:43,528 --> 01:24:48,528
+Şimdi bu önermenin doğruluğunu veya yanlışlığını ispat etmek önceden çok zordu.
+
+447
+01:24:48,528 --> 01:24:51,423
+Niye? Yani hesaplayıcı şeyler yok, bilgisayarlar yok.
+
+448
+01:24:51,423 --> 01:25:15,824
+Fakat bilgisayarla kısmen kolay. Neden kısmen dedim, çünkü sayı kümemiz bir kere sonsuz bir küme. O zaman bunun doğruluğunu ispat etmek yerine yanlışlığını ispat etmek bence daha kolay. Öyle değil mi?
+
+449
+01:25:16,243 --> 01:25:24,904
+Bir şeyin doğruluğunu ispat etmek için burada bütün doğal sayılar üzerinde sonsuza kadar bir döngü çevirmeniz lazım.
+
+450
+01:25:24,904 --> 01:25:27,623
+E bu mümkün mü? Mümkün değil.
+
+451
+01:25:27,623 --> 01:25:35,623
+Ama bunu tersinden düşünürsek yanlış olduğunu gösterelim. Yanlışlığı üzerinden çıkalım.
+
+452
+01:25:35,623 --> 01:25:40,543
+Yani n kare artı n artı bir asal değildir.
+
+453
+01:25:40,787 --> 01:26:02,287
+şeklinde düşünürsek bunun tersini ve bu asal değildir ifadesinin doğruluğunu gösterirsek şu önermenin aslında yanlışlığını göstermiş oluyoruz. Buna counter-positive örnek dediğimiz, ayrık matematik dersinde daha detaylı göreceksiniz bunları, yöntem diyoruz.
+
+454
+01:26:06,963 --> 01:26:25,283
+O önermenin tersini alıyorsunuz. Bu önermenin tersi nedir? Her şu sayı için şunlar asal sayı değildir. Bu önermenin tersinin doğruluğunu göstererek önermenin kendisinin yanlış olduğunu ifade edebiliyoruz.
+
+455
+01:26:25,283 --> 01:26:29,283
+Burada anlamadığımız bir şey var mı? Söylediğim cümleler belki biraz karışık gelmiş olabilir.
+
+456
+01:26:37,460 --> 01:26:43,460
+Peki, doğruluğu ispat edeceksek kuracağımız algoritma nasıl olurdu? Şimdi birinize sorayım.
+
+457
+01:26:44,460 --> 01:26:46,460
+[öğrenci]
+
+458
+01:26:48,460 --> 01:26:51,460
+[öğrenci] hatta iki defa gitmiş.
+
+459
+01:26:59,507 --> 01:27:01,507
+[öğrenci].
+
+460
+01:27:01,507 --> 01:27:08,507
+İkiye göre modunu alarak belki hocam, 2-3-5 şeklinde birkaç sayının kalansızlık...
+
+461
+01:27:08,507 --> 01:27:12,507
+Asal sayının, yok o asal sayı tarafına girmeyelim önce yani.
+
+462
+01:27:12,507 --> 01:27:20,507
+Biz bütün doğal sayılar için şu ifadenin en kare artı en artı 41'in asal sayı kontrolünü yapacağız.
+
+463
+01:27:20,507 --> 01:27:23,211
+Nasıl bir döngüyle işe başlamamız lazım?
+
+464
+01:27:25,876 --> 01:27:28,996
+Döngü kaçtan başlayacak, kaça doğru gidecek enişte?
+
+465
+01:27:34,260 --> 01:28:00,260
+Evet. Birden başlayalım, any 1 alarak, formuna, birden başlatacağız. Tamam. Ama kaça kadar gidecek? For döngüsü, onun için burada şey olmuyor, ucu açık. Yani bir while döngüsüyle integer'ın sınırına kadar veya long integer'ın sınırına kadar devam edebiliriz. Bakın doğruluğunu ispat ediyoruz. Yani o zaman bir while
+
+466
+01:28:00,372 --> 01:28:15,372
+For peki şey yaramıyor diye dikkat ederseniz. Yani çünkü for da bir sınır verilmeli. n eşittir işte şey diyeceğiz yani bunu yanlış yapana kadar tabi buraya bir şart vereceğiz. Bu n'e bağlı bir şart olmayacak artık şimdi sileyim.
+
+467
+01:28:15,372 --> 01:28:25,324
+Nasıl bir şey olacak? İşte bir flag değişkeni olabilir. Ne bileyim bu önermenin bozulduğunu gösteren bir flag koyalım buraya.
+
+468
+01:28:27,091 --> 01:28:46,091
+Ve aşağıda, yukarıda n'i birden başlatmıştık, aşağıda kontrollerimizi yaparız. Ondan sonra n'i 1'i arttırırız. Bu işlem tekrar başa devam eder. İşte pleb ile alakalı kontroller devam eder. Böyle gideriz. Doğruluğunu göstermek için. Ama dediğimiz gibi zor bir şey.
+
+469
+01:28:46,091 --> 01:28:47,979
+Bunun yerine...
+
+470
+01:28:48,884 --> 01:29:06,083
+Önermenin yanlışlığını göstermek bizim için daha kolay olabilir. Her zaman değil tabii ki. Demişiz ki burada bu ifadenin yanlış olduğunu, asal sayı olmadığını kabul edelim ve işte 40'ın da en eşittir 40'a geldiğinde önermenin yanlış olduğunu gösteriyoruz.
+
+471
+01:29:06,083 --> 01:29:14,884
+Dedik ya önerme ya doğrudur ya yanlıştır. Burada yanlışlığını gösterince kalan sayılara bakmaya gerek kalmıyor.
+
+472
+01:29:15,667 --> 01:29:19,667
+Peki geldik, problemin içinde bir başka problem daha var. Nedir o sizce?
+
+473
+01:29:21,167 --> 01:29:26,667
+Dedik ki tamam, yanlışlığını göstererek problemi çözeceğiz. Burada bir başka problemimiz daha var. O nedir?
+
+474
+01:29:26,667 --> 01:29:28,667
+Asal sayı hesabı.
+
+475
+01:29:28,667 --> 01:29:35,667
+He, acaba baktığımız sayı, sonuçta n eşittir bir tane sayımız var. Mesela n eşittir 5, 5'in karesi 25.
+
+476
+01:29:35,667 --> 01:29:40,667
+5 de oradan ne oldu? 30. 41 de oradan ne oldu? 71 mi oldu?
+
+477
+01:29:40,667 --> 01:29:43,243
+Acaba 71 asal sayı mı?
+
+478
+01:29:43,891 --> 01:29:50,891
+Bir de bunun içinde bu kontrolü yapmak gerekiyor. Bir sayının asal olup olmadığını nasıl kontrol ederiz?
+
+479
+01:29:50,891 --> 01:29:54,891
+[öğrenci]
+
+480
+01:29:58,131 --> 01:29:59,131
+[öğrenci]
+
+481
+01:30:07,155 --> 01:30:11,615
+[öğrenci]
+
+482
+01:30:15,604 --> 01:30:17,104
+Burada mısınız arkadaşlar?
+
+483
+01:30:18,304 --> 01:30:20,604
+Hocam ben pas geçiyorum maalesef.
+
+484
+01:30:21,804 --> 01:30:27,604
+Pas geçiyorsun, neden? Yani bir sayının asal olup olmadığını sence nasıl, matematiksel olarak düşün?
+
+485
+01:30:28,243 --> 01:30:34,383
+Hocam, bu sayı benim için travma da, o yüzden. Yani, BMY'de kormuşlardı asal sayılarla hakkı bir sayı.
+
+486
+01:30:34,383 --> 01:30:39,503
+Şimdi bu travmayı çözmezsek, bu sayı hayatını etkileyecek yani psikolojik olarak.
+
+487
+01:30:39,503 --> 01:30:45,643
+Bunu niye kendine şey yaptın ki? Mesela bir sayının asal olup olmadığını, BBG'den algoritmik tarafından hariç düşünün.
+
+488
+01:30:45,643 --> 01:30:48,983
+Matematiksel olarak nasıl tanımlıyoruz asal sayıları?
+
+489
+01:30:48,983 --> 01:30:54,603
+Ben kendisine, başka, pardon, sadece kendisine bire bölünebilen, başka sayıya bölünemeyebilen sayılar.
+
+490
+01:30:54,603 --> 01:30:55,983
+Tamam, çok güzel. O zaman.
+
+491
+01:30:56,404 --> 01:31:17,824
+Bir de biri hariç tutacağız. Sonra şuraya alalım. Yani bir bizim için önemli değil. Bire bakmıyoruz. Bir de bizim bir sayımız var. N dediğimiz bir sayı. Kendisine de bakmıyoruz. Bire de bakmıyoruz. Şunlardan herhangi birisine, şunların tamamına bölünemiyorsa asal 2, 3, 4, 5, n-1'e kadar. Öyle değil mi?
+
+492
+01:31:18,960 --> 01:31:31,960
+2'ye de bölünemeyecek, 3'e de bölünemeyecek, 4'e de bölünemeyecek, n-1'e de bölünemeyecek. Bunların hiçbirine bölünemiyorsa sayı asal. Peki, bir tanesine bölünüyorsa sayı ne olur?
+
+493
+01:31:31,960 --> 01:31:35,948
+Sadece bir tanesine bölünüyor derken?
+
+494
+01:31:36,115 --> 01:31:40,476
+Yani dörde bölünebiliyor olsun mesela benim bu sayım. O zaman asal olduğunu mu?
+
+495
+01:31:40,476 --> 01:31:41,756
+Hayır olmuyor.
+
+496
+01:31:41,756 --> 01:31:46,876
+Olmuyor. Tamam, o zaman böyle bir kontrol yapacağız. Herhangi bir n sayısı acaba asal mı?
+
+497
+01:31:46,876 --> 01:31:50,876
+Şimdi bunu matematikten koda çekelim, algoritmaya çekelim.
+
+498
+01:31:50,876 --> 01:32:00,436
+Bire bakmayacağız dedik, n'e de bakmayacağız. O zaman ben mesela derim ki, i eşittir 2'den başla.
+
+499
+01:32:04,243 --> 01:32:31,884
+Şuna bak, i'nin modu, pardon yanlış oldu, n mod i, yani n'in i ile bölümünden kalan, eşittir, eşittir, sıfır, pardon eşittir, eşittir değil, eşit değil sıfırsa, eşit değil sıfırsa ne demek? Bölünemiyor demek. Ne yapmam lazım? 2'ye bölünemiyorsa 3'e bakmam lazım. O zaman diyorum ki şurada i'yi 1 arttır.
+
+500
+01:32:32,595 --> 01:32:59,975
+Döngünün içinde. Anladın mı şurayı? Anladım. Yani ikiye baktık, bölünemiyor. Bölünemiyor diye bir şey diyemeyeceğiz. Üçe de bakacağız. Üçe de baktık, bölünemiyor. Sonra diyor ki kod dörde bak. E baka baka nereye geleceğiz? n-1'e geleceğiz. O zaman şuraya bir şart daha vereceğiz. Diyeceğiz ki i küçükken n'den bu işi yap. Niye? n'e eşit olduğunda zaten bölünecek.
+
+501
+01:33:00,787 --> 01:33:11,787
+Ne yapıyoruz? i2'den başladı. 2, 3, 4, 5 gidiyoruz diyoruz. n-1'e kadar geldik. n-1'de de bölünemedi ise artık buradan çıktık.
+
+502
+01:33:11,787 --> 01:33:27,375
+Şu işlem bu döngü bittiğinde bir kontrol daha yapmamız gerekiyor. Gerçekten şeydi, i eşitse burada n'e çünkü neden çıkmışızdır? Ya şundan dolayı çıkmışızdır ya da şundan dolayı çıkmışızdır değil mi while döngüsünden?
+
+503
+01:33:27,376 --> 01:33:34,376
+while döngüsünün mantığını biliyoruz. Yani burada iki tane şart var. Ya şu işi bozmuştur ya bu işi bozmuştur.
+
+504
+01:33:34,376 --> 01:33:46,376
+Orada diyoruz ki işte if eğer i n'e eşitse demek ki sonuna kadar geldik bulunamadık. Şuradan dolayı çıktık. Buradan dolayı çıktıysak artık asaldır bu sayı.
+
+505
+01:33:53,300 --> 01:34:20,819
+Asal değil. Niye asal değil? Çünkü arada bir yerde bir tane şey bölmüş. Anladın mı burayı? Anladım. Anladım hocam. Peki bir örnek üzerinde söyleyelim. Mesela n eşittir 15 asal mı? Şuraya göre analiz edelim. Şimdi i bir kere 2'den başlayacak. N mod i yani 15 mod 2. Sıfırdan farklı mı?
+
+506
+01:34:21,247 --> 01:34:42,747
+Farklı. Peki, i dediğimiz şey 15'ten küçük mü? Küçük. i'yi 1 arttırdık, 3 yaptık. 15 mod 3, 0'dan farklı mı? Hayır. Değil. O zaman çıktık. Çıktığımızda peki i 15'e eşit mi? Hayır. Değil. O zaman asal değil. Hakikaten de 15 asal değil.
+
+507
+01:34:43,412 --> 01:34:45,412
+Tamam mı? Tamamdır hocam.
+
+508
+01:34:45,412 --> 01:34:54,412
+Burada şöyle bir iyileştirme yapılabilir, onu da kim söylesin? Yani bu algoritmada, asal bulma algoritmasında başka biraz daha iyi bir iyileştirme kullanılır.
+
+509
+01:34:54,412 --> 01:34:56,412
+Hocam, n7 ile kök n'ye gitsek?
+
+510
+01:34:56,412 --> 01:34:58,412
+N bölü 2'ye gidebiliriz hocam.
+
+511
+01:34:58,412 --> 01:35:05,412
+N bölü 2'ye gidebiliriz. Çünkü bir sayının en büyük böleni nedir? Ken yarısıdır.
+
+512
+01:35:06,292 --> 01:35:16,292
+15'in en büyük bölümde işte ne var? 7 olabilir veya 8. Onlar zaten bölemiyor. Tam bölenden bahsediyoruz. O sebeple neye bakmamız lazım?
+
+513
+01:35:17,939 --> 01:35:42,539
+Burada n'e kadar bakmayan esasen gerek yok. Bunun bir sürü versiyonu var. O zaman n bölü 2'ye bakılabilir veya işte kök n'in tam sayı değeri neyse onun değerine bakılabilir. Bir arkadaşımız da güzel bir şey söyledi. Şimdi çift sayılara çok bakıyoruz dedi. Çift sayılara bakmaktan kastım mesela yani 4'e bakmayalım mesela 16, 16 demeyeyim de mesela 20.
+
+514
+01:35:44,787 --> 01:36:11,907
+2'ye baksak anladım. Yani n sayısının şu döngüye girmeden önce tek mi çift mi olduğuna baksak yeter. Önce onu kontrol yapıyoruz ama onu geçtim. Direkt matematikteki bildiğimiz kuralı işte 1 ve n dışında bütün sayılar n-1'e kadarki bütün sayılar tam bölüyorsa, şey tam bölemiyorsa asaldır. Ama en az bir tane bölen varsa asal değildir.
+
+515
+01:36:12,275 --> 01:36:35,335
+deriz ve bunu bu şekilde koda dökeriz. Bu n'i, n-1'i, n bölü 2'yi kök n'e çekeriz. Biraz daha az sayıda işlem yaparız. Bakın burada da asal sayılık, arkadaşınız biraz önce matematiksel bir ifade okundu, bir ifade söyledi, bir ve n dışında. Bu da bir önerme. Biz bu önermenin doğruluğunu ispat etmemiz her zaman mümkün değil.
+
+516
+01:36:36,564 --> 01:36:45,184
+Onun için çok büyük asal sayı bulmak, geçenlerde şifrelemede de söyledim, zor bir problem, bir sürü işlem gerektiriyor.
+
+517
+01:36:45,184 --> 01:36:49,104
+Ama onun yerine asal sayı olmadığını bulmak daha kolay.
+
+518
+01:36:49,104 --> 01:36:56,944
+Örneğin, bizim sonsuz tane sayımız varsa, sonsuz bölü iki tanesi bunun çift sayı.
+
+519
+01:36:56,944 --> 01:37:00,264
+Yani doğrudan, kafadan eleyebileceğimiz...
+
+520
+01:37:00,756 --> 01:37:05,155
+Asal değildir diyebileceğimiz sonsuz bölü iki tane kadar sayımız var.
+
+521
+01:37:05,155 --> 01:37:14,355
+Aynı şekilde girilen bir sayının önce çift olup olmadığını kontrol edip ikinin dışında bir çiftse ona bakarak veya
+
+522
+01:37:14,515 --> 01:37:30,115
+Burada başka algoritmalar var. 3'ün katları mı, 5'in katları mı, 7'nin katları ise mesela 35 olmaz. Asal değildir. Bunun bir, işte Sea of Eratros mıydı, bir şey kalburu diye bir yöntemi var.
+
+523
+01:37:32,115 --> 01:37:39,115
+[öğrenci], dediğini zaten söyledik. İşte n bölü 2 veya kök n'e kadar bakılıyor.
+
+524
+01:37:40,467 --> 01:37:50,467
+Şunu düşüneceğiz, aynı biraz önceki şey gibi, önerme gibi, en az bir tane bölen bulabiliyorsak, tam bölen, o zaman asal değildir demek daha kolay.
+
+525
+01:37:50,467 --> 01:38:00,467
+Yani şöyle düşünün, bir sayının asal olup olmadığını bulmak, asal olduğunu bulmak mı kolay, asal olmadığını bulmak mı kolay, asal olmadığını bulmak daha kolay.
+
+526
+01:38:00,467 --> 01:38:03,344
+Tamam, bunun kodunu size bırakıyorum.
+
+527
+01:38:03,344 --> 01:38:17,484
+Bakarsınız gelecek ders, kodunu yazan var mı, göstersin bakalım diye bir soru sorup ona göre bir dönem sonuna ekstra puan gibi, yani böyle bazen sürprizler yaparım. Onun için kodunu çözmeye çalışın.
+
+528
+01:38:17,484 --> 01:38:30,804
+Evet, [öğrenci] da tam ismini yazdı. İşte bir kalbur algoritması, elek algoritması. İşte kişinin orada bir ismi var. O da bir hızlandırma yöntemi.
+
+529
+01:38:31,380 --> 01:38:36,880
+Bunun kodunu da oradan yazmaya gerek yok. Yani size ödev olarak dedim. Bakın burada bir önerme daha var.
+
+530
+01:38:39,380 --> 01:38:50,380
+Şimdi pozitif doğal sayılar kümesinde A, B, C, D'lerin bazıları, şimdi şu ifade arkadaşlar her demektir.
+
+531
+01:38:50,380 --> 01:38:56,076
+Şu da bazı veya bir sum dediğimiz, birisi every, birisi sum.
+
+532
+01:38:58,836 --> 01:39:11,136
+İki şekilde de düşünebilirsin [öğrenci]. Yani zaten onu yapınca asal sayı bulma işinde yapıyorsun. Yani önermeyi gösterme şeklinde. Zaten önermenin yanlış olduğunu biliyoruz da asal sayıyla birlikte düşünebilirsin.
+
+533
+01:39:11,136 --> 01:39:13,536
+Şimdi aşağıdaki soru diyor ki
+
+534
+01:39:15,828 --> 01:39:33,427
+A, B, C'de pozitif doğal sayılarından bazıları için A üzeri 4, B üzeri 4, artı C üzeri 4 eşittir. D üzeri 4, şu da değil işareti. Bu eşitliği doğru değildir demek istiyor.
+
+535
+01:39:33,427 --> 01:39:38,028
+Bunu sözel ifadeyle, yani yazı şeklinde yazacak olursak,
+
+536
+01:39:38,292 --> 01:40:05,832
+A üzeri 4 artı B üzeri 4 artı C üzeri 4 eşittir D üzeri 4. Doğal sayılar, pozitif doğal sayılar kümesi içerisinde tanımlı bir eşitlik değildir. Bakın bu bir önerme. Şimdi değildir dediğinde bunun da bir doğru, true veya yanlış sonucu var. Yani değildir olması yanlışlığı da yanlışlanabilir. Dolayısıyla doğru olabilir aslında diyeceğiz. Ve bunu da önerme olarak sunduğumuzda
+
+537
+01:40:06,163 --> 01:40:29,163
+Ne yapmamız gerekiyor? Bir kere kanıtlamamız gerekiyor. Yani doğruluğunu veya yanlışlığını. Şimdi denmişler ki, 88'e kadar bunun yanlış olduğu doğru kabul edilmiş. Yani demiş ki, böyle bir çözüm yok. Bu önerme doğru. Sonra tabi bilgisayarlarla ne yapılıyor? İşte bu.
+
+538
+01:40:29,716 --> 01:40:36,716
+A'yı birden başlatırsınız, B'yi birden başlatırsınız, C'yi birden başlatırsınız, D'yi birden başlatırsınız.
+
+539
+01:40:36,716 --> 01:40:42,716
+Arttıra arttıra dördüncü kuvvetlerine şu eşitliği kontrol edersiniz bir algoritmayla.
+
+540
+01:40:42,716 --> 01:40:50,716
+Çünkü bilgisayar olmadan, elinizde ve hesaplama cihazı olmadan ve bu bilgisayarın da hızlı sonuç vermesini...
+
+541
+01:40:51,923 --> 01:41:09,224
+Gerekiyor. Hızlı sonuç vermesi ne demek? Çünkü sonsuza kadar arama ihtimaliniz var. Bakın bir üzerinde çalıştığımız şu küme, sonsuz bir küme. O zaman nasıl bir algoritma kuralım ki bunun doğruluğunu veya yanlışlığını gösterelim? Ne dersiniz burada?
+
+542
+01:41:12,604 --> 01:41:16,364
+Aligoritmamızın döngüleri nasıl olacak? Veya şurada yazalım.
+
+543
+01:41:19,699 --> 01:41:21,675
+Teşke tabletimi yanıma asaydım.
+
+544
+01:41:24,851 --> 01:41:25,851
+Çeşim.
+
+545
+01:41:31,507 --> 01:41:40,507
+Evet, bu eşitliği gösterecek, doğruluğunu veya yanlışını gösterecek bir kod yazalım desek. Nasıl bir şey olur?
+
+546
+01:41:41,507 --> 01:41:45,507
+3 tane kor olur herhalde hocam.
+
+547
+01:41:45,507 --> 01:41:50,507
+3 tane. Bakalım hemen. Niye 3 tane?
+
+548
+01:41:50,507 --> 01:41:53,507
+Çünkü 3 değişen var orada.
+
+549
+01:41:53,507 --> 01:41:54,507
+3 mü, 4 mü?
+
+550
+01:41:55,636 --> 01:42:03,636
+A üzeri 4 artı B üzeri 4 artı C üzeri 4 eşittir D üzeri 4.
+
+551
+01:42:08,051 --> 01:42:08,939
+Dina.
+
+552
+01:42:11,956 --> 01:42:21,355
+D üzeri 4'ü direkt kök altına salarak bulacağımız için bence dördüncü bufora gerek yok.
+
+553
+01:42:21,355 --> 01:42:22,755
+Kök altına mı?
+
+554
+01:42:24,956 --> 01:42:33,956
+Bir şey, bir üzeri 1 bölü 4 gibi yani. Böyle bir rakamın olup olmadığını bulmak için.
+
+555
+01:42:34,996 --> 01:42:43,235
+Onu anlamadım nasıl dediğini. Yani bunu nasıl? Şimdi A, B ve C bunların hepsi pozitif doğal sayı.
+
+556
+01:42:43,235 --> 01:42:52,115
+3 tane for ile A, B, C üreteceğiz. Onları mesela 4 katına yükselteceğiz.
+
+557
+01:42:52,115 --> 01:42:54,115
+For ile üretmek sence doğru mu?
+
+558
+01:42:56,851 --> 01:43:07,851
+Daha iyi yolu olabilir şu an atmosfer. Mesela A'yı birden başlattık, B'yi de birden başlattık, C'yi de birden başlattık. Kaça kadar gideceğiz?
+
+559
+01:43:09,851 --> 01:43:12,851
+Haa doğru.
+
+560
+01:43:12,851 --> 01:43:19,851
+O zaman hani bunu değil de, değil mi arkadaşlar, while yapmamız lazım.
+
+561
+01:43:19,851 --> 01:43:22,851
+Peki while yaptığımızda?
+
+562
+01:43:24,083 --> 01:43:28,483
+A'yı, B'yi ve C'yi kontrol etmemiz gerekiyor.
+
+563
+01:43:30,363 --> 01:43:32,923
+Orada nasıl bir yöntem izleyebiliriz?
+
+564
+01:43:33,563 --> 01:43:35,563
+Bir de D'yi niye dışarıda bıraktık?
+
+565
+01:43:38,899 --> 01:43:43,299
+D'yi dışarıda bırakmamız, çünkü D önceden bildiğimiz bir rakam değil.
+
+566
+01:43:43,299 --> 01:43:54,299
+A, B, C'yi de bilmiyoruz. Şimdi bak şöyle, A 4'ken, B 8'ken, C 9'ken bunların dördüncü kuvvetlerini aldık topladık.
+
+567
+01:43:54,299 --> 01:44:05,499
+Ne olsun? İşte 876 olsun mesela. Sallıyorum böyle tamamen. Bakacağız ki buna karşılık bir D değeri var mı? Dördüncü kuvveti 876 olan.
+
+568
+01:44:06,387 --> 01:44:17,387
+Biz doğrudan buranın dördüncü dereceden kökünü almayacağız mesela. Hani alabiliriz, onu tam sayıya çevirebiliriz. Dizi kullanmayacağız arkadaşlar. Dizi yok.
+
+569
+01:44:19,387 --> 01:44:34,123
+Onun için yani D'yi de burada yani ancak bunun kare kökünü aldığınızda elde edilen tam sayıyı çıkıyor mu? Onun matematiksel kontrolünü yapmanız lazım program tarafında. Şey dördüncü dereceden kökünü aldığında.
+
+570
+01:44:34,292 --> 01:44:59,892
+O zaman işte bu doğrudan tam sayı çıkıyorsa, bir şeyin dördüncü dereceden kuvveti ise o zaman olur. Ama onu da yapmak için yine bir döngüye ihtiyacım var. Onun için şimdi şöyle while, while, while dedik, a, b ve c'yi ürettik. Bunların toplamını bulduk. Şimdi bu toplamı
+
+571
+01:45:01,363 --> 01:45:12,043
+İşte şurada bulduktan sonra toplam. Diyeceğiz ki, while döngüsü ile bu toplama eşit olan herhangi bir birden başlayıp ene doğru giden bir tane sayı var mı?
+
+572
+01:45:13,863 --> 01:45:20,303
+O zaman ne yapıyoruz? İşte burada tekrar bir while döngüsü. Şunlardan bağımsız. Bakın burada iç içe üç tane while.
+
+573
+01:45:21,083 --> 01:45:28,083
+Bu iç içe üç tane while bittikten sonra yeni bir while. Burada da kontrol yapıyoruz.
+
+574
+01:45:28,500 --> 01:45:36,180
+iç içe değil, bir de dışarıda bir while olması gerekmiyor arkadaşlar. Yani biz bu önermeyi doğru veya yanlış yapacağımız.
+
+575
+01:45:36,180 --> 01:45:43,739
+Çünkü bir tane örnek bulursak bu önerme çürüyecek. O zaman bir de flag olarak bir dışarıda bir while olması gerekiyor.
+
+576
+01:45:43,739 --> 01:45:49,180
+Bu işte flag ile bunu kontrol edeceğiz, doğruluğunu ve yanlışlığını.
+
+577
+01:45:49,652 --> 01:46:00,152
+İşte şurada üç tane, o üç tane bittikten sonra dışarıda bir tane ve bu dışarıdaki şeyle böyle bir yapı kurulabilir. Buna başka önerisi olan var mı?
+
+578
+01:46:17,524 --> 01:46:22,524
+Toplama d'yi eşitleyeceğiz, d üzeri dörde.
+
+579
+01:46:22,524 --> 01:46:23,524
+Evet.
+
+580
+01:46:23,524 --> 01:46:25,524
+Ve...
+
+581
+01:46:26,524 --> 01:46:30,524
+İşte d üzeri dörde eşitleyeceğiz ve d'yi bulmamız lazım.
+
+582
+01:46:30,524 --> 01:46:31,524
+Yani karakük olarak...
+
+583
+01:46:31,524 --> 01:46:32,524
+Yok hayır, yani şey...
+
+584
+01:46:33,524 --> 01:46:35,524
+d'yi sürekli arttıracağız.
+
+585
+01:46:35,524 --> 01:46:36,524
+Tamam.
+
+586
+01:46:36,524 --> 01:46:38,524
+Sonra wire'larla...
+
+587
+01:46:40,524 --> 01:46:41,524
+Bir...
+
+588
+01:46:42,195 --> 01:47:08,315
+Bu toplamı elde edene kadar deneyeceğiz. Diyor ki arkadaşımız, yani bir while döngüsü var. Buradan bir while eksik yapabiliriz. Ama o da şunu zaten şey yapar, yani dışarıda şunu ekaret etmiş olursun, dışarıda bir while, içeride üç tane while olacak. Diyor ki arkadaşımız, D'yi ben birden başlatırım. Ondan sonra burada D'nin dördüncü kuvvetini alırım.
+
+589
+01:47:09,043 --> 01:47:32,043
+Veya bir flag değişkeni gibi öyle anladım. Sonra içeride üç tane while koştururum. Buradan elde edilen sonuçla şu d üzeri dörde eşitse, yani bunların dördüncü kuvvetleri d üzeri dörde eşitse, işte burada a vardı, b vardı, c vardı, bunların dördüncü kuvvetleri d üzeri dörde eşitse, şunu bitiririm.
+
+590
+01:47:37,011 --> 01:47:51,351
+Öyle değil mi? Çünkü bir D'de haber et. O D'ye göre tekrar A, B, C'leri koştururum, devam ettiririm. Bu da olabilir. Bakın problem kendi içinde baya farklı noktalara gidiyor. Yani farklı çözümler bulunabiliyor.
+
+591
+01:47:51,351 --> 01:48:03,172
+Şimdi tabii bizim bununla uğraşacak şeyimiz yok. İsterseniz kodunu yazabilirsiniz ama böyle A, B, C dörtlü ve D dörtlüsü şöyle bir dörtlü varmış.
+
+592
+01:48:03,412 --> 01:48:08,412
+İstediğiniz gibi kodla yazabilirsiniz. Çalışma sorusu olarak yapılabilir.
+
+593
+01:48:09,412 --> 01:48:16,412
+Şimdi sonuç, bir önermenin doğruluğunu göstermek için binlerce örneğe her zaman bakmaya gerek yok.
+
+594
+01:48:16,412 --> 01:48:23,412
+Çünkü sonsuzluğa gidiyor bu. Bunun yerine karşıt örnek, counter example dediğimiz...
+
+595
+01:48:25,412 --> 01:48:28,412
+Şuraya belki şeyle yazabilirsem...
+
+596
+01:48:35,188 --> 01:48:47,188
+Niye yazamıyorum? Typewriter pardon. Counter Example arkadaşlar. Bulursak, bunun doğruluğunu ispat etmek yerine yanlışlığını ispat ediyoruz.
+
+597
+01:48:47,188 --> 01:48:55,188
+Tersinden bir işlem yapıyoruz. Şimdi, doğruluğu veya yanlışlığı bilinmeyen bir tane önerme.
+
+598
+01:49:03,604 --> 01:49:11,604
+2 haricindeki her çift tam sayı, mesela 8. Acaba bu iki tane asal sayının toplamı mıdır?
+
+599
+01:49:11,604 --> 01:49:17,604
+Şimdi asal sayılar biliyorsunuz hani tam sayı şeklinde yani hatta pozitif tam sayılar.
+
+600
+01:49:28,115 --> 01:49:41,916
+Ondan sonra, sıralı ikililer olarak bakacağımız için en fazla 4, 4'e bakarız. Ondan sonra zaten şeye gerek yok buraya kadar. Şunların her birisi asal mı mesela? Şimdi baktığımızda, şu asal değil, bu asal.
+
+601
+01:49:42,716 --> 01:49:49,115
+Eğer çiftiğim, iki asal sayının topluluğu. O zaman bu olmadı. Şu da olmadı. Ama bakın şu oldu.
+
+602
+01:49:50,615 --> 01:49:54,604
+Şu olmadı. Şimdi bu örnek için bir tane bulduk.
+
+603
+01:49:55,091 --> 01:50:14,591
+Ama diyor ki her çift tam sayı için. Bu örnek için bulmuş olmamız yetmiyor. Bir başka çift sayı için daha bulacağız. Mesela ondan sonra ne var? 10 var. 12 var. Ve bu sonsuza kadar giden bir şey. Şimdi burada bir doğruluk bulduk ama her dediği için
+
+604
+01:50:15,444 --> 01:50:23,444
+Yanlışlığı da tespit edilememiş, doğruluğu da tespit edilememiş, zor problemler dediğimiz problemlerden bir tanesi.
+
+605
+01:50:23,444 --> 01:50:36,444
+Mesela buna yönelik şey yapılabilir, deriz ki, iki haricindeki sıfır ile bin arasındaki binden küçük çift sayılar için
+
+606
+01:50:38,515 --> 01:50:47,076
+Bu iki tane asal sayının toplamı şeklinde ikiler vardır desek, biraz kümeyi daraltırız. Bunun doğruluğunu, yanlışlığını bulmak kolay olabilir.
+
+607
+01:50:47,076 --> 01:50:51,556
+Ama tam sayılar deyince iş biraz daha görüyorsunuz zorlaşıyor.
+
+608
+01:50:51,556 --> 01:50:56,076
+Hocam bu önermeyi tek tek denemek yerine matematiksel bir şekilde çözemiyor muyuz?
+
+609
+01:50:56,076 --> 01:51:01,475
+Önermelerde matematiksel bir şekilde çözecek olsan zaten şimdiye çoktan çözülmüş olurdu.
+
+610
+01:51:01,475 --> 01:51:05,076
+Yani doğrudan öyle bir şey...
+
+611
+01:51:05,363 --> 01:51:19,363
+Bir teorem vardır ve o teorem ispatlanmıştır. O zaman olur. Mesela bir sayının tam bölenlerinin sayısı nasıl hesaplanıyor? İşte asal çarpanlarını ayırıyorsun, yanlış hatırlamıyorsam.
+
+612
+01:51:19,363 --> 01:51:25,363
+2 üzeri 4 diyelim mesela. Bunun 5 tane tam böleni var değil mi? Şunun bir tane fazlasıyla.
+
+613
+01:51:25,876 --> 01:51:34,876
+Tam sayı tam bölenler olunca çarpı iki diyorsun. Bu şeyler ispat edilmiş, geçerli, doğrulanmış şeyler.
+
+614
+01:51:34,876 --> 01:51:43,876
+Ama bunun çözümünü yapacak bir teorem ortaya atılmamıştır. Belki atılmıştır da o gerçekten ispatlanmamıştır.
+
+615
+01:51:43,876 --> 01:51:49,876
+Şu kuralı kullanarak bunu ispat edebilirsiniz diye birisi önerme sunar, bir çözüm yöntemi sunar.
+
+616
+01:51:49,876 --> 01:51:53,876
+Onun da çürütülmesi veya ispatının belli bir şekilde kanıtlanması.
+
+617
+01:51:53,876 --> 01:52:05,276
+yapması gerekiyor. Tamam mı? Ve bu da aslında bir döngü ile ve if-controlleri ile matematiksel işlemlerde bunu yapmak lazım.
+
+618
+01:52:06,195 --> 01:52:27,956
+Saatimiz 50 geçiyor, 10 dakika sonra kaldığımız yerden devam edeceğiz. Bu sheetimiz bitti. Bu sheetin Problem Session tarafı var, ders 2. O da Google Teams'in içerisindeki klasörde. Orada örnek sorular bulabilirsiniz. Onları da çözmenizi, üzerinde kafa yorulmanızı tavsiye ederim. Saat 11'de görüşmek üzere.
+
+619
+02:02:55,475 --> 02:03:11,375
+Evet arkadaşlar. Şimdi şu şeyde bir şey unuttum, onu tekrar etmek istiyorum. Şu algoritmada. Şimdi bu diyor ki çözümü yoktur. Ses geliyor değil mi?
+
+620
+02:03:14,899 --> 02:03:42,159
+Geliyor hocam, geliyor. Bu diyor ki çözüm yoktur. Biz de diyoruz ki bir tane çözüm bulsak yeter. Bu bir tane çözüm bulsak yeteri nasıl algoritmada gerçekleştiriyoruz? Şimdi A, B, C'de sayılarımız var. Biraz önce arkadaşımız dedi ya, A için, B için, D için. Burada D dediniz. Sonra bunun içine bir C olabilir.
+
+621
+02:03:46,100 --> 02:03:49,000
+Tersten de yazılabilir, A, B, C de şeklinde de olabilir.
+
+622
+02:03:53,524 --> 02:04:01,844
+Bu döngüler sonuçta sadece A'ya, B'ye, C'ye göre kontrol edilecek, arttırım sağlayacak şeyler değil.
+
+623
+02:04:06,963 --> 02:04:14,463
+Dedi ki bir yerde bulduk mesela, böyle bir dörtlü bulduk. O zaman bir tane flag değişkenim var demiştim biraz önce.
+
+624
+02:04:14,463 --> 02:04:19,764
+Bu flag değişkenini bütün döngülerin içine koymamız lazım arkadaşlar.
+
+625
+02:04:19,764 --> 02:04:28,463
+Şimdi söyleyeceğim, flag yani 0 veya 1 şartının niye böyle olduğunu.
+
+626
+02:04:28,463 --> 02:04:33,463
+Şimdi ABC'de arama işlemini yapıyor. Ne zaman ki bulduk?
+
+627
+02:04:34,547 --> 02:04:42,948
+İşte bu flek bulunduğunda, yani bulunmadığında döngüyü döndürsün, bulunduğunda iptal etsin diye bir tane sıfır veya bir değişkeniz.
+
+628
+02:04:42,948 --> 02:04:46,948
+Şimdi bu iptal olacak, ondan sonra bu iptal olunca...
+
+629
+02:04:46,948 --> 02:04:48,948
+Bu iptal olacak.
+
+630
+02:04:48,948 --> 02:04:54,948
+[öğrenci]...
+
+631
+02:05:00,404 --> 02:05:07,404
+Şimdi flag bunu iptal edecek, daha sonra dışarıdakini aynı değişken iptal edecek, sonra bunu iptal edecek, sonra bunu çalışacak.
+
+632
+02:05:07,404 --> 02:05:12,404
+Çünkü bir tane örnek bulsak bu önerme için yetiyor, öyle değil mi?
+
+633
+02:05:12,404 --> 02:05:18,404
+Bir tane bulduğumuzda diğer döngülerin de devam etmemesi için bu flag'i buralara da yazmamız lazım.
+
+634
+02:05:18,404 --> 02:05:26,404
+Onu biraz önce söylemeyi unuttuk. Hepsinde arama işlemini artık keseceğiz, durduracağız. Burayı anladık mı?
+
+635
+02:05:31,956 --> 02:05:48,456
+Şimdi arkadaşlar, size şöyle bir slide paylaşacağım. Hızlıca bir şey üzerinden, C üzerinden revizyon yapan bir slide. Ders nutlarına eklerim. Slide gösterisi.
+
+636
+02:05:58,804 --> 02:06:09,203
+Bu arada bir şey söylemiş olayım buraya gelmişken, iyi oldu. Şimdi arkadaşlar, benim şu e-mail adresinden başka Yıldız mailim yok.
+
+637
+02:06:19,363 --> 02:06:24,804
+Herkes yapmıyor bunu da, yani nadiren oluyor bu hatalar. İşte oraya Ahmet Elber yazıyor.
+
+638
+02:06:25,555 --> 02:06:47,535
+Çıkan şey de [e-posta]. Benim 2013'te açılmış, ilk 80 hastalığa doktora zamanı hangisi hatırlamıyorum. Maillerimden bir tanesi, öğrenci mailim yani. Oraya mail gönderiyorsunuz. Tabii ben onu belki 5-6 yıldır kontrol etmiyorum. Yani hayatım boyunca da öğrencilik zamanında bizim zamanımızda bu kadar mail şeyi yoktu Yıldız'da.
+
+639
+02:06:48,404 --> 02:07:06,404
+O mail oraya gidiyor. Ben kazara geçenlerde bir ders notu bir şey için oraya girdiğimde gördüm. İşte 2012'den 14'den mail var, 17'den mail var falan. Onun için bu mail adresim dışında bir maile özellikle yıldız uzantıysa mail göndermeyin.
+
+640
+02:07:06,404 --> 02:07:14,404
+Şimdi bir de şuradaki kitaplarımızı tanıtalım. Bu dersle alakalı, C ile alakalı kaynaklar. A'dan Z'ye C.
+
+641
+02:07:15,188 --> 02:07:21,987
+Bu free olarak bulunabilir. Şu kitap güzeldir. Biz bu, şuradaki üçüncü kitabı ders kaynağımız olarak kullanıyoruz.
+
+642
+02:07:21,987 --> 02:07:36,188
+Coursera içerisinde C programlamayla alakalı kurslar var. Bunlardan faydalanabilirsiniz. Tutorials Point gibi bazı tutorial sitelerinden ufak tefek bazı konuları tekrar yapmak için, hatırlamak için kullanabilirsiniz.
+
+643
+02:07:36,188 --> 02:07:41,587
+Şu kitap çok sağlam, zor bir kitaptır. İşte bunun pdf'i belki bulunabilir.
+
+644
+02:07:42,739 --> 02:07:49,859
+Farklı problemler üzerinden program örnekleri gösteriyor, algoritmalarla alakalı örnekler gösteriyor.
+
+645
+02:07:49,859 --> 02:07:58,980
+Bunu normalde dersimizin syllabus'ında da var. Aynı şey sayısal analiz için de geçerli. Sayısal analizin slide'ında da birkaç kitap var.
+
+646
+02:07:59,216 --> 02:08:25,596
+Bazı arkadaşlar, hocam işte farklı kaynaklar tavsiye eder misiniz diye yazmışlar. Bu ve bunun gibi daha bir sürü şey var. Bunları en azından incelemeniz faydalı olur. Yani bölüm sonlarında örnek sorular var. Bir kısmı çözümlü, bir kısmı çözümsüz. Onları çözmeye çalışırsanız iyi olur. Hacker rank, hacker earth demiştik. Mesela orada da algoritma soruları var. Faydalı olur. Bunu da söylemiş olalım.
+
+647
+02:08:26,068 --> 02:08:47,188
+Şimdi biz bazen flowchart, bazen C dedik. Bu ders kapsamındaki flowchart sembollerimiz, işte başla bitir, bu input-out işlemi, özellikle geçen dönem BBG almayanlar bu slide'ı, yani incelemelerde faydalı oluyor. Bu notasyon sınavda sorarsak flowchart çizin diye buna uygun olarak çizmeniz gerekiyor.
+
+648
+02:08:47,188 --> 02:08:52,508
+Şu nedir? Bu mesela bir while döngüsüdür.
+
+649
+02:08:53,076 --> 02:09:00,076
+Bunun bir for döngüsü olduğunu, işte birden n'e kadar, eğer n eşit olacaksa şuraya eşittir, değilse boş bırakırız.
+
+650
+02:09:00,076 --> 02:09:05,899
+Azaltacaksak buraya eksi yazarız. İşte true ve false. Bakın bu if...
+
+651
+02:09:06,963 --> 02:09:21,963
+İkinci dönemin sonunda olmanıza rağmen bazen bu if-i yanlış çiziyor arkadaşlar. Bir kolu aşağıya, bir kolu yukarıya kesinlikle gitmez ifin. O zaman o döngü olur arkadaşlar. İfin iki kolu da mecburen aşağıya gidecek demektir. Şöyle şeyler yapmayın.
+
+652
+02:09:21,963 --> 02:09:34,963
+Yani hocam ben doğru düşünmüştüm deyip sınavda özellikle karşılaşıyoruz. İf kullanacaksak ikisi de aşağıya doğru gidecek demektir. İşte döngü olarak böyle şeyler var. Mesela bunu yazdığımızda ekranlarına...
+
+653
+02:09:34,963 --> 02:10:02,384
+İ çarpı A mesela, A'nın da sürekli güncellendiğini görüyoruz. A'ya 5 verelim. Ne olur? 1 çarpı 6, sonra 1 çarpı 7, 2 çarpı 7, 3 çarpı 8 böyle devam eder gider. Bu örneklerin çıktılarını burada analiz edebilirsiniz. Burada bir if örneği var. Bunları ben bazı seneler işte bu şeyin flowchart'ın çıktısı nedir diye yazmışım, şey yapmışımdır.
+
+654
+02:10:02,707 --> 02:10:11,707
+Sınav sorusu olarak sorduklarım var aralarında örnek sorular. Buye böyle ekledim. For'ların, if'lerin birbiriyle kombinatörik olarak kullanımı.
+
+655
+02:10:11,707 --> 02:10:22,707
+Şimdi aritmetiksel işlemler şöyle dikdörtgende yazılıyor biliyorsunuz. Eğer birden fazla işlem yapacaksanız bu şekilde de yazılabilir. Bir işlem yapılacaksa bu şekilde de yazılabilir.
+
+656
+02:10:24,851 --> 02:10:34,072
+Şu mesela nedir? Bu repeat until veya do while döngüsü dediğimiz bir yapı. Mesela şunun sonucunu burada ne görüyoruz arkadaşlar?
+
+657
+02:10:34,072 --> 02:10:47,971
+Ekrana yazdırmak istesek A ve B değerlerini sürekli arada bir yerde veya A ve B'yi analiz edelim desek. Burada ne var? A var, B var, I var. Ekrana yazdırma işine bakmayalım.
+
+658
+02:10:51,060 --> 02:11:05,300
+B başlangıçta 1'miş, A başlangıçta 10'muş. Ne oluyor? A'yı İ kadar azaltacakmışız. A'yı İ kadar azaltınca A 10 oldu. İ'yi 3 tane arttıracakmışız. Bu da bu oldu.
+
+659
+02:11:05,300 --> 02:11:14,820
+A B'den büyük mü? Evet. Büyük olduğu için tekrar yukarı gittik. B'miz 1. A'yı İ kadar azalttık. Bu ne oldu? 7 oldu.
+
+660
+02:11:15,283 --> 02:11:30,884
+B'yi arttırdık, 6 oldu. B hala 1. A, B'den büyük mü? Evet. A'yı iyi kadar azalttık tekrar, işte 1 oldu. B, 1 oldu. B zaten 1 idi. A, B'den büyük mü? Burada da tabii bunu 9 yaptık, şurada.
+
+661
+02:11:30,884 --> 02:11:37,884
+A, B'den büyük mü? Hayır. İşte bakın bu işin sonuna geldiğimizde A'nın değeri 1, B'nin değeri 3.
+
+662
+02:11:37,887 --> 02:11:44,608
+D'nin değeri 9'dur. Aynısını burada da deneyebilirsiniz. Burada sadece önce i'yi arttırıyoruz, sonra a'yı azaltıyoruz.
+
+663
+02:11:44,608 --> 02:11:53,167
+Bunlara çalışın. Yani bu örnekleri buraya ekledim bilerek. Bakın burada biraz daha karmaşık bir şey var.
+
+664
+02:11:53,167 --> 02:12:03,967
+Yani soru şöyle olabilirdi mesela, test sınavı yapacak olsak. Bu algoritma tamamlandığında a, b, i, y, t, buradaki değişkenlerin değerleri hatta k
+
+665
+02:12:04,064 --> 02:12:26,304
+Nedir? Aşağıdakilerden hangisinde doğru verilmiştir? Ne yapıyorsunuz? Adım adım gösteriyorsunuz. Mesela T burada bir şey gibi, ekrana bastırma işlemi yapıyor görüyorsunuz. Bir output işlemi var. Bu sembolleri bilmiyorum diyen var mı aranızda? Yani daha önce BBG almamış arkadaşlar belki bilmiyor olabilir ama giriş, çıkış, matematiksel işlem.
+
+666
+02:12:26,739 --> 02:12:34,420
+For döngüsü, while döngüsü, repeat döngüsü, do while döngüsü ve if sembolleri.
+
+667
+02:12:38,292 --> 02:12:44,032
+Hocam, ben sadece orada bir sonraki hocam, bir sonraki de.
+
+668
+02:12:44,032 --> 02:12:46,032
+Tamam.
+
+669
+02:12:46,032 --> 02:12:48,792
+Evet, buradaki noktalı virgülün anlamı ne?
+
+670
+02:12:48,792 --> 02:12:54,792
+Noktalı virgül, ekrana bir noktalı virgül basmak için. Yani T'nin sayısal değerini yazıyor, işte 5 gibi.
+
+671
+02:12:54,792 --> 02:13:01,092
+Sonra yanına bir noktalı virgül koyuyor. Onda sonra T'nin sayısal değeri işte başka ne geldi? 6 gibi böyle bir sonuç yazacak.
+
+672
+02:13:01,300 --> 02:13:11,800
+Yani iki tırnak arasında yazıldığı için o ifade doğrudan ekrana yazılacağını gösteriyor. Bu bir output olduğu için. Normalde noktada virgül şuralarda falan kullanılmaz böyle bir şey yoksa. Tamam mı?
+
+673
+02:13:12,275 --> 02:13:14,275
+Tamam hocam, teşekkür ederim.
+
+674
+02:13:14,275 --> 02:13:27,275
+Evet, burada bir genel şey var, bilgisayar programlama dillerinin sınıflandırılması, yüksek seviyeli diller, C'nin ne olduğu, bunlar hani tarihçel şeyler, genel kültür tadında bilinecek.
+
+675
+02:13:27,275 --> 02:13:34,275
+Bunu anlattım size, C'nin temelleri ve nasıl yazdım geliştirilecek falan diye.
+
+676
+02:13:35,155 --> 02:13:56,456
+Execution ve değerleme işlemlerini konuştuk. İşte burada idelerden bahsetmiştik. Bunları kullanabilirsiniz. Yani bir dokümentasyon olarak. C programının nasıl değerleri Linux ortamında? Biz geçenlerde GCJ'yi kullandık. Bu da aynısı bakın. Sadece şurada Execute etmesi değişiyor. Şu Execution tarafı Linux tarafında böyle olur.
+
+677
+02:13:57,171 --> 02:14:04,171
+C'nin mantığını anlattık, variable'ları konuştuk. Şimdi isimlendirme kurallarına bakalım.
+
+678
+02:14:04,171 --> 02:14:12,171
+Yani burada ilk defa C'yi gören arkadaşlarımız olabilir. Şimdi bir değişkeni ismiyle genellikle kullanıyoruz, bazen adresiyle kullanıyoruz.
+
+679
+02:14:12,171 --> 02:14:23,171
+Değişken dediğimiz şey, variable'a baktığımızda açıkçası ne var? Değişkenin label'ı var. Başka adresi var.
+
+680
+02:14:24,916 --> 02:14:37,916
+Onun bir değeri vardır, hangi değer saklıdır? Başka nesi olabilir? Adresi dediğimiz pointer olacak. Değişkenin başka ne karakteristik özelliği bize lazım olan tarafı olur.
+
+681
+02:14:37,916 --> 02:14:39,916
+Türü var hocam.
+
+682
+02:14:39,916 --> 02:14:41,916
+Türü çok güzel.
+
+683
+02:14:44,916 --> 02:14:46,916
+Type yani. Başka?
+
+684
+02:14:52,916 --> 02:14:59,136
+Bu türe bağlı olarak mesela bir range'i olabilir. Değer kümesi, hangi değerleri alabileceğim?
+
+685
+02:15:01,136 --> 02:15:04,975
+Öyle değil mi? Size'ı var, çok güzel.
+
+686
+02:15:07,115 --> 02:15:08,815
+Ne kadar yer kaplıyor?
+
+687
+02:15:11,756 --> 02:15:16,376
+Etiket, adres, değer, type, range, size.
+
+688
+02:15:18,055 --> 02:15:19,055
+Bir de
+
+689
+02:15:20,243 --> 02:15:22,243
+Şöyle bir type var.
+
+690
+02:15:22,243 --> 02:15:24,139
+Niye böyle?
+
+691
+02:15:29,140 --> 02:15:42,539
+Buna hani değer tipi şey olarak değil de, value type yazamıyorum. Şöyle yapayım.
+
+692
+02:15:53,140 --> 02:16:11,140
+value type, reference type dediğimiz değişkenin bir özelliğidir. Bunu da tip olarak düşünüyoruz ama yani integer, float gibi düşünmeyin. Bazı değişkenler değer tiplidir, bazıları referans tiplidir. Bu sayede...
+
+693
+02:16:12,532 --> 02:16:20,532
+Değer tipli bir değişkeni üzerinde aktarma yapacaksak, deep copy dediğimiz bir şey olur. Bunu pointer konusunda daha detaylı anlatacağız.
+
+694
+02:16:20,532 --> 02:16:30,532
+Referans tipli bir şey aktardığında, shallow veya aslında shadow da deniyor, gölge veya sığ kopyalama.
+
+695
+02:16:31,572 --> 02:16:42,572
+Birebir kopyalama yapmıyorsunuz, sadece adres üzerinden kopyalama yapılıyor. Bu da bir değişken özelliğidir. Yani tip ama bu integer float dediğim gibi değil. Bunları bilelim.
+
+696
+02:16:46,260 --> 02:17:01,020
+Değişkenlerin bellekten nasıl yerleştirildiğini konuşmuştuk. İşte stek tarafına atılıyordu. Önce i'yi tanımladıysak, mesela burada olduğu gibi önce i, ondan sonra j'ye tanımladıysak, şu adres artabilir, azalabilir demiştik.
+
+697
+02:17:01,020 --> 02:17:13,500
+Bu tamamen işlemciye göre. Ama önce siteye i konur, eğer i'yi önce tanımlıyorsak, sonra siteye j konur. Yani baktığımız zaman şöyle bir yapısı vardır bellekte yerleşim açısından.
+
+698
+02:17:15,347 --> 02:17:25,347
+İsimlendirme kuralları, aslında burada çok fazla kural yok, biraz insanlar böyle kuralların sayısını fazlaymış gibi göstererek iş yapıyor.
+
+699
+02:17:25,347 --> 02:17:36,347
+Underscore dışında herhangi bir şey içerebiliyor arkadaşlar. Karakter içeremiyor. Sadece underscore özel karakterini içeriyor.
+
+700
+02:17:41,971 --> 02:17:58,971
+Değişken ne ile başlar? Ya underscore ile başlar ya da karakter ile başlar. Yani sayı ile başlama. Sayı varsa silin. Başka bir şey yok. Yani underscore içerebilir, başka bir özel karakter içeremiyor. Sayı ile başlayamıyor. Ya underscore ile ya da karakter ile başlıyor.
+
+701
+02:17:59,572 --> 02:18:12,252
+Ondan sonra Reserved Keyword dediğimiz Keyword'ler, işte Return gibi şeyler kullanamıyoruz. Bir de Case Sensitive dediğimiz karaktere duyarlılık, büyük küçük karakterler farklı variable'lara karşı.
+
+702
+02:18:12,252 --> 02:18:25,051
+İşte şu, şu, şu, üç tane farklı bellek bölgelerindeki değişkenlerdir. Bunlar farklı değerler tutarlar. Farklı ken size'ları olabilir. Şurada bahsettiğimiz bütün şeyleri farklı olabilir.
+
+703
+02:18:25,296 --> 02:18:32,916
+Aynı şeyi gösterin. Bazı dillerde hepsi aynısıdır ama burada C'de öyle bir şey yok, Java'da öyle bir şey yok, Python'da öyle bir şey yok.
+
+704
+02:18:33,843 --> 02:18:42,343
+Reserved Keyword'ler, bir değişken ismi verecekseniz, gidip de kimse sıkıntılı değilse, gidip de bir değişkene Union etiketini vermez.
+
+705
+02:18:42,343 --> 02:18:55,043
+Anlamlı etiketler verin dediğimiz şey zaten budur. Volatile diye bir etiket vermeye gerek yok. Probleminizde verilenler, değişkenler ne derse, sayı 1, sayı 2, average gibi şeyler.
+
+706
+02:18:55,043 --> 02:19:00,543
+Şimdi tipler dediğimiz şey aslında, Scalar Tip'lerle biz bu derste çok uğraşacağız.
+
+707
+02:19:01,492 --> 02:19:19,792
+Bunların pointer kısmı var, normal sayısal değişkenler var. Bunların içerisinde karakter de dahil. Enumeration tipler var. Şu void tiple ve aggregate tiple bu derste çok fazla ilgilenmiyoruz. Normalde bakacağız da belki daha çok bu gelecek dönemin dersi.
+
+708
+02:19:21,139 --> 02:19:48,439
+Basic data type'larımız var. Bunlar karakter, integer, float, double ve enumeration. Bunların önüne qualifier dediğimiz niceleyici yani short integer, ondan sonra long integer, sign-it veya unsign-it işaretli işaretsiz niceleyicilerini getirebiliyoruz. Şimdi buna baktığımızda şöyle inceleyelim. Integer bizim bildiğimiz genellikle 4 byte'tır. 4 byte 32 bittir.
+
+709
+02:19:48,847 --> 02:19:59,087
+eksi 2 üzeri 32 ile artı 2 üzeri 31 eksi 1'e kadar şu range'i alıyor. Eğer ben bunu unsigned yaparsam yani işaretsiz yaparsam
+
+710
+02:20:00,000 --> 02:20:14,760
+negatifler olmayacağı için işaret bitini artık burada boş boşuna kullandırmıyor bize. Artı iki üzeri otuz ikiye kadar bakın tam şunun iki katına yaklaşık sıfırdan iki katından bir eksi kadar diyebiliriz.
+
+711
+02:20:14,760 --> 02:20:22,319
+Buraya kadar değerler aldırabiliyorsunuz. Eğer long integer yaparsak sekiz byte oluyor.
+
+712
+02:20:22,484 --> 02:20:33,884
+float kendisi 4 byte'dir. Yani long float diye bir şey yok arkadaşlar. Long float'un kendisi doubledir. Bu long ifadeleri genellikle integer'ın önüne gelir. Bunu da söylemiş olalım.
+
+713
+02:20:35,412 --> 02:20:53,912
+Şöyle bir kod var, bu kodu çalıştırdığınızda bunların her birisinin size'ı ne kadardır görebiliyorsunuz. Yani size of aslında bir operatör, bir değişkenin ne kadarlık yer kapladığını, kaç byte yer kapladığını bize söylüyor. Yani burada bir integer değer göndürüyor bu şey. Bunu da görebilirsiniz.
+
+714
+02:20:54,451 --> 02:21:11,451
+Variable declarationı, bakın deklarasyon ifadesi var çünkü burada hiçbir şekilde atama yapılmamış. Şu şekilde deklarasyon yapılabilir. Şu notasyonu isimlendirme notasyonunu kullanın arkadaşlar. Eğer bir değişkeniniz birden fazla kelimeyi içeriyorsa,
+
+715
+02:21:11,956 --> 02:21:30,956
+İşte sayıların maksimumu, maksimum number. İkinci kelimeniz büyük harfle başlayacak, ilk kelimeniz küçük harfle başlayacak. Camel case dediğimiz şey tek kelime içeriyorsa böyle. Eğer bir şey olacaksa, işte sayı içerecekse bu şekilde number 1, number 2 gibi şeyler söyleyebiliriz.
+
+716
+02:21:40,595 --> 02:21:42,412
+Emreyim, dizik.
+
+717
+02:21:45,523 --> 02:22:08,783
+Mesela, veya file demeyelim de, write to disk. Bu to iki anlamında değil, İngilizce'de bazen to proposition'ı yerine to, for içinde bizim için propozisyonu, işte dört kullanılır. Bunlar da zaman zaman hani gördüğümüz isimlendirmek kuralları, bunları da bilmekte fayda var.
+
+718
+02:22:09,843 --> 02:22:23,843
+Initialization dediğimiz, işte bir değişkenin içerisine bir atama sırasında değer aktarılıyorsa, initialization yapıyoruz demektir. Bunları da biliyoruz. Constant ifadeler iki türlüsüyle. Ya değişken tanımında...
+
+719
+02:22:24,352 --> 02:22:39,352
+Bir değişken türünün önüne const ifadesi yazıyoruz veya define'i geçenlerde konuşmuştuk. Bu bir değişken tanımı değil, neydi? Substitution'dı. Program değerlenirken nerede bunları görüyorsa gidip karşısındaki değeri karşıya yazıyordu.
+
+720
+02:22:39,352 --> 02:22:46,352
+Hızlı gidiyorsam söyleyin arkadaşlar. Sizden geri bildirim almam lazım.
+
+721
+02:22:46,899 --> 02:22:53,899
+Boşluğa konuşmuyor gibi şey yapayım. Anlamadığınız bir şey varsa sormak konusunda utanmayın, çekilmeyin. Tamam mı?
+
+722
+02:22:53,899 --> 02:23:04,899
+Şimdi literal ifadesi ne demek? Bir değişkenin içerisine sabit böyle şeyler yazmak. Bunlar literaldir. Bunlara birazcık ekstra bilgiler verebiliriz.
+
+723
+02:23:04,899 --> 02:23:12,899
+İşte 22 değeri aktarılacak ama unsigned aktarılacak veya buraya long int olarak aktarılacak bu literalleri söyleyebiliyoruz.
+
+724
+02:23:13,139 --> 02:23:23,939
+Küçük U da olur, büyük U da olur fark etmiyor. Bakın burada double literaller, float türde literaller, değişkenin türüne göre bunları yazabiliyorsunuz.
+
+725
+02:23:23,939 --> 02:23:30,939
+Constantlar, normal bir değişken ataması yaparken eğer siz böyle aktarırsanız bu...
+
+726
+02:23:31,379 --> 02:23:41,879
+Desimal olarak aktarılır. Şöyle aktarırsanız, oktay yani bir değişkene değer yazmaktan kaydı kastediyorum. 0x4 derseniz de onu hexadesimal olarak saklayabilirsiniz.
+
+727
+02:23:43,079 --> 02:23:59,079
+Floating point tipleri biliyoruz. Float ve double dedik. Bu şekilde nokta ile gösteriliyor. Bazen burada arkadaşlar virgül kullanıyorlar. Bizim Türkçe yazım kurallarında virgül vardır ama İngilizce'de ve programlama dilinde virgül yoktur, nokta kullanılır.
+
+728
+02:24:01,139 --> 02:24:23,340
+Legal ve illegal floating points demiş. Mesela bu neden illegal? Şu virgülden dolayı illegal. Burada e diye bir şey yazamayız. Şu araya e eksponansiyel bir şey gelmez. Bunlar illegal şeyler. Eğer yazacaksak şu şekilde yazılması gerekiyor. Hem böyle yazıp yani bu ne demek? e üzeri eksi değil eksponent 10 üzeri eksi 2 gibi düşünün arkadaşlar.
+
+729
+02:24:23,340 --> 02:24:24,840
+Tamam mı?
+
+730
+02:24:24,915 --> 02:24:33,415
+Şunlar C'de kullanılmıyor. Bunlar mesela kullanılabilir, bunlar kullanılabilir veya bu 10 üzeri artı 2'dir aslında. Ama şunlar mümkün değil.
+
+731
+02:24:33,415 --> 02:24:41,915
+42 dediğimiz şey bu aslında illegal bir kullanım değil de, arka planda dönüşüm oluyor. Bu normalde bir integer'dır, double değildir. Bunu bilelim.
+
+732
+02:24:43,059 --> 02:24:49,059
+input output fonksiyonlarında printf, scanf'i zaten çok kullanıyorsunuz. Şimdi put string, get string, get karakter.
+
+733
+02:24:49,059 --> 02:24:56,059
+Şimdi get string'i ne zaman kullanacağız? Önümüzdeki derslerde bir string konusuna gelince kullanacağız.
+
+734
+02:24:56,059 --> 02:25:07,059
+Şimdi siz scanf ile kullanıcıdan bir kelime aldığınızda, işte kelimeyi yazdınız, bir boşluk bıraktınız, bir şey yazdınız. Normal scanf sadece şu kısmı alır.
+
+735
+02:25:08,147 --> 02:25:15,147
+Tamamen bir şey almak için, getString, putString veya başka fonksiyonlar var, onları zaman gelince konuşuruz. Önemli değil.
+
+736
+02:25:16,347 --> 02:25:29,147
+Ama burada şeyleri bilmek lazım. printf ve scanf'de format specifier'lar var. Eğer bir karakter okuyacak veya yazacaksak %c, integer ise %d, string ise %s. Bakın bu önemli.
+
+737
+02:25:29,172 --> 02:25:44,612
+Yani string yazmayı hiçbir şekilde %c ile yani ancak döngüyle yaparız. Yani teker teker yazarak yaparız. Long integer decimal olarak unsigned integer bu.
+
+738
+02:25:45,760 --> 02:25:57,360
+Uncined ve long integer olacak. Float, double, hexadecimal bir şey yazmak istiyorsak veya okumak istiyorsak bunları bu şekilde kullanmamız gerekiyor. İki tırnak arasında.
+
+739
+02:25:59,760 --> 02:26:05,360
+İşte şurada bazı örnekler var. Bunları hani koşturabilirsiniz, çalıştırabilirsiniz. İşte aynı şekilde scanf'ler var.
+
+740
+02:26:06,760 --> 02:26:12,159
+Sadece scanf'de şuna dikkat edin. Bakın bunlar normal değişken tipleri.
+
+741
+02:26:13,363 --> 02:26:26,984
+Ben dedim ya biraz önce referans type, değer type. String dediğimiz karakter dizisi veya bir başka dizinin kendisi normalde referans tipidir.
+
+742
+02:26:26,984 --> 02:26:34,923
+Onun için stringler veya karakter dizileri ampersant kullanmadan yazılırlar, scanf içerisinde kullanılırlar.
+
+743
+02:26:35,484 --> 02:26:40,004
+Ne demek bu? Kelime zaten kendisi adres tutan bir şeydir burada.
+
+744
+02:26:40,468 --> 02:26:43,788
+Dolayısıyla ikinci defa ampersant yazmanıza gerek yok.
+
+745
+02:26:44,244 --> 02:26:50,544
+Bunu söylemek istiyoruz. Ama diğerlerinde mutlaka ampersand işaretiyle adres elde etmemiz gerekiyor.
+
+746
+02:26:50,544 --> 02:27:01,443
+Hocam, şey soracağım. Bu kelime input'unu geçen seneki gibi flow şartta, onu da gerekiyor mu? Döngüyle almamız gerekiyor mu? Yoksa direkt bu sene input'la alabilir miyiz? Direkt sadece bir tane.
+
+747
+02:27:01,804 --> 02:27:09,704
+Döngüyle kelime input'u mesela isim giriniz dediğinde döngüyle önce A'ya girdin, sonra işte L'ye girdin, sonra P böyle mi yapıyordunuz?
+
+748
+02:27:11,252 --> 02:27:16,252
+Bilmiyorum, bir tane do while alıyorduk diye hatırlıyorum.
+
+749
+02:27:16,252 --> 02:27:21,252
+Hocam, dizinin elemanları döngüyle alıyorduk. Bazen tek yazabiliyorsunuz diyorlardı.
+
+750
+02:27:21,252 --> 02:27:31,252
+İşte şöyle, o şudur, eğer elemanları tek tek bir dizinin içerisine karakter okuyun diyorsa, yani bu string olacak ama her zaman...
+
+751
+02:27:31,540 --> 02:27:37,540
+Anlamlı bir şey veya bir string olarak düşünmeyin. Karakter dizisi başka bir şey, string onun özelleştirmiş hali.
+
+752
+02:27:37,540 --> 02:27:46,540
+Yani şimdi [öğrenci] dediğinde bu bir stringdir. Ama klavyeden girilen en tane karakter dediğinde bu bir karakter dizisidir.
+
+753
+02:27:46,540 --> 02:27:51,540
+Onu o şekilde düşünün. Eğer ben isim giriniz dersem tek seferde böyle alabilirsiniz.
+
+754
+02:27:51,540 --> 02:27:56,172
+Ama bir karakter dizisine, işte kelime değil de bu dizi olsun mesela.
+
+755
+02:27:56,340 --> 02:28:01,840
+N tane elemanı kullanıcıdan alın dersen o zaman for ile almak gerekiyor. Bahsettiğin şey herhalde bu.
+
+756
+02:28:01,840 --> 02:28:07,340
+Tamam tamam, biz geçen senede sanki ismi de böyle tek tek alıyorduk, duvayla alıyorduk.
+
+757
+02:28:07,340 --> 02:28:11,340
+Yok, ismi öyle bir şey almana gerek yok. Yani scanf kelime dediğinde...
+
+758
+02:28:11,700 --> 02:28:23,900
+Ne oluyor? Girilen bütün şeyler otomatik olarak şurada saklanıyor dizi içinde. Dediğim gibi böyle isim, soy isim, ne bileyim bir şey adı girilecekse tek seferde alınır.
+
+759
+02:28:23,900 --> 02:28:35,200
+Ama bir diziye karakter olarak elemanlar alın dersek, aynı nasıl integer dizisinde veya float dizisinde bir şey alıyorsak, burada da teker teker almamız gerekecek.
+
+760
+02:28:40,180 --> 02:29:01,020
+İfadelerin aynısı arkadaşlar, put string ve printf. Neden böyle bir şey var? Biz %s'yi burada kullanıyoruz. %s'yi kullanmadan, kullanıcıdan bir string almak için get string diyebiliriz. Yani şuna gerek yok. Direkt doğrudan kelimeyi alıyoruz. Çünkü bu arka planda ne yapıyor zaten aslında bunu kullanıyor.
+
+761
+02:29:01,139 --> 02:29:12,899
+Bu da gidiyor işletim sisteminin fonksiyonunu kullanıyor. Diyor ki bunu daha kompakt bir şekilde yazalım, çok detaya girmeden yazalım dersek böyle kullanılabilir. Hatta siz kendi fonksiyonunu yazın.
+
+762
+02:29:12,899 --> 02:29:26,899
+Mesela ne bileyim get sayı deyim mesela. Şimdi get sayıya ne yaparsınız? Böyle bir fonksiyon yazsanız sayı değişkenin adresini verirsiniz. İleride belki fonksiyonların konusunda bunu örneğini yaparız.
+
+763
+02:29:27,092 --> 02:29:38,092
+O fonksiyon içinde de scanf %d ampersand sayı yazarsınız, olur biter. GetString de yani bunu biraz daha özelleştirmiş halim.
+
+764
+02:29:38,092 --> 02:29:49,092
+PutString ne yapıyor? Aynısı hiçbir şey fark etmiyor. Yani genellikle printf ile kullanıyoruz ama put stringinde kullanıldığı farklı noktalar var. Bunları da bilirim.
+
+765
+02:29:49,092 --> 02:29:54,092
+Şimdi şu önemli bir konu, type'ların karıştırılması.
+
+766
+02:29:55,283 --> 02:30:08,283
+Şu 2 dediğimiz şey ne arkadaşlar? Integer. Burada 1.2 var. Sonucumuz şu double veya full oldu. Ben bu iki işlemi çarptığımda, ikisinin çarptığımda elde ettim. 2.4 buluyorum.
+
+767
+02:30:09,484 --> 02:30:11,283
+Peki şurada ne olacak?
+
+768
+02:30:13,583 --> 02:30:16,283
+Burada 2.4 mi olacak? Başka bir şey mi olacak?
+
+769
+02:30:17,283 --> 02:30:18,283
+2.4 olacak.
+
+770
+02:30:18,783 --> 02:30:19,783
+Nereden biliyor musun?
+
+771
+02:30:21,283 --> 02:30:22,783
+Biri diğeri üstün geliyor aslında.
+
+772
+02:30:23,156 --> 02:30:28,476
+Ama sol tarafta eşittiğin sol tarafın diyorum. Sağ tarafta 2.4 var.
+
+773
+02:30:28,476 --> 02:30:33,596
+Sol tarafın tipi zaten double ya da full varsa olur ama int ise zaten hata yiyebiliriz orta.
+
+774
+02:30:33,596 --> 02:30:44,076
+Hata yemeyiz. Eğer bu num dediğim şey integer ise 2 olarak alınacak. Yani bir truncation var.
+
+775
+02:30:44,275 --> 02:30:52,275
+Eğer float veya double ise 2.4 olarak. O zaman hem sağ taraftaki tipe hem de sol taraftaki tipe bakmam gerekiyor.
+
+776
+02:30:52,275 --> 02:30:54,275
+Tipimize bağlı. Evet.
+
+777
+02:30:54,275 --> 02:31:07,275
+Şimdi şuraya baktığımızda, şimdi bu integer, bu integer 1 bölü 2 normalde 0.5 ama integer'ı integer'a böldüğümüzde ve bu basit kesirse burası 0.5'in 0'ı geliyor. Niye?
+
+778
+02:31:09,780 --> 02:31:22,460
+Virgülden sonra siliyor. Onun için burası sıfır. 2.0 ile de sıfırı topladığında sonuç 2.0 olacaktır. Araya bir tane double, bu da şudur arkadaşlar.
+
+779
+02:31:22,460 --> 02:31:35,460
+Integer mı büyük, double mı daha büyük dersek, double daha büyük veya float daha büyük bir küme. Yani rare sayılar veya rasyonel sayılar gibi bir şey tam sayılar kümesini kapsıyor biliyorsunuz.
+
+780
+02:31:37,556 --> 02:31:57,556
+Dolayısıyla ben bu ikisi arasında işlem yaptığımda üst kümeye gizli bir şekilde implicit dediğimiz dönüşüm gerçekleşiyor. Bu ya assignment'larda olan bir şey veya matematiksel işlemlerde böyle integral wideness conversion dediğimiz işlemlerde olan bir dönüşümdür.
+
+781
+02:31:57,556 --> 02:32:04,556
+Farkında olmadan, yani görünürde herhangi bir şekilde casting yapmadan, işte float dedik falan ya biraz önce.
+
+782
+02:32:05,523 --> 02:32:08,123
+Böyle bir şey olmadan dönüşüm sağlanabiliyor.
+
+783
+02:32:10,131 --> 02:32:35,331
+Implicit Conversion Expression dediğimiz, bakın ne oluyor? Burada bir 0 var aslında. Şu 2.5'lu ekleyince sonuç 2.5 olacak. Operatörler bize bu işi sağlıyor. 2 artı 3.5. Bunu nasıl algılıyor değerleyici? 2.0 artı 3.5 gibi algılıyor daha sonrada. Implicit bir şekilde. Bu da implicit olması işte şu hiyerarşik data representasyonu ile alakalıdır.
+
+784
+02:32:36,404 --> 02:32:40,603
+Bir saniye, şurada kaç tane swipemiz kalmış? Sonuna gelmişiz.
+
+785
+02:32:43,904 --> 02:32:52,603
+Yani bir şey bir şeye çok daha rahat dönüşür. Integer'ı unsigned integer'a dönüştürebilirsiniz veya bunu long integer'a ondan sonra bunlar float'a dönüşür.
+
+786
+02:32:52,603 --> 02:33:00,404
+Ama tersinden her zaman dönüşüm mümkün değildir. Burada C dili kontrol ile size bırakır.
+
+787
+02:33:02,484 --> 02:33:30,283
+double'ı float'a dönüştüremez. Yapmaz. Doğrudan değerleme zamanı hata veriyor. Ama C de farkında olmadan, işte long double diye bir tane f değişkenimiz olsun, bir tane de integer x değişkenimiz olsun, sen x eşittir f yaptığında, bu f'in virgüllü kısmının tarafı tamamen silinir. 2.99 bile olsa, 3'e tamamlamadan doğrudan orayı 2 olarak alır. Mesela burada
+
+788
+02:33:30,548 --> 02:33:44,148
+2.99 olsun. Burada sonucunuz 2 olur. Onun için bunlara dikkat etmemiz gerekiyor. Hangi derste daha çok sayısal analiz dersinde yapacağınız projede tip dönüşümleri sizin daha çok karşınıza olacak.
+
+789
+02:33:44,148 --> 02:33:51,348
+Yani bu ders biraz daha bilgirli sayılarla alakalı değil. Çok fazla aşırı neşit olmuyoruz ama o derste lazım olacak.
+
+790
+02:33:51,348 --> 02:33:56,548
+Bir de explicit conversion dediğimiz şey var. Explicit işte açıktan.
+
+791
+02:33:56,948 --> 02:34:16,387
+dediğimiz gizli olmadan ne oluyor? Şimdi burada tip dönüşüm operatörü dediğimiz, cast operatörü dediğimiz bir operatör var. Bunun işlem önceliği en yüksek. Şimdi işlem önceliğini gösteren, size bir şey göstereceğim, tablo göstereceğim.
+
+792
+02:34:16,387 --> 02:34:23,180
+C operator precedence.
+
+793
+02:34:24,244 --> 02:34:31,244
+Tabii bunu gelecek ders, bugün saatimiz kaça geldi? Gerçi biraz daha vakit var da, neyse anlatmaya çalışayım.
+
+794
+02:34:49,316 --> 02:34:53,316
+Buradaki başka şeylere de bakabilirsiniz, yani inceleyebilirsiniz.
+
+795
+02:34:53,316 --> 02:35:02,316
+Birçok, yani biraz C++ ile alakalı kısımlar var. Biz C ile alakalı kısımlara bakacağız. Onun için şuralar sizin için daha önemli.
+
+796
+02:35:02,316 --> 02:35:07,275
+Şimdi diyor ki operatörleri bunlar sıralan, sınıflandırmışlar.
+
+797
+02:35:07,636 --> 02:35:32,096
+Birinci öncelik, ikinci öncelik, precedence veya priority diyebiliriz. Bakın, cast operatörü, şurada. En yüksek dereceli, en yüksek öncelikli operatörlerden. Hocam ikide değil mi cast? Altta yazıyor cast ya. Bakayım bu neymiş? Type list, compound, ha C99, ha tamam biz, şurada.
+
+798
+02:35:32,659 --> 02:35:38,659
+Bu da case de benzer, onu da bu şekilde düşünebilirsiniz ama tamam burası olduğu daha iyi.
+
+799
+02:35:38,659 --> 02:35:44,659
+Şimdi, type operatörü burada. Bizim bölme nerede? Bundan bir sonra bakalım.
+
+800
+02:35:44,659 --> 02:35:55,404
+Dolayısıyla şu tarz bir şeyde, şu an slide'ı görüyorsunuz değil mi? Şu tarz bir şeyde slide görünüyor mu?
+
+801
+02:35:56,020 --> 02:35:58,020
+Evet hocam.
+
+802
+02:35:58,020 --> 02:36:13,020
+Bu tarz bir şey de bölme işleminden önce J'nin float'a dönüşümü yapılıyor. Bakın atama assignment en sonda. Tamam mı? O en sonda. En son zaten o yapılacak.
+
+803
+02:36:13,020 --> 02:36:21,020
+Şimdi bu blog birinci bileceğim şey precedence. Demek ki işlemlerin önceliği. Ama şöyle de bir durum var. Bir kod satırında
+
+804
+02:36:22,195 --> 02:36:32,195
+Aynı presidense ait olan operatör yan yana gelirse, örneğin çarpma bölme mod işlemi, şöyle yapayım.
+
+805
+02:36:34,195 --> 02:36:47,084
+x eşittir y çarpı t bölü z. Böyle bir şey var. Hatta şuraya bir de artı l diyelim.
+
+806
+02:36:50,644 --> 02:36:53,844
+Küçük görünüyorsa biraz büyütmeye çalışayım arkadaşlar.
+
+807
+02:36:56,144 --> 02:36:57,344
+Nasıl büyütürüz?
+
+808
+02:36:59,943 --> 02:37:03,543
+Bu ifadede biliyoruz ki atama en son yapılacak.
+
+809
+02:37:05,443 --> 02:37:09,644
+Atama en son yapılacak, ondan sonra toplama, ondan önce toplama yapılacak.
+
+810
+02:37:10,043 --> 02:37:16,644
+Ama ondan önce çarpma mı yapılacak, bölme mi yapılacak? İşte bu kuralı da verleyiciye söylemişler.
+
+811
+02:37:17,344 --> 02:37:18,344
+İşte buna da
+
+812
+02:37:18,451 --> 02:37:40,051
+associativity biraz söylemesi zor diyoruz. Diyor ki, soldan sağ mı, sağdan sola mı? Bu bilgimizi söylüyor. Eğer bir satırda, yani bir komut içinde noktalı virgül yazana kadar, işte bu olursa, şu örnekten yola çıkarsak, bu soldan sağa doğruymuş.
+
+813
+02:37:46,448 --> 02:38:11,948
+Z'ye bölünecek, ondan sonra toplama yapılacak. Ondan sonra da atama yapılacak demektir. Bu bilgi bizim için önemli. Özellikle fonksiyon çağrıları, mesela fonksiyon çağrısı dediğimiz şey ne? Çarpı f, şöyle bir şey diyelim. Mesela z. Burada hangisi önce yapılır sizce?
+
+814
+02:38:14,324 --> 02:38:15,324
+FU diyelim.
+
+815
+02:38:23,476 --> 02:38:30,976
+Şu kısımda associative itdiden mi bahsediriz yoksa precedence mi önceliklidir? Önce precedence bakıyorsunuz.
+
+816
+02:38:32,175 --> 02:38:36,976
+Parantez değil bu, bu bir fonksiyon çağrısı, parantez olsa başka bir şey.
+
+817
+02:38:37,476 --> 02:38:48,476
+Şimdi çarpma var, bölme, hatta şöyle eşittir var, atama var, çarpma var, bölme var, bir daha çarpma var, fonksiyon çağrısı var, toplama var.
+
+818
+02:38:50,816 --> 02:39:02,216
+Bir kere eşitlik en son yapılacak. O zaman burası halledilecek. Burası halledilirken çarpma mı önce, fonksiyon çağrısı mı önce, bölme mi önce, toplama mı önce? Buna bakmamız gerekiyor.
+
+819
+02:39:02,216 --> 02:39:11,416
+Şimdi buraya baktığımızda, bakın diyor ki function call, şu işlem, en yukarıdaymış. Önce onun için onu yapıyor arkadaşlar.
+
+820
+02:39:12,180 --> 02:39:24,180
+Ondan sonra çarpmaları, bölmeleri, yani buradan bir değer geliyor. Sonra diyor ki şunu çarpacak, sonra bunu bölecek, ondan sonra bu elde edilen sonucu çarpacak, ondan sonra toplayacak, ondan sonra atama yapacak.
+
+821
+02:39:24,180 --> 02:39:29,180
+Dikkat ederseniz şöyle ilginç bir şey var. Tabloyu görünce gördüm.
+
+822
+02:39:37,747 --> 02:39:44,227
+Bir satırda en önce yapılan şeyler, yani diğerlerine göre mesela A artı artı
+
+823
+02:39:48,275 --> 02:40:10,775
+Bölü, işte y dediğinizde. Tamam mı? Bunlara bakmak gerekiyor. Ya bu operatörlerle zamanı geldiğinizde işte daha detaylı konuşacağız. Şunu da söyleyelim. Bakın, assignment işlemi ve turnary condition işlemi arkadaşlar sağdan sola doğru. Şimdi bu ne demek?
+
+824
+02:40:14,324 --> 02:40:20,004
+Asignment işlemi yapılacaksa, önce sağ taraf hallolacak, sonra sol tarafa aktarılacak.
+
+825
+02:40:20,004 --> 02:40:37,443
+Şöyle bir assignment olsaydı, x eşittir, y eşittir, t eşittir, 5 artı, niye artı yazamıyorum, t diyelim mesela.
+
+826
+02:40:37,443 --> 02:40:41,204
+Şimdi burada olan şey, bir kere burada
+
+827
+02:40:41,396 --> 02:41:02,515
+Bir atama var. Bu diyor ki bu atama önce bunun sağını hallet diyor. Yani yeğenin olduğu taraf. Sonra o diyor ki ondan sonra o da önce onun sağını hallet diyor. Yani şurayı. Bu da diyor ki önce sağ tarafı hallet. Yani önce 5 artı T hesaplanacak. T'nin değeri 8 olsun mesela. Şurada 13 değeri elde edildi. O 13 T'ye aktarılıyor.
+
+828
+02:41:04,180 --> 02:41:14,619
+Atama operatörü T'nin değerini döndürüyor burada. Burada bir return işlemi var. Buraya 13 elde ediliyor tekrar. 13Y'ye de aktarılıyor, X'e de aktarılıyor. Bütün değerler aynısı oluyor.
+
+829
+02:41:14,619 --> 02:41:25,619
+While condition, işte C plus. Orada mesela ne var? Atanın yazdığında. Önce I artı artı...
+
+830
+02:41:25,619 --> 02:41:27,020
+Bakayım.
+
+831
+02:41:28,531 --> 02:41:32,211
+Hocam, bunda önce atamaya sonra İ ve C'yi mi arttırıyor?
+
+832
+02:41:33,531 --> 02:41:53,211
+Ezbere bakmayalım hemen. Benim bildiğim kadarıyla şöyle. Önce K'nın C'yi ince elemanına bakacak, o değeri alacak, C'nin İ ince elemanına aktaracak, C'yi bir arttıracak o arada, bir de İ'yi bir arttıracak. Dolayısıyla okuduğumuz elemanlar...
+
+833
+02:41:54,100 --> 02:41:59,100
+İ'nin ve C'nin önceki değerleri olacak aktarılanlar.
+
+834
+02:41:59,540 --> 02:42:08,380
+Ben hocam şeydi mi, C'nin ince elemanını, K'nın C'nin ince elemanını, C'nin ince elemanını atadıktan sonra, İ ve J'yi birer arttırıyor.
+
+835
+02:42:08,400 --> 02:42:21,720
+Şöyle, şöyle yapıyor, şöyle yapıyor. Benim, şöyle tarif edeyim, K'nın C'sini alıyor, eşittirin olduğu yere koyuyor ama o arada J'yi de arttırıyor bu işi yapmadan, birbirinden bağımsız.
+
+836
+02:42:21,860 --> 02:42:25,120
+Hocam artı artı sonda olduğu için, dönen değer ilk değer olmasa lazım zaten.
+
+837
+02:42:27,540 --> 02:42:41,540
+Yani aldı, eşittir, eşittirin sol tarafına gönderecek ama ondan önce J'yi arttırdı. Tamam mı? C'nin iyisine o K'nın J'sini atadı, ondan sonra da I'yi arttırdı. Bu sırayla bu işlem devam ediyor.
+
+838
+02:42:41,540 --> 02:42:44,540
+Şimdi ezbere yapmayalım, şuradan bakalım.
+
+839
+02:42:46,540 --> 02:42:49,540
+Şu array subscription
+
+840
+02:42:50,195 --> 02:42:57,195
+Daha sonra ne varmış? Suffix varmış. Yani ikisi aynı precedence'de. Diyor ki soldan sağa doğru yap.
+
+841
+02:42:57,195 --> 02:43:08,195
+Dolayısıyla önce soldaki işlemle bak şu atama yani önce dizinin elemanına erişeceksin. Dolayısıyla eriştiğin eleman k'nın j'si olacak.
+
+842
+02:43:08,195 --> 02:43:13,195
+Ondan sonra c'nin i'si olacak. Ondan sonra sağda ne var? Plus plus var.
+
+843
+02:43:13,396 --> 02:43:23,396
+C'yi bir arttıracaksın. Dolayısıyla eski değerler, bir i'nin gösterdiği eski değerler üzerinden veya c'nin de gösterdiği eski değerler üzerinden atama işlemi gerçekleştirilecek. Tamam mı?
+
+844
+02:43:23,396 --> 02:43:28,396
+Anladım hocam. Bir chat'e tekrar yazdım. İkinciyle aynı anlamı geliyor değil mi yani?
+
+845
+02:43:28,396 --> 02:43:40,396
+Evet, algoritmik olarak baktığımızda aynen. Önce değerleri aktırıyor, sonra c'leri, i'leri artırıyor. Evet, öyle gösteriyor.
+
+846
+02:43:41,139 --> 02:43:52,819
+Orada da şu var, şimdi laf lafı açıyorum, hadi söyleyelim. i++ mı daha hızlıdır? i++ i mi hızlıdır?
+
+847
+02:43:57,012 --> 02:44:07,332
+Var mı fikir olan? Zaten şu slide'ı bitirdik, hani biraz da böyle muhabbet tadında ilerleyelim. Yeni konuya geçecektim ama hani geçmeyeceğim.
+
+848
+02:44:07,332 --> 02:44:12,851
+Buradan devam edelim. Hızlıdan kastırız de.
+
+849
+02:44:12,851 --> 02:44:19,731
+Yani hızlıdan kastırız, yapılan işlem sayısı sonuçta. Hangisinde daha az işlem yapılıyor?
+
+850
+02:44:19,731 --> 02:44:23,731
+Soldaki daha var hızlı, A++.
+
+851
+02:44:24,500 --> 02:44:34,740
+Şu daha hızlı diyorsun. Aynen. Hocam ikisi de aynı işlemi bastı. İkisi de artırıyor, biri ilk değeri döndürüyor, biri son değeri döndürüyor. Yani çok aşamada fark yok adım sayısında.
+
+852
+02:44:34,740 --> 02:44:47,740
+Şimdi, burada şöyle bir şey var arkadaşlar. Şu, önce arttır ve ata demek. Yani burada i eşittir, i'nin değerini bir arttırıyorsun.
+
+853
+02:44:49,236 --> 02:45:06,636
+Evet, i'nin değerini bir arttırıyorsun, i'ye aktarıyorsun. Şimdi şurada önce i'nin değerini al diyor. i'nin değerini al derken aslında burada geçici bir variable var. i'nin değerini alıyor. Sonra aldığı bu değeri bir arttırıyor.
+
+854
+02:45:08,756 --> 02:45:12,268
+Ve sonra bunu tekrar kendisi i'nin üzerine aktarıyor.
+
+855
+02:45:12,852 --> 02:45:30,572
+Dolayısıyla burada bir atama, iki atama, bir toplama. Şurada iki tane operasyon varken burada üç tane operasyon var. Onun için artı artı i'nin daha hızlı olduğunu kullanmak lazım. Nokta ne? Anlamadım nokta koydu birisi.
+
+856
+02:45:30,932 --> 02:45:43,772
+Yanlışlıkla. Şöyle, bunu nasıl, bunu nasıl, son noktayı koydu der gibi oldu da. Şimdi bunu nasıl test edersiniz? Örneğin bir süre ölçen, işte bir for döngüsü çeviriyorsunuz.
+
+857
+02:45:44,244 --> 02:46:02,244
+Bir tanesinde i artı artı kullandınız. Bunun süresini ölçersiniz. Yani aynı işi yapacak, öyle söyleyeyim. Bir de artı artı i için aynı kodu yazarsınız. Bir de onun süresini ölçersiniz. Çok kayda değer bir süre farkı elbette olmaz. Ama bir milyon defa çevirin döngüyü, oradaki süre farkını görürsünüz.
+
+858
+02:46:03,028 --> 02:46:19,988
+Hocam yaz bu i artı artı da dediniz ya geçici bir değişken kullanıyor ilkinde. Hani C nasıl yapıyor bu işteni bilmiyorum ama eğer bir fonksiyon çağrısı gibiyse hani bu i artı artı ya da artı artı yi, sonda sadece return i yerine mesela i artı bir yazacak birinde yani daha doğrusu i eksi bir yazacak bir mesela artırmadan döndürmüş gibi.
+
+859
+02:46:19,988 --> 02:46:29,988
+Şimdi operatörler fonksiyon çağırmıyor. Yani operatörlerin birebir tanımları var. Yalnız post-increment veya post-dicrement operatörlerde
+
+860
+02:46:30,608 --> 02:46:52,108
+Assemble kodunu mesela bu geçenlerde save times yazmıştım ya, mesela bir i artı artı şöyle bir kod yazın. Şu an belki vakit yok onun için yani ben ayrıca yazarım belki gösteririz. Kodun içinde sadece şunu yapın arkadaşlar, bir kod i artı artı yapsın. Öbür kod da artı artı i yapsın. Yani iki tane program yazın.
+
+861
+02:46:57,139 --> 02:47:22,064
+Bunların assembly karşılıklarının şuna benzer olduğunu görürsün. Yani burada bir atama, bir başka yere atama, sonra arttırıp geri atama var, şurada doğrudan atama var. Normalde şeyin içerisinde, çoğu komut kümesinde, assembly dilinde, makine dilinde, increment diye bir kod var. Yani bunu doğrudan buna çevirse işlemci tarafında aynı şey olacak. Ama
+
+862
+02:47:22,064 --> 02:47:32,824
+derleyicinin çevirebilme kabiliyetine göre, benim bildiğim C derleyicisinde, I artı artı yaparken, şuradaki üç adım artı artı yaparken buradaki iki adım oluyor.
+
+863
+02:47:33,844 --> 02:47:39,463
+Şimdi birkaç soru var. Hocam for da I plus plus için kontrol edip daha sonra artı da I.
+
+864
+02:47:39,984 --> 02:47:45,364
+Ha, şimdi for da hiçbir şey değişmez. Şimdi for'a gelelim. Güzel soruyu sormuşum. Hatta şundan göstereyim.
+
+865
+02:47:46,451 --> 02:47:56,451
+Ben buraya i++ da yazsam, a++ i de yazsam, şimdi bu yapılacak dedik, bu kontrol yapılacak, döngünün içeriği gerçekleştirilecek, bu yapılacak.
+
+866
+02:47:56,451 --> 02:48:06,451
+Yani bunu iki tane alt adımda da yapsa, üç alt adımda da yapsa, bunun for ile herhangi bir şeyi yok. For'un mekanizmasında bir değişiklik oluşturmuyor. Tamam mı?
+
+867
+02:48:09,075 --> 02:48:16,075
+Onun için for'un işlem adımlarında bir değişiklik yoktur. Ama onu karıştırmayalım.
+
+868
+02:48:16,075 --> 02:48:27,075
+For döngüsünde artı artı kullandığını nasıl olur? Artı artı kullandığınızda biraz daha hızlı olacağını deney yaparak görmeniz lazım.
+
+869
+02:48:33,652 --> 02:48:47,112
+Ondan sonra bu for döngüsü bitince, yani tabii şuradaki ara adımları boş bırakın. Ne bileyim, burada sadece for, sadece dönsün, boşu boşuna dönsün. Bir de burada süre alın. Süre 2 diyelim.
+
+870
+02:48:47,540 --> 02:48:56,540
+printf'in içinde bu iki sürenin farkını göstertin. Aynısını artı artı i için bir de i artı artı için iki farklı şekilde yapın görürsünüz.
+
+871
+02:48:56,540 --> 02:49:04,540
+İçi tarafında eğer Assemble tarafında görmek istiyorsanız bir program yazın yani int main i artı artı yani bir değişken tanımlayacaksınız tabi.
+
+872
+02:49:04,540 --> 02:49:13,540
+Kapattınız programı, bir başka program yazın artı artı i yazın. Bunların Assemble karşılıklarına bakın farklı olduğunu görmeniz gerekir.
+
+873
+02:49:14,255 --> 02:49:23,916
+Şimdi günümüz derleyicileri şunu yapıyor. Şimdi bu da diyor inkırımız, bu da inkırımız. İkisini de doğrudan şuna çeviren derleyiciler var. Her zaman göremeyebilirsiniz.
+
+874
+02:49:23,916 --> 02:49:32,195
+Dolayısıyla buna çevirdiğinizde bakarsınız ki program aynı. Ama adım adım derleyen, optimize bir şekilde derlemeyen bir derleyici ile yaparsanız,
+
+875
+02:49:32,195 --> 02:49:39,695
+şurada bahsettiğim mekanizmayla, şurada ne oluyor? Bir tane atama var, ondan sonra toplama var, ondan sonra atama var.
+
+876
+02:49:40,147 --> 02:49:44,147
+Assemble karşılıklarını farklı olarak görürsünüz. Tamam mı?
+
+877
+02:49:44,147 --> 02:49:51,147
+Hocam, matematikte bir ifade yazdığımızda compiler onu optimize ediyor mu? Mesela ben çarpı iki bölü iki yazsam, bunu tek tek yapar mı yoksa?
+
+878
+02:49:51,147 --> 02:50:01,147
+Yapanlar var. Hatta şunu da yapan derleyiciler var. Bazı dillerde for i eşittir mesela sıfırdan n'e kadar sayılarının toplamını bulacaksın.
+
+879
+02:50:01,147 --> 02:50:07,147
+Şurada da işte tp eşittir tp artı i yaz. Tamam mı?
+
+880
+02:50:09,396 --> 02:50:13,396
+Bu birden n'e kadar, sıfırdan n'e kadar sayıların toplamını bulan bir algoritma.
+
+881
+02:50:13,396 --> 02:50:24,940
+Diyor ki burada Gauss toplamı var, doğrudan bunun sonucunu değerleyici makine tarafında hesaplatıp n çarpı n artı bir bölge kimin sonucu neyse onu gösteriyor. Yani onu çeviriyor optimize bir şekilde.
+
+882
+02:50:31,763 --> 02:50:34,763
+Hocam, ben çete bir şey yazdım da bir şey daha sorabiliyor muyum?
+
+883
+02:50:34,763 --> 02:50:43,763
+Ne? 8 bölü 3 artı artı artı artı 8 bölü 3. Şimdi bölme ile post increment, pre incrementa bakacağız.
+
+884
+02:50:43,763 --> 02:50:49,763
+Yalnız değişkenlerde çalışır artı artı sadece. 3 artı artı bir şey ifade etmez. Hatta hata veriyorum muhtemelen.
+
+885
+02:50:49,763 --> 02:50:58,763
+Muhtemelen tanımlı olmaması lazım. Yani o compile time hatası. Deneyelim. Yani bilmediğim şeyler soruyorsunuz.
+
+886
+02:50:59,412 --> 02:51:01,412
+Onun için de mecbur bakmak lazım.
+
+887
+02:51:02,412 --> 02:51:05,412
+Artı artı üç. Şöyle diyelim.
+
+888
+02:51:08,412 --> 02:51:09,412
+Şuraya kadar da kapatayım.
+
+889
+02:51:15,347 --> 02:51:27,347
+Evet, diyor ki, tamam burada şey var, el value dediğimiz şey var. Burası, bak işte aslında şuradan açıklanabilecek bir şey. Diyor ki, sen bunu yapmaya çalıştığında
+
+890
+02:51:27,796 --> 02:51:39,796
+i'nin yerine bir şey aktarır. Şimdi sen yerine 3 yazarsan bu eşittir operatörünün sol tarafı literal olamaz, değişken olmak zorunda. Bu sebeple zaten buna izin vermiyor. Aynısını şey de yapar.
+
+891
+02:51:39,796 --> 02:51:49,796
+Hocam değişken olduğunu varsayalım. O zaman işlem önceli. Değişken olduğunu varsayarsak onun işlem önceliğine bakacağız. Aynısı 3 artı artı da aynı hatayı alırız.
+
+892
+02:51:56,211 --> 02:52:06,371
+El value, bu el value dediği şey yapılan en son atama işleminin bir değişkeni atanılacak olması. Mecburen burada bir değişken kullanmamız gerekiyor.
+
+893
+02:52:06,371 --> 02:52:09,211
+Hocam orada i ve j kullansaydık şimdi.
+
+894
+02:52:09,211 --> 02:52:10,211
+Nerede?
+
+895
+02:52:10,211 --> 02:52:14,211
+Yani 5 ve 3 yazdığım yerde i ve j kullanırsak.
+
+896
+02:52:14,211 --> 02:52:17,211
+Tamam, i, j kullanırsak ne olur artırır, yazar.
+
+897
+02:52:17,211 --> 02:52:19,211
+Senin bir soruna gelir.
+
+898
+02:52:20,500 --> 02:52:46,380
+Soruna gelelim. Önce bölme mi yapacağız, toplama mı yapacağız? 8 bölü 3 artı artı. Ezbere iş yapmayacağız, buraya bakacağız. Şimdi senin ilk 3 artı artı dediğin bir kere Post-Pinkermit. Bunun şeyi en yüksek. Dolayısıyla bölme yapmadan önce, bölme burada. Önce arttırımı sağlayacak, ondan sonra o işi yapacak. Tamam mı? Aynısı Pre-Incermit'ta da var.
+
+899
+02:52:47,603 --> 02:52:50,603
+Önce artırım sağlayacak, ondan sonra yapacak.
+
+900
+02:52:50,603 --> 02:52:54,603
+Tabi onu 3 değil de i, j gibi bir şey yapman lazım.
+
+901
+02:52:54,603 --> 02:52:59,603
+8 bölü i artı artı, artı artı i bölü 3 gibi artık neyse.
+
+902
+02:53:01,603 --> 02:53:03,603
+Anladım hocam, teşekkürler.
+
+903
+02:53:03,603 --> 02:53:10,603
+Rica ederim. Tamam arkadaşlar, 11.50 olmuş. Bu arttılık dersimizi bu şekilde tamamlamış olalım.
+
+904
+02:53:10,603 --> 02:53:12,459
+Şimdi gelecek hafta...
+
+905
+02:53:13,203 --> 02:53:21,803
+Ders 3'ün slide'larına bakarsanız, bunu ben de ekliyorum ama Fatih Hoca'nın sayfasında da zaten eklenmiş halde var.
+
+906
+02:53:21,803 --> 02:53:33,803
+Swap işlemleri, bazı farklı önermeler, değişkenler, döngüler, kontroller üzerinden gideceğiz. Biraz böyle diziler tarafına geleceğiz. Yani diziye yaklaşık yavaş yavaş giriyoruz.
+
+907
+02:53:33,803 --> 02:53:38,803
+Gördüğünüz gibi böyle dersimiz soru üzerinde konuları, algoritmik kavramları.
+
+908
+02:53:38,847 --> 02:53:44,847
+Açıklaya açıklaya, sizlerden soru gelirse daha güzel olur. Böyle devam edeceğiz.
+
+909
+02:53:46,847 --> 02:53:54,731
+Ben şimdi Teams tarafına bu yaptığımız örneklerin slide'ı da ekleyerek paylaşacağım. Herhangi bir sorunuz var mı?
+
+910
+02:53:59,316 --> 02:54:16,556
+Hocam, C'de şey yapabiliyor muyuz? Değişkene isim verebiliyor muyuz? Değişkene diyorum ya, loop'a. Mesela loop 1, 2.4 üstüne for desem onu yapabiliyor muyum ya öyle bir şey?
+
+911
+02:54:16,556 --> 02:54:24,716
+Yani typedef ile belki olabilir de. Mesela typedef for loop, şunu diyorsun sen.
+
+912
+02:54:24,816 --> 02:54:31,316
+Type def'i demiyor galiba. Mesela iç içe iki tane döngü açtık. Ben yukarıdakinden çıkmak istiyorum. Label olayları oluyor bazı dillerde.
+
+913
+02:54:31,316 --> 02:54:32,816
+Aynen öyle.
+
+914
+02:54:32,816 --> 02:54:37,816
+Go to o, go to. C'de go to kullanımı var ama biz...
+
+915
+02:54:37,816 --> 02:54:39,816
+Break ile aslında şey...
+
+916
+02:54:39,816 --> 02:54:47,500
+Go to, break ve continue kelimelerini ne ödevlerinizle ne sınavlarınızla kullanmayacaksınız.
+
+917
+02:54:47,700 --> 02:54:49,700
+Tamamdır.
+
+918
+02:54:49,700 --> 02:54:57,700
+Yani sınır olarak diyeceğiz ki onu kullanmadan yapın diyeceğiz. Normalde yapılabiliyor mu? Yapılabiliyor ama kullanmıyoruz.
+
+919
+02:54:57,700 --> 02:55:00,700
+Niye kullanmadığınızı anlatırım bir ara.
+
+920
+02:55:00,700 --> 02:55:01,700
+Tamamdır.
+
+921
+02:55:01,700 --> 02:55:03,700
+Hocam ben de bir şey sorabilir miyim?
+
+922
+02:55:03,700 --> 02:55:04,700
+Evet.
+
+923
+02:55:04,700 --> 02:55:09,700
+Hocam kullandığımız ile üzerinden SIG paneline erişebiliyor muyuz?
+
+924
+02:55:09,791 --> 02:55:19,791
+Neler kullanabilirim? Araştırmak istiyoruz. stdio.dosyasına erişmek istersen mesela burada kontrole bastım, üzerine mouse ile geldim, çift tıkladım, beni buna götürür.
+
+925
+02:55:19,791 --> 02:55:29,451
+Sonra bunun içeriğini kısmen inceleyebilirsin. Ama içeriğini inceleyebilmek için burada ileri seviye C bilgisi gerekir. Mesela şuradan ne anlıyoruz?
+
+926
+02:55:31,603 --> 02:55:51,603
+Her zaman böyle çok açık ve kolay bir şekilde anlaşılacak şeyler değil. Mesela şu printf var ya, bizim arka plandaki printf'e benziyor ama burada threadler, pardon, Linux'un manpage'inde bunun dokümentasyonları var. Onları da incelemem lazım.
+
+927
+02:55:51,603 --> 02:55:59,500
+Şunu sordum aslında hocam, ben fonksiyonlarla, matematikte bol bol işim var.
+
+928
+02:56:00,147 --> 02:56:06,468
+Matematik kütüphanesine eklemem gerekiyor ama mesela ben mat.h olduğunu bilmiyorum ismi.
+
+929
+02:56:06,468 --> 02:56:11,987
+Onun için internetten mi yoksa kendi idem üzerinden eleştirebiliyor muyum?
+
+930
+02:56:11,987 --> 02:56:16,067
+Bazı ideler sana bunu söyler, şöyle anladın demek istediğini.
+
+931
+02:56:16,067 --> 02:56:23,507
+Mesela power yazacaksın, power fonksiyonu var. Bu fonksiyonun adının ne olduğunu biliyorsun, şunu hesaplıyorsun.
+
+932
+02:56:23,507 --> 02:56:27,987
+Bazı ide der ki sen bunu yazdın ama bak burada mesela hata vermedi.
+
+933
+02:56:29,747 --> 02:56:43,487
+Sen, ha, diyor ki, şu implicit bir deklar, gerçi bu dönüşümle alakalı, işte double x diyelim, şöyle diyelim mesela. Normalde bu değerleyici sana hata vermiyor. Niye olmadı? Değerleyelim bir daha.
+
+934
+02:56:49,620 --> 02:57:06,620
+Hocam, yukarı met yazmıştınız ya, sildiniz mi onu? Yok, silmedim. Sildik herhalde. İşte bak, burada bir uyarı veriyor. Veya bazıları der ki, sen bunu yazdın ama include etmedin. Include edersen etmen gerekir diye bir şey var. Onu include edeceksin. O tamamen ide'den ideye değişir. Ama...
+
+935
+02:57:06,899 --> 02:57:19,899
+Yeni programlamayı öğrenen birileri için en basit ideleri kullanmak, yani hata yapmak ve o hatanın farkında olup o hatayı öğrenmek, gidermek sizin için en önemlisi. İdenin söylediği her şeyi yaparsanız
+
+936
+02:57:20,144 --> 02:57:41,144
+Bazen anlamak, yani istemediğiniz yerlere çıkar. IDE çünkü sadece sana öneri veriyor. O da yapay zekayla çalışan bir sistem. Her zaman onun için IDE'ye güvenmemek gerekiyor. Onun için önce dile hakim olmak lazım. Bunun için de Linux'ün ManPages'i ve CppReference'daki C kısımları ve bizim ders kaynaklarımız, kitaplarımız yeterli olur.
+
+937
+02:57:44,144 --> 02:57:46,144
+Peki hocam, teşekkür ederim.
+
+938
+02:57:47,443 --> 02:58:07,843
+Bir de şey tabii ki, pratik. Pratik olmadan olmaz. Yani en fazla yapacağınız şey sizin için bol bol yazacaksınız, bol bol hata yapacaksınız, hatalarınızı gidereceksiniz. Hani sayısalarınızda nasıl hatayı minimize ediyoruz, işte çok küçük hatalarda durdurma kriteri sizin öğrenme kriterinizde hatanın minimize edilmesi.
+
+939
+02:58:09,843 --> 02:58:14,243
+Peki arkadaşlar, hepinize iyi hafta sonları. Kendinize iyi bakın, görüşmek üzere, hoşçakalın.
+
+940
+02:58:15,860 --> 02:58:19,860
+İyi günler hocam.
+
+941
+02:58:19,860 --> 02:58:27,724
+Salı günü dersimiz yok, o konuda mail göndereceğim. Normal şey yok, cuma günü olacak. Yani laboratuvar saatini kullanmayacağız.
